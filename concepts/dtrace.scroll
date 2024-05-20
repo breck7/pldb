@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id DTrace
+id dtrace
+name DTrace
 appeared 2005
 tags pl
 conceptDescription DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.

@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id Jasmin
+id jasmin
+name Jasmin
 appeared 1997
 tags pl
 conceptDescription Jasmin is an assembler for the Java Virtual Machine. It takes ASCII descriptions of Java classes, written in a simple assembler-like syntax using the Java Virtual Machine instruction set. It converts them into binary Java class files, suitable for loading by a Java runtime system.

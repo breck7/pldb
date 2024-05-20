@@ -123,13 +123,16 @@ const PLDBKeywords = {
 }
 
 class ConceptPage {
-  constructor(name, parsed, computer) {
-    const absolutePath = path.join(__dirname, "concepts", name + ".scroll")
-    this.absolutePath = absolutePath
+  constructor(parsed, computer) {
+    this.absolutePath = path.join(__dirname, "concepts", parsed.id + ".scroll")
     this.computer = computer
     this.parsed = parsed
-    this.node = new TreeNode(Disk.read(absolutePath))
+    this.node = new TreeNode(Disk.read(this.absolutePath))
     this.quickCache = {}
+  }
+
+  get id() {
+    return this.parsed.id
   }
 
   get(word) {
@@ -511,7 +514,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   link(baseFolder = "") {
-    return `<a href="${baseFolder + this.permalink}">${this.title}</a>`
+    return `<a href="${baseFolder + this.permalink}">${this.name}</a>`
   }
 
   get extensions() {
@@ -536,7 +539,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   makeATag(id) {
     const file = this.computer.getConceptPage(id)
-    return `<a href="${file.permalink}">${file.title}</a>`
+    return `<a href="${file.permalink}">${file.name}</a>`
   }
 
   get trendingRepos() {
@@ -691,6 +694,10 @@ pipeTable
   }
 
   get title() {
+    return this.get("name")
+  }
+
+  get name() {
     return this.get("name")
   }
 
@@ -1367,13 +1374,13 @@ class Feature {
 
     const positives = this.languagesWithThisFeature
     const positiveText = `* Languages *with* ${title} include ${positives
-      .map(file => `<a href="../concepts/${file.id}.html">${file.id}</a>`)
+      .map(file => `<a href="../concepts/${file.id}.html">${file.name}</a>`)
       .join(", ")}`
 
     const negatives = this.languagesWithoutThisFeature
     const negativeText = negatives.length
       ? `* Languages *without* ${title} include ${negatives
-          .map(file => `<a href="../concepts/${file.id}.html">${file.id}</a>`)
+          .map(file => `<a href="../concepts/${file.id}.html">${file.name}</a>`)
           .join(", ")}`
       : ""
 
@@ -1389,7 +1396,7 @@ class Feature {
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map(group => {
-        const links = group.map(hit => `<a href="../concepts/${hit.id.replace(".scroll", "")}.html">${hit.title}</a>`)
+        const links = group.map(hit => `<a href="../concepts/${hit.id}.html">${hit.name}</a>`)
 
         return `codeWithHeader Example from <b>${links.length} languages</b>: ${links.join(", ")}
  ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
@@ -1501,14 +1508,13 @@ class Tables {
     const { pldb } = this
     this._top = lodash
       .chain(pldb)
-      .orderBy(["rank"], ["asc"])
       .map(row =>
         lodash.pick(row, [
           "id",
-          "title",
+          "name",
           "rank",
           "appeared",
-          PLDBKeywords.tags,
+          "tags",
           "creators",
           "foundationScore",
           "numberOfUsersEstimate",
@@ -1519,7 +1525,7 @@ class Tables {
       )
       .value()
       .map(row => {
-        row.title = "../concepts/" + row.id + ".html"
+        row.nameLink = "../concepts/" + row.id + ".html"
         delete row.id
         return row
       })
@@ -1547,16 +1553,15 @@ class Tables {
     this._conceptPageCache = {}
     this._conceptPages = []
     this.pldb.forEach(file => {
-      const name = file.id
-      const page = new ConceptPage(name, file, this)
-      this._conceptPageCache[name] = page
+      const page = new ConceptPage(file, this)
+      this._conceptPageCache[file.id] = page
       this._conceptPages.push(page)
     })
   }
 
-  getConceptPage(name) {
+  getConceptPage(id) {
     this.initConceptPages()
-    return this._conceptPageCache[name.replace(".scroll", "")]
+    return this._conceptPageCache[id]
   }
 
   getLanguageTemplate(absolutePath) {
@@ -1663,7 +1668,7 @@ class Tables {
         name: nameCol,
         links: `<span class="creatorQuickLinks">${linksCol}</span>`,
         born: person.born,
-        languages: group.map(file => `<a href='../concepts/${file.id}.html'>${file.id}</a>`).join(" - "),
+        languages: group.map(file => `<a href='../concepts/${file.id}.html'>${file.name}</a>`).join(" - "),
         count: group.length,
         topRank: group[0].rank
       }
@@ -1690,8 +1695,8 @@ class Tables {
       .filter(file => file.extensions)
       .map(file => {
         return {
-          name: file.id,
-          nameLink: `../concepts/${file}.html`,
+          name: file.name,
+          nameLink: `../concepts/${file.id}.html`,
           rank: file.rank,
           extensions: file.extensions
         }
@@ -1718,7 +1723,7 @@ class Tables {
     const entities = groupByListValues("originCommunity", files)
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
-      const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.id}</a>`).join(" - ")
+      const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.name}</a>`).join(" - ")
       const count = group.length
       const top = -Math.min(...group.map(lang => lang.rank))
 
@@ -1738,11 +1743,11 @@ class Tables {
   get autocompleteJs() {
     const json = JSON.stringify(
       this.pldb.map(file => {
-        const permalink = file.id
+        const { id } = file
         return {
-          label: file.id,
-          id: permalink,
-          url: `/concepts/${permalink}.html`
+          label: file.name,
+          id,
+          url: `/concepts/${id}.html`
         }
       }),
       undefined,
@@ -1797,7 +1802,7 @@ class Tables {
       row.langs = row.ids
         .map(id => {
           const file = this.getConceptPage(id)
-          return `<a href='../concepts/${file.id}.html'>${file.id}</a>`
+          return `<a href='../concepts/${file.id}.html'>${file.name}</a>`
         })
         .join(" ")
       row.frequency = Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) + "%"
@@ -1830,7 +1835,7 @@ class Tables {
       "svg",
       "explorer",
       "gitignore"
-    ].map(s => this.getConceptPage(s).parsed)
+    ].map(id => this.getConceptPage(id).parsed)
 
     const npmPackages = Object.keys({
       ...require("./package.json").devDependencies
@@ -1984,7 +1989,6 @@ class MeasureComputer {
         .forEach(node => {
           const links = node.content.split(" ")
           links.forEach(link => {
-            link += ".scroll"
             if (!inboundLinks[link]) throw new Error(`No file "${link}" found in "${id}"`)
 
             inboundLinks[link].push(id)

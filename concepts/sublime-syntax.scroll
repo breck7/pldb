@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id Sublime Syntax
+id sublime-syntax
+name Sublime Syntax
 appeared 2008
 tags grammarLanguage
 conceptDescription Sublime Syntax files are YAML files with a small header, followed by a list of contexts. Each context has a list of patterns that describe how to highlight text in that context, and how to change the current text.

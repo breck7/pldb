@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id ASCII Armor
+id ascii-armor
+name ASCII Armor
 appeared 2007
 tags textEncodingFormat
 conceptDescription OpenPGP provides the service of converting the raw 8-bit binary octet stream to a stream of printable ASCII characters, called Radix-64 encoding or ASCII Armor.

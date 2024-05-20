@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
 id soul
+name soul
 appeared 2000
 tags queryLanguage
 conceptDescription Program queries can answer important software engineering questions ranging from “is my code bug free?” over “does my code follow the prescribed design?” to “how can my code be refactored?”. SOUL is a Prolog-like language with specialized features for querying programs.

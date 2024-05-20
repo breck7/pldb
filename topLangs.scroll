@@ -3,59 +3,59 @@ replaceNodejs
  // const {Tables} = require("./Computer.js")
  const tops = [
     {
-        "id": "JavaScript",
-        "link": "javascript.scroll",
+        "name": "JavaScript",
+        "id": "javascript",
         "rank": "1"
     },
     {
-        "id": "Python",
-        "link": "python.scroll",
+        "name": "Python",
+        "id": "python",
         "rank": "2"
     },
     {
-        "id": "C",
-        "link": "c.scroll",
+        "name": "C",
+        "id": "c",
         "rank": "3"
     },
     {
-        "id": "Java",
-        "link": "java.scroll",
+        "name": "Java",
+        "id": "java",
         "rank": "4"
     },
     {
-        "id": "C++",
-        "link": "cpp.scroll",
+        "name": "C++",
+        "id": "cpp",
         "rank": "5"
     },
     {
-        "id": "HTML",
-        "link": "html.scroll",
+        "name": "HTML",
+        "id": "html",
         "rank": "6"
     },
     {
-        "id": "Perl",
-        "link": "perl.scroll",
+        "name": "Perl",
+        "id": "perl",
         "rank": "7"
     },
     {
-        "id": "CSS",
-        "link": "css.scroll",
+        "name": "CSS",
+        "id": "css",
         "rank": "8"
     },
     {
-        "id": "Ruby",
-        "link": "ruby.scroll",
+        "name": "Ruby",
+        "id": "ruby",
         "rank": "9"
     },
     {
-        "id": "PHP",
-        "link": "php.scroll",
+        "name": "PHP",
+        "id": "php",
         "rank": "10"
     }
   ]
  module.exports = {
       TOP_LANGS: tops
-        .map(file => `<a href="concepts/${file.link.replace(".scroll", ".html")}">${file.id}</a>`)
+        .map(file => `<a href="concepts/${file.id}.html">${file.name}</a>`)
         .join(" · ")
     }
 

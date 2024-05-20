@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id C Header Files
+id c-headers
+name C Header Files
 appeared 1972
 tags headerLang
 conceptDescription A header file is a file containing C declarations and macro definitions (see Macros) to be shared between several source files. You request the use of a header file in your program by including it, with the C preprocessing directive ‘#include’.

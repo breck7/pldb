@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id Xgboost
+id xgboost-model
+name Xgboost
 appeared 2014
 tags binaryDataFormat
 conceptDescription The model and data format of XGBoost is exchangeable, which means the model trained by one language can be loaded in another. This means you can train the model using R, while running prediction using Java or C++, which are more common in production systems. You can also train the model using distributed versions, and load them in from Python to do some interactive analysis.

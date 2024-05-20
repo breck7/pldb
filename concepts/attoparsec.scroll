@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
 id attoparsec
+name attoparsec
 appeared 2010
 tags library
 conceptDescription attoparsec is a fast Haskell parser combinator library, aimed particularly at dealing efficiently with network protocols and complicated text/binary file formats.

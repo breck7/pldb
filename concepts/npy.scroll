@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
 id npy
+name npy
 appeared 2008
 tags binaryDataFormat
 conceptDescription A simple format for saving numpy arrays to disk with the full information about them. The .npy format is the standard binary file format in NumPy for persisting a single arbitrary NumPy array on disk.

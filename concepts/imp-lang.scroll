@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
 id imp-lang
+name imp-lang
 appeared 2019
 tags pl
 conceptDescription The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.

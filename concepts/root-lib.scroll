@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id ROOT
+id root-lib
+name ROOT
 appeared 1994
 tags library
 conceptDescription A modular scientific software toolkit. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. It is mainly written in C++ but integrated with other languages such as Python and R.

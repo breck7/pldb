@@ -86,7 +86,8 @@ class ScrollSetCLI {
 
   async updateIdsCommand() {
     this.concepts.forEach(file => {
-      const tree = this.getTree(file)
+      const dest = path.join(this.conceptsFolder, file.filename)
+      const tree = new TreeNode(Disk.read(dest))
       const newTree = tree.toString().replace(
         `import ../code/conceptPage.scroll
 id `,
@@ -94,7 +95,7 @@ id `,
 id ${file.filename.replace(".scroll", "")}
 name `
       )
-      this.save(file, newTree.toString())
+      Disk.write(dest, newTree.toString())
     })
   }
 

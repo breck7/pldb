@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id WebAssembly Text Format
+id wast
+name WebAssembly Text Format
 appeared 2015
 tags pl
 conceptDescription WebAssembly has an S-expression-based textual representation, an intermediate form designed to be exposed in text editors, browser developer tools, etc.

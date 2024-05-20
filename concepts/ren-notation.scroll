@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
-id Ren
+id ren-notation
+name Ren
 appeared 2013
 tags dataNotation
 conceptDescription Ren is a lightweight data-exchange text format. It is programming language independent with familiar conventions. Whitespace separates values, but is not significant beyond that. Ren has two main data structures: An ordered group of values, called a list; A collection of name/value pairs, called a map

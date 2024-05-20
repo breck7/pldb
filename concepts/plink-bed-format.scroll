@@ -1,5 +1,6 @@
 import ../code/conceptPage.scroll
 id plink-bed-format
+name plink-bed-format
 appeared 2007
 tags binaryDataFormat
 conceptDescription Primary representation of genotype calls at biallelic variants. Do not confuse this with the UCSC Genome Browser's BED format, which is totally different. Used in plink.
