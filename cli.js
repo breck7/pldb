@@ -11,19 +11,19 @@ const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
 
 class PLDBCli extends ScrollSetCLI {
-  get keywordsOneHotCsv() {
-    if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
-    return this.quickCache.keywordsOneHotCsv
-  }
-
   conceptsFolder = path.join(baseFolder, "concepts")
   grammarFile = "code/measures.scroll"
   scrollSetName = "pldb"
   compiledConcepts = "./pldb.json"
 
+  get keywordsOneHotCsv() {
+    if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
+    return this.quickCache.keywordsOneHotCsv
+  }
+
   makeNames(concept) {
     return [
-      concept.filename.replace(".scroll", ""),
+      concept.name,
       concept.id,
       concept.standsFor,
       concept.githubLanguage,
@@ -78,7 +78,7 @@ class PLDBCli extends ScrollSetCLI {
     this.concepts.forEach(async file => {
       const { mainRepo } = file
       if (!mainRepo) return
-      const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
+      const targetFolder = path.join(gitsFolder, file.id)
       //if (Disk.exists(targetFolder)) return
       if (file.repoStats_files) return
       if (file.isFinished) return
@@ -86,11 +86,10 @@ class PLDBCli extends ScrollSetCLI {
         const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
 
-        const targetPath = path.join(this.conceptsFolder, file.filename)
-        const tree = new TreeNode(Disk.read(targetPath))
+        const tree = this.getTree(file)
         tree.touchNode("repoStats").setProperties(gitStats.summary)
         if (!tree.has("appeared")) tree.set("appeared", gitStats.firstCommit.toString())
-        Disk.write(targetPath, tree.toString())
+        this.save(file, tree)
       } catch (err) {
         console.error(err, file.id)
       }

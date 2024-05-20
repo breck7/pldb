@@ -193,7 +193,7 @@ class ExploreApp {
     return this.objectFromHash.columns || this.defaultColumns
   }
 
-  defaultColumns = "rank id appeared tags creators".replace(/ /g, this.columnDelimiter)
+  defaultColumns = "rank name id appeared tags creators".replace(/ /g, this.columnDelimiter)
 
   makeColumns(measureNames) {
     return measureNames
@@ -202,9 +202,8 @@ class ExploreApp {
       .map(measure => {
         const col = { data: measure, title: measure }
 
-        if (measure === "id")
-          col.render = (data, type, row, meta) =>
-            `<a href="../concepts/${row.filename.replace(".scroll", ".html")}">${row.id}</a>`
+        if (measure === "name")
+          col.render = (data, type, row, meta) => `<a href="../concepts/${row.id}.html">${row.name}</a>`
 
         return col
       })

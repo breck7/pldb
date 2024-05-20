@@ -58,7 +58,7 @@ abstractConceptEdgesMeasureParser
  string typeForCsvDocs conceptFilename[]
  extends abstractStringMeasureParser
  javascript
-  get filenames() {
+  get ids() {
     return this.getWordsFrom(1)
   }
   // todo: re-add the method to update these foreign keys if an ID changes.
@@ -95,8 +95,9 @@ idParser
  extends abstractIdParser
  sortTemplate id appeared tags isFinished isPublicDomain screenshot photo demoVideo creators conceptDescription website webRepl documentation devDocumentation ebook emailList spec reference cheatSheetUrl standsFor oldName renamedTo aka fileExtensions country nativeLanguage originCommunity domainName equation firstAnnouncement announcementMethod usesSemanticVersioning releaseNotesUrl proposals roadmap versions  abstractRelationshipParser  visualParadigm  abstractFeatureParser  lineCommentToken multiLineCommentTokens printToken assignmentToken stringToken booleanTokens includeToken keywords  example  gource abstractGitRepoUrlMeasureParser  repoStats  funFact  wikipedia  githubLanguage githubBigQuery  antlr monaco codeMirror pygmentsHighlighter linguistGrammarRepo languageServerProtocolProject  projectEuler helloWorldCollection leachim6 rosettaCode quineRelay  compilerExplorer rijuRepl replit tryItOnline  indeedJobs linkedInSkill stackOverflowSurvey annualReportsUrl officialBlogUrl eventsPageUrl faqPageUrl downloadPageUrl  abstractChatUrlMeasureParser subreddit meetup conference  hackerNewsDiscussions redditDiscussion  tiobe hopl esolang pypl  packageRepository packageCount packageAuthors packageInstallCount forLanguages  twitter ubuntuPackage gdbSupport jupyterKernel fileType wordRank isOpenSource githubCopilotOptimized centralPackageRepositoryCount  goodreads  isbndb  semanticScholar
 
-filenameParser
- extends abstractFilenameParser
+nameParser
+ extends abstractStringMeasureParser
+ description What is the name of this concept?
 
 abstractFeatureParser
  extends abstractBooleanMeasureParser
