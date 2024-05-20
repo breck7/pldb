@@ -188,7 +188,7 @@ node_modules/scroll-cli/grammar/blankLine.grammar
 node_modules/scroll-cli/grammar/measures.grammar
 node_modules/scroll-cli/grammar/import.grammar
 node_modules/scroll-cli/grammar/errors.grammar
-code/pldbMeasures.scroll`
+code/measures.scroll`
       .split("\n")
       .map(filepath => Disk.read(path.join(__dirname, filepath)))
       .join("\n\n")

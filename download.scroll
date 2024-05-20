@@ -13,12 +13,12 @@ css
    text-overflow: ellipsis;
  }
 
-Download the PLDB concept database as: CSV | TSV | JSON
+Download the PLDB ScrollSet as: CSV | TSV | JSON
  link pldb.csv CSV
  link pldb.tsv TSV
  link pldb.json JSON
 
-import code/pldbMeasures.scroll
+import code/measures.scroll
 loadConcepts concepts
 
 Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON

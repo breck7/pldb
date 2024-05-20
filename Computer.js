@@ -4,7 +4,7 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
-const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "pldbMeasures.scroll")))
+const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "measures.scroll")))
 const listsFolder = path.join(__dirname, "lists")
 const pagesDir = path.join(__dirname, "pages")
 const numeral = require("numeral")
@@ -1271,7 +1271,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html#q=${this.id}">Keywo
 class Feature {
   constructor(measure, computer) {
     this.measure = measure
-    this.fileName = "pldbMeasures.scroll"
+    this.fileName = "measures.scroll"
     this.id = measure.Name
     this.computer = computer
   }
