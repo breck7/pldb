@@ -100,14 +100,14 @@ nameParser
  extends abstractStringMeasureParser
  boolean isMeasureRequired true
  description What is the name of this concept?
- int sortIndex 0.9
+ float sortIndex 0.9
 
 abstractFeatureParser
  extends abstractBooleanMeasureParser
  contentKey value
  childrenKey example
  catchAllParser featureExampleCodeParser
- int sortIndex 42
+ float sortIndex 42
  string sortKey abstractFeatureParser
 
 abstractComputedIntMeasureParser
@@ -203,36 +203,36 @@ isLanguageParser
 
 measurementsParser
  extends abstractComputedIntMeasureParser
- int sortIndex 5
+ float sortIndex 5
  description How many measurements do we have about this thing?
 
 foundationScoreParser
  extends abstractComputedIntMeasureParser
- int sortIndex 6
+ float sortIndex 6
  description How many languages are built using this language?
 
 bookCountParser
- int sortIndex 8
+ float sortIndex 8
  extends abstractComputedIntMeasureParser
  description What is the count of booked we have published about this thing?
 
 paperCountParser
- int sortIndex 9
+ float sortIndex 9
  extends abstractComputedIntMeasureParser
  description What is the count of papers we have published about this thing?
 
 exampleCountParser
- int sortIndex 7
+ float sortIndex 7
  extends abstractComputedIntMeasureParser
  description How many examples do we have written in this language?
 
 numberOfUsersEstimateParser
- int sortIndex 10
+ float sortIndex 10
  extends abstractComputedIntMeasureParser
  description What is our estimate of number of users of this language?
 
 numberOfJobsEstimateParser
- int sortIndex 11
+ float sortIndex 11
  extends abstractComputedIntMeasureParser
  description What is our estimate of the number of jobs in this language?
 
@@ -247,12 +247,12 @@ pldbScoreParser
  description What is the combined score of this language across all the categories of rankings?
 
 rankParser
- int sortIndex 3
+ float sortIndex 3
  extends abstractComputedIntMeasureParser
  description How does this concept rank amongst all other concepts?
 
 lastActivityParser
- int sortIndex 6
+ float sortIndex 6
  extends abstractComputedIntMeasureParser
  description In our data on this entity, what year is the most recent activity?
 
@@ -506,7 +506,7 @@ mainRepoParser
 
 // githubBigQuery
 githubBigQueryParser
- int sortIndex 13
+ float sortIndex 13
  description What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?
  extends abstractUniqueStringMeasureParser
  contentKey id
@@ -582,7 +582,7 @@ githubLanguageParser
 
 // Basics
 githubRepoParser
- int sortIndex 15
+ float sortIndex 15
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
  cells measureNameCell urlCell
@@ -1839,7 +1839,7 @@ helloWorldCollectionParser
 
 // history
 appearedParser
- int sortIndex 1
+ float sortIndex 1
  boolean isMeasureRequired true
  description What year was the language publicly released and/or announced?
  extends abstractYearMeasureParser
@@ -1950,7 +1950,7 @@ leachim6Parser
  creatorNameCell
   extends stringCell
 creatorsParser
- int sortIndex 1
+ float sortIndex 1
  extends abstractStringListMeasureParser
  boolean alwaysRecommended true
  description What are the name(s) of the original creators of the language delimited by " and "?
@@ -2349,7 +2349,7 @@ twitterParser
   enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine
  highlightScope constant.language
 tagsParser
- int sortIndex 2
+ float sortIndex 2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
@@ -2382,7 +2382,7 @@ usesSemanticVersioningParser
 
 // website
 websiteParser
- int sortIndex 16
+ float sortIndex 16
  description What is the URL of the official homepage for this language project?
  extends abstractUrlMeasureParser
 webReplParser
@@ -2407,7 +2407,7 @@ domainNameParser
 // wikipedia
 // todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaParser
- int sortIndex 17
+ float sortIndex 17
  inScope fileExtensionsParser exampleParser
  extends abstractUrlMeasureParser
  description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
