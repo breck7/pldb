@@ -373,11 +373,15 @@ eventsPageUrlParser
  float sortIndex 2.5
 
 // example
-exampleParser
+abstractExampleParser
  description What is a representative snippet for this language?
  extends abstractCodeMeasureParser
- single false
  boolean isExampleCode true
+ single false
+
+exampleParser
+ description What is a representative snippet for this language?
+ extends abstractExampleParser
  float sortIndex 3
 
 // faqPageUrl
@@ -1857,7 +1861,7 @@ hasZippersParser
 // helloWorldCollection
 helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
- extends exampleParser
+ extends abstractExampleParser
  cruxFromId
  cells measureNameCell
  catchAllCellType stringCell
@@ -2280,9 +2284,8 @@ replitParser
 // repoStats
 // Basics
 repoStatsParser
- description What is the URL of the official GitHub repo for the project if it is hosted there?
+ description What are basic stats on this repo?
  extends abstractHashMapMeasureParser
- inScope subDescriptionParser
  float sortIndex 2.9
  firstCommitParser
   extends abstractYearMeasureParser
