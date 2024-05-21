@@ -1,4 +1,4 @@
-wenyanimport ../code/conceptPage.scroll
+import ../code/conceptPage.scroll
 id wenyan
 name 文言文編程語言
 website https://wy-lang.org/
@@ -17,3 +17,10 @@ example
  云云。
 webRepl https://wy-lang.org/ide.html
 spec https://wy-lang.org/spec.html
+repoStats
+ firstCommit 2019
+ newestCommit 2023
+ commits 1039
+ committers 67
+ files 163
+writtenIn typescript markdown javascript json html yaml svg css make toml

@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+id psvg
+name PSVG
+website https://psvg.netlify.app/
+webRepl https://psvg.netlify.app/
+githubRepo https://github.com/LingDong-/psvg
+appeared 2020
+creators Lingdong Huang
+tags pl
+country China
+compilesTo svg
+documentation https://github.com/LingDong-/psvg/blob/main/QUICKSTART.md
+conceptDescription Programmable SVG format
+example
+ <!-- koch.psvg               -->
+ <!-- draws a koch snowflake  -->
+ <psvg width="400" height="400">
+   <def-snowflake x1="" y1="" x2="" y2="" d="">
+     <if true="{d==0}">
+       <line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" />
+       <return/>
+     </if>
+     <var x3="{(x1*2+x2)/3}"/>
+     <var x4="{(x2*2+x1)/3}"/>
+     <var y3="{(y1*2+y2)/3}"/>
+     <var y4="{(y2*2+y1)/3}"/>
+     <var dx="{(x2-x1)/3}"/>
+     <var dy="{(y2-y1)/3}"/>
+     <var x5="{(dx-dy*SQRT(3))/2+x3}"/>
+     <var y5="{(dy+dx*SQRT(3))/2+y3}"/>
+     <snowflake x1="{x1}" y1="{y1}" x2="{x3}" y2="{y3}" d="{d-1}"/>
+     <snowflake x1="{x3}" y1="{y3}" x2="{x5}" y2="{y5}" d="{d-1}"/>
+     <snowflake x1="{x5}" y1="{y5}" x2="{x4}" y2="{y4}" d="{d-1}"/>
+     <snowflake x1="{x4}" y1="{y4}" x2="{x2}" y2="{y2}" d="{d-1}"/>
+   </def-snowflake>
+ 
+   <stroke color="black" cap="round"/>
+   <snowflake x1="200" y1="10"  x2="50"  y2="310" d="5"/>
+   <snowflake x1="350" y1="310" x2="200" y2="10"  d="5"/>
+   <snowflake x1="50"  y1="310" x2="350" y2="310" d="5"/>
+ </psvg>

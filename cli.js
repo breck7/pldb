@@ -70,12 +70,13 @@ class PLDBCli extends ScrollSetCLI {
     await importer.createFromAnnouncementsCommand()
   }
 
-  async crawlGitsCommand() {
+  async crawlGitsCommand(lang) {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
     this.concepts.forEach(async file => {
+      if (lang && !lang.includes(file.id)) return
       const { mainRepo } = file
       if (!mainRepo) return
       const targetFolder = path.join(gitsFolder, file.id)
