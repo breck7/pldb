@@ -87,6 +87,7 @@ abstractRelationshipParser
  boolean isLinks true
 abstractFilenameRelationshipParser
  extends abstractRelationshipParser
+ float sortIndex 2.2
 abstractIDRelationshipParser
  extends abstractRelationshipParser
 
@@ -128,6 +129,7 @@ annualReportsUrlParser
  extends abstractUrlMeasureParser
  description What is a URL to annual reports for this language?
  single false
+ float sortIndex 2.7
 
 // antlr
 antlrParser
@@ -135,6 +137,7 @@ antlrParser
  description What is a URL to an ANTLR grammar for this language?
  // A good collection of ANTLR grammars: https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
  string sourceDomain antlr.org
+ float sortIndex 2.8
 
 // canDoShebang
 canDoShebangParser
@@ -180,6 +183,7 @@ codeMirrorParser
  description What is a URL to a CodeMirror syntax highlighting package for this language?
  // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
  string sourceDomain codemirror.net
+ float sortIndex 2.8
 
 // compilerExplorer
 compilerExplorerParser
@@ -188,6 +192,7 @@ compilerExplorerParser
  string sourceDomain godbolt.org
  contentKey id
  inScope exampleParser
+ float sortIndex 3.4
 
 // computeds
 hoplIdParser
@@ -225,12 +230,12 @@ exampleCountParser
  description How many examples do we have written in this language?
 
 numberOfUsersEstimateParser
- float sortIndex 2
+ float sortIndex 2.1
  extends abstractComputedIntMeasureParser
  description What is our estimate of number of users of this language?
 
 numberOfJobsEstimateParser
- float sortIndex 2
+ float sortIndex 2.1
  extends abstractComputedIntMeasureParser
  description What is our estimate of the number of jobs in this language?
 
@@ -269,6 +274,7 @@ countryParser
  catchAllCellType stringCell
  extends abstractStringMeasureParser
  single false
+ float sortIndex 2.99
 
 // dblp
 dblpParser
@@ -293,6 +299,7 @@ demoVideoParser
 conceptDescriptionParser
  boolean alwaysRecommended true
  extends abstractStringMeasureParser
+ float sortIndex 1.99
  description What is a short description of this language?
 
 subDescriptionParser
@@ -305,39 +312,46 @@ subDescriptionParser
 discordParser
  extends abstractChatUrlMeasureParser
  description What is a URL to an official (or popular unofficial) Discord for this language?
+ float sortIndex 3
 
 // discourse
 discourseParser
  extends abstractChatUrlMeasureParser
  description What is a URL to an official (or popular unofficial) Discourse for this language?
+ float sortIndex 3
 
 // documentation
 documentationParser
  extends abstractUrlMeasureParser
  description What is a URL to the official documentation for this language?
  single false
+ float sortIndex 2.5
 
 devDocumentationParser
  extends abstractUrlMeasureParser
  description What is a URL to the official documentation for developers who want to contribute to the language project?
  single false
+ float sortIndex 2.5
 
 // downloadPageUrl
 downloadPageUrlParser
  extends abstractUrlMeasureParser
  description What is a URL to the download page for this language?
  single false
+ float sortIndex 2.5
 
 // ebook
 ebookParser
  extends abstractUrlMeasureParser
  description What is a link to a free public domain high quality eBook about this language?
+ float sortIndex 2.5
 
 // emailList
 emailListParser
  extends abstractUrlMeasureParser
  description What is a link to the mailing list for this language?
  single false
+ float sortIndex 2.5
 
 // equation
 equationParser
@@ -349,12 +363,14 @@ esolangParser
  extends abstractUrlMeasureParser
  description What is a URL to this language on https://esolangs.org/?
  string sourceDomain esolangs.org
+ float sortIndex 2.5
 
 // eventsPageUrl
 eventsPageUrlParser
  extends abstractUrlMeasureParser
  description What is a URL to an events pages for this language?
  single false
+ float sortIndex 2.5
 
 // example
 exampleParser
@@ -362,22 +378,26 @@ exampleParser
  extends abstractCodeMeasureParser
  single false
  boolean isExampleCode true
+ float sortIndex 3
 
 // faqPageUrl
 faqPageUrlParser
  extends abstractUrlMeasureParser
  description What is a URL to a frequently asked questions page for this language?
  single false
+ float sortIndex 2.5
 
 // featureTokens
 keywordsParser
  description What are all the keywords in this language?
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
+ float sortIndex 4
 abstractCommonTokenParser
  description Most general purpose programming languages implement a set of common tokens for common features like these.
  catchAllCellType stringCell
  extends abstractStringListMeasureParser
+ float sortIndex 5
  single false
 lineCommentTokenParser
  extends abstractCommonTokenParser
@@ -435,11 +455,13 @@ fileExtensionsParser
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
  description What are the file extensions for this language?
+ float sortIndex 2.4
 
 clocExtensionsParser
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
  description What are the file extensions for this language recognized by Al Danial's cloc?
+ float sortIndex 2.4
 
 filenamesParser
  extends abstractStringListMeasureParser
@@ -454,23 +476,27 @@ fileTypeParser
  description What is the file encoding for programs in this language?
  cells measureNameCell stringCell
  extends abstractEnumMeasureParser
+ float sortIndex 2.5
 
 // freedom
 isOpenSourceParser
  boolean alwaysRecommended true
  description Is this an open source project?
  extends abstractBooleanMeasureParser
+ float sortIndex 2.01
 
 isPublicDomainParser
  boolean alwaysRecommended true
  description Is this public domain?
  extends abstractBooleanMeasureParser
+ float sortIndex 2.0
 
 // funFact
 funFactParser
  cells measureNameCell urlCell
  description What is a code block or some text containing a fun or unusual fact about the language?
  extends abstractCodeMeasureParser
+ float sortIndex 2.99
 
 // gdb
 gdbSupportParser
@@ -483,6 +509,7 @@ abstractGitRepoUrlMeasureParser
  extends abstractUrlMeasureParser
  // todo remove the need for the below from grammar
  string sortKey abstractGitRepoUrlMeasureParser
+ float sortIndex 4
 
 // gitRepo
 gitRepoParser
@@ -516,6 +543,7 @@ githubBigQueryParser
 
 // githubCopilot
 githubCopilotOptimizedParser
+ float sortIndex 3.5
  description Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?
  extends abstractBooleanMeasureParser
 
@@ -526,6 +554,7 @@ githubLanguageParser
  inScope filenamesParser fileExtensionsParser
  contentKey id
  string sourceDomain github.com
+ float sortIndex 32
  reposParser
   boolean fromCrawler true
   extends abstractCountMeasureParser
@@ -578,7 +607,6 @@ githubLanguageParser
 
 // Basics
 githubRepoParser
- float sortIndex 5
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
  cells measureNameCell urlCell
@@ -619,12 +647,14 @@ goodreadsParser
  extends abstractDelimitedValuesBlobMeasureParser
  description What are books about this language from Goodreads?
  string sourceDomain goodreads.com
+ float sortIndex 101
 
 // gource
 gourceParser
  description What is a URL to a Gource visualization of this project's git history?
  extends abstractUrlMeasureParser
  string sourceDomain gource.io
+ float sortIndex 3.4
 
 // hackerNews
 hackerNewsDiscussionsParser
@@ -1870,6 +1900,7 @@ hoplParser
  extends abstractUniqueUrlMeasureParser
  description What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?
  string sourceDomain hopl.info
+ float sortIndex 11.0
 
 // images
 screenshotParser
@@ -1881,6 +1912,7 @@ photoParser
 
 // indeedJobs
 indeedJobsParser
+ float sortIndex 36
  description How many job descriptions match this query for this language on indeed.com?
  catchAllCellType stringCell
  extends abstractAnnualPopulationCountMapParser
@@ -1914,6 +1946,7 @@ isbndbParser
  extends abstractDelimitedValuesBlobMeasureParser
  description What are books about this language from ISBNdb?
  string sourceDomain isbndb.com
+ float sortIndex 22
 
 // jupyter
 jupyterKernelParser
@@ -1921,6 +1954,7 @@ jupyterKernelParser
  single false
  description What is a link to a Jupyter Kernel for this language?
  string sourceDomain jupyter.org
+ float sortIndex 9
 
 // languageServerProtocolProject
 languageServerProtocolProjectParser
@@ -1929,6 +1963,7 @@ languageServerProtocolProjectParser
  single false
  description What is the URL to a project implementing LSP for this language?
  string sourceDomain langserver.org
+ float sortIndex 3.4
 
 // leachim6
 leachim6Parser
@@ -1937,6 +1972,7 @@ leachim6Parser
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
  inScope fileExtensionsParser exampleParser
+ float sortIndex 3.2
  filepathParser
   description What is the filepath to this language in leachim6's hello-world project?
   extends abstractStringMeasureParser
@@ -1966,6 +2002,7 @@ linguistGrammarRepoParser
  // Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractUrlMeasureParser
  cells measureNameCell urlCell
+ float sortIndex 16
  contentKey url
  string sourceDomain github.com
  inScope exampleParser
@@ -1988,6 +2025,7 @@ linguistGrammarRepoParser
 // linkedInSkill
 linkedInSkillParser
  description How many people list this skill on LinkedIn?
+ float sortIndex 36
  extends abstractAnnualPopulationCountMapParser
  catchAllCellType stringCell
  contentKey id
@@ -1999,6 +2037,7 @@ meetupParser
  extends abstractUniqueUrlMeasureParser
  contentKey url
  string sourceDomain meetup.com
+ float sortIndex 4.0
  memberCountParser
   description How many people in this meetup group?
   extends abstractPopulationCountMeasureParser
@@ -2022,6 +2061,7 @@ monacoParser
   javascript
    monaco javascript
  string sourceDomain microsoft.github.io/monaco-editor/
+ float sortIndex 2.8
 
 // name
 
@@ -2029,6 +2069,7 @@ wordRankParser
  description Where does this word rank in terms of common English words?
  // where "the" is 1.
  extends abstractIntegerMeasureParser
+ float sortIndex 2.5
 
 standsForParser
  description If the language name is an acronym what does/did it stand for?
@@ -2055,6 +2096,7 @@ originCommunityParser
  boolean alwaysRecommended true
  // todo Make origin community name the url for the community? instead of the name? Not sure.
  listDelimiter  &&
+ float sortIndex 2.99
  example
   originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
  extends abstractStringListMeasureParser
@@ -2064,6 +2106,7 @@ packageRepositoryParser
  extends abstractUrlMeasureParser
  description What is a URL to the package repository for this language?
  single false
+ float sortIndex 2.9
 
 centralPackageRepositoryCountParser
  extends abstractCountMeasureParser
@@ -2091,12 +2134,14 @@ abstractParadigmParser
 visualParadigmParser
  extends abstractParadigmParser
  description Is this a visual programming thing? Sometimes called "no code" or "low code"?
+ float sortIndex 2.4
 
 // projectEuler
 projectEulerParser
  extends abstractUniqueStringMeasureParser
  description Is this language one of the ones listed on https://projecteuler.net/?
  string sourceDomain projecteuler.net
+ float sortIndex 2.999
  contentKey id
  memberCountParser
   description How many project euler members use this language?
@@ -2106,6 +2151,7 @@ projectEulerParser
 proposalsParser
  extends abstractUrlMeasureParser
  description What is the URL to a the place where language proposals are made, if one exists?
+ float sortIndex 2.99
 
 // pygments
 pygmentsHighlighterParser
@@ -2113,6 +2159,7 @@ pygmentsHighlighterParser
  description What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?
  string sourceDomain pygments.org
  inScope fileExtensionsParser
+ float sortIndex 3
  contentKey id
  filenameParser
   description What is the Python filename implementing the highlighting for this language?
@@ -2124,10 +2171,12 @@ pyplParser
  extends abstractUniqueStringMeasureParser
  description What is this language's id on https://pypl.github.io?
  string sourceDomain pypl.github.io
+ float sortIndex 11.0
 
 // quineRelay
 quineRelayParser
  extends abstractUniqueStringMeasureParser
+ float sortIndex 2.8
  description What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?
  string sourceDomain github.com/mame/quine-relay
 
@@ -2147,6 +2196,7 @@ annualRankParser
 subredditParser
  extends abstractUniqueUrlMeasureParser
  string sourceDomain reddit.com
+ float sortIndex 3.0
  contentKey url
  single false
  description What is a URL of a subreddit(s) for this language?
@@ -2168,6 +2218,7 @@ referenceParser
  description What is a URL to more info about this thing?
  // You can add raw links and then auto "upgrade" them using some of the importer code.
  single false
+ float sortIndex 2.9999
 
 // relationships
 relatedConceptsParser
@@ -2199,6 +2250,7 @@ supersetOfParser
 writtenInParser
  description What language(s) is the main implementation written in?
  extends abstractFilenameRelationshipParser
+ float sortIndex 2.1
 extensionOfParser
  description What language is this language an extension of?
  extends abstractFilenameRelationshipParser
@@ -2216,9 +2268,11 @@ inputLanguagesParser
 releaseNotesUrlParser
  extends abstractUrlMeasureParser
  description What is the URL to the release notes or changelog for this language?
+ float sortIndex 2.4
 
 // replit
 replitParser
+ float sortIndex 2.8
  extends abstractUniqueUrlMeasureParser
  description What is a URL to try this language on replit.com?
  string sourceDomain replit.com
@@ -2229,6 +2283,7 @@ repoStatsParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractHashMapMeasureParser
  inScope subDescriptionParser
+ float sortIndex 2.9
  firstCommitParser
   extends abstractYearMeasureParser
   description What year the first commit made in this git repo?
@@ -2251,6 +2306,7 @@ rijuReplParser
  description What is a URL to try this language on riju.codes?
  string sourceDomain riju.codes
  contentKey id
+ float sortIndex 3
  inScope fileExtensionsParser subDescriptionParser websiteParser gitRepoParser exampleParser
 
 // roadmap
@@ -2261,6 +2317,7 @@ roadmapParser
 // rosettaCode
 rosettaCodeParser
  extends abstractUniqueUrlMeasureParser
+ float sortIndex 2.8
  description What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?
  string sourceDomain rosettacode.org
 
@@ -2270,6 +2327,7 @@ semanticScholarParser
  extends abstractDelimitedValuesBlobMeasureParser
  description What are papers about this language from Semantic Scholar?
  string sourceDomain semanticscholar.org
+ float sortIndex 90
 
 // sourcehut
 sourcehutRepoParser
@@ -2281,9 +2339,11 @@ sourcehutRepoParser
 specParser
  extends abstractUrlMeasureParser
  description What is a URL to the official spec for this language?
+ float sortIndex 2.2
 
 // stackOverflowSurvey
 stackOverflowSurveyParser
+ float sortIndex 36
  extends abstractHashMapMeasureParser
  description What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?
  string sourceDomain insights.stackoverflow.com
@@ -2319,6 +2379,7 @@ tiobeParser
  extends abstractUniqueStringMeasureParser
  description What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?
  string sourceDomain tiobe.com
+ float sortIndex 11
  contentKey id
  currentRankParser
   description What is the current Tiobe rank of this language?
@@ -2335,6 +2396,7 @@ twitterParser
  extends abstractUniqueUrlMeasureParser
  description What is a URL to the official Twitter account of this thing, if any?
  string sourceDomain twitter.com
+ float sortIndex 3.0
  followersParser
   description How many followers does the linked account have?
   extends abstractPopulationCountMeasureParser
@@ -2353,6 +2415,7 @@ tagsParser
 // ubuntu
 ubuntuPackageParser
  extends abstractUniqueWordMeasureParser
+ float sortIndex 2.9
  description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
  string sourceDomain ubuntu.com
 
@@ -2387,11 +2450,13 @@ webReplParser
  single false
 // domainNameCell
  extends stringCell
+ float sortIndex 1.8
 domainNameParser
  description What is the domain for this language's website if it has its own?
  cells measureNameCell stringCell
  extends abstractWordMeasureParser
  contentKey name
+ float sortIndex 12
  registeredParser
   extends abstractYearMeasureParser
   description When was this domain first registered?
