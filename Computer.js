@@ -1584,7 +1584,7 @@ class Tables {
 
   get features() {
     const features = this.measures
-      .filter(measure => measure.SortIndex === 42)
+      .filter(measure => measure.SortIndex === 7)
       .map(measure => {
         const feature = new Feature(measure, this)
         if (!feature.title) {

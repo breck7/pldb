@@ -7,6 +7,7 @@ replaceJs TEMPLATE
   const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
   Tables.getLanguageTemplate(absolutePath);
  }
+writeText
 
 import measures.scroll
 
@@ -15,4 +16,3 @@ import ../header.scroll
 TEMPLATE
 
 import ../footer.scroll
-writeText
