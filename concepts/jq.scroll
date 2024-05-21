@@ -1,13 +1,34 @@
 import ../code/conceptPage.scroll
+
 id jq
 name jq
 appeared 2012
-tags queryLanguage
 creators Stephen Dolan
+tags queryLanguage
 website https://stedolan.github.io/jq/
-reference https://jqplay.org/
+
+isOpenSource true
+writtenIn c yaml bourne-shell m4 markdown python cpp json svg yacc make lex css html javascript dockerfile bash
+tryItOnline jq
+rosettaCode http://www.rosettacode.org/wiki/Category:Jq
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1957
+ committers 212
+ files 335
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/stedolan/jq/issues
+projectEuler jq
+ memberCount
+  2022 5
+reference https://jqplay.org/
+
+rijuRepl https://riju.codes/jq
+ example
+  "Hello, world!"
+  
 
 githubRepo https://github.com/stedolan/jq
  firstCommit 2012
@@ -19,12 +40,11 @@ githubRepo https://github.com/stedolan/jq
  description Command-line JSON processor
  issues 737
 
-repoStats
- firstCommit 2012
- commits 1957
- committers 212
- files 335
- newestCommit 2024
+githubBigQuery jq
+ repos 39
+ users 36
+
+isbndb 0
 
 githubLanguage jq
  type programming
@@ -32,26 +52,5 @@ githubLanguage jq
  aceMode text
  tmScope source.jq
  repos 60
-githubBigQuery jq
- repos 39
- users 36
-
-projectEuler jq
- memberCount
-  2022 5
-rosettaCode http://www.rosettacode.org/wiki/Category:Jq
-
-rijuRepl https://riju.codes/jq
- example
-  "Hello, world!"
-  
-tryItOnline jq
-
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0
-
-writtenIn c yaml bourne-shell m4 markdown python cpp json svg yacc make lex css html javascript dockerfile bash

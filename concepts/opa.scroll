@@ -1,14 +1,50 @@
 import ../code/conceptPage.scroll
+
 id opa
 name Opa
 appeared 2011
 tags pl
 website http://opalang.org
+
+writtenIn ocaml javascript css bourne-shell c diff lisp make bash xml html svg vim-script markdown perl qml java python z-shell dockerfile
+fileType text
 documentation https://github.com/MLstate/opalang/wiki/A-tour-of-Opa
+rosettaCode http://www.rosettacode.org/wiki/Category:Opa
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 4609
+ committers 71
+ files 1707
+ newestCommit 2017
 country France
 originCommunity https://github.com/MLstate
-domainName opalang.org
- registered 2010
+
+pygmentsHighlighter Opa
+ filename ml.py
+ fileExtensions opa
+twitter https://twitter.com/opalang
+leachim6 Opa
+ filepath o/Opa.opa
+ fileExtensions opa
+ example
+  jlog("Hello World")
+  
+
+keywords and as begin case client css database db do else end external forall function if import match module or package parser rec server then type val with xml_parser
+githubRepo https://github.com/MLstate/opalang
+ firstCommit 2010
+ stars 1227
+ forks 130
+ subscribers 45
+ created 2011
+ updated 2022
+ description The Opa Language for Web Application Development
+ issues 37
+
+multiLineCommentTokens /* */
+printToken jlog
+stringToken "
 
 hasTypeInference true
 hasPrintDebugging true
@@ -29,28 +65,6 @@ hasFloats true
 hasIntegers true
 hasBinaryNumbers true
 
-multiLineCommentTokens /* */
-printToken jlog
-stringToken "
-keywords and as begin case client css database db do else end external forall function if import match module or package parser rec server then type val with xml_parser
-
-githubRepo https://github.com/MLstate/opalang
- firstCommit 2010
- stars 1227
- forks 130
- subscribers 45
- created 2011
- updated 2022
- description The Opa Language for Web Application Development
- issues 37
-
-repoStats
- firstCommit 2010
- commits 4609
- committers 71
- files 1707
- newestCommit 2017
-
 wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
  example
   Server.start(Server.http,
@@ -67,20 +81,13 @@ wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
  revisionCount 149
  appeared 2011
 
-githubLanguage Opa
- fileExtensions opa
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.opa
- repos 76
+domainName opalang.org
+ registered 2010
+
 githubBigQuery Opa
  repos 58
  users 50
 
-pygmentsHighlighter Opa
- filename ml.py
- fileExtensions opa
 linguistGrammarRepo https://github.com/mads379/opa.tmbundle
  firstCommit 2011
  lastCommit 2014
@@ -99,23 +106,17 @@ linguistGrammarRepo https://github.com/mads379/opa.tmbundle
   
   
 
-leachim6 Opa
- filepath o/Opa.opa
- fileExtensions opa
- example
-  jlog("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Opa
-
-twitter https://twitter.com/opalang
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|Opa Application Development|Wenbo, Li|9781782163749
  20130612|Packt Publishing|Opa Application Development|Li Wenbo|9781782163756
 
-semanticScholar 0
+githubLanguage Opa
+ fileExtensions opa
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.opa
+ repos 76
 
-writtenIn ocaml javascript css bourne-shell c diff lisp make bash xml html svg vim-script markdown perl qml java python z-shell dockerfile
+semanticScholar 0

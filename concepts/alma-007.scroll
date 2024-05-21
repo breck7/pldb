@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id alma-007
 name Alma
 appeared 2014
-tags pl
 creators Carl Mäsak
-conceptDescription Alma is a small language created as a testbed for Raku macros.
+tags pl
 website http://masak.github.io/alma/
 aka 007
+conceptDescription Alma is a small language created as a testbed for Raku macros.
+
+writtenIn raku markdown bourne-shell json html d yaml
+repoStats
+ firstCommit 2014
+ commits 1739
+ committers 19
+ files 141
+ newestCommit 2024
 country Sweden
 originCommunity http://strangelyconsistent.org/
 
@@ -39,12 +48,3 @@ githubRepo https://github.com/masak/alma
  created 2014
  updated 2021
  description ALgoloid with MAcros -- a language with Algol-family syntax where macros take center stage
-
-repoStats
- firstCommit 2014
- commits 1739
- committers 19
- files 141
- newestCommit 2024
-
-writtenIn raku markdown bourne-shell json html d yaml

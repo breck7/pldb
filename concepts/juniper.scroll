@@ -1,15 +1,26 @@
 import ../code/conceptPage.scroll
+
 id juniper
 name juniper
 appeared 2016
-tags pl
 creators Caleb Helbling
-conceptDescription <a href='http://www.juniper-lang.org/'>Juniper</a> is a functional reactive programming language for the Arduino and other related platforms.
+tags pl
 website http://www.juniper-lang.org/
+conceptDescription <a href='http://www.juniper-lang.org/'>Juniper</a> is a functional reactive programming language for the Arduino and other related platforms.
+
+isOpenSource true
+writtenIn f-sharp markdown xml bourne-shell
+clocExtensions junos
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 262
+ committers 8
+ files 51
+ newestCommit 2023
 country United States
 originCommunity https://github.com/calebh/Juniper/issues
-domainName juniper-lang.org
- registered 2016
 
 githubRepo https://github.com/calebh/Juniper
  firstCommit 2016
@@ -21,16 +32,5 @@ githubRepo https://github.com/calebh/Juniper
  description FRP (Functional Reactive Programming) for the Arduino and other microcontrollers
  issues 3
 
-repoStats
- firstCommit 2016
- commits 262
- committers 8
- files 51
- newestCommit 2023
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-clocExtensions junos
-writtenIn f-sharp markdown xml bourne-shell
+domainName juniper-lang.org
+ registered 2016

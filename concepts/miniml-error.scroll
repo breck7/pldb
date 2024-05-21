@@ -1,13 +1,16 @@
 import ../code/conceptPage.scroll
+
 id miniml-error
 name miniML_error
 appeared 2013
 tags plzoo
-conceptDescription like miniml that can also abort execution
 website http://plzoo.andrej.com/language/miniml_error.html
-reference https://github.com/andrejbauer/plzoo
+conceptDescription like miniml that can also abort execution
+
+centralPackageRepositoryCount 0
 country Slovenia
 originCommunity University of Ljubljana
+reference https://github.com/andrejbauer/plzoo
 
 githubRepo https://github.com/andrejbauer/plzoo/tree/master/src/miniml_error
  stars 1261
@@ -17,5 +20,3 @@ githubRepo https://github.com/andrejbauer/plzoo/tree/master/src/miniml_error
  updated 2022
  description Programming Languages Zoo
  issues 10
-
-centralPackageRepositoryCount 0

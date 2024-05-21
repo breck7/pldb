@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id homebrew-pm
 name Homebrew
 appeared 2009
-tags packageManager
 creators Max Howell
-conceptDescription The Missing Package Manager for macOS.
+tags packageManager
 website https://brew.sh/
+conceptDescription The Missing Package Manager for macOS.
+
+writtenIn ruby markdown yaml bourne-shell bash json erb swift diff xml dockerfile cmake ini svg
+repoStats
+ firstCommit 2009
+ newestCommit 2024
+ commits 40021
+ committers 1281
+ files 2312
 country United States
 originCommunity https://github.com/Homebrew
-domainName brew.sh
- registered 2013
- awisRank
-  2022 15798
 
 githubRepo https://github.com/Homebrew/brew
  firstCommit 2009
@@ -23,10 +28,7 @@ githubRepo https://github.com/Homebrew/brew
  description 🍺 The missing package manager for macOS (or Linux)
  issues 39
 
-repoStats
- firstCommit 2009
- newestCommit 2024
- commits 40021
- committers 1281
- files 2312
-writtenIn ruby markdown yaml bourne-shell bash json erb swift diff xml dockerfile cmake ini svg
+domainName brew.sh
+ registered 2013
+ awisRank
+  2022 15798

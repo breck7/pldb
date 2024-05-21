@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id desktop
 name desktop
 appeared 2008
 tags application
-reference https://wiki.archlinux.org/index.php/desktop_entries#File_example
+
+fileType text
+wordRank 1680
+centralPackageRepositoryCount 0
 country United States
 originCommunity Arch Linux
+reference https://wiki.archlinux.org/index.php/desktop_entries#File_example
 
 example
  [Desktop Entry]
@@ -37,13 +42,6 @@ example
  # Describes the categories in which this entry should be shown
  Categories=Education;Languages;Java;
 
-githubLanguage desktop
- fileExtensions desktop desktopin service
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.desktop
-
 linguistGrammarRepo https://github.com/Mailaender/desktop.tmbundle.git
  firstCommit 2005
  lastCommit 2014
@@ -73,6 +71,9 @@ linguistGrammarRepo https://github.com/Mailaender/desktop.tmbundle.git
   Name=Create a new Foo!
   Icon=fooview-new
 
-fileType text
-wordRank 1680
-centralPackageRepositoryCount 0
+githubLanguage desktop
+ fileExtensions desktop desktopin service
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.desktop

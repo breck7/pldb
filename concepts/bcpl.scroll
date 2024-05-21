@@ -1,26 +1,28 @@
 import ../code/conceptPage.scroll
+
 id bcpl
 name BCPL
 appeared 1966
-tags pl
 creators Martin Richards
-documentation http://www.math.bas.bg/bantchev/place/bcpl.html
+tags pl
 standsFor Basic Combined Programming Language
+
+fileType text
+documentation http://www.math.bas.bg/bantchev/place/bcpl.html
+rosettaCode http://www.rosettacode.org/wiki/Category:BCPL
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity University of Cambridge
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasAssignment true
-
-lineCommentToken //
-printToken WRITES
-assignmentToken :=
-
+helloWorldCollection Basic Combined Programming Language
+ // Hello world in BCLP
+ GET "libhdr"
+ 
+ LET start() = VALOF
+ $( writes("Hello world*N")
+    RESULTIS 0
+ $)
+ 
 example
  GET "LIBHDR"
  
@@ -31,6 +33,29 @@ example
  $)
  
  AND FACT(N) = N = 0 -> 1, N * FACT(N - 1)
+leachim6 BCPL
+ filepath b/BCPL.bcl
+ fileExtensions bcl
+ example
+  GET "LIBHDR"
+  
+  LET START() BE
+  $(
+    WRITES("Hello World*N")
+  $)
+  
+
+lineCommentToken //
+printToken WRITES
+assignmentToken :=
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/BCPL
  example
@@ -72,40 +97,8 @@ wikipedia https://en.wikipedia.org/wiki/BCPL
  revisionCount 291
  appeared 1966
 
-helloWorldCollection Basic Combined Programming Language
- // Hello world in BCLP
- GET "libhdr"
- 
- LET start() = VALOF
- $( writes("Hello world*N")
-    RESULTIS 0
- $)
- 
-leachim6 BCPL
- filepath b/BCPL.bcl
- fileExtensions bcl
- example
-  GET "LIBHDR"
-  
-  LET START() BE
-  $(
-    WRITES("Hello World*N")
-  $)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:BCPL
-
-tiobe bc
 hopl https://hopl.info/showlanguage.prx?exp=374
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Bcpl: The Language and Its Compiler|1981|Martin Richards|4472135|4.33|3|1
- Bcpl: The Language and Its Compiler|1980|M. Richards|3919566|2.00|1|0
- Bcpl On The Bbc Microcomputer User Guide||Chris Jobson|4321106|0.0|0|0
- Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0
+tiobe bc
 
 isbndb 0
 
@@ -116,3 +109,10 @@ semanticScholar 5
  1980|A space‐efficient code generation scheme for BCPL|10.1002/spe.4380100202|2|0|R. Agarwal and S. Chanson|7fda6c1e2fcf63e526f0d2388a1c13a1f20f5755
  1975|The Emulated OCODE Machine for the Support of BCPL|10.7146/DPB.V4I45.7692|1|0|O. Sørensen|dabdd10fe0d38b4a0b6f165f626fd0310e4112c8
  2013|How BCPL Evolved from CPL|10.1093/comjnl/bxs026|1|0|M. Richards|d6b48c3577d5115b6d7e848accea82e65046b6d4
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Bcpl: The Language and Its Compiler|1981|Martin Richards|4472135|4.33|3|1
+ Bcpl: The Language and Its Compiler|1980|M. Richards|3919566|2.00|1|0
+ Bcpl On The Bbc Microcomputer User Guide||Chris Jobson|4321106|0.0|0|0
+ Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0

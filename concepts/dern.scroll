@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id dern
 name Dern
 appeared 2008
 tags pl
-conceptDescription A platform independent programming language in standard C99. It is a dialect of Lisp with influences from Scheme, Emacs Lisp and C. Runs in Amiga, Haiku, Plan9, Unix, Windows and almost anything between.
 website https://octaspire.io/dern-manual.html
+conceptDescription A platform independent programming language in standard C99. It is a dialect of Lisp with influences from Scheme, Emacs Lisp and C. Runs in Amiga, Haiku, Plan9, Unix, Windows and almost anything between.
+
+isOpenSource true
+writtenIn c bourne-shell yaml make html python markdown expect lisp vim-script cmake
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 870
+ committers 1
+ files 327
+ newestCommit 2022
 country Unknown
 originCommunity https://github.com/octaspire
 
@@ -18,19 +30,6 @@ githubRepo https://github.com/octaspire/dern
  description Programming language
  issues 1
 
-repoStats
- firstCommit 2017
- commits 870
- committers 1
- files 327
- newestCommit 2022
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  14073664|Show HN: Octaspire Dern – Programming language|2017-04-09 18:35:42 UTC|1491762942|octaspire|15|47
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c bourne-shell yaml make html python markdown expect lisp vim-script cmake

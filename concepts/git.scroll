@@ -1,24 +1,37 @@
 import ../code/conceptPage.scroll
+
 id git
 name Git
 appeared 2005
-tags application
 creators Linus Torvalds
+tags application
 website https://git-scm.com
+standsFor global information tracker
+
+isOpenSource true
+writtenIn bourne-shell c perl diff make markdown asp.net yaml javascript xslt go python bash m4 css xml lisp cmake z-shell c-shell ruby rescript
+irc https://web.libera.chat/#git-devel
+releaseNotesUrl https://github.com/git/git/tree/master/Documentation/RelNotes
+fileType text
 documentation https://git-scm.com/doc
 ebook https://git-scm.com/book/en/v2
-cheatSheetUrl https://training.github.com/downloads/github-git-cheat-sheet.pdf
-cheatSheetUrl https://training.github.com/
-standsFor global information tracker
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2005
+ commits 76023
+ committers 2227
+ files 4475
+ newestCommit 2024
 country Various
 originCommunity https://github.com/git/
-domainName git-scm.com
- registered 2008
- awisRank
-  2022 2482
-releaseNotesUrl https://github.com/git/git/tree/master/Documentation/RelNotes
 
+cheatSheetUrl https://training.github.com/downloads/github-git-cheat-sheet.pdf
+cheatSheetUrl https://training.github.com/
 gource https://www.youtube.com/watch?v=RnCC4U-K300
+
+meetup https://www.meetup.com/topics/git
+ memberCount 23696
+ groupCount 102
 githubRepo https://github.com/git/git
  stars 45955
  forks 24937
@@ -47,22 +60,10 @@ wikipedia https://en.wikipedia.org/wiki/Git
  revisionCount 2277
  appeared 2005
 
+domainName git-scm.com
+ registered 2008
+ awisRank
+  2022 2482
+
 linkedInSkill git
  2018 703154
-
-irc https://web.libera.chat/#git-devel
-meetup https://www.meetup.com/topics/git
- memberCount 23696
- groupCount 102
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2005
- commits 76023
- committers 2227
- files 4475
- newestCommit 2024
-writtenIn bourne-shell c perl diff make markdown asp.net yaml javascript xslt go python bash m4 css xml lisp cmake z-shell c-shell ruby rescript

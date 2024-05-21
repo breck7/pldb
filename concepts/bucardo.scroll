@@ -1,18 +1,26 @@
 import ../code/conceptPage.scroll
+
 id bucardo
 name Bucardo
 appeared 2009
-tags application
 creators Jon Jensen
-conceptDescription Bucardo is an asynchronous PostgreSQL replication system, allowing for multi-source, multi-target operations. Bucardo is a replication system for Postgres that supports any number of sources and targets (aka masters and slaves). It is asynchronous and trigger based.
+tags application
 website https://bucardo.org/Bucardo/
+conceptDescription Bucardo is an asynchronous PostgreSQL replication system, allowing for multi-source, multi-target operations. Bucardo is a replication system for Postgres that supports any number of sources and targets (aka masters and slaves). It is asynchronous and trigger based.
+
+isOpenSource true
+writtenIn perl html yaml bourne-shell bash diff
+relatedConcepts postgresql sql plpgsql perl
 documentation https://bucardo.org/Bucardo/
-reference https://wiki.postgresql.org/wiki/Bucardo
+repoStats
+ firstCommit 2007
+ commits 2584
+ committers 33
+ files 75
+ newestCommit 2023
 country United States
 originCommunity https://github.com/bucardo/bucardo
-domainName bucardo.org
-
-relatedConcepts postgresql sql plpgsql perl
+reference https://wiki.postgresql.org/wiki/Bucardo
 
 githubRepo https://github.com/bucardo/bucardo
  stars 646
@@ -23,12 +31,4 @@ githubRepo https://github.com/bucardo/bucardo
  description Bucardo multimaster and master/slave Postgres replication
  issues 81
 
-isOpenSource true
-
-repoStats
- firstCommit 2007
- commits 2584
- committers 33
- files 75
- newestCommit 2023
-writtenIn perl html yaml bourne-shell bash diff
+domainName bucardo.org

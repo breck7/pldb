@@ -1,15 +1,30 @@
 import ../code/conceptPage.scroll
+
 id arc
 name Arc
 appeared 2001
-tags pl
 creators Paul Graham and Robert Morris
+tags pl
 website https://www.arclanguage.org
 webRepl http://tryarc.org/
-documentation http://www.arclanguage.org/tut.txt
-country United States
 
 relatedConcepts bel
+fileType text
+wordRank 5327
+documentation http://www.arclanguage.org/tut.txt
+rosettaCode http://www.rosettacode.org/wiki/Category:Arc
+centralPackageRepositoryCount 0
+country United States
+
+leachim6 ARC
+ filepath a/ARC.arc
+ fileExtensions arc
+ example
+  (prn "Hello World")
+  
+
+printToken prn
+stringToken "
 
 isLisp true
 hasPrintDebugging true
@@ -41,9 +56,6 @@ hasMacros true
 hasStrings true
  "Hello world"
 
-printToken prn
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/Arc_(programming_language)
  example
   (defop said req
@@ -59,6 +71,15 @@ wikipedia https://en.wikipedia.org/wiki/Arc_(programming_language)
  revisionCount 193
  appeared 2001
 
+hopl https://hopl.info/showlanguage.prx?exp=3986
+tiobe Arc
+
+githubBigQuery Arc
+ repos 467
+ users 417
+
+isbndb 0
+
 githubLanguage Arc
  fileExtensions arc
  trendingProjectsCount 0
@@ -66,26 +87,6 @@ githubLanguage Arc
  aceMode text
  tmScope none
  repos 236
-githubBigQuery Arc
- repos 467
- users 417
-
-leachim6 ARC
- filepath a/ARC.arc
- fileExtensions arc
- example
-  (prn "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Arc
-
-tiobe Arc
-hopl https://hopl.info/showlanguage.prx?exp=3986
-
-fileType text
-wordRank 5327
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 8
  year|title|doi|citations|influentialCitations|authors|paperId

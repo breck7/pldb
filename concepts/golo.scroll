@@ -1,14 +1,54 @@
 import ../code/conceptPage.scroll
+
 id golo
 name Golo
 appeared 2012
-tags pl
 creators Webmaster
+tags pl
 website http://golo-lang.org
+
+isOpenSource true
+writtenIn java asciidoc markdown bourne-shell yaml css gradle ruby dockerfile tex html javascript
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Golo
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 2555
+ committers 26
+ files 663
+ newestCommit 2021
 country Unknown
 originCommunity https://dev.eclipse.org/mailman/listinfo/golo-dev
-domainName golo-lang.org
- registered 2012
+
+pygmentsHighlighter Golo
+ filename jvm.py
+ fileExtensions golo
+twitter https://twitter.com/golo_lang
+leachim6 Golo
+ filepath g/Golo.golo
+ fileExtensions golo
+ example
+  module hello.world
+  
+  function main = |args| {
+    println("Hello World")
+  }
+  
+
+githubRepo https://github.com/eclipse-archived/golo-lang
+ firstCommit 2015
+ stars 460
+ forks 92
+ subscribers 65
+ created 2013
+ updated 2022
+ description Golo - a lightweight dynamic language for the JVM.
+ issues 66
+
+lineCommentToken #
+printToken println
+stringToken "
 
 hasLineComments true
  # A comment
@@ -27,27 +67,6 @@ hasFloats true
 hasIntegers true
  # -?\d[\d_]*
 
-lineCommentToken #
-printToken println
-stringToken "
-
-githubRepo https://github.com/eclipse-archived/golo-lang
- firstCommit 2015
- stars 460
- forks 92
- subscribers 65
- created 2013
- updated 2022
- description Golo - a lightweight dynamic language for the JVM.
- issues 66
-
-repoStats
- firstCommit 2015
- commits 2555
- committers 26
- files 663
- newestCommit 2021
-
 wikipedia https://en.wikipedia.org/wiki/Golo_(programming_language)
  related jvm java
  summary Golo is computer software, a programming language for the Java virtual machine (JVM). It is simple, with dynamic, weak typing. It was created in 2012 as part of the research activities of the DynaMid group of the Centre of Innovation in Telecommunications and Integration of service (CITI) Laboratory at Institut national des sciences appliquées de Lyon (INSA). It is distributed as free and open-source software under the Eclipse Public License 1.0.
@@ -58,20 +77,13 @@ wikipedia https://en.wikipedia.org/wiki/Golo_(programming_language)
  dailyPageViews 12
  appeared 2012
 
-githubLanguage Golo
- fileExtensions golo
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.golo
- repos 46
+domainName golo-lang.org
+ registered 2012
+
 githubBigQuery Golo
  repos 29
  users 23
 
-pygmentsHighlighter Golo
- filename jvm.py
- fileExtensions golo
 linguistGrammarRepo https://github.com/TypeUnsafe/sublime-golo
  firstCommit 2013
  lastCommit 2015
@@ -101,23 +113,12 @@ linguistGrammarRepo https://github.com/TypeUnsafe/sublime-golo
   
   
 
-leachim6 Golo
- filepath g/Golo.golo
- fileExtensions golo
- example
-  module hello.world
-  
-  function main = |args| {
-    println("Hello World")
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Golo
-
-twitter https://twitter.com/golo_lang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn java asciidoc markdown bourne-shell yaml css gradle ruby dockerfile tex html javascript
+githubLanguage Golo
+ fileExtensions golo
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.golo
+ repos 46

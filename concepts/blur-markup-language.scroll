@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id blur-markup-language
 name blur-markup-language
 appeared 2017
-tags textMarkup
 creators Andrew Yoon
+tags textMarkup
 website http://www.bml-lang.org/
+
+writtenIn typescript javascript json markdown html yaml
+repoStats
+ firstCommit 2017
+ commits 377
+ committers 3
+ files 59
+ newestCommit 2024
 country United States
 originCommunity https://nothing-to-say.org/
-domainName bml-lang.org
- registered 2018
 
 githubRepo https://github.com/ajyoon/bml
  firstCommit 2017
@@ -20,11 +27,5 @@ githubRepo https://github.com/ajyoon/bml
  forks 0
  issues 2
 
-repoStats
- firstCommit 2017
- commits 377
- committers 3
- files 59
- newestCommit 2024
-
-writtenIn typescript javascript json markdown html yaml
+domainName bml-lang.org
+ registered 2018

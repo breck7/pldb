@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id multibase
 name multibase
 appeared 2016
-tags standard
 creators Juan Benet
+tags standard
+
+writtenIn markdown csv yaml
+relatedConcepts base64
+repoStats
+ firstCommit 2016
+ commits 102
+ committers 41
+ files 16
+ newestCommit 2023
 country Various
 originCommunity https://github.com/multiformats
-
-relatedConcepts base64
 
 githubRepo https://github.com/multiformats/multibase
  firstCommit 2016
@@ -18,11 +26,3 @@ githubRepo https://github.com/multiformats/multibase
  updated 2022
  description Self identifying base encodings
  issues 29
-
-repoStats
- firstCommit 2016
- commits 102
- committers 41
- files 16
- newestCommit 2023
-writtenIn markdown csv yaml

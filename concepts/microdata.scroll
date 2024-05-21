@@ -1,13 +1,14 @@
 import ../code/conceptPage.scroll
+
 id microdata
 name Microdata HTML
 appeared 2013
 tags schema
-reference https://www.w3.org/TR/microdata/
-country United States
-originCommunity World Wide Web Consortium
 
 relatedConcepts rdf json-ld
+country United States
+originCommunity World Wide Web Consortium
+reference https://www.w3.org/TR/microdata/
 
 example
  <div itemscope itemtype="http://schema.org/RentalCarReservation">

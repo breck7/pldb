@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id penrose
 name penrose
 appeared 2016
 tags pl
 website http://penrose.ink
+
+writtenIn json typescript markdown svg css html javascript yaml vim-script python lisp handlebars bourne-shell
+repoStats
+ firstCommit 2016
+ commits 5069
+ committers 57
+ files 1370
+ newestCommit 2024
 country United States
 originCommunity Carnegie Mellon University
-domainName penrose.ink
+
+twitter https://twitter.com/usepenrose
 
 githubRepo https://github.com/penrose/penrose
  firstCommit 2016
@@ -18,19 +28,10 @@ githubRepo https://github.com/penrose/penrose
  description Create beautiful diagrams just by typing mathematical notation in plain text.
  issues 159
 
-repoStats
- firstCommit 2016
- commits 5069
- committers 57
- files 1370
- newestCommit 2024
-
-twitter https://twitter.com/usepenrose
+domainName penrose.ink
 
 isbndb 0
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2020|Penrose|10.1145/3386569.3392375|7|1|Katherine Q. Ye and Wode Ni and Max Krieger and Dor Ma'ayan and Jenna Wise and Jonathan Aldrich and Joshua Sunshine and Keenan Crane|e2a49a1b90e758d55e30782db5b722170880b5a0
-
-writtenIn json typescript markdown svg css html javascript yaml vim-script python lisp handlebars bourne-shell

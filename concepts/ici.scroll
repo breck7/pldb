@@ -1,17 +1,27 @@
 import ../code/conceptPage.scroll
+
 id ici
 name Interactive C Interpreter
 appeared 1980
 tags pl
 website http://atrn.org/ici/
-documentation http://atrn.org/ici/documentation.html
 standsFor Interactive C Interpreter
+
+fileType text
+documentation http://atrn.org/ici/documentation.html
+centralPackageRepositoryCount 0
 country Australia
 originCommunity Canon Information Systems Research
 
-hasPrintDebugging true
+leachim6 ICI
+ filepath i/ICI.ici
+ fileExtensions ici
+ example
+  printf("Hello World\n");
 
 printToken printf
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/ICI_(programming_language)
  related c perl regex tcl
@@ -23,13 +33,4 @@ wikipedia https://en.wikipedia.org/wiki/ICI_(programming_language)
  dailyPageViews 5
  appeared 1980
 
-leachim6 ICI
- filepath i/ICI.ici
- fileExtensions ici
- example
-  printf("Hello World\n");
-
 hopl https://hopl.info/showlanguage.prx?exp=2104
-
-fileType text
-centralPackageRepositoryCount 0

@@ -1,20 +1,29 @@
 import ../code/conceptPage.scroll
+
 id mirc
 name MIRC scripting language
 appeared 1995
-tags pl
 creators Khaled Mardam-Bey
+tags pl
 website http://mirc.com/
+
+isOpenSource false
+fileType text
+codeMirror mirc
+centralPackageRepositoryCount 0
 country Great Britain
 originCommunity https://www.mirc.com
-domainName mirc.com
- registered 1997
- awisRank
-  2022 198825
 
-hasPrintDebugging true
+leachim6 Mirc
+ filepath m/Mirc.mrc
+ fileExtensions mrc
+ example
+  echo -a Hello World
+  
 
 printToken echo
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
  example
@@ -47,17 +56,9 @@ wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
  revisionCount 313
  appeared 1995
 
-codeMirror mirc
-
-leachim6 Mirc
- filepath m/Mirc.mrc
- fileExtensions mrc
- example
-  echo -a Hello World
-  
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+domainName mirc.com
+ registered 1997
+ awisRank
+  2022 198825
 
 isbndb 0

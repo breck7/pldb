@@ -1,17 +1,26 @@
 import ../code/conceptPage.scroll
+
 id onnx
 name onnx
 appeared 2017
-tags binaryDataFormat
 creators Junjie Bai
+tags binaryDataFormat
 website https://onnx.ai/
+
+isOpenSource true
+writtenIn python markdown cpp yaml json protobuf cmake jupyter-notebook toml bourne-shell svg css powershell make javascript
+fileType binary
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 3107
+ committers 364
+ files 6660
+ newestCommit 2024
 country United States
 originCommunity https://github.com/onnx
-domainName onnx.ai
- registered 2017
- awisRank
-  2022 408680
-  2017 957966
+
+twitter https://twitter.com/onnxai
 
 githubRepo https://github.com/onnx/onnx
  stars 12803
@@ -23,15 +32,8 @@ githubRepo https://github.com/onnx/onnx
  description Open standard for machine learning interoperability
  issues 291
 
-twitter https://twitter.com/onnxai
-fileType binary
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2017
- commits 3107
- committers 364
- files 6660
- newestCommit 2024
-writtenIn python markdown cpp yaml json protobuf cmake jupyter-notebook toml bourne-shell svg css powershell make javascript
+domainName onnx.ai
+ registered 2017
+ awisRank
+  2022 408680
+  2017 957966

@@ -1,13 +1,50 @@
 import ../code/conceptPage.scroll
+
 id boo
 name Boo
 appeared 2003
-tags pl
 creators Rodrigo B. De Oliveira
+tags pl
 website https://github.com/boo-lang
+
+isOpenSource true
+tryItOnline boo
+fileType text
 documentation https://bootest.readthedocs.io/en/latest/
+rosettaCode http://www.rosettacode.org/wiki/Category:Boo
+centralPackageRepositoryCount 0
 country Brasil
 originCommunity The Boo Programming Language
+projectEuler Boo
+ memberCount
+  2019 21
+  2022 23
+
+helloWorldCollection Boo
+ # Hello World in Boo
+ print "Hello World"
+ 
+pygmentsHighlighter Boo
+ filename dotnet.py
+ fileExtensions boo
+rijuRepl https://riju.codes/boo
+ example
+  print "Hello, world!"
+  
+ description Object-oriented, statically typed, general-purpose programming language on Microsoft's Common Language Infrastructure
+ fileExtensions boo
+ website https://boo-language.github.io/
+ gitRepo https://github.com/boo-lang/boo
+leachim6 Boo
+ filepath b/Boo.boo
+ fileExtensions boo
+ example
+  print "Hello World"
+  
+
+lineCommentToken #
+printToken print
+stringToken "
 
 hasSemanticIndentation true
 hasTypeInference true
@@ -27,10 +64,6 @@ hasFloats true
 hasIntegers true
  # \d+
 hasMultiLineComments true
-
-lineCommentToken #
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Boo_(programming_language)
  example
@@ -52,6 +85,20 @@ wikipedia https://en.wikipedia.org/wiki/Boo_(programming_language)
  revisionCount 274
  appeared 2003
 
+tiobe Boo
+
+githubBigQuery Boo
+ repos 241
+ users 208
+
+linguistGrammarRepo https://github.com/Shammah/boo-sublime
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 5
+ commitCount 56
+
+isbndb 0
+
 githubLanguage Boo
  fileExtensions boo
  trendingProjects
@@ -62,51 +109,5 @@ githubLanguage Boo
  aceMode text
  tmScope source.boo
  repos 232
-githubBigQuery Boo
- repos 241
- users 208
-
-pygmentsHighlighter Boo
- filename dotnet.py
- fileExtensions boo
-linguistGrammarRepo https://github.com/Shammah/boo-sublime
- firstCommit 2012
- lastCommit 2016
- committerCount 5
- commitCount 56
-
-projectEuler Boo
- memberCount
-  2019 21
-  2022 23
-helloWorldCollection Boo
- # Hello World in Boo
- print "Hello World"
- 
-leachim6 Boo
- filepath b/Boo.boo
- fileExtensions boo
- example
-  print "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Boo
-
-rijuRepl https://riju.codes/boo
- example
-  print "Hello, world!"
-  
- description Object-oriented, statically typed, general-purpose programming language on Microsoft's Common Language Infrastructure
- fileExtensions boo
- website https://boo-language.github.io/
- gitRepo https://github.com/boo-lang/boo
-tryItOnline boo
-
-tiobe Boo
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

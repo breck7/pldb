@@ -1,12 +1,36 @@
 import ../code/conceptPage.scroll
+
 id maxima
 name Maxima
 appeared 1982
 tags pl
 website http://maxima.sourceforge.net/
+
+isOpenSource true
+tryItOnline maxima
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Maxima
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
-domainName maxima.sourceforge.net
+projectEuler Maxima
+ memberCount
+  2022 19
+
+pygmentsHighlighter Maxima
+ filename maxima.py
+ fileExtensions mac max
+leachim6 Maxima
+ filepath m/Maxima.max
+ fileExtensions max
+ example
+  print("Hello World")$
+  
+
+keywords if then else elseif do while repeat until for from to downto step thru
+
+printToken print
+stringToken "
 
 hasComments true
 hasPrintDebugging true
@@ -19,10 +43,7 @@ hasFloats true
 hasIntegers true
 hasMultiLineComments true
 
-printToken print
-stringToken "
-keywords if then else elseif do while repeat until for from to downto step thru
-
+jupyterKernel https://github.com/robert-dodier/maxima-jupyter
 wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
  related common-lisp unix linux android algol lisp gnuplot fortran jupyter-editor python qt sagemath r lyx-editor emacs-editor isbn
  summary Maxima is a computer algebra system (CAS) based on a 1982 version of Macsyma. It is written in Common Lisp and runs on all POSIX platforms such as macOS, Unix, BSD, and Linux, as well as under Microsoft Windows and Android. It is free software released under the terms of the GNU General Public License (GPL).
@@ -33,27 +54,7 @@ wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
  dailyPageViews 134
  appeared 1982
 
-pygmentsHighlighter Maxima
- filename maxima.py
- fileExtensions mac max
-
-projectEuler Maxima
- memberCount
-  2022 19
-leachim6 Maxima
- filepath m/Maxima.max
- fileExtensions max
- example
-  print("Hello World")$
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Maxima
-
-tryItOnline maxima
-
-jupyterKernel https://github.com/robert-dodier/maxima-jupyter
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName maxima.sourceforge.net
 
 isbndb 2
  year|publisher|title|authors|isbn13

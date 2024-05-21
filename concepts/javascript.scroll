@@ -1,22 +1,78 @@
 import ../code/conceptPage.scroll
+
 id javascript
 name JavaScript
 appeared 1995
-tags pl
 creators Brendan Eich
+tags pl
 webRepl https://playcode.io/javascript/
-documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript
-ebook https://eloquentjavascript.net/
-spec https://javascript.info/manuals-specifications
-reference https://www.w3schools.com/js/js_reserved.asp
 aka ECMAScript
 aka es6
 aka es5
+
+isOpenSource true
+spec https://javascript.info/manuals-specifications
+influencedBy java self scheme
+clocExtensions _js bones cjs es6 jake jakefile js jsb jscad jsfl jsm jss mjs njs pac sjs ssjs xsjs xsjslib
+fileType text
+wordRank 3002
+documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript
+ebook https://eloquentjavascript.net/
+annualReportsUrl https://stateofjs.com/en-us/
+antlr https://github.com/antlr/grammars-v4/tree/master/javascript
+monaco javascript
+codeMirror javascript
+rosettaCode http://www.rosettacode.org/wiki/Category:JavaScript
+quineRelay JavaScript
+replit https://repl.it/languages/javascript
+packageRepository http://npmjs.org
+ubuntuPackage nodejs
 country United States
 originCommunity Netscape
 proposals https://github.com/tc39/proposals
+funFact https://www.youtube.com/watch?v=XOmhtfTrRxc&t=125s&ab_channel=FinJS
+ The name Java in JavaScript was pure marketing: "At the time, the dot-com boom had begun and Java was the hot new language, so Eich considered the JavaScript name a marketing ploy by Netscape"
+projectEuler ECMAScript
+ memberCount
+  2022 2478
+  2019 1818
+reference https://www.w3schools.com/js/js_reserved.asp
 
-influencedBy java self scheme
+helloWorldCollection JavaScript
+ // Hello world in JavaScript
+ console.log("Hello World");
+pygmentsHighlighter JavaScript
+ filename javascript.py
+ fileExtensions js jsm mjs cjs
+rijuRepl https://riju.codes/javascript
+ example
+  console.log("Hello, world!");
+  
+subreddit https://reddit.com/r/javascript
+ memberCount
+  2017 156874
+  2022 2113371
+leachim6 JavaScript
+ filepath j/JavaScript.js
+ fileExtensions js
+ example
+  console.log("Hello World");
+  
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/javascript
+ memberCount 3151948
+ groupCount 5270
+keywords abstract arguments await boolean break byte case catch char class const continue debugger default delete do double else enum eval export extends false final finally float for function goto if implements import in instanceof int interface let long native new null package private protected public return short static super switch synchronized this throw throws transient true try typeof var void volatile while with yield
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken console.log
+assignmentToken =
+stringToken "
+stringToken '
+stringToken `
+booleanTokens true false
 
 hasSExpressions false
 hasSymbols true
@@ -248,19 +304,7 @@ hasBinaryNumbers true
  0b100110100000110011110010010
 hasScientificNotation true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken console.log
-assignmentToken =
-stringToken "
-stringToken '
-stringToken `
-booleanTokens true false
-keywords abstract arguments await boolean break byte case catch char class const continue debugger default delete do double else enum eval export extends false final finally float for function goto if implements import in instanceof int interface let long native new null package private protected public return short static super switch synchronized this throw throws transient true try typeof var void volatile while with yield
-
-funFact https://www.youtube.com/watch?v=XOmhtfTrRxc&t=125s&ab_channel=FinJS
- The name Java in JavaScript was pure marketing: "At the time, the dot-com boom had begun and Java was the hot new language, so Eich considered the JavaScript name a marketing ploy by Netscape"
-
+jupyterKernel https://github.com/n-riesco/ijavascript
 wikipedia https://en.wikipedia.org/wiki/JavaScript
  example
   var minstake   = 0.00000100;  // valor base
@@ -330,55 +374,15 @@ wikipedia https://en.wikipedia.org/wiki/JavaScript
  revisionCount 6131
  appeared 1995
 
-githubLanguage JavaScript
- fileExtensions js _js bones cjs es es6 frag gs jake javascript jsb jscad jsfl jslib jsm jspre jss jsx mjs njs pac sjs ssjs xsjs xsjslib
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
-  yangshun tech-interview-handbook https://github.com/yangshun.png https://github.com/yangshun/tech-interview-handbook JavaScript #f1e05a 33598 4587 4242 "💯 Materials to help you rock your next coding interview"
-  haotian-wang google-access-helper https://github.com/haotian-wang.png https://github.com/haotian-wang/google-access-helper JavaScript #f1e05a 3644 1071 1332 谷歌访问助手破解版
-  nondanee UnblockNeteaseMusic https://github.com/nondanee.png https://github.com/nondanee/UnblockNeteaseMusic JavaScript #f1e05a 5101 689 1660 "Revive unavailable songs for Netease Cloud Music"
-  ricklamers gridstudio https://github.com/ricklamers.png https://github.com/ricklamers/gridstudio JavaScript #f1e05a 5643 937 3362 "Grid studio is a web-based spreadsheet application with full integration of the Python programming language."
-  amejiarosario dsa.js-data-structures-algorithms-javascript https://github.com/amejiarosario.png https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript #f1e05a 4576 334 2082 "Data Structures and Algorithms explained and implemented in JavaScript"
-  bilibili flv.js https://github.com/bilibili.png https://github.com/bilibili/flv.js JavaScript #f1e05a 15970 2425 648 "HTML5 FLV Player"
-  outline outline https://github.com/outline.png https://github.com/outline/outline JavaScript #f1e05a 5553 330 2038 "The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, markdown compatible and open source."
-  jamiebuilds the-super-tiny-compiler https://github.com/jamiebuilds.png https://github.com/jamiebuilds/the-super-tiny-compiler JavaScript #f1e05a 14459 1332 966 "⛄️ Possibly the smallest compiler ever"
-  YvetteLau Blog https://github.com/YvetteLau.png https://github.com/YvetteLau/Blog JavaScript #f1e05a 1043 181 253 【前端进阶】优质博文
-  alvarotrigo fullPage.js https://github.com/alvarotrigo.png https://github.com/alvarotrigo/fullPage.js JavaScript #f1e05a 27942 6580 805 "fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple"
-  dcloudio uni-app https://github.com/dcloudio.png https://github.com/dcloudio/uni-app JavaScript #f1e05a 12081 957 1600 "uni-app 是使用 Vue 语法开发小程序、H5、App的统一框架"
-  webtorrent webtorrent https://github.com/webtorrent.png https://github.com/webtorrent/webtorrent JavaScript #f1e05a 20280 1948 307 "⚡️ Streaming torrent client for the web"
-  answershuto learnVue https://github.com/answershuto.png https://github.com/answershuto/learnVue JavaScript #f1e05a 7570 1538 421 "Vue.js 源码解析"
-  date-fns date-fns https://github.com/date-fns.png https://github.com/date-fns/date-fns JavaScript #f1e05a 19569 803 836 "⏳ Modern JavaScript date utility library ⌛️"
-  Kickball awesome-selfhosted https://github.com/Kickball.png https://github.com/Kickball/awesome-selfhosted JavaScript #f1e05a 35277 2823 1495 "This is a list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of locally hosting and managing applications instead of renting from SaaS providers."
-  react-ui-kit dribbble2react https://github.com/react-ui-kit.png https://github.com/react-ui-kit/dribbble2react JavaScript #f1e05a 1143 522 222 "Transform Dribbble designs to React-Native code & YouTube video tutorials"
-  jonasschmedtmann complete-javascript-course https://github.com/jonasschmedtmann.png https://github.com/jonasschmedtmann/complete-javascript-course JavaScript #f1e05a 2088 3077 198 "Starter files, final projects and FAQ for my Complete JavaScript course"
-  graphql graphql-js https://github.com/graphql.png https://github.com/graphql/graphql-js JavaScript #f1e05a 14679 1279 340 "A reference implementation of GraphQL for JavaScript"
-  DIYgod RSSHub https://github.com/DIYgod.png https://github.com/DIYgod/RSSHub JavaScript #f1e05a 8818 1112 480 "🍰 万物皆可 RSS"
-  qianguyihao Web https://github.com/qianguyihao.png https://github.com/qianguyihao/Web JavaScript #f1e05a 6166 1785 598 前端入门和进阶学习笔记，超详细的Web前端学习图文教程。从零开始学前端，做一个Web全栈工程师。持续更新...
-  Binaryify NeteaseCloudMusicApi https://github.com/Binaryify.png https://github.com/Binaryify/NeteaseCloudMusicApi JavaScript #f1e05a 11486 2196 826 "网易云音乐 Node.js API service"
-  transloadit uppy https://github.com/transloadit.png https://github.com/transloadit/uppy JavaScript #f1e05a 20872 1051 498 "The next open source file uploader for web browsers 🐶"
-  gchq CyberChef https://github.com/gchq.png https://github.com/gchq/CyberChef JavaScript #f1e05a 5890 818 424 "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis"
-  givanz VvvebJs https://github.com/givanz.png https://github.com/givanz/VvvebJs JavaScript #f1e05a 1848 443 616 "Drag and drop website builder javascript library."
- trendingProjectsCount 26
- type programming
- filenames Jakefile
- interpreters chakra d8 gjs js node nodejs qjs rhino v8 v8-shell
- aceMode javascript
- codemirrorMode javascript
- codemirrorMimeType text/javascript
- tmScope source.js
- aliases js or node
- repos 16046489
+hopl https://hopl.info/showlanguage.prx?exp=2133
+tiobe JavaScript
+ currentRank 6
+pypl JavaScript
+
 githubBigQuery JavaScript
  repos 1099879
  users 566345
 
-antlr https://github.com/antlr/grammars-v4/tree/master/javascript
-monaco javascript
-codeMirror javascript
-pygmentsHighlighter JavaScript
- filename javascript.py
- fileExtensions js jsm mjs cjs
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
  lastCommit 2018
@@ -387,67 +391,6 @@ linguistGrammarRepo https://github.com/atom/language-javascript
  sampleCount 38
  example
   alert("dude!")
-
-projectEuler ECMAScript
- memberCount
-  2022 2478
-  2019 1818
-helloWorldCollection JavaScript
- // Hello world in JavaScript
- console.log("Hello World");
-leachim6 JavaScript
- filepath j/JavaScript.js
- fileExtensions js
- example
-  console.log("Hello World");
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:JavaScript
-quineRelay JavaScript
-
-rijuRepl https://riju.codes/javascript
- example
-  console.log("Hello, world!");
-  
-replit https://repl.it/languages/javascript
-
-indeedJobs javascript developer
- 2017 25726
-linkedInSkill javascript
- 2018 3826705
-stackOverflowSurvey
- 2021
-  users 53587
-  medianSalary 54049
-  fans 37008
-  percentageUsing 0.64
-annualReportsUrl https://stateofjs.com/en-us/
-
-subreddit https://reddit.com/r/javascript
- memberCount
-  2017 156874
-  2022 2113371
-meetup https://www.meetup.com/topics/javascript
- memberCount 3151948
- groupCount 5270
-
-tiobe JavaScript
- currentRank 6
-hopl https://hopl.info/showlanguage.prx?exp=2133
-pypl JavaScript
-
-packageRepository http://npmjs.org
-
-ubuntuPackage nodejs
-jupyterKernel https://github.com/n-riesco/ijavascript
-fileType text
-wordRank 3002
-isOpenSource true
-githubCopilotOptimized true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Eloquent JavaScript: A Modern Introduction to Programming|2010|Marijn Haverbeke|13787033|4.12|1721|141
- Professional JavaScript for Web Developers|2005|Nicholas C. Zakas|130520|4.14|559|31
 
 isbndb 349
  year|publisher|title|authors|isbn13
@@ -801,6 +744,57 @@ isbndb 349
  2010|New Riders|Scriptin' with JavaScript and Ajax: A Designer's Guide (Voices That Matter)|Wyke-Smith, Charles|9780132104760
  2020|BPB Publications|JavaScript for Gurus: Use JavaScript programming features, techniques and modules to solve everyday problems (English Edition)|Preez, Ockert J. du|9789389423655
 
+githubLanguage JavaScript
+ fileExtensions js _js bones cjs es es6 frag gs jake javascript jsb jscad jsfl jslib jsm jspre jss jsx mjs njs pac sjs ssjs xsjs xsjslib
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
+  yangshun tech-interview-handbook https://github.com/yangshun.png https://github.com/yangshun/tech-interview-handbook JavaScript #f1e05a 33598 4587 4242 "💯 Materials to help you rock your next coding interview"
+  haotian-wang google-access-helper https://github.com/haotian-wang.png https://github.com/haotian-wang/google-access-helper JavaScript #f1e05a 3644 1071 1332 谷歌访问助手破解版
+  nondanee UnblockNeteaseMusic https://github.com/nondanee.png https://github.com/nondanee/UnblockNeteaseMusic JavaScript #f1e05a 5101 689 1660 "Revive unavailable songs for Netease Cloud Music"
+  ricklamers gridstudio https://github.com/ricklamers.png https://github.com/ricklamers/gridstudio JavaScript #f1e05a 5643 937 3362 "Grid studio is a web-based spreadsheet application with full integration of the Python programming language."
+  amejiarosario dsa.js-data-structures-algorithms-javascript https://github.com/amejiarosario.png https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript #f1e05a 4576 334 2082 "Data Structures and Algorithms explained and implemented in JavaScript"
+  bilibili flv.js https://github.com/bilibili.png https://github.com/bilibili/flv.js JavaScript #f1e05a 15970 2425 648 "HTML5 FLV Player"
+  outline outline https://github.com/outline.png https://github.com/outline/outline JavaScript #f1e05a 5553 330 2038 "The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, markdown compatible and open source."
+  jamiebuilds the-super-tiny-compiler https://github.com/jamiebuilds.png https://github.com/jamiebuilds/the-super-tiny-compiler JavaScript #f1e05a 14459 1332 966 "⛄️ Possibly the smallest compiler ever"
+  YvetteLau Blog https://github.com/YvetteLau.png https://github.com/YvetteLau/Blog JavaScript #f1e05a 1043 181 253 【前端进阶】优质博文
+  alvarotrigo fullPage.js https://github.com/alvarotrigo.png https://github.com/alvarotrigo/fullPage.js JavaScript #f1e05a 27942 6580 805 "fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple"
+  dcloudio uni-app https://github.com/dcloudio.png https://github.com/dcloudio/uni-app JavaScript #f1e05a 12081 957 1600 "uni-app 是使用 Vue 语法开发小程序、H5、App的统一框架"
+  webtorrent webtorrent https://github.com/webtorrent.png https://github.com/webtorrent/webtorrent JavaScript #f1e05a 20280 1948 307 "⚡️ Streaming torrent client for the web"
+  answershuto learnVue https://github.com/answershuto.png https://github.com/answershuto/learnVue JavaScript #f1e05a 7570 1538 421 "Vue.js 源码解析"
+  date-fns date-fns https://github.com/date-fns.png https://github.com/date-fns/date-fns JavaScript #f1e05a 19569 803 836 "⏳ Modern JavaScript date utility library ⌛️"
+  Kickball awesome-selfhosted https://github.com/Kickball.png https://github.com/Kickball/awesome-selfhosted JavaScript #f1e05a 35277 2823 1495 "This is a list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of locally hosting and managing applications instead of renting from SaaS providers."
+  react-ui-kit dribbble2react https://github.com/react-ui-kit.png https://github.com/react-ui-kit/dribbble2react JavaScript #f1e05a 1143 522 222 "Transform Dribbble designs to React-Native code & YouTube video tutorials"
+  jonasschmedtmann complete-javascript-course https://github.com/jonasschmedtmann.png https://github.com/jonasschmedtmann/complete-javascript-course JavaScript #f1e05a 2088 3077 198 "Starter files, final projects and FAQ for my Complete JavaScript course"
+  graphql graphql-js https://github.com/graphql.png https://github.com/graphql/graphql-js JavaScript #f1e05a 14679 1279 340 "A reference implementation of GraphQL for JavaScript"
+  DIYgod RSSHub https://github.com/DIYgod.png https://github.com/DIYgod/RSSHub JavaScript #f1e05a 8818 1112 480 "🍰 万物皆可 RSS"
+  qianguyihao Web https://github.com/qianguyihao.png https://github.com/qianguyihao/Web JavaScript #f1e05a 6166 1785 598 前端入门和进阶学习笔记，超详细的Web前端学习图文教程。从零开始学前端，做一个Web全栈工程师。持续更新...
+  Binaryify NeteaseCloudMusicApi https://github.com/Binaryify.png https://github.com/Binaryify/NeteaseCloudMusicApi JavaScript #f1e05a 11486 2196 826 "网易云音乐 Node.js API service"
+  transloadit uppy https://github.com/transloadit.png https://github.com/transloadit/uppy JavaScript #f1e05a 20872 1051 498 "The next open source file uploader for web browsers 🐶"
+  gchq CyberChef https://github.com/gchq.png https://github.com/gchq/CyberChef JavaScript #f1e05a 5890 818 424 "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis"
+  givanz VvvebJs https://github.com/givanz.png https://github.com/givanz/VvvebJs JavaScript #f1e05a 1848 443 616 "Drag and drop website builder javascript library."
+ trendingProjectsCount 26
+ type programming
+ filenames Jakefile
+ interpreters chakra d8 gjs js node nodejs qjs rhino v8 v8-shell
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType text/javascript
+ tmScope source.js
+ aliases js or node
+ repos 16046489
+
+indeedJobs javascript developer
+ 2017 25726
+linkedInSkill javascript
+ 2018 3826705
+stackOverflowSurvey
+ 2021
+  users 53587
+  medianSalary 54049
+  fans 37008
+  percentageUsing 0.64
+
 semanticScholar 48
  year|title|doi|citations|influentialCitations|authors|paperId
  2006|The application/json Media Type for JavaScript Object Notation (JSON)|10.17487/RFC4627|1178|151|D. Crockford|cc4e39f219e384df97109a36b80875791fdd8d30
@@ -852,4 +846,7 @@ semanticScholar 48
  2019|State-of-the-Art Javascript Language for Internet of Things|10.5753/sbesc_estendido.2019.8651|1|0|Fernando Luis Oliveira and J. Mattos|146ce6bb1be347a7afe095f0f8c6b4d9068b4572
  2019|Functional Programming Patterns in JavaScript|10.1007/978-981-13-8311-3_26|1|0|A. Sobolev and S. Zykov|7817b9bfa35c5ea2aad9e8c8050c5d23cc5705a8
 
-clocExtensions _js bones cjs es6 jake jakefile js jsb jscad jsfl jsm jss mjs njs pac sjs ssjs xsjs xsjslib
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Eloquent JavaScript: A Modern Introduction to Programming|2010|Marijn Haverbeke|13787033|4.12|1721|141
+ Professional JavaScript for Web Developers|2005|Nicholas C. Zakas|130520|4.14|559|31

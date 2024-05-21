@@ -1,16 +1,35 @@
 import ../code/conceptPage.scroll
+
 id labview
 name LabVIEW G
 appeared 1986
 tags pl
 website http://www.ni.com/labview
-documentation https://www.ni.com/docs/en-US/bundle/labview/page/lvhelp/labview_help.html
 aka g
+
+isOpenSource false
+releaseNotesUrl https://www.ni.com/nl-nl/support/documentation/release-notes/product.labview.html
+visualParadigm true
+fileType text
+documentation https://www.ni.com/docs/en-US/bundle/labview/page/lvhelp/labview_help.html
+faqPageUrl https://www.ni.com/nl-nl/support/documentation/supplemental/06/labview-object-oriented-programming-faq.html
+rosettaCode http://www.rosettacode.org/wiki/Category:LabVIEW
+centralPackageRepositoryCount 0
 country United States
 originCommunity National Instruments Corporation
-releaseNotesUrl https://www.ni.com/nl-nl/support/documentation/release-notes/product.labview.html
+projectEuler LabVIEW
+ memberCount
+  2019 129
+  2022 134
 
-visualParadigm true
+subreddit https://reddit.com/r/LabVIEW
+ memberCount
+  2017 1558
+  2022 5124
+
+meetup https://www.meetup.com/topics/labview
+ memberCount 548
+ groupCount 5
 
 hasFixedPoint true
 
@@ -24,15 +43,10 @@ wikipedia https://en.wikipedia.org/wiki/LabVIEW
  revisionCount 1028
  appeared 1986
 
-githubLanguage LabVIEW
- fileExtensions lvproj lvclass lvlib
- trendingProjectsCount 0
- type programming
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml
- repos 5849
+hopl https://hopl.info/showlanguage.prx?exp=2657
+tiobe LabVIEW
+ currentRank 45
+
 githubBigQuery LabVIEW
  repos 357
  users 165
@@ -43,32 +57,19 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
  committerCount 12
  commitCount 97
 
-projectEuler LabVIEW
- memberCount
-  2019 129
-  2022 134
-rosettaCode http://www.rosettacode.org/wiki/Category:LabVIEW
+isbndb 0
+
+githubLanguage LabVIEW
+ fileExtensions lvproj lvclass lvlib
+ trendingProjectsCount 0
+ type programming
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml
+ repos 5849
 
 indeedJobs labview engineer
  2017 2012
-faqPageUrl https://www.ni.com/nl-nl/support/documentation/supplemental/06/labview-object-oriented-programming-faq.html
-
-subreddit https://reddit.com/r/LabVIEW
- memberCount
-  2017 1558
-  2022 5124
-meetup https://www.meetup.com/topics/labview
- memberCount 548
- groupCount 5
-
-tiobe LabVIEW
- currentRank 45
-hopl https://hopl.info/showlanguage.prx?exp=2657
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

@@ -1,18 +1,20 @@
 import ../code/conceptPage.scroll
+
 id datev
 name datev
 appeared 2017
-tags pl
 creators Markus Voelter and Sergej Koˇsˇcejev
-conceptDescription A Domain-Specific Language for Payroll Calculations
+tags pl
 website http://www.datev.de/
+conceptDescription A Domain-Specific Language for Payroll Calculations
+
+isOpenSource false
+writtenIn mps kernel
 documentation https://voelter.de/data/pub/PayrollDSL.pdf
-reference https://link.springer.com/chapter/10.1007/978-3-030-73758-0_4
 country Germany
 originCommunity DATEV eG
-domainName datev.de
-
-writtenIn mps kernel
+reference https://link.springer.com/chapter/10.1007/978-3-030-73758-0_4
 
 twitter https://twitter.com/datev?lang=en
-isOpenSource false
+
+domainName datev.de

@@ -1,27 +1,27 @@
 import ../code/conceptPage.scroll
+
 id scroll
 name Scroll
 appeared 2020
-tags textMarkup
-isPublicDomain true
 creators Breck Yunits
-conceptDescription An extensible alternative to Markdown built on Tree Notation.
+tags textMarkup
 website https://scroll.pub/
 webRepl https://try.scroll.pub/
-country United States
-originCommunity https://github.com/breck7/scroll/issues
-domainName scroll.pub
- registered 2021
+conceptDescription An extensible alternative to Markdown built on Tree Notation.
 
+isPublicDomain true
+isOpenSource true
+writtenIn javascript yaml css json
 subsetOf treenotation
 relatedConcepts markdown treenotation grammar
-
-hasImports true
- import settings.scroll
-hasTernaryOperators false
-hasSemanticIndentation true
- * A link to PLDB
-  https://pldb.io
+repoStats
+ firstCommit 2019
+ commits 1230
+ committers 6
+ files 141
+ newestCommit 2024
+country United States
+originCommunity https://github.com/breck7/scroll/issues
 
 example
  title This is Scroll. The keyword for title is title.
@@ -39,13 +39,12 @@ githubRepo https://github.com/breck7/scroll
  description The extensible alternative to Markdown.
  issues 6
 
-repoStats
- firstCommit 2019
- commits 1230
- committers 6
- files 141
- newestCommit 2024
+hasImports true
+ import settings.scroll
+hasTernaryOperators false
+hasSemanticIndentation true
+ * A link to PLDB
+  https://pldb.io
 
-isOpenSource true
-
-writtenIn javascript yaml css json
+domainName scroll.pub
+ registered 2021

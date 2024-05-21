@@ -1,17 +1,27 @@
 import ../code/conceptPage.scroll
+
 id couchdb
 name CouchDB
 appeared 2005
 tags application
 website https://couchdb.apache.org/
-documentation https://docs.couchdb.org/en/3.2.2-docs/
-originCommunity https://github.com/apache/couchdb
-domainName couchdb.apache.org
 
+isOpenSource true
 writtenIn erlang restructuredtext elixir java markdown python bourne-shell c javascript ini make cpp html yaml json svg groovy gradle diff css bash ruby powershell dockerfile
+fileType text
+documentation https://docs.couchdb.org/en/3.2.2-docs/
+repoStats
+ firstCommit 2008
+ commits 17537
+ committers 303
+ files 1478
+ newestCommit 2024
+originCommunity https://github.com/apache/couchdb
 
-hasStrings true
-hasBooleans true
+subreddit https://www.reddit.com/r/CouchDB
+ memberCount
+  2022 1000
+twitter https://twitter.com/couchdb
 
 githubRepo https://github.com/apache/couchdb
  stars 5500
@@ -20,6 +30,9 @@ githubRepo https://github.com/apache/couchdb
  description Seamless multi-master syncing database with an intuitive HTTP/JSON API, designed for reliability
  issues 275
 
+hasStrings true
+hasBooleans true
+
 wikipedia https://en.wikipedia.org/wiki/Apache_CouchDB
  related c javascript linux solaris freebsd json nginx-config sql mongodb postgresql
  summary Apache CouchDB is an open-source document-oriented NoSQL database, implemented in Erlang. CouchDB uses multiple formats and protocols to store, transfer, and process its data. It uses JSON to store data, JavaScript as its query language using MapReduce, and HTTP for an API.
@@ -27,26 +40,13 @@ wikipedia https://en.wikipedia.org/wiki/Apache_CouchDB
  dailyPageViews 70
  appeared 2005
 
+domainName couchdb.apache.org
+
 indeedJobs couchdb developer
  2022 13
-
-subreddit https://www.reddit.com/r/CouchDB
- memberCount
-  2022 1000
-
-twitter https://twitter.com/couchdb
-fileType text
-isOpenSource true
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Definitive Guide: Time to Relax|2010|J.Chris Anderson|6712632|3.50|68|9
  Getting Started with CouchDB|2011|M.C. Brown|13217933|3.42|19|2
  Scaling CouchDB|2011|Bradley Holt|11354246|3.58|12|0
-
-repoStats
- firstCommit 2008
- commits 17537
- committers 303
- files 1478
- newestCommit 2024

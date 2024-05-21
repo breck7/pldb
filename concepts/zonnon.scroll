@@ -1,16 +1,29 @@
 import ../code/conceptPage.scroll
+
 id zonnon
 name Zonnon
 appeared 2003
-tags pl
 creators Jürg Gutknecht
+tags pl
+
+rosettaCode http://www.rosettacode.org/wiki/Category:Zonnon
+centralPackageRepositoryCount 0
+
+leachim6 Zonnon
+ filepath z/Zonnon.znn
+ fileExtensions znn
+ example
+  module HelloWorld;
+  begin
+      writeln("Hello World");
+  end HelloWorld.
+
+printToken writeln
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken writeln
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Zonnon
  related oberon pascal modula
@@ -21,15 +34,3 @@ wikipedia https://en.wikipedia.org/wiki/Zonnon
  revisionCount 110
  dailyPageViews 7
  appeared 2013
-
-leachim6 Zonnon
- filepath z/Zonnon.znn
- fileExtensions znn
- example
-  module HelloWorld;
-  begin
-      writeln("Hello World");
-  end HelloWorld.
-rosettaCode http://www.rosettacode.org/wiki/Category:Zonnon
-
-centralPackageRepositoryCount 0

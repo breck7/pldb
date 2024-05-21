@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id mlatu
 name mlatu
 appeared 2021
-tags pl
 creators Caden Haustein
+tags pl
 website https://mlatu-lang.github.io/mlatu
+
+writtenIn markdown rust toml yaml
+repoStats
+ firstCommit 2021
+ commits 192
+ committers 6
+ files 27
+ newestCommit 2024
 country United States
 originCommunity https://github.com/mlatu-lang
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/mlatu-lang/mlatu
  updated 2022
  description A declarative concatenative programming language
  issues 0
-
-repoStats
- firstCommit 2021
- commits 192
- committers 6
- files 27
- newestCommit 2024
-
-writtenIn markdown rust toml yaml

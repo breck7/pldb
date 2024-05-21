@@ -1,12 +1,24 @@
 import ../code/conceptPage.scroll
+
 id component-pascal
 name COMPONENT PASCAL
 appeared 1997
 tags pl
-country Switzerland
-originCommunity www.oberon.ch
 
 supersetOf oberon-2
+fileType text
+centralPackageRepositoryCount 0
+country Switzerland
+originCommunity www.oberon.ch
+projectEuler Component Pascal
+ memberCount
+  2022 8
+
+pygmentsHighlighter Component Pascal
+ filename oberon.py
+ fileExtensions cp cps
+
+multiLineCommentTokens (* *)
 
 hasMultiLineComments true
  (* A comment
@@ -16,24 +28,12 @@ hasComments true
  *)
 hasSemanticIndentation false
 
-multiLineCommentTokens (* *)
+hopl https://hopl.info/showlanguage.prx?exp=1209
 
-githubLanguage Component Pascal
- fileExtensions cp cps
- trendingProjectsCount 0
- type programming
- aceMode pascal
- codemirrorMode pascal
- codemirrorMimeType text/x-pascal
- tmScope source.pascal
- repos 13387
 githubBigQuery Component Pascal
  repos 132
  users 128
 
-pygmentsHighlighter Component Pascal
- filename oberon.py
- fileExtensions cp cps
 linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -113,11 +113,12 @@ linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
   
   END ObxFact.
 
-projectEuler Component Pascal
- memberCount
-  2022 8
-
-hopl https://hopl.info/showlanguage.prx?exp=1209
-
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Component Pascal
+ fileExtensions cp cps
+ trendingProjectsCount 0
+ type programming
+ aceMode pascal
+ codemirrorMode pascal
+ codemirrorMimeType text/x-pascal
+ tmScope source.pascal
+ repos 13387

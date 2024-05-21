@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id euclid
 name Euclid
 appeared 1970
-tags pl
 creators Butler Lampson
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Canada
 originCommunity Xerox PARC && University of Toronto
 
@@ -18,8 +22,5 @@ wikipedia https://en.wikipedia.org/wiki/Euclid_(programming_language)
  appeared 1970
 
 hopl https://hopl.info/showlanguage.prx?exp=756
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

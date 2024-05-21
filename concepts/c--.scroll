@@ -1,22 +1,16 @@
 import ../code/conceptPage.scroll
+
 id c--
 name C--
 appeared 1997
-tags pl
 creators Simon Peyton Jones
+tags pl
 website http://www.cs.tufts.edu/~nr/c--/index.html
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Tufts University
-
-wikipedia https://en.wikipedia.org/wiki/C--
- related c ascii assembly-language modula-3 bcpl llvmir
- summary C-- (pronounced cee minus minus) is a C-like programming language. Its creators, functional programming researchers Simon Peyton Jones and Norman Ramsey, designed it to be generated mainly by compilers for very high-level languages rather than written by human programmers. Unlike many other intermediate languages, its representation is plain ASCII text, not bytecode or another binary format.
- pageId 1422467
- dailyPageViews 568
- created 2005
- backlinksCount 45
- revisionCount 148
- appeared 1997
 
 leachim6 C--
  filepath c/C--
@@ -35,10 +29,17 @@ leachim6 C--
   }
   
 
-hopl https://hopl.info/showlanguage.prx?exp=3733
+wikipedia https://en.wikipedia.org/wiki/C--
+ related c ascii assembly-language modula-3 bcpl llvmir
+ summary C-- (pronounced cee minus minus) is a C-like programming language. Its creators, functional programming researchers Simon Peyton Jones and Norman Ramsey, designed it to be generated mainly by compilers for very high-level languages rather than written by human programmers. Unlike many other intermediate languages, its representation is plain ASCII text, not bytecode or another binary format.
+ pageId 1422467
+ dailyPageViews 568
+ created 2005
+ backlinksCount 45
+ revisionCount 148
+ appeared 1997
 
-fileType text
-centralPackageRepositoryCount 0
+hopl https://hopl.info/showlanguage.prx?exp=3733
 
 isbndb 0
 

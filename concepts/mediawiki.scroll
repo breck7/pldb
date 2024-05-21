@@ -1,21 +1,31 @@
 import ../code/conceptPage.scroll
+
 id mediawiki
 name MediaWiki
 appeared 2002
 tags wikiMarkup
-conceptDescription The syntax and keywords used by the MediaWiki software to format a page.
 website https://en.wikipedia.org/wiki/MediaWiki#Markup
-documentation https://www.mediawiki.org/wiki/Documentation
-documentation https://en.wikipedia.org/wiki/Help:Wikitext
-spec https://www.mediawiki.org/wiki/Specs/wikitext/1.0.0
-reference https://www.mediawiki.org/wiki/Wikitext
-reference https://doc.wikimedia.org/mediawiki-core/master/php/classParser.html
 aka wikitext
 aka wikicode
 aka wiki markup
+conceptDescription The syntax and keywords used by the MediaWiki software to format a page.
+
+isOpenSource true
+spec https://www.mediawiki.org/wiki/Specs/wikitext/1.0.0
+fileType text
+wordRank 9998
+documentation https://www.mediawiki.org/wiki/Documentation
+documentation https://en.wikipedia.org/wiki/Help:Wikitext
+centralPackageRepositoryCount 0
 country United States
 originCommunity Wikimedia Foundation, Inc
+reference https://www.mediawiki.org/wiki/Wikitext
+reference https://doc.wikimedia.org/mediawiki-core/master/php/classParser.html
 
+rijuRepl https://riju.codes/mediawiki
+ example
+  Hello, world!
+  
 example
  = Heading 1 =
  Indentation as used on talk pages:
@@ -60,11 +70,6 @@ wikipedia https://en.wikipedia.org/wiki/MediaWiki
  revisionCount 2948
  dailyPageViews 610
  appeared 2002
-
-githubLanguage MediaWiki
- fileExtensions mediawiki wiki
- trendingProjectsCount 0
- repos 10
 
 linguistGrammarRepo https://github.com/textmate/mediawiki.tmbundle
  firstCommit 2006
@@ -165,24 +170,19 @@ linguistGrammarRepo https://github.com/textmate/mediawiki.tmbundle
   This document is maintained in a collaborative wiki.  If you wish to update or modify this document please visit [http://wiki.eclipse.org/index.php/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide http://wiki.eclipse.org/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide]
   
 
-rijuRepl https://riju.codes/mediawiki
- example
-  Hello, world!
-  
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 20081014|O'Reilly Media, Inc.|MediaWiki|Daniel J. Barrett|9780596554149
+ 20081014|O'Reilly Media, Inc.|MediaWiki|Daniel J. Barrett|9780596156541
+
+githubLanguage MediaWiki
+ fileExtensions mediawiki wiki
+ trendingProjectsCount 0
+ repos 10
 
 indeedJobs mediawiki developer
  2022 30
 linkedInSkill mediawiki
  2018 3862
-
-fileType text
-wordRank 9998
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 20081014|O'Reilly Media, Inc.|MediaWiki|Daniel J. Barrett|9780596554149
- 20081014|O'Reilly Media, Inc.|MediaWiki|Daniel J. Barrett|9780596156541
 
 semanticScholar 0

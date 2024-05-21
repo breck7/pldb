@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id modelica
 name Modelica
 appeared 1997
 tags pl
 website http://www.modelica.org/
-reference https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html
-reference https://modelica.readthedocs.io/en/latest/lexical.html
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/modelica
+codeMirror modelica
+centralPackageRepositoryCount 0
 country Sweden
 originCommunity Modelica Association
-domainName modelica.org
- registered 1998
- awisRank
-  2022 716353
+reference https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html
+reference https://modelica.readthedocs.io/en/latest/lexical.html
+
+pygmentsHighlighter Modelica
+ filename modeling.py
+ fileExtensions mo
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
@@ -27,8 +35,6 @@ hasFloats true
  // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
 hasIntegers true
  // \d+
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Modelica
  example
@@ -49,24 +55,17 @@ wikipedia https://en.wikipedia.org/wiki/Modelica
  revisionCount 288
  appeared 1997
 
-githubLanguage Modelica
- fileExtensions mo
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode modelica
- codemirrorMimeType text/x-modelica
- tmScope source.modelica
- repos 1208
+hopl https://hopl.info/showlanguage.prx?exp=4965
+
+domainName modelica.org
+ registered 1998
+ awisRank
+  2022 716353
+
 githubBigQuery Modelica
  repos 542
  users 447
 
-antlr https://github.com/antlr/grammars-v4/tree/master/modelica
-codeMirror modelica
-pygmentsHighlighter Modelica
- filename modeling.py
- fileExtensions mo
 linguistGrammarRepo https://github.com/BorisChumichev/modelicaSublimeTextPackage
  firstCommit 2013
  lastCommit 2017
@@ -79,18 +78,19 @@ linguistGrammarRepo https://github.com/BorisChumichev/modelicaSublimeTextPackage
   end PackageExamples;
   
 
-hopl https://hopl.info/showlanguage.prx?exp=4965
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Introduction to Modeling and Simulation of Technical and Physical Systems with Modelica|2011|Peter Fritzson|19472408|3.00|2|0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2004|Wiley-IEEE Press|Principles of Object-Oriented Modeling and Simulation with Modelica 2.1|Fritzson, Peter|9780471471639
+
+githubLanguage Modelica
+ fileExtensions mo
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode modelica
+ codemirrorMimeType text/x-modelica
+ tmScope source.modelica
+ repos 1208
 
 semanticScholar 14
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -108,3 +108,7 @@ semanticScholar 14
  2018|Fault Detection and Localization Using Modelica and Abductive Reasoning|10.1007/978-3-319-74962-4_3|1|0|Ingo Pill and F. Wotawa|3499328b944bfecf21af99cb1fabfff5e57ae96f
  2014|Modelica modeling language as a tool on control engineering education: Simulation of a two-tank system|10.1109/TALE.2014.7062602|1|0|J. Figueiredo and V. Carvalho and J. Machado and F. Soares|8994b29fe87bac03d00c879de717078b4c78c617
  2021|Development and Validation of a Latent Thermal Energy Storage Model Using Modelica|10.3390/en14010194|1|1|Dre Helmns and David H. Blum and S. Dutton and V. Carey|b8fe6955626b16c61017f1de5bfcacfd8394b1c8
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Introduction to Modeling and Simulation of Technical and Physical Systems with Modelica|2011|Peter Fritzson|19472408|3.00|2|0

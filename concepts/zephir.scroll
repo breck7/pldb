@@ -1,15 +1,41 @@
 import ../code/conceptPage.scroll
+
 id zephir
 name Zephir
 appeared 2013
-tags pl
 creators Andres Gutierrez
+tags pl
 website https://zephir-lang.com/
+
+isOpenSource true
+writtenIn php c json bourne-shell yaml markdown m4 xml dockerfile javascript bash css make lisp
+fileType text
 documentation https://docs.zephir-lang.com/0.12/en/welcome
-domainName zephir-lang.com
- registered 2013
- awisRank
-  2022 3671741
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 6144
+ committers 146
+ files 1454
+ newestCommit 2024
+
+pygmentsHighlighter Zephir
+ filename php.py
+ fileExtensions zep
+twitter https://twitter.com/zephirlang
+
+githubRepo https://github.com/phalcon/zephir
+ firstCommit 2013
+ stars 3128
+ forks 470
+ subscribers 206
+ created 2013
+ updated 2022
+ description Zephir is a compiled high level language aimed to the creation of C-extensions for PHP.
+ issues 94
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -26,40 +52,15 @@ hasFloats true
 hasIntegers true
  // [0-9]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
+domainName zephir-lang.com
+ registered 2013
+ awisRank
+  2022 3671741
 
-githubRepo https://github.com/phalcon/zephir
- firstCommit 2013
- stars 3128
- forks 470
- subscribers 206
- created 2013
- updated 2022
- description Zephir is a compiled high level language aimed to the creation of C-extensions for PHP.
- issues 94
-
-repoStats
- firstCommit 2013
- commits 6144
- committers 146
- files 1454
- newestCommit 2024
-
-githubLanguage Zephir
- fileExtensions zep
- trendingProjectsCount 0
- type programming
- aceMode php
- tmScope source.php.zephir
- repos 91
 githubBigQuery Zephir
  repos 140
  users 127
 
-pygmentsHighlighter Zephir
- filename php.py
- fileExtensions zep
 linguistGrammarRepo https://github.com/phalcon/zephir-sublime
  firstCommit 2013
  lastCommit 2017
@@ -122,13 +123,14 @@ linguistGrammarRepo https://github.com/phalcon/zephir-sublime
   }
   
 
-twitter https://twitter.com/zephirlang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Zephir
+ fileExtensions zep
+ trendingProjectsCount 0
+ type programming
+ aceMode php
+ tmScope source.php.zephir
+ repos 91
 
-writtenIn php c json bourne-shell yaml markdown m4 xml dockerfile javascript bash css make lisp
+semanticScholar 0

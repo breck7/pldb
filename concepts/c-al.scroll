@@ -1,15 +1,18 @@
 import ../code/conceptPage.scroll
+
 id c-al
 name C/AL
 appeared 1987
-tags pl
 creators Michael Nielsen
+tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
 
-hasBooleans true
-
 booleanTokens TRUE FALSE
+
+hasBooleans true
 
 wikipedia https://en.wikipedia.org/wiki/C/AL
  example
@@ -31,5 +34,3 @@ wikipedia https://en.wikipedia.org/wiki/C/AL
  revisionCount 81
  dailyPageViews 72
  appeared 1958
-
-centralPackageRepositoryCount 0

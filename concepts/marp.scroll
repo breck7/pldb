@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id marp
 name Marp
 appeared 2018
 tags textMarkup
-conceptDescription Presentations in markdown
 website https://marp.app/
+conceptDescription Presentations in markdown
+
+writtenIn typescript javascript markdown scss yaml json svg
+supersetOf markdown
+repoStats
+ firstCommit 2018
+ commits 1219
+ committers 6
+ files 69
+ newestCommit 2023
 country Japan
 originCommunity https://github.com/marp-team
-
-supersetOf markdown
 
 example
  ---
@@ -26,12 +34,3 @@ githubRepo https://github.com/marp-team/marp-core
  updated 2023
  description The core of Marp converter
  issues 12
-
-repoStats
- firstCommit 2018
- commits 1219
- committers 6
- files 69
- newestCommit 2023
-
-writtenIn typescript javascript markdown scss yaml json svg

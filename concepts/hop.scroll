@@ -1,16 +1,15 @@
 import ../code/conceptPage.scroll
+
 id hop
 name hop
 appeared 2006
 tags pl
-reference https://www.lri.fr/~conchon/TER/2012/3/dls06.pdf
+
+wordRank 3322
+centralPackageRepositoryCount 0
 country France
 originCommunity Inria Sophia Antipolis && Universit ́e de Nice
-
-hasStrings true
- "Hello world"
-
-stringToken "
+reference https://www.lri.fr/~conchon/TER/2012/3/dls06.pdf
 
 leachim6 HOP
  filepath h/HOP
@@ -23,7 +22,9 @@ leachim6 HOP
           "Hello World")))
   
 
-hopl https://hopl.info/showlanguage.prx?exp=8576
+stringToken "
 
-wordRank 3322
-centralPackageRepositoryCount 0
+hasStrings true
+ "Hello world"
+
+hopl https://hopl.info/showlanguage.prx?exp=8576

@@ -1,20 +1,35 @@
 import ../code/conceptPage.scroll
+
 id slope
 name Slope
 appeared 2021
-tags pl
 creators Sloum
-conceptDescription A small s-expression based programming language
+tags pl
 website https://slope.colorfield.space
 standsFor SLOum's Programming Environment
-fileExtensions slo
-country United States
-originCommunity https://git.rawtext.club/slope-lang
+conceptDescription A small s-expression based programming language
 
 writtenIn go
 influencedBy scheme
-
+fileExtensions slo
 visualParadigm false
+packageRepository https://git.rawtext.club/slope-lang/packages
+country United States
+originCommunity https://git.rawtext.club/slope-lang
+
+example
+ ; hello world
+ (define greeting "Hello")
+ (display greeting ", world!\n")
+ 
+
+keywords define set! lambda cond case if for load load-mod load-mod-file usage macro eval apply and or begin begin0 exists coeval
+gitRepo https://git.rawtext.club/slope-lang/slope
+
+lineCommentToken ;
+printToken display
+stringToken "
+booleanTokens #t #f
 
 isLisp true
 hasMacros true
@@ -62,19 +77,3 @@ hasZeroBasedNumbering true
 hasIncrementAndDecrementOperators false
 hasConditionals true
  (if positive? 1 -1)
-
-lineCommentToken ;
-printToken display
-stringToken "
-booleanTokens #t #f
-keywords define set! lambda cond case if for load load-mod load-mod-file usage macro eval apply and or begin begin0 exists coeval
-
-example
- ; hello world
- (define greeting "Hello")
- (display greeting ", world!\n")
- 
-
-gitRepo https://git.rawtext.club/slope-lang/slope
-
-packageRepository https://git.rawtext.club/slope-lang/packages

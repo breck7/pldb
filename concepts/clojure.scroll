@@ -1,25 +1,97 @@
 import ../code/conceptPage.scroll
+
 id clojure
 name Clojure
 appeared 2007
-tags pl
 creators Rich Hickey
+tags pl
 website https://clojure.org
+
+isOpenSource true
+writtenIn java clojure markdown yaml html xml bourne-shell
+runsOnVm jvm
+tryItOnline clojure
+officialBlogUrl https://clojure.org/news/news
+fileExtensions clj cljs cljc edn
+releaseNotesUrl https://clojure.org/releases/devchangelog
+clocExtensions boot cl2 clj cljs.hl cljscm cljx hic riemann.config
+fileType text
 documentation https://clojuredocs.org/
 documentation https://clojure-doc.org/
-reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
-cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
-fileExtensions clj cljs cljc edn
+eventsPageUrl https://clojure.org/events/2022/reclojure
+faqPageUrl https://clojure.org/guides/faq
+downloadPageUrl https://clojure.org/releases/downloads
+antlr https://github.com/antlr/grammars-v4/tree/master/clojure
+monaco clojure
+codeMirror clojure
+rosettaCode http://www.rosettacode.org/wiki/Category:Clojure
+quineRelay Clojure
+replit https://repl.it/languages/clojure
+packageRepository https://clojars.org/
+ubuntuPackage clojure
+repoStats
+ firstCommit 2006
+ commits 4370
+ committers 218
+ files 346
+ newestCommit 2024
 country United States
 originCommunity Cognitect, Inc
-domainName clojure.org
- registered 2005
- awisRank
-  2022 176648
-  2017 105076
-releaseNotesUrl https://clojure.org/releases/devchangelog
+projectEuler Clojure
+ memberCount
+  2019 1572
+  2022 1655
+reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
 
-runsOnVm jvm
+helloWorldCollection Clojure
+ ; Hello world in Clojure
+ 
+ (defn hello []
+   (println "Hello world!"))
+ 
+ (hello)
+pygmentsHighlighter Clojure
+ filename jvm.py
+ fileExtensions clj cljc
+rijuRepl https://riju.codes/clojure
+ example
+  (println "Hello, world!")
+  
+ description Modern, dynamic, and functional dialect of the Lisp programming language on the Java platform
+ fileExtensions clj cljc edn
+ website https://clojure.org/
+ gitRepo https://github.com/clojure/clojure
+subreddit https://reddit.com/r/Clojure
+ memberCount
+  2017 12947
+  2022 29258
+leachim6 Clojure
+ filepath c/Clojure.clj
+ fileExtensions clj
+ example
+  (println "Hello World")
+  
+cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
+gource https://www.youtube.com/watch?v=wM5sxT0BEdU
+languageServerProtocolProject https://github.com/snoe/clojure-lsp
+ writtenIn clojure
+
+meetup https://www.meetup.com/topics/clojure
+ memberCount 163418
+ groupCount 378
+githubRepo https://github.com/clojure/clojure
+ stars 9941
+ forks 1457
+ subscribers 690
+ created 2010
+ updated 2023
+ description The Clojure programming language
+ issues 0
+
+lineCommentToken ;
+multiLineCommentTokens (comment )
+printToken println
+stringToken "
 
 isLisp true
 hasStrings true
@@ -74,28 +146,8 @@ hasFloats true
 hasIntegers true
  ; -?\d+
 
-lineCommentToken ;
-multiLineCommentTokens (comment )
-printToken println
-stringToken "
-
-gource https://www.youtube.com/watch?v=wM5sxT0BEdU
-githubRepo https://github.com/clojure/clojure
- stars 9941
- forks 1457
- subscribers 690
- created 2010
- updated 2023
- description The Clojure programming language
- issues 0
-
-repoStats
- firstCommit 2006
- commits 4370
- committers 218
- files 346
- newestCommit 2024
-
+jupyterKernel https://github.com/roryk/clojupyter
+jupyterKernel https://github.com/achesnais/clj-jupyter
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example
   ;; A typical entry point of a Clojure program:
@@ -113,37 +165,19 @@ wikipedia https://en.wikipedia.org/wiki/Clojure
  appeared 2007
  fileExtensions clj cljs cljc edn
 
-githubLanguage Clojure
- fileExtensions clj bb boot cl2 cljc cljs cljshl cljscm cljx hic
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  tonsky FiraCode https://github.com/tonsky.png https://github.com/tonsky/FiraCode Clojure #db5855 38337 1263 1065 "Monospaced font with programming ligatures"
-  status-im status-react https://github.com/status-im.png https://github.com/status-im/status-react Clojure #db5855 2759 701 44 "a free (libre) open source, mobile OS for Ethereum"
-  functional-koans clojure-koans https://github.com/functional-koans.png https://github.com/functional-koans/clojure-koans Clojure #db5855 3168 1833 22 "A set of exercises for learning Clojure"
-  Day8 re-frame https://github.com/Day8.png https://github.com/Day8/re-frame Clojure #db5855 3897 515 61 "A Reagent Framework For Writing SPAs, in Clojurescript."
-  metabase metabase https://github.com/metabase.png https://github.com/metabase/metabase Clojure #db5855 16675 2211 484 "The simplest, fastest way to get business intelligence and analytics to everyone in your company 😋"
-  ring-clojure ring https://github.com/ring-clojure.png https://github.com/ring-clojure/ring Clojure #db5855 2869 437 31 "Clojure HTTP server abstraction"
-  LightTable LightTable https://github.com/LightTable.png https://github.com/LightTable/LightTable Clojure #db5855 10751 913 65 "The Light Table IDE ⛺"
-  reagent-project reagent https://github.com/reagent-project.png https://github.com/reagent-project/reagent Clojure #db5855 3544 294 48 "A minimalistic ClojureScript interface to React.js"
- trendingProjectsCount 9
- type programming
- filenames riemann.config
- interpreters bb
- aceMode clojure
- codemirrorMode clojure
- codemirrorMimeType text/x-clojure
- tmScope source.clojure
- repos 82125
+tiobe Clojure
+ currentRank 42
+
+domainName clojure.org
+ registered 2005
+ awisRank
+  2022 176648
+  2017 105076
+
 githubBigQuery Clojure
  repos 25889
  users 13795
 
-antlr https://github.com/antlr/grammars-v4/tree/master/clojure
-monaco clojure
-codeMirror clojure
-pygmentsHighlighter Clojure
- filename jvm.py
- fileExtensions clj cljc
 linguistGrammarRepo https://github.com/atom/language-clojure
  firstCommit 2013
  lastCommit 2018
@@ -156,81 +190,6 @@ linguistGrammarRepo https://github.com/atom/language-clojure
     n (default 1) (exclusive)."
     ([] (scm* [n] (random-real)))
     ([n] (* (rand) n)))
-languageServerProtocolProject https://github.com/snoe/clojure-lsp
- writtenIn clojure
-
-projectEuler Clojure
- memberCount
-  2019 1572
-  2022 1655
-helloWorldCollection Clojure
- ; Hello world in Clojure
- 
- (defn hello []
-   (println "Hello world!"))
- 
- (hello)
-leachim6 Clojure
- filepath c/Clojure.clj
- fileExtensions clj
- example
-  (println "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Clojure
-quineRelay Clojure
-
-rijuRepl https://riju.codes/clojure
- example
-  (println "Hello, world!")
-  
- description Modern, dynamic, and functional dialect of the Lisp programming language on the Java platform
- fileExtensions clj cljc edn
- website https://clojure.org/
- gitRepo https://github.com/clojure/clojure
-replit https://repl.it/languages/clojure
-tryItOnline clojure
-
-indeedJobs clojure engineer
- 2017 355
-linkedInSkill clojure
- 2018 11354
-stackOverflowSurvey
- 2021
-  users 1552
-  medianSalary 95000
-  fans 2413
-  percentageUsing 0.02
-officialBlogUrl https://clojure.org/news/news
-eventsPageUrl https://clojure.org/events/2022/reclojure
-faqPageUrl https://clojure.org/guides/faq
-downloadPageUrl https://clojure.org/releases/downloads
-
-subreddit https://reddit.com/r/Clojure
- memberCount
-  2017 12947
-  2022 29258
-meetup https://www.meetup.com/topics/clojure
- memberCount 163418
- groupCount 378
-
-tiobe Clojure
- currentRank 42
-
-packageRepository https://clojars.org/
-
-ubuntuPackage clojure
-jupyterKernel https://github.com/roryk/clojupyter
-jupyterKernel https://github.com/achesnais/clj-jupyter
-fileType text
-isOpenSource true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Clojure|2009|Stuart Halloway|6025753|3.82|559|45
- Clojure Programming|2011|Chas Emerick|15799459|4.18|423|30
- Clojure Reactive Programming|2015|Leonardo Borges|44920753|3.81|21|1
- Clojure Cookbook: Recipes for Functional Programming|2014|Luke VanderHart|26177078|3.75|55|5
- Clojure High Performance Programming|2013|Shantanu Kumar|26977256|2.84|19|4
 
 isbndb 55
  year|publisher|title|authors|isbn13
@@ -290,6 +249,39 @@ isbndb 55
  20141030|Emereo|Clojure 134 Success Secrets - 134 Most Asked Questions On Clojure - What You Need To Know|Cynthia Harmon|9781488813016
  25-01-2019|Packt Publishing|Hands-On Reactive Programming with Clojure|Konrad Szydlo; Leonardo Borges|9781789341966
 
+githubLanguage Clojure
+ fileExtensions clj bb boot cl2 cljc cljs cljshl cljscm cljx hic
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  tonsky FiraCode https://github.com/tonsky.png https://github.com/tonsky/FiraCode Clojure #db5855 38337 1263 1065 "Monospaced font with programming ligatures"
+  status-im status-react https://github.com/status-im.png https://github.com/status-im/status-react Clojure #db5855 2759 701 44 "a free (libre) open source, mobile OS for Ethereum"
+  functional-koans clojure-koans https://github.com/functional-koans.png https://github.com/functional-koans/clojure-koans Clojure #db5855 3168 1833 22 "A set of exercises for learning Clojure"
+  Day8 re-frame https://github.com/Day8.png https://github.com/Day8/re-frame Clojure #db5855 3897 515 61 "A Reagent Framework For Writing SPAs, in Clojurescript."
+  metabase metabase https://github.com/metabase.png https://github.com/metabase/metabase Clojure #db5855 16675 2211 484 "The simplest, fastest way to get business intelligence and analytics to everyone in your company 😋"
+  ring-clojure ring https://github.com/ring-clojure.png https://github.com/ring-clojure/ring Clojure #db5855 2869 437 31 "Clojure HTTP server abstraction"
+  LightTable LightTable https://github.com/LightTable.png https://github.com/LightTable/LightTable Clojure #db5855 10751 913 65 "The Light Table IDE ⛺"
+  reagent-project reagent https://github.com/reagent-project.png https://github.com/reagent-project/reagent Clojure #db5855 3544 294 48 "A minimalistic ClojureScript interface to React.js"
+ trendingProjectsCount 9
+ type programming
+ filenames riemann.config
+ interpreters bb
+ aceMode clojure
+ codemirrorMode clojure
+ codemirrorMimeType text/x-clojure
+ tmScope source.clojure
+ repos 82125
+
+indeedJobs clojure engineer
+ 2017 355
+linkedInSkill clojure
+ 2018 11354
+stackOverflowSurvey
+ 2021
+  users 1552
+  medianSalary 95000
+  fans 2413
+  percentageUsing 0.02
+
 semanticScholar 7
  year|title|doi|citations|influentialCitations|authors|paperId
  2008|The Clojure programming language|10.1145/1408681.1408682|187|20|R. Hickey|d9567af818aae84bae7ec340aff4a7a664e1777a
@@ -300,5 +292,10 @@ semanticScholar 7
  2017|An open source implementation of an intuitionistic fuzzy inference system in Clojure|10.1109/FUZZ-IEEE.2017.8015697|2|0|Amaury Hernández-Águila and Mario García Valdez and O. Castillo and J. J. M. Guervós|3a851fc47e922137f1829ca3fcce286982784a2f
  2019|Towards Static Verification of Clojure Contract-Based Programs|10.1007/978-3-030-29852-4_5|2|0|Gheorghe Pinzaru and V. Rivera|26132abec6e92e8df28cdea73b9b5f0411edf17d
 
-clocExtensions boot cl2 clj cljs.hl cljscm cljx hic riemann.config
-writtenIn java clojure markdown yaml html xml bourne-shell
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Clojure|2009|Stuart Halloway|6025753|3.82|559|45
+ Clojure Programming|2011|Chas Emerick|15799459|4.18|423|30
+ Clojure Reactive Programming|2015|Leonardo Borges|44920753|3.81|21|1
+ Clojure Cookbook: Recipes for Functional Programming|2014|Luke VanderHart|26177078|3.75|55|5
+ Clojure High Performance Programming|2013|Shantanu Kumar|26977256|2.84|19|4

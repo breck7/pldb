@@ -1,25 +1,38 @@
 import ../code/conceptPage.scroll
+
 id genie
 name Genie
 appeared 2008
-tags pl
 creators Jamie McCracken
+tags pl
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Genie
+centralPackageRepositoryCount 0
 country United States
 originCommunity GNOME Foundation
+
+example
+ init
+  print( "Hello, World!" )
+ 
+leachim6 Genie
+ filepath g/Genie.gs
+ fileExtensions gs
+ example
+  [indent=2]
+  init
+    print "Hello World"
+
+printToken print
+stringToken "
 
 hasComments true
 hasSemanticIndentation true
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print
-stringToken "
-
-example
- init
-  print( "Hello, World!" )
- 
 
 wikipedia https://en.wikipedia.org/wiki/Genie_(programming_language)
  example
@@ -41,6 +54,16 @@ wikipedia https://en.wikipedia.org/wiki/Genie_(programming_language)
  appeared 2008
  fileExtensions gs
 
+hopl https://hopl.info/showlanguage.prx?exp=8118
+
+githubBigQuery Genie
+ repos 17
+ users 17
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ ||Genie (programming Language)|Surhone and Lambert M. and Tennoe and Mariam T. and Henssonow and Susan F.|9786133162990
+
 githubLanguage Genie
  fileExtensions gs
  trendingProjectsCount 0
@@ -48,28 +71,6 @@ githubLanguage Genie
  aceMode text
  tmScope none
  repos 21
-githubBigQuery Genie
- repos 17
- users 17
-
-leachim6 Genie
- filepath g/Genie.gs
- fileExtensions gs
- example
-  [indent=2]
-  init
-    print "Hello World"
-rosettaCode http://www.rosettacode.org/wiki/Category:Genie
-
-hopl https://hopl.info/showlanguage.prx?exp=8118
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- ||Genie (programming Language)|Surhone and Lambert M. and Tennoe and Mariam T. and Henssonow and Susan F.|9786133162990
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id broccoli-2
 name Broccoli
 appeared 2022
-tags esolang
 creators Mathieu CAROFF
+tags esolang
 website https://mathieucaroff.com/broccoli
+
+writtenIn typescript html json markdown yaml css
+repoStats
+ firstCommit 2022
+ commits 34
+ committers 1
+ files 27
+ newestCommit 2022
 country France
 originCommunity IMT Atlantique
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/mathieucaroff/broccoli/
  updated 2023
  description Interpreter for the concatenative programming language Broccoli
  issues 0
-
-repoStats
- firstCommit 2022
- commits 34
- committers 1
- files 27
- newestCommit 2022
-
-writtenIn typescript html json markdown yaml css

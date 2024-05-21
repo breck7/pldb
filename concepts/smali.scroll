@@ -1,23 +1,27 @@
 import ../code/conceptPage.scroll
+
 id smali
 name Smali
 appeared 2010
 tags assembly
+
+isOpenSource true
+writtenIn java gradle xml bash markdown bourne-shell c make
+fileType text
 documentation https://github.com/JesusFreke/smali/wiki
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 1942
+ committers 49
+ files 930
+ newestCommit 2022
 country United States
 originCommunity https://github.com/JesusFreke/smali/issues
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken #
-stringToken "
-
+pygmentsHighlighter Smali
+ filename dalvik.py
+ fileExtensions smali
 example
  .method public getTokens(I)I
   .locals 2
@@ -53,6 +57,26 @@ example
   
   goto :goto_0
  .end method
+leachim6 Smali
+ filepath s/Smali.smali
+ fileExtensions smali
+ example
+  .class public LHelloWorld;
+  
+  .super Ljava/lang/Object;
+  
+  .method public static main([Ljava/lang/String;)V
+      .registers 2
+  
+      sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
+  
+      const-string	v1, "Hello World"
+  
+      invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+  
+      return-void
+  .end method
+  
 
 githubRepo https://github.com/JesusFreke/smali
  firstCommit 2009
@@ -64,31 +88,21 @@ githubRepo https://github.com/JesusFreke/smali
  description smali/baksmali
  issues 121
 
-repoStats
- firstCommit 2009
- commits 1942
- committers 49
- files 930
- newestCommit 2022
+lineCommentToken #
+stringToken "
 
-githubLanguage Smali
- fileExtensions smali
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  AhMyth AhMyth-Android-RAT https://github.com/AhMyth.png https://github.com/AhMyth/AhMyth-Android-RAT Smali #ccc 1554 764 152 "Android Remote Administration Tool"
-  phhusson treble_experimentations https://github.com/phhusson.png https://github.com/phhusson/treble_experimentations Smali #ccc 827 200 36 "Notes about tinkering with Android Project Treble"
- trendingProjectsCount 3
- type programming
- aceMode text
- tmScope source.smali
- repos 2479
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
 githubBigQuery Smali
  repos 212
  users 195
 
-pygmentsHighlighter Smali
- filename dalvik.py
- fileExtensions smali
 linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
  firstCommit 2013
  lastCommit 2016
@@ -218,33 +232,18 @@ linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
   
       fil
 
-leachim6 Smali
- filepath s/Smali.smali
+githubLanguage Smali
  fileExtensions smali
- example
-  .class public LHelloWorld;
-  
-  .super Ljava/lang/Object;
-  
-  .method public static main([Ljava/lang/String;)V
-      .registers 2
-  
-      sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
-  
-      const-string	v1, "Hello World"
-  
-      invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-  
-      return-void
-  .end method
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  AhMyth AhMyth-Android-RAT https://github.com/AhMyth.png https://github.com/AhMyth/AhMyth-Android-RAT Smali #ccc 1554 764 152 "Android Remote Administration Tool"
+  phhusson treble_experimentations https://github.com/phhusson.png https://github.com/phhusson/treble_experimentations Smali #ccc 827 200 36 "Notes about tinkering with Android Project Treble"
+ trendingProjectsCount 3
+ type programming
+ aceMode text
+ tmScope source.smali
+ repos 2479
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2013|Slicing droids: program slicing for smali code|10.1145/2480362.2480706|112|18|Johannes Hoffmann and M. Ussath and Thorsten Holz and Michael Spreitzenbarth|501b2aa2c55dedef322fffe84054c9c9678a61a4
-
-writtenIn java gradle xml bash markdown bourne-shell c make

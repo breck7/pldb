@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id kasaya
 name kasaya
 appeared 2018
 tags application
 conceptDescription A "WYSIWYG" (kind of) scripting language and runtime for browser automation
-reference https://news.ycombinator.com/item?id=22374991
+
+writtenIn javascript json markdown
+repoStats
+ firstCommit 2020
+ commits 24
+ committers 3
+ files 106
+ newestCommit 2020
 country Sri Lanka
 originCommunity https://github.com/syscolabs
+reference https://news.ycombinator.com/item?id=22374991
 
 githubRepo https://github.com/AshanthaLahiru/kasaya
  firstCommit 2020
@@ -17,11 +26,3 @@ githubRepo https://github.com/AshanthaLahiru/kasaya
  updated 2020
  description A "WYSIWYG" (kind of) scripting language and runtime for browser automation
  issues 17
-
-repoStats
- firstCommit 2020
- commits 24
- committers 3
- files 106
- newestCommit 2020
-writtenIn javascript json markdown

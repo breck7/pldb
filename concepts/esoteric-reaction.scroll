@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id esoteric-reaction
 name Esoteric Reaction
 appeared 2020
 tags esolang
+
+writtenIn rust markdown csv json python toml
+repoStats
+ firstCommit 2020
+ commits 62
+ committers 1
+ files 43
+ newestCommit 2023
 country Unknown
 originCommunity https://bigyihsuan.github.io
 
@@ -18,12 +27,3 @@ githubRepo https://github.com/bigyihsuan/EsotericReaction
  updated 2022
  description Esolang using chemical "formulas" as code
  issues 0
-
-repoStats
- firstCommit 2020
- commits 62
- committers 1
- files 43
- newestCommit 2023
-
-writtenIn rust markdown csv json python toml

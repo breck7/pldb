@@ -1,15 +1,42 @@
 import ../code/conceptPage.scroll
+
 id sparql
 name SPARQL
 appeared 2008
 tags queryLanguage
 webRepl https://dbpedia.org/sparql
+standsFor SPARQL Protocol and RDF Query Language
+
+fileType text
 documentation https://www.w3.org/TR/rdf-sparql-query/
 documentation https://docs.stardog.com/tutorials/learn-sparql
-reference https://www.w3.org/TR/rdf-sparql-query/
-cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
-standsFor SPARQL Protocol and RDF Query Language
+antlr https://github.com/antlr/grammars-v4/tree/master/sparql
+monaco sparql
+codeMirror sparql
+centralPackageRepositoryCount 0
 originCommunity W3C
+reference https://www.w3.org/TR/rdf-sparql-query/
+
+pygmentsHighlighter SPARQL
+ filename rdf.py
+ fileExtensions rq sparql
+leachim6 SparQL
+ filepath s/SparQL.sparql
+ fileExtensions sparql
+ example
+  SELECT ?h WHERE {
+    VALUES ?h { "Hello World" }
+  }
+  
+cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
+languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/sparql-language-server
+ writtenIn typescript
+
+keywords add as asc ask base by clear construct copy create data delete desc describe distinct drop false filter from graph group having in insert limit load minus move named not offset optional order prefix reduced select service silent to true undef union using values where with
+
+lineCommentToken #
+stringToken "
+booleanTokens true false
 
 hasLineComments true
  # A comment
@@ -23,11 +50,7 @@ hasFloats true
 hasIntegers true
  # [+\-]?\d+
 
-lineCommentToken #
-stringToken "
-booleanTokens true false
-keywords add as asc ask base by clear construct copy create data delete desc describe distinct drop false filter from graph group having in insert limit load minus move named not offset optional order prefix reduced select service silent to true undef union using values where with
-
+jupyterKernel https://github.com/paulovn/sparql-kernel
 wikipedia https://en.wikipedia.org/wiki/SPARQL
  example
   PREFIX ex: <http://example.com/exampleOntology#>
@@ -49,22 +72,6 @@ wikipedia https://en.wikipedia.org/wiki/SPARQL
  revisionCount 380
  appeared 2008
 
-githubLanguage SPARQL
- fileExtensions sparql rq
- trendingProjectsCount 0
- type data
- aceMode text
- codemirrorMode sparql
- codemirrorMimeType application/sparql-query
- tmScope source.sparql
- repos 0
-
-antlr https://github.com/antlr/grammars-v4/tree/master/sparql
-monaco sparql
-codeMirror sparql
-pygmentsHighlighter SPARQL
- filename rdf.py
- fileExtensions rq sparql
 linguistGrammarRepo https://github.com/peta/turtle.tmbundle
  firstCommit 2013
  lastCommit 2015
@@ -80,21 +87,6 @@ linguistGrammarRepo https://github.com/peta/turtle.tmbundle
     ?person foaf:mbox ?email.
   }
   
-languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/sparql-language-server
- writtenIn typescript
-
-leachim6 SparQL
- filepath s/SparQL.sparql
- fileExtensions sparql
- example
-  SELECT ?h WHERE {
-    VALUES ?h { "Hello World" }
-  }
-  
-
-jupyterKernel https://github.com/paulovn/sparql-kernel
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 4
  year|publisher|title|authors|isbn13
@@ -102,6 +94,16 @@ isbndb 4
  2014|Morgan Kaufmann|RDF Database Systems: Triples Storage and SPARQL Query Processing|Curé, Olivier and Blin, Guillaume|9780127999579
  20130703|O'Reilly Media, Inc.|Learning SPARQL|Bob DuCharme|9781449371487
  20130703|O'Reilly Media, Inc.|Learning SPARQL|Bob DuCharme|9781449371470
+
+githubLanguage SPARQL
+ fileExtensions sparql rq
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ codemirrorMode sparql
+ codemirrorMimeType application/sparql-query
+ tmScope source.sparql
+ repos 0
 
 semanticScholar 18
  year|title|doi|citations|influentialCitations|authors|paperId

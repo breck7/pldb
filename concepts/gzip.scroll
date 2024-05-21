@@ -1,9 +1,17 @@
 import ../code/conceptPage.scroll
+
 id gzip
 name Gzip
 appeared 1992
 tags binaryDataFormat
 website http://www.gnu.org/software/gzip/
+
+isOpenSource true
+fileType binary
+wordRank 9973
+quineRelay Gzip
+centralPackageRepositoryCount 0
+ubuntuPackage gzip
 originCommunity GNU Project
 
 wikipedia https://en.wikipedia.org/wiki/Gzip
@@ -15,11 +23,3 @@ wikipedia https://en.wikipedia.org/wiki/Gzip
  backlinksCount 441
  revisionCount 503
  appeared 2016
-
-quineRelay Gzip
-
-ubuntuPackage gzip
-fileType binary
-wordRank 9973
-isOpenSource true
-centralPackageRepositoryCount 0

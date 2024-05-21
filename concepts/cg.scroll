@@ -1,20 +1,25 @@
 import ../code/conceptPage.scroll
+
 id cg
 name Cg
 appeared 2003
 tags pl
-reference https://arxiv.org/pdf/cs/0302013.pdf
 standsFor C for Graphics
+
+fileType text
+wordRank 7928
+centralPackageRepositoryCount 0
 country United States
 originCommunity Nvidia
+reference https://arxiv.org/pdf/cs/0302013.pdf
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Cg_(programming_language)
  example
@@ -47,12 +52,8 @@ wikipedia https://en.wikipedia.org/wiki/Cg_(programming_language)
  revisionCount 233
  appeared 2012
 
-tiobe cg
 hopl https://hopl.info/showlanguage.prx?exp=6204
-
-fileType text
-wordRank 7928
-centralPackageRepositoryCount 0
+tiobe cg
 
 isbndb 5
  year|publisher|title|authors|isbn13

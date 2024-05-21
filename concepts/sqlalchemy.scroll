@@ -1,16 +1,25 @@
 import ../code/conceptPage.scroll
+
 id sqlalchemy
 name Sqlalchemy
 appeared 2006
-tags queryLanguage
 creators Michael Bayer
+tags queryLanguage
 website https://www.sqlalchemy.org/
+
+writtenIn python restructuredtext yaml markdown ini make tex toml cython
 documentation https://docs.sqlalchemy.org/en/14/
 emailList https://groups.google.com/g/sqlalchemy
+repoStats
+ firstCommit 2005
+ commits 21941
+ committers 753
+ files 955
+ newestCommit 2024
 country United States
 originCommunity https://www.sqlalchemy.org/support.html
 
-writtenIn python restructuredtext yaml markdown ini make tex toml cython
+twitter https://twitter.com/sqlalchemy
 
 githubRepo https://github.com/sqlalchemy/sqlalchemy
  stars 62000
@@ -18,19 +27,10 @@ githubRepo https://github.com/sqlalchemy/sqlalchemy
  subscribers 95
  updated 2022
 
-repoStats
- firstCommit 2005
- commits 21941
- committers 753
- files 955
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
  example
   SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
   FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by
-
-twitter https://twitter.com/sqlalchemy
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

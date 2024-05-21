@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id rhine
 name rhine
 appeared 2014
-tags pl
 creators Ramkumar Ramachandra
+tags pl
+
+writtenIn cpp cmake bourne-shell yaml markdown llvmir
+repoStats
+ firstCommit 2015
+ commits 460
+ committers 1
+ files 194
+ newestCommit 2019
 country France
 originCommunity https://github.com/artagnon/rhine/issues
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/artagnon/rhine
  description 🔬 a C++ compiler middle-end, using an LLVM backend
  issues 0
 
-repoStats
- firstCommit 2015
- commits 460
- committers 1
- files 194
- newestCommit 2019
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  11321164|Show HN: Rhine – A typed Elixir-inspired language on LLVM|2016-03-20 00:18:24 UTC|1458433104|artagnon|16|81
-
-writtenIn cpp cmake bourne-shell yaml markdown llvmir

@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id pact
 name Pact
 appeared 2016
-tags contractLanguage
-isPublicDomain false
 creators Stuart Popejoy
+tags contractLanguage
 website http://kadena.io/try-pact/
+
+isPublicDomain false
+isOpenSource true
+writtenIn haskell yaml markdown c restructuredtext bourne-shell nix json csv python css html xml
 documentation https://pact-language.readthedocs.io/en/stable/
+repoStats
+ firstCommit 2016
+ commits 4789
+ committers 62
+ files 448
+ newestCommit 2024
 country United States
 originCommunity Kadena LLC
-
-writtenIn haskell yaml markdown c restructuredtext bourne-shell nix json csv python css html xml
 
 example
  (map (+ 1) [1 2 3])
@@ -24,18 +32,9 @@ githubRepo https://github.com/kadena-io/pact
  description The Pact Smart Contract Language
  issues 110
 
-repoStats
- firstCommit 2016
- commits 4789
- committers 62
- files 448
- newestCommit 2024
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  12944077|Show HN: Pact – a safe smart contract language (web editor)|2016-11-13 16:30:19 UTC|1479054619|buckie|2|18
-
-isOpenSource true
 
 isbndb 3
  year|publisher|title|authors|isbn13

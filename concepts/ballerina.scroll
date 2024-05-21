@@ -1,18 +1,54 @@
 import ../code/conceptPage.scroll
+
 id ballerina
 name Ballerina
 appeared 2015
-tags pl
 creators Sanjiva Weerawarana and James Clark and Sameera Jayasoma and Hasitha Aravinda and Srinath Perera and Frank Leymann
+tags pl
 website http://ballerina.io/
 webRepl https://play.ballerina.io/
+
+isOpenSource true
+writtenIn java json toml markdown gradle xml yaml mustache html sql csv javascript svg bash bourne-shell css groovy dtd handlebars
+fileType text
 documentation https://ballerina.io/learn/
+packageRepository https://central.ballerina.io/
+repoStats
+ firstCommit 2014
+ commits 131829
+ committers 732
+ files 22718
+ newestCommit 2024
 country United States
 originCommunity WSO2
-domainName ballerina.io
- registered 2017
- awisRank
-  2022 898947
+
+twitter https://twitter.com/ballerinalang
+leachim6 Ballerina
+ filepath b/Ballerina.bal
+ fileExtensions bal
+ example
+  import ballerina/io;
+  
+  public function main() {
+      io:println("Hello World");
+  }
+  
+languageServerProtocolProject https://github.com/ballerina-platform/ballerina-lang/tree/master/language-server
+ writtenIn java
+
+githubRepo https://github.com/ballerina-platform/ballerina-lang
+ firstCommit 2014
+ stars 3093
+ forks 692
+ subscribers 169
+ created 2016
+ updated 2022
+ description The Ballerina Programming Language
+ issues 1709
+
+lineCommentToken //
+printToken io:println
+stringToken "
 
 hasComments true
  // A comment
@@ -25,27 +61,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken io:println
-stringToken "
-
-githubRepo https://github.com/ballerina-platform/ballerina-lang
- firstCommit 2014
- stars 3093
- forks 692
- subscribers 169
- created 2016
- updated 2022
- description The Ballerina Programming Language
- issues 1709
-
-repoStats
- firstCommit 2014
- commits 131829
- committers 732
- files 22718
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)
  example
@@ -73,13 +88,11 @@ wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)
  dailyPageViews 37
  appeared 2015
 
-githubLanguage Ballerina
- fileExtensions bal
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ballerina
- repos 1483
+domainName ballerina.io
+ registered 2017
+ awisRank
+  2022 898947
+
 githubBigQuery Ballerina
  repos 22
  users 21
@@ -98,33 +111,20 @@ linguistGrammarRepo https://github.com/ballerina-platform/ballerina-grammar
   }
   
   
-languageServerProtocolProject https://github.com/ballerina-platform/ballerina-lang/tree/master/language-server
- writtenIn java
-
-leachim6 Ballerina
- filepath b/Ballerina.bal
- fileExtensions bal
- example
-  import ballerina/io;
-  
-  public function main() {
-      io:println("Hello World");
-  }
-  
-
-packageRepository https://central.ballerina.io/
-
-twitter https://twitter.com/ballerinalang
-fileType text
-isOpenSource true
 
 isbndb 2
  year|publisher|title|authors|isbn13
  2020|Apress|Beginning Ballerina Programming: From Novice to Professional|Fernando, Anjana and Warusawithana, Lakmal|9781484251393
  2020-02-25T00:00:01Z|Apress|Beginning Ballerina Programming: From Novice to Professional|Fernando, Anjana and Warusawithana, Lakmal|9781484251386
 
+githubLanguage Ballerina
+ fileExtensions bal
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ballerina
+ repos 1483
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2018|Bringing Middleware to Everyday Programmers with Ballerina|10.1007/978-3-319-98648-7_2|3|0|S. Weerawarana and Chathura C. Ekanayake and S. Perera and F. Leymann|03c90e1e79a69449585a0799f5be78b4d9744704
-
-writtenIn java json toml markdown gradle xml yaml mustache html sql csv javascript svg bash bourne-shell css groovy dtd handlebars

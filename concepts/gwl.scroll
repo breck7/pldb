@@ -1,24 +1,15 @@
 import ../code/conceptPage.scroll
+
 id gwl
 name Guix Workflow Language
 appeared 2017
 tags pl
 website https://www.guixwl.org/
 standsFor Guix Workflow Language
-country United States
-originCommunity GNU Project
-domainName guixwl.org
- registered 2017
 
 relatedConcepts scheme
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
+country United States
+originCommunity GNU Project
 
 example
   ;; https://www.guixwl.org/extended-start
@@ -63,5 +54,16 @@ example
         ;; pairs up each of the processes in "list-file-processes" with
         ;; one of the processes in "compress-file-processes".
         zip list-file-processes compress-file-processes
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+domainName guixwl.org
+ registered 2017
 
 semanticScholar 0

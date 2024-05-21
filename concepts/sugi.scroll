@@ -1,9 +1,16 @@
 import ../code/conceptPage.scroll
+
 id sugi
 name Sugi
 appeared 2021
-tags pl
 creators sugi-lang
+tags pl
+
+repoStats
+ firstCommit 2021
+ commits 110
+ committers 2
+ files 3
 
 githubRepo https://github.com/sugi-lang/sugi
  firstCommit 2021
@@ -14,9 +21,3 @@ githubRepo https://github.com/sugi-lang/sugi
  updated 2022
  description A sequential and minimalistic programming language seeking the ultimate syntax.
  issues 0
-
-repoStats
- firstCommit 2021
- commits 110
- committers 2
- files 3

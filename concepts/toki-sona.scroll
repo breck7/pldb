@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id toki-sona
 name toki sona
 appeared 2021
-tags pl
 creators Dylan Madisetti
-conceptDescription `toki pona` is a constructed human language with 140 words: Introducing`toki sona` a toki pona inspired programming language with 14 tokens and a 1000 character interpreter
+tags pl
 website https://observablehq.com/@dmadisetti/sona
+conceptDescription `toki pona` is a constructed human language with 140 words: Introducing`toki sona` a toki pona inspired programming language with 14 tokens and a 1000 character interpreter
+
+writtenIn json javascript markdown yaml
+repoStats
+ firstCommit 2021
+ commits 14
+ committers 2
+ files 13
+ newestCommit 2022
 reference https://reddit.com/r/ProgrammingLanguages/comments/pph5c3/toki_pona_is_a_constructed_human_language_with/
 
 githubRepo https://github.com/dmadisetti/sona.js
@@ -17,12 +26,3 @@ githubRepo https://github.com/dmadisetti/sona.js
  updated 2022
  description a simple language with a 1000 character interpreter inspired by toki pona
  issues 2
-
-repoStats
- firstCommit 2021
- commits 14
- committers 2
- files 13
- newestCommit 2022
-
-writtenIn json javascript markdown yaml

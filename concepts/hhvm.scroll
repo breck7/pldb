@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id hhvm
 name HHVM
 appeared 2011
 tags vm
 website https://hhvm.com
+
+isOpenSource true
+writtenIn php cpp expect markdown json java ocaml rust python cython mustache thrift cmake html yaml pascal c toml xml go sql bourne-shell ini make protobuf javascript diff restructuredtext csharp assembly-language puppet m4 css bash xslt objective-c ruby perl svg idl dockerfile csv nix awk xsd coffeescript xaml bazel gradle llvmir typescript lisp yacc opencl dtd vim-script sas sed lex cadence-skill
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ newestCommit 2024
+ commits 69581
+ committers 2430
+ files 92035
 country United States
 originCommunity Facebook
-domainName hhvm.com
- registered 2006
- awisRank
-  2022 516714
 
 githubRepo https://github.com/facebook/hhvm
  firstCommit 2010
@@ -31,18 +39,11 @@ wikipedia https://en.wikipedia.org/wiki/HHVM
  dailyPageViews 136
  appeared 2011
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName hhvm.com
+ registered 2006
+ awisRank
+  2022 516714
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Hack and Hhvm: Programming Productivity Without Breaking Things|2015|Owen Yamauchi|46739673|3.67|6|2
-
-repoStats
- firstCommit 2010
- newestCommit 2024
- commits 69581
- committers 2430
- files 92035
-writtenIn php cpp expect markdown json java ocaml rust python cython mustache thrift cmake html yaml pascal c toml xml go sql bourne-shell ini make protobuf javascript diff restructuredtext csharp assembly-language puppet m4 css bash xslt objective-c ruby perl svg idl dockerfile csv nix awk xsd coffeescript xaml bazel gradle llvmir typescript lisp yacc opencl dtd vim-script sas sed lex cadence-skill

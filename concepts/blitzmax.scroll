@@ -1,19 +1,27 @@
 import ../code/conceptPage.scroll
+
 id blitzmax
 name BlitzMax
 appeared 2014
 tags pl
+
+isOpenSource true
+writtenIn c cpp lua assembly-language objective-c html make xml css bourne-shell objective-cpp cmake ini wasm perl
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:BlitzMax
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 99
+ committers 9
+ files 2272
+ newestCommit 2023
 country New Zealand
 originCommunity Blitz Research
 
-hasPointers true
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasBinaryNumbers true
-hasLineComments true
-hasMultiLineComments true
-hasComments true
+pygmentsHighlighter BlitzMax
+ filename basic.py
+ fileExtensions bmx
 
 githubRepo https://github.com/blitz-research/blitzmax
  firstCommit 2014
@@ -25,28 +33,19 @@ githubRepo https://github.com/blitz-research/blitzmax
  description BlitzMax
  issues 7
 
-repoStats
- firstCommit 2014
- commits 99
- committers 9
- files 2272
- newestCommit 2023
+hasPointers true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
-githubLanguage BlitzMax
- fileExtensions bmx
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.blitzmax
- aliases bmax
- repos 219
 githubBigQuery BlitzMax
  repos 52
  users 46
 
-pygmentsHighlighter BlitzMax
- filename basic.py
- fileExtensions bmx
 linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
  firstCommit 2009
  lastCommit 2016
@@ -80,22 +79,23 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
   	my.A()
   ?
 
-rosettaCode http://www.rosettacode.org/wiki/Category:BlitzMax
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Blitzmax for Absolute Beginners: Games Programming for the Absolute Beginner||Sloan Kelly|53255227|0.0|0|0
- Games Programming For The Absolute Beginner With Blitzmax||Sloan Kelly|2493016|0.0|0|0
- Games Programming for the Absolute Beginner with BlitzMax Kindle Edition|2011|Sloan Kelly|27446641|5.00|1|0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2016|Apress|BlitzMax for Absolute Beginners: Games Programming for the Absolute Beginner|Kelly, Sloan|9781484225226
  2016|Apress Media Llc,|Blitzmax For Absolute Beginners|Kelly, Sloan and Springer Science+business Media|
  20161214|Springer Nature|BlitzMax for Absolute Beginners|Sloan Kelly|9781484225233
 
-writtenIn c cpp lua assembly-language objective-c html make xml css bourne-shell objective-cpp cmake ini wasm perl
+githubLanguage BlitzMax
+ fileExtensions bmx
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.blitzmax
+ aliases bmax
+ repos 219
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Blitzmax for Absolute Beginners: Games Programming for the Absolute Beginner||Sloan Kelly|53255227|0.0|0|0
+ Games Programming For The Absolute Beginner With Blitzmax||Sloan Kelly|2493016|0.0|0|0
+ Games Programming for the Absolute Beginner with BlitzMax Kindle Edition|2011|Sloan Kelly|27446641|5.00|1|0

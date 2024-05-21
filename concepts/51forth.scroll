@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id 51forth
 name 51forth
 appeared 1980
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 originCommunity IDACOM Electronics or Hewlett-Packard
 
 wikipedia https://en.wikipedia.org/wiki/51-FORTH
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/51-FORTH
  appeared 1989
 
 hopl https://hopl.info/showlanguage.prx?exp=5208
-
-isOpenSource true
-centralPackageRepositoryCount 0

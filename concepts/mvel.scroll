@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id mvel
 name MVEL
 appeared 2003
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Italy and Canada
 originCommunity https://github.com/mvel
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/MVEL
  example
@@ -49,6 +53,3 @@ wikipedia https://en.wikipedia.org/wiki/MVEL
  pageId 19100445
  revisionCount 75
  dailyPageViews 43
-
-isOpenSource true
-centralPackageRepositoryCount 0

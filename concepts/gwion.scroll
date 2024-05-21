@@ -1,14 +1,27 @@
 import ../code/conceptPage.scroll
+
 id gwion
 name Gwion
 appeared 2016
 tags pl
-conceptDescription <a href='https://github.com/fennecdjay/Gwion'>Gwion</a> is a strongly-timed musical programming language .
 website https://Gwion.github.io/Gwion
-reference https://reddit.com/r/ProgrammingLanguages/comments/wu6qtw/language_showcase_gwion/
-reference https://compilerspotlight.substack.com/p/language-showcase-gwion?sd=pf
+conceptDescription <a href='https://github.com/fennecdjay/Gwion'>Gwion</a> is a strongly-timed musical programming language .
+
+isOpenSource true
+writtenIn c yaml bourne-shell markdown bash make ini nix
+tryItOnline gwion
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 8501
+ committers 33
+ files 1038
+ newestCommit 2024
 country The Netherlands and United States and Turkey and France
 originCommunity https://github.com/Gwion
+reference https://reddit.com/r/ProgrammingLanguages/comments/wu6qtw/language_showcase_gwion/
+reference https://compilerspotlight.substack.com/p/language-showcase-gwion?sd=pf
 
 githubRepo https://github.com/fennecdjay/Gwion
  stars 422
@@ -19,18 +32,3 @@ githubRepo https://github.com/fennecdjay/Gwion
  firstCommit 2016
  description :musical_note: strongly-timed musical programming language
  issues 6
-
-repoStats
- firstCommit 2016
- commits 8501
- committers 33
- files 1038
- newestCommit 2024
-
-tryItOnline gwion
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c yaml bourne-shell markdown bash make ini nix

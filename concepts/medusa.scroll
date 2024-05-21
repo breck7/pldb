@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id medusa
 name MEDUSA
 appeared 2002
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity Cambridge University
 
@@ -16,8 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/MEDUSA
  appeared 2002
 
 hopl https://hopl.info/showlanguage.prx?exp=4872
-
-isOpenSource false
-centralPackageRepositoryCount 0
 
 semanticScholar 0

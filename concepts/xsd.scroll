@@ -1,9 +1,12 @@
 import ../code/conceptPage.scroll
+
 id xsd
 name XSD
 appeared 2001
 tags dataValidationLanguage
 standsFor XML Schema Definition
+
+clocExtensions XSD xsd
 
 example
  <xs:element name="PurchaseOrder" type="PurchaseOrderType"/>
@@ -23,5 +26,3 @@ wikipedia https://en.wikipedia.org/wiki/XML_Schema_(W3C)
  pageId 185449
  dailyPageViews 260
  appeared 2001
-
-clocExtensions XSD xsd

@@ -1,22 +1,93 @@
 import ../code/conceptPage.scroll
+
 id crystal
 name Crystal
 appeared 2014
-tags pl
 creators Ary Borenszweig and Juan Wajnerman and Brian Cardiff
+tags pl
 website https://crystal-lang.org
 webRepl https://play.crystal-lang.org/#/cr
+
+isOpenSource true
+writtenIn crystal ecr yaml markdown html javascript powershell bourne-shell css c svg make xml python json z-shell bash cpp nix ini
+tryItOnline crystal
+officialBlogUrl https://crystal-lang.org/blog/
+fileExtensions cr
+releaseNotesUrl https://github.com/crystal-lang/crystal/blob/master/CHANGELOG.md
+clocExtensions cr
+fileType text
+wordRank 2716
 documentation https://crystal-lang.org/reference/1.6/index.html
 documentation https://devdocs.io/crystal/
-fileExtensions cr
+faqPageUrl https://forum.crystal-lang.org/
+rosettaCode http://www.rosettacode.org/wiki/Category:Crystal
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 16193
+ committers 638
+ files 2304
+ newestCommit 2024
 country Argentina and Germany and Turkey
 originCommunity https://forum.crystal-lang.org/
-domainName crystal-lang.org
- registered 2013
- awisRank
-  2022 387907
-  2017 299324
-releaseNotesUrl https://github.com/crystal-lang/crystal/blob/master/CHANGELOG.md
+projectEuler Crystal
+ memberCount
+  2019 5
+  2022 14
+
+helloWorldCollection Crystal
+ # Hello world in Crystal
+ 
+ puts "Hello World"
+pygmentsHighlighter Crystal
+ filename crystal.py
+ fileExtensions cr
+rijuRepl https://riju.codes/crystal
+ example
+  puts "Hello, world!"
+  
+ description General-purpose, object-oriented programming language with syntax inspired by the language Ruby
+ fileExtensions cr
+ website https://crystal-lang.org/
+ gitRepo https://github.com/crystal-lang/crystal
+subreddit https://reddit.com/r/crystal_programming
+ memberCount
+  2022 4118
+twitter https://twitter.com/crystallanguage
+leachim6 Crystal
+ filepath c/Crystal.cr
+ fileExtensions cr
+ example
+  puts "Hello World"
+  
+gource https://www.youtube.com/watch?v=YToY_0fhEzc
+languageServerProtocolProject https://github.com/kofno/scry
+ writtenIn crystal
+compilerExplorer Crystal
+ example
+  # Type your code here, or load an example.
+  
+  # compile with --prelude=empty
+  fun square(num : Int32) : Int32
+    num &* num
+  end
+
+keywords abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
+githubRepo https://github.com/crystal-lang/crystal
+ stars 17909
+ forks 1367
+ subscribers 416
+ created 2012
+ updated 2022
+ firstCommit 2012
+ description The Crystal Programming Language
+ issues 1520
+
+lineCommentToken #
+printToken puts
+stringToken "
+booleanTokens true false
+includeToken require
 
 hasTypeInference true
 hasLineComments true
@@ -35,31 +106,6 @@ hasClasses true
 hasFunctions true
 hasConditionals true
 hasWhileLoops true
-
-lineCommentToken #
-printToken puts
-stringToken "
-booleanTokens true false
-includeToken require
-keywords abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
-
-gource https://www.youtube.com/watch?v=YToY_0fhEzc
-githubRepo https://github.com/crystal-lang/crystal
- stars 17909
- forks 1367
- subscribers 416
- created 2012
- updated 2022
- firstCommit 2012
- description The Crystal Programming Language
- issues 1520
-
-repoStats
- firstCommit 2012
- commits 16193
- committers 638
- files 2304
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/Crystal_(programming_language)
  example
@@ -89,27 +135,19 @@ wikipedia https://en.wikipedia.org/wiki/Crystal_(programming_language)
  appeared 2014
  fileExtensions cr
 
-githubLanguage Crystal
- fileExtensions cr
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  omarroth invidious https://github.com/omarroth.png https://github.com/omarroth/invidious Crystal #000100 1184 86 154 "Invidious is an alternative front-end to YouTube"
-  crystal-lang crystal https://github.com/crystal-lang.png https://github.com/crystal-lang/crystal Crystal #000100 13807 1071 172 "The Crystal Programming Language"
- trendingProjectsCount 3
- type programming
- interpreters crystal
- aceMode ruby
- codemirrorMode crystal
- codemirrorMimeType text/x-crystal
- tmScope source.crystal
- repos 7522
+tiobe Crystal
+ currentRank 24
+
+domainName crystal-lang.org
+ registered 2013
+ awisRank
+  2022 387907
+  2017 299324
+
 githubBigQuery Crystal
  repos 1197
  users 767
 
-pygmentsHighlighter Crystal
- filename crystal.py
- fileExtensions cr
 linguistGrammarRepo https://github.com/atom-crystal/language-crystal
  firstCommit 2013
  lastCommit 2018
@@ -197,42 +235,23 @@ linguistGrammarRepo https://github.com/atom-crystal/language-crystal
     end
   end
   
-languageServerProtocolProject https://github.com/kofno/scry
- writtenIn crystal
 
-projectEuler Crystal
- memberCount
-  2019 5
-  2022 14
-helloWorldCollection Crystal
- # Hello world in Crystal
- 
- puts "Hello World"
-leachim6 Crystal
- filepath c/Crystal.cr
- fileExtensions cr
- example
-  puts "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Crystal
+isbndb 0
 
-compilerExplorer Crystal
- example
-  # Type your code here, or load an example.
-  
-  # compile with --prelude=empty
-  fun square(num : Int32) : Int32
-    num &* num
-  end
-rijuRepl https://riju.codes/crystal
- example
-  puts "Hello, world!"
-  
- description General-purpose, object-oriented programming language with syntax inspired by the language Ruby
+githubLanguage Crystal
  fileExtensions cr
- website https://crystal-lang.org/
- gitRepo https://github.com/crystal-lang/crystal
-tryItOnline crystal
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  omarroth invidious https://github.com/omarroth.png https://github.com/omarroth/invidious Crystal #000100 1184 86 154 "Invidious is an alternative front-end to YouTube"
+  crystal-lang crystal https://github.com/crystal-lang.png https://github.com/crystal-lang/crystal Crystal #000100 13807 1071 172 "The Crystal Programming Language"
+ trendingProjectsCount 3
+ type programming
+ interpreters crystal
+ aceMode ruby
+ codemirrorMode crystal
+ codemirrorMimeType text/x-crystal
+ tmScope source.crystal
+ repos 7522
 
 stackOverflowSurvey
  2021
@@ -240,25 +259,5 @@ stackOverflowSurvey
   medianSalary 72400
   fans 790
   percentageUsing 0.01
-officialBlogUrl https://crystal-lang.org/blog/
-faqPageUrl https://forum.crystal-lang.org/
-
-subreddit https://reddit.com/r/crystal_programming
- memberCount
-  2022 4118
-
-tiobe Crystal
- currentRank 24
-
-twitter https://twitter.com/crystallanguage
-fileType text
-wordRank 2716
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0
-
-clocExtensions cr
-writtenIn crystal ecr yaml markdown html javascript powershell bourne-shell css c svg make xml python json z-shell bash cpp nix ini

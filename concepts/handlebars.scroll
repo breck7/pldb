@@ -1,17 +1,21 @@
 import ../code/conceptPage.scroll
+
 id handlebars
 name Handlebars
 appeared 2010
 tags template
 website http://handlebarsjs.com/
+
+clocExtensions handlebars hbs
+fileType text
+monaco handlebars
+codeMirror handlebars
+centralPackageRepositoryCount 0
 country Austria and China
 originCommunity https://github.com/handlebars-lang
-domainName handlebarsjs.com
- registered 2011
- awisRank
-  2022 104731
-  2017 113602
 
+pygmentsHighlighter Handlebars
+ filename templates.py
 example
  <div class="entry">
   <h1>{{title}}</h1>
@@ -20,22 +24,16 @@ example
   </div>
  </div>
 
-githubLanguage Handlebars
- fileExtensions handlebars hbs
- trendingProjectsCount 0
- type markup
- aceMode handlebars
- tmScope text.html.handlebars
- aliases hbs or htmlbars
- repos 28186
+domainName handlebarsjs.com
+ registered 2011
+ awisRank
+  2022 104731
+  2017 113602
+
 githubBigQuery Handlebars
  repos 7598
  users 5871
 
-monaco handlebars
-codeMirror handlebars
-pygmentsHighlighter Handlebars
- filename templates.py
 linguistGrammarRepo https://github.com/daaain/Handlebars
  firstCommit 2012
  lastCommit 2017
@@ -50,9 +48,13 @@ linguistGrammarRepo https://github.com/daaain/Handlebars
     </div>
   </div>
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions handlebars hbs
+githubLanguage Handlebars
+ fileExtensions handlebars hbs
+ trendingProjectsCount 0
+ type markup
+ aceMode handlebars
+ tmScope text.html.handlebars
+ aliases hbs or htmlbars
+ repos 28186

@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id pod
 name Pod
 appeared 1997
 tags textMarkup
-reference https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentation%22/comp.lang.perl.misc/A9zVCf4UrIs/1hSITu_f4ckJ
+
+fileType text
+wordRank 9791
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.perl.org
+reference https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentation%22/comp.lang.perl.misc/A9zVCf4UrIs/1hSITu_f4ckJ
 
 wikipedia https://en.wikipedia.org/wiki/Plain_Old_Documentation
  example
@@ -64,18 +69,6 @@ wikipedia https://en.wikipedia.org/wiki/Plain_Old_Documentation
  dailyPageViews 31
  appeared 2000
 
-githubLanguage Pod
- fileExtensions pod
- trendingProjectsCount 0
- type prose
- interpreters perl
- aceMode perl
- codemirrorMode perl
- codemirrorMimeType text/x-perl
- tmScope none
- wrap true
- repos 0
-
 linguistGrammarRepo https://github.com/perl6/atom-language-perl6
  sampleCount 3
  example
@@ -91,6 +84,14 @@ linguistGrammarRepo https://github.com/perl6/atom-language-perl6
   1;
   
 
-fileType text
-wordRank 9791
-centralPackageRepositoryCount 0
+githubLanguage Pod
+ fileExtensions pod
+ trendingProjectsCount 0
+ type prose
+ interpreters perl
+ aceMode perl
+ codemirrorMode perl
+ codemirrorMimeType text/x-perl
+ tmScope none
+ wrap true
+ repos 0

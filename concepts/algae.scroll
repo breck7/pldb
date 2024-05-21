@@ -1,14 +1,14 @@
 import ../code/conceptPage.scroll
+
 id algae
 name Algae
 appeared 1997
 tags pl
-reference http://algae.sourceforge.net/
+
+rosettaCode http://www.rosettacode.org/wiki/Category:Algae
+centralPackageRepositoryCount 0
 originCommunity Boeing
-
-hasPrintDebugging true
-
-printToken printf
+reference http://algae.sourceforge.net/
 
 leachim6 Algae
  filepath a/Algae.algae
@@ -16,8 +16,9 @@ leachim6 Algae
  example
   printf("Hello World\n");
   
-rosettaCode http://www.rosettacode.org/wiki/Category:Algae
+
+printToken printf
+
+hasPrintDebugging true
 
 hopl https://hopl.info/showlanguage.prx?exp=2713
-
-centralPackageRepositoryCount 0

@@ -1,17 +1,28 @@
 import ../code/conceptPage.scroll
+
 id google-apps-script
 name Google Apps Script
 appeared 2009
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Google
+
+leachim6 Google Apps Script
+ filepath g/Google Apps Script.gs
+ example
+  function helloWorld() {
+    Logger.log("Hello World");
+  }
+  
+
+printToken Logger.log
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken Logger.log
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  example
@@ -28,13 +39,3 @@ wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  revisionCount 139
  dailyPageViews 143
  appeared 2009
-
-leachim6 Google Apps Script
- filepath g/Google Apps Script.gs
- example
-  function helloWorld() {
-    Logger.log("Hello World");
-  }
-  
-
-centralPackageRepositoryCount 0

@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id rfc
 name RFC
 appeared 1969
-tags notation
 creators Steve Crocker
-documentation https://www.ietf.org/standards/rfcs/
+tags notation
 standsFor Request for Comments
+
+fileType text
+wordRank 5769
+documentation https://www.ietf.org/standards/rfcs/
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of California, Los Angeles
 
@@ -31,10 +36,6 @@ wikipedia https://en.wikipedia.org/wiki/Request_for_Comments
  backlinksCount 739
  revisionCount 757
  appeared 1969
-
-fileType text
-wordRank 5769
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

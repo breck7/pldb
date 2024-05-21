@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id vcl
 name Varnish Configuration Language
 appeared 2006
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://en.wikipedia.org/wiki/Varnish_(software)
 
+pygmentsHighlighter VCL
+ filename varnish.py
+ fileExtensions vcl
 example
  acl local {
   "localhost";         // myself
@@ -12,20 +19,10 @@ example
   ! "192.0.2.23";      // except for the dialin router
  }
 
-githubLanguage VCL
- fileExtensions vcl
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.varnish.vcl
- repos 594
 githubBigQuery VCL
  repos 428
  users 404
 
-pygmentsHighlighter VCL
- filename varnish.py
- fileExtensions vcl
 linguistGrammarRepo https://github.com/brandonwamboldt/sublime-varnish
  firstCommit 2014
  lastCommit 2017
@@ -183,5 +180,10 @@ linguistGrammarRepo https://github.com/brandonwamboldt/sublime-varnish
   	return (ok);
   }
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage VCL
+ fileExtensions vcl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.varnish.vcl
+ repos 594

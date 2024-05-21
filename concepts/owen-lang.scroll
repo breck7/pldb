@@ -1,24 +1,21 @@
 import ../code/conceptPage.scroll
+
 id owen-lang
 name owen-lang
 appeared 2019
-tags pl
 creators Paw Møller
+tags pl
 website http://owen-lang.org
+
+writtenIn c markdown
+repoStats
+ firstCommit 2019
+ commits 199
+ committers 3
+ files 147
+ newestCommit 2023
 country Denmark
 originCommunity https://github.com/pawwkm/owen/issues
-domainName owen-lang.org
- registered 2019
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-
-lineCommentToken //
-printToken print
 
 example
  // An imperative, statically but weakly typed systems programming
@@ -42,11 +39,15 @@ githubRepo https://github.com/pawwkm/owen
  forks 0
  issues 0
 
-repoStats
- firstCommit 2019
- commits 199
- committers 3
- files 147
- newestCommit 2023
+lineCommentToken //
+printToken print
 
-writtenIn c markdown
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName owen-lang.org
+ registered 2019

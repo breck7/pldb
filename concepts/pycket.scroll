@@ -1,14 +1,23 @@
 import ../code/conceptPage.scroll
+
 id pycket
 name Pycket
 appeared 2022
-tags pl
 creators Sam Tobin-Hochstadt
+tags pl
 conceptDescription Pycket: a Racket/Scheme implementation that is generated using the RPython framework
-reference https://reddit.com/r/ProgrammingLanguages/comments/upizne/pycket_a_racketscheme_implementation_that_is/
-reference https://reddit.com/r/Racket/comments/upim61/pycket_a_racketscheme_implementation_that_is/
+
+writtenIn python racket scheme bourne-shell markdown make ini json yaml c
+repoStats
+ firstCommit 2013
+ commits 4986
+ committers 21
+ files 248
+ newestCommit 2021
 country Germany
 originCommunity https://github.com/pycket
+reference https://reddit.com/r/ProgrammingLanguages/comments/upizne/pycket_a_racketscheme_implementation_that_is/
+reference https://reddit.com/r/Racket/comments/upim61/pycket_a_racketscheme_implementation_that_is/
 
 githubRepo https://github.com/pycket/pycket
  firstCommit 2013
@@ -19,12 +28,3 @@ githubRepo https://github.com/pycket/pycket
  updated 2022
  description A rudimentary Racket implementation using RPython
  issues 53
-
-repoStats
- firstCommit 2013
- commits 4986
- committers 21
- files 248
- newestCommit 2021
-
-writtenIn python racket scheme bourne-shell markdown make ini json yaml c

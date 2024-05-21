@@ -1,25 +1,33 @@
 import ../code/conceptPage.scroll
+
 id lpc
 name LPC
 appeared 1995
-tags pl
 creators Lars Pensjö
+tags pl
 website http://lpmuds.net
 standsFor Lars Pensjö C
+
+fileType text
+centralPackageRepositoryCount 0
 country Sweden
 originCommunity Chalmers Datorförening
-domainName lpmuds.net
- registered 2006
- awisRank
-  2017 19387417
+
+helloWorldCollection Lars Pensj%C3%B6 C
+ // Hello World in LPC
+ 
+ void create()
+ {
+        message("info","Hello World!",this_user());
+ }
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/LPC_(programming_language)
  example
@@ -35,19 +43,13 @@ wikipedia https://en.wikipedia.org/wiki/LPC_(programming_language)
  revisionCount 211
  appeared 1993
 
-helloWorldCollection Lars Pensj%C3%B6 C
- // Hello World in LPC
- 
- void create()
- {
-        message("info","Hello World!",this_user());
- }
-
-tiobe LPC
 hopl https://hopl.info/showlanguage.prx?exp=1409
+tiobe LPC
 
-fileType text
-centralPackageRepositoryCount 0
+domainName lpmuds.net
+ registered 2006
+ awisRank
+  2017 19387417
 
 isbndb 0
 

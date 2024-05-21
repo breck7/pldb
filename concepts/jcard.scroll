@@ -1,11 +1,13 @@
 import ../code/conceptPage.scroll
+
 id jcard
 name jcard
 appeared 2014
 tags jsonFormat
-reference https://en.wikipedia.org/wiki/VCard
+
 country United States
 originCommunity Versit Consortium
+reference https://en.wikipedia.org/wiki/VCard
 
 example
  ["vcard",

@@ -1,19 +1,24 @@
 import ../code/conceptPage.scroll
+
 id lite-c
 name Lite-C
 appeared 2007
 tags pl
 website http://www.3dgamestudio.de/litec.php
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Germany
 originCommunity Conitec Datensysteme GmbH
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Lite-C
  example
@@ -34,7 +39,3 @@ wikipedia https://en.wikipedia.org/wiki/Lite-C
  revisionCount 46
  dailyPageViews 13
  appeared 2007
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

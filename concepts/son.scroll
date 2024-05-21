@@ -1,13 +1,26 @@
 import ../code/conceptPage.scroll
+
 id son
 name son
 appeared 2017
-tags textMarkup
 creators Ian Grant Jeffries
+tags textMarkup
 conceptDescription A minimal subset of JSON for machine-to-machine communication
-reference https://www.reddit.com/r/haskell/comments/5zdq5y/rfc_son_subset_of_json_for_machinetomachine/
+
+isOpenSource true
+writtenIn svg haskell markdown yaml
+fileType text
+wordRank 1417
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 22
+ committers 1
+ files 44
+ newestCommit 2019
 country United States
 originCommunity https://github.com/seagreen/Son/issues
+reference https://www.reddit.com/r/haskell/comments/5zdq5y/rfc_son_subset_of_json_for_machinetomachine/
 
 githubRepo https://github.com/seagreen/Son
  stars 357
@@ -18,17 +31,3 @@ githubRepo https://github.com/seagreen/Son
  firstCommit 2017
  description Work in progress. Best alternative: https://matrix.org/docs/spec/appendices.html#canonical-json
  issues 9
-
-repoStats
- firstCommit 2017
- commits 22
- committers 1
- files 44
- newestCommit 2019
-
-fileType text
-wordRank 1417
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn svg haskell markdown yaml

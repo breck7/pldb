@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id conceptual
 name Conceptual
 appeared 2019
 tags pl
-conceptDescription The Conceptual language aims to completely separate all features and quirks of programming and bring them to the realm of concepts, bridging machines and minds. This language is not a goal in itself, but a platform for the future; understanding this future allows to put its features into their proper context.
 website https://github.com/Antipurity/conceptual
 aka Antipurity
+conceptDescription The Conceptual language aims to completely separate all features and quirks of programming and bring them to the realm of concepts, bridging machines and minds. This language is not a goal in itself, but a platform for the future; understanding this future allows to put its features into their proper context.
+
+writtenIn tex markdown javascript html
+repoStats
+ firstCommit 2019
+ commits 245
+ committers 2
+ files 136
+ newestCommit 2021
 country Unknown
 originCommunity https://github.com/Antipurity/conceptual
 
@@ -38,12 +47,3 @@ githubRepo https://github.com/Antipurity/conceptual
  created 2019
  updated 2021
  description An experimental programming language / IDE of evil.
-
-repoStats
- firstCommit 2019
- commits 245
- committers 2
- files 136
- newestCommit 2021
-
-writtenIn tex markdown javascript html

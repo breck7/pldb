@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id tldr
 name tldr
 appeared 2013
-tags application
 creators Romain Prieto
+tags application
 website https://tldr.sh/
 aka tldr pages
-domainName tldr.sh
- registered 2016
- awisRank
-  2022 519009
+
+writtenIn markdown yaml python bourne-shell json css svg javascript
+repoStats
+ firstCommit 2013
+ newestCommit 2024
+ commits 14189
+ committers 2794
+ files 16390
+
+twitter https://twitter.com/tldr_pages
 
 githubRepo https://github.com/tldr-pages/tldr
  firstCommit 2013
@@ -21,12 +28,7 @@ githubRepo https://github.com/tldr-pages/tldr
  description 📚 Collaborative cheatsheets for console commands
  issues 225
 
-twitter https://twitter.com/tldr_pages
-
-repoStats
- firstCommit 2013
- newestCommit 2024
- commits 14189
- committers 2794
- files 16390
-writtenIn markdown yaml python bourne-shell json css svg javascript
+domainName tldr.sh
+ registered 2016
+ awisRank
+  2022 519009

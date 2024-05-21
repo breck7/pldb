@@ -1,11 +1,24 @@
 import ../code/conceptPage.scroll
+
 id elpi
 name Elpi
 appeared 2014
-tags pl
 creators Enrico Tassi
+tags pl
+
+writtenIn standard-ml ocaml json markdown make restructuredtext yaml python typescript tex
+repoStats
+ firstCommit 2014
+ commits 2683
+ committers 31
+ files 521
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/LPCIC
+
+pygmentsHighlighter Elpi
+ filename elpi.py
+ fileExtensions elpi
 
 githubRepo https://github.com/LPCIC/elpi
  firstCommit 2014
@@ -16,15 +29,3 @@ githubRepo https://github.com/LPCIC/elpi
  updated 2024
  description Embeddable Lambda Prolog Interpreter
  issues 44
-
-pygmentsHighlighter Elpi
- filename elpi.py
- fileExtensions elpi
-
-repoStats
- firstCommit 2014
- commits 2683
- committers 31
- files 521
- newestCommit 2024
-writtenIn standard-ml ocaml json markdown make restructuredtext yaml python typescript tex

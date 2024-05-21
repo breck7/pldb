@@ -1,21 +1,23 @@
 import ../code/conceptPage.scroll
+
 id microarchitecture-description-language
 name mdl
 appeared 2019
-tags isa
 creators Reid Tatge
-conceptDescription We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
+tags isa
 website https://github.com/MPACT-ORG
-documentation https://llvm.org/docs/GettingStarted.html
-reference https://discourse.llvm.org/t/rfc-mdl-a-micro-architecture-description-language-for-llvm/66409/4
-cheatSheetUrl https://github.com/MPACT-ORG/llvm-project/tree/work#the-llvm-compiler-infrastructure
 standsFor Microarchitecture Description Language
-country United States
-originCommunity https://github.com/MPACT-ORG
 versions
  2022 llvmorg-14.0.0-rc1
+conceptDescription We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
 
 writtenIn cpp
+documentation https://llvm.org/docs/GettingStarted.html
+country United States
+originCommunity https://github.com/MPACT-ORG
+reference https://discourse.llvm.org/t/rfc-mdl-a-micro-architecture-description-language-for-llvm/66409/4
+
+cheatSheetUrl https://github.com/MPACT-ORG/llvm-project/tree/work#the-llvm-compiler-infrastructure
 
 githubRepo https://github.com/MPACT-ORG/llvm-project/
  stars 17

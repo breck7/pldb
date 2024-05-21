@@ -1,31 +1,44 @@
 import ../code/conceptPage.scroll
+
 id clojurescript
 name ClojureScript
 appeared 2011
 tags pl
 website https://clojurescript.org/
 webRepl https://clojurescript.io/
-cheatSheetUrl http://cljs.info/cheatsheet/
-country Various
-originCommunity https://github.com/clojure
-domainName clojurescript.org
- registered 2011
- awisRank
-  2022 403705
-  2017 660977
 firstAnnouncement http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
 announcementMethod blogPost
 
+isOpenSource true
+writtenIn clojurescript clojure javascript bourne-shell html markdown bash yaml xml css powershell json svg
 compilesTo javascript
+clocExtensions cljs
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 6216
+ committers 249
+ files 391
+ newestCommit 2024
+country Various
+originCommunity https://github.com/clojure
 
-hasPrintDebugging true
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasLineComments true
-hasComments true
-
-printToken println
+pygmentsHighlighter ClojureScript
+ filename jvm.py
+ fileExtensions cljs
+rijuRepl https://riju.codes/clojurescript
+ example
+  (println "Hello, world!")
+  
+ description Compiler for Clojure that targets JavaScript
+ fileExtensions cljs
+ website https://clojurescript.org/
+ gitRepo https://github.com/clojure/clojurescript
+subreddit https://reddit.com/r/Clojurescript
+ memberCount
+  2022 2985
+cheatSheetUrl http://cljs.info/cheatsheet/
 
 githubRepo https://github.com/clojure/clojurescript
  stars 8887
@@ -37,39 +50,20 @@ githubRepo https://github.com/clojure/clojurescript
  description Clojure to JS compiler
  issues 2
 
-repoStats
- firstCommit 2011
- commits 6216
- committers 249
- files 391
- newestCommit 2024
+printToken println
 
-pygmentsHighlighter ClojureScript
- filename jvm.py
- fileExtensions cljs
+hasPrintDebugging true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true
 
-rijuRepl https://riju.codes/clojurescript
- example
-  (println "Hello, world!")
-  
- description Compiler for Clojure that targets JavaScript
- fileExtensions cljs
- website https://clojurescript.org/
- gitRepo https://github.com/clojure/clojurescript
-
-subreddit https://reddit.com/r/Clojurescript
- memberCount
-  2022 2985
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Clojurescript: Up and Running: Functional Programming for the Web|2015|Stuart Sierra|46459747|4.00|1|0
- Reactive with Clojurescript Recipes: Functional Programming for the Web||Nicolas Modrzyk|57019123|0.0|0|0
- Reactive with ClojureScript Recipes: Functional Programming for the Web||Nicolas Modrzyk|59492133|0.0|0|0
+domainName clojurescript.org
+ registered 2011
+ awisRank
+  2022 403705
+  2017 660977
 
 isbndb 6
  year|publisher|title|authors|isbn13
@@ -82,5 +76,8 @@ isbndb 6
 
 semanticScholar 0
 
-clocExtensions cljs
-writtenIn clojurescript clojure javascript bourne-shell html markdown bash yaml xml css powershell json svg
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Clojurescript: Up and Running: Functional Programming for the Web|2015|Stuart Sierra|46459747|4.00|1|0
+ Reactive with Clojurescript Recipes: Functional Programming for the Web||Nicolas Modrzyk|57019123|0.0|0|0
+ Reactive with ClojureScript Recipes: Functional Programming for the Web||Nicolas Modrzyk|59492133|0.0|0|0

@@ -1,11 +1,22 @@
 import ../code/conceptPage.scroll
+
 id asterisk
 name Asterisk
 appeared 1999
 tags application
 website https://wiki.asterisk.org/wiki/display/AST/Dialplan
+
+isOpenSource true
+fileType text
+codeMirror asterisk
+centralPackageRepositoryCount 0
 country United States
 originCommunity Sangoma Technologies Corporation
+
+helloWorldCollection Asterisk dialplan
+ ;; Hello world in Asterisk
+ 
+ exten => s,1,NoOp(Hello World)
 
 wikipedia https://en.wikipedia.org/wiki/Asterisk_(PBX)
  related c linux freebsd solaris
@@ -16,14 +27,3 @@ wikipedia https://en.wikipedia.org/wiki/Asterisk_(PBX)
  backlinksCount 160
  revisionCount 1053
  appeared 1999
-
-codeMirror asterisk
-
-helloWorldCollection Asterisk dialplan
- ;; Hello world in Asterisk
- 
- exten => s,1,NoOp(Hello World)
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

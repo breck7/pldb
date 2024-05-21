@@ -1,15 +1,20 @@
 import ../code/conceptPage.scroll
+
 id augeas
 name Augeas
 appeared 2007
 tags pl
 website http://augeas.net/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Red Hat Software
-domainName augeas.net
- registered 2008
- awisRank
-  2022 6616817
+
+pygmentsHighlighter Augeas
+ filename configs.py
+ fileExtensions aug
 
 hasMultiLineComments true
 hasComments true
@@ -24,6 +29,17 @@ wikipedia https://en.wikipedia.org/wiki/Augeas_(software)
  dailyPageViews 9
  appeared 2018
 
+domainName augeas.net
+ registered 2008
+ awisRank
+  2022 6616817
+
+githubBigQuery Augeas
+ repos 293
+ users 265
+
+isbndb 0
+
 githubLanguage Augeas
  fileExtensions aug
  trendingProjectsCount 0
@@ -31,16 +47,3 @@ githubLanguage Augeas
  aceMode text
  tmScope none
  repos 68
-githubBigQuery Augeas
- repos 293
- users 265
-
-pygmentsHighlighter Augeas
- filename configs.py
- fileExtensions aug
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0

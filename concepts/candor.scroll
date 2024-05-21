@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id candor
 name candor
 appeared 2012
-tags pl
 creators Fedor Indutny
+tags pl
 website http://candor-lang.org
+
+writtenIn python cpp markdown lisp make yaml bourne-shell c
+repoStats
+ firstCommit 2012
+ commits 1008
+ committers 7
+ files 198
+ newestCommit 2015
 country United States
 originCommunity https://darksi.de/
-domainName candor-lang.org
 
 githubRepo https://github.com/indutny/candor
  firstCommit 2012
@@ -19,17 +27,10 @@ githubRepo https://github.com/indutny/candor
  description Experimental VM for a `Candor` language
  issues 4
 
-repoStats
- firstCommit 2012
- commits 1008
- committers 7
- files 198
- newestCommit 2015
+domainName candor-lang.org
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  4717487|The Candor programing language - simplified JS|http://candor-lang.org/|2012-10-30 14:35:35 UTC|1351607735|fogus|0|1
 
 semanticScholar 0
-
-writtenIn python cpp markdown lisp make yaml bourne-shell c

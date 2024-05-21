@@ -1,15 +1,15 @@
 import ../code/conceptPage.scroll
+
 id scriptease
 name ScriptEase
 appeared 2001
 tags pl
-conceptDescription ScriptEase provides the most powerful and advanced form of JavaScript available today. Whereas other flavors of JavaScipt are embedded in web browsers and restricted to scripts that have been transmitted along with HTML documents, the ScriptEase processor allows you to run scripts locally, so you can use ScriptEase to write full fledged programs. In addition, ScriptEase has added commands and directives that increase and extend its power without interfering with the operation of standard JavaScript. These enhancements include preprocessor directives such as #include and #define, the switch/case statement, and the built-in Buffer object.
 website https://web.archive.org/web/20160402174838/http://old.minford.k12.oh.us/sewse/index.htm
-reference https://web.archive.org/web/20030417161951/http://www.nombas.com/us/company/company.htm
+conceptDescription ScriptEase provides the most powerful and advanced form of JavaScript available today. Whereas other flavors of JavaScipt are embedded in web browsers and restricted to scripts that have been transmitted along with HTML documents, the ScriptEase processor allows you to run scripts locally, so you can use ScriptEase to write full fledged programs. In addition, ScriptEase has added commands and directives that increase and extend its power without interfering with the operation of standard JavaScript. These enhancements include preprocessor directives such as #include and #define, the switch/case statement, and the built-in Buffer object.
+
 country United States
 originCommunity Nombas, Inc
-
-hasDirectives true
+reference https://web.archive.org/web/20030417161951/http://www.nombas.com/us/company/company.htm
 
 example
  while( ThereAreUncalledNamesOnTheList() == true){
@@ -17,5 +17,7 @@ example
       CallthePerson(name);
       LeaveTheMessage();
    }
+
+hasDirectives true
 
 hopl https://hopl.info/showlanguage.prx?exp=3619

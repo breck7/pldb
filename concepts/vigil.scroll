@@ -1,17 +1,18 @@
 import ../code/conceptPage.scroll
+
 id vigil
 name Vigil
 appeared 2013
-tags esolang
 creators Bob Nystrom
+tags esolang
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+writtenIn python markdown
+repoStats
+ firstCommit 2013
+ commits 15
+ committers 7
+ files 6
+ newestCommit 2022
 
 example
  def fib(n):
@@ -33,13 +34,12 @@ githubRepo https://github.com/munificent/vigil
  description Vigil, the eternal morally vigilant programming language
  issues 21
 
-repoStats
- firstCommit 2013
- commits 15
- committers 7
- files 6
- newestCommit 2022
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 isbndb 0
-
-writtenIn python markdown

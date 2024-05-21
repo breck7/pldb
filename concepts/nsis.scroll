@@ -1,20 +1,41 @@
 import ../code/conceptPage.scroll
+
 id nsis
 name NSIS
 appeared 2001
 tags pl
 website http://nsis.sourceforge.net
 standsFor Nullsoft Software Install Script
+
+fileType text
+codeMirror nsis
+rosettaCode http://www.rosettacode.org/wiki/Category:NSIS
+centralPackageRepositoryCount 0
 country United States
 originCommunity Nullsoft, Inc
-domainName nsis.sourceforge.net
+
+helloWorldCollection Nullsoft Software Install Script
+ ; Hello World in Nullsoft Software Install Script (NSIS)
+ 
+ Caption "Hello World!"
+ OutFile ".\HelloWorld.exe"
+ SilentInstall silent
+ 
+ Section ""
+         MessageBox MB_OK "Hello World!"
+ SectionEnd
+ 
+pygmentsHighlighter NSIS
+ filename installers.py
+ fileExtensions nsi nsh
+twitter https://twitter.com/nsis_tweets
+
+lineCommentToken ;
 
 hasComments true
 hasLineComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System
  example
@@ -44,23 +65,14 @@ wikipedia https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System
  revisionCount 476
  appeared 2001
 
-githubLanguage NSIS
- fileExtensions nsi nsh
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode nsis
- codemirrorMimeType text/x-nsis
- tmScope source.nsis
- repos 4747
+tiobe NSIS
+
+domainName nsis.sourceforge.net
+
 githubBigQuery NSIS
  repos 8095
  users 7167
 
-codeMirror nsis
-pygmentsHighlighter NSIS
- filename installers.py
- fileExtensions nsi nsh
 linguistGrammarRepo https://github.com/github-linguist/NSIS
  firstCommit 2011
  lastCommit 2016
@@ -124,23 +136,14 @@ linguistGrammarRepo https://github.com/github-linguist/NSIS
   !endif # !___X64__NSH___
   
 
-helloWorldCollection Nullsoft Software Install Script
- ; Hello World in Nullsoft Software Install Script (NSIS)
- 
- Caption "Hello World!"
- OutFile ".\HelloWorld.exe"
- SilentInstall silent
- 
- Section ""
-         MessageBox MB_OK "Hello World!"
- SectionEnd
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:NSIS
-
-tiobe NSIS
-
-twitter https://twitter.com/nsis_tweets
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage NSIS
+ fileExtensions nsi nsh
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode nsis
+ codemirrorMimeType text/x-nsis
+ tmScope source.nsis
+ repos 4747

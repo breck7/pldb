@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id spyder-editor
 name Spyder
 appeared 2009
 tags editor
+
+isOpenSource true
+fileType na
+centralPackageRepositoryCount 0
 country France
 originCommunity https://github.com/spyder-ide
 
@@ -15,7 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Spyder_(software)
  revisionCount 149
  dailyPageViews 294
  appeared 2009
-
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0

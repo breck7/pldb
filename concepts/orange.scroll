@@ -1,16 +1,22 @@
 import ../code/conceptPage.scroll
+
 id orange
 name orange
 appeared 2014
-tags pl
 creators Robert Fratto
-conceptDescription Orange is a systems programming language made to be as powerful as C++ with none of the headache. It aims to be very productive by baking the most important low- and high-level features directly into the language, instead of dealing with them through obtuse function calls.
+tags pl
 website https://web.archive.org/web/20191002000130/http://orange-lang.org/
+conceptDescription Orange is a systems programming language made to be as powerful as C++ with none of the headache. It aims to be very productive by baking the most important low- and high-level features directly into the language, instead of dealing with them through obtuse function calls.
+
+writtenIn go yaml markdown dockerfile
+repoStats
+ firstCommit 2017
+ commits 2009
+ committers 1
+ files 81
+ newestCommit 2018
 country United States
 originCommunity https://github.com/orange-lang
-domainName orange-lang.org
-
-keywords alias bool break catch char class const continue data def delete do double elif else enum extend extern false final finally float fro get if import int int16 int32 int64 int8 interface new of package private property protected public return set static string super this throw true try uint uint16 uint362 uint64 uint8 var virtual void where while
 
 example
  extern printf(char* s, ...) -> int32
@@ -26,6 +32,7 @@ example
  Person john = Person("Johnny")
  printf("Hello, %s!\n", john.name)
 
+keywords alias bool break catch char class const continue data def delete do double elif else enum extend extern false final finally float fro get if import int int16 int32 int64 int8 interface new of package private property protected public return set static string super this throw true try uint uint16 uint362 uint64 uint8 var virtual void where while
 githubRepo https://github.com/orange-lang/orange
  stars 70
  forks 10
@@ -33,15 +40,8 @@ githubRepo https://github.com/orange-lang/orange
  created 2017
  updated 2018
 
-repoStats
- firstCommit 2017
- commits 2009
- committers 1
- files 81
- newestCommit 2018
+domainName orange-lang.org
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  9784334|Orange: A simple systems programming language|http://orange-lang.org/|2015-06-26 13:56:26 UTC|1435326986|rfratto|38|55
-
-writtenIn go yaml markdown dockerfile

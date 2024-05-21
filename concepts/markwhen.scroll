@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id markwhen
 name Markwhen
 appeared 2022
-tags textMarkup
 creators Rob Koch
-conceptDescription Make a cascading timeline from Markdown-like text.
+tags textMarkup
 website https://markwhen.com/
 webRepl https://markwhen.com/example
+conceptDescription Make a cascading timeline from Markdown-like text.
+
+writtenIn typescript json html javascript markdown css svg dockerfile yaml
+influencedBy markdown
+repoStats
+ firstCommit 2022
+ commits 379
+ committers 2
+ files 148
+ newestCommit 2023
 country United States
 originCommunity https://github.com/mark-when
-
-influencedBy markdown
 
 example
  title: Welcome to Markwhen 👋
@@ -75,12 +83,3 @@ githubRepo https://github.com/mark-when/markwhen
  updated 2023
  description Make a cascading timeline from markdown-like text. Supports simple American/European date styles, ISO8601, images, links, locations, and more.
  issues 48
-
-repoStats
- firstCommit 2022
- commits 379
- committers 2
- files 148
- newestCommit 2023
-
-writtenIn typescript json html javascript markdown css svg dockerfile yaml

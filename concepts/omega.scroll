@@ -1,26 +1,16 @@
 import ../code/conceptPage.scroll
+
 id omega
 name omega
 appeared 2005
-tags pl
 creators Tim Sheard
-conceptDescription The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
+tags pl
 website http://web.cecs.pdx.edu/~sheard/Omega/index.html
-reference https://code.google.com/archive/p/omega
+conceptDescription The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
+
 country United States
 originCommunity Portland State University
-
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasMultiLineComments true
- {- A comment
- -}
-hasSemanticIndentation false
-
-lineCommentToken --
-multiLineCommentTokens {- -}
+reference https://code.google.com/archive/p/omega
 
 example
  --
@@ -100,6 +90,18 @@ example
       in appMonoList sortedGreater (appMonoList (singletonMonoList x) sortedLess)
  
  --
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
 
 isbndb 0
 

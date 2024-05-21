@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id ops5
 name OPS5
 appeared 1977
 tags pl
 standsFor Official Production System version 5
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Carnegie Mellon University
 
@@ -21,11 +25,8 @@ wikipedia https://en.wikipedia.org/wiki/OPS5
 
 hopl https://hopl.info/showlanguage.prx?exp=775
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming Expert Systems in Ops5: An Introduction to Rule-Based Programming|1985|Lee Brownston|1071877|0.0|0|0
-
-isbndb 0

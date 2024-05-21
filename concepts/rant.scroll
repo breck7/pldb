@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id rant
 name rant
 appeared 2014
 tags pl
 website http://berkin.me/rant
+
+writtenIn csharp markdown html javascript xml yaml css svg json
+repoStats
+ firstCommit 2014
+ commits 991
+ committers 15
+ files 363
+ newestCommit 2020
 country United States
 originCommunity https://github.com/TheBerkin/rant3/pulls
 
@@ -17,17 +26,8 @@ githubRepo https://github.com/TheBerkin/Rant
  description (Obsolete) Archive of Rant 3.x.
  issues 9
 
-repoStats
- firstCommit 2014
- commits 991
- committers 15
- files 363
- newestCommit 2020
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  8711621|Show HN: Rant, a procedural text generation language|2014-12-07 08:01:54 UTC|1417939314|atlantique|36|155
 
 isbndb 0
-
-writtenIn csharp markdown html javascript xml yaml css svg json

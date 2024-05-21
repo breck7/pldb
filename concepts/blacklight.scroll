@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id blacklight
 name Blacklight
 appeared 2015
-tags pl
 creators Anthony M. Cook
-conceptDescription blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
+tags pl
 website http://blog.anthonymcook.com/blacklight/
+conceptDescription blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
+
+writtenIn go bash markdown yaml json powershell
+repoStats
+ firstCommit 2015
+ commits 666
+ committers 4
+ files 99
+ newestCommit 2024
 country Unknown
 originCommunity http://anthonymcook.com/
 
@@ -34,12 +43,3 @@ githubRepo https://github.com/acook/blacklight
  created 2015
  updated 2022
  description a stack-based concatenative virtual machine for implementing highly concurrent languages
-
-repoStats
- firstCommit 2015
- commits 666
- committers 4
- files 99
- newestCommit 2024
-
-writtenIn go bash markdown yaml json powershell

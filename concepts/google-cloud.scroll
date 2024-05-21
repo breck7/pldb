@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id google-cloud
 name Google Cloud Platform
 appeared 2011
 tags cloud
 website https://cloud.google.com/
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Google
-domainName cloud.google.com
+
+meetup https://www.meetup.com/topics/google-cloud-platform
+ memberCount 82693
+ groupCount 157
 
 wikipedia https://en.wikipedia.org/wiki/Google_Cloud_Platform
  related java python go ruby aws azure
@@ -18,10 +26,4 @@ wikipedia https://en.wikipedia.org/wiki/Google_Cloud_Platform
  revisionCount 195
  appeared 2011
 
-meetup https://www.meetup.com/topics/google-cloud-platform
- memberCount 82693
- groupCount 157
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+domainName cloud.google.com

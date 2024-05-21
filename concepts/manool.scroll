@@ -1,24 +1,23 @@
 import ../code/conceptPage.scroll
+
 id manool
 name manool
 appeared 2018
-tags pl
 creators Alex Protasov
-conceptDescription Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
+tags pl
 website https://manool.org/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
+conceptDescription Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
+
+writtenIn cpp c yaml markdown bourne-shell make bash
+repoStats
+ firstCommit 2019
+ commits 596
+ committers 4
+ files 78
+ newestCommit 2024
 country Colombia
 originCommunity https://github.com/rusini/manool/pulls
-domainName manool.org
- registered 2018
-
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
 
 example
  -- recursive version, MANOOLish "cascading" notation
@@ -44,11 +43,13 @@ githubRepo https://github.com/rusini/manool
  forks 3
  issues 0
 
-repoStats
- firstCommit 2019
- commits 596
- committers 4
- files 78
- newestCommit 2024
+lineCommentToken --
 
-writtenIn cpp c yaml markdown bourne-shell make bash
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName manool.org
+ registered 2018

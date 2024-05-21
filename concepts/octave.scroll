@@ -1,12 +1,49 @@
 import ../code/conceptPage.scroll
+
 id octave
 name GNU Octave
 appeared 1988
+creators John W. Eaton
 tags pl
 website https://gnu.org/software/octave/
+
+isOpenSource true
+tryItOnline octave
+fileType text
 documentation https://docs.octave.org/interpreter/
+codeMirror octave
+rosettaCode http://www.rosettacode.org/wiki/Category:Octave
+quineRelay Octave
+centralPackageRepositoryCount 0
+ubuntuPackage octave
 country United States
 originCommunity University of Wisconsin-Madison && University of Texas
+projectEuler Octave
+ memberCount
+  2019 137
+  2022 150
+
+helloWorldCollection GNU Octave
+ #Hello World in Octave (http://www.octave.org/)
+ printf("Hello World\n");
+ 
+pygmentsHighlighter Octave
+ filename matlab.py
+ fileExtensions m
+rijuRepl https://riju.codes/octave
+ example
+  disp("Hello, world!")
+  
+leachim6 Octave
+ filepath o/Octave.m
+ fileExtensions m
+ example
+  printf("Hello World");
+  
+
+lineCommentToken %
+printToken printf
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -21,10 +58,7 @@ hasIntegers true
  % \d+
 hasMultiLineComments true
 
-lineCommentToken %
-printToken printf
-stringToken "
-
+jupyterKernel https://github.com/calysto/octave_kernel
 wikipedia https://en.wikipedia.org/wiki/GNU_Octave
  example
   % create figure and panel on it
@@ -45,49 +79,13 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Octave
  revisionCount 653
  appeared 1988
 
-codeMirror octave
-pygmentsHighlighter Octave
- filename matlab.py
- fileExtensions m
-
-projectEuler Octave
- memberCount
-  2019 137
-  2022 150
-helloWorldCollection GNU Octave
- #Hello World in Octave (http://www.octave.org/)
- printf("Hello World\n");
- 
-leachim6 Octave
- filepath o/Octave.m
- fileExtensions m
- example
-  printf("Hello World");
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Octave
-quineRelay Octave
-
-rijuRepl https://riju.codes/octave
- example
-  disp("Hello, world!")
-  
-tryItOnline octave
-
-tiobe GNU Octave
 hopl https://hopl.info/showlanguage.prx?exp=2302
-
-ubuntuPackage octave
-jupyterKernel https://github.com/calysto/octave_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0
+tiobe GNU Octave
 
 isbndb 0
 
 semanticScholar 0
 
-creators John W. Eaton
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0

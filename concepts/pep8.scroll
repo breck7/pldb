@@ -1,11 +1,23 @@
 import ../code/conceptPage.scroll
+
 id pep8
 name Pep8
 appeared 2009
 tags assembly
-reference http://computersystemsbook.com/4th-edition/pep8/
+
+isOpenSource true
+writtenIn cpp qt html xml javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 490
+ committers 8
+ files 265
+ newestCommit 2019
 country United States
 originCommunity Pepperdine University
+reference http://computersystemsbook.com/4th-edition/pep8/
 
 example
   BR main
@@ -34,20 +46,6 @@ githubRepo https://github.com/StanWarford/pep8
  description Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warford, Fourth edition
  issues 0
 
-repoStats
- firstCommit 2009
- commits 490
- committers 8
- files 265
- newestCommit 2019
-
-githubLanguage Pep8
- fileExtensions pep
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.pep8
- repos 165
 githubBigQuery Pep8
  repos 33
  users 32
@@ -84,8 +82,10 @@ linguistGrammarRepo https://github.com/R4PaSs/Sublime-Pep8
   	.END
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp qt html xml javascript
+githubLanguage Pep8
+ fileExtensions pep
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pep8
+ repos 165

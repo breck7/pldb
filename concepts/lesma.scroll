@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id lesma
 name Lesma
 appeared 2022
-tags pl
 creators Alin Ali Hassan
+tags pl
 website https://lesma-lang.com/
+
+writtenIn markdown cpp json yaml svg javascript bourne-shell css cmake typescript dockerfile
+repoStats
+ firstCommit 2022
+ commits 777
+ committers 5
+ files 116
+ newestCommit 2023
 country The Netherlands
 originCommunity https://github.com/alinalihassan/Lesma/issues
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/alinalihassan/Lesma
  updated 2022
  description The Lesma Programming Language
  issues 7
-
-repoStats
- firstCommit 2022
- commits 777
- committers 5
- files 116
- newestCommit 2023
-
-writtenIn markdown cpp json yaml svg javascript bourne-shell css cmake typescript dockerfile

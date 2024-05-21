@@ -1,26 +1,28 @@
 import ../code/conceptPage.scroll
+
 id picolisp
 name PicoLisp
 appeared 1988
-tags pl
 creators Alexander Burger
+tags pl
 website https://picolisp.com/
+
+tryItOnline picolisp
+officialBlogUrl http://pico-lisp.blogspot.com/
+fileType text
 documentation https://picolisp.com/wiki/?Documentation
+rosettaCode http://www.rosettacode.org/wiki/Category:PicoLisp
+centralPackageRepositoryCount 0
 country Germany
 originCommunity https://www.mail-archive.com/picolisp@software-lab.de
-domainName picolisp.com
- registered 2007
- awisRank
-  2022 5670205
-  2017 9031045
+
+lineCommentToken #
 
 isLisp true
 hasComments true
 hasLineComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/PicoLisp
  related lisp linux s-expressions common-lisp emacs-lisp prolog c assembly-language java
@@ -33,14 +35,12 @@ wikipedia https://en.wikipedia.org/wiki/PicoLisp
  appeared 1988
  fileExtensions l
 
-githubLanguage PicoLisp
- fileExtensions l
- trendingProjectsCount 0
- type programming
- interpreters picolisp pil
- aceMode lisp
- tmScope source.lisp
- repos 114
+domainName picolisp.com
+ registered 2007
+ awisRank
+  2022 5670205
+  2017 9031045
+
 githubBigQuery PicoLisp
  repos 99
  users 85
@@ -219,15 +219,15 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
         (prinl) ) )
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:PicoLisp
-
-tryItOnline picolisp
-
-officialBlogUrl http://pico-lisp.blogspot.com/
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage PicoLisp
+ fileExtensions l
+ trendingProjectsCount 0
+ type programming
+ interpreters picolisp pil
+ aceMode lisp
+ tmScope source.lisp
+ repos 114
 
 semanticScholar 0

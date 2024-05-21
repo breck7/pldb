@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id type-language
 name Type Language
 appeared 2013
 tags pl
 conceptDescription TL (Type Language) serves to describe the used system of types, constructors, and existing functions.
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://core.telegram.org/mtproto/TL
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -14,18 +21,6 @@ hasMultiLineComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
-
-githubLanguage Type Language
- fileExtensions tl
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.tl
- aliases tl
- repos 404774
 
 linguistGrammarRepo https://github.com/goodmind/language-typelanguage
  firstCommit 2017
@@ -74,7 +69,13 @@ linguistGrammarRepo https://github.com/goodmind/language-typelanguage
   getUser#b0f732d5 int = User;
   getUsers#2d84d5f5 (Vector int) = Vector User;
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Type Language
+ fileExtensions tl
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.tl
+ aliases tl
+ repos 404774
 
 semanticScholar 0

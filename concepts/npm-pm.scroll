@@ -1,16 +1,29 @@
 import ../code/conceptPage.scroll
+
 id npm-pm
 name npm
 appeared 2010
-tags packageManager
 creators Isaac Z. Schlueter
+tags packageManager
 website http://npmjs.org
+packageCount 1029249
+packageInstallCount 991954002030
+forLanguages javascript nodejs typescript
+
+isOpenSource true
+writtenIn markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ newestCommit 2020
+ commits 9720
+ committers 586
+ files 2
 country United States
 originCommunity npm, Inc
-domainName npmjs.org
- registered 2010
- awisRank
-  2022 114891
+
+twitter https://twitter.com/npmjs
 
 githubRepo https://github.com/npm/npm
  firstCommit 2009
@@ -32,19 +45,7 @@ wikipedia https://en.wikipedia.org/wiki/Npm_(software)
  dailyPageViews 492
  appeared 2010
 
-packageCount 1029249
-packageInstallCount 991954002030
-forLanguages javascript nodejs typescript
-
-twitter https://twitter.com/npmjs
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2009
- newestCommit 2020
- commits 9720
- committers 586
- files 2
-writtenIn markdown
+domainName npmjs.org
+ registered 2010
+ awisRank
+  2022 114891

@@ -1,21 +1,23 @@
 import ../code/conceptPage.scroll
+
 id rql
 name RQL
 appeared 2017
 tags pl
 website https://web.archive.org/web/20220310181429/https://www.logilab.org/project/rql
+
+country France
+originCommunity logilab.fr
 reference https://readthedocs.org/projects/rql
 reference https://rql.readthedocs.io/en/latest
 reference https://github.com/logilab
-country France
-originCommunity logilab.fr
-
-hasIntegers true
-
-gitRepo https://forge.extranet.logilab.fr/cubicweb/RQL
 
 pygmentsHighlighter RQL
  filename sql.py
  fileExtensions rql
+
+gitRepo https://forge.extranet.logilab.fr/cubicweb/RQL
+
+hasIntegers true
 
 semanticScholar 0

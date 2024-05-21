@@ -1,11 +1,25 @@
 import ../code/conceptPage.scroll
+
 id judoscript
 name Judoscript
 appeared 2001
-tags pl
 creators James Jianbo Huang
+tags pl
+
+isOpenSource true
+rosettaCode http://www.rosettacode.org/wiki/Category:JudoScript
+centralPackageRepositoryCount 0
 country Unknown
 originCommunity https://github.com/metaprgmr/Judoscript/issues
+
+leachim6 JudoScript
+ filepath j/JudoScript
+ example
+  . "Hello World";
+  
+
+lineCommentToken //
+stringToken "
 
 hasLineComments true
  // A comment
@@ -14,9 +28,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Judoscript
  example
@@ -34,13 +45,3 @@ wikipedia https://en.wikipedia.org/wiki/Judoscript
  revisionCount 31
  dailyPageViews 4
  appeared 2001
-
-leachim6 JudoScript
- filepath j/JudoScript
- example
-  . "Hello World";
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:JudoScript
-
-isOpenSource true
-centralPackageRepositoryCount 0

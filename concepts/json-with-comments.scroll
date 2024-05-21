@@ -1,29 +1,27 @@
 import ../code/conceptPage.scroll
+
 id json-with-comments
 name JSON with Comments
 appeared 2001
-tags dataNotation
 creators Muhammad Muzzammil
+tags dataNotation
+aka jsonc
+
+writtenIn markdown go yaml
+supersetOf json
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2019
+ commits 50
+ committers 6
+ files 13
+ newestCommit 2024
+country India
+originCommunity https://github.com/muhammadmuzzammil1998/jsonc/issues
 reference https://plus.google.com/118095276221607585885/posts/RK8qyGVaGSr
 reference https://changelog.com/news/jsonc-is-a-superset-of-json-which-supports-comments-6LwR
 reference https://github.com/Microsoft/node-jsonc-parser
-aka jsonc
-country India
-originCommunity https://github.com/muhammadmuzzammil1998/jsonc/issues
-
-supersetOf json
-
-hasLineComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 example
  /*
@@ -46,24 +44,17 @@ githubRepo https://github.com/muhammadmuzzammil1998/jsonc
  description JSON with comments for Go!
  issues 3
 
-repoStats
- firstCommit 2019
- commits 50
- committers 6
- files 13
- newestCommit 2024
+lineCommentToken //
+multiLineCommentTokens /* */
 
-githubLanguage JSON with Comments
- fileExtensions jsonc code-snippets sublime-build sublime-commands sublime-completions sublime-keymap sublime-macro sublime-menu sublime-mousemap sublime-project sublime-settings sublime-theme sublime-workspace sublime_metrics sublime_session
- type data
- group JSON
- filenames .babelrc .devcontainer.json .eslintrc.json .jscsrc .jshintrc .jslintrc api-extractor.json devcontainer.json jsconfig.json language-configuration.json tsconfig.json tslint.json
- aceMode javascript
- codemirrorMode javascript
- codemirrorMimeType text/javascript
- tmScope source.js
- aliases jsonc
- repos 0
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
@@ -78,9 +69,16 @@ linguistGrammarRepo https://github.com/atom/language-javascript
   	}
   ]
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn markdown go yaml
+githubLanguage JSON with Comments
+ fileExtensions jsonc code-snippets sublime-build sublime-commands sublime-completions sublime-keymap sublime-macro sublime-menu sublime-mousemap sublime-project sublime-settings sublime-theme sublime-workspace sublime_metrics sublime_session
+ type data
+ group JSON
+ filenames .babelrc .devcontainer.json .eslintrc.json .jscsrc .jshintrc .jslintrc api-extractor.json devcontainer.json jsconfig.json language-configuration.json tsconfig.json tslint.json
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType text/javascript
+ tmScope source.js
+ aliases jsonc
+ repos 0

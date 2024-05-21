@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id lemon
 name lemon
 appeared 2017
-tags pl
 creators Zhicheng Wei
+tags pl
 website http://www.lemon-lang.org/
+
+writtenIn c markdown make
+repoStats
+ firstCommit 2017
+ commits 35
+ committers 2
+ files 107
+ newestCommit 2018
 country Singapore
 originCommunity https://github.com/lemon-lang
-domainName lemon-lang.org
- registered 2016
 
 githubRepo https://github.com/lemon-lang/lemon
  firstCommit 2017
@@ -20,11 +27,5 @@ githubRepo https://github.com/lemon-lang/lemon
  description Lemon is open source, embeddable, lightweight programming language http://www.lemon-lang.org
  issues 0
 
-repoStats
- firstCommit 2017
- commits 35
- committers 2
- files 107
- newestCommit 2018
-
-writtenIn c markdown make
+domainName lemon-lang.org
+ registered 2016

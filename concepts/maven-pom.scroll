@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id maven-pom
 name Apache Maven
 appeared 2004
 tags application
-conceptDescription Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 website http://maven.apache.org/
+conceptDescription Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apache Software Foundation
-domainName maven.apache.org
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Maven
  example
@@ -33,15 +37,7 @@ wikipedia https://en.wikipedia.org/wiki/Apache_Maven
  dailyPageViews 619
  appeared 2002
 
-githubLanguage Maven POM
- trendingProjectsCount 0
- type data
- group XML
- filenames pom.xml
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml.pom
+domainName maven.apache.org
 
 linguistGrammarRepo https://github.com/textmate/maven.tmbundle
  firstCommit 2007
@@ -259,6 +255,12 @@ linguistGrammarRepo https://github.com/textmate/maven.tmbundle
   </project>
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Maven POM
+ trendingProjectsCount 0
+ type data
+ group XML
+ filenames pom.xml
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml.pom

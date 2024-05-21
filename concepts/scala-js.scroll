@@ -1,23 +1,29 @@
 import ../code/conceptPage.scroll
+
 id scala-js
 name Scala.js
 appeared 2013
-tags pl
 creators Martin Odersky
+tags pl
 website https://www.scala-js.org/
+
+isOpenSource true
+writtenIn scala markdown javascript html xml json css java bourne-shell yaml
+compilesTo javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 7286
+ committers 111
+ files 2073
+ newestCommit 2024
 country United States and Switzerland
 originCommunity https://github.com/scala-js
-domainName scala-js.org
- registered 2013
- awisRank
-  2022 1554040
 
-compilesTo javascript
-
-hasPrintDebugging true
-
-printToken println
-
+subreddit https://reddit.com/r/scalajs
+ memberCount
+  2022 181
 example
  class Person(val firstName: String, val lastName: String) {
   def fullName(): String =
@@ -34,12 +40,9 @@ githubRepo https://github.com/scala-js/scala-js
  description Scala.js, the Scala to JavaScript compiler
  issues 31
 
-repoStats
- firstCommit 2013
- commits 7286
- committers 111
- files 2073
- newestCommit 2024
+printToken println
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
  example
@@ -60,18 +63,13 @@ wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
  dailyPageViews 2
  appeared 2004
 
-subreddit https://reddit.com/r/scalajs
- memberCount
-  2022 181
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName scala-js.org
+ registered 2013
+ awisRank
+  2022 1554040
 
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  2016|Parallel incremental whole-program optimizations for Scala.js|10.1145/2983990.2984013|4|0|S. Doeraene and Tobias Schlatter|86c8c701f92f3a4712446204cb93b31e9e552c0b
  2016|Semantics-driven interoperability between Scala.js and JavaScript|10.1145/2998392.2998404|4|0|S. Doeraene and Tobias Schlatter and Nicolas Stucki|9575b847d866a9a78ad6693f4280a064634c8336
  2018|Scalagna 0.1: towards multi-tier programming with Scala and Scala.js|10.1145/3191697.3191731|4|0|Bob Reynders and Michael Greefs and D. Devriese and F. Piessens|54eb28a939999162d48773b236679fb40969b5bd
-
-writtenIn scala markdown javascript html xml json css java bourne-shell yaml

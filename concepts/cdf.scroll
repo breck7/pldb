@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id cdf
 name Common Data Format
 appeared 1985
 tags binaryDataFormat
 standsFor Common Data Format
+
+fileType binary
+centralPackageRepositoryCount 0
 country United States
 originCommunity NASA
 
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Common_Data_Format
  revisionCount 35
  dailyPageViews 18
  appeared 1985
-
-fileType binary
-centralPackageRepositoryCount 0

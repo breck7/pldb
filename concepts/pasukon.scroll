@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id pasukon
 name pasukon
 appeared 2020
-tags grammarLanguage
 creators Federico Ramirez
+tags grammarLanguage
 website https://pasukon.rocks
 webRepl https://pasukon.rocks/#try-it
-reference https://news.ycombinator.com/item?id=24347956
+
+writtenIn javascript json markdown
+repoStats
+ firstCommit 2020
+ commits 83
+ committers 1
+ files 53
+ newestCommit 2020
 country Argentina
 originCommunity https://github.com/gosukiwi/Pasukon/issues
-domainName pasukon.rocks
+reference https://news.ycombinator.com/item?id=24347956
 
 example
  lex
@@ -71,11 +79,4 @@ githubRepo https://github.com/gosukiwi/Pasukon
  description JavaScript practical parser generator library using combinators
  issues 6
 
-repoStats
- firstCommit 2020
- commits 83
- committers 1
- files 53
- newestCommit 2020
-
-writtenIn javascript json markdown
+domainName pasukon.rocks

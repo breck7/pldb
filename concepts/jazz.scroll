@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id jazz
 name Jazz
 appeared 2019
-tags pl
 creators playXE
+tags pl
+
+writtenIn markdown rust toml
+repoStats
+ firstCommit 2019
+ commits 209
+ committers 3
+ files 53
+ newestCommit 2020
 country Uzbekistan
 originCommunity https://github.com/jazz-lang
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/jazz-lang/Jazz
  updated 2022
  description Jazz - modern and fast programming language.
  issues 1
-
-repoStats
- firstCommit 2019
- commits 209
- committers 3
- files 53
- newestCommit 2020
-
-writtenIn markdown rust toml

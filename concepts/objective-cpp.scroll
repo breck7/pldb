@@ -1,13 +1,36 @@
 import ../code/conceptPage.scroll
+
 id objective-cpp
 name Objective C++
 appeared 1993
 tags pl
-conceptDescription Objective-C++ is simply source code that mixes Objective-C classes and C++ classes.
-reference https://en.wikipedia.org/wiki/Objective-C
 aka objectivecpp
+conceptDescription Objective-C++ is simply source code that mixes Objective-C classes and C++ classes.
+
+clocExtensions mm
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apple
+reference https://en.wikipedia.org/wiki/Objective-C
+
+pygmentsHighlighter Objective-C++
+ filename objective.py
+ fileExtensions mm hh
+rijuRepl https://riju.codes/objectivecpp
+ example
+  #import <Foundation/Foundation.h>
+  
+  int main() {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSLog(@"Hello, world!");
+    [pool drain];
+    return 0;
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -18,29 +41,10 @@ hasMultiLineComments true
  */
 hasSemanticIndentation false
 
-lineCommentToken //
-multiLineCommentTokens /* */
-
-githubLanguage Objective-C++
- fileExtensions mm
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  TextureGroup Texture https://github.com/TextureGroup.png https://github.com/TextureGroup/Texture Objective-C++ #6866fb 5856 833 103 "Smooth asynchronous user interfaces for iOS apps."
- trendingProjectsCount 2
- type programming
- aceMode objectivec
- codemirrorMode clike
- codemirrorMimeType text/x-objectivec
- tmScope source.objc++
- aliases obj-c++ or objc++ or objectivec++
- repos 535669
 githubBigQuery Objective-C++
  repos 17925
  users 14642
 
-pygmentsHighlighter Objective-C++
- filename objective.py
- fileExtensions mm hh
 linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -96,19 +100,16 @@ linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
   #include "PlatformKeyboardEvent.h"
   #include "Pl
 
-rijuRepl https://riju.codes/objectivecpp
- example
-  #import <Foundation/Foundation.h>
-  
-  int main() {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    NSLog(@"Hello, world!");
-    [pool drain];
-    return 0;
-  }
-  
-
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions mm
+githubLanguage Objective-C++
+ fileExtensions mm
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  TextureGroup Texture https://github.com/TextureGroup.png https://github.com/TextureGroup/Texture Objective-C++ #6866fb 5856 833 103 "Smooth asynchronous user interfaces for iOS apps."
+ trendingProjectsCount 2
+ type programming
+ aceMode objectivec
+ codemirrorMode clike
+ codemirrorMimeType text/x-objectivec
+ tmScope source.objc++
+ aliases obj-c++ or objc++ or objectivec++
+ repos 535669

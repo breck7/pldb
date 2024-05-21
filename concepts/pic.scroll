@@ -1,18 +1,23 @@
 import ../code/conceptPage.scroll
+
 id pic
 name PIC
 appeared 1988
 tags textMarkup
+
+fileType text
+wordRank 2402
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell labs
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Pic_(programming_language)
  related diagram troff tex linux
@@ -24,16 +29,7 @@ wikipedia https://en.wikipedia.org/wiki/Pic_(programming_language)
  dailyPageViews 1
  appeared 1988
 
-githubLanguage Pic
- fileExtensions pic chem
- trendingProjectsCount 0
- type markup
- group Roff
- aceMode text
- codemirrorMode troff
- codemirrorMimeType text/troff
- tmScope source.pic
- repos 0
+hopl https://hopl.info/showlanguage.prx?exp=1007
 
 linguistGrammarRepo https://github.com/Alhadis/language-roff
  firstCommit 2016
@@ -56,12 +52,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-roff
   	.ps
   .cend
   
-
-hopl https://hopl.info/showlanguage.prx?exp=1007
-
-fileType text
-wordRank 2402
-centralPackageRepositoryCount 0
 
 isbndb 72
  year|publisher|title|authors|isbn13
@@ -137,3 +127,14 @@ isbndb 72
  2007|Newnes|Programming 16-bit Pic Microcontrollers In C - Cd-rom (embedded Technology)|Lucio Di Jasio|9780750682930
  1991|Unknown|Pic Microcontroller C Programming Language And Practical Examples Of Typical (with Cd)|Sun An Qing Bian Zhu|9787508369051
  2002-08-19|Ccs Inc|Picmicro Mcu C: An Introduction To Programming The Microchip Pic In Ccs C|Nigel Gardner|9780972418102
+
+githubLanguage Pic
+ fileExtensions pic chem
+ trendingProjectsCount 0
+ type markup
+ group Roff
+ aceMode text
+ codemirrorMode troff
+ codemirrorMimeType text/troff
+ tmScope source.pic
+ repos 0

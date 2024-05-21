@@ -1,18 +1,19 @@
 import ../code/conceptPage.scroll
+
 id yasl
 name Yet Another Scripting Language
 appeared 2017
 tags pl
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
 standsFor Yet Another Scripting Language
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+writtenIn c cpp logos bourne-shell markdown python yaml cmake
+repoStats
+ firstCommit 2017
+ commits 2202
+ committers 13
+ files 1202
+ newestCommit 2024
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
 
 example
  # simple program that iteratively calculates factorials
@@ -51,11 +52,10 @@ githubRepo https://github.com/yasl-lang/yasl
  description Bytecode Interpreter for Yet Another Scripting Language (YASL).
  issues 62
 
-repoStats
- firstCommit 2017
- commits 2202
- committers 13
- files 1202
- newestCommit 2024
+lineCommentToken #
 
-writtenIn c cpp logos bourne-shell markdown python yaml cmake
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false

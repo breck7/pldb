@@ -1,19 +1,21 @@
 import ../code/conceptPage.scroll
+
 id urweb
 name UrWeb
 appeared 2008
 tags pl
 website http://www.impredicative.com/ur/
 
-hasMultiLineComments true
- (* A comment
- *)
-hasComments true
- (* A comment
- *)
-hasSemanticIndentation false
-
-multiLineCommentTokens (* *)
+isOpenSource true
+writtenIn standard-ml python c lisp make bourne-shell m4 coq javascript nix css html tex lex markdown lua yaml sql
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 2844
+ committers 54
+ files 1329
+ newestCommit 2024
 
 githubRepo https://github.com/urweb/urweb
  firstCommit 2008
@@ -25,21 +27,16 @@ githubRepo https://github.com/urweb/urweb
  description The Ur/Web programming language
  issues 52
 
-repoStats
- firstCommit 2008
- commits 2844
- committers 54
- files 1329
- newestCommit 2024
+multiLineCommentTokens (* *)
 
-githubLanguage UrWeb
- fileExtensions ur urs
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ur
- aliases Ur/Web or Ur
- repos 83
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+
 githubBigQuery UrWeb
  repos 64
  users 62
@@ -131,8 +128,11 @@ linguistGrammarRepo https://github.com/gwalborn/UrWeb-Language-Definition.git
         </body>
       </xml>
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn standard-ml python c lisp make bourne-shell m4 coq javascript nix css html tex lex markdown lua yaml sql
+githubLanguage UrWeb
+ fileExtensions ur urs
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ur
+ aliases Ur/Web or Ur
+ repos 83

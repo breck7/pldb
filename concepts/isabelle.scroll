@@ -1,15 +1,28 @@
 import ../code/conceptPage.scroll
+
 id isabelle
 name Isabelle
 appeared 1986
 tags pl
-conceptDescription Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
 website http://isabelle.in.tum.de/
-reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+conceptDescription Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
+
+isOpenSource true
 fileExtensions ROOT
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom and Germany
 originCommunity University Of Cambridge && Technische Universität München
-domainName isabelle.in.tum.de
+reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+
+pygmentsHighlighter Isabelle
+ filename theorem.py
+ fileExtensions thy
+languageServerProtocolProject https://isabelle.in.tum.de/repos/isabelle/file/tip/src/Tools/VSCode
+ writtenIn scala
+
+multiLineCommentTokens (* *)
+booleanTokens True False
 
 hasMultiLineComments true
  (* A comment
@@ -22,9 +35,6 @@ hasBooleans true
 hasOctals true
 hasHexadecimals true
 hasBinaryNumbers true
-
-multiLineCommentTokens (* *)
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
  example
@@ -59,20 +69,12 @@ wikipedia https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
  dailyPageViews 71
  appeared 1986
 
-githubLanguage Isabelle
- fileExtensions thy
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.isabelle.theory
- repos 839
+domainName isabelle.in.tum.de
+
 githubBigQuery Isabelle
  repos 137
  users 115
 
-pygmentsHighlighter Isabelle
- filename theorem.py
- fileExtensions thy
 linguistGrammarRepo https://github.com/lsf37/Isabelle.tmbundle
  firstCommit 2014
  lastCommit 2018
@@ -127,14 +129,16 @@ linguistGrammarRepo https://github.com/lsf37/Isabelle.tmbundle
   
   end
   
-languageServerProtocolProject https://isabelle.in.tum.de/repos/isabelle/file/tip/src/Tools/VSCode
- writtenIn scala
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
+
+githubLanguage Isabelle
+ fileExtensions thy
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.isabelle.theory
+ repos 839
 
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId

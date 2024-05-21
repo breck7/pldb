@@ -1,24 +1,25 @@
 import ../code/conceptPage.scroll
+
 id katex
 name KaTeX
 appeared 2013
-tags textMarkup
 creators Emily Eisenberg
-conceptDescription The fastest math typesetting library for the web.
+tags textMarkup
 website https://katex.org
+conceptDescription The fastest math typesetting library for the web.
+
+isOpenSource true
+writtenIn javascript markdown yaml json svg html python css bourne-shell perl less dockerfile xml make tex
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 2342
+ committers 181
+ files 696
+ newestCommit 2024
 country United States
 originCommunity https://github.com/KaTeX
-domainName katex.org
- awisRank
-  2022 186120
-
-hasLineComments true
- % A comment
-hasComments true
- % A comment
-hasSemanticIndentation false
-
-lineCommentToken %
 
 example
  % \f is defined as #1f(#2) using the macro
@@ -36,19 +37,18 @@ githubRepo https://github.com/Khan/KaTeX
  description Fast math typesetting for the web.
  issues 341
 
-repoStats
- firstCommit 2013
- commits 2342
- committers 181
- files 696
- newestCommit 2024
+lineCommentToken %
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasSemanticIndentation false
+
+domainName katex.org
+ awisRank
+  2022 186120
 
 isbndb 0
 
 semanticScholar 0
-
-writtenIn javascript markdown yaml json svg html python css bourne-shell perl less dockerfile xml make tex

@@ -1,17 +1,23 @@
 import ../code/conceptPage.scroll
+
 id cython
 name Cython
 appeared 2007
 tags pl
 website http://cython.org
+
+isOpenSource true
+supersetOf python
+clocExtensions pxd pxi pyx
+fileType text
 documentation https://cython.readthedocs.io/en/latest/
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/sagemath
-domainName cython.org
- awisRank
-  2022 331707
 
-supersetOf python
+pygmentsHighlighter Cython
+ filename python.py
+ fileExtensions pyx pxd pxi
 
 hasOctals true
 hasHexadecimals true
@@ -50,39 +56,19 @@ wikipedia https://en.wikipedia.org/wiki/Cython
  revisionCount 234
  appeared 2007
 
-githubLanguage Cython
- fileExtensions pyx pxd pxi
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode python
- codemirrorMimeType text/x-cython
- tmScope source.cython
- aliases pyrex
- repos 698
+domainName cython.org
+ awisRank
+  2022 331707
+
 githubBigQuery Cython
  repos 580
  users 528
 
-pygmentsHighlighter Cython
- filename python.py
- fileExtensions pyx pxd pxi
 linguistGrammarRepo https://github.com/textmate/cython.tmbundle
  firstCommit 2009
  lastCommit 2017
  committerCount 2
  commitCount 8
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Cython: A Guide for Python Programmers|2014|Kurt W Smith|41956423|3.97|29|4
- Learning Cython Programming|2013|Philip Herron|26395008|3.91|11|3
- Learning Cython Programming - Second Edition||Philip Herron|49631594|0.0|0|0
- Learning Cython Programming Second Edition||Philip Herron|49565025|0.0|0|0
 
 isbndb 6
  year|publisher|title|authors|isbn13
@@ -93,8 +79,24 @@ isbndb 6
  22-02-2016|Packt Publishing|Learning Cython Programming|Philip Herron|9781785289125
  2016|Packt Publishing|Learning Cython Programming - Second Edition|Herron and Philip|9781783551675
 
+githubLanguage Cython
+ fileExtensions pyx pxd pxi
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode python
+ codemirrorMimeType text/x-cython
+ tmScope source.cython
+ aliases pyrex
+ repos 698
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2017|A Cython Interface to EPICS Channel Access for High-level Python Applications|10.18429/JACOW-PCAPAC2016-WEUIPLCO04|1|0|J. Chrin|9a750962554912a666a93ac4b4592958b2552c68
 
-clocExtensions pxd pxi pyx
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Cython: A Guide for Python Programmers|2014|Kurt W Smith|41956423|3.97|29|4
+ Learning Cython Programming|2013|Philip Herron|26395008|3.91|11|3
+ Learning Cython Programming - Second Edition||Philip Herron|49631594|0.0|0|0
+ Learning Cython Programming Second Edition||Philip Herron|49565025|0.0|0|0

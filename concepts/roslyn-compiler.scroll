@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id roslyn-compiler
 name Roslyn compiler
 appeared 2009
 tags compiler
 website https://docs.microsoft.com/dotnet/csharp/roslyn-sdk/
+
+writtenIn csharp visual-basic.net xml markdown yaml powershell xaml cadence-skill bourne-shell json diff xsd cpp f-sharp cmake csv dockerfile
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 111782
+ committers 989
+ files 18852
 country United States
 originCommunity https://github.com/dotnet
 
@@ -23,11 +32,3 @@ wikipedia https://en.wikipedia.org/wiki/Roslyn_(compiler)
  pageId 33644243
  dailyPageViews -1
  appeared 2010
-
-repoStats
- firstCommit 2014
- newestCommit 2024
- commits 111782
- committers 989
- files 18852
-writtenIn csharp visual-basic.net xml markdown yaml powershell xaml cadence-skill bourne-shell json diff xsd cpp f-sharp cmake csv dockerfile

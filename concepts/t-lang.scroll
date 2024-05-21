@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id t-lang
 name t-lang
 appeared 2019
-tags pl
 creators Justin Hu
+tags pl
+
+writtenIn c markdown yaml tex make racket
+repoStats
+ firstCommit 2019
+ commits 1164
+ committers 7
+ files 651
+ newestCommit 2022
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/ew0bjx/modules_in_t/
 
 githubRepo https://github.com/JustinHuPrime/TCompiler
@@ -15,12 +24,3 @@ githubRepo https://github.com/JustinHuPrime/TCompiler
  description T is a C-like, module based programming language
  forks 5
  issues 38
-
-repoStats
- firstCommit 2019
- commits 1164
- committers 7
- files 651
- newestCommit 2022
-
-writtenIn c markdown yaml tex make racket

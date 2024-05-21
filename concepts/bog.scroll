@@ -1,13 +1,34 @@
 import ../code/conceptPage.scroll
+
 id bog
 name bog
 appeared 2020
 tags pl
 conceptDescription Small, strongly typed, embeddable language.
+
+writtenIn zig markdown c yaml
+repoStats
+ firstCommit 2020
+ commits 442
+ committers 8
+ files 52
+ newestCommit 2023
 country Finland
 originCommunity https://github.com/Vexu/bog/issues
 
-writtenIn zig markdown c yaml
+example
+ let {print} = import "std.io"
+ let world = "world"
+ print(f"hello {world}!")
+
+githubRepo https://github.com/Vexu/bog
+ stars 254
+ forks 5
+ subscribers 10
+ created 2020
+ updated 2023
+ description Small, strongly typed, embeddable language.
+ issues 5
 
 hasPrintDebugging true
 hasAssignment true
@@ -61,24 +82,3 @@ hasAsyncAwait true
  print("in main")
  let res = await foo_frame
  print("main finished:", res)
-
-example
- let {print} = import "std.io"
- let world = "world"
- print(f"hello {world}!")
-
-githubRepo https://github.com/Vexu/bog
- stars 254
- forks 5
- subscribers 10
- created 2020
- updated 2023
- description Small, strongly typed, embeddable language.
- issues 5
-
-repoStats
- firstCommit 2020
- commits 442
- committers 8
- files 52
- newestCommit 2023

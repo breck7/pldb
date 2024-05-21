@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id wavefront-material
 name Wavefront Material
 appeared 1988
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://github.com/Alhadis/language-wavefront/blob/master/specs/mtl.rst
 
 example
@@ -10,14 +14,6 @@ example
  Ka 0.0000 0.2000 0.0000
  Kd 0.0000 0.8000 0.0000
  illum 1
-
-githubLanguage Wavefront Material
- fileExtensions mtl
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.wavefront.mtl
- repos 216089
 
 linguistGrammarRepo https://github.com/Alhadis/language-wavefront
  firstCommit 2016
@@ -39,5 +35,10 @@ linguistGrammarRepo https://github.com/Alhadis/language-wavefront
   	Kd 0.34509805 0.69411767 0.10588236
   	Ks 0.34999999 0.34999999 0.34999999
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Wavefront Material
+ fileExtensions mtl
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.wavefront.mtl
+ repos 216089

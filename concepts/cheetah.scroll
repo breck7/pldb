@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cheetah
 name CheetahTemplate
 appeared 2001
 tags template
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity cheetahtemplate.org
+
+pygmentsHighlighter Cheetah
+ filename templates.py
+ fileExtensions tmpl spt
 
 wikipedia https://en.wikipedia.org/wiki/CheetahTemplate
  related python html linux
@@ -15,11 +24,3 @@ wikipedia https://en.wikipedia.org/wiki/CheetahTemplate
  revisionCount 72
  dailyPageViews 7
  appeared 2001
-
-pygmentsHighlighter Cheetah
- filename templates.py
- fileExtensions tmpl spt
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

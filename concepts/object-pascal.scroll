@@ -1,54 +1,16 @@
 import ../code/conceptPage.scroll
+
 id object-pascal
 name Object Pascal
 appeared 1986
 tags pl
-documentation https://castle-engine.io/modern_pascal
-country United States
-originCommunity https://gitlab.com/groups/freepascal.org/fpc/-/issues
 
 visualParadigm false
-
-hasConstructors true
-hasOperatorOverloading true
-hasComments true
- (* This is a multi-line comments
-  and it will span multiple lines. *)
- { This is a single line comment in pascal }
-hasMultiLineComments true
- (* A comment
- *)
-hasLineComments false
-hasSemanticIndentation false
-hasStrings true
- 'Hello world'
-
-multiLineCommentTokens (* *)
-multiLineCommentTokens { }
-stringToken '
-
-wikipedia https://en.wikipedia.org/wiki/Object_Pascal
- example
-  type
-     THelloWorld = class
-        procedure Put;
-        begin
-           PrintLn('Hello, World!');
-        end
-     end;
-  
-  var HelloWorld := THelloWorld.Create;
-  
-  HelloWorld.Put;
- related x86-isa arm free-pascal powerpc sparc mips oxygene java javascript turbo-pascal pascal simula smalltalk csharp genie nim ios linux freebsd solaris ecmascript morfik visual-studio-editor android delphi
- summary Object Pascal refers to a branch of object-oriented derivatives of Pascal, mostly known as the primary programming language of Embarcadero Delphi.
- pageId 630175
- dailyPageViews 149
- created 2004
- backlinksCount 412
- revisionCount 548
- appeared 1986
- fileExtensions p pp pas
+fileType text
+documentation https://castle-engine.io/modern_pascal
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://gitlab.com/groups/freepascal.org/fpc/-/issues
 
 leachim6 Object Pascal
  filepath o/Object Pascal.pp
@@ -74,10 +36,48 @@ leachim6 Object Pascal
      HelloWorld.Free;
   end.
 
-hopl https://hopl.info/showlanguage.prx?exp=1170
+multiLineCommentTokens (* *)
+multiLineCommentTokens { }
+stringToken '
 
-fileType text
-centralPackageRepositoryCount 0
+hasConstructors true
+hasOperatorOverloading true
+hasComments true
+ (* This is a multi-line comments
+  and it will span multiple lines. *)
+ { This is a single line comment in pascal }
+hasMultiLineComments true
+ (* A comment
+ *)
+hasLineComments false
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+
+wikipedia https://en.wikipedia.org/wiki/Object_Pascal
+ example
+  type
+     THelloWorld = class
+        procedure Put;
+        begin
+           PrintLn('Hello, World!');
+        end
+     end;
+  
+  var HelloWorld := THelloWorld.Create;
+  
+  HelloWorld.Put;
+ related x86-isa arm free-pascal powerpc sparc mips oxygene java javascript turbo-pascal pascal simula smalltalk csharp genie nim ios linux freebsd solaris ecmascript morfik visual-studio-editor android delphi
+ summary Object Pascal refers to a branch of object-oriented derivatives of Pascal, mostly known as the primary programming language of Embarcadero Delphi.
+ pageId 630175
+ dailyPageViews 149
+ created 2004
+ backlinksCount 412
+ revisionCount 548
+ appeared 1986
+ fileExtensions p pp pas
+
+hopl https://hopl.info/showlanguage.prx?exp=1170
 
 isbndb 0
 

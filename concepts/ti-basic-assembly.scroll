@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id ti-basic-assembly
 name TI Program
 appeared 1970
 tags assembly
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://en.wikipedia.org/wiki/TI-BASIC
 
 example
@@ -70,6 +74,10 @@ example
  End
  Goto DLIST
 
+githubBigQuery TI Program
+ repos 7
+ users 4
+
 githubLanguage TI Program
  fileExtensions 8xp 8xk 8xktxt 8xptxt
  trendingProjectsCount 0
@@ -77,9 +85,3 @@ githubLanguage TI Program
  aceMode text
  tmScope none
  repos 1586478
-githubBigQuery TI Program
- repos 7
- users 4
-
-fileType text
-centralPackageRepositoryCount 0

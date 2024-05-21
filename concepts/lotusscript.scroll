@@ -1,19 +1,33 @@
 import ../code/conceptPage.scroll
+
 id lotusscript
 name LotusScript
 appeared 1996
 tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:LotusScript
+centralPackageRepositoryCount 0
 country United States
 originCommunity Lotus Development Corporation
+
+leachim6 LotusScript
+ filepath l/LotusScript.lss
+ fileExtensions lss
+ example
+  Sub Initialize
+  	Print "Hello World"
+  End Sub
+  
+
+printToken Print
+stringToken "
 
 hasComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-printToken Print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/LotusScript
  related visual-basic
@@ -24,30 +38,17 @@ wikipedia https://en.wikipedia.org/wiki/LotusScript
  backlinksCount 99
  revisionCount 50
 
-leachim6 LotusScript
- filepath l/LotusScript.lss
- fileExtensions lss
- example
-  Sub Initialize
-  	Print "Hello World"
-  End Sub
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:LotusScript
-
-tiobe LotusScript
 hopl https://hopl.info/showlanguage.prx?exp=3547
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- LotusScript for Dummies|1997|James G. Meade|2104599|5.00|1|0
- Inside LotusScript: A Complete Guide to Notes Programming|1997|Joe McGinn|4978354|3.00|2|0
- 60 Minute Guide to LotusScript 3 Programming for Lotus Notes 4|1996|Robert Beyer|3306848|4.00|1|0
+tiobe LotusScript
 
 isbndb 3
  year|publisher|title|authors|isbn13
  1997|Hungry Minds Inc,U.S.|Teach Yourself...: Lotusscript for Notes/Domino 4.6|Bill Kreisle and Rocky Oliver|9781558285606
  1999|Manning Publications|Practical LotusScript|Patton, Anthony|9781884777769
  1996|John Wiley & Sons Inc|60 Minute Guide To Lotusscript 3 Programming For Lotus Notes 4|Robert Beyer and Roland, Jr. Houle and Robert Perron|9781568847795
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ LotusScript for Dummies|1997|James G. Meade|2104599|5.00|1|0
+ Inside LotusScript: A Complete Guide to Notes Programming|1997|Joe McGinn|4978354|3.00|2|0
+ 60 Minute Guide to LotusScript 3 Programming for Lotus Notes 4|1996|Robert Beyer|3306848|4.00|1|0

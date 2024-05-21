@@ -1,9 +1,32 @@
 import ../code/conceptPage.scroll
+
 id xbasic
 name Xbasic
 appeared 1988
-tags pl
 creators Max Reason
+tags pl
+
+isOpenSource true
+rosettaCode http://www.rosettacode.org/wiki/Category:XBasic
+centralPackageRepositoryCount 0
+
+leachim6 XBasic
+ filepath x/XBasic.x
+ fileExtensions x
+ example
+  IMPORT "xst"
+  DECLARE FUNCTION  Hello ()
+  
+  FUNCTION  Hello ()
+   XstDisplayConsole ()
+   PRINT "Hello World"
+  END FUNCTION
+  END PROGRAM
+  
+
+lineCommentToken '
+printToken PRINT
+stringToken "
 
 hasLineComments true
  ' A comment
@@ -13,10 +36,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken '
-printToken PRINT
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Xbasic
  example
@@ -42,21 +61,3 @@ wikipedia https://en.wikipedia.org/wiki/Xbasic
  revisionCount 2
  dailyPageViews 1
  appeared 2002
-
-leachim6 XBasic
- filepath x/XBasic.x
- fileExtensions x
- example
-  IMPORT "xst"
-  DECLARE FUNCTION  Hello ()
-  
-  FUNCTION  Hello ()
-   XstDisplayConsole ()
-   PRINT "Hello World"
-  END FUNCTION
-  END PROGRAM
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:XBasic
-
-isOpenSource true
-centralPackageRepositoryCount 0

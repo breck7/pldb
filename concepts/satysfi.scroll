@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id satysfi
 name SATySFi
 appeared 2015
-tags textMarkup
 creators Takashi Suwa
+tags textMarkup
+
+writtenIn ocaml make markdown css bourne-shell svg yaml
+repoStats
+ firstCommit 2015
+ commits 3813
+ committers 56
+ files 329
+ newestCommit 2024
 country Japan
 originCommunity https://github.com/gfngfn/SATySFi/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/gfngfn/SATySFi
  updated 2022
  description A statically-typed, functional typesetting system
  issues 90
-
-repoStats
- firstCommit 2015
- commits 3813
- committers 56
- files 329
- newestCommit 2024
-
-writtenIn ocaml make markdown css bourne-shell svg yaml

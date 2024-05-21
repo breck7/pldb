@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id preforth
 name preforth
 appeared 2018
-tags pl
 creators Ulrich Hoffmann
-reference https://fosdem.org/2020/schedule/event/forth_new_synthesis/
+tags pl
+
+writtenIn forth make markdown dockerfile f-sharp bash
+repoStats
+ firstCommit 2018
+ commits 72
+ committers 2
+ files 22
+ newestCommit 2020
 country Germany
 originCommunity https://github.com/uho/preForth/issues
+reference https://fosdem.org/2020/schedule/event/forth_new_synthesis/
 
 githubRepo https://github.com/uho/preforth
  firstCommit 2018
@@ -18,13 +27,4 @@ githubRepo https://github.com/uho/preforth
  description a minimalistic Forth kernel that can bootstrap
  issues 14
 
-repoStats
- firstCommit 2018
- commits 72
- committers 2
- files 22
- newestCommit 2020
-
 semanticScholar 0
-
-writtenIn forth make markdown dockerfile f-sharp bash

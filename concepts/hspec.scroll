@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id hspec
 name Hspec
 appeared 1990
 tags pl
-conceptDescription Hspec is a testing framework for Haskell.
 website https://hspec.github.io/
+conceptDescription Hspec is a testing framework for Haskell.
+
 country Various
 originCommunity https://github.com/hspec
-domainName hspec.github.io
- awisRank
-  2022 4534652
 
+pygmentsHighlighter Hspec
+ filename haskell.py
 example
  -- file Spec.hs
  import Test.Hspec
@@ -29,5 +30,6 @@ example
      it "throws an exception if used with an empty list" $ do
        evaluate (head []) `shouldThrow` anyException
 
-pygmentsHighlighter Hspec
- filename haskell.py
+domainName hspec.github.io
+ awisRank
+  2022 4534652

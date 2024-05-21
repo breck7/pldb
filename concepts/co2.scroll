@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id co2
 name co2
 appeared 2016
-tags pl
 creators Dave Griffiths
+tags pl
+
+writtenIn scheme assembly-language bourne-shell python markdown
+repoStats
+ firstCommit 2016
+ commits 311
+ committers 4
+ files 98
+ newestCommit 2020
 country United States
 originCommunity dustmop.io
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/dustmop/co2
  description Lispy language for creating NES / Famicom software
  issues 2
  forks 6
-
-repoStats
- firstCommit 2016
- commits 311
- committers 4
- files 98
- newestCommit 2020
-
-writtenIn scheme assembly-language bourne-shell python markdown

@@ -1,8 +1,14 @@
 import ../code/conceptPage.scroll
+
 id metal
 name Metal
 appeared 2014
 tags library
+
+clocExtensions metal
+fileType text
+wordRank 1466
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apple
 
@@ -16,15 +22,6 @@ wikipedia https://en.wikipedia.org/wiki/Metal_(API)
  dailyPageViews 475
  appeared 2014
 
-githubLanguage Metal
- fileExtensions metal
- trendingProjectsCount 0
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.c++
- repos 79
 githubBigQuery Metal
  repos 256
  users 232
@@ -136,8 +133,12 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
       if (locId_new >= 0) forwardProjection[locId_new] = pixel;
   }
 
-fileType text
-wordRank 1466
-centralPackageRepositoryCount 0
-
-clocExtensions metal
+githubLanguage Metal
+ fileExtensions metal
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.c++
+ repos 79

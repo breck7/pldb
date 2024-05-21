@@ -1,25 +1,35 @@
 import ../code/conceptPage.scroll
+
 id fancy
 name Fancy
 appeared 2010
 tags pl
 website http://www.fancy-lang.org/
+
+isOpenSource true
+writtenIn ruby javascript bourne-shell yacc lex markdown css c html lisp yaml
+fileType text
+wordRank 6823
+rosettaCode http://www.rosettacode.org/wiki/Category:Fancy
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 2993
+ committers 17
+ files 332
+ newestCommit 2014
 country Germany
 originCommunity https://github.com/bakkdoor/fancy/issues
-domainName fancy-lang.org
- registered 2010
 
-hasComments true
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-hasFloats true
-hasIntegers true
-hasLineComments true
-
-printToken println
-stringToken "
+pygmentsHighlighter Fancy
+ filename ruby.py
+ fileExtensions fy fancypack
+leachim6 Fancy
+ filepath f/Fancy.fy
+ fileExtensions fy
+ example
+  "Hello World" println
+  
 
 githubRepo https://github.com/bakkdoor/fancy
  firstCommit 2010
@@ -31,14 +41,37 @@ githubRepo https://github.com/bakkdoor/fancy
  description Fancy is a dynamic, object-oriented programming language inspired by Smalltalk, Ruby, Io and Erlang that runs on the Rubinius VM.
  issues 5
 
-repoStats
- firstCommit 2010
- commits 2993
- committers 17
- files 332
- newestCommit 2014
+printToken println
+stringToken "
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
+hasLineComments true
 
 wikipedia https://en.wikipedia.org/wiki/Fancy_(programming_language)
+
+domainName fancy-lang.org
+ registered 2010
+
+githubBigQuery Fancy
+ repos 113
+ users 108
+
+linguistGrammarRepo https://github.com/fancy-lang/fancy-tmbundle
+ firstCommit 2010
+ lastCommit 2017
+ committerCount 6
+ commitCount 37
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1984|Reston Pub. Co|Fancy Programming In Ibm Pc Basic|Gabriel Cuellar|9780835918602
+ 1984|Workman Publishing Company|Digital Deli: The Comprehensive, User-Lovable Menu of Computer Lore, Culture, Lifestyles and Fancy|Lunch Group|9780894805912
 
 githubLanguage Fancy
  fileExtensions fy fancypack
@@ -48,35 +81,3 @@ githubLanguage Fancy
  aceMode text
  tmScope source.fancy
  repos 27
-githubBigQuery Fancy
- repos 113
- users 108
-
-pygmentsHighlighter Fancy
- filename ruby.py
- fileExtensions fy fancypack
-linguistGrammarRepo https://github.com/fancy-lang/fancy-tmbundle
- firstCommit 2010
- lastCommit 2017
- committerCount 6
- commitCount 37
-
-leachim6 Fancy
- filepath f/Fancy.fy
- fileExtensions fy
- example
-  "Hello World" println
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Fancy
-
-fileType text
-wordRank 6823
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 1984|Reston Pub. Co|Fancy Programming In Ibm Pc Basic|Gabriel Cuellar|9780835918602
- 1984|Workman Publishing Company|Digital Deli: The Comprehensive, User-Lovable Menu of Computer Lore, Culture, Lifestyles and Fancy|Lunch Group|9780894805912
-
-writtenIn ruby javascript bourne-shell yacc lex markdown css c html lisp yaml

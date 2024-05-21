@@ -1,17 +1,26 @@
 import ../code/conceptPage.scroll
+
 id 05ab1e
 name 05AB1E
 appeared 2015
 tags esolang
 
-hasPrintDebugging true
-
-printToken "
+writtenIn elixir markdown yaml
+repoStats
+ firstCommit 2015
+ commits 871
+ committers 28
+ files 49
+ newestCommit 2022
 
 example
  PUSH 4
  PUSH 5
  MULTIPLY
+leachim6 05AB1E
+ filepath #/05AB1E
+ example
+  "Hello World
 
 githubRepo https://github.com/Adriandmen/05AB1E
  firstCommit 2015
@@ -23,16 +32,6 @@ githubRepo https://github.com/Adriandmen/05AB1E
  description A concise stack-based golfing language
  issues 29
 
-repoStats
- firstCommit 2015
- commits 871
- committers 28
- files 49
- newestCommit 2022
+printToken "
 
-leachim6 05AB1E
- filepath #/05AB1E
- example
-  "Hello World
-
-writtenIn elixir markdown yaml
+hasPrintDebugging true

@@ -1,16 +1,29 @@
 import ../code/conceptPage.scroll
+
 id robotframework
 name RobotFramework
 appeared 2013
 tags pl
 website http://robotframework.org/
+
+isOpenSource true
+writtenIn robotframework python restructuredtext javascript xml json yaml html css xsd svg make
+clocExtensions robot
+fileType text
 documentation https://robotframework.org/robotframework/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 14707
+ committers 222
+ files 2413
+ newestCommit 2024
 country Finland
 originCommunity Robot Framework ry
-domainName robotframework.org
- registered 2007
- awisRank
-  2022 146514
+
+pygmentsHighlighter RobotFramework
+ filename robotframework.py
+ fileExtensions robot resource
 
 githubRepo https://github.com/robotframework/robotframework
  stars 7076
@@ -22,27 +35,15 @@ githubRepo https://github.com/robotframework/robotframework
  issues 237
  firstCommit 2013
 
-repoStats
- firstCommit 2013
- commits 14707
- committers 222
- files 2413
- newestCommit 2024
+domainName robotframework.org
+ registered 2007
+ awisRank
+  2022 146514
 
-githubLanguage RobotFramework
- fileExtensions robot
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope text.robot
- repos 7602
 githubBigQuery RobotFramework
  repos 515
  users 447
 
-pygmentsHighlighter RobotFramework
- filename robotframework.py
- fileExtensions robot resource
 linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
  firstCommit 2012
  lastCommit 2016
@@ -85,11 +86,12 @@ linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
       Result should be    ${result}
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage RobotFramework
+ fileExtensions robot
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope text.robot
+ repos 7602
 
 semanticScholar 0
-
-clocExtensions robot
-writtenIn robotframework python restructuredtext javascript xml json yaml html css xsd svg make

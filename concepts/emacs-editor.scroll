@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id emacs-editor
 name Emacs
 appeared 1976
-tags editor
 creators Guy Steele and Dave Moon
-reference https://www.jwz.org/doc/emacs-timeline.html
+tags editor
+
+isOpenSource true
+fileType na
+packageRepository https://melpa.org/
 country Various
 originCommunity Free Software Foundation, Inc.
+reference https://www.jwz.org/doc/emacs-timeline.html
+
+subreddit https://reddit.com/r/emacs
+ memberCount
+  2022 60293
 
 wikipedia https://en.wikipedia.org/wiki/Emacs
  related lisp c org teco vi-editor unix java emacs-lisp linux rust ruby lua common-lisp swi-prolog spice-lisp lispworks haskell eclipse-editor sublime-editor latex ghostscript perl python vim-editor isbn
@@ -17,12 +26,3 @@ wikipedia https://en.wikipedia.org/wiki/Emacs
  revisionCount 1936
  dailyPageViews 605
  appeared 1976
-
-subreddit https://reddit.com/r/emacs
- memberCount
-  2022 60293
-
-packageRepository https://melpa.org/
-
-fileType na
-isOpenSource true

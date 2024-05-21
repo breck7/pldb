@@ -1,17 +1,32 @@
 import ../code/conceptPage.scroll
+
 id f
 name F
 appeared 1996
 tags pl
+
+fileType text
+wordRank 213
+rosettaCode http://www.rosettacode.org/wiki/Category:F
+centralPackageRepositoryCount 0
 country United States
 originCommunity The Fortran Company
+
+leachim6 F
+ filepath f/F.f95
+ fileExtensions f95
+ example
+  program hello
+     print *, "Hello World"
+  end program hello
+  
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/F_(programming_language)
  example
@@ -26,18 +41,4 @@ wikipedia https://en.wikipedia.org/wiki/F_(programming_language)
  revisionCount 59
  dailyPageViews 52
 
-leachim6 F
- filepath f/F.f95
- fileExtensions f95
- example
-  program hello
-     print *, "Hello World"
-  end program hello
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:F
-
 hopl https://hopl.info/showlanguage.prx?exp=3460
-
-fileType text
-wordRank 213
-centralPackageRepositoryCount 0

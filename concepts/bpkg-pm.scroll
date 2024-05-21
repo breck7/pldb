@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id bpkg-pm
 name bpkg-pm
 appeared 2017
-tags packageManager
 creators Joseph Werle
+tags packageManager
 website http://www.bpkg.sh/
+packageCount 26
+forLanguages bash
+
+writtenIn bourne-shell markdown json make yaml bash
+repoStats
+ firstCommit 2014
+ commits 370
+ committers 36
+ files 58
+ newestCommit 2023
 country Various
 originCommunity The bpkg Team
-domainName bpkg.sh
- registered 2017
- awisRank
-  2022 6185536
 
 githubRepo https://github.com/bpkg/bpkg
  firstCommit 2014
@@ -22,13 +29,7 @@ githubRepo https://github.com/bpkg/bpkg
  description Lightweight bash package manager
  issues 31
 
-packageCount 26
-forLanguages bash
-
-repoStats
- firstCommit 2014
- commits 370
- committers 36
- files 58
- newestCommit 2023
-writtenIn bourne-shell markdown json make yaml bash
+domainName bpkg.sh
+ registered 2017
+ awisRank
+  2022 6185536

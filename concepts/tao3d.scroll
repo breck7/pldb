@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id tao3d
 name tao3d
 appeared 2003
-tags pl
 creators Christophe de Dinechin
-conceptDescription Tao3D is a programming language for interactive 3D.
+tags pl
 website http://tao3d.sourceforge.net/
-domainName tao3d.sourceforge.net
+conceptDescription Tao3D is a programming language for interactive 3D.
 
+writtenIn cpp ini json bourne-shell qt svg html xml bash assembly-language perl yaml sed c f-sharp make markdown objective-cpp csv protobuf typescript
 relatedConcepts xl-lang
+repoStats
+ firstCommit 2003
+ commits 9365
+ committers 26
+ files 1649
+ newestCommit 2019
 
 example
  import SeasonsGreetingsTheme
@@ -26,6 +33,7 @@ example
      * "Bullet points"
      ** "More bullet points"
      *** "Deeper"
+twitter https://twitter.com/taodyne
 
 githubRepo https://github.com/c3d/tao3D
  firstCommit 2003
@@ -37,13 +45,4 @@ githubRepo https://github.com/c3d/tao3D
  description The Art of 3D, a new language for dynamic document description of real-time 3D animations
  issues 5
 
-repoStats
- firstCommit 2003
- commits 9365
- committers 26
- files 1649
- newestCommit 2019
-
-twitter https://twitter.com/taodyne
-
-writtenIn cpp ini json bourne-shell qt svg html xml bash assembly-language perl yaml sed c f-sharp make markdown objective-cpp csv protobuf typescript
+domainName tao3d.sourceforge.net

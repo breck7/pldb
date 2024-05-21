@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id scm
 name SCM
 appeared 1990
-tags pl
 creators Aubrey Jaffer
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
 
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/SCM_(Scheme_implementation)
  pageId 8561958
  dailyPageViews 11
  appeared 1990
-
-isOpenSource true
-centralPackageRepositoryCount 0

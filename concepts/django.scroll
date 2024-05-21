@@ -1,10 +1,25 @@
 import ../code/conceptPage.scroll
+
 id django
 name Django
 appeared 2005
 tags library
+
+isOpenSource true
+fileType text
+codeMirror django
+centralPackageRepositoryCount 0
 country United States
 originCommunity Django Software Foundation
+
+leachim6 Django
+ filepath d/Django.py
+ fileExtensions py
+ example
+  from django.http import HttpResponse
+  
+  def index(request):
+      return HttpResponse("Hello World")
 
 wikipedia https://en.wikipedia.org/wiki/Django_(web_framework)
  related python regex html xml json nginx-config postgresql mysql sqlite mongodb jython ruby perl php erlang isbn
@@ -16,22 +31,8 @@ wikipedia https://en.wikipedia.org/wiki/Django_(web_framework)
  revisionCount 1048
  appeared 2003
 
-codeMirror django
 linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
  firstCommit 2005
  lastCommit 2014
  committerCount 6
  commitCount 40
-
-leachim6 Django
- filepath d/Django.py
- fileExtensions py
- example
-  from django.http import HttpResponse
-  
-  def index(request):
-      return HttpResponse("Hello World")
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

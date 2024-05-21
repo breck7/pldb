@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id bython
 name Bython
 appeared 2016
 tags pl
 conceptDescription Python with braces. Because python is awesome, but whitespace is awful.
+
+writtenIn python markdown make bash
+repoStats
+ firstCommit 2016
+ commits 170
+ committers 4
+ files 33
+ newestCommit 2018
 country Norway
 
-hasPrintDebugging true
-
-printToken print
-
+rijuRepl https://riju.codes/bython
+ example
+  print("Hello, world!")
 example
  def print_message(num_of_times) {
      for i in range(num_of_times) {
@@ -31,15 +39,6 @@ githubRepo https://github.com/mathialo/bython
  description Python with braces. Because python is awesome, but whitespace is awful.
  issues 17
 
-repoStats
- firstCommit 2016
- commits 170
- committers 4
- files 33
- newestCommit 2018
+printToken print
 
-rijuRepl https://riju.codes/bython
- example
-  print("Hello, world!")
-
-writtenIn python markdown make bash
+hasPrintDebugging true

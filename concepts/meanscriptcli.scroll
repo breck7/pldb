@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id meanscriptcli
 name MeanscriptCLI
 appeared 2020
-tags pl
 creators jussehoo
+tags pl
+
+writtenIn markdown
+repoStats
+ firstCommit 2020
+ commits 93
+ committers 5
+ files 1
+ newestCommit 2023
 country Unknown
 originCommunity https://github.com/Meanwhale/MeanscriptCLI/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/Meanwhale/MeanscriptCLI
  updated 2021
  description Command line interface for Meanscript
  issues 0
-
-repoStats
- firstCommit 2020
- commits 93
- committers 5
- files 1
- newestCommit 2023
-
-writtenIn markdown

@@ -1,12 +1,42 @@
 import ../code/conceptPage.scroll
+
 id snobol
 name SNOBOL
 appeared 1962
-tags pl
 creators David J. Farber and Ralph E. Griswold
-reference https://archives.lib.umn.edu/repositories/3/resources/302
+tags pl
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/snobol
+rosettaCode http://www.rosettacode.org/wiki/Category:Snobol
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell Telephone Laboratories
+reference https://archives.lib.umn.edu/repositories/3/resources/302
+
+helloWorldCollection SNOBOL
+ * Hello World in Snobol
+ 
+         OUTPUT = "Hello World!"
+ 
+pygmentsHighlighter Snobol
+ filename snobol.py
+ fileExtensions snobol
+rijuRepl https://riju.codes/snobol
+ example
+   OUTPUT = "Hello, world!"
+  END
+  
+leachim6 SNOBOL
+ filepath s/SNOBOL
+ example
+            OUTPUT = "Hello World"
+  END
+  
+
+lineCommentToken *
+printToken OUTPUT
+stringToken "
 
 hasLineComments true
  * A comment
@@ -16,10 +46,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken *
-printToken OUTPUT
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/SNOBOL
  example
@@ -42,43 +68,7 @@ wikipedia https://en.wikipedia.org/wiki/SNOBOL
  revisionCount 322
  appeared 1962
 
-antlr https://github.com/antlr/grammars-v4/tree/master/snobol
-pygmentsHighlighter Snobol
- filename snobol.py
- fileExtensions snobol
-
-helloWorldCollection SNOBOL
- * Hello World in Snobol
- 
-         OUTPUT = "Hello World!"
- 
-leachim6 SNOBOL
- filepath s/SNOBOL
- example
-            OUTPUT = "Hello World"
-  END
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Snobol
-
-rijuRepl https://riju.codes/snobol
- example
-   OUTPUT = "Hello, world!"
-  END
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=171
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- The Snobol 4 Programming Language||Ralph E. Griswold|4019527|3.80|5|1
- The Snobol 4 Programming Language|1971|Andrew Clues|766467|3.00|1|0
- Snobol Programming for the Humanities|1985|Susan Hockey|5060467|4.00|1|0
- The Programmer's Introduction to Snobol|1976|Ward Douglas Maurer|6455209|0.0|0|0
- Snobol: An Introduction to Programming (Hayden computer programming series)|1975|Peter R Newsted|13307178|2.50|2|1
- Encyclopedia of Microcomputers: Volume 15 - Reporting on Parallel Software to Snobol||Allen Kent|42221988|0.0|0|0
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -94,3 +84,12 @@ semanticScholar 4
  1968|The SNOBOL 4 programming language|10.2307/2004908|57|1|R. Griswold|f5022fa2514ea495dd2da3f0ea81649ba1ac1faa
  1978|A history of the SNOBOL programming languages|10.1145/960118.808393|4|0|R. Griswold|4249a854acc44740b5f7d45782bfa6c63eb13286
  1978|ACM SIGPLAN history of programming languages conference SNOBOL language summary|10.1145/960118.808392|2|0|Michael D. Shapiro|d13d6d105ce3b5aaad7e1af1d6b85eb9d207b51d
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Snobol 4 Programming Language||Ralph E. Griswold|4019527|3.80|5|1
+ The Snobol 4 Programming Language|1971|Andrew Clues|766467|3.00|1|0
+ Snobol Programming for the Humanities|1985|Susan Hockey|5060467|4.00|1|0
+ The Programmer's Introduction to Snobol|1976|Ward Douglas Maurer|6455209|0.0|0|0
+ Snobol: An Introduction to Programming (Hayden computer programming series)|1975|Peter R Newsted|13307178|2.50|2|1
+ Encyclopedia of Microcomputers: Volume 15 - Reporting on Parallel Software to Snobol||Allen Kent|42221988|0.0|0|0

@@ -1,20 +1,34 @@
 import ../code/conceptPage.scroll
+
 id gnuplot
 name Gnuplot
 appeared 1986
 tags pl
 website http://gnuplot.info/
+
+isOpenSource true
+tryItOnline gnuplot
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Gnuplot
+quineRelay Gnuplot
+centralPackageRepositoryCount 0
+ubuntuPackage gnuplot
 country Various
 originCommunity https://sourceforge.net/p/gnuplot/mailman/
-domainName gnuplot.info
- registered 2002
- awisRank
-  2022 330434
 
-hasPrintDebugging true
+pygmentsHighlighter Gnuplot
+ filename graphics.py
+ fileExtensions plot plt
+rijuRepl https://riju.codes/gnuplot
+ example
+  print "Hello, world!"
+  
 
 printToken print
 
+hasPrintDebugging true
+
+jupyterKernel https://github.com/has2k1/gnuplot_kernel
 wikipedia https://en.wikipedia.org/wiki/Gnuplot
  example
   set title "Some Math Functions"
@@ -31,21 +45,15 @@ wikipedia https://en.wikipedia.org/wiki/Gnuplot
  revisionCount 404
  appeared 1986
 
-githubLanguage Gnuplot
- fileExtensions gp gnu gnuplot p plot plt
- trendingProjectsCount 0
- type programming
- interpreters gnuplot
- aceMode text
- tmScope source.gnuplot
- repos 2276
+domainName gnuplot.info
+ registered 2002
+ awisRank
+  2022 330434
+
 githubBigQuery Gnuplot
  repos 3204
  users 2915
 
-pygmentsHighlighter Gnuplot
- filename graphics.py
- fileExtensions plot plt
 linguistGrammarRepo https://github.com/mattfoster/gnuplot-tmbundle
  firstCommit 2007
  lastCommit 2015
@@ -69,25 +77,19 @@ linguistGrammarRepo https://github.com/mattfoster/gnuplot-tmbundle
   plot 'rates100.dat' pt 7 notitle
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Gnuplot
-quineRelay Gnuplot
-
-rijuRepl https://riju.codes/gnuplot
- example
-  print "Hello, world!"
-  
-tryItOnline gnuplot
-
-ubuntuPackage gnuplot
-jupyterKernel https://github.com/has2k1/gnuplot_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2012|Packt Publishing|gnuplot Cookbook|Phillips, Lee|9781849517249
  2009|Manning Publications|Gnuplot in Action: Understanding Data with Graphs|Philipp K. Janert|9781933988399
  2012|Packt Publishing|gnuplot Cookbook|Phillips, Lee|9781849517256
+
+githubLanguage Gnuplot
+ fileExtensions gp gnu gnuplot p plot plt
+ trendingProjectsCount 0
+ type programming
+ interpreters gnuplot
+ aceMode text
+ tmScope source.gnuplot
+ repos 2276
 
 semanticScholar 0

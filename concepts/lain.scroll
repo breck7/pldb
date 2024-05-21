@@ -1,21 +1,14 @@
 import ../code/conceptPage.scroll
+
 id lain
 name lain
 appeared 2017
 tags pl
-conceptDescription Lain is both an inline scripting library that allows for complex templating of the wiki pages, and a programming language that exists at the core of the engine to load and parse content for each article.
 website https://wiki.xxiivv.com/#lain
+conceptDescription Lain is both an inline scripting library that allows for complex templating of the wiki pages, and a programming language that exists at the core of the engine to load and parse content for each article.
+
 country Unknown
 originCommunity https://github.com/XXIIVV
-domainName wiki.xxiivv.com
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
 
 example
  (add (sub 5 3) 2)                         ; Basic Math
@@ -23,3 +16,13 @@ example
  (def obj {:foo "bar"})                    ; Creating object
  (join obj:foo)                            ; Reading object parameters
  (def _sidebar (dom:create "sidebar"))     ; Creating DOM elements
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+domainName wiki.xxiivv.com

@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id csound
 name Csound
 appeared 1985
 tags pl
 website http://csound.com
+
+isOpenSource true
 fileExtensions csd sco
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
-domainName csound.com
- registered 2008
- awisRank
-  2022 1392357
+
+pygmentsHighlighter Csound Document
+ filename csound.py
+ fileExtensions csd
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
@@ -18,8 +25,6 @@ hasComments true
  ; A comment
 hasSemanticIndentation false
 hasMultiLineComments true
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Csound
  example
@@ -57,21 +62,17 @@ wikipedia https://en.wikipedia.org/wiki/Csound
  dailyPageViews 60
  appeared 1985
 
-githubLanguage Csound
- fileExtensions orc udo
- trendingProjectsCount 0
- type programming
- aceMode csound_orchestra
- tmScope source.csound
- aliases csound-orc
- repos 50
+hopl https://hopl.info/showlanguage.prx?exp=5383
+
+domainName csound.com
+ registered 2008
+ awisRank
+  2022 1392357
+
 githubBigQuery Csound
  repos 65
  users 57
 
-pygmentsHighlighter Csound Document
- filename csound.py
- fileExtensions csd
 linguistGrammarRepo https://github.com/nwhetsell/language-csound
  firstCommit 2015
  lastCommit 2018
@@ -94,24 +95,27 @@ linguistGrammarRepo https://github.com/nwhetsell/language-csound
   endin
   
 
-hopl https://hopl.info/showlanguage.prx?exp=5383
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2000|The MIT Press|The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing,and Programming||9780262522618
+ 2000||The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing, and Programming|Richard Charles Boulanger|9780585343426
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Csound
+ fileExtensions orc udo
+ trendingProjectsCount 0
+ type programming
+ aceMode csound_orchestra
+ tmScope source.csound
+ aliases csound-orc
+ repos 50
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Ubiquitous Music Ecosystems: Faust Programs in Csound|10.1007/978-3-319-11152-0_7|10|0|Victor Lazzarini and Damián Keller and M. Pimenta and J. Timoney|ce87ec294c43104056d1635bb2720ff9ec008479
+ 2017|Supporting an Object-Oriented Approach to Unit Generator Development: The Csound Plugin Opcode Framework|10.3390/APP7100970|6|0|Victor Lazzarini|096d54246c58341365cdbcf7870d580e98da5737
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing, and Programming|2000|Richard Boulanger|154554|4.02|46|2
  Programming digital music with Csound|2014|Peter Fitton|39833906|4.00|1|0
  Csound: A Sound and Music Computing System||Victor Lazzarini|51915844|5.00|2|0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 2000|The MIT Press|The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing,and Programming||9780262522618
- 2000||The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing, and Programming|Richard Charles Boulanger|9780585343426
-
-semanticScholar 2
- year|title|doi|citations|influentialCitations|authors|paperId
- 2015|Ubiquitous Music Ecosystems: Faust Programs in Csound|10.1007/978-3-319-11152-0_7|10|0|Victor Lazzarini and Damián Keller and M. Pimenta and J. Timoney|ce87ec294c43104056d1635bb2720ff9ec008479
- 2017|Supporting an Object-Oriented Approach to Unit Generator Development: The Csound Plugin Opcode Framework|10.3390/APP7100970|6|0|Victor Lazzarini|096d54246c58341365cdbcf7870d580e98da5737

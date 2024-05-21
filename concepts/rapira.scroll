@@ -1,20 +1,38 @@
 import ../code/conceptPage.scroll
+
 id rapira
 name Rapira
 appeared 1987
-tags pl
 creators Andrey Ershov
+tags pl
 website http://freeduke33.github.io/rerap2
-reference http://ershov.iis.nsk.su/ru/node/772586
-country Russia
 nativeLanguage Russian
 
-hasPrintDebugging true
-hasStrings true
- "Hello world"
+isOpenSource true
+writtenIn cpp make markdown
+tryItOnline rapira
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Rapira
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 21
+ committers 4
+ files 147
+ newestCommit 2021
+country Russia
+reference http://ershov.iis.nsk.su/ru/node/772586
 
-printToken output:
-stringToken "
+rijuRepl https://riju.codes/rapira
+ example
+  вывод: "Hello, world!"
+  
+leachim6 Rapira
+ filepath r/Rapira.rap
+ fileExtensions rap
+ example
+  output: "Hello World";
+  
 
 githubRepo https://github.com/freeduke33/rerap2
  stars 22
@@ -26,12 +44,12 @@ githubRepo https://github.com/freeduke33/rerap2
  description ReRap2 is an interpreter for the Russian and English dialects of the Rapira programming language.
  issues 0
 
-repoStats
- firstCommit 2015
- commits 21
- committers 4
- files 147
- newestCommit 2021
+printToken output:
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Rapira
  example
@@ -46,26 +64,6 @@ wikipedia https://en.wikipedia.org/wiki/Rapira
  backlinksCount 10
  revisionCount 59
 
-leachim6 Rapira
- filepath r/Rapira.rap
- fileExtensions rap
- example
-  output: "Hello World";
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Rapira
-
-rijuRepl https://riju.codes/rapira
- example
-  вывод: "Hello, world!"
-  
-tryItOnline rapira
-
 hopl https://hopl.info/showlanguage.prx?exp=5224
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn cpp make markdown

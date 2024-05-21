@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id open-shading-language
 name Open Shading Language
 appeared 2008
 tags pl
 website http://openshadinglanguage.com
+
+writtenIn python cpp xml markdown cmake bash cuda yaml tex yacc html lex make d css glsl restructuredtext javascript
+repoStats
+ firstCommit 2008
+ commits 4171
+ committers 87
+ files 3147
+ newestCommit 2024
 country Canada
 originCommunity Sony Pictures Imageworks Inc
-domainName openshadinglanguage.com
- registered 2012
 
 githubRepo https://github.com/imageworks/openshadinglanguage
  firstCommit 2008
@@ -19,19 +26,13 @@ githubRepo https://github.com/imageworks/openshadinglanguage
  description Advanced shading language for production GI renderers
  issues 36
 
-repoStats
- firstCommit 2008
- commits 4171
- committers 87
- files 3147
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Open_Shading_Language
  summary Open Shading Language (OSL) is a shading language developed by Sony Pictures Imageworks for use in its Arnold Renderer. It is also supported by Otoy's Octane Render, V-Ray 3, and by the Cycles render engine in Blender (starting with Blender 2.65). OSL's surface and volume shaders define how surfaces or volumes scatter light in a way that allows for importance sampling; thus, it is well suited for physically-based renderers that support ray tracing and global illumination.
  backlinksCount 15
  pageId 43647388
  dailyPageViews 24
 
-isbndb 0
+domainName openshadinglanguage.com
+ registered 2012
 
-writtenIn python cpp xml markdown cmake bash cuda yaml tex yacc html lex make d css glsl restructuredtext javascript
+isbndb 0

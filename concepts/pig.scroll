@@ -1,12 +1,40 @@
 import ../code/conceptPage.scroll
+
 id pig
 name Pig Latin
 appeared 2008
 tags queryLanguage
 website https://pig.apache.org/
 aka piglatin
+
+isOpenSource true
+clocExtensions pig
+fileType text
+wordRank 7993
+codeMirror pig
+centralPackageRepositoryCount 0
 originCommunity Apache
-domainName pig.apache.org
+
+pygmentsHighlighter Pig
+ filename jvm.py
+ fileExtensions pig
+example
+ input_lines = LOAD '/tmp/word.txt' AS (line:chararray);
+ words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+ filtered_words = FILTER words BY word MATCHES '\\w+';
+ word_groups = GROUP filtered_words BY word;
+ word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
+ ordered_word_count = ORDER word_count BY count DESC;
+ STORE ordered_word_count INTO '/tmp/results.txt';
+leachim6 Pig
+ filepath p/Pig.pig
+ fileExtensions pig
+ example
+  Hello WorldPIGHello World
+  
+
+lineCommentToken --
+multiLineCommentTokens /* */
 
 hasLineComments true
  -- A comment
@@ -22,18 +50,6 @@ hasFloats true
  -- [0-9]*\.[0-9]+(e[0-9]+)?[fd]?
 hasIntegers true
  -- [0-9]+L?
-
-lineCommentToken --
-multiLineCommentTokens /* */
-
-example
- input_lines = LOAD '/tmp/word.txt' AS (line:chararray);
- words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
- filtered_words = FILTER words BY word MATCHES '\\w+';
- word_groups = GROUP filtered_words BY word;
- word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
- ordered_word_count = ORDER word_count BY count DESC;
- STORE ordered_word_count INTO '/tmp/results.txt';
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Pig
  example
@@ -64,21 +80,12 @@ wikipedia https://en.wikipedia.org/wiki/Apache_Pig
  revisionCount 102
  appeared 2008
 
-githubLanguage PigLatin
- fileExtensions pig
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.pig_latin
- repos 1347
+domainName pig.apache.org
+
 githubBigQuery PigLatin
  repos 606
  users 535
 
-codeMirror pig
-pygmentsHighlighter Pig
- filename jvm.py
- fileExtensions pig
 linguistGrammarRepo https://github.com/goblindegook/sublime-text-pig-latin
  firstCommit 2014
  lastCommit 2016
@@ -98,20 +105,14 @@ linguistGrammarRepo https://github.com/goblindegook/sublime-text-pig-latin
   
   
 
-leachim6 Pig
- filepath p/Pig.pig
- fileExtensions pig
- example
-  Hello WorldPIGHello World
-  
-
-fileType text
-wordRank 7993
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage PigLatin
+ fileExtensions pig
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pig_latin
+ repos 1347
 
-clocExtensions pig
+semanticScholar 0

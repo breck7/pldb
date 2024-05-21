@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ucl
 name UCL
 appeared 2013
 tags dataNotation
 standsFor Universal Configuration Language
+
+isOpenSource true
+writtenIn json c rescript bourne-shell python make markdown m4 cmake yaml haskell lua cpp
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 1125
+ committers 57
+ files 171
+ newestCommit 2024
 
 example
  param = value;
@@ -36,17 +48,4 @@ githubRepo https://github.com/vstakhov/libucl
  description Universal configuration library parser
  issues 67
 
-repoStats
- firstCommit 2013
- commits 1125
- committers 57
- files 171
- newestCommit 2024
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn json c rescript bourne-shell python make markdown m4 cmake yaml haskell lua cpp

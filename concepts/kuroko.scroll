@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id kuroko
 name Kuroko
 appeared 2020
-tags pl
 creators K. Lange
+tags pl
 website https://kuroko-lang.github.io/
+
+writtenIn c markdown python yaml css json make html xml bourne-shell
+repoStats
+ firstCommit 2020
+ commits 1421
+ committers 4
+ files 473
+ newestCommit 2024
 originCommunity https://github.com/kuroko-lang
 
 githubRepo https://github.com/kuroko-lang/kuroko
@@ -16,12 +25,3 @@ githubRepo https://github.com/kuroko-lang/kuroko
  updated 2022
  description Dialect of Python with explicit variable declaration and block scoping, with a lightweight and easy-to-embed bytecode compiler and interpreter.
  issues 5
-
-repoStats
- firstCommit 2020
- commits 1421
- committers 4
- files 473
- newestCommit 2024
-
-writtenIn c markdown python yaml css json make html xml bourne-shell

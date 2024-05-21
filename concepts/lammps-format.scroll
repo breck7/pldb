@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id lammps-format
 name Large-scale Atomic/Molecular Massively Parallel Simulator Format
 appeared 1995
 tags application
-reference https://en.wikipedia.org/wiki/LAMMPS
 standsFor Large-scale Atomic/Molecular Massively Parallel Simulator Format
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Sandia National Laboratories && Temple University
+reference https://en.wikipedia.org/wiki/LAMMPS
 
 example
  # 2d LJ crack simulation
@@ -86,5 +89,3 @@ example
  #dump_modify  3 pad 4
  
  run   5000
-
-centralPackageRepositoryCount 0

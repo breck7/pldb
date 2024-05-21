@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id livr
 name Livr
 appeared 2012
-tags dataValidationLanguage
 creators Viktor Turskyi
+tags dataValidationLanguage
 website https://livr-spec.org/
 webRepl http://webbylab.github.io/livr-playground/
 standsFor Language Independent Validation Rules
+
+writtenIn json markdown svg less
+repoStats
+ firstCommit 2012
+ commits 251
+ committers 15
+ files 264
+ newestCommit 2022
 country United States
 originCommunity https://github.com/koorchik/LIVR/issues
-domainName livr-spec.org
- registered 2013
 
 example
  {
@@ -32,13 +39,7 @@ githubRepo https://github.com/koorchik/LIVR
  description Language Independent Validation Rules Specification
  issues 21
 
-repoStats
- firstCommit 2012
- commits 251
- committers 15
- files 264
- newestCommit 2022
+domainName livr-spec.org
+ registered 2013
 
 semanticScholar 0
-
-writtenIn json markdown svg less

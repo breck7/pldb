@@ -1,16 +1,37 @@
 import ../code/conceptPage.scroll
+
 id dtrace
 name DTrace
 appeared 2005
 tags pl
-conceptDescription DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
 website http://dtrace.org/
+conceptDescription DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
+
+clocExtensions d
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Sun Microsystems
-domainName dtrace.org
- registered 2010
- awisRank
-  2022 6607140
+
+example
+ # Syscall count by syscall
+ dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
+ # Syscall count by process
+ dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
+leachim6 DTrace
+ filepath d/DTrace.d
+ fileExtensions d
+ example
+  #!/usr/sbin/dtrace -qs
+  BEGIN {
+  	printf("Hello World");
+  	exit(0);
+  }
+  
+
+multiLineCommentTokens /* */
+printToken printf
+stringToken "
 
 hasPrintDebugging true
 hasMultiLineComments true
@@ -22,16 +43,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-multiLineCommentTokens /* */
-printToken printf
-stringToken "
-
-example
- # Syscall count by syscall
- dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
- # Syscall count by process
- dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
 
 wikipedia https://en.wikipedia.org/wiki/DTrace
  example
@@ -64,17 +75,11 @@ wikipedia https://en.wikipedia.org/wiki/DTrace
  dailyPageViews 141
  appeared 2010
 
-githubLanguage DTrace
- fileExtensions d
- trendingProjectsCount 0
- type programming
- interpreters dtrace
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-csrc
- tmScope source.c
- aliases dtrace-script
- repos 534
+domainName dtrace.org
+ registered 2010
+ awisRank
+  2022 6607140
+
 githubBigQuery DTrace
  repos 2080
  users 1907
@@ -111,25 +116,21 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   
   
 
-leachim6 DTrace
- filepath d/DTrace.d
- fileExtensions d
- example
-  #!/usr/sbin/dtrace -qs
-  BEGIN {
-  	printf("Hello World");
-  	exit(0);
-  }
-  
+isbndb 0
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage DTrace
+ fileExtensions d
+ trendingProjectsCount 0
+ type programming
+ interpreters dtrace
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.c
+ aliases dtrace-script
+ repos 534
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Advanced Apple Debugging & Reverse Engineering: Exploring Apple code through LLDB, Python and DTrace||Derek Selander|56926999|5.00|2|0
  Advanced Apple Debugging & Reverse Engineering Second Edition: Exploring Apple code through LLDB, Python and DTrace||raywenderlich.com Team|60459566|0.0|0|0
-
-isbndb 0
-
-clocExtensions d

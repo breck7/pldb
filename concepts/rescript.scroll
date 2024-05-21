@@ -1,30 +1,15 @@
 import ../code/conceptPage.scroll
+
 id rescript
 name Rescript
 appeared 2020
 tags pl
-conceptDescription ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
 website https://rescript-lang.org/
 webRepl https://rescript-lang.org/try
-domainName rescript-lang.org
- registered 2020
- awisRank
-  2022 712029
+conceptDescription ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
 
 compilesTo javascript
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken //
-printToken Js.log
-stringToken "
+clocExtensions res resi
 
 example
  module Button = {
@@ -40,6 +25,34 @@ example
      <button> {msg->React.string} </button>
    }
  }
+twitter https://twitter.com/rescriptlang
+leachim6 ReScript
+ filepath r/ReScript.res
+ fileExtensions res
+ example
+  Js.log("Hello World")
+
+lineCommentToken //
+printToken Js.log
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName rescript-lang.org
+ registered 2020
+ awisRank
+  2022 712029
+
+githubBigQuery ReScript
+ repos 54
+ users 52
 
 githubLanguage ReScript
  type programming
@@ -50,16 +63,3 @@ githubLanguage ReScript
  codemirrorMimeType text/x-rustsrc
  tmScope source.rescript
  repos 1604
-githubBigQuery ReScript
- repos 54
- users 52
-
-leachim6 ReScript
- filepath r/ReScript.res
- fileExtensions res
- example
-  Js.log("Hello World")
-
-twitter https://twitter.com/rescriptlang
-
-clocExtensions res resi

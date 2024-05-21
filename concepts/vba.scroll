@@ -1,17 +1,23 @@
 import ../code/conceptPage.scroll
+
 id vba
 name VBA
 appeared 1993
 tags pl
-documentation https://learn.microsoft.com/en-us/office/vba/api/overview/
 standsFor Visual Basic for Applications
+
+fileType text
+documentation https://learn.microsoft.com/en-us/office/vba/api/overview/
+antlr https://github.com/antlr/grammars-v4/tree/master/vba
+rosettaCode http://www.rosettacode.org/wiki/Category:VBA
+centralPackageRepositoryCount 0
 originCommunity Microsoft
+
+lineCommentToken '
 
 hasComments true
 hasLineComments true
  ' A comment
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
  related quickbasic visual-basic excel-app autocad-app basic microsoft-basic visual-basic.net vbscript jscript csharp visual-studio-editor
@@ -23,50 +29,11 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
  revisionCount 817
  appeared 1993
 
-githubLanguage VBA
- type programming
- fileExtensions bas cls frm frx vba
- aceMode text
- codemirrorMode vb
- codemirrorMimeType text/x-vb
- tmScope source.vbnet
- aliases vb6 or visual basic 6 or visual basic for applications
- repos 28503
+pypl VBA
+
 githubBigQuery VBA
  repos 200
  users 194
-
-antlr https://github.com/antlr/grammars-v4/tree/master/vba
-
-rosettaCode http://www.rosettacode.org/wiki/Category:VBA
-
-indeedJobs vba engineer
- 2022 511
-stackOverflowSurvey
- 2021
-  users 3847
-  medianSalary 53825
-  fans 1069
-  percentageUsing 0.05
-
-pypl VBA
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Excel VBA Programming For Dummies|2004|John Walkenbach|6785493|3.90|353|20
- Excel 2010 Power Programming with VBA|2010|John Walkenbach|13303701|4.05|216|12
- Excel 2007 VBA Programming for Dummies|1996|John Walkenbach|148782|3.77|120|2
- VBA For Dummies|2003|John Paul Mueller|1003621|3.00|20|2
- VB & VBA in a Nutshell: The Language|1998|Paul Lomax|397693|3.44|50|3
- Microsoft Excel 2013 Power Programming with VBA|2013|John Walkenbach|22367313|4.23|86|5
- Excel 2003 Power Programming with VBA|2004|John Walkenbach|25595828|3.85|53|5
- Beginning Excel VBA Programming|2011|Iducate Learning Technologies|27034221|3.32|34|0
- Access 2007 VBA Programming for Dummies|2007|Joseph C. Stockman|908222|3.50|30|0
- Excel VBA Macro Programming|2004|Richard Shepherd|586790|3.17|12|0
- Access VBA Programming for Dummies|2004|Alan Simpson|1082527|3.72|18|1
 
 isbndb 259
  year|publisher|title|authors|isbn13
@@ -330,6 +297,25 @@ isbndb 259
  |Cram101|Studyguide For Numerical Methods With Vba Programming By James Hiestand, Isbn 9780763749644|Cram101 Textbook Reviews and James Hiestand|9781618126832
  2002||Microsoft Excel Vba Programming For The Absolute Beginner (for The Absolute Beginner (series).)|Duane Birnbaum|9788120320536
 
+githubLanguage VBA
+ type programming
+ fileExtensions bas cls frm frx vba
+ aceMode text
+ codemirrorMode vb
+ codemirrorMimeType text/x-vb
+ tmScope source.vbnet
+ aliases vb6 or visual basic 6 or visual basic for applications
+ repos 28503
+
+indeedJobs vba engineer
+ 2022 511
+stackOverflowSurvey
+ 2021
+  users 3847
+  medianSalary 53825
+  fans 1069
+  percentageUsing 0.05
+
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId
  2007|Implementing Large-Scale Optimization Models in Excel Using VBA|10.1287/inte.1060.0256|13|0|L. LeBlanc and Michael R. Galbreth|2787f44c655cc1e4e6afe553ed569ed6734ecfe4
@@ -337,3 +323,17 @@ semanticScholar 5
  2006|Teaching Engineering Analysis Using VBA for Excel|10.18260/1-2-370-38838|5|1|T. Chambers|6392ad290b4ee6877eaf00775febce967bbc94b4
  2015|Life Cycle Cost Prediction for Rolling Stocks in Maintenance Phase Based on VBA Language Program|10.14257/IJSH.2015.9.3.22|4|0|Jiamin Fang and Lin Ji|def1989130b8031bab240fe1bc7c5eac6e0b37bc
  2015|The design and implementation of the Examination System Based on the Word — VBA|10.1109/ICMIC.2015.7409453|1|0|Z. Peiping and Dai Zucheng|f18f10722ebf7002129b1a5fcc70e3f5f5d4bddd
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Excel VBA Programming For Dummies|2004|John Walkenbach|6785493|3.90|353|20
+ Excel 2010 Power Programming with VBA|2010|John Walkenbach|13303701|4.05|216|12
+ Excel 2007 VBA Programming for Dummies|1996|John Walkenbach|148782|3.77|120|2
+ VBA For Dummies|2003|John Paul Mueller|1003621|3.00|20|2
+ VB & VBA in a Nutshell: The Language|1998|Paul Lomax|397693|3.44|50|3
+ Microsoft Excel 2013 Power Programming with VBA|2013|John Walkenbach|22367313|4.23|86|5
+ Excel 2003 Power Programming with VBA|2004|John Walkenbach|25595828|3.85|53|5
+ Beginning Excel VBA Programming|2011|Iducate Learning Technologies|27034221|3.32|34|0
+ Access 2007 VBA Programming for Dummies|2007|Joseph C. Stockman|908222|3.50|30|0
+ Excel VBA Macro Programming|2004|Richard Shepherd|586790|3.17|12|0
+ Access VBA Programming for Dummies|2004|Alan Simpson|1082527|3.72|18|1

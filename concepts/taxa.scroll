@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id taxa
 name taxa
 appeared 2014
-tags pl
 creators Dan Motzenbecker
+tags pl
+
+writtenIn coffeescript markdown javascript json
+repoStats
+ firstCommit 2014
+ commits 62
+ committers 1
+ files 8
+ newestCommit 2015
 
 githubRepo https://github.com/dmotz/taxa
  firstCommit 2014
@@ -15,15 +24,6 @@ githubRepo https://github.com/dmotz/taxa
  description A tiny language inside JavaScript to enforce type signatures.
  issues 0
 
-repoStats
- firstCommit 2014
- commits 62
- committers 1
- files 8
- newestCommit 2015
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  8282725|Show HN: Taxa – A tiny language inside JavaScript to enforce type signatures|2014-09-07 22:56:31 UTC|1410130591|dmotz|3|3
-
-writtenIn coffeescript markdown javascript json

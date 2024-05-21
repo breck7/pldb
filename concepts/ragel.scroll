@@ -1,24 +1,26 @@
 import ../code/conceptPage.scroll
+
 id ragel
 name Ragel
 appeared 2007
 tags pl
 website http://complang.org/ragel/
+
+isOpenSource true
+writtenIn cpp make bourne-shell vim-script awk m4 ocaml tex ruby lex
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2007
+ commits 821
+ committers 8
+ files 475
+ newestCommit 2013
 country The Netherlands
 originCommunity https://github.com/bnoordhuis/ragel/issues
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-hasHexadecimals true
- # 0x[0-9A-Fa-f]+
-hasIntegers true
- # [+-]?[0-9]+
-
-lineCommentToken #
-
+pygmentsHighlighter Ragel
+ filename parsers.py
 example
  =begin
  %%{
@@ -100,12 +102,17 @@ githubRepo https://github.com/bnoordhuis/ragel
  description Ragel State Machine Compiler - http://www.complang.org/ragel/
  issues 1
 
-repoStats
- firstCommit 2007
- commits 821
- committers 8
- files 475
- newestCommit 2013
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasHexadecimals true
+ # 0x[0-9A-Fa-f]+
+hasIntegers true
+ # [+-]?[0-9]+
 
 wikipedia https://en.wikipedia.org/wiki/Ragel
  related c d go ruby java regex ascii xuml umple
@@ -117,6 +124,12 @@ wikipedia https://en.wikipedia.org/wiki/Ragel
  dailyPageViews 29
  appeared 2017
 
+githubBigQuery Ragel
+ repos 317
+ users 295
+
+isbndb 0
+
 githubLanguage Ragel
  fileExtensions rl
  trendingProjectsCount 0
@@ -125,17 +138,3 @@ githubLanguage Ragel
  tmScope none
  aliases ragel-rb or ragel-ruby
  repos 66
-githubBigQuery Ragel
- repos 317
- users 295
-
-pygmentsHighlighter Ragel
- filename parsers.py
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
-
-writtenIn cpp make bourne-shell vim-script awk m4 ocaml tex ruby lex

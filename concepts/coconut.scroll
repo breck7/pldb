@@ -1,20 +1,55 @@
 import ../code/conceptPage.scroll
+
 id coconut
 name Coconut
 appeared 2014
 tags pl
 website http://coconut-lang.org/
 webRepl https://cs121-team-panda.github.io/coconut-interpreter/
-reference https://news.ycombinator.com/item?id=23759721
+
+isOpenSource true
+writtenIn python yaml markdown json make restructuredtext toml
+compilesTo python
+tryItOnline coconut
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 5238
+ committers 37
+ files 95
+ newestCommit 2024
 country Various
 originCommunity http://coconut-lang.org
-domainName coconut-lang.org
- registered 2016
- awisRank
-  2017 4032050
+reference https://news.ycombinator.com/item?id=23759721
 
-compilesTo python
-writtenIn python yaml markdown json make restructuredtext toml
+rijuRepl https://riju.codes/coconut
+ example
+  print("Hello, world!")
+  
+ description Simple, elegant, Pythonic functional programming
+ fileExtensions coco
+ website https://coconut-lang.org/
+ gitRepo https://github.com/evhub/coconut
+leachim6 Coconut
+ filepath c/Coconut.coc
+ fileExtensions coc
+ example
+  "Hello World" |> print
+  
+
+githubRepo https://github.com/evhub/coconut
+ stars 3495
+ forks 104
+ subscribers 63
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description Simple, elegant, Pythonic functional programming.
+ issues 71
+
+printToken print
+stringToken "
 
 hasPatternMatching true
  match [head] + tail in [0, 1, 2, 3]:
@@ -41,47 +76,12 @@ hasPrintDebugging true
 hasStrings true
  "Hello world"
 
-printToken print
-stringToken "
-
-githubRepo https://github.com/evhub/coconut
- stars 3495
- forks 104
- subscribers 63
- created 2014
- updated 2022
- firstCommit 2014
- description Simple, elegant, Pythonic functional programming.
- issues 71
-
-repoStats
- firstCommit 2014
- commits 5238
- committers 37
- files 95
- newestCommit 2024
-
-leachim6 Coconut
- filepath c/Coconut.coc
- fileExtensions coc
- example
-  "Hello World" |> print
-  
-
-rijuRepl https://riju.codes/coconut
- example
-  print("Hello, world!")
-  
- description Simple, elegant, Pythonic functional programming
- fileExtensions coco
- website https://coconut-lang.org/
- gitRepo https://github.com/evhub/coconut
-tryItOnline coconut
-
 jupyterKernel http://coconut-lang.org/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+
+domainName coconut-lang.org
+ registered 2016
+ awisRank
+  2017 4032050
 
 isbndb 0
 

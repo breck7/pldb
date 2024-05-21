@@ -1,16 +1,22 @@
 import ../code/conceptPage.scroll
+
 id noisecraft
 name noisecraft
 appeared 2021
-tags pl
 creators Maxime Chevalier-Boisvert
+tags pl
 website https://noisecraft.app/
-country Canada
-originCommunity https://github.com/maximecb/noisecraft/issues
 
 writtenIn javascript html bourne-shell json yaml css markdown dockerfile
-
 visualParadigm true
+repoStats
+ firstCommit 2021
+ commits 544
+ committers 15
+ files 74
+ newestCommit 2023
+country Canada
+originCommunity https://github.com/maximecb/noisecraft/issues
 
 githubRepo https://github.com/maximecb/noisecraft/
  stars 769
@@ -19,10 +25,3 @@ githubRepo https://github.com/maximecb/noisecraft/
  created 2021
  updated 2022
  description Browser-based visual programming language and platform for sound synthesis.
-
-repoStats
- firstCommit 2021
- commits 544
- committers 15
- files 74
- newestCommit 2023

@@ -1,15 +1,40 @@
 import ../code/conceptPage.scroll
+
 id idl
 name IDL
 appeared 1977
-tags pl
 creators David Stern
+tags pl
 website http://www.exelisvis.com/ProductsServices/IDL.aspx
-documentation https://www.l3harrisgeospatial.com/docs/using_idl_home.html
-reference https://www.harrisgeospatial.com/Software-Technology/IDL
 standsFor Interactive Data Language
+
+clocExtensions dlm idl pro
+fileType text
+documentation https://www.l3harrisgeospatial.com/docs/using_idl_home.html
+antlr https://github.com/antlr/grammars-v4/tree/master/idl
+codeMirror idl
+rosettaCode http://www.rosettacode.org/wiki/Category:IDL
+centralPackageRepositoryCount 0
 country United States
 originCommunity L3Harris Geospatial Solutions, Inc
+reference https://www.harrisgeospatial.com/Software-Technology/IDL
+
+helloWorldCollection Interactive Data Language
+ IDL> ; Hello World in IDL (Interactive Data Language)
+ IDL> print, "Hello World"
+ 
+pygmentsHighlighter IDL
+ filename idl.py
+ fileExtensions pro
+leachim6 IDL
+ filepath i/IDL
+ example
+  print, "Hello World"
+  end
+  
+
+printToken print
+stringToken "
 
 hasComments true
 hasPrintDebugging true
@@ -21,9 +46,7 @@ hasHexadecimals true
 hasFloats true
 hasIntegers true
 
-printToken print
-stringToken "
-
+jupyterKernel https://github.com/lstagner/idl_kernel
 wikipedia https://en.wikipedia.org/wiki/IDL_(programming_language)
  related gdl pv-wave fortran c unix smalltalk matlab numpy python perl-data-language perl
  summary IDL, short for Interactive Data Language, is a programming language used for data analysis. It is popular in particular areas of science, such as astronomy, atmospheric physics and medical imaging. IDL shares a common syntax with PV-Wave and originated from the same codebase, though the languages have subsequently diverged in detail. There are also two free implementations, GNU Data Language (GDL) and Fawlty Language (FL).
@@ -34,24 +57,13 @@ wikipedia https://en.wikipedia.org/wiki/IDL_(programming_language)
  revisionCount 274
  appeared 1977
 
-githubLanguage IDL
- fileExtensions pro dlm
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode idl
- codemirrorMimeType text/x-idl
- tmScope source.idl
- repos 2337
+hopl https://hopl.info/showlanguage.prx?exp=760
+tiobe IDL
+
 githubBigQuery IDL
  repos 5298
  users 4557
 
-antlr https://github.com/antlr/grammars-v4/tree/master/idl
-codeMirror idl
-pygmentsHighlighter IDL
- filename idl.py
- fileExtensions pro
 linguistGrammarRepo https://github.com/mgalloy/idl.tmbundle
  firstCommit 2012
  lastCommit 2017
@@ -70,30 +82,6 @@ linguistGrammarRepo https://github.com/mgalloy/idl.tmbundle
   
   
 
-helloWorldCollection Interactive Data Language
- IDL> ; Hello World in IDL (Interactive Data Language)
- IDL> print, "Hello World"
- 
-leachim6 IDL
- filepath i/IDL
- example
-  print, "Hello World"
-  end
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:IDL
-
-tiobe IDL
-hopl https://hopl.info/showlanguage.prx?exp=760
-
-jupyterKernel https://github.com/lstagner/idl_kernel
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- An Introduction to Programming with IDL: Interactive Data Language|2005|Kenneth P. Bowman|786937|3.40|5|0
- IDL-- The Interactive Data Language: The Complete Data Analysis and Visualization Environment for Students [With *]||Research Systems|20631577|0.0|0|0
-
 isbndb 7
  year|publisher|title|authors|isbn13
  2000|Fanning Software Consulting|IDL Programming Techniques, 2nd Edition|David W. Fanning|9780966238327
@@ -103,6 +91,16 @@ isbndb 7
  2007|Kling Research And Software, Inc|Idl Primer|Ronn Kling|9780967127033
  1997|Fanning Software Consulting|Idl Programming Techniques|David W. Fanning|9780966238303
  2000|Fanning Software Consulting|Idl Programming Techniques|Fanning, David W.|9780966238327
+
+githubLanguage IDL
+ fileExtensions pro dlm
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode idl
+ codemirrorMimeType text/x-idl
+ tmScope source.idl
+ repos 2337
 
 semanticScholar 10
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -117,4 +115,7 @@ semanticScholar 10
  2011|Using IDL to Visual Analyse the Point Clouds of the Surface of Crayfish|10.3968/J.ANS.1715787020110401.006|1|0|Yinwu Li and Guangsheng Zhao and Cheng Yang and Xiuwen Sun and Kui Huang|5956cb1a97b9d4524a994a4b29f88c22b5462292
  1999|Distributed programming with intermediate IDL|10.1145/329607.334745|1|1|Gary W. Smith and R. Volz|04ab7c78a1118f1ff9ab69ff6f09af0affd90d63
 
-clocExtensions dlm idl pro
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ An Introduction to Programming with IDL: Interactive Data Language|2005|Kenneth P. Bowman|786937|3.40|5|0
+ IDL-- The Interactive Data Language: The Complete Data Analysis and Visualization Environment for Students [With *]||Research Systems|20631577|0.0|0|0

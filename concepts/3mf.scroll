@@ -1,11 +1,17 @@
 import ../code/conceptPage.scroll
+
 id 3mf
 name 3D Manufacturing Format
 appeared 2015
 tags xmlFormat
 website http://www.3mf.io/specification/
 standsFor 3D Manufacturing Format
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity 3MF Consortium
+
+twitter https://twitter.com/3mfconsortium
 
 wikipedia https://en.wikipedia.org/wiki/3D_Manufacturing_Format
  related xml
@@ -16,7 +22,3 @@ wikipedia https://en.wikipedia.org/wiki/3D_Manufacturing_Format
  backlinksCount 101
  revisionCount 26
  appeared 2015
-
-twitter https://twitter.com/3mfconsortium
-fileType text
-centralPackageRepositoryCount 0

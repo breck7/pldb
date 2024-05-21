@@ -1,25 +1,22 @@
 import ../code/conceptPage.scroll
+
 id cuelang
 name Cue
 appeared 2018
-tags dataNotation
 creators Marcel van Lohuizen
+tags dataNotation
 website https://cuelang.org/
 webRepl https://cuelang.org/play
+
+writtenIn go yaml protobuf json markdown dockerfile
+repoStats
+ firstCommit 2018
+ commits 1527
+ committers 63
+ files 1421
+ newestCommit 2021
 country United Kingdom and United States and Switzerland
 originCommunity https://github.com/cue-lang
-domainName cuelang.org
- registered 2018
- awisRank
-  2022 1108581
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  #Spec: {
@@ -43,6 +40,7 @@ example
  
    name: first: "Jane"
   
+twitter https://twitter.com/cue_lang
 
 githubRepo https://github.com/cuelang/cue
  firstCommit 2018
@@ -54,15 +52,17 @@ githubRepo https://github.com/cuelang/cue
  description CUE has moved to https://github.com/cue-lang/cue
  issues 1
 
-repoStats
- firstCommit 2018
- commits 1527
- committers 63
- files 1421
- newestCommit 2021
+lineCommentToken //
 
-twitter https://twitter.com/cue_lang
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName cuelang.org
+ registered 2018
+ awisRank
+  2022 1108581
 
 isbndb 0
-
-writtenIn go yaml protobuf json markdown dockerfile

@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id nianiolang
 name nianiolang
 appeared 2015
-tags pl
 creators Andrzej Gasienica-Samek
-conceptDescription Procedural programming language without pointers
+tags pl
 website http://www.nianiolang.org/
-reference https://news.ycombinator.com/item?id=14178782
+conceptDescription Procedural programming language without pointers
+
+writtenIn perl c java bourne-shell javascript make bash markdown
+repoStats
+ firstCommit 2015
+ commits 19
+ committers 5
+ files 255
+ newestCommit 2019
 country United States
 originCommunity https://github.com/nianiolang
-domainName nianiolang.org
- registered 2015
+reference https://news.ycombinator.com/item?id=14178782
 
 githubRepo https://github.com/nianiolang/nl
  firstCommit 2015
@@ -22,11 +29,5 @@ githubRepo https://github.com/nianiolang/nl
  description NianioLang Compiler - main repo
  issues 0
 
-repoStats
- firstCommit 2015
- commits 19
- committers 5
- files 255
- newestCommit 2019
-
-writtenIn perl c java bourne-shell javascript make bash markdown
+domainName nianiolang.org
+ registered 2015

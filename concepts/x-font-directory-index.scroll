@@ -1,21 +1,18 @@
 import ../code/conceptPage.scroll
+
 id x-font-directory-index
 name X Font Directory Index
 appeared 1991
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://groups.google.com/forum/#!search/mkfontdir/comp.windows.x/zYxw3Vkaht4/KUSt85opBwoJ
 
 example
  2
  sutonnymj.pfa -altsys-SutonnyMJ-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
  rinkymj.pfa -altsys-RinkyMJ-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
-
-githubLanguage X Font Directory Index
- type data
- filenames encodings.dir fonts.alias fonts.dir fonts.scale
- aceMode text
- tmScope source.fontdir
- repos 14
 
 linguistGrammarRepo https://github.com/Alhadis/language-fontforge
  firstCommit 2016
@@ -64,5 +61,9 @@ linguistGrammarRepo https://github.com/Alhadis/language-fontforge
   lucidasanstypewriter-18 -b&h-lucidatypewriter-medium-r-normal-sans-25-180-100-100-m-150-iso8859-1
   lucidasanstypewriter-24 -b&h-lucidatypewriter-medium-r-normal-sans-34-240-100-100-m-200-iso8859-1
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage X Font Directory Index
+ type data
+ filenames encodings.dir fonts.alias fonts.dir fonts.scale
+ aceMode text
+ tmScope source.fontdir
+ repos 14

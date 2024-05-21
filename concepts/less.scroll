@@ -1,18 +1,44 @@
 import ../code/conceptPage.scroll
+
 id less
 name Less
 appeared 2009
-tags stylesheetLanguage
 creators Alexis Sellier
+tags stylesheetLanguage
 website http://lesscss.org
 webRepl https://playcode.io/less/
+
+isOpenSource true
+clocExtensions less
+fileType text
+wordRank 535
+antlr https://github.com/antlr/grammars-v4/tree/master/less
+monaco less
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/less
-domainName lesscss.org
- registered 2009
- awisRank
-  2022 210051
-  2017 102718
+
+pygmentsHighlighter LessCss
+ filename css.py
+ fileExtensions less
+rijuRepl https://riju.codes/less
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  
+leachim6 Less
+ filepath l/Less.less
+ fileExtensions less
+ example
+  body::before {
+      content: "Hello World"
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 hasLineComments true
  // A comment
@@ -23,10 +49,6 @@ hasComments true
  // A comment
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
  example
@@ -48,25 +70,16 @@ wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
  revisionCount 256
  appeared 2009
 
-githubLanguage Less
- fileExtensions less
- trendingProjectsCount 0
- type markup
- aceMode less
- codemirrorMode css
- codemirrorMimeType text/css
- tmScope source.css.less
- aliases less-css
- repos 12105
+domainName lesscss.org
+ registered 2009
+ awisRank
+  2022 210051
+  2017 102718
+
 githubBigQuery Less
  repos 2585
  users 2276
 
-antlr https://github.com/antlr/grammars-v4/tree/master/less
-monaco less
-pygmentsHighlighter LessCss
- filename css.py
- fileExtensions less
 linguistGrammarRepo https://github.com/atom/language-less.git
  firstCommit 2013
  lastCommit 2018
@@ -90,27 +103,6 @@ linguistGrammarRepo https://github.com/atom/language-less.git
   }
   
 
-leachim6 Less
- filepath l/Less.less
- fileExtensions less
- example
-  body::before {
-      content: "Hello World"
-  }
-  
-
-rijuRepl https://riju.codes/less
- example
-  body:before {
-    content: "Hello, world!";
-  }
-  
-
-fileType text
-wordRank 535
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 7
  year|publisher|title|authors|isbn13
  2019|Independently published|Manipulation Secrets: How To Manipulate Anyone In Less Than Five Minutes Using Speed Reading, Ethical Manipulation And Simple Mind Control Techniques ... Case Studies And DIY-Tests (DARK PSYCHOLOGY)|Lightman, Patrick|9781086014358
@@ -121,10 +113,19 @@ isbndb 7
  2018|Cambridge University Press|The Science of Strategic Conservation: Protecting More with Less|Messer, Kent D. and Allen III, William L.|9781316642184
  2004|Listen & Live Audio, Inc.|How to Make People Like You in 90 Seconds or Less|Boothman, Nicholas|9781593160425
 
+githubLanguage Less
+ fileExtensions less
+ trendingProjectsCount 0
+ type markup
+ aceMode less
+ codemirrorMode css
+ codemirrorMimeType text/css
+ tmScope source.css.less
+ aliases less-css
+ repos 12105
+
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  2010|tinySLAM: A SLAM algorithm in less than 200 lines C-language program|10.1109/ICARCV.2010.5707402|79|7|B. Steux and O. Hamzaoui|bfde965e330d488af0cfe87b13069c71970b2d2a
  2011|How to make ad hoc proof automation less ad hoc|10.1145/2034773.2034798|64|3|Georges Gonthier and Beta Ziliani and Aleksandar Nanevski and Derek Dreyer|b50d6b7724bdf8064ffee9f8456a4def48f07ef5
  2003|Pair Programming: More Learning And Less Anxiety In A First Programming Course|10.18260/1-2--11728|20|0|Jennifer Brougham and S. Freeman and Beverly K. Jaeger|abdbb5509d31d07c7e4d10c47812e38568cd4d59
-
-clocExtensions less

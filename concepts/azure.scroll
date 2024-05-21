@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id azure
 name Microsoft Azure
 appeared 2010
 tags cloud
 website https://azure.microsoft.com
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
-domainName azure.microsoft.com
+
+twitter https://twitter.com/azure
+
+meetup https://www.meetup.com/topics/microsoft-azure
+ memberCount 131967
+ groupCount 386
 
 wikipedia https://en.wikipedia.org/wiki/Microsoft_Azure
  related linux php python ftp mercurial json redis rest xml visual-studio-editor eclipse-editor aws google-cloud
@@ -18,17 +28,10 @@ wikipedia https://en.wikipedia.org/wiki/Microsoft_Azure
  revisionCount 1288
  appeared 2010
 
+domainName azure.microsoft.com
+
 linkedInSkill azure
  2018 144808
-
-meetup https://www.meetup.com/topics/microsoft-azure
- memberCount 131967
- groupCount 386
-
-twitter https://twitter.com/azure
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

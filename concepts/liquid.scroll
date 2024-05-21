@@ -1,17 +1,32 @@
 import ../code/conceptPage.scroll
+
 id liquid
 name Liquid
 appeared 2008
-tags template
 creators Tobias Lütke
+tags template
 website https://shopify.github.io/liquid/
+
+isOpenSource true
+writtenIn ruby liquid yaml markdown
+clocExtensions liquid
+fileType text
+wordRank 3533
 documentation https://shopify.dev/api/liquid
+monaco liquid
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 2443
+ committers 232
+ files 187
+ newestCommit 2024
 country Canada
 originCommunity https://github.com/Shopify
 
-hasBooleans true
-
-booleanTokens true false
+pygmentsHighlighter liquid
+ filename templates.py
+ fileExtensions liquid
 
 githubRepo https://github.com/Shopify/liquid
  firstCommit 2008
@@ -23,31 +38,14 @@ githubRepo https://github.com/Shopify/liquid
  description Liquid markup language. Safe, customer facing template language for flexible web apps.
  issues 274
 
-repoStats
- firstCommit 2008
- commits 2443
- committers 232
- files 187
- newestCommit 2024
+booleanTokens true false
 
-githubLanguage Liquid
- fileExtensions liquid
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  Shopify Timber https://github.com/Shopify.png https://github.com/Shopify/Timber Liquid #ccc 871 352 6 "The ultimate Shopify theme framework, built by Shopify."
- trendingProjectsCount 2
- type markup
- aceMode liquid
- tmScope text.html.liquid
- repos 11459
+hasBooleans true
+
 githubBigQuery Liquid
  repos 1018
  users 947
 
-monaco liquid
-pygmentsHighlighter liquid
- filename templates.py
- fileExtensions liquid
 linguistGrammarRepo https://github.com/bastilian/validcode-textmate-bundles
  firstCommit 2010
  lastCommit 2015
@@ -126,18 +124,24 @@ linguistGrammarRepo https://github.com/bastilian/validcode-textmate-bundles
     </script>
   </ul>
 
-indeedJobs liquid engineer
- 2022 325
-
-fileType text
-wordRank 3533
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  1998|Premier Pr|Create Web Animations With Microsoft Liquid Motion In A Weekend|Steven E. Callihan|9780761518228
  20100603|Ingram Publisher Services UK- Academic|High-Temperature Liquid Chromatography|Thorsten Teutenberg|9781849731096
+
+githubLanguage Liquid
+ fileExtensions liquid
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Shopify Timber https://github.com/Shopify.png https://github.com/Shopify/Timber Liquid #ccc 871 352 6 "The ultimate Shopify theme framework, built by Shopify."
+ trendingProjectsCount 2
+ type markup
+ aceMode liquid
+ tmScope text.html.liquid
+ repos 11459
+
+indeedJobs liquid engineer
+ 2022 325
 
 semanticScholar 15
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -156,6 +160,3 @@ semanticScholar 15
  2015|Development of Simulator for LNG Carrier Liquid Cargo Handling|10.2991/CISIA-15.2015.223|1|0|J. Cao and X. K. Zhang and Q. He|ba32c26616468eb9235cce441281fbae15e8c751
  2017|AUTOMATIC LIQUID FILLING USING PROGRAMMABLE LOGIC CONTROLLER(PLC)|10.24128/IJRAER.2017.NO01ab|1|0|Vinod Jiddi|6ddde4bb612e0ec96413b4837c91d947a9e9fa6d
  2018|Simulation of Liquid Vapor Equilibrium in Batch Distillation Process from Cellulose (Bamboo)|10.11594/nstp.2018.0117|1|0|Sari Ni Ketut and D. Ernawati|124ebfbcc14bf6d5974a6d14fcc52336e8591b1f
-
-clocExtensions liquid
-writtenIn ruby liquid yaml markdown

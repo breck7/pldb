@@ -1,25 +1,48 @@
 import ../code/conceptPage.scroll
+
 id cobra
 name Cobra
 appeared 2006
-tags pl
 creators Charles Esterbrook
+tags pl
 website http://cobra-language.com/
+
+isOpenSource true
+tryItOnline cobra
 fileExtensions cobra
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Cobra
+centralPackageRepositoryCount 0
 country United States
 originCommunity Cobra Language LLC
-domainName cobra-language.com
- registered 2008
- awisRank
-  2017 5837168
+projectEuler Cobra
+ memberCount
+  2019 11
+  2022 11
+
+helloWorldCollection Cobra
+ """Hello world in Cobra"""
+ 
+ class Hello
+ 
+     def main
+         print 'Hello, world.'
+leachim6 Cobra
+ filepath c/Cobra.cobra
+ fileExtensions cobra
+ example
+  class Hello
+  
+      def main
+          print 'Hello World'
+
+printToken print
+stringToken '
 
 hasSemanticIndentation true
 hasPrintDebugging true
 hasStrings true
  'Hello world'
-
-printToken print
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
  example
@@ -43,34 +66,12 @@ wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
  appeared 2006
  fileExtensions cobra
 
-projectEuler Cobra
- memberCount
-  2019 11
-  2022 11
-helloWorldCollection Cobra
- """Hello world in Cobra"""
- 
- class Hello
- 
-     def main
-         print 'Hello, world.'
-leachim6 Cobra
- filepath c/Cobra.cobra
- fileExtensions cobra
- example
-  class Hello
-  
-      def main
-          print 'Hello World'
-rosettaCode http://www.rosettacode.org/wiki/Category:Cobra
-
-tryItOnline cobra
-
 tiobe Cobra
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName cobra-language.com
+ registered 2008
+ awisRank
+  2017 5837168
 
 isbndb 1
  year|publisher|title|authors|isbn13

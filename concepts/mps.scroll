@@ -1,13 +1,25 @@
 import ../code/conceptPage.scroll
+
 id mps
 name MPS
 appeared 2010
 tags grammarLanguage
-conceptDescription With MPS you can define custom editors for a new language and make using these DSLs simpler. Even domain experts, who are not familiar with traditional programming, can easily work in MPS with domain-specific languages designed around their domain-specific terminology.
 website https://www.jetbrains.com/mps/
 standsFor Meta programming System
+conceptDescription With MPS you can define custom editors for a new language and make using these DSLs simpler. Even domain experts, who are not familiar with traditional programming, can easily work in MPS with domain-specific languages designed around their domain-specific terminology.
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2004
+ commits 92204
+ committers 121
+ files 46129
 country Czech Republic
 originCommunity JetBrains s.r.o.
+
+twitter https://twitter.com/jetbrains_mps
 
 githubRepo https://github.com/JetBrains/MPS
  firstCommit 2004
@@ -19,12 +31,6 @@ githubRepo https://github.com/JetBrains/MPS
  description JetBrains Meta programming System
  issues 7
 
-repoStats
- firstCommit 2004
- commits 92204
- committers 121
- files 46129
-
 wikipedia https://en.wikipedia.org/wiki/JetBrains_MPS
  related java
  summary JetBrains MPS is a metaprogramming system which is being developed by JetBrains. MPS is a tool to design Domain-specific languages (DSL). It uses projectional editing which allows users to overcome the limits of language parsers, and build DSL editors, such as ones with tables and diagrams. It implements language-oriented programming. MPS is an environment for language definition, a language workbench, and integrated development environment (IDE) for such languages.
@@ -34,11 +40,6 @@ wikipedia https://en.wikipedia.org/wiki/JetBrains_MPS
  revisionCount 108
  dailyPageViews 39
  appeared 2018
-
-twitter https://twitter.com/jetbrains_mps
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

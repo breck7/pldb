@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id nix
 name Nix
 appeared 2003
 tags packageManager
-reference https://nixos.org/
+packageCount 49610
+
+clocExtensions nix
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Nix
+centralPackageRepositoryCount 0
 country The Netherlands
 originCommunity NixOS Foundation
+reference https://nixos.org/
 
-hasIntegers true
-hasLineComments true
-hasMultiLineComments true
-
-keywords rec with let in inherit assert if else then ...
-
+pygmentsHighlighter Nix
+ filename nix.py
+ fileExtensions nix
 example
  {
   boot.loader.grub.device = "/dev/sda";
@@ -22,24 +26,16 @@ example
   services.sshd.enable = true;
  }
 
-githubLanguage Nix
- fileExtensions nix
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  NixOS nixpkgs https://github.com/NixOS.png https://github.com/NixOS/nixpkgs Nix #7e7eff 4149 3954 134 "Nix Packages collection"
-  rycee home-manager https://github.com/rycee.png https://github.com/rycee/home-manager Nix #7e7eff 712 225 38 "Manage a user environment using Nix"
- trendingProjectsCount 3
- type programming
- aceMode nix
- tmScope source.nix
- aliases nixos
+keywords rec with let in inherit assert if else then ...
+
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+
 githubBigQuery Nix
  repos 2673
  users 1808
 
-pygmentsHighlighter Nix
- filename nix.py
- fileExtensions nix
 linguistGrammarRepo https://github.com/wmertens/sublime-nix
  firstCommit 2014
  lastCommit 2017
@@ -128,11 +124,14 @@ linguistGrammarRepo https://github.com/wmertens/sublime-nix
     };
   }
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Nix
-
-packageCount 49610
-
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions nix
+githubLanguage Nix
+ fileExtensions nix
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  NixOS nixpkgs https://github.com/NixOS.png https://github.com/NixOS/nixpkgs Nix #7e7eff 4149 3954 134 "Nix Packages collection"
+  rycee home-manager https://github.com/rycee.png https://github.com/rycee/home-manager Nix #7e7eff 712 225 38 "Manage a user environment using Nix"
+ trendingProjectsCount 3
+ type programming
+ aceMode nix
+ tmScope source.nix
+ aliases nixos

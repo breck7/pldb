@@ -1,18 +1,14 @@
 import ../code/conceptPage.scroll
+
 id adobe-font-metrics
 name Adobe Font Metrics
 appeared 1987
 tags application
-reference https://www.adobe.com/content/dam/acom/en/devnet/font/pdfs/5004.AFM_Spec.pdf
-originCommunity Adobe Systems Incorporated
 
-githubLanguage Adobe Font Metrics
- fileExtensions afm
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.afm
- aliases acfm or adobe composite font metrics or adobe multiple font metrics or amfm
+fileType text
+centralPackageRepositoryCount 0
+originCommunity Adobe Systems Incorporated
+reference https://www.adobe.com/content/dam/acom/en/devnet/font/pdfs/5004.AFM_Spec.pdf
 
 linguistGrammarRepo https://github.com/Alhadis/language-fontforge
  firstCommit 2016
@@ -45,5 +41,10 @@ linguistGrammarRepo https://github.com/Alhadis/language-fontforge
   EndCharMetrics
   EndFontMetrics
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Adobe Font Metrics
+ fileExtensions afm
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.afm
+ aliases acfm or adobe composite font metrics or adobe multiple font metrics or amfm

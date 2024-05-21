@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id bazel
 name Bazel
 appeared 2015
-tags application
 creators Han-Wen Nienhuys
-conceptDescription Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users. See starlark for the language.
+tags application
 website https://bazel.build/
+conceptDescription Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users. See starlark for the language.
+
+writtenIn java bazel bourne-shell markdown starlark cpp protobuf python yaml html svg xml c gradle vtl-lang bash make ada csharp css diff powershell javascript pascal json restructuredtext ini objective-c assembly-language cmake perl sas m4 objective-cpp
+clocExtensions BUILD
+repoStats
+ firstCommit 2015
+ newestCommit 2024
+ commits 42387
+ committers 1401
+ files 9200
 country United States
 originCommunity Google
-domainName bazel.build
- registered 2016
- awisRank
-  2022 451403
+
+twitter https://twitter.com/bazelbuild
 
 githubRepo https://github.com/bazelbuild/bazel
  firstCommit 2015
@@ -30,13 +38,7 @@ wikipedia https://en.wikipedia.org/wiki/Bazel_(software)
  dailyPageViews 96
  appeared 2019
 
-twitter https://twitter.com/bazelbuild
-
-repoStats
- firstCommit 2015
- newestCommit 2024
- commits 42387
- committers 1401
- files 9200
-clocExtensions BUILD
-writtenIn java bazel bourne-shell markdown starlark cpp protobuf python yaml html svg xml c gradle vtl-lang bash make ada csharp css diff powershell javascript pascal json restructuredtext ini objective-c assembly-language cmake perl sas m4 objective-cpp
+domainName bazel.build
+ registered 2016
+ awisRank
+  2022 451403

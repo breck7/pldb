@@ -1,14 +1,23 @@
 import ../code/conceptPage.scroll
+
 id nickle
 name Nickle
 appeared 2001
 tags pl
 website http://www.nickle.org/
-reference https://keithp.com/cgit/nickle.git/
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Nickle
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://keithp.com/pipermail/nickle/
-domainName nickle.org
- registered 2000
+reference https://keithp.com/cgit/nickle.git/
+
+rijuRepl https://riju.codes/nickle
+ example
+  printf("Hello, world!\n");
+  
 
 wikipedia https://en.wikipedia.org/wiki/Nickle_(programming_language)
  related c lisp modula-3 ml java
@@ -20,15 +29,7 @@ wikipedia https://en.wikipedia.org/wiki/Nickle_(programming_language)
  dailyPageViews 7
  appeared 2001
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Nickle
-
-rijuRepl https://riju.codes/nickle
- example
-  printf("Hello, world!\n");
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=5675
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName nickle.org
+ registered 2000

@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id sako
 name System Automatycznego Kodowania Operacji
 appeared 1960
 tags pl
-reference https://historiainformatyki.pl/skan.php?doc_id=1489&type=pdf&for_download=1
 standsFor System Automatycznego Kodowania Operacji
-country Poland
 nativeLanguage Polish
+
+fileType text
+centralPackageRepositoryCount 0
+country Poland
 originCommunity Polish Academy of Sciences
+reference https://historiainformatyki.pl/skan.php?doc_id=1489&type=pdf&for_download=1
 
 wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  example
@@ -25,8 +29,5 @@ wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  appeared 1961
 
 hopl https://hopl.info/showlanguage.prx?exp=2178
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

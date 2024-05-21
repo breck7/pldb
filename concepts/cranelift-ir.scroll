@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cranelift-ir
 name Cranelift
 appeared 2016
-tags ir
 creators Jakob Olesen
+tags ir
 website https://cranelift.readthedocs.io/en/latest/ir.html
+
+writtenIn markdown
+repoStats
+ firstCommit 2016
+ commits 3172
+ committers 139
+ files 1
+ newestCommit 2020
 country Various
 originCommunity https://github.com/CraneStation/
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/CraneStation/cranelift
  updated 2022
  description Cranelift code generator
  issues 0
-
-repoStats
- firstCommit 2016
- commits 3172
- committers 139
- files 1
- newestCommit 2020
-
-writtenIn markdown

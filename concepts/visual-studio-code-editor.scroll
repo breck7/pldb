@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id visual-studio-code-editor
 name Visual Studio Code
 appeared 2015
 tags editor
 aka vs code
+
+fileType na
+packageRepository https://marketplace.visualstudio.com/
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Studio_Code
  related visual-studio-editor typescript javascript linux ia-32 git json c csharp clojure coffeescript css f-sharp go groovy html ini java less lua makefile markdown objective-c perl php powershell python r ruby rust sql swift visual-basic xml yaml
@@ -14,7 +18,3 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Studio_Code
  revisionCount 308
  dailyPageViews 1501
  appeared 2015
-
-packageRepository https://marketplace.visualstudio.com/
-
-fileType na

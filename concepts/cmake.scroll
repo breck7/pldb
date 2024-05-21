@@ -1,16 +1,52 @@
 import ../code/conceptPage.scroll
+
 id cmake
 name CMake
 appeared 2000
 tags application
 website https://cmake.org/
-reference https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
+
+isOpenSource true
+clocExtensions cmake cmake.in CMakeLists.txt
+fileType text
+codeMirror cmake
+rosettaCode http://www.rosettacode.org/wiki/Category:CMake
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2000
+ commits 66353
+ committers 1877
+ files 25565
 country United States
 originCommunity Kitware, Inc
-domainName cmake.org
- registered 2001
- awisRank
-  2022 23114
+reference https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
+
+helloWorldCollection CMake
+ # Hello World in CMake
+ 
+ message(STATUS "Hello World!")
+ 
+pygmentsHighlighter CMake
+ filename make.py
+ fileExtensions cmake CMakeLists.txt
+rijuRepl https://riju.codes/cmake
+ example
+  message("Hello, world!")
+  
+leachim6 CMake
+ filepath c/CMake.cmake
+ fileExtensions cmake
+ example
+  message("Hello World")
+  
+compilerExplorer CMake
+ example
+  project(default)
+  
+  add_compile_options(-Werror -Wall -Wextra -g)
+  
+  add_executable(output.s example.cpp)
+  
 
 gitlabRepo https://gitlab.kitware.com/cmake/cmake
 
@@ -24,28 +60,15 @@ wikipedia https://en.wikipedia.org/wiki/CMake
  revisionCount 560
  appeared 2000
 
-githubLanguage CMake
- fileExtensions cmake cmakein
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  microsoft vcpkg https://github.com/microsoft.png https://github.com/microsoft/vcpkg CMake #ccc 6545 1638 307 "C++ Library Manager for Windows, Linux, and MacOS"
-  wzpan cmake-demo https://github.com/wzpan.png https://github.com/wzpan/cmake-demo CMake #ccc 533 332 37 《CMake入门实战》源码
-  ultralight-ux Ultralight https://github.com/ultralight-ux.png https://github.com/ultralight-ux/Ultralight CMake #ccc 1145 65 95 "Ultralight— a lightweight, pure-GPU, HTML UI renderer for native apps."
- trendingProjectsCount 4
- type programming
- filenames CMakeLists.txt
- aceMode text
- codemirrorMode cmake
- codemirrorMimeType text/x-cmake
- tmScope source.cmake
+domainName cmake.org
+ registered 2001
+ awisRank
+  2022 23114
+
 githubBigQuery CMake
  repos 56490
  users 39454
 
-codeMirror cmake
-pygmentsHighlighter CMake
- filename make.py
- fileExtensions cmake CMakeLists.txt
 linguistGrammarRepo https://github.com/textmate/cmake.tmbundle
  firstCommit 2008
  lastCommit 2015
@@ -70,35 +93,20 @@ linguistGrammarRepo https://github.com/textmate/cmake.tmbundle
   target_link_libraries(foo ${ssl_LIBRARY})
   
 
-helloWorldCollection CMake
- # Hello World in CMake
- 
- message(STATUS "Hello World!")
- 
-leachim6 CMake
- filepath c/CMake.cmake
- fileExtensions cmake
- example
-  message("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:CMake
-
-compilerExplorer CMake
- example
-  project(default)
-  
-  add_compile_options(-Werror -Wall -Wextra -g)
-  
-  add_executable(output.s example.cpp)
-  
-rijuRepl https://riju.codes/cmake
- example
-  message("Hello, world!")
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage CMake
+ fileExtensions cmake cmakein
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  microsoft vcpkg https://github.com/microsoft.png https://github.com/microsoft/vcpkg CMake #ccc 6545 1638 307 "C++ Library Manager for Windows, Linux, and MacOS"
+  wzpan cmake-demo https://github.com/wzpan.png https://github.com/wzpan/cmake-demo CMake #ccc 533 332 37 《CMake入门实战》源码
+  ultralight-ux Ultralight https://github.com/ultralight-ux.png https://github.com/ultralight-ux/Ultralight CMake #ccc 1145 65 95 "Ultralight— a lightweight, pure-GPU, HTML UI renderer for native apps."
+ trendingProjectsCount 4
+ type programming
+ filenames CMakeLists.txt
+ aceMode text
+ codemirrorMode cmake
+ codemirrorMimeType text/x-cmake
+ tmScope source.cmake
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -106,10 +114,3 @@ goodreads
  CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast|61191205|0.0|0|0
  Building C++ Software with CMake (Software Tools Series Book 1)|2014|Chris Weed|42501938|5.00|2|0
  Using CMake to Manage Project - A Demo (Linux Software Development)||Jie Deng|52502246|0.0|0|0
-
-repoStats
- firstCommit 2000
- commits 66353
- committers 1877
- files 25565
-clocExtensions cmake cmake.in CMakeLists.txt

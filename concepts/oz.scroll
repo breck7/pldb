@@ -1,28 +1,58 @@
 import ../code/conceptPage.scroll
+
 id oz
 name Oz
 appeared 1991
-tags pl
 creators Gert Smolka
+tags pl
 website http://mozart.github.io
+
+isOpenSource true
+visualParadigm false
+fileType text
+wordRank 2692
 documentation https://www.ps.uni-saarland.de/oz2/documentation/
 documentation http://mozart2.org/mozart-v1/doc-1.4.0/tutorial/index.html
+codeMirror oz
+rosettaCode http://www.rosettacode.org/wiki/Category:Oz
+centralPackageRepositoryCount 0
 country Germany
 originCommunity Universität des Saarlandes
-domainName mozart.github.io
- awisRank
-  2017 3368943
+projectEuler Oz
+ memberCount
+  2019 4
+  2022 4
 
-visualParadigm false
+helloWorldCollection Oz
+ % Hello World in Oz
+ 
+ functor
+ import
+   System
+   Application
+ define
+   {System.showInfo "Hello World!"}
+   {Application.exit 0}
+ end
+rijuRepl https://riju.codes/oz
+ example
+  functor
+  import
+      Application
+      System
+  define
+      {System.showInfo 'Hello, world!'}
+      {Application.exit 0}
+  end
+
+lineCommentToken %
+booleanTokens true false
 
 hasComments true
 hasLineComments true
  % A comment
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken %
-booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Oz_(programming_language)
  example
@@ -53,20 +83,17 @@ wikipedia https://en.wikipedia.org/wiki/Oz_(programming_language)
  revisionCount 228
  appeared 1991
 
-githubLanguage Oz
- fileExtensions oz
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode oz
- codemirrorMimeType text/x-oz
- tmScope source.oz
- repos 371
+hopl https://hopl.info/showlanguage.prx?exp=2327
+tiobe Oz
+
+domainName mozart.github.io
+ awisRank
+  2017 3368943
+
 githubBigQuery Oz
  repos 72
  users 70
 
-codeMirror oz
 linguistGrammarRepo https://github.com/eregon/oz-tmbundle
  firstCommit 2010
  lastCommit 2012
@@ -128,46 +155,20 @@ linguistGrammarRepo https://github.com/eregon/oz-tmbundle
   end
   
 
-projectEuler Oz
- memberCount
-  2019 4
-  2022 4
-helloWorldCollection Oz
- % Hello World in Oz
- 
- functor
- import
-   System
-   Application
- define
-   {System.showInfo "Hello World!"}
-   {Application.exit 0}
- end
-rosettaCode http://www.rosettacode.org/wiki/Category:Oz
+isbndb 0
 
-rijuRepl https://riju.codes/oz
- example
-  functor
-  import
-      Application
-      System
-  define
-      {System.showInfo 'Hello, world!'}
-      {Application.exit 0}
-  end
+githubLanguage Oz
+ fileExtensions oz
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode oz
+ codemirrorMimeType text/x-oz
+ tmScope source.oz
+ repos 371
 
 indeedJobs oz engineer
  2022 0
-
-tiobe Oz
-hopl https://hopl.info/showlanguage.prx?exp=2327
-
-fileType text
-wordRank 2692
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 22
  year|title|doi|citations|influentialCitations|authors|paperId

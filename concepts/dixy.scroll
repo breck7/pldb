@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id dixy
 name Dixy
 appeared 2017
 tags dataNotation
+
+writtenIn xml swift markdown json
+repoStats
+ firstCommit 2017
+ commits 10
+ committers 1
+ files 12
+ newestCommit 2017
 country United States
 originCommunity https://github.com/kuyawa/Dixy/issues
 
@@ -14,12 +23,3 @@ githubRepo https://github.com/kuyawa/Dixy
  updated 2023
  description Data format based on dictionaries
  issues 3
-
-repoStats
- firstCommit 2017
- commits 10
- committers 1
- files 12
- newestCommit 2017
-
-writtenIn xml swift markdown json

@@ -1,9 +1,16 @@
 import ../code/conceptPage.scroll
+
 id freemarker
 name FreeMarker
 appeared 2000
 tags template
 aka FreeMarker2
+
+isOpenSource true
+clocExtensions ftl
+fileType text
+monaco freemarker2
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://freemarker.apache.org/mailing-lists.html
 
@@ -27,19 +34,10 @@ wikipedia https://en.wikipedia.org/wiki/Apache_FreeMarker
  dailyPageViews 31
  appeared 2000
 
-githubLanguage FreeMarker
- fileExtensions ftl
- trendingProjectsCount 0
- type programming
- aceMode ftl
- tmScope text.html.ftl
- aliases ftl
- repos 5703
 githubBigQuery FreeMarker
  repos 3564
  users 3002
 
-monaco freemarker2
 linguistGrammarRepo https://github.com/freemarker/FreeMarker.tmbundle
  firstCommit 2011
  lastCommit 2015
@@ -81,8 +79,11 @@ linguistGrammarRepo https://github.com/freemarker/FreeMarker.tmbundle
   </#macro>
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-clocExtensions ftl
+githubLanguage FreeMarker
+ fileExtensions ftl
+ trendingProjectsCount 0
+ type programming
+ aceMode ftl
+ tmScope text.html.ftl
+ aliases ftl
+ repos 5703

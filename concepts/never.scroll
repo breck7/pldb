@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id never
 name never
 appeared 2018
 tags pl
 website https://never-lang.readthedocs.io
+
+writtenIn c yaml cmake markdown yacc lex xml html python make javascript bourne-shell
+repoStats
+ firstCommit 2018
+ commits 604
+ committers 7
+ files 786
+ newestCommit 2024
 country Spain
 originCommunity https://github.com/never-lang
-domainName never-lang.readthedocs.io
 
 example
  func main() -> float
@@ -24,15 +32,8 @@ githubRepo https://github.com/never-lang/never
  forks 7
  issues 0
 
-repoStats
- firstCommit 2018
- commits 604
- committers 7
- files 786
- newestCommit 2024
+domainName never-lang.readthedocs.io
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2005|Sams Publishing|Java After Hours: 10 Projects You'll Never Do at Work|Holzner, Steven|9780672327476
-
-writtenIn c yaml cmake markdown yacc lex xml html python make javascript bourne-shell

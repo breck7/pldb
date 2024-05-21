@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id powerhouse-programming-language
 name PowerHouse
 appeared 1988
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country United States
 originCommunity UNICOM Systems
 
@@ -17,6 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/PowerHouse_%28programming_language%29
  appeared 1982
 
 hopl https://hopl.info/showlanguage.prx?exp=3432
-
-isOpenSource false
-centralPackageRepositoryCount 0

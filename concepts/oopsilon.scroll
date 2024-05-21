@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id oopsilon
 name oopsilon
 appeared 2017
 tags esolang
 conceptDescription <a href='http://github.com/Oopsilon/Oopsilon'>Oopsilon</a> is an object-oriented language in the Kayian tradition which is (perhaps uniquely) founded on a negativist philosophy drawing on critical theory and stressing the importance of hermeneutics in understanding the problems programmers experience.
+
+isOpenSource true
+writtenIn smalltalk cpp cmake markdown svg c yaml llvmir json lua javascript python meson
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2022
+ commits 9
+ committers 2
+ files 51
+ newestCommit 2022
 country Scotland
 originCommunity https://github.com/Oopsilon
 
@@ -16,16 +28,3 @@ githubRepo https://github.com/Oopsilon/Oopsilon
  firstCommit 2017
  description Main repository - implementation of the dynamic programming environment Oopsilon
  issues 1
-
-repoStats
- firstCommit 2022
- commits 9
- committers 2
- files 51
- newestCommit 2022
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn smalltalk cpp cmake markdown svg c yaml llvmir json lua javascript python meson

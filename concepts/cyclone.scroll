@@ -1,16 +1,30 @@
 import ../code/conceptPage.scroll
+
 id cyclone
 name Cyclone
 appeared 2001
 tags pl
 website http://cyclone.thelanguage.org
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Labs
-domainName cyclone.thelanguage.org
 
-hasPrintDebugging true
+leachim6 Cyclone
+ filepath c/Cyclone.cyc
+ fileExtensions cyc
+ example
+  #include <stdio.h>
+  int main() {
+   printf("Hello World\n");
+   return 0;
+  }
+  
 
 printToken printf
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Cyclone_(programming_language)
  example
@@ -30,21 +44,9 @@ wikipedia https://en.wikipedia.org/wiki/Cyclone_(programming_language)
  dailyPageViews 43
  appeared 2001
 
-leachim6 Cyclone
- filepath c/Cyclone.cyc
- fileExtensions cyc
- example
-  #include <stdio.h>
-  int main() {
-   printf("Hello World\n");
-   return 0;
-  }
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=3312
 
-fileType text
-centralPackageRepositoryCount 0
+domainName cyclone.thelanguage.org
 
 isbndb 1
  year|publisher|title|authors|isbn13

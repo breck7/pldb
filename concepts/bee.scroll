@@ -1,12 +1,26 @@
 import ../code/conceptPage.scroll
+
 id bee
 name bee
 appeared 2019
-tags pl
 creators Elucian Moise
+tags pl
 website https://sagecode.net/bee-lang/
+
+writtenIn svg html xml javascript markdown yaml
+repoStats
+ firstCommit 2019
+ commits 675
+ committers 5
+ files 94
+ newestCommit 2023
 country United States
 originCommunity Sage-Code
+
+subreddit https://reddit.com/r/bee_lang
+ memberCount
+  2017 29
+  2022 1273
 
 githubRepo https://github.com/sage-code/bee
  firstCommit 2019
@@ -17,17 +31,3 @@ githubRepo https://github.com/sage-code/bee
  description Bee Language
  forks 0
  issues 0
-
-repoStats
- firstCommit 2019
- commits 675
- committers 5
- files 94
- newestCommit 2023
-
-subreddit https://reddit.com/r/bee_lang
- memberCount
-  2017 29
-  2022 1273
-
-writtenIn svg html xml javascript markdown yaml

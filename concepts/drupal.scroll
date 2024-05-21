@@ -1,15 +1,17 @@
 import ../code/conceptPage.scroll
+
 id drupal
 name Drupal
 appeared 2000
+creators Dries Buytaert
 tags application
 website https://www.drupal.org
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity Drupal community
-domainName drupal.org
- registered 2001
- awisRank
-  2022 6109
 
 wikipedia https://en.wikipedia.org/wiki/Drupal
  related php gettext twig html wordpress mysql
@@ -21,15 +23,14 @@ wikipedia https://en.wikipedia.org/wiki/Drupal
  revisionCount 2995
  appeared 2000
 
+domainName drupal.org
+ registered 2001
+ awisRank
+  2022 6109
+
 linkedInSkill drupal
  2018 164174
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Drupal For Dummies|2009|Lynn Beighley|9208672|3.45|66|12
-
-creators Dries Buytaert

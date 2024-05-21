@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id skulpt
 name skulpt
 appeared 2009
-tags pl
 creators Scott Graham
-conceptDescription Skulpt is an entirely in-browser implementation of Python.
+tags pl
 website http://www.skulpt.org/
-domainName skulpt.org
- registered 2009
- awisRank
-  2022 2261322
+conceptDescription Skulpt is an entirely in-browser implementation of Python.
+
+isOpenSource true
+writtenIn python javascript html json c markdown css bourne-shell ejs xml yaml java restructuredtext bash
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 5721
+ committers 139
+ files 3219
+ newestCommit 2024
 
 githubRepo https://github.com/skulpt/skulpt
  firstCommit 2009
@@ -21,16 +29,9 @@ githubRepo https://github.com/skulpt/skulpt
  description Skulpt is a Javascript implementation of the Python programming language
  issues 255
 
-repoStats
- firstCommit 2009
- commits 5721
- committers 139
- files 3219
- newestCommit 2024
-
 jupyterKernel https://github.com/Calysto/skulpt_python
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
-writtenIn python javascript html json c markdown css bourne-shell ejs xml yaml java restructuredtext bash
+domainName skulpt.org
+ registered 2009
+ awisRank
+  2022 2261322

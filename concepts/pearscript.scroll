@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id pearscript
 name PearScript
 appeared 2016
-tags pl
 creators Ondřej Kocián
+tags pl
 website https://github.com/kocisov/pearscript
+
+writtenIn javascript json markdown
+compilesTo javascript
+repoStats
+ firstCommit 2016
+ commits 35
+ committers 2
+ files 11
+ newestCommit 2016
 country Malta
 originCommunity https://github.com/kocisov/pearscript/issues
-
-compilesTo javascript
 
 githubRepo https://github.com/kocisov/pearscript
  stars 9
@@ -17,12 +25,3 @@ githubRepo https://github.com/kocisov/pearscript
  created 2016
  updated 2016
  description Little language that compiles into Javascript
-
-repoStats
- firstCommit 2016
- commits 35
- committers 2
- files 11
- newestCommit 2016
-
-writtenIn javascript json markdown

@@ -1,13 +1,89 @@
 import ../code/conceptPage.scroll
+
 id cuda
 name CUDA
 appeared 2007
 tags pl
 website https://developer.nvidia.com/cuda-zone
-documentation https://docs.nvidia.com/cuda/
 standsFor Compute Unified Device Architecture
-originCommunity Nvidia
+
+isOpenSource true
+officialBlogUrl https://developer.nvidia.com/blog/tag/cuda/
 releaseNotesUrl https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+clocExtensions cu cuh
+fileType text
+documentation https://docs.nvidia.com/cuda/
+faqPageUrl https://developer.nvidia.com/cuda-faq
+downloadPageUrl https://developer.nvidia.com/cuda-downloads
+centralPackageRepositoryCount 0
+originCommunity Nvidia
+
+helloWorldCollection Compute Unified Device Architecture
+ // Hello world in CUDA
+ 
+ #include <stdio.h>
+  
+ const int N = 16;
+ const int blocksize = 16;
+  
+ __global__
+ void hello(char *a, int *b)
+ {
+ 	a[threadIdx.x] += b[threadIdx.x];
+ }
+  
+ int main()
+ {
+ 	char a[N] = "Hello \0\0\0\0\0\0";
+ 	int b[N] = {15, 10, 6, 0, -11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+  
+ 	char *ad;
+ 	int *bd;
+ 	const int csize = N*sizeof(char);
+ 	const int isize = N*sizeof(int);
+  
+ 	printf("%s", a);
+  
+ 	cudaMalloc( (void**)&ad, csize );
+ 	cudaMalloc( (void**)&bd, isize );
+ 	cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
+ 	cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
+ 	
+ 	dim3 dimBlock( blocksize, 1 );
+ 	dim3 dimGrid( 1, 1 );
+ 	hello<<<dimGrid, dimBlock>>>(ad, bd);
+ 	cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
+ 	cudaFree( ad );
+ 	cudaFree( bd );
+ 	
+ 	printf("%s\n", a);
+ 	return EXIT_SUCCESS;
+ }
+pygmentsHighlighter CUDA
+ filename c_like.py
+ fileExtensions cu cuh
+leachim6 Cuda
+ filepath c/Cuda.cu
+ fileExtensions cu
+ example
+  #include <stdio.h>
+  
+  __global__ void hello_world(){
+      printf("Hello World\n");
+  }
+  
+  int main() {
+      hello_world<<<1,1>>>();
+      return 0;
+  }
+  
+
+meetup https://www.meetup.com/topics/cuda
+ memberCount 9400
+ groupCount 32
+
+multiLineCommentTokens /* */
+printToken printf
 
 hasPrintDebugging true
 hasMultiLineComments true
@@ -18,9 +94,6 @@ hasComments true
  */
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
-
-multiLineCommentTokens /* */
-printToken printf
 
 wikipedia https://en.wikipedia.org/wiki/CUDA
  example
@@ -39,26 +112,10 @@ wikipedia https://en.wikipedia.org/wiki/CUDA
  revisionCount 1315
  appeared 2007
 
-githubLanguage Cuda
- fileExtensions cu cuh
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  rapidsai cudf https://github.com/rapidsai.png https://github.com/rapidsai/cudf Cuda #3A4E3A 1931 274 187 "cuDF - GPU DataFrame Library"
-  DeepGraphLearning graphvite https://github.com/DeepGraphLearning.png https://github.com/DeepGraphLearning/graphvite Cuda #3A4E3A 433 47 285 "A general and high-performance graph embedding system for various applications"
- trendingProjectsCount 3
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.cuda-c++
- repos 18135
 githubBigQuery Cuda
  repos 4379
  users 3764
 
-pygmentsHighlighter CUDA
- filename c_like.py
- fileExtensions cu cuh
 linguistGrammarRepo https://github.com/harrism/sublimetext-cuda-cpp
  firstCommit 2012
  lastCommit 2017
@@ -113,84 +170,6 @@ linguistGrammarRepo https://github.com/harrism/sublimetext-cuda-cpp
       return 0;
   }
 
-helloWorldCollection Compute Unified Device Architecture
- // Hello world in CUDA
- 
- #include <stdio.h>
-  
- const int N = 16;
- const int blocksize = 16;
-  
- __global__
- void hello(char *a, int *b)
- {
- 	a[threadIdx.x] += b[threadIdx.x];
- }
-  
- int main()
- {
- 	char a[N] = "Hello \0\0\0\0\0\0";
- 	int b[N] = {15, 10, 6, 0, -11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-  
- 	char *ad;
- 	int *bd;
- 	const int csize = N*sizeof(char);
- 	const int isize = N*sizeof(int);
-  
- 	printf("%s", a);
-  
- 	cudaMalloc( (void**)&ad, csize );
- 	cudaMalloc( (void**)&bd, isize );
- 	cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
- 	cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
- 	
- 	dim3 dimBlock( blocksize, 1 );
- 	dim3 dimGrid( 1, 1 );
- 	hello<<<dimGrid, dimBlock>>>(ad, bd);
- 	cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
- 	cudaFree( ad );
- 	cudaFree( bd );
- 	
- 	printf("%s\n", a);
- 	return EXIT_SUCCESS;
- }
-leachim6 Cuda
- filepath c/Cuda.cu
- fileExtensions cu
- example
-  #include <stdio.h>
-  
-  __global__ void hello_world(){
-      printf("Hello World\n");
-  }
-  
-  int main() {
-      hello_world<<<1,1>>>();
-      return 0;
-  }
-  
-
-indeedJobs cuda engineer
- 2017 483
-linkedInSkill cuda
- 2018 28572
-officialBlogUrl https://developer.nvidia.com/blog/tag/cuda/
-faqPageUrl https://developer.nvidia.com/cuda-faq
-downloadPageUrl https://developer.nvidia.com/cuda-downloads
-
-meetup https://www.meetup.com/topics/cuda
- memberCount 9400
- groupCount 32
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Cuda by Example: An Introduction to General-Purpose Gpu Programming|2010|Jason Sanders|12911195|4.03|131|13
- Professional Cuda C Programming|2014|John Cheng|39965022|4.14|7|0
-
 isbndb 33
  year|publisher|title|authors|isbn13
  2010|Addison-Wesley Professional|CUDA by Example: An Introduction to General-Purpose GPU Programming|Sanders / Kandrot, Jason|9780131387683
@@ -227,6 +206,25 @@ isbndb 33
  20180423|Springer Nature|Deep Belief Nets in C   and CUDA C: Volume 1|Timothy Masters|9781484235911
  2019-01-23|LAP LAMBERT Academic Publishing|Novel Open Source Morphology Using GPU Processing With LTU- CUDA|Jagannathan Gnanasekaran|9786139444151
 
+githubLanguage Cuda
+ fileExtensions cu cuh
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rapidsai cudf https://github.com/rapidsai.png https://github.com/rapidsai/cudf Cuda #3A4E3A 1931 274 187 "cuDF - GPU DataFrame Library"
+  DeepGraphLearning graphvite https://github.com/DeepGraphLearning.png https://github.com/DeepGraphLearning/graphvite Cuda #3A4E3A 433 47 285 "A general and high-performance graph embedding system for various applications"
+ trendingProjectsCount 3
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.cuda-c++
+ repos 18135
+
+indeedJobs cuda engineer
+ 2017 483
+linkedInSkill cuda
+ 2018 28572
+
 semanticScholar 29
  year|title|doi|citations|influentialCitations|authors|paperId
  2010|CUDA by Example: An Introduction to General-Purpose GPU Programming|10.12694/SCPE.V11I4.663|1084|118|Jie Cheng|64ce52ec9f550ddd980e209ca68ff38947cf9061
@@ -259,4 +257,7 @@ semanticScholar 29
  2019|Detecting Undefined Behaviors in CUDA C|10.1109/ACCESS.2019.2954143|1|0|Wentao Li and Jianhua Sun and Hao Chen|00add03c6fa715baf0ad2798848ffc1817bf6a7e
  2014|A Compiler Translate Directive-Based Language to Optimized CUDA|10.1109/HPCC.2014.162|1|0|Feng Li and Hong An and Weihao Liang and Xiaoqiang Li and Yichao Cheng and Xia Jiang|2b948c35fdb64183cc0a88fc9a84960187a15d6d
 
-clocExtensions cu cuh
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Cuda by Example: An Introduction to General-Purpose Gpu Programming|2010|Jason Sanders|12911195|4.03|131|13
+ Professional Cuda C Programming|2014|John Cheng|39965022|4.14|7|0

@@ -1,9 +1,22 @@
 import ../code/conceptPage.scroll
+
 id ejs
 name EJS
 appeared 2010
-tags template
 creators Tj Holowaychuk
+tags template
+
+isOpenSource true
+writtenIn ejs javascript html markdown make json yaml css
+clocExtensions ejs
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 228
+ committers 35
+ files 50
+ newestCommit 2015
 country United Kingdom
 originCommunity https://apex.sh
 
@@ -22,20 +35,6 @@ githubRepo https://github.com/tj/ejs
  description Embedded JavaScript templates for node
  issues 104
 
-repoStats
- firstCommit 2010
- commits 228
- committers 35
- files 50
- newestCommit 2015
-
-githubLanguage EJS
- fileExtensions ejs ect ejst jst
- trendingProjectsCount 0
- type markup
- aceMode ejs
- tmScope text.html.js
- repos 92857
 githubBigQuery EJS
  repos 614
  users 560
@@ -61,11 +60,12 @@ linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
     <% } %>
   </div>
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions ejs
-writtenIn ejs javascript html markdown make json yaml css
+githubLanguage EJS
+ fileExtensions ejs ect ejst jst
+ trendingProjectsCount 0
+ type markup
+ aceMode ejs
+ tmScope text.html.js
+ repos 92857

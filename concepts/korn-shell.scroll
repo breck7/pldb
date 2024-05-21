@@ -1,22 +1,40 @@
 import ../code/conceptPage.scroll
+
 id korn-shell
 name Korn shell
 appeared 1983
 tags pl
 website http://www.kornshell.org/
 aka ksh
+
+clocExtensions ksh
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/att
-domainName kornshell.org
- registered 2005
+
+rijuRepl https://riju.codes/ksh
+ example
+  echo "Hello, world!"
+  
+subreddit https://reddit.com/r/ksh
+ memberCount
+  2022 1839
+leachim6 KSH
+ filepath k/KSH.ksh
+ fileExtensions ksh
+ example
+  #!/bin/ksh
+  echo "Hello World"
+  
+
+printToken echo
+stringToken "
 
 hasHereDocs true
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken echo
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/KornShell
  related c unix bourne-shell emacs-editor vi-editor bash motif-software tcl arexx
@@ -28,31 +46,12 @@ wikipedia https://en.wikipedia.org/wiki/KornShell
  revisionCount 351
  appeared 1983
 
-leachim6 KSH
- filepath k/KSH.ksh
- fileExtensions ksh
- example
-  #!/bin/ksh
-  echo "Hello World"
-  
-
-rijuRepl https://riju.codes/ksh
- example
-  echo "Hello, world!"
-  
-
-subreddit https://reddit.com/r/ksh
- memberCount
-  2022 1839
-
-tiobe Korn shell
 hopl https://hopl.info/showlanguage.prx?exp=3481
+tiobe Korn shell
 
-fileType text
-centralPackageRepositoryCount 0
+domainName kornshell.org
+ registered 2005
 
 isbndb 0
 
 semanticScholar 0
-
-clocExtensions ksh

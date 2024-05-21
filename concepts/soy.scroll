@@ -1,24 +1,14 @@
 import ../code/conceptPage.scroll
+
 id soy
 name Soy
 appeared 2008
 tags template
-reference https://godoc.org/github.com/robfig/soy
 aka Google Closure Templates
+
 fileExtensions soy
 originCommunity Google
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference https://godoc.org/github.com/robfig/soy
 
 example
  /**
@@ -41,5 +31,17 @@ example
      No additional people to greet.
    {/foreach}
  {/template}
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 semanticScholar 0

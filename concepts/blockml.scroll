@@ -1,24 +1,20 @@
 import ../code/conceptPage.scroll
+
 id blockml
 name blockml
 appeared 2014
 tags textMarkup
 website http://blockml.awwapps.com
+
+writtenIn css objective-c xml json markdown scss javascript c html svg bourne-shell
+repoStats
+ firstCommit 2013
+ commits 160
+ committers 3
+ files 286
+ newestCommit 2017
 country Germany
 originCommunity Aww Apps
-domainName blockml.awwapps.com
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-hasBooleans true
-
-multiLineCommentTokens /* */
-booleanTokens true false
 
 example
  /*
@@ -168,6 +164,7 @@ example
  ][LAMBDACALCULUS]/* Lambda calculus */
  
  ]/* Mathematical concepts behind Lisp */
+twitter https://twitter.com/awwapps
 
 githubRepo https://github.com/Lindemann/BlockML
  firstCommit 2013
@@ -179,17 +176,20 @@ githubRepo https://github.com/Lindemann/BlockML
  description BlockML is a lightweight markup language for scientific documents.
  issues 23
 
-repoStats
- firstCommit 2013
- commits 160
- committers 3
- files 286
- newestCommit 2017
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
+
+domainName blockml.awwapps.com
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  7698827|Show HN: BlockML – A markup language for scientific documents|2014-05-05 14:47:24 UTC|1399301244|Lindemann|0|3
-
-twitter https://twitter.com/awwapps
-
-writtenIn css objective-c xml json markdown scss javascript c html svg bourne-shell

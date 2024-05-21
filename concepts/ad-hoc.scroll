@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id ad-hoc
 name Ad-hoc
 appeared 2017
 tags pl
-conceptDescription <a href='https://github.com/pera/ad-hoc'>Ad-hoc</a> is an experimental programming language currently supporting the following features: first-class functions, immutability, lambda terms, recursion, closures, strict and non-strict evaluation, lexical and dynamic scopes, and deep binding.
 website https://gitlab.com/trobador/ad-hoc
+conceptDescription <a href='https://github.com/pera/ad-hoc'>Ad-hoc</a> is an experimental programming language currently supporting the following features: first-class functions, immutability, lambda terms, recursion, closures, strict and non-strict evaluation, lexical and dynamic scopes, and deep binding.
+
+isOpenSource true
+writtenIn c vim-script yacc lex markdown expect m4 make
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 64
+ committers 2
+ files 19
+ newestCommit 2017
 
 githubRepo https://github.com/pera/ad-hoc
  stars 9
@@ -15,16 +27,3 @@ githubRepo https://github.com/pera/ad-hoc
  firstCommit 2017
  description Ad-hoc programming language
  issues 0
-
-repoStats
- firstCommit 2017
- commits 64
- committers 2
- files 19
- newestCommit 2017
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c vim-script yacc lex markdown expect m4 make

@@ -1,22 +1,13 @@
 import ../code/conceptPage.scroll
+
 id fishlang
 name ><>
 appeared 2009
 tags esolang
+
+esolang https://esolangs.org/wiki/Fish
 country Unknown
 originCommunity https://esolangs.org
-
-hasStrings true
- "Hello world"
-
-stringToken "
-
-leachim6 ><>
- filepath #/><>
- example
-  "Hello World"r\
-            o;!?l<
-  
 
 rijuRepl https://riju.codes/fishlang
  example
@@ -26,5 +17,14 @@ rijuRepl https://riju.codes/fishlang
  description Stack-based, reflective, two-dimensional esoteric programming language
  fileExtensions fish
  gitRepo https://gist.github.com/anonymous/6392418
+leachim6 ><>
+ filepath #/><>
+ example
+  "Hello World"r\
+            o;!?l<
+  
 
-esolang https://esolangs.org/wiki/Fish
+stringToken "
+
+hasStrings true
+ "Hello world"

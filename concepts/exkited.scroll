@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id exkited
 name exkited
 appeared 2018
-tags template
 creators Brandon Barber
+tags template
 website https://exkited.com
+
+writtenIn json javascript markdown ejs
+repoStats
+ firstCommit 2018
+ commits 19
+ committers 2
+ files 12
+ newestCommit 2018
 country United States
 originCommunity https://exkited.com
-domainName exkited.com
- registered 2020
 
 example
  <html>
@@ -61,11 +68,5 @@ githubRepo https://github.com/maelswarm/exkited
  forks 0
  issues 0
 
-repoStats
- firstCommit 2018
- commits 19
- committers 2
- files 12
- newestCommit 2018
-
-writtenIn json javascript markdown ejs
+domainName exkited.com
+ registered 2020

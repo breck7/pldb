@@ -1,12 +1,37 @@
 import ../code/conceptPage.scroll
+
 id k
 name K
 appeared 1993
-tags pl
 creators Arthur Whitney
+tags pl
 conceptDescription K is like APL, but K restricts itself to the ASCII character set.
+
+fileType text
+wordRank 381
+rosettaCode http://www.rosettacode.org/wiki/Category:K
+centralPackageRepositoryCount 0
 country United States
 originCommunity Kx Systems
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+helloWorldCollection K
+ / Hello world in K
+ 
+ "Hello world!"
+pygmentsHighlighter K
+ filename q.py
+ fileExtensions k
+leachim6 K
+ filepath k/K.k
+ fileExtensions k
+ example
+  "Hello World\n"
+
+lineCommentToken /
 
 hasComments true
 hasLineComments true
@@ -21,8 +46,6 @@ hasIntegers true
 hasBinaryNumbers true
  / [01]+b
 
-lineCommentToken /
-
 wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
  related scheme q apl sql j sql-92 solaris linux
  summary K is a proprietary array processing language developed by Arthur Whitney and commercialized by Kx Systems. Since then, an open-source implementation known as Kona has also been developed. The language serves as the foundation for kdb+, an in-memory, column-based database, and other related financial products. The language, originally developed in 1993, is a variant of APL and contains elements of Scheme. Advocates of the language emphasize its speed, facility in handling arrays, and expressive syntax.
@@ -33,30 +56,7 @@ wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
  revisionCount 221
  appeared 1993
 
-pygmentsHighlighter K
- filename q.py
- fileExtensions k
-
-projectEuler APL/J/K
- memberCount
-  2022 2478
-  2019 332
-helloWorldCollection K
- / Hello world in K
- 
- "Hello world!"
-leachim6 K
- filepath k/K.k
- fileExtensions k
- example
-  "Hello World\n"
-rosettaCode http://www.rosettacode.org/wiki/Category:K
-
 hopl https://hopl.info/showlanguage.prx?exp=2142
-
-fileType text
-wordRank 381
-centralPackageRepositoryCount 0
 
 isbndb 0
 

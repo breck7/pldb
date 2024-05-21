@@ -1,13 +1,30 @@
 import ../code/conceptPage.scroll
+
 id ubercode
 name Ubercode
 appeared 2005
 tags pl
 
-hasStrings true
- "Hello world"
+centralPackageRepositoryCount 0
+
+leachim6 Ubercode
+ filepath u/Ubercode.cls
+ fileExtensions cls
+ example
+    Ubercode 1 class HelloWorld
+  
+    public function Main()
+    code
+      call Msgbox("Hello World", "My first program", "OK")
+    end function
+  
+    end class
+  
 
 stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Ubercode
  example
@@ -33,19 +50,3 @@ wikipedia https://en.wikipedia.org/wiki/Ubercode
  revisionCount 29
  dailyPageViews 9
  appeared 2005
-
-leachim6 Ubercode
- filepath u/Ubercode.cls
- fileExtensions cls
- example
-    Ubercode 1 class HelloWorld
-  
-    public function Main()
-    code
-      call Msgbox("Hello World", "My first program", "OK")
-    end function
-  
-    end class
-  
-
-centralPackageRepositoryCount 0

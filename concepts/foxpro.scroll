@@ -1,17 +1,31 @@
 import ../code/conceptPage.scroll
+
 id foxpro
 name FoxPRO
 appeared 1992
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Fox Software
+
+pygmentsHighlighter FoxPro
+ filename foxpro.py
+ fileExtensions PRG prg
+leachim6 FoxPro
+ filepath f/FoxPro.prg
+ fileExtensions prg
+ example
+  ? "Hello World"
+  
+
+stringToken "
 
 hasStrings true
  "Hello world"
 hasLineComments true
 hasComments true
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/FoxPro
  related visual-foxpro dbase linux freebsd
@@ -23,29 +37,7 @@ wikipedia https://en.wikipedia.org/wiki/FoxPro
  dailyPageViews 244
  appeared 1992
 
-pygmentsHighlighter FoxPro
- filename foxpro.py
- fileExtensions PRG prg
-
-leachim6 FoxPro
- filepath f/FoxPro.prg
- fileExtensions prg
- example
-  ? "Hello World"
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=2056
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Visual FoxPro Programming Basics|1995|Whil Hentzen|3539454|5.00|4|1
- Programming Visual FoxPro 3.0|1995|Whil Hentzen|3307531|5.00|2|0
- Programmer's Guide to FoxPro 2.6|1994|Howard Dickler|7215033|5.00|1|0
- FoxPro 2.6 for Windows for Dummies|1994|John Kaufeld|2391631|0.0|0|0
- Visual Foxpro 5 for Dummies|1997|Jim Keogh|1377516|0.0|0|0
 
 isbndb 48
  year|publisher|title|authors|isbn13
@@ -97,3 +89,11 @@ isbndb 48
  1993|Brady|Foxpro Event-driven Programming: How To Build Multi-window Applications/book And Disk|Dick Bard|9781566860994
  1993|Microtrend|Foxpro 2.5 For Windows Programming Guide/book And Disk (lance A. Leventhal Microtrend Series)|Michael P. Antonovich|9780915391806
  1991|M & T Books|Foxpro 2: A Developer's Guide : Expert Guidance For Industrial-strength Programming (dbms Magazine's Database Foundation Series)|Hamilton M. Ahlo and Randy Brown|9781558510838
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Visual FoxPro Programming Basics|1995|Whil Hentzen|3539454|5.00|4|1
+ Programming Visual FoxPro 3.0|1995|Whil Hentzen|3307531|5.00|2|0
+ Programmer's Guide to FoxPro 2.6|1994|Howard Dickler|7215033|5.00|1|0
+ FoxPro 2.6 for Windows for Dummies|1994|John Kaufeld|2391631|0.0|0|0
+ Visual Foxpro 5 for Dummies|1997|Jim Keogh|1377516|0.0|0|0

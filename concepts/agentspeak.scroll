@@ -1,11 +1,14 @@
 import ../code/conceptPage.scroll
+
 id agentspeak
 name AgentSpeak
 appeared 1994
-tags pl
 creators Anand Rao
-reference https://semanticscholar.org/paper/ad65b6f0794c435b76cc4ef5defa4f2dea6dc6fd
+tags pl
+
+centralPackageRepositoryCount 0
 originCommunity Federal University of Rio Grande do Sul && University of Massachusetts Amherst
+reference https://semanticscholar.org/paper/ad65b6f0794c435b76cc4ef5defa4f2dea6dc6fd
 
 wikipedia https://en.wikipedia.org/wiki/AgentSpeak
  summary AgentSpeak is an agent-oriented programming language. It is based on logic programming and the BDI architecture for (cognitive) autonomous agents. The language was originally called AgentSpeak(L), but became more popular as AgentSpeak, a term that is also used to refer to the variants of the original language.
@@ -16,5 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/AgentSpeak
  appeared 1996
 
 hopl https://hopl.info/showlanguage.prx?exp=7800
-
-centralPackageRepositoryCount 0

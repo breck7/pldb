@@ -1,26 +1,23 @@
 import ../code/conceptPage.scroll
+
 id flow
 name Flow
 appeared 2014
 tags pl
-conceptDescription Javascript with static type checking.
 website https://flow.org/
 webRepl https://flow.org/try/
+conceptDescription Javascript with static type checking.
+
+writtenIn javascript json ocaml expect bourne-shell diff markdown c css make cpp dockerfile svg jsx yaml bash powershell python
 documentation https://flow.org/en/docs/
+repoStats
+ firstCommit 2014
+ commits 20344
+ committers 1026
+ files 14755
+ newestCommit 2024
 country United States
 originCommunity Facebook
-domainName flow.org
- registered 2002
- awisRank
-  2022 431104
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  // @flow
@@ -29,6 +26,7 @@ example
  }
  
  square("2"); // Error!
+twitter https://twitter.com/flowtype
 
 githubRepo https://github.com/facebook/flow
  firstCommit 2014
@@ -40,14 +38,18 @@ githubRepo https://github.com/facebook/flow
  description Adds static typing to JavaScript to improve developer productivity and code quality.
  issues 2478
 
-repoStats
- firstCommit 2014
- commits 20344
- committers 1026
- files 14755
- newestCommit 2024
+lineCommentToken //
 
-twitter https://twitter.com/flowtype
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName flow.org
+ registered 2002
+ awisRank
+  2022 431104
 
 isbndb 14
  year|publisher|title|authors|isbn13
@@ -93,5 +95,3 @@ semanticScholar 25
  1990|IDF: A graphical data flow programming language for image processing and computer vision|10.1109/ICSMC.1990.142126|8|0|N. Hunt|e9a89e9b2e73df8300010609a9f57367201de05c
  2009|Not-so-free data flow in a visual data flow programming language|10.1109/ICCSIT.2009.5234876|3|0|M. Marttila-Kontio and Risto T. Honkanen|6ba2dc2bdf18d732e26fad12bef375f2af5e36ff
  1997|BDL-a nondeterministic data flow programming language with backtracking|10.1109/VL.1997.626610|2|0|A. Schurr|9be8d906cf0af3bd0e193100b2c4c2b0536b1a66
-
-writtenIn javascript json ocaml expect bourne-shell diff markdown c css make cpp dockerfile svg jsx yaml bash powershell python

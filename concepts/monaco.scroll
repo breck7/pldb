@@ -1,15 +1,26 @@
 import ../code/conceptPage.scroll
+
 id monaco
 name Monaco Editor
 appeared 2016
 tags editor
-conceptDescription The Monaco Editor is the code editor that powers VS Code.
 website https://microsoft.github.io/monaco-editor/
 webRepl https://microsoft.github.io/monaco-editor/playground.html
+conceptDescription The Monaco Editor is the code editor that powers VS Code.
+
+isOpenSource true
+writtenIn typescript json javascript html markdown yaml css svg scss bourne-shell
+relatedConcepts codemirror
+fileType na
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 3447
+ committers 352
+ files 786
 country United States
 originCommunity Microsoft
-
-relatedConcepts codemirror
 
 githubRepo https://github.com/Microsoft/monaco-editor
  firstCommit 2016
@@ -20,15 +31,3 @@ githubRepo https://github.com/Microsoft/monaco-editor
  updated 2022
  description A browser based code editor
  issues 704
-
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2016
- newestCommit 2024
- commits 3447
- committers 352
- files 786
-writtenIn typescript json javascript html markdown yaml css svg scss bourne-shell

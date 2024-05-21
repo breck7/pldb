@@ -1,23 +1,29 @@
 import ../code/conceptPage.scroll
+
 id clay
 name clay
 appeared 2010
-tags pl
 creators KS Sreeram and Joe Groff
+tags pl
 website http://claylabs.com/clay
-reference https://bitbucket.org/kssreeram/clay/src/default/
+
+writtenIn cpp make xml python cmake c java markdown vim-script go bourne-shell css svg lisp
+repoStats
+ firstCommit 2010
+ commits 8315
+ committers 40
+ files 1530
+ newestCommit 2014
 country Various
 originCommunity https://claylabs.com/
+projectEuler Clay
+ memberCount
+  2022 5
+reference https://bitbucket.org/kssreeram/clay/src/default/
 
-hasPrintDebugging true
-hasHexadecimals true
-hasIntegers true
-hasLineComments true
-hasMultiLineComments true
-hasComments true
-
-printToken println
-
+pygmentsHighlighter Clay
+ filename c_like.py
+ fileExtensions clay
 example
  import printer.(println);
  
@@ -61,6 +67,7 @@ example
      println("factorial(", n, ") = ", f);
      return 0;
  }
+twitter https://twitter.com/claylabs
 
 githubRepo https://github.com/jckarter/clay
  firstCommit 2010
@@ -72,23 +79,13 @@ githubRepo https://github.com/jckarter/clay
  description The Clay programming language
  issues 63
 
-repoStats
- firstCommit 2010
- commits 8315
- committers 40
- files 1530
- newestCommit 2014
+printToken println
 
-pygmentsHighlighter Clay
- filename c_like.py
- fileExtensions clay
-
-projectEuler Clay
- memberCount
-  2022 5
-
-twitter https://twitter.com/claylabs
+hasPrintDebugging true
+hasHexadecimals true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 isbndb 0
-
-writtenIn cpp make xml python cmake c java markdown vim-script go bourne-shell css svg lisp

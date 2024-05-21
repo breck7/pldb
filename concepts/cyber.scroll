@@ -1,37 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cyber
 name Cyber
 appeared 2022
 tags pl
-conceptDescription Cyber is a new language for fast, efficient, and concurrent scripting.
 website https://cyberscript.dev/
+conceptDescription Cyber is a new language for fast, efficient, and concurrent scripting.
 
-hasImports true
- import m 'math'
-hasStrings true
- 'World'
-hasForEachLoops true
- for worlds each w:
-   print 'Hello, {w}!'
-hasSemanticIndentation true
-hasFunctions true
- func fib(n int) int:
-    coyield
-    if n < 2:
-        return n
-    return fib(n - 1) + fib(n - 2)
-hasPrintDebugging true
- print '{res} {count}'
-hasAssignment true
- count = 0
-hasLineComments true
- -- Counts iterations.
-hasIntegers true
- count = 0
-hasWhileLoops true
- while fiber.status() != #done:
-   res = coresume fiber
-   count += 1
+writtenIn zig c markdown javascript lua yaml python css java json php ruby vim-script cpp xml perl html bourne-shell wasm go rust
+repoStats
+ firstCommit 2022
+ commits 1308
+ committers 10
+ files 500
+ newestCommit 2024
 
 example
  import m 'math'
@@ -63,11 +45,29 @@ githubRepo https://github.com/fubark/cyber
  description Fast and concurrent scripting.
  issues 10
 
-repoStats
- firstCommit 2022
- commits 1308
- committers 10
- files 500
- newestCommit 2024
-
-writtenIn zig c markdown javascript lua yaml python css java json php ruby vim-script cpp xml perl html bourne-shell wasm go rust
+hasImports true
+ import m 'math'
+hasStrings true
+ 'World'
+hasForEachLoops true
+ for worlds each w:
+   print 'Hello, {w}!'
+hasSemanticIndentation true
+hasFunctions true
+ func fib(n int) int:
+    coyield
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+hasPrintDebugging true
+ print '{res} {count}'
+hasAssignment true
+ count = 0
+hasLineComments true
+ -- Counts iterations.
+hasIntegers true
+ count = 0
+hasWhileLoops true
+ while fiber.status() != #done:
+   res = coresume fiber
+   count += 1

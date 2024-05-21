@@ -1,13 +1,37 @@
 import ../code/conceptPage.scroll
+
 id yaml
 name YAML
 appeared 2001
-tags dataNotation
 creators Clark Evans and Oren Ben-Kiki and Ingy döt Net
+tags dataNotation
 website http://www.yaml.org/spec/1.2/spec.html#Introduction
-documentation https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
-spec https://yaml.org/spec/1.2.2/
 standsFor YAML Ain't Markup Language
+
+spec https://yaml.org/spec/1.2.2/
+clocExtensions clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql
+fileType text
+documentation https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+monaco yaml
+codeMirror yaml
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter YAML
+ filename data.py
+ fileExtensions yaml yml
+rijuRepl https://riju.codes/yaml
+ example
+  output: "Hello, world!"
+  
+leachim6 YAML
+ filepath y/YAML.yaml
+ fileExtensions yaml
+ example
+  hello: world
+languageServerProtocolProject https://github.com/redhat-developer/yaml-language-server
+ writtenIn typescript
+
+lineCommentToken #
 
 hasSemanticIndentation true
 hasLineComments true
@@ -21,8 +45,6 @@ hasSets true
    ? Ken Griffey
  # Flow style
  baseball teams: !!set { Boston Red Sox, Detroit Tigers, New York Yankees }
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/YAML
  example
@@ -46,26 +68,10 @@ wikipedia https://en.wikipedia.org/wiki/YAML
  revisionCount 1089
  appeared 2001
 
-githubLanguage YAML
- fileExtensions yml mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yamlsed ymlmysql
- trendingProjectsCount 0
- type data
- filenames .clang-format .clang-tidy .gemrc CITATION.cff glide.lock yarn.lock
- aceMode yaml
- codemirrorMode yaml
- codemirrorMimeType text/x-yaml
- tmScope source.yaml
- aliases yml
- repos 525
 githubBigQuery YAML
  repos 13
  users 12
 
-monaco yaml
-codeMirror yaml
-pygmentsHighlighter YAML
- filename data.py
- fileExtensions yaml yml
 linguistGrammarRepo https://github.com/atom/language-yaml
  firstCommit 2013
  lastCommit 2018
@@ -90,30 +96,24 @@ linguistGrammarRepo https://github.com/atom/language-yaml
     - include: source.r
   keyEquivalent: ^~R
   
-languageServerProtocolProject https://github.com/redhat-developer/yaml-language-server
- writtenIn typescript
 
-leachim6 YAML
- filepath y/YAML.yaml
- fileExtensions yaml
- example
-  hello: world
+isbndb 0
 
-rijuRepl https://riju.codes/yaml
- example
-  output: "Hello, world!"
-  
+githubLanguage YAML
+ fileExtensions yml mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yamlsed ymlmysql
+ trendingProjectsCount 0
+ type data
+ filenames .clang-format .clang-tidy .gemrc CITATION.cff glide.lock yarn.lock
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
+ aliases yml
+ repos 525
 
 linkedInSkill yaml
  2018 6065
 
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
-
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|Laughter in the Wild: A Study Into DoS Vulnerabilities in YAML Libraries|10.1109/TrustCom/BigDataSE.2019.00053|1|0|Shawn Rasheed and Jens Dietrich and Amjed Tahir|06a260d68293e8bd8860647df8f9e2336c35d5fb
-
-clocExtensions clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql

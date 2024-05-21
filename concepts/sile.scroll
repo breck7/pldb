@@ -1,20 +1,24 @@
 import ../code/conceptPage.scroll
+
 id sile
 name sile
 appeared 2012
 tags textMarkup
-conceptDescription SILE is a typesetting system. Its job is to produce beautiful printed documents from raw content.
 website https://sile-typesetter.org
-reference https://tug.org/TUGboat/tb38-1/tb118cozens.pdf
-reference https://news.ycombinator.com/item?id=22393099
+conceptDescription SILE is a typesetting system. Its job is to produce beautiful printed documents from raw content.
+
+writtenIn lua yaml xml c m4 bourne-shell diff nix svg markdown make cmake json cpp tex objective-c dockerfile javascript
+relatedConcepts latex
+repoStats
+ firstCommit 2012
+ commits 6310
+ committers 79
+ files 797
+ newestCommit 2024
 country Australia
 originCommunity Worldview Center for Intercultural Studies
-domainName sile-typesetter.org
- registered 2014
- awisRank
-  2022 7558156
-
-relatedConcepts latex
+reference https://tug.org/TUGboat/tb38-1/tb118cozens.pdf
+reference https://news.ycombinator.com/item?id=22393099
 
 githubRepo https://github.com/sile-typesetter/sile
  firstCommit 2012
@@ -26,11 +30,7 @@ githubRepo https://github.com/sile-typesetter/sile
  description Simon’s Improved Layout Engine
  issues 324
 
-repoStats
- firstCommit 2012
- commits 6310
- committers 79
- files 797
- newestCommit 2024
-
-writtenIn lua yaml xml c m4 bourne-shell diff nix svg markdown make cmake json cpp tex objective-c dockerfile javascript
+domainName sile-typesetter.org
+ registered 2014
+ awisRank
+  2022 7558156

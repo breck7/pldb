@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id drakon
 name DRAKON
 appeared 1996
-tags pl
-isPublicDomain true
 creators Stepan Mitkin
+tags pl
 website https://drakon-editor.com/
+
+isPublicDomain true
+writtenIn c csharp autohotkey bash erlang bourne-shell xml html javascript python java lua cpp sql objective-c go d markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 175
+ committers 9
+ files 633
+ newestCommit 2020
 country Russia
 originCommunity Soviet space program
-domainName drakon-editor.com
- registered 2015
 
 githubRepo https://github.com/stepan-mitkin/drakon_editor
  firstCommit 2014
@@ -20,13 +29,6 @@ githubRepo https://github.com/stepan-mitkin/drakon_editor
  updated 2022
  description DRAKON Editor
  issues 40
-
-repoStats
- firstCommit 2014
- commits 175
- committers 9
- files 633
- newestCommit 2020
 
 wikipedia https://en.wikipedia.org/wiki/DRAKON
  example
@@ -40,9 +42,7 @@ wikipedia https://en.wikipedia.org/wiki/DRAKON
  revisionCount 208
  appeared 1996
 
-fileType text
-centralPackageRepositoryCount 0
+domainName drakon-editor.com
+ registered 2015
 
 isbndb 0
-
-writtenIn c csharp autohotkey bash erlang bourne-shell xml html javascript python java lua cpp sql objective-c go d markdown

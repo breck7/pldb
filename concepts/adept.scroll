@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id adept
 name Adept
 appeared 2018
-tags pl
 creators Isaac Shelton
-conceptDescription A blazing fast language for general purpose programming.
+tags pl
 website https://github.com/AdeptLanguage/Adept
+conceptDescription A blazing fast language for general purpose programming.
+
+writtenIn c ring markdown cmake python bourne-shell yaml json
+repoStats
+ firstCommit 2018
+ commits 996
+ committers 9
+ files 538
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/AdeptLanguage/
 
@@ -54,12 +63,3 @@ githubRepo https://github.com/AdeptLanguage/Adept
  created 2018
  updated 2022
  description The Adept Programming Language
-
-repoStats
- firstCommit 2018
- commits 996
- committers 9
- files 538
- newestCommit 2024
-
-writtenIn c ring markdown cmake python bourne-shell yaml json

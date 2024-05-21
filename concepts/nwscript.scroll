@@ -1,14 +1,28 @@
 import ../code/conceptPage.scroll
+
 id nwscript
 name NWScript
 appeared 2004
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity BioWare
+
+leachim6 NWScript
+ filepath n/NWScript.nss
+ fileExtensions nss
+ example
+  // Place in the OnClientEnter event of the module's properties
+  {
+      SendMessageToPC(GetEnteringObject(), "Hello World");
+  }
+  
+
+stringToken "
 
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/NWScript
  example
@@ -25,6 +39,10 @@ wikipedia https://en.wikipedia.org/wiki/NWScript
  dailyPageViews 11
  appeared 1975
 
+githubBigQuery NWScript
+ repos 1
+ users 1
+
 githubLanguage NWScript
  type programming
  fileExtensions nss
@@ -33,19 +51,3 @@ githubLanguage NWScript
  codemirrorMimeType text/x-csrc
  tmScope source.c.nwscript
  repos 78
-githubBigQuery NWScript
- repos 1
- users 1
-
-leachim6 NWScript
- filepath n/NWScript.nss
- fileExtensions nss
- example
-  // Place in the OnClientEnter event of the module's properties
-  {
-      SendMessageToPC(GetEnteringObject(), "Hello World");
-  }
-  
-
-fileType text
-centralPackageRepositoryCount 0

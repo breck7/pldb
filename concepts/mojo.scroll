@@ -1,21 +1,30 @@
 import ../code/conceptPage.scroll
+
 id mojo
 name Mojo
 appeared 2022
-tags pl
 creators Chris Lattner
-conceptDescription Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
+tags pl
 website https://www.modular.com/mojo
-documentation https://docs.modular.com/mojo/
+conceptDescription Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
+
+isOpenSource false
+writtenIn markdown jupyter-notebook yaml python bourne-shell cmake dockerfile
+influencedBy python c mlir
 fileExtensions mojo
+releaseNotesUrl https://docs.modular.com/mojo/changelog.html
+clocExtensions mojom
+documentation https://docs.modular.com/mojo/
+repoStats
+ firstCommit 2023
+ commits 2192
+ committers 104
+ files 304
+ newestCommit 2024
 country United States
 originCommunity Modular Inc
-releaseNotesUrl https://docs.modular.com/mojo/changelog.html
 
-influencedBy python c mlir
-
-lineCommentToken #
-
+discord https://www.discord.gg/modular
 example
  def softmax(lst):
    norm = np.exp(lst - np.max(lst))
@@ -38,16 +47,4 @@ githubRepo https://github.com/modularml/mojo
  description The Mojo Programming Language
  issues 15
 
-repoStats
- firstCommit 2023
- commits 2192
- committers 104
- files 304
- newestCommit 2024
-
-discord https://www.discord.gg/modular
-
-isOpenSource false
-
-clocExtensions mojom
-writtenIn markdown jupyter-notebook yaml python bourne-shell cmake dockerfile
+lineCommentToken #

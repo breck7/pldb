@@ -1,18 +1,25 @@
 import ../code/conceptPage.scroll
+
 id plantuml
 name plantuml
 appeared 2010
 tags textMarkup
 website http://plantuml.com/
+
+clocExtensions iuml plantuml pu puml wsd
 country United States
 originCommunity Ezoic Inc
+
+example
+ Bob->Alice : hello
+twitter https://twitter.com/plantuml
+
 domainName plantuml.com
  registered 2010
  awisRank
   2022 48102
 
-example
- Bob->Alice : hello
+isbndb 0
 
 githubLanguage PlantUML
  type data
@@ -20,9 +27,3 @@ githubLanguage PlantUML
  aceMode text
  tmScope source.wsd
  repos 5
-
-twitter https://twitter.com/plantuml
-
-isbndb 0
-
-clocExtensions iuml plantuml pu puml wsd

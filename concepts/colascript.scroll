@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id colascript
 name ColaScript
 appeared 2012
-tags pl
 creators Dan Onoshko
+tags pl
 website https://github.com/TrigenSoftware/ColaScript/wiki/A-Tour-of-the-ColaScript
+
+writtenIn javascript json html markdown
+compilesTo javascript
+repoStats
+ firstCommit 2012
+ commits 671
+ committers 43
+ files 48
+ newestCommit 2015
 country Georgia
 originCommunity TrigenSoftware
-
-compilesTo javascript
-writtenIn javascript json html markdown
 
 githubRepo https://github.com/TrigenSoftware/ColaScript
  stars 27
@@ -18,10 +25,3 @@ githubRepo https://github.com/TrigenSoftware/ColaScript
  created 2012
  updated 2015
  description ColaScript is the language that compiles into JavaScript. This language is similar to Dart, CoffeeScript, Python, Go and PHP, with some original ideas. Compiler based on UglifyJS2. You can try ColaScript here (stable) or here (dev). Learn more about ColaScript.
-
-repoStats
- firstCommit 2012
- commits 671
- committers 43
- files 48
- newestCommit 2015

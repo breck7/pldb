@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id wasmer
 name wasmer
 appeared 2018
-tags vm
 creators Syrus Akbary
+tags vm
 website https://wasmer.io
-domainName wasmer.io
- awisRank
-  2022 825153
+
+writtenIn rust wasm markdown toml svg c cpp graphql yaml bourne-shell xml python sql json dockerfile swift make html nix javascript diff php
+repoStats
+ firstCommit 2018
+ newestCommit 2024
+ commits 19897
+ committers 226
+ files 2062
+
+twitter https://twitter.com/wasmerio
 
 githubRepo https://github.com/wasmerio/wasmer
  firstCommit 2018
@@ -19,12 +27,6 @@ githubRepo https://github.com/wasmerio/wasmer
  description 🚀 The leading WebAssembly Runtime supporting WASI and Emscripten
  issues 152
 
-twitter https://twitter.com/wasmerio
-
-repoStats
- firstCommit 2018
- newestCommit 2024
- commits 19897
- committers 226
- files 2062
-writtenIn rust wasm markdown toml svg c cpp graphql yaml bourne-shell xml python sql json dockerfile swift make html nix javascript diff php
+domainName wasmer.io
+ awisRank
+  2022 825153

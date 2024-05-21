@@ -1,18 +1,41 @@
 import ../code/conceptPage.scroll
+
 id m4
 name M4
 appeared 1977
-tags pl
 creators Brian Kernighan and Dennis Ritchie
+tags pl
+
+tryItOnline m4
+clocExtensions ac m4
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:M4
+quineRelay M4
+centralPackageRepositoryCount 0
+ubuntuPackage m4
 country United States
 originCommunity AT&T Bell Laboratories
+
+helloWorldCollection M4
+ # Hello World for the m4 macro processor
+ Hello
+ 
+rijuRepl https://riju.codes/m4
+ example
+  errprint(`Hello, world!')
+  
+leachim6 M4
+ filepath m/M4.m4
+ fileExtensions m4
+ example
+  Hello
+
+lineCommentToken #
 
 hasComments true
 hasLineComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
  example
@@ -30,13 +53,9 @@ wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
  revisionCount 200
  appeared 1977
 
-githubLanguage M4
- fileExtensions m4 mc
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.m4
- repos 2405
+hopl https://hopl.info/showlanguage.prx?exp=766
+tiobe M4
+
 githubBigQuery M4
  repos 15666
  users 12126
@@ -84,36 +103,17 @@ linguistGrammarRepo https://github.com/Alhadis/language-etc
   </HTML>
   
 
-helloWorldCollection M4
- # Hello World for the m4 macro processor
- Hello
- 
-leachim6 M4
- filepath m/M4.m4
- fileExtensions m4
- example
-  Hello
-rosettaCode http://www.rosettacode.org/wiki/Category:M4
-quineRelay M4
-
-rijuRepl https://riju.codes/m4
- example
-  errprint(`Hello, world!')
-  
-tryItOnline m4
-
-tiobe M4
-hopl https://hopl.info/showlanguage.prx?exp=766
-
-ubuntuPackage m4
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  16-03-2016|Packt Publishing|ARM® Cortex® M4 Cookbook|Dr. Mark Fisher|9781782176510
  20171016|Springer Nature|Getting Started with Tiva ARM Cortex M4 Microcontrollers|Dhananjay V. Gadre; Sarthak Gupta|9788132237662
 
-semanticScholar 0
+githubLanguage M4
+ fileExtensions m4 mc
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.m4
+ repos 2405
 
-clocExtensions ac m4
+semanticScholar 0

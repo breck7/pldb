@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id s
 name S
 appeared 1976
 tags pl
 website http://ect.bell-labs.com/sl/S/
+
+fileType text
+wordRank 90
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell Laboratories
+
+pygmentsHighlighter S
+ filename r.py
+ fileExtensions S R .Rhistory .Rprofile .Renviron
 
 hasHexadecimals true
 
@@ -19,16 +28,8 @@ wikipedia https://en.wikipedia.org/wiki/S_(programming_language)
  revisionCount 164
  appeared 1976
 
-pygmentsHighlighter S
- filename r.py
- fileExtensions S R .Rhistory .Rprofile .Renviron
-
-tiobe S
 hopl https://hopl.info/showlanguage.prx?exp=1117
-
-fileType text
-wordRank 90
-centralPackageRepositoryCount 0
+tiobe S
 
 isbndb 3
  year|publisher|title|authors|isbn13

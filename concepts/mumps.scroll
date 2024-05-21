@@ -1,13 +1,51 @@
 import ../code/conceptPage.scroll
+
 id mumps
 name MUMPS
 appeared 1966
-tags pl
 creators Neil Pappalardo
-documentation https://mumps.sourceforge.net/docs.html
+tags pl
 aka m
+
+tryItOnline mumps
+clocExtensions mps m
+fileType text
+documentation https://mumps.sourceforge.net/docs.html
+antlr https://github.com/antlr/grammars-v4/tree/master/mumps
+codeMirror mumps
+rosettaCode http://www.rosettacode.org/wiki/Category:MUMPS
+centralPackageRepositoryCount 0
 country United States
 originCommunity MUMPS Development Committee
+projectEuler MUMPS
+ memberCount
+  2019 31
+  2022 38
+
+helloWorldCollection MUMPS
+ ; Hello World in Mumps-M
+  w !,"Hello World"
+rijuRepl https://riju.codes/mumps
+ example
+  main()
+    write "Hello, world!",!
+    quit
+  
+example
+ label1 ; This is a label
+     write "Hello World !",!
+     quit
+ 
+leachim6 Mumps
+ filepath m/Mumps.m
+ fileExtensions m
+ example
+   w "Hello World",!
+  
+
+lineCommentToken ;
+printToken w
+stringToken "
 
 hasLineComments true
  ; A comment
@@ -17,16 +55,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken ;
-printToken w
-stringToken "
-
-example
- label1 ; This is a label
-     write "Hello World !",!
-     quit
- 
 
 wikipedia https://en.wikipedia.org/wiki/MUMPS
  example
@@ -49,51 +77,12 @@ wikipedia https://en.wikipedia.org/wiki/MUMPS
  revisionCount 1017
  appeared 1966
 
-githubLanguage M
- fileExtensions mumps m
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode mumps
- codemirrorMimeType text/x-mumps
- tmScope none
- aliases mumps
- repos 2448
+hopl https://hopl.info/showlanguage.prx?exp=773
+tiobe MUMPS
+
 githubBigQuery M
  repos 4908
  users 4334
-
-antlr https://github.com/antlr/grammars-v4/tree/master/mumps
-codeMirror mumps
-
-projectEuler MUMPS
- memberCount
-  2019 31
-  2022 38
-helloWorldCollection MUMPS
- ; Hello World in Mumps-M
-  w !,"Hello World"
-leachim6 Mumps
- filepath m/Mumps.m
- fileExtensions m
- example
-   w "Hello World",!
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:MUMPS
-
-rijuRepl https://riju.codes/mumps
- example
-  main()
-    write "Hello, world!",!
-    quit
-  
-tryItOnline mumps
-
-tiobe MUMPS
-hopl https://hopl.info/showlanguage.prx?exp=773
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 10
  year|publisher|title|authors|isbn13
@@ -108,10 +97,19 @@ isbndb 10
  2011||Articles On Mumps Programming Language Family, Including|Hephaestus Books|9781244856448
  1982|Mumps Users' Group|Mumps Primer, Revised: An Introduction To The Interactive Programming System Of The Future|Richard F Walters|9780918118240
 
+githubLanguage M
+ fileExtensions mumps m
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode mumps
+ codemirrorMimeType text/x-mumps
+ tmScope none
+ aliases mumps
+ repos 2448
+
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  1976|A balanced view of MUMPS|10.1145/1164881.1164883|5|0|A. Wasserman and D. Sherertz|63ee3e847a63de9225b5131cecb8933785d77025
  1976|A balanced view of MUMPS|10.1145/800236.807089|3|0|A. Wasserman and D. Sherertz|4900e9669acd5516ce0dca745eb318088073379d
  1989|The MUMPS Programming Language|10.1007/978-1-4612-3488-3_23|2|0|B. Blum and H. Orthner|2c2554297b07cb462c80b1e7161a0353d5ddd290
-
-clocExtensions mps m

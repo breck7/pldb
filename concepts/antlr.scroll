@@ -1,33 +1,26 @@
 import ../code/conceptPage.scroll
+
 id antlr
 name ANTLR
 appeared 1992
+creators Terence Parr
 tags grammarLanguage
 website http://www.antlr.org
+
+isOpenSource true
+clocExtensions g g4
+fileType text
 documentation https://www.antlr.org/
 documentation https://www.antlr2.org/doc/
 documentation https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687234/ANTLR+v3+documentation
+antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
+rosettaCode http://www.rosettacode.org/wiki/Category:ANTLR
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of San Francisco
-domainName antlr.org
- registered 1997
- awisRank
-  2022 477725
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-hasBooleans true
-
-lineCommentToken //
-multiLineCommentTokens /* */
-booleanTokens true false
-
+pygmentsHighlighter ANTLR
+ filename parsers.py
 example
  /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
  // Derived from http://json.org
@@ -92,6 +85,21 @@ example
  WS
     : [ \t\n\r] + -> skip
     ;
+twitter https://twitter.com/the_antlr_guy
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
 
 wikipedia https://en.wikipedia.org/wiki/ANTLR
  example
@@ -110,6 +118,27 @@ wikipedia https://en.wikipedia.org/wiki/ANTLR
  revisionCount 253
  appeared 1989
 
+hopl https://hopl.info/showlanguage.prx?exp=1825
+
+domainName antlr.org
+ registered 1997
+ awisRank
+  2022 477725
+
+githubBigQuery ANTLR
+ repos 2866
+ users 2571
+
+linguistGrammarRepo https://github.com/textmate/antlr.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 5
+ commitCount 31
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 20130115|O'Reilly Media, Inc.|The Definitive ANTLR 4 Reference|Terence Parr|9781680505009
+
 githubLanguage ANTLR
  fileExtensions g4
  trendingProjects
@@ -120,40 +149,12 @@ githubLanguage ANTLR
  aceMode text
  tmScope source.antlr
  repos 1415
-githubBigQuery ANTLR
- repos 2866
- users 2571
-
-antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
-pygmentsHighlighter ANTLR
- filename parsers.py
-linguistGrammarRepo https://github.com/textmate/antlr.tmbundle
- firstCommit 2005
- lastCommit 2018
- committerCount 5
- commitCount 31
-
-rosettaCode http://www.rosettacode.org/wiki/Category:ANTLR
 
 indeedJobs antlr engineer
  2017 7
 linkedInSkill antlr
  2018 2312
 
-hopl https://hopl.info/showlanguage.prx?exp=1825
-
-twitter https://twitter.com/the_antlr_guy
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 20130115|O'Reilly Media, Inc.|The Definitive ANTLR 4 Reference|Terence Parr|9781680505009
-
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2018|Multilingual Detection of Code Clones Using ANTLR Grammar Definitions|10.1109/APSEC.2018.00088|7|0|Yuichi Semura and Norihiro Yoshida and Eunjong Choi and Katsuro Inoue|d52793ccd9657e79a6ec8087b84ac5148d7d6e6f
-
-creators Terence Parr
-clocExtensions g g4

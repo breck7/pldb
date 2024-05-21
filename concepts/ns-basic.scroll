@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id ns-basic
 name NS Basic
 appeared 1994
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country Canada
 originCommunity NSB Corporation
+
+lineCommentToken //
+stringToken "
 
 hasLineComments true
  // A comment
@@ -13,9 +20,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/NS_Basic
  example
@@ -31,6 +35,3 @@ wikipedia https://en.wikipedia.org/wiki/NS_Basic
  revisionCount 154
  dailyPageViews 17
  appeared 2018
-
-isOpenSource false
-centralPackageRepositoryCount 0

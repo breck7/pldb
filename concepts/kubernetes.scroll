@@ -1,13 +1,25 @@
 import ../code/conceptPage.scroll
+
 id kubernetes
 name Kubernetes
 appeared 2014
 tags application
 website https://kubernetes.io
+
+writtenIn go yaml markdown json bourne-shell protobuf make assembly-language dockerfile starlark bash powershell python c svg toml sed csv html z-shell
+packageRepository https://docs.helm.sh/
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 141133
+ committers 5251
+ files 24065
 country United States
 originCommunity Google
 
+subreddit https://www.reddit.com/r/kubernetes/
 gource https://www.youtube.com/watch?v=8ZSxYJ0IaTc
+
 githubRepo https://github.com/kubernetes/kubernetes
  stars 98042
  forks 35994
@@ -19,15 +31,3 @@ githubRepo https://github.com/kubernetes/kubernetes
 
 wikipedia https://en.wikipedia.org/wiki/Kubernetes
  dailyPageViews 2560
-
-subreddit https://www.reddit.com/r/kubernetes/
-
-packageRepository https://docs.helm.sh/
-
-repoStats
- firstCommit 2014
- newestCommit 2024
- commits 141133
- committers 5251
- files 24065
-writtenIn go yaml markdown json bourne-shell protobuf make assembly-language dockerfile starlark bash powershell python c svg toml sed csv html z-shell

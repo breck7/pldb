@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id multics
 name Multics
 appeared 1967
 tags pl
-reference https://semanticscholar.org/paper/bbdb16ebe3c71e7b6d32750ae61d0aab7ab72e84
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country Canada
 originCommunity University of Calgary
+reference https://semanticscholar.org/paper/bbdb16ebe3c71e7b6d32750ae61d0aab7ab72e84
 
 wikipedia https://en.wikipedia.org/wiki/Multics
  related pl-i assembly-language unix linux algol
@@ -17,9 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Multics
  appeared 1969
 
 hopl https://hopl.info/showlanguage.prx?exp=3513
-
-isOpenSource false
-centralPackageRepositoryCount 0
 
 isbndb 0
 

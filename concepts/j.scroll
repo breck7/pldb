@@ -1,20 +1,68 @@
 import ../code/conceptPage.scroll
+
 id j
 name J
 appeared 1990
-tags pl
 creators Kenneth E. Iverson and Roger Hui
+tags pl
 website http://www.jsoftware.com
+
+isOpenSource true
+writtenIn c assembly-language bourne-shell make xml markdown yaml cpp idl html
+tryItOnline j
+visualParadigm false
+fileType text
+wordRank 417
 documentation https://www.jsoftware.com/help/learning/contents.htm
-reference https://aplwiki.com/wiki/Jsoftware
+rosettaCode http://www.rosettacode.org/wiki/Category:J
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 5106
+ committers 11
+ files 1215
+ newestCommit 2024
 country United States
 originCommunity Jsoftware Inc
-domainName jsoftware.com
- registered 1996
- awisRank
-  2022 2232128
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+reference https://aplwiki.com/wiki/Jsoftware
 
-visualParadigm false
+helloWorldCollection J
+ NB. Hello World in J
+ 'Hello World' 1!:2(2)
+pygmentsHighlighter J
+ filename j.py
+ fileExtensions ijs
+rijuRepl https://riju.codes/j
+ example
+  echo 'Hello, world!'
+  
+leachim6 J
+ filepath j/J.ijs
+ fileExtensions ijs
+ example
+  #!/opt/local/bin/jc
+  echo 'Hello World'
+  exit ''
+  
+gource https://www.youtube.com/watch?v=DJyQnlVf95E
+
+githubRepo https://github.com/jsoftware/jsource
+ firstCommit 2016
+ stars 536
+ forks 72
+ subscribers 38
+ created 2016
+ updated 2022
+ description J engine source mirror
+ issues 125
+
+lineCommentToken NB.
+printToken echo
+stringToken '
 
 hasComments true
 hasLineComments true
@@ -28,28 +76,7 @@ hasFloats true
 hasIntegers true
  NB. _?\d+
 
-lineCommentToken NB.
-printToken echo
-stringToken '
-
-gource https://www.youtube.com/watch?v=DJyQnlVf95E
-githubRepo https://github.com/jsoftware/jsource
- firstCommit 2016
- stars 536
- forks 72
- subscribers 38
- created 2016
- updated 2022
- description J engine source mirror
- issues 125
-
-repoStats
- firstCommit 2016
- commits 5106
- committers 11
- files 1215
- newestCommit 2024
-
+jupyterKernel https://github.com/martin-saurer/jkernel
 wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
  example
   3 |. 1 0 1 1 0 0 1 1 1 1 1             NB. rotate
@@ -63,21 +90,18 @@ wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
  revisionCount 498
  appeared 1990
 
-githubLanguage J
- fileExtensions ijs
- trendingProjectsCount 0
- type programming
- interpreters jconsole
- aceMode text
- tmScope source.j
- repos 468
+hopl https://hopl.info/showlanguage.prx?exp=1558
+tiobe J
+
+domainName jsoftware.com
+ registered 1996
+ awisRank
+  2022 2232128
+
 githubBigQuery J
  repos 151
  users 124
 
-pygmentsHighlighter J
- filename j.py
- fileExtensions ijs
 linguistGrammarRepo https://github.com/tikkanz/JSyntax
  firstCommit 2014
  lastCommit 2018
@@ -90,42 +114,17 @@ linguistGrammarRepo https://github.com/tikkanz/JSyntax
   exit ''
   
 
-projectEuler APL/J/K
- memberCount
-  2022 2478
-  2019 332
-helloWorldCollection J
- NB. Hello World in J
- 'Hello World' 1!:2(2)
-leachim6 J
- filepath j/J.ijs
- fileExtensions ijs
- example
-  #!/opt/local/bin/jc
-  echo 'Hello World'
-  exit ''
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:J
-
-rijuRepl https://riju.codes/j
- example
-  echo 'Hello, world!'
-  
-tryItOnline j
-
-tiobe J
-hopl https://hopl.info/showlanguage.prx?exp=1558
-
-jupyterKernel https://github.com/martin-saurer/jkernel
-fileType text
-wordRank 417
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  |Firewall|Programming In C [Paperback] [Jan 01, 2011] DIXIT J B| J. B. Dixit|9789380298399
 
-semanticScholar 0
+githubLanguage J
+ fileExtensions ijs
+ trendingProjectsCount 0
+ type programming
+ interpreters jconsole
+ aceMode text
+ tmScope source.j
+ repos 468
 
-writtenIn c assembly-language bourne-shell make xml markdown yaml cpp idl html
+semanticScholar 0

@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id openedge-advanced-business-language
 name OpenEdge ABL
 appeared 2006
 tags pl
 aka abl
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Progress Software Corporation
+
+pygmentsHighlighter OpenEdge ABL
+ filename business.py
+ fileExtensions p cls
 
 hasHexadecimals true
 hasFloats true
@@ -27,21 +36,10 @@ wikipedia https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language
  dailyPageViews 98
  appeared 2006
 
-githubLanguage OpenEdge ABL
- fileExtensions p cls w
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.abl
- aliases progress or openedge or abl
- repos 72
 githubBigQuery OpenEdge ABL
  repos 2568
  users 2346
 
-pygmentsHighlighter OpenEdge ABL
- filename business.py
- fileExtensions p cls
 linguistGrammarRepo https://github.com/jfairbank/Sublime-Text-2-OpenEdge-ABL
  firstCommit 2012
  lastCommit 2016
@@ -52,6 +50,11 @@ linguistGrammarRepo https://github.com/jfairbank/Sublime-Text-2-OpenEdge-ABL
   MESSAGE "Hello, world!".
   
 
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+githubLanguage OpenEdge ABL
+ fileExtensions p cls w
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.abl
+ aliases progress or openedge or abl
+ repos 72

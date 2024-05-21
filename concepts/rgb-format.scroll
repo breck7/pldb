@@ -1,11 +1,13 @@
 import ../code/conceptPage.scroll
+
 id rgb-format
 name Silicon Graphics Image
 appeared 1996
 tags binaryDataFormat
-reference https://media.xiph.org/svt/SGIIMAGESPEC
+
 country United States
 originCommunity Silicon Graphics, Inc
+reference https://media.xiph.org/svt/SGIIMAGESPEC
 
 wikipedia https://en.wikipedia.org/wiki/Silicon_Graphics_Image
  summary Silicon Graphics Image (SGI) or the RGB file format is the native raster graphics file format for Silicon Graphics workstations. The format was invented by Paul Haeberli. It can be run-length encoded (RLE). Among others FFmpeg and ImageMagick support this format.

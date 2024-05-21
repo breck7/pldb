@@ -1,33 +1,21 @@
 import ../code/conceptPage.scroll
+
 id minid
 name MiniD
 appeared 2006
-tags pl
 creators Jarrett Billingsley
+tags pl
 website http://www.dsource.org/projects/minid
+
 renamedTo croc
+relatedConcepts croc
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity http://www.dsource.org/projects/minid
 
-relatedConcepts croc
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasHexadecimals true
- // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
-hasFloats true
- // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
-hasIntegers true
- // ([0-9][0-9_]*)(?![.eE])
-hasBinaryNumbers true
- // 0[bB][01][01_]*
-hasMultiLineComments true
-
-lineCommentToken //
-
+pygmentsHighlighter MiniD
+ filename d.py
 example
  module matrix
  
@@ -87,6 +75,23 @@ example
      writefln(mm[0][0], " ", mm[2][3], " ", mm[3][2], " ", mm[4][4])
  }
 
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+hasFloats true
+ // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
+hasIntegers true
+ // ([0-9][0-9_]*)(?![.eE])
+hasBinaryNumbers true
+ // 0[bB][01][01_]*
+hasMultiLineComments true
+
 wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
  example
   function first(x: array|string) = x[0]
@@ -110,9 +115,3 @@ githubLanguage MiniD
  aceMode text
  tmScope none
  repos 0
-
-pygmentsHighlighter MiniD
- filename d.py
-
-fileType text
-centralPackageRepositoryCount 0

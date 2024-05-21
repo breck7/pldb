@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id minilang
 name Minilang
 appeared 2016
-tags interpreter
 creators Raja Mukherji
+tags interpreter
 website https://minilang.readthedocs.io
+
+writtenIn xml restructuredtext c lua xsd python make yaml bourne-shell puppet markdown css assembly-language xslt diff
+repoStats
+ firstCommit 2017
+ commits 2002
+ committers 6
+ files 971
+ newestCommit 2024
 country Ireland
 originCommunity https://github.com/wrapl
 
@@ -17,11 +26,3 @@ githubRepo https://github.com/wrapl/minilang
  updated 2022
  description A mini language used for the Rabs build system and within Wrapl.
  issues 0
-
-repoStats
- firstCommit 2017
- commits 2002
- committers 6
- files 971
- newestCommit 2024
-writtenIn xml restructuredtext c lua xsd python make yaml bourne-shell puppet markdown css assembly-language xslt diff

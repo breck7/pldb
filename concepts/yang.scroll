@@ -1,13 +1,28 @@
 import ../code/conceptPage.scroll
+
 id yang
 name YANG
 appeared 2014
-tags application
 creators Tom Nadeau
+tags application
+
+isOpenSource true
+writtenIn html xml markdown json bourne-shell yaml csv python svg
+fileType text
+wordRank 9514
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 2778
+ committers 148
 reference https://tools.ietf.org/html/rfc7950
 
-hasFloats true
-hasIntegers true
+pygmentsHighlighter YANG
+ filename yang.py
+ fileExtensions yang
+languageServerProtocolProject https://github.com/yang-tools/yang-lsp
+ writtenIn xtend
 
 githubRepo https://github.com/YangModels/yang
  firstCommit 2014
@@ -19,17 +34,9 @@ githubRepo https://github.com/YangModels/yang
  description YANG modules from standards organizations such as the IETF, The IEEE, The Metro Ethernet Forum, open source such as Open Daylight or vendor specific modules
  issues 26
 
-githubLanguage YANG
- fileExtensions yang
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.yang
- repos 0
+hasFloats true
+hasIntegers true
 
-pygmentsHighlighter YANG
- filename yang.py
- fileExtensions yang
 linguistGrammarRepo https://github.com/DzonyKalafut/language-yang.git
  firstCommit 2014
  lastCommit 2014
@@ -92,17 +99,11 @@ linguistGrammarRepo https://github.com/DzonyKalafut/language-yang.git
       }
     }
   }
-languageServerProtocolProject https://github.com/yang-tools/yang-lsp
- writtenIn xtend
 
-fileType text
-wordRank 9514
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2014
- newestCommit 2024
- commits 2778
- committers 148
-writtenIn html xml markdown json bourne-shell yaml csv python svg
+githubLanguage YANG
+ fileExtensions yang
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.yang
+ repos 0

@@ -1,15 +1,15 @@
 import ../code/conceptPage.scroll
+
 id i-expressions
 name I-expressions
 appeared 2003
-tags dataNotation
 creators Egil Möller
+tags dataNotation
 conceptDescription This SRFI descibes a new syntax for Scheme, called I-expressions, whith equal descriptive power as S-expressions. The syntax uses indentation to group expressions, and has no special cases for semantic constructs of the language. It can be used both for program and data input.
-reference https://srfi.schemers.org/srfi-49/srfi-49.html
+
 country Sweden
 originCommunity https://srfi.schemers.org
-
-hasSemanticIndentation true
+reference https://srfi.schemers.org/srfi-49/srfi-49.html
 
 example
  define
@@ -27,3 +27,5 @@ example
     bar
      + 3 4
    + foo bar
+
+hasSemanticIndentation true

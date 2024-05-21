@@ -1,11 +1,35 @@
 import ../code/conceptPage.scroll
+
 id protobuf
 name Protocol Buffers
 appeared 2008
 tags idl
 website https://developers.google.com/protocol-buffers/
+
+isOpenSource true
+clocExtensions proto
+fileType text
 documentation https://developers.google.com/protocol-buffers/docs/overview
+antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
+monaco protobuf
+centralPackageRepositoryCount 0
 originCommunity Google
+
+pygmentsHighlighter Protocol Buffer
+ filename dsls.py
+ fileExtensions proto
+example
+ message Person {
+   required string name = 1;
+   required int32 id = 2;
+   optional string email = 3;
+ }
+
+keywords syntax import weak public package option repeated oneof map reserved to max enum message service rpc stream returns package optional true false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
 
 hasLineComments true
  // A comment
@@ -26,18 +50,6 @@ hasFloats true
  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[LlUu]*
 hasIntegers true
  // \d+[LlUu]*
-
-lineCommentToken //
-multiLineCommentTokens /* */
-booleanTokens true false
-keywords syntax import weak public package option repeated oneof map reserved to max enum message service rpc stream returns package optional true false
-
-example
- message Person {
-   required string name = 1;
-   required int32 id = 2;
-   optional string email = 3;
- }
 
 wikipedia https://en.wikipedia.org/wiki/Protocol_Buffers
  example
@@ -75,25 +87,10 @@ wikipedia https://en.wikipedia.org/wiki/Protocol_Buffers
  revisionCount 218
  appeared 2001
 
-githubLanguage Protocol Buffer
- fileExtensions proto
- trendingProjectsCount 0
- type data
- aceMode protobuf
- codemirrorMode protobuf
- codemirrorMimeType text/x-protobuf
- tmScope source.proto
- aliases protobuf or Protocol Buffers
- repos 23747
 githubBigQuery Protocol Buffer
  repos 11692
  users 10064
 
-antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
-monaco protobuf
-pygmentsHighlighter Protocol Buffer
- filename dsls.py
- fileExtensions proto
 linguistGrammarRepo https://github.com/michaeledgar/protobuf-tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -130,15 +127,20 @@ linguistGrammarRepo https://github.com/michaeledgar/protobuf-tmbundle
   }
   
 
+isbndb 0
+
+githubLanguage Protocol Buffer
+ fileExtensions proto
+ trendingProjectsCount 0
+ type data
+ aceMode protobuf
+ codemirrorMode protobuf
+ codemirrorMimeType text/x-protobuf
+ tmScope source.proto
+ aliases protobuf or Protocol Buffers
+ repos 23747
+
 indeedJobs protocol buffers developer
  2022 94
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
-
 semanticScholar 0
-
-clocExtensions proto

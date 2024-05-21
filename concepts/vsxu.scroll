@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id vsxu
 name VSXu
 appeared 2004
 tags visual
 website http://vsxu.com
-domainName vsxu.com
- registered 2003
+
+isOpenSource true
+writtenIn cpp html cmake c bourne-shell xml glsl make m4 css markdown svg go python javascript yacc perl lex yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 1579
+ committers 42
+ files 2705
+ newestCommit 2019
 
 githubRepo https://github.com/vovoid/vsxu
  firstCommit 2010
@@ -17,13 +27,6 @@ githubRepo https://github.com/vovoid/vsxu
  description Visual programming language; Real-time OpenGL graphics; Embeddable; GPL/LGPL Licensed; Audio/Music Visualizer; Animation tool
  issues 58
 
-repoStats
- firstCommit 2010
- commits 1579
- committers 42
- files 2705
- newestCommit 2019
-
 wikipedia https://en.wikipedia.org/wiki/VSXu
  related linux puredata opengl
  summary VSXu (VSX Ultra) is an OpenGL-based (hardware-accelerated), modular programming environment with its main purpose to visualize music/audio data and create 3D effects in real-time. Available for Windows and GNU/Linux. It is currently released as free software under terms of the  GNU General Public License v2 and maintained by Vovoid Media Technologies AB. VSXu is built on a modular plug-in-based architecture so anyone can extend it and or make visualization presets ("visuals" or "states").
@@ -34,8 +37,5 @@ wikipedia https://en.wikipedia.org/wiki/VSXu
  dailyPageViews 12
  appeared 2004
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp html cmake c bourne-shell xml glsl make m4 css markdown svg go python javascript yacc perl lex yaml
+domainName vsxu.com
+ registered 2003

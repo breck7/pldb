@@ -1,24 +1,27 @@
 import ../code/conceptPage.scroll
+
 id spatial
 name Spatial
 appeared 2018
-tags pl
 creators David Koeplinger
-conceptDescription Spatial: A High Level Programming Language for FPGAs
+tags pl
 website https://spatial-lang.org/
 standsFor Specify Parameterized Accelerators Through Inordinately Abstract Language
+conceptDescription Spatial: A High Level Programming Language for FPGAs
+
+isOpenSource true
+writtenIn scala xml vhdl html make bourne-shell cpp scheme python ini c csv bash markdown tex diff yaml
+fileType text
+wordRank 6389
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 4611
+ committers 22
+ files 2376
+ newestCommit 2020
 country United States
 originCommunity Stanford University
-domainName spatial-lang.org
- registered 2018
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  import spatial.dsl._
@@ -60,17 +63,16 @@ githubRepo https://github.com/stanford-ppl/spatial
  description Spatial: "Specify Parameterized Accelerators Through Inordinately Abstract Language"
  issues 70
 
-repoStats
- firstCommit 2017
- commits 4611
- committers 22
- files 2376
- newestCommit 2020
+lineCommentToken //
 
-fileType text
-wordRank 6389
-isOpenSource true
-centralPackageRepositoryCount 0
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName spatial-lang.org
+ registered 2018
 
 isbndb 13
  year|publisher|title|authors|isbn13
@@ -87,5 +89,3 @@ isbndb 13
  2015|SAGE Publications Ltd|An Introduction to R for Spatial Analysis and Mapping|Brunsdon, Chris and Comber, Lex|9781446272954
  2020|Springer|Spatial Modeling in Forest Resources Management: Rural Livelihood and Sustainable Development (Environmental Science and Engineering)||9783030565411
  2012|Springer|Decentralized Spatial Computing: Foundations of Geosensor Networks|Duckham, Matt|9783642308536
-
-writtenIn scala xml vhdl html make bourne-shell cpp scheme python ini c csv bash markdown tex diff yaml

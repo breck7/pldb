@@ -1,13 +1,27 @@
 import ../code/conceptPage.scroll
+
 id snowball-programming-language
 name Snowball
 appeared 2001
-tags pl
 creators Martin Porter
+tags pl
 website https://snowballstem.org
-reference http://snowball.tartarus.org
+
+writtenIn c python rust go ada csharp java perl pascal javascript restructuredtext markdown make yaml diff xml toml
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 1096
+ committers 39
+ files 124
+ newestCommit 2024
 country United Kingdom
 originCommunity https://lists.tartarus.org/pipermail/snowball-discuss
+reference http://snowball.tartarus.org
+
+pygmentsHighlighter Snowball
+ filename dsls.py
+ fileExtensions sbl
 
 githubRepo https://github.com/snowballstem/snowball
  stars 721
@@ -27,17 +41,3 @@ wikipedia https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
  revisionCount 32
  dailyPageViews 10
  appeared 2006
-
-pygmentsHighlighter Snowball
- filename dsls.py
- fileExtensions sbl
-
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2003
- commits 1096
- committers 39
- files 124
- newestCommit 2024
-writtenIn c python rust go ada csharp java perl pascal javascript restructuredtext markdown make yaml diff xml toml

@@ -1,8 +1,26 @@
 import ../code/conceptPage.scroll
+
 id thue-programming-language
 name Thue
 appeared 2004
 tags esolang
+
+centralPackageRepositoryCount 0
+
+rijuRepl https://riju.codes/thue
+ example
+  a::=~Hello, world!
+  ::=
+  a
+leachim6 Thue
+ filepath t/Thue.th
+ fileExtensions th
+ example
+  a::=~Hello World
+  ::=
+  a
+  
+  
 
 wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  example
@@ -25,21 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  revisionCount 58
  dailyPageViews 25
  appeared 2000
-
-leachim6 Thue
- filepath t/Thue.th
- fileExtensions th
- example
-  a::=~Hello World
-  ::=
-  a
-  
-  
-
-rijuRepl https://riju.codes/thue
- example
-  a::=~Hello, world!
-  ::=
-  a
-
-centralPackageRepositoryCount 0

@@ -1,10 +1,21 @@
 import ../code/conceptPage.scroll
+
 id acorn-lang
 name acorn-lang
 appeared 2015
-tags pl
 creators Jonathan Goodwin
+tags pl
 website http://web3d.jondgoodwin.com/acorn/index.html
+
+isOpenSource true
+writtenIn cpp xml cmake c make markdown
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 110
+ committers 1
+ files 68
+ newestCommit 2020
 
 githubRepo https://github.com/jondgoodwin/acornvm
  firstCommit 2015
@@ -15,15 +26,3 @@ githubRepo https://github.com/jondgoodwin/acornvm
  updated 2022
  description Acorn Virtual Machine
  issues 0
-
-repoStats
- firstCommit 2015
- commits 110
- committers 1
- files 68
- newestCommit 2020
-
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp xml cmake c make markdown

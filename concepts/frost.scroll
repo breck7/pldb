@@ -1,18 +1,21 @@
 import ../code/conceptPage.scroll
+
 id frost
 name Frost
 appeared 2017
-tags pl
 creators Ethan Nicholas
+tags pl
 website https://www.frostlang.org/
+
+writtenIn markdown css c xslt javascript cmake html
+repoStats
+ firstCommit 2017
+ commits 465
+ committers 3
+ files 1259
+ newestCommit 2022
 country Unknown
 originCommunity https://github.com/ethannicholas/Frost/issues
-domainName frostlang.org
- registered 2019
-
-hasPrintDebugging true
-
-printToken Console.printLine
 
 example
  ========================================================
@@ -58,11 +61,9 @@ githubRepo https://github.com/ethannicholas/Frost
  description Frost is a powerful, general purpose, multi-paradigm programming language
  issues 0
 
-repoStats
- firstCommit 2017
- commits 465
- committers 3
- files 1259
- newestCommit 2022
+printToken Console.printLine
 
-writtenIn markdown css c xslt javascript cmake html
+hasPrintDebugging true
+
+domainName frostlang.org
+ registered 2019

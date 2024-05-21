@@ -1,11 +1,17 @@
 import ../code/conceptPage.scroll
+
 id gcc-machine-description
 name GCC Machine Description
 appeared 2001
 tags pl
-reference https://en.wikipedia.org/wiki/Register_transfer_language
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Arizona
+reference https://en.wikipedia.org/wiki/Register_transfer_language
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
@@ -13,17 +19,6 @@ hasComments true
  ; A comment
 hasSemanticIndentation false
 
-lineCommentToken ;
-
-githubLanguage GCC Machine Description
- fileExtensions md
- trendingProjectsCount 0
- type programming
- aceMode lisp
- codemirrorMode commonlisp
- codemirrorMimeType text/x-common-lisp
- tmScope source.lisp
- repos 1027
 githubBigQuery GCC Machine Description
  repos 878
  users 856
@@ -99,5 +94,12 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   ;;	FADR, FADRI, FADRM, FADRB, DFAD, GFAD,
   ;;	FSBR, FSBRI, FSBRM, FSBRB, DFSB,
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage GCC Machine Description
+ fileExtensions md
+ trendingProjectsCount 0
+ type programming
+ aceMode lisp
+ codemirrorMode commonlisp
+ codemirrorMimeType text/x-common-lisp
+ tmScope source.lisp
+ repos 1027

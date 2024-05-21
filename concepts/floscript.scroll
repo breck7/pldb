@@ -1,19 +1,24 @@
 import ../code/conceptPage.scroll
+
 id floscript
 name FloScript
 appeared 2013
-tags pl
 creators Samuel Smith
+tags pl
+
+writtenIn python markdown
+repoStats
+ firstCommit 2013
+ commits 1233
+ committers 14
+ files 221
+ newestCommit 2024
 country United States
 originCommunity ProSapien LLC
 
-hasOctals true
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasBinaryNumbers true
-hasLineComments true
-hasComments true
+pygmentsHighlighter FloScript
+ filename floscript.py
+ fileExtensions flo
 
 githubRepo https://github.com/ioflo/ioflo
  firstCommit 2013
@@ -25,15 +30,10 @@ githubRepo https://github.com/ioflo/ioflo
  description Automated Reasoning Engine and Flow Based Programming Framework
  issues 0
 
-repoStats
- firstCommit 2013
- commits 1233
- committers 14
- files 221
- newestCommit 2024
-
-pygmentsHighlighter FloScript
- filename floscript.py
- fileExtensions flo
-
-writtenIn python markdown
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true

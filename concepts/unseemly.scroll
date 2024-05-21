@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id unseemly
 name unseemly
 appeared 2016
-tags pl
 creators Paul Stansifer
+tags pl
 website http://unseemly.github.io/
+
+writtenIn rust markdown toml yaml javascript html json dockerfile
+repoStats
+ firstCommit 2016
+ commits 626
+ committers 5
+ files 84
+ newestCommit 2023
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/eq26iu/unseemly_a_typed_macro_language/
-domainName unseemly.github.io
 
 githubRepo https://github.com/paulstansifer/unseemly
  firstCommit 2016
@@ -18,13 +26,6 @@ githubRepo https://github.com/paulstansifer/unseemly
  description Macros have types!
  issues 40
 
-repoStats
- firstCommit 2016
- commits 626
- committers 5
- files 84
- newestCommit 2023
+domainName unseemly.github.io
 
 semanticScholar 0
-
-writtenIn rust markdown toml yaml javascript html json dockerfile

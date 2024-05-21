@@ -1,17 +1,14 @@
 import ../code/conceptPage.scroll
+
 id rason
 name rason
 appeared 2015
 tags pl
 website https://www.rason.com/
-country United States
-originCommunity Frontline Systems Inc
-domainName rason.com
- registered 2003
- awisRank
-  2022 3103476
 
 relatedConcepts ampl gams siman
+country United States
+originCommunity Frontline Systems Inc
 
 example
  {
@@ -38,3 +35,8 @@ example
          mean : [], stdev: [], max : [], min : [] }
      }
  }
+
+domainName rason.com
+ registered 2003
+ awisRank
+  2022 3103476

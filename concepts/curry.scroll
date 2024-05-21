@@ -1,22 +1,43 @@
 import ../code/conceptPage.scroll
+
 id curry
 name Curry
 appeared 1990
-tags pl
 creators Michael Hanus and Sergio Antoy
-country Germany
-originCommunity University of Kiel
+tags pl
 
 relatedConcepts haskell
 influencedBy haskell
-
 visualParadigm false
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Curry
+centralPackageRepositoryCount 0
+country Germany
+originCommunity University of Kiel
+
+rijuRepl https://riju.codes/curry
+ example
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  
+leachim6 Curry
+ filepath c/Curry.curry
+ fileExtensions curry
+ example
+  -- "Hello World" demo for the Tcl/Tk library
+  
+  import Tk
+  
+  main = runWidget "Hello"
+            (TkCol [] [TkLabel [TkText "Hello World"],
+                       TkButton tkExit [TkText "Stop"]])
+  
+
+stringToken "
 
 hasSemanticIndentation true
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Curry_(programming_language)
  example
@@ -31,39 +52,17 @@ wikipedia https://en.wikipedia.org/wiki/Curry_(programming_language)
  dailyPageViews 51
  appeared 1990
 
+githubBigQuery Curry
+ repos 1
+ users 1
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2005|Association For Computing Machinery (acm)|Wcflp '05: Proceedings Of The Acm Sigplan 2005 Workshop On Curry And Functional Logic Programming, September 29, 2005, Tallinn, E|Acm Special Interest Group On Programmin and N/a|9781595930699
+
 githubLanguage Curry
  type programming
  fileExtensions curry
  aceMode haskell
  tmScope source.curry
  repos 4
-githubBigQuery Curry
- repos 1
- users 1
-
-leachim6 Curry
- filepath c/Curry.curry
- fileExtensions curry
- example
-  -- "Hello World" demo for the Tcl/Tk library
-  
-  import Tk
-  
-  main = runWidget "Hello"
-            (TkCol [] [TkLabel [TkText "Hello World"],
-                       TkButton tkExit [TkText "Stop"]])
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Curry
-
-rijuRepl https://riju.codes/curry
- example
-  main :: IO ()
-  main = putStrLn "Hello, world!"
-  
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 2005|Association For Computing Machinery (acm)|Wcflp '05: Proceedings Of The Acm Sigplan 2005 Workshop On Curry And Functional Logic Programming, September 29, 2005, Tallinn, E|Acm Special Interest Group On Programmin and N/a|9781595930699

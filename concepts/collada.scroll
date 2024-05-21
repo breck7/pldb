@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id collada
 name COLLADA
 appeared 2004
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 country United States and Japan
 originCommunity Sony Computer Entertainment && Khronos Group
 
@@ -16,6 +20,12 @@ wikipedia https://en.wikipedia.org/wiki/COLLADA
  dailyPageViews 152
  appeared 2004
 
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+
 githubLanguage COLLADA
  fileExtensions dae
  trendingProjectsCount 0
@@ -24,12 +34,3 @@ githubLanguage COLLADA
  codemirrorMode xml
  codemirrorMimeType text/xml
  tmScope text.xml
-
-linguistGrammarRepo https://github.com/textmate/xml.tmbundle
- firstCommit 2004
- lastCommit 2018
- committerCount 12
- commitCount 97
-
-fileType text
-centralPackageRepositoryCount 0

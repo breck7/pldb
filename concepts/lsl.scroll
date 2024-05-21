@@ -1,12 +1,36 @@
 import ../code/conceptPage.scroll
+
 id lsl
 name Linden Scripting Language
 appeared 2003
 tags pl
-reference http://wiki.secondlife.com/wiki/LSL_Portal
 standsFor Linden Scripting Language
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:LSL
+centralPackageRepositoryCount 0
 country United States
 originCommunity Linden Research, Inc
+reference http://wiki.secondlife.com/wiki/LSL_Portal
+
+pygmentsHighlighter LSL
+ filename scripting.py
+ fileExtensions lsl
+leachim6 LSL
+ filepath l/LSL.lsl
+ fileExtensions lsl
+ example
+  default
+  {
+      state_entry()
+      {
+          llSay(0, "Hello World");
+      }
+  }
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 hasLineComments true
  // A comment
@@ -25,25 +49,10 @@ hasFloats true
 hasIntegers true
  // \d+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
-
-githubLanguage LSL
- fileExtensions lsl lslp
- trendingProjectsCount 0
- type programming
- interpreters lsl
- aceMode lsl
- tmScope source.lsl
- repos 638
 githubBigQuery LSL
  repos 397
  users 373
 
-pygmentsHighlighter LSL
- filename scripting.py
- fileExtensions lsl
 linguistGrammarRepo https://github.com/textmate/secondlife-lsl.tmbundle
  firstCommit 2007
  lastCommit 2017
@@ -126,22 +135,15 @@ linguistGrammarRepo https://github.com/textmate/secondlife-lsl.tmbundle
       }
   }
 
-leachim6 LSL
- filepath l/LSL.lsl
- fileExtensions lsl
- example
-  default
-  {
-      state_entry()
-      {
-          llSay(0, "Hello World");
-      }
-  }
-rosettaCode http://www.rosettacode.org/wiki/Category:LSL
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage LSL
+ fileExtensions lsl lslp
+ trendingProjectsCount 0
+ type programming
+ interpreters lsl
+ aceMode lsl
+ tmScope source.lsl
+ repos 638
 
 semanticScholar 0

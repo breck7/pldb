@@ -1,14 +1,24 @@
 import ../code/conceptPage.scroll
+
 id scipy
 name SciPy
 appeared 2001
-tags library
 creators Eric Jones
+tags library
 website https://www.scipy.org/scipylib/index.html
+
+isOpenSource true
+writtenIn python restructuredtext fortran-77 c cython meson cpp yaml markdown bourne-shell svg json matlab tex make ini pascal diff toml r css fortran-90 html
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2001
+ commits 34714
+ committers 1658
+ files 3206
+ newestCommit 2024
 country Various
 originCommunity https://github.com/scipy
-
-writtenIn python restructuredtext fortran-77 c cython meson cpp yaml markdown bourne-shell svg json matlab tex make ini pascal diff toml r css fortran-90 html
 
 githubRepo https://github.com/scipy/scipy
  stars 9818
@@ -30,10 +40,6 @@ wikipedia https://en.wikipedia.org/wiki/SciPy
  revisionCount 254
  appeared 2001
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  SciPy and NumPy: An Overview for Developers|2012|Eli Bressert|19175991|2.96|47|10
@@ -44,10 +50,3 @@ goodreads
  Raspberry Pi Supercomputing and Scientific Programming: MPI4PY, NumPy, and SciPy for Enthusiasts||Ashwin Pajankar|56182718|3.00|1|0
  Numerical Python: Scientific Computing and Data Science Applications with Numpy, Scipy and Matplotlib||Robert Johansson|66021570|0.0|0|0
  Raspberry Pi Image Processing Programming: Develop Real-Life Examples with Python, Pillow, and Scipy||Ashwin Pajankar|55317341|0.0|0|0
-
-repoStats
- firstCommit 2001
- commits 34714
- committers 1658
- files 3206
- newestCommit 2024

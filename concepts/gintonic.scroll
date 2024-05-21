@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id gintonic
 name gintonic
 appeared 2018
-tags queryLanguage
 creators Christian Budde Christensen
+tags queryLanguage
+
+writtenIn ocaml json javascript markdown graphql yaml dockerfile svg
+repoStats
+ firstCommit 2018
+ commits 148
+ committers 2
+ files 50
+ newestCommit 2018
 country Norway
 originCommunity https://github.com/strise
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/mitoai/gintonic
  issues 8
  forks 0
 
-repoStats
- firstCommit 2018
- commits 148
- committers 2
- files 50
- newestCommit 2018
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  18702064|Show HN: Gintonic – A declarative transformation language for GraphQL|2018-12-17 20:49:12 UTC|1545079752|alfffff|1|4
-
-writtenIn ocaml json javascript markdown graphql yaml dockerfile svg

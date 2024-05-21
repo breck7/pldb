@@ -1,16 +1,25 @@
 import ../code/conceptPage.scroll
+
 id yii
 name Yes It Is
 appeared 2006
+creators Qiang Xue
 tags framework
 website http://www.yiiframework.com/
 standsFor Yes It Is
-domainName yiiframework.com
- registered 2008
- awisRank
-  2022 22664
 
+isOpenSource true
 writtenIn php markdown xml sql json yaml javascript html dockerfile bourne-shell svg css
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ newestCommit 2024
+ commits 20536
+ committers 1608
+ files 2381
+
+twitter https://twitter.com/yiiframework
 
 githubRepo https://github.com/yiisoft/yii2
  stars 13951
@@ -32,15 +41,7 @@ wikipedia https://en.wikipedia.org/wiki/Yii
  revisionCount 313
  appeared 2006
 
-twitter https://twitter.com/yiiframework
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-creators Qiang Xue
-repoStats
- firstCommit 2011
- newestCommit 2024
- commits 20536
- committers 1608
- files 2381
+domainName yiiframework.com
+ registered 2008
+ awisRank
+  2022 22664

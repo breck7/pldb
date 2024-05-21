@@ -1,36 +1,22 @@
 import ../code/conceptPage.scroll
+
 id jsf
 name JSFuck
 appeared 2012
-tags esolang
 creators Martin Kleppe
-conceptDescription JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
+tags esolang
 website http://www.jsfuck.com/
-country Germany
-originCommunity https://github.com/aemkei/jsfuck/issues
-domainName jsfuck.com
- registered 2012
- awisRank
-  2022 1419655
+conceptDescription JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
 
-githubRepo https://github.com/aemkei/jsfuck
- firstCommit 2012
- stars 7973
- forks 662
- subscribers 130
- created 2012
- updated 2024
- description Write any JavaScript with 6 Characters: []()!+
- issues 35
-
+writtenIn javascript json markdown html
 repoStats
  firstCommit 2012
  commits 239
  committers 25
  files 15
  newestCommit 2024
-
-wikipedia https://en.wikipedia.org/wiki/JSFuck
+country Germany
+originCommunity https://github.com/aemkei/jsfuck/issues
 
 rijuRepl https://riju.codes/jsf
  example
@@ -168,4 +154,19 @@ rijuRepl https://riju.codes/jsf
   (!![]+[][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[+!![
   ]+[+[]]]+(!![]+[])[+!![]]]()[+!![]+[!![]+!![]]])())
 
-writtenIn javascript json markdown html
+githubRepo https://github.com/aemkei/jsfuck
+ firstCommit 2012
+ stars 7973
+ forks 662
+ subscribers 130
+ created 2012
+ updated 2024
+ description Write any JavaScript with 6 Characters: []()!+
+ issues 35
+
+wikipedia https://en.wikipedia.org/wiki/JSFuck
+
+domainName jsfuck.com
+ registered 2012
+ awisRank
+  2022 1419655

@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id dat-protocol
 name dat-protocol
 appeared 2013
-tags protocol
 creators Max Ogden
+tags protocol
 website https://dat.foundation/
+
+writtenIn javascript markdown yaml json bourne-shell csv
+repoStats
+ firstCommit 2013
+ commits 2271
+ committers 101
+ files 73
+ newestCommit 2023
 country Germany and United Kingdom
 originCommunity https://github.com/dat-ecosystem
-domainName dat.foundation
- registered 2019
 
 githubRepo https://github.com/datproject/dat
  firstCommit 2013
@@ -20,15 +27,9 @@ githubRepo https://github.com/datproject/dat
  description :floppy_disk: peer-to-peer sharing & live syncronization of files via command line [ DEPRECATED - More info on active projects and modules at https://dat-ecosystem.org/ ]
  issues 105
 
-repoStats
- firstCommit 2013
- commits 2271
- committers 101
- files 73
- newestCommit 2023
+domainName dat.foundation
+ registered 2019
 
 isbndb 0
 
 semanticScholar 0
-
-writtenIn javascript markdown yaml json bourne-shell csv

@@ -1,14 +1,15 @@
 import ../code/conceptPage.scroll
+
 id gns
 name GNS
 appeared 2018
 tags protocol
 website https://www.gnunet.org/en/gns.html
-spec https://lsd.gnunet.org/lsd0001/
-reference https://docs.gnunet.org/#GNU-Name-System-_0028GNS_0029
-reference https://lsd.gnunet.org/lsd0001/
 standsFor GNU Name System
+
+spec https://lsd.gnunet.org/lsd0001/
+relatedConcepts dns
 country Germany
 originCommunity GNUnet e.V.
-
-relatedConcepts dns
+reference https://docs.gnunet.org/#GNU-Name-System-_0028GNS_0029
+reference https://lsd.gnunet.org/lsd0001/

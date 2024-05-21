@@ -1,13 +1,53 @@
 import ../code/conceptPage.scroll
+
 id modula-2
 name Modula-2
 appeared 1978
-tags pl
 creators Niklaus Wirth
-documentation https://www.modula2.org/tutor/introduction.php
+tags pl
+
+officialBlogUrl https://freepages.modula2.org/oldnew.html
+gdbSupport true
 fileExtensions mod m2 def MOD DEF mi md
+fileType text
+documentation https://www.modula2.org/tutor/introduction.php
+downloadPageUrl https://www.modula2.org/adwm2/download.php
+rosettaCode http://www.rosettacode.org/wiki/Category:Modula-2
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity ETH Zurich
+
+helloWorldCollection Modula-2
+ (* Hello World in Modula-2 *)
+ 
+ MODULE HelloWorld;
+ FROM InOut IMPORT WriteString,WriteLn;
+ BEGIN
+   WriteString("Hello World!");
+   WriteLn;
+ END HelloWorld.
+ 
+pygmentsHighlighter Modula-2
+ filename modula2.py
+ fileExtensions def mod
+leachim6 Modula 2
+ filepath m/Modula 2.mod
+ example
+  MODULE HelloWorld;
+  
+  FROM Terminal2 IMPORT WriteString, WriteLn;
+  
+  BEGIN
+  
+      WriteString("Hello World");
+      WriteLn;
+      
+  END HelloWorld.
+
+multiLineCommentTokens (* *)
+printToken WriteString
+stringToken "
+booleanTokens TRUE FALSE
 
 hasComments true
 hasLineComments false
@@ -22,11 +62,6 @@ hasCaseInsensitiveIdentifiers false
 hasStrings true
  "Hello world"
 hasBooleans true
-
-multiLineCommentTokens (* *)
-printToken WriteString
-stringToken "
-booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
@@ -48,20 +83,13 @@ wikipedia https://en.wikipedia.org/wiki/Modula-2
  appeared 1978
  fileExtensions mod m2 def MOD DEF mi md
 
-githubLanguage Modula-2
- fileExtensions mod
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.modula2
- repos 306
+hopl https://hopl.info/showlanguage.prx?exp=817
+tiobe Modula-2
+
 githubBigQuery Modula-2
  repos 115
  users 103
 
-pygmentsHighlighter Modula-2
- filename modula2.py
- fileExtensions def mod
 linguistGrammarRepo https://github.com/harogaston/Sublime-Modula-2
  firstCommit 2014
  lastCommit 2015
@@ -400,45 +428,19 @@ linguistGrammarRepo https://github.com/harogaston/Sublime-Modula-2
   END HuffChan.
   
 
-helloWorldCollection Modula-2
- (* Hello World in Modula-2 *)
- 
- MODULE HelloWorld;
- FROM InOut IMPORT WriteString,WriteLn;
- BEGIN
-   WriteString("Hello World!");
-   WriteLn;
- END HelloWorld.
- 
-leachim6 Modula 2
- filepath m/Modula 2.mod
- example
-  MODULE HelloWorld;
-  
-  FROM Terminal2 IMPORT WriteString, WriteLn;
-  
-  BEGIN
-  
-      WriteString("Hello World");
-      WriteLn;
-      
-  END HelloWorld.
-rosettaCode http://www.rosettacode.org/wiki/Category:Modula-2
-
-indeedJobs modula-2 developer
- 2022 0
-officialBlogUrl https://freepages.modula2.org/oldnew.html
-downloadPageUrl https://www.modula2.org/adwm2/download.php
-
-tiobe Modula-2
-hopl https://hopl.info/showlanguage.prx?exp=817
-
-gdbSupport true
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  1985|Springer-Verlag|Programming in Modula-2 (Texts and monographs in computer science)|Wirth, Niklaus|9780387150789
+
+githubLanguage Modula-2
+ fileExtensions mod
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.modula2
+ repos 306
+
+indeedJobs modula-2 developer
+ 2022 0
 
 semanticScholar 0

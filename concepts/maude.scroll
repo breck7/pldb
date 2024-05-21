@@ -1,14 +1,17 @@
 import ../code/conceptPage.scroll
+
 id maude
 name Maude
 appeared 1990
 tags pl
 conceptDescription Maude is a high-level language and high-performance system supporting both equational and rewriting logic computation for a wide range of applications.
-reference https://semanticscholar.org/paper/a9c022579be9dcff685682c1876f8a4532ac02cf
-country Spain and United States
-originCommunity Universidad de Navarra && Universidad de Málaga && Universidad Complutense && Centro Informático Científico de Andalucía && SRI International
 
 influencedBy obj
+rosettaCode http://www.rosettacode.org/wiki/Category:Maude
+centralPackageRepositoryCount 0
+country Spain and United States
+originCommunity Universidad de Navarra && Universidad de Málaga && Universidad Complutense && Centro Informático Científico de Andalucía && SRI International
+reference https://semanticscholar.org/paper/a9c022579be9dcff685682c1876f8a4532ac02cf
 
 example
  fmod FACTORIAL is
@@ -27,11 +30,7 @@ example
  
  red 11 ! .
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Maude
-
 hopl https://hopl.info/showlanguage.prx?exp=2937
-
-centralPackageRepositoryCount 0
 
 semanticScholar 23
  year|title|doi|citations|influentialCitations|authors|paperId

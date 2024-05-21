@@ -1,14 +1,31 @@
 import ../code/conceptPage.scroll
+
 id gosu
 name Gosu
 appeared 2002
 tags pl
 website http://gosu-lang.org/
+
+isOpenSource true
 fileExtensions gs gsp gst gsx
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Gosu
+centralPackageRepositoryCount 0
 country United States
 originCommunity Guidewire Software, Inc
-domainName gosu-lang.org
- registered 2009
+
+pygmentsHighlighter Gosu
+ filename jvm.py
+ fileExtensions gs gsx gsp vark
+leachim6 Gosu
+ filepath g/Gosu.gs
+ fileExtensions gs
+ example
+  print("Hello World")
+  
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
@@ -18,9 +35,6 @@ hasIntegers true
 hasLineComments true
 hasMultiLineComments true
 hasComments true
-
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Gosu_(programming_language)
  example
@@ -37,20 +51,15 @@ wikipedia https://en.wikipedia.org/wiki/Gosu_(programming_language)
  appeared 2017
  fileExtensions gs gsp gst gsx
 
-githubLanguage Gosu
- fileExtensions gs gst gsx vark
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.gosu.2
- repos 701
+tiobe Gosu
+
+domainName gosu-lang.org
+ registered 2009
+
 githubBigQuery Gosu
  repos 539
  users 486
 
-pygmentsHighlighter Gosu
- filename jvm.py
- fileExtensions gs gsx gsp vark
 linguistGrammarRepo https://github.com/jpcamara/Textmate-Gosu-Bundle
  firstCommit 2011
  lastCommit 2014
@@ -62,22 +71,16 @@ linguistGrammarRepo https://github.com/jpcamara/Textmate-Gosu-Bundle
     print("hello")
   }
 
-leachim6 Gosu
- filepath g/Gosu.gs
- fileExtensions gs
- example
-  print("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Gosu
-
-tiobe Gosu
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2015|Pragmatic Bookshelf|Learn Game Programming with Ruby: Bring Your Ideas to Life with Gosu|Sobkowicz, Mark|9781680500738
+
+githubLanguage Gosu
+ fileExtensions gs gst gsx vark
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.gosu.2
+ repos 701
 
 semanticScholar 0

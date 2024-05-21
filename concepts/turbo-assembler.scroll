@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id turbo-assembler
 name Turbo Assembler
 appeared 1989
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Turbo_Assembler
  example
@@ -28,6 +32,3 @@ wikipedia https://en.wikipedia.org/wiki/Turbo_Assembler
  revisionCount 167
  dailyPageViews 69
  appeared 1989
-
-isOpenSource false
-centralPackageRepositoryCount 0

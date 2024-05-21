@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id elf
 name Extensible Linking Format
 appeared 1999
 tags binaryExecutable
 standsFor Extensible Linking Format
+
+tryItOnline elf
+fileType binary
+centralPackageRepositoryCount 0
 country United States
 originCommunity Unix System Laboratories
 
@@ -16,8 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
  backlinksCount 194
  revisionCount 570
  appeared 1999
-
-tryItOnline elf
-
-fileType binary
-centralPackageRepositoryCount 0

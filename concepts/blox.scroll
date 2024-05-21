@@ -1,8 +1,18 @@
 import ../code/conceptPage.scroll
+
 id blox
 name Blox
 appeared 2018
 tags pl
+
+writtenIn c markdown yacc lex make bourne-shell
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2018
+ commits 47
+ committers 2
+ files 25
+ newestCommit 2018
 
 example
  print(1+2*3/4)
@@ -26,14 +36,3 @@ githubRepo https://github.com/ciromoraismedeiros/blox-lang
  updated 2018
  description Blox programming language
  issues 0
-
-repoStats
- firstCommit 2018
- commits 47
- committers 2
- files 25
- newestCommit 2018
-
-centralPackageRepositoryCount 0
-
-writtenIn c markdown yacc lex make bourne-shell

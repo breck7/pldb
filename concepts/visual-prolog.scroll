@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id visual-prolog
 name Visual Prolog
 appeared 1996
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Prolog
  example
@@ -40,6 +44,3 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Prolog
  appeared 2018
 
 hopl https://hopl.info/showlanguage.prx?exp=3332
-
-isOpenSource false
-centralPackageRepositoryCount 0

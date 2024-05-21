@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id bluespec
 name Bluespec
 appeared 2000
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bluespec, Inc
+
+multiLineCommentTokens (* *)
+booleanTokens True False
 
 hasMultiLineComments true
  (* A comment
@@ -14,9 +21,6 @@ hasComments true
  *)
 hasSemanticIndentation false
 hasBooleans true
-
-multiLineCommentTokens (* *)
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Bluespec
  related haskell systemverilog
@@ -28,13 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/Bluespec
  dailyPageViews 25
  appeared 2000
 
-githubLanguage Bluespec
- fileExtensions bsv
- trendingProjectsCount 0
- type programming
- aceMode verilog
- tmScope source.bsv
- repos 275
 githubBigQuery Bluespec
  repos 51
  users 32
@@ -157,5 +154,10 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
   endpackage
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Bluespec
+ fileExtensions bsv
+ trendingProjectsCount 0
+ type programming
+ aceMode verilog
+ tmScope source.bsv
+ repos 275

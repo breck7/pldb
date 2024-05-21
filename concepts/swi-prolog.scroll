@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id swi-prolog
 name SWI Prolog
 appeared 1987
 tags pl
 website http://www.swi-prolog.org/
-domainName swi-prolog.org
- registered 2001
- awisRank
-  2022 191122
+
+writtenIn prolog c cmake markdown bourne-shell bash tex html yaml csv json javascript perl make m4 xml python
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1992
+ commits 33136
+ committers 175
+ files 1911
+ newestCommit 2024
 
 githubRepo https://github.com/SWI-Prolog/swipl-devel
  stars 741
@@ -18,13 +25,7 @@ githubRepo https://github.com/SWI-Prolog/swipl-devel
  description SWI-Prolog Main development repository
  issues 110
 
-repoStats
- firstCommit 1992
- commits 33136
- committers 175
- files 1911
- newestCommit 2024
-
+jupyterKernel https://github.com/madmax2012/SWI-Prolog-Kernel
 wikipedia https://en.wikipedia.org/wiki/SWI-Prolog
  related c prolog java rdf unix linux lisp emacs-editor
  summary SWI-Prolog is a free implementation of the programming language Prolog, commonly used for teaching and semantic web applications. It has a rich set of features, libraries for constraint logic programming, multithreading, unit testing, GUI, interfacing to Java, ODBC and others, literate programming, a web server, SGML, RDF, RDFS, developer tools (including an IDE with a GUI debugger and GUI profiler), and extensive documentation. SWI-Prolog runs on Unix, Windows, Macintosh and Linux platforms. SWI-Prolog has been under continuous development since 1987. Its main author is Jan Wielemaker. The name SWI is derived from Sociaal-Wetenschappelijke Informatica ("Social Science Informatics"), the former name of the group at the University of Amsterdam, where Wielemaker is employed. The name of this group has changed to HCS (Human-Computer Studies).
@@ -35,8 +36,7 @@ wikipedia https://en.wikipedia.org/wiki/SWI-Prolog
  dailyPageViews 54
  appeared 1987
 
-jupyterKernel https://github.com/madmax2012/SWI-Prolog-Kernel
-fileType text
-centralPackageRepositoryCount 0
-
-writtenIn prolog c cmake markdown bourne-shell bash tex html yaml csv json javascript perl make m4 xml python
+domainName swi-prolog.org
+ registered 2001
+ awisRank
+  2022 191122

@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id kaml
 name KAML
 appeared 2018
 tags dataNotation
-reference https://github.com/ISLEcode/KAML/blob/master/kaml-specifications.md#about
 standsFor KAML ain't markup language
+
+writtenIn markdown xml
+supersetOf yaml json
+repoStats
+ firstCommit 2018
+ commits 59
+ committers 2
+ files 6
+ newestCommit 2019
 country Switzerland
 originCommunity https://github.com/ISLEcode
-
-supersetOf yaml json
+reference https://github.com/ISLEcode/KAML/blob/master/kaml-specifications.md#about
 
 example
  title="KAML Example"                    # A simple string
@@ -23,12 +31,3 @@ githubRepo https://github.com/ISLEcode/KAML
  updated 2020
  description KAML ain't markup language
  issues 0
-
-repoStats
- firstCommit 2018
- commits 59
- committers 2
- files 6
- newestCommit 2019
-
-writtenIn markdown xml

@@ -1,27 +1,22 @@
 import ../code/conceptPage.scroll
+
 id idyll
 name idyll
 appeared 2017
 tags pl
-conceptDescription Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
 website https://idyll-lang.org/
+conceptDescription Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
+
+writtenIn javascript idl json markdown css yaml html svg csv xml
 documentation https://idyll-lang.org/docs
+repoStats
+ firstCommit 2017
+ commits 2835
+ committers 48
+ files 1557
+ newestCommit 2022
 country Various
 originCommunity https://github.com/idyll-lang
-domainName idyll-lang.org
- registered 2017
- awisRank
-  2022 4392861
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasBooleans true
-
-lineCommentToken //
-booleanTokens true false
 
 example
  [meta
@@ -355,6 +350,7 @@ example
  
  
  [analytics google:"UA-108267630-1" /]
+twitter https://twitter.com/idyll_lang
 
 githubRepo https://github.com/idyll-lang/idyll
  firstCommit 2017
@@ -366,19 +362,23 @@ githubRepo https://github.com/idyll-lang/idyll
  description Create explorable explanations and interactive essays.
  issues 46
 
-repoStats
- firstCommit 2017
- commits 2835
- committers 48
- files 1557
- newestCommit 2022
+lineCommentToken //
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
+
+domainName idyll-lang.org
+ registered 2017
+ awisRank
+  2022 4392861
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  15204241|Idyll: Interactive Document Language|https://idyll-lang.github.io/|2017-09-08 21:55:53 UTC|1504907753|abhirag|18|195
 
-twitter https://twitter.com/idyll_lang
-
 isbndb 0
-
-writtenIn javascript idl json markdown css yaml html svg csv xml

@@ -1,9 +1,12 @@
 import ../code/conceptPage.scroll
+
 id torchscript
 name torchscript
 appeared 2018
 tags pl
 conceptDescription The PyTorch 1.0 release candidate introduces Torch Script, a Python subset that can be JIT-compiled into C++ or other high-speed code.
+
+centralPackageRepositoryCount 0
 reference https://pytorch.org/docs/stable/jit.html
 
 example
@@ -11,5 +14,3 @@ example
  def foo(x, y):
      return 2*x + y
  traced_foo = torch.jit.trace(foo, (torch.rand(3), torch.rand(3)))
-
-centralPackageRepositoryCount 0

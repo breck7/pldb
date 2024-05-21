@@ -1,30 +1,47 @@
 import ../code/conceptPage.scroll
+
 id euphoria
 name Euphoria
 appeared 1993
-tags pl
 creators Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell
+tags pl
 website http://openeuphoria.org
 standsFor End User Programming Hierarchial Objects for Robust Interpreted Applications
+
+isOpenSource true
+writtenIn elixir c bourne-shell make wasm html json javascript css yaml markdown tex prolog xml lex dockerfile
 fileExtensions e ex exw edb
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Euphoria
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2006
+ commits 6605
+ committers 34
+ files 861
+ newestCommit 2024
 country Canada
 originCommunity Rapid Deployment Software
-domainName openeuphoria.org
- registered 2007
- awisRank
-  2017 1210678
+projectEuler Euphoria
+ memberCount
+  2019 3
+  2022 8
 
-hasComments true
-hasLineComments true
- -- A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken --
-printToken puts
-stringToken "
+helloWorldCollection End User Programming Hierarchial Objects for Robust Interpreted Applications
+ -- Hello World in Euphoria
+ 
+ puts(1, "Hello World!\n")
+ 
+rijuRepl https://riju.codes/euphoria
+ example
+  puts(1, "Hello, world!\n")
+  
+leachim6 Euphoria
+ filepath e/Euphoria.ex
+ fileExtensions ex
+ example
+  puts(1, "Hello World")
+  
 
 githubRepo https://github.com/OpenEuphoria/euphoria
  firstCommit 2006
@@ -36,12 +53,17 @@ githubRepo https://github.com/OpenEuphoria/euphoria
  description The Euphoria programming language (https://openeuphoria.org/)
  issues 1
 
-repoStats
- firstCommit 2006
- commits 6605
- committers 34
- files 861
- newestCommit 2024
+lineCommentToken --
+printToken puts
+stringToken "
+
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  example
@@ -64,6 +86,20 @@ wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  appeared 1993
  fileExtensions e ex exw edb
 
+hopl https://hopl.info/showlanguage.prx?exp=2020
+tiobe Euphoria
+
+domainName openeuphoria.org
+ registered 2007
+ awisRank
+  2017 1210678
+
+githubBigQuery Euphoria
+ repos 47
+ users 46
+
+isbndb 0
+
 githubLanguage Euphoria
  type programming
  fileExtensions e ex
@@ -71,39 +107,3 @@ githubLanguage Euphoria
  aceMode text
  tmScope source.euphoria
  repos 75
-githubBigQuery Euphoria
- repos 47
- users 46
-
-projectEuler Euphoria
- memberCount
-  2019 3
-  2022 8
-helloWorldCollection End User Programming Hierarchial Objects for Robust Interpreted Applications
- -- Hello World in Euphoria
- 
- puts(1, "Hello World!\n")
- 
-leachim6 Euphoria
- filepath e/Euphoria.ex
- fileExtensions ex
- example
-  puts(1, "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Euphoria
-
-rijuRepl https://riju.codes/euphoria
- example
-  puts(1, "Hello, world!\n")
-  
-
-tiobe Euphoria
-hopl https://hopl.info/showlanguage.prx?exp=2020
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
-
-writtenIn elixir c bourne-shell make wasm html json javascript css yaml markdown tex prolog xml lex dockerfile

@@ -1,23 +1,26 @@
 import ../code/conceptPage.scroll
+
 id enso
 name Enso
 appeared 2015
-tags pl
 creators Wojciech Danilo
-conceptDescription Enso is an award-winning interactive programming language with dual visual and textual representations.
+tags pl
 website https://enso.org/
 oldName luna
+conceptDescription Enso is an award-winning interactive programming language with dual visual and textual representations.
+
+writtenIn java scala typescript rust markdown yaml svg json csv toml javascript python xml bourne-shell css html haskell dockerfile cpp nix make powershell bash
+relatedConcepts luna
+visualParadigm true
+repoStats
+ firstCommit 2019
+ commits 6229
+ committers 64
+ files 6765
+ newestCommit 2024
 country United States
 country Poland
 originCommunity https://github.com/enso-org
-domainName enso.org
- registered 2001
- awisRank
-  2022 3110066
-
-relatedConcepts luna
-
-visualParadigm true
 
 githubRepo https://github.com/enso-org/enso
  firstCommit 2019
@@ -29,13 +32,9 @@ githubRepo https://github.com/enso-org/enso
  description Hybrid visual and textual functional programming.
  issues 26
 
-repoStats
- firstCommit 2019
- commits 6229
- committers 64
- files 6765
- newestCommit 2024
+domainName enso.org
+ registered 2001
+ awisRank
+  2022 3110066
 
 isbndb 0
-
-writtenIn java scala typescript rust markdown yaml svg json csv toml javascript python xml bourne-shell css html haskell dockerfile cpp nix make powershell bash

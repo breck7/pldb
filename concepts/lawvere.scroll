@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id lawvere
 name Lawvere
 appeared 2021
-tags pl
 creators James Henri Haydon
+tags pl
 conceptDescription Lawvere - a categorical programming language with effects
-reference https://reddit.com/r/ProgrammingLanguages/comments/lls7q9/lawvere_a_categorical_programming_language_with/
+
+writtenIn haskell nix markdown yaml javascript bourne-shell lisp json toml xml
+repoStats
+ firstCommit 2020
+ commits 99
+ committers 5
+ files 75
+ newestCommit 2023
 country Japan
 originCommunity https://github.com/jameshaydon/lawvere/issues
+reference https://reddit.com/r/ProgrammingLanguages/comments/lls7q9/lawvere_a_categorical_programming_language_with/
 
 githubRepo https://github.com/jameshaydon/lawvere
  firstCommit 2020
@@ -18,12 +27,3 @@ githubRepo https://github.com/jameshaydon/lawvere
  updated 2022
  description A categorical programming language with effects
  issues 9
-
-repoStats
- firstCommit 2020
- commits 99
- committers 5
- files 75
- newestCommit 2023
-
-writtenIn haskell nix markdown yaml javascript bourne-shell lisp json toml xml

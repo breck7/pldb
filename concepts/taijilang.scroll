@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id taijilang
 name Taijilang
 appeared 2014
-tags pl
 creators Simeon Chaos
+tags pl
 website https://github.com/taijiweb/taijilang
-country Unknown
 
 writtenIn javascript coffeescript markdown json html css yaml
+repoStats
+ firstCommit 2014
+ commits 96
+ committers 2
+ files 176
+ newestCommit 2015
+country Unknown
 
 githubRepo https://github.com/taijiweb/taijilang
  stars 64
@@ -16,10 +23,3 @@ githubRepo https://github.com/taijiweb/taijilang
  created 2014
  updated 2015
  description a customizable and extensible language with dynamic parser and meta compilation.
-
-repoStats
- firstCommit 2014
- commits 96
- committers 2
- files 176
- newestCommit 2015

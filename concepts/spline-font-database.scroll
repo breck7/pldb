@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id spline-font-database
 name Spline Font Database
 appeared 2004
 tags application
-reference https://en.wikipedia.org/wiki/FontForge
-reference https://fontforge.github.io/docs/techref/sfdformat.html
+
+fileType text
+centralPackageRepositoryCount 0
 country https://web.archive.org/web/20090423033226/http://fontforge.sourceforge.net/ff-history.html
 country United States
 originCommunity https://github.com/fontforge
+reference https://en.wikipedia.org/wiki/FontForge
+reference https://fontforge.github.io/docs/techref/sfdformat.html
 
 example
  SplineFontDB: 3.0
@@ -52,18 +56,15 @@ example
  DEI: 91125
  ExtremaBound: 30
 
-githubLanguage Spline Font Database
- fileExtensions sfd
- trendingProjectsCount 0
- type data
- aceMode yaml
- tmScope text.sfd
-
 linguistGrammarRepo https://github.com/Alhadis/language-fontforge
  firstCommit 2016
  lastCommit 2018
  committerCount 2
  commitCount 51
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Spline Font Database
+ fileExtensions sfd
+ trendingProjectsCount 0
+ type data
+ aceMode yaml
+ tmScope text.sfd

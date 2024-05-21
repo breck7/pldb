@@ -1,13 +1,49 @@
 import ../code/conceptPage.scroll
+
 id monkey
 name Monkey
 appeared 2011
-tags pl
 creators Anthony Diamond
+tags pl
 website https://web.archive.org/web/20171205070657/http://monkey-x.com/
+
+writtenIn javascript html markdown
+fileType text
+wordRank 6182
 documentation https://regal-internet-brothers.github.io/monkey/docs/Tutorials_Getting%20started.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Monkey
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 36
+ committers 5
+ files 116
+ newestCommit 2023
 country United States
 originCommunity https://github.com/Regal-Internet-Brothers
+
+pygmentsHighlighter Monkey
+ filename basic.py
+ fileExtensions monkey
+leachim6 Monkey
+ filepath m/Monkey
+ example
+  puts("Hello World")
+  
+
+githubRepo https://github.com/Regal-Internet-Brothers/webcc-monkey
+ firstCommit 2015
+ stars 0
+ forks 0
+ subscribers 3
+ created 2015
+ updated 2023
+ description A port of Monkey's compiler to web browsers.
+ issues 1
+
+lineCommentToken '
+printToken puts
+stringToken "
 
 hasLineComments true
  ' A comment
@@ -26,27 +62,6 @@ hasIntegers true
 hasBinaryNumbers true
  ' \%[10]+
 hasMultiLineComments true
-
-lineCommentToken '
-printToken puts
-stringToken "
-
-githubRepo https://github.com/Regal-Internet-Brothers/webcc-monkey
- firstCommit 2015
- stars 0
- forks 0
- subscribers 3
- created 2015
- updated 2023
- description A port of Monkey's compiler to web browsers.
- issues 1
-
-repoStats
- firstCommit 2015
- commits 36
- committers 5
- files 116
- newestCommit 2023
 
 wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
  example
@@ -94,20 +109,10 @@ wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
  dailyPageViews 14
  appeared 2011
 
-githubLanguage Monkey
- fileExtensions monkey monkey2
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.monkey
- repos 254
 githubBigQuery Monkey
  repos 116
  users 53
 
-pygmentsHighlighter Monkey
- filename basic.py
- fileExtensions monkey
 linguistGrammarRepo https://github.com/gingerbeardman/monkey.tmbundle
  firstCommit 2011
  lastCommit 2016
@@ -145,23 +150,18 @@ linguistGrammarRepo https://github.com/gingerbeardman/monkey.tmbundle
   	Field depth := 0
   End
 
-leachim6 Monkey
- filepath m/Monkey
- example
-  puts("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Monkey
-
-fileType text
-wordRank 6182
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2018|Pakalana Publishing|Addicted to the Monkey Mind: Change the Programming That Sabotages Your Life|Benoist, J.F.|9780692978597
  2018|Pakalana Publishing|Addicted to the Monkey Mind: Change the Programming That Sabotages Your Life|Benoist, J.F.|9780578333663
  2016|O'Reilly Media|Programming Beyond Practices: Be More Than Just a Code Monkey|Brown, Gregory T|9781491943823
 
-semanticScholar 0
+githubLanguage Monkey
+ fileExtensions monkey monkey2
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.monkey
+ repos 254
 
-writtenIn javascript html markdown
+semanticScholar 0

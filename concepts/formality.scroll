@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id formality
 name formality
 appeared 2019
-tags pl
 creators Victor Maia
+tags pl
 website https://docs.formality-lang.org
+
 fileExtensions fm
+repoStats
+ firstCommit 2019
+ commits 280
+ committers 10
+ files 40
+ newestCommit 2020
 country Unknown
 originCommunity https://github.com/Soonad
-domainName docs.formality-lang.org
 
 githubRepo https://github.com/moonad/formality-base
  firstCommit 2019
@@ -20,9 +27,4 @@ githubRepo https://github.com/moonad/formality-base
  issues 2
  forks 1
 
-repoStats
- firstCommit 2019
- commits 280
- committers 10
- files 40
- newestCommit 2020
+domainName docs.formality-lang.org

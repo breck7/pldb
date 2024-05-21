@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id corescript
 name corescript
 appeared 2018
-tags pl
 creators Stephan Bruny
+tags pl
+
+writtenIn markdown f-sharp json xml
+repoStats
+ firstCommit 2018
+ commits 14
+ committers 1
+ files 70
+ newestCommit 2018
 country Germany
 originCommunity https://www.stephanbruny.de/
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/stephanbruny/corescript
  forks 0
  issues 0
 
-repoStats
- firstCommit 2018
- commits 14
- committers 1
- files 70
- newestCommit 2018
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  16419144|Show HN: CoreScript – a scripting language for dotnet core|2018-02-20 10:09:49 UTC|1519121389|sbruny|0|2
-
-writtenIn markdown f-sharp json xml

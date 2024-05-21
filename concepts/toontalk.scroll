@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id toontalk
 name ToonTalk
 appeared 1995
-tags pl
 creators Ken Kahn
+tags pl
 website http://www.toontalk.com/
-domainName toontalk.com
- registered 1996
+
+isOpenSource true
+writtenIn javascript html css markdown xml svg json scss php
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 4645
+ committers 2
+ files 1611
+ newestCommit 2023
 
 githubRepo https://github.com/ToonTalk/ToonTalk
  firstCommit 2014
@@ -17,13 +26,6 @@ githubRepo https://github.com/ToonTalk/ToonTalk
  updated 2022
  description Animated programming language for children of all ages
  issues 154
-
-repoStats
- firstCommit 2014
- commits 4645
- committers 2
- files 1611
- newestCommit 2023
 
 wikipedia https://en.wikipedia.org/wiki/ToonTalk
  related janus-programming-language
@@ -37,7 +39,5 @@ wikipedia https://en.wikipedia.org/wiki/ToonTalk
 
 hopl https://hopl.info/showlanguage.prx?exp=5762
 
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn javascript html css markdown xml svg json scss php
+domainName toontalk.com
+ registered 1996

@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id strat
 name strat
 appeared 2018
 tags pl
 website https://strat.world/
+
+writtenIn javascript html markdown smalltalk css json
+repoStats
+ firstCommit 2018
+ commits 193
+ committers 3
+ files 136
+ newestCommit 2019
 country United States
 originCommunity https://github.com/stratworld
-domainName strat.world
- registered 2022
 
 example
  service HelloWorld {
@@ -26,13 +33,7 @@ githubRepo https://github.com/stratworld/strat
  forks 1
  issues 2
 
-repoStats
- firstCommit 2018
- commits 193
- committers 3
- files 136
- newestCommit 2019
+domainName strat.world
+ registered 2022
 
 isbndb 0
-
-writtenIn javascript html markdown smalltalk css json

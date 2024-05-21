@@ -1,9 +1,15 @@
 import ../code/conceptPage.scroll
+
 id atom
 name Atom
 appeared 2007
-tags pl
 creators Thomas Hawkins
+tags pl
+
+isOpenSource true
+fileType text
+wordRank 2431
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Atom_(programming_language)
  related haskell bluespec verilog
@@ -14,8 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Atom_(programming_language)
  revisionCount 49
  dailyPageViews 12
  appeared 2007
-
-fileType text
-wordRank 2431
-isOpenSource true
-centralPackageRepositoryCount 0

@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id comit
 name COMIT
 appeared 1957
-tags pl
 creators Victor Yngve
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Chicago && Massachusetts Institute of Technology
 
@@ -19,14 +23,11 @@ wikipedia https://en.wikipedia.org/wiki/COMIT
 
 hopl https://hopl.info/showlanguage.prx?exp=19
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 1972|The Mit Press|Computer Programming With Comit Ii|Victor H. Yngve|9780262740074
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Comit Programmers Reference Manual||Comit|20504959|0.0|0|0
  Computer Programming With Comit Ii|1972|Victor H. Yngve|4310573|0.0|0|0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 1972|The Mit Press|Computer Programming With Comit Ii|Victor H. Yngve|9780262740074

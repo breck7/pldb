@@ -1,17 +1,26 @@
 import ../code/conceptPage.scroll
+
 id applesoft-basic
 name Applesoft BASIC
 appeared 1979
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
+
+leachim6 Applesoft BASIC
+ filepath a/Applesoft BASIC
+ example
+  10 PRINT "HELLO WORLD"
+  
+
+printToken PRINT
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken PRINT
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Applesoft_BASIC
  related microsoft-basic integer-basic macbasic c scheme java chinese-basic
@@ -22,13 +31,5 @@ wikipedia https://en.wikipedia.org/wiki/Applesoft_BASIC
  revisionCount 331
  dailyPageViews 56
  appeared 1977
-
-leachim6 Applesoft BASIC
- filepath a/Applesoft BASIC
- example
-  10 PRINT "HELLO WORLD"
-  
-
-centralPackageRepositoryCount 0
 
 isbndb 0

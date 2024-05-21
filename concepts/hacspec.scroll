@@ -1,18 +1,24 @@
 import ../code/conceptPage.scroll
+
 id hacspec
 name hacspec
 appeared 2018
-tags pl
 creators Franziskus Kiefer
-conceptDescription A specification language for crypto primitives and more in Rust.
+tags pl
 website https://hacspec.org
+firstAnnouncement https://www.franziskuskiefer.de/publications/hacspec18/
+conceptDescription A specification language for crypto primitives and more in Rust.
+
+writtenIn rust coq toml markdown json yaml c make tex bourne-shell dockerfile python svg logos
+relatedConcepts rust
+repoStats
+ firstCommit 2020
+ commits 1786
+ committers 34
+ files 515
+ newestCommit 2024
 country Germany
 originCommunity https://github.com/hacspec/hacspec/discussions
-domainName hacspec.org
- registered 2020
-firstAnnouncement https://www.franziskuskiefer.de/publications/hacspec18/
-
-relatedConcepts rust
 
 example
  pub type Res = (usize, usize);
@@ -44,11 +50,5 @@ githubRepo https://github.com/hacspec/hacspec
  description A specification language for cryptography primitives.
  issues 88
 
-repoStats
- firstCommit 2020
- commits 1786
- committers 34
- files 515
- newestCommit 2024
-
-writtenIn rust coq toml markdown json yaml c make tex bourne-shell dockerfile python svg logos
+domainName hacspec.org
+ registered 2020

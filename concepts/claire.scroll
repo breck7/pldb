@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id claire
 name CLAIRE
 appeared 2004
-tags pl
 creators Yves Caseau
+tags pl
+
+isOpenSource true
+visualParadigm false
+fileType text
+wordRank 8044
+centralPackageRepositoryCount 0
 country France
 originCommunity Bouygues' e-Lab research laboratory
-
-visualParadigm false
 
 wikipedia https://en.wikipedia.org/wiki/Claire_(programming_language)
  example
@@ -25,8 +30,3 @@ wikipedia https://en.wikipedia.org/wiki/Claire_(programming_language)
  fileExtensions cl
 
 hopl https://hopl.info/showlanguage.prx?exp=1902
-
-fileType text
-wordRank 8044
-isOpenSource true
-centralPackageRepositoryCount 0

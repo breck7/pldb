@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id luajit
 name LuaJIT
 appeared 2005
-tags compiler
 creators Mike Pall
+tags compiler
 website http://luajit.org/luajit.html
+
+writtenIn c lua html make css
+repoStats
+ firstCommit 2009
+ commits 2840
+ committers 1
+ files 232
+ newestCommit 2024
 country Germany and Denmark
 originCommunity https://github.com/LuaJIT
 
@@ -17,11 +26,3 @@ githubRepo https://github.com/LuaJIT/LuaJIT
  updated 2022
  description Mirror of the LuaJIT git repository
  issues 63
-
-repoStats
- firstCommit 2009
- commits 2840
- committers 1
- files 232
- newestCommit 2024
-writtenIn c lua html make css

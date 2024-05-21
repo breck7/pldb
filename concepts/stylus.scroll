@@ -1,21 +1,31 @@
 import ../code/conceptPage.scroll
+
 id stylus
 name Stylus
 appeared 2010
-tags stylesheetLanguage
 creators TJ Holowaychuk
+tags stylesheetLanguage
 website http://stylus-lang.com/
-domainName stylus-lang.com
- registered 2015
- awisRank
-  2022 800241
-  2017 274066
+
+isOpenSource true
+clocExtensions styl
+fileType text
+wordRank 6948
+codeMirror stylus
+centralPackageRepositoryCount 0
+
+leachim6 Stylus
+ filepath s/Stylus.styl
+ fileExtensions styl
+ example
+  body::before
+  	content: "Hello World"
+
+stringToken "
 
 hasSemanticIndentation true
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
  example
@@ -33,18 +43,16 @@ wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
  revisionCount 31
  appeared 2010
 
-githubLanguage Stylus
- fileExtensions styl
- trendingProjectsCount 0
- type markup
- aceMode stylus
- tmScope source.stylus
- repos 5041
+domainName stylus-lang.com
+ registered 2015
+ awisRank
+  2022 800241
+  2017 274066
+
 githubBigQuery Stylus
  repos 344
  users 315
 
-codeMirror stylus
 linguistGrammarRepo https://github.com/billymoon/Stylus
  firstCommit 2012
  lastCommit 2017
@@ -85,18 +93,12 @@ linguistGrammarRepo https://github.com/billymoon/Stylus
     @extends $foo
   
 
-leachim6 Stylus
- filepath s/Stylus.styl
- fileExtensions styl
- example
-  body::before
-  	content: "Hello World"
-
-fileType text
-wordRank 6948
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions styl
+githubLanguage Stylus
+ fileExtensions styl
+ trendingProjectsCount 0
+ type markup
+ aceMode stylus
+ tmScope source.stylus
+ repos 5041

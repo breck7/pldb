@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id nilscript
 name NilScript
 appeared 2013
-tags pl
 creators Ricci Adams
+tags pl
 website https://github.com/musictheory/NilScript
+
+writtenIn javascript markdown typescript json
+repoStats
+ firstCommit 2013
+ commits 529
+ committers 2
+ files 74
+ newestCommit 2018
 country United States
 originCommunity musictheory.net, LLC
 
@@ -25,12 +34,3 @@ githubRepo https://github.com/musictheory/NilScript
  created 2013
  updated 2018
  description Objective-C-style language superset of JavaScript with a tiny, simple runtime
-
-repoStats
- firstCommit 2013
- commits 529
- committers 2
- files 74
- newestCommit 2018
-
-writtenIn javascript markdown typescript json

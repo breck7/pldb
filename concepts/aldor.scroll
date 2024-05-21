@@ -1,16 +1,19 @@
 import ../code/conceptPage.scroll
+
 id aldor
 name Aldor
 appeared 1990
-tags pl
 creators Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison
+tags pl
 website http://www.aldor.org
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity Western University
-domainName aldor.org
- registered 2000
- awisRank
-  2022 5414963
+
+lineCommentToken --
 
 hasSemanticIndentation true
 hasLineComments true
@@ -18,8 +21,7 @@ hasLineComments true
 hasComments true
  -- A comment
 
-lineCommentToken --
-
+jupyterKernel https://github.com/mattpap/IAldor
 wikipedia https://en.wikipedia.org/wiki/Aldor
  example
   #include "aldor"
@@ -68,9 +70,9 @@ wikipedia https://en.wikipedia.org/wiki/Aldor
 
 hopl https://hopl.info/showlanguage.prx?exp=6911
 
-jupyterKernel https://github.com/mattpap/IAldor
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName aldor.org
+ registered 2000
+ awisRank
+  2022 5414963
 
 isbndb 0

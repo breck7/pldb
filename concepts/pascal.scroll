@@ -1,16 +1,89 @@
 import ../code/conceptPage.scroll
+
 id pascal
 name Pascal
 appeared 1970
-tags pl
-demoVideo https://www.youtube.com/watch?v=Hw4GEwhCZpc
 creators Niklaus Wirth
+tags pl
+
+demoVideo https://www.youtube.com/watch?v=Hw4GEwhCZpc
+gdbSupport true
+fileExtensions pp pas inc
+releaseNotesUrl https://www.freepascal.org/news.html
+clocExtensions dpr lpr p pas pascal
+fileType text
 documentation https://www.freepascal.org/docs.html
 emailList https://www.freepascal.org/maillist.html
-fileExtensions pp pas inc
+faqPageUrl https://www.freepascal.org/faq.html
+downloadPageUrl https://www.freepascal.org/download.html
+antlr https://github.com/antlr/grammars-v4/tree/master/pascal
+monaco pascal
+codeMirror pascal
+rosettaCode http://www.rosettacode.org/wiki/Category:Pascal
+quineRelay Pascal
+centralPackageRepositoryCount 0
+ubuntuPackage fp-compiler
 country Switzerland
 originCommunity ETH Zürich
-releaseNotesUrl https://www.freepascal.org/news.html
+projectEuler Pascal
+ memberCount
+  2019 708
+  2022 710
+
+helloWorldCollection Pascal
+ {Hello World in Pascal}
+ 
+ program HelloWorld(output);
+ begin
+   WriteLn('Hello World!');
+ end.
+ 
+rijuRepl https://riju.codes/pascal
+ example
+  program Main;
+  begin
+     writeln('Hello, world!');
+  end.
+subreddit https://www.reddit.com/r/Pascal
+ memberCount
+  2022 1858
+leachim6 Pascal
+ filepath p/Pascal.p
+ fileExtensions p
+ example
+  program HelloWorld(output);
+  begin
+          writeln('Hello World');
+  end.
+  
+compilerExplorer Pascal
+ example
+  unit output;
+  
+  interface
+  
+  function Square(const num: Integer): Integer;
+  
+  implementation
+  
+  // Type your code here, or load an example.
+  
+  function Square(const num: Integer): Integer;
+  begin
+      Square := num * num;
+  end;
+  
+  end.
+  
+
+keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
+
+lineCommentToken //
+multiLineCommentTokens { }
+printToken writeln
+assignmentToken :=
+stringToken '
+booleanTokens true false
 
 hasPolymorphism true
 hasComments true
@@ -48,14 +121,6 @@ hasBooleans true
 hasWhileLoops true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens { }
-printToken writeln
-assignmentToken :=
-stringToken '
-booleanTokens true false
-keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
-
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example
   program Printing;
@@ -81,28 +146,13 @@ wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  appeared 1970
  fileExtensions pp pas inc
 
-githubLanguage Pascal
- fileExtensions pas dfm dpr inc lpr pascal pp
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  cheat-engine cheat-engine https://github.com/cheat-engine.png https://github.com/cheat-engine/cheat-engine Pascal #E3F171 3166 650 185 "Cheat Engine. A development environment focused on modding"
-  stascorp rdpwrap https://github.com/stascorp.png https://github.com/stascorp/rdpwrap Pascal #E3F171 5646 1029 162 "RDP Wrapper Library"
- trendingProjectsCount 3
- type programming
- interpreters instantfpc
- aceMode pascal
- codemirrorMode pascal
- codemirrorMimeType text/x-pascal
- tmScope source.pascal
- aliases delphi or objectpascal
- repos 49346
+hopl https://hopl.info/showlanguage.prx?exp=520
+tiobe Pascal
+
 githubBigQuery Pascal
  repos 10149
  users 8263
 
-antlr https://github.com/antlr/grammars-v4/tree/master/pascal
-monaco pascal
-codeMirror pascal
 linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -137,73 +187,6 @@ linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
   
   
   
-
-projectEuler Pascal
- memberCount
-  2019 708
-  2022 710
-helloWorldCollection Pascal
- {Hello World in Pascal}
- 
- program HelloWorld(output);
- begin
-   WriteLn('Hello World!');
- end.
- 
-leachim6 Pascal
- filepath p/Pascal.p
- fileExtensions p
- example
-  program HelloWorld(output);
-  begin
-          writeln('Hello World');
-  end.
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Pascal
-quineRelay Pascal
-
-compilerExplorer Pascal
- example
-  unit output;
-  
-  interface
-  
-  function Square(const num: Integer): Integer;
-  
-  implementation
-  
-  // Type your code here, or load an example.
-  
-  function Square(const num: Integer): Integer;
-  begin
-      Square := num * num;
-  end;
-  
-  end.
-  
-rijuRepl https://riju.codes/pascal
- example
-  program Main;
-  begin
-     writeln('Hello, world!');
-  end.
-
-indeedJobs pascal developer
- 2022 102
-faqPageUrl https://www.freepascal.org/faq.html
-downloadPageUrl https://www.freepascal.org/download.html
-
-subreddit https://www.reddit.com/r/Pascal
- memberCount
-  2022 1858
-
-tiobe Pascal
-hopl https://hopl.info/showlanguage.prx?exp=520
-
-ubuntuPackage fp-compiler
-gdbSupport true
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 145
  year|publisher|title|authors|isbn13
@@ -353,6 +336,25 @@ isbndb 145
  1982|Van Nostrand Reinhold Co|Programming microcomputers with PASCAL|Beer, M. D|9780442213688
  1982|Van Nostrand,, New York:|Programming Microcomputers with PASCAL|Beer, Martin|9780246116192
 
+githubLanguage Pascal
+ fileExtensions pas dfm dpr inc lpr pascal pp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  cheat-engine cheat-engine https://github.com/cheat-engine.png https://github.com/cheat-engine/cheat-engine Pascal #E3F171 3166 650 185 "Cheat Engine. A development environment focused on modding"
+  stascorp rdpwrap https://github.com/stascorp.png https://github.com/stascorp/rdpwrap Pascal #E3F171 5646 1029 162 "RDP Wrapper Library"
+ trendingProjectsCount 3
+ type programming
+ interpreters instantfpc
+ aceMode pascal
+ codemirrorMode pascal
+ codemirrorMimeType text/x-pascal
+ tmScope source.pascal
+ aliases delphi or objectpascal
+ repos 49346
+
+indeedJobs pascal developer
+ 2022 102
+
 semanticScholar 21
  year|title|doi|citations|influentialCitations|authors|paperId
  1975|The programming language Concurrent Pascal|10.1007/3-540-07994-7_50|532|15|P. B. Hansen|93442ec9b4403619bb1658bdee2c08026bf442ba
@@ -376,5 +378,3 @@ semanticScholar 21
  1990|POLROB—a manipulator-level programming language based on Pascal|10.1016/0745-7138(91)90012-G|2|0|K. Kozlowski|3d2dde6cb2987b66ceb9f9e632211056f8748d12
  2018|USING THE FREE PASCAL PROGRAMMING LANGUAGE AND THE RUBIROBOTLIB SOFTWARE LIBRARY TO CONTROL ROBOTS ON THE LEGO MINDSTORMS EV3 PLATFORM|10.32517/2221-1993-2018-17-7-8-12|2|0|D. A. Slinkin|8789b2adfc57dd99097e2ce58ac233a36d696f24
  1972|Implementation of the Programming Language Pascal|10.1007/978-3-642-80718-3_1|1|0|R. Schild|c141b8a6ffe6c15fecb71433748031d59ba730f7
-
-clocExtensions dpr lpr p pas pascal

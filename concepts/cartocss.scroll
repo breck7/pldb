@@ -1,11 +1,18 @@
 import ../code/conceptPage.scroll
+
 id cartocss
 name CartoCSS
 appeared 2010
 tags pl
-reference https://blog.mapbox.com/the-end-of-cartocss-da2d7427cf1
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Mapbox
+reference https://blog.mapbox.com/the-end-of-cartocss-da2d7427cf1
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -16,17 +23,6 @@ hasMultiLineComments true
  */
 hasSemanticIndentation false
 
-lineCommentToken //
-multiLineCommentTokens /* */
-
-githubLanguage CartoCSS
- fileExtensions mss
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.css.mss
- aliases Carto
- repos 477
 githubBigQuery CartoCSS
  repos 341
  users 289
@@ -114,5 +110,11 @@ linguistGrammarRepo https://github.com/yohanboniface/carto-atom
     [feature = 'amenity_cafe'][zoom >= 17] {
       point-file: url('symbols/cafe.p.1
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage CartoCSS
+ fileExtensions mss
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.css.mss
+ aliases Carto
+ repos 477

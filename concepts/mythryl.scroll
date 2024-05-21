@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id mythryl
 name mythryl
 appeared 2006
 tags pl
 website https://mythryl.org
+
+writtenIn tex c bourne-shell perl standard-ml lex pascal html make css vim-script dtd
+repoStats
+ firstCommit 2010
+ commits 3372
+ committers 6
+ files 5641
+ newestCommit 2015
 country Unknown
 originCommunity https://github.com/mythryl/mythryl/issues
-domainName mythryl.org
- registered 2006
 
 example
  fun qsort [] => [];  qsort (x!xs) => qsort (filter {. #a < x; } xs) @ [x] @ qsort (filter {. #a >= x; } xs);  end;
@@ -22,11 +29,5 @@ githubRepo https://github.com/mythryl/mythryl
  description The Mythryl programming language
  issues 6
 
-repoStats
- firstCommit 2010
- commits 3372
- committers 6
- files 5641
- newestCommit 2015
-
-writtenIn tex c bourne-shell perl standard-ml lex pascal html make css vim-script dtd
+domainName mythryl.org
+ registered 2006

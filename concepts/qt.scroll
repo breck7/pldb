@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id qt
 name Qt
 appeared 1995
 tags framework
 website https://www.qt.io/
-country Finland
-originCommunity Qt Group plc
-domainName qt.io
- registered 2013
- awisRank
-  2022 5609
 
 writtenIn cpp
+clocExtensions ui
+fileType text
+wordRank 9774
+centralPackageRepositoryCount 0
+country Finland
+originCommunity Qt Group plc
+
+twitter https://twitter.com/qtproject
 
 wikipedia https://en.wikipedia.org/wiki/Qt_(software)
  related android ios linux sql xml json visual-studio-editor qml javascript sibelius-software qmake solaris opengl qtscript xpath xquery unix emacs-editor
@@ -23,16 +26,16 @@ wikipedia https://en.wikipedia.org/wiki/Qt_(software)
  revisionCount 2376
  appeared 1990
 
+domainName qt.io
+ registered 2013
+ awisRank
+  2022 5609
+
 linguistGrammarRepo https://github.com/textmate/cpp-qt.tmbundle
  firstCommit 2006
  lastCommit 2014
  committerCount 7
  commitCount 50
-
-twitter https://twitter.com/qtproject
-fileType text
-wordRank 9774
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -41,5 +44,3 @@ goodreads
  C++ GUI Programming with Qt 4|2006|Jasmin Blanchette|561698|3.76|38|1
  Rapid GUI Programming with Python and Qt: The Definitive Guide to PyQt Programming|2007|Mark Summerfield|1790241|3.95|77|6
  C++ GUI Programming with Qt 3|2004|Jasmin Blanchette|561701|3.69|16|0
-
-clocExtensions ui

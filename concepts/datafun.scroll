@@ -1,14 +1,25 @@
 import ../code/conceptPage.scroll
+
 id datafun
 name datafun
 appeared 2015
-tags pl
 creators Michael Arntzenius
-conceptDescription It's a simple, pure, and total functional language that generalizes Datalog. Datafun's superpower is that it can concisely and declaratively express and compute fixed points of monotone maps on semilattices.
+tags pl
 website http://www.rntz.net/datafun/
-reference http://www.rntz.net/files/datafun.pdf
+conceptDescription It's a simple, pure, and total functional language that generalizes Datalog. Datafun's superpower is that it can concisely and declaratively express and compute fixed points of monotone maps on semilattices.
+
+isOpenSource true
+writtenIn tex ocaml agda racket make markdown haskell bash bourne-shell python rust json toml
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 2219
+ committers 5
+ files 393
+ newestCommit 2022
 country United Kingdom and Canada
 originCommunity University of Birmingham
+reference http://www.rntz.net/files/datafun.pdf
 
 githubRepo https://github.com/rntz/datafun
  firstCommit 2015
@@ -19,15 +30,3 @@ githubRepo https://github.com/rntz/datafun
  updated 2022
  description Research on integrating datalog & lambda calculus via monotonicity types
  issues 2
-
-repoStats
- firstCommit 2015
- commits 2219
- committers 5
- files 393
- newestCommit 2022
-
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn tex ocaml agda racket make markdown haskell bash bourne-shell python rust json toml

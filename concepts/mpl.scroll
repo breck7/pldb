@@ -1,15 +1,16 @@
 import ../code/conceptPage.scroll
+
 id mpl
 name mpl
 appeared 1988
 tags pl
 website http://www.maximalsoftware.com/mpl/
-reference http://www.gmu.edu/schools/vse/seor/syllabi/02F/mplman.pdf
+
+relatedConcepts gams ampl
 fileExtensions mpl
 country United States
 originCommunity Maximal Software, Inc.
-
-relatedConcepts gams ampl
+reference http://www.gmu.edu/schools/vse/seor/syllabi/02F/mplman.pdf
 
 example
  {   Planning.mpl   }

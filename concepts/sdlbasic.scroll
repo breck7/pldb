@@ -1,14 +1,17 @@
 import ../code/conceptPage.scroll
+
 id sdlbasic
 name SdlBasic
 appeared 2002
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://sourceforge.net/p/sdlbasic/mailman/sdlbasic-developers
 
-hasPrintDebugging true
-
 printToken print
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/SdlBasic
  example
@@ -30,5 +33,3 @@ wikipedia https://en.wikipedia.org/wiki/SdlBasic
  revisionCount 49
  dailyPageViews 4
  appeared 2002
-
-centralPackageRepositoryCount 0

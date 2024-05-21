@@ -1,15 +1,21 @@
 import ../code/conceptPage.scroll
+
 id nimskull
 name Nimskull
 appeared 2021
-tags pl
 creators Andreas Rumpf
+tags pl
 website https://nim-works.github.io/nimskull/index.html
-reference https://news.ycombinator.com/item?id=32021299
-country Various
-originCommunity https://github.com/nim-works
 
 forkOf nim
+repoStats
+ firstCommit 2008
+ commits 21400
+ committers 884
+ files 2964
+country Various
+originCommunity https://github.com/nim-works
+reference https://news.ycombinator.com/item?id=32021299
 
 githubRepo https://github.com/nim-works/nimskull
  firstCommit 2008
@@ -20,9 +26,3 @@ githubRepo https://github.com/nim-works/nimskull
  updated 2022
  description An in development statically typed systems programming language; with sustainability at its core. We, the community of users, maintain it.
  issues 51
-
-repoStats
- firstCommit 2008
- commits 21400
- committers 884
- files 2964

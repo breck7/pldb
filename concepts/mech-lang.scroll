@@ -1,19 +1,24 @@
 import ../code/conceptPage.scroll
+
 id mech-lang
 name Mech
 appeared 2018
-tags pl
 creators Corey Montella
-conceptDescription Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
+tags pl
 website http://mech-lang.org
 webRepl http://try.mech-lang.org/
-reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+conceptDescription Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
+
+writtenIn rust markdown toml json yaml html typescript dockerfile
+repoStats
+ firstCommit 2018
+ commits 984
+ committers 6
+ files 143
+ newestCommit 2023
 country United States
 originCommunity Lehigh University
-domainName mech-lang.org
- registered 2018
- awisRank
-  2022 7955651
+reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
 
 example
  # Breakout
@@ -71,6 +76,7 @@ example
    ix = #ball.y > 390
    #ball.x{ix} := 20
    #ball.y{ix} := 20
+twitter https://twitter.com/MechLang
 
 githubRepo https://github.com/mech-lang/mech
  firstCommit 2018
@@ -82,15 +88,9 @@ githubRepo https://github.com/mech-lang/mech
  forks 7
  issues 0
 
-repoStats
- firstCommit 2018
- commits 984
- committers 6
- files 143
- newestCommit 2023
-
-twitter https://twitter.com/MechLang
+domainName mech-lang.org
+ registered 2018
+ awisRank
+  2022 7955651
 
 isbndb 0
-
-writtenIn rust markdown toml json yaml html typescript dockerfile

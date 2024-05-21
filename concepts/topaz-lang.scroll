@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id topaz-lang
 name Topaz
 appeared 2021
-tags pl
 creators m-schm
+tags pl
 website https://github.com/m-schm/topaz
-country Unknown
 
+writtenIn haskell yaml markdown
 compilesTo javascript
+repoStats
+ firstCommit 2021
+ commits 78
+ committers 1
+ files 27
+ newestCommit 2021
+country Unknown
 
 example
  ;; This is a comment
@@ -37,12 +45,3 @@ githubRepo https://github.com/m-schm/topaz
  updated 2022
  description Dependently typed language that compiles to JavaScript
  issues 0
-
-repoStats
- firstCommit 2021
- commits 78
- committers 1
- files 27
- newestCommit 2021
-
-writtenIn haskell yaml markdown

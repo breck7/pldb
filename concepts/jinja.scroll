@@ -1,14 +1,26 @@
 import ../code/conceptPage.scroll
+
 id jinja
 name Jinja
 appeared 2006
-tags template
 creators Armin Ronacher
+tags template
 website http://jinja.pocoo.org/
+
+isOpenSource true
+writtenIn python restructuredtext yaml html markdown svg toml ini json make bourne-shell
+clocExtensions j2 jinja jinja2
+fileType text
 documentation https://jinja.palletsprojects.com/en/3.1.x/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2007
+ commits 2973
+ committers 320
+ files 120
+ newestCommit 2024
 country Various
 originCommunity https://github.com/pallets/jinja/issues/
-domainName jinja.pocoo.org
 
 githubRepo https://github.com/pallets/jinja
  firstCommit 2007
@@ -19,13 +31,6 @@ githubRepo https://github.com/pallets/jinja
  updated 2022
  description A very fast and expressive template engine.
  issues 40
-
-repoStats
- firstCommit 2007
- commits 2973
- committers 320
- files 120
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
  example
@@ -51,16 +56,8 @@ wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
  backlinksCount 34
  revisionCount 63
 
-githubLanguage HTML+Django
- fileExtensions jinja j2 jinja2
- trendingProjectsCount 0
- type markup
- aceMode django
- codemirrorMode django
- codemirrorMimeType text/x-django
- tmScope text.html.django
- aliases django or html+django or html+jinja or htmldjango
- repos 37267
+domainName jinja.pocoo.org
+
 githubBigQuery Jinja
  repos 981
  users 701
@@ -112,13 +109,17 @@ linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
   </table>
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage HTML+Django
+ fileExtensions jinja j2 jinja2
+ trendingProjectsCount 0
+ type markup
+ aceMode django
+ codemirrorMode django
+ codemirrorMimeType text/x-django
+ tmScope text.html.django
+ aliases django or html+django or html+jinja or htmldjango
+ repos 37267
 
-clocExtensions j2 jinja jinja2
-writtenIn python restructuredtext yaml html markdown svg toml ini json make bourne-shell
+semanticScholar 0

@@ -1,15 +1,31 @@
 import ../code/conceptPage.scroll
+
 id clarion
 name Clarion
 appeared 1986
 tags pl
 website http://www.softvelocity.com
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Clarion
+centralPackageRepositoryCount 0
 country United States
 originCommunity Jensen & Partners International && Clarion International && SoftVelocity
-domainName softvelocity.com
- registered 2000
- awisRank
-  2022 2887840
+
+helloWorldCollection Clarion
+ !Hello World in Clarion
+  
+   PROGRAM
+  
+  MAP
+  END
+  
+  CODE
+  
+  MESSAGE('Hello World!')
+  
+  RETURN
+ 
 
 wikipedia https://en.wikipedia.org/wiki/Clarion_(programming_language)
  example
@@ -28,13 +44,14 @@ wikipedia https://en.wikipedia.org/wiki/Clarion_(programming_language)
  revisionCount 540
  appeared 1989
 
-githubLanguage Clarion
- fileExtensions clw
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.clarion
- repos 223
+hopl https://hopl.info/showlanguage.prx?exp=1903
+tiobe Clarion
+
+domainName softvelocity.com
+ registered 2000
+ awisRank
+  2022 2887840
+
 githubBigQuery Clarion
  repos 278
  users 252
@@ -57,29 +74,15 @@ linguistGrammarRepo https://github.com/fushnisoft/SublimeClarion
   
     RETURN
 
-helloWorldCollection Clarion
- !Hello World in Clarion
-  
-   PROGRAM
-  
-  MAP
-  END
-  
-  CODE
-  
-  MESSAGE('Hello World!')
-  
-  RETURN
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:Clarion
-
-tiobe Clarion
-hopl https://hopl.info/showlanguage.prx?exp=1903
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2010||Clarion (programming Language)|Miller and Frederic P. and Vandome and Agnes F. and McBrewster and John|9786130282738
  1995|Sams|Developing Clarion For Windows Applications/book And Disk|Ross A. Santos and David Harms|9780672306747
+
+githubLanguage Clarion
+ fileExtensions clw
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.clarion
+ repos 223

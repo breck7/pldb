@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id insitux
 name Insitux
 appeared 2021
-tags pl
 creators Patrick Bowen
+tags pl
 website https://insitux.github.io/
+
+writtenIn typescript markdown svg json javascript python yaml html clojure
+repoStats
+ firstCommit 2021
+ commits 427
+ committers 6
+ files 71
+ newestCommit 2023
 country United Kingdom
 originCommunity https://github.com/phunanon/Insitux/issues
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/phunanon/Insitux
  updated 2022
  description An extensible scripting language made to be situated in tough spots like Roblox games.
  issues 7
-
-repoStats
- firstCommit 2021
- commits 427
- committers 6
- files 71
- newestCommit 2023
-
-writtenIn typescript markdown svg json javascript python yaml html clojure

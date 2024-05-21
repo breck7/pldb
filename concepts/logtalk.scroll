@@ -1,14 +1,32 @@
 import ../code/conceptPage.scroll
+
 id logtalk
 name Logtalk
 appeared 1998
-tags pl
 creators Paulo Moura
+tags pl
 website http://logtalk.org
+
+clocExtensions lgt logtalk
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Logtalk
+centralPackageRepositoryCount 0
 country Portugal
 originCommunity https://github.com/LogtalkDotOrg
-domainName logtalk.org
- registered 2002
+
+pygmentsHighlighter Logtalk
+ filename prolog.py
+ fileExtensions lgt logtalk
+twitter https://twitter.com/logtalkdotorg
+leachim6 Logtalk
+ filepath l/Logtalk.lgt
+ fileExtensions lgt
+ example
+  write('Hello World')
+  
+
+printToken write
+stringToken '
 
 hasComments true
 hasMultipleInheritance true
@@ -19,9 +37,6 @@ hasStrings true
 hasOctals true
 hasHexadecimals true
 hasBinaryNumbers true
-
-printToken write
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Logtalk_(programming_language)
  example
@@ -36,20 +51,15 @@ wikipedia https://en.wikipedia.org/wiki/Logtalk_(programming_language)
  dailyPageViews 2
  appeared 1998
 
-githubLanguage Logtalk
- fileExtensions lgt logtalk
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.logtalk
- repos 65
+hopl https://hopl.info/showlanguage.prx?exp=3555
+
+domainName logtalk.org
+ registered 2002
+
 githubBigQuery Logtalk
  repos 52
  users 50
 
-pygmentsHighlighter Logtalk
- filename prolog.py
- fileExtensions lgt logtalk
 linguistGrammarRepo https://github.com/textmate/logtalk.tmbundle
  firstCommit 2005
  lastCommit 2017
@@ -68,21 +78,15 @@ linguistGrammarRepo https://github.com/textmate/logtalk.tmbundle
   :- end_object.
   
 
-leachim6 Logtalk
- filepath l/Logtalk.lgt
- fileExtensions lgt
- example
-  write('Hello World')
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Logtalk
-
-hopl https://hopl.info/showlanguage.prx?exp=3555
-
-twitter https://twitter.com/logtalkdotorg
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Logtalk
+ fileExtensions lgt logtalk
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.logtalk
+ repos 65
 
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -90,5 +94,3 @@ semanticScholar 4
  2009|Programming Patterns for Logtalk Parametric Objects|10.1007/978-3-642-20589-7_4|12|1|Paulo Moura|12f4071900572a48e9f75e3d953629346d0c265a
  2009|From Plain Prolog to Logtalk Objects: Effective Code Encapsulation and Reuse|10.1007/978-3-642-02846-5_3|7|1|Paulo Moura|ee9e13c53d2ed91fc61830ed000a44229a705928
  2009|High Level Thread-Based Competitive Or-Parallelism in Logtalk|10.1007/978-3-540-92995-6_8|5|0|Paulo Moura and Ricardo Rocha and S. Madeira|d2d6b9c1f4996a55752753ee221614a86f6a15ef
-
-clocExtensions lgt logtalk

@@ -1,16 +1,19 @@
 import ../code/conceptPage.scroll
+
 id clos
 name CLOS
 appeared 1988
 tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/CLOS
  example
@@ -36,8 +39,6 @@ wikipedia https://en.wikipedia.org/wiki/CLOS
  appeared 1988
 
 hopl https://hopl.info/showlanguage.prx?exp=1389
-
-centralPackageRepositoryCount 0
 
 isbndb 3
  year|publisher|title|authors|isbn13

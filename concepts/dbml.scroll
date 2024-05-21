@@ -1,10 +1,10 @@
 import ../code/conceptPage.scroll
+
 id dbml
 name dbml
 appeared 2019
 tags textMarkup
 website https://www.dbml-lang.org/
-domainName dbml-lang.org
 
 example
  Table users {
@@ -26,6 +26,8 @@ example
    published
    private [note: 'visible via URL only']
  }
+
+domainName dbml-lang.org
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score

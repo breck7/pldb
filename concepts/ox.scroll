@@ -1,14 +1,28 @@
 import ../code/conceptPage.scroll
+
 id ox
 name OX
 appeared 1996
-tags pl
 creators Jurgen A. Doornik
+tags pl
 website http://www.oxmetrics.net/
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity OxMetrics Technologies
-domainName oxmetrics.net
- registered 2002
+
+leachim6 OX
+ filepath o/OX.oz
+ fileExtensions oz
+ example
+  {Show 'Hello World'}
+  
+
+lineCommentToken //
+printToken Show
+stringToken '
 
 hasLineComments true
  // A comment
@@ -18,10 +32,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  'Hello world'
-
-lineCommentToken //
-printToken Show
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Ox_(programming_language)
  related linux r
@@ -33,13 +43,11 @@ wikipedia https://en.wikipedia.org/wiki/Ox_(programming_language)
  dailyPageViews 6
  appeared 2011
 
-githubLanguage Ox
- fileExtensions ox oxh oxo
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ox
- repos 58
+hopl https://hopl.info/showlanguage.prx?exp=2718
+
+domainName oxmetrics.net
+ registered 2002
+
 githubBigQuery Ox
  repos 19
  users 12
@@ -91,22 +99,17 @@ linguistGrammarRepo https://github.com/andreashetland/sublime-text-ox
   }
   
 
-leachim6 OX
- filepath o/OX.oz
- fileExtensions oz
- example
-  {Show 'Hello World'}
-  
-
-hopl https://hopl.info/showlanguage.prx?exp=2718
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2006|Timberlake Consultants|An Object-oriented Matrix Programming Language: Ox 4|Jurgen A. Doornik|9780954260385
  2010||Ox Programming Language|Surhone and Lambert M. and Tennoe and Mariam T. and Henssonow and Susan F.|9786133182042
  2007|Timberlake Consultants|An Object-oriented Matrix Programming Language: Ox 5|Jurgen A. Doornik|9780955212758
  2006|Timberlake Consultants Ltd|Introduction To Ox An Object-oriented Matrix Programming Language|Jurgen A. Doornik and Marius Ooms|9780955212703
+
+githubLanguage Ox
+ fileExtensions ox oxh oxo
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ox
+ repos 58

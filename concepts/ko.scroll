@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ko
 name ko
 appeared 2018
-tags pl
 creators Petar Maymounkov
+tags pl
+
+isOpenSource true
+writtenIn go markdown hcl json assembly-language yaml bourne-shell perl protobuf xml svg toml dockerfile make cson c csv
+wordRank 9241
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2018
+ commits 423
+ committers 4
+ files 1843
+ newestCommit 2018
 country The Netherlands and United States
 originCommunity https://github.com/kocircuit/kocircuit
 
@@ -16,16 +28,3 @@ githubRepo https://github.com/kocircuit/kocircuit
  updated 2022
  description Ko: A generic type-safe language for concurrent, stateful, deadlock-free systems and protocol manipulations
  issues 15
-
-repoStats
- firstCommit 2018
- commits 423
- committers 4
- files 1843
- newestCommit 2018
-
-wordRank 9241
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn go markdown hcl json assembly-language yaml bourne-shell perl protobuf xml svg toml dockerfile make cson c csv

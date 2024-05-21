@@ -1,19 +1,28 @@
 import ../code/conceptPage.scroll
+
 id semicolon
 name semicolon
 appeared 2012
-tags esolang
 creators Pavan Kumar Sunkara
-conceptDescription An esoteric language made up of only semicolons. You can't escape the semicolon monster!
+tags esolang
 website https://pksunkara.com/semicolon
-documentation https://esolangs.org/wiki/Semicolon
-country India
-originCommunity https://github.com/pksunkara/semicolon/pulls
 versions
  2015 v0.1.3
+conceptDescription An esoteric language made up of only semicolons. You can't escape the semicolon monster!
 
+isOpenSource true
+writtenIn json markdown
 relatedConcepts brainfuck
 influencedBy brainfuck
+documentation https://esolangs.org/wiki/Semicolon
+repoStats
+ firstCommit 2012
+ commits 29
+ committers 4
+ files 7
+ newestCommit 2021
+country India
+originCommunity https://github.com/pksunkara/semicolon/pulls
 
 githubRepo https://github.com/pksunkara/semicolon
  firstCommit 2012
@@ -24,14 +33,3 @@ githubRepo https://github.com/pksunkara/semicolon
  updated 2022
  description A language of semicolons
  issues 0
-
-repoStats
- firstCommit 2012
- commits 29
- committers 4
- files 7
- newestCommit 2021
-
-isOpenSource true
-
-writtenIn json markdown

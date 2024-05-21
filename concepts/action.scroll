@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id action
 name Action!
 appeared 1983
 tags pl
+
+fileType text
+wordRank 473
+centralPackageRepositoryCount 0
 originCommunity Optimized Systems Software
+
+lineCommentToken ;
+printToken PRINTF
+booleanTokens True False
 
 hasConstructors true
 hasLineComments true
@@ -13,10 +22,6 @@ hasComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken ;
-printToken PRINTF
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Action!_(programming_language)
  example
@@ -65,10 +70,6 @@ wikipedia https://en.wikipedia.org/wiki/Action!_(programming_language)
  revisionCount 181
  dailyPageViews 15
  appeared 1983
-
-fileType text
-wordRank 473
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

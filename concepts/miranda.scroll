@@ -1,19 +1,39 @@
 import ../code/conceptPage.scroll
+
 id miranda
 name Miranda
 appeared 1985
-tags pl
 creators David Turner
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity Research Software Ltd
+
+rijuRepl https://riju.codes/miranda
+ example
+  main = [Stdout "Hello, world!"]
+  
+ description Pure, non-strict, polymorphic, higher order functional programming language designed by David Turner in 1983-6
+ fileExtensions m
+ website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
+ gitRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/
+leachim6 Miranda
+ filepath m/Miranda.m
+ fileExtensions m
+ example
+  main :: [sys_message]
+  main = [Stdout "Hello World"]
+  
+
+printToken Stdout
+stringToken "
 
 hasSemanticIndentation true
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken Stdout
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
  example
@@ -34,27 +54,7 @@ wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
  dailyPageViews 56
  appeared 1985
 
-leachim6 Miranda
- filepath m/Miranda.m
- fileExtensions m
- example
-  main :: [sys_message]
-  main = [Stdout "Hello World"]
-  
-
-rijuRepl https://riju.codes/miranda
- example
-  main = [Stdout "Hello, world!"]
-  
- description Pure, non-strict, polymorphic, higher order functional programming language designed by David Turner in 1983-6
- fileExtensions m
- website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
- gitRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/
-
 hopl https://hopl.info/showlanguage.prx?exp=911
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 2
  year|publisher|title|authors|isbn13

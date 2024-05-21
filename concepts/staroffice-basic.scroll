@@ -1,18 +1,21 @@
 import ../code/conceptPage.scroll
+
 id staroffice-basic
 name StarOffice Basic
 appeared 2000
 tags pl
+
+centralPackageRepositoryCount 0
 country Germany
 originCommunity Star Division
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/StarOffice_Basic
  example
@@ -47,7 +50,5 @@ wikipedia https://en.wikipedia.org/wiki/StarOffice_Basic
  pageId 318131
  revisionCount 2
  dailyPageViews 5
-
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,29 +1,107 @@
 import ../code/conceptPage.scroll
+
 id php
 name PHP
 appeared 1995
-tags pl
-demoVideo https://www.youtube.com/watch?v=ZdP0KM49IVk
 creators Rasmus Lerdorf
+tags pl
 website https://php.net
+standsFor Personal Home Page
+
+writtenIn php c pascal m4 json xml assembly-language yaml markdown cpp bourne-shell glsl html xslt xsd restructuredtext ini lua diff reason csv dtd yacc awk lex javascript python d make bash dockerfile
+spec https://phplang.org/
+demoVideo https://www.youtube.com/watch?v=ZdP0KM49IVk
+tryItOnline php
+fileExtensions php phtml php3 php4 php5 php7 phps
+releaseNotesUrl https://www.php.net/releases/index.php
+visualParadigm false
+clocExtensions aw ctp phakefile php php3 php4 php5 php_cs php_cs.dist phps phpt phtml
+fileType text
+wordRank 1596
 documentation https://devdocs.io/php/
 documentation https://www.php.net/docs.php.
 emailList https://www.php.net/mailing-lists.php
-spec https://phplang.org/
-reference http://php.net/manual/en/reserved.keywords.php
-standsFor Personal Home Page
-fileExtensions php phtml php3 php4 php5 php7 phps
+eventsPageUrl https://www.php.net/cal.php
+downloadPageUrl https://www.php.net/downloads.php
+annualReportsUrl https://www.zend.com/blog/state-php-2022
+antlr https://github.com/antlr/grammars-v4/tree/master/php
+monaco php
+codeMirror php
+rosettaCode http://www.rosettacode.org/wiki/Category:PHP
+quineRelay PHP
+replit https://repl.it/languages/php
+packageRepository https://packagist.org/
+ubuntuPackage php-cli
+repoStats
+ firstCommit 1999
+ commits 147515
+ committers 1581
+ files 23287
+ newestCommit 2024
 country Canada
 originCommunity Zend
-domainName php.net
- registered 1997
- awisRank
-  2022 1353
-  2017 935
-releaseNotesUrl https://www.php.net/releases/index.php
 proposals https://wiki.php.net/rfc
+projectEuler PHP
+ memberCount
+  2019 3134
+  2022 3210
+reference http://php.net/manual/en/reserved.keywords.php
 
-visualParadigm false
+helloWorldCollection PHP
+ <?php
+   // Hello world in PHP
+   echo 'Hello World!';
+ ?>
+pygmentsHighlighter PHP
+ filename php.py
+ fileExtensions php php[345] inc
+rijuRepl https://riju.codes/php
+ example
+  <?php
+  
+  echo "Hello, world!\n";
+  
+subreddit https://reddit.com/r/PHP
+ memberCount
+  2017 54023
+  2022 150168
+twitter https://twitter.com/official_php
+leachim6 PHP
+ filepath p/PHP.php
+ fileExtensions php
+ example
+  <?php
+  
+  echo 'Hello World';
+  
+gource https://www.youtube.com/watch?v=yLsUwIhg_k4
+languageServerProtocolProject https://github.com/bmewburn/vscode-intelephense
+ writtenIn typescript
+languageServerProtocolProject https://github.com/felixfbecker/php-language-server
+ writtenIn php
+languageServerProtocolProject https://gitlab.com/Serenata/Serenata
+ writtenIn php
+languageServerProtocolProject https://github.com/phan/phan
+ writtenIn php
+
+meetup https://www.meetup.com/topics/php
+ memberCount 904206
+ groupCount 2012
+keywords __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
+githubRepo https://github.com/php/php-src
+ firstCommit 1999
+ stars 33991
+ forks 7234
+ subscribers 1441
+ created 2011
+ updated 2022
+ description The PHP Interpreter
+ issues 392
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken '
 
 hasBooleans true
 hasStrings true
@@ -116,30 +194,8 @@ hasAccessModifiers true
 hasInheritance true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken echo
-stringToken '
-keywords __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
-
-gource https://www.youtube.com/watch?v=yLsUwIhg_k4
-githubRepo https://github.com/php/php-src
- firstCommit 1999
- stars 33991
- forks 7234
- subscribers 1441
- created 2011
- updated 2022
- description The PHP Interpreter
- issues 392
-
-repoStats
- firstCommit 1999
- commits 147515
- committers 1581
- files 23287
- newestCommit 2024
-
+jupyterKernel https://github.com/dawehner/ipython-php
+jupyterKernel https://github.com/Litipk/Jupyter-PHP
 wikipedia https://en.wikipedia.org/wiki/PHP
  example
   class Person
@@ -186,55 +242,21 @@ wikipedia https://en.wikipedia.org/wiki/PHP
  appeared 1994
  fileExtensions php phtml php3 php4 php5 php7 phps
 
-githubLanguage PHP
- fileExtensions php aw ctp fcgi inc php3 php4 php5 phps phpt
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  fzaninotto Faker https://github.com/fzaninotto.png https://github.com/fzaninotto/Faker PHP #4F5D95 21754 2507 375 "Faker is a PHP library that generates fake data for you"
-  laravel laravel https://github.com/laravel.png https://github.com/laravel/laravel PHP #4F5D95 54813 16809 929 "A PHP framework for web artisans"
-  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463
-  monicahq monica https://github.com/monicahq.png https://github.com/monicahq/monica PHP #4F5D95 7726 935 302 "Personal CRM. Remember everything about your friends and family."
-  mautic mautic https://github.com/mautic.png https://github.com/mautic/mautic PHP #4F5D95 3421 1236 88 "Mautic: Open Source Marketing Automation Software."
-  danielmiessler SecLists https://github.com/danielmiessler.png https://github.com/danielmiessler/SecLists PHP #4F5D95 19907 8011 550 "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more."
-  the-benchmarker web-frameworks https://github.com/the-benchmarker.png https://github.com/the-benchmarker/web-frameworks PHP #4F5D95 2932 243 204 "Which is the fastest web framework?"
-  Seldaek monolog https://github.com/Seldaek.png https://github.com/Seldaek/monolog PHP #4F5D95 15663 1570 315 "Sends your logs to files, sockets, inboxes, databases and various web services"
-  firefly-iii firefly-iii https://github.com/firefly-iii.png https://github.com/firefly-iii/firefly-iii PHP #4F5D95 2718 426 130 "Firefly III: a personal finances manager"
-  easy-swoole easyswoole https://github.com/easy-swoole.png https://github.com/easy-swoole/easyswoole PHP #4F5D95 2336 365 282 "High performance Coroutine PHP Framework, base on Swoole"
-  PrestaShop PrestaShop https://github.com/PrestaShop.png https://github.com/PrestaShop/PrestaShop PHP #4F5D95 3922 3305 77 "PrestaShop offers a fully scalable open source ecommerce solution."
-  akaunting akaunting https://github.com/akaunting.png https://github.com/akaunting/akaunting PHP #4F5D95 2097 797 137 "Free and Online Accounting Software"
-  phacility phabricator https://github.com/phacility.png https://github.com/phacility/phabricator PHP #4F5D95 10942 1385 116 "Open software engineering platform and fun adventure game"
-  yiisoft yii2 https://github.com/yiisoft.png https://github.com/yiisoft/yii2 PHP #4F5D95 13073 6810 94 "Yii 2: The Fast, Secure and Professional PHP Framework"
-  swoft-cloud swoft https://github.com/swoft-cloud.png https://github.com/swoft-cloud/swoft PHP #4F5D95 3829 590 447 "🚀 PHP Microservice Full Coroutine Framework"
-  elastic elasticsearch-php https://github.com/elastic.png https://github.com/elastic/elasticsearch-php PHP #4F5D95 3510 712 106 "Official PHP low-level client for Elasticsearch."
-  elementor elementor https://github.com/elementor.png https://github.com/elementor/elementor PHP #4F5D95 2505 632 81 "The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design."
-  opencart opencart https://github.com/opencart.png https://github.com/opencart/opencart PHP #4F5D95 5040 3838 87 "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution."
-  tymondesigns jwt-auth https://github.com/tymondesigns.png https://github.com/tymondesigns/jwt-auth PHP #4F5D95 8258 1047 134 "🔐 JSON Web Token Authentication for Laravel & Lumen"
-  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41
-  magento magento2 https://github.com/magento.png https://github.com/magento/magento2 PHP #4F5D95 7806 6717 128 "All Submissions you make to Magento Inc. (""Magento"") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, subli…"
-  tennc webshell https://github.com/tennc.png https://github.com/tennc/webshell PHP #4F5D95 4829 3617 191 "This is a webshell open source project"
-  area17 twill https://github.com/area17.png https://github.com/area17/twill PHP #4F5D95 1507 162 119 "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible. Chat with us and others on Spectrum! https://spectrum.chat/twill"
-  hyperf-cloud hyperf https://github.com/hyperf-cloud.png https://github.com/hyperf-cloud/hyperf PHP #4F5D95 1186 167 366 "🚀 A coroutine framework that focuses on hyperspeed and flexibility, specifically used for build microservices or middlewares."
-  composer composer https://github.com/composer.png https://github.com/composer/composer PHP #4F5D95 20839 5592 354 "Dependency Manager for PHP"
- trendingProjectsCount 26
- type programming
- filenames .php .php_cs .php_cs.dist Phakefile
- interpreters php
- aceMode php
- codemirrorMode php
- codemirrorMimeType application/x-httpd-php
- tmScope text.html.php
- aliases inc
- repos 3479326
+hopl https://hopl.info/showlanguage.prx?exp=2361
+tiobe PHP
+ currentRank 10
+pypl PHP
+
+domainName php.net
+ registered 1997
+ awisRank
+  2022 1353
+  2017 935
+
 githubBigQuery PHP
  repos 339509
  users 202442
 
-antlr https://github.com/antlr/grammars-v4/tree/master/php
-monaco php
-codeMirror php
-pygmentsHighlighter PHP
- filename php.py
- fileExtensions php php[345] inc
 linguistGrammarRepo https://github.com/textmate/php.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -246,87 +268,6 @@ linguistGrammarRepo https://github.com/textmate/php.tmbundle
   <?php
   
   echo "PHP\n";
-languageServerProtocolProject https://github.com/bmewburn/vscode-intelephense
- writtenIn typescript
-languageServerProtocolProject https://github.com/felixfbecker/php-language-server
- writtenIn php
-languageServerProtocolProject https://gitlab.com/Serenata/Serenata
- writtenIn php
-languageServerProtocolProject https://github.com/phan/phan
- writtenIn php
-
-projectEuler PHP
- memberCount
-  2019 3134
-  2022 3210
-helloWorldCollection PHP
- <?php
-   // Hello world in PHP
-   echo 'Hello World!';
- ?>
-leachim6 PHP
- filepath p/PHP.php
- fileExtensions php
- example
-  <?php
-  
-  echo 'Hello World';
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:PHP
-quineRelay PHP
-
-rijuRepl https://riju.codes/php
- example
-  <?php
-  
-  echo "Hello, world!\n";
-  
-replit https://repl.it/languages/php
-tryItOnline php
-
-indeedJobs php developer
- 2017 9017
-linkedInSkill php
- 2018 2133213
-stackOverflowSurvey
- 2021
-  users 18130
-  medianSalary 38916
-  fans 8852
-  percentageUsing 0.22
-annualReportsUrl https://www.zend.com/blog/state-php-2022
-eventsPageUrl https://www.php.net/cal.php
-downloadPageUrl https://www.php.net/downloads.php
-
-subreddit https://reddit.com/r/PHP
- memberCount
-  2017 54023
-  2022 150168
-meetup https://www.meetup.com/topics/php
- memberCount 904206
- groupCount 2012
-
-tiobe PHP
- currentRank 10
-hopl https://hopl.info/showlanguage.prx?exp=2361
-pypl PHP
-
-packageRepository https://packagist.org/
-
-twitter https://twitter.com/official_php
-ubuntuPackage php-cli
-jupyterKernel https://github.com/dawehner/ipython-php
-jupyterKernel https://github.com/Litipk/Jupyter-PHP
-fileType text
-wordRank 1596
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
- PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
- PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
- Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
- Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11
 
 isbndb 269
  year|publisher|title|authors|isbn13
@@ -600,6 +541,57 @@ isbndb 269
  2016-09-30|Packt Publishing|PHP 7: Real World Application Development|Doug Bierer and Altaf Hussain and Branko Ajzele|9781787129009
  2002|Muska & Lipman/Premier-Trade|PHP Fast & Easy Web Development, 2nd Edition|Meloni, Julie C.|9781931841870
 
+githubLanguage PHP
+ fileExtensions php aw ctp fcgi inc php3 php4 php5 phps phpt
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  fzaninotto Faker https://github.com/fzaninotto.png https://github.com/fzaninotto/Faker PHP #4F5D95 21754 2507 375 "Faker is a PHP library that generates fake data for you"
+  laravel laravel https://github.com/laravel.png https://github.com/laravel/laravel PHP #4F5D95 54813 16809 929 "A PHP framework for web artisans"
+  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463
+  monicahq monica https://github.com/monicahq.png https://github.com/monicahq/monica PHP #4F5D95 7726 935 302 "Personal CRM. Remember everything about your friends and family."
+  mautic mautic https://github.com/mautic.png https://github.com/mautic/mautic PHP #4F5D95 3421 1236 88 "Mautic: Open Source Marketing Automation Software."
+  danielmiessler SecLists https://github.com/danielmiessler.png https://github.com/danielmiessler/SecLists PHP #4F5D95 19907 8011 550 "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more."
+  the-benchmarker web-frameworks https://github.com/the-benchmarker.png https://github.com/the-benchmarker/web-frameworks PHP #4F5D95 2932 243 204 "Which is the fastest web framework?"
+  Seldaek monolog https://github.com/Seldaek.png https://github.com/Seldaek/monolog PHP #4F5D95 15663 1570 315 "Sends your logs to files, sockets, inboxes, databases and various web services"
+  firefly-iii firefly-iii https://github.com/firefly-iii.png https://github.com/firefly-iii/firefly-iii PHP #4F5D95 2718 426 130 "Firefly III: a personal finances manager"
+  easy-swoole easyswoole https://github.com/easy-swoole.png https://github.com/easy-swoole/easyswoole PHP #4F5D95 2336 365 282 "High performance Coroutine PHP Framework, base on Swoole"
+  PrestaShop PrestaShop https://github.com/PrestaShop.png https://github.com/PrestaShop/PrestaShop PHP #4F5D95 3922 3305 77 "PrestaShop offers a fully scalable open source ecommerce solution."
+  akaunting akaunting https://github.com/akaunting.png https://github.com/akaunting/akaunting PHP #4F5D95 2097 797 137 "Free and Online Accounting Software"
+  phacility phabricator https://github.com/phacility.png https://github.com/phacility/phabricator PHP #4F5D95 10942 1385 116 "Open software engineering platform and fun adventure game"
+  yiisoft yii2 https://github.com/yiisoft.png https://github.com/yiisoft/yii2 PHP #4F5D95 13073 6810 94 "Yii 2: The Fast, Secure and Professional PHP Framework"
+  swoft-cloud swoft https://github.com/swoft-cloud.png https://github.com/swoft-cloud/swoft PHP #4F5D95 3829 590 447 "🚀 PHP Microservice Full Coroutine Framework"
+  elastic elasticsearch-php https://github.com/elastic.png https://github.com/elastic/elasticsearch-php PHP #4F5D95 3510 712 106 "Official PHP low-level client for Elasticsearch."
+  elementor elementor https://github.com/elementor.png https://github.com/elementor/elementor PHP #4F5D95 2505 632 81 "The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design."
+  opencart opencart https://github.com/opencart.png https://github.com/opencart/opencart PHP #4F5D95 5040 3838 87 "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution."
+  tymondesigns jwt-auth https://github.com/tymondesigns.png https://github.com/tymondesigns/jwt-auth PHP #4F5D95 8258 1047 134 "🔐 JSON Web Token Authentication for Laravel & Lumen"
+  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41
+  magento magento2 https://github.com/magento.png https://github.com/magento/magento2 PHP #4F5D95 7806 6717 128 "All Submissions you make to Magento Inc. (""Magento"") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, subli…"
+  tennc webshell https://github.com/tennc.png https://github.com/tennc/webshell PHP #4F5D95 4829 3617 191 "This is a webshell open source project"
+  area17 twill https://github.com/area17.png https://github.com/area17/twill PHP #4F5D95 1507 162 119 "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible. Chat with us and others on Spectrum! https://spectrum.chat/twill"
+  hyperf-cloud hyperf https://github.com/hyperf-cloud.png https://github.com/hyperf-cloud/hyperf PHP #4F5D95 1186 167 366 "🚀 A coroutine framework that focuses on hyperspeed and flexibility, specifically used for build microservices or middlewares."
+  composer composer https://github.com/composer.png https://github.com/composer/composer PHP #4F5D95 20839 5592 354 "Dependency Manager for PHP"
+ trendingProjectsCount 26
+ type programming
+ filenames .php .php_cs .php_cs.dist Phakefile
+ interpreters php
+ aceMode php
+ codemirrorMode php
+ codemirrorMimeType application/x-httpd-php
+ tmScope text.html.php
+ aliases inc
+ repos 3479326
+
+indeedJobs php developer
+ 2017 9017
+linkedInSkill php
+ 2018 2133213
+stackOverflowSurvey
+ 2021
+  users 18130
+  medianSalary 38916
+  fans 8852
+  percentageUsing 0.22
+
 semanticScholar 26
  year|title|doi|citations|influentialCitations|authors|paperId
  2017|Efficient and Flexible Discovery of PHP Application Vulnerabilities|10.1109/EuroSP.2017.14|42|6|M. Backes and K. Rieck and Malte Skoruppa and Ben Stock and Fabian Yamaguchi|4eb7e810e2aa6e9547dc3a12daae53ef70accd38
@@ -629,5 +621,10 @@ semanticScholar 26
  2021|Analisis Perbandingan Bahasa Pemrograman PHP Laravel dengan PHP Native pada Pengembangan Website|10.36448/expert.v11i1.2012|1|0|R. Endra and Yuthsi Aprilinda and Yanuar Dharmawan and Wahyu Ramadhan|0a1a7f81189724590b1d1b73e2f85b59616414d7
  2015|The PHP Language: Types of Statement|10.1007/978-3-319-22659-0_3|1|0|M. Bramer|d1ced82bbe63acf677f5f0e5327cfb97b00da35d
 
-clocExtensions aw ctp phakefile php php3 php4 php5 php_cs php_cs.dist phps phpt phtml
-writtenIn php c pascal m4 json xml assembly-language yaml markdown cpp bourne-shell glsl html xslt xsd restructuredtext ini lua diff reason csv dtd yacc awk lex javascript python d make bash dockerfile
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
+ PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
+ PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
+ Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
+ Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11

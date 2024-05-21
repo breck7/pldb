@@ -1,23 +1,26 @@
 import ../code/conceptPage.scroll
+
 id spice
 name Spice
 appeared 2021
-tags pl
 creators Marc Auberer
+tags pl
 website https://www.spicelang.com
+
 country Germany
 originCommunity https://github.com/spicelang
-domainName spicelang.com
- registered 2021
+
+pygmentsHighlighter Spice
+ filename spice.py
+ fileExtensions spice
 
 hasIntegers true
 hasLineComments true
 hasMultiLineComments true
 hasComments true
 
-pygmentsHighlighter Spice
- filename spice.py
- fileExtensions spice
+domainName spicelang.com
+ registered 2021
 
 isbndb 1
  year|publisher|title|authors|isbn13

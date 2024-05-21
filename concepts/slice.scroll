@@ -1,23 +1,16 @@
 import ../code/conceptPage.scroll
+
 id slice
 name Slice
 appeared 2011
 tags pl
-reference https://zeroc.com/products/ice
+
+clocExtensions ice
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity ZeroC, Inc
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference https://zeroc.com/products/ice
 
 example
  // YellowPages.ice
@@ -35,12 +28,18 @@ example
      }
  }
 
-githubLanguage Slice
- fileExtensions ice
- type programming
- aceMode text
- tmScope source.slice
- repos 40
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
 githubBigQuery Slice
  repos 20
  users 13
@@ -107,7 +106,9 @@ linguistGrammarRepo https://github.com/zeroc-ice/vscode-slice
       }
   }
 
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions ice
+githubLanguage Slice
+ fileExtensions ice
+ type programming
+ aceMode text
+ tmScope source.slice
+ repos 40

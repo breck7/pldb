@@ -1,21 +1,25 @@
 import ../code/conceptPage.scroll
+
 id java-properties
 name Java Properties
 appeared 1995
 tags dataNotation
 aka .properties
 aka dot properties
+
 fileExtensions properties
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Oracle Corporation
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/.properties
  example
@@ -45,15 +49,6 @@ wikipedia https://en.wikipedia.org/wiki/.properties
  revisionCount 181
  dailyPageViews 205
 
-githubLanguage Java Properties
- fileExtensions properties
- type data
- aceMode properties
- codemirrorMode properties
- codemirrorMimeType text/x-properties
- tmScope source.java-properties
- repos 6363
-
 linguistGrammarRepo https://github.com/textmate/java.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -78,7 +73,13 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
   Clink:net/rptools/maptool/client/sound/clink.mp3
   
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Java Properties
+ fileExtensions properties
+ type data
+ aceMode properties
+ codemirrorMode properties
+ codemirrorMimeType text/x-properties
+ tmScope source.java-properties
+ repos 6363

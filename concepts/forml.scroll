@@ -1,11 +1,18 @@
 import ../code/conceptPage.scroll
+
 id forml
 name Forml
 appeared 2011
-tags pl
 creators Andrew Stein
-conceptDescription A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
+tags pl
 website http://texodus.github.io/forml/
+conceptDescription A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
+
+repoStats
+ firstCommit 2011
+ commits 327
+ committers 14
+ files 57
 country United States
 originCommunity https://github.com/texodus
 
@@ -24,9 +31,3 @@ githubRepo https://github.com/texodus/forml/
  created 2011
  updated 2013
  description A programming language
-
-repoStats
- firstCommit 2011
- commits 327
- committers 14
- files 57

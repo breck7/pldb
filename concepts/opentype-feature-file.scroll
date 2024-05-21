@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id opentype-feature-file
 name OpenType Feature File
 appeared 1996
 tags application
 conceptDescription An OpenType feature file is a text file that contains the typographic layout feature specifications for an OpenType font in an easy-to-read format. It may also contain override values for certain fields in the font tables. It is read in during the creation or editing of an OpenType font.
-reference https://en.wikipedia.org/wiki/OpenType
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft && Adobe Systems
+reference https://en.wikipedia.org/wiki/OpenType
 
 example
  # Script and language coverage
@@ -26,6 +30,12 @@ example
       position s f' <0 0 10 0> t;
  } kern;
 
+linguistGrammarRepo https://github.com/Alhadis/language-fontforge
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 2
+ commitCount 51
+
 githubLanguage OpenType Feature File
  fileExtensions fea
  trendingProjectsCount 0
@@ -33,12 +43,3 @@ githubLanguage OpenType Feature File
  aceMode text
  tmScope source.opentype
  aliases AFDKO
-
-linguistGrammarRepo https://github.com/Alhadis/language-fontforge
- firstCommit 2016
- lastCommit 2018
- committerCount 2
- commitCount 51
-
-fileType text
-centralPackageRepositoryCount 0

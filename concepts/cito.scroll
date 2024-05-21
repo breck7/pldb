@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id cito
 name Ć
 appeared 2011
-tags pl
 creators Piotr Fusik
-conceptDescription Ć programming language. Translated automatically to C, C++, C#, Java, JavaScript, Python, Swift, TypeScript and OpenCL C.
+tags pl
 website https://github.com/pfusik/cito
+conceptDescription Ć programming language. Translated automatically to C, C++, C#, Java, JavaScript, Python, Swift, TypeScript and OpenCL C.
+
+writtenIn json markdown make csharp cpp javascript yaml xml vim-script java typescript perl svg
+repoStats
+ firstCommit 2011
+ commits 2572
+ committers 12
+ files 700
+ newestCommit 2024
 country Unknown
 originCommunity http://fusik.info/piotr/
 
@@ -25,12 +34,3 @@ githubRepo https://github.com/pfusik/cito
  created 2011
  updated 2022
  description Ć programming language. Translated automatically to C, C++, C#, Java, JavaScript, Python, Swift, TypeScript and OpenCL C.
-
-repoStats
- firstCommit 2011
- commits 2572
- committers 12
- files 700
- newestCommit 2024
-
-writtenIn json markdown make csharp cpp javascript yaml xml vim-script java typescript perl svg

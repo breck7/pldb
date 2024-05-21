@@ -1,11 +1,70 @@
 import ../code/conceptPage.scroll
+
 id verilog
 name Verilog
 appeared 1984
+creators Phil Moorby and Prabhu Goel
 tags hardwareDescriptionLanguage
-documentation https://verilogguide.readthedocs.io/en/latest/
+
 fileExtensions v
+fileType text
+documentation https://verilogguide.readthedocs.io/en/latest/
+antlr https://github.com/antlr/grammars-v4/tree/master/verilog
+codeMirror verilog
+rosettaCode http://www.rosettacode.org/wiki/Category:Verilog
+quineRelay Verilog
+centralPackageRepositoryCount 0
+ubuntuPackage iverilog
 country United States
+
+helloWorldCollection Verilog
+ /* Hello World in Verilog. */
+ 
+ module main;
+ 
+  initial
+    begin
+      $display("Hello, World");
+      $finish ;
+    end
+ 
+  endmodule
+ 
+pygmentsHighlighter verilog
+ filename hdl.py
+ fileExtensions v
+rijuRepl https://riju.codes/verilog
+ example
+  module main;
+  
+  initial begin
+    $display("Hello, world!");
+  end
+  
+  endmodule
+subreddit https://reddit.com/r/Verilog
+ memberCount
+  2017 552
+  2022 2421
+leachim6 Verilog
+ filepath v/Verilog.v
+ fileExtensions v
+ example
+  module main;
+    initial
+      begin
+        $display("Hello World");
+        $finish;
+      end
+  endmodule
+  
+
+keywords always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken $display
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -32,12 +91,6 @@ hasIntegers true
 hasBinaryNumbers true
  // ([0-9]+)|(\'b)[01]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken $display
-stringToken "
-keywords always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
-
 wikipedia https://en.wikipedia.org/wiki/Verilog
  example
   initial
@@ -61,28 +114,14 @@ wikipedia https://en.wikipedia.org/wiki/Verilog
  appeared 1984
  fileExtensions v
 
-githubLanguage Verilog
- fileExtensions v veo
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  SI-RISCV e200_opensource https://github.com/SI-RISCV.png https://github.com/SI-RISCV/e200_opensource Verilog #b2b7f8 899 409 57 "The Ultra-Low Power RISC Core"
-  cliffordwolf picorv32 https://github.com/cliffordwolf.png https://github.com/cliffordwolf/picorv32 Verilog #b2b7f8 966 254 29 "PicoRV32 - A Size-Optimized RISC-V CPU"
- trendingProjectsCount 3
- type programming
- aceMode verilog
- codemirrorMode verilog
- codemirrorMimeType text/x-verilog
- tmScope source.verilog
- repos 48035
+hopl https://hopl.info/showlanguage.prx?exp=1062
+tiobe Verilog
+ currentRank 50
+
 githubBigQuery Verilog
  repos 2985
  users 2408
 
-antlr https://github.com/antlr/grammars-v4/tree/master/verilog
-codeMirror verilog
-pygmentsHighlighter verilog
- filename hdl.py
- fileExtensions v
 linguistGrammarRepo https://github.com/textmate/verilog.tmbundle
  firstCommit 2008
  lastCommit 2015
@@ -137,66 +176,6 @@ linguistGrammarRepo https://github.com/textmate/verilog.tmbundle
   endmodule
   
 
-helloWorldCollection Verilog
- /* Hello World in Verilog. */
- 
- module main;
- 
-  initial
-    begin
-      $display("Hello, World");
-      $finish ;
-    end
- 
-  endmodule
- 
-leachim6 Verilog
- filepath v/Verilog.v
- fileExtensions v
- example
-  module main;
-    initial
-      begin
-        $display("Hello World");
-        $finish;
-      end
-  endmodule
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Verilog
-quineRelay Verilog
-
-rijuRepl https://riju.codes/verilog
- example
-  module main;
-  
-  initial begin
-    $display("Hello, world!");
-  end
-  
-  endmodule
-
-indeedJobs verilog developer
- 2022 246
-
-subreddit https://reddit.com/r/Verilog
- memberCount
-  2017 552
-  2022 2421
-
-tiobe Verilog
- currentRank 50
-hopl https://hopl.info/showlanguage.prx?exp=1062
-
-ubuntuPackage iverilog
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
- Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
- Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1
-
 isbndb 31
  year|publisher|title|authors|isbn13
  2016|McGraw Hill TAB|Programming FPGAs: Getting Started with Verilog|Monk, Simon|9781259643767
@@ -231,6 +210,23 @@ isbndb 31
  2021-12-10|Wiley|Digital VLSI Design and Simulation with Verilog|Suman Lata Tripathi and Sobhit Saxena and Sanjeet K. Sinha and Govind S. Patel|9781119778066
  2005|McGraw-Hill Professional Publishing|Verilog Digital System Design: RT Level Synthesis, Testbench and Verification|Zainalabedin Navabi|9780071445658
 
+githubLanguage Verilog
+ fileExtensions v veo
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  SI-RISCV e200_opensource https://github.com/SI-RISCV.png https://github.com/SI-RISCV/e200_opensource Verilog #b2b7f8 899 409 57 "The Ultra-Low Power RISC Core"
+  cliffordwolf picorv32 https://github.com/cliffordwolf.png https://github.com/cliffordwolf/picorv32 Verilog #b2b7f8 966 254 29 "PicoRV32 - A Size-Optimized RISC-V CPU"
+ trendingProjectsCount 3
+ type programming
+ aceMode verilog
+ codemirrorMode verilog
+ codemirrorMimeType text/x-verilog
+ tmScope source.verilog
+ repos 48035
+
+indeedJobs verilog developer
+ 2022 246
+
 semanticScholar 18
  year|title|doi|citations|influentialCitations|authors|paperId
  2003|Verilog HDL|10.1201/9781315219547|60|7|S. Palnitkar|12b01362e0f2c133a8620d6d6746a839f4b02982
@@ -252,4 +248,8 @@ semanticScholar 18
  2011|FeatureVerilog: Extending Verilog to Support Feature-Oriented Programming|10.1109/IPDPS.2011.167|1|0|Jun Ye and QingPing Tan and Tun Li and GuoRong Cao|9241d6183956e7e47fac20a91a9a9b6ad22ef72b
  2021|Comparative Analysis between Verilog and Chisel in RISC-V Core Design and Verification|10.1109/ISOCC53507.2021.9614007|1|0|Jaekyung Im and Seokhyeong Kang|8e173c2d102219a0e155cbf73b63613cca2df2e0
 
-creators Phil Moorby and Prabhu Goel
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
+ Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
+ Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1

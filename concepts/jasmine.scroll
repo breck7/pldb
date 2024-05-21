@@ -1,14 +1,23 @@
 import ../code/conceptPage.scroll
+
 id jasmine
 name jasmine
 appeared 2008
 tags library
 website https://jasmine.github.io/
+
+isOpenSource true
+writtenIn javascript markdown yaml json scss bash erb css svg bourne-shell
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 2831
+ committers 363
+ files 350
+ newestCommit 2024
 country United States
 originCommunity https://github.com/jasmine/jasmine
-domainName jasmine.github.io
- awisRank
-  2022 317709
 
 githubRepo https://github.com/jasmine/jasmine
  firstCommit 2008
@@ -20,14 +29,6 @@ githubRepo https://github.com/jasmine/jasmine
  description Simple JavaScript testing framework for browsers and node.js
  issues 31
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2008
- commits 2831
- committers 363
- files 350
- newestCommit 2024
-writtenIn javascript markdown yaml json scss bash erb css svg bourne-shell
+domainName jasmine.github.io
+ awisRank
+  2022 317709

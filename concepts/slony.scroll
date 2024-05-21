@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id slony
 name Slony
 appeared 2004
-tags application
 creators Steve Singer
-conceptDescription Slony-I is a "master to multiple slaves" replication system for PostgreSQL supporting cascading (e.g. - a node can feed another node which feeds another node...) and failover.
+tags application
 website https://www.slony.info/
+conceptDescription Slony-I is a "master to multiple slaves" replication system for PostgreSQL supporting cascading (e.g. - a node can feed another node which feeds another node...) and failover.
+
+isOpenSource true
+writtenIn bourne-shell sql javascript perl c diff make m4 lex html yacc xslt bash svg css awk lisp markdown
 documentation https://www.slony.info/documentation/
+repoStats
+ firstCommit 2003
+ commits 4226
+ committers 27
+ newestCommit 2022
+ files 735
 country United States
 originCommunity https://github.com/ssinger/slony1-engine
-domainName slony.info
 
 githubRepo https://github.com/ssinger/slony1-engine
  stars 35
@@ -25,12 +34,4 @@ wikipedia https://en.wikipedia.org/wiki/Slony-I
  dailyPageViews 2
  created 2008
 
-isOpenSource true
-
-repoStats
- firstCommit 2003
- commits 4226
- committers 27
- newestCommit 2022
- files 735
-writtenIn bourne-shell sql javascript perl c diff make m4 lex html yacc xslt bash svg css awk lisp markdown
+domainName slony.info

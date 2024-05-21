@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id xblite
 name XBLite
 appeared 2001
-tags pl
 creators David Szafranski
+tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/XBLite
  example
@@ -34,5 +37,3 @@ wikipedia https://en.wikipedia.org/wiki/XBLite
  revisionCount 120
  dailyPageViews 8
  appeared 2001
-
-centralPackageRepositoryCount 0

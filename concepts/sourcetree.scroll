@@ -1,15 +1,17 @@
 import ../code/conceptPage.scroll
+
 id sourcetree
 name Sourcetree
 appeared 2010
-tags application
 creators Atlassian
-conceptDescription Sourcetree is a free graphical user interface (GUI) desktop client that simplifies how you interact with Git repositories so that you can fully concentrate on coding
+tags application
 website https://www.sourcetreeapp.com/
-documentation https://confluence.atlassian.com/get-started-with-sourcetree
-reference https://github.com/magit/magit#readme
-country USA
-originCommunity https://community.atlassian.com/t5/Sourcetree/ct-p/sourcetree
-domainName sourcetreeapp.com
+conceptDescription Sourcetree is a free graphical user interface (GUI) desktop client that simplifies how you interact with Git repositories so that you can fully concentrate on coding
 
 relatedConcepts git magit
+documentation https://confluence.atlassian.com/get-started-with-sourcetree
+country USA
+originCommunity https://community.atlassian.com/t5/Sourcetree/ct-p/sourcetree
+reference https://github.com/magit/magit#readme
+
+domainName sourcetreeapp.com

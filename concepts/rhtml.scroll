@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id rhtml
 name RHTML
 appeared 2004
 tags template
 conceptDescription RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
-reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
+
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/rails
+reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
 
+pygmentsHighlighter RHTML
+ filename templates.py
+ fileExtensions rhtml
 example
  <ul>
    <% @products.each do |p| %>
@@ -15,21 +22,15 @@ example
    <% end %>
  </ul>
 
-githubLanguage RHTML
- fileExtensions rhtml
- trendingProjectsCount 0
- repos 0
-
-pygmentsHighlighter RHTML
- filename templates.py
- fileExtensions rhtml
 linguistGrammarRepo https://github.com/atom/language-ruby
  firstCommit 2013
  lastCommit 2018
  committerCount 76
  commitCount 458
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage RHTML
+ fileExtensions rhtml
+ trendingProjectsCount 0
+ repos 0
 
 semanticScholar 0

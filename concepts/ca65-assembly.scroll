@@ -1,23 +1,17 @@
 import ../code/conceptPage.scroll
+
 id ca65-assembly
 name ca65 Assembly
 appeared 1998
 tags assembly
-reference https://cc65.github.io/doc/ca65.html
+
 country Germany
 originCommunity MU software development
+reference https://cc65.github.io/doc/ca65.html
 
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken ;
-stringToken "
-
+pygmentsHighlighter ca65 assembler
+ filename asm.py
+ fileExtensions s
 example
         Label:                          ; A label and a comment
                 lda     #$20            ; A 6502 instruction plus comment
@@ -27,6 +21,13 @@ example
                 MySym = 3*L1            ; Symbol definition
         MaSym   = Label                 ; Another symbol
 
-pygmentsHighlighter ca65 assembler
- filename asm.py
- fileExtensions s
+lineCommentToken ;
+stringToken "
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"

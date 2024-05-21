@@ -1,19 +1,29 @@
 import ../code/conceptPage.scroll
+
 id sqr
 name Structured Query Reporter
 appeared 1980
 tags pl
 standsFor Structured Query Reporter
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Gupta Technologies, LLC
+
+helloWorldCollection Structured Query Reporter
+ ! Hello World in SQR
+ begin-program
+    print 'Hello, World.' (1,1)
+ end-program
+
+lineCommentToken !
 
 hasLineComments true
  ! A comment
 hasComments true
  ! A comment
 hasSemanticIndentation false
-
-lineCommentToken !
 
 wikipedia https://en.wikipedia.org/wiki/SQR
  related sql c cobol
@@ -25,16 +35,7 @@ wikipedia https://en.wikipedia.org/wiki/SQR
  revisionCount 89
  appeared 1980
 
-helloWorldCollection Structured Query Reporter
- ! Hello World in SQR
- begin-program
-    print 'Hello, World.' (1,1)
- end-program
-
 tiobe SQR
-
-fileType text
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

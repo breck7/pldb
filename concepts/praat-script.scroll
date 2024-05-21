@@ -1,20 +1,19 @@
 import ../code/conceptPage.scroll
+
 id praat-script
 name Praat Script
 appeared 1997
 tags pl
-conceptDescription The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
 website https://www.fon.hum.uva.nl/praat/manual/Praat_script.html
+conceptDescription The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
+
+repoStats
+ firstCommit 2005
+ commits 7914
+ committers 17
+ files 3231
 country The Netherlands
 originCommunity Universiteit van Amsterdam
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  clearinfo
@@ -45,8 +44,10 @@ githubRepo https://github.com/praat/praat
  description Praat: Doing Phonetics By Computer
  issues 50
 
-repoStats
- firstCommit 2005
- commits 7914
- committers 17
- files 3231
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false

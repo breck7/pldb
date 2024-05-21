@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id ok
 name OK
 appeared 2021
-tags pl
 creators Jesse Duffield
+tags pl
 webRepl https://www.okquestionmark.org
-reference https://news.ycombinator.com/item?id=32640918
+
+writtenIn go json typescript yaml css bourne-shell markdown javascript html
+repoStats
+ firstCommit 2021
+ commits 91
+ committers 3
+ files 76
+ newestCommit 2022
 country Australia
 originCommunity https://github.com/jesseduffield/OK/issues
+reference https://news.ycombinator.com/item?id=32640918
 
 example
  let divide = fn(a, b) {
@@ -33,12 +42,3 @@ githubRepo https://github.com/jesseduffield/OK
  updated 2022
  description Welcome to the future of programming languages: OK?
  issues 3
-
-repoStats
- firstCommit 2021
- commits 91
- committers 3
- files 76
- newestCommit 2022
-
-writtenIn go json typescript yaml css bourne-shell markdown javascript html

@@ -1,14 +1,24 @@
 import ../code/conceptPage.scroll
+
 id scikit-learn
 name Scikit-learn
 appeared 2007
-tags library
 creators David Cournapeau
+tags library
 website http://scikit-learn.org/stable/
+
+isOpenSource true
+writtenIn python restructuredtext cython yaml bourne-shell meson csv html svg markdown cpp json javascript css c make toml bash
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ newestCommit 2024
+ commits 35132
+ committers 3192
+ files 1618
 country Various
 originCommunity https://github.com/scikit-learn
-
-writtenIn python restructuredtext cython yaml bourne-shell meson csv html svg markdown cpp json javascript css c make toml bash
 
 githubRepo https://github.com/scikit-learn/scikit-learn
  stars 50599
@@ -29,14 +39,3 @@ wikipedia https://en.wikipedia.org/wiki/Scikit-learn
  backlinksCount 95
  revisionCount 126
  appeared 2007
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2010
- newestCommit 2024
- commits 35132
- committers 3192
- files 1618

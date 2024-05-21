@@ -1,15 +1,74 @@
 import ../code/conceptPage.scroll
+
 id brainfuck
 name Brainfuck
 appeared 1993
-tags esolang
 creators Urban Müller
-conceptDescription A nsfw esolang.
-documentation https://gist.github.com/roachhd/dce54bec8ba55fb17d3a
+tags esolang
 aka brainf
+conceptDescription A nsfw esolang.
+
+tryItOnline brainfuck
+fileType text
+documentation https://gist.github.com/roachhd/dce54bec8ba55fb17d3a
+antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
+codeMirror brainfuck
+quineRelay Brainfuck
+replit https://repl.it/languages/brainfuck
+centralPackageRepositoryCount 0
+ubuntuPackage bf
 country Switzerland
 originCommunity Sentience Politics
 
+helloWorldCollection Brainfuck
+ Hello World in Brainfuck
+ 
+ ++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
+ ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
+pygmentsHighlighter Brainfuck
+ filename esoteric.py
+ fileExtensions bf b
+rijuRepl https://riju.codes/brainf
+ example
+  ++++++++
+  [
+      >++++
+      [
+          >++
+          >+++
+          >+++
+          >+
+          <<<<-
+      ]
+      >+
+      >+
+      >-
+      >>+
+      [<]
+  
+      <-
+  ]
+  
+  >>.
+  >---.
+  +++++++..+++.
+  >>.
+  <-.
+  <.
+  +++.------.--------.
+  >>+.
+  >++.
+  
+ description Famous esoteric programming language created in 1993 by Urban Müller
+ fileExtensions b bf
+ gitRepo https://github.com/andreabolognani/beef
+leachim6 Brainfuck
+ filepath b/Brainfuck.bf
+ fileExtensions bf
+ example
+  -[------->+<]>-.-[->+++++<]>++.+++++++..+++.[--->+<]>-----.---[->+++<]>.-[--->+<]>---.+++.------.--------.
+
+jupyterKernel https://github.com/robbielynch/ibrainfuck
 wikipedia https://en.wikipedia.org/wiki/Brainfuck
  example
   -,+[                         Read first character and start outer character reading loop
@@ -50,24 +109,10 @@ wikipedia https://en.wikipedia.org/wiki/Brainfuck
  appeared 1993
  fileExtensions b bf
 
-githubLanguage Brainfuck
- fileExtensions b bf
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode brainfuck
- codemirrorMimeType text/x-brainfuck
- tmScope source.bf
- repos 1631
 githubBigQuery Brainfuck
  repos 832
  users 790
 
-antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
-codeMirror brainfuck
-pygmentsHighlighter Brainfuck
- filename esoteric.py
- fileExtensions bf b
 linguistGrammarRepo https://github.com/Drako/SublimeBrainfuck
  firstCommit 2013
  lastCommit 2017
@@ -79,60 +124,16 @@ linguistGrammarRepo https://github.com/Drako/SublimeBrainfuck
   
   ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
 
-helloWorldCollection Brainfuck
- Hello World in Brainfuck
- 
- ++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
- ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
-leachim6 Brainfuck
- filepath b/Brainfuck.bf
- fileExtensions bf
- example
-  -[------->+<]>-.-[->+++++<]>++.+++++++..+++.[--->+<]>-----.---[->+++<]>.-[--->+<]>---.+++.------.--------.
-quineRelay Brainfuck
-
-rijuRepl https://riju.codes/brainf
- example
-  ++++++++
-  [
-      >++++
-      [
-          >++
-          >+++
-          >+++
-          >+
-          <<<<-
-      ]
-      >+
-      >+
-      >-
-      >>+
-      [<]
-  
-      <-
-  ]
-  
-  >>.
-  >---.
-  +++++++..+++.
-  >>.
-  <-.
-  <.
-  +++.------.--------.
-  >>+.
-  >++.
-  
- description Famous esoteric programming language created in 1993 by Urban Müller
- fileExtensions b bf
- gitRepo https://github.com/andreabolognani/beef
-replit https://repl.it/languages/brainfuck
-tryItOnline brainfuck
-
-ubuntuPackage bf
-jupyterKernel https://github.com/robbielynch/ibrainfuck
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Brainfuck
+ fileExtensions b bf
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode brainfuck
+ codemirrorMimeType text/x-brainfuck
+ tmScope source.bf
+ repos 1631
 
 semanticScholar 0

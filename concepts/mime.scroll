@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id mime
 name MIME
 appeared 1991
-tags textDataFormat
 creators Nathaniel Borenstein and Ned Freed
-documentation https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+tags textDataFormat
 standsFor Multipurpose Internet Mail Extensions
+
+fileType text
+wordRank 9190
+documentation https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+centralPackageRepositoryCount 0
 country United States
 originCommunity Carnegie Mellon University
 
+pygmentsHighlighter MIME
+ filename mime.py
 example
  MIME-Version: 1.0
  Content-Type: multipart/mixed; boundary=frontier
@@ -52,19 +59,12 @@ wikipedia https://en.wikipedia.org/wiki/MIME
  dailyPageViews 872
  appeared 1992
 
-pygmentsHighlighter MIME
- filename mime.py
-
-indeedJobs MIME developer
- 2022 1
-
-fileType text
-wordRank 9190
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  1986|Meriwether Pub|Mime Ministry: An illustrated, easy-to-follow guidebook for organizing, programming and training a troupe of Christian mimes|Susan Kelly Toomey|9780916260378
+
+indeedJobs MIME developer
+ 2022 1
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId

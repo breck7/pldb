@@ -1,15 +1,27 @@
 import ../code/conceptPage.scroll
+
 id zeek
 name Zeek
 appeared 1994
 tags pl
-conceptDescription Zeek's domain-specific scripting language enables site-specific monitoring policies.
 website https://zeek.org/
 oldName bro
+conceptDescription Zeek's domain-specific scripting language enables site-specific monitoring policies.
+
+pygmentsHighlighter Zeek
+ filename dsls.py
+ fileExtensions zeek bro
+
 domainName zeek.org
  registered 2017
  awisRank
   2022 245924
+
+githubBigQuery Zeek
+ repos 17
+ users 17
+
+isbndb 0
 
 githubLanguage Zeek
  type programming
@@ -18,12 +30,3 @@ githubLanguage Zeek
  tmScope source.zeek
  aliases bro
  repos 1383
-githubBigQuery Zeek
- repos 17
- users 17
-
-pygmentsHighlighter Zeek
- filename dsls.py
- fileExtensions zeek bro
-
-isbndb 0

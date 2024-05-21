@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id noweb
 name Noweb
 appeared 1989
-tags textMarkup
 creators Norman Ramsey
+tags textMarkup
 website https://www.cs.tufts.edu/~nr/noweb/
+
+writtenIn bourne-shell make tex c perl awk korn-shell c-shell lisp html
+relatedConcepts cweb
+repoStats
+ firstCommit 1991
+ commits 351
+ committers 7
+ files 385
+ newestCommit 2024
 country United States
 originCommunity Tufts University
-
-relatedConcepts cweb
 
 example
  \section{Hello world}
@@ -54,13 +62,4 @@ githubRepo https://github.com/nrnrnr/noweb
  description The noweb tool for literate programming
  issues 6
 
-repoStats
- firstCommit 1991
- commits 351
- committers 7
- files 385
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Noweb
-
-writtenIn bourne-shell make tex c perl awk korn-shell c-shell lisp html

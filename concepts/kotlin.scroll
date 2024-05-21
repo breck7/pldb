@@ -1,28 +1,97 @@
 import ../code/conceptPage.scroll
+
 id kotlin
 name Kotlin
 appeared 2011
-tags pl
 creators Andrey Breslav
+tags pl
 website https://kotlinlang.org
+
+isOpenSource true
+writtenIn kotlin java gradle xml javascript cpp json markdown swift typescript c objective-c bourne-shell idl objective-cpp protobuf ruby bash groovy html css yaml dockerfile diff python reason cmake csv asciidoc ejs toml vtl-lang puppet llvmir scala
+runsOnVm jvm
+tryItOnline kotlin
+fileExtensions kt kts
+releaseNotesUrl https://kotlinlang.org/docs/releases.html
+visualParadigm false
+clocExtensions kt ktm kts
+fileType text
 documentation https://kotlinlang.org/docs/home.html
 documentation https://devdocs.io/kotlin/
+eventsPageUrl https://kotlinlang.org/community/events/
+faqPageUrl https://kotlinlang.org/docs/faq.html
+antlr https://github.com/antlr/grammars-v4/tree/master/kotlin
+monaco kotlin
+rosettaCode http://www.rosettacode.org/wiki/Category:Kotlin
+replit https://repl.it/languages/kotlin
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 185118
+ committers 1193
+ files 92427
+ newestCommit 2024
+originCommunity JetBrains
+proposals https://github.com/Kotlin/KEEP
+projectEuler Kotlin
+ memberCount
+  2019 80
+  2022 275
 reference https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
 reference https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/
+
+helloWorldCollection Kotlin
+ // Hello world in Kotlin
+ 
+ fun main(args : Array<String>) {
+     println("Hello, world!")
+ }
+pygmentsHighlighter Kotlin
+ filename jvm.py
+ fileExtensions kt kts
+rijuRepl https://riju.codes/kotlin
+ example
+  println("Hello, world!")
+  
+subreddit https://reddit.com/r/Kotlin
+ memberCount
+  2017 6987
+  2022 61654
+twitter https://twitter.com/kotlin
+leachim6 Kotlin
+ filepath k/Kotlin.kt
+ fileExtensions kt
+ example
+  fun main() {
+    println("Hello World")
+  }
+  
 cheatSheetUrl https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf
-fileExtensions kt kts
-originCommunity JetBrains
-domainName kotlinlang.org
- registered 2013
- awisRank
-  2022 10352
-  2017 17837
-releaseNotesUrl https://kotlinlang.org/docs/releases.html
-proposals https://github.com/Kotlin/KEEP
+gource https://www.youtube.com/watch?v=cbmdwDfqfv0
+compilerExplorer Kotlin
+ example
+  // Type your code here, or load an example.
+  fun square(num: Int): Int = num * num
+  
 
-runsOnVm jvm
+meetup https://www.meetup.com/topics/kotlin
+ memberCount 33854
+ groupCount 138
+keywords as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !== < > <= >= [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
+githubRepo https://github.com/JetBrains/kotlin
+ stars 43795
+ forks 5411
+ subscribers 1447
+ created 2012
+ updated 2023
+ description The Kotlin Programming Language.
+ issues 147
 
-visualParadigm false
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+stringToken "
+booleanTokens true false
 
 hasVariableSubstitutionSyntax false
 hasAssignment true
@@ -66,30 +135,7 @@ hasFunctions true
 hasAccessModifiers true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken println
-stringToken "
-booleanTokens true false
-keywords as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !== < > <= >= [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
-
-gource https://www.youtube.com/watch?v=cbmdwDfqfv0
-githubRepo https://github.com/JetBrains/kotlin
- stars 43795
- forks 5411
- subscribers 1447
- created 2012
- updated 2023
- description The Kotlin Programming Language.
- issues 147
-
-repoStats
- firstCommit 2008
- commits 185118
- committers 1193
- files 92427
- newestCommit 2024
-
+jupyterKernel https://github.com/ligee/kotlin-jupyter
 wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)
  example
   // returns null if...
@@ -108,51 +154,20 @@ wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)
  appeared 2011
  fileExtensions kt kts
 
-githubLanguage Kotlin
- fileExtensions kt ktm kts
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  google iosched https://github.com/google.png https://github.com/google/iosched Kotlin #F18E33 19058 5939 894 "The Google I/O 2019 Android App"
-  inorichi tachiyomi https://github.com/inorichi.png https://github.com/inorichi/tachiyomi Kotlin #F18E33 4268 601 327 "Free and open source manga reader for Android"
-  chrisbanes tivi https://github.com/chrisbanes.png https://github.com/chrisbanes/tivi Kotlin #F18E33 2337 303 128 "Tivi is a work-in-progress TV show tracking Android app, which connects to Trakt.tv. It is still in its early stages of development and currently only contains two pieces of UI. It is under heavy development."
-  dbacinski Design-Patterns-In-Kotlin https://github.com/dbacinski.png https://github.com/dbacinski/Design-Patterns-In-Kotlin Kotlin #F18E33 3176 392 169 "Design Patterns implemented in Kotlin"
-  Kotlin kotlinx.coroutines https://github.com/Kotlin.png https://github.com/Kotlin/kotlinx.coroutines Kotlin #F18E33 5850 763 291 "Library support for Kotlin coroutines"
-  googlesamples android-architecture-components https://github.com/googlesamples.png https://github.com/googlesamples/android-architecture-components Kotlin #F18E33 14412 4418 391 "Samples for Android Architecture Components."
-  kizitonwose CalendarView https://github.com/kizitonwose.png https://github.com/kizitonwose/CalendarView Kotlin #F18E33 979 62 132 "A highly customizable calendar library for Android, powered by RecyclerView."
-  googlesamples android-sunflower https://github.com/googlesamples.png https://github.com/googlesamples/android-sunflower Kotlin #F18E33 8355 1602 343 "A gardening app illustrating Android development best practices with Android Jetpack."
-  googlesamples android-UniversalMusicPlayer https://github.com/googlesamples.png https://github.com/googlesamples/android-UniversalMusicPlayer Kotlin #F18E33 11093 3339 110 "This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices"
-  shadowsocks shadowsocks-android https://github.com/shadowsocks.png https://github.com/shadowsocks/shadowsocks-android Kotlin #F18E33 26014 10047 739 "A shadowsocks client for Android"
-  hoodiearon fq-book https://github.com/hoodiearon.png https://github.com/hoodiearon/fq-book Kotlin #F18E33 1392 467 105 "📖 《这本书能让你连接互联网》科学上网Freestyle，了解网络基础知识与实践蹭网操作"
-  android plaid https://github.com/android.png https://github.com/android/plaid Kotlin #F18E33 13763 2813 197 "An Android app which provides design news & inspiration as well as being an example of implementing material design."
-  JetBrains Exposed https://github.com/JetBrains.png https://github.com/JetBrains/Exposed Kotlin #F18E33 2964 267 94 "Kotlin SQL Framework"
-  airbnb MvRx https://github.com/airbnb.png https://github.com/airbnb/MvRx Kotlin #F18E33 3188 217 92 "MvRx: Android on Autopilot"
-  KotlinBy awesome-kotlin https://github.com/KotlinBy.png https://github.com/KotlinBy/awesome-kotlin Kotlin #F18E33 7695 852 180 "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
-  JetBrains kotlin https://github.com/JetBrains.png https://github.com/JetBrains/kotlin Kotlin #F18E33 28954 3382 421 "The Kotlin Programming Language"
-  cashapp sqldelight https://github.com/cashapp.png https://github.com/cashapp/sqldelight Kotlin #F18E33 2745 205 189 "SQLDelight - Generates typesafe Kotlin APIs from SQL"
-  CypherpunkArmory UserLAnd https://github.com/CypherpunkArmory.png https://github.com/CypherpunkArmory/UserLAnd Kotlin #F18E33 1312 137 45 "Main UserLAnd Repository"
-  googlesamples android-dynamic-features https://github.com/googlesamples.png https://github.com/googlesamples/android-dynamic-features Kotlin #F18E33 401 129 36
-  InsertKoinIO koin https://github.com/InsertKoinIO.png https://github.com/InsertKoinIO/koin Kotlin #F18E33 4173 256 170 "KOIN - a pragmatic lightweight dependency injection framework for Kotlin"
-  eycorsican kitsunebi-android https://github.com/eycorsican.png https://github.com/eycorsican/kitsunebi-android Kotlin #F18E33 546 105 75 "A fully-featured V2Ray client for Android."
-  sanogueralorenzo Android-Kotlin-Clean-Architecture https://github.com/sanogueralorenzo.png https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture Kotlin #F18E33 767 146 59 "Android Sample Clean Architecture App written in Kotlin"
-  arturbosch detekt https://github.com/arturbosch.png https://github.com/arturbosch/detekt Kotlin #F18E33 2289 258 116 "Static code analysis for Kotlin"
-  anthonycr Lightning-Browser https://github.com/anthonycr.png https://github.com/anthonycr/Lightning-Browser Kotlin #F18E33 1442 679 36 "A lightweight Android browser with modern navigation"
-  kittinunf fuel https://github.com/kittinunf.png https://github.com/kittinunf/fuel Kotlin #F18E33 3012 316 88 "The easiest HTTP networking library for Kotlin/Android"
- trendingProjectsCount 26
- type programming
- aceMode text
- codemirrorMode clike
- codemirrorMimeType text/x-kotlin
- tmScope source.kotlin
- repos 901474
+tiobe Kotlin
+ currentRank 48
+pypl Kotlin
+
+domainName kotlinlang.org
+ registered 2013
+ awisRank
+  2022 10352
+  2017 17837
+
 githubBigQuery Kotlin
  repos 7829
  users 5947
 
-antlr https://github.com/antlr/grammars-v4/tree/master/kotlin
-monaco kotlin
-pygmentsHighlighter Kotlin
- filename jvm.py
- fileExtensions kt kts
 linguistGrammarRepo https://github.com/nishtahir/language-kotlin
  firstCommit 2018
  lastCommit 2018
@@ -207,76 +222,6 @@ linguistGrammarRepo https://github.com/nishtahir/language-kotlin
   }
   
   class Country(val name : String)
-
-projectEuler Kotlin
- memberCount
-  2019 80
-  2022 275
-helloWorldCollection Kotlin
- // Hello world in Kotlin
- 
- fun main(args : Array<String>) {
-     println("Hello, world!")
- }
-leachim6 Kotlin
- filepath k/Kotlin.kt
- fileExtensions kt
- example
-  fun main() {
-    println("Hello World")
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Kotlin
-
-compilerExplorer Kotlin
- example
-  // Type your code here, or load an example.
-  fun square(num: Int): Int = num * num
-  
-rijuRepl https://riju.codes/kotlin
- example
-  println("Hello, world!")
-  
-replit https://repl.it/languages/kotlin
-tryItOnline kotlin
-
-indeedJobs kotlin developer
- 2022 5276
-stackOverflowSurvey
- 2021
-  users 6866
-  medianSalary 55071
-  fans 10691
-  percentageUsing 0.08
-eventsPageUrl https://kotlinlang.org/community/events/
-faqPageUrl https://kotlinlang.org/docs/faq.html
-
-subreddit https://reddit.com/r/Kotlin
- memberCount
-  2017 6987
-  2022 61654
-meetup https://www.meetup.com/topics/kotlin
- memberCount 33854
- groupCount 138
-
-tiobe Kotlin
- currentRank 48
-pypl Kotlin
-
-twitter https://twitter.com/kotlin
-jupyterKernel https://github.com/ligee/kotlin-jupyter
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Kotlin for Android Developers: Learn Kotlin the easy way while developing an Android App||Antonio Leiva|50360838|3.81|117|17
- Programming Kotlin||Stephen Samuel|55025626|3.96|27|4
- Kotlin Apprentice: Beginning Programming with Kotlin||raywenderlich.com Team|63806537|0.0|0|0
- Reactive Programming in Kotlin: Design and build non-blocking, asynchronous Kotlin applications with RXKotlin, Reactor-Kotlin, Android, and Spring||Rivu Chakraborty|57362464|3.93|14|2
- Programming Kotlin||Venkat Subramaniam|66381682|5.00|1|0
- Kotlin Programming: The Big Nerd Ranch Guide||Matthew Mathias|58631045|0.0|0|0
 
 isbndb 93
  year|publisher|title|authors|isbn13
@@ -374,6 +319,52 @@ isbndb 93
  04/2020|BPB Publications|Cracking Kotlin Interview: Solutions to Your Basic to Advanced Programming Questions|Swati Saxena|9789389845266
  03/2020|BPB Publications|Kotlin In-depth [Vol-II]: A comprehensive guide to modern multi-paradigm language|Aleksei Sedunov|9789389423228
 
+githubLanguage Kotlin
+ fileExtensions kt ktm kts
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  google iosched https://github.com/google.png https://github.com/google/iosched Kotlin #F18E33 19058 5939 894 "The Google I/O 2019 Android App"
+  inorichi tachiyomi https://github.com/inorichi.png https://github.com/inorichi/tachiyomi Kotlin #F18E33 4268 601 327 "Free and open source manga reader for Android"
+  chrisbanes tivi https://github.com/chrisbanes.png https://github.com/chrisbanes/tivi Kotlin #F18E33 2337 303 128 "Tivi is a work-in-progress TV show tracking Android app, which connects to Trakt.tv. It is still in its early stages of development and currently only contains two pieces of UI. It is under heavy development."
+  dbacinski Design-Patterns-In-Kotlin https://github.com/dbacinski.png https://github.com/dbacinski/Design-Patterns-In-Kotlin Kotlin #F18E33 3176 392 169 "Design Patterns implemented in Kotlin"
+  Kotlin kotlinx.coroutines https://github.com/Kotlin.png https://github.com/Kotlin/kotlinx.coroutines Kotlin #F18E33 5850 763 291 "Library support for Kotlin coroutines"
+  googlesamples android-architecture-components https://github.com/googlesamples.png https://github.com/googlesamples/android-architecture-components Kotlin #F18E33 14412 4418 391 "Samples for Android Architecture Components."
+  kizitonwose CalendarView https://github.com/kizitonwose.png https://github.com/kizitonwose/CalendarView Kotlin #F18E33 979 62 132 "A highly customizable calendar library for Android, powered by RecyclerView."
+  googlesamples android-sunflower https://github.com/googlesamples.png https://github.com/googlesamples/android-sunflower Kotlin #F18E33 8355 1602 343 "A gardening app illustrating Android development best practices with Android Jetpack."
+  googlesamples android-UniversalMusicPlayer https://github.com/googlesamples.png https://github.com/googlesamples/android-UniversalMusicPlayer Kotlin #F18E33 11093 3339 110 "This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices"
+  shadowsocks shadowsocks-android https://github.com/shadowsocks.png https://github.com/shadowsocks/shadowsocks-android Kotlin #F18E33 26014 10047 739 "A shadowsocks client for Android"
+  hoodiearon fq-book https://github.com/hoodiearon.png https://github.com/hoodiearon/fq-book Kotlin #F18E33 1392 467 105 "📖 《这本书能让你连接互联网》科学上网Freestyle，了解网络基础知识与实践蹭网操作"
+  android plaid https://github.com/android.png https://github.com/android/plaid Kotlin #F18E33 13763 2813 197 "An Android app which provides design news & inspiration as well as being an example of implementing material design."
+  JetBrains Exposed https://github.com/JetBrains.png https://github.com/JetBrains/Exposed Kotlin #F18E33 2964 267 94 "Kotlin SQL Framework"
+  airbnb MvRx https://github.com/airbnb.png https://github.com/airbnb/MvRx Kotlin #F18E33 3188 217 92 "MvRx: Android on Autopilot"
+  KotlinBy awesome-kotlin https://github.com/KotlinBy.png https://github.com/KotlinBy/awesome-kotlin Kotlin #F18E33 7695 852 180 "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
+  JetBrains kotlin https://github.com/JetBrains.png https://github.com/JetBrains/kotlin Kotlin #F18E33 28954 3382 421 "The Kotlin Programming Language"
+  cashapp sqldelight https://github.com/cashapp.png https://github.com/cashapp/sqldelight Kotlin #F18E33 2745 205 189 "SQLDelight - Generates typesafe Kotlin APIs from SQL"
+  CypherpunkArmory UserLAnd https://github.com/CypherpunkArmory.png https://github.com/CypherpunkArmory/UserLAnd Kotlin #F18E33 1312 137 45 "Main UserLAnd Repository"
+  googlesamples android-dynamic-features https://github.com/googlesamples.png https://github.com/googlesamples/android-dynamic-features Kotlin #F18E33 401 129 36
+  InsertKoinIO koin https://github.com/InsertKoinIO.png https://github.com/InsertKoinIO/koin Kotlin #F18E33 4173 256 170 "KOIN - a pragmatic lightweight dependency injection framework for Kotlin"
+  eycorsican kitsunebi-android https://github.com/eycorsican.png https://github.com/eycorsican/kitsunebi-android Kotlin #F18E33 546 105 75 "A fully-featured V2Ray client for Android."
+  sanogueralorenzo Android-Kotlin-Clean-Architecture https://github.com/sanogueralorenzo.png https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture Kotlin #F18E33 767 146 59 "Android Sample Clean Architecture App written in Kotlin"
+  arturbosch detekt https://github.com/arturbosch.png https://github.com/arturbosch/detekt Kotlin #F18E33 2289 258 116 "Static code analysis for Kotlin"
+  anthonycr Lightning-Browser https://github.com/anthonycr.png https://github.com/anthonycr/Lightning-Browser Kotlin #F18E33 1442 679 36 "A lightweight Android browser with modern navigation"
+  kittinunf fuel https://github.com/kittinunf.png https://github.com/kittinunf/fuel Kotlin #F18E33 3012 316 88 "The easiest HTTP networking library for Kotlin/Android"
+ trendingProjectsCount 26
+ type programming
+ aceMode text
+ codemirrorMode clike
+ codemirrorMimeType text/x-kotlin
+ tmScope source.kotlin
+ repos 901474
+
+indeedJobs kotlin developer
+ 2022 5276
+stackOverflowSurvey
+ 2021
+  users 6866
+  medianSalary 55071
+  fans 10691
+  percentageUsing 0.08
+
 semanticScholar 16
  year|title|doi|citations|influentialCitations|authors|paperId
  2018|An empirical study on quality of Android applications written in Kotlin language|10.1007/s10664-019-09727-4|26|5|Bruno Góis Mateus and Matias Martinez|3b5a5ef67d8a888fa8dd00ab532ed2a8a80fbc49
@@ -393,5 +384,11 @@ semanticScholar 16
  2020|Why did developers migrate Android Applications from Java to Kotlin|10.1109/TSE.2021.3120367|1|0|Matias Martinez and B. Mateus|a1c938db94cfd9b971081b8a7cc0ef677ba8b12d
  2020|Type-Centric Kotlin Compiler Fuzzing: Preserving Test Program Correctness by Preserving Types|10.1109/ICST49551.2021.00044|1|0|Daniil Stepanov and M. Akhin and Mikhail A. Belyaev|854efa7220f72835a789b2826eaaa4e4ec3b3c95
 
-clocExtensions kt ktm kts
-writtenIn kotlin java gradle xml javascript cpp json markdown swift typescript c objective-c bourne-shell idl objective-cpp protobuf ruby bash groovy html css yaml dockerfile diff python reason cmake csv asciidoc ejs toml vtl-lang puppet llvmir scala
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Kotlin for Android Developers: Learn Kotlin the easy way while developing an Android App||Antonio Leiva|50360838|3.81|117|17
+ Programming Kotlin||Stephen Samuel|55025626|3.96|27|4
+ Kotlin Apprentice: Beginning Programming with Kotlin||raywenderlich.com Team|63806537|0.0|0|0
+ Reactive Programming in Kotlin: Design and build non-blocking, asynchronous Kotlin applications with RXKotlin, Reactor-Kotlin, Android, and Spring||Rivu Chakraborty|57362464|3.93|14|2
+ Programming Kotlin||Venkat Subramaniam|66381682|5.00|1|0
+ Kotlin Programming: The Big Nerd Ranch Guide||Matthew Mathias|58631045|0.0|0|0

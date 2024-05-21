@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id netlinx
 name NetLinx
 appeared 2007
 tags pl
-reference https://www.amx.com/en/site_elements/language-reference-guide-netlinx-programming-language
+
 fileExtensions axserb axierb
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity AMX, LLC
+reference https://www.amx.com/en/site_elements/language-reference-guide-netlinx-programming-language
+
+lineCommentToken //
+multiLineCommentTokens (* *)
 
 hasLineComments true
  // A comment
@@ -16,9 +23,6 @@ hasMultiLineComments true
  (* A comment
  *)
 hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/NetLinx
  related c ascii
@@ -30,13 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/NetLinx
  dailyPageViews 14
  appeared 2007
 
-githubLanguage NetLinx
- fileExtensions axs axi
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.netlinx
- repos 122
 githubBigQuery NetLinx
  repos 25
  users 21
@@ -182,5 +179,10 @@ linguistGrammarRepo https://github.com/amclain/sublime-netlinx
   #end_if
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage NetLinx
+ fileExtensions axs axi
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.netlinx
+ repos 122

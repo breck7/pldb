@@ -1,12 +1,31 @@
 import ../code/conceptPage.scroll
+
 id clipper
 name Clipper
 appeared 1985
 tags pl
-demoVideo https://www.youtube.com/watch?v=Opv647iFbAk
 website http://www.grafxsoft.com/clipper.htm
+
+demoVideo https://www.youtube.com/watch?v=Opv647iFbAk
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Clipper
+centralPackageRepositoryCount 0
 country United States
 originCommunity Nantucket Corporation
+
+helloWorldCollection Clipper
+ // Hello World in Clipper
+ 
+ ? "Hello World"
+leachim6 Clipper
+ filepath c/Clipper.prg
+ fileExtensions prg
+ example
+  ? "Hello World"
+  
+
+lineCommentToken //
+stringToken "
 
 hasLineComments true
  // A comment
@@ -15,9 +34,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Clipper_(programming_language)
  example
@@ -36,23 +52,8 @@ wikipedia https://en.wikipedia.org/wiki/Clipper_(programming_language)
  revisionCount 235
  appeared 1985
 
-helloWorldCollection Clipper
- // Hello World in Clipper
- 
- ? "Hello World"
-leachim6 Clipper
- filepath c/Clipper.prg
- fileExtensions prg
- example
-  ? "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Clipper
-
-tiobe Clipper
 hopl https://hopl.info/showlanguage.prx?exp=1909
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe Clipper
 
 isbndb 21
  year|publisher|title|authors|isbn13

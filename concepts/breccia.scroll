@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id breccia
 name Breccia
 appeared 2019
-tags textMarkup
 creators Michael Allan
+tags textMarkup
 website http://reluk.ca/project/Breccia/
+
+writtenIn markdown
 fileExtensions brec
+repoStats
+ firstCommit 2019
+ commits 356
+ committers 1
+ files 6
+ newestCommit 2024
 country Canada
 originCommunity reluk
 
@@ -36,12 +45,3 @@ githubRepo https://github.com/Michael-Allan/Breccia
  updated 2023
  description Lightweight markup for point-form outlining and drafting. (mirror)
  issues 0
-
-repoStats
- firstCommit 2019
- commits 356
- committers 1
- files 6
- newestCommit 2024
-
-writtenIn markdown

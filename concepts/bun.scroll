@@ -1,22 +1,24 @@
 import ../code/conceptPage.scroll
+
 id bun
 name Bun
 appeared 2021
-tags vm
 creators Jarred Sumner
-conceptDescription Bundle, transpile, install and run JavaScript & TypeScript projects — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner and npm client built-in.
+tags vm
 website https://bun.sh/
-reference https://news.ycombinator.com/item?id=31993429
-country Various
-originCommunity Zig Programming Language
-domainName bun.sh
- registered 2021
- awisRank
-  2022 95720
+conceptDescription Bundle, transpile, install and run JavaScript & TypeScript projects — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner and npm client built-in.
 
 writtenIn toml javascript dockerfile
 relatedConcepts deno v8
-wikipedia https://en.wikipedia.org/wiki/Bun_(software)
+repoStats
+ firstCommit 2022
+ newestCommit 2022
+ commits 3
+ committers 1
+ files 4
+country Various
+originCommunity Zig Programming Language
+reference https://news.ycombinator.com/item?id=31993429
 
 githubRepo https://github.com/oven-sh/bun
  firstCommit 2021
@@ -28,9 +30,9 @@ githubRepo https://github.com/oven-sh/bun
  description Incredibly fast JavaScript runtime, bundler, transpiler and package manager – all in one.
  issues 72
 
-repoStats
- firstCommit 2022
- newestCommit 2022
- commits 3
- committers 1
- files 4
+wikipedia https://en.wikipedia.org/wiki/Bun_(software)
+
+domainName bun.sh
+ registered 2021
+ awisRank
+  2022 95720

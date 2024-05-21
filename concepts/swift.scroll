@@ -1,20 +1,11 @@
 import ../code/conceptPage.scroll
+
 id swift
 name Swift
 appeared 2014
-tags pl
 creators Chris Lattner
+tags pl
 website https://swift.org
-documentation https://www.swift.org/documentation/
-emailList https://www.swift.org/blog/forums/
-fileExtensions swift
-originCommunity Apple
-domainName swift.org
- awisRank
-  2022 53358
-  2017 83258
-releaseNotesUrl https://github.com/apple/swift/blob/main/CHANGELOG.md
-proposals https://github.com/apple/swift-evolution
 versions
  2014 1.0
  2015 2.0
@@ -22,7 +13,87 @@ versions
  2017 4.0
  2019 5.0
 
+isOpenSource true
+writtenIn swift cpp cmake python markdown json objective-c restructuredtext yaml tex c objective-cpp bash llvmir bourne-shell xml vim-script make lisp html pascal d css assembly-language ini powershell javascript ruby awk matlab
+officialBlogUrl https://www.swift.org/blog/
+fileExtensions swift
+releaseNotesUrl https://github.com/apple/swift/blob/main/CHANGELOG.md
 visualParadigm false
+clocExtensions swift
+fileType text
+wordRank 9077
+documentation https://www.swift.org/documentation/
+emailList https://www.swift.org/blog/forums/
+downloadPageUrl https://www.swift.org/download/
+monaco swift
+codeMirror swift
+rosettaCode http://www.rosettacode.org/wiki/Category:Swift
+replit https://repl.it/languages/swift
+packageRepository https://cocoapods.org/
+repoStats
+ firstCommit 2010
+ commits 196634
+ committers 1509
+ files 25789
+ newestCommit 2024
+originCommunity Apple
+proposals https://github.com/apple/swift-evolution
+projectEuler Swift
+ memberCount
+  2019 523
+  2022 690
+
+helloWorldCollection Swift
+ // Hello world in Swift
+ 
+ println("Hello, world!")
+pygmentsHighlighter Swift
+ filename objective.py
+ fileExtensions swift
+rijuRepl https://riju.codes/swift
+ example
+  print("Hello, world!")
+  
+subreddit https://reddit.com/r/swift
+ memberCount
+  2017 29890
+  2022 93491
+twitter https://twitter.com/swiftlang
+leachim6 Swift
+ filepath s/Swift.swift
+ fileExtensions swift
+ example
+  print("Hello World")
+  
+gource https://www.youtube.com/watch?v=SFrdfk9Cvr8
+languageServerProtocolProject https://github.com/apple/sourcekit-lsp
+ writtenIn swift
+compilerExplorer Swift
+ example
+  // Type your code here, or load an example.
+  func square(n: Int) -> Int {
+      return n * n
+  }
+
+meetup https://www.meetup.com/topics/swift-language
+ memberCount 154306
+ groupCount 375
+keywords associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
+githubRepo https://github.com/apple/swift
+ firstCommit 2010
+ stars 60145
+ forks 9678
+ subscribers 2526
+ created 2015
+ updated 2022
+ description The Swift Programming Language
+ issues 5994
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
+booleanTokens true false
 
 hasVariableSubstitutionSyntax false
 hasAssignment true
@@ -79,31 +150,6 @@ hasIntegers true
 hasBinaryNumbers true
  // 0b[01_]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken print
-stringToken "
-booleanTokens true false
-keywords associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
-
-gource https://www.youtube.com/watch?v=SFrdfk9Cvr8
-githubRepo https://github.com/apple/swift
- firstCommit 2010
- stars 60145
- forks 9678
- subscribers 2526
- created 2015
- updated 2022
- description The Swift Programming Language
- issues 5994
-
-repoStats
- firstCommit 2010
- commits 196634
- committers 1509
- files 25789
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
  example
   var someSortOfPrintableObject: SupportsToString
@@ -119,51 +165,19 @@ wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
  appeared 2014
  fileExtensions swift
 
-githubLanguage Swift
- fileExtensions swift
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  LoopKit Loop https://github.com/LoopKit.png https://github.com/LoopKit/Loop Swift #ffac45 478 657 49 "An automated insulin delivery app template for iOS, built on LoopKit"
-  brentsimmons NetNewsWire https://github.com/brentsimmons.png https://github.com/brentsimmons/NetNewsWire Swift #ffac45 2174 151 728 "RSS reader for macOS."
-  dkhamsing open-source-ios-apps https://github.com/dkhamsing.png https://github.com/dkhamsing/open-source-ios-apps Swift #ffac45 21111 3506 354 "📱 Collaborative List of Open-Source iOS Apps"
-  pedrommcarrasco Brooklyn https://github.com/pedrommcarrasco.png https://github.com/pedrommcarrasco/Brooklyn Swift #ffac45 2926 131 200 "🍎 Screensaver inspired by Apple's Event on October 30, 2018"
-  yonaskolb XcodeGen https://github.com/yonaskolb.png https://github.com/yonaskolb/XcodeGen Swift #ffac45 2618 239 128 "A Swift command line tool for generating your Xcode project"
-  mozilla-mobile firefox-ios https://github.com/mozilla-mobile.png https://github.com/mozilla-mobile/firefox-ios Swift #ffac45 8877 2061 77 "Firefox for iOS"
-  httpswift swifter https://github.com/httpswift.png https://github.com/httpswift/swifter Swift #ffac45 2776 406 56 "Tiny http server engine written in Swift programming language."
-  WenchaoD FSPagerView https://github.com/WenchaoD.png https://github.com/WenchaoD/FSPagerView Swift #ffac45 4633 551 142 "FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner View、Product Show、Welcome/Guide Pages、Screen/ViewController Sliders."
-  marmelroy PhoneNumberKit https://github.com/marmelroy.png https://github.com/marmelroy/PhoneNumberKit Swift #ffac45 3094 357 97 "A Swift framework for parsing, formatting and validating international phone numbers. Inspired by Google's libphonenumber."
-  Alamofire Alamofire https://github.com/Alamofire.png https://github.com/Alamofire/Alamofire Swift #ffac45 31815 5728 273 "Elegant HTTP Networking in Swift"
-  JohnCoates Aerial https://github.com/JohnCoates.png https://github.com/JohnCoates/Aerial Swift #ffac45 15249 815 273 "Apple TV Aerial Screensaver for Mac"
-  ReactiveX RxSwift https://github.com/ReactiveX.png https://github.com/ReactiveX/RxSwift Swift #ffac45 17102 2889 232 "Reactive Programming in Swift"
-  luispadron UICircularProgressRing https://github.com/luispadron.png https://github.com/luispadron/UICircularProgressRing Swift #ffac45 1198 211 94 "A circular progress bar for iOS written in Swift"
-  apple swift-log https://github.com/apple.png https://github.com/apple/swift-log Swift #ffac45 1383 69 81 "A Logging API for Swift"
-  stephencelis SQLite.swift https://github.com/stephencelis.png https://github.com/stephencelis/SQLite.swift Swift #ffac45 6327 1092 86 "A type-safe, Swift-language layer over SQLite3."
-  matteocrippa awesome-swift https://github.com/matteocrippa.png https://github.com/matteocrippa/awesome-swift Swift #ffac45 17867 2509 205 "A collaborative list of awesome Swift libraries and resources. Feel free to contribute!"
-  SCENEE FloatingPanel https://github.com/SCENEE.png https://github.com/SCENEE/FloatingPanel Swift #ffac45 2768 188 128 "A clean and easy-to-use floating panel UI component for iOS"
-  krzyzanowskim CryptoSwift https://github.com/krzyzanowskim.png https://github.com/krzyzanowskim/CryptoSwift Swift #ffac45 7218 823 93 "CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift"
-  serhii-londar open-source-mac-os-apps https://github.com/serhii-londar.png https://github.com/serhii-londar/open-source-mac-os-apps Swift #ffac45 18202 1211 360 "🚀 Awesome list of open source applications for macOS."
-  HeroTransitions Hero https://github.com/HeroTransitions.png https://github.com/HeroTransitions/Hero Swift #ffac45 17276 1368 227 "Elegant transition library for iOS & tvOS"
-  Quick Quick https://github.com/Quick.png https://github.com/Quick/Quick Swift #ffac45 8386 777 82 "The Swift (and Objective-C) testing framework."
-  radex SwiftyUserDefaults https://github.com/radex.png https://github.com/radex/SwiftyUserDefaults Swift #ffac45 3871 266 55 "Modern Swift API for NSUserDefaults"
-  sindresorhus Gifski https://github.com/sindresorhus.png https://github.com/sindresorhus/Gifski Swift #ffac45 3753 109 595 "🌈 Convert videos to high-quality GIFs on your Mac"
-  Mortennn Dozer https://github.com/Mortennn.png https://github.com/Mortennn/Dozer Swift #ffac45 2187 78 162 "Hide status bar icons on macOS"
-  mxcl PromiseKit https://github.com/mxcl.png https://github.com/mxcl/PromiseKit Swift #ffac45 11928 1160 135 "Promises for Swift & ObjC."
- trendingProjectsCount 26
- type programming
- aceMode text
- codemirrorMode swift
- codemirrorMimeType text/x-swift
- tmScope source.swift
- repos 1044892
+tiobe Swift
+ currentRank 20
+pypl Swift
+
+domainName swift.org
+ awisRank
+  2022 53358
+  2017 83258
+
 githubBigQuery Swift
  repos 42531
  users 25149
 
-monaco swift
-codeMirror swift
-pygmentsHighlighter Swift
- filename objective.py
- fileExtensions swift
 linguistGrammarRepo https://github.com/textmate/swift.tmbundle
  firstCommit 2014
  lastCommit 2018
@@ -173,68 +187,6 @@ linguistGrammarRepo https://github.com/textmate/swift.tmbundle
  example
   println("Hello, world")
   
-languageServerProtocolProject https://github.com/apple/sourcekit-lsp
- writtenIn swift
-
-projectEuler Swift
- memberCount
-  2019 523
-  2022 690
-helloWorldCollection Swift
- // Hello world in Swift
- 
- println("Hello, world!")
-leachim6 Swift
- filepath s/Swift.swift
- fileExtensions swift
- example
-  print("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Swift
-
-compilerExplorer Swift
- example
-  // Type your code here, or load an example.
-  func square(n: Int) -> Int {
-      return n * n
-  }
-rijuRepl https://riju.codes/swift
- example
-  print("Hello, world!")
-  
-replit https://repl.it/languages/swift
-
-indeedJobs swift developer
- 2017 2043
-linkedInSkill swift
- 2018 171143
-stackOverflowSurvey
- 2021
-  users 4204
-  medianSalary 58911
-  fans 6353
-  percentageUsing 0.05
-officialBlogUrl https://www.swift.org/blog/
-downloadPageUrl https://www.swift.org/download/
-
-subreddit https://reddit.com/r/swift
- memberCount
-  2017 29890
-  2022 93491
-meetup https://www.meetup.com/topics/swift-language
- memberCount 154306
- groupCount 375
-
-tiobe Swift
- currentRank 20
-pypl Swift
-
-packageRepository https://cocoapods.org/
-
-twitter https://twitter.com/swiftlang
-fileType text
-wordRank 9077
-isOpenSource true
 
 isbndb 125
  year|publisher|title|authors|isbn13
@@ -364,6 +316,54 @@ isbndb 125
  2014|O'Reilly Media|Introducing iOS 8: Swift Programming from Idea to App Store|Derico, Steve|9781491908617
  2018|Apress|Pro iPhone Development with Swift 4: Design and Manage Top Quality Apps|Maskrey, Molly and Wang, Wallace|9781484233818
 
+githubLanguage Swift
+ fileExtensions swift
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  LoopKit Loop https://github.com/LoopKit.png https://github.com/LoopKit/Loop Swift #ffac45 478 657 49 "An automated insulin delivery app template for iOS, built on LoopKit"
+  brentsimmons NetNewsWire https://github.com/brentsimmons.png https://github.com/brentsimmons/NetNewsWire Swift #ffac45 2174 151 728 "RSS reader for macOS."
+  dkhamsing open-source-ios-apps https://github.com/dkhamsing.png https://github.com/dkhamsing/open-source-ios-apps Swift #ffac45 21111 3506 354 "📱 Collaborative List of Open-Source iOS Apps"
+  pedrommcarrasco Brooklyn https://github.com/pedrommcarrasco.png https://github.com/pedrommcarrasco/Brooklyn Swift #ffac45 2926 131 200 "🍎 Screensaver inspired by Apple's Event on October 30, 2018"
+  yonaskolb XcodeGen https://github.com/yonaskolb.png https://github.com/yonaskolb/XcodeGen Swift #ffac45 2618 239 128 "A Swift command line tool for generating your Xcode project"
+  mozilla-mobile firefox-ios https://github.com/mozilla-mobile.png https://github.com/mozilla-mobile/firefox-ios Swift #ffac45 8877 2061 77 "Firefox for iOS"
+  httpswift swifter https://github.com/httpswift.png https://github.com/httpswift/swifter Swift #ffac45 2776 406 56 "Tiny http server engine written in Swift programming language."
+  WenchaoD FSPagerView https://github.com/WenchaoD.png https://github.com/WenchaoD/FSPagerView Swift #ffac45 4633 551 142 "FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner View、Product Show、Welcome/Guide Pages、Screen/ViewController Sliders."
+  marmelroy PhoneNumberKit https://github.com/marmelroy.png https://github.com/marmelroy/PhoneNumberKit Swift #ffac45 3094 357 97 "A Swift framework for parsing, formatting and validating international phone numbers. Inspired by Google's libphonenumber."
+  Alamofire Alamofire https://github.com/Alamofire.png https://github.com/Alamofire/Alamofire Swift #ffac45 31815 5728 273 "Elegant HTTP Networking in Swift"
+  JohnCoates Aerial https://github.com/JohnCoates.png https://github.com/JohnCoates/Aerial Swift #ffac45 15249 815 273 "Apple TV Aerial Screensaver for Mac"
+  ReactiveX RxSwift https://github.com/ReactiveX.png https://github.com/ReactiveX/RxSwift Swift #ffac45 17102 2889 232 "Reactive Programming in Swift"
+  luispadron UICircularProgressRing https://github.com/luispadron.png https://github.com/luispadron/UICircularProgressRing Swift #ffac45 1198 211 94 "A circular progress bar for iOS written in Swift"
+  apple swift-log https://github.com/apple.png https://github.com/apple/swift-log Swift #ffac45 1383 69 81 "A Logging API for Swift"
+  stephencelis SQLite.swift https://github.com/stephencelis.png https://github.com/stephencelis/SQLite.swift Swift #ffac45 6327 1092 86 "A type-safe, Swift-language layer over SQLite3."
+  matteocrippa awesome-swift https://github.com/matteocrippa.png https://github.com/matteocrippa/awesome-swift Swift #ffac45 17867 2509 205 "A collaborative list of awesome Swift libraries and resources. Feel free to contribute!"
+  SCENEE FloatingPanel https://github.com/SCENEE.png https://github.com/SCENEE/FloatingPanel Swift #ffac45 2768 188 128 "A clean and easy-to-use floating panel UI component for iOS"
+  krzyzanowskim CryptoSwift https://github.com/krzyzanowskim.png https://github.com/krzyzanowskim/CryptoSwift Swift #ffac45 7218 823 93 "CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift"
+  serhii-londar open-source-mac-os-apps https://github.com/serhii-londar.png https://github.com/serhii-londar/open-source-mac-os-apps Swift #ffac45 18202 1211 360 "🚀 Awesome list of open source applications for macOS."
+  HeroTransitions Hero https://github.com/HeroTransitions.png https://github.com/HeroTransitions/Hero Swift #ffac45 17276 1368 227 "Elegant transition library for iOS & tvOS"
+  Quick Quick https://github.com/Quick.png https://github.com/Quick/Quick Swift #ffac45 8386 777 82 "The Swift (and Objective-C) testing framework."
+  radex SwiftyUserDefaults https://github.com/radex.png https://github.com/radex/SwiftyUserDefaults Swift #ffac45 3871 266 55 "Modern Swift API for NSUserDefaults"
+  sindresorhus Gifski https://github.com/sindresorhus.png https://github.com/sindresorhus/Gifski Swift #ffac45 3753 109 595 "🌈 Convert videos to high-quality GIFs on your Mac"
+  Mortennn Dozer https://github.com/Mortennn.png https://github.com/Mortennn/Dozer Swift #ffac45 2187 78 162 "Hide status bar icons on macOS"
+  mxcl PromiseKit https://github.com/mxcl.png https://github.com/mxcl/PromiseKit Swift #ffac45 11928 1160 135 "Promises for Swift & ObjC."
+ trendingProjectsCount 26
+ type programming
+ aceMode text
+ codemirrorMode swift
+ codemirrorMimeType text/x-swift
+ tmScope source.swift
+ repos 1044892
+
+indeedJobs swift developer
+ 2017 2043
+linkedInSkill swift
+ 2018 171143
+stackOverflowSurvey
+ 2021
+  users 4204
+  medianSalary 58911
+  fans 6353
+  percentageUsing 0.05
+
 semanticScholar 19
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|The Swift Programming Language|10.1007/978-1-4842-0400-9_17|46|4|James Goodwill and Wesley Matlock|adcd58959ad2a95ba8aa1bb09326d3ed066aa9e8
@@ -385,6 +385,3 @@ semanticScholar 19
  2018|Introducing Automatic Time Stamping (ATS) with a Reference Implementation in Swift|10.1109/ISORC.2018.00028|1|0|Sean Hamilton and Dhiman Sengupta and Rajesh E. Gupta|de6f049ff887591e8445247c752a0bea1a03b278
  2015|The Swift Language|10.1007/978-1-4842-0650-8_1|1|0|A. Egges|587238b49d4bf004dc20bac441ebbc692e69a144
  2017|Promotion of Educational Effectiveness by Translation-based Programming Language Learning Using Java and Swift|10.24251/HICSS.2017.016|1|0|Juhua Li and Kazunori Sakamoto and H. Washizaki and Y. Fukazawa|06a96400093f770fc2ec6e978e89adec99321162
-
-clocExtensions swift
-writtenIn swift cpp cmake python markdown json objective-c restructuredtext yaml tex c objective-cpp bash llvmir bourne-shell xml vim-script make lisp html pascal d css assembly-language ini powershell javascript ruby awk matlab

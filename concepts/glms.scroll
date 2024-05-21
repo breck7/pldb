@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id glms
 name GLMS
 appeared 2022
-tags pl
 creators Sebastian Karlsson
+tags pl
 standsFor Generalized Linear Model Script
+
+writtenIn c markdown cmake glsl bourne-shell json
+repoStats
+ firstCommit 2022
+ commits 152
+ committers 4
+ files 162
+ newestCommit 2023
 country Sweden
 originCommunity https://github.com/sebbekarlsson/glms/issues
 
@@ -33,12 +42,3 @@ githubRepo https://github.com/sebbekarlsson/glms
  updated 2023
  description Generalized Linear Model Script
  issues 1
-
-repoStats
- firstCommit 2022
- commits 152
- committers 4
- files 162
- newestCommit 2023
-
-writtenIn c markdown cmake glsl bourne-shell json

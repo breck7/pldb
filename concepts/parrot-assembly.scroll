@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id parrot-assembly
 name Parrot Assembly
 appeared 2003
 tags assembly
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.perl.org
 
@@ -32,6 +36,3 @@ githubLanguage Parrot Assembly
  tmScope none
  aliases pasm
  repos 1
-
-fileType text
-centralPackageRepositoryCount 0

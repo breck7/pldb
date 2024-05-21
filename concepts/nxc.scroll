@@ -1,11 +1,29 @@
 import ../code/conceptPage.scroll
+
 id nxc
 name Not eXactly C
 appeared 2006
 tags pl
-reference https://www.hispabrickmagazine.com/pdfs/HBM009_EN/HBM009_EN-32-33.pdf
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://sourceforge.net/p/bricxcc/_list/tickets
+reference https://www.hispabrickmagazine.com/pdfs/HBM009_EN/HBM009_EN-32-33.pdf
+
+leachim6 NXC
+ filepath n/NXC.nxc
+ fileExtensions nxc
+ example
+  task main()
+  {
+      TextOut(0, LCD_LINE1, "Hello World");
+  }
+  
+
+lineCommentToken //
+printToken TextOut
+stringToken "
 
 hasLineComments true
  // A comment
@@ -15,10 +33,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken TextOut
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
  example
@@ -36,18 +50,5 @@ wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
  revisionCount 50
  dailyPageViews 21
  appeared 2006
-
-leachim6 NXC
- filepath n/NXC.nxc
- fileExtensions nxc
- example
-  task main()
-  {
-      TextOut(0, LCD_LINE1, "Hello World");
-  }
-  
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,8 +1,23 @@
 import ../code/conceptPage.scroll
+
 id xbasepp
 name XBase++
 appeared 1997
 tags pl
+
+centralPackageRepositoryCount 0
+
+leachim6 XBase++
+ filepath x/XBase++.prg
+ fileExtensions prg
+ example
+  func Main()
+      Qout("Hello World")
+  return 1
+
+lineCommentToken //
+printToken Qout
+stringToken "
 
 hasLineComments true
  // A comment
@@ -12,10 +27,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken Qout
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
  example
@@ -99,15 +110,5 @@ wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
  revisionCount 65
  dailyPageViews 19
  appeared 2000
-
-leachim6 XBase++
- filepath x/XBase++.prg
- fileExtensions prg
- example
-  func Main()
-      Qout("Hello World")
-  return 1
-
-centralPackageRepositoryCount 0
 
 isbndb 0

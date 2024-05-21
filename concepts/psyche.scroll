@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id psyche
 name psyche
 appeared 2018
 tags pl
+
+writtenIn ocaml wasm json markdown javascript make html c bourne-shell yaml
+repoStats
+ firstCommit 2018
+ commits 437
+ committers 2
+ files 103
+ newestCommit 2023
 country Japan
 originCommunity https://github.com/0918nobita/psyche/issues
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/0918nobita/psyche
  updated 2022
  description Programming Language
  issues 0
-
-repoStats
- firstCommit 2018
- commits 437
- committers 2
- files 103
- newestCommit 2023
-
-writtenIn ocaml wasm json markdown javascript make html c bourne-shell yaml

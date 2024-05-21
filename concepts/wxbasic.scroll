@@ -1,16 +1,20 @@
 import ../code/conceptPage.scroll
+
 id wxbasic
 name WxBasic
 appeared 2002
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/WxBasic
  example
@@ -92,6 +96,3 @@ wikipedia https://en.wikipedia.org/wiki/WxBasic
  revisionCount 68
  dailyPageViews 5
  appeared 2002
-
-isOpenSource true
-centralPackageRepositoryCount 0

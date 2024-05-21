@@ -1,9 +1,10 @@
 import ../code/conceptPage.scroll
+
 id dot-product-equation
 name Dot Product Equation
 appeared 1773
-tags equation
 creators Joseph-Louis Lagrange
+tags equation
 equation
  a·b = sum(i = 1, i < n, i++, ai * b1)
 

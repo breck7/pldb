@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id kawa-scheme-implementation
 name Kawa
 appeared 1996
-tags pl
 creators Per Bothner
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity GNU Project
 
@@ -18,6 +22,3 @@ wikipedia https://en.wikipedia.org/wiki/Kawa_%28Scheme_implementation%29
  revisionCount 82
  dailyPageViews 29
  appeared 1998
-
-isOpenSource true
-centralPackageRepositoryCount 0

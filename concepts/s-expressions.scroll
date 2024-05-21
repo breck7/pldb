@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id s-expressions
 name S-expressions
 appeared 1960
 tags dataNotation
-reference https://dev-docs.kicad.org/en/components/sexpr/
-country United States
-originCommunity Massachusetts Institute of Technology
 
 relatedConcepts i-expressions bayer-expressions
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/sexpression
+centralPackageRepositoryCount 0
+country United States
+originCommunity Massachusetts Institute of Technology
+reference https://dev-docs.kicad.org/en/components/sexpr/
 
 example
  (x . y)
@@ -49,11 +53,6 @@ wikipedia https://en.wikipedia.org/wiki/S-expression
  backlinksCount 101
  revisionCount 203
  appeared 1994
-
-antlr https://github.com/antlr/grammars-v4/tree/master/sexpression
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0
 

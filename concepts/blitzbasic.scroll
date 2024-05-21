@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id blitzbasic
 name BlitzBasic
 appeared 2000
 tags pl
+
+fileType text
 documentation https://daemonbite.com/files/linked/BB21Manual.pdf
+centralPackageRepositoryCount 0
 country New Zealand
 originCommunity Blitz Research
+
+pygmentsHighlighter BlitzBasic
+ filename basic.py
+ fileExtensions bb decls
+
+booleanTokens True False
 
 hasBooleans true
 hasHexadecimals true
@@ -14,8 +24,6 @@ hasIntegers true
 hasBinaryNumbers true
 hasLineComments true
 hasComments true
-
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Blitz_BASIC
  example
@@ -90,21 +98,10 @@ wikipedia https://en.wikipedia.org/wiki/Blitz_BASIC
  dailyPageViews 51
  appeared 2000
 
-githubLanguage BlitzBasic
- fileExtensions bb decls
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.blitzmax
- aliases b3d or blitz3d or blitzplus or bplus
- repos 595
 githubBigQuery BlitzBasic
  repos 492
  users 417
 
-pygmentsHighlighter BlitzBasic
- filename basic.py
- fileExtensions bb decls
 linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
  firstCommit 2009
  lastCommit 2016
@@ -179,5 +176,11 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
   ;~IDEal Editor Parameters:
   ;~C#Blitz3D
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage BlitzBasic
+ fileExtensions bb decls
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.blitzmax
+ aliases b3d or blitz3d or blitzplus or bplus
+ repos 595

@@ -1,18 +1,21 @@
 import ../code/conceptPage.scroll
+
 id parrot-basic
 name Parrot BASIC
 appeared 2009
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.perl.org
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  example
@@ -36,5 +39,3 @@ wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  revisionCount 1
  dailyPageViews 1
  appeared 2016
-
-centralPackageRepositoryCount 0

@@ -1,28 +1,32 @@
 import ../code/conceptPage.scroll
+
 id datalog
 name Datalog
 appeared 1977
 tags pl
-reference http://www.learndatalogtoday.org/
-reference http://datalog.sourceforge.net/datalog.html
-reference https://percival.jake.tl/
+
+relatedConcepts datomic
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Datalog
+centralPackageRepositoryCount 0
 country United States
 country Italy
 originCommunity University of Maryland
+reference http://www.learndatalogtoday.org/
+reference http://datalog.sourceforge.net/datalog.html
+reference https://percival.jake.tl/
 
-relatedConcepts datomic
+example
+ parent(john, douglas). % store some data
+ parent(john, douglas)? % run a query
+
+lineCommentToken %
 
 hasLineComments true
  % A comment
 hasComments true
  % A comment
 hasSemanticIndentation false
-
-lineCommentToken %
-
-example
- parent(john, douglas). % store some data
- parent(john, douglas)? % run a query
 
 wikipedia https://en.wikipedia.org/wiki/Datalog
  example
@@ -36,12 +40,7 @@ wikipedia https://en.wikipedia.org/wiki/Datalog
  backlinksCount 87
  revisionCount 376
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Datalog
-
 hopl https://hopl.info/showlanguage.prx?exp=3793
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 3
  year|publisher|title|authors|isbn13

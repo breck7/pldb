@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id mys
 name mys
 appeared 2020
-tags pl
 creators Erik Moqvist
+tags pl
+
+writtenIn python c restructuredtext toml cpp javascript make markdown css yaml html svg scss json bourne-shell
+repoStats
+ firstCommit 2020
+ commits 2943
+ committers 4
+ files 980
+ newestCommit 2022
 country Iran
 originCommunity https://github.com/mys-lang
 
@@ -17,13 +26,4 @@ githubRepo https://github.com/eerimoq/mys
  forks 8
  issues 7
 
-repoStats
- firstCommit 2020
- commits 2943
- committers 4
- files 980
- newestCommit 2022
-
 semanticScholar 0
-
-writtenIn python c restructuredtext toml cpp javascript make markdown css yaml html svg scss json bourne-shell

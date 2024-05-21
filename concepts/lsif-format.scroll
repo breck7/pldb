@@ -1,24 +1,22 @@
 import ../code/conceptPage.scroll
+
 id lsif-format
 name Language Server Index Format
 appeared 2019
-tags jsonFormat
 creators Dan Adler
+tags jsonFormat
 website https://lsif.dev/
 standsFor Language Server Index Format
+
+writtenIn html css markdown
+repoStats
+ firstCommit 2019
+ commits 48
+ committers 16
+ files 5
+ newestCommit 2023
 country United States
 originCommunity Sourcegraph
-domainName lsif.dev
- awisRank
-  2022 7825614
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  // a vertex representing the document
@@ -48,11 +46,14 @@ githubRepo https://github.com/lsif/lsif.github.io
  description https://lsif.dev
  issues 4
 
-repoStats
- firstCommit 2019
- commits 48
- committers 16
- files 5
- newestCommit 2023
+lineCommentToken //
 
-writtenIn html css markdown
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName lsif.dev
+ awisRank
+  2022 7825614

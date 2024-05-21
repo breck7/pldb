@@ -1,7 +1,18 @@
 import ../code/conceptPage.scroll
+
 id bend
 name Bend
 appeared 2023
+tags pl
+
+writtenIn rust markdown toml yaml json
+repoStats
+ firstCommit 2023
+ commits 1612
+ committers 27
+ files 833
+ newestCommit 2024
+
 githubRepo https://github.com/HigherOrderCO/Bend
  stars 5918
  forks 123
@@ -10,11 +21,3 @@ githubRepo https://github.com/HigherOrderCO/Bend
  updated 2024
  description A massively parallel, high-level programming language
  issues 22
-tags pl
-repoStats
- firstCommit 2023
- commits 1612
- committers 27
- files 833
- newestCommit 2024
-writtenIn rust markdown toml yaml json

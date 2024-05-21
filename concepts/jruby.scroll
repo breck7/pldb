@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id jruby
 name JRuby
 appeared 2001
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/jruby
 
@@ -24,9 +28,6 @@ wikipedia https://en.wikipedia.org/wiki/JRuby
  revisionCount 639
  dailyPageViews 58
  appeared 2001
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 2
  year|publisher|title|authors|isbn13

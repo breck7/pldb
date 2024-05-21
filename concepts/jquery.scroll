@@ -1,17 +1,32 @@
 import ../code/conceptPage.scroll
+
 id jquery
 name JQuery
 appeared 2006
+creators John Resig
 tags library
 website https://jquery.com
+
+isOpenSource true
+writtenIn javascript html markdown yaml json php css xml bourne-shell svg
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2006
+ commits 8222
+ committers 345
+ files 358
+ newestCommit 2024
 country Various
 originCommunity https://jquery.org/team/
-domainName jquery.com
- registered 2005
- awisRank
-  2022 3091
 
+subreddit https://www.reddit.com/r/jquery/
+twitter https://twitter.com/jquery
 gource https://www.youtube.com/watch?v=xDfdTOgQsHo
+
+meetup https://www.meetup.com/topics/jquery
+ memberCount 463942
+ groupCount 670
 githubRepo https://github.com/jquery/jquery
  stars 57443
  forks 20765
@@ -48,31 +63,17 @@ wikipedia https://en.wikipedia.org/wiki/JQuery
  revisionCount 1344
  appeared 2006
 
+domainName jquery.com
+ registered 2005
+ awisRank
+  2022 3091
+
 indeedJobs jquery developer
  2017 9286
 linkedInSkill jquery
  2018 1549390
 
-subreddit https://www.reddit.com/r/jquery/
-meetup https://www.meetup.com/topics/jquery
- memberCount 463942
- groupCount 670
-
-twitter https://twitter.com/jquery
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  jQuery Cookbook: Solutions & Examples for jQuery Developers|2009|Cody Lindley|7365956|3.89|250|19
  jQuery for Dummies|2010|Lynn Beighley|7417454|3.97|36|1
-
-creators John Resig
-repoStats
- firstCommit 2006
- commits 8222
- committers 345
- files 358
- newestCommit 2024
-writtenIn javascript html markdown yaml json php css xml bourne-shell svg

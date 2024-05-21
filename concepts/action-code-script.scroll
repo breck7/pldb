@@ -1,9 +1,15 @@
 import ../code/conceptPage.scroll
+
 id action-code-script
 name Action Code Script
 appeared 2004
 tags pl
+
+centralPackageRepositoryCount 0
 originCommunity id Software
+
+lineCommentToken //
+printToken print
 
 hasLineComments true
  // A comment
@@ -11,9 +17,6 @@ hasComments true
  // A comment
 hasPrintDebugging true
 hasSemanticIndentation false
-
-lineCommentToken //
-printToken print
 
 wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  example
@@ -31,5 +34,3 @@ wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  pageId 421959
  revisionCount 35
  dailyPageViews 7
-
-centralPackageRepositoryCount 0

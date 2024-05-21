@@ -1,18 +1,19 @@
 import ../code/conceptPage.scroll
+
 id liso
 name Liso
 appeared 2014
-tags dataNotation
 creators Olivier Breuleux
-conceptDescription Implemention of O-Expressions idea in Racket.
+tags dataNotation
 website http://breuleux.net/blog/liso.html
-reference http://breuleux.net/blog/oexprs.html
 aka o-expressions
+conceptDescription Implemention of O-Expressions idea in Racket.
+
+writtenIn racket
+compilesTo s-expressions
 country Canada
 originCommunity https://github.com/breuleux/liso/issues
-
-compilesTo s-expressions
-writtenIn racket
+reference http://breuleux.net/blog/oexprs.html
 
 example
  @varsrec

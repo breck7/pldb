@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id mangle
 name Mangle
 appeared 2022
-tags pl
 creators Mangle Team
+tags pl
+
+writtenIn go markdown svg bourne-shell
+repoStats
+ firstCommit 2022
+ commits 139
+ committers 9
+ files 105
+ newestCommit 2024
 originCommunity Google
 
 githubRepo https://github.com/google/mangle
@@ -14,12 +23,3 @@ githubRepo https://github.com/google/mangle
  created 2022
  updated 2022
  issues 2
-
-repoStats
- firstCommit 2022
- commits 139
- committers 9
- files 105
- newestCommit 2024
-
-writtenIn go markdown svg bourne-shell

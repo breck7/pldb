@@ -1,32 +1,28 @@
 import ../code/conceptPage.scroll
+
 id pegjs
 name PEG.js
 appeared 2010
-tags grammarLanguage
 creators David Majda
-conceptDescription PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
+tags grammarLanguage
 website https://pegjs.org/
 webRepl https://pegjs.org/online
+conceptDescription PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
+
+isOpenSource true
+writtenIn javascript markdown css json typescript html yaml
+compilesTo javascript
+clocExtensions pegjs
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 1417
+ committers 29
+ files 178
+ newestCommit 2019
 country Germany and United Kingdom
 originCommunity https://github.com/pegjs
-domainName pegjs.org
- awisRank
-  2022 804820
-  2017 1244889
-
-compilesTo javascript
-
-hasLineComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 example
  start
@@ -46,6 +42,7 @@ example
  
  integer "integer"
    = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+twitter https://twitter.com/pegjs
 
 githubRepo https://github.com/pegjs/pegjs
  stars 4410
@@ -57,12 +54,26 @@ githubRepo https://github.com/pegjs/pegjs
  description PEG.js: Parser generator for JavaScript
  issues 116
 
-repoStats
- firstCommit 2010
- commits 1417
- committers 29
- files 178
- newestCommit 2019
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName pegjs.org
+ awisRank
+  2022 804820
+  2017 1244889
+
+githubBigQuery PEG.js
+ repos 63
+ users 63
 
 githubLanguage PEG.js
  type programming
@@ -72,16 +83,5 @@ githubLanguage PEG.js
  codemirrorMimeType text/javascript
  tmScope source.pegjs
  repos 72
-githubBigQuery PEG.js
- repos 63
- users 63
-
-twitter https://twitter.com/pegjs
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 semanticScholar 0
-
-clocExtensions pegjs
-writtenIn javascript markdown css json typescript html yaml

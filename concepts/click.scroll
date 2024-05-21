@@ -1,22 +1,25 @@
 import ../code/conceptPage.scroll
+
 id click
 name Click
 appeared 1999
 tags pl
 website https://github.com/kohler/click/wiki/Language
+
+isOpenSource true
+writtenIn cpp c perl bourne-shell make java m4 diff yaml tex markdown dockerfile vim-script xslt yacc dtd xml
+fileType text
+wordRank 94
 documentation https://click.palletsprojects.com/en/8.1.x/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1999
+ commits 10877
+ committers 144
+ files 1971
+ newestCommit 2022
 country United States
 originCommunity Massachusetts Institute of Technology
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasBooleans true
-
-lineCommentToken //
-booleanTokens true false
 
 githubRepo https://github.com/kohler/click
  firstCommit 1999
@@ -28,20 +31,16 @@ githubRepo https://github.com/kohler/click
  description The Click modular router: fast modular packet processing and analysis
  issues 140
 
-repoStats
- firstCommit 1999
- commits 10877
- committers 144
- files 1971
- newestCommit 2022
+lineCommentToken //
+booleanTokens true false
 
-githubLanguage Click
- fileExtensions click
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.click
- repos 39
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
+
 githubBigQuery Click
  repos 127
  users 115
@@ -188,11 +187,12 @@ linguistGrammarRepo https://github.com/stenverbois/language-click.git
   s[3] -> Discard;
   
 
-fileType text
-wordRank 94
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn cpp c perl bourne-shell make java m4 diff yaml tex markdown dockerfile vim-script xslt yacc dtd xml
+githubLanguage Click
+ fileExtensions click
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.click
+ repos 39

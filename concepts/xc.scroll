@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id xc
 name XC
 appeared 2005
 tags pl
 standsFor XMOS community
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/XC_(programming_language)
  example
@@ -32,15 +36,6 @@ wikipedia https://en.wikipedia.org/wiki/XC_(programming_language)
  appeared 2005
  fileExtensions xc
 
-githubLanguage XC
- fileExtensions xc
- trendingProjectsCount 0
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-csrc
- tmScope source.xc
- repos 342
 githubBigQuery XC
  repos 444
  users 301
@@ -64,5 +59,12 @@ linguistGrammarRepo https://github.com/graymalkin/xc.tmbundle
   }
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage XC
+ fileExtensions xc
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.xc
+ repos 342

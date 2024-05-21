@@ -1,14 +1,25 @@
 import ../code/conceptPage.scroll
+
 id lobster
 name lobster
 appeared 2011
-tags pl
 creators Wouter van Oortmerssen
+tags pl
 website http://strlen.com/lobster/
+
+isOpenSource true
+writtenIn c cpp make objective-c bourne-shell markdown html xml typescript json cmake java perl python yaml hlsl javascript assembly-language m4 gradle css diff bash svg metal
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Lobster
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 2049
+ committers 55
+ files 2735
+ newestCommit 2024
 country United States
 originCommunity https://github.com/aardappel/lobster/issues
-
-writtenIn c cpp make objective-c bourne-shell markdown html xml typescript json cmake java perl python yaml hlsl javascript assembly-language m4 gradle css diff bash svg metal
 
 githubRepo https://github.com/aardappel/lobster
  stars 1387
@@ -19,16 +30,3 @@ githubRepo https://github.com/aardappel/lobster
  firstCommit 2013
  description The Lobster Programming Language
  issues 20
-
-repoStats
- firstCommit 2013
- commits 2049
- committers 55
- files 2735
- newestCommit 2024
-
-rosettaCode http://www.rosettacode.org/wiki/Category:Lobster
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

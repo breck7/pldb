@@ -1,18 +1,39 @@
 import ../code/conceptPage.scroll
+
 id abc
 name ABC
 appeared 1980
 tags pl
+
+tryItOnline abc
+fileType text
+wordRank 4100
+centralPackageRepositoryCount 0
 country Netherlands
 originCommunity Centrum Wiskunde & Informatica
+
+helloWorldCollection ABC
+ \ Hello world in ABC
+ 
+ WRITE "Hello, World!" /
+rijuRepl https://riju.codes/abc
+ example
+  WRITE "Hello, world!" /
+  
+leachim6 ABC
+ filepath a/ABC.abc
+ fileExtensions abc
+ example
+  WRITE "Hello World"
+  
+
+printToken WRITE
+stringToken "
 
 hasSemanticIndentation true
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken WRITE
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/ABC_(programming_language)
  example
@@ -32,29 +53,8 @@ wikipedia https://en.wikipedia.org/wiki/ABC_(programming_language)
  revisionCount 122
  appeared 1980
 
-helloWorldCollection ABC
- \ Hello world in ABC
- 
- WRITE "Hello, World!" /
-leachim6 ABC
- filepath a/ABC.abc
- fileExtensions abc
- example
-  WRITE "Hello World"
-  
-
-rijuRepl https://riju.codes/abc
- example
-  WRITE "Hello, world!" /
-  
-tryItOnline abc
-
-tiobe ABC
 hopl https://hopl.info/showlanguage.prx?exp=1290
-
-fileType text
-wordRank 4100
-centralPackageRepositoryCount 0
+tiobe ABC
 
 isbndb 0
 

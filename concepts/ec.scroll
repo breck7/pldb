@@ -1,17 +1,69 @@
 import ../code/conceptPage.scroll
+
 id ec
 name eC
 appeared 2004
-tags pl
 creators Jérôme Jacovella-St-Louis
+tags pl
 website http://ec-lang.org/
 standsFor Ecere C
+
+isOpenSource true
+writtenIn c make svg assembly-language python m4 cpp xml bourne-shell expect glsl yacc markdown yaml objective-c java tex lex perl html
+tryItOnline ec
+fileType text
+wordRank 4684
+rosettaCode http://www.rosettacode.org/wiki/Category:EC
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 9407
+ committers 20
+ files 3463
+ newestCommit 2024
 country Canada
 originCommunity Ecere Corporation
-domainName ec-lang.org
- registered 2014
- awisRank
-  2022 5961071
+
+pygmentsHighlighter eC
+ filename c_like.py
+ fileExtensions ec eh
+rijuRepl https://riju.codes/ec
+ example
+  class Main : Application
+  {
+     void Main()
+     {
+        PrintLn("Hello, world!");
+     }
+  }
+  
+leachim6 Ec
+ filepath e/Ec.ec
+ fileExtensions ec
+ example
+  class HelloWorldApp : Application
+  {
+     void Main()
+     {
+        PrintLn("Hello World");
+     }
+  }
+  
+
+githubRepo https://github.com/ecere/ecere-sdk/
+ stars 298
+ forks 90
+ subscribers 47
+ created 2011
+ updated 2022
+ description Ecere SDK (eC Language, Ecere IDE, Cross platform GUI, graphics, and more) — http://ec-lang.org —
+ issues 7
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken PrintLn
+stringToken "
+booleanTokens true false
 
 hasLineComments true
  // A comment
@@ -25,28 +77,6 @@ hasSemanticIndentation false
 hasStrings true
  "Hello world"
 hasBooleans true
-
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken PrintLn
-stringToken "
-booleanTokens true false
-
-githubRepo https://github.com/ecere/ecere-sdk/
- stars 298
- forks 90
- subscribers 47
- created 2011
- updated 2022
- description Ecere SDK (eC Language, Ecere IDE, Cross platform GUI, graphics, and more) — http://ec-lang.org —
- issues 7
-
-repoStats
- firstCommit 2011
- commits 9407
- committers 20
- files 3463
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/EC_(programming_language)
  example
@@ -77,20 +107,15 @@ wikipedia https://en.wikipedia.org/wiki/EC_(programming_language)
  appeared 2004
  fileExtensions ec eh
 
-githubLanguage eC
- fileExtensions ec eh
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.c.ec
- repos 139
+domainName ec-lang.org
+ registered 2014
+ awisRank
+  2022 5961071
+
 githubBigQuery eC
  repos 920
  users 894
 
-pygmentsHighlighter eC
- filename c_like.py
- fileExtensions ec eh
 linguistGrammarRepo https://github.com/ecere/ec.tmbundle
  firstCommit 2015
  lastCommit 2015
@@ -437,40 +462,15 @@ linguistGrammarRepo https://github.com/ecere/ec.tmbundle
   }
   
 
-leachim6 Ec
- filepath e/Ec.ec
- fileExtensions ec
- example
-  class HelloWorldApp : Application
-  {
-     void Main()
-     {
-        PrintLn("Hello World");
-     }
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:EC
-
-rijuRepl https://riju.codes/ec
- example
-  class Main : Application
-  {
-     void Main()
-     {
-        PrintLn("Hello, world!");
-     }
-  }
-  
-tryItOnline ec
-
-fileType text
-wordRank 4684
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2006|Springer|Early Nutrition And Its Later Consequences: New Opportunities: Perinatal Programming Of Adult Health - Ec Supported Research (advances In Experimental Medicine And Biology)|Berthold Koletzko and Margaret Ashwell and Peter Dodds and Hans Akerblom|9781402035340
  2006|Springer|Early Nutrition and its Later Consequences: New Opportunities: Perinatal Programming of Adult Health - EC Supported Research (Advances in Experimental Medicine and Biology Book 569)|Abdelghani Bellouquid; Marcello Delitala|9781402035357
 
-writtenIn c make svg assembly-language python m4 cpp xml bourne-shell expect glsl yacc markdown yaml objective-c java tex lex perl html
+githubLanguage eC
+ fileExtensions ec eh
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.c.ec
+ repos 139

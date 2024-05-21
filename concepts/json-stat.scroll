@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id json-stat
 name JSON-stat
 appeared 2011
-tags jsonFormat
 creators Xavier Badosa
-conceptDescription JSON-stat is a simple lightweight JSON dissemination format best suited for data visualization, mobile apps or open data initiatives, that has been designed for all kinds of disseminators.
+tags jsonFormat
 website https://json-stat.org/
+conceptDescription JSON-stat is a simple lightweight JSON dissemination format best suited for data visualization, mobile apps or open data initiatives, that has been designed for all kinds of disseminators.
+
+writtenIn markdown
+repoStats
+ firstCommit 2013
+ commits 27
+ committers 3
+ files 1
+ newestCommit 2021
 country Spain
 originCommunity https://github.com/jsonstat
-domainName json-stat.org
- registered 2011
- awisRank
-  2022 9584417
 
 example
  {
@@ -182,6 +187,7 @@ example
     }
   }
  }
+twitter https://twitter.com/jsonstat
 
 githubRepo https://github.com/jsonstat/jsonstat
  firstCommit 2013
@@ -193,13 +199,7 @@ githubRepo https://github.com/jsonstat/jsonstat
  description JSON-stat GitHub Repository
  issues 1
 
-repoStats
- firstCommit 2013
- commits 27
- committers 3
- files 1
- newestCommit 2021
-
-twitter https://twitter.com/jsonstat
-
-writtenIn markdown
+domainName json-stat.org
+ registered 2011
+ awisRank
+  2022 9584417

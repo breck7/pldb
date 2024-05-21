@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id grammatical-framework
 name Grammatical Framework
 appeared 1998
 tags grammarLanguage
+
+fileType text
+centralPackageRepositoryCount 0
 country France
 originCommunity Xerox Research Centre Europe
+
+lineCommentToken --
 
 hasLineComments true
  -- A comment
 hasComments true
  -- A comment
 hasSemanticIndentation false
-
-lineCommentToken --
 
 wikipedia https://en.wikipedia.org/wiki/Grammatical_Framework
  example
@@ -26,16 +30,6 @@ wikipedia https://en.wikipedia.org/wiki/Grammatical_Framework
  dailyPageViews 9
  appeared 1998
 
-githubLanguage Grammatical Framework
- fileExtensions gf
- trendingProjectsCount 0
- type programming
- aceMode haskell
- codemirrorMode haskell
- codemirrorMimeType text/x-haskell
- tmScope source.gf
- aliases gf
- repos 624169
 githubBigQuery Grammatical Framework
  repos 37
  users 32
@@ -56,5 +50,13 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
     (LexFoods = LexFoodsFin) ;
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Grammatical Framework
+ fileExtensions gf
+ trendingProjectsCount 0
+ type programming
+ aceMode haskell
+ codemirrorMode haskell
+ codemirrorMimeType text/x-haskell
+ tmScope source.gf
+ aliases gf
+ repos 624169

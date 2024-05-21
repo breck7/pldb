@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id motif-software
 name Motif
 appeared 1989
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Open Software Foundation
 
@@ -15,9 +19,6 @@ wikipedia https://en.wikipedia.org/wiki/Motif_(software)
  revisionCount 192
  dailyPageViews 86
  appeared 2017
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 19
  year|publisher|title|authors|isbn13

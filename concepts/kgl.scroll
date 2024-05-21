@@ -1,14 +1,17 @@
 import ../code/conceptPage.scroll
+
 id kgl
 name KGL
-standsFor Knowledge Graph Language
+appeared 2024
 tags queryLanguage
-githubRepo https://github.com/capjamesg/knowledge-graph-language
+standsFor Knowledge Graph Language
+
+writtenIn python html markdown toml json csv
 repoStats
  firstCommit 2024
  newestCommit 2024
  commits 35
  committers 2
  files 14
-appeared 2024
-writtenIn python html markdown toml json csv
+
+githubRepo https://github.com/capjamesg/knowledge-graph-language

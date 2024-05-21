@@ -1,24 +1,40 @@
 import ../code/conceptPage.scroll
+
 id gap
 name GAP
 appeared 1986
-tags pl
 creators gap
+tags pl
 website http://www.gap-system.org/
 standsFor Groups, Algorithms and Programming
+
+isOpenSource true
+writtenIn c assembly-language gdscript xml bourne-shell m4 cpp make markdown perl tex ada csharp yaml python html pascal cmake vim-script javascript yacc lisp lex sas fortran-77 css ruby csv ini
+tryItOnline gap
+fileType text
+wordRank 4114
+rosettaCode http://www.rosettacode.org/wiki/Category:GAP
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1996
+ commits 10670
+ committers 72
+ files 5007
+ newestCommit 2024
 country Germany
 originCommunity RWTH Aachen University
-domainName gap-system.org
- registered 2000
- awisRank
-  2022 1123892
+projectEuler GAP
+ memberCount
+  2022 33
 
-hasComments true
-hasLineComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+pygmentsHighlighter GAP
+ filename algebra.py
+ fileExtensions g gd gi gap
+rijuRepl https://riju.codes/gap
+ example
+  Print("Hello, world!\n");
+  
+twitter https://twitter.com/gap_system
 
 githubRepo https://github.com/gap-system/gap
  firstCommit 1996
@@ -30,12 +46,12 @@ githubRepo https://github.com/gap-system/gap
  description Main development repository for GAP - Groups, Algorithms, Programming, a System for Computational Discrete Algebra
  issues 491
 
-repoStats
- firstCommit 1996
- commits 10670
- committers 72
- files 5007
- newestCommit 2024
+lineCommentToken #
+
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
  example
@@ -57,20 +73,17 @@ wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
  dailyPageViews 1
  appeared 1986
 
-githubLanguage GAP
- fileExtensions g gap gd gi tst
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.gap
- repos 3760
+hopl https://hopl.info/showlanguage.prx?exp=2668
+
+domainName gap-system.org
+ registered 2000
+ awisRank
+  2022 1123892
+
 githubBigQuery GAP
  repos 4082
  users 3657
 
-pygmentsHighlighter GAP
- filename algebra.py
- fileExtensions g gd gi gap
 linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -101,29 +114,16 @@ linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
   gap> STOP_TEST( "factor.tst", 10000000);
   
 
-projectEuler GAP
- memberCount
-  2022 33
-rosettaCode http://www.rosettacode.org/wiki/Category:GAP
-
-rijuRepl https://riju.codes/gap
- example
-  Print("Hello, world!\n");
-  
-tryItOnline gap
-
-hopl https://hopl.info/showlanguage.prx?exp=2668
-
-twitter https://twitter.com/gap_system
-fileType text
-wordRank 4114
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2012|O'Reilly Media|HTML5 and JavaScript Web Apps: Bridging the Gap Between the Web and the Mobile Web|Hales, Wesley|9781449320515
  1992|Psychology Press|The Symbolic And Connectionist Paradigms: Closing The Gap (cognitive Science Series : Technical Monographs And Edited Collection)|Dinsmore, John|9780805810806
  1995|Spectra|Chaos and Order: The Gap Into Madness (The Gap Cycle)|Donaldson, Stephen R.|9780553572537
 
-writtenIn c assembly-language gdscript xml bourne-shell m4 cpp make markdown perl tex ada csharp yaml python html pascal cmake vim-script javascript yacc lisp lex sas fortran-77 css ruby csv ini
+githubLanguage GAP
+ fileExtensions g gap gd gi tst
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.gap
+ repos 3760

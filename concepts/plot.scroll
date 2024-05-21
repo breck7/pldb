@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id plot
 name plot
 appeared 2019
-tags template
 creators John Sundell
+tags template
+
+writtenIn swift markdown
+repoStats
+ firstCommit 2019
+ commits 111
+ committers 38
+ files 86
+ newestCommit 2023
 country Poland
 originCommunity https://github.com/JohnSundell/Plot/pulls
 
@@ -31,13 +40,4 @@ githubRepo https://github.com/JohnSundell/Plot
  description A DSL for writing type-safe HTML, XML and RSS in Swift.
  issues 14
 
-repoStats
- firstCommit 2019
- commits 111
- committers 38
- files 86
- newestCommit 2023
-
 isbndb 0
-
-writtenIn swift markdown

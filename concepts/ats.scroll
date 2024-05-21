@@ -1,19 +1,43 @@
 import ../code/conceptPage.scroll
+
 id ats
 name ATS
 appeared 2013
-tags pl
 creators Hongwei Xi
+tags pl
 website http://www.ats-lang.org/
 standsFor Applied Type System
 aka ATS/Postiats
 aka Postiats
+
+isOpenSource true
+fileType text
+monaco postiats
+rosettaCode http://www.rosettacode.org/wiki/Category:ATS
+centralPackageRepositoryCount 0
 country United States
 originCommunity Boston University
-domainName ats-lang.org
- registered 2007
- awisRank
-  2022 5478886
+
+helloWorldCollection Applied Type System
+ // Hello world in ATS
+ 
+ implement main () = begin
+   print ("Hello, world!"); print_newline ()
+ end
+rijuRepl https://riju.codes/ats
+ example
+  val _ = print ("Hello, world!\n")
+  implement main0 () = ()
+  
+ description Programming language designed to unify programming with formal specification
+ fileExtensions sats dats cats hats
+ website http://www.ats-lang.org/
+ gitRepo https://github.com/githwxi/ATS-Postiats
+
+keywords abstype abst0ype absprop absview absvtype absviewtype absvt0ype absviewt0ype as and assume begin classdec datasort datatype dataprop dataview datavtype dataviewtype do end extern extype extvar exception fn fnx fun prfn prfun praxi castfn if then else ifcase in infix infixl infixr prefix postfix implmnt implement primplmnt primplement import let local macdef macrodef nonfix symelim symintr overload of op rec sif scase sortdef sta stacst stadef static staload dynload try tkindef typedef propdef viewdef vtypedef viewtypedef prval var prvar when where with withtype withprop withview withvtype withviewtype
+
+lineCommentToken //
+multiLineCommentTokens (* *)
 
 hasLineComments true
  // A comment
@@ -25,10 +49,6 @@ hasMultiLineComments true
 hasSemanticIndentation false
 hasFunctions true
 hasConditionals true
-
-lineCommentToken //
-multiLineCommentTokens (* *)
-keywords abstype abst0ype absprop absview absvtype absviewtype absvt0ype absviewt0ype as and assume begin classdec datasort datatype dataprop dataview datavtype dataviewtype do end extern extype extvar exception fn fnx fun prfn prfun praxi castfn if then else ifcase in infix infixl infixr prefix postfix implmnt implement primplmnt primplement import let local macdef macrodef nonfix symelim symintr overload of op rec sif scase sortdef sta stacst stadef static staload dynload try tkindef typedef propdef viewdef vtypedef viewtypedef prval var prvar when where with withtype withprop withview withvtype withviewtype
 
 wikipedia https://en.wikipedia.org/wiki/ATS_(programming_language)
  example
@@ -43,19 +63,15 @@ wikipedia https://en.wikipedia.org/wiki/ATS_(programming_language)
  revisionCount 295
  appeared 2013
 
-githubLanguage ATS
- fileExtensions dats hats sats
- trendingProjectsCount 0
- type programming
- aceMode ocaml
- tmScope source.ats
- aliases ats2
- repos 217
+domainName ats-lang.org
+ registered 2007
+ awisRank
+  2022 5478886
+
 githubBigQuery ATS
  repos 46
  users 26
 
-monaco postiats
 linguistGrammarRepo https://github.com/steinwaywhw/ats-mode-sublimetext
  firstCommit 2013
  lastCommit 2016
@@ -108,31 +124,18 @@ linguistGrammarRepo https://github.com/steinwaywhw/ats-mode-sublimetext
   (* end of [DiningPhil2_thread.dats] *)
   
 
-helloWorldCollection Applied Type System
- // Hello world in ATS
- 
- implement main () = begin
-   print ("Hello, world!"); print_newline ()
- end
-rosettaCode http://www.rosettacode.org/wiki/Category:ATS
-
-rijuRepl https://riju.codes/ats
- example
-  val _ = print ("Hello, world!\n")
-  implement main0 () = ()
-  
- description Programming language designed to unify programming with formal specification
- fileExtensions sats dats cats hats
- website http://www.ats-lang.org/
- gitRepo https://github.com/githwxi/ATS-Postiats
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2012||Ats (programming Language)|Niek Yoan|9786201963160
+
+githubLanguage ATS
+ fileExtensions dats hats sats
+ trendingProjectsCount 0
+ type programming
+ aceMode ocaml
+ tmScope source.ats
+ aliases ats2
+ repos 217
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId

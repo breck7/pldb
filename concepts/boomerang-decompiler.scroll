@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id boomerang-decompiler
 name Boomerang Decompiler
 appeared 2002
 tags decompiler
+
+writtenIn cpp c cmake assembly-language markdown haskell qt yaml bourne-shell sed yacc python lex fortran-77 powershell
+repoStats
+ firstCommit 2002
+ commits 5921
+ committers 26
+ files 1304
+ newestCommit 2020
 country Australia
 originCommunity Queensland University of Technology
 
@@ -15,11 +24,3 @@ githubRepo https://github.com/BoomerangDecompiler/boomerang
  updated 2022
  description Boomerang Decompiler - Fighting the code-rot :)
  issues 36
-
-repoStats
- firstCommit 2002
- commits 5921
- committers 26
- files 1304
- newestCommit 2020
-writtenIn cpp c cmake assembly-language markdown haskell qt yaml bourne-shell sed yacc python lex fortran-77 powershell

@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id ddp
 name DDP
-conceptDescription The German Programming Language
-country Germany
+appeared 2022
 tags pl
 website https://ddp.le0n.dev/
-githubRepo https://github.com/DDP-Projekt/Kompilierer
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/17s1yvy/ddp_the_german_programming_language/
+conceptDescription The German Programming Language
+
+writtenIn go c markdown make yaml json bourne-shell brainfuck
 repoStats
  firstCommit 2022
  newestCommit 2024
  commits 944
  committers 7
  files 295
-appeared 2022
-writtenIn go c markdown make yaml json bourne-shell brainfuck
+country Germany
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/17s1yvy/ddp_the_german_programming_language/
+
+githubRepo https://github.com/DDP-Projekt/Kompilierer

@@ -1,27 +1,30 @@
 import ../code/conceptPage.scroll
+
 id 1c-enterprise
 name 1C Enterprise Script
 appeared 2002
 tags pl
 conceptDescription The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language
-reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_enterprise_8_3/
+
+fileType text
+centralPackageRepositoryCount 0
 country Russia
 originCommunity 1C Company
+reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_enterprise_8_3/
+
+leachim6 1C Enterprise
+ filepath #/1C Enterprise
+ example
+  Message("Hello World");
+  
+
+printToken Message
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
 
-printToken Message
-stringToken "
-
-githubLanguage 1C Enterprise
- fileExtensions bsl os
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.bsl
- repos 38669
 githubBigQuery 1C Enterprise
  repos 274
  users 250
@@ -54,11 +57,10 @@ linguistGrammarRepo https://github.com/xDrivenDevelopment/atom-language-1c-bsl.g
   
   КонецЦикла;
 
-leachim6 1C Enterprise
- filepath #/1C Enterprise
- example
-  Message("Hello World");
-  
-
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage 1C Enterprise
+ fileExtensions bsl os
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.bsl
+ repos 38669

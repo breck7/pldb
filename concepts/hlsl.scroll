@@ -1,11 +1,36 @@
 import ../code/conceptPage.scroll
+
 id hlsl
 name HLSL
 appeared 2002
 tags pl
-reference https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
+
+clocExtensions cg cginc fxh hlsl hlsli shader
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
+reference https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
+
+pygmentsHighlighter HLSL
+ filename graphics.py
+ fileExtensions hlsl hlsli
+compilerExplorer HLSL
+ example
+  // The entry point and target profile are needed to compile this example:
+  // -T ps_6_6 -E PSMain
+  
+  struct PSInput
+  {
+      float4 position : SV_Position;
+      float4 color    : COLOR0;
+  };
+  
+  float4 PSMain(PSInput input) : SV_Target0
+  {
+      return input.color * input.color;
+  }
+  
 
 hasOctals true
 hasHexadecimals true
@@ -25,20 +50,10 @@ wikipedia https://en.wikipedia.org/wiki/High-Level_Shading_Language
  dailyPageViews 84
  appeared 2000
 
-githubLanguage HLSL
- fileExtensions hlsl cginc fx fxh hlsli
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.hlsl
- repos 2093
 githubBigQuery HLSL
  repos 1654
  users 1527
 
-pygmentsHighlighter HLSL
- filename graphics.py
- fileExtensions hlsl hlsli
 linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
  firstCommit 2017
  lastCommit 2017
@@ -89,32 +104,6 @@ linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
   }
   
 
-compilerExplorer HLSL
- example
-  // The entry point and target profile are needed to compile this example:
-  // -T ps_6_6 -E PSMain
-  
-  struct PSInput
-  {
-      float4 position : SV_Position;
-      float4 color    : COLOR0;
-  };
-  
-  float4 PSMain(PSInput input) : SV_Target0
-  {
-      return input.color * input.color;
-  }
-  
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HLSL and Pixel Shaders for XAML Developers|2012|Walt Ritscher|19180540|3.57|7|2
- Hlsl and Pixel Shaders for Xaml Developers|2012|Walt Ritscher|41933416|0.0|0|0
- Real-Time 3D Rendering with DirectX and HLSL: A Practical Guide to Graphics Programming (Game Design)|2014|Paul Varcholik|26545302|4.50|2|0
-
 isbndb 5
  year|publisher|title|authors|isbn13
  2012|O'Reilly Media|HLSL and Pixel Shaders for XAML Developers: A Comprehensive Guide to Creating HLSL Pixel Shaders for WPF and Silverlight Applications|Ritscher, Walt|9781449319847
@@ -123,4 +112,16 @@ isbndb 5
  20120703|O'Reilly Media, Inc.|HLSL and Pixel Shaders for XAML Developers|Walt Ritscher|9781449325015
  20140503|Pearson Technology Group|Real-Time 3D Rendering with DirectX and HLSL|Paul Varcholik|9780133570113
 
-clocExtensions cg cginc fxh hlsl hlsli shader
+githubLanguage HLSL
+ fileExtensions hlsl cginc fx fxh hlsli
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.hlsl
+ repos 2093
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HLSL and Pixel Shaders for XAML Developers|2012|Walt Ritscher|19180540|3.57|7|2
+ Hlsl and Pixel Shaders for Xaml Developers|2012|Walt Ritscher|41933416|0.0|0|0
+ Real-Time 3D Rendering with DirectX and HLSL: A Practical Guide to Graphics Programming (Game Design)|2014|Paul Varcholik|26545302|4.50|2|0

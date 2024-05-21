@@ -1,26 +1,14 @@
 import ../code/conceptPage.scroll
+
 id fable-lang
 name Fable
 appeared 2012
 tags pl
-conceptDescription Fable is a compiler that brings F# into the JavaScript ecosystem
 website https://fable.io/
+conceptDescription Fable is a compiler that brings F# into the JavaScript ecosystem
+
 country Various
 originCommunity https://github.com/fable-compiler
-domainName fable.io
- registered 2012
- awisRank
-  2022 1587455
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-
-lineCommentToken //
-printToken printfn
 
 example
  type Face =
@@ -41,6 +29,21 @@ example
  // Incomplete pattern matches on this expression.
  // For example, the value '(_,Spades)' may indicate
  // a case not covered by the pattern(s).
+
+lineCommentToken //
+printToken printfn
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName fable.io
+ registered 2012
+ awisRank
+  2022 1587455
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId

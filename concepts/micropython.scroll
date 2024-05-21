@@ -1,16 +1,26 @@
 import ../code/conceptPage.scroll
+
 id micropython
 name MicroPython
 appeared 2014
-tags pl
 creators Damien P. George
+tags pl
 website https://micropython.org/
+
+isOpenSource true
+writtenIn python c expect restructuredtext csv make json markdown cmake yaml javascript bourne-shell assembly-language xml svg html toml cpp css protobuf diff pascal
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 15942
+ committers 682
+ files 5477
+ newestCommit 2024
 country Australia and The Netherlands
 originCommunity https://github.com/micropython
-domainName micropython.org
- registered 2013
- awisRank
-  2022 51222
+
+twitter https://twitter.com/micropython
 
 githubRepo https://github.com/micropython/micropython
  firstCommit 2013
@@ -22,13 +32,7 @@ githubRepo https://github.com/micropython/micropython
  description MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems
  issues 1469
 
-repoStats
- firstCommit 2013
- commits 15942
- committers 682
- files 5477
- newestCommit 2024
-
+jupyterKernel https://github.com/goatchurchprime/jupyter_micropython_kernel/
 wikipedia https://en.wikipedia.org/wiki/MicroPython
  related c arduino python arm
  summary MicroPython is a software implementation of the Python 3 programming language, written in C, that is optimized to run on a microcontroller. MicroPython is a full Python compiler and runtime that runs on the micro-controller hardware. The user is presented with an interactive prompt (the REPL) to execute supported commands immediately. Included are a selection of core Python libraries; MicroPython includes modules which give the programmer access to low-level hardware.MicroPython was originally created by the Australian programmer and physicist Damien George, after a successful Kickstarter backed campaign in 2013. While the original Kickstart campaign released MicroPython with a pyboard microcontroller, MicroPython supports a number of ARM based architectures. MicroPython has since been run on Arduino platform based products, ESP8266, ESP32, and Internet of things hardware. In 2016 a version of MicroPython for the BBC Micro Bit was created as part of the Python Software Foundation's contribution to the Micro Bit partnership with the BBC.The source code for the project is available on GitHub.
@@ -39,25 +43,10 @@ wikipedia https://en.wikipedia.org/wiki/MicroPython
  dailyPageViews 132
  appeared 2013
 
-twitter https://twitter.com/micropython
-jupyterKernel https://github.com/goatchurchprime/jupyter_micropython_kernel/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PROGRAMMING IN MICROPYTHON||SEPP MAHLER|58245376|1.00|1|0
- Programming with MicroPython: Embedded Programming with Microcontrollers and Python||Nicholas H. Tollervey|57975936|4.50|2|0
- Programming the BBC micro:bit: Getting Started with MicroPython||Simon Monk|58372050|0.0|0|0
- MicroPython for STM32 Nucleo Technical Workshop||Agus Kurniawan|65638655|0.0|0|0
- MicroPython for BBC micro:bit Technical Workshop||Agus Kurniawan|64410233|0.0|0|0
- Programming ESP8266-based Wireless Systems in MicroPython||Yury Magda|54822927|0.0|0|0
- Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550340|0.0|0|0
- Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550342|0.0|0|0
- Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550341|0.0|0|0
- MicroPython for the Internet of Things: A Beginner’s Guide to Programming with Python on Microcontrollers||Charles Bell|59119023|0.0|0|0
- Micropython for the Internet of Things: A Beginner's Guide to Programming with Python on Microcontrollers||Charles Bell|58627905|0.0|0|0
+domainName micropython.org
+ registered 2013
+ awisRank
+  2022 51222
 
 isbndb 19
  year|publisher|title|authors|isbn13
@@ -85,4 +74,16 @@ semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2020|Programming in MicroPython|10.1007/978-1-4842-5796-8_3|1|0|Charles Bell|991ad6f5b16d0179712d7272b857091d251cb9b2
 
-writtenIn python c expect restructuredtext csv make json markdown cmake yaml javascript bourne-shell assembly-language xml svg html toml cpp css protobuf diff pascal
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PROGRAMMING IN MICROPYTHON||SEPP MAHLER|58245376|1.00|1|0
+ Programming with MicroPython: Embedded Programming with Microcontrollers and Python||Nicholas H. Tollervey|57975936|4.50|2|0
+ Programming the BBC micro:bit: Getting Started with MicroPython||Simon Monk|58372050|0.0|0|0
+ MicroPython for STM32 Nucleo Technical Workshop||Agus Kurniawan|65638655|0.0|0|0
+ MicroPython for BBC micro:bit Technical Workshop||Agus Kurniawan|64410233|0.0|0|0
+ Programming ESP8266-based Wireless Systems in MicroPython||Yury Magda|54822927|0.0|0|0
+ Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550340|0.0|0|0
+ Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550342|0.0|0|0
+ Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550341|0.0|0|0
+ MicroPython for the Internet of Things: A Beginner’s Guide to Programming with Python on Microcontrollers||Charles Bell|59119023|0.0|0|0
+ Micropython for the Internet of Things: A Beginner's Guide to Programming with Python on Microcontrollers||Charles Bell|58627905|0.0|0|0

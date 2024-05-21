@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id lisp-1-5
 name LISP 1.5
 appeared 1959
 tags pl
 conceptDescription The first version of LispLanguage to become popular.
-reference http://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf
+
 country Canada
 originCommunity https://github.com/breuleux/liso/issues
+reference http://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf
 
 example
  cons (a (b c d))

@@ -1,10 +1,38 @@
 import ../code/conceptPage.scroll
+
 id sourcepawn
 name SourcePawn
 appeared 2014
 tags pl
+
+isOpenSource true
+writtenIn cpp pascal php csharp c python markdown yaml xml ini bourne-shell sql css javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 1535
+ committers 45
+ files 1289
+ newestCommit 2024
 country United States
 originCommunity AlliedModders LLC
+
+pygmentsHighlighter SourcePawn
+ filename pawn.py
+ fileExtensions sp
+
+githubRepo https://github.com/alliedmodders/sourcepawn
+ firstCommit 2014
+ stars 239
+ forks 53
+ subscribers 33
+ created 2014
+ updated 2022
+ description A small, statically typed scripting language.
+ issues 62
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -19,40 +47,10 @@ hasFloats true
 hasIntegers true
 hasLineComments true
 
-multiLineCommentTokens /* */
-
-githubRepo https://github.com/alliedmodders/sourcepawn
- firstCommit 2014
- stars 239
- forks 53
- subscribers 33
- created 2014
- updated 2022
- description A small, statically typed scripting language.
- issues 62
-
-repoStats
- firstCommit 2014
- commits 1535
- committers 45
- files 1289
- newestCommit 2024
-
-githubLanguage SourcePawn
- fileExtensions sp inc
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.sourcepawn
- aliases sourcemod
- repos 7547
 githubBigQuery SourcePawn
  repos 9023
  users 6524
 
-pygmentsHighlighter SourcePawn
- filename pawn.py
- fileExtensions sp
 linguistGrammarRepo https://github.com/github-linguist/sublime-sourcepawn
  firstCommit 2013
  lastCommit 2016
@@ -151,8 +149,11 @@ linguistGrammarRepo https://github.com/github-linguist/sublime-sourcepawn
   forward operator%(Fixed:oper1, oper2);
   forward operator%(oper1, Fixed:oper2);
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp pascal php csharp c python markdown yaml xml ini bourne-shell sql css javascript
+githubLanguage SourcePawn
+ fileExtensions sp inc
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.sourcepawn
+ aliases sourcemod
+ repos 7547

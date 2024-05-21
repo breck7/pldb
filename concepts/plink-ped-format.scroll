@@ -1,14 +1,18 @@
 import ../code/conceptPage.scroll
+
 id plink-ped-format
 name plink-ped-format
 appeared 2007
 tags textDataFormat
-conceptDescription The "ped" file is a commonly used format for holding pedigree and genotype data. Files in this format usually end in ".ped". There are several variants of the format. Used by plink.
 website https://www.cog-genomics.org/plink2/formats#ped
-reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
+conceptDescription The "ped" file is a commonly used format for holding pedigree and genotype data. Files in this format usually end in ".ped". There are several variants of the format. Used by plink.
+
 fileExtensions ped
+fileType text
+centralPackageRepositoryCount 0
 country South Korea
 originCommunity Kyung Hee University
+reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 
 example
  1 1 0 0 1  0  G G  2 2  C C
@@ -25,6 +29,3 @@ githubRepo https://github.com/WonyoungCho/plink/issues
  created 2019
  updated 2022
  issues 0
-
-fileType text
-centralPackageRepositoryCount 0

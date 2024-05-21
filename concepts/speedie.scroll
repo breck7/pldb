@@ -1,26 +1,39 @@
 import ../code/conceptPage.scroll
+
 id speedie
 name Speedie
 appeared 2022
-tags pl
 creators Theodore H Smith
-conceptDescription "General-purpose modern and clean object-oriented programming language."
+tags pl
 website http://github.com/gamblevore/speedie
 webRepl http://github.com/gamblevore/speedie
-documentation https://github.com/gamblevore/speedie/blob/main/Documentation
-emailList https://t.me/speedie_dev
-fileExtensions spd scproj
-country United Kingdom
-originCommunity https://github.com/gamblevore/speedie/issues
-domainName speedie.dev
- registered 2023
+conceptDescription "General-purpose modern and clean object-oriented programming language."
 
-supersetOf jeebox
 writtenIn speedie cpp
+supersetOf jeebox
 relatedConcepts i-expressions json yaml toml xml haml ini grammar treenotation
 influencedBy javascript python c lua cpp visual-basic hypercard html css xml json
-
+gdbSupport false
+fileExtensions spd scproj
 visualParadigm false
+fileType text
+documentation https://github.com/gamblevore/speedie/blob/main/Documentation
+emailList https://t.me/speedie_dev
+country United Kingdom
+originCommunity https://github.com/gamblevore/speedie/issues
+
+helloWorldCollection spd
+ main
+     "Hello World!"
+twitter https://twitter.com/gamblevore
+
+keywords #require #expect #error and asm break class continue else elseif false for if is in import module or return require expect error virtual behaviour function syntax syx self true with yield while xor
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+assignmentToken =
+booleanTokens true false
 
 hasPartialApplication true
  
@@ -348,24 +361,12 @@ hasThreads false
 hasClasses true
 hasExceptions false
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken print
-assignmentToken =
-booleanTokens true false
-keywords #require #expect #error and asm break class continue else elseif false for if is in import module or return require expect error virtual behaviour function syntax syx self true with yield while xor
+pypl spd
+
+domainName speedie.dev
+ registered 2023
 
 githubLanguage Speedie
  fileExtensions spd scproj
  type programming
  tmScope source.spd
-
-helloWorldCollection spd
- main
-     "Hello World!"
-
-pypl spd
-
-twitter https://twitter.com/gamblevore
-gdbSupport false
-fileType text

@@ -1,26 +1,36 @@
 import ../code/conceptPage.scroll
+
 id lean
 name Lean
 appeared 2015
-tags pl
 creators Leonardo de Moura
+tags pl
 website http://leanprover.github.io/
+
+isOpenSource true
+writtenIn lean cpp cmake bourne-shell markdown python c yaml toml tex perl html bash lua lex
+tryItOnline lean
+clocExtensions hlean lean
+fileType text
+wordRank 8525
 documentation https://leanprover.github.io/documentation/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 13762
+ committers 51
+ files 2908
+ newestCommit 2023
 country United States
 originCommunity Microsoft Research
-domainName leanprover.github.io
- awisRank
-  2022 540082
 
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-hasIntegers true
-hasLineComments true
-hasComments true
-
-printToken #print
-stringToken "
+pygmentsHighlighter Lean
+ filename theorem.py
+ fileExtensions lean
+leachim6 Lean
+ filepath l/Lean
+ example
+  #print "Hello World"
 
 githubRepo https://github.com/leanprover/lean
  firstCommit 2013
@@ -32,27 +42,24 @@ githubRepo https://github.com/leanprover/lean
  description Lean Theorem Prover
  issues 58
 
-repoStats
- firstCommit 2013
- commits 13762
- committers 51
- files 2908
- newestCommit 2023
+printToken #print
+stringToken "
 
-githubLanguage Lean
- fileExtensions lean hlean
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.lean
- repos 1807
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasIntegers true
+hasLineComments true
+hasComments true
+
+domainName leanprover.github.io
+ awisRank
+  2022 540082
+
 githubBigQuery Lean
  repos 265
  users 233
 
-pygmentsHighlighter Lean
- filename theorem.py
- fileExtensions lean
 linguistGrammarRepo https://github.com/leanprover/Lean.tmbundle
  firstCommit 2015
  lastCommit 2016
@@ -137,24 +144,20 @@ linguistGrammarRepo https://github.com/leanprover/Lean.tmbundle
   end binary
   
 
-leachim6 Lean
- filepath l/Lean
- example
-  #print "Hello World"
-
-tryItOnline lean
-
-fileType text
-wordRank 8525
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2013|Pragmatic Bookshelf|Functional Programming Patterns in Scala and Clojure: Write Lean Programs for the JVM|Bevilacqua-Linn, Michael|9781937785475
  2009|CRC Press|Measuring and Improving Performance: Information Technology Applications in Lean Systems|Martin, James William|9781420084184
  2016|Apress|Lean Python: Learn Just Enough Python to Build Useful Tools|Gerrard, Paul|9781484223857
  2021|Apress|Lean Software Systems Engineering for Developers: Managing Requirements, Complexity, Teams, and Change Like a Champ|Durham, Doug and Michel, Chad|9781484269336
+
+githubLanguage Lean
+ fileExtensions lean hlean
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.lean
+ repos 1807
 
 semanticScholar 10
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -168,6 +171,3 @@ semanticScholar 10
  2018|Using Agile Games to Invigorate Agile and Lean Software Development Learning in Classrooms|10.1007/978-981-13-2751-3_18|3|0|Rashina Hoda|b4e7e39b7a590d940e902e4c8c8a960df83a4f10
  2019|Built-In Lean Management Tools in Simulation Modeling|10.1109/WSC40007.2019.9004812|3|0|P. Pawlewski|03859bf77f8c4d21dfbb36cba377b3467f3a3100
  2018|NLP Lean Programming Framework: Developing NLP Applications More Effectively|10.18653/v1/N18-5001|1|0|Marc Schreiber and B. Kraft and Albert Zündorf|04c6990ea6520f1af4ddcacabc1042bd03681da5
-
-clocExtensions hlean lean
-writtenIn lean cpp cmake bourne-shell markdown python c yaml toml tex perl html bash lua lex

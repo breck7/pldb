@@ -1,10 +1,15 @@
 import ../code/conceptPage.scroll
+
 id fat
 name FAT
 appeared 1977
 tags filesystem
 standsFor File Allocation Table
 aka FAT32 FAT16 FAT12
+
+fileType text
+wordRank 1690
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft && IBM && NCR Corporation && Seattle Computer Products && Compaq Computer Corporation && Digital Research, Inc && Novell, Inc && Caldera, Inc
 
@@ -17,7 +22,3 @@ wikipedia https://en.wikipedia.org/wiki/File_Allocation_Table
  revisionCount 3163
  dailyPageViews 1568
  appeared 1977
-
-fileType text
-wordRank 1690
-centralPackageRepositoryCount 0

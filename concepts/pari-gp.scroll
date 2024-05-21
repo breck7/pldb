@@ -1,4 +1,5 @@
 import ../code/conceptPage.scroll
+
 id pari-gp
 name PARI/GP
 appeared 1985
@@ -6,9 +7,24 @@ tags pl
 website http://pari.math.u-bordeaux.fr/
 aka parigp
 aka PARI/GP
+
+isOpenSource true
+tryItOnline pari-gp
+fileType text
+quineRelay PARI/GP
+centralPackageRepositoryCount 0
+ubuntuPackage pari-gp
 country France
 originCommunity Université Bordeaux
-domainName pari.math.u-bordeaux.fr
+projectEuler PARI/GP
+ memberCount
+  2022 123
+
+rijuRepl https://riju.codes/parigp
+ example
+  print("Hello, world!")
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -18,8 +34,7 @@ hasComments true
  */
 hasSemanticIndentation false
 
-multiLineCommentTokens /* */
-
+jupyterKernel https://github.com/jdemeyer/pari_jupyter
 wikipedia https://en.wikipedia.org/wiki/PARI/GP
  example
   ? \p 212
@@ -66,18 +81,4 @@ wikipedia https://en.wikipedia.org/wiki/PARI/GP
  revisionCount 183
  appeared 1985
 
-projectEuler PARI/GP
- memberCount
-  2022 123
-quineRelay PARI/GP
-
-rijuRepl https://riju.codes/parigp
- example
-  print("Hello, world!")
-tryItOnline pari-gp
-
-ubuntuPackage pari-gp
-jupyterKernel https://github.com/jdemeyer/pari_jupyter
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName pari.math.u-bordeaux.fr

@@ -1,17 +1,23 @@
 import ../code/conceptPage.scroll
+
 id nltk
 name Natural Language Toolkit
 appeared 2001
 tags library
 website http://www.nltk.org/
+
+isOpenSource true
+writtenIn python restructuredtext yaml markdown html make ini json jupyter-notebook bourne-shell css xml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2001
+ commits 14600
+ committers 494
+ files 496
+ newestCommit 2024
 country Various
 originCommunity https://www.nltk.org/team.html
-domainName nltk.org
- registered 2007
- awisRank
-  2022 88205
-
-writtenIn python restructuredtext yaml markdown html make ini json jupyter-notebook bourne-shell css xml
 
 githubRepo https://github.com/nltk/nltk
  stars 10863
@@ -33,9 +39,10 @@ wikipedia https://en.wikipedia.org/wiki/Natural_Language_Toolkit
  revisionCount 127
  appeared 2007
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName nltk.org
+ registered 2007
+ awisRank
+  2022 88205
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -43,10 +50,3 @@ goodreads
  Natural Language Processing: Python and Nltk||Nitin Hardeniya|53857081|0.0|0|0
  Natural Language Processing: Python and NLTK||Nitin Hardeniya|54033345|3.00|1|0
  Natural Language Processing With Python: Natural Language Processing Using NLTK||Frank Millstein|60775831|5.00|2|0
-
-repoStats
- firstCommit 2001
- commits 14600
- committers 494
- files 496
- newestCommit 2024

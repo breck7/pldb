@@ -1,24 +1,26 @@
 import ../code/conceptPage.scroll
+
 id dhall
 name Dhall
 appeared 2017
 tags dataNotation
 website https://dhall-lang.org/
 webRepl https://dhall-lang.org/
+
+writtenIn dhall markdown nix haskell svg bourne-shell html diff json css python javascript yaml
+clocExtensions dhall
+repoStats
+ firstCommit 2017
+ commits 1077
+ committers 97
+ files 3701
+ newestCommit 2024
 country Various
 originCommunity https://github.com/dhall-lang
-domainName dhall-lang.org
- awisRank
-  2022 4422660
 
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
-
+rijuRepl https://riju.codes/dhall
+ example
+  { output = "Hello, world!" }
 example
  -- ./company.dhall
  
@@ -58,6 +60,7 @@ example
      , bios = Prelude.List.map User Bio toBio users
      , greetingPage = greetingPage
      }
+twitter https://twitter.com/dhall_lang
 
 githubRepo https://github.com/dhall-lang/dhall-lang
  firstCommit 2017
@@ -69,12 +72,23 @@ githubRepo https://github.com/dhall-lang/dhall-lang
  description Maintainable configuration files
  issues 127
 
-repoStats
- firstCommit 2017
- commits 1077
- committers 97
- files 3701
- newestCommit 2024
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName dhall-lang.org
+ awisRank
+  2022 4422660
+
+githubBigQuery Dhall
+ repos 60
+ users 46
+
+isbndb 0
 
 githubLanguage Dhall
  type programming
@@ -84,17 +98,3 @@ githubLanguage Dhall
  codemirrorMimeType text/x-haskell
  tmScope source.haskell
  repos 817
-githubBigQuery Dhall
- repos 60
- users 46
-
-rijuRepl https://riju.codes/dhall
- example
-  { output = "Hello, world!" }
-
-twitter https://twitter.com/dhall_lang
-
-isbndb 0
-
-clocExtensions dhall
-writtenIn dhall markdown nix haskell svg bourne-shell html diff json css python javascript yaml

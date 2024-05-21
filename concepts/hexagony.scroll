@@ -1,28 +1,24 @@
 import ../code/conceptPage.scroll
+
 id hexagony
 name hexagony
 appeared 2015
-tags esolang
 creators Martin Büttner
-country Germany
-originCommunity https://github.com/m-ender/hexagony/issues
+tags esolang
 
-githubRepo https://github.com/m-ender/hexagony
- stars 278
- forks 4
- subscribers 13
- created 2015
- updated 2022
- firstCommit 2015
- description A two-dimensional, hexagonal programming language.
- issues 1
-
+isOpenSource true
+writtenIn ruby markdown
+tryItOnline hexagony
+fileType text
+centralPackageRepositoryCount 0
 repoStats
  firstCommit 2015
  commits 32
  committers 6
  files 20
  newestCommit 2021
+country Germany
+originCommunity https://github.com/m-ender/hexagony/issues
 
 rijuRepl https://riju.codes/hexagony
  example
@@ -34,10 +30,13 @@ rijuRepl https://riju.codes/hexagony
     ; 2 3 < \
      4 ; * /
   
-tryItOnline hexagony
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn ruby markdown
+githubRepo https://github.com/m-ender/hexagony
+ stars 278
+ forks 4
+ subscribers 13
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description A two-dimensional, hexagonal programming language.
+ issues 1

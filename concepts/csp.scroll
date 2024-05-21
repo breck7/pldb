@@ -1,18 +1,23 @@
 import ../code/conceptPage.scroll
+
 id csp
 name CSP
 appeared 1978
 tags pl
-documentation https://aiochan.readthedocs.io/en/latest/csp.html
 standsFor Communicating Sequential Processes
+
+fileType text
+documentation https://aiochan.readthedocs.io/en/latest/csp.html
+monaco csp
+centralPackageRepositoryCount 0
 country United States
 country United Kingdom
 originCommunity Oxford University
 
-keywords
-
 example
  COPY = *[c:character; west?c → east!c]
+
+keywords
 
 wikipedia https://en.wikipedia.org/wiki/Communicating_sequential_processes
  related occam limbo go crystal clojure ada
@@ -24,17 +29,7 @@ wikipedia https://en.wikipedia.org/wiki/Communicating_sequential_processes
  dailyPageViews 281
  appeared 2002
 
-monaco csp
-
 hopl https://hopl.info/showlanguage.prx?exp=795
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Csp: A Developer's Guide|1992|Shashi Malik|5518824|0.0|0|0
- CSP as a Coordination Language||Kleine Moritz|51931033|0.0|0|0
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -67,3 +62,8 @@ semanticScholar 21
  2007|Mise en Scene: Converting Scenarios to CSP Traces in Support of Requirements-Based Programming|10.1109/SEW.2007.104|2|0|J. Carter and W. B. Gardner|363989b6ae3f6191dfea00fbc24e0c6cd6b3944a
  1995|Tools for teaching CCRs, monitors, and CSP concurrent programming concepts|10.1145/201998.202008|1|0|R. Olsson and Carole M. McNamee|bf4178c1fa36ea3d87ede0d1960c41582c1670b1
  2017|CSP for Parallelising Brzozowski's DFA Construction Algorithm|10.1142/9789813148208_0010|1|0|Tinus Strauss and B. Watson and D. Kourie and L. Cleophas|528fadf6dff50aef434ed6a4d2ff4f884d9830ef
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Csp: A Developer's Guide|1992|Shashi Malik|5518824|0.0|0|0
+ CSP as a Coordination Language||Kleine Moritz|51931033|0.0|0|0

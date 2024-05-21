@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id rocket
 name rocket
 appeared 2018
 tags pl
+
+writtenIn markdown
+repoStats
+ firstCommit 2018
+ commits 10
+ committers 1
+ files 4
+ newestCommit 2018
 country United States
 originCommunity https://github.com/camullen/Rocket/issues
 
@@ -16,15 +25,6 @@ githubRepo https://github.com/camullen/Rocket
  forks 0
  issues 0
 
-repoStats
- firstCommit 2018
- commits 10
- committers 1
- files 4
- newestCommit 2018
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  17703452|Show HN: Rocket – a language that lets you focus on your business logic|2018-08-07 02:18:21 UTC|1533608301|cmullen|1|7
-
-writtenIn markdown

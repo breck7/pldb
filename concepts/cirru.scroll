@@ -1,41 +1,40 @@
 import ../code/conceptPage.scroll
+
 id cirru
 name Cirru
 appeared 2012
-tags pl
 creators ChenYong
-conceptDescription Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
+tags pl
 website http://text.cirru.org/
-reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
+conceptDescription Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
+
+fileType text
+centralPackageRepositoryCount 0
 country China
 originCommunity https://github.com/Cirru
-domainName text.cirru.org
+reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
+
+pygmentsHighlighter Cirru
+ filename webmisc.py
+ fileExtensions cirru
+example
+ set a
+  add
+    number 1
+    number 2
+twitter https://twitter.com/cirrulang
 
 hasSemanticIndentation true
  print
    + 1 2
    , 11
 
-example
- set a
-  add
-    number 1
-    number 2
+domainName text.cirru.org
 
-githubLanguage Cirru
- fileExtensions cirru
- trendingProjectsCount 0
- type programming
- aceMode cirru
- tmScope source.cirru
- repos 346
 githubBigQuery Cirru
  repos 288
  users 266
 
-pygmentsHighlighter Cirru
- filename webmisc.py
- fileExtensions cirru
 linguistGrammarRepo https://github.com/Cirru/sublime-cirru
  firstCommit 2012
  lastCommit 2015
@@ -46,6 +45,10 @@ linguistGrammarRepo https://github.com/Cirru/sublime-cirru
   
   require ./stdio.cr
 
-twitter https://twitter.com/cirrulang
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Cirru
+ fileExtensions cirru
+ trendingProjectsCount 0
+ type programming
+ aceMode cirru
+ tmScope source.cirru
+ repos 346

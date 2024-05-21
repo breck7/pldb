@@ -1,11 +1,23 @@
 import ../code/conceptPage.scroll
+
 id mad
 name Michigan Algorithm Decoder
 appeared 1959
 tags pl
 standsFor Michigan Algorithm Decoder
+
+fileType text
+wordRank 4248
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Michigan
+
+helloWorldCollection Michigan Algorithm Decoder
+          R Hello world in MAD
+ 
+ PRINT FORMAT HELLOW
+ VECTOR VALUES HELLOW=$13h0Hello, world*$
+ END OF PROGRAM
 
 wikipedia https://en.wikipedia.org/wiki/MAD_(programming_language)
  example
@@ -21,18 +33,7 @@ wikipedia https://en.wikipedia.org/wiki/MAD_(programming_language)
  revisionCount 147
  appeared 1959
 
-helloWorldCollection Michigan Algorithm Decoder
-          R Hello world in MAD
- 
- PRINT FORMAT HELLOW
- VECTOR VALUES HELLOW=$13h0Hello, world*$
- END OF PROGRAM
-
-tiobe MAD
 hopl https://hopl.info/showlanguage.prx?exp=92
-
-fileType text
-wordRank 4248
-centralPackageRepositoryCount 0
+tiobe MAD
 
 isbndb 0

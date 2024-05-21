@@ -1,15 +1,12 @@
 import ../code/conceptPage.scroll
+
 id dcalgol
 name Data Communications ALGOL
 appeared 1970
 tags pl
-reference https://en.wikipedia.org/wiki/Burroughs_large_systems
+
 originCommunity Burroughs Corporation
-
-hasStrings true
- "Hello world"
-
-stringToken "
+reference https://en.wikipedia.org/wiki/Burroughs_large_systems
 
 example
  BEGIN
@@ -32,5 +29,10 @@ example
  WHILE MYSELF.TASKVALUE = 0 DO
    DISPLAY ("HELLO WORLD"); %Duh
  END.
+
+stringToken "
+
+hasStrings true
+ "Hello world"
 
 hopl https://hopl.info/showlanguage.prx?exp=1958

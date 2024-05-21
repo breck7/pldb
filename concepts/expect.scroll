@@ -1,19 +1,18 @@
 import ../code/conceptPage.scroll
+
 id expect
 name Expect
 appeared 1990
 tags pl
 website http://core.tcl.tk/expect/index
+
+isOpenSource true
+clocExtensions exp
+fileType text
+wordRank 2323
+centralPackageRepositoryCount 0
 country Various
 originCommunity www.tcl.tk/community/coreteam
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  # Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
@@ -35,6 +34,14 @@ example
  # Exit the telnet session, and wait for a special end-of-file character.
  send "exit\r"
  expect eof
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Expect
  example
@@ -65,15 +72,8 @@ wikipedia https://en.wikipedia.org/wiki/Expect
 
 hopl https://hopl.info/showlanguage.prx?exp=1622
 
-fileType text
-wordRank 2323
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  20170525|World Scientific Publishing|Expect The Unexpected: A First Course In Biostatistics|Raluca Balan; Gilles Lamothe|9789813209084
  2015|Apress|Windows 10 Primer: What to Expect from Microsoft's New Operating System|Halsey, Mike|9781484210468
  2021|World Scientific Publishing Company|Expect the Unexpected: A First Course in Biostatistics (Second Edition)|Raluca Balan|9789813209060
-
-clocExtensions exp

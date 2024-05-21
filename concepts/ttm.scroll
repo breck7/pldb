@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id ttm
 name TTM
 appeared 1968
-tags pl
 creators Steven M. Caine and E. Kent Gordon
+tags pl
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TTM_(programming_language)
  example
@@ -15,9 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/TTM_(programming_language)
  revisionCount 16
  dailyPageViews 9
  appeared 1968
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

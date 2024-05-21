@@ -1,15 +1,26 @@
 import ../code/conceptPage.scroll
+
 id quakec
 name QuakeC
 appeared 1996
-tags pl
 creators John Carmack
+tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:QuakeC
+centralPackageRepositoryCount 0
 country United States
 originCommunity id Software LLC
 
-hasPrintDebugging true
+leachim6 QuakeC
+ filepath q/QuakeC.qc
+ fileExtensions qc
+ example
+  bprint("Hello World\n");
 
 printToken bprint
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/QuakeC
  related c linux
@@ -21,18 +32,8 @@ wikipedia https://en.wikipedia.org/wiki/QuakeC
  dailyPageViews 30
  appeared 1996
 
-leachim6 QuakeC
- filepath q/QuakeC.qc
- fileExtensions qc
- example
-  bprint("Hello World\n");
-rosettaCode http://www.rosettacode.org/wiki/Category:QuakeC
-
-fileType text
-centralPackageRepositoryCount 0
+isbndb 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0
-
-isbndb 0

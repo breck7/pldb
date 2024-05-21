@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id powerbasic
 name PowerBASIC
 appeared 1989
 tags pl
+
+rosettaCode http://www.rosettacode.org/wiki/Category:PowerBASIC
+centralPackageRepositoryCount 0
 country United States
 originCommunity PowerBASIC Inc
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/PowerBASIC
  example
@@ -36,9 +40,5 @@ wikipedia https://en.wikipedia.org/wiki/PowerBASIC
  revisionCount 449
  dailyPageViews 43
  appeared 1989
-
-rosettaCode http://www.rosettacode.org/wiki/Category:PowerBASIC
-
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,20 +1,34 @@
 import ../code/conceptPage.scroll
+
 id pizza
 name Pizza
 appeared 2001
 tags pl
 website https://pizzacompiler.sourceforge.net
+
+supersetOf java
+fileType text
+wordRank 4629
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity https://sourceforge.net/p/pizzacompiler/_list/tickets
 
-supersetOf java
+leachim6 Pizza
+ filepath p/Pizza.pizza
+ fileExtensions pizza
+ example
+  class HelloWorld {
+    public static void main(String[] args) {
+      System.out.println("Hello World");
+    }
+  }
+
+printToken System.out.println
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken System.out.println
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
  example
@@ -37,21 +51,7 @@ wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
  dailyPageViews 44
  appeared 2001
 
-leachim6 Pizza
- filepath p/Pizza.pizza
- fileExtensions pizza
- example
-  class HelloWorld {
-    public static void main(String[] args) {
-      System.out.println("Hello World");
-    }
-  }
-
 hopl https://hopl.info/showlanguage.prx?exp=2376
-
-fileType text
-wordRank 4629
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

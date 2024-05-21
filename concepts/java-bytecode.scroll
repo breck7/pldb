@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id java-bytecode
 name Java Bytecode
 appeared 1995
 tags bytecode
+
+fileType text
 documentation https://docs.oracle.com/javase/specs/jvms/se7/html/
+centralPackageRepositoryCount 0
 country United States
 originCommunity Oracle Corporation
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Java_bytecode
  example
@@ -48,9 +52,6 @@ wikipedia https://en.wikipedia.org/wiki/Java_bytecode
  backlinksCount 175
  revisionCount 373
  appeared 1995
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0
 

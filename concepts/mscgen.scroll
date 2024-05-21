@@ -1,18 +1,18 @@
 import ../code/conceptPage.scroll
+
 id mscgen
 name Mscgen
 appeared 2016
 tags textMarkup
 website http://www.mcternan.me.uk/mscgen/
+
+relatedConcepts dot
 country United Kingdom
 originCommunity https://code.google.com/archive/p/mscgen/issues
 
-relatedConcepts dot
-
-hasBooleans true
-
-booleanTokens TRUE FALSE
-
+pygmentsHighlighter Mscgen
+ filename dsls.py
+ fileExtensions msc
 example
  # MSC for some fictional process
  msc {
@@ -36,6 +36,6 @@ example
    a<-b [ label = "ab() = FALSE"];
  }
 
-pygmentsHighlighter Mscgen
- filename dsls.py
- fileExtensions msc
+booleanTokens TRUE FALSE
+
+hasBooleans true

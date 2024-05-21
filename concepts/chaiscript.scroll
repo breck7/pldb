@@ -1,20 +1,24 @@
 import ../code/conceptPage.scroll
+
 id chaiscript
 name chaiscript
 appeared 2009
 tags pl
 website http://chaiscript.com/
+
+writtenIn cpp markdown yaml cmake bourne-shell ruby svg php pascal json
+repoStats
+ firstCommit 2009
+ commits 2388
+ committers 81
+ files 386
+ newestCommit 2024
 country United States and New Zealand
 originCommunity https://github.com/ChaiScript
-domainName chaiscript.com
- registered 2009
- awisRank
-  2022 11052396
 
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-
+pygmentsHighlighter ChaiScript
+ filename scripting.py
+ fileExtensions chai
 example
  #include <chaiscript/chaiscript.hpp>
  std::string helloWorld(const std::string &t_name) {
@@ -38,15 +42,11 @@ githubRepo https://github.com/ChaiScript/ChaiScript
  description Embedded Scripting Language Designed for C++
  issues 114
 
-repoStats
- firstCommit 2009
- commits 2388
- committers 81
- files 386
- newestCommit 2024
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
-pygmentsHighlighter ChaiScript
- filename scripting.py
- fileExtensions chai
-
-writtenIn cpp markdown yaml cmake bourne-shell ruby svg php pascal json
+domainName chaiscript.com
+ registered 2009
+ awisRank
+  2022 11052396

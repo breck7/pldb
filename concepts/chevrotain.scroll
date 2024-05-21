@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id chevrotain
 name chevrotain
 appeared 2015
 tags library
 website http://sap.github.io/chevrotain/
+
+isOpenSource true
+writtenIn typescript javascript markdown json html yaml bourne-shell css json5 csv
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 3095
+ committers 78
+ files 376
+ newestCommit 2023
 country Germany
 originCommunity SAP
 
@@ -103,15 +115,3 @@ githubRepo https://github.com/SAP/chevrotain
  firstCommit 2015
  description Parser Building Toolkit for JavaScript
  issues 47
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2015
- commits 3095
- committers 78
- files 376
- newestCommit 2023
-writtenIn typescript javascript markdown json html yaml bourne-shell css json5 csv

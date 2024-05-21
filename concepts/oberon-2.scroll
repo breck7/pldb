@@ -1,24 +1,37 @@
 import ../code/conceptPage.scroll
+
 id oberon-2
 name Oberon-2
 appeared 1991
-tags pl
 creators Niklaus Wirth and Hanspeter Mössenböck
-reference https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50
-reference https://dl.acm.org/doi/pdf/10.1145/157352.157355
-country Switzerland
-originCommunity Eidgenössische Technische Hochschule Zürich
+tags pl
 
 supersetOf oberon
+rosettaCode http://www.rosettacode.org/wiki/Category:Oberon-2
+centralPackageRepositoryCount 0
+country Switzerland
+originCommunity Eidgenössische Technische Hochschule Zürich
+reference https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50
+reference https://dl.acm.org/doi/pdf/10.1145/157352.157355
+
+leachim6 Oberon 2
+ filepath o/Oberon 2.obn
+ example
+  MODULE HelloWorld;
+  IMPORT Out;
+  BEGIN
+    Out.String( "Hello World" );
+    Out.Ln;
+  END HelloWorld.
+
+printToken Out.String
+stringToken "
 
 hasComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-printToken Out.String
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Oberon-2
  example
@@ -78,19 +91,6 @@ wikipedia https://en.wikipedia.org/wiki/Oberon-2
  created 2004
  appeared 1991
 
-leachim6 Oberon 2
- filepath o/Oberon 2.obn
- example
-  MODULE HelloWorld;
-  IMPORT Out;
-  BEGIN
-    Out.String( "Hello World" );
-    Out.Ln;
-  END HelloWorld.
-rosettaCode http://www.rosettacode.org/wiki/Category:Oberon-2
-
 hopl https://hopl.info/showlanguage.prx?exp=1647
-
-centralPackageRepositoryCount 0
 
 isbndb 0

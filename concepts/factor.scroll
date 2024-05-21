@@ -1,29 +1,53 @@
 import ../code/conceptPage.scroll
+
 id factor
 name Factor
 appeared 2003
-tags pl
 creators Slava Pestov
+tags pl
 website https://factorcode.org/
-reference https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
+
+isOpenSource true
+writtenIn xml cpp lisp c html css glsl vim-script csv javascript markdown cson assembly-language json bourne-shell sql cuda yaml restructuredtext smalltalk svg perl make dtd objective-cpp lua nix ruby rust
+tryItOnline factor
+fileType text
+wordRank 2090
+codeMirror factor
+rosettaCode http://www.rosettacode.org/wiki/Category:Factor
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2007
+ commits 51236
+ committers 329
+ files 11585
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/factor
-domainName factorcode.org
- registered 2005
- awisRank
-  2022 3422932
-  2017 2667281
+projectEuler Factor
+ memberCount
+  2019 48
+  2022 50
+reference https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
 
-hasComments true
-hasGarbageCollection true
-hasMacros true
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-printToken print
-stringToken "
+pygmentsHighlighter Factor
+ filename factor.py
+ fileExtensions factor
+rijuRepl https://riju.codes/factor
+ example
+  IN: main
+  USE: io
+  
+  "Hello, world!" print
+  
+twitter https://twitter.com/factorbuilds
+leachim6 Factor
+ filepath f/Factor.factor
+ fileExtensions factor
+ example
+  USING: io ;
+  "Hello World" print
+  
+  
 
 githubRepo https://github.com/factor/factor
  stars 1282
@@ -35,12 +59,16 @@ githubRepo https://github.com/factor/factor
  description Factor programming language
  issues 622
 
-repoStats
- firstCommit 2007
- commits 51236
- committers 329
- files 11585
- newestCommit 2024
+printToken print
+stringToken "
+
+hasComments true
+hasGarbageCollection true
+hasMacros true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Factor_(programming_language)
  example
@@ -61,6 +89,27 @@ wikipedia https://en.wikipedia.org/wiki/Factor_(programming_language)
  revisionCount 238
  appeared 2009
 
+tiobe Factor
+
+domainName factorcode.org
+ registered 2005
+ awisRank
+  2022 3422932
+  2017 2667281
+
+githubBigQuery Factor
+ repos 111
+ users 110
+
+linguistGrammarRepo https://github.com/slavapestov/factor
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 124
+ commitCount 28257
+
+isbndb 0
+ year|publisher|title|authors|isbn13
+
 githubLanguage Factor
  fileExtensions factor
  trendingProjectsCount 0
@@ -71,57 +120,8 @@ githubLanguage Factor
  codemirrorMimeType text/x-factor
  tmScope source.factor
  repos 201
-githubBigQuery Factor
- repos 111
- users 110
-
-codeMirror factor
-pygmentsHighlighter Factor
- filename factor.py
- fileExtensions factor
-linguistGrammarRepo https://github.com/slavapestov/factor
- firstCommit 2007
- lastCommit 2016
- committerCount 124
- commitCount 28257
-
-projectEuler Factor
- memberCount
-  2019 48
-  2022 50
-leachim6 Factor
- filepath f/Factor.factor
- fileExtensions factor
- example
-  USING: io ;
-  "Hello World" print
-  
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Factor
-
-rijuRepl https://riju.codes/factor
- example
-  IN: main
-  USE: io
-  
-  "Hello, world!" print
-  
-tryItOnline factor
-
-tiobe Factor
-
-twitter https://twitter.com/factorbuilds
-fileType text
-wordRank 2090
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
- year|publisher|title|authors|isbn13
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  2010|Factor: a dynamic stack-based programming language|10.1145/1899661.1869637|5|1|Sviatoslav Pestov, Daniel Ehrenberg, Joe Groff|400959dbf2be521e3cc123628e0124afcf3a8caf
  2017|An Introduction to Factor||1|0|Zackery L. Arnold|97fc83ee9c977255abffbfc1b2356f59facd8aa0
-
-writtenIn xml cpp lisp c html css glsl vim-script csv javascript markdown cson assembly-language json bourne-shell sql cuda yaml restructuredtext smalltalk svg perl make dtd objective-cpp lua nix ruby rust

@@ -1,8 +1,18 @@
 import ../code/conceptPage.scroll
+
 id web-idl
 name WebIDL
 appeared 2012
 tags idl
+
+fileType text
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter Web IDL
+ filename webidl.py
+ fileExtensions webidl
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -11,8 +21,6 @@ hasComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Web_IDL
  related idl-sl ecmascript
@@ -24,22 +32,10 @@ wikipedia https://en.wikipedia.org/wiki/Web_IDL
  revisionCount 34
  appeared 2012
 
-githubLanguage WebIDL
- fileExtensions webidl
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode webidl
- codemirrorMimeType text/x-webidl
- tmScope source.webidl
- repos 17
 githubBigQuery WebIDL
  repos 120
  users 117
 
-pygmentsHighlighter Web IDL
- filename webidl.py
- fileExtensions webidl
 linguistGrammarRepo https://github.com/andik/IDL-Syntax
  firstCommit 2014
  lastCommit 2015
@@ -74,5 +70,12 @@ linguistGrammarRepo https://github.com/andik/IDL-Syntax
   };
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage WebIDL
+ fileExtensions webidl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode webidl
+ codemirrorMimeType text/x-webidl
+ tmScope source.webidl
+ repos 17

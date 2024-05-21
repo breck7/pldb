@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id omnis-studio
 name Omnis Studio
 appeared 1982
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Omnis_Studio
  related linux android java ucsd-pascal
@@ -13,6 +17,3 @@ wikipedia https://en.wikipedia.org/wiki/Omnis_Studio
  revisionCount 171
  dailyPageViews 17
  appeared 1979
-
-isOpenSource false
-centralPackageRepositoryCount 0

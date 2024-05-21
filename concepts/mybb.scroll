@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id mybb
 name MyBB
 appeared 2002
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Australia
 originCommunity https://github.com/mybb
 
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/MyBB
  appeared 2002
 
 hopl https://hopl.info/showlanguage.prx?exp=8605
-
-isOpenSource true
-centralPackageRepositoryCount 0

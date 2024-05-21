@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id atomspace
 name atomspace
 appeared 2008
 tags application
 website https://wiki.opencog.org/w/AtomSpace
+
+writtenIn scheme cpp cmake markdown xml python haskell cython bourne-shell yaml ocaml svg tex sql csv ini c
+repoStats
+ firstCommit 2008
+ commits 33539
+ committers 214
+ files 1441
+ newestCommit 2024
 country Various
 originCommunity OpenCog Foundation
 
@@ -16,11 +25,3 @@ githubRepo https://github.com/opencog/atomspace
  updated 2022
  description The OpenCog (hyper-)graph database and graph rewriting system
  issues 89
-
-repoStats
- firstCommit 2008
- commits 33539
- committers 214
- files 1441
- newestCommit 2024
-writtenIn scheme cpp cmake markdown xml python haskell cython bourne-shell yaml ocaml svg tex sql csv ini c

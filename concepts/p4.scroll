@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id p4
 name P4
 appeared 2014
 tags pl
 website http://p4.org
+
+isOpenSource true
+clocExtensions p4
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Barefoot Networks && Intel && Stanford University && Princeton University && Google && Microsoft Research
-domainName p4.org
- registered 2002
- awisRank
-  2022 552856
+
+twitter https://twitter.com/p4org
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -19,9 +26,6 @@ hasMultiLineComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/P4_(programming_language)
  related c python
@@ -34,13 +38,11 @@ wikipedia https://en.wikipedia.org/wiki/P4_(programming_language)
  appeared 2014
  fileExtensions p4
 
-githubLanguage P4
- fileExtensions p4
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.p4
- repos 574
+domainName p4.org
+ registered 2002
+ awisRank
+  2022 552856
+
 githubBigQuery P4
  repos 38
  users 29
@@ -93,11 +95,12 @@ linguistGrammarRepo https://github.com/TakeshiTseng/atom-language-p4
   }
   
 
-twitter https://twitter.com/p4org
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions p4
+githubLanguage P4
+ fileExtensions p4
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.p4
+ repos 574

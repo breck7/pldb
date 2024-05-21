@@ -1,16 +1,21 @@
 import ../code/conceptPage.scroll
+
 id baysick
 name baysick
 appeared 2009
-tags esolang
 creators Michael Fogus
+tags esolang
 website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+
+writtenIn scala markdown
+repoStats
+ firstCommit 2009
+ commits 126
+ committers 6
+ files 8
+ newestCommit 2019
 country United States
 originCommunity Cognitect, Inc
-
-hasPrintDebugging true
-
-printToken PRINT
 
 example
  object SquareRoot extends Baysick {
@@ -22,6 +27,7 @@ example
      RUN
    }
  }
+twitter https://twitter.com/fogus
 
 githubRepo https://github.com/fogus/baysick
  firstCommit 2009
@@ -33,13 +39,6 @@ githubRepo https://github.com/fogus/baysick
  description An embedded Insane-specific Language for Scala implementing the BASIC programming language
  issues 5
 
-repoStats
- firstCommit 2009
- commits 126
- committers 6
- files 8
- newestCommit 2019
+printToken PRINT
 
-twitter https://twitter.com/fogus
-
-writtenIn scala markdown
+hasPrintDebugging true

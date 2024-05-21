@@ -1,11 +1,68 @@
 import ../code/conceptPage.scroll
+
 id vhdl
 name VHDL
 appeared 1983
 tags hardwareDescriptionLanguage
-documentation https://vhdlguide.readthedocs.io/en/latest/
 standsFor VHSIC Hardware Description Language
+
+clocExtensions VHD vhd VHDL vhdl vhf vhi vho vhs vht vhw
+fileType text
+documentation https://vhdlguide.readthedocs.io/en/latest/
+antlr https://github.com/antlr/grammars-v4/tree/master/vhdl
+codeMirror vhdl
+rosettaCode http://www.rosettacode.org/wiki/Category:VHDL
+centralPackageRepositoryCount 0
 country United States
+
+helloWorldCollection VHSIC Hardware Description Language
+ --Hello World in VHDL
+ 
+ ENTITY helloworld IS
+ END helloworld;
+ 
+ ARCHITECTURE hw OF helloworld IS
+ 
+ BEGIN
+ 
+ ASSERT FALSE
+ REPORT "HELLO, WORLD!"
+ SEVERITY NOTE;
+ 
+ END hw;
+ 
+pygmentsHighlighter vhdl
+ filename hdl.py
+ fileExtensions vhdl vhd
+subreddit https://reddit.com/r/VHDL
+ memberCount
+  2017 354
+  2022 2320
+leachim6 VHDL
+ filepath v/VHDL.vhdl
+ fileExtensions vhdl
+ example
+  use std.textio.all;
+  
+  entity hello_world is
+  end hello_world;
+  
+  architecture behaviour of hello_world is
+  begin
+  	process
+      begin
+         write (output, String'("Hello World"));
+         wait;
+      end process;
+  end behaviour;
+languageServerProtocolProject https://github.com/kraigher/rust_hdl
+ writtenIn rust
+
+keywords abs access after alias all and architecture array assert attribute begin block body buffer bus case component configuration constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in inertial inout is label library linkage literal loop map mod nand new next nor not null of on open or others out package port postponed procedure process pure range record register reject rem report return rol ror select severity signal shared sla sll sra srl subtype then to transport type unaffected units until use variable wait when while with xnor xor
+
+lineCommentToken --
+printToken write
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -33,11 +90,6 @@ hasIntegers true
  -- \d{1,2}#[0-9a-f_]+#?
 hasBinaryNumbers true
  -- B"[01_]+"
-
-lineCommentToken --
-printToken write
-stringToken "
-keywords abs access after alias all and architecture array assert attribute begin block body buffer bus case component configuration constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in inertial inout is label library linkage literal loop map mod nand new next nor not null of on open or others out package port postponed procedure process pure range record register reject rem report return rol ror select severity signal shared sla sll sra srl subtype then to transport type unaffected units until use variable wait when while with xnor xor
 
 wikipedia https://en.wikipedia.org/wiki/VHDL
  example
@@ -73,27 +125,14 @@ wikipedia https://en.wikipedia.org/wiki/VHDL
  revisionCount 893
  appeared 1980
 
-githubLanguage VHDL
- fileExtensions vhdl vhd vhf vhi vho vhs vht vhw
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  ghdl ghdl https://github.com/ghdl.png https://github.com/ghdl/ghdl VHDL #adb2cb 777 147 24 "VHDL 2008/93/87 simulator"
- trendingProjectsCount 2
- type programming
- aceMode vhdl
- codemirrorMode vhdl
- codemirrorMimeType text/x-vhdl
- tmScope source.vhdl
- repos 34211
+hopl https://hopl.info/showlanguage.prx?exp=1188
+tiobe VHDL
+ currentRank 44
+
 githubBigQuery VHDL
  repos 2099
  users 1748
 
-antlr https://github.com/antlr/grammars-v4/tree/master/vhdl
-codeMirror vhdl
-pygmentsHighlighter vhdl
- filename hdl.py
- fileExtensions vhdl vhd
 linguistGrammarRepo https://github.com/textmate/vhdl.tmbundle
  firstCommit 2008
  lastCommit 2017
@@ -116,61 +155,6 @@ linguistGrammarRepo https://github.com/textmate/vhdl.tmbundle
   	b <= not a;
   end architecture;
   
-languageServerProtocolProject https://github.com/kraigher/rust_hdl
- writtenIn rust
-
-helloWorldCollection VHSIC Hardware Description Language
- --Hello World in VHDL
- 
- ENTITY helloworld IS
- END helloworld;
- 
- ARCHITECTURE hw OF helloworld IS
- 
- BEGIN
- 
- ASSERT FALSE
- REPORT "HELLO, WORLD!"
- SEVERITY NOTE;
- 
- END hw;
- 
-leachim6 VHDL
- filepath v/VHDL.vhdl
- fileExtensions vhdl
- example
-  use std.textio.all;
-  
-  entity hello_world is
-  end hello_world;
-  
-  architecture behaviour of hello_world is
-  begin
-  	process
-      begin
-         write (output, String'("Hello World"));
-         wait;
-      end process;
-  end behaviour;
-rosettaCode http://www.rosettacode.org/wiki/Category:VHDL
-
-subreddit https://reddit.com/r/VHDL
- memberCount
-  2017 354
-  2022 2320
-
-tiobe VHDL
- currentRank 44
-hopl https://hopl.info/showlanguage.prx?exp=1188
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
- VHDL: Programming by Example [With CDROM]|1990|Douglas L. Perry|1640016|3.36|14|1
- VHDL for Engineers|2008|Kenneth L. Short|20450098|4.00|5|0
 
 isbndb 47
  year|publisher|title|authors|isbn13
@@ -222,6 +206,19 @@ isbndb 47
  1998|Not Avail|Contemporary Logic Design 32703 And Vhdl For Programming Logic Package|Katz|9780201308624
  2002||Design Automation. Behavioural Languages. Vhdl Multilogic System For Model Interoperability|British Standards Institute Staff|9780580392665
 
+githubLanguage VHDL
+ fileExtensions vhdl vhd vhf vhi vho vhs vht vhw
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  ghdl ghdl https://github.com/ghdl.png https://github.com/ghdl/ghdl VHDL #adb2cb 777 147 24 "VHDL 2008/93/87 simulator"
+ trendingProjectsCount 2
+ type programming
+ aceMode vhdl
+ codemirrorMode vhdl
+ codemirrorMimeType text/x-vhdl
+ tmScope source.vhdl
+ repos 34211
+
 semanticScholar 39
  year|title|doi|citations|influentialCitations|authors|paperId
  2000|HML, a novel hardware description language and its translation to VHDL|10.1109/92.820756|53|5|Yanbing Li and M. Leeser|d171064b70be10228ba7e60166178338eca52e33
@@ -264,4 +261,8 @@ semanticScholar 39
  2016|FBDtoVHDL: An Automatic Translation from FBD into VHDL for FPGA Development|10.5626/JOK.2016.43.5.569|1|0|Jaeyeob Kim and Eui-Sub Kim and Junbeom Yoo and Young Jun Lee and J. Choi|b0e3a7ef375095f962ecfcf7f1c604e7a1e042c4
  2018|Electronic Circuit and System Design using Python and VHDL|10.1109/ECTICON.2018.8620048|1|0|I. Grout|f502562d4a5352a7ca67872a30fb187587da7712
 
-clocExtensions VHD vhd VHDL vhdl vhf vhi vho vhs vht vhw
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
+ VHDL: Programming by Example [With CDROM]|1990|Douglas L. Perry|1640016|3.36|14|1
+ VHDL for Engineers|2008|Kenneth L. Short|20450098|4.00|5|0

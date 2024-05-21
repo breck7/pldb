@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id links-programming-language
 name Links
 appeared 2006
 tags pl
 website http://www.links-lang.org
+
+isOpenSource true
+writtenIn ocaml sql restructuredtext javascript css bash json bourne-shell markdown python make tex html julia yaml lisp perl
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2006
+ commits 4639
+ committers 50
+ files 994
+ newestCommit 2024
 country United Kingdom and France
 originCommunity https://github.com/links-lang
-domainName links-lang.org
 
 githubRepo https://github.com/links-lang/links
  firstCommit 2006
@@ -18,18 +28,10 @@ githubRepo https://github.com/links-lang/links
  description Links: Linking Theory to Practice for the Web
  issues 158
 
-repoStats
- firstCommit 2006
- commits 4639
- committers 50
- files 994
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Links_(programming_language)
  dailyPageViews -1
 
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName links-lang.org
 
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -38,5 +40,3 @@ semanticScholar 5
  2005|The Query Language to XML Documents Connected by XLink Links|10.1007/s11086-005-0026-4|5|0|D. Lizorkin|7b857d2e8b597d4bd4724e092c32313b976792e3
  2016|Managing Traceability Links with MaTraca|10.1109/SANER.2016.16|2|0|A. Lozano and Carlos Noguera and V. Jonckers|cf8de0ee67a0900a85c2011b58f4a0c8e6ac5071
  2013|Application Camera Links on Xilinx FPGA|10.1109/FSKD.2013.6816365|1|0|Hua Cai and Huadong Yu and Jinkai Xu and G. Wang|98271340804fb7e790a2b5f6580125b39ad5d7a5
-
-writtenIn ocaml sql restructuredtext javascript css bash json bourne-shell markdown python make tex html julia yaml lisp perl

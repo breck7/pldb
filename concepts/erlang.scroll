@@ -1,21 +1,87 @@
 import ../code/conceptPage.scroll
+
 id erlang
 name Erlang
 appeared 1986
-tags pl
 creators Joe Armstrong and Robert Virding and Mike Williams
+tags pl
 website https://www.erlang.org
-documentation https://www.erlang.org/docs
+
+isOpenSource true
+officialBlogUrl https://www.erlang.org/blog
 fileExtensions erl hrl
+releaseNotesUrl https://www.erlang.org/news
+visualParadigm false
+clocExtensions app.src emakefile erl hrl rebar.config rebar.config.lock rebar.lock xrl yrl
+fileType text
+documentation https://www.erlang.org/docs
+faqPageUrl https://www.erlang.org/faq/introduction.html
+downloadPageUrl https://www.erlang.org/downloads
+antlr https://github.com/antlr/grammars-v4/tree/master/erlang
+codeMirror erlang
+rosettaCode http://www.rosettacode.org/wiki/Category:Erlang
+quineRelay Erlang
+packageRepository https://hex.pm/
+ubuntuPackage erlang
 country Sweden
 originCommunity Ericsson
-domainName erlang.org
- registered 1998
- awisRank
-  2022 123213
-releaseNotesUrl https://www.erlang.org/news
+projectEuler Erlang
+ memberCount
+  2019 614
+  2022 618
 
-visualParadigm false
+helloWorldCollection Erlang
+ %% Hello World in Erlang
+ 
+ -module(hello).
+ 
+ -export([hello/0]).
+ 
+ hello() ->
+    io:format("Hello World!~n", []).
+ 
+pygmentsHighlighter Erlang
+ filename erlang.py
+ fileExtensions erl hrl es escript
+rijuRepl https://riju.codes/erlang
+ example
+  -module(main).
+  -export([main/0]).
+  
+  main() ->
+      io:fwrite("Hello, world!\n").
+  
+subreddit https://reddit.com/r/erlang
+ memberCount
+  2017 6019
+  2022 9057
+twitter https://twitter.com/erlang_org
+leachim6 Erlang
+ filepath e/Erlang.erl
+ fileExtensions erl
+ example
+  -module(erlang_hw).
+  -export([start/0]).
+  
+  start() ->
+    io:format("Hello World~n").
+languageServerProtocolProject https://github.com/erlang/sourcer
+ writtenIn erlang
+compilerExplorer Erlang
+ example
+  -module(square).
+  -export([square/1]).
+  
+  square(A) -> A*A.
+  
+
+meetup https://www.meetup.com/topics/erlang-programming
+ memberCount 104319
+ groupCount 306
+keywords after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
+
+lineCommentToken %
+printToken io:format
 
 hasStrings true
  "hello world"
@@ -54,10 +120,8 @@ hasFloats true
 hasIntegers true
  % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
 
-lineCommentToken %
-printToken io:format
-keywords after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
-
+jupyterKernel https://github.com/robbielynch/ierlang
+jupyterKernel https://github.com/filmor/ierl
 wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  example
   %% Second version
@@ -90,30 +154,19 @@ wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  appeared 1986
  fileExtensions erl hrl
 
-githubLanguage Erlang
- fileExtensions erl appsrc es escript hrl xrl yrl
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  emqx emqx https://github.com/emqx.png https://github.com/emqx/emqx Erlang #B83998 4937 943 140 "EMQ X Broker - Scalable Distributed MQTT Message Broker for IoT in 5G Era"
-  rabbitmq rabbitmq-server https://github.com/rabbitmq.png https://github.com/rabbitmq/rabbitmq-server Erlang #B83998 6212 1921 158 "Open source multi-protocol messaging broker"
- trendingProjectsCount 3
- type programming
- filenames Emakefile rebar.config rebar.config.lock rebar.lock
- interpreters escript
- aceMode erlang
- codemirrorMode erlang
- codemirrorMimeType text/x-erlang
- tmScope source.erlang
- repos 28645
+hopl https://hopl.info/showlanguage.prx?exp=1728
+tiobe Erlang
+ currentRank 49
+
+domainName erlang.org
+ registered 1998
+ awisRank
+  2022 123213
+
 githubBigQuery Erlang
  repos 14920
  users 9214
 
-antlr https://github.com/antlr/grammars-v4/tree/master/erlang
-codeMirror erlang
-pygmentsHighlighter Erlang
- filename erlang.py
- fileExtensions erl hrl es escript
 linguistGrammarRepo https://github.com/textmate/erlang.tmbundle
  firstCommit 2006
  lastCommit 2018
@@ -126,94 +179,6 @@ linguistGrammarRepo https://github.com/textmate/erlang.tmbundle
   
   main([]) -> io:format("Hello, World!~n").
   
-languageServerProtocolProject https://github.com/erlang/sourcer
- writtenIn erlang
-
-projectEuler Erlang
- memberCount
-  2019 614
-  2022 618
-helloWorldCollection Erlang
- %% Hello World in Erlang
- 
- -module(hello).
- 
- -export([hello/0]).
- 
- hello() ->
-    io:format("Hello World!~n", []).
- 
-leachim6 Erlang
- filepath e/Erlang.erl
- fileExtensions erl
- example
-  -module(erlang_hw).
-  -export([start/0]).
-  
-  start() ->
-    io:format("Hello World~n").
-rosettaCode http://www.rosettacode.org/wiki/Category:Erlang
-quineRelay Erlang
-
-compilerExplorer Erlang
- example
-  -module(square).
-  -export([square/1]).
-  
-  square(A) -> A*A.
-  
-rijuRepl https://riju.codes/erlang
- example
-  -module(main).
-  -export([main/0]).
-  
-  main() ->
-      io:fwrite("Hello, world!\n").
-  
-
-indeedJobs erlang engineer
- 2017 183
-linkedInSkill erlang
- 2018 12535
-stackOverflowSurvey
- 2021
-  users 651
-  medianSalary 80077
-  fans 1379
-  percentageUsing 0.01
-officialBlogUrl https://www.erlang.org/blog
-faqPageUrl https://www.erlang.org/faq/introduction.html
-downloadPageUrl https://www.erlang.org/downloads
-
-subreddit https://reddit.com/r/erlang
- memberCount
-  2017 6019
-  2022 9057
-meetup https://www.meetup.com/topics/erlang-programming
- memberCount 104319
- groupCount 306
-
-tiobe Erlang
- currentRank 49
-hopl https://hopl.info/showlanguage.prx?exp=1728
-
-packageRepository https://hex.pm/
-
-twitter https://twitter.com/erlang_org
-ubuntuPackage erlang
-jupyterKernel https://github.com/robbielynch/ierlang
-jupyterKernel https://github.com/filmor/ierl
-fileType text
-isOpenSource true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Erlang|2007|Joe Armstrong|794755|3.97|643|34
- ERLANG Programming|2009|Francesco Cesarini|4891279|4.06|190|10
- Concurrent Programming ERLANG|1995|Joe Armstrong|794756|4.00|15|2
- Introducing Erlang: Getting Started in Functional Programming|2012|Simon St. Laurent|21537283|3.95|41|4
- ERLANG and Elixir for Imperative Programmers||Wolfgang Loder|52899452|3.00|1|0
- Concurrent Programming in ERLANG|1993|Joe Armstrong|2594672|4.50|2|1
 
 isbndb 23
  year|publisher|title|authors|isbn13
@@ -240,6 +205,33 @@ isbndb 23
  2019|Addison-wesley Professional|Building Scalable Applications With Erlang (developer's Library)|Jerry Jackson|9780321636461
  20130113|Random House Publishing Services|Learn You Some Erlang for Great Good!|Fred Hebert|9781593275044
  2011-09-22|LAP LAMBERT Academic Publishing|Research and implementation of Lobby System in Erlang|Wilson Tuladhar and Yury Dorofeev and Yeli Zhu|9783846503676
+
+githubLanguage Erlang
+ fileExtensions erl appsrc es escript hrl xrl yrl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  emqx emqx https://github.com/emqx.png https://github.com/emqx/emqx Erlang #B83998 4937 943 140 "EMQ X Broker - Scalable Distributed MQTT Message Broker for IoT in 5G Era"
+  rabbitmq rabbitmq-server https://github.com/rabbitmq.png https://github.com/rabbitmq/rabbitmq-server Erlang #B83998 6212 1921 158 "Open source multi-protocol messaging broker"
+ trendingProjectsCount 3
+ type programming
+ filenames Emakefile rebar.config rebar.config.lock rebar.lock
+ interpreters escript
+ aceMode erlang
+ codemirrorMode erlang
+ codemirrorMimeType text/x-erlang
+ tmScope source.erlang
+ repos 28645
+
+indeedJobs erlang engineer
+ 2017 183
+linkedInSkill erlang
+ 2018 12535
+stackOverflowSurvey
+ 2021
+  users 651
+  medianSalary 80077
+  fans 1379
+  percentageUsing 0.01
 
 semanticScholar 37
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -281,4 +273,11 @@ semanticScholar 37
  2021|Bidirectional typing for Erlang|10.1145/3471871.3472966|1|0|Nithin Vadukkumchery Rajendrakumar and Annette Bieniusa|2dae5bb95f2ba11afa4ffc598c1ce663a7a29331
  2012|Supporting cloud computing using Erlang Programming Language|10.1109/TELFOR.2012.6419488|1|1|Abd El-Fattah Hussein and O. Ibrahim|7d8e01ca6dda72b0d179099826a30a65effc5953
 
-clocExtensions app.src emakefile erl hrl rebar.config rebar.config.lock rebar.lock xrl yrl
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Erlang|2007|Joe Armstrong|794755|3.97|643|34
+ ERLANG Programming|2009|Francesco Cesarini|4891279|4.06|190|10
+ Concurrent Programming ERLANG|1995|Joe Armstrong|794756|4.00|15|2
+ Introducing Erlang: Getting Started in Functional Programming|2012|Simon St. Laurent|21537283|3.95|41|4
+ ERLANG and Elixir for Imperative Programmers||Wolfgang Loder|52899452|3.00|1|0
+ Concurrent Programming in ERLANG|1993|Joe Armstrong|2594672|4.50|2|1

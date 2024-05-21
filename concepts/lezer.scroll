@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id lezer
 name lezer
 appeared 2019
-tags grammarLanguage
 creators Marijn Haverbeke
+tags grammarLanguage
 website https://lezer.codemirror.net/
+
+writtenIn javascript markdown json
+repoStats
+ firstCommit 2020
+ commits 19
+ committers 2
+ files 4
+ newestCommit 2023
 country Germany
 originCommunity https://github.com/lezer-parser
-domainName lezer.codemirror.net
 
 githubRepo https://github.com/lezer-parser/lezer
  firstCommit 2019
@@ -19,13 +27,6 @@ githubRepo https://github.com/lezer-parser/lezer
  issues 9
  forks 0
 
-repoStats
- firstCommit 2020
- commits 19
- committers 2
- files 4
- newestCommit 2023
+domainName lezer.codemirror.net
 
 isbndb 0
-
-writtenIn javascript markdown json

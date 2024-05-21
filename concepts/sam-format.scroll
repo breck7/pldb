@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id sam-format
 name SAM file format
 appeared 2009
 tags textDataFormat
-reference https://dash.harvard.edu/bitstream/handle/1/10246875/2723002.pdf?sequence=1
+
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom and United States and China
 originCommunity Wellcome Trust Sanger Institute and Broad Institute of MIT and Harvard and University of California Los Angeles and Boston College and University of Michigan and Chinese Academy of Science
+reference https://dash.harvard.edu/bitstream/handle/1/10246875/2723002.pdf?sequence=1
 
 wikipedia https://en.wikipedia.org/wiki/SAM_(file_format)
  related tsv bam-format fastq-format
@@ -16,8 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/SAM_(file_format)
  revisionCount 31
  dailyPageViews 167
  appeared 2009
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

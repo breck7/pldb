@@ -1,18 +1,13 @@
 import ../code/conceptPage.scroll
+
 id windows-registry-entries
 name Windows Registry Entries
 appeared 1992
 tags application
-reference https://en.wikipedia.org/wiki/Windows_Registry
 
-githubLanguage Windows Registry Entries
- fileExtensions reg
- type data
- aceMode ini
- codemirrorMode properties
- codemirrorMimeType text/x-properties
- tmScope source.reg
- repos 139
+fileType text
+centralPackageRepositoryCount 0
+reference https://en.wikipedia.org/wiki/Windows_Registry
 
 linguistGrammarRepo https://github.com/bsara/language-reg
  firstCommit 2015
@@ -73,5 +68,11 @@ linguistGrammarRepo https://github.com/bsara/language-reg
   
   [HKEY_DYN_DATA]
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Windows Registry Entries
+ fileExtensions reg
+ type data
+ aceMode ini
+ codemirrorMode properties
+ codemirrorMimeType text/x-properties
+ tmScope source.reg
+ repos 139

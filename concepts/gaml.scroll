@@ -1,28 +1,14 @@
 import ../code/conceptPage.scroll
+
 id gaml
 name GAML
 appeared 1991
 tags pl
-reference https://semanticscholar.org/paper/b422464b08a7878c2127165c780df52dc052b2b2
+
+centralPackageRepositoryCount 0
 country France
 originCommunity INRIA
-
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-
-printToken write
-stringToken "
-
-githubLanguage GAML
- type programming
- fileExtensions gaml
- aceMode text
- tmScope none
- repos 331
-githubBigQuery GAML
- repos 3
- users 2
+reference https://semanticscholar.org/paper/b422464b08a7878c2127165c780df52dc052b2b2
 
 leachim6 GAML
  filepath g/GAML.gaml
@@ -38,6 +24,22 @@ leachim6 GAML
   
   experiment GAML {}
 
+printToken write
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
 hopl https://hopl.info/showlanguage.prx?exp=3529
 
-centralPackageRepositoryCount 0
+githubBigQuery GAML
+ repos 3
+ users 2
+
+githubLanguage GAML
+ type programming
+ fileExtensions gaml
+ aceMode text
+ tmScope none
+ repos 331

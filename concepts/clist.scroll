@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id clist
 name CLIST
 appeared 1990
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+
+multiLineCommentTokens /* */
+stringToken "
 
 hasMultiLineComments true
  /* A comment
@@ -15,9 +22,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-multiLineCommentTokens /* */
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/CLIST
  example
@@ -49,14 +53,11 @@ wikipedia https://en.wikipedia.org/wiki/CLIST
 
 hopl https://hopl.info/showlanguage.prx?exp=3423
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 1990|Mcgraw-hill|Clist Programming (j Ranade Ibm Series)|Kurt Bosler|9780070065512
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Clist Programming|1990|Kurt Bosler|4579164|2.00|1|0
  Command Language Cookbook For Mainframes, Minicomputers, And Pc's: Dos/Os/2 Batch Language, Clist, Dcl, Perl, And Rexx|1992|Hallett German|1795689|5.00|1|0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 1990|Mcgraw-hill|Clist Programming (j Ranade Ibm Series)|Kurt Bosler|9780070065512

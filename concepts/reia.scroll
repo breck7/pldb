@@ -1,24 +1,21 @@
 import ../code/conceptPage.scroll
+
 id reia
 name Reia
 appeared 2008
 tags pl
 website http://reia-lang.org
-reference http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html
+
+writtenIn reason erlang bourne-shell ruby markdown
+repoStats
+ firstCommit 2008
+ commits 1465
+ committers 14
+ files 110
+ newestCommit 2012
 country United States
 originCommunity https://github.com/tarcieri/reia/issues
-domainName reia-lang.org
- registered 2008
-
-hasAssignment true
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-
-lineCommentToken #
-printToken puts
-assignmentToken =
+reference http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html
 
 example
  # Hello, world!
@@ -102,15 +99,19 @@ githubRepo https://github.com/tarcieri/reia
  description Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM
  issues 7
 
-repoStats
- firstCommit 2008
- commits 1465
- committers 14
- files 110
- newestCommit 2012
+lineCommentToken #
+printToken puts
+assignmentToken =
+
+hasAssignment true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+
+domainName reia-lang.org
+ registered 2008
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  1889905|Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|http://reia-lang.org/|2010-11-10 11:10:55 UTC|1289387455|rubyrescue|1|2
-
-writtenIn reason erlang bourne-shell ruby markdown

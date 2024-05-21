@@ -1,11 +1,25 @@
 import ../code/conceptPage.scroll
+
 id slick
 name Slick
 appeared 2020
-tags pl
 creators Kye W. Shi
+tags pl
+
+writtenIn ocaml markdown tex nix
+repoStats
+ firstCommit 2020
+ commits 231
+ committers 5
+ files 47
+ newestCommit 2021
 country United States
 originCommunity https://github.com/kwshi/slick/issues
+
+rijuRepl https://riju.codes/slick
+ example
+  def main:
+    print "Hello, world!"
 
 githubRepo https://github.com/kwshi/slick
  firstCommit 2020
@@ -16,17 +30,3 @@ githubRepo https://github.com/kwshi/slick
  updated 2024
  description (toy) typed functional programming language
  issues 0
-
-repoStats
- firstCommit 2020
- commits 231
- committers 5
- files 47
- newestCommit 2021
-
-rijuRepl https://riju.codes/slick
- example
-  def main:
-    print "Hello, world!"
-
-writtenIn ocaml markdown tex nix

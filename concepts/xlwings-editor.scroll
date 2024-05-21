@@ -1,14 +1,19 @@
 import ../code/conceptPage.scroll
+
 id xlwings-editor
 name xlwings-editor
 appeared 2013
-tags library
 creators Felix Zumstein
+tags library
 website https://www.xlwings.org/
-domainName xlwings.org
- registered 2013
- awisRank
-  2022 262389
+
+writtenIn python restructuredtext yaml visual-basic typescript html json javascript markdown cpp xml toml svg rust make handlebars ini
+repoStats
+ firstCommit 2013
+ commits 2721
+ committers 70
+ files 439
+ newestCommit 2024
 
 githubRepo https://github.com/xlwings/xlwings
  firstCommit 2013
@@ -20,10 +25,7 @@ githubRepo https://github.com/xlwings/xlwings
  description xlwings is a Python library that makes it easy to call Python from Excel and vice versa. It works with Excel on Windows and macOS as well as with Google Sheets and Excel on the web.
  issues 232
 
-repoStats
- firstCommit 2013
- commits 2721
- committers 70
- files 439
- newestCommit 2024
-writtenIn python restructuredtext yaml visual-basic typescript html json javascript markdown cpp xml toml svg rust make handlebars ini
+domainName xlwings.org
+ registered 2013
+ awisRank
+  2022 262389

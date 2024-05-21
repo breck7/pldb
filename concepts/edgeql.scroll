@@ -1,14 +1,17 @@
 import ../code/conceptPage.scroll
+
 id edgeql
 name edgeql
 appeared 2017
 tags queryLanguage
-conceptDescription EdgeQL is the primary language of EdgeDB. It is used to define, mutate, and query data.
 website https://www.edgedb.com
-reference https://www.edgedb.com/showcase/edgeql
+conceptDescription EdgeQL is the primary language of EdgeDB. It is used to define, mutate, and query data.
+
 country United States
 originCommunity EdgeDB Inc
-domainName edgedb.com
+reference https://www.edgedb.com/showcase/edgeql
 
 example
  SELECT User FILTER User.name = 'John';
+
+domainName edgedb.com

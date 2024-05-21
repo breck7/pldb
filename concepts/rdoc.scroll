@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id rdoc
 name RDoc
 appeared 2004
 tags textMarkup
 website https://ruby.github.io/rdoc/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Japan
 originCommunity https://github.com/ruby
 
@@ -16,15 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/RDoc
  revisionCount 40
  dailyPageViews 10
  appeared 2017
-
-githubLanguage RDoc
- fileExtensions rdoc
- trendingProjectsCount 0
- type prose
- aceMode rdoc
- tmScope text.rdoc
- wrap true
- repos 0
 
 linguistGrammarRepo https://github.com/joshaven/RDoc.tmbundle
  firstCommit 2009
@@ -164,6 +160,11 @@ linguistGrammarRepo https://github.com/joshaven/RDoc.tmbundle
   merchantability and fitness for a particular purpose.
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage RDoc
+ fileExtensions rdoc
+ trendingProjectsCount 0
+ type prose
+ aceMode rdoc
+ tmScope text.rdoc
+ wrap true
+ repos 0

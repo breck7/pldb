@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id encore
 name Encore
 appeared 2014
-tags pl
 creators Stephan Brandauer and Elias Castegren and Dave Clarke
+tags pl
 website https://stw.gitbooks.io/the-encore-programming-language/content/
+
+writtenIn c haskell markdown cpp lua make bourne-shell xml lisp bash d yaml
+repoStats
+ firstCommit 2014
+ commits 2068
+ committers 45
+ files 1377
+ newestCommit 2018
 country Sweden
 originCommunity Uppsala universitet
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/parapluu/encore
  updated 2022
  description The Encore compiler.
  issues 68
-
-repoStats
- firstCommit 2014
- commits 2068
- committers 45
- files 1377
- newestCommit 2018
-
-writtenIn c haskell markdown cpp lua make bourne-shell xml lisp bash d yaml

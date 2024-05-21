@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id vcf-format
 name VCF
 appeared 2011
 tags textDataFormat
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://academic.oup.com/bioinformatics/article/27/15/2156/402296
 
 wikipedia https://en.wikipedia.org/wiki/Variant_Call_Format
@@ -39,6 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/Variant_Call_Format
  revisionCount 68
  dailyPageViews 127
  appeared 2015
-
-fileType text
-centralPackageRepositoryCount 0

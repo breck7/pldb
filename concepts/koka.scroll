@@ -1,18 +1,53 @@
 import ../code/conceptPage.scroll
+
 id koka
 name Koka
 appeared 2012
-tags pl
 creators Daan Leijen
-conceptDescription A strongly typed functional-style language with effect types and handlers.
+tags pl
 website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fkoka
 webRepl https://rise4fun.com/koka/
-reference https://koka-lang.github.io/koka/doc/book.html
+conceptDescription A strongly typed functional-style language with effect types and handlers.
+
+isOpenSource true
+writtenIn haskell c xml javascript markdown json bourne-shell cpp csharp ocaml cmake dockerfile swift svg java typescript lean vim-script css yaml lex yacc logos tex python lisp html sed less cson
+compilesTo c
+tryItOnline koka
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 5450
+ committers 54
+ files 1856
+ newestCommit 2024
 country United States
 originCommunity Microsoft Research
+reference https://koka-lang.github.io/koka/doc/book.html
 
-compilesTo c
-writtenIn haskell c xml javascript markdown json bourne-shell cpp csharp ocaml cmake dockerfile swift svg java typescript lean vim-script css yaml lex yacc logos tex python lisp html sed less cson
+pygmentsHighlighter Koka
+ filename haskell.py
+ fileExtensions kk kki
+example
+ fun hello-ten()
+   var i := 0
+   while { i < 10 }
+     println("hello")
+     i := i + 1
+
+keywords infix infixr infixl type cotype rectype alias struct con fun function val var external if then else elif return match private public private module import as include inline rec try yield enum interface instance
+githubRepo https://github.com/koka-lang/koka
+ stars 2190
+ forks 111
+ subscribers 56
+ created 2016
+ updated 2022
+ firstCommit 2012
+ description Koka language compiler and interpreter
+ issues 123
+
+lineCommentToken //
+printToken println
 
 hasPrintDebugging true
 hasLineComments true
@@ -29,44 +64,6 @@ hasFloats true
  // [0-9]+\.[0-9]+([eE][\-+]?[0-9]+)?
 hasIntegers true
  // [0-9]+
-
-lineCommentToken //
-printToken println
-keywords infix infixr infixl type cotype rectype alias struct con fun function val var external if then else elif return match private public private module import as include inline rec try yield enum interface instance
-
-example
- fun hello-ten()
-   var i := 0
-   while { i < 10 }
-     println("hello")
-     i := i + 1
-
-githubRepo https://github.com/koka-lang/koka
- stars 2190
- forks 111
- subscribers 56
- created 2016
- updated 2022
- firstCommit 2012
- description Koka language compiler and interpreter
- issues 123
-
-repoStats
- firstCommit 2012
- commits 5450
- committers 54
- files 1856
- newestCommit 2024
-
-pygmentsHighlighter Koka
- filename haskell.py
- fileExtensions kk kki
-
-tryItOnline koka
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
 

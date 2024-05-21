@@ -1,11 +1,23 @@
 import ../code/conceptPage.scroll
+
 id easybuild
 name Easybuild
 appeared 2014
-tags application
 creators Kenneth Hoste
-conceptDescription EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
+tags application
 website http://easybuilders.github.io/easybuild/
+conceptDescription EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
+
+isOpenSource true
+writtenIn yaml bourne-shell python restructuredtext markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ newestCommit 2024
+ commits 2763
+ committers 77
+ files 47
 country Various
 originCommunity https://github.com/easybuilders/
 
@@ -18,16 +30,6 @@ githubRepo https://github.com/easybuilders/easybuild
  description EasyBuild - building software with ease
  issues 93
  firstCommit 2012
-
-githubLanguage Easybuild
- fileExtensions eb
- trendingProjectsCount 0
- type data
- group Python
- aceMode python
- codemirrorMode python
- codemirrorMimeType text/x-python
- tmScope source.python
 
 linguistGrammarRepo https://github.com/MagicStack/MagicPython
  firstCommit 2015
@@ -58,14 +60,12 @@ linguistGrammarRepo https://github.com/MagicStack/MagicPython
   moduleclass = 'tools'
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2012
- newestCommit 2024
- commits 2763
- committers 77
- files 47
-writtenIn yaml bourne-shell python restructuredtext markdown
+githubLanguage Easybuild
+ fileExtensions eb
+ trendingProjectsCount 0
+ type data
+ group Python
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python

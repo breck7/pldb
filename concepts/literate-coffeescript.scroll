@@ -1,20 +1,25 @@
 import ../code/conceptPage.scroll
+
 id literate-coffeescript
 name Literate CoffeeScript
 appeared 2013
-tags pl
 creators Jeremy Ashkenas
-conceptDescription Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
+tags pl
 website https://coffeescript.org/#literate
-reference https://news.ycombinator.com/item?id=5277916
+conceptDescription Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
+
+writtenIn markdown coffeescript html javascript css json svg yaml xml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 5205
+ committers 279
+ files 458
+ newestCommit 2023
 country United States
 originCommunity https://github.com/jashkenas/coffeescript/issues
-domainName coffeescript.org
- registered 2009
- awisRank
-  2022 383033
-
-hasSemanticIndentation true
+reference https://news.ycombinator.com/item?id=5277916
 
 githubRepo https://github.com/jashkenas/coffeescript
  firstCommit 2009
@@ -26,23 +31,12 @@ githubRepo https://github.com/jashkenas/coffeescript
  description Unfancy JavaScript
  issues 75
 
-repoStats
- firstCommit 2009
- commits 5205
- committers 279
- files 458
- newestCommit 2023
+hasSemanticIndentation true
 
-githubLanguage Literate CoffeeScript
- fileExtensions litcoffee coffeemd
- trendingProjectsCount 0
- type programming
- group CoffeeScript
- aceMode text
- tmScope source.litcoffee
- wrap true
- aliases litcoffee
- repos 7938
+domainName coffeescript.org
+ registered 2009
+ awisRank
+  2022 383033
 
 linguistGrammarRepo https://github.com/atom/language-coffee-script
  firstCommit 2013
@@ -168,7 +162,13 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
         assignedVariables: ->
           "#{v.name} = #{v.type.value}" for v in @variables when v.type.assigned
 
-fileType text
-centralPackageRepositoryCount 0
-
-writtenIn markdown coffeescript html javascript css json svg yaml xml
+githubLanguage Literate CoffeeScript
+ fileExtensions litcoffee coffeemd
+ trendingProjectsCount 0
+ type programming
+ group CoffeeScript
+ aceMode text
+ tmScope source.litcoffee
+ wrap true
+ aliases litcoffee
+ repos 7938

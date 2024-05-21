@@ -1,21 +1,23 @@
 import ../code/conceptPage.scroll
+
 id zuo
 name Zuo
 appeared 2022
-tags pl
 creators Matthew Flatt
-conceptDescription A Tiny Racket for Scripting
+tags pl
 website https://racket-lang.org/
-documentation https://docs.racket-lang.org/zuo/index.html
-spec https://docs.racket-lang.org/zuo/zuo-base.html
 standsFor derived from the Chinese word for “make.”
-country Various
-originCommunity https://github.com/racket
-domainName racket-lang.org
+conceptDescription A Tiny Racket for Scripting
 
+isOpenSource true
 writtenIn c
+spec https://docs.racket-lang.org/zuo/zuo-base.html
 relatedConcepts racket
 influencedBy racket
+documentation https://docs.racket-lang.org/zuo/index.html
+eventsPageUrl https://github.com/racket/racket/wiki/Meetups
+country Various
+originCommunity https://github.com/racket
 
 githubRepo https://github.com/racket/racket/tree/master/racket/src/zuo
  stars 4391
@@ -26,6 +28,4 @@ githubRepo https://github.com/racket/racket/tree/master/racket/src/zuo
  description The Racket repository
  issues 511
 
-eventsPageUrl https://github.com/racket/racket/wiki/Meetups
-
-isOpenSource true
+domainName racket-lang.org

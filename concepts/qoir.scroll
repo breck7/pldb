@@ -1,19 +1,26 @@
 import ../code/conceptPage.scroll
+
 id qoir
 name QOIR
 appeared 2022
-tags binaryDataFormat
 creators Nigel Tao
-conceptDescription A Fast, Simple, Lossless Image File Format based on QOI ( http://qoiformat.org )
+tags binaryDataFormat
 website https://nigeltao.github.io
-documentation https://github.com/nigeltao/qoir#readme
-reference https://nigeltao.github.io/blog/2022/qoir.html
+conceptDescription A Fast, Simple, Lossless Image File Format based on QOI ( http://qoiformat.org )
+
+isOpenSource true
+writtenIn c cpp bourne-shell go markdown yaml
 fileExtensions qoir
+documentation https://github.com/nigeltao/qoir#readme
+repoStats
+ firstCommit 2022
+ commits 139
+ committers 1
+ files 97
+ newestCommit 2023
 country Australia
 originCommunity https://github.com/nigeltao/qoir/issues
-domainName nigeltao.github.io
-
-writtenIn c cpp bourne-shell go markdown yaml
+reference https://nigeltao.github.io/blog/2022/qoir.html
 
 githubRepo https://github.com/nigeltao/qoir
  firstCommit 2022
@@ -25,11 +32,4 @@ githubRepo https://github.com/nigeltao/qoir
  description A fast, simple, lossless image file format.
  issues 1
 
-isOpenSource true
-
-repoStats
- firstCommit 2022
- commits 139
- committers 1
- files 97
- newestCommit 2023
+domainName nigeltao.github.io

@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id edina
 name Edina
 appeared 2022
-tags pl
 creators Cerus
+tags pl
 conceptDescription First look at Edina, a simple Forth-like compiled language
-reference https://reddit.com/r/ProgrammingLanguages/comments/wl5snx/first_look_at_edina_a_simple_forthlike_compiled/
+
+writtenIn java markdown yaml bourne-shell
+repoStats
+ firstCommit 2022
+ commits 42
+ committers 2
+ files 124
+ newestCommit 2022
 country Germany
 originCommunity https://cerus.dev
+reference https://reddit.com/r/ProgrammingLanguages/comments/wl5snx/first_look_at_edina_a_simple_forthlike_compiled/
 
 githubRepo https://github.com/cerus/edina
  firstCommit 2022
@@ -18,12 +27,3 @@ githubRepo https://github.com/cerus/edina
  updated 2022
  description Edina - A simple stack-oriented compiled programming language.
  issues 0
-
-repoStats
- firstCommit 2022
- commits 42
- committers 2
- files 124
- newestCommit 2022
-
-writtenIn java markdown yaml bourne-shell

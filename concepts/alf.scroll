@@ -1,13 +1,16 @@
 import ../code/conceptPage.scroll
+
 id alf
 name Algebraic Logic Functional
 appeared 1990
 tags pl
 standsFor Algebraic Logic Functional
-country Germany
-originCommunity Carnegie Mellon University && University of Kiel
 
 visualParadigm false
+fileType text
+centralPackageRepositoryCount 0
+country Germany
+originCommunity Carnegie Mellon University && University of Kiel
 
 wikipedia https://en.wikipedia.org/wiki/Algebraic_Logic_Functional_programming_language
  related c unix
@@ -20,6 +23,3 @@ wikipedia https://en.wikipedia.org/wiki/Algebraic_Logic_Functional_programming_l
  appeared 1995
 
 hopl https://hopl.info/showlanguage.prx?exp=1804
-
-fileType text
-centralPackageRepositoryCount 0

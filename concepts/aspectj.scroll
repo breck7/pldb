@@ -1,12 +1,45 @@
 import ../code/conceptPage.scroll
+
 id aspectj
 name AspectJ
 appeared 2001
+creators Eric Bodden
 tags pl
 website http://www.eclipse.org/aspectj/
+
+isOpenSource true
 fileExtensions aj
+clocExtensions aj
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/aspectj
+rosettaCode http://www.rosettacode.org/wiki/Category:AspectJ
+quineRelay AspectJ
+centralPackageRepositoryCount 0
+ubuntuPackage aspectj
 country Canada
 originCommunity Eclipse Foundation
+
+pygmentsHighlighter AspectJ
+ filename jvm.py
+ fileExtensions aj
+rijuRepl https://riju.codes/aspectj
+ example
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, world!");
+      }
+  }
+  
+leachim6 Aspectj
+ filepath a/Aspectj.aj
+ fileExtensions aj
+ example
+  System.out.println("Hello World");
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken System.out.println
+stringToken "
 
 hasLineComments true
  // A comment
@@ -30,11 +63,6 @@ hasIntegers true
 hasBinaryNumbers true
  // 0[bB][01][01_]*[lL]?
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken System.out.println
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/AspectJ
  example
   pointcut set() : execution(* set*(..) ) && this(Point);
@@ -48,21 +76,13 @@ wikipedia https://en.wikipedia.org/wiki/AspectJ
  appeared 2001
  fileExtensions aj
 
-githubLanguage AspectJ
- fileExtensions aj
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.aspectj
- repos 671
+hopl https://hopl.info/showlanguage.prx?exp=7055
+tiobe AspectJ
+
 githubBigQuery AspectJ
  repos 793
  users 734
 
-antlr https://github.com/antlr/grammars-v4/tree/master/aspectj
-pygmentsHighlighter AspectJ
- filename jvm.py
- fileExtensions aj
 linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
  firstCommit 2015
  lastCommit 2017
@@ -113,41 +133,6 @@ linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
   }
   
 
-leachim6 Aspectj
- filepath a/Aspectj.aj
- fileExtensions aj
- example
-  System.out.println("Hello World");
-rosettaCode http://www.rosettacode.org/wiki/Category:AspectJ
-quineRelay AspectJ
-
-rijuRepl https://riju.codes/aspectj
- example
-  public class Main {
-      public static void main(String[] args) {
-          System.out.println("Hello, world!");
-      }
-  }
-  
-
-tiobe AspectJ
-hopl https://hopl.info/showlanguage.prx?exp=7055
-
-ubuntuPackage aspectj
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools|2004|Adrian Colyer|974936|3.25|8|0
- Aspectj in Action: Practical Aspect-Oriented Programming|2003|Ramnivas Laddad|2052653|3.76|34|2
- Aspect-Oriented Programming with Aspectj|2002|Ivan Kiselev|6484284|3.00|3|0
- Mastering Aspectj: Aspect-Oriented Programming in Java|2003|Joseph D. Gradecki|1944006|3.20|5|1
- Aspect-Oriented Programming with Aspectj|2002|Ivan Kiselev|41635597|0.0|0|0
- Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0
- Logging and Simulation using Aspect Oriented Software: AOP and AspectJ||Mutum Meetei|54120798|0.0|0|0
-
 isbndb 10
  year|publisher|title|authors|isbn13
  2005|O'Reilly Media|AspectJ Cookbook: Aspect Oriented Solutions to Real-World Problems|Miles, Russ|9780596006549
@@ -160,6 +145,14 @@ isbndb 10
  2003|Sams|Aspect-oriented Programming With Aspectj|Ivan Kiselev|9780672324109
  |Sams|Aspect-oriented programming using AspectJ|Ivan Kiselev|9780768662467
  2018-05-31|LAP LAMBERT Academic Publishing|Aspect-Oriented Programming with Eclipse AspectJ Development Tools|Pankaj Kumar|9786139848805
+
+githubLanguage AspectJ
+ fileExtensions aj
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.aspectj
+ repos 671
 
 semanticScholar 37
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -201,5 +194,12 @@ semanticScholar 37
  2008|New AspectJ Pointcuts for Integer Overflow and Underflow Detection|10.1080/19393550802492479|1|0|Dima Alhadidi and M. Debbabi and P. Bhattacharya|96be1a745232f172b0ce307e7f00ca4e7f3a50d5
  2011|Tackling the Challenges of Integrating 3rd Party Software Using AspectJ|10.1007/978-3-642-22031-9_4|1|0|U. Hohenstein and M. Jäger|c85660cb51317005395a8463e9c309919614b4df
 
-creators Eric Bodden
-clocExtensions aj
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools|2004|Adrian Colyer|974936|3.25|8|0
+ Aspectj in Action: Practical Aspect-Oriented Programming|2003|Ramnivas Laddad|2052653|3.76|34|2
+ Aspect-Oriented Programming with Aspectj|2002|Ivan Kiselev|6484284|3.00|3|0
+ Mastering Aspectj: Aspect-Oriented Programming in Java|2003|Joseph D. Gradecki|1944006|3.20|5|1
+ Aspect-Oriented Programming with Aspectj|2002|Ivan Kiselev|41635597|0.0|0|0
+ Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0
+ Logging and Simulation using Aspect Oriented Software: AOP and AspectJ||Mutum Meetei|54120798|0.0|0|0

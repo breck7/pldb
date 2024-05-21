@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id khepri
 name Khepri
 appeared 2012
-tags pl
 creators Matt Bierner
+tags pl
 website https://web.archive.org/web/20200122120931/http://khepri-lang.com/
+
+writtenIn javascript markdown json
+repoStats
+ firstCommit 2012
+ commits 643
+ committers 1
+ files 31
+ newestCommit 2015
 country United States
 originCommunity https://github.com/mattbierner/khepri/issues
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/mattbierner/khepri
  created 2012
  updated 2015
  description ECMAScript derived programming language
-
-repoStats
- firstCommit 2012
- commits 643
- committers 1
- files 31
- newestCommit 2015
-
-writtenIn javascript markdown json

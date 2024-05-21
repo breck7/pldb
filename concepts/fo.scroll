@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id fo
 name fo
 appeared 2018
-tags pl
 creators Alex Browne
+tags pl
+
+writtenIn go markdown logos
+repoStats
+ firstCommit 2018
+ commits 112
+ committers 4
+ files 237
+ newestCommit 2022
 country United States
 originCommunity https://github.com/albrow/fo/issues
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/albrow/fo
  description An experimental language which adds functional programming features to Go.
  issues 15
 
-repoStats
- firstCommit 2018
- commits 112
- committers 4
- files 237
- newestCommit 2022
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  17294548|Show HN: Fo: An experimental language which adds generics on top of Go|2018-06-12 15:58:46 UTC|1528819126|polymathist|124|165
-
-writtenIn go markdown logos

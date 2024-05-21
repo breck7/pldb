@@ -1,13 +1,29 @@
 import ../code/conceptPage.scroll
+
 id objective-j
 name Objective-J
 appeared 2008
 tags pl
 website http://www.cappuccino-project.org/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States and United Kingdom and Sweden
 originCommunity https://github.com/cappuccino
-domainName cappuccino-project.org
- registered 2011
+
+pygmentsHighlighter Objective-J
+ filename javascript.py
+ fileExtensions j
+leachim6 Objective J
+ filepath o/Objective J.j
+ example
+  document.write("Hello World");
+  
+
+lineCommentToken //
+printToken document.write
+stringToken "
 
 hasLineComments true
  // A comment
@@ -17,10 +33,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken document.write
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Objective-J
  example
@@ -65,21 +77,13 @@ wikipedia https://en.wikipedia.org/wiki/Objective-J
  dailyPageViews 31
  appeared 2008
 
-githubLanguage Objective-J
- fileExtensions j sj
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.js.objj
- aliases obj-j or objectivej or objj
- repos 1058
+domainName cappuccino-project.org
+ registered 2011
+
 githubBigQuery Objective-J
  repos 340
  users 298
 
-pygmentsHighlighter Objective-J
- filename javascript.py
- fileExtensions j
 linguistGrammarRepo https://github.com/textmate/javascript-objective-j.tmbundle
  firstCommit 2008
  lastCommit 2014
@@ -135,14 +139,13 @@ linguistGrammarRepo https://github.com/textmate/javascript-objective-j.tmbundle
   
   @end
 
-leachim6 Objective J
- filepath o/Objective J.j
- example
-  document.write("Hello World");
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Objective-J
+ fileExtensions j sj
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.js.objj
+ aliases obj-j or objectivej or objj
+ repos 1058

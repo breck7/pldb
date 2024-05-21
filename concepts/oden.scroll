@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id oden
 name oden
 appeared 2016
-tags pl
 creators Oskar Wickström
+tags pl
 website https://oden-lang.github.io
-reference https://web.archive.org/web/20160603002614/https://oden-lang.org
+
+writtenIn haskell html markdown css javascript bourne-shell yaml svg go tex make dockerfile
+repoStats
+ firstCommit 2015
+ commits 582
+ committers 6
+ files 507
+ newestCommit 2017
 country Sweden
 originCommunity https://github.com/oden-lang
+reference https://web.archive.org/web/20160603002614/https://oden-lang.org
 
 githubRepo https://github.com/oden-lang/oden
  firstCommit 2015
@@ -19,15 +28,6 @@ githubRepo https://github.com/oden-lang/oden
  description The Oden Programming Language (NO LONGER IN ACTIVE DEVELOPMENT)
  issues 15
 
-repoStats
- firstCommit 2015
- commits 582
- committers 6
- files 507
- newestCommit 2017
-
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  11183836|Oden: experimental, statically-typed functional language, built for Go ecosystem|http://oden-lang.org/|2016-02-26 20:06:41 UTC|1456517201|jaytaylor|80|127
-
-writtenIn haskell html markdown css javascript bourne-shell yaml svg go tex make dockerfile

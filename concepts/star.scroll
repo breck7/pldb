@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id star
 name Star
 appeared 2021
-tags pl
 creators ALANVF
+tags pl
+
+writtenIn haxe nim json markdown vim-script raku powershell
+repoStats
+ firstCommit 2021
+ commits 239
+ committers 3
+ files 679
+ newestCommit 2023
 country Unknown
 originCommunity https://github.com/ALANVF/star/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/ALANVF/star
  updated 2022
  description An experimental programming language that's made to be powerful, productive, and predictable
  issues 0
-
-repoStats
- firstCommit 2021
- commits 239
- committers 3
- files 679
- newestCommit 2023
-
-writtenIn haxe nim json markdown vim-script raku powershell

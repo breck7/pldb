@@ -1,12 +1,13 @@
 import ../code/conceptPage.scroll
+
 id qed-lang
 name qed-lang
 appeared 2015
 tags pl
 website https://qed-lang.org
+
 country United States
 originCommunity University of Washington
-domainName qed-lang.org
 
 example
  void Button(string text) {
@@ -18,5 +19,6 @@ example
  println("Form 2 clicked");
  Button("Quit");
  return(0);
-
 twitter https://twitter.com/qedlang
+
+domainName qed-lang.org

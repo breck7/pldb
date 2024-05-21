@@ -1,27 +1,24 @@
 import ../code/conceptPage.scroll
+
 id terra
 name Terra
 appeared 2012
 tags pl
-conceptDescription Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:
 website http://terralang.org/
+conceptDescription Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:
+
+isOpenSource true
+writtenIn cpp lua markdown c cmake bourne-shell yaml javascript html css dockerfile make nix diff
+fileType text
 documentation https://docs.terra.money/
-domainName terralang.org
- awisRank
-  2022 6480289
-
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken --
-printToken print
-stringToken "
+rosettaCode http://www.rosettacode.org/wiki/Category:Terra
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1603
+ committers 68
+ files 735
+ newestCommit 2023
 
 example
  -- This top-level code is plain Lua code.
@@ -62,6 +59,12 @@ example
  -- You can save Terra code as executables, object files, or shared libraries
  -- and link them into existing programs
  terralib.saveobj("helloterra",{ main = hello })
+leachim6 Terra
+ filepath t/Terra.t
+ fileExtensions t
+ example
+  print("Hello World")
+  
 
 githubRepo https://github.com/zdevito/terra
  firstCommit 2012
@@ -73,23 +76,23 @@ githubRepo https://github.com/zdevito/terra
  description Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
  issues 110
 
-repoStats
- firstCommit 2012
- commits 1603
- committers 68
- files 735
- newestCommit 2023
+lineCommentToken --
+printToken print
+stringToken "
 
-githubLanguage Terra
- fileExtensions t
- trendingProjectsCount 0
- type programming
- interpreters lua
- aceMode lua
- codemirrorMode lua
- codemirrorMimeType text/x-lua
- tmScope source.terra
- repos 410
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName terralang.org
+ awisRank
+  2022 6480289
+
 githubBigQuery Terra
  repos 206
  users 195
@@ -177,19 +180,18 @@ linguistGrammarRepo https://github.com/pyk/sublime-terra
   end
   assert(tostring(Array(int)) == "Array(int32)")
 
-leachim6 Terra
- filepath t/Terra.t
- fileExtensions t
- example
-  print("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Terra
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Terra
+ fileExtensions t
+ trendingProjectsCount 0
+ type programming
+ interpreters lua
+ aceMode lua
+ codemirrorMode lua
+ codemirrorMimeType text/x-lua
+ tmScope source.terra
+ repos 410
 
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -197,5 +199,3 @@ semanticScholar 4
  2016|Inversion of Land Surface Temperature (LST) Using Terra ASTER Data: A Comparison of Three Algorithms|10.3390/rs8120993|30|3|M. Ndossi and U. Avdan|be8ab3dc51a616ca6646f3f800239e33607e32b8
  2015|Terra|10.1145/2811267|24|0|Adriano Branco and Francisco Sant'anna and R. Ierusalimschy and Noemi Rodriguez and Silvana Rossetto|cb2405872210975b446017f54f115c45b5d4cda8
  2019|Delft Advanced Research Terra Simulator: General Purpose Reservoir Simulator with Operator-Based Linearization|10.4233/UUID:5F0F9B80-A7D6-488D-9BD2-D68B9D7B4B87|4|1|M. Khait|3986f7b8dd67a9c80b8b57c84accf6dcd94d2099
-
-writtenIn cpp lua markdown c cmake bourne-shell yaml javascript html css dockerfile make nix diff

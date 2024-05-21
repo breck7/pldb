@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id chrysalisp
 name chrysaLisp
 appeared 2015
-tags pl
 creators Chris Hinsley
+tags pl
+
+writtenIn markdown lisp pascal svg powershell bourne-shell cpp c php make
+repoStats
+ firstCommit 2015
+ commits 8955
+ committers 19
+ files 771
+ newestCommit 2024
 country United Kingdom
 originCommunity Tao Group
 
@@ -90,12 +99,3 @@ githubRepo https://github.com/vygr/ChrysaLisp
  updated 2022
  description Parallel OS, with GUI, Terminal, OO Assembler, Class libraries, C-Script compiler, Lisp interpreter and more...
  issues 31
-
-repoStats
- firstCommit 2015
- commits 8955
- committers 19
- files 771
- newestCommit 2024
-
-writtenIn markdown lisp pascal svg powershell bourne-shell cpp c php make

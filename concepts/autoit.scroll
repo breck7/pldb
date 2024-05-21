@@ -1,13 +1,39 @@
 import ../code/conceptPage.scroll
+
 id autoit
 name AutoIt
 appeared 1999
-tags pl
 creators Jonathan Bennett
+tags pl
 website http://www.autoitscript.com/autoit3/
+
+isOpenSource true
+fileType text
 documentation https://www.autoitscript.com/autoit3/docs/
+rosettaCode http://www.rosettacode.org/wiki/Category:AutoIt
+centralPackageRepositoryCount 0
 country Unknown
 originCommunity AutoIt Consulting Ltd
+projectEuler AutoIt
+ memberCount
+  2019 7
+  2022 12
+
+pygmentsHighlighter AutoIt
+ filename automation.py
+ fileExtensions au3
+twitter https://twitter.com/autoitconsult
+leachim6 AutoIt
+ filepath a/AutoIt.au3
+ fileExtensions au3
+ example
+  MsgBox(0, "Message Box", "Hello World")
+
+keywords #include-once #include #endregion #forcedef #forceref #region and byref case continueloop dim do else elseif endfunc endif endselect exit exitloop for func global if local next not or return select step then to until wend while exit
+
+lineCommentToken ;
+printToken MsgBox
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -27,11 +53,6 @@ hasFloats true
 hasIntegers true
  ; \d+
 hasMultiLineComments true
-
-lineCommentToken ;
-printToken MsgBox
-stringToken "
-keywords #include-once #include #endregion #forcedef #forceref #region and byref case continueloop dim do else elseif endfunc endif endselect exit exitloop for func global if local next not or return select step then to until wend while exit
 
 wikipedia https://en.wikipedia.org/wiki/AutoIt
  example
@@ -84,44 +105,17 @@ wikipedia https://en.wikipedia.org/wiki/AutoIt
  revisionCount 567
  appeared 2000
 
-githubLanguage AutoIt
- fileExtensions au3
- trendingProjectsCount 0
- type programming
- aceMode autohotkey
- tmScope source.autoit
- aliases au3 or AutoIt3 or AutoItScript
- repos 4732
+tiobe AutoIt
+
 githubBigQuery AutoIt
  repos 650
  users 561
 
-pygmentsHighlighter AutoIt
- filename automation.py
- fileExtensions au3
 linguistGrammarRepo https://github.com/AutoIt/SublimeAutoItScript
  firstCommit 2013
  lastCommit 2018
  committerCount 11
  commitCount 88
-
-projectEuler AutoIt
- memberCount
-  2019 7
-  2022 12
-leachim6 AutoIt
- filepath a/AutoIt.au3
- fileExtensions au3
- example
-  MsgBox(0, "Message Box", "Hello World")
-rosettaCode http://www.rosettacode.org/wiki/Category:AutoIt
-
-tiobe AutoIt
-
-twitter https://twitter.com/autoitconsult
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -130,5 +124,14 @@ isbndb 5
  2013-07-26|Packt Publishing|Instant AutoIt Scripting|Emilio Aristides de Fez Laso|9781782165781
  |Wiley-vch,|Practical Laboratory Automation: Made Easy With Autoit|Carvalho, Matheus C.|9783527341580
  2016-10-24|Wiley Global Research (STMS)|Practical Laboratory Automation: Made Easy with AutoIt|Matheus C. Carvalho|9783527801961
+
+githubLanguage AutoIt
+ fileExtensions au3
+ trendingProjectsCount 0
+ type programming
+ aceMode autohotkey
+ tmScope source.autoit
+ aliases au3 or AutoIt3 or AutoItScript
+ repos 4732
 
 semanticScholar 0

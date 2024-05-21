@@ -1,8 +1,11 @@
 import ../code/conceptPage.scroll
+
 id wgsl
 name WebGPU Shading Language
 appeared 2020
 tags pl
+
+clocExtensions wgsl
 reference https://gpuweb.github.io/gpuweb/wgsl.html
 
 example
@@ -14,5 +17,3 @@ example
  entry_point fragment = main;
 
 semanticScholar 0
-
-clocExtensions wgsl

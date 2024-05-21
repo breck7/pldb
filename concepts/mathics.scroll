@@ -1,14 +1,26 @@
 import ../code/conceptPage.scroll
+
 id mathics
 name mathics
 appeared 2012
 tags pl
-conceptDescription Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
 website https://mathics.github.io/
-reference https://news.ycombinator.com/item?id=11459186
+conceptDescription Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
+
+isOpenSource true
+writtenIn python mathematica yaml restructuredtext svg bourne-shell xml make tex markdown csv matlab html perl json ini
+tryItOnline mathics
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 5749
+ committers 59
+ files 299
+ newestCommit 2021
 country United States
 originCommunity https://github.com/Mathics3
-domainName mathics.github.io
+reference https://news.ycombinator.com/item?id=11459186
 
 example
  StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], ", "]] <> "..."
@@ -23,22 +35,10 @@ githubRepo https://github.com/mathics/Mathics
  description This repository is for archival. Please see https://github.com/Mathics3/mathics-core
  issues 170
 
-repoStats
- firstCommit 2011
- commits 5749
- committers 59
- files 299
- newestCommit 2021
-
-tryItOnline mathics
-
 jupyterKernel http://nbviewer.ipython.org/gist/sn6uv/8381447
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+
+domainName mathics.github.io
 
 isbndb 0
 
 semanticScholar 0
-
-writtenIn python mathematica yaml restructuredtext svg bourne-shell xml make tex markdown csv matlab html perl json ini

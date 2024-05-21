@@ -1,17 +1,68 @@
 import ../code/conceptPage.scroll
+
 id delphi
 name Delphi
 appeared 1995
+creators Anders Hejlsberg
 tags pl
 website https://www.embarcadero.com/products/delphi
-documentation https://ml4ai.github.io/delphi/
-reference http://delphi.wikia.com/wiki/Delphi_File_Extensions
 aka Embarcadero Delphi
+
+isOpenSource false
+officialBlogUrl https://blogs.embarcadero.com/
+releaseNotesUrl https://edn.embarcadero.com/article/40775
+visualParadigm false
+fileType text
+documentation https://ml4ai.github.io/delphi/
+eventsPageUrl https://www.embarcadero.com/events
+faqPageUrl https://www.embarcadero.com/products/delphi/faq
+downloadPageUrl https://www.embarcadero.com/products/delphi/starter/free-download
+rosettaCode http://www.rosettacode.org/wiki/Category:Delphi
+centralPackageRepositoryCount 0
 country United States
 originCommunity Idera, Inc.
-releaseNotesUrl https://edn.embarcadero.com/article/40775
+projectEuler Delphi
+ memberCount
+  2019 482
+  2022 481
+reference http://delphi.wikia.com/wiki/Delphi_File_Extensions
 
-visualParadigm false
+helloWorldCollection Delphi%2FObject Pascal
+ // Hello World in Delphi
+ Program Hello_World;
+ 
+ {$APPTYPE CONSOLE}
+ 
+ Begin
+   WriteLn('Hello World');
+ End.
+ 
+pygmentsHighlighter Delphi
+ filename pascal.py
+ fileExtensions pas dpr
+subreddit https://reddit.com/r/delphi
+ memberCount
+  2017 1085
+  2022 3238
+leachim6 Delphi
+ filepath d/Delphi.pas
+ fileExtensions pas
+ example
+  program HelloWorld;
+  {$APPTYPE CONSOLE}
+  
+  begin
+  	WriteLn('Hello World');
+  end.
+
+meetup https://www.meetup.com/topics/delphi
+ memberCount 2368
+ groupCount 24
+
+lineCommentToken //
+multiLineCommentTokens { }
+printToken WriteLn
+stringToken '
 
 hasComments true
 hasLineComments true
@@ -24,11 +75,6 @@ hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers true
 hasStrings true
  'Hello world'
-
-lineCommentToken //
-multiLineCommentTokens { }
-printToken WriteLn
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  example
@@ -45,68 +91,13 @@ wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  revisionCount 3
  appeared 2006
 
+hopl https://hopl.info/showlanguage.prx?exp=1963
+tiobe Delphi/Object Pascal
+ currentRank 9
+
 githubBigQuery Delphi
  repos 240
  users 213
-
-pygmentsHighlighter Delphi
- filename pascal.py
- fileExtensions pas dpr
-
-projectEuler Delphi
- memberCount
-  2019 482
-  2022 481
-helloWorldCollection Delphi%2FObject Pascal
- // Hello World in Delphi
- Program Hello_World;
- 
- {$APPTYPE CONSOLE}
- 
- Begin
-   WriteLn('Hello World');
- End.
- 
-leachim6 Delphi
- filepath d/Delphi.pas
- fileExtensions pas
- example
-  program HelloWorld;
-  {$APPTYPE CONSOLE}
-  
-  begin
-  	WriteLn('Hello World');
-  end.
-rosettaCode http://www.rosettacode.org/wiki/Category:Delphi
-
-indeedJobs delphi engineer
- 2017 181
-stackOverflowSurvey
- 2021
-  users 1731
-  medianSalary 46704
-  fans 975
-  percentageUsing 0.02
-officialBlogUrl https://blogs.embarcadero.com/
-eventsPageUrl https://www.embarcadero.com/events
-faqPageUrl https://www.embarcadero.com/products/delphi/faq
-downloadPageUrl https://www.embarcadero.com/products/delphi/starter/free-download
-
-subreddit https://reddit.com/r/delphi
- memberCount
-  2017 1085
-  2022 3238
-meetup https://www.meetup.com/topics/delphi
- memberCount 2368
- groupCount 24
-
-tiobe Delphi/Object Pascal
- currentRank 9
-hopl https://hopl.info/showlanguage.prx?exp=1963
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
 
 isbndb 88
  year|publisher|title|authors|isbn13
@@ -199,10 +190,17 @@ isbndb 88
  20061122|Springer Nature|.NET 2.0 for Delphi Programmers|Jon Shemitz|9781430201748
  2004|A-list|Advanced Delphi X Programming And Engineering|Peter Darakhvelidze and Evgeny Markov|9781931769280
 
+indeedJobs delphi engineer
+ 2017 181
+stackOverflowSurvey
+ 2021
+  users 1731
+  medianSalary 46704
+  fans 975
+  percentageUsing 0.02
+
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  2016|Lessons Learned from Teaching Scratch as an Introduction to Object-oriented Programming in Delphi|10.1080/18117295.2016.1189215|6|0|Sukie van Zyl and E. Mentz and M. Havenga|f9a8b9efda4ed17f7540bbb926b9b97ef9d8d6be
  2014|Application of Case-based Teaching in Higher Vocational Computer CoursesA Case Study of Delphi Programming|10.2991/SCICT-14.2014.64|3|0|Guanqun Liu and Qiufen Yang and Rong Fan|355a997fe0a41d33880d49948719f481b0e636fa
  2011|Performance Comparison of Managed C# and Delphi Prism in Visual Studio and Unmanaged Delphi 2009 and C++ Builder 2009 Languages|10.5120/3070-4199|1|0|Abdulkadir Karacı|8443a676d13766bfde31808be4a689855d8e8a8d
-
-creators Anders Hejlsberg

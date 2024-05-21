@@ -1,21 +1,61 @@
 import ../code/conceptPage.scroll
+
 id racket
 name Racket
 appeared 1994
-tags pl
 creators Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi
+tags pl
 website http://racket-lang.org
-documentation https://docs.racket-lang.org/
-fileExtensions rkt rktl rktd scrbl plt ss scm
-originCommunity PLT Inc.
-domainName racket-lang.org
- registered 2010
- awisRank
-  2022 253298
-  2017 77757
-releaseNotesUrl https://docs.racket-lang.org/release/index.html
+conference https://con.racket-lang.org/ RacketCon
 
+isOpenSource true
+tryItOnline racket
+officialBlogUrl https://blog.racket-lang.org/
+fileExtensions rkt rktl rktd scrbl plt ss scm
+releaseNotesUrl https://docs.racket-lang.org/release/index.html
 visualParadigm false
+clocExtensions rkt rktd rktl scrbl
+fileType text
+documentation https://docs.racket-lang.org/
+faqPageUrl https://www.cs.uni.edu/~wallingf/teaching/cs3540/resources/racket-faq.html
+downloadPageUrl https://download.racket-lang.org/
+rosettaCode http://www.rosettacode.org/wiki/Category:Racket
+packageRepository https://pkgs.racket-lang.org/
+originCommunity PLT Inc.
+projectEuler Racket
+ memberCount
+  2019 282
+  2022 316
+
+helloWorldCollection Racket
+ ;; Hello world in Racket
+ 
+ #lang racket/base
+ "Hello, World!"
+pygmentsHighlighter Racket
+ filename lisp.py
+ fileExtensions rkt rktd rktl
+rijuRepl https://riju.codes/racket
+ example
+  #lang racket/base
+  (display "Hello, world!\n")
+  
+twitter https://twitter.com/racketlang
+leachim6 Racket
+ filepath r/Racket.rkt
+ fileExtensions rkt
+ example
+  #lang racket
+  "Hello World"
+  
+
+meetup https://www.meetup.com/topics/racket
+ memberCount 735
+ groupCount 6
+
+lineCommentToken ;
+printToken display
+stringToken "
 
 hasStrings true
  "hello world"
@@ -51,10 +91,7 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
 
-lineCommentToken ;
-printToken display
-stringToken "
-
+jupyterKernel https://github.com/rmculpepper/iracket
 wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  example
   #lang typed/racket
@@ -73,24 +110,18 @@ wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  appeared 1994
  fileExtensions rkt rktl rktd scrbl plt ss scm
 
-githubLanguage Racket
- fileExtensions rkt rktd rktl scrbl
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  salimt Courses- https://github.com/salimt.png https://github.com/salimt/Courses- Racket #3c5caa 43 73 9 "Quiz & Assignment of Coursera"
- trendingProjectsCount 2
- type programming
- interpreters racket
- aceMode lisp
- tmScope source.racket
- repos 17790
+tiobe Racket
+
+domainName racket-lang.org
+ registered 2010
+ awisRank
+  2022 253298
+  2017 77757
+
 githubBigQuery Racket
  repos 3760
  users 3026
 
-pygmentsHighlighter Racket
- filename lisp.py
- fileExtensions rkt rktd rktl
 linguistGrammarRepo https://github.com/soegaard/racket-highlight-for-github
  firstCommit 2014
  lastCommit 2015
@@ -117,59 +148,29 @@ linguistGrammarRepo https://github.com/soegaard/racket-highlight-for-github
   (displayln "Go to the store and buy some more, 99 bottles of beer on the wall.")
   
 
-projectEuler Racket
- memberCount
-  2019 282
-  2022 316
-helloWorldCollection Racket
- ;; Hello world in Racket
- 
- #lang racket/base
- "Hello, World!"
-leachim6 Racket
- filepath r/Racket.rkt
- fileExtensions rkt
- example
-  #lang racket
-  "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Racket
-
-rijuRepl https://riju.codes/racket
- example
-  #lang racket/base
-  (display "Hello, world!\n")
-  
-tryItOnline racket
-
-indeedJobs racket engineer
- 2017 1
-linkedInSkill racket
- 2018 4702
-officialBlogUrl https://blog.racket-lang.org/
-faqPageUrl https://www.cs.uni.edu/~wallingf/teaching/cs3540/resources/racket-faq.html
-downloadPageUrl https://download.racket-lang.org/
-
-meetup https://www.meetup.com/topics/racket
- memberCount 735
- groupCount 6
-conference https://con.racket-lang.org/ RacketCon
-
-tiobe Racket
-
-packageRepository https://pkgs.racket-lang.org/
-
-twitter https://twitter.com/racketlang
-jupyterKernel https://github.com/rmculpepper/iracket
-fileType text
-isOpenSource true
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2021-01-08T00:00:01Z|No Starch Press|Racket Programming the Fun Way: From Strings to Turing Machines|Stelly, James. W.|9781718500822
  2021|No Starch Press|Racket Programming the Fun Way: From Strings to Turing Machines|Stelly, James. W.|9781718500839
  2021|Apress|Introducing Blockchain with Lisp: Implement and Extend Blockchains with the Racket Language|Sitnikovski, Boro|9781484269695
  20130613|Random House Publishing Services|Realm of Racket|Matthias Felleisen; David Van Horn; Conrad Barski; |9781593274924
+
+githubLanguage Racket
+ fileExtensions rkt rktd rktl scrbl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  salimt Courses- https://github.com/salimt.png https://github.com/salimt/Courses- Racket #3c5caa 43 73 9 "Quiz & Assignment of Coursera"
+ trendingProjectsCount 2
+ type programming
+ interpreters racket
+ aceMode lisp
+ tmScope source.racket
+ repos 17790
+
+indeedJobs racket engineer
+ 2017 1
+linkedInSkill racket
+ 2018 4702
 
 semanticScholar 9
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -183,5 +184,3 @@ semanticScholar 9
  2015|Combining Processing with Racket|10.1007/978-3-319-27653-3_10|2|1|Hugo F. Correia and A. Leitão|b1ca8a3ed852b8d3f72a5ab2fcd23bf5040c801b
  2019|From Macros to DSLs: The Evolution of Racket|10.4230/LIPIcs.SNAPL.2019.5|2|0|Ryan Culpepper and M. Felleisen and M. Flatt and S. Krishnamurthi|36f5196490c23969ec86f8c693fb04c4d8b7fd8b
  2017|High-Performance Graphics in Racket with DirectX|10.1007/978-3-319-65482-9_66|1|0|A. Bossard|8f722e460468744541fb0819dac316bd7e36e673
-
-clocExtensions rkt rktd rktl scrbl

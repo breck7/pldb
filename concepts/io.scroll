@@ -1,20 +1,45 @@
 import ../code/conceptPage.scroll
+
 id io
 name Io
 appeared 2002
-tags pl
 creators Steve Dekorte
+tags pl
 website https://iolanguage.org/
+
+tryItOnline io
+visualParadigm false
+fileType text
+wordRank 9022
 documentation https://iolanguage.org/guide/guide.html
-reference https://news.ycombinator.com/item?id=8867575
+rosettaCode http://www.rosettacode.org/wiki/Category:Io
+centralPackageRepositoryCount 0
 country United States and United Kingdom and Belarus
 originCommunity https://github.com/IoLanguage
-domainName iolanguage.org
- registered 2009
- awisRank
-  2022 9722355
+reference https://news.ycombinator.com/item?id=8867575
 
-visualParadigm false
+pygmentsHighlighter Io
+ filename iolang.py
+ fileExtensions io
+rijuRepl https://riju.codes/io
+ example
+  "Hello, world!" println
+  
+ description Dynamic prototype-based programming language in the same realm as Smalltalk and Self
+ fileExtensions io
+ website https://iolanguage.org/
+ gitRepo https://github.com/IoLanguage/io
+twitter https://twitter.com/iolanguage
+leachim6 Io
+ filepath i/Io.Io
+ fileExtensions Io
+ example
+  "Hello World\n" print
+  
+
+lineCommentToken //
+printToken print
+assignmentToken :=
 
 hasComments true
 hasOperatorOverloading true
@@ -28,10 +53,6 @@ hasFloats true
 hasIntegers true
  // \d+
 hasMultiLineComments true
-
-lineCommentToken //
-printToken print
-assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)
  example
@@ -49,6 +70,28 @@ wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)
  dailyPageViews 48
  appeared 2002
 
+hopl https://hopl.info/showlanguage.prx?exp=7112
+
+domainName iolanguage.org
+ registered 2009
+ awisRank
+  2022 9722355
+
+githubBigQuery Io
+ repos 624
+ users 594
+
+linguistGrammarRepo https://github.com/textmate/io.tmbundle
+ firstCommit 2005
+ lastCommit 2014
+ committerCount 6
+ commitCount 33
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1991|Unknown|NET network programming with IO technology practice|KANG TING SHU WEI GONG FANG ?QIANG LI LUO TOU ZHU|9787121068379
+ 2021|Independently published|SIEMENS PLC PROGRAMMING FOR BEGINNERS: LEARN SIEMENS PLC PROGRAMMING WITH S7-300/400 Automating Project Examples inside TIA portal and Factory IO|Wicks, Daniel H|9798787338089
+
 githubLanguage Io
  fileExtensions io
  trendingProjectsCount 0
@@ -57,48 +100,6 @@ githubLanguage Io
  aceMode io
  tmScope source.io
  repos 2062
-githubBigQuery Io
- repos 624
- users 594
-
-pygmentsHighlighter Io
- filename iolang.py
- fileExtensions io
-linguistGrammarRepo https://github.com/textmate/io.tmbundle
- firstCommit 2005
- lastCommit 2014
- committerCount 6
- commitCount 33
-
-leachim6 Io
- filepath i/Io.Io
- fileExtensions Io
- example
-  "Hello World\n" print
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Io
-
-rijuRepl https://riju.codes/io
- example
-  "Hello, world!" println
-  
- description Dynamic prototype-based programming language in the same realm as Smalltalk and Self
- fileExtensions io
- website https://iolanguage.org/
- gitRepo https://github.com/IoLanguage/io
-tryItOnline io
-
-hopl https://hopl.info/showlanguage.prx?exp=7112
-
-twitter https://twitter.com/iolanguage
-fileType text
-wordRank 9022
-centralPackageRepositoryCount 0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 1991|Unknown|NET network programming with IO technology practice|KANG TING SHU WEI GONG FANG ?QIANG LI LUO TOU ZHU|9787121068379
- 2021|Independently published|SIEMENS PLC PROGRAMMING FOR BEGINNERS: LEARN SIEMENS PLC PROGRAMMING WITH S7-300/400 Automating Project Examples inside TIA portal and Factory IO|Wicks, Daniel H|9798787338089
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

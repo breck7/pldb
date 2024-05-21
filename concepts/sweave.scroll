@@ -1,11 +1,13 @@
 import ../code/conceptPage.scroll
+
 id sweave
 name Sweave
 appeared 2002
 tags template
-fileExtensions rnw
 
 compilesTo latex
+fileExtensions rnw
+centralPackageRepositoryCount 0
 
 example
  %-------------------------------------------
@@ -32,7 +34,5 @@ wikipedia https://en.wikipedia.org/wiki/Sweave
  revisionCount 49
  dailyPageViews 26
  appeared 2002
-
-centralPackageRepositoryCount 0
 
 isbndb 0

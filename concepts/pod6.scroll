@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id pod6
 name Pod6
 appeared 2019
-tags textMarkup
 creators Aliaksandr Zahatski
+tags textMarkup
 website https://pod6.in
+
+writtenIn typescript javascript json markdown yaml
+repoStats
+ firstCommit 2019
+ commits 272
+ committers 2
+ files 155
+ newestCommit 2023
 country Unknown
 originCommunity https://github.com/zag/js-pod6/issues
-domainName pod6.in
- registered 2012
 
 example
  =begin pod
@@ -36,11 +43,5 @@ githubRepo https://github.com/zag/js-pod6
  description Pod6 is an easy-to-use markup language. It can be used for writing language documentation, for documenting programs and modules, as well as for other types of document composition
  issues 17
 
-repoStats
- firstCommit 2019
- commits 272
- committers 2
- files 155
- newestCommit 2023
-
-writtenIn typescript javascript json markdown yaml
+domainName pod6.in
+ registered 2012

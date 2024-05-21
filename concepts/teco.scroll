@@ -1,10 +1,31 @@
 import ../code/conceptPage.scroll
+
 id teco
 name TECO
 appeared 1963
 tags pl
 standsFor Text editor character oriented
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Teco
+centralPackageRepositoryCount 0
 country United States
+projectEuler TECO
+ memberCount
+  2019 7
+  2022 8
+
+helloWorldCollection Text editor character oriented
+ !Hello World in TECO
+ !The $ symbol below wouldn't actually be a printing character -
+ !it's the [escape] character, \u001b!
+ FTHello World$
+ 
+rijuRepl https://riju.codes/teco
+ example
+  IHello, world!
+  $HT$$
+  
 
 wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
  example
@@ -24,25 +45,4 @@ wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
  revisionCount 331
  appeared 1962
 
-projectEuler TECO
- memberCount
-  2019 7
-  2022 8
-helloWorldCollection Text editor character oriented
- !Hello World in TECO
- !The $ symbol below wouldn't actually be a printing character -
- !it's the [escape] character, \u001b!
- FTHello World$
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:Teco
-
-rijuRepl https://riju.codes/teco
- example
-  IHello, world!
-  $HT$$
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=2563
-
-fileType text
-centralPackageRepositoryCount 0

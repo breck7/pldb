@@ -1,16 +1,22 @@
 import ../code/conceptPage.scroll
+
 id jcof
 name JCOF
 appeared 2022
-tags dataNotation
 creators Martin Dørum
-reference https://news.ycombinator.com/item?id=32109406
+tags dataNotation
 standsFor JSON-like Compact Object Format
+
+writtenIn json javascript markdown make
+repoStats
+ firstCommit 2022
+ commits 14
+ committers 1
+ files 18
+ newestCommit 2022
 country Norway
 originCommunity https://github.com/mortie/jcof/issues
-
-hasComments false
-hasSemanticIndentation false
+reference https://news.ycombinator.com/item?id=32109406
 
 example
  Programmer;"age""first-name""full-time""occupation";
@@ -26,11 +32,5 @@ githubRepo https://github.com/mortie/jcof
  description An efficient drop-in replacement for JSON.
  issues 0
 
-repoStats
- firstCommit 2022
- commits 14
- committers 1
- files 18
- newestCommit 2022
-
-writtenIn json javascript markdown make
+hasComments false
+hasSemanticIndentation false

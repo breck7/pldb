@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id ubasic
 name UBASIC
 appeared 1991
 tags pl
+
+isOpenSource true
+tryItOnline ubasic
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/UBASIC
  example
@@ -41,9 +46,4 @@ wikipedia https://en.wikipedia.org/wiki/UBASIC
  dailyPageViews 10
  appeared 1989
 
-tryItOnline ubasic
-
 hopl https://hopl.info/showlanguage.prx?exp=1666
-
-isOpenSource true
-centralPackageRepositoryCount 0

@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id m3db
 name m3db
 appeared 2016
-tags database
 creators Xi Chen
-conceptDescription A distributed time series database.
+tags database
 website https://www.m3db.io/
+conceptDescription A distributed time series database.
+
+writtenIn go markdown yaml bourne-shell svg protobuf json javascript dockerfile html css make hcl toml bash thrift assembly-language
+repoStats
+ firstCommit 2016
+ commits 8623
+ committers 154
+ files 3560
+ newestCommit 2023
 country United States
 originCommunity https://github.com/m3db
-domainName m3db.io
- registered 2018
- awisRank
-  2022 2196812
 
 githubRepo https://github.com/m3db/m3
  firstCommit 2016
@@ -23,11 +28,7 @@ githubRepo https://github.com/m3db/m3
  description M3 monorepo - Distributed TSDB, Aggregator and Query Engine, Prometheus Sidecar, Graphite Compatible, Metrics Platform
  issues 179
 
-repoStats
- firstCommit 2016
- commits 8623
- committers 154
- files 3560
- newestCommit 2023
-
-writtenIn go markdown yaml bourne-shell svg protobuf json javascript dockerfile html css make hcl toml bash thrift assembly-language
+domainName m3db.io
+ registered 2018
+ awisRank
+  2022 2196812

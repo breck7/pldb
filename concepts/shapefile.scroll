@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id shapefile
 name Shapefile
 appeared 1995
 tags binaryDataFormat
+
 fileExtensions shp shx dbf
+fileType binary
+centralPackageRepositoryCount 0
 originCommunity Esri
 
 wikipedia https://en.wikipedia.org/wiki/Shapefile
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/Shapefile
  backlinksCount 385
  revisionCount 416
  appeared 1990
-
-fileType binary
-centralPackageRepositoryCount 0

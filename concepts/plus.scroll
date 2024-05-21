@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id plus
 name Plus
 appeared 1976
 tags pl
+
+fileType text
+wordRank 844
+rosettaCode http://www.rosettacode.org/wiki/Category:PLUS
+centralPackageRepositoryCount 0
 country Canada
 originCommunity University of British Columbia
+
+multiLineCommentTokens /* */
+stringToken "
 
 hasMultiLineComments true
  /* A comment
@@ -15,9 +24,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-multiLineCommentTokens /* */
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
  example
@@ -56,9 +62,3 @@ wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
  revisionCount 32
  dailyPageViews 8
  appeared 1976
-
-rosettaCode http://www.rosettacode.org/wiki/Category:PLUS
-
-fileType text
-wordRank 844
-centralPackageRepositoryCount 0

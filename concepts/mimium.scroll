@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id mimium
 name mimium
 appeared 2019
-tags pl
 creators Tomoya Matsuura
-conceptDescription mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
+tags pl
 website https://mimium.org
-reference https://dblp.org/rec/conf/icfp/MatsuuraJ21
+conceptDescription mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
+
+writtenIn cpp cmake markdown yaml lex python dockerfile make restructuredtext svg
+repoStats
+ firstCommit 2019
+ commits 1167
+ committers 9
+ files 229
+ newestCommit 2023
 country Japan
 originCommunity Kyushu University
-domainName mimium.org
- registered 2020
+reference https://dblp.org/rec/conf/icfp/MatsuuraJ21
 
 example
  // A minimal example below generates a sinewave of 440Hz:
@@ -21,6 +28,7 @@ example
      out = sin(now * 440 * twopi / sr)
      return (out,out)
  }
+twitter https://twitter.com/mimium-org
 
 githubRepo https://github.com/mimium-org/mimium
  firstCommit 2019
@@ -32,13 +40,5 @@ githubRepo https://github.com/mimium-org/mimium
  description mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
  issues 7
 
-repoStats
- firstCommit 2019
- commits 1167
- committers 9
- files 229
- newestCommit 2023
-
-twitter https://twitter.com/mimium-org
-
-writtenIn cpp cmake markdown yaml lex python dockerfile make restructuredtext svg
+domainName mimium.org
+ registered 2020

@@ -1,30 +1,35 @@
 import ../code/conceptPage.scroll
+
 id v
 name V
 appeared 2019
-tags pl
 creators Alexander Medvednikov
+tags pl
 website https://vlang.io/
-documentation https://github.com/vlang/v/blob/master/doc/docs.md
 oldName volt
-domainName vlang.io
- registered 2019
- awisRank
-  2022 372075
 
-hasStrings true
- "hello world"
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
+writtenIn coq markdown c html yaml xml glsl json toml svg bourne-shell css dockerfile javascript objective-c make python awk cpp csharp typescript go sql ruby assembly-language
+documentation https://github.com/vlang/v/blob/master/doc/docs.md
+repoStats
+ firstCommit 2019
+ commits 17736
+ committers 874
+ files 8021
+ newestCommit 2024
 
-lineCommentToken //
-printToken println
-stringToken "
-
+rijuRepl https://riju.codes/v
+ example
+  fn main() {
+  	println('Hello, world!')
+  }
+  
+ description Simple, statically-typed compiled programming language designed for building maintainable software
+ fileExtensions v
+ website https://vlang.io/
+ gitRepo https://github.com/vlang/v
+subreddit https://reddit.com/r/vlang
+ memberCount
+  2022 1547
 example
  import json
  
@@ -67,8 +72,15 @@ example
  fn (mut u User) register() {
      u.is_registered = true
  }
-
+twitter https://twitter.com/v_language
+leachim6 V
+ filepath v/V.v
+ fileExtensions v
+ example
+  println("Hello World")
+  
 gource https://www.youtube.com/watch?v=zqUE-57Bb1M
+
 githubRepo https://github.com/vlang/v
  firstCommit 2019
  stars 29603
@@ -79,12 +91,27 @@ githubRepo https://github.com/vlang/v
  description Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
  issues 753
 
-repoStats
- firstCommit 2019
- commits 17736
- committers 874
- files 8021
- newestCommit 2024
+lineCommentToken //
+printToken println
+stringToken "
+
+hasStrings true
+ "hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName vlang.io
+ registered 2019
+ awisRank
+  2022 372075
+
+githubBigQuery V
+ repos 45
+ users 44
 
 githubLanguage V
  type programming
@@ -95,32 +122,3 @@ githubLanguage V
  tmScope source.v
  aliases vlang
  repos 1382
-githubBigQuery V
- repos 45
- users 44
-
-leachim6 V
- filepath v/V.v
- fileExtensions v
- example
-  println("Hello World")
-  
-
-rijuRepl https://riju.codes/v
- example
-  fn main() {
-  	println('Hello, world!')
-  }
-  
- description Simple, statically-typed compiled programming language designed for building maintainable software
- fileExtensions v
- website https://vlang.io/
- gitRepo https://github.com/vlang/v
-
-subreddit https://reddit.com/r/vlang
- memberCount
-  2022 1547
-
-twitter https://twitter.com/v_language
-
-writtenIn coq markdown c html yaml xml glsl json toml svg bourne-shell css dockerfile javascript objective-c make python awk cpp csharp typescript go sql ruby assembly-language

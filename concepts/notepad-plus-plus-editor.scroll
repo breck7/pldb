@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id notepad-plus-plus-editor
 name Notepad++
 appeared 2003
 tags editor
+
+isOpenSource true
+fileType na
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://web.archive.org/web/20110407233803/http://sourceforge.net/projects/notepad-plus/develop/
 
@@ -15,7 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Notepad++
  revisionCount 8
  dailyPageViews 604
  appeared 2003
-
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0

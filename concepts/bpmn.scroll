@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id bpmn
 name BPMN
 appeared 2004
 tags visual
-documentation https://www.bpmn.org/
 standsFor Business Process Model and Notation
+
+fileType text
+documentation https://www.bpmn.org/
+centralPackageRepositoryCount 0
 country United States
 originCommunity Business Process Management Initiative && Object Management Group
 
@@ -17,9 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
  backlinksCount 715
  revisionCount 716
  appeared 2005
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 2
  year|publisher|title|authors|isbn13

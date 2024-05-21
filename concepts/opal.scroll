@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id opal
 name Opal
 appeared 1994
 tags pl
-reference https://link.springer.com/chapter/10.1007%2F3-540-57840-4_34
+
+isOpenSource true
+writtenIn c tex bourne-shell lisp clojure perl bash cmake vim-script make lex java logos markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1998
+ commits 833
+ committers 9
+ files 3723
+ newestCommit 2016
 country Germany
 originCommunity https://github.com/TU-Berlin
-
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
+reference https://link.springer.com/chapter/10.1007%2F3-540-57840-4_34
 
 githubRepo https://github.com/TU-Berlin/opal
  firstCommit 1998
@@ -25,12 +29,13 @@ githubRepo https://github.com/TU-Berlin/opal
  description Opal - Optimized Applicative Language
  issues 0
 
-repoStats
- firstCommit 1998
- commits 833
- committers 9
- files 3723
- newestCommit 2016
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Opal_(programming_language)
  example
@@ -48,13 +53,6 @@ wikipedia https://en.wikipedia.org/wiki/Opal_(programming_language)
  revisionCount 23
  dailyPageViews 11
 
-githubLanguage Opal
- fileExtensions opal
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.opal
- repos 14
 githubBigQuery Opal
  repos 10
  users 9
@@ -76,8 +74,10 @@ linguistGrammarRepo https://github.com/artifactz/sublime-opal
   
   alert starts.sample + middles.sample + qualifiers.sample + finishes.sample
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c tex bourne-shell lisp clojure perl bash cmake vim-script make lex java logos markdown
+githubLanguage Opal
+ fileExtensions opal
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.opal
+ repos 14

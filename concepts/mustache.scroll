@@ -1,15 +1,25 @@
 import ../code/conceptPage.scroll
+
 id mustache
 name mustache
 appeared 2009
-tags template
 creators Chris Wanstrath
+tags template
 website http://mustache.github.io/
+
+isOpenSource true
+writtenIn ruby mustache yaml markdown html
+clocExtensions mustache
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 853
+ committers 78
+ files 98
+ newestCommit 2022
 country United States and France and Portugal and Croatia
 originCommunity https://github.com/mustache
-domainName mustache.github.io
- awisRank
-  2022 475411
 
 example
  Hello {{name}}
@@ -28,12 +38,15 @@ githubRepo https://github.com/mustache/mustache
  description Logic-less Ruby templates.
  issues 44
 
-repoStats
- firstCommit 2009
- commits 853
- committers 78
- files 98
- newestCommit 2022
+domainName mustache.github.io
+ awisRank
+  2022 475411
+
+githubBigQuery Mustache
+ repos 616
+ users 535
+
+isbndb 0
 
 githubLanguage Mustache
  type markup
@@ -43,15 +56,3 @@ githubLanguage Mustache
  codemirrorMimeType text/x-smarty
  tmScope text.html.smarty
  repos 6085
-githubBigQuery Mustache
- repos 616
- users 535
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
-
-clocExtensions mustache
-writtenIn ruby mustache yaml markdown html

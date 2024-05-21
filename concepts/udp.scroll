@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id udp
 name UDP
 appeared 1980
 tags protocol
-documentation https://www.ietf.org/rfc/rfc768.txt
 standsFor User Datagram Protocol
+
+fileType na
+documentation https://www.ietf.org/rfc/rfc768.txt
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/User_Datagram_Protocol
  related ftp http smtp tls tcp unix isbn
@@ -16,17 +20,10 @@ wikipedia https://en.wikipedia.org/wiki/User_Datagram_Protocol
  revisionCount 1075
  appeared 2010
 
+isbndb 0
+
 indeedJobs UDP engineer
  2022 35
-
-fileType na
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Network Programming in Java: Internet protocols (IP, UDP, TCP)||Alan MOUHLI|51271311|0.0|0|0
-
-isbndb 0
 
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -35,3 +32,7 @@ semanticScholar 5
  2016|Lightweight UDP Pervasive Protocol in Smart Home Environment Based on Labview|10.1088/1757-899X/190/1/012009|3|0|Wijaya Kurniawan and Mochammad Hannats Hanafi Ichsan and S. Akbar and Issa Arwani|de4bbbdaac82782258612887cb15afed90de5c13
  2018|UDP Pervasive Protocol Integration with IoT for Smart Home Environment using LabVIEW|10.11591/IJECE.V8I6.PP5342-5350|3|0|M. Ichsan and Wijaya Kurniawan and S. Akbar|00d454086ab5554f6ae45cc787ff2156fb2b5ddf
  2016|Development of Client-Server Application by Using UDP Socket Programming for Remotely Monitoring CNC Machine Environment in Fixture Process|10.17529/jre.v12i2.2925|3|0|Darmawan Darmawan and Pharmayeni Pharmayeni|ba267fe896d917f11ec3d3ab4060c36af3ab0ffd
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Network Programming in Java: Internet protocols (IP, UDP, TCP)||Alan MOUHLI|51271311|0.0|0|0

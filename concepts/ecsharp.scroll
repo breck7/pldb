@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id ecsharp
 name ecsharp
 appeared 2008
 tags pl
 website http://ecsharp.net/
+
+writtenIn csharp xml html markdown yaml csv xsd
+repoStats
+ firstCommit 2008
+ commits 1670
+ committers 8
+ files 938
+ newestCommit 2024
 country Canada
 originCommunity https://david.loyc.net
-domainName ecsharp.net
- registered 2014
 
 githubRepo https://github.com/qwertie/ecsharp
  firstCommit 2008
@@ -19,11 +26,5 @@ githubRepo https://github.com/qwertie/ecsharp
  description Home of LoycCore, the LES language of Loyc trees, the Enhanced C# parser, the LeMP macro preprocessor, and the LLLPG parser generator.
  issues 32
 
-repoStats
- firstCommit 2008
- commits 1670
- committers 8
- files 938
- newestCommit 2024
-
-writtenIn csharp xml html markdown yaml csv xsd
+domainName ecsharp.net
+ registered 2014

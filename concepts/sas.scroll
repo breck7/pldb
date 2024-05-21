@@ -1,18 +1,57 @@
 import ../code/conceptPage.scroll
+
 id sas
 name SAS
 appeared 1976
-tags pl
 creators Anthony James Barr
+tags pl
 website https://www.sas.com
-documentation https://support.sas.com/en/documentation.html
 standsFor Statistical Analysis System
+
+clocExtensions sas
+fileType text
+wordRank 8860
+documentation https://support.sas.com/en/documentation.html
+faqPageUrl https://www.sas.com/en_us/certification/faq.html
+rosettaCode http://www.rosettacode.org/wiki/Category:SAS
+centralPackageRepositoryCount 0
 country United States
 originCommunity North Carolina State University
-domainName sas.com
- registered 1990
- awisRank
-  2022 8630
+projectEuler SAS
+ memberCount
+  2019 49
+  2022 54
+
+helloWorldCollection Statistical Analysis System
+ /* Hello world in SAS */
+ 
+ * Writes as output title;
+ TITLE "Hello World!";
+ * writes to the log;
+ data _null_;
+     PUT "Hello world!";
+ run;
+pygmentsHighlighter SAS
+ filename sas.py
+ fileExtensions SAS sas
+subreddit https://reddit.com/r/sas
+ memberCount
+  2017 2538
+  2022 7963
+twitter https://twitter.com/sassoftware
+leachim6 Sas
+ filepath s/Sas.sas
+ fileExtensions sas
+ example
+  %macro putit( string= );
+       %put &string;
+       %mend;
+  
+  %putit(string=Hello World)
+  
+
+lineCommentToken *
+multiLineCommentTokens /* */
 
 hasComments true
 hasMultiLineComments true
@@ -23,9 +62,7 @@ hasLineComments true
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers true
 
-lineCommentToken *
-multiLineCommentTokens /* */
-
+jupyterKernel https://github.com/sassoftware/sas_kernel
 wikipedia https://en.wikipedia.org/wiki/SAS_language
  related html linux
  summary The SAS language is a computer programming language used for statistical analysis, created by Anthony James Barr at North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as RTF, HTML and PDF documents. The SAS language runs under compilers that can be used on Microsoft Windows, Linux, and various other UNIX and  mainframe computers. The SAS System and World Programming System (WPS) are SAS language compilers.
@@ -36,22 +73,19 @@ wikipedia https://en.wikipedia.org/wiki/SAS_language
  revisionCount 92
  appeared 1976
 
-githubLanguage SAS
- fileExtensions sas
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode sas
- codemirrorMimeType text/x-sas
- tmScope source.sas
- repos 8407
+hopl https://hopl.info/showlanguage.prx?exp=733
+tiobe SAS
+ currentRank 21
+
+domainName sas.com
+ registered 1990
+ awisRank
+  2022 8630
+
 githubBigQuery SAS
  repos 1350
  users 1240
 
-pygmentsHighlighter SAS
- filename sas.py
- fileExtensions SAS sas
 linguistGrammarRepo https://github.com/rpardee/sas.tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -76,57 +110,6 @@ linguistGrammarRepo https://github.com/rpardee/sas.tmbundle
   	set work.working_copy;
   	if ImportantVariable = . then MissingFlag = 1;
   run;
-
-projectEuler SAS
- memberCount
-  2019 49
-  2022 54
-helloWorldCollection Statistical Analysis System
- /* Hello world in SAS */
- 
- * Writes as output title;
- TITLE "Hello World!";
- * writes to the log;
- data _null_;
-     PUT "Hello world!";
- run;
-leachim6 Sas
- filepath s/Sas.sas
- fileExtensions sas
- example
-  %macro putit( string= );
-       %put &string;
-       %mend;
-  
-  %putit(string=Hello World)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:SAS
-
-indeedJobs sas programmer
- 2022 1160
-linkedInSkill sas
- 2018 352164
-faqPageUrl https://www.sas.com/en_us/certification/faq.html
-
-subreddit https://reddit.com/r/sas
- memberCount
-  2017 2538
-  2022 7963
-
-tiobe SAS
- currentRank 21
-hopl https://hopl.info/showlanguage.prx?exp=733
-
-twitter https://twitter.com/sassoftware
-jupyterKernel https://github.com/sassoftware/sas_kernel
-fileType text
-wordRank 8860
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
- SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4
 
 isbndb 94
  year|publisher|title|authors|isbn13
@@ -225,6 +208,21 @@ isbndb 94
  2016|CRC Press|Practical Statistical Methods: A SAS Programming Approach|Padgett, Lakshmi|9781439812549
  2007|Wiley-Interscience|Data Mining Using SAS Enterprise Miner|Matignon, Randall|9780470149010
 
+githubLanguage SAS
+ fileExtensions sas
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode sas
+ codemirrorMimeType text/x-sas
+ tmScope source.sas
+ repos 8407
+
+indeedJobs sas programmer
+ 2022 1160
+linkedInSkill sas
+ 2018 352164
+
 semanticScholar 10
  year|title|doi|citations|influentialCitations|authors|paperId
  1986|Applied Statistics and the SAS Programming Language|10.2307/1271202|465|33|R. Cody and Jeffrey K. Smith|c0f9432b13bf1e85e5e647b9259e5164584f8220
@@ -238,4 +236,7 @@ semanticScholar 10
  2020|Automated Test Assembly Using SAS Operations Research Software in a Medical Licensing Examination|10.1177/0146621619847169|1|0|Can Shao and Silu Liu and H. Yang and Tsung-hsun Tsai|08f1de70767e9d28d43b9ae6be6c83def88e3278
  2012|%PROC_R: A SAS Macro that Enables Native R Programming in the Base SAS Environment|10.18637/JSS.V046.C02|1|0|Xin Wei|193c9e1f3166bc06301dcf8b4a11ddaefa7bcb15
 
-clocExtensions sas
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
+ SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4

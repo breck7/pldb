@@ -1,9 +1,10 @@
 import ../code/conceptPage.scroll
+
 id turnstile-plus
 name turnstile-plus
 appeared 2020
 tags grammarLanguage
 conceptDescription We present Turnstile+, a metalanguage for implementing typed—particularly dependently typed—languages.
-reference https://dl.acm.org/doi/pdf/10.1145/3371071
 
 writtenIn racket
+reference https://dl.acm.org/doi/pdf/10.1145/3371071

@@ -1,21 +1,14 @@
 import ../code/conceptPage.scroll
+
 id concurnas
 name concurnas
 appeared 2018
 tags pl
 website http://concurnas.com/
-reference https://news.ycombinator.com/item?id=23321096
+
 country England
 originCommunity https://github.com/Concurnas
-domainName concurnas.com
- registered 2018
-
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-
-printToken System.out.println
-stringToken "
+reference https://news.ycombinator.com/item?id=23321096
 
 example
  def gcd(x int, y int){//greatest common divisor of two integers
@@ -28,7 +21,7 @@ example
  calc2 = gcd(6, 45)!//run this calculation in a separate isolate
  calc3 = calc1 if calc1 > calc2 else calc2
  //^^^ wait for the results of calc1 and calc2 before assigning calc3
-
+twitter https://twitter.com/concurnas
 leachim6 Concurnas
  filepath c/Concurnas.conc
  fileExtensions conc
@@ -36,4 +29,12 @@ leachim6 Concurnas
   System.out.println("Hello World")
   
 
-twitter https://twitter.com/concurnas
+printToken System.out.println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName concurnas.com
+ registered 2018

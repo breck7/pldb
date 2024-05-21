@@ -1,32 +1,40 @@
 import ../code/conceptPage.scroll
+
 id pharo
 name Pharo
 appeared 2008
 tags pl
-conceptDescription Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
 website https://pharo.org/
-reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
-cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
+conceptDescription Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country France
 originCommunity https://consortium.pharo.org
-domainName pharo.org
- registered 2008
- awisRank
-  2022 745957
-
-hasPrintDebugging true
-hasStrings true
- 'Hello world'
-
-printToken crLog
-stringToken '
+reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
 
 example
  Object subclass: #Counter
   instanceVariableNames: ’count initialValue’
   classVariableNames: ’’
   package: ’MyCounter’
+twitter https://twitter.com/pharoproject
+leachim6 Pharo
+ filepath p/Pharo.st
+ fileExtensions st
+ example
+  'Hello World' crLog
+cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
 
+printToken crLog
+stringToken '
+
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
+
+jupyterKernel https://github.com/jmari/JupyterTalk
 wikipedia https://en.wikipedia.org/wiki/Pharo
  related smalltalk linux squeak newspeak visualworks
  summary Pharo is an open source dynamic and reflective language inspired from the programming language and integrated development environment (IDE) Smalltalk. Pharo offers strong live programming features such as immediate object manipulation, live update and hot recompiling. The live programming environment is at the heart of the system.
@@ -37,17 +45,10 @@ wikipedia https://en.wikipedia.org/wiki/Pharo
  dailyPageViews 72
  appeared 2008
 
-leachim6 Pharo
- filepath p/Pharo.st
- fileExtensions st
- example
-  'Hello World' crLog
-
-twitter https://twitter.com/pharoproject
-jupyterKernel https://github.com/jmari/JupyterTalk
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName pharo.org
+ registered 2008
+ awisRank
+  2022 745957
 
 isbndb 2
  year|publisher|title|authors|isbn13

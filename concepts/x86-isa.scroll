@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id x86-isa
 name X86
 appeared 1978
 tags isa
+
+fileType na
 documentation https://docs.kernel.org/x86/index.html
+centralPackageRepositoryCount 0
 originCommunity Intel && Advanced Micro Devices
 
 wikipedia https://en.wikipedia.org/wiki/X86
@@ -15,9 +19,6 @@ wikipedia https://en.wikipedia.org/wiki/X86
  backlinksCount 2214
  revisionCount 2728
  appeared 1978
-
-fileType na
-centralPackageRepositoryCount 0
 
 isbndb 22
  year|publisher|title|authors|isbn13

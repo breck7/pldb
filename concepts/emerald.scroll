@@ -1,15 +1,15 @@
 import ../code/conceptPage.scroll
+
 id emerald
 name Emerald
 appeared 1987
 tags pl
-reference https://semanticscholar.org/paper/c58d5d68aff6a596c5aade80fe87c2ea9074d8f2
+
+wordRank 9032
+centralPackageRepositoryCount 0
 country United States and Denmark
 originCommunity University of Washington && Digital Equipment Corporation && University of Arizona && Copenhagen University
-
-hasPrintDebugging true
-
-printToken stdout.putString
+reference https://semanticscholar.org/paper/c58d5d68aff6a596c5aade80fe87c2ea9074d8f2
 
 leachim6 Emerald
  filepath e/Emerald.m
@@ -21,7 +21,8 @@ leachim6 Emerald
   	end initially
   end mainProgram
 
-hopl https://hopl.info/showlanguage.prx?exp=1320
+printToken stdout.putString
 
-wordRank 9032
-centralPackageRepositoryCount 0
+hasPrintDebugging true
+
+hopl https://hopl.info/showlanguage.prx?exp=1320

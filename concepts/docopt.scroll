@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id docopt
 name docopt
 appeared 2012
-tags pl
 creators Vladimir Keleshev
-conceptDescription Command-line interface description language
+tags pl
 website http://docopt.org/
+conceptDescription Command-line interface description language
+
+writtenIn python restructuredtext ini yaml
+repoStats
+ firstCommit 2012
+ commits 463
+ committers 37
+ files 31
+ newestCommit 2024
 country Various
 originCommunity https://github.com/docopt
-domainName docopt.org
- registered 2012
- awisRank
-  2022 2604235
 
 githubRepo https://github.com/docopt/docopt
  firstCommit 2012
@@ -23,13 +28,9 @@ githubRepo https://github.com/docopt/docopt
  description Pythonic command line arguments parser, that will make you smile
  issues 253
 
-repoStats
- firstCommit 2012
- commits 463
- committers 37
- files 31
- newestCommit 2024
+domainName docopt.org
+ registered 2012
+ awisRank
+  2022 2604235
 
 semanticScholar 0
-
-writtenIn python restructuredtext ini yaml

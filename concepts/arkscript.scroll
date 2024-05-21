@@ -1,29 +1,22 @@
 import ../code/conceptPage.scroll
+
 id arkscript
 name ArkScript
 appeared 2019
-tags pl
 creators Alexandre Plateau and Pierre Pharel and Natendrtfm
-conceptDescription ArkScript is a small, fast, functional and scripting language for video games.
+tags pl
 website https://arkscript-lang.github.io
+conceptDescription ArkScript is a small, fast, functional and scripting language for video games.
+
+writtenIn cpp markdown yaml json csv cmake bash python bourne-shell svg xml dockerfile
+repoStats
+ firstCommit 2019
+ commits 2396
+ committers 43
+ files 405
+ newestCommit 2024
 country France
 originCommunity Alexandre Plateau
-domainName arkscript-lang.github.io
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-hasBooleans true
-
-lineCommentToken #
-printToken print
-stringToken "
-booleanTokens true false
 
 example
  {
@@ -51,6 +44,12 @@ example
          (set essais (+ 1 essais))})
      (print "You won in " essais " tries")
  }
+leachim6 ArkScript
+ filepath a/ArkScript.ark
+ fileExtensions ark
+ example
+  (print "Hello World")
+  
 
 githubRepo https://github.com/ArkScript-lang/Ark
  firstCommit 2019
@@ -62,20 +61,21 @@ githubRepo https://github.com/ArkScript-lang/Ark
  description ArkScript is a small, fast, functional and scripting language for C++ projects
  issues 22
 
-repoStats
- firstCommit 2019
- commits 2396
- committers 43
- files 405
- newestCommit 2024
+lineCommentToken #
+printToken print
+stringToken "
+booleanTokens true false
 
-leachim6 ArkScript
- filepath a/ArkScript.ark
- fileExtensions ark
- example
-  (print "Hello World")
-  
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
+
+domainName arkscript-lang.github.io
 
 semanticScholar 0
-
-writtenIn cpp markdown yaml json csv cmake bash python bourne-shell svg xml dockerfile

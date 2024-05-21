@@ -1,11 +1,14 @@
 import ../code/conceptPage.scroll
+
 id vtl-lang
 name Velocity Template Language
 appeared 2000
 tags template
-conceptDescription Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.
-reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
 standsFor Velocity Template Language
+conceptDescription Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.
+
+clocExtensions vm
+reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
 
 example
  <html>
@@ -27,6 +30,10 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
 
+githubBigQuery Velocity Template Language
+ repos 4
+ users 4
+
 githubLanguage Velocity Template Language
  type markup
  fileExtensions vtl
@@ -36,8 +43,3 @@ githubLanguage Velocity Template Language
  tmScope source.velocity
  aliases vtl or velocity
  repos 0
-githubBigQuery Velocity Template Language
- repos 4
- users 4
-
-clocExtensions vm

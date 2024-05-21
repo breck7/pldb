@@ -1,10 +1,18 @@
 import ../code/conceptPage.scroll
+
 id genshi
 name Genshi
 appeared 2006
 tags template
+
+fileType text
+centralPackageRepositoryCount 0
 country Sweden and Japan and United States and France and Germany and Switzerland
 originCommunity https://github.com/edgewall
+
+pygmentsHighlighter Genshi
+ filename templates.py
+ fileExtensions kid
 
 wikipedia https://en.wikipedia.org/wiki/Genshi_(templating_language)
  example
@@ -22,6 +30,10 @@ wikipedia https://en.wikipedia.org/wiki/Genshi_(templating_language)
  dailyPageViews 8
  appeared 2006
 
+githubBigQuery Genshi
+ repos 115
+ users 101
+
 githubLanguage Genshi
  fileExtensions kid
  trendingProjectsCount 0
@@ -32,13 +44,3 @@ githubLanguage Genshi
  tmScope text.xml.genshi
  aliases xml+genshi or xml+kid
  repos 30
-githubBigQuery Genshi
- repos 115
- users 101
-
-pygmentsHighlighter Genshi
- filename templates.py
- fileExtensions kid
-
-fileType text
-centralPackageRepositoryCount 0

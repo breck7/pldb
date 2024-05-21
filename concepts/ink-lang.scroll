@@ -1,16 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ink-lang
 name ink-lang
 appeared 2019
-tags pl
 creators Linus Lee
+tags pl
 website https://dotink.co
+
+writtenIn go markdown vim-script make yaml
+repoStats
+ firstCommit 2019
+ commits 373
+ committers 1
+ files 52
+ newestCommit 2021
 country United States
 originCommunity https://github.com/thesephist/ink/issues
-domainName dotink.co
- registered 2019
- awisRank
-  2022 6765719
 
 example
  std := load('std')
@@ -27,6 +32,7 @@ example
      })
    }
  ))
+twitter https://twitter.com/thesephist
 
 githubRepo https://github.com/thesephist/ink
  firstCommit 2019
@@ -38,13 +44,7 @@ githubRepo https://github.com/thesephist/ink
  description Ink is a minimal programming language inspired by modern JavaScript and Go, with functional style.
  issues 1
 
-repoStats
- firstCommit 2019
- commits 373
- committers 1
- files 52
- newestCommit 2021
-
-twitter https://twitter.com/thesephist
-
-writtenIn go markdown vim-script make yaml
+domainName dotink.co
+ registered 2019
+ awisRank
+  2022 6765719

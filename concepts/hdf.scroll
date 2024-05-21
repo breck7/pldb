@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id hdf
 name Hierarchical Data Format
 appeared 1992
 tags binaryDataFormat
 website https://support.hdfgroup.org/HDF5/
 standsFor Hierarchical Data Format
+
 fileExtensions hdf h4 hdf4 he2 h5 hdf5 he5
+fileType binary
+centralPackageRepositoryCount 0
 country United States
 originCommunity National Center for Supercomputing Applications
 
@@ -18,6 +22,3 @@ wikipedia https://en.wikipedia.org/wiki/Hierarchical_Data_Format
  revisionCount 248
  dailyPageViews 304
  appeared 2017
-
-fileType binary
-centralPackageRepositoryCount 0

@@ -1,10 +1,16 @@
 import ../code/conceptPage.scroll
+
 id promal
 name PROMAL
 appeared 1986
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Systems Management Associates
+
+lineCommentToken ;
+booleanTokens TRUE FALSE
 
 hasSemanticIndentation true
 hasLineComments true
@@ -12,9 +18,6 @@ hasLineComments true
 hasComments true
  ; A comment
 hasBooleans true
-
-lineCommentToken ;
-booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/PROMAL
  example
@@ -56,7 +59,5 @@ wikipedia https://en.wikipedia.org/wiki/PROMAL
  appeared 1984
 
 hopl https://hopl.info/showlanguage.prx?exp=1261
-
-centralPackageRepositoryCount 0
 
 isbndb 0

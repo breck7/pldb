@@ -1,31 +1,50 @@
 import ../code/conceptPage.scroll
+
 id red
 name Red
 appeared 2011
-tags pl
 creators Nenad Rakocevic
+tags pl
 website http://www.red-lang.org/
-documentation https://www.red-lang.org/p/documentation.html
+
+isOpenSource true
+writtenIn r java markdown xml yaml c html bourne-shell css dockerfile visual-basic csv
+tryItOnline red
+officialBlogUrl https://www.red-lang.org/
 fileExtensions red reds
+fileType text
+wordRank 554
+documentation https://www.red-lang.org/p/documentation.html
+faqPageUrl https://www.red-lang.org/2015/12/answers-to-community-questions.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Red
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 15634
+ committers 114
+ files 639
+ newestCommit 2024
 country China
 originCommunity https://github.com/red
-domainName red-lang.org
- registered 2010
- awisRank
-  2022 1393281
 
-writtenIn r java markdown xml yaml c html bourne-shell css dockerfile visual-basic csv
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken ;
-stringToken "
+pygmentsHighlighter Red
+ filename rebol.py
+ fileExtensions red reds
+rijuRepl https://riju.codes/red
+ example
+  Red [Title: "Main"]
+  
+  print "Hello, world!"
+  
+twitter https://twitter.com/red_lang
+leachim6 Red
+ filepath r/Red.red
+ fileExtensions red
+ example
+  Red [Needs: 'View]
+  view [text "Hello World"]
+languageServerProtocolProject https://github.com/bitbegin/redlangserver
+ writtenIn red
 
 githubRepo https://github.com/red/red
  stars 4845
@@ -37,12 +56,16 @@ githubRepo https://github.com/red/red
  description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file!
  issues 543
 
-repoStats
- firstCommit 2011
- commits 15634
- committers 114
- files 639
- newestCommit 2024
+lineCommentToken ;
+stringToken "
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Red_(programming_language)
  example
@@ -64,21 +87,17 @@ wikipedia https://en.wikipedia.org/wiki/Red_(programming_language)
  appeared 2011
  fileExtensions red reds
 
-githubLanguage Red
- fileExtensions red reds
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.red
- aliases red/system
- repos 453
+tiobe Red
+
+domainName red-lang.org
+ registered 2010
+ awisRank
+  2022 1393281
+
 githubBigQuery Red
  repos 98
  users 92
 
-pygmentsHighlighter Red
- filename rebol.py
- fileExtensions red reds
 linguistGrammarRepo https://github.com/Oldes/Sublime-Red
  firstCommit 2014
  lastCommit 2015
@@ -210,36 +229,16 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-Red
   ]
   push CATCH_ALL                              ;-- exceptions root barrier
   push 0                                      ;-- keep stack aligned on 64-bit
-languageServerProtocolProject https://github.com/bitbegin/redlangserver
- writtenIn red
-
-leachim6 Red
- filepath r/Red.red
- fileExtensions red
- example
-  Red [Needs: 'View]
-  view [text "Hello World"]
-rosettaCode http://www.rosettacode.org/wiki/Category:Red
-
-rijuRepl https://riju.codes/red
- example
-  Red [Title: "Main"]
-  
-  print "Hello, world!"
-  
-tryItOnline red
-
-officialBlogUrl https://www.red-lang.org/
-faqPageUrl https://www.red-lang.org/2015/12/answers-to-community-questions.html
-
-tiobe Red
-
-twitter https://twitter.com/red_lang
-fileType text
-wordRank 554
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
+
+githubLanguage Red
+ fileExtensions red reds
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.red
+ aliases red/system
+ repos 453
 
 semanticScholar 0

@@ -1,18 +1,81 @@
 import ../code/conceptPage.scroll
+
 id fortran
 name Fortran
 appeared 1957
-tags pl
 creators John Backus
+tags pl
+
+spec https://www.iso.org/obp/ui/#iso:std:iso-iec:1539:-1:ed-4:v1:en
+officialBlogUrl https://fortran-lang.org/en/news/
+gdbSupport true
+fileExtensions f for f90 f95 f03 f08 f15
+visualParadigm false
+fileType text
 documentation https://people.ucsc.edu/~dlee79/2019/fall/am129_209/chapters/chapt02/ch02_fortran_basic.html
 emailList https://gcc.gnu.org/mailman/listinfo/fortran
-spec https://www.iso.org/obp/ui/#iso:std:iso-iec:1539:-1:ed-4:v1:en
-reference https://en.wikipedia.org/wiki/Fortran_95_language_features
-fileExtensions f for f90 f95 f03 f08 f15
+faqPageUrl http://www.faqs.org/faqs/fortran-faq/
+antlr https://github.com/antlr/grammars-v4/tree/master/fortran77
+codeMirror fortran
+rosettaCode http://www.rosettacode.org/wiki/Category:Fortran
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+projectEuler Fortran
+ memberCount
+  2019 444
+  2022 464
+reference https://en.wikipedia.org/wiki/Fortran_95_language_features
 
-visualParadigm false
+helloWorldCollection Fortran
+ C     Hello World in Fortran
+ 
+       PROGRAM HELLO
+       WRITE (*,100)
+       STOP
+   100 FORMAT (' Hello World! ' /)
+       END
+ 
+pygmentsHighlighter Fortran
+ filename fortran.py
+ fileExtensions f03 f90 F03 F90
+rijuRepl https://riju.codes/fortran
+ example
+         PROGRAM hello
+            PRINT *, "Hello, world!"
+         END PROGRAM hello
+  
+subreddit https://reddit.com/r/fortran
+ memberCount
+  2017 1573
+  2022 6269
+leachim6 Fortran
+ filepath f/Fortran.f90
+ fileExtensions f90
+ example
+  print *,'Hello World'
+  end
+  
+languageServerProtocolProject https://github.com/hansec/fortran-language-server
+ writtenIn python
+compilerExplorer Fortran
+ example
+  ! Type your code here, or load an example.
+  real function square(x)
+      implicit none
+      real, intent(in) :: x
+      square = x * x
+      return
+  end function square
+  
+
+keywords ACCESS ACTION ADVANCE ALLOCATABLE ALLOCATE ASSIGN ASSIGNMENT BACKSPACE BLANK BLOCK CALL CASE CHARACTER CLOSE COMMON COMPLEX CONTAINS CONTINUE CYCLE DATA DEALLOCATE DEFAULT DELIM DIMENSION DIRECT DO DOUBLE ELSE ELSEWHERE END ENDFILE ENTRY EOR EQUIVALENCE ERR EXIST EXIT EXTERNAL FILE FMT FORM FORMAT FORMATTED FUNCTION GO IF IMPLICIT IN INOUT INQUIRE INTEGER INTENT INTERFACE INTRINSIC IOLENGTH 10STAT KIND LEN LOGICAL MODULE NAME NAMED NAMELIST NEXTREC NML NONE NULLIFY NUMBER ONLY OPEN OPENED OPERATOR OPTIONAL OUT PAD PARAMETER PAUSE POINTER POSITION PRECISION PRINT PRIVATE PROCEDURE PROGRAM PUBLIC READ READWRITE REAL REC RECl RECURSIVE RESULT RETURN REWIND SAVE SELECT SEQUENCE SEQUENTIAL SIZE STAT STATUS STOP SUBROUTINE TARGET THEN TO TYPE UNFORMATTED UNIT USE WHERE WHILE WRITE
+
+lineCommentToken C
+lineCommentToken !
+printToken print
+assignmentToken =
+stringToken '
 
 hasReservedWords false
  C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
@@ -75,13 +138,7 @@ isCaseSensitive false
 hasFixedPoint false
 hasScientificNotation true
 
-lineCommentToken C
-lineCommentToken !
-printToken print
-assignmentToken =
-stringToken '
-keywords ACCESS ACTION ADVANCE ALLOCATABLE ALLOCATE ASSIGN ASSIGNMENT BACKSPACE BLANK BLOCK CALL CASE CHARACTER CLOSE COMMON COMPLEX CONTAINS CONTINUE CYCLE DATA DEALLOCATE DEFAULT DELIM DIMENSION DIRECT DO DOUBLE ELSE ELSEWHERE END ENDFILE ENTRY EOR EQUIVALENCE ERR EXIST EXIT EXTERNAL FILE FMT FORM FORMAT FORMATTED FUNCTION GO IF IMPLICIT IN INOUT INQUIRE INTEGER INTENT INTERFACE INTRINSIC IOLENGTH 10STAT KIND LEN LOGICAL MODULE NAME NAMED NAMELIST NEXTREC NML NONE NULLIFY NUMBER ONLY OPEN OPENED OPERATOR OPTIONAL OUT PAD PARAMETER PAUSE POINTER POSITION PRECISION PRINT PRIVATE PROCEDURE PROGRAM PUBLIC READ READWRITE REAL REC RECl RECURSIVE RESULT RETURN REWIND SAVE SELECT SEQUENCE SEQUENTIAL SIZE STAT STATUS STOP SUBROUTINE TARGET THEN TO TYPE UNFORMATTED UNIT USE WHERE WHILE WRITE
-
+jupyterKernel https://github.com/sourceryinstitute/jupyter-CAF-kernel
 wikipedia https://en.wikipedia.org/wiki/Fortran
  example
   program average
@@ -134,29 +191,14 @@ wikipedia https://en.wikipedia.org/wiki/Fortran
  appeared 1957
  fileExtensions f for f90 f95 f03 f08 f15
 
-githubLanguage Fortran
- fileExtensions f f77 for fpp
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  xianyi OpenBLAS https://github.com/xianyi.png https://github.com/xianyi/OpenBLAS Fortran #4d41b1 2879 794 62 "OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version."
-  E3SM-Project E3SM https://github.com/E3SM-Project.png https://github.com/E3SM-Project/E3SM Fortran #4d41b1 117 76 2 "Energy Exascale Earth System Model source code."
- trendingProjectsCount 3
- type programming
- group Fortran
- aceMode text
- codemirrorMode fortran
- codemirrorMimeType text/x-fortran
- tmScope source.fortran
- repos 29127
+hopl https://hopl.info/showlanguage.prx?exp=8
+tiobe Fortran
+ currentRank 32
+
 githubBigQuery Fortran
  repos 2820
  users 2446
 
-antlr https://github.com/antlr/grammars-v4/tree/master/fortran77
-codeMirror fortran
-pygmentsHighlighter Fortran
- filename fortran.py
- fileExtensions f03 f90 F03 F90
 linguistGrammarRepo https://github.com/textmate/fortran.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -171,79 +213,6 @@ linguistGrammarRepo https://github.com/textmate/fortran.tmbundle
         data threemu/0.e9/
         end
   
-languageServerProtocolProject https://github.com/hansec/fortran-language-server
- writtenIn python
-
-projectEuler Fortran
- memberCount
-  2019 444
-  2022 464
-helloWorldCollection Fortran
- C     Hello World in Fortran
- 
-       PROGRAM HELLO
-       WRITE (*,100)
-       STOP
-   100 FORMAT (' Hello World! ' /)
-       END
- 
-leachim6 Fortran
- filepath f/Fortran.f90
- fileExtensions f90
- example
-  print *,'Hello World'
-  end
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Fortran
-
-compilerExplorer Fortran
- example
-  ! Type your code here, or load an example.
-  real function square(x)
-      implicit none
-      real, intent(in) :: x
-      square = x * x
-      return
-  end function square
-  
-rijuRepl https://riju.codes/fortran
- example
-         PROGRAM hello
-            PRINT *, "Hello, world!"
-         END PROGRAM hello
-  
-
-indeedJobs fortran engineer
- 2017 447
-linkedInSkill fortran
- 2018 148352
-officialBlogUrl https://fortran-lang.org/en/news/
-faqPageUrl http://www.faqs.org/faqs/fortran-faq/
-
-subreddit https://reddit.com/r/fortran
- memberCount
-  2017 1573
-  2022 6269
-
-tiobe Fortran
- currentRank 32
-hopl https://hopl.info/showlanguage.prx?exp=8
-
-gdbSupport true
-jupyterKernel https://github.com/sourceryinstitute/jupyter-CAF-kernel
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Fortran 90/95 For Scientists And Engineers|1997|Stephen J. Chapman|1130565|4.07|41|3
- Fortran 95/2003 for Scientists and Engineers|2007|Stephen J. Chapman|1175133|4.13|30|0
- FORTRAN 77 for Engineers and Scientists with an Introduction to FORTRAN 90|1995|Larry R. Nyhoff|5152402|2.38|8|0
- Structured FORTRAN 77 for Engineers and Scientists|1983|Delores M. Etter|3960231|3.89|9|1
- Programming In Fortran: Structured Programming With Fortran Iv And Fortran 77||Vladimir Zwass|4868017|5.00|1|1
- FORTRAN 77 for engineers and scientists|1985|Larry R. Nyhoff|2864205|4.33|3|1
- Schaum's Outline of Programming with FORTRAN Including Structured FORTRAN|1978|Seymour Lipschutz|1475892|0.0|0|0
- Fortran 77 Programming: With An Introduction To Fortran 90 Standard|1990|T.M.R. Ellis|1315546|4.50|2|0
 
 isbndb 313
  year|publisher|title|authors|isbn13
@@ -561,6 +530,26 @@ isbndb 313
  |Wiley|Digital Computing: Fortran Iv And Its Applications In Behavioral Science|Lehman, Richard S.|9780471524007
  1988|Blackwell Scientific Publications|An Introduction to Programming in Fortran 77 (Computer Science Texts)|J. L. Schonfelder and J. S. Morgan|9780632011841
 
+githubLanguage Fortran
+ fileExtensions f f77 for fpp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  xianyi OpenBLAS https://github.com/xianyi.png https://github.com/xianyi/OpenBLAS Fortran #4d41b1 2879 794 62 "OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version."
+  E3SM-Project E3SM https://github.com/E3SM-Project.png https://github.com/E3SM-Project/E3SM Fortran #4d41b1 117 76 2 "Energy Exascale Earth System Model source code."
+ trendingProjectsCount 3
+ type programming
+ group Fortran
+ aceMode text
+ codemirrorMode fortran
+ codemirrorMimeType text/x-fortran
+ tmScope source.fortran
+ repos 29127
+
+indeedJobs fortran engineer
+ 2017 447
+linkedInSkill fortran
+ 2018 148352
+
 semanticScholar 37
  year|title|doi|citations|influentialCitations|authors|paperId
  1993|The High Performance Fortran Handbook|10.1063/1.4823319|791|62|C. Koelbel and D. Loveman and R. Schreiber and G. Steele and M. Zosel|e6731a83852d4a41e7266b31eb32276538514e93
@@ -600,3 +589,14 @@ semanticScholar 37
  1989|Aftran: Array Fortran programming language|10.1109/PARBSE.1990.77218|2|0|G. A. Riccardi and U. Chandra and J. C. Vagi|6c2f56c3ca6fb4470da97f6a0d55f811b14768b7
  2007|Fortran programming language and Scientific Programming: 50 Years of mutual growth|10.1155/2007/979872|2|0|B. Szymanski|7a6ac390da0ff74c0318e1d937e138bd817c4b1a
  1982|The fortran programming language, recent developments and a view of the future|10.1109/MCS.1982.1103762|2|0|L. Meissner|1fe3c69dba68ef694a5ad378a160ad8f2772a1a3
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Fortran 90/95 For Scientists And Engineers|1997|Stephen J. Chapman|1130565|4.07|41|3
+ Fortran 95/2003 for Scientists and Engineers|2007|Stephen J. Chapman|1175133|4.13|30|0
+ FORTRAN 77 for Engineers and Scientists with an Introduction to FORTRAN 90|1995|Larry R. Nyhoff|5152402|2.38|8|0
+ Structured FORTRAN 77 for Engineers and Scientists|1983|Delores M. Etter|3960231|3.89|9|1
+ Programming In Fortran: Structured Programming With Fortran Iv And Fortran 77||Vladimir Zwass|4868017|5.00|1|1
+ FORTRAN 77 for engineers and scientists|1985|Larry R. Nyhoff|2864205|4.33|3|1
+ Schaum's Outline of Programming with FORTRAN Including Structured FORTRAN|1978|Seymour Lipschutz|1475892|0.0|0|0
+ Fortran 77 Programming: With An Introduction To Fortran 90 Standard|1990|T.M.R. Ellis|1315546|4.50|2|0

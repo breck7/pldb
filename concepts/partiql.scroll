@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id partiql
 name partiql
 appeared 2019
-tags queryLanguage
 creators James Siri
+tags queryLanguage
 website https://partiql.org/
-reference https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/
+
+writtenIn kotlin sql markdown gradle csv yaml java asciidoc bourne-shell xml html
+repoStats
+ firstCommit 2019
+ commits 2365
+ committers 39
+ files 1356
+ newestCommit 2024
 country United States
 originCommunity Amazon Web Services, Inc
-domainName partiql.org
- registered 2019
- awisRank
-  2022 1299218
+reference https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/
 
 githubRepo https://github.com/partiql/partiql-lang-kotlin
  firstCommit 2019
@@ -23,11 +28,7 @@ githubRepo https://github.com/partiql/partiql-lang-kotlin
  description An implementation of PartiQL written in Kotlin.
  issues 182
 
-repoStats
- firstCommit 2019
- commits 2365
- committers 39
- files 1356
- newestCommit 2024
-
-writtenIn kotlin sql markdown gradle csv yaml java asciidoc bourne-shell xml html
+domainName partiql.org
+ registered 2019
+ awisRank
+  2022 1299218

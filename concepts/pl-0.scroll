@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id pl-0
 name PL/0
 appeared 1976
-tags pl
 creators Niklaus Wirth
-reference https://web.archive.org/web/20060712015332/http://www.cs.rochester.edu/courses/254/PLzero/guide.pdf
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity Eidgenössische Technische Hochschule Zürich
+reference https://web.archive.org/web/20060712015332/http://www.cs.rochester.edu/courses/254/PLzero/guide.pdf
 
 wikipedia https://en.wikipedia.org/wiki/PL/0
  example
@@ -84,6 +88,3 @@ wikipedia https://en.wikipedia.org/wiki/PL/0
  appeared 1976
 
 hopl https://hopl.info/showlanguage.prx?exp=2592
-
-fileType text
-centralPackageRepositoryCount 0

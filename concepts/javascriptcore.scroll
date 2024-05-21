@@ -1,11 +1,12 @@
 import ../code/conceptPage.scroll
+
 id javascriptcore
 name JavaScriptCore
 appeared 2002
 tags vm
 conceptDescription The JavaScriptCore framework provides the ability to evaluate JavaScript programs from within Swift, Objective-C, and C-based apps. You can use also use JavaScriptCore to insert custom objects into the JavaScript environment.
-reference https://en.wikipedia.org/wiki/WebKit#JavaScriptCore
-country United States
-originCommunity Apple, Inc
 
 inputLanguages javascript
+country United States
+originCommunity Apple, Inc
+reference https://en.wikipedia.org/wiki/WebKit#JavaScriptCore

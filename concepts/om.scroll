@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id om
 name Om
 appeared 2012
-tags pl
 creators Jason Erb
+tags pl
 website https://www.om-language.org/
+
+isOpenSource true
+writtenIn cpp cmake markdown html css bourne-shell
+repoStats
+ firstCommit 2012
+ commits 678
+ committers 2
+ files 277
+ newestCommit 2021
 country Canada
 originCommunity https://github.com/sparist/Om/issues
-domainName om-language.org
-
-writtenIn cpp cmake markdown html css bourne-shell
 
 githubRepo https://github.com/sparist/Om
  firstCommit 2012
@@ -21,11 +28,4 @@ githubRepo https://github.com/sparist/Om
  description The Om programming language.
  issues 11
 
-repoStats
- firstCommit 2012
- commits 678
- committers 2
- files 277
- newestCommit 2021
-
-isOpenSource true
+domainName om-language.org

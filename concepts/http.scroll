@@ -1,14 +1,41 @@
 import ../code/conceptPage.scroll
+
 id http
 name HTTP
 appeared 1989
+creators Tim Berners-Lee
 tags protocol
+
+fileType na
+wordRank 4663
 documentation https://www.w3.org/Protocols/rfc2616/rfc2616.html
+codeMirror http
+centralPackageRepositoryCount 0
 country United States
 originCommunity The World Wide Web Consortium
-
 funFact https://twitter.com/bagder/status/1567162794092404742
  http://http://http://@http://http://?http://#http:// is a legitimate URL
+
+pygmentsHighlighter HTTP
+ filename textfmts.py
+leachim6 HTTP
+ filepath h/HTTP.py
+ fileExtensions py
+ example
+  import http.server
+  import socketserver
+  from http import HTTPStatus
+  
+  
+  class Handler(http.server.SimpleHTTPRequestHandler):
+      def do_GET(self):
+          self.send_response(HTTPStatus.OK)
+          self.end_headers()
+          self.wfile.write(b'Hello World')
+  
+  
+  httpd = socketserver.TCPServer(('', 8000), Handler)
+  httpd.serve_forever()
 
 wikipedia https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
  example
@@ -40,56 +67,11 @@ wikipedia https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
  revisionCount 4080
  appeared 1999
 
-githubLanguage HTTP
- fileExtensions http
- trendingProjectsCount 0
- type data
- aceMode text
- codemirrorMode http
- codemirrorMimeType message/http
- tmScope source.httpspec
- repos 0
-
-codeMirror http
-pygmentsHighlighter HTTP
- filename textfmts.py
 linguistGrammarRepo https://github.com/samsalisbury/Sublime-HTTP
  firstCommit 2014
  lastCommit 2015
  committerCount 1
  commitCount 3
-
-leachim6 HTTP
- filepath h/HTTP.py
- fileExtensions py
- example
-  import http.server
-  import socketserver
-  from http import HTTPStatus
-  
-  
-  class Handler(http.server.SimpleHTTPRequestHandler):
-      def do_GET(self):
-          self.send_response(HTTPStatus.OK)
-          self.end_headers()
-          self.wfile.write(b'Hello World')
-  
-  
-  httpd = socketserver.TCPServer(('', 8000), Handler)
-  httpd.serve_forever()
-
-indeedJobs http developer
- 2022 771996
-
-fileType na
-wordRank 4663
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HTTP Developer's Handbook|2003|Chris Shiflett|1015229|3.78|18|1
- What Every Web Developer Should Know About HTTP (OdeToCode, #1)|2012|K. Scott Allen|26214178|4.07|351|29
- HTTP Programming Recipes for C# Bots|2007|Jeff Heaton|2344177|3.25|8|1
 
 isbndb 9
  year|publisher|title|authors|isbn13
@@ -103,9 +85,26 @@ isbndb 9
  18-11-2015|Packt Publishing|Nginx HTTP Server|Clement Nedelcu|9781785285912
  2007|Heaton Research Incorporated|Http Programming Recipes For Java Bots|Jeff Heaton|9780977320660
 
+githubLanguage HTTP
+ fileExtensions http
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ codemirrorMode http
+ codemirrorMimeType message/http
+ tmScope source.httpspec
+ repos 0
+
+indeedJobs http developer
+ 2022 771996
+
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  2020|Research of MQTT, CoAP, HTTP and XMPP IoT Communication protocols for Embedded Systems|10.1109/ET50336.2020.9238208|8|0|Neven Nikolov|09a8411e2926d5ed9245666df874d6af2fb0c787
  2019|Implementing ICN over P4 in HTTP Scenario|10.1109/HotICN48464.2019.9063219|3|0|Weiwei Feng and Xiaobin Tan and Yang Jin|88bb0732d3155a14f93c721f4db45eea260e3c3e
 
-creators Tim Berners-Lee
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTTP Developer's Handbook|2003|Chris Shiflett|1015229|3.78|18|1
+ What Every Web Developer Should Know About HTTP (OdeToCode, #1)|2012|K. Scott Allen|26214178|4.07|351|29
+ HTTP Programming Recipes for C# Bots|2007|Jeff Heaton|2344177|3.25|8|1

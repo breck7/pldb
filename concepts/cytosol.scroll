@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id cytosol
 name cytosol
 appeared 2020
-tags pl
 creators tiatomee
+tags pl
+
+writtenIn rust toml yaml markdown c make
+repoStats
+ firstCommit 2020
+ commits 59
+ committers 4
+ files 83
+ newestCommit 2022
 
 githubRepo https://github.com/cuddlefishie/cytosol
  firstCommit 2020
@@ -14,12 +23,3 @@ githubRepo https://github.com/cuddlefishie/cytosol
  updated 2022
  description A programming language somewhat resembling cellular processes.
  issues 0
-
-repoStats
- firstCommit 2020
- commits 59
- committers 4
- files 83
- newestCommit 2022
-
-writtenIn rust toml yaml markdown c make

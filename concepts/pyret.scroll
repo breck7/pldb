@@ -1,24 +1,20 @@
 import ../code/conceptPage.scroll
+
 id pyret
 name pyret
 appeared 2011
-tags pl
 creators Joe Gibbs Politz
-conceptDescription Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
+tags pl
 website https://www.pyret.org/
+conceptDescription Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
+
+repoStats
+ firstCommit 2012
+ commits 10731
+ committers 85
+ files 631
 country United States
 originCommunity Brown University
-domainName pyret.org
- registered 2011
- awisRank
-  2022 1111494
-
-hasPrintDebugging true
-hasStrings true
- 'Hello world'
-
-printToken print
-stringToken '
 
 example
  data BinTree:
@@ -37,6 +33,12 @@ example
    node4 = node(4, leaf, leaf)
    tree-sum(node(5, node4, leaf)) is 9
  end
+leachim6 Pyret
+ filepath p/Pyret.arr
+ fileExtensions arr
+ example
+  print('Hello World')
+  
 
 githubRepo https://github.com/brownplt/pyret-lang
  firstCommit 2012
@@ -48,17 +50,16 @@ githubRepo https://github.com/brownplt/pyret-lang
  description The Pyret language.
  issues 439
 
-repoStats
- firstCommit 2012
- commits 10731
- committers 85
- files 631
+printToken print
+stringToken '
 
-leachim6 Pyret
- filepath p/Pyret.arr
- fileExtensions arr
- example
-  print('Hello World')
-  
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
+
+domainName pyret.org
+ registered 2011
+ awisRank
+  2022 1111494
 
 isbndb 0

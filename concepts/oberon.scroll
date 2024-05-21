@@ -1,17 +1,55 @@
 import ../code/conceptPage.scroll
+
 id oberon
 name Oberon
 appeared 1986
-tags pl
 creators Niklaus Wirth
+tags pl
 website http://www.projectoberon.com/
+
+fileType text
 documentation https://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf
+faqPageUrl http://www.projectoberon.net/txt/FAQ.txt
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity Eidgenössische Technische Hochschule Zürich
-domainName projectoberon.com
- registered 2011
- awisRank
-  2022 6362528
+projectEuler Oberon
+ memberCount
+  2019 2
+  2022 3
+
+rijuRepl https://riju.codes/oberon
+ example
+  MODULE Main;
+  
+  IMPORT Out;
+  
+  BEGIN
+    Out.String("Hello, world!");
+    Out.Ln;
+  END Main.
+  
+subreddit https://www.reddit.com/r/Oberon
+ memberCount
+  2022 289
+leachim6 Oberon
+ filepath o/Oberon.o
+ fileExtensions o
+ example
+  MODULE HelloWorld;
+  
+  IMPORT Out;
+  
+  BEGIN
+     Out.Open;
+     Out.String('Hello World');
+  END HelloWorld.
+  
+
+multiLineCommentTokens (* *)
+printToken Out.String
+assignmentToken :=
+stringToken '
 
 hasPrintDebugging true
 hasPointers true
@@ -25,11 +63,6 @@ hasSemanticIndentation false
 hasAssignment true
 hasStrings true
  'Hello world'
-
-multiLineCommentTokens (* *)
-printToken Out.String
-assignmentToken :=
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
  example
@@ -80,51 +113,18 @@ wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
  revisionCount 388
  appeared 1986
 
-projectEuler Oberon
- memberCount
-  2019 2
-  2022 3
-leachim6 Oberon
- filepath o/Oberon.o
- fileExtensions o
- example
-  MODULE HelloWorld;
-  
-  IMPORT Out;
-  
-  BEGIN
-     Out.Open;
-     Out.String('Hello World');
-  END HelloWorld.
-  
+hopl https://hopl.info/showlanguage.prx?exp=1415
+tiobe Oberon
 
-rijuRepl https://riju.codes/oberon
- example
-  MODULE Main;
-  
-  IMPORT Out;
-  
-  BEGIN
-    Out.String("Hello, world!");
-    Out.Ln;
-  END Main.
-  
+domainName projectoberon.com
+ registered 2011
+ awisRank
+  2022 6362528
+
+isbndb 0
 
 indeedJobs applescript engineer
  2022 0
-faqPageUrl http://www.projectoberon.net/txt/FAQ.txt
-
-subreddit https://www.reddit.com/r/Oberon
- memberCount
-  2022 289
-
-tiobe Oberon
-hopl https://hopl.info/showlanguage.prx?exp=1415
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 21
  year|title|doi|citations|influentialCitations|authors|paperId

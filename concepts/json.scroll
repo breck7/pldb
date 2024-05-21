@@ -1,18 +1,32 @@
 import ../code/conceptPage.scroll
+
 id json
 name JSON
 appeared 2001
-tags dataNotation
 creators Douglas Crockford
+tags dataNotation
 website https://www.json.org/
+
+clocExtensions arcconfig avsc composer.lock geojson gltf har htmlhintrc json json-tmlanguage jsonl mcmeta mcmod.info tern-config tern-project tfstate tfstate.backup topojson watchmanconfig webapp webmanifest yyp
+fileType text
 documentation https://www.json.org/json-en.html
-reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
+antlr https://github.com/antlr/grammars-v4/tree/master/json
+centralPackageRepositoryCount 0
 country United States
 originCommunity State Software
-domainName json.org
- registered 2000
- awisRank
-  2022 62633
+reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
+
+pygmentsHighlighter JSON
+ filename data.py
+ fileExtensions json Pipfile.lock
+leachim6 JSON
+ filepath j/JSON.json
+ fileExtensions json
+ example
+  { "hello": "world" }
+  
+languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
+ writtenIn typescript
 
 canWriteToDisk false
 hasBooleans true
@@ -52,25 +66,15 @@ wikipedia https://en.wikipedia.org/wiki/JSON
  revisionCount 2473
  appeared 2013
 
-githubLanguage JSON
- fileExtensions json 4DForm 4DProject avsc geojson gltf har ice JSON-tmLanguage jsonl mcmeta tfstate tfstatebackup topojson webapp webmanifest yy yyp
- trendingProjectsCount 0
- type data
- filenames .arcconfig .auto-changelog .c8rc .htmlhintrc .imgbotconfig .nycrc .tern-config .tern-project .watchmanconfig Pipfile.lock composer.lock mcmod.info
- aceMode json
- codemirrorMode javascript
- codemirrorMimeType application/json
- tmScope source.json
- aliases geojson or jsonl or topojson
- repos 133
+domainName json.org
+ registered 2000
+ awisRank
+  2022 62633
+
 githubBigQuery JSON
  repos 6
  users 6
 
-antlr https://github.com/antlr/grammars-v4/tree/master/json
-pygmentsHighlighter JSON
- filename data.py
- fileExtensions json Pipfile.lock
 linguistGrammarRepo https://github.com/textmate/json.tmbundle
  firstCommit 2007
  lastCommit 2016
@@ -85,23 +89,6 @@ linguistGrammarRepo https://github.com/textmate/json.tmbundle
           "tags": ["Bar","Eek"],
           "stock": { "warehouse":300, "retail":20 }
   }
-languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
- writtenIn typescript
-
-leachim6 JSON
- filepath j/JSON.json
- fileExtensions json
- example
-  { "hello": "world" }
-  
-
-indeedJobs json developer
- 2017 5872
-linkedInSkill json
- 2018 335550
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 17
  year|publisher|title|authors|isbn13
@@ -123,6 +110,23 @@ isbndb 17
  20140323|Emereo|JSON 296 Success Secrets - 296 Most Asked Questions On JSON - What You Need To Know|Laura Davenport|9781488539138
  |Packt Pub.|Developing RESTful services with JAX-RS 2.0, WebSockets, and JSON|Kalali, Masoud.|9781782178125
 
+githubLanguage JSON
+ fileExtensions json 4DForm 4DProject avsc geojson gltf har ice JSON-tmLanguage jsonl mcmeta tfstate tfstatebackup topojson webapp webmanifest yy yyp
+ trendingProjectsCount 0
+ type data
+ filenames .arcconfig .auto-changelog .c8rc .htmlhintrc .imgbotconfig .nycrc .tern-config .tern-project .watchmanconfig Pipfile.lock composer.lock mcmod.info
+ aceMode json
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.json
+ aliases geojson or jsonl or topojson
+ repos 133
+
+indeedJobs json developer
+ 2017 5872
+linkedInSkill json
+ 2018 335550
+
 semanticScholar 10
  year|title|doi|citations|influentialCitations|authors|paperId
  2014|Simplifying the interaction between cognitive models and task environments with the JSON Network Interface|10.3758/s13428-013-0425-z|16|4|Ryan M. Hope and M. Schoelles and Wayne D. Gray|0326b8861e0bda7a0657a2d9e835a727fb31d0b2
@@ -135,5 +139,3 @@ semanticScholar 10
  2016|Implementation of AJAX and JSON to Improve Web Application Performance|10.26623/transformatika.v14i1.363|1|0|M. Z. Abdillah|316dba7d3e7a522ce0b326fa6535d370872b1f1f
  2019|A Survey on JSON Data Stores|10.4018/978-1-5225-8446-9.CH003|1|0|L. Irshad and Zongmin Ma and Li Yan|228bef45279542a6205efb8d7ba5624263936514
  2020|Research and Application of Data Exchange based on JSON|10.1109/IPEC49694.2020.9115155|1|0|Changxia Sun and Xia Zeng and Chengzhong Sun and Haiping Si and Yanling Li|d5be81bd9bc79273083731c53f7dbd079688095b
-
-clocExtensions arcconfig avsc composer.lock geojson gltf har htmlhintrc json json-tmlanguage jsonl mcmeta mcmod.info tern-config tern-project tfstate tfstate.backup topojson watchmanconfig webapp webmanifest yyp

@@ -1,20 +1,26 @@
 import ../code/conceptPage.scroll
+
 id squeak
 name Squeak
 appeared 1996
 tags pl
 website http://www.squeak.org
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apple Inc and Walt Disney Imagineering Research & Development, Inc.
-domainName squeak.org
- registered 1999
- awisRank
-  2022 1641904
+
+helloWorldCollection Squeak
+ "Hello world in Squeak"
+ 
+ Transcript show: 'Hello World'
+twitter https://twitter.com/squeaksmalltalk
+
+stringToken '
 
 hasStrings true
  'Hello world'
-
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Squeak
  related smalltalk newsqueak ios pharo lisp logo simula self etoys scratch linux
@@ -26,16 +32,12 @@ wikipedia https://en.wikipedia.org/wiki/Squeak
  revisionCount 339
  appeared 1996
 
-helloWorldCollection Squeak
- "Hello world in Squeak"
- 
- Transcript show: 'Hello World'
-
 tiobe Squeak
 
-twitter https://twitter.com/squeaksmalltalk
-fileType text
-centralPackageRepositoryCount 0
+domainName squeak.org
+ registered 1999
+ awisRank
+  2022 1641904
 
 isbndb 3
  year|publisher|title|authors|isbn13

@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id eex
 name EEX
 appeared 2012
 tags template
-conceptDescription EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
 website https://hexdocs.pm/eex/EEx.html
-reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+conceptDescription EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
+
+clocExtensions eex
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity Elixir Team
+reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
 
 example
  <%= if true do %>
@@ -15,18 +20,6 @@ example
  <% else %>
    This will never appear
  <% end %>
-
-githubLanguage HTML+EEX
- fileExtensions eex htmlheex htmlleex
- trendingProjectsCount 0
- type markup
- group HTML
- aceMode text
- codemirrorMode htmlmixed
- codemirrorMimeType text/html
- tmScope text.html.elixir
- aliases eex or heex or leex
- repos 34
 
 linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
  firstCommit 2011
@@ -62,7 +55,14 @@ linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
    
   <%= link "New book", to: book_path(@conn, :new) %>
 
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions eex
+githubLanguage HTML+EEX
+ fileExtensions eex htmlheex htmlleex
+ trendingProjectsCount 0
+ type markup
+ group HTML
+ aceMode text
+ codemirrorMode htmlmixed
+ codemirrorMimeType text/html
+ tmScope text.html.elixir
+ aliases eex or heex or leex
+ repos 34

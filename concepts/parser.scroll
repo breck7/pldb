@@ -1,16 +1,41 @@
 import ../code/conceptPage.scroll
+
 id parser
 name Parser 3
 appeared 1997
-tags pl
 creators Konstantin Morshnev
+tags pl
 website http://www.parser.ru/
 aka parser3
+
+isOpenSource true
+fileType text
+quineRelay Parser 3
+centralPackageRepositoryCount 0
+ubuntuPackage parser3-cgi
 country Russia
 originCommunity Art. Lebedev Studio
-domainName parser.ru
- awisRank
-  2022 7803956
+
+helloWorldCollection Parser 3
+ # Hello World in Parser
+ 
+ Hello world!
+rijuRepl https://riju.codes/parser3
+ example
+  $console:line[Hello, world!]
+leachim6 Parser
+ filepath p/Parser.p
+ fileExtensions p
+ example
+  @main[]
+    ^rem{Will print "Hello World" when run as CGI script}
+    $hello[Hello World]
+    $result[$hello]
+  
+
+lineCommentToken #
+printToken $console:line
+stringToken "
 
 hasLineComments true
  # A comment
@@ -20,10 +45,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken #
-printToken $console:line
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Parser_(CGI_language)
  related xml pcre
@@ -35,26 +56,6 @@ wikipedia https://en.wikipedia.org/wiki/Parser_(CGI_language)
  revisionCount 29
  appeared 1997
 
-helloWorldCollection Parser 3
- # Hello World in Parser
- 
- Hello world!
-leachim6 Parser
- filepath p/Parser.p
- fileExtensions p
- example
-  @main[]
-    ^rem{Will print "Hello World" when run as CGI script}
-    $hello[Hello World]
-    $result[$hello]
-  
-quineRelay Parser 3
-
-rijuRepl https://riju.codes/parser3
- example
-  $console:line[Hello, world!]
-
-ubuntuPackage parser3-cgi
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName parser.ru
+ awisRank
+  2022 7803956

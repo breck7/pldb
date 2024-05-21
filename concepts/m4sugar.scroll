@@ -1,23 +1,16 @@
 import ../code/conceptPage.scroll
+
 id m4sugar
 name M4Sugar
 appeared 2003
 tags pl
 conceptDescription M4 by itself provides only a small, but sufficient, set of all-purpose macros. M4sugar introduces additional generic macros. Its name was coined by Lars J. Aas: “Readability And Greater Understanding Stands 4 M4sugar”
-reference http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Free Software Foundation, Inc.
-
-githubLanguage M4Sugar
- fileExtensions m4
- trendingProjectsCount 0
- type programming
- group M4
- filenames configure.ac
- aceMode text
- tmScope source.m4
- aliases autoconf
- repos 0
+reference http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
 
 linguistGrammarRepo https://github.com/Alhadis/language-etc
  sampleCount 2
@@ -68,5 +61,13 @@ linguistGrammarRepo https://github.com/Alhadis/language-etc
   	[m4_foreach([item], m4_list_contents([$1]), m4_if(item, [$2], [[$3]], [[$4]]))]
   )])
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage M4Sugar
+ fileExtensions m4
+ trendingProjectsCount 0
+ type programming
+ group M4
+ filenames configure.ac
+ aceMode text
+ tmScope source.m4
+ aliases autoconf
+ repos 0

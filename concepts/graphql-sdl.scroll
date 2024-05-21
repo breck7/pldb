@@ -1,21 +1,14 @@
 import ../code/conceptPage.scroll
+
 id graphql-sdl
 name GraphQL Schema Definition Language
 appeared 2018
 tags idl
 conceptDescription A type definition syntax to the GraphQL specification.
-reference https://github.com/graphql/graphql-spec/pull/90
+
 country Various
 originCommunity https://github.com/graphql/
-
-hasComments true
-hasMultiLineComments false
-hasLineComments true
- “”” A comment
-hasSemanticIndentation false
-
-lineCommentToken #
-lineCommentToken “””
+reference https://github.com/graphql/graphql-spec/pull/90
 
 example
  # Enumeration type for a level of priority
@@ -45,3 +38,12 @@ example
    query: Query
    mutation: Mutation
  }
+
+lineCommentToken #
+lineCommentToken “””
+
+hasComments true
+hasMultiLineComments false
+hasLineComments true
+ “”” A comment
+hasSemanticIndentation false

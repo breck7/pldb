@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id xgboost-model
 name Xgboost
 appeared 2014
 tags binaryDataFormat
 conceptDescription The model and data format of XGBoost is exchangeable, which means the model trained by one language can be loaded in another. This means you can train the model using R, while running prediction using Java or C++, which are more common in production systems. You can also train the model using distributed versions, and load them in from Python to do some interactive analysis.
-reference https://rdrr.io/cran/xgboost/man/xgb.dump.html
+
+isOpenSource true
+writtenIn cpp python cuda scala r restructuredtext bourne-shell java markdown yaml cmake dockerfile c csv xml make powershell css svg protobuf json toml m4 tex groovy javascript jupyter-notebook ini
 fileExtensions model
+centralPackageRepositoryCount 0
+reference https://rdrr.io/cran/xgboost/man/xgb.dump.html
 
 wikipedia https://en.wikipedia.org/wiki/Xgboost
  related linux java python r julia scala scikit-learn
@@ -16,8 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/Xgboost
  revisionCount 1
  dailyPageViews 362
  appeared 2014
-
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp python cuda scala r restructuredtext bourne-shell java markdown yaml cmake dockerfile c csv xml make powershell css svg protobuf json toml m4 tex groovy javascript jupyter-notebook ini

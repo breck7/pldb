@@ -1,18 +1,34 @@
 import ../code/conceptPage.scroll
+
 id falcon
 name Falcon
 appeared 2003
-tags pl
 creators Giancarlo Niccolai
+tags pl
 website http://falconpl.org
+
 fileExtensions ftd fal fam
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Falcon
+centralPackageRepositoryCount 0
 country Italy
 originCommunity https://github.com/falconpl
-domainName falconpl.org
- registered 2005
- awisRank
-  2022 6280562
-  2017 6927367
+
+helloWorldCollection Falcon
+ // Hello World in Falcon
+ 
+ > "Hello World!"
+leachim6 Falcon
+ filepath f/Falcon.fal
+ fileExtensions fal
+ example
+  #!/usr/bin/env falcon
+  
+  > "Hello World"
+  
+
+lineCommentToken //
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -20,9 +36,6 @@ hasLineComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Falcon_(programming_language)
  example
@@ -38,25 +51,14 @@ wikipedia https://en.wikipedia.org/wiki/Falcon_(programming_language)
  appeared 2003
  fileExtensions ftd fal fam
 
-helloWorldCollection Falcon
- // Hello World in Falcon
- 
- > "Hello World!"
-leachim6 Falcon
- filepath f/Falcon.fal
- fileExtensions fal
- example
-  #!/usr/bin/env falcon
-  
-  > "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Falcon
-
-tiobe Falcon
 hopl https://hopl.info/showlanguage.prx?exp=7122
+tiobe Falcon
 
-fileType text
-centralPackageRepositoryCount 0
+domainName falconpl.org
+ registered 2005
+ awisRank
+  2022 6280562
+  2017 6927367
 
 isbndb 0
 

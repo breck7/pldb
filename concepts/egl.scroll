@@ -1,17 +1,33 @@
 import ../code/conceptPage.scroll
+
 id egl
 name EGL
 appeared 2008
 tags pl
 standsFor Enterprise Generation Language
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:EGL
+centralPackageRepositoryCount 0
 originCommunity IBM
+
+leachim6 Egl
+ filepath e/Egl.egl
+ fileExtensions egl
+ example
+  program HelloWorld
+      function main()
+          SysLib.writeStdout("Hello World");
+      end
+  end
+  
+
+printToken SysLib.writeStdout
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken SysLib.writeStdout
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/EGL_(programming_language)
  example
@@ -51,23 +67,8 @@ wikipedia https://en.wikipedia.org/wiki/EGL_(programming_language)
  revisionCount 104
  appeared 2008
 
-leachim6 Egl
- filepath e/Egl.egl
- fileExtensions egl
- example
-  program HelloWorld
-      function main()
-          SysLib.writeStdout("Hello World");
-      end
-  end
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:EGL
-
-tiobe EGL
 hopl https://hopl.info/showlanguage.prx?exp=7930
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe EGL
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

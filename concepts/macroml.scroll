@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id macroml
 name MacroML
 appeared 2001
 tags pl
-country United States
-originCommunity Indiana University && Yale University
 firstAnnouncement https://www.cs.indiana.edu/~sabry/papers/macroml.pdf
 announcementMethod paper
+
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity Indiana University && Yale University
 
 wikipedia https://en.wikipedia.org/wiki/MacroML
  related scheme
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/MacroML
  created 2005
  backlinksCount 5
  revisionCount 18
-
-fileType text
-centralPackageRepositoryCount 0

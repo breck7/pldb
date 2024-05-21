@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id bbcode
 name BBCode
 appeared 1998
 tags textMarkup
+
+fileType text
+centralPackageRepositoryCount 0
 country Unknown
 originCommunity Coalson LLC
+
+pygmentsHighlighter BBCode
+ filename markup.py
 
 wikipedia https://en.wikipedia.org/wiki/BBCode
  example
@@ -26,11 +33,5 @@ wikipedia https://en.wikipedia.org/wiki/BBCode
  revisionCount 794
  dailyPageViews 358
  appeared 1998
-
-pygmentsHighlighter BBCode
- filename markup.py
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

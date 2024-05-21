@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id sugarss
 name SugarSS
 appeared 2016
-tags textMarkup
 creators Andrey Sitnik
+tags textMarkup
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+isOpenSource true
+writtenIn javascript json css sugarss yaml markdown svg
+clocExtensions sss
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 212
+ committers 19
+ files 51
+ newestCommit 2023
 
 githubRepo https://github.com/postcss/sugarss
  firstCommit 2016
@@ -23,21 +28,13 @@ githubRepo https://github.com/postcss/sugarss
  description Indent-based CSS syntax for PostCSS
  issues 1
 
-repoStats
- firstCommit 2016
- commits 212
- committers 19
- files 51
- newestCommit 2023
+lineCommentToken //
 
-githubLanguage SugarSS
- fileExtensions sss
- trendingProjectsCount 0
- type markup
- group CSS
- aceMode text
- tmScope source.css.postcss.sugarss
- repos 0
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
  firstCommit 2013
@@ -57,9 +54,11 @@ linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostC
       background: inline("./logo.png")
       @mixin size $big
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-clocExtensions sss
-writtenIn javascript json css sugarss yaml markdown svg
+githubLanguage SugarSS
+ fileExtensions sss
+ trendingProjectsCount 0
+ type markup
+ group CSS
+ aceMode text
+ tmScope source.css.postcss.sugarss
+ repos 0

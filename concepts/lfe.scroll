@@ -1,23 +1,31 @@
 import ../code/conceptPage.scroll
+
 id lfe
 name LFE
 appeared 2008
-tags pl
 creators Robert Virding
-documentation http://docs.lfe.io/current/index.html
-reference https://lfe.io/
+tags pl
 standsFor Lisp Flavored Erlang
+
+isOpenSource true
+officialBlogUrl https://blog.lfe.io/
+releaseNotesUrl http://docs.lfe.io/v0.7/classic-docs/release-notes.html
+clocExtensions lfe
+fileType text
+documentation http://docs.lfe.io/current/index.html
+rosettaCode http://www.rosettacode.org/wiki/Category:LFE
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/lfe
-releaseNotesUrl http://docs.lfe.io/v0.7/classic-docs/release-notes.html
+reference https://lfe.io/
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/LFE_(programming_language)
  example
@@ -73,15 +81,6 @@ wikipedia https://en.wikipedia.org/wiki/LFE_(programming_language)
  appeared 2008
  fileExtensions lfe hrl
 
-githubLanguage LFE
- fileExtensions lfe
- trendingProjectsCount 0
- type programming
- aceMode lisp
- codemirrorMode commonlisp
- codemirrorMimeType text/x-common-lisp
- tmScope source.lisp
- repos 51
 githubBigQuery LFE
  repos 15
  users 14
@@ -206,18 +205,19 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
     (get-church (zero) 0 integer))
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:LFE
+isbndb 0
+
+githubLanguage LFE
+ fileExtensions lfe
+ trendingProjectsCount 0
+ type programming
+ aceMode lisp
+ codemirrorMode commonlisp
+ codemirrorMimeType text/x-common-lisp
+ tmScope source.lisp
+ repos 51
 
 indeedJobs lfe developer
  2022 0
-officialBlogUrl https://blog.lfe.io/
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0
-
-clocExtensions lfe

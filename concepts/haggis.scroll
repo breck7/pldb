@@ -1,10 +1,16 @@
 import ../code/conceptPage.scroll
+
 id haggis
 name HAGGIS
 appeared 2010
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Scotland
 originCommunity University of Glasgow && Heriot Watt University && University of Strathclyde
+
+multiLineCommentTokens '''
 
 hasMultiLineComments true
  ''' A comment
@@ -13,8 +19,6 @@ hasComments true
  ''' A comment
  '''
 hasSemanticIndentation false
-
-multiLineCommentTokens '''
 
 wikipedia https://en.wikipedia.org/wiki/HAGGIS
  example
@@ -39,6 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/HAGGIS
  backlinksCount 11
  revisionCount 88
  appeared 2010
-
-fileType text
-centralPackageRepositoryCount 0

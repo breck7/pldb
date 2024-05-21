@@ -1,19 +1,28 @@
 import ../code/conceptPage.scroll
+
 id rc
 name Rc
 appeared 1989
-tags pl
 creators Tom Duff
+tags pl
+
+wordRank 4637
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell Labs
+
+rijuRepl https://riju.codes/rc
+ example
+  echo Hello, world!
+  
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Rc
  example
@@ -28,14 +37,6 @@ wikipedia https://en.wikipedia.org/wiki/Rc
  revisionCount 173
  dailyPageViews 65
  appeared 1989
-
-rijuRepl https://riju.codes/rc
- example
-  echo Hello, world!
-  
-
-wordRank 4637
-centralPackageRepositoryCount 0
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

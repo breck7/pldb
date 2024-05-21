@@ -1,10 +1,18 @@
 import ../code/conceptPage.scroll
+
 id tosh
 name Tosh
 appeared 2015
 tags pl
 website https://tosh.blob.codes/
-domainName tosh.blob.codes
+
+writtenIn javascript svg html css json markdown
+repoStats
+ firstCommit 2017
+ commits 90
+ committers 5
+ files 31
+ newestCommit 2017
 
 githubRepo https://github.com/tjvr/tosh2
  firstCommit 2017
@@ -16,13 +24,6 @@ githubRepo https://github.com/tjvr/tosh2
  description text-based Scratch project editor, Take Two.
  issues 10
 
-repoStats
- firstCommit 2017
- commits 90
- committers 5
- files 31
- newestCommit 2017
+domainName tosh.blob.codes
 
 isbndb 0
-
-writtenIn javascript svg html css json markdown

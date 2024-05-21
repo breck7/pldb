@@ -1,18 +1,23 @@
 import ../code/conceptPage.scroll
+
 id futurebasic
 name FutureBASIC
 appeared 1992
 tags pl
+
+isOpenSource true
+rosettaCode http://www.rosettacode.org/wiki/Category:FutureBasic
+centralPackageRepositoryCount 0
 country United States
 originCommunity Brilor Software
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/FutureBASIC
  example
@@ -46,8 +51,3 @@ wikipedia https://en.wikipedia.org/wiki/FutureBASIC
  revisionCount 129
  dailyPageViews 11
  appeared 2016
-
-rosettaCode http://www.rosettacode.org/wiki/Category:FutureBasic
-
-isOpenSource true
-centralPackageRepositoryCount 0

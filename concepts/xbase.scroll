@@ -1,10 +1,29 @@
 import ../code/conceptPage.scroll
+
 id xbase
 name xBase
 appeared 1986
 tags pl
+
+clocExtensions prg prw
+fileType text
 documentation https://www.eclipse.org/Xtext/documentation/305_xbase.html#xbase-expressions
+rosettaCode http://www.rosettacode.org/wiki/Category:XBase
+centralPackageRepositoryCount 0
 country United States
+
+leachim6 XBase
+ filepath x/XBase.dbf
+ fileExtensions dbf
+ example
+  do while .t.
+   ? 'Hello World'
+  enddo
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken '
 
 hasLineComments true
  // A comment
@@ -17,10 +36,6 @@ hasSemanticIndentation false
 hasStrings true
  'Hello world'
 
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken '
-
 wikipedia https://en.wikipedia.org/wiki/XBase
  related jet-propulsion-laboratory-display-information-system
  summary xBase is the generic term for all programming languages that derive from the original dBASE (Ashton-Tate) programming language and database formats. These are sometimes informally known as dBASE "clones". While there was a non-commercial predecessor to the Ashton-Tate product (Vulcan written by Wayne Ratliff), most clones are based on Ashton-Tate's 1986 dBASE III+ release — scripts written in the dBASE III+ dialect are most likely to run on all the clones.
@@ -31,14 +46,9 @@ wikipedia https://en.wikipedia.org/wiki/XBase
  revisionCount 190
  appeared 1986
 
-githubLanguage xBase
- fileExtensions prg ch prw
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.harbour
- aliases advpl or clipper or foxpro
- repos 2564
+hopl https://hopl.info/showlanguage.prx?exp=2621
+tiobe xBase
+
 githubBigQuery xBase
  repos 350
  users 313
@@ -82,22 +92,6 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
   #endif
   
 
-leachim6 XBase
- filepath x/XBase.dbf
- fileExtensions dbf
- example
-  do while .t.
-   ? 'Hello World'
-  enddo
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:XBase
-
-tiobe xBase
-hopl https://hopl.info/showlanguage.prx?exp=2621
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 8
  year|publisher|title|authors|isbn13
  ||Xbase Programming|Prague and Cary N.|9780830640515
@@ -109,6 +103,13 @@ isbndb 8
  1995|Wordware|Learn Dbase Programming In A Day: For Users Of Dbase-compatible Database Programs That Use The Xbase Language Including Dbase Iii Plus, Dbase Iv, Db (popular Applications Series)|Russell A. Stultz|9781556224478
  1992|Wordware|Learn Dbase Programming In A Day/book And Disk: For Users Of Dbase-compatible Database Programs That Use The Xbase Language Including Dbase Iii Plus, ... Datab+spro, (popular Applications Series)|Russell A. Stultz|9781556222757
 
-semanticScholar 0
+githubLanguage xBase
+ fileExtensions prg ch prw
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.harbour
+ aliases advpl or clipper or foxpro
+ repos 2564
 
-clocExtensions prg prw
+semanticScholar 0

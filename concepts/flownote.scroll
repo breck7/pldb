@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id flownote
 name flownote
 appeared 2019
 tags pl
 website https://gitter.im/flownote/community
+
+writtenIn javascript markdown xml json bourne-shell bash dockerfile html scss yaml
+repoStats
+ firstCommit 2019
+ commits 142
+ committers 3
+ files 107
+ newestCommit 2019
 country United States
 originCommunity https://github.com/Emblem21-OpenSource
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/Emblem21-OpenSource/flownote
  description FlowNote lets developers create, organize, and reason about event-oriented applications with a simple flow-based language.
  issues 18
 
-repoStats
- firstCommit 2019
- commits 142
- committers 3
- files 107
- newestCommit 2019
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  19440418|Show HN: Preview of FlowNote, a language for flow-based paradigms|2019-03-20 09:40:14 UTC|1553074814|FlowNote|0|1
-
-writtenIn javascript markdown xml json bourne-shell bash dockerfile html scss yaml

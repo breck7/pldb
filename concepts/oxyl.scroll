@@ -1,24 +1,24 @@
 import ../code/conceptPage.scroll
+
 id oxyl
 name Oxyl
 appeared 2019
-tags pl
 creators J Rain De Jager
-conceptDescription Oxyl is a functional programming language focused on being explicit and safe but not clunky or verbose
+tags pl
 website https://www.oxyllang.org/
-country South Africa
-originCommunity https://gitlab.com/selfReferentialName/oxylc/-/issues
-domainName oxyllang.org
+conceptDescription Oxyl is a functional programming language focused on being explicit and safe but not clunky or verbose
 
-gitlabRepo https://gitlab.com/selfReferentialName/oxylc
-
+writtenIn bourne-shell assembly-language c vim-script asciidoc yaml make python dockerfile bash
+packageRepository https://opam.ocaml.org/packages/oxylc
 repoStats
  firstCommit 2019
  commits 444
  committers 3
  files 69
  newestCommit 2020
+country South Africa
+originCommunity https://gitlab.com/selfReferentialName/oxylc/-/issues
 
-packageRepository https://opam.ocaml.org/packages/oxylc
+gitlabRepo https://gitlab.com/selfReferentialName/oxylc
 
-writtenIn bourne-shell assembly-language c vim-script asciidoc yaml make python dockerfile bash
+domainName oxyllang.org

@@ -1,22 +1,32 @@
 import ../code/conceptPage.scroll
+
 id setl
 name SETL
 appeared 1969
-tags pl
 creators Jacob T. Schwartz
-conceptDescription SETL is a general-purpose, high-level programming language in which sets and first-order mappings are fundamental to the syntax and semantics of the language. This lends great conciseness and readability to a wide range of applications, from basic data filtering and transformation to the abstract presentation of complex algorithms. SETL is particularly good for software prototyping.
+tags pl
 website http://setl.org/setl/
+conceptDescription SETL is a general-purpose, high-level programming language in which sets and first-order mappings are fundamental to the syntax and semantics of the language. This lends great conciseness and readability to a wide range of applications, from basic data filtering and transformation to the abstract presentation of complex algorithms. SETL is particularly good for software prototyping.
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:SETL
+centralPackageRepositoryCount 0
 country United States
 originCommunity Courant Institute of Mathematical Sciences
+
+rijuRepl https://riju.codes/setl
+ example
+  print("Hello, world!");
+  
+
+lineCommentToken --
+printToken print
 
 hasComments true
 hasLineComments true
  -- A comment
 hasPrintDebugging true
 hasSemanticIndentation false
-
-lineCommentToken --
-printToken print
 
 wikipedia https://en.wikipedia.org/wiki/SETL
  example
@@ -32,25 +42,7 @@ wikipedia https://en.wikipedia.org/wiki/SETL
  dailyPageViews 34
  appeared 1969
 
-rosettaCode http://www.rosettacode.org/wiki/Category:SETL
-
-rijuRepl https://riju.codes/setl
- example
-  print("Hello, world!");
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=1268
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming with Sets: An Introduction to Setl|1986|Jacob T. Schwartz|1634697|4.50|2|0
- Software Prototyping Mit Setl|1989|Ernst-Erich Doberkat|37857661|0.0|0|0
- The Setl Project Master Catalog. a Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at Nyu on the Setl Set-Theoretic Programming Language||Robert Abes|47398006|0.0|0|0
- The Setl Project Master Catalog: A Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at New York University on the Setl Set-Theoretic Programming Language (Classic Reprint)||Robert Abes|65986497|0.0|0|0
- Recursive Data Types in Setl: Automatic Determination, Data Language Description, and Efficient Implementation (Classic Reprint)|2015|Gerald Weiss|46378170|0.0|0|0
 
 isbndb 2
  year|publisher|title|authors|isbn13
@@ -70,3 +62,11 @@ semanticScholar 11
  1979|The elements of SETL style.|10.1145/800177.810021|8|0|R. Dewar and E. Schonberg|6d52a4b15e5968eeb4ab379c5cc035c372be581e
  1974|Automatic and semiautomatic optimization of SETL|10.1145/800233.807044|6|0|J. Schwartz|c7608e1ddd05667d6d8a1eae29d388cc9c929c1d
  1987|Development of a Programming Environment for Setl|10.1007/BFb0022095|5|0|V. Donzeau-Gouge and Catherine Dubois and P. Facon and F. Jean|4e77fd5689d27d41591d99ea12e13a08f52820a0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming with Sets: An Introduction to Setl|1986|Jacob T. Schwartz|1634697|4.50|2|0
+ Software Prototyping Mit Setl|1989|Ernst-Erich Doberkat|37857661|0.0|0|0
+ The Setl Project Master Catalog. a Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at Nyu on the Setl Set-Theoretic Programming Language||Robert Abes|47398006|0.0|0|0
+ The Setl Project Master Catalog: A Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at New York University on the Setl Set-Theoretic Programming Language (Classic Reprint)||Robert Abes|65986497|0.0|0|0
+ Recursive Data Types in Setl: Automatic Determination, Data Language Description, and Efficient Implementation (Classic Reprint)|2015|Gerald Weiss|46378170|0.0|0|0

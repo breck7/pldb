@@ -1,16 +1,20 @@
 import ../code/conceptPage.scroll
+
 id thinbasic
 name ThinBasic
 appeared 2004
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/ThinBasic
  example
@@ -46,6 +50,3 @@ wikipedia https://en.wikipedia.org/wiki/ThinBasic
  revisionCount 158
  dailyPageViews 15
  appeared 2015
-
-isOpenSource true
-centralPackageRepositoryCount 0

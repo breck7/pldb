@@ -1,18 +1,12 @@
 import ../code/conceptPage.scroll
+
 id unity3d-asset
 name Unity3D Asset
 appeared 2005
 tags application
 
-githubLanguage Unity3D Asset
- fileExtensions anim asset mask mat meta prefab unity
- trendingProjectsCount 0
- type data
- aceMode yaml
- codemirrorMode yaml
- codemirrorMimeType text/x-yaml
- tmScope source.yaml
- repos 81061
+fileType text
+centralPackageRepositoryCount 0
 
 linguistGrammarRepo https://github.com/atom/language-yaml
  firstCommit 2013
@@ -27,5 +21,12 @@ linguistGrammarRepo https://github.com/atom/language-yaml
   DefaultImporter:
     userData:
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Unity3D Asset
+ fileExtensions anim asset mask mat meta prefab unity
+ trendingProjectsCount 0
+ type data
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
+ repos 81061

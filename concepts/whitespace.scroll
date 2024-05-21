@@ -1,9 +1,108 @@
 import ../code/conceptPage.scroll
+
 id whitespace
 name Whitespace
 appeared 2003
 tags esolang
+
+tryItOnline whitespace
+fileType text
 documentation https://hackage.haskell.org/package/whitespace-0.4/src/docs/tutorial.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Whitespace
+quineRelay Whitespace
+centralPackageRepositoryCount 0
+
+helloWorldCollection Whitespace
+ Hello #World #in #Whitespace	* # #	* # # #
+ +	*[Space]
+ + #is #marked #with"#" # #[tab]	#with"*"	*line-feed #with #"+"	* #	*so
+ +it	#would
+ +be #easier #to #write #again... #All	*the	*non-whitespace-characters #are	*ignored...	* # #
+ +	*
+ + # # # # #	*	* #	*	* # #
+ +	*
+ + # # # # #	*	* #	*	*	*	*
+ +	*
+ + # # # # #	* # # # # #
+ +	*
+ + # # # # #	* #	* #	*	*	*
+ +	*
+ + # # # # #	*	* #	*	*	*	*
+ +	*
+ + # # # # #	*	*	* # #	* #
+ +	*
+ + # # # # #	*	* #	*	* # #
+ +	*
+ + # # # # #	*	* # #	* # #
+ +	*
+ + # # # # #	* # # # #	*
+ +	*
+ + # # # # #	* #	* #
+ +	*
+ + # #
+ +
+ +
+ +
+ 
+rijuRepl https://riju.codes/whitespace
+ example
+  Hello, world
+  	
+       		  	 	
+  	
+       		 		  
+  	
+       		 		  
+  	
+       		 				
+  	
+       	 		  
+  	
+       	     
+  	
+       			 			
+  	
+       		 				
+  	
+       			  	 
+  	
+       		 		  
+  	
+       		  	  
+  	
+    
+  
+  
+leachim6 Whitespace
+ filepath w/Whitespace.ws
+ fileExtensions ws
+ example
+     	  	   
+  	
+       		  	 	
+  	
+       		 		  
+  	
+       		 		  
+  	
+       		 				
+  	
+        	     
+  	
+       	 	 			
+  	
+       		 				
+  	
+       			  	 
+  	
+       		 		  
+  	
+       		  	  
+  	
+    
+  
+  
+  
 
 wikipedia https://en.wikipedia.org/wiki/Whitespace_(programming_language)
  example
@@ -45,109 +144,10 @@ wikipedia https://en.wikipedia.org/wiki/Whitespace_(programming_language)
  revisionCount 295
  appeared 2003
 
-helloWorldCollection Whitespace
- Hello #World #in #Whitespace	* # #	* # # #
- +	*[Space]
- + #is #marked #with"#" # #[tab]	#with"*"	*line-feed #with #"+"	* #	*so
- +it	#would
- +be #easier #to #write #again... #All	*the	*non-whitespace-characters #are	*ignored...	* # #
- +	*
- + # # # # #	*	* #	*	* # #
- +	*
- + # # # # #	*	* #	*	*	*	*
- +	*
- + # # # # #	* # # # # #
- +	*
- + # # # # #	* #	* #	*	*	*
- +	*
- + # # # # #	*	* #	*	*	*	*
- +	*
- + # # # # #	*	*	* # #	* #
- +	*
- + # # # # #	*	* #	*	* # #
- +	*
- + # # # # #	*	* # #	* # #
- +	*
- + # # # # #	* # # # #	*
- +	*
- + # # # # #	* #	* #
- +	*
- + # #
- +
- +
- +
- 
-leachim6 Whitespace
- filepath w/Whitespace.ws
- fileExtensions ws
- example
-     	  	   
-  	
-       		  	 	
-  	
-       		 		  
-  	
-       		 		  
-  	
-       		 				
-  	
-        	     
-  	
-       	 	 			
-  	
-       		 				
-  	
-       			  	 
-  	
-       		 		  
-  	
-       		  	  
-  	
-    
-  
-  
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Whitespace
-quineRelay Whitespace
-
-rijuRepl https://riju.codes/whitespace
- example
-  Hello, world
-  	
-       		  	 	
-  	
-       		 		  
-  	
-       		 		  
-  	
-       		 				
-  	
-       	 		  
-  	
-       	     
-  	
-       			 			
-  	
-       		 				
-  	
-       			  	 
-  	
-       		 		  
-  	
-       		  	  
-  	
-    
-  
-  
-tryItOnline whitespace
-
 tiobe Whitespace
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Whitespace (Programming Language)||Ronald Cohn|64602057|0.0|0|0
-
-isbndb 0

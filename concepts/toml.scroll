@@ -1,28 +1,39 @@
 import ../code/conceptPage.scroll
+
 id toml
 name TOML
 appeared 2013
-tags dataNotation
 creators Tom Preston-Werner
+tags dataNotation
 website https://toml.io
-documentation https://toml.io/en/
 standsFor Tom's Obvious, Minimal Language
-domainName toml.io
- registered 2015
- awisRank
-  2022 694799
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-hasFloats true
- # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
-hasIntegers true
- # \d{4}-\d{2}-\d{2}(?:T| )\d{2}:\d{2}:\d{2}(?:Z|[-+]\d{2}:\d{2})
+isOpenSource true
+writtenIn markdown python svg yaml toml
+clocExtensions toml
+fileType text
+documentation https://toml.io/en/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 856
+ committers 203
+ files 15
+ newestCommit 2023
 
-lineCommentToken #
+pygmentsHighlighter TOML
+ filename configs.py
+ fileExtensions toml Pipfile poetry.lock
+rijuRepl https://riju.codes/toml
+ example
+  output = "Hello, world!"
+  
+leachim6 TOML
+ filepath t/TOML.toml
+ fileExtensions toml
+ example
+  Hello = "World"
+  
 
 githubRepo https://github.com/toml-lang/toml
  stars 17151
@@ -34,27 +45,23 @@ githubRepo https://github.com/toml-lang/toml
  description Tom's Obvious, Minimal Language
  issues 40
 
-repoStats
- firstCommit 2013
- commits 856
- committers 203
- files 15
- newestCommit 2023
+lineCommentToken #
 
-githubLanguage TOML
- fileExtensions toml
- trendingProjectsCount 0
- type data
- filenames Cargo.lock Gopkg.lock Pipfile poetry.lock
- aceMode toml
- codemirrorMode toml
- codemirrorMimeType text/x-toml
- tmScope source.toml
- repos 8
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasFloats true
+ # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
+hasIntegers true
+ # \d{4}-\d{2}-\d{2}(?:T| )\d{2}:\d{2}:\d{2}(?:Z|[-+]\d{2}:\d{2})
 
-pygmentsHighlighter TOML
- filename configs.py
- fileExtensions toml Pipfile poetry.lock
+domainName toml.io
+ registered 2015
+ awisRank
+  2022 694799
+
 linguistGrammarRepo https://github.com/textmate/toml.tmbundle
  firstCommit 2013
  lastCommit 2018
@@ -84,25 +91,17 @@ linguistGrammarRepo https://github.com/textmate/toml.tmbundle
     solver-name = "gps-cdcl"
     solver-version = 1
 
-leachim6 TOML
- filepath t/TOML.toml
- fileExtensions toml
- example
-  Hello = "World"
-  
-
-rijuRepl https://riju.codes/toml
- example
-  output = "Hello, world!"
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage TOML
+ fileExtensions toml
+ trendingProjectsCount 0
+ type data
+ filenames Cargo.lock Gopkg.lock Pipfile poetry.lock
+ aceMode toml
+ codemirrorMode toml
+ codemirrorMimeType text/x-toml
+ tmScope source.toml
+ repos 8
 
-clocExtensions toml
-writtenIn markdown python svg yaml toml
+semanticScholar 0

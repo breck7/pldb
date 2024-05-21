@@ -1,9 +1,26 @@
 import ../code/conceptPage.scroll
+
 id yoix
 name Yoix
 appeared 2000
-tags pl
 creators Rich Drechsler and John Mocenigo
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
+
+leachim6 Yoix
+ filepath y/Yoix.yx
+ fileExtensions yx
+ example
+  import yoix.stdio.*;
+  
+  printf("Hello World");
+  
+
+lineCommentToken //
+printToken printf
+stringToken "
 
 hasLineComments true
  // A comment
@@ -13,10 +30,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken printf
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Yoix
  example
@@ -175,15 +188,3 @@ wikipedia https://en.wikipedia.org/wiki/Yoix
  revisionCount 89
  dailyPageViews 9
  appeared 2000
-
-leachim6 Yoix
- filepath y/Yoix.yx
- fileExtensions yx
- example
-  import yoix.stdio.*;
-  
-  printf("Hello World");
-  
-
-isOpenSource true
-centralPackageRepositoryCount 0

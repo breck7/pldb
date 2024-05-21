@@ -1,23 +1,68 @@
 import ../code/conceptPage.scroll
+
 id chapel
 name Chapel
 appeared 2004
-tags pl
 creators David Callahan and Hans Zima and Brad Chamberlain and John Plevyak
+tags pl
 website https://chapel-lang.org/
-documentation https://chapel-lang.org/docs/
-reference https://ieeexplore.ieee.org/document/1299190
+
+isOpenSource true
+writtenIn chapel cpp c restructuredtext assembly-language python bash cmake bourne-shell make html m4 xml toml markdown perl json tex c-shell ocaml yaml pascal javascript css svg vim-script csharp dockerfile diff lisp llvmir protobuf ini fortran-90 objective-c fortran-77 dtd lex bazel ruby jupyter-notebook cuda php typescript rust csv yacc d haskell nix cython go java awk xslt julia sed
+tryItOnline chapel
+officialBlogUrl https://chapel-lang.org/whatsnew.html
 fileExtensions chpl
+releaseNotesUrl https://chapel-lang.org/releaseNotes.html
+clocExtensions chpl
+fileType text
+wordRank 6683
+documentation https://chapel-lang.org/docs/
+eventsPageUrl https://chapel-lang.org/events.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Chapel
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 100203
+ committers 371
+ files 68945
+ newestCommit 2024
 country United States
 originCommunity Cray
-domainName chapel-lang.org
- registered 2014
- awisRank
-  2022 3010307
-  2017 4723261
-releaseNotesUrl https://chapel-lang.org/releaseNotes.html
+projectEuler Chapel
+ memberCount
+  2019 8
+  2022 11
+reference https://ieeexplore.ieee.org/document/1299190
 
-writtenIn chapel cpp c restructuredtext assembly-language python bash cmake bourne-shell make html m4 xml toml markdown perl json tex c-shell ocaml yaml pascal javascript css svg vim-script csharp dockerfile diff lisp llvmir protobuf ini fortran-90 objective-c fortran-77 dtd lex bazel ruby jupyter-notebook cuda php typescript rust csv yacc d haskell nix cython go java awk xslt julia sed
+pygmentsHighlighter Chapel
+ filename chapel.py
+ fileExtensions chpl
+subreddit https://reddit.com/r/chapel
+ memberCount
+  2022 12989
+twitter https://twitter.com/ChapelLanguage
+leachim6 Chapel
+ filepath c/Chapel.chpl
+ fileExtensions chpl
+ example
+  writeln("Hello World");
+  
+
+keywords _ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+githubRepo https://github.com/chapel-lang/chapel
+ stars 1454
+ forks 390
+ subscribers 60
+ created 2014
+ updated 2022
+ firstCommit 2009
+ description a Productive Parallel Programming Language
+ issues 2459
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken writeln
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -45,29 +90,6 @@ hasIntegers true
 hasBinaryNumbers true
  // 0[bB][01]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken writeln
-stringToken "
-keywords _ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
-
-githubRepo https://github.com/chapel-lang/chapel
- stars 1454
- forks 390
- subscribers 60
- created 2014
- updated 2022
- firstCommit 2009
- description a Productive Parallel Programming Language
- issues 2459
-
-repoStats
- firstCommit 2009
- commits 100203
- committers 371
- files 68945
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  related ada csharp c fortran java fortress unified-parallel-c x10 isbn
  summary Chapel, the Cascade High Productivity Language, is a parallel programming language developed by Cray. It is being developed as part of the Cray Cascade project, a participant in DARPA's High Productivity Computing Systems (HPCS) program, which had the goal of increasing supercomputer productivity by the year 2010. It is being developed as an open source project, under version 2 of the Apache license.
@@ -79,21 +101,18 @@ wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  appeared 2009
  fileExtensions chpl
 
-githubLanguage Chapel
- fileExtensions chpl
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.chapel
- aliases chpl
- repos 212
+hopl https://hopl.info/showlanguage.prx?exp=8171
+
+domainName chapel-lang.org
+ registered 2014
+ awisRank
+  2022 3010307
+  2017 4723261
+
 githubBigQuery Chapel
  repos 55
  users 50
 
-pygmentsHighlighter Chapel
- filename chapel.py
- fileExtensions chpl
 linguistGrammarRepo https://github.com/chapel-lang/chapel-tmbundle
  firstCommit 2011
  lastCommit 2018
@@ -104,41 +123,22 @@ linguistGrammarRepo https://github.com/chapel-lang/chapel-tmbundle
   writeln("Hello, world!");    // print 'Hello, world!' to the console
   
 
-projectEuler Chapel
- memberCount
-  2019 8
-  2022 11
-leachim6 Chapel
- filepath c/Chapel.chpl
- fileExtensions chpl
- example
-  writeln("Hello World");
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Chapel
-
-tryItOnline chapel
-
-indeedJobs chapel developer
- 2022 1
-officialBlogUrl https://chapel-lang.org/whatsnew.html
-eventsPageUrl https://chapel-lang.org/events.html
-
-subreddit https://reddit.com/r/chapel
- memberCount
-  2022 12989
-
-hopl https://hopl.info/showlanguage.prx?exp=8171
-
-twitter https://twitter.com/ChapelLanguage
-fileType text
-wordRank 6683
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2008|Springer|Languages And Compilers For Parallel Computing: 11th International Workshop, Lcpc'98, Chapel Hill, Nc, Usa, August 7-9, 1998, Proceedings (lecture Notes In Computer Science)|Chatterjee and J.f.|9783540664260
  2014|William Morrow|The Hydra Protocol: A Jim Chapel Mission (Jim Chapel Missions)|Wellington, David|9780062248800
+
+githubLanguage Chapel
+ fileExtensions chpl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.chapel
+ aliases chpl
+ repos 212
+
+indeedJobs chapel developer
+ 2022 1
 
 semanticScholar 19
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -161,5 +161,3 @@ semanticScholar 19
  2019|Graph Algorithms in PGAS: Chapel and UPC++|10.1109/HPEC.2019.8916309|2|0|Louis Jenkins and J. Firoz and Marcin Zalewski and C. Joslyn and Mark Raugas|cf83d871185279c6b4108126b5710fc1cfd70376
  2021|Towards High Productivity and Performance for Irregular Applications in Chapel|10.1109/SCWS55283.2021.00012|2|0|Thomas B. Rolinger and Joseph Craft and Christopher D. Krieger and A. Sussman|8b1fb263b1e8b7ae3edf81ac2b2d3a13d18be553
  2018|ChplBlamer: A Data-centric and Code-centric Combined Profiler for Multi-locale Chapel Programs|10.1145/3205289.3205314|1|0|Hui Zhang and J. Hollingsworth|4fe4bc6f6332e63b653b1f4ffe73efedec7bdc6c
-
-clocExtensions chpl

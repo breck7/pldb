@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id cgol
 name CGOL
 appeared 1973
-tags pl
 creators Vaughan Ronald Pratt
-reference https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/syntax/cgol/0.html
+tags pl
+
 country United States
 originCommunity University of California, Berkeley
+reference https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/syntax/cgol/0.html
 
 example
  for i in 1 to n do

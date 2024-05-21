@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id signal
 name SIGNAL
 appeared 1982
 tags pl
+
+fileType text
+wordRank 2383
+centralPackageRepositoryCount 0
 country France
 originCommunity Institut national de recherche en sciences et technologies du numérique
 
@@ -16,9 +21,5 @@ wikipedia https://en.wikipedia.org/wiki/SIGNAL_(programming_language)
  revisionCount 60
  appeared 1982
 
-tiobe SIGNAL
 hopl https://hopl.info/showlanguage.prx?exp=1270
-
-fileType text
-wordRank 2383
-centralPackageRepositoryCount 0
+tiobe SIGNAL

@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id bqn
 name BQN
 appeared 2020
-tags pl
 creators Marshall Lochbaum
-conceptDescription An APL-like programming language. Self-hosted!
+tags pl
 website https://mlochbaum.github.io/BQN/
-documentation https://mlochbaum.github.io/BQN/doc/index.html
 standsFor Big Questions Notation
+conceptDescription An APL-like programming language. Self-hosted!
+
+writtenIn html markdown vim-script javascript xml autohotkey css svg
+influencedBy apl
+documentation https://mlochbaum.github.io/BQN/doc/index.html
+repoStats
+ firstCommit 2020
+ commits 2840
+ committers 38
+ files 539
+ newestCommit 2024
 country United States
 originCommunity https://github.com/mlochbaum/BQN/issues
-
-influencedBy apl
 
 example
  #! /usr/bin/env bqn
@@ -51,12 +59,3 @@ githubRepo https://github.com/mlochbaum/BQN
  updated 2023
  description An APL-like programming language. Self-hosted!
  issues 1
-
-repoStats
- firstCommit 2020
- commits 2840
- committers 38
- files 539
- newestCommit 2024
-
-writtenIn html markdown vim-script javascript xml autohotkey css svg

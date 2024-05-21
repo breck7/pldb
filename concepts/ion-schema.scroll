@@ -1,13 +1,14 @@
 import ../code/conceptPage.scroll
+
 id ion-schema
 name Ion Schema Language
 appeared 2018
 tags grammarLanguage
-reference https://amzn.github.io/ion-schema/docs/spec.html
-country United States
-originCommunity Amazon.com, Inc
 
 relatedConcepts ion
+country United States
+originCommunity Amazon.com, Inc
+reference https://amzn.github.io/ion-schema/docs/spec.html
 
 example
  type::{

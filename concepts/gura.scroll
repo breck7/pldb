@@ -1,17 +1,22 @@
 import ../code/conceptPage.scroll
+
 id gura
 name gura
 appeared 2012
-tags pl
 creators Yutaka Saito
-conceptDescription Gura is an iterator-oriented programming language that focuses on iterators with improved functions for calculation and data processing. It makes you be able to write an artificial code for what used to need a lot of codes of repeat syntax.
+tags pl
 website http://www.gura-lang.org
+conceptDescription Gura is an iterator-oriented programming language that focuses on iterators with improved functions for calculation and data processing. It makes you be able to write an artificial code for what used to need a lot of codes of repeat syntax.
+
+writtenIn cpp markdown html xml c csv cmake bourne-shell css perl lisp bash yaml javascript
+repoStats
+ firstCommit 2012
+ commits 7930
+ committers 8
+ files 5166
+ newestCommit 2020
 country Japan
 originCommunity https://github.com/gura-lang
-domainName gura-lang.org
- registered 2013
- awisRank
-  2022 3631631
 
 example
  prime() = {
@@ -32,15 +37,11 @@ githubRepo https://github.com/gura-lang/gura
  updated 2020
  description Gura Programming Language
 
-repoStats
- firstCommit 2012
- commits 7930
- committers 8
- files 5166
- newestCommit 2020
+domainName gura-lang.org
+ registered 2013
+ awisRank
+  2022 3631631
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  8215028|Gura: Iterator-Oriented Programming Language|http://www.gura-lang.org/|2014-08-23 04:48:44 UTC|1408769324|matsuu|8|56
-
-writtenIn cpp markdown html xml c csv cmake bourne-shell css perl lisp bash yaml javascript

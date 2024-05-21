@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id tsquery
 name tsquery
 appeared 2018
 tags queryLanguage
+
+writtenIn typescript json markdown
+repoStats
+ firstCommit 2018
+ commits 147
+ committers 11
+ files 72
+ newestCommit 2023
 
 example
  Identifier[name="Animal"]
@@ -16,12 +25,3 @@ githubRepo https://github.com/phenomnomnominal/tsquery
  updated 2022
  description TypeScript AST query library
  issues 9
-
-repoStats
- firstCommit 2018
- commits 147
- committers 11
- files 72
- newestCommit 2023
-
-writtenIn typescript json markdown

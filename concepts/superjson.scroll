@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id superjson
 name Superjson
 appeared 2014
-tags dataNotation
 creators Matthew Mueller
+tags dataNotation
 conceptDescription A superset of JSON adding: undefined bigint Date RegExp Set Map Error
 
+writtenIn typescript json markdown javascript yaml bourne-shell
 supersetOf json
+repoStats
+ firstCommit 2014
+ commits 390
+ committers 35
+ files 34
+ newestCommit 2023
 
 example
  const object = {
@@ -26,12 +34,3 @@ githubRepo https://github.com/blitz-js/superjson
  updated 2022
  description Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.
  issues 18
-
-repoStats
- firstCommit 2014
- commits 390
- committers 35
- files 34
- newestCommit 2023
-
-writtenIn typescript json markdown javascript yaml bourne-shell

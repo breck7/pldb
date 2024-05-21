@@ -1,26 +1,39 @@
 import ../code/conceptPage.scroll
+
 id livecode
 name LiveCode
 appeared 2001
 tags pl
 website https://livecode.org/
 oldName revolution
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:LiveCode
+centralPackageRepositoryCount 0
 country Scotland
 originCommunity LiveCode Ltd
-domainName livecode.org
- registered 2012
- awisRank
-  2022 9510664
-  2017 2641722
+projectEuler LiveCode
+ memberCount
+  2022 1
+
+helloWorldCollection LiveCode
+ -- Hello world in LiveCode (formerly called Revolution, formerly called Transcript)
+ 
+ answer "Hello World!"
+leachim6 LiveCode
+ filepath l/LiveCode
+ example
+  answer "Hello World!"
+  
+
+lineCommentToken --
+printToken answer
 
 hasComments true
 hasLineComments true
  -- A comment
 hasPrintDebugging true
 hasSemanticIndentation false
-
-lineCommentToken --
-printToken answer
 
 wikipedia https://en.wikipedia.org/wiki/LiveCode
  example
@@ -34,29 +47,13 @@ wikipedia https://en.wikipedia.org/wiki/LiveCode
  revisionCount 303
  appeared 2001
 
-projectEuler LiveCode
- memberCount
-  2022 1
-helloWorldCollection LiveCode
- -- Hello world in LiveCode (formerly called Revolution, formerly called Transcript)
- 
- answer "Hello World!"
-leachim6 LiveCode
- filepath l/LiveCode
- example
-  answer "Hello World!"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:LiveCode
-
 tiobe LiveCode
 
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Livecode for the Real Beginner||Mark Schonewille|52807550|3.00|1|1
- LiveCode Lite: Computer Programming Made Ridiculously Simple||Stephen Goldberg|55375098|3.00|1|0
+domainName livecode.org
+ registered 2012
+ awisRank
+  2022 9510664
+  2017 2641722
 
 isbndb 7
  year|publisher|title|authors|isbn13
@@ -69,3 +66,8 @@ isbndb 7
  20150529|Packt Publishing|LiveCode Mobile Development: Beginner's Guide - Second Edition|Colin Holgate; Joel Gerdeen|9781849699662
 
 semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Livecode for the Real Beginner||Mark Schonewille|52807550|3.00|1|1
+ LiveCode Lite: Computer Programming Made Ridiculously Simple||Stephen Goldberg|55375098|3.00|1|0

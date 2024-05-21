@@ -1,12 +1,26 @@
 import ../code/conceptPage.scroll
+
 id fortress
 name Fortress
 appeared 2004
 tags pl
 website http://projectfortress.java.net/
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Fortress
+centralPackageRepositoryCount 0
 country United States
 originCommunity Sun Labs
-domainName projectfortress.java.net
+
+helloWorldCollection Fortress
+ (* Hello World in Fortress *)
+ 
+ export Executable
+ run(args) = print "Hello, world!"
+ 
+
+multiLineCommentTokens (* *)
 
 hasMultiLineComments true
  (* A comment
@@ -15,8 +29,6 @@ hasComments true
  (* A comment
  *)
 hasSemanticIndentation false
-
-multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/Fortress_(programming_language)
  example
@@ -33,20 +45,10 @@ wikipedia https://en.wikipedia.org/wiki/Fortress_(programming_language)
  revisionCount 164
  appeared 2006
 
-helloWorldCollection Fortress
- (* Hello World in Fortress *)
- 
- export Executable
- run(args) = print "Hello, world!"
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:Fortress
-
-tiobe Fortress
 hopl https://hopl.info/showlanguage.prx?exp=8170
+tiobe Fortress
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName projectfortress.java.net
 
 isbndb 0
 

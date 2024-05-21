@@ -1,17 +1,14 @@
 import ../code/conceptPage.scroll
+
 id z80
 name z80
 appeared 1976
 tags assembly
+
+fileType text
+codeMirror z80
+centralPackageRepositoryCount 0
 reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
 
 example
   ; memcpy --
@@ -38,7 +35,10 @@ example
               jp      loop        ;Repeat the loop
               end
 
-codeMirror z80
+lineCommentToken ;
 
-fileType text
-centralPackageRepositoryCount 0
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

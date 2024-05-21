@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id haxelibs-pm
 name Haxe Library Manager
 appeared 2013
 tags packageManager
 website https://lib.haxe.org/
+packageCount 1303
+forLanguages haxe
+
+writtenIn haxe json hcl html markdown sql bourne-shell yaml css svg xml cmake toml
+repoStats
+ firstCommit 2006
+ commits 1558
+ committers 65
+ files 314
+ newestCommit 2024
 country Unknown
 originCommunity Haxe Foundation
-domainName lib.haxe.org
 
 githubRepo https://github.com/HaxeFoundation/haxelib
  stars 149
@@ -17,13 +27,4 @@ githubRepo https://github.com/HaxeFoundation/haxelib
  description The Haxe library manager
  issues 106
 
-packageCount 1303
-forLanguages haxe
-
-repoStats
- firstCommit 2006
- commits 1558
- committers 65
- files 314
- newestCommit 2024
-writtenIn haxe json hcl html markdown sql bourne-shell yaml css svg xml cmake toml
+domainName lib.haxe.org

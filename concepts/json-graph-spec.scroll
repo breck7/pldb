@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id json-graph-spec
 name JSON Graph Spec
 appeared 2013
-tags jsonFormat
 creators Byron Ruth
+tags jsonFormat
+
+writtenIn markdown
+repoStats
+ firstCommit 2013
+ commits 5
+ committers 1
+ files 3
+ newestCommit 2014
 country United States
 originCommunity https://github.com/bruth/json-graph-spec/issues
 
@@ -40,12 +49,3 @@ githubRepo https://github.com/bruth/json-graph-spec
  updated 2022
  description JSON specification for representing a graph structure
  issues 0
-
-repoStats
- firstCommit 2013
- commits 5
- committers 1
- files 3
- newestCommit 2014
-
-writtenIn markdown

@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id wats
 name wats
 appeared 2017
-tags pl
 creators Pierre Rossouw
+tags pl
 website https://pierrerossouw.github.io/wats/
+
+writtenIn wasm markdown javascript html
+repoStats
+ firstCommit 2017
+ commits 386
+ committers 1
+ files 7
+ newestCommit 2019
 
 githubRepo https://github.com/PierreRossouw/wats
  firstCommit 2017
@@ -15,12 +24,3 @@ githubRepo https://github.com/PierreRossouw/wats
  description A simple WebAssembly compiler
  forks 0
  issues 0
-
-repoStats
- firstCommit 2017
- commits 386
- committers 1
- files 7
- newestCommit 2019
-
-writtenIn wasm markdown javascript html

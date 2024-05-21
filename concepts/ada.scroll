@@ -1,21 +1,101 @@
 import ../code/conceptPage.scroll
+
 id ada
 name Ada
 appeared 1980
-tags pl
 creators Jean Ichbiah
+tags pl
 website http://www.adaic.org
+
+gdbSupport true
+fileExtensions adb ads
+visualParadigm false
+clocExtensions ada adb ads pad
+fileType text
+wordRank 8040
 documentation https://pyjarrett.github.io/programming-with-ada/
 emailList http://www.ada-auth.org/comment.html
-fileExtensions adb ads
+rosettaCode http://www.rosettacode.org/wiki/Category:Ada
+quineRelay Ada
+centralPackageRepositoryCount 0
+ubuntuPackage gnat
 country United States
 originCommunity CII Honeywell Bull
-domainName adaic.org
- registered 1998
- awisRank
-  2022 1556974
+projectEuler Ada
+ memberCount
+  2019 120
+  2022 129
 
-visualParadigm false
+helloWorldCollection Ada
+ -- Hello World in Ada
+ 
+ with Text_IO;
+ procedure Hello_World is
+ 
+ begin
+   Text_IO.Put_Line("Hello World!");
+ end Hello_World;
+ 
+pygmentsHighlighter Ada
+ filename ada.py
+ fileExtensions adb ads ada
+rijuRepl https://riju.codes/ada
+ example
+  with Ada.Text_IO;
+  
+  procedure Main is
+  begin
+     Ada.Text_IO.Put_Line("Hello, world!");
+  end Main;
+  
+ description Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages
+ fileExtensions adb ads
+ website https://www.adaic.org/
+ gitRepo https://gcc.gnu.org/git.html
+subreddit https://reddit.com/r/ada
+ memberCount
+  2017 1092
+  2022 8055
+leachim6 Ada
+ filepath a/Ada.adb
+ fileExtensions adb
+ example
+  with Ada.Text_IO;
+  
+  procedure Hello_World is
+     use Ada.Text_IO;
+  begin
+     Put_line ("Hello World");
+  end Hello_World;
+  
+compilerExplorer Ada
+ example
+  -- This pragma will remove the warning produced by the default
+  -- CE filename and the procedure name differing,
+  -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName
+  pragma Source_File_Name (Square, Body_File_Name => "example.adb");
+  
+  -- Type your code here, or load an example.
+  function Square(num : Integer) return Integer is
+  begin
+      return num**2;
+  end Square;
+  
+  -- Ada 2012 also provides Expression Functions
+  -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html)
+  -- as a short hand for functions whose body consists of a
+  -- single return statement. However they cannot be used as a
+  -- compilation unit.
+  -- function Square(num : Integer) return Integer is (num**2);
+  
+
+keywords abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
+
+lineCommentToken --
+printToken Text_IO.Put_Line
+assignmentToken :=
+stringToken "
+booleanTokens True False
 
 hasPointers true
 hasGenerics true
@@ -77,13 +157,6 @@ hasIntegers true
  -- [0-9_]+
 hasFixedPoint true
 hasScientificNotation true
-
-lineCommentToken --
-printToken Text_IO.Put_Line
-assignmentToken :=
-stringToken "
-booleanTokens True False
-keywords abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
 
 wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  example
@@ -201,108 +274,25 @@ wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  appeared 1980
  fileExtensions adb ads
 
-githubLanguage Ada
- fileExtensions adb ada ads
- trendingProjectsCount 0
- type programming
- aceMode ada
- tmScope source.ada
- aliases ada95 or ada2005
- repos 4785
+hopl https://hopl.info/showlanguage.prx?exp=840
+tiobe Ada
+ currentRank 28
+pypl Ada
+
+domainName adaic.org
+ registered 1998
+ awisRank
+  2022 1556974
+
 githubBigQuery Ada
  repos 2172
  users 1848
 
-pygmentsHighlighter Ada
- filename ada.py
- fileExtensions adb ads ada
 linguistGrammarRepo https://github.com/textmate/ada.tmbundle
  firstCommit 2005
  lastCommit 2015
  committerCount 4
  commitCount 44
-
-projectEuler Ada
- memberCount
-  2019 120
-  2022 129
-helloWorldCollection Ada
- -- Hello World in Ada
- 
- with Text_IO;
- procedure Hello_World is
- 
- begin
-   Text_IO.Put_Line("Hello World!");
- end Hello_World;
- 
-leachim6 Ada
- filepath a/Ada.adb
- fileExtensions adb
- example
-  with Ada.Text_IO;
-  
-  procedure Hello_World is
-     use Ada.Text_IO;
-  begin
-     Put_line ("Hello World");
-  end Hello_World;
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Ada
-quineRelay Ada
-
-compilerExplorer Ada
- example
-  -- This pragma will remove the warning produced by the default
-  -- CE filename and the procedure name differing,
-  -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName
-  pragma Source_File_Name (Square, Body_File_Name => "example.adb");
-  
-  -- Type your code here, or load an example.
-  function Square(num : Integer) return Integer is
-  begin
-      return num**2;
-  end Square;
-  
-  -- Ada 2012 also provides Expression Functions
-  -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html)
-  -- as a short hand for functions whose body consists of a
-  -- single return statement. However they cannot be used as a
-  -- compilation unit.
-  -- function Square(num : Integer) return Integer is (num**2);
-  
-rijuRepl https://riju.codes/ada
- example
-  with Ada.Text_IO;
-  
-  procedure Main is
-  begin
-     Ada.Text_IO.Put_Line("Hello, world!");
-  end Main;
-  
- description Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages
- fileExtensions adb ads
- website https://www.adaic.org/
- gitRepo https://gcc.gnu.org/git.html
-
-indeedJobs ada developer
- 2017 2184
-
-subreddit https://reddit.com/r/ada
- memberCount
-  2017 1092
-  2022 8055
-
-tiobe Ada
- currentRank 28
-hopl https://hopl.info/showlanguage.prx?exp=840
-pypl Ada
-
-ubuntuPackage gnat
-gdbSupport true
-fileType text
-wordRank 8040
-centralPackageRepositoryCount 0
 
 isbndb 64
  year|publisher|title|authors|isbn13
@@ -371,6 +361,18 @@ isbndb 64
  2010||Ada Programming Language: Ada|Books and LLC|9781156382783
  1988|Eyrolles|Ada|Narain Gehani|9782212084214
 
+githubLanguage Ada
+ fileExtensions adb ada ads
+ trendingProjectsCount 0
+ type programming
+ aceMode ada
+ tmScope source.ada
+ aliases ada95 or ada2005
+ repos 4785
+
+indeedJobs ada developer
+ 2017 2184
+
 semanticScholar 50
  year|title|doi|citations|influentialCitations|authors|paperId
  1983|The Programming Language Ada Reference Manual American National Standards Institute, Inc. ANSI/MIL-STD-1815A-1983|10.1007/3-540-12328-8|478|0|G. Goos and J. Hartmanis and D. Barstow and W. Brauer and P. B. Hansen and D. Gries and D. Luckham and C. Moler and A. Pnueli and G. Seegmüller and J. Stoer and N. Wirth|0db8635ac2161a3eda9e69ccb3cbfcdcd443597f
@@ -423,5 +425,3 @@ semanticScholar 50
  2012|Teaching 'Concepts of Programming Languages' with Ada|10.1007/978-3-642-30598-6_5|1|0|T. Tempelmeier|b5d480c144de0f4f5a7f9c7bd9b5b46fda97f705
  1981|Ada programming language standardization|10.1016/0164-1212(81)90009-1|1|0|Paul M. Cohen|de9b22cf99188af170f37770f8160c6819240b6c
  2015|From Byron to the Ada Programming Language|10.1145/2867731.2867745|1|0|J. Barnes|e73889075e3ca97186208255c7a359c106f527c6
-
-clocExtensions ada adb ads pad

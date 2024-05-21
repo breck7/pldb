@@ -1,14 +1,31 @@
 import ../code/conceptPage.scroll
+
 id peoplecode
 name PeopleCode
 appeared 2008
 tags pl
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/peoplecode
+rosettaCode http://www.rosettacode.org/wiki/Category:PeopleCode
+centralPackageRepositoryCount 0
 originCommunity Oracle
+
+helloWorldCollection PeopleCode
+ /* Hello World in PeopleCode 8.45
+ 
+ &MsgText = MsgGetText(66666666, 999999999, "Hello World!");
+ 
+leachim6 PeopleCode
+ filepath p/PeopleCode
+ example
+  MessageBox(0, "", 0, 0, "Hello World");
+  
+
+stringToken "
 
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/PeopleCode
  example
@@ -22,23 +39,6 @@ wikipedia https://en.wikipedia.org/wiki/PeopleCode
  backlinksCount 10
  revisionCount 83
  appeared 2008
-
-antlr https://github.com/antlr/grammars-v4/tree/master/peoplecode
-
-helloWorldCollection PeopleCode
- /* Hello World in PeopleCode 8.45
- 
- &MsgText = MsgGetText(66666666, 999999999, "Hello World!");
- 
-leachim6 PeopleCode
- filepath p/PeopleCode
- example
-  MessageBox(0, "", 0, 0, "Hello World");
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:PeopleCode
-
-fileType text
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

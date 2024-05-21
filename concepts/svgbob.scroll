@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id svgbob
 name svgbob
 appeared 2016
-tags textMarkup
 creators Jovansonlee Cesar
-conceptDescription Svgbob is a diagramming model which uses a set of typing characters to approximate the intended shape.
+tags textMarkup
 website https://ivanceras.github.io/svgbob-editor/
+conceptDescription Svgbob is a diagramming model which uses a set of typing characters to approximate the intended shape.
 
+writtenIn rust bourne-shell markdown svg toml yaml
 visualParadigm true
+repoStats
+ firstCommit 2016
+ commits 611
+ committers 17
+ files 92
+ newestCommit 2024
 
 githubRepo https://github.com/ivanceras/svgbob
  firstCommit 2016
@@ -18,12 +26,3 @@ githubRepo https://github.com/ivanceras/svgbob
  updated 2022
  description Convert your ascii diagram scribbles into happy little SVG
  issues 24
-
-repoStats
- firstCommit 2016
- commits 611
- committers 17
- files 92
- newestCommit 2024
-
-writtenIn rust bourne-shell markdown svg toml yaml

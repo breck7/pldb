@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id glicol
 name Glicol
 appeared 2020
-tags musicalNotation
 creators Qichao Lan
+tags musicalNotation
 website https://glicol.org
 webRepl https://glicol.org/demo
+
+writtenIn rust javascript json markdown toml yaml css html bourne-shell
+repoStats
+ firstCommit 2020
+ commits 635
+ committers 9
+ files 202
+ newestCommit 2024
 country Norway
 originCommunity University of Oslo
-domainName glicol.org
- registered 2021
 
 example
  ~gate: speed 2.0
@@ -39,11 +46,5 @@ githubRepo https://github.com/chaosprint/glicol
  description (Audio) graph-oriented live coding language and music DSP library written in Rust
  issues 23
 
-repoStats
- firstCommit 2020
- commits 635
- committers 9
- files 202
- newestCommit 2024
-
-writtenIn rust javascript json markdown toml yaml css html bourne-shell
+domainName glicol.org
+ registered 2021

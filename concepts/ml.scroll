@@ -1,21 +1,32 @@
 import ../code/conceptPage.scroll
+
 id ml
 name ML
 appeared 1973
-tags pl
 creators Robin Milner
+tags pl
+standsFor Meta Language
+
+fileType text
+wordRank 3710
 documentation http://www.cs.cmu.edu/~rwh/isml/book.pdf
 documentation https://www.cs.nmsu.edu/~rth/cs/cs471/sml.html
-standsFor Meta Language
+faqPageUrl http://www.faqs.org/faqs/meta-lang-faq/
+rosettaCode http://www.rosettacode.org/wiki/Category:ML
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity University of Edinburgh
+projectEuler ML
+ memberCount
+  2019 435
+  2022 427
+
+assignmentToken :=
 
 hasGarbageCollection true
 hasTypeInference true
 hasLineComments false
 hasAssignment true
-
-assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  example
@@ -35,22 +46,8 @@ wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  revisionCount 449
  appeared 1973
 
-projectEuler ML
- memberCount
-  2019 435
-  2022 427
-rosettaCode http://www.rosettacode.org/wiki/Category:ML
-
-indeedJobs ml engineer
- 2022 6
-faqPageUrl http://www.faqs.org/faqs/meta-lang-faq/
-
-tiobe ML
 hopl https://hopl.info/showlanguage.prx?exp=620
-
-fileType text
-wordRank 3710
-centralPackageRepositoryCount 0
+tiobe ML
 
 isbndb 33
  year|publisher|title|authors|isbn13
@@ -87,6 +84,9 @@ isbndb 33
  20120917|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486719734
  20090101|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486595345
  1991|Chapman & Hall|Applicative High Order Programming: Standard Ml In Practice (chapman And Hall Computing Series)|S. Sokolowski|9780442308384
+
+indeedJobs ml engineer
+ 2022 6
 
 semanticScholar 30
  year|title|doi|citations|influentialCitations|authors|paperId

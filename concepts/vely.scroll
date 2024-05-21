@@ -1,15 +1,13 @@
 import ../code/conceptPage.scroll
+
 id vely
 name Vely
 appeared 2022
 tags pl
-conceptDescription Vely is an embedded programming language with C as a host language. It's precompiled into C, creating a native executable.
 website https://vely.dev/
+conceptDescription Vely is an embedded programming language with C as a host language. It's precompiled into C, creating a native executable.
+
 reference https://news.ycombinator.com/item?id=32231417
-domainName vely.dev
- registered 2022
- awisRank
-  2022 4820542
 
 example
  void list_employees() {
@@ -40,3 +38,8 @@ example
      }
      @</body></html>
  }
+
+domainName vely.dev
+ registered 2022
+ awisRank
+  2022 4820542

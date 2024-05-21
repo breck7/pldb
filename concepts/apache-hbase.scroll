@@ -1,14 +1,20 @@
 import ../code/conceptPage.scroll
+
 id apache-hbase
 name Apache Hbase
 appeared 2008
 tags application
 website https://hbase.apache.org/
-documentation https://hbase.apache.org/book.html
-originCommunity https://github.com/apache/hbase
-domainName hbase.apache.org
 
 writtenIn java ruby protobuf asciidoc bourne-shell xml java-server-pages python html javascript markdown css cpp dockerfile perl yaml php svg xslt vtl-lang thrift bash csv xsd c puppet make cmake
+documentation https://hbase.apache.org/book.html
+repoStats
+ firstCommit 2007
+ newestCommit 2024
+ commits 57754
+ committers 830
+ files 5837
+originCommunity https://github.com/apache/hbase
 
 githubRepo https://github.com/apache/hbase
  stars 4700
@@ -24,6 +30,8 @@ wikipedia https://en.wikipedia.org/wiki/Apache_HBase
  dailyPageViews 106
  appeared 2008
 
+domainName hbase.apache.org
+
 indeedJobs hbase developer
  2022 65
 
@@ -31,10 +39,3 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Learning HBase|2010|Shashwat Shriparv|24529152|4.57|7|3
  HBase: The Definitive Guide|2011|Lars George|10316770|3.74|121|7
-
-repoStats
- firstCommit 2007
- newestCommit 2024
- commits 57754
- committers 830
- files 5837

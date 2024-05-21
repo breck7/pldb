@@ -1,11 +1,36 @@
 import ../code/conceptPage.scroll
+
 id livescript
 name LiveScript
 appeared 2011
-tags pl
 creators Jeremy Ashkenas and Satoshi Murakami and George Zahariev
+tags pl
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:LiveScript
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/gkz/LiveScript/issues
+
+pygmentsHighlighter LiveScript
+ filename javascript.py
+ fileExtensions ls
+rijuRepl https://riju.codes/livescript
+ example
+  console.log "Hello, world!"
+  
+leachim6 LiveScript
+ filepath l/LiveScript.ls
+ fileExtensions ls
+ example
+  console.log "Hello World"
+  
+
+lineCommentToken #
+multiLineCommentTokens /* */
+printToken console.log
+stringToken "
 
 hasSemanticIndentation true
 hasLineComments true
@@ -23,11 +48,7 @@ hasFloats true
 hasIntegers true
  # [0-9]+(~[0-9a-z]+)?(?:[a-zA-Z_]+)?
 
-lineCommentToken #
-multiLineCommentTokens /* */
-printToken console.log
-stringToken "
-
+jupyterKernel https://github.com/p2edwards/jp-livescript
 wikipedia https://en.wikipedia.org/wiki/LiveScript_(programming_language)
  related javascript haskell coffeescript f-sharp elixir
  summary LiveScript is a functional programming language that compiles to JavaScript. It was created by Jeremy Ashkenas—the creator of CoffeeScript—along with Satoshi Muramaki, George Zahariev, and many others. For a brief period in the 1990s, LiveScript was the name of JavaScript.
@@ -39,24 +60,10 @@ wikipedia https://en.wikipedia.org/wiki/LiveScript_(programming_language)
  appeared 2011
  fileExtensions ls
 
-githubLanguage LiveScript
- fileExtensions ls _ls
- trendingProjectsCount 0
- type programming
- filenames Slakefile
- aceMode livescript
- codemirrorMode livescript
- codemirrorMimeType text/x-livescript
- tmScope source.livescript
- aliases live-script or ls
- repos 1905
 githubBigQuery LiveScript
  repos 2273
  users 1780
 
-pygmentsHighlighter LiveScript
- filename javascript.py
- fileExtensions ls
 linguistGrammarRepo https://github.com/paulmillr/LiveScript.tmbundle
  firstCommit 2010
  lastCommit 2017
@@ -101,22 +108,16 @@ linguistGrammarRepo https://github.com/paulmillr/LiveScript.tmbundle
   /* Comment */
   
 
-leachim6 LiveScript
- filepath l/LiveScript.ls
- fileExtensions ls
- example
-  console.log "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:LiveScript
-
-rijuRepl https://riju.codes/livescript
- example
-  console.log "Hello, world!"
-  
-
-jupyterKernel https://github.com/p2edwards/jp-livescript
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage LiveScript
+ fileExtensions ls _ls
+ trendingProjectsCount 0
+ type programming
+ filenames Slakefile
+ aceMode livescript
+ codemirrorMode livescript
+ codemirrorMimeType text/x-livescript
+ tmScope source.livescript
+ aliases live-script or ls
+ repos 1905
 
 semanticScholar 0

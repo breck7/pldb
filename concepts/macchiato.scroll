@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id macchiato
 name Macchiato
 appeared 2019
-tags pl
 creators Eddie aka. tamamu
+tags pl
 website https://github.com/tamamu/macchiato
+
+writtenIn elixir markdown
+compilesTo javascript
 fileExtensions at
+repoStats
+ firstCommit 2019
+ commits 4
+ committers 2
+ files 14
+ newestCommit 2019
 country Japan
 originCommunity https://github.com/tamamu/macchiato/issues
-
-compilesTo javascript
-writtenIn elixir markdown
 
 example
  (defn inc (x) (+ 1 x))
@@ -31,10 +38,3 @@ githubRepo https://github.com/tamamu/macchiato
  updated 2019
  description An AltJS of a dialect of Lisp
  issues 0
-
-repoStats
- firstCommit 2019
- commits 4
- committers 2
- files 14
- newestCommit 2019

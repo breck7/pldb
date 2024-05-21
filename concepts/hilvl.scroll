@@ -1,20 +1,21 @@
 import ../code/conceptPage.scroll
+
 id hilvl
 name hilvl
 appeared 2015
-tags pl
 creators Holger Ludvigsen
+tags pl
 conceptDescription Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.
+
+writtenIn javascript markdown html xml yaml
+repoStats
+ firstCommit 2015
+ commits 190
+ committers 4
+ files 103
+ newestCommit 2021
 country Unknown
 originCommunity https://github.com/holgerl/hilvl/issues
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  @ var foo = 42
@@ -52,11 +53,10 @@ githubRepo https://github.com/holgerl/hilvl
  issues 9
  forks 0
 
-repoStats
- firstCommit 2015
- commits 190
- committers 4
- files 103
- newestCommit 2021
+lineCommentToken //
 
-writtenIn javascript markdown html xml yaml
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

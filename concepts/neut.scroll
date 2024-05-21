@@ -1,19 +1,20 @@
 import ../code/conceptPage.scroll
+
 id neut
 name neut
 appeared 2018
 tags pl
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
+
+writtenIn haskell markdown json yaml bourne-shell javascript css typescript handlebars dockerfile svg toml c
+repoStats
+ firstCommit 2018
+ commits 6158
+ committers 5
+ files 552
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/vekatze/neut/issues
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
 
 example
  ; download the core library
@@ -38,11 +39,10 @@ githubRepo https://github.com/u2zv1wx/neut
  description A dependently-typed programming language with compile-time malloc/free determination
  issues 3
 
-repoStats
- firstCommit 2018
- commits 6158
- committers 5
- files 552
- newestCommit 2024
+lineCommentToken ;
 
-writtenIn haskell markdown json yaml bourne-shell javascript css typescript handlebars dockerfile svg toml c
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

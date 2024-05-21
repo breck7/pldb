@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id prograph
 name Prograph
 appeared 1983
 tags pl
+
+isOpenSource false
+visualParadigm true
+fileType text
+centralPackageRepositoryCount 0
 country Canada
 originCommunity Acadia University
-
-visualParadigm true
 
 wikipedia https://en.wikipedia.org/wiki/Prograph
  related diagram prolog labview doi isbn
@@ -20,15 +24,11 @@ wikipedia https://en.wikipedia.org/wiki/Prograph
 
 hopl https://hopl.info/showlanguage.prx?exp=1011
 
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Visual Programming with Prograph CPX|1995|Scott B. Steinman|4051326|0.0|0|0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  1995|Prentice Hall|Visual Programming With Prograph Cpx|Steinman, Scott B. and Carver, Kevin G.|9780134411637
  1995|Manning Publications|Visual Programming With Prograph Cpx|Scott B Steinman|9781884777059
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Visual Programming with Prograph CPX|1995|Scott B. Steinman|4051326|0.0|0|0

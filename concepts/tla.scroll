@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id tla
 name TLA
 appeared 1999
-tags pl
 creators Leslie Lamport
+tags pl
 conceptDescription TLA+ is a formal specification and verification language that helps engineers design, specify, reason about and verify complex, real-life algorithms and software or hardware systems. TLA+ has been successfully used by Intel, Compaq and Microsoft in the design of hardware systems, and has started seeing recent use in large software systems, at Microsoft, Oracle, and most famously at Amazon, where engineers use TLA+ to specify and verify many AWS services.
+
+isOpenSource true
+fileType text
 documentation https://lamport.azurewebsites.net/tla/learning.html
+centralPackageRepositoryCount 0
 reference https://lamport.azurewebsites.net/tla/tla.html
+
+lineCommentToken \*
+multiLineCommentTokens (* *)
+booleanTokens TRUE FALSE
 
 hasLineComments true
  \* A comment
@@ -17,10 +26,6 @@ hasMultiLineComments true
  *)
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken \*
-multiLineCommentTokens (* *)
-booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/TLA+
  example
@@ -258,13 +263,6 @@ wikipedia https://en.wikipedia.org/wiki/TLA+
  dailyPageViews 167
  appeared 1999
 
-githubLanguage TLA
- fileExtensions tla
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.tla
- repos 680
 githubBigQuery TLA
  repos 89
  users 85
@@ -303,15 +301,19 @@ linguistGrammarRepo https://github.com/agentultra/TLAGrammar
   
   =============================================================================
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 20181011|Springer Nature|Practical TLA|Hillel Wayne|9781484238295
+
+githubLanguage TLA
+ fileExtensions tla
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.tla
+ repos 680
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers|2002|Leslie Lamport|2164642|4.10|21|2
  Practical Tla+: Design-Driven Programming||Hillel Wayne|63014032|4.50|2|0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 20181011|Springer Nature|Practical TLA|Hillel Wayne|9781484238295

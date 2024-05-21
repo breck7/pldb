@@ -1,31 +1,43 @@
 import ../code/conceptPage.scroll
+
 id ioke
 name Ioke
 appeared 2008
-tags pl
 creators Ola Bini
+tags pl
 website http://ioke.org
-documentation https://ioke.org/wiki/index.php/Main_Page
-reference https://ioke.org/wiki/index.php/Guide
+
+isOpenSource true
+writtenIn java csharp xml html lisp css php bash python ruby
+runsOnVm jvm
 fileExtensions ik
+fileType text
+documentation https://ioke.org/wiki/index.php/Main_Page
+rosettaCode http://www.rosettacode.org/wiki/Category:Ioke
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 3601
+ committers 19
+ files 631
+ newestCommit 2011
 country Ecuador
 originCommunity https://github.com/olabini/ioke/issues/
-domainName ioke.org
- registered 2008
- awisRank
-  2017 12850561
+reference https://ioke.org/wiki/index.php/Guide
 
-runsOnVm jvm
-
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-
-printToken println
-stringToken "
+pygmentsHighlighter Ioke
+ filename jvm.py
+ fileExtensions ik
+rijuRepl https://riju.codes/ioke
+ example
+  "Hello, world!" println
+  
+leachim6 Ioke
+ filepath i/Ioke.ik
+ fileExtensions ik
+ example
+  "Hello World" println
+  
 
 githubRepo https://github.com/olabini/ioke
  stars 161
@@ -37,12 +49,15 @@ githubRepo https://github.com/olabini/ioke
  description ioke is a new language for the JVM, based on Io and other languages.
  issues 1
 
-repoStats
- firstCommit 2008
- commits 3601
- committers 19
- files 631
- newestCommit 2011
+printToken println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
  related io smalltalk lisp ruby jruby
@@ -55,21 +70,17 @@ wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
  appeared 2008
  fileExtensions ik
 
-githubLanguage Ioke
- fileExtensions ik
- trendingProjectsCount 0
- type programming
- interpreters ioke
- aceMode text
- tmScope source.ioke
- repos 17
+tiobe Ioke
+
+domainName ioke.org
+ registered 2008
+ awisRank
+  2017 12850561
+
 githubBigQuery Ioke
  repos 41
  users 39
 
-pygmentsHighlighter Ioke
- filename jvm.py
- fileExtensions ik
 linguistGrammarRepo https://github.com/vic/ioke-outdated
  firstCommit 2008
  lastCommit 2009
@@ -82,29 +93,17 @@ linguistGrammarRepo https://github.com/vic/ioke-outdated
   "Hello world." println
   
 
-leachim6 Ioke
- filepath i/Ioke.ik
- fileExtensions ik
- example
-  "Hello World" println
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Ioke
-
-rijuRepl https://riju.codes/ioke
- example
-  "Hello, world!" println
-  
-
-tiobe Ioke
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2012||Ioke (programming Language)|Timoteus Elmo|9786137118351
 
-semanticScholar 0
+githubLanguage Ioke
+ fileExtensions ik
+ trendingProjectsCount 0
+ type programming
+ interpreters ioke
+ aceMode text
+ tmScope source.ioke
+ repos 17
 
-writtenIn java csharp xml html lisp css php bash python ruby
+semanticScholar 0

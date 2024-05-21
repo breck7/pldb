@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id invokator
 name invokator
 appeared 2004
-tags pl
 creators Yann Orlarey
+tags pl
 website https://faust.grame.fr/
-reference http://functional-art.org/2017/slides/orlarey-farm17-slides.pdf
-country France
-originCommunity https://github.com/grame-cncm
 
 writtenIn cpp bash standard-ml xml markdown make java cmake javascript c bourne-shell objective-cpp python julia objective-c tex vhdl csharp rust html json yaml css d cson restructuredtext gradle ruby wasm yacc svg llvmir lisp lex mxml r vim-script matlab dockerfile toml ini expect
+tryItOnline https://faustide.grame.fr/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2004
+ commits 15545
+ committers 200
+ files 3515
+ newestCommit 2024
+country France
+originCommunity https://github.com/grame-cncm
+reference http://functional-art.org/2017/slides/orlarey-farm17-slides.pdf
 
 githubRepo https://github.com/grame-cncm/faust
  firstCommit 2004
@@ -21,15 +30,4 @@ githubRepo https://github.com/grame-cncm/faust
  description Functional programming language for signal processing and sound synthesis
  issues 163
 
-repoStats
- firstCommit 2004
- commits 15545
- committers 200
- files 3515
- newestCommit 2024
-
-tryItOnline https://faustide.grame.fr/
-
 hopl https://hopl.info/showlanguage.prx?exp=6393
-
-centralPackageRepositoryCount 0

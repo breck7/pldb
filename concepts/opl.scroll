@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id opl
 name OPL
 appeared 1984
 tags pl
 website http://opl-dev.sourceforge.net
 standsFor Open Programming Language
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:OPL
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity Psion PLC
-domainName opl-dev.sourceforge.net
 
 wikipedia https://en.wikipedia.org/wiki/Open_Programming_Language
  example
@@ -31,12 +35,14 @@ wikipedia https://en.wikipedia.org/wiki/Open_Programming_Language
  revisionCount 100
  appeared 1984
 
-rosettaCode http://www.rosettacode.org/wiki/Category:OPL
-
 tiobe OPL
 
-fileType text
-centralPackageRepositoryCount 0
+domainName opl-dev.sourceforge.net
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1999|The MIT Press|The OPL Optimization Programming Language|Van Hentenryck, Pascal|9780262720304
+ 2005|Wiley|Rapid Mobile Enterprise Development for Symbian OS: An Introduction to OPL Application Design and Programming (Symbian Press)|Spence, Ewan|9780470014851
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -44,8 +50,3 @@ goodreads
  Structured Programming in OPL on the Psion Organiser||Bill  Aitken|48166027|0.0|0|0
  A Deep Dive into Strategic Network Design Programming: OPL CPLEX Edition|2014|Michael Watson|41346050|4.00|3|1
  Rapid Mobile Enterprise Development for Symbian OS: An Introduction to OPL Application Design and Programming (Symbian Press)|2005|Ewan Spence|13579798|3.50|2|0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 1999|The MIT Press|The OPL Optimization Programming Language|Van Hentenryck, Pascal|9780262720304
- 2005|Wiley|Rapid Mobile Enterprise Development for Symbian OS: An Introduction to OPL Application Design and Programming (Symbian Press)|Spence, Ewan|9780470014851

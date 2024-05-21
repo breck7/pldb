@@ -1,14 +1,24 @@
 import ../code/conceptPage.scroll
+
 id xtend
 name Xtend
 appeared 2011
-tags pl
 creators Sven Efftinge and Sebastian Zarnekow
+tags pl
 website http://www.xtend-lang.org
-domainName xtend-lang.org
- registered 2011
 
+isOpenSource true
 runsOnVm jvm
+clocExtensions xtend
+fileType text
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter Xtend
+ filename jvm.py
+ fileExtensions xtend
+twitter https://twitter.com/xtendlang
+
+multiLineCommentTokens /* */
 
 hasStaticTyping true
 hasTypeInference true
@@ -22,8 +32,6 @@ hasSemanticIndentation false
 hasHexadecimals true
 hasFloats true
 hasIntegers true
-
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Xtend
  example
@@ -39,20 +47,15 @@ wikipedia https://en.wikipedia.org/wiki/Xtend
  revisionCount 39
  appeared 2011
 
-githubLanguage Xtend
- fileExtensions xtend
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.xtend
- repos 1438
+tiobe Xtend
+
+domainName xtend-lang.org
+ registered 2011
+
 githubBigQuery Xtend
  repos 834
  users 623
 
-pygmentsHighlighter Xtend
- filename jvm.py
- fileExtensions xtend
 linguistGrammarRepo https://github.com/staltz/SublimeXtend
  firstCommit 2014
  lastCommit 2014
@@ -122,17 +125,16 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
   }
   
 
-tiobe Xtend
-
-twitter https://twitter.com/xtendlang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Bettini, Lorenzo|9781782160311
  2013|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Bettini, Lorenzo|9781782160304
  31-08-2016|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Lorenzo Bettini|9781786463272
 
-clocExtensions xtend
+githubLanguage Xtend
+ fileExtensions xtend
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.xtend
+ repos 1438

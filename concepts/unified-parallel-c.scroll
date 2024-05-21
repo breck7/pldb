@@ -1,11 +1,14 @@
 import ../code/conceptPage.scroll
+
 id unified-parallel-c
 name UPC
 appeared 2003
 tags pl
 website http://upc.lbl.gov/
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity UPC Consortium
-domainName upc.lbl.gov
 
 wikipedia https://en.wikipedia.org/wiki/Unified_Parallel_C
  related c split-c cilk chapel x10
@@ -17,6 +20,20 @@ wikipedia https://en.wikipedia.org/wiki/Unified_Parallel_C
  dailyPageViews 38
  appeared 2003
 
+hopl https://hopl.info/showlanguage.prx?exp=6133
+
+domainName upc.lbl.gov
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2005-06-24|Wiley|UPC|Tarek El-Ghazawi and William Carlson and Thomas Sterling and Katherine Yelick|9780471478379
+
 githubLanguage Unified Parallel C
  fileExtensions upc
  trendingProjectsCount 0
@@ -27,18 +44,3 @@ githubLanguage Unified Parallel C
  codemirrorMimeType text/x-csrc
  tmScope source.c
  repos 16668
-
-linguistGrammarRepo https://github.com/textmate/c.tmbundle
- firstCommit 2005
- lastCommit 2018
- committerCount 23
- commitCount 359
-
-hopl https://hopl.info/showlanguage.prx?exp=6133
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 2005-06-24|Wiley|UPC|Tarek El-Ghazawi and William Carlson and Thomas Sterling and Katherine Yelick|9780471478379

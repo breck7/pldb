@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id squire
 name Squire
 appeared 2021
-tags pl
 creators Sam Westerman
+tags pl
+
+writtenIn c markdown make bourne-shell
+repoStats
+ firstCommit 2021
+ commits 324
+ committers 5
+ files 111
+ newestCommit 2024
 country United States
 originCommunity https://github.com/sampersand/squire/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/sampersand/squire
  updated 2022
  description The medieval language held together by twine.
  issues 2
-
-repoStats
- firstCommit 2021
- commits 324
- committers 5
- files 111
- newestCommit 2024
-
-writtenIn c markdown make bourne-shell

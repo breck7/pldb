@@ -1,13 +1,66 @@
 import ../code/conceptPage.scroll
+
 id prolog
 name Prolog
 appeared 1972
-tags pl
 creators Alain Colmerauer
-documentation https://www.swi-prolog.org/pldoc/index.html
+tags pl
+
 fileExtensions pl pro P
+clocExtensions P prolog yap pl p6 pro
+fileType text
+documentation https://www.swi-prolog.org/pldoc/index.html
+faqPageUrl https://www.swi-prolog.org/FAQ/
+downloadPageUrl https://www.swi-prolog.org/Download.html
+antlr https://github.com/antlr/grammars-v4/tree/master/prolog
+rosettaCode http://www.rosettacode.org/wiki/Category:Prolog
+quineRelay Prolog
+packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+ubuntuPackage swi-prolog
 country United Kingdom and France
 originCommunity University of Edinburgh && Aix-Marseille University
+projectEuler Prolog
+ memberCount
+  2019 143
+  2022 156
+
+helloWorldCollection Prolog
+ % Hello World in Prolog
+ 
+ hello :- display('Hello World!') , nl .
+ 
+pygmentsHighlighter Prolog
+ filename prolog.py
+ fileExtensions ecl prolog pro pl
+rijuRepl https://riju.codes/prolog
+ example
+  :- initialization main.
+  
+  main :-
+      write("Hello, world!"), nl.
+  
+subreddit https://reddit.com/r/prolog
+ memberCount
+  2017 1756
+  2022 7884
+leachim6 Prolog
+ filepath p/Prolog.pro
+ fileExtensions pro
+ example
+  helloWorld :-
+    write('Hello World').
+  
+  :- helloWorld.
+  
+
+meetup https://www.meetup.com/topics/prolog
+ memberCount 3771
+ groupCount 8
+
+lineCommentToken %
+multiLineCommentTokens /* */
+printToken write
+stringToken '
 
 hasComments true
 hasTypeInference true
@@ -40,11 +93,7 @@ hasIntegers true
 hasBinaryNumbers true
  % 0b[01]+
 
-lineCommentToken %
-multiLineCommentTokens /* */
-printToken write
-stringToken '
-
+jupyterKernel https://github.com/Calysto/calysto_prolog
 wikipedia https://en.wikipedia.org/wiki/Prolog
  example
   rule(q0, 1, q0, 1, right).
@@ -59,22 +108,14 @@ wikipedia https://en.wikipedia.org/wiki/Prolog
  appeared 1972
  fileExtensions pl pro P
 
-githubLanguage Prolog
- fileExtensions pl pro prolog yap
- trendingProjectsCount 0
- type programming
- interpreters swipl yap
- aceMode prolog
- tmScope source.prolog
- repos 22512
+hopl https://hopl.info/showlanguage.prx?exp=562
+tiobe Prolog
+ currentRank 41
+
 githubBigQuery Prolog
  repos 11137
  users 9245
 
-antlr https://github.com/antlr/grammars-v4/tree/master/prolog
-pygmentsHighlighter Prolog
- filename prolog.py
- fileExtensions ecl prolog pro pl
 linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
  firstCommit 2012
  lastCommit 2018
@@ -88,68 +129,6 @@ linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
   powerset(Set, Subset) :-
   	bagof(Subset, subset(Set, Subset), Subset).
   
-
-projectEuler Prolog
- memberCount
-  2019 143
-  2022 156
-helloWorldCollection Prolog
- % Hello World in Prolog
- 
- hello :- display('Hello World!') , nl .
- 
-leachim6 Prolog
- filepath p/Prolog.pro
- fileExtensions pro
- example
-  helloWorld :-
-    write('Hello World').
-  
-  :- helloWorld.
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Prolog
-quineRelay Prolog
-
-rijuRepl https://riju.codes/prolog
- example
-  :- initialization main.
-  
-  main :-
-      write("Hello, world!"), nl.
-  
-
-indeedJobs prolog developer
- 2022 79
-linkedInSkill prolog
- 2018 36743
-faqPageUrl https://www.swi-prolog.org/FAQ/
-downloadPageUrl https://www.swi-prolog.org/Download.html
-
-subreddit https://reddit.com/r/prolog
- memberCount
-  2017 1756
-  2022 7884
-meetup https://www.meetup.com/topics/prolog
- memberCount 3771
- groupCount 8
-
-tiobe Prolog
- currentRank 41
-hopl https://hopl.info/showlanguage.prx?exp=562
-
-packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
-
-ubuntuPackage swi-prolog
-jupyterKernel https://github.com/Calysto/calysto_prolog
-fileType text
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PROLOG: Programming for Artificial Intelligence|1986|Ivan Bratko|2059933|3.75|166|4
- Programming in PROLOG: Using the ISO Standard|1981|William F. Clocksin|1601676|3.57|83|4
- The Art of Prolog: Advanced Programming Techniques|1994|Leon Sterling|2365132|3.91|22|2
- The Art Of Prolog: Advanced Programming Techniques|1986|Leon Sterling|1710377|3.79|43|2
- Logic Programming with PROLOG|2005|Max Bramer|2069010|3.56|16|0
 
 isbndb 95
  year|publisher|title|authors|isbn13
@@ -249,6 +228,20 @@ isbndb 95
  1993|John Wiley And Sons Ltd|The Techniques Of Prolog Programming With Implementation Of Logical Negation And Quantified Goals|T. Van Le|9780471599708
  1990|Prentice Hall|Logic Programming: Prolog And Stream Parallel Languages (prentice Hall Advances In Computer Science Series)|J. D. Newmarch|9780135398425
 
+githubLanguage Prolog
+ fileExtensions pl pro prolog yap
+ trendingProjectsCount 0
+ type programming
+ interpreters swipl yap
+ aceMode prolog
+ tmScope source.prolog
+ repos 22512
+
+indeedJobs prolog developer
+ 2022 79
+linkedInSkill prolog
+ 2018 36743
+
 semanticScholar 23
  year|title|doi|citations|influentialCitations|authors|paperId
  1987|Programming in Prolog|10.1007/978-3-642-97005-4|1301|102|W. Clocksin and C. Mellish|ec74eaf722b5fb9c49e3fe38fe30ddf3dda61d72
@@ -275,4 +268,10 @@ semanticScholar 23
  2012|An adaptive prolog programming language with machine learning|10.1109/CCIS.2012.6664359|1|0|Benjie Lu and Zhiqing Liu and Hui Gao|a22535f08ebba5e76633ceb8a321cbb156727dfc
  2013|Design an Arm Robot through Prolog Programming Language|10.4172/2168-9695.1000104|1|0|A. Azad and T. Rashid|1e2d636b3b4df2802b0815122ba551c001f7235a
 
-clocExtensions P prolog yap pl p6 pro
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PROLOG: Programming for Artificial Intelligence|1986|Ivan Bratko|2059933|3.75|166|4
+ Programming in PROLOG: Using the ISO Standard|1981|William F. Clocksin|1601676|3.57|83|4
+ The Art of Prolog: Advanced Programming Techniques|1994|Leon Sterling|2365132|3.91|22|2
+ The Art Of Prolog: Advanced Programming Techniques|1986|Leon Sterling|1710377|3.79|43|2
+ Logic Programming with PROLOG|2005|Max Bramer|2069010|3.56|16|0

@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id genius-extension-language
 name GEL Genius
 appeared 1997
 tags pl
 website http://www.jirka.org/genius.html
 aka GEL
+
+isOpenSource true
+fileType text
+quineRelay GEL (Genius)
+centralPackageRepositoryCount 0
+ubuntuPackage genius
 country United States
 originCommunity GNOME Foundation
 
+rijuRepl https://riju.codes/gel
+ example
+  print("Hello, world!")
+  
 example
  function f(x) = (
   if x <= 1 then
@@ -32,15 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/Genius_(mathematics_software)
  backlinksCount 53
  revisionCount 33
  appeared 1997
-
-quineRelay GEL (Genius)
-
-rijuRepl https://riju.codes/gel
- example
-  print("Hello, world!")
-  
-
-ubuntuPackage genius
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

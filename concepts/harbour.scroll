@@ -1,16 +1,33 @@
 import ../code/conceptPage.scroll
+
 id harbour
 name Harbour
 appeared 1999
-tags pl
 creators Antonio Linares
+tags pl
 website https://harbour.github.io/
+
+isOpenSource true
+clocExtensions hb
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Harbour
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/harbour
-domainName harbour.github.io
- awisRank
-  2022 11714457
-  2017 1772199
+
+leachim6 Harbour
+ filepath h/Harbour.prg
+ fileExtensions prg
+ example
+  PROCEDURE Main()
+  
+     ? "Hello World"
+  
+     RETURN
+  
+
+lineCommentToken //
+stringToken "
 
 hasLineComments true
  // A comment
@@ -19,9 +36,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Harbour_(programming_language)
  example
@@ -91,13 +105,11 @@ wikipedia https://en.wikipedia.org/wiki/Harbour_(programming_language)
  appeared 1999
  fileExtensions prg ch hb hbp
 
-githubLanguage Harbour
- fileExtensions hb
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.harbour
- repos 45
+domainName harbour.github.io
+ awisRank
+  2022 11714457
+  2017 1772199
+
 githubBigQuery Harbour
  repos 86
  users 80
@@ -108,22 +120,12 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
  committerCount 7
  commitCount 157
 
-leachim6 Harbour
- filepath h/Harbour.prg
- fileExtensions prg
- example
-  PROCEDURE Main()
-  
-     ? "Hello World"
-  
-     RETURN
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Harbour
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions hb
+githubLanguage Harbour
+ fileExtensions hb
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.harbour
+ repos 45

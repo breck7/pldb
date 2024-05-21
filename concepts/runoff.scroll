@@ -1,20 +1,18 @@
 import ../code/conceptPage.scroll
+
 id runoff
 name RUNOFF
 appeared 1965
-tags textMarkup
 creators J. E. Saltzer
+tags textMarkup
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity MIT
 
-githubLanguage RUNOFF
- fileExtensions rnh rno
- trendingProjectsCount 0
- type markup
- aceMode text
- tmScope text.runoff
- wrap true
- repos 5
+hopl https://hopl.info/showlanguage.prx?exp=2460
+
 githubBigQuery RUNOFF
  repos 7
  users 7
@@ -352,7 +350,11 @@ linguistGrammarRepo https://github.com/Alhadis/language-roff
   .sp 2
   
 
-hopl https://hopl.info/showlanguage.prx?exp=2460
-
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage RUNOFF
+ fileExtensions rnh rno
+ trendingProjectsCount 0
+ type markup
+ aceMode text
+ tmScope text.runoff
+ wrap true
+ repos 5

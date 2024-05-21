@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id coco
 name Coco
 appeared 2010
-tags pl
 creators Satoshi Murakami
+tags pl
 website https://satyr.github.io/coco/
+
+writtenIn javascript html markdown json css
+compilesTo javascript
 fileExtensions co
+repoStats
+ firstCommit 2009
+ commits 3401
+ committers 39
+ files 69
+ newestCommit 2014
 country Japan
 originCommunity https://github.com/satyr/
-
-compilesTo javascript
 
 githubRepo https://github.com/satyr/coco/
  stars 501
@@ -17,12 +25,3 @@ githubRepo https://github.com/satyr/coco/
  subscribers 25
  updated 2014
  description Unfancy CoffeeScript
-
-repoStats
- firstCommit 2009
- commits 3401
- committers 39
- files 69
- newestCommit 2014
-
-writtenIn javascript html markdown json css

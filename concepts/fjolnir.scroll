@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id fjolnir
 name Fjölnir
 appeared 1986
-tags pl
 creators Snorri Agnarsson
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Iceland
 originCommunity University of Iceland
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Fjölnir_(programming_language)
  example
@@ -38,6 +42,3 @@ wikipedia https://en.wikipedia.org/wiki/Fjölnir_(programming_language)
  revisionCount 29
  appeared 1980
  fileExtensions fjo fjv sma ein
-
-fileType text
-centralPackageRepositoryCount 0

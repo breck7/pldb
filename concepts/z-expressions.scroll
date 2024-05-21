@@ -1,14 +1,33 @@
 import ../code/conceptPage.scroll
+
 id z-expressions
 name Z
 appeared 2012
-tags pl
 creators Chris Done
+tags pl
 website http://chrisdone.com/z/
-reference https://news.ycombinator.com/item?id=20557363
-fileExtensions zz
 
 writtenIn haskell lisp html markdown
+fileExtensions zz
+repoStats
+ firstCommit 2012
+ commits 25
+ committers 2
+ files 11
+ newestCommit 2014
+reference https://news.ycombinator.com/item?id=20557363
+
+githubRepo https://github.com/chrisdone/z
+ firstCommit 2012
+ stars 277
+ forks 8
+ subscribers 14
+ created 2012
+ updated 2022
+ description A strict, impure, curried, partially applied programming language with rather peculiar syntax.
+ issues 0
+
+lineCommentToken --
 
 hasComments true
  -- A simple function, that is used inside the macro below.
@@ -29,25 +48,6 @@ hasStrings true
  "hello world"
 hasLineComments true
  -- A comment
-
-lineCommentToken --
-
-githubRepo https://github.com/chrisdone/z
- firstCommit 2012
- stars 277
- forks 8
- subscribers 14
- created 2012
- updated 2022
- description A strict, impure, curried, partially applied programming language with rather peculiar syntax.
- issues 0
-
-repoStats
- firstCommit 2012
- commits 25
- committers 2
- files 11
- newestCommit 2014
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

@@ -1,19 +1,15 @@
 import ../code/conceptPage.scroll
+
 id cloud-firestore-security-rules
 name Cloud Firestore Security Rules
 appeared 2017
 tags application
-reference https://firebase.google.com/docs/reference/rules/rules
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Google
-
-githubLanguage Cloud Firestore Security Rules
- type data
- filenames firestore.rules
- aceMode less
- codemirrorMode css
- codemirrorMimeType text/css
- tmScope source.firestore
+reference https://firebase.google.com/docs/reference/rules/rules
 
 linguistGrammarRepo https://github.com/jaysquared/atom-firestore-grammar
  firstCommit 2017
@@ -129,5 +125,10 @@ linguistGrammarRepo https://github.com/jaysquared/atom-firestore-grammar
     }
   }
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Cloud Firestore Security Rules
+ type data
+ filenames firestore.rules
+ aceMode less
+ codemirrorMode css
+ codemirrorMimeType text/css
+ tmScope source.firestore

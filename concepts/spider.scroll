@@ -1,17 +1,23 @@
 import ../code/conceptPage.scroll
+
 id spider
 name spider
 appeared 2014
-tags pl
 creators Alon Gubkin
+tags pl
 website http://spiderlang.org/
+
+writtenIn javascript markdown json yaml
+compilesTo javascript
 fileExtensions spider
+repoStats
+ firstCommit 2014
+ commits 368
+ committers 10
+ files 159
+ newestCommit 2017
 country Israel
 originCommunity https://github.com/alongubkin/spider/issues
-
-compilesTo javascript
-
-hasInheritance true
 
 githubRepo https://github.com/alongubkin/spider
  stars 1300
@@ -21,11 +27,4 @@ githubRepo https://github.com/alongubkin/spider
  updated 2017
  description Unsurprising JavaScript - No longer active
 
-repoStats
- firstCommit 2014
- commits 368
- committers 10
- files 159
- newestCommit 2017
-
-writtenIn javascript markdown json yaml
+hasInheritance true

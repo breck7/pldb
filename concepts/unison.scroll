@@ -1,45 +1,19 @@
 import ../code/conceptPage.scroll
+
 id unison
 name unison
 appeared 2015
 tags pl
 website http://unisonweb.org/
-reference https://www.youtube.com/watch?v=rp_Eild1aq8
-domainName unisonweb.org
- registered 2014
 
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
-
-example
- -- comments start with `--`
- -- alice : Node, bob : Node
- x = factorial 6
- Remote.transfer alice
- y = foo x -- happens on `alice` node
- Remote.transfer bob
- bar x y -- happens on `bob` node
-
-githubRepo https://github.com/unisonweb/unison
- firstCommit 2013
- stars 4472
- forks 234
- subscribers 115
- created 2015
- updated 2022
- description A friendly programming language from the future
- issues 807
-
+isOpenSource true
+centralPackageRepositoryCount 0
 repoStats
  firstCommit 2013
  commits 14701
  committers 111
  files 1405
+reference https://www.youtube.com/watch?v=rp_Eild1aq8
 
 rijuRepl https://riju.codes/unison
  example
@@ -59,10 +33,36 @@ rijuRepl https://riju.codes/unison
   main = runProg 'let
     printLine "Hello, world!"
   
-
+example
+ -- comments start with `--`
+ -- alice : Node, bob : Node
+ x = factorial 6
+ Remote.transfer alice
+ y = foo x -- happens on `alice` node
+ Remote.transfer bob
+ bar x y -- happens on `bob` node
 twitter https://twitter.com/unisonweb
-isOpenSource true
-centralPackageRepositoryCount 0
+
+githubRepo https://github.com/unisonweb/unison
+ firstCommit 2013
+ stars 4472
+ forks 234
+ subscribers 115
+ created 2015
+ updated 2022
+ description A friendly programming language from the future
+ issues 807
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName unisonweb.org
+ registered 2014
 
 isbndb 0
 

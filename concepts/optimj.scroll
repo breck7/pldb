@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id optimj
 name OptimJ
 appeared 2006
 tags pl
+
+centralPackageRepositoryCount 0
 originCommunity Ateji
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/OptimJ
  example
@@ -25,5 +28,3 @@ wikipedia https://en.wikipedia.org/wiki/OptimJ
  revisionCount 52
  dailyPageViews 10
  appeared 2006
-
-centralPackageRepositoryCount 0

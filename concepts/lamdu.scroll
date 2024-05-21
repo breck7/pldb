@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id lamdu
 name Lamdu
 appeared 2011
-tags pl
 creators Eyal Lotem and Yair Chuchem
+tags pl
 website https://lamdu.org
+
+writtenIn haskell json markdown nix bourne-shell yaml javascript bash xml dockerfile dhall html lisp
+repoStats
+ firstCommit 2011
+ commits 11223
+ committers 28
+ files 458
+ newestCommit 2023
 country Israel
 originCommunity https://github.com/lamdu
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/lamdu/lamdu
  updated 2022
  description lamdu - towards the next generation IDE
  issues 17
-
-repoStats
- firstCommit 2011
- commits 11223
- committers 28
- files 458
- newestCommit 2023
-
-writtenIn haskell json markdown nix bourne-shell yaml javascript bash xml dockerfile dhall html lisp

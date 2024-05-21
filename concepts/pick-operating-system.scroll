@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id pick-operating-system
 name Pick operating system
 appeared 1970
 tags os
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country United States
 originCommunity TRW Inc
 
@@ -17,6 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/Pick_operating_system
  appeared 1973
 
 hopl https://hopl.info/showlanguage.prx?exp=2362
-
-isOpenSource false
-centralPackageRepositoryCount 0

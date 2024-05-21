@@ -1,18 +1,30 @@
 import ../code/conceptPage.scroll
+
 id draco-programming-language
 name Draco
 appeared 1987
-tags pl
 creators Chris Gray
+tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://web.archive.org/web/20090221030835/http://www.graysage.com/
+
+leachim6 Draco
+ filepath d/Draco.d
+ fileExtensions d
+ example
+  proc main()void:
+      writeln("Hello World");
+  corp;
+  
+
+printToken writeln
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken writeln
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Draco_(programming_language)
  related pascal c
@@ -24,18 +36,7 @@ wikipedia https://en.wikipedia.org/wiki/Draco_(programming_language)
  dailyPageViews 6
  appeared 1987
 
-leachim6 Draco
- filepath d/Draco.d
- fileExtensions d
- example
-  proc main()void:
-      writeln("Hello World");
-  corp;
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=1317
-
-centralPackageRepositoryCount 0
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

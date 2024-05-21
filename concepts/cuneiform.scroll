@@ -1,34 +1,20 @@
 import ../code/conceptPage.scroll
+
 id cuneiform
 name cuneiform
 appeared 2015
 tags pl
 website http://www.cuneiform-lang.org
-country European Union
-originCommunity BiobankCloud
-domainName cuneiform-lang.org
- registered 2015
 
-hasStrings true
- "Hello world"
-
-stringToken "
-
-githubRepo https://github.com/joergen7/cuneiform/
- stars 203
- forks 15
- subscribers 13
- created 2014
- updated 2022
- description Cuneiform distributed programming language
- issues 8
-
+writtenIn erlang yaml markdown dockerfile bash
 repoStats
  firstCommit 2014
  commits 554
  committers 11
  files 11
  newestCommit 2023
+country European Union
+originCommunity BiobankCloud
 
 leachim6 Cuneiform
  filepath c/Cuneiform.cfl
@@ -42,8 +28,23 @@ leachim6 Cuneiform
   ( greet()|out );
   
 
+githubRepo https://github.com/joergen7/cuneiform/
+ stars 203
+ forks 15
+ subscribers 13
+ created 2014
+ updated 2022
+ description Cuneiform distributed programming language
+ issues 8
+
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+domainName cuneiform-lang.org
+ registered 2015
+
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  11025942|Show HN: Cuneiform – A Functional Workflow Language|http://www.cuneiform-lang.org/|2016-02-03 11:45:56 UTC|1454499956|joergen7|10|39
-
-writtenIn erlang yaml markdown dockerfile bash

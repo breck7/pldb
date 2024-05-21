@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id idio
 name Idio
 appeared 2015
-tags pl
 creators Ian Fitchet
+tags pl
 website https://idio-lang.org/
+
+isOpenSource true
+writtenIn restructuredtext c json5 make bash markdown python scheme lisp java yaml perl html bc
 documentation https://idio-lang.org/docs/ref/
+repoStats
+ firstCommit 2015
+ commits 1534
+ committers 7
+ files 3011
+ newestCommit 2024
 
 githubRepo https://github.com/idio-lang/idio
  firstCommit 2015
@@ -16,14 +26,3 @@ githubRepo https://github.com/idio-lang/idio
  updated 2022
  description The Idio Shell
  issues 0
-
-repoStats
- firstCommit 2015
- commits 1534
- committers 7
- files 3011
- newestCommit 2024
-
-isOpenSource true
-
-writtenIn restructuredtext c json5 make bash markdown python scheme lisp java yaml perl html bc

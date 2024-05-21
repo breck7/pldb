@@ -1,20 +1,19 @@
 import ../code/conceptPage.scroll
+
 id literate-agda
 name Literate Agda
 appeared 2009
 tags pl
-reference https://link.springer.com/chapter/10.1007/978-3-642-04652-0_5
+
+fileType text
+centralPackageRepositoryCount 0
 country Sweden
 originCommunity Chalmers University
+reference https://link.springer.com/chapter/10.1007/978-3-642-04652-0_5
 
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
-
+pygmentsHighlighter Literate Agda
+ filename haskell.py
+ fileExtensions lagda
 example
  \documentclass{article}
  
@@ -99,6 +98,14 @@ example
  
   \end{document}
 
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
 githubLanguage Literate Agda
  fileExtensions lagda
  trendingProjectsCount 0
@@ -107,10 +114,3 @@ githubLanguage Literate Agda
  aceMode text
  tmScope none
  repos 1840
-
-pygmentsHighlighter Literate Agda
- filename haskell.py
- fileExtensions lagda
-
-fileType text
-centralPackageRepositoryCount 0

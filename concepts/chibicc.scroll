@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id chibicc
 name chibicc
 appeared 2019
-tags compiler
 creators Rui Ueyama
+tags compiler
 conceptDescription A Small C Compiler.
+
+writtenIn c bourne-shell markdown make
+inputLanguages c
+repoStats
+ firstCommit 2019
+ commits 826
+ committers 1
+ files 75
+ newestCommit 2020
 country Singapore
 originCommunity https://github.com/rui314
-
-inputLanguages c
 
 githubRepo https://github.com/rui314/chibicc
  firstCommit 2019
@@ -19,11 +27,3 @@ githubRepo https://github.com/rui314/chibicc
  updated 2022
  description A small C compiler
  issues 70
-
-repoStats
- firstCommit 2019
- commits 826
- committers 1
- files 75
- newestCommit 2020
-writtenIn c bourne-shell markdown make

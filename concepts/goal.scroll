@@ -1,16 +1,21 @@
 import ../code/conceptPage.scroll
+
 id goal
 name Goal
 appeared 2022
 tags pl
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/zycdaq/goal_an_array_programming_language_written_in_go/
-country France
-originCommunity https://bardinflor.perso.aquilenet.fr/index-en
 
 writtenIn go markdown csv html css
 influencedBy apl j k
-
-hasRegularExpressionsSyntaxSugar true
+repoStats
+ firstCommit 2022
+ commits 1998
+ committers 1
+ files 159
+ newestCommit 2024
+country France
+originCommunity https://bardinflor.perso.aquilenet.fr/index-en
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/zycdaq/goal_an_array_programming_language_written_in_go/
 
 example
  csvs:"\n"_`
@@ -40,9 +45,4 @@ example
 
 gitRepo https://codeberg.org/anaseto/goal
 
-repoStats
- firstCommit 2022
- commits 1998
- committers 1
- files 159
- newestCommit 2024
+hasRegularExpressionsSyntaxSugar true

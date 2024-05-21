@@ -1,13 +1,13 @@
 import ../code/conceptPage.scroll
+
 id mathlingua
 name MathLingua
 appeared 2019
 tags pl
 website https://www.mathlingua.org/
+
 country United States
 originCommunity https://github.com/DominicKramer/mathlingua/issues
-domainName mathlingua.org
- registered 2019
 
 example
  Result:
@@ -21,3 +21,6 @@ example
      . 'X is \real.closed \real.bounded \set'
  Metadata:
  . name = "Heine-Borel Theorem"
+
+domainName mathlingua.org
+ registered 2019

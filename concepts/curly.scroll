@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id curly
 name Curly
 appeared 2021
-tags pl
 creators jenra
+tags pl
+
+writtenIn rust markdown c java toml python haskell
+repoStats
+ firstCommit 2021
+ commits 465
+ committers 5
+ files 61
+ newestCommit 2021
 country Unknown
 originCommunity https://github.com/curly-lang/curly-lang
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/curly-lang/curly-lang
  updated 2022
  description The Curly programming language (now in Rust!)
  issues 2
-
-repoStats
- firstCommit 2021
- commits 465
- committers 5
- files 61
- newestCommit 2021
-
-writtenIn rust markdown c java toml python haskell

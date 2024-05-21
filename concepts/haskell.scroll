@@ -1,22 +1,78 @@
 import ../code/conceptPage.scroll
+
 id haskell
 name Haskell
 appeared 1990
-tags pl
 creators Paul Hudak and John Hughes
+tags pl
 website https://www.haskell.org
+
+tryItOnline haskell
+fileExtensions hs lhs
+visualParadigm false
+clocExtensions hs hsc lhs
+fileType text
 documentation https://www.haskell.org/documentation/
 documentation https://devdocs.io/haskell/
 emailList https://www.haskell.org/mailing-lists/
-fileExtensions hs lhs
+faqPageUrl https://wiki.haskell.org/FAQ
+downloadPageUrl https://www.haskell.org/downloads/
+codeMirror haskell
+rosettaCode http://www.rosettacode.org/wiki/Category:Haskell
+quineRelay Haskell
+replit https://repl.it/languages/haskell
+packageRepository https://hackage.haskell.org/
+ubuntuPackage ghc
 country United States and United Kingdom
 originCommunity Yale University && Chalmers University && Microsoft Research && University of Edinburgh
-domainName haskell.org
- registered 1996
- awisRank
-  2022 47314
+projectEuler Haskell
+ memberCount
+  2019 6635
+  2022 7098
 
-visualParadigm false
+helloWorldCollection Haskell
+ -- Hello World in Haskell
+  
+ main = putStrLn "Hello World"
+ 
+pygmentsHighlighter Haskell
+ filename haskell.py
+ fileExtensions hs
+rijuRepl https://riju.codes/haskell
+ example
+  module Main where
+  
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  
+leachim6 Haskell
+ filepath h/Haskell.hs
+ fileExtensions hs
+ example
+  module Main where
+  
+  main = putStrLn "Hello World"
+  
+languageServerProtocolProject https://github.com/haskell/haskell-ide-engine
+ writtenIn haskell
+compilerExplorer Haskell
+ example
+  module Example where
+  
+  sumOverArray :: [Int] -> Int
+  sumOverArray (x:xs) = x + sumOverArray xs
+  sumOverArray [] =  0
+  
+
+meetup https://www.meetup.com/topics/haskell
+ memberCount 115163
+ groupCount 311
+keywords ! ' '' - -< -<< -> :: ; <- , = => > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+printToken putStrLn
+stringToken "
 
 hasStrings true
  "hello world"
@@ -90,12 +146,7 @@ hasIntegers true
 hasBinaryNumbers true
  -- 0[bB]_*[01](_*[01])*
 
-lineCommentToken --
-multiLineCommentTokens {- -}
-printToken putStrLn
-stringToken "
-keywords ! ' '' - -< -<< -> :: ; <- , = => > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
-
+jupyterKernel https://github.com/gibiansky/IHaskell
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example
   $ ghci
@@ -114,29 +165,19 @@ wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  appeared 1990
  fileExtensions hs lhs
 
-githubLanguage Haskell
- fileExtensions hs hs-boot hsc
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  koalaman shellcheck https://github.com/koalaman.png https://github.com/koalaman/shellcheck Haskell #5e5086 16292 821 422 "ShellCheck, a static analysis tool for shell scripts"
-  facebook duckling https://github.com/facebook.png https://github.com/facebook/duckling Haskell #5e5086 2567 435 119 "Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings."
-  unisonweb unison https://github.com/unisonweb.png https://github.com/unisonweb/unison Haskell #5e5086 2110 92 208 "Next generation programming language, currently in development"
- trendingProjectsCount 4
- type programming
- interpreters runghc runhaskell runhugs
- aceMode haskell
- codemirrorMode haskell
- codemirrorMimeType text/x-haskell
- tmScope source.haskell
- repos 126924
+hopl https://hopl.info/showlanguage.prx?exp=1555
+tiobe Haskell
+pypl Haskell
+
+domainName haskell.org
+ registered 1996
+ awisRank
+  2022 47314
+
 githubBigQuery Haskell
  repos 29991
  users 12846
 
-codeMirror haskell
-pygmentsHighlighter Haskell
- filename haskell.py
- fileExtensions hs
 linguistGrammarRepo https://github.com/atom-haskell/language-haskell
  firstCommit 2014
  lastCommit 2018
@@ -150,80 +191,6 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
   main = do
   	let hello = "hello world"
   	putStrLn $ map toUpper hello
-languageServerProtocolProject https://github.com/haskell/haskell-ide-engine
- writtenIn haskell
-
-projectEuler Haskell
- memberCount
-  2019 6635
-  2022 7098
-helloWorldCollection Haskell
- -- Hello World in Haskell
-  
- main = putStrLn "Hello World"
- 
-leachim6 Haskell
- filepath h/Haskell.hs
- fileExtensions hs
- example
-  module Main where
-  
-  main = putStrLn "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Haskell
-quineRelay Haskell
-
-compilerExplorer Haskell
- example
-  module Example where
-  
-  sumOverArray :: [Int] -> Int
-  sumOverArray (x:xs) = x + sumOverArray xs
-  sumOverArray [] =  0
-  
-rijuRepl https://riju.codes/haskell
- example
-  module Main where
-  
-  main :: IO ()
-  main = putStrLn "Hello, world!"
-  
-replit https://repl.it/languages/haskell
-tryItOnline haskell
-
-indeedJobs haskell developer
- 2017 190
-linkedInSkill haskell
- 2018 30472
-stackOverflowSurvey
- 2021
-  users 1749
-  medianSalary 67021
-  fans 3453
-  percentageUsing 0.02
-faqPageUrl https://wiki.haskell.org/FAQ
-downloadPageUrl https://www.haskell.org/downloads/
-
-meetup https://www.meetup.com/topics/haskell
- memberCount 115163
- groupCount 311
-
-tiobe Haskell
-hopl https://hopl.info/showlanguage.prx?exp=1555
-pypl Haskell
-
-packageRepository https://hackage.haskell.org/
-
-ubuntuPackage ghc
-jupyterKernel https://github.com/gibiansky/IHaskell
-fileType text
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
- Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
- Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
- The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5
 
 isbndb 66
  year|publisher|title|authors|isbn13
@@ -294,6 +261,33 @@ isbndb 66
  1992|Cambridge University Press|Introduction To Functional Programming Systems Using Haskell (cambridge Computer Science Texts)|Antony J. T. Davie|9780521258302
  ||JAVA BY DISSECTION The Essentials of Java Programming - Javaplace Edition with Haskell - The Craft of Functional Programming|Pohl and Ira|9780582849426
 
+githubLanguage Haskell
+ fileExtensions hs hs-boot hsc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  koalaman shellcheck https://github.com/koalaman.png https://github.com/koalaman/shellcheck Haskell #5e5086 16292 821 422 "ShellCheck, a static analysis tool for shell scripts"
+  facebook duckling https://github.com/facebook.png https://github.com/facebook/duckling Haskell #5e5086 2567 435 119 "Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings."
+  unisonweb unison https://github.com/unisonweb.png https://github.com/unisonweb/unison Haskell #5e5086 2110 92 208 "Next generation programming language, currently in development"
+ trendingProjectsCount 4
+ type programming
+ interpreters runghc runhaskell runhugs
+ aceMode haskell
+ codemirrorMode haskell
+ codemirrorMimeType text/x-haskell
+ tmScope source.haskell
+ repos 126924
+
+indeedJobs haskell developer
+ 2017 190
+linkedInSkill haskell
+ 2018 30472
+stackOverflowSurvey
+ 2021
+  users 1749
+  medianSalary 67021
+  fans 3453
+  percentageUsing 0.02
+
 semanticScholar 34
  year|title|doi|citations|influentialCitations|authors|paperId
  2002|Template meta-programming for Haskell|10.1145/581690.581691|527|62|T. Sheard and S. Jones|9cf2790a364e5c14fb37bbd8026902712ac6b2aa
@@ -331,4 +325,9 @@ semanticScholar 34
  2014|Learn Physics by Programming in Haskell|10.4204/EPTCS.170.5|3|0|S. Walck|f7a8926d40dada932192f465709deb970f245d3f
  2020|Towards secure IoT programming in Haskell|10.1145/3406088.3409027|2|0|Nachiappan Valliappan and Robert Krook and Alejandro Russo and K. Claessen|19aa46db9aca26b92d479332dab89584e61ef93a
 
-clocExtensions hs hsc lhs
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
+ Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
+ Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
+ The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5

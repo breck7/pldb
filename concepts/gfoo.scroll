@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id gfoo
 name gfoo
 appeared 2020
 tags pl
+
+writtenIn go markdown
+repoStats
+ firstCommit 2020
+ commits 233
+ committers 2
+ files 123
+ newestCommit 2020
 country Unknown
 originCommunity https://github.com/codr7/gfoo/issues
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/codr7/gfoo
  description a Go scripting language
  forks 1
  issues 0
-
-repoStats
- firstCommit 2020
- commits 233
- committers 2
- files 123
- newestCommit 2020
-
-writtenIn go markdown

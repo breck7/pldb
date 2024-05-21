@@ -1,14 +1,15 @@
 import ../code/conceptPage.scroll
+
 id clix
 name CLiX markup
 appeared 1998
 tags xmlFormat
-conceptDescription CLiX is a constraint language based on first order logic. It was first specified in 1998, when XML was not yet ubiquitous, in research at University College London. The language has since been developed and taken forward by Systemwire Ltd., a spin-off company that provides rule-based validation products around CLiX. Even though a commercial implementation is available, the language specification is published, and free for anybody to implement. It is hosted at http://www.clixml.org.
 website http://www.clixml.org/
-reference https://www.w3.org/2004/12/rules-ws/paper/24/
+conceptDescription CLiX is a constraint language based on first order logic. It was first specified in 1998, when XML was not yet ubiquitous, in research at University College London. The language has since been developed and taken forward by Systemwire Ltd., a spin-off company that provides rule-based validation products around CLiX. Even though a commercial implementation is available, the language specification is published, and free for anybody to implement. It is hosted at http://www.clixml.org.
+
 country England
 originCommunity University College London
-domainName clixml.org
+reference https://www.w3.org/2004/12/rules-ws/paper/24/
 
 example
  <forall var="dates" in="//fpml:calculationPeriodDates>
@@ -21,3 +22,5 @@ wikipedia https://en.wikipedia.org/wiki/CLiX_(markup)
  backlinksCount 2
  pageId 44979100
  dailyPageViews 2
+
+domainName clixml.org

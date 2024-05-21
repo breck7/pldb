@@ -1,20 +1,16 @@
 import ../code/conceptPage.scroll
+
 id algol-60
 name ALGOL 60
 appeared 1960
-tags pl
 creators John Backus and Friedrich L. Bauer and Julien Green and Charles Katz and John McCarthy and Peter Naur and Alan Perlis and Heinz Rutishauser and Klaus Samelson and Adriaan van Wijngaarden and Bernard Vauquois and Joseph Henry Wegstein and Michael Woodger
+tags pl
 conceptDescription ALGOL 60 (short for Algorithmic Language 1960) is a member of the ALGOL family of computer programming languages. It followed on from ALGOL 58 which had introduced code blocks and the begin and end pairs for delimiting them. ALGOL 60 was the first language implementing nested function definitions with lexical scope. It gave rise to many other programming languages, including CPL, Simula, BCPL, B, Pascal and C.
+
+fileType text
 documentation http://www.algol60.org/4documentation.htm
+centralPackageRepositoryCount 0
 originCommunity International Federation for Information Processing
-
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-printToken WRITE
-stringToken "
 
 example
  procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
@@ -31,6 +27,24 @@ example
                      i := p; k := q
                  end
  end Absmax
+leachim6 ALGOL 60
+ filepath a/ALGOL 60.algol60
+ example
+  BEGIN
+    FILE F(KIND=REMOTE);
+    EBCDIC ARRAY E[0:11];
+    REPLACE E BY "HELLO WORLD";
+    WRITE(F, *, E);
+  END.
+  
+
+printToken WRITE
+stringToken "
+
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/ALGOL_60
  example
@@ -50,21 +64,11 @@ wikipedia https://en.wikipedia.org/wiki/ALGOL_60
  dailyPageViews 248
  appeared 1960
 
-leachim6 ALGOL 60
- filepath a/ALGOL 60.algol60
- example
-  BEGIN
-    FILE F(KIND=REMOTE);
-    EBCDIC ARRAY E[0:11];
-    REPLACE E BY "HELLO WORLD";
-    WRITE(F, *, E);
-  END.
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=1807
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 0
+
+semanticScholar 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -73,7 +77,3 @@ goodreads
  Course In Programming Algol 60 (Science Paperbacks)||Michael Wells|9980602|0.0|0|0
  Handbook and Guide for Comparing and Selecting Computer Languages: Basic, FORTRAN, PASCAL, COBOL, PL/1, APL, ALGOL-60, C|1985|James R. Ogden|3280647|0.0|0|0
  Compilers by Programming Language: ALGOL 60 Compilers, Assemblers, Basic Compilers, C++ Compilers, Cfml Compilers, C Compilers|2010|Books Group|15842336|0.0|0|0
-
-isbndb 0
-
-semanticScholar 0

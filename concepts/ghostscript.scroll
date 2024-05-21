@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id ghostscript
 name Ghostscript
 appeared 1988
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Artifex Software
 
@@ -16,8 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/Ghostscript
  appeared 1988
 
 hopl https://hopl.info/showlanguage.prx?exp=7773
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

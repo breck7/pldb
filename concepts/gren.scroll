@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id gren
 name Gren
 appeared 2012
-tags pl
 creators evancz
-conceptDescription A programming language for simple and correct applications
+tags pl
 website https://gren-lang.org/
+conceptDescription A programming language for simple and correct applications
+
+writtenIn haskell markdown yaml
 fileExtensions gren
+repoStats
+ firstCommit 2012
+ commits 6509
+ committers 135
+ files 174
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/gren-lang
 
@@ -28,12 +37,3 @@ githubRepo https://github.com/gren-lang/compiler
  created 2021
  updated 2022
  issues 55
-
-repoStats
- firstCommit 2012
- commits 6509
- committers 135
- files 174
- newestCommit 2024
-
-writtenIn haskell markdown yaml

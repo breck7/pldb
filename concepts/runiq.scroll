@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id runiq
 name runiq
 appeared 2015
 tags pl
 website http://matthewtoast.github.io/runiq/
+
+writtenIn javascript markdown json
+repoStats
+ firstCommit 2015
+ commits 35
+ committers 1
+ files 88
+ newestCommit 2015
 country United States
 originCommunity https://github.com/matthewtoast/runiq/issues
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/matthewtoast/runiq
  description :aquarius: A Lisp-esque, JS-interpreted scripting language
  issues 5
 
-repoStats
- firstCommit 2015
- commits 35
- committers 1
- files 88
- newestCommit 2015
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  10797249|Show HN: Runiq, a little Lisp-inspired language that runs on JavaScript|2015-12-27 12:29:51 UTC|1451219391|matthewtoast|3|24
-
-writtenIn javascript markdown json

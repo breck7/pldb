@@ -1,17 +1,31 @@
 import ../code/conceptPage.scroll
+
 id focal
 name Formulating On-Line Calculations in Algebraic Language
 appeared 1968
-tags pl
 creators Richard Merrill
+tags pl
 standsFor Formulating On-Line Calculations in Algebraic Language
+
+tryItOnline focal
+fileType text
+wordRank 9081
+rosettaCode http://www.rosettacode.org/wiki/Category:FOCAL
+centralPackageRepositoryCount 0
 country United States
 originCommunity Digital Equipment Corporation
 
-hasStrings true
- "Hello world"
+leachim6 Focal
+ filepath f/Focal.fc
+ fileExtensions fc
+ example
+  0.1.0.1 TYPE "HELLO WORLD" , !
+  
 
 stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/FOCAL_(programming_language)
  example
@@ -38,20 +52,6 @@ wikipedia https://en.wikipedia.org/wiki/FOCAL_(programming_language)
  dailyPageViews 18
  appeared 1968
 
-leachim6 Focal
- filepath f/Focal.fc
- fileExtensions fc
- example
-  0.1.0.1 TYPE "HELLO WORLD" , !
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:FOCAL
-
-tryItOnline focal
-
 hopl https://hopl.info/showlanguage.prx?exp=406
-
-fileType text
-wordRank 9081
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,23 +1,72 @@
 import ../code/conceptPage.scroll
+
 id groovy
 name Groovy
 appeared 2003
-tags pl
 creators James Strachan
+tags pl
 website http://groovy-lang.org/
+
+isOpenSource true
+runsOnVm jvm
+tryItOnline groovy
+officialBlogUrl https://blogs.apache.org/groovy/
+fileExtensions groovy
+releaseNotesUrl http://groovy-lang.org/releases.html
+clocExtensions gant groovy grt gtpl gvy jenkinsfile
+fileType text
 documentation https://groovy-lang.org/documentation.html
 documentation https://devdocs.io/groovy~3.0/
-fileExtensions groovy
+faqPageUrl https://groovy-lang.org/faq.html
+downloadPageUrl https://groovy.apache.org/download.html
+codeMirror groovy
+rosettaCode http://www.rosettacode.org/wiki/Category:Groovy
+quineRelay Groovy
+centralPackageRepositoryCount 0
+ubuntuPackage groovy
 country United States and Spain and France
 originCommunity https://github.com/grails
-domainName groovy-lang.org
- registered 2011
- awisRank
-  2022 143901
-  2017 88374
-releaseNotesUrl http://groovy-lang.org/releases.html
+projectEuler Groovy
+ memberCount
+  2019 114
+  2022 121
 
-runsOnVm jvm
+helloWorldCollection Groovy
+ // Hello World in Groovy
+ 
+ println "Hello World"
+ 
+pygmentsHighlighter Groovy
+ filename jvm.py
+ fileExtensions groovy gradle
+rijuRepl https://riju.codes/groovy
+ example
+  print "Hello, world!";
+  
+subreddit https://reddit.com/r/groovy
+ memberCount
+  2017 1784
+  2022 2900
+twitter https://twitter.com/apachegroovy
+leachim6 Groovy
+ filepath g/Groovy.groovy
+ fileExtensions groovy
+ example
+  println "Hello World"
+  
+languageServerProtocolProject https://github.com/palantir/groovy-language-server/
+ writtenIn java
+
+meetup https://www.meetup.com/topics/groovy-programming-language
+ memberCount 24522
+ groupCount 49
+keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+stringToken "
+booleanTokens true false
 
 hasOperatorOverloading true
 hasLineComments true
@@ -41,13 +90,6 @@ hasSwitch true
 hasInheritance true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken println
-stringToken "
-booleanTokens true false
-keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
-
 wikipedia https://en.wikipedia.org/wiki/Groovy_(programming_language)
  example
   class Bird implements FlyingAbility {} /* Adds the trait FlyingAbility to the Bird class capabilities */
@@ -63,29 +105,20 @@ wikipedia https://en.wikipedia.org/wiki/Groovy_(programming_language)
  appeared 2003
  fileExtensions groovy
 
-githubLanguage Groovy
- fileExtensions groovy grt gtpl gvy
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  jenkinsci pipeline-examples https://github.com/jenkinsci.png https://github.com/jenkinsci/pipeline-examples Groovy #e69f56 2979 1833 67 "A collection of examples, tips and tricks and snippets of scripting for the Jenkins Pipeline plugin"
-  ben-manes gradle-versions-plugin https://github.com/ben-manes.png https://github.com/ben-manes/gradle-versions-plugin Groovy #e69f56 2012 111 52 "Gradle plugin to discover dependency updates"
- trendingProjectsCount 3
- type programming
- filenames Jenkinsfile
- interpreters groovy
- aceMode groovy
- codemirrorMode groovy
- codemirrorMimeType text/x-groovy
- tmScope source.groovy
- repos 76001
+tiobe Groovy
+ currentRank 29
+pypl Groovy
+
+domainName groovy-lang.org
+ registered 2011
+ awisRank
+  2022 143901
+  2017 88374
+
 githubBigQuery Groovy
  repos 27223
  users 19506
 
-codeMirror groovy
-pygmentsHighlighter Groovy
- filename jvm.py
- fileExtensions groovy gradle
 linguistGrammarRepo https://github.com/textmate/groovy.tmbundle
  firstCommit 2007
  lastCommit 2014
@@ -96,64 +129,6 @@ linguistGrammarRepo https://github.com/textmate/groovy.tmbundle
   #!/usr/bin/env groovy
   println "Groovy!"
   
-languageServerProtocolProject https://github.com/palantir/groovy-language-server/
- writtenIn java
-
-projectEuler Groovy
- memberCount
-  2019 114
-  2022 121
-helloWorldCollection Groovy
- // Hello World in Groovy
- 
- println "Hello World"
- 
-leachim6 Groovy
- filepath g/Groovy.groovy
- fileExtensions groovy
- example
-  println "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Groovy
-quineRelay Groovy
-
-rijuRepl https://riju.codes/groovy
- example
-  print "Hello, world!";
-  
-tryItOnline groovy
-
-stackOverflowSurvey
- 2021
-  users 2479
-  medianSalary 75002
-  fans 1177
-  percentageUsing 0.03
-officialBlogUrl https://blogs.apache.org/groovy/
-faqPageUrl https://groovy-lang.org/faq.html
-downloadPageUrl https://groovy.apache.org/download.html
-
-subreddit https://reddit.com/r/groovy
- memberCount
-  2017 1784
-  2022 2900
-meetup https://www.meetup.com/topics/groovy-programming-language
- memberCount 24522
- groupCount 49
-
-tiobe Groovy
- currentRank 29
-pypl Groovy
-
-twitter https://twitter.com/apachegroovy
-ubuntuPackage groovy
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Groovy|2008|Venkat Subramaniam|2695005|3.81|121|13
 
 isbndb 21
  year|publisher|title|authors|isbn13
@@ -179,6 +154,29 @@ isbndb 21
  |The Pragmatic Programmers|Programming Groovy 2: dynamic productivity for the Java developer|Subramaniam, Venkat.|9781937785307
  |Packt Pub.|Unity 4.x Game Development By Example Beginner's Guide: A Seat-of-your-pants Manual For Building Fun, Groovy Little Games Quickly With Unity 4.x|Creighton, Ryan Henson.|9781849695268
 
+githubLanguage Groovy
+ fileExtensions groovy grt gtpl gvy
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  jenkinsci pipeline-examples https://github.com/jenkinsci.png https://github.com/jenkinsci/pipeline-examples Groovy #e69f56 2979 1833 67 "A collection of examples, tips and tricks and snippets of scripting for the Jenkins Pipeline plugin"
+  ben-manes gradle-versions-plugin https://github.com/ben-manes.png https://github.com/ben-manes/gradle-versions-plugin Groovy #e69f56 2012 111 52 "Gradle plugin to discover dependency updates"
+ trendingProjectsCount 3
+ type programming
+ filenames Jenkinsfile
+ interpreters groovy
+ aceMode groovy
+ codemirrorMode groovy
+ codemirrorMimeType text/x-groovy
+ tmScope source.groovy
+ repos 76001
+
+stackOverflowSurvey
+ 2021
+  users 2479
+  medianSalary 75002
+  fans 1177
+  percentageUsing 0.03
+
 semanticScholar 7
  year|title|doi|citations|influentialCitations|authors|paperId
  2009|Groovy package templates: supporting reuse and runtime adaption of class hierarchies|10.1145/1640134.1640139|14|2|Eyvind W. Axelsen and S. Krogdahl|6d32b1e21b79b56e6970eca79df12539a7090851
@@ -189,4 +187,6 @@ semanticScholar 7
  2020|A history of the Groovy programming language|10.1145/3386326|2|0|Paul King|87b32a739617b59dee229021e92709b399426c47
  2017|Feature oriented programming in Groovy|10.1145/3141848.3141851|1|0|G. T. Assis and Gustavo Vale and Eduardo Figueiredo|61d2c11296a483800dea25917c23e878a87097cb
 
-clocExtensions gant groovy grt gtpl gvy jenkinsfile
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Groovy|2008|Venkat Subramaniam|2695005|3.81|121|13

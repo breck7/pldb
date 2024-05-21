@@ -1,23 +1,32 @@
 import ../code/conceptPage.scroll
+
 id zimbu
 name Zimbu
 appeared 2009
-tags pl
 creators Bram Moolenaar
+tags pl
 website http://www.zimbu.org/
-domainName zimbu.org
- awisRank
-  2022 6795594
 
-hasPrintDebugging true
-
-printToken IO.write
+centralPackageRepositoryCount 0
 
 example
  FUNC Main() int
    IO.write("Hello, World!\n")
    RETURN 0
  }
+leachim6 Zimbu
+ filepath z/Zimbu.zu
+ fileExtensions zu
+ example
+  FUNC Main() int
+    IO.write("Hello World\n")
+    RETURN 0
+  }
+  
+
+printToken IO.write
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Zimbu
  related vim-editor vi-editor python
@@ -29,14 +38,6 @@ wikipedia https://en.wikipedia.org/wiki/Zimbu
  dailyPageViews 1
  appeared 1961
 
-leachim6 Zimbu
- filepath z/Zimbu.zu
- fileExtensions zu
- example
-  FUNC Main() int
-    IO.write("Hello World\n")
-    RETURN 0
-  }
-  
-
-centralPackageRepositoryCount 0
+domainName zimbu.org
+ awisRank
+  2022 6795594

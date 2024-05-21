@@ -1,10 +1,17 @@
 import ../code/conceptPage.scroll
+
 id pyret-lang
 name Pyret
 appeared 2012
-tags pl
 creators Ben Lerner and Joe Gibbs Politz
+tags pl
 website https://www.pyret.org/
+
+repoStats
+ firstCommit 2012
+ commits 10731
+ committers 85
+ files 631
 country United States
 originCommunity Brown University
 
@@ -17,9 +24,3 @@ githubRepo https://github.com/brownplt/pyret-lang
  updated 2022
  description The Pyret language.
  issues 439
-
-repoStats
- firstCommit 2012
- commits 10731
- committers 85
- files 631

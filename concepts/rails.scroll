@@ -1,16 +1,11 @@
 import ../code/conceptPage.scroll
+
 id rails
 name Ruby on Rails
 appeared 2005
+creators David Heinemeier Hansson
 tags framework
 website http://rubyonrails.org
-country Denmark
-originCommunity https://github.com/rails
-domainName rubyonrails.org
- registered 2004
- awisRank
-  2022 21670
-releaseNotesUrl https://rubyonrails.org/category/releases
 versions
  2005 1.0
  2007 2.0
@@ -19,6 +14,23 @@ versions
  2016 5.0
  2019 6.0
  2021 7.0
+
+isOpenSource true
+releaseNotesUrl https://rubyonrails.org/category/releases
+fileType text
+centralPackageRepositoryCount 0
+country Denmark
+originCommunity https://github.com/rails
+
+twitter https://twitter.com/rails
+leachim6 Ruby on Rails
+ filepath r/Ruby on Rails.rb
+ example
+  class HelloWorld < app
+    print "Hello World"
+    end
+  end
+  
 
 wikipedia https://en.wikipedia.org/wiki/Ruby_on_Rails
  related ruby json xml html javascript jquery coffeescript sass rest nginx-config soap erb jruby mysql postgresql scala
@@ -30,27 +42,16 @@ wikipedia https://en.wikipedia.org/wiki/Ruby_on_Rails
  revisionCount 2172
  appeared 2004
 
-leachim6 Ruby on Rails
- filepath r/Ruby on Rails.rb
- example
-  class HelloWorld < app
-    print "Hello World"
-    end
-  end
-  
+domainName rubyonrails.org
+ registered 2004
+ awisRank
+  2022 21670
 
 indeedJobs rails engineer
  2017 4423
 linkedInSkill ruby-on-rails
  2018 191984
 
-twitter https://twitter.com/rails
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Ruby for Rails: Ruby Techniques for Rails Developers|2006|David A. Black|8159|3.75|176|11
-
-creators David Heinemeier Hansson

@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id pop-pl
 name Patient-Oriented Prescription Programming Language
 appeared 2015
 tags pl
 website https://users.cs.northwestern.edu/~sfq833/pop-pl/
-reference https://users.cs.northwestern.edu/~sfq833/resources/papers/GPCE_POP-PL_2015.pdf
+
 country United States
 originCommunity Northwestern University
+reference https://users.cs.northwestern.edu/~sfq833/resources/papers/GPCE_POP-PL_2015.pdf
 
 example
  #lang pop-pl

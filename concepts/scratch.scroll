@@ -1,15 +1,36 @@
 import ../code/conceptPage.scroll
+
 id scratch
 name Scratch
 appeared 2002
 tags visual
-screenshot scratch.png
 website https://scratch.mit.edu/
-documentation https://scratch.mit.edu/developers
+screenshot scratch.png
+
+isOpenSource true
 fileExtensions scratch sb sprite sb2 sprite2
+fileType text
+wordRank 7665
+documentation https://scratch.mit.edu/developers
+faqPageUrl https://scratch.mit.edu/faq
+annualReportsUrl https://scratch.mit.edu/annual-report
+rosettaCode http://www.rosettacode.org/wiki/Category:Scratch
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
-domainName scratch.mit.edu
+projectEuler Scratch
+ memberCount
+  2019 63
+  2022 98
+
+subreddit https://reddit.com/r/scratch
+ memberCount
+  2017 1072
+  2022 10081
+
+meetup https://www.meetup.com/topics/scratch
+ memberCount 6590
+ groupCount 47
 
 wikipedia https://en.wikipedia.org/wiki/Scratch_(programming_language)
  related squeak actionscript linux logo smalltalk hypercard starlogo etoys snap android python java basic arduino javascript blockly kodu-game-lab microsoft-small-basic
@@ -22,30 +43,10 @@ wikipedia https://en.wikipedia.org/wiki/Scratch_(programming_language)
  appeared 2002
  fileExtensions scratch sb sprite sb2 sprite2
 
-projectEuler Scratch
- memberCount
-  2019 63
-  2022 98
-rosettaCode http://www.rosettacode.org/wiki/Category:Scratch
-
-annualReportsUrl https://scratch.mit.edu/annual-report
-faqPageUrl https://scratch.mit.edu/faq
-
-subreddit https://reddit.com/r/scratch
- memberCount
-  2017 1072
-  2022 10081
-meetup https://www.meetup.com/topics/scratch
- memberCount 6590
- groupCount 47
-
 tiobe Scratch
  currentRank 16
 
-fileType text
-wordRank 7665
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName scratch.mit.edu
 
 isbndb 51
  year|publisher|title|authors|isbn13

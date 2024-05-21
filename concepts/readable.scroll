@@ -1,17 +1,23 @@
 import ../code/conceptPage.scroll
+
 id readable
 name Readable
 appeared 2018
-tags textMarkup
 creators Lépine Kong
-conceptDescription The ReAdABLE Human Format aims at Agile Documentation by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. Its primary goal is to generate Markdown (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy).
+tags textMarkup
 website https://readablehumanformat.com/
-reference https://readable.red/
-country France
-originCommunity https://github.com/lepinekong/readablehumanformat/issues
-domainName readablehumanformat.com
+conceptDescription The ReAdABLE Human Format aims at Agile Documentation by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. Its primary goal is to generate Markdown (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy).
 
 writtenIn markdown html json yaml
+repoStats
+ firstCommit 2018
+ commits 112
+ committers 2
+ files 23
+ newestCommit 2018
+country France
+originCommunity https://github.com/lepinekong/readablehumanformat/issues
+reference https://readable.red/
 
 example
  Red [
@@ -212,12 +218,7 @@ githubRepo https://github.com/lepinekong/readablehumanformat
  description ReAdABLE Human Format
  issues 9
 
-repoStats
- firstCommit 2018
- commits 112
- committers 2
- files 23
- newestCommit 2018
+domainName readablehumanformat.com
 
 isbndb 4
  year|publisher|title|authors|isbn13

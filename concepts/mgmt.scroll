@@ -1,21 +1,22 @@
 import ../code/conceptPage.scroll
+
 id mgmt
 name mgmt
 appeared 2015
-tags pl
 creators James Shubin
+tags pl
 website https://purpleidea.com/tags/mgmtconfig/
-reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/
+
+writtenIn go yaml bourne-shell markdown svg make python bash dockerfile yacc lisp smarty puppet restructuredtext
+repoStats
+ firstCommit 2015
+ commits 1951
+ committers 97
+ files 1156
+ newestCommit 2024
 country Canada
 originCommunity https://github.com/purpleidea/mgmt/issues
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/
 
 example
  import "datetime"
@@ -28,6 +29,7 @@ example
     "0770"
   },
  }
+twitter https://twitter.com/purpleidea
 
 githubRepo https://github.com/purpleidea/mgmt
  firstCommit 2015
@@ -39,18 +41,15 @@ githubRepo https://github.com/purpleidea/mgmt
  description Next generation distributed, event-driven, parallel config management!
  issues 126
 
-repoStats
- firstCommit 2015
- commits 1951
- committers 97
- files 1156
- newestCommit 2024
+lineCommentToken #
 
-twitter https://twitter.com/purpleidea
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 isbndb 2
  year|publisher|title|authors|isbn13
  2008|Cambridge University Press|Differential Games Econ Mgmt Sci|Dockner, Engelbert J.|9780521637329
  1994|Allyn & Bacon|Sm Quantitative Analysis Mgmt Aie|RENDER|9780205153800
-
-writtenIn go yaml bourne-shell markdown svg make python bash dockerfile yacc lisp smarty puppet restructuredtext

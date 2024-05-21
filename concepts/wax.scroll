@@ -1,14 +1,25 @@
 import ../code/conceptPage.scroll
+
 id wax
 name Wax
 appeared 2020
 creators Lingdong Huang
-githubRepo https://github.com/LingDong-/wax
 tags pl
-conceptDescription A tiny programming language that transpiles to C, C++, Java, TypeScript, Python, C#, Swift, Lua and WebAssembly
-compilesTo c cpp java typescript python csharp swift lua wasm
-
 webRepl https://waxc.netlify.app/
+conceptDescription A tiny programming language that transpiles to C, C++, Java, TypeScript, Python, C#, Swift, Lua and WebAssembly
+
+writtenIn c wasm javascript python markdown html cpp svg swift java make bourne-shell csharp lua typescript
+compilesTo c cpp java typescript python csharp swift lua wasm
+repoStats
+ firstCommit 2020
+ newestCommit 2022
+ commits 78
+ committers 9
+ files 60
+
+githubRepo https://github.com/LingDong-/wax
+
+lineCommentToken ;
 
 hasIntegers true
  (let x int 42)
@@ -27,7 +38,7 @@ hasMaps true
  
  (remove m "xyz")
  
- (print (get m "xyz")) 
+ (print (get m "xyz"))
  ;^ if a value is not there, the "zero" value of the element type is returned
  ; for numbers, 0; for compound types, null.
  
@@ -50,15 +61,6 @@ hasMacros true
  )
 hasLineComments true
  ; a comment
-lineCommentToken ;
 hasOperators true
  ;; << >> = && || >= <= <>
  ;; + - * / ^ % & | ! ~ < >
-
-repoStats
- firstCommit 2020
- newestCommit 2022
- commits 78
- committers 9
- files 60
-writtenIn c wasm javascript python markdown html cpp svg swift java make bourne-shell csharp lua typescript

@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id neutron
 name neutron
 appeared 2019
 tags pl
 website https://the-neutron-foundation.github.io
-reference https://neutron-lang.readthedocs.io/en/latest/
+
+writtenIn python markdown yaml
+repoStats
+ firstCommit 2019
+ commits 174
+ committers 6
+ files 65
+ newestCommit 2022
 country Canada
 originCommunity https://github.com/the-neutron-foundation
-domainName the-neutron-foundation.github.io
+reference https://neutron-lang.readthedocs.io/en/latest/
 
 githubRepo https://github.com/the-neutron-foundation/neutron
  firstCommit 2019
@@ -19,11 +27,4 @@ githubRepo https://github.com/the-neutron-foundation/neutron
  forks 0
  subscribers 2
 
-repoStats
- firstCommit 2019
- commits 174
- committers 6
- files 65
- newestCommit 2022
-
-writtenIn python markdown yaml
+domainName the-neutron-foundation.github.io

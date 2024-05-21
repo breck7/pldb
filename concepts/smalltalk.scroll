@@ -1,12 +1,45 @@
 import ../code/conceptPage.scroll
+
 id smalltalk
 name Smalltalk
 appeared 1972
-tags pl
 creators Alan Kay and Dan Ingalls and Adele Goldberg
+tags pl
+
+clocExtensions st cs
+fileType text
 documentation https://www.gnu.org/software/smalltalk/manual/html_node/
+antlr https://github.com/antlr/grammars-v4/tree/master/smalltalk
+codeMirror smalltalk
+rosettaCode http://www.rosettacode.org/wiki/Category:Smalltalk
+quineRelay Smalltalk
+packageRepository http://smalltalkhub.com/
+ubuntuPackage gnu-smalltalk
 country United States
 originCommunity Xerox PARC
+projectEuler Smalltalk
+ memberCount
+  2019 104
+  2022 111
+
+pygmentsHighlighter Smalltalk
+ filename smalltalk.py
+ fileExtensions st
+rijuRepl https://riju.codes/smalltalk
+ example
+  'Hello, world!' displayNl !
+  
+leachim6 SmallTalk
+ filepath s/SmallTalk.sm
+ fileExtensions sm
+ example
+  Transcript show: 'Hello World'.
+  
+
+multiLineCommentTokens "
+printToken displayNl
+assignmentToken :=
+stringToken '
 
 hasMultipleDispatch true
 hasMacros false
@@ -25,11 +58,6 @@ hasAssignment true
 hasStrings true
  'Hello world'
 
-multiLineCommentTokens "
-printToken displayNl
-assignmentToken :=
-stringToken '
-
 wikipedia https://en.wikipedia.org/wiki/Smalltalk
  example
   quadMultiply: i1 and: i2
@@ -46,25 +74,13 @@ wikipedia https://en.wikipedia.org/wiki/Smalltalk
  revisionCount 1228
  appeared 1972
 
-githubLanguage Smalltalk
- fileExtensions st cs
- trendingProjectsCount 0
- type programming
- aceMode text
- codemirrorMode smalltalk
- codemirrorMimeType text/x-stsrc
- tmScope source.smalltalk
- aliases squeak
- repos 9336
+hopl https://hopl.info/showlanguage.prx?exp=828
+tiobe Smalltalk
+
 githubBigQuery Smalltalk
  repos 5607
  users 4736
 
-antlr https://github.com/antlr/grammars-v4/tree/master/smalltalk
-codeMirror smalltalk
-pygmentsHighlighter Smalltalk
- filename smalltalk.py
- fileExtensions st
 linguistGrammarRepo https://github.com/tomas-stefano/smalltalk-tmbundle
  firstCommit 2011
  lastCommit 2017
@@ -75,38 +91,6 @@ linguistGrammarRepo https://github.com/tomas-stefano/smalltalk-tmbundle
   ChartJs
   dataFunction
   	^ 'bars'
-
-projectEuler Smalltalk
- memberCount
-  2019 104
-  2022 111
-leachim6 SmallTalk
- filepath s/SmallTalk.sm
- fileExtensions sm
- example
-  Transcript show: 'Hello World'.
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Smalltalk
-quineRelay Smalltalk
-
-rijuRepl https://riju.codes/smalltalk
- example
-  'Hello, world!' displayNl !
-  
-
-tiobe Smalltalk
-hopl https://hopl.info/showlanguage.prx?exp=828
-
-packageRepository http://smalltalkhub.com/
-
-ubuntuPackage gnu-smalltalk
-fileType text
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
- SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
- SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0
 
 isbndb 29
  year|publisher|title|authors|isbn13
@@ -140,6 +124,17 @@ isbndb 29
  1996|Sigs|Developing Visual Programming Applications Using Smalltalk (sigs: Advances In Object Technology)|Michael Linderman|9781884842283
  1992|Premier Pr|Smalltalk Programming For Windows (prima Practical Programming Series/book And 3 1/2 Disk)|Dan Shafer and Scott Herndon and Laurence Rozier|9781559582377
 
+githubLanguage Smalltalk
+ fileExtensions st cs
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode smalltalk
+ codemirrorMimeType text/x-stsrc
+ tmScope source.smalltalk
+ aliases squeak
+ repos 9336
+
 semanticScholar 16
  year|title|doi|citations|influentialCitations|authors|paperId
  1984|Making smalltalk a database system|10.1145/602259.602300|420|14|G. Copeland and D. Maier|959baa1fe387cbabdcc729411be7bb935f56d8cb
@@ -159,4 +154,8 @@ semanticScholar 16
  2012|Refactoring support for Smalltalk using static type inference|10.1145/2448963.2448964|1|0|Martin Unterholzner|fe3d3fd09a89d96f1340e656cda2fb4550080e85
  2011|A Smalltalk implementation of Exil, a component-based programming language|10.1145/2166929.2166932|1|1|P. Spacek and C. Dony and Chouki Tibermacine and L. Fabresse|1097d8c549654b2308a6ae2c559da511b00b6f1e
 
-clocExtensions st cs
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
+ SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
+ SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0

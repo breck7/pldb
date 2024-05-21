@@ -1,16 +1,43 @@
 import ../code/conceptPage.scroll
+
 id q
 name Q
 appeared 2003
-tags pl
 creators Arthur Whitney
+tags pl
+
+fileType text
+wordRank 559
+codeMirror q
+rosettaCode http://www.rosettacode.org/wiki/Category:Q
+centralPackageRepositoryCount 0
 originCommunity Kx Systems
+projectEuler Q
+ memberCount
+  2019 132
+  2022 152
+
+helloWorldCollection Q
+ /* Hello world in Q */
+ 
+ hello            = writes "Hello, world!\n";
+pygmentsHighlighter Q
+ filename q.py
+ fileExtensions q
+leachim6 Q
+ filepath q/Q.q
+ fileExtensions q
+ example
+  "Hello World"
+  
+
+stringToken "
 
 hasStrings true
  "Hello world"
 
-stringToken "
-
+jupyterKernel https://github.com/jvictorchen/IKdbQ
+jupyterKernel https://github.com/newtux/KdbQ_kernel
 wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
  example
   q)select from t where name like "ja*",age>50
@@ -33,20 +60,12 @@ wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
  revisionCount 91
  appeared 2003
 
-githubLanguage q
- fileExtensions q
- type programming
- aceMode text
- tmScope source.q
- repos 768
+tiobe Q
+
 githubBigQuery q
  repos 170
  users 157
 
-codeMirror q
-pygmentsHighlighter Q
- filename q.py
- fileExtensions q
 linguistGrammarRepo https://github.com/komsit37/sublime-q
  firstCommit 2015
  lastCommit 2018
@@ -77,33 +96,16 @@ linguistGrammarRepo https://github.com/komsit37/sublime-q
   http://www.nyxdata.com/Data-Products/Daily-TAQ
   
 
-projectEuler Q
- memberCount
-  2019 132
-  2022 152
-helloWorldCollection Q
- /* Hello world in Q */
- 
- hello            = writes "Hello, world!\n";
-leachim6 Q
- filepath q/Q.q
- fileExtensions q
- example
-  "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Q
-
-tiobe Q
-
-jupyterKernel https://github.com/jvictorchen/IKdbQ
-jupyterKernel https://github.com/newtux/KdbQ_kernel
-fileType text
-wordRank 559
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2008|CreateSpace Independent Publishing Platform|Q For Mortals: A Tutorial In Q Programming|Borror, Jeffry A.|9781434829016
+
+githubLanguage q
+ fileExtensions q
+ type programming
+ aceMode text
+ tmScope source.q
+ repos 768
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

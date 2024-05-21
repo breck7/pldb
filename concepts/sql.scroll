@@ -1,14 +1,49 @@
 import ../code/conceptPage.scroll
+
 id sql
 name SQL
 appeared 1974
-tags queryLanguage
 creators Donald D. Chamberlin and Raymond F. Boyce
-documentation https://docs.data.world/documentation/sql/concepts/basic/intro.html
-spec https://modern-sql.com/standard
+tags queryLanguage
 standsFor Structured Query Language
+
+spec https://modern-sql.com/standard
+clocExtensions cql mysql psql SQL sql tab udf viw
+fileType text
+wordRank 2975
+documentation https://docs.data.world/documentation/sql/concepts/basic/intro.html
+monaco sql
+codeMirror sql
+rosettaCode http://www.rosettacode.org/wiki/Category:SQL
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+projectEuler SQL
+ memberCount
+  2019 104
+  2022 124
+
+helloWorldCollection Structured Query Language
+ # Hello World in SQL
+ 
+ SELECT 'Hello World';
+ 
+pygmentsHighlighter SQL
+ filename sql.py
+ fileExtensions sql
+leachim6 SQL
+ filepath s/SQL.sql
+ fileExtensions sql
+ example
+  SELECT 'Hello World';
+  
+
+keywords ADD ALL ALLOCATE ALTER AND ANY ARE AS ASC ASSERTION AT AUTHORIZATION AVG BEGIN BETWEEN BIT BOOLEAN BOTH BY CALL CASCADE CASCADED CASE CAST CHAR CHARACTER CHECK CLOSE COLLATE COLLATION COLUMN COMMIT CONNECT CONNECTION CONSTRAINT CONSTRAINTS CONTINUE CONVERT CORRESPONDING COUNT CREATE CURRENT CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DEALLOCATE DEC DECIMAL DECLARE DEFERRABLE DEFERRED DELETE DESC DESCRIBE DIAGNOSTICS DISCONNECT DISTINCT DOUBLE DROP ELSE END ENDEXEC ESCAPE EXCEPT EXCEPTION EXEC EXECUTE EXISTS EXPLAIN EXTERNAL FALSE FETCH FIRST FLOAT FOR FOREIGN FOUND FROM FULL FUNCTION GET GET_CURRENT_CONNECTION GLOBAL GO GOTO GRANT GROUP HAVING HOUR IDENTITY IMMEDIATE IN INDICATOR INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INT INTEGER INTERSECT INTO IS ISOLATION JOIN KEY LAST LEFT LIKE LONGINT LOWER LTRIM MATCH MAX MIN MINUTE NATIONAL NATURAL NCHAR NVARCHAR NEXT NO NOT NULL NULLIF NUMERIC OF ON ONLY OPEN OPTION OR ORDER OUT OUTER OUTPUT OVERLAPS PAD PARTIAL PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURE PUBLIC READ REAL REFERENCES RELATIVE RESTRICT REVOKE RIGHT ROLLBACK ROWS RTRIM SCHEMA SCROLL SECOND SELECT SESSION_USER SET SMALLINT SOME SPACE SQL SQLCODE SQLERROR SQLSTATE SUBSTR SUBSTRING SUM SYSTEM_USER TABLE TEMPORARY TIMEZONE_HOUR TIMEZONE_MINUTE TO TRAILING TRANSACTION TRANSLATE TRANSLATION TRUE UNION UNIQUE UNKNOWN UPDATE UPPER USER USING VALUES VARCHAR VARYING VIEW WHENEVER WHERE WITH WORK WRITE XML XMLEXISTS XMLPARSE XMLSERIALIZE YEAR
+
+lineCommentToken --
+multiLineCommentTokens /* */
+stringToken '
+booleanTokens TRUE FALSE
 
 hasComments true
 hasLineComments true
@@ -25,12 +60,7 @@ hasIntegers true
  -- [0-9]+
 hasFixedPoint true
 
-lineCommentToken --
-multiLineCommentTokens /* */
-stringToken '
-booleanTokens TRUE FALSE
-keywords ADD ALL ALLOCATE ALTER AND ANY ARE AS ASC ASSERTION AT AUTHORIZATION AVG BEGIN BETWEEN BIT BOOLEAN BOTH BY CALL CASCADE CASCADED CASE CAST CHAR CHARACTER CHECK CLOSE COLLATE COLLATION COLUMN COMMIT CONNECT CONNECTION CONSTRAINT CONSTRAINTS CONTINUE CONVERT CORRESPONDING COUNT CREATE CURRENT CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DEALLOCATE DEC DECIMAL DECLARE DEFERRABLE DEFERRED DELETE DESC DESCRIBE DIAGNOSTICS DISCONNECT DISTINCT DOUBLE DROP ELSE END ENDEXEC ESCAPE EXCEPT EXCEPTION EXEC EXECUTE EXISTS EXPLAIN EXTERNAL FALSE FETCH FIRST FLOAT FOR FOREIGN FOUND FROM FULL FUNCTION GET GET_CURRENT_CONNECTION GLOBAL GO GOTO GRANT GROUP HAVING HOUR IDENTITY IMMEDIATE IN INDICATOR INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INT INTEGER INTERSECT INTO IS ISOLATION JOIN KEY LAST LEFT LIKE LONGINT LOWER LTRIM MATCH MAX MIN MINUTE NATIONAL NATURAL NCHAR NVARCHAR NEXT NO NOT NULL NULLIF NUMERIC OF ON ONLY OPEN OPTION OR ORDER OUT OUTER OUTPUT OVERLAPS PAD PARTIAL PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURE PUBLIC READ REAL REFERENCES RELATIVE RESTRICT REVOKE RIGHT ROLLBACK ROWS RTRIM SCHEMA SCROLL SECOND SELECT SESSION_USER SET SMALLINT SOME SPACE SQL SQLCODE SQLERROR SQLSTATE SUBSTR SUBSTRING SUM SYSTEM_USER TABLE TEMPORARY TIMEZONE_HOUR TIMEZONE_MINUTE TO TRAILING TRANSACTION TRANSLATE TRANSLATION TRUE UNION UNIQUE UNKNOWN UPDATE UPPER USER USING VALUES VARCHAR VARYING VIEW WHENEVER WHERE WITH WORK WRITE XML XMLEXISTS XMLPARSE XMLSERIALIZE YEAR
-
+jupyterKernel https://teradata.github.io/jupyterextensions/
 wikipedia https://en.wikipedia.org/wiki/SQL
  related sql-92 datalog linq powershell c sql-psm sqlpl transact-sql mysql pl-sql ada postgresql plpgsql java perl python tcl javascript xml xquery dot-ql isbl quel mumps isbn doi
  summary SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, SQL offers two main advantages: first, it introduced the concept of accessing many records with one single command; and second, it eliminates the need to specify how to reach a record, e.g. with or without an index. Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language, data manipulation language, and data control language. The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control. Although SQL is often described as, and to a great extent is, a declarative language (4GL), it also includes procedural elements. SQL was one of the first commercial languages for Edgar F. Codd's relational model, as described in his influential 1970 paper, "A Relational Model of Data for Large Shared Data Banks". Despite not entirely adhering to the relational model as described by Codd, it became the most widely used database language. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987. Since then, the standard has been revised to include a larger set of features. Despite the existence of such standards, most SQL code is not completely portable among different database systems without adjustments.
@@ -41,24 +71,14 @@ wikipedia https://en.wikipedia.org/wiki/SQL
  revisionCount 4153
  appeared 1986
 
-githubLanguage SQL
- fileExtensions sql cql ddl inc mysql prc tab udf viw
- trendingProjectsCount 0
- type data
- aceMode sql
- codemirrorMode sql
- codemirrorMimeType text/x-sql
- tmScope source.sql
- repos 1222
+hopl https://hopl.info/showlanguage.prx?exp=533
+tiobe sql
+ currentRank 9
+
 githubBigQuery SQL
  repos 641
  users 602
 
-monaco sql
-codeMirror sql
-pygmentsHighlighter SQL
- filename sql.py
- fileExtensions sql
 linguistGrammarRepo https://github.com/textmate/sql.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -70,51 +90,6 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
   select * from dual;
   
   
-
-projectEuler SQL
- memberCount
-  2019 104
-  2022 124
-helloWorldCollection Structured Query Language
- # Hello World in SQL
- 
- SELECT 'Hello World';
- 
-leachim6 SQL
- filepath s/SQL.sql
- fileExtensions sql
- example
-  SELECT 'Hello World';
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:SQL
-
-indeedJobs sql developer
- 2022 147983
-linkedInSkill sql
- 2018 7163429
-stackOverflowSurvey
- 2021
-  users 38835
-  medianSalary 56228
-  fans 26631
-  percentageUsing 0.47
-
-tiobe sql
- currentRank 9
-hopl https://hopl.info/showlanguage.prx?exp=533
-
-jupyterKernel https://teradata.github.io/jupyterextensions/
-fileType text
-wordRank 2975
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SQL, PL/SQL: The Programming Language of Oracle|2002|Ivan Bayross|1678914|4.05|729|77
- SQL for Dummies|1997|Allen G. Taylor|2164512|3.48|178|10
- Joe Celko's SQL for Smarties: Advanced SQL Programming|1995|Joe Celko|1032791|3.96|172|11
- Oracle PL/SQL Programming|1993|Steven Feuerstein|2405226|3.93|250|14
- The Language of SQL|2010|Larry Rockoff|13895510|3.95|79|5
 
 isbndb 177
  year|publisher|title|authors|isbn13
@@ -296,6 +271,27 @@ isbndb 177
  2012|Joes 2 Pros International LLC|SQL Queries 2012 Joes 2 Pros (R) Volume 4: Query Programming Objects for SQL Server 2012 (SQL Exam Prep Series 70-461 Volume 4 of 5)|Morelan, Rick and Dave, Pinal|9781939666031
  2021|Apress|High Performance SQL Server: Consistent Response for Mission-Critical Applications|Nevarez, Benjamin|9781484264911
 
+githubLanguage SQL
+ fileExtensions sql cql ddl inc mysql prc tab udf viw
+ trendingProjectsCount 0
+ type data
+ aceMode sql
+ codemirrorMode sql
+ codemirrorMimeType text/x-sql
+ tmScope source.sql
+ repos 1222
+
+indeedJobs sql developer
+ 2022 147983
+linkedInSkill sql
+ 2018 7163429
+stackOverflowSurvey
+ 2021
+  users 38835
+  medianSalary 56228
+  fans 26631
+  percentageUsing 0.47
+
 semanticScholar 37
  year|title|doi|citations|influentialCitations|authors|paperId
  2017|Synthesizing highly expressive SQL queries from input-output examples|10.1145/3062341.3062365|127|18|Chenglong Wang and Alvin Cheung and R. Bodík|8c7cf9c759dcca3195dea6e27c2e25ee9a05671c
@@ -336,4 +332,10 @@ semanticScholar 37
  2020|Efficient dam management using SQL and GIS|10.37023/ee.7.2.1|1|0|Mario Jancetić and N. Kranjčić and Milan Rezo|4695c4d9c2484935742a3974090cac1e4f95c984
  2021|Data Transformation from SQL to NoSQL MongoDB Based on R Programming Language|10.1109/ISMSIT52890.2021.9604548|1|0|F. Hasan and Muhamad Shahbani Abu Bakar|90dcbe721505cef84e7f4649dc2b4ccbbd4e3ba3
 
-clocExtensions cql mysql psql SQL sql tab udf viw
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SQL, PL/SQL: The Programming Language of Oracle|2002|Ivan Bayross|1678914|4.05|729|77
+ SQL for Dummies|1997|Allen G. Taylor|2164512|3.48|178|10
+ Joe Celko's SQL for Smarties: Advanced SQL Programming|1995|Joe Celko|1032791|3.96|172|11
+ Oracle PL/SQL Programming|1993|Steven Feuerstein|2405226|3.93|250|14
+ The Language of SQL|2010|Larry Rockoff|13895510|3.95|79|5

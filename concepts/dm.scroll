@@ -1,26 +1,20 @@
 import ../code/conceptPage.scroll
+
 id dm
 name DM
 appeared 1994
 tags pl
-conceptDescription DM is a programming language for the creation of multi-user worlds. By `world' I mean a virtual multi-media environment where people assume personae through which they interact with one another and computer-controlled objects. This could take the form of a competitive game, a role-playing adventure, a discussion board, or something we haven't even imagined.
 website http://www.byond.com/docs/guide/
-reference http://www.byond.com/developer
+conceptDescription DM is a programming language for the creation of multi-user worlds. By `world' I mean a virtual multi-media environment where people assume personae through which they interact with one another and computer-controlled objects. This could take the form of a competitive game, a role-playing adventure, a discussion board, or something we haven't even imagined.
+
 fileExtensions dm dmf
+fileType text
+wordRank 7101
+rosettaCode http://www.rosettacode.org/wiki/Category:DM
+centralPackageRepositoryCount 0
 country Unknown
 originCommunity BYOND Software
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference http://www.byond.com/developer
 
 example
  mob
@@ -32,14 +26,18 @@ example
       cry()
          world << "[usr] cries \his heart out."
 
-githubLanguage DM
- fileExtensions dm
- trendingProjectsCount 0
- type programming
- aceMode c_cpp
- tmScope source.dm
- aliases byond
- repos 2108
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
 githubBigQuery DM
  repos 394
  users 338
@@ -139,12 +137,15 @@ linguistGrammarRepo https://github.com/PJB3005/atomic-dreams
   
   #undef PI // Undefine PI
 
-rosettaCode http://www.rosettacode.org/wiki/Category:DM
-
-fileType text
-wordRank 7101
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2009|Apress|Pro SpringSource dm Server (Expert's Voice in Open Source)|Mak, Gary and Rubio, Daniel|9781430216407
+
+githubLanguage DM
+ fileExtensions dm
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ tmScope source.dm
+ aliases byond
+ repos 2108

@@ -1,19 +1,16 @@
 import ../code/conceptPage.scroll
+
 id bitbake
 name BitBake
 appeared 2004
 tags pl
 website https://yoctoproject.org/tools-resources/projects/bitbake
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity Yocto Project
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  require qt5-git.inc
@@ -31,6 +28,14 @@ example
  
   
 
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
 wikipedia https://en.wikipedia.org/wiki/BitBake
  related python linux subversion
  summary BitBake is a make-like  build tool with the special focus of distributions and packages for embedded Linux cross compilation, although it is not limited to that. It is inspired by Portage, which is the package management system used by the Gentoo Linux distribution. BitBake existed for some time in the OpenEmbedded project until it was separated out into a standalone, maintained, distribution-independent tool. BitBake is co-maintained by the Yocto Project and the OpenEmbedded project. BitBake recipes specify how a particular package is built. Recipes consist of the source URL (http, https, ftp, cvs, svn, git, local file system) of the package, dependencies and compile or install options. They also store the metadata for the package in standard variables. During the build process, recipes are used to track dependencies, performing native or cross-compilation of the package and package it so that it is suitable for installation on the local or a target device. It is also possible to create complete images consisting of a root file system and kernel. As a first step in a cross-build setup, the framework will attempt to create a cross-compiler toolchain suited for the target platform.
@@ -41,6 +46,12 @@ wikipedia https://en.wikipedia.org/wiki/BitBake
  dailyPageViews 61
  appeared 2004
 
+githubBigQuery BitBake
+ repos 1040
+ users 667
+
+isbndb 0
+
 githubLanguage BitBake
  fileExtensions bb
  trendingProjectsCount 0
@@ -48,12 +59,3 @@ githubLanguage BitBake
  aceMode text
  tmScope none
  repos 3285
-githubBigQuery BitBake
- repos 1040
- users 667
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0

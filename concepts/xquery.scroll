@@ -1,12 +1,38 @@
 import ../code/conceptPage.scroll
+
 id xquery
 name XQuery
 appeared 2007
 tags pl
 website http://www.w3.org/XML/Query/
-documentation https://www.w3.org/TR/xquery-31/
+
+officialBlogUrl https://www.w3.org/blog/tags/xquery/
 fileExtensions xq xql xqm xqy xquery
+clocExtensions xq xql xqm xquery xqy
+fileType text
+documentation https://www.w3.org/TR/xquery-31/
+codeMirror xquery
+rosettaCode http://www.rosettacode.org/wiki/Category:XQuery
+centralPackageRepositoryCount 0
 originCommunity W3C
+
+helloWorldCollection XQuery
+ (: Hello World with XQuery :)
+ let $i := "Hello World"
+ return $i
+ 
+pygmentsHighlighter XQuery
+ filename webmisc.py
+ fileExtensions xqy xquery xq xql xqm
+leachim6 XQuery
+ filepath x/XQuery.xq
+ fileExtensions xq
+ example
+  let $hello := "Hello World"
+  return $hello
+  
+
+stringToken "
 
 hasComments true
  (: Hello World with XQuery :)
@@ -17,8 +43,6 @@ hasStrings true
  "Hello world"
 hasFloats true
 hasIntegers true
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/XQuery
  example
@@ -48,23 +72,12 @@ wikipedia https://en.wikipedia.org/wiki/XQuery
  appeared 2007
  fileExtensions xq xql xqm xqy xquery
 
-githubLanguage XQuery
- fileExtensions xquery xq xql xqm xqy
- trendingProjectsCount 0
- type programming
- aceMode xquery
- codemirrorMode xquery
- codemirrorMimeType application/xquery
- tmScope source.xq
- repos 1753
+tiobe XQuery
+
 githubBigQuery XQuery
  repos 1175
  users 983
 
-codeMirror xquery
-pygmentsHighlighter XQuery
- filename webmisc.py
- fileExtensions xqy xquery xq xql xqm
 linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
  firstCommit 2015
  lastCommit 2016
@@ -144,33 +157,23 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
   
   
 
-helloWorldCollection XQuery
- (: Hello World with XQuery :)
- let $i := "Hello World"
- return $i
- 
-leachim6 XQuery
- filepath x/XQuery.xq
- fileExtensions xq
- example
-  let $hello := "Hello World"
-  return $hello
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:XQuery
-
-indeedJobs XQuery developer
- 2022 125
-officialBlogUrl https://www.w3.org/blog/tags/xquery/
-
-tiobe XQuery
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2009|McGraw-Hill Education|XML: A Beginner's Guide: Go Beyond the Basics with Ajax, XHTML, XPath 2.0, XSLT 2.0 and XQuery|Holzner, Steven|9780071606264
  2009|McGraw-Hill Education|XML: A Beginner's Guide: Go Beyond the Basics with Ajax, XHTML, XPath 2.0, XSLT 2.0 and XQuery|Holzner, Steven|9780071606271
+
+githubLanguage XQuery
+ fileExtensions xquery xq xql xqm xqy
+ trendingProjectsCount 0
+ type programming
+ aceMode xquery
+ codemirrorMode xquery
+ codemirrorMimeType application/xquery
+ tmScope source.xq
+ repos 1753
+
+indeedJobs XQuery developer
+ 2022 125
 
 semanticScholar 15
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -189,5 +192,3 @@ semanticScholar 15
  2014|Unleashing XQuery for Data-Independent Programming|10.1007/s13222-014-0160-3|4|0|Sebastian Bächle and Caetano Sauer|f6f4cf733b4a9ba7859bbd4d3a58757dd1bd4e6e
  2011|Programming the KDD Process using XQuery|10.5220/0003626501310139|3|0|A. Romei and F. Turini|f1eadf3f8cb7d644d4114bef4f1cb5c1f1a8e486
  2013|An expressive bidirectional transformation language for XQuery view update (Special issue : Advanced Programming Techniques for Construction of Robust, Generic and Evolutionary Programs)|10.2201/NIIPI.2013.10.6|1|0|Dongxi Liu and Zhenjiang Hu and M. Takeichi|b5aec929e9b515d99a039ead74029f20bb7c6b0c
-
-clocExtensions xq xql xqm xquery xqy

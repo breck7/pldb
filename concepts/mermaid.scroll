@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id mermaid
 name mermaid
 appeared 2014
+creators Knut Sveidqvist
 tags textMarkup
 website https://mermaidjs.github.io/
+
+writtenIn typescript javascript markdown html yaml json svg bash css toml bourne-shell csv diff dockerfile
+repoStats
+ firstCommit 2014
+ commits 10731
+ committers 728
+ files 805
+ newestCommit 2024
 country Various
 originCommunity https://github.com/mermaid-js
-domainName mermaidjs.github.io
- awisRank
-  2022 385735
 
 example
  gitGraph:
@@ -38,14 +45,8 @@ githubRepo https://github.com/mermaid-js/mermaid
  description Generation of diagram and flowchart from text in a similar manner as markdown
  issues 730
 
-repoStats
- firstCommit 2014
- commits 10731
- committers 728
- files 805
- newestCommit 2024
+domainName mermaidjs.github.io
+ awisRank
+  2022 385735
 
 isbndb 0
-
-creators Knut Sveidqvist
-writtenIn typescript javascript markdown html yaml json svg bash css toml bourne-shell csv diff dockerfile

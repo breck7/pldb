@@ -1,13 +1,36 @@
 import ../code/conceptPage.scroll
+
 id emacs-lisp
 name Emacs Lisp
 appeared 1985
-tags pl
 creators Richard Stallman
-documentation https://www.gnu.org/software/emacs/manual/html_mono/elisp.html
+tags pl
 aka emacslisp
+
+isOpenSource true
+tryItOnline emacs-lisp
+fileType text
+documentation https://www.gnu.org/software/emacs/manual/html_mono/elisp.html
+quineRelay Emacs Lisp
+replit https://repl.it/languages/elisp
+packageRepository https://elpa.gnu.org/
+ubuntuPackage emacs25
 country United States
 originCommunity GNU Project
+
+pygmentsHighlighter EmacsLisp
+ filename lisp.py
+ fileExtensions el
+leachim6 EmacsLisp
+ filepath e/EmacsLisp.el
+ fileExtensions el
+ example
+  (message "Hello World")
+  
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 isLisp true
 hasLineComments true
@@ -19,10 +42,6 @@ hasMultiLineComments false
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken ;
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Emacs_Lisp
  example
@@ -39,6 +58,25 @@ wikipedia https://en.wikipedia.org/wiki/Emacs_Lisp
  revisionCount 262
  appeared 1985
  fileExtensions el elc
+
+hopl https://hopl.info/showlanguage.prx?exp=2009
+tiobe Emacs Lisp
+
+githubBigQuery Emacs Lisp
+ repos 16754
+ users 12880
+
+linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 1
+ commitCount 101
+ sampleCount 3
+ example
+  (print "Dude!")
+  
+
+isbndb 0
 
 githubLanguage Emacs Lisp
  fileExtensions el emacs emacsdesktop
@@ -63,43 +101,5 @@ githubLanguage Emacs Lisp
  tmScope source.emacs.lisp
  aliases elisp or emacs
  repos 1305
-githubBigQuery Emacs Lisp
- repos 16754
- users 12880
-
-pygmentsHighlighter EmacsLisp
- filename lisp.py
- fileExtensions el
-linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
- firstCommit 2016
- lastCommit 2018
- committerCount 1
- commitCount 101
- sampleCount 3
- example
-  (print "Dude!")
-  
-
-leachim6 EmacsLisp
- filepath e/EmacsLisp.el
- fileExtensions el
- example
-  (message "Hello World")
-  
-quineRelay Emacs Lisp
-
-replit https://repl.it/languages/elisp
-tryItOnline emacs-lisp
-
-tiobe Emacs Lisp
-hopl https://hopl.info/showlanguage.prx?exp=2009
-
-packageRepository https://elpa.gnu.org/
-
-ubuntuPackage emacs25
-fileType text
-isOpenSource true
-
-isbndb 0
 
 semanticScholar 0

@@ -1,41 +1,21 @@
 import ../code/conceptPage.scroll
+
 id claro
 name Claro
 appeared 2021
-tags pl
 creators Jason Steving
+tags pl
 website https://clarolang.com/
-country United States
-originCommunity https://github.com/JasonSteving99
-domainName clarolang.com
- registered 2020
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-
-lineCommentToken #
-printToken print
-
-githubRepo https://github.com/JasonSteving99/claro-lang
- firstCommit 2020
- stars 3
- forks 1
- subscribers 2
- created 2020
- updated 2022
- description Claro Lang
- issues 18
-
+writtenIn bazel java markdown starlark typescript json javascript css protobuf html yaml bourne-shell diff vim-script toml dockerfile
 repoStats
  firstCommit 2020
  commits 673
  committers 7
  files 1202
  newestCommit 2024
+country United States
+originCommunity https://github.com/JasonSteving99
 
 rijuRepl https://riju.codes/claro
  example
@@ -50,4 +30,25 @@ rijuRepl https://riju.codes/claro
  website https://clarolang.com/
  gitRepo https://github.com/JasonSteving99/claro-lang
 
-writtenIn bazel java markdown starlark typescript json javascript css protobuf html yaml bourne-shell diff vim-script toml dockerfile
+githubRepo https://github.com/JasonSteving99/claro-lang
+ firstCommit 2020
+ stars 3
+ forks 1
+ subscribers 2
+ created 2020
+ updated 2022
+ description Claro Lang
+ issues 18
+
+lineCommentToken #
+printToken print
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName clarolang.com
+ registered 2020

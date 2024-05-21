@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id al
 name AL
 appeared 2016
-tags pl
 creators Microsoft
+tags pl
+
+writtenIn perl json markdown javascript xml powershell yaml css
+repoStats
+ firstCommit 2016
+ commits 450
+ committers 68
+ files 110
+ newestCommit 2024
 originCommunity Microsoft
 
 githubRepo https://github.com/microsoft/AL
@@ -15,12 +24,3 @@ githubRepo https://github.com/microsoft/AL
  updated 2022
  description AL language code samples for developing extensions for Dynamics 365 Business Central
  issues 489
-
-repoStats
- firstCommit 2016
- commits 450
- committers 68
- files 110
- newestCommit 2024
-
-writtenIn perl json markdown javascript xml powershell yaml css

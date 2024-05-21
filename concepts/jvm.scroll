@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id jvm
 name JVM
 appeared 1994
 tags vm
 standsFor Java Virtual Machine
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity Sun Microsystems
 
 wikipedia https://en.wikipedia.org/wiki/Java_virtual_machine
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/Java_virtual_machine
  revisionCount 1210
  dailyPageViews 918
  appeared 2006
-
-fileType text
-centralPackageRepositoryCount 0

@@ -1,19 +1,38 @@
 import ../code/conceptPage.scroll
+
 id yorick
 name Yorick
 appeared 1996
-tags pl
 creators David H. Munro
+tags pl
 website http://yorick.github.com
+
+isOpenSource true
 fileExtensions i
-domainName yorick.github.com
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Yorick
+quineRelay Yorick
+centralPackageRepositoryCount 0
+ubuntuPackage yorick
+
+rijuRepl https://riju.codes/yorick
+ example
+  write, "Hello, world!"
+  
+leachim6 Yorick
+ filepath y/Yorick.i
+ fileExtensions i
+ example
+  #!/usr/bin/yorick -batch
+  print, "Hello World";
+  
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
  example
@@ -35,28 +54,10 @@ wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
  appeared 1996
  fileExtensions i
 
-leachim6 Yorick
- filepath y/Yorick.i
- fileExtensions i
- example
-  #!/usr/bin/yorick -batch
-  print, "Hello World";
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Yorick
-quineRelay Yorick
-
-rijuRepl https://riju.codes/yorick
- example
-  write, "Hello, world!"
-  
-
-tiobe Yorick
 hopl https://hopl.info/showlanguage.prx?exp=2637
+tiobe Yorick
 
-ubuntuPackage yorick
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName yorick.github.com
 
 isbndb 1
  year|publisher|title|authors|isbn13

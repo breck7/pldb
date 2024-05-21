@@ -1,16 +1,19 @@
 import ../code/conceptPage.scroll
+
 id turbo-basic
 name Turbo Basic
 appeared 1987
 tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/Turbo_Basic
  example
@@ -34,5 +37,3 @@ wikipedia https://en.wikipedia.org/wiki/Turbo_Basic
  revisionCount 109
  dailyPageViews 12
  appeared 1989
-
-centralPackageRepositoryCount 0

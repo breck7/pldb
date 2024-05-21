@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id elfe
 name ELFE
 appeared 2003
-tags pl
 creators Christophe de Dinechin
+tags pl
 conceptDescription ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
+
+writtenIn cpp bash yaml make markdown awk
+repoStats
+ firstCommit 2003
+ commits 3048
+ committers 19
+ files 265
+ newestCommit 2018
 country France
 originCommunity https://dinechin.org
-
-hasSemanticIndentation true
 
 example
  invoke "sensor.corp.net",
@@ -34,11 +41,4 @@ githubRepo https://github.com/c3d/elfe
  description Extensible Language for Everyday
  issues 8
 
-repoStats
- firstCommit 2003
- commits 3048
- committers 19
- files 265
- newestCommit 2018
-
-writtenIn cpp bash yaml make markdown awk
+hasSemanticIndentation true

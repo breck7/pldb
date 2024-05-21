@@ -1,17 +1,40 @@
 import ../code/conceptPage.scroll
+
 id stata
 name Stata
 appeared 1985
-tags pl
 creators William Gould
+tags pl
 website https://www.stata.com/
+
+isOpenSource false
+clocExtensions ado DO do doh ihlp mata matah sthlp
+fileType text
 documentation https://www.stata.com/features/documentation/
-reference http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
+rosettaCode http://www.rosettacode.org/wiki/Category:Stata
+packageRepository https://www.stata.com/manuals/rssc.pdf
 originCommunity StataCorp
-domainName stata.com
- registered 1994
- awisRank
-  2022 31269
+projectEuler Stata
+ memberCount
+  2019 14
+  2022 16
+reference http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
+
+helloWorldCollection Stata
+ /* Hello world in Stata */
+ 
+  .program hello
+   1. display "Hello, World!"
+   2. end
+ .hello
+ 
+pygmentsHighlighter Stata
+ filename stata.py
+ fileExtensions do ado
+twitter https://twitter.com/stata
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasComments true
 hasLineComments true
@@ -21,9 +44,8 @@ hasMultiLineComments true
  */
 hasSemanticIndentation false
 
-lineCommentToken //
-multiLineCommentTokens /* */
-
+jupyterKernel https://github.com/TiesdeKok/ipystata
+jupyterKernel https://github.com/kylebarron/stata_kernel
 wikipedia https://en.wikipedia.org/wiki/Stata
  example
   program define fizzbuzz
@@ -52,20 +74,17 @@ wikipedia https://en.wikipedia.org/wiki/Stata
  revisionCount 370
  appeared 1985
 
-githubLanguage Stata
- fileExtensions do ado doh ihlp mata matah sthlp
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.stata
- repos 8344
+tiobe Stata
+
+domainName stata.com
+ registered 1994
+ awisRank
+  2022 31269
+
 githubBigQuery Stata
  repos 1032
  users 867
 
-pygmentsHighlighter Stata
- filename stata.py
- fileExtensions do ado
 linguistGrammarRepo https://github.com/pschumm/Stata.tmbundle
  firstCommit 2009
  lastCommit 2015
@@ -75,30 +94,6 @@ linguistGrammarRepo https://github.com/pschumm/Stata.tmbundle
  example
   local MAXDIM   800
   
-
-projectEuler Stata
- memberCount
-  2019 14
-  2022 16
-helloWorldCollection Stata
- /* Hello world in Stata */
- 
-  .program hello
-   1. display "Hello, World!"
-   2. end
- .hello
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:Stata
-
-tiobe Stata
-
-packageRepository https://www.stata.com/manuals/rssc.pdf
-
-twitter https://twitter.com/stata
-jupyterKernel https://github.com/TiesdeKok/ipystata
-jupyterKernel https://github.com/kylebarron/stata_kernel
-fileType text
-isOpenSource false
 
 isbndb 21
  year|publisher|title|authors|isbn13
@@ -124,6 +119,14 @@ isbndb 21
  20160324|Taylor & Francis|Biostatistics in Public Health Using STATA|Erick L. Suárez; Cynthia M. Pérez; Graciela M. Nogueras; Camille Moreno-Gorrín|9781498722025
  2007|N/a|Title: Stata Mata Matrix Programming [m] 4-6|Stata Press|9781597180368
 
+githubLanguage Stata
+ fileExtensions do ado doh ihlp mata matah sthlp
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.stata
+ repos 8344
+
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|Estimation of pre- and posttreatment average treatment effects with binary time-varying treatment using Stata|10.1177/1536867X19874224|23|2|G. Cerulli and Marco Ventura|2d2d96bec07c2c2a634d0cd2dd3f0c1413ba52fd
@@ -131,5 +134,3 @@ semanticScholar 5
  2019|Seamless interactive language interfacing between R and Stata|10.1177/1536867X19830891|6|1|E. F. Haghish|c8141f9a90a0ca4bed665ac09964ab0367a9b366
  2017|An Introduction to Stata Programming (2nd Edition)|10.18637/JSS.V077.B03|4|0|O. Kirchkamp and H. Niggemann|4c047914591d95b0ee1f48c4f7ed44ff3902524b
  2010|Mata Matters: Stata in Mata|10.1177/1536867X1001000111|1|0|W. Gould|d6607a2dca41c0544affecf51c7f2dd6775f68c3
-
-clocExtensions ado DO do doh ihlp mata matah sthlp

@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id graph-it
 name GraphIt
 appeared 2017
 tags pl
-conceptDescription GraphIt is a new DSL for graph computations that generates fast implementations for algorithms with different performance characteristics running on graphs with different sizes and structures. GraphIt separates what is computed (algorithm) from how it is computed (schedule). Programmers specify the algorithm using an algorithm language, and performance optimizations are specified using a separate scheduling language. The scheduling language enables programmers to easily search through this complicated tradeoff space by composing together a large set of edge traversal and vertex data layout optimizations.
 website http://graphit-lang.org/
+conceptDescription GraphIt is a new DSL for graph computations that generates fast implementations for algorithms with different performance characteristics running on graphs with different sizes and structures. GraphIt separates what is computed (algorithm) from how it is computed (schedule). Programmers specify the algorithm using an algorithm language, and performance optimizations are specified using a separate scheduling language. The scheduling language enables programmers to easily search through this complicated tradeoff space by composing together a large set of edge traversal and vertex data layout optimizations.
+
+isOpenSource true
+writtenIn cpp python markdown lisp make cmake yaml csv
 fileExtensions gt
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 1560
+ committers 49
+ files 914
+ newestCommit 2021
 country United States
 originCommunity https://github.com/GraphIt-DSL
-domainName graphit-lang.org
- registered 2018
- awisRank
-  2022 11083526
 
 example
  element Vertex end
@@ -79,21 +87,13 @@ githubRepo https://github.com/GraphIt-DSL/graphit
  description GraphIt - A High-Performance Domain Specific Language for Graph Analytics
  issues 5
 
-repoStats
- firstCommit 2017
- commits 1560
- committers 49
- files 914
- newestCommit 2021
+domainName graphit-lang.org
+ registered 2018
+ awisRank
+  2022 11083526
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  18499287|GraphIt: A High-Performance Domain-Specific Language for Graph Analytics|http://graphit-lang.org/|2018-11-21 00:50:23 UTC|1542761423|ArtWomb|2|34
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn cpp python markdown lisp make cmake yaml csv

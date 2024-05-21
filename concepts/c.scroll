@@ -1,15 +1,81 @@
 import ../code/conceptPage.scroll
+
 id c
 name C
 appeared 1972
-tags pl
 creators Dennis Ritchie
-documentation https://devdocs.io/c/
+tags pl
+
+isOpenSource true
 spec https://www.iso-9899.info/wiki/The_Standard
-reference http://www.c4learn.com/c-programming/c-keywords/
-cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
+gdbSupport true
+clocExtensions c cats ec idc pgc
+fileType text
+wordRank 81
+documentation https://devdocs.io/c/
+antlr https://github.com/antlr/grammars-v4/tree/master/c
+monaco cpp
+rosettaCode http://www.rosettacode.org/wiki/Category:C
+quineRelay C
+replit https://repl.it/languages/c
+centralPackageRepositoryCount 0
+ubuntuPackage gcc
 country United States
 originCommunity Bell Labs
+funFact https://news.ycombinator.com/item?id=32621392
+  C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++
+projectEuler C/C++
+ memberCount
+  2022 46028
+  2019 41087
+reference http://www.c4learn.com/c-programming/c-keywords/
+
+pygmentsHighlighter C
+ filename c_cpp.py
+ fileExtensions c h idc x[bp]m
+rijuRepl https://riju.codes/c
+ example
+  #include <stdio.h>
+  
+  int main() {
+    printf("Hello, world!\n");
+    return 0;
+  }
+  
+ description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
+ fileExtensions c h
+ gitRepo https://github.com/llvm/llvm-project
+subreddit https://reddit.com/r/C_Programming
+ memberCount
+  2017 30709
+  2022 127013
+leachim6 C
+ filepath c/C.c
+ example
+  #include <stdio.h>
+  
+  main()
+  {
+      printf("Hello World\n");
+  }
+  
+cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
+compilerExplorer C
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+      return num * num;
+  }
+
+meetup https://www.meetup.com/topics/c
+ memberCount 69338
+ groupCount 204
+keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken printf
+assignmentToken =
 
 hasVariableSubstitutionSyntax false
 hasEnums true
@@ -182,15 +248,7 @@ hasConditionals true
 hasFixedPoint false
 hasScientificNotation true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken printf
-assignmentToken =
-keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
-
-funFact https://news.ycombinator.com/item?id=32621392
-  C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++
-
+jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
  example
   #include <stdio.h>
@@ -209,52 +267,15 @@ wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
  appeared 2011
  fileExtensions Mono
 
-githubLanguage C
- fileExtensions c cats h idc
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  pwn20wndstuff Undecimus https://github.com/pwn20wndstuff.png https://github.com/pwn20wndstuff/Undecimus C #555555 4836 991 1356 "unc0ver jailbreak for iOS 11.0 - 12.4"
-  LiteOS LiteOS https://github.com/LiteOS.png https://github.com/LiteOS/LiteOS C #555555 3361 1146 1832 "code and manual"
-  git git https://github.com/git.png https://github.com/git/git C #555555 29183 16856 680 "Git Source Code Mirror - This is a publish-only repository and all pull requests are ignored. Please follow Documentation/SubmittingPatches procedure for any of your improvements."
-  nginx nginx https://github.com/nginx.png https://github.com/nginx/nginx C #555555 9590 3619 293 "An official read-only mirror of http://hg.nginx.org/nginx/ which is updated hourly. Pull requests on GitHub cannot be accepted and will be automatically closed. The proper way to submit changes to nginx is via the nginx development mailing list, see http://nginx.org/en/docs/contributing_changes.html"
-  littlevgl lvgl https://github.com/littlevgl.png https://github.com/littlevgl/lvgl C #555555 2274 522 128 "Powerful and easy-to-use embedded GUI with many widgets, advanced visual effects (opacity, antialiasing, animations) and low memory requirements (16K RAM, 64K Flash)."
-  Genymobile scrcpy https://github.com/Genymobile.png https://github.com/Genymobile/scrcpy C #555555 18275 1510 2342 "Display and control your Android device"
-  NVIDIA open-gpu-doc https://github.com/NVIDIA.png https://github.com/NVIDIA/open-gpu-doc C #555555 734 39 721 "Documentation of NVIDIA chip/hardware interfaces"
-  betaflight betaflight https://github.com/betaflight.png https://github.com/betaflight/betaflight C #555555 3001 1405 124 "Open Source Flight Controller Firmware"
-  nothings stb https://github.com/nothings.png https://github.com/nothings/stb C #555555 10557 2767 341 "stb single-file public domain libraries for C/C++"
-  openbsd src https://github.com/openbsd.png https://github.com/openbsd/src C #555555 1202 314 52 "Public git conversion mirror of OpenBSD's official CVS src repository. Pull requests not accepted - send diffs to the tech@ mailing list."
-  ARMmbed littlefs https://github.com/ARMmbed.png https://github.com/ARMmbed/littlefs C #555555 1480 220 333 "A little fail-safe filesystem designed for microcontrollers"
-  nmap nmap https://github.com/nmap.png https://github.com/nmap/nmap C #555555 3319 1126 114 "Nmap - the Network Mapper. Github mirror of official SVN repository."
-  RT-Thread rt-thread https://github.com/RT-Thread.png https://github.com/RT-Thread/rt-thread C #555555 3199 2128 227 "RT-Thread is an open source IoT operating system from China."
-  DoubleLabyrinth navicat-keygen https://github.com/DoubleLabyrinth.png https://github.com/DoubleLabyrinth/navicat-keygen C++ #f34b7d 7512 1890 565 "A keygen for Navicat"
-  torvalds linux https://github.com/torvalds.png https://github.com/torvalds/linux C #555555 79929 27885 1452 "Linux kernel source tree"
-  zephyrproject-rtos zephyr https://github.com/zephyrproject-rtos.png https://github.com/zephyrproject-rtos/zephyr C #555555 2423 1468 115 "Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures."
-  KevinOConnor klipper https://github.com/KevinOConnor.png https://github.com/KevinOConnor/klipper C #555555 1531 724 62 "Klipper is a 3d-printer firmware"
-  JVictorDias Dinossauro-Google https://github.com/JVictorDias.png https://github.com/JVictorDias/Dinossauro-Google C #555555 297 85 191 "Código do projeto onde uma rede neural aprende a jogar o dinossauro do google"
-  commaai openpilot https://github.com/commaai.png https://github.com/commaai/openpilot C #555555 12310 2924 408 "open source driving agent"
-  qmk qmk_firmware https://github.com/qmk.png https://github.com/qmk/qmk_firmware C #555555 4961 9458 204 "Open-source keyboard firmware for Atmel AVR and Arm USB families"
-  cfenollosa os-tutorial https://github.com/cfenollosa.png https://github.com/cfenollosa/os-tutorial C #555555 16163 1776 271 "How to create an OS from scratch"
-  mit-pdos xv6-public https://github.com/mit-pdos.png https://github.com/mit-pdos/xv6-public C #555555 2956 1586 92 "xv6 OS"
-  php php-src https://github.com/php.png https://github.com/php/php-src C #555555 24746 5666 486 "The PHP Interpreter"
-  micropython micropython https://github.com/micropython.png https://github.com/micropython/micropython C #555555 9015 2745 190 "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
-  esp8266 Arduino https://github.com/esp8266.png https://github.com/esp8266/Arduino C #555555 9944 7850 166 "ESP8266 core for Arduino"
- trendingProjectsCount 26
- type programming
- interpreters tcc
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-csrc
- tmScope source.c
- repos 2160271
+hopl https://hopl.info/showlanguage.prx?exp=577
+tiobe C
+ currentRank 2
+pypl C
+
 githubBigQuery C
  repos 292876
  users 177962
 
-antlr https://github.com/antlr/grammars-v4/tree/master/c
-monaco cpp
-pygmentsHighlighter C
- filename c_cpp.py
- fileExtensions c h idc x[bp]m
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -269,75 +290,6 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   
   #endif
   
-
-projectEuler C/C++
- memberCount
-  2022 46028
-  2019 41087
-leachim6 C
- filepath c/C.c
- example
-  #include <stdio.h>
-  
-  main()
-  {
-      printf("Hello World\n");
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:C
-quineRelay C
-
-compilerExplorer C
- example
-  // Type your code here, or load an example.
-  int square(int num) {
-      return num * num;
-  }
-rijuRepl https://riju.codes/c
- example
-  #include <stdio.h>
-  
-  int main() {
-    printf("Hello, world!\n");
-    return 0;
-  }
-  
- description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
- fileExtensions c h
- gitRepo https://github.com/llvm/llvm-project
-replit https://repl.it/languages/c
-
-indeedJobs c engineer
- 2017 23567
-linkedInSkill c
- 2018 3635195
-stackOverflowSurvey
- 2021
-  users 17329
-  medianSalary 53184
-  fans 9702
-  percentageUsing 0.21
-
-subreddit https://reddit.com/r/C_Programming
- memberCount
-  2017 30709
-  2022 127013
-meetup https://www.meetup.com/topics/c
- memberCount 69338
- groupCount 204
-
-tiobe C
- currentRank 2
-hopl https://hopl.info/showlanguage.prx?exp=577
-pypl C
-
-ubuntuPackage gcc
-gdbSupport true
-jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
-fileType text
-wordRank 81
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 78
  year|publisher|title|authors|isbn13
@@ -420,6 +372,55 @@ isbndb 78
  20140307|Pearson Education (US)|Starting Out with C   From Control Structures to Objects|Tony Gaddis|9780133888201
  1992|Dryden Pr|Business Programming in C for Dos-Based Systems (The Dryden Press Series in Information System)|Millspaugh, A. C.|9780155001398
 
+githubLanguage C
+ fileExtensions c cats h idc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  pwn20wndstuff Undecimus https://github.com/pwn20wndstuff.png https://github.com/pwn20wndstuff/Undecimus C #555555 4836 991 1356 "unc0ver jailbreak for iOS 11.0 - 12.4"
+  LiteOS LiteOS https://github.com/LiteOS.png https://github.com/LiteOS/LiteOS C #555555 3361 1146 1832 "code and manual"
+  git git https://github.com/git.png https://github.com/git/git C #555555 29183 16856 680 "Git Source Code Mirror - This is a publish-only repository and all pull requests are ignored. Please follow Documentation/SubmittingPatches procedure for any of your improvements."
+  nginx nginx https://github.com/nginx.png https://github.com/nginx/nginx C #555555 9590 3619 293 "An official read-only mirror of http://hg.nginx.org/nginx/ which is updated hourly. Pull requests on GitHub cannot be accepted and will be automatically closed. The proper way to submit changes to nginx is via the nginx development mailing list, see http://nginx.org/en/docs/contributing_changes.html"
+  littlevgl lvgl https://github.com/littlevgl.png https://github.com/littlevgl/lvgl C #555555 2274 522 128 "Powerful and easy-to-use embedded GUI with many widgets, advanced visual effects (opacity, antialiasing, animations) and low memory requirements (16K RAM, 64K Flash)."
+  Genymobile scrcpy https://github.com/Genymobile.png https://github.com/Genymobile/scrcpy C #555555 18275 1510 2342 "Display and control your Android device"
+  NVIDIA open-gpu-doc https://github.com/NVIDIA.png https://github.com/NVIDIA/open-gpu-doc C #555555 734 39 721 "Documentation of NVIDIA chip/hardware interfaces"
+  betaflight betaflight https://github.com/betaflight.png https://github.com/betaflight/betaflight C #555555 3001 1405 124 "Open Source Flight Controller Firmware"
+  nothings stb https://github.com/nothings.png https://github.com/nothings/stb C #555555 10557 2767 341 "stb single-file public domain libraries for C/C++"
+  openbsd src https://github.com/openbsd.png https://github.com/openbsd/src C #555555 1202 314 52 "Public git conversion mirror of OpenBSD's official CVS src repository. Pull requests not accepted - send diffs to the tech@ mailing list."
+  ARMmbed littlefs https://github.com/ARMmbed.png https://github.com/ARMmbed/littlefs C #555555 1480 220 333 "A little fail-safe filesystem designed for microcontrollers"
+  nmap nmap https://github.com/nmap.png https://github.com/nmap/nmap C #555555 3319 1126 114 "Nmap - the Network Mapper. Github mirror of official SVN repository."
+  RT-Thread rt-thread https://github.com/RT-Thread.png https://github.com/RT-Thread/rt-thread C #555555 3199 2128 227 "RT-Thread is an open source IoT operating system from China."
+  DoubleLabyrinth navicat-keygen https://github.com/DoubleLabyrinth.png https://github.com/DoubleLabyrinth/navicat-keygen C++ #f34b7d 7512 1890 565 "A keygen for Navicat"
+  torvalds linux https://github.com/torvalds.png https://github.com/torvalds/linux C #555555 79929 27885 1452 "Linux kernel source tree"
+  zephyrproject-rtos zephyr https://github.com/zephyrproject-rtos.png https://github.com/zephyrproject-rtos/zephyr C #555555 2423 1468 115 "Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures."
+  KevinOConnor klipper https://github.com/KevinOConnor.png https://github.com/KevinOConnor/klipper C #555555 1531 724 62 "Klipper is a 3d-printer firmware"
+  JVictorDias Dinossauro-Google https://github.com/JVictorDias.png https://github.com/JVictorDias/Dinossauro-Google C #555555 297 85 191 "Código do projeto onde uma rede neural aprende a jogar o dinossauro do google"
+  commaai openpilot https://github.com/commaai.png https://github.com/commaai/openpilot C #555555 12310 2924 408 "open source driving agent"
+  qmk qmk_firmware https://github.com/qmk.png https://github.com/qmk/qmk_firmware C #555555 4961 9458 204 "Open-source keyboard firmware for Atmel AVR and Arm USB families"
+  cfenollosa os-tutorial https://github.com/cfenollosa.png https://github.com/cfenollosa/os-tutorial C #555555 16163 1776 271 "How to create an OS from scratch"
+  mit-pdos xv6-public https://github.com/mit-pdos.png https://github.com/mit-pdos/xv6-public C #555555 2956 1586 92 "xv6 OS"
+  php php-src https://github.com/php.png https://github.com/php/php-src C #555555 24746 5666 486 "The PHP Interpreter"
+  micropython micropython https://github.com/micropython.png https://github.com/micropython/micropython C #555555 9015 2745 190 "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
+  esp8266 Arduino https://github.com/esp8266.png https://github.com/esp8266/Arduino C #555555 9944 7850 166 "ESP8266 core for Arduino"
+ trendingProjectsCount 26
+ type programming
+ interpreters tcc
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.c
+ repos 2160271
+
+indeedJobs c engineer
+ 2017 23567
+linkedInSkill c
+ 2018 3635195
+stackOverflowSurvey
+ 2021
+  users 17329
+  medianSalary 53184
+  fans 9702
+  percentageUsing 0.21
+
 semanticScholar 19
  year|title|doi|citations|influentialCitations|authors|paperId
  1978|The C Programming Language|10.1007/978-3-662-09507-2_22|2216|51|B. Kernighan and D. Ritchie|d36227ed3bfbe37972acfc90acea59f1246e0fde
@@ -441,5 +442,3 @@ semanticScholar 19
  1985|The C Programming Language and a C Compiler|10.1147/sj.241.0037|7|0|Ralph R. Ryan and Hans-Dieter Spiller|0f9a12e9901772a51486f72283b7e34e3d54f996
  2008|Virtual Education System for the C Programming Language|10.1007/978-3-540-85033-5_20|5|1|Il-Hyeon Moon and Saeron Han and KwanSun Choi and Dongsik Kim and Changwan Jeon and Sunheum Lee and Heunggu Jeon|3c048305affc8dd4a384db4843f4c98d59cf4660
  1985|The C programming language|10.1016/0011-684X(85)90032-2|2|0|Russell Jones|4ad1b60dca3d306e164233d7044f9587f296e002
-
-clocExtensions c cats ec idc pgc

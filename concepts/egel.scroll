@@ -1,13 +1,28 @@
 import ../code/conceptPage.scroll
+
 id egel
 name egel
 appeared 2016
 tags interpreter
-conceptDescription <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
 website https://egel-lang.github.io/
+conceptDescription <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
+
+isOpenSource true
+writtenIn c bourne-shell m4 markdown cpp make cmake svg python yaml vim-script tex pascal html protobuf
+tryItOnline egel
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Egel
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 986
+ committers 5
+ files 506
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/egel-lang
-domainName egel-lang.github.io
+
+twitter https://twitter.com/egel_language
 
 githubRepo https://github.com/egel-lang/egel
  firstCommit 2016
@@ -19,19 +34,4 @@ githubRepo https://github.com/egel-lang/egel
  description The Egel Programming Language
  issues 2
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Egel
-
-tryItOnline egel
-
-twitter https://twitter.com/egel_language
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2016
- commits 986
- committers 5
- files 506
- newestCommit 2024
-writtenIn c bourne-shell m4 markdown cpp make cmake svg python yaml vim-script tex pascal html protobuf
+domainName egel-lang.github.io

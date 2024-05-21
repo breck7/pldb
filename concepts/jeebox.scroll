@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id jeebox
 name jeebox
 appeared 2012
-tags pl
-demoVideo https://www.youtube.com/watch?v=5gcKSCUKCRE
 creators Theodore H. Smith
+tags pl
 website http://jeebox.org/
 aka Speedie
+
+writtenIn cpp cmake markdown yaml
+demoVideo https://www.youtube.com/watch?v=5gcKSCUKCRE
+repoStats
+ firstCommit 2019
+ commits 187
+ committers 4
+ files 88
+ newestCommit 2023
 country Unknown
 originCommunity https://www.reddit.com/r/jeebox/
-domainName jeebox.org
- registered 2012
 
 example
  You can %describe (anything, in: Jeebox)
@@ -25,11 +32,5 @@ githubRepo https://github.com/gamblevore/jeebox
  description Clean extensible language for describing code, and human-language.
  issues 0
 
-repoStats
- firstCommit 2019
- commits 187
- committers 4
- files 88
- newestCommit 2023
-
-writtenIn cpp cmake markdown yaml
+domainName jeebox.org
+ registered 2012

@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id expresso
 name expresso
 appeared 2012
-tags pl
 creators Tim Williams
+tags pl
+
+writtenIn haskell logos markdown nix yaml
+repoStats
+ firstCommit 2012
+ commits 78
+ committers 9
+ files 22
+ newestCommit 2023
 country United Kingdom
 originCommunity https://github.com/willtim/Expresso
 
@@ -20,13 +29,4 @@ githubRepo https://github.com/willtim/Expresso
  description A simple expressions language with polymorphic extensible row types.
  issues 6
 
-repoStats
- firstCommit 2012
- commits 78
- committers 9
- files 22
- newestCommit 2023
-
 semanticScholar 0
-
-writtenIn haskell logos markdown nix yaml

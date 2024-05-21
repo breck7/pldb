@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id json-schema
 name JSON Schema
 appeared 2010
-tags dataValidationLanguage
 creators Kris Zyp
-conceptDescription JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
+tags dataValidationLanguage
 website http://json-schema.org/
+conceptDescription JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
+
+writtenIn markdown json javascript yaml xml make
+relatedConcepts livr
+repoStats
+ firstCommit 2010
+ commits 2082
+ committers 83
+ files 47
+ newestCommit 2024
 country Various
 originCommunity https://github.com/json-schema-org
-domainName json-schema.org
- registered 2007
- awisRank
-  2022 102032
-
-relatedConcepts livr
 
 example
  {
@@ -74,13 +78,9 @@ githubRepo https://github.com/json-schema-org/json-schema-spec
  description The JSON Schema I-D sources
  issues 90
 
-repoStats
- firstCommit 2010
- commits 2082
- committers 83
- files 47
- newestCommit 2024
+domainName json-schema.org
+ registered 2007
+ awisRank
+  2022 102032
 
 isbndb 0
-
-writtenIn markdown json javascript yaml xml make

@@ -1,25 +1,18 @@
 import ../code/conceptPage.scroll
+
 id cir
 name CIR
 appeared 2020
 tags ir
-conceptDescription Clang IR (CIR) is a new IR for Clang.
 website https://facebookincubator.github.io/clangir/
-reference https://news.ycombinator.com/item?id=31904624
-reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
 standsFor Clang IR
-country United States
-originCommunity Engineering at Meta
+conceptDescription Clang IR (CIR) is a new IR for Clang.
 
 relatedConcepts llvmir
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+country United States
+originCommunity Engineering at Meta
+reference https://news.ycombinator.com/item?id=31904624
+reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
 
 example
  // Read from local variable, address in %0.
@@ -38,5 +31,13 @@ githubRepo https://github.com/facebookincubator/clangir
  updated 2022
  description A new high-level IR for clang.
  issues 0
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 isbndb 0

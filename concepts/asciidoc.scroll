@@ -1,12 +1,24 @@
 import ../code/conceptPage.scroll
+
 id asciidoc
 name AsciiDoc
 appeared 2002
 tags textMarkup
 website http://asciidoc.org/
-domainName asciidoc.org
- awisRank
-  2022 833537
+
+isOpenSource true
+clocExtensions adoc asciidoc
+fileType text
+centralPackageRepositoryCount 0
+
+rijuRepl https://riju.codes/asciidoc
+ example
+  Hello, world!
+  
+ description Human-readable document format, semantically equivalent to DocBook XML, but using plain-text mark-up conventions
+ fileExtensions adoc
+ website https://asciidoc.org/
+ gitRepo https://github.com/asciidoc/asciidoc
 
 wikipedia https://en.wikipedia.org/wiki/AsciiDoc
  example
@@ -40,14 +52,9 @@ wikipedia https://en.wikipedia.org/wiki/AsciiDoc
  dailyPageViews 89
  appeared 2002
 
-githubLanguage AsciiDoc
- fileExtensions asciidoc adoc asc
- trendingProjectsCount 0
- type prose
- aceMode asciidoc
- tmScope text.html.asciidoc
- wrap true
- repos 21
+domainName asciidoc.org
+ awisRank
+  2022 833537
 
 linguistGrammarRepo https://github.com/zuckschwerdt/asciidoc.tmbundle
  firstCommit 2008
@@ -71,19 +78,13 @@ linguistGrammarRepo https://github.com/zuckschwerdt/asciidoc.tmbundle
   - Item 3
   
 
-rijuRepl https://riju.codes/asciidoc
- example
-  Hello, world!
-  
- description Human-readable document format, semantically equivalent to DocBook XML, but using plain-text mark-up conventions
- fileExtensions adoc
- website https://asciidoc.org/
- gitRepo https://github.com/asciidoc/asciidoc
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions adoc asciidoc
+githubLanguage AsciiDoc
+ fileExtensions asciidoc adoc asc
+ trendingProjectsCount 0
+ type prose
+ aceMode asciidoc
+ tmScope text.html.asciidoc
+ wrap true
+ repos 21

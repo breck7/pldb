@@ -1,17 +1,29 @@
 import ../code/conceptPage.scroll
+
 id json-ld
 name JSON-LD
 appeared 2010
-tags dataValidationLanguage
 creators Dave Longley
+tags dataValidationLanguage
 website https://json-ld.org/
 standsFor JavaScript Object Notation for Linked Data
+
+isOpenSource true
+writtenIn javascript markdown json yaml idl bourne-shell
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 2335
+ committers 48
+ files 76
+ newestCommit 2023
 country Various
 originCommunity https://www.w3.org/2018/json-ld-wg/
-domainName json-ld.org
- registered 2010
- awisRank
-  2022 279817
+
+pygmentsHighlighter JSON-LD
+ filename data.py
+ fileExtensions jsonld
 
 githubRepo https://github.com/digitalbazaar/jsonld.js
  firstCommit 2010
@@ -23,13 +35,6 @@ githubRepo https://github.com/digitalbazaar/jsonld.js
  description A JSON-LD Processor and API implementation in JavaScript
  issues 118
 
-repoStats
- firstCommit 2010
- commits 2335
- committers 48
- files 76
- newestCommit 2023
-
 wikipedia https://en.wikipedia.org/wiki/JSON-LD
  summary JSON-LD (JavaScript Object Notation for Linked Data), is a method of encoding Linked Data using JSON. It was a goal to require as little effort as possible from developers to transform their existing JSON to JSON-LD. This allows data to be serialized in a way that is similar to traditional JSON. It is a World Wide Web Consortium Recommendation. It was initially developed by the JSON for Linking Data Community Group before being transferred to the RDF Working Group for review, improvement, and standardization.
  backlinksCount 259
@@ -37,19 +42,11 @@ wikipedia https://en.wikipedia.org/wiki/JSON-LD
  dailyPageViews 307
  appeared 2010
 
-githubLanguage JSONLD
- fileExtensions jsonld
- trendingProjectsCount 0
- type data
- aceMode javascript
- codemirrorMode javascript
- codemirrorMimeType application/json
- tmScope source.js
- repos 0
+domainName json-ld.org
+ registered 2010
+ awisRank
+  2022 279817
 
-pygmentsHighlighter JSON-LD
- filename data.py
- fileExtensions jsonld
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
  lastCommit 2018
@@ -88,12 +85,16 @@ linguistGrammarRepo https://github.com/atom/language-javascript
     }
   }
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage JSONLD
+ fileExtensions jsonld
+ trendingProjectsCount 0
+ type data
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.js
+ repos 0
 
-writtenIn javascript markdown json yaml idl bourne-shell
+semanticScholar 0

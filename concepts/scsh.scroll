@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id scsh
 name Scsh
 appeared 1993
 tags pl
-reference https://www.ccs.neu.edu/home/shivers/cv.pdf
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
+reference https://www.ccs.neu.edu/home/shivers/cv.pdf
 
 wikipedia https://en.wikipedia.org/wiki/Scsh
  example
@@ -29,8 +33,5 @@ wikipedia https://en.wikipedia.org/wiki/Scsh
  appeared 1994
 
 hopl https://hopl.info/showlanguage.prx?exp=2484
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

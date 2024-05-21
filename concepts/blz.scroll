@@ -1,18 +1,19 @@
 import ../code/conceptPage.scroll
+
 id blz
 name blz
 appeared 2015
 tags pl
 website https://blazingk.in/blz
+
+writtenIn java markdown json bourne-shell python xml yaml dockerfile csv bash
+repoStats
+ firstCommit 2014
+ commits 538
+ committers 8
+ files 480
+ newestCommit 2021
 country United States
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  import Lists
@@ -31,11 +32,10 @@ githubRepo https://github.com/blazingkin/blz-ospl
  description An open source programming language
  issues 17
 
-repoStats
- firstCommit 2014
- commits 538
- committers 8
- files 480
- newestCommit 2021
+lineCommentToken #
 
-writtenIn java markdown json bourne-shell python xml yaml dockerfile csv bash
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false

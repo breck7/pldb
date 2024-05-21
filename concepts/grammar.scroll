@@ -1,26 +1,30 @@
 import ../code/conceptPage.scroll
+
 id grammar
 name Grammar
 appeared 2017
-tags grammarLanguage
-isPublicDomain true
 creators Breck Yunits
-conceptDescription Grammar is a Tree Language for creating new Tree Languages. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
+tags grammarLanguage
 website https://jtree.treenotation.org/langs/grammar/
 webRepl https://jtree.treenotation.org/designer/
-country United States and Ireland and Norway and India
-originCommunity https://github.com/breck7/jtree/issues
-releaseNotesUrl https://jtree.treenotation.org/langs/grammar/
 roadmap https://jtree.treenotation.org/langs/grammar/
+conceptDescription Grammar is a Tree Language for creating new Tree Languages. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
 
+isPublicDomain true
+isOpenSource true
+writtenIn javascript typescript html json svg css yaml xml markdown
 subsetOf treenotation
 relatedConcepts treenotation antlr
 influencedBy antlr yacc ebnf bnf
-
-hasVariableSubstitutionSyntax false
-hasEnums true
- boolCell
-  enum true false
+releaseNotesUrl https://jtree.treenotation.org/langs/grammar/
+repoStats
+ firstCommit 2017
+ commits 1473
+ committers 11
+ files 226
+ newestCommit 2024
+country United States and Ireland and Norway and India
+originCommunity https://github.com/breck7/jtree/issues
 
 example
  latinNode
@@ -39,15 +43,9 @@ githubRepo https://github.com/breck7/jtree
  description Build your own language using Tree Notation.
  issues 40
 
-repoStats
- firstCommit 2017
- commits 1473
- committers 11
- files 226
- newestCommit 2024
-
-isOpenSource true
+hasVariableSubstitutionSyntax false
+hasEnums true
+ boolCell
+  enum true false
 
 isbndb 0
-
-writtenIn javascript typescript html json svg css yaml xml markdown

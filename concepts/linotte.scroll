@@ -1,16 +1,26 @@
 import ../code/conceptPage.scroll
+
 id linotte
 name Linotte
 appeared 2005
-tags pl
 creators cpc6128
+tags pl
 website http://langagelinotte.free.fr/
-country France
 nativeLanguage French
+
+isOpenSource true
+writtenIn java xml yaml powershell visual-basic markdown
+fileType text
+centralPackageRepositoryCount 0
+packageRepository https://bitbucket.org/metalm/langagelinotte/downloads/
+repoStats
+ firstCommit 2019
+ commits 524
+ committers 6
+ files 886
+ newestCommit 2024
+country France
 originCommunity https://github.com/cpc6128/LangageLinotte/issues
-domainName langagelinotte.free.fr
- awisRank
-  2017 5135243
 
 githubRepo https://github.com/cpc6128/LangageLinotte
  firstCommit 2019
@@ -21,13 +31,6 @@ githubRepo https://github.com/cpc6128/LangageLinotte
  updated 2022
  description Code source officiel du langage de programmation Linotte - Langage de programmation en français simple créé dans le but de permettre aux enfants et aux personnes n'ayant pas une connaissance approfondie de l’informatique d’apprendre la programmation facilement.
  issues 3
-
-repoStats
- firstCommit 2019
- commits 524
- committers 6
- files 886
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/Linotte
  example
@@ -43,10 +46,6 @@ wikipedia https://en.wikipedia.org/wiki/Linotte
  revisionCount 6
  appeared 2005
 
-packageRepository https://bitbucket.org/metalm/langagelinotte/downloads/
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn java xml yaml powershell visual-basic markdown
+domainName langagelinotte.free.fr
+ awisRank
+  2017 5135243

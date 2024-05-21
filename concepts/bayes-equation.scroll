@@ -1,9 +1,10 @@
 import ../code/conceptPage.scroll
+
 id bayes-equation
 name Bayes' Equation
 appeared 1763
-tags equation
 creators Thomas Bayes
+tags equation
 equation
  P(A|B) = (P(B|A))*P(A))/P(B)
 

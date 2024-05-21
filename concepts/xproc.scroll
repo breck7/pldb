@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id xproc
 name XProc
 appeared 1990
 tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:XProc
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/XProc
  example
@@ -34,15 +39,6 @@ wikipedia https://en.wikipedia.org/wiki/XProc
  dailyPageViews 56
  appeared 1990
 
-githubLanguage XProc
- fileExtensions xpl xproc
- trendingProjectsCount 0
- type programming
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml
- repos 93
 githubBigQuery XProc
  repos 223
  users 174
@@ -66,11 +62,16 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
       <p:identity/>
   </p:declare-step>
 
-rosettaCode http://www.rosettacode.org/wiki/Category:XProc
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2020|XML Press|XProc 3.0 Programmer Reference|Siegel, Erik|9781937434717
+
+githubLanguage XProc
+ fileExtensions xpl xproc
+ trendingProjectsCount 0
+ type programming
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml
+ repos 93

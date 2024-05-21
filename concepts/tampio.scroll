@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id tampio
 name tampio
 appeared 2017
-tags pl
 creators Iikka Hauhio
+tags pl
 nativeLanguage Finnish
+
+writtenIn python markdown css
+repoStats
+ firstCommit 2017
+ commits 228
+ committers 4
+ files 31
+ newestCommit 2018
 
 example
   Pienen luvun kertoma on
@@ -29,12 +38,3 @@ githubRepo https://github.com/fergusq/tampio
  updated 2022
  description Tampio: An object-oriented programming language made to resemble Finnish
  issues 0
-
-repoStats
- firstCommit 2017
- commits 228
- committers 4
- files 31
- newestCommit 2018
-
-writtenIn python markdown css

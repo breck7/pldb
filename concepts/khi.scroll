@@ -1,9 +1,19 @@
 import ../code/conceptPage.scroll
+
 id khi
 name Khi
-githubRepo https://github.com/khilang/khi
+appeared 2023
 tags dataNotation
+
+writtenIn markdown
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 25
+ committers 2
+ files 19
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/1agpct9/khi_universal_data_format_for_configuration_and/
+
 example
  # Encyclopedia article about aluminium
  
@@ -59,11 +69,5 @@ example
    ...
  
  }
-repoStats
- firstCommit 2023
- newestCommit 2024
- commits 25
- committers 2
- files 19
-appeared 2023
-writtenIn markdown
+
+githubRepo https://github.com/khilang/khi

@@ -1,19 +1,16 @@
 import ../code/conceptPage.scroll
+
 id charity
 name Charity
 appeared 1992
 tags pl
 website http://pll.cpsc.ucalgary.ca/charity1/www/home.html
+
+fileType text
+wordRank 4766
+centralPackageRepositoryCount 0
 country Canada
 originCommunity University of Calgary
-
-hasLineComments true
- % A comment
-hasComments true
- % A comment
-hasSemanticIndentation false
-
-lineCommentToken %
 
 example
  %
@@ -22,6 +19,14 @@ example
  
  data LA(A) -> D = ss: A -> D
                  | ff: -> D.
+
+lineCommentToken %
+
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Charity_(programming_language)
  related linux ml
@@ -33,6 +38,12 @@ wikipedia https://en.wikipedia.org/wiki/Charity_(programming_language)
  dailyPageViews 18
  appeared 1992
 
+hopl https://hopl.info/showlanguage.prx?exp=1540
+
+githubBigQuery Charity
+ repos 10
+ users 7
+
 githubLanguage Charity
  fileExtensions ch
  trendingProjectsCount 0
@@ -40,12 +51,3 @@ githubLanguage Charity
  aceMode text
  tmScope none
  repos 11
-githubBigQuery Charity
- repos 10
- users 7
-
-hopl https://hopl.info/showlanguage.prx?exp=1540
-
-fileType text
-wordRank 4766
-centralPackageRepositoryCount 0

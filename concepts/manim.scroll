@@ -1,24 +1,38 @@
 import ../code/conceptPage.scroll
+
 id manim
 name Manim
 appeared 2015
-tags framework
-demoVideo https://www.youtube.com/3blue1brown
 creators Grant Sanderson
-conceptDescription A community-maintained Python framework for creating mathematical animations
+tags framework
 website https://www.manim.community
-documentation https://docs.manim.community/en/stable
-cheatSheetUrl https://docs.manim.community/en/stable/tutorials/quickstart.html
-fileExtensions .py
-country United States
-originCommunity https://github.com/ManimCommunity
-domainName manim.community
 versions
  2022 v0.17.2
+forLanguages python
+conceptDescription A community-maintained Python framework for creating mathematical animations
 
+isOpenSource true
 writtenIn python restructuredtext svg glsl markdown yaml json javascript ini toml awk css dockerfile make jupyter-notebook bourne-shell tex html
+demoVideo https://www.youtube.com/3blue1brown
+fileExtensions .py
+documentation https://docs.manim.community/en/stable
+packageRepository https://pypi.org/project/manim
+repoStats
+ firstCommit 2015
+ commits 5984
+ committers 468
+ files 1334
+ newestCommit 2024
+country United States
+originCommunity https://github.com/ManimCommunity
 
+subreddit https://www.reddit.com/r/manim
+ memberCount
+  2022 7009
+twitter https://twitter.com/manim_community
+cheatSheetUrl https://docs.manim.community/en/stable/tutorials/quickstart.html
 gource https://www.youtube.com/watch?v=hy-6D650Apo
+
 githubRepo https://github.com/manimCommunity/manim
  firstCommit 2015
  stars 12402
@@ -32,19 +46,4 @@ githubRepo https://github.com/manimCommunity/manim
 wikipedia https://en.wikipedia.org/wiki/3Blue1Brown
  summary 3Blue1Brown is a math YouTube channel created and run by Grant Sanderson. The channel focuses on teaching higher mathematics from a visual perspective, and on the process of discovery and inquiry-based learning in mathematics, which Sanderson calls "inventing math". As of November 2022, the channel has 4.85 million subscribers.
 
-subreddit https://www.reddit.com/r/manim
- memberCount
-  2022 7009
-
-packageRepository https://pypi.org/project/manim
-forLanguages python
-
-twitter https://twitter.com/manim_community
-isOpenSource true
-
-repoStats
- firstCommit 2015
- commits 5984
- committers 468
- files 1334
- newestCommit 2024
+domainName manim.community

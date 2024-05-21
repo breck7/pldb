@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id papyrus
 name Papyrus
 appeared 2015
 tags pl
 conceptDescription Papyrus is an entirely new scripting system created specifically for the Creation Kit. If you've never used a Bethesda toolset before, consider some basic tutorials to get your footing with the Creation Kit in general.
-reference https://www.creationkit.com/index.php?title=Category:Papyrus
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bethesda Softworks LLC
+reference https://www.creationkit.com/index.php?title=Category:Papyrus
+
+languageServerProtocolProject https://github.com/joelday/papyrus-lang
+ writtenIn csharp
 
 wikipedia https://en.wikipedia.org/wiki/Papyrus
  related isbn doi
@@ -18,13 +25,6 @@ wikipedia https://en.wikipedia.org/wiki/Papyrus
  dailyPageViews 868
  appeared 1830
 
-githubLanguage Papyrus
- fileExtensions psc
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.papyrus.skyrim
- repos 3518
 githubBigQuery Papyrus
  repos 79
  users 58
@@ -38,10 +38,13 @@ linguistGrammarRepo https://github.com/Kapiainen/SublimePapyrus
  example
   Scriptname vMFX_FXPlugin extends Quest
   
-languageServerProtocolProject https://github.com/joelday/papyrus-lang
- writtenIn csharp
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0
+
+githubLanguage Papyrus
+ fileExtensions psc
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.papyrus.skyrim
+ repos 3518

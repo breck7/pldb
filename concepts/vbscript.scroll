@@ -1,14 +1,34 @@
 import ../code/conceptPage.scroll
+
 id vbscript
 name VBScript
 appeared 1996
 tags pl
 website https://msdn.microsoft.com/en-us/library/t0aew7h6.aspx
+
+fileExtensions vbs vbe wsf wsc
+fileType text
 documentation http://www.csidata.com/custserv/onlinehelp/VBSdocs/VBSTOC.htm
 documentation https://learn.microsoft.com/en-us/windows/win32/lwef/using-vbscript
-fileExtensions vbs vbe wsf wsc
+codeMirror vbscript
+rosettaCode http://www.rosettacode.org/wiki/Category:VBScript
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
+
+helloWorldCollection VBScript
+ ' Hello World in VBScript (Windows Scripting Host)
+ msgbox "Hello, World!"
+ 
+pygmentsHighlighter VBScript
+ filename basic.py
+ fileExtensions vbs VBS
+subreddit https://reddit.com/r/vbscript
+ memberCount
+  2017 231
+  2022 916
+
+lineCommentToken '
 
 hasComments true
 hasLineComments true
@@ -20,8 +40,6 @@ hasFloats true
  ' [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
 hasIntegers true
  ' [0-9]+
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/VBScript
  example
@@ -53,49 +71,13 @@ wikipedia https://en.wikipedia.org/wiki/VBScript
  appeared 1996
  fileExtensions vbs vbe wsf wsc
 
-githubLanguage VBScript
- type programming
- fileExtensions vbs
- aceMode text
- codemirrorMode vbscript
- codemirrorMimeType text/vbscript
- tmScope source.vbnet
- repos 6076
+hopl https://hopl.info/showlanguage.prx?exp=5226
+tiobe VBScript
+ currentRank 34
+
 githubBigQuery VBScript
  repos 339
  users 327
-
-codeMirror vbscript
-pygmentsHighlighter VBScript
- filename basic.py
- fileExtensions vbs VBS
-
-helloWorldCollection VBScript
- ' Hello World in VBScript (Windows Scripting Host)
- msgbox "Hello, World!"
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:VBScript
-
-indeedJobs vbscript developer
- 2022 142
-
-subreddit https://reddit.com/r/vbscript
- memberCount
-  2017 231
-  2022 916
-
-tiobe VBScript
- currentRank 34
-hopl https://hopl.info/showlanguage.prx?exp=5226
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Vbscript Programmer's Reference|2004|Adrian W. Kingsley-Hughes|1634718|3.62|37|2
- Microsoft Wsh and VBScript Programming for the Absolute Beginner|2003|Jerry Lee Ford Jr.|6400783|3.22|32|3
- VBScript for Dummies|1996|John Walkenbach|2376231|0.0|0|0
 
 isbndb 37
  year|publisher|title|authors|isbn13
@@ -137,4 +119,22 @@ isbndb 37
  1996|Waite Group Pr|Vbscript Superbible: The Complete Reference To Programming In Microsoft Visual Basic Scripting Edition|Jinjer L. Simon|9781571690814
  1997|Coriolis Group, Llc, The|Vbscript 2 And Activex Programming : Master The Art Of Creating Interactive Web Pages|Scott Palmer|9781576101612
 
+githubLanguage VBScript
+ type programming
+ fileExtensions vbs
+ aceMode text
+ codemirrorMode vbscript
+ codemirrorMimeType text/vbscript
+ tmScope source.vbnet
+ repos 6076
+
+indeedJobs vbscript developer
+ 2022 142
+
 semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Vbscript Programmer's Reference|2004|Adrian W. Kingsley-Hughes|1634718|3.62|37|2
+ Microsoft Wsh and VBScript Programming for the Absolute Beginner|2003|Jerry Lee Ford Jr.|6400783|3.22|32|3
+ VBScript for Dummies|1996|John Walkenbach|2376231|0.0|0|0

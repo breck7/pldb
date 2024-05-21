@@ -1,10 +1,18 @@
 import ../code/conceptPage.scroll
+
 id objdump
 name ObjDump
 appeared 1991
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Cygnus Solutions
+
+pygmentsHighlighter objdump
+ filename asm.py
+ fileExtensions objdump
 
 wikipedia https://en.wikipedia.org/wiki/objdump
  example
@@ -35,21 +43,15 @@ wikipedia https://en.wikipedia.org/wiki/objdump
  revisionCount 52
  dailyPageViews -1
 
-githubLanguage ObjDump
- fileExtensions objdump
- trendingProjectsCount 0
- type data
- aceMode assembly_x86
- tmScope objdump.x86asm
-
-pygmentsHighlighter objdump
- filename asm.py
- fileExtensions objdump
 linguistGrammarRepo https://github.com/nanoant/assembly.tmbundle
  firstCommit 2012
  lastCommit 2014
  committerCount 2
  commitCount 7
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage ObjDump
+ fileExtensions objdump
+ trendingProjectsCount 0
+ type data
+ aceMode assembly_x86
+ tmScope objdump.x86asm

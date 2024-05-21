@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id penguor
 name penguor
 appeared 2020
-tags pl
 creators Carl Schierig
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/eon92a/penguor_my_own_dataoriented_programming_language/
+tags pl
+
+repoStats
+ firstCommit 2021
+ commits 342
+ committers 1
+ files 175
 country Unknown
 originCommunity https://github.com/CozyPenguin/Pave/issues
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/eon92a/penguor_my_own_dataoriented_programming_language/
 
 githubRepo https://github.com/Penguor/PenguorCS
  firstCommit 2021
@@ -17,9 +24,3 @@ githubRepo https://github.com/Penguor/PenguorCS
  updated 2022
  description The compiler for the Pave Language
  issues 0
-
-repoStats
- firstCommit 2021
- commits 342
- committers 1
- files 175

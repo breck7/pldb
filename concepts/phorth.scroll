@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id phorth
 name phorth
 appeared 2016
-tags pl
 creators Joe Jevnik
+tags pl
+
+writtenIn python cpp restructuredtext forth yaml
+repoStats
+ firstCommit 2016
+ commits 13
+ committers 1
+ files 17
+ newestCommit 2018
 country United States
 originCommunity https://github.com/llllllllll/phorth/issues
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/llllllllll/phorth
  description A small forth-like language that targets the CPython VM.
  issues 0
 
-repoStats
- firstCommit 2016
- commits 13
- committers 1
- files 17
- newestCommit 2018
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  13445357|Show HN: Phorth – A Forth-like language on the Python VM|2017-01-20 17:33:17 UTC|1484933597|joejev|14|62
-
-writtenIn python cpp restructuredtext forth yaml

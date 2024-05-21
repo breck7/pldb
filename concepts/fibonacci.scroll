@@ -1,23 +1,17 @@
 import ../code/conceptPage.scroll
+
 id fibonacci
 name Fibonacci
 appeared 1991
-tags pl
 creators Antonio Albano and Giorgio Ghelli and and Renzo Orsini
+tags pl
 conceptDescription Fibonacci is an object-oriented database programming language characterized by static and strong typing, and by new mechanisms for modeling databases in terms of objects with roles, classes, and associations.
-reference https://dl.acm.org/doi/pdf/10.5555/615224.615227
-reference https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
+
+centralPackageRepositoryCount 0
 country Italy
 originCommunity Università di Pisa
-
-hasComments true
- (* query examples *)
-hasMultiLineComments true
- (* A comment
- *)
-hasSemanticIndentation false
-
-multiLineCommentTokens (* *)
+reference https://dl.acm.org/doi/pdf/10.5555/615224.615227
+reference https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
 
 example
  let john = role Person
@@ -36,9 +30,16 @@ example
         "and I was born in " ~ intToString(me.BirthYear);
  end;
 
-hopl https://hopl.info/showlanguage.prx?exp=5759
+multiLineCommentTokens (* *)
 
-centralPackageRepositoryCount 0
+hasComments true
+ (* query examples *)
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+
+hopl https://hopl.info/showlanguage.prx?exp=5759
 
 isbndb 2
  year|publisher|title|authors|isbn13

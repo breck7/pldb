@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id candy
 name Candy
 appeared 2020
-tags pl
 creators Jonas Wanke and Marcel Garus
+tags pl
 website https://github.com/candy-lang/Candy
+
+writtenIn rust markdown yaml toml json typescript c python dart nix make
 fileExtensions candy
+repoStats
+ firstCommit 2020
+ commits 5739
+ committers 13
+ files 443
+ newestCommit 2024
 country Germany
 originCommunity https://github.com/candy-lang/
 
@@ -30,12 +39,3 @@ githubRepo https://github.com/candy-lang/Candy
  created 2020
  updated 2022
  description A sweet programming language that is robust, minimalistic, and expressive.
-
-repoStats
- firstCommit 2020
- commits 5739
- committers 13
- files 443
- newestCommit 2024
-
-writtenIn rust markdown yaml toml json typescript c python dart nix make

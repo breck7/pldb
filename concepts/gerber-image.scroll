@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id gerber-image
 name Gerber Image
 appeared 1980
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 country Belgium
 originCommunity Ucamco
 
@@ -26,15 +30,6 @@ wikipedia https://en.wikipedia.org/wiki/Gerber_format
  dailyPageViews 276
  appeared 2018
 
-githubLanguage Gerber Image
- fileExtensions gbr cmp gbl gbo gbp gbs gko gml gpb gpt gtl gto gtp gts ncl sol
- trendingProjectsCount 0
- type data
- interpreters gerbv gerbview
- aceMode text
- tmScope source.gerber
- aliases rs-274x
-
 linguistGrammarRepo https://github.com/Alhadis/language-pcb
  firstCommit 2017
  lastCommit 2018
@@ -56,5 +51,11 @@ linguistGrammarRepo https://github.com/Alhadis/language-pcb
   M02*
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Gerber Image
+ fileExtensions gbr cmp gbl gbo gbp gbs gko gml gpb gpt gtl gto gtp gts ncl sol
+ trendingProjectsCount 0
+ type data
+ interpreters gerbv gerbview
+ aceMode text
+ tmScope source.gerber
+ aliases rs-274x

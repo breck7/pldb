@@ -1,23 +1,21 @@
 import ../code/conceptPage.scroll
+
 id snobol4
 name SNOBOL4
 appeared 1967
-tags pl
 creators David J. Farber and Ralph E. Griswold
+tags pl
 website https://www.regressive.org/snobol4/
-documentation https://www.regressive.org/snobol4/docs/burks/manual/contents.htm
-reference https://semanticscholar.org/paper/32d6dba909eeb71b93305b407c0332fce43ecc7b
-country United States
-originCommunity Bell Telephone Laboratories
 
 supersetOf snobol3
+tryItOnline snobol4
+documentation https://www.regressive.org/snobol4/docs/burks/manual/contents.htm
+rosettaCode http://www.rosettacode.org/wiki/Category:SNOBOL4
+centralPackageRepositoryCount 0
+country United States
+originCommunity Bell Telephone Laboratories
+reference https://semanticscholar.org/paper/32d6dba909eeb71b93305b407c0332fce43ecc7b
 
 hasComments true
 
-rosettaCode http://www.rosettacode.org/wiki/Category:SNOBOL4
-
-tryItOnline snobol4
-
 hopl https://hopl.info/showlanguage.prx?exp=303
-
-centralPackageRepositoryCount 0

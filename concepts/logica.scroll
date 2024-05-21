@@ -1,25 +1,23 @@
 import ../code/conceptPage.scroll
+
 id logica
 name Logica
 appeared 2020
-tags queryLanguage
 creators Evgeny Skvortsov
-conceptDescription Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
+tags queryLanguage
 website https://logica.dev/
+conceptDescription Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
+
+writtenIn lex python jupyter-notebook markdown json html yaml javascript vim-script protobuf css csv
+compilesTo sql
+repoStats
+ firstCommit 2020
+ commits 873
+ committers 27
+ files 384
+ newestCommit 2024
 country United States
 originCommunity https://github.com/EvgSkv/logica/issues
-domainName logica.dev
- registered 2020
-
-compilesTo sql
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  # Define natural numbers from 1 to 29.
@@ -45,15 +43,17 @@ githubRepo https://github.com/evgskv/logica
  description Logica is a logic programming language that compiles to StandardSQL and runs on Google BigQuery.
  issues 23
 
-repoStats
- firstCommit 2020
- commits 873
- committers 27
- files 384
- newestCommit 2024
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName logica.dev
+ registered 2020
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2008|Springer|Towards Mathematical Philosophy: Papers from the Studia Logica conference Trends in Logic IV|Tshilidzi Marwala; Monica Lagazio|9781402090844
-
-writtenIn lex python jupyter-notebook markdown json html yaml javascript vim-script protobuf css csv

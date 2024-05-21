@@ -1,18 +1,24 @@
 import ../code/conceptPage.scroll
+
 id gleam
 name gleam
 appeared 2016
-tags pl
 creators Louis Pilfold
-conceptDescription Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
+tags pl
 website https://gleam.run/
-reference https://news.ycombinator.com/item?id=22902462
+conceptDescription Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
+
+writtenIn rust gleam toml markdown javascript dockerfile erlang make yaml bourne-shell css html elixir powershell json typescript
+clocExtensions gleam
+repoStats
+ firstCommit 2016
+ commits 6890
+ committers 244
+ files 1743
+ newestCommit 2024
 country United States and United Kingdom
 originCommunity https://github.com/gleam-lang
-domainName gleam.run
- registered 2019
- awisRank
-  2022 3086876
+reference https://news.ycombinator.com/item?id=22902462
 
 githubRepo https://github.com/lpil/gleam
  firstCommit 2016
@@ -24,12 +30,14 @@ githubRepo https://github.com/lpil/gleam
  description ⭐️ A friendly language for building type-safe, scalable systems!
  issues 79
 
-repoStats
- firstCommit 2016
- commits 6890
- committers 244
- files 1743
- newestCommit 2024
+domainName gleam.run
+ registered 2019
+ awisRank
+  2022 3086876
+
+githubBigQuery Gleam
+ repos 2
+ users 2
 
 githubLanguage Gleam
  type programming
@@ -37,9 +45,3 @@ githubLanguage Gleam
  aceMode text
  tmScope source.gleam
  repos 104
-githubBigQuery Gleam
- repos 2
- users 2
-
-clocExtensions gleam
-writtenIn rust gleam toml markdown javascript dockerfile erlang make yaml bourne-shell css html elixir powershell json typescript

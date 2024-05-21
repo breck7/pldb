@@ -1,10 +1,31 @@
 import ../code/conceptPage.scroll
+
 id pawn-scripting-language
 name Pawn
 appeared 1998
 tags pl
+
+writtenIn pascal c assembly-language tex cmake rexx xslt css markdown cpp
+centralPackageRepositoryCount 0
 country The Netherlands
 originCommunity Informatie-Technologisch Bureau CompuPhase
+
+pygmentsHighlighter Pawn
+ filename pawn.py
+ fileExtensions p pwn inc
+leachim6 Pawn
+ filepath p/Pawn.p
+ fileExtensions p
+ example
+  #include <core>
+   
+  main(){
+      print("Hello World");
+  }
+  
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
@@ -17,11 +38,12 @@ hasLineComments true
 hasMultiLineComments true
 hasComments true
 
-printToken print
-stringToken "
-
 wikipedia https://web.archive.org/web/20150408071820/https://en.wikipedia.org/wiki/Pawn_(scripting_language)
  dailyPageViews -1
+
+githubBigQuery Pawn
+ repos 330
+ users 304
 
 githubLanguage Pawn
  type programming
@@ -29,25 +51,3 @@ githubLanguage Pawn
  aceMode text
  tmScope source.pawn
  repos 3270
-githubBigQuery Pawn
- repos 330
- users 304
-
-pygmentsHighlighter Pawn
- filename pawn.py
- fileExtensions p pwn inc
-
-leachim6 Pawn
- filepath p/Pawn.p
- fileExtensions p
- example
-  #include <core>
-   
-  main(){
-      print("Hello World");
-  }
-  
-
-centralPackageRepositoryCount 0
-
-writtenIn pascal c assembly-language tex cmake rexx xslt css markdown cpp

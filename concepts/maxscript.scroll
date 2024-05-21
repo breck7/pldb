@@ -1,13 +1,34 @@
 import ../code/conceptPage.scroll
+
 id maxscript
 name MAXScript
 appeared 1996
 tags pl
-conceptDescription MAXScript is the built-in scripting language in Autodesk 3ds MAX. It can be used to automate repetitive tasks as well as develop new tools and user interfaces.
 website http://docs.autodesk.com/3DSMAX/14/ENU/MAXScript%20Help%202012/
-reference https://dl.acm.org/citation.cfm?id=522752
+conceptDescription MAXScript is the built-in scripting language in Autodesk 3ds MAX. It can be used to automate repetitive tasks as well as develop new tools and user interfaces.
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:MAXScript
+centralPackageRepositoryCount 0
 country United States
 originCommunity Autodesk, Inc
+reference https://dl.acm.org/citation.cfm?id=522752
+
+leachim6 MaxScript
+ filepath m/MaxScript.ms
+ fileExtensions ms
+ example
+  print "Hello World"
+  -- "Hello World"
+  
+  
+  -- Note that MAXScript is expression-based, so simply writing "Hello World" is
+  -- sufficient to echo it for the reader. Like Haskell, all MAXScript expressions
+  -- *must* return values, even if they're unused.
+  
+
+printToken print
+stringToken "
 
 hasComments true
 hasPrintDebugging true
@@ -15,16 +36,8 @@ hasSemanticIndentation false
 hasStrings true
  "Hello world"
 
-printToken print
-stringToken "
+tiobe MAXScript
 
-githubLanguage MAXScript
- fileExtensions ms mcr
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.maxscript
- repos 2084
 githubBigQuery MAXScript
  repos 333
  users 321
@@ -60,27 +73,16 @@ linguistGrammarRepo https://github.com/Alhadis/language-maxscript
   )
   
 
-leachim6 MaxScript
- filepath m/MaxScript.ms
- fileExtensions ms
- example
-  print "Hello World"
-  -- "Hello World"
-  
-  
-  -- Note that MAXScript is expression-based, so simply writing "Hello World" is
-  -- sufficient to echo it for the reader. Like Haskell, all MAXScript expressions
-  -- *must* return values, even if they're unused.
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:MAXScript
-
-tiobe MAXScript
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2000|Sybex Inc|Maxscript and the Sdk for 3d Studio Max|Bicalho, Alexander and Feltman, Simon|9780782127942
  2006|Taylor & Francis|3ds Max Maxscript Essentials|Autodesk|9781136140372
  20130502|Taylor & Francis|3ds Max 8 MAXScript Essentials|Autodesk|9781136142215
+
+githubLanguage MAXScript
+ fileExtensions ms mcr
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.maxscript
+ repos 2084

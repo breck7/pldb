@@ -1,28 +1,22 @@
 import ../code/conceptPage.scroll
+
 id argdown
 name Argdown
 appeared 2014
 tags textMarkup
 website https://argdown.org/
 webRepl https://argdown.org/sandbox/html
+
+writtenIn typescript markdown json javascript svg css html xml bourne-shell stylus powershell
+visualParadigm true
+repoStats
+ firstCommit 2014
+ commits 987
+ committers 6
+ files 661
+ newestCommit 2022
 country Germany
 originCommunity Karlsruhe Institute of Technology
-domainName argdown.org
- registered 2018
-
-visualParadigm true
-
-hasSemanticIndentation true
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- <!-- A comment
- -->
-
-lineCommentToken //
-multiLineCommentTokens <!-- -->
 
 example
   # Welcome to Argdown!
@@ -126,11 +120,17 @@ githubRepo https://github.com/christianvoigt/argdown
  description a simple syntax for complex argumentation
  issues 98
 
-repoStats
- firstCommit 2014
- commits 987
- committers 6
- files 661
- newestCommit 2022
+lineCommentToken //
+multiLineCommentTokens <!-- -->
 
-writtenIn typescript markdown json javascript svg css html xml bourne-shell stylus powershell
+hasSemanticIndentation true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ <!-- A comment
+ -->
+
+domainName argdown.org
+ registered 2018

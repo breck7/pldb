@@ -1,12 +1,13 @@
 import ../code/conceptPage.scroll
+
 id subl
 name SubL
 appeared 1989
 tags pl
-reference https://cyc.com/archives/glossary/subl/
 aka SubLisp
-originCommunity Cycorp
 
 writtenIn allegro-common-lisp
+originCommunity Cycorp
+reference https://cyc.com/archives/glossary/subl/
 
 isLisp true

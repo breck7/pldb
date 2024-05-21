@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id riff
 name Riff
 appeared 2020
-tags pl
 creators Darryl Abbate
+tags pl
 website https://riff.cx
 webRepl https://riff.run
+
+writtenIn markdown c yaml xml make bash
+repoStats
+ firstCommit 2020
+ commits 720
+ committers 1
+ files 148
+ newestCommit 2023
 country United States
 originCommunity https://github.com/riff-lang
 
@@ -18,12 +27,3 @@ githubRepo https://github.com/riff-lang/riff
  updated 2022
  description The Riff interpreter
  issues 55
-
-repoStats
- firstCommit 2020
- commits 720
- committers 1
- files 148
- newestCommit 2023
-
-writtenIn markdown c yaml xml make bash

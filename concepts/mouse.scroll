@@ -1,11 +1,29 @@
 import ../code/conceptPage.scroll
+
 id mouse
 name Mouse
 appeared 1970
 tags pl
 website https://mouse.sourceforge.net
+
+tryItOnline mouse
+fileType text
+wordRank 2382
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://sourceforge.net/p/mouse/mailman
+
+leachim6 Mouse
+ filepath m/Mouse.mse
+ fileExtensions mse
+ example
+  "Hello World"
+  '! !'
+  $
+  
+
+lineCommentToken ~
+stringToken "
 
 hasLineComments true
  ~ A comment
@@ -14,9 +32,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken ~
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Mouse_(programming_language)
  example
@@ -33,21 +48,6 @@ wikipedia https://en.wikipedia.org/wiki/Mouse_(programming_language)
  dailyPageViews 12
  appeared 1970
 
-leachim6 Mouse
- filepath m/Mouse.mse
- fileExtensions mse
- example
-  "Hello World"
-  '! !'
-  $
-  
-
-tryItOnline mouse
-
 hopl https://hopl.info/showlanguage.prx?exp=684
-
-fileType text
-wordRank 2382
-centralPackageRepositoryCount 0
 
 isbndb 0

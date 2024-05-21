@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id coff
 name Common Object File Format
 appeared 1983
 tags binaryExecutable
 standsFor Common Object File Format
+
+fileType binary
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Corporation
 
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/COFF
  backlinksCount 63
  revisionCount 134
  appeared 1983
-
-fileType binary
-centralPackageRepositoryCount 0

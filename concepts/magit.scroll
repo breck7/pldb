@@ -1,18 +1,26 @@
 import ../code/conceptPage.scroll
+
 id magit
 name Magit
 appeared 2013
-tags application
 creators Marius Vollmer
-conceptDescription Magit is a complete text-based user interface to Git. It fills the glaring gap between the Git command-line interface and various GUIs, letting you perform trivial as well as elaborate version control tasks with just a couple of mnemonic key presses
+tags application
 website https://magit.vc/
-documentation https://magit.vc/manual/
-reference https://github.com/magit/magit#readme
-country Unknown
-originCommunity https://emacs.stackexchange.com/questions/tagged/magit
-domainName magit.vc
 versions
  2021 v3.3.0
+conceptDescription Magit is a complete text-based user interface to Git. It fills the glaring gap between the Git command-line interface and various GUIs, letting you perform trivial as well as elaborate version control tasks with just a couple of mnemonic key presses
+
+writtenIn lisp yaml markdown make
+documentation https://magit.vc/manual/
+repoStats
+ firstCommit 2008
+ newestCommit 2024
+ commits 12365
+ committers 389
+ files 127
+country Unknown
+originCommunity https://emacs.stackexchange.com/questions/tagged/magit
+reference https://github.com/magit/magit#readme
 
 githubRepo https://github.com/magit/magit
  stars 57000
@@ -25,10 +33,4 @@ wikipedia https://en.wikipedia.org/wiki/Magit
  example
  related git lisp emacs-lisp
 
-repoStats
- firstCommit 2008
- newestCommit 2024
- commits 12365
- committers 389
- files 127
-writtenIn lisp yaml markdown make
+domainName magit.vc

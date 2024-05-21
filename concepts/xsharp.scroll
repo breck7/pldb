@@ -1,12 +1,11 @@
 import ../code/conceptPage.scroll
+
 id xsharp
 name xsharp
 appeared 2015
 tags pl
-conceptDescription X# is an open source development language for .NET, based on the xBase language.
 website https://www.xsharp.info
-domainName xsharp.info
- registered 2015
+conceptDescription X# is an open source development language for .NET, based on the xBase language.
 
 example
  FUNCTION start AS VOID
@@ -30,3 +29,6 @@ example
   NEXT
   ? Seconds() - f, nI
   WAIT
+
+domainName xsharp.info
+ registered 2015

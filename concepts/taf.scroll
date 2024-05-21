@@ -1,19 +1,20 @@
 import ../code/conceptPage.scroll
+
 id taf
 name taf
 appeared 2012
-tags pl
 creators Manuel Simoni
+tags pl
 conceptDescription A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
+
+writtenIn html javascript css
+repoStats
+ firstCommit 2012
+ commits 13
+ committers 1
+ files 12
+ newestCommit 2013
 reference http://www.manuelsimoni.net/taf/doc/plan.html
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
 
 example
  (define (make-person name email)
@@ -36,11 +37,10 @@ githubRepo https://github.com/manuel/taf
  description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
  issues 0
 
-repoStats
- firstCommit 2012
- commits 13
- committers 1
- files 12
- newestCommit 2013
+lineCommentToken ;
 
-writtenIn html javascript css
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

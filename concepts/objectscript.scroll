@@ -1,13 +1,23 @@
 import ../code/conceptPage.scroll
+
 id objectscript
 name ObjectScript
 appeared 2012
-tags pl
 creators unitpoint
+tags pl
 website http://objectscript.org
-reference https://www.codeproject.com/Articles/466907/%2FArticles%2F466907%2FObjectScript-A-new-programming-language
+
+writtenIn cpp html cmake c bourne-shell xml javascript make css xslt markdown vim-script perl puppet
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 618
+ committers 14
+ files 1224
+ newestCommit 2015
 country Russia
 originCommunity https://github.com/unitpoint/objectscript/issues
+reference https://www.codeproject.com/Articles/466907/%2FArticles%2F466907%2FObjectScript-A-new-programming-language
 
 githubRepo https://github.com/unitpoint/objectscript
  firstCommit 2012
@@ -19,12 +29,11 @@ githubRepo https://github.com/unitpoint/objectscript
  description ObjectScript, OS for short, is a new programming language. It's free, cross-platform, lightweight, embeddable and open-source. It combines the benefits of multiple languages, including: JavaScript, Lua, Ruby, Python and PHP. OS features the syntax of Javascripts, the "multiple results" feature from lua, syntactic shugar from Ruby as well as magic methods from PHP and Ruby - and even more!
  issues 9
 
-repoStats
- firstCommit 2012
- commits 618
- committers 14
- files 1224
- newestCommit 2015
+hopl https://hopl.info/showlanguage.prx?exp=8615
+
+githubBigQuery ObjectScript
+ repos 13
+ users 11
 
 githubLanguage ObjectScript
  type programming
@@ -32,12 +41,3 @@ githubLanguage ObjectScript
  aceMode text
  tmScope source.objectscript
  repos 1054
-githubBigQuery ObjectScript
- repos 13
- users 11
-
-hopl https://hopl.info/showlanguage.prx?exp=8615
-
-centralPackageRepositoryCount 0
-
-writtenIn cpp html cmake c bourne-shell xml javascript make css xslt markdown vim-script perl puppet

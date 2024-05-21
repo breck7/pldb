@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id juvix
 name juvix
 appeared 2017
-tags pl
 creators Christopher Goes
+tags pl
 website https://juvix.org
+
+writtenIn haskell c json yaml markdown ocaml bourne-shell css make javascript dockerfile python xml svg
+repoStats
+ firstCommit 2021
+ commits 1631
+ committers 17
+ files 2880
+ newestCommit 2024
 country Various
 originCommunity https://github.com/anoma/
-domainName juvix.org
- registered 2017
 
 githubRepo https://github.com/cryptiumlabs/juvix
  firstCommit 2017
@@ -20,11 +27,5 @@ githubRepo https://github.com/cryptiumlabs/juvix
  description Juvix empowers developers to write code in a high-level, functional language, compile it to gas-efficient output VM instructions, and formally verify the safety of their contracts prior to deployment and execution.
  issues 57
 
-repoStats
- firstCommit 2021
- commits 1631
- committers 17
- files 2880
- newestCommit 2024
-
-writtenIn haskell c json yaml markdown ocaml bourne-shell css make javascript dockerfile python xml svg
+domainName juvix.org
+ registered 2017

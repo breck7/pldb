@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id url
 name URL
 appeared 1994
-tags schema
 creators Tim Berners-Lee
-documentation https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app
+tags schema
 standsFor Uniform Resource Locator
+
+fileType text
+wordRank 793
+documentation https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/URL
  example
@@ -18,10 +23,6 @@ wikipedia https://en.wikipedia.org/wiki/URL
  backlinksCount 4264
  revisionCount 3008
  appeared 1985
-
-fileType text
-wordRank 793
-centralPackageRepositoryCount 0
 
 isbndb 0
 

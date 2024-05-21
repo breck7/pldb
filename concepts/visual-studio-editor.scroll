@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id visual-studio-editor
 name Visual Studio
 appeared 1997
 tags editor
+
+isOpenSource true
+fileType na
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Microsoft_Visual_Studio
  related visual-studio-code-editor csharp git c visual-basic.net f-sharp javascript typescript xml html css python ruby mumps java jsharp regex uml linq cli-assembly visual-basic visual-foxpro sql asp jvm cil linux vba ml solidity xaml azure microsoft-small-basic
@@ -13,7 +18,3 @@ wikipedia https://en.wikipedia.org/wiki/Microsoft_Visual_Studio
  revisionCount 2769
  dailyPageViews 2156
  appeared 2017
-
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0

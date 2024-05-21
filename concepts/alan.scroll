@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id alan
 name alan
 appeared 2018
 tags pl
 website https://alan-platform.com/pages/tuts/introducing.html
+
+fileType text
+wordRank 3609
+centralPackageRepositoryCount 0
 originCommunity Kjerner
 
 example
@@ -18,7 +23,3 @@ example
    )
  }
  'Active Users':= integer 'n' = count .'Users'?'Active'|'Yes'
-
-fileType text
-wordRank 3609
-centralPackageRepositoryCount 0

@@ -1,22 +1,81 @@
 import ../code/conceptPage.scroll
+
 id c3
 name C3
 appeared 2019
-tags pl
 creators Christoffer Lernö
-conceptDescription C3 is a programming language that builds on the syntax and semantics of the C language, with the goal of evolving it while still retaining familiarity for C programmers.
+tags pl
 website http://www.c3-lang.org/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdpuki/
-reference https://news.ycombinator.com/item?id=32005678
+conceptDescription C3 is a programming language that builds on the syntax and semantics of the C language, with the goal of evolving it while still retaining familiarity for C programmers.
+
+isOpenSource true
+writtenIn c markdown json yaml python yacc cmake cpp lex bourne-shell dockerfile make
+influencedBy c2 c
+officialBlogUrl https://c3.handmade.network/blog
 fileExtensions c3 c3i
+rosettaCode https://rosettacode.org/wiki/Category:C3
+repoStats
+ firstCommit 2019
+ commits 1788
+ committers 57
+ files 1215
+ newestCommit 2024
 country Sweden
 originCommunity The C3 Language Project
-domainName c3-lang.org
- registered 2019
- awisRank
-  2022 6109240
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdpuki/
+reference https://news.ycombinator.com/item?id=32005678
 
-influencedBy c2 c
+example
+ module stack <Type>;
+ // Above: the parameterized type is applied to the entire module.
+ import std::mem;
+ 
+ struct Stack
+ {
+     usize capacity;
+     usize size;
+     Type* elems;
+ }
+ 
+ // The type methods offers dot syntax calls,
+ // so this function can either be called
+ // Stack.push(&my_stack, ...) or
+ // my_stack.push(...)
+ fn void Stack.push(Stack* this, Type element)
+ {
+     if (this.capacity == this.size)
+     {
+         this.capacity *= 2;
+         this.elems = mem::realloc(this.elems, $sizeof(Type) * this.capacity);
+     }
+     this.elems[this.size++] = element;
+ }
+ 
+ fn Type Stack.pop(Stack* this)
+ {
+     assert(this.size > 0);
+     return this.elems[--this.size];
+ }
+ 
+ fn bool Stack.empty(Stack* this)
+ {
+     return !this.size;
+ }
+twitter https://twitter.com/C3Lang
+
+githubRepo https://github.com/c3lang/c3c
+ firstCommit 2019
+ stars 886
+ subscribers 19
+ created 2019
+ updated 2023
+ issues 41
+ forks 49
+ description The C3 compiler.
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
 
 hasLineComments true
  // A comment
@@ -216,73 +275,10 @@ hasSwitch true
     default:
        foo();
  }
- 
 
-lineCommentToken //
-multiLineCommentTokens /* */
-booleanTokens true false
-
-example
- module stack <Type>;
- // Above: the parameterized type is applied to the entire module.
- import std::mem;
- 
- struct Stack
- {
-     usize capacity;
-     usize size;
-     Type* elems;
- }
- 
- // The type methods offers dot syntax calls,
- // so this function can either be called
- // Stack.push(&my_stack, ...) or
- // my_stack.push(...)
- fn void Stack.push(Stack* this, Type element)
- {
-     if (this.capacity == this.size)
-     {
-         this.capacity *= 2;
-         this.elems = mem::realloc(this.elems, $sizeof(Type) * this.capacity);
-     }
-     this.elems[this.size++] = element;
- }
- 
- fn Type Stack.pop(Stack* this)
- {
-     assert(this.size > 0);
-     return this.elems[--this.size];
- }
- 
- fn bool Stack.empty(Stack* this)
- {
-     return !this.size;
- }
-
-githubRepo https://github.com/c3lang/c3c
- firstCommit 2019
- stars 886
- subscribers 19
- created 2019
- updated 2023
- issues 41
- forks 49
- description The C3 compiler.
-
-repoStats
- firstCommit 2019
- commits 1788
- committers 57
- files 1215
- newestCommit 2024
-
-rosettaCode https://rosettacode.org/wiki/Category:C3
-
-officialBlogUrl https://c3.handmade.network/blog
-
-twitter https://twitter.com/C3Lang
-isOpenSource true
+domainName c3-lang.org
+ registered 2019
+ awisRank
+  2022 6109240
 
 semanticScholar 0
-
-writtenIn c markdown json yaml python yacc cmake cpp lex bourne-shell dockerfile make

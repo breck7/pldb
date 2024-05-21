@@ -1,14 +1,63 @@
 import ../code/conceptPage.scroll
+
 id visual-basic
 name Visual Basic
 appeared 1991
 tags pl
 website https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
-documentation https://learn.microsoft.com/en-us/dotnet/visual-basic/
 aka vb
 aka VisualBasic
+
+clocExtensions BAS bas ctl dsr frm FRX frx VBHTML vbhtml vbp vbw cls
+fileType text
+documentation https://learn.microsoft.com/en-us/dotnet/visual-basic/
+antlr https://github.com/antlr/grammars-v4/tree/master/vb6
+monaco vb
+quineRelay Visual Basic
+centralPackageRepositoryCount 0
+ubuntuPackage mono-vbnc
 country United States
 originCommunity Microsoft
+
+rijuRepl https://riju.codes/visualbasic
+ example
+  Module Main
+      Sub Main(args As String())
+          Console.WriteLine("Hello, world!")
+      End Sub
+  End Module
+  
+subreddit https://reddit.com/r/visualbasic
+ memberCount
+  2017 3474
+  2022 7807
+leachim6 Visual Basic
+ filepath v/Visual Basic.vb
+ example
+  Module HelloWorld
+      Sub Main()
+          MsgBox("Hello World")
+      End Sub
+  End Module
+compilerExplorer Visual Basic
+ example
+  Module Program
+      Function Square(num As Integer) As Integer
+          Return num * num
+      End Function
+  End Module
+  
+
+meetup https://www.meetup.com/topics/vb
+ memberCount 12487
+ groupCount 21
+keywords AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
+
+lineCommentToken '
+multiLineCommentTokens /* */
+printToken Console.WriteLine
+stringToken "
+booleanTokens True False
 
 hasDirectives true
  Option Explicit On|Off
@@ -23,13 +72,6 @@ hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers true
 hasStrings true
 hasBooleans true
-
-lineCommentToken '
-multiLineCommentTokens /* */
-printToken Console.WriteLine
-stringToken "
-booleanTokens True False
-keywords AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic
  example
@@ -52,67 +94,24 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Basic
  revisionCount 4052
  appeared 1991
 
+hopl https://hopl.info/showlanguage.prx?exp=1374
+tiobe Visual Basic
+ currentRank 6
+pypl Visual Basic
+
 githubBigQuery Visual Basic
  repos 10510
  users 9062
 
-antlr https://github.com/antlr/grammars-v4/tree/master/vb6
-monaco vb
 linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
  firstCommit 2012
  lastCommit 2017
  committerCount 4
  commitCount 61
 
-leachim6 Visual Basic
- filepath v/Visual Basic.vb
- example
-  Module HelloWorld
-      Sub Main()
-          MsgBox("Hello World")
-      End Sub
-  End Module
-quineRelay Visual Basic
-
-compilerExplorer Visual Basic
- example
-  Module Program
-      Function Square(num As Integer) As Integer
-          Return num * num
-      End Function
-  End Module
-  
-rijuRepl https://riju.codes/visualbasic
- example
-  Module Main
-      Sub Main(args As String())
-          Console.WriteLine("Hello, world!")
-      End Sub
-  End Module
-  
+isbndb 0
 
 indeedJobs visual basic engineer
  2017 3294
 
-subreddit https://reddit.com/r/visualbasic
- memberCount
-  2017 3474
-  2022 7807
-meetup https://www.meetup.com/topics/vb
- memberCount 12487
- groupCount 21
-
-tiobe Visual Basic
- currentRank 6
-hopl https://hopl.info/showlanguage.prx?exp=1374
-pypl Visual Basic
-
-ubuntuPackage mono-vbnc
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
-
 semanticScholar 0
-
-clocExtensions BAS bas ctl dsr frm FRX frx VBHTML vbhtml vbp vbw cls

@@ -1,16 +1,47 @@
 import ../code/conceptPage.scroll
+
 id flow9
 name Flow9
 appeared 2010
-tags pl
 creators Dmitry Solomennikov
-conceptDescription The flow programming language, a safe, functional strongly-typed programming language
+tags pl
 website https://flow9.org/
-reference https://news.ycombinator.com/item?id=19769410
+conceptDescription The flow programming language, a safe, functional strongly-typed programming language
+
+writtenIn c cpp haxe nim javascript bourne-shell xml java markdown objective-c html json python csharp typescript make css bash objective-cpp d glsl yaml wasm qt m4 lisp clojure ruby assembly-language dockerfile cmake cson smalltalk php ocaml awk ini gradle vim-script tex sas xaml svg swift perl diff
+monaco flow9
+repoStats
+ firstCommit 2018
+ commits 12441
+ committers 210
+ files 7078
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/area9innovation
-domainName flow9.org
- registered 2017
+reference https://news.ycombinator.com/item?id=19769410
+
+example
+ import runtime;
+ 
+ main() {
+ 	println("Hello world");
+ }
+
+keywords import require export forbid native if else cast unsafe switch default
+githubRepo https://github.com/area9innovation/flow9
+ firstCommit 2018
+ stars 535
+ forks 30
+ subscribers 57
+ created 2018
+ updated 2022
+ description Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface
+ issues 41
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+includeToken import
 
 hasStrings true
 hasLineComments true
@@ -25,36 +56,5 @@ hasImports true
 hasSwitch true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
-includeToken import
-keywords import require export forbid native if else cast unsafe switch default
-
-example
- import runtime;
- 
- main() {
- 	println("Hello world");
- }
-
-githubRepo https://github.com/area9innovation/flow9
- firstCommit 2018
- stars 535
- forks 30
- subscribers 57
- created 2018
- updated 2022
- description Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface
- issues 41
-
-repoStats
- firstCommit 2018
- commits 12441
- committers 210
- files 7078
- newestCommit 2024
-
-monaco flow9
-
-writtenIn c cpp haxe nim javascript bourne-shell xml java markdown objective-c html json python csharp typescript make css bash objective-cpp d glsl yaml wasm qt m4 lisp clojure ruby assembly-language dockerfile cmake cson smalltalk php ocaml awk ini gradle vim-script tex sas xaml svg swift perl diff
+domainName flow9.org
+ registered 2017

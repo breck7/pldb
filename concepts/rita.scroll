@@ -1,14 +1,24 @@
 import ../code/conceptPage.scroll
+
 id rita
 name Rita
 appeared 2019
-tags pl
 creators Šarūnas Navickas
+tags pl
+
+writtenIn python markdown yaml restructuredtext ini svg toml make
+repoStats
+ firstCommit 2019
+ commits 611
+ committers 9
+ files 78
+ newestCommit 2022
 country Lithuania
 originCommunity https://github.com/zaibacu/rita-dsl/issues
 
-hasLineComments true
-hasComments true
+pygmentsHighlighter Rita
+ filename rita.py
+ fileExtensions rita
 
 githubRepo https://github.com/zaibacu/rita-dsl
  firstCommit 2019
@@ -20,15 +30,5 @@ githubRepo https://github.com/zaibacu/rita-dsl
  description A Domain Specific Language (DSL) for building language patterns. These can be later compiled into spaCy patterns, pure regex, or any other format
  issues 7
 
-repoStats
- firstCommit 2019
- commits 611
- committers 9
- files 78
- newestCommit 2022
-
-pygmentsHighlighter Rita
- filename rita.py
- fileExtensions rita
-
-writtenIn python markdown yaml restructuredtext ini svg toml make
+hasLineComments true
+hasComments true

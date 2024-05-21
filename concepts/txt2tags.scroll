@@ -1,14 +1,16 @@
 import ../code/conceptPage.scroll
+
 id txt2tags
 name Txt2tags
 appeared 2001
-tags textMarkup
 creators Aurelio Jargas and Florent Gallaire and Jendrik Seipp
+tags textMarkup
 website http://txt2tags.org/
-domainName txt2tags.org
- registered 2010
 
+isOpenSource true
 relatedConcepts asciidoc dokuwiki moinmoin
+fileType text
+centralPackageRepositoryCount 0
 
 example
  **bold text**
@@ -31,6 +33,5 @@ wikipedia https://en.wikipedia.org/wiki/Txt2tags
  dailyPageViews 8
  appeared 2010
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName txt2tags.org
+ registered 2010

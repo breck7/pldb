@@ -1,11 +1,14 @@
 import ../code/conceptPage.scroll
+
 id snql
 name SNQL: A Social Network Query and Transformation Language
 appeared 2011
 tags queryLanguage
-reference http://ceur-ws.org/Vol-749/paper18.pdf
+
+centralPackageRepositoryCount 0
 country Chile and United Kingdom
 originCommunity Universidad de Chile and University of London
+reference http://ceur-ws.org/Vol-749/paper18.pdf
 
 example
  CONSTRUCT CP1
@@ -14,5 +17,3 @@ example
   AND (TC(A1, A2, EP1) WITH L1=’John’)
   AND (TC(A1, A5, EP3) WITH L1=’John’)
  FROM FriendshipNetwork
-
-centralPackageRepositoryCount 0

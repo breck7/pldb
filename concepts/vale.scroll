@@ -1,22 +1,23 @@
 import ../code/conceptPage.scroll
+
 id vale
 name Vale
 appeared 2020
 tags pl
 website https://vale.dev/
-domainName vale.dev
- registered 2019
- awisRank
-  2022 5247978
 
-hasPrintDebugging true
-
-printToken println
+repoStats
+ firstCommit 2020
+ commits 2122
+ committers 25
+ files 1042
+ newestCommit 2024
 
 example
  exported func main() {
    println("Hello world!");
  }
+twitter https://twitter.com/vale_pl
 
 githubRepo https://github.com/ValeLang/Vale
  firstCommit 2020
@@ -28,13 +29,13 @@ githubRepo https://github.com/ValeLang/Vale
  description Compiler for the Vale programming language - http://vale.dev/
  issues 211
 
-repoStats
- firstCommit 2020
- commits 2122
- committers 25
- files 1042
- newestCommit 2024
+printToken println
 
-twitter https://twitter.com/vale_pl
+hasPrintDebugging true
+
+domainName vale.dev
+ registered 2019
+ awisRank
+  2022 5247978
 
 isbndb 0

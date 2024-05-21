@@ -1,20 +1,48 @@
 import ../code/conceptPage.scroll
+
 id nemerle
 name Nemerle
 appeared 2003
+creators Krzysztof Czarnecki
 tags pl
 website http://nemerle.org
-fileExtensions n
-originCommunity JetBrains
-domainName nemerle.org
- registered 2003
- awisRank
-  2022 9445077
-  2017 10979387
 
 influencedBy csharp ml lisp
-
+fileExtensions n
 visualParadigm false
+clocExtensions n
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Nemerle
+centralPackageRepositoryCount 0
+originCommunity JetBrains
+projectEuler Nemerle
+ memberCount
+  2019 9
+  2022 10
+
+helloWorldCollection Nemerle
+ // Hello World in Nemerle (a functional programming language for .NET)
+ 
+ System.Console.WriteLine("Hello World");
+ 
+pygmentsHighlighter Nemerle
+ filename dotnet.py
+ fileExtensions n
+leachim6 Nemerle
+ filepath n/Nemerle.n
+ fileExtensions n
+ example
+  class Hello
+  {
+      static Main () : void
+      {
+          System.Console.WriteLine ("Hello World");
+      }
+  }
+
+lineCommentToken //
+printToken System.Console.WriteLine
+stringToken "
 
 hasComments true
 hasSemanticIndentation true
@@ -54,10 +82,6 @@ hasPrintDebugging true
 hasStrings true
  "Hello world"
 
-lineCommentToken //
-printToken System.Console.WriteLine
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/Nemerle
  example
   using System;
@@ -87,20 +111,19 @@ wikipedia https://en.wikipedia.org/wiki/Nemerle
  appeared 2003
  fileExtensions n
 
-githubLanguage Nemerle
- fileExtensions n
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.nemerle
- repos 177
+hopl https://hopl.info/showlanguage.prx?exp=8336
+tiobe Nemerle
+
+domainName nemerle.org
+ registered 2003
+ awisRank
+  2022 9445077
+  2017 10979387
+
 githubBigQuery Nemerle
  repos 286
  users 257
 
-pygmentsHighlighter Nemerle
- filename dotnet.py
- fileExtensions n
 linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
  firstCommit 2006
  lastCommit 2012
@@ -118,37 +141,14 @@ linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
      }
   }
 
-projectEuler Nemerle
- memberCount
-  2019 9
-  2022 10
-helloWorldCollection Nemerle
- // Hello World in Nemerle (a functional programming language for .NET)
- 
- System.Console.WriteLine("Hello World");
- 
-leachim6 Nemerle
- filepath n/Nemerle.n
- fileExtensions n
- example
-  class Hello
-  {
-      static Main () : void
-      {
-          System.Console.WriteLine ("Hello World");
-      }
-  }
-rosettaCode http://www.rosettacode.org/wiki/Category:Nemerle
-
-tiobe Nemerle
-hopl https://hopl.info/showlanguage.prx?exp=8336
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Nemerle
+ fileExtensions n
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.nemerle
+ repos 177
 
-creators Krzysztof Czarnecki
-clocExtensions n
+semanticScholar 0

@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ambienttalk
 name AmbientTalk
 appeared 2006
 tags pl
 website https://code.google.com/p/ambienttalk
+
 country Belgium
 originCommunity Vrije Universiteit
+
+pygmentsHighlighter AmbientTalk
+ filename ambient.py
+ fileExtensions at
+example
+ when: ChatService discovered: { |chatService| when: chatService<-login(roomID, username) becomes: { |chatRoom| chatRoom<-chat("hello world"); // async message send whenever: chatRoom disconnected: { system.println("you're offline"); }; whenever: chatRoom reconnected: { system.println("you're online again"); }; }; };
+
+stringToken "
 
 hasStrings true
  "Hello world"
@@ -14,15 +24,6 @@ hasIntegers true
 hasLineComments true
 hasMultiLineComments true
 hasComments true
-
-stringToken "
-
-example
- when: ChatService discovered: { |chatService| when: chatService<-login(roomID, username) becomes: { |chatRoom| chatRoom<-chat("hello world"); // async message send whenever: chatRoom disconnected: { system.println("you're offline"); }; whenever: chatRoom reconnected: { system.println("you're online again"); }; }; };
-
-pygmentsHighlighter AmbientTalk
- filename ambient.py
- fileExtensions at
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

@@ -1,18 +1,28 @@
 import ../code/conceptPage.scroll
+
 id s-plus
 name S-PLUS
 appeared 1988
 tags pl
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity TIBCO Software Inc
+
+helloWorldCollection S-PLUS
+ # Hello World for S-Plus
+ cat("Hello world\n")
+ 
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/S-PLUS
  related unix linux s excel-app spss solaris eclipse-editor r
@@ -24,15 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/S-PLUS
  revisionCount 81
  appeared 1988
 
-helloWorldCollection S-PLUS
- # Hello World for S-Plus
- cat("Hello world\n")
- 
-
 tiobe S-PLUS
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
 
 semanticScholar 0

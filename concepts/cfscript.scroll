@@ -1,16 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cfscript
 name CFScript
 appeared 1999
 tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/CFScript
  example
@@ -28,5 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/CFScript
  revisionCount 68
  dailyPageViews 7
  appeared 2006
-
-centralPackageRepositoryCount 0

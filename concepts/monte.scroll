@@ -1,23 +1,35 @@
 import ../code/conceptPage.scroll
+
 id monte
 name monte
 appeared 2014
 tags pl
 conceptDescription <a href='https://github.com/monte-language'>Monte</a> is a dynamic programming language inspired by Python and E.
+
+isOpenSource true
+writtenIn restructuredtext mathematica python json haskell xml make lisp css yaml markdown nix html
+fileType text
+wordRank 8540
+rosettaCode http://www.rosettacode.org/wiki/Category:Monte
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 1029
+ committers 22
+ files 76
+ newestCommit 2020
 country United States
 originCommunity https://github.com/monte-language
 
-hasComments true
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-
-printToken traceln
-stringToken "
+pygmentsHighlighter Monte
+ filename monte.py
+ fileExtensions mt
+leachim6 Monte
+ filepath m/Monte.mt
+ fileExtensions mt
+ example
+  traceln("Hello World")
+  
 
 githubRepo https://github.com/monte-language/monte
  stars 72
@@ -29,29 +41,17 @@ githubRepo https://github.com/monte-language/monte
  description A dynamic language inspired by Python and E.
  issues 12
 
-repoStats
- firstCommit 2008
- commits 1029
- committers 22
- files 76
- newestCommit 2020
+printToken traceln
+stringToken "
 
-pygmentsHighlighter Monte
- filename monte.py
- fileExtensions mt
-
-leachim6 Monte
- filepath m/Monte.mt
- fileExtensions mt
- example
-  traceln("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Monte
-
-fileType text
-wordRank 8540
-isOpenSource true
-centralPackageRepositoryCount 0
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 isbndb 15
  year|publisher|title|authors|isbn13
@@ -70,5 +70,3 @@ isbndb 15
  2005|Duxbury Press|A First Course in Monte Carlo|Fishman, George|9780534420468
  2012|Springer|A Monte Carlo Primer: A Practical Approach to Radiation Transport|Dupree, Stephen A. and Fraley, Stanley K.|9781441984913
  2012|Springer|Monte Carlo Simulation in Statistical Physics: An Introduction (Graduate Texts in Physics)|Binder, Kurt|9783642264467
-
-writtenIn restructuredtext mathematica python json haskell xml make lisp css yaml markdown nix html

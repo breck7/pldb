@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id wing
 name Wing
 appeared 2022
-tags pl
 creators Elad Ben-Israel
+tags pl
 website https://winglang.io
+
+writtenIn markdown typescript json rust yaml javascript toml html css python diff svg jsx bourne-shell scheme dockerfile c go make hcl swift cpp
 documentation https://docs.winglang.io
+repoStats
+ firstCommit 2022
+ commits 4857
+ committers 111
+ files 3006
+ newestCommit 2024
 
 example
  bring cloud;
@@ -28,12 +37,3 @@ githubRepo https://github.com/winglang/wing
  updated 2023
  description The Wing Programming Language
  issues 330
-
-repoStats
- firstCommit 2022
- commits 4857
- committers 111
- files 3006
- newestCommit 2024
-
-writtenIn markdown typescript json rust yaml javascript toml html css python diff svg jsx bourne-shell scheme dockerfile c go make hcl swift cpp

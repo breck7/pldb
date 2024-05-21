@@ -1,15 +1,31 @@
 import ../code/conceptPage.scroll
+
 id mxml
 name MXML
 appeared 2004
 tags xmlFormat
+
+clocExtensions mxml
+centralPackageRepositoryCount 0
 country United States
 originCommunity Adobe Inc
 
-hasStrings true
- "Hello world"
+pygmentsHighlighter MXML
+ filename actionscript.py
+ fileExtensions mxml
+leachim6 MXML
+ filepath m/MXML.mxml
+ fileExtensions mxml
+ example
+  <?xml version="1.0" encoding="utf-8"?>
+  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+  <mx:Label text="Hello World"/>
+  </mx:Application>
 
 stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/MXML
  example
@@ -30,20 +46,3 @@ wikipedia https://en.wikipedia.org/wiki/MXML
  revisionCount 124
  dailyPageViews 32
  appeared 2002
-
-pygmentsHighlighter MXML
- filename actionscript.py
- fileExtensions mxml
-
-leachim6 MXML
- filepath m/MXML.mxml
- fileExtensions mxml
- example
-  <?xml version="1.0" encoding="utf-8"?>
-  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
-  <mx:Label text="Hello World"/>
-  </mx:Application>
-
-centralPackageRepositoryCount 0
-
-clocExtensions mxml

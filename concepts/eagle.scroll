@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id eagle
 name Eagle
 appeared 1988
 tags application
+
+fileType text
+wordRank 4196
+centralPackageRepositoryCount 0
 country United States
 originCommunity Autodesk, Inc.
 
@@ -16,14 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/EAGLE_(program)
  dailyPageViews 177
  appeared 1988
 
-githubLanguage Eagle
- fileExtensions sch brd
- trendingProjectsCount 0
- type data
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml
 githubBigQuery Eagle
  repos 2082
  users 1788
@@ -67,6 +64,11 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
   <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
   <layer number="21" name="tPlace" color="7" fill="1" visible="yes" act
 
-fileType text
-wordRank 4196
-centralPackageRepositoryCount 0
+githubLanguage Eagle
+ fileExtensions sch brd
+ trendingProjectsCount 0
+ type data
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml

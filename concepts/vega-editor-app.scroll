@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id vega-editor-app
 name vega-editor-app
 appeared 2015
 tags application
 website https://vega.github.io/editor/
+
+writtenIn typescript css json yaml bourne-shell markdown html diff
+repoStats
+ firstCommit 2015
+ commits 2272
+ committers 56
+ files 781
+ newestCommit 2024
 
 githubRepo https://github.com/vega/editor
  firstCommit 2015
@@ -14,11 +23,3 @@ githubRepo https://github.com/vega/editor
  updated 2022
  description Editor/IDE for Vega and Vega-Lite
  issues 22
-
-repoStats
- firstCommit 2015
- commits 2272
- committers 56
- files 781
- newestCommit 2024
-writtenIn typescript css json yaml bourne-shell markdown html diff

@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id mages
 name mages
 appeared 2016
-tags pl
 creators Florian Rappl
+tags pl
+
+writtenIn csharp markdown xml yaml powershell bourne-shell
+repoStats
+ firstCommit 2016
+ commits 641
+ committers 6
+ files 373
+ newestCommit 2024
 country Germany
 originCommunity https://github.com/FlorianRappl/Mages/issues
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/FlorianRappl/Mages
  description :tophat: MAGES is a very simple, yet powerful, expression parser and interpreter.
  issues 4
 
-repoStats
- firstCommit 2016
- commits 641
- committers 6
- files 373
- newestCommit 2024
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  12071980|Show HN: A lightweight .NET-based scripting language|2016-07-11 16:03:22 UTC|1468253002|FlorianRappl|0|2
-
-writtenIn csharp markdown xml yaml powershell bourne-shell

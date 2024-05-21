@@ -1,18 +1,26 @@
 import ../code/conceptPage.scroll
+
 id semver
 name Semantic Versioning
 appeared 2011
-tags schema
 creators Tom Preston-Werner
-conceptDescription Semantic versioning (aka SemVer)[1], currently the best known and most widely adopted version scheme in this category, uses a sequence of three digits (Major.Minor.Patch), an optional prerelease tag and optional build meta tag. In this scheme, risk and functionality are the measures of significance. Breaking changes are indicated by increasing the major number (high risk), new non-breaking features increment the minor number (medium risk) and all other non-breaking changes increment the patch number (lowest risk). The presence of a prerelease tag (-alpha, -beta) indicates substantial risk, as does a major number of zero (0.y.z), which is used to indicate a work-in-progress that may contain any level of potentially breaking changes (highest risk).
+tags schema
 website https://semver.org/
 aka SemVer semver
+conceptDescription Semantic versioning (aka SemVer)[1], currently the best known and most widely adopted version scheme in this category, uses a sequence of three digits (Major.Minor.Patch), an optional prerelease tag and optional build meta tag. In this scheme, risk and functionality are the measures of significance. Breaking changes are indicated by increasing the major number (high risk), new non-breaking features increment the minor number (medium risk) and all other non-breaking changes increment the patch number (lowest risk). The presence of a prerelease tag (-alpha, -beta) indicates substantial risk, as does a major number of zero (0.y.z), which is used to indicate a work-in-progress that may contain any level of potentially breaking changes (highest risk).
+
+isOpenSource true
+writtenIn markdown json svg yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 155
+ committers 42
+ files 10
+ newestCommit 2023
 country United States
 originCommunity https://github.com/semver
-domainName semver.org
- registered 2009
- awisRank
-  2022 114374
 
 example
  1.5.12
@@ -27,19 +35,11 @@ githubRepo https://github.com/semver/semver
  description Semantic Versioning Specification
  issues 116
 
-repoStats
- firstCommit 2011
- commits 155
- committers 42
- files 10
- newestCommit 2023
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName semver.org
+ registered 2009
+ awisRank
+  2022 114374
 
 isbndb 0
 
 semanticScholar 0
-
-writtenIn markdown json svg yaml

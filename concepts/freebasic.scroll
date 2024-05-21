@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id freebasic
 name FreeBASIC
 appeared 2004
-tags pl
 creators Andre Victor
+tags pl
+
+rosettaCode http://www.rosettacode.org/wiki/Category:FreeBASIC
+centralPackageRepositoryCount 0
 country Various
 originCommunity The FreeBASIC Development Team
 
@@ -32,6 +36,12 @@ wikipedia https://en.wikipedia.org/wiki/FreeBASIC
  dailyPageViews 156
  appeared 2016
 
+githubBigQuery FreeBasic
+ repos 41
+ users 41
+
+isbndb 0
+
 githubLanguage FreeBasic
  type programming
  fileExtensions bi bas
@@ -41,12 +51,3 @@ githubLanguage FreeBasic
  tmScope source.vbnet
  aliases fb
  repos 535
-githubBigQuery FreeBasic
- repos 41
- users 41
-
-rosettaCode http://www.rosettacode.org/wiki/Category:FreeBASIC
-
-centralPackageRepositoryCount 0
-
-isbndb 0

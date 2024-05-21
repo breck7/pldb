@@ -1,18 +1,33 @@
 import ../code/conceptPage.scroll
+
 id lasso
 name Lasso
 appeared 1995
-tags pl
 creators Kyle Jessup
+tags pl
 website http://www.lassosoft.com
-documentation https://docs.lassox.com/
+
+isOpenSource false
+officialBlogUrl http://www.lassosoft.com/Lasso-News
 fileExtensions lasso LassoApp
+fileType text
+documentation https://docs.lassox.com/
+rosettaCode http://www.rosettacode.org/wiki/Category:Lasso
+centralPackageRepositoryCount 0
 country Canada
 originCommunity LassoSoft Inc
-domainName lassosoft.com
- registered 2005
- awisRank
-  2022 12026019
+
+helloWorldCollection Lasso
+ // Hello world in Lasso
+ 
+ Hello world!
+pygmentsHighlighter Lasso
+ filename javascript.py
+ fileExtensions lasso lasso[89]
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
 
 hasComments true
 hasLineComments true
@@ -22,10 +37,6 @@ hasMultiLineComments true
  */
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken //
-multiLineCommentTokens /* */
-booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
  example
@@ -72,24 +83,17 @@ wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
  appeared 1995
  fileExtensions lasso LassoApp
 
-githubLanguage Lasso
- fileExtensions lasso las lasso8 lasso9
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  plotly dash-sample-apps https://github.com/plotly.png https://github.com/plotly/dash-sample-apps Lasso #999999 172 186 65 "Apps hosted in the Dash Gallery"
- trendingProjectsCount 2
- type programming
- aceMode text
- tmScope file.lasso
- aliases lassoscript
- repos 464
+tiobe Lasso
+
+domainName lassosoft.com
+ registered 2005
+ awisRank
+  2022 12026019
+
 githubBigQuery Lasso
  repos 435
  users 388
 
-pygmentsHighlighter Lasso
- filename javascript.py
- fileExtensions lasso lasso[89]
 linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
  firstCommit 2013
  lastCommit 2014
@@ -312,23 +316,22 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   }
   
 
-helloWorldCollection Lasso
- // Hello world in Lasso
- 
- Hello world!
-rosettaCode http://www.rosettacode.org/wiki/Category:Lasso
+isbndb 0
+
+githubLanguage Lasso
+ fileExtensions lasso las lasso8 lasso9
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  plotly dash-sample-apps https://github.com/plotly.png https://github.com/plotly/dash-sample-apps Lasso #999999 172 186 65 "Apps hosted in the Dash Gallery"
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope file.lasso
+ aliases lassoscript
+ repos 464
 
 indeedJobs lasso engineer
  2022 142
-officialBlogUrl http://www.lassosoft.com/Lasso-News
-
-tiobe Lasso
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId

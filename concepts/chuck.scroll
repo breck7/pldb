@@ -1,22 +1,26 @@
 import ../code/conceptPage.scroll
+
 id chuck
 name Ch
 appeared 2003
-tags pl
 creators Ge Wang
+tags pl
 website http://chuck.cs.princeton.edu
-country United States
-originCommunity chuck team
-domainName chuck.cs.princeton.edu
 
 visualParadigm false
+fileType text
+wordRank 6367
+rosettaCode http://www.rosettacode.org/wiki/Category:ChucK
+centralPackageRepositoryCount 0
+country United States
+originCommunity chuck team
+
+lineCommentToken //
 
 hasComments true
 hasLineComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/ChucK
  example
@@ -46,15 +50,10 @@ wikipedia https://en.wikipedia.org/wiki/ChucK
  revisionCount 319
  appeared 2003
 
-githubLanguage ChucK
- fileExtensions ck
- trendingProjectsCount 0
- type programming
- aceMode java
- codemirrorMode clike
- codemirrorMimeType text/x-java
- tmScope source.java
- repos 571
+tiobe Ch
+
+domainName chuck.cs.princeton.edu
+
 githubBigQuery ChucK
  repos 95
  users 85
@@ -65,12 +64,14 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
  committerCount 21
  commitCount 283
 
-rosettaCode http://www.rosettacode.org/wiki/Category:ChucK
-
-tiobe Ch
-
-fileType text
-wordRank 6367
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage ChucK
+ fileExtensions ck
+ trendingProjectsCount 0
+ type programming
+ aceMode java
+ codemirrorMode clike
+ codemirrorMimeType text/x-java
+ tmScope source.java
+ repos 571

@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id world-of-warcraft-addon-data
 name World of Warcraft Addon Data
 appeared 2012
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference http://wowwiki.wikia.com/wiki/TOC_format
 
 example
@@ -13,14 +17,6 @@ example
  Bob.xml
  Bob.lua
  # comment
-
-githubLanguage World of Warcraft Addon Data
- fileExtensions toc
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.toc
- repos 38
 
 linguistGrammarRepo https://github.com/nebularg/language-toc-wow
  firstCommit 2016
@@ -36,5 +32,10 @@ linguistGrammarRepo https://github.com/nebularg/language-toc-wow
   Vahevia.xml
   Lotus_Vane.lua
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage World of Warcraft Addon Data
+ fileExtensions toc
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.toc
+ repos 38

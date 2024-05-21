@@ -1,15 +1,16 @@
 import ../code/conceptPage.scroll
+
 id tads
 name Text Adventure Development System
 appeared 1988
-tags application
 creators Michael J. Roberts
+tags application
 website http://www.tads.org
 standsFor Text Adventure Development System
-domainName tads.org
- registered 2001
- awisRank
-  2022 2519045
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TADS
  related unix linux inform c pascal java utf-8 z-machine csharp
@@ -21,6 +22,7 @@ wikipedia https://en.wikipedia.org/wiki/TADS
  dailyPageViews 29
  appeared 1988
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName tads.org
+ registered 2001
+ awisRank
+  2022 2519045

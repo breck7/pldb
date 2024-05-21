@@ -1,34 +1,27 @@
 import ../code/conceptPage.scroll
+
 id deno
 name Deno
 appeared 2018
-tags compiler
 creators Ryan Dahl
+tags compiler
 website https://deno.land/
-documentation https://deno.land/manual@v1.27.1/introduction
-country United States
-originCommunity Deno Land Inc
-domainName deno.land
- registered 2018
- awisRank
-  2022 71476
 
 writtenIn typescript javascript rust json markdown toml jsx yaml jupyter-notebook lua css c idl csharp xml powershell dockerfile svg
 relatedConcepts javascript typescript
+documentation https://deno.land/manual@v1.27.1/introduction
+repoStats
+ firstCommit 2018
+ newestCommit 2024
+ commits 14080
+ committers 1006
+ files 5301
+country United States
+originCommunity Deno Land Inc
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken //
-printToken console.log
-stringToken "
-
+subreddit https://reddit.com/r/Deno
+ memberCount
+  2022 8226
 example
  // Imports `serve` from the remote Deno standard library, using URL.
  import { serve } from "https://deno.land/std@v0.21.0/http/server.ts";
@@ -37,8 +30,15 @@ example
  for await (const req of serve({ port: 8000 })) {
      req.respond({ body: "Hello, World!\n" });
  }
-
+twitter https://twitter.com/deno_land
+leachim6 Deno
+ filepath d/Deno.ts
+ fileExtensions ts
+ example
+  console.log("Hello World");
+  
 gource https://www.youtube.com/watch?v=cV1CEnfKtdI
+
 githubRepo https://github.com/denoland/deno
  firstCommit 2018
  stars 84234
@@ -49,20 +49,25 @@ githubRepo https://github.com/denoland/deno
  description A modern runtime for JavaScript and TypeScript.
  issues 924
 
+lineCommentToken //
+printToken console.log
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
 wikipedia https://en.wikipedia.org/wiki/Deno_(software)
 
-leachim6 Deno
- filepath d/Deno.ts
- fileExtensions ts
- example
-  console.log("Hello World");
-  
-
-subreddit https://reddit.com/r/Deno
- memberCount
-  2022 8226
-
-twitter https://twitter.com/deno_land
+domainName deno.land
+ registered 2018
+ awisRank
+  2022 71476
 
 isbndb 2
  year|publisher|title|authors|isbn13
@@ -70,10 +75,3 @@ isbndb 2
  20200916|Springer Nature|Introducing Deno|Fernando Doglio|9781484261972
 
 semanticScholar 0
-
-repoStats
- firstCommit 2018
- newestCommit 2024
- commits 14080
- committers 1006
- files 5301

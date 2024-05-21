@@ -1,17 +1,30 @@
 import ../code/conceptPage.scroll
+
 id blitz3d
 name Blitz3D
 appeared 2001
 tags pl
+
+centralPackageRepositoryCount 0
 country New Zealand
 originCommunity Blitz Research
+
+leachim6 Blitz3D
+ filepath b/Blitz3D.bb
+ fileExtensions bb
+ example
+  ;Blitz3D Hello World demo by MANIAK_dobrii
+  Print "Hello World"
+  WaitKey
+  End
+  
+
+printToken Print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken Print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Blitz3D
  example
@@ -85,15 +98,3 @@ wikipedia https://en.wikipedia.org/wiki/Blitz3D
  revisionCount 27
  dailyPageViews 11
  appeared 2000
-
-leachim6 Blitz3D
- filepath b/Blitz3D.bb
- fileExtensions bb
- example
-  ;Blitz3D Hello World demo by MANIAK_dobrii
-  Print "Hello World"
-  WaitKey
-  End
-  
-
-centralPackageRepositoryCount 0

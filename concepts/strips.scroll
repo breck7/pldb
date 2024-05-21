@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id strips
 name Strips
 appeared 1969
 tags pl
-reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
+
+wordRank 9151
+centralPackageRepositoryCount 0
 country United States
 originCommunity Stanford University
+reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/STRIPS
  example
@@ -50,6 +54,3 @@ wikipedia https://en.wikipedia.org/wiki/STRIPS
  appeared 1971
 
 hopl https://hopl.info/showlanguage.prx?exp=2413
-
-wordRank 9151
-centralPackageRepositoryCount 0

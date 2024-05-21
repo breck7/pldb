@@ -1,14 +1,58 @@
 import ../code/conceptPage.scroll
+
 id pike
 name Pike
 appeared 1994
-tags pl
 creators Fredrik Hübinette
+tags pl
 website https://pike.lysator.liu.se/
+
+isOpenSource true
+tryItOnline pike
+fileType text
+wordRank 9961
 documentation https://pike.lysator.liu.se/docs/man/
+rosettaCode http://www.rosettacode.org/wiki/Category:Pike
+quineRelay Pike
+centralPackageRepositoryCount 0
+ubuntuPackage pike8.0
 country Sweden
 originCommunity Chalmers Datorförening
-domainName pike.lysator.liu.se
+projectEuler Pike
+ memberCount
+  2019 3
+  2022 6
+
+helloWorldCollection Pike
+ // Hello world in Pike (pike.roxen.com)
+ 
+ int main(){
+         write("Hello World!\n");
+ }
+ 
+pygmentsHighlighter Pike
+ filename c_like.py
+ fileExtensions pike pmod
+rijuRepl https://riju.codes/pike
+ example
+  int main()
+  {
+    write("Hello, world!\n");
+    return 0;
+  }
+  
+leachim6 Pike
+ filepath p/Pike.pike
+ fileExtensions pike
+ example
+  int main() {
+      write("Hello World\n");
+      return 0;
+  }
+  
+
+lineCommentToken //
+printToken write
 
 hasComments true
 hasMacros true
@@ -18,9 +62,7 @@ hasLineComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 
-lineCommentToken //
-printToken write
-
+jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
 wikipedia https://en.wikipedia.org/wiki/Pike_(programming_language)
  example
   mixed anything;
@@ -35,21 +77,15 @@ wikipedia https://en.wikipedia.org/wiki/Pike_(programming_language)
  revisionCount 165
  appeared 1994
 
-githubLanguage Pike
- fileExtensions pike pmod
- trendingProjectsCount 0
- type programming
- interpreters pike
- aceMode text
- tmScope source.pike
- repos 145
+hopl https://hopl.info/showlanguage.prx?exp=2369
+tiobe Pike
+
+domainName pike.lysator.liu.se
+
 githubBigQuery Pike
  repos 105
  users 94
 
-pygmentsHighlighter Pike
- filename c_like.py
- fileExtensions pike pmod
 linguistGrammarRepo https://github.com/hww3/pike-textmate
  firstCommit 2014
  lastCommit 2014
@@ -65,51 +101,17 @@ linguistGrammarRepo https://github.com/hww3/pike-textmate
   
   
 
-projectEuler Pike
- memberCount
-  2019 3
-  2022 6
-helloWorldCollection Pike
- // Hello world in Pike (pike.roxen.com)
- 
- int main(){
-         write("Hello World!\n");
- }
- 
-leachim6 Pike
- filepath p/Pike.pike
- fileExtensions pike
- example
-  int main() {
-      write("Hello World\n");
-      return 0;
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Pike
-quineRelay Pike
-
-rijuRepl https://riju.codes/pike
- example
-  int main()
-  {
-    write("Hello, world!\n");
-    return 0;
-  }
-  
-tryItOnline pike
-
-tiobe Pike
-hopl https://hopl.info/showlanguage.prx?exp=2369
-
-ubuntuPackage pike8.0
-jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
-fileType text
-wordRank 9961
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2010||Pike (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786131011245
+
+githubLanguage Pike
+ fileExtensions pike pmod
+ trendingProjectsCount 0
+ type programming
+ interpreters pike
+ aceMode text
+ tmScope source.pike
+ repos 145
 
 semanticScholar 0

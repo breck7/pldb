@@ -1,21 +1,17 @@
 import ../code/conceptPage.scroll
+
 id smt
 name SMT
 appeared 2003
 tags pl
-conceptDescription Common input and output languages for SMT solvers.
 website http://smtlib.cs.uiowa.edu/language.shtml
 standsFor Satisfiability Modulo Theories
+conceptDescription Common input and output languages for SMT solvers.
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity The University of Iowa
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
 
 example
  ; Getting assertions
@@ -38,14 +34,14 @@ example
   ; ()
  (exit)
 
-githubLanguage SMT
- fileExtensions smt2 smt
- trendingProjectsCount 0
- type programming
- interpreters boolector cvc4 mathsat5 opensmt smtinterpol smt-rat stp verit yices2 z3
- aceMode text
- tmScope source.smt
- repos 582
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
 githubBigQuery SMT
  repos 149
  users 130
@@ -78,8 +74,14 @@ linguistGrammarRepo https://github.com/SRI-CSL/SMT.tmbundle.git
   (check-sat)
   (exit)
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage SMT
+ fileExtensions smt2 smt
+ trendingProjectsCount 0
+ type programming
+ interpreters boolector cvc4 mathsat5 opensmt smtinterpol smt-rat stp verit yices2 z3
+ aceMode text
+ tmScope source.smt
+ repos 582
 
 semanticScholar 7
  year|title|doi|citations|influentialCitations|authors|paperId

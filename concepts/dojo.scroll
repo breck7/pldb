@@ -1,27 +1,26 @@
 import ../code/conceptPage.scroll
+
 id dojo
 name Dojo
 appeared 2005
-tags pl
 creators Alex Russal
+tags pl
 website https://dojotoolkit.org/
-documentation https://dojotoolkit.org/documentation/
-originCommunity https://dojotoolkit.org/community/
 
-compilesTo javascript
+isOpenSource true
 writtenIn javascript
+compilesTo javascript
+documentation https://dojotoolkit.org/documentation/
+repoStats
+ firstCommit 2007
+ commits 5364
+ committers 156
+ files 1338
+originCommunity https://dojotoolkit.org/community/
 
 githubRepo https://github.com/dojo/dojo
  stars 15000
  forks 550
  subscribers 164
 
-repoStats
- firstCommit 2007
- commits 5364
- committers 156
- files 1338
-
 wikipedia https://en.wikipedia.org/wiki/Dojo_Toolkit
-
-isOpenSource true

@@ -1,16 +1,52 @@
 import ../code/conceptPage.scroll
+
 id apl
 name APL
 appeared 1964
-tags pl
 creators Kenneth E. Iverson
+tags pl
 webRepl https://tryapl.org/
-documentation https://xosnitc.github.io/apl-spec.html
 standsFor A Programming Language
-country United States
-originCommunity Harvard University
 
 visualParadigm false
+clocExtensions apl apla aplc aplf apli apln aplo dyalog dyapp mipage
+fileType text
+documentation https://xosnitc.github.io/apl-spec.html
+codeMirror apl
+rosettaCode http://www.rosettacode.org/wiki/Category:APL
+replit https://repl.it/languages/apl
+centralPackageRepositoryCount 0
+country United States
+originCommunity Harvard University
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+helloWorldCollection A Programming Language
+ ⍝ Hello World in APL
+ 
+ ⎕←\'Hello World\'
+pygmentsHighlighter APL
+ filename apl.py
+ fileExtensions apl aplf aplo apln aplc apli dyalog
+rijuRepl https://riju.codes/apl
+ example
+  'Hello, world!'
+  
+ description Array-based programming language using large range of special symbols for concision
+ fileExtensions apl
+ gitRepo https://savannah.gnu.org/svn/?group=apl
+leachim6 APL
+ filepath a/APL.apl
+ fileExtensions apl
+ example
+  ⎕←'Hello World'
+  
+  
+
+lineCommentToken ⍝
+stringToken '
 
 hasComments true
 hasGarbageCollection true
@@ -22,9 +58,7 @@ hasSemanticIndentation false
 hasStrings true
  'Hello world'
 
-lineCommentToken ⍝
-stringToken '
-
+jupyterKernel https://github.com/Dyalog/dyalog-jupyter-kernel
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  example
   txt←'<html><body><p>This is <em>emphasized</em> text.</p></body></html>'
@@ -38,24 +72,13 @@ wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  revisionCount 1557
  appeared 1964
 
-githubLanguage APL
- fileExtensions apl dyalog
- trendingProjectsCount 0
- type programming
- interpreters apl aplx dyalog
- aceMode text
- codemirrorMode apl
- codemirrorMimeType text/apl
- tmScope source.apl
- repos 416
+hopl https://hopl.info/showlanguage.prx?exp=18
+tiobe APL
+
 githubBigQuery APL
  repos 95
  users 87
 
-codeMirror apl
-pygmentsHighlighter APL
- filename apl.py
- fileExtensions apl aplf aplo apln aplc apli dyalog
 linguistGrammarRepo https://github.com/Alhadis/language-apl.git
  firstCommit 2016
  lastCommit 2018
@@ -72,46 +95,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-apl.git
   )OFF
   
 
-projectEuler APL/J/K
- memberCount
-  2022 2478
-  2019 332
-helloWorldCollection A Programming Language
- ⍝ Hello World in APL
- 
- ⎕←\'Hello World\'
-leachim6 APL
- filepath a/APL.apl
- fileExtensions apl
- example
-  ⎕←'Hello World'
-  
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:APL
-
-rijuRepl https://riju.codes/apl
- example
-  'Hello, world!'
-  
- description Array-based programming language using large range of special symbols for concision
- fileExtensions apl
- gitRepo https://savannah.gnu.org/svn/?group=apl
-replit https://repl.it/languages/apl
-
-stackOverflowSurvey
- 2021
-  users 536
-  medianSalary 75631
-  fans 568
-  percentageUsing 0.01
-
-tiobe APL
-hopl https://hopl.info/showlanguage.prx?exp=18
-
-jupyterKernel https://github.com/Dyalog/dyalog-jupyter-kernel
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 13
  year|publisher|title|authors|isbn13
  1988|Springer|An Apl Compiler|Timothy Budd|9780387966434
@@ -127,6 +110,24 @@ isbndb 13
  2013|Springer-verlag|Einführung In Die Programmiersprache Apl|Peter P. Bothner and Wolf-Michael Kähler|9783663141617
  1977|Wiley|Introduction To Apl And Computer Programming|Edward Harms|9780471352013
  1992|Crc Press|Encyclopedia Of Microcomputers: Volume 9 - Icon Programming Language To Knowledge-based Systems: Apl Techniques (microcomputers Encyclopedia)|Allen Kent and James G. Williams|9780824727086
+
+githubLanguage APL
+ fileExtensions apl dyalog
+ trendingProjectsCount 0
+ type programming
+ interpreters apl aplx dyalog
+ aceMode text
+ codemirrorMode apl
+ codemirrorMimeType text/apl
+ tmScope source.apl
+ repos 416
+
+stackOverflowSurvey
+ 2021
+  users 536
+  medianSalary 75631
+  fans 568
+  percentageUsing 0.01
 
 semanticScholar 28
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -158,5 +159,3 @@ semanticScholar 28
  1979|Applied APL programming|10.1145/586058.586071|1|0|Michael C. Powell|24ec84c729ffce1b7237efd7d860fcebc9580dc8
  1979|Teaching Mathematics via APL (A Programming Language).|10.5951/MT.72.2.0097|1|0|H. Peelle|e1a1a024f948575b7413d5b7095dc84b189edaa7
  1992|The CTalk programming language: a strategic evolution of APL|10.1145/144045.144088|1|0|J. Girardot|5dc43e3ca62e86deabb707ff14aa6b47a2fd36b9
-
-clocExtensions apl apla aplc aplf apli apln aplo dyalog dyapp mipage

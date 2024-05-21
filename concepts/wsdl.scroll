@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id wsdl
 name WSDL
 appeared 2000
 tags xmlFormat
-documentation https://www.w3.org/TR/2001/NOTE-wsdl-20010315
 standsFor Web Services Description Language
+
+fileType text
+documentation https://www.w3.org/TR/2001/NOTE-wsdl-20010315
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
  example
@@ -72,13 +76,6 @@ wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
  revisionCount 535
  appeared 2000
 
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Wsdl 100 Success Secrets Essentials of Understanding and Applying Web Services Description Language - The XML Based Protocol for Information Exchange in Decentralized and Distributed Environments|2008|Kevin Allen|23405681|0.0|0|0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  2003|Addison Wesley Publishing Company|J2EE Web Services: XML SOAP WSDL UDDI WS-I JAX-RPC JAXR SAAJ JAXP|Monson-Haefel, Richard|9780321146182
@@ -88,3 +85,7 @@ semanticScholar 3
  2013|Revising WSDL Documents: Why and How, Part 2|10.1109/MIC.2013.4|15|0|C. Mateos and M. Crasso and Alejandro Zunino and J. Coscia|f6968aceaf0392f05e7e5414a0e9de282ee3f1fd
  2015|A new customizable security framework for preventing WSDL attacks|10.1109/ISMSC.2015.7594022|5|1|B. Ibrahim and M. Hassan|119d259c521fd02f0c5bf3802efb9afed3775996
  2019|Comparative Study between Web Services Technologies: REST and WSDL|10.1109/3ICT.2019.8910298|1|0|Rashed A. Bahlool and A. Zeki|8b241398fc0f8d2cfd4f83bf6722fcb741ddebd4
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Wsdl 100 Success Secrets Essentials of Understanding and Applying Web Services Description Language - The XML Based Protocol for Information Exchange in Decentralized and Distributed Environments|2008|Kevin Allen|23405681|0.0|0|0

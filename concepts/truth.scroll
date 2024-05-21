@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id truth
 name Truth
 appeared 2019
-tags dataNotation
 creators Paul Gordon
+tags dataNotation
 website https://www.truthlanguage.org/
 
-hasSemanticIndentation true
+writtenIn typescript json markdown bourne-shell
+repoStats
+ firstCommit 2018
+ commits 1378
+ committers 7
+ files 272
+ newestCommit 2020
 
 example
  String
@@ -33,11 +40,4 @@ githubRepo https://github.com/paul-go/Truth
  description A Domain Representation Language
  issues 4
 
-repoStats
- firstCommit 2018
- commits 1378
- committers 7
- files 272
- newestCommit 2020
-
-writtenIn typescript json markdown bourne-shell
+hasSemanticIndentation true

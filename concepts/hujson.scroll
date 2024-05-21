@@ -1,23 +1,21 @@
 import ../code/conceptPage.scroll
+
 id hujson
 name HuJSON
 appeared 2019
-tags dataNotation
 creators David Crawshaw
-reference https://nigeltao.github.io/blog/2021/json-with-commas-comments.html
+tags dataNotation
+
+writtenIn go yaml markdown
+repoStats
+ firstCommit 2019
+ commits 40
+ committers 10
+ files 21
+ newestCommit 2022
 country Various
 originCommunity https://github.com/tailscale
-
-hasLineComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- // A comment
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference https://nigeltao.github.io/blog/2021/json-with-commas-comments.html
 
 githubRepo https://github.com/tailscale/hujson
  firstCommit 2019
@@ -29,11 +27,13 @@ githubRepo https://github.com/tailscale/hujson
  description HuJSON: JSON for Humans (JWCC: JSON w/ comments and trailing commas)
  issues 2
 
-repoStats
- firstCommit 2019
- commits 40
- committers 10
- files 21
- newestCommit 2022
+lineCommentToken //
+multiLineCommentTokens /* */
 
-writtenIn go yaml markdown
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment

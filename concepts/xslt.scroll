@@ -1,31 +1,55 @@
 import ../code/conceptPage.scroll
+
 id xslt
 name XSLT
 appeared 1998
 tags xmlFormat
+
+clocExtensions XSL xsl XSLT xslt
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:XSLT
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter XSLT
+ filename html.py
+ fileExtensions xsl xslt xpl
+rijuRepl https://riju.codes/xslt
+ example
+  <?xml-stylesheet type="text/xml" href="#style"?>
+  <main>
+    <xsl:stylesheet xml:id="style"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    version="1.0">
+      <xsl:template match="main">
+        <xsl:value-of select="data"/>
+      </xsl:template>
+    </xsl:stylesheet>
+    <data>Hello, world!</data>
+  </main>
+  
+leachim6 XSLT
+ filepath x/XSLT.xslt
+ fileExtensions xslt
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+      <xsl:template match="/">
+          <xsl:text>Hello World</xsl:text>
+      </xsl:template>
+  </xsl:stylesheet>
+  
 
 hasComments true
 hasHomoiconicity true
 hasSemanticIndentation false
 hasMultiLineComments true
 
-githubLanguage XSLT
- fileExtensions xslt xsl
- trendingProjectsCount 0
- type programming
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml.xsl
- aliases xsl
- repos 25274
+hopl https://hopl.info/showlanguage.prx?exp=3482
+
 githubBigQuery XSLT
  repos 32204
  users 25643
 
-pygmentsHighlighter XSLT
- filename html.py
- fileExtensions xsl xslt xpl
 linguistGrammarRepo https://github.com/textmate/xml.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -60,39 +84,6 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
   </xsl:stylesheet>
   
 
-leachim6 XSLT
- filepath x/XSLT.xslt
- fileExtensions xslt
- example
-  <?xml version="1.0" encoding="UTF-8"?>
-  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-      <xsl:template match="/">
-          <xsl:text>Hello World</xsl:text>
-      </xsl:template>
-  </xsl:stylesheet>
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:XSLT
-
-rijuRepl https://riju.codes/xslt
- example
-  <?xml-stylesheet type="text/xml" href="#style"?>
-  <main>
-    <xsl:stylesheet xml:id="style"
-                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                    version="1.0">
-      <xsl:template match="main">
-        <xsl:value-of select="data"/>
-      </xsl:template>
-    </xsl:stylesheet>
-    <data>Hello, world!</data>
-  </main>
-  
-
-hopl https://hopl.info/showlanguage.prx?exp=3482
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 24
  year|publisher|title|authors|isbn13
  2002|Sybex|Mastering XSLT|Chuck White|9780782140941
@@ -120,4 +111,13 @@ isbndb 24
  2005||Xslt Cookbook,2e (coversxslt 1.0 And 2.0)|Mangano|9788184040784
  October 2002||Developing Web User Interface Behaviors: Cutting Edge Webtop Programming Using XML, CSS and XSLT|Slovinski|9780789727794
 
-clocExtensions XSL xsl XSLT xslt
+githubLanguage XSLT
+ fileExtensions xslt xsl
+ trendingProjectsCount 0
+ type programming
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml.xsl
+ aliases xsl
+ repos 25274

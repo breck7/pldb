@@ -1,22 +1,22 @@
 import ../code/conceptPage.scroll
+
 id nginx-config
 name Nginx
 appeared 2004
 tags configFormat
+
+isOpenSource true
+fileType text
 documentation https://nginx.org/en/docs/
 documentation https://devdocs.io/nginx/
+codeMirror nginx
+centralPackageRepositoryCount 0
 country Russia
 originCommunity F5, Inc
 
-hasMultiLineComments false
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
-
+pygmentsHighlighter Nginx configuration file
+ filename configs.py
+ fileExtensions nginx.conf
 example
  #user  nobody;
  worker_processes  1;
@@ -50,6 +50,15 @@ example
          }
  }
 
+lineCommentToken #
+
+hasMultiLineComments false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
 wikipedia https://en.wikipedia.org/wiki/Nginx
  related c linux solaris tls wordpress
  summary Nginx (  EN-jin-EKS) (stylized as NGINX, NGiИX or nginx) is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.  The software was created by Igor Sysoev and first publicly released in 2004. A company of the same name was founded in 2011 to provide support and Nginx plus paid software.Nginx is free and open-source software, released under the terms of a BSD-like license. A large fraction of web servers use NGINX, often as a load balancer.
@@ -60,25 +69,10 @@ wikipedia https://en.wikipedia.org/wiki/Nginx
  revisionCount 1044
  appeared 2004
 
-githubLanguage Nginx
- fileExtensions nginx nginxconf vhost
- trendingProjectsCount 0
- type data
- filenames nginx.conf
- aceMode text
- codemirrorMode nginx
- codemirrorMimeType text/x-nginx-conf
- tmScope source.nginx
- aliases nginx configuration file
- repos 5905
 githubBigQuery Nginx
  repos 8529
  users 7652
 
-codeMirror nginx
-pygmentsHighlighter Nginx configuration file
- filename configs.py
- fileExtensions nginx.conf
 linguistGrammarRepo https://github.com/brandonwamboldt/sublime-nginx
  firstCommit 2014
  lastCommit 2018
@@ -329,13 +323,6 @@ linguistGrammarRepo https://github.com/brandonwamboldt/sublime-nginx
   
   } # End of server block.
 
-indeedJobs nginx engineer
- 2022 2884
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 6
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|Nginx Module Extension|Dar, Usama|9781782163046
@@ -344,5 +331,20 @@ isbndb 6
  2013|Packt Publishing|Nginx HTTP Server Second Edition|Nedelcu, Clement|9781782162339
  18-11-2015|Packt Publishing|Nginx HTTP Server|Clement Nedelcu|9781785285912
  2013-12-26|Packt Publishing|Nginx Module Extension|Usama Dar|9781782163053
+
+githubLanguage Nginx
+ fileExtensions nginx nginxconf vhost
+ trendingProjectsCount 0
+ type data
+ filenames nginx.conf
+ aceMode text
+ codemirrorMode nginx
+ codemirrorMimeType text/x-nginx-conf
+ tmScope source.nginx
+ aliases nginx configuration file
+ repos 5905
+
+indeedJobs nginx engineer
+ 2022 2884
 
 semanticScholar 0

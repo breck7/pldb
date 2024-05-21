@@ -1,11 +1,18 @@
 import ../code/conceptPage.scroll
+
 id caffeine
 name Caffeine
 appeared 2012
-tags pl
 creators Roman I. Kuzmin
+tags pl
 website https://github.com/ich/caffeine
+
 fileExtensions coffee
+repoStats
+ firstCommit 2009
+ commits 3581
+ committers 105
+ files 88
 country Russia
 originCommunity https://github.com/ich
 
@@ -16,9 +23,3 @@ githubRepo https://github.com/ich/caffeine
  created 2012
  updated 2013
  description Caffeine extends CoffeeScript.
-
-repoStats
- firstCommit 2009
- commits 3581
- committers 105
- files 88

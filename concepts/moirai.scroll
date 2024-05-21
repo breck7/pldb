@@ -1,14 +1,17 @@
 import ../code/conceptPage.scroll
+
 id moirai
 name Moirai
-githubRepo https://github.com/moirai-lang/moirai-kt
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/1cfnb9t/moirai_programming_language_example_service_with/
+appeared 2020
 tags pl
+
+writtenIn kotlin gradle bourne-shell markdown
 repoStats
  firstCommit 2020
  newestCommit 2024
  commits 103
  committers 2
  files 126
-appeared 2020
-writtenIn kotlin gradle bourne-shell markdown
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/1cfnb9t/moirai_programming_language_example_service_with/
+
+githubRepo https://github.com/moirai-lang/moirai-kt

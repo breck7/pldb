@@ -1,21 +1,20 @@
 import ../code/conceptPage.scroll
+
 id dedukti
 name dedukti
 appeared 2009
 tags pl
 website https://deducteam.github.io
+
+writtenIn ocaml bourne-shell markdown make lisp xml yaml vim-script python
+repoStats
+ firstCommit 2009
+ commits 2777
+ committers 62
+ files 576
+ newestCommit 2024
 country France
 originCommunity https://github.com/Deducteam
-domainName deducteam.github.io
-
-hasComments true
- (; This is a comment ;)
-hasMultiLineComments true
- (; A comment
- ;)
-hasSemanticIndentation false
-
-multiLineCommentTokens (; ;)
 
 example
  Nat: Type.
@@ -37,11 +36,13 @@ githubRepo https://github.com/Deducteam/Dedukti
  description Implementation of the λΠ-calculus modulo rewriting
  issues 35
 
-repoStats
- firstCommit 2009
- commits 2777
- committers 62
- files 576
- newestCommit 2024
+multiLineCommentTokens (; ;)
 
-writtenIn ocaml bourne-shell markdown make lisp xml yaml vim-script python
+hasComments true
+ (; This is a comment ;)
+hasMultiLineComments true
+ (; A comment
+ ;)
+hasSemanticIndentation false
+
+domainName deducteam.github.io

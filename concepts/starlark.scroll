@@ -1,26 +1,23 @@
 import ../code/conceptPage.scroll
+
 id starlark
 name starlark
 appeared 2018
-tags pl
 creators Laurent Le Brun
+tags pl
 conceptDescription The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
-reference https://bazel.build/contribute/policy
+
+writtenIn markdown python bazel yaml bourne-shell
+clocExtensions bazel bzl
+repoStats
+ firstCommit 2018
+ commits 116
+ committers 31
+ files 62
+ newestCommit 2024
 country United States
 originCommunity https://github.com/bazelbuild
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken #
-printToken print
-stringToken "
+reference https://bazel.build/contribute/policy
 
 example
  # Define a number
@@ -58,6 +55,12 @@ example
          print(s if s else i)
  
  fizz_buzz(20)
+leachim6 Starlark
+ filepath s/Starlark.star
+ fileExtensions star
+ example
+  print("Hello World")
+  
 
 githubRepo https://github.com/bazelbuild/starlark
  firstCommit 2018
@@ -69,12 +72,24 @@ githubRepo https://github.com/bazelbuild/starlark
  description Starlark Language
  issues 65
 
-repoStats
- firstCommit 2018
- commits 116
- committers 31
- files 62
- newestCommit 2024
+lineCommentToken #
+printToken print
+stringToken "
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+githubBigQuery Starlark
+ repos 1141
+ users 562
+
+isbndb 0
 
 githubLanguage Starlark
  type programming
@@ -86,18 +101,3 @@ githubLanguage Starlark
  tmScope source.python
  aliases bazel or bzl
  repos 3423
-githubBigQuery Starlark
- repos 1141
- users 562
-
-leachim6 Starlark
- filepath s/Starlark.star
- fileExtensions star
- example
-  print("Hello World")
-  
-
-isbndb 0
-
-clocExtensions bazel bzl
-writtenIn markdown python bazel yaml bourne-shell

@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id tibet
 name tibet
 appeared 1997
 tags framework
-conceptDescription The very, very first Javascript framework ever designed. “...in awe of what you’ve done with JS.” — Brendan Eich, JavaScript’s creator.
 website https://technicalpursuit.com/
-domainName technicalpursuit.com
- registered 1999
+conceptDescription The very, very first Javascript framework ever designed. “...in awe of what you’ve done with JS.” — Brendan Eich, JavaScript’s creator.
+
+writtenIn javascript xhtml css svg xml html xslt json markdown handlebars xsd yaml harbour dockerfile jsx bash bourne-shell z-shell
+repoStats
+ firstCommit 2011
+ commits 16485
+ committers 6
+ files 2795
+ newestCommit 2022
+
+twitter https://twitter.com/tibetjs
 
 githubRepo https://github.com/TechnicalPursuit/TIBET
  firstCommit 2011
@@ -18,12 +27,5 @@ githubRepo https://github.com/TechnicalPursuit/TIBET
  description TIBET: The Desktop to Cloud Platform
  issues 217
 
-twitter https://twitter.com/tibetjs
-
-repoStats
- firstCommit 2011
- commits 16485
- committers 6
- files 2795
- newestCommit 2022
-writtenIn javascript xhtml css svg xml html xslt json markdown handlebars xsd yaml harbour dockerfile jsx bash bourne-shell z-shell
+domainName technicalpursuit.com
+ registered 1999

@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id sgml
 name SGML
 appeared 1986
 tags textMarkup
 standsFor Standard Generalized Markup Language
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
 
@@ -24,15 +28,6 @@ wikipedia https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
 
 hopl https://hopl.info/showlanguage.prx?exp=1435
 
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SGML for Dummies [With CDROM]|1997|William von Hagen|1025599|0.0|0|0
- Sgml For Dummies Quick Reference||William von Hagen|18182883|0.0|0|0
- PARSEME.1st: SGML for Software Developers|1997|Sean McGrath|2235173|0.0|0|0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  1995|Prentice Hall|Developing Sgml Dtds: From Text to Model to Markup|Maler, Eve and El Andaloussi, Jeanne|9780133098815
@@ -41,3 +36,9 @@ isbndb 2
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  1997|Using SGML as a Basis for Data-Intensive Natural Language Processing|10.1023/A:1001053128638|31|5|D. McKelvie and Chris Brew and H. Thompson|90f6397fb414b7739cc34ed6c53fb276f14da7f0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SGML for Dummies [With CDROM]|1997|William von Hagen|1025599|0.0|0|0
+ Sgml For Dummies Quick Reference||William von Hagen|18182883|0.0|0|0
+ PARSEME.1st: SGML for Software Developers|1997|Sean McGrath|2235173|0.0|0|0

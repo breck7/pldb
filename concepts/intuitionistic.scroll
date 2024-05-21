@@ -1,18 +1,24 @@
 import ../code/conceptPage.scroll
+
 id intuitionistic
 name IPL
 appeared 2013
-tags pl
 creators Johan Georg Granström
+tags pl
 website http://intuitionistic.org/
-reference https://news.ycombinator.com/item?id=31964766
 standsFor Intuitionistic Programming Language
+
+writtenIn ocaml information-processing-language make
+clocExtensions ipl
+repoStats
+ firstCommit 2013
+ commits 17
+ committers 1
+ files 38
+ newestCommit 2014
 country Switzerland
 originCommunity Google
-domainName intuitionistic.org
- registered 2013
- awisRank
-  2022 10996600
+reference https://news.ycombinator.com/item?id=31964766
 
 githubRepo https://github.com/granstrom/intuitionistic
  firstCommit 2013
@@ -24,14 +30,9 @@ githubRepo https://github.com/granstrom/intuitionistic
  description Automatically exported from code.google.com/p/intuitionistic
  issues 0
 
-repoStats
- firstCommit 2013
- commits 17
- committers 1
- files 38
- newestCommit 2014
+domainName intuitionistic.org
+ registered 2013
+ awisRank
+  2022 10996600
 
 isbndb 0
-
-clocExtensions ipl
-writtenIn ocaml information-processing-language make

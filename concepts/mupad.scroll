@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id mupad
 name muPad
 appeared 1997
 tags pl
 website http://mathworks.com/discovery/mupad.html
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country Germany
 originCommunity University of Paderborn
+
+pygmentsHighlighter MuPAD
+ filename algebra.py
+ fileExtensions mu
 
 hasLineComments true
 hasMultiLineComments true
@@ -21,37 +30,17 @@ wikipedia https://en.wikipedia.org/wiki/MuPAD
  dailyPageViews 29
  appeared 1997
 
-githubLanguage mupad
- fileExtensions mu
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.mupad
- repos 39
+hopl https://hopl.info/showlanguage.prx?exp=7523
+
 githubBigQuery mupad
  repos 71
  users 69
 
-pygmentsHighlighter MuPAD
- filename algebra.py
- fileExtensions mu
 linguistGrammarRepo https://github.com/ccreutzig/sublime-MuPAD
  firstCommit 2012
  lastCommit 2018
  committerCount 4
  commitCount 18
-
-hopl https://hopl.info/showlanguage.prx?exp=7523
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Mupad Pro Computing Essentials|2002|Miroslaw Majewski|13658983|0.0|0|0
- Programming Fundamentals with MATLAB Using Mupad||Smith A|53994831|0.0|0|0
- Dynamic Modules: User's Manual and Programming Guide for Mupad 1.4 [With *]|1998|Andreas Sorgatz|4117301|0.0|0|0
 
 isbndb 7
  year|publisher|title|authors|isbn13
@@ -62,3 +51,17 @@ isbndb 7
  20131201|Springer Nature|MuPAD Tutorial|Christopher Creutzig; Walter Oevel|9783642593048
  20121206|Springer Nature|MuPAD Pro Computing Essentials|Miroslaw Majewski|9783642979101
  20110627|Springer Nature|MuPAD Pro Computing Essentials|Miroslaw Majewski|9783642187605
+
+githubLanguage mupad
+ fileExtensions mu
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.mupad
+ repos 39
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Mupad Pro Computing Essentials|2002|Miroslaw Majewski|13658983|0.0|0|0
+ Programming Fundamentals with MATLAB Using Mupad||Smith A|53994831|0.0|0|0
+ Dynamic Modules: User's Manual and Programming Guide for Mupad 1.4 [With *]|1998|Andreas Sorgatz|4117301|0.0|0|0

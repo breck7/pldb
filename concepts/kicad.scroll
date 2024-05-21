@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id kicad
 name KiCad Legacy Layout
 appeared 1992
 tags application
 conceptDescription KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
-reference http://kicad-pcb.org/help/file-formats/d
+
+isOpenSource true
 fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
+fileType text
+centralPackageRepositoryCount 0
 country France
 originCommunity Instituts Universitaires de Technologie de Grenoble
+reference http://kicad-pcb.org/help/file-formats/d
 
 example
  (kicad_pcb (version 3)
@@ -34,12 +39,6 @@ wikipedia https://en.wikipedia.org/wiki/KiCad
  dailyPageViews 143
  appeared 1992
 
-githubLanguage KiCad Legacy Layout
- fileExtensions brd
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.pcb.board
 githubBigQuery KiCad
  repos 1099
  users 914
@@ -161,6 +160,9 @@ linguistGrammarRepo https://github.com/Alhadis/language-pcb
   $EQUIPOT
   Na 9 "
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage KiCad Legacy Layout
+ fileExtensions brd
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.pcb.board

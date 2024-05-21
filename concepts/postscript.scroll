@@ -1,13 +1,47 @@
 import ../code/conceptPage.scroll
+
 id postscript
 name PostScript
 appeared 1982
-tags textMarkup
 creators John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton
+tags textMarkup
 conceptDescription Postscript is a graphical page description language invented by ChuckGetsche and JohnWarnock (the President and CEO of Adobe). Its syntax looks a little bit like Forth, because it is derived from Forth; however, Postscript's internal implementation has nothing to do with Forth.
+
+fileType text
 documentation https://www.pdfa.org/norm-refs/PLRM.pdf
+rosettaCode http://www.rosettacode.org/wiki/Category:PostScript
+quineRelay PostScript
+centralPackageRepositoryCount 0
+ubuntuPackage ghostscript
 country United States
 originCommunity Adobe
+
+helloWorldCollection PostScript
+ % Hello World in Postscript
+ %!PS
+ /Palatino-Roman findfont
+ 100 scalefont
+ setfont
+ 100 100 moveto
+ (Hello World!) show
+ showpage
+ 
+pygmentsHighlighter PostScript
+ filename graphics.py
+ fileExtensions ps eps
+rijuRepl https://riju.codes/postscript
+ example
+  (Hello, world!) =
+  
+leachim6 PostScript
+ filepath p/PostScript.ps
+ fileExtensions ps
+ example
+  % run> gs -q -sDEVICE=nullpage postscript.ps
+  (Hello World\n) print quit
+
+lineCommentToken %
+printToken print
 
 hasComments true
 hasPostfixNotation true
@@ -25,9 +59,6 @@ hasIntegers true
  % (\-|\+)?[0-9]+(?=[()<>\[\]{}/%\s])
 hasMultiLineComments true
 
-lineCommentToken %
-printToken print
-
 wikipedia https://en.wikipedia.org/wiki/PostScript
  example
   /mm {360 mul 127 div} def
@@ -42,21 +73,13 @@ wikipedia https://en.wikipedia.org/wiki/PostScript
  revisionCount 914
  appeared 1982
 
-githubLanguage PostScript
- fileExtensions ps eps epsi pfa
- trendingProjectsCount 0
- type markup
- aceMode text
- tmScope source.postscript
- aliases postscr
- repos 8053
+hopl https://hopl.info/showlanguage.prx?exp=1010
+tiobe PostScript
+
 githubBigQuery PostScript
  repos 4145
  users 3932
 
-pygmentsHighlighter PostScript
- filename graphics.py
- fileExtensions ps eps
 linguistGrammarRepo https://github.com/textmate/postscript.tmbundle
  firstCommit 2006
  lastCommit 2011
@@ -107,42 +130,6 @@ linguistGrammarRepo https://github.com/textmate/postscript.tmbundle
   %%EOF
   
 
-helloWorldCollection PostScript
- % Hello World in Postscript
- %!PS
- /Palatino-Roman findfont
- 100 scalefont
- setfont
- 100 100 moveto
- (Hello World!) show
- showpage
- 
-leachim6 PostScript
- filepath p/PostScript.ps
- fileExtensions ps
- example
-  % run> gs -q -sDEVICE=nullpage postscript.ps
-  (Hello World\n) print quit
-rosettaCode http://www.rosettacode.org/wiki/Category:PostScript
-quineRelay PostScript
-
-rijuRepl https://riju.codes/postscript
- example
-  (Hello, world!) =
-  
-
-tiobe PostScript
-hopl https://hopl.info/showlanguage.prx?exp=1010
-
-ubuntuPackage ghostscript
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
- PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0
-
 isbndb 11
  year|publisher|title|authors|isbn13
  1991|Peachpit Press Publications|Inside PostScript|Frank Braswell|9780938151104
@@ -157,6 +144,20 @@ isbndb 11
  1993|Addison-wesley|Programming The Display Postscript System With X (apl)|Adobe Systems|9780201622034
  1996|Springer|Postscript And Acrobat/pdf: Applications, Troubleshooting, And Cross-platform-publishing|Thomas Merz|9783540608547
 
+githubLanguage PostScript
+ fileExtensions ps eps epsi pfa
+ trendingProjectsCount 0
+ type markup
+ aceMode text
+ tmScope source.postscript
+ aliases postscr
+ repos 8053
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2007|Teaching compiler construction and language design: making the case for unusual compiler projects with postscript as the target language|10.1145/1227310.1227460|13|0|Martin Ruckert|91505badeba72e85a565b340b743106994710b46
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
+ PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0

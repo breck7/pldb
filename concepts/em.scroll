@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id em
 name Em
 appeared 2020
 tags textMarkup
 standsFor Easy Markup
+
+writtenIn c lex html markdown
+repoStats
+ firstCommit 2020
+ commits 4
+ committers 1
+ files 9
+ newestCommit 2020
 country Unknown
 originCommunity https://github.com/peter-fa
 
@@ -56,12 +65,3 @@ githubRepo https://github.com/peter-fa/em
  updated 2020
  description Easy Markup is a lightweight markup language.
  issues 0
-
-repoStats
- firstCommit 2020
- commits 4
- committers 1
- files 9
- newestCommit 2020
-
-writtenIn c lex html markdown

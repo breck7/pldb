@@ -1,20 +1,42 @@
 import ../code/conceptPage.scroll
+
 id tex
 name Tex
 appeared 1978
-tags pl
-isPublicDomain true
 creators Donald Knuth
+tags pl
 website http://tug.org
 webRepl https://latexbase.com/
+
+isPublicDomain true
+isOpenSource true
+clocExtensions aux bbx bib bst cbx dtx ins lbx ltx mkii mkiv mkvi sty tex cls
+fileType text
+wordRank 7751
 documentation https://tug.org/texlive/doc.html
 ebook https://visualmatheditor.equatheque.net/doc/texbook.pdf
+eventsPageUrl https://tug.org/meetings.html
+faqPageUrl https://texfaq.org/
+packageRepository https://ctan.org/
 country United States
-domainName tug.org
- registered 1993
- awisRank
-  2022 56352
-  2017 40951
+
+helloWorldCollection Tex
+ % Hello World in plain \TeX
+ \immediate\write16{Hello World!}
+ \end
+ 
+pygmentsHighlighter TeX
+ filename markup.py
+ fileExtensions tex aux toc
+twitter https://twitter.com/texusersgroup
+leachim6 TeX
+ filepath t/TeX.tex
+ fileExtensions tex
+ example
+  Hello World
+  \bye
+
+lineCommentToken %
 
 hasLineComments true
  % A comment
@@ -23,8 +45,6 @@ hasComments true
  % A comment
 hasSemanticIndentation false
 hasFixedPoint true
-
-lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/TeX
  example
@@ -38,6 +58,36 @@ wikipedia https://en.wikipedia.org/wiki/TeX
  backlinksCount 1657
  revisionCount 1391
  appeared 1978
+
+hopl https://hopl.info/showlanguage.prx?exp=833
+tiobe Tex
+
+domainName tug.org
+ registered 1993
+ awisRank
+  2022 56352
+  2017 40951
+
+githubBigQuery TeX
+ repos 31515
+ users 24476
+
+linguistGrammarRepo https://github.com/textmate/latex.tmbundle
+ sampleCount 7
+ example
+  \ProvidesFile{verbose.bbx}
+  [\abx@bbxid]
+  
+  \RequireBibliographyStyle{authortitle}
+  
+  \endinput
+  
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1993|Computing McGraw-Hill|Tex and Latex: Drawing and Literate Programming/Book and Disk (McGraw-Hill Programming Tools for Scientists & Engineers)|Gurari, Eitan M.|9780079116161
+ 1993|Computing McGraw-Hill|Writing With Tex (McGraw-Hill Programming Tools for Scientists and Engineers)|Gurari, Eitan M.|9780070252073
+ 1994|Mcgraw-hill|Tex And Latex: Drawing And Literate Programming (mcgraw-hill Programming Tools For Scientists And Engineers)|Eitan Gurari|9780070252080
 
 githubLanguage TeX
  fileExtensions tex aux bbx cbx cls dtx ins lbx ltx mkii mkiv mkvi sty toc
@@ -65,59 +115,10 @@ githubLanguage TeX
  wrap true
  aliases latex
  repos 248842
-githubBigQuery TeX
- repos 31515
- users 24476
-
-pygmentsHighlighter TeX
- filename markup.py
- fileExtensions tex aux toc
-linguistGrammarRepo https://github.com/textmate/latex.tmbundle
- sampleCount 7
- example
-  \ProvidesFile{verbose.bbx}
-  [\abx@bbxid]
-  
-  \RequireBibliographyStyle{authortitle}
-  
-  \endinput
-  
-
-helloWorldCollection Tex
- % Hello World in plain \TeX
- \immediate\write16{Hello World!}
- \end
- 
-leachim6 TeX
- filepath t/TeX.tex
- fileExtensions tex
- example
-  Hello World
-  \bye
 
 indeedJobs tex engineer
  2022 3
-eventsPageUrl https://tug.org/meetings.html
-faqPageUrl https://texfaq.org/
-
-tiobe Tex
-hopl https://hopl.info/showlanguage.prx?exp=833
-
-packageRepository https://ctan.org/
-
-twitter https://twitter.com/texusersgroup
-fileType text
-wordRank 7751
-isOpenSource true
-
-isbndb 3
- year|publisher|title|authors|isbn13
- 1993|Computing McGraw-Hill|Tex and Latex: Drawing and Literate Programming/Book and Disk (McGraw-Hill Programming Tools for Scientists & Engineers)|Gurari, Eitan M.|9780079116161
- 1993|Computing McGraw-Hill|Writing With Tex (McGraw-Hill Programming Tools for Scientists and Engineers)|Gurari, Eitan M.|9780070252073
- 1994|Mcgraw-hill|Tex And Latex: Drawing And Literate Programming (mcgraw-hill Programming Tools For Scientists And Engineers)|Eitan Gurari|9780070252080
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2010|Featherweight TeX and Parser Correctness|10.1007/978-3-642-19440-5_26|9|1|Sebastian Erdweg and K. Ostermann|2677fc5682d5b9597723bf24e1c4334779b44934
-
-clocExtensions aux bbx bib bst cbx dtx ins lbx ltx mkii mkiv mkvi sty tex cls

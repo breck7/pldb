@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id lambda-zero
 name lambda-zero
 appeared 2018
-tags pl
 creators Chris Clark
+tags pl
+
+writtenIn c bourne-shell vim-script assembly-language markdown yaml bash
+repoStats
+ firstCommit 2018
+ commits 1166
+ committers 4
+ files 148
+ newestCommit 2024
 country United States
 originCommunity https://github.com/clark800/lambda-zero/issues
 
@@ -17,17 +26,8 @@ githubRepo https://github.com/clark800/lambda-zero
  description A minimalist pure lazy functional programming language
  issues 4
 
-repoStats
- firstCommit 2018
- commits 1166
- committers 4
- files 148
- newestCommit 2024
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  16276222|Show HN: Lambda Zero – A minimalist pure lazy functional programming language|2018-01-31 18:31:53 UTC|1517423513|clark800|0|1
 
 isbndb 0
-
-writtenIn c bourne-shell vim-script assembly-language markdown yaml bash

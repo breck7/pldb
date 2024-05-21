@@ -1,14 +1,34 @@
 import ../code/conceptPage.scroll
+
 id minizinc
 name MiniZinc
 appeared 2012
 tags pl
 website http://www.minizinc.org/
+
+isOpenSource true
+writtenIn cpp restructuredtext python cmake json svg html markdown yaml xml c css nix javascript make tex bash ini
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:MiniZinc
+quineRelay MiniZinc
+centralPackageRepositoryCount 0
+ubuntuPackage minizinc
+repoStats
+ firstCommit 2012
+ commits 7042
+ committers 61
+ files 2359
+ newestCommit 2024
 country Australia
 originCommunity Monash University
-domainName minizinc.org
- awisRank
-  2022 8165783
+
+rijuRepl https://riju.codes/minizinc
+ example
+  solve satisfy;
+  
+  output ["Hello, world!\n"];
+  
+twitter https://twitter.com/minizinc
 
 githubRepo https://github.com/MiniZinc/libminizinc
  firstCommit 2012
@@ -20,31 +40,10 @@ githubRepo https://github.com/MiniZinc/libminizinc
  description The MiniZinc compiler
  issues 59
 
-repoStats
- firstCommit 2012
- commits 7042
- committers 61
- files 2359
- newestCommit 2024
-
-rosettaCode http://www.rosettacode.org/wiki/Category:MiniZinc
-quineRelay MiniZinc
-
-rijuRepl https://riju.codes/minizinc
- example
-  solve satisfy;
-  
-  output ["Hello, world!\n"];
-  
-
-twitter https://twitter.com/minizinc
-ubuntuPackage minizinc
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName minizinc.org
+ awisRank
+  2022 8165783
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2020|Springer|Building Decision Support Systems: Using Minizinc|Wallace, Mark|9783030417314
-
-writtenIn cpp restructuredtext python cmake json svg html markdown yaml xml c css nix javascript make tex bash ini

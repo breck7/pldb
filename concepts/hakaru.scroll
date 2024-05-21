@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id hakaru
 name hakaru
 appeared 2014
 tags pl
-conceptDescription Hakaru is a simply-typed probabilistic programming language, designed for easy specification of probabilistic models and inference algorithms. This type of language is useful for the development of machine learning algorithms and stochastic modeling.
 website http://hakaru-dev.github.io/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/hejono/hakaru_a_simplytyped_probabilistic_programming/
+conceptDescription Hakaru is a simply-typed probabilistic programming language, designed for easy specification of probabilistic models and inference algorithms. This type of language is useful for the development of machine learning algorithms and stochastic modeling.
+
+writtenIn haskell markdown xml yaml bourne-shell tex vim-script perl make python css lisp javascript
+repoStats
+ firstCommit 2014
+ commits 6842
+ committers 43
+ files 639
+ newestCommit 2022
 country United States
 originCommunity Indiana University && McMaster University
-domainName hakaru-dev.github.io
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/hejono/hakaru_a_simplytyped_probabilistic_programming/
 
 example
  def pulls(strength real):
@@ -37,11 +45,4 @@ githubRepo https://github.com/hakaru-dev/hakaru
  description A probabilistic programming language
  issues 41
 
-repoStats
- firstCommit 2014
- commits 6842
- committers 43
- files 639
- newestCommit 2022
-
-writtenIn haskell markdown xml yaml bourne-shell tex vim-script perl make python css lisp javascript
+domainName hakaru-dev.github.io

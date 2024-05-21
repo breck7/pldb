@@ -1,23 +1,28 @@
 import ../code/conceptPage.scroll
+
 id lolcode
 name LOLCODE
 appeared 2007
-tags esolang
 creators Adam Lindsay
+tags esolang
 website http://lolcode.org/
+
+tryItOnline lolcode
+fileType text
 documentation https://learnxinyminutes.com/docs/LOLCODE/
+esolang https://esolangs.org/wiki/LOLCODE
+rosettaCode http://www.rosettacode.org/wiki/Category:LOLCODE
+replit https://repl.it/languages/lolcode
+centralPackageRepositoryCount 0
 country England
 originCommunity Lancaster University
-domainName lolcode.org
- awisRank
-  2022 3117008
-  2017 1442060
 
-hasStrings true
- "Hello world"
-
-stringToken "
-
+rijuRepl https://riju.codes/lolcode
+ example
+  HAI 1.2
+    VISIBLE "Hello, world!"
+  KTHXBYE
+  
 example
  HAI 1.3
      OBTW
@@ -88,6 +93,21 @@ example
              rem, WTF?
                  OMG 10, hex_digit R "A", GTFO
                  OMG 1
+twitter https://twitter.com/icanhaslolcode
+leachim6 LOLCODE
+ filepath l/LOLCODE.lol
+ fileExtensions lol
+ example
+  HAI
+  CAN HAS STDIO?
+  VISIBLE "Hello World"
+  KTHXBYE
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/LOLCODE
  example
@@ -106,6 +126,17 @@ wikipedia https://en.wikipedia.org/wiki/LOLCODE
  revisionCount 532
  appeared 2007
 
+domainName lolcode.org
+ awisRank
+  2022 3117008
+  2017 1442060
+
+githubBigQuery LOLCODE
+ repos 109
+ users 106
+
+isbndb 0
+
 githubLanguage LOLCODE
  fileExtensions lol
  trendingProjectsCount 0
@@ -113,36 +144,5 @@ githubLanguage LOLCODE
  aceMode text
  tmScope none
  repos 235
-githubBigQuery LOLCODE
- repos 109
- users 106
-
-leachim6 LOLCODE
- filepath l/LOLCODE.lol
- fileExtensions lol
- example
-  HAI
-  CAN HAS STDIO?
-  VISIBLE "Hello World"
-  KTHXBYE
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:LOLCODE
-
-rijuRepl https://riju.codes/lolcode
- example
-  HAI 1.2
-    VISIBLE "Hello, world!"
-  KTHXBYE
-  
-replit https://repl.it/languages/lolcode
-tryItOnline lolcode
-
-esolang https://esolangs.org/wiki/LOLCODE
-
-twitter https://twitter.com/icanhaslolcode
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

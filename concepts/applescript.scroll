@@ -1,15 +1,41 @@
 import ../code/conceptPage.scroll
+
 id applescript
 name Applescript
 appeared 1993
 tags pl
 website https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html
-documentation https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
+
+isOpenSource false
+influencedBy hypertalk
 fileExtensions scpt scptd AppleScript
+clocExtensions applescript
+fileType text
+documentation https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
+rosettaCode http://www.rosettacode.org/wiki/Category:AppleScript
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apple
 
-influencedBy hypertalk
+helloWorldCollection Applescript
+ -- "Hello World" in AppleScript:
+ 
+ display dialog "Hello World"
+ 
+pygmentsHighlighter AppleScript
+ filename scripting.py
+ fileExtensions applescript
+leachim6 AppleScript
+ filepath a/AppleScript.scpt
+ fileExtensions scpt
+ example
+  display dialog "Hello World"
+  
+
+lineCommentToken --
+multiLineCommentTokens (* *)
+printToken display dialog
+stringToken "
 
 hasComments true
 hasGarbageCollection true
@@ -28,11 +54,6 @@ hasFloats true
 hasIntegers true
  -- [-+]?\d+
 
-lineCommentToken --
-multiLineCommentTokens (* *)
-printToken display dialog
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/AppleScript
  example
   tell application "Finder"
@@ -48,22 +69,13 @@ wikipedia https://en.wikipedia.org/wiki/AppleScript
  appeared 1993
  fileExtensions scpt scptd AppleScript
 
-githubLanguage AppleScript
- fileExtensions applescript scpt
- trendingProjectsCount 0
- type programming
- interpreters osascript
- aceMode applescript
- tmScope source.applescript
- aliases osascript
- repos 3425
+hopl https://hopl.info/showlanguage.prx?exp=1830
+tiobe Applescript
+
 githubBigQuery AppleScript
  repos 4075
  users 3803
 
-pygmentsHighlighter AppleScript
- filename scripting.py
- fileExtensions applescript
 linguistGrammarRepo https://github.com/textmate/applescript.tmbundle
  firstCommit 2006
  lastCommit 2017
@@ -113,35 +125,6 @@ linguistGrammarRepo https://github.com/textmate/applescript.tmbundle
   	end if
   end tell
 
-helloWorldCollection Applescript
- -- "Hello World" in AppleScript:
- 
- display dialog "Hello World"
- 
-leachim6 AppleScript
- filepath a/AppleScript.scpt
- fileExtensions scpt
- example
-  display dialog "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:AppleScript
-
-indeedJobs applescript developer
- 2022 6
-
-tiobe Applescript
-hopl https://hopl.info/showlanguage.prx?exp=1830
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- AppleScript for Dummies|1995|Tom Trinko|2171980|3.75|4|1
- AppleScript Programming for the Absolute Beginner|2007|Jerry Lee Ford Jr.|3055205|3.20|5|0
- AppleScript Pocket Reference: The Essential AppleScript Language Reference|2006|Matt Neuburg|6294483|0.0|0|0
-
 isbndb 12
  year|publisher|title|authors|isbn13
  2009|Peachpit Press|Apple Training Series: AppleScript 1-2-3|Soghoian, Sal and Cheeseman, Bill|9780321149312
@@ -157,8 +140,25 @@ isbndb 12
  2009-10-29|Wiley|Apple Automator with AppleScript Bible|Thomas Myer|9780470604311
  2007|Course Technology Ptr|Applescript Programming For The Absolute Beginner|Jerry Lee Jr. Ford|9781598636208
 
+githubLanguage AppleScript
+ fileExtensions applescript scpt
+ trendingProjectsCount 0
+ type programming
+ interpreters osascript
+ aceMode applescript
+ tmScope source.applescript
+ aliases osascript
+ repos 3425
+
+indeedJobs applescript developer
+ 2022 6
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2007|AppleScript|10.1145/1238844.1238845|19|1|W. Cook|04216be6bacdea717c7ac6e2838f4227884626a3
 
-clocExtensions applescript
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ AppleScript for Dummies|1995|Tom Trinko|2171980|3.75|4|1
+ AppleScript Programming for the Absolute Beginner|2007|Jerry Lee Ford Jr.|3055205|3.20|5|0
+ AppleScript Pocket Reference: The Essential AppleScript Language Reference|2006|Matt Neuburg|6294483|0.0|0|0

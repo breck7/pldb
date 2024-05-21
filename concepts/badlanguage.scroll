@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id badlanguage
 name badlanguage
 appeared 2017
-tags pl
 creators Martin Capodici
+tags pl
+
+writtenIn haskell matlab javascript markdown yaml json
+repoStats
+ firstCommit 2017
+ commits 3
+ committers 2
+ files 19
+ newestCommit 2019
 country Australia
 originCommunity Martin Capodici
 
@@ -17,15 +26,6 @@ githubRepo https://github.com/mcapodici/badlanguage
  description A lisp-looking language with interpreter and compiler to JS
  issues 0
 
-repoStats
- firstCommit 2017
- commits 3
- committers 2
- files 19
- newestCommit 2019
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  16918315|Show HN: Bad Language: A lisp-looking language with interpreter and JS compiler|2018-04-25 02:46:53 UTC|1524624413|quickthrower2|2|6
-
-writtenIn haskell matlab javascript markdown yaml json

@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id tangledown
 name tangledown
 appeared 2011
-tags template
 creators Nicholas Bollweg
-conceptDescription tangledown combines the simplicity of Markdown syntax with the sexiness of Tangle.js reactive documents and the loveliness of Rickshaw plots
+tags template
 website http://bollwyvl.github.io/TangleDown/
+conceptDescription tangledown combines the simplicity of Markdown syntax with the sexiness of Tangle.js reactive documents and the loveliness of Rickshaw plots
+
+writtenIn html javascript python css svg markdown json
+repoStats
+ firstCommit 2011
+ commits 28
+ committers 1
+ files 301
+ newestCommit 2011
 
 example
  If you eat t[number](cookies ' cookies'), you consume t[](calories ' calories'). This constitutes t[](dailypercent percent) of a daily intake of t[number](100<dailycalories..100 ' calories').
@@ -35,12 +44,3 @@ githubRepo https://github.com/bollwyvl/tangledown
  updated 2022
  description Markdown + Tangle.js + (someday) SymPy
  issues 1
-
-repoStats
- firstCommit 2011
- commits 28
- committers 1
- files 301
- newestCommit 2011
-
-writtenIn html javascript python css svg markdown json

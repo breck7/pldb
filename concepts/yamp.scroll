@@ -1,20 +1,19 @@
 import ../code/conceptPage.scroll
+
 id yamp
 name YAMP
 appeared 2019
 tags dataNotation
 standsFor Yet Another Macro Processor
 
+writtenIn yaml python json bourne-shell html asciidoc dockerfile markdown
 supersetOf yaml
-
-hasMacros true
- - defmacro:
-   name: foo
-   args: [who]
-   value:
-       Hello: who
- - foo:
-   who: World
+repoStats
+ firstCommit 2019
+ commits 114
+ committers 3
+ files 59
+ newestCommit 2019
 
 githubRepo https://github.com/birchb1024/yamp
  stars 11
@@ -25,11 +24,11 @@ githubRepo https://github.com/birchb1024/yamp
  description Yet Another Macro Processor - for YAML - Superseded by Goyamp
  issues 2
 
-repoStats
- firstCommit 2019
- commits 114
- committers 3
- files 59
- newestCommit 2019
-
-writtenIn yaml python json bourne-shell html asciidoc dockerfile markdown
+hasMacros true
+ - defmacro:
+   name: foo
+   args: [who]
+   value:
+       Hello: who
+ - foo:
+   who: World

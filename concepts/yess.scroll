@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id yess
 name YESS
 appeared 2022
-tags protocol
 creators Paul Gordon
-conceptDescription YESS: A Reboot Of RSS. The protocol is a subset of HTML and CSS. It's central design idea is to split static HTML files up into small single-screen components, called Scenes.
+tags protocol
 standsFor You Easily Syndicate Scenes
+conceptDescription YESS: A Reboot Of RSS. The protocol is a subset of HTML and CSS. It's central design idea is to split static HTML files up into small single-screen components, called Scenes.
 
+writtenIn svg markdown
 influencedBy rss
+repoStats
+ firstCommit 2022
+ commits 18
+ committers 1
+ files 4
+ newestCommit 2022
 
 example
  <section>
@@ -30,12 +38,3 @@ githubRepo https://github.com/paul-go/YESS-Specification
  updated 2022
  description Official specification document for the YESS protocol.
  issues 0
-
-repoStats
- firstCommit 2022
- commits 18
- committers 1
- files 4
- newestCommit 2022
-
-writtenIn svg markdown

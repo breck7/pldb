@@ -1,11 +1,19 @@
 import ../code/conceptPage.scroll
+
 id touch
 name Touch
 appeared 2020
 tags textMarkup
 website http://touchlabs.io/play
 
+writtenIn go json markdown
 relatedConcepts markdown
+repoStats
+ firstCommit 2020
+ commits 272
+ committers 2
+ files 1125
+ newestCommit 2022
 
 example
  / this is a block comment
@@ -69,12 +77,3 @@ githubRepo https://github.com/touchmarine/to
  updated 2022
  description 📜 Touch Lightweight Markup Language; Familiar, Extendable, Auto-Formattable
  issues 1
-
-repoStats
- firstCommit 2020
- commits 272
- committers 2
- files 1125
- newestCommit 2022
-
-writtenIn go json markdown

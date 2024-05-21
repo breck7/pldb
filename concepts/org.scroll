@@ -1,22 +1,26 @@
 import ../code/conceptPage.scroll
+
 id org
 name Org
 appeared 2003
-tags textMarkup
 creators Carsten Dominik
-conceptDescription Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
+tags textMarkup
 website https://orgmode.org/
+conceptDescription Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
+
+isOpenSource true
+fileType text
+wordRank 4476
 documentation https://orgmode.org/manual/
-reference https://orgmode.org/org.html#Document-structure
+centralPackageRepositoryCount 0
 country The Netherlands and France
 originCommunity https://list.orgmode.org/
-domainName orgmode.org
- registered 2007
- awisRank
-  2022 420155
+reference https://orgmode.org/org.html#Document-structure
 
-hasSemanticIndentation true
-
+rijuRepl https://riju.codes/org
+ example
+  Hello, world!
+  
 example
  * Top level headline
  ** Second level
@@ -192,6 +196,14 @@ example
  
    That's all there is to it!
  
+leachim6 Org-mode
+ filepath o/Org-mode.org
+ fileExtensions org
+ example
+  Hello World
+  
+
+hasSemanticIndentation true
 
 wikipedia https://en.wikipedia.org/wiki/Org-mode
  related emacs-editor html latex markdown restructuredtext textile git mediawiki pandoc-app vim-editor sublime-editor
@@ -203,6 +215,17 @@ wikipedia https://en.wikipedia.org/wiki/Org-mode
  dailyPageViews 127
  appeared 2003
 
+domainName orgmode.org
+ registered 2007
+ awisRank
+  2022 420155
+
+githubBigQuery Org
+ repos 1
+ users 1
+
+isbndb 0
+
 githubLanguage Org
  fileExtensions org
  trendingProjectsCount 0
@@ -211,27 +234,5 @@ githubLanguage Org
  tmScope none
  wrap true
  repos 18
-githubBigQuery Org
- repos 1
- users 1
-
-leachim6 Org-mode
- filepath o/Org-mode.org
- fileExtensions org
- example
-  Hello World
-  
-
-rijuRepl https://riju.codes/org
- example
-  Hello, world!
-  
-
-fileType text
-wordRank 4476
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

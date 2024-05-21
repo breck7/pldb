@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id owl
 name OWL
 appeared 2004
 tags xmlFormat
-documentation https://www.w3.org/TR/owl-guide/
 standsFor One World Language
+
+fileType text
+documentation https://www.w3.org/TR/owl-guide/
+centralPackageRepositoryCount 0
 country United States
 originCommunity World Wide Web Consortium
 
@@ -23,13 +27,8 @@ wikipedia https://en.wikipedia.org/wiki/Web_Ontology_Language
  revisionCount 706
  appeared 2004
 
-githubLanguage Web Ontology Language
- fileExtensions owl
- trendingProjectsCount 0
- type data
- aceMode xml
- tmScope text.xml
- repos 199
+hopl https://hopl.info/showlanguage.prx?exp=4934
+
 githubBigQuery Web Ontology Language
  repos 642
  users 524
@@ -91,16 +90,6 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
                   <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
               </owl:Re
 
-hopl https://hopl.info/showlanguage.prx?exp=4934
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Owl: Representing Information Using the Web Ontology Language|2004|Lee W. Lacy|1653014|3.11|9|0
- OWL : Representing Information Using the Web Ontology Language|2005|Lee W. Lacy|27295675|4.00|1|0
-
 isbndb 6
  year|publisher|title|authors|isbn13
  2011|Morgan Kaufmann|Semantic Web for the Working Ontologist: Effective Modeling in RDFS and OWL|Allemang, Dean and Hendler, James|9780123859655
@@ -109,6 +98,14 @@ isbndb 6
  2020-12-18T00:00:01Z|Apress|Ontologies with Python: Programming OWL 2.0 Ontologies with Python and Owlready2|Jean-Baptiste, Lamy|9781484265512
  2011|Morgan Kaufmann|Semantic Web for the Working Ontologist: Effective Modeling in RDFS and OWL|Allemang, Dean and Hendler, James|9780123859662
  2020|Apress|Ontologies with Python: Programming OWL 2.0 Ontologies with Python and Owlready2|Jean-Baptiste, Lamy|9781484265529
+
+githubLanguage Web Ontology Language
+ fileExtensions owl
+ trendingProjectsCount 0
+ type data
+ aceMode xml
+ tmScope text.xml
+ repos 199
 
 semanticScholar 20
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -132,3 +129,8 @@ semanticScholar 20
  2016|Scowl: a Scala DSL for programming with the OWL API|10.21105/JOSS.00023|2|0|J. Balhoff|0e163b6bea8cd698c47661936fee17f6b061f637
  2009|OWL that can Choose to Inherit and Hide it Too|10.1109/ICSC.2009.96|1|0|S. Hosain and H. Jamil|177b9c75727edd97da6cf8be31034c6f9c60578f
  2016|Semantic-Web Architecture for Electronic Discharge Summary Based on OWL 2.0 Standard|10.5455/aim.2016.24.182-185|1|0|Shahram Tahmasebian and M. Langarizadeh and M. Ghazisaeidi and R. Safdari|eef0e3fd0fab65ed880806a15bf87f773faadc69
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Owl: Representing Information Using the Web Ontology Language|2004|Lee W. Lacy|1653014|3.11|9|0
+ OWL : Representing Information Using the Web Ontology Language|2005|Lee W. Lacy|27295675|4.00|1|0

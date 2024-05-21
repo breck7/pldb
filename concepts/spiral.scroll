@@ -1,19 +1,20 @@
 import ../code/conceptPage.scroll
+
 id spiral
 name spiral
 appeared 2017
-tags pl
 creators Marko Grdinić
+tags pl
+
+writtenIn python c f-sharp json cpp typescript html cuda markdown xml powershell toml
+repoStats
+ firstCommit 2017
+ commits 7873
+ committers 10
+ files 2976
+ newestCommit 2024
 country Croatia
 originCommunity https://github.com/mrakgr/The-Spiral-Language/issues
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  inl x = 2 // Define a 64-bit integer in Spiral.
@@ -31,11 +32,10 @@ githubRepo https://github.com/mrakgr/The-Spiral-Language
  description Functional language with intensional polymorphism and first-class staging.
  issues 0
 
-repoStats
- firstCommit 2017
- commits 7873
- committers 10
- files 2976
- newestCommit 2024
+lineCommentToken //
 
-writtenIn python c f-sharp json cpp typescript html cuda markdown xml powershell toml
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

@@ -1,24 +1,24 @@
 import ../code/conceptPage.scroll
+
 id mlir
 name mlir
 appeared 2019
-tags ir
 creators Chris Lattner
+tags ir
 website https://mlir.llvm.org/
-reference https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html
-reference https://ieeexplore.ieee.org/document/9370308
-country Various
-originCommunity https://github.com/tensorflow
-domainName mlir.llvm.org
 announcementMethod paper
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+writtenIn markdown
+repoStats
+ firstCommit 2019
+ commits 3349
+ committers 91
+ files 1
+ newestCommit 2021
+country Various
+originCommunity https://github.com/tensorflow
+reference https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html
+reference https://ieeexplore.ieee.org/document/9370308
 
 example
  // Syntactically similar to LLVM:
@@ -29,34 +29,6 @@ example
    %y = addi %x, %x : i32
    return %y : i32
  }
-
-githubRepo https://github.com/tensorflow/mlir
- firstCommit 2019
- stars 1678
- forks 260
- subscribers 170
- created 2019
- updated 2022
- description "Multi-Level Intermediate Representation" Compiler Infrastructure
- issues 57
-
-repoStats
- firstCommit 2019
- commits 3349
- committers 91
- files 1
- newestCommit 2021
-
-githubLanguage MLIR
- type programming
- fileExtensions mlir
- aceMode text
- tmScope source.mlir
- repos 84
-githubBigQuery MLIR
- repos 30
- users 27
-
 compilerExplorer MLIR
  example
   // Example code of an affine reduction.
@@ -75,6 +47,35 @@ compilerExplorer MLIR
   }
   
 
+githubRepo https://github.com/tensorflow/mlir
+ firstCommit 2019
+ stars 1678
+ forks 260
+ subscribers 170
+ created 2019
+ updated 2022
+ description "Multi-Level Intermediate Representation" Compiler Infrastructure
+ issues 57
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName mlir.llvm.org
+
+githubBigQuery MLIR
+ repos 30
+ users 27
+
 isbndb 0
 
-writtenIn markdown
+githubLanguage MLIR
+ type programming
+ fileExtensions mlir
+ aceMode text
+ tmScope source.mlir
+ repos 84

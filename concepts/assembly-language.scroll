@@ -1,10 +1,28 @@
 import ../code/conceptPage.scroll
+
 id assembly-language
 name Assembly language
 appeared 1960
 tags assembly
-documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
 aka assembly
+
+clocExtensions a51 asm nasm S s
+documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+centralPackageRepositoryCount 0
+projectEuler Assembly
+ memberCount
+  2022 223
+
+subreddit https://reddit.com/r/asm
+ memberCount
+  2022 14763
+compilerExplorer Assembly
+ example
+  infiniteLoop:
+      jmp main
+  main:
+      jmp infiniteLoop
+  
 
 wikipedia https://en.wikipedia.org/wiki/Assembly_language
  example
@@ -49,6 +67,15 @@ wikipedia https://en.wikipedia.org/wiki/Assembly_language
  dailyPageViews 2352
  appeared 1949
 
+tiobe assembly-language
+ currentRank 8
+
+githubBigQuery Assembly
+ repos 47629
+ users 33301
+
+isbndb 0
+
 githubLanguage Assembly
  type programming
  fileExtensions asm a51 i inc nas nasm
@@ -56,21 +83,6 @@ githubLanguage Assembly
  tmScope source.assembly
  aliases asm or nasm
  repos 109158
-githubBigQuery Assembly
- repos 47629
- users 33301
-
-projectEuler Assembly
- memberCount
-  2022 223
-
-compilerExplorer Assembly
- example
-  infiniteLoop:
-      jmp main
-  main:
-      jmp infiniteLoop
-  
 
 indeedJobs assembly language developer
  2022 1329
@@ -81,17 +93,4 @@ stackOverflowSurvey
   fans 3578
   percentageUsing 0.06
 
-subreddit https://reddit.com/r/asm
- memberCount
-  2022 14763
-
-tiobe assembly-language
- currentRank 8
-
-centralPackageRepositoryCount 0
-
-isbndb 0
-
 semanticScholar 0
-
-clocExtensions a51 asm nasm S s

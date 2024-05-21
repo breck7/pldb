@@ -1,20 +1,27 @@
 import ../code/conceptPage.scroll
+
 id jsoniq
 name JSONiq
 appeared 2011
 tags queryLanguage
 website http://www.jsoniq.org/
-country Unknown
-originCommunity https://groups.google.com/g/zorba-io-user
-domainName jsoniq.org
- registered 2011
 
 supersetOf json
+fileType text
+centralPackageRepositoryCount 0
+country Unknown
+originCommunity https://groups.google.com/g/zorba-io-user
+
+leachim6 JSONiq
+ filepath j/JSONiq
+ example
+  "Hello World"
+  
+
+stringToken "
 
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/JSONiq
  example
@@ -33,15 +40,9 @@ wikipedia https://en.wikipedia.org/wiki/JSONiq
  revisionCount 14
  dailyPageViews 6
 
-githubLanguage JSONiq
- fileExtensions jq
- trendingProjectsCount 0
- type programming
- aceMode jsoniq
- codemirrorMode javascript
- codemirrorMimeType application/json
- tmScope source.jsoniq
- repos 153
+domainName jsoniq.org
+ registered 2011
+
 githubBigQuery JSONiq
  repos 423
  users 386
@@ -64,11 +65,12 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
   catalog:get-data-by-key($id, $part)
   
 
-leachim6 JSONiq
- filepath j/JSONiq
- example
-  "Hello World"
-  
-
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage JSONiq
+ fileExtensions jq
+ trendingProjectsCount 0
+ type programming
+ aceMode jsoniq
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.jsoniq
+ repos 153

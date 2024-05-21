@@ -1,17 +1,26 @@
 import ../code/conceptPage.scroll
+
 id gfa-basic
 name GFA BASIC
 appeared 1986
 tags pl
+
+centralPackageRepositoryCount 0
 country Germany
 originCommunity GFA Systemtechnik GmbH
+
+leachim6 GFA Basic
+ filepath g/GFA Basic
+ example
+  PRINT "Hello World"
+  
+
+printToken PRINT
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken PRINT
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/GFA_BASIC
  related basic atari-st-basic ascii visual-basic
@@ -23,14 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/GFA_BASIC
  dailyPageViews 20
  appeared 1986
 
-leachim6 GFA Basic
- filepath g/GFA Basic
- example
-  PRINT "Hello World"
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=3469
-
-centralPackageRepositoryCount 0
 
 isbndb 0

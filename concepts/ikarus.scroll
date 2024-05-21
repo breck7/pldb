@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id ikarus
 name Ikarus Scheme implementation
 appeared 2007
-tags pl
 creators Abdulaziz Ghuloum
+tags pl
+
+isOpenSource true
 documentation https://marcomaggi.github.io/docs/ikarus
+centralPackageRepositoryCount 0
 country United States
 originCommunity Indiana University
 
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Ikarus_(Scheme_implementation)
  pageId 14471916
  dailyPageViews 6
  appeared 2007
-
-isOpenSource true
-centralPackageRepositoryCount 0

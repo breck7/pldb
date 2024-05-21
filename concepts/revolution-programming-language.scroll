@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id revolution-programming-language
 name Revolution
 appeared 1993
-tags pl
 creators Mark Waddingham
+tags pl
 website https://livecode.com/
+
+writtenIn markdown cpp json python objective-cpp java xml bourne-shell c diff perl javascript make html awk pascal sql lisp yaml objective-c korn-shell r svg bash ini
 renamedTo livecode
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 29990
+ committers 124
+ files 7646
+ newestCommit 2021
 country United Kingdom
 originCommunity LiveCode Ltd
 
@@ -19,13 +29,6 @@ githubRepo https://github.com/livecode/livecode
  description LiveCode cross-platform development environment (engine)
  issues 198
 
-repoStats
- firstCommit 2013
- commits 29990
- committers 124
- files 7646
- newestCommit 2021
-
 wikipedia https://en.wikipedia.org/wiki/Revolution_(programming_language)
  example
   put url "binfile:picture.jpg" into url "ftp://john:passwd@ftp.example.net:2121/picture.jpg"
@@ -37,7 +40,3 @@ wikipedia https://en.wikipedia.org/wiki/Revolution_(programming_language)
  revisionCount 5
  dailyPageViews 2
  appeared 2001
-
-centralPackageRepositoryCount 0
-
-writtenIn markdown cpp json python objective-cpp java xml bourne-shell c diff perl javascript make html awk pascal sql lisp yaml objective-c korn-shell r svg bash ini

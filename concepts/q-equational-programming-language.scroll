@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id q-equational-programming-language
 name Q
 appeared 1991
-tags pl
 creators Albert Gräf
+tags pl
 website https://q-lang.sourceforge.net
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Germany
 originCommunity https://sourceforge.net/p/q-lang/_list/tickets
 
@@ -21,9 +25,6 @@ wikipedia https://en.wikipedia.org/wiki/Q_(equational_programming_language)
  revisionCount 77
  dailyPageViews 8
  appeared 2008
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

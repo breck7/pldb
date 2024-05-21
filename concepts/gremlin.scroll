@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id gremlin
 name Gremlin
 appeared 2009
-tags queryLanguage
 creators Marko A. Rodriguez
+tags queryLanguage
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
 
@@ -28,7 +33,3 @@ wikipedia https://en.wikipedia.org/wiki/Gremlin_(programming_language)
  backlinksCount 38
  revisionCount 103
  appeared 2009
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

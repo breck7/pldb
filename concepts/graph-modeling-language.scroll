@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id graph-modeling-language
 name Graph Modeling Language
 appeared 1997
 tags application
-reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
+
+fileType text
+centralPackageRepositoryCount 0
 country Germany
 originCommunity University of Passau
+reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
 
 example
  graph
@@ -85,6 +89,3 @@ githubLanguage Graph Modeling Language
  aceMode text
  tmScope none
  repos 12488
-
-fileType text
-centralPackageRepositoryCount 0

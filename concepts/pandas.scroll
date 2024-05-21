@@ -1,14 +1,19 @@
 import ../code/conceptPage.scroll
+
 id pandas
 name Pandas
 appeared 2008
 tags library
 website https://pandas.pydata.org
+
+isOpenSource true
+writtenIn python
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/pandas-dev
-domainName pandas.pydata.org
 
-writtenIn python
+twitter https://twitter.com/pandas_dev
 
 hasLineComments true
 hasFloats true
@@ -36,13 +41,10 @@ wikipedia https://pandas.pydata.org/docs/user_guide/10min.html
  revisionCount 113
  appeared 2017
 
+domainName pandas.pydata.org
+
 indeedJobs pandas engineer
  2017 341
-
-twitter https://twitter.com/pandas_dev
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

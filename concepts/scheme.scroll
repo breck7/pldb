@@ -1,17 +1,61 @@
 import ../code/conceptPage.scroll
+
 id scheme
 name Scheme
 appeared 1975
-tags pl
 creators Guy Steele and Gerald Jay Sussman
+tags pl
 website http://www.scheme-reports.org/
-documentation https://docs.scheme.org/
+
+officialBlogUrl https://planet.scheme.org/
 fileExtensions scm ss
+releaseNotesUrl https://www.scheme.com/csv6.9c/6.9c.html
+clocExtensions sc sch scm sld sps ss sls
+fileType text
+wordRank 2803
+documentation https://docs.scheme.org/
+eventsPageUrl https://events.scheme.org/
+faqPageUrl http://community.schemewiki.org/?scheme-faq
+monaco scheme
+codeMirror scheme
+rosettaCode http://www.rosettacode.org/wiki/Category:Scheme
+quineRelay Scheme
+replit https://repl.it/languages/scheme
+centralPackageRepositoryCount 0
+ubuntuPackage guile-2.0
 country United States
 originCommunity https://community.scheme.org/
-domainName scheme-reports.org
- registered 2009
-releaseNotesUrl https://www.scheme.com/csv6.9c/6.9c.html
+projectEuler Scheme
+ memberCount
+  2019 791
+  2022 817
+
+helloWorldCollection Scheme
+ ; Hello World in Scheme
+ 
+ (display "Hello, world!")
+ (newline)
+pygmentsHighlighter Scheme
+ filename lisp.py
+ fileExtensions scm ss
+rijuRepl https://riju.codes/scheme
+ example
+  (display "Hello, world!")
+  (newline)
+  
+leachim6 Scheme
+ filepath s/Scheme.scm
+ fileExtensions scm
+ example
+  (display "Hello World") (newline)
+  
+
+keywords case do let loop if else when cons car cdr cond lambda lambda* syntax-rules format set! quote eval append list list? member? load
+
+lineCommentToken ;
+multiLineCommentTokens #| |#
+printToken display
+stringToken "
 
 isLisp true
 hasComments true
@@ -37,12 +81,7 @@ hasStrings true
  "Hello world"
 hasConditionals true
 
-lineCommentToken ;
-multiLineCommentTokens #| |#
-printToken display
-stringToken "
-keywords case do let loop if else when cons car cdr cond lambda lambda* syntax-rules format set! quote eval append list list? member? load
-
+jupyterKernel https://github.com/Calysto/calysto_scheme
 wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
  example
   (set! +
@@ -65,25 +104,16 @@ wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
  appeared 1970
  fileExtensions scm ss
 
-githubLanguage Scheme
- fileExtensions scm sch sld sls sps ss
- trendingProjectsCount 0
- type programming
- interpreters scheme guile bigloo chicken csi gosh r6rs
- aceMode scheme
- codemirrorMode scheme
- codemirrorMimeType text/x-scheme
- tmScope source.scheme
- repos 16742
+hopl https://hopl.info/showlanguage.prx?exp=694
+tiobe Scheme
+
+domainName scheme-reports.org
+ registered 2009
+
 githubBigQuery Scheme
  repos 7221
  users 5469
 
-monaco scheme
-codeMirror scheme
-pygmentsHighlighter Scheme
- filename lisp.py
- fileExtensions scm ss
 linguistGrammarRepo https://github.com/textmate/scheme.tmbundle
  firstCommit 2006
  lastCommit 2014
@@ -99,46 +129,6 @@ linguistGrammarRepo https://github.com/textmate/scheme.tmbundle
           (define not-exported 'should-not-be-exported)
           ))
   
-
-projectEuler Scheme
- memberCount
-  2019 791
-  2022 817
-helloWorldCollection Scheme
- ; Hello World in Scheme
- 
- (display "Hello, world!")
- (newline)
-leachim6 Scheme
- filepath s/Scheme.scm
- fileExtensions scm
- example
-  (display "Hello World") (newline)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Scheme
-quineRelay Scheme
-
-rijuRepl https://riju.codes/scheme
- example
-  (display "Hello, world!")
-  (newline)
-  
-replit https://repl.it/languages/scheme
-
-indeedJobs scheme engineer
- 2017 1174
-officialBlogUrl https://planet.scheme.org/
-eventsPageUrl https://events.scheme.org/
-faqPageUrl http://community.schemewiki.org/?scheme-faq
-
-tiobe Scheme
-hopl https://hopl.info/showlanguage.prx?exp=694
-
-ubuntuPackage guile-2.0
-jupyterKernel https://github.com/Calysto/calysto_scheme
-fileType text
-wordRank 2803
-centralPackageRepositoryCount 0
 
 isbndb 24
  year|publisher|title|authors|isbn13
@@ -167,6 +157,20 @@ isbndb 24
  1991-05-01T00:00:01Z|Inst of Elect & Electronic|IEEE Standard for the Scheme Programming Language/Std 1178-1990||9781559371254
  2015|LAP LAMBERT Academic Publishing|Subcarrier/Power allocation Scheme for OFDMA Networks: Load Adaptive, Decentralized and Time Efficient|Shahzad, Muhammad Adil and Hasan Ali, Aamir|9783659804083
 
+githubLanguage Scheme
+ fileExtensions scm sch sld sls sps ss
+ trendingProjectsCount 0
+ type programming
+ interpreters scheme guile bigloo chicken csi gosh r6rs
+ aceMode scheme
+ codemirrorMode scheme
+ codemirrorMimeType text/x-scheme
+ tmScope source.scheme
+ repos 16742
+
+indeedJobs scheme engineer
+ 2017 1174
+
 semanticScholar 23
  year|title|doi|citations|influentialCitations|authors|paperId
  1986|Revised5 Report on the Algorithmic Language Scheme|10.1145/290229.290234|570|60|H. Abelson and R. K. Dybvig and C. T. Haynes and G. Rozas and IV N.I.Adams and D. Friedman and E. Kohlbecker and G. Steele and D. H. Bartley and R. Halstead and D. Oxley and G. Sussman and G. Brooks and C. Hanson and K. Pitman and M. Wand|cb447a69faf544c9047492fdb44e4c47c1cfdee1
@@ -192,5 +196,3 @@ semanticScholar 23
  2012|Bringing Scheme programming to the iPhone—Experience|10.1002/spe.1073|4|0|Engineer Bainomugisha and Jorge Vallejos and E. G. Boix and Pascal Costanza and T. D'Hondt and W. Meuter|e4fafba1a9b6cceb6900afbe58b7d2fe0e5dfef9
  2003|Programming graphical user interfaces with Scheme|10.1017/S0956796802004537|3|0|Erick Gallesio and M. Serrano|412762582c8b78d290f9a7a6a17de3e904b89249
  1992|The Scheme Programming Language|10.1016/B978-0-444-88135-9.50013-9|1|0|J. Franco and D. Friedman and O. Danvy|e7273e4b345308eebaecead6e8306215da661ebe
-
-clocExtensions sc sch scm sld sps ss sls

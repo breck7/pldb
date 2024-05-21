@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id tom
 name TOM
 appeared 2001
 tags pl
 website http://tom.loria.fr
-domainName tom.loria.fr
+
+fileType text
+wordRank 1723
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Tom_(pattern_matching_language)
  related xml c java
@@ -18,6 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Tom_(pattern_matching_language)
 
 tiobe TOM
 
-fileType text
-wordRank 1723
-centralPackageRepositoryCount 0
+domainName tom.loria.fr

@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id gdb
 name GDB
 appeared 1986
 tags application
 website https://www.gnu.org/software/gdb
+
+isOpenSource true
+fileType text
+quineRelay GDB
+centralPackageRepositoryCount 0
+ubuntuPackage gdb
 originCommunity GNU Project
+
+rijuRepl https://riju.codes/gdb
+ example
+  p "Hello, world!"
+  
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Debugger
  example
@@ -31,12 +43,6 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Debugger
  revisionCount 429
  appeared 1986
 
-githubLanguage GDB
- fileExtensions gdb gdbinit
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.gdb
 githubBigQuery GDB
  repos 2603
  users 2308
@@ -86,17 +92,12 @@ linguistGrammarRepo https://github.com/quarnster/SublimeGDB
   quit
   
 
-quineRelay GDB
-
-rijuRepl https://riju.codes/gdb
- example
-  p "Hello, world!"
-  
-
-ubuntuPackage gdb
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage GDB
+ fileExtensions gdb gdbinit
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.gdb
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

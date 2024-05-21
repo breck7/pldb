@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id tutor
 name TUTOR
 appeared 1969
-tags pl
 creators Paul Tenczar and Richard Blomme
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TUTOR_(programming_language)
  example
@@ -24,6 +28,3 @@ wikipedia https://en.wikipedia.org/wiki/TUTOR_(programming_language)
  appeared 1972
 
 hopl https://hopl.info/showlanguage.prx?exp=788
-
-fileType text
-centralPackageRepositoryCount 0

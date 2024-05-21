@@ -1,15 +1,18 @@
 import ../code/conceptPage.scroll
+
 id rdf
 name RDF
 appeared 1997
 tags dataNotation
 website https://www.w3.org/RDF/
-documentation https://www.w3.org/TR/rdf-concepts/
 standsFor Resource Description Framework
-country United States
-originCommunity World Wide Web Consortium
 
 relatedConcepts json-ld
+fileType text
+documentation https://www.w3.org/TR/rdf-concepts/
+centralPackageRepositoryCount 0
+country United States
+originCommunity World Wide Web Consortium
 
 hasTypeInference true
 hasTriples true
@@ -35,13 +38,6 @@ wikipedia https://en.wikipedia.org/wiki/Resource_Description_Framework
  backlinksCount 698
  revisionCount 947
  appeared 1997
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Creating The Semantic Web With Rdf: Professional Developer's Guide||Johan Hjelm|774684|3.75|4|0
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -70,3 +66,7 @@ semanticScholar 17
  2013|Inductive Triple Graphs: A Purely Functional Approach to Represent RDF|10.1007/978-3-319-04534-4_7|2|0|Jose Emilio Labra Gayo and J. Jeuring and J. Rodríguez|52197d9406e3c246266c046c516baffaaa89a5c5
  2019|C-ASP: Continuous ASP-Based Reasoning over RDF Streams|10.1007/978-3-030-20528-7_4|2|1|Thu-Le Pham and M. Ali and A. Mileo|1fce308b73ab1aa436507c54ffb94d7eee6dcbba
  2019|SQL2SPARQL4RDF: Automatic SQL to SPARQL Conversion for RDF Querying|10.1145/3372938.3372968|1|0|Ahmed Abatal and Khadija Alaoui and L. Alaoui and M. Bahaj|894a309620c4613fe4dddef4da8f7b4f38fe1218
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Creating The Semantic Web With Rdf: Professional Developer's Guide||Johan Hjelm|774684|3.75|4|0

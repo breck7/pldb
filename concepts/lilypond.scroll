@@ -1,15 +1,27 @@
 import ../code/conceptPage.scroll
+
 id lilypond
 name LilyPond
 appeared 1996
 tags pl
 website http://lilypond.org
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Lilypond
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://gitlab.com/lilypond
-domainName lilypond.org
- registered 1998
- awisRank
-  2022 476694
+
+pygmentsHighlighter LilyPond
+ filename lilypond.py
+ fileExtensions ly
+leachim6 LilyPond
+ filepath l/LilyPond.ly
+ fileExtensions ly
+ example
+  \markup { Hello World }
+  
 
 hasComments true
 hasSemanticIndentation false
@@ -29,6 +41,23 @@ wikipedia https://en.wikipedia.org/wiki/LilyPond
  revisionCount 569
  appeared 1996
 
+domainName lilypond.org
+ registered 1998
+ awisRank
+  2022 476694
+
+githubBigQuery LilyPond
+ repos 298
+ users 263
+
+linguistGrammarRepo https://github.com/textmate/lilypond.tmbundle
+ firstCommit 2006
+ lastCommit 2012
+ committerCount 4
+ commitCount 28
+
+isbndb 0
+
 githubLanguage LilyPond
  fileExtensions ly ily
  trendingProjectsCount 0
@@ -36,29 +65,3 @@ githubLanguage LilyPond
  aceMode text
  tmScope source.lilypond
  repos 2059
-githubBigQuery LilyPond
- repos 298
- users 263
-
-pygmentsHighlighter LilyPond
- filename lilypond.py
- fileExtensions ly
-linguistGrammarRepo https://github.com/textmate/lilypond.tmbundle
- firstCommit 2006
- lastCommit 2012
- committerCount 4
- commitCount 28
-
-leachim6 LilyPond
- filepath l/LilyPond.ly
- fileExtensions ly
- example
-  \markup { Hello World }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Lilypond
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0

@@ -1,39 +1,25 @@
 import ../code/conceptPage.scroll
+
 id whiley
 name Whiley
 appeared 2009
-tags pl
 creators David J. Pearce
-conceptDescription A Programming Language with Extended Static Checking
+tags pl
 website http://whiley.org/
 webRepl http://whileylabs.com
-domainName whiley.org
- registered 2009
- awisRank
-  2022 9928594
+conceptDescription A Programming Language with Extended Static Checking
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-hasHexadecimals true
- // 0x[0-9a-fA-F]+
-hasFloats true
- // [0-9]+\.[0-9]+
-hasIntegers true
- // [0-9]+
-hasBinaryNumbers true
- // [01]+b
-hasMultiLineComments true
+writtenIn java markdown yaml
+repoStats
+ firstCommit 2010
+ commits 8032
+ committers 23
+ files 1539
+ newestCommit 2022
 
-lineCommentToken //
-printToken io::println
-stringToken "
-
+pygmentsHighlighter Whiley
+ filename whiley.py
+ fileExtensions whiley
 example
  // Define the type of natural numbers
  type nat is (int x) where x >= 0
@@ -56,45 +42,7 @@ example
          i = i + 1
      //
      return null
-
-githubRepo https://github.com/Whiley/WhileyCompiler
- firstCommit 2010
- stars 199
- forks 34
- subscribers 12
- created 2010
- updated 2022
- description The Whiley Compiler (WyC)
- issues 39
-
-repoStats
- firstCommit 2010
- commits 8032
- committers 23
- files 1539
- newestCommit 2022
-
-wikipedia https://en.wikipedia.org/wiki/Whiley_(programming_language)
- summary Whiley is an experimental programming language that combines features from the functional and imperative paradigms, and supports formal specification through function preconditions, postconditions and loop invariants. The language uses flow-sensitive typing also known as "flow typing." The Whiley project began in 2009 in response to the "Verifying Compiler Grand Challenge" put forward by Tony Hoare in 2003. The first public release of Whiley was in June, 2010.Primarily developed by David Pearce, Whiley is an open source project with contributions from a small community. The system has been used for student research projects and in teaching undergraduate classes.  It was supported between 2012 and 2014 by the Royal Society of New Zealand's Marsden Fund.The Whiley compiler generates code for the Java virtual machine and can inter-operate with Java and other JVM based languages.
- backlinksCount 9
- pageId 48747326
- dailyPageViews 10
- appeared 2018
-
-githubLanguage Whiley
- type programming
- fileExtensions whiley
- aceMode text
- tmScope source.whiley
- repos 2
-githubBigQuery Whiley
- repos 1
- users 1
-
-pygmentsHighlighter Whiley
- filename whiley.py
- fileExtensions whiley
-
+twitter https://twitter.com/whileylang
 leachim6 Whiley
  filepath w/Whiley.whiley
  fileExtensions whiley
@@ -106,8 +54,59 @@ leachim6 Whiley
       io::println("Hello World")
   
 
-twitter https://twitter.com/whileylang
+githubRepo https://github.com/Whiley/WhileyCompiler
+ firstCommit 2010
+ stars 199
+ forks 34
+ subscribers 12
+ created 2010
+ updated 2022
+ description The Whiley Compiler (WyC)
+ issues 39
+
+lineCommentToken //
+printToken io::println
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // 0x[0-9a-fA-F]+
+hasFloats true
+ // [0-9]+\.[0-9]+
+hasIntegers true
+ // [0-9]+
+hasBinaryNumbers true
+ // [01]+b
+hasMultiLineComments true
+
+wikipedia https://en.wikipedia.org/wiki/Whiley_(programming_language)
+ summary Whiley is an experimental programming language that combines features from the functional and imperative paradigms, and supports formal specification through function preconditions, postconditions and loop invariants. The language uses flow-sensitive typing also known as "flow typing." The Whiley project began in 2009 in response to the "Verifying Compiler Grand Challenge" put forward by Tony Hoare in 2003. The first public release of Whiley was in June, 2010.Primarily developed by David Pearce, Whiley is an open source project with contributions from a small community. The system has been used for student research projects and in teaching undergraduate classes.  It was supported between 2012 and 2014 by the Royal Society of New Zealand's Marsden Fund.The Whiley compiler generates code for the Java virtual machine and can inter-operate with Java and other JVM based languages.
+ backlinksCount 9
+ pageId 48747326
+ dailyPageViews 10
+ appeared 2018
+
+domainName whiley.org
+ registered 2009
+ awisRank
+  2022 9928594
+
+githubBigQuery Whiley
+ repos 1
+ users 1
 
 isbndb 0
 
-writtenIn java markdown yaml
+githubLanguage Whiley
+ type programming
+ fileExtensions whiley
+ aceMode text
+ tmScope source.whiley
+ repos 2

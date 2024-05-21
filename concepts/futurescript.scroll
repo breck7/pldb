@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id futurescript
 name FutureScript
 appeared 2015
-tags pl
 creators Zhenzhen Zhan
+tags pl
 website https://futurescript.org/
+
+writtenIn javascript json xhtml xml markdown css
+repoStats
+ firstCommit 2015
+ commits 1822
+ committers 3
+ files 287
+ newestCommit 2023
 country Thailand
 originCommunity https://github.com/zizisoft
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/zhanzhenzhen/futurescript
  created 2015
  updated 2021
  description A future-style language.
-
-repoStats
- firstCommit 2015
- commits 1822
- committers 3
- files 287
- newestCommit 2023
-
-writtenIn javascript json xhtml xml markdown css

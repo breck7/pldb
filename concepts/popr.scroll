@@ -1,29 +1,28 @@
 import ../code/conceptPage.scroll
+
 id popr
 name popr
 appeared 2012
 tags pl
-conceptDescription <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
 website https://popr.dev
 webRepl http://hackerfoo.com/eval.html
-country United States
-originCommunity https://github.com/HackerFoo/poprc/issues
-domainName popr.dev
- registered 2019
 firstAnnouncement http://hackerfoo.com/presentations/ttpl_slides.html
 announcementMethod webpage
+conceptDescription <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
 
+isOpenSource true
+writtenIn c svg bourne-shell make python nix lisp markdown yaml tex html css bash json
 compilesTo c
-
-hasGarbageCollection false
-hasLazyEvaluation true
-hasLineComments true
- __ A comment
-hasComments true
- __ A comment
-hasSemanticIndentation false
-
-lineCommentToken __
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1806
+ committers 3
+ files 164
+ newestCommit 2021
+country United States
+originCommunity https://github.com/HackerFoo/poprc/issues
 
 example
  1 2 | 3 +
@@ -38,17 +37,17 @@ githubRepo https://github.com/HackerFoo/poprc
  description A Compiler for the Popr Language
  issues 0
 
-repoStats
- firstCommit 2012
- commits 1806
- committers 3
- files 164
- newestCommit 2021
+lineCommentToken __
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+hasGarbageCollection false
+hasLazyEvaluation true
+hasLineComments true
+ __ A comment
+hasComments true
+ __ A comment
+hasSemanticIndentation false
+
+domainName popr.dev
+ registered 2019
 
 isbndb 0
-
-writtenIn c svg bourne-shell make python nix lisp markdown yaml tex html css bash json

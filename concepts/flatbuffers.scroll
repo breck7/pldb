@@ -1,9 +1,19 @@
 import ../code/conceptPage.scroll
+
 id flatbuffers
 name FlatBuffers
 appeared 2014
 tags idl
 website https://google.github.io/flatbuffers/
+
+writtenIn typescript rust java python javascript cpp csharp swift kotlin markdown go lua php nim bourne-shell json dart yaml dockerfile starlark cmake xml gradle toml bazel protobuf html diff css ruby make
+clocExtensions fbs
+repoStats
+ firstCommit 2014
+ commits 3192
+ committers 716
+ files 1833
+ newestCommit 2024
 originCommunity Google
 
 githubRepo https://github.com/google/flatbuffers
@@ -16,14 +26,4 @@ githubRepo https://github.com/google/flatbuffers
  description FlatBuffers: Memory Efficient Serialization Library
  issues 166
 
-repoStats
- firstCommit 2014
- commits 3192
- committers 716
- files 1833
- newestCommit 2024
-
 semanticScholar 0
-
-clocExtensions fbs
-writtenIn typescript rust java python javascript cpp csharp swift kotlin markdown go lua php nim bourne-shell json dart yaml dockerfile starlark cmake xml gradle toml bazel protobuf html diff css ruby make

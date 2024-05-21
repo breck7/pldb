@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id lambcalc
 name lambcalc
 appeared 2019
-tags pl
 creators William Rutherford
+tags pl
+
+writtenIn haskell markdown
+repoStats
+ firstCommit 2019
+ commits 36
+ committers 2
+ files 16
+ newestCommit 2019
 country Canada
 originCommunity https://github.com/WilliamRutherford/LambCalc/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/WilliamRutherford/LambCalc
  issues 1
  forks 0
  subscribers 1
-
-repoStats
- firstCommit 2019
- commits 36
- committers 2
- files 16
- newestCommit 2019
-
-writtenIn haskell markdown

@@ -1,18 +1,28 @@
 import ../code/conceptPage.scroll
+
 id uniface
 name Uniface
 appeared 1994
 tags pl
 website http://uniface.com
-domainName uniface.com
- registered 1998
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Uniface
+centralPackageRepositoryCount 0
+
+twitter https://twitter.com/uniface
+leachim6 Uniface
+ filepath u/Uniface.uniface
+ fileExtensions uniface
+ example
+  message "Hello World"
+
+printToken message
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken message
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Uniface_(programming_language)
  related mysql smtp c java unix linux sql postgresql
@@ -24,16 +34,8 @@ wikipedia https://en.wikipedia.org/wiki/Uniface_(programming_language)
  dailyPageViews 35
  appeared 1994
 
-leachim6 Uniface
- filepath u/Uniface.uniface
- fileExtensions uniface
- example
-  message "Hello World"
-rosettaCode http://www.rosettacode.org/wiki/Category:Uniface
-
-twitter https://twitter.com/uniface
-fileType text
-centralPackageRepositoryCount 0
+domainName uniface.com
+ registered 1998
 
 isbndb 1
  year|publisher|title|authors|isbn13

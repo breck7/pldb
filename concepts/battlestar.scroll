@@ -1,41 +1,20 @@
 import ../code/conceptPage.scroll
+
 id battlestar
 name Battlestar
 appeared 2014
-tags pl
 creators Alexander Rødseth
-country Norway
-originCommunity Arch Linux
+tags pl
 
-hasPrintDebugging true
-
-printToken print
-
-githubRepo https://github.com/xyproto/battlestar
- firstCommit 2014
- stars 70
- forks 5
- subscribers 3
- created 2014
- updated 2022
- description :dizzy: A different take on Assembly, with the goal of creating tiny executables.
- issues 0
-
+writtenIn make go markdown bourne-shell python assembly-language c
 repoStats
  firstCommit 2014
  commits 374
  committers 7
  files 129
  newestCommit 2024
-
-leachim6 Battlestar
- filepath b/Battlestar.bts
- fileExtensions bts
- example
-  #!/usr/bin/bts
-  const hello = "Hello World\n"
-  print(hello)
-  
+country Norway
+originCommunity Arch Linux
 
 rijuRepl https://riju.codes/battlestar
  example
@@ -48,5 +27,25 @@ rijuRepl https://riju.codes/battlestar
  description A different take on assembly, with the goal of creating tiny executables
  fileExtensions bts
  gitRepo https://github.com/xyproto/battlestar
+leachim6 Battlestar
+ filepath b/Battlestar.bts
+ fileExtensions bts
+ example
+  #!/usr/bin/bts
+  const hello = "Hello World\n"
+  print(hello)
+  
 
-writtenIn make go markdown bourne-shell python assembly-language c
+githubRepo https://github.com/xyproto/battlestar
+ firstCommit 2014
+ stars 70
+ forks 5
+ subscribers 3
+ created 2014
+ updated 2022
+ description :dizzy: A different take on Assembly, with the goal of creating tiny executables.
+ issues 0
+
+printToken print
+
+hasPrintDebugging true

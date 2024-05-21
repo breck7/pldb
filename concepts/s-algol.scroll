@@ -1,11 +1,26 @@
 import ../code/conceptPage.scroll
+
 id s-algol
 name S-algol
 appeared 1979
-tags pl
 creators Ron Morrison and Tony Davie
+tags pl
+
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity University of St Andrews
+
+leachim6 S Algol
+ filepath s/S Algol
+ example
+  write "Hello World"
+  ?
+  
+
+lineCommentToken !
+printToken write
+stringToken "
+booleanTokens true false
 
 hasLineComments true
  ! A comment
@@ -16,11 +31,6 @@ hasSemanticIndentation false
 hasStrings true
  "Hello world"
 hasBooleans true
-
-lineCommentToken !
-printToken write
-stringToken "
-booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/S-algol
  example
@@ -90,15 +100,6 @@ wikipedia https://en.wikipedia.org/wiki/S-algol
  dailyPageViews 9
  appeared 1979
 
-leachim6 S Algol
- filepath s/S Algol
- example
-  write "Hello World"
-  ?
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=869
-
-centralPackageRepositoryCount 0
 
 isbndb 0

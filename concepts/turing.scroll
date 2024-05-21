@@ -1,24 +1,16 @@
 import ../code/conceptPage.scroll
+
 id turing
 name Turing
 appeared 1982
-tags pl
 creators Ric Holt
+tags pl
+
+fileType text
 documentation https://turing.ml/v0.21/docs/using-turing/
+rosettaCode http://www.rosettacode.org/wiki/Category:Turing
+centralPackageRepositoryCount 0
 country Canada
-
-hasLineComments true
- % A comment
-hasComments true
- % A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken %
-printToken put
-stringToken "
 
 example
  % Accepts a number and calculates its factorial
@@ -40,6 +32,25 @@ example
  end loop
  
  put "The factorial of ", n, " is ", factorial (n)
+leachim6 Turing
+ filepath t/Turing.t
+ fileExtensions t
+ example
+  put "Hello World"
+  
+
+lineCommentToken %
+printToken put
+stringToken "
+
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Turing_(programming_language)
  example
@@ -71,13 +82,8 @@ wikipedia https://en.wikipedia.org/wiki/Turing_(programming_language)
  revisionCount 281
  appeared 1982
 
-githubLanguage Turing
- fileExtensions t tu
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.turing
- repos 524
+hopl https://hopl.info/showlanguage.prx?exp=1023
+
 githubBigQuery Turing
  repos 167
  users 153
@@ -108,19 +114,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-turing
   end loop
   
   put "The factorial of ", n, " is ", factorial (n)
-
-leachim6 Turing
- filepath t/Turing.t
- fileExtensions t
- example
-  put "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Turing
-
-hopl https://hopl.info/showlanguage.prx?exp=1023
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 34
  year|publisher|title|authors|isbn13
@@ -158,6 +151,14 @@ isbndb 34
  1984|Reston Pub. Co|Introduction To Computer Science Using The Turing Programming Language|Holt and R. C|9780835931687
  2002|Pingree Hill Pub 2002-06-01|Cosmos And Consciousness: Quantum Computers, Superstrings, Programming, Egypt, Quarks, Mind Body Problem, And Turing Machines|Blaha and Stephen|9780972079518
  2000|1st Books Library|Cosmos And Consciousness: Quantum Computers, Superstrings, Mysticism, C++ Programming, Egypt, Quarks, Mind-body Problem, Aliens, Linguistics, And Turing Machines|Blaha, Stephen.|9780759602083
+
+githubLanguage Turing
+ fileExtensions t tu
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.turing
+ repos 524
 
 semanticScholar 12
  year|title|doi|citations|influentialCitations|authors|paperId

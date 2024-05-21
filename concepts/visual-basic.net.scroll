@@ -1,29 +1,19 @@
 import ../code/conceptPage.scroll
+
 id visual-basic.net
 name Visual Basic .NET
 appeared 2001
 tags pl
 website https://docs.microsoft.com/dotnet/visual-basic/
-documentation https://learn.microsoft.com/en-us/dotnet/visual-basic/
 aka vb.net VisualBasic.NET
+
 fileExtensions vb
-originCommunity Microsoft
-
 visualParadigm false
-
-hasConstructors true
-hasOperatorOverloading true
-hasLineComments true
- ' A comment
-hasComments true
- ' A comment
-hasSemanticIndentation false
-hasCaseInsensitiveIdentifiers true
-hasBooleans true
-
-lineCommentToken '
-booleanTokens True False
-keywords AddHandler AddressOf Alias And AndAlso As Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End End EndIf Enum Erase Error Event Exit False Finally For For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module Module MustInherit MustOverride MyBase MyClass Namespace Narrowing New New Operator Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim REM RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor #Const #Else #ElseIf #End #If = & &= * *= / /= \ \= ^ ^= + += - -= >> >>= << <<=
+clocExtensions VB vb vbproj
+fileType text
+documentation https://learn.microsoft.com/en-us/dotnet/visual-basic/
+packageRepository https://www.nuget.org/
+originCommunity Microsoft
 
 example
  Imports System.Console
@@ -65,6 +55,21 @@ example
  
  End Module
 
+keywords AddHandler AddressOf Alias And AndAlso As Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End End EndIf Enum Erase Error Event Exit False Finally For For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module Module MustInherit MustOverride MyBase MyClass Namespace Narrowing New New Operator Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim REM RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor #Const #Else #ElseIf #End #If = & &= * *= / /= \ \= ^ ^= + += - -= >> >>= << <<=
+
+lineCommentToken '
+booleanTokens True False
+
+hasConstructors true
+hasOperatorOverloading true
+hasLineComments true
+ ' A comment
+hasComments true
+ ' A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasBooleans true
+
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic_.NET
  example
   System.WindowsApplication1.Forms.Form2.text = " MainForm "
@@ -78,20 +83,10 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Basic_.NET
  appeared 2002
  fileExtensions vb
 
-githubLanguage Visual Basic
- fileExtensions vb vbhtml
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  frk1 hazedumper https://github.com/frk1.png https://github.com/frk1/hazedumper "Visual Basic" #945db7 422 239 15 "up to date csgo offsets and hazedumper config"
-  mymmsc books https://github.com/mymmsc.png https://github.com/mymmsc/books "Visual Basic" #945db7 926 481 31 常用书籍
- trendingProjectsCount 3
- type programming
- aceMode text
- codemirrorMode vb
- codemirrorMimeType text/x-vb
- tmScope source.vbnet
- aliases visual basic or vbnet or vb .net or vb.net
- repos 935363
+hopl https://hopl.info/showlanguage.prx?exp=3724
+tiobe Visual Basic .NET
+ currentRank 7
+
 githubBigQuery Visual Basic .NET
  repos 322
  users 285
@@ -109,19 +104,24 @@ linguistGrammarRepo https://github.com/peters-ben-0007/VBDotNetSyntax
   End Module
   
 
+isbndb 0
+
+githubLanguage Visual Basic
+ fileExtensions vb vbhtml
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  frk1 hazedumper https://github.com/frk1.png https://github.com/frk1/hazedumper "Visual Basic" #945db7 422 239 15 "up to date csgo offsets and hazedumper config"
+  mymmsc books https://github.com/mymmsc.png https://github.com/mymmsc/books "Visual Basic" #945db7 926 481 31 常用书籍
+ trendingProjectsCount 3
+ type programming
+ aceMode text
+ codemirrorMode vb
+ codemirrorMimeType text/x-vb
+ tmScope source.vbnet
+ aliases visual basic or vbnet or vb .net or vb.net
+ repos 935363
+
 indeedJobs visual basic.NET developer
  2022 3447
 
-tiobe Visual Basic .NET
- currentRank 7
-hopl https://hopl.info/showlanguage.prx?exp=3724
-
-packageRepository https://www.nuget.org/
-
-fileType text
-
-isbndb 0
-
 semanticScholar 0
-
-clocExtensions VB vb vbproj

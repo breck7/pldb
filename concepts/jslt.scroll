@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id jslt
 name JSLT
 appeared 2017
-tags pl
 creators Lars Marius Garshol
+tags pl
+
+writtenIn java markdown json html yaml gradle bourne-shell lisp
+repoStats
+ firstCommit 2017
+ commits 515
+ committers 16
+ files 178
+ newestCommit 2024
 country Norway
 originCommunity https://github.com/schibsted
 
-hasFloats true
-hasIntegers true
-hasLineComments true
-hasComments true
+pygmentsHighlighter JSLT
+ filename jslt.py
+ fileExtensions jslt
 
 githubRepo https://github.com/schibsted/jslt
  firstCommit 2017
@@ -22,15 +30,7 @@ githubRepo https://github.com/schibsted/jslt
  description JSON query and transformation language
  issues 66
 
-repoStats
- firstCommit 2017
- commits 515
- committers 16
- files 178
- newestCommit 2024
-
-pygmentsHighlighter JSLT
- filename jslt.py
- fileExtensions jslt
-
-writtenIn java markdown json html yaml gradle bourne-shell lisp
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true

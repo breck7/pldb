@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id nrl
 name Namespace Routing Language
 appeared 2003
 tags xmlFormat
-reference https://relaxng.org/jclark/nrl.html
 aka nrl
+
 country Thailand
 originCommunity Thai Open Source Software Center Ltd
+reference https://relaxng.org/jclark/nrl.html
 
 example
  <rules xmlns="http://www.thaiopensource.com/validate/nrl">

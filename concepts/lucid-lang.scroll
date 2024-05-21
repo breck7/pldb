@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id lucid-lang
 name Lucid
 appeared 2014
-tags template
 creators Chris Done
-country England
-originCommunity https://github.com/chrisdone/lucid/issues
+tags template
 
 writtenIn haskell markdown yaml css javascript dockerfile
+repoStats
+ firstCommit 2014
+ commits 258
+ committers 30
+ files 45
+ newestCommit 2024
+country England
+originCommunity https://github.com/chrisdone/lucid/issues
 
 example
  table_ [rows_ "2"]
@@ -24,10 +31,3 @@ githubRepo https://github.com/chrisdone/lucid
  updated 2022
  description Clear to write, read and edit DSL for writing HTML
  issues 0
-
-repoStats
- firstCommit 2014
- commits 258
- committers 30
- files 45
- newestCommit 2024

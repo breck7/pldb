@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ciel
 name Ciel
 appeared 2010
-tags pl
 creators Ron Garret
+tags pl
 conceptDescription Ciel is a lisp-like language implemented in C++.  What Clojure is to Java, Ciel is designed to be to C++.
-country United States
-originCommunity https://flownet.com
 
 writtenIn cpp make
+repoStats
+ firstCommit 2010
+ commits 6
+ committers 3
+ files 14
+ newestCommit 2017
+country United States
+originCommunity https://flownet.com
 
 example
  (set lambda fn)
@@ -25,10 +32,3 @@ githubRepo https://github.com/rongarret/ciel
  updated 2022
  description A Lisp-like language implemented in C++
  issues 0
-
-repoStats
- firstCommit 2010
- commits 6
- committers 3
- files 14
- newestCommit 2017

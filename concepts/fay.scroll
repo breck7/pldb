@@ -1,14 +1,25 @@
 import ../code/conceptPage.scroll
+
 id fay
 name fay
 appeared 2012
-tags pl
 creators Chris Done
+tags pl
 website https://github.com/faylang/fay/wiki
+
+isOpenSource true
+writtenIn haskell rescript html markdown yaml bourne-shell bash json xml
+compilesTo javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1159
+ committers 51
+ files 524
+ newestCommit 2021
 country Australia and Sweden and United States
 originCommunity https://github.com/faylang/
-
-compilesTo javascript
 
 example
  {-# LANGUAGE EmptyDataDecls #-}
@@ -37,6 +48,7 @@ example
    putStrLn "Hello Console!"
    alert "Hello Alert!"
    addWindowEvent "load" greet
+twitter https://twitter.com/fayhaskell
 
 githubRepo https://github.com/faylang/fay
  firstCommit 2012
@@ -48,18 +60,4 @@ githubRepo https://github.com/faylang/fay
  description A proper subset of Haskell that compiles to JavaScript
  issues 24
 
-repoStats
- firstCommit 2012
- commits 1159
- committers 51
- files 524
- newestCommit 2021
-
-twitter https://twitter.com/fayhaskell
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn haskell rescript html markdown yaml bourne-shell bash json xml

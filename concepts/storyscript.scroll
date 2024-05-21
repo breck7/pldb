@@ -1,23 +1,12 @@
 import ../code/conceptPage.scroll
+
 id storyscript
 name storyscript
 appeared 2017
 tags pl
+website https://storyscript.com
 isFinished true
 conceptDescription Storyscript is a language, editor, database, infra and community all-in-one. Create holistic apps, tools and workflows blazing fast that power your business.
-website https://storyscript.com
-domainName storyscript.com
- registered 2010
- awisRank
-  2022 10081574
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  ###
@@ -70,6 +59,7 @@ example
      return input
  name(input:1)
  # >>> 1
+twitter https://twitter.com/storyscript_
 
 githubRepo https://github.com/storyscript/welcome
  firstCommit 2017
@@ -81,4 +71,15 @@ githubRepo https://github.com/storyscript/welcome
  description The polyglot, cloud-native programming language for zero-devops deployments into Kubernetes.
  issues 169
 
-twitter https://twitter.com/storyscript_
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName storyscript.com
+ registered 2010
+ awisRank
+  2022 10081574

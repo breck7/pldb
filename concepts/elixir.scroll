@@ -1,23 +1,87 @@
 import ../code/conceptPage.scroll
+
 id elixir
 name Elixir
 appeared 2011
-tags pl
 creators José Valim
+tags pl
 website https://elixir-lang.org
+
+isOpenSource true
+writtenIn elixir markdown erlang yaml bourne-shell eex make powershell
+tryItOnline elixir
+officialBlogUrl https://elixir-lang.org/blog/
+fileExtensions ex exs
+visualParadigm false
+clocExtensions ex exs
+fileType text
 documentation https://elixir-lang.org/docs.html
 documentation https://devdocs.io/elixir~1.5/
-fileExtensions ex exs
+downloadPageUrl https://elixir-lang.org/install.html
+monaco elixir
+rosettaCode http://www.rosettacode.org/wiki/Category:Elixir
+quineRelay Elixir
+packageRepository https://hex.pm/
+ubuntuPackage elixir
+repoStats
+ firstCommit 2011
+ commits 33749
+ committers 1567
+ files 735
+ newestCommit 2024
 country United States
 originCommunity The Elixir Team
-domainName elixir-lang.org
- awisRank
-  2022 141656
-  2017 99108
+projectEuler Elixir
+ memberCount
+  2019 129
+  2022 173
 
-writtenIn elixir markdown erlang yaml bourne-shell eex make powershell
+helloWorldCollection Elixir
+ # Hello world in Elixir
+ 
+ defmodule HelloWorld do
+   IO.puts "Hello, World!"
+ end
+pygmentsHighlighter Elixir
+ filename erlang.py
+ fileExtensions ex eex exs
+rijuRepl https://riju.codes/elixir
+ example
+  IO.puts("Hello, world!")
+  
+subreddit https://reddit.com/r/elixir
+ memberCount
+  2022 23468
+twitter https://twitter.com/elixirlang
+leachim6 Elixir
+ filepath e/Elixir.exs
+ fileExtensions exs
+ example
+  #!/usr/bin/env elixir
+  IO.puts "Hello World"
+  
+gource https://www.youtube.com/watch?v=qhkwG5OKyHk
+languageServerProtocolProject https://github.com/elixir-lsp/elixir-ls
+ writtenIn elixir
 
-visualParadigm false
+meetup https://www.meetup.com/topics/elixir
+ memberCount 44835
+ groupCount 211
+keywords after and catch do else end false fn in nil not or rescue true when
+githubRepo https://github.com/elixir-lang/elixir
+ stars 20394
+ forks 2911
+ subscribers 680
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+ issues 20
+
+lineCommentToken #
+printToken IO.puts
+stringToken "
+booleanTokens true false
 
 canDoShebang true
  #!/usr/bin/env elixir
@@ -124,30 +188,7 @@ hasCaseInsensitiveIdentifiers false
 hasUnicodeIdentifiers true
  δ = 0.00001
 
-lineCommentToken #
-printToken IO.puts
-stringToken "
-booleanTokens true false
-keywords after and catch do else end false fn in nil not or rescue true when
-
-gource https://www.youtube.com/watch?v=qhkwG5OKyHk
-githubRepo https://github.com/elixir-lang/elixir
- stars 20394
- forks 2911
- subscribers 680
- created 2011
- updated 2022
- firstCommit 2011
- description Elixir is a dynamic, functional language designed for building scalable and maintainable applications
- issues 20
-
-repoStats
- firstCommit 2011
- commits 33749
- committers 1567
- files 735
- newestCommit 2024
-
+jupyterKernel https://github.com/pprzetacznik/IElixir
 wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
  example
   task = Task.async fn -> perform_complex_action() end
@@ -163,34 +204,17 @@ wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
  appeared 2011
  fileExtensions ex exs
 
-githubLanguage Elixir
- fileExtensions ex exs
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  phoenixframework phoenix_live_view https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix_live_view Elixir #6e4a7e 2197 180 90 "Rich, real-time user experiences with server-rendered HTML"
-  elixir-lang elixir https://github.com/elixir-lang.png https://github.com/elixir-lang/elixir Elixir #6e4a7e 15832 2267 174 "Elixir is a dynamic, functional language designed for building scalable and maintainable applications"
-  elixir-ecto ecto https://github.com/elixir-ecto.png https://github.com/elixir-ecto/ecto Elixir #6e4a7e 4322 1019 44 "A database wrapper and language integrated query for Elixir"
-  phoenixframework phoenix https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix Elixir #6e4a7e 14194 1801 136 "Productive. Reliable. Fast."
-  absinthe-graphql absinthe https://github.com/absinthe-graphql.png https://github.com/absinthe-graphql/absinthe Elixir #6e4a7e 2846 280 49 "The GraphQL toolkit for Elixir"
-  derekkraan horde https://github.com/derekkraan.png https://github.com/derekkraan/horde Elixir #6e4a7e 569 44 32 "Horde is a distributed Supervisor and Registry backed by DeltaCrdt"
-  adriankumpf teslamate https://github.com/adriankumpf.png https://github.com/adriankumpf/teslamate Elixir #6e4a7e 136 15 44 "A self-hosted data logger for your Tesla 🚘"
-  poanetwork blockscout https://github.com/poanetwork.png https://github.com/poanetwork/blockscout Elixir #6e4a7e 639 229 30 "Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains."
-  chrismccord phoenix_live_view_example https://github.com/chrismccord.png https://github.com/chrismccord/phoenix_live_view_example Elixir #6e4a7e 273 91 10
- trendingProjectsCount 10
- type programming
- filenames mix.lock
- interpreters elixir
- aceMode elixir
- tmScope source.elixir
- repos 89242
+tiobe Elixir
+
+domainName elixir-lang.org
+ awisRank
+  2022 141656
+  2017 99108
+
 githubBigQuery Elixir
  repos 6816
  users 4594
 
-monaco elixir
-pygmentsHighlighter Elixir
- filename erlang.py
- fileExtensions ex eex exs
 linguistGrammarRepo https://github.com/elixir-editors/elixir-tmbundle
  firstCommit 2011
  lastCommit 2022
@@ -209,62 +233,6 @@ linguistGrammarRepo https://github.com/elixir-editors/elixir-tmbundle
     "poison": {:hex, :poison, "1.3.1"},
     "ranch": {:hex, :ranch, "1.0.0"}}
   
-languageServerProtocolProject https://github.com/elixir-lsp/elixir-ls
- writtenIn elixir
-
-projectEuler Elixir
- memberCount
-  2019 129
-  2022 173
-helloWorldCollection Elixir
- # Hello world in Elixir
- 
- defmodule HelloWorld do
-   IO.puts "Hello, World!"
- end
-leachim6 Elixir
- filepath e/Elixir.exs
- fileExtensions exs
- example
-  #!/usr/bin/env elixir
-  IO.puts "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Elixir
-quineRelay Elixir
-
-rijuRepl https://riju.codes/elixir
- example
-  IO.puts("Hello, world!")
-  
-tryItOnline elixir
-
-indeedJobs elixir developer
- 2017 214
-stackOverflowSurvey
- 2021
-  users 1438
-  medianSalary 80077
-  fans 3374
-  percentageUsing 0.02
-officialBlogUrl https://elixir-lang.org/blog/
-downloadPageUrl https://elixir-lang.org/install.html
-
-subreddit https://reddit.com/r/elixir
- memberCount
-  2022 23468
-meetup https://www.meetup.com/topics/elixir
- memberCount 44835
- groupCount 211
-
-tiobe Elixir
-
-packageRepository https://hex.pm/
-
-twitter https://twitter.com/elixirlang
-ubuntuPackage elixir
-jupyterKernel https://github.com/pprzetacznik/IElixir
-fileType text
-isOpenSource true
 
 isbndb 30
  year|publisher|title|authors|isbn13
@@ -300,10 +268,38 @@ isbndb 30
  20180201|Pragmatic Bookshelf|Learn Functional Programming with Elixir|Ulisses Almeida|9781680502459
  20180101|Pragmatic Bookshelf|Functional Web Development with Elixir, OTP, and Phoenix|Lance Halvorsen|9781680502435
 
+githubLanguage Elixir
+ fileExtensions ex exs
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  phoenixframework phoenix_live_view https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix_live_view Elixir #6e4a7e 2197 180 90 "Rich, real-time user experiences with server-rendered HTML"
+  elixir-lang elixir https://github.com/elixir-lang.png https://github.com/elixir-lang/elixir Elixir #6e4a7e 15832 2267 174 "Elixir is a dynamic, functional language designed for building scalable and maintainable applications"
+  elixir-ecto ecto https://github.com/elixir-ecto.png https://github.com/elixir-ecto/ecto Elixir #6e4a7e 4322 1019 44 "A database wrapper and language integrated query for Elixir"
+  phoenixframework phoenix https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix Elixir #6e4a7e 14194 1801 136 "Productive. Reliable. Fast."
+  absinthe-graphql absinthe https://github.com/absinthe-graphql.png https://github.com/absinthe-graphql/absinthe Elixir #6e4a7e 2846 280 49 "The GraphQL toolkit for Elixir"
+  derekkraan horde https://github.com/derekkraan.png https://github.com/derekkraan/horde Elixir #6e4a7e 569 44 32 "Horde is a distributed Supervisor and Registry backed by DeltaCrdt"
+  adriankumpf teslamate https://github.com/adriankumpf.png https://github.com/adriankumpf/teslamate Elixir #6e4a7e 136 15 44 "A self-hosted data logger for your Tesla 🚘"
+  poanetwork blockscout https://github.com/poanetwork.png https://github.com/poanetwork/blockscout Elixir #6e4a7e 639 229 30 "Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains."
+  chrismccord phoenix_live_view_example https://github.com/chrismccord.png https://github.com/chrismccord/phoenix_live_view_example Elixir #6e4a7e 273 91 10
+ trendingProjectsCount 10
+ type programming
+ filenames mix.lock
+ interpreters elixir
+ aceMode elixir
+ tmScope source.elixir
+ repos 89242
+
+indeedJobs elixir developer
+ 2017 214
+stackOverflowSurvey
+ 2021
+  users 1438
+  medianSalary 80077
+  fans 3374
+  percentageUsing 0.02
+
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  2016|Elixir programming language evaluation for IoT|10.1109/ISCE.2016.7797392|6|0|Geovane Fedrecheski and L. Costa and M. Zuffo|bb548cf88bde14637e67dce390ed5c4b1e339d11
  2020|A Gradual Type System for Elixir|10.1145/3427081.3427084|2|0|Mauricio Cassola and Agustín Talagorria and Alberto Pardo and Marcos Viera|2f7b1940b91bc5a13cc44e0dc6ff0fa26298de3d
  2017|An Elixir library for programming concurrent and distributed embedded systems|10.1145/3079368.3079383|1|0|Humberto Rodríguez-Avila and E. G. Boix and W. Meuter|8b499715223c14b95dcbac77fdf03c0bb285a833
-
-clocExtensions ex exs

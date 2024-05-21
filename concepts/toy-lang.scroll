@@ -1,18 +1,19 @@
 import ../code/conceptPage.scroll
+
 id toy-lang
 name Toy
 appeared 2018
-tags pl
 creators Kayne Ruse
+tags pl
 website https://toylang.com/
-domainName toylang.com
- registered 2019
 
 writtenIn c markdown make json cpp xml yaml
-
-hasPrintDebugging true
-
-printToken print
+repoStats
+ firstCommit 2022
+ commits 749
+ committers 7
+ files 168
+ newestCommit 2023
 
 example
  if (1 < 2) {
@@ -31,11 +32,11 @@ githubRepo https://github.com/Ratstail91/Toy
  forks 1
  issues 0
 
-repoStats
- firstCommit 2022
- commits 749
- committers 7
- files 168
- newestCommit 2023
+printToken print
+
+hasPrintDebugging true
+
+domainName toylang.com
+ registered 2019
 
 isbndb 0

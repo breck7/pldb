@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id dashrep
 name Dashrep
 appeared 2011
-tags pl
 creators Richard Fobes
-conceptDescription Dashrep™, the text-manipulation programming language that is powerful and fast, yet simple
+tags pl
 website http://www.dashrep.org/
+conceptDescription Dashrep™, the text-manipulation programming language that is powerful and fast, yet simple
+
+writtenIn perl html cpp yaml xml
+repoStats
+ firstCommit 2011
+ commits 2765
+ committers 1
+ files 1945
+ newestCommit 2023
 country United States
 originCommunity www.solutionscreative.com
 
@@ -28,12 +37,3 @@ githubRepo https://github.com/cpsolver/Dashrep-language
  created 2011
  updated 2022
  description Dashrep is a versatile descriptive programming language based on hyphenated phrases being successively expanded into replacement text. It is a much more flexible alternative to using a template language.
-
-repoStats
- firstCommit 2011
- commits 2765
- committers 1
- files 1945
- newestCommit 2023
-
-writtenIn perl html cpp yaml xml

@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id simulink
 name Simulink
 appeared 1984
 tags pl
 website https://www.mathworks.com/products/simulink.html?s_cid=wiki_simulink_2
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 originCommunity MathWorks
 
 wikipedia https://en.wikipedia.org/wiki/Simulink
@@ -17,16 +22,6 @@ wikipedia https://en.wikipedia.org/wiki/Simulink
  appeared 2017
 
 tiobe Simulink
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- MATLAB and Simulink for Engineers|2011|Agam Kumar Tyagi|19308397|4.33|12|0
- Introduction To Simulink With Engineering Applications||Steven T. Karris|2003806|2.00|1|0
- Modeling and Simulation in Simulink for Engineers and Scientists|2005|Mohammad Nuruzzaman|160556|3.50|2|0
 
 isbndb 16
  year|publisher|title|authors|isbn13
@@ -62,3 +57,9 @@ semanticScholar 13
  2016|Automation tool to deploy Simulink models into programmable system-on-chip|10.1109/INDUSCON.2016.7874519|1|0|Alexandre A. A. de Almeida and W. D. A. P. Ferreira and A. D. da Silva|195748f55862b1349b04a0096e275650ad531c2c
  2017|Actuation of Electro-Pneumatic System using MATLAB Simulink and Arduino Controller- A case of a Mechatronics systems Lab|10.2991/ICCASP-16.2017.10|1|0|P. Parikh and R. Vasani and S. Sheth and J. Gohil|5c402f4df6ec95ee17417613674a8b2cdc0bc30f
  2019|COMPARISON OF R AND MATLAB SIMULINK in Educating High School Students with ODE Modeling Skills|10.18260/2-1-370.660-105620|1|0|Jianming Geng|d0d11dd94a1e191b255156c708f4357feebac4cd
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ MATLAB and Simulink for Engineers|2011|Agam Kumar Tyagi|19308397|4.33|12|0
+ Introduction To Simulink With Engineering Applications||Steven T. Karris|2003806|2.00|1|0
+ Modeling and Simulation in Simulink for Engineers and Scientists|2005|Mohammad Nuruzzaman|160556|3.50|2|0

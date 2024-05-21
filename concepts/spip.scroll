@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id spip
 name SPIP
 appeared 1977
 tags pl
-reference https://semanticscholar.org/paper/89137321e60ede138005ba4ff84ea3c5a57496e7
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country France
 originCommunity https://www.spip.net/en_article2122.html
+reference https://semanticscholar.org/paper/89137321e60ede138005ba4ff84ea3c5a57496e7
 
 wikipedia https://en.wikipedia.org/wiki/SPIP
  related php sql sqlite postgresql html xml csv yaml url
@@ -17,6 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/SPIP
  appeared 2001
 
 hopl https://hopl.info/showlanguage.prx?exp=7981
-
-isOpenSource true
-centralPackageRepositoryCount 0

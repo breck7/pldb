@@ -1,14 +1,31 @@
 import ../code/conceptPage.scroll
+
 id xojo
 name Xojo
 appeared 1996
 tags pl
 website http://xojo.com
 aka REALbasic
-domainName xojo.com
- awisRank
-  2022 238343
-  2017 155033
+
+isOpenSource false
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Xojo
+centralPackageRepositoryCount 0
+
+twitter https://twitter.com/xojo
+leachim6 RealBasic
+ filepath r/RealBasic.realbasic
+ fileExtensions realbasic
+ example
+  Function Run(args() as String) As Integer
+    Print "Hello World"
+    Quit
+  End Function
+  
+
+lineCommentToken //
+printToken Print
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -17,10 +34,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken Print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Xojo
  example
@@ -37,13 +50,13 @@ wikipedia https://en.wikipedia.org/wiki/Xojo
  dailyPageViews 75
  appeared 2018
 
-githubLanguage Xojo
- fileExtensions xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.xojo
- repos 570
+tiobe Xojo
+
+domainName xojo.com
+ awisRank
+  2022 238343
+  2017 155033
+
 githubBigQuery Xojo
  repos 68
  users 43
@@ -71,22 +84,12 @@ linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
   #tag EndToolbar
   
 
-leachim6 RealBasic
- filepath r/RealBasic.realbasic
- fileExtensions realbasic
- example
-  Function Run(args() as String) As Integer
-    Print "Hello World"
-    Quit
-  End Function
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Xojo
-
-tiobe Xojo
-
-twitter https://twitter.com/xojo
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+githubLanguage Xojo
+ fileExtensions xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.xojo
+ repos 570
 
 semanticScholar 0

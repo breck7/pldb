@@ -1,14 +1,16 @@
 import ../code/conceptPage.scroll
+
 id pml
 name PML
 appeared 1986
-tags textMarkup
 creators Christian Neumanns
+tags textMarkup
 website https://www.pml-lang.dev/
-reference https://medium.com/@christian.ppl
 standsFor Practical Markup Language
+
 country Unknown
 originCommunity https://github.com/pml-lang
+reference https://medium.com/@christian.ppl
 
 example
  [doc [title PML Demo]

@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id awl
 name awl
 appeared 2014
-tags pl
 creators Zaven Muradyan
+tags pl
 website http://skepsi.me/awl/
+
+writtenIn c javascript markdown css make html bash
+repoStats
+ firstCommit 2014
+ commits 185
+ committers 4
+ files 51
+ newestCommit 2021
 country United States
 originCommunity Zaven Muradyan
 
@@ -18,15 +27,6 @@ githubRepo https://github.com/voithos/awl
  description Experimental Lispy mini-language
  issues 0
 
-repoStats
- firstCommit 2014
- commits 185
- committers 4
- files 51
- newestCommit 2021
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  8173123|Show HN: Awl, a toy Lisp language written in C and transpiled to JavaScript|2014-08-13 14:46:55 UTC|1407941215|voithos|1|8
-
-writtenIn c javascript markdown css make html bash

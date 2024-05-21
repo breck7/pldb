@@ -1,26 +1,28 @@
 import ../code/conceptPage.scroll
+
 id common-workflow-language
 name CWL
 appeared 2014
-tags pl
 creators Luka Stojanovic
-conceptDescription The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
+tags pl
 website https://www.commonwl.org/
-reference https://doi.org/10.6084/m9.figshare.3115156.v2
+conceptDescription The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
+
+isOpenSource true
+writtenIn python yaml markdown json restructuredtext bourne-shell javascript make ini dockerfile toml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 5059
+ committers 161
+ files 968
+ newestCommit 2024
 country Various
 originCommunity https://w3id.org/cwl/meeting_minutes
-domainName commonwl.org
- registered 2015
- awisRank
-  2022 1200759
+reference https://doi.org/10.6084/m9.figshare.3115156.v2
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+twitter https://twitter.com/commonwl
 
 githubRepo https://github.com/common-workflow-language/cwltool
  firstCommit 2014
@@ -32,24 +34,19 @@ githubRepo https://github.com/common-workflow-language/cwltool
  description Common Workflow Language reference implementation
  issues 396
 
-repoStats
- firstCommit 2014
- commits 5059
- committers 161
- files 968
- newestCommit 2024
+lineCommentToken #
 
-githubLanguage Common Workflow Language
- fileExtensions cwl
- trendingProjectsCount 0
- type programming
- interpreters cwl-runner
- aceMode yaml
- codemirrorMode yaml
- codemirrorMimeType text/x-yaml
- tmScope source.cwl
- aliases cwl
- repos 464
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName commonwl.org
+ registered 2015
+ awisRank
+  2022 1200759
+
 githubBigQuery Common Workflow Language
  repos 75
  users 57
@@ -99,11 +96,16 @@ linguistGrammarRepo https://github.com/manabuishii/language-cwl
   stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
   
 
-twitter https://twitter.com/commonwl
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn python yaml markdown json restructuredtext bourne-shell javascript make ini dockerfile toml
+githubLanguage Common Workflow Language
+ fileExtensions cwl
+ trendingProjectsCount 0
+ type programming
+ interpreters cwl-runner
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.cwl
+ aliases cwl
+ repos 464

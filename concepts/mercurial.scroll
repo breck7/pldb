@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id mercurial
 name Mercurial
 appeared 2005
 tags application
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.mercurial-scm.org/wiki/BugTracker
 
@@ -15,7 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Mercurial
  backlinksCount 228
  revisionCount 752
  appeared 2005
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

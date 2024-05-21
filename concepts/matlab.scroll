@@ -1,17 +1,58 @@
 import ../code/conceptPage.scroll
+
 id matlab
 name MATLAB
 appeared 1984
-tags pl
 creators Cleve Moler
+tags pl
 website http://mathworks.com/products/matlab
+
+officialBlogUrl https://blogs.mathworks.com/matlab/
+releaseNotesUrl https://www.mathworks.com/help/matlab/release-notes.html
+visualParadigm true
+clocExtensions m
+fileType text
 documentation https://www.mathworks.com/help/matlab/
 emailList https://lists.rothamsted.ac.uk/mailman/listinfo/matlab-users
+eventsPageUrl https://www.mathworks.com/company/events.html
+faqPageUrl https://www.mathworks.com/matlabcentral/answers/faqs
+rosettaCode http://www.rosettacode.org/wiki/Category:MATLAB
+packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
 country United States
 originCommunity University of New Mexico
-releaseNotesUrl https://www.mathworks.com/help/matlab/release-notes.html
+projectEuler Matlab
+ memberCount
+  2019 3028
+  2022 3252
 
-visualParadigm true
+helloWorldCollection MATLAB
+ % Hello World in MATLAB.
+ 
+ disp('Hello World');
+ 
+pygmentsHighlighter Matlab
+ filename matlab.py
+ fileExtensions m
+subreddit https://reddit.com/r/matlab
+ memberCount
+  2017 13222
+  2022 46296
+twitter https://twitter.com/matlab
+leachim6 MATLAB
+ filepath m/MATLAB.m
+ fileExtensions m
+ example
+  disp('Hello World')
+  
+
+meetup https://www.meetup.com/topics/matlab
+ memberCount 10609
+ groupCount 25
+
+lineCommentToken %
+multiLineCommentTokens %{ %}
+printToken disp
+stringToken '
 
 hasStrings true
  "hello world"
@@ -42,11 +83,8 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasScientificNotation true
 
-lineCommentToken %
-multiLineCommentTokens %{ %}
-printToken disp
-stringToken '
-
+jupyterKernel https://github.com/imatlab/imatlab
+jupyterKernel https://github.com/calysto/matlab_kernel
 wikipedia https://en.wikipedia.org/wiki/MATLAB
  example
   [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
@@ -65,28 +103,15 @@ wikipedia https://en.wikipedia.org/wiki/MATLAB
  revisionCount 2461
  appeared 1984
 
-githubLanguage Matlab
- fileExtensions matlab m
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  luanfujun deep-photo-styletransfer https://github.com/luanfujun.png https://github.com/luanfujun/deep-photo-styletransfer MATLAB #e16737 9275 1342 92 "Code and data for paper ""Deep Photo Style Transfer"": https://arxiv.org/abs/1703.07511"
-  HuangCongQing Algorithms_MathModels https://github.com/HuangCongQing.png https://github.com/HuangCongQing/Algorithms_MathModels MATLAB #e16737 376 162 47 "【国赛】【美赛】数学建模相关算法 MATLAB实现"
-  AvaisP machine-learning-programming-assignments-coursera-andrew-ng https://github.com/AvaisP.png https://github.com/AvaisP/machine-learning-programming-assignments-coursera-andrew-ng MATLAB #e16737 218 214 14 "Solutions to Andrew NG's machine learning course on Coursera"
- trendingProjectsCount 4
- type programming
- aceMode matlab
- codemirrorMode octave
- codemirrorMimeType text/x-octave
- tmScope source.matlab
- aliases octave
- repos 311901
+hopl https://hopl.info/showlanguage.prx?exp=2216
+tiobe MATLAB
+ currentRank 12
+pypl Matlab
+
 githubBigQuery MATLAB
  repos 2791
  users 2497
 
-pygmentsHighlighter Matlab
- filename matlab.py
- fileExtensions m
 linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
  firstCommit 2017
  lastCommit 2018
@@ -101,70 +126,6 @@ linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
       d = d./ repmat(d_std, size(d,1), 1);
   end
   
-
-projectEuler Matlab
- memberCount
-  2019 3028
-  2022 3252
-helloWorldCollection MATLAB
- % Hello World in MATLAB.
- 
- disp('Hello World');
- 
-leachim6 MATLAB
- filepath m/MATLAB.m
- fileExtensions m
- example
-  disp('Hello World')
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:MATLAB
-
-indeedJobs matlab engineer
- 2017 6204
-linkedInSkill matlab
- 2018 2602372
-stackOverflowSurvey
- 2021
-  users 3846
-  medianSalary 43948
-  fans 1562
-  percentageUsing 0.05
-officialBlogUrl https://blogs.mathworks.com/matlab/
-eventsPageUrl https://www.mathworks.com/company/events.html
-faqPageUrl https://www.mathworks.com/matlabcentral/answers/faqs
-
-subreddit https://reddit.com/r/matlab
- memberCount
-  2017 13222
-  2022 46296
-meetup https://www.meetup.com/topics/matlab
- memberCount 10609
- groupCount 25
-
-tiobe MATLAB
- currentRank 12
-hopl https://hopl.info/showlanguage.prx?exp=2216
-pypl Matlab
-
-packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
-
-twitter https://twitter.com/matlab
-jupyterKernel https://github.com/imatlab/imatlab
-jupyterKernel https://github.com/calysto/matlab_kernel
-fileType text
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- MATLAB Programming for Engineers|1999|Stephen J. Chapman|4467285|4.10|114|6
- MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|2008|Pascal Wallisch|3922239|3.94|32|0
- MATLAB for Engineers|2010|Holly Moore|18128130|3.95|37|1
- Getting Started with MATLAB: A Quick Introduction for Scientists and Engineers|2009|Rudra Pratap|13368999|4.01|72|4
- MATLAB for Control Engineers|2007|Katsuhiko Ogata|2185450|4.00|38|0
- Essential MATLAB for Engineers and Scientists|1997|Brian D. Hahn|546841|3.86|43|3
- Introduction to MATLAB for Engineers|1998|William J. Palm III|10706762|3.88|17|1
- An Engineers Guide to MATLAB|2000|Edward B. Magrab|3884382|4.29|7|0
- Essentials of MATLAB Programming|2005|Stephen J. Chapman|1175135|4.00|17|0
- Getting Started with MATLAB 7: A Quick Introduction for Scientists and Engineers|2005|Rudra Pratap|337141|4.03|105|5
 
 isbndb 167
  year|publisher|title|authors|isbn13
@@ -336,6 +297,33 @@ isbndb 167
  2014|Springer|Exercises in Computational Mathematics with MATLAB (Problem Books in Mathematics)|Lyche, Tom and Merrien, Jean-Louis|9783662435106
  2010|CRC Press|Computational Intelligence Paradigms: Theory & Applications using MATLAB|Sumathi, S. and Sumathi|9781439809037
 
+githubLanguage Matlab
+ fileExtensions matlab m
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  luanfujun deep-photo-styletransfer https://github.com/luanfujun.png https://github.com/luanfujun/deep-photo-styletransfer MATLAB #e16737 9275 1342 92 "Code and data for paper ""Deep Photo Style Transfer"": https://arxiv.org/abs/1703.07511"
+  HuangCongQing Algorithms_MathModels https://github.com/HuangCongQing.png https://github.com/HuangCongQing/Algorithms_MathModels MATLAB #e16737 376 162 47 "【国赛】【美赛】数学建模相关算法 MATLAB实现"
+  AvaisP machine-learning-programming-assignments-coursera-andrew-ng https://github.com/AvaisP.png https://github.com/AvaisP/machine-learning-programming-assignments-coursera-andrew-ng MATLAB #e16737 218 214 14 "Solutions to Andrew NG's machine learning course on Coursera"
+ trendingProjectsCount 4
+ type programming
+ aceMode matlab
+ codemirrorMode octave
+ codemirrorMimeType text/x-octave
+ tmScope source.matlab
+ aliases octave
+ repos 311901
+
+indeedJobs matlab engineer
+ 2017 6204
+linkedInSkill matlab
+ 2018 2602372
+stackOverflowSurvey
+ 2021
+  users 3846
+  medianSalary 43948
+  fans 1562
+  percentageUsing 0.05
+
 semanticScholar 35
  year|title|doi|citations|influentialCitations|authors|paperId
  2002|The Eyelink Toolbox: Eye tracking with MATLAB and the Psychophysics Toolbox|10.3758/BF03195489|848|47|F. Cornelissen and Enno M Peters and J. Palmer|d0ed7b7fad72097d327cc5fd946cbd1a4e74b7e3
@@ -374,4 +362,15 @@ semanticScholar 35
  2011|McLAB: enabling programming language, compiler and software engineering research for matlab|10.1145/2048147.2048203|2|0|L. Hendren and Jesse Doherty and Anton Dubrau and R. Garg and Nurudeen Lameed and Soroush Radpour and Amina Aslam and Toheed Aslam and Andrew Casey and Maxime Chevalier-Boisvert and Jun Li and Clark Verbrugge and Olivier Savary Bélanger|54603028d353893ad2b357771b6a1e2f7b11ca5b
  2009|Supporting image algebra in the Matlab programming language for compression research|10.1117/12.829203|1|0|M. Schmalz and G. Ritter and Joseph N. Wilson and Eric T. Hayden|cea8433a106f0ffa807ac00d02972a7d34c2d0eb
 
-clocExtensions m
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ MATLAB Programming for Engineers|1999|Stephen J. Chapman|4467285|4.10|114|6
+ MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|2008|Pascal Wallisch|3922239|3.94|32|0
+ MATLAB for Engineers|2010|Holly Moore|18128130|3.95|37|1
+ Getting Started with MATLAB: A Quick Introduction for Scientists and Engineers|2009|Rudra Pratap|13368999|4.01|72|4
+ MATLAB for Control Engineers|2007|Katsuhiko Ogata|2185450|4.00|38|0
+ Essential MATLAB for Engineers and Scientists|1997|Brian D. Hahn|546841|3.86|43|3
+ Introduction to MATLAB for Engineers|1998|William J. Palm III|10706762|3.88|17|1
+ An Engineers Guide to MATLAB|2000|Edward B. Magrab|3884382|4.29|7|0
+ Essentials of MATLAB Programming|2005|Stephen J. Chapman|1175135|4.00|17|0
+ Getting Started with MATLAB 7: A Quick Introduction for Scientists and Engineers|2005|Rudra Pratap|337141|4.03|105|5

@@ -1,17 +1,39 @@
 import ../code/conceptPage.scroll
+
 id markdown
 name Markdown
 appeared 2004
-tags textMarkup
 creators John Gruber and Aaron Swartz
+tags textMarkup
 webRepl https://dillinger.io/
 webRepl https://stackedit.io/app#
-documentation https://www.markdownguide.org/basic-syntax/
-country United States
-originCommunity https://talk.commonmark.org/
 
 influencedBy atx
 compilesTo html
+clocExtensions contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook
+fileType text
+documentation https://www.markdownguide.org/basic-syntax/
+monaco markdown
+codeMirror markdown
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://talk.commonmark.org/
+
+pygmentsHighlighter Markdown
+ filename markup.py
+ fileExtensions md markdown
+rijuRepl https://riju.codes/markdown
+ example
+  Hello, world!
+subreddit https://reddit.com/r/Markdown
+ memberCount
+  2022 2463
+leachim6 Markdown
+ filepath m/Markdown.md
+ fileExtensions md
+ example
+  Hello World
+  
 
 hasSemanticIndentation true
 hasLineComments false
@@ -59,6 +81,29 @@ wikipedia https://en.wikipedia.org/wiki/Markdown
  revisionCount 1124
  appeared 2004
 
+githubBigQuery Markdown
+ repos 8
+ users 8
+
+linguistGrammarRepo https://github.com/atom/language-gfm
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 58
+ commitCount 426
+ sampleCount 8
+ example
+  Tender
+  ======
+  
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 2020|Routledge|R Markdown Cookbook (Chapman & Hall/CRC The R Series)|Xie, Yihui|9780367563837
+ 2017|Chapman and Hall/CRC|blogdown: Creating Websites with R Markdown (Chapman & Hall/CRC The R Series)|Xie, Yihui and Hill, Alison Presmanes and Thomas, Amber|9781138480452
+ 20190816|Springer Nature|Introducing Markdown and Pandoc|Thomas Mailund|9781484251492
+ 08/2013|Packt Publishing|Instant Markdown|Herrero Arturo|9781783559152
+ 20180727|Taylor & Francis|R Markdown|Yihui Xie; J.J. Allaire; Garrett Grolemund|9780429782961
+
 githubLanguage Markdown
  fileExtensions md livemd markdown mdown mdwn mdx mkd mkdn mkdown ronn scd workbook
  trendingProjectsCount 0
@@ -71,55 +116,8 @@ githubLanguage Markdown
  wrap true
  aliases pandoc
  repos 1023
-githubBigQuery Markdown
- repos 8
- users 8
-
-monaco markdown
-codeMirror markdown
-pygmentsHighlighter Markdown
- filename markup.py
- fileExtensions md markdown
-linguistGrammarRepo https://github.com/atom/language-gfm
- firstCommit 2013
- lastCommit 2018
- committerCount 58
- commitCount 426
- sampleCount 8
- example
-  Tender
-  ======
-  
-
-leachim6 Markdown
- filepath m/Markdown.md
- fileExtensions md
- example
-  Hello World
-  
-
-rijuRepl https://riju.codes/markdown
- example
-  Hello, world!
-
-subreddit https://reddit.com/r/Markdown
- memberCount
-  2022 2463
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 5
- year|publisher|title|authors|isbn13
- 2020|Routledge|R Markdown Cookbook (Chapman & Hall/CRC The R Series)|Xie, Yihui|9780367563837
- 2017|Chapman and Hall/CRC|blogdown: Creating Websites with R Markdown (Chapman & Hall/CRC The R Series)|Xie, Yihui and Hill, Alison Presmanes and Thomas, Amber|9781138480452
- 20190816|Springer Nature|Introducing Markdown and Pandoc|Thomas Mailund|9781484251492
- 08/2013|Packt Publishing|Instant Markdown|Herrero Arturo|9781783559152
- 20180727|Taylor & Francis|R Markdown|Yihui Xie; J.J. Allaire; Garrett Grolemund|9780429782961
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|R Markdown|10.1002/wics.1348|22|1|Benjamin Baumer and Dana Udwin|8d26eef104eae6e9d902a39eba546ed182195205
  2019|Codebraid: Live Code in Pandoc Markdown|10.25080/MAJORA-7DDC1DD1-008|2|0|Geoffrey M. Poore|fa7fd0916680a78582c6a05b2e6f65ff9a68106a
-
-clocExtensions contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook

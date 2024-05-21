@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id arret
 name arret
 appeared 2017
-tags pl
 creators Ryan Cumming
+tags pl
+
+writtenIn rust json toml typescript bourne-shell yaml dockerfile markdown
+repoStats
+ firstCommit 2017
+ commits 2587
+ committers 9
+ files 330
+ newestCommit 2021
 
 githubRepo https://github.com/etaoins/arret
  firstCommit 2017
@@ -14,12 +23,3 @@ githubRepo https://github.com/etaoins/arret
  updated 2022
  description Pure functional Lisp implemented in Rust
  issues 5
-
-repoStats
- firstCommit 2017
- commits 2587
- committers 9
- files 330
- newestCommit 2021
-
-writtenIn rust json toml typescript bourne-shell yaml dockerfile markdown

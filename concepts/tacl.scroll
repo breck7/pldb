@@ -1,9 +1,20 @@
 import ../code/conceptPage.scroll
+
 id tacl
 name Tandem Advanced Command Language
 appeared 1999
 tags pl
 standsFor Tandem Advanced Command Language
+
+fileType text
+centralPackageRepositoryCount 0
+
+helloWorldCollection Tandem Advanced Command Language
+ Comment -- Hello World for TACL (Tandem Advanced Command Language)
+ 
+ ?tacl macro
+ 
+ #OUTPUT Hello world
 
 wikipedia https://en.wikipedia.org/wiki/TACL
  example
@@ -18,15 +29,5 @@ wikipedia https://en.wikipedia.org/wiki/TACL
  revisionCount 60
  appeared 1999
 
-helloWorldCollection Tandem Advanced Command Language
- Comment -- Hello World for TACL (Tandem Advanced Command Language)
- 
- ?tacl macro
- 
- #OUTPUT Hello world
-
-tiobe TACL
 hopl https://hopl.info/showlanguage.prx?exp=1368
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe TACL

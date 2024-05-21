@@ -1,30 +1,40 @@
 import ../code/conceptPage.scroll
+
 id odin
 name odin
 appeared 2016
 tags pl
 website https://odin-lang.org
+
+writtenIn odin c cpp markdown make python yaml bourne-shell xml assembly-language glsl html javascript nix
+clocExtensions odin
 documentation https://odin-lang.org/docs/
+repoStats
+ firstCommit 2016
+ commits 11111
+ committers 369
+ files 1383
+ newestCommit 2024
 country The Netherlands and Denmark and Sweden and United States and Germany
 originCommunity https://github.com/odin-lang
-domainName odin-lang.org
- registered 2017
- awisRank
-  2022 1231489
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken //
-printToken fmt.println
-stringToken "
-
+pygmentsHighlighter ODIN
+ filename archetype.py
+ fileExtensions odin
+rijuRepl https://riju.codes/odin
+ example
+  package main
+  
+  import "core:fmt"
+  
+  main :: proc() {
+      fmt.printf("Hello, world!\n");
+  }
+  
+ description Alternative to C with goals of simplicity, high performance, built for modern systems, and joy of programming
+ fileExtensions odin
+ website https://odin-lang.org/
+ gitRepo https://github.com/odin-lang/Odin
 example
  package main
  
@@ -48,39 +58,6 @@ example
   fmt.printf("The program \"%s\" calculates the value %d\n",
              program, accumulator);
  }
-
-githubRepo https://github.com/odin-lang/Odin
- firstCommit 2016
- stars 2861
- forks 236
- subscribers 72
- created 2016
- updated 2022
- description Odin Programming Language
- issues 217
-
-repoStats
- firstCommit 2016
- commits 11111
- committers 369
- files 1383
- newestCommit 2024
-
-githubLanguage Odin
- type programming
- fileExtensions odin
- aceMode text
- tmScope source.odin
- aliases odinlang or odin-lang
- repos 417
-githubBigQuery Odin
- repos 6
- users 5
-
-pygmentsHighlighter ODIN
- filename archetype.py
- fileExtensions odin
-
 leachim6 Odin
  filepath o/Odin.odin
  fileExtensions odin
@@ -94,27 +71,49 @@ leachim6 Odin
   }
   
 
-rijuRepl https://riju.codes/odin
- example
-  package main
-  
-  import "core:fmt"
-  
-  main :: proc() {
-      fmt.printf("Hello, world!\n");
-  }
-  
- description Alternative to C with goals of simplicity, high performance, built for modern systems, and joy of programming
- fileExtensions odin
- website https://odin-lang.org/
- gitRepo https://github.com/odin-lang/Odin
+githubRepo https://github.com/odin-lang/Odin
+ firstCommit 2016
+ stars 2861
+ forks 236
+ subscribers 72
+ created 2016
+ updated 2022
+ description Odin Programming Language
+ issues 217
+
+lineCommentToken //
+printToken fmt.println
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName odin-lang.org
+ registered 2017
+ awisRank
+  2022 1231489
+
+githubBigQuery Odin
+ repos 6
+ users 5
 
 isbndb 0
+
+githubLanguage Odin
+ type programming
+ fileExtensions odin
+ aceMode text
+ tmScope source.odin
+ aliases odinlang or odin-lang
+ repos 417
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  2012|Towards programmable enterprise WLANS with Odin|10.1145/2342441.2342465|315|35|L. Suresh and Julius Schulz-Zander and R. Merz and A. Feldmann and T. Vazão|5a1f93a0003bd2942c336b0c0bbfc96ade963bfc
  2019|Verilog Loop Unrolling, Module Generation, Part-Select and Arithmetic Right Shift Support in Odin II|10.1145/3339985.3358497|1|0|Scott Young and Alexandrea Demmings and N. E. Ivari and Jean-Philippe Legault and K. Kent|a26062d057c1b6a363b90283ef35ce7e34135f1d
-
-clocExtensions odin
-writtenIn odin c cpp markdown make python yaml bourne-shell xml assembly-language glsl html javascript nix

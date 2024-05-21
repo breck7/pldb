@@ -1,25 +1,22 @@
 import ../code/conceptPage.scroll
+
 id quake
 name Quake
 appeared 2001
 tags pl
 conceptDescription Quake is a simple, specialized language and its interpreter drawing on elements of the C language, the Bourne shell, and the C pre-processor. The cm3 compiler includes a quake interpreter as its extension language. In fact, the configuration file, cm3.cfg, and m3makefiles are quake scripts. Quake was designed to be a simple extension language for the builder. Building a complete, general-purpose language was not one of the goals. Cm3 calls out to quake every time it needs to do something that needs to be specialized such as compiling C files or linking.
-reference https://modula3.elegosoft.com/cm3/doc/help/cm3/quake.html
-reference https://www.computer-dictionary-online.org/definitions-q/quake.html
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Digital Equipment Corporation
+reference https://modula3.elegosoft.com/cm3/doc/help/cm3/quake.html
+reference https://www.computer-dictionary-online.org/definitions-q/quake.html
 
 example
  proc simple(prefix, suffix) is
     q = prefix & "." & suffix
   end
-
-githubLanguage Quake
- type programming
- filenames m3makefile m3overrides
- aceMode text
- tmScope source.quake
- repos 1
 
 linguistGrammarRepo https://github.com/newgrammars/quake
  firstCommit 2018
@@ -32,5 +29,9 @@ linguistGrammarRepo https://github.com/newgrammars/quake
   M3_FRONT_FLAGS += "-vsdebug"
   _M3BUNDLE_OVERRIDE = "T"
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Quake
+ type programming
+ filenames m3makefile m3overrides
+ aceMode text
+ tmScope source.quake
+ repos 1

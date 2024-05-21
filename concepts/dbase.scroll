@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id dbase
 name DBase
 appeared 1979
 tags application
 website http://www.dbase.com/
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity dBase, LLC
-domainName dbase.com
- registered 1995
- awisRank
-  2022 824464
+
+twitter https://twitter.com/dbaseworld
+leachim6 dBase
+ filepath d/dBase.dbf
+ fileExtensions dbf
+ example
+  ? "Hello World"
+  
 
 wikipedia https://en.wikipedia.org/wiki/DBase
  example
@@ -26,17 +35,10 @@ wikipedia https://en.wikipedia.org/wiki/DBase
  revisionCount 669
  appeared 1979
 
-leachim6 dBase
- filepath d/dBase.dbf
- fileExtensions dbf
- example
-  ? "Hello World"
-  
-
-twitter https://twitter.com/dbaseworld
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+domainName dbase.com
+ registered 1995
+ awisRank
+  2022 824464
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

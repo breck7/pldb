@@ -1,18 +1,26 @@
 import ../code/conceptPage.scroll
+
 id peg
 name PEG
 appeared 2002
 tags grammarLanguage
 standsFor parsing expression grammar
 
-hasLineComments true
-hasComments true
+clocExtensions peg
+fileType text
+centralPackageRepositoryCount 0
 
+pygmentsHighlighter PEG
+ filename grammar_notation.py
+ fileExtensions peg
 example
  Expr    ← Sum
  Sum     ← Product (('+' / '-') Product)*
  Product ← Value (('*' / '/') Value)*
  Value   ← [0-9]+ / '(' Expr ')'
+
+hasLineComments true
+hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/Parsing_expression_grammar
  example
@@ -29,13 +37,4 @@ wikipedia https://en.wikipedia.org/wiki/Parsing_expression_grammar
  dailyPageViews 187
  appeared 2002
 
-pygmentsHighlighter PEG
- filename grammar_notation.py
- fileExtensions peg
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-clocExtensions peg

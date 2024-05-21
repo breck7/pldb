@@ -1,23 +1,74 @@
 import ../code/conceptPage.scroll
+
 id lua
 name Lua
 appeared 1993
-tags pl
 creators Roberto Ierusalimschy
+tags pl
 website https://www.lua.org/
+
+isOpenSource true
+tryItOnline lua
+officialBlogUrl https://www.lua.org/news.html
+releaseNotesUrl https://www.lua.org/versions.html
+visualParadigm false
+clocExtensions lua nse p8 pd_lua rbxs wlua
+fileType text
 documentation https://www.lua.org/docs.html
 documentation https://devdocs.io/lua/
 emailList https://www.lua.org/lua-l.html
-reference http://www.lua.org/manual/5.1/manual.html#2.1
+faqPageUrl https://www.lua.org/faq.html
+downloadPageUrl https://www.lua.org/download.html
+antlr https://github.com/antlr/grammars-v4/tree/master/lua
+monaco lua
+codeMirror lua
+rosettaCode http://www.rosettacode.org/wiki/Category:Lua
+quineRelay Lua
+replit https://repl.it/languages/lua
+packageRepository https://luarocks.org/
+ubuntuPackage lua5.3
 country Brazil
 originCommunity Tecgraf
-domainName lua.org
- registered 2000
- awisRank
-  2022 51513
-releaseNotesUrl https://www.lua.org/versions.html
+projectEuler Lua
+ memberCount
+  2019 437
+  2022 477
+reference http://www.lua.org/manual/5.1/manual.html#2.1
 
-visualParadigm false
+helloWorldCollection Lua
+ # Hello World in Lua
+ 
+ print "Hello world"
+ 
+pygmentsHighlighter Lua
+ filename scripting.py
+ fileExtensions lua wlua
+rijuRepl https://riju.codes/lua
+ example
+  print("Hello, world!")
+  
+subreddit https://reddit.com/r/lua
+ memberCount
+  2017 5571
+  2022 15290
+leachim6 Lua
+ filepath l/Lua.lua
+ fileExtensions lua
+ example
+  print("Hello World")
+languageServerProtocolProject https://github.com/Alloyed/lua-lsp
+ writtenIn lua
+
+meetup https://www.meetup.com/topics/lua
+ memberCount 4670
+ groupCount 24
+keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
+
+lineCommentToken --
+multiLineCommentTokens --[[ --]]
+printToken print
+stringToken "
+booleanTokens true false
 
 hasComments true
 hasMultiLineComments true
@@ -40,13 +91,9 @@ hasFunctions true
 hasConditionals true
 hasScientificNotation true
 
-lineCommentToken --
-multiLineCommentTokens --[[ --]]
-printToken print
-stringToken "
-booleanTokens true false
-keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
-
+jupyterKernel https://github.com/pakozm/IPyLua
+jupyterKernel https://github.com/neomantra/lua_ipython_kernel
+jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
 wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
  example
   $ cc -o example example.c -llua
@@ -61,38 +108,20 @@ wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
  revisionCount 2536
  appeared 1993
 
-githubLanguage Lua
- fileExtensions lua fcgi nse p8 pd_lua rbxs rockspec wlua
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  vulnersCom nmap-vulners https://github.com/vulnersCom.png https://github.com/vulnersCom/nmap-vulners Lua #000080 1613 245 112 "NSE script based on Vulners.com API"
-  koreader koreader https://github.com/koreader.png https://github.com/koreader/koreader Lua #000080 5226 668 103 "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
-  stijnwop guidanceSteering https://github.com/stijnwop.png https://github.com/stijnwop/guidanceSteering Lua #000080 174 55 15 "Guidance Steering (AutoTrack) for Farming Simulator 19."
-  cmusatyalab openface https://github.com/cmusatyalab.png https://github.com/cmusatyalab/openface Lua #000080 12574 3099 141 "Face recognition with deep neural networks."
-  cardwing Codes-for-Lane-Detection https://github.com/cardwing.png https://github.com/cardwing/Codes-for-Lane-Detection Lua #000080 375 125 92 "Learning Lightweight Lane Detection CNNs by Self Attention Distillation (ICCV 2019)"
-  Kong kong https://github.com/Kong.png https://github.com/Kong/kong Lua #000080 23291 2898 452 "🦍 The Cloud-Native API Gateway"
-  nagadomi waifu2x https://github.com/nagadomi.png https://github.com/nagadomi/waifu2x Lua #000080 15744 1802 374 "Image Super-Resolution for Anime-Style Art"
-  opentibiabr OTServBR-Global https://github.com/opentibiabr.png https://github.com/opentibiabr/OTServBR-Global Lua #000080 57 81 14 "OTServBR-Global 10x and 12x for OpenTibia community. | Supported by:"
-  Tencent LuaPanda https://github.com/Tencent.png https://github.com/Tencent/LuaPanda Lua #000080 329 74 48 "Lua Debugger for VS Code"
- trendingProjectsCount 10
- type programming
- filenames .luacheckrc
- interpreters lua
- aceMode lua
- codemirrorMode lua
- codemirrorMimeType text/x-lua
- tmScope source.lua
- repos 243541
+hopl https://hopl.info/showlanguage.prx?exp=2196
+tiobe Lua
+ currentRank 30
+pypl Lua
+
+domainName lua.org
+ registered 2000
+ awisRank
+  2022 51513
+
 githubBigQuery Lua
  repos 34346
  users 23389
 
-antlr https://github.com/antlr/grammars-v4/tree/master/lua
-monaco lua
-codeMirror lua
-pygmentsHighlighter Lua
- filename scripting.py
- fileExtensions lua wlua
 linguistGrammarRepo https://github.com/textmate/lua.tmbundle
  firstCommit 2006
  lastCommit 2018
@@ -121,66 +150,6 @@ linguistGrammarRepo https://github.com/textmate/lua.tmbundle
   	self.num = f
   end
   
-languageServerProtocolProject https://github.com/Alloyed/lua-lsp
- writtenIn lua
-
-projectEuler Lua
- memberCount
-  2019 437
-  2022 477
-helloWorldCollection Lua
- # Hello World in Lua
- 
- print "Hello world"
- 
-leachim6 Lua
- filepath l/Lua.lua
- fileExtensions lua
- example
-  print("Hello World")
-rosettaCode http://www.rosettacode.org/wiki/Category:Lua
-quineRelay Lua
-
-rijuRepl https://riju.codes/lua
- example
-  print("Hello, world!")
-  
-replit https://repl.it/languages/lua
-tryItOnline lua
-
-indeedJobs lua developer
- 2022 736
-linkedInSkill lua
- 2018 36954
-officialBlogUrl https://www.lua.org/news.html
-faqPageUrl https://www.lua.org/faq.html
-downloadPageUrl https://www.lua.org/download.html
-
-subreddit https://reddit.com/r/lua
- memberCount
-  2017 5571
-  2022 15290
-meetup https://www.meetup.com/topics/lua
- memberCount 4670
- groupCount 24
-
-tiobe Lua
- currentRank 30
-hopl https://hopl.info/showlanguage.prx?exp=2196
-pypl Lua
-
-packageRepository https://luarocks.org/
-
-ubuntuPackage lua5.3
-jupyterKernel https://github.com/pakozm/IPyLua
-jupyterKernel https://github.com/neomantra/lua_ipython_kernel
-jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
-fileType text
-isOpenSource true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
 
 isbndb 34
  year|publisher|title|authors|isbn13
@@ -219,6 +188,34 @@ isbndb 34
  20141128|Packt Publishing|Learning Game AI Programming with Lua|David Young|9781783281343
  |Packt Pub.|LÖve For Lua Game Programming: Master The Lua Programming Language And Build Exciting Strategy-based Games In 2d Using The LÖve Framework|Akinlaja, Darmie.|9781782161608
 
+githubLanguage Lua
+ fileExtensions lua fcgi nse p8 pd_lua rbxs rockspec wlua
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  vulnersCom nmap-vulners https://github.com/vulnersCom.png https://github.com/vulnersCom/nmap-vulners Lua #000080 1613 245 112 "NSE script based on Vulners.com API"
+  koreader koreader https://github.com/koreader.png https://github.com/koreader/koreader Lua #000080 5226 668 103 "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
+  stijnwop guidanceSteering https://github.com/stijnwop.png https://github.com/stijnwop/guidanceSteering Lua #000080 174 55 15 "Guidance Steering (AutoTrack) for Farming Simulator 19."
+  cmusatyalab openface https://github.com/cmusatyalab.png https://github.com/cmusatyalab/openface Lua #000080 12574 3099 141 "Face recognition with deep neural networks."
+  cardwing Codes-for-Lane-Detection https://github.com/cardwing.png https://github.com/cardwing/Codes-for-Lane-Detection Lua #000080 375 125 92 "Learning Lightweight Lane Detection CNNs by Self Attention Distillation (ICCV 2019)"
+  Kong kong https://github.com/Kong.png https://github.com/Kong/kong Lua #000080 23291 2898 452 "🦍 The Cloud-Native API Gateway"
+  nagadomi waifu2x https://github.com/nagadomi.png https://github.com/nagadomi/waifu2x Lua #000080 15744 1802 374 "Image Super-Resolution for Anime-Style Art"
+  opentibiabr OTServBR-Global https://github.com/opentibiabr.png https://github.com/opentibiabr/OTServBR-Global Lua #000080 57 81 14 "OTServBR-Global 10x and 12x for OpenTibia community. | Supported by:"
+  Tencent LuaPanda https://github.com/Tencent.png https://github.com/Tencent/LuaPanda Lua #000080 329 74 48 "Lua Debugger for VS Code"
+ trendingProjectsCount 10
+ type programming
+ filenames .luacheckrc
+ interpreters lua
+ aceMode lua
+ codemirrorMode lua
+ codemirrorMimeType text/x-lua
+ tmScope source.lua
+ repos 243541
+
+indeedJobs lua developer
+ 2022 736
+linkedInSkill lua
+ 2018 36954
+
 semanticScholar 13
  year|title|doi|citations|influentialCitations|authors|paperId
  2014|Typed Lua: An Optional Type System for Lua|10.1145/2617548.2617553|20|1|André Murbach Maidl and Fabio Mascarenhas and R. Ierusalimschy|ea5301e30ef4b41aec9fa4195b6203cf109460d7
@@ -235,4 +232,6 @@ semanticScholar 13
  2019|Beginning Lua Scripting|10.1007/978-1-4842-5073-0_8|1|0|Jaken Chandler Herman|3fbf132d1d63c88d6560bc41570058b9b6f2590a
  2017|Remote Sensing Image Processing Functions in Lua Language|10.6062/JCIS.2017.08.03.0133|1|0|R. F. B. Marujo and Leila Maria Garcia Fonseca and T. Körting and H. N. Bendini and G. R. Queiroz and L. Vinhas and K. Ferreira|a5233f484177b2d6a042c864a80392eb45cc768a
 
-clocExtensions lua nse p8 pd_lua rbxs wlua
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21

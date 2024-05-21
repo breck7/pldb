@@ -1,23 +1,33 @@
 import ../code/conceptPage.scroll
+
 id caml
 name Caml
 appeared 1985
-tags pl
 creators Gérard Huet and Guy Cousineau and Ascánder Suárez and Pierre Weis and Michel Mauny
+tags pl
 website https://caml.inria.fr
 standsFor Categorical abstract machine language
-country France
-originCommunity INRIA
-domainName caml.inria.fr
 
 relatedConcepts ocaml
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Caml
+centralPackageRepositoryCount 0
+country France
+originCommunity INRIA
+
+leachim6 CAML
+ filepath c/CAML.ml
+ fileExtensions ml
+ example
+  print_endline "Hello World";;
+  
+
+printToken print_endline
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print_endline
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Caml
  example
@@ -32,24 +42,10 @@ wikipedia https://en.wikipedia.org/wiki/Caml
  revisionCount 124
  appeared 1985
 
-leachim6 CAML
- filepath c/CAML.ml
- fileExtensions ml
- example
-  print_endline "Hello World";;
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Caml
-
-tiobe Caml
 hopl https://hopl.info/showlanguage.prx?exp=1460
+tiobe Caml
 
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- The Objective Caml Programming Language||Tim Rentsch|14474263|5.00|1|0
- Functional programming using Caml Light||Michel Mauny|58185709|4.00|1|0
+domainName caml.inria.fr
 
 isbndb 2
  year|publisher|title|authors|isbn13
@@ -60,3 +56,8 @@ semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  2008|Caml trading – experiences with functional programming on Wall Street|10.1017/S095679680800676X|18|1|Y. Minsky and Stephen Weeks|44a9c723abf93c6237068cc853449598943699c7
  2008|Caml trading|10.1145/1328897.1328441|2|0|Y. Minsky|73c6801a4412becd2f1cf0536e9bf9381e565b39
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Objective Caml Programming Language||Tim Rentsch|14474263|5.00|1|0
+ Functional programming using Caml Light||Michel Mauny|58185709|4.00|1|0

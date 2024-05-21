@@ -1,15 +1,34 @@
 import ../code/conceptPage.scroll
+
 id rpl
 name RPL
 appeared 1984
 tags pl
 standsFor Reverse Polish Lisp
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:RPL
+centralPackageRepositoryCount 0
 originCommunity Hewlett-Packard
+projectEuler RPL
+ memberCount
+  2019 11
+  2022 11
+
+helloWorldCollection Reverse Polish Lisp
+ Hello World in RPL for the HP-28, HP-48, HP-49 and HP-50 series pocket calculators. No comments possible.
+ 
+ <<
+     "HELLO WORLD"
+     1 DISP
+     60 FREEZE
+ >>
+ 
+
+stringToken "
 
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/RPL_(programming_language)
  example
@@ -29,29 +48,11 @@ wikipedia https://en.wikipedia.org/wiki/RPL_(programming_language)
  revisionCount 164
  appeared 1984
 
-projectEuler RPL
- memberCount
-  2019 11
-  2022 11
-helloWorldCollection Reverse Polish Lisp
- Hello World in RPL for the HP-28, HP-48, HP-49 and HP-50 series pocket calculators. No comments possible.
- 
- <<
-     "HELLO WORLD"
-     1 DISP
-     60 FREEZE
- >>
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:RPL
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- An Introduction to Hp48 System Rpl & Assembly Language Programming|1995|James Donnelly|20605176|0.0|0|0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2010||Rpl (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130924690
  1995|Armstrong Pub Co|An Introduction To Hp48 System Rpl And Assembly Language Programming|James Donnelly|9781879828063
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ An Introduction to Hp48 System Rpl & Assembly Language Programming|1995|James Donnelly|20605176|0.0|0|0

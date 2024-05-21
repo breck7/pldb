@@ -1,16 +1,21 @@
 import ../code/conceptPage.scroll
+
 id obsidian
 name obsidian
 appeared 2018
-tags pl
 creators Michael Coblenz
+tags pl
 website http://obsidian-lang.com
+
+writtenIn solidity java scala bourne-shell html restructuredtext tex json yaml xml agda markdown bash python gradle csv typescript css mustache make javascript svg perl protobuf
+repoStats
+ firstCommit 2017
+ commits 2056
+ committers 29
+ files 906
+ newestCommit 2023
 country United States
 originCommunity University of California San Diego
-domainName obsidian-lang.com
- registered 2018
- awisRank
-  2022 10603534
 
 githubRepo https://github.com/mcoblenz/Obsidian
  firstCommit 2017
@@ -22,15 +27,11 @@ githubRepo https://github.com/mcoblenz/Obsidian
  description Obsidian language development
  issues 79
 
-repoStats
- firstCommit 2017
- commits 2056
- committers 29
- files 906
- newestCommit 2023
+domainName obsidian-lang.com
+ registered 2018
+ awisRank
+  2022 10603534
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  20061546|Obsidian: A safer blockchain programming language|http://obsidian-lang.com/|2019-05-31 15:05:29 UTC|1559315129|azhenley|31|67
-
-writtenIn solidity java scala bourne-shell html restructuredtext tex json yaml xml agda markdown bash python gradle csv typescript css mustache make javascript svg perl protobuf

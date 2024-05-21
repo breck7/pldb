@@ -1,24 +1,43 @@
 import ../code/conceptPage.scroll
+
 id newlisp
 name NewLisp
 appeared 1991
-tags pl
 creators Lutz Mueller
+tags pl
 website http://www.newlisp.org/
+
+isOpenSource true
+writtenIn lisp c html bourne-shell make yaml vim-script css markdown xml
+tryItOnline http://www.newlisp.org/newlisp-js
+fileType text
 documentation http://www.newlisp.org/index.cgi?Documentation
+rosettaCode http://www.rosettacode.org/wiki/Category:NewLISP
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 139
+ committers 6
+ files 269
+ newestCommit 2019
 country United States
 originCommunity http://kosh.sdf.org
-domainName newlisp.org
- registered 1999
- awisRank
-  2022 5805944
+projectEuler newLISP
+ memberCount
+  2022 1
 
-hasComments true
-hasPrintDebugging true
-hasSemanticIndentation false
-hasLineComments true
-
-printToken print
+pygmentsHighlighter NewLisp
+ filename lisp.py
+ fileExtensions lsp nl kif
+twitter https://twitter.com/newlisp
+leachim6 NewLISP
+ filepath n/NewLISP.lsp
+ fileExtensions lsp
+ example
+  #!/usr/bin/newlisp
+  (print "Hello World\n")
+  (exit)
+  
 
 githubRepo https://github.com/kosh04/newlisp
  firstCommit 2008
@@ -30,12 +49,12 @@ githubRepo https://github.com/kosh04/newlisp
  description newLISP mirror repository (unofficial)
  issues 8
 
-repoStats
- firstCommit 2008
- commits 139
- committers 6
- files 269
- newestCommit 2019
+printToken print
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasLineComments true
 
 wikipedia https://en.wikipedia.org/wiki/NewLISP
  related lisp common-lisp scheme pascal c tcl s-expressions xml utf-8 tcp udp linux solaris sqlite smtp ftp opengl
@@ -47,23 +66,15 @@ wikipedia https://en.wikipedia.org/wiki/NewLISP
  dailyPageViews 18
  appeared 1991
 
-githubLanguage NewLisp
- fileExtensions nl lisp lsp
- trendingProjectsCount 0
- type programming
- interpreters newlisp
- aceMode lisp
- codemirrorMode commonlisp
- codemirrorMimeType text/x-common-lisp
- tmScope source.lisp
- repos 476
+domainName newlisp.org
+ registered 1999
+ awisRank
+  2022 5805944
+
 githubBigQuery NewLisp
  repos 812
  users 774
 
-pygmentsHighlighter NewLisp
- filename lisp.py
- fileExtensions lsp nl kif
 linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -121,26 +132,15 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   (println (length solutions))
   ;;(exit)
 
-projectEuler newLISP
- memberCount
-  2022 1
-leachim6 NewLISP
- filepath n/NewLISP.lsp
- fileExtensions lsp
- example
-  #!/usr/bin/newlisp
-  (print "Hello World\n")
-  (exit)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:NewLISP
-
-tryItOnline http://www.newlisp.org/newlisp-js
-
-twitter https://twitter.com/newlisp
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage NewLisp
+ fileExtensions nl lisp lsp
+ trendingProjectsCount 0
+ type programming
+ interpreters newlisp
+ aceMode lisp
+ codemirrorMode commonlisp
+ codemirrorMimeType text/x-common-lisp
+ tmScope source.lisp
+ repos 476
 
 semanticScholar 0
-
-writtenIn lisp c html bourne-shell make yaml vim-script css markdown xml

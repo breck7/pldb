@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id bam-format
 name Binary Alignment Map
 appeared 2009
 tags binaryDataFormat
-conceptDescription BAM is the compressed binary representation of SAM (Sequence Alignment Map). BAM is in compressed BGZF format.
 aka BAM
+conceptDescription BAM is the compressed binary representation of SAM (Sequence Alignment Map). BAM is in compressed BGZF format.
+
+fileType binary
+centralPackageRepositoryCount 0
 country Various
 originCommunity Samtools
 
@@ -17,6 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/Binary_Alignment_Map
  revisionCount 21
  dailyPageViews 13
  appeared 2009
-
-fileType binary
-centralPackageRepositoryCount 0

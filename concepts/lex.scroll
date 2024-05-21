@@ -1,24 +1,16 @@
 import ../code/conceptPage.scroll
+
 id lex
 name Lex
 appeared 1975
 tags grammarLanguage
-reference https://github.com/babyraging/yash
+
+clocExtensions l lex
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/babyraging/yash/issues
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasLineComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference https://github.com/babyraging/yash
 
 example
  /*** Definition section ***/
@@ -49,6 +41,19 @@ example
      return 0;
  }
 
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
+
 wikipedia https://en.wikipedia.org/wiki/Lex_(software)
  example
   Saw an integer: 123
@@ -63,15 +68,8 @@ wikipedia https://en.wikipedia.org/wiki/Lex_(software)
  revisionCount 304
  appeared 1975
 
-githubLanguage Lex
- fileExtensions l lex
- trendingProjectsCount 0
- type programming
- filenames Lexer.x lexer.x
- aceMode text
- tmScope source.lex
- aliases flex
- repos 2902
+hopl https://hopl.info/showlanguage.prx?exp=680
+
 githubBigQuery Lex
  repos 12486
  users 9501
@@ -122,14 +120,17 @@ linguistGrammarRepo https://github.com/Alhadis/language-grammars
    * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
   #define YYFILL(n) { if (YYCURSOR > YYLIMIT) return 0
 
-hopl https://hopl.info/showlanguage.prx?exp=680
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2012|O’Reilly Media|Lex & Yacc|Doug Brown Doug and John R. Levine and Tony Mason and Tony Mason and Doug Brown|9781449385606
  28-09-2018|Packt Publishing|Hands-On Chatbot Development with Alexa Skills and Amazon Lex|Sam Williams|9781788992435
 
-clocExtensions l lex
+githubLanguage Lex
+ fileExtensions l lex
+ trendingProjectsCount 0
+ type programming
+ filenames Lexer.x lexer.x
+ aceMode text
+ tmScope source.lex
+ aliases flex
+ repos 2902

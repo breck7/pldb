@@ -1,10 +1,12 @@
 import ../code/conceptPage.scroll
+
 id rtf
 name RTF
 appeared 1987
-tags textMarkup
 creators Richard Brodie and Charles Simonyi and David Luebbert
+tags textMarkup
 standsFor Rich Text Format
+
 country United States
 originCommunity Microsoft Corporation
 
@@ -15,12 +17,13 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/Rich_Text_Format
 
+githubBigQuery Rich Text Format
+ repos 966
+ users 924
+
 githubLanguage Rich Text Format
  type markup
  fileExtensions rtf
  aceMode text
  tmScope text.rtf
  repos 9429
-githubBigQuery Rich Text Format
- repos 966
- users 924

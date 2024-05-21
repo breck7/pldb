@@ -1,23 +1,25 @@
 import ../code/conceptPage.scroll
+
 id edn
 name EDN
 appeared 2012
 tags dataNotation
-documentation https://learnxinyminutes.com/docs/edn/#:~:text=Extensible%20Data%20Notation%20(EDN)%20is,restricted%20to%20data%2C%20no%20code.
 standsFor Extensible Data Notation
 aka edn
+
+isOpenSource true
+writtenIn markdown
+fileType text
+documentation https://learnxinyminutes.com/docs/edn/#:~:text=Extensible%20Data%20Notation%20(EDN)%20is,restricted%20to%20data%2C%20no%20code.
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 29
+ committers 4
+ files 1
+ newestCommit 2014
 country Unknown
 originCommunity https://github.com/edn-format
-
-hasBooleans true
-hasComments true
-hasFloats true
-hasIntegers true
-hasStrings true
-hasLists true
-hasMaps true
-hasSets true
-hasSemanticIndentation false
 
 example
  {:a 1, "foo" :bar, [1 2 3] four}
@@ -32,22 +34,15 @@ githubRepo https://github.com/edn-format/edn
  description Extensible Data Notation
  issues 25
 
-repoStats
- firstCommit 2012
- commits 29
- committers 4
- files 1
- newestCommit 2014
-
-githubLanguage edn
- fileExtensions edn
- trendingProjectsCount 0
- type data
- aceMode clojure
- codemirrorMode clojure
- codemirrorMimeType text/x-clojure
- tmScope source.clojure
- repos 0
+hasBooleans true
+hasComments true
+hasFloats true
+hasIntegers true
+hasStrings true
+hasLists true
+hasMaps true
+hasSets true
+hasSemanticIndentation false
 
 linguistGrammarRepo https://github.com/atom/language-clojure
  firstCommit 2013
@@ -133,14 +128,18 @@ linguistGrammarRepo https://github.com/atom/language-clojure
     :object/name "Eris"
     :object/meanRadius 1163.0}]
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2011|MC GRAW HILL INDIA|Parallel Programming In C With Mpi And Open Mp, 1St Edn|QUINN|9780070582019
  2009|Vikas Publication House Pvt Ltd|Business Mathematics - 2Nd Edn [Paperback] [Jan 01, 2009] Q. Zameeruddin|Q Zameeruddin|9788125928416
  20150219|Pearson International Content|eBook Business Information Systems, 5 edn|Paul Bocij; Andrew Greasley; Simon Hickie|9780273736462
 
-writtenIn markdown
+githubLanguage edn
+ fileExtensions edn
+ trendingProjectsCount 0
+ type data
+ aceMode clojure
+ codemirrorMode clojure
+ codemirrorMimeType text/x-clojure
+ tmScope source.clojure
+ repos 0

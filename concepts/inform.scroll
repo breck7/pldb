@@ -1,23 +1,44 @@
 import ../code/conceptPage.scroll
+
 id inform
 name Inform
 appeared 1993
-tags pl
 creators Graham Nelson
+tags pl
 website http://inform7.com/
+
+fileType text
+wordRank 5526
 documentation https://ganelson.github.io/inform-website/doc/
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity https://inform-fiction.org/
-domainName inform7.com
- registered 2009
- awisRank
-  2022 2240286
+
+helloWorldCollection Inform
+ !  "Hello world" in Inform
+ [ Main;
+   print "Hello world^";
+ ];
+ 
+pygmentsHighlighter Inform 7
+ filename int_fiction.py
+ fileExtensions ni i7x
+leachim6 Inform
+ filepath i/Inform.inform
+ fileExtensions inform
+ example
+  "Hello World" by "I.F. Author"
+  
+  The world is a room.
+  
+  When play begins, say "Hello World"
+  
+
+stringToken "
 
 hasSemanticIndentation true
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Inform
  example
@@ -48,22 +69,17 @@ wikipedia https://en.wikipedia.org/wiki/Inform
  revisionCount 426
  appeared 1993
 
-githubLanguage Inform 7
- fileExtensions ni i7x
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.inform7
- wrap true
- aliases i7 or inform7
- repos 1046854
+tiobe Inform
+
+domainName inform7.com
+ registered 2009
+ awisRank
+  2022 2240286
+
 githubBigQuery Inform 7
  repos 60
  users 56
 
-pygmentsHighlighter Inform 7
- filename int_fiction.py
- fileExtensions ni i7x
 linguistGrammarRepo https://github.com/erkyrath/language-inform7
  firstCommit 2016
  lastCommit 2018
@@ -135,33 +151,20 @@ linguistGrammarRepo https://github.com/erkyrath/language-inform7
    say "A turn passes[one of][or] placidly[or] idly[or] tediously[at random]."
   
 
-helloWorldCollection Inform
- !  "Hello world" in Inform
- [ Main;
-   print "Hello world^";
- ];
- 
-leachim6 Inform
- filepath i/Inform.inform
- fileExtensions inform
- example
-  "Hello World" by "I.F. Author"
-  
-  The world is a room.
-  
-  When play begins, say "Hello World"
-  
-
-tiobe Inform
-
-fileType text
-wordRank 5526
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2010|Cengage Learning PTR|Creating Interactive Fiction with Inform 7|Reed, Aaron|9781435455061
  2010|Cengage Learning|Creating Interactive Fiction With Inform 7, 1st Edition|Aaron Reed|9781435456044
+
+githubLanguage Inform 7
+ fileExtensions ni i7x
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.inform7
+ wrap true
+ aliases i7 or inform7
+ repos 1046854
 
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId

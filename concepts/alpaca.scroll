@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id alpaca
 name Alpaca
 appeared 2017
-tags pl
 creators Jeremy Pierre
+tags pl
 website http://alpaca-lang.org
-reference https://github.com/j14159/abstract-alpaca
 oldName ML-flavoured Erlang
+
+writtenIn erlang markdown yaml make bourne-shell
+compilesTo beam-bytecode
+repoStats
+ firstCommit 2016
+ commits 884
+ committers 23
+ files 94
+ newestCommit 2019
 country Canada
 originCommunity https://github.com/alpaca-lang
-
-compilesTo beam-bytecode
+reference https://github.com/j14159/abstract-alpaca
 
 example
  module simple_example
@@ -48,11 +56,3 @@ githubRepo https://github.com/alpaca-lang/alpaca
  updated 2024
  description Functional programming inspired by ML for the Erlang VM
  issues 34
-
-repoStats
- firstCommit 2016
- commits 884
- committers 23
- files 94
- newestCommit 2019
-writtenIn erlang markdown yaml make bourne-shell

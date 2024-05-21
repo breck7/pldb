@@ -1,13 +1,23 @@
 import ../code/conceptPage.scroll
+
 id rapidbatch
 name RapidBatch
 appeared 2017
-tags pl
 creators Jan Max Meyer
+tags pl
 website http://www.rapidbatch.com
-reference https://www.phorward-software.com/download/MUSEUM/jmksf/rb/rb_linux/manuals/
+
+writtenIn html ruby c cpp css bourne-shell xml markdown make ring
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 23
+ committers 2
+ files 922
+ newestCommit 2023
 country Germany
 originCommunity Phorward Software Technologies
+reference https://www.phorward-software.com/download/MUSEUM/jmksf/rb/rb_linux/manuals/
 
 githubRepo https://github.com/phorward/rapidbatch
  firstCommit 2017
@@ -19,15 +29,4 @@ githubRepo https://github.com/phorward/rapidbatch
  description Scripting language; compiler and virtual machine
  issues 0
 
-repoStats
- firstCommit 2017
- commits 23
- committers 2
- files 922
- newestCommit 2023
-
 hopl https://hopl.info/showlanguage.prx?exp=8637
-
-centralPackageRepositoryCount 0
-
-writtenIn html ruby c cpp css bourne-shell xml markdown make ring

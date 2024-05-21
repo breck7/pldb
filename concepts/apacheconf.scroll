@@ -1,29 +1,27 @@
 import ../code/conceptPage.scroll
+
 id apacheconf
 name ApacheConf
 appeared 1995
 tags application
 website https://httpd.apache.org/
-reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apache Software Foundation
-domainName httpd.apache.org
-
-githubLanguage ApacheConf
- fileExtensions apacheconf vhost
- trendingProjectsCount 0
- type data
- filenames .htaccess apache2.conf httpd.conf
- aceMode apache_conf
- tmScope source.apache-config
- aliases aconf or apache
-githubBigQuery ApacheConf
- repos 68565
- users 55081
+reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
 
 pygmentsHighlighter ApacheConf
  filename configs.py
  fileExtensions .htaccess apache.conf apache2.conf
+
+domainName httpd.apache.org
+
+githubBigQuery ApacheConf
+ repos 68565
+ users 55081
+
 linguistGrammarRepo https://github.com/textmate/apache.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -50,5 +48,11 @@ linguistGrammarRepo https://github.com/textmate/apache.tmbundle
   </VirtualHost>
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage ApacheConf
+ fileExtensions apacheconf vhost
+ trendingProjectsCount 0
+ type data
+ filenames .htaccess apache2.conf httpd.conf
+ aceMode apache_conf
+ tmScope source.apache-config
+ aliases aconf or apache

@@ -1,10 +1,12 @@
 import ../code/conceptPage.scroll
+
 id xql
 name XQL
 appeared 1999
-tags queryLanguage
 creators Jonathan Robie
+tags queryLanguage
 conceptDescription XQL is a query language designed specifically for XML. In the same sense that SQL is a query language for relational tables and OQL is a query language for objects stored in an object database, XQL is a query language for XML documents.
+
 reference http://www.ibiblio.org/xql/xql-tutorial.html
 
 example

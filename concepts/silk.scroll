@@ -1,22 +1,21 @@
 import ../code/conceptPage.scroll
+
 id silk
 name silk
 appeared 2019
 tags pl
 website https://ajaymt.github.io/silk/
-reference https://news.ycombinator.com/item?id=22926080
+
+writtenIn ocaml bourne-shell markdown
+repoStats
+ firstCommit 2019
+ commits 90
+ committers 1
+ files 30
+ newestCommit 2021
 country United States
 originCommunity University of Illinois at Urbana-Champaign
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-
-lineCommentToken //
-printToken printf
+reference https://news.ycombinator.com/item?id=22926080
 
 example
  // this is a comment
@@ -44,13 +43,14 @@ githubRepo https://github.com/AjayMT/silk
  description The Silk Programming Language
  issues 1
 
-repoStats
- firstCommit 2019
- commits 90
- committers 1
- files 30
- newestCommit 2021
+lineCommentToken //
+printToken printf
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 isbndb 0
-
-writtenIn ocaml bourne-shell markdown

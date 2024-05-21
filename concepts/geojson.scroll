@@ -1,17 +1,16 @@
 import ../code/conceptPage.scroll
+
 id geojson
 name GeoJSON
 appeared 2008
 tags jsonFormat
 website http://geojson.org/
-reference https://tools.ietf.org/html/rfc7946
+
+fileType text
+centralPackageRepositoryCount 0
 country United States and United Kingdom
 originCommunity Planet Labs && Mapbox && Hobu Inc && Cadcorp
-domainName geojson.org
- registered 2007
- awisRank
-  2022 376574
-  2017 343382
+reference https://tools.ietf.org/html/rfc7946
 
 wikipedia https://en.wikipedia.org/wiki/GeoJSON
  example
@@ -59,5 +58,8 @@ wikipedia https://en.wikipedia.org/wiki/GeoJSON
  revisionCount 151
  appeared 2007
 
-fileType text
-centralPackageRepositoryCount 0
+domainName geojson.org
+ registered 2007
+ awisRank
+  2022 376574
+  2017 343382

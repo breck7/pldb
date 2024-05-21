@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id jcl
 name JCL
 appeared 1964
 tags pl
 standsFor Job Control Language
+
+clocExtensions jcl
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:JCL
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+
+pygmentsHighlighter JCL
+ filename scripting.py
+ fileExtensions jcl
 
 hasComments true
 hasSemanticIndentation false
@@ -27,21 +37,7 @@ wikipedia https://en.wikipedia.org/wiki/Job_Control_Language
  revisionCount 546
  appeared 1964
 
-pygmentsHighlighter JCL
- filename scripting.py
- fileExtensions jcl
-
-rosettaCode http://www.rosettacode.org/wiki/Category:JCL
-
 hopl https://hopl.info/showlanguage.prx?exp=2134
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Practical MVS JCL for Today's Programmer|1987|James G. Janossy|3713091|4.00|3|0
- Zos JCL (Job Control Language)|2002|Gary DeWard Brown|23914799|4.00|4|1
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -53,4 +49,7 @@ isbndb 5
 
 semanticScholar 0
 
-clocExtensions jcl
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Practical MVS JCL for Today's Programmer|1987|James G. Janossy|3713091|4.00|3|0
+ Zos JCL (Job Control Language)|2002|Gary DeWard Brown|23914799|4.00|4|1

@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id plpgsql
 name PL/pgSQL
 appeared 1998
-tags pl
 creators Jan Wieck
+tags pl
+
+fileType text
 documentation https://www.postgresql.org/docs/current/plpgsql.html
+centralPackageRepositoryCount 0
 country United States
 originCommunity The PostgreSQL Global Development Group
+
+pygmentsHighlighter PL/pgSQL
+ filename sql.py
 
 hasFloats true
 hasIntegers true
@@ -24,24 +31,10 @@ wikipedia https://en.wikipedia.org/wiki/PL/pgSQL
  dailyPageViews 54
  appeared 1998
 
-githubLanguage PLpgSQL
- fileExtensions pgsql sql
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  openmaptiles openmaptiles https://github.com/openmaptiles.png https://github.com/openmaptiles/openmaptiles PLpgSQL #ccc 711 222 26 "OpenMapTiles Vector Tile Schema Implementation"
- trendingProjectsCount 2
- type programming
- aceMode pgsql
- codemirrorMode sql
- codemirrorMimeType text/x-sql
- tmScope source.sql
- repos 24919
 githubBigQuery PLpgSQL
  repos 9239
  users 8265
 
-pygmentsHighlighter PL/pgSQL
- filename sql.py
 linguistGrammarRepo https://github.com/textmate/sql.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -82,7 +75,17 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
   $func$ LANGUAGE plpgsql;
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage PLpgSQL
+ fileExtensions pgsql sql
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  openmaptiles openmaptiles https://github.com/openmaptiles.png https://github.com/openmaptiles/openmaptiles PLpgSQL #ccc 711 222 26 "OpenMapTiles Vector Tile Schema Implementation"
+ trendingProjectsCount 2
+ type programming
+ aceMode pgsql
+ codemirrorMode sql
+ codemirrorMimeType text/x-sql
+ tmScope source.sql
+ repos 24919
 
 semanticScholar 0

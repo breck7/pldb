@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id nulan
 name nulan
 appeared 2012
 tags pl
 webRepl https://pauan.github.io/nulan/doc/tutorial.html
+
+writtenIn javascript restructuredtext typescript svg html purescript json markdown
+repoStats
+ firstCommit 2012
+ commits 455
+ committers 2
+ files 167
+ newestCommit 2017
 country Unknown
 originCommunity https://github.com/Pauan/nulan/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/Pauan/nulan
  updated 2021
  description Purely functional statically typed Lisp which compiles to JavaScript
  issues 1
-
-repoStats
- firstCommit 2012
- commits 455
- committers 2
- files 167
- newestCommit 2017
-
-writtenIn javascript restructuredtext typescript svg html purescript json markdown

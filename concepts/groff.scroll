@@ -1,15 +1,30 @@
 import ../code/conceptPage.scroll
+
 id groff
 name groff
 appeared 1990
 tags textMarkup
-conceptDescription Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
 website https://www.gnu.org/software/groff/groff.html
+conceptDescription Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
+
+relatedConcepts troff
 documentation https://www.gnu.org/software/groff/manual/html_node/index.html
 country United States
 originCommunity GNU Project
 
-relatedConcepts troff
+pygmentsHighlighter Groff
+ filename markup.py
+ fileExtensions [1-9] man 1p 3pm
+subreddit https://reddit.com/r/groff
+ memberCount
+  2022 357
+example
+ .sp 1.5i
+ My thoughts on the subject
+ .sp
+
+lineCommentToken \" \#
+multiLineCommentTokens .ig
 
 hasComments true
  Test
@@ -35,26 +50,10 @@ hasMultiLineComments true
  end of the block.
  ..
 
-lineCommentToken \" \#
-multiLineCommentTokens .ig
-
-example
- .sp 1.5i
- My thoughts on the subject
- .sp
-
 wikipedia https://en.wikipedia.org/wiki/Groff_(software)
 
 githubBigQuery Groff
  repos 25686
  users 20035
-
-pygmentsHighlighter Groff
- filename markup.py
- fileExtensions [1-9] man 1p 3pm
-
-subreddit https://reddit.com/r/groff
- memberCount
-  2022 357
 
 isbndb 0

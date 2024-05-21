@@ -1,13 +1,50 @@
 import ../code/conceptPage.scroll
+
 id icon
 name Icon
 appeared 1977
-tags pl
 creators Ralph Griswold
+tags pl
 website http://www.cs.arizona.edu/icon
+
+tryItOnline icon
+fileType text
+wordRank 2368
 documentation https://www2.cs.arizona.edu/icon/
+rosettaCode http://www.rosettacode.org/wiki/Category:Icon
+quineRelay Icon
+centralPackageRepositoryCount 0
+ubuntuPackage icont
 country United States
 originCommunity The University of Arizona
+
+helloWorldCollection Icon
+ # Hello world in Icon (http://www.cs.arizona.edu/icon/)
+ 
+ procedure main()
+     write("Hello world")
+ end
+ 
+pygmentsHighlighter Icon
+ filename unicon.py
+ fileExtensions icon ICON
+rijuRepl https://riju.codes/icon
+ example
+  procedure main ()
+      write("Hello, world!")
+  end
+  
+leachim6 Icon
+ filepath i/Icon.icn
+ fileExtensions icn
+ example
+  procedure main()
+      write("Hello World");
+  end
+
+lineCommentToken #
+printToken write
+stringToken "
 
 hasLineComments true
  # A comment
@@ -23,10 +60,6 @@ hasFloats true
  # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
 hasIntegers true
  # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
-
-lineCommentToken #
-printToken write
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Icon_(programming_language)
  example
@@ -67,42 +100,8 @@ wikipedia https://en.wikipedia.org/wiki/Icon_(programming_language)
  revisionCount 184
  appeared 1977
 
-pygmentsHighlighter Icon
- filename unicon.py
- fileExtensions icon ICON
-
-helloWorldCollection Icon
- # Hello world in Icon (http://www.cs.arizona.edu/icon/)
- 
- procedure main()
-     write("Hello world")
- end
- 
-leachim6 Icon
- filepath i/Icon.icn
- fileExtensions icn
- example
-  procedure main()
-      write("Hello World");
-  end
-rosettaCode http://www.rosettacode.org/wiki/Category:Icon
-quineRelay Icon
-
-rijuRepl https://riju.codes/icon
- example
-  procedure main ()
-      write("Hello, world!")
-  end
-  
-tryItOnline icon
-
-tiobe Icon
 hopl https://hopl.info/showlanguage.prx?exp=510
-
-ubuntuPackage icont
-fileType text
-wordRank 2368
-centralPackageRepositoryCount 0
+tiobe Icon
 
 isbndb 3
  year|publisher|title|authors|isbn13

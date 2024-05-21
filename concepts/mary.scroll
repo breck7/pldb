@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id mary
 name Mary
 appeared 1970
 tags pl
+
+supersetOf algol-68
+fileType text
+wordRank 1514
+centralPackageRepositoryCount 0
 country Norway
 originCommunity Stiftelsen for industriell og teknisk forskning
 
-supersetOf algol-68
+lineCommentToken %
+assignmentToken :=
 
 hasLineComments true
  % A comment
@@ -14,9 +21,6 @@ hasComments true
  % A comment
 hasSemanticIndentation false
 hasAssignment true
-
-lineCommentToken %
-assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
  example
@@ -46,9 +50,5 @@ wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
  appeared 1970
 
 hopl https://hopl.info/showlanguage.prx?exp=647
-
-fileType text
-wordRank 1514
-centralPackageRepositoryCount 0
 
 isbndb 0

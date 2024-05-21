@@ -1,21 +1,28 @@
 import ../code/conceptPage.scroll
+
 id phel
 name Phel
 appeared 2020
-tags pl
 creators Jens Haase
+tags pl
 website https://phel-lang.org/
+
+writtenIn php markdown json yaml svg xml bourne-shell dockerfile
+compilesTo php
+repoStats
+ firstCommit 2020
+ commits 2140
+ committers 22
+ files 813
+ newestCommit 2024
 country United States
 originCommunity https://github.com/phel-lang
-domainName phel-lang.org
- registered 2020
-
-compilesTo php
 
 example
   (ns hello-world\boot)
  
   (println "Hello, World!")
+twitter https://twitter.com/phel_lang
 
 githubRepo https://github.com/phel-lang/phel-lang
  firstCommit 2020
@@ -27,15 +34,7 @@ githubRepo https://github.com/phel-lang/phel-lang
  description Phel is a functional programming language that compiles to PHP. It is a dialect of Lisp inspired by Clojure and Janet.
  issues 16
 
-repoStats
- firstCommit 2020
- commits 2140
- committers 22
- files 813
- newestCommit 2024
-
-twitter https://twitter.com/phel_lang
+domainName phel-lang.org
+ registered 2020
 
 semanticScholar 0
-
-writtenIn php markdown json yaml svg xml bourne-shell dockerfile

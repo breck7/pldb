@@ -1,9 +1,17 @@
 import ../code/conceptPage.scroll
+
 id urbiscript
 name Urbiscript
 appeared 2003
-tags pl
 creators Jean-Christophe Baillie
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter UrbiScript
+ filename urbi.py
+ fileExtensions u
 
 hasHexadecimals true
 hasFloats true
@@ -23,10 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/Urbiscript
  revisionCount 44
  dailyPageViews 5
  appeared 2003
-
-pygmentsHighlighter UrbiScript
- filename urbi.py
- fileExtensions u
-
-isOpenSource true
-centralPackageRepositoryCount 0

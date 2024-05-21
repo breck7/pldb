@@ -1,13 +1,16 @@
 import ../code/conceptPage.scroll
+
 id saol
 name SAOL
 appeared 1999
 tags pl
-conceptDescription The MPEG-4 Structured Audio Orchestra Language
-reference https://dl.acm.org/citation.cfm?id=1116129
 standsFor Structured Audio Orchestra Language
+conceptDescription The MPEG-4 Structured Audio Orchestra Language
+
+centralPackageRepositoryCount 0
 country Switzerland and United Kingdom
 originCommunity Moving Picture Experts Group
+reference https://dl.acm.org/citation.cfm?id=1116129
 
 wikipedia https://en.wikipedia.org/wiki/Structured_Audio_Orchestra_Language
  related csound
@@ -20,5 +23,3 @@ wikipedia https://en.wikipedia.org/wiki/Structured_Audio_Orchestra_Language
  appeared 1999
 
 hopl https://hopl.info/showlanguage.prx?exp=6450
-
-centralPackageRepositoryCount 0

@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id smile
 name Smile data interchange format
 appeared 2010
-tags binaryDataFormat
 creators Tatu Saloranta
+tags binaryDataFormat
+
+writtenIn markdown
+repoStats
+ firstCommit 2017
+ commits 46
+ committers 8
+ files 6
+ newestCommit 2022
 country United States
 originCommunity FasterXML, LLC
 
@@ -22,11 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/Smile_(data_interchange_format)
  backlinksCount 36
  pageId 42337945
  dailyPageViews 48
-
-repoStats
- firstCommit 2017
- commits 46
- committers 8
- files 6
- newestCommit 2022
-writtenIn markdown

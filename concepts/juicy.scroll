@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id juicy
 name juicy
 appeared 2017
-tags pl
 creators Jonathan Avery
+tags pl
 conceptDescription <a href='https://github.com/GordianNaught/Juicy'>Juicy</a> is a low-level, compiled, purely functional, highly generic language with inferred types and tail recursion.
+
+isOpenSource true
+writtenIn prolog markdown perl assembly-language make
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 76
+ committers 2
+ files 55
+ newestCommit 2017
 country New Zealand
 originCommunity https://github.com/GordianNaught/Juicy/issues
 
@@ -17,16 +29,3 @@ githubRepo https://github.com/GordianNaught/Juicy
  firstCommit 2017
  description Juicy Language Compiler
  issues 0
-
-repoStats
- firstCommit 2017
- commits 76
- committers 2
- files 55
- newestCommit 2017
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn prolog markdown perl assembly-language make

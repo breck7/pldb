@@ -1,11 +1,22 @@
 import ../code/conceptPage.scroll
+
 id gas
 name GNU Assembler
 appeared 1986
 tags compiler
-originCommunity GNU Project
 firstAnnouncement http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.4503&rep=rep1&type=pdf
 announcementMethod paper
+
+isOpenSource true
+fileType na
+wordRank 1119
+codeMirror gas
+centralPackageRepositoryCount 0
+originCommunity GNU Project
+
+pygmentsHighlighter GAS
+ filename asm.py
+ fileExtensions s S
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
  example
@@ -34,13 +45,3 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
  backlinksCount 65
  revisionCount 228
  appeared 2016
-
-codeMirror gas
-pygmentsHighlighter GAS
- filename asm.py
- fileExtensions s S
-
-fileType na
-wordRank 1119
-isOpenSource true
-centralPackageRepositoryCount 0

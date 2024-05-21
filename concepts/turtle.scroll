@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id turtle
 name Turtle
 appeared 2011
 tags dataNotation
+
+fileType text
+wordRank 9688
 documentation https://www.w3.org/TR/turtle/
+centralPackageRepositoryCount 0
 
-hasFloats true
-hasIntegers true
-
+pygmentsHighlighter Turtle
+ filename rdf.py
+ fileExtensions ttl
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
  @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -19,6 +24,11 @@ example
      ex:fullname "Dave Beckett";
      ex:homePage <http://purl.org/net/dajobe/>
    ] .
+languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/turtle-language-server
+ writtenIn typescript
+
+hasFloats true
+hasIntegers true
 
 wikipedia https://en.wikipedia.org/wiki/Turtle_(syntax)
  example
@@ -35,19 +45,6 @@ wikipedia https://en.wikipedia.org/wiki/Turtle_(syntax)
  dailyPageViews 542
  appeared 2011
 
-githubLanguage Turtle
- fileExtensions ttl
- trendingProjectsCount 0
- type data
- aceMode text
- codemirrorMode turtle
- codemirrorMimeType text/turtle
- tmScope source.turtle
- repos 137
-
-pygmentsHighlighter Turtle
- filename rdf.py
- fileExtensions ttl
 linguistGrammarRepo https://github.com/peta/turtle.tmbundle
  firstCommit 2013
  lastCommit 2015
@@ -65,14 +62,18 @@ linguistGrammarRepo https://github.com/peta/turtle.tmbundle
       ex:fullname "Dave Beckett";
       ex:homePage <http://purl.org/net/dajobe/>
     ] .
-languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/turtle-language-server
- writtenIn typescript
-
-fileType text
-wordRank 9688
-centralPackageRepositoryCount 0
 
 isbndb 0
+
+githubLanguage Turtle
+ fileExtensions ttl
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ codemirrorMode turtle
+ codemirrorMimeType text/turtle
+ tmScope source.turtle
+ repos 137
 
 semanticScholar 8
  year|title|doi|citations|influentialCitations|authors|paperId

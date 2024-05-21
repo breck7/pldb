@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id x-it
 name [x]it!
 appeared 2022
-tags dataNotation
 creators Jan Heuermann
+tags dataNotation
 website https://xit.jotaen.net
-reference https://news.ycombinator.com/item?id=32552782
 
+writtenIn markdown
 relatedConcepts todotxt
+repoStats
+ firstCommit 2022
+ commits 9
+ committers 2
+ files 2
+ newestCommit 2023
+reference https://news.ycombinator.com/item?id=32552782
 
 example
  [ ] This is an open item
@@ -24,12 +32,3 @@ githubRepo https://github.com/jotaen/xit
  updated 2022
  description A plain-text file format for todos and check lists
  issues 0
-
-repoStats
- firstCommit 2022
- commits 9
- committers 2
- files 2
- newestCommit 2023
-
-writtenIn markdown

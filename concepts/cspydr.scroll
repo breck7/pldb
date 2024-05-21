@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id cspydr
 name CSpydr
 appeared 2021
-tags pl
 creators Spydr06
+tags pl
 website https://github.com/spydr06/cspydr
+
+writtenIn c markdown bourne-shell make json svg lua bash vim-script cpp assembly-language toml brainfuck
 fileExtensions csp
+repoStats
+ firstCommit 2021
+ commits 923
+ committers 9
+ files 362
+ newestCommit 2024
 country Germany
 originCommunity https://github.com/spydr06/
 
@@ -33,12 +42,3 @@ githubRepo https://github.com/spydr06/cspydr
  created 2021
  updated 2022
  description A static typed low-level compiled programming language inspired by Rust and C
-
-repoStats
- firstCommit 2021
- commits 923
- committers 9
- files 362
- newestCommit 2024
-
-writtenIn c markdown bourne-shell make json svg lua bash vim-script cpp assembly-language toml brainfuck

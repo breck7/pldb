@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id parrot-internal-representation
 name PIR
 appeared 2006
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.perl.org
 
@@ -23,17 +27,6 @@ wikipedia https://en.wikipedia.org/wiki/Parrot_intermediate_representation
  revisionCount 20
  dailyPageViews 10
 
-githubLanguage Parrot Internal Representation
- fileExtensions pir
- trendingProjectsCount 0
- type programming
- group Parrot
- interpreters parrot
- aceMode text
- tmScope source.parrot.pir
- aliases pir
- repos 0
-
 linguistGrammarRepo https://github.com/textmate/parrot.tmbundle
  firstCommit 2007
  lastCommit 2016
@@ -48,7 +41,15 @@ linguistGrammarRepo https://github.com/textmate/parrot.tmbundle
   .end
   
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Parrot Internal Representation
+ fileExtensions pir
+ trendingProjectsCount 0
+ type programming
+ group Parrot
+ interpreters parrot
+ aceMode text
+ tmScope source.parrot.pir
+ aliases pir
+ repos 0

@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id txl
 name TXL
 appeared 1985
-tags pl
 creators James Cordy
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TXL_(programming_language)
  example
@@ -35,13 +39,8 @@ wikipedia https://en.wikipedia.org/wiki/TXL_(programming_language)
  dailyPageViews 9
  appeared 1985
 
-githubLanguage TXL
- fileExtensions txl
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.txl
- repos 69
+hopl https://hopl.info/showlanguage.prx?exp=1444
+
 githubBigQuery TXL
  repos 22
  users 22
@@ -135,7 +134,10 @@ linguistGrammarRepo https://github.com/MikeHoffert/Sublime-Text-TXL-syntax
   end rule
   
 
-hopl https://hopl.info/showlanguage.prx?exp=1444
-
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage TXL
+ fileExtensions txl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.txl
+ repos 69

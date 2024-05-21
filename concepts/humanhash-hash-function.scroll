@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id humanhash-hash-function
 name humanhash-hash-function
 appeared 2011
-tags hashFunction
 creators Zachary Voase
+tags hashFunction
+
+writtenIn python markdown
+repoStats
+ firstCommit 2011
+ commits 5
+ committers 1
+ files 5
+ newestCommit 2011
 country United States
 originCommunity https://github.com/zacharyvoase/humanhash/issues
 
@@ -16,11 +25,3 @@ githubRepo https://github.com/zacharyvoase/humanhash
  updated 2022
  description Human-readable digests.
  issues 10
-
-repoStats
- firstCommit 2011
- commits 5
- committers 1
- files 5
- newestCommit 2011
-writtenIn python markdown

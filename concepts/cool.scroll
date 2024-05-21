@@ -1,12 +1,33 @@
 import ../code/conceptPage.scroll
+
 id cool
 name Classroom Object Oriented Language
 appeared 1996
-tags pl
 creators Alexander Aiken
+tags pl
 standsFor Classroom Object Oriented Language
+
+fileType text
+wordRank 1457
+centralPackageRepositoryCount 0
 country United States
 originCommunity Stanford University
+
+leachim6 Cool
+ filepath c/Cool.cl
+ fileExtensions cl
+ example
+  class Main inherits IO {
+     main(): Object {
+  	out_string("Hello World.\n")
+     };
+  };
+  
+
+lineCommentToken --
+multiLineCommentTokens (* *)
+printToken out_string
+booleanTokens true false
 
 hasLineComments true
  -- A comment
@@ -18,11 +39,6 @@ hasMultiLineComments true
  *)
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken --
-multiLineCommentTokens (* *)
-printToken out_string
-booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Cool_(programming_language)
  example
@@ -54,13 +70,6 @@ wikipedia https://en.wikipedia.org/wiki/Cool_(programming_language)
  dailyPageViews 25
  appeared 1996
 
-githubLanguage Cool
- fileExtensions cl
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.cool
- repos 102
 githubBigQuery Cool
  repos 57
  users 56
@@ -100,19 +109,12 @@ linguistGrammarRepo https://github.com/anunayk/cool-tmbundle
   };
   
 
-leachim6 Cool
- filepath c/Cool.cl
- fileExtensions cl
- example
-  class Main inherits IO {
-     main(): Object {
-  	out_string("Hello World.\n")
-     };
-  };
-  
-
-fileType text
-wordRank 1457
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Cool
+ fileExtensions cl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.cool
+ repos 102

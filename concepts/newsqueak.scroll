@@ -1,9 +1,12 @@
 import ../code/conceptPage.scroll
+
 id newsqueak
 name Newsqueak
 appeared 1990
-tags pl
 creators Rob Pike
+tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell Labs
 
@@ -18,5 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/Newsqueak
  appeared 1980
 
 hopl https://hopl.info/showlanguage.prx?exp=1503
-
-centralPackageRepositoryCount 0

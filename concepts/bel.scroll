@@ -1,14 +1,45 @@
 import ../code/conceptPage.scroll
+
 id bel
 name Bel
 appeared 2019
-tags pl
 creators Paul Graham
+tags pl
 website http://paulgraham.com/bel.html
+
+relatedConcepts arc
 documentation https://sep.yimg.com/ty/cdn/paulgraham/bellanguage.txt?t=1595850613&
 country United States
 
-relatedConcepts arc
+example
+ ; Bel in Bel. 9 October 2019, 9:14 GMT
+ (def no (x)
+   (id x nil))
+ (def atom (x)
+   (no (id (type x) 'pair)))
+ (def all (f xs)
+   (if (no xs)      t
+       (f (car xs)) (all f (cdr xs))
+                    nil))
+ (def some (f xs)
+   (if (no xs)      nil
+       (f (car xs)) xs
+                    (some f (cdr xs))))
+ (def reduce (f xs)
+   (if (no (cdr xs))
+       (car xs)
+       (f (car xs) (reduce f (cdr xs)))))
+ (def cons args
+   (reduce join args))
+ (def append args
+   (if (no (cdr args)) (car args)
+       (no (car args)) (apply append (cdr args))
+                       (cons (car (car args))
+                             (apply append (cdr (car args))
+                                           (cdr args)))))
+
+lineCommentToken ;
+printToken prn
 
 hasLineComments true
  ; A comment
@@ -50,34 +81,3 @@ hasMacros true
  ; Here is a very simple macro:
  (mac nilwith (x)
    (list 'cons nil x))
- 
-
-lineCommentToken ;
-printToken prn
-
-example
- ; Bel in Bel. 9 October 2019, 9:14 GMT
- (def no (x)
-   (id x nil))
- (def atom (x)
-   (no (id (type x) 'pair)))
- (def all (f xs)
-   (if (no xs)      t
-       (f (car xs)) (all f (cdr xs))
-                    nil))
- (def some (f xs)
-   (if (no xs)      nil
-       (f (car xs)) xs
-                    (some f (cdr xs))))
- (def reduce (f xs)
-   (if (no (cdr xs))
-       (car xs)
-       (f (car xs) (reduce f (cdr xs)))))
- (def cons args
-   (reduce join args))
- (def append args
-   (if (no (cdr args)) (car args)
-       (no (car args)) (apply append (cdr args))
-                       (cons (car (car args))
-                             (apply append (cdr (car args))
-                                           (cdr args)))))

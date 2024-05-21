@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id aith
 name Aith
 appeared 2020
-tags pl
 creators Superstar64
-conceptDescription Aith is a perfomant systems programming language with am empathises on type systems. As of now Aith is very early stages and very little is implemented.
+tags pl
 website https://github.com/Superstar64/aith
+conceptDescription Aith is a perfomant systems programming language with am empathises on type systems. As of now Aith is very early stages and very little is implemented.
+
+writtenIn haskell tex make markdown python xml
+repoStats
+ firstCommit 2020
+ commits 369
+ committers 1
+ files 53
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/Superstar64/aith
-
-keywords as bool borrow boxed break byte capacity continue copy else existence extern false function if in inline int integer invariant io kind let linear long loop module multiarg multiplicity native opaque pointer pretype region representation short signed signedness size step struct subtypable transparent true type ubyte uint ulong union unique unrestricted unsigned unwrap used uses ushort word wrap wrapper
 
 example
  module ::
@@ -349,6 +356,7 @@ example
      };
  };
 
+keywords as bool borrow boxed break byte capacity continue copy else existence extern false function if in inline int integer invariant io kind let linear long loop module multiarg multiplicity native opaque pointer pretype region representation short signed signedness size step struct subtypable transparent true type ubyte uint ulong union unique unrestricted unsigned unwrap used uses ushort word wrap wrapper
 githubRepo https://github.com/Superstar64/aith
  stars 41
  forks 0
@@ -356,12 +364,3 @@ githubRepo https://github.com/Superstar64/aith
  created 2020
  updated 2022
  description [Early Stages] Low level functional programming language with linear types, first class inline functions, levity polymorphism and regions.
-
-repoStats
- firstCommit 2020
- commits 369
- committers 1
- files 53
- newestCommit 2024
-
-writtenIn haskell tex make markdown python xml

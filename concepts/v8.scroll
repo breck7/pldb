@@ -1,14 +1,26 @@
 import ../code/conceptPage.scroll
+
 id v8
 name v8
 appeared 2008
+creators Lars Bak
 tags vm
 website https://v8.dev/
 
-inputLanguages javascript wasm
+isOpenSource true
 writtenIn javascript cpp python json typescript html bourne-shell markdown c wasm pascal css starlark yaml vim-script xml assembly-language bash svg scheme r bazel make
+inputLanguages javascript wasm
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ newestCommit 2024
+ commits 122206
+ committers 1243
+ files 16044
 
 gource https://www.youtube.com/watch?v=Mbpd1K-ToYg
+
 githubRepo https://github.com/v8/v8
  firstCommit 2008
  stars 19737
@@ -20,15 +32,3 @@ githubRepo https://github.com/v8/v8
  issues 0
 
 wikipedia https://en.wikipedia.org/wiki/V8_(JavaScript_engine)
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-creators Lars Bak
-repoStats
- firstCommit 2008
- newestCommit 2024
- commits 122206
- committers 1243
- files 16044

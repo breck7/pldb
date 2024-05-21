@@ -1,34 +1,26 @@
 import ../code/conceptPage.scroll
+
 id ampl
 name AMPL
 appeared 1985
-tags pl
 creators Robert Fourer and David Gay and Brian Kernighan
+tags pl
 website https://ampl.com/
-documentation https://ampl.com/learn/docs/
 standsFor A Mathematical Programming Language
+
+isOpenSource false
+fileType text
+documentation https://ampl.com/learn/docs/
+eventsPageUrl https://ampl.com/about/upcoming-events/
+faqPageUrl https://ampl.com/learn/docs/faqs/
+rosettaCode http://www.rosettacode.org/wiki/Category:AMPL
+centralPackageRepositoryCount 0
 country United States
 originCommunity AMPL Optimization LLC
-domainName ampl.com
- registered 1995
- awisRank
-  2022 971333
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-hasAssignment true
-hasFloats true
- # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
-hasIntegers true
- # \d+([eE][+-]?\d+)?
-hasMultiLineComments true
-
-lineCommentToken #
-assignmentToken :=
-
+pygmentsHighlighter Ampl
+ filename ampl.py
+ fileExtensions run
 example
  set PROD;  # products
  
@@ -48,6 +40,22 @@ example
  
                 # Constraint: total of hours used by all
                 # products may not exceed hours available
+twitter https://twitter.com/amplopt
+
+lineCommentToken #
+assignmentToken :=
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasAssignment true
+hasFloats true
+ # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+hasIntegers true
+ # \d+([eE][+-]?\d+)?
+hasMultiLineComments true
 
 wikipedia https://en.wikipedia.org/wiki/AMPL
  example
@@ -112,20 +120,17 @@ wikipedia https://en.wikipedia.org/wiki/AMPL
  appeared 1985
  fileExtensions mod dat run
 
-githubLanguage AMPL
- fileExtensions ampl mod
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ampl
- repos 5570
+hopl https://hopl.info/showlanguage.prx?exp=7232
+
+domainName ampl.com
+ registered 1995
+ awisRank
+  2022 971333
+
 githubBigQuery AMPL
  repos 852
  users 806
 
-pygmentsHighlighter Ampl
- filename ampl.py
- fileExtensions run
 linguistGrammarRepo https://github.com/ampl/sublime-ampl
  firstCommit 2013
  lastCommit 2013
@@ -160,19 +165,26 @@ linguistGrammarRepo https://github.com/ampl/sublime-ampl
   param KnapsackBound := 102;
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:AMPL
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1997|Cengage Learning|AMPL: A Modeling Language for Mathematical Programming (with AMPL Plus Student Edition for Microsoft Windows) (The Scientific Press Series)|Fourer, Robert and Gay, David M. and Kernighan, Brian W.|9780894262326
+ 1997-01-13T00:00:01Z|Cengage Learning|AMPL: A Modeling Language for Mathematical Programming (with AMPL Plus Student Edition for Microsoft Windows) (The Scientific Press Series)|Fourer, Robert and Gay, David M. and Kernighan, Brian W.|9780534509835
+
+githubLanguage AMPL
+ fileExtensions ampl mod
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ampl
+ repos 5570
 
 indeedJobs ampl developer
  2022 3
-eventsPageUrl https://ampl.com/about/upcoming-events/
-faqPageUrl https://ampl.com/learn/docs/faqs/
 
-hopl https://hopl.info/showlanguage.prx?exp=7232
-
-twitter https://twitter.com/amplopt
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1996|DIY DEA: Implementing data envelopment analysis in the mathematical programming language AMPL|10.1016/0305-0483(96)00003-5|8|0|R. Green|2a84d88be4d3283124da624af001a3f0c4c01885
+ 1984|Loslan implementation of the AMPL message-passing system|10.1145/948596.948600|2|0|J. Milewski|7c0626677098596348ea9d02ad5f569a7aa2e19d
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -182,13 +194,3 @@ goodreads
  Ampl: A Modeling Language for Math Programming Package (with User Guide)|1999|Robert Fourer|20874765|2.00|1|0
  Ampl: A Molding Language for Mathematical Programming/Book & IBM 5 1/4 Disk|1991|Robert Fourer|2247991|0.0|0|0
  Mathematical Optimization Software: Mathematica, General Algebraic Modeling System, Propt, Ioso, Mps, Ampl, Apmonitor, Tomsym, Worhp, Dido|2011|Source Wikipedia|15185414|0.0|0|0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 1997|Cengage Learning|AMPL: A Modeling Language for Mathematical Programming (with AMPL Plus Student Edition for Microsoft Windows) (The Scientific Press Series)|Fourer, Robert and Gay, David M. and Kernighan, Brian W.|9780894262326
- 1997-01-13T00:00:01Z|Cengage Learning|AMPL: A Modeling Language for Mathematical Programming (with AMPL Plus Student Edition for Microsoft Windows) (The Scientific Press Series)|Fourer, Robert and Gay, David M. and Kernighan, Brian W.|9780534509835
-
-semanticScholar 2
- year|title|doi|citations|influentialCitations|authors|paperId
- 1996|DIY DEA: Implementing data envelopment analysis in the mathematical programming language AMPL|10.1016/0305-0483(96)00003-5|8|0|R. Green|2a84d88be4d3283124da624af001a3f0c4c01885
- 1984|Loslan implementation of the AMPL message-passing system|10.1145/948596.948600|2|0|J. Milewski|7c0626677098596348ea9d02ad5f569a7aa2e19d

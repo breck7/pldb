@@ -1,24 +1,23 @@
 import ../code/conceptPage.scroll
+
 id lispyscript
 name lispyscript
 appeared 2012
-tags pl
 creators Santosh Rajan
-conceptDescription A javascript With Lispy Syntax And Macros!
+tags pl
 website http://lispyscript.com
-reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
+conceptDescription A javascript With Lispy Syntax And Macros!
+
+writtenIn javascript markdown json css html make yaml coffeescript
+repoStats
+ firstCommit 2012
+ commits 271
+ committers 7
+ files 439
+ newestCommit 2020
 country India
 originCommunity https://github.com/santoshrajan/lispyscript/issues
-domainName lispyscript.com
- registered 2021
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
+reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
 
 example
  ;; test with and without the "./"
@@ -42,11 +41,13 @@ githubRepo https://github.com/santoshrajan/lispyscript
  description A javascript with Lispy syntax and macros
  issues 18
 
-repoStats
- firstCommit 2012
- commits 271
- committers 7
- files 439
- newestCommit 2020
+lineCommentToken ;
 
-writtenIn javascript markdown json css html make yaml coffeescript
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+domainName lispyscript.com
+ registered 2021

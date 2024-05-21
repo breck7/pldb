@@ -1,18 +1,41 @@
 import ../code/conceptPage.scroll
+
 id latex
 name LaTeX
 appeared 1985
-tags textMarkup
 creators Leslie Lamport
+tags textMarkup
 website http://latex-project.org/
+
+isOpenSource true
+fileType text
+wordRank 5960
 documentation https://www.latex-project.org/help/documentation/
 documentation https://devdocs.io/latex/
+rosettaCode http://www.rosettacode.org/wiki/Category:LaTeX
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.latex-project.org/about/team/
-domainName latex-project.org
- registered 1998
- awisRank
-  2022 72488
+
+helloWorldCollection LaTeX
+ % Hello World! in LaTeX
+ \documentclass{article}
+ \begin{document}
+ Hello World!
+ \end{document}
+ 
+leachim6 LaTeX
+ filepath l/LaTeX.tex
+ fileExtensions tex
+ example
+  \documentclass{article}
+  \begin{document}
+  Hello World
+  \end{document}
+  
+languageServerProtocolProject https://github.com/efoerster/texlab
+
+lineCommentToken %
 
 hasComments true
 hasMultiLineComments false
@@ -20,8 +43,6 @@ hasLineComments true
  % A comment
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
-
-lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/LaTeX
  example
@@ -60,32 +81,12 @@ wikipedia https://en.wikipedia.org/wiki/LaTeX
  revisionCount 1914
  appeared 1980
 
-languageServerProtocolProject https://github.com/efoerster/texlab
-
-helloWorldCollection LaTeX
- % Hello World! in LaTeX
- \documentclass{article}
- \begin{document}
- Hello World!
- \end{document}
- 
-leachim6 LaTeX
- filepath l/LaTeX.tex
- fileExtensions tex
- example
-  \documentclass{article}
-  \begin{document}
-  Hello World
-  \end{document}
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:LaTeX
-
 hopl https://hopl.info/showlanguage.prx?exp=2157
 
-fileType text
-wordRank 5960
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName latex-project.org
+ registered 1998
+ awisRank
+  2022 72488
 
 isbndb 8
  year|publisher|title|authors|isbn13

@@ -1,12 +1,28 @@
 import ../code/conceptPage.scroll
+
 id c-shell
 name C shell
 appeared 1978
 tags pl
 website http://mx.gw.com
+
+isOpenSource true
+clocExtensions csh tcsh
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of California, Berkeley
-domainName mx.gw.com
+
+leachim6 C Shell
+ filepath c/C Shell.csh
+ example
+  #!/bin/csh
+  echo "Hello World"
+  
+
+lineCommentToken #
+printToken echo
+stringToken "
 
 hasHereDocs true
 hasLineComments true
@@ -17,10 +33,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken #
-printToken echo
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/C_Shell
  example
@@ -35,19 +47,8 @@ wikipedia https://en.wikipedia.org/wiki/C_Shell
  revisionCount 3
  appeared 1978
 
-leachim6 C Shell
- filepath c/C Shell.csh
- example
-  #!/bin/csh
-  echo "Hello World"
-  
-
 tiobe C shell
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName mx.gw.com
 
 isbndb 0
-
-clocExtensions csh tcsh

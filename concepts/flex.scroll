@@ -1,15 +1,48 @@
 import ../code/conceptPage.scroll
+
 id flex
 name FLEX
 appeared 1987
-tags grammarLanguage
 creators Vern Paxson
+tags grammarLanguage
 website https://github.com/westes/flex
+
+isOpenSource true
+writtenIn lex c bourne-shell make yacc llvmir m4 markdown yaml perl awk cpp idl
+fileType text
+wordRank 9114
 documentation https://www.di.uminho.pt/~prh/FlexTutorial.pdf
 documentation https://www.geeksforgeeks.org/flex-fast-lexical-analyzer-generator/
-reference https://github.com/babyraging/yash
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1987
+ commits 2670
+ committers 82
+ files 296
+ newestCommit 2024
 country United States
 originCommunity University of California, Berkeley
+reference https://github.com/babyraging/yash
+
+rijuRepl https://riju.codes/flex
+ example
+  %{
+  #include <stdio.h>
+  %}
+  
+  %%
+  %%
+  
+  int yywrap() {
+    printf("Hello, world!\n");
+    return 1;
+  }
+  
+  int main() {
+    yylex();
+    return 0;
+  }
+  
 
 githubRepo https://github.com/westes/flex
  firstCommit 1987
@@ -20,13 +53,6 @@ githubRepo https://github.com/westes/flex
  updated 2022
  description The Fast Lexical Analyzer - scanner generator for lexing in C and C++
  issues 154
-
-repoStats
- firstCommit 1987
- commits 2670
- committers 82
- files 296
- newestCommit 2024
 
 wikipedia https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
  example
@@ -85,37 +111,7 @@ wikipedia https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
  revisionCount 253
  appeared 1987
 
-rijuRepl https://riju.codes/flex
- example
-  %{
-  #include <stdio.h>
-  %}
-  
-  %%
-  %%
-  
-  int yywrap() {
-    printf("Hello, world!\n");
-    return 1;
-  }
-  
-  int main() {
-    yylex();
-    return 0;
-  }
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=2033
-
-fileType text
-wordRank 9114
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Flex 2|2007|Chafic Kazoun|559921|3.31|35|4
- Programming Flex 3|2008|Chafic Kazoun|2557355|3.44|9|1
 
 isbndb 76
  year|publisher|title|authors|isbn13
@@ -203,4 +199,7 @@ semanticScholar 4
  1991|Flex : A Language for Programming Flexible Real-Time Systems|10.1007/978-1-4615-4016-8_10|14|0|Kwei-Jay Lin and J. Liu and K. Kenny and S. Natarajan|79607cc3eb1890aea08fe98fa5a6096bf74300aa
  2010|Game E-Learning Code Master Dengan Konsep Mmorpg Menggunakan Adobe Flex 3|10.21512/COMTECH.V1I2.2365|3|0|Fredy Purnomo and Monika Leslivania and D. Daniel and Lisye Mareta Cahya|0d097a44bbd9a06ebb6a0695233344ea3caa6e8d
 
-writtenIn lex c bourne-shell make yacc llvmir m4 markdown yaml perl awk cpp idl
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Flex 2|2007|Chafic Kazoun|559921|3.31|35|4
+ Programming Flex 3|2008|Chafic Kazoun|2557355|3.44|9|1

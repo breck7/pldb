@@ -1,20 +1,34 @@
 import ../code/conceptPage.scroll
+
 id roy
 name roy
 appeared 2011
-tags pl
 creators Brian McKenna
+tags pl
 website http://roy.brianmckenna.org/
+
+isOpenSource true
+writtenIn javascript css html restructuredtext markdown make json python yaml bourne-shell
+fileType text
+wordRank 5386
+replit https://repl.it/languages/roy
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 569
+ committers 39
+ files 128
+ newestCommit 2013
 country Australia
 originCommunity https://github.com/puffnfresh/roy/issues
-domainName roy.brianmckenna.org
 
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-
-printToken console.log
-stringToken "
+twitter https://twitter.com/roylangjs
+leachim6 Roy
+ filepath r/Roy.roy
+ fileExtensions roy
+ example
+  console.log "Hello World"
+  
 
 githubRepo https://github.com/puffnfresh/roy
  firstCommit 2011
@@ -26,30 +40,15 @@ githubRepo https://github.com/puffnfresh/roy
  description Small functional language that compiles to JavaScript.
  issues 64
 
-repoStats
- firstCommit 2011
- commits 569
- committers 39
- files 128
- newestCommit 2013
+printToken console.log
+stringToken "
 
-leachim6 Roy
- filepath r/Roy.roy
- fileExtensions roy
- example
-  console.log "Hello World"
-  
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
-replit https://repl.it/languages/roy
-
-twitter https://twitter.com/roylangjs
-fileType text
-wordRank 5386
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName roy.brianmckenna.org
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2001|Springer|Aiding Decisions with Multiple Criteria: Essays in Honor of Bernard Roy (International Series in Operations Research & Management Science, 44)|Bouyssou, Denis and Jacquet-Lagrèze, Eric and Perny, Patrice and Slowiński, Roman and Vanderpooten, Daniel and Vincke, P.|9780792376118
-
-writtenIn javascript css html restructuredtext markdown make json python yaml bourne-shell

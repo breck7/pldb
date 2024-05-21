@@ -1,10 +1,16 @@
 import ../code/conceptPage.scroll
+
 id macro-10
 name MACRO-10
 appeared 1978
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Digital Equipment Corporation
+
+lineCommentToken ;
+stringToken '
 
 hasLineComments true
  ; A comment
@@ -13,9 +19,6 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  'Hello world'
-
-lineCommentToken ;
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/MACRO-10
  example
@@ -61,5 +64,3 @@ wikipedia https://en.wikipedia.org/wiki/MACRO-10
  revisionCount 25
  dailyPageViews 4
  appeared 1978
-
-centralPackageRepositoryCount 0

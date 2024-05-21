@@ -1,10 +1,23 @@
 import ../code/conceptPage.scroll
+
 id kuin
 name Kuin
 appeared 2016
 tags pl
+
+writtenIn cpp xml c html assembly-language markdown
+repoStats
+ firstCommit 2016
+ commits 880
+ committers 10
+ files 625
+ newestCommit 2022
 country Japan
 originCommunity https://github.com/kuina
+
+pygmentsHighlighter Kuin
+ filename kuin.py
+ fileExtensions kn
 
 githubRepo https://github.com/kuina/Kuin
  firstCommit 2016
@@ -15,16 +28,3 @@ githubRepo https://github.com/kuina/Kuin
  updated 2022
  description Kuin Programming Language
  issues 19
-
-repoStats
- firstCommit 2016
- commits 880
- committers 10
- files 625
- newestCommit 2022
-
-pygmentsHighlighter Kuin
- filename kuin.py
- fileExtensions kn
-
-writtenIn cpp xml c html assembly-language markdown

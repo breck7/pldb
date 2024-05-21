@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id doml
 name DOML
 appeared 2017
 tags dataNotation
 standsFor Data Oriented Markup Language
+
+writtenIn markdown
+repoStats
+ firstCommit 2017
+ commits 117
+ committers 2
+ files 13
+ newestCommit 2018
 country Australia
 originCommunity https://github.com/DOML-Lang
 
@@ -83,12 +92,3 @@ githubRepo https://github.com/DOML-Lang/DOML
  updated 2021
  description The specification document for DOML
  issues 7
-
-repoStats
- firstCommit 2017
- commits 117
- committers 2
- files 13
- newestCommit 2018
-
-writtenIn markdown

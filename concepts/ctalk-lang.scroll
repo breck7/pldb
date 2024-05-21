@@ -1,20 +1,14 @@
 import ../code/conceptPage.scroll
+
 id ctalk-lang
 name ctalk-lang
 appeared 1989
 tags pl
 conceptDescription The CTalk programming language: a strategic evolution of APL
-reference http://kiwi.emse.fr/JJG/INTALK/ctalk.txt
+
 country France
 originCommunity École des Mines de Saint-Étienne
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+reference http://kiwi.emse.fr/JJG/INTALK/ctalk.txt
 
 example
  // When working with the CTalk interpreter,
@@ -29,3 +23,11 @@ example
  // = 2
  // = 3
  // = 5
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

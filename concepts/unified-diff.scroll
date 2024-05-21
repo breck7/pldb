@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id unified-diff
 name Unified Diff
 appeared 1990
-tags diffFormat
 creators Wayne Davison
-reference https://en.wikipedia.org/wiki/Diff#Unified_format
+tags diffFormat
 aka unidiff
+
 originCommunity comp.sources.misc
+reference https://en.wikipedia.org/wiki/Diff#Unified_format
 
 example
  --- /path/to/original	timestamp

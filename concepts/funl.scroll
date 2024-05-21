@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id funl
 name funl
 appeared 2020
-tags pl
 creators Anssi Halmeaho
+tags pl
 website https://programmingfunl.wordpress.com/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ghqob0/funl_simple_dynamic_functional_language/
+
+writtenIn fennel go markdown make
+repoStats
+ firstCommit 2020
+ commits 127
+ committers 4
+ files 92
+ newestCommit 2024
 country Finland
 originCommunity https://github.com/anssihalmeaho/funl/issues
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ghqob0/funl_simple_dynamic_functional_language/
 
 example
  ns main
@@ -27,12 +36,3 @@ githubRepo https://github.com/anssihalmeaho/funl
  description FunL programming language
  forks 0
  issues 0
-
-repoStats
- firstCommit 2020
- commits 127
- committers 4
- files 92
- newestCommit 2024
-
-writtenIn fennel go markdown make

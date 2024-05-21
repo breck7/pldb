@@ -1,54 +1,16 @@
 import ../code/conceptPage.scroll
+
 id svg
 name SVG
 appeared 2001
 tags textMarkup
-documentation https://developer.mozilla.org/en-US/docs/Web/SVG
 standsFor Scalable Vector Graphics
+
+clocExtensions SVG svg
+fileType text
+documentation https://developer.mozilla.org/en-US/docs/Web/SVG
+centralPackageRepositoryCount 0
 originCommunity W3C
-
-hasLineComments false
-hasMultiLineComments true
- <!-- A comment
- -->
-hasComments true
-hasSemanticIndentation false
-
-multiLineCommentTokens <!-- -->
-
-wikipedia https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
- example
-  <?xml version="1.0" encoding="UTF-8" ?>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <rect x="25" y="25" width="200" height="200" fill="lime" stroke-width="4" stroke="pink" />
-    <circle cx="125" cy="125" r="75" fill="orange" />
-    <polyline points="50,150 50,200 200,200 200,100" stroke="red" stroke-width="4" fill="none" />
-    <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="4" />
-  </svg>
- related xml css javascript pdf synchronized-multimedia-integration-language ecmascript gzip url html android dxf gnuplot vml
- summary Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999. SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and compressed. As XML files, SVG images can be created and edited with any text editor, as well as with drawing software. All major modern web browsers—including Mozilla Firefox, Internet Explorer, Google Chrome, Opera, Safari, and Microsoft Edge—have SVG rendering support.
- pageId 27751
- dailyPageViews 1237
- created 2001
- backlinksCount 34348
- revisionCount 2645
- appeared 2011
-
-githubLanguage SVG
- fileExtensions svg
- trendingProjectsCount 0
- type data
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml.svg
- repos 27
-
-linguistGrammarRepo https://github.com/textmate/xml.tmbundle
- firstCommit 2004
- lastCommit 2018
- committerCount 12
- commitCount 97
 
 helloWorldCollection Scalable Vector Graphics
  <?xml version="1.0" encoding="utf-8" standalone="no"?>
@@ -77,16 +39,38 @@ leachim6 SVG
       </g>
   </svg>
 
-indeedJobs svg developer
- 2022 0
+multiLineCommentTokens <!-- -->
 
-fileType text
-centralPackageRepositoryCount 0
+hasLineComments false
+hasMultiLineComments true
+ <!-- A comment
+ -->
+hasComments true
+hasSemanticIndentation false
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Svg Programming: The Graphical Web|2002|Kurt Cagle|838716|4.50|4|1
- Fundamentals of SVG Programming|2003|Oswald Campesato|838718|4.00|2|0
+wikipedia https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+ example
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <rect x="25" y="25" width="200" height="200" fill="lime" stroke-width="4" stroke="pink" />
+    <circle cx="125" cy="125" r="75" fill="orange" />
+    <polyline points="50,150 50,200 200,200 200,100" stroke="red" stroke-width="4" fill="none" />
+    <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="4" />
+  </svg>
+ related xml css javascript pdf synchronized-multimedia-integration-language ecmascript gzip url html android dxf gnuplot vml
+ summary Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999. SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and compressed. As XML files, SVG images can be created and edited with any text editor, as well as with drawing software. All major modern web browsers—including Mozilla Firefox, Internet Explorer, Google Chrome, Opera, Safari, and Microsoft Edge—have SVG rendering support.
+ pageId 27751
+ dailyPageViews 1237
+ created 2001
+ backlinksCount 34348
+ revisionCount 2645
+ appeared 2011
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
 
 isbndb 19
  year|publisher|title|authors|isbn13
@@ -110,6 +94,19 @@ isbndb 19
  2010|Springer-Verlag New York, LLC|Visualizing Information Using Svg and X3d: XML-Based Technologies for the XML-Based Web|Geroimenko and Vladimir and Chen and Chaomei|9781849969185
  20171017|O'Reilly Media, Inc.|Using SVG with CSS3 and HTML5|Amelia Bellamy-Royds; Kurt Cagle; Dudley Storey|9781491921920
 
+githubLanguage SVG
+ fileExtensions svg
+ trendingProjectsCount 0
+ type data
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml.svg
+ repos 27
+
+indeedJobs svg developer
+ 2022 0
+
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|Sketch-n-Sketch: Output-Directed Programming for SVG|10.1145/3332165.3347925|39|2|Brian Hempel and Justin Lubin and Ravi Chugh|b39498c78b491ebaedf1a7e8cbb76df774f0dfde
@@ -117,4 +114,7 @@ semanticScholar 4
  2002|SVG Programming: The Graphical Web|10.1007/978-1-4302-0840-2|14|1|K. Cagle|69e020d14ca95b93a5902f39be6acddbff3c2df3
  2013|Controlling the Movement of the Robot's Effector on the Plane Using the SVG Markup Language|10.4028/www.scientific.net/AMR.837.577|14|0|K. Foit|0e46ec17729b8a2009ffcb5fd807a89eea34cd1c
 
-clocExtensions SVG svg
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Svg Programming: The Graphical Web|2002|Kurt Cagle|838716|4.50|4|1
+ Fundamentals of SVG Programming|2003|Oswald Campesato|838718|4.00|2|0

@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id lila-lang
 name lila-lang
 appeared 2019
 tags pl
+
+writtenIn lisp python markdown svg yaml
+repoStats
+ firstCommit 2019
+ commits 182
+ committers 2
+ files 48
+ newestCommit 2019
 country Unknown
 originCommunity https://github.com/codr7/lila/issues
 
@@ -24,12 +33,3 @@ githubRepo https://github.com/codr7/lila
  stars 3
  forks 0
  issues 0
-
-repoStats
- firstCommit 2019
- commits 182
- committers 2
- files 48
- newestCommit 2019
-
-writtenIn lisp python markdown svg yaml

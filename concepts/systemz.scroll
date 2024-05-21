@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id systemz
 name IBM System z
 appeared 2000
 tags computingMachine
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/IBM_System_z
  related linux
@@ -13,6 +17,3 @@ wikipedia https://en.wikipedia.org/wiki/IBM_System_z
  backlinksCount 138
  revisionCount 1
  appeared 2000
-
-fileType text
-centralPackageRepositoryCount 0

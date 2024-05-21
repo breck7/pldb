@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id godel
 name Gödel (Goedel)
 appeared 1992
-tags pl
 creators John Lloyd and Patricia Hill
-reference https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/books/goedel-book.html
+tags pl
 aka Goedel
+
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity University of Bristol
+reference https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/books/goedel-book.html
 
 wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
  example
@@ -36,6 +40,3 @@ wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
  revisionCount 57
 
 hopl https://hopl.info/showlanguage.prx?exp=1762
-
-fileType text
-centralPackageRepositoryCount 0

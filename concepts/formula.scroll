@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id formula
 name Formula language
 appeared 1989
 tags pl
-conceptDescription Formula language is a simple, easy-to-use programming language that can be found in many Lotus products -- such as Lotus 1-2-3 and Lotus Notes. Formula language has been integrated into Lotus Notes since its inception in 1989 and has included numerous enhancements over the years.
 website https://www.ibm.com/support/knowledgecenter/en/SSVRGU_9.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html
-reference https://searchdomino.techtarget.com/tutorial/What-is-Lotus-Formula-language
+conceptDescription Formula language is a simple, easy-to-use programming language that can be found in many Lotus products -- such as Lotus 1-2-3 and Lotus Notes. Formula language has been integrated into Lotus Notes since its inception in 1989 and has included numerous enhancements over the years.
+
+fileType text
+wordRank 3630
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+reference https://searchdomino.techtarget.com/tutorial/What-is-Lotus-Formula-language
 
 example
  FIELD NewDate:=@Today
@@ -22,7 +27,3 @@ wikipedia https://en.wikipedia.org/wiki/Formula_language
  revisionCount 22
  dailyPageViews 10
  appeared 2002
-
-fileType text
-wordRank 3630
-centralPackageRepositoryCount 0

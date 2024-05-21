@@ -1,11 +1,11 @@
 import ../code/conceptPage.scroll
+
 id albatross
 name albatross
 appeared 2015
 tags pl
-conceptDescription Albatross is A Programming Language with Static Verification: You can develop programs and algorithms and prove them to be correct in Albatross
 website http://albatross-lang.sourceforge.net
-domainName albatross-lang.sourceforge.net
+conceptDescription Albatross is A Programming Language with Static Verification: You can develop programs and algorithms and prove them to be correct in Albatross
 
 example
  use alba.base.boolean
@@ -16,6 +16,8 @@ example
  ensure
      a
  end
+
+domainName albatross-lang.sourceforge.net
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score

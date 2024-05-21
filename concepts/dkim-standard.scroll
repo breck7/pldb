@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id dkim-standard
 name DomainKeys Identified Mail
 appeared 2004
 tags standard
 website https://mipassoc.org/
-reference https://www.rfc-editor.org/info/rfc6376
+
 country United States
 originCommunity Mutual Internet Practices Association
-domainName mipassoc.org
+reference https://www.rfc-editor.org/info/rfc6376
 
 wikipedia https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
+
+domainName mipassoc.org

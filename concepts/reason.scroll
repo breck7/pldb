@@ -1,20 +1,76 @@
 import ../code/conceptPage.scroll
+
 id reason
 name Reason
 appeared 2016
 tags pl
 website https://reasonml.github.io/
-documentation https://reasonml.github.io/docs/en/what-and-why
 aka reasonml
-originCommunity Facebook
-domainName reasonml.github.io
- awisRank
-  2022 636094
-  2017 272174
 
-compilesTo ocaml
+isOpenSource true
 writtenIn ocaml reason markdown json bourne-shell diff make javascript yaml nix html bash
+compilesTo ocaml
 relatedConcepts rust elm purescript fable-lang clojurescript swift haxe
+tryItOnline reason
+officialBlogUrl https://reasonml.github.io/blog/
+clocExtensions re rei
+fileType text
+wordRank 1246
+documentation https://reasonml.github.io/docs/en/what-and-why
+rosettaCode http://www.rosettacode.org/wiki/Category:Reason
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 2238
+ committers 160
+ files 661
+ newestCommit 2024
+originCommunity Facebook
+
+pygmentsHighlighter ReasonML
+ filename ml.py
+ fileExtensions re rei
+rijuRepl https://riju.codes/reasonml
+ example
+  print_string("Hello, world!\n");
+example
+ type schoolPerson = Teacher | Director | Student(string);
+ 
+ let greeting = person =>
+   switch (person) {
+   | Teacher => "Hey Professor!"
+   | Director => "Hello Director."
+   | Student("Richard") => "Still here Ricky?"
+   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
+   };
+leachim6 Reason
+ filepath r/Reason.re
+ fileExtensions re
+ example
+  print_string "Hello World"
+  
+languageServerProtocolProject https://github.com/jaredly/reason-language-server
+ writtenIn ocaml
+
+meetup https://www.meetup.com/topics/reasonml
+ memberCount 901
+ groupCount 11
+keywords as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+githubRepo https://github.com/facebook/reason
+ stars 9670
+ forks 448
+ subscribers 188
+ created 2015
+ updated 2022
+ firstCommit 2016
+ description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
+ issues 474
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print_string
+stringToken "
+booleanTokens true false
 
 hasLineComments true
  // A comment
@@ -49,57 +105,15 @@ hasIntegers true
 hasBinaryNumbers true
  // 0[bB][01][01_]*
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken print_string
-stringToken "
-booleanTokens true false
-keywords as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+domainName reasonml.github.io
+ awisRank
+  2022 636094
+  2017 272174
 
-example
- type schoolPerson = Teacher | Director | Student(string);
- 
- let greeting = person =>
-   switch (person) {
-   | Teacher => "Hey Professor!"
-   | Director => "Hello Director."
-   | Student("Richard") => "Still here Ricky?"
-   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
-   };
-
-githubRepo https://github.com/facebook/reason
- stars 9670
- forks 448
- subscribers 188
- created 2015
- updated 2022
- firstCommit 2016
- description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
- issues 474
-
-repoStats
- firstCommit 2016
- commits 2238
- committers 160
- files 661
- newestCommit 2024
-
-githubLanguage Reason
- fileExtensions re rei
- trendingProjectsCount 0
- type programming
- aceMode rust
- codemirrorMode rust
- codemirrorMimeType text/x-rustsrc
- tmScope source.reason
- repos 1924
 githubBigQuery Reason
  repos 24
  users 23
 
-pygmentsHighlighter ReasonML
- filename ml.py
- fileExtensions re rei
 linguistGrammarRepo https://github.com/reasonml-editor/language-reason
  firstCommit 2016
  lastCommit 2017
@@ -591,41 +605,23 @@ linguistGrammarRepo https://github.com/reasonml-editor/language-reason
   /* </Foo>; */
   /* let res = <Foo a=10 b=(<Foo a=200 />) />; */
   
-languageServerProtocolProject https://github.com/jaredly/reason-language-server
- writtenIn ocaml
-
-leachim6 Reason
- filepath r/Reason.re
- fileExtensions re
- example
-  print_string "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Reason
-
-rijuRepl https://riju.codes/reasonml
- example
-  print_string("Hello, world!\n");
-tryItOnline reason
-
-officialBlogUrl https://reasonml.github.io/blog/
-
-meetup https://www.meetup.com/topics/reasonml
- memberCount 901
- groupCount 11
-
-fileType text
-wordRank 1246
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2006|Pc Publishing|Fast Guide To Propellerhead Reason|Hollin Jones; Debbie Poyser; Derek Johnson|9781870775274
+
+githubLanguage Reason
+ fileExtensions re rei
+ trendingProjectsCount 0
+ type programming
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.reason
+ repos 1924
 
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  1997|Interval propagation to reason about sets: Definition and implementation of a practical language|10.1007/BF00137870|177|14|C. Gervet|6532f8973c4640b8feec743a9937f02ac16f6a38
  2006|How to reason with OWL in a logic programming system|10.1109/RULEML.2006.14|33|1|M. Krötzsch and P. Hitzler and Denny Vrandečić and Michael Sintek|a022506f8daec551f86ec601b1e9e972a86271ee
  2019|Semantic Query Integration With Reason|10.22152/programming-journal.org/2019/3/13|6|0|Philipp Seifer and Martin Leinberger and R. Lämmel and Steffen Staab|7f31fa37c6311d844637ea126e1c47dd5fd387a9
-
-clocExtensions re rei

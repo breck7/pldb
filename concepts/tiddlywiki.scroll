@@ -1,8 +1,14 @@
 import ../code/conceptPage.scroll
+
 id tiddlywiki
 name TiddlyWiki
 appeared 2004
 tags wikiMarkup
+
+isOpenSource true
+fileType text
+codeMirror tiddlywiki
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TiddlyWiki
  example
@@ -21,11 +27,5 @@ wikipedia https://en.wikipedia.org/wiki/TiddlyWiki
  backlinksCount 130
  revisionCount 470
  appeared 2004
-
-codeMirror tiddlywiki
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

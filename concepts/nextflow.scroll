@@ -1,26 +1,26 @@
 import ../code/conceptPage.scroll
+
 id nextflow
 name Nextflow
 appeared 2013
 tags pl
 website http://nextflow.io
+
+isOpenSource true
+writtenIn groovy java markdown json bourne-shell gradle javascript yaml html dockerfile xml bash css make perl python svg toml csv
+fileType text
 documentation https://www.nextflow.io/docs/latest/index.html
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 7837
+ committers 197
+ files 2018
+ newestCommit 2024
 country Sweden and Spain and Brazil and South Africa
 originCommunity https://github.com/nextflow-io
-domainName nextflow.io
- registered 2014
- awisRank
-  2022 628198
 
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-multiLineCommentTokens /* */
+twitter https://twitter.com/nextflowio
 
 githubRepo https://github.com/nextflow-io/nextflow
  firstCommit 2013
@@ -32,22 +32,21 @@ githubRepo https://github.com/nextflow-io/nextflow
  description A DSL for data-driven computational pipelines
  issues 264
 
-repoStats
- firstCommit 2013
- commits 7837
- committers 197
- files 2018
- newestCommit 2024
+multiLineCommentTokens /* */
 
-githubLanguage Nextflow
- fileExtensions nf
- trendingProjectsCount 0
- type programming
- filenames nextflow.config
- interpreters nextflow
- aceMode groovy
- tmScope source.nextflow
- repos 3132
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName nextflow.io
+ registered 2014
+ awisRank
+  2022 628198
+
 githubBigQuery Nextflow
  repos 62
  users 46
@@ -127,13 +126,16 @@ linguistGrammarRepo https://github.com/nextflow-io/atom-language-nextflow
       """
   }
 
-twitter https://twitter.com/nextflowio
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Nextflow
+ fileExtensions nf
+ trendingProjectsCount 0
+ type programming
+ filenames nextflow.config
+ interpreters nextflow
+ aceMode groovy
+ tmScope source.nextflow
+ repos 3132
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|DolphinNext: A graphical user interface for creating, deploying and executing Nextflow pipelines|10.1101/689539|2|0|Alper Kucukural and Manuel Garber and O. Yukselen and Osman Turkyilmaz and A. Ozturk and Isabelle Girard and Roy Martin|d3fc8a7fff8c84d3f697f7e1fe0b58a521909e5e
-
-writtenIn groovy java markdown json bourne-shell gradle javascript yaml html dockerfile xml bash css make perl python svg toml csv

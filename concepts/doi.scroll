@@ -1,18 +1,18 @@
 import ../code/conceptPage.scroll
+
 id doi
 name DOI
 appeared 2000
 tags schema
-conceptDescription The DOI system provides a technical and social infrastructure for the registration and use of persistent interoperable identifiers, called DOIs, for use on digital networks.
 website https://www.doi.org/
-documentation https://www.doi.org/factsheets/DOIProxy.html
 standsFor Digital Object Identifier
+conceptDescription The DOI system provides a technical and social infrastructure for the registration and use of persistent interoperable identifiers, called DOIs, for use on digital networks.
+
+fileType text
+documentation https://www.doi.org/factsheets/DOIProxy.html
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity International Organization for Standardization
-domainName doi.org
- registered 1999
- awisRank
-  2022 13813
 
 example
  https://doi.org/10.1000/182
@@ -22,8 +22,10 @@ wikipedia https://en.wikipedia.org/wiki/Digital_object_identifier
  revisionCount 910
  dailyPageViews 4196
 
-fileType text
-centralPackageRepositoryCount 0
+domainName doi.org
+ registered 1999
+ awisRank
+  2022 13813
 
 isbndb 0
 

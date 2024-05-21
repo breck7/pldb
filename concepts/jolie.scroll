@@ -1,17 +1,19 @@
 import ../code/conceptPage.scroll
+
 id jolie
 name Jolie
 appeared 2006
-tags pl
 creators Claudio Guidi and Fabrizio Montesi
+tags pl
 website http://jolie-lang.org/
 standsFor Java Orchestration Language Interpreter Engine
+
+fileType text
+centralPackageRepositoryCount 0
 country Italy
 originCommunity University of Bologna
-domainName jolie-lang.org
- registered 2008
- awisRank
-  2022 9779325
+
+twitter https://twitter.com/jolielang
 
 wikipedia https://en.wikipedia.org/wiki/Jolie_(programming_language)
  related java linux bpel xml c javascript
@@ -23,14 +25,11 @@ wikipedia https://en.wikipedia.org/wiki/Jolie_(programming_language)
  dailyPageViews 18
  appeared 2006
 
-githubLanguage Jolie
- fileExtensions ol iol
- trendingProjectsCount 0
- type programming
- interpreters jolie
- aceMode text
- tmScope source.jolie
- repos 129
+domainName jolie-lang.org
+ registered 2008
+ awisRank
+  2022 9779325
+
 githubBigQuery Jolie
  repos 16
  users 15
@@ -70,8 +69,13 @@ linguistGrammarRepo https://github.com/fmontesi/language-jolie
   }
   
 
-twitter https://twitter.com/jolielang
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Jolie
+ fileExtensions ol iol
+ trendingProjectsCount 0
+ type programming
+ interpreters jolie
+ aceMode text
+ tmScope source.jolie
+ repos 129

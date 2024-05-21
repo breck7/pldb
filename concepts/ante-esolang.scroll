@@ -1,10 +1,23 @@
 import ../code/conceptPage.scroll
+
 id ante-esolang
 name Ante
 appeared 2013
-tags esolang
 creators Michael Dvorkin
+tags esolang
 aka antecards
+
+isOpenSource true
+writtenIn swift rust go ruby
+fileType text
+esolang https://esolangs.org/wiki/Ante
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 47
+ committers 2
+ files 12
+ newestCommit 2015
 
 githubRepo https://github.com/michaeldv/ante
  stars 48
@@ -16,21 +29,6 @@ githubRepo https://github.com/michaeldv/ante
  description Esoteric programming language where all you've got is a deck of cards
  issues 2
 
-repoStats
- firstCommit 2013
- commits 47
- committers 2
- files 12
- newestCommit 2015
-
-esolang https://esolangs.org/wiki/Ante
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|Two Different Points of View through Artificial Intelligence and Vector Autoregressive Models for Ex Post and Ex Ante Forecasting|10.1155/2015/409361|6|2|A. Aydin and S. C. Cavdar|d3b9babba0eb33cc651bcaf78106dcdbfacc2590
-
-writtenIn swift rust go ruby

@@ -1,17 +1,31 @@
 import ../code/conceptPage.scroll
+
 id sagemath
 name Sage
 appeared 2005
 tags pl
 website http://www.sagemath.org/
-documentation https://doc.sagemath.org/html/en/index.html
 aka Sage
+
+isOpenSource true
+fileType text
+documentation https://doc.sagemath.org/html/en/index.html
+faqPageUrl https://doc.sagemath.org/html/en/faq/faq-general.html
+downloadPageUrl https://www.sagemath.org/download.html
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Washington
-domainName sagemath.org
- registered 2007
- awisRank
-  2022 169903
+projectEuler Sage
+ memberCount
+  2019 268
+  2022 312
+
+rijuRepl https://riju.codes/sagemath
+ example
+  print("Hello, world!")
+twitter https://twitter.com/sagemath
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
@@ -20,8 +34,7 @@ hasComments true
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
 
-lineCommentToken #
-
+jupyterKernel http://www.sagemath.org/
 wikipedia https://en.wikipedia.org/wiki/SageMath
  example
   sage: E2 = EllipticCurve(CC, [0,0,-2,1,1])
@@ -40,15 +53,11 @@ wikipedia https://en.wikipedia.org/wiki/SageMath
  revisionCount 846
  appeared 2005
 
-githubLanguage Sage
- fileExtensions sage sagews
- trendingProjectsCount 0
- type programming
- aceMode python
- codemirrorMode python
- codemirrorMimeType text/x-python
- tmScope source.python
- repos 499
+domainName sagemath.org
+ registered 2007
+ awisRank
+  2022 169903
+
 githubBigQuery Sage
  repos 84
  users 83
@@ -198,28 +207,20 @@ linguistGrammarRepo https://github.com/MagicStack/MagicPython
       return p(x)
   
 
-projectEuler Sage
- memberCount
-  2019 268
-  2022 312
-
-rijuRepl https://riju.codes/sagemath
- example
-  print("Hello, world!")
-
-faqPageUrl https://doc.sagemath.org/html/en/faq/faq-general.html
-downloadPageUrl https://www.sagemath.org/download.html
-
-twitter https://twitter.com/sagemath
-jupyterKernel http://www.sagemath.org/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2015|American Mathematical Society|Sage for Undergraduates|Gregory V. Bard|9781470411114
  2015|Springer|Numerical Analysis Using Sage (Springer Undergraduate Texts in Mathematics and Technology)|Anastassiou, George A. and Mezei, Razvan A.|9783319167381
+
+githubLanguage Sage
+ fileExtensions sage sagews
+ trendingProjectsCount 0
+ type programming
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python
+ repos 499
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

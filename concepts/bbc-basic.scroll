@@ -1,18 +1,31 @@
 import ../code/conceptPage.scroll
+
 id bbc-basic
 name BBC BASIC
-creators Sophie Wilson
 appeared 1981
+creators Sophie Wilson
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity BBC Micro
+
+pygmentsHighlighter BBC Basic
+ filename basic.py
+ fileExtensions bbc
+leachim6 BBC BASIC
+ filepath b/BBC BASIC.bbc
+ example
+  PRINT "Hello World"
+  
+
+printToken PRINT
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken PRINT
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
  example
@@ -25,18 +38,5 @@ wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
  revisionCount 308
  dailyPageViews 63
  appeared 1981
-
-pygmentsHighlighter BBC Basic
- filename basic.py
- fileExtensions bbc
-
-leachim6 BBC BASIC
- filepath b/BBC BASIC.bbc
- example
-  PRINT "Hello World"
-  
-
-isOpenSource false
-centralPackageRepositoryCount 0
 
 isbndb 0

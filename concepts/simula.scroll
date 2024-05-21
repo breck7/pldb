@@ -1,16 +1,43 @@
 import ../code/conceptPage.scroll
+
 id simula
 name Simula
 appeared 1965
-tags pl
 creators Ole-Johan Dahl
+tags pl
+
+influencedBy algol-60
+tryItOnline simula
+visualParadigm false
+fileType text
 documentation https://portablesimula.github.io/github.io/doc/SimulaTextBook.pdf
+rosettaCode http://www.rosettacode.org/wiki/Category:Simula
+centralPackageRepositoryCount 0
 country Norway
 originCommunity Norwegian Computing Center
 
-influencedBy algol-60
+helloWorldCollection Simula
+ ! Hello World in Simula;
+ 
+ BEGIN
+     OutText("Hello World!");
+     OutImage;
+ END
+ 
+leachim6 Simula
+ filepath s/Simula.sim
+ fileExtensions sim
+ example
+  Begin
+     OutText ("Hello World");
+     Outimage;
+  End;
 
-visualParadigm false
+lineCommentToken !
+printToken OutText
+assignmentToken :=
+stringToken "
+booleanTokens True False
 
 hasComments true
 hasLineComments true
@@ -21,12 +48,6 @@ hasAssignment true
 hasStrings true
  "Hello world"
 hasBooleans true
-
-lineCommentToken !
-printToken OutText
-assignmentToken :=
-stringToken "
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Simula
  example
@@ -82,36 +103,8 @@ wikipedia https://en.wikipedia.org/wiki/Simula
  revisionCount 435
  appeared 1965
 
-helloWorldCollection Simula
- ! Hello World in Simula;
- 
- BEGIN
-     OutText("Hello World!");
-     OutImage;
- END
- 
-leachim6 Simula
- filepath s/Simula.sim
- fileExtensions sim
- example
-  Begin
-     OutText ("Hello World");
-     Outimage;
-  End;
-rosettaCode http://www.rosettacode.org/wiki/Category:Simula
-
-tryItOnline simula
-
-tiobe Simula
 hopl https://hopl.info/showlanguage.prx?exp=170
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Object-Oriented Programming with SIMULA|1989|Bjørn Kirkerud|3923315|0.0|0|0
- Anti-fragile ICT Systems (Simula SpringerBriefs on Computing)||Kjell Jørgen Hole|61222579|3.00|1|0
+tiobe Simula
 
 isbndb 3
  year|publisher|title|authors|isbn13
@@ -135,3 +128,8 @@ semanticScholar 14
  1986|Ada, as seen from Simula|10.1002/j.1097-024X.1986.tb00001.x|1|0|S. Krogdahl and K. A. Olsen|9b52e08be43911cf540732b3afc9c2aa93a83823
  1976|Experience from the standardization of the SIMULA programming language|10.1002/spe.4380060314|1|0|J. Palme|785beabc4eb91d414c0cbf015824057586d0bb72
  1981|The class concept in the Simula programming language|10.1145/800142.805365|1|0|J. Palme and M. Wallin|2a07093ebd4db925ac02c36887b37eb2b7ccef37
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Object-Oriented Programming with SIMULA|1989|Bjørn Kirkerud|3923315|0.0|0|0
+ Anti-fragile ICT Systems (Simula SpringerBriefs on Computing)||Kjell Jørgen Hole|61222579|3.00|1|0

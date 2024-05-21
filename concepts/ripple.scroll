@@ -1,14 +1,23 @@
 import ../code/conceptPage.scroll
+
 id ripple
 name Ripple
 appeared 2014
-tags pl
 creators Yuya Watari
-conceptDescription Ripple is a programming language which is well designed for numerical simulations.
+tags pl
 website https://github.com/Ripple-Lang/Ripple
-reference https://link.springer.com/chapter/10.1007/978-3-319-98809-2_9
+conceptDescription Ripple is a programming language which is well designed for numerical simulations.
+
+writtenIn csharp xaml xml cpp markdown
+repoStats
+ firstCommit 2014
+ commits 20
+ committers 3
+ files 175
+ newestCommit 2017
 country Japan
 originCommunity Tokyo Institute of Technology
+reference https://link.springer.com/chapter/10.1007/978-3-319-98809-2_9
 
 example
  // Stage
@@ -33,12 +42,3 @@ githubRepo https://github.com/Ripple-Lang/Ripple
  created 2014
  updated 2017
  description Programming Language "Ripple"
-
-repoStats
- firstCommit 2014
- commits 20
- committers 3
- files 175
- newestCommit 2017
-
-writtenIn csharp xaml xml cpp markdown

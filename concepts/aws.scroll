@@ -1,13 +1,22 @@
 import ../code/conceptPage.scroll
+
 id aws
 name AWS
 appeared 2006
 tags cloud
 website https://aws.amazon.com/
 standsFor Amazon Web Services
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Amazon
-domainName aws.amazon.com
+
+twitter https://twitter.com/awscloud
+
+meetup https://www.meetup.com/topics/aws
+ memberCount 454966
+ groupCount 887
 
 wikipedia https://en.wikipedia.org/wiki/Amazon_Web_Services
  related login azure redis mysql postgresql android google-cloud
@@ -19,16 +28,10 @@ wikipedia https://en.wikipedia.org/wiki/Amazon_Web_Services
  revisionCount 1093
  appeared 2006
 
+domainName aws.amazon.com
+
 linkedInSkill aws
  2018 251197
-
-meetup https://www.meetup.com/topics/aws
- memberCount 454966
- groupCount 887
-
-twitter https://twitter.com/awscloud
-fileType text
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

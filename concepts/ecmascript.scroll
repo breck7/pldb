@@ -1,14 +1,19 @@
 import ../code/conceptPage.scroll
+
 id ecmascript
 name ECMAScript
 appeared 1997
-tags pl
 creators Brendan Eich
-documentation https://262.ecma-international.org/5.1/
-country Switzerland
-originCommunity Ecma International
+tags pl
 
 visualParadigm false
+documentation https://262.ecma-international.org/5.1/
+centralPackageRepositoryCount 0
+country Switzerland
+originCommunity Ecma International
+projectEuler ECMAScript
+ memberCount
+  2022 2478
 
 wikipedia https://en.wikipedia.org/wiki/ECMAScript
  example
@@ -24,13 +29,7 @@ wikipedia https://en.wikipedia.org/wiki/ECMAScript
  dailyPageViews 1310
  appeared 1997
 
-projectEuler ECMAScript
- memberCount
-  2022 2478
-
 hopl https://hopl.info/showlanguage.prx?exp=2179
-
-centralPackageRepositoryCount 0
 
 isbndb 9
  year|publisher|title|authors|isbn13

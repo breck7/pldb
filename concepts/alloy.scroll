@@ -1,29 +1,19 @@
 import ../code/conceptPage.scroll
+
 id alloy
 name Alloy
 appeared 1997
 tags pl
 website http://alloytools.org/
+
+fileType text
+wordRank 9510
+centralPackageRepositoryCount 0
 originCommunity Massachusetts Institute of Technology
-domainName alloytools.org
- registered 2017
- awisRank
-  2022 3455732
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-hasIntegers true
- // [0-9]+
-
-lineCommentToken //
-multiLineCommentTokens /* */
-
+pygmentsHighlighter Alloy
+ filename dsls.py
+ fileExtensions als
 example
  // A file system object in the file system
  sig FSObject { parent: lone Dir }
@@ -64,6 +54,20 @@ example
  // Now check it for a scope of 5
  check oneLocation for 5
 
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasIntegers true
+ // [0-9]+
+
 wikipedia https://en.wikipedia.org/wiki/Alloy_(specification_language)
  related z-notation
  summary In computer science and software engineering, Alloy is a declarative specification language for expressing complex structural constraints and behavior in a software system. Alloy provides a simple structural modeling tool based on first-order logic. Alloy is targeted at the creation of micro-models that can then be automatically checked for correctness. Alloy specifications can be checked using the alloy analyzer. Although Alloy is designed with automatic analysis in mind, Alloy differs from many specification languages designed for model-checking in that it permits the definition of infinite models. The Alloy Analyzer is designed to perform finite scope checks even on infinite models. The Alloy language and analyzer are developed by a team led by Daniel Jackson at the Massachusetts Institute of Technology in the United States.
@@ -74,20 +78,15 @@ wikipedia https://en.wikipedia.org/wiki/Alloy_(specification_language)
  dailyPageViews 31
  appeared 1997
 
-githubLanguage Alloy
- fileExtensions als
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.alloy
- repos 759
+domainName alloytools.org
+ registered 2017
+ awisRank
+  2022 3455732
+
 githubBigQuery Alloy
  repos 90
  users 84
 
-pygmentsHighlighter Alloy
- filename dsls.py
- fileExtensions als
 linguistGrammarRepo https://github.com/macekond/Alloy.tmbundle
  firstCommit 2013
  lastCommit 2014
@@ -156,11 +155,15 @@ linguistGrammarRepo https://github.com/macekond/Alloy.tmbundle
   check { OneParent_correctVersion => NoDirAliases } for 5 expect 0
   
 
-fileType text
-wordRank 9510
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Alloy
+ fileExtensions als
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.alloy
+ repos 759
 
 semanticScholar 13
  year|title|doi|citations|influentialCitations|authors|paperId

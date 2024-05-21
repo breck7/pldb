@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id gnu-e
 name GNU E
 appeared 1991
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Wisconsin
 
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/GNU_E
  revisionCount 13
  dailyPageViews 5
  appeared 1991
-
-isOpenSource true
-centralPackageRepositoryCount 0

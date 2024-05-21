@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id chatterbot
 name chatterbot
 appeared 2014
-tags library
 creators Gunther Cox
+tags library
 website https://chatterbot.readthedocs.io
+
+isOpenSource true
+writtenIn python restructuredtext svg html yaml javascript css markdown ini json
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 1870
+ committers 110
+ files 210
+ newestCommit 2021
 country United States
 originCommunity salvius
-domainName chatterbot.readthedocs.io
- awisRank
-  2022 685897
 
 githubRepo https://github.com/gunthercox/ChatterBot
  stars 12366
@@ -21,18 +30,10 @@ githubRepo https://github.com/gunthercox/ChatterBot
  description ChatterBot is a machine learning, conversational dialog engine for creating chat bots
  issues 338
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName chatterbot.readthedocs.io
+ awisRank
+  2022 685897
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Natural Language Parsing: Chatterbot|2010|Books LLC|15703851|0.0|0|0
-
-repoStats
- firstCommit 2014
- commits 1870
- committers 110
- files 210
- newestCommit 2021
-writtenIn python restructuredtext svg html yaml javascript css markdown ini json

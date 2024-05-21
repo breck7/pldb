@@ -1,19 +1,40 @@
 import ../code/conceptPage.scroll
+
 id sass
 name Sass
 appeared 2006
-tags stylesheetLanguage
 creators Hampton Lintorn-Catlin
+tags stylesheetLanguage
 website http://sass-lang.com/
-documentation https://sass-lang.com/documentation/
 standsFor syntactically awesome stylesheets
+
+isOpenSource true
+clocExtensions sass
+fileType text
+documentation https://sass-lang.com/documentation/
+codeMirror sass
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/sass
-domainName sass-lang.com
- registered 2009
- awisRank
-  2022 22267
-  2017 38454
+
+pygmentsHighlighter Sass
+ filename css.py
+ fileExtensions sass
+rijuRepl https://riju.codes/sass
+ example
+  body:before
+    content: "Hello, world!"
+  
+twitter https://twitter.com/sasscss
+leachim6 Sass
+ filepath s/Sass.sass
+ fileExtensions sass
+ example
+  body::before
+  	content: "Hello World"
+  
+
+stringToken "
 
 hasSemanticIndentation true
 hasMixins true
@@ -32,8 +53,6 @@ hasMixins true
    @include horizontal-list
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
  example
@@ -61,23 +80,16 @@ wikipedia https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
  appeared 2006
  fileExtensions sass scss
 
-githubLanguage Sass
- fileExtensions sass
- trendingProjectsCount 0
- type markup
- aceMode sass
- codemirrorMode sass
- codemirrorMimeType text/x-sass
- tmScope source.sass
- repos 8972
+domainName sass-lang.com
+ registered 2009
+ awisRank
+  2022 22267
+  2017 38454
+
 githubBigQuery Sass
  repos 466
  users 439
 
-codeMirror sass
-pygmentsHighlighter Sass
- filename css.py
- fileExtensions sass
 linguistGrammarRepo https://github.com/nathos/sass-textmate-bundle
  firstCommit 2008
  lastCommit 2017
@@ -98,25 +110,6 @@ linguistGrammarRepo https://github.com/nathos/sass-textmate-bundle
     border-color: $blue
   
 
-leachim6 Sass
- filepath s/Sass.sass
- fileExtensions sass
- example
-  body::before
-  	content: "Hello World"
-  
-
-rijuRepl https://riju.codes/sass
- example
-  body:before
-    content: "Hello, world!"
-  
-
-twitter https://twitter.com/sasscss
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 7
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|Sass and Compass for Designers|Frain, Ben|9781849694544
@@ -127,8 +120,16 @@ isbndb 7
  20160324|O'Reilly Media, Inc.|Jump Start Sass|Hugo Giraudel|9781457199493
  20130222|Packt Publishing|Instant SASS CSS How-to|Alex Libby|9781782163794
 
+githubLanguage Sass
+ fileExtensions sass
+ trendingProjectsCount 0
+ type markup
+ aceMode sass
+ codemirrorMode sass
+ codemirrorMimeType text/x-sass
+ tmScope source.sass
+ repos 8972
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2014|Applying Stylus, Less, and Sass|10.1007/978-1-4842-0037-7_14|1|0|A. Mardan|feac0cc2a138d38a9b4962a18d82c8374539a2d6
-
-clocExtensions sass

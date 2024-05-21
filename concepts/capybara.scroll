@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id capybara
 name capybara
 appeared 2009
-tags library
 creators Jonas Nicklas and Kevin Fitzpatrick
+tags library
 website http://teamcapybara.github.io/capybara/
+
+isOpenSource true
+writtenIn ruby erb javascript yaml markdown gherkin csv
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 4772
+ committers 427
+ files 345
+ newestCommit 2024
 country United States
 originCommunity teamcapybara
 
@@ -17,15 +29,3 @@ githubRepo https://github.com/teamcapybara/capybara
  updated 2022
  description Acceptance test framework for web applications
  issues 21
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2009
- commits 4772
- committers 427
- files 345
- newestCommit 2024
-writtenIn ruby erb javascript yaml markdown gherkin csv

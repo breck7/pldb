@@ -1,21 +1,75 @@
 import ../code/conceptPage.scroll
+
 id idris
 name Idris
 appeared 2014
-tags pl
 creators Edwin Brady
+tags pl
 website http://idris-lang.org
-documentation http://docs.idris-lang.org/en/latest/
+
+isOpenSource true
+writtenIn idris bourne-shell haskell restructuredtext svg c make markdown yaml javascript perl xml css nix python cmake scheme bash java
+tryItOnline idris
+officialBlogUrl https://www.idris-lang.org/category/news.html
 fileExtensions idr lidr
+clocExtensions idr
+fileType text
+documentation http://docs.idris-lang.org/en/latest/
+faqPageUrl https://docs.idris-lang.org/en/latest/faq/faq.html]
+rosettaCode http://www.rosettacode.org/wiki/Category:Idris
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 10144
+ committers 444
+ files 1643
+ newestCommit 2024
 country United Kingdom
 originCommunity University of St Andrews
-domainName idris-lang.org
- registered 2010
- awisRank
-  2022 1726658
-  2017 803360
+projectEuler Idris
+ memberCount
+  2019 10
+  2022 11
 
-writtenIn idris bourne-shell haskell restructuredtext svg c make markdown yaml javascript perl xml css nix python cmake scheme bash java
+helloWorldCollection Idris
+ Hello world in Idris
+ 
+ > main : IO ()
+ > main = putStrLn "Hello, World!"
+pygmentsHighlighter Idris
+ filename haskell.py
+ fileExtensions idr
+rijuRepl https://riju.codes/idris
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello, world!"
+  
+twitter https://twitter.com/idrislang
+leachim6 Idris
+ filepath i/Idris.idr
+ fileExtensions idr
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello World"
+  
+
+githubRepo https://github.com/idris-lang/Idris-dev
+ stars 3342
+ forks 663
+ subscribers 123
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description A Dependently Typed Functional Programming Language
+ issues 710
+
+lineCommentToken --
+printToken putStrLn
+stringToken "
 
 hasDependentTypes true
 hasLineComments true
@@ -33,27 +87,6 @@ hasFloats true
 hasIntegers true
  -- \d+
 
-lineCommentToken --
-printToken putStrLn
-stringToken "
-
-githubRepo https://github.com/idris-lang/Idris-dev
- stars 3342
- forks 663
- subscribers 123
- created 2011
- updated 2022
- firstCommit 2011
- description A Dependently Typed Functional Programming Language
- issues 710
-
-repoStats
- firstCommit 2011
- commits 10144
- committers 444
- files 1643
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)
  example
   total
@@ -70,20 +103,18 @@ wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)
  appeared 2017
  fileExtensions idr lidr
 
-githubLanguage Idris
- fileExtensions idr lidr
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.idris
- repos 1895
+tiobe Idris
+
+domainName idris-lang.org
+ registered 2010
+ awisRank
+  2022 1726658
+  2017 803360
+
 githubBigQuery Idris
  repos 301
  users 219
 
-pygmentsHighlighter Idris
- filename haskell.py
- fileExtensions idr
 linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
  firstCommit 2013
  lastCommit 2017
@@ -135,50 +166,20 @@ linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
                 'A', 'B', 'C', 'D', 'E', 'F']
   
 
-projectEuler Idris
- memberCount
-  2019 10
-  2022 11
-helloWorldCollection Idris
- Hello world in Idris
- 
- > main : IO ()
- > main = putStrLn "Hello, World!"
-leachim6 Idris
- filepath i/Idris.idr
- fileExtensions idr
- example
-  module Main
-  
-  main : IO ()
-  main = putStrLn "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Idris
-
-rijuRepl https://riju.codes/idris
- example
-  module Main
-  
-  main : IO ()
-  main = putStrLn "Hello, world!"
-  
-tryItOnline idris
-
-indeedJobs idris developer
- 2017 1
-officialBlogUrl https://www.idris-lang.org/category/news.html
-faqPageUrl https://docs.idris-lang.org/en/latest/faq/faq.html]
-
-tiobe Idris
-
-twitter https://twitter.com/idrislang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 1
  year|publisher|title|authors|isbn13
  20170313|Simon & Schuster|Type-Driven Development with Idris|Edwin Brady|9781638352242
+
+githubLanguage Idris
+ fileExtensions idr lidr
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.idris
+ repos 1895
+
+indeedJobs idris developer
+ 2017 1
 
 semanticScholar 8
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -190,5 +191,3 @@ semanticScholar 8
  2013|The Idris Programming Language - Implementing Embedded Domain Specific Languages with Dependent Types|10.1007/978-3-319-15940-9_4|3|0|Edwin C. Brady|e0f0d473b110fa75001ed13b5d2eaa1a374dd6f9
  2021|Idris 2: Quantitative Type Theory in Practice (Artifact)|10.4230/DARTS.7.2.10|1|0|Edwin C. Brady|c92b6092462563f3b3132f3a3285493d02aa906d
  2019|Building a Blockchain Simulation using the Idris Programming Language|10.1145/3299815.3314456|1|0|Qiutai Pan and X. Koutsoukos|97cab544a22c289edd423d0a71fcc73fb011fe87
-
-clocExtensions idr

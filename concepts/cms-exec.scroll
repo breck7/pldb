@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id cms-exec
 name EXEC
 appeared 1966
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
 
@@ -23,11 +27,8 @@ wikipedia https://en.wikipedia.org/wiki/CMS_EXEC
  revisionCount 31
  appeared 1966
 
-tiobe EXEC
 hopl https://hopl.info/showlanguage.prx?exp=2023
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe EXEC
 
 isbndb 2
  year|publisher|title|authors|isbn13

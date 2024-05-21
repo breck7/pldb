@@ -1,33 +1,22 @@
 import ../code/conceptPage.scroll
+
 id gdscript
 name GDScript
 appeared 2008
 tags pl
-conceptDescription GDScript is a high level, dynamically typed programming language used to create content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar). Its goal is to be optimized for and tightly integrated with Godot Engine, allowing great flexibility for content creation and integration.
 website http://docs.godotengine.org/en/3.0/getting_started/scripting/gdscript/gdscript_basics.html
-reference https://en.wikipedia.org/wiki/Godot_(game_engine)
+conceptDescription GDScript is a high level, dynamically typed programming language used to create content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar). Its goal is to be optimized for and tightly integrated with Godot Engine, allowing great flexibility for content creation and integration.
+
+clocExtensions gd
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/godotengine
+reference https://en.wikipedia.org/wiki/Godot_(game_engine)
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-hasHexadecimals true
- # 0[xX][a-fA-F0-9]+
-hasFloats true
- # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
-hasIntegers true
- # \d+j?
-
-lineCommentToken #
-printToken print
-stringToken "
-
+pygmentsHighlighter GDScript
+ filename gdscript.py
+ fileExtensions gd
 example
  # A file is a class!
  
@@ -46,24 +35,39 @@ example
  
  const ANSWER = 42
  const THE_NAME = "Charly"
-
-githubLanguage GDScript
+leachim6 GDScript
+ filepath g/GDScript.gd
  fileExtensions gd
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  godotengine godot-demo-projects https://github.com/godotengine.png https://github.com/godotengine/godot-demo-projects GDScript #355570 846 454 39 "Demonstration and Template Projects"
- trendingProjectsCount 2
- type programming
- aceMode text
- tmScope source.gdscript
- repos 39447
+ example
+  extends Node2D
+  
+  func _ready():
+  	print("Hello World")
+  
+
+lineCommentToken #
+printToken print
+stringToken "
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ # 0[xX][a-fA-F0-9]+
+hasFloats true
+ # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
+hasIntegers true
+ # \d+j?
+
 githubBigQuery GDScript
  repos 681
  users 513
 
-pygmentsHighlighter GDScript
- filename gdscript.py
- fileExtensions gd
 linguistGrammarRepo https://github.com/beefsack/GDScript-sublime
  firstCommit 2014
  lastCommit 2018
@@ -129,17 +133,13 @@ linguistGrammarRepo https://github.com/beefsack/GDScript-sublime
       var lv = Something.new()
       print(lv.a)
 
-leachim6 GDScript
- filepath g/GDScript.gd
+githubLanguage GDScript
  fileExtensions gd
- example
-  extends Node2D
-  
-  func _ready():
-  	print("Hello World")
-  
-
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions gd
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  godotengine godot-demo-projects https://github.com/godotengine.png https://github.com/godotengine/godot-demo-projects GDScript #355570 846 454 39 "Demonstration and Template Projects"
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope source.gdscript
+ repos 39447

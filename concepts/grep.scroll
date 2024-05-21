@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id grep
 name grep
 appeared 1974
 tags pl
+
+isOpenSource true
 documentation https://www.gnu.org/software/grep/manual/grep.html
 documentation https://man7.org/linux/man-pages/man1/grep.1.html
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Bell Laboratories
 
@@ -29,9 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Grep
  appeared 1974
 
 hopl https://hopl.info/showlanguage.prx?exp=2295
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
 

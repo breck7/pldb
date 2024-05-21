@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id orca
 name orca
 appeared 1985
-tags pl
 creators Lee Ki-Yeul
+tags pl
 conceptDescription orca is yet another script language which supports OO & distribute processing & functional programming aspects. And It's useful in string processing with decode statements & regular expression in it.
-reference https://sourceforge.net/p/orca-lang/wiki/Home/
+
+writtenIn cpp markdown make bourne-shell xml dockerfile yacc lex m4 json
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 338
+ committers 8
+ files 431
+ newestCommit 2020
 country Korea
 originCommunity https://github.com/lynix94/orca-lang/issues
+reference https://sourceforge.net/p/orca-lang/wiki/Home/
 
 githubRepo https://github.com/lynix94/orca-lang
  firstCommit 2016
@@ -18,16 +29,4 @@ githubRepo https://github.com/lynix94/orca-lang
  updated 2021
  issues 1
 
-repoStats
- firstCommit 2016
- commits 338
- committers 8
- files 431
- newestCommit 2020
-
 hopl https://hopl.info/showlanguage.prx?exp=1250
-
-fileType text
-centralPackageRepositoryCount 0
-
-writtenIn cpp markdown make bourne-shell xml dockerfile yacc lex m4 json

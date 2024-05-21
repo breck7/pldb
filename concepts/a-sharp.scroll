@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id a-sharp
 name A#
 appeared 2004
-tags pl
 creators Dr. Martin C. Carlisle and Lt Col Ricky Sward and Maj Jeff Humphries
+tags pl
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity AdaCore && United States Air Force Academy
 
@@ -16,9 +21,5 @@ wikipedia https://en.wikipedia.org/wiki/A_Sharp_(.NET)
  revisionCount 56
  dailyPageViews 42
  appeared 2004
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 semanticScholar 0

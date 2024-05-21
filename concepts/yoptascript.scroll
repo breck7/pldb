@@ -1,23 +1,35 @@
 import ../code/conceptPage.scroll
+
 id yoptascript
 name YoptaScript
 appeared 2016
-tags pl
 creators Sam Gozman
+tags pl
 website https://yopta.space/
 nativeLanguage Russian
-domainName yopta.space
- awisRank
-  2022 4097333
 
+writtenIn javascript typescript yaml json html markdown css
 compilesTo javascript
+repoStats
+ firstCommit 2016
+ commits 586
+ committers 25
+ files 53
+ newestCommit 2023
 
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-
-printToken ксива.малява
-stringToken "
+rijuRepl https://riju.codes/yoptascript
+ example
+  красноглазое.чмо("Привет мир!") нах
+  
+ description The world's first scripting programming language for gopniks and real boys
+ fileExtensions yopta
+ website https://yopta.space/
+ gitRepo https://github.com/samgozman/YoptaScript
+leachim6 YoptaScript
+ filepath y/YoptaScript
+ example
+  ксива.малява("Hello World") нах
+  
 
 githubRepo https://github.com/samgozman/YoptaScript
  firstCommit 2016
@@ -29,26 +41,13 @@ githubRepo https://github.com/samgozman/YoptaScript
  description Скриптовый язык программирования для гопников и реальных пацанов
  issues 15
 
-repoStats
- firstCommit 2016
- commits 586
- committers 25
- files 53
- newestCommit 2023
+printToken ксива.малява
+stringToken "
 
-leachim6 YoptaScript
- filepath y/YoptaScript
- example
-  ксива.малява("Hello World") нах
-  
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
-rijuRepl https://riju.codes/yoptascript
- example
-  красноглазое.чмо("Привет мир!") нах
-  
- description The world's first scripting programming language for gopniks and real boys
- fileExtensions yopta
- website https://yopta.space/
- gitRepo https://github.com/samgozman/YoptaScript
-
-writtenIn javascript typescript yaml json html markdown css
+domainName yopta.space
+ awisRank
+  2022 4097333

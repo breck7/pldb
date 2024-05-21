@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id wlambda
 name WLambda
 appeared 2019
-tags pl
 creators Weird Constructor
+tags pl
+
+writtenIn rust mathematica markdown bourne-shell json toml python vim-script svg
+repoStats
+ firstCommit 2019
+ commits 1188
+ committers 2
+ files 88
+ newestCommit 2024
 
 githubRepo https://github.com/WeirdConstructor/WLambda
  firstCommit 2019
@@ -14,12 +23,3 @@ githubRepo https://github.com/WeirdConstructor/WLambda
  updated 2022
  description WLambda - Embeddable Scripting Language for Rust
  issues 0
-
-repoStats
- firstCommit 2019
- commits 1188
- committers 2
- files 88
- newestCommit 2024
-
-writtenIn rust mathematica markdown bourne-shell json toml python vim-script svg

@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id vissim
 name VisSim
 appeared 1989
 tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/VisSim
  related c udp matlab simulink
@@ -13,6 +17,3 @@ wikipedia https://en.wikipedia.org/wiki/VisSim
  revisionCount 155
  dailyPageViews 35
  appeared 1989
-
-isOpenSource false
-centralPackageRepositoryCount 0

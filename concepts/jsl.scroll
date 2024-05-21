@@ -1,16 +1,25 @@
 import ../code/conceptPage.scroll
+
 id jsl
 name JSL
 appeared 1989
 tags pl
+standsFor JMP Scripting Language
+
+relatedConcepts jmp r sas spss stata matlab
+country United States
+originCommunity JMP Statistical Discovery LLC
 reference https://support.sas.com/edu/schedules.html?crs=JSCR&ctry=US
 reference https://www.jmp.com/support/help/zh/15.2/index.shtml#page/jmp/comments.shtml#ww328600
 reference https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.433.6634&rep=rep1&type=pdf
-standsFor JMP Scripting Language
-country United States
-originCommunity JMP Statistical Discovery LLC
 
-relatedConcepts jmp r sas spss stata matlab
+example
+ a="Hello"; b=" "; c="World"; a||b||c;
+ // "Hello World"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 hasLineComments true
  // A comment
@@ -22,11 +31,3 @@ hasComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
-
-example
- a="Hello"; b=" "; c="World"; a||b||c;
- // "Hello World"

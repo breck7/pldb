@@ -1,25 +1,22 @@
 import ../code/conceptPage.scroll
+
 id ron
 name Ron
 appeared 2015
-tags dataNotation
 creators Juniper Tyree
-conceptDescription RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+tags dataNotation
 standsFor Rusty Object Notation
+conceptDescription RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+
+writtenIn rust markdown yaml toml
+repoStats
+ firstCommit 2015
+ commits 668
+ committers 72
+ files 116
+ newestCommit 2024
 country Finland
 originCommunity https://github.com/ron-rs
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 example
  GameConfig( // optional struct name
@@ -59,13 +56,16 @@ githubRepo https://github.com/ron-rs/ron
  description Rusty Object Notation
  issues 26
 
-repoStats
- firstCommit 2015
- commits 668
- committers 72
- files 116
- newestCommit 2024
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 isbndb 0
-
-writtenIn rust markdown yaml toml

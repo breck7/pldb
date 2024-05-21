@@ -1,21 +1,30 @@
 import ../code/conceptPage.scroll
+
 id elvish
 name Elvish
 appeared 2013
-tags pl
 creators Qi Xiao
-conceptDescription Elvish is an expressive programming language and a versatile interactive shell, combined into one seamless package. It runs on Linux, BSDs, macOS and Windows.
+tags pl
 website https://elv.sh/
 webRepl https://try.elv.sh/
+conceptDescription Elvish is an expressive programming language and a versatile interactive shell, combined into one seamless package. It runs on Linux, BSDs, macOS and Windows.
+
+writtenIn go markdown html json yaml bourne-shell css toml javascript python make xml typescript svg dockerfile
+repoStats
+ firstCommit 2013
+ commits 6660
+ committers 103
+ files 991
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/elves
-domainName elv.sh
- registered 2018
- awisRank
-  2022 5087910
 
+rijuRepl https://riju.codes/elvish
+ example
+  echo "Hello, world!"
 example
  if $true { echo good } else { echo bad }
+twitter https://twitter.com/elvishshell
 
 githubRepo https://github.com/elves/elvish
  firstCommit 2013
@@ -27,19 +36,9 @@ githubRepo https://github.com/elves/elvish
  description Elvish = Expressive Programming Language + Versatile Interactive Shell
  issues 260
 
-repoStats
- firstCommit 2013
- commits 6660
- committers 103
- files 991
- newestCommit 2024
-
-rijuRepl https://riju.codes/elvish
- example
-  echo "Hello, world!"
-
-twitter https://twitter.com/elvishshell
+domainName elv.sh
+ registered 2018
+ awisRank
+  2022 5087910
 
 isbndb 0
-
-writtenIn go markdown html json yaml bourne-shell css toml javascript python make xml typescript svg dockerfile

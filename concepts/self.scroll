@@ -1,27 +1,42 @@
 import ../code/conceptPage.scroll
+
 id self
 name Self
 appeared 1987
-tags pl
 creators David Ungar
+tags pl
 website http://www.selflanguage.org
+
+isOpenSource true
+fileType text
+wordRank 697
 documentation https://handbook.selflanguage.org/2017.1/index.html
-reference https://www.youtube.com/watch?v=Ox5P7QyL774
+rosettaCode http://www.rosettacode.org/wiki/Category:Self
+centralPackageRepositoryCount 0
 country United States
 originCommunity Sun Microsystems, Inc
-domainName selflanguage.org
- registered 2009
- awisRank
-  2022 8060537
+reference https://www.youtube.com/watch?v=Ox5P7QyL774
+
+helloWorldCollection Self
+ (|  "Hello World in Self"
+ 
+   hello = (| | 'Hello World!' print)
+ |)
+ 
+leachim6 Self
+ filepath s/Self.self
+ fileExtensions self
+ example
+  'Hello World' printLine
+
+printToken printLine
+stringToken '
 
 hasMessagePassing true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  'Hello world'
-
-printToken printLine
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Self_(programming_language)
  example
@@ -36,6 +51,21 @@ wikipedia https://en.wikipedia.org/wiki/Self_(programming_language)
  revisionCount 350
  appeared 1987
 
+hopl https://hopl.info/showlanguage.prx?exp=1361
+
+domainName selflanguage.org
+ registered 2009
+ awisRank
+  2022 8060537
+
+githubBigQuery Self
+ repos 26
+ users 24
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2015|CreateSpace Independent Publishing Platform|Dark NLP: How To Use Neuro-linguistic Programming For Self Mastery, Getting What You Want, Mastering Others And To Gain An Advantage Over Anyone|Pace, Michael|9781518825392
+
 githubLanguage Self
  fileExtensions self
  trendingProjectsCount 0
@@ -43,33 +73,6 @@ githubLanguage Self
  aceMode text
  tmScope none
  repos 36
-githubBigQuery Self
- repos 26
- users 24
-
-helloWorldCollection Self
- (|  "Hello World in Self"
- 
-   hello = (| | 'Hello World!' print)
- |)
- 
-leachim6 Self
- filepath s/Self.self
- fileExtensions self
- example
-  'Hello World' printLine
-rosettaCode http://www.rosettacode.org/wiki/Category:Self
-
-hopl https://hopl.info/showlanguage.prx?exp=1361
-
-fileType text
-wordRank 697
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 2015|CreateSpace Independent Publishing Platform|Dark NLP: How To Use Neuro-linguistic Programming For Self Mastery, Getting What You Want, Mastering Others And To Gain An Advantage Over Anyone|Pace, Michael|9781518825392
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

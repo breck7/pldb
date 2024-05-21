@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id avail
 name Avail
 appeared 2010
-tags pl
 creators Mark van Gulik and Todd L. Smith
-conceptDescription Avail is a multi-paradigmatic general purpose programming language whose feature set emphasizes support for articulate programming.
+tags pl
 website https://www.availlang.org/
+conceptDescription Avail is a multi-paradigmatic general purpose programming language whose feature set emphasizes support for articulate programming.
+
+writtenIn kotlin svg xml json css gradle javascript markdown html bash bourne-shell java json5
+repoStats
+ firstCommit 2010
+ commits 3892
+ committers 63
+ files 2784
+ newestCommit 2023
 country United States
 originCommunity The Avail Foundation, LLC
 
@@ -50,12 +59,3 @@ githubRepo https://github.com/AvailLang/Avail
  created 2010
  updated 2022
  description The Avail programming language. Includes the virtual machine, standard library, and standard examples.
-
-repoStats
- firstCommit 2010
- commits 3892
- committers 63
- files 2784
- newestCommit 2023
-
-writtenIn kotlin svg xml json css gradle javascript markdown html bash bourne-shell java json5

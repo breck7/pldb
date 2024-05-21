@@ -1,8 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ohm
 name ohm
 appeared 2014
 tags grammarLanguage
+
+isOpenSource true
+writtenIn javascript json markdown typescript bash html yaml css python bourne-shell xml
+tryItOnline ohm
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 1887
+ committers 44
+ files 1313
+ newestCommit 2024
 country Germany and United States
 originCommunity https://github.com/harc
 
@@ -15,18 +28,3 @@ githubRepo https://github.com/harc/ohm
  firstCommit 2014
  description A library and language for building parsers, interpreters, compilers, etc.
  issues 25
-
-repoStats
- firstCommit 2014
- commits 1887
- committers 44
- files 1313
- newestCommit 2024
-
-tryItOnline ohm
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn javascript json markdown typescript bash html yaml css python bourne-shell xml

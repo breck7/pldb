@@ -1,24 +1,26 @@
 import ../code/conceptPage.scroll
+
 id nestedtext
 name NestedText
 appeared 2020
-tags dataNotation
 creators Ken Kundert
+tags dataNotation
 website https://nestedtext.org
+
+writtenIn python restructuredtext yaml ini toml json make xml bourne-shell csv css
+relatedConcepts yaml
+repoStats
+ firstCommit 2020
+ commits 502
+ committers 8
+ files 102
+ newestCommit 2024
 country United States
 originCommunity https://nurdletech.com
-domainName nestedtext.org
 
-relatedConcepts yaml
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
-
+pygmentsHighlighter NestedText
+ filename configs.py
+ fileExtensions nt
 example
  # Contact information for our officers
  
@@ -56,15 +58,12 @@ githubRepo https://github.com/KenKundert/nestedtext
  description Human Readable and Writable Data Interchange Format
  issues 3
 
-repoStats
- firstCommit 2020
- commits 502
- committers 8
- files 102
- newestCommit 2024
+lineCommentToken #
 
-pygmentsHighlighter NestedText
- filename configs.py
- fileExtensions nt
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
-writtenIn python restructuredtext yaml ini toml json make xml bourne-shell csv css
+domainName nestedtext.org

@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id adamant
 name adamant
 appeared 2018
-tags pl
 creators Jeff Walker
+tags pl
 website https://adamant-lang.org
-domainName adamant-lang.org
- registered 2015
+
+writtenIn csharp markdown xml c
+repoStats
+ firstCommit 2018
+ commits 1169
+ committers 2
+ files 635
+ newestCommit 2020
+
+twitter https://twitter.com/adamantlang
 
 githubRepo https://github.com/adamant/adamant.tools.compiler.bootstrap
  firstCommit 2018
@@ -18,17 +27,9 @@ githubRepo https://github.com/adamant/adamant.tools.compiler.bootstrap
  description A compiler for the Adamant language
  issues 2
 
-repoStats
- firstCommit 2018
- commits 1169
- committers 2
- files 635
- newestCommit 2020
+domainName adamant-lang.org
+ registered 2015
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  19328130|Dreaming of a Parser Generator for Language Design|https://blog.adamant-lang.org/2019/dreaming-of-a-parser-generator/|2019-03-07 14:17:14 UTC|1551968234|matt_d|61|117
-
-twitter https://twitter.com/adamantlang
-
-writtenIn csharp markdown xml c

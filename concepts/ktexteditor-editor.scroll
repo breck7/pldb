@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id ktexteditor-editor
 name ktexteditor-editor
 appeared 2014
-tags editor
 creators Christoph Cullmann
+tags editor
 website https://invent.kde.org/frameworks/ktexteditor
+
+writtenIn javascript cpp qt cmake xml markdown yaml bourne-shell svg json c
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 4932
+ committers 220
+ files 2704
 country Germany
 originCommunity KDE e.V.
 
@@ -17,11 +26,3 @@ githubRepo https://github.com/KDE/ktexteditor
  updated 2022
  description KTextEditor Framework
  issues 0
-
-repoStats
- firstCommit 2014
- newestCommit 2024
- commits 4932
- committers 220
- files 2704
-writtenIn javascript cpp qt cmake xml markdown yaml bourne-shell svg json c

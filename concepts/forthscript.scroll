@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id forthscript
 name ForthScript
 appeared 2020
-tags pl
 creators Yuriy Zamyatin
+tags pl
+
+writtenIn cpp json python yaml markdown cmake
+repoStats
+ firstCommit 2020
+ commits 243
+ committers 7
+ files 102
+ newestCommit 2022
 country Unknown
 originCommunity https://github.com/ForthScriptLang
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/ForthScriptLang/forthscript
  updated 2022
  description Forthscript programming language interpreter
  issues 0
-
-repoStats
- firstCommit 2020
- commits 243
- committers 7
- files 102
- newestCommit 2022
-
-writtenIn cpp json python yaml markdown cmake

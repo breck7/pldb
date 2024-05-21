@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id ivy
 name ivy
 appeared 2014
-tags pl
 creators Rob Pike
+tags pl
 conceptDescription An APL-like calculator
+
+writtenIn go xml markdown
+repoStats
+ firstCommit 2014
+ commits 548
+ committers 17
+ files 106
+ newestCommit 2024
 
 githubRepo https://github.com/robpike/ivy
  stars 1288
@@ -13,11 +22,3 @@ githubRepo https://github.com/robpike/ivy
  created 2014
  updated 2024
  description ivy, an APL-like calculator
-
-repoStats
- firstCommit 2014
- commits 548
- committers 17
- files 106
- newestCommit 2024
-writtenIn go xml markdown

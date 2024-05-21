@@ -1,17 +1,14 @@
 import ../code/conceptPage.scroll
+
 id dog
 name The Dog Programming Language
 appeared 2011
 tags pl
 website https://www.media.mit.edu/projects/the-dog-programming-language/overview/
-reference http://salmanahmad.com/files/Dog-UIST2013.pdf
+
 country United States
 originCommunity Massachusetts Institute of Technology
-
-hasStrings true
- "Hello world"
-
-stringToken "
+reference http://salmanahmad.com/files/Dog-UIST2013.pdf
 
 leachim6 Dog
  filepath d/Dog
@@ -28,3 +25,8 @@ leachim6 Dog
    Inside
    Sleep
   EndOf Day 1
+
+stringToken "
+
+hasStrings true
+ "Hello world"

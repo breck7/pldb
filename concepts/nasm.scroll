@@ -1,23 +1,28 @@
 import ../code/conceptPage.scroll
+
 id nasm
 name Netwide Assembler
 appeared 1996
 tags assembly
 website http://www.nasm.us
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States and Russia
 originCommunity https://github.com/netwide-assembler
-domainName nasm.us
- registered 2007
- awisRank
-  2022 382491
+
+pygmentsHighlighter NASM
+ filename asm.py
+ fileExtensions asm ASM
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
  example
@@ -77,12 +82,9 @@ wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
  revisionCount 297
  appeared 2017
 
-pygmentsHighlighter NASM
- filename asm.py
- fileExtensions asm ASM
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName nasm.us
+ registered 2007
+ awisRank
+  2022 382491
 
 isbndb 0

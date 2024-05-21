@@ -1,16 +1,15 @@
 import ../code/conceptPage.scroll
+
 id jevko
 name Jevko
 appeared 2021
 tags dataNotation
 website https://jevko.org/
-reference https://github.com/jevko/parsejevko.js
-country Poland
-originCommunity https://github.com/jevko
-domainName jevko.org
- registered 2021
 
 relatedConcepts json xml
+country Poland
+originCommunity https://github.com/jevko
+reference https://github.com/jevko/parsejevko.js
 
 example
  first name [John]
@@ -35,5 +34,7 @@ example
  ]
  children []
  spouse []
-
 twitter https://twitter.com/jevko1
+
+domainName jevko.org
+ registered 2021

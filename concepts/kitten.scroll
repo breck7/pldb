@@ -1,23 +1,37 @@
 import ../code/conceptPage.scroll
+
 id kitten
 name kitten
 appeared 2012
-tags pl
 creators Jon Purdy
-conceptDescription <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
+tags pl
 website http://kittenlang.org/
+conceptDescription <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
+
+isOpenSource true
+writtenIn haskell markdown xml vim-script yaml c make lisp
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Kitten
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 1140
+ committers 15
+ files 110
+ newestCommit 2023
 country United States
 originCommunity https://github.com/evincarofautumn/kitten/issues
-domainName kittenlang.org
- awisRank
-  2017 6913255
 
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-
-printToken say
-stringToken "
+rijuRepl https://riju.codes/kitten
+ example
+  "Hello, world!" say
+  
+leachim6 Kitten
+ filepath k/Kitten.ktn
+ fileExtensions ktn
+ example
+  "Hello World" say
+  
 
 githubRepo https://github.com/evincarofautumn/kitten
  firstCommit 2011
@@ -29,30 +43,15 @@ githubRepo https://github.com/evincarofautumn/kitten
  description A statically typed concatenative systems programming language.
  issues 65
 
-repoStats
- firstCommit 2011
- commits 1140
- committers 15
- files 110
- newestCommit 2023
+printToken say
+stringToken "
 
-leachim6 Kitten
- filepath k/Kitten.ktn
- fileExtensions ktn
- example
-  "Hello World" say
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Kitten
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
-rijuRepl https://riju.codes/kitten
- example
-  "Hello, world!" say
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName kittenlang.org
+ awisRank
+  2017 6913255
 
 isbndb 0
-
-writtenIn haskell markdown xml vim-script yaml c make lisp

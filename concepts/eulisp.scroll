@@ -1,12 +1,17 @@
 import ../code/conceptPage.scroll
+
 id eulisp
 name EuLisp
 appeared 1985
 tags pl
+
 documentation https://henry.github.io/EuLisp/
 documentation https://people.bath.ac.uk/masrjb/Sources/eunotes.html
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://henry.github.io
+
+lineCommentToken ;
 
 hasMultipleInheritance true
 hasLineComments true
@@ -14,8 +19,6 @@ hasLineComments true
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/EuLisp
  example
@@ -109,5 +112,3 @@ wikipedia https://en.wikipedia.org/wiki/EuLisp
  appeared 1990
 
 hopl https://hopl.info/showlanguage.prx?exp=1139
-
-centralPackageRepositoryCount 0

@@ -1,8 +1,11 @@
 import ../code/conceptPage.scroll
+
 id apt-pm
 name APT Debian
 appeared 1998
 tags packageManager
+
+isOpenSource true
 country United State
 originCommunity The Debian Project
 
@@ -12,5 +15,3 @@ wikipedia https://en.wikipedia.org/wiki/APT_(Debian)
  pageId 187481
  dailyPageViews 198
  appeared 1998
-
-isOpenSource true

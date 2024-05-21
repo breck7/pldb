@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id t2b
 name t2b
 appeared 2018
 tags pl
 website https://thosakwe.github.io/t2b/index.html
+
+writtenIn xml cpp markdown cmake yacc lex yaml
+repoStats
+ firstCommit 2018
+ commits 50
+ committers 5
+ files 39
+ newestCommit 2023
 
 githubRepo https://github.com/thosakwe/t2b
  firstCommit 2018
@@ -15,15 +24,6 @@ githubRepo https://github.com/thosakwe/t2b
  description A wicked-powerful text macro language for building binary files.
  issues 8
 
-repoStats
- firstCommit 2018
- commits 50
- committers 5
- files 39
- newestCommit 2023
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  17289801|Show HN: T2b – A wicked-powerful text macro language for building binary files|2018-06-12 00:31:01 UTC|1528763461|thosakwe|52|117
-
-writtenIn xml cpp markdown cmake yacc lex yaml

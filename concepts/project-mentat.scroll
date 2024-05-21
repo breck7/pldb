@@ -1,25 +1,24 @@
 import ../code/conceptPage.scroll
+
 id project-mentat
 name Project Mentat
 appeared 2016
-tags queryLanguage
 creators Richard Newman
-conceptDescription Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
+tags queryLanguage
 website https://mentat.rs/
-reference https://mozilla.github.io/mentat
+conceptDescription Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
+
+writtenIn html rust javascript java toml xml swift markdown yaml css json gradle bourne-shell python dockerfile svg kotlin make
+relatedConcepts datascript datomic sqlite
+repoStats
+ firstCommit 2016
+ commits 1530
+ committers 27
+ files 2321
+ newestCommit 2022
 country United States
 originCommunity Mozilla Foundation
-domainName mentat.rs
-
-relatedConcepts datascript datomic sqlite
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
+reference https://mozilla.github.io/mentat
 
 example
  {:db/id          :person/email
@@ -41,11 +40,12 @@ githubRepo https://github.com/qpdb/mentat
  description A persistent, relational store inspired by Datomic and DataScript.
  issues 299
 
-repoStats
- firstCommit 2016
- commits 1530
- committers 27
- files 2321
- newestCommit 2022
+lineCommentToken ;
 
-writtenIn html rust javascript java toml xml swift markdown yaml css json gradle bourne-shell python dockerfile svg kotlin make
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+domainName mentat.rs

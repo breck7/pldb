@@ -1,22 +1,48 @@
 import ../code/conceptPage.scroll
+
 id common-lisp
 name Common Lisp
 appeared 1984
-tags pl
 creators Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb
+tags pl
 website http://common-lisp.net/
-documentation https://common-lisp.net/documentation
 aka commonlisp
+
+officialBlogUrl https://common-lisp.net/news
 fileExtensions lisp lsp l cl fasl
+visualParadigm false
+fileType text
+documentation https://common-lisp.net/documentation
+faqPageUrl https://common-lisp.net/faq
+downloadPageUrl https://common-lisp.net/downloads
+quineRelay Common Lisp
+centralPackageRepositoryCount 0
+ubuntuPackage clisp
 country United States
 originCommunity American National Standards Institute
-domainName common-lisp.net
- registered 2003
- awisRank
-  2022 1041452
-  2017 413857
 
-visualParadigm false
+pygmentsHighlighter Common Lisp
+ filename lisp.py
+ fileExtensions cl lisp
+rijuRepl https://riju.codes/commonlisp
+ example
+  (format t "Hello, world!")
+  
+ description Modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most prominent (along with Scheme) descendant of the Lisp family
+ fileExtensions lisp lsp l cl fasl
+ website https://common-lisp.net/
+ gitRepo https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/
+leachim6 Common Lisp
+ filepath c/Common Lisp.lisp
+ example
+  (defun hello-world ()
+    (format t "Hello World~%"))
+  
+  (hello-world)
+  
+
+lineCommentToken ;
+printToken PRINT
 
 isLisp true
 hasSingleDispatch true
@@ -52,9 +78,7 @@ hasLineComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 
-lineCommentToken ;
-printToken PRINT
-
+jupyterKernel https://github.com/fredokun/cl-jupyter
 wikipedia https://en.wikipedia.org/wiki/Common_Lisp
  example
   CL-USER > (available-shells)
@@ -68,6 +92,32 @@ wikipedia https://en.wikipedia.org/wiki/Common_Lisp
  revisionCount 1099
  appeared 1984
  fileExtensions lisp lsp l cl fasl
+
+hopl https://hopl.info/showlanguage.prx?exp=946
+tiobe Common Lisp
+
+domainName common-lisp.net
+ registered 2003
+ awisRank
+  2022 1041452
+  2017 413857
+
+githubBigQuery Common Lisp
+ repos 5678
+ users 3752
+
+linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 40
+ sampleCount 9
+ example
+  (DEFUN HELLO ()
+    (PRINT 'HELLO))
+  
+
+isbndb 0
 
 githubLanguage Common Lisp
  fileExtensions lisp asd cl l lsp ny podsl sexp
@@ -85,56 +135,11 @@ githubLanguage Common Lisp
  tmScope source.lisp
  aliases lisp
  repos 24262
-githubBigQuery Common Lisp
- repos 5678
- users 3752
-
-pygmentsHighlighter Common Lisp
- filename lisp.py
- fileExtensions cl lisp
-linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
- firstCommit 2005
- lastCommit 2018
- committerCount 6
- commitCount 40
- sampleCount 9
- example
-  (DEFUN HELLO ()
-    (PRINT 'HELLO))
-  
-
-leachim6 Common Lisp
- filepath c/Common Lisp.lisp
- example
-  (defun hello-world ()
-    (format t "Hello World~%"))
-  
-  (hello-world)
-  
-quineRelay Common Lisp
-
-rijuRepl https://riju.codes/commonlisp
- example
-  (format t "Hello, world!")
-  
- description Modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most prominent (along with Scheme) descendant of the Lisp family
- fileExtensions lisp lsp l cl fasl
- website https://common-lisp.net/
- gitRepo https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/
 
 indeedJobs "common lisp"
  2017 24
-officialBlogUrl https://common-lisp.net/news
-faqPageUrl https://common-lisp.net/faq
-downloadPageUrl https://common-lisp.net/downloads
 
-tiobe Common Lisp
-hopl https://hopl.info/showlanguage.prx?exp=946
-
-ubuntuPackage clisp
-jupyterKernel https://github.com/fredokun/cl-jupyter
-fileType text
-centralPackageRepositoryCount 0
+semanticScholar 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -144,7 +149,3 @@ goodreads
  A Programmer's Guide To Common Lisp|1987|Deborough G. Tatar|1732767|0.0|0|0
  Common Lisp Programming|2012|Steve Howard|27090533|3.25|4|0
  Object-Oriented Programming in Common LISP: A Programmer's Guide to Clos|1989|Sonya E. Keene|1163506|4.02|48|4
-
-isbndb 0
-
-semanticScholar 0

@@ -1,11 +1,21 @@
 import ../code/conceptPage.scroll
+
 id gambas
 name Gambas
 appeared 1999
-tags pl
 creators Benoît Minisini
+tags pl
+
+isOpenSource true
+rosettaCode http://www.rosettacode.org/wiki/Category:Gambas
+centralPackageRepositoryCount 0
 country France
 originCommunity https://lists.gambas-basic.org/listinfo
+
+rijuRepl https://riju.codes/gambas
+ example
+  Print "Hello, world!"
+  
 
 hasComments true
 hasSemanticIndentation false
@@ -54,15 +64,5 @@ wikipedia https://en.wikipedia.org/wiki/Gambas
  revisionCount 496
  dailyPageViews 93
  appeared 1999
-
-rosettaCode http://www.rosettacode.org/wiki/Category:Gambas
-
-rijuRepl https://riju.codes/gambas
- example
-  Print "Hello, world!"
-  
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

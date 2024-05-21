@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id clausal-lang
 name Clausal Language
 appeared 1997
 tags pl
-conceptDescription CL (Clausal Language) is a declarative programming language with the look and feel of a modern functional programming language. CL identifies the domain of symbolic expressions of LISP with the domain of natural numbers.
 website http://ii.fmph.uniba.sk/cl/view.php/
-reference http://dai.fmph.uniba.sk/~voda/
 aka cl
-country Slovakia
-originCommunity Comenius University Bratislava
-
-hopl https://hopl.info/showlanguage.prx?exp=5505
+conceptDescription CL (Clausal Language) is a declarative programming language with the look and feel of a modern functional programming language. CL identifies the domain of symbolic expressions of LISP with the domain of natural numbers.
 
 fileType text
 centralPackageRepositoryCount 0
+country Slovakia
+originCommunity Comenius University Bratislava
+reference http://dai.fmph.uniba.sk/~voda/
+
+hopl https://hopl.info/showlanguage.prx?exp=5505

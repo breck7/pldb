@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id fasta-format
 name FASTA
 appeared 2004
 tags textDataFormat
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/fasta
+centralPackageRepositoryCount 0
 country United States
 originCommunity National Center for Biotechnology Information && University of Virginia
 
@@ -24,10 +29,5 @@ wikipedia https://en.wikipedia.org/wiki/FASTA_format
  backlinksCount 98
  revisionCount 315
  appeared 2011
-
-antlr https://github.com/antlr/grammars-v4/tree/master/fasta
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

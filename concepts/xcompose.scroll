@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id xcompose
 name XCompose
 appeared 2006
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://wiki.debian.org/XCompose
 
 example
@@ -11,14 +15,6 @@ example
  <Multi_key> <g> <a> : "α"
  <Multi_key> <g> <b> : "β"
  <Multi_key> <g> <g> : "γ"
-
-githubLanguage XCompose
- trendingProjectsCount 0
- type data
- filenames .XCompose XCompose xcompose
- aceMode text
- tmScope config.xcompose
- repos 0
 
 linguistGrammarRepo https://github.com/samcv/language-xcompose
  firstCommit 2016
@@ -64,5 +60,10 @@ linguistGrammarRepo https://github.com/samcv/language-xcompose
   <Multi_key> <minus> <2> <M>	 	 : "⸺" U2E3A # TWO-EM DASH
   <M
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage XCompose
+ trendingProjectsCount 0
+ type data
+ filenames .XCompose XCompose xcompose
+ aceMode text
+ tmScope config.xcompose
+ repos 0

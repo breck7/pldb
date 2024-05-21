@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id rockstar-rkt
 name rockstar-rkt
 appeared 2019
 tags pl
 conceptDescription Implementation of Rockstar in Racket.
+
+writtenIn racket markdown
+relatedConcepts rockstar
+repoStats
+ firstCommit 2019
+ commits 91
+ committers 1
+ files 13
+ newestCommit 2019
 country Unknown
 originCommunity https://github.com/whichxjy/rockstar-rkt/issues
-
-relatedConcepts rockstar
 
 githubRepo https://github.com/whichxjy/rockstar-rkt
  firstCommit 2019
@@ -18,12 +26,3 @@ githubRepo https://github.com/whichxjy/rockstar-rkt
  forks 0
  subscribers 2
  issues 0
-
-repoStats
- firstCommit 2019
- commits 91
- committers 1
- files 13
- newestCommit 2019
-
-writtenIn racket markdown

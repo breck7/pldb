@@ -1,10 +1,15 @@
 import ../code/conceptPage.scroll
+
 id coco-r
 name Coco/R
 appeared 1990
 tags grammarLanguage
-conceptDescription Coco/R is a compiler generator, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
 website http://ssw.jku.at/coco/
+conceptDescription Coco/R is a compiler generator, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Austria
 originCommunity Johannes Kepler University
 
@@ -17,9 +22,5 @@ wikipedia https://en.wikipedia.org/wiki/Coco/R
  revisionCount 51
  dailyPageViews 15
  appeared 1985
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 semanticScholar 0

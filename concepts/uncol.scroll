@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id uncol
 name UNCOL
 appeared 1958
 tags ir
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/UNCOL
  related compiler-compiler llvmir
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/UNCOL
  appeared 1958
 
 hopl https://hopl.info/showlanguage.prx?exp=143
-
-fileType text
-centralPackageRepositoryCount 0

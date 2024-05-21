@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id clpr
 name CLPR
 appeared 1986
 tags pl
-country Australia
-originCommunity Monash University
 
 supersetOf prolog
+fileType text
+centralPackageRepositoryCount 0
+country Australia
+originCommunity Monash University
 
 example
  3*X + 4*Y - 2*Z = 8,
@@ -28,6 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/CLP(R)
  appeared 1992
 
 hopl https://hopl.info/showlanguage.prx?exp=1205
-
-fileType text
-centralPackageRepositoryCount 0

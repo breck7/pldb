@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id qb64
 name QB64
 appeared 2007
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://qb64.boards.net
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/QB64
  example
@@ -46,6 +50,3 @@ wikipedia https://en.wikipedia.org/wiki/QB64
  revisionCount 233
  dailyPageViews 90
  appeared 2007
-
-isOpenSource true
-centralPackageRepositoryCount 0

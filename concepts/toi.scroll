@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id toi
 name Toi
 appeared 2015
 tags pl
 website https://banna.tech/things/post/toy_language/
+
+isOpenSource true
+writtenIn c python make bourne-shell markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 80
+ committers 4
+ files 67
+ newestCommit 2020
 
 githubRepo https://github.com/bannana/language
  firstCommit 2015
@@ -14,13 +26,6 @@ githubRepo https://github.com/bannana/language
  updated 2021
  description Some fools attempt at an interpreted language
  issues 0
-
-repoStats
- firstCommit 2015
- commits 80
- committers 4
- files 67
- newestCommit 2020
 
 wikipedia https://en.wikipedia.org/wiki/Toi_(programming_language)
  example
@@ -43,9 +48,3 @@ wikipedia https://en.wikipedia.org/wiki/Toi_(programming_language)
  backlinksCount 3
  revisionCount 30
  dailyPageViews 5
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c python make bourne-shell markdown

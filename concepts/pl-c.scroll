@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id pl-c
 name PL/C
 appeared 1973
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Cornell University
 
@@ -17,6 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/PL/C
  appeared 1973
 
 hopl https://hopl.info/showlanguage.prx?exp=650
-
-fileType text
-centralPackageRepositoryCount 0

@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id abnf
 name Augmented Backus-Naur Form
 appeared 2008
 tags grammarLanguage
 standsFor Augmented Backus-Naur Form
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/abnf
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter ABNF
+ filename grammar_notation.py
+ fileExtensions abnf
+
+lineCommentToken ;
+booleanTokens true false
 
 hasLineComments true
  ; A comment
@@ -11,9 +23,6 @@ hasComments true
  ; A comment
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken ;
-booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
  example
@@ -44,18 +53,6 @@ wikipedia https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
  backlinksCount 22
  appeared 2010
 
-githubLanguage ABNF
- fileExtensions abnf
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.abnf
- repos 1
-
-antlr https://github.com/antlr/grammars-v4/tree/master/abnf
-pygmentsHighlighter ABNF
- filename grammar_notation.py
- fileExtensions abnf
 linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
  firstCommit 2016
  lastCommit 2016
@@ -255,7 +252,12 @@ linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
   ; HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
   
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage ABNF
+ fileExtensions abnf
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.abnf
+ repos 1

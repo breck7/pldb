@@ -1,12 +1,42 @@
 import ../code/conceptPage.scroll
+
 id batch
 name Batchfile
 appeared 1985
 tags pl
 aka bat
 aka cmd
+
+fileType text
+wordRank 7410
+monaco bat
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
+projectEuler Batch
+ memberCount
+  2022 9
+
+pygmentsHighlighter Batchfile
+ filename shell.py
+ fileExtensions bat cmd
+rijuRepl https://riju.codes/cmd
+ example
+  echo "Hello, world!"
+  
+ description Obsolete (but still default) command-line interpreter for Microsoft Windows
+ fileExtensions bat
+ website https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+leachim6 Batch
+ filepath b/Batch.bat
+ fileExtensions bat
+ example
+  @echo off
+  echo Hello World
+  
+
+lineCommentToken REM
+printToken echo
 
 hasCaseInsensitiveIdentifiers true
 hasPrintDebugging true
@@ -20,9 +50,6 @@ hasGotos true
  :: this would create an endless loop
  :myLabel
  goto myLabel
-
-lineCommentToken REM
-printToken echo
 
 wikipedia https://en.wikipedia.org/wiki/Batch_file
  example
@@ -39,6 +66,16 @@ wikipedia https://en.wikipedia.org/wiki/Batch_file
  backlinksCount 845
  revisionCount 1307
  appeared 1985
+
+githubBigQuery Batchfile
+ repos 97775
+ users 76182
+
+linguistGrammarRepo https://github.com/mmims/language-batchfile
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 3
+ commitCount 55
 
 githubLanguage Batchfile
  fileExtensions bat cmd
@@ -57,41 +94,5 @@ githubLanguage Batchfile
  tmScope source.batchfile
  aliases bat or batch or dosbatch or winbatch
  repos 72380
-githubBigQuery Batchfile
- repos 97775
- users 76182
-
-monaco bat
-pygmentsHighlighter Batchfile
- filename shell.py
- fileExtensions bat cmd
-linguistGrammarRepo https://github.com/mmims/language-batchfile
- firstCommit 2014
- lastCommit 2018
- committerCount 3
- commitCount 55
-
-projectEuler Batch
- memberCount
-  2022 9
-leachim6 Batch
- filepath b/Batch.bat
- fileExtensions bat
- example
-  @echo off
-  echo Hello World
-  
-
-rijuRepl https://riju.codes/cmd
- example
-  echo "Hello, world!"
-  
- description Obsolete (but still default) command-line interpreter for Microsoft Windows
- fileExtensions bat
- website https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
-
-fileType text
-wordRank 7410
-centralPackageRepositoryCount 0
 
 semanticScholar 0

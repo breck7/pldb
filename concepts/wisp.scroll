@@ -1,25 +1,24 @@
 import ../code/conceptPage.scroll
+
 id wisp
 name wisp
 appeared 2012
-tags pl
 creators Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick
-conceptDescription A little Clojure-like LISP in JavaScript
+tags pl
 website https://web.archive.org/web/20201121215216/https://gozala.io/wisp/
+conceptDescription A little Clojure-like LISP in JavaScript
+
+isOpenSource true
+writtenIn markdown json make yaml javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1061
+ committers 21
+ files 43
+ newestCommit 2019
 country Unknown
-
-hasSemanticIndentation true
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasStrings true
- "Hello world"
-hasBooleans true
-
-lineCommentToken ;
-stringToken "
-booleanTokens true false
 
 example
  (alert "Hello world!")
@@ -34,22 +33,19 @@ githubRepo https://github.com/Gozala/wisp
  description A little Clojure-like LISP in JavaScript
  issues 56
 
-repoStats
- firstCommit 2012
- commits 1061
- committers 21
- files 43
- newestCommit 2019
+lineCommentToken ;
+stringToken "
+booleanTokens true false
 
-githubLanguage wisp
- fileExtensions wisp
- trendingProjectsCount 0
- type programming
- aceMode clojure
- codemirrorMode clojure
- codemirrorMimeType text/x-clojure
- tmScope source.clojure
- repos 30
+hasSemanticIndentation true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasStrings true
+ "Hello world"
+hasBooleans true
+
 githubBigQuery wisp
  repos 23
  users 17
@@ -125,14 +121,18 @@ linguistGrammarRepo https://github.com/atom/language-clojure
   ;; # Conventions
   ;; Wisp puts a lot of effort in making naming conventions tra
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage wisp
+ fileExtensions wisp
+ trendingProjectsCount 0
+ type programming
+ aceMode clojure
+ codemirrorMode clojure
+ codemirrorMimeType text/x-clojure
+ tmScope source.clojure
+ repos 30
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2021|Comparative Analysis of the Simple WISP and Some Prominent MCDM Methods: A Python Approach|10.3390/axioms10040347|1|0|D. Stanujkić and D. Karabašević and G. Popović and E. Zavadskas and M. Saračević and P. Stanimirović and A. Ulutaş and V. Katsikis and I. Meidutė-Kavaliauskienė|ad2cae5c390d3ef3c4be9e2ef751699090e0c941
-
-writtenIn markdown json make yaml javascript

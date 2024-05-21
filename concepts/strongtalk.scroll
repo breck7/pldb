@@ -1,15 +1,18 @@
 import ../code/conceptPage.scroll
+
 id strongtalk
 name Strongtalk
 appeared 1994
 tags pl
-conceptDescription Strongtalk is a major re-thinking of the Smalltalk-80 programming language and system. While retaining the basic Smalltalk syntax and semantics, it contains a number of significant advances.
 website http://strongtalk.org/
-reference https://wiki.c2.com/?StrongTalk
+conceptDescription Strongtalk is a major re-thinking of the Smalltalk-80 programming language and system. While retaining the basic Smalltalk syntax and semantics, it contains a number of significant advances.
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Horizon Technologies of New York, Inc.
-domainName strongtalk.org
- registered 2006
+reference https://wiki.c2.com/?StrongTalk
 
 wikipedia https://en.wikipedia.org/wiki/Strongtalk
  related smalltalk self java javascript
@@ -23,8 +26,7 @@ wikipedia https://en.wikipedia.org/wiki/Strongtalk
 
 hopl https://hopl.info/showlanguage.prx?exp=3364
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName strongtalk.org
+ registered 2006
 
 isbndb 0

@@ -1,23 +1,22 @@
 import ../code/conceptPage.scroll
+
 id xl-lang
 name XL
 appeared 2000
-tags pl
 creators Christophe de Dinechin
+tags pl
 website http://xlr.sourceforge.net/
+
+isOpenSource true
+writtenIn css cpp make yaml bash markdown lisp awk html asciidoc python ini javascript
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 5437
+ committers 23
+ files 1369
+ newestCommit 2022
 reference https://fosdem.org/2020/schedule/event/xllang/
-domainName xlr.sourceforge.net
-
-hasSemanticIndentation true
-hasTemplates true
-hasPrintDebugging true
-hasStrings true
- "Hello world"
-hasBooleans true
-
-printToken writeln
-stringToken "
-booleanTokens True False
 
 example
  0! is 1
@@ -25,6 +24,13 @@ example
  
  for I in 1..5 loop
      print "The factorial of ", I, " is ", I!
+leachim6 XL
+ filepath x/XL.xl
+ fileExtensions xl
+ example
+  // XL programming language: http://xlr.sourceforge.net
+  writeln "Hello World"
+  
 
 githubRepo https://github.com/c3d/xl
  firstCommit 2003
@@ -36,12 +42,16 @@ githubRepo https://github.com/c3d/xl
  description A minimalist, general-purpose programming language based on meta-programming and parse tree rewrites
  issues 45
 
-repoStats
- firstCommit 2003
- commits 5437
- committers 23
- files 1369
- newestCommit 2022
+printToken writeln
+stringToken "
+booleanTokens True False
+
+hasSemanticIndentation true
+hasTemplates true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
  example
@@ -56,21 +66,10 @@ wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
  dailyPageViews 26
  appeared 2000
 
-leachim6 XL
- filepath x/XL.xl
- fileExtensions xl
- example
-  // XL programming language: http://xlr.sourceforge.net
-  writeln "Hello World"
-  
-
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName xlr.sourceforge.net
 
 isbndb 3
  year|publisher|title|authors|isbn13
  1983|Phoenix Pub. Associates|The Atari 600 XL program book|Goode, Peter|9780946576111
  2010||Xl (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130899875
  2010||Xl (xml Programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786131028571
-
-writtenIn css cpp make yaml bash markdown lisp awk html asciidoc python ini javascript

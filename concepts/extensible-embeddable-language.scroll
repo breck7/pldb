@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id extensible-embeddable-language
 name Extensible Embeddable Language
 appeared 2005
-tags pl
 creators David Olofson
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Sweden
 originCommunity https://github.com/olofson
 
@@ -67,6 +71,3 @@ wikipedia https://en.wikipedia.org/wiki/Extensible_Embeddable_Language
  revisionCount 30
  dailyPageViews 5
  appeared 2005
-
-isOpenSource true
-centralPackageRepositoryCount 0

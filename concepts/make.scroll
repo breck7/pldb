@@ -1,22 +1,18 @@
 import ../code/conceptPage.scroll
+
 id make
 name Make
 appeared 1977
 tags application
 conceptDescription Make — a program for maintaining computer programs
-reference https://semanticscholar.org/paper/40cf2b47de20d0b930cd4b5184febe40bdc681c8
-country United States
-originCommunity Bell Laboratories
 
 relatedConcepts makefile
-
-leachim6 Make
- filepath m/Make.makefile
- fileExtensions makefile
- example
-  $(info "Hello World")
-  all:
-  
+clocExtensions am Gnumakefile gnumakefile Makefile makefile mk
+wordRank 132
+centralPackageRepositoryCount 0
+country United States
+originCommunity Bell Laboratories
+reference https://semanticscholar.org/paper/40cf2b47de20d0b930cd4b5184febe40bdc681c8
 
 rijuRepl https://riju.codes/make
  example
@@ -24,10 +20,11 @@ rijuRepl https://riju.codes/make
   all:
   	@echo "Hello, world!"
   
+leachim6 Make
+ filepath m/Make.makefile
+ fileExtensions makefile
+ example
+  $(info "Hello World")
+  all:
 
 hopl https://hopl.info/showlanguage.prx?exp=768
-
-wordRank 132
-centralPackageRepositoryCount 0
-
-clocExtensions am Gnumakefile gnumakefile Makefile makefile mk

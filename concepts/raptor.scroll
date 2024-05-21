@@ -1,13 +1,15 @@
 import ../code/conceptPage.scroll
+
 id raptor
 name raptor
 appeared 2015
 tags visual
+website https://raptor.martincarlisle.com/
 screenshot raptor.png
 conceptDescription RAPTOR is a flowchart-based programming environment, designed specifically to help students visualize their algorithms and avoid syntactic baggage.
-website https://raptor.martincarlisle.com/
-country United States
-originCommunity US Air Force Academy
-domainName raptor.martincarlisle.com
 
 visualParadigm true
+country United States
+originCommunity US Air Force Academy
+
+domainName raptor.martincarlisle.com

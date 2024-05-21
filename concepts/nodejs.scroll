@@ -1,21 +1,59 @@
 import ../code/conceptPage.scroll
+
 id nodejs
 name Node.js
 appeared 2009
-tags pl
 creators Ryan Dahl
+tags pl
 website https://nodejs.org
+
+isOpenSource true
+writtenIn javascript cpp c python html json perl markdown assembly-language typescript bourne-shell yaml cmake starlark restructuredtext m4 make pascal diff wasm xml css powershell idl bash svg rust csv r xhtml lisp toml sql vim-script fortran-90 bazel scheme csharp php awk ruby coffeescript ini jsx dockerfile sed
+officialBlogUrl https://nodejs.org/en/blog/year-2011/
+releaseNotesUrl https://nodejs.org/en/download/releases/
+fileType text
 documentation https://nodejs.org/en/docs/
 documentation https://devdocs.io/node/
+downloadPageUrl https://nodejs.org/en/download/
+replit https://repl.it/languages/nodejs
+packageRepository https://www.npmjs.com/
+repoStats
+ firstCommit 2009
+ commits 87401
+ committers 3986
+ files 43380
+ newestCommit 2024
 country United States
 originCommunity OpenJS Foundation
-domainName nodejs.org
- registered 2009
- awisRank
-  2022 2451
-releaseNotesUrl https://nodejs.org/en/download/releases/
 
-writtenIn javascript cpp c python html json perl markdown assembly-language typescript bourne-shell yaml cmake starlark restructuredtext m4 make pascal diff wasm xml css powershell idl bash svg rust csv r xhtml lisp toml sql vim-script fortran-90 bazel scheme csharp php awk ruby coffeescript ini jsx dockerfile sed
+subreddit https://reddit.com/r/node
+ memberCount
+  2022 213404
+leachim6 Node.js
+ filepath n/Node.js.js
+ fileExtensions js
+ example
+  #!/usr/bin/env node
+  
+  console.log('Hello World');
+  
+gource https://www.youtube.com/watch?v=1eERxzjXeGo
+
+meetup https://www.meetup.com/topics/nodejs
+ memberCount 928277
+ groupCount 1560
+githubRepo https://github.com/nodejs/node
+ stars 88526
+ forks 23732
+ subscribers 2910
+ created 2014
+ updated 2022
+ firstCommit 2009
+ description Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:
+ issues 1654
+
+printToken console.log
+stringToken "
 
 canWriteToDisk true
  require("fs").writeFileSync("foo.txt", "foo", "utf8")
@@ -28,27 +66,6 @@ hasCaseInsensitiveIdentifiers false
 hasStrings true
  "Hello world"
 
-printToken console.log
-stringToken "
-
-gource https://www.youtube.com/watch?v=1eERxzjXeGo
-githubRepo https://github.com/nodejs/node
- stars 88526
- forks 23732
- subscribers 2910
- created 2014
- updated 2022
- firstCommit 2009
- description Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:
- issues 1654
-
-repoStats
- firstCommit 2009
- commits 87401
- committers 3986
- files 43380
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/nodejs
  related c javascript linux freebsd npm-pm tcp tls udp ecmascript unix coffeescript dart typescript php mps visual-studio-editor eclipse-editor visual-studio-code-editor postgresql mongodb json
  summary Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser. Typically, JavaScript is used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML and run client-side by a JavaScript engine in the user's web browser. Node.js lets developers use JavaScript to write Command Line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web application development around a single programming language, rather than different languages for server side and client side scripts. Though .js is the conventional filename extension for JavaScript code, the name "Node.js" does not refer to a particular file in this context and is merely the name of the product. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).The Node.js distributed development project, governed by the Node.js Foundation, is facilitated by the Linux Foundation's Collaborative Projects program.Corporate users of Node.js software include GoDaddy, Groupon, IBM, LinkedIn, Microsoft, Netflix, PayPal, Rakuten, SAP, Voxer, Walmart, and Yahoo!.
@@ -59,43 +76,10 @@ wikipedia https://en.wikipedia.org/wiki/nodejs
  dailyPageViews -1
  appeared 2009
 
-leachim6 Node.js
- filepath n/Node.js.js
- fileExtensions js
- example
-  #!/usr/bin/env node
-  
-  console.log('Hello World');
-  
-
-replit https://repl.it/languages/nodejs
-
-indeedJobs nodejs developer
- 2022 6864
-stackOverflowSurvey
- 2021
-  users 27975
-  medianSalary 54672
-  fans 24100
-  percentageUsing 0.34
-officialBlogUrl https://nodejs.org/en/blog/year-2011/
-downloadPageUrl https://nodejs.org/en/download/
-
-subreddit https://reddit.com/r/node
- memberCount
-  2022 213404
-meetup https://www.meetup.com/topics/nodejs
- memberCount 928277
- groupCount 1560
-
-packageRepository https://www.npmjs.com/
-
-fileType text
-isOpenSource true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Nodejs Programming by Example|2012|Agus Kurniawan|22023706|3.75|12|0
+domainName nodejs.org
+ registered 2009
+ awisRank
+  2022 2451
 
 isbndb 78
  year|publisher|title|authors|isbn13
@@ -178,6 +162,15 @@ isbndb 78
  30-11-2018|Packt Publishing|Server Side development with Node.js and Koa.js Quick Start Guide|Olayinka Omole|9781789343663
  2018|Pragmatic Programmers,|Node.js 8 the right way: practical, server-side JavaScript that scales|Wilson, Jim R. (author.)|9781680501957
 
+indeedJobs nodejs developer
+ 2022 6864
+stackOverflowSurvey
+ 2021
+  users 27975
+  medianSalary 54672
+  fans 24100
+  percentageUsing 0.34
+
 semanticScholar 18
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|Static analysis of event-driven Node.js JavaScript applications|10.1145/2814270.2814272|95|3|Magnus Madsen and F. Tip and O. Lhoták|ab1a30dc95975d264e0ba93efd869e469e535441
@@ -198,3 +191,7 @@ semanticScholar 18
  2016|Programming Web Services on the Cloud with Node.js (Abstract Only)|10.1145/2839509.2844703|2|0|Ariel Ortiz|8610bc8ea4c4f0eda7e3a24deaa58da9bf1e46cb
  2014|Publishing Node.js Modules and Contributing to Open Source|10.1007/978-1-4302-6596-2_12|2|0|A. Mardan|6a8193b7d9cb0fe778efb030a64300afd90eb43f
  2019|Towards the Efficient Use of Dynamic Call Graph Generators of Node.js Applications|10.1007/978-3-030-40223-5_14|1|0|Zoltán Herczeg and Gábor Lóki and Ákos Kiss|f5f8f97e7d516f479c8c2e14b44c15f0a2a73c8d
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Nodejs Programming by Example|2012|Agus Kurniawan|22023706|3.75|12|0

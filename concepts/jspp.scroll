@@ -1,15 +1,25 @@
 import ../code/conceptPage.scroll
+
 id jspp
 name JS++
 appeared 2011
-tags pl
 creators Roger Poon and Anton Rapetov
+tags pl
 website https://onux.com/jspp/
+
+compilesTo javascript
 fileExtensions jspp
 country United Kingdom
 originCommunity Onux
 
-compilesTo javascript
+keywords abstract auto break bool byte catch char class continue debugger delete do double else enum external false final finally float for foreach function if import in instanceof int interface long module new null override overwrite private protected property public return short signed string super switch static this true try typeid typeof undefined unsigned var virtual void while with yield
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken console.log
+assignmentToken =
+stringToken "
+booleanTokens true false
 
 hasComments true
 hasSemanticIndentation false
@@ -31,14 +41,6 @@ hasHexadecimals true
 hasFloats true
 hasIntegers true
 hasGarbageCollection true
-
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken console.log
-assignmentToken =
-stringToken "
-booleanTokens true false
-keywords abstract auto break bool byte catch char class continue debugger delete do double else enum external false final finally float for foreach function if import in instanceof int interface long module new null override overwrite private protected property public return short signed string super switch static this true try typeid typeof undefined unsigned var virtual void while with yield
 
 wikipedia https://en.wikipedia.org/wiki/JS%2B%2B
  example

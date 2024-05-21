@@ -1,21 +1,17 @@
 import ../code/conceptPage.scroll
+
 id gentoo-ebuild
 name Gentoo Ebuild
 appeared 1999
 tags pl
-conceptDescription An ebuild file is a text file, used by Gentoo package managers, which identifies a specific software package and how the Gentoo package manager should handle it. It uses a bash-like syntax style and is standardized through the EAPI version. Gentoo Linux uses ebuilds as the package management format for individual software titles.
 website https://wiki.gentoo.org/wiki/Ebuild
-reference https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
+conceptDescription An ebuild file is a text file, used by Gentoo package managers, which identifies a specific software package and how the Gentoo package manager should handle it. It uses a bash-like syntax style and is standardized through the EAPI version. Gentoo Linux uses ebuilds as the package management format for individual software titles.
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Gentoo Foundation
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+reference https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
 
 example
   Copyright 1999-2018 Gentoo Foundation
@@ -30,6 +26,15 @@ example
  LICENSE="MIT"
  SLOT="0"
  KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+twitter https://twitter.com/gentoo
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Ebuild
  related bash
@@ -39,6 +44,12 @@ wikipedia https://en.wikipedia.org/wiki/Ebuild
  pageId 361390
  revisionCount 109
  dailyPageViews 13
+
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 31
+ commitCount 243
 
 githubLanguage Gentoo Ebuild
  fileExtensions ebuild
@@ -50,15 +61,5 @@ githubLanguage Gentoo Ebuild
  codemirrorMimeType text/x-sh
  tmScope source.shell
  repos 1476
-
-linguistGrammarRepo https://github.com/atom/language-shellscript
- firstCommit 2013
- lastCommit 2018
- committerCount 31
- commitCount 243
-
-twitter https://twitter.com/gentoo
-fileType text
-centralPackageRepositoryCount 0
 
 semanticScholar 0

@@ -1,23 +1,37 @@
 import ../code/conceptPage.scroll
+
 id oxygene
 name Oxygene
 appeared 2002
 tags pl
 website http://elementscompiler.com
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Oxygene
+centralPackageRepositoryCount 0
 country United States
 originCommunity RemObjects Software
-domainName elementscompiler.com
- registered 2014
- awisRank
-  2022 788483
-  2017 590346
+
+leachim6 Oxygene
+ filepath o/Oxygene.pas
+ fileExtensions pas
+ example
+  implementation
+  
+  class method ConsoleApp.Main;
+  begin
+    Console.WriteLine('Hello World');
+  end;
+  
+  end.
+  
+
+printToken Console.WriteLine
+stringToken '
 
 hasPrintDebugging true
 hasStrings true
  'Hello world'
-
-printToken Console.WriteLine
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Oxygene_(programming_language)
  example
@@ -39,6 +53,23 @@ wikipedia https://en.wikipedia.org/wiki/Oxygene_(programming_language)
  revisionCount 346
  appeared 2017
 
+tiobe Oxygene
+
+domainName elementscompiler.com
+ registered 2014
+ awisRank
+  2022 788483
+  2017 590346
+
+githubBigQuery Oxygene
+ repos 35
+ users 32
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2010||Oxygene (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130911270
+ ||Pascal Programming Language Family: Oxygene|Books and LLC|9781156561096
+
 githubLanguage Oxygene
  fileExtensions oxygene
  trendingProjectsCount 0
@@ -46,33 +77,5 @@ githubLanguage Oxygene
  aceMode text
  tmScope none
  repos 65
-githubBigQuery Oxygene
- repos 35
- users 32
-
-leachim6 Oxygene
- filepath o/Oxygene.pas
- fileExtensions pas
- example
-  implementation
-  
-  class method ConsoleApp.Main;
-  begin
-    Console.WriteLine('Hello World');
-  end;
-  
-  end.
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Oxygene
-
-tiobe Oxygene
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 2
- year|publisher|title|authors|isbn13
- 2010||Oxygene (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130911270
- ||Pascal Programming Language Family: Oxygene|Books and LLC|9781156561096
 
 semanticScholar 0

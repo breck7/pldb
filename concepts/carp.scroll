@@ -1,13 +1,42 @@
 import ../code/conceptPage.scroll
+
 id carp
 name carp
 appeared 2016
-tags pl
 creators Erik Svedäng
+tags pl
+
+isOpenSource true
+writtenIn haskell markdown bourne-shell yaml css python nix powershell svg c lisp
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 5018
+ committers 77
+ files 411
+ newestCommit 2023
 country Various
 originCommunity https://github.com/carp-lang
 
-writtenIn haskell markdown bourne-shell yaml css python nix powershell svg c lisp
+helloWorldCollection carp
+ ;; Hello world in Carp
+ 
+ (println "hello world")
+
+githubRepo https://github.com/carp-lang/carp
+ stars 4571
+ forks 158
+ subscribers 101
+ created 2016
+ updated 2022
+ firstCommit 2016
+ description A statically typed lisp, without a GC, for real-time applications.
+ issues 129
+
+lineCommentToken ;
+printToken println
+stringToken "
 
 isLisp true
 hasGarbageCollection false
@@ -20,36 +49,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken ;
-printToken println
-stringToken "
-
-githubRepo https://github.com/carp-lang/carp
- stars 4571
- forks 158
- subscribers 101
- created 2016
- updated 2022
- firstCommit 2016
- description A statically typed lisp, without a GC, for real-time applications.
- issues 129
-
-repoStats
- firstCommit 2016
- commits 5018
- committers 77
- files 411
- newestCommit 2023
-
-helloWorldCollection carp
- ;; Hello world in Carp
- 
- (println "hello world")
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
 

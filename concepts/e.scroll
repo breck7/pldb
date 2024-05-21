@@ -1,31 +1,21 @@
 import ../code/conceptPage.scroll
+
 id e
 name E
 appeared 1997
-tags pl
 creators Mark S. Miller
-conceptDescription E is an object-oriented programming language for secure distributed computing.
+tags pl
 website http://erights.org/
+conceptDescription E is an object-oriented programming language for secure distributed computing.
+
+isOpenSource true
+visualParadigm false
+fileType text
+wordRank 82
+rosettaCode http://www.rosettacode.org/wiki/Category:E
+centralPackageRepositoryCount 0
 country United States
 originCommunity Combex, Inc.
-domainName erights.org
- registered 1998
- awisRank
-  2022 11154366
-
-visualParadigm false
-
-hasComments true
-hasLineComments true
- # A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken #
-printToken println
-stringToken "
 
 example
  def factorial(n :int) :int {
@@ -48,6 +38,24 @@ example
      #....log event
  }
  
+leachim6 E
+ filepath e/E.e
+ fileExtensions e
+ example
+  println("Hello World")
+  
+
+lineCommentToken #
+printToken println
+stringToken "
+
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/E_(programming_language)
  example
@@ -81,6 +89,19 @@ wikipedia https://en.wikipedia.org/wiki/E_(programming_language)
  dailyPageViews 77
  appeared 1997
 
+hopl https://hopl.info/showlanguage.prx?exp=1990
+
+domainName erights.org
+ registered 1998
+ awisRank
+  2022 11154366
+
+githubBigQuery E
+ repos 304
+ users 291
+
+isbndb 0
+
 githubLanguage E
  fileExtensions e
  trendingProjectsCount 0
@@ -89,25 +110,5 @@ githubLanguage E
  aceMode text
  tmScope none
  repos 354
-githubBigQuery E
- repos 304
- users 291
-
-leachim6 E
- filepath e/E.e
- fileExtensions e
- example
-  println("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:E
-
-hopl https://hopl.info/showlanguage.prx?exp=1990
-
-fileType text
-wordRank 82
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

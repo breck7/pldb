@@ -1,21 +1,23 @@
 import ../code/conceptPage.scroll
+
 id allegro-common-lisp
 name Allegro Common Lisp
 appeared 1986
-tags pl
 creators John Foderaro
+tags pl
 website https://franz.com/products/allegrocl/
-documentation https://franz.com/support/documentation/current/doc/introduction.htm
 aka Allegro CL
-originCommunity Franz Inc
-releaseNotesUrl https://franz.com/support/documentation/current/doc/release-notes.htm
 
-isLisp true
+releaseNotesUrl https://franz.com/support/documentation/current/doc/release-notes.htm
+documentation https://franz.com/support/documentation/current/doc/introduction.htm
+originCommunity Franz Inc
 
 example
  (defun foo (x)
   (loop for y in-sequence x collect (1+ y)))
  (foo '(1 2 3)) => (2 3 4)
  (foo #(1 2 3)) => (2 3 4)
+
+isLisp true
 
 wikipedia https://en.wikipedia.org/wiki/Allegro_Common_Lisp

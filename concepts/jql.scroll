@@ -1,9 +1,19 @@
 import ../code/conceptPage.scroll
+
 id jql
 name JSON Query Language
 appeared 2019
-tags queryLanguage
 creators Jakub Martin
+tags queryLanguage
+redditDiscussion https://www.reddit.com/r/golang/comments/ehnsz5/jql_json_query_processor_with_an_easier_lispy/
+
+writtenIn go yaml markdown yacc json bourne-shell
+repoStats
+ firstCommit 2019
+ commits 72
+ committers 3
+ files 21
+ newestCommit 2022
 country Poland
 originCommunity https://github.com/cube2222/jql/issues
 
@@ -17,15 +27,4 @@ githubRepo https://github.com/cube2222/jql
  description Easy JSON Query Processor with a Lispy syntax in Go
  issues 1
 
-repoStats
- firstCommit 2019
- commits 72
- committers 3
- files 21
- newestCommit 2022
-
-redditDiscussion https://www.reddit.com/r/golang/comments/ehnsz5/jql_json_query_processor_with_an_easier_lispy/
-
 isbndb 0
-
-writtenIn go yaml markdown yacc json bourne-shell

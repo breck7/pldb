@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id comal
 name COMAL
 appeared 1973
-tags pl
 creators Børge R. Christensen and Benedict Løfstedt
+tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Comal
+centralPackageRepositoryCount 0
 country Denmark
 originCommunity A school in Denmark
 
@@ -23,10 +28,5 @@ wikipedia https://en.wikipedia.org/wiki/COMAL
  revisionCount 111
  appeared 1973
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Comal
-
-tiobe COMAL
 hopl https://hopl.info/showlanguage.prx?exp=605
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe COMAL

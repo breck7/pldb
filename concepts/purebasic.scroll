@@ -1,16 +1,32 @@
 import ../code/conceptPage.scroll
+
 id purebasic
 name PureBasic
 appeared 1998
 tags pl
 website http://www.purebasic.com
-documentation https://www.purebasic.com/documentation/index.html
-originCommunity Fantaisie Software
-domainName purebasic.com
- registered 2000
- awisRank
-  2022 790778
+
+officialBlogUrl https://www.purebasic.fr/blog/
 releaseNotesUrl https://www.purebasic.com/news.php
+fileType text
+documentation https://www.purebasic.com/documentation/index.html
+faqPageUrl https://www.purebasic.com/faq.php
+rosettaCode http://www.rosettacode.org/wiki/Category:PureBasic
+centralPackageRepositoryCount 0
+originCommunity Fantaisie Software
+
+leachim6 PureBasic
+ filepath p/PureBasic.pb
+ fileExtensions pb
+ example
+  If OpenConsole()
+    PrintN("Hello World")
+  EndIf
+  
+
+lineCommentToken ;
+printToken PrintN
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -19,10 +35,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken ;
-printToken PrintN
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/PureBasic
  example
@@ -47,17 +59,11 @@ wikipedia https://en.wikipedia.org/wiki/PureBasic
  dailyPageViews 41
  appeared 1998
 
-githubLanguage PureBasic
- fileExtensions pb pbi
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  onnx onnx https://github.com/onnx.png https://github.com/onnx/onnx PureBasic #5a6986 6751 1080 196 "Open Neural Network Exchange"
-  alibaba x-deeplearning https://github.com/alibaba.png https://github.com/alibaba/x-deeplearning PureBasic #5a6986 2862 709 123 "An industrial deep learning framework for high-dimension sparse data"
- trendingProjectsCount 3
- type programming
- aceMode text
- tmScope none
- repos 6366
+domainName purebasic.com
+ registered 2000
+ awisRank
+  2022 790778
+
 githubBigQuery PureBasic
  repos 647
  users 556
@@ -204,27 +210,24 @@ linguistGrammarRepo https://github.com/telnet23/language-basic
   ; EnableXP
   
 
-leachim6 PureBasic
- filepath p/PureBasic.pb
- fileExtensions pb
- example
-  If OpenConsole()
-    PrintN("Hello World")
-  EndIf
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:PureBasic
-
-indeedJobs purebasic developer
- 2022 0
-officialBlogUrl https://www.purebasic.fr/blog/
-faqPageUrl https://www.purebasic.com/faq.php
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2012|Bookbaby|Programming 2d Scrolling Games: For Purebasic Developers|John P. Logsdon and Derlidio Siqueira|9781624883415
  2010||Basic Programming Language Family: Basic, Quickbasic, Gw-basic, Ibm Basica, True Basic, Vbscript, Visual Basic For Applications, Purebasic|Books and LLC and Group|9781157362517
+
+githubLanguage PureBasic
+ fileExtensions pb pbi
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  onnx onnx https://github.com/onnx.png https://github.com/onnx/onnx PureBasic #5a6986 6751 1080 196 "Open Neural Network Exchange"
+  alibaba x-deeplearning https://github.com/alibaba.png https://github.com/alibaba/x-deeplearning PureBasic #5a6986 2862 709 123 "An industrial deep learning framework for high-dimension sparse data"
+ trendingProjectsCount 3
+ type programming
+ aceMode text
+ tmScope none
+ repos 6366
+
+indeedJobs purebasic developer
+ 2022 0
 
 semanticScholar 0

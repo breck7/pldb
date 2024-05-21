@@ -1,25 +1,34 @@
 import ../code/conceptPage.scroll
+
 id mongodb
 name MongoDB
 appeared 2009
+creators Eliot Horowitz and Dwight Merriman
 tags application
 website https://www.mongodb.com/
-documentation https://www.mongodb.com/docs/
-originCommunity https://www.mongodb.com/community/forums/
-domainName mongodb.com
- registered 2008
- awisRank
-  2022 1421
 
+isOpenSource true
 writtenIn cpp javascript c python yaml idl bourne-shell markdown protobuf json starlark assembly-language cmake bazel make xml bash tex dockerfile m4 restructuredtext html pascal diff perl ini ruby meson lua css toml php java objective-cpp reason swift csv jupyter-notebook powershell svg rust awk r d objective-c
+fileType text
+documentation https://www.mongodb.com/docs/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2007
+ commits 126261
+ committers 1366
+ files 40166
+ newestCommit 2024
+originCommunity https://www.mongodb.com/community/forums/
 
-hasComments true
- $comment: "A comment"
-hasStrings true
-hasBooleans true
+rijuRepl https://riju.codes/mongodb
+ example
+  db.collection.find()
+subreddit https://www.reddit.com/r/mongodb
+ memberCount
+  2022 17286
+twitter https://twitter.com/mongodb
 
 keywords find findOne drop createIndex
-
 githubRepo https://github.com/mongodb/mongo
  stars 22031
  forks 5252
@@ -29,6 +38,11 @@ githubRepo https://github.com/mongodb/mongo
  firstCommit 2007
  description The MongoDB Database
  issues 57
+
+hasComments true
+ $comment: "A comment"
+hasStrings true
+hasBooleans true
 
 wikipedia https://en.wikipedia.org/wiki/MongoDB
  related c javascript linux solaris freebsd json nginx-config sql
@@ -40,33 +54,17 @@ wikipedia https://en.wikipedia.org/wiki/MongoDB
  revisionCount 1385
  appeared 2007
 
-rijuRepl https://riju.codes/mongodb
- example
-  db.collection.find()
+domainName mongodb.com
+ registered 2008
+ awisRank
+  2022 1421
 
 indeedJobs mongodb developer and dba
  2022 1243
 linkedInSkill MongoDB
  2018 254440
 
-subreddit https://www.reddit.com/r/mongodb
- memberCount
-  2022 17286
-
-twitter https://twitter.com/mongodb
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  50 Tips and Tricks for MongoDB Developers|2011|Kristina Chodorow|16286777|3.63|60|5
  Mongodb (Programming)|2014|Paula Drew|42282006|3.00|2|0
-
-creators Eliot Horowitz and Dwight Merriman
-repoStats
- firstCommit 2007
- commits 126261
- committers 1366
- files 40166
- newestCommit 2024

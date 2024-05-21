@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id git-config
 name git-config
 appeared 2005
 tags application
 website https://git-scm.com/docs/git-config#_syntax
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Software Freedom Conservancy
 
@@ -23,6 +27,3 @@ githubLanguage Git Config
  codemirrorMimeType text/x-properties
  tmScope source.gitconfig
  aliases gitconfig or gitmodules
-
-fileType text
-centralPackageRepositoryCount 0

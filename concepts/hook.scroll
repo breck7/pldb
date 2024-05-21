@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id hook
 name Hook
 appeared 2021
-tags pl
 creators Fabio de Souza Villaca Medeiros
+tags pl
+
+writtenIn c markdown bourne-shell yaml cmake ruby lua php javascript python ini
+repoStats
+ firstCommit 2021
+ commits 476
+ committers 9
+ files 403
+ newestCommit 2024
 country Brazil
 originCommunity https://github.com/fabiosvm/hook-lang/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/fabiosvm/hook-lang
  updated 2022
  description The Hook Programming Language
  issues 0
-
-repoStats
- firstCommit 2021
- commits 476
- committers 9
- files 403
- newestCommit 2024
-
-writtenIn c markdown bourne-shell yaml cmake ruby lua php javascript python ini

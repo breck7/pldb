@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id noulith
 name noulith
 appeared 2022
-tags pl
 creators Brian Chen
-conceptDescription *slaps roof of [programming language]* this bad boy can fit so much [syntax sugar] into it
+tags pl
 website https://betaveros.github.io
+conceptDescription *slaps roof of [programming language]* this bad boy can fit so much [syntax sugar] into it
+
+isOpenSource true
+writtenIn rust vim-script markdown html toml javascript
 documentation https://github.com/betaveros/noulith/blob/main/README.md
+repoStats
+ firstCommit 2022
+ commits 259
+ committers 5
+ files 29
+ newestCommit 2024
 country United States
 originCommunity https://github.com/betaveros/noulith/issues
-
-writtenIn rust vim-script markdown html toml javascript
 
 githubRepo https://github.com/betaveros/noulith
  firstCommit 2022
@@ -21,12 +29,3 @@ githubRepo https://github.com/betaveros/noulith
  updated 2023
  description *slaps roof of [programming language]* this bad boy can fit so much [syntax sugar] into it
  issues 5
-
-repoStats
- firstCommit 2022
- commits 259
- committers 5
- files 29
- newestCommit 2024
-
-isOpenSource true

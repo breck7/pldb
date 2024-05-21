@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id revit-app
 name Autodesk Revit
 appeared 1997
 tags application
+
+isOpenSource false
+centralPackageRepositoryCount 0
 country United States
 originCommunity Autodesk, Inc
 
@@ -12,6 +16,3 @@ wikipedia https://en.wikipedia.org/wiki/Autodesk_Revit
  pageId 7399459
  dailyPageViews 462
  appeared 1997
-
-isOpenSource false
-centralPackageRepositoryCount 0

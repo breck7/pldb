@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id tmg
 name TMG
 appeared 1968
-tags grammarLanguage
 creators Robert M. McClure
+tags grammarLanguage
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TMG_(language)
  related unix pl-i fortran b bcpl yacc
@@ -16,6 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/TMG_(language)
  appeared 1968
 
 hopl https://hopl.info/showlanguage.prx?exp=242
-
-fileType text
-centralPackageRepositoryCount 0

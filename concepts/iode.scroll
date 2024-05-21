@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id iode
 name Iode
 appeared 2015
-tags pl
 creators Danilo Lekovic
+tags pl
 website https://danilolekovic.com/iode-lang/index.html
-country Canada
-originCommunity Simon Fraser University
 
 writtenIn d markdown json make
+repoStats
+ firstCommit 2015
+ commits 153
+ committers 3
+ files 26
+ newestCommit 2020
+country Canada
+originCommunity Simon Fraser University
 
 githubRepo https://github.com/danilolekovic/iode-d
  stars 10
@@ -17,10 +24,3 @@ githubRepo https://github.com/danilolekovic/iode-d
  created 2015
  updated 2020
  description a programming language
-
-repoStats
- firstCommit 2015
- commits 153
- committers 3
- files 26
- newestCommit 2020

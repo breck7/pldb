@@ -1,21 +1,26 @@
 import ../code/conceptPage.scroll
+
 id earl-grey
 name Earl Grey
 appeared 2014
-tags pl
 creators Olivier Breuleux
+tags pl
 website https://web.archive.org/web/20200813015200/http://www.earl-grey.io/
+
+writtenIn javascript markdown json
+compilesTo javascript
+repoStats
+ firstCommit 2014
+ commits 556
+ committers 3
+ files 83
+ newestCommit 2017
 country Canada
 originCommunity https://github.com/breuleux/earl-grey/issues
 
-compilesTo javascript
-
-hasOctals true
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasBinaryNumbers true
-
+pygmentsHighlighter Earl Grey
+ filename javascript.py
+ fileExtensions eg
 example
  count-words(text) =
     counts = new Map()
@@ -34,19 +39,12 @@ githubRepo https://github.com/breuleux/earl-grey
  updated 2017
  description Programming language compiling to JavaScript
 
-repoStats
- firstCommit 2014
- commits 556
- committers 3
- files 83
- newestCommit 2017
-
-pygmentsHighlighter Earl Grey
- filename javascript.py
- fileExtensions eg
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  8150346|Show HN: The Earl Grey language – pattern matching, macros, compiles to JS|2014-08-07 22:01:22 UTC|1407448882|breuleux|1|5
-
-writtenIn javascript markdown json

@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id nydp
 name nydp
 appeared 2014
 tags pl
+
+writtenIn ruby markdown yaml
+repoStats
+ firstCommit 2014
+ commits 984
+ committers 2
+ files 215
+ newestCommit 2024
 country United States
 originCommunity https://github.com/conanite/nydp/issues
 
@@ -23,12 +32,3 @@ githubRepo https://github.com/conanite/nydp
  description nydp - a modern, more dangerous kind of lisp
  forks 0
  issues 0
-
-repoStats
- firstCommit 2014
- commits 984
- committers 2
- files 215
- newestCommit 2024
-
-writtenIn ruby markdown yaml

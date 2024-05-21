@@ -1,10 +1,12 @@
 import ../code/conceptPage.scroll
+
 id context-diff
 name Context Diff
 appeared 1981
 tags diffFormat
-reference https://en.wikipedia.org/wiki/Diff#Context_format
+
 originCommunity University of California, Berkeley
+reference https://en.wikipedia.org/wiki/Diff#Context_format
 
 example
  *** /path/to/original	timestamp

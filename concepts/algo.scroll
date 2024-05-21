@@ -1,13 +1,16 @@
 import ../code/conceptPage.scroll
+
 id algo
 name ALGO
 appeared 1958
 tags pl
+
+centralPackageRepositoryCount 0
 originCommunity Bendix Corporation
 
-hasPrintDebugging true
-
 printToken PRINT
+
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/ALGO
  example
@@ -40,5 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/ALGO
  revisionCount 224
  dailyPageViews 43
  appeared 1958
-
-centralPackageRepositoryCount 0

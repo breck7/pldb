@@ -1,12 +1,32 @@
 import ../code/conceptPage.scroll
+
 id cson
 name CSON
 appeared 2011
-tags dataNotation
 creators Benjamin Lupton
+tags dataNotation
 standsFor CoffeeScript Object Notation
+
+isOpenSource true
+writtenIn json cson coffeescript markdown yaml javascript
+clocExtensions cson
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 208
+ committers 19
+ files 49
+ newestCommit 2023
 country Australia
 originCommunity https://bevry.me/
+
+leachim6 CSON
+ filepath c/CSON.cson
+ fileExtensions cson
+ example
+  {'Hello': 'World'}
+  
 
 githubRepo https://github.com/bevry/cson
  firstCommit 2011
@@ -18,22 +38,6 @@ githubRepo https://github.com/bevry/cson
  description CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
  issues 11
 
-repoStats
- firstCommit 2011
- commits 208
- committers 19
- files 49
- newestCommit 2023
-
-githubLanguage CSON
- fileExtensions cson
- trendingProjectsCount 0
- type data
- aceMode coffee
- codemirrorMode coffeescript
- codemirrorMimeType text/x-coffeescript
- tmScope source.coffee
- repos 16
 githubBigQuery CSON
  repos 2
  users 1
@@ -57,16 +61,12 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
     }
   ]
 
-leachim6 CSON
- filepath c/CSON.cson
+githubLanguage CSON
  fileExtensions cson
- example
-  {'Hello': 'World'}
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-clocExtensions cson
-writtenIn json cson coffeescript markdown yaml javascript
+ trendingProjectsCount 0
+ type data
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
+ repos 16

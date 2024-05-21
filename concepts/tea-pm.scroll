@@ -1,17 +1,27 @@
 import ../code/conceptPage.scroll
+
 id tea-pm
 name tea
 appeared 2021
-tags packageManager
 creators Max Howell
-conceptDescription From the creator of brew, tea is a standalone, binary download for all platforms that puts the entire open source ecosystem at your fingertips. Casually and effortlessly use the latest and greatest or the oldest and most mature from any layer of any stack. Break down the silos between programming communities, throw together scripts that use entirely separate tools and languages and share them with the world with a simple one-liner.All you need is tea.
+tags packageManager
 website https://tea.xyz/
-reference https://tea.xyz/white-paper/
-country United States
-originCommunity tea inc
+conceptDescription From the creator of brew, tea is a standalone, binary download for all platforms that puts the entire open source ecosystem at your fingertips. Casually and effortlessly use the latest and greatest or the oldest and most mature from any layer of any stack. Break down the silos between programming communities, throw together scripts that use entirely separate tools and languages and share them with the world with a simple one-liner.All you need is tea.
 
+isOpenSource true
 writtenIn typescript yaml markdown json toml bourne-shell dockerfile
 influencedBy homebrew-pm
+repoStats
+ firstCommit 2021
+ commits 1034
+ committers 56
+ files 126
+ newestCommit 2024
+country United States
+originCommunity tea inc
+reference https://tea.xyz/white-paper/
+
+twitter https://twitter.com/teaxyz_
 
 githubRepo https://github.com/teaxyz/cli
  firstCommit 2021
@@ -22,13 +32,3 @@ githubRepo https://github.com/teaxyz/cli
  updated 2022
  description the unified package manager (brew2)
  issues 46
-
-twitter https://twitter.com/teaxyz_
-isOpenSource true
-
-repoStats
- firstCommit 2021
- commits 1034
- committers 56
- files 126
- newestCommit 2024

@@ -1,19 +1,38 @@
 import ../code/conceptPage.scroll
+
 id dc
 name Dc
 appeared 1978
 tags pl
 standsFor desk calculator
+
+tryItOnline dc
+fileType text
+wordRank 1109
+rosettaCode http://www.rosettacode.org/wiki/Category:Dc
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Bell Laboratories
+
+rijuRepl https://riju.codes/dc
+ example
+  [Hello, world!] p
+  
+leachim6 Dc
+ filepath d/Dc.dc
+ fileExtensions dc
+ example
+  [Hello World
+  ]n
+  
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Dc_(computer_program)
  example
@@ -68,26 +87,7 @@ wikipedia https://en.wikipedia.org/wiki/Dc_(computer_program)
  dailyPageViews 36
  appeared 1971
 
-leachim6 Dc
- filepath d/Dc.dc
- fileExtensions dc
- example
-  [Hello World
-  ]n
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Dc
-
-rijuRepl https://riju.codes/dc
- example
-  [Hello, world!] p
-  
-tryItOnline dc
-
 hopl https://hopl.info/showlanguage.prx?exp=1957
-
-fileType text
-wordRank 1109
-centralPackageRepositoryCount 0
 
 isbndb 0
 

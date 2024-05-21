@@ -1,14 +1,50 @@
 import ../code/conceptPage.scroll
+
 id coq
 name Coq
 appeared 1989
+creators Thierry Coquand
 tags pl
 website https://coq.inria.fr/
 webRepl https://coq.vercel.app/
+zulip https://coq.zulipchat.com/
+
+isOpenSource true
+writtenIn coq ocaml bourne-shell restructuredtext markdown nix python tex css yaml make html c xml javascript bash dockerfile csv lisp diff
+clocExtensions v
+fileType text
 documentation https://coq.inria.fr/documentation
 devDocumentation https://github.com/coq/coq/blob/master/CONTRIBUTING.md
+rosettaCode http://www.rosettacode.org/wiki/Category:Coq
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1999
+ commits 52117
+ committers 304
+ files 5835
+ newestCommit 2024
 country France
 originCommunity The Coq development team
+
+discourse https://coq.discourse.group/
+pygmentsHighlighter Coq
+ filename theorem.py
+ fileExtensions v
+subreddit https://reddit.com/r/Coq
+ memberCount
+  2022 2066
+twitter https://twitter.com/CoqLang
+
+githubRepo https://github.com/coq/coq
+ stars 4645
+ forks 630
+ subscribers 103
+ created 2011
+ updated 2024
+ description Coq is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs.
+ issues 2616
+
+multiLineCommentTokens (* *)
 
 hasMultiLineComments true
  (* a comment *)
@@ -20,17 +56,6 @@ hasFloats true
 hasIntegers true
 hasBinaryNumbers true
 
-multiLineCommentTokens (* *)
-
-githubRepo https://github.com/coq/coq
- stars 4645
- forks 630
- subscribers 103
- created 2011
- updated 2024
- description Coq is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs. 
- issues 2616
-
 wikipedia https://en.wikipedia.org/wiki/Coq
  related ocaml agda idris c isabelle
  summary In computer science, Coq is an interactive theorem prover. It allows the expression of mathematical assertions, mechanically checks proofs of these assertions, helps to find formal proofs, and extracts a certified program from the constructive proof of its formal specification. Coq works within the theory of the calculus of inductive constructions, a derivative of the calculus of constructions. Coq is not an automated theorem prover but includes automatic theorem proving tactics and various decision procedures. The Association for Computing Machinery rewarded Thierry Coquand, Gérard Pierre Huet, Christine Paulin-Mohring, Bruno Barras, Jean-Christophe Filliâtre, Hugo Herbelin, Chetan Murthy, Yves Bertot and Pierre Castéran with the 2013 ACM Software System Award for Coq.
@@ -41,20 +66,12 @@ wikipedia https://en.wikipedia.org/wiki/Coq
  revisionCount 267
  appeared 1989
 
-githubLanguage Coq
- fileExtensions coq v
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.coq
- repos 5206
+hopl https://hopl.info/showlanguage.prx?exp=6970
+
 githubBigQuery Coq
  repos 1013
  users 793
 
-pygmentsHighlighter Coq
- filename theorem.py
- fileExtensions v
 linguistGrammarRepo https://github.com/mkolosick/Sublime-Coq
  firstCommit 2013
  lastCommit 2018
@@ -106,26 +123,19 @@ linguistGrammarRepo https://github.com/mkolosick/Sublime-Coq
       error @@ LString.s "Invalid card.".
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Coq
-
-zulip https://coq.zulipchat.com/
-discourse https://coq.discourse.group/
-subreddit https://reddit.com/r/Coq
- memberCount
-  2022 2066
-
-hopl https://hopl.info/showlanguage.prx?exp=6970
-
-twitter https://twitter.com/CoqLang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  2013-12-06T00:00:01Z|The MIT Press|Certified Programming with Dependent Types: A Pragmatic Introduction to the Coq Proof Assistant (The MIT Press)|Chlipala, Adam|9780262026659
  2022|MIT Press|Certified Programming with Dependent Types: A Pragmatic Introduction to the Coq Proof Assistant|Chlipala, Adam|9780262545747
  2017|ISTE Press - Elsevier|Computer Arithmetic and Formal Proofs: Verifying Floating-point Algorithms with the Coq System (Computer Engineering)|Boldo, Sylvie and Melquiond, Guillaume|9780081011706
+
+githubLanguage Coq
+ fileExtensions coq v
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.coq
+ repos 5206
 
 semanticScholar 27
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -156,13 +166,3 @@ semanticScholar 27
  2008|Programming with Effects in Coq|10.1007/978-3-540-70594-9_3|1|0|J. G. Morrisett|c890394f4a24dafbaae3546839efb5bc3ba15106
  2018|Type- Theoretical Foundations of the Derivation System in Coq|10.1109/SAIC.2018.8516885|1|0|Vasyl Lenko and V. Pasichnyk and N. Kunanets and Y. Shcherbyna|c22ba6504f78cedede886be7bee43165da9f58fa
  2015|Interactive typed tactic programming in the Coq proof assistant|10.22028/D291-26598|1|0|Beta Ziliani|4b34dede898a0e7108beb16f1e0aba20bd16d4f5
-
-creators Thierry Coquand
-repoStats
- firstCommit 1999
- commits 52117
- committers 304
- files 5835
- newestCommit 2024
-clocExtensions v
-writtenIn coq ocaml bourne-shell restructuredtext markdown nix python tex css yaml make html c xml javascript bash dockerfile csv lisp diff

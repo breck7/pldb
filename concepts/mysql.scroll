@@ -1,18 +1,50 @@
 import ../code/conceptPage.scroll
+
 id mysql
 name MySQL
 appeared 1995
-tags queryLanguage
 creators David Axmark and Michael Widenius
+tags queryLanguage
 website http://www.mysql.com/
+
+isOpenSource true
+officialBlogUrl https://dev.mysql.com/blog-archive/
+releaseNotesUrl https://dev.mysql.com/doc/relnotes/mysql/8.0/en/
+fileType text
+wordRank 3351
 documentation https://dev.mysql.com/doc/
 emailList http://mysql.babo.ist/#/en/mailing-lists.html
+faqPageUrl https://www.mysql.com/industry/faq/
+downloadPageUrl https://www.mysql.com/downloads/
+antlr https://github.com/antlr/grammars-v4/tree/master/mysql
+monaco mysql
+rosettaCode http://www.rosettacode.org/wiki/Category:MySQL
+centralPackageRepositoryCount 0
 originCommunity Oracle
-domainName mysql.com
- registered 1999
- awisRank
-  2022 1475
-releaseNotesUrl https://dev.mysql.com/doc/relnotes/mysql/8.0/en/
+
+pygmentsHighlighter MySQL
+ filename sql.py
+rijuRepl https://riju.codes/mysql
+ example
+  SELECT 'Hello, world!';
+  
+twitter https://twitter.com/mysql
+leachim6 MySQL
+ filepath m/MySQL.sql
+ fileExtensions sql
+ example
+  SELECT "Hello World";
+  
+
+meetup https://www.meetup.com/topics/mysql
+ memberCount 276432
+ groupCount 644
+keywords ACCESSIBLE ADD ALL ALTER ANALYZE AND AS ASC ASENSITIVE BEFORE BETWEEN BIGINT BINARY BLOB BOTH BY CALL CASCADE CASE CHANGE CHAR CHARACTER CHECK COLLATE COLUMN CONDITION CONSTRAINT CONTINUE CONVERT CREATE CROSS CUBE CUME_DIST CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DATABASE DATABASES DAY_HOUR DAY_MICROSECOND DAY_MINUTE DAY_SECOND DEC DECIMAL DECLARE DEFAULT DELAYED DELETE DENSE_RANK DESC DESCRIBE DETERMINISTIC DISTINCT DISTINCTROW DIV DOUBLE DROP DUAL EACH ELSE ELSEIF EMPTY ENCLOSED ESCAPED EXCEPT EXISTS EXIT EXPLAIN FALSE FETCH FIRST_VALUE FLOAT FLOAT4 FLOAT8 FOR FORCE FOREIGN FROM FULLTEXT FUNCTION GENERATED GET GRANT GROUP GROUPING GROUPS HAVING HIGH_PRIORITY HOUR_MICROSECOND HOUR_MINUTE HOUR_SECOND IF IGNORE IN INDEX INFILE INNER INOUT INSENSITIVE INSERT INT INT1 INT2 INT3 INT4 INT8 INTEGER INTERVAL INTO IO_AFTER_GTIDS IO_BEFORE_GTIDS IS ITERATE JOIN JSON_TABLE KEY KEYS KILL LAG LAST_VALUE LATERAL LEAD LEADING LEAVE LEFT LIKE LIMIT LINEAR LINES LOAD LOCALTIME LOCALTIMESTAMP LOCK LONG LONGBLOB LONGTEXT LOOP LOW_PRIORITY MASTER_BIND MASTER_SSL_VERIFY_SERVER_CERT MATCH MAXVALUE MEDIUMBLOB MEDIUMINT MEDIUMTEXT MIDDLEINT MINUTE_MICROSECOND MINUTE_SECOND MOD MODIFIES NATURAL NOT NO_WRITE_TO_BINLOG NTH_VALUE NTILE NULL NUMERIC OF ON OPTIMIZE OPTIMIZER_COSTS OPTION OPTIONALLY OR ORDER OUT OUTER OUTFILE OVER PARTITION PERCENT_RANK PRECISION PRIMARY PROCEDURE PURGE RANGE RANK READ READS READ_WRITE REAL RECURSIVE REFERENCES REGEXP RELEASE RENAME REPEAT REPLACE REQUIRE RESIGNAL RESTRICT RETURN REVOKE RIGHT RLIKE ROW ROWS ROW_NUMBER SCHEMA SCHEMAS SECOND_MICROSECOND SELECT SENSITIVE SEPARATOR SET SHOW SIGNAL SMALLINT SPATIAL SPECIFIC SQL SQLEXCEPTION SQLSTATE SQLWARNING SQL_BIG_RESULT SQL_CALC_FOUND_ROWS SQL_SMALL_RESULT SSL STARTING STORED STRAIGHT_JOIN SYSTEM TABLE TERMINATED THEN TINYBLOB TINYINT TINYTEXT TO TRAILING TRIGGER TRUE UNDO UNION UNIQUE UNLOCK UNSIGNED UPDATE USAGE USE USING UTC_DATE UTC_TIME UTC_TIMESTAMP VALUES VARBINARY VARCHAR VARCHARACTER VARYING VIRTUAL WHEN WHERE WHILE WINDOW WITH WRITE XOR YEAR_MONTH ZEROFILL
+
+lineCommentToken --
+multiLineCommentTokens /* */
+stringToken "
+booleanTokens TRUE FALSE
 
 hasLineComments true
  -- A comment
@@ -34,12 +66,6 @@ hasIntegers true
 hasBinaryNumbers true
  -- b'[01]+'
 
-lineCommentToken --
-multiLineCommentTokens /* */
-stringToken "
-booleanTokens TRUE FALSE
-keywords ACCESSIBLE ADD ALL ALTER ANALYZE AND AS ASC ASENSITIVE BEFORE BETWEEN BIGINT BINARY BLOB BOTH BY CALL CASCADE CASE CHANGE CHAR CHARACTER CHECK COLLATE COLUMN CONDITION CONSTRAINT CONTINUE CONVERT CREATE CROSS CUBE CUME_DIST CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DATABASE DATABASES DAY_HOUR DAY_MICROSECOND DAY_MINUTE DAY_SECOND DEC DECIMAL DECLARE DEFAULT DELAYED DELETE DENSE_RANK DESC DESCRIBE DETERMINISTIC DISTINCT DISTINCTROW DIV DOUBLE DROP DUAL EACH ELSE ELSEIF EMPTY ENCLOSED ESCAPED EXCEPT EXISTS EXIT EXPLAIN FALSE FETCH FIRST_VALUE FLOAT FLOAT4 FLOAT8 FOR FORCE FOREIGN FROM FULLTEXT FUNCTION GENERATED GET GRANT GROUP GROUPING GROUPS HAVING HIGH_PRIORITY HOUR_MICROSECOND HOUR_MINUTE HOUR_SECOND IF IGNORE IN INDEX INFILE INNER INOUT INSENSITIVE INSERT INT INT1 INT2 INT3 INT4 INT8 INTEGER INTERVAL INTO IO_AFTER_GTIDS IO_BEFORE_GTIDS IS ITERATE JOIN JSON_TABLE KEY KEYS KILL LAG LAST_VALUE LATERAL LEAD LEADING LEAVE LEFT LIKE LIMIT LINEAR LINES LOAD LOCALTIME LOCALTIMESTAMP LOCK LONG LONGBLOB LONGTEXT LOOP LOW_PRIORITY MASTER_BIND MASTER_SSL_VERIFY_SERVER_CERT MATCH MAXVALUE MEDIUMBLOB MEDIUMINT MEDIUMTEXT MIDDLEINT MINUTE_MICROSECOND MINUTE_SECOND MOD MODIFIES NATURAL NOT NO_WRITE_TO_BINLOG NTH_VALUE NTILE NULL NUMERIC OF ON OPTIMIZE OPTIMIZER_COSTS OPTION OPTIONALLY OR ORDER OUT OUTER OUTFILE OVER PARTITION PERCENT_RANK PRECISION PRIMARY PROCEDURE PURGE RANGE RANK READ READS READ_WRITE REAL RECURSIVE REFERENCES REGEXP RELEASE RENAME REPEAT REPLACE REQUIRE RESIGNAL RESTRICT RETURN REVOKE RIGHT RLIKE ROW ROWS ROW_NUMBER SCHEMA SCHEMAS SECOND_MICROSECOND SELECT SENSITIVE SEPARATOR SET SHOW SIGNAL SMALLINT SPATIAL SPECIFIC SQL SQLEXCEPTION SQLSTATE SQLWARNING SQL_BIG_RESULT SQL_CALC_FOUND_ROWS SQL_SMALL_RESULT SSL STARTING STORED STRAIGHT_JOIN SYSTEM TABLE TERMINATED THEN TINYBLOB TINYINT TINYTEXT TO TRAILING TRIGGER TRUE UNDO UNION UNIQUE UNLOCK UNSIGNED UPDATE USAGE USE USING UTC_DATE UTC_TIME UTC_TIMESTAMP VALUES VARBINARY VARCHAR VARCHARACTER VARYING VIRTUAL WHEN WHERE WHILE WINDOW WITH WRITE XOR YEAR_MONTH ZEROFILL
-
 wikipedia https://en.wikipedia.org/wiki/MySQL
  related c linux solaris freebsd sql perl php python wordpress mybb drupal yacc mariadb sql-psm unicode csv postgresql csharp visual-basic asp utf-8
  summary MySQL (officially pronounced as  "My S-Q-L",) is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation. For proprietary use, several paid editions are available, and offer additional functionality. MySQL is a central component of the LAMP open-source web application software stack (and other "AMP" stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python". Applications that use the MySQL database include: TYPO3, MODx, Joomla, WordPress, phpBB, MyBB, and Drupal. MySQL is also used in many high-profile, large-scale websites, including Google (though not for searches), Facebook, Twitter, Flickr, and YouTube.
@@ -50,49 +76,10 @@ wikipedia https://en.wikipedia.org/wiki/MySQL
  revisionCount 3746
  appeared 1995
 
-antlr https://github.com/antlr/grammars-v4/tree/master/mysql
-monaco mysql
-pygmentsHighlighter MySQL
- filename sql.py
-
-leachim6 MySQL
- filepath m/MySQL.sql
- fileExtensions sql
- example
-  SELECT "Hello World";
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:MySQL
-
-rijuRepl https://riju.codes/mysql
- example
-  SELECT 'Hello, world!';
-  
-
-indeedJobs MySQL developer
- 2022 21490
-linkedInSkill mysql
- 2018 2597646
-officialBlogUrl https://dev.mysql.com/blog-archive/
-faqPageUrl https://www.mysql.com/industry/faq/
-downloadPageUrl https://www.mysql.com/downloads/
-
-meetup https://www.meetup.com/topics/mysql
- memberCount 276432
- groupCount 644
-
-twitter https://twitter.com/mysql
-fileType text
-wordRank 3351
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- MySQL Language Reference|2004|MySQL|296747|3.71|7|0
- PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
- PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
- MySQL Stored Procedure Programming: Building High-Performance Web Applications in MySQL|2006|Guy Harrison|43055|3.67|48|3
- MySQL Administrator's Guide and Language Reference|2006|MySQL AB|42670|3.63|19|2
+domainName mysql.com
+ registered 1999
+ awisRank
+  2022 1475
 
 isbndb 163
  year|publisher|title|authors|isbn13
@@ -260,6 +247,11 @@ isbndb 163
  2019-12-02|Paul Gibbs|Php Tutorials: Programming With Php And Mysql: Learn Php 7 With Mysql Databases For Web Programming|Mr Paul Gibbs|9780992869748
  20140220|Emereo|MySQL 323 Success Secrets - 323 Most Asked Questions On MySQL - What You Need To Know|Karen Rich|9781488536373
 
+indeedJobs MySQL developer
+ 2022 21490
+linkedInSkill mysql
+ 2018 2597646
+
 semanticScholar 16
  year|title|doi|citations|influentialCitations|authors|paperId
  2014|The Development of Web Based Expert System for Diagnosing Children Diseases Using PHP and MySQL|10.14445/22312803/IJCTT-V10P134|12|0|Hustina waty and Randy Aprianggi|e4b687662191d88ae1249632f281317aca509e55
@@ -278,3 +270,11 @@ semanticScholar 16
  2016|Developing Plugin e-DDC as an Additional Application for Senayan Library Management System with PHP Language Programming and MySQL Database|10.20473/RLJ.V1I3.2124|1|0|Mohamad Rotmianto and E. Wahyudi|e9f2994a961c188db422c61206970134412286fa
  2020|Indonesian Language Portfolio in Elementary Schools Based on C++, C# and MySQL Server|10.32628/IJSRST207643|1|0|Ferril Irham Muzaki|bbc1d72cc1724d8fb228c0f9aa2ca0e6f976e23a
  2020|Implementation of the Electre (Elimination Et Choix Traduisan La Realite) Method in a Healthy Food Menu Decision Support System for Toddlers in the Sasak Area Health Center Pasisie Using the Php And Databse Mysql Programming Language|10.35134/KOMTEKINFO.V7I1.1194|1|0|Mardison Mardison and Syafrika Deni Rizki and L. Rani and Agung Ramadhanu and R. Witri|3144f67d9059167b99ac70b9c5fd369e38955e4b
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ MySQL Language Reference|2004|MySQL|296747|3.71|7|0
+ PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
+ PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
+ MySQL Stored Procedure Programming: Building High-Performance Web Applications in MySQL|2006|Guy Harrison|43055|3.67|48|3
+ MySQL Administrator's Guide and Language Reference|2006|MySQL AB|42670|3.63|19|2

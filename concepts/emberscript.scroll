@@ -1,14 +1,24 @@
 import ../code/conceptPage.scroll
+
 id emberscript
 name EmberScript
 appeared 2012
-tags pl
 creators Michael Ficarra and Gordon L. Hempton
+tags pl
 website http://emberscript.com/
+
+isOpenSource true
+writtenIn javascript coffeescript ruby make json markdown yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 749
+ committers 35
+ files 82
+ newestCommit 2015
 country Various
 originCommunity https://github.com/ghempton/ember-script/issues
-domainName emberscript.com
- registered 2012
 
 githubRepo https://github.com/ghempton/ember-script
  firstCommit 2012
@@ -20,22 +30,9 @@ githubRepo https://github.com/ghempton/ember-script
  description Ember-infused CoffeeScript
  issues 28
 
-repoStats
- firstCommit 2012
- commits 749
- committers 35
- files 82
- newestCommit 2015
+domainName emberscript.com
+ registered 2012
 
-githubLanguage EmberScript
- fileExtensions em emberscript
- trendingProjectsCount 0
- type programming
- aceMode coffee
- codemirrorMode coffeescript
- codemirrorMimeType text/x-coffeescript
- tmScope source.coffee
- repos 206
 githubBigQuery EmberScript
  repos 459
  users 417
@@ -72,8 +69,12 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
   
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn javascript coffeescript ruby make json markdown yaml
+githubLanguage EmberScript
+ fileExtensions em emberscript
+ trendingProjectsCount 0
+ type programming
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
+ repos 206

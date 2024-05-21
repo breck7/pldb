@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id casio-basic
 name Casio BASIC
 appeared 2006
 tags pl
+
+centralPackageRepositoryCount 0
 country Japan
 originCommunity Casio Computer Co., Ltd
 
-hasStrings true
- "Hello world"
+leachim6 Casio BASIC
+ filepath c/Casio BASIC
+ example
+  "Hello World"
+  
 
 stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Casio_BASIC
  related basic
@@ -19,13 +28,5 @@ wikipedia https://en.wikipedia.org/wiki/Casio_BASIC
  pageId 6475278
  revisionCount 57
  dailyPageViews 26
-
-leachim6 Casio BASIC
- filepath c/Casio BASIC
- example
-  "Hello World"
-  
-
-centralPackageRepositoryCount 0
 
 isbndb 0

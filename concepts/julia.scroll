@@ -1,20 +1,90 @@
 import ../code/conceptPage.scroll
+
 id julia
 name Julia
 appeared 2012
-tags pl
 creators Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah
+tags pl
 website http://julialang.org/
-documentation https://docs.julialang.org/en/v1/
+
+isOpenSource true
+writtenIn julia markdown toml c make cpp llvmir bourne-shell diff xml scheme lisp assembly-language tex yaml json objective-c python svg pascal clojure d css dockerfile
+tryItOnline julia
+officialBlogUrl https://julialang.org/blog/
 fileExtensions jl
+releaseNotesUrl https://docs.julialang.org/en/v1/NEWS/
+visualParadigm false
+clocExtensions jl
+fileType text
+wordRank 7592
+documentation https://docs.julialang.org/en/v1/
+eventsPageUrl https://discourse.julialang.org/c/community/events/56
+faqPageUrl https://discourse.julialang.org/faq
+downloadPageUrl https://julialang.org/downloads/
+monaco julia
+codeMirror julia
+rosettaCode http://www.rosettacode.org/wiki/Category:Julia
+quineRelay Julia
+packageRepository https://pkg.julialang.org/
+ubuntuPackage julia
+repoStats
+ firstCommit 2009
+ commits 66736
+ committers 1858
+ files 1623
+ newestCommit 2024
 country Various
 originCommunity https://github.com/JuliaLang
-domainName julialang.org
- awisRank
-  2022 60667
-releaseNotesUrl https://docs.julialang.org/en/v1/NEWS/
+projectEuler Julia
+ memberCount
+  2019 331
+  2022 700
 
-visualParadigm false
+helloWorldCollection Julia
+ # Hello world in Julia
+ 
+ println("Hello, World!")
+pygmentsHighlighter Julia
+ filename julia.py
+ fileExtensions jl
+rijuRepl https://riju.codes/julia
+ example
+  println("Hello, world!")
+  
+subreddit https://reddit.com/r/Julia
+ memberCount
+  2017 3660
+  2022 20624
+twitter https://twitter.com/julialanguage
+leachim6 Julia
+ filepath j/Julia.jl
+ fileExtensions jl
+ example
+  println("Hello World")
+  
+gource https://www.youtube.com/watch?v=n3chDPl19jI
+languageServerProtocolProject https://github.com/JuliaEditorSupport/LanguageServer.jl
+ writtenIn julia
+
+meetup https://www.meetup.com/topics/julia
+ memberCount 15211
+ groupCount 36
+keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
+githubRepo https://github.com/JuliaLang/julia
+ stars 41515
+ forks 5100
+ subscribers 952
+ created 2011
+ updated 2023
+ description The Julia Programming Language
+ issues 4420
+
+lineCommentToken #
+multiLineCommentTokens #= =#
+printToken print
+printToken println
+stringToken "
+booleanTokens true false
 
 hasMacros true
  # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
@@ -107,31 +177,7 @@ hasFloats true
 hasBinaryNumbers true
  # 0b[01]+((_[01]+)+)?
 
-lineCommentToken #
-multiLineCommentTokens #= =#
-printToken print
-printToken println
-stringToken "
-booleanTokens true false
-keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
-
-gource https://www.youtube.com/watch?v=n3chDPl19jI
-githubRepo https://github.com/JuliaLang/julia
- stars 41515
- forks 5100
- subscribers 952
- created 2011
- updated 2023
- description The Julia Programming Language
- issues 4420
-
-repoStats
- firstCommit 2009
- commits 66736
- committers 1858
- files 1623
- newestCommit 2024
-
+jupyterKernel https://github.com/JuliaLang/IJulia.jl
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  example
   julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
@@ -147,29 +193,18 @@ wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  appeared 2012
  fileExtensions jl
 
-githubLanguage Julia
- fileExtensions jl
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  JuliaLang julia https://github.com/JuliaLang.png https://github.com/JuliaLang/julia Julia #a270ba 23614 3524 510 "The Julia Language: A fresh approach to technical computing."
-  JuliaLang IJulia.jl https://github.com/JuliaLang.png https://github.com/JuliaLang/IJulia.jl Julia #a270ba 1780 298 38 "Julia kernel for Jupyter"
- trendingProjectsCount 3
- type programming
- interpreters julia
- aceMode julia
- codemirrorMode julia
- codemirrorMimeType text/x-julia
- tmScope source.julia
- repos 53507
+tiobe Julia
+ currentRank 35
+pypl Julia
+
+domainName julialang.org
+ awisRank
+  2022 60667
+
 githubBigQuery Julia
  repos 5895
  users 2536
 
-monaco julia
-codeMirror julia
-pygmentsHighlighter Julia
- filename julia.py
- fileExtensions jl
 linguistGrammarRepo https://github.com/JuliaEditorSupport/atom-language-julia
  firstCommit 2015
  lastCommit 2018
@@ -238,65 +273,6 @@ linguistGrammarRepo https://github.com/JuliaEditorSupport/atom-language-julia
   
   print_paths(STDOUT, paths)
   
-languageServerProtocolProject https://github.com/JuliaEditorSupport/LanguageServer.jl
- writtenIn julia
-
-projectEuler Julia
- memberCount
-  2019 331
-  2022 700
-helloWorldCollection Julia
- # Hello world in Julia
- 
- println("Hello, World!")
-leachim6 Julia
- filepath j/Julia.jl
- fileExtensions jl
- example
-  println("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Julia
-quineRelay Julia
-
-rijuRepl https://riju.codes/julia
- example
-  println("Hello, world!")
-  
-tryItOnline julia
-
-indeedJobs julia engineer
- 2017 85
-stackOverflowSurvey
- 2021
-  users 1068
-  medianSalary 65228
-  fans 2445
-  percentageUsing 0.01
-officialBlogUrl https://julialang.org/blog/
-eventsPageUrl https://discourse.julialang.org/c/community/events/56
-faqPageUrl https://discourse.julialang.org/faq
-downloadPageUrl https://julialang.org/downloads/
-
-subreddit https://reddit.com/r/Julia
- memberCount
-  2017 3660
-  2022 20624
-meetup https://www.meetup.com/topics/julia
- memberCount 15211
- groupCount 36
-
-tiobe Julia
- currentRank 35
-pypl Julia
-
-packageRepository https://pkg.julialang.org/
-
-twitter https://twitter.com/julialanguage
-ubuntuPackage julia
-jupyterKernel https://github.com/JuliaLang/IJulia.jl
-fileType text
-wordRank 7592
-isOpenSource true
 
 isbndb 22
  year|publisher|title|authors|isbn13
@@ -322,6 +298,30 @@ isbndb 22
  2018|Packt Publishing|Julia 1.0 Programming Cookbook: Over 100 numerical and distributed computing recipes for your daily data science workﬂow|Kamiński, Bogumił and Szufel, Przemysław|9781788998826
  2017-11-27T00:00:01Z|Apress|Beginning Julia Programming: For Engineers and Scientists|Nagar, Sandeep|9781484231708
  2018|Springer|Numerical Linear Algebra: A Concise Introduction with MATLAB and Julia (Springer Undergraduate Mathematics Series)|Bornemann, Folkmar|9783319742229
+
+githubLanguage Julia
+ fileExtensions jl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  JuliaLang julia https://github.com/JuliaLang.png https://github.com/JuliaLang/julia Julia #a270ba 23614 3524 510 "The Julia Language: A fresh approach to technical computing."
+  JuliaLang IJulia.jl https://github.com/JuliaLang.png https://github.com/JuliaLang/IJulia.jl Julia #a270ba 1780 298 38 "Julia kernel for Jupyter"
+ trendingProjectsCount 3
+ type programming
+ interpreters julia
+ aceMode julia
+ codemirrorMode julia
+ codemirrorMimeType text/x-julia
+ tmScope source.julia
+ repos 53507
+
+indeedJobs julia engineer
+ 2017 85
+stackOverflowSurvey
+ 2021
+  users 1068
+  medianSalary 65228
+  fans 2445
+  percentageUsing 0.01
 
 semanticScholar 35
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -361,6 +361,3 @@ semanticScholar 35
  2021|Julia Language in Computational Mechanics: A New Competitor|10.1007/s11831-021-09636-0|1|0|Lei Xiao and Gang Mei and Ning Xi and F. Piccialli|1ef389a28b48ff11e8da8bb26a79ce7c0853e841
  2019|The Usage of Julia Programming in Grounding Grids Simulations : An alternative to MATLAB and Python|10.1109/sipda47030.2019.8951702|1|0|Rodolfo A. R. Moura and M. Schroeder and S. J. S. Silva and E. Nepomuceno and P. H. N. Vieira and A. Lima|183303bc57f9f6b3c05c5828dd34a02b19a4784b
  2018|An Overview of the Julia Programming Language|10.1145/3277104.3277119|1|0|Tyler A. Cabutto and Sean P. Heeney and S. Ault and Guifen Mao and Jin Wang|3e62ce30a835230fa8d51c053e4bd2541cfc5fb8
-
-clocExtensions jl
-writtenIn julia markdown toml c make cpp llvmir bourne-shell diff xml scheme lisp assembly-language tex yaml json objective-c python svg pascal clojure d css dockerfile

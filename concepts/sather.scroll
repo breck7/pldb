@@ -1,23 +1,47 @@
 import ../code/conceptPage.scroll
+
 id sather
 name Sather
 appeared 1990
-tags pl
 creators Steve Omohundro
+tags pl
 website https://www.gnu.org/software/sather/
+
+visualParadigm false
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Sather
+centralPackageRepositoryCount 0
 country United States and New Zealand
 originCommunity University of California, Berkeley and University of Waikato and GNU project
 
-visualParadigm false
+helloWorldCollection Sather
+ -- Hello World in Sather
+ 
+     class HELLO is
+        main is #OUT + "Hello World!\n" end
+     end
+ 
+leachim6 Sather
+ filepath s/Sather.sa
+ fileExtensions sa
+ example
+  class MAIN is
+     main is
+        loop
+           #OUT + "Hello World\n"
+        end
+     end
+  end
+  
+
+lineCommentToken --
+printToken #OUT
 
 hasComments true
 hasLineComments true
  -- A comment
 hasPrintDebugging true
 hasSemanticIndentation false
-
-lineCommentToken --
-printToken #OUT
 
 wikipedia https://en.wikipedia.org/wiki/Sather
  example
@@ -41,32 +65,8 @@ wikipedia https://en.wikipedia.org/wiki/Sather
  revisionCount 96
  appeared 1990
 
-helloWorldCollection Sather
- -- Hello World in Sather
- 
-     class HELLO is
-        main is #OUT + "Hello World!\n" end
-     end
- 
-leachim6 Sather
- filepath s/Sather.sa
- fileExtensions sa
- example
-  class MAIN is
-     main is
-        loop
-           #OUT + "Hello World\n"
-        end
-     end
-  end
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Sather
-
-tiobe Sather
 hopl https://hopl.info/showlanguage.prx?exp=1659
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe Sather
 
 isbndb 1
  year|publisher|title|authors|isbn13

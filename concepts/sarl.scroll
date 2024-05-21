@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
+
 id sarl
 name SARL
 appeared 2013
 tags pl
 website http://www.sarl.io
+
 country Australia and France
 originCommunity https://github.com/sarl
-domainName sarl.io
- registered 2013
+
+pygmentsHighlighter SARL
+ filename jvm.py
+ fileExtensions sarl
 
 hasHexadecimals true
 hasFloats true
@@ -15,8 +19,7 @@ hasIntegers true
 hasMultiLineComments true
 hasComments true
 
-pygmentsHighlighter SARL
- filename jvm.py
- fileExtensions sarl
+domainName sarl.io
+ registered 2013
 
 isbndb 0

@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id fpgac
 name FpgaC
 appeared 1996
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Canada
 originCommunity University of Toronto
 
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/FpgaC
  revisionCount 25
  dailyPageViews 6
  appeared 2005
-
-isOpenSource true
-centralPackageRepositoryCount 0

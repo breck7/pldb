@@ -1,10 +1,22 @@
 import ../code/conceptPage.scroll
+
 id f-script
 name F-Script
 appeared 2009
-tags pl
 creators Philippe Mougin
+tags pl
 website https://github.com/pmougin/F-Script
+
+isOpenSource true
+writtenIn objective-c xml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 13
+ committers 2
+ files 442
+ newestCommit 2013
 country United States
 originCommunity https://github.com/pmougin
 
@@ -16,13 +28,6 @@ githubRepo https://github.com/pmougin/f-script
  created 2009
  updated 2022
  issues 2
-
-repoStats
- firstCommit 2009
- commits 13
- committers 2
- files 442
- newestCommit 2013
 
 wikipedia https://en.wikipedia.org/wiki/F-Script_(programming_language)
  related x86-isa smalltalk apl
@@ -36,10 +41,4 @@ wikipedia https://en.wikipedia.org/wiki/F-Script_(programming_language)
 
 hopl https://hopl.info/showlanguage.prx?exp=5441
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn objective-c xml

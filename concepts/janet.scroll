@@ -1,27 +1,22 @@
 import ../code/conceptPage.scroll
+
 id janet
 name janet
 appeared 2018
-tags pl
 creators Calvin Rose
+tags pl
 website https://janet-lang.org
+
+writtenIn c yaml bourne-shell markdown make meson svg assembly-language
+clocExtensions janet
+repoStats
+ firstCommit 2017
+ commits 4325
+ committers 119
+ files 180
+ newestCommit 2024
 country Czech Republic and New Zealand and United States
 originCommunity https://github.com/janet-lang
-domainName janet-lang.org
- registered 2018
- awisRank
-  2022 3137783
-
-hasComments true
-hasMultiLineComments false
-hasPrintDebugging true
-hasFloats true
-hasIntegers true
-hasBooleans true
-hasConditionals true
-hasLists true
-hasAssignment true
-hasFunctions true
 
 example
  import joy)
@@ -44,12 +39,25 @@ githubRepo https://github.com/janet-lang/janet
  description A dynamic language and bytecode vm
  issues 31
 
-repoStats
- firstCommit 2017
- commits 4325
- committers 119
- files 180
- newestCommit 2024
+hasComments true
+hasMultiLineComments false
+hasPrintDebugging true
+hasFloats true
+hasIntegers true
+hasBooleans true
+hasConditionals true
+hasLists true
+hasAssignment true
+hasFunctions true
+
+domainName janet-lang.org
+ registered 2018
+ awisRank
+  2022 3137783
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 19171121|Janet is a Lisp for scripting, or embedding in other programs|https://janet-lang.org/|2019-02-15 14:26:40 UTC|1550240800|rainygold|0|3
 
 githubLanguage Janet
  type programming
@@ -60,10 +68,3 @@ githubLanguage Janet
  codemirrorMimeType text/x-scheme
  tmScope source.janet
  repos 88
-
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 19171121|Janet is a Lisp for scripting, or embedding in other programs|https://janet-lang.org/|2019-02-15 14:26:40 UTC|1550240800|rainygold|0|3
-
-clocExtensions janet
-writtenIn c yaml bourne-shell markdown make meson svg assembly-language

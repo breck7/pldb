@@ -1,13 +1,41 @@
 import ../code/conceptPage.scroll
+
 id pov-ray-sdl
 name POV-Ray SDL
 appeared 1991
-tags pl
 creators Chris Cason
-reference http://www.povray.org/documentation/view/3.6.0/224/
+tags pl
 aka POVRay
+
+writtenIn cpp c html xml ini bourne-shell make m4 markdown pascal yaml ada assembly-language cmake csharp css perl smalltalk sas awk python wasm powershell javascript diff php
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 1029
+ committers 21
+ files 11792
+ newestCommit 2021
 country United States
 originCommunity Persistence of Vision Raytracer Pty. Ltd
+reference http://www.povray.org/documentation/view/3.6.0/224/
+
+pygmentsHighlighter POVRay
+ filename graphics.py
+ fileExtensions pov inc
+
+githubRepo https://github.com/POV-Ray/povray
+ firstCommit 2013
+ stars 1149
+ forks 273
+ subscribers 97
+ created 2013
+ updated 2022
+ description The Persistence of Vision Raytracer: http://www.povray.org/
+ issues 195
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -22,41 +50,10 @@ hasFloats true
 hasIntegers true
  // [0-9]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-
-githubRepo https://github.com/POV-Ray/povray
- firstCommit 2013
- stars 1149
- forks 273
- subscribers 97
- created 2013
- updated 2022
- description The Persistence of Vision Raytracer: http://www.povray.org/
- issues 195
-
-repoStats
- firstCommit 2013
- commits 1029
- committers 21
- files 11792
- newestCommit 2021
-
-githubLanguage POV-Ray SDL
- fileExtensions pov inc
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.pov-ray sdl
- aliases pov-ray or povray
- repos 3
 githubBigQuery POV-Ray SDL
  repos 493
  users 482
 
-pygmentsHighlighter POVRay
- filename graphics.py
- fileExtensions pov inc
 linguistGrammarRepo https://github.com/c-lipka/language-povray
  sampleCount 12
  example
@@ -135,7 +132,11 @@ linguistGrammarRepo https://github.com/c-lipka/language-povray
   
   /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-fileType text
-centralPackageRepositoryCount 0
-
-writtenIn cpp c html xml ini bourne-shell make m4 markdown pascal yaml ada assembly-language cmake csharp css perl smalltalk sas awk python wasm powershell javascript diff php
+githubLanguage POV-Ray SDL
+ fileExtensions pov inc
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pov-ray sdl
+ aliases pov-ray or povray
+ repos 3

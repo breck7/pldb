@@ -1,33 +1,50 @@
 import ../code/conceptPage.scroll
+
 id squirrel
 name Squirrel
 appeared 2003
-tags pl
 creators Alberto Demichelis
+tags pl
 website http://squirrel-lang.org/
-documentation http://squirrel-lang.org/squirreldoc/
+
+isOpenSource true
+writtenIn restructuredtext cpp squirrel make cmake c yaml python
+tryItOnline squirrel
 fileExtensions nut
+clocExtensions nut
+fileType text
+documentation http://squirrel-lang.org/squirreldoc/
+rosettaCode http://www.rosettacode.org/wiki/Category:Squirrel
+quineRelay Squirrel
+centralPackageRepositoryCount 0
+ubuntuPackage squirrel3
+repoStats
+ firstCommit 2015
+ commits 294
+ committers 50
+ files 148
+ newestCommit 2024
 country Italy
 originCommunity https://sourceforge.net/p/squirrel/bugs
-domainName squirrel-lang.org
- registered 2005
- awisRank
-  2022 2975006
-  2017 2282029
+projectEuler Squirrel
+ memberCount
+  2019 34
+  2022 42
 
-writtenIn restructuredtext cpp squirrel make cmake c yaml python
-
-hasComments true
-hasLineComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken //
-printToken print
-stringToken "
+helloWorldCollection Squirrel
+ #!/usr/bin/squirrelsh
+ // Hello world in Squirrel
+ printl("Hello, world!");
+rijuRepl https://riju.codes/squirrel
+ example
+  print("Hello, world!\n")
+  
+twitter https://twitter.com/squirrellang
+leachim6 Squirrel
+ filepath s/Squirrel.nut
+ fileExtensions nut
+ example
+  print("Hello World");
 
 githubRepo https://github.com/albertodemichelis/squirrel
  stars 706
@@ -39,12 +56,17 @@ githubRepo https://github.com/albertodemichelis/squirrel
  description Official repository for the programming language Squirrel
  issues 80
 
-repoStats
- firstCommit 2015
- commits 294
- committers 50
- files 148
- newestCommit 2024
+lineCommentToken //
+printToken print
+stringToken "
+
+hasComments true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
  example
@@ -90,15 +112,14 @@ wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
  appeared 2003
  fileExtensions nut
 
-githubLanguage Squirrel
- fileExtensions nut
- trendingProjectsCount 0
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.nut
- repos 1513
+tiobe Squirrel
+
+domainName squirrel-lang.org
+ registered 2005
+ awisRank
+  2022 2975006
+  2017 2282029
+
 githubBigQuery Squirrel
  repos 433
  users 284
@@ -168,38 +189,16 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   newplayer.MoveTo(100,200,300);
   
 
-projectEuler Squirrel
- memberCount
-  2019 34
-  2022 42
-helloWorldCollection Squirrel
- #!/usr/bin/squirrelsh
- // Hello world in Squirrel
- printl("Hello, world!");
-leachim6 Squirrel
- filepath s/Squirrel.nut
- fileExtensions nut
- example
-  print("Hello World");
-rosettaCode http://www.rosettacode.org/wiki/Category:Squirrel
-quineRelay Squirrel
-
-rijuRepl https://riju.codes/squirrel
- example
-  print("Hello, world!\n")
-  
-tryItOnline squirrel
-
-tiobe Squirrel
-
-twitter https://twitter.com/squirrellang
-ubuntuPackage squirrel3
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Squirrel
+ fileExtensions nut
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.nut
+ repos 1513
 
-clocExtensions nut
+semanticScholar 0

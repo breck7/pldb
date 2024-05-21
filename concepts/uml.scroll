@@ -1,16 +1,15 @@
 import ../code/conceptPage.scroll
+
 id uml
 name UML
 appeared 1996
 tags xmlFormat
-documentation https://www.uml-diagrams.org/
 standsFor Unified Modeling Language
 
 visualParadigm true
-
-hasBooleans true
-
-booleanTokens true false
+fileType text
+documentation https://www.uml-diagrams.org/
+centralPackageRepositoryCount 0
 
 example
  <?xml version="1.0"?>
@@ -49,6 +48,10 @@ example
   </XMI.content>
  </XMI>
 
+booleanTokens true false
+
+hasBooleans true
+
 wikipedia https://en.wikipedia.org/wiki/Unified_Modeling_Language
  related bpmn sysml
  summary The Unified Modeling Language (UML) is a general-purpose, developmental, modeling language in the field of software engineering, that is intended to provide a standard way to visualize the design of a system. UML was originally motivated by the desire to standardize the disparate notational systems and approaches to software design developed by Grady Booch, Ivar Jacobson and James Rumbaugh at Rational Software in 1994–1995, with further development led by them through 1996. In 1997 UML was adopted as a standard by the Object Management Group (OMG), and has been managed by this organization ever since. In 2005 UML was also published by the International Organization for Standardization (ISO) as an approved ISO standard. Since then the standard has been periodically revised to cover the latest revision of UML.
@@ -60,16 +63,6 @@ wikipedia https://en.wikipedia.org/wiki/Unified_Modeling_Language
  appeared 1994
 
 hopl https://hopl.info/showlanguage.prx?exp=7130
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- UML Distilled: A Brief Guide to the Standard Object Modeling Language|1997|Martin Fowler|82025|3.78|1229|60
- UML for Java Programmers|2003|Robert C. Martin|858735|3.63|35|1
- Menggunakan UML, Unified Modeling Language|2011|Prabowo Pudjo Widodo|21554454|4.03|110|8
- UML 2 for Dummies|2003|Michael Jesse Chonoles|225827|3.58|52|4
 
 isbndb 108
  year|publisher|title|authors|isbn13
@@ -222,3 +215,10 @@ semanticScholar 38
  2018|AUTOMATIC CODE GENERATION FROM UML DIAGRAMS: THE STATE-OF-THE-ART|10.4314/SWJ.V13I4|2|0|M. I. Mukhtar and B. Galadanci|bffa2d1fd67d91d5610e085f0211498da637f5d6
  2011|Metamodel and UML Profile for Functional Programming Languages|10.1007/978-3-642-21393-9_18|2|0|Marcin Szlenk|6c83038f3418ed1114e3a01e28f57ecf1f6df2e1
  2021|Ontology-Based Verification of UML Class Model XOR Constraint and Dependency Relationship Constraints|10.32604/IASC.2021.015071|2|0|Asadullah Shaikh and A. Hafeez and M. Elmagzoub and Abdullah Alghamdi and Ansar Siddique and B. Shahzad|5c4b9aea7527c7853be387826b1f966337ffa283
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ UML Distilled: A Brief Guide to the Standard Object Modeling Language|1997|Martin Fowler|82025|3.78|1229|60
+ UML for Java Programmers|2003|Robert C. Martin|858735|3.63|35|1
+ Menggunakan UML, Unified Modeling Language|2011|Prabowo Pudjo Widodo|21554454|4.03|110|8
+ UML 2 for Dummies|2003|Michael Jesse Chonoles|225827|3.58|52|4

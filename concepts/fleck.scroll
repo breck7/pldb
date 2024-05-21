@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id fleck
 name fleck
 appeared 2019
-tags pl
 creators Chris McCormick
+tags pl
+
+writtenIn clojure svg bourne-shell bash markdown make html yaml
+repoStats
+ firstCommit 2019
+ commits 113
+ committers 5
+ files 36
+ newestCommit 2021
 country United States
 originCommunity https://mccormick.cx
 
@@ -19,12 +28,3 @@ githubRepo https://github.com/chr15m/flk
  updated 2022
  description A LISP that runs wherever Bash is
  issues 1
-
-repoStats
- firstCommit 2019
- commits 113
- committers 5
- files 36
- newestCommit 2021
-
-writtenIn clojure svg bourne-shell bash markdown make html yaml

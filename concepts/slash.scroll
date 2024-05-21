@@ -1,12 +1,27 @@
 import ../code/conceptPage.scroll
+
 id slash
 name Slash
 appeared 2012
 tags pl
 website http://slash-lang.org/
+
+isOpenSource true
+writtenIn c perl make ruby markdown bash yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1199
+ committers 8
+ files 232
+ newestCommit 2014
 country Australia
 originCommunity https://github.com/slash-lang/slash
-domainName slash-lang.org
+
+pygmentsHighlighter Slash
+ filename slash.py
+ fileExtensions sla
 
 githubRepo https://github.com/slash-lang/slash
  firstCommit 2012
@@ -18,27 +33,12 @@ githubRepo https://github.com/slash-lang/slash
  description A new language for the web
  issues 13
 
-repoStats
- firstCommit 2012
- commits 1199
- committers 8
- files 232
- newestCommit 2014
+domainName slash-lang.org
 
-githubLanguage Slash
- fileExtensions sl
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope text.html.slash
- repos 572
 githubBigQuery Slash
  repos 427
  users 388
 
-pygmentsHighlighter Slash
- filename slash.py
- fileExtensions sla
 linguistGrammarRepo https://github.com/slash-lang/Slash.tmbundle
  firstCommit 2013
  lastCommit 2014
@@ -175,8 +175,10 @@ linguistGrammarRepo https://github.com/slash-lang/Slash.tmbundle
   ast.eval(Env.new);
   
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c perl make ruby markdown bash yaml
+githubLanguage Slash
+ fileExtensions sl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope text.html.slash
+ repos 572

@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id masm
 name MASM
 appeared 1981
-tags pl
 creators Thomas Jaeger
+tags pl
 website http://www.visualmasm.com
-reference http://www.visualmasm.com/
+
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 169
+ committers 2
+ files 611
 country United States
 originCommunity https://github.com/ThomasJaeger/VisualMASM/issues
+reference http://www.visualmasm.com/
 
 githubRepo https://github.com/ThomasJaeger/VisualMASM
  firstCommit 2017
@@ -19,12 +27,4 @@ githubRepo https://github.com/ThomasJaeger/VisualMASM
  description Visual MASM - Assembly IDE for Microsoft MASM
  issues 16
 
-repoStats
- firstCommit 2017
- commits 169
- committers 2
- files 611
-
 hopl https://hopl.info/showlanguage.prx?exp=2212
-
-centralPackageRepositoryCount 0

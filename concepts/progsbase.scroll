@@ -1,20 +1,22 @@
 import ../code/conceptPage.scroll
+
 id progsbase
 name progsbase
 appeared 2018
-tags pl
 creators Martin F. Johansen
-conceptDescription A programming language and tooling for timeless programming. Programs written in progsbase can be reused across time and space. Code written in progsbase can currently be translated to 13 other languages, but many more can be supported.
+tags pl
 website https://www.progsbase.com/
-documentation https://www.progsbase.com/docs/
+conceptDescription A programming language and tooling for timeless programming. Programs written in progsbase can be reused across time and space. Code written in progsbase can currently be translated to 13 other languages, but many more can be supported.
+
 spec https://www.progsbase.com/docs/
-reference https://www.progsbase.com/featuredpost/progsbase-a-timeless-translatable-and-understandable-programming-system/
+fileType text
+documentation https://www.progsbase.com/docs/
+packageRepository https://repo.progsbase.com/repoviewer/
 country Norway
 originCommunity Inductive AS
-domainName progsbase.com
- registered 2017
- awisRank
-  2022 3521085
+reference https://www.progsbase.com/featuredpost/progsbase-a-timeless-translatable-and-understandable-programming-system/
+
+twitter https://twitter.com/progsbase
 
 hasFunctions true
 hasAssignment true
@@ -69,10 +71,10 @@ hasManualMemoryManagement true
 hasGotos false
 hasStructs true
 
-packageRepository https://repo.progsbase.com/repoviewer/
-
-twitter https://twitter.com/progsbase
-fileType text
+domainName progsbase.com
+ registered 2017
+ awisRank
+  2022 3521085
 
 isbndb
  year|publisher|title|authors|isbn13

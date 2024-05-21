@@ -1,11 +1,18 @@
 import ../code/conceptPage.scroll
+
 id titan
 name titan
 appeared 2017
 tags pl
 website http://titan-lang.org
-domainName titan-lang.org
- registered 2021
+
+writtenIn lua markdown c yaml
+repoStats
+ firstCommit 2017
+ commits 1144
+ committers 13
+ files 53
+ newestCommit 2019
 
 githubRepo https://github.com/titan-lang/titan
  firstCommit 2017
@@ -17,11 +24,5 @@ githubRepo https://github.com/titan-lang/titan
  description The Titan programming language
  issues 15
 
-repoStats
- firstCommit 2017
- commits 1144
- committers 13
- files 53
- newestCommit 2019
-
-writtenIn lua markdown c yaml
+domainName titan-lang.org
+ registered 2021

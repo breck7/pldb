@@ -1,35 +1,18 @@
 import ../code/conceptPage.scroll
+
 id spss
 name SPSS
 appeared 1968
+creators Norman H. Nie and C. Hadlai Hull and Dale H. Bent
 tags pl
 website https://www.ibm.com/us-en/marketplace/spss-statistics
+
+releaseNotesUrl https://www.ibm.com/support/pages/ibm-spss-statistics-200-release-notess
+fileType text
 documentation https://www.ibm.com/support/pages/ibm-spss-statistics-28-documentation
+centralPackageRepositoryCount 0
 country United States
 originCommunity SPSS Inc
-releaseNotesUrl https://www.ibm.com/support/pages/ibm-spss-statistics-200-release-notess
-
-hasComments true
- * A comment where first character must be *.
-hasLineComments false
-hasPrintDebugging true
-hasSemanticIndentation false
-hasCaseInsensitiveIdentifiers true
-hasStrings true
- "Hello world"
-
-printToken print
-stringToken "
-
-wikipedia https://en.wikipedia.org/wiki/SPSS
- related linux java python visual-basic r ascii sql html xml unix
- summary SPSS Statistics is a software package used for logical batched and non-batched statistical analysis. Long produced by SPSS Inc., it was acquired by IBM in 2009. The current versions (2015) are officially named IBM SPSS Statistics. Companion products in the same family are used for survey authoring and deployment (IBM SPSS Data Collection, now divested under UNICOM Intelligence), data mining (IBM SPSS Modeler), text analytics, and collaboration and deployment (batch and automated scoring services). The software name originally stood for Statistical Package for the Social Sciences (SPSS), reflecting the original market, although the software is now popular in other fields as well, including the health sciences and marketing.
- pageId 179088
- dailyPageViews 1898
- created 2002
- backlinksCount 503
- revisionCount 878
- appeared 1968
 
 helloWorldCollection SPSS
  * SPSS Syntax
@@ -45,21 +28,30 @@ leachim6 SPSS
   print "Hello World"
   END PROGRAM.
 
-indeedJobs spss developer
- 2022 25
-linkedInSkill spss
- 2018 956163
+printToken print
+stringToken "
 
-tiobe SPSS
+hasComments true
+ * A comment where first character must be *.
+hasLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/SPSS
+ related linux java python visual-basic r ascii sql html xml unix
+ summary SPSS Statistics is a software package used for logical batched and non-batched statistical analysis. Long produced by SPSS Inc., it was acquired by IBM in 2009. The current versions (2015) are officially named IBM SPSS Statistics. Companion products in the same family are used for survey authoring and deployment (IBM SPSS Data Collection, now divested under UNICOM Intelligence), data mining (IBM SPSS Modeler), text analytics, and collaboration and deployment (batch and automated scoring services). The software name originally stood for Statistical Package for the Social Sciences (SPSS), reflecting the original market, although the software is now popular in other fields as well, including the health sciences and marketing.
+ pageId 179088
+ dailyPageViews 1898
+ created 2002
+ backlinksCount 503
+ revisionCount 878
+ appeared 1968
+
 hopl https://hopl.info/showlanguage.prx?exp=240
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SPSS For Dummies|2007|Arthur Griffith|959353|3.54|67|10
- SPSS Statistics for Dummies|2015|Keith McCormick|45494211|4.10|10|2
+tiobe SPSS
 
 isbndb 12
  year|publisher|title|authors|isbn13
@@ -76,6 +68,11 @@ isbndb 12
  2022|Khanna Publishing House|Data Science And Analytics: With Python, R And Spss Programming|V.K. Jain|9789386173676
  2006|SPSS Inc.|SPSS Programming and Data Management|SPSS|9781568273907
 
+indeedJobs spss developer
+ 2022 25
+linkedInSkill spss
+ 2018 956163
+
 semanticScholar 5
  year|title|doi|citations|influentialCitations|authors|paperId
  2009|A Guide to Doing Statistics in Second Language Research Using SPSS|10.4324/9781315775661|722|116|Jenifer Larson-Hall|795142d7d53536ecb8195638fa9dd1eb6bda44d2
@@ -84,4 +81,7 @@ semanticScholar 5
  2005|An intermediate guide to SPSS programming : using syntax for data management|10.5860/choice.42-5913|8|0|S. Boslaugh|2156927494658615734e43c893f25f4f58dcf186
  2014|Using the Statistical Program R Instead of SPSS To Analyze Data|10.1021/BK-2014-1166.CH008|6|1|Hui Tang and Pengsheng Ji|e81f588b28d078867894a82bdaeb73f9bf40b9bc
 
-creators Norman H. Nie and C. Hadlai Hull and Dale H. Bent
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SPSS For Dummies|2007|Arthur Griffith|959353|3.54|67|10
+ SPSS Statistics for Dummies|2015|Keith McCormick|45494211|4.10|10|2

@@ -1,17 +1,48 @@
 import ../code/conceptPage.scroll
+
 id modula-3
 name Modula-3
 appeared 1986
+creators Luca Cardelli and James Donahue and Lucille Glassman and Mick Jordan and Bill Kalsow and Greg Nelson
 tags pl
 website http://www.modula3.org
-documentation https://modula3.elegosoft.com/cm3/doc/tutorial/m3/m3_toc.html
-reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
 aka m3
+
+isOpenSource true
+releaseNotesUrl http://www.opencm3.net/releng/relnotes-5.8.6.html
+fileType text
+documentation https://modula3.elegosoft.com/cm3/doc/tutorial/m3/m3_toc.html
+downloadPageUrl http://www.opencm3.net/download.html
+monaco m3
+rosettaCode http://www.rosettacode.org/wiki/Category:Modula-3
+centralPackageRepositoryCount 0
 country United States and Germany
 originCommunity Digital Equipment Corporation && elego Software Solutions GmbH
-domainName modula3.org
- registered 2007
-releaseNotesUrl http://www.opencm3.net/releng/relnotes-5.8.6.html
+reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
+
+helloWorldCollection Modula-3
+ (* Hello World in Modula-3 *)
+ 
+ MODULE Hello EXPORTS Main;
+ 
+ IMPORT IO;
+ 
+ BEGIN
+  IO.Put("Hello World!\n");
+ END Hello.
+leachim6 Modula 3
+ filepath m/Modula 3.m3
+ example
+  MODULE HelloWorld;
+  IMPORT Io;
+  BEGIN
+      IO.Put ("Hello World\n")
+  END HelloWorld.
+
+keywords AND ANY ARRAY AS BEGIN BITS BRANDED BY CASE CONST DIV DO ELSE ELSIF END EVAL EXCEPT EXCEPTION EXIT EXPORTS FINALLY FOR FROM GENERIC IF IMPORT IN INTERFACE LOCK LOOP METHODS MOD MODULE NOT OBJECT OF OR OVERRIDES PROCEDURE RAISE RAISES READONLY RECORD REF REPEAT RETURN REVEAL SET THEN TO TRY TYPE TYPECASE UNSAFE UNTIL UNTRACED VALUE VAR WHILE WITH
+
+multiLineCommentTokens (* *)
+booleanTokens TRUE FALSE
 
 hasComments true
 hasLineComments false
@@ -21,10 +52,6 @@ hasMultiLineComments true
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
 hasBooleans true
-
-multiLineCommentTokens (* *)
-booleanTokens TRUE FALSE
-keywords AND ANY ARRAY AS BEGIN BITS BRANDED BY CASE CONST DIV DO ELSE ELSIF END EVAL EXCEPT EXCEPTION EXIT EXPORTS FINALLY FOR FROM GENERIC IF IMPORT IN INTERFACE LOCK LOOP METHODS MOD MODULE NOT OBJECT OF OR OVERRIDES PROCEDURE RAISE RAISES READONLY RECORD REF REPEAT RETURN REVEAL SET THEN TO TRY TYPE TYPECASE UNSAFE UNTIL UNTRACED VALUE VAR WHILE WITH
 
 wikipedia https://en.wikipedia.org/wiki/Modula-3
  example
@@ -62,17 +89,16 @@ wikipedia https://en.wikipedia.org/wiki/Modula-3
  revisionCount 336
  appeared 1980
 
-githubLanguage Modula-3
- fileExtensions i3 ig m3 mg
- type programming
- aceMode text
- tmScope source.modula-3
- repos 137
+hopl https://hopl.info/showlanguage.prx?exp=1411
+tiobe Modula-3
+
+domainName modula3.org
+ registered 2007
+
 githubBigQuery Modula-3
  repos 19
  users 18
 
-monaco m3
 linguistGrammarRepo https://github.com/newgrammars/m3
  firstCommit 2018
  lastCommit 2018
@@ -282,37 +308,13 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   
   
 
-helloWorldCollection Modula-3
- (* Hello World in Modula-3 *)
- 
- MODULE Hello EXPORTS Main;
- 
- IMPORT IO;
- 
- BEGIN
-  IO.Put("Hello World!\n");
- END Hello.
-leachim6 Modula 3
- filepath m/Modula 3.m3
- example
-  MODULE HelloWorld;
-  IMPORT Io;
-  BEGIN
-      IO.Put ("Hello World\n")
-  END HelloWorld.
-rosettaCode http://www.rosettacode.org/wiki/Category:Modula-3
-
-downloadPageUrl http://www.opencm3.net/download.html
-
-tiobe Modula-3
-hopl https://hopl.info/showlanguage.prx?exp=1411
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Modula-3
+ fileExtensions i3 ig m3 mg
+ type programming
+ aceMode text
+ tmScope source.modula-3
+ repos 137
 
-creators Luca Cardelli and James Donahue and Lucille Glassman and Mick Jordan and Bill Kalsow and Greg Nelson
+semanticScholar 0

@@ -1,18 +1,15 @@
 import ../code/conceptPage.scroll
+
 id figlet-font
 name FIGlet Font
 appeared 1991
 tags application
-reference https://en.wikipedia.org/wiki/FIGlet
+
+fileType text
+centralPackageRepositoryCount 0
 country Unknown
 originCommunity http://www.figlet.org
-
-githubLanguage FIGlet Font
- fileExtensions flf
- type data
- aceMode text
- tmScope source.figfont
- aliases FIGfont
+reference https://en.wikipedia.org/wiki/FIGlet
 
 linguistGrammarRepo https://github.com/Alhadis/language-fontforge
  firstCommit 2016
@@ -173,5 +170,9 @@ linguistGrammarRepo https://github.com/Alhadis/language-fontforge
    | '_ \ @
    | (_)
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage FIGlet Font
+ fileExtensions flf
+ type data
+ aceMode text
+ tmScope source.figfont
+ aliases FIGfont

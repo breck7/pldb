@@ -1,23 +1,28 @@
 import ../code/conceptPage.scroll
+
 id flux
 name FLUX
 appeared 2014
-tags pl
 creators Paul O’Shannessy
-conceptDescription Application Architecture for Building User Interfaces
+tags pl
 website https://facebook.github.io/flux/
+conceptDescription Application Architecture for Building User Interfaces
+
+isOpenSource true
+writtenIn javascript markdown json svg css html yaml
+fileType text
+wordRank 8630
 documentation https://fluxcd.io/flux/
 documentation https://docs.influxdata.com/flux/v0.x/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 553
+ committers 148
+ files 174
+ newestCommit 2023
 country United States
 originCommunity https://github.com/fluxcd
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  // concrete node signatures
@@ -70,28 +75,17 @@ githubRepo https://github.com/facebook/flux
  description Application Architecture for Building User Interfaces
  issues 6
 
-repoStats
- firstCommit 2014
- commits 553
- committers 148
- files 174
- newestCommit 2023
+lineCommentToken //
 
-githubLanguage FLUX
- fileExtensions fx flux
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope none
- repos 187
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
 githubBigQuery FLUX
  repos 853
  users 792
-
-fileType text
-wordRank 8630
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 7
  year|publisher|title|authors|isbn13
@@ -102,6 +96,14 @@ isbndb 7
  2018-08-15|LAP LAMBERT Academic Publishing|Compromise programming approach to welding flux optimization|Ayobami Allu and Ademola Adeyeye|9786139902316
  2015-03-16|LAP LAMBERT Academic Publishing|Structural Optimization and Thermal modeling of Flux Switching Machine|Noman Nisar|9783659456046
  19860801|World Scientific Publishing|Dc Flux Parametron: A New Approach To Josephson Junction Logic|Goto Eiichi|9789814415484
+
+githubLanguage FLUX
+ fileExtensions fx flux
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 187
 
 semanticScholar 11
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -116,5 +118,3 @@ semanticScholar 11
  1996|Flux density models for the switched reluctance machine|10.1109/IAS.1996.560169|2|0|M. Hassanin and M. Alrifai and D. Torrey and F. Ahmed and M.H. Shaker El-Markabi|c0d970df70fb1358f6bae8d427e469f7f6fd3f36
  2013|Development of a computer code for neutronic calculations of a hexagonal lattice of nuclear reactor using the flux expansion nodal method|10.2298/NTRP1303237M|2|0|M. Mohammadnia and A. Pazirandeh and M. Sedighi|98213afe42876fdf95449b769732907bdfd3b539
  2010|Handling negative disjunction constraints (or_not_holds) in FLUX|10.1109/ICCAE.2010.5451264|1|0|Yisong Liu and Zhihua Yin and Huijuan Zhu and Lili Wang|f2f79cf3e0fad6eb8fe7d154b19985cdef4271ae
-
-writtenIn javascript markdown json svg css html yaml

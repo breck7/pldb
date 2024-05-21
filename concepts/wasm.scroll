@@ -1,29 +1,32 @@
 import ../code/conceptPage.scroll
+
 id wasm
 name WebAssembly
 appeared 2015
-tags bytecode
 creators Alon Zakai
+tags bytecode
 website http://webassembly.org/
-documentation https://developer.mozilla.org/en-US/docs/WebAssembly
+
+isOpenSource true
+writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
+tryItOnline wasm
 fileExtensions wasm
+clocExtensions wast wat
+fileType text
+documentation https://developer.mozilla.org/en-US/docs/WebAssembly
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 2580
+ committers 149
+ files 1736
+ newestCommit 2024
 originCommunity W3C
-domainName webassembly.org
- registered 2015
- awisRank
-  2022 166939
-  2017 182953
 proposals https://github.com/WebAssembly/proposals
 
-writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
-
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasLineComments true
-hasMultiLineComments true
-hasComments true
-
+pygmentsHighlighter WebAssembly
+ filename webassembly.py
+ fileExtensions wat wast
 example
  20 00
  50
@@ -37,86 +40,6 @@ example
  10 00
  7E
  0B
-
-githubRepo https://github.com/WebAssembly/wabt
- stars 4534
- forks 525
- subscribers 152
- created 2015
- updated 2022
- firstCommit 2015
- description The WebAssembly Binary Toolkit
- issues 138
-
-repoStats
- firstCommit 2015
- commits 2580
- committers 149
- files 1736
- newestCommit 2024
-
-wikipedia https://en.wikipedia.org/wiki/WebAssembly
- example
-  (module
-    (import "math" "exp" (func $exp (param f64) (result f64)))
-    (func (export "doubleExp") (param $0 f64) (result f64)
-      (f64.mul
-        (call $exp
-          (get_local $0))
-        (f64.const 2))))
- related asmjs assembly-language javascript unity-engine llvmir c rust java csharp go s-expressions doi
- summary WebAssembly (Wasm, WA) is a web standard that defines a binary format and a corresponding assembly-like text format for executable code in Web pages. It is meant to enable executing code nearly as fast as running native machine code. It was envisioned to complement JavaScript to speed up performance-critical parts of web applications and later on to enable web development in languages other than JavaScript. WebAssembly does not attempt to replace JavaScript, but to complement it. It is developed at the World Wide Web Consortium (W3C) with engineers from Mozilla, Microsoft, Google and Apple.It is executed in a sandbox in the web browser after a verification step. Programs can be compiled from high-level languages into Wasm modules and loaded as libraries from within JavaScript applets.
- pageId 47013794
- dailyPageViews 392
- created 2015
- backlinksCount 269
- revisionCount 215
- appeared 2017
- fileExtensions wat wasm
-
-githubLanguage WebAssembly
- fileExtensions wast wat
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  AssemblyScript assemblyscript https://github.com/AssemblyScript.png https://github.com/AssemblyScript/assemblyscript WebAssembly #04133b 6742 263 287 "Definitely not a TypeScript to WebAssembly compiler 🚀"
- trendingProjectsCount 2
- type programming
- aceMode lisp
- codemirrorMode commonlisp
- codemirrorMimeType text/x-common-lisp
- tmScope source.webassembly
- aliases wast or wasm
- repos 1641
-githubBigQuery WebAssembly
- repos 160
- users 148
-
-pygmentsHighlighter WebAssembly
- filename webassembly.py
- fileExtensions wat wast
-linguistGrammarRepo https://github.com/Alhadis/language-webassembly
- firstCommit 2017
- lastCommit 2017
- committerCount 1
- commitCount 32
- sampleCount 6
- example
-  (module
-    (import "env" "printInt" (func $printInt (param i32)))
-    (func $add (param $lhs i32) (param $rhs i32) (result i32)
-      get_local $lhs
-      get_local $rhs
-      i32.add
-    )
-  
-    (func $main
-      (call $printInt
-        (call $add (i32.const 9) (i32.const 8))))
-  
-    (export "main" (func $main))
-  )
-  
-
 leachim6 WebAssembly
  filepath w/WebAssembly.wat
  fileExtensions wat
@@ -142,14 +65,74 @@ leachim6 WebAssembly
   )
   
 
-tryItOnline wasm
+githubRepo https://github.com/WebAssembly/wabt
+ stars 4534
+ forks 525
+ subscribers 152
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description The WebAssembly Binary Toolkit
+ issues 138
 
-indeedJobs webassembly engineer
- 2017 5
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+wikipedia https://en.wikipedia.org/wiki/WebAssembly
+ example
+  (module
+    (import "math" "exp" (func $exp (param f64) (result f64)))
+    (func (export "doubleExp") (param $0 f64) (result f64)
+      (f64.mul
+        (call $exp
+          (get_local $0))
+        (f64.const 2))))
+ related asmjs assembly-language javascript unity-engine llvmir c rust java csharp go s-expressions doi
+ summary WebAssembly (Wasm, WA) is a web standard that defines a binary format and a corresponding assembly-like text format for executable code in Web pages. It is meant to enable executing code nearly as fast as running native machine code. It was envisioned to complement JavaScript to speed up performance-critical parts of web applications and later on to enable web development in languages other than JavaScript. WebAssembly does not attempt to replace JavaScript, but to complement it. It is developed at the World Wide Web Consortium (W3C) with engineers from Mozilla, Microsoft, Google and Apple.It is executed in a sandbox in the web browser after a verification step. Programs can be compiled from high-level languages into Wasm modules and loaded as libraries from within JavaScript applets.
+ pageId 47013794
+ dailyPageViews 392
+ created 2015
+ backlinksCount 269
+ revisionCount 215
+ appeared 2017
+ fileExtensions wat wasm
+
+domainName webassembly.org
+ registered 2015
+ awisRank
+  2022 166939
+  2017 182953
+
+githubBigQuery WebAssembly
+ repos 160
+ users 148
+
+linguistGrammarRepo https://github.com/Alhadis/language-webassembly
+ firstCommit 2017
+ lastCommit 2017
+ committerCount 1
+ commitCount 32
+ sampleCount 6
+ example
+  (module
+    (import "env" "printInt" (func $printInt (param i32)))
+    (func $add (param $lhs i32) (param $rhs i32) (result i32)
+      get_local $lhs
+      get_local $rhs
+      i32.add
+    )
+  
+    (func $main
+      (call $printInt
+        (call $add (i32.const 9) (i32.const 8))))
+  
+    (export "main" (func $main))
+  )
+  
 
 isbndb 13
  year|publisher|title|authors|isbn13
@@ -166,6 +149,23 @@ isbndb 13
  44386|Packt Publishing|Blazor WebAssembly by Example|Toi B. Wright; Scott Hanselman|9781800563933
  29-04-2022|Packt Publishing|Game Development with Rust and WebAssembly|Eric Smith|9781801074995
  14-05-2021|Packt Publishing|Creative DIY Microcontroller Projects with TinyGo and WebAssembly|Tobias Theel|9781800563599
+
+githubLanguage WebAssembly
+ fileExtensions wast wat
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  AssemblyScript assemblyscript https://github.com/AssemblyScript.png https://github.com/AssemblyScript/assemblyscript WebAssembly #04133b 6742 263 287 "Definitely not a TypeScript to WebAssembly compiler 🚀"
+ trendingProjectsCount 2
+ type programming
+ aceMode lisp
+ codemirrorMode commonlisp
+ codemirrorMimeType text/x-common-lisp
+ tmScope source.webassembly
+ aliases wast or wasm
+ repos 1641
+
+indeedJobs webassembly engineer
+ 2017 5
 
 semanticScholar 25
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -194,5 +194,3 @@ semanticScholar 25
  2019|Towards a WebAssembly standalone runtime on GraalVM|10.1145/3359061.3362780|1|0|Salim S. Salim and A. Nisbet and M. Luján|79c2622251cf1d7bcd0d266253ccc69da749eb59
  2022|Static Stack-Preserving Intra-Procedural Slicing of WebAssembly Binaries|10.1145/3510003.3510070|1|0|Quentin Stiévenart and D. Binkley and Coen De Roover|743067aed49d0f62682d11d2db96bf3f62c969ba
  2021|Bringing WebAssembly up to speed with dynamic linking|10.1145/3412841.3442045|1|0|Niko Mäkitalo and Victor Bankowski and Paulius Daubaris and R. Mikkola and Oleg Beletski and T. Mikkonen|85c19f3e93d649ce229ff07daa8ae36e7a1a56bf
-
-clocExtensions wast wat

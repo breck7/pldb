@@ -1,21 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ldpl
 name ldpl
 appeared 2019
-tags pl
 creators Martín del Río
+tags pl
 website https://www.ldpl-lang.org
+
+writtenIn markdown cpp yaml bourne-shell php make cmake dockerfile
+repoStats
+ firstCommit 2019
+ commits 946
+ committers 38
+ files 78
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/Lartu/ldpl/issues
-domainName ldpl-lang.org
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
 
 example
  # Hello There Example
@@ -37,15 +37,16 @@ githubRepo https://github.com/Lartu/ldpl
  description Compiled programming language for Unix systems, inspired by COBOL and designed to be expressive, fast, readable and easy to learn.
  issues 11
 
-repoStats
- firstCommit 2019
- commits 946
- committers 38
- files 78
- newestCommit 2024
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName ldpl-lang.org
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  19740700|LDPL – A simple programming language in the likeness of COBOL|https://www.ldpl-lang.org/|2019-04-24 17:25:24 UTC|1556126724|lartu|0|1
-
-writtenIn markdown cpp yaml bourne-shell php make cmake dockerfile

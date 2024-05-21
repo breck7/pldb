@@ -1,28 +1,24 @@
 import ../code/conceptPage.scroll
+
 id nearley
 name Nearley
 appeared 2014
 tags grammarLanguage
 website https://nearley.js.org/
+
+isOpenSource true
+writtenIn javascript html markdown json svg css yaml bourne-shell
+fileType text
 documentation https://nearley.js.org/docs/how-to-grammar-good
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 1092
+ committers 65
+ files 134
+ newestCommit 2022
 country United States
 originCommunity https://github.com/kach/nearley/issues
-domainName nearley.js.org
- awisRank
-  2022 3704646
-  2017 3556499
-
-writtenIn javascript html markdown json svg css yaml bourne-shell
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-hasBooleans true
-
-lineCommentToken #
-booleanTokens true false
 
 githubRepo https://github.com/Hardmath123/nearley
  stars 3231
@@ -34,20 +30,21 @@ githubRepo https://github.com/Hardmath123/nearley
  description 📜🔜🌲 Simple, fast, powerful parser toolkit for JavaScript.
  issues 176
 
-repoStats
- firstCommit 2014
- commits 1092
- committers 65
- files 134
- newestCommit 2022
+lineCommentToken #
+booleanTokens true false
 
-githubLanguage Nearley
- fileExtensions ne nearley
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ne
- repos 53
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasBooleans true
+
+domainName nearley.js.org
+ awisRank
+  2022 3704646
+  2017 3556499
+
 githubBigQuery Nearley
  repos 33
  users 32
@@ -166,8 +163,12 @@ linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
   commentchars -> null
                 | commentchars [^\n]
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Nearley
+ fileExtensions ne nearley
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ne
+ repos 53
 
 semanticScholar 0

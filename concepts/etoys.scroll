@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id etoys
 name Etoys
 appeared 1996
-tags pl
 creators Alan Kay
+tags pl
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Disney
 
@@ -18,7 +23,3 @@ wikipedia https://en.wikipedia.org/wiki/Etoys_(programming_language)
  appeared 1996
 
 tiobe Etoys
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

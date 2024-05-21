@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id unicode
 name Unicode
 appeared 1987
 tags characterEncoding
+
+fileType na
+antlr https://github.com/antlr/grammars-v4/tree/master/unicode
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Unicode
  related xml java utf-8 isbn rfc ascii freebsd seed7 python jvm html mime
@@ -13,11 +18,6 @@ wikipedia https://en.wikipedia.org/wiki/Unicode
  backlinksCount 6629
  revisionCount 2875
  appeared 2017
-
-antlr https://github.com/antlr/grammars-v4/tree/master/unicode
-
-fileType na
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

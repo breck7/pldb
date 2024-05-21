@@ -1,28 +1,26 @@
 import ../code/conceptPage.scroll
+
 id makefile
 name Makefile
 appeared 1976
-tags pl
 creators Stuart Feldman
-conceptDescription Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
+tags pl
 website https://www.gnu.org/software/make/
+conceptDescription Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
+
+tryItOnline make
+fileType text
 documentation https://www.gnu.org/software/make/manual/make.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Make
+quineRelay Makefile
+centralPackageRepositoryCount 0
+ubuntuPackage make
 country United States
 originCommunity Bell Labs
 
-hasVariableSubstitutionSyntax true
- objects = program.o foo.o utils.o
- $(objects)
-hasAssignment true
- objects = program.o foo.o utils.o
-hasSemanticIndentation true
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-
-lineCommentToken #
-
+pygmentsHighlighter Makefile
+ filename make.py
+ fileExtensions mak mk Makefile makefile Makefile.* GNUmakefile
 example
   edit : main.o kbd.o command.o display.o \
         insert.o search.o files.o utils.o
@@ -49,6 +47,19 @@ example
          rm edit main.o kbd.o command.o display.o \
             insert.o search.o files.o utils.o
 
+lineCommentToken #
+
+hasVariableSubstitutionSyntax true
+ objects = program.o foo.o utils.o
+ $(objects)
+hasAssignment true
+ objects = program.o foo.o utils.o
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+
 wikipedia https://en.wikipedia.org/wiki/Makefile
  example
   edit: main.o kbd.o command.o display.o
@@ -72,6 +83,20 @@ wikipedia https://en.wikipedia.org/wiki/Makefile
  created 2002
  backlinksCount 81
  revisionCount 87
+
+githubBigQuery Makefile
+ repos 250693
+ users 152971
+
+linguistGrammarRepo https://github.com/textmate/make.tmbundle
+ sampleCount 3
+ example
+  #!/usr/bin/make -f
+  %:
+  	ls -l
+  
+
+isbndb 0
 
 githubLanguage Makefile
  fileExtensions mak d make makefile mk mkfile
@@ -99,30 +124,5 @@ githubLanguage Makefile
  tmScope source.makefile
  aliases bsdmake or make or mf
  repos 247622
-githubBigQuery Makefile
- repos 250693
- users 152971
-
-pygmentsHighlighter Makefile
- filename make.py
- fileExtensions mak mk Makefile makefile Makefile.* GNUmakefile
-linguistGrammarRepo https://github.com/textmate/make.tmbundle
- sampleCount 3
- example
-  #!/usr/bin/make -f
-  %:
-  	ls -l
-  
-
-rosettaCode http://www.rosettacode.org/wiki/Category:Make
-quineRelay Makefile
-
-tryItOnline make
-
-ubuntuPackage make
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

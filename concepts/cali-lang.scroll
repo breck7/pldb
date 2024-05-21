@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cali-lang
 name Cali-Lang
 appeared 2015
 tags pl
-conceptDescription Cali is an object oriented interpreted programming language written in Java. It is an efficiency (glue) language that is loosely typed. Cali has it's own standard library but anyone can create external Java modules to extend Cali. In fact, the entire standard library was written by wrapping Java code.
 website https://web.archive.org/web/20160820093952/http://cali-lang.com/
+conceptDescription Cali is an object oriented interpreted programming language written in Java. It is an efficiency (glue) language that is loosely typed. Cali has it's own standard library but anyone can create external Java modules to extend Cali. In fact, the entire standard library was written by wrapping Java code.
+
+writtenIn java xml markdown
+repoStats
+ firstCommit 2017
+ commits 39
+ committers 5
+ files 104
+ newestCommit 2021
 country Unknown
 originCommunity https://github.com/cali-lang
 
@@ -56,12 +65,3 @@ githubRepo https://github.com/cali-lang/cali.lang.base
  created 2017
  updated 2021
  description Base implementation of Cali interpreter.
-
-repoStats
- firstCommit 2017
- commits 39
- committers 5
- files 104
- newestCommit 2021
-
-writtenIn java xml markdown

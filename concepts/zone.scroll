@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id zone
 name DNS Zone
 appeared 2001
 tags application
+
+fileType text
+wordRank 1757
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Zone_file
  example
@@ -15,14 +20,6 @@ wikipedia https://en.wikipedia.org/wiki/Zone_file
  backlinksCount 31
  revisionCount 135
  appeared 2001
-
-githubLanguage DNS Zone
- fileExtensions zone arpa
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope text.zone_file
- repos 29634
 
 linguistGrammarRepo https://github.com/sixty4k/st2-zonefile
  firstCommit 2012
@@ -46,6 +43,10 @@ linguistGrammarRepo https://github.com/sixty4k/st2-zonefile
   c.a.7.e.d.7.e.f.f.f.0.2.8.0.a.0 PTR  sip01.example.com.
   
 
-fileType text
-wordRank 1757
-centralPackageRepositoryCount 0
+githubLanguage DNS Zone
+ fileExtensions zone arpa
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope text.zone_file
+ repos 29634

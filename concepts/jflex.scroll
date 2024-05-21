@@ -1,25 +1,24 @@
 import ../code/conceptPage.scroll
+
 id jflex
 name JFlex
 appeared 2003
 tags grammarLanguage
-conceptDescription JFlex is a lexical analyzer generator (also known as scanner generator) for Java, written in Java.
 website http://jflex.de/
+conceptDescription JFlex is a lexical analyzer generator (also known as scanner generator) for Java, written in Java.
+
+isOpenSource true
+writtenIn java starlark markdown perl bourne-shell vtl-lang xml make yaml tex css bash json vim-script lisp yacc bazel actionscript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 2497
+ committers 27
+ files 8186
+ newestCommit 2023
 country Switzerland and Australia
 originCommunity https://github.com/jflex-de/
-domainName jflex.de
- awisRank
-  2022 2163823
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 githubRepo https://github.com/jflex-de/jflex
  firstCommit 2003
@@ -31,21 +30,20 @@ githubRepo https://github.com/jflex-de/jflex
  description The fast scanner generator for Java™ with full Unicode support
  issues 49
 
-repoStats
- firstCommit 2003
- commits 2497
- committers 27
- files 8186
- newestCommit 2023
+multiLineCommentTokens /* */
 
-githubLanguage JFlex
- fileExtensions flex jflex
- trendingProjectsCount 0
- type programming
- group Lex
- aceMode text
- tmScope source.jflex
- repos 2
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName jflex.de
+ awisRank
+  2022 2163823
+
 githubBigQuery JFlex
  repos 39
  users 38
@@ -133,10 +131,13 @@ linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
   /* comments */
   Comment = {Tradi
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn java starlark markdown perl bourne-shell vtl-lang xml make yaml tex css bash json vim-script lisp yacc bazel actionscript
+githubLanguage JFlex
+ fileExtensions flex jflex
+ trendingProjectsCount 0
+ type programming
+ group Lex
+ aceMode text
+ tmScope source.jflex
+ repos 2

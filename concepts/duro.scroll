@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id duro
 name duro
 appeared 2003
 tags queryLanguage
 website http://duro.sourceforge.net/
+
+writtenIn c bourne-shell java html xml ini yacc lex make cpp css
+repoStats
+ firstCommit 2003
+ commits 1399
+ committers 8
+ files 386
+ newestCommit 2020
 country Unknown
 originCommunity https://sourceforge.net/p/duro/mailman/duro-devel/
-domainName duro.sourceforge.net
 
 githubRepo https://github.com/rehartmann/durodbms
  firstCommit 2003
@@ -18,11 +26,4 @@ githubRepo https://github.com/rehartmann/durodbms
  description Relational Database Management System
  issues 0
 
-repoStats
- firstCommit 2003
- commits 1399
- committers 8
- files 386
- newestCommit 2020
-
-writtenIn c bourne-shell java html xml ini yacc lex make cpp css
+domainName duro.sourceforge.net

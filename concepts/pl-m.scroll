@@ -1,11 +1,19 @@
 import ../code/conceptPage.scroll
+
 id pl-m
 name PL/M
 appeared 1973
 tags pl
 standsFor Programming Language for Microcomputers
+
+clocExtensions lit plm
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microcomputer Applications Associates
+
+multiLineCommentTokens /* */
+assignmentToken :=
 
 hasMultiLineComments true
  /* A comment
@@ -15,9 +23,6 @@ hasComments true
  */
 hasSemanticIndentation false
 hasAssignment true
-
-multiLineCommentTokens /* */
-assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/PL/M
  example
@@ -52,8 +57,3 @@ wikipedia https://en.wikipedia.org/wiki/PL/M
  appeared 1973
 
 hopl https://hopl.info/showlanguage.prx?exp=591
-
-fileType text
-centralPackageRepositoryCount 0
-
-clocExtensions lit plm

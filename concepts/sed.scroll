@@ -1,12 +1,38 @@
 import ../code/conceptPage.scroll
+
 id sed
 name sed
 appeared 1974
-tags pl
 creators Lee E. McMahon
+tags pl
+
+tryItOnline sed
+clocExtensions sed
+fileType text
 documentation https://www.gnu.org/software/sed/manual/sed.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Sed
+quineRelay sed
+centralPackageRepositoryCount 0
+ubuntuPackage sed
 country United States
 originCommunity Bell Telephone Laboratories
+
+pygmentsHighlighter Sed
+ filename textedit.py
+ fileExtensions sed [gs]sed
+rijuRepl https://riju.codes/sed
+ example
+  s/.*/Hello, world!/
+  
+leachim6 Sed
+ filepath s/Sed.sed
+ fileExtensions sed
+ example
+  #!/usr/bin/sed -f sed.sed
+  c\
+  Hello World
+  q
+  
 
 hasIntegers true
 hasLineComments true
@@ -27,21 +53,13 @@ wikipedia https://en.wikipedia.org/wiki/Sed
  revisionCount 750
  appeared 1974
 
-githubLanguage sed
- fileExtensions sed
- trendingProjectsCount 0
- type programming
- interpreters gsed minised sed ssed
- aceMode text
- tmScope source.sed
- repos 322
+hopl https://hopl.info/showlanguage.prx?exp=782
+tiobe sed
+
 githubBigQuery sed
  repos 1075
  users 998
 
-pygmentsHighlighter Sed
- filename textedit.py
- fileExtensions sed [gs]sed
 linguistGrammarRepo https://github.com/Alhadis/language-sed
  firstCommit 2018
  lastCommit 2018
@@ -154,31 +172,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-sed
   d
   
 
-leachim6 Sed
- filepath s/Sed.sed
- fileExtensions sed
- example
-  #!/usr/bin/sed -f sed.sed
-  c\
-  Hello World
-  q
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Sed
-quineRelay sed
-
-rijuRepl https://riju.codes/sed
- example
-  s/.*/Hello, world!/
-  
-tryItOnline sed
-
-tiobe sed
-hopl https://hopl.info/showlanguage.prx?exp=782
-
-ubuntuPackage sed
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 6
  year|publisher|title|authors|isbn13
  1997|O'Reilly Media|sed & awk|Dougherty, Dale and Robbins, Arnold|9781565922259
@@ -188,6 +181,13 @@ isbndb 6
  20020612|O'Reilly Media, Inc.|sed and awk Pocket Reference|Arnold Robbins|9780596552022
  20020612|O'Reilly Media, Inc.|sed and awk Pocket Reference|Arnold Robbins|9780596529024
 
-semanticScholar 0
+githubLanguage sed
+ fileExtensions sed
+ trendingProjectsCount 0
+ type programming
+ interpreters gsed minised sed ssed
+ aceMode text
+ tmScope source.sed
+ repos 322
 
-clocExtensions sed
+semanticScholar 0

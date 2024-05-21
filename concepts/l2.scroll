@@ -1,8 +1,17 @@
 import ../code/conceptPage.scroll
+
 id l2
 name l2
 appeared 2017
 tags pl
+
+writtenIn c assembly-language markdown bash tex xml
+repoStats
+ firstCommit 2017
+ commits 1492
+ committers 3
+ files 69
+ newestCommit 2020
 country Unknown
 originCommunity https://github.com/murisi/L2/issues
 
@@ -16,15 +25,6 @@ githubRepo https://github.com/murisi/L2
  description A minimalist type-inferred programming language with procedural macro support
  issues 0
 
-repoStats
- firstCommit 2017
- commits 1492
- committers 3
- files 69
- newestCommit 2020
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  14510073|Show HN: L2: An experiment/programming language|2017-06-07 21:38:32 UTC|1496871512|murisitarusenga|0|2
-
-writtenIn c assembly-language markdown bash tex xml

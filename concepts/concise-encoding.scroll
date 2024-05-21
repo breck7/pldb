@@ -1,27 +1,22 @@
 import ../code/conceptPage.scroll
+
 id concise-encoding
 name Concise Encoding
 appeared 2018
-tags dataNotation
 creators Karl Stenerud
-conceptDescription Concise Encoding gives you ease and efficiency with its 1:1 compatible text and binary formats.
+tags dataNotation
 website https://concise-encoding.org
+conceptDescription Concise Encoding gives you ease and efficiency with its 1:1 compatible text and binary formats.
+
+writtenIn markdown svg json
+repoStats
+ firstCommit 2018
+ commits 1044
+ committers 4
+ files 19
+ newestCommit 2023
 country Czech Republic and Germany
 originCommunity https://github.com/kstenerud/concise-encoding
-domainName concise-encoding.org
- registered 2019
- awisRank
-  2022 4431517
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasBooleans true
-
-lineCommentToken //
-booleanTokens true false
 
 example
  c1
@@ -182,13 +177,19 @@ githubRepo https://github.com/kstenerud/concise-encoding
  description The secure data format for a  modern world
  issues 23
 
-repoStats
- firstCommit 2018
- commits 1044
- committers 4
- files 19
- newestCommit 2023
+lineCommentToken //
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
+
+domainName concise-encoding.org
+ registered 2019
+ awisRank
+  2022 4431517
 
 isbndb 0
-
-writtenIn markdown svg json

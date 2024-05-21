@@ -1,25 +1,24 @@
 import ../code/conceptPage.scroll
+
 id quaint
 name Quaint
 appeared 2014
-tags textMarkup
 creators Olivier Breuleux
-conceptDescription Quaint is a markup language that you can use to write documents. It is similar to Markdown, but it is more powerful and more extensible.
+tags textMarkup
 website http://breuleux.github.io/quaint/
 webRepl http://breuleux.github.io/quaint/tryit.html
-country Canada
-originCommunity https://github.com/breuleux/quaint/issues
+conceptDescription Quaint is a markup language that you can use to write documents. It is similar to Markdown, but it is more powerful and more extensible.
 
 writtenIn json javascript markdown css
 relatedConcepts markdown scroll
-
-hasSemanticIndentation true
-hasLineComments true
- ;; A comment
-hasComments true
- ;; A comment
-
-lineCommentToken ;;
+repoStats
+ firstCommit 2014
+ commits 351
+ committers 1
+ files 49
+ newestCommit 2022
+country Canada
+originCommunity https://github.com/breuleux/quaint/issues
 
 example
  ;; Edit me!
@@ -70,9 +69,10 @@ githubRepo https://github.com/breuleux/quaint
  description The Quaint markup language
  issues 0
 
-repoStats
- firstCommit 2014
- commits 351
- committers 1
- files 49
- newestCommit 2022
+lineCommentToken ;;
+
+hasSemanticIndentation true
+hasLineComments true
+ ;; A comment
+hasComments true
+ ;; A comment

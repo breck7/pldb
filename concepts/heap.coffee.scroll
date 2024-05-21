@@ -1,16 +1,22 @@
 import ../code/conceptPage.scroll
+
 id heap.coffee
 name heap.coffee
 appeared 2012
-tags pl
 creators Roman I. Kuzmin
+tags pl
 website https://github.com/syg/heap.coffee
+
 fileExtensions coffee
+repoStats
+ firstCommit 2009
+ commits 3335
+ committers 93
+ files 199
 country Russia
 originCommunity Mozilla
 
 keywords delete new struct
-
 githubRepo https://github.com/syg/heap.coffee
  stars 90
  forks 2000
@@ -18,9 +24,3 @@ githubRepo https://github.com/syg/heap.coffee
  created 2012
  updated 2012
  description Unfancy JavaScript with Manual Memory Management
-
-repoStats
- firstCommit 2009
- commits 3335
- committers 93
- files 199

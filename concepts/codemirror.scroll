@@ -1,19 +1,26 @@
 import ../code/conceptPage.scroll
+
 id codemirror
 name CodeMirror
 appeared 2007
-tags editor
 creators Marijn Haverbeke
+tags editor
 website https://codemirror.net/
 webRepl https://codemirror.net/try/
+
+isOpenSource true
+writtenIn javascript yaml json markdown typescript html
+relatedConcepts monaco
+fileType na
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2018
+ commits 1933
+ committers 25
+ files 17
+ newestCommit 2024
 country Germany
 originCommunity https://github.com/codemirror
-domainName codemirror.net
- registered 2010
- awisRank
-  2022 102621
-
-relatedConcepts monaco
 
 githubRepo https://github.com/codemirror/dev
  firstCommit 2018
@@ -35,14 +42,7 @@ wikipedia https://en.wikipedia.org/wiki/CodeMirror
  dailyPageViews 37
  appeared 2007
 
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2018
- commits 1933
- committers 25
- files 17
- newestCommit 2024
-writtenIn javascript yaml json markdown typescript html
+domainName codemirror.net
+ registered 2010
+ awisRank
+  2022 102621

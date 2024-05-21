@@ -1,16 +1,16 @@
 import ../code/conceptPage.scroll
+
 id gold
 name GOLD
 appeared 2012
 tags grammarLanguage
 website http://goldparser.org/
+
+fileType text
+wordRank 740
+centralPackageRepositoryCount 0
 country United States
 originCommunity California State University, Sacramento
-domainName goldparser.org
- registered 2011
- awisRank
-  2022 5276822
-  2017 1786723
 
 example
  <Statement> ::= if <Expression> then <Statements> end
@@ -62,6 +62,8 @@ wikipedia https://en.wikipedia.org/wiki/GOLD_(parser)
  revisionCount 67
  appeared 2012
 
-fileType text
-wordRank 740
-centralPackageRepositoryCount 0
+domainName goldparser.org
+ registered 2011
+ awisRank
+  2022 5276822
+  2017 1786723

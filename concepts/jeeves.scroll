@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id jeeves
 name Jeeves
 appeared 2013
-tags pl
 creators Jean Yang
+tags pl
 website http://projects.csail.mit.edu/jeeves/
+
+writtenIn python html css javascript markdown restructuredtext csv svg make
+repoStats
+ firstCommit 2013
+ commits 638
+ committers 15
+ files 642
+ newestCommit 2018
 country United States
 originCommunity Massachusetts Institute of Technology
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/jeanqasaur/jeeves
  created 2013
  updated 2018
  description Python implementation of the Jeeves programming language.
-
-repoStats
- firstCommit 2013
- commits 638
- committers 15
- files 642
- newestCommit 2018
-
-writtenIn python html css javascript markdown restructuredtext csv svg make

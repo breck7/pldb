@@ -1,16 +1,15 @@
 import ../code/conceptPage.scroll
+
 id scrapscript
 name Scrapscript
 appeared 2023
-tags pl
 creators Taylor Troesh
-conceptDescription All programs are data, expressions are content-addressable "scraps".Scrapscript rejects traditional package-management. Instead, “scrapyards” combine features from Smalltalk, Hackage, IPFS, GitHub, and StackOverflow.
+tags pl
 website https://scrapscript.org/
-reference https://news.ycombinator.com/item?id=35712163
+conceptDescription All programs are data, expressions are content-addressable "scraps".Scrapscript rejects traditional package-management. Instead, “scrapyards” combine features from Smalltalk, Hackage, IPFS, GitHub, and StackOverflow.
 
 influencedBy haskell json elm roc hackage-pm
-
-hasExpressions true
+reference https://news.ycombinator.com/item?id=35712163
 
 example
  greet <| person:ron 3
@@ -30,3 +29,5 @@ example
    : parent s , s = (: m : f)
    : friend int
    : stranger text
+
+hasExpressions true

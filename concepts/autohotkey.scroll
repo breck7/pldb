@@ -1,15 +1,40 @@
 import ../code/conceptPage.scroll
+
 id autohotkey
 name AutoHotkey
 appeared 2003
 tags pl
 website https://autohotkey.com
+
+isOpenSource true
+clocExtensions ahk ahkl
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:AutoHotkey
+centralPackageRepositoryCount 0
 country United States
 originCommunity AutoHotkey Foundation LLC
-domainName autohotkey.com
- registered 2003
- awisRank
-  2022 17775
+projectEuler AutoHotkey
+ memberCount
+  2019 23
+  2022 28
+
+helloWorldCollection AutoHotkey
+ ; Hello World in AutoHotkey
+ 
+ Msgbox Hello, World!
+ 
+pygmentsHighlighter autohotkey
+ filename automation.py
+ fileExtensions ahk ahkl
+leachim6 AutoHotKey
+ filepath a/AutoHotKey.ahk
+ fileExtensions ahk
+ example
+  MsgBox, Hello World
+  
+
+lineCommentToken ;
+assignmentToken :=
 
 hasComments true
 hasCaseInsensitiveIdentifiers true
@@ -25,9 +50,6 @@ hasFloats true
  ; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
 hasIntegers true
  ; \d+
-
-lineCommentToken ;
-assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/AutoHotkey
  example
@@ -57,21 +79,15 @@ wikipedia https://en.wikipedia.org/wiki/AutoHotkey
  revisionCount 496
  appeared 2017
 
-githubLanguage AutoHotkey
- fileExtensions ahk ahkl
- trendingProjectsCount 0
- type programming
- aceMode autohotkey
- tmScope source.ahk
- aliases ahk
- repos 14623
+domainName autohotkey.com
+ registered 2003
+ awisRank
+  2022 17775
+
 githubBigQuery AutoHotkey
  repos 1470
  users 1244
 
-pygmentsHighlighter autohotkey
- filename automation.py
- fileExtensions ahk ahkl
 linguistGrammarRepo https://github.com/ahkscript/SublimeAutoHotkey
  firstCommit 2013
  lastCommit 2018
@@ -82,26 +98,18 @@ linguistGrammarRepo https://github.com/ahkscript/SublimeAutoHotkey
   MsgBox, Hello`, World!
   
 
-projectEuler AutoHotkey
- memberCount
-  2019 23
-  2022 28
-helloWorldCollection AutoHotkey
- ; Hello World in AutoHotkey
- 
- Msgbox Hello, World!
- 
-leachim6 AutoHotKey
- filepath a/AutoHotKey.ahk
- fileExtensions ahk
- example
-  MsgBox, Hello World
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:AutoHotkey
+isbndb 0
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage AutoHotkey
+ fileExtensions ahk ahkl
+ trendingProjectsCount 0
+ type programming
+ aceMode autohotkey
+ tmScope source.ahk
+ aliases ahk
+ repos 14623
+
+semanticScholar 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -112,9 +120,3 @@ goodreads
  Articles on GUI Automation, Including: AppleScript, Test Automation, Metacard, Automator (Software), Autohotkey, Autokey, HP Winrunner, Silktest, Autoit, Guidancer, Xvt, Visual Test, Selenium (Software), Pigui, List of Pigui Packages|2011|Hephaestus Books|17503124|0.0|0|0
  A Beginner's Guide to AutoHotkey, Absolutely the Best Free Windows Utility Software Ever!: Create Power Tools for Windows XP, Windows Vista, Windows 7 ... 8 (Second Edition) (Windows Tips and Tricks)|2012|Jack Dunning|26886515|3.62|8|0
  A Beginner's Guide to AutoHotkey, Absolutely the Best Free Windows Utility Software Ever! (Third Edition) Create Power Tools for Windows XP, Windows Vista, Windows 7, Windows 8 and Windows 10||Jack Dunning|56218249|0.0|0|0
-
-isbndb 0
-
-semanticScholar 0
-
-clocExtensions ahk ahkl

@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id vcpkg-pm
 name Vcpkg
 appeared 2016
 tags packageManager
 conceptDescription Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This tool and ecosystem are constantly evolving; your involvement is vital to its success!
+
+writtenIn json cmake diff powershell markdown yaml bourne-shell python xml bash cpp make c perl nix dockerfile z-shell
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 22228
+ committers 2356
+ files 11339
 
 githubRepo https://github.com/microsoft/vcpkg
  firstCommit 2016
@@ -14,11 +23,3 @@ githubRepo https://github.com/microsoft/vcpkg
  updated 2022
  description C++ Library Manager for Windows, Linux, and MacOS
  issues 1083
-
-repoStats
- firstCommit 2016
- newestCommit 2024
- commits 22228
- committers 2356
- files 11339
-writtenIn json cmake diff powershell markdown yaml bourne-shell python xml bash cpp make c perl nix dockerfile z-shell

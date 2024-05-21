@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id ralph
 name ralph
 appeared 2010
-tags pl
 creators Bastian Müller
+tags pl
+
+writtenIn javascript bourne-shell html c lisp markdown json
+repoStats
+ firstCommit 2010
+ commits 1212
+ committers 6
+ files 123
+ newestCommit 2019
 country Canada
 originCommunity https://github.com/turbolent/ralph/issues
 
@@ -17,13 +26,4 @@ githubRepo https://github.com/turbolent/ralph
  description Ralph is a Lisp-1 dialect that compiles to JavaScript
  issues 2
 
-repoStats
- firstCommit 2010
- commits 1212
- committers 6
- files 123
- newestCommit 2019
-
 semanticScholar 0
-
-writtenIn javascript bourne-shell html c lisp markdown json

@@ -1,24 +1,16 @@
 import ../code/conceptPage.scroll
+
 id beads-lang
 name beads-lang
 appeared 2016
-tags pl
 creators Edward de Jong
+tags pl
 website http://beadslang.org/
-reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+
 fileExtensions beads
 country United States
 originCommunity Edward de Jong
-domainName beadslang.org
- registered 2016
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation true
-
-lineCommentToken //
+reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
 
 example
  beads level 1 program calculator
@@ -263,3 +255,14 @@ example
      g.terms[g.termx].op = operand
      inc g.termx
      g.terms[g.termx].ss = "" // empty term
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation true
+
+domainName beadslang.org
+ registered 2016

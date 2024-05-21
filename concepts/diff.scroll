@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id diff
 name Diff
 appeared 1974
 tags unixApplication
+
+relatedConcepts edscript patch context-diff unified-diff
+clocExtensions diff patch
+fileType text
+wordRank 2959
+codeMirror diff
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Bell Laboratories
 
-relatedConcepts edscript patch context-diff unified-diff
+pygmentsHighlighter Diff
+ filename diff.py
+ fileExtensions diff patch
 
 wikipedia https://en.wikipedia.org/wiki/Diff_utility
  example
@@ -58,23 +68,10 @@ wikipedia https://en.wikipedia.org/wiki/Diff_utility
  revisionCount 1
  appeared 1970
 
-githubLanguage Diff
- fileExtensions diff patch
- trendingProjectsCount 0
- type data
- aceMode diff
- codemirrorMode diff
- codemirrorMimeType text/x-diff
- tmScope source.diff
- aliases udiff
 githubBigQuery Diff
  repos 561
  users 477
 
-codeMirror diff
-pygmentsHighlighter Diff
- filename diff.py
- fileExtensions diff patch
 linguistGrammarRepo https://github.com/textmate/diff.tmbundle
  firstCommit 2005
  lastCommit 2017
@@ -88,8 +85,12 @@ linguistGrammarRepo https://github.com/textmate/diff.tmbundle
   +++ b/lib/linguist.rb
   
 
-fileType text
-wordRank 2959
-centralPackageRepositoryCount 0
-
-clocExtensions diff patch
+githubLanguage Diff
+ fileExtensions diff patch
+ trendingProjectsCount 0
+ type data
+ aceMode diff
+ codemirrorMode diff
+ codemirrorMimeType text/x-diff
+ tmScope source.diff
+ aliases udiff

@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id trac
 name TRAC
 appeared 1964
-tags pl
 creators Calvin Mooers
+tags pl
 standsFor Text Reckoning And Compiling
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 
 wikipedia https://en.wikipedia.org/wiki/TRAC_(programming_language)
@@ -19,13 +23,10 @@ wikipedia https://en.wikipedia.org/wiki/TRAC_(programming_language)
 
 hopl https://hopl.info/showlanguage.prx?exp=276
 
-fileType text
-centralPackageRepositoryCount 0
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2010||Trac (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130918170
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Managing Software Development with Trac and Subversion|2007|David J. Murphy|3171352|2.60|5|0
-
-isbndb 1
- year|publisher|title|authors|isbn13
- 2010||Trac (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130918170

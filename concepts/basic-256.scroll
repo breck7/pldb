@@ -1,17 +1,27 @@
 import ../code/conceptPage.scroll
+
 id basic-256
 name Basic-256
 appeared 2007
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Shawnee State University
+
+leachim6 BASIC 256
+ filepath b/BASIC 256.kbs
+ example
+  Print "Hello World"
+  
+
+printToken Print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken Print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Basic-256
  related basic
@@ -22,12 +32,3 @@ wikipedia https://en.wikipedia.org/wiki/Basic-256
  revisionCount 55
  dailyPageViews 9
  appeared 2014
-
-leachim6 BASIC 256
- filepath b/BASIC 256.kbs
- example
-  Print "Hello World"
-  
-
-isOpenSource true
-centralPackageRepositoryCount 0

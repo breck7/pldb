@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id free-pascal
 name Free Pascal
 appeared 1997
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://www.delorie.com/bin/cvsweb.cgi/djgpp/
 
@@ -17,9 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Free_Pascal
  revisionCount 749
  dailyPageViews 127
  appeared 1997
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
 

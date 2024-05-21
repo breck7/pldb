@@ -1,18 +1,14 @@
 import ../code/conceptPage.scroll
+
 id ags-script
 name Adventure Game Studio Script
 appeared 2001
 tags pl
 website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity Adventure Game Studio
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  function hDoor_Look()
@@ -20,16 +16,14 @@ example
    Display("It's quite a large, ominous looking door.");
  }
 
-githubLanguage AGS Script
- fileExtensions asc ash
- trendingProjectsCount 0
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.c++
- aliases ags
- repos 128
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
 githubBigQuery AGS Script
  repos 674
  users 631
@@ -46,5 +40,13 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   // place import definitions and #define names here to be used by all
   // scripts.
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage AGS Script
+ fileExtensions asc ash
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.c++
+ aliases ags
+ repos 128

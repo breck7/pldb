@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id json-script
 name JSONScript
 appeared 2016
-tags pl
 creators Evgeny Poberezkin
+tags pl
 website https://www.jsonscript.org/
+
+writtenIn json javascript markdown bash yaml
+repoStats
+ firstCommit 2015
+ commits 105
+ committers 2
+ files 48
+ newestCommit 2016
 country United Kingdom
 originCommunity https://github.com/JSONScript
-domainName jsonscript.org
- registered 2016
 
 githubRepo https://github.com/JSONScript/jsonscript
  firstCommit 2015
@@ -20,15 +27,9 @@ githubRepo https://github.com/JSONScript/jsonscript
  description Scripted processing of existing endpoints and services
  issues 0
 
-repoStats
- firstCommit 2015
- commits 105
- committers 2
- files 48
- newestCommit 2016
+domainName jsonscript.org
+ registered 2016
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  11745886|Show HN: JSONScript – Asynchronous scripting language using JSON format|2016-05-21 19:42:45 UTC|1463859765|epoberezkin|47|49
-
-writtenIn json javascript markdown bash yaml

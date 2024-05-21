@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id x-bitmap
 name X BitMap
 appeared 1989
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/X_BitMap
  example
@@ -19,17 +23,6 @@ wikipedia https://en.wikipedia.org/wiki/X_BitMap
  revisionCount 149
  dailyPageViews 69
  appeared 1989
-
-githubLanguage X BitMap
- fileExtensions xbm
- type data
- group C
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-csrc
- tmScope source.c
- aliases xbm
- repos 8276
 
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005
@@ -76,5 +69,13 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   };
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage X BitMap
+ fileExtensions xbm
+ type data
+ group C
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.c
+ aliases xbm
+ repos 8276

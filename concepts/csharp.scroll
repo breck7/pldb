@@ -1,17 +1,11 @@
 import ../code/conceptPage.scroll
+
 id csharp
 name C#
 appeared 2000
-tags pl
 creators Anders Hejlsberg
+tags pl
 website https://docs.microsoft.com/dotnet/csharp/language-reference/
-documentation https://learn.microsoft.com/en-us/dotnet/csharp/
-emailList https://www.bouncycastle.org/csharp/mailing_lists.html
-spec https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
-fileExtensions cs
-country United States
-originCommunity Microsoft
-releaseNotesUrl https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history
 versions
  2002 1.0
  2003 1.2
@@ -26,7 +20,66 @@ versions
  2021 10.0
  2022 11.0
 
+spec https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
+fileExtensions cs
+releaseNotesUrl https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history
 visualParadigm false
+clocExtensions cs
+fileType text
+documentation https://learn.microsoft.com/en-us/dotnet/csharp/
+emailList https://www.bouncycastle.org/csharp/mailing_lists.html
+antlr https://github.com/antlr/grammars-v4/tree/master/csharp
+monaco csharp
+replit https://repl.it/languages/csharp
+packageRepository https://www.nuget.org/
+country United States
+originCommunity Microsoft
+projectEuler C#
+ memberCount
+  2019 13078
+  2022 14113
+
+pygmentsHighlighter C#
+ filename dotnet.py
+ fileExtensions cs
+rijuRepl https://riju.codes/csharp
+ example
+  class main {
+      static void Main(string[] args) {
+          System.Console.WriteLine("Hello, world!");
+      }
+  }
+subreddit https://reddit.com/r/csharp
+ memberCount
+  2017 46616
+  2022 202070
+leachim6 CSharp
+ filepath c/CSharp.cs
+ fileExtensions cs
+ example
+  System.Console.WriteLine("Hello World");
+  
+languageServerProtocolProject https://github.com/OmniSharp/csharp-language-server-protocol
+ writtenIn csharp
+compilerExplorer C#
+ example
+  class Program
+  {
+      static int Square(int num) => num * num;
+  }
+  
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/csharp
+ memberCount 351091
+ groupCount 802
+keywords abstract add alias as ascending async await base bool break byte case catch char checked class const continue decimal default delegate descending do double dynamic else enum event explicit extern false finally fixed float for foreach from get global goto group if implicit in int interface internal into is join let lock long namespace new null object operator orderby out override params partial private protected public readonly record ref remove return sbyte sealed select set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using value var virtual void volatile where while yield
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken Console.WriteLine
+stringToken "
+booleanTokens true false
 
 hasComments true
  // A comment
@@ -180,13 +233,7 @@ hasSwitch true
 hasAccessModifiers true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken Console.WriteLine
-stringToken "
-booleanTokens true false
-keywords abstract add alias as ascending async await base bool break byte case catch char checked class const continue decimal default delegate descending do double dynamic else enum event explicit extern false finally fixed float for foreach from get global goto group if implicit in int interface internal into is join let lock long namespace new null object operator orderby out override params partial private protected public readonly record ref remove return sbyte sealed select set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using value var virtual void volatile where while yield
-
+jupyterKernel https://github.com/zabirauf/icsharp
 wikipedia https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
  example
   using System.Windows.Forms;
@@ -208,6 +255,49 @@ wikipedia https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
  revisionCount 4580
  appeared 2017
  fileExtensions cs
+
+hopl https://hopl.info/showlanguage.prx?exp=3445
+tiobe C#
+ currentRank 5
+pypl C#
+
+githubBigQuery C#
+ repos 133078
+ users 82607
+
+linguistGrammarRepo https://github.com/atom/language-csharp
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 30
+ commitCount 235
+ sampleCount 5
+ example
+  ﻿using System;
+  
+  namespace MongoDB.Serialization.Descriptors
+  {
+      internal class BsonPropertyValue
+      {
+          public bool IsDictionary { get; private set; }
+  
+          public Type Type { get; private set; }
+  
+          public object Value { get; private set; }
+  
+          public BsonPropertyValue(Type type, object value, bool isDictionary)
+          {
+              Type = type;
+              Value = value;
+              IsDictionary = isDictionary;
+          }
+      }
+  }
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 2015|Cengage Learning|C# Programming: From Problem Analysis to Program Design|Doyle, Barbara|9781285856872
+ 2016|Pearson|Starting out with Visual C#|Gaddis, Tony|9780134382609
+ 2013|Microsoft Press|Microsoft Visual C# 2013 Step by Step|Sharp, John|9780735681835
 
 githubLanguage C#
  fileExtensions cs cake csx linq
@@ -246,71 +336,6 @@ githubLanguage C#
  tmScope source.cs
  aliases csharp or cake or cakescript
  repos 2161625
-githubBigQuery C#
- repos 133078
- users 82607
-
-antlr https://github.com/antlr/grammars-v4/tree/master/csharp
-monaco csharp
-pygmentsHighlighter C#
- filename dotnet.py
- fileExtensions cs
-linguistGrammarRepo https://github.com/atom/language-csharp
- firstCommit 2014
- lastCommit 2018
- committerCount 30
- commitCount 235
- sampleCount 5
- example
-  ﻿using System;
-  
-  namespace MongoDB.Serialization.Descriptors
-  {
-      internal class BsonPropertyValue
-      {
-          public bool IsDictionary { get; private set; }
-  
-          public Type Type { get; private set; }
-  
-          public object Value { get; private set; }
-  
-          public BsonPropertyValue(Type type, object value, bool isDictionary)
-          {
-              Type = type;
-              Value = value;
-              IsDictionary = isDictionary;
-          }
-      }
-  }
-languageServerProtocolProject https://github.com/OmniSharp/csharp-language-server-protocol
- writtenIn csharp
-
-projectEuler C#
- memberCount
-  2019 13078
-  2022 14113
-leachim6 CSharp
- filepath c/CSharp.cs
- fileExtensions cs
- example
-  System.Console.WriteLine("Hello World");
-  
-
-compilerExplorer C#
- example
-  class Program
-  {
-      static int Square(int num) => num * num;
-  }
-  
-rijuRepl https://riju.codes/csharp
- example
-  class main {
-      static void Main(string[] args) {
-          System.Console.WriteLine("Hello, world!");
-      }
-  }
-replit https://repl.it/languages/csharp
 
 indeedJobs c# developer
  2017 19747
@@ -321,31 +346,4 @@ stackOverflowSurvey
   fans 17999
   percentageUsing 0.28
 
-subreddit https://reddit.com/r/csharp
- memberCount
-  2017 46616
-  2022 202070
-meetup https://www.meetup.com/topics/csharp
- memberCount 351091
- groupCount 802
-
-tiobe C#
- currentRank 5
-hopl https://hopl.info/showlanguage.prx?exp=3445
-pypl C#
-
-packageRepository https://www.nuget.org/
-
-jupyterKernel https://github.com/zabirauf/icsharp
-fileType text
-githubCopilotOptimized true
-
-isbndb 3
- year|publisher|title|authors|isbn13
- 2015|Cengage Learning|C# Programming: From Problem Analysis to Program Design|Doyle, Barbara|9781285856872
- 2016|Pearson|Starting out with Visual C#|Gaddis, Tony|9780134382609
- 2013|Microsoft Press|Microsoft Visual C# 2013 Step by Step|Sharp, John|9780735681835
-
 semanticScholar 0
-
-clocExtensions cs

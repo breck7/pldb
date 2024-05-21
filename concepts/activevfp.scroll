@@ -1,17 +1,21 @@
 import ../code/conceptPage.scroll
+
 id activevfp
 name ActiveVFP
 appeared 2001
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 originCommunity VFP Community
+
+lineCommentToken *
 
 hasLineComments true
  * A comment
 hasComments true
  * A comment
 hasSemanticIndentation false
-
-lineCommentToken *
 
 wikipedia https://en.wikipedia.org/wiki/ActiveVFP
  example
@@ -97,6 +101,3 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
  revisionCount 58
  dailyPageViews 13
  appeared 2001
-
-isOpenSource true
-centralPackageRepositoryCount 0

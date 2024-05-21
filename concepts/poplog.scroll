@@ -1,13 +1,15 @@
 import ../code/conceptPage.scroll
+
 id poplog
 name POPLOG
 appeared 1992
 tags pl
-reference https://semanticscholar.org/paper/804beaedcc3577a60b2f1bc177a96723fe70a888
-country United Kingdom
-originCommunity University of Sussex
 
 visualParadigm false
+centralPackageRepositoryCount 0
+country United Kingdom
+originCommunity University of Sussex
+reference https://semanticscholar.org/paper/804beaedcc3577a60b2f1bc177a96723fe70a888
 
 wikipedia https://en.wikipedia.org/wiki/Poplog
  related pop-11 common-lisp prolog standard-ml spss scheme sparc solaris powerpc pop-2
@@ -19,7 +21,5 @@ wikipedia https://en.wikipedia.org/wiki/Poplog
  appeared 1976
 
 hopl https://hopl.info/showlanguage.prx?exp=1705
-
-centralPackageRepositoryCount 0
 
 semanticScholar 0

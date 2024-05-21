@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id jison-lex
 name Jison Lex
 appeared 2013
-tags pl
 creators Zachary Carter
+tags pl
+
+isOpenSource true
+writtenIn javascript lex json markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 33
+ committers 6
+ files 8
+ newestCommit 2014
 country United States and The Netherlands and Germany
 originCommunity https://github.com/zaach/jison-lex/issues
-
-hasBooleans true
-
-booleanTokens true false
 
 githubRepo https://github.com/zaach/jison-lex
  firstCommit 2013
@@ -21,21 +29,9 @@ githubRepo https://github.com/zaach/jison-lex
  description generates lexical analyzers. used by jison.
  issues 20
 
-repoStats
- firstCommit 2013
- commits 33
- committers 6
- files 8
- newestCommit 2014
+booleanTokens true false
 
-githubLanguage Jison Lex
- fileExtensions jisonlex
- trendingProjectsCount 0
- type programming
- group Lex
- aceMode text
- tmScope source.jisonlex
- repos 0
+hasBooleans true
 
 linguistGrammarRepo https://github.com/cdibbs/language-jison
  firstCommit 2014
@@ -73,8 +69,11 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
   .                           {/* ignore bad characters */}
   <<EOF>>                     {return 'EOF';}
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn javascript lex json markdown
+githubLanguage Jison Lex
+ fileExtensions jisonlex
+ trendingProjectsCount 0
+ type programming
+ group Lex
+ aceMode text
+ tmScope source.jisonlex
+ repos 0

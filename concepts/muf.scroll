@@ -1,17 +1,17 @@
 import ../code/conceptPage.scroll
+
 id muf
 name Multi-User Forth
 appeared 1995
 tags pl
-documentation https://mud.fandom.com/wiki/MUF_(programming_language)
 standsFor Multi-User Forth
+
+fileType text
+documentation https://mud.fandom.com/wiki/MUF_(programming_language)
+rosettaCode http://www.rosettacode.org/wiki/Category:MUF
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of California, Berkeley
-
-hasStrings true
- "Hello world"
-
-stringToken "
 
 example
  $include $lib/strings
@@ -293,6 +293,19 @@ example
     me @ "Check done." notify
  ;
  
+leachim6 Muf
+ filepath m/Muf.muf
+ fileExtensions muf
+ example
+  : main
+      me @ "Hello World" notify
+  ;
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/MUF_(programming_language)
  related muf forth
@@ -304,6 +317,8 @@ wikipedia https://en.wikipedia.org/wiki/MUF_(programming_language)
  dailyPageViews 2
  appeared 1995
 
+isbndb 0
+
 githubLanguage MUF
  fileExtensions muf m
  trendingProjectsCount 0
@@ -314,18 +329,3 @@ githubLanguage MUF
  codemirrorMimeType text/x-forth
  tmScope none
  repos 0
-
-leachim6 Muf
- filepath m/Muf.muf
- fileExtensions muf
- example
-  : main
-      me @ "Hello World" notify
-  ;
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:MUF
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0

@@ -1,18 +1,58 @@
 import ../code/conceptPage.scroll
+
 id hy
 name Hy
 appeared 2013
-tags pl
 creators Paul Tagliamonte
-conceptDescription A dialect of Lisp that's embedded in Python
+tags pl
 website http://hylang.org/
+conceptDescription A dialect of Lisp that's embedded in Python
+
+isOpenSource true
+writtenIn python restructuredtext svg yaml markdown css dockerfile
+tryItOnline hy
+fileType text
 documentation https://docs.hylang.org/en/stable/
+rosettaCode http://www.rosettacode.org/wiki/Category:Hy
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 4329
+ committers 208
+ files 165
+ newestCommit 2024
 country Various
 originCommunity https://github.com/hylang
-domainName hylang.org
- registered 2013
- awisRank
-  2022 2391221
+
+pygmentsHighlighter Hy
+ filename lisp.py
+ fileExtensions hy
+rijuRepl https://riju.codes/hy
+ example
+  (print "Hello, world!")
+  
+example
+ (+ "Hyllo " "World" "!")
+leachim6 Hy
+ filepath h/Hy.hy
+ fileExtensions hy
+ example
+  (print "Hello World")
+  
+
+githubRepo https://github.com/hylang/hy
+ firstCommit 2012
+ stars 4282
+ forks 350
+ subscribers 122
+ created 2012
+ updated 2022
+ description A dialect of Lisp that's embedded in Python
+ issues 68
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 hasLineComments true
  ; A comment
@@ -32,30 +72,8 @@ hasIntegers true
  ; -?\d+
 hasMultiLineComments true
 
-lineCommentToken ;
-printToken print
-stringToken "
-
-example
- (+ "Hyllo " "World" "!")
-
-githubRepo https://github.com/hylang/hy
- firstCommit 2012
- stars 4282
- forks 350
- subscribers 122
- created 2012
- updated 2022
- description A dialect of Lisp that's embedded in Python
- issues 68
-
-repoStats
- firstCommit 2012
- commits 4329
- committers 208
- files 165
- newestCommit 2024
-
+jupyterKernel https://github.com/bollwyvl/hy_kernel/
+jupyterKernel https://github.com/Calysto/calysto_hy
 wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
  example
   => (print "Hy!")
@@ -73,22 +91,15 @@ wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
  appeared 2013
  fileExtensions hy
 
-githubLanguage Hy
- fileExtensions hy
- trendingProjectsCount 0
- type programming
- interpreters hy
- aceMode text
- tmScope source.hy
- aliases hylang
- repos 398
+domainName hylang.org
+ registered 2013
+ awisRank
+  2022 2391221
+
 githubBigQuery Hy
  repos 180
  users 154
 
-pygmentsHighlighter Hy
- filename lisp.py
- fileExtensions hy
 linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
  firstCommit 2013
  lastCommit 2018
@@ -107,28 +118,16 @@ linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
       (print (fib x))))
   
 
-leachim6 Hy
- filepath h/Hy.hy
- fileExtensions hy
- example
-  (print "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Hy
-
-rijuRepl https://riju.codes/hy
- example
-  (print "Hello, world!")
-  
-tryItOnline hy
-
-jupyterKernel https://github.com/bollwyvl/hy_kernel/
-jupyterKernel https://github.com/Calysto/calysto_hy
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Hy
+ fileExtensions hy
+ trendingProjectsCount 0
+ type programming
+ interpreters hy
+ aceMode text
+ tmScope source.hy
+ aliases hylang
+ repos 398
 
-writtenIn python restructuredtext svg yaml markdown css dockerfile
+semanticScholar 0

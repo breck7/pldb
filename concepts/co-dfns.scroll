@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id co-dfns
 name co-dfns
 appeared 2012
-tags pl
 creators Aaron Hsu
+tags pl
 website https://www.patreon.com/arcfide
-reference https://dl.acm.org/doi/10.1145/2627373.2627384
+
+writtenIn apl c markdown yaml
+repoStats
+ firstCommit 2012
+ commits 5302
+ committers 23
+ files 322
+ newestCommit 2024
 country United States
 originCommunity https://github.com/Co-dfns/
+reference https://dl.acm.org/doi/10.1145/2627373.2627384
+
+twitter https://twitter.com/patreon
 
 githubRepo https://github.com/Co-dfns/Co-dfns
  firstCommit 2012
@@ -19,15 +30,4 @@ githubRepo https://github.com/Co-dfns/Co-dfns
  description High-performance, Reliable, and Parallel APL
  issues 149
 
-repoStats
- firstCommit 2012
- commits 5302
- committers 23
- files 322
- newestCommit 2024
-
-twitter https://twitter.com/patreon
-
 semanticScholar 0
-
-writtenIn apl c markdown yaml

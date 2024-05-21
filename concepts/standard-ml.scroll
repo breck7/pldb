@@ -1,28 +1,46 @@
 import ../code/conceptPage.scroll
+
 id standard-ml
 name Standard ML
 appeared 1990
 tags pl
 website http://sml-family.org
-documentation http://www.cs.cmu.edu/~rwh/isml/book.pdf
-reference https://www.smlnj.org/sml.html
 aka sml
 aka standardml
+
 fileExtensions sml
+clocExtensions fun sig sml
+fileType text
+documentation http://www.cs.cmu.edu/~rwh/isml/book.pdf
+quineRelay Standard ML
+centralPackageRepositoryCount 0
+ubuntuPackage mlton
 country United States
 originCommunity Bell Laboratories and Princeton University
-domainName sml-family.org
- registered 2014
- awisRank
-  2017 560018
+reference https://www.smlnj.org/sml.html
+
+pygmentsHighlighter Standard ML
+ filename ml.py
+ fileExtensions sml sig fun
+rijuRepl https://riju.codes/standardml
+ example
+  print "Hello, world!\n";
+  
+leachim6 Standard ML
+ filepath s/Standard ML.sml
+ example
+  fun hello() = print("Hello World\n");
+  
+  hello()
+  
+
+lineCommentToken #
+printToken print
 
 hasTypeInference true
 hasLineComments false
 hasPrintDebugging true
 hasSemanticIndentation false
-
-lineCommentToken #
-printToken print
 
 wikipedia https://en.wikipedia.org/wiki/Standard_ML
  example
@@ -38,26 +56,17 @@ wikipedia https://en.wikipedia.org/wiki/Standard_ML
  appeared 1997
  fileExtensions sml
 
-githubLanguage Standard ML
- fileExtensions ml fun sig sml
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  komeiji-satori Dress https://github.com/komeiji-satori.png https://github.com/komeiji-satori/Dress "Standard ML" #dc566d 11618 1639 636 "好耶 是女装"
- trendingProjectsCount 2
- type programming
- aceMode text
- codemirrorMode mllike
- codemirrorMimeType text/x-ocaml
- tmScope source.ml
- aliases sml
- repos 392047
+tiobe Standard ML
+
+domainName sml-family.org
+ registered 2014
+ awisRank
+  2017 560018
+
 githubBigQuery Standard ML
  repos 2390
  users 2046
 
-pygmentsHighlighter Standard ML
- filename ml.py
- fileExtensions sml sig fun
 linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
  firstCommit 2006
  lastCommit 2015
@@ -94,28 +103,20 @@ linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
      end
   
 
-leachim6 Standard ML
- filepath s/Standard ML.sml
- example
-  fun hello() = print("Hello World\n");
-  
-  hello()
-  
-quineRelay Standard ML
-
-rijuRepl https://riju.codes/standardml
- example
-  print "Hello, world!\n";
-  
-
-tiobe Standard ML
-
-ubuntuPackage mlton
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Standard ML
+ fileExtensions ml fun sig sml
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  komeiji-satori Dress https://github.com/komeiji-satori.png https://github.com/komeiji-satori/Dress "Standard ML" #dc566d 11618 1639 636 "好耶 是女装"
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ codemirrorMode mllike
+ codemirrorMimeType text/x-ocaml
+ tmScope source.ml
+ aliases sml
+ repos 392047
 
-clocExtensions fun sig sml
+semanticScholar 0

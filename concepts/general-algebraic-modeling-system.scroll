@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id general-algebraic-modeling-system
 name GAMS
 appeared 1963
 tags pl
 aka gams
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity GAMS Development Corporation
 
@@ -128,20 +133,9 @@ wikipedia https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System
  dailyPageViews 89
  appeared 1963
 
-githubLanguage GAMS
- fileExtensions gms
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope none
- repos 810
 githubBigQuery GAMS
  repos 49
  users 43
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0
 
 isbndb 4
  year|publisher|title|authors|isbn13
@@ -149,3 +143,11 @@ isbndb 4
  20171204|Springer Nature|Continuous Nonlinear Optimization for Engineering Applications in GAMS Technology|Neculai Andrei|9783319583563
  |Springer International Publishing :|Continuous Nonlinear Optimization For Engineering Applications In Gams Technology|Andrei, Neculai (author.)|9783319583563
  2013|Springer|Nonlinear Optimization Applications Using The Gams Technology (springer Optimization And Its Applications)|Neculai Andrei|9781461467960
+
+githubLanguage GAMS
+ fileExtensions gms
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 810

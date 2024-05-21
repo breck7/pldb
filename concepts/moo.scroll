@@ -1,21 +1,21 @@
 import ../code/conceptPage.scroll
+
 id moo
 name MOO
 appeared 1993
 tags pl
 standsFor MUD, object-oriented
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:MOO
+centralPackageRepositoryCount 0
 country Canada
 originCommunity University of Waterloo
 
-hasComments true
-hasPrintDebugging true
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-printToken player:tell
-stringToken "
-
+helloWorldCollection MUD%2C object-oriented
+ "Hello World in MOO";
+ 
+ player.location:announce_all("Hello, world!");
 example
  @program toy:wind
  this.wound = this.wound + 2;
@@ -23,6 +23,22 @@ example
  player.location:announce(player.name, " winds up the ", this.name,".");
  .
  
+leachim6 Moo
+ filepath m/Moo.moo
+ fileExtensions moo
+ example
+  @program hello:run
+  player:tell("Hello World");
+  .
+
+printToken player:tell
+stringToken "
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/MOO_(programming_language)
  example
@@ -51,6 +67,12 @@ wikipedia https://en.wikipedia.org/wiki/MOO_(programming_language)
  revisionCount 119
  appeared 1993
 
+tiobe MOO
+
+githubBigQuery Moocode
+ repos 23
+ users 23
+
 githubLanguage Moocode
  fileExtensions moo
  trendingProjectsCount 0
@@ -58,24 +80,3 @@ githubLanguage Moocode
  aceMode text
  tmScope none
  repos 83
-githubBigQuery Moocode
- repos 23
- users 23
-
-helloWorldCollection MUD%2C object-oriented
- "Hello World in MOO";
- 
- player.location:announce_all("Hello, world!");
-leachim6 Moo
- filepath m/Moo.moo
- fileExtensions moo
- example
-  @program hello:run
-  player:tell("Hello World");
-  .
-rosettaCode http://www.rosettacode.org/wiki/Category:MOO
-
-tiobe MOO
-
-fileType text
-centralPackageRepositoryCount 0

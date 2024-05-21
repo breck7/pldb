@@ -1,15 +1,25 @@
 import ../code/conceptPage.scroll
+
 id codecept
 name codecept
 appeared 2015
 tags library
 website http://codecept.io/
+
+isOpenSource true
+writtenIn javascript mustache php markdown json yaml gherkin typescript bourne-shell html dockerfile bash
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 2940
+ committers 437
+ files 879
+ newestCommit 2024
 country Ukraine and India
 originCommunity https://github.com/codeceptjs/
-domainName codecept.io
- registered 2015
- awisRank
-  2022 797998
+
+twitter https://twitter.com/codeceptjs
 
 githubRepo https://github.com/codeception/codeceptjs/
  stars 3725
@@ -20,15 +30,7 @@ githubRepo https://github.com/codeception/codeceptjs/
  description Supercharged End 2 End Testing Framework for NodeJS
  issues 344
 
-twitter https://twitter.com/codeceptjs
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2015
- commits 2940
- committers 437
- files 879
- newestCommit 2024
-writtenIn javascript mustache php markdown json yaml gherkin typescript bourne-shell html dockerfile bash
+domainName codecept.io
+ registered 2015
+ awisRank
+  2022 797998

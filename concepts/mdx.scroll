@@ -1,18 +1,23 @@
 import ../code/conceptPage.scroll
+
 id mdx
 name MDX
 appeared 2017
-tags textMarkup
 creators John Otander
-conceptDescription MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
+tags textMarkup
 website https://mdxjs.com/
 webRepl https://mdxjs.com/playground/
+conceptDescription MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
+
+writtenIn javascript markdown jsx json yaml typescript css svg json5
+repoStats
+ firstCommit 2017
+ commits 1960
+ committers 192
+ files 183
+ newestCommit 2024
 country Various
 originCommunity https://github.com/mdx-js
-domainName mdxjs.com
- registered 2018
- awisRank
-  2022 345081
 
 example
  import { Chart } from '../components/chart'
@@ -22,6 +27,7 @@ example
  The chart is rendered inside our MDX document.
  
  <Chart />
+twitter https://twitter.com/chrisbiscardi
 
 githubRepo https://github.com/mdx-js/mdx
  firstCommit 2017
@@ -33,19 +39,13 @@ githubRepo https://github.com/mdx-js/mdx
  description Markdown for the component era
  issues 19
 
-repoStats
- firstCommit 2017
- commits 1960
- committers 192
- files 183
- newestCommit 2024
-
-twitter https://twitter.com/chrisbiscardi
+domainName mdxjs.com
+ registered 2018
+ awisRank
+  2022 345081
 
 isbndb 1
  year|publisher|title|authors|isbn13
  2013-08-26|Packt Publishing|Instant MDX Queries for SQL Server 2012|Nicholas Emond|9781782178071
 
 semanticScholar 0
-
-writtenIn javascript markdown jsx json yaml typescript css svg json5

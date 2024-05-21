@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id incipit
 name Incipit
 appeared 2021
-tags textMarkup
 creators Lucas de Sena
+tags textMarkup
 conceptDescription The ‘Incipit Markup Language’ (or ‘Incipit’, for short) is a plain text markup language that uses Unicode characters and the structure of the text itself to format documents.
+
+writtenIn awk make
+repoStats
+ firstCommit 2021
+ commits 26
+ committers 2
+ files 11
+ newestCommit 2021
 country Brazil
 originCommunity https://github.com/phillbush/incipit/issues
 
@@ -37,12 +46,3 @@ githubRepo https://github.com/phillbush/incipit
  updated 2021
  description the incipit plain text markup language, and some troff macro packages
  issues 0
-
-repoStats
- firstCommit 2021
- commits 26
- committers 2
- files 11
- newestCommit 2021
-
-writtenIn awk make

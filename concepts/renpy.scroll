@@ -1,18 +1,23 @@
 import ../code/conceptPage.scroll
+
 id renpy
 name Ren'Py
 appeared 2004
 tags pl
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country England
 originCommunity https://github.com/renpy
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Ren'Py
  related python cython linux freebsd android ios utf-8
@@ -24,14 +29,6 @@ wikipedia https://en.wikipedia.org/wiki/Ren'Py
  dailyPageViews 130
  appeared 2004
 
-githubLanguage Ren'Py
- fileExtensions rpy
- trendingProjectsCount 0
- type programming
- aceMode python
- tmScope source.renpy
- aliases renpy
- repos 3124
 githubBigQuery Ren'Py
  repos 49
  users 47
@@ -105,6 +102,11 @@ linguistGrammarRepo https://github.com/williamd1k0/language-renpy.git
   
       # Start some m
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Ren'Py
+ fileExtensions rpy
+ trendingProjectsCount 0
+ type programming
+ aceMode python
+ tmScope source.renpy
+ aliases renpy
+ repos 3124

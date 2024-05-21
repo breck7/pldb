@@ -1,19 +1,33 @@
 import ../code/conceptPage.scroll
+
 id nial
 name Nial
 appeared 1981
-tags pl
 creators Mike Jenkins
+tags pl
 standsFor Nested Interactive Array Language
+
+tryItOnline nial
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Nial
+centralPackageRepositoryCount 0
 country Canada
 originCommunity Queen's University
+
+leachim6 Nial
+ filepath n/Nial.ndf
+ fileExtensions ndf
+ example
+  write 'Hello World';
+  bye
+  
+
+printToken write
+stringToken '
 
 hasPrintDebugging true
 hasStrings true
  'Hello world'
-
-printToken write
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Nial
  example
@@ -33,21 +47,7 @@ wikipedia https://en.wikipedia.org/wiki/Nial
  dailyPageViews 21
  appeared 1981
 
-leachim6 Nial
- filepath n/Nial.ndf
- fileExtensions ndf
- example
-  write 'Hello World';
-  bye
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Nial
-
-tryItOnline nial
-
 hopl https://hopl.info/showlanguage.prx?exp=1242
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

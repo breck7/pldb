@@ -1,26 +1,81 @@
 import ../code/conceptPage.scroll
+
 id elm
 name Elm
 appeared 2012
-tags pl
 creators Evan Czaplicki
+tags pl
 website http://elm-lang.org
 webRepl http://elm-lang.org/try
-documentation https://elm-lang.org/docs
-fileExtensions elm
-country United States and France
-originCommunity https://github.com/elm
-domainName elm-lang.org
- registered 2011
- awisRank
-  2022 272317
-  2017 111935
 roadmap https://github.com/elm/compiler/blob/master/roadmap.md
 
-compilesTo javascript
+isOpenSource true
 writtenIn haskell markdown json elm bourne-shell yaml javascript css xml python dockerfile
-
+compilesTo javascript
+officialBlogUrl https://elm-lang.org/news
+fileExtensions elm
 visualParadigm false
+clocExtensions elm
+fileType text
+documentation https://elm-lang.org/docs
+faqPageUrl https://faq.elm-community.org/
+codeMirror elm
+rosettaCode http://www.rosettacode.org/wiki/Category:Elm
+packageRepository https://package.elm-lang.org/
+repoStats
+ firstCommit 2012
+ commits 5829
+ committers 120
+ files 236
+ newestCommit 2023
+country United States and France
+originCommunity https://github.com/elm
+projectEuler Elm
+ memberCount
+  2022 4
+
+helloWorldCollection Elm
+ -- Hello world in Elm
+ 
+ import Text
+ 
+ main = Text.plainText "Hello, world!"
+pygmentsHighlighter Elm
+ filename elm.py
+ fileExtensions elm
+rijuRepl https://riju.codes/elm
+ example
+  module Main exposing (..)
+  
+  output : String
+  output = "Hello, world!"
+  
+twitter https://twitter.com/elmlang
+leachim6 Elm
+ filepath e/Elm.elm
+ fileExtensions elm
+ example
+  import Html exposing (text)
+  
+  main =
+    text "Hello World"
+  
+languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
+ writtenIn elm
+
+githubRepo https://github.com/elm-lang/elm-compiler
+ stars 6875
+ forks 630
+ subscribers 208
+ created 2012
+ updated 2022
+ firstCommit 2012
+ description Compiler for Elm, a functional language for reliable webapps.
+ issues 281
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+stringToken "
 
 hasComments true
 hasTypeInference true
@@ -37,27 +92,6 @@ hasFloats true
  -- _?\d+\.(?=\d+)
 hasIntegers true
  -- _?\d+
-
-lineCommentToken --
-multiLineCommentTokens {- -}
-stringToken "
-
-githubRepo https://github.com/elm-lang/elm-compiler
- stars 6875
- forks 630
- subscribers 208
- created 2012
- updated 2022
- firstCommit 2012
- description Compiler for Elm, a functional language for reliable webapps.
- issues 281
-
-repoStats
- firstCommit 2012
- commits 5829
- committers 120
- files 236
- newestCommit 2023
 
 wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
  example
@@ -141,23 +175,18 @@ wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
  appeared 2012
  fileExtensions elm
 
-githubLanguage Elm
- fileExtensions elm
- trendingProjectsCount 0
- type programming
- aceMode elm
- codemirrorMode elm
- codemirrorMimeType text/x-elm
- tmScope source.elm
- repos 19905
+tiobe Elm
+
+domainName elm-lang.org
+ registered 2011
+ awisRank
+  2022 272317
+  2017 111935
+
 githubBigQuery Elm
  repos 2864
  users 2094
 
-codeMirror elm
-pygmentsHighlighter Elm
- filename elm.py
- fileExtensions elm
 linguistGrammarRepo https://github.com/elm-community/Elm.tmLanguage
  firstCommit 2013
  lastCommit 2017
@@ -198,49 +227,6 @@ linguistGrammarRepo https://github.com/elm-community/Elm.tmLanguage
   
   ----------------------}
   
-languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
- writtenIn elm
-
-projectEuler Elm
- memberCount
-  2022 4
-helloWorldCollection Elm
- -- Hello world in Elm
- 
- import Text
- 
- main = Text.plainText "Hello, world!"
-leachim6 Elm
- filepath e/Elm.elm
- fileExtensions elm
- example
-  import Html exposing (text)
-  
-  main =
-    text "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Elm
-
-rijuRepl https://riju.codes/elm
- example
-  module Main exposing (..)
-  
-  output : String
-  output = "Hello, world!"
-  
-
-indeedJobs elm engineer
- 2017 127
-officialBlogUrl https://elm-lang.org/news
-faqPageUrl https://faq.elm-community.org/
-
-tiobe Elm
-
-packageRepository https://package.elm-lang.org/
-
-twitter https://twitter.com/elmlang
-fileType text
-isOpenSource true
 
 isbndb 5
  year|publisher|title|authors|isbn13
@@ -250,9 +236,20 @@ isbndb 5
  20200404|Manning Publications|Elm in Action|Richard Feldman|9781638355885
  20180821|Springer Nature|Web Applications with Elm|Wolfgang Loder|9781484226100
 
+githubLanguage Elm
+ fileExtensions elm
+ trendingProjectsCount 0
+ type programming
+ aceMode elm
+ codemirrorMode elm
+ codemirrorMimeType text/x-elm
+ tmScope source.elm
+ repos 19905
+
+indeedJobs elm engineer
+ 2017 127
+
 semanticScholar 4
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|Model-View-Update-Communicate: Session Types meet the Elm Architecture|10.4230/DARTS.6.2.13|5|2|S. Fowler|0c500a3661fe5ef06e09ccc26e9252863d499ca6
  2018|Using Elm to Introduce Algebraic Thinking to K-8 Students|10.4204/EPTCS.270.2|4|0|Curtis D'Alves and Tanya Bouman and Christopher W. Schankula and J. Hogg and Levin Noronha and Emily Horsman and R. Siddiqui and C. Anand|9b5288f0d7cbdc8481abb055574008c8e34dd1c2
-
-clocExtensions elm

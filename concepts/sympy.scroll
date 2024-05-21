@@ -1,13 +1,20 @@
 import ../code/conceptPage.scroll
+
 id sympy
 name SymPy
 appeared 2007
 tags library
 website https://www.sympy.org/
-domainName sympy.org
- registered 2007
- awisRank
-  2022 160824
+
+writtenIn python restructuredtext svg markdown jupyter-notebook perl yaml bourne-shell xslt json tex xml make toml css javascript html dockerfile scheme
+repoStats
+ firstCommit 2007
+ commits 58237
+ committers 1307
+ files 2055
+ newestCommit 2024
+
+twitter https://twitter.com/sympy
 
 githubRepo https://github.com/sympy/sympy
  firstCommit 2007
@@ -19,12 +26,7 @@ githubRepo https://github.com/sympy/sympy
  description A computer algebra system written in pure Python
  issues 4459
 
-twitter https://twitter.com/sympy
-
-repoStats
- firstCommit 2007
- commits 58237
- committers 1307
- files 2055
- newestCommit 2024
-writtenIn python restructuredtext svg markdown jupyter-notebook perl yaml bourne-shell xslt json tex xml make toml css javascript html dockerfile scheme
+domainName sympy.org
+ registered 2007
+ awisRank
+  2022 160824

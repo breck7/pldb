@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id femtolisp
 name femtolisp
 appeared 2008
-tags pl
 creators Jeff Bezanson
-reference https://en.wikipedia.org/wiki/Julia_(programming_language)#Implementation
+tags pl
+
+writtenIn c lisp scheme make clojure markdown bourne-shell
+repoStats
+ firstCommit 2008
+ commits 300
+ committers 15
+ files 112
+ newestCommit 2019
 country United States
 originCommunity Julia Computing Inc
+reference https://en.wikipedia.org/wiki/Julia_(programming_language)#Implementation
 
 githubRepo https://github.com/JeffBezanson/femtolisp
  firstCommit 2008
@@ -17,12 +26,3 @@ githubRepo https://github.com/JeffBezanson/femtolisp
  updated 2022
  description a lightweight, robust, scheme-like lisp implementation
  issues 22
-
-repoStats
- firstCommit 2008
- commits 300
- committers 15
- files 112
- newestCommit 2019
-
-writtenIn c lisp scheme make clojure markdown bourne-shell

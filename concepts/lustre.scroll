@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id lustre
 name Lustre
 appeared 1993
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country France and United States
 originCommunity Esterel Technologies
 
@@ -21,11 +25,8 @@ wikipedia https://en.wikipedia.org/wiki/Lustre_(programming_language)
  revisionCount 51
  appeared 1993
 
-tiobe Lustre
 hopl https://hopl.info/showlanguage.prx?exp=1161
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe Lustre
 
 isbndb 1
  year|publisher|title|authors|isbn13

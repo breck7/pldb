@@ -1,18 +1,28 @@
 import ../code/conceptPage.scroll
+
 id jscript
 name JScript
 appeared 1996
 tags pl
 website https://msdn.microsoft.com/library/hbxc2t98.aspx
+
 fileExtensions js jse wsf wsc
+fileType text
+centralPackageRepositoryCount 0
 originCommunity Microsoft
+
+leachim6 JScript
+ filepath j/JScript.js
+ fileExtensions js
+ example
+  WScript.Echo("Hello World");
+
+printToken WScript.Echo
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken WScript.Echo
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/JScript
  related javascript ecmascript asp vbscript visual-studio-editor json csharp
@@ -25,20 +35,7 @@ wikipedia https://en.wikipedia.org/wiki/JScript
  appeared 1996
  fileExtensions js jse wsf wsc
 
-leachim6 JScript
- filepath j/JScript.js
- fileExtensions js
- example
-  WScript.Echo("Hello World");
-
 tiobe JScript
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- JScript? .Net Programming|2001|Essam Ahmed|83357|3.00|1|1
 
 isbndb 4
  year|publisher|title|authors|isbn13
@@ -48,3 +45,7 @@ isbndb 4
  2009|Wiley & Sons, Incorporated, John|Microsoft Powershell, Vbscript And Jscript Bible|William R. Stanek and Jeffrey Rosen and James O'Neill|9780470478905
 
 semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ JScript? .Net Programming|2001|Essam Ahmed|83357|3.00|1|1

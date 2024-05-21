@@ -1,32 +1,18 @@
 import ../code/conceptPage.scroll
+
 id power-query-m
 name PowerQuery M
 appeared 2015
 tags queryLanguage
-conceptDescription The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
 website https://docs.microsoft.com/en-us/powerquery-m/
-reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
 aka m
 aka powerquery
+conceptDescription The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
+
+monaco powerquery
+centralPackageRepositoryCount 0
 originCommunity Microsoft
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasStrings true
-hasMultiLineComments true
- /* A comment
- */
-hasBooleans true
-hasConditionals true
-
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
-booleanTokens true false
-keywords as each else error false if in is let meta otherwise section shared then true try type
+reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
 
 example
  "Hello World"             // a text value
@@ -48,8 +34,23 @@ example
  in
      #"Capitalized Each Word"
 
-monaco powerquery
+keywords as each else error false if in is let meta otherwise section shared then true try type
 
-centralPackageRepositoryCount 0
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasConditionals true
 
 isbndb 0

@@ -1,22 +1,22 @@
 import ../code/conceptPage.scroll
+
 id todotxt
 name Todotxt
 appeared 2006
 tags dataNotation
 website http://todotxt.com/
-domainName todotxt.com
- registered 2006
 
+pygmentsHighlighter Todotxt
+ filename textfmts.py
+ fileExtensions todo.txt todotxt
 example
  (A) Thank Mom for the meatballs @phone
  (B) Schedule Goodwill pickup +GarageSale @phone
  Post signs around the neighborhood +GarageSale
  @GroceryStore Eskimo pies
-
-pygmentsHighlighter Todotxt
- filename textfmts.py
- fileExtensions todo.txt todotxt
-
 twitter https://twitter.com/todotxt
+
+domainName todotxt.com
+ registered 2006
 
 semanticScholar 0

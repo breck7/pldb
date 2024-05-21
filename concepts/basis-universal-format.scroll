@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id basis-universal-format
 name Basis Codec
 appeared 2019
 tags binaryDataFormat
 conceptDescription Basis Universal GPU Texture and Texture Video Compression Reference Codec
+
+writtenIn cpp javascript markdown html bourne-shell xml cmake c json opencl python yaml
 fileExtensions basis
+repoStats
+ firstCommit 2019
+ commits 729
+ committers 46
+ files 229
+ newestCommit 2023
 country Unknown
 originCommunity BinomialLLC
 
@@ -17,11 +26,3 @@ githubRepo https://github.com/binomialLLC/basis_universal
  updated 2022
  description Basis Universal GPU Texture Codec
  issues 83
-
-repoStats
- firstCommit 2019
- commits 729
- committers 46
- files 229
- newestCommit 2023
-writtenIn cpp javascript markdown html bourne-shell xml cmake c json opencl python yaml

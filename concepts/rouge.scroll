@@ -1,9 +1,22 @@
 import ../code/conceptPage.scroll
+
 id rouge
 name Rouge
 appeared 2012
-tags pl
 creators Arlen Cuss
+tags pl
+
+isOpenSource true
+writtenIn ruby markdown bourne-shell
+fileType text
+wordRank 8822
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 173
+ committers 2
+ files 40
+ newestCommit 2012
 country Australia
 originCommunity https://web.archive.org/web/20120730121447/http://len.me
 
@@ -17,22 +30,6 @@ githubRepo https://github.com/vic/rouge
  description Ruby + Clojure = Rouge
  issues 0
 
-repoStats
- firstCommit 2012
- commits 173
- committers 2
- files 40
- newestCommit 2012
-
-githubLanguage Rouge
- fileExtensions rg
- trendingProjectsCount 0
- type programming
- aceMode clojure
- codemirrorMode clojure
- codemirrorMimeType text/x-clojure
- tmScope source.clojure
- repos 78
 githubBigQuery Rouge
  repos 12
  users 11
@@ -43,9 +40,12 @@ linguistGrammarRepo https://github.com/atom/language-clojure
  committerCount 36
  commitCount 149
 
-fileType text
-wordRank 8822
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn ruby markdown bourne-shell
+githubLanguage Rouge
+ fileExtensions rg
+ trendingProjectsCount 0
+ type programming
+ aceMode clojure
+ codemirrorMode clojure
+ codemirrorMimeType text/x-clojure
+ tmScope source.clojure
+ repos 78

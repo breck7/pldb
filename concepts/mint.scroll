@@ -1,28 +1,15 @@
 import ../code/conceptPage.scroll
+
 id mint
 name mint
 appeared 2018
 tags pl
 website https://www.mint-lang.com
+
 country Poland and Hungary and United States
 originCommunity https://github.com/mint-lang
-domainName mint-lang.com
- registered 2018
- awisRank
-  2022 3066082
 
-hasStrings true
- "Hello world"
-
-stringToken "
-
-githubLanguage Mint
- type programming
- fileExtensions mint
- aceMode text
- tmScope source.mint
- repos 19
-
+twitter https://twitter.com/mint_lang
 leachim6 Mint
  filepath m/Mint.mint
  fileExtensions mint
@@ -34,8 +21,23 @@ leachim6 Mint
   }
   
 
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+domainName mint-lang.com
+ registered 2018
+ awisRank
+  2022 3066082
+
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  17161533|Mint-lang: a language for the front-end web|https://www.mint-lang.com/|2018-05-26 11:47:36 UTC|1527335256|galfarragem|106|112
 
-twitter https://twitter.com/mint_lang
+githubLanguage Mint
+ type programming
+ fileExtensions mint
+ aceMode text
+ tmScope source.mint
+ repos 19

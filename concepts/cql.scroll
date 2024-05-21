@@ -1,11 +1,14 @@
 import ../code/conceptPage.scroll
+
 id cql
 name cql
 appeared 1998
 tags pl
-reference https://semanticscholar.org/paper/20a10f4140ae568527c3de5603300e7b1ec6caa9
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Bell Laboratories
+reference https://semanticscholar.org/paper/20a10f4140ae568527c3de5603300e7b1ec6caa9
 
 wikipedia https://en.wikipedia.org/wiki/CQL
  related cypher
@@ -16,5 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/CQL
  created 2007
 
 hopl https://hopl.info/showlanguage.prx?exp=5568
-
-centralPackageRepositoryCount 0

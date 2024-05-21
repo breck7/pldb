@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id dllup
 name dllup
 appeared 2015
-tags textMarkup
 creators Daniel Lawrence Lu
+tags textMarkup
 website http://www.dllu.net/programming/dllup/
+
+writtenIn python scss html vim-script tex bash bourne-shell markdown
+repoStats
+ firstCommit 2015
+ commits 20
+ committers 5
+ files 18
+ newestCommit 2024
 country United States
 originCommunity https://github.com/dllu
-domainName dllu.net
 
 example
  ===
@@ -26,15 +34,8 @@ githubRepo https://github.com/dllu/dllup
  description my markup language
  issues 0
 
-repoStats
- firstCommit 2015
- commits 20
- committers 5
- files 18
- newestCommit 2024
+domainName dllu.net
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  9196157|Show HN: Dllup markup language – Lightweight markup for mathy blogs|2015-03-13 08:40:22 UTC|1426236022|dllu|1|2
-
-writtenIn python scss html vim-script tex bash bourne-shell markdown

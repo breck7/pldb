@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id crema
 name Crema
 appeared 2014
-tags pl
 creators Jacob Torrey and Jared Wright
-conceptDescription Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
+tags pl
 website https://github.com/ainfosec/crema/wiki
+conceptDescription Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
+
+writtenIn cpp bourne-shell c yacc lex make markdown
+repoStats
+ firstCommit 2014
+ commits 317
+ committers 6
+ files 84
+ newestCommit 2015
 country United States
 originCommunity Assured Information Security, Inc.
-
-keywords as bool break char def double else eq extern false foreach ge gt if int le lt neq return sdef string struct true uint void
 
 example
  def int binarySearch(int values[], int searchTarget){
@@ -40,6 +47,7 @@ example
      return foundIndex
  }
 
+keywords as bool break char def double else eq extern false foreach ge gt if int le lt neq return sdef string struct true uint void
 githubRepo https://github.com/ainfosec/crema
  stars 64
  forks 11
@@ -47,12 +55,3 @@ githubRepo https://github.com/ainfosec/crema
  created 2014
  updated 2015
  description Crema: A Sub-Turing Programming Language
-
-repoStats
- firstCommit 2014
- commits 317
- committers 6
- files 84
- newestCommit 2015
-
-writtenIn cpp bourne-shell c yacc lex make markdown

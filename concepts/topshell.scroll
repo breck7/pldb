@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id topshell
 name topshell
 appeared 2018
-tags pl
 creators Joakim Ahnfelt-Rønne
+tags pl
 website http://show.ahnfelt.net/topshell/
+
+writtenIn javascript scala markdown html json bourne-shell
+repoStats
+ firstCommit 2018
+ commits 457
+ committers 4
+ files 68
+ newestCommit 2021
 
 githubRepo https://github.com/topshell-language/topshell
  firstCommit 2018
@@ -16,13 +25,4 @@ githubRepo https://github.com/topshell-language/topshell
  forks 10
  issues 2
 
-repoStats
- firstCommit 2018
- commits 457
- committers 4
- files 68
- newestCommit 2021
-
 semanticScholar 0
-
-writtenIn javascript scala markdown html json bourne-shell

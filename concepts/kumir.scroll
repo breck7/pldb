@@ -1,17 +1,30 @@
 import ../code/conceptPage.scroll
+
 id kumir
 name kumir
 appeared 2011
 tags pl
-conceptDescription KuMir, which is used in some Russian schools for education. KuMir" is a game of words, literally “Kumir" means “Idol", but developers of this language say that this is abbreviature: “K" - Set, “u" - of Educational, “Mir" - WORLDs (КуМир - Комплект Учебных МИРов).
 website https://www.niisi.ru/kumir/
+conceptDescription KuMir, which is used in some Russian schools for education. KuMir" is a game of words, literally “Kumir" means “Idol", but developers of this language say that this is abbreviature: “K" - Set, “u" - of Educational, “Mir" - WORLDs (КуМир - Комплект Учебных МИРов).
+
+writtenIn cpp svg xml cmake qt python json c css markdown javascript html qml yaml bourne-shell objective-cpp csv make typescript ini
+repoStats
+ firstCommit 2011
+ commits 3798
+ committers 23
+ files 9027
+ newestCommit 2024
 country Russia
 originCommunity https://github.com/a-a-maly/kumir2/issues
 
-hasStrings true
- "Hello world"
-
-stringToken "
+leachim6 Kumir
+ filepath k/Kumir.kum
+ fileExtensions kum
+ example
+  алг
+  нач
+      вывод "Hello World"
+  кон
 
 githubRepo https://github.com/a-a-maly/kumir2
  firstCommit 2011
@@ -23,20 +36,7 @@ githubRepo https://github.com/a-a-maly/kumir2
  description New home for Kumir2.
  issues 23
 
-repoStats
- firstCommit 2011
- commits 3798
- committers 23
- files 9027
- newestCommit 2024
+stringToken "
 
-leachim6 Kumir
- filepath k/Kumir.kum
- fileExtensions kum
- example
-  алг
-  нач
-      вывод "Hello World"
-  кон
-
-writtenIn cpp svg xml cmake qt python json c css markdown javascript html qml yaml bourne-shell objective-cpp csv make typescript ini
+hasStrings true
+ "Hello world"

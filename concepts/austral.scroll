@@ -1,14 +1,23 @@
 import ../code/conceptPage.scroll
+
 id austral
 name Austral
 appeared 2018
-tags pl
 creators Fernando Borretti
-conceptDescription Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
+tags pl
 website https://austral-lang.org/
-reference https://borretti.me/article/introducing-austral
+conceptDescription Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
+
+writtenIn markdown ocaml make json typescript python vim-script nix yaml bourne-shell c lisp
+repoStats
+ firstCommit 2018
+ commits 8947
+ committers 27
+ files 978
+ newestCommit 2024
 country Unknown
 originCommunity https://github.com/austral/
+reference https://borretti.me/article/introducing-austral
 
 example
  let db: Db := connect("localhost");
@@ -26,12 +35,3 @@ githubRepo https://github.com/austral/austral/
  updated 2023
  description Systems language with linear types and capability-based security.
  issues 14
-
-repoStats
- firstCommit 2018
- commits 8947
- committers 27
- files 978
- newestCommit 2024
-
-writtenIn markdown ocaml make json typescript python vim-script nix yaml bourne-shell c lisp

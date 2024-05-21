@@ -1,34 +1,28 @@
 import ../code/conceptPage.scroll
+
 id croc
 name Croc
 appeared 2006
-tags pl
 creators Jarrett Billingsley
-conceptDescription Croc is a small, dynamically-typed language most closely related to Lua, with C-style syntax. Its semantics are borrowed mainly from Lua, D, Squirrel, and Io, though many other languages served as inspirations.
+tags pl
 website https://web.archive.org/web/20120625151120/http://jfbillingsley.com/croc/
 oldName minid
+conceptDescription Croc is a small, dynamically-typed language most closely related to Lua, with C-style syntax. Its semantics are borrowed mainly from Lua, D, Squirrel, and Io, though many other languages served as inspirations.
+
+writtenIn cpp xml cmake markdown html css python vim-script
+relatedConcepts minid
+repoStats
+ firstCommit 2006
+ commits 1481
+ committers 2
+ files 226
+ newestCommit 2017
 country United States
 originCommunity http://www.dsource.org/projects/minid
 
-relatedConcepts minid
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasHexadecimals true
- // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
-hasFloats true
- // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
-hasIntegers true
- // ([0-9][0-9_]*)(?![.eE])
-hasBinaryNumbers true
- // 0[bB][01][01_]*
-hasMultiLineComments true
-
-lineCommentToken //
-
+pygmentsHighlighter Croc
+ filename d.py
+ fileExtensions croc
 example
  module samples.interfaces
  
@@ -140,12 +134,22 @@ githubRepo https://github.com/JarrettBillingsley/Croc
  updated 2017
  description Croc is an extensible extension language in the vein of Lua, which also wishes it were a standalone language. Also it's fun.
 
-repoStats
- firstCommit 2006
- commits 1481
- committers 2
- files 226
- newestCommit 2017
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+hasFloats true
+ // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
+hasIntegers true
+ // ([0-9][0-9_]*)(?![.eE])
+hasBinaryNumbers true
+ // 0[bB][01][01_]*
+hasMultiLineComments true
 
 wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
  example
@@ -162,9 +166,3 @@ wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wi
  revisionCount 39
  dailyPageViews 13
  appeared 2006
-
-pygmentsHighlighter Croc
- filename d.py
- fileExtensions croc
-
-writtenIn cpp xml cmake markdown html css python vim-script

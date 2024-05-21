@@ -1,12 +1,18 @@
 import ../code/conceptPage.scroll
+
 id edje-data-collection
 name Edje Data Collection
 appeared 2010
 tags jsonFormat
 conceptDescription An Edje Data Collection, it's a plain text file (normally identified with the .edc extension), consisting of instructions for the Edje Compiler.
-reference https://phab.enlightenment.org/w/edjebasics/
+
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity Enlightenment development team
+reference https://phab.enlightenment.org/w/edjebasics/
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -15,18 +21,6 @@ hasComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-multiLineCommentTokens /* */
-
-githubLanguage Edje Data Collection
- fileExtensions edc
- trendingProjectsCount 0
- type data
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.c++
- repos 30865
 
 linguistGrammarRepo https://github.com/textmate/json.tmbundle
  firstCommit 2007
@@ -107,5 +101,12 @@ linguistGrammarRepo https://github.com/textmate/json.tmbundle
   
         pa
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Edje Data Collection
+ fileExtensions edc
+ trendingProjectsCount 0
+ type data
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.c++
+ repos 30865

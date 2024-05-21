@@ -1,14 +1,59 @@
 import ../code/conceptPage.scroll
+
 id awk
 name awk
 appeared 1977
-tags pl
 creators Alfred Aho and Peter J. Weinberger and Brian Kernighan
+tags pl
 website http://www.cs.princeton.edu/~bwk/btl.mirror/
-documentation https://www.gnu.org/software/gawk/manual/gawk.html
 standsFor Aho, Weinberger, Kernighan
+
+tryItOnline awk
+clocExtensions auk awk gawk mawk nawk
+fileType text
+documentation https://www.gnu.org/software/gawk/manual/gawk.html
+rosettaCode http://www.rosettacode.org/wiki/Category:AWK
+quineRelay Awk
+centralPackageRepositoryCount 0
+ubuntuPackage gawk
 country United States
 originCommunity Bell Labs
+projectEuler AWK
+ memberCount
+  2019 9
+  2022 14
+
+helloWorldCollection Aho%2C Weinberger%2C Kernighan
+ # Hello world in AWK
+ 
+ BEGIN {
+   print "Hello World!"
+ }
+pygmentsHighlighter Awk
+ filename textedit.py
+ fileExtensions awk
+rijuRepl https://riju.codes/awk
+ example
+  BEGIN { print "Hello, world!" }
+  
+ description Domain-specific language designed for text processing and typically used as a data extraction and reporting tool
+ fileExtensions awk
+ gitRepo https://savannah.gnu.org/git/?group=gawk
+subreddit https://reddit.com/r/awk
+ memberCount
+  2017 720
+  2022 1929
+leachim6 AWK
+ filepath a/AWK.awk
+ fileExtensions awk
+ example
+  # awk -f awk.awk
+  BEGIN { print "Hello World" }
+  
+
+lineCommentToken #
+printToken print
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -23,10 +68,6 @@ hasFloats true
  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
 hasIntegers true
  # [0-9]+
-
-lineCommentToken #
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AWK
  example
@@ -50,21 +91,14 @@ wikipedia https://en.wikipedia.org/wiki/AWK
  revisionCount 770
  appeared 1977
 
-githubLanguage Awk
- fileExtensions awk auk gawk mawk nawk
- trendingProjectsCount 0
- type programming
- interpreters awk gawk mawk nawk
- aceMode text
- tmScope source.awk
- repos 2552
+hopl https://hopl.info/showlanguage.prx?exp=1844
+tiobe Awk
+ currentRank 37
+
 githubBigQuery Awk
  repos 20601
  users 13611
 
-pygmentsHighlighter Awk
- filename textedit.py
- fileExtensions awk
 linguistGrammarRepo https://github.com/github-linguist/awk-sublime
  firstCommit 2012
  lastCommit 2016
@@ -195,60 +229,6 @@ linguistGrammarRepo https://github.com/github-linguist/awk-sublime
   }
   
 
-projectEuler AWK
- memberCount
-  2019 9
-  2022 14
-helloWorldCollection Aho%2C Weinberger%2C Kernighan
- # Hello world in AWK
- 
- BEGIN {
-   print "Hello World!"
- }
-leachim6 AWK
- filepath a/AWK.awk
- fileExtensions awk
- example
-  # awk -f awk.awk
-  BEGIN { print "Hello World" }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:AWK
-quineRelay Awk
-
-rijuRepl https://riju.codes/awk
- example
-  BEGIN { print "Hello, world!" }
-  
- description Domain-specific language designed for text processing and typically used as a data extraction and reporting tool
- fileExtensions awk
- gitRepo https://savannah.gnu.org/git/?group=gawk
-tryItOnline awk
-
-indeedJobs awk engineer
- 2022 7
-
-subreddit https://reddit.com/r/awk
- memberCount
-  2017 720
-  2022 1929
-
-tiobe Awk
- currentRank 37
-hopl https://hopl.info/showlanguage.prx?exp=1844
-
-ubuntuPackage gawk
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- The AWK Programming Language|1988|Alfred V. Aho|689393|4.25|142|11
- Effective awk Programming: Text Processing and Pattern Matching|1997|Arnold Robbins|707065|3.97|37|2
- GAWK: Effective Awk Programming|1996|Arnold D. Robbins|27480621|4.00|1|0
- AWK Programming: Questions and Answers|2014|George Duckett|43826300|0.0|0|0
- awk Programmer's Toolbox: Advanced awk and Unix Shell Scripting Examples and Techniques|2013|Steve Myers|27006436|5.00|1|0
- Awk Programming (2 Days)||Sim McNally|5706968|0.0|0|0
-
 isbndb 20
  year|publisher|title|authors|isbn13
  1997|O'Reilly Media|sed & awk|Dougherty, Dale and Robbins, Arnold|9781565922259
@@ -272,6 +252,18 @@ isbndb 20
  2013|Createspace Independent Publishing Platform|Unix Command Line And Awk Scripting: Harnessing The Power Of Unix And Linux Programming Environments|Dmitri Petrovic|9781492724315
  2013|Createspace Independent Publishing Platform|Advanced Unix Shell Scripting: How To Reduce Your Labor And Increase Your Effectiveness Through Mastery Of Unix Shell Scripting And Awk Programming|Praveen Puri|9781484076385
 
+githubLanguage Awk
+ fileExtensions awk auk gawk mawk nawk
+ trendingProjectsCount 0
+ type programming
+ interpreters awk gawk mawk nawk
+ aceMode text
+ tmScope source.awk
+ repos 2552
+
+indeedJobs awk engineer
+ 2022 7
+
 semanticScholar 8
  year|title|doi|citations|influentialCitations|authors|paperId
  1988|The awk programming language|10.1007/BF00054275|464|23|A. Aho and B. Kernighan and P. Weinberger|eae275046b909dec7a062a35862376c750e60463
@@ -283,4 +275,11 @@ semanticScholar 8
  1987|AWK — A Prototyping Language|10.1007/978-1-4612-4718-0_6|1|0|L. Levy|3dc3122a21edf010a1f44872b9cc730916f5171d
  1989|The awk programming language [Book Review]|10.1109/ms.1989.1105889|1|0|Brian and Kemighan and P. Weinberger|9e42b6a3b8e7a39465cb7172391139d07a42e7ca
 
-clocExtensions auk awk gawk mawk nawk
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The AWK Programming Language|1988|Alfred V. Aho|689393|4.25|142|11
+ Effective awk Programming: Text Processing and Pattern Matching|1997|Arnold Robbins|707065|3.97|37|2
+ GAWK: Effective Awk Programming|1996|Arnold D. Robbins|27480621|4.00|1|0
+ AWK Programming: Questions and Answers|2014|George Duckett|43826300|0.0|0|0
+ awk Programmer's Toolbox: Advanced awk and Unix Shell Scripting Examples and Techniques|2013|Steve Myers|27006436|5.00|1|0
+ Awk Programming (2 Days)||Sim McNally|5706968|0.0|0|0

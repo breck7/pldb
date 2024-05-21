@@ -1,15 +1,30 @@
 import ../code/conceptPage.scroll
+
 id ring
 name Ring
 appeared 2016
-tags pl
 creators Mahmoud Fayed
+tags pl
 website http://ring-lang.net
+
+isOpenSource true
 fileExtensions ring rh rform
+clocExtensions rform rh ring
+fileType text
+wordRank 1517
+rosettaCode http://www.rosettacode.org/wiki/Category:Ring
+centralPackageRepositoryCount 0
 country Saudi Arabia
 originCommunity King Saud University
-domainName ring-lang.net
- registered 2016
+
+leachim6 Ring
+ filepath r/Ring.ring
+ fileExtensions ring
+ example
+  see "Hello World"
+
+lineCommentToken #
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -17,9 +32,6 @@ hasLineComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken #
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Ring_(programming_language)
  related c linux lua python ruby csharp basic qml xbase
@@ -32,13 +44,11 @@ wikipedia https://en.wikipedia.org/wiki/Ring_(programming_language)
  appeared 2016
  fileExtensions ring rh rform
 
-githubLanguage Ring
- fileExtensions ring
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ring
- repos 195
+tiobe Ring
+
+domainName ring-lang.net
+ registered 2016
+
 githubBigQuery Ring
  repos 3
  users 3
@@ -96,24 +106,18 @@ linguistGrammarRepo https://github.com/MahmoudFayed/atom-language-ring
                           the=0
   
 
-leachim6 Ring
- filepath r/Ring.ring
- fileExtensions ring
- example
-  see "Hello World"
-rosettaCode http://www.rosettacode.org/wiki/Category:Ring
-
-tiobe Ring
-
-fileType text
-wordRank 1517
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2020|Apress|Beginning Ring Programming: From Novice to Professional|Ayouni, Mansour|9781484258323
  2017|Independently published|The Lily and the Cross: A Ring and Crown Novel|de la Cruz, Melissa|9781973305514
+
+githubLanguage Ring
+ fileExtensions ring
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ring
+ repos 195
 
 semanticScholar 6
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -123,5 +127,3 @@ semanticScholar 6
  2014|A Method of Parametric Design of Automobile Synchronizer Ring Based on UG Secondary Development Tools|10.4028/www.scientific.net/AMM.716-717.635|2|0|H. Cui and Na Tian and R. Li and Xiuhua Men|10158e3240736e06a7f86557b88a091125c04648
  2020|Automated and robust beam data validation of a preconfigured ring gantry linear accelerator using a 1D tank with synchronized beam delivery and couch motions|10.1002/acm2.12946|1|0|N. Knutson and Matthew C. Schmidt and F. Reynoso and Y. Hao and T. Mazur and E. Laugeman and Geoffrey D. Hugo and S. Mutic and H. Li and W. Ngwa and B. Cai and E. Sajo|5031e2a80bf90ede774a65ee8fb018ee2dc1e34c
  2021|Monitoring and Predicting Occupant’s Sleep Quality by Using Wearable Device OURA Ring and Smart Building Sensors Data (Living Laboratory Case Study)|10.3390/buildings11100459|1|0|Elena Malakhatka and Anas Al Al Rahis and Osman Osman and P. Lundqvist|164c0ee640f4e4e977905185cd4c693c1d12ab13
-
-clocExtensions rform rh ring

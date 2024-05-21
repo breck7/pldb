@@ -1,10 +1,14 @@
 import ../code/conceptPage.scroll
+
 id tls
 name TLS
 appeared 1999
 tags protocol
-documentation https://www.rfc-editor.org/rfc/rfc5246
 standsFor Transport Layer Security
+
+fileType na
+documentation https://www.rfc-editor.org/rfc/rfc5246
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/Transport_Layer_Security
  related http ftp smtp tcp udp linux android ios solaris delphi java javascript
@@ -15,9 +19,6 @@ wikipedia https://en.wikipedia.org/wiki/Transport_Layer_Security
  backlinksCount 1638
  revisionCount 4100
  appeared 1999
-
-fileType na
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

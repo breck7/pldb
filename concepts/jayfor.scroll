@@ -1,13 +1,21 @@
 import ../code/conceptPage.scroll
+
 id jayfor
 name jayfor
 appeared 2014
-tags pl
 creators Felix Angell
+tags pl
 website https://ark-lang.github.io/
+
+writtenIn toml go markdown make yaml bourne-shell
+repoStats
+ firstCommit 2014
+ commits 3483
+ committers 48
+ files 233
+ newestCommit 2019
 country Denmark and New Zealand and United Kingdom
 originCommunity https://github.com/ark-lang
-domainName ark-lang.github.io
 
 githubRepo https://github.com/freefouran/jayfor
  firstCommit 2014
@@ -19,15 +27,8 @@ githubRepo https://github.com/freefouran/jayfor
  description A compiled systems programming language written in Go using the LLVM framework
  issues 45
 
-repoStats
- firstCommit 2014
- commits 3483
- committers 48
- files 233
- newestCommit 2019
+domainName ark-lang.github.io
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  8748769|Show HN: JAYFOR a compiled programming language written in C|2014-12-14 17:04:40 UTC|1418576680|freefouran|1|5
-
-writtenIn toml go markdown make yaml bourne-shell

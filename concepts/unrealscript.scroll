@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id unrealscript
 name UnrealScript
 appeared 1998
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/UnrealScript
  related linux asmjs javascript webgl android ios java
@@ -14,15 +18,6 @@ wikipedia https://en.wikipedia.org/wiki/UnrealScript
  dailyPageViews 13
  appeared 1998
 
-githubLanguage UnrealScript
- fileExtensions uc
- trendingProjectsCount 0
- type programming
- aceMode java
- codemirrorMode clike
- codemirrorMimeType text/x-java
- tmScope source.java
- repos 1335
 githubBigQuery UnrealScript
  repos 9501
  users 5230
@@ -46,8 +41,15 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
   }
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage UnrealScript
+ fileExtensions uc
+ trendingProjectsCount 0
+ type programming
+ aceMode java
+ codemirrorMode clike
+ codemirrorMimeType text/x-java
+ tmScope source.java
+ repos 1335
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

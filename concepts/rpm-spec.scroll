@@ -1,21 +1,15 @@
 import ../code/conceptPage.scroll
+
 id rpm-spec
 name RPM Spec
 appeared 1997
 tags application
-reference https://rpm-packaging-guide.github.io/#working-with-spec-files
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Red Hat, Inc
-
-githubLanguage RPM Spec
- fileExtensions spec
- trendingProjectsCount 0
- type data
- aceMode text
- codemirrorMode rpm
- codemirrorMimeType text/x-rpm-spec
- tmScope source.rpm-spec
- aliases specfile
+reference https://rpm-packaging-guide.github.io/#working-with-spec-files
 
 linguistGrammarRepo https://github.com/waveclaw/language-rpm-spec
  firstCommit 2015
@@ -71,5 +65,12 @@ linguistGrammarRepo https://github.com/waveclaw/language-rpm-spec
   
   %changelog
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage RPM Spec
+ fileExtensions spec
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ codemirrorMode rpm
+ codemirrorMimeType text/x-rpm-spec
+ tmScope source.rpm-spec
+ aliases specfile

@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id stacklang
 name stacklang
 appeared 2018
-tags pl
 creators Justin Hu
+tags pl
 website https://justinhuprime.github.io/StackLang/index.html
+
+writtenIn cpp html pascal markdown python make json javascript css xml yaml svg
+repoStats
+ firstCommit 2018
+ commits 312
+ committers 6
+ files 93
+ newestCommit 2018
 country Canada
 originCommunity University of British Columbia
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/JustinHuPrime/StackLang
  description Stack-based interpreted programming language inspired by Racket
  issues 3
  forks 0
-
-repoStats
- firstCommit 2018
- commits 312
- committers 6
- files 93
- newestCommit 2018
-
-writtenIn cpp html pascal markdown python make json javascript css xml yaml svg

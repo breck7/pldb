@@ -1,25 +1,48 @@
 import ../code/conceptPage.scroll
+
 id arduino
 name Arduino Programming Language
 appeared 2005
+creators Massimo Banzi and David Cuartielles and Tom Igoe and Gianluca Martino and David Mellis
 tags pl
-conceptDescription The Arduino Programming Language is mostly C++ with
 website https://www.arduino.cc
-documentation https://docs.arduino.cc/
-cheatSheetUrl https://github.com/liffiton/Arduino-Cheat-Sheet
-country Italy
-originCommunity Arduino
-releaseNotesUrl https://www.arduino.cc/en/software/ReleaseNotes
+conceptDescription The Arduino Programming Language is mostly C++ with
 
 extensionOf cpp
+officialBlogUrl https://blog.arduino.cc/
+releaseNotesUrl https://www.arduino.cc/en/software/ReleaseNotes
+documentation https://docs.arduino.cc/
+centralPackageRepositoryCount 0
+country Italy
+originCommunity Arduino
+
+pygmentsHighlighter Arduino
+ filename c_like.py
+ fileExtensions ino
+subreddit https://www.reddit.com/r/arduino
+ memberCount
+  2022 514177
+leachim6 Arduino
+ filepath a/Arduino.ino
+ fileExtensions ino
+ example
+  void setup() {
+    Serial.begin(9600);
+    Serial.println("Hello World");
+  }
+  
+  void loop() {
+  
+  }
+cheatSheetUrl https://github.com/liffiton/Arduino-Cheat-Sheet
+
+printToken Serial.println
+stringToken "
 
 hasPrintDebugging true
 hasCaseInsensitiveIdentifiers false
 hasStrings true
  "Hello world"
-
-printToken Serial.println
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Arduino
  example
@@ -47,33 +70,6 @@ wikipedia https://en.wikipedia.org/wiki/Arduino
 githubBigQuery Arduino
  repos 20461
  users 16079
-
-pygmentsHighlighter Arduino
- filename c_like.py
- fileExtensions ino
-
-leachim6 Arduino
- filepath a/Arduino.ino
- fileExtensions ino
- example
-  void setup() {
-    Serial.begin(9600);
-    Serial.println("Hello World");
-  }
-  
-  void loop() {
-  
-  }
-
-indeedJobs arduino developer
- 2022 598
-officialBlogUrl https://blog.arduino.cc/
-
-subreddit https://www.reddit.com/r/arduino
- memberCount
-  2022 514177
-
-centralPackageRepositoryCount 0
 
 isbndb 265
  year|publisher|title|authors|isbn13
@@ -343,6 +339,9 @@ isbndb 265
  08/2012|O'Reilly Media, Inc.|Das intelligente Haus – Heimautomation mit Arduino und Android und PC|Riley, Mike|9783955610050
  20171123|McGraw-Hill Professional|Arduino and Raspberry Pi Sensor Projects for the Evil Genius|Robert Chin|9781260010909
 
+indeedJobs arduino developer
+ 2022 598
+
 semanticScholar 28
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|Smart drip irrigation system using raspberry pi and arduino|10.1109/CCAA.2015.7148526|125|3|N. Agrawal and Smita Singhal|764fb4d5d79641193570ca843589149f3f2dfde5
@@ -373,5 +372,3 @@ semanticScholar 28
  2020|Kendali Kecepatan Motor DC Penguat Terpisah Berbeban Berbasis Arduino|10.24036/jtev.v6i2.108395|1|0|Dio Taufiq Arif and Aswardi Aswardi|5c56716c594dc0662b336ca54c34b733ece038bb
  2020|Experimental Implementation of TinyIPFIX Protocol for Arduino and Raspberry Pi Platform|10.1109/ICETA51985.2020.9379188|1|0|R. Petija and M. Glevaňák and M. Kučan and P. Fecilak and F. Jakab|60c8eb9ea6d32d0806aa59c69d8fcc437172487f
  2021|Perancangan Sistem Perangkap Hama Tanaman Petani Otomatis Menggunakan Modul Mikrokontroler Arduino|10.32672/JNKTI.V4I1.2663|1|0|Rahmat Tampune Bangun and Hasan Fahmi|c8e7fac5b5b8291c011d4d9920626161b05705ee
-
-creators Massimo Banzi and David Cuartielles and Tom Igoe and Gianluca Martino and David Mellis

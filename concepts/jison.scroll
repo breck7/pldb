@@ -1,22 +1,24 @@
 import ../code/conceptPage.scroll
+
 id jison
 name Jison
 appeared 2009
 tags pl
 website http://zaa.ch/jison/
+
+isOpenSource true
+writtenIn javascript csharp html json css xml ruby markdown yaml php yacc make
+fileType text
 documentation https://gerhobbelt.github.io/jison/docs/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 709
+ committers 58
+ files 141
+ newestCommit 2020
 country Various
 originCommunity https://github.com/zaach/jison/issues
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 githubRepo https://github.com/zaach/jison
  stars 4136
@@ -28,21 +30,15 @@ githubRepo https://github.com/zaach/jison
  description Bison in JavaScript.
  issues 156
 
-repoStats
- firstCommit 2009
- commits 709
- committers 58
- files 141
- newestCommit 2020
+multiLineCommentTokens /* */
 
-githubLanguage Jison
- fileExtensions jison
- trendingProjectsCount 0
- type programming
- group Yacc
- aceMode text
- tmScope source.jison
- repos 0
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 linguistGrammarRepo https://github.com/cdibbs/language-jison
  firstCommit 2014
@@ -135,10 +131,13 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
       | LPAREN e RPAREN
       ;
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-writtenIn javascript csharp html json css xml ruby markdown yaml php yacc make
+githubLanguage Jison
+ fileExtensions jison
+ trendingProjectsCount 0
+ type programming
+ group Yacc
+ aceMode text
+ tmScope source.jison
+ repos 0

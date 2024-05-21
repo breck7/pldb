@@ -1,22 +1,23 @@
 import ../code/conceptPage.scroll
+
 id volt
 name Volt
 appeared 2011
 tags pl
-conceptDescription Volt is a C-inspired programming language that toes the line between expressiveness and control.
 website http://www.volt-lang.org/
-domainName volt-lang.org
- registered 2013
+conceptDescription Volt is a C-inspired programming language that toes the line between expressiveness and control.
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasPrintDebugging true
-hasSemanticIndentation false
-
-lineCommentToken //
-printToken printf
+isOpenSource true
+writtenIn d markdown c assembly-language toml make json xml restructuredtext
+fileType text
+wordRank 7173
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 4062
+ committers 10
+ files 1428
+ newestCommit 2022
 
 githubRepo https://github.com/VoltLang/Volta
  firstCommit 2011
@@ -28,22 +29,19 @@ githubRepo https://github.com/VoltLang/Volta
  description Compiler for the Volt Programming Language
  issues 9
 
-repoStats
- firstCommit 2011
- commits 4062
- committers 10
- files 1428
- newestCommit 2022
+lineCommentToken //
+printToken printf
 
-githubLanguage Volt
- fileExtensions volt
- trendingProjectsCount 0
- type programming
- aceMode d
- codemirrorMode d
- codemirrorMimeType text/x-d
- tmScope source.d
- repos 158
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName volt-lang.org
+ registered 2013
+
 githubBigQuery Volt
  repos 351
  users 298
@@ -150,9 +148,12 @@ linguistGrammarRepo https://github.com/textmate/d.tmbundle
   }
   
 
-fileType text
-wordRank 7173
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn d markdown c assembly-language toml make json xml restructuredtext
+githubLanguage Volt
+ fileExtensions volt
+ trendingProjectsCount 0
+ type programming
+ aceMode d
+ codemirrorMode d
+ codemirrorMimeType text/x-d
+ tmScope source.d
+ repos 158

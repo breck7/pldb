@@ -1,18 +1,19 @@
 import ../code/conceptPage.scroll
+
 id datascript
 name datascript
 appeared 2014
 tags queryLanguage
+
+writtenIn bourne-shell clojure javascript markdown clojurescript html yaml svg json
+repoStats
+ firstCommit 2014
+ commits 757
+ committers 74
+ files 108
+ newestCommit 2024
 country Germany
 originCommunity https://www.patreon.com/tonsky
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-
-lineCommentToken ;
 
 example
  (require '[datascript.core :as d])
@@ -46,11 +47,10 @@ githubRepo https://github.com/tonsky/DataScript
  description Immutable database and Datalog query engine for Clojure, ClojureScript and JS
  issues 75
 
-repoStats
- firstCommit 2014
- commits 757
- committers 74
- files 108
- newestCommit 2024
+lineCommentToken ;
 
-writtenIn bourne-shell clojure javascript markdown clojurescript html yaml svg json
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

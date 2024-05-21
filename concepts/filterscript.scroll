@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id filterscript
 name Filterscript
 appeared 2012
 tags pl
 conceptDescription A subset of RenderScript
+
+fileType text
+centralPackageRepositoryCount 0
 
 example
  #pragma version(1)
@@ -32,6 +36,3 @@ githubLanguage Filterscript
  aceMode text
  tmScope none
  repos 0
-
-fileType text
-centralPackageRepositoryCount 0

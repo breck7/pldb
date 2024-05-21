@@ -1,17 +1,29 @@
 import ../code/conceptPage.scroll
+
 id xpl0
 name XPL0
 appeared 1976
 tags pl
+
+rosettaCode http://www.rosettacode.org/wiki/Category:XPL0
+centralPackageRepositoryCount 0
+
+leachim6 XPL0
+ filepath x/XPL0.xpl
+ fileExtensions xpl
+ example
+  code Text=12;
+  Text(0, "Hello World")
+  
+
+printToken Text
+stringToken "
 
 hasComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-printToken Text
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/XPL0
  related pascal c basic pl-0 algol assembly-language
@@ -22,14 +34,3 @@ wikipedia https://en.wikipedia.org/wiki/XPL0
  revisionCount 12
  dailyPageViews 4
  appeared 1976
-
-leachim6 XPL0
- filepath x/XPL0.xpl
- fileExtensions xpl
- example
-  code Text=12;
-  Text(0, "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:XPL0
-
-centralPackageRepositoryCount 0

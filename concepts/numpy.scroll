@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id numpy
 name NumPy
 appeared 1995
-tags library
 creators Travis Oliphant
+tags library
 website http://www.numpy.org/
 aka Numeric
+
+isOpenSource true
+writtenIn python c
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/numpy
-domainName numpy.org
- registered 2000
- awisRank
-  2022 5924
 
-writtenIn python c
+pygmentsHighlighter NumPy
+ filename python.py
+twitter https://twitter.com/numpy_team
 
 hasOctals true
 hasHexadecimals true
@@ -54,6 +58,11 @@ wikipedia https://en.wikipedia.org/wiki/NumPy
  revisionCount 379
  appeared 2005
 
+domainName numpy.org
+ registered 2000
+ awisRank
+  2022 5924
+
 githubLanguage NumPy
  fileExtensions numpy numpyw numsc
  trendingProjectsCount 0
@@ -63,14 +72,6 @@ githubLanguage NumPy
  codemirrorMode python
  codemirrorMimeType text/x-python
  tmScope none
-
-pygmentsHighlighter NumPy
- filename python.py
-
-twitter https://twitter.com/numpy_team
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

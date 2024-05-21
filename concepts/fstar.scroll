@@ -1,32 +1,38 @@
 import ../code/conceptPage.scroll
+
 id fstar
 name F*
 appeared 2014
 tags pl
-conceptDescription F* is a dependently typed programming language and proof assistant. In practice, rather than a single language, the F* ecosystem is also a collection of domain-specific languages (DSLs). A common use of F* is to embed within it programming languages at different levels of abstraction or for specific programming tasks, and for the embedded language to be engineered with domain-specific reasoning, proof automation, and compilation backends.
 website https://www.fstar-lang.org/
+conceptDescription F* is a dependently typed programming language and proof assistant. In practice, rather than a single language, the F* ecosystem is also a collection of domain-specific languages (DSLs). A common use of F* is to embed within it programming languages at different levels of abstraction or for specific programming tasks, and for the embedded language to be engineered with domain-specific reasoning, proof automation, and compilation backends.
+
+isOpenSource true
+writtenIn ocaml make bourne-shell markdown f-sharp python c dockerfile json xml assembly-language nix yaml bash clojure coq svg haskell csv lisp
+fileType text
 documentation http://www.fstar-lang.org/tutorial/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 41577
+ committers 218
+ files 5754
+ newestCommit 2024
 country Unknown
 originCommunity Microsoft Research
-domainName fstar-lang.org
- registered 2014
- awisRank
-  2022 3034670
 
-hasPrintDebugging true
-hasBooleans true
-hasFunctions true
-hasConditionals true
-hasOctals true
-hasHexadecimals true
-hasFloats true
-hasIntegers true
-hasBinaryNumbers true
+pygmentsHighlighter FStar
+ filename ml.py
+ fileExtensions fst fsti
+leachim6 FStar
+ filepath f/FStar.fst
+ fileExtensions fst
+ example
+  module Hello
+  
+  let main = FStar.IO.print_string "Hello World\n"
 
-printToken FStar.IO.print_string
-booleanTokens true false
 keywords abstract attributes noeq unopteq andbegin by default effect else end ensures exception exists false forall fun function if in include inline inline_for_extraction irreducible logic match module mutable new new_effect noextract of open opaque private range_of reifiable reify reflectable requires set_range_of sub_effect synth then total true try type unfold unfoldable val when with not
-
 githubRepo https://github.com/FStarLang/FStar
  stars 2263
  forks 216
@@ -37,12 +43,18 @@ githubRepo https://github.com/FStarLang/FStar
  description A Proof-oriented Programming Language
  issues 407
 
-repoStats
- firstCommit 2014
- commits 41577
- committers 218
- files 5754
- newestCommit 2024
+printToken FStar.IO.print_string
+booleanTokens true false
+
+hasPrintDebugging true
+hasBooleans true
+hasFunctions true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 wikipedia https://en.wikipedia.org/wiki/F*_(programming_language)
  related linux f-sharp ocaml standard-ml ml c javascript
@@ -55,6 +67,23 @@ wikipedia https://en.wikipedia.org/wiki/F*_(programming_language)
  appeared 2016
  fileExtensions fst
 
+domainName fstar-lang.org
+ registered 2014
+ awisRank
+  2022 3034670
+
+githubBigQuery F*
+ repos 31
+ users 28
+
+linguistGrammarRepo https://github.com/FStarLang/atom-fstar
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 8
+ commitCount 28
+
+isbndb 0
+
 githubLanguage F*
  fileExtensions fst fsti
  type programming
@@ -62,35 +91,7 @@ githubLanguage F*
  tmScope source.fstar
  aliases fstar
  repos 250
-githubBigQuery F*
- repos 31
- users 28
-
-pygmentsHighlighter FStar
- filename ml.py
- fileExtensions fst fsti
-linguistGrammarRepo https://github.com/FStarLang/atom-fstar
- firstCommit 2015
- lastCommit 2018
- committerCount 8
- commitCount 28
-
-leachim6 FStar
- filepath f/FStar.fst
- fileExtensions fst
- example
-  module Hello
-  
-  let main = FStar.IO.print_string "Hello World\n"
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2017|Verified low-level programming embedded in F*|10.1145/3110261|104|9|Jonathan Protzenko and J. Zinzindohoué and Aseem Rastogi and T. Ramananandro and Peng Wang and Santiago Zanella Béguelin and Antoine Delignat-Lavaud and Catalin Hritcu and K. Bhargavan and C. Fournet and N. Swamy|56d2fcb2befda305a57b83e7f2e3d4865ee766b2
-
-writtenIn ocaml make bourne-shell markdown f-sharp python c dockerfile json xml assembly-language nix yaml bash clojure coq svg haskell csv lisp

@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id flix
 name Flix
 appeared 2016
-tags pl
 creators Magnus Madsen
+tags pl
 website https://flix.dev/
+
+writtenIn scala java markdown yaml toml css bourne-shell gradle javascript svg
+repoStats
+ firstCommit 2014
+ commits 9379
+ committers 80
+ files 1057
+ newestCommit 2024
 country Denmark
 originCommunity https://github.com/flix
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/flix/flix
  updated 2023
  description The Flix Programming Language
  issues 457
-
-repoStats
- firstCommit 2014
- commits 9379
- committers 80
- files 1057
- newestCommit 2024
-
-writtenIn scala java markdown yaml toml css bourne-shell gradle javascript svg

@@ -1,14 +1,34 @@
 import ../code/conceptPage.scroll
+
 id supercollider
 name SuperCollider
 appeared 1996
 tags pl
 website http://supercollider.github.io
+
+isOpenSource true
+fileType text
 documentation https://doc.sccode.org/
-domainName supercollider.github.io
- awisRank
-  2022 1121861
-  2017 776997
+rosettaCode http://www.rosettacode.org/wiki/Category:SuperCollider
+centralPackageRepositoryCount 0
+
+helloWorldCollection SuperCollider
+ // Hello World in SuperCollider
+ 
+ "Hello, world!".postln;
+pygmentsHighlighter SuperCollider
+ filename supercollider.py
+ fileExtensions sc scd
+leachim6 SuperCollider
+ filepath s/SuperCollider.sc
+ fileExtensions sc
+ example
+  "Hello World".postln;
+  
+
+lineCommentToken //
+printToken postln
+stringToken "
 
 hasLineComments true
  // A comment
@@ -25,10 +45,6 @@ hasFloats true
 hasIntegers true
  // [0-9]+
 
-lineCommentToken //
-printToken postln
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/SuperCollider
  example
   // Factorial function
@@ -42,21 +58,18 @@ wikipedia https://en.wikipedia.org/wiki/SuperCollider
  revisionCount 472
  appeared 1996
 
-githubLanguage SuperCollider
- fileExtensions sc scd
- trendingProjectsCount 0
- type programming
- interpreters sclang scsynth
- aceMode text
- tmScope source.supercollider
- repos 3782
+hopl https://hopl.info/showlanguage.prx?exp=6465
+tiobe SuperCollider
+
+domainName supercollider.github.io
+ awisRank
+  2022 1121861
+  2017 776997
+
 githubBigQuery SuperCollider
  repos 3713
  users 2480
 
-pygmentsHighlighter SuperCollider
- filename supercollider.py
- fileExtensions sc scd
 linguistGrammarRepo https://github.com/supercollider/language-supercollider
  firstCommit 2014
  lastCommit 2017
@@ -84,29 +97,6 @@ linguistGrammarRepo https://github.com/supercollider/language-supercollider
   	}
   }
 
-helloWorldCollection SuperCollider
- // Hello World in SuperCollider
- 
- "Hello, world!".postln;
-leachim6 SuperCollider
- filepath s/SuperCollider.sc
- fileExtensions sc
- example
-  "Hello World".postln;
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:SuperCollider
-
-tiobe SuperCollider
-hopl https://hopl.info/showlanguage.prx?exp=6465
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming digital music with SuperCollider|2014|Peter Fitton|40386468|4.00|3|0
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|Mapping and Visualization with SuperCollider|Koutsomichalis, Marinos|9781783289677
@@ -114,4 +104,17 @@ isbndb 4
  2016|Logos Verlag Berlin|Introduction To Supercollider|Andrea Valle|9783832540173
  20131125|Packt Publishing|Mapping and Visualization with SuperCollider|Marinos Koutsomichalis|9781783289684
 
+githubLanguage SuperCollider
+ fileExtensions sc scd
+ trendingProjectsCount 0
+ type programming
+ interpreters sclang scsynth
+ aceMode text
+ tmScope source.supercollider
+ repos 3782
+
 semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming digital music with SuperCollider|2014|Peter Fitton|40386468|4.00|3|0

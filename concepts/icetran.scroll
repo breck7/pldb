@@ -1,12 +1,13 @@
 import ../code/conceptPage.scroll
+
 id icetran
 name ICETRAN
 appeared 1965
 tags pl
 conceptDescription ENGINEERING PROGRAMS FOR ICES ARE WRITTEN IN ICETRAN AND ARE PROCESSED BY THE ICETRAN PRECOMPILER, WHICH GENERATES AN EQUIVALENT FORTRAN PROGRAM
-country United States
-originCommunity Computer Research Corporation
 
 compilesTo fortran
+country United States
+originCommunity Computer Research Corporation
 
 hopl https://hopl.info/showlanguage.prx?exp=417

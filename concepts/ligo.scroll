@@ -1,23 +1,36 @@
 import ../code/conceptPage.scroll
+
 id ligo
 name Ligo
 appeared 2019
 tags contractLanguage
 website https://ligolang.org/
 webRepl https://ide.ligolang.org/
-cheatSheetUrl https://ligolang.org/docs/api/cheat-sheet
 aka jsligo
 aka cameligo
 aka pascaligo
 aka reasonligo
+
+writtenIn ocaml markdown javascript json typescript haskell bourne-shell svg yaml css ruby scss make dockerfile coq vim-script lisp mustache nix python html xml
+relatedConcepts solidity pascal reason ocaml
+monaco pascaligo
+repoStats
+ firstCommit 2016
+ commits 20823
+ committers 253
+ files 9497
+ newestCommit 2024
 country France
 originCommunity https://www.marigold.dev/projects
-domainName ligolang.org
- registered 2019
- awisRank
-  2022 5947641
 
-relatedConcepts solidity pascal reason ocaml
+cheatSheetUrl https://ligolang.org/docs/api/cheat-sheet
+
+keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
+gitlabRepo https://gitlab.com/ligolang/ligo
+
+lineCommentToken //
+multiLineCommentTokens (* *)
+booleanTokens true false
 
 hasStrings true
 hasLineComments true
@@ -31,19 +44,10 @@ hasBooleans true
 hasFunctions true
 hasConditionals true
 
-lineCommentToken //
-multiLineCommentTokens (* *)
-booleanTokens true false
-keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
-
-gitlabRepo https://gitlab.com/ligolang/ligo
-
-repoStats
- firstCommit 2016
- commits 20823
- committers 253
- files 9497
- newestCommit 2024
+domainName ligolang.org
+ registered 2019
+ awisRank
+  2022 5947641
 
 githubLanguage CameLIGO
  type programming
@@ -54,7 +58,3 @@ githubLanguage CameLIGO
  codemirrorMimeType text/x-rustsrc
  tmScope source.religo
  repos 0
-
-monaco pascaligo
-
-writtenIn ocaml markdown javascript json typescript haskell bourne-shell svg yaml css ruby scss make dockerfile coq vim-script lisp mustache nix python html xml

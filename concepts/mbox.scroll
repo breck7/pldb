@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id mbox
 name EML
 appeared 1974
 tags textDataFormat
-reference https://datatracker.ietf.org/doc/html/rfc822
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Internet Engineering Task Force
+reference https://datatracker.ietf.org/doc/html/rfc822
 
+pygmentsHighlighter E-mail
+ filename email.py
+ fileExtensions eml
 example
  From MAILER-DAEMON Fri Jul  8 12:08:34 2011
  From: Author <author@example.com>
@@ -50,13 +57,6 @@ wikipedia https://en.wikipedia.org/wiki/Mbox
  dailyPageViews 151
  appeared 2005
 
-githubLanguage EML
- fileExtensions eml mbox
- repos 0
-
-pygmentsHighlighter E-mail
- filename email.py
- fileExtensions eml
 linguistGrammarRepo https://github.com/mariozaizar/language-eml
  firstCommit 2016
  lastCommit 2018
@@ -134,5 +134,6 @@ linguistGrammarRepo https://github.com/mariozaizar/language-eml
   --6a82fb459dcaacd40ab3404529e808dc
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage EML
+ fileExtensions eml mbox
+ repos 0

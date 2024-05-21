@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id tscript
 name TScript
 appeared 2012
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/TScript
  example
@@ -21,6 +25,3 @@ wikipedia https://en.wikipedia.org/wiki/TScript
  pageId 37307697
  revisionCount 51
  dailyPageViews 7
-
-isOpenSource true
-centralPackageRepositoryCount 0

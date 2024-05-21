@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id knitr
 name Knitr
 appeared 2012
 tags template
+
+isOpenSource true
+compilesTo latex
+centralPackageRepositoryCount 0
 country United States
 originCommunity Iowa State University
-
-compilesTo latex
 
 wikipedia https://en.wikipedia.org/wiki/Knitr
  example
@@ -22,9 +25,6 @@ wikipedia https://en.wikipedia.org/wiki/Knitr
  revisionCount 44
  dailyPageViews 48
  appeared 2012
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
 

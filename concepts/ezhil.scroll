@@ -1,14 +1,37 @@
 import ../code/conceptPage.scroll
+
 id ezhil
 name Ezhil
 appeared 2007
-tags pl
 creators Muthu Annamalai
+tags pl
 website http://ezhillang.org
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Ezhil
+centralPackageRepositoryCount 0
 country United States
 originCommunity Google scholar
-domainName ezhillang.org
- registered 2021
+
+helloWorldCollection Ezhil programming language
+ # Hello world in Ezhil
+ 
+ பதிப்பி "வணக்கம்!"
+ பதிப்பி "உலகே வணக்கம்"
+ பதிப்பி "******* நன்றி!. *******"
+ exit()
+pygmentsHighlighter Ezhil
+ filename ezhil.py
+ fileExtensions n
+rijuRepl https://riju.codes/ezhil
+ example
+  பதிப்பி "வணக்கம், உலகமே!"
+  
+twitter https://twitter.com/ezhillang
+
+lineCommentToken #
+booleanTokens True False
 
 hasLineComments true
  # A comment
@@ -16,9 +39,6 @@ hasComments true
  # A comment
 hasSemanticIndentation false
 hasBooleans true
-
-lineCommentToken #
-booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Ezhil_(programming_language)
  example
@@ -66,25 +86,5 @@ wikipedia https://en.wikipedia.org/wiki/Ezhil_(programming_language)
  appeared 2007
  fileExtensions n
 
-pygmentsHighlighter Ezhil
- filename ezhil.py
- fileExtensions n
-
-helloWorldCollection Ezhil programming language
- # Hello world in Ezhil
- 
- பதிப்பி "வணக்கம்!"
- பதிப்பி "உலகே வணக்கம்"
- பதிப்பி "******* நன்றி!. *******"
- exit()
-rosettaCode http://www.rosettacode.org/wiki/Category:Ezhil
-
-rijuRepl https://riju.codes/ezhil
- example
-  பதிப்பி "வணக்கம், உலகமே!"
-  
-
-twitter https://twitter.com/ezhillang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName ezhillang.org
+ registered 2021

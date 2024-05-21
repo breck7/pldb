@@ -1,12 +1,18 @@
 import ../code/conceptPage.scroll
+
 id salsa
 name Simple Actor Language System and Architecture
 appeared 2001
 tags pl
 website http://wcl.cs.rpi.edu/salsa/
 standsFor Simple Actor Language System and Architecture
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Rensselaer Polytechnic Institute and University of Illinois at Urbana-Champaign
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -15,8 +21,6 @@ hasComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
  example
@@ -54,6 +58,3 @@ wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
  revisionCount 16
  appeared 2001
  fileExtensions salsa
-
-fileType text
-centralPackageRepositoryCount 0

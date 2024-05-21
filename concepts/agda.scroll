@@ -1,13 +1,38 @@
 import ../code/conceptPage.scroll
+
 id agda
 name Agda
 appeared 2007
-tags pl
 creators Ulf Norell and Catarina Coquand
+tags pl
 website http://wiki.portal.chalmers.se/agda
+
+isOpenSource true
+tryItOnline agda
+clocExtensions agda lagda
+fileType text
 documentation https://agda.readthedocs.io/en/v2.6.2.2/
+rosettaCode http://www.rosettacode.org/wiki/Category:Agda
+centralPackageRepositoryCount 0
 country Sweden
 originCommunity Chalmers University of Technology
+
+pygmentsHighlighter Agda
+ filename haskell.py
+ fileExtensions agda
+leachim6 Agda
+ filepath a/Agda.agda
+ fileExtensions agda
+ example
+  module agda where
+  open import IO
+  
+  main = run (putStrLn "Hello World")
+  
+
+lineCommentToken --
+printToken putStrLn
+stringToken "
 
 hasTypedHoles true
 hasLineComments true
@@ -26,10 +51,6 @@ hasIntegers true
  -- \d+
 hasMultiLineComments true
 
-lineCommentToken --
-printToken putStrLn
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/Agda_(programming_language)
  example
   data _≤_ : ℕ → ℕ → Set where
@@ -45,20 +66,12 @@ wikipedia https://en.wikipedia.org/wiki/Agda_(programming_language)
  appeared 2007
  fileExtensions agda lagda
 
-githubLanguage Agda
- fileExtensions agda
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.agda
- repos 2120
+hopl https://hopl.info/showlanguage.prx?exp=7860
+
 githubBigQuery Agda
  repos 207
  users 143
 
-pygmentsHighlighter Agda
- filename haskell.py
- fileExtensions agda
 linguistGrammarRepo https://github.com/mokus0/Agda.tmbundle
  firstCommit 2011
  lastCommit 2014
@@ -107,37 +120,20 @@ linguistGrammarRepo https://github.com/mokus0/Agda.tmbundle
   module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
   
 
-leachim6 Agda
- filepath a/Agda.agda
- fileExtensions agda
- example
-  module agda where
-  open import IO
-  
-  main = run (putStrLn "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Agda
-
-tryItOnline agda
-
-hopl https://hopl.info/showlanguage.prx?exp=7860
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Verified Functional Programming in Agda||Aaron Stump|49396006|4.00|1|0
- Verified Functional Programming in Agda||Aaron Stump|49396007|0.0|0|0
- Programming Language Foundations in Agda||Philip Wadler|66111413|0.0|0|0
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2016|ACM Books|Verified Functional Programming in Agda (ACM Books)|Stump, Aaron|9781970001242
  2016|ACM Books|Verified Functional Programming in Agda (ACM Books)|Stump, Aaron|9781970001273
  20160201|Morgan & Claypool Publishers|Verified Functional Programming in Agda|Aaron Stump|9781970001266
  20160201|Morgan & Claypool Publishers|Verified Functional Programming in Agda|Aaron Stump|9781970001259
+
+githubLanguage Agda
+ fileExtensions agda
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.agda
+ repos 2120
 
 semanticScholar 14
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -156,4 +152,8 @@ semanticScholar 14
  2011|Programming assurance cases in Agda|10.1145/2034773.2034794|1|0|M. Takeyama|f84dc6e52242df661da7bb499169393c05743b3b
  2022|An approach to translating Haskell programs to Agda and reasoning about them|10.48550/arXiv.2205.08718|1|0|H. Carr and Christa Jenkins and Mark Moir and Victor Cacciari Miraldo and Lisandra Silva|4f55424ebcf710cd8a46b9fad9c27f6803375835
 
-clocExtensions agda lagda
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Verified Functional Programming in Agda||Aaron Stump|49396006|4.00|1|0
+ Verified Functional Programming in Agda||Aaron Stump|49396007|0.0|0|0
+ Programming Language Foundations in Agda||Philip Wadler|66111413|0.0|0|0

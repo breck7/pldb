@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id bebasic
 name BeBasic
 appeared 2009
-tags pl
 creators BBK
+tags pl
 website https://github.com/wenerme/bbvm
+
+writtenIn java go gradle javascript markdown bash yaml json
+repoStats
+ firstCommit 2014
+ commits 195
+ committers 1
+ files 159
+ newestCommit 2021
 country China
 originCommunity polymer-china
 
@@ -32,12 +41,3 @@ githubRepo https://github.com/wenerme/bbvm
  updated 2022
  description BeBasic Virtual Machine
  issues 0
-
-repoStats
- firstCommit 2014
- commits 195
- committers 1
- files 159
- newestCommit 2021
-
-writtenIn java go gradle javascript markdown bash yaml json

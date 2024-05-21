@@ -1,19 +1,33 @@
 import ../code/conceptPage.scroll
+
 id clu
 name CLU
 appeared 1975
-tags pl
 creators Barbara Liskov
+tags pl
 website http://www.pmg.lcs.mit.edu/CLU.html
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
+
+leachim6 CLU
+ filepath c/CLU.clu
+ fileExtensions clu
+ example
+  start_up = proc ()
+      po: stream := stream$primary_output ()
+      stream$putl (po, "Hello World")
+      end start_up
+  
+
+printToken stream$putl
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken stream$putl
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
  example
@@ -33,21 +47,8 @@ wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
  revisionCount 166
  appeared 1975
 
-leachim6 CLU
- filepath c/CLU.clu
- fileExtensions clu
- example
-  start_up = proc ()
-      po: stream := stream$primary_output ()
-      stream$putl (po, "Hello World")
-      end start_up
-  
-
-tiobe CLU
 hopl https://hopl.info/showlanguage.prx?exp=637
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe CLU
 
 isbndb 1
  year|publisher|title|authors|isbn13

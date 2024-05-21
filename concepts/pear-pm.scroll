@@ -1,17 +1,19 @@
 import ../code/conceptPage.scroll
+
 id pear-pm
 name PEAR
 appeared 1999
 tags packageManager
 website http://pear.php.net/
-reference https://github.com/pear/
+forLanguages php
+
 country Unknown
 originCommunity https://pear.php.net/group
-domainName pear.php.net
+reference https://github.com/pear/
+
+twitter https://twitter.com/pear
 
 wikipedia https://en.wikipedia.org/wiki/PEAR
  dailyPageViews 45
 
-forLanguages php
-
-twitter https://twitter.com/pear
+domainName pear.php.net

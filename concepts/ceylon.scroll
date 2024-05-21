@@ -1,19 +1,75 @@
 import ../code/conceptPage.scroll
+
 id ceylon
 name Ceylon
 appeared 2011
-tags pl
 creators Gavin King
+tags pl
 website http://ceylon-lang.org
-documentation https://ceylon-lang.org/documentation/current/
-originCommunity Red Hat
-domainName ceylon-lang.org
- registered 2011
- awisRank
-  2017 1029547
 
+isOpenSource true
 writtenIn java javascript xml xslt bourne-shell gradle markdown html groovy css dtd json ini bash make asciidoc perl yaml
 runsOnVm jvm
+tryItOnline ceylon
+fileType text
+documentation https://ceylon-lang.org/documentation/current/
+rosettaCode http://www.rosettacode.org/wiki/Category:Ceylon
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 40307
+ committers 12
+ files 13362
+ newestCommit 2020
+originCommunity Red Hat
+projectEuler Ceylon
+ memberCount
+  2019 5
+  2022 8
+
+helloWorldCollection Ceylon
+ // Hello world in Ceylon
+ 
+ print("Hello, World!");
+pygmentsHighlighter Ceylon
+ filename jvm.py
+ fileExtensions ceylon
+rijuRepl https://riju.codes/ceylon
+ example
+  shared void run() {
+      print("Hello, world!");
+  }
+  
+ description Object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat
+ fileExtensions ceylon
+ website https://ceylon-lang.org/
+ gitRepo https://ceylon-lang.org/code/source/
+twitter https://twitter.com/ceylonlang
+leachim6 Ceylon
+ filepath c/Ceylon.ceylon
+ fileExtensions ceylon
+ example
+  shared void hello() {
+      print("Hello World");
+  }
+  
+languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
+ writtenIn ceylon
+
+githubRepo https://github.com/eclipse/ceylon
+ stars 387
+ forks 64
+ subscribers 41
+ created 2015
+ updated 2022
+ firstCommit 2017
+ description The Ceylon compiler, language module, and command line tools
+ issues 1027
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
 
 hasOperatorOverloading true
 hasStaticTyping true
@@ -38,28 +94,6 @@ hasIntegers true
 hasBinaryNumbers true
  // \$([01]{4})(_[01]{4})+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken print
-stringToken "
-
-githubRepo https://github.com/eclipse/ceylon
- stars 387
- forks 64
- subscribers 41
- created 2015
- updated 2022
- firstCommit 2017
- description The Ceylon compiler, language module, and command line tools
- issues 1027
-
-repoStats
- firstCommit 2017
- commits 40307
- committers 12
- files 13362
- newestCommit 2020
-
 wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
  example
   /* The classic Hello World program */
@@ -76,20 +110,17 @@ wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
  appeared 2011
  fileExtensions ceyloncite web
 
-githubLanguage Ceylon
- fileExtensions ceylon
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.ceylon
- repos 336
+tiobe Ceylon
+
+domainName ceylon-lang.org
+ registered 2011
+ awisRank
+  2017 1029547
+
 githubBigQuery Ceylon
  repos 167
  users 85
 
-pygmentsHighlighter Ceylon
- filename jvm.py
- fileExtensions ceylon
 linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
  firstCommit 2013
  lastCommit 2017
@@ -113,46 +144,15 @@ linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
       }
   }
   
-languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
- writtenIn ceylon
-
-projectEuler Ceylon
- memberCount
-  2019 5
-  2022 8
-helloWorldCollection Ceylon
- // Hello world in Ceylon
- 
- print("Hello, World!");
-leachim6 Ceylon
- filepath c/Ceylon.ceylon
- fileExtensions ceylon
- example
-  shared void hello() {
-      print("Hello World");
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Ceylon
-
-rijuRepl https://riju.codes/ceylon
- example
-  shared void run() {
-      print("Hello, world!");
-  }
-  
- description Object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat
- fileExtensions ceylon
- website https://ceylon-lang.org/
- gitRepo https://ceylon-lang.org/code/source/
-tryItOnline ceylon
-
-tiobe Ceylon
-
-twitter https://twitter.com/ceylonlang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0
+
+githubLanguage Ceylon
+ fileExtensions ceylon
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ceylon
+ repos 336
 
 semanticScholar 0

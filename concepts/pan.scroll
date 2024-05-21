@@ -1,22 +1,29 @@
 import ../code/conceptPage.scroll
+
 id pan
 name Pan
 appeared 2011
-tags pl
 creators Charles Loomis
+tags pl
 website http://www.quattor.org/
+
+isOpenSource true
+writtenIn java xml html restructuredtext ini clojure perl vim-script yaml svg python markdown bash
+fileType text
+wordRank 3457
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 954
+ committers 26
+ files 1267
+ newestCommit 2022
 country Various
 originCommunity https://github.com/quattor
-domainName quattor.org
- registered 2003
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+pygmentsHighlighter Pan
+ filename dsls.py
+ fileExtensions pan
 
 githubRepo https://github.com/quattor/pan
  firstCommit 2011
@@ -28,12 +35,13 @@ githubRepo https://github.com/quattor/pan
  description Pan Language Compiler and Tools
  issues 64
 
-repoStats
- firstCommit 2011
- commits 954
- committers 26
- files 1267
- newestCommit 2022
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Pan_(programming_language)
  example
@@ -48,20 +56,13 @@ wikipedia https://en.wikipedia.org/wiki/Pan_(programming_language)
  dailyPageViews 4
  fileExtensions pan tpl
 
-githubLanguage Pan
- fileExtensions pan
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.pan
- repos 41
+domainName quattor.org
+ registered 2003
+
 githubBigQuery Pan
  repos 150
  users 119
 
-pygmentsHighlighter Pan
- filename dsls.py
- fileExtensions pan
 linguistGrammarRepo https://github.com/quattor/language-pan
  firstCommit 2013
  lastCommit 2018
@@ -85,9 +86,10 @@ linguistGrammarRepo https://github.com/quattor/language-pan
   "/software/components/chkconfig/service/acpid" = dict('on', '', 'startstop', true);
   
 
-fileType text
-wordRank 3457
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn java xml html restructuredtext ini clojure perl vim-script yaml svg python markdown bash
+githubLanguage Pan
+ fileExtensions pan
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pan
+ repos 41

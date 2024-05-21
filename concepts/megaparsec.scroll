@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id megaparsec
 name Megaparsec
 appeared 2015
 tags library
 conceptDescription Industrial-strength monadic parser combinator library
-country France
-originCommunity https://github.com/mrkkrp/megaparsec/issues
 
 writtenIn haskell markdown json csv nix yaml xml
 relatedConcepts antlr
+repoStats
+ firstCommit 2008
+ commits 1039
+ committers 77
+ files 71
+ newestCommit 2024
+country France
+originCommunity https://github.com/mrkkrp/megaparsec/issues
 
 githubRepo https://github.com/mrkkrp/megaparsec
  stars 832
@@ -18,10 +25,3 @@ githubRepo https://github.com/mrkkrp/megaparsec
  updated 2023
  description Industrial-strength monadic parser combinator library
  issues 17
-
-repoStats
- firstCommit 2008
- commits 1039
- committers 77
- files 71
- newestCommit 2024

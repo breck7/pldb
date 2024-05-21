@@ -1,11 +1,23 @@
 import ../code/conceptPage.scroll
+
 id xidoc
 name Xidoc
 appeared 2021
-tags textMarkup
 creators Adam Blažek
-conceptDescription A consistent markup language
+tags textMarkup
 website https://xidoc.nim.town/
+conceptDescription A consistent markup language
+
+isOpenSource true
+writtenIn javascript nim html c css svg markdown yaml bash
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2021
+ commits 344
+ committers 2
+ files 480
+ newestCommit 2024
 country Czech Republic
 originCommunity Adam Blažek
 
@@ -34,19 +46,6 @@ githubRepo https://github.com/xigoi/xidoc
  description A consistent markup language
  issues 2
 
-repoStats
- firstCommit 2021
- commits 344
- committers 2
- files 480
- newestCommit 2024
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
 semanticScholar 0
-
-writtenIn javascript nim html c css svg markdown yaml bash

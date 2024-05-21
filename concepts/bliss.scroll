@@ -1,20 +1,23 @@
 import ../code/conceptPage.scroll
+
 id bliss
 name BLISS
 appeared 1969
-tags pl
 creators William Wulf
-reference https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932b7cc
+tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity Carnegie-Mellon University
+reference https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932b7cc
+
+lineCommentToken !
 
 hasLineComments true
  ! A comment
 hasComments true
  ! A comment
 hasSemanticIndentation false
-
-lineCommentToken !
 
 wikipedia https://en.wikipedia.org/wiki/BLISS
  example
@@ -55,5 +58,3 @@ wikipedia https://en.wikipedia.org/wiki/BLISS
  appeared 1970
 
 hopl https://hopl.info/showlanguage.prx?exp=375
-
-centralPackageRepositoryCount 0

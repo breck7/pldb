@@ -1,30 +1,22 @@
 import ../code/conceptPage.scroll
+
 id alpine-abuild
 name Alpine Abuild
 appeared 2006
 tags pl
-reference https://git.alpinelinux.org/cgit/abuild/tree/sample.APKBUILD
+
+fileType text
+centralPackageRepositoryCount 0
 originCommunity alpinelinux
+reference https://git.alpinelinux.org/cgit/abuild/tree/sample.APKBUILD
+
+lineCommentToken #
 
 hasLineComments true
  # A comment
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
-
-githubLanguage Alpine Abuild
- trendingProjectsCount 0
- type programming
- group Shell
- filenames APKBUILD
- aceMode sh
- codemirrorMode shell
- codemirrorMimeType text/x-sh
- tmScope source.shell
- aliases abuild or apkbuild
- repos 99
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013
@@ -104,5 +96,14 @@ linguistGrammarRepo https://github.com/atom/language-shellscript
   sha256sums="c8db017e3dd168edb20ceeb91971535cf66b8c95f29d3288f88ac755bffc60e5  abuild-2.27.0.tar.xz"
   sha512sums="98e1da4e47f3ab68700b3bc992c83e103f770f3196e433788ee74145f57cd33e5239c87f0a7a15f7266840d5bad893fc8c0d4c826d663df53deaee2678c56984  abuild-2.27.0.tar.xz"
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Alpine Abuild
+ trendingProjectsCount 0
+ type programming
+ group Shell
+ filenames APKBUILD
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
+ aliases abuild or apkbuild
+ repos 99

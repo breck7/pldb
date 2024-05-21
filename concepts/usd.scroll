@@ -1,15 +1,17 @@
 import ../code/conceptPage.scroll
+
 id usd
 name USD
 appeared 2016
 tags pl
 website https://graphics.pixar.com/usd/release/index.html
 standsFor Universal Scene Description
+
 originCommunity Pixar
 
-hasLineComments true
-hasComments true
-
+pygmentsHighlighter USD
+ filename usd.py
+ fileExtensions usd usda
 example
  #usda 1.0
  
@@ -20,8 +22,7 @@ example
      }
  }
 
-pygmentsHighlighter USD
- filename usd.py
- fileExtensions usd usda
+hasLineComments true
+hasComments true
 
 isbndb 0

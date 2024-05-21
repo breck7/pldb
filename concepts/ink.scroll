@@ -1,14 +1,36 @@
 import ../code/conceptPage.scroll
+
 id ink
 name ink
 appeared 2015
-tags esolang
 creators Joseph Humfrey
-conceptDescription Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
+tags esolang
 website http://www.inklestudios.com/ink
+conceptDescription Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
+
+isOpenSource true
+writtenIn csharp markdown xml json powershell bourne-shell yaml
+fileType text
+wordRank 3033
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 1518
+ committers 74
+ files 146
+ newestCommit 2023
 country United Kingdom
 originCommunity https://github.com/inkle
 
+rijuRepl https://riju.codes/ink
+ example
+  std := load('../../../opt/ink/std')
+  str := load('../../../opt/ink/str')
+  
+  log := std.log
+  
+  log('Hello, world!')
+  
 example
  - I looked at Monsieur Fogg
  *   ... and I could contain myself no longer.
@@ -29,6 +51,13 @@ example
  *   ... but I said nothing[] and <>
  - we passed the day in silence.
  - -> END
+twitter https://twitter.com/inklestudios
+leachim6 Ink
+ filepath i/Ink.ink
+ fileExtensions ink
+ example
+  Hello World
+  
 
 githubRepo https://github.com/inkle/ink
  firstCommit 2015
@@ -40,36 +69,4 @@ githubRepo https://github.com/inkle/ink
  description inkle's open source scripting language for writing interactive narrative.
  issues 288
 
-repoStats
- firstCommit 2015
- commits 1518
- committers 74
- files 146
- newestCommit 2023
-
-leachim6 Ink
- filepath i/Ink.ink
- fileExtensions ink
- example
-  Hello World
-  
-
-rijuRepl https://riju.codes/ink
- example
-  std := load('../../../opt/ink/std')
-  str := load('../../../opt/ink/str')
-  
-  log := std.log
-  
-  log('Hello, world!')
-  
-
-twitter https://twitter.com/inklestudios
-fileType text
-wordRank 3033
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
-
-writtenIn csharp markdown xml json powershell bourne-shell yaml

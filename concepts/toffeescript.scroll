@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id toffeescript
 name ToffeeScript
 appeared 2013
-tags pl
 creators Miao Jiang
+tags pl
 website https://github.com/jiangmiao/toffeescript
+
+writtenIn coffeescript javascript html css markdown erb ruby json
 fileExtensions toffee
+repoStats
+ firstCommit 2009
+ commits 5147
+ committers 142
+ files 246
+ newestCommit 2018
 country China
 
 githubRepo https://github.com/jiangmiao/toffeescript
@@ -15,12 +24,3 @@ githubRepo https://github.com/jiangmiao/toffeescript
  created 2013
  updated 2018
  description CoffeeScript with async syntax and some additional features
-
-repoStats
- firstCommit 2009
- commits 5147
- committers 142
- files 246
- newestCommit 2018
-
-writtenIn coffeescript javascript html css markdown erb ruby json

@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id p-star
 name P*
 appeared 2013
-tags pl
 creators Atle Solbakken
-conceptDescription P* (pronounced P-star) is a programming language specifically designed for web development. P* provides easy in-language support for common tasks in this field.
+tags pl
 website https://www.p-star.org/home
 aka p-star
+conceptDescription P* (pronounced P-star) is a programming language specifically designed for web development. P* provides easy in-language support for common tasks in this field.
+
+writtenIn cpp bourne-shell m4 make xml svg css markdown xslt
+repoStats
+ firstCommit 2013
+ commits 582
+ committers 7
+ files 406
+ newestCommit 2020
 country Norway
 originCommunity https://github.com/P-star
 
@@ -31,12 +40,3 @@ githubRepo https://github.com/P-star/P-star
  created 2013
  updated 2020
  description Main repository for the P* web programming language.
-
-repoStats
- firstCommit 2013
- commits 582
- committers 7
- files 406
- newestCommit 2020
-
-writtenIn cpp bourne-shell m4 make xml svg css markdown xslt

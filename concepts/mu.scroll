@@ -1,22 +1,27 @@
 import ../code/conceptPage.scroll
+
 id mu
 name Mu
 appeared 2014
-tags pl
 creators Kartik K. Agaram
+tags pl
 website https://github.com/akkartik/mu
-reference http://akkartik.name/akkartik-convivial-20200607.pdf
+
+isOpenSource true
+writtenIn html cpp bourne-shell markdown vim-script racket bash json c xml css z-shell javascript python less lisp
 fileExtensions mu
+fileType text
+wordRank 9065
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 9007
+ committers 15
+ files 1013
+ newestCommit 2023
 country United States
 originCommunity https://github.com/akkartik/mu/issues
-
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+reference http://akkartik.name/akkartik-convivial-20200607.pdf
 
 example
  # dump stack from bottom to top
@@ -47,18 +52,12 @@ githubRepo https://github.com/akkartik/mu
  description Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
  issues 3
 
-repoStats
- firstCommit 2014
- commits 9007
- committers 15
- files 1013
- newestCommit 2023
+lineCommentToken #
 
-fileType text
-wordRank 9065
-isOpenSource true
-centralPackageRepositoryCount 0
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 isbndb 0
-
-writtenIn html cpp bourne-shell markdown vim-script racket bash json c xml css z-shell javascript python less lisp

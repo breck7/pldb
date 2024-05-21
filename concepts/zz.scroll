@@ -1,14 +1,19 @@
 import ../code/conceptPage.scroll
+
 id zz
 name zz
 appeared 2019
-tags pl
 creators Arvid E. Picciani
+tags pl
 aka drunk octopus
 
-hasPrintDebugging true
-
-printToken printf
+writtenIn toml rust bourne-shell markdown yaml html c
+repoStats
+ firstCommit 2019
+ commits 366
+ committers 18
+ files 482
+ newestCommit 2021
 
 example
  using <stdio.h>::{printf}
@@ -39,13 +44,8 @@ githubRepo https://github.com/aep/zz
  description 🍺🐙  ZetZ a zymbolic verifier and tranzpiler to bare metal C
  issues 32
 
-repoStats
- firstCommit 2019
- commits 366
- committers 18
- files 482
- newestCommit 2021
+printToken printf
+
+hasPrintDebugging true
 
 isbndb 0
-
-writtenIn toml rust bourne-shell markdown yaml html c

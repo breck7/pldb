@@ -1,14 +1,14 @@
 import ../code/conceptPage.scroll
+
 id txr
 name txr
 appeared 2009
-tags pl
 creators Kaz Kylheku
-conceptDescription Programming Language for Convenient Data Munging
+tags pl
 website http://www.nongnu.org/txr/
+conceptDescription Programming Language for Convenient Data Munging
 
-hasComments true
-hasSemanticIndentation false
+rosettaCode http://www.rosettacode.org/wiki/Category:TXR
 
 example
  @(bind special-words ("arch." "var." "ver." "anci." "fam."))
@@ -47,4 +47,5 @@ example
  @  (end)
  @(end)
 
-rosettaCode http://www.rosettacode.org/wiki/Category:TXR
+hasComments true
+hasSemanticIndentation false

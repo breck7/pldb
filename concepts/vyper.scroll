@@ -1,8 +1,18 @@
 import ../code/conceptPage.scroll
+
 id vyper
 name vyper
 appeared 2016
 tags pl
+
+writtenIn python restructuredtext markdown yaml make html dockerfile toml bash svg bourne-shell
+clocExtensions vy
+repoStats
+ firstCommit 2016
+ commits 5702
+ committers 266
+ files 511
+ newestCommit 2024
 
 githubRepo https://github.com/ethereum/vyper
  firstCommit 2016
@@ -14,12 +24,11 @@ githubRepo https://github.com/ethereum/vyper
  description Pythonic Smart Contract Language for the EVM
  issues 209
 
-repoStats
- firstCommit 2016
- commits 5702
- committers 266
- files 511
- newestCommit 2024
+githubBigQuery Vyper
+ repos 1
+ users 1
+
+isbndb 0
 
 githubLanguage Vyper
  type programming
@@ -27,11 +36,3 @@ githubLanguage Vyper
  aceMode text
  tmScope source.vyper
  repos 117
-githubBigQuery Vyper
- repos 1
- users 1
-
-isbndb 0
-
-clocExtensions vy
-writtenIn python restructuredtext markdown yaml make html dockerfile toml bash svg bourne-shell

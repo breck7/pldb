@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id notation3
 name Notation3
 appeared 1998
-tags dataNotation
 creators Tim Berners-Lee
-reference https://www.w3.org/DesignIssues/N3Resources
+tags dataNotation
 aka n3
-country United States
-originCommunity World Wide Web Consortium
 
 supersetOf turtle
 relatedConcepts turtle rdf rdfa
+country United States
+originCommunity World Wide Web Consortium
+reference https://www.w3.org/DesignIssues/N3Resources
 
 example
  @prefix dc: <http://purl.org/dc/elements/1.1/>.

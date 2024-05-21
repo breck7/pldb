@@ -1,18 +1,43 @@
 import ../code/conceptPage.scroll
+
 id processing
 name Processing
 appeared 2001
 tags pl
 website http://processing.org
-documentation https://processing.org/reference
+
 fileExtensions pde
+fileType text
+wordRank 1486
+documentation https://processing.org/reference
+rosettaCode http://www.rosettacode.org/wiki/Category:Processing
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
-domainName processing.org
- registered 2003
- awisRank
-  2022 48450
-  2017 17405
+projectEuler Processing
+ memberCount
+  2019 43
+  2022 53
+
+helloWorldCollection Processing
+ // Hello world in Processing
+ 
+ println( "Hello world!" );
+twitter https://twitter.com/processingorg
+leachim6 Processing
+ filepath p/Processing.pde
+ fileExtensions pde
+ example
+  size(128, 128);
+  background(0);
+  textAlign(CENTER, CENTER);
+  fill(255);
+  text("Hello World", width / 2, height / 2);
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -23,10 +48,6 @@ hasMultiLineComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-multiLineCommentTokens /* */
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Processing_(programming_language)
  example
@@ -82,16 +103,14 @@ wikipedia https://en.wikipedia.org/wiki/Processing_(programming_language)
  appeared 2001
  fileExtensions pde
 
-githubLanguage Processing
- fileExtensions pde
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  greerviau SnakeAI https://github.com/greerviau.png https://github.com/greerviau/SnakeAI Processing #0096D8 578 133 77 "Train a Neural Network to play Snake using a Genetic Algorithm"
- trendingProjectsCount 2
- type programming
- aceMode text
- tmScope source.processing
- repos 78037
+tiobe Processing
+
+domainName processing.org
+ registered 2003
+ awisRank
+  2022 48450
+  2017 17405
+
 githubBigQuery Processing
  repos 6773
  users 5494
@@ -141,33 +160,6 @@ linguistGrammarRepo https://github.com/textmate/processing.tmbundle
   
   
 
-projectEuler Processing
- memberCount
-  2019 43
-  2022 53
-helloWorldCollection Processing
- // Hello world in Processing
- 
- println( "Hello world!" );
-leachim6 Processing
- filepath p/Processing.pde
- fileExtensions pde
- example
-  size(128, 128);
-  background(0);
-  textAlign(CENTER, CENTER);
-  fill(255);
-  text("Hello World", width / 2, height / 2);
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Processing
-
-tiobe Processing
-
-twitter https://twitter.com/processingorg
-fileType text
-wordRank 1486
-centralPackageRepositoryCount 0
-
 isbndb 42
  year|publisher|title|authors|isbn13
  2009|O'Reilly Media|Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit|Bird, Steven and Klein, Ewan and Loper, Edward|9780596516499
@@ -212,6 +204,17 @@ isbndb 42
  2014|The MIT Press|Advanced Structured Prediction (Neural Information Processing series)||9780262028370
  20150721|Springer Nature|Fundamentals of Music Processing|Meinard Müller|9783319219455
  1984|Van Nostrand Reinhold Co.|Image Processing Of Geological Data|Fabbri, Andrea G.|9780442225360
+
+githubLanguage Processing
+ fileExtensions pde
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  greerviau SnakeAI https://github.com/greerviau.png https://github.com/greerviau/SnakeAI Processing #0096D8 578 133 77 "Train a Neural Network to play Snake using a Genetic Algorithm"
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope source.processing
+ repos 78037
 
 semanticScholar 31
  year|title|doi|citations|influentialCitations|authors|paperId

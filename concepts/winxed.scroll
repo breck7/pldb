@@ -1,24 +1,19 @@
 import ../code/conceptPage.scroll
+
 id winxed
 name winxed
 appeared 2009
 tags pl
 website http://winxed.net/
+
+writtenIn cpp json make markdown
 fileExtensions winxed
-domainName winxed.net
- registered 2013
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+repoStats
+ firstCommit 2009
+ commits 1682
+ committers 5
+ files 115
+ newestCommit 2014
 
 example
  #! winxed
@@ -88,11 +83,17 @@ githubRepo https://github.com/NotFound/winxed
  description The winxed programming language
  issues 6
 
-repoStats
- firstCommit 2009
- commits 1682
- committers 5
- files 115
- newestCommit 2014
+lineCommentToken //
+multiLineCommentTokens /* */
 
-writtenIn cpp json make markdown
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName winxed.net
+ registered 2013

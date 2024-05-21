@@ -1,10 +1,20 @@
 import ../code/conceptPage.scroll
+
 id meson
 name Meson
 appeared 2013
 tags pl
+
+isOpenSource true
+clocExtensions meson.build
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/mesonbuild
+
+pygmentsHighlighter Meson
+ filename meson.py
+ fileExtensions meson.build meson_options.txt
 
 hasOctals true
 hasHexadecimals true
@@ -20,20 +30,10 @@ wikipedia https://en.wikipedia.org/wiki/Meson_(software)
  dailyPageViews 63
  appeared 2013
 
-githubLanguage Meson
- trendingProjectsCount 0
- type programming
- filenames meson.build meson_options.txt
- aceMode text
- tmScope source.meson
- repos 880
 githubBigQuery Meson
  repos 1153
  users 765
 
-pygmentsHighlighter Meson
- filename meson.py
- fileExtensions meson.build meson_options.txt
 linguistGrammarRepo https://github.com/TingPing/language-meson
  firstCommit 2017
  lastCommit 2018
@@ -45,12 +45,14 @@ linguistGrammarRepo https://github.com/TingPing/language-meson
     value: true,
   )
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Meson
+ trendingProjectsCount 0
+ type programming
+ filenames meson.build meson_options.txt
+ aceMode text
+ tmScope source.meson
+ repos 880
 
-clocExtensions meson.build
+semanticScholar 0

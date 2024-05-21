@@ -1,32 +1,28 @@
 import ../code/conceptPage.scroll
+
 id json5
 name JSON5
 appeared 2012
-tags dataNotation
 creators Aseem Kishore
-conceptDescription The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
+tags dataNotation
 website https://json5.org/
+conceptDescription The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
+
+isOpenSource true
+writtenIn javascript markdown typescript json json5 yaml
+supersetOf json
+clocExtensions json5
+fileType text
 documentation https://json5.org/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 649
+ committers 28
+ files 39
+ newestCommit 2023
 country United States
 originCommunity https://github.com/json5
-domainName json5.org
- registered 2011
- awisRank
-  2022 1469395
-
-supersetOf json
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 example
  {
@@ -52,22 +48,22 @@ githubRepo https://github.com/json5/json5
  description JSON5 — JSON for humans
  issues 32
 
-repoStats
- firstCommit 2012
- commits 649
- committers 28
- files 39
- newestCommit 2023
+lineCommentToken //
+multiLineCommentTokens /* */
 
-githubLanguage JSON5
- fileExtensions json5
- trendingProjectsCount 0
- type data
- aceMode javascript
- codemirrorMode javascript
- codemirrorMimeType application/json
- tmScope source.js
- repos 0
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName json5.org
+ registered 2011
+ awisRank
+  2022 1469395
 
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
@@ -106,11 +102,14 @@ linguistGrammarRepo https://github.com/atom/language-javascript
       ],
   }
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage JSON5
+ fileExtensions json5
+ trendingProjectsCount 0
+ type data
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.js
+ repos 0
 
 semanticScholar 0
-
-clocExtensions json5
-writtenIn javascript markdown typescript json json5 yaml

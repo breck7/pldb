@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id esterel
 name Esterel
 appeared 1980
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country France
 originCommunity Ecole des Mines de Paris && INRIA
 
+jupyterKernel https://github.com/abingham/jupyter-elm-kernel
 wikipedia https://en.wikipedia.org/wiki/Esterel
  example
   module ABRO:
@@ -28,10 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Esterel
  appeared 1980
 
 hopl https://hopl.info/showlanguage.prx?exp=1081
-
-jupyterKernel https://github.com/abingham/jupyter-elm-kernel
-fileType text
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

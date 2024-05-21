@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id jsparagus
 name jsparagus
 appeared 2018
 tags grammarLanguage
 conceptDescription A JavaScript parser written in Rust
+
+writtenIn rust python toml markdown yaml bourne-shell javascript json make bash
+repoStats
+ firstCommit 2018
+ commits 8635
+ committers 18
+ files 176
+ newestCommit 2024
 country United States
 originCommunity Mozilla Foundation
 
@@ -15,12 +24,3 @@ githubRepo https://github.com/mozilla-spidermonkey/jsparagus
  updated 2023
  description Experimental JS parser-generator project.
  issues 110
-
-repoStats
- firstCommit 2018
- commits 8635
- committers 18
- files 176
- newestCommit 2024
-
-writtenIn rust python toml markdown yaml bourne-shell javascript json make bash

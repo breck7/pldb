@@ -1,17 +1,17 @@
 import ../code/conceptPage.scroll
+
 id golfscript
 name GolfScript
 appeared 2007
 tags esolang
 website http://www.golfscript.com/golfscript/
+
 country United States
 originCommunity https://github.com/darrenks/golfscript/issues
 
-hasStrings true
- "Hello world"
-
-stringToken "
-
+rijuRepl https://riju.codes/golfscript
+ example
+  'Hello, world!'
 leachim6 Golfscript
  filepath g/Golfscript.golfscript
  fileExtensions golfscript
@@ -19,6 +19,7 @@ leachim6 Golfscript
   "Hello World"
   
 
-rijuRepl https://riju.codes/golfscript
- example
-  'Hello, world!'
+stringToken "
+
+hasStrings true
+ "Hello world"

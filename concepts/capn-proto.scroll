@@ -1,21 +1,30 @@
 import ../code/conceptPage.scroll
+
 id capn-proto
 name Cap'n Proto
 appeared 2013
-tags idl
 creators Kenton Varda
+tags idl
 website https://capnproto.org/
+
+isOpenSource true
+writtenIn cpp markdown bourne-shell cmake html starlark yaml m4 json protobuf css python xml make javascript svg bazel lisp
+relatedConcepts protobuf
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 5405
+ committers 243
+ files 487
+ newestCommit 2024
 country United States and Portugal
 originCommunity Cap'n Proto
-domainName capnproto.org
- registered 2013
- awisRank
-  2022 1586908
 
-relatedConcepts protobuf
-
-hasLineComments true
-hasComments true
+pygmentsHighlighter Cap'n Proto
+ filename capnproto.py
+ fileExtensions capnp
+twitter https://twitter.com/capnproto
 
 githubRepo https://github.com/capnproto/capnproto
  firstCommit 2013
@@ -27,12 +36,25 @@ githubRepo https://github.com/capnproto/capnproto
  description Cap'n Proto serialization/RPC system - core tools and C++ library
  issues 172
 
-repoStats
+hasLineComments true
+hasComments true
+
+domainName capnproto.org
+ registered 2013
+ awisRank
+  2022 1586908
+
+githubBigQuery Cap'n Proto
+ repos 690
+ users 557
+
+linguistGrammarRepo https://github.com/textmate/capnproto.tmbundle
  firstCommit 2013
- commits 5405
- committers 243
- files 487
- newestCommit 2024
+ lastCommit 2017
+ committerCount 2
+ commitCount 2
+
+isbndb 0
 
 githubLanguage Cap'n Proto
  fileExtensions capnp
@@ -41,26 +63,5 @@ githubLanguage Cap'n Proto
  aceMode text
  tmScope source.capnp
  repos 134567
-githubBigQuery Cap'n Proto
- repos 690
- users 557
-
-pygmentsHighlighter Cap'n Proto
- filename capnproto.py
- fileExtensions capnp
-linguistGrammarRepo https://github.com/textmate/capnproto.tmbundle
- firstCommit 2013
- lastCommit 2017
- committerCount 2
- commitCount 2
-
-twitter https://twitter.com/capnproto
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0
-
-writtenIn cpp markdown bourne-shell cmake html starlark yaml m4 json protobuf css python xml make javascript svg bazel lisp

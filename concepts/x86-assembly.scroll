@@ -1,10 +1,35 @@
 import ../code/conceptPage.scroll
+
 id x86-assembly
 name x86 Assembly
 appeared 1972
 tags assembly
-documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
 aka x86
+
+gdbSupport true
+fileType text
+documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+centralPackageRepositoryCount 0
+
+rijuRepl https://riju.codes/x86
+ example
+  	.text
+  	.globl main
+  main:
+  	movq $1, %rax
+  	movq $1, %rdi
+  	leaq message(%rip), %rsi
+  	movq $14, %rdx
+  	syscall
+  	movq $60, %rax
+  	movq $0, %rdi
+  	syscall
+  	.data
+  message:
+  	.string "Hello, world!\n"
+  
+
+lineCommentToken ;
 
 hasProcessorRegisters true
 hasLineComments true
@@ -12,8 +37,6 @@ hasLineComments true
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
  example
@@ -30,16 +53,6 @@ wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
  revisionCount 732
  dailyPageViews 426
  appeared 1972
-
-githubLanguage Unix Assembly
- fileExtensions s ms
- trendingProjectsCount 0
- type programming
- group Assembly
- aceMode assembly_x86
- tmScope source.x86
- aliases gas or gnu asm or unix asm
- repos 61156
 
 linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
  firstCommit 2014
@@ -112,28 +125,16 @@ linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
   LEFDE1:
    .subsections_via_symbols
 
-rijuRepl https://riju.codes/x86
- example
-  	.text
-  	.globl main
-  main:
-  	movq $1, %rax
-  	movq $1, %rdi
-  	leaq message(%rip), %rsi
-  	movq $14, %rdx
-  	syscall
-  	movq $60, %rax
-  	movq $0, %rdi
-  	syscall
-  	.data
-  message:
-  	.string "Hello, world!\n"
-  
-
-gdbSupport true
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Unix Assembly
+ fileExtensions s ms
+ trendingProjectsCount 0
+ type programming
+ group Assembly
+ aceMode assembly_x86
+ tmScope source.x86
+ aliases gas or gnu asm or unix asm
+ repos 61156
 
 semanticScholar 0

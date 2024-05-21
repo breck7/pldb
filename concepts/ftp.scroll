@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id ftp
 name FTP
 appeared 1971
 tags protocol
-documentation https://www.rfc-editor.org/rfc/rfc959
 standsFor File Transfer Protocol
+
+fileType na
+wordRank 4060
+documentation https://www.rfc-editor.org/rfc/rfc959
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
+
+subreddit https://reddit.com/r/ftp
+ memberCount
+  2022 471
 
 wikipedia https://en.wikipedia.org/wiki/File_Transfer_Protocol
  related http smtp tls tcp udp unix linux ascii
@@ -17,14 +26,6 @@ wikipedia https://en.wikipedia.org/wiki/File_Transfer_Protocol
  backlinksCount 1280
  revisionCount 2802
  appeared 1971
-
-subreddit https://reddit.com/r/ftp
- memberCount
-  2022 471
-
-fileType na
-wordRank 4060
-centralPackageRepositoryCount 0
 
 isbndb 0
 

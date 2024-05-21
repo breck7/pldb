@@ -1,25 +1,13 @@
 import ../code/conceptPage.scroll
+
 id flagship
 name flagship
 appeared 1986
 tags pl
 website http://www.flagship.de/
+
 country Germany
 originCommunity multisoft Datentechnik
-domainName flagship.de
- awisRank
-  2022 11801152
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken //
-stringToken "
 
 example
  ** File: hello1.prg         // your first program
@@ -49,6 +37,21 @@ example
  ENDIF
  BROWSE ()                   // browse/edit
  QUIT                        // exit back to command line
+
+lineCommentToken //
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName flagship.de
+ awisRank
+  2022 11801152
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

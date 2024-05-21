@@ -1,17 +1,35 @@
 import ../code/conceptPage.scroll
+
 id apache-velocity
 name Velocity
 appeared 2003
 tags template
 website http://velocity.apache.org/
 aka Velocity
+
+isOpenSource true
+fileType text
+codeMirror velocity
+centralPackageRepositoryCount 0
 originCommunity Apache
-domainName velocity.apache.org
+
+helloWorldCollection Apache Velocity
+ <HTML>
+ <!-- Hello World in Velocity -->
+ <BODY>
+   #set( $foo = "Hello World" )
+   $foo
+ </BODY>
+ </HTML>
+ 
+pygmentsHighlighter Velocity
+ filename templates.py
+ fileExtensions vm fhtml
+
+stringToken "
 
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
  example
@@ -29,24 +47,7 @@ wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
  revisionCount 133
  appeared 2003
 
-codeMirror velocity
-pygmentsHighlighter Velocity
- filename templates.py
- fileExtensions vm fhtml
-
-helloWorldCollection Apache Velocity
- <HTML>
- <!-- Hello World in Velocity -->
- <BODY>
-   #set( $foo = "Hello World" )
-   $foo
- </BODY>
- </HTML>
- 
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName velocity.apache.org
 
 isbndb 2
  year|publisher|title|authors|isbn13

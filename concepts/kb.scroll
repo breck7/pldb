@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id kb
 name KB
 appeared 1990
 tags pl
 conceptDescription A knowledge representation package for Common Lisp
-reference https://repository.upenn.edu/cgi/viewcontent.cgi?article=1569&context=cis_reports
+
+wordRank 1795
 country United States
 originCommunity University of Pennsylvania
+reference https://repository.upenn.edu/cgi/viewcontent.cgi?article=1569&context=cis_reports
 
 example
  (defconcept circle () (center radius))
 
 hopl https://hopl.info/showlanguage.prx?exp=7724
-
-wordRank 1795

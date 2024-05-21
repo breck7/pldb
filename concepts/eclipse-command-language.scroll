@@ -1,12 +1,22 @@
 import ../code/conceptPage.scroll
+
 id eclipse-command-language
 name Eclipse Command Language
 appeared 2008
 tags pl
-reference https://www.eclipse.org/rcptt/documentation/userguide/ecl/
 aka ecl
+
+fileType text
+monaco ecl
+centralPackageRepositoryCount 0
 country Canada
 originCommunity Eclipse Foundation
+reference https://www.eclipse.org/rcptt/documentation/userguide/ecl/
+
+keywords __compressed__ after all and any as atmost before beginc best between case cluster compressed compression const counter csv default descend embed encoding encrypt end endc endembed endmacro enum escape except exclusive expire export extend fail few fileposition first flat forward from full function functionmacro group grouped heading hole ifblock import in inner interface internal joined keep keyed last left limit linkcounted literal little_endian load local locale lookup lzw macro many maxcount maxlength min skew module mofn multiple named namespace nocase noroot noscan nosort not noxpath of onfail only opt or outer overwrite packed partition penalty physicallength pipe prefetch quote record repeat retry return right right1 right2 rows rowset scan scope self separator service shared skew skip smart soapaction sql stable store terminator thor threshold timelimit timeout token transform trim type unicodeorder unordered unsorted unstable update use validate virtual whole width wild within wnotrim xml xpath
+
+lineCommentToken %
+multiLineCommentTokens /* */
 
 hasLineComments true
  % A comment
@@ -20,23 +30,10 @@ hasStrings true
 hasConstants true
 hasFunctions true
 
-lineCommentToken %
-multiLineCommentTokens /* */
-keywords __compressed__ after all and any as atmost before beginc best between case cluster compressed compression const counter csv default descend embed encoding encrypt end endc endembed endmacro enum escape except exclusive expire export extend fail few fileposition first flat forward from full function functionmacro group grouped heading hole ifblock import in inner interface internal joined keep keyed last left limit linkcounted literal little_endian load local locale lookup lzw macro many maxcount maxlength min skew module mofn multiple named namespace nocase noroot noscan nosort not noxpath of onfail only opt or outer overwrite packed partition penalty physicallength pipe prefetch quote record repeat retry return right right1 right2 rows rowset scan scope self separator service shared skew skip smart soapaction sql stable store terminator thor threshold timelimit timeout token transform trim type unicodeorder unordered unsorted unstable update use validate virtual whole width wild within wnotrim xml xpath
-
-githubLanguage ECLiPSe
- fileExtensions ecl
- trendingProjectsCount 0
- type programming
- group prolog
- aceMode prolog
- tmScope source.prolog.eclipse
- repos 0
 githubBigQuery Ecl
  repos 24
  users 24
 
-monaco ecl
 linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
  firstCommit 2012
  lastCommit 2018
@@ -135,5 +132,11 @@ linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
   faitListe(ListVar, 18, -9, 9), suite(ListVar). => 99 solutions
   */
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage ECLiPSe
+ fileExtensions ecl
+ trendingProjectsCount 0
+ type programming
+ group prolog
+ aceMode prolog
+ tmScope source.prolog.eclipse
+ repos 0

@@ -1,8 +1,19 @@
 import ../code/conceptPage.scroll
+
 id myia
 name myia
 appeared 2017
 tags pl
+
+isOpenSource true
+writtenIn python bourne-shell yaml toml markdown restructuredtext css html make ini jupyter-notebook
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 969
+ committers 10
+ files 388
+ newestCommit 2021
 country Canada
 originCommunity Quebec Artificial Intelligence Institute
 
@@ -15,15 +26,3 @@ githubRepo https://github.com/mila-udem/myia
  updated 2022
  description Myia prototyping
  issues 30
-
-repoStats
- firstCommit 2017
- commits 969
- committers 10
- files 388
- newestCommit 2021
-
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn python bourne-shell yaml toml markdown restructuredtext css html make ini jupyter-notebook

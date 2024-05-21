@@ -1,13 +1,13 @@
 import ../code/conceptPage.scroll
+
 id wast
 name WebAssembly Text Format
 appeared 2015
 tags pl
 conceptDescription WebAssembly has an S-expression-based textual representation, an intermediate form designed to be exposed in text editors, browser developer tools, etc.
-reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
-fileExtensions wast
 
-hasSemanticIndentation false
+fileExtensions wast
+reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
 
 example
   (module
@@ -17,3 +17,5 @@ example
        (call $exp
          (get_local $0))
        (f64.const 2))))
+
+hasSemanticIndentation false

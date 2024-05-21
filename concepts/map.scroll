@@ -1,12 +1,13 @@
 import ../code/conceptPage.scroll
+
 id map
 name MAP
 appeared 1960
 tags assembly
-reference http://bitsavers.org/pdf/ibm/7090/C28-6311-2_7090_MAP.pdf
 standsFor Macro Assembly Program Language
-originCommunity IBM
-
-hopl https://hopl.info/showlanguage.prx?exp=3116
 
 wordRank 197
+originCommunity IBM
+reference http://bitsavers.org/pdf/ibm/7090/C28-6311-2_7090_MAP.pdf
+
+hopl https://hopl.info/showlanguage.prx?exp=3116

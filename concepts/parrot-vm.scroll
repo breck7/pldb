@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id parrot-vm
 name Parrot
 appeared 2002
 tags vm
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://www.perl.org
 
@@ -29,12 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Parrot_virtual_machine
  dailyPageViews 66
  appeared 2016
 
-githubLanguage Parrot
- fileExtensions parrot
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope none
 githubBigQuery Parrot
  repos 121
  users 88
@@ -45,5 +43,9 @@ linguistGrammarRepo https://github.com/textmate/parrot.tmbundle
  committerCount 1
  commitCount 10
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage Parrot
+ fileExtensions parrot
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none

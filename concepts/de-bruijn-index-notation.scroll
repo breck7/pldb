@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id de-bruijn-index-notation
 name De Bruijn index
 appeared 1972
-tags notation
 creators Nicolaas Govert de Bruijn
-reference http://alexandria.tue.nl/repository/freearticles/597619.pdf
+tags notation
+
 country Netherlands
 originCommunity Technical University Eindhoven
+reference http://alexandria.tue.nl/repository/freearticles/597619.pdf
 
 example
  λ λ λ 3 1 (2 1)

@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id subrip-text
 name SubRip Text
 appeared 2005
 tags application
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://en.wikipedia.org/wiki/SubRip
 
 example
@@ -10,14 +14,6 @@ example
  00:20:41,150 --> 00:20:45,109
  - How did he do that?
  - Made him an offer he couldn't refuse.
-
-githubLanguage SubRip Text
- fileExtensions srt
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope text.srt
- repos 521758
 
 linguistGrammarRepo https://github.com/314eter/atom-language-srt
  firstCommit 2016
@@ -267,5 +263,10 @@ linguistGrammarRepo https://github.com/314eter/atom-language-srt
   00:05:05,970 --> 00:05:07,450
   Great! Thanks.
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage SubRip Text
+ fileExtensions srt
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope text.srt
+ repos 521758

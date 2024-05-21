@@ -1,11 +1,16 @@
 import ../code/conceptPage.scroll
+
 id nimrod
 name nimrod
 appeared 2013
 tags pl
 website http://nimrod-lang.org
-domainName nimrod-lang.org
- registered 2013
+
+pygmentsHighlighter Nimrod
+ filename nimrod.py
+ fileExtensions nim nimrod
+
+keywords addr and as asm bind block break case cast concept const continue converter defer discard distinct div do elif else end enum except export finally for func if in yield interface is isnot iterator let macro method mixin mod not notin object of or out proc ptr raise ref return shl shr static template try tuple type using when while xor
 
 hasWhileLoops true
 hasConstants true
@@ -16,15 +21,12 @@ hasFloats true
 hasIntegers true
 hasBinaryNumbers true
 
-keywords addr and as asm bind block break case cast concept const continue converter defer discard distinct div do elif else end enum except export finally for func if in yield interface is isnot iterator let macro method mixin mod not notin object of or out proc ptr raise ref return shl shr static template try tuple type using when while xor
+domainName nimrod-lang.org
+ registered 2013
 
 githubBigQuery Nimrod
  repos 601
  users 375
-
-pygmentsHighlighter Nimrod
- filename nimrod.py
- fileExtensions nim nimrod
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score

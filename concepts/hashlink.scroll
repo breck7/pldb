@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id hashlink
 name hashlink
 appeared 2015
-tags bytecode
 creators Nicolas Cannasse
+tags bytecode
 website https://hashlink.haxe.org/
+
+isOpenSource true
+writtenIn c haxe xml cmake json markdown cpp yaml make objective-c
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 1680
+ committers 82
+ files 647
+ newestCommit 2024
 country Various
 originCommunity https://github.com/HaxeFoundation
-domainName hashlink.haxe.org
 
 githubRepo https://github.com/HaxeFoundation/hashlink
  firstCommit 2015
@@ -19,15 +30,4 @@ githubRepo https://github.com/HaxeFoundation/hashlink
  description A virtual machine for Haxe
  issues 74
 
-repoStats
- firstCommit 2015
- commits 1680
- committers 82
- files 647
- newestCommit 2024
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c haxe xml cmake json markdown cpp yaml make objective-c
+domainName hashlink.haxe.org

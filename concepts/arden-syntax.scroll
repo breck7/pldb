@@ -1,22 +1,12 @@
 import ../code/conceptPage.scroll
+
 id arden-syntax
 name Arden syntax
 appeared 1992
 tags dataNotation
+
 country United States
 originCommunity Columbia Presbyterian Medical Center && IBM
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-hasBooleans true
-
-multiLineCommentTokens /* */
-booleanTokens true false
 
 example
  maintenance:
@@ -72,5 +62,17 @@ example
   'msg' : "Der Normalbereich von 60 bis 90";
   ;;
  end:
+
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
 
 wikipedia https://en.wikipedia.org/wiki/Arden_syntax

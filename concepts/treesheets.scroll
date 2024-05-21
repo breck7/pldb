@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id treesheets
 name TreeSheets
 appeared 2019
-tags visual
-screenshot treesheets.png
 creators Wouter van Oortmerssen
+tags visual
 website https://strlen.com/treesheets/
+screenshot treesheets.png
+
+writtenIn cpp c svg xml html yaml markdown bourne-shell cmake
+repoStats
+ firstCommit 2013
+ commits 676
+ committers 40
+ files 388
+ newestCommit 2024
 
 githubRepo https://github.com/aardappel/treesheets
  firstCommit 2013
@@ -16,12 +25,3 @@ githubRepo https://github.com/aardappel/treesheets
  updated 2022
  description TreeSheets : Free Form Data Organizer (see strlen.com/treesheets)
  issues 132
-
-repoStats
- firstCommit 2013
- commits 676
- committers 40
- files 388
- newestCommit 2024
-
-writtenIn cpp c svg xml html yaml markdown bourne-shell cmake

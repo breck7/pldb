@@ -1,11 +1,35 @@
 import ../code/conceptPage.scroll
+
 id scilab
 name Scilab
 appeared 1990
 tags pl
+
+isOpenSource true
+fileType text
 documentation https://wiki.scilab.org/Documentation
+rosettaCode http://www.rosettacode.org/wiki/Category:Scilab
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://gitlab.com/groups/scilab/-/issues
+
+pygmentsHighlighter Scilab
+ filename matlab.py
+ fileExtensions sci sce tst
+rijuRepl https://riju.codes/scilab
+ example
+  disp("Hello, world!")
+  
+leachim6 SCILab
+ filepath s/SCILab.scilab
+ fileExtensions scilab
+ example
+  disp("Hello World")
+  
+
+lineCommentToken //
+printToken disp
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -20,10 +44,7 @@ hasIntegers true
  // \d+
 hasScientificNotation true
 
-lineCommentToken //
-printToken disp
-stringToken "
-
+jupyterKernel https://github.com/calysto/scilab_kernel
 wikipedia https://en.wikipedia.org/wiki/Scilab
  example
   // A simple plot of z = f(x,y)
@@ -39,20 +60,10 @@ wikipedia https://en.wikipedia.org/wiki/Scilab
  revisionCount 432
  appeared 1990
 
-githubLanguage Scilab
- fileExtensions sci sce tst
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.scilab
- repos 3986
 githubBigQuery Scilab
  repos 13048
  users 7234
 
-pygmentsHighlighter Scilab
- filename matlab.py
- fileExtensions sci sce tst
 linguistGrammarRepo https://github.com/textmate/scilab.tmbundle
  firstCommit 2007
  lastCommit 2012
@@ -64,34 +75,6 @@ linguistGrammarRepo https://github.com/textmate/scilab.tmbundle
   
   
 
-leachim6 SCILab
- filepath s/SCILab.scilab
- fileExtensions scilab
- example
-  disp("Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Scilab
-
-rijuRepl https://riju.codes/scilab
- example
-  disp("Hello, world!")
-  
-
-jupyterKernel https://github.com/calysto/scilab_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Engineering and Scientific Computing with Scilab|1998|Claude Gomez|2443580|3.33|3|0
- Programming in Scilab 4. 1|2009|Vinu V. Das|27685296|0.0|0|0
- Scilab (a Free Software to Matlab)|2011|Hema Ramchandran|44003404|0.0|0|0
- Introduction to Scilab: For Scientists and Engineers||Sandeep Nagar|53796871|0.0|0|0
- Introduction to Scilab: For Engineers and Scientists||Sandeep Nagar|58537943|5.00|1|0
- Introduction to Scilab for Scientists and Engineers||John Maclane|57266755|0.0|0|0
- SCILAB (A FREE SOFTWARE TO MATLAB)||ACHUTHSANKAR S.NAIR|44300566|0.0|0|0
-
 isbndb 8
  year|publisher|title|authors|isbn13
  20140203|Springer Nature|Praktische Mathematik mit MATLAB, Scilab und Octave|Frank Thuselt; Felix Paul Gennrich|9783642258251
@@ -102,6 +85,14 @@ isbndb 8
  2009T|New Age International Publisher|Programming in Scilab 4. 1|Das, Vinu V.|9788122424713
  20171111|Springer Nature|Introduction to Scilab|Sandeep Nagar|9781484231920
  2019-03-05|Bentham Science Publishers|Arduino and Scilab based Projects|Rajesh Singh and Anita Gehlot and Bhupendra Singh|9789811410925
+
+githubLanguage Scilab
+ fileExtensions sci sce tst
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.scilab
+ repos 3986
 
 semanticScholar 10
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -115,3 +106,13 @@ semanticScholar 10
  2002|A Scilab Program For Computing Rotating Magnetic Compact Objects|10.1142/S0129183102003218|1|0|P. Papasotiriou and V. Geroyannis|8ab7a8573a12d34528c6b542384c8b4b7a4b1ba4
  2009|Java interface for Scilab based on the jLab environment|10.1109/ICASID.2009.5277009|1|0|Lilan Wu and Jianling Gao and Xiaoyao Xie|7a94b3788238c22cf10b0bfa0d4c92197984278b
  2017|Working with Scilab|10.1007/978-1-4842-3192-0_2|1|0|Sandeep Nagar|1adbeac4c9515127395915fbe9aaa04610b37fe5
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Engineering and Scientific Computing with Scilab|1998|Claude Gomez|2443580|3.33|3|0
+ Programming in Scilab 4. 1|2009|Vinu V. Das|27685296|0.0|0|0
+ Scilab (a Free Software to Matlab)|2011|Hema Ramchandran|44003404|0.0|0|0
+ Introduction to Scilab: For Scientists and Engineers||Sandeep Nagar|53796871|0.0|0|0
+ Introduction to Scilab: For Engineers and Scientists||Sandeep Nagar|58537943|5.00|1|0
+ Introduction to Scilab for Scientists and Engineers||John Maclane|57266755|0.0|0|0
+ SCILAB (A FREE SOFTWARE TO MATLAB)||ACHUTHSANKAR S.NAIR|44300566|0.0|0|0

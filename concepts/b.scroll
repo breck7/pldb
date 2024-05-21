@@ -1,11 +1,29 @@
 import ../code/conceptPage.scroll
+
 id b
 name B
 appeared 1969
-tags pl
 creators Ken Thompson and Dennis Ritchie
+tags pl
+
+fileType text
+wordRank 124
+rosettaCode http://www.rosettacode.org/wiki/Category:B
+centralPackageRepositoryCount 0
 country United States
 originCommunity Bell Labs
+
+leachim6 B
+ filepath b/B.b
+ fileExtensions b
+ example
+  main() {
+      putchar ('Hell'); putchar ('o Wo'); putchar ('rld'); putchar ('*n');
+  }
+  
+
+multiLineCommentTokens /* */
+printToken putchar
 
 hasPrintDebugging true
 hasMultiLineComments true
@@ -15,9 +33,6 @@ hasComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-multiLineCommentTokens /* */
-printToken putchar
 
 wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
  example
@@ -44,21 +59,7 @@ wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
  appeared 1969
  fileExtensions b
 
-leachim6 B
- filepath b/B.b
- fileExtensions b
- example
-  main() {
-      putchar ('Hell'); putchar ('o Wo'); putchar ('rld'); putchar ('*n');
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:B
-
 hopl https://hopl.info/showlanguage.prx?exp=492
-
-fileType text
-wordRank 124
-centralPackageRepositoryCount 0
 
 isbndb 0
 

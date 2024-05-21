@@ -1,19 +1,30 @@
 import ../code/conceptPage.scroll
+
 id cache-objectscript
 name Caché ObjectScript
 appeared 1997
 tags pl
+
+supersetOf mumps
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity InterSystems
 
-supersetOf mumps
+leachim6 Cache ObjectScript
+ filepath c/Cache ObjectScript.mac
+ example
+  HelloWorld  ;
+    Write "Hello World"
+    Quit
+  
+
+printToken Write
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken Write
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Caché_ObjectScript
  related mumps sql
@@ -25,18 +36,7 @@ wikipedia https://en.wikipedia.org/wiki/Caché_ObjectScript
  dailyPageViews 19
  appeared 1997
 
-leachim6 Cache ObjectScript
- filepath c/Cache ObjectScript.mac
- example
-  HelloWorld  ;
-    Write "Hello World"
-    Quit
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=4987
-
-fileType text
-centralPackageRepositoryCount 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

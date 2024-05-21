@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id tbox-lib
 name tbox-lib
 appeared 2010
 tags library
 website https://tboox.org
-domainName tboox.org
- registered 2011
- awisRank
-  2022 2511139
+
+writtenIn c assembly-language yaml markdown lua bourne-shell objective-c cpp
+repoStats
+ firstCommit 2010
+ commits 3367
+ committers 35
+ files 1101
+ newestCommit 2024
 
 githubRepo https://github.com/tboox/tbox
  firstCommit 2010
@@ -19,10 +24,7 @@ githubRepo https://github.com/tboox/tbox
  description 🎁 A glib-like multi-platform c library
  issues 19
 
-repoStats
- firstCommit 2010
- commits 3367
- committers 35
- files 1101
- newestCommit 2024
-writtenIn c assembly-language yaml markdown lua bourne-shell objective-c cpp
+domainName tboox.org
+ registered 2011
+ awisRank
+  2022 2511139

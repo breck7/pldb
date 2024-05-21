@@ -1,17 +1,26 @@
 import ../code/conceptPage.scroll
+
 id aplusplus
 name A++
 appeared 1996
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Germany
 originCommunity Bull's Software-Haus
+
+leachim6 A++
+ filepath a/A++
+ example
+  (print "Hello World")
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/A++
  related isbn
@@ -22,11 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/A++
  revisionCount 4661
  dailyPageViews 38
  appeared 1996
-
-leachim6 A++
- filepath a/A++
- example
-  (print "Hello World")
-
-fileType text
-centralPackageRepositoryCount 0

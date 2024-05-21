@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id srl
 name SRL
 appeared 2016
-tags queryLanguage
 creators Karim Geiger
+tags queryLanguage
 website https://simple-regex.com/
 standsFor Simple Regex Language
+
+isOpenSource true
+writtenIn php markdown json xml yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 61
+ committers 4
+ files 51
+ newestCommit 2017
 country Estonia
 originCommunity https://github.com/SimpleRegex
-domainName simple-regex.com
- registered 2016
- awisRank
-  2017 5551277
 
 example
  begin with any of (digit, letter, one of "._%+-") once or more,
@@ -31,17 +39,9 @@ githubRepo https://github.com/SimpleRegex/SRL-PHP
  description Simple Regex Language
  issues 11
 
-repoStats
- firstCommit 2016
- commits 61
- committers 4
- files 51
- newestCommit 2017
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName simple-regex.com
+ registered 2016
+ awisRank
+  2017 5551277
 
 isbndb 0
-
-writtenIn php markdown json xml yaml

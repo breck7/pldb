@@ -1,23 +1,22 @@
 import ../code/conceptPage.scroll
+
 id gentee
 name gentee
 appeared 2018
-tags pl
 creators Alexey Krivonogov
-conceptDescription Script programming language for automation. It uses VM and compiler written in Go (Golang).
+tags pl
 website http://gentee.org/
+conceptDescription Script programming language for automation. It uses VM and compiler written in Go (Golang).
+
+writtenIn go vim-script markdown make yaml
+repoStats
+ firstCommit 2018
+ commits 277
+ committers 3
+ files 163
+ newestCommit 2023
 country Russia
 originCommunity https://github.com/gentee
-domainName gentee.org
- registered 2001
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
 
 example
  #!/usr/local/bin/gentee
@@ -58,13 +57,15 @@ githubRepo https://github.com/gentee/gentee
  description Gentee - script programming language for automation. It uses VM and compiler written in Go (Golang).
  issues 0
 
-repoStats
- firstCommit 2018
- commits 277
- committers 3
- files 163
- newestCommit 2023
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName gentee.org
+ registered 2001
 
 isbndb 0
-
-writtenIn go vim-script markdown make yaml

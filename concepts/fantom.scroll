@@ -1,18 +1,40 @@
 import ../code/conceptPage.scroll
+
 id fantom
 name Fantom
 appeared 2005
 tags pl
 website http://www.fantom.org
+
+isOpenSource true
+runsOnVm jvm
+tryItOnline fantom
+fileType text
 documentation https://docs.fantom.foundation/
+rosettaCode http://www.rosettacode.org/wiki/Category:Fantom
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/fantom-lang
-domainName fantom.org
- registered 2003
- awisRank
-  2022 3280615
 
-runsOnVm jvm
+pygmentsHighlighter Fantom
+ filename fantom.py
+ fileExtensions fan
+leachim6 Fantom
+ filepath f/Fantom.fan
+ fileExtensions fan
+ example
+  // Hello from Fantom!
+  class HelloWorld {
+    static Void main() {
+      echo("Hello World")
+    }
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken "
 
 hasLineComments true
  // A comment
@@ -25,11 +47,6 @@ hasMultiLineComments true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken echo
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Fantom_(programming_language)
  example
@@ -50,20 +67,17 @@ wikipedia https://en.wikipedia.org/wiki/Fantom_(programming_language)
  revisionCount 145
  appeared 2005
 
-githubLanguage Fantom
- fileExtensions fan
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.fan
- repos 176
+tiobe Fantom
+
+domainName fantom.org
+ registered 2003
+ awisRank
+  2022 3280615
+
 githubBigQuery Fantom
  repos 38
  users 36
 
-pygmentsHighlighter Fantom
- filename fantom.py
- fileExtensions fan
 linguistGrammarRepo https://github.com/rkoeninger/sublime-fantom
  firstCommit 2016
  lastCommit 2017
@@ -123,27 +137,14 @@ linguistGrammarRepo https://github.com/rkoeninger/sublime-fantom
   }
   
 
-leachim6 Fantom
- filepath f/Fantom.fan
- fileExtensions fan
- example
-  // Hello from Fantom!
-  class HelloWorld {
-    static Void main() {
-      echo("Hello World")
-    }
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Fantom
-
-tryItOnline fantom
-
-tiobe Fantom
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Fantom
+ fileExtensions fan
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.fan
+ repos 176
 
 semanticScholar 0

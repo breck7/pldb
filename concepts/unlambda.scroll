@@ -1,18 +1,44 @@
 import ../code/conceptPage.scroll
+
 id unlambda
 name UNLAMBDA
 appeared 1999
-tags esolang
 creators David Madore
+tags esolang
 website http://www.madore.org/~david/programs/unlambda/
+
+isOpenSource true
+tryItOnline unlambda
+fileType text
+esolang https://esolangs.org/wiki/Unlambda
+rosettaCode http://www.rosettacode.org/wiki/Category:Unlambda
+quineRelay Unlambda
+replit https://repl.it/languages/unlambda
+centralPackageRepositoryCount 0
 country United States
+
+helloWorldCollection UNLAMBDA
+ # Hello World in unlambda
+ 
+ `r```````````.H.e.l.l.o. .w.o.r.l.di
+ 
+rijuRepl https://riju.codes/unlambda
+ example
+  `.
+  `.!`.d`.l`.r`.o`.w`. `.,`.o`.l`.l`.e`.Hi
+  
+leachim6 Unlambda
+ filepath u/Unlambda.unl
+ fileExtensions unl
+ example
+  `r```````````.H.e.l.l.o. .w.o.r.l.di
+
+lineCommentToken #
 
 hasComments true
 hasLineComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Unlambda
  related scheme c java
@@ -24,33 +50,7 @@ wikipedia https://en.wikipedia.org/wiki/Unlambda
  revisionCount 108
  appeared 1999
 
-helloWorldCollection UNLAMBDA
- # Hello World in unlambda
- 
- `r```````````.H.e.l.l.o. .w.o.r.l.di
- 
-leachim6 Unlambda
- filepath u/Unlambda.unl
- fileExtensions unl
- example
-  `r```````````.H.e.l.l.o. .w.o.r.l.di
-rosettaCode http://www.rosettacode.org/wiki/Category:Unlambda
-quineRelay Unlambda
-
-rijuRepl https://riju.codes/unlambda
- example
-  `.
-  `.!`.d`.l`.r`.o`.w`. `.,`.o`.l`.l`.e`.Hi
-  
-replit https://repl.it/languages/unlambda
-tryItOnline unlambda
-
 hopl https://hopl.info/showlanguage.prx?exp=2598
-esolang https://esolangs.org/wiki/Unlambda
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 2
  year|publisher|title|authors|isbn13

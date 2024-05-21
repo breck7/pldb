@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id tsar
 name tsar
 appeared 2019
-tags pl
 creators adam-mcdaniel
+tags pl
+
+writtenIn rust markdown toml
+repoStats
+ firstCommit 2019
+ commits 74
+ committers 2
+ files 23
+ newestCommit 2019
 
 githubRepo https://github.com/adam-mcdaniel/tsar
  firstCommit 2019
@@ -14,12 +23,3 @@ githubRepo https://github.com/adam-mcdaniel/tsar
  updated 2022
  description Tsar programming language
  issues 3
-
-repoStats
- firstCommit 2019
- commits 74
- committers 2
- files 23
- newestCommit 2019
-
-writtenIn rust markdown toml

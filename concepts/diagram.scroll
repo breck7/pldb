@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id diagram
 name DIAGRAM
 appeared 1980
 tags pl
-reference https://semanticscholar.org/paper/7b773624063af98bf0bfb75c705e489f736aa7f8
+
+wordRank 6435
+centralPackageRepositoryCount 0
 country United States
 originCommunity SRI International
+reference https://semanticscholar.org/paper/7b773624063af98bf0bfb75c705e489f736aa7f8
 
 wikipedia https://en.wikipedia.org/wiki/Diagram
  related uml drakon ladder-logic
@@ -17,9 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Diagram
  appeared 1984
 
 hopl https://hopl.info/showlanguage.prx?exp=7795
-
-wordRank 6435
-centralPackageRepositoryCount 0
 
 isbndb 4
  year|publisher|title|authors|isbn13

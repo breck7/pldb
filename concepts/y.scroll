@@ -1,13 +1,13 @@
 import ../code/conceptPage.scroll
+
 id y
 name Y
 appeared 1981
 tags pl
+
+wordRank 382
+centralPackageRepositoryCount 0
 reference https://semanticscholar.org/paper/3c3904c1ebf7883312bdba56e581cb3541fa1c90
-
-hasPrintDebugging true
-
-printToken printf
 
 leachim6 Y
  filepath y/Y.y
@@ -24,9 +24,10 @@ leachim6 Y
   	end
   end
 
-hopl https://hopl.info/showlanguage.prx?exp=982
+printToken printf
 
-wordRank 382
-centralPackageRepositoryCount 0
+hasPrintDebugging true
+
+hopl https://hopl.info/showlanguage.prx?exp=982
 
 isbndb 0

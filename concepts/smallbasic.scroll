@@ -1,17 +1,25 @@
 import ../code/conceptPage.scroll
+
 id smallbasic
 name SmallBASIC
 appeared 2001
 tags pl
 website https://smallbasic.github.io
+
+isOpenSource true
+writtenIn visual-basic c cpp tex make xml java html css gradle m4 jsx csv bourne-shell perl lisp php dtd xslt markdown json java-server-pages javascript
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 2613
+ committers 14
+ files 620
+ newestCommit 2024
+country Greece
+originCommunity https://sourceforge.net/p/smallbasic/_list/tickets
 reference https://learnxinyminutes.com/docs/smallbasic/
 reference https://github.com/chrisws/SmallBASIC
 reference https://sourceforge.net/projects/smallbasic/
-country Greece
-originCommunity https://sourceforge.net/p/smallbasic/_list/tickets
-domainName smallbasic.github.io
- awisRank
-  2022 7190149
 
 githubRepo https://github.com/smallbasic/SmallBASIC
  firstCommit 2003
@@ -23,13 +31,6 @@ githubRepo https://github.com/smallbasic/SmallBASIC
  description SmallBASIC is a fast and easy to learn BASIC language interpreter ideal for everyday calculations, scripts and prototypes. SmallBASIC includes trigonometric, matrices and algebra functions, a built in IDE, a powerful string library, system, sound, and graphic commands along with structured programming syntax
  issues 15
 
-repoStats
- firstCommit 2003
- commits 2613
- committers 14
- files 620
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/SmallBASIC
  related microsoft-small-basic basic qbasic c gw-basic brainfuck linux android
  summary SmallBASIC is a BASIC programming language dialect with interpreters released as  free software under the GNU General Public License version 2.
@@ -40,7 +41,6 @@ wikipedia https://en.wikipedia.org/wiki/SmallBASIC
  dailyPageViews 15
  appeared 2018
 
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn visual-basic c cpp tex make xml java html css gradle m4 jsx csv bourne-shell perl lisp php dtd xslt markdown json java-server-pages javascript
+domainName smallbasic.github.io
+ awisRank
+  2022 7190149

@@ -1,18 +1,16 @@
 import ../code/conceptPage.scroll
+
 id plz
 name PLZ
 appeared 1979
 tags pl
 conceptDescription PLZ/SYS is intended to aid the implementation of system programs for microcomputers. PLZ/SYS is a synthesis of concepts from contemporary programming languages and compilers--the language Pascal has had the most notable influence on the overall design and implementation of PLZ/SYS.
-reference https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038
-country United States
-originCommunity Zilog, Inc
 
 influencedBy pascal
-
-hasBooleans true
-
-booleanTokens true false
+centralPackageRepositoryCount 0
+country United States
+originCommunity Zilog, Inc
+reference https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038
 
 example
  bubble sort MODULE
@@ -59,6 +57,8 @@ example
    END main
  END bubble sort
 
-hopl https://hopl.info/showlanguage.prx?exp=865
+booleanTokens true false
 
-centralPackageRepositoryCount 0
+hasBooleans true
+
+hopl https://hopl.info/showlanguage.prx?exp=865

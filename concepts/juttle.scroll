@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id juttle
 name juttle
 appeared 2014
 tags pl
 website http://www.jut.io/play
 
-hasFloats true
-hasIntegers true
-
 pygmentsHighlighter Juttle
  filename javascript.py
  fileExtensions juttle
+
+hasFloats true
+hasIntegers true
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score

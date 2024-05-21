@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id xpl
 name XPL
 appeared 1967
 tags pl
 standsFor XPL Programming Language
+
+fileType text
+centralPackageRepositoryCount 0
 
 wikipedia https://en.wikipedia.org/wiki/XPL
  related pl-i fortran cobol algol systemz c java bcpl pl360 yacc hal-s freebsd linux pl-m
@@ -15,8 +19,5 @@ wikipedia https://en.wikipedia.org/wiki/XPL
  revisionCount 133
  appeared 1967
 
-tiobe XPL
 hopl https://hopl.info/showlanguage.prx?exp=308
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe XPL

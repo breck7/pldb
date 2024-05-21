@@ -1,16 +1,20 @@
 import ../code/conceptPage.scroll
+
 id lazy-k
 name Lazy K
 appeared 2002
 tags esolang
-conceptDescription Lazy K is a garbage-collected, referentially transparent functional programming language, with a simple stream-based I/O system. What distinguishes Lazy K from other such languages is its almost total lack of other features.
 website https://tromp.github.io/cl/lazy-k.html
-reference http://lambda-the-ultimate.org/node/406
 aka lazyk
+conceptDescription Lazy K is a garbage-collected, referentially transparent functional programming language, with a simple stream-based I/O system. What distinguishes Lazy K from other such languages is its almost total lack of other features.
+
+fileType text
+esolang https://esolangs.org/wiki/Lazy_K
+quineRelay Lazy K
+centralPackageRepositoryCount 0
 country The Netherlands
 originCommunity https://tromp.github.io/
-
-quineRelay Lazy K
+reference http://lambda-the-ultimate.org/node/406
 
 rijuRepl https://riju.codes/lazyk
  example
@@ -21,9 +25,3 @@ rijuRepl https://riju.codes/lazyk
   S0))S))`K(SS0))`K(SS(SS(S(SSS)(SS(SS0))))))I(SSSSSS(SS0)))I(S(SI(SS0))(SS(SS(SS(
   SS`S(SSS)(SS0))))))(SS(S(S(S(SSS)(SS0))S)(SSSS(SS(SS0)))))(S(SSS)(S(SSS)(SS0)))`
   K0)
-  
-
-esolang https://esolangs.org/wiki/Lazy_K
-
-fileType text
-centralPackageRepositoryCount 0

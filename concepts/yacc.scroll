@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id yacc
 name Yacc
 appeared 1975
 tags grammarLanguage
-documentation https://pubs.opengroup.org/onlinepubs/009604599/utilities/yacc.html
-reference https://github.com/babyraging/yash
 standsFor Yet Another Compiler-Compiler
-country United States
 
 writtenIn c
+clocExtensions y yacc
+fileType text
+documentation https://pubs.opengroup.org/onlinepubs/009604599/utilities/yacc.html
+centralPackageRepositoryCount 0
+country United States
+reference https://github.com/babyraging/yash
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -18,9 +25,6 @@ hasMultiLineComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Yacc
  related unix b c bison ocaml ratfor ada pascal java python ruby go common-lisp
@@ -32,13 +36,9 @@ wikipedia https://en.wikipedia.org/wiki/Yacc
  revisionCount 347
  appeared 1975
 
-githubLanguage Yacc
- fileExtensions y yacc yy
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.yacc
- repos 11041
+hopl https://hopl.info/showlanguage.prx?exp=704
+tiobe yacc
+
 githubBigQuery Yacc
  repos 13674
  users 10470
@@ -174,15 +174,6 @@ linguistGrammarRepo https://github.com/textmate/bison.tmbundle
   }
   
 
-linkedInSkill yacc
- 2018 1722
-
-tiobe yacc
-hopl https://hopl.info/showlanguage.prx?exp=704
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 4
  year|publisher|title|authors|isbn13
  2007|PHI|Compiler Design Using FLEX and YACC|Das, Vinu V.|9788120332515
@@ -190,8 +181,17 @@ isbndb 4
  2012-02-23|Wiley|Compiler Construction Using Java, JavaCC, and Yacc|Anthony J. Dos Reis|9781118112878
  2012|Wiley|Compiler Construction Using Java, JavaCC, and Yacc|Anthony J. Dos Reis|9781118112779
 
+githubLanguage Yacc
+ fileExtensions y yacc yy
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.yacc
+ repos 11041
+
+linkedInSkill yacc
+ 2018 1722
+
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  1985|Yacc in sasl — an exercise in functional programming|10.1002/spe.4380150807|20|0|S. Jones|5e6fedcd614749ea7e7e6dc764dee16d590c12f6
-
-clocExtensions y yacc

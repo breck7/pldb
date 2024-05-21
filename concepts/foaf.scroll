@@ -1,11 +1,13 @@
 import ../code/conceptPage.scroll
+
 id foaf
 name FOAF
 appeared 2007
 tags xmlFormat
-reference http://xmlns.com/foaf/spec/
+
 country Various
 originCommunity http://rdfweb.org/mailman/listinfo/rdfweb-dev
+reference http://xmlns.com/foaf/spec/
 
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

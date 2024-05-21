@@ -1,28 +1,24 @@
 import ../code/conceptPage.scroll
+
 id kit
 name Kit
 appeared 2012
 tags template
-conceptDescription HTML template language from CodeKit
 website https://codekitapp.com/help/kit/
-reference https://www.hongkiat.com/blog/kit-language/
+conceptDescription HTML template language from CodeKit
+
+fileType text
+wordRank 1359
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://codekitapp.com/about/
+reference https://www.hongkiat.com/blog/kit-language/
 
 example
  <!-- @page_name: Homepage -->
  <!-- @body_class: home blog -->
  <!-- @include inc/opening.kit -->
 
-githubLanguage Kit
- fileExtensions kit
- trendingProjectsCount 0
- type markup
- aceMode html
- codemirrorMode htmlmixed
- codemirrorMimeType text/html
- tmScope text.html.basic
- repos 218
 githubBigQuery Kit
  repos 67
  users 59
@@ -43,6 +39,12 @@ linguistGrammarRepo https://github.com/atom/language-html
   	</p>
   </section>
 
-fileType text
-wordRank 1359
-centralPackageRepositoryCount 0
+githubLanguage Kit
+ fileExtensions kit
+ trendingProjectsCount 0
+ type markup
+ aceMode html
+ codemirrorMode htmlmixed
+ codemirrorMimeType text/html
+ tmScope text.html.basic
+ repos 218

@@ -1,17 +1,32 @@
 import ../code/conceptPage.scroll
+
 id parasail
 name parasail
 appeared 2009
-tags pl
 creators Seth Tucker Taft
-conceptDescription ParaSail is a new parallel programming language designed to support the development of inherently safe and secure, highly parallel applications that can be mapped to multicore, manycore, heterogeneous, or distributed architectures.
+tags pl
 website http://parasail-lang.org
-documentation https://adacore.github.io/ParaSail/images/parasail_ref_manual.pdf
+conceptDescription ParaSail is a new parallel programming language designed to support the development of inherently safe and secure, highly parallel applications that can be mapped to multicore, manycore, heterogeneous, or distributed architectures.
+
 fileExtensions .psi .psl
+documentation https://adacore.github.io/ParaSail/images/parasail_ref_manual.pdf
 country United States
 originCommunity Ada Core Technologies
-domainName parasail-lang.org
- registered 2012
+
+pygmentsHighlighter ParaSail
+ filename parasail.py
+ fileExtensions psi psl
+leachim6 ParaSail
+ filepath p/ParaSail.psi
+ fileExtensions psi
+ example
+  func Hello_World(var IO) is
+      IO.Println("Hello World");
+  end func Hello_World;
+  
+
+printToken IO.Println
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
@@ -23,24 +38,11 @@ hasBinaryNumbers true
 hasLineComments true
 hasComments true
 
-printToken IO.Println
-stringToken "
-
 wikipedia https://en.wikipedia.org/wiki/ParaSail_(programming_language)
  summary Parallel Specification and Implementation Language (ParaSail) is an object-oriented parallel programming language. Its design and ongoing implementation is described in a blog and on its official website.
 
-pygmentsHighlighter ParaSail
- filename parasail.py
- fileExtensions psi psl
-
-leachim6 ParaSail
- filepath p/ParaSail.psi
- fileExtensions psi
- example
-  func Hello_World(var IO) is
-      IO.Println("Hello World");
-  end func Hello_World;
-  
+domainName parasail-lang.org
+ registered 2012
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score

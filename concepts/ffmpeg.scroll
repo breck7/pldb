@@ -1,12 +1,19 @@
 import ../code/conceptPage.scroll
+
 id ffmpeg
 name FFmpeg
 appeared 2000
-tags application
 creators Fabrice Bellard and Bobby Bingham
+tags application
 website https://ffmpeg.org/
 
 writtenIn c assembly-language make bourne-shell opencl xml cuda perl objective-c markdown cpp css python xsd metal awk ruby html
+repoStats
+ firstCommit 2000
+ newestCommit 2024
+ commits 140766
+ committers 2486
+ files 8473
 
 githubRepo https://github.com/FFmpeg/FFmpeg
  firstCommit 2000
@@ -19,10 +26,3 @@ githubRepo https://github.com/FFmpeg/FFmpeg
  issues 3
 
 wikipedia https://en.wikipedia.org/wiki/FFmpeg
-
-repoStats
- firstCommit 2000
- newestCommit 2024
- commits 140766
- committers 2486
- files 8473

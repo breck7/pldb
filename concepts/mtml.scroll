@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id mtml
 name Marine Trading Markup Language
 appeared 2000
 tags xmlFormat
-conceptDescription The Marine Trading Markup Language (MTML), formalized in the MTML Document Type Definition, "is a standard to help a broad base of small, medium and large buyers and suppliers in the marine trading industry conduct their fundamental trading transactions electronically via the Internet."
 website https://www.shipserv.com
-reference http://www.meca.org.uk/maritime-trading-markup-language-mtml.html
 aka mtml
+conceptDescription The Marine Trading Markup Language (MTML), formalized in the MTML Document Type Definition, "is a standard to help a broad base of small, medium and large buyers and suppliers in the marine trading industry conduct their fundamental trading transactions electronically via the Internet."
+
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity shipserv
+reference http://www.meca.org.uk/maritime-trading-markup-language-mtml.html
+
+githubBigQuery MTML
+ repos 12
+ users 7
 
 githubLanguage MTML
  type markup
@@ -18,8 +25,3 @@ githubLanguage MTML
  codemirrorMimeType text/html
  tmScope text.html.basic
  repos 85
-githubBigQuery MTML
- repos 12
- users 7
-
-centralPackageRepositoryCount 0

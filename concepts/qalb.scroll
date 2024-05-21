@@ -1,19 +1,35 @@
 import ../code/conceptPage.scroll
+
 id qalb
 name Qalb
 appeared 2012
-tags pl
 creators Ramsey Nasser
+tags pl
 website http://qlb-repl.herokuapp.com/
-country United States
 nativeLanguage Arabic
+
+isOpenSource true
+writtenIn javascript css html markdown json ruby
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 114
+ committers 3
+ files 36
+ newestCommit 2013
+country United States
 originCommunity https://github.com/nasser/---/issues
-domainName qlb-repl.herokuapp.com
 
-hasStrings true
- "Hello world"
-
-stringToken "
+rijuRepl https://riju.codes/qalb
+ example
+  (قول "مرحبا يا عالم")
+  
+leachim6 Qalb
+ filepath q/Qalb
+ example
+  (قول "Hello World")
+  
 
 githubRepo https://github.com/nasser/---
  stars 667
@@ -25,12 +41,10 @@ githubRepo https://github.com/nasser/---
  description قلب: لغة برمجة
  issues 4
 
-repoStats
- firstCommit 2012
- commits 114
- committers 3
- files 36
- newestCommit 2013
+stringToken "
+
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Qalb_(programming_language)
  related scheme lisp
@@ -42,21 +56,6 @@ wikipedia https://en.wikipedia.org/wiki/Qalb_(programming_language)
  revisionCount 35
  appeared 2012
 
-leachim6 Qalb
- filepath q/Qalb
- example
-  (قول "Hello World")
-  
-
-rijuRepl https://riju.codes/qalb
- example
-  (قول "مرحبا يا عالم")
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName qlb-repl.herokuapp.com
 
 isbndb 0
-
-writtenIn javascript css html markdown json ruby

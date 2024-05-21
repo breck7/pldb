@@ -1,13 +1,37 @@
 import ../code/conceptPage.scroll
+
 id qml
 name QML
 appeared 2009
 tags pl
 website http://qt-project.org/doc/qt-5/qmlapplications.html
-documentation https://doc.qt.io/qt-6/qtqml-documents-topic.html
 standsFor Qt Modeling Language
+
+clocExtensions qbs qml
+fileType text
+documentation https://doc.qt.io/qt-6/qtqml-documents-topic.html
+centralPackageRepositoryCount 0
 country Finland
 originCommunity Qt Group plc
+
+pygmentsHighlighter QML
+ filename webmisc.py
+ fileExtensions qml qbs
+example
+ Item {
+     Rectangle {
+         id: myRect
+         width: 120
+         height: 100
+     }
+     Rectangle {
+         width: myRect.width
+         height: 200
+     }
+ }
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -24,22 +48,6 @@ hasFloats true
 hasIntegers true
  // [0-9]+
 
-lineCommentToken //
-multiLineCommentTokens /* */
-
-example
- Item {
-     Rectangle {
-         id: myRect
-         width: 120
-         height: 100
-     }
-     Rectangle {
-         width: myRect.width
-         height: 200
-     }
- }
-
 wikipedia https://en.wikipedia.org/wiki/QML
  example
   MouseArea {
@@ -54,23 +62,10 @@ wikipedia https://en.wikipedia.org/wiki/QML
  dailyPageViews 182
  appeared 2009
 
-githubLanguage QML
- fileExtensions qml qbs
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  Swordfish90 cool-retro-term https://github.com/Swordfish90.png https://github.com/Swordfish90/cool-retro-term QML #44a51c 11081 489 197 "A good looking terminal emulator which mimics the old cathode display..."
- trendingProjectsCount 2
- type programming
- aceMode text
- tmScope source.qml
- repos 14755
 githubBigQuery QML
  repos 5249
  users 4140
 
-pygmentsHighlighter QML
- filename webmisc.py
- fileExtensions qml qbs
 linguistGrammarRepo https://github.com/skozlovf/Sublime-QML
  firstCommit 2013
  lastCommit 2014
@@ -235,9 +230,15 @@ linguistGrammarRepo https://github.com/skozlovf/Sublime-QML
   }
   
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-clocExtensions qbs qml
+githubLanguage QML
+ fileExtensions qml qbs
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Swordfish90 cool-retro-term https://github.com/Swordfish90.png https://github.com/Swordfish90/cool-retro-term QML #44a51c 11081 489 197 "A good looking terminal emulator which mimics the old cathode display..."
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope source.qml
+ repos 14755

@@ -1,23 +1,38 @@
 import ../code/conceptPage.scroll
+
 id nice
 name Nice
 appeared 2006
-tags pl
 creators Daniel Bonniot
+tags pl
 website https://nice.sourceforge.net/
+
+fileType text
+wordRank 1157
 documentation https://nice.sourceforge.net/manual.html
 documentation https://nice.sourceforge.net/
-reference https://gallium.inria.fr/~remy/poly/mot/10/nice/web/
-reference https://nice.sourceforge.net/Nice-source.tar.gz
+rosettaCode http://www.rosettacode.org/wiki/Category:Nice
+centralPackageRepositoryCount 0
 country France
 originCommunity Institut national de recherche en sciences et technologies du numérique
+reference https://gallium.inria.fr/~remy/poly/mot/10/nice/web/
+reference https://nice.sourceforge.net/Nice-source.tar.gz
+
+leachim6 Nice
+ filepath n/Nice.nice
+ fileExtensions nice
+ example
+  void main(String[] args){
+     println("Hello World");
+  }
+  
+
+printToken println
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken println
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Nice_(programming_language)
  related haskell eiffel java-bytecode java
@@ -28,17 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/Nice_(programming_language)
  revisionCount 50
  dailyPageViews 9
  appeared 2006
-
-leachim6 Nice
- filepath n/Nice.nice
- fileExtensions nice
- example
-  void main(String[] args){
-     println("Hello World");
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Nice
-
-fileType text
-wordRank 1157
-centralPackageRepositoryCount 0

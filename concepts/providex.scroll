@@ -1,18 +1,31 @@
 import ../code/conceptPage.scroll
+
 id providex
 name ProvideX
 appeared 1992
-tags pl
 creators Michael F. King
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Canada
 originCommunity Sage Software Canada
+
+leachim6 ProvideX
+ filepath p/ProvideX.vim
+ fileExtensions vim
+ example
+  begin
+     print "Hello World"
+  end
+  
+
+printToken print
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken print
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/ProvideX
  example
@@ -42,17 +55,5 @@ wikipedia https://en.wikipedia.org/wiki/ProvideX
  revisionCount 49
  dailyPageViews 18
  appeared 1992
-
-leachim6 ProvideX
- filepath p/ProvideX.vim
- fileExtensions vim
- example
-  begin
-     print "Hello World"
-  end
-  
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,16 +1,23 @@
 import ../code/conceptPage.scroll
+
 id maraca-lang
 name maraca-lang
 appeared 2018
-tags pl
 creators Jon Whitehead
-conceptDescription The dynamic structured data language. Maraca is a lightweight, embeddable, declarative language for defining & manipulating dynamic structured data. And when combined with Maraca-Render, it can be a powerful language for creating interactive UI, such as this site...
+tags pl
 website https://maraca-lang.org
-reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+conceptDescription The dynamic structured data language. Maraca is a lightweight, embeddable, declarative language for defining & manipulating dynamic structured data. And when combined with Maraca-Render, it can be a powerful language for creating interactive UI, such as this site...
+
+writtenIn javascript json markdown
+repoStats
+ firstCommit 2022
+ commits 42
+ committers 1
+ files 10
+ newestCommit 2023
 country United Kingdom
 originCommunity https://github.com/maraca-lang
-domainName maraca-lang.org
- registered 2019
+reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
 
 example
  [
@@ -33,13 +40,7 @@ githubRepo https://github.com/maraca-lang/maraca-js
  issues 0
  forks 0
 
-repoStats
- firstCommit 2022
- commits 42
- committers 1
- files 10
- newestCommit 2023
+domainName maraca-lang.org
+ registered 2019
 
 semanticScholar 0
-
-writtenIn javascript json markdown

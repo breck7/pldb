@@ -1,26 +1,98 @@
 import ../code/conceptPage.scroll
+
 id python
 name Python
 appeared 1991
-tags pl
 creators Guido van Rossum
+tags pl
 website https://www.python.org/
+
+isOpenSource true
+writtenIn python restructuredtext c xml toml yaml bourne-shell json markdown html objective-c ini svg cpp powershell diff d make gradle m4 javascript bash assembly-language xslt lisp css kotlin idl dockerfile c-shell cmake dtd
+spec https://docs.python.org/3/reference/
+fileExtensions py pyc pyd pyo
+releaseNotesUrl https://docs.python.org/3/whatsnew/
+visualParadigm false
+clocExtensions buck build.bazel gclient gyp gypi lmi py py3 pyde pyi pyp pyt pyw sconscript sconstruct snakefile tac workspace wscript wsgi xpy
+fileType text
+wordRank 4048
 documentation https://docs.python.org/3/
 emailList https://mail.python.org/mailman/listinfo
-spec https://docs.python.org/3/reference/
-reference https://www.programiz.com/python-programming/keyword-list
-fileExtensions py pyc pyd pyo
+eventsPageUrl https://www.python.org/events/
+faqPageUrl https://docs.python.org/3/faq/
+downloadPageUrl https://www.python.org/downloads/
+annualReportsUrl https://www.python.org/psf-landing/
+antlr https://github.com/antlr/grammars-v4/tree/master/python
+monaco python
+codeMirror python
+rosettaCode http://www.rosettacode.org/wiki/Category:Python
+quineRelay Python
+replit https://repl.it/languages/python
+packageRepository https://pypi.python.org/pypi
+ubuntuPackage python
+repoStats
+ firstCommit 1990
+ commits 149709
+ committers 3046
+ files 4866
+ newestCommit 2024
 country Netherlands
 originCommunity Centrum Wiskunde & Informatica
-domainName python.org
- registered 1995
- awisRank
-  2022 728
-  2017 875
-releaseNotesUrl https://docs.python.org/3/whatsnew/
 proposals https://peps.python.org/
+projectEuler Python
+ memberCount
+  2019 46780
+  2022 60791
+reference https://www.programiz.com/python-programming/keyword-list
 
-visualParadigm false
+discord https://www.pythondiscord.com/
+pygmentsHighlighter Python
+ filename python.py
+ fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
+rijuRepl https://riju.codes/python
+ example
+  print("Hello, world!")
+  
+ description Interpreted, high-level, general-purpose programming language
+ fileExtensions py pyi pyc pyd pyo pyw pyz
+ website https://www.python.org/
+ gitRepo https://github.com/python/cpython
+subreddit https://reddit.com/r/Python
+ memberCount
+  2017 197722
+  2022 979629
+gource https://www.youtube.com/watch?v=9mput42uZsQ
+languageServerProtocolProject http://www.pydev.org/vscode/index.html
+ writtenIn python
+languageServerProtocolProject https://github.com/palantir/python-language-server
+ writtenIn python
+languageServerProtocolProject https://github.com/Microsoft/python-language-server
+ writtenIn csharp
+compilerExplorer Python
+ example
+  def square(num):
+      return num * num
+  
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/python
+ memberCount 1424303
+ groupCount 1964
+keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
+githubRepo https://github.com/python/cpython
+ stars 51959
+ forks 26518
+ subscribers 1480
+ created 2017
+ updated 2023
+ description The Python programming language
+ issues 8360
+
+lineCommentToken #
+multiLineCommentTokens '''
+printToken print
+assignmentToken =
+booleanTokens True False
 
 hasVariableSubstitutionSyntax false
 hasMacros false
@@ -167,30 +239,6 @@ hasBinaryNumbers true
  # 0[bB](?:_?[01])+
 hasScientificNotation true
 
-lineCommentToken #
-multiLineCommentTokens '''
-printToken print
-assignmentToken =
-booleanTokens True False
-keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
-
-gource https://www.youtube.com/watch?v=9mput42uZsQ
-githubRepo https://github.com/python/cpython
- stars 51959
- forks 26518
- subscribers 1480
- created 2017
- updated 2023
- description The Python programming language
- issues 8360
-
-repoStats
- firstCommit 1990
- commits 149709
- committers 3046
- files 4866
- newestCommit 2024
-
 wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
  related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib gdb freebsd ecmascript ocaml tcl erlang pandas
  summary Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java. It provides constructs that enable clear programming on both small and large scales. Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library. Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.
@@ -202,132 +250,27 @@ wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
  appeared 1991
  fileExtensions py pyc pyd pyo
 
-githubLanguage Python
- fileExtensions py cgi fcgi gyp gypi lmi py3 pyde pyi pyp pyt pyw rpy smk spec tac wsgi xpy
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  CorentinJ Real-Time-Voice-Cloning https://github.com/CorentinJ.png https://github.com/CorentinJ/Real-Time-Voice-Cloning Python #3572A5 7049 955 4051 "Clone a voice in 5 seconds to generate arbitrary speech in real-time"
-  Yorko mlcourse.ai https://github.com/Yorko.png https://github.com/Yorko/mlcourse.ai Python #3572A5 5417 3816 871 "Open Machine Learning Course"
-  iperov DeepFaceLab https://github.com/iperov.png https://github.com/iperov/DeepFaceLab Python #3572A5 8645 2006 3166 "DeepFaceLab is a tool that utilizes machine learning to replace faces in videos. Includes prebuilt ready to work standalone Windows 7,8,10 binary (look readme.md)."
-  taki0112 UGATIT https://github.com/taki0112.png https://github.com/taki0112/UGATIT Python #3572A5 3646 593 2798 "Official Tensorflow implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
-  shengqiangzhang examples-of-web-crawlers https://github.com/shengqiangzhang.png https://github.com/shengqiangzhang/examples-of-web-crawlers Python #3572A5 4155 1295 1321 "一些非常有趣的python爬虫例子,对新手比较友好,主要爬取淘宝、天猫、微信、豆瓣、QQ等网站。(Some interesting examples of python crawlers that are friendly to beginners. )"
-  google-research google-research https://github.com/google-research.png https://github.com/google-research/google-research Python #3572A5 3329 488 724 "Google AI Research"
-  deepfakes faceswap https://github.com/deepfakes.png https://github.com/deepfakes/faceswap Python #3572A5 24602 8021 3172 "Deepfakes Software For All"
-  znxlwm UGATIT-pytorch https://github.com/znxlwm.png https://github.com/znxlwm/UGATIT-pytorch Python #3572A5 1150 199 933 "Official PyTorch implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
-  pwxcoo chinese-xinhua https://github.com/pwxcoo.png https://github.com/pwxcoo/chinese-xinhua Python #3572A5 6111 1309 535 "📙 中华新华字典数据库。包括歇后语，成语，词语，汉字。"
-  tlbootcamp tlroadmap https://github.com/tlbootcamp.png https://github.com/tlbootcamp/tlroadmap Python #3572A5 1965 184 806 "👩🏼‍💻👨🏻‍💻Карта навыков и модель развития тимлидов"
-  pytorch fairseq https://github.com/pytorch.png https://github.com/pytorch/fairseq Python #3572A5 5336 1168 536 "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
-  vinta awesome-python https://github.com/vinta.png https://github.com/vinta/awesome-python Python #3572A5 72704 14251 2125 "A curated list of awesome Python frameworks, libraries, software and resources"
-  Avik-Jain 100-Days-Of-ML-Code https://github.com/Avik-Jain.png https://github.com/Avik-Jain/100-Days-Of-ML-Code Python #3572A5 25578 6210 861 "100 Days of ML Coding"
-  pandas-dev pandas https://github.com/pandas-dev.png https://github.com/pandas-dev/pandas Python #3572A5 21188 8366 561 "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
-  timgrossmann InstaPy https://github.com/timgrossmann.png https://github.com/timgrossmann/InstaPy Python #3572A5 8694 2384 280 "📷 Instagram Bot - Tool for automated Instagram interactions"
-  robotframework robotframework https://github.com/robotframework.png https://github.com/robotframework/robotframework Python #3572A5 3746 1186 153 "Generic automation framework for acceptance testing and RPA"
-  google python-fire https://github.com/google.png https://github.com/google/python-fire Python #3572A5 15088 900 469 "Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object."
-  eriklindernoren ML-From-Scratch https://github.com/eriklindernoren.png https://github.com/eriklindernoren/ML-From-Scratch Python #3572A5 13039 2386 1269 "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning."
-  nvbn thefuck https://github.com/nvbn.png https://github.com/nvbn/thefuck Python #3572A5 46597 2305 1380 "Magnificent app which corrects your previous console command."
-  instagrambot instabot https://github.com/instagrambot.png https://github.com/instagrambot/instabot Python #3572A5 1902 648 151 "🐙 Free Instagram scripts, bots and Python API wrapper. Get free instagram followers with our auto like, auto follow and other scripts!"
-  public-apis public-apis https://github.com/public-apis.png https://github.com/public-apis/public-apis Python #3572A5 61065 6583 1402 "A collective list of free APIs for use in software and web development."
-  tiangolo fastapi https://github.com/tiangolo.png https://github.com/tiangolo/fastapi Python #3572A5 4182 224 516 "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-  521xueweihan HelloGitHub https://github.com/521xueweihan.png https://github.com/521xueweihan/HelloGitHub Python #3572A5 15415 1708 1008 "Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目"
-  3b1b manim https://github.com/3b1b.png https://github.com/3b1b/manim Python #3572A5 13205 1540 1041 "Animation engine for explanatory math videos"
-  xingyizhou CenterNet https://github.com/xingyizhou.png https://github.com/xingyizhou/CenterNet Python #3572A5 2194 503 289 "Object detection, 3D detection, and pose estimation using center point detection:"
- trendingProjectsCount 26
- type programming
- filenames .gclient DEPS SConscript SConstruct Snakefile wscript
- interpreters python python2 python3
- aceMode python
- codemirrorMode python
- codemirrorMimeType text/x-python
- tmScope source.python
- aliases python3 or rusthon
- repos 9300725
+hopl https://hopl.info/showlanguage.prx?exp=1658
+tiobe Python
+ currentRank 1
+pypl Python
+
+domainName python.org
+ registered 1995
+ awisRank
+  2022 728
+  2017 875
+
 githubBigQuery Python
  repos 550171
  users 297138
 
-antlr https://github.com/antlr/grammars-v4/tree/master/python
-monaco python
-codeMirror python
-pygmentsHighlighter Python
- filename python.py
- fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
 linguistGrammarRepo https://github.com/tree-sitter/tree-sitter-python
  sampleCount 20
  example
   #!/usr/bin/env python2.4
   print "Python"
   
-languageServerProtocolProject http://www.pydev.org/vscode/index.html
- writtenIn python
-languageServerProtocolProject https://github.com/palantir/python-language-server
- writtenIn python
-languageServerProtocolProject https://github.com/Microsoft/python-language-server
- writtenIn csharp
-
-projectEuler Python
- memberCount
-  2019 46780
-  2022 60791
-rosettaCode http://www.rosettacode.org/wiki/Category:Python
-quineRelay Python
-
-compilerExplorer Python
- example
-  def square(num):
-      return num * num
-  
-rijuRepl https://riju.codes/python
- example
-  print("Hello, world!")
-  
- description Interpreted, high-level, general-purpose programming language
- fileExtensions py pyi pyc pyd pyo pyw pyz
- website https://www.python.org/
- gitRepo https://github.com/python/cpython
-replit https://repl.it/languages/python
-
-indeedJobs python engineer
- 2017 28965
-linkedInSkill python
- 2018 1801117
-stackOverflowSurvey
- 2021
-  users 39792
-  medianSalary 59454
-  fans 34929
-  percentageUsing 0.48
-annualReportsUrl https://www.python.org/psf-landing/
-eventsPageUrl https://www.python.org/events/
-faqPageUrl https://docs.python.org/3/faq/
-downloadPageUrl https://www.python.org/downloads/
-
-discord https://www.pythondiscord.com/
-subreddit https://reddit.com/r/Python
- memberCount
-  2017 197722
-  2022 979629
-meetup https://www.meetup.com/topics/python
- memberCount 1424303
- groupCount 1964
-
-tiobe Python
- currentRank 1
-hopl https://hopl.info/showlanguage.prx?exp=1658
-pypl Python
-
-packageRepository https://pypi.python.org/pypi
-
-ubuntuPackage python
-fileType text
-wordRank 4048
-isOpenSource true
-githubCopilotOptimized true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
- Programming Python|1996|Mark Lutz|77671|3.96|898|23
- Natural Language Processing with Python|2009|Steven    Bird|6581044|4.14|389|34
 
 isbndb 339
  year|publisher|title|authors|isbn13
@@ -671,6 +614,57 @@ isbndb 339
  2013-09-07T00:00:01Z|CreateSpace Independent Publishing Platform|Python for Biologists: A complete programming course for beginners|Jones, Dr Martin|9781492346135
  2018|Packt Publishing|Mastering Python Design Patterns: A guide to creating smart, efficient, and reusable software, 2nd Edition|Ayeva, Kamon and Kasampalis, Sakis|9781788832069
 
+githubLanguage Python
+ fileExtensions py cgi fcgi gyp gypi lmi py3 pyde pyi pyp pyt pyw rpy smk spec tac wsgi xpy
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  CorentinJ Real-Time-Voice-Cloning https://github.com/CorentinJ.png https://github.com/CorentinJ/Real-Time-Voice-Cloning Python #3572A5 7049 955 4051 "Clone a voice in 5 seconds to generate arbitrary speech in real-time"
+  Yorko mlcourse.ai https://github.com/Yorko.png https://github.com/Yorko/mlcourse.ai Python #3572A5 5417 3816 871 "Open Machine Learning Course"
+  iperov DeepFaceLab https://github.com/iperov.png https://github.com/iperov/DeepFaceLab Python #3572A5 8645 2006 3166 "DeepFaceLab is a tool that utilizes machine learning to replace faces in videos. Includes prebuilt ready to work standalone Windows 7,8,10 binary (look readme.md)."
+  taki0112 UGATIT https://github.com/taki0112.png https://github.com/taki0112/UGATIT Python #3572A5 3646 593 2798 "Official Tensorflow implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  shengqiangzhang examples-of-web-crawlers https://github.com/shengqiangzhang.png https://github.com/shengqiangzhang/examples-of-web-crawlers Python #3572A5 4155 1295 1321 "一些非常有趣的python爬虫例子,对新手比较友好,主要爬取淘宝、天猫、微信、豆瓣、QQ等网站。(Some interesting examples of python crawlers that are friendly to beginners. )"
+  google-research google-research https://github.com/google-research.png https://github.com/google-research/google-research Python #3572A5 3329 488 724 "Google AI Research"
+  deepfakes faceswap https://github.com/deepfakes.png https://github.com/deepfakes/faceswap Python #3572A5 24602 8021 3172 "Deepfakes Software For All"
+  znxlwm UGATIT-pytorch https://github.com/znxlwm.png https://github.com/znxlwm/UGATIT-pytorch Python #3572A5 1150 199 933 "Official PyTorch implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  pwxcoo chinese-xinhua https://github.com/pwxcoo.png https://github.com/pwxcoo/chinese-xinhua Python #3572A5 6111 1309 535 "📙 中华新华字典数据库。包括歇后语，成语，词语，汉字。"
+  tlbootcamp tlroadmap https://github.com/tlbootcamp.png https://github.com/tlbootcamp/tlroadmap Python #3572A5 1965 184 806 "👩🏼‍💻👨🏻‍💻Карта навыков и модель развития тимлидов"
+  pytorch fairseq https://github.com/pytorch.png https://github.com/pytorch/fairseq Python #3572A5 5336 1168 536 "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+  vinta awesome-python https://github.com/vinta.png https://github.com/vinta/awesome-python Python #3572A5 72704 14251 2125 "A curated list of awesome Python frameworks, libraries, software and resources"
+  Avik-Jain 100-Days-Of-ML-Code https://github.com/Avik-Jain.png https://github.com/Avik-Jain/100-Days-Of-ML-Code Python #3572A5 25578 6210 861 "100 Days of ML Coding"
+  pandas-dev pandas https://github.com/pandas-dev.png https://github.com/pandas-dev/pandas Python #3572A5 21188 8366 561 "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+  timgrossmann InstaPy https://github.com/timgrossmann.png https://github.com/timgrossmann/InstaPy Python #3572A5 8694 2384 280 "📷 Instagram Bot - Tool for automated Instagram interactions"
+  robotframework robotframework https://github.com/robotframework.png https://github.com/robotframework/robotframework Python #3572A5 3746 1186 153 "Generic automation framework for acceptance testing and RPA"
+  google python-fire https://github.com/google.png https://github.com/google/python-fire Python #3572A5 15088 900 469 "Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object."
+  eriklindernoren ML-From-Scratch https://github.com/eriklindernoren.png https://github.com/eriklindernoren/ML-From-Scratch Python #3572A5 13039 2386 1269 "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning."
+  nvbn thefuck https://github.com/nvbn.png https://github.com/nvbn/thefuck Python #3572A5 46597 2305 1380 "Magnificent app which corrects your previous console command."
+  instagrambot instabot https://github.com/instagrambot.png https://github.com/instagrambot/instabot Python #3572A5 1902 648 151 "🐙 Free Instagram scripts, bots and Python API wrapper. Get free instagram followers with our auto like, auto follow and other scripts!"
+  public-apis public-apis https://github.com/public-apis.png https://github.com/public-apis/public-apis Python #3572A5 61065 6583 1402 "A collective list of free APIs for use in software and web development."
+  tiangolo fastapi https://github.com/tiangolo.png https://github.com/tiangolo/fastapi Python #3572A5 4182 224 516 "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+  521xueweihan HelloGitHub https://github.com/521xueweihan.png https://github.com/521xueweihan/HelloGitHub Python #3572A5 15415 1708 1008 "Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目"
+  3b1b manim https://github.com/3b1b.png https://github.com/3b1b/manim Python #3572A5 13205 1540 1041 "Animation engine for explanatory math videos"
+  xingyizhou CenterNet https://github.com/xingyizhou.png https://github.com/xingyizhou/CenterNet Python #3572A5 2194 503 289 "Object detection, 3D detection, and pose estimation using center point detection:"
+ trendingProjectsCount 26
+ type programming
+ filenames .gclient DEPS SConscript SConstruct Snakefile wscript
+ interpreters python python2 python3
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python
+ aliases python3 or rusthon
+ repos 9300725
+
+indeedJobs python engineer
+ 2017 28965
+linkedInSkill python
+ 2018 1801117
+stackOverflowSurvey
+ 2021
+  users 39792
+  medianSalary 59454
+  fans 34929
+  percentageUsing 0.48
+
 semanticScholar 52
  year|title|doi|citations|influentialCitations|authors|paperId
  2019|SciPy 1.0: fundamental algorithms for scientific computing in Python|10.1038/s41592-019-0686-2|8661|421|Pauli Virtanen and R. Gommers and T. Oliphant and Matt Haberland and Tyler Reddy and D. Cournapeau and Evgeni Burovski and Pearu Peterson and Warren Weckesser and Jonathan Bright and Stéfan J. van der Walt and M. Brett and Joshua Wilson and K. Millman and N. Mayorov and Andrew R. J. Nelson and E. Jones and Robert Kern and Eric Larson and C. J. Carey and Ilhan Polat and Yu Feng and Eric W. Moore and J. Vanderplas and D. Laxalde and Josef Perktold and R. Cimrman and I. Henriksen and E. Quintero and Charles R. Harris and A. Archibald and Antônio H. Ribeiro and Fabian Pedregosa and P. van Mulbregt and Aditya Alessandro Pietro Alex Andreas Andreas Anthony Ant Vijaykumar Bardelli Rothberg Hilboll Kloeckner Sco and A. Vijaykumar and Alessandro Pietro Bardelli and Alex Rothberg and A. Hilboll and Andre Kloeckner and A. Scopatz and Antony Lee and A. Rokem and C. N. Woods and Chad Fulton and Charles Masson and C. Häggström and Clark Fitzgerald and D. Nicholson and David R. Hagen and D. Pasechnik and E. Olivetti and Eric Martin and Eric Wieser and Fabrice Silva and F. Lenders and Florian Wilhelm and G. Young and Gavin A. Price and G. Ingold and Gregory E. Allen and Gregory R. Lee and H. Audren and I. Probst and J. Dietrich and J. Silterra and James T. Webber and J. Slavič and J. Nothman and J. Buchner and Johannes Kulick and Johannes L. Schönberger and J. V. de Miranda Cardoso and J. Reimer and J. Harrington and Juan Rodríguez and Juan Nunez-Iglesias and Justin Kuczynski and K. Tritz and M. Thoma and M. Newville and Matthias Kümmerer and Maximilian Bolingbroke and Michael Tartre and M. Pak and Nathaniel J. Smith and N. Nowaczyk and Nikolay Shebanov and O. Pavlyk and P. A. Brodtkorb and Perry Lee and R. McGibbon and Roman Feldbauer and Sam Lewis and S. Tygier and Scott Sievert and S. Vigna and Stefan Peterson and S. More and Tadeusz Pudlik and T. Oshima and T. Pingel and T. Robitaille and Thomas Spura and T. Jones and T. Cera and Tim Leslie and Tiziano Zito and Tom Krauss and U. Upadhyay and Y. Halchenko and Y. Vázquez-Baeza|f0d35b37fec26c3f1ed09253cbb9304fb62208d1
@@ -726,5 +720,8 @@ semanticScholar 52
  2019|Application of python programming language in measurements|10.2298/FUEE1901001P|3|0|P. Pejovic|9d6fef95807c0caf7da9c58d309bf77010a66c40
  2019|An Analysis on Python Programming Language Demand and Its Recent Trend in Bangladesh|10.1145/3373509.3373540|3|0|Aaquib Javed and Monika Zaman and Mohammad Monir Uddin and Tasnova Nusrat|82f771befdb6a7d06abb4496cd6b4fb08bef6eb7
 
-clocExtensions buck build.bazel gclient gyp gypi lmi py py3 pyde pyi pyp pyt pyw sconscript sconstruct snakefile tac workspace wscript wsgi xpy
-writtenIn python restructuredtext c xml toml yaml bourne-shell json markdown html objective-c ini svg cpp powershell diff d make gradle m4 javascript bash assembly-language xslt lisp css kotlin idl dockerfile c-shell cmake dtd
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
+ Programming Python|1996|Mark Lutz|77671|3.96|898|23
+ Natural Language Processing with Python|2009|Steven    Bird|6581044|4.14|389|34

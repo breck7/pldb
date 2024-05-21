@@ -1,16 +1,19 @@
 import ../code/conceptPage.scroll
+
 id creative-basic
 name Creative Basic
 appeared 2008
 tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken '
 
 hasLineComments true
  ' A comment
 hasComments true
  ' A comment
 hasSemanticIndentation false
-
-lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/Creative_Basic
  example
@@ -46,5 +49,3 @@ wikipedia https://en.wikipedia.org/wiki/Creative_Basic
  revisionCount 16
  dailyPageViews 3
  appeared 2008
-
-centralPackageRepositoryCount 0

@@ -1,12 +1,20 @@
 import ../code/conceptPage.scroll
+
 id nuua
 name Nuua
 appeared 2018
 tags pl
 website https://nuua.io
+
+writtenIn cpp cmake python javascript markdown php json
+repoStats
+ firstCommit 2018
+ commits 116
+ committers 2
+ files 103
+ newestCommit 2019
 country Spain
 originCommunity https://github.com/nuua-io
-domainName nuua.io
 
 example
  class Triangle {
@@ -30,11 +38,4 @@ githubRepo https://github.com/nuua-io/Nuua
  description The Nuua Programming Language - A zero dependencies, high level strong typed, interpreted language built on the top of modern C++17.
  issues 0
 
-repoStats
- firstCommit 2018
- commits 116
- committers 2
- files 103
- newestCommit 2019
-
-writtenIn cpp cmake python javascript markdown php json
+domainName nuua.io

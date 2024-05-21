@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id gettext
 name Gettext Catalog
 appeared 1990
 tags textMarkup
-reference https://www.gnu.org/software/gettext/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Free Software Foundation, Inc
+reference https://www.gnu.org/software/gettext/
+
+pygmentsHighlighter Gettext Catalog
+ filename textfmts.py
+ fileExtensions pot po
 
 hasLineComments true
 hasComments true
@@ -24,6 +33,18 @@ wikipedia https://en.wikipedia.org/wiki/Gettext
  dailyPageViews 107
  appeared 1995
 
+githubBigQuery Gettext Catalog
+ repos 650
+ users 509
+
+linguistGrammarRepo https://github.com/textmate/gettext.tmbundle
+ firstCommit 2007
+ lastCommit 2014
+ committerCount 3
+ commitCount 22
+
+isbndb 0
+
 githubLanguage Gettext Catalog
  fileExtensions po pot
  trendingProjectsCount 0
@@ -32,21 +53,3 @@ githubLanguage Gettext Catalog
  tmScope source.po
  aliases pot
  repos 62782
-githubBigQuery Gettext Catalog
- repos 650
- users 509
-
-pygmentsHighlighter Gettext Catalog
- filename textfmts.py
- fileExtensions pot po
-linguistGrammarRepo https://github.com/textmate/gettext.tmbundle
- firstCommit 2007
- lastCommit 2014
- committerCount 3
- commitCount 22
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0

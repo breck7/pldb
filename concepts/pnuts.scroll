@@ -1,18 +1,22 @@
 import ../code/conceptPage.scroll
+
 id pnuts
 name Pnuts
 appeared 1997
 tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country Japan
 originCommunity Sun Japan
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Pnuts
  example
@@ -28,6 +32,3 @@ wikipedia https://en.wikipedia.org/wiki/Pnuts
  revisionCount 26
  dailyPageViews 8
  appeared 1997
-
-isOpenSource true
-centralPackageRepositoryCount 0

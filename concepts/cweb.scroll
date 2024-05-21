@@ -1,10 +1,15 @@
 import ../code/conceptPage.scroll
+
 id cweb
 name CWEB
 appeared 1987
-tags textMarkup
 creators Donald Knuth
+tags textMarkup
 website http://www-cs-faculty.stanford.edu/~uno/cweb.html
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country Netherlands
 originCommunity Stanford University
 
@@ -79,6 +84,12 @@ wikipedia https://en.wikipedia.org/wiki/CWEB
  dailyPageViews 31
  appeared 1987
 
+hopl https://hopl.info/showlanguage.prx?exp=1939
+
+githubBigQuery CWeb
+ repos 53
+ users 53
+
 githubLanguage CWeb
  fileExtensions w
  trendingProjectsCount 0
@@ -86,12 +97,3 @@ githubLanguage CWeb
  aceMode text
  tmScope none
  repos 425
-githubBigQuery CWeb
- repos 53
- users 53
-
-hopl https://hopl.info/showlanguage.prx?exp=1939
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

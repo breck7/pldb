@@ -1,16 +1,16 @@
 import ../code/conceptPage.scroll
+
 id plain-english
 name Plain English
 appeared 2018
-tags pl
 creators Gerry Rzeppa and Dan Rzeppa
+tags pl
 website http://osmosian.com/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/h0fpmi/this_plain_english_programming_language_makes_me/
-reference https://wiki.osdev.org/Plain_English_Programming
+
 country Unknown
 originCommunity https://github.com/Folds/english/issues
-domainName osmosian.com
- registered 2005
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/h0fpmi/this_plain_english_programming_language_makes_me/
+reference https://wiki.osdev.org/Plain_English_Programming
 
 example
  The background is a picture.
@@ -307,3 +307,6 @@ example
  A work is a thing with a URL and a painting.
   
  The works are some works.
+
+domainName osmosian.com
+ registered 2005

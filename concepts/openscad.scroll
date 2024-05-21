@@ -1,20 +1,24 @@
 import ../code/conceptPage.scroll
+
 id openscad
 name OpenSCAD
 appeared 2010
 tags pl
 conceptDescription OpenSCAD is a 2D/3D and solid modeling program which is based on a Functional programming language used to create models that are previewed on the screen, and rendered into 3D mesh which allows the model to be exported in a variety of 2D/3D file formats. A script in the OpenSCAD language is used to create 2D or 3D models. This script is a free format list of action statements.
-reference https://en.wikipedia.org/wiki/OpenSCAD
+
+isOpenSource true
+clocExtensions scad
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Openscad
+centralPackageRepositoryCount 0
 country Norway
 originCommunity https://opencollective.com/openscad
+reference https://en.wikipedia.org/wiki/OpenSCAD
 
-hasComments true
-hasLineComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
-
+rijuRepl https://riju.codes/openscad
+ example
+  echo("Hello, world!");
+  
 example
   cube(5);
   x = 4+y;
@@ -22,6 +26,13 @@ example
   translate([10,5]) { circle(5); square(4); }
   rotate(60) color("red") { circle(5); square(4); }
   color("blue") { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
+
+lineCommentToken //
+
+hasComments true
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/OpenSCAD
  related opengl linux freebsd ia-32 dxf
@@ -33,17 +44,6 @@ wikipedia https://en.wikipedia.org/wiki/OpenSCAD
  dailyPageViews 100
  appeared 2010
 
-githubLanguage OpenSCAD
- fileExtensions scad
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  maduce fosscad-repo https://github.com/maduce.png https://github.com/maduce/fosscad-repo OpenSCAD #ccc 650 518 22 "Official FOSSCAD Library Repository"
-  prusa3d Original-Prusa-i3 https://github.com/prusa3d.png https://github.com/prusa3d/Original-Prusa-i3 OpenSCAD #ccc 859 494 22 "Original Prusa i3 MK2 3D printer printed parts"
- trendingProjectsCount 3
- type programming
- aceMode scad
- tmScope source.scad
- repos 10989
 githubBigQuery OpenSCAD
  repos 1781
  users 1469
@@ -60,20 +60,19 @@ linguistGrammarRepo https://github.com/tbuser/openscad.tmbundle
   sphere( r=10 );
   
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Openscad
-
-rijuRepl https://riju.codes/openscad
- example
-  echo("Hello, world!");
-  
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  2019||Python For Openscad|John Craig|9781074400675
  2020-09-22|Elektor International Media|Technical Modeling with OpenSCAD|Tam Hanna|9783895763946
 
-clocExtensions scad
+githubLanguage OpenSCAD
+ fileExtensions scad
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  maduce fosscad-repo https://github.com/maduce.png https://github.com/maduce/fosscad-repo OpenSCAD #ccc 650 518 22 "Official FOSSCAD Library Repository"
+  prusa3d Original-Prusa-i3 https://github.com/prusa3d.png https://github.com/prusa3d/Original-Prusa-i3 OpenSCAD #ccc 859 494 22 "Original Prusa i3 MK2 3D printer printed parts"
+ trendingProjectsCount 3
+ type programming
+ aceMode scad
+ tmScope source.scad
+ repos 10989

@@ -1,21 +1,107 @@
 import ../code/conceptPage.scroll
+
 id ruby
 name Ruby
 appeared 1995
-tags pl
 creators Yukihiro Matsumoto
+tags pl
 website https://www.ruby-lang.org
+conference https://rubyconf.org RubyConf
+
+writtenIn ruby c yaml markdown rust erb m4 json python bourne-shell assembly-language make perl bash scheme cpp javascript toml yacc css lisp awk xml csv diff d idl sed z-shell html dockerfile
+spec https://www.iso.org/standard/59579.html
+tryItOnline ruby
+officialBlogUrl https://www.ruby-lang.org/en/community/weblogs/
+fileExtensions rb
+releaseNotesUrl https://www.ruby-lang.org/en/downloads/releases/
+visualParadigm false
+clocExtensions appraisals berksfile brewfile builder buildfile capfile dangerfile deliverfile eye fastfile gemfile gemfile.lock gemspec god guardfile irbrc jarfile jbuilder mavenfile mspec podfile podspec pryrc puppetfile rabl rake rb rbuild rbw rbx ru snapfile thor thorfile vagrantfile watchr
+fileType text
+wordRank 5813
 documentation https://www.ruby-lang.org/en/documentation/
 emailList https://www.ruby-lang.org/en/community/mailing-lists/
-spec https://www.iso.org/standard/59579.html
-reference https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
-fileExtensions rb
+faqPageUrl https://www.ruby-lang.org/en/documentation/faq/
+downloadPageUrl https://www.ruby-lang.org/en/downloads/
+antlr https://github.com/antlr/grammars-v4/tree/master/ruby
+monaco ruby
+codeMirror ruby
+rosettaCode http://www.rosettacode.org/wiki/Category:Ruby
+quineRelay Ruby
+replit https://repl.it/languages/ruby
+packageRepository https://rubygems.org/
+ubuntuPackage ruby
+repoStats
+ firstCommit 1998
+ commits 102768
+ committers 985
+ files 12153
+ newestCommit 2024
 country Japan
 originCommunity https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org/
-releaseNotesUrl https://www.ruby-lang.org/en/downloads/releases/
 proposals https://bugs.ruby-lang.org/projects/ruby-master/wiki/FeatureProposals
+projectEuler Ruby
+ memberCount
+  2019 5407
+  2022 5435
+reference https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
 
-visualParadigm false
+helloWorldCollection Ruby
+ # Hello World in Ruby
+ puts "Hello World!"
+ 
+pygmentsHighlighter Ruby
+ filename ruby.py
+ fileExtensions rb rbw Rakefile rake gemspec rbx duby Gemfile Vagrantfile
+rijuRepl https://riju.codes/ruby
+ example
+  puts "Hello, world!"
+  
+subreddit https://reddit.com/r/ruby
+ memberCount
+  2017 36676
+  2022 75926
+leachim6 Ruby
+ filepath r/Ruby.rb
+ fileExtensions rb
+ example
+  #!/usr/bin/env ruby
+  print "Hello World"
+  
+gource https://www.youtube.com/watch?v=-_y4y1o6YQY
+languageServerProtocolProject https://github.com/castwide/solargraph
+ writtenIn ruby
+languageServerProtocolProject https://github.com/mtsmfm/language_server-ruby
+ writtenIn ruby
+languageServerProtocolProject https://github.com/swistak35/orbacle
+ writtenIn ruby
+languageServerProtocolProject https://github.com/kwerle/ruby_language_server
+ writtenIn ruby
+compilerExplorer Ruby
+ example
+  # Type your code here, or load an example.
+  def square(num)
+    num * num
+  end
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/ruby
+ memberCount 705060
+ groupCount 932
+keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
+githubRepo https://github.com/ruby/ruby
+ stars 20194
+ forks 5296
+ subscribers 1140
+ created 2010
+ updated 2023
+ description The Ruby Programming Language
+ issues 374
+
+lineCommentToken #
+multiLineCommentTokens =begin =end
+printToken puts
+stringToken "
+booleanTokens true false
 
 hasVariableSubstitutionSyntax false
 hasEnums false
@@ -136,30 +222,7 @@ hasWhileLoops true
 hasFunctions true
 hasConditionals true
 
-lineCommentToken #
-multiLineCommentTokens =begin =end
-printToken puts
-stringToken "
-booleanTokens true false
-keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
-
-gource https://www.youtube.com/watch?v=-_y4y1o6YQY
-githubRepo https://github.com/ruby/ruby
- stars 20194
- forks 5296
- subscribers 1140
- created 2010
- updated 2023
- description The Ruby Programming Language
- issues 374
-
-repoStats
- firstCommit 1998
- commits 102768
- committers 985
- files 12153
- newestCommit 2024
-
+jupyterKernel https://github.com/SciRuby/iruby
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
  example
   "Hello, World!".in_blue
@@ -174,55 +237,15 @@ wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
  appeared 2007
  fileExtensions rb
 
-githubLanguage Ruby
- fileExtensions rb builder eye fcgi gemspec god jbuilder mspec pluginspec podspec prawn rabl rake rbi rbuild rbw rbx ru ruby spec thor watchr
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  thepracticaldev dev.to https://github.com/thepracticaldev.png https://github.com/thepracticaldev/dev.to Ruby #701516 10232 1313 360 "Where programmers share ideas and help each other grow"
-  rails rails https://github.com/rails.png https://github.com/rails/rails Ruby #701516 44018 17771 334 "Ruby on Rails"
-  faker-ruby faker https://github.com/faker-ruby.png https://github.com/faker-ruby/faker Ruby #701516 8005 2100 122 "A library for generating fake data such as names, addresses, and phone numbers."
-  jekyll jekyll https://github.com/jekyll.png https://github.com/jekyll/jekyll Ruby #701516 38586 8424 318 "🌐 Jekyll is a blog-aware static site generator in Ruby"
-  rapid7 metasploit-framework https://github.com/rapid7.png https://github.com/rapid7/metasploit-framework Ruby #701516 17501 8594 283 "Metasploit Framework"
-  Shopify liquid https://github.com/Shopify.png https://github.com/Shopify/liquid Ruby #701516 7357 957 91 "Liquid markup language. Safe, customer facing template language for flexible web apps."
-  tootsuite mastodon https://github.com/tootsuite.png https://github.com/tootsuite/mastodon Ruby #701516 18765 3265 424 "Your self-hosted, globally interconnected microblogging community"
-  lynndylanhurley devise_token_auth https://github.com/lynndylanhurley.png https://github.com/lynndylanhurley/devise_token_auth Ruby #701516 2818 879 30 "Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth."
-  Homebrew homebrew-core https://github.com/Homebrew.png https://github.com/Homebrew/homebrew-core Ruby #701516 6353 6781 198 "🍻 Default formulae for the missing package manager for macOS"
-  plataformatec devise https://github.com/plataformatec.png https://github.com/plataformatec/devise Ruby #701516 20171 4823 118 "Flexible authentication solution for Rails with Warden."
-  github explore https://github.com/github.png https://github.com/github/explore Ruby #701516 1303 4960 74 "Community-curated topic and collection pages on GitHub"
-  fastlane fastlane https://github.com/fastlane.png https://github.com/fastlane/fastlane Ruby #701516 26631 4084 396 "🚀 The easiest way to automate building and releasing your iOS and Android apps"
-  orbitalindex awesome-space https://github.com/orbitalindex.png https://github.com/orbitalindex/awesome-space Ruby #701516 637 32 423 "🛰️🚀A list of awesome space-related packages and resources maintained by The Orbital Index"
-  discourse discourse https://github.com/discourse.png https://github.com/discourse/discourse Ruby #701516 28975 6539 249 "A platform for community discussion. Free, open, simple."
-  rest-client rest-client https://github.com/rest-client.png https://github.com/rest-client/rest-client Ruby #701516 4728 877 58 "Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions."
-  huginn huginn https://github.com/huginn.png https://github.com/huginn/huginn Ruby #701516 22091 2380 253 "Create agents that monitor and act on your behalf. Your agents are standing by!"
-  elastic logstash https://github.com/elastic.png https://github.com/elastic/logstash Ruby #701516 10512 2837 126 "Logstash - transport and process your logs, events, or other data"
-  mperham sidekiq https://github.com/mperham.png https://github.com/mperham/sidekiq Ruby #701516 9802 1694 71 "Simple, efficient background processing for Ruby"
-  solidusio solidus https://github.com/solidusio.png https://github.com/solidusio/solidus Ruby #701516 2706 798 77 "Solidus, Rails eCommerce System"
-  Homebrew brew https://github.com/Homebrew.png https://github.com/Homebrew/brew Ruby #701516 18868 4230 352 "🍺 The missing package manager for macOS (or Linux)"
-  education classroom https://github.com/education.png https://github.com/education/classroom Ruby #701516 1116 384 38 "GitHub Classroom automates repository creation and access control, making it easy for teachers to distribute starter code and collect assignments on GitHub."
-  thoughtbot factory_bot https://github.com/thoughtbot.png https://github.com/thoughtbot/factory_bot Ruby #701516 6596 1878 54 "A library for setting up Ruby objects as test data."
-  CocoaPods CocoaPods https://github.com/CocoaPods.png https://github.com/CocoaPods/CocoaPods Ruby #701516 11889 2130 89 "The Cocoa Dependency Manager."
-  ruby ruby https://github.com/ruby.png https://github.com/ruby/ruby Ruby #701516 16129 4314 138 "The Ruby Programming Language [mirror]"
-  sinatra sinatra https://github.com/sinatra.png https://github.com/sinatra/sinatra Ruby #701516 10680 1923 60 "Classy web-development dressed in a DSL (official / canonical repo)"
- trendingProjectsCount 26
- type programming
- filenames .irbrc .pryrc .simplecov Appraisals Berksfile Brewfile Buildfile Capfile Dangerfile Deliverfile Fastfile Gemfile Guardfile Jarfile Mavenfile Podfile Puppetfile Rakefile Snapfile Steepfile Thorfile Vagrantfile buildfile
- interpreters ruby macruby rake jruby rbx
- aceMode ruby
- codemirrorMode ruby
- codemirrorMimeType text/x-ruby
- tmScope source.ruby
- aliases jruby or macruby or rake or rb or rbx
- repos 2659551
+hopl https://hopl.info/showlanguage.prx?exp=2458
+tiobe Ruby
+ currentRank 13
+pypl Ruby
+
 githubBigQuery Ruby
  repos 374367
  users 185514
 
-antlr https://github.com/antlr/grammars-v4/tree/master/ruby
-monaco ruby
-codeMirror ruby
-pygmentsHighlighter Ruby
- filename ruby.py
- fileExtensions rb rbw Rakefile rake gemspec rbx duby Gemfile Vagrantfile
 linguistGrammarRepo https://github.com/atom/language-ruby
  firstCommit 2013
  lastCommit 2018
@@ -233,81 +256,6 @@ linguistGrammarRepo https://github.com/atom/language-ruby
   module Foo
   end
   
-languageServerProtocolProject https://github.com/castwide/solargraph
- writtenIn ruby
-languageServerProtocolProject https://github.com/mtsmfm/language_server-ruby
- writtenIn ruby
-languageServerProtocolProject https://github.com/swistak35/orbacle
- writtenIn ruby
-languageServerProtocolProject https://github.com/kwerle/ruby_language_server
- writtenIn ruby
-
-projectEuler Ruby
- memberCount
-  2019 5407
-  2022 5435
-helloWorldCollection Ruby
- # Hello World in Ruby
- puts "Hello World!"
- 
-leachim6 Ruby
- filepath r/Ruby.rb
- fileExtensions rb
- example
-  #!/usr/bin/env ruby
-  print "Hello World"
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Ruby
-quineRelay Ruby
-
-compilerExplorer Ruby
- example
-  # Type your code here, or load an example.
-  def square(num)
-    num * num
-  end
-rijuRepl https://riju.codes/ruby
- example
-  puts "Hello, world!"
-  
-replit https://repl.it/languages/ruby
-tryItOnline ruby
-
-indeedJobs ruby engineer
- 2017 8719
-linkedInSkill ruby
- 2018 271878
-stackOverflowSurvey
- 2021
-  users 5569
-  medianSalary 80000
-  fans 4942
-  percentageUsing 0.07
-officialBlogUrl https://www.ruby-lang.org/en/community/weblogs/
-faqPageUrl https://www.ruby-lang.org/en/documentation/faq/
-downloadPageUrl https://www.ruby-lang.org/en/downloads/
-
-subreddit https://reddit.com/r/ruby
- memberCount
-  2017 36676
-  2022 75926
-meetup https://www.meetup.com/topics/ruby
- memberCount 705060
- groupCount 932
-conference https://rubyconf.org RubyConf
-
-tiobe Ruby
- currentRank 13
-hopl https://hopl.info/showlanguage.prx?exp=2458
-pypl Ruby
-
-packageRepository https://rubygems.org/
-
-ubuntuPackage ruby
-jupyterKernel https://github.com/SciRuby/iruby
-fileType text
-wordRank 5813
-githubCopilotOptimized true
 
 isbndb 65
  year|publisher|title|authors|isbn13
@@ -377,6 +325,57 @@ isbndb 65
  2006|Addison-Wesley Professional|The Ruby Way, Second Edition: Solutions and Techniques in Ruby Programming (2nd Edition)|Fulton, Hal|9780672328848
  2006|Manning Publications|Ruby for Rails: Ruby Techniques for Rails Developers|David Black|9781932394696
 
+githubLanguage Ruby
+ fileExtensions rb builder eye fcgi gemspec god jbuilder mspec pluginspec podspec prawn rabl rake rbi rbuild rbw rbx ru ruby spec thor watchr
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  thepracticaldev dev.to https://github.com/thepracticaldev.png https://github.com/thepracticaldev/dev.to Ruby #701516 10232 1313 360 "Where programmers share ideas and help each other grow"
+  rails rails https://github.com/rails.png https://github.com/rails/rails Ruby #701516 44018 17771 334 "Ruby on Rails"
+  faker-ruby faker https://github.com/faker-ruby.png https://github.com/faker-ruby/faker Ruby #701516 8005 2100 122 "A library for generating fake data such as names, addresses, and phone numbers."
+  jekyll jekyll https://github.com/jekyll.png https://github.com/jekyll/jekyll Ruby #701516 38586 8424 318 "🌐 Jekyll is a blog-aware static site generator in Ruby"
+  rapid7 metasploit-framework https://github.com/rapid7.png https://github.com/rapid7/metasploit-framework Ruby #701516 17501 8594 283 "Metasploit Framework"
+  Shopify liquid https://github.com/Shopify.png https://github.com/Shopify/liquid Ruby #701516 7357 957 91 "Liquid markup language. Safe, customer facing template language for flexible web apps."
+  tootsuite mastodon https://github.com/tootsuite.png https://github.com/tootsuite/mastodon Ruby #701516 18765 3265 424 "Your self-hosted, globally interconnected microblogging community"
+  lynndylanhurley devise_token_auth https://github.com/lynndylanhurley.png https://github.com/lynndylanhurley/devise_token_auth Ruby #701516 2818 879 30 "Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth."
+  Homebrew homebrew-core https://github.com/Homebrew.png https://github.com/Homebrew/homebrew-core Ruby #701516 6353 6781 198 "🍻 Default formulae for the missing package manager for macOS"
+  plataformatec devise https://github.com/plataformatec.png https://github.com/plataformatec/devise Ruby #701516 20171 4823 118 "Flexible authentication solution for Rails with Warden."
+  github explore https://github.com/github.png https://github.com/github/explore Ruby #701516 1303 4960 74 "Community-curated topic and collection pages on GitHub"
+  fastlane fastlane https://github.com/fastlane.png https://github.com/fastlane/fastlane Ruby #701516 26631 4084 396 "🚀 The easiest way to automate building and releasing your iOS and Android apps"
+  orbitalindex awesome-space https://github.com/orbitalindex.png https://github.com/orbitalindex/awesome-space Ruby #701516 637 32 423 "🛰️🚀A list of awesome space-related packages and resources maintained by The Orbital Index"
+  discourse discourse https://github.com/discourse.png https://github.com/discourse/discourse Ruby #701516 28975 6539 249 "A platform for community discussion. Free, open, simple."
+  rest-client rest-client https://github.com/rest-client.png https://github.com/rest-client/rest-client Ruby #701516 4728 877 58 "Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions."
+  huginn huginn https://github.com/huginn.png https://github.com/huginn/huginn Ruby #701516 22091 2380 253 "Create agents that monitor and act on your behalf. Your agents are standing by!"
+  elastic logstash https://github.com/elastic.png https://github.com/elastic/logstash Ruby #701516 10512 2837 126 "Logstash - transport and process your logs, events, or other data"
+  mperham sidekiq https://github.com/mperham.png https://github.com/mperham/sidekiq Ruby #701516 9802 1694 71 "Simple, efficient background processing for Ruby"
+  solidusio solidus https://github.com/solidusio.png https://github.com/solidusio/solidus Ruby #701516 2706 798 77 "Solidus, Rails eCommerce System"
+  Homebrew brew https://github.com/Homebrew.png https://github.com/Homebrew/brew Ruby #701516 18868 4230 352 "🍺 The missing package manager for macOS (or Linux)"
+  education classroom https://github.com/education.png https://github.com/education/classroom Ruby #701516 1116 384 38 "GitHub Classroom automates repository creation and access control, making it easy for teachers to distribute starter code and collect assignments on GitHub."
+  thoughtbot factory_bot https://github.com/thoughtbot.png https://github.com/thoughtbot/factory_bot Ruby #701516 6596 1878 54 "A library for setting up Ruby objects as test data."
+  CocoaPods CocoaPods https://github.com/CocoaPods.png https://github.com/CocoaPods/CocoaPods Ruby #701516 11889 2130 89 "The Cocoa Dependency Manager."
+  ruby ruby https://github.com/ruby.png https://github.com/ruby/ruby Ruby #701516 16129 4314 138 "The Ruby Programming Language [mirror]"
+  sinatra sinatra https://github.com/sinatra.png https://github.com/sinatra/sinatra Ruby #701516 10680 1923 60 "Classy web-development dressed in a DSL (official / canonical repo)"
+ trendingProjectsCount 26
+ type programming
+ filenames .irbrc .pryrc .simplecov Appraisals Berksfile Brewfile Buildfile Capfile Dangerfile Deliverfile Fastfile Gemfile Guardfile Jarfile Mavenfile Podfile Puppetfile Rakefile Snapfile Steepfile Thorfile Vagrantfile buildfile
+ interpreters ruby macruby rake jruby rbx
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.ruby
+ aliases jruby or macruby or rake or rb or rbx
+ repos 2659551
+
+indeedJobs ruby engineer
+ 2017 8719
+linkedInSkill ruby
+ 2018 271878
+stackOverflowSurvey
+ 2021
+  users 5569
+  medianSalary 80000
+  fans 4942
+  percentageUsing 0.07
+
 semanticScholar 13
  year|title|doi|citations|influentialCitations|authors|paperId
  2010|BioRuby: bioinformatics software for the Ruby programming language|10.1093/bioinformatics/btq475|186|10|Naohisa Goto and P. Prins and M. Nakao and R. Bonnal and J. Aerts and Toshiaki Katayama|6806fe4a47310f6961cdaeca17fca6aed513d33f
@@ -392,6 +391,3 @@ semanticScholar 13
  2018|Specializing ropes for ruby|10.1145/3237009.3237026|2|0|Kevin Menard and Chris Seaton and Benoit Daloze|6fcf92f1bf8a95512a01c0fef1236ac2610299db
  2020|Let’s Get It Started: Installing Ruby|10.1007/978-1-4842-1278-3_1|1|0|Pete Cooper|56bfb401cd9a9183005b3aae84ec7ed4c8c6b49f
  2013|A machine vision extension to the Ruby programming language using OpenCV and FFI|10.1109/IVCNZ.2013.6727013|1|0|A. Marburg and M. Hayes and A. Bainbridge-Smith|07e2461bccbd4a17609d022518a82bdba691c21d
-
-clocExtensions appraisals berksfile brewfile builder buildfile capfile dangerfile deliverfile eye fastfile gemfile gemfile.lock gemspec god guardfile irbrc jarfile jbuilder mavenfile mspec podfile podspec pryrc puppetfile rabl rake rb rbuild rbw rbx ru snapfile thor thorfile vagrantfile watchr
-writtenIn ruby c yaml markdown rust erb m4 json python bourne-shell assembly-language make perl bash scheme cpp javascript toml yacc css lisp awk xml csv diff d idl sed z-shell html dockerfile

@@ -1,19 +1,18 @@
 import ../code/conceptPage.scroll
+
 id curl
 name Curl
 appeared 1998
-tags pl
 creators Steve Ward
+tags pl
 website http://www.curl.com
+
+visualParadigm false
+fileType text
+centralPackageRepositoryCount 0
 country Japan
 country United States
 originCommunity Curl, Inc && Sumisho Computer Systems Corp && SCSK Corporation
-domainName curl.com
- registered 1997
- awisRank
-  2022 1053325
-
-visualParadigm false
 
 hasMultipleInheritance true
 
@@ -34,11 +33,13 @@ wikipedia https://en.wikipedia.org/wiki/Curl_(programming_language)
  revisionCount 197
  appeared 1998
 
-tiobe Curl
 hopl https://hopl.info/showlanguage.prx?exp=8042
+tiobe Curl
 
-fileType text
-centralPackageRepositoryCount 0
+domainName curl.com
+ registered 1997
+ awisRank
+  2022 1053325
 
 isbndb 2
  year|publisher|title|authors|isbn13

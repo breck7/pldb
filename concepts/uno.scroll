@@ -1,15 +1,24 @@
 import ../code/conceptPage.scroll
+
 id uno
 name Uno
 appeared 2002
 tags pl
-conceptDescription The Uno langauge is a dialect of C#, designed for cross-compilation to C++ and other languages. Uno does not require the .NET Framework, but has instead a more lightweight library called UnoCore. The syntax of Uno is more or less identical to C#, with deviations documented here.
 website https://fuseopen.com
+conceptDescription The Uno langauge is a dialect of C#, designed for cross-compilation to C++ and other languages. Uno does not require the .NET Framework, but has instead a more lightweight library called UnoCore. The syntax of Uno is more or less identical to C#, with deviations documented here.
+
+isOpenSource true
+writtenIn csharp xml java cpp bourne-shell objective-cpp markdown json javascript python gradle cmake xaml bash yaml make swift typescript
+tryItOnline uno
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2002
+ commits 6031
+ committers 33
+ files 3339
+ newestCommit 2024
 reference https://fuseopen.com/docs/uno/uno-lang.html
-domainName fuseopen.com
- registered 2017
- awisRank
-  2022 692043
 
 githubRepo https://github.com/fuse-open/uno
  firstCommit 2002
@@ -21,22 +30,11 @@ githubRepo https://github.com/fuse-open/uno
  description Extremely fast, native C#-dialect and powerful tooling for mobile and desktop developers
  issues 12
 
-repoStats
- firstCommit 2002
- commits 6031
- committers 33
- files 3339
- newestCommit 2024
+domainName fuseopen.com
+ registered 2017
+ awisRank
+  2022 692043
 
-githubLanguage Uno
- fileExtensions uno
- trendingProjectsCount 0
- type programming
- aceMode csharp
- codemirrorMode clike
- codemirrorMimeType text/x-csharp
- tmScope source.cs
- repos 232
 githubBigQuery Uno
  repos 37
  users 24
@@ -203,10 +201,12 @@ linguistGrammarRepo https://github.com/atom/language-csharp
   	}
   }
 
-tryItOnline uno
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn csharp xml java cpp bourne-shell objective-cpp markdown json javascript python gradle cmake xaml bash yaml make swift typescript
+githubLanguage Uno
+ fileExtensions uno
+ trendingProjectsCount 0
+ type programming
+ aceMode csharp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csharp
+ tmScope source.cs
+ repos 232

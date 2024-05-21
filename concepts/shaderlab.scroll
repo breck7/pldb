@@ -1,11 +1,17 @@
 import ../code/conceptPage.scroll
+
 id shaderlab
 name ShaderLab
 appeared 2000
 tags pl
-reference https://docs.unity3d.com/Manual/SL-Shader.html
+
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity https://github.com/tgjones/shaders-tmLanguage/issues
+reference https://docs.unity3d.com/Manual/SL-Shader.html
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
@@ -13,19 +19,6 @@ hasComments true
  // A comment
 hasSemanticIndentation false
 
-lineCommentToken //
-
-githubLanguage ShaderLab
- fileExtensions shader
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  unity3d-jp UnityChanToonShaderVer2_Project https://github.com/unity3d-jp.png https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project ShaderLab #ccc 561 104 64 "UnityChanToonShaderVer2 Project / v.2.0.7 Release"
-  candycat1992 Unity_Shaders_Book https://github.com/candycat1992.png https://github.com/candycat1992/Unity_Shaders_Book ShaderLab #ccc 1835 741 83 "📖 书籍《Unity Shader入门精要》源代码"
- trendingProjectsCount 3
- type programming
- aceMode text
- tmScope source.shaderlab
- repos 59455
 githubBigQuery ShaderLab
  repos 1210
  users 1132
@@ -133,5 +126,14 @@ linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
       FallBack Off
   }
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage ShaderLab
+ fileExtensions shader
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  unity3d-jp UnityChanToonShaderVer2_Project https://github.com/unity3d-jp.png https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project ShaderLab #ccc 561 104 64 "UnityChanToonShaderVer2 Project / v.2.0.7 Release"
+  candycat1992 Unity_Shaders_Book https://github.com/candycat1992.png https://github.com/candycat1992/Unity_Shaders_Book ShaderLab #ccc 1835 741 83 "📖 书籍《Unity Shader入门精要》源代码"
+ trendingProjectsCount 3
+ type programming
+ aceMode text
+ tmScope source.shaderlab
+ repos 59455

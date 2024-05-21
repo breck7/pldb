@@ -1,10 +1,33 @@
 import ../code/conceptPage.scroll
+
 id jade
 name JADE
 appeared 1996
 tags pl
+
+fileType text
+wordRank 9715
+codeMirror jade
+centralPackageRepositoryCount 0
 country New Zealand
 originCommunity Jade Software Corporation
+
+helloWorldCollection JADE
+ // Hello World in JADE
+ write "Hello World";
+leachim6 Jade
+ filepath j/Jade.jade
+ fileExtensions jade
+ example
+  helloWorld();
+  
+  begin
+     write "Hello World";
+  end;
+
+lineCommentToken //
+printToken write
+stringToken "
 
 hasLineComments true
  // A comment
@@ -14,10 +37,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken //
-printToken write
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
  example
@@ -35,27 +54,8 @@ wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
  revisionCount 172
  appeared 1996
 
-codeMirror jade
-
-helloWorldCollection JADE
- // Hello World in JADE
- write "Hello World";
-leachim6 Jade
- filepath j/Jade.jade
- fileExtensions jade
- example
-  helloWorld();
-  
-  begin
-     write "Hello World";
-  end;
-
-tiobe JADE
 hopl https://hopl.info/showlanguage.prx?exp=2130
-
-fileType text
-wordRank 9715
-centralPackageRepositoryCount 0
+tiobe JADE
 
 isbndb 4
  year|publisher|title|authors|isbn13

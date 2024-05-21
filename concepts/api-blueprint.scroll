@@ -1,24 +1,26 @@
 import ../code/conceptPage.scroll
+
 id api-blueprint
 name API Blueprint
 appeared 2013
 tags pl
 website https://apiblueprint.org
+
+isOpenSource true
+writtenIn markdown
+fileType text
 documentation https://apiblueprint.org/documentation/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 432
+ committers 63
+ files 31
+ newestCommit 2022
 country United States
 originCommunity API Blueprint
-domainName apiblueprint.org
- registered 2013
- awisRank
-  2022 732854
 
-hasLineComments true
- # A comment
-hasComments true
- # A comment
-hasSemanticIndentation false
-
-lineCommentToken #
+twitter https://twitter.com/apiblueprint
 
 githubRepo https://github.com/apiaryio/api-blueprint
  firstCommit 2013
@@ -30,20 +32,19 @@ githubRepo https://github.com/apiaryio/api-blueprint
  description API Blueprint
  issues 64
 
-repoStats
- firstCommit 2013
- commits 432
- committers 63
- files 31
- newestCommit 2022
+lineCommentToken #
 
-githubLanguage API Blueprint
- fileExtensions apib
- trendingProjectsCount 0
- type markup
- aceMode markdown
- tmScope text.html.markdown.source.gfm.apib
- repos 14496
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName apiblueprint.org
+ registered 2013
+ awisRank
+  2022 732854
+
 githubBigQuery API Blueprint
  repos 810
  users 698
@@ -74,13 +75,14 @@ linguistGrammarRepo https://github.com/apiaryio/api-blueprint-sublime-plugin
   
           Hello World!
 
-twitter https://twitter.com/apiblueprint
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage API Blueprint
+ fileExtensions apib
+ trendingProjectsCount 0
+ type markup
+ aceMode markdown
+ tmScope text.html.markdown.source.gfm.apib
+ repos 14496
 
-writtenIn markdown
+semanticScholar 0

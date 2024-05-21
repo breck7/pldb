@@ -1,28 +1,20 @@
 import ../code/conceptPage.scroll
+
 id clips
 name CLIPS
 appeared 1985
 tags pl
 website http://www.clipsrules.net/
-documentation https://www.clipsrules.net/Documentation.html
 standsFor C Language Integrated Production System
+
+tryItOnline clips
+fileType text
+wordRank 2427
+documentation https://www.clipsrules.net/Documentation.html
+rosettaCode http://www.rosettacode.org/wiki/Category:CLIPS
+centralPackageRepositoryCount 0
 country United States
 originCommunity NASA
-domainName clipsrules.net
- registered 2016
- awisRank
-  2022 1175916
-
-hasLineComments true
- ; A comment
-hasComments true
- ; A comment
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-lineCommentToken ;
-stringToken "
 
 example
   (deftemplate car_problem
@@ -39,6 +31,30 @@ example
       (car_problem (name engine) (status wont_start))
        =>
       (assert (car_problem (name starter) (status faulty))))
+leachim6 CLIPS
+ filepath c/CLIPS.clips
+ fileExtensions clips
+ example
+  (defrule hw
+      (f ?x)
+  =>
+      (printout t ?x crlf))
+  
+  (assert (f "Hello World"))
+  
+  (run)
+  
+
+lineCommentToken ;
+stringToken "
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/CLIPS
  example
@@ -65,13 +81,13 @@ wikipedia https://en.wikipedia.org/wiki/CLIPS
  dailyPageViews 86
  appeared 1985
 
-githubLanguage CLIPS
- fileExtensions clp
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.clips
- repos 1638
+hopl https://hopl.info/showlanguage.prx?exp=1759
+
+domainName clipsrules.net
+ registered 2016
+ awisRank
+  2022 1175916
+
 githubBigQuery CLIPS
  repos 991
  users 901
@@ -366,30 +382,15 @@ linguistGrammarRepo https://github.com/psicomante/CLIPS-sublime
      
   
 
-leachim6 CLIPS
- filepath c/CLIPS.clips
- fileExtensions clips
- example
-  (defrule hw
-      (f ?x)
-  =>
-      (printout t ?x crlf))
-  
-  (assert (f "Hello World"))
-  
-  (run)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:CLIPS
-
-tryItOnline clips
-
-hopl https://hopl.info/showlanguage.prx?exp=1759
-
-fileType text
-wordRank 2427
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage CLIPS
+ fileExtensions clp
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.clips
+ repos 1638
 
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId

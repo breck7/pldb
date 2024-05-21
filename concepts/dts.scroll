@@ -1,13 +1,14 @@
 import ../code/conceptPage.scroll
+
 id dts
 name TypeScript Type Declarations
 appeared 2012
 tags headerLang
 conceptDescription TypeScript .d.ts files are declaration files that contain only type information. These files don't produce .js outputs; they are only used for typechecking.
-reference https://microsoft.github.io/TypeScript-New-Handbook/chapters/type-declarations/
-fileExtensions d.ts
-country United States
-originCommunity Microsoft
 
 subsetOf typescript
 relatedConcepts typescript
+fileExtensions d.ts
+country United States
+originCommunity Microsoft
+reference https://microsoft.github.io/TypeScript-New-Handbook/chapters/type-declarations/

@@ -1,12 +1,17 @@
 import ../code/conceptPage.scroll
+
 id lucid
 name LUCID
 appeared 1976
-tags pl
 creators Edward A. Ashcroft and William W. Wadge
-reference https://news.ycombinator.com/item?id=14233054
+tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Lucid
+centralPackageRepositoryCount 0
 country Canada and United States
 originCommunity University of Victoria && SRI International
+reference https://news.ycombinator.com/item?id=14233054
 
 wikipedia https://en.wikipedia.org/wiki/Lucid_(programming_language)
  example
@@ -28,12 +33,7 @@ wikipedia https://en.wikipedia.org/wiki/Lucid_(programming_language)
  revisionCount 119
  appeared 1976
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Lucid
-
 hopl https://hopl.info/showlanguage.prx?exp=960
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 2
  year|publisher|title|authors|isbn13

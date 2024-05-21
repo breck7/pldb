@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id json-graph-format
 name json-graph-format
 appeared 2014
 tags jsonFormat
 website http://jsongraphformat.info/
 aka jgf
+
+writtenIn json markdown yaml python
+repoStats
+ firstCommit 2014
+ commits 117
+ committers 12
+ files 22
+ newestCommit 2021
 country United States
 originCommunity https://github.com/jsongraph
-domainName jsongraphformat.info
- registered 2015
 
 example
  {
@@ -62,11 +69,5 @@ githubRepo https://github.com/jsongraph/json-graph-specification
  description A proposal for representing graph structure (nodes / edges) in JSON.
  issues 5
 
-repoStats
- firstCommit 2014
- commits 117
- committers 12
- files 22
- newestCommit 2021
-
-writtenIn json markdown yaml python
+domainName jsongraphformat.info
+ registered 2015

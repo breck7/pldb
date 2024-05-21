@@ -1,18 +1,82 @@
 import ../code/conceptPage.scroll
+
 id dart
 name Dart
 appeared 2011
-tags pl
 creators Lars Bak
+tags pl
 website http://www.dartlang.org
-documentation https://dart.dev/guides
+
+isOpenSource true
+tryItOnline dart
+officialBlogUrl https://news.dartlang.org/
 fileExtensions dart
-originCommunity Google
-domainName dartlang.org
- registered 2011
- awisRank
-  2022 338917
 releaseNotesUrl https://dart.dev/guides/whats-new
+clocExtensions dart
+fileType text
+documentation https://dart.dev/guides
+faqPageUrl https://dart.dev/faq
+downloadPageUrl https://dart.dev/get-dart
+monaco dart
+codeMirror dart
+rosettaCode http://www.rosettacode.org/wiki/Category:Dart
+packageRepository https://pub.dartlang.org/
+originCommunity Google
+projectEuler Dart
+ memberCount
+  2019 22
+  2022 54
+
+helloWorldCollection Dart
+ // Hello world in Dart
+ 
+ main() {
+    print('Hello world!');
+ }
+pygmentsHighlighter Dart
+ filename javascript.py
+ fileExtensions dart
+rijuRepl https://riju.codes/dart
+ example
+  void main() {
+    print('Hello, world!');
+  }
+  
+subreddit https://reddit.com/r/dartlang
+ memberCount
+  2022 35109
+twitter https://twitter.com/dart_lang
+leachim6 Dart
+ filepath d/Dart.dart
+ fileExtensions dart
+ example
+  main() {
+    print('Hello World');
+  }
+  
+languageServerProtocolProject https://github.com/dart-lang/sdk
+ writtenIn dart
+languageServerProtocolProject https://github.com/natebosch/dart_language_server
+ writtenIn dart
+compilerExplorer Dart
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+    return num * num;
+  }
+  
+  int main(List<String> args) {
+      return square(int.fromEnvironment("input"));
+  }
+  
+
+keywords abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends external factory false final finally for get if implements import in is library new null operator part rethrow return set static super switch sync this throw true try typedef var void while with yield
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken '
+booleanTokens true false
 
 hasComments true
  // Hi
@@ -43,13 +107,6 @@ hasAsyncAwait true
 hasConditionals true
 hasHexadecimals true
  // 0[xX][0-9a-fA-F]+
-
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken print
-stringToken '
-booleanTokens true false
-keywords abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends external factory false final finally for get if implements import in is library new null operator part rethrow return set static super switch sync this throw true try typedef var void while with yield
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example
@@ -100,6 +157,80 @@ wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  appeared 2011
  fileExtensions dart
 
+tiobe Dart
+ currentRank 22
+pypl Dart
+
+domainName dartlang.org
+ registered 2011
+ awisRank
+  2022 338917
+
+githubBigQuery Dart
+ repos 5727
+ users 3075
+
+linguistGrammarRepo https://github.com/dart-atom/dartlang
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 26
+ commitCount 1555
+ sampleCount 1
+ example
+  import 'dart:math' as math;
+  
+  class Point {
+    num x, y;
+  
+    Point(this.x, this.y);
+  
+    num distanceTo(Point other) {
+      var dx = x - other.x;
+      var dy = y - other.y;
+      return math.sqrt(dx * dx + dy * dy);
+    }
+  }
+  
+  void main() {
+    var p = new Point(2, 3);
+    var q = new Point(3, 4);
+    print('distance from p to q = ${p.distanceTo(q)}');
+  }
+  
+
+isbndb 30
+ year|publisher|title|authors|isbn13
+ 2014|Apress|Dart for Absolute Beginners|Kopec, David|9781430264811
+ 2014|Apress|Web Programming with Dart|Belchin, Moises and Juberias, Patricia|9781484205570
+ 2014|Packt Publishing|Learning Dart|Balbaert, Ivo and Ridjanovic, Dzenan|9781849697422
+ 2014|Apress|Dart for Absolute Beginners|Kopec, David|9781430264828
+ 2015|Apress|Web Programming with Dart|Belchin, Moises and Juberias, Patricia|9781484205563
+ 2021|Packt Publishing|Flutter Cookbook: Over 100 proven techniques and solutions for app development with Flutter 2.2 and Dart|Alessandria, Simone and Kayfitz, Brian|9781838827373
+ 2021|Bowker|Dart Apprentice (First Edition): Beginning Programming with Dart|Tutorial Team, raywenderlich and Sande, Jonathan and Galloway, Matt|9781950325320
+ 2015|Addison-Wesley Professional|Dart Programming Language, The|Bracha, Gilad|9780133429954
+ 2019|Packt Publishing|Flutter for Beginners: An introductory guide to building cross-platform mobile applications with Flutter and Dart 2|Biessek, Alessandro|9781788990523
+ 2014|Packt Publishing|Mastering Dart|Akopkokhyants,  Sergey|9781783989577
+ 2014|Packt Publishing|Learning Dart|Balbaert,  Ivo and Ridjanovic, Dzenan|9781849697439
+ 2019|Apress|Quick Start Guide to Dart Programming: Create High-Performance Applications for the Web and Mobile|Sinha, Sanjib|9781484255629
+ 2014|Packt Publishing|Dart Cookbook|Balbaert, Ivo|9781783989638
+ 2015|Addison-Wesley Professional|The Dart Programming Language|Bracha, Gilad|9780321927705
+ 2019|Apress|Introducing Dart Sass: A Practical Introduction to the Replacement for Sass, Built on Dart|Libby, Alex|9781484243725
+ 2015|Packt Publishing|Dart By Example|Mitchell, Davy|9781785289798
+ 2019|Apress|Quick Start Guide to Dart Programming: Create High-Performance Applications for the Web and Mobile|Sinha, Sanjib|9781484255612
+ 2014|Packt Publishing|Dart Cookbook|Balbaert, Ivo|9781783989621
+ 2015|Packt Publishing|Dart By Example|Mitchell, Davy|9781785282478
+ 2014|Pragmatic Bookshelf|Dart 1 for Everyone: Fast, Flexible, Structured Code for the Modern Web|Strom, Chris|9781941222256
+ 2021|De Gruyter Oldenbourg|Modern App Development with Dart and Flutter 2: A Comprehensive Introduction to Flutter (de Gruyter Stem)|Meiller, Dieter|9783110721270
+ 20150525|Packt Publishing|Dart Essentials|Martin Sikora|9781783989614
+ 2013|Apress|Beginning Dart|Dylan McClung|9781430257974
+ 20130115|Simon & Schuster|Dart in Action|Chris Buckett|9781638352846
+ 20150925|Packt Publishing|Learning Dart - Second Edition|Ivo Balbaert; Dzenan Ridjanovic|9781785288531
+ 2019||Learn Dart The Hard Way|Sanjib Sinha|9781074723538
+ 20210920|De Gruyter|App-Entwicklung mit Dart und Flutter 2|Dieter Meiller|9783110753172
+ 20200505|De Gruyter|Moderne App-Entwicklung mit Dart und Flutter|Dieter Meiller|9783110690705
+ 2021|Walter De Gruyter Gmbh & Co Kg|Modern App Development With Dart And Flutter 2|Dieter Meiller|9783110721331
+ 20210621|De Gruyter|Modern App Development with Dart and Flutter 2|Dieter Meiller|9783110721607
+
 githubLanguage Dart
  fileExtensions dart
  trendingProjects
@@ -137,85 +268,6 @@ githubLanguage Dart
  codemirrorMimeType application/dart
  tmScope source.dart
  repos 737948
-githubBigQuery Dart
- repos 5727
- users 3075
-
-monaco dart
-codeMirror dart
-pygmentsHighlighter Dart
- filename javascript.py
- fileExtensions dart
-linguistGrammarRepo https://github.com/dart-atom/dartlang
- firstCommit 2015
- lastCommit 2018
- committerCount 26
- commitCount 1555
- sampleCount 1
- example
-  import 'dart:math' as math;
-  
-  class Point {
-    num x, y;
-  
-    Point(this.x, this.y);
-  
-    num distanceTo(Point other) {
-      var dx = x - other.x;
-      var dy = y - other.y;
-      return math.sqrt(dx * dx + dy * dy);
-    }
-  }
-  
-  void main() {
-    var p = new Point(2, 3);
-    var q = new Point(3, 4);
-    print('distance from p to q = ${p.distanceTo(q)}');
-  }
-  
-languageServerProtocolProject https://github.com/dart-lang/sdk
- writtenIn dart
-languageServerProtocolProject https://github.com/natebosch/dart_language_server
- writtenIn dart
-
-projectEuler Dart
- memberCount
-  2019 22
-  2022 54
-helloWorldCollection Dart
- // Hello world in Dart
- 
- main() {
-    print('Hello world!');
- }
-leachim6 Dart
- filepath d/Dart.dart
- fileExtensions dart
- example
-  main() {
-    print('Hello World');
-  }
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Dart
-
-compilerExplorer Dart
- example
-  // Type your code here, or load an example.
-  int square(int num) {
-    return num * num;
-  }
-  
-  int main(List<String> args) {
-      return square(int.fromEnvironment("input"));
-  }
-  
-rijuRepl https://riju.codes/dart
- example
-  void main() {
-    print('Hello, world!');
-  }
-  
-tryItOnline dart
 
 indeedJobs dart developer
  2022 208
@@ -225,56 +277,6 @@ stackOverflowSurvey
   medianSalary 32986
   fans 7018
   percentageUsing 0.06
-officialBlogUrl https://news.dartlang.org/
-faqPageUrl https://dart.dev/faq
-downloadPageUrl https://dart.dev/get-dart
-
-subreddit https://reddit.com/r/dartlang
- memberCount
-  2022 35109
-
-tiobe Dart
- currentRank 22
-pypl Dart
-
-packageRepository https://pub.dartlang.org/
-
-twitter https://twitter.com/dart_lang
-fileType text
-isOpenSource true
-
-isbndb 30
- year|publisher|title|authors|isbn13
- 2014|Apress|Dart for Absolute Beginners|Kopec, David|9781430264811
- 2014|Apress|Web Programming with Dart|Belchin, Moises and Juberias, Patricia|9781484205570
- 2014|Packt Publishing|Learning Dart|Balbaert, Ivo and Ridjanovic, Dzenan|9781849697422
- 2014|Apress|Dart for Absolute Beginners|Kopec, David|9781430264828
- 2015|Apress|Web Programming with Dart|Belchin, Moises and Juberias, Patricia|9781484205563
- 2021|Packt Publishing|Flutter Cookbook: Over 100 proven techniques and solutions for app development with Flutter 2.2 and Dart|Alessandria, Simone and Kayfitz, Brian|9781838827373
- 2021|Bowker|Dart Apprentice (First Edition): Beginning Programming with Dart|Tutorial Team, raywenderlich and Sande, Jonathan and Galloway, Matt|9781950325320
- 2015|Addison-Wesley Professional|Dart Programming Language, The|Bracha, Gilad|9780133429954
- 2019|Packt Publishing|Flutter for Beginners: An introductory guide to building cross-platform mobile applications with Flutter and Dart 2|Biessek, Alessandro|9781788990523
- 2014|Packt Publishing|Mastering Dart|Akopkokhyants,  Sergey|9781783989577
- 2014|Packt Publishing|Learning Dart|Balbaert,  Ivo and Ridjanovic, Dzenan|9781849697439
- 2019|Apress|Quick Start Guide to Dart Programming: Create High-Performance Applications for the Web and Mobile|Sinha, Sanjib|9781484255629
- 2014|Packt Publishing|Dart Cookbook|Balbaert, Ivo|9781783989638
- 2015|Addison-Wesley Professional|The Dart Programming Language|Bracha, Gilad|9780321927705
- 2019|Apress|Introducing Dart Sass: A Practical Introduction to the Replacement for Sass, Built on Dart|Libby, Alex|9781484243725
- 2015|Packt Publishing|Dart By Example|Mitchell, Davy|9781785289798
- 2019|Apress|Quick Start Guide to Dart Programming: Create High-Performance Applications for the Web and Mobile|Sinha, Sanjib|9781484255612
- 2014|Packt Publishing|Dart Cookbook|Balbaert, Ivo|9781783989621
- 2015|Packt Publishing|Dart By Example|Mitchell, Davy|9781785282478
- 2014|Pragmatic Bookshelf|Dart 1 for Everyone: Fast, Flexible, Structured Code for the Modern Web|Strom, Chris|9781941222256
- 2021|De Gruyter Oldenbourg|Modern App Development with Dart and Flutter 2: A Comprehensive Introduction to Flutter (de Gruyter Stem)|Meiller, Dieter|9783110721270
- 20150525|Packt Publishing|Dart Essentials|Martin Sikora|9781783989614
- 2013|Apress|Beginning Dart|Dylan McClung|9781430257974
- 20130115|Simon & Schuster|Dart in Action|Chris Buckett|9781638352846
- 20150925|Packt Publishing|Learning Dart - Second Edition|Ivo Balbaert; Dzenan Ridjanovic|9781785288531
- 2019||Learn Dart The Hard Way|Sanjib Sinha|9781074723538
- 20210920|De Gruyter|App-Entwicklung mit Dart und Flutter 2|Dieter Meiller|9783110753172
- 20200505|De Gruyter|Moderne App-Entwicklung mit Dart und Flutter|Dieter Meiller|9783110690705
- 2021|Walter De Gruyter Gmbh & Co Kg|Modern App Development With Dart And Flutter 2|Dieter Meiller|9783110721331
- 20210621|De Gruyter|Modern App Development with Dart and Flutter 2|Dieter Meiller|9783110721607
 
 semanticScholar 6
  year|title|doi|citations|influentialCitations|authors|paperId
@@ -284,5 +286,3 @@ semanticScholar 6
  2020|A Freights Status Management System Based on Dart and Flutter Programming Language|10.1088/1742-6596/1530/1/012020|3|0|Ghusoon Idan Arb and K. Al-Majdi|6a772efe74fee9b0c1f8194e3337666a80b11e8f
  2020|JAVA and DART programming languages: conceptual comparison|10.11591/IJEECS.V17.I2.PP845-849|2|0|A. M. Hassan|4aa90271fcb9625127f1aa3c280ecee1d40a35ea
  2014|Ensuring that your dart will hit the mark: An introduction to dart contracts|10.1109/IRI.2014.7051913|1|0|Patrice Chalin|e42a5d2cb0beb083db8236809b3105f98ad274eb
-
-clocExtensions dart

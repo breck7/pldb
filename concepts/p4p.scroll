@@ -1,15 +1,22 @@
 import ../code/conceptPage.scroll
+
 id p4p
 name p4p
 appeared 2010
 tags pl
-conceptDescription an alternate syntax for Racket.
 website https://shriram.github.io/p4p
-reference http://shriram.github.io/p4p
+conceptDescription an alternate syntax for Racket.
+
+writtenIn racket css javascript html
+repoStats
+ firstCommit 2010
+ commits 20
+ committers 2
+ files 15
+ newestCommit 2014
 country United States
 originCommunity Brown University
-
-hasSemanticIndentation true
+reference http://shriram.github.io/p4p
 
 example
  defvar: m = 10
@@ -47,11 +54,4 @@ githubRepo https://github.com/shriram/p4p
  description An alternate syntax for Racket
  issues 0
 
-repoStats
- firstCommit 2010
- commits 20
- committers 2
- files 15
- newestCommit 2014
-
-writtenIn racket css javascript html
+hasSemanticIndentation true

@@ -1,20 +1,43 @@
 import ../code/conceptPage.scroll
+
 id mercury
 name Mercury
 appeared 1995
-tags pl
 creators Zoltan Somogyi
+tags pl
 website http://www.mercurylang.org
-documentation https://mercurylang.org/documentation/documentation.html
+
+isOpenSource true
+compilesTo c
 fileExtensions m
+fileType text
+wordRank 4418
+documentation https://mercurylang.org/documentation/documentation.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Mercury
+centralPackageRepositoryCount 0
 country Australia
 originCommunity University of Melbourne
-domainName mercurylang.org
- registered 2011
- awisRank
-  2022 7653616
 
-compilesTo c
+subreddit https://www.reddit.com/r/mercury
+ memberCount
+  2022 348
+leachim6 Mercury
+ filepath m/Mercury.m
+ fileExtensions m
+ example
+  :- module hello.
+  :- interface.
+  :- import_module io.
+  :- pred main(io::di, io::uo) is det.
+  
+  :- implementation.
+  main(!IO) :-
+  	io.write_string("Hello World\n", !IO).
+  
+
+lineCommentToken %
+printToken io.write_string
+stringToken "
 
 hasLineComments true
  % A comment
@@ -24,10 +47,6 @@ hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
-
-lineCommentToken %
-printToken io.write_string
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Mercury_(programming_language)
  example
@@ -57,14 +76,14 @@ wikipedia https://en.wikipedia.org/wiki/Mercury_(programming_language)
  appeared 1995
  fileExtensions m
 
-githubLanguage Mercury
- fileExtensions m moo
- trendingProjectsCount 0
- type programming
- interpreters mmi
- aceMode prolog
- tmScope source.mercury
- repos 715
+hopl https://hopl.info/showlanguage.prx?exp=2226
+tiobe Mercury
+
+domainName mercurylang.org
+ registered 2011
+ awisRank
+  2022 7653616
+
 githubBigQuery Mercury
  repos 646
  users 594
@@ -92,34 +111,16 @@ linguistGrammarRepo https://github.com/sebgod/mercury-tmlanguage
   	io.write_string("Hello, world\n", !IO).
   
 
-leachim6 Mercury
- filepath m/Mercury.m
- fileExtensions m
- example
-  :- module hello.
-  :- interface.
-  :- import_module io.
-  :- pred main(io::di, io::uo) is det.
-  
-  :- implementation.
-  main(!IO) :-
-  	io.write_string("Hello World\n", !IO).
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Mercury
-
-subreddit https://www.reddit.com/r/mercury
- memberCount
-  2022 348
-
-tiobe Mercury
-hopl https://hopl.info/showlanguage.prx?exp=2226
-
-fileType text
-wordRank 4418
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Mercury
+ fileExtensions m moo
+ trendingProjectsCount 0
+ type programming
+ interpreters mmi
+ aceMode prolog
+ tmScope source.mercury
+ repos 715
 
 semanticScholar 16
  year|title|doi|citations|influentialCitations|authors|paperId

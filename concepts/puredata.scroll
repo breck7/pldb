@@ -1,15 +1,25 @@
 import ../code/conceptPage.scroll
+
 id puredata
 name Pure Data
 appeared 1996
 tags pl
 website http://puredata.info/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of California, San Diego
-domainName puredata.info
- awisRank
-  2022 567348
-  2017 292479
+
+leachim6 Pure Data
+ filepath p/Pure Data.pd
+ example
+  #N canvas 1029 457 450 300 10;
+  #X obj 127 132 print;
+  #X msg 127 86 Hello World;
+  #X connect 1 0 0 0;
+  
 
 wikipedia https://en.wikipedia.org/wiki/Pure_Data
  related linux ios android freebsd max opengl c python scheme lua tcl
@@ -21,6 +31,20 @@ wikipedia https://en.wikipedia.org/wiki/Pure_Data
  revisionCount 319
  appeared 2017
 
+hopl https://hopl.info/showlanguage.prx?exp=6444
+tiobe Pure Data
+
+domainName puredata.info
+ awisRank
+  2022 567348
+  2017 292479
+
+githubBigQuery Pure Data
+ repos 914
+ users 696
+
+isbndb 0
+
 githubLanguage Pure Data
  fileExtensions pd
  trendingProjectsCount 0
@@ -28,26 +52,5 @@ githubLanguage Pure Data
  aceMode text
  tmScope none
  repos 3084650
-githubBigQuery Pure Data
- repos 914
- users 696
-
-leachim6 Pure Data
- filepath p/Pure Data.pd
- example
-  #N canvas 1029 457 450 300 10;
-  #X obj 127 132 print;
-  #X msg 127 86 Hello World;
-  #X connect 1 0 0 0;
-  
-
-tiobe Pure Data
-hopl https://hopl.info/showlanguage.prx?exp=6444
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0

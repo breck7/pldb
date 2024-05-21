@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id octune
 name Octune
 appeared 2021
-tags pl
 creators Gary Feng
+tags pl
+
+writtenIn haskell markdown yaml
+repoStats
+ firstCommit 2021
+ commits 102
+ committers 3
+ files 70
+ newestCommit 2021
 country Canada
 originCommunity The University of Waterloo
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/fengctor/octune
  updated 2022
  description A DSL for creating 8-bit style music
  issues 0
-
-repoStats
- firstCommit 2021
- commits 102
- committers 3
- files 70
- newestCommit 2021
-
-writtenIn haskell markdown yaml

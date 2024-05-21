@@ -1,14 +1,22 @@
 import ../code/conceptPage.scroll
+
 id u
 name U
 appeared 2013
-tags pl
 creators Yassen Bantchev
-conceptDescription U is a small functional programming language, designed mainly for explorational and educational uses. Both its syntax and its operational rules are very simple and regular. U can be considered a functional-style calculator for several useful types of data, preloaded with a large number of built-in operators and extensible through defining new ones.
+tags pl
 website http://www.math.bas.bg/bantchev/place/u.html
 webRepl http://yassenb.github.io/u/dist/web/index.html
+conceptDescription U is a small functional programming language, designed mainly for explorational and educational uses. Both its syntax and its operational rules are very simple and regular. U can be considered a functional-style calculator for several useful types of data, preloaded with a large number of built-in operators and extensible through defining new ones.
 
+writtenIn coffeescript javascript make css html json bash markdown
 influencedBy apl j k nial
+repoStats
+ firstCommit 2013
+ commits 209
+ committers 2
+ files 39
+ newestCommit 2013
 
 githubRepo https://github.com/yassenb/u
  firstCommit 2013
@@ -20,13 +28,4 @@ githubRepo https://github.com/yassenb/u
  description Implementation of the U programming language
  issues 0
 
-repoStats
- firstCommit 2013
- commits 209
- committers 2
- files 39
- newestCommit 2013
-
 isbndb 0
-
-writtenIn coffeescript javascript make css html json bash markdown

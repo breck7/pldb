@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id xpages
 name XPages
 appeared 2008
 tags application
 website http://xpages.info/
-domainName xpages.info
- registered 2010
+
+fileType text
+centralPackageRepositoryCount 0
+
+twitter https://twitter.com/xpagesinfo
 
 wikipedia https://en.wikipedia.org/wiki/XPages
  related javascript html java
@@ -17,15 +21,9 @@ wikipedia https://en.wikipedia.org/wiki/XPages
  dailyPageViews 19
  appeared 2008
 
-githubLanguage XPages
- fileExtensions xsp-config xspmetadata
- trendingProjectsCount 0
- type data
- aceMode xml
- codemirrorMode xml
- codemirrorMimeType text/xml
- tmScope text.xml
- repos 22
+domainName xpages.info
+ registered 2010
+
 githubBigQuery XPages
  repos 33
  users 22
@@ -56,6 +54,12 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
   </faces-config>
   
 
-twitter https://twitter.com/xpagesinfo
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage XPages
+ fileExtensions xsp-config xspmetadata
+ trendingProjectsCount 0
+ type data
+ aceMode xml
+ codemirrorMode xml
+ codemirrorMimeType text/xml
+ tmScope text.xml
+ repos 22

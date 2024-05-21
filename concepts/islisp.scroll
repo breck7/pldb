@@ -1,17 +1,28 @@
 import ../code/conceptPage.scroll
+
 id islisp
 name ISLISP
 appeared 2007
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity International Organization for Standardization && International Electrotechnical Commission
+
+leachim6 ISLISP
+ filepath i/ISLISP.lisp
+ fileExtensions lisp
+ example
+  (format (standard-output) "Hello World")
+  
+
+printToken standard-output
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken standard-output
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/ISLISP
  related common-lisp eulisp le-lisp scheme clos openlisp
@@ -23,16 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/ISLISP
  dailyPageViews 17
  appeared 2007
 
-leachim6 ISLISP
- filepath i/ISLISP.lisp
- fileExtensions lisp
- example
-  (format (standard-output) "Hello World")
-  
-
 hopl https://hopl.info/showlanguage.prx?exp=1690
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

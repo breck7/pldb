@@ -1,10 +1,23 @@
 import ../code/conceptPage.scroll
+
 id puppet
 name Puppet
 appeared 2005
 tags pl
+
+isOpenSource true
+fileType text
+codeMirror puppet
+centralPackageRepositoryCount 0
 country United States
 originCommunity Puppet, Inc
+
+pygmentsHighlighter Puppet
+ filename dsls.py
+ fileExtensions pp
+twitter https://twitter.com/puppetize
+languageServerProtocolProject https://github.com/lingua-pupuli/puppet-editor-services
+ writtenIn ruby
 
 hasOctals true
 hasHexadecimals true
@@ -28,24 +41,10 @@ wikipedia https://en.wikipedia.org/wiki/Puppet_(software)
  revisionCount 286
  appeared 2005
 
-githubLanguage Puppet
- fileExtensions pp
- trendingProjectsCount 0
- type programming
- filenames Modulefile
- aceMode text
- codemirrorMode puppet
- codemirrorMimeType text/x-puppet
- tmScope source.puppet
- repos 23445
 githubBigQuery Puppet
  repos 14936
  users 8311
 
-codeMirror puppet
-pygmentsHighlighter Puppet
- filename dsls.py
- fileExtensions pp
 linguistGrammarRepo https://github.com/russCloak/SublimePuppet
  firstCommit 2013
  lastCommit 2018
@@ -55,13 +54,6 @@ linguistGrammarRepo https://github.com/russCloak/SublimePuppet
  example
   hiera_include('classes')
   
-languageServerProtocolProject https://github.com/lingua-pupuli/puppet-editor-services
- writtenIn ruby
-
-twitter https://twitter.com/puppetize
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 11
  year|publisher|title|authors|isbn13
@@ -76,6 +68,17 @@ isbndb 11
  2013|Packt Publishing|Puppet 3 Cookbook|Arundel, John|9781782169765
  2011|Packt Publishing|Puppet 2.7 Cookbook|Arundel, John|9781849515382
  20121212|O'Reilly Media, Inc.|Puppet Types and Providers|Dan Bode; Nan Liu|9781449339302
+
+githubLanguage Puppet
+ fileExtensions pp
+ trendingProjectsCount 0
+ type programming
+ filenames Modulefile
+ aceMode text
+ codemirrorMode puppet
+ codemirrorMimeType text/x-puppet
+ tmScope source.puppet
+ repos 23445
 
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId

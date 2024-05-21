@@ -1,27 +1,32 @@
 import ../code/conceptPage.scroll
+
 id djot
 name Djot
 appeared 2022
-tags textMarkup
 creators John MacFarlane
-conceptDescription  A light markup language
+tags textMarkup
 website https://djot.net
 webRepl https://djot.net/playground/
-documentation https://github.com/jgm/djot/blob/main/README.md
-reference https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html
-fileExtensions dj
-country United States
-originCommunity https://github.com/jgm/djot/issues
-domainName djot.net
 usesSemanticVersioning true
 versions
  2022 0.2.0
+conceptDescription  A light markup language
 
+isOpenSource true
 writtenIn markdown html vim-script make css lua yaml
 influencedBy commonmark
 successorOf commonmark
-
-multiLineCommentTokens {% %}
+fileExtensions dj
+documentation https://github.com/jgm/djot/blob/main/README.md
+repoStats
+ firstCommit 2022
+ commits 483
+ committers 25
+ files 16
+ newestCommit 2024
+country United States
+originCommunity https://github.com/jgm/djot/issues
+reference https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html
 
 example
  _italic_
@@ -97,11 +102,6 @@ githubRepo https://github.com/jgm/djot
  description A light markup language
  issues 58
 
-repoStats
- firstCommit 2022
- commits 483
- committers 25
- files 16
- newestCommit 2024
+multiLineCommentTokens {% %}
 
-isOpenSource true
+domainName djot.net

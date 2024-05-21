@@ -1,12 +1,14 @@
 import ../code/conceptPage.scroll
+
 id objective-s
 name Objective-S
 appeared 1980
 tags pl
 website https://objective.st/
-reference https://news.ycombinator.com/item?id=32444300
+
 country Germany
 originCommunity https://github.com/mpw/Objective-Smalltalk/issues
+reference https://news.ycombinator.com/item?id=32444300
 
 example
  -<void>deleteFile:filename {

@@ -1,10 +1,11 @@
 import ../code/conceptPage.scroll
+
 id dalvik-bytecode
 name dalvik-bytecode
 appeared 2008
 tags bytecode
 conceptDescription Dalvik bytecode format is still used as a distribution format, but no longer at runtime in newer Android versions
-reference https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
-fileExtensions dex
 
+fileExtensions dex
 centralPackageRepositoryCount 0
+reference https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html

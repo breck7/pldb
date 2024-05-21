@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id janus-lang
 name Janus
 appeared 1982
-tags pl
 creators Christopher Lutz and Howard Derby and Tetsuo Yokoyama and Robert Glück
-reference https://semanticscholar.org/paper/6592f89ddba3ee5e85b2cf0ffaf31e01d78e66e5
+tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity California Institute of Technology
+reference https://semanticscholar.org/paper/6592f89ddba3ee5e85b2cf0ffaf31e01d78e66e5
 
 wikipedia https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_programming_language)
  example
@@ -28,5 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_program
  appeared 1982
 
 hopl https://hopl.info/showlanguage.prx?exp=1559
-
-centralPackageRepositoryCount 0

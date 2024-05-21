@@ -1,20 +1,51 @@
 import ../code/conceptPage.scroll
+
 id lisp
 name Lisp
 appeared 1958
-tags pl
 creators John McCarthy
+tags pl
+conference https://www.european-lisp-symposium.org The European Lisp Symposium
+
+clocExtensions asd el lisp lsp cl jl
+fileType text
 documentation https://common-lisp.net/documentation
+rosettaCode http://www.rosettacode.org/wiki/Category:Lisp
+centralPackageRepositoryCount 0
 country United States
 originCommunity Massachusetts Institute of Technology
+projectEuler LISP
+ memberCount
+  2019 1276
+  2022 1372
+
+subreddit https://reddit.com/r/lisp
+ memberCount
+  2017 12216
+  2022 34743
+leachim6 Lisp
+ filepath l/Lisp.lsp
+ fileExtensions lsp
+ example
+  ; LISP
+  (DEFUN hello ()
+    (PRINT (LIST 'HELLO 'WORLD))
+  )
+  
+  (hello)
+  
+
+meetup https://www.meetup.com/topics/lisp
+ memberCount 92994
+ groupCount 232
+
+printToken PRINT
 
 isLisp true
 hasGarbageCollection true
 hasCaseInsensitiveIdentifiers false
 hasHomoiconicity true
 hasPrintDebugging true
-
-printToken PRINT
 
 wikipedia https://en.wikipedia.org/wiki/Lisp_(programming_language)
  example
@@ -31,58 +62,9 @@ wikipedia https://en.wikipedia.org/wiki/Lisp_(programming_language)
  revisionCount 2307
  appeared 1958
 
-projectEuler LISP
- memberCount
-  2019 1276
-  2022 1372
-leachim6 Lisp
- filepath l/Lisp.lsp
- fileExtensions lsp
- example
-  ; LISP
-  (DEFUN hello ()
-    (PRINT (LIST 'HELLO 'WORLD))
-  )
-  
-  (hello)
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Lisp
-
-indeedJobs lisp engineer
- 2017 112
-linkedInSkill lisp
- 2018 19133
-stackOverflowSurvey
- 2021
-  users 1096
-  medianSalary 75669
-  fans 1513
-  percentageUsing 0.01
-
-subreddit https://reddit.com/r/lisp
- memberCount
-  2017 12216
-  2022 34743
-meetup https://www.meetup.com/topics/lisp
- memberCount 92994
- groupCount 232
-conference https://www.european-lisp-symposium.org The European Lisp Symposium
-
+hopl https://hopl.info/showlanguage.prx?exp=14
 tiobe Lisp
  currentRank 38
-hopl https://hopl.info/showlanguage.prx?exp=14
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Common LISP: The Language|1984|Guy L. Steele Jr.|1529534|4.28|78|3
- An Introduction to Programming in Emacs Lisp||Robert J. Chassell|1162587|3.45|40|4
- Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
- LISP Lore: A Guide to Programming the LISP Machine|1986|Hank Bromley|3724482|4.00|5|0
- LISP 1.5 Programmer's Manual|1962|John McCarthy|4019912|4.43|28|2
- Lisp, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|1990|W. Richard Stark|812519|3.50|4|0
 
 isbndb 69
  year|publisher|title|authors|isbn13
@@ -156,6 +138,17 @@ isbndb 69
  |New York, N.Y. : ACM Press, c1988.|Proceedings of the 1988 ACM Conference on Lisp and Functional Programming|the Association for Computing Machinery and SIGPLAN and SIGACT and SIGART|9780897912730
  1995|Springer|Vlisp A Verified Implementation Of Scheme: A Special Issue Of Lisp And Symbolic Computation, An International Journal Vol. 8, Nos. 1 & 2 March 1995|Guttman, Joshua D. and Wand, Mitchell.|9780792395669
 
+indeedJobs lisp engineer
+ 2017 112
+linkedInSkill lisp
+ 2018 19133
+stackOverflowSurvey
+ 2021
+  users 1096
+  medianSalary 75669
+  fans 1513
+  percentageUsing 0.01
+
 semanticScholar 25
  year|title|doi|citations|influentialCitations|authors|paperId
  1977|Prolog - the language and its implementation compared with Lisp|10.1145/800228.806939|157|6|D. Warren and L. Pereira and Fernando C Pereira|57f796c1bb843b65ba45c42aa00c1068c529eae0
@@ -184,4 +177,11 @@ semanticScholar 25
  1990|LISP, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|10.5860/choice.28-0344|2|0|W. R. Stark|519c91b4125277c48fe6108cea5c73fc9e4fcd8f
  1980|An Algorithm for Translating Lisp Programs into Reduction Language Programs|10.1007/3-540-09981-6_14|1|0|Alexis Koster|4b4930dac0835b0b396274c1ac1321560b807845
 
-clocExtensions asd el lisp lsp cl jl
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Common LISP: The Language|1984|Guy L. Steele Jr.|1529534|4.28|78|3
+ An Introduction to Programming in Emacs Lisp||Robert J. Chassell|1162587|3.45|40|4
+ Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
+ LISP Lore: A Guide to Programming the LISP Machine|1986|Hank Bromley|3724482|4.00|5|0
+ LISP 1.5 Programmer's Manual|1962|John McCarthy|4019912|4.43|28|2
+ Lisp, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|1990|W. Richard Stark|812519|3.50|4|0

@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id asn-1
 name ASN.1
 appeared 1984
 tags idl
+
+fileType text
+codeMirror asn-1
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity International Telecommunication Union && International Electrotechnical Commission
 
@@ -36,17 +41,8 @@ wikipedia https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
  revisionCount 363
  appeared 1984
 
-githubLanguage ASN.1
- fileExtensions asn asn1
- trendingProjectsCount 0
- type data
- aceMode text
- codemirrorMode asn.1
- codemirrorMimeType text/x-ttcn-asn
- tmScope source.asn
- repos 0
+hopl https://hopl.info/showlanguage.prx?exp=1070
 
-codeMirror asn-1
 linguistGrammarRepo https://github.com/ajLangley12/language-asn1
  firstCommit 2016
  lastCommit 2016
@@ -89,9 +85,14 @@ linguistGrammarRepo https://github.com/ajLangley12/language-asn1
   END
   
 
-hopl https://hopl.info/showlanguage.prx?exp=1070
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage ASN.1
+ fileExtensions asn asn1
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ codemirrorMode asn.1
+ codemirrorMimeType text/x-ttcn-asn
+ tmScope source.asn
+ repos 0

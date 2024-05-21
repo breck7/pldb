@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id psvg
 name PSVG
-website https://psvg.netlify.app/
-webRepl https://psvg.netlify.app/
-githubRepo https://github.com/LingDong-/psvg
 appeared 2020
 creators Lingdong Huang
 tags pl
-country China
+website https://psvg.netlify.app/
+webRepl https://psvg.netlify.app/
+conceptDescription Programmable SVG format
+
 compilesTo svg
 documentation https://github.com/LingDong-/psvg/blob/main/QUICKSTART.md
-conceptDescription Programmable SVG format
+
 example
  <!-- koch.psvg               -->
  <!-- draws a koch snowflake  -->
@@ -39,3 +40,5 @@ example
    <snowflake x1="350" y1="310" x2="200" y2="10"  d="5"/>
    <snowflake x1="50"  y1="310" x2="350" y2="310" d="5"/>
  </psvg>
+
+githubRepo https://github.com/LingDong-/psvg

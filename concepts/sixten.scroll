@@ -1,12 +1,21 @@
 import ../code/conceptPage.scroll
+
 id sixten
 name sixten
 appeared 2014
-tags pl
 creators Olle Fredriksson
-reference https://ollef.github.io/blog/posts/query-based-compilers.html
+tags pl
+
+writtenIn haskell markdown vim-script yaml llvmir
+repoStats
+ firstCommit 2014
+ commits 1118
+ committers 10
+ files 418
+ newestCommit 2020
 country Norway
 originCommunity https://github.com/ollef/sixten/issues
+reference https://ollef.github.io/blog/posts/query-based-compilers.html
 
 githubRepo https://github.com/ollef/sixten
  firstCommit 2014
@@ -17,12 +26,3 @@ githubRepo https://github.com/ollef/sixten
  updated 2022
  description Functional programming with fewer indirections
  issues 37
-
-repoStats
- firstCommit 2014
- commits 1118
- committers 10
- files 418
- newestCommit 2020
-
-writtenIn haskell markdown vim-script yaml llvmir

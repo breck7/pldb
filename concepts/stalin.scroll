@@ -1,9 +1,13 @@
 import ../code/conceptPage.scroll
+
 id stalin
 name Stalin
 appeared 2006
-tags compiler
 creators Jeffrey Mark Siskind
+tags compiler
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Purdue University
 
@@ -15,6 +19,3 @@ wikipedia https://en.wikipedia.org/wiki/Stalin_(Scheme_implementation)
  pageId 2828643
  dailyPageViews 14
  appeared 2006
-
-isOpenSource true
-centralPackageRepositoryCount 0

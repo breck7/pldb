@@ -1,29 +1,34 @@
 import ../code/conceptPage.scroll
+
 id postcss
 name PostCSS
 appeared 2013
+creators Andrey Sitnik
 tags textMarkup
 website https://postcss.org/
+
+isOpenSource true
+writtenIn typescript javascript markdown yaml json
+fileType text
 documentation https://postcss.org/docs/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 4065
+ committers 443
+ files 105
+ newestCommit 2024
 country Various
 originCommunity https://github.com/postcss
-domainName postcss.org
- registered 2015
- awisRank
-  2022 257386
 
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-hasStrings true
- "Hello world"
-
-multiLineCommentTokens /* */
-stringToken "
+twitter https://twitter.com/postcss
+leachim6 PostCSS
+ filepath p/PostCSS.pcss
+ fileExtensions pcss
+ example
+  body::before {
+      content: "Hello World";
+  }
 
 githubRepo https://github.com/postcss/postcss
  firstCommit 2013
@@ -35,21 +40,23 @@ githubRepo https://github.com/postcss/postcss
  description Transforming styles with JS plugins
  issues 12
 
-repoStats
- firstCommit 2013
- commits 4065
- committers 443
- files 105
- newestCommit 2024
+multiLineCommentTokens /* */
+stringToken "
 
-githubLanguage PostCSS
- fileExtensions pcss postcss
- trendingProjectsCount 0
- type markup
- group CSS
- aceMode text
- tmScope source.postcss
- repos 0
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName postcss.org
+ registered 2015
+ awisRank
+  2022 257386
 
 linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
  firstCommit 2013
@@ -72,22 +79,15 @@ linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostC
     }
   }
 
-leachim6 PostCSS
- filepath p/PostCSS.pcss
- fileExtensions pcss
- example
-  body::before {
-      content: "Hello World";
-  }
-
-twitter https://twitter.com/postcss
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage PostCSS
+ fileExtensions pcss postcss
+ trendingProjectsCount 0
+ type markup
+ group CSS
+ aceMode text
+ tmScope source.postcss
+ repos 0
 
-creators Andrey Sitnik
-writtenIn typescript javascript markdown yaml json
+semanticScholar 0

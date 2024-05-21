@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id cms-2
 name CMS-2
 appeared 1968
-tags pl
 creators Vincent Cecil Secades and David Clark Rummler
-reference https://www.semanticscholar.org/paper/Steps-toward-a-revised-compiler-monitor-system-II-Secades-Rummler/2ea5859d3f2045a9dd3296c28a9d18a87853a083
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Naval Postgraduate School
+reference https://www.semanticscholar.org/paper/Steps-toward-a-revised-compiler-monitor-system-II-Secades-Rummler/2ea5859d3f2045a9dd3296c28a9d18a87853a083
 
 wikipedia https://en.wikipedia.org/wiki/CMS-2_(programming_language)
  related fortran jovial pl-i ada
@@ -19,9 +23,6 @@ wikipedia https://en.wikipedia.org/wiki/CMS-2_(programming_language)
  appeared 1968
 
 hopl https://hopl.info/showlanguage.prx?exp=711
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 1
  year|publisher|title|authors|isbn13

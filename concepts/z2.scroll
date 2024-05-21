@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id z2
 name z2
 appeared 2015
 tags pl
 conceptDescription Z2 is a statically-typed pure-OOP general-use performance-centric systems-programming language.
+
+writtenIn cpp xml markdown
+repoStats
+ firstCommit 2017
+ commits 81
+ committers 1
+ files 564
+ newestCommit 2019
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/4xze6m/introducing_the_z2_programming_language_warning/
 
 example
@@ -23,12 +32,3 @@ githubRepo https://github.com/MasterZean/z2-compiler-cpp
  stars 0
  forks 0
  issues 0
-
-repoStats
- firstCommit 2017
- commits 81
- committers 1
- files 564
- newestCommit 2019
-
-writtenIn cpp xml markdown

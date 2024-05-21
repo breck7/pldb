@@ -1,18 +1,18 @@
 import ../code/conceptPage.scroll
+
 id tht
 name tht
 appeared 2017
 tags pl
 website https://tht-lang.org/
-domainName tht-lang.org
 
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+writtenIn php css javascript markdown bourne-shell json
+repoStats
+ firstCommit 2017
+ commits 624
+ committers 7
+ files 249
+ newestCommit 2024
 
 example
  // Familiar variable and List syntax.
@@ -58,15 +58,16 @@ githubRepo https://github.com/joelesko/tht
  description THT Programming Language
  issues 0
 
-repoStats
- firstCommit 2017
- commits 624
- committers 7
- files 249
- newestCommit 2024
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName tht-lang.org
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  15163343|Show HN: THT – a cleaner, safer language that compiles to PHP|2017-09-03 19:29:56 UTC|1504466996|jlesk|0|3
-
-writtenIn php css javascript markdown bourne-shell json

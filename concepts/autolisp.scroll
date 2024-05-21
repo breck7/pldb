@@ -1,17 +1,29 @@
 import ../code/conceptPage.scroll
+
 id autolisp
 name AutoLISP
 appeared 1986
-tags pl
 creators David Betz
+tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:AutoLISP
+centralPackageRepositoryCount 0
 country United States
 originCommunity Autodesk && Basis Software
+
+leachim6 AutoLISP
+ filepath a/AutoLISP.lsp
+ fileExtensions lsp
+ example
+  (alert "Hello World")
+  
+
+stringToken "
 
 isLisp true
 hasStrings true
  "Hello world"
-
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AutoLISP
  example
@@ -45,28 +57,8 @@ wikipedia https://en.wikipedia.org/wiki/AutoLISP
  revisionCount 232
  appeared 1986
 
-leachim6 AutoLISP
- filepath a/AutoLISP.lsp
- fileExtensions lsp
- example
-  (alert "Hello World")
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:AutoLISP
-
-tiobe AutoLISP
 hopl https://hopl.info/showlanguage.prx?exp=1842
-
-fileType text
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- AutoLISP Programming|1993|Rod R. Rawls|675018|2.50|2|0
- AutoLISP Programming: Principles and Techniques|1997|Rod R. Rawls|15332754|0.0|0|0
- AutoLISP: Programming by Example|1992|Gene Straka|3212808|0.0|0|0
- AutoLISP: Programming by Example|1992|Gene Straka|15209678|0.0|0|0
- AutoLISP Concepts: Programming for Productivity|1989|William Kramer|6371294|0.0|0|0
- AutoLISP in Plain English: A Practical Guide for Non-Programmers|1987|George O. Head|675019|4.33|3|0
+tiobe AutoLISP
 
 isbndb 14
  year|publisher|title|authors|isbn13
@@ -88,3 +80,12 @@ isbndb 14
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2013|Methodical complex of training in programming on AutoLISP language|10.12737/471|2|0|E. Alshakova|a2debd870483830578736892d1aeae39270920d1
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ AutoLISP Programming|1993|Rod R. Rawls|675018|2.50|2|0
+ AutoLISP Programming: Principles and Techniques|1997|Rod R. Rawls|15332754|0.0|0|0
+ AutoLISP: Programming by Example|1992|Gene Straka|3212808|0.0|0|0
+ AutoLISP: Programming by Example|1992|Gene Straka|15209678|0.0|0|0
+ AutoLISP Concepts: Programming for Productivity|1989|William Kramer|6371294|0.0|0|0
+ AutoLISP in Plain English: A Practical Guide for Non-Programmers|1987|George O. Head|675019|4.33|3|0

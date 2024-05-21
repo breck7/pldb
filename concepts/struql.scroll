@@ -1,21 +1,15 @@
 import ../code/conceptPage.scroll
+
 id struql
 name StruQL
 appeared 1999
-tags queryLanguage
 creators Mary Fernández and Dan Suciu and and Igor Tatarinov
+tags queryLanguage
 conceptDescription A StruQL query is a function from a set of input graphs to an output graph.
-reference https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
+
 country United States
 originCommunity AT&T Labs and North Dakota State University
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+reference https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
 
 example
   // Link root page to page of all accounts
@@ -42,3 +36,11 @@ example
    link Info(acct) -> "Alias" -> alias
    }
    }
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

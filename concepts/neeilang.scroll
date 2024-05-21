@@ -1,20 +1,21 @@
 import ../code/conceptPage.scroll
+
 id neeilang
 name neeilang
 appeared 2019
-tags pl
 creators Neeilan Selvalingam
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/
+tags pl
+
+writtenIn cpp llvmir cmake bourne-shell markdown
+repoStats
+ firstCommit 2019
+ commits 175
+ committers 4
+ files 140
+ newestCommit 2023
 country Unknown
 originCommunity https://github.com/neeilan/neeilang/issues
-
-hasLineComments true
- // A comment
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/
 
 example
  fn main() : Int {
@@ -52,11 +53,10 @@ githubRepo https://github.com/neeilan/neeilang
  forks 2
  issues 0
 
-repoStats
- firstCommit 2019
- commits 175
- committers 4
- files 140
- newestCommit 2023
+lineCommentToken //
 
-writtenIn cpp llvmir cmake bourne-shell markdown
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

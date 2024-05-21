@@ -1,12 +1,34 @@
 import ../code/conceptPage.scroll
+
 id maple
 name Maple
 appeared 1982
 tags pl
 website http://www.maplesoft.com/products/maple/
+
+officialBlogUrl https://faq.maplesoft.com/
+fileType text
+wordRank 6311
 documentation https://www.maplesoft.com/documentation_center/
+downloadPageUrl https://www.maplesoft.com/download/
+rosettaCode http://www.rosettacode.org/wiki/Category:Maple
+packageRepository https://www.maplesoft.com/applications/
 country Canada
 originCommunity Cybernet Systems Co. Ltd
+projectEuler Maple
+ memberCount
+  2019 262
+  2022 265
+
+helloWorldCollection Maple
+ # Hello World in Maple
+ 
+ >> printf("Hello World!");
+ 
+twitter https://twitter.com/maplesoft
+
+lineCommentToken #
+printToken printf
 
 hasComments true
 hasLineComments true
@@ -14,9 +36,6 @@ hasLineComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
-
-lineCommentToken #
-printToken printf
 
 wikipedia https://en.wikipedia.org/wiki/Maple_(software)
  example
@@ -31,30 +50,8 @@ wikipedia https://en.wikipedia.org/wiki/Maple_(software)
  revisionCount 776
  appeared 1982
 
-projectEuler Maple
- memberCount
-  2019 262
-  2022 265
-helloWorldCollection Maple
- # Hello World in Maple
- 
- >> printf("Hello World!");
- 
-rosettaCode http://www.rosettacode.org/wiki/Category:Maple
-
-linkedInSkill maple
- 2018 51134
-officialBlogUrl https://faq.maplesoft.com/
-downloadPageUrl https://www.maplesoft.com/download/
-
-tiobe Maple
 hopl https://hopl.info/showlanguage.prx?exp=909
-
-packageRepository https://www.maplesoft.com/applications/
-
-twitter https://twitter.com/maplesoft
-fileType text
-wordRank 6311
+tiobe Maple
 
 isbndb 28
  year|publisher|title|authors|isbn13
@@ -86,6 +83,9 @@ isbndb 28
  ||Maple Introductory Programming Guide 11||9781897310175
  2012|Birkhäuser|Mathematical Computation with Maple V: Ideas and Applications: Proceedings of the Maple Summer Workshop and Symposium, University of Michigan, Ann Arbor, June 28–30, 1993|Thomas Lee|9781461267201
  2012|Springer|Intelligent Routines: Solving Mathematical Analysis with Matlab, Mathcad, Mathematica and Maple (Intelligent Systems Reference Library Book 39)|Anastassiou, George A. and Iatan, Iuliana F.|9783642284755
+
+linkedInSkill maple
+ 2018 51134
 
 semanticScholar 15
  year|title|doi|citations|influentialCitations|authors|paperId

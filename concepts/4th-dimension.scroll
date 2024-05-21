@@ -1,23 +1,14 @@
 import ../code/conceptPage.scroll
+
 id 4th-dimension
 name 4th Dimension
 appeared 1987
 tags pl
-reference https://en.wikipedia.org/wiki/4th_Dimension_(software)
 aka 4D
+
+centralPackageRepositoryCount 0
 originCommunity 4D SAS
-
-hasStrings true
- "Hello world"
-
-stringToken "
-
-githubLanguage 4D
- type programming
- fileExtensions 4dm
- aceMode text
- tmScope source.4dm
- repos 365
+reference https://en.wikipedia.org/wiki/4th_Dimension_(software)
 
 leachim6 4th Dimension
  filepath #/4th Dimension.4dd
@@ -28,6 +19,16 @@ leachim6 4th Dimension
   End while
   
 
+stringToken "
+
+hasStrings true
+ "Hello world"
+
 hopl https://hopl.info/showlanguage.prx?exp=2471
 
-centralPackageRepositoryCount 0
+githubLanguage 4D
+ type programming
+ fileExtensions 4dm
+ aceMode text
+ tmScope source.4dm
+ repos 365

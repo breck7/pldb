@@ -1,9 +1,10 @@
 import ../code/conceptPage.scroll
+
 id eulers-equation
 name Euler's Equation
 appeared 1748
-tags equation
 creators Leonhard Euler
+tags equation
 equation
  e^(ix) = cos(x) + i*sin(x)
  When x = π:

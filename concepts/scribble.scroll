@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id scribble
 name scribble
 appeared 1997
-tags pl
 creators Matthew Flatt
+tags pl
+
+writtenIn racket tex css yaml javascript markdown html
+repoStats
+ firstCommit 1997
+ commits 2229
+ committers 97
+ files 396
+ newestCommit 2024
 country United States
 originCommunity https://github.com/racket
 
@@ -41,12 +50,3 @@ githubRepo https://github.com/racket/scribble
  created 2014
  updated 2022
  issues 98
-
-repoStats
- firstCommit 1997
- commits 2229
- committers 97
- files 396
- newestCommit 2024
-
-writtenIn racket tex css yaml javascript markdown html

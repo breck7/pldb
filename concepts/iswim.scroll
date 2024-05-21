@@ -1,20 +1,24 @@
 import ../code/conceptPage.scroll
+
 id iswim
 name ISWIM
 appeared 1966
-tags pl
 creators Peter Landin
+tags pl
 standsFor If you See What I Mean
+
+fileType text
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity RAND Corporation
 
-hasSemanticIndentation true
-hasPrintDebugging true
+example
+ Print `Hello world'
 
 printToken Print
 
-example
- Print `Hello world'
+hasSemanticIndentation true
+hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/ISWIM
  related algol-60 lisp haskell clean lucid krc hope miranda
@@ -27,8 +31,5 @@ wikipedia https://en.wikipedia.org/wiki/ISWIM
  appeared 1966
 
 hopl https://hopl.info/showlanguage.prx?exp=261
-
-fileType text
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,32 +1,25 @@
 import ../code/conceptPage.scroll
+
 id uxf
 name Uniform eXchange Format
 appeared 2022
-tags dataNotation
 creators Mark Summerfield
-conceptDescription Uniform eXchange Format (uxf) is a plain text human readable optionally typed storage format that supports custom types. It may serve as a convenient alternative to csv, ini, json, sqlite, toml, xml, or yaml
+tags dataNotation
 website https://www.qtrac.eu
-reference https://github.com/mark-summerfield/uxf/blob/main/README.md
-fileExtensions uxf, ux*
-country United Kingdom
-originCommunity Qtrac Ltd
-domainName qtrac.eu
 versions
  2022 2022
+conceptDescription Uniform eXchange Format (uxf) is a plain text human readable optionally typed storage format that supports custom types. It may serve as a convenient alternative to csv, ini, json, sqlite, toml, xml, or yaml
 
 relatedConcepts python rust scheme
-
-hasBooleans true
-hasComments true
- # <This is a comment>
-hasStrings true
- <Hello world>
-hasLists true
- [1 2]
-hasIntegers true
- 80766866
-hasLineComments true
- #<A comment>
+fileExtensions uxf, ux*
+repoStats
+ firstCommit 2022
+ commits 1023
+ committers 4
+ files 624
+country United Kingdom
+originCommunity Qtrac Ltd
+reference https://github.com/mark-summerfield/uxf/blob/main/README.md
 
 example
  uxf 1
@@ -45,8 +38,16 @@ githubRepo https://github.com/mark-summerfield/uxf
  description Uniform eXchange Format (uxf) is a plain text human readable optionally typed storage format that supports custom types. It may serve as a convenient alternative to csv, ini, json, sqlite, toml, xml, or yaml.
  issues 0
 
-repoStats
- firstCommit 2022
- commits 1023
- committers 4
- files 624
+hasBooleans true
+hasComments true
+ # <This is a comment>
+hasStrings true
+ <Hello world>
+hasLists true
+ [1 2]
+hasIntegers true
+ 80766866
+hasLineComments true
+ #<A comment>
+
+domainName qtrac.eu

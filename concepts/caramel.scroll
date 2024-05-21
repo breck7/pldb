@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id caramel
 name Caramel
 appeared 2020
-tags pl
 creators Leandro Ostera
+tags pl
 website https://caramel.run/
+
+writtenIn ocaml markdown html erlang typescript vim-script yaml lisp make c javascript asciidoc bourne-shell reason css json diff python handlebars xml tex bash toml svg
+repoStats
+ firstCommit 2020
+ commits 688
+ committers 10
+ files 4120
+ newestCommit 2022
 country Sweden
 originCommunity https://abstractmachines.dev
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/AbstractMachinesLab/caramel
  updated 2022
  description :candy: a functional language for building type-safe, scalable, and maintainable applications
  issues 20
-
-repoStats
- firstCommit 2020
- commits 688
- committers 10
- files 4120
- newestCommit 2022
-
-writtenIn ocaml markdown html erlang typescript vim-script yaml lisp make c javascript asciidoc bourne-shell reason css json diff python handlebars xml tex bash toml svg

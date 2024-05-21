@@ -1,17 +1,64 @@
 import ../code/conceptPage.scroll
+
 id hla
 name High Level Assembly
 appeared 2011
-tags assembly
-isPublicDomain true
 creators Randall Hyde
+tags assembly
 website https://plantation-productions.com/Webster/HighLevelAsm/index.html
-reference https://sourceforge.net/projects/hlav1/
 standsFor High Level Assembly
+
+isPublicDomain true
+isOpenSource true
+influencedBy pascal ada modula-2 cpp
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:HLA
+centralPackageRepositoryCount 0
 country United States
 originCommunity Plantation Productions, Inc
+reference https://sourceforge.net/projects/hlav1/
 
-influencedBy pascal ada modula-2 cpp
+example
+ procedure SetFormat;
+ 
+ static
+     chr     :w.CHARRANGE;
+     chr2    :w.CHARRANGE;
+     cf      :w.CHARFORMAT;
+ 
+ begin SetFormat;
+     
+     w.SendMessage(hwnd, w.EM_GETMODIFY,0,0);
+     push    (eax);
+     
+     w.SendMessage(hwnd, w.EM_EXGETSEL,0, &chr);
+     w.SendMessage(hwnd, w.EM_HIDESELECTION, true,0);
+     mov (0, chr2.cpMin);
+     mov (-1,chr2.cpMax);
+     w.SendMessage(hwnd, w.EM_EXSETSEL,0,&chr2);
+     mov (@size(cf), cf.cbSize);
+     mov (w.CFM_CHARSET | w.CFM_FACE | w.CFM_SIZE | w.CFM_COLOR, cf.dwMask);
+     mov (logfont.lfCharSet, al);
+     mov (al,cf.bCharSet);
+     mov (logfont.lfPitchAndFamily, al);
+     mov (al, cf.bPitchAndFamily);
+     w.lstrcpyn(cf.szFaceName,&logfont.lfFaceName,w.LF_FACESIZE);
+     mov (logfont.lfHeight, eax);
+     neg (eax);
+     mov (15,ecx);
+     mul     (ecx);
+     mov (eax, cf.yHeight);
+     mov (rgb, cf.crTextColor);
+     w.SendMessage(hwnd, w.EM_SETCHARFORMAT, w.SCF_SELECTION,&cf);
+     w.SendMessage(hREd, w.WM_SETFONT, hFont, true);
+     w.SendMessage(hREd, w.EM_SETMARGINS, w.EC_LEFTMARGIN,5);
+     pop (eax);
+     w.SendMessage(hwnd, w.EM_SETMODIFY, eax,0);
+     w.SendMessage(hwnd, w.EM_EXSETSEL,0,&chr);
+     w.SendMessage(hwnd,w.EM_HIDESELECTION, false, 0);
+ 
+ end SetFormat;
+ 
 
 hasComments true
 hasLineComments true
@@ -57,48 +104,6 @@ hasMacros true
      
  endmacro;
 
-example
- procedure SetFormat;
- 
- static
-     chr     :w.CHARRANGE;
-     chr2    :w.CHARRANGE;
-     cf      :w.CHARFORMAT;
- 
- begin SetFormat;
-     
-     w.SendMessage(hwnd, w.EM_GETMODIFY,0,0);
-     push    (eax);
-     
-     w.SendMessage(hwnd, w.EM_EXGETSEL,0, &chr);
-     w.SendMessage(hwnd, w.EM_HIDESELECTION, true,0);
-     mov (0, chr2.cpMin);
-     mov (-1,chr2.cpMax);
-     w.SendMessage(hwnd, w.EM_EXSETSEL,0,&chr2);
-     mov (@size(cf), cf.cbSize);
-     mov (w.CFM_CHARSET | w.CFM_FACE | w.CFM_SIZE | w.CFM_COLOR, cf.dwMask);
-     mov (logfont.lfCharSet, al);
-     mov (al,cf.bCharSet);
-     mov (logfont.lfPitchAndFamily, al);
-     mov (al, cf.bPitchAndFamily);
-     w.lstrcpyn(cf.szFaceName,&logfont.lfFaceName,w.LF_FACESIZE);
-     mov (logfont.lfHeight, eax);
-     neg (eax);
-     mov (15,ecx);
-     mul     (ecx);
-     mov (eax, cf.yHeight);
-     mov (rgb, cf.crTextColor);
-     w.SendMessage(hwnd, w.EM_SETCHARFORMAT, w.SCF_SELECTION,&cf);
-     w.SendMessage(hREd, w.WM_SETFONT, hFont, true);
-     w.SendMessage(hREd, w.EM_SETMARGINS, w.EC_LEFTMARGIN,5);
-     pop (eax);
-     w.SendMessage(hwnd, w.EM_SETMODIFY, eax,0);
-     w.SendMessage(hwnd, w.EM_EXSETSEL,0,&chr);
-     w.SendMessage(hwnd,w.EM_HIDESELECTION, false, 0);
- 
- end SetFormat;
- 
-
 wikipedia https://en.wikipedia.org/wiki/High_Level_Assembly
  related assembly-language linux freebsd ia-32 pascal ada modula-2 microsoft-macro-assembler turbo-assembler x86-isa c nasm gas coff elf
  summary High Level Assembly (HLA) is an high-level assembly language developed by Randall Hyde. It allows the use of higher-level language constructs to aid both beginners and advanced assembly developers. It fully supports advanced data types and object-oriented programming. It uses a syntax loosely based on several high-level programming languages (HLLs), such as Pascal, Ada, Modula-2, and C++, to allow creating readable assembly language programs, and to allow HLL programmers to learn HLA as fast as possible.
@@ -108,9 +113,3 @@ wikipedia https://en.wikipedia.org/wiki/High_Level_Assembly
  backlinksCount 55
  revisionCount 190
  appeared 2011
-
-rosettaCode http://www.rosettacode.org/wiki/Category:HLA
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

@@ -1,23 +1,114 @@
 import ../code/conceptPage.scroll
+
 id jule
 name Jule
 appeared 2021
-tags pl
 creators Mertcan Davulcu
-conceptDescription Jule is the simple, efficient, statically typed and compiled system programming language.
+tags pl
 website https://jule.dev
-documentation https://jule.dev/pages/manual.html?page=jule-lang
-fileExtensions .jule
-country Turkey
-nativeLanguage false
-originCommunity https://github.com/julelang
-domainName jule.dev
- registered 2022
+conceptDescription Jule is the simple, efficient, statically typed and compiled system programming language.
 
+isOpenSource true
 writtenIn yaml markdown bourne-shell dockerfile
 influencedBy c cpp rust go
-
+fileExtensions .jule
 visualParadigm false
+fileType text
+documentation https://jule.dev/pages/manual.html?page=jule-lang
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2021
+ commits 3944
+ committers 13
+ files 362
+ newestCommit 2024
+country Turkey
+originCommunity https://github.com/julelang
+
+example
+  fn quicksort(mut s: []int) {
+      if s.len <= 1 {
+          ret
+      }
+  
+      let mut i = -1
+      let last = s[s.len-1]
+      for j in s {
+          let mut x = &s[j]
+          if (unsafe{ *x <= last }) {
+              i++
+              let mut y = &s[i]
+              unsafe { *x, *y = *y, *x }
+          }
+      }
+  
+      quicksort(s[:i])
+      quicksort(s[i+1:])
+  }
+  
+  fn main() {
+      let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
+      outln(my_slice)
+      quicksort(my_slice)
+      outln(my_slice)
+  }
+example
+ fn main() {
+     outln("Hello World")
+ }
+example
+ use std::math::{PI}
+ 
+ trait Shape {
+     fn area(self): f32
+ }
+ 
+ struct Rectangle {
+     width: int
+     height: int
+ }
+ 
+ impl Shape for Rectangle {
+     fn area(self): f32 {
+         ret self.width * self.height
+     }
+ }
+ 
+ struct Circle {
+     r: f32
+ }
+ 
+ impl Shape for Circle {
+     fn area(self): f32 {
+         ret PI * self.r * self.r
+     }
+ }
+ 
+ fn main() {
+     let rect: Shape = Rectangle{90, 5}
+     let circ: Shape = Circle{90.5}
+     outln(rect.area())
+     outln(circ.area())
+ }
+
+keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
+githubRepo https://github.com/julelang/jule
+ firstCommit 2021
+ stars 67
+ forks 9
+ subscribers 5
+ created 2021
+ updated 2022
+ description Jule is the simple, efficient, statically typed and compiled system programming language.
+ issues 12
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken outln
+assignmentToken =
+stringToken "
+booleanTokens true false
+includeToken use
 
 hasStrings true
  "Jule String Literal"
@@ -276,98 +367,5 @@ hasImports true
  use std::sys::{self, open, O_RDWR}
  use std::math::*
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken outln
-assignmentToken =
-stringToken "
-booleanTokens true false
-includeToken use
-keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
-
-example
-  fn quicksort(mut s: []int) {
-      if s.len <= 1 {
-          ret
-      }
-  
-      let mut i = -1
-      let last = s[s.len-1]
-      for j in s {
-          let mut x = &s[j]
-          if (unsafe{ *x <= last }) {
-              i++
-              let mut y = &s[i]
-              unsafe { *x, *y = *y, *x }
-          }
-      }
-  
-      quicksort(s[:i])
-      quicksort(s[i+1:])
-  }
-  
-  fn main() {
-      let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
-      outln(my_slice)
-      quicksort(my_slice)
-      outln(my_slice)
-  }
-example
- fn main() {
-     outln("Hello World")
- }
-example
- use std::math::{PI}
- 
- trait Shape {
-     fn area(self): f32
- }
- 
- struct Rectangle {
-     width: int
-     height: int
- }
- 
- impl Shape for Rectangle {
-     fn area(self): f32 {
-         ret self.width * self.height
-     }
- }
- 
- struct Circle {
-     r: f32
- }
- 
- impl Shape for Circle {
-     fn area(self): f32 {
-         ret PI * self.r * self.r
-     }
- }
- 
- fn main() {
-     let rect: Shape = Rectangle{90, 5}
-     let circ: Shape = Circle{90.5}
-     outln(rect.area())
-     outln(circ.area())
- }
-
-githubRepo https://github.com/julelang/jule
- firstCommit 2021
- stars 67
- forks 9
- subscribers 5
- created 2021
- updated 2022
- description Jule is the simple, efficient, statically typed and compiled system programming language.
- issues 12
-
-repoStats
- firstCommit 2021
- commits 3944
- committers 13
- files 362
- newestCommit 2024
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName jule.dev
+ registered 2022

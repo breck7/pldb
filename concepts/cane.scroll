@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id cane
 name Cane
 appeared 2022
-tags musicalNotation
 creators Jack Clarke
+tags musicalNotation
 website https://github.com/Jackojc/cane
+
+writtenIn markdown cpp make yaml
+repoStats
+ firstCommit 2022
+ commits 250
+ committers 3
+ files 47
+ newestCommit 2023
 country Ireland
 originCommunity Hopson Community
 
@@ -17,12 +26,3 @@ githubRepo https://github.com/Jackojc/cane
  updated 2022
  description A small MIDI sequencer DSL designed around vectors and euclidean rhythms
  issues 7
-
-repoStats
- firstCommit 2022
- commits 250
- committers 3
- files 47
- newestCommit 2023
-
-writtenIn markdown cpp make yaml

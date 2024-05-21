@@ -1,19 +1,27 @@
 import ../code/conceptPage.scroll
+
 id d3
 name D3.js
 appeared 2011
-tags library
 creators Mike Bostock
+tags library
 website https://d3js.org/
+
+isOpenSource true
+writtenIn markdown javascript json typescript yaml csv bourne-shell css svg
+relatedConcepts observable-lang
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ newestCommit 2024
+ commits 4814
+ committers 148
+ files 173
 country United States
 originCommunity https://github.com/d3
-domainName d3js.org
- registered 2011
- awisRank
-  2022 77077
-  2017 54728
 
-relatedConcepts observable-lang
+twitter https://twitter.com/d3js_org
 
 githubRepo https://github.com/d3/d3
  firstCommit 2010
@@ -57,15 +65,8 @@ wikipedia https://en.wikipedia.org/wiki/D3.js
  dailyPageViews 275
  appeared 2011
 
-twitter https://twitter.com/d3js_org
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2010
- newestCommit 2024
- commits 4814
- committers 148
- files 173
-writtenIn markdown javascript json typescript yaml csv bourne-shell css svg
+domainName d3js.org
+ registered 2011
+ awisRank
+  2022 77077
+  2017 54728

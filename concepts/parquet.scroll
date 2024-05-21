@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id parquet
 name parquet
 appeared 2014
-tags binaryDataFormat
 creators Doug Cutting and Julien Le Dem
+tags binaryDataFormat
 website http://parquet.apache.org/
+
+fileType binary
+centralPackageRepositoryCount 0
 country United States
 originCommunity Twitter Inc && Cloudera, Inc
-domainName parquet.apache.org
+
+twitter https://twitter.com/apacheparquet
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Parquet
  summary Apache Parquet is a free and open-source column-oriented data storage format in the Apache Hadoop ecosystem. It is similar to RCFile and ORC, the other columnar-storage file formats in Hadoop, and is compatible with most of the data processing frameworks around Hadoop. It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
 
-twitter https://twitter.com/apacheparquet
-fileType binary
-centralPackageRepositoryCount 0
+domainName parquet.apache.org

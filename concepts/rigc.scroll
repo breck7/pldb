@@ -1,16 +1,24 @@
 import ../code/conceptPage.scroll
+
 id rigc
 name RigC
 appeared 2021
-tags pl
 creators Poeta Kodu
+tags pl
 website https://rigc-lang.org
+
+writtenIn cpp markdown yaml json
 fileExtensions rigc
+repoStats
+ firstCommit 2021
+ commits 301
+ committers 8
+ files 137
+ newestCommit 2022
 country Poland
 originCommunity https://github.com/RigCLang
 
 keywords as break class const continue do else enum export false for from func if import of override ret template true type_name union var while
-
 githubRepo https://github.com/RigCLang/rigc-lang/
  stars 10
  forks 3
@@ -18,12 +26,3 @@ githubRepo https://github.com/RigCLang/rigc-lang/
  created 2021
  updated 2022
  description A prototype of RigC programming language.
-
-repoStats
- firstCommit 2021
- commits 301
- committers 8
- files 137
- newestCommit 2022
-
-writtenIn cpp markdown yaml json

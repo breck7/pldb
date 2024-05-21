@@ -1,11 +1,12 @@
 import ../code/conceptPage.scroll
+
 id sectorc
 name SectorC
 appeared 2023
 tags compiler
-reference https://xorvoid.com/sectorc.html
+
+writtenIn x86-assembly
+inputLanguages c
 country Unknown
 originCommunity https://github.com/xorvoid/sectorc/issues
-
-inputLanguages c
-writtenIn x86-assembly
+reference https://xorvoid.com/sectorc.html

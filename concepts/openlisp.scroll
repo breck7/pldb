@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id openlisp
 name OpenLisp
 appeared 1988
-tags pl
 creators Christian Jullien
+tags pl
+
+isOpenSource false
+rosettaCode http://www.rosettacode.org/wiki/Category:OpenLisp
+centralPackageRepositoryCount 0
 country Brazil
 originCommunity Eligis (one person company)
 
@@ -38,8 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/OpenLisp
  revisionCount 142
  dailyPageViews 15
  appeared 1988
-
-rosettaCode http://www.rosettacode.org/wiki/Category:OpenLisp
-
-isOpenSource false
-centralPackageRepositoryCount 0

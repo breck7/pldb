@@ -1,12 +1,58 @@
 import ../code/conceptPage.scroll
+
 id powershell
 name PowerShell
 appeared 2006
-tags pl
 creators Jeffrey Snover
+tags pl
 website http://microsoft.com/powershell
+
+isOpenSource true
+tryItOnline powershell
+clocExtensions ps1 psd1 psm1
+fileType text
 documentation https://learn.microsoft.com/en-us/powershell/
+monaco powershell
+rosettaCode http://www.rosettacode.org/wiki/Category:PowerShell
+packageRepository https://www.powershellgallery.com/
 originCommunity Microsoft
+projectEuler PowerShell
+ memberCount
+  2019 134
+  2022 159
+
+helloWorldCollection PowerShell
+ # Hello World in Microsoft Powershell
+ 
+ 'Hello World!'
+ 
+pygmentsHighlighter PowerShell
+ filename shell.py
+ fileExtensions ps1 psm1
+rijuRepl https://riju.codes/powershell
+ example
+  Write-Host "Hello, world!"
+  
+subreddit https://reddit.com/r/PowerShell
+ memberCount
+  2022 201622
+twitter https://twitter.com/powershell_team
+leachim6 PowerShell
+ filepath p/PowerShell.ps1
+ fileExtensions ps1
+ example
+  'Hello World'
+  
+languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
+ writtenIn csharp
+
+keywords begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
+
+lineCommentToken #
+multiLineCommentTokens <# #>
+printToken echo
+assignmentToken =
+stringToken '
 
 hasComments true
 hasLineComments true
@@ -25,13 +71,7 @@ hasFunctions true
 hasSwitch true
 hasConditionals true
 
-lineCommentToken #
-multiLineCommentTokens <# #>
-printToken echo
-assignmentToken =
-stringToken '
-keywords begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
-
+jupyterKernel https://github.com/vors/jupyter-powershell
 wikipedia https://en.wikipedia.org/wiki/PowerShell
  example
   name value1 value2
@@ -45,50 +85,12 @@ wikipedia https://en.wikipedia.org/wiki/PowerShell
  revisionCount 1897
  appeared 2006
 
-githubLanguage PowerShell
- fileExtensions ps1 psd1 psm1
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  Azure azure-quickstart-templates https://github.com/Azure.png https://github.com/Azure/azure-quickstart-templates PowerShell #012456 5646 8219 173 "Azure Quickstart Templates"
-  fireeye commando-vm https://github.com/fireeye.png https://github.com/fireeye/commando-vm PowerShell #012456 2883 631 217 "Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based pentesting virtual machine distribution."
-  dotnet docs https://github.com/dotnet.png https://github.com/dotnet/docs PowerShell #012456 1949 3479 52 "This repository contains .NET Documentation."
-  MicrosoftDocs azure-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/azure-docs PowerShell #012456 3023 7981 127 "Open source documentation of Microsoft Azure"
-  microsoft azure-pipelines-image-generation https://github.com/microsoft.png https://github.com/microsoft/azure-pipelines-image-generation PowerShell #012456 527 288 39 "Azure Pipelines VM image generation for Microsoft-hosted CI/CD"
-  redcanaryco atomic-red-team https://github.com/redcanaryco.png https://github.com/redcanaryco/atomic-red-team PowerShell #012456 2427 764 106 "Small and highly portable detection tests based on MITRE's ATT&CK."
-  SharePoint sp-dev-docs https://github.com/SharePoint.png https://github.com/SharePoint/sp-dev-docs PowerShell #012456 803 585 18 "SharePoint Developer Documentation"
-  PowerShellMafia PowerSploit https://github.com/PowerShellMafia.png https://github.com/PowerShellMafia/PowerSploit PowerShell #012456 5774 2124 180 "PowerSploit - A PowerShell Post-Exploitation Framework"
-  aspnet Blazor https://github.com/aspnet.png https://github.com/aspnet/Blazor PowerShell #012456 8382 669 125 "Blazor is a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly"
-  Disassembler0 Win10-Initial-Setup-Script https://github.com/Disassembler0.png https://github.com/Disassembler0/Win10-Initial-Setup-Script PowerShell #012456 2542 607 95 "PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019"
-  BloodHoundAD BloodHound https://github.com/BloodHoundAD.png https://github.com/BloodHoundAD/BloodHound PowerShell #012456 3358 622 114 "Six Degrees of Domain Admin"
-  Sycnex Windows10Debloater https://github.com/Sycnex.png https://github.com/Sycnex/Windows10Debloater PowerShell #012456 2759 362 222 "Script to remove Windows 10 bloatware."
-  fireeye flare-vm https://github.com/fireeye.png https://github.com/fireeye/flare-vm PowerShell #012456 1575 266 78
-  dotnet machinelearning-samples https://github.com/dotnet.png https://github.com/dotnet/machinelearning-samples PowerShell #012456 1966 908 106 "Samples for ML.NET, an open source and cross-platform machine learning framework for .NET."
-  dahlbyk posh-git https://github.com/dahlbyk.png https://github.com/dahlbyk/posh-git PowerShell #012456 3788 610 75 "A PowerShell environment for Git"
-  dfinke ImportExcel https://github.com/dfinke.png https://github.com/dfinke/ImportExcel PowerShell #012456 1083 206 42 "PowerShell module to import/export Excel spreadsheets, without Excel"
-  hak5 bashbunny-payloads https://github.com/hak5.png https://github.com/hak5/bashbunny-payloads PowerShell #012456 1176 844 30 "The Official Bash Bunny Payload Repository"
-  samratashok nishang https://github.com/samratashok.png https://github.com/samratashok/nishang PowerShell #012456 3127 1193 105 "Nishang - Offensive PowerShell for red team, penetration testing and offensive security."
-  MicrosoftDocs dynamics-365-unified-operations-public https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public PowerShell #012456 91 253 12 "Documentation for Microsoft Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent"
-  lukesampson scoop-extras https://github.com/lukesampson.png https://github.com/lukesampson/scoop-extras PowerShell #012456 580 405 19 """Extras"" bucket for Scoop"
-  MicrosoftDocs OfficeDocs-Exchange https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/OfficeDocs-Exchange PowerShell #012456 47 219 4 "Contains documentation for Exchange Server and Exchange Online"
-  MicrosoftDocs windows-driver-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/windows-driver-docs PowerShell #012456 239 390 3 "The official Windows Driver Kit documentation sources"
-  MicrosoftDocs appcenter-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/appcenter-docs PowerShell #012456 51 186 1 "content repo for Visual Studio App Center on docs.microsoft.com"
- trendingProjectsCount 24
- type programming
- interpreters pwsh
- aceMode powershell
- codemirrorMode powershell
- codemirrorMimeType application/x-powershell
- tmScope source.powershell
- aliases posh or pwsh
- repos 161144
+tiobe PowerShell
+
 githubBigQuery PowerShell
  repos 33120
  users 24804
 
-monaco powershell
-pygmentsHighlighter PowerShell
- filename shell.py
- fileExtensions ps1 psm1
 linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
  firstCommit 2016
  lastCommit 2018
@@ -118,59 +120,6 @@ linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
       Invoke-Test
   }
   
-languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
- writtenIn csharp
-
-projectEuler PowerShell
- memberCount
-  2019 134
-  2022 159
-helloWorldCollection PowerShell
- # Hello World in Microsoft Powershell
- 
- 'Hello World!'
- 
-leachim6 PowerShell
- filepath p/PowerShell.ps1
- fileExtensions ps1
- example
-  'Hello World'
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:PowerShell
-
-rijuRepl https://riju.codes/powershell
- example
-  Write-Host "Hello, world!"
-  
-tryItOnline powershell
-
-indeedJobs powershell developer
- 2022 19576
-stackOverflowSurvey
- 2021
-  users 8871
-  medianSalary 68824
-  fans 4896
-  percentageUsing 0.11
-
-subreddit https://reddit.com/r/PowerShell
- memberCount
-  2022 201622
-
-tiobe PowerShell
-
-packageRepository https://www.powershellgallery.com/
-
-twitter https://twitter.com/powershell_team
-jupyterKernel https://github.com/vors/jupyter-powershell
-fileType text
-isOpenSource true
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Windows PowerShell for Developers|2012|Douglas Finke|19180557|3.70|64|7
- Powershell: Comprehensive Beginner's Guide to Learn Powershell Programming||Daniel Jones|57036557|1.00|2|0
- Windows PowerShell 2 for Dummies|2009|Steve Seguis|7014705|3.94|18|1
 
 isbndb 104
  year|publisher|title|authors|isbn13
@@ -279,10 +228,60 @@ isbndb 104
  2011|Wiley & Sons, Incorporated, John|Automating Active Directory Administration With Windows Powershell 2. 0|Ken St. Cyr and Laura E. Hunter|9781118118542
  2018-11-03|Independently Published|Powershell: The Complete 3 Books In 1 For Beginners, Intermediate And 21 Sample Codings And Advance Crash Course Guide In Powershell Programming|Zach Webber|9781730803901
 
+githubLanguage PowerShell
+ fileExtensions ps1 psd1 psm1
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Azure azure-quickstart-templates https://github.com/Azure.png https://github.com/Azure/azure-quickstart-templates PowerShell #012456 5646 8219 173 "Azure Quickstart Templates"
+  fireeye commando-vm https://github.com/fireeye.png https://github.com/fireeye/commando-vm PowerShell #012456 2883 631 217 "Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based pentesting virtual machine distribution."
+  dotnet docs https://github.com/dotnet.png https://github.com/dotnet/docs PowerShell #012456 1949 3479 52 "This repository contains .NET Documentation."
+  MicrosoftDocs azure-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/azure-docs PowerShell #012456 3023 7981 127 "Open source documentation of Microsoft Azure"
+  microsoft azure-pipelines-image-generation https://github.com/microsoft.png https://github.com/microsoft/azure-pipelines-image-generation PowerShell #012456 527 288 39 "Azure Pipelines VM image generation for Microsoft-hosted CI/CD"
+  redcanaryco atomic-red-team https://github.com/redcanaryco.png https://github.com/redcanaryco/atomic-red-team PowerShell #012456 2427 764 106 "Small and highly portable detection tests based on MITRE's ATT&CK."
+  SharePoint sp-dev-docs https://github.com/SharePoint.png https://github.com/SharePoint/sp-dev-docs PowerShell #012456 803 585 18 "SharePoint Developer Documentation"
+  PowerShellMafia PowerSploit https://github.com/PowerShellMafia.png https://github.com/PowerShellMafia/PowerSploit PowerShell #012456 5774 2124 180 "PowerSploit - A PowerShell Post-Exploitation Framework"
+  aspnet Blazor https://github.com/aspnet.png https://github.com/aspnet/Blazor PowerShell #012456 8382 669 125 "Blazor is a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly"
+  Disassembler0 Win10-Initial-Setup-Script https://github.com/Disassembler0.png https://github.com/Disassembler0/Win10-Initial-Setup-Script PowerShell #012456 2542 607 95 "PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019"
+  BloodHoundAD BloodHound https://github.com/BloodHoundAD.png https://github.com/BloodHoundAD/BloodHound PowerShell #012456 3358 622 114 "Six Degrees of Domain Admin"
+  Sycnex Windows10Debloater https://github.com/Sycnex.png https://github.com/Sycnex/Windows10Debloater PowerShell #012456 2759 362 222 "Script to remove Windows 10 bloatware."
+  fireeye flare-vm https://github.com/fireeye.png https://github.com/fireeye/flare-vm PowerShell #012456 1575 266 78
+  dotnet machinelearning-samples https://github.com/dotnet.png https://github.com/dotnet/machinelearning-samples PowerShell #012456 1966 908 106 "Samples for ML.NET, an open source and cross-platform machine learning framework for .NET."
+  dahlbyk posh-git https://github.com/dahlbyk.png https://github.com/dahlbyk/posh-git PowerShell #012456 3788 610 75 "A PowerShell environment for Git"
+  dfinke ImportExcel https://github.com/dfinke.png https://github.com/dfinke/ImportExcel PowerShell #012456 1083 206 42 "PowerShell module to import/export Excel spreadsheets, without Excel"
+  hak5 bashbunny-payloads https://github.com/hak5.png https://github.com/hak5/bashbunny-payloads PowerShell #012456 1176 844 30 "The Official Bash Bunny Payload Repository"
+  samratashok nishang https://github.com/samratashok.png https://github.com/samratashok/nishang PowerShell #012456 3127 1193 105 "Nishang - Offensive PowerShell for red team, penetration testing and offensive security."
+  MicrosoftDocs dynamics-365-unified-operations-public https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public PowerShell #012456 91 253 12 "Documentation for Microsoft Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent"
+  lukesampson scoop-extras https://github.com/lukesampson.png https://github.com/lukesampson/scoop-extras PowerShell #012456 580 405 19 """Extras"" bucket for Scoop"
+  MicrosoftDocs OfficeDocs-Exchange https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/OfficeDocs-Exchange PowerShell #012456 47 219 4 "Contains documentation for Exchange Server and Exchange Online"
+  MicrosoftDocs windows-driver-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/windows-driver-docs PowerShell #012456 239 390 3 "The official Windows Driver Kit documentation sources"
+  MicrosoftDocs appcenter-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/appcenter-docs PowerShell #012456 51 186 1 "content repo for Visual Studio App Center on docs.microsoft.com"
+ trendingProjectsCount 24
+ type programming
+ interpreters pwsh
+ aceMode powershell
+ codemirrorMode powershell
+ codemirrorMimeType application/x-powershell
+ tmScope source.powershell
+ aliases posh or pwsh
+ repos 161144
+
+indeedJobs powershell developer
+ 2022 19576
+stackOverflowSurvey
+ 2021
+  users 8871
+  medianSalary 68824
+  fans 4896
+  percentageUsing 0.11
+
 semanticScholar 3
  year|title|doi|citations|influentialCitations|authors|paperId
  2018|Detecting Malicious PowerShell Commands using Deep Neural Networks|10.1145/3196494.3196511|54|8|Danny Hendler and Shay Kels and Amir Rubin|2ce5684b7b0a14e3ea3c1f281c8f1f9e1db56b7f
  2018|AST-Based Deep Learning for Detecting Malicious PowerShell|10.1145/3243734.3278496|21|0|Gili Rusak and Abdullah Al-Dujaili and Una-May O’Reilly|77369f12dd131a755129b1b5b923b1d479eff5db
  2013|Working with PowerShell|10.1007/978-1-4302-4942-9_3|1|0|R. Garrett|e0390ca20fd2572a1f6e41898fdd39e030649bf6
 
-clocExtensions ps1 psd1 psm1
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Windows PowerShell for Developers|2012|Douglas Finke|19180557|3.70|64|7
+ Powershell: Comprehensive Beginner's Guide to Learn Powershell Programming||Daniel Jones|57036557|1.00|2|0
+ Windows PowerShell 2 for Dummies|2009|Steve Seguis|7014705|3.94|18|1

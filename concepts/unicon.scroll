@@ -1,14 +1,44 @@
 import ../code/conceptPage.scroll
+
 id unicon
 name Unicon
 appeared 2008
-tags pl
 creators Clint Jeffery
+tags pl
 website http://www.unicon.org/
-domainName unicon.org
- registered 2004
 
+isOpenSource true
 relatedConcepts icon
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Unicon
+centralPackageRepositoryCount 0
+projectEuler Unicon
+ memberCount
+  2019 20
+  2022 20
+
+pygmentsHighlighter Unicon
+ filename unicon.py
+ fileExtensions icn
+example
+ procedure main()
+  w := open("test UNICON window", "g")
+  write(w, "Hello, World!")
+  read(w)
+  close(w)
+ end
+leachim6 Unicon
+ filepath u/Unicon.icn
+ fileExtensions icn
+ example
+  procedure main()
+      write("Hello World")
+  end
+  
+
+lineCommentToken #
+printToken write
+stringToken "
 
 hasLineComments true
  # A comment
@@ -24,18 +54,6 @@ hasFloats true
  # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
 hasIntegers true
  # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
-
-lineCommentToken #
-printToken write
-stringToken "
-
-example
- procedure main()
-  w := open("test UNICON window", "g")
-  write(w, "Hello, World!")
-  read(w)
-  close(w)
- end
 
 wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
  example
@@ -54,27 +72,8 @@ wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
  revisionCount 82
  appeared 2008
 
-pygmentsHighlighter Unicon
- filename unicon.py
- fileExtensions icn
-
-projectEuler Unicon
- memberCount
-  2019 20
-  2022 20
-leachim6 Unicon
- filepath u/Unicon.icn
- fileExtensions icn
- example
-  procedure main()
-      write("Hello World")
-  end
-  
-rosettaCode http://www.rosettacode.org/wiki/Category:Unicon
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName unicon.org
+ registered 2004
 
 isbndb 1
  year|publisher|title|authors|isbn13

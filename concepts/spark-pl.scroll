@@ -1,12 +1,15 @@
 import ../code/conceptPage.scroll
+
 id spark-pl
 name Spark
 appeared 1988
 tags pl
-country France and United States
-originCommunity Altran Technologies, SA and Ada Core Technologies
 
 influencedBy ada
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:SPARK
+country France and United States
+originCommunity Altran Technologies, SA and Ada Core Technologies
 
 example
  procedure Increment (X : in out Counter_Type)
@@ -17,9 +20,5 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/SPARK_(programming_language)
 
-rosettaCode http://www.rosettacode.org/wiki/Category:SPARK
-
-tiobe SPARK
 hopl https://hopl.info/showlanguage.prx?exp=2518
-
-fileType text
+tiobe SPARK

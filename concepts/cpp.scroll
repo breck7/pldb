@@ -1,24 +1,100 @@
 import ../code/conceptPage.scroll
+
 id cpp
 name C++
 appeared 1985
-tags pl
 creators Bjarne Stroustrup
+tags pl
 website http://isocpp.org/
+conference https://cppcon.org/ CppCon
+conference https://cppcon.org CppCon
+
+spec https://isocpp.org/std/the-standard
+supersetOf c
+officialBlogUrl https://www.isocpp.org/blog
+gdbSupport true
+releaseNotesUrl https://en.cppreference.com/w/cpp/language/history
+visualParadigm false
+clocExtensions C c++ c++m cc ccm CPP cpp cppm cxx cxxm h++ inl ipp ixx pcc tcc tpp
+fileType text
 documentation https://devdocs.io/cpp/
 emailList https://lists.isocpp.org/mailman/listinfo.cgi
-spec https://isocpp.org/std/the-standard
+eventsPageUrl https://isocpp.org/blog/category/events
+annualReportsUrl https://isocpp.org/about/annual-reports
+antlr https://github.com/antlr/grammars-v4/tree/master/cpp
+monaco cpp
+quineRelay C++
+replit https://repl.it/languages/cpp
+centralPackageRepositoryCount 0
+ubuntuPackage g++
 country United States
 originCommunity Bell Labs
-domainName isocpp.org
- registered 2012
- awisRank
-  2022 210505
-releaseNotesUrl https://en.cppreference.com/w/cpp/language/history
+projectEuler C/C++
+ memberCount
+  2022 46028
+  2019 41087
 
-supersetOf c
+helloWorldCollection C++
+ // Hello World in C++ (pre-ISO)
+ 
+ #include <iostream.h>
+ 
+ main()
+ {
+     cout << "Hello World!" << endl;
+     return 0;
+ }
+ 
+pygmentsHighlighter C++
+ filename c_cpp.py
+ fileExtensions cpp hpp c++ h++ cc hh cxx hxx C H cp CPP tpp
+rijuRepl https://riju.codes/cpp
+ example
+  #include <iostream>
+  
+  int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+  }
+  
+ description General-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language
+ fileExtensions C cc cpp cxx c++ h hh hpp hxx h++
+ gitRepo https://github.com/llvm/llvm-project
+subreddit https://reddit.com/r/cpp
+ memberCount
+  2017 56189
+  2022 220359
+twitter https://twitter.com/isocpp
+leachim6 C++
+ filepath c/C++.cpp
+ fileExtensions cpp
+ example
+  #include <iostream>
+  
+  int main()
+  {
+     std::cout << "Hello World" << std::endl;
+  }
+  
+compilerExplorer C++
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+      return num * num;
+  }
+githubCopilotOptimized true
 
-visualParadigm false
+meetup https://www.meetup.com/topics/c
+ memberCount 69338
+ groupCount 204
+keywords #define #defined #elif #else #endif #error #if #ifdef #ifndef #include #line #pragma #undef alignas alignof and and_eq asm atomic_cancel atomic_commit atomic_noexcept auto bitand bitor bool break case catch char char16_t char32_t class compl concept const constexpr const_cast continue decltype default delete do double dynamic_cast else enum explicit export extern false final float for friend goto if inline int import long module mutable namespace new noexcept not not_eq nullptr operator or or_eq override private protected public register reinterpret_cast requires return short signed sizeof static static_assert static_cast struct switch synchronized template this thread_local throw transaction_safe transaction_safe_dynamic true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken std::cout
+assignmentToken =
+stringToken "
+booleanTokens true false
 
 hasPartialApplication true
  // http://www.cplusplus.com/reference/functional/bind/
@@ -152,14 +228,8 @@ hasClasses true
 hasExceptions true
 hasAccessModifiers true
 
-lineCommentToken //
-multiLineCommentTokens /* */
-printToken std::cout
-assignmentToken =
-stringToken "
-booleanTokens true false
-keywords #define #defined #elif #else #endif #error #if #ifdef #ifndef #include #line #pragma #undef alignas alignof and and_eq asm atomic_cancel atomic_commit atomic_noexcept auto bitand bitor bool break case catch char char16_t char32_t class compl concept const constexpr const_cast continue decltype default delete do double dynamic_cast else enum explicit export extern false final float for friend goto if inline int import long module mutable namespace new noexcept not not_eq nullptr operator or or_eq override private protected public register reinterpret_cast requires return short signed sizeof static static_assert static_cast struct switch synchronized template this thread_local throw transaction_safe transaction_safe_dynamic true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
-
+jupyterKernel https://github.com/root-mirror/cling
+jupyterKernel https://github.com/QuantStack/xeus-cling
 wikipedia https://en.wikipedia.org/wiki/C++
  example
   1 #include <iostream>
@@ -193,52 +263,20 @@ wikipedia https://en.wikipedia.org/wiki/C++
  revisionCount 1487
  appeared 1998
 
-githubLanguage C++
- fileExtensions cpp c++ cc cp cxx h h++ hh hpp hxx inc inl ino ipp ixx re tcc tpp
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  google mediapipe https://github.com/google.png https://github.com/google/mediapipe C++ #f34b7d 2824 386 2250 "MediaPipe is a cross-platform framework for building multimodal applied machine learning pipelines"
-  fmtlib fmt https://github.com/fmtlib.png https://github.com/fmtlib/fmt C++ #f34b7d 6596 796 273 "A modern formatting library"
-  TheCherno Hazel https://github.com/TheCherno.png https://github.com/TheCherno/Hazel C++ #f34b7d 1589 265 130 "Hazel Engine"
-  arendst Sonoff-Tasmota https://github.com/arendst.png https://github.com/arendst/Sonoff-Tasmota C++ #f34b7d 7683 1795 281 "Provide ESP8266 based itead Sonoff with Web, MQTT and OTA firmware using Arduino IDE or PlatformIO"
-  ocornut imgui https://github.com/ocornut.png https://github.com/ocornut/imgui C++ #f34b7d 16553 2604 474 "Dear ImGui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies"
-  anhkgg SuperWeChatPC https://github.com/anhkgg.png https://github.com/anhkgg/SuperWeChatPC C++ #f34b7d 2071 573 474 超级微信电脑客户端，支持多开、防消息撤销、语音消息备份...开放WeChatSDK
-  gnuradio gnuradio https://github.com/gnuradio.png https://github.com/gnuradio/gnuradio C++ #f34b7d 1798 1055 79 "GNU Radio"
-  plaidml plaidml https://github.com/plaidml.png https://github.com/plaidml/plaidml C++ #f34b7d 2457 214 120 "PlaidML is a framework for making deep learning work everywhere."
-  TonyChen56 WeChatRobot https://github.com/TonyChen56.png https://github.com/TonyChen56/WeChatRobot C++ #f34b7d 1468 559 938 PC版微信机器人
-  huihut interview https://github.com/huihut.png https://github.com/huihut/interview C++ #f34b7d 7108 2269 641 "📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。"
-  skypjack entt https://github.com/skypjack.png https://github.com/skypjack/entt C++ #f34b7d 2053 180 302 "Gaming meets modern C++ - a fast and reliable entity-component system (ECS) and much more"
-  OneLoneCoder videos https://github.com/OneLoneCoder.png https://github.com/OneLoneCoder/videos C++ #f34b7d 535 395 72 "The official distribution of olcConsoleGameEngine, a tool used in javidx9's YouTube videos and projects"
-  dolphin-emu dolphin https://github.com/dolphin-emu.png https://github.com/dolphin-emu/dolphin C++ #f34b7d 5521 1278 96 "Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements."
-  osquery osquery https://github.com/osquery.png https://github.com/osquery/osquery C++ #f34b7d 14868 1796 457 "SQL powered operating system instrumentation, monitoring, and analytics."
-  danielkrupinski Osiris https://github.com/danielkrupinski.png https://github.com/danielkrupinski/Osiris C++ #f34b7d 260 115 56 "Free open-source training software / cheat for Counter-Strike: Global Offensive, written in modern C++. GUI powered by imgui."
-  carla-simulator carla https://github.com/carla-simulator.png https://github.com/carla-simulator/carla C++ #f34b7d 3098 840 239 "Open-source simulator for autonomous driving research."
-  grpc grpc https://github.com/grpc.png https://github.com/grpc/grpc C++ #f34b7d 22945 5381 557 "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
-  FastLED FastLED https://github.com/FastLED.png https://github.com/FastLED/FastLED C++ #f34b7d 3180 828 63 "The main FastLED library (successor to FastSPI_LED). Please direct questions/requests for advice to the reddit community - http://fastled.io/r - we'd like to keep issues to just tracking bugs/enhancements/tasks. *NOTE* major library work is currently on hold"
-  TarsCloud Tars https://github.com/TarsCloud.png https://github.com/TarsCloud/Tars C++ #f34b7d 7510 1822 243 "Tars is a high-performance RPC framework based on name service and Tars protocol, also integrated administration platform, and implemented hosting-service via flexible schedule."
-  apache thrift https://github.com/apache.png https://github.com/apache/thrift C++ #f34b7d 6723 3037 131 "Apache Thrift"
-  NVIDIA DALI https://github.com/NVIDIA.png https://github.com/NVIDIA/DALI C++ #f34b7d 1829 208 245 "A library containing both highly optimized building blocks and an execution engine for data pre-processing in deep learning applications"
-  haoel leetcode https://github.com/haoel.png https://github.com/haoel/leetcode C++ #f34b7d 11615 3642 295 "LeetCode Problems' Solutions"
-  llvm llvm-project https://github.com/llvm.png https://github.com/llvm/llvm-project C++ #f34b7d 1832 557 213 "This is the canonical git mirror of the LLVM subversion repository. The repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org."
-  pytorch pytorch https://github.com/pytorch.png https://github.com/pytorch/pytorch C++ #f34b7d 31392 7706 966 "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
-  microsoft onnxruntime https://github.com/microsoft.png https://github.com/microsoft/onnxruntime C++ #f34b7d 1113 247 135 "ONNX Runtime: cross-platform, high performance scoring engine for ML models"
- trendingProjectsCount 26
- type programming
- aceMode c_cpp
- codemirrorMode clike
- codemirrorMimeType text/x-c++src
- tmScope source.c++
- aliases cpp
- repos 2161625
+hopl https://hopl.info/showlanguage.prx?exp=1202
+tiobe C++
+ currentRank 4
+pypl C++
+
+domainName isocpp.org
+ registered 2012
+ awisRank
+  2022 210505
+
 githubBigQuery C++
  repos 277733
  users 170927
 
-antlr https://github.com/antlr/grammars-v4/tree/master/cpp
-monaco cpp
-pygmentsHighlighter C++
- filename c_cpp.py
- fileExtensions cpp hpp c++ h++ cc hh cxx hxx C H cp CPP tpp
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  sampleCount 49
  example
@@ -249,92 +287,6 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   
   }
   
-
-projectEuler C/C++
- memberCount
-  2022 46028
-  2019 41087
-helloWorldCollection C++
- // Hello World in C++ (pre-ISO)
- 
- #include <iostream.h>
- 
- main()
- {
-     cout << "Hello World!" << endl;
-     return 0;
- }
- 
-leachim6 C++
- filepath c/C++.cpp
- fileExtensions cpp
- example
-  #include <iostream>
-  
-  int main()
-  {
-     std::cout << "Hello World" << std::endl;
-  }
-  
-quineRelay C++
-
-compilerExplorer C++
- example
-  // Type your code here, or load an example.
-  int square(int num) {
-      return num * num;
-  }
-rijuRepl https://riju.codes/cpp
- example
-  #include <iostream>
-  
-  int main() {
-    std::cout << "Hello, world!" << std::endl;
-    return 0;
-  }
-  
- description General-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language
- fileExtensions C cc cpp cxx c++ h hh hpp hxx h++
- gitRepo https://github.com/llvm/llvm-project
-replit https://repl.it/languages/cpp
-
-indeedJobs c++ engineer
- 2017 22237
-linkedInSkill c++
- 2018 3886123
-stackOverflowSurvey
- 2021
-  users 20057
-  medianSalary 54049
-  fans 15249
-  percentageUsing 0.24
-annualReportsUrl https://isocpp.org/about/annual-reports
-officialBlogUrl https://www.isocpp.org/blog
-eventsPageUrl https://isocpp.org/blog/category/events
-
-subreddit https://reddit.com/r/cpp
- memberCount
-  2017 56189
-  2022 220359
-meetup https://www.meetup.com/topics/c
- memberCount 69338
- groupCount 204
-conference https://cppcon.org/ CppCon
-conference https://cppcon.org CppCon
-
-tiobe C++
- currentRank 4
-hopl https://hopl.info/showlanguage.prx?exp=1202
-pypl C++
-
-twitter https://twitter.com/isocpp
-ubuntuPackage g++
-gdbSupport true
-jupyterKernel https://github.com/root-mirror/cling
-jupyterKernel https://github.com/QuantStack/xeus-cling
-fileType text
-githubCopilotOptimized true
-centralPackageRepositoryCount 0
 
 isbndb 128
  year|publisher|title|authors|isbn13
@@ -467,6 +419,55 @@ isbndb 128
  2000|Scott Jones|Starting Out With The C++ (2nd Brief Edition)|Tony Gaddis|9781576760406
  2019|BPB Publications|Data Structures Through C++: Experience Data Structures C++ through animations|Kanetkar, Yashavant|9789388511360
 
+githubLanguage C++
+ fileExtensions cpp c++ cc cp cxx h h++ hh hpp hxx inc inl ino ipp ixx re tcc tpp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  google mediapipe https://github.com/google.png https://github.com/google/mediapipe C++ #f34b7d 2824 386 2250 "MediaPipe is a cross-platform framework for building multimodal applied machine learning pipelines"
+  fmtlib fmt https://github.com/fmtlib.png https://github.com/fmtlib/fmt C++ #f34b7d 6596 796 273 "A modern formatting library"
+  TheCherno Hazel https://github.com/TheCherno.png https://github.com/TheCherno/Hazel C++ #f34b7d 1589 265 130 "Hazel Engine"
+  arendst Sonoff-Tasmota https://github.com/arendst.png https://github.com/arendst/Sonoff-Tasmota C++ #f34b7d 7683 1795 281 "Provide ESP8266 based itead Sonoff with Web, MQTT and OTA firmware using Arduino IDE or PlatformIO"
+  ocornut imgui https://github.com/ocornut.png https://github.com/ocornut/imgui C++ #f34b7d 16553 2604 474 "Dear ImGui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies"
+  anhkgg SuperWeChatPC https://github.com/anhkgg.png https://github.com/anhkgg/SuperWeChatPC C++ #f34b7d 2071 573 474 超级微信电脑客户端，支持多开、防消息撤销、语音消息备份...开放WeChatSDK
+  gnuradio gnuradio https://github.com/gnuradio.png https://github.com/gnuradio/gnuradio C++ #f34b7d 1798 1055 79 "GNU Radio"
+  plaidml plaidml https://github.com/plaidml.png https://github.com/plaidml/plaidml C++ #f34b7d 2457 214 120 "PlaidML is a framework for making deep learning work everywhere."
+  TonyChen56 WeChatRobot https://github.com/TonyChen56.png https://github.com/TonyChen56/WeChatRobot C++ #f34b7d 1468 559 938 PC版微信机器人
+  huihut interview https://github.com/huihut.png https://github.com/huihut/interview C++ #f34b7d 7108 2269 641 "📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。"
+  skypjack entt https://github.com/skypjack.png https://github.com/skypjack/entt C++ #f34b7d 2053 180 302 "Gaming meets modern C++ - a fast and reliable entity-component system (ECS) and much more"
+  OneLoneCoder videos https://github.com/OneLoneCoder.png https://github.com/OneLoneCoder/videos C++ #f34b7d 535 395 72 "The official distribution of olcConsoleGameEngine, a tool used in javidx9's YouTube videos and projects"
+  dolphin-emu dolphin https://github.com/dolphin-emu.png https://github.com/dolphin-emu/dolphin C++ #f34b7d 5521 1278 96 "Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements."
+  osquery osquery https://github.com/osquery.png https://github.com/osquery/osquery C++ #f34b7d 14868 1796 457 "SQL powered operating system instrumentation, monitoring, and analytics."
+  danielkrupinski Osiris https://github.com/danielkrupinski.png https://github.com/danielkrupinski/Osiris C++ #f34b7d 260 115 56 "Free open-source training software / cheat for Counter-Strike: Global Offensive, written in modern C++. GUI powered by imgui."
+  carla-simulator carla https://github.com/carla-simulator.png https://github.com/carla-simulator/carla C++ #f34b7d 3098 840 239 "Open-source simulator for autonomous driving research."
+  grpc grpc https://github.com/grpc.png https://github.com/grpc/grpc C++ #f34b7d 22945 5381 557 "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
+  FastLED FastLED https://github.com/FastLED.png https://github.com/FastLED/FastLED C++ #f34b7d 3180 828 63 "The main FastLED library (successor to FastSPI_LED). Please direct questions/requests for advice to the reddit community - http://fastled.io/r - we'd like to keep issues to just tracking bugs/enhancements/tasks. *NOTE* major library work is currently on hold"
+  TarsCloud Tars https://github.com/TarsCloud.png https://github.com/TarsCloud/Tars C++ #f34b7d 7510 1822 243 "Tars is a high-performance RPC framework based on name service and Tars protocol, also integrated administration platform, and implemented hosting-service via flexible schedule."
+  apache thrift https://github.com/apache.png https://github.com/apache/thrift C++ #f34b7d 6723 3037 131 "Apache Thrift"
+  NVIDIA DALI https://github.com/NVIDIA.png https://github.com/NVIDIA/DALI C++ #f34b7d 1829 208 245 "A library containing both highly optimized building blocks and an execution engine for data pre-processing in deep learning applications"
+  haoel leetcode https://github.com/haoel.png https://github.com/haoel/leetcode C++ #f34b7d 11615 3642 295 "LeetCode Problems' Solutions"
+  llvm llvm-project https://github.com/llvm.png https://github.com/llvm/llvm-project C++ #f34b7d 1832 557 213 "This is the canonical git mirror of the LLVM subversion repository. The repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org."
+  pytorch pytorch https://github.com/pytorch.png https://github.com/pytorch/pytorch C++ #f34b7d 31392 7706 966 "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+  microsoft onnxruntime https://github.com/microsoft.png https://github.com/microsoft/onnxruntime C++ #f34b7d 1113 247 135 "ONNX Runtime: cross-platform, high performance scoring engine for ML models"
+ trendingProjectsCount 26
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.c++
+ aliases cpp
+ repos 2161625
+
+indeedJobs c++ engineer
+ 2017 22237
+linkedInSkill c++
+ 2018 3886123
+stackOverflowSurvey
+ 2021
+  users 20057
+  medianSalary 54049
+  fans 15249
+  percentageUsing 0.24
+
 semanticScholar 6
  year|title|doi|citations|influentialCitations|authors|paperId
  1986|C++ Programming Language|10.1002/9781118361054.ch3|7014|230|B. Stroustrup|c04e29b09f67158e7c4405ddad18108a1ddecbd4
@@ -475,5 +476,3 @@ semanticScholar 6
  2000|Introduction to the GiNaC Framework for Symbolic Computation within the C++ Programming Language|10.1006/jsco.2001.0494|389|39|Christian Bauer and A. Frink and R. Kreckel|5b2f780c3ce63f1795bbfa6e3e7e22d8ae5e268b
  2004|Supporting Students in C++ Programming Courses with Automatic Program Style Assessment|10.28945/300|84|6|Kirsti Ala-Mutka and Toni Uimonen and Hannu-Matti Järvinen|7880378ba289053eadf19cb03ce2f543616a2b53
  1999|An Overview of the C++ Programming Language|10.1201/9781420049114.sec3|24|3|B. Stroustrup|eb331db6ec60d64b9e0d90978ee7398d9e2f0605
-
-clocExtensions C c++ c++m cc ccm CPP cpp cppm cxx cxxm h++ inl ipp ixx pcc tcc tpp

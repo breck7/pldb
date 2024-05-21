@@ -1,22 +1,17 @@
 import ../code/conceptPage.scroll
+
 id pdf
 name PDF
 appeared 1993
 tags binaryDataFormat
-reference https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf
 standsFor Portable Document Format
+
+fileType binary
+wordRank 1078
+centralPackageRepositoryCount 0
 country United States
 originCommunity Adobe Inc
-
-wikipedia https://en.wikipedia.org/wiki/Portable_Document_Format
- related postscript html javascript ascii gzip csv xml linux ghostscript latex
- summary The Portable Document Format (PDF) is a file format used to present documents in a manner independent of application software, hardware, and operating systems. Each PDF file encapsulates a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.
- pageId 24077
- dailyPageViews 2092
- created 2018
- backlinksCount 13085
- revisionCount 3
- appeared 1993
+reference https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf
 
 helloWorldCollection Portable Document Format
  %Hello World in Portable Document Format (PDF)
@@ -76,6 +71,12 @@ helloWorldCollection Portable Document Format
  >>
  
 
-fileType binary
-wordRank 1078
-centralPackageRepositoryCount 0
+wikipedia https://en.wikipedia.org/wiki/Portable_Document_Format
+ related postscript html javascript ascii gzip csv xml linux ghostscript latex
+ summary The Portable Document Format (PDF) is a file format used to present documents in a manner independent of application software, hardware, and operating systems. Each PDF file encapsulates a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.
+ pageId 24077
+ dailyPageViews 2092
+ created 2018
+ backlinksCount 13085
+ revisionCount 3
+ appeared 1993

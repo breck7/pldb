@@ -1,18 +1,31 @@
 import ../code/conceptPage.scroll
+
 id nu
 name Nu
 appeared 2007
-tags pl
 creators Tim Burks
+tags pl
+
+isOpenSource true
+fileType text
+wordRank 7528
+centralPackageRepositoryCount 0
 country United States and Germany
 originCommunity https://github.com/programming-nu
+
+leachim6 Nu
+ filepath n/Nu.nu
+ fileExtensions nu
+ example
+  (puts "Hello World")
+  
+
+printToken puts
+stringToken "
 
 hasPrintDebugging true
 hasStrings true
  "Hello world"
-
-printToken puts
-stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Nu_(programming_language)
  example
@@ -32,18 +45,6 @@ wikipedia https://en.wikipedia.org/wiki/Nu_(programming_language)
  dailyPageViews 14
  appeared 2007
 
-githubLanguage Nu
- fileExtensions nu
- trendingProjectsCount 0
- type programming
- filenames Nukefile
- interpreters nush
- aceMode scheme
- codemirrorMode scheme
- codemirrorMimeType text/x-scheme
- tmScope source.nu
- aliases nush
- repos 215
 githubBigQuery Nu
  repos 375
  users 331
@@ -59,16 +60,17 @@ linguistGrammarRepo https://github.com/jsallis/nu.tmbundle
   (puts "Hello")
   
 
-leachim6 Nu
- filepath n/Nu.nu
- fileExtensions nu
- example
-  (puts "Hello World")
-  
-
-fileType text
-wordRank 7528
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage Nu
+ fileExtensions nu
+ trendingProjectsCount 0
+ type programming
+ filenames Nukefile
+ interpreters nush
+ aceMode scheme
+ codemirrorMode scheme
+ codemirrorMimeType text/x-scheme
+ tmScope source.nu
+ aliases nush
+ repos 215

@@ -1,8 +1,13 @@
 import ../code/conceptPage.scroll
+
 id euler
 name Euler
 appeared 1965
 tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Euler
+centralPackageRepositoryCount 0
 country United States and Switzerland
 originCommunity Stanford University && ETH Zurich
 
@@ -16,9 +21,4 @@ wikipedia https://en.wikipedia.org/wiki/Euler_(programming_language)
  dailyPageViews 21
  appeared 1965
 
-rosettaCode http://www.rosettacode.org/wiki/Category:Euler
-
 hopl https://hopl.info/showlanguage.prx?exp=256
-
-fileType text
-centralPackageRepositoryCount 0

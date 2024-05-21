@@ -1,18 +1,27 @@
 import ../code/conceptPage.scroll
+
 id pointless
 name pointless
 appeared 2020
-tags pl
 creators Avery N. Nortonsmith
+tags pl
 website https://ptls.dev/
-reference https://news.ycombinator.com/item?id=22838255
+
+writtenIn dart markdown make yaml
+tryItOnline https://ptls.dev/online
+repoStats
+ firstCommit 2020
+ commits 108
+ committers 6
+ files 81
+ newestCommit 2020
 country United States
 originCommunity https://github.com/pointless-lang
-domainName ptls.dev
+reference https://news.ycombinator.com/item?id=22838255
 
-hasLineComments true
-hasComments true
-
+pygmentsHighlighter Pointless
+ filename pointless.py
+ fileExtensions ptls
 example
  import "chart.ptls" as chart
   
@@ -35,17 +44,7 @@ githubRepo https://github.com/pointless-lang/pointless
  description Pointless: a scripting language for learning and fun
  issues 6
 
-repoStats
- firstCommit 2020
- commits 108
- committers 6
- files 81
- newestCommit 2020
+hasLineComments true
+hasComments true
 
-pygmentsHighlighter Pointless
- filename pointless.py
- fileExtensions ptls
-
-tryItOnline https://ptls.dev/online
-
-writtenIn dart markdown make yaml
+domainName ptls.dev

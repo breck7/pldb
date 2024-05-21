@@ -1,9 +1,14 @@
 import ../code/conceptPage.scroll
+
 id gfs
 name Google File System
 appeared 2003
 tags filesystem
 standsFor Google File System
+
+isOpenSource false
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Google
 
@@ -15,7 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Google_File_System
  revisionCount 291
  dailyPageViews 266
  appeared 2010
-
-fileType text
-isOpenSource false
-centralPackageRepositoryCount 0

@@ -1,20 +1,55 @@
 import ../code/conceptPage.scroll
+
 id tcl
 name Tcl
 appeared 1988
-tags pl
 creators John Ousterhout
+tags pl
 website http://www.tcl.tk
+standsFor Tool Command Language
+
+isOpenSource true
+tryItOnline tcl
+officialBlogUrl https://www.tcl.tk/software/tcltk/whatsnew.tml
+fileExtensions tcl tbc
+releaseNotesUrl http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+visualParadigm false
+fileType text
 documentation https://www.tcl.tk/doc/
 documentation https://devdocs.io/tcl_tk/
-standsFor Tool Command Language
-fileExtensions tcl tbc
-domainName tcl.tk
- awisRank
-  2022 223557
-releaseNotesUrl http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+monaco tcl
+codeMirror tcl
+rosettaCode http://www.rosettacode.org/wiki/Category:Tcl
+quineRelay Tcl
+centralPackageRepositoryCount 0
+ubuntuPackage tcl
+projectEuler Tcl
+ memberCount
+  2019 75
+  2022 71
 
-visualParadigm false
+helloWorldCollection Tool Command Language
+ #!/usr/local/bin/tclsh
+ # Hello World in Tcl
+ 
+ puts "Hello World!"
+ 
+pygmentsHighlighter Tcl
+ filename tcl.py
+ fileExtensions tcl rvt
+rijuRepl https://riju.codes/tcl
+ example
+  puts {Hello, world!}
+  
+leachim6 Tcl
+ filepath t/Tcl.tcl
+ fileExtensions tcl
+ example
+  puts "Hello World"
+
+lineCommentToken #
+printToken puts
+stringToken "
 
 hasComments true
 hasLineComments true
@@ -26,10 +61,7 @@ hasCaseInsensitiveIdentifiers false
 hasStrings true
  "Hello world"
 
-lineCommentToken #
-printToken puts
-stringToken "
-
+jupyterKernel https://github.com/rpep/tcl_kernel
 wikipedia https://en.wikipedia.org/wiki/Tcl
  example
   oo::class create fruit {
@@ -73,26 +105,16 @@ wikipedia https://en.wikipedia.org/wiki/Tcl
  appeared 1988
  fileExtensions tcl tbc
 
-githubLanguage Tcl
- fileExtensions tcl adp tclin tm
- trendingProjectsCount 0
- type programming
- filenames owh starfield
- interpreters tclsh wish
- aceMode tcl
- codemirrorMode tcl
- codemirrorMimeType text/x-tcl
- tmScope source.tcl
- repos 13969
+tiobe Tcl
+
+domainName tcl.tk
+ awisRank
+  2022 223557
+
 githubBigQuery Tcl
  repos 8111
  users 7067
 
-monaco tcl
-codeMirror tcl
-pygmentsHighlighter Tcl
- filename tcl.py
- fileExtensions tcl rvt
 linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
  firstCommit 2005
  lastCommit 2013
@@ -178,53 +200,6 @@ linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
   proc XDG::CONFIG_DIRS {{subdir ""}} {Dirs CONFIG_DIRS $subdir}
   
 
-projectEuler Tcl
- memberCount
-  2019 75
-  2022 71
-helloWorldCollection Tool Command Language
- #!/usr/local/bin/tclsh
- # Hello World in Tcl
- 
- puts "Hello World!"
- 
-leachim6 Tcl
- filepath t/Tcl.tcl
- fileExtensions tcl
- example
-  puts "Hello World"
-rosettaCode http://www.rosettacode.org/wiki/Category:Tcl
-quineRelay Tcl
-
-rijuRepl https://riju.codes/tcl
- example
-  puts {Hello, world!}
-  
-tryItOnline tcl
-
-officialBlogUrl https://www.tcl.tk/software/tcltk/whatsnew.tml
-
-tiobe Tcl
-
-ubuntuPackage tcl
-jupyterKernel https://github.com/rpep/tcl_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Practical Programming in TCL & TK|1961|Brent B. Welch|1665118|3.87|55|2
- Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|1997|Mark Harrison|800119|3.50|4|0
- Tcl/TK Pocket Reference: Programming Tools|1998|Paul Raines|1370427|3.22|9|0
- TCL/TK Programmer's Reference|1999|Chris Nelson|3658168|5.00|1|1
- Tcl/Tk 8.5 Programming Cookbook|2011|Bert Wheeler|15375794|3.00|1|0
- Tcl/TK Programming for the Absolute Beginner|2007|Kurt Wall|2138390|4.00|1|1
- TCL 8.5 Network Programming|2010|Wojciech Kocjan|14701556|3.67|3|1
- Tcl/TK: A Developer's Guide|2003|Clif Flynt|19278649|0.0|0|0
- TCL/TK for Dummies?|1997|Tim Webster|2387039|3.50|2|0
- CGI Programming with TCL [With CDROM]|1999|David Maggiano|5169621|0.0|0|0
-
 isbndb 16
  year|publisher|title|authors|isbn13
  1997|Addison-Wesley Professional|Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|Harrison, Mark and McLennan, Michael|9780201634747
@@ -244,7 +219,32 @@ isbndb 16
  20100701|Packt Publishing|Tcl 8.5 Network Programming|Wojciech Kocjan; Piotr Beltowski|9781849510974
  1994|Addison-wesley|Tcl And The Tk Toolkit|Ousterhout, John K.|9780201633375
 
+githubLanguage Tcl
+ fileExtensions tcl adp tclin tm
+ trendingProjectsCount 0
+ type programming
+ filenames owh starfield
+ interpreters tclsh wish
+ aceMode tcl
+ codemirrorMode tcl
+ codemirrorMimeType text/x-tcl
+ tmScope source.tcl
+ repos 13969
+
 semanticScholar 2
  year|title|doi|citations|influentialCitations|authors|paperId
  1994|VIPERS: a data flow visual programming environment based on the Tcl language|10.1145/192309.192361|21|3|Massimo Bernini and M. Mosconi|9aa8df179b2f6b3c252657a8813850e22d2fe7e9
  2014|Petascale Tcl with NAMD, VMD, and Swift/T|10.1109/HPTCDL.2014.7|18|0|James C. Phillips and J. Stone and Kirby L. Vandivort and Timothy G. Armstrong and J. Wozniak and M. Wilde and K. Schulten|dbc9036c86dbe20795e6eccc8393d02dd7251692
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Practical Programming in TCL & TK|1961|Brent B. Welch|1665118|3.87|55|2
+ Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|1997|Mark Harrison|800119|3.50|4|0
+ Tcl/TK Pocket Reference: Programming Tools|1998|Paul Raines|1370427|3.22|9|0
+ TCL/TK Programmer's Reference|1999|Chris Nelson|3658168|5.00|1|1
+ Tcl/Tk 8.5 Programming Cookbook|2011|Bert Wheeler|15375794|3.00|1|0
+ Tcl/TK Programming for the Absolute Beginner|2007|Kurt Wall|2138390|4.00|1|1
+ TCL 8.5 Network Programming|2010|Wojciech Kocjan|14701556|3.67|3|1
+ Tcl/TK: A Developer's Guide|2003|Clif Flynt|19278649|0.0|0|0
+ TCL/TK for Dummies?|1997|Tim Webster|2387039|3.50|2|0
+ CGI Programming with TCL [With CDROM]|1999|David Maggiano|5169621|0.0|0|0

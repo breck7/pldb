@@ -1,13 +1,10 @@
 import ../code/conceptPage.scroll
+
 id world
 name world
 appeared 2011
 tags pl
 website http://www.world-lang.org
-domainName world-lang.org
- registered 2011
- awisRank
-  2022 9357613
 
 example
  timeval: struct [
@@ -28,3 +25,8 @@ example
      ]
      sint
  ]
+
+domainName world-lang.org
+ registered 2011
+ awisRank
+  2022 9357613

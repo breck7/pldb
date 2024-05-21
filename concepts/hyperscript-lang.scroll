@@ -1,19 +1,23 @@
 import ../code/conceptPage.scroll
+
 id hyperscript-lang
 name Hyperscript
 appeared 2020
 tags pl
-conceptDescription _hyperscript is a small, open scripting language inspired by hypertalk
 website https://hyperscript.org/
 aka _hyperscript
+conceptDescription _hyperscript is a small, open scripting language inspired by hypertalk
+
+writtenIn javascript markdown html typescript json css python svg
+relatedConcepts hypertalk
+repoStats
+ firstCommit 2020
+ commits 1725
+ committers 72
+ files 3257
+ newestCommit 2024
 country United States
 originCommunity https://github.com/bigskysoftware
-domainName hyperscript.org
- registered 2020
- awisRank
-  2022 2466144
-
-relatedConcepts hypertalk
 
 example
  <script src="https://unpkg.com/hyperscript.org@0.9.5"></script>
@@ -43,11 +47,7 @@ githubRepo https://github.com/bigskysoftware/_hyperscript
  description a small scripting language for the web
  issues 57
 
-repoStats
- firstCommit 2020
- commits 1725
- committers 72
- files 3257
- newestCommit 2024
-
-writtenIn javascript markdown html typescript json css python svg
+domainName hyperscript.org
+ registered 2020
+ awisRank
+  2022 2466144

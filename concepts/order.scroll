@@ -1,13 +1,15 @@
 import ../code/conceptPage.scroll
+
 id order
 name order
 appeared 2003
-tags pl
 creators Vesa Karvonen
+tags pl
 conceptDescription Metalanguage for C Preprocessor Metaprogramming
-reference https://github.com/polytypic/order-pp
+
 country United Kingdom
 originCommunity https://www.devever.net/~hl
+reference https://github.com/polytypic/order-pp
 
 example
  #define ORDER_PP_DEF_8fib                       \

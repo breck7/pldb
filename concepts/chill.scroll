@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id chill
 name CHILL
 appeared 1980
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country Switzerland
 originCommunity ITU Telecommunication Standardization Sector
 
@@ -16,11 +20,8 @@ wikipedia https://en.wikipedia.org/wiki/CHILL
  revisionCount 62
  appeared 1980
 
-tiobe CHILL
 hopl https://hopl.info/showlanguage.prx?exp=889
-
-fileType text
-centralPackageRepositoryCount 0
+tiobe CHILL
 
 isbndb 1
  year|publisher|title|authors|isbn13

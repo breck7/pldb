@@ -1,17 +1,14 @@
 import ../code/conceptPage.scroll
+
 id mckeeman-form
 name mckeeman-form
 appeared 2020
-tags grammarLanguage
 creators Bill McKeeman
-reference https://www.youtube.com/watch?v=RGizBNflVKw
+tags grammarLanguage
+
 country United States
 originCommunity Dartmouth College
-
-hasSemanticIndentation true
-hasBooleans true
-
-booleanTokens true false
+reference https://www.youtube.com/watch?v=RGizBNflVKw
 
 example
  json
@@ -115,3 +112,8 @@ example
   '000A' ws
   '000D' ws
   '0009' ws
+
+booleanTokens true false
+
+hasSemanticIndentation true
+hasBooleans true

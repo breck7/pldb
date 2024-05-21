@@ -1,11 +1,27 @@
 import ../code/conceptPage.scroll
+
 id malbolge
 name Malbolge
 appeared 1998
-tags esolang
 creators Ben Olmstead
+tags esolang
+
+tryItOnline malbolge
+esolang https://esolangs.org/wiki/Malbolge
+rosettaCode http://www.rosettacode.org/wiki/Category:Malbolge
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://web.archive.org/web/20040404144205/http://www.mines.edu/students/b/bolmstea/randlang/index.html
+
+rijuRepl https://riju.codes/malbolge
+ example
+   (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
+  
+leachim6 Malbolge
+ filepath m/Malbolge.mb
+ fileExtensions mb
+ example
+  (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?,vNz]KZ%oG4UUS0/@-eMc(:'8
 
 wikipedia https://en.wikipedia.org/wiki/Malbolge
  example
@@ -21,22 +37,5 @@ wikipedia https://en.wikipedia.org/wiki/Malbolge
  revisionCount 420
  dailyPageViews 401
  appeared 1998
-
-leachim6 Malbolge
- filepath m/Malbolge.mb
- fileExtensions mb
- example
-  (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?,vNz]KZ%oG4UUS0/@-eMc(:'8
-rosettaCode http://www.rosettacode.org/wiki/Category:Malbolge
-
-rijuRepl https://riju.codes/malbolge
- example
-   (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
-  
-tryItOnline malbolge
-
-esolang https://esolangs.org/wiki/Malbolge
-
-centralPackageRepositoryCount 0
 
 isbndb 0

@@ -1,18 +1,21 @@
 import ../code/conceptPage.scroll
+
 id operational-control-language
 name Operational Control Language
 appeared 1986
 tags pl
+
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
+
+lineCommentToken //
 
 hasLineComments true
  // A comment
 hasComments true
  // A comment
 hasSemanticIndentation false
-
-lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
  example
@@ -70,5 +73,3 @@ wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
  appeared 2006
 
 hopl https://hopl.info/showlanguage.prx?exp=2301
-
-centralPackageRepositoryCount 0

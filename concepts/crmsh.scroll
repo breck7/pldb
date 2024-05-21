@@ -1,14 +1,26 @@
 import ../code/conceptPage.scroll
+
 id crmsh
 name crmsh
 appeared 2008
-tags pl
 creators Dejan Muhamedagic
-conceptDescription crmsh is a cluster management shell for the Pacemaker High Availability stack.
+tags pl
 website http://crmsh.github.io/
+conceptDescription crmsh is a cluster management shell for the Pacemaker High Availability stack.
+
+writtenIn python yaml asciidoc gherkin xml expect bourne-shell markdown css bash make awk vim-script ini svg m4 dockerfile json
+repoStats
+ firstCommit 2008
+ commits 6561
+ committers 89
+ files 462
+ newestCommit 2024
 country Various
 originCommunity https://github.com/ClusterLabs/
-domainName crmsh.github.io
+
+pygmentsHighlighter Crmsh
+ filename dsls.py
+ fileExtensions crmsh pcmk
 
 githubRepo https://github.com/ClusterLabs/crmsh
  firstCommit 2008
@@ -20,15 +32,4 @@ githubRepo https://github.com/ClusterLabs/crmsh
  description Command-line interface for High-Availability cluster management on GNU/Linux systems.
  issues 95
 
-repoStats
- firstCommit 2008
- commits 6561
- committers 89
- files 462
- newestCommit 2024
-
-pygmentsHighlighter Crmsh
- filename dsls.py
- fileExtensions crmsh pcmk
-
-writtenIn python yaml asciidoc gherkin xml expect bourne-shell markdown css bash make awk vim-script ini svg m4 dockerfile json
+domainName crmsh.github.io

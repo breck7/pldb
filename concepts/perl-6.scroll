@@ -1,16 +1,22 @@
 import ../code/conceptPage.scroll
+
 id perl-6
 name Perl 6
 appeared 2015
-tags pl
 creators Larry Wall
+tags pl
 website https://perl6.org/
 aka Raku perl6
+
+isOpenSource true
+tryItOnline perl6
+visualParadigm false
+fileType text
+centralPackageRepositoryCount 0
 country Various
 originCommunity https://raku.org/community
-domainName perl6.org
 
-visualParadigm false
+lineCommentToken #
 
 hasMultipleInheritance true
 hasOperatorOverloading true
@@ -19,8 +25,6 @@ hasLineComments true
 hasComments true
  # A comment
 hasSemanticIndentation false
-
-lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Perl_6
  example
@@ -39,10 +43,8 @@ wikipedia https://en.wikipedia.org/wiki/Perl_6
  dailyPageViews 148
  appeared 2018
 
-githubLanguage Perl 6
- fileExtensions 6pl 6pm nqp p6 p6l p6m pl pl6 pm pm6 t
- trendingProjectsCount 0
- repos 966
+domainName perl6.org
+
 githubBigQuery Perl 6
  repos 2002
  users 1750
@@ -65,17 +67,16 @@ linguistGrammarRepo https://github.com/perl6/atom-language-perl6
   # vim: ft=perl6
   
 
-tryItOnline perl6
+isbndb 0
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+githubLanguage Perl 6
+ fileExtensions 6pl 6pm nqp p6 p6l p6m pl pl6 pm pm6 t
+ trendingProjectsCount 0
+ repos 966
+
+semanticScholar 0
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Think Perl 6: How to Think Like a Computer Scientist|2017|Laurent Rosenfeld|54910137|4.00|2|0
  Learning to program with Perl 6: First Steps: Getting into programming without leaving the command line.||J.J. Merelo|56847882|3.50|2|0
-
-isbndb 0
-
-semanticScholar 0

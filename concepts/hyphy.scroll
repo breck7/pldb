@@ -1,9 +1,21 @@
 import ../code/conceptPage.scroll
+
 id hyphy
 name HyPhy
 appeared 2008
 tags pl
 website http://hyphy.org/w/index.php/HyPhy_Batch_Language
+
+isOpenSource true
+writtenIn cpp brainfuck yaml c cmake markdown bourne-shell python xml opencl javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 3987
+ committers 54
+ files 913
+ newestCommit 2024
 country United States
 originCommunity University of California San Diego && North Carolina State University
 
@@ -20,12 +32,9 @@ githubRepo https://github.com/veg/hyphy
  description HyPhy: Hypothesis testing using Phylogenies
  issues 7
 
-repoStats
- firstCommit 2008
- commits 3987
- committers 54
- files 913
- newestCommit 2024
+githubBigQuery HyPhy
+ repos 73
+ users 69
 
 githubLanguage HyPhy
  fileExtensions bf
@@ -34,12 +43,3 @@ githubLanguage HyPhy
  aceMode text
  tmScope none
  repos 113
-githubBigQuery HyPhy
- repos 73
- users 69
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn cpp brainfuck yaml c cmake markdown bourne-shell python xml opencl javascript

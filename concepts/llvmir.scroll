@@ -1,22 +1,73 @@
 import ../code/conceptPage.scroll
+
 id llvmir
 name LLVM IR
 appeared 2003
 tags ir
 website http://llvm.org/docs/LangRef.html
-documentation https://llvm.org/docs/LangRef.html
 aka llvm
+
+isOpenSource true
+tryItOnline llvm
+officialBlogUrl https://blog.llvm.org/tags/llvm-ir/
+releaseNotesUrl https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
+clocExtensions ll
+fileType text
+documentation https://llvm.org/docs/LangRef.html
+eventsPageUrl https://discourse.llvm.org/t/llvm-community-events-calendar/63237
+faqPageUrl https://llvm.org/docs/FAQ.html
+downloadPageUrl https://releases.llvm.org/download.html
+quineRelay LLVM asm
+centralPackageRepositoryCount 0
+ubuntuPackage llvm
 country Various
 originCommunity https://github.com/llvm
-releaseNotesUrl https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
+
+pygmentsHighlighter LLVM
+ filename asm.py
+ fileExtensions ll
+rijuRepl https://riju.codes/llvm
+ example
+  @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"
+  
+  declare i32 @puts(i8* nocapture) nounwind
+  
+  define i32 @main() {
+      %cast210 = getelementptr [13 x i8],[13 x i8]* @.str, i64 0, i64 0
+      call i32 @puts(i8* %cast210)
+      ret i32 0
+  }
+  
+leachim6 LLVM
+ filepath l/LLVM.ll
+ fileExtensions ll
+ example
+  target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
+  @.str = internal constant [12 x i8] c"Hello World\00"
+  
+  ; puts from libc
+  declare i32 @puts(i8*)
+  
+  define i32 @main(...) {
+  	call i32 @puts(i8* getelementptr([12 x i8]* @.str, i32 0, i32 0))
+  	ret i32 0
+  }
+  
+compilerExplorer LLVM IR
+ example
+  define i32 @square(i32) local_unnamed_addr #0 {
+      %2 = mul nsw i32 %0, %0
+      ret i32 %2
+  }
+  
+
+lineCommentToken ;
 
 hasLineComments true
  ; A comment
 hasComments true
  ; A comment
 hasSemanticIndentation false
-
-lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/LLVM
  example
@@ -39,6 +90,12 @@ wikipedia https://en.wikipedia.org/wiki/LLVM
  revisionCount 692
  appeared 2000
 
+githubBigQuery LLVM
+ repos 1345
+ users 1263
+
+isbndb 0
+
 githubLanguage LLVM
  fileExtensions ll
  trendingProjects
@@ -49,66 +106,8 @@ githubLanguage LLVM
  aceMode text
  tmScope source.llvm
  repos 1351
-githubBigQuery LLVM
- repos 1345
- users 1263
-
-pygmentsHighlighter LLVM
- filename asm.py
- fileExtensions ll
-
-leachim6 LLVM
- filepath l/LLVM.ll
- fileExtensions ll
- example
-  target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
-  @.str = internal constant [12 x i8] c"Hello World\00"
-  
-  ; puts from libc
-  declare i32 @puts(i8*)
-  
-  define i32 @main(...) {
-  	call i32 @puts(i8* getelementptr([12 x i8]* @.str, i32 0, i32 0))
-  	ret i32 0
-  }
-  
-quineRelay LLVM asm
-
-compilerExplorer LLVM IR
- example
-  define i32 @square(i32) local_unnamed_addr #0 {
-      %2 = mul nsw i32 %0, %0
-      ret i32 %2
-  }
-  
-rijuRepl https://riju.codes/llvm
- example
-  @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"
-  
-  declare i32 @puts(i8* nocapture) nounwind
-  
-  define i32 @main() {
-      %cast210 = getelementptr [13 x i8],[13 x i8]* @.str, i64 0, i64 0
-      call i32 @puts(i8* %cast210)
-      ret i32 0
-  }
-  
-tryItOnline llvm
 
 linkedInSkill llvm
  2018 2326
-officialBlogUrl https://blog.llvm.org/tags/llvm-ir/
-eventsPageUrl https://discourse.llvm.org/t/llvm-community-events-calendar/63237
-faqPageUrl https://llvm.org/docs/FAQ.html
-downloadPageUrl https://releases.llvm.org/download.html
-
-ubuntuPackage llvm
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-isbndb 0
 
 semanticScholar 0
-
-clocExtensions ll

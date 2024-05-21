@@ -1,10 +1,23 @@
 import ../code/conceptPage.scroll
+
 id tinyc-compiler
 name Tiny C Compiler
 appeared 2001
 tags compiler
 website http://bellard.org/tcc/
 aka TCC TinyCC
+
+isOpenSource true
+writtenIn c assembly-language make bourne-shell perl yaml
+fileType na
+antlr https://github.com/antlr/grammars-v4/tree/master/tinyc
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2001
+ commits 3470
+ committers 199
+ files 506
+ newestCommit 2024
 
 githubRepo https://github.com/TinyCC/tinycc
  stars 1098
@@ -25,17 +38,3 @@ wikipedia https://en.wikipedia.org/wiki/Tiny_C_Compiler
  backlinksCount 89
  revisionCount 219
  appeared 2013
-
-antlr https://github.com/antlr/grammars-v4/tree/master/tinyc
-
-fileType na
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2001
- commits 3470
- committers 199
- files 506
- newestCommit 2024
-writtenIn c assembly-language make bourne-shell perl yaml

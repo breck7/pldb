@@ -1,10 +1,18 @@
 import ../code/conceptPage.scroll
+
 id broccoli
 name Broccoli
 appeared 2008
-tags pl
 creators Fogus
+tags pl
 website https://blog.fogus.me/2008/03/26/broccoli-abominable/
+
+repoStats
+ firstCommit 2018
+ commits 163
+ committers 8
+ files 31
+ newestCommit 2018
 country United States
 originCommunity https://github.com/broccoli-lang/
 
@@ -15,10 +23,3 @@ githubRepo https://github.com/broccoli-lang/broccoli/
  created 2018
  updated 2018
  description An interpreter for the broccoli 0.0.x language: http://blog.fogus.me/?s=broccoli
-
-repoStats
- firstCommit 2018
- commits 163
- committers 8
- files 31
- newestCommit 2018

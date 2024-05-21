@@ -1,11 +1,19 @@
 import ../code/conceptPage.scroll
+
 id netbeans-editor
 name netbeans-editor
 appeared 2013
-tags editor
-demoVideo https://www.youtube.com/user/NetBeansVideos
 creators pgebauer
+tags editor
 website https://netbeans.apache.org
+
+isOpenSource true
+demoVideo https://www.youtube.com/user/NetBeansVideos
+repoStats
+ firstCommit 2019
+ newestCommit 2024
+ commits 3088
+ committers 102
 country United States
 originCommunity The Apache Software Foundation
 
@@ -18,11 +26,3 @@ githubRepo https://github.com/apache/netbeans
  updated 2022
  description Apache NetBeans
  issues 530
-
-isOpenSource true
-
-repoStats
- firstCommit 2019
- newestCommit 2024
- commits 3088
- committers 102

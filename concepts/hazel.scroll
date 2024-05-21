@@ -1,22 +1,26 @@
 import ../code/conceptPage.scroll
+
 id hazel
 name hazel
 appeared 2016
-tags pl
 creators Cyrus Omar
-conceptDescription Hazel is a live functional programming environment rooted in the principles of type theory.
+tags pl
 website http://hazel.org/
+conceptDescription Hazel is a live functional programming environment rooted in the principles of type theory.
+
+isOpenSource true
+writtenIn reason markdown ocaml css tex yaml make html svg
+compilesTo javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 13251
+ committers 105
+ files 357
+ newestCommit 2024
 country United States
 originCommunity University of Michigan
-domainName hazel.org
- registered 1997
- awisRank
-  2022 3359524
-
-compilesTo javascript
-writtenIn reason markdown ocaml css tex yaml make html svg
-
-hasTypedHoles true
 
 example
  let v = {} in
@@ -32,15 +36,11 @@ githubRepo https://github.com/hazelgrove/hazel
  description Hazel, a live functional programming environment with typed holes
  issues 253
 
-repoStats
- firstCommit 2017
- commits 13251
- committers 105
- files 357
- newestCommit 2024
+hasTypedHoles true
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName hazel.org
+ registered 1997
+ awisRank
+  2022 3359524
 
 isbndb 0

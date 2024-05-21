@@ -1,10 +1,15 @@
 import ../code/conceptPage.scroll
+
 id handel-c
 name Handel-C
 appeared 1996
 tags pl
+
+centralPackageRepositoryCount 0
 country United Kingdom
 originCommunity Oxford University Computing Laboratory
+
+multiLineCommentTokens /* */
 
 hasMultiLineComments true
  /* A comment
@@ -13,8 +18,6 @@ hasComments true
  /* A comment
  */
 hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Handel-C
  example
@@ -41,7 +44,5 @@ wikipedia https://en.wikipedia.org/wiki/Handel-C
  revisionCount 64
  dailyPageViews 17
  appeared 1996
-
-centralPackageRepositoryCount 0
 
 semanticScholar 0

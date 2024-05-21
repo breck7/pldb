@@ -1,17 +1,20 @@
 import ../code/conceptPage.scroll
+
 id true-basic
 name True BASIC
 appeared 1983
-tags pl
 creators John George Kemeny and Thomas Eugene Kurtz
+tags pl
+
+centralPackageRepositoryCount 0
+
+lineCommentToken !
 
 hasLineComments true
  ! A comment
 hasComments true
  ! A comment
 hasSemanticIndentation false
-
-lineCommentToken !
 
 wikipedia https://en.wikipedia.org/wiki/True_BASIC
  example
@@ -56,5 +59,3 @@ wikipedia https://en.wikipedia.org/wiki/True_BASIC
  appeared 1983
 
 hopl https://hopl.info/showlanguage.prx?exp=2590
-
-centralPackageRepositoryCount 0

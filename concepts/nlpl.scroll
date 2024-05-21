@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id nlpl
 name nlpl
 appeared 2018
-tags pl
 creators Daniel Garcia
+tags pl
+
+writtenIn javascript css markdown html json
+repoStats
+ firstCommit 2018
+ commits 65
+ committers 3
+ files 11
+ newestCommit 2021
 country Mexico
 originCommunity https://github.com/nlpl-lang
 
@@ -19,12 +28,3 @@ githubRepo https://github.com/nlpl-lang/nlpl-editor
  updated 2021
  description A notebook like programming environment with code written in plain English
  issues 10
-
-repoStats
- firstCommit 2018
- commits 65
- committers 3
- files 11
- newestCommit 2021
-
-writtenIn javascript css markdown html json

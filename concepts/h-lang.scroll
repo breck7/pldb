@@ -1,15 +1,23 @@
 import ../code/conceptPage.scroll
+
 id h-lang
 name h
 appeared 2019
-tags esolang
 creators Christine Dodrill
+tags esolang
 website https://h.christine.website/
-reference https://xeiaso.net/blog/h-language-2019-06-30
-reference https://www.reddit.com/r/programming/comments/c7ch43/the_h_programming_language/
+
+writtenIn go dockerfile yaml markdown
+repoStats
+ firstCommit 2019
+ commits 6
+ committers 1
+ files 15
+ newestCommit 2020
 country Canada
 originCommunity https://github.com/Xe/hlang/issues
-domainName h.christine.website
+reference https://xeiaso.net/blog/h-language-2019-06-30
+reference https://www.reddit.com/r/programming/comments/c7ch43/the_h_programming_language/
 
 example
  h
@@ -24,11 +32,4 @@ githubRepo https://github.com/Xe/hlang
  description The h programming language
  issues 0
 
-repoStats
- firstCommit 2019
- commits 6
- committers 1
- files 15
- newestCommit 2020
-
-writtenIn go dockerfile yaml markdown
+domainName h.christine.website

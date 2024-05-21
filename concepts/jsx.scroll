@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
+
 id jsx
 name JSX
 appeared 2013
 tags template
 website http://reactjs.org
-reference https://en.wikipedia.org/wiki/React_(JavaScript_library)#JSX
+
+clocExtensions jsx
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Facebook
-domainName reactjs.org
- registered 2013
- awisRank
-  2022 2151
+reference https://en.wikipedia.org/wiki/React_(JavaScript_library)#JSX
 
 example
  class App extends React.Component {
@@ -24,10 +25,12 @@ example
      );
    }
  }
+twitter https://twitter.com/reactjs
 
-githubLanguage JSX
- fileExtensions jsx
- trendingProjectsCount 0
+domainName reactjs.org
+ registered 2013
+ awisRank
+  2022 2151
 
 linguistGrammarRepo https://github.com/github-linguist/babel-sublime
  firstCommit 2015
@@ -60,10 +63,8 @@ linguistGrammarRepo https://github.com/github-linguist/babel-sublime
     }
   });
 
-twitter https://twitter.com/reactjs
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage JSX
+ fileExtensions jsx
+ trendingProjectsCount 0
 
 semanticScholar 0
-
-clocExtensions jsx

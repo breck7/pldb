@@ -1,26 +1,19 @@
 import ../code/conceptPage.scroll
+
 id bison
 name Bison
 appeared 1985
-tags grammarLanguage
 creators Robert Corbett
+tags grammarLanguage
 website https://www.gnu.org/software/bison/
+
+isOpenSource true
+fileType text
 documentation https://www.gnu.org/software/bison/manual/bison.html
-reference https://github.com/babyraging/yash
+centralPackageRepositoryCount 0
 country United States
 originCommunity GNU Project
-
-hasLineComments true
- // A comment
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- // A comment
-hasSemanticIndentation false
-
-lineCommentToken //
-multiLineCommentTokens /* */
+reference https://github.com/babyraging/yash
 
 example
  /* Reverse Polish Notation calculator. */
@@ -36,6 +29,18 @@ example
  %token NUM
  
  %% /* Grammar rules and actions follow. */
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/GNU_bison
  example
@@ -65,14 +70,8 @@ wikipedia https://en.wikipedia.org/wiki/GNU_bison
  revisionCount 1
  appeared 1985
 
-githubLanguage Bison
- fileExtensions bison
- trendingProjectsCount 0
- type programming
- group Yacc
- aceMode text
- tmScope source.yacc
- repos 196
+hopl https://hopl.info/showlanguage.prx?exp=4653
+
 githubBigQuery Bison
  repos 3641
  users 2747
@@ -83,16 +82,19 @@ linguistGrammarRepo https://github.com/textmate/bison.tmbundle
  committerCount 2
  commitCount 2
 
-hopl https://hopl.info/showlanguage.prx?exp=4653
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 2
  year|publisher|title|authors|isbn13
  20090805|O'Reilly Media, Inc.|flex & bison|John Levine|9781449379278
  20090805|O'Reilly Media, Inc.|flex & bison|John Levine|9781449391973
+
+githubLanguage Bison
+ fileExtensions bison
+ trendingProjectsCount 0
+ type programming
+ group Yacc
+ aceMode text
+ tmScope source.yacc
+ repos 196
 
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId

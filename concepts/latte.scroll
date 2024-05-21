@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id latte
 name Latte
 appeared 2008
-tags template
 creators David Grudl
+tags template
 website https://latte.nette.org
+
+isOpenSource true
+writtenIn php html markdown yaml json xml ini
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 2324
+ committers 61
+ files 660
+ newestCommit 2024
 country Czech Republic
 originCommunity https://github.com/nette
-domainName latte.nette.org
 
 githubRepo https://github.com/nette/latte
  firstCommit 2008
@@ -19,22 +30,8 @@ githubRepo https://github.com/nette/latte
  description ☕ Latte: the safest & truly intuitive templates for PHP. Engine for those who want the most secure PHP sites.
  issues 14
 
-repoStats
- firstCommit 2008
- commits 2324
- committers 61
- files 660
- newestCommit 2024
+domainName latte.nette.org
 
-githubLanguage Latte
- fileExtensions latte
- trendingProjectsCount 0
- type markup
- aceMode smarty
- codemirrorMode smarty
- codemirrorMimeType text/x-smarty
- tmScope text.html.smarty
- repos 270
 githubBigQuery Latte
  repos 26
  users 24
@@ -106,14 +103,18 @@ linguistGrammarRepo https://github.com/textmate/php-smarty.tmbundle
   </body>
   </html>
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 3
  year|publisher|title|authors|isbn13
  1997|Coriolis Group,u.s.|Latte Programming Explorer: The Best Way To Master Java Programming With Latte|Jeff Duntemann and Don Taylor|9781576100059
  1997|Coriolis Group,u.s.|Latte Programming Frontrunner: Hands-on Guide To Mastering Java Development With Latte|Jeff Duntemann|9781576100042
  1997||Kickass Latte Programming: Cutting-edge Java Techniques With An Attituded|Tonny Espeset|9781576100677
 
-writtenIn php html markdown yaml json xml ini
+githubLanguage Latte
+ fileExtensions latte
+ trendingProjectsCount 0
+ type markup
+ aceMode smarty
+ codemirrorMode smarty
+ codemirrorMimeType text/x-smarty
+ tmScope text.html.smarty
+ repos 270

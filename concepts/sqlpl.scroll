@@ -1,8 +1,12 @@
 import ../code/conceptPage.scroll
+
 id sqlpl
 name SQLPL
 appeared 2009
 tags pl
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity IBM
 
@@ -16,18 +20,6 @@ wikipedia https://en.wikipedia.org/wiki/SQL_PL
  dailyPageViews 30
  appeared 2009
 
-githubLanguage SQLPL
- fileExtensions sql db2
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  microsoft sql-server-samples https://github.com/microsoft.png https://github.com/microsoft/sql-server-samples SQLPL #ccc 3773 3553 131 "Official Microsoft GitHub Repository containing code samples for SQL Server"
- trendingProjectsCount 2
- type programming
- aceMode sql
- codemirrorMode sql
- codemirrorMimeType text/x-sql
- tmScope source.sql
- repos 7609
 githubBigQuery SQLPL
  repos 5147
  users 4749
@@ -50,5 +42,15 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
   end!
   
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage SQLPL
+ fileExtensions sql db2
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  microsoft sql-server-samples https://github.com/microsoft.png https://github.com/microsoft/sql-server-samples SQLPL #ccc 3773 3553 131 "Official Microsoft GitHub Repository containing code samples for SQL Server"
+ trendingProjectsCount 2
+ type programming
+ aceMode sql
+ codemirrorMode sql
+ codemirrorMimeType text/x-sql
+ tmScope source.sql
+ repos 7609

@@ -1,36 +1,25 @@
 import ../code/conceptPage.scroll
+
 id dyvil
 name dyvil
 appeared 2014
 tags pl
-conceptDescription <a href='https://github.com/Dyvil/Dyvil'>Dyvil</a> is a multi-paradigm, general purpose programming language that is based on Java and the JVM. It is a compiled, statically and strongly typed language that supports object-oriented, functional and imperative programming styles. The language features many high-level constructs as well as an extensible and expressive syntax, making it highly useful for both rapid and safe prototyping, and the creation of domain-specific languages.
 website https://reddit.com/r/Dyvil
-country Germany
-originCommunity https://github.com/Dyvil
+conceptDescription <a href='https://github.com/Dyvil/Dyvil'>Dyvil</a> is a multi-paradigm, general purpose programming language that is based on Java and the JVM. It is a compiled, statically and strongly typed language that supports object-oriented, functional and imperative programming styles. The language features many high-level constructs as well as an extensible and expressive syntax, making it highly useful for both rapid and safe prototyping, and the creation of domain-specific languages.
 
-hasPrintDebugging true
-hasStrings true
- 'Hello world'
-
-printToken print
-stringToken '
-
-githubRepo https://github.com/Dyvil/Dyvil
- stars 55
- forks 2
- subscribers 5
- created 2014
- updated 2022
- firstCommit 2014
- description The Dyvil programming language
- issues 47
-
+isOpenSource true
+writtenIn java gradle markdown bourne-shell yaml
+tryItOnline dyvil
+fileType text
+centralPackageRepositoryCount 0
 repoStats
  firstCommit 2014
  commits 4651
  committers 6
  files 929
  newestCommit 2024
+country Germany
+originCommunity https://github.com/Dyvil
 
 leachim6 Dyvil
  filepath d/Dyvil.dyv
@@ -42,10 +31,19 @@ leachim6 Dyvil
   }
   
 
-tryItOnline dyvil
+githubRepo https://github.com/Dyvil/Dyvil
+ stars 55
+ forks 2
+ subscribers 5
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description The Dyvil programming language
+ issues 47
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+printToken print
+stringToken '
 
-writtenIn java gradle markdown bourne-shell yaml
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'

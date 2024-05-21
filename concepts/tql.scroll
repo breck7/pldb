@@ -1,24 +1,28 @@
 import ../code/conceptPage.scroll
+
 id tql
 name TQL
 appeared 2023
+creators Breck Yunits
 tags queryLanguage
-isPublicDomain true
+website https://truebase.pub/tql/
 isFinished true
  //
   *NOTICE:* Work on _the product_ TrueBase has stopped. The _ideas_ behind TrueBase continue on in Scroll Datasets. Existing TrueBase sites have all been migrated to Scroll Datasets. This repo is for historical reference.
    https://github.com/breck7/truebase
-creators Breck Yunits
-conceptDescription A language for querying TrueBases.
-website https://truebase.pub/tql/
 standsFor TrueBase Query Language
+conceptDescription A language for querying TrueBases.
 
-subsetOf treenotation
+isPublicDomain true
+isOpenSource true
 writtenIn grammar javascript
+subsetOf treenotation
 influencedBy sql
-
-hasSemanticIndentation true
-hasBuiltInRegex true
+repoStats
+ firstCommit 2023
+ commits 290
+ committers 2
+ files 58
 
 example
  where appeared > 2009
@@ -38,10 +42,5 @@ githubRepo https://github.com/breck7/truebase
  description TrueBase - information you can trust. A novel plain text database for collaborative narrative-free knowledge graphs.
  issues 15
 
-repoStats
- firstCommit 2023
- commits 290
- committers 2
- files 58
-
-isOpenSource true
+hasSemanticIndentation true
+hasBuiltInRegex true

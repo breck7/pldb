@@ -1,20 +1,22 @@
 import ../code/conceptPage.scroll
+
 id closure-templates
 name Closure Templates
 appeared 2009
 tags template
+
+isOpenSource true
+writtenIn java starlark markdown html javascript protobuf python xml typescript json bazel yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 5978
+ committers 90
+ files 1544
+ newestCommit 2024
 country United States
 originCommunity Google
-
-hasMultiLineComments true
- /* A comment
- */
-hasComments true
- /* A comment
- */
-hasSemanticIndentation false
-
-multiLineCommentTokens /* */
 
 example
  /**
@@ -34,23 +36,16 @@ githubRepo https://github.com/google/closure-templates
  description A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
  issues 118
 
-repoStats
- firstCommit 2009
- commits 5978
- committers 90
- files 1544
- newestCommit 2024
+multiLineCommentTokens /* */
 
-githubLanguage Closure Templates
- fileExtensions soy
- trendingProjectsCount 0
- type markup
- aceMode soy_template
- codemirrorMode soy
- codemirrorMimeType text/x-soy
- tmScope text.html.soy
- aliases soy
- repos 424389
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
 githubBigQuery Closure Templates
  repos 25
  users 18
@@ -87,12 +82,17 @@ linguistGrammarRepo https://github.com/mthadley/language-closure-templates
     </div>
   {/template}
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Closure Templates
+ fileExtensions soy
+ trendingProjectsCount 0
+ type markup
+ aceMode soy_template
+ codemirrorMode soy
+ codemirrorMimeType text/x-soy
+ tmScope text.html.soy
+ aliases soy
+ repos 424389
 
-writtenIn java starlark markdown html javascript protobuf python xml typescript json bazel yaml
+semanticScholar 0

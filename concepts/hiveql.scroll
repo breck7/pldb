@@ -1,20 +1,15 @@
 import ../code/conceptPage.scroll
+
 id hiveql
 name HiveQL
 appeared 2011
 tags queryLanguage
-conceptDescription SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
 website https://hive.apache.org
+conceptDescription SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
+
+fileType text
+centralPackageRepositoryCount 0
 reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
-domainName hive.apache.org
-
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasSemanticIndentation false
-
-lineCommentToken --
 
 example
  4 CREATE TABLE word_counts AS
@@ -23,12 +18,18 @@ example
  7 GROUP BY word
  8 ORDER BY word;
 
-githubLanguage HiveQL
- fileExtensions q hql
- type programming
- aceMode sql
- tmScope source.hql
- repos 502
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+jupyterKernel https://github.com/EDS-APHP/HiveQLKernel
+
+domainName hive.apache.org
+
 githubBigQuery HiveQL
  repos 143
  users 135
@@ -64,8 +65,11 @@ linguistGrammarRepo https://github.com/adidonato/language-hql
   select * from nzhang_t1;
   select * from nzhang_t2;
 
-jupyterKernel https://github.com/EDS-APHP/HiveQLKernel
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
+
+githubLanguage HiveQL
+ fileExtensions q hql
+ type programming
+ aceMode sql
+ tmScope source.hql
+ repos 502

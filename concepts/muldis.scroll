@@ -1,11 +1,20 @@
 import ../code/conceptPage.scroll
+
 id muldis
 name Muldis
 appeared 2007
-tags queryLanguage
 creators Darren Duncan
-conceptDescription Muldis Data Language is an industrial-strength computationally complete high-level application programming language with fully integrated database functionality; you can use it to define, query, and update ("object") relational databases, as well as write general purpose applications. The language's paradigm is a mixture of declarative, homoiconic, functional, imperative, and object-oriented. Muldis Data Language is currently under development.
+tags queryLanguage
 website https://muldis.com/Muldis_Data_Language.html
+conceptDescription Muldis Data Language is an industrial-strength computationally complete high-level application programming language with fully integrated database functionality; you can use it to define, query, and update ("object") relational databases, as well as write general purpose applications. The language's paradigm is a mixture of declarative, homoiconic, functional, imperative, and object-oriented. Muldis Data Language is currently under development.
+
+writtenIn markdown raku json
+repoStats
+ firstCommit 2007
+ commits 1944
+ committers 2
+ files 51
+ newestCommit 2024
 
 example
    if ?people
@@ -25,11 +34,3 @@ githubRepo https://github.com/muldis/Muldis_Data_Language
  updated 2023
  description Muldis Data Language (MDL) - Relational database application programming language
  issues 0
-
-repoStats
- firstCommit 2007
- commits 1944
- committers 2
- files 51
- newestCommit 2024
-writtenIn markdown raku json

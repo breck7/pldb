@@ -1,25 +1,31 @@
 import ../code/conceptPage.scroll
+
 id frege
 name Frege
 appeared 2011
 tags pl
 website https://github.com/Frege/frege
+
+isOpenSource true
+writtenIn forth java tex perl svg markdown make yacc bourne-shell html yaml
+fileType text
 documentation http://www.frege-lang.org/doc/fregedoc.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Frege
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 3352
+ committers 50
+ files 409
+ newestCommit 2022
 country Switzerland and Germany and United States
 originCommunity https://github.com/Frege
+projectEuler Frege
+ memberCount
+  2019 2
+  2022 3
 
-hasTypeInference true
-hasLineComments true
- -- A comment
-hasComments true
- -- A comment
-hasMultiLineComments true
- {- A comment
- -}
-hasSemanticIndentation false
-
-lineCommentToken --
-multiLineCommentTokens {- -}
+twitter https://twitter.com/fregelang
 
 githubRepo https://github.com/frege/frege
  firstCommit 2011
@@ -31,12 +37,18 @@ githubRepo https://github.com/frege/frege
  description Frege is a Haskell for the JVM. It brings purely functional programing to the Java platform.
  issues 45
 
-repoStats
- firstCommit 2011
- commits 3352
- committers 50
- files 409
- newestCommit 2022
+lineCommentToken --
+multiLineCommentTokens {- -}
+
+hasTypeInference true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
  example
@@ -72,13 +84,6 @@ wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
  appeared 2011
  fileExtensions fr
 
-githubLanguage Frege
- fileExtensions fr
- trendingProjectsCount 0
- type programming
- aceMode haskell
- tmScope source.haskell
- repos 223
 githubBigQuery Frege
  repos 160
  users 142
@@ -135,19 +140,14 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
           Thread.sleep 999
                   
 
-projectEuler Frege
- memberCount
-  2019 2
-  2022 3
-rosettaCode http://www.rosettacode.org/wiki/Category:Frege
-
-twitter https://twitter.com/fregelang
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Frege
+ fileExtensions fr
+ trendingProjectsCount 0
+ type programming
+ aceMode haskell
+ tmScope source.haskell
+ repos 223
 
-writtenIn forth java tex perl svg markdown make yacc bourne-shell html yaml
+semanticScholar 0

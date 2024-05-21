@@ -1,15 +1,16 @@
 import ../code/conceptPage.scroll
+
 id jiyu
 name jiyu
 appeared 2019
-tags pl
-isFinished true
 creators Josh Huelsman
+tags pl
 website https://jiyu.handmade.network/
-reference https://machinamentum.github.io/Jiyu-A-Programming-Language/
+isFinished true
+
 country Unknown
 originCommunity https://handmade.network/p/114/jiyu/forums
-domainName jiyu.handmade.network
+reference https://machinamentum.github.io/Jiyu-A-Programming-Language/
 
 example
  #clang_import
@@ -24,6 +25,7 @@ example
      fwrite("Hello, Pilot!\n".data, 1, 14, file);
      fclose(file);
  }
+twitter https://twitter.com/machinamentum
 
 githubRepo https://github.com/machinamentum/jiyu
  firstCommit 2019
@@ -35,4 +37,4 @@ githubRepo https://github.com/machinamentum/jiyu
  description A compiler and programming language for fun.
  issues 3
 
-twitter https://twitter.com/machinamentum
+domainName jiyu.handmade.network

@@ -1,10 +1,18 @@
 import ../code/conceptPage.scroll
+
 id pure
 name Pure
 appeared 2008
-tags pl
 creators Albert Gräf
+tags pl
 website https://agraef.github.io/pure-lang/
+
+isOpenSource true
+tryItOnline pure
+fileType text
+wordRank 3337
+rosettaCode http://www.rosettacode.org/wiki/Category:Pure
+centralPackageRepositoryCount 0
 country Germany
 originCommunity https://bitbucket.org/purelang/pure-lang/issues
 
@@ -21,15 +29,6 @@ wikipedia https://en.wikipedia.org/wiki/Pure_(programming_language)
  backlinksCount 34
  revisionCount 100
  appeared 2008
-
-rosettaCode http://www.rosettacode.org/wiki/Category:Pure
-
-tryItOnline pure
-
-fileType text
-wordRank 3337
-isOpenSource true
-centralPackageRepositoryCount 0
 
 semanticScholar 19
  year|title|doi|citations|influentialCitations|authors|paperId

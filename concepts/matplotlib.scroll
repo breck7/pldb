@@ -1,16 +1,26 @@
 import ../code/conceptPage.scroll
+
 id matplotlib
 name Matplotlib
 appeared 2003
-tags library
 creators John D. Hunter
+tags library
 website http://matplotlib.org/
+
+isOpenSource true
+writtenIn python svg restructuredtext cpp yaml meson json html markdown css javascript csv jupyter-notebook bourne-shell tex objective-c toml xml ini make c lua
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ newestCommit 2024
+ commits 50679
+ committers 1717
+ files 4548
 country Various
 originCommunity https://github.com/matplotlib
-domainName matplotlib.org
- awisRank
-  2022 6017
-  2017 9197
+
+twitter https://twitter.com/matplotlib
 
 githubRepo https://github.com/matplotlib/matplotlib
  stars 15728
@@ -46,10 +56,10 @@ wikipedia https://en.wikipedia.org/wiki/Matplotlib
  revisionCount 241
  appeared 2012
 
-twitter https://twitter.com/matplotlib
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName matplotlib.org
+ awisRank
+  2022 6017
+  2017 9197
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -59,11 +69,3 @@ goodreads
  Python Data Analytics: Data Analysis and Science Using Pandas, Matplotlib and the Python Programming Language|2015|Fabio Nelli|46543455|2.00|1|1
  Matplotlib for Python Developers: Effective Techniques for Data Visualization with Python, 2nd Edition||Aldrin Yim|62103804|0.0|0|0
  Numerical Python: Scientific Computing and Data Science Applications with Numpy, Scipy and Matplotlib||Robert Johansson|66021570|0.0|0|0
-
-repoStats
- firstCommit 2003
- newestCommit 2024
- commits 50679
- committers 1717
- files 4548
-writtenIn python svg restructuredtext cpp yaml meson json html markdown css javascript csv jupyter-notebook bourne-shell tex objective-c toml xml ini make c lua

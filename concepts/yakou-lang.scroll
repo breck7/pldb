@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id yakou-lang
 name Yakou Lang
 appeared 2021
-tags pl
 creators KyleLin921021
+tags pl
+
+writtenIn kotlin gradle markdown bourne-shell yaml
+repoStats
+ firstCommit 2021
+ commits 794
+ committers 6
+ files 64
+ newestCommit 2023
 
 githubRepo https://github.com/CASC-Lang/CASC
  firstCommit 2021
@@ -14,12 +23,3 @@ githubRepo https://github.com/CASC-Lang/CASC
  updated 2022
  description A Go Lang / V Lang / Rust syntax approach in JVM language.
  issues 9
-
-repoStats
- firstCommit 2021
- commits 794
- committers 6
- files 64
- newestCommit 2023
-
-writtenIn kotlin gradle markdown bourne-shell yaml

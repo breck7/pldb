@@ -1,16 +1,30 @@
 import ../code/conceptPage.scroll
+
 id ibm-rpg
 name RPG
 appeared 1959
 tags pl
-documentation https://www.ibm.com/docs/en/rdfi/9.6.0?topic=reference-ile-rpg
 standsFor Report Program Generator
+
+fileType text
+wordRank 7279
+documentation https://www.ibm.com/docs/en/rdfi/9.6.0?topic=reference-ile-rpg
+centralPackageRepositoryCount 0
 originCommunity IBM
+
+leachim6 RPG
+ filepath r/RPG.rpgle
+ fileExtensions rpgle
+ example
+  **free
+  dsply 'Hello World';
+  return;
+  
+
+stringToken '
 
 hasStrings true
  'Hello world'
-
-stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/IBM_RPG
  example
@@ -45,22 +59,9 @@ wikipedia https://en.wikipedia.org/wiki/IBM_RPG
  revisionCount 549
  appeared 1959
 
-leachim6 RPG
- filepath r/RPG.rpgle
- fileExtensions rpgle
- example
-  **free
-  dsply 'Hello World';
-  return;
-  
-
+hopl https://hopl.info/showlanguage.prx?exp=207
 tiobe RPG (OS/400)
  currentRank 47
-hopl https://hopl.info/showlanguage.prx?exp=207
-
-fileType text
-wordRank 7279
-centralPackageRepositoryCount 0
 
 isbndb 39
  year|publisher|title|authors|isbn13

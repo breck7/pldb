@@ -1,16 +1,21 @@
 import ../code/conceptPage.scroll
+
 id newspeak
 name Newspeak
 appeared 2006
-tags pl
 creators Gilad Bracha
+tags pl
 website http://newspeaklanguage.org/
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Cadence Design Systems, Inc
-domainName newspeaklanguage.org
- registered 2008
- awisRank
-  2017 11151826
+
+pygmentsHighlighter Newspeak
+ filename smalltalk.py
+ fileExtensions ns2
 
 wikipedia https://en.wikipedia.org/wiki/Newspeak_(programming_language)
  example
@@ -26,12 +31,9 @@ wikipedia https://en.wikipedia.org/wiki/Newspeak_(programming_language)
  revisionCount 59
  appeared 2006
 
-pygmentsHighlighter Newspeak
- filename smalltalk.py
- fileExtensions ns2
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
+domainName newspeaklanguage.org
+ registered 2008
+ awisRank
+  2017 11151826
 
 isbndb 0

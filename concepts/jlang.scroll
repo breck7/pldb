@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id jlang
 name JLang
 appeared 2016
-tags pl
 creators Joao Marcelo Brito
+tags pl
 website https://github.com/jmbrito01/jlang
+
+writtenIn javascript xml json markdown
+repoStats
+ firstCommit 2016
+ commits 17
+ committers 1
+ files 27
+ newestCommit 2016
 country Brazil
 originCommunity https://github.com/jmbrito01/jlang/issues
 
@@ -23,12 +32,3 @@ githubRepo https://github.com/jmbrito01/jlang
  created 2016
  updated 2016
  description Just another programming language
-
-repoStats
- firstCommit 2016
- commits 17
- committers 1
- files 27
- newestCommit 2016
-
-writtenIn javascript xml json markdown

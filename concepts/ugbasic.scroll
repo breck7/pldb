@@ -1,21 +1,26 @@
 import ../code/conceptPage.scroll
+
 id ugbasic
 name ugBASIC
 appeared 2021
+creators Marco Spedaletti
 tags pl
+website https://ugbasic.iwashere.eu
 isFinished false
 photo ugbasic.png
-demoVideo https://www.youtube.com/watch?v=Klg1njCwZhs
-creators Marco Spedaletti
 conceptDescription ugBASIC is an isomorphic and open source language, fully documented and designed to develop portable programs, without sacrificing efficiency. With a single source it is therefore possible to create games for numerous 8 bit platforms.
-website https://ugbasic.iwashere.eu
-documentation https://ugbasic.iwashere.eu/#about
-fileExtensions .bas
-country Italy
-originCommunity https://github.com/spotlessmind1975/ugbasic/issues
-domainName ugbasic.iwashere.eu
 
 writtenIn c assembly-language
+demoVideo https://www.youtube.com/watch?v=Klg1njCwZhs
+fileExtensions .bas
+documentation https://ugbasic.iwashere.eu/#about
+repoStats
+ firstCommit 2021
+ commits 4037
+ committers 5
+ files 3260
+country Italy
+originCommunity https://github.com/spotlessmind1975/ugbasic/issues
 
 githubRepo https://github.com/spotlessmind1975/ugbasic
  stars 40
@@ -26,8 +31,4 @@ githubRepo https://github.com/spotlessmind1975/ugbasic
  description An isomorphic BASIC language compiler for retrocomputers
  issues 291
 
-repoStats
- firstCommit 2021
- commits 4037
- committers 5
- files 3260
+domainName ugbasic.iwashere.eu

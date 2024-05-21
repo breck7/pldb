@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id swizzle
 name swizzle
 appeared 2018
-tags esolang
 creators Robert Swierczek
+tags esolang
+
+writtenIn bourne-shell c markdown
+repoStats
+ firstCommit 2018
+ commits 27
+ committers 5
+ files 21
+ newestCommit 2020
 
 example
  {M
@@ -34,13 +43,4 @@ githubRepo https://github.com/rswier/swizzle
  forks 2
  issues 1
 
-repoStats
- firstCommit 2018
- commits 27
- committers 5
- files 21
- newestCommit 2020
-
 isbndb 0
-
-writtenIn bourne-shell c markdown

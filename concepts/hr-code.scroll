@@ -1,9 +1,18 @@
 import ../code/conceptPage.scroll
+
 id hr-code
 name hr-code
 appeared 2019
-tags barCodeFormat
 creators Han Tuzun
+tags barCodeFormat
+
+writtenIn markdown c
+repoStats
+ firstCommit 2019
+ commits 11
+ committers 2
+ files 4
+ newestCommit 2019
 country Turkey
 originCommunity https://github.com/hantuzun/hr-code/issues
 
@@ -16,12 +25,3 @@ githubRepo https://github.com/hantuzun/hr-code
  updated 2022
  description Human Response Code: Designed to be recognized by humans and OCR. Encodes all valid URL characters to images.
  issues 3
-
-repoStats
- firstCommit 2019
- commits 11
- committers 2
- files 4
- newestCommit 2019
-
-writtenIn markdown c

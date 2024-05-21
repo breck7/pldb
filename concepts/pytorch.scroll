@@ -1,16 +1,26 @@
 import ../code/conceptPage.scroll
+
 id pytorch
 name PyTorch
 appeared 2016
-tags library
 creators Ronan Collobert
+tags library
 website http://pytorch.org/
+
+isOpenSource true
+writtenIn python cpp cuda restructuredtext c bourne-shell markdown yaml cmake glsl objective-cpp starlark assembly-language java bazel xml csv json jupyter-notebook dockerfile gradle protobuf css make html javascript svg ini toml powershell ruby diff objective-c bash vim-script
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ newestCommit 2024
+ commits 137190
+ committers 5074
+ files 16227
 country Various
 originCommunity https://github.com/pytorch
-domainName pytorch.org
- registered 2016
- awisRank
-  2022 2871
+
+subreddit https://www.reddit.com/r/pytorch/
+twitter https://twitter.com/pytorch
 
 githubRepo https://github.com/pytorch/pytorch
  firstCommit 2012
@@ -31,16 +41,7 @@ wikipedia https://en.wikipedia.org/wiki/PyTorch
  dailyPageViews 594
  appeared 2016
 
-subreddit https://www.reddit.com/r/pytorch/
-
-twitter https://twitter.com/pytorch
-isOpenSource true
-centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2012
- newestCommit 2024
- commits 137190
- committers 5074
- files 16227
-writtenIn python cpp cuda restructuredtext c bourne-shell markdown yaml cmake glsl objective-cpp starlark assembly-language java bazel xml csv json jupyter-notebook dockerfile gradle protobuf css make html javascript svg ini toml powershell ruby diff objective-c bash vim-script
+domainName pytorch.org
+ registered 2016
+ awisRank
+  2022 2871

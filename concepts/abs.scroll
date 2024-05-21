@@ -1,14 +1,21 @@
 import ../code/conceptPage.scroll
+
 id abs
 name abs
 appeared 2018
-tags pl
 creators Alessandro Nadalin
-conceptDescription ABS is a programming language that works best when you're scripting on your terminal. It tries to combine the elegance of languages such as Python, or Ruby with the convenience of Bash.
+tags pl
 website https://www.abs-lang.org
+conceptDescription ABS is a programming language that works best when you're scripting on your terminal. It tries to combine the elegance of languages such as Python, or Ruby with the convenience of Bash.
+
+writtenIn javascript markdown html go bourne-shell json yaml stylus make dockerfile svg css
+repoStats
+ firstCommit 2018
+ commits 849
+ committers 21
+ files 297
+ newestCommit 2023
 country United Arab Emirates
-domainName abs-lang.org
- registered 2018
 
 example
  r = $(curl "http://data.nba.net/prod/v1/20170201/0021600732_boxscore.json" -H 'DNT: 1' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36' -H 'Accept: */*' -H 'Referer: http://stats.nba.com/' -H 'Connection: keep-alive' --compressed);
@@ -35,15 +42,9 @@ githubRepo https://github.com/abs-lang/abs
  updated 2022
  description Home of the ABS programming language: the joy of shell scripting.
 
-repoStats
- firstCommit 2018
- commits 849
- committers 21
- files 297
- newestCommit 2023
+domainName abs-lang.org
+ registered 2018
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  18755021|The ABS programming language|https://www.abs-lang.org/|2018-12-25 00:11:54 UTC|1545696714|odino|3|6
-
-writtenIn javascript markdown html go bourne-shell json yaml stylus make dockerfile svg css

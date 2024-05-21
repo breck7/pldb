@@ -1,41 +1,19 @@
 import ../code/conceptPage.scroll
+
 id subleq
 name Subleq
 appeared 2009
-tags isa
 creators David Roberts
+tags isa
+
+writtenIn javascript make cpp python c xml markdown css html
 fileExtensions sq
-
-githubRepo https://github.com/davidar/subleq
- firstCommit 2009
- stars 94
- forks 13
- subscribers 11
- created 2009
- updated 2022
- description CPU design and toolchain for a simple computer architecture
- issues 0
-
 repoStats
  firstCommit 2009
  commits 7
  committers 2
  files 35
  newestCommit 2015
-
-leachim6 SubleQ
- filepath s/SubleQ.sq
- fileExtensions sq
- example
-  loop:       hello (-1)
-              minusOne loop
-              minusOne checkEnd+1
-  checkEnd:   Z hello (-1)
-              Z Z loop
-  				
-  . minusOne: -1
-  . hello: "Hello World\n" Z: 0
-  
 
 rijuRepl https://riju.codes/subleq
  example
@@ -57,5 +35,26 @@ rijuRepl https://riju.codes/subleq
   32 119 111
   114 108 100
   33 10 53
+leachim6 SubleQ
+ filepath s/SubleQ.sq
+ fileExtensions sq
+ example
+  loop:       hello (-1)
+              minusOne loop
+              minusOne checkEnd+1
+  checkEnd:   Z hello (-1)
+              Z Z loop
+  				
+  . minusOne: -1
+  . hello: "Hello World\n" Z: 0
+  
 
-writtenIn javascript make cpp python c xml markdown css html
+githubRepo https://github.com/davidar/subleq
+ firstCommit 2009
+ stars 94
+ forks 13
+ subscribers 11
+ created 2009
+ updated 2022
+ description CPU design and toolchain for a simple computer architecture
+ issues 0

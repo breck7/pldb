@@ -1,15 +1,16 @@
 import ../code/conceptPage.scroll
+
 id shacl
 name SHACL
 appeared 2015
 tags pl
-conceptDescription A standard language for describing Resource Description Framework (RDF) graphs.
-reference https://www.w3.org/TR/shacl/
 standsFor Shapes Constraint Language
-country United States
-originCommunity World Wide Web Consortium
+conceptDescription A standard language for describing Resource Description Framework (RDF) graphs.
 
 relatedConcepts rdf
+country United States
+originCommunity World Wide Web Consortium
+reference https://www.w3.org/TR/shacl/
 
 example
  ex:PersonShape

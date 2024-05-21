@@ -1,10 +1,19 @@
 import ../code/conceptPage.scroll
+
 id regex
 name Regular Expressions
 appeared 1951
+creators Stephen Kleene
 tags queryLanguage
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity University of Wisconsin-Madison
+
+subreddit https://reddit.com/r/regex
+ memberCount
+  2022 5278
 
 hasComments false
 hasLineComments false
@@ -23,15 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/Regular_expression
  revisionCount 2877
  appeared 1994
 
-githubLanguage Regular Expression
- fileExtensions regexp regex
- trendingProjectsCount 0
- type data
- aceMode text
- tmScope source.regexp
- aliases regexp or regex
- repos 58614
-
 linguistGrammarRepo https://github.com/Alhadis/language-regexp
  firstCommit 2016
  lastCommit 2017
@@ -42,15 +42,15 @@ linguistGrammarRepo https://github.com/Alhadis/language-regexp
   \b(\d*1[1-3]th|\d*0th|(?:(?!11st)\d)*1st|\d*2nd|(?:(?!13rd)\d*)3rd|\d*[4-9]th)\b
   
 
-subreddit https://reddit.com/r/regex
- memberCount
-  2022 5278
-
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage Regular Expression
+ fileExtensions regexp regex
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.regexp
+ aliases regexp or regex
+ repos 58614
 
-creators Stephen Kleene
+semanticScholar 0

@@ -1,10 +1,35 @@
 import ../code/conceptPage.scroll
+
 id ini
 name Ini
 appeared 1987
 tags dataNotation
+
+clocExtensions buildozer.spec editorconfig ini lektorproject prefs
+fileType text
+antlr https://github.com/afucher/yaip
+monaco ini
+centralPackageRepositoryCount 0
 country United States
 originCommunity Microsoft
+
+pygmentsHighlighter INI
+ filename configs.py
+ fileExtensions ini cfg inf .editorconfig service socket device mount automount swap target path timer slice scope
+example
+ ; last modified 1 April 2001 by John Doe
+ [owner]
+ name = John Doe
+ organization = Acme Widgets Inc.
+ 
+ [database]
+ ; use IP address in case network name resolution is not working
+ server = 192.0.2.62
+ port = 143
+ file = "payroll.dat"
+
+lineCommentToken #
+lineCommentToken ;
 
 hasComments true
  # a '#' or ';' character indicates
@@ -24,21 +49,6 @@ hasSemanticIndentation false
 hasStrings true
 hasBooleans false
 
-lineCommentToken #
-lineCommentToken ;
-
-example
- ; last modified 1 April 2001 by John Doe
- [owner]
- name = John Doe
- organization = Acme Widgets Inc.
- 
- [database]
- ; use IP address in case network name resolution is not working
- server = 192.0.2.62
- port = 143
- file = "payroll.dat"
-
 wikipedia https://en.wikipedia.org/wiki/INI_file
  example
   GetPrivateProfileString("owner", "name", ... , "c:\\programs\\oldprogram\\dbsettings.ini");
@@ -51,26 +61,10 @@ wikipedia https://en.wikipedia.org/wiki/INI_file
  revisionCount 437
  appeared 2001
 
-githubLanguage INI
- fileExtensions ini cfg dof lektorproject prefs pro properties url
- trendingProjectsCount 0
- type data
- filenames .coveragerc .flake8 .pylintrc buildozer.spec pylintrc
- aceMode ini
- codemirrorMode properties
- codemirrorMimeType text/x-properties
- tmScope source.ini
- aliases dosini
- repos 13
 githubBigQuery INI
  repos 1
  users 1
 
-antlr https://github.com/afucher/yaip
-monaco ini
-pygmentsHighlighter INI
- filename configs.py
- fileExtensions ini cfg inf .editorconfig service socket device mount automount swap target path timer slice scope
 linguistGrammarRepo https://github.com/textmate/ini.tmbundle
  firstCommit 2005
  lastCommit 2013
@@ -85,11 +79,18 @@ linguistGrammarRepo https://github.com/textmate/ini.tmbundle
   subject=children computers powerful ideas LOGO education
   url=http://www.papert.org/
 
-fileType text
-centralPackageRepositoryCount 0
-
 isbndb 0
 
-semanticScholar 0
+githubLanguage INI
+ fileExtensions ini cfg dof lektorproject prefs pro properties url
+ trendingProjectsCount 0
+ type data
+ filenames .coveragerc .flake8 .pylintrc buildozer.spec pylintrc
+ aceMode ini
+ codemirrorMode properties
+ codemirrorMimeType text/x-properties
+ tmScope source.ini
+ aliases dosini
+ repos 13
 
-clocExtensions buildozer.spec editorconfig ini lektorproject prefs
+semanticScholar 0

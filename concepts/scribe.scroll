@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id scribe
 name Scribe
 appeared 1980
 tags pl
-reference http://www.bitsavers.org/pdf/unilogic/Scribe_Pocket_Reference.pdf
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity Carnegie Mellon University
+reference http://www.bitsavers.org/pdf/unilogic/Scribe_Pocket_Reference.pdf
 
 example
  @MakeSection(tag=beginning, title="The Beginning")
@@ -26,6 +30,3 @@ wikipedia https://en.wikipedia.org/wiki/Scribe_(markup_language)
  appeared 1969
 
 hopl https://hopl.info/showlanguage.prx?exp=2481
-
-fileType text
-centralPackageRepositoryCount 0

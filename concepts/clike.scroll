@@ -1,8 +1,21 @@
 import ../code/conceptPage.scroll
+
 id clike
 name clike
 appeared 2014
 tags pl
+
+isOpenSource true
+writtenIn c perl tex make cpp python markdown csharp
+fileType text
+codeMirror clike
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 22
+ committers 2
+ files 66
+ newestCommit 2021
 originCommunity https://github.com/combinatorylogic/
 
 githubRepo https://github.com/combinatorylogic/clike
@@ -14,18 +27,3 @@ githubRepo https://github.com/combinatorylogic/clike
  firstCommit 2014
  description A simple C-like language compiler with an extensible syntax and typed macros support
  issues 2
-
-repoStats
- firstCommit 2014
- commits 22
- committers 2
- files 66
- newestCommit 2021
-
-codeMirror clike
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn c perl tex make cpp python markdown csharp

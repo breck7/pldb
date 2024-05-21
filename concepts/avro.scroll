@@ -1,14 +1,16 @@
 import ../code/conceptPage.scroll
+
 id avro
 name avro
 appeared 2012
 tags idl
 website https://avro.apache.org/
-country Various
-originCommunity The Apache Software Foundation
-domainName avro.apache.org
 
 relatedConcepts protobuf thrift
+fileType binary
+centralPackageRepositoryCount 0
+country Various
+originCommunity The Apache Software Foundation
 
 example
  {"namespace": "example.avro",
@@ -21,5 +23,4 @@ example
   ]
  }
 
-fileType binary
-centralPackageRepositoryCount 0
+domainName avro.apache.org

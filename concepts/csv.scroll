@@ -1,10 +1,16 @@
 import ../code/conceptPage.scroll
+
 id csv
 name CSV
 appeared 1972
 tags dataNotation
 standsFor comma-separated values
+
 fileExtensions csv
+clocExtensions csv
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/csv
+centralPackageRepositoryCount 0
 
 example
  Year,Make,Model,Length
@@ -25,6 +31,8 @@ wikipedia https://en.wikipedia.org/wiki/Comma-separated_values
  revisionCount 1207
  appeared 1972
 
+isbndb 0
+
 githubLanguage CSV
  fileExtensions csv
  trendingProjectsCount 0
@@ -32,12 +40,3 @@ githubLanguage CSV
  aceMode text
  tmScope none
  repos 9
-
-antlr https://github.com/antlr/grammars-v4/tree/master/csv
-
-fileType text
-centralPackageRepositoryCount 0
-
-isbndb 0
-
-clocExtensions csv

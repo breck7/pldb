@@ -1,11 +1,15 @@
 import ../code/conceptPage.scroll
+
 id lucene-query-syntax
 name Apache Lucene
 appeared 1999
 tags queryLanguage
-reference https://lucene.apache.org/core/2_9_4/queryparsersyntax.html
+
+isOpenSource true
+centralPackageRepositoryCount 0
 country United States
 originCommunity Apache Software Foundation
+reference https://lucene.apache.org/core/2_9_4/queryparsersyntax.html
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Lucene
  related java object-pascal perl csharp python ruby php pdf html c
@@ -16,8 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/Apache_Lucene
  revisionCount 657
  dailyPageViews 187
  appeared 2010
-
-isOpenSource true
-centralPackageRepositoryCount 0
 
 isbndb 0

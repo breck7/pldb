@@ -1,18 +1,17 @@
 import ../code/conceptPage.scroll
+
 id spark
 name Apache Spark
 appeared 2012
-tags application
 creators Matei Zaharia
+tags application
 conceptDescription Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python, and R, and an optimized engine that supports general execution graphs. It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, pandas API on Spark for pandas workloads, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for incremental computation and stream processing.
+
+isOpenSource true
+writtenIn scala
 documentation https://spark.apache.org/documentation.html
+packageRepository https://spark-packages.org/
 country United States
 originCommunity University of California, Berkeley
 
-writtenIn scala
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Spark
-
-packageRepository https://spark-packages.org/
-
-isOpenSource true

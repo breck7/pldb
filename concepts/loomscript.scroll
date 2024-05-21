@@ -1,13 +1,18 @@
 import ../code/conceptPage.scroll
+
 id loomscript
 name LoomScript
 appeared 2013
 tags pl
 website http://loomsdk.com/
+
+fileType text
+centralPackageRepositoryCount 0
 country United States
 originCommunity https://theengine.co/
-domainName loomsdk.com
- registered 2013
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 hasLineComments true
  // A comment
@@ -18,16 +23,9 @@ hasMultiLineComments true
  */
 hasSemanticIndentation false
 
-lineCommentToken //
-multiLineCommentTokens /* */
+domainName loomsdk.com
+ registered 2013
 
-githubLanguage LoomScript
- fileExtensions ls
- trendingProjectsCount 0
- type programming
- aceMode text
- tmScope source.loomscript
- repos 16
 githubBigQuery LoomScript
  repos 7
  users 4
@@ -78,5 +76,10 @@ linguistGrammarRepo https://github.com/ambethia/Sublime-Loom
       }
   }
 
-fileType text
-centralPackageRepositoryCount 0
+githubLanguage LoomScript
+ fileExtensions ls
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.loomscript
+ repos 16

@@ -1,13 +1,24 @@
 import ../code/conceptPage.scroll
+
 id wah
 name wah
 appeared 2017
-tags pl
 creators Tom MacWright
+tags pl
 conceptDescription a slightly higher-level language superset of webassembly
 
+isOpenSource true
+writtenIn markdown wasm clojure
 compilesTo wasm
 supersetOf wasm
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 20
+ committers 2
+ files 21
+ newestCommit 2017
 
 example
  (0 = 1)
@@ -23,16 +34,3 @@ githubRepo https://github.com/tmcw/wah
  updated 2022
  description a slightly higher-level language superset of webassembly
  issues 0
-
-repoStats
- firstCommit 2017
- commits 20
- committers 2
- files 21
- newestCommit 2017
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-
-writtenIn markdown wasm clojure

@@ -1,12 +1,16 @@
 import ../code/conceptPage.scroll
+
 id snakemake
 name snakemake
 appeared 2012
 tags pl
 conceptDescription A workflow is defined in a ‘Snakefile’ through a domain-specific language that is close to standard Python syntax. It consists of rules that denote how to create output files from input files. The workflow is implied by dependencies between the rules that arise from one rule needing an output file of another as an input file.
-reference https://academic.oup.com/bioinformatics/article/28/19/2520/290322
+
+clocExtensions rules smk
+centralPackageRepositoryCount 0
 country Germany
 originCommunity University of Duisburg-Essen
+reference https://academic.oup.com/bioinformatics/article/28/19/2520/290322
 
 example
  SAMPLES = "100 101 102 103".split()
@@ -62,7 +66,3 @@ example
        iterable = True))))
  
      savefig(output.hist)
-
-centralPackageRepositoryCount 0
-
-clocExtensions rules smk
