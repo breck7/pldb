@@ -669,6 +669,7 @@ hackerNewsDiscussionsParser
  extends abstractDelimitedValuesBlobMeasureParser
  description What are URLS to Hacker News posts discussing this language?
  string sourceDomain news.ycombinator.com
+ float sortIndex 18
 
 // hasAbstractTypes
 hasAbstractTypesParser
@@ -1869,6 +1870,7 @@ helloWorldCollectionParser
  cells measureNameCell
  catchAllCellType stringCell
  string sourceDomain helloworldcollection.de
+ float sortIndex 3
 
 // history
 appearedParser
