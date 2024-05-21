@@ -683,7 +683,7 @@ treeTable
       .toDelimited("|", ["title", "titleLink", "date", "score", "comments"])
       .replace(/\n/g, "\n ")
       .trim()
-    return `## HackerNews discussions of ${this.title}
+    return `## HackerNews discussions of ${this.name}
 
 pipeTable
  ${delimited}`
@@ -1205,7 +1205,7 @@ ${creatorsLinks}
     const keywords = this.get("keywords")
     if (!keywords) return ""
     return `<div class="keywordsBlock">
-codeWithHeader ${this.title} <a href="../lists/keywords.html#q=${this.id}">Keywords</a>
+codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywords</a>
  ${keywords}
 </div>`
   }
@@ -1389,7 +1389,7 @@ class Feature {
       .map(file => {
         return {
           id: file.id,
-          title: file.title,
+          name: file.name,
           example: this.computer.getConceptFile(file.id).getNode(id).childrenToString()
         }
       })

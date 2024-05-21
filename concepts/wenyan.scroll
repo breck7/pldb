@@ -1,0 +1,19 @@
+wenyanimport ../code/conceptPage.scroll
+id wenyan
+name 文言文編程語言
+website https://wy-lang.org/
+githubRepo https://github.com/wenyan-lang/wenyan
+appeared 2019
+creators Lingdong Huang
+tags pl
+country China
+compilesTo javascript python ruby
+aka wenyan
+conceptDescription 文言文編程語言 A programming language for the ancient Chinese.
+example
+ 吾有一數。曰三。名之曰「甲」。
+ 為是「甲」遍。
+ 	吾有一言。曰「「問天地好在。」」。書之。
+ 云云。
+webRepl https://wy-lang.org/ide.html
+spec https://wy-lang.org/spec.html

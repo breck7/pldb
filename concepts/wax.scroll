@@ -1,0 +1,56 @@
+import ../code/conceptPage.scroll
+id wax
+name Wax
+appeared 2020
+creators Lingdong Huang
+githubRepo https://github.com/LingDong-/wax
+tags pl
+conceptDescription A tiny programming language that transpiles to C, C++, Java, TypeScript, Python, C#, Swift, Lua and WebAssembly
+compilesTo c cpp java typescript python csharp swift lua wasm
+
+webRepl https://waxc.netlify.app/
+
+hasIntegers true
+ (let x int 42)
+hasAssignment true
+ (set x 42)
+hasFloats true
+hasStrings true
+hasMaps true
+ (let m (map str int) (alloc (map str int)))
+ 
+ (set m "xyz" 123)
+ 
+ (insert m "abc" 456) ; exactly same as 'set'
+ 
+ (print (get m "xyz"))
+ 
+ (remove m "xyz")
+ 
+ (print (get m "xyz")) 
+ ;^ if a value is not there, the "zero" value of the element type is returned
+ ; for numbers, 0; for compound types, null.
+ 
+hasLists true
+ (let x (arr (vec 3 float)))
+hasStructs true
+ (struct point
+     (let x float)
+     (let y float)
+ )
+hasPrefixNotation true
+ (+ 1 1)
+hasTernaryOperators true
+ (set y (? (= x 0) 1 2))
+hasMacros true
+ (@define MY_CONSTANT 5)
+ (@if MY_CONSTANT 5
+     (print "yes, it's")
+     (print @MY_CONSTANT)
+ )
+hasLineComments true
+ ; a comment
+lineCommentToken ;
+hasOperators true
+ ;; << >> = && || >= <= <>
+ ;; + - * / ^ % & | ! ~ < >
