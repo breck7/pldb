@@ -176,6 +176,7 @@ cheatSheetUrlParser
  extends abstractUrlMeasureParser
  single false
  description What is a URL to a cheat sheet for this language?
+ float sortIndex 3.3
 
 // codemirror
 codeMirrorParser
@@ -294,6 +295,7 @@ demoVideoParser
  description What is a URL of a demo video of this language?
  extends abstractUrlMeasureParser
  single false
+ float sortIndex 2.4
 
 // description
 conceptDescriptionParser
@@ -507,6 +509,7 @@ gdbSupportParser
  extends abstractBooleanMeasureParser
  description Is the language supported by the GNU Debugger?
  string sourceDomain sourceware.org
+ float sortIndex 2.4
 
 // git
 abstractGitRepoUrlMeasureParser
@@ -1927,6 +1930,7 @@ indeedJobsParser
 ircParser
  extends abstractChatUrlMeasureParser
  description What is a link to an official (or popular unofficial) IRC channel(s) for language development?
+ float sortIndex 2.3
 
 // isCaseSensitive
 isCaseSensitiveParser
@@ -2093,6 +2097,7 @@ officialBlogUrlParser
  extends abstractUrlMeasureParser
  description What is the URL to the official blog for this language?
  single false
+ float sortIndex 2.4
 
 // originCommunity
 originCommunityParser
@@ -2115,6 +2120,7 @@ packageRepositoryParser
 centralPackageRepositoryCountParser
  extends abstractCountMeasureParser
  description How many central package repositories does this language have?
+ float sortIndex 2.9
 
 packageInstallCountParser
  description How many packages have been downloaded?
@@ -2393,6 +2399,7 @@ tryItOnlineParser
  extends abstractUniqueWordMeasureParser
  description What is a link to try this language on https://tio.run?
  string sourceDomain tio.run
+ float sortIndex 2.4
 
 // twitter
 twitterParser
