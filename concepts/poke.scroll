@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id poke
+name GNU Poke
+appeared 2017
+creators Jose E. Marchesi
+tags pl editor
+website http://www.jemarch.net/poke
+conceptDescription GNU poke is a new interactive editor for binary data. Not limited to editing basic entities such as bits and bytes, it provides a full-fledged procedural, interactive programming language designed to describe data structures and to operate on them.
+
+isOpenSource true
+influencedBy guile
+irc https://web.libera.chat/?channel=#poke
+demoVideo https://www.youtube.com/watch?v=KZ8meNZ_IhY&themeRefresh=1
+documentation https://www.jemarch.net/poke-4.0-manual/
+repoStats
+ firstCommit 2017
+ newestCommit 2024
+ commits 7860
+ committers 54
+ files 3103
+
+example
+ # The following two lines are dot commands
+ .load my-pickle.pk
+ .set obase 16
+ 
+ # The following line is a Poke statement
+ dump :size 0x100#B :from 0x10#B
+ 
+ # The following line is a Poke expression statement without any side effect.
+ # Consequently it is valid, but rather useless.
+ 4 == 4
+
+gitRepo https://git.savannah.gnu.org/git/poke.git
+
+hasMultiLineComments true
+ #!/usr/bin/poke -L
+ !#

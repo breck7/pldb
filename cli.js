@@ -82,7 +82,7 @@ class PLDBCli extends ScrollSetCLI {
       const targetFolder = path.join(gitsFolder, file.id)
       //if (Disk.exists(targetFolder)) return
       if (file.repoStats_files) return
-      if (file.isFinished) return
+      //if (file.isFinished) return
       try {
         const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
