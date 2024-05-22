@@ -6,7 +6,7 @@ ohayoCodeParser
  description Provide a direct link to analyze this data in Ohayo.
  javascript
   compile() {
-   const link = `https://ohayo.computer?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
+   const link = `https://ohayo.breckyunits.com?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
    return `<div class="scrollQuote">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
 observableParser
