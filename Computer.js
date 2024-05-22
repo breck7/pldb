@@ -1923,6 +1923,15 @@ const computeds = {
     return concept.get("isFinished") ?? this.lastActivity(concept) < 2014
   },
 
+  isOpenSource(concept, computer) {
+    return concept.get("isOpenSource") ?? (computeds.mainRepo(concept) ? true : "") // if it has a mainRepo then it must be open source.
+  },
+
+  mainRepo(concept) {
+    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
+    return repo || ""
+  },
+
   hoplId(concept) {
     const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)

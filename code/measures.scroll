@@ -484,19 +484,6 @@ fileTypeParser
  extends abstractEnumMeasureParser
  float sortIndex 2.5
 
-// freedom
-isOpenSourceParser
- boolean alwaysRecommended true
- description Is this an open source project?
- extends abstractBooleanMeasureParser
- float sortIndex 2.01
-
-isPublicDomainParser
- boolean alwaysRecommended true
- description Is this public domain?
- extends abstractBooleanMeasureParser
- float sortIndex 2.0
-
 // funFact
 funFactParser
  cells measureNameCell urlCell
@@ -1892,6 +1879,20 @@ nativeLanguageParser
 firstAnnouncementParser
  description What is a URL announcing the creation or release of this language?
  extends abstractUrlMeasureParser
+
+// freedom
+isOpenSourceParser
+ description Is this an open source project?
+ extends abstractComputedIntMeasureParser
+ string typeForCsvDocs boolean
+ cells measureNameCell booleanCell
+ float sortIndex 2.01
+
+isPublicDomainParser
+ boolean alwaysRecommended true
+ description Is this public domain?
+ extends abstractBooleanMeasureParser
+ float sortIndex 2.0
 
 //
  announcementMethodCell
