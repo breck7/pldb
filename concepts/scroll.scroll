@@ -2,18 +2,22 @@ import ../code/conceptPage.scroll
 
 id scroll
 name Scroll
-appeared 2020
+appeared 2019
 creators Breck Yunits
-tags textMarkup
+tags textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup
 website https://scroll.pub/
 webRepl https://try.scroll.pub/
-conceptDescription An extensible alternative to Markdown built on Tree Notation.
+conceptDescription Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
 
 isPublicDomain true
 isOpenSource true
 writtenIn javascript yaml css json
+influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordpress tex mathematica dplyr antlr reactjs
 subsetOf treenotation
 relatedConcepts markdown treenotation grammar
+fileExtensions scroll
+releaseNotesUrl https://scroll.pub/releaseNotes.html
+faqPageUrl https://scroll.pub/faq.html
 repoStats
  firstCommit 2019
  commits 1230
@@ -31,11 +35,11 @@ example
 
 githubRepo https://github.com/breck7/scroll
  firstCommit 2019
- stars 268
+ stars 357
  forks 5
  subscribers 7
  created 2019
- updated 2022
+ updated 2024
  description The extensible alternative to Markdown.
  issues 6
 
@@ -45,6 +49,15 @@ hasTernaryOperators false
 hasSemanticIndentation true
  * A link to PLDB
   https://pldb.io
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ // A
+  multiline comment
+hasMultilineStrings true
+ plainText
+  This is a
+  multiline string
 
 domainName scroll.pub
  registered 2021

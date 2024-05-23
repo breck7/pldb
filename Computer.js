@@ -87,6 +87,7 @@ binaryExecutable binary executable format
 bytecode bytecode format
 characterEncoding
 cloud cloud service
+commandLineApp command line application
 compiler
 dataVis data visualization grammar
 dataFlow dataflow grammar
