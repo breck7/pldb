@@ -123,9 +123,9 @@ const PLDBKeywords = {
 }
 
 class ConceptPage {
-  constructor(parsed, computer) {
+  constructor(parsed, tables) {
     this.absolutePath = path.join(__dirname, "concepts", parsed.id + ".scroll")
-    this.computer = computer
+    this.tables = tables
     this.parsed = parsed
     this.node = new TreeNode(Disk.read(this.absolutePath))
     this.quickCache = {}
@@ -244,11 +244,11 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get previousRanked() {
-    return this.computer.getFileAtRank(this.rank - 1)
+    return this.tables.getFileAtRank(this.rank - 1)
   }
 
   get nextRanked() {
-    return this.computer.getFileAtRank(this.rank + 1)
+    return this.tables.getFileAtRank(this.rank + 1)
   }
 
   get exampleCount() {
@@ -267,7 +267,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get features() {
-    const featuresMap = this.computer.featuresMap
+    const featuresMap = this.tables.featuresMap
     return this.extended.filter(node => featuresMap.has(node.getWord(0)))
   }
 
@@ -506,7 +506,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   getRelationshipFile(relationshipType) {
     const hit = this.get(relationshipType)
-    return hit ? this.computer.getConceptPage(hit) : undefined
+    return hit ? this.tables.getConceptPage(hit) : undefined
   }
 
   get rank() {
@@ -538,7 +538,8 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   makeATag(id) {
-    const file = this.computer.getConceptPage(id)
+    const file = this.tables.getConceptPage(id)
+    if (!file) throw new Error(`Cant find file '${id}'`)
     return `<a href="${file.permalink}">${file.name}</a>`
   }
 
@@ -638,7 +639,7 @@ pipeTable
     const { features, id } = this
     if (!features.length) return ""
 
-    const { featuresMap } = this.computer
+    const { featuresMap } = this.tables
     const table = new TreeNode()
     features.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
@@ -1198,6 +1199,14 @@ ${creatorsLinks}
     if (nonSemanticScholarReferences.length)
       facts.push(`Read more about ${title} on the web: ${linkManyAftertext(nonSemanticScholarReferences)}`)
 
+    if (this.parsed.inboundLinks) {
+      const inboundLinks = this.parsed.inboundLinks.split(" ")
+      facts.push(
+        `${inboundLinks.length} languages in PLDB linking to ${title}: ` +
+          inboundLinks.map(link => this.makeATag(link)).join(", ")
+      )
+    }
+
     return facts
   }
 
@@ -1272,11 +1281,11 @@ codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywor
 
 // One feature maps to one Parser that extends abstractFeatureParser
 class Feature {
-  constructor(measure, computer) {
+  constructor(measure, tables) {
     this.measure = measure
     this.fileName = "measures.scroll"
     this.id = measure.Name
-    this.computer = computer
+    this.tables = tables
   }
 
   id = ""
@@ -1345,11 +1354,11 @@ class Feature {
   }
 
   getLanguagesWithFeatureResearched(id) {
-    if (!this.computer.featureCache) this.computer.featureCache = {}
-    if (this.computer.featureCache[id]) return this.computer.featureCache[id]
+    if (!this.tables.featureCache) this.tables.featureCache = {}
+    if (this.tables.featureCache[id]) return this.tables.featureCache[id]
     // todo: re-add support for "extended"
-    this.computer.featureCache[id] = this.computer.pldb.filter(file => file[id] !== "")
-    return this.computer.featureCache[id]
+    this.tables.featureCache[id] = this.tables.pldb.filter(file => file[id] !== "")
+    return this.tables.featureCache[id]
   }
 
   get summary() {
@@ -1385,12 +1394,12 @@ class Feature {
       : ""
 
     const examples = positives
-      .filter(file => this.computer.getConceptFile(file.id).getNode(id).length)
+      .filter(file => this.tables.getConceptFile(file.id).getNode(id).length)
       .map(file => {
         return {
           id: file.id,
           name: file.name,
-          example: this.computer.getConceptFile(file.id).getNode(id).childrenToString()
+          example: this.tables.getConceptFile(file.id).getNode(id).childrenToString()
         }
       })
     const grouped = lodash.groupBy(examples, "example")
@@ -1954,6 +1963,10 @@ const computeds = {
   },
 
   inboundLinks(concept, computer) {
+    return computer.inboundLinks[concept.get("id")].join(" ") // todo: keep as array
+  },
+
+  inboundLinksCount(concept, computer) {
     return computer.inboundLinks[concept.get("id")].length
   },
 

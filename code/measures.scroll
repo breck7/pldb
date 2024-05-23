@@ -240,10 +240,18 @@ numberOfJobsEstimateParser
  extends abstractComputedIntMeasureParser
  description What is our estimate of the number of jobs in this language?
 
-inboundLinksParser
+inboundLinksCountParser
  float sortIndex 1.9
  extends abstractComputedIntMeasureParser
  description How many other concepts link to this one?
+
+inboundLinksParser
+ float sortIndex 1.9
+ extends abstractComputedIntMeasureParser
+ description Which other concepts link to this one?
+ string typeForCsvDocs string[]
+ cells measureNameCell
+ catchAllCellType stringCell
 
 pldbScoreParser
  float sortIndex 1.6

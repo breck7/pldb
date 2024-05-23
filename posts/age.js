@@ -31,7 +31,7 @@ const hits = pldb
 			"foundationScore",
 			"numberOfUsersEstimate",
 			"numberOfJobsEstimate",
-			"inboundLinks",
+			"inboundLinksCount",
 			"measurements"
 		])
 	)
