@@ -1533,7 +1533,7 @@ class Tables {
           "foundationScore",
           "numberOfUsersEstimate",
           "numberOfJobsEstimate",
-          "inboundLinks",
+          "inboundLinksCount",
           "measurements"
         ])
       )
