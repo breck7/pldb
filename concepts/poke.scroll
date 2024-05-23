@@ -37,3 +37,5 @@ gitRepo https://git.savannah.gnu.org/git/poke.git
 hasMultiLineComments true
  #!/usr/bin/poke -L
  !#
+
+writtenIn c make expect m4 bourne-shell lex yacc vim-script css lisp sed awk scheme nix pascal
