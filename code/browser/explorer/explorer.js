@@ -89,6 +89,7 @@ class ExploreApp {
 
   setObjectOnHash(obj) {
     if (obj.columns === this.defaultColumns) delete obj.columns
+    if (obj.order === "0.asc") delete obj.order
     Object.keys(obj).forEach(key => {
       if (obj[key] === "") delete obj[key]
     })
@@ -99,7 +100,7 @@ class ExploreApp {
   bindToHashChange() {
     // Listen for hash changes to update the DataTable search
     window.addEventListener("hashchange", () => {
-      const colString = this.getColumnStringFromHash()
+      const colString = this.columnStringFromHash
       const needsRerender = colString !== this.columnNames
 
       // If columns changed, we need to rebuild the whole table
@@ -109,13 +110,13 @@ class ExploreApp {
         this.createDatatable()
         this.renderMeasureLinks()
       } else {
-        this.dataTable.search(this.getSearchFromHash()).draw(false)
+        this.dataTable.search(this.searchFromHash).order(this.orderFromHash).draw(false)
       }
     })
   }
 
   createDatatable() {
-    this.columnNames = this.getColumnStringFromHash()
+    this.columnNames = this.columnStringFromHash
     this.searchBuilder = this.objectFromHash.searchBuilder
     const columns = this.makeColumns(this.columnNames)
     this.dataTable = jQuery("#exploreTable").DataTable({
@@ -136,19 +137,26 @@ class ExploreApp {
       stateSaveCallback: (settings, data) => {
         let sb = this.dataTable?.searchBuilder?.getDetails()
         if (sb && !Object.keys(sb).length) sb = ""
+        const order = data.order.map(([column, direction]) => `${column}.${direction}`).join(this.columnDelimiter)
         const patch = {
           q: data.search.search,
           columns: this.columnNames,
-          searchBuilder: sb ? JSON.stringify(sb) : ""
+          searchBuilder: sb ? JSON.stringify(sb) : "",
+          order
         }
 
         this.setObjectOnHash(patch)
       },
       // Set the search input to the initial value extracted from the URL
-      search: { search: this.getSearchFromHash() },
+      search: { search: this.searchFromHash },
+      order: this.orderFromHash,
       stateLoadCallback: settings => {
         return {
-          search: { search: this.getSearchFromHash(), columns: this.makeColumns(this.getColumnStringFromHash()) }
+          search: {
+            order: this.orderFromHash,
+            search: this.searchFromHash,
+            columns: this.makeColumns(this.columnStringFromHash)
+          }
         }
       }
     })
@@ -156,10 +164,20 @@ class ExploreApp {
     if (this.searchBuilder) this.dataTable.searchBuilder.rebuild(JSON.parse(this.searchBuilder))
   }
 
+  get orderFromHash() {
+    const order = this.objectFromHash.order
+    return order
+      ? order.split(this.columnDelimiter).map(o => {
+          const parts = o.split(".")
+          return [parseInt(parts[0]), parts[1]]
+        })
+      : []
+  }
+
   columnDelimiter = "~"
 
   updateFromCheckbox(name) {
-    let columns = this.getColumnStringFromHash().split(this.columnDelimiter)
+    let columns = this.columnStringFromHash.split(this.columnDelimiter)
     if (columns.includes(name)) columns = columns.filter(i => i !== name)
     else columns.push(name)
 
@@ -169,7 +187,7 @@ class ExploreApp {
   }
 
   renderMeasureLinks() {
-    const visibleMeasures = this.getColumnStringFromHash().split(this.columnDelimiter)
+    const visibleMeasures = this.columnStringFromHash.split(this.columnDelimiter)
     // todo: set checked state
     const names = measures.map(m => m.Name)
     names.sort()
@@ -185,11 +203,11 @@ class ExploreApp {
     )
   }
 
-  getSearchFromHash() {
+  get searchFromHash() {
     return this.objectFromHash.q || ""
   }
 
-  getColumnStringFromHash() {
+  get columnStringFromHash() {
     return this.objectFromHash.columns || this.defaultColumns
   }
 
