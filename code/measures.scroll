@@ -304,12 +304,6 @@ conceptDescriptionParser
  float sortIndex 1.99
  description What is a short description of this language?
 
-subDescriptionParser
- // todo fix columnName crux path issue.
- extends conceptDescriptionParser
- description How is this language described here?
- crux description
-
 // discord
 discordParser
  extends abstractChatUrlMeasureParser
@@ -512,14 +506,10 @@ gitRepoParser
 
 // mainRepo
 mainRepoParser
- boolean isComputed true
- extends abstractStringMeasureParser
+ extends abstractComputedIntMeasureParser
  description Where is the main source code for this language?
- javascript
-  computeValue(concept) {
-    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
-    return repo || ""
-  }
+ string typeForCsvDocs string
+ cells measureNameCell urlCell
 
 // githubBigQuery
 githubBigQueryParser
@@ -604,9 +594,11 @@ githubRepoParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
  cells measureNameCell urlCell
- inScope subDescriptionParser
  contentKey url
  string sourceDomain github.com
+ descriptionParser
+  extends abstractStringMeasureParser
+  description What is the description of this repo on GitHub?
  createdParser
   extends abstractYearMeasureParser
   description When was the *Github repo* for this entity created?
@@ -2319,7 +2311,13 @@ rijuReplParser
  string sourceDomain riju.codes
  contentKey id
  float sortIndex 3
- inScope fileExtensionsParser subDescriptionParser websiteParser gitRepoParser exampleParser
+ inScope fileExtensionsParser gitRepoParser exampleParser
+ descriptionParser
+  extends abstractStringMeasureParser
+  description What is the description of this langauge?
+ websiteParser
+  extends abstractUrlMeasureParser
+  description What is the website for this language?
 
 // roadmap
 roadmapParser

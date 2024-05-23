@@ -1859,7 +1859,7 @@ class Tables {
 
 const computeds = {
   numberOfUsersEstimate(concept) {
-    const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
+    // const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
     const directs = ["meetup members", "githubRepo stars", "repoStats committers"]
     const customs = {
       wikipedia: v => 20,
@@ -1873,12 +1873,13 @@ const computeds = {
       annualReport: v => 1000
     }
 
+    const { values } = concept
     return Math.round(
-      lodash.sum(mostRecents.map(key => getMostRecentInt(concept, key))) +
-        lodash.sum(directs.map(key => parseInt(concept.get(key) || 0))) +
+      //lodash.sum(mostRecents.map(key => getMostRecentInt(concept, key))) +
+      lodash.sum(directs.map(key => parseInt(values[key] || 0))) +
         lodash.sum(
           Object.keys(customs).map(key => {
-            const val = concept.get(key)
+            const val = values[key]
             return val ? customs[key](val) : 0
           })
         )
@@ -1886,21 +1887,23 @@ const computeds = {
   },
 
   numberOfJobsEstimate(concept) {
-    return Math.round(getMostRecentInt(concept, "linkedInSkill") * 0.01) + getMostRecentInt(concept, "indeedJobs")
+    return 0 // Math.round(getMostRecentInt(concept, "linkedInSkill") * 0.01) + getMostRecentInt(concept, "indeedJobs")
   },
 
   exampleCount(concept) {
-    return concept.topDownArray.filter(node => node.isExampleCode).length
+    // todo: speedup?
+    let examples = 0
+    concept.measurements.forEach(measurement => {
+      if (measurement.isExampleCode) examples++
+      measurement.topDownArray.filter(node => node.isExampleCode).forEach(i => examples++)
+    })
+    return examples
   },
 
   score(concept) {},
 
   measurements(concept) {
-    let count = 0
-    concept.forEach(node => {
-      if (node.isMeasure) count++
-    })
-    return count
+    return concept.measurements.length
   },
 
   bookCount(concept) {
@@ -1920,45 +1923,46 @@ const computeds = {
   },
 
   isFinished(concept) {
-    return concept.get("isFinished") ?? this.lastActivity(concept) < 2014
+    return concept.values.isFinished ?? this.lastActivity(concept) < 2014
   },
 
   isOpenSource(concept, computer) {
-    return concept.get("isOpenSource") ?? (computeds.mainRepo(concept) ? true : "") // if it has a mainRepo then it must be open source.
+    return concept.values.isOpenSource ?? (computeds.mainRepo(concept) ? true : "") // if it has a mainRepo then it must be open source.
   },
 
   mainRepo(concept) {
-    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
-    return repo || ""
+    const { values } = concept
+    return values.gitRepo || values.githubRepo || values.gitlabRepo || values.sourcehutRepo || ""
   },
 
   hoplId(concept) {
-    const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
+    const id = concept.values.hopl?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)
   },
 
   lastActivity(concept) {
+    return 2020
     return lodash.max(concept.findAllWordsWithCellType("yearCell").map(word => parseInt(word.word)))
   },
 
   isLanguage(concept) {
-    return isLanguage(concept.get(PLDBKeywords.tags).split(" ")[0])
+    return isLanguage(concept.values[PLDBKeywords.tags].split(" ")[0])
   },
 
   rank(concept, computer) {
-    return computer.ranks[concept.get("id")].index
+    return computer.ranks[concept.id].index
   },
 
   pldbScore(concept, computer) {
-    return computer.ranks[concept.get("id")].pldbScore
+    return computer.ranks[concept.id].pldbScore
   },
 
   inboundLinks(concept, computer) {
-    return computer.inboundLinks[concept.get("id")].length
+    return computer.inboundLinks[concept.id].length
   },
 
   foundationScore(concept, computer) {
-    return computer.writtenIn[concept.get("id")].length
+    return computer.writtenIn[concept.id].length
   }
 }
 
@@ -1974,11 +1978,11 @@ class MeasureComputer {
   makeWrittenInCache() {
     const writtenInCache = {}
     this.concepts.forEach(concept => {
-      writtenInCache[concept.get("id")] = []
+      writtenInCache[concept.id] = []
     })
     this.concepts.forEach(concept => {
-      const conceptId = concept.get("id")
-      const writtenIn = concept.get("writtenIn")
+      const conceptId = concept.id
+      const writtenIn = concept.values.writtenIn
       if (!writtenIn) return
       writtenIn.split(" ").forEach(id => writtenInCache[id].push(conceptId))
     })
@@ -1987,13 +1991,11 @@ class MeasureComputer {
 
   makeInboundLinksCache() {
     const inboundLinks = {}
-    this.concepts.forEach(concept => {
-      inboundLinks[concept.get("id")] = []
-    })
+    this.concepts.forEach(concept => (inboundLinks[concept.id] = []))
 
     this.concepts.forEach(concept => {
-      const id = concept.get("id")
-      concept
+      const id = concept.id
+      concept.measurements
         .filter(node => node.isLinks)
         .forEach(node => {
           const links = node.content.split(" ")
@@ -2010,8 +2012,8 @@ class MeasureComputer {
 
   get(measureName, concept) {
     if (computeds[measureName]) {
-      if (!concept[measureName]) concept[measureName] = computeds[measureName](concept, this)
-      return concept[measureName]
+      if (!concept.values[measureName]) concept.values[measureName] = computeds[measureName](concept, this)
+      return concept.values[measureName]
     }
     throw new Error(`${measureName} not found`)
   }
@@ -2028,7 +2030,7 @@ const calcRanks = computer => {
   ]
 
   let objects = concepts.map(concept => {
-    const id = concept.get("id")
+    const id = concept.id
     const object = {}
     object.id = id
     categories.forEach(category => (object[category] = computer.get(category, concept)))
