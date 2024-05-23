@@ -1,11 +1,13 @@
-const DefaultPatchGrammar = {
-  rowDelimiter: "&",
-  columnDelimiter: "=",
-  encodedRowDelimiter: "%2E%2E%2E",
-  encodedColumnDelimiter: "%7E"
-}
 class Patch {
-  constructor(patchInput = "", grammar = DefaultPatchGrammar) {
+  constructor(
+    patchInput = "",
+    grammar = {
+      rowDelimiter: "&",
+      columnDelimiter: "=",
+      encodedRowDelimiter: "%2E%2E%2E",
+      encodedColumnDelimiter: "%7E"
+    }
+  ) {
     // The pipeline of encodings. Operations will be run in order for encoding (and reveresed for decoding).
     this.encoders = [
       {
@@ -13,12 +15,12 @@ class Patch {
         decode: str => decodeURIComponent(str)
       },
       {
-        encode: str => replaceAll(str, this.grammar.columnDelimiter, this.grammar.encodedColumnDelimiter),
-        decode: str => replaceAll(str, this.grammar.encodedColumnDelimiter, this.grammar.columnDelimiter)
+        encode: str => this.replaceAll(str, this.grammar.columnDelimiter, this.grammar.encodedColumnDelimiter),
+        decode: str => this.replaceAll(str, this.grammar.encodedColumnDelimiter, this.grammar.columnDelimiter)
       },
       {
-        encode: str => replaceAll(str, this.grammar.rowDelimiter, this.grammar.encodedRowDelimiter),
-        decode: str => replaceAll(str, this.grammar.encodedRowDelimiter, this.grammar.rowDelimiter)
+        encode: str => this.replaceAll(str, this.grammar.rowDelimiter, this.grammar.encodedRowDelimiter),
+        decode: str => this.replaceAll(str, this.grammar.encodedRowDelimiter, this.grammar.rowDelimiter)
       },
       {
         // Turn "%20" into "+" for prettier urls.
@@ -30,6 +32,9 @@ class Patch {
     if (typeof patchInput === "string") this.uriEncodedString = patchInput
     else if (Array.isArray(patchInput)) this.uriEncodedString = this.arrayToEncodedString(patchInput)
     else this.uriEncodedString = this.objectToEncodedString(patchInput)
+  }
+  replaceAll(str, search, replace) {
+    return str.split(search).join(replace)
   }
   objectToEncodedString(obj) {
     return Object.keys(obj)
@@ -70,7 +75,6 @@ class Patch {
       .reduce((str, encoder) => encoder.decode(str), encodedCell)
   }
 }
-const replaceAll = (str, search, replace) => str.split(search).join(replace)
 
 class ExploreApp {
   constructor() {

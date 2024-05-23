@@ -1986,6 +1986,7 @@ class MeasureComputer {
     this.writtenIn = this.makeWrittenInCache()
     this.inboundLinks = this.makeInboundLinksCache()
     this.ranks = calcRanks(this)
+    Disk.write(path.join(__dirname, "ranks.json"), JSON.stringify(this.ranks, null, 2))
   }
 
   makeWrittenInCache() {
@@ -2040,7 +2041,7 @@ const calcRanks = computer => {
     "numberOfUsersEstimate",
     "foundationScore",
     "numberOfJobsEstimate",
-    "inboundLinks",
+    "inboundLinksCount",
     "measurements"
   ]
 
