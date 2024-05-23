@@ -3,6 +3,7 @@ import ../code/conceptPage.scroll
 id pandas
 name Pandas
 appeared 2008
+creators Wes McKinney
 tags library
 website https://pandas.pydata.org
 
@@ -10,16 +11,24 @@ isOpenSource true
 writtenIn python
 fileType text
 centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ newestCommit 2024
+ commits 37649
+ committers 3746
+ files 2561
 country Various
 originCommunity https://github.com/pandas-dev
 
 twitter https://twitter.com/pandas_dev
 
+githubRepo https://github.com/pandas-dev/pandas/
+
 hasLineComments true
 hasFloats true
 hasIntegers true
 
-wikipedia https://pandas.pydata.org/docs/user_guide/10min.html
+wikipedia https://en.wikipedia.org/wiki/Pandas_(software)
  example
   >>>import pandas as pd
   Series

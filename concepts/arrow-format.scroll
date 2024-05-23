@@ -3,6 +3,7 @@ import ../code/conceptPage.scroll
 id arrow-format
 name Apache Arrow
 appeared 2016
+creators Wes McKinney
 tags binaryDataFormat
 website https://arrow.apache.org/
 aka feather
@@ -12,5 +13,9 @@ fileType binary
 centralPackageRepositoryCount 0
 country Various
 originCommunity The Apache Software Foundation
+
+githubRepo https://github.com/apache/arrow
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Arrow
 
 domainName arrow.apache.org
