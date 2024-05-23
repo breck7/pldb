@@ -815,7 +815,7 @@ image ${image}
     const links = {
       home: this.website,
       terminal: this.repl,
-      code: this.mainRepo,
+      code: this.parsed.mainRepo,
       menu_book: this.get("documentation"),
       mail: this.get("emailList"),
       wikipedia: this.get(`wikipedia`),
@@ -990,7 +990,7 @@ ${creatorsLinks}
         `${title} is written in ${writtenIn
           .split(" ")
           .map(link => this.makeATag(link))
-          .join(" & ")}`
+          .join(", ")}`
       )
 
     const twitter = this.get("twitter")
