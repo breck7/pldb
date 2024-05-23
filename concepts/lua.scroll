@@ -26,7 +26,7 @@ rosettaCode http://www.rosettacode.org/wiki/Category:Lua
 quineRelay Lua
 replit https://repl.it/languages/lua
 packageRepository https://luarocks.org/
-ubuntuPackage lua5.3
+ubuntuPackage lua5.4
 country Brazil
 originCommunity Tecgraf
 projectEuler Lua
@@ -51,18 +51,19 @@ subreddit https://reddit.com/r/lua
  memberCount
   2017 5571
   2022 15290
+  2024 20927
 leachim6 Lua
  filepath l/Lua.lua
  fileExtensions lua
  example
   print("Hello World")
-languageServerProtocolProject https://github.com/Alloyed/lua-lsp
- writtenIn lua
+languageServerProtocolProject https://github.com/LuaLS/lua-language-server
+ writtenIn lua c c++
 
 meetup https://www.meetup.com/topics/lua
  memberCount 4670
  groupCount 24
-keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
+keywords and break do else elseif end false for function goto if in local nil not or repeat return then true until while
 
 lineCommentToken --
 multiLineCommentTokens --[[ --]]
@@ -80,16 +81,60 @@ hasOperatorOverloading true
 hasLineComments true
  -- A comment
 hasMaps true
- https://www.lua.org/pil/2.5.html
+ myMap = {
+     key = "value",
+     [35] = 35,
+ }
 hasPrintDebugging true
+ print("hello world")
+hasOctals false
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
 hasStrings true
+ "Hello world"
 hasBooleans true
+ true
+ false
 hasWhileLoops true
+ while true do
+     print("hello")
+ end
 hasFunctions true
+ function myFunction()
+     print("hello")
+ end
 hasConditionals true
+ if true then
+     print("true")
+ end
 hasScientificNotation true
+ 1E2
+ .12345E+6
+ 1.e+0
+ 0x15e-2
+ 0x2.p10
+ 0X.8p-0
+ 0x1.Fp+0
+ 0x1fffp-16
+ 0x1p-2
+hasFloats true
+ -- [0-9]*\.[0-9]+([eE][+-]?[0-9]+)? -- (decimal float)
+ -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? -- (hex float)
+hasIntegers true
+ 80766866
+hasHexadecimals true
+ -- 0[xX][0-9a-fA-F]+ (integer)
+ -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? (float)
+ 0x5F3759DF
+ 0x0.1D
+ 0xA23p-4
+ 0X1.921FB54442D18P+1
+hasBitWiseOperators true
+ & | ~ << >> ~
+hasLists true
+ myList = {1, 2, 3}
+hasConstants true
+ pi <const> = 3.14159
 
 jupyterKernel https://github.com/pakozm/IPyLua
 jupyterKernel https://github.com/neomantra/lua_ipython_kernel
@@ -122,11 +167,11 @@ githubBigQuery Lua
  repos 34346
  users 23389
 
-linguistGrammarRepo https://github.com/textmate/lua.tmbundle
+linguistGrammarRepo https://github.com/LuaLS/lua.tmbundle
  firstCommit 2006
- lastCommit 2018
- committerCount 11
- commitCount 63
+ lastCommit 2024
+ committerCount 18
+ commitCount 115
  sampleCount 5
  example
   
