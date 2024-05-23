@@ -4,11 +4,11 @@ id grammar
 name Grammar
 appeared 2017
 creators Breck Yunits
-tags grammarLanguage
+tags grammarLanguage compiler
 website https://jtree.treenotation.org/langs/grammar/
 webRepl https://jtree.treenotation.org/designer/
 roadmap https://jtree.treenotation.org/langs/grammar/
-conceptDescription Grammar is a Tree Language for creating new Tree Languages. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
+conceptDescription Grammar is a Tree Language for creating new Tree Languages. A compiler compiler. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
 
 isPublicDomain true
 isOpenSource true

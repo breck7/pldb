@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id emscripten
+name Emscripten
+appeared 2010
+creators Alon Zakai
+tags compiler
+website https://emscripten.org/
+
+compilesTo wasm
+inputLanguages c cpp
+repoStats
+ firstCommit 2010
+ newestCommit 2024
+ commits 27555
+ committers 960
+ files 9369
+
+githubRepo https://github.com/emscripten-core/emscripten
+
+wikipedia https://en.wikipedia.org/wiki/Emscripten

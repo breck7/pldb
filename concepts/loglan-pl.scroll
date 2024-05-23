@@ -1,0 +1,26 @@
+import ../code/conceptPage.scroll
+
+id loglan-pl
+name LOGLAN
+appeared 1982
+creators Antoni Kreczmar and Andrzej Salwicki
+tags pl
+
+country Poland
+originCommunity Institute of Informatics
+reference https://semanticscholar.org/paper/47f155eaa3f41f9f53995976949bec6c61325439
+
+example
+ if boolean expression
+ then
+  sequence of statements
+ else
+  sequence of statements
+ fi
+
+hopl https://hopl.info/showlanguage.prx?exp=2180
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ January 1984|Pa?nstwowe Wydawn Nauk|Report on the Loglan 82 Programming Language|Polska Akademia Nauk and Antoni Mazurkiewicz|9788301053505
+ 1990|Springer|Loglan '88 - Report On The Programming Language (lecture Notes In Computer Science)|Antoni Kreczmar and Andrzej Salwicki and Marek Warpechowski|9783540523253
