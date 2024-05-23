@@ -9,6 +9,7 @@ website http://www.jemarch.net/poke
 conceptDescription GNU poke is a new interactive editor for binary data. Not limited to editing basic entities such as bits and bytes, it provides a full-fledged procedural, interactive programming language designed to describe data structures and to operate on them.
 
 isOpenSource true
+writtenIn c make expect m4 bourne-shell lex yacc vim-script css lisp sed awk scheme nix pascal
 influencedBy guile
 irc https://web.libera.chat/?channel=#poke
 demoVideo https://www.youtube.com/watch?v=KZ8meNZ_IhY&themeRefresh=1
@@ -37,5 +38,3 @@ gitRepo https://git.savannah.gnu.org/git/poke.git
 hasMultiLineComments true
  #!/usr/bin/poke -L
  !#
-
-writtenIn c make expect m4 bourne-shell lex yacc vim-script css lisp sed awk scheme nix pascal

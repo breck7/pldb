@@ -42,6 +42,8 @@ compiler
 configFormat
 contractLanguage
 dataNotation
+dataVis
+dataFlow
 dataValidationLanguage
 diffFormat
 esolang
@@ -86,6 +88,8 @@ bytecode bytecode format
 characterEncoding
 cloud cloud service
 compiler
+dataVis data visualization grammar
+dataFlow dataflow grammar
 editor
 esolang esoteric programming language
 filesystem

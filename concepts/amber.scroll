@@ -8,6 +8,7 @@ tags pl
 website https://amber-lang.com/
 conceptDescription Programming language that compiles to Bash. It's a high level programming language that makes it easy to create shell scripts. It's particularly well suited for cloud services.
 
+writtenIn rust bourne-shell markdown toml yaml
 compilesTo bash
 influencedBy javascript
 documentation https://docs.amber-lang.com/
@@ -41,5 +42,3 @@ example
  }
 
 githubRepo https://github.com/Ph0enixKM/Amber
-
-writtenIn rust bourne-shell markdown toml yaml

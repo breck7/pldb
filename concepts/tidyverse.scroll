@@ -4,12 +4,13 @@ id tidyverse
 name tidyverse
 appeared 2016
 creators Hadley Wickham
-tags library
+tags dataFlow library
 website https://www.tidyverse.org/
 conceptDescription The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
 isOpenSource true
 writtenIn markdown r yaml json tex
+relatedConcepts dplyr
 fileType text
 centralPackageRepositoryCount 0
 repoStats
