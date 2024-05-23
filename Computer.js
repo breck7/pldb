@@ -1754,12 +1754,12 @@ class Tables {
       2
     )
     const js =
-      Disk.read(path.join(__dirname, "browser", "autocompleter.js")) +
+      Disk.read(path.join(__dirname, "code", "browser", "autocompleter.js")) +
       "\n" +
       `var autocompleteJs = ` +
       json +
       "\n\n" +
-      Disk.read(path.join(__dirname, "browser", "client.js"))
+      Disk.read(path.join(__dirname, "code", "browser", "client.js"))
     return `plainText\n ` + js.replace(/\n/g, "\n ")
   }
 
