@@ -21,7 +21,7 @@ const hits = pldb
 	.map(lang =>
 		lodash.pick(lang, [
 			"id",
-			"title",
+			"name",
 			"pldbScore",
 			"rank",
 			"appeared",

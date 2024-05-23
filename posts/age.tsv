@@ -1,186 +1,216 @@
-id	filename	pldbScore	rank	appeared	tags	creators	ageAtCreation	foundationScore	numberOfUsersEstimate	numberOfJobsEstimate	inboundLinks	measurements
-JavaScript	javascript.scroll	24337	1	1995	pl	Brendan Eich	34	444	5962666	63993	485	140
-Python	python.scroll	24318	2	1991	pl	Guido van Rossum	35	355	2952597	46976	367	116
-C	c.scroll	24316	3	1972	pl	Dennis Ritchie	31	351	3793768	59919	380	95
-Java	java.scroll	24306	4	1995	pl	James Gosling	40	121	5581347	85206	129	105
-C++	cpp.scroll	24296	5	1985	pl	Bjarne Stroustrup	35	253	4128238	61098	264	75
-HTML	html.scroll	24282	6	1991	textMarkup	Tim Berners-Lee	36	427	5570873	69531	430	49
-Perl	perl.scroll	24246	7	1987	pl	Larry Wall	33	98	491984	13482	100	78
-CSS	css.scroll	24245	8	1996	stylesheetLanguage	Håkon Wium Lie	31	347	2881846	45617	349	45
-PHP	php.scroll	24244	9	1995	pl	Rasmus Lerdorf	27	54	2357682	30349	57	99
-Ruby	ruby.scroll	24244	10	1995	pl	Yukihiro Matsumoto	30	84	394798	11438	86	103
-Go	go.scroll	24229	11	2009	pl	Rob Pike and Ken Thompson and Robert Griesemer	53	71	687156	6403	73	94
-JSON	json.scroll	24215	12	2001	dataNotation	Douglas Crockford	46	509	355741	9228	528	43
-XML	xml.scroll	24214	13	1996	dataNotation	Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John Cowan	41	348	1917452	42277	356	39
-TypeScript	typescript.scroll	24214	14	2012	pl	Anders Hejlsberg	52	122	217940	1542	129	82
-SQL	sql.scroll	24211	15	1974	queryLanguage	Donald D. Chamberlin and Raymond F. Boyce	30	39	7179119	219617	48	49
-C#	csharp.scroll	24206	16	2000	pl	Anders Hejlsberg	40	55	217261	19747	57	79
-R	r.scroll	24196	17	1993	pl	Ross Ihaka and Robert Gentleman	39	27	1075613	14173	33	75
-Bash	bash.scroll	24184	18	1989	pl	Brian Fox	30	197	61747	4774	198	57
-PowerShell	powershell.scroll	24181	19	2006	pl	Jeffrey Snover	44	58	208708	19576	59	53
-Swift	swift.scroll	24171	20	2014	pl	Chris Lattner	36	26	364099	3754	27	84
-Rust	rust.scroll	24168	21	2010	pl	Graydon Hoare	33	87	308939	141	93	80
-Scala	scala.scroll	24146	22	2004	pl	Martin Odersky	46	24	139471	4525	24	84
-MATLAB	matlab.scroll	24134	23	1984	pl	Cleve Moler	45	12	2661579	32228	13	57
-Lua	lua.scroll	24134	24	1993	pl	Roberto Ierusalimschy	33	56	58860	1106	63	74
-Haskell	haskell.scroll	24127	25	1990	pl	Paul Hudak and John Hughes	38	75	37628	495	81	80
-Kotlin	kotlin.scroll	24116	26	2011	pl	Andrey Breslav	27	17	131287	5276	17	83
-Clojure	clojure.scroll	24070	27	2007	pl	Rich Hickey	48	20	59464	469	20	77
-CoffeeScript	coffeescript.scroll	24015	29	2009	pl	Jeremy Ashkenas	28	26	23320	216	27	65
-Objective-C	objective-c.scroll	24014	30	1984	pl	Brad Cox	40	44	12380	4276	47	64
-Julia	julia.scroll	24009	31	2012	pl	Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah	32	10	83769	85	10	84
-Lisp	lisp.scroll	24004	32	1958	pl	John McCarthy	31	118	61481	303	122	32
-SAS	sas.scroll	23997	33	1976	pl	Anthony James Barr	36	7	361103	4682	9	42
-Erlang	erlang.scroll	23993	34	1986	pl	Joe Armstrong and Robert Virding and Mike Williams	36	13	27148	308	13	69
-Prolog	prolog.scroll	23983	35	1972	pl	Alain Colmerauer	31	8	51482	446	13	56
-Mathematica	mathematica.scroll	23957	36	1988	pl	Stephen Wolfram	29	6	148741	1553	7	46
-Dart	dart.scroll	23949	38	2011	pl	Lars Bak	46	8	38325	208	8	68
-Pascal	pascal.scroll	23911	42	1970	pl	Niklaus Wirth	36	43	7708	102	49	61
-Ada	ada.scroll	23909	43	1980	pl	Jean Ichbiah	40	9	12116	2184	12	66
-Fortran	fortran.scroll	23876	46	1957	pl	John Backus	33	0	165151	1931	5	61
-Markdown	markdown.scroll	23864	48	2004	textMarkup	John Gruber and Aaron Swartz	31	955	12503	0	964	30
-Racket	racket.scroll	23859	49	1994	pl	Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi	36	21	7353	48	24	56
-TOML	toml.scroll	23855	50	2013	dataNotation	Tom Preston-Werner	34	168	20055	0	172	29
-MySQL	mysql.scroll	23826	54	1995	queryLanguage	David Axmark and Michael Widenius	33	0	2608362	47466	1	48
-D	d.scroll	23821	55	2001	pl	Walter Bright and Andrei Alexandrescu	44	22	6311	0	23	64
-Scheme	scheme.scroll	23796	57	1975	pl	Guy Steele and Gerald Jay Sussman	21	29	3796	1174	36	57
-Groovy	groovy.scroll	23757	61	2003	pl	James Strachan	34	12	6056	0	12	67
-awk	awk.scroll	23749	62	1977	pl	Alfred Aho and Peter J. Weinberger and Brian Kernighan	36	35	4680	7	36	44
-Tex	tex.scroll	23746	63	1978	pl	Donald Knuth	40	97	4276	3	101	38
-OCaml	ocaml.scroll	23728	64	1996	pl	Xavier Leroy	28	48	3341	0	51	66
-Coq	coq.scroll	23727	65	1989	pl	Thierry Coquand	28	8	10452	0	8	39
-F#	f-sharp.scroll	23727	66	2005	pl	Don Syme	40	17	4316	0	17	74
-Smalltalk	smalltalk.scroll	23677	71	1972	pl	Alan Kay and Dan Ingalls and Adele Goldberg	32	10	5400	0	10	46
-HAML	haml.scroll	23618	76	2006	template	Hampton Lintorn-Catlin	24	5	6547	0	8	36
-Node.js	nodejs.scroll	23601	79	2009	pl	Ryan Dahl	29	0	378129	6864	0	39
-Forth	forth.scroll	23583	83	1970	pl	Charles H. Moore	32	10	3230	0	12	44
-Liquid	liquid.scroll	23582	84	2008	template	Tobias Lütke	28	4	13801	325	4	27
-Deno	deno.scroll	23538	89	2018	compiler	Ryan Dahl	38	0	107126	0	1	30
-APL	apl.scroll	23535	90	1964	pl	Kenneth E. Iverson	44	4	3670	0	9	40
-ARM	arm.scroll	23518	93	1985	assembly	Sophie Wilson and Steve Furber	28	0	123423	7695	1	25
-J	j.scroll	23449	97	1990	pl	Kenneth E. Iverson and Roger Hui	70	0	3790	0	4	46
-SQLite	sqlite.scroll	23404	106	2000	queryLanguage	Dwayne Richard Hipp	39	0	5610	561	1	35
-ANTLR	antlr.scroll	23388	107	1992	grammarLanguage	Terence Parr	28	0	3048	30	5	38
-Delphi	delphi.scroll	23365	111	1995	pl	Anders Hejlsberg	35	0	7084	181	0	46
-JQuery	jquery.scroll	23350	112	2006	library	John Resig	22	0	1673925	24780	0	23
-sed	sed.scroll	23336	114	1974	pl	Lee E. McMahon	43	17	1865	0	17	29
-V	v.scroll	23319	118	2019	pl	Alexander Medvednikov	26	0	37480	0	0	28
-Tcl	tcl.scroll	23310	123	1988	pl	John Ousterhout	34	0	3106	0	1	47
-Sass	sass.scroll	23285	129	2006	stylesheetLanguage	Hampton Lintorn-Catlin	24	2	3241	0	2	30
-BASIC	basic.scroll	23282	131	1964	pl	John G. Kemeny and Thomas E. Kurtz	38	0	7025	0	0	38
-ActionScript	actionscript.scroll	23279	132	1998	pl	Gary Grossman	36	5	1630	88	5	35
-HTTP	http.scroll	23262	138	1989	protocol	Tim Berners-Lee	34	0	33780	771996	0	22
-PostScript	postscript.scroll	23232	147	1982	textMarkup	John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton	42	0	2585	0	1	39
-Common Lisp	common-lisp.scroll	23183	155	1984	pl	Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb	36	0	1891	24	1	45
-ColdFusion	coldfusion.scroll	23175	157	1995	pl	Joseph J. Allaire	26	3	1646	0	4	32
-Eiffel	eiffel.scroll	23152	164	1986	pl	Bertrand Meyer	36	0	1690	0	1	52
-ML	ml.scroll	23100	180	1973	pl	Robin Milner	39	0	2725	6	1	27
-M4	m4.scroll	23056	196	1977	pl	Brian Kernighan and Dennis Ritchie	35	61	715	0	61	29
-mlir	mlir.scroll	22980	220	2019	ir	Chris Lattner	41	0	2551	0	1	24
-Literate CoffeeScript	literate-coffeescript.scroll	22975	222	2013	pl	Jeremy Ashkenas	32	0	22814	0	0	19
-FLEX	flex.scroll	22953	229	1987	grammarLanguage	Vern Paxson	18	0	4484	0	0	24
-Scala.js	scala-js.scroll	22941	231	2013	pl	Martin Odersky	55	0	5785	0	0	22
-Semantic Versioning	semver.scroll	22937	233	2011	schema	Tom Preston-Werner	32	0	8425	0	0	20
-Emacs Lisp	emacs-lisp.scroll	22924	238	1985	pl	Richard Stallman	32	0	1645	0	0	36
-Wolfram Language	wolfram.scroll	22909	246	1988	pl	Stephen Wolfram	29	0	1626	0	0	35
-AMPL	ampl.scroll	22856	263	1985	pl	Robert Fourer and David Gay and Brian Kernighan	36	0	766	3	2	38
-Zuo	zuo.scroll	22833	274	2022	pl	Matthew Flatt	55	0	6265	0	0	19
-Modula-2	modula-2.scroll	22821	281	1978	pl	Niklaus Wirth	44	0	655	0	2	41
-v8	v8.scroll	22811	286	2008	vm	Lars Bak	43	0	31973	0	1	15
-Mojo	mojo.scroll	22801	289	2022	pl	Chris Lattner	44	1	1767	0	1	21
-Oberon	oberon.scroll	22785	296	1986	pl	Niklaus Wirth	52	0	810	0	1	34
-Rexx	rexx.scroll	22785	297	1979	pl	Mike Cowlishaw	31	4	435	40	4	39
-SOAP	soap.scroll	22776	306	1998	xmlFormat	Dave Winer and Don Box and Bob Atkinson and Mohsen Al-Ghosein	43	0	10535	7493	0	16
-Simula	simula.scroll	22758	313	1965	pl	Ole-Johan Dahl	34	0	1110	0	0	34
-ALGOL 60	algol-60.scroll	22743	323	1960	pl	John Backus and Friedrich L. Bauer and Julien Green and Charles Katz and John McCarthy and Peter Naur and Alan Perlis and Heinz Rutishauser and Klaus Samelson and Adriaan van Wijngaarden and Bernard Vauquois and Joseph Henry Wegstein and Michael Woodger	36	0	1260	0	2	22
-Scikit-learn	scikit-learn.scroll	22708	334	2007	library	David Cournapeau	27	0	125147	0	0	15
-Jekyll	jekyll.scroll	22702	338	2008	application	Tom Preston-Werner	29	0	76013	0	0	15
-MIME	mime.scroll	22702	339	1991	textDataFormat	Nathaniel Borenstein and Ned Freed	34	0	4380	1	0	18
-BCPL	bcpl.scroll	22675	347	1966	pl	Martin Richards	26	0	1050	0	0	29
-K	k.scroll	22635	358	1993	pl	Arthur Whitney	36	0	585	0	2	28
-EBNF	ebnf.scroll	22620	360	1977	grammarLanguage	Niklaus Wirth	43	0	1490	0	1	19
-Perl 6	perl-6.scroll	22613	363	2015	pl	Larry Wall	61	0	961	0	0	28
-B	b.scroll	22574	382	1969	pl	Ken Thompson and Dennis Ritchie	26	0	1380	0	0	22
-SCSS	scss.scroll	22564	386	2006	stylesheetLanguage	Hampton Lintorn-Catlin	24	30	201	0	30	35
-REBOL	rebol.scroll	22558	391	1997	pl	Carl Sassenrath	40	0	326	0	3	45
-Self	self.scroll	22533	405	1987	pl	David Ungar	32	0	461	0	1	30
-ECMAScript	ecmascript.scroll	22502	421	1997	pl	Brendan Eich	36	0	6570	0	0	15
-Q	q.scroll	22488	426	2003	pl	Arthur Whitney	46	0	765	0	0	26
-Arc	arc.scroll	22456	448	2001	pl	Paul Graham and Robert Morris	37	0	431	0	1	28
-Grammar	grammar.scroll	22442	457	2017	grammarLanguage	Breck Yunits	33	1	420	0	4	24
-BNF	bnf.scroll	22437	459	1956	grammarLanguage	John Backus and Peter Naur	32	0	2460	0	1	15
-URL	url.scroll	22434	460	1994	schema	Tim Berners-Lee	39	0	17850	0	1	13
-Inform	inform.scroll	22403	474	1993	pl	Graham Nelson	25	0	586	0	0	26
-Tree Notation	treenotation.scroll	22385	485	2017	dataNotation	Breck Yunits	33	0	420	0	6	22
-RFC	rfc.scroll	22377	491	1969	notation	Steve Crocker	25	0	3520	0	0	15
-Emacs	emacs-editor.scroll	22371	493	1976	editor	Richard Stallman and Guy Steele and Dave Moon	23	0	64338	0	0	13
-E	e.scroll	22357	500	1997	pl	Mark S. Miller	39	0	406	0	0	33
-Icon	icon.scroll	22353	501	1977	pl	Ralph Griswold	43	0	271	0	1	36
-LiveScript	livescript.scroll	22327	517	2011	pl	Jeremy Ashkenas and Satoshi Murakami and George Zahariev	30	0	395	0	0	32
-Streem	streem.scroll	22308	526	2014	pl	Yukihiro Matsumoto	49	0	5417	0	0	14
-dlvm	dlvm.scroll	22285	541	2017	ir	Chris Lattner	39	0	771	0	0	20
-Limbo	limbo.scroll	22260	555	1995	pl	Rob Pike	39	0	386	0	0	28
-Scroll	scroll.scroll	22154	620	2020	textMarkup	Breck Yunits	36	0	291	0	2	22
-CLU	clu.scroll	21934	736	1975	pl	Barbara Liskov	36	0	331	0	0	20
-LPC	lpc.scroll	21899	757	1995	pl	Lars Pensjö	32	0	256	0	0	22
-Oberon-2	oberon-2.scroll	21794	812	1991	pl	Niklaus Wirth and Hanspeter Mössenböck	57	0	165	0	1	22
-Homa	homa.scroll	21638	901	2018	protocol	John Ousterhout	64	0	176	0	0	21
-Sather	sather.scroll	21631	905	1990	pl	Steve Omohundro	31	0	126	0	0	25
-ROFF	roff.scroll	21623	909	1971	textMarkup	Joe Ossanna and Ken Thompson	43	0	220	0	1	16
-A+	aplus.scroll	21623	910	1988	pl	Arthur Whitney	31	0	306	0	0	16
-GML	ibm-gml.scroll	21487	980	1969	xmlFormat	Charles Goldfarb and Edward Mosher and Raymond Lorie	30	0	135	0	0	20
-CWEB	cweb.scroll	21469	989	1987	textMarkup	Donald Knuth	49	0	176	0	1	16
-Modula	modula.scroll	21330	1051	1975	pl	Niklaus Wirth	41	0	205	0	0	15
-Ohayo	ohayo.scroll	21317	1059	2017	pl	Breck Yunits	33	0	121	0	0	18
-femtolisp	femtolisp.scroll	21315	1060	2008	pl	Jeff Bezanson	28	0	1734	0	0	11
-Notation3	notation3.scroll	21295	1067	1998	dataNotation	Tim Berners-Lee	43	0	390	0	0	13
-FP	fp.scroll	21240	1094	1977	pl	John Backus	53	0	195	0	0	15
-Slideshow	slideshow.scroll	21145	1160	2000	textMarkup	Matthew Flatt and Robert Bruce Findler	33	0	118	0	0	16
-NetRexx	netrexx.scroll	21134	1167	1996	pl	Mike Cowlishaw	48	0	65	0	0	21
-json->url	json-url.scroll	21106	1181	2017	jsonFormat	Tim Bray	62	0	66	0	0	20
-FLOW-MATIC	flow-matic.scroll	21071	1196	1955	pl	Grace Hopper	49	0	425	0	0	12
-Raku	raku.scroll	21050	1208	2019	pl	Larry Wall	65	7	16	0	7	26
-Plankalkul	plankalkul.scroll	21021	1220	1948	pl	Konrad Zuse	38	0	790	0	0	11
-Speedcoding	speedcoding.scroll	20961	1257	1953	pl	John Backus	29	0	335	0	0	12
-scribble	scribble.scroll	20855	1300	1997	pl	Matthew Flatt	30	0	492	0	0	11
-PL/0	pl-0.scroll	20777	1337	1976	pl	Niklaus Wirth	42	0	220	0	0	12
-FL	fl.scroll	20745	1353	1989	pl	John Backus	65	0	90	0	0	14
-Bel	bel.scroll	20664	1392	2019	pl	Paul Graham	55	0	1	0	1	27
-Etoys	etoys.scroll	20619	1415	1996	pl	Alan Kay	56	0	175	0	0	12
-Dartmouth BASIC	dartmouth-basic.scroll	20495	1483	1964	pl	John G. Kemeny and Thomas E. Kurtz	38	0	230	0	0	11
-UTF-8	utf-8.scroll	20467	1491	1993	characterEncoding	Rob Pike and Ken Thompson	37	0	13435	0	0	9
-GCC	gcc.scroll	20381	1542	1987	compiler	Richard Stallman	34	0	21	0	0	16
-TQL	tql.scroll	20327	1575	2023	queryLanguage	Breck Yunits	39	0	11	0	0	19
-Little Implementation Language	lil.scroll	20299	1593	1974	pl	P. J. Plauger	30	0	41	0	0	14
-Note	note.scroll	20264	1622	2012	dataNotation	Breck Yunits	28	0	13	0	1	16
-Up-arrow notation	up-arrow-notation.scroll	20225	1649	1976	notation	Donald Knuth	38	0	1765	0	1	9
-ColorForth	colorforth.scroll	20136	1698	1992	pl	Charles H. Moore	54	0	86	0	1	11
-Space	space.scroll	20117	1713	2013	dataNotation	Breck Yunits	29	0	13	0	0	16
-PL360	pl360.scroll	20064	1737	1967	pl	Niklaus Wirth	33	0	60	0	0	12
-ivy	ivy.scroll	20050	1739	2014	pl	Rob Pike	58	0	1633	0	0	9
-SpiderMonkey	spidermonkey.scroll	19937	1803	1996	vm	Brendan Eich	35	0	21	0	0	13
-Plot	plot-lang.scroll	19887	1834	2006	pl	David A. Moon	50	0	1	0	0	15
-Corman Common Lisp	corman-common-lisp.scroll	19780	1883	1995	pl	Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb and Roger Corman	47	0	61	0	0	11
-Spice Lisp	spice-lisp.scroll	19720	1932	1980	pl	Scott Fahlman	32	0	55	0	0	11
-Lisp Machine Lisp	lisp-machine-lisp.scroll	19685	1948	1974	pl	David A. Moon and Richard Stallman and Daniel Weinreb	18	0	125	0	0	10
-Newsqueak	newsqueak.scroll	19646	1977	1990	pl	Rob Pike	34	0	115	0	0	10
-FORMAC	formac.scroll	19563	2031	1993	pl	Jean E. Sammet	65	0	40	0	0	11
-Flex language	flex-lang.scroll	19519	2084	1967	pl	Alan Kay	27	0	90	0	0	10
-Red	red-lang.scroll	19093	2363	1972	pl	John Backus	48	0	0	0	0	13
-ed	ed-editor.scroll	19061	2387	1973	editor	Ken Thompson	30	0	20	0	2	10
-Unix	unix.scroll	19035	2399	1969	os	Ken Thompson and Dennis Ritchie and Brian Kernighan and Douglas McIlroy and Joe Ossanna	26	0	12105	0	0	7
-Python for S60	python-for-s60.scroll	18849	2550	2006	pl	Guido van Rossum	50	0	105	0	0	9
-IT	it.scroll	18690	2626	1955	pl	Alan Perlis	33	0	0	0	1	11
-prompter	prompter.scroll	18543	2761	2011	pl	Graham Nelson	43	0	0	0	0	11
-atx	atx.scroll	18194	2990	2002	textMarkup	Aaron Swartz	16	0	0	0	1	10
-Bayer Expressions	bayer-expressions.scroll	18194	2991	2018	dataNotation	Dave Bayer	63	0	0	0	1	10
-Magic Paper	magic-paper.scroll	18047	3204	1963	pl	Jean E. Sammet	35	0	0	0	0	10
-Lola-2	lola-2.scroll	17300	3931	1994	pl	Niklaus Wirth	60	0	0	0	0	9
-xt3d	xt3d.scroll	17300	4216	2000	grammarLanguage	Shriram Krishnamurthi and Kathryn E. Gray and Paul T. Graunke	27	0	0	0	0	9
-Advice Taker	advice-taker.scroll	17143	4241	1958	pl	John McCarthy	31	0	20	0	0	8
-nroff	nroff.scroll	17143	4249	1972	textMarkup	Joe Ossanna	44	0	20	0	0	8
-patch	patch.scroll	16841	4297	1985	unixApplication	Larry Wall	31	0	20	0	1	7
-tilton	tilton.scroll	16795	4349	2000	pl	Douglas Crockford	45	0	1	0	0	8
-Ethereum	ethereum.scroll	16369	4419	2015	protocol	Vitalik Buterin	21	0	20	0	0	6
-lunar	lunar.scroll	16346	4445	2017	pl	David A. Moon	61	0	1	0	0	7
-UberScript	uberscript.scroll	15877	4802	2011	pl	James Strachan	42	0	0	0	0	7
+id	name	pldbScore	rank	appeared	tags	creators	ageAtCreation	foundationScore	numberOfUsersEstimate	numberOfJobsEstimate	inboundLinksCount	measurements
+javascript	JavaScript	24427	1	1995	pl	Brendan Eich	34	455	5962666	63993	499	140
+python	Python	24408	2	1991	pl	Guido van Rossum	35	361	2952597	46976	376	116
+c	C	24406	3	1972	pl	Dennis Ritchie	31	359	3793768	59919	390	95
+java	Java	24395	4	1995	pl	James Gosling	40	124	5581347	85206	133	105
+cpp	C++	24385	5	1985	pl	Bjarne Stroustrup	35	260	4128238	61098	273	76
+html	HTML	24373	6	1991	textMarkup	Tim Berners-Lee	36	436	5570873	69531	440	50
+css	CSS	24344	7	1996	stylesheetLanguage	Håkon Wium Lie	31	359	2881846	45617	361	46
+ruby	Ruby	24334	8	1995	pl	Yukihiro Matsumoto	30	84	394798	11438	87	104
+perl	Perl	24333	9	1987	pl	Larry Wall	33	98	491984	13482	100	79
+php	PHP	24331	10	1995	pl	Rasmus Lerdorf	27	54	2357682	30349	57	99
+go	Go	24319	11	2009	pl	Rob Pike and Ken Thompson and Robert Griesemer	53	71	687156	6403	73	94
+xml	XML	24312	12	1996	dataNotation	Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John W. Cowan	41	353	1917452	42277	361	40
+json	JSON	24309	13	2001	dataNotation	Douglas Crockford	46	520	355741	9228	539	44
+typescript	TypeScript	24304	14	2012	pl	Anders Hejlsberg	52	129	217940	1542	137	82
+sql	SQL	24300	15	1974	queryLanguage	Donald D. Chamberlin and Raymond F. Boyce	30	40	7179119	219617	49	49
+csharp	C#	24295	16	2000	pl	Anders Hejlsberg	40	56	217261	19747	59	79
+r	R	24284	17	1993	pl	Ross Ihaka and Robert Gentleman	39	30	1075613	14173	36	75
+bash	Bash	24274	18	1989	pl	Brian Fox	30	200	61747	4774	202	58
+powershell	PowerShell	24271	19	2006	pl	Jeffrey Snover	44	61	208708	19576	62	53
+swift	Swift	24260	20	2014	pl	Chris Lattner	36	27	364099	3754	29	84
+rust	Rust	24257	21	2010	pl	Graydon Hoare	33	89	308939	141	95	80
+lua	Lua	24237	22	1993	pl	Roberto Ierusalimschy	33	59	64497	1106	67	81
+scala	Scala	24237	23	2004	pl	Martin Odersky	46	26	139471	4525	26	84
+matlab	MATLAB	24219	24	1984	pl	Cleve Moler	45	12	2661579	32228	13	57
+haskell	Haskell	24217	25	1990	pl	Paul Hudak and John Hughes	38	76	37628	495	82	81
+kotlin	Kotlin	24201	26	2011	pl	Andrey Breslav	27	17	131287	5276	17	83
+clojure	Clojure	24157	27	2007	pl	Rich Hickey	48	20	59464	469	20	77
+lisp	Lisp	24109	29	1958	pl	John McCarthy	31	120	61481	303	125	33
+objective-c	Objective-C	24103	30	1984	pl	Brad Cox	40	44	12380	4276	47	64
+coffeescript	CoffeeScript	24102	31	2009	pl	Jeremy Ashkenas	28	26	23320	216	27	65
+julia	Julia	24096	32	2012	pl	Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah	32	10	83769	85	10	84
+sas	SAS	24087	33	1976	pl	Anthony James Barr	36	7	361103	4682	9	42
+erlang	Erlang	24079	34	1986	pl	Joe Armstrong and Robert Virding and Mike Williams	36	13	27148	308	13	69
+prolog	Prolog	24071	35	1972	pl	Alain Colmerauer	31	8	51482	446	13	56
+mathematica	Mathematica	24053	36	1988	pl	Stephen Wolfram	29	6	148741	1553	8	46
+dart	Dart	24038	38	2011	pl	Lars Bak	46	8	38325	208	8	68
+pascal	Pascal	24003	42	1970	pl	Niklaus Wirth	36	46	7708	102	52	61
+ada	Ada	23996	44	1980	pl	Jean Ichbiah	40	9	12116	2184	12	66
+fortran	Fortran	23964	46	1957	pl	John Backus	33	0	165151	1931	5	61
+markdown	Markdown	23961	47	2004	textMarkup	John Gruber and Aaron Swartz	31	970	12503	0	980	31
+racket	Racket	23948	49	1994	pl	Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi	36	21	7353	48	24	56
+toml	TOML	23944	50	2013	dataNotation	Tom Preston-Werner	34	175	20055	0	179	29
+mysql	MySQL	23914	54	1995	queryLanguage	David Axmark and Michael Widenius	33	0	2608362	47466	1	48
+d	D	23910	55	2001	pl	Walter Bright and Andrei Alexandrescu	44	22	6311	0	23	64
+scheme	Scheme	23886	57	1975	pl	Guy Steele and Gerald Jay Sussman	21	31	3796	1174	39	57
+groovy	Groovy	23856	61	2003	pl	James Strachan	34	13	6056	0	13	67
+awk	awk	23837	62	1977	pl	Alfred Aho and Peter J. Weinberger and Brian Kernighan	36	36	4680	7	37	44
+tex	Tex	23835	63	1978	pl	Donald Knuth	40	102	4276	3	107	38
+ocaml	OCaml	23816	65	1996	pl	Xavier Leroy	28	48	3341	0	51	66
+coq	Coq	23815	66	1989	pl	Thierry Coquand	28	8	10452	0	8	39
+f-sharp	F#	23810	67	2005	pl	Don Syme	40	17	4316	0	17	74
+spss	SPSS	23808	68	1968	pl	Norman H. Nie and C. Hadlai Hull and Dale H. Bent	25	0	965674	9587	2	30
+smalltalk	Smalltalk	23764	71	1972	pl	Alan Kay and Dan Ingalls and Adele Goldberg	32	10	5400	0	10	46
+haml	HAML	23714	77	2006	template	Hampton Lintorn-Catlin	24	5	6547	0	9	36
+nodejs	Node.js	23683	80	2009	pl	Ryan Dahl	29	0	378129	6864	0	39
+forth	Forth	23667	83	1970	pl	Charles H. Moore	32	10	3230	0	12	44
+liquid	Liquid	23666	84	2008	template	Tobias Lütke	28	4	13801	325	4	27
+deno	Deno	23623	90	2018	compiler	Ryan Dahl	38	0	107126	0	1	30
+yacc	Yacc	23622	91	1975	grammarLanguage compiler	Stephen C. Johnson	31	58	3087	17	59	28
+apl	APL	23622	92	1964	pl	Kenneth E. Iverson	44	4	3670	0	9	40
+arm	ARM	23605	94	1985	assembly	Sophie Wilson and Steve Furber	28	0	123423	7695	1	25
+latex	LaTeX	23553	97	1985	textMarkup	Leslie Lamport	44	0	7721	0	7	29
+j	J	23535	98	1990	pl	Kenneth E. Iverson and Roger Hui	70	0	3790	0	4	46
+sqlite	SQLite	23491	107	2000	queryLanguage	Dwayne Richard Hipp	39	0	5610	561	1	35
+antlr	ANTLR	23483	108	1992	grammarLanguage	Terence Parr	28	0	3048	30	6	38
+delphi	Delphi	23448	113	1995	pl	Anders Hejlsberg	35	0	7084	181	0	46
+jquery	JQuery	23429	114	2006	library	John Resig	22	0	1673925	24780	0	23
+sed	sed	23429	115	1974	pl	Lee E. McMahon	43	19	1865	0	19	29
+v	V	23401	122	2019	pl	Alexander Medvednikov	26	0	37480	0	0	28
+tcl	Tcl	23397	123	1988	pl	John Ousterhout	34	0	3106	0	1	47
+verilog	Verilog	23395	124	1984	hardwareDescriptionLanguage	Phil Moorby and Prabhu Goel	31	0	5176	246	0	50
+sass	Sass	23372	130	2006	stylesheetLanguage	Hampton Lintorn-Catlin	24	2	3241	0	2	30
+actionscript	ActionScript	23366	131	1998	pl	Gary Grossman	36	5	1630	88	5	35
+basic	BASIC	23365	133	1964	pl	John G. Kemeny and Thomas E. Kurtz	38	0	7025	0	0	38
+http	HTTP	23343	141	1989	protocol	Tim Berners-Lee	34	0	33780	771996	0	22
+postscript	PostScript	23318	147	1982	textMarkup	John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton	42	0	2585	0	1	39
+common-lisp	Common Lisp	23269	156	1984	pl	Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb	36	0	1891	24	1	45
+coldfusion	ColdFusion	23260	157	1995	pl	Joseph J. Allaire	26	3	1646	0	4	32
+eiffel	Eiffel	23239	163	1986	pl	Bertrand Meyer	36	0	1690	0	1	52
+ml	ML	23185	178	1973	pl	Robin Milner	39	0	2725	6	1	27
+lex	Lex	23170	186	1975	grammarLanguage	Mike Lesk and Eric Schmidt	30	58	1110	0	58	24
+m4	M4	23144	196	1977	pl	Brian Kernighan and Dennis Ritchie	35	65	715	0	65	29
+bourne-shell	Bourne shell	23121	205	1977	pl	Stephen Bourne	33	532	1370	0	532	19
+mlir	mlir	23065	220	2019	ir	Chris Lattner	41	0	2551	0	1	24
+literate-coffeescript	Literate CoffeeScript	23054	225	2013	pl	Jeremy Ashkenas	32	0	22814	0	0	19
+pandas	Pandas	23048	227	2008	library	Wes McKinney	23	0	5153	341	0	22
+matplotlib	Matplotlib	23035	231	2003	dataVis library	John D. Hunter	35	0	37826	0	0	18
+flex	FLEX	23033	232	1987	grammarLanguage	Vern Paxson	18	0	4484	0	0	24
+scala-js	Scala.js	23022	234	2013	pl	Martin Odersky	55	0	5785	0	0	22
+semver	Semantic Versioning	23015	237	2011	schema	Tom Preston-Werner	32	0	8425	0	0	20
+emacs-lisp	Emacs Lisp	23005	242	1985	pl	Richard Stallman	32	0	1645	0	0	36
+wolfram	Wolfram Language	22990	246	1988	pl	Stephen Wolfram	29	0	1626	0	0	35
+ampl	AMPL	22945	261	1985	pl	Robert Fourer and David Gay and Brian Kernighan	36	0	766	3	2	38
+jekyll	Jekyll	22932	266	2008	application	Tom Preston-Werner	29	0	76013	0	1	15
+zuo	Zuo	22912	277	2022	pl	Matthew Flatt	55	0	6265	0	0	19
+modula-2	Modula-2	22910	278	1978	pl	Niklaus Wirth	44	0	655	0	2	41
+numpy	NumPy	22904	281	1995	library	Travis Oliphant	24	0	2156	0	0	25
+v8	v8	22894	286	2008	vm	Lars Bak	43	0	31973	0	1	15
+rexx	Rexx	22894	288	1979	pl	Mike Cowlishaw	31	5	435	40	5	39
+mojo	Mojo	22885	292	2022	pl	Chris Lattner	44	1	1767	0	1	21
+oberon	Oberon	22871	297	1986	pl	Niklaus Wirth	52	0	810	0	1	34
+soap	SOAP	22854	308	1998	xmlFormat	Dave Winer and Don Box and Bob Atkinson and Mohsen Al-Ghosein	43	0	10535	7493	0	16
+scipy	SciPy	22841	312	2001	library	Travis Oliphant and Pearu Peterson and Eric Jones	30	0	25598	0	0	16
+simula	Simula	22840	314	1965	pl	Ole-Johan Dahl	34	0	1110	0	0	34
+algol-60	ALGOL 60	22831	322	1960	pl	John Backus and Friedrich L. Bauer and Julien Green and Charles Katz and John McCarthy and Peter Naur and Alan Perlis and Heinz Rutishauser and Klaus Samelson and Adriaan van Wijngaarden and Bernard Vauquois and Joseph Henry Wegstein and Michael Woodger	36	0	1260	0	2	22
+scikit-learn	Scikit-learn	22786	337	2007	library	David Cournapeau	27	0	125147	0	0	15
+mime	MIME	22780	341	1991	textDataFormat	Nathaniel Borenstein and Ned Freed	34	0	4380	1	0	18
+bcpl	BCPL	22757	348	1966	pl	Martin Richards	26	0	1050	0	0	29
+mochajs	mochajs	22738	353	2011	library	TJ Holowaychuk and Guillermo Rauch	23	0	30892	0	0	15
+k	K	22723	357	1993	pl	Arthur Whitney	36	0	585	0	2	28
+ebnf	EBNF	22703	362	1977	grammarLanguage	Niklaus Wirth	43	0	1490	0	1	19
+perl-6	Perl 6	22694	365	2015	pl	Larry Wall	61	0	961	0	0	28
+tla	TLA	22665	378	1999	pl	Leslie Lamport	58	0	1055	0	0	25
+b	B	22655	384	1969	pl	Ken Thompson and Dennis Ritchie	26	0	1380	0	0	22
+scss	SCSS	22648	386	2006	stylesheetLanguage	Hampton Lintorn-Catlin	24	31	201	0	31	35
+rebol	REBOL	22643	389	1997	pl	Carl Sassenrath	40	0	326	0	3	45
+self	Self	22617	405	1987	pl	David Ungar	32	0	461	0	1	30
+ecmascript	ECMAScript	22580	423	1997	pl	Brendan Eich	36	0	6570	0	0	15
+q	Q	22569	425	2003	pl	Arthur Whitney	46	0	765	0	0	26
+scroll	Scroll	22554	438	2019	textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup	Breck Yunits	35	0	380	0	2	29
+arc	Arc	22542	444	2001	pl	Paul Graham and Robert Morris	37	0	431	0	1	28
+grammar	Grammar	22527	456	2017	grammarLanguage compiler	Breck Yunits	33	1	420	0	4	24
+bnf	BNF	22519	460	1956	grammarLanguage	John Backus and Peter Naur	32	0	2460	0	1	15
+url	URL	22517	462	1994	schema	Tim Berners-Lee	39	0	17850	0	1	13
+stylus	Stylus	22494	470	2010	stylesheetLanguage	TJ Holowaychuk	22	4	391	0	4	22
+inform	Inform	22484	475	1993	pl	Graham Nelson	25	0	586	0	0	26
+treenotation	Tree Notation	22470	484	2017	dataNotation	Breck Yunits	33	0	420	0	6	22
+tidyverse	tidyverse	22467	486	2016	dataFlow library	Hadley Wickham	37	0	2071	0	1	15
+rfc	RFC	22454	496	1969	notation	Steve Crocker	25	0	3520	0	0	15
+emacs-editor	Emacs	22448	498	1976	editor	Guy Steele and Dave Moon	22	0	64338	0	0	13
+e	E	22438	504	1997	pl	Mark S. Miller	39	0	406	0	0	33
+icon	Icon	22437	505	1977	pl	Ralph Griswold	43	0	271	0	1	36
+livescript	LiveScript	22407	521	2011	pl	Jeremy Ashkenas and Satoshi Murakami and George Zahariev	30	0	395	0	0	32
+streem	Streem	22385	531	2014	pl	Yukihiro Matsumoto	49	0	5417	0	0	14
+dlvm	dlvm	22362	546	2017	ir	Chris Lattner	39	0	771	0	0	20
+limbo	Limbo	22341	556	1995	pl	Rob Pike	39	0	386	0	0	28
+occam	Occam	22137	683	1983	pl	David May	32	0	325	0	0	24
+luna-1	Luna	22080	708	2011	pl	TJ Holowaychuk	23	0	2898	0	0	13
+clu	CLU	22009	739	1975	pl	Barbara Liskov	36	0	331	0	0	20
+lpc	LPC	21977	757	1995	pl	Lars Pensjö	32	0	256	0	0	22
+oberon-2	Oberon-2	21874	812	1991	pl	Niklaus Wirth and Hanspeter Mössenböck	57	0	165	0	1	22
+bbc-basic	BBC BASIC	21822	834	1981	pl	Sophie Wilson	24	0	335	0	0	17
+homa	Homa	21712	904	2018	protocol	John Ousterhout	64	0	176	0	0	21
+sather	Sather	21708	906	1990	pl	Steve Omohundro	31	0	126	0	0	25
+roff	ROFF	21703	909	1971	textMarkup	Joe Ossanna and Ken Thompson	43	0	220	0	1	16
+aplus	A+	21697	912	1988	pl	Arthur Whitney	31	0	306	0	0	16
+ibm-gml	GML	21560	982	1969	xmlFormat	Charles Goldfarb and Edward Mosher and Raymond Lorie	30	0	135	0	0	20
+cweb	CWEB	21547	988	1987	textMarkup	Donald Knuth	49	0	176	0	1	16
+modula	Modula	21403	1055	1975	pl	Niklaus Wirth	41	0	205	0	0	15
+femtolisp	femtolisp	21392	1061	2008	pl	Jeff Bezanson	28	0	1734	0	0	11
+ohayo	Ohayo	21391	1063	2017	pl dataFlow dataVis	Breck Yunits	33	0	121	0	0	18
+notation3	Notation3	21372	1070	1998	dataNotation	Tim Berners-Lee	43	0	390	0	0	13
+fp	FP	21313	1100	1977	pl	John Backus	53	0	195	0	0	15
+slideshow	Slideshow	21218	1163	2000	textMarkup	Matthew Flatt and Robert Bruce Findler	33	0	118	0	0	16
+netrexx	NetRexx	21207	1173	1996	pl	Mike Cowlishaw	48	0	65	0	0	21
+json-url	json->url	21178	1184	2017	jsonFormat	Tim Bray	62	0	66	0	0	20
+flow-matic	FLOW-MATIC	21147	1197	1955	pl	Grace Hopper	49	0	425	0	0	12
+raku	Raku	21124	1210	2019	pl	Larry Wall	65	7	16	0	7	26
+plankalkul	Plankalkul	21098	1222	1948	pl	Konrad Zuse	38	0	790	0	0	11
+speedcoding	Speedcoding	21035	1259	1953	pl	John Backus	29	0	335	0	0	12
+scribble	scribble	20932	1302	1997	pl	Matthew Flatt	30	0	492	0	0	11
+dplyr	dplyr	20916	1310	2012	dataScience library	Hadley Wickham	33	0	315	0	2	11
+recfiles	Recfiles	20913	1312	2009	dataNotation	Jose E. Marchesi	29	0	39	0	0	21
+wenyan	文言文編程語言	20904	1316	2019	pl	Lingdong Huang	22	0	69	0	0	16
+poke	GNU Poke	20873	1336	2017	pl editor	Jose E. Marchesi	37	0	55	0	0	17
+pl-0	PL/0	20851	1343	1976	pl	Niklaus Wirth	42	0	220	0	0	12
+fl	FL	20817	1362	1989	pl	John Backus	65	0	90	0	0	14
+bel	Bel	20733	1400	2019	pl	Paul Graham	55	0	1	0	1	27
+etoys	Etoys	20691	1421	1996	pl	Alan Kay	56	0	175	0	0	12
+wax	Wax	20571	1487	2020	pl	Lingdong Huang	23	0	10	0	0	24
+dartmouth-basic	Dartmouth BASIC	20570	1488	1964	pl	John G. Kemeny and Thomas E. Kurtz	38	0	230	0	0	11
+utf-8	UTF-8	20538	1501	1993	characterEncoding	Rob Pike and Ken Thompson	37	0	13435	0	0	9
+gcc	GCC	20447	1546	1987	compiler	Richard Stallman	34	0	21	0	0	16
+tql	TQL	20393	1579	2023	queryLanguage	Breck Yunits	39	0	11	0	0	19
+vega	Vega	20378	1592	2013	dataVis library	Jeffrey Heer	34	0	169	0	0	11
+lil	Little Implementation Language	20369	1599	1974	pl	P. J. Plauger	30	0	41	0	0	14
+note	Note	20334	1627	2012	dataNotation	Breck Yunits	28	0	13	0	1	16
+arrow-format	Apache Arrow	20331	1631	2016	binaryDataFormat	Wes McKinney	31	0	22	0	0	15
+up-arrow-notation	Up-arrow notation	20300	1651	1976	notation	Donald Knuth	38	0	1765	0	1	9
+colorforth	ColorForth	20214	1703	1992	pl	Charles H. Moore	54	0	86	0	1	11
+space	Space	20182	1722	2013	dataNotation	Breck Yunits	29	0	13	0	0	16
+pl360	PL360	20135	1744	1967	pl	Niklaus Wirth	33	0	60	0	0	12
+ivy	ivy	20120	1746	2014	pl	Rob Pike	58	0	1633	0	0	9
+ibis	Ibis	20029	1802	2015	library	Wes McKinney	30	0	209	0	0	10
+spidermonkey	SpiderMonkey	20003	1811	1996	vm	Brendan Eich	35	0	21	0	0	13
+plot-lang	Plot	19948	1844	2006	pl	David A. Moon	50	0	1	0	0	15
+corman-common-lisp	Corman Common Lisp	19852	1890	1995	pl	Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb and Roger Corman	47	0	61	0	0	11
+spice-lisp	Spice Lisp	19792	1938	1980	pl	Scott Fahlman	32	0	55	0	0	11
+lisp-machine-lisp	Lisp Machine Lisp	19753	1956	1974	pl	David A. Moon and Richard Stallman and Daniel Weinreb	18	0	125	0	0	10
+newsqueak	Newsqueak	19714	1985	1990	pl	Rob Pike	34	0	115	0	0	10
+formac	FORMAC	19634	2038	1993	pl	Jean E. Sammet	65	0	40	0	0	11
+flex-lang	Flex language	19587	2092	1967	pl	Alan Kay	27	0	90	0	0	10
+psvg	PSVG	19375	2220	2020	pl	Lingdong Huang	23	0	2	0	0	12
+red-lang	Red	19155	2371	1972	pl	John Backus	48	0	0	0	0	13
+ed-editor	ed	19129	2395	1973	editor	Ken Thompson	30	0	20	0	2	10
+unix	Unix	19104	2407	1969	os	Ken Thompson and Dennis Ritchie and Brian Kernighan and Douglas McIlroy and Joe Ossanna	26	0	12105	0	0	7
+arquero	Arquero	18960	2534	2020	dataFlow library	Jeffrey Heer	41	0	23	0	0	10
+python-for-s60	Python for S60	18915	2560	2006	pl	Guido van Rossum	50	0	105	0	0	9
+it	IT	18757	2637	1955	pl	Alan Perlis	33	0	0	0	1	11
+prompter	prompter	18605	2774	2011	pl	Graham Nelson	43	0	0	0	0	11
+loglan	Loglan	18574	2825	1955	constructedLanguage	James Cooke Brown	34	0	3515	0	0	6
+atx	atx	18256	3003	2002	textMarkup	Aaron Swartz	16	0	0	0	1	10
+bayer-expressions	Bayer Expressions	18256	3004	2018	dataNotation	Dave Bayer	63	0	0	0	1	10
+magic-paper	Magic Paper	18104	3221	1963	pl	Jean E. Sammet	35	0	0	0	0	10
+lola-2	Lola-2	17355	3946	1994	pl	Niklaus Wirth	60	0	0	0	0	9
+xt3d	xt3d	17355	4231	2000	grammarLanguage	Shriram Krishnamurthi and Kathryn E. Gray and Paul T. Graunke	27	0	0	0	0	9
+advice-taker	Advice Taker	17202	4255	1958	pl	John McCarthy	31	0	20	0	0	8
+nroff	nroff	17202	4263	1972	textMarkup	Joe Ossanna	44	0	20	0	0	8
+patch	patch	16903	4310	1985	unixApplication	Larry Wall	31	0	20	0	1	7
+tilton	tilton	16849	4365	2000	pl	Douglas Crockford	45	0	1	0	0	8
+gnu-emacs-editor	GNU Emacs	16751	4393	1985	editor	Richard Stallman	32	0	20	0	0	7
+ethereum	Ethereum	16423	4435	2015	protocol	Vitalik Buterin	21	0	20	0	0	6
+lunar	lunar	16398	4461	2017	pl	David A. Moon	61	0	1	0	0	7
+elephant	Elephant 2000	16381	4566	1989	pl	John McCarthy	62	0	0	0	0	8
+uberscript	UberScript	15930	4820	2011	pl	James Strachan	42	0	0	0	0	7
