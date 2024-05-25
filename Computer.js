@@ -1950,6 +1950,15 @@ const computeds = {
     return concept.has("writtenIn") ? concept.get("writtenIn").split(" ").length : ""
   },
 
+  latestMajorVersion(concept) {
+    let version = concept.get("latestVersion")
+    if (!version) return ""
+    version = version.replace(/[^0-9\.]/g, "")
+    version = version.split(".")[0]
+    version = parseInt(version)
+    return version > 999 ? "" : version // dont include it if it uses a year as aversion, like 2024
+  },
+
   hoplId(concept) {
     const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)

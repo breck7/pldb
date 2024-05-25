@@ -11,6 +11,10 @@ gitsParser
  description A link to their GitHub or GitLab or other Git portfolio.
  extends abstractUrlMeasureParser
  float sortIndex 1.2
+interviewParser
+ description A link to an interview.
+ extends abstractUrlMeasureParser
+ float sortIndex 1.21
 twitterParser
  extends abstractUrlMeasureParser
  float sortIndex 1.3
@@ -72,6 +76,25 @@ wikipedia https://en.wikipedia.org/wiki/Hadley_Wickham
 id Alan Perlis
 born 1922
 wikipedia https://en.wikipedia.org/wiki/Alan_Perlis
+
+id Mitchel Resnick
+born 1956
+wikipedia https://en.wikipedia.org/wiki/Mitchel_Resnick
+
+id John Maloney
+interview https://faberllull.cat/en/resident.cfm?id=38257&url=john-maloney.htm
+
+id Jens Mönig
+gits https://github.com/jmoenig
+twitter https://x.com/moenig
+
+id Bernat Romagosa
+website http://romagosa.work/
+gits https://github.com/bromagosa
+
+id Yasmin Kafai
+website https://www.yasminkafai.com/
+wikipedia https://en.wikipedia.org/wiki/Yasmin_Kafai
 
 id Alfred Aho
 born 1941

@@ -2474,6 +2474,11 @@ latestVersionParser
  description What is the latest version?
  float sortIndex 1.33
 
+latestMajorVersionParser
+ description What is the latest major version (if using semver)?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+
 usesSemanticVersioningParser
  extends abstractBooleanMeasureParser
  description Does the official release of the language use semantic versioning?
