@@ -6,11 +6,9 @@ appeared 1989
 creators Brian Fox
 tags pl
 website https://www.gnu.org/software/bash/
+latestVersion 5.2
 aka Shell
 aka Bourne Again Shell
-latestVersion 5.2
-
-gitRepo https://git.savannah.gnu.org/git/bash.git
 
 isOpenSource true
 isOpenSource true
@@ -48,6 +46,7 @@ leachim6 Shell
 languageServerProtocolProject https://github.com/mads-hartmann/bash-language-server
  writtenIn typescript
 
+gitRepo https://git.savannah.gnu.org/git/bash.git
 keywords if then do else elif while until for in esac fi fin fil done exit set unset export function
 
 lineCommentToken #

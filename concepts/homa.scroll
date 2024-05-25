@@ -6,13 +6,13 @@ appeared 2018
 creators John Ousterhout
 tags protocol
 website https://web.stanford.edu/~ouster/cgi-bin/home.php
+spec https://github.com/PlatformLab/HomaModule/blob/master/protocol.md
 latestVersion v2.0
 usesSemanticVersioning false
 conceptDescription TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
 
 isOpenSource true
 writtenIn python c cpp markdown bash make bourne-shell perl cmake
-spec https://github.com/PlatformLab/HomaModule/blob/master/protocol.md
 influencedBy tcp
 documentation https://homa-transport.atlassian.net/wiki/spaces/HOMA/overview
 repoStats
