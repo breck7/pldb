@@ -1,31 +1,21 @@
 import ../code/conceptPage.scroll
 
 id lemon
-name lemon
-appeared 2017
-creators Zhicheng Wei
-tags pl
-website http://www.lemon-lang.org/
+name Lemon
+appeared 1989
+ > Lemon was originally written by Richard Hipp sometime in the late 1980s on a Sun4 Workstation using K&R C. There was a companion LL(1) parser generator program named "Lime". The Lime source code has been lost.
+  The lemon.c source file was originally many separate files that were compiled together to generate the "lemon" executable. Sometime in the 1990s, the individual source code files were combined together into the current single large "lemon.c" source file. You can still see traces of original filenames in the code.
+  Since 2001, Lemon has been part of the SQLite project and the source code to Lemon has been managed as a part of the SQLite source tree in the following files:
+  https://sqlite.org/src/doc/trunk/doc/lemon.html
+creators Dwayne Richard Hipp
+tags grammarLanguage
+website https://www.hwaci.com/sw/lemon/
+conceptDescription The Lemon program is an LALR(1) parser generator. It takes a context free grammar and converts it into a subroutine that will parse a file using that grammar.
 
-writtenIn c markdown make
-repoStats
- firstCommit 2017
- commits 35
- committers 2
- files 107
- newestCommit 2018
-country Singapore
-originCommunity https://github.com/lemon-lang
+isPublicDomain true
+writtenIn c
+compilesTo c
+influencedBy bison yacc
+documentation https://sqlite.org/src/doc/trunk/doc/lemon.html
 
-githubRepo https://github.com/lemon-lang/lemon
- firstCommit 2017
- stars 489
- forks 39
- subscribers 23
- created 2017
- updated 2022
- description Lemon is open source, embeddable, lightweight programming language http://www.lemon-lang.org
- issues 0
-
-domainName lemon-lang.org
- registered 2016
+wikipedia https://en.wikipedia.org/wiki/Lemon_(parser_generator)

@@ -1162,7 +1162,7 @@ ${creatorsLinks}
 
     if (eventsPage.length >= 1) facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
-    const faqPage = this.getAll("faqPageUrl")
+    const faqPage = this.getAll("faq")
 
     if (faqPage.length >= 1) facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
@@ -1730,7 +1730,7 @@ class Tables {
 
   get originCommunities() {
     const files = lodash.sortBy(
-      this.pldb.filter(file => file.isLanguage && file.originCommunity.length),
+      this.pldb.filter(file => file.isLanguage && file.originCommunity?.length),
       "rank"
     )
 

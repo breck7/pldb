@@ -405,8 +405,8 @@ theLanguageParser
  float sortIndex 3
  single true
 
-// faqPageUrl
-faqPageUrlParser
+// faq
+faqParser
  extends abstractUrlMeasureParser
  description What is a URL to a frequently asked questions page for this language?
  single false
@@ -2436,7 +2436,7 @@ twitterParser
 // type
 //
  tagCell
-  enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp
+  enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication
  highlightScope constant.language
 tagsParser
  float sortIndex 1.2
