@@ -6,6 +6,7 @@ appeared 2019
 creators Mike Bostock
 tags template library
 website https://observablehq.com/@observablehq/htl
+latestVersion 0.3.1
 conceptDescription Inspired by lit-html and HTM, and referencing the fantastically precise HTML5 spec, we built hypertext literal: a tagged template literal for HTML which interpolates values based on context, allowing automatic escaping and the interpolation of non-serializable values, such as event listeners, style objects, and other DOM nodes.
 
 writtenIn html javascript json markdown yaml

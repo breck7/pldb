@@ -74,12 +74,11 @@ class PLDBCli extends ScrollSetCLI {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
-    const gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
     this.concepts.forEach(async file => {
       if (lang && !lang.includes(file.id)) return
       const { mainRepo } = file
       if (!mainRepo) return
-      const targetFolder = path.join(gitsFolder, file.id)
+      const targetFolder = path.join(this.gitsFolder, file.id)
       //if (Disk.exists(targetFolder)) return
       if (file.repoStats_files) return
       //if (file.isFinished) return
@@ -95,6 +94,29 @@ class PLDBCli extends ScrollSetCLI {
         console.error(err, file.id)
       }
     })
+  }
+
+  gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
+
+  async crawlVersionsCommand(lang) {
+    this.concepts.forEach(async file => {
+      if (lang && !lang.includes(file.id)) return
+      const { mainRepo } = file
+      if (!mainRepo) return
+      const targetFolder = path.join(this.gitsFolder, file.id)
+      if (file.latestVersion) return
+      try {
+        const version = this.extractVersion(targetFolder)
+        if (version) this.setAndSave(file, "latestVersion", version)
+      } catch (err) {
+        console.error(err, file.id)
+      }
+    })
+  }
+
+  extractVersion(folderName) {
+    const packageJson = path.join(folderName, "package.json")
+    if (Disk.exists(packageJson)) return require(packageJson).version
   }
 
   searchForConceptByFileExtensions(extensions = []) {
