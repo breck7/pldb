@@ -3,7 +3,10 @@ import ../code/conceptPage.scroll
 id mercurial
 name Mercurial
 appeared 2005
+creators Olivia Mackall and Pierre-Yves David
 tags versionControlApplication
+latestVersion 6.6.3
+download https://www.mercurial-scm.org/downloads
 
 isOpenSource true
 fileType text
@@ -20,3 +23,5 @@ wikipedia https://en.wikipedia.org/wiki/Mercurial
  backlinksCount 228
  revisionCount 752
  appeared 2005
+
+maintainerOrganization Software Freedom Conservancy

@@ -6,12 +6,14 @@ appeared 1993
 creators Ross Ihaka and Robert Gentleman
 tags pl
 website https://www.r-project.org
+blog https://developer.r-project.org/Blog/public/
+releaseNotes https://developer.r-project.org/
+latestVersion 4.4.0
+download https://cran.r-project.org/bin/windows/base/
 
 isOpenSource true
 tryItOnline r
-officialBlogUrl https://developer.r-project.org/Blog/public/
 fileExtensions r R RData rds rda
-releaseNotesUrl https://developer.r-project.org/
 visualParadigm false
 clocExtensions expr-dist R r rd rprofile rsx
 fileType text
@@ -19,7 +21,6 @@ wordRank 179
 documentation https://devdocs.io/r/
 emailList https://www.r-project.org/mail.html
 faq https://cran.r-project.org/doc/FAQ/R-FAQ.html
-downloadPageUrl https://cran.r-project.org/bin/windows/base/
 antlr https://github.com/antlr/grammars-v4/tree/master/r
 monaco r
 codeMirror r

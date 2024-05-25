@@ -347,13 +347,6 @@ devDocumentationParser
  single false
  float sortIndex 2.5
 
-// downloadPageUrl
-downloadPageUrlParser
- extends abstractUrlMeasureParser
- description What is a URL to the download page for this language?
- single false
- float sortIndex 2.5
-
 // ebook
 ebookParser
  extends abstractUrlMeasureParser
@@ -2114,12 +2107,12 @@ oldNameParser
  description What is the old name of this language?
  extends abstractStringMeasureParser
 
-// officialBlogUrl
-officialBlogUrlParser
+// blog
+blogParser
  extends abstractUrlMeasureParser
  description What is the URL to the official blog for this language?
  single false
- float sortIndex 2.4
+ float sortIndex 1.33
 
 // originCommunity
 originCommunityParser
@@ -2297,10 +2290,10 @@ inputLanguagesParser
  extends abstractFilenameRelationshipParser
 
 // releaseNotes
-releaseNotesUrlParser
+releaseNotesParser
  extends abstractUrlMeasureParser
  description What is the URL to the release notes or changelog for this language?
- float sortIndex 2.4
+ float sortIndex 1.33
 
 // replit
 replitParser
@@ -2456,16 +2449,17 @@ ubuntuPackageParser
  extends stringCell
  description Version numbers.
 
-// todo Grammar should probably have pattern matching. And then we can detect semantic versions in the below.
-versionParser
- description What is the version and release year?
- // perhaps in the future we could get more specific to month. Maybe even include what new features were added.
- cells yearCell anyCell
+// download
+downloadParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the download page for this language?
+ single false
+ float sortIndex 1.33
 
-versionsParser
- description What are the release years and versions of this language?
- extends abstractHashMapMeasureParser
- catchAllParser versionParser
+latestVersionParser
+ extends abstractStringMeasureParser
+ description What is the latest version?
+ float sortIndex 1.33
 
 usesSemanticVersioningParser
  extends abstractBooleanMeasureParser

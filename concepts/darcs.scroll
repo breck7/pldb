@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id darcs
+name Darcs Advanced Revision Control System
+appeared 2003
+creators David Roundy
+tags versionControlApplication
+website https://darcs.net/
+latestVersion 2.18.2
+standsFor Darcs Advanced Revision Control System
+conceptDescription Darcs is a free and open source, cross-platform version control system, like git, mercurial or svn but with a very different approach: focus on changes rather than snapshots. Darcs offers a freer way of working, and a simpler user interface. Darcs does not require a central server, and works perfectly in offline mode.
+
+writtenIn haskell
+irc https://darcs.net/IRC
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://www.gnu.org/software/gnu-arch/
+
+subreddit http://reddit.com/r/darcs
+pygmentsHighlighter Darcs Patch
+ filename diff.py
+ fileExtensions dpatch darcspatch
+
+wikipedia https://en.wikipedia.org/wiki/Darcs
+
+githubLanguage Darcs Patch
+ fileExtensions darcspatch dpatch
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope none
+ aliases dpatch
+maintainerOrganization Software Freedom Conservancy
+maintainerOrganization Software Freedom Conservancy

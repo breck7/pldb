@@ -6,9 +6,8 @@ appeared 2018
 creators John Ousterhout
 tags protocol
 website https://web.stanford.edu/~ouster/cgi-bin/home.php
+latestVersion v2.0
 usesSemanticVersioning false
-versions
- 2022 v2.0
 conceptDescription TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
 
 isOpenSource true

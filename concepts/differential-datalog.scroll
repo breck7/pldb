@@ -5,9 +5,8 @@ name Differential Datalog
 appeared 2018
 creators Leonid Ryzhyk
 tags pl
+latestVersion 1.2.3
 aka DDlog
-versions
- 2021 1.2.3
 conceptDescription DDlog is a programming language for incremental computation. It is well suited for writing programs that continuously update their output in response to input changes. A DDlog programmer does not write incremental algorithms; instead they specify the desired input-output mapping in a declarative manner.
 
 isOpenSource true

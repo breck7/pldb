@@ -5,29 +5,21 @@ name Linux
 appeared 1991
 creators Linus Torvalds
 tags os
-versions
- 1991 0.01
- 1994 1.0.0
- 1996 2.0.0
- 1999 2.2.0
- 2001 2.4.0
- 2003 2.6.0
- 2011 3.0.0
- 2015 4.0.0
- 2019 5.0.0
- 2022 6.0.0
+website https://www.kernel.org/
+releaseNotes https://www.kernel.org/category/releases.html
+latestVersion 6.6
+blog https://www.kernel.org/category/site-news.html
+releaseNotes https://www.kernel.org/
 
 isOpenSource true
-releaseNotesUrl https://www.kernel.org/
-fileType na
+faq https://www.kernel.org/category/faq.html
 wordRank 882
-centralPackageRepositoryCount 0
-country United States
-originCommunity Linux Kernel Organization, Inc
+country Finland
 
 subreddit https://www.reddit.com/r/kernel/
 subreddit https://www.reddit.com/r/linux/
 
+gitRepo https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 meetup https://www.meetup.com/topics/linux
  memberCount 979264
  groupCount 2235
@@ -49,3 +41,5 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Linux Programming Interface: A Linux and Unix System Programming Handbook|2010|Michael Kerrisk|10286833|4.59|403|25
  Beginning Linux Programming|1996|Neil Matthew|463869|3.76|131|8
+
+maintainerOrganization Linux Kernel Organization, Inc

@@ -6,15 +6,17 @@ appeared 1995
 creators Yukihiro Matsumoto
 tags pl
 website https://www.ruby-lang.org
+blog https://www.ruby-lang.org/en/community/weblogs/
+releaseNotes https://www.ruby-lang.org/en/downloads/releases/
+download https://www.ruby-lang.org/en/downloads/
+latestVersion 3.3.1
 conference https://rubyconf.org RubyConf
 
 isOpenSource true
 writtenIn ruby c yaml markdown rust erb m4 json python bourne-shell assembly-language make perl bash scheme cpp javascript toml yacc css lisp awk xml csv diff d idl sed z-shell html dockerfile
 spec https://www.iso.org/standard/59579.html
 tryItOnline ruby
-officialBlogUrl https://www.ruby-lang.org/en/community/weblogs/
 fileExtensions rb
-releaseNotesUrl https://www.ruby-lang.org/en/downloads/releases/
 visualParadigm false
 clocExtensions appraisals berksfile brewfile builder buildfile capfile dangerfile deliverfile eye fastfile gemfile gemfile.lock gemspec god guardfile irbrc jarfile jbuilder mavenfile mspec podfile podspec pryrc puppetfile rabl rake rb rbuild rbw rbx ru snapfile thor thorfile vagrantfile watchr
 fileType text
@@ -22,7 +24,6 @@ wordRank 5813
 documentation https://www.ruby-lang.org/en/documentation/
 emailList https://www.ruby-lang.org/en/community/mailing-lists/
 faq https://www.ruby-lang.org/en/documentation/faq/
-downloadPageUrl https://www.ruby-lang.org/en/downloads/
 antlr https://github.com/antlr/grammars-v4/tree/master/ruby
 monaco ruby
 codeMirror ruby

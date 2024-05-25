@@ -6,14 +6,15 @@ appeared 2004
 creators Martin Odersky
 tags pl
 website http://www.scala-lang.org
+blog https://www.scala-lang.org/blog/
+releaseNotes https://www.scala-lang.org/download/all.html
+download https://scala-lang.org/download/
 webRepl https://scastie.scala-lang.org/
 
 isOpenSource true
 runsOnVm jvm
 tryItOnline scala
-officialBlogUrl https://www.scala-lang.org/blog/
 fileExtensions scala sc
-releaseNotesUrl https://www.scala-lang.org/download/all.html
 visualParadigm false
 clocExtensions kojo sbt scala
 fileType text
@@ -21,7 +22,6 @@ documentation https://docs.scala-lang.org/
 emailList https://www.scala-lang.org/community/
 eventsPageUrl https://scala-lang.org/events/
 faq https://docs.scala-lang.org/tutorials/FAQ/index.html
-downloadPageUrl https://scala-lang.org/download/
 antlr https://github.com/antlr/grammars-v4/tree/master/scala
 monaco scala
 rosettaCode http://www.rosettacode.org/wiki/Category:Scala

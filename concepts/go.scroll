@@ -6,16 +6,17 @@ appeared 2009
 creators Rob Pike and Ken Thompson and Robert Griesemer
 tags pl
 website https://go.dev/
+blog https://go.dev/blog/
+releaseNotes https://go.dev/doc/devel/release
+download https://go.dev/dl/
 webRepl https://go.dev/play
 aka golang
 
 isOpenSource true
 writtenIn go assembly-language c markdown json bash html bourne-shell javascript perl yaml make css logos dockerfile cpp fortran-90 csv python objective-c awk matlab
 tryItOnline go
-officialBlogUrl https://go.dev/blog/
 gdbSupport true
 fileExtensions go
-releaseNotesUrl https://go.dev/doc/devel/release
 visualParadigm false
 clocExtensions go ʕ◔ϖ◔ʔ
 fileType text
@@ -23,7 +24,6 @@ wordRank 123
 documentation https://devdocs.io/go/
 emailList https://groups.google.com/g/golang-nuts
 faq https://go.dev/doc/faq
-downloadPageUrl https://go.dev/dl/
 antlr https://github.com/antlr/grammars-v4/tree/master/golang
 monaco go
 codeMirror go

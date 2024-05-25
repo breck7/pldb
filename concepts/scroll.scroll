@@ -6,6 +6,9 @@ appeared 2019
 creators Breck Yunits
 tags textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup
 website https://scroll.pub/
+blog https://scroll.pub/blog/
+releaseNotes https://scroll.pub/releaseNotes.html
+latestVersion 93.2.0
 webRepl https://try.scroll.pub/
 conceptDescription Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
 
@@ -16,7 +19,6 @@ influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordp
 subsetOf treenotation
 relatedConcepts markdown treenotation grammar
 fileExtensions scroll
-releaseNotesUrl https://scroll.pub/releaseNotes.html
 faq https://scroll.pub/faq.html
 repoStats
  firstCommit 2019

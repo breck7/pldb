@@ -6,12 +6,14 @@ appeared 1991
 creators Guido van Rossum
 tags pl
 website https://www.python.org/
+releaseNotes https://docs.python.org/3/whatsnew/
+download https://www.python.org/downloads/
+latestVersion 3.12.3
 
 isOpenSource true
 writtenIn python restructuredtext c xml toml yaml bourne-shell json markdown html objective-c ini svg cpp powershell diff d make gradle m4 javascript bash assembly-language xslt lisp css kotlin idl dockerfile c-shell cmake dtd
 spec https://docs.python.org/3/reference/
 fileExtensions py pyc pyd pyo
-releaseNotesUrl https://docs.python.org/3/whatsnew/
 visualParadigm false
 clocExtensions buck build.bazel gclient gyp gypi lmi py py3 pyde pyi pyp pyt pyw sconscript sconstruct snakefile tac workspace wscript wsgi xpy
 fileType text
@@ -20,7 +22,6 @@ documentation https://docs.python.org/3/
 emailList https://mail.python.org/mailman/listinfo
 eventsPageUrl https://www.python.org/events/
 faq https://docs.python.org/3/faq/
-downloadPageUrl https://www.python.org/downloads/
 annualReportsUrl https://www.python.org/psf-landing/
 antlr https://github.com/antlr/grammars-v4/tree/master/python
 monaco python

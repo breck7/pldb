@@ -900,8 +900,8 @@ ${creatorsLinks}
     const facts = []
     if (website) facts.push(`${title} website\n ${website}`)
 
-    const downloadPageUrl = this.get("downloadPageUrl")
-    if (downloadPageUrl) facts.push(`${title} downloads page\n ${downloadPageUrl}`)
+    const download = this.get("download")
+    if (download) facts.push(`${title} downloads page\n ${download}`)
 
     const wikipediaLink = this.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
@@ -1152,10 +1152,10 @@ ${creatorsLinks}
 
     if (annualReport.length >= 1) facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
 
-    const releaseNotes = this.getAll("releaseNotesUrl")
+    const releaseNotes = this.getAll("releaseNotes")
 
     if (releaseNotes.length >= 1) facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
-    const officialBlog = this.getAll("officialBlogUrl")
+    const officialBlog = this.getAll("blog")
 
     if (officialBlog.length >= 1) facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
     const eventsPage = this.getAll("eventsPageUrl")

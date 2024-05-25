@@ -6,9 +6,8 @@ appeared 2019
 creators Reid Tatge
 tags isa
 website https://github.com/MPACT-ORG
+latestVersion llvmorg-14.0.0-rc1
 standsFor Microarchitecture Description Language
-versions
- 2022 llvmorg-14.0.0-rc1
 conceptDescription We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
 
 writtenIn cpp

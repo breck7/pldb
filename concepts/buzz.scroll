@@ -5,16 +5,15 @@ name buzz
 appeared 2021
 creators Benoit Giannangeli
 tags pl
+latestVersion 0.1.0-rc.1
+releaseNotes https://github.com/buzz-language/buzz/releases
 screenshot buzz.png
-versions
- 2022 0.1.0-rc.1
 conceptDescription A small/lightweight typed scripting language (in development)
 
 isOpenSource true
 writtenIn zig lua markdown json yaml dart typescript html
 influencedBy lua
 fileExtensions buzz
-releaseNotesUrl https://github.com/buzz-language/buzz/releases
 documentation https://github.com/buzz-language/buzz/blob/main/README.md
 repoStats
  firstCommit 2021
