@@ -10,10 +10,18 @@ releaseNotes https://www.kernel.org/category/releases.html
 latestVersion 6.6
 blog https://www.kernel.org/category/site-news.html
 releaseNotes https://www.kernel.org/
+maintainerOrganization Linux Kernel Organization, Inc
 
 isOpenSource true
+writtenIn c yaml restructuredtext make assembly-language bourne-shell json python svg perl bash rust clojure xml awk csv yacc lex cpp cmake xslt css umka html ini xsd gherkin tex m4 matlab vim-script ruby vtl-lang sed toml
 faq https://www.kernel.org/category/faq.html
 wordRank 882
+repoStats
+ firstCommit 2005
+ newestCommit 2024
+ commits 1279243
+ committers 36909
+ files 84952
 country Finland
 
 subreddit https://www.reddit.com/r/kernel/
@@ -41,5 +49,3 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Linux Programming Interface: A Linux and Unix System Programming Handbook|2010|Michael Kerrisk|10286833|4.59|403|25
  Beginning Linux Programming|1996|Neil Matthew|463869|3.76|131|8
-
-maintainerOrganization Linux Kernel Organization, Inc

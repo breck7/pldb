@@ -23,7 +23,7 @@ class GitStats {
   }
 
   execGitCommand(command) {
-    return execSync(`git ${command}`, { encoding: "utf8", cwd: this.targetDir, maxBuffer: 10 * 1024 * 1024 })
+    return execSync(`git ${command}`, { encoding: "utf8", cwd: this.targetDir, maxBuffer: 100 * 1024 * 1024 })
   }
 
   get firstCommit() {

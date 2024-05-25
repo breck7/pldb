@@ -8,6 +8,7 @@ tags versionControlApplication
 website https://darcs.net/
 latestVersion 2.18.2
 standsFor Darcs Advanced Revision Control System
+maintainerOrganization Software Freedom Conservancy
 conceptDescription Darcs is a free and open source, cross-platform version control system, like git, mercurial or svn but with a very different approach: focus on changes rather than snapshots. Darcs offers a freer way of working, and a simpler user interface. Darcs does not require a central server, and works perfectly in offline mode.
 
 writtenIn haskell
@@ -31,5 +32,3 @@ githubLanguage Darcs Patch
  aceMode text
  tmScope none
  aliases dpatch
-maintainerOrganization Software Freedom Conservancy
-maintainerOrganization Software Freedom Conservancy

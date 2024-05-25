@@ -1946,6 +1946,10 @@ const computeds = {
     return repo || ""
   },
 
+  writtenInCount(concept) {
+    return concept.has("writtenIn") ? concept.get("writtenIn").split(" ").length : ""
+  },
+
   hoplId(concept) {
     const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)

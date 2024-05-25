@@ -234,6 +234,11 @@ exampleCountParser
  extends abstractComputedIntMeasureParser
  description How many examples do we have written in this language?
 
+writtenInCountParser
+ description How many languages is this implementation written in?
+ float sortIndex 1.6
+ extends abstractComputedIntMeasureParser
+
 numberOfUsersEstimateParser
  float sortIndex 2.1
  extends abstractComputedIntMeasureParser
@@ -2124,6 +2129,10 @@ originCommunityParser
  example
   originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
  extends abstractStringListMeasureParser
+
+maintainerOrganizationParser
+ extends abstractStringListMeasureParser
+ description What organization maintains this language?
 
 // packages
 packageRepositoryParser
