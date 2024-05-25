@@ -6,6 +6,8 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollSetCLI } = require("./ScrollSet.js")
+const { execSync } = require("child_process")
+const semver = require("semver")
 
 const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
@@ -115,6 +117,9 @@ class PLDBCli extends ScrollSetCLI {
   }
 
   extractVersion(folderName) {
+    const version = this.getLatestVersionFromTags(folderName)
+    if (version) return version
+
     const packageJson = path.join(folderName, "package.json")
     if (Disk.exists(packageJson)) {
       const version = require(packageJson).version
@@ -125,6 +130,20 @@ class PLDBCli extends ScrollSetCLI {
       const hit = this.findVersion(Disk.read(changesFile))
       if (hit) return hit
     }
+  }
+
+  getLatestVersionFromTags(repoPath) {
+    // Example usage
+    // Fetch all tags
+    execSync("git fetch --tags", { cwd: repoPath })
+
+    // List all tags
+    const tags = execSync("git tag", { encoding: "utf-8", cwd: repoPath })
+      .split("\n")
+      .filter(tag => semver.valid(tag)) // Filter valid semver tags
+
+    // Sort tags using semver and get the latest version
+    return tags.sort(semver.rcompare)[0]
   }
 
   findVersion(changesFile) {
