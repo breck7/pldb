@@ -116,7 +116,41 @@ class PLDBCli extends ScrollSetCLI {
 
   extractVersion(folderName) {
     const packageJson = path.join(folderName, "package.json")
-    if (Disk.exists(packageJson)) return require(packageJson).version
+    if (Disk.exists(packageJson)) {
+      const version = require(packageJson).version
+      if (version !== "0.0.0") return version
+    }
+    const changesFile = path.join(folderName, "CHANGES.md")
+    if (Disk.exists(changesFile)) {
+      const hit = this.findVersion(Disk.read(changesFile))
+      if (hit) return hit
+    }
+  }
+
+  findVersion(changesFile) {
+    // Regular expression to match version numbers (e.g., v1.2.3, 1.2.3) but not dates like 2023.3.0
+    const versionRegex = /\bv?(\d?\d?\d\.\d+\.\d+)\b/g
+    // Find all version matches
+    const versions = []
+    let match
+    while ((match = versionRegex.exec(changesFile)) !== null) {
+      versions.push(match[1])
+    }
+
+    // Sort the versions in descending order to get the newest version first
+    versions.sort((a, b) => {
+      const aParts = a.split(".").map(Number)
+      const bParts = b.split(".").map(Number)
+
+      for (let i = 0; i < 3; i++) {
+        if (aParts[i] > bParts[i]) return -1
+        if (aParts[i] < bParts[i]) return 1
+      }
+      return 0
+    })
+
+    // The newest version is the first element in the sorted array
+    return versions[0]
   }
 
   searchForConceptByFileExtensions(extensions = []) {
