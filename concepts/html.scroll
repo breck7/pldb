@@ -9,6 +9,7 @@ spec https://html.spec.whatwg.org/
 latestVersion html5
 webRepl https://playcode.io/html/
 usesSemanticVersioning false
+maintainerOrganization WHATWG
 
 isPublicDomain true
 isOpenSource true
@@ -60,6 +61,7 @@ leachim6 HTML
 languageServerProtocolProject https://github.com/Microsoft/vscode/tree/master/extensions/html-language-features/server
  writtenIn typescript
 
+specRepo https://github.com/whatwg/html
 meetup https://www.meetup.com/topics/html5
  memberCount 1590050
  groupCount 2347
