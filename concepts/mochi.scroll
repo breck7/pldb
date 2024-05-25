@@ -4,6 +4,7 @@ id mochi
 name mochi
 appeared 2014
 tags pl
+latestVersion v0.2.7
 conceptDescription Mochi is a dynamically typed programming language for functional programming and actor-style programming. Its interpreter is written in Python3. The interpreter translates a program written in Mochi to Python3's AST / bytecode.
 
 isOpenSource true
