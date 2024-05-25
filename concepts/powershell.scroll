@@ -6,8 +6,10 @@ appeared 2006
 creators Jeffrey Snover
 tags pl
 website http://microsoft.com/powershell
+latestVersion 7.4.2
 
 isOpenSource true
+writtenIn csharp powershell xml yaml markdown xsd json xaml bourne-shell svg csv razor dockerfile xslt plantuml python
 tryItOnline powershell
 clocExtensions ps1 psd1 psm1
 fileType text
@@ -15,6 +17,12 @@ documentation https://learn.microsoft.com/en-us/powershell/
 monaco powershell
 rosettaCode http://www.rosettacode.org/wiki/Category:PowerShell
 packageRepository https://www.powershellgallery.com/
+repoStats
+ firstCommit 2015
+ newestCommit 2024
+ commits 11960
+ committers 589
+ files 2647
 originCommunity Microsoft
 projectEuler PowerShell
  memberCount
@@ -46,6 +54,7 @@ leachim6 PowerShell
 languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
  writtenIn csharp
 
+githubRepo https://github.com/PowerShell/PowerShell
 keywords begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
 
 lineCommentToken #

@@ -12,6 +12,7 @@ aka Bourne Again Shell
 
 isOpenSource true
 isOpenSource true
+writtenIn c bourne-shell m4 bash html make yacc perl assembly-language sed tex markdown awk
 tryItOnline bash
 fileType text
 documentation https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
@@ -20,6 +21,12 @@ monaco shell
 quineRelay bash
 packageRepository http://www.bpkg.sh/
 ubuntuPackage bash
+repoStats
+ firstCommit 1996
+ newestCommit 2024
+ commits 1509
+ committers 3
+ files 1459
 country United States
 originCommunity GNU
 

@@ -6,9 +6,11 @@ appeared 2009
 creators Jeremy Ashkenas
 tags pl
 website http://coffeescript.org
+latestVersion 2.7.0
 aka coffee
 
 isOpenSource true
+writtenIn markdown coffeescript html javascript css json svg yaml xml
 compilesTo javascript
 tryItOnline coffeescript
 fileExtensions coffee litcoffee
@@ -24,6 +26,12 @@ quineRelay CoffeeScript
 replit https://repl.it/languages/coffeescript
 centralPackageRepositoryCount 0
 ubuntuPackage coffeescript
+repoStats
+ firstCommit 2009
+ newestCommit 2023
+ commits 5205
+ committers 279
+ files 458
 country United States
 originCommunity https://github.com/jashkenas
 
@@ -49,6 +57,7 @@ leachim6 CoffeeScript
   alert "Hello World"
   
 
+githubRepo https://github.com/jashkenas/coffeescript/
 keywords and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
 
 lineCommentToken #
