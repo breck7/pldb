@@ -6,6 +6,9 @@ appeared 2001
 creators Douglas Crockford
 tags dataNotation
 website https://www.json.org/
+spec https://ecma-international.org/publications-and-standards/standards/ecma-404/
+influencedBy javascript
+ // based on a subset of the JavaScript Programming Language Standard ECMA-262 3rd Edition - December 1999
 
 isOpenSource true
 clocExtensions arcconfig avsc composer.lock geojson gltf har htmlhintrc json json-tmlanguage jsonl mcmeta mcmod.info tern-config tern-project tfstate tfstate.backup topojson watchmanconfig webapp webmanifest yyp
@@ -58,7 +61,7 @@ wikipedia https://en.wikipedia.org/wiki/JSON
   var y = {a: undefined};
    var ys = JSON.stringify(y,
     function (k, v){return (v === undefined) ? "UNDEFINED" : v});
- related javascript xml java http unicode utf-8 ecmascript soap yaml csv protobuf gzip xpath css hocon s-expressions geojson
+ related javascript xml java http unicode utf-8 soap yaml csv protobuf gzip xpath css hocon s-expressions geojson
  summary In computing, JavaScript Object Notation or JSON ( JAY-sən), is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems. JSON is a language-independent data format. It was derived from JavaScript, but as of 2017 many programming languages include code to generate and parse JSON-format data. The official Internet media type for JSON is application/json. JSON filenames use the extension .json. Douglas Crockford originally specified the JSON format in the early 2000s; two competing standards, RFC 7159 and ECMA-404, defined it in 2013. The ECMA standard describes only the allowed syntax, whereas the RFC covers some security and interoperability considerations. A restricted profile of JSON, known as I-JSON (short for "Internet JSON"), seeks to overcome some of the interoperability problems with JSON. It is defined in RFC 7493..
  pageId 1575082
  dailyPageViews 3994

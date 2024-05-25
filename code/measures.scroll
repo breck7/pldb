@@ -2372,7 +2372,7 @@ sourcehutRepoParser
 specParser
  extends abstractUrlMeasureParser
  description What is a URL to the official spec for this language?
- float sortIndex 2.2
+ float sortIndex 1.22
 
 // stackOverflowSurvey
 stackOverflowSurveyParser

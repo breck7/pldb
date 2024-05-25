@@ -158,7 +158,7 @@ wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wi
    writeln(first([1, 2, 3])) // prints 1
    writeln(first("hello"))   // prints h
    writeln(first(45))        // error, invalid parameter type 'int'
- related d lua squirrel python io ecmascript c
+ related d lua squirrel python io javascript c
  summary The MiniD (has been renamed Croc) programming language is a small, lightweight, extension language in the vein of Lua or Squirrel, but designed to be used mainly with the D programming language.  It supports both object-oriented and imperative programming paradigms, as well as some simple functional aspects. Distributed under the licence of zlib/libpng, MiniD is free software.
  pageId 10965409
  created 2007
