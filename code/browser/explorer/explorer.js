@@ -226,6 +226,12 @@ class ExploreApp {
 
         if (measure === "name")
           col.render = (data, type, row, meta) => `<a href="../concepts/${row.id}.html">${row.name}</a>`
+        // todo: we should get type info from measures.js
+        else
+          col.render = (data, type, row, meta) =>
+            typeof row[measure] === "string" && row[measure].startsWith("http")
+              ? `<a href="${row[measure]}">${row[measure]}</a>`
+              : row[measure]
 
         return col
       })
