@@ -4,6 +4,7 @@ id veryl
 name Veryl
 appeared 2022
 creators Naoya Hatta
+tags pl
 website https://www.veryl-lang.org/
 latestVersion 0.10.0
 
@@ -21,13 +22,6 @@ repoStats
 
 helloWorldCollection Veryl
  // Hello world in Veryl
-
- module ModuleA {
-     initial {
-         $display("Hello, world!");
-     }
- }
-
 languageServerProtocolProject https://github.com/veryl-lang/veryl
  writtenIn rust
 
@@ -90,3 +84,9 @@ hasConditionals true
 
 domainName veryl-lang.org
  registered 2024
+
+ module ModuleA {
+     initial {
+         $display("Hello, world!");
+     }
+ }
