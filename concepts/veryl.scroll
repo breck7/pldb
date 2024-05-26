@@ -1,0 +1,92 @@
+import ../code/conceptPage.scroll
+
+id veryl
+name Veryl
+appeared 2022
+creators Naoya Hatta
+website https://www.veryl-lang.org/
+latestVersion 0.10.0
+
+isOpenSource true
+writtenIn rust
+fileExtensions veryl
+visualParadigm false
+fileType text
+documentation https://doc.veryl-lang.org/book/
+repoStats
+ firstCommit 2022
+ commits 1581
+ committers 9
+ newestCommit 2024
+
+helloWorldCollection Veryl
+ // Hello world in Veryl
+
+ module ModuleA {
+     initial {
+         $display("Hello, world!");
+     }
+ }
+
+languageServerProtocolProject https://github.com/veryl-lang/veryl
+ writtenIn rust
+
+githubRepo https://github.com/veryl-lang/veryl
+ stars 410
+ forks 19
+ subscribers 10
+ created 2022
+ updated 2024
+ description Veryl: A Modern Hardware Description Language
+ issues 56
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken $display
+stringToken "
+
+hasStrings true
+ "hello world"
+hasComments true
+ // https://doc.veryl-lang.org/book/05_language_reference/02_lexical_structure.html
+ // a comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasDirectives true
+ #[test(test1)]
+ embed (inline) sv{{{
+     module test1;
+         initial begin
+             assert (0) else $error("error");
+         end
+     endmodule
+ }}}
+hasImports true
+ // file scope import
+ import $sv::SvPackage::*;
+ 
+ module ModuleA {
+     import PackageA::*;
+     import PackageA::paramA;
+ }
+ 
+ package PackageA {
+     local paramA: u32 = 1;
+ }
+hasOperatorOverloading false
+hasPatternMatching false
+hasPrintDebugging true
+ $display("Hi");
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference false
+hasLineComments true
+ // A comment
+hasBooleans false
+hasWhileLoops false
+hasConstants true
+hasConditionals true
+
+domainName veryl-lang.org
+ registered 2024
