@@ -22,6 +22,11 @@ repoStats
 
 helloWorldCollection Veryl
  // Hello world in Veryl
+ module ModuleA {
+     initial {
+         $display("Hello, world!");
+     }
+ }
 languageServerProtocolProject https://github.com/veryl-lang/veryl
  writtenIn rust
 
