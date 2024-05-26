@@ -8,13 +8,13 @@ tags textMarkup
 website https://djot.net
 latestVersion 0.2.0
 webRepl https://djot.net/playground/
-usesSemanticVersioning true
 conceptDescription  A light markup language
 
 isOpenSource true
 writtenIn markdown html vim-script make css lua yaml
 influencedBy commonmark
 successorOf commonmark
+usesSemanticVersioning true
 fileExtensions dj
 documentation https://github.com/jgm/djot/blob/main/README.md
 repoStats

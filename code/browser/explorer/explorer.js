@@ -220,9 +220,11 @@ class ExploreApp {
   makeColumns(measureNames) {
     return measureNames
       .split(this.columnDelimiter)
-      .filter(name => measures.find(m => m.Name === name))
-      .map(measure => {
-        const col = { data: measure, title: measure, defaultContent: "" }
+      .map(name => measures.find(m => m.Name === name))
+      .filter(i => i)
+      .map(measureMeta => {
+        const measure = measureMeta.Name
+        const col = { data: measure, title: measure, defaultContent: "", type: measureMeta.Type }
 
         if (measure === "name")
           col.render = (data, type, row, meta) => `<a href="../concepts/${row.id}.html">${row.name}</a>`

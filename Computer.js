@@ -1957,8 +1957,14 @@ const computeds = {
     if (!version) return ""
     version = version.replace(/[^0-9\.]/g, "")
     version = version.split(".")[0]
-    version = parseInt(version)
-    return version > 999 ? "" : version // dont include it if it uses a year as aversion, like 2024
+    return parseInt(version)
+  },
+
+  usesSemanticVersioning(concept) {
+    if (concept.has("usesSemanticVersioning")) return concept.get("usesSemanticVersioning") === "true"
+    const version = computeds.latestMajorVersion(concept)
+    if (version === "") return ""
+    return version > 999 ? false : true // dont include it if it uses a year as aversion, like 2024
   },
 
   hoplId(concept) {

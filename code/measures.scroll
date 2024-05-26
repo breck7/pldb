@@ -2480,8 +2480,10 @@ latestMajorVersionParser
  float sortIndex 2.33
 
 usesSemanticVersioningParser
- extends abstractBooleanMeasureParser
  description Does the official release of the language use semantic versioning?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.34
+ cells measureNameCell booleanCell
 
 // website
 websiteParser
