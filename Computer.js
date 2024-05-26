@@ -65,6 +65,7 @@ protocol
 queryLanguage
 schema
 standard
+staticSiteGenerator
 stylesheetLanguage
 template
 textDataFormat
@@ -114,6 +115,7 @@ protocol
 queryLanguage
 schema
 standard
+staticSiteGenerator static site generator
 stylesheetLanguage
 template template language
 textData text data format
