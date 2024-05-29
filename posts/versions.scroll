@@ -1,16 +1,10 @@
 date 5/27/2024
-groups All frontpage communityArticles
+import userPostHeader.scroll
 title What can we learn from programming language version numbers?
-
-import postHeader.scroll
-printTitle
-mediumColumns 1
-printDate
 
 image versionNumbers.png
  caption What can we learn from programming language version numbers?
   https://breckyunits.com/versionNumbers.html
  link https://breckyunits.com/versionNumbers.html
 
-endColumns
-import ../footer.scroll
+import userPostFooter.scroll

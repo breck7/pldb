@@ -1,12 +1,6 @@
-date 5/25/2024
-groups All frontpage communityArticles
-openGraphImage https://pldb.io/posts/ages.png
+import userPostHeader.scroll
 title Exploration of the ages of programming language creators
-
-import postHeader.scroll
-mediumColumns 1
-printTitle
-printDate
+date 5/25/2024
 
 Anton Antonov posted an analysis of PLDB's age data.
  https://github.com/antononcube Anton Antonov
@@ -19,5 +13,4 @@ image antonov.png
   https://community.wolfram.com/groups/-/m/t/3180327 Computational exploration for the ages of programming language creators dataset
  link https://community.wolfram.com/groups/-/m/t/3180327
 
-endColumns
-import ../footer.scroll
+import userPostFooter.scroll
