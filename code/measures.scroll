@@ -2021,6 +2021,11 @@ creatorsParser
  catchAllCellType stringCell
  listDelimiter  and
 
+numberOfCreatorsParser
+ description How many creators?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+
 // letterFirstIdentifiers
 letterFirstIdentifiersParser
  extends abstractFeatureParser

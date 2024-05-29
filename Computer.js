@@ -1911,6 +1911,11 @@ const computeds = {
 
   score(concept) {},
 
+  numberOfCreators(concept) {
+    const creators = concept.get("creators")
+    return creators ? creators.split(" and ").length : ""
+  },
+
   measurements(concept) {
     let count = 0
     concept.forEach(node => {
