@@ -5,18 +5,18 @@ name Grammar
 appeared 2017
 creators Breck Yunits
 tags grammarLanguage compiler
-website https://jtree.treenotation.org/langs/grammar/
-releaseNotes https://jtree.treenotation.org/langs/grammar/
+website https://sdk.scroll.pub/langs/grammar/
+releaseNotes https://sdk.scroll.pub/langs/grammar/
 latestVersion 77.1.0
-webRepl https://jtree.treenotation.org/designer/
-roadmap https://jtree.treenotation.org/langs/grammar/
+webRepl https://sdk.scroll.pub/designer/
+roadmap https://sdk.scroll.pub/langs/grammar/
 conceptDescription Grammar is a Tree Language for creating new Tree Languages. A compiler compiler. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
 
 isPublicDomain true
 isOpenSource true
 writtenIn javascript typescript html json svg css yaml xml markdown
-subsetOf treenotation
-relatedConcepts treenotation antlr
+subsetOf scrollnotation
+relatedConcepts scrollnotation antlr
 influencedBy antlr yacc ebnf bnf
 repoStats
  firstCommit 2017
@@ -25,7 +25,7 @@ repoStats
  files 226
  newestCommit 2024
 country United States and Ireland and Norway and India
-originCommunity https://github.com/breck7/jtree/issues
+originCommunity https://github.com/breck7/scrollsdk/issues
 
 example
  latinNode
@@ -34,14 +34,14 @@ example
  anyNode
   baseParser blobNode
 
-githubRepo https://github.com/breck7/jtree
+githubRepo https://github.com/breck7/scrollsdk
  firstCommit 2017
  stars 365
  forks 14
  subscribers 9
  created 2017
  updated 2023
- description Build your own language using Tree Notation.
+ description Build your own language using Scroll Parsers.
  issues 40
 
 hasVariableSubstitutionSyntax false

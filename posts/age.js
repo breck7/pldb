@@ -1,7 +1,7 @@
 const lodash = require("lodash")
 const path = require("path")
-const { TreeNode } = require("jtree/products/TreeNode.js")
-const { Disk } = require("jtree/products/Disk.node.js")
+const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Disk } = require("scrollsdk/products/Disk.node.js")
 const pldb = require("../pldb.json")
 const creators = require("../creators/creators.json")
 const creatorsMap = {}

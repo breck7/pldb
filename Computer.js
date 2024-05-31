@@ -1,8 +1,8 @@
 const lodash = require("lodash")
 const path = require("path")
-const { TreeNode } = require("jtree/products/TreeNode.js")
-const { Disk } = require("jtree/products/Disk.node.js")
-const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Disk } = require("scrollsdk/products/Disk.node.js")
+const { Utils } = require("scrollsdk/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
 const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "measures.scroll")))
 const listsFolder = path.join(__dirname, "lists")
@@ -828,7 +828,7 @@ image ${image}
       wikipedia: this.get(`wikipedia`),
       reddit: this.get("subreddit"),
       twitter: this.get("twitter"),
-      edit: `https://jtree.treenotation.org/designer#${encodeURIComponent(
+      edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
         new TreeNode(
           `url https://pldb.io/pldb.grammar\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
         ).toString()
@@ -1839,7 +1839,7 @@ class Tables {
       "nodejs",
       "html",
       "css",
-      "treenotation",
+      "scrollnotation",
       "scroll",
       "grammar",
       "python",

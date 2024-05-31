@@ -59,7 +59,7 @@ stringToken "
 canWriteToDisk true
  require("fs").writeFileSync("foo.txt", "foo", "utf8")
 hasImports true
- const jtree = require("jtree")
+ const fs = require("fs")
 hasStreams true
  const stream = require('stream');
 hasPrintDebugging true

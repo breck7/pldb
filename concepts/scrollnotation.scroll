@@ -1,14 +1,15 @@
 import ../code/conceptPage.scroll
 
-id treenotation
-name Tree Notation
+id scrollnotation
+name Scroll Notation
 appeared 2017
 creators Breck Yunits
 tags dataNotation
-website https://treenotation.org/
-latestVersion 77.1.0
-webRepl https://jtree.treenotation.org/sandbox/
-conceptDescription A minimalist notation consisting of just the word break rule and the off-side rule.
+website https://notation.scroll.pub
+latestVersion 78.0.0
+oldName Tree Notation
+webRepl https://sdk.scroll.pub/sandbox/
+conceptDescription A minimalist notation consisting of just the word break rule, line break rule, and the off-side rule.
 
 isPublicDomain true
 isOpenSource true
@@ -23,29 +24,30 @@ repoStats
  newestCommit 2024
 
 example
- title Tree Notation
+ title Scroll Notation
  type dataNotation
  example
-  title Tree Notation
+  title Scroll Notation
   type dataNotation
-twitter https://twitter.com/treenotation
+twitter https://twitter.com/breck7
 
-githubRepo https://github.com/breck7/jtree
+githubRepo https://github.com/breck7/scrollsdk
  stars 365
  forks 14
  subscribers 9
  created 2017
  updated 2023
- description Build your own language using Tree Notation.
+ description Build your own language using Scroll Notation.
  issues 40
 
 hasSemanticIndentation true
  example
-  title Tree Notation
+  title Scroll Notation
 hasEscapeCharacters false
 hasComments false
 
 domainName treenotation.org
+ // old domain
  registered 2019
 
 isbndb 0

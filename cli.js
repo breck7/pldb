@@ -2,9 +2,9 @@
 
 const path = require("path")
 
-const { TreeNode } = require("jtree/products/TreeNode.js")
-const { Utils } = require("jtree/products/Utils.js")
-const { Disk } = require("jtree/products/Disk.node.js")
+const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Utils } = require("scrollsdk/products/Utils.js")
+const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { ScrollSetCLI } = require("./ScrollSet.js")
 const { execSync } = require("child_process")
 const semver = require("semver")
