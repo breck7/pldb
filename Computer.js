@@ -1207,7 +1207,7 @@ ${creatorsLinks}
       facts.push(`Read more about ${title} on the web: ${linkManyAftertext(nonSemanticScholarReferences)}`)
 
     if (this.parsed.inboundLinks) {
-      const inboundLinks = this.parsed.inboundLinks.split(" ")
+      const inboundLinks = lodash.uniq(this.parsed.inboundLinks.split(" "))
       facts.push(
         `${inboundLinks.length} languages in PLDB linking to ${title}: ` +
           inboundLinks.map(link => this.makeATag(link)).join(", ")
