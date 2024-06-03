@@ -13,6 +13,7 @@ download https://download.racket-lang.org/
 conference https://con.racket-lang.org/ RacketCon
 
 isOpenSource true
+writtenIn racket c scheme m4 assembly-language bourne-shell json tex xml make markdown diff yaml pascal cpp expect ada html csharp meson python css javascript c-shell perl saltstack bash idl r cmake sas dockerfile powershell
 tryItOnline racket
 fileExtensions rkt rktl rktd scrbl plt ss scm
 visualParadigm false
@@ -22,6 +23,12 @@ documentation https://docs.racket-lang.org/
 faq https://www.cs.uni.edu/~wallingf/teaching/cs3540/resources/racket-faq.html
 rosettaCode http://www.rosettacode.org/wiki/Category:Racket
 packageRepository https://pkgs.racket-lang.org/
+repoStats
+ firstCommit 1997
+ newestCommit 2024
+ commits 47707
+ committers 489
+ files 5657
 originCommunity PLT Inc.
 projectEuler Racket
  memberCount
@@ -50,6 +57,7 @@ leachim6 Racket
   "Hello World"
   
 
+githubRepo https://github.com/racket/racket
 meetup https://www.meetup.com/topics/racket
  memberCount 735
  groupCount 6
