@@ -2,12 +2,36 @@ import ../code/conceptPage.scroll
 
 id simit
 name simit
-appeared 2016
+appeared 2014
+creators Fredrik Kjolstad
 tags pl
 website http://simit-lang.org
+conceptDescription Simit is an imperative language with statements, control flow and linear algebra expressions.
 
+influencedBy matlab
+documentation https://simit-lang.org/language
+repoStats
+ firstCommit 2014
+ newestCommit 2019
+ commits 2679
+ committers 29
+ files 504
 country United States
 originCommunity Massachusetts Institute of Technology
+
+example
+ func minMax(a : float, b : float)
+     -> (c : float, d : float)
+   if a < b
+     c = a;
+     d = b;
+   else
+     c = b;
+     d = a;
+   end
+ end
+
+githubRepo https://github.com/simit-lang/simit
 
 domainName simit-lang.org
  registered 2016
