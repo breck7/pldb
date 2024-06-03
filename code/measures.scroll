@@ -2307,6 +2307,14 @@ inputLanguagesParser
  description Which language(s) does this take as input? For compilers, what languages does this compile compile?
  extends abstractFilenameRelationshipParser
 
+isSelfHostedParser
+ // currently measures if a language is at least partially self-hosted.
+ // todo: add a self-hosted rank? perhaps % self hosted, or is the most common file type of the type of the lang itself?
+ description Is the main implementation of this language written in this language?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+ cells measureNameCell booleanCell
+
 // releaseNotes
 releaseNotesParser
  extends abstractUrlMeasureParser

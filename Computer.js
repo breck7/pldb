@@ -1973,6 +1973,11 @@ const computeds = {
     return version > 999 ? false : true // dont include it if it uses a year as aversion, like 2024
   },
 
+  isSelfHosted(concept) {
+    const writtenIn = concept.get("writtenIn")
+    return writtenIn ? writtenIn.includes(concept.get("id")) : ""
+  },
+
   hoplId(concept) {
     const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)
