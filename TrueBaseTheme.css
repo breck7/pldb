@@ -9,6 +9,23 @@ body {
   box-sizing: border-box;
 }
 
+.scrollButton {
+  text-align: center;
+  margin: 21px 0;
+}
+.scrollButton a {
+  padding: 7px;
+  color: white;
+  background-color: rgb(0, 116, 212);
+  opacity: 0.8;
+  border-radius: 5px;
+  font-family: "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+}
+.scrollButton a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
 .headerLink a {
   color: black;
   line-height: 140%;

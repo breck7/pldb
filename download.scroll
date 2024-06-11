@@ -1,31 +1,17 @@
-title PLDB.CSV
-writeConcepts pldb.csv pldb.json pldb.tsv pldb.js
- sortBy rank
-writeMeasures measures.tsv measures.csv measures.json measures.js
+title Download PLDB
 
 import rootHeader.scroll
 printTitle
 
-css
- .scrollTable td {
-   max-width: 30ch;
-   white-space: nowrap;
-   text-overflow: ellipsis;
- }
+thinColumns 1
 
-Download the PLDB ScrollSet as: CSV | TSV | JSON
- link pldb.csv CSV
- link pldb.tsv TSV
- link pldb.json JSON
+In addition to being open source, you can download the built html of PLDB and browse the site entirely offline.
+ https://github.com/breck7/pldb open source
 
-import code/measures.scroll
-loadConcepts concepts
+Download PLDB
+ https://github.com/breck7/pldb/archive/refs/heads/scroll-output.zip
+ class scrollButton
 
-Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
- link measures.csv CSV
- link measures.tsv TSV
- link measures.json JSON
-printMeasures
-tableSearch
+endColumns
 
 import footer.scroll
