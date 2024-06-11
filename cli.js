@@ -77,7 +77,8 @@ class PLDBCli extends ScrollSetCLI {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     this.concepts.forEach(async file => {
-      if (lang && !lang.includes(file.id)) return
+      if (lang && lang !== file.id) return
+      if (lang) console.log(`processing ${lang}`)
       const { mainRepo } = file
       if (!mainRepo) return
       const targetFolder = path.join(this.gitsFolder, file.id)
