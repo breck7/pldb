@@ -9,16 +9,17 @@ website https://www.veryl-lang.org/
 latestVersion 0.10.0
 
 isOpenSource true
-writtenIn rust
+writtenIn rust json toml javascript yaml markdown typescript make bourne-shell
 fileExtensions veryl
 visualParadigm false
 fileType text
 documentation https://doc.veryl-lang.org/book/
 repoStats
  firstCommit 2022
- commits 1581
- committers 9
+ commits 1934
+ committers 13
  newestCommit 2024
+ files 362
 
 helloWorldCollection Veryl
  // Hello world in Veryl
