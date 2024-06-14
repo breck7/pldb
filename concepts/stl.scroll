@@ -1,0 +1,20 @@
+import ../code/conceptPage.scroll
+
+id stl
+name Statement List
+appeared 1993
+tags assembly
+standsFor Statement List
+conceptDescription STL corresponds to the "Instruction List" language defined in the International Electrotechnical Commission's standard IEC 1131-3, although there are substantial differences with regard to the operations.  STL corresponds to the Instruction List language defined in the IEC 61131-3 specification.
+
+country Germany
+originCommunity Siemens AG
+reference http://www.plcdev.com/statement_list_stl_cheat_sheets
+
+githubLanguage STL
+ type data
+ fileExtensions stl
+ aceMode text
+ tmScope source.stl
+ aliases ascii stl or stla
+ repos 0

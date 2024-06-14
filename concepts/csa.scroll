@@ -1,0 +1,24 @@
+import ../code/conceptPage.scroll
+
+id csa
+name CodeStudAssembler
+appeared 2017
+tags assembly
+
+fileType text
+centralPackageRepositoryCount 0
+country Various
+originCommunity https://github.com/v8
+reference https://v8.dev/blog/csa
+
+example
+   test al,0x1
+   jz not_string
+   movq rbx,[rax-0x1]
+   cmpb [rbx+0xb],0x80
+   jnc not_string
+   movq rax,[rax+0xf]
+   retl
+ not_string:
+   movq rax,[r13-0x60]
+   retl

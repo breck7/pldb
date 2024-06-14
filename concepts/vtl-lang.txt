@@ -1,0 +1,34 @@
+Velocity Template Language
+==========================
+
+Velocity Template Language, aka Velocity Template Language, is a template language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1788 on PLDB
+24 Years Old
+0 Repos
+
+- Velocity Template Language Wikipedia page
+ https://en.wikipedia.org/wiki/Apache_Velocity
+- There are at least 0 Velocity Template Language repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using Velocity Template Language in 4 repos on GitHub
+- Read more about Velocity Template Language on the web: 1.
+ https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
+- 7 languages in PLDB linking to Velocity Template Language: Ace Editor, Apache Hbase, Bazel, cloc, JFlex, Kotlin, Linux
+
+&lt;html&gt;
+  &lt;body&gt;
+    Hello $customer.Name!
+    &lt;table&gt;
+    #foreach( $mud in $mudsOnSpecial )
+      #if ( $customer.hasPurchased($mud) )
+        &lt;tr&gt;
+          &lt;td&gt;
+            $flogger.getPromo( $mud )
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      #end
+    #end
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

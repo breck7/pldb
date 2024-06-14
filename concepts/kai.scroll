@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id kai
+name kai
+appeared 2016
+tags pl
+website http://docs.kai-lang.org
+latestVersion 0.2.0
+conceptDescription An expressive low level programming language
+
+writtenIn swift markdown yaml bourne-shell c
+repoStats
+ firstCommit 2016
+ commits 1003
+ committers 11
+ files 116
+ newestCommit 2018
+country The Netherlands
+originCommunity https://github.com/kai-language
+
+example
+ /* // github.com/kai-language/issues/116
+ #test "bitcast to struct" {
+     A :: struct {
+         a: rawptr
+     }
+     x : rawptr = nil
+     a := bitcast(A) x
+ } */
+
+githubRepo https://github.com/kai-language/kai
+ firstCommit 2016
+ stars 68
+ forks 1
+ subscribers 4
+ created 2016
+ updated 2020
+ description An expressive low level programming language
+ issues 37
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName docs.kai-lang.org

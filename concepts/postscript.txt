@@ -1,0 +1,167 @@
+PostScript
+==========
+
+PostScript is a text markup language created in 1982 by John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221982%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Warnock
+ https://pldb.io/concepts/../lists/creators.html#q=Chuck%20Geschke
+ https://pldb.io/concepts/../lists/creators.html#q=Doug%20Brotz
+ https://pldb.io/concepts/../lists/creators.html#q=Ed%20Taft
+ https://pldb.io/concepts/../lists/creators.html#q=Bill%20Paxton
+
+#148 on PLDB
+42 Years Old
+8k Repos
+
+Try now: Riju
+
+PostScript (PS) is a page description language in the electronic publishing and desktop publishing business. It is a dynamically typed, concatenative programming language and was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton from 1982 to 1984.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PostScript
+
+- PostScript Wikipedia page
+ https://en.wikipedia.org/wiki/PostScript
+- PostScript docs
+ https://www.pdfa.org/norm-refs/PLRM.pdf
+- There are at least 8,053 PostScript repos on GitHub
+- PostScript first developed in Adobe
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using PostScript in 4k repos on GitHub
+- Explore PostScript snippets on Rosetta Code
+- PostScript on HOPL
+ https://hopl.info/showlanguage.prx?exp=1010
+- PostScript appears in the TIOBE Index
+- PostScript Ubuntu package
+ https://packages.ubuntu.com/jammy/ghostscript
+- Pygments supports syntax highlighting for PostScript
+- GitHub supports syntax highlighting for PostScript
+- PostScript appears in the Quine Relay project
+- See also: (8 related languages)Ghostscript, Lisp, PDF, ASCII, Tex, Forth, Reverse Polish notation, LaTeX
+- 1 languages in PLDB linking to PostScript: Interpress
+
+(Hello, world!) =
+
+% run&gt; gs -q -sDEVICE=nullpage postscript.ps
+(Hello World\n) print quit
+
+% Hello World in Postscript
+%!PS
+/Palatino-Roman findfont
+100 scalefont
+setfont
+100 100 moveto
+(Hello World!) show
+showpage
+
+%!PS-Adobe-3.0
+%%Creator: Aaron Puchert
+%%Title: The Sierpinski triangle
+%%Pages: 1
+%%PageOrder: Ascend
+
+%%BeginProlog
+% PAGE SETTINGS
+/pageset {
+  28.3464566 28.3464566 scale    % set cm = 1
+  0.5 0.5 translate
+  0 setlinewidth
+} def
+
+% sierpinski(n) draws a sierpinski triangle of order n
+/sierpinski {
+dup 0 gt {
+  [0.5 0 0 0.5 0 0] concat dup 1 sub sierpinski
+  [1 0 0 1 1 0] concat dup 1 sub sierpinski
+  [1 0 0 1 -1 1] concat dup 1 sub sierpinski
+  [2 0 0 2 0 -1] concat
+} {
+  newpath
+    0 0 moveto
+    1 0 lineto
+    0 1 lineto
+  closepath
+  fill
+} ifelse pop} def
+%%EndProlog
+
+%%BeginSetup
+&lt;&lt; /PageSize [596 843] &gt;&gt; setpagedevice  % A4
+%%EndSetup
+
+%%Page: Test 1
+pageset
+[20 0 10 300 sqrt 0 0] concat
+9 sierpinski
+showpage
+%%EOF
+
+/mm {360 mul 127 div} def
+ 0 0 moveto
+ 0 40 mm lineto stroke
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  % (\-|\+)?[0-9]+(?=[()\[\]{}/%\s])
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  % (\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()\[\]{}/%\s])
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  % (?=[()\[\]{}/%\s])
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  % [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()\[\]{}/%\s])
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Postfix Notation
+ FeatureLink ../features/hasPostfixNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

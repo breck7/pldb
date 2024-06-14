@@ -1,0 +1,37 @@
+Hackett
+=======
+
+Hackett is an open source programming language created in 2017 by Alexis King.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alexis%20King
+
+#571 on PLDB
+7 Years Old
+
+git clone https://github.com/lexi-lambda/hackett
+
+WIP implementation of a Haskell-like Lisp in Racket
+
+- Hackett website
+ https://lexi-lambda.github.io/hackett/
+- Hackett is developed on GitHub and has 1,094 stars
+- Hackett first developed in https://github.com/lexi-lambda/hackett/issues
+- Hackett is written in Racket, Markdown, YAML, CSS, Bourne shell
+
+#lang hackett
+
+(data (Maybe a)
+  Nothing
+  (Just a))
+
+(def x : Integer
+  (let ([y 3]
+        [z 7])
+    {y + z}))
+
+(class (Show a)
+  [show : {a -&gt; String}])
+
+(instance (forall [a] (Show a) =&gt; (Show (Maybe a)))
+  [show (λ* [[(Just x)] {&quot;(Just &quot; ++ (show x) ++ &quot;)&quot;}]
+            [[Nothing ] &quot;Nothing&quot;])])

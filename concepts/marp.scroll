@@ -1,0 +1,37 @@
+import ../code/conceptPage.scroll
+
+id marp
+name Marp
+appeared 2018
+tags textMarkup
+website https://marp.app/
+latestVersion 3.9.0
+conceptDescription Presentations in markdown
+
+writtenIn typescript javascript markdown scss yaml json svg
+supersetOf markdown
+repoStats
+ firstCommit 2018
+ commits 1219
+ committers 6
+ files 69
+ newestCommit 2023
+country Japan
+originCommunity https://github.com/marp-team
+
+example
+ ---
+ theme: gaia
+ size: 4:3
+ ---
+ 
+ # A traditional 4:3 slide
+
+githubRepo https://github.com/marp-team/marp-core
+ stars 526
+ forks 120
+ subscribers 9
+ created 2018
+ updated 2023
+ description The core of Marp converter
+ issues 12

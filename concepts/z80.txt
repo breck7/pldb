@@ -1,0 +1,60 @@
+z80
+===
+
+z80 is an assembly language created in 1976.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1690 on PLDB
+48 Years Old
+
+- CodeMirror package for syntax highlighting z80
+- Read more about z80 on the web: 1.
+ https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
+
+ ; memcpy --
+ ; Copy a block of memory from one location to another.
+ ;
+ ; Entry registers
+ ;      BC - Number of bytes to copy
+ ;      DE - Address of source data block
+ ;      HL - Address of target data block
+ ;
+ ; Return registers
+ ;      BC - Zero
+
+             org     1000h       ;Origin at 1000h
+ memcpy      public
+ loop        ld      a,b         ;Test BC,
+             or      c           ;If BC = 0,
+             ret     z           ;Return
+             ld      a,(de)      ;Load A from (DE)
+             ld      (hl),a      ;Store A into (HL)
+             inc     de          ;Increment DE
+             inc     hl          ;Increment HL
+             dec     bc          ;Decrement BC
+             jp      loop        ;Repeat the loop
+             end
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

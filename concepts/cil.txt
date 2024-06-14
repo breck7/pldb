@@ -1,0 +1,136 @@
+CIL
+===
+
+CIL, aka Common Intermediate Language, is a programming language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#365 on PLDB
+24 Years Old
+
+Try now: Riju
+
+Common Intermediate Language (CIL, pronounced either sil or kil), formerly called Microsoft Intermediate Language (MSIL), is the lowest-level human-readable programming language defined by the Common Language Infrastructure (CLI) specification and is used by the .NET Framework and Mono. Languages which target a CLI-compatible runtime environment compile to CIL, which is assembled into an object code that has a bytecode-style format. CIL is an object-oriented assembly language, and is entirely stack-based. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Common_Intermediate_Language
+
+- CIL Wikipedia page
+ https://en.wikipedia.org/wiki/Common_Intermediate_Language
+- CIL docs
+ http://people.eecs.berkeley.edu/~necula/cil/
+- CIL first developed in Microsoft
+- CIL appears in the TIOBE Index
+- Indeed.com has 0 matches for "cil developer".
+- See also: (6 related languages)Assembly CLI, Assembly language, C#, X86, Java Bytecode, Visual Basic .NET
+
+.assembly Hello {}
+.assembly extern mscorlib {}
+.method static void Main()
+{
+    .entrypoint
+    .maxstack 1
+    ldstr &quot;Hello, world!&quot;
+    call void [mscorlib]System.Console::WriteLine(string)
+    ret
+}
+
+.assembly main {}
+.class Main
+{
+  .method static void Main() cil managed
+  {
+    .entrypoint
+    ldstr &quot;Hello, world!&quot;
+    call void [mscorlib]System.Console::WriteLine(string)
+    ret
+  }
+}
+
+// ilasm cil.il
+.assembly HelloWorld {}
+.method public static void Main() cil managed
+{
+     .entrypoint
+     .maxstack 1
+     ldstr &quot;Hello World&quot;
+     call void [mscorlib]System.Console::WriteLine(string)
+     ret
+}
+
+.method assembly static void modopt([mscorlib]System.Runtime.CompilerServices.CallConvCdecl)
+        test_pointer_operations(int32 param) cil managed
+{
+  .vtentry 1 : 1
+  // Code size       44 (0x2c)
+  .maxstack  2
+  .locals ([0] int32* ptr,
+           [1] valuetype A* V_1,
+           [2] valuetype A* a,
+           [3] int32 k)
+// k = 0;
+  IL_0000:  ldc.i4.0
+  IL_0001:  stloc.3
+// ptr = &amp;k;
+  IL_0002:  ldloca.s   k // load local&#39;s address instruction
+  IL_0004:  stloc.0
+// *ptr = 1;
+  IL_0005:  ldloc.0
+  IL_0006:  ldc.i4.1
+  IL_0007:  stind.i4 // indirection instruction
+// ptr = &amp;param
+  IL_0008:  ldarga.s   param // load parameter&#39;s address instruction
+  IL_000a:  stloc.0
+// *ptr = 2
+  IL_000b:  ldloc.0
+  IL_000c:  ldc.i4.2
+  IL_000d:  stind.i4
+// a = new A;
+  IL_000e:  ldloca.s   a
+  IL_0010:  call       valuetype A* modopt([mscorlib]System.Runtime.CompilerServices.CallConvThiscall) &#39;A.{ctor}&#39;(valuetype A* modopt([mscorlib]System.Runtime.CompilerServices.IsConst) modopt([mscorlib]System.Runtime.CompilerServices.IsConst))
+  IL_0015:  pop
+// ptra = &amp;a;
+  IL_0016:  ldloca.s   a
+  IL_0018:  stloc.1
+// ptra-&gt;meth();
+  IL_0019:  ldloc.1
+  IL_001a:  dup
+  IL_001b:  ldind.i4 // reading the VMT for virtual call
+  IL_001c:  ldind.i4
+  IL_001d:  calli      unmanaged stdcall void modopt([mscorlib]System.Runtime.CompilerServices.CallConvStdcall)(native int)
+  IL_0022:  ret
+} // end of method &#39;Global Functions&#39;::test_pointer_operations
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token call void [mscorlib]System.Console::WriteLine
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

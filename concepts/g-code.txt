@@ -1,0 +1,33 @@
+G-code
+======
+
+G-code is a programming language created in 1950.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221950%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#454 on PLDB
+74 Years Old
+4k Repos
+
+G-code (also RS-274), which has many variants, is the common name for the most widely used numerical control (NC) programming language. It is used mainly in computer-aided manufacturing to control automated machine tools. G-code is sometimes called G programming language, not to be confused with LabVIEW's G programming language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/G-code
+
+- G-code Wikipedia page
+ https://en.wikipedia.org/wiki/G-code
+- There are at least 4,457 G-code repos on GitHub
+- G-code first developed in Massachusetts Institute of Technology
+- The  Google BigQuery Public Dataset GitHub snapshot shows 106 users using G-code in 107 repos on GitHub
+- Pygments supports syntax highlighting for G-code
+- GitHub supports syntax highlighting for G-code
+- See also: (6 related languages)Gerber Image, LabVIEW G, Punched tape, HTML, CSS, Automatically Programmed Tool
+
+G28 X0 Y0
+G1 X55 Y5 F2000
+G1 Y180
+G1 X180
+G1 Y5
+G1 X55
+G1 Y180
+G1 X180
+G1 Y5
+G1 X55
+M0

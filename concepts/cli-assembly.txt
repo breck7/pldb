@@ -1,0 +1,25 @@
+Assembly CLI
+============
+
+Assembly CLI is a library created in 2005.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1782 on PLDB
+19 Years Old
+
+Defined by Microsoft for use in recent versions of Windows, an assembly in the Common Language Infrastructure (CLI) is a compiled code library used for deployment, versioning, and security. There are two types: process assemblies (EXE) and library assemblies (DLL). A process assembly represents a process that will use classes defined in library assemblies. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Assembly_(CLI)
+
+- Assembly CLI Wikipedia page
+ https://en.wikipedia.org/wiki/Assembly_(CLI)
+- Assembly CLI first developed in Microsoft
+- See also: (4 related languages)CIL, Visual Studio, FAT, New Technology File System
+
+.method private hidebysig static void  Main(string[] args) cil managed {
+  .entrypoint
+  .custom instance void [mscorlib]System.STAThreadAttribute::.ctor() = ( 01 00 00 00 )
+  // Code size       11 (0xb)
+  .maxstack  1
+  IL_0000:  ldstr      &quot;Hello World&quot;
+  IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
+  IL_000a:  ret } // end of method Class1::Main

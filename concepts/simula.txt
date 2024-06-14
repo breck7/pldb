@@ -1,0 +1,129 @@
+Simula
+======
+
+Simula is a programming language created in 1965 by Ole-Johan Dahl.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221965%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ole-Johan%20Dahl
+
+#322 on PLDB
+59 Years Old
+
+Try now: TIO
+
+Simula is the name of two simulation programming languages, Simula I and Simula 67, developed in the 1960s at the Norwegian Computing Center in Oslo, by Ole-Johan Dahl and Kristen Nygaard. Syntactically, it is a fairly faithful superset of ALGOL 60. Simula 67 introduced objects, classes, inheritance and subclasses, virtual procedures, coroutines, and discrete event simulation, and features garbage collection. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Simula
+
+- Simula Wikipedia page
+ https://en.wikipedia.org/wiki/Simula
+- Simula docs
+ https://portablesimula.github.io/github.io/doc/SimulaTextBook.pdf
+- Simula first developed in Norwegian Computing Center
+- Explore Simula snippets on Rosetta Code
+- Simula on HOPL
+ https://hopl.info/showlanguage.prx?exp=170
+- Simula appears in the TIOBE Index
+- See also: (9 related languages)ALGOL 60, Object Pascal, Java, C#, Algol, Smalltalk, BETA, DOI, ISBN
+
+Begin
+   OutText (&quot;Hello World&quot;);
+   Outimage;
+End;
+
+! Hello World in Simula;
+
+BEGIN
+    OutText(&quot;Hello World!&quot;);
+    OutImage;
+END
+
+Simulation Begin
+   Class FittingRoom; Begin
+      Ref (Head) door;
+      Boolean inUse;
+      Procedure request; Begin
+         If inUse Then Begin
+             Wait (door);
+             door.First.Out;
+         End;
+         inUse:= True;
+      End;
+      Procedure leave; Begin
+         inUse:= False;
+         Activate door.First;
+      End;
+      door:- New Head;
+   End;
+  
+   Procedure report (message); Text message; Begin
+      OutFix (Time, 2, 0); OutText (&quot;: &quot; &amp; message); OutImage;
+   End;
+
+   Process Class Person (pname); Text pname; Begin
+      While True Do Begin
+         Hold (Normal (12, 4, u));
+         report  (pname &amp; &quot; is requesting the fitting room&quot;);
+         fittingroom1.request;
+         report (pname &amp; &quot; has entered the fitting room&quot;);
+         Hold (Normal (3, 1, u));
+         fittingroom1.leave;
+         report (pname &amp; &quot; has left the fitting room&quot;);
+      End;
+   End;
+
+   Integer u;
+   Ref (FittingRoom) fittingRoom1;
+
+   fittingRoom1:- New FittingRoom;
+   Activate New Person (&quot;Sam&quot;);
+   Activate New Person (&quot;Sally&quot;);
+   Activate New Person (&quot;Andy&quot;);
+   Hold (100);
+End;
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token OutText
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token !
+ Example
+  ! A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,51 @@
+GAMS
+====
+
+GAMS is a programming language created in 1988.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1824 on PLDB
+36 Years Old
+
+- GAMS website
+ https://www.gams.com/products/introduction/
+- GAMS first developed in GAMS Development Corp
+- There are 3 Project Euler users using GAMS
+- GAMS on HOPL
+ https://hopl.info/showlanguage.prx?exp=4914
+- Read more about GAMS on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/cb3e367dc06962b67e543cf02481ac804e85234e
+- 3 languages in PLDB linking to GAMS: mpl, Optimization Programming Language, rason
+
+Sets
+       i   canning plants   / Seattle, San-Diego /
+       j   markets          / New-York, Chicago, Topeka / ;
+Parameters
+       a(i)  capacity of plant i in cases
+         /    Seattle     350
+              San-Diego   600  /
+       b(j)  demand at market j in cases
+         /    New-York    325
+              Chicago     300
+              Topeka      275  / ;
+Table  d(i,j)  distance in thousands of miles
+                  New-York       Chicago      Topeka
+    Seattle          2.5           1.7          1.8
+    San-Diego        2.5           1.8          1.4  ;
+Scalar f  freight in dollars per case per thousand miles  /90/ ;
+Parameter
+       c(i,j)  transport cost in thousands of dollars per case ;
+c(i,j) = f * d(i,j) / 1000 ;
+Variables
+     x(i,j)  shipment quantities in cases
+     z       total transportation costs in thousands of dollars ;
+Positive variables x ;
+Equations
+     cost        define objective function
+     supply(i)   observe supply limit at plant i
+     demand(j)   satisfy demand at market j ;
+cost ..        z  =e=  sum((i,j), c(i,j)*x(i,j)) ;
+supply(i) ..   sum(j, x(i,j))  =l=  a(i) ;
+demand(j) ..   sum(i, x(i,j))  =g=  b(j) ;
+Model transport /all/ ;
+Solve transport using LP minimizing z ;

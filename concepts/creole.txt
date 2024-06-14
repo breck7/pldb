@@ -1,0 +1,79 @@
+Creole
+======
+
+Creole is a text markup language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#965 on PLDB
+17 Years Old
+0 Repos
+
+Creole is a lightweight markup language, aimed at being a common markup language for wikis, enabling and simplifying the transfer of content between different wiki engines.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Creole_(markup)
+
+- Creole Wikipedia page
+ https://en.wikipedia.org/wiki/Creole_(markup)
+- There are at least 0 Creole repos on GitHub
+- Creole first developed in International Symposium on Wikis
+- GitHub supports syntax highlighting for Creole
+- See also: (3 related languages)XML, MediaWiki, TiddlyWiki
+
+* Bullet list
+* Second item
+** Sub item
+
+# Numbered list
+# Second item
+## Sub item
+
+= Creole
+
+Creole is a Creole-to-HTML converter for Creole, the lightweight markup
+language (http://wikicreole.org/). Github uses this converter to render *.creole files.
+
+Project page on github:
+
+* http://github.com/minad/creole
+
+Travis-CI:
+
+* https://travis-ci.org/minad/creole
+
+RDOC:
+
+* http://rdoc.info/projects/minad/creole
+
+== INSTALLATION
+
+{{{
+gem install creole
+}}}
+
+== SYNOPSIS
+
+{{{
+require &#39;creole&#39;
+html = Creole.creolize(&#39;== Creole text&#39;)
+}}}
+
+== BUGS
+
+If you found a bug, please report it at the Creole project&#39;s tracker
+on GitHub:
+
+http://github.com/minad/creole/issues
+
+== AUTHORS
+
+* Lars Christensen (larsch)
+* Daniel Mendler (minad)
+
+== LICENSE
+
+Creole is Copyright (c) 2008 - 2013 Lars Christensen, Daniel Mendler. It is free software, and
+may be redistributed under the terms specified in the README file of
+the Ruby distribution.
+
+|=  |= table |= header |
+| a | table  | row     |
+| b | table  | row     |

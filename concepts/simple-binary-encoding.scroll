@@ -1,0 +1,31 @@
+import ../code/conceptPage.scroll
+
+id simple-binary-encoding
+name Simple Binary Encoding
+appeared 2013
+creators Scott Logic
+tags pl
+website https://yafetn.github.io/2023/01/12/sbe.html
+blog https://github.com/real-logic/simple-binary-encoding/wiki/Blogs-and-Announcements
+releaseNotes https://github.com/real-logic/simple-binary-encoding/wiki/Change-Log
+latestVersion 1.31.1
+conceptDescription SBE is an OSI layer 6 presentation for encoding and decoding binary application messages for low-latency financial applications. This repository contains the reference implementations in Java, C++, Golang, C#, and Rust
+
+writtenIn java xml go csharp cpp rust cmake bourne-shell markdown yaml gradle bash xsd make toml c
+relatedConcepts python java rust
+documentation https://github.com/real-logic/simple-binary-encoding/wiki
+repoStats
+ firstCommit 2013
+ commits 3645
+ committers 124
+ files 381
+ newestCommit 2024
+originCommunity https://github.com/FIXTradingCommunity/fix-simple-binary-encoding
+reference https://github.com/real-logic/simple-binary-encoding
+
+githubRepo https://github.com/real-logic/simple-binary-encoding
+ stars 27780
+ forks 469
+ updated 2023
+ description Simple Binary Encoding (SBE) - High Performance Message Codec
+ issues 20

@@ -1,0 +1,355 @@
+Aith
+====
+
+Aith is a programming language created in 2020 by Superstar64.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Superstar64
+
+#1616 on PLDB
+4 Years Old
+
+git clone https://github.com/Superstar64/aith
+
+[Early Stages] Low level functional programming language with linear types, first class inline functions, levity polymorphism and regions.
+
+- Aith website
+ https://github.com/Superstar64/aith
+- Aith is developed on GitHub and has 41 stars
+- Aith first developed in https://github.com/Superstar64/aith
+- Aith is written in Haskell, Tex, Make, Markdown, Python, XML
+
+module ::
+
+inline runtimeCall = \f =&gt; \x =&gt; f (x);
+
+module combinators = {
+    inline flip = \f =&gt; \x =&gt; \y =&gt; f !y !x;
+    inline compose = \f =&gt; \g =&gt; \x =&gt; f !(g !x);
+    
+    inline readerPure = \x =&gt; \r =&gt; x;
+    inline readerBind = \m =&gt; \f =&gt; \r =&gt; f !(m !r) !r;
+    inline readerMap = \f =&gt; \m =&gt; readerBind !m !(compose !readerPure !f);
+};
+
+module systemf = {
+    inline ignored &lt;B : type&gt; : &lt;A : type&gt; B -&gt; B;
+    inline ignored &lt;B : type&gt; = &lt;A : type&gt; \(x : B) =&gt; x;
+
+    inline idSysF = &lt;A : type&gt; \x : A =&gt; x;
+
+    inline runIdSysF = \f {
+        |&lt; f : &lt;A : type&gt; A -&gt; A &gt;|
+    };
+
+    inline id = runIdSysF !idSysF;
+
+    type natural = &lt;A : type&gt; A -&gt; (A -&gt; A) -&gt; A;
+
+    inline zero&lt;&gt; : natural;
+    inline zero = &lt;A : type&gt; \z : A =&gt; \inc : A -&gt; A =&gt; z;
+
+    inline inc&lt;&gt; : natural -&gt; natural;
+    inline inc = \n =&gt; &lt;A : type&gt; \z : A =&gt; \inc : A -&gt; A =&gt; inc !(|&lt; n : natural &gt;| !z !inc);
+
+    inline one&lt;&gt; : natural;
+    inline one = inc !zero;
+
+    inline two&lt;&gt; : natural;
+    inline two = inc !one;
+};
+
+module varSub = {
+    inline sub&lt;R : pretype&lt;pointer, unrestricted&gt;, A : region, B : region &gt;= A, C:type&gt;
+    : R in A -&gt; R in B -&gt; C -[linear]&gt; C;
+    inline sub = \a =&gt; \b =&gt; \x =&gt; x;
+
+    inline cycle = \a =&gt; \b =&gt; \c {
+        sub !a !b !(
+            sub !b !c !(
+                sub !c !a !(
+                    \x =&gt; x
+                )
+            )
+        )
+    };
+};
+
+module default = {
+    add = function(x,y) {
+        x + y
+    };
+
+    ambigous = function(x) {
+        inline y = 1;
+        x
+    };
+};
+
+module unit = {
+    idUnit = function () {
+        ()
+    };
+};
+
+module boolean = {
+    inline yes = true;
+
+    branch = function(b) {
+        if b {
+            1
+        } else {
+            2
+        }
+    };
+
+    complex = function(b) {
+        if (if (b) { true } else {false} ) {
+            1
+        } else {
+            if yes {
+                2
+            } else {
+                4
+            }
+        }
+    };
+
+    not = function(b) {
+        !b
+    };
+
+    inBounds = function(x1, x2, x3) {
+        x1 &lt;= x2 &amp; x2 &lt; x3
+    };
+};
+
+module pair = {
+    fst = function(x, y) =&gt; x;
+
+    snd = function(x, y) =&gt; y;
+    
+    pattern = function (pair) {
+        (fst(pair), snd(pair))
+    };
+};
+
+module ptr = {
+    derefTriple = function(x) {
+        ***x
+    };
+
+    deref &lt;RA : region, RB : region &gt;= RA, T : pretype&lt;pointer, unrestricted&gt;&gt; : function (T* @ RA) =&gt; T uses RB;
+    deref &lt;RA : region, RB : region &gt;= RA, T : pretype&lt;pointer, unrestricted&gt;&gt; = function (x) {
+        *x
+    };
+
+    write&lt;A:region, B:region &gt;= A&gt; : function(int* @ A) =&gt; () uses B;
+    write&lt;A:region, B:region &gt;= A&gt; = function(x :: int* @ A) {
+        *x = (1 :: int)
+    };
+
+    writeTriple = function(x) {
+        ***x = 1
+    };
+
+    swap = function(x,y) {
+        let xp = *x;
+        *x = (*y);
+        *y = xp;
+        ()
+    };
+};
+
+module number = {
+    type point = (int, int, int);
+
+    dotProduct &lt;R : region&gt; : function(point, point) =&gt; int uses R;
+    dotProduct = function((x1,y1,z1), (x2, y2, z2)) {
+        (x1 * x2 + y1 * y2 + z1 * z2)
+    };
+  
+    mid &lt;R : region&gt; : function(uint, uint) =&gt; uint uses R;
+    mid &lt;R : region&gt; = function(x,y) {
+        (x + y) / 2
+    };
+
+    inline divGen = function(x,y) {
+        (x + y - 1) / y
+    };
+
+    div = divGen;
+
+    lessEqual = function(x,y) {
+        x &lt;= y
+    };
+
+    factorial&lt;R : region&gt; : function(ulong) =&gt; ulong uses R;
+    factorial&lt;R : region&gt; = function(x) {
+        if (x == 0) {
+            1
+        } else {
+            x * factorial (x - 1)
+        }
+    };
+};
+
+module fptr = {
+    call = function(f) {
+        f (1)
+    };
+
+    callUnit &lt;R : region&gt; : function(function*(uint) =&gt; () uses R) =&gt; () uses R;
+    callUnit &lt;R : region&gt; = function(f) {
+        f (2)
+    };
+};
+
+module recurse = {
+    explode&lt;L : multiplicity, R:region, A:pretype&lt;pointer, L&gt;&gt; : function() =&gt; A uses R;
+    explode&lt;L : multiplicity, R:region, A:pretype&lt;pointer, L&gt;&gt; = function() {
+        explode ()
+    };
+};
+
+module world = {
+    inline putchar&lt;A:region&gt; : function*(int) =&gt; int uses io in A;
+    inline putchar&lt;A:region&gt; = extern &quot;putchar&quot;;
+
+    putPtr&lt;A:region &gt;= io&gt; : function(int* @ A) =&gt; int uses A;
+    putPtr = function(ptr) {
+        putchar (*ptr)
+    };
+};
+module arrays = {
+    inline get = \x =&gt; \i {
+        * &amp;* &amp;x[i]
+    };
+
+    inline set = \x =&gt; \i =&gt; \a {
+        * &amp;* &amp;x[i] = a
+    };
+
+    swap = function(a, b, i) {
+        let tmp = get !a !i;
+        set !a !i !(get !b !i);
+        set !b !i !tmp;
+        ()
+    };
+
+    memcpyPtr = function(dst, src, i) {
+        loop (let (dst, src, i) = (dst, src, i)) {
+            if(i != 0) {
+                * &amp;* dst = (* &amp;* src);
+                continue (&amp;dst[1], &amp;src[1], i - 1)
+            } else {
+                break ()
+            }
+        }
+    };
+};
+
+module sort = {
+
+    inline get = /arrays/get;
+
+    inline set = /arrays/set;
+
+    insert&lt;R : region&gt; : function(int[] @ R, unsigned integer(native)) =&gt; () uses R;
+    insert&lt;R : region&gt; = function(array, index) {
+        loop (let (array, index) = (array,index)) {
+            if (index &gt; 0 &amp; get !array !index &lt; get !array !(index - 1) ) {
+                let tmp = get !array !index;
+                set !array !index !(get !array !(index - 1));
+                set !array !(index - 1) !tmp;
+                continue (array, index - 1)
+            } else {
+                break ()
+            }
+        }
+    };
+
+    sort &lt;R : region&gt; : function(int[] @ R, unsigned integer(native)) =&gt; () uses R;
+    sort &lt;R : region&gt; = function(array, length) {
+        if (length &gt; 1) {
+            sort(array, length - 1);
+            insert(array, length - 1)
+        } else {
+            ()
+        }
+    };
+};
+
+module borrowed = {
+    increment &lt;R : region&gt; : function(unique int*) =&gt; unique int* uses R;
+    increment &lt;R : region&gt; = function(p :: unique int*) {
+        let ((), p) = borrow p as &lt;A : region &gt;= R&gt;(x :: int* @ A) {
+            *x = (*x + 1)
+        };
+        p
+    };
+};
+
+module partial = {
+    inline auto = \x =&gt; x;
+    
+    inline semi&lt;A : type&gt; = \x : A =&gt; x;
+
+    inline scoped&lt;A : type&gt; : A -&gt; A;
+    inline scoped = \x : A =&gt; x;
+
+    inline manual&lt;A : type&gt; : A -&gt; A;
+    inline manual&lt;A : type&gt; = \x =&gt; x;
+};
+
+module import = {
+    inline id = \x =&gt; x;
+    module b = {
+        inline const = \y =&gt; /import/id;
+    };
+};
+
+module levity = {
+    idPolyPair&lt;A : pretype&lt;struct(pointer, 32bit word) ,linear&gt;&gt; = function(x :: A) {
+        x
+    };
+
+    idPolyUnion&lt;A : pretype&lt;union(pointer, 32bit word) ,linear&gt;&gt; = function(x :: A) {
+        x
+    };
+
+    useId = function(ptr) {
+        idPolyPair(ptr, 0)
+    };
+};
+
+module sum = {
+    triangular = function(start, end) {
+        loop (let (i, total) = (start, 0)) {
+            if (i &lt;= end) {
+                continue (i + 1, total + i)
+            } else {
+                break (total)
+            }
+        }
+    };
+};
+
+module newtype = {
+    wrapper num : pretype&lt;32bit word, unrestricted&gt;;
+    wrapper num = int;
+
+    makeNum = function() {
+        wrap 1 :: num
+    };
+
+    wrapper linked : pretype&lt;pointer, unrestricted&gt;;
+    wrapper linked = linked2* @ io;
+
+    type linked2 = linked;
+
+    read = function (x) {
+        *unwrap (x :: linked)
+    };
+};
+
+as bool borrow boxed break byte capacity continue copy else existence extern false function if in inline int integer invariant io kind let linear long loop module multiarg multiplicity native opaque pointer pretype region representation short signed signedness size step struct subtypable transparent true type ubyte uint ulong union unique unrestricted unsigned unwrap used uses ushort word wrap wrapper

@@ -1,0 +1,98 @@
+import ../code/conceptPage.scroll
+
+id robotframework
+name RobotFramework
+appeared 2013
+tags pl
+website http://robotframework.org/
+latestVersion v6.1.1
+
+isOpenSource true
+writtenIn robotframework python restructuredtext javascript xml json yaml html css xsd svg make
+clocExtensions robot
+fileType text
+documentation https://robotframework.org/robotframework/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 14707
+ committers 222
+ files 2413
+ newestCommit 2024
+country Finland
+originCommunity Robot Framework ry
+
+pygmentsHighlighter RobotFramework
+ filename robotframework.py
+ fileExtensions robot resource
+
+githubRepo https://github.com/robotframework/robotframework
+ stars 7076
+ forks 1980
+ subscribers 473
+ created 2014
+ updated 2022
+ description Generic automation framework for acceptance testing and RPA
+ issues 237
+ firstCommit 2013
+
+domainName robotframework.org
+ registered 2007
+ awisRank
+  2022 146514
+
+githubBigQuery RobotFramework
+ repos 515
+ users 447
+
+linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 7
+ commitCount 83
+ sampleCount 3
+ example
+  *** Settings ***
+  Documentation     Example test case using the gherkin syntax.
+  ...
+  ...               This test has a workflow similar to the keyword-driven
+  ...               examples. The difference is that the keywords use higher
+  ...               abstraction level and their arguments are embedded into
+  ...               the keyword names.
+  ...
+  ...               This kind of _gherkin_ syntax has been made popular by
+  ...               [http://cukes.info|Cucumber]. It works well especially when
+  ...               tests act as examples that need to be easily understood also
+  ...               by the business people.
+  Library           CalculatorLibrary
+  
+  *** Test Cases ***
+  Addition
+      Given calculator has been cleared
+      When user types "1 + 1"
+      and user pushes equals
+      Then result is "2"
+  
+  *** Keywords ***
+  Calculator has been cleared
+      Push button    C
+  
+  User types "${expression}"
+      Push buttons    ${expression}
+  
+  User pushes equals
+      Push button    =
+  
+  Result is "${result}"
+      Result should be    ${result}
+  
+
+githubLanguage RobotFramework
+ fileExtensions robot
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope text.robot
+ repos 7602
+
+semanticScholar 0

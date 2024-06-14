@@ -1,0 +1,64 @@
+Executable JSON
+===============
+
+Executable JSON is a programming language created in 2013 by Todd Davies.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Todd%20Davies
+
+#2762 on PLDB
+11 Years Old
+
+- Executable JSON website
+ https://gist.github.com/Todd-Davies/7666505#file-executable-json
+- Executable JSON first developed in http://todddavies.co.uk
+
+[
+    {&quot;x&quot;:9},
+    {&quot;y&quot;:3},
+    [&quot;print The value of x is: $x&quot;],
+    [&quot;print The value of x is: $y&quot;],
+    [&quot;print Now lets add x and y&quot;],
+    [&quot;add $z $x $y&quot;],
+    [&quot;print The answer is: $z&quot;],
+    [&quot;print Now lets subtract y from x&quot;],
+    [&quot;sub $z $x $y&quot;],
+    [&quot;print The answer is: $z&quot;],
+    [&quot;print Now lets divide x by y&quot;],
+    [&quot;div $z $x $y&quot;],
+    [&quot;print The answer is: $z&quot;],
+    [&quot;print Now lets multiply x by y&quot;],
+    [&quot;mul $z $x $y&quot;],
+    [&quot;print The answer is: $z&quot;],
+    {&quot;myMethod&quot;:
+      {
+        &quot;params&quot;: [
+          &quot;p1&quot;,
+          &quot;p2&quot;
+        ],
+        &quot;body&quot;: [
+          {&quot;nestedMethod&quot;:
+            {
+              &quot;params&quot;: [
+                &quot;p1&quot;
+              ],
+              &quot;body&quot;: [
+                [&quot;print Methods can be nested, and arguments can be trickled down.&quot;],
+                [&quot;print The result was: $p1&quot;]
+              ]
+            }
+        },
+          [&quot;print You passed me: $p1 and $p2&quot;],
+          [&quot;print Lets add them and pass the result into another method!&quot;],
+          [&quot;add $p2 $p1 $p2&quot;],
+          [&quot;!nestedMethod $p2&quot;]
+        ]
+      }
+  },
+  [&quot;!myMethod $x $y&quot;]
+]
+
+HackerNews discussions of Executable JSON
+=========================================
+
+title|titleLink|date|score|comments
+Show HN: A programming language with a JSON parsable syntax|https://news.ycombinator.com/item?id=6804341|11/26/2013|3|0

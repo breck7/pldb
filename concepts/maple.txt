@@ -1,0 +1,74 @@
+Maple
+=====
+
+Maple is a programming language created in 1982.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221982%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#106 on PLDB
+42 Years Old
+
+Maple is a symbolic and numeric computing environment, and is also a multi-paradigm programming language. Developed by Maplesoft, Maple also covers other aspects of technical computing, including visualization, data analysis, matrix computation, and connectivity. A toolbox, MapleSim, adds functionality for multidomain physical modeling and code generation.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Maple_(software)
+
+- Maple website
+ http://www.maplesoft.com/products/maple/
+- Maple downloads page
+ https://www.maplesoft.com/download/
+- Maple Wikipedia page
+ https://en.wikipedia.org/wiki/Maple_(software)
+- Maple docs
+ https://www.maplesoft.com/documentation_center/
+- Maple first developed in Cybernet Systems Co. Ltd
+- Maple on Twitter
+ https://twitter.com/maplesoft
+- There are 265 Project Euler users using Maple
+- Explore Maple snippets on Rosetta Code
+- Maple on HOPL
+ https://hopl.info/showlanguage.prx?exp=909
+- Maple appears in the TIOBE Index
+- There is a central package repository for Maple
+- Official Blog page for Maple
+ https://faq.maplesoft.com/
+- See also: (21 related languages)C, Java, Linux, Pascal, C#, Fortran, MATLAB, Visual Basic, Microsoft Excel, Watcom, SQL, HTTP, JavaScript, Julia, Perl, Python, R, JSP, Mathcad, muPad, Sage
+
+# Hello World in Maple
+
+&gt;&gt; printf(&quot;Hello World!&quot;);
+
+eqn:= f(x)-3*Int((x*y+x^2*y^2)*f(y), y=-1..1) = h(x):
+ intsolve(eqn,f(x));
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

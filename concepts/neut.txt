@@ -1,0 +1,54 @@
+neut
+====
+
+neut is a programming language created in 2018.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#718 on PLDB
+6 Years Old
+
+git clone https://github.com/u2zv1wx/neut
+
+A dependently-typed programming language with compile-time malloc/free determination
+
+- neut is developed on GitHub and has 797 stars
+- neut first developed in https://github.com/vekatze/neut/issues
+- neut is written in Haskell, Markdown, JSON, YAML, Bourne shell, JavaScript, CSS, TypeScript, Handlebars, Dockerfile, SVG, TOML, C
+- Read more about neut on the web: 1.
+ https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
+
+; download the core library
+(ensure core/0.1.0.0
+  &quot;https://github.com/u2zv1wx/neut-core/raw/master/release/0.1.0.0.tar.gz&quot;)
+
+(include &quot;core/0.1.0.0/core.neut&quot;)
+
+(with identity.bind
+  (let str &quot;a&quot;)
+  (let _ (string.print str))
+  (let _ (string.print str))
+  (string.print str))
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

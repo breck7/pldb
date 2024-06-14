@@ -1,0 +1,82 @@
+Pawn
+====
+
+Pawn is a programming language created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1452 on PLDB
+26 Years Old
+3k Repos
+
+- Pawn Wikipedia page
+ https://web.archive.org/web/20150408071820/https://en.wikipedia.org/wiki/Pawn_(scripting_language)
+- There are at least 3,270 Pawn repos on GitHub
+- Pawn first developed in Informatie-Technologisch Bureau CompuPhase
+- Pawn is written in Pascal, C, Assembly language, Tex, CMake, Rexx, XSLT, CSS, Markdown, C++
+- The  Google BigQuery Public Dataset GitHub snapshot shows 304 users using Pawn in 330 repos on GitHub
+- Pygments supports syntax highlighting for Pawn
+
+#include &lt;core&gt;
+ 
+main(){
+    print(&quot;Hello World&quot;);
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example

@@ -1,0 +1,43 @@
+Flatline
+========
+
+Flatline is a programming language created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1302 on PLDB
+11 Years Old
+
+git clone https://github.com/bigmlcom/flatline
+
+Documentation, examples and utilities for Flatlline, BigML's dataset transformation and generation language
+
+- Flatline website
+ http://bigmlcom.github.io/flatline
+- Flatline is developed on GitHub and has 26 stars
+- Flatline first developed in BigML Inc
+- Flatline is written in Python, reStructuredText, JavaScript, Markdown, HTML, Make, Jupyter Notebook, CSS
+- Pygments supports syntax highlighting for Flatline
+
+(if (missing? &quot;00000&quot;) (random-value &quot;000000&quot;) (f &quot;000000&quot;))
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example

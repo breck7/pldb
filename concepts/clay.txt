@@ -1,0 +1,109 @@
+clay
+====
+
+clay is a programming language created in 2010 by KS Sreeram and Joe Groff.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=KS%20Sreeram
+ https://pldb.io/concepts/../lists/creators.html#q=Joe%20Groff
+
+#518 on PLDB
+14 Years Old
+
+git clone https://github.com/jckarter/clay
+
+The Clay programming language
+
+- clay website
+ http://claylabs.com/clay
+- clay is developed on GitHub and has 395 stars
+- clay first developed in https://claylabs.com/
+- clay is written in C++, Make, XML, Python, CMake, C, Java, Markdown, Vim script, Go, Bourne shell, CSS, SVG, Lisp
+- clay on Twitter
+ https://twitter.com/claylabs
+- There are 5 Project Euler users using clay
+- Pygments supports syntax highlighting for clay
+- Read more about clay on the web: 1.
+ https://bitbucket.org/kssreeram/clay/src/default/
+
+import printer.(println);
+
+factorial1(n) {
+    if (n == 0)
+        return 1;
+    return n*factorial1(n-1);
+}
+
+factorial2(n) {
+    var p = 1;
+    again :
+    if (n == 0)
+        return p;
+    p *: n;
+    n -: 1;
+    goto again;
+}
+
+factorial3(n) {
+    var p = 1;
+    while (true) {
+        if (n == 0) break;
+        p *: n;
+        n -: 1;
+    }
+    return p;
+}
+
+factorial4(n) {
+    var p = 1;
+    for (i in range(n))
+        p *: i+1;
+    return p;
+}
+
+main() {
+    var n = 7;
+    n -: 1;
+    var f = factorial4(n);
+    println(&quot;factorial(&quot;, n, &quot;) = &quot;, f);
+    return 0;
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example

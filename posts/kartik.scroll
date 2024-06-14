@@ -1,0 +1,64 @@
+author https://github.com/hassamalhajaji Hassam Alhajaji
+date 11/22/2022
+groups interviews frontpage All
+openGraphImage https://pldb.io/posts/images/kartikAgaram.png
+title A brief interview with Mu creator Dr. Kartik Agaram
+
+import postHeader.scroll
+printTitle
+thinColumns 2
+printAuthor
+
+## Introduction
+
+Dr. Kartik Agaram is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.
+ dateline
+ http://akkartik.name/ Dr. Kartik Agaram
+
+## Interview
+
+*Hassam:* What problem is Mu attempting to solve?
+ https://github.com/akkartik/mu Mu
+
+endSnippet
+
+*Dr. Agaram:* Can we encourage people to modify the programs on their computers without impeding their ability to work with others?
+
+The world currently creates software with certain unquestioned assumptions:
+- A few people build the program, a lot of people use it.
+- Everybody who uses a program tries to stick together and use the same version.
+- Don't move anybody's cheese! We can add things to programs. However, once a thing in a program works one way, we don't change it or remove it.
+
+These assumptions lead to many problems:
+- Since everyone uses the same version, any mistakes that creep into it affect everyone.
+- Since a small number of people build the program, they can sneak in things most people don't want, maybe even malicious things.
+- Since we can't ever take things out, programs grow ever larger and more complex, never simpler. Mistakes become more inevitable over time, and it becomes easier and easier for a single person to sneak in malicious things even past other builders.
+
+This way of working has been transplanted from the way humans have built artifacts before the time of computers. However, software is different:
+- It's very easy to copy. Things made of atoms have to be shared in our world, but each of our computers can live in its own solipsistic universe. If I want a road to move a little to the left or right I'm out of luck, but most software doesn't fundamentally forbid such changes.
+- Small changes can have huge effects. In the real world I can't destroy my house by bringing a pen into it. But on my computer these sorts of things happen all the time. You can press _your_ mouse somewhere on _your_ screen.. and catastrophically lose all your money.
+
+The way to fix this, I think, is to start with what makes computers different from anything else in human experience.
+
+- Keep programs really small to minimize vectors for catastrophe.
+- Use this knowledge to allow anyone to modify their own programs. The more people change programs on their own computers, the more natural barriers we will have to keep mistakes and malicious changes from infecting everyone all at once.
+- Spread the knowledge and understanding of what's inside a computer to lots of people so that we can police each other on the programs that enter our computers.
+
+*Hassam:* Doesn't this approach risk destabilizing people's computers?
+
+*Dr. Agaram:* You're absolutely right. I'm asking people to make changes to programs they're not very familiar with, and that increases the odds of breaking something. I have 3 defenses.
+
+1. Mistakes can be protected against. We can detect them quickly, and we can support undoing them quickly. Guardrails like formal analysis (types and so on) and tests help with the former. Version control helps with the latter. Both are fairly mature and reliable. We should all lean on them more to avoid bigger problems elsewhere.
+2. Philosophically I think mistakes can often be very desirable. If you make lots of small mistakes, that can help you avoid big mistakes. This is the idea of hormesis that Nassim Taleb popularized. Avoiding large forest fires by having annual controlled burns, for example. In software I think mistakes can be very desirable because they allow the design rationale for programs to spread through a wider audience of programmers, and to not be forgotten over time.
+3. I'd argue software today is already fairly unstable. We find vulnerabilities constantly. We find apps exfiltrating behavioral data on a regular basis. And even our cheese gets moved fairly often when we upgrade. So it's not clear to me how much we're giving up.
+
+So yes, breakage will be a little more visible where it's normally happening in areas that are easy to ignore. Perhaps this is a good thing? Software is in the stone ages. I think we all would benefit from reminders of this fact. We might be annoyed more but suffer fewer catastrophes.
+
+*Hassam:* This is a big, ambitious project. How did you get motivated to start working on it?
+
+*Dr. Agaram:* When I started Mu I'd been working in tech companies for a while, and I was disillusioned. Large companies are slow, bureaucratic and permit all kinds of shoddy work and weighty-seeming over-engineering. It seemed to me that they should be getting at least technically out-competed by smaller companies, even if they still often win from a business perspective. (I was very influenced early on by Tracy Kidder's book, _"The soul of a new machine"_ about how Data General went out of business in spite of building a technically superior computer.) But when I looked around, the smaller companies didn't seem that much better. They were all trying furiously to grow, not just in adoption but also in the population of their programmers. They didn't seem more capital-efficient. Software is supposed to be scalable. Why are we having such trouble keeping our programs running without constant attention? I think there's a rot in the foundations that we keep trying to paper over and forget about. We should instead keep exposing it, reminding ourselves of it, trying new ways to rid ourselves of it.
+ https://en.wikipedia.org/wiki/Tracy_Kidder Tracy Kidder's
+image images/kartikAgaram.png
+ caption You have my heartfelt gratitude Dr. Agaram!
+
+import footer.scroll

@@ -1,0 +1,53 @@
+{
+  "name": "scroll-cli",
+  "version": "95.0.0",
+  "description": "A language for scientists of all ages. A curated collection of tools for refining and sharing thoughts.",
+  "main": "scroll.js",
+  "engines": {
+    "node": ">=16.0"
+  },
+  "scripts": {
+    "build": "scroll list | scroll build",
+    "coverage": "tap tests/scroll.test.js",
+    "format": "scroll list | scroll format",
+    "open": "open index.html",
+    "debug": "node --inspect tests/scroll.test.js;",
+    "sdkBeta": "npm install ~/sdk",
+    "test": "node tests/scroll.test.js",
+    "cloc": "cloc --vcs git . --read-lang-def=tests/clocLangs.txt"
+  },
+  "bin": {
+    "scroll": "./scroll.js"
+  },
+  "files": [
+    "scroll.js",
+    "grammar/",
+    "external/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breck7/scroll.git"
+  },
+  "author": "Breck Yunits",
+  "prettier": {
+    "parser": "babel",
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": false,
+    "printWidth": 240,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed"
+  },
+  "homepage": "https://scroll.pub",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "image-size": "^1.0.2",
+    "scrollsdk": "^78.0.0",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "tap": "^18.7.2"
+  }
+}

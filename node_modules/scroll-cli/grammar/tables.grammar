@@ -1,0 +1,184 @@
+abstractTableParser
+ cruxFromId
+ catchAllParser rowParser
+ extends abstractScrollParser
+ javascript
+  get tableHeader() {
+   return this.columns.filter(col => !col.isLink).map(column => `<th>${column.name}</th>\n`)
+  }
+  get columnNames() {
+   const header = this.nodeAt(0)
+   return header ? header.getLine().split(this.delimiter) : []
+  }
+  get columns() {
+   const cols = this.columnNames
+   return cols.map((name, index) => {
+    const isLink = name.endsWith("Link")
+    const linkIndex = cols.indexOf(name + "Link")
+    return {
+     name,
+     isLink,
+     linkIndex
+    }
+   })
+  }
+  get tableBody() {
+   const { delimiter } = this
+   return this.topDownArray
+    .slice(1)
+    .map(node => `<tr>${node.toRow(this.columns, delimiter)}</tr>`)
+    .join("\n")
+  }
+  compile() {
+   return `<table class="scrollTable"><thead><tr>${this.tableHeader.join("\n")}</tr></thead>\n<tbody>${this.tableBody}</tbody></table>`
+  }
+  compileTextVersion() {
+    return this.childrenToString()
+  }
+
+rowParser
+ catchAllCellType stringCell
+ javascript
+  toRow(columns, delimiter) {
+   const words = this.getLine().split(delimiter)
+   let str = ""
+   let column = 0
+   const columnCount = columns.length
+   while (column < columnCount) {
+    const col = columns[column]
+    column++
+    const content = (columnCount === column ? words.slice(columnCount - 1).join(" ") : words[column - 1]) ?? ""
+    if (col.isLink) continue
+    let tagged = content
+    const link = words[col.linkIndex]
+    if (col.linkIndex > -1 && link) tagged = `<a href="${link}">${content}</a>`
+    else if (content.match(/^https?\:[^ ]+$/)) tagged = `<a href="${content}">${content}</a>`
+    str += `<td>${tagged}</td>\n`
+   }
+   return str
+  }
+
+tableParser
+ description A table with a custom delimiter.
+ extends abstractTableParser
+ catchAllCellType anyCell
+ javascript
+  get delimiter() {
+   return this.content ?? ""
+  }
+
+commaTableParser
+ description Comma separated values table.
+ extends abstractTableParser
+ string delimiter ,
+
+pipeTableParser
+ description Pipe separated values table.
+ extends abstractTableParser
+ string delimiter |
+
+spaceTableParser
+ description Space separated values table. Last column is a catch all.
+ extends abstractTableParser
+ string delimiter  
+
+tabTableParser
+ description Tab separated values table.
+ extends abstractTableParser
+ string delimiter \t
+
+tableSearchParser
+ extends abstractScrollWithRequirementsParser
+ string copyFromExternal jquery-3.7.1.min.js dataTables.dataTables.min.css dataTables.min.js tableSearch.js
+ string requireOnce
+  <script defer src="jquery-3.7.1.min.js"></script>
+  <style>.dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}</style>
+  <link rel="stylesheet" href="dataTables.dataTables.min.css">
+  <script defer src="dataTables.min.js"></script>
+  <script defer src="tableSearch.js"></script>
+ description Add table search and sort to all tables on the page.
+ javascript
+  compileInstance() {
+   return ""
+  }
+
+printTableParser
+ description Print a tabular table in a page into an HTML table.
+ cruxFromId
+ catchAllCellType integerCell
+ extends abstractScrollParser
+ javascript
+   compile() {
+    const node = this.appendSibling("table \t", this.tsv)
+    const html = node.compile()
+    node.destroy()
+    return html
+   }
+   getTableByIndex(index) {
+      const hit = this.root.file.tables[parseInt(index)]
+      if (!hit)
+        console.error(`Table "${index}" not found`)
+      return hit
+   }
+   get table() {
+     const index = this.getWord(1)
+     if (index !== undefined)
+        return this.getTableByIndex(index)
+     if (this.next.isTabularData)
+       return this.next
+     if (this.previous.isTabularData)
+       return this.previous.headerNode
+    return this.getTableByIndex(0)
+   }
+   get tsv() {
+    const firstNode = this.table
+    const lastNode = firstNode.lastNode
+    const aftertext = lastNode.childrenToString() // todo: we could be more specific and ignore comments
+    let tableNode = firstNode
+    let tsv = tableNode.getLine()
+    while (tableNode.next.isTabularData) {
+      tsv += "\n" + (aftertext ? tableNode.next.applyAftertext(aftertext) : tableNode.next.getLine())
+      tableNode = tableNode.next
+      if (tableNode === firstNode)
+        break
+    }
+     return tsv
+   }
+   compileTextVersion() {
+     return this.tsv
+   }
+
+tabularDataParser
+ description Root lines with tabs are parsed as tsv data and printed as tables.
+ pattern \t
+ extends abstractCommentParser
+ javascript
+  compileTextVersion() {
+    return ""
+  }
+  get headerNode() {
+    return this.isFirst ? this : this.previous.headerNode
+  }
+  compile() {
+    return ""
+  }
+  get isFirst() {
+    return !this.previous.isTabularData
+  }
+  get lastNode() {
+    if (this.next.isTabularData && this.next.lineNumber)
+      return this.next.lastNode
+    return this
+  }
+  applyAftertext(aftertext) {
+    const node = this.parent.appendLineAndChildren("* " + this.getLine(), aftertext + "\ntag none")
+    const html = node.compile()
+    node.destroy()
+    return html
+  }
+  isTabularData = true
+ example
+  // The below lines will print a table
+  printTable
+  Index Name
+  1 Thermos

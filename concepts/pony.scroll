@@ -1,0 +1,111 @@
+import ../code/conceptPage.scroll
+
+id pony
+name Pony
+appeared 2012
+creators Sylvan Clebsch
+tags pl
+website https://www.ponylang.org/
+latestVersion 0.58.4
+
+isOpenSource true
+writtenIn c markdown cpp yaml bash dockerfile cmake dtrace powershell make d llvmir ini
+tryItOnline pony
+clocExtensions pony
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Pony
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 7370
+ committers 267
+ files 1065
+ newestCommit 2024
+country Various
+originCommunity https://github.com/ponylang
+
+pygmentsHighlighter Pony
+ filename pony.py
+ fileExtensions pony
+subreddit https://reddit.com/r/ponylang
+ memberCount
+  2017 375
+  2022 672
+example
+ actor Main
+  new create(env: Env) =>
+    env.out.print("Hello, world!")
+twitter https://twitter.com/ponylang
+leachim6 Pony
+ filepath p/Pony.pony
+ fileExtensions pony
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello World")
+  
+compilerExplorer Pony
+ example
+  actor Main
+    var _env: Env
+  
+    new create(env: Env) =>
+      _env = env
+      square(3)
+  
+    fun square(num: I32): I32 =>
+      num * num
+  
+
+githubRepo https://github.com/ponylang/ponyc
+ stars 5310
+ forks 411
+ subscribers 144
+ created 2012
+ updated 2023
+ description :horse: Pony is an open-source, actor-model, capabilities-secure, high performance programming language
+ issues 270
+
+printToken env.out.print
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
+
+domainName ponylang.org
+ registered 2015
+
+githubBigQuery Pony
+ repos 78
+ users 59
+
+linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 10
+ commitCount 32
+ sampleCount 6
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello, world.")
+  
+
+isbndb 0
+
+githubLanguage Pony
+ fileExtensions pony
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pony
+ repos 549
+
+semanticScholar 0

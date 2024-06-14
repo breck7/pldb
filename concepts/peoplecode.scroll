@@ -1,0 +1,50 @@
+import ../code/conceptPage.scroll
+
+id peoplecode
+name PeopleCode
+appeared 2008
+tags pl
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/peoplecode
+rosettaCode http://www.rosettacode.org/wiki/Category:PeopleCode
+centralPackageRepositoryCount 0
+originCommunity Oracle
+
+helloWorldCollection PeopleCode
+ /* Hello World in PeopleCode 8.45
+ 
+ &MsgText = MsgGetText(66666666, 999999999, "Hello World!");
+ 
+leachim6 PeopleCode
+ filepath p/PeopleCode
+ example
+  MessageBox(0, "", 0, 0, "Hello World");
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/PeopleCode
+ example
+  &SQL = CreateSQL("SQL Statement");
+     &SQL.Execute([bind_values]);
+ related java
+ summary PeopleCode is a proprietary object-oriented programming language used to express business logic for PeopleSoft applications. Syntactically, PeopleCode is similar to other programming languages, and can be found in both loosely-typed and strongly-typed forms. PeopleCode and its run-time environment is part of the larger PeopleTools framework. PeopleCode has evolved over time and its implementation through the PeopleSoft applications lack consistency. PeopleCode offers some interoperability with the Java programming language. Definition name references, for example, enable you to refer to PeopleTools definitions, such as record definitions or pages, without using hard-coded string literals. Other language features, such as PeopleCode data types and metastrings, reflect the close interaction of PeopleTools and Structured Query Language (SQL). Dot notation, classes and methods in PeopleCode are similar to other object oriented languages, like Java. Object syntax was an important feature of PeopleTools 8.
+ pageId 5157513
+ dailyPageViews 27
+ created 2006
+ backlinksCount 10
+ revisionCount 83
+ appeared 2008
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PeopleSoft Developer's Guide for Peopletools & Peoplecode|2008|Judi Dolittle|5705403|2.20|5|0
+ PeopleSoft Developer's Guide for Peopletools & Peoplecode|2008|Judi Dolittle|15324665|0.0|0|0
+ PeopleSoft Developer's Guide for PeopleTools & PeopleCode (Osborne Oracle Press)|2008|Judi Dolittle|27942732|0.0|0|0
+ Oracle 1z0-241 Exam: PeopleSoft Application Developer I: PeopleTools & PeopleCode||Jacob Michael|48865985|0.0|0|0
+ Easy Guide: PeopleSoft Application Developer I PeopleTools and PeopleCode||Austin Songer|57761265|0.0|0|0
+ Easy Guide: PeopleSoft Application Developer I Peopletools and Peoplecode: Questions and Answers||Austin Vern Songer|55355393|0.0|0|0

@@ -1,0 +1,230 @@
+Elm
+===
+
+Elm is an open source programming language created in 2012 by Evan Czaplicki.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Evan%20Czaplicki
+
+#56 on PLDB
+12 Years Old
+20k Repos
+
+git clone https://github.com/elm-lang/elm-compiler
+
+Try now: Web · Riju
+
+Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces. Elm is purely functional, and is developed with emphasis on usability, performance, and robustness. It advertises "no runtime exceptions in practice," made possible by the Elm compiler's static type checking.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Elm_(programming_language)
+
+- Elm website
+ http://elm-lang.org
+- Elm Wikipedia page
+ https://en.wikipedia.org/wiki/Elm_(programming_language)
+- Elm is developed on GitHub and has 6,875 stars
+- Elm docs
+ https://elm-lang.org/docs
+- There are at least 19,905 Elm repos on GitHub
+- Elm first developed in https://github.com/elm
+- Elm compiles to JavaScript
+- Elm is written in Haskell, Markdown, JSON, Elm, Bourne shell, YAML, JavaScript, CSS, XML, Python, Dockerfile
+- Elm on Twitter
+ https://twitter.com/elmlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Elm in 3k repos on GitHub
+- There are 4 Project Euler users using Elm
+- Explore Elm snippets on Rosetta Code
+- Elm appears in the TIOBE Index
+- Elm LSP implementation
+- CodeMirror package for syntax highlighting Elm
+- Pygments supports syntax highlighting for Elm
+- GitHub supports syntax highlighting for Elm
+- There is a central package repository for Elm
+- Official Blog page for Elm
+ https://elm-lang.org/news
+- Frequently Asked Questions for Elm
+ https://faq.elm-community.org/
+- Indeed.com has 127 matches for "elm engineer".
+- elm-lang.org was registered in 2011
+- See also: (7 related languages)Haskell, Standard ML, OCaml, F#, Vue, JavaScript, TypeScript
+- 8 languages in PLDB linking to Elm: Ace Editor, bosque, cloc, Elm, mal, Pygments, Reason, Scrapscript
+
+module Main exposing (..)
+
+output : String
+output = &quot;Hello, world!&quot;
+
+import Html exposing (text)
+
+main =
+  text &quot;Hello World&quot;
+
+-- Hello world in Elm
+
+import Text
+
+main = Text.plainText &quot;Hello, world!&quot;
+
+main = asText (qsort [3,9,1,8,5,4,7])
+
+qsort lst =
+  case lst of
+    x:xs -&gt; qsort (filter ((&gt;=)x) xs) ++ [x] ++ qsort (filter ((&lt;)x) xs)
+    [] -&gt; []
+
+{---------------------
+
+QuickSort works as follows:
+ - Choose a pivot element which be placed in the &quot;middle&quot; of the sorted list.
+   In our case we are choosing the first element as the pivot.
+ - Gather all of the elements less than the pivot (the first filter).
+   We know that these must come before our pivot element in the sorted list.
+   Note: ((&gt;=)x) === (\y -&gt; (&gt;=) x y) === (\y -&gt; x &gt;= y)
+ - Gather all of the elements greater than the pivot (the second filter).
+   We know that these must come after our pivot element in the sorted list.
+ - Run `qsort` on the lesser elements, producing a sorted list that contains
+   only elements less than the pivot. Put these before the pivot.
+ - Run `qsort` on the greater elements, producing a sorted list. Put these
+   after the pivot.
+
+Note that choosing a bad pivot can have bad effects. Take a sorted list with
+N elements. The pivot will always be the lowest member, meaning that it does
+not divide the list very evenly. The list of lessers has 0 elements
+and the list of greaters has N-1 elemens. This means qsort will be called
+N times, each call looking through the entire list. This means, in the worst
+case, QuickSort will make N^2 comparisons.
+
+----------------------}
+
+-- This is a single line comment
+
+{- This is a multi-line comment.
+   It can span multiple lines.
+-}
+
+{- It is possible to {- nest -} multi-line comments -}
+
+-- Here we define a value named &#39;&#39;greeting&#39;&#39;. The type is inferred as a String.
+greeting =
+    &quot;Hello World!&quot;
+
+ -- It is best to add type annotations to top-level declarations.
+hello : String
+hello =
+    &quot;Hi there.&quot;
+
+-- Functions are declared the same way, with arguments following the function name.
+add x y =
+    x + y
+
+-- Again, it is best to add type annotations.
+hypotenuse : Float -&gt; Float -&gt; Float
+hypotenuse a b =
+    sqrt (a^2 + b^2)
+
+-- Functions are also curried; here we&#39;ve curried the multiplication
+-- infix operator with a `2`
+multiplyBy2 : number -&gt; number
+multiplyBy2 =
+    (*) 2
+
+-- If-expressions are used to branch on values
+absoluteValue : number -&gt; number
+absoluteValue number =
+    if number &lt; 0 then negate number else number
+
+ -- Records are used to hold values with named fields
+book : { title : String, author : String, pages : Int }
+book =
+    { title = &quot;Steppenwolf&quot;
+    , author = &quot;Hesse&quot;
+    , pages = 237
+    }
+
+-- Record access is done with `.`
+title : String
+title =
+    book.title
+
+-- Record access `.` can also be used as a function
+author : String
+author =
+    .author book
+
+-- We can create entirely new types with the `type` keyword.
+-- The following value represents a binary tree.
+type Tree a
+    = Empty
+    | Node a (Tree a) (Tree a)
+
+-- It is possible to inspect these types with case-expressions.
+depth : Tree a -&gt; Int
+depth tree =
+    case tree of
+        Empty -&gt;
+            0
+
+        Node value left right -&gt;
+            1 + max (depth left) (depth right)
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- _?\d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- _?\d+\.(?=\d+)
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token {- -}
+ Example
+  {- A comment
+  -}
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example

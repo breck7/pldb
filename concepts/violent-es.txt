@@ -1,0 +1,67 @@
+Violent ES
+==========
+
+Violent ES is a programming language created in 2022 by Matheus Dias de Souza.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Matheus%20Dias%20de%20Souza
+
+#1914 on PLDB
+2 Years Old
+
+git clone https://github.com/violent-es/violent-es
+
+Compiler and more for the Violent ES language
+
+- Violent ES website
+ https://github.com/violent-es/violent-es
+- Violent ES is developed on GitHub and has 3 stars
+- Violent ES first developed in https://github.com/violent-es/violent-es
+- Violent ES is written in C#, Markdown, JSON
+
+enum Product {
+    // [&#39;smartphone&#39;, 0]
+    const SMARTPHONE;
+    
+    // [&#39;aUtOmObIlE&#39;, 1]
+    const AUTOMOBILE = &#39;aUtOmObIlE&#39;;
+    
+    // [&#39;kxxx&#39;, 65]
+    const KEYBOARD = [65, &#39;kxxx&#39;];
+    
+    function customMethod():void {
+    }
+}
+
+var p:Produle = &#39;kxxx&#39;;
+var p = Product.KEYBOARD;
+p.valueOf(); // 65
+p.toString(); // &#39;kxxx&#39;
+p = 65 as! Product;
+p = &#39;kxxx&#39; as! Product;
+
+[Flags]
+enum Permissions {
+    // [&#39;fooBlah&#39;, 1]
+    const FOO_BLAH;
+    
+    // [&#39;qux&#39;, 2]
+    const QUX;
+    
+    // [&#39;baz&#39;, 4]
+    const BAZ;
+}
+
+var p:Permissions = [&#39;fooBlah&#39;, &#39;qux&#39;];
+p = {fooBlah: true, baz: false};
+p = p.toggle(&#39;fooBlah&#39;);
+p = p.filter(&#39;qux&#39;);
+p = p.include(&#39;qux&#39;);
+p = p.exclude(&#39;qux&#39;);
+&#39;qux&#39; in p;
+
+// empty
+p = undefined;
+p = {};
+p = [];
+
+as await break case catch class const continue default delete do each else embed enum extends false final finally for from function get if implements import in include interface internal is meta namespace native new null override package private protected proxy public resource return set static switch this throw throws true try type typeof undefined use var void where while with yield

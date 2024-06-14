@@ -1,0 +1,37 @@
+import ../code/conceptPage.scroll
+
+id video
+name video
+appeared 2016
+creators Leif Andersen
+tags pl
+website https://lang.video/
+latestVersion v0.2.2
+conceptDescription Video is a language for making movies. It combines the power of a traditional video editor with the capabilities of a full programming language. Video integrates with the Racket ecosystem and extensions for DrRacket to transform it into a non-linear video editor.
+
+isOpenSource true
+writtenIn racket markdown yaml bourne-shell
+fileExtensions .rkt
+documentation https://docs.racket-lang.org/video@video/index.html
+repoStats
+ firstCommit 2016
+ commits 932
+ committers 6
+ files 88
+ newestCommit 2019
+country United States
+originCommunity https://lang.video/community.html
+
+twitter https://twitter.com/videolang
+
+githubRepo https://github.com/videolang/video
+ firstCommit 2016
+ stars 121
+ forks 12
+ subscribers 13
+ created 2017
+ updated 2022
+ description Source Code for Video language.
+ issues 18
+
+domainName lang.video

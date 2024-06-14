@@ -1,0 +1,23 @@
+HyPhy
+=====
+
+HyPhy is an open source programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#807 on PLDB
+16 Years Old
+113 Repos
+
+git clone https://github.com/veg/hyphy
+
+HyPhy: Hypothesis testing using Phylogenies
+
+- HyPhy website
+ http://hyphy.org/w/index.php/HyPhy_Batch_Language
+- HyPhy is developed on GitHub and has 159 stars
+- There are at least 113 HyPhy repos on GitHub
+- HyPhy first developed in University of California San Diego and North Carolina State University
+- HyPhy is written in C++, Brainfuck, YAML, C, CMake, Markdown, Bourne shell, Python, XML, OpenCL, JavaScript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 69 users using HyPhy in 73 repos on GitHub
+
+#profile START;s = 0;m = {5,1};for (k=0; k&lt;250000; k=k+1){	s = s + k;	t = Random (0,5);	m [t] = m [t] + 1;}#profile PAUSE;s2 = 0;for (k=1; k&lt;10000; k=k+1){	s2 = s2+1/k;}#profile _hyphy_profile_dump;stats  			= _hyphy_profile_dump[&quot;STATS&quot;];_profile_summer	= {1,Rows(stats)};_profile_summer = _profile_summer[&quot;1&quot;] * stats;_instructions   = _hyphy_profile_dump[&quot;INSTRUCTION&quot;];_indices	    = _hyphy_profile_dump[&quot;INSTRUCTION INDEX&quot;];fprintf (stdout, &quot;\nTotal run time (seconds)      : &quot;, Format(_profile_summer[1]/1000000,15,6),				 &quot;\nTotal number of steps         : &quot;, Format(_profile_summer[0],15,0), &quot;\n\n&quot;);				 for (k=0; k&lt;Columns(_instructions); k=k+1){	fprintf (stdout, Format (_indices[k],6,0), &quot; : &quot;, _instructions[k], &quot;\n\tCall count: &quot;, stats[k][0], 												   &quot;\n\tTime (seconds): &quot;, stats[k][1]/1000000, &quot;\n&quot;);}

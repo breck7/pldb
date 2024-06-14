@@ -1,0 +1,22 @@
+import ../code/conceptPage.scroll
+
+id kefir
+name Kefir
+appeared 2021
+tags compiler
+website https://sr.ht/~jprotopopov/kefir/
+latestVersion v0.3.1
+conceptDescription This repository contains implementation of C17 language compiler from scratch. No existing open source compiler infrastructure is being reused. The main priority is self-sufficiency of the project, compatibility with platform ABI and compliance with C17 language standard.
+
+writtenIn c make bourne-shell yaml bash sql diff assembly-language markdown html javascript css m4
+inputLanguages c
+repoStats
+ firstCommit 2020
+ commits 1783
+ committers 4
+ files 2469
+ newestCommit 2024
+country Latvia
+originCommunity https://www.protopopov.lv
+
+sourcehutRepo https://git.sr.ht/~jprotopopov/kefir

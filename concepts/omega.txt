@@ -1,0 +1,124 @@
+omega
+=====
+
+omega is a programming language created in 2005 by Tim Sheard.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tim%20Sheard
+
+#1669 on PLDB
+19 Years Old
+
+- omega website
+ http://web.cecs.pdx.edu/~sheard/Omega/index.html
+- omega first developed in Portland State University
+- Read more about omega on the web: 1.
+ https://code.google.com/archive/p/omega
+
+--
+-- This code written by James Hook
+-- This file should work with Omega version 1.1
+-- released May 23, 2005
+-- See http://www.cs.pdx.edu/~sheard/Omega/index.html
+
+{-- These are predefined by the compiler
+kind Nat = Z | S Nat
+
+data Nat&#39; n
+  = Z where n = Z
+  | forall m . S (Nat&#39; m) where n = S m
+-}
+
+data LE a b
+  = LeBase where a = b
+  | ex c . LeStep (LE a c) where b = S c
+
+reflLE :: LE a a
+reflLE = LeBase
+
+transLE :: (LE a b) -&gt; (LE b c) -&gt; (LE a c)
+transLE p LeBase = p
+transLE p (LeStep q) = LeStep (transLE p q)
+
+compare :: Nat&#39; a -&gt; Nat&#39; b -&gt; ((LE a b)+(LE b a))
+compare Z Z = L LeBase
+compare Z (S x) =
+  case compare Z x of L w -&gt; L (LeStep w)
+compare (S x) Z =
+  case compare Z x of L w -&gt; R (LeStep w)
+compare (S x) (S y) = mapP g g (compare x y )
+  where mapP f g (L x) = L(f x)
+        mapP f g (R x) = R(g x)
+        g :: LE x y -&gt; LE (S x) (S y)
+        g LeBase = LeBase
+        g (LeStep x) = LeStep (g x)
+
+data MonoList min max
+  = MonoNil (LE min max)
+  | forall n a . MonoCons (Nat&#39; n) (LE a n) (LE n max) (MonoList min a)
+
+appMonoList :: MonoList b c -&gt; MonoList a b -&gt; MonoList a c
+appMonoList (MonoNil bc) (MonoNil ab) =
+      MonoNil (transLE ab bc)
+appMonoList (MonoNil bc) (MonoCons n an nb xs) =
+      MonoCons n an (transLE nb bc) xs
+appMonoList (MonoCons m dm mc ys) xs =
+      MonoCons m dm mc (appMonoList ys xs)
+
+singletonMonoList :: Nat&#39; n -&gt; MonoList n n
+singletonMonoList n = MonoCons n reflLE reflLE (MonoNil reflLE)
+
+data IntervalList min max
+  = ILNil (LE min max)
+  | forall x . ILCons (Nat&#39; x) (LE min x) (LE x max) (IntervalList min max)
+
+partition :: Nat&#39; n -&gt; LE a n -&gt; LE n b -&gt; IntervalList a b -&gt;
+                     (IntervalList a n, IntervalList n b)
+partition x an nb xs = partitionAcc (ILNil an) (ILNil nb) xs
+  where partitionAcc ls gs (ILNil ab) = (ls,gs)
+        partitionAcc ls gs (ILCons y ay yb ys) =
+            case compare y x of
+              L yx -&gt; partitionAcc (ILCons y ay yx ls) gs ys
+              R xy -&gt; partitionAcc ls (ILCons y xy yb gs) ys
+
+qsort :: IntervalList a b -&gt; MonoList a b
+qsort (ILNil ab) = MonoNil ab
+qsort (ILCons x ax xb (ILNil ab)) = MonoCons x ax xb (MonoNil reflLE)
+qsort (ILCons x ax xb xs) =
+     let (less,greater) = partition x ax xb xs
+         sortedLess = qsort less
+   sortedGreater = qsort greater
+     in appMonoList sortedGreater (appMonoList (singletonMonoList x) sortedLess)
+
+--
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token {- -}
+ Example
+  {- A comment
+  -}
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

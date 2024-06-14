@@ -1,0 +1,28 @@
+Sqlalchemy
+==========
+
+Sqlalchemy is a query language created in 2006 by Michael Bayer.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Bayer
+
+#309 on PLDB
+18 Years Old
+
+git clone https://github.com/sqlalchemy/sqlalchemy
+
+- Sqlalchemy website
+ https://www.sqlalchemy.org/
+- Sqlalchemy Wikipedia page
+ https://en.wikipedia.org/wiki/SQLAlchemy
+- Sqlalchemy is developed on GitHub and has 62,000 stars
+- Sqlalchemy docs
+ https://docs.sqlalchemy.org/en/14/
+- Sqlalchemy mailing list
+ https://groups.google.com/g/sqlalchemy
+- Sqlalchemy first developed in https://www.sqlalchemy.org/support.html
+- Sqlalchemy is written in Python, reStructuredText, YAML, Markdown, Ini, Make, Tex, TOML, Cython
+- Sqlalchemy on Twitter
+ https://twitter.com/sqlalchemy
+
+SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
+FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by

@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id json-lambda
+name JSON lambda
+appeared 2017
+creators Chris Done
+tags queryLanguage
+latestVersion v0.0.5
+aka jl
+conceptDescription jl ("JSON lambda") is a tiny functional language for querying and manipulating JSON.
+
+writtenIn haskell yaml markdown
+repoStats
+ firstCommit 2017
+ commits 113
+ committers 7
+ files 22
+ newestCommit 2022
+country England and Canada
+originCommunity https://chrisdone.com/
+
+example
+ map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)
+
+githubRepo https://github.com/chrisdone/jl
+ firstCommit 2017
+ stars 466
+ forks 20
+ subscribers 7
+ created 2017
+ updated 2022
+ description Functional sed for JSON
+ issues 5

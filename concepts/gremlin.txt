@@ -1,0 +1,28 @@
+Gremlin
+=======
+
+Gremlin is an open source query language created in 2009 by Marko A. Rodriguez.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Marko%20A.%20Rodriguez
+
+#1264 on PLDB
+15 Years Old
+
+Gremlin is a graph traversal language and virtual machine developed by Apache TinkerPop of the Apache Software Foundation. Gremlin works for both OLTP-based graph databases as well as OLAP-based graph processors. Gremlin's automata and functional language foundation enable Gremlin to naturally support imperative and declarative querying, host language agnosticism, user-defined domain specific languages, an extensible compiler/optimizer, single- and multi-machine execution models, hybrid depth- and breadth-first evaluation, as well as Turing Completeness. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Gremlin_(programming_language)
+
+- Gremlin Wikipedia page
+ https://en.wikipedia.org/wiki/Gremlin_(programming_language)
+- Gremlin first developed in https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
+- See also: (8 related languages)Regular Expressions, XPath, SPARQL, SQL, Java, JVM, Groovy, Scala
+
+g.V().hasLabel(&#39;movie&#39;).values(&#39;year&#39;).min()
+
+g.V().match(
+  as(&quot;a&quot;).label().is(&quot;person&quot;),
+  as(&quot;a&quot;).out(&quot;knows&quot;).as(&quot;b&quot;),
+  as(&quot;a&quot;).out(&quot;created&quot;).as(&quot;c&quot;),
+  as(&quot;b&quot;).out(&quot;created&quot;).as(&quot;c&quot;),
+  as(&quot;b&quot;).values(&quot;age&quot;).as(&quot;d&quot;),
+  as(&quot;d&quot;).is(gt(30))).
+    select(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;)

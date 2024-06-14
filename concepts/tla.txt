@@ -1,0 +1,315 @@
+TLA
+===
+
+TLA is an open source programming language created in 1999 by Leslie Lamport.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Leslie%20Lamport
+
+#387 on PLDB
+25 Years Old
+680 Repos
+
+TLA+ (pronounced as tee ell a plus, ) is a formal specification language developed by Leslie Lamport. It is used to design, model, document, and verify concurrent systems. TLA+ has been described as exhaustively-testable pseudocode, and its use likened to drawing blueprints for software systems; TLA is an acronym for Temporal Logic of Actions. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/TLA+
+
+- TLA Wikipedia page
+ https://en.wikipedia.org/wiki/TLA+
+- TLA docs
+ https://lamport.azurewebsites.net/tla/learning.html
+- There are at least 680 TLA repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using TLA in 89 repos on GitHub
+- GitHub supports syntax highlighting for TLA
+- See also: (9 related languages)Java, LaTeX, ASCII, Eclipse, Isabelle, AWS, Microsoft Azure, Alloy, Z notation
+- Read more about TLA on the web: 1.
+ https://lamport.azurewebsites.net/tla/tla.html
+
+--------------------------- MODULE AsyncInterface ---------------------------
+EXTENDS Naturals
+
+CONSTANT Data
+VARIABLE chan
+
+Values == &lt;&lt;&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;&gt;&gt;
+
+TypeInvariant == chan \in [val: Data, rdy: {0,1}, ack: {0,1}]
+                 
+Init == /\ TypeInvariant
+        /\ chan.ack = chan.rdy
+        
+Send(d) == /\ chan.rdy = chan.ack
+           /\ chan&#39; = [chan EXCEPT !.val = d, !.rdy = 1 - @]
+        
+Rcv == /\ chan.rdy # chan.ack
+       /\ chan&#39; = [chan EXCEPT !.ack = 1 - @]
+       
+Next == (\E d \in Data : Send(d)) \/ Rcv
+
+Spec == Init /\ [][Next]_chan
+
+THEOREM Spec =&gt; []TypeInvariant
+
+=============================================================================
+
+------------------------------ MODULE Elevator ------------------------------
+(***************************************************************************)
+(* This spec describes a simple multi-car elevator system. The actions in  *)
+(* this spec are unsurprising and common to all such systems except for    *)
+(* DispatchElevator, which contains the logic to determine which elevator  *)
+(* ought to service which call. The algorithm used is very simple and does *)
+(* not optimize for global throughput or average wait time. The            *)
+(* TemporalInvariant definition ensures this specification provides        *)
+(* capabilities expected of any elevator system, such as people eventually *)
+(* reaching their destination floor.                                       *)
+(***************************************************************************)
+
+EXTENDS     Integers
+
+CONSTANTS   Person,     \* The set of all people using the elevator system
+            Elevator,   \* The set of all elevators
+            FloorCount  \* The number of floors serviced by the elevator system
+
+VARIABLES   PersonState,            \* The state of each person
+            ActiveElevatorCalls,    \* The set of all active elevator calls
+            ElevatorState           \* The state of each elevator
+
+Vars == \* Tuple of all specification variables
+    &lt;&lt;PersonState, ActiveElevatorCalls, ElevatorState&gt;&gt;
+
+Floor ==    \* The set of all floors
+    1 .. FloorCount
+
+Direction ==    \* Directions available to this elevator system
+    {&quot;Up&quot;, &quot;Down&quot;}
+
+ElevatorCall == \* The set of all elevator calls
+    [floor : Floor, direction : Direction]
+
+ElevatorDirectionState ==   \* Elevator movement state; it is either moving in a direction or stationary
+    Direction \cup {&quot;Stationary&quot;}
+
+GetDistance[f1, f2 \in Floor] ==    \* The distance between two floors
+    IF f1 &gt; f2 THEN f1 - f2 ELSE f2 - f1
+    
+GetDirection[current, destination \in Floor] == \* Direction of travel required to move between current and destination floors
+    IF destination &gt; current THEN &quot;Up&quot; ELSE &quot;Down&quot;
+
+CanServiceCall[e \in Elevator, c \in ElevatorCall] ==   \* Whether elevator is in position to immediately service call
+    LET eState == ElevatorState[e] IN
+    /\ c.floor = eState.floor
+    /\ c.direction = eState.direction
+
+PeopleWaiting[f \in Floor, d \in Direction] ==  \* The set of all people waiting on an elevator call
+    {p \in Person :
+        /\ PersonState[p].location = f
+        /\ PersonState[p].waiting
+        /\ GetDirection[PersonState[p].location, PersonState[p].destination] = d}
+
+TypeInvariant ==    \* Statements about the variables which we expect to hold in every system state
+    /\ PersonState \in [Person -&gt; [location : Floor \cup Elevator, destination : Floor, waiting : BOOLEAN]]
+    /\ ActiveElevatorCalls \subseteq ElevatorCall
+    /\ ElevatorState \in [Elevator -&gt; [floor : Floor, direction : ElevatorDirectionState, doorsOpen : BOOLEAN, buttonsPressed : SUBSET Floor]]
+
+SafetyInvariant ==   \* Some more comprehensive checks beyond the type invariant
+    /\ \A e \in Elevator :  \* An elevator has a floor button pressed only if a person in that elevator is going to that floor
+        /\ \A f \in ElevatorState[e].buttonsPressed :
+            /\ \E p \in Person :
+                /\ PersonState[p].location = e
+                /\ PersonState[p].destination = f
+    /\ \A p \in Person :    \* A person is in an elevator only if the elevator is moving toward their destination floor
+        /\ \A e \in Elevator :
+            /\ (PersonState[p].location = e /\ ElevatorState[e].floor /= PersonState[p].destination) =&gt;
+                /\ ElevatorState[e].direction = GetDirection[ElevatorState[e].floor, PersonState[p].destination]
+    /\ \A c \in ActiveElevatorCalls : PeopleWaiting[c.floor, c.direction] /= {} \* No ghost calls
+
+TemporalInvariant ==  \* Expectations about elevator system capabilities
+    /\ \A c \in ElevatorCall :  \* Every call is eventually serviced by an elevator
+        /\ c \in ActiveElevatorCalls ~&gt; \E e \in Elevator : CanServiceCall[e, c]
+    /\ \A p \in Person :    \* If a person waits for their elevator, they&#39;ll eventually arrive at their floor
+        /\ PersonState[p].waiting ~&gt; PersonState[p].location = PersonState[p].destination
+
+PickNewDestination(p) ==    \* Person decides they need to go to a different floor
+    LET pState == PersonState[p] IN
+    /\ ~pState.waiting
+    /\ pState.location \in Floor
+    /\ \E f \in Floor :
+        /\ f /= pState.location
+        /\ PersonState&#39; = [PersonState EXCEPT ![p] = [@ EXCEPT !.destination = f]]
+    /\ UNCHANGED &lt;&lt;ActiveElevatorCalls, ElevatorState&gt;&gt;
+
+CallElevator(p) ==  \* Person calls the elevator to go in a certain direction from their floor
+    LET pState == PersonState[p] IN
+    LET call == [floor |-&gt; pState.location, direction |-&gt; GetDirection[pState.location, pState.destination]] IN
+    /\ ~pState.waiting
+    /\ pState.location /= pState.destination
+    /\ ActiveElevatorCalls&#39; =
+        IF \E e \in Elevator :
+            /\ CanServiceCall[e, call]
+            /\ ElevatorState[e].doorsOpen
+        THEN ActiveElevatorCalls
+        ELSE ActiveElevatorCalls \cup {call}
+    /\ PersonState&#39; = [PersonState EXCEPT ![p] = [@ EXCEPT !.waiting = TRUE]]
+    /\ UNCHANGED &lt;&lt;ElevatorState&gt;&gt;
+
+OpenElevatorDoors(e) == \* Open the elevator doors if there is a call on this floor or the button for this floor was pressed.
+    LET eState == ElevatorState[e] IN
+    /\ ~eState.doorsOpen
+    /\  \/ \E call \in ActiveElevatorCalls : CanServiceCall[e, call]
+        \/ eState.floor \in eState.buttonsPressed
+    /\ ElevatorState&#39; = [ElevatorState EXCEPT ![e] = [@ EXCEPT !.doorsOpen = TRUE, !.buttonsPressed = @ \ {eState.floor}]]
+    /\ ActiveElevatorCalls&#39; = ActiveElevatorCalls \ {[floor |-&gt; eState.floor, direction |-&gt; eState.direction]}
+    /\ UNCHANGED &lt;&lt;PersonState&gt;&gt;
+    
+EnterElevator(e) == \* All people on this floor who are waiting for the elevator and travelling the same direction enter the elevator.
+    LET eState == ElevatorState[e] IN
+    LET gettingOn == PeopleWaiting[eState.floor, eState.direction] IN
+    LET destinations == {PersonState[p].destination : p \in gettingOn} IN
+    /\ eState.doorsOpen
+    /\ eState.direction /= &quot;Stationary&quot;
+    /\ gettingOn /= {}
+    /\ PersonState&#39; = [p \in Person |-&gt;
+        IF p \in gettingOn
+        THEN [PersonState[p] EXCEPT !.location = e]
+        ELSE PersonState[p]]
+    /\ ElevatorState&#39; = [ElevatorState EXCEPT ![e] = [@ EXCEPT !.buttonsPressed = @ \cup destinations]]
+    /\ UNCHANGED &lt;&lt;ActiveElevatorCalls&gt;&gt;
+
+ExitElevator(e) ==  \* All people whose destination is this floor exit the elevator.
+    LET eState == ElevatorState[e] IN
+    LET gettingOff == {p \in Person : PersonState[p].location = e /\ PersonState[p].destination = eState.floor} IN
+    /\ eState.doorsOpen
+    /\ gettingOff /= {}
+    /\ PersonState&#39; = [p \in Person |-&gt;
+        IF p \in gettingOff
+        THEN [PersonState[p] EXCEPT !.location = eState.floor, !.waiting = FALSE]
+        ELSE PersonState[p]]
+    /\ UNCHANGED &lt;&lt;ActiveElevatorCalls, ElevatorState&gt;&gt;
+
+CloseElevatorDoors(e) ==    \* Close the elevator doors once all people have entered and exited the elevator on this floor.
+    LET eState == ElevatorState[e] IN
+    /\ ~ENABLED EnterElevator(e)
+    /\ ~ENABLED ExitElevator(e)
+    /\ eState.doorsOpen
+    /\ ElevatorState&#39; = [ElevatorState EXCEPT ![e] = [@ EXCEPT !.doorsOpen = FALSE]]
+    /\ UNCHANGED &lt;&lt;PersonState, ActiveElevatorCalls&gt;&gt;
+
+MoveElevator(e) ==  \* Move the elevator to the next floor unless we have to open the doors here.
+    LET eState == ElevatorState[e] IN
+    LET nextFloor == IF eState.direction = &quot;Up&quot; THEN eState.floor + 1 ELSE eState.floor - 1 IN
+    /\ eState.direction /= &quot;Stationary&quot;
+    /\ ~eState.doorsOpen
+    /\ eState.floor \notin eState.buttonsPressed
+    /\ \A call \in ActiveElevatorCalls : \* Can move only if other elevator servicing call
+        /\ CanServiceCall[e, call] =&gt;
+            /\ \E e2 \in Elevator :
+                /\ e /= e2
+                /\ CanServiceCall[e2, call]
+    /\ nextFloor \in Floor
+    /\ ElevatorState&#39; = [ElevatorState EXCEPT ![e] = [@ EXCEPT !.floor = nextFloor]]
+    /\ UNCHANGED &lt;&lt;PersonState, ActiveElevatorCalls&gt;&gt;
+
+StopElevator(e) == \* Stops the elevator if it&#39;s moved as far as it can in one direction
+    LET eState == ElevatorState[e] IN
+    LET nextFloor == IF eState.direction = &quot;Up&quot; THEN eState.floor + 1 ELSE eState.floor - 1 IN
+    /\ ~ENABLED OpenElevatorDoors(e)
+    /\ ~eState.doorsOpen
+    /\ nextFloor \notin Floor
+    /\ ElevatorState&#39; = [ElevatorState EXCEPT ![e] = [@ EXCEPT !.direction = &quot;Stationary&quot;]]
+    /\ UNCHANGED &lt;&lt;PersonState, ActiveElevatorCalls&gt;&gt;
+
+(***************************************************************************)
+(* This action chooses an elevator to service the call. The simple         *)
+(* algorithm picks the closest elevator which is either stationary or      *)
+(* already moving toward the call floor in the same direction as the call. *)
+(* The system keeps no record of assigning an elevator to service a call.  *)
+(* It is possible no elevator is able to service a call, but we are        *)
+(* guaranteed an elevator will eventually become available.                *)
+(***************************************************************************)
+DispatchElevator(c) ==
+    LET stationary == {e \in Elevator : ElevatorState[e].direction = &quot;Stationary&quot;} IN
+    LET approaching == {e \in Elevator :
+        /\ ElevatorState[e].direction = c.direction
+        /\  \/ ElevatorState[e].floor = c.floor
+            \/ GetDirection[ElevatorState[e].floor, c.floor] = c.direction } IN
+    /\ c \in ActiveElevatorCalls
+    /\ stationary \cup approaching /= {}
+    /\ ElevatorState&#39; =
+        LET closest == CHOOSE e \in stationary \cup approaching :
+            /\ \A e2 \in stationary \cup approaching :
+                /\ GetDistance[ElevatorState[e].floor, c.floor] &lt;= GetDistance[ElevatorState[e2].floor, c.floor] IN
+        IF closest \in stationary
+        THEN [ElevatorState EXCEPT ![closest] = [@ EXCEPT !.floor = c.floor, !.direction = c.direction]]
+        ELSE ElevatorState
+    /\ UNCHANGED &lt;&lt;PersonState, ActiveElevatorCalls&gt;&gt;
+
+Init == \* Initializes people and elevators to arbitrary floors
+    /\ PersonState \in [Person -&gt; [location : Floor, destination : Floor, waiting : {FALSE}]]
+    /\ ActiveElevatorCalls = {}
+    /\ ElevatorState \in [Elevator -&gt; [floor : Floor, direction : {&quot;Stationary&quot;}, doorsOpen : {FALSE}, buttonsPressed : {{}}]]
+
+Next == \* The next-state relation
+    \/ \E p \in Person : PickNewDestination(p)
+    \/ \E p \in Person : CallElevator(p)
+    \/ \E e \in Elevator : OpenElevatorDoors(e)
+    \/ \E e \in Elevator : EnterElevator(e)
+    \/ \E e \in Elevator : ExitElevator(e)
+    \/ \E e \in Elevator : CloseElevatorDoors(e)
+    \/ \E e \in Elevator : MoveElevator(e)
+    \/ \E e \in Elevator : StopElevator(e)
+    \/ \E c \in ElevatorCall : DispatchElevator(c)
+
+TemporalAssumptions ==  \* Assumptions about how elevators and people will behave
+    /\ \A p \in Person : WF_Vars(CallElevator(p))
+    /\ \A e \in Elevator : WF_Vars(OpenElevatorDoors(e))
+    /\ \A e \in Elevator : WF_Vars(EnterElevator(e))
+    /\ \A e \in Elevator : WF_Vars(ExitElevator(e))
+    /\ \A e \in Elevator : SF_Vars(CloseElevatorDoors(e))
+    /\ \A e \in Elevator : SF_Vars(MoveElevator(e))
+    /\ \A e \in Elevator : WF_Vars(StopElevator(e))
+    /\ \A c \in ElevatorCall : SF_Vars(DispatchElevator(c))
+
+Spec == \* Initialize state with Init and transition with Next, subject to TemporalAssumptions
+    /\ Init
+    /\ [][Next]_Vars
+    /\ TemporalAssumptions
+
+THEOREM Spec =&gt; [](TypeInvariant /\ SafetyInvariant /\ TemporalInvariant)
+
+=============================================================================
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token TRUE FALSE
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  \* A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token \*
+ Example
+  \* A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

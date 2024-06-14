@@ -1,0 +1,64 @@
+Assembly language
+=================
+
+Assembly language is an assembly language created in 1960.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221960%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#84 on PLDB
+64 Years Old
+109k Repos
+
+An assembly (or assembler) language, often abbreviated asm, is any low-level programming language in which there is a very strong correspondence between the program's statements and the architecture's machine code instructions.Each assembly language is specific to a particular computer architecture and operating system. In contrast, most high-level programming languages are generally portable across multiple architectures but require interpreting or compiling. Assembly language may also be called symbolic machine code.Assembly language usually has one statement per machine instruction, but assembler directives, macros and symbolic labels of program and memory locations are often also supported. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Assembly_language
+
+- Assembly language Wikipedia page
+ https://en.wikipedia.org/wiki/Assembly_language
+- Assembly language docs
+ https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+- There are at least 109,158 Assembly language repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 33k users using Assembly language in 48k repos on GitHub
+- There are 14,763 members in the Assembly language subreddit
+- There are 223 Project Euler users using Assembly language
+- In the 2021 StackOverflow developer survey Assembly language programmers reported a median salary of $55,211. 6% of respondents reported using Assembly language. 4,632 programmers reported using Assembly language, and 3,578 said they wanted to use it
+- Assembly language ranks #8 in the TIOBE Index
+- Indeed.com has 1,329 matches for "assembly language developer".
+- See also: (19 related languages)X86, Fortran, Algol, Lisp, GNU Assembler, x86 Assembly, Punched tape, IA-32, AUTOCODER, PL/I, COBOL, C, Unix, Executive Systems Problem Oriented Language, Turbo Pascal, Visual Basic, Pascal, High Level Assembly, WebAssembly
+- 83 languages in PLDB linking to Assembly language: Ace Editor, Bash, Battlestar, Bazel, beef-lang, binaryen, BlitzMax, Boomerang Decompiler, Chapel, cloc, co2, CSpydr, Dasm, DragonBASIC, eC, Eiffel, elena, Emscripten, Factor, FFmpeg, Flow9, F*, GAP, Go, Gradle, Halide, Hare, HHVM, H++, J, JAL compiler, janet, Java, juicy, Julia, Kefir, ko, Kubernetes, Kuin, l2, lambda-zero, Linux, lobster, m3db, mal, ΜC++, MicroPython, Minilang, MongoDB, Mudlle, Nim, Node.js, odin, oil, ooc, Oxyl, Pawn, PAWN, PHP, PostgreSQL, POV-Ray SDL, Pygments, Python, PyTorch, Qore, r3, r4, Racket, raptorjit, React Native, Ruby, Rust, stoneknifeforth, Swift, tao3d, tbox-lib, Tiny C Compiler, ugBASIC, V, v8, Virgil, Volt, Wonkey
+
+infiniteLoop:
+    jmp main
+main:
+    jmp infiniteLoop
+
+include \masm32\include\masm32rt.inc	; use the Masm32 library
+
+.code
+demomain:
+  REPEAT 20
+	switch rv(nrandom, 9)	; generate a number between 0 and 8
+	mov ecx, 7
+	case 0
+		print &quot;case 0&quot;
+	case ecx				; in contrast to most other programming languages,
+		print &quot;case 7&quot;		; the Masm32 switch allows &quot;variable cases&quot;
+	case 1 .. 3
+		.if eax==1
+			print &quot;case 1&quot;
+		.elseif eax==2
+			print &quot;case 2&quot;
+		.else
+			print &quot;cases 1 to 3: other&quot;
+		.endif
+	case 4, 6, 8
+		print &quot;cases 4, 6 or 8&quot;
+	default
+		mov ebx, 19		     ; print 20 stars
+		.Repeat
+			print &quot;*&quot;
+			dec ebx
+		.Until Sign?		 ; loop until the sign flag is set
+	endsw
+	print chr$(13, 10)
+  ENDM
+  exit
+end demomain

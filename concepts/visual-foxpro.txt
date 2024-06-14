@@ -1,0 +1,57 @@
+Visual FoxPro
+=============
+
+Visual FoxPro is a programming language created in 1995.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#995 on PLDB
+29 Years Old
+
+Visual FoxPro is a discontinued data-centric, object-oriented, procedural, programming language produced by Microsoft. It was derived from FoxPro (originally known as FoxBASE) which was developed by Fox Software beginning in 1984. It contained the fastest PC-based database engine available at the time. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Visual_FoxPro
+
+- Visual FoxPro website
+ http://msdn.microsoft.com/vfoxpro
+- Visual FoxPro Wikipedia page
+ https://en.wikipedia.org/wiki/Visual_FoxPro
+- Visual FoxPro first developed in Microsoft
+- Visual FoxPro ranks #46 in the TIOBE Index
+- See also: (7 related languages)IA-32, FoxPRO, Unix, DBase, xBase, SQL, Linux
+
+PRIVATE cAuthorID, cAuthorName      &amp;&amp; Private variables supplant any previous global or private variable of the same name
+ LOCAL nHnd, nResult                 &amp;&amp; Local variables are visible only here
+
+ * Connect to an ODBC data source
+ nHnd = SQLCONNECT (&quot;ODBCDSN&quot;, &quot;user&quot;, &quot;pwd&quot;)
+
+ * Enter a loop so we can exit to the close connection code if there&#39;s an error
+ DO WHILE .T.
+     * Execute a SQL command
+     nResult = SQLEXEC (nHnd, &quot;USE master&quot;)
+     IF nResult &lt; 0
+         MESSAGEBOX (&quot;MASTER database does not exist!&quot;)
+         EXIT  &amp;&amp; To close the connection
+     ENDIF
+
+     * Retrieve data from the remote server and stores it in a local data cursor
+     nResult = SQLEXEC (nHnd, &quot;SELECT * FROM authors&quot;, &quot;QAUTHORS&quot;)
+     IF nResult &lt; 0
+         MESSAGEBOX (&quot;Unable to execute remote SQL SELECT command!&quot;)
+         EXIT  &amp;&amp; To close the connection
+     ENDIF
+
+     * Update a record in a remote table using parameters
+     cAuthorID     = &quot;1001&quot;
+     cAuthorName   = &quot;New name&quot;
+     nResult       = SQLEXEC (nHnd, &quot;UPDATE authors SET auth_name = ?cAuthorName WHERE auth_id = ?cAuthorID&quot;)
+     IF nResult &lt; 0
+         MESSAGEBOX (&quot;Unable to execute remote SQL UPDATE command!&quot;)
+         EXIT  &amp;&amp; To close the connection
+     ENDIF
+
+     * If we get here, we have retrieved everything successfully
+     EXIT  &amp;&amp; Exit unconditionally
+ ENDDO
+
+ * Close the connection
+ SQLDISCONNECT(nHnd)

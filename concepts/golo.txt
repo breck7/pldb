@@ -1,0 +1,123 @@
+Golo
+====
+
+Golo is an open source programming language created in 2012 by Webmaster.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Webmaster
+
+#320 on PLDB
+12 Years Old
+46 Repos
+
+git clone https://github.com/eclipse-archived/golo-lang
+
+Golo is computer software, a programming language for the Java virtual machine (JVM). It is simple, with dynamic, weak typing. It was created in 2012 as part of the research activities of the DynaMid group of the Centre of Innovation in Telecommunications and Integration of service (CITI) Laboratory at Institut national des sciences appliquées de Lyon (INSA). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Golo_(programming_language)
+
+- Golo website
+ http://golo-lang.org
+- Golo Wikipedia page
+ https://en.wikipedia.org/wiki/Golo_(programming_language)
+- Golo is developed on GitHub and has 460 stars
+- There are at least 46 Golo repos on GitHub
+- Golo first developed in https://dev.eclipse.org/mailman/listinfo/golo-dev
+- Golo is written in Java, AsciiDoc, Markdown, Bourne shell, YAML, CSS, Gradle, Ruby, Dockerfile, Tex, HTML, JavaScript
+- Golo on Twitter
+ https://twitter.com/golo_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Golo in 29 repos on GitHub
+- Explore Golo snippets on Rosetta Code
+- Pygments supports syntax highlighting for Golo
+- GitHub supports syntax highlighting for Golo
+- golo-lang.org was registered in 2012
+- See also: (2 related languages)JVM, Java
+
+module hello.world
+
+function main = |args| {
+  println(&quot;Hello World&quot;)
+}
+
+# Copyright 2012-2014 Institut National des Sciences Appliquées de Lyon (INSA-Lyon)
+#
+# Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+module hello.World
+
+function main = |args| {
+  println(&quot;Hello world!&quot;)
+}
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # -?\d[\d_]*
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0[xX][a-fA-F0-9]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  # 0[0-7]+j?
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

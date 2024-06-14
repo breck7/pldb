@@ -1,0 +1,29 @@
+Stencil
+=======
+
+Stencil is an open source template language created in 2018 by Kyle Fuller.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kyle%20Fuller
+
+#364 on PLDB
+6 Years Old
+
+git clone https://github.com/stencilproject/Stencil
+
+Try now: TIO
+
+Stencil is a simple and powerful template language for Swift.
+
+- Stencil website
+ https://stencil.fuller.li/en/latest/
+- Stencil is developed on GitHub and has 2,135 stars
+- Stencil first developed in https://github.com/stencilproject
+- Stencil is written in Swift, HTML, Ruby, YAML, reStructuredText, Markdown, Make, Python, JSON, Bourne shell
+
+There are {{ articles.count }} articles.
+
+&lt;ul&gt;
+  {% for article in articles %}
+    &lt;li&gt;{{ article.title }} by {{ article.author }}&lt;/li&gt;
+  {% endfor %}
+&lt;/ul&gt;

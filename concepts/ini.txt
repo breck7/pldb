@@ -1,0 +1,105 @@
+Ini
+===
+
+Ini is an open source data notation created in 1987.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#88 on PLDB
+37 Years Old
+13 Repos
+
+The INI file format is an informal standard for configuration files for some platforms or software. INI files are simple text files with a basic structure composed of sections, properties, and values. In MS-DOS and 16-bit Windows platforms up through Windows ME, the INI file served as the primary mechanism to configure operating system and installed applications features, such as device drivers, fonts, startup launchers, and things that needed to be initialized in booting Windows. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/INI_file
+
+- Ini Wikipedia page
+ https://en.wikipedia.org/wiki/INI_file
+- There are at least 13 Ini repos on GitHub
+- Ini first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Ini in 1 repos on GitHub
+- ANTLR grammar for Ini
+- Monaco package for syntax highlighting Ini
+- Pygments supports syntax highlighting for Ini
+- GitHub supports syntax highlighting for Ini
+- See also: (8 related languages)XML, Linux, Unix, PHP, Unicode, C, JSON, YAML
+- 102 languages in PLDB linking to Ini: Ace Editor, Aheui, ASDF, astroml, atomspace, Bazel, BlitzMax, Ceylon, Chapel, Charcoal, chatterbot, clash, cloc, CWL, Conan, CouchDB, crmsh, Cryptol, Crystal, docopt, duro, Embedded Crystal, Eiffel, Emscripten, F Prime, Flow9, flua, GAP, gogs-editor, Gwion, Haxe, HHVM, Homebrew, Hook, Ibis, Impala, infusion-framework, inko, invokator, Java, Jemplate, Jinja, k-framework, kumir, Latte, leo-editor, Linux, mai, Manim, Mask, mathics, Matplotlib, MicroBlocks, Mindsdb, MiniZinc, MongoDB, moya, myia, NCAR Command Language, NestedText, Nim, Nit, Natural Language Toolkit, Node.js, Numba, Nushell, oil, Pan, PgBouncer, PHP, Plaid, polyglot-compiler, Pony, POV-Ray SDL, Pycket, Pygments, Python, PyTorch, r4, Revolution, Rholang, Rita, SciPy, Scroll Notation, SDMS, SourcePawn, Spatial, Speedie, SpiderBasic, Sqlalchemy, Swift, Taichi, tao3d, TensorFlow, TestML, tornado, Wonkey, Xgboost, XGBoost, XL, xlwings-editor, Xtext
+
+; last modified 1 April 2001 by John Doe
+[owner]
+name = John Doe
+organization = Acme Widgets Inc.
+
+[database]
+; use IP address in case network name resolution is not working
+server = 192.0.2.62
+port = 143
+file = &quot;payroll.dat&quot;
+
+title=Mindstorms
+isbn=0465046290
+author=Seymour Papert
+pubmonth=198001
+subject=children computers powerful ideas LOGO education
+url=http://www.papert.org/
+
+GetPrivateProfileString(&quot;owner&quot;, &quot;name&quot;, ... , &quot;c:\\programs\\oldprogram\\dbsettings.ini&quot;);
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+  [subsections "areCaseSensitive"]
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  [branch "master"]
+  remote = origin
+  merge = refs/heads/master
+row
+ Feature hasEscapeCharacters
+ FeatureLink ../features/hasEscapeCharacters.html
+ Supported ✓
+ Token 
+ Example
+  ; \" \\ \n \t \b
+  [section "subsection with \"quotes\""]
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # a '#' or ';' character indicates
+  ; a comment
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

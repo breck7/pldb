@@ -1,0 +1,121 @@
+import ../code/conceptPage.scroll
+
+id shen
+name Shen
+appeared 2011
+creators Mark Tarver
+tags pl
+website http://shenlanguage.org/
+
+writtenIn markdown svg make
+fileType text
+emailList https://groups.google.com/g/qilang
+rosettaCode http://www.rosettacode.org/wiki/Category:Shen
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 474
+ committers 10
+ files 107
+ newestCommit 2024
+country United Kingdom
+originCommunity https://github.com/Shen-Language
+
+helloWorldCollection Shen
+ \\ Hello world in Shen
+ 
+ (0-) (pr "hello world")
+pygmentsHighlighter Shen
+ filename lisp.py
+ fileExtensions shen
+leachim6 Shen
+ filepath s/Shen.shen
+ fileExtensions shen
+ example
+  (pr "Hello World")
+  
+
+githubRepo https://github.com/Shen-Language/shen-sources
+ stars 344
+ forks 39
+ subscribers 23
+ created 2015
+ updated 2024
+ description Shen language kernel sources for porters
+ issues 9
+
+printToken pr
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
+
+domainName shenlanguage.org
+ registered 2011
+ awisRank
+  2017 5269738
+
+githubBigQuery Shen
+ repos 16
+ users 14
+
+linguistGrammarRepo https://github.com/rkoeninger/sublime-shen
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 1
+ commitCount 67
+ sampleCount 3
+ example
+  (load "grammar.shen")
+  
+  \*
+  
+  JSON Lexer
+  
+  1. Read a stream of characters
+  2. Whitespace characters not in strings should be discarded.
+  3. Whitespace characters in strings should be preserved
+  4. Strings can contain escaped double quotes. e.g. "\""
+  
+  *\
+  
+  (define whitespacep
+    \* e.g. ASCII 32 == #\Space. *\
+    \* All the others are whitespace characters from an ASCII table. *\
+    Char -> (member Char ["c#9;" "c#10;" "c#11;" "c#12;" "c#13;" "c#32;"]))
+  
+  (define replace-whitespace
+    "" -> ""
+    (@s Whitespace Suffix) -> (@s "" (replace-whitespace Suffix)) where (whitespacep Whitespace)
+    (@s Prefix Suffix) -> (@s Prefix (replace-whitespace Suffix)))
+  
+  (define fetch-until-unescaped-doublequote
+    [] -> []
+    ["\" "c#34;" | Chars] -> ["\" "c#34;" | (fetch-until-unescaped-doublequote Chars)]
+    ["c#34;" | Chars] -> []
+    [Char | Chars] -> [Char | (fetch-until-unescaped-doublequote Chars)])
+  
+  \* (define strip-whitespace-chars *\
+  \*   [] -> [] *\
+  \*   ["c#34;" | Chars] -> ["c#34;" | ( *\
+  \*   [WhitespaceChar | Chars] -> (strip-whitespace-chars Chars) where (whitespace? WhitespaceChar) *\
+  \*   [Char | Chars] -> [Char | (strip-whitespace-chars Chars)]) *\
+  
+  (define tokenise
+    JSONString ->
+    (let CharList (explode JSONString)
+         CharList))
+
+githubLanguage Shen
+ fileExtensions shen
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.shen
+ repos 50

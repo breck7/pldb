@@ -1,0 +1,146 @@
+import ../code/conceptPage.scroll
+
+id json
+name JSON
+appeared 2001
+creators Douglas Crockford
+tags dataNotation
+website https://www.json.org/
+spec https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf
+latestVersion 1
+
+isOpenSource true
+influencedBy javascript
+ // based on a subset of the JavaScript Programming Language Standard ECMA-262 3rd Edition - December 1999
+clocExtensions arcconfig avsc composer.lock geojson gltf har htmlhintrc json json-tmlanguage jsonl mcmeta mcmod.info tern-config tern-project tfstate tfstate.backup topojson watchmanconfig webapp webmanifest yyp
+fileType text
+documentation https://www.json.org/json-en.html
+antlr https://github.com/antlr/grammars-v4/tree/master/json
+centralPackageRepositoryCount 0
+country United States
+originCommunity State Software
+reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
+
+pygmentsHighlighter JSON
+ filename data.py
+ fileExtensions json Pipfile.lock
+leachim6 JSON
+ filepath j/JSON.json
+ fileExtensions json
+ example
+  { "hello": "world" }
+  
+languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
+ writtenIn typescript
+
+canWriteToDisk false
+hasBooleans true
+ false
+hasComments false
+hasMacros false
+hasLineComments false
+hasConditionals false
+hasTernaryOperators false
+hasMultiLineComments false
+hasFloats true
+ 2.3
+hasImports false
+hasIntegers true
+ 80766866
+hasMultilineStrings false
+hasStrings true
+ "hello world"
+hasMaps true
+ {"name": "Mary"}
+hasLists true
+ [1, 2, 3]
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+
+wikipedia https://en.wikipedia.org/wiki/JSON
+ example
+  var y = {a: undefined};
+   var ys = JSON.stringify(y,
+    function (k, v){return (v === undefined) ? "UNDEFINED" : v});
+ related javascript xml java http unicode utf-8 soap yaml csv protobuf gzip xpath css hocon s-expressions geojson
+ summary In computing, JavaScript Object Notation or JSON ( JAY-sən), is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems. JSON is a language-independent data format. It was derived from JavaScript, but as of 2017 many programming languages include code to generate and parse JSON-format data. The official Internet media type for JSON is application/json. JSON filenames use the extension .json. Douglas Crockford originally specified the JSON format in the early 2000s; two competing standards, RFC 7159 and ECMA-404, defined it in 2013. The ECMA standard describes only the allowed syntax, whereas the RFC covers some security and interoperability considerations. A restricted profile of JSON, known as I-JSON (short for "Internet JSON"), seeks to overcome some of the interoperability problems with JSON. It is defined in RFC 7493..
+ pageId 1575082
+ dailyPageViews 3994
+ created 2005
+ backlinksCount 1329
+ revisionCount 2473
+ appeared 2013
+
+domainName json.org
+ registered 2000
+ awisRank
+  2022 62633
+
+githubBigQuery JSON
+ repos 6
+ users 6
+
+linguistGrammarRepo https://github.com/textmate/json.tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 11
+ commitCount 21
+ sampleCount 14
+ example
+  {
+          "id": 1,
+          "name": "Foo",
+          "price": 123,
+          "tags": ["Bar","Eek"],
+          "stock": { "warehouse":300, "retail":20 }
+  }
+
+isbndb 17
+ year|publisher|title|authors|isbn13
+ 2018|Apress|Beginning Reactive Programming with Swift: Using RxSwift, Amazon Web Services, and JSON with iOS and macOS|Feiler, Jesse|9781484236208
+ 2015|Createspace Independent Publishing Platform|Learn Json In A Day : The Ultimate Crash Course To Learning The Basics Of Json In No Time|Acodemy|9781519158413
+ 2015|Apress|Beginning JSON|SMITH, BEN|9781484202029
+ 2020|Bowker|MySQL & JSON A Practical Programming Guide: Second Edition|Stokes, David|9780578783246
+ 2017|Apress|XML and JSON Recipes for SQL Server: A Problem-Solution Approach|Grinberg, Alex|9781484231173
+ 2019|Independently published|Dan Gookin's Guide to XML and JSON Programming|Gookin, Dan|9781088918326
+ 2013|Packt Publishing|JavaScript and JSON Essentials|Sriparasa, Sai Srinivas|9781783286041
+ 2013|Packt Publishing|Developing RESTful Services with JAX-RS 2.0, WebSockets, and JSON|Kalali, Masoud and Mehta, Bhakti|9781782178132
+ 2015|Packt Publishing|JavaScript JSON Cookbook|Rischpater, Ray|9781785284359
+ 2021|Apress|Pro Power BI Theme Creation: JSON Stylesheets for Automated Dashboard Formatting|Aspin, Adam|9781484270684
+ 2013|Packt Publishing|Developing RESTful Services with JAX-RS 2.0, WebSockets, and JSON|Kalali, Masoud and Mehta, Bhakti|9781782178125
+ 20160518|Springer Nature|JSON Quick Syntax Reference|Wallace Jackson|9781484218631
+ 23-04-2018|Packt Publishing|JavaScript and JSON Essentials|Bruno Joseph D'mello; Sai Srinivas Sriparasa|9781788628761
+ 20190110|Springer Nature|Java XML and JSON|Jeff Friesen|9781484243305
+ 20160615|Springer Nature|Java XML and JSON|JEFF FRIESEN|9781484219164
+ 20140323|Emereo|JSON 296 Success Secrets - 296 Most Asked Questions On JSON - What You Need To Know|Laura Davenport|9781488539138
+ |Packt Pub.|Developing RESTful services with JAX-RS 2.0, WebSockets, and JSON|Kalali, Masoud.|9781782178125
+
+githubLanguage JSON
+ fileExtensions json 4DForm 4DProject avsc geojson gltf har ice JSON-tmLanguage jsonl mcmeta tfstate tfstatebackup topojson webapp webmanifest yy yyp
+ trendingProjectsCount 0
+ type data
+ filenames .arcconfig .auto-changelog .c8rc .htmlhintrc .imgbotconfig .nycrc .tern-config .tern-project .watchmanconfig Pipfile.lock composer.lock mcmod.info
+ aceMode json
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.json
+ aliases geojson or jsonl or topojson
+ repos 133
+
+indeedJobs json developer
+ 2017 5872
+linkedInSkill json
+ 2018 335550
+
+semanticScholar 10
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2014|Simplifying the interaction between cognitive models and task environments with the JSON Network Interface|10.3758/s13428-013-0425-z|16|4|Ryan M. Hope and M. Schoelles and Wayne D. Gray|0326b8861e0bda7a0657a2d9e835a727fb31d0b2
+ 2018|Keamanan RESTful Web Service Menggunakan JSON Web Token (JWT) HMAC SHA-512|10.22146/JNTETI.V7I2.417|14|3|Alam Rahmatulloh and Heni Sulastri and R. Nugroho|a380221c7055d96ade6226a5c4d9de49537025bf
+ 2019|Schemas and Types for JSON Data: From Theory to Practice|10.1145/3299869.3314032|10|0|M. Baazizi and Dario Colazzo and G. Ghelli and C. Sartiani|e17258d751b7e732b88d4255948baf0d67fce6f5
+ 2018|Survey on JSON Data Modelling|10.1088/1742-6596/1069/1/012101|7|0|Teng Lv and Ping Yan and Weimin He|923f14a6a5f78ef90794ffa5efe1121f512b9b58
+ 2017|Implementasi JSON untuk Minimasi Penggunaan Jumlah Kolom Suatu Tabel Pada Database PostgreSQL|10.21070/JOINCS.V1I1.802|5|1|M. A. Rosid|6b6d9197323171c9e0b36379319b941a133908fe
+ 2016|PENCARIAN INFORMASI DATA PESAWAT MENGGUNAKAN NOMOR REGISTRASI PESAWAT DENGAN MEMANFAATKAN DATABASE DAN JSON|10.28989/compiler.v5i2.172|2|0|Yulis Robert Latumaone and Haruno Sajati and Nurcahyani Dewi Retnowati|e798f6fedeb8929587cdb9440b0412f5d8fe5cd4
+ 2019|On Massive JSON Data Model and Schema|10.1088/1742-6596/1302/2/022031|2|0|Teng Lv and Ping Yan and Weimin He|100e2fa6c426a52e36078003a7001d324e1e099e
+ 2016|Implementation of AJAX and JSON to Improve Web Application Performance|10.26623/transformatika.v14i1.363|1|0|M. Z. Abdillah|316dba7d3e7a522ce0b326fa6535d370872b1f1f
+ 2019|A Survey on JSON Data Stores|10.4018/978-1-5225-8446-9.CH003|1|0|L. Irshad and Zongmin Ma and Li Yan|228bef45279542a6205efb8d7ba5624263936514
+ 2020|Research and Application of Data Exchange based on JSON|10.1109/IPEC49694.2020.9115155|1|0|Changxia Sun and Xia Zeng and Chengzhong Sun and Haiping Si and Yanling Li|d5be81bd9bc79273083731c53f7dbd079688095b

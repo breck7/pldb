@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id checked-c
+name checked-c
+appeared 2015
+creators David Tarditi
+tags pl
+website https://www.microsoft.com/en-us/research/project/checked-c/
+latestVersion v0.7.1-final
+
+writtenIn c tex markdown make r cmake csv
+repoStats
+ firstCommit 2016
+ commits 486
+ committers 36
+ files 223
+ newestCommit 2022
+country United States
+originCommunity Microsoft Research
+reference https://www.microsoft.com/en-us/research/project/checked-c/
+
+githubRepo https://github.com/Microsoft/checkedc
+ firstCommit 2016
+ stars 2723
+ forks 189
+ subscribers 106
+ created 2016
+ updated 2022
+ description Checked C is an extension to C that lets programmers write C code that is guaranteed by the compiler to be type-safe.  The goal is to let people easily make their existing C code type-safe and eliminate entire classes of errors. Checked C does not address use-after-free errors. This repo has a wiki for Checked C, sample code, the specification, and test code.
+ issues 61
+
+isbndb 0
+
+semanticScholar 0

@@ -1,0 +1,151 @@
+import ../code/conceptPage.scroll
+
+id postgresql
+name PostgreSQL
+appeared 1986
+creators Marc G. Fournier
+tags queryLanguage
+website https://www.postgresql.org/
+blog https://www.postgresql.org/about/newsarchive/
+releaseNotes https://www.postgresql.org/docs/release/
+download https://www.postgresql.org/download/
+latestVersion 16
+aka pgsql
+
+isOpenSource true
+writtenIn c sql make perl meson bourne-shell lex m4 yacc xslt python idl csv xml cpp svg yaml assembly-language json css d bash lisp markdown sed
+fileType text
+documentation https://www.postgresql.org/docs/
+emailList https://www.postgresql.org/list/
+eventsPageUrl https://www.postgresql.org/about/events/
+faq https://www.postgresql.org/docs/faq/
+annualReportsUrl https://www.postgresql.org/about/policies/coc/
+monaco pgsql
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1996
+ commits 91141
+ committers 57
+ files 6942
+ newestCommit 2024
+country United States
+originCommunity University of California
+
+helloWorldCollection PostgreSQL
+ -- Hello World in PL/pgSQL (PostgreSQL Procedural Language)
+ -- In old versions replace '$$' by double qoutes
+ 
+ CREATE FUNCTION hello_world() RETURNS text AS $$
+ BEGIN
+ RETURN 'Hello World';
+ END
+ $$ LANGUAGE plpgsql;
+ 
+ SELECT hello_world();
+ 
+rijuRepl https://riju.codes/postgresql
+ example
+  SELECT 'Hello, world!';
+  
+subreddit https://www.reddit.com/r/PostgreSQL/
+twitter https://twitter.com/postgresql
+
+keywords ABORT ABS ABSOLUTE ACCESS ACTION ADA ADD ADMIN AFTER AGGREGATE ALIAS ALL ALLOCATE ALTER ANALYSE ANALYZE AND ANY ARE ARRAY AS ASC ASENSITIVE ASSERTION ASSIGNMENT ASYMMETRIC AT ATOMIC AUTHORIZATION AVG BACKWARD BEFORE BEGIN BETWEEN BIGINT BINARY BIT BITVAR BIT_LENGTH BLOB BOOLEAN BOTH BREADTH BY CACHE CALL CALLED CARDINALITY CASCADE CASCADED CASE CAST CATALOG CATALOG_NAME CHAIN CHAR CHARACTER CHARACTERISTICS CHARACTER_LENGTH CHARACTER_SET_CATALOG CHARACTER_SET_NAME CHARACTER_SET_SCHEMA CHAR_LENGTH CHECK CHECKED CHECKPOINT CLASS CLASS_ORIGIN CLOB CLOSE CLUSTER COALESCE COBOL COLLATE COLLATION COLLATION_CATALOG COLLATION_NAME COLLATION_SCHEMA COLUMN COLUMN_NAME COMMAND_FUNCTION COMMAND_FUNCTION_CODE COMMENT COMMIT COMMITTED COMPLETION CONDITION_NUMBER CONNECT CONNECTION CONNECTION_NAME CONSTRAINT CONSTRAINTS CONSTRAINT_CATALOG CONSTRAINT_NAME CONSTRAINT_SCHEMA CONSTRUCTOR CONTAINS CONTINUE CONVERSION CONVERT COPY CORRESPONDING COUNT CREATE CREATEDB CREATEUSER CROSS CUBE CURRENT CURRENT_DATE CURRENT_PATH CURRENT_ROLE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR CURSOR_NAME CYCLE DATA DATABASE DATE DATETIME_INTERVAL_CODE DATETIME_INTERVAL_PRECISION DAY DEALLOCATE DEC DECIMAL DECLARE DEFAULT DEFERRABLE DEFERRED DEFINED DEFINER DELETE DELIMITER DELIMITERS DEPTH DEREF DESC DESCRIBE DESCRIPTOR DESTROY DESTRUCTOR DETERMINISTIC DIAGNOSTICS DICTIONARY DISCONNECT DISPATCH DISTINCT DO DOMAIN DOUBLE DROP DYNAMIC DYNAMIC_FUNCTION DYNAMIC_FUNCTION_CODE EACH ELSE ENCODING ENCRYPTED END END-EXEC EQUALS ESCAPE EVERY EXCEPT EXCEPTION EXCLUSIVE EXEC EXECUTE EXISTING EXISTS EXPLAIN EXTERNAL EXTRACT FALSE FETCH FINAL FIRST FLOAT FOR FORCE FOREIGN FORTRAN FORWARD FOUND FREE FREEZE FROM FULL FUNCTION GENERAL GENERATED GET GLOBAL GO GOTO GRANT GRANTED GROUP GROUPING HANDLER HAVING HIERARCHY HOLD HOST HOUR IDENTITY IGNORE ILIKE IMMEDIATE IMMUTABLE IMPLEMENTATION IMPLICIT IN INCREMENT INDEX INDICATOR INFIX INHERITS INITIALIZE INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INSTANCE INSTANTIABLE INSTEAD INT INTEGER INTERSECT INTERVAL INTO INVOKER IS ISNULL ISOLATION ITERATE JOIN KEY KEY_MEMBER KEY_TYPE LANCOMPILER LANGUAGE LARGE LAST LATERAL LEADING LEFT LENGTH LESS LEVEL LIKE LIMIT LISTEN LOAD LOCAL LOCALTIME LOCALTIMESTAMP LOCATION LOCATOR LOCK LOWER MAP MATCH MAX MAXVALUE MESSAGE_LENGTH MESSAGE_OCTET_LENGTH MESSAGE_TEXT METHOD MIN MINUTE MINVALUE MOD MODE MODIFIES MODIFY MODULE MONTH MORE MOVE MUMPS NAME NAMES NATIONAL NATURAL NCHAR NCLOB NEW NEXT NO NOCREATEDB NOCREATEUSER NONE NOT NOTHING NOTIFY NOTNULL NULL NULLABLE NULLIF NUMBER NUMERIC - 0 OBJECT OCTET_LENGTH OF OFF OFFSET OIDS OLD ON ONLY OPEN OPERATION OPERATOR OPTION OPTIONS OR ORDER ORDINALITY OUT OUTER OUTPUT OVERLAPS OVERLAY OVERRIDING OWNER PAD PARAMETER PARAMETERS PARAMETER_MODE PARAMETER_NAME PARAMETER_ORDINAL_POSITION PARAMETER_SPECIFIC_CATALOG PARAMETER_SPECIFIC_NAME PARAMETER_SPECIFIC_SCHEMA PARTIAL PASCAL PASSWORD PATH PENDANT PLACING PLI POSITION POSTFIX PRECISION PREFIX PREORDER PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURAL PROCEDURE PUBLIC READ READS REAL RECHECK RECURSIVE REF REFERENCES REFERENCING REINDEX RELATIVE RENAME REPEATABLE REPLACE RESET RESTRICT RESULT RETURN RETURNED_LENGTH RETURNED_OCTET_LENGTH RETURNED_SQLSTATE RETURNS REVOKE RIGHT ROLE ROLLBACK ROLLUP ROUTINE ROUTINE_CATALOG ROUTINE_NAME ROUTINE_SCHEMA ROW ROWS ROW_COUNT RULE SAVEPOINT SCALE SCHEMA SCHEMA_NAME SCOPE SCROLL SEARCH SECOND SECTION SECURITY SELECT SELF SENSITIVE SEQUENCE SERIALIZABLE SERVER_NAME SESSION SESSION_USER SET SETOF SETS SHARE SHOW SIMILAR SIMPLE SIZE SMALLINT SOME SOURCE SPACE SPECIFIC SPECIFICTYPE SPECIFIC_NAME SQL SQLCODE SQLERROR SQLEXCEPTION SQLSTATE SQLWARNING STABLE START STATE STATEMENT STATIC STATISTICS STDIN STDOUT STORAGE STRICT STRUCTURE STYLE SUBCLASS_ORIGIN SUBLIST SUBSTRING SUM SYMMETRIC SYSID SYSTEM SYSTEM_USER TABLE TABLE_NAME TEMP TEMPLATE TEMPORARY TERMINATE THAN THEN TIME TIMESTAMP TIMEZONE_HOUR TIMEZONE_MINUTE TO TOAST TRAILING TRANSACTION TRANSACTIONS_COMMITTED TRANSACTIONS_ROLLED_BACK TRANSACTION_ACTIVE TRANSFORM TRANSFORMS TRANSLATE TRANSLATION TREAT TRIGGER TRIGGER_CATALOG TRIGGER_NAME TRIGGER_SCHEMA TRIM TRUE TRUNCATE TRUSTED TYPE UNCOMMITTED UNDER UNENCRYPTED UNION UNIQUE UNKNOWN UNLISTEN UNNAMED UNNEST UNTIL UPDATE UPPER USAGE USER USER_DEFINED_TYPE_CATALOG USER_DEFINED_TYPE_NAME USER_DEFINED_TYPE_SCHEMA USING VACUUM VALID VALIDATOR VALUE VALUES VARCHAR VARIABLE VARYING VERBOSE VERSION VIEW VOLATILE WHEN WHENEVER WHERE WITH WITHOUT WORK WRITE YEAR ZONE
+githubRepo https://github.com/postgres/postgres
+ stars 10491
+ forks 3385
+ subscribers 489
+ created 2010
+ updated 2022
+ firstCommit 1996
+ description Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+ issues 0
+
+lineCommentToken --
+multiLineCommentTokens /* */
+stringToken '
+booleanTokens TRUE FALSE
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+hasBooleans true
+
+wikipedia https://en.wikipedia.org/wiki/PostgreSQL
+ related c linux sql gist xml xpath json julia go r d erlang plpgsql pl-sql sql-psm perl python tcl java javascript ruby regex tls freebsd solaris x86-isa powerpc systemz sparc arm mips visual-basic mysql aws
+ summary PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users; on macOS Server, PostgreSQL is the default database; and it is also available for Microsoft Windows and Linux (supplied in most distributions). PostgreSQL is ACID-compliant and transactional. PostgreSQL has updatable views and materialized views, triggers, foreign keys; supports functions and stored procedures, and other expandability. PostgreSQL is developed by the PostgreSQL Global Development Group, a diverse group of many companies and individual contributors. It is free and open-source, released under the terms of the PostgreSQL License, a permissive software license.
+ pageId 23824
+ dailyPageViews 1262
+ created 2001
+ backlinksCount 991
+ revisionCount 2302
+ appeared 1996
+
+domainName postgresql.org
+ registered 1996
+ awisRank
+  2022 5404
+
+isbndb 37
+ year|publisher|title|authors|isbn13
+ 2002|Sams Publishing|PHP and PostgreSQL Advanced Web Programming|Geschwinde, Ewald and Schoenig, Hans-Juergen|9780672323829
+ 2013|Packt Publishing|PostgreSQL Server Programming|Hannu Krosing and Kirk Roybal and Jim Mlodgenski|9781849516983
+ 2016-09-26|Packt Publishing|PostgreSQL Development Essentials|Manpreet Kaur and Baji Shaik|9781783989003
+ 2018|Apress|Beginning PostgreSQL on the Cloud: Simplifying Database as a Service on Cloud Platforms|Shaik, Baji and Vallarapu, Avinash|9781484234471
+ 2011|Fultus Corporation|PostgreSQL 9.0 Official Documentation - Volume III. Server Programming|Postgresql Global Development Group and The Postgresql Global Development Group|9781596822481
+ 2015|Packt Publishing|PostgreSQL Server Programming - Second Edition|Dar,  Usama and Krosing,  Hannu and Mlodgenski,  Jim and Roybal,  Kirk|9781783980598
+ 2016|Samurai Media Limited|Postgresql 9.5 Vol4: Server Programming (volume 4)|Postgresql Development Group|9789888406340
+ 2017|Samurai Media Limited|Postgresql 9.6 Vol4: Server Programming (volume 4)|Postgresql Development Group|9789888406715
+ 2020|Apress|PostgreSQL Configuration: Best Practices for Performance and Security|Shaik, Baji|9781484256633
+ 2002|O'Reilly Media|Practical PostgreSQL|Drake, Joshua D. and Worsley, John C.|9781565928466
+ 2005|Sams Publishing|PostgreSQL|Douglas, Korry|9780672327568
+ 2010|Packt Publishing|PostgreSQL 9.0 High Performance|Smith, Gregory|9781849510301
+ 2017|Packt Publishing|Learning PostgreSQL 10 - Second Edition: A beginner's guide to building high-performance PostgreSQL database solutions|Juba, Salahaldin and Volkov, Andrey|9781788470667
+ 2015|Packt Publishing|Learning PostgreSQL: Create, develop and manage relational databases in real world applications using PostgreSQL|Juba, Salahaldin and Vannahme, Achim and Volkov, Andrey|9781783989188
+ 2018|Packt Publishing|PostgreSQL 11 Server Side Programming Quick Start Guide: Effective database programming and interaction|Ferrari, Luca|9781789343502
+ 2015|Packt Publishing|PostgreSQL Server Programming - Second Edition|Dar, Usama and Krosing, Hannu and Mlodgenski, Jim and Roybal, Kirk|9781783980581
+ 2018|Packt Publishing|PostgreSQL 11 Server Side Programming Quick Start Guide: Effective database programming and interaction|Ferrari, Luca|9781789342222
+ 2006|Apress|Beginning PHP and PostgreSQL E-Commerce: From Novice to Professional (Beginning, from Novice to Professional)|Darie, Cristian and Bucica, Mihai and Balanescu, Emilian|9781590596487
+ 2009|Fultus Corporation|PostgreSQL 8.4 Official Documentation - Volume III. Server Programming|The PostgreSQL Global Development Group|9781596821606
+ 2019|Independently published|Learn PyQt The Hard Way: A Quick Start Guide to PostgreSQL and SQLite Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711384313
+ 20020107|O'Reilly Media, Inc.|Practical PostgreSQL|Joshua D. Drake; John C. Worsley|9781449310103
+ 20020107|O'Reilly Media, Inc.|Practical PostgreSQL|Joshua D. Drake|9781449310288
+ 30-11-2015|Packt Publishing|Learning PostgreSQL|Salahaldin Juba|9781783989195
+ 44113|Packt Publishing|Learn PostgreSQL|Luca Ferrari; Enrico Pirozzi|9781838986896
+ 2000|Iuniverse Inc|Postgresql Programmer's Guide|Thomas Lockhart|9780595149179
+ 2013-08-26|Packt Publishing|PostgreSQL Replication|Zoltan Boszormenyi and Hans-Jurgen Schonig|9781849516730
+ 20130625|Packt Publishing|PostgreSQL Server Programming|Hannu Krosing; Kirk Roybal; Jim Mlodgenski|9781849516990
+ 20210422|Springer Nature|PostgreSQL Query Optimization|Henrietta Dombrovskaya; Boris Novikov; Anna Bailliekova|9781484268858
+ 26-09-2016|Packt Publishing|PostgreSQL Development Essentials|Manpreet Kaur|9781783989010
+ 31-01-2019|Packt Publishing|Learning PostgreSQL 11|Salahaldin Juba; Andrey Volkov|9781789535211
+ 20150227|Packt Publishing|PostgreSQL Developer's Guide|Ahmed   Ibrar|9781783989034
+ 2015|Samurai Media Limited|Postgresql 9.4 Vol4: Server Programming|Postgresql Development Group|9789888381340
+ 20061121|Springer Nature|Beginning PHP and PostgreSQL 8|W Jason Gilmore; Robert H. Treat|9781430201366
+ 13-08-2021|Packt Publishing|Developing Modern Database Applications with PostgreSQL|Dr. Quan Ha Le; Marcelo Diaz|9781838641061
+ 2017-10-26|Samurai Media Limited|Postgresql 10 Vol4: Server Programming (volume 4)|Postgresql Development Group|9789888407255
+ 2007|Network Theory Ltd.|The Postgresql Reference Manual Volume 2: Programming Guide|The Postgresql Global Development Group|9780954612030
+ 2010|Network Theory Ltd.|Postgresql 9.0 Reference Manual - Volume 2: Programming Guide|Postgresql Global Development Group|9781906966065
+
+indeedJobs postgresql developer
+ 2022 9946
+linkedInSkill postgresql
+ 2018 313773
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|Implementasi JSON untuk Minimasi Penggunaan Jumlah Kolom Suatu Tabel Pada Database PostgreSQL|10.21070/JOINCS.V1I1.802|5|1|M. A. Rosid|6b6d9197323171c9e0b36379319b941a133908fe
+ 2017|Penerapan Replikasi Data pada Aplikasi Ticketing Menggunakan Slony PostgreSQL|10.30871/JAIC.V1I2.472|4|0|Defriyanuar Dhining and Yeni Rokhayati and D. Kurniawan|3e756dc9289583f7046a3a3685f2721e56c3f565
+ 2017|Query compilation in PostgreSQL by specialization of the DBMS source code|10.1134/S0361768817060068|2|0|E. Sharygin and R. Buchatskiy and Roman Zhuykov and A. Sher|fbbd9fec8f42fb1aa2608ecd5d757002e62d8609
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PostgreSQL Developer's Handbook|2001|Ewald Geschwinde|570422|3.17|6|0
+ PostgreSQL Server Programming|2012|Hannu Krosing|24026689|3.87|15|3
+ PostgreSQL Developer's Guide|2015|Ibrar Ahmed|44827008|3.75|8|2

@@ -1,0 +1,60 @@
+Markus
+======
+
+Markus is a query language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2723 on PLDB
+4 Years Old
+
+git clone https://github.com/Markus-Studio/Markus
+
+A declarative (database) query language!
+
+- Markus is developed on GitHub and has 2 stars
+- Markus first developed in https://github.com/Markus-Studio
+- Markus is written in Rust, JSON, TOML, Markdown, JavaScript, Python, C, C++, Bourne shell, YAML
+
+type User: user {
+  name: string;
+}
+
+type Task {
+  owner: User;
+  title: string;
+  done: bool;
+}
+
+query myTasks() {
+  is(Task),
+  # %user is the current authenticated user.
+  eq(.owner, %user)
+}
+
+action newTask($title: string) {
+  create Task {
+    user: %user,
+    title: $title,
+    done: false
+  };
+}
+
+action toggleStatus($task: Task) {
+  validate eq($task.owner, %user);
+
+  update $task {
+    .done: not(.done)
+  };
+}
+
+action delete($task: Task) {
+  validate eq($task.owner, %user);
+  delete $task;
+}
+
+action edit($task: Task, $new_title: string) {
+  validate eq($task.owner, %user);
+  update $task {
+    .title: $new_title
+  };
+}

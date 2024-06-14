@@ -1,0 +1,65 @@
+PhyloXML
+========
+
+PhyloXML is a xml format created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1684 on PLDB
+15 Years Old
+
+PhyloXML is an XML language for the analysis, exchange, and storage of phylogenetic trees (or networks) and associated data. The structure of phyloXML is described by XML Schema Definition (XSD) language. A shortcoming of current formats for describing phylogenetic trees (such as Nexus and Newick/New Hampshire) is a lack of a standardized means to annotate tree nodes and branches with distinct data fields (which in the case of a basic species tree might be: species names, branch lengths, and possibly multiple support values). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PhyloXML
+
+- PhyloXML website
+ http://www.phyloxml.org/
+- PhyloXML Wikipedia page
+ https://en.wikipedia.org/wiki/PhyloXML
+- PhyloXML first developed in World Wide Web Consortium
+- phyloxml.org was registered in 2005
+- See also: (3 related languages)XML, Nexus file, Newick format
+
+ &lt;phyloxml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+  xsi:schemaLocation=&quot;http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd&quot;
+  xmlns=&quot;http://www.phyloxml.org&quot;&gt;
+  &lt;phylogeny rooted=&quot;true&quot;&gt;
+     &lt;name&gt;example from Prof. Joe Felsenstein&#39;s book &quot;Inferring Phylogenies&quot;&lt;/name&gt;
+     &lt;description&gt;MrBayes based on MAFFT alignment&lt;/description&gt;
+     &lt;clade&gt;
+        &lt;clade branch_length=&quot;0.06&quot;&gt;
+           &lt;confidence type=&quot;probability&quot;&gt;0.88&lt;/confidence&gt;
+           &lt;clade branch_length=&quot;0.102&quot;&gt;
+              &lt;name&gt;A&lt;/name&gt;
+           &lt;/clade&gt;
+           &lt;clade branch_length=&quot;0.23&quot;&gt;
+              &lt;name&gt;B&lt;/name&gt;
+           &lt;/clade&gt;
+        &lt;/clade&gt;
+        &lt;clade branch_length=&quot;0.4&quot;&gt;
+           &lt;name&gt;C&lt;/name&gt;
+        &lt;/clade&gt;
+     &lt;/clade&gt;
+  &lt;/phylogeny&gt;
+&lt;/phyloxml&gt;
+
+&lt;phyloxml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+   xsi:schemaLocation=&quot;http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd&quot;
+   xmlns=&quot;http://www.phyloxml.org&quot;&gt;
+   &lt;phylogeny rooted=&quot;true&quot;&gt;
+      &lt;name&gt;example from Prof. Joe Felsenstein&#39;s book &quot;Inferring Phylogenies&quot;&lt;/name&gt;
+      &lt;description&gt;MrBayes based on MAFFT alignment&lt;/description&gt;
+      &lt;clade&gt;
+         &lt;clade branch_length=&quot;0.06&quot;&gt;
+            &lt;confidence type=&quot;probability&quot;&gt;0.88&lt;/confidence&gt;
+            &lt;clade branch_length=&quot;0.102&quot;&gt;
+               &lt;name&gt;A&lt;/name&gt;
+            &lt;/clade&gt;
+            &lt;clade branch_length=&quot;0.23&quot;&gt;
+               &lt;name&gt;B&lt;/name&gt;
+            &lt;/clade&gt;
+         &lt;/clade&gt;
+         &lt;clade branch_length=&quot;0.4&quot;&gt;
+            &lt;name&gt;C&lt;/name&gt;
+         &lt;/clade&gt;
+      &lt;/clade&gt;
+   &lt;/phylogeny&gt;
+ &lt;/phyloxml&gt;

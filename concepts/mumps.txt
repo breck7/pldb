@@ -1,0 +1,93 @@
+MUMPS
+=====
+
+MUMPS is a programming language created in 1966 by Neil Pappalardo.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Neil%20Pappalardo
+
+#172 on PLDB
+58 Years Old
+2k Repos
+
+Try now: Riju · TIO
+
+MUMPS (Massachusetts General Hospital Utility Multi-Programming System), or M, is a general-purpose computer programming language that provides ACID (Atomic, Consistent, Isolated, and Durable) transaction processing. Its differentiating feature is its "built-in" database, enabling high-level access to disk storage using simple symbolic program variables and subscripted arrays, similar to the variables used by most languages to access main memory. The M database is a key-value database engine optimized for high-throughput transaction processing. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MUMPS
+
+- MUMPS Wikipedia page
+ https://en.wikipedia.org/wiki/MUMPS
+- MUMPS docs
+ https://mumps.sourceforge.net/docs.html
+- There are at least 2,448 MUMPS repos on GitHub
+- MUMPS first developed in MUMPS Development Committee
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using MUMPS in 5k repos on GitHub
+- There are 38 Project Euler users using MUMPS
+- Explore MUMPS snippets on Rosetta Code
+- MUMPS on HOPL
+ https://hopl.info/showlanguage.prx?exp=773
+- MUMPS appears in the TIOBE Index
+- ANTLR grammar for MUMPS
+- CodeMirror package for syntax highlighting MUMPS
+- See also: (8 related languages)JOSS, Unix, TELCOMP, Meditech Interpretive Information System, Linux, Tiny BASIC, ASCII, CSV
+- 4 languages in PLDB linking to MUMPS: Caché ObjectScript, cloc, NCAR Command Language, proto-GNOSIS
+
+label1 ; This is a label
+    write &quot;Hello World !&quot;,!
+    quit
+
+main()
+  write &quot;Hello, world!&quot;,!
+  quit
+
+ w &quot;Hello World&quot;,!
+
+; Hello World in Mumps-M
+ w !,&quot;Hello World&quot;
+
+GTM&gt;S n=&quot;&quot;
+GTM&gt;S n=$order(^nodex(n))
+GTM&gt;zwr n
+n=&quot; building&quot;
+GTM&gt;S n=$order(^nodex(n))
+GTM&gt;zwr n
+n=&quot; name:gd&quot;
+GTM&gt;S n=$order(^nodex(n))
+GTM&gt;zwr n
+n=&quot;%kml:guid&quot;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token w
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

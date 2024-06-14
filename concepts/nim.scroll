@@ -1,0 +1,184 @@
+import ../code/conceptPage.scroll
+
+id nim
+name Nim
+appeared 2008
+creators Andreas Rumpf
+tags pl
+website https://nim-lang.org/
+blog https://nim-lang.org/blog.html
+latestVersion 2.0.4
+aka nimrod
+conceptDescription Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+
+isOpenSource true
+writtenIn nim markdown html yaml c bourne-shell json restructuredtext python css assembly-language csv sql tex ini xml bash
+compilesTo c cpp objective-c javascript
+tryItOnline nim
+fileExtensions nim
+clocExtensions nim nim.cfg nimble nimrod nims
+fileType text
+documentation https://nim-lang.org/documentation.html
+faq https://nim-lang.org/faq.html
+rosettaCode http://www.rosettacode.org/wiki/Category:Nim
+quineRelay Nim
+packageRepository https://nimble.directory/
+ubuntuPackage nim
+repoStats
+ firstCommit 2008
+ commits 25030
+ committers 1032
+ files 3588
+ newestCommit 2024
+country Various
+originCommunity https://github.com/nim-lang
+projectEuler Nim
+ memberCount
+  2019 10
+  2022 36
+reference https://irclogs.nim-lang.org/01-07-2012.html
+
+helloWorldCollection Nim
+ # Hello world in Nim
+ 
+ echo "Hello World"
+rijuRepl https://riju.codes/nim
+ example
+  echo "Hello, world!"
+twitter https://twitter.com/nim_lang
+leachim6 Nim
+ filepath n/Nim.nim
+ fileExtensions nim
+ example
+  echo("Hello World")
+  
+languageServerProtocolProject https://github.com/PMunch/nimlsp
+ writtenIn nim
+compilerExplorer Nim
+ example
+  # Type your code here, or load an example.
+  proc square(num: int): int {.exportc.} =
+    num * num
+  
+
+githubRepo https://github.com/nim-lang/Nim
+ stars 13062
+ forks 1318
+ subscribers 304
+ created 2010
+ updated 2022
+ firstCommit 2008
+ description Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
+ issues 2287
+
+lineCommentToken #
+multiLineCommentTokens #[ ]#
+printToken echo
+assignmentToken =
+stringToken "
+booleanTokens true false on off
+
+hasComments true
+hasTemplates true
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+ template debug*(args: varargs[string, `$`]) =
+ if logLevel <= Level.debug:
+   const module = instantiationInfo().filename[0 .. ^5]
+   echo "[$# $#][$#]: $#" % [getDateStr(), getClockStr(),
+     module, join args]
+hasMacros true
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+ import macros
+ dumpTree:
+  result = 10
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers true
+ # Though they may be phased out:
+ # https://github.com/nim-lang/RFCs/issues/456
+hasStaticTyping true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ #[ A comment
+ ]#
+hasAssignment true
+hasStrings true
+ "Hello world"
+hasBooleans true
+  let res = true
+hasGotos false
+hasUnicodeIdentifiers true
+ let δ = 0.00001
+
+wikipedia https://en.wikipedia.org/wiki/Nim_(programming_language)
+ example
+  proc printf(formatstr: cstring) {.header: "<stdio.h>", varargs.}
+  
+  printf("%s %d\n", "foo", 5)
+ related ada modula-3 lisp object-pascal python oberon c javascript pascal delphi csharp go objective-c ios android git json opengl postgresql mysql sqlite lua scala d rust
+ summary Nim (formerly named Nimrod) is an imperative, multi-paradigm, compiled programming language designed and developed by Andreas Rumpf. It is designed to be "efficient, expressive, and elegant", supporting metaprogramming, functional, message passing, procedural, and object-oriented programming styles by providing several features such as compile time code generation, algebraic data types, a foreign function interface (FFI) with C and compiling to JavaScript, C and C++.
+ pageId 45413679
+ dailyPageViews 176
+ created 2015
+ backlinksCount 69
+ revisionCount 247
+ appeared 2008
+ fileExtensions nim
+
+tiobe Nim
+
+domainName nim-lang.org
+ registered 2014
+ awisRank
+  2022 428858
+  2017 288984
+
+githubBigQuery Nim
+ repos 472
+ users 299
+
+linguistGrammarRepo https://github.com/Varriount/NimLime
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 28
+ commitCount 303
+ sampleCount 4
+ example
+  # from: https://github.com/nim-lang/Nim/blob/27b081d1f77604ee47c886e69dbc52f53ea3741f/compiler/nimfix/nimfix.nim.cfg
+  
+  # Special configuration file for the Nim project
+  # gc:markAndSweep
+  
+  hint[XDeclaredButNotUsed]:off
+  path:"$projectPath/.."
+  
+  path:"$lib/packages/docutils"
+  path:"$nim"
+  
+  define:useStdoutAsStdmsg
+  symbol:nimfix
+  define:nimfix
+  
+  cs:partial
+  #define:useNodeIds
+  define:booting
+  define:noDocgen
+  
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2022|Independently published | Mastering Nim |Rumpf, Andreas|979-8836539412
+ 2017|Manning Publications|Nim in Action|Picheta, Dominik|9781617293436
+ 2017|Manning|Nim in Action|Picheta, Dominik|9781638352297
+
+githubLanguage Nim
+ fileExtensions nim nimcfg nimble nimrod nims
+ trendingProjectsCount 0
+ type programming
+ filenames nim.cfg
+ aceMode text
+ tmScope source.nim
+ repos 8018
+
+semanticScholar 0

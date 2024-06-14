@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id linked-markdown
+name Linked Markdown
+appeared 2022
+creators Luis Cuende
+tags textMarkup
+website https://linked.md/
+conceptDescription The main intended use is writing legal agreements and law. A Linked Markdown file has a first sections containing definitions, and a second section containing Markdown. They are separated by three lines.
+
+country Nation3
+originCommunity https://nation3.org
+
+example
+ Definition Name
+ : Definition content.
+ 
+ ---
+ 
+ # Markdown content
+ Any Markdown _text_.

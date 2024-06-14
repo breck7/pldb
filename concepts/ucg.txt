@@ -1,0 +1,35 @@
+UCG
+===
+
+UCG, aka Universal Configuration Grammar, is a data notation created in 2017 by Jeremy Wall.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Wall
+
+#1468 on PLDB
+7 Years Old
+
+git clone https://github.com/zaphar/ucg
+
+A Universal Configuration Grammar
+
+- UCG website
+ https://ucg.marzhillstudios.com/
+- UCG is developed on GitHub and has 27 stars
+- UCG compiles to JSON or YAML or TOML or XML
+- UCG is written in Rust, Markdown, SCSS, TOML, HTML, YAML, Nix, Make, JSON, Bourne shell, JavaScript
+
+let db_confs = import &quot;db/mysql/hosts.ucg&quot;;
+let consul_hosts = import &quot;services/consul/hosts.ucg&quot;.host_pool;
+
+let conf = {
+    port = 8888,
+    addr = &quot;0.0.0.0&quot;,
+    db = {
+        host = db_confs.host_pool.addr,
+        port = db_confs.host_pool.port,
+        database = &quot;myservicedb&quot;,
+    },
+    config_svc = consul_hosts.url,
+};
+
+out json conf;

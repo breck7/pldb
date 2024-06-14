@@ -1,0 +1,44 @@
+import ../code/conceptPage.scroll
+
+id snowball-programming-language
+name Snowball
+appeared 2001
+creators Martin Porter
+tags pl
+website https://snowballstem.org
+latestVersion v2.2.0
+
+writtenIn c python rust go ada csharp java perl pascal javascript restructuredtext markdown make yaml diff xml toml
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 1096
+ committers 39
+ files 124
+ newestCommit 2024
+country United Kingdom
+originCommunity https://lists.tartarus.org/pipermail/snowball-discuss
+reference http://snowball.tartarus.org
+
+pygmentsHighlighter Snowball
+ filename dsls.py
+ fileExtensions sbl
+
+githubRepo https://github.com/snowballstem/snowball
+ stars 721
+ forks 172
+ subscribers 35
+ created 2013
+ updated 2024
+ description Snowball compiler and stemming algorithms
+ issues 27
+
+wikipedia https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
+ related snobol java ascii c
+ summary Snowball is a small string processing programming language designed for creating stemming algorithms for use in information retrieval.The Snowball compiler translates a Snowball script (a  .sbl file) into either a thread-safe ANSI C program or a Java program. For ANSI C, each Snowball script produces a program file and corresponding header file (with  .c  and  .h  extensions). The Snowball compiler checks the consistency of its script, and this check was used to discover a typo in a seminal academic paper by Lovins which had remained undetected for 30 years.The basic datatypes handled by Snowball are strings of characters, signed integers, and boolean truth values, or more simply strings, integers and booleans. Snowball's characters are either 8-bit wide, or 16-bit, depending on the mode of use. In particular, both ASCII and 16-bit Unicode are supported. Like the SNOBOL programming language, the flow of control in Snowball is arranged by the implicit use of signals (each statement returns a true or false value), rather than the explicit use of constructs such as if, then, and break found in C and many other programming languages.The name Snowball was chosen as a tribute to the SNOBOL programming language, with which it shares the concept of string patterns delivering signals that are used to control the flow of the program. The creator of Snowball, Dr. Martin Porter, "toyed with the idea of calling it 'strippergram' ", because it "effectively provides a 'suffix STRIPPER GRAMmar' ".
+ created 2004
+ backlinksCount 9
+ pageId 919808
+ revisionCount 32
+ dailyPageViews 10
+ appeared 2006

@@ -1,0 +1,60 @@
+SQLite
+======
+
+SQLite is an open source query language created in 2000 by Dwayne Richard Hipp.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Dwayne%20Richard%20Hipp
+
+#107 on PLDB
+24 Years Old
+
+Try now: Web · Riju · TIO
+
+SQLite ( or ) is a relational database management system contained in a C programming library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SQLite
+
+- SQLite website
+ https://sqlite.org
+- SQLite downloads page
+ https://sqlite.org/download.html
+- SQLite Wikipedia page
+ https://en.wikipedia.org/wiki/SQLite
+- Watch the history of the SQLite repo visualized with Gource
+- SQLite docs
+ https://www.sqlite.org/docs.html
+- SQLite first developed in  Hipp, Wyrick & Company, Inc
+- SQLite is written in C
+- There are 2,744 members in the SQLite subreddit
+- ANTLR grammar for SQLite
+- Release Notes for SQLite
+ https://www.sqlite.org/changes.html
+- Official Blog page for SQLite
+ https://www.sqlite.org/news.html
+- Frequently Asked Questions for SQLite
+ https://www.sqlite.org/faq.html
+- Indeed.com has 561 matches for "sqlite developer".
+- sqlite.org was registered in 2002
+- See also: (61 related languages)C, SQL, PostgreSQL, Tcl, JSON, SQL-92, Perl, Unicode, JScript, VBScript, Django, Drupal, Ruby on Rails, Solaris, Android, FreeBSD, iOS, AutoIt, BASIC, FreeBASIC, PureBasic, Visual Basic .NET, Xojo, C#, Clipper, Curl, D, Elixir, Emacs Lisp, F#, Go, Haskell, Haxe, Java, JavaScript, Julia, Lisp, Common Lisp, OpenLisp, LiveCode, LabVIEW G, Lua, MATLAB, Nim, Objective-C, OCaml, Pascal, Free Pascal, Delphi, PHP, Pike, Python, R, Racket, REBOL, Ruby, Scheme, Smalltalk, Swift, ISBN, DOI
+- Read more about SQLite on the web: 1.
+ https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
+- 1 languages in PLDB linking to SQLite: Project Mentat
+
+SELECT &#39;Hello, world!&#39;;
+
+ABORT ACTION ADD AFTER ALL ALTER ANALYZE AND AS ASC ATTACH AUTOINCREMENT BEFORE BEGIN BETWEEN BY CASCADE CASE CAST CHECK COLLATE COLUMN COMMIT CONFLICT CONSTRAINT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP DATABASE DEFAULT DEFERRABLE DEFERRED DELETE DESC DETACH DISTINCT DROP EACH ELSE END ESCAPE EXCEPT EXCLUSIVE EXISTS EXPLAIN FAIL FOR FOREIGN FROM FULL GLOB GROUP HAVING IF IGNORE IMMEDIATE IN INDEX INDEXED INITIALLY INNER INSERT INSTEAD INTERSECT INTO IS ISNULL JOIN KEY LEFT LIKE LIMIT MATCH NATURAL NO NOT NOTNULL NULL OF OFFSET ON OR ORDER OUTER PLAN PRAGMA PRIMARY QUERY RAISE RECURSIVE REFERENCES REGEXP REINDEX RELEASE RENAME REPLACE RESTRICT RIGHT ROLLBACK ROW SAVEPOINT SELECT SET TABLE TEMP TEMPORARY THEN TO TRANSACTION TRIGGER UNION UNIQUE UPDATE USING VACUUM VALUES VIEW VIRTUAL WHEN WHERE WITH WITHOUT
+
+Language features
+======================================================
+
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported X
+ Token 
+ Example

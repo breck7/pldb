@@ -1,0 +1,54 @@
+Datalog
+=======
+
+Datalog is a programming language created in 1977.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#375 on PLDB
+47 Years Old
+
+Datalog is a declarative logic programming language that syntactically is a subset of Prolog. It is often used as a query language for deductive databases. In recent years, Datalog has found new application in data integration, information extraction, networking, program analysis, security, and cloud computing. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Datalog
+
+- Datalog Wikipedia page
+ https://en.wikipedia.org/wiki/Datalog
+- Datalog first developed in University of Maryland
+- Explore Datalog snippets on Rosetta Code
+- Datalog on HOPL
+ https://hopl.info/showlanguage.prx?exp=3793
+- See also: (14 related languages)Prolog, Java, OWL, C, Python, Ruby, Lua, Clojure, Racket, Tcl, Haskell, .QL, RDF, SPARQL
+- Read more about Datalog on the web: 1. 2. 3.
+ http://www.learndatalogtoday.org/
+ http://datalog.sourceforge.net/datalog.html
+ https://percival.jake.tl/
+- 2 languages in PLDB linking to Datalog: Datomic, Yedalog
+
+parent(john, douglas). % store some data
+parent(john, douglas)? % run a query
+
+ancestor(X,Y) :- parent(X,Y).
+ ancestor(X,Y) :- parent(X,Z),ancestor(Z,Y).
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  % A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

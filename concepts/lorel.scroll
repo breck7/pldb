@@ -1,0 +1,19 @@
+import ../code/conceptPage.scroll
+
+id lorel
+name Lorel
+appeared 1996
+creators Serge Abiteboul and Dallan Quass and Jason McHugh and Jennifer Widom and Janet L. Wiener
+tags queryLanguage
+conceptDescription Lorel Query Language for Semistructured Data
+
+country United States
+originCommunity Stanford University
+reference http://infolab.stanford.edu/lore/pubs/lorel96.pdf
+
+example
+ select Guide.restaurant.name,
+    Guide.restaurant(.address)?.zipcode
+  where Guide.restaurant.% grep "cheap"
+
+isbndb 0

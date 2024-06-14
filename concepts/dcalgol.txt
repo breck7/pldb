@@ -1,0 +1,46 @@
+Data Communications ALGOL
+=========================
+
+Data Communications ALGOL is a programming language created in 1970.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3125 on PLDB
+54 Years Old
+
+- Data Communications ALGOL first developed in Burroughs Corporation
+- Data Communications ALGOL on HOPL
+ https://hopl.info/showlanguage.prx?exp=1958
+- Read more about Data Communications ALGOL on the web: 1.
+ https://en.wikipedia.org/wiki/Burroughs_large_systems
+
+BEGIN
+ARRAY DCREC [0:0];
+MESSAGE BUSTER;
+QUEUE PRIMARY;
+INTEGER I1;
+POINTER P1;
+
+ALLOCATE (BUSTER, 8);
+BUSTER [0] := 0;
+I1 := DCWRITE (BUSTER, PRIMARY); %Initialize Primary Queue
+ALLOCATE (BUSTER, 9);
+BUSTER [0] := 0 &amp; 4 [47:8] &amp; 1 [31:1] &amp; 1 [30:1] &amp; 1 [29:1]
+&amp; 1 [28:1] &amp; 1 [27:1] &amp; 1 [26:1] &amp; 1 [25:1] &amp; 472 [22:23];
+I1 := DCWRITE (BUSTER); %Station Inquiry
+RESIZE (DCREC, SIZE (BUSTER) + 10, DISCARD);
+REPLACE P1:DCREC [1] BY POINTER (BUSTER [1], 8) FOR (SIZE (BUSTER) -
+1) * 6;
+WHILE MYSELF.TASKVALUE = 0 DO
+  DISPLAY (&quot;HELLO WORLD&quot;); %Duh
+END.
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"

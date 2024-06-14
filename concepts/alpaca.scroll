@@ -1,0 +1,59 @@
+import ../code/conceptPage.scroll
+
+id alpaca
+name Alpaca
+appeared 2017
+creators Jeremy Pierre
+tags pl
+website http://alpaca-lang.org
+latestVersion v0.2.8
+oldName ML-flavoured Erlang
+
+writtenIn erlang markdown yaml make bourne-shell
+compilesTo beam-bytecode
+repoStats
+ firstCommit 2016
+ commits 884
+ committers 23
+ files 94
+ newestCommit 2019
+country Canada
+originCommunity https://github.com/alpaca-lang
+reference https://github.com/j14159/abstract-alpaca
+
+example
+ module simple_example
+ 
+ -- a basic top-level function:
+ let add2 x = x + 2
+ 
+ let something_with_let_bindings x =
+   -- a function:
+   let adder a b = a + b in
+   -- a variable (immutable):
+   let x_plus_2 = adder x 2 in
+   add2 x
+ 
+ -- a polymorphic ADT:
+ type messages 'x = 'x | Fetch pid 'x
+ 
+ {- A function that can be spawned to receive `messages int`
+     messages, that increments its state by received integers
+     and can be queried for its state.
+ -}
+ let will_be_a_process x = receive with
+     i -> will_be_a_process (x + i)
+   | Fetch sender ->
+     let sent = send x sender in
+     will_be_a_process x
+ 
+ let start_a_process init = spawn will_be_a_process init
+
+githubRepo https://github.com/alpaca-lang/alpaca
+ stars 1438
+ forks 46
+ subscribers 62
+ created 2016
+ updated 2024
+ description Functional programming inspired by ML for the Erlang VM
+ issues 34

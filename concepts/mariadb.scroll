@@ -1,0 +1,44 @@
+import ../code/conceptPage.scroll
+
+id mariadb
+name MariaDB
+appeared 2009
+tags queryLanguage
+
+isOpenSource true
+fileType text
+documentation https://mariadb.org/documentation/
+centralPackageRepositoryCount 0
+country Finland and United States
+originCommunity MariaDB Foundation
+
+rijuRepl https://riju.codes/mariadb
+ example
+  SELECT 'Hello, world!';
+  
+
+keywords ACCESSIBLE ADD ALL ALTER ANALYZE AND AS ASC ASENSITIVE BEFORE BETWEEN BIGINT BINARY BLOB BOTH BY CALL CASCADE CASE CHANGE CHAR CHARACTER CHECK COLLATE COLUMN CONDITION CONSTRAINT CONTINUE CONVERT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DATABASE DATABASES DAY_HOUR DAY_MICROSECOND DAY_MINUTE DAY_SECOND DEC DECIMAL DECLARE DEFAULT DELAYED DELETE DESC DESCRIBE DETERMINISTIC DISTINCT DISTINCTROW DIV DOUBLE DROP DUAL EACH ELSE ELSEIF ENCLOSED ESCAPED EXISTS EXIT EXPLAIN FALSE FETCH FLOAT FLOAT4 FLOAT8 FOR FORCE FOREIGN FROM FULLTEXT GENERAL GRANT GROUP HAVING HIGH_PRIORITY HOUR_MICROSECOND HOUR_MINUTE HOUR_SECOND IF IGNORE IGNORE_SERVER_IDS IN INDEX INFILE INNER INOUT INSENSITIVE INSERT INT INT1 INT2 INT3 INT4 INT8 INTEGER INTERVAL INTO IS ITERATE JOIN KEY KEYS KILL LEADING LEAVE LEFT LIKE LIMIT LINEAR LINES LOAD LOCALTIME LOCALTIMESTAMP LOCK LONG LONGBLOB LONGTEXT LOOP LOW_PRIORITY MASTER_HEARTBEAT_PERIOD MASTER_SSL_VERIFY_SERVER_CERT MATCH MAXVALUE MEDIUMBLOB MEDIUMINT MEDIUMTEXT MIDDLEINT MINUTE_MICROSECOND MINUTE_SECOND MOD MODIFIES NATURAL NOT NO_WRITE_TO_BINLOG NULL NUMERIC ON OPTIMIZE OPTION OPTIONALLY OR ORDER OUT OUTER OUTFILE PARTITION PRECISION PRIMARY PROCEDURE PURGE RANGE READ READS READ_WRITE REAL REFERENCES REGEXP RELEASE RENAME REPEAT REPLACE REQUIRE RESIGNAL RESTRICT RETURN REVOKE RIGHT RLIKE SCHEMA SCHEMAS SECOND_MICROSECOND SELECT SENSITIVE SEPARATOR SET SHOW SIGNAL SLOW SMALLINT SPATIAL SPECIFIC SQL SQLEXCEPTION SQLSTATE SQLWARNING SQL_BIG_RESULT SQL_CALC_FOUND_ROWS SQL_SMALL_RESULT SSL STARTING STRAIGHT_JOIN TABLE TERMINATED THEN TINYBLOB TINYINT TINYTEXT TO TRAILING TRIGGER TRUE UNDO UNION UNIQUE UNLOCK UNSIGNED UPDATE USAGE USE USING UTC_DATE UTC_TIME UTC_TIMESTAMP VALUES VARBINARY VARCHAR VARCHARACTER VARYING WHEN WHERE WHILE WITH WRITE XOR YEAR_MONTH ZEROFILL ACTION BIT DATE ENUM NO TEXT TIME TIMESTAMP
+
+booleanTokens TRUE FALSE
+
+hasBooleans true
+
+wikipedia https://en.wikipedia.org/wiki/MariaDB
+ related c perl bash solaris linux mysql freebsd
+ summary MariaDB is a community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL. Development is led by some of the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle Corporation.MariaDB intends to maintain high compatibility with MySQL, ensuring a drop-in replacement capability with library binary parity and exact matching with MySQL APIs and commands. It includes the XtraDB storage engine for replacing InnoDB, as well as a new storage engine, Aria, that intends to be both a transactional and non-transactional engine perhaps even included in future versions of MySQL.Its lead developer is Michael "Monty" Widenius, one of the founders of MySQL AB and the founder of Monty Program AB.  On 16 January 2008, MySQL AB announced that it had agreed to be acquired by Sun Microsystems for approximately $1 billion. The acquisition completed on 26 February 2008.  MariaDB is named after Monty's younger daughter Maria, similar to how MySQL is named after his other daughter My.
+ backlinksCount 218
+ pageId 24960699
+ created 2009
+ revisionCount 556
+ dailyPageViews 538
+ appeared 2009
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 2018|Apress|Practical PHP 7, MySQL 8, and MariaDB Website Databases: A Simplified Approach to Developing Database-Driven Websites|West, Adrian W. and Prettyman, Steve|9781484238431
+ 2019-09-07T00:00:01Z|Independently published|Learning PyQt5 with MariaDB for Absolute Beginners: A Hands-On, Practical Database Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781691545476
+ 2019-11-25T00:00:01Z|Independently published|Think PyQt: A Smarter Way to Explore MariaDB and SQLite Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711653815
+ 2019-11-24T00:00:01Z|Independently published|Learn JDBC By Example: A Quick Start Guide to MariaDB and SQL Server Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711043302
+ 20150617|Packt Publishing|Getting Started with MariaDB - Second Edition|Daniel Bartholomew|9781782175711
+
+semanticScholar 0

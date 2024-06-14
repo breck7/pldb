@@ -1,0 +1,58 @@
+import ../code/conceptPage.scroll
+
+id observable-lang
+name Observable
+appeared 2017
+creators Mike Bostock
+tags pl
+website https://observablehq.com/
+latestVersion 5.9.8
+webRepl https://observablehq.com/@breck7/languages-with-central-package-repositories
+conceptDescription A partially open source derivative of Javascript modified for dataflow that powers the Observable data science web app.
+
+writtenIn javascript html json markdown yaml
+relatedConcepts javascript
+repoStats
+ firstCommit 2017
+ commits 927
+ committers 18
+ files 37
+ newestCommit 2024
+originCommunity Observable
+reference https://observablehq.com/@observablehq/observables-not-javascript
+
+example
+ {
+  let x = 0;
+  for (let i = 1; i <= 100; ++i) {
+    x += i;
+  }
+  return x;
+ }
+twitter https://twitter.com/observablehq
+
+githubRepo https://github.com/observablehq/runtime
+ firstCommit 2017
+ stars 798
+ forks 61
+ subscribers 29
+ created 2017
+ updated 2022
+ description The Observable dataflow runtime.
+ issues 16
+
+lineCommentToken //
+
+hasComments true
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName observablehq.com
+ registered 2017
+ awisRank
+  2022 38267
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2004|Cambridge University Press|Stochastic Control of Partially Observable Systems|Bensoussan, Alain|9780521611978

@@ -1,0 +1,51 @@
+AsciiDots
+=========
+
+AsciiDots is an open source esoteric programming language created in 2017 by Aaron Janse.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Aaron%20Janse
+
+#390 on PLDB
+7 Years Old
+
+git clone https://github.com/aaronduino/asciidots
+
+Try now: Web · TIO
+
+Esolang inspired by ASCII art
+
+- AsciiDots website
+ http://ajanse.me/asciidots/
+- AsciiDots is developed on GitHub and has 1,047 stars
+- AsciiDots is written in Markdown, Python, HTML, JavaScript, Nix, YAML, CSS, SCSS, Dockerfile, Bourne shell, reStructuredText
+- Explore AsciiDots snippets on Rosetta Code
+- AsciiDots on Esolang
+ https://esolangs.org/wiki/AsciiDots
+
+/-&amp;         `` This is where the program ends!
+|
+\-\ /-\
+  | | |
+/-/ | \-\
+\---/   |
+        |
+        \-. `` Here&#39;s where the program starts
+
+.-TEMPLATEquot;Hello World&quot;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+
+HackerNews discussions of AsciiDots
+===================================
+
+title|titleLink|date|score|comments
+Show HN: AsciiDots – a 2D esoteric language inspired by circuits|https://news.ycombinator.com/item?id=14947449|08/07/2017|148|33

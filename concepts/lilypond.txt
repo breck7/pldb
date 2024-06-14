@@ -1,0 +1,63 @@
+LilyPond
+========
+
+LilyPond is an open source programming language created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#494 on PLDB
+28 Years Old
+2k Repos
+
+LilyPond is a computer program and file format for music engraving. One of LilyPond's major goals is to produce scores that are engraved with traditional layout rules, reflecting the era when scores were engraved by hand. LilyPond is cross-platform, and is available for several common operating systems; released under the terms of the GNU General Public License, LilyPond is free software.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/LilyPond
+
+- LilyPond website
+ http://lilypond.org
+- LilyPond Wikipedia page
+ https://en.wikipedia.org/wiki/LilyPond
+- There are at least 2,059 LilyPond repos on GitHub
+- LilyPond first developed in https://gitlab.com/lilypond
+- The  Google BigQuery Public Dataset GitHub snapshot shows 263 users using LilyPond in 298 repos on GitHub
+- Explore LilyPond snippets on Rosetta Code
+- Pygments supports syntax highlighting for LilyPond
+- GitHub supports syntax highlighting for LilyPond
+- lilypond.org was registered in 1998
+- See also: (17 related languages)Scheme, METAFONT, PostScript, Python, Linux, FreeBSD, MusicXML, PDF, SVG, Guile, LaTeX, Tex, UTF-8, Emacs, Org, MediaWiki, Sibelius
+
+\markup { Hello World }
+
+&lt;score vorbis=&quot;1&quot;&gt;\relative c&#39; { f d f a d f e d cis a cis e a g f e }&lt;/score&gt;
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

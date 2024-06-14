@@ -1,0 +1,125 @@
+Boo
+===
+
+Boo is an open source programming language created in 2003 by Rodrigo B. De Oliveira.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rodrigo%20B.%20De%20Oliveira
+
+#341 on PLDB
+21 Years Old
+232 Repos
+
+Try now: Riju · TIO
+
+Boo is an object-oriented, statically typed, general-purpose programming language that seeks to make use of the Common Language Infrastructure's support for Unicode, internationalization, and web applications, while using a Python-inspired syntax and a special focus on language and compiler extensibility. Some features of note include type inference, generators, multimethods, optional duck typing, macros, true closures, currying, and first-class functions. Boo was one of the three scripting languages for the Unity game engine (Unity Technologies employed De Oliveira), until it was dropped in 2014 due to small userbase. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Boo_(programming_language)
+
+- Boo website
+ https://github.com/boo-lang
+- Boo Wikipedia page
+ https://en.wikipedia.org/wiki/Boo_(programming_language)
+- Boo docs
+ https://bootest.readthedocs.io/en/latest/
+- There are at least 232 Boo repos on GitHub
+- Boo first developed in The Boo Programming Language
+- The  Google BigQuery Public Dataset GitHub snapshot shows 208 users using Boo in 241 repos on GitHub
+- There are 23 Project Euler users using Boo
+- Explore Boo snippets on Rosetta Code
+- Boo appears in the TIOBE Index
+- Pygments supports syntax highlighting for Boo
+- GitHub supports syntax highlighting for Boo
+- See also: (10 related languages)C#, Python, Genie, Vala, Unicode, Unity, Fantom, Groovy, Nemerle, REBOL
+
+print &quot;Hello, world!&quot;
+
+print &quot;Hello World&quot;
+
+# Hello World in Boo
+print &quot;Hello World&quot;
+
+def fib():
+    a, b = 0L, 1L       # The &#39;L&#39;s make the numbers double word length (typically 64 bits)
+    while true:
+        yield b
+        a, b = b, a + b
+
+# Print the first 5 numbers in the series:
+for index as int, element in zip(range(5), fib()):
+    print(&quot;${index+1}: ${element}&quot;)
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # \d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0x[a-fA-F0-9]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  # 0\d+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

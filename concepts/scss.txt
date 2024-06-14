@@ -1,0 +1,115 @@
+SCSS
+====
+
+SCSS is a stylesheet language created in 2006 by Hampton Lintorn-Catlin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Hampton%20Lintorn-Catlin
+
+#400 on PLDB
+18 Years Old
+335k Repos
+
+Try now: Web · Riju
+
+- SCSS website
+ http://sass-lang.com/
+- There are at least 335,325 SCSS repos on GitHub
+- SCSS first developed in https://github.com/sass
+- SCSS on Twitter
+ https://twitter.com/sasscss
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using SCSS in 9k repos on GitHub
+- ANTLR grammar for SCSS
+- Monaco package for syntax highlighting SCSS
+- Pygments supports syntax highlighting for SCSS
+- GitHub supports syntax highlighting for SCSS
+- sass-lang.com was registered in 2009
+- Read more about SCSS on the web: 1.
+ https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+- 31 languages in PLDB linking to SCSS: Ace Editor, AsciiDots, blockml, Bounce, cloc, dllup, Eiffel, flownote, Ibis, infusion-framework, jasmine, Jekyll, Ligo, Marp, mavo, Monaco Editor, mys, NGS, packagist-pm, PROMETHEUS, RMarkdown, Sibilant, SQRL, Statsplorer, Tao, tiledb, ToonTalk, UCG, verona, walt, xodio
+
+body:before {
+  content: &quot;Hello, world!&quot;;
+}
+
+body::before {
+    content: &quot;Hello World&quot;;
+}
+
+$blue: #3bbfce;
+$margin: 16px;
+
+.content-navigation {
+  border-color: $blue;
+  color:
+    darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+
+Language features
+======================================================
+
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  @mixin horizontal-list {
+    @include reset-list;
+  
+    li {
+      display: inline-block;
+      margin: {
+        left: -2px;
+        right: 2em;
+      }
+    }
+  }
+  nav ul {
+    @include horizontal-list;
+  }
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

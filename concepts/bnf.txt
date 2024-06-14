@@ -1,0 +1,42 @@
+BNF
+===
+
+BNF, aka Backus–Naur Form, is a grammar language created in 1956 by John Backus and Peter Naur.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221956%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Backus
+ https://pldb.io/concepts/../lists/creators.html#q=Peter%20Naur
+
+#486 on PLDB
+68 Years Old
+
+In computer science, Backus–Naur form or Backus normal form (BNF) is a notation technique for context-free grammars, often used to describe the syntax of languages used in computing, such as computer programming languages, document formats, instruction sets and communication protocols. They are applied wherever exact descriptions of languages are needed: for instance, in official language specifications, in manuals, and in textbooks on programming language theory. Many extensions and variants of the original Backus–Naur notation are used; some are exactly defined, including extended Backus–Naur form (EBNF) and augmented Backus–Naur form (ABNF).. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Backus–Naur_form
+
+- BNF Wikipedia page
+ https://en.wikipedia.org/wiki/Backus–Naur_form
+- BNF first developed in IBM
+- BNF on HOPL
+ https://hopl.info/showlanguage.prx?exp=1865
+- ANTLR grammar for BNF
+- Pygments supports syntax highlighting for BNF
+- See also: (18 related languages)ALGOL 58, Algol, ALGOL 60, Compiler-Compiler, Yacc, SYMBOL, ASCII, Regular Expressions, PL/I, PEG, ANTLR, Java, Haskell, Coco/R, GOLD, Bison, XPL, ISBN
+- 1 languages in PLDB linking to BNF: Grammar
+
+&lt;syntax&gt;         ::= &lt;rule&gt; | &lt;rule&gt; &lt;syntax&gt;
+ &lt;rule&gt;           ::= &lt;opt-whitespace&gt; &quot;&lt;&quot; &lt;rule-name&gt; &quot;&gt;&quot; &lt;opt-whitespace&gt; &quot;::=&quot; &lt;opt-whitespace&gt; &lt;expression&gt; &lt;line-end&gt;
+ &lt;opt-whitespace&gt; ::= &quot; &quot; &lt;opt-whitespace&gt; | &quot;&quot;
+ &lt;expression&gt;     ::= &lt;list&gt; | &lt;list&gt; &lt;opt-whitespace&gt; &quot;|&quot; &lt;opt-whitespace&gt; &lt;expression&gt;
+ &lt;line-end&gt;       ::= &lt;opt-whitespace&gt; &lt;EOL&gt; | &lt;line-end&gt; &lt;line-end&gt;
+ &lt;list&gt;           ::= &lt;term&gt; | &lt;term&gt; &lt;opt-whitespace&gt; &lt;list&gt;
+ &lt;term&gt;           ::= &lt;literal&gt; | &quot;&lt;&quot; &lt;rule-name&gt; &quot;&gt;&quot;
+ &lt;literal&gt;        ::= &#39;&quot;&#39; &lt;text1&gt; &#39;&quot;&#39; | &quot;&#39;&quot; &lt;text2&gt; &quot;&#39;&quot;
+ &lt;text1&gt;          ::= &quot;&quot; | &lt;character1&gt; &lt;text1&gt;
+ &lt;text2&gt;          ::= &quot;&quot; | &lt;character2&gt; &lt;text2&gt;
+ &lt;character&gt;      ::= &lt;letter&gt; | &lt;digit&gt; | &lt;symbol&gt;
+ &lt;letter&gt;         ::= &quot;A&quot; | &quot;B&quot; | &quot;C&quot; | &quot;D&quot; | &quot;E&quot; | &quot;F&quot; | &quot;G&quot; | &quot;H&quot; | &quot;I&quot; | &quot;J&quot; | &quot;K&quot; | &quot;L&quot; | &quot;M&quot; | &quot;N&quot; | &quot;O&quot; | &quot;P&quot; | &quot;Q&quot; | &quot;R&quot; | &quot;S&quot; | &quot;T&quot; | &quot;U&quot; | &quot;V&quot; | &quot;W&quot; | &quot;X&quot; | &quot;Y&quot; | &quot;Z&quot; | &quot;a&quot; | &quot;b&quot; | &quot;c&quot; | &quot;d&quot; | &quot;e&quot; | &quot;f&quot; | &quot;g&quot; | &quot;h&quot; | &quot;i&quot; | &quot;j&quot; | &quot;k&quot; | &quot;l&quot; | &quot;m&quot; | &quot;n&quot; | &quot;o&quot; | &quot;p&quot; | &quot;q&quot; | &quot;r&quot; | &quot;s&quot; | &quot;t&quot; | &quot;u&quot; | &quot;v&quot; | &quot;w&quot; | &quot;x&quot; | &quot;y&quot; | &quot;z&quot;
+ &lt;digit&gt;          ::= &quot;0&quot; | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot;
+ &lt;symbol&gt;         ::=  &quot;|&quot; | &quot; &quot; | &quot;-&quot; | &quot;!&quot; | &quot;#&quot; | &quot;TEMPLATEquot; | &quot;%&quot; | &quot;&amp;&quot; | &quot;(&quot; | &quot;)&quot; | &quot;*&quot; | &quot;+&quot; | &quot;,&quot; | &quot;-&quot; | &quot;.&quot; | &quot;/&quot; | &quot;:&quot; | &quot;;&quot; | &quot;&gt;&quot; | &quot;=&quot; | &quot;&lt;&quot; | &quot;?&quot; | &quot;@&quot; | &quot;[&quot; | &quot;\&quot; | &quot;]&quot; | &quot;^&quot; | &quot;_&quot; | &quot;`&quot; | &quot;{&quot; | &quot;}&quot; | &quot;~&quot;
+ &lt;character1&gt;     ::= &lt;character&gt; | &quot;&#39;&quot;
+ &lt;character2&gt;     ::= &lt;character&gt; | &#39;&quot;&#39;
+ &lt;rule-name&gt;      ::= &lt;letter&gt; | &lt;rule-name&gt; &lt;rule-char&gt;
+ &lt;rule-char&gt;      ::= &lt;letter&gt; | &lt;digit&gt; | &quot;-&quot;

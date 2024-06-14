@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id cor
+name cor
+appeared 2016
+creators Yosbel Marin
+tags pl
+website http://yosbelms.github.io/cor/
+latestVersion 0.12.0
+
+isOpenSource true
+writtenIn javascript html markdown css json yacc lex yaml svg bourne-shell
+compilesTo javascript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 419
+ committers 3
+ files 144
+ newestCommit 2016
+country United States
+originCommunity https://github.com/yosbelms/cor
+
+leachim6 Cor
+ filepath c/Cor.cor
+ fileExtensions cor
+ example
+  func main() console.log("Hello World")
+  
+
+githubRepo https://github.com/yosbelms/cor
+ stars 52
+ forks 3
+ subscribers 9
+ created 2015
+ updated 2022
+ firstCommit 2016
+ description Straightforward language for the Web.
+ issues 0
+
+printToken console.log
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 10555178|Show HN: Cor - the language of the web|2015-11-12 18:41:20 UTC|1447353680|yosbelms|7|4
+
+isbndb 0

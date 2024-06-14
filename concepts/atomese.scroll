@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id atomese
+name Atomese
+appeared 2007
+tags pl
+website https://wiki.opencog.org/w/Atomese
+conceptDescription Atomese was originally intended to be a language for knowledge representation (KR): that is, a way of encoding facts and hypothesis, in a machine-readable way, such that the knowledge can be manipulated, data-mined, reasoned with. This language subset was vaguely inspired by Prolog and Datalog. More correctly, it was constructed by layering concepts from mathematical logic onto a graph database: representing logical, symbolic statements as graphs.
+
+country Various
+originCommunity OpenCog Foundation
+reference https://arxiv.org/pdf/2004.05267.pdf
+reference https://opencog.org/
+
+example
+ (define find-animals
+   (BindLink
+     ;; The variable to be bound
+     (VariableNode "$var")
+     ;; The pattern to be searched for
+     (InheritanceLink
+        (VariableNode "$var")
+        (ConceptNode "animal")
+     )
+     ;; The value to be returned.
+     (VariableNode "$var")
+   )
+ )
+  
+ ;; Run the above pattern
+ (cog-bind find-animals)
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+semanticScholar 0

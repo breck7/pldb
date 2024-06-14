@@ -1,0 +1,163 @@
+Ceylon
+======
+
+Ceylon is an open source programming language created in 2011 by Gavin King.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Gavin%20King
+
+#261 on PLDB
+13 Years Old
+336 Repos
+
+git clone https://github.com/eclipse/ceylon
+
+Try now: Riju · TIO
+
+Ceylon is an object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat. Ceylon programs run on the Java virtual machine (JVM), and can be compiled to JavaScript. The language design focuses on source code readability, predictability, toolability, modularity, and metaprogrammability. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ceylon_(programming_language)
+
+- Ceylon website
+ http://ceylon-lang.org
+- Ceylon Wikipedia page
+ https://en.wikipedia.org/wiki/Ceylon_(programming_language)
+- Ceylon is developed on GitHub and has 387 stars
+- Ceylon docs
+ https://ceylon-lang.org/documentation/current/
+- There are at least 336 Ceylon repos on GitHub
+- Ceylon first developed in Red Hat
+- Ceylon is written in Java, JavaScript, XML, XSLT, Bourne shell, Gradle, Markdown, HTML, Groovy, CSS, DTD, JSON, Ini, Bash, Make, AsciiDoc, Perl, YAML
+- Ceylon on Twitter
+ https://twitter.com/ceylonlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using Ceylon in 167 repos on GitHub
+- There are 8 Project Euler users using Ceylon
+- Explore Ceylon snippets on Rosetta Code
+- Ceylon appears in the TIOBE Index
+- Ceylon LSP implementation
+- Pygments supports syntax highlighting for Ceylon
+- GitHub supports syntax highlighting for Ceylon
+- ceylon-lang.org was registered in 2011
+- See also: (11 related languages)JVM, JavaScript, Java, Scala, Smalltalk, ML, Lisp, Apache Maven, TypeScript, Dart, Fantom
+
+shared void run() {
+    print(&quot;Hello, world!&quot;);
+}
+
+shared void hello() {
+    print(&quot;Hello World&quot;);
+}
+
+// Hello world in Ceylon
+
+print(&quot;Hello, World!&quot;);
+
+&quot;Test function for Ceylon&quot;
+by (&quot;Enrique&quot;)
+shared void test() {
+    print(&quot;test&quot;);
+}
+
+&quot;Test class for Ceylon&quot;
+shared class Test(name) satisfies Comparable&lt;Test&gt; {
+    shared String name;
+    shared actual String string = &quot;Test ``name``.&quot;;
+
+    shared actual Comparison compare(Test other) {
+        return name&lt;=&gt;other.name;
+    }
+}
+
+/* The classic Hello World program */
+shared void run() {
+    print(&quot;Hello, World!&quot;);
+}
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // \$([01]{4})(_[01]{4})+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // \d{1,3}(_\d{3})+[kMGTP]?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

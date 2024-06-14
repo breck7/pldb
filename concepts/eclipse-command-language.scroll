@@ -1,0 +1,142 @@
+import ../code/conceptPage.scroll
+
+id eclipse-command-language
+name Eclipse Command Language
+appeared 2008
+tags pl
+aka ecl
+
+fileType text
+monaco ecl
+centralPackageRepositoryCount 0
+country Canada
+originCommunity Eclipse Foundation
+reference https://www.eclipse.org/rcptt/documentation/userguide/ecl/
+
+keywords __compressed__ after all and any as atmost before beginc best between case cluster compressed compression const counter csv default descend embed encoding encrypt end endc endembed endmacro enum escape except exclusive expire export extend fail few fileposition first flat forward from full function functionmacro group grouped heading hole ifblock import in inner interface internal joined keep keyed last left limit linkcounted literal little_endian load local locale lookup lzw macro many maxcount maxlength min skew module mofn multiple named namespace nocase noroot noscan nosort not noxpath of onfail only opt or outer overwrite packed partition penalty physicallength pipe prefetch quote record repeat retry return right right1 right2 rows rowset scan scope self separator service shared skew skip smart soapaction sql stable store terminator thor threshold timelimit timeout token transform trim type unicodeorder unordered unsorted unstable update use validate virtual whole width wild within wnotrim xml xpath
+
+lineCommentToken %
+multiLineCommentTokens /* */
+
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+hasConstants true
+hasFunctions true
+
+githubBigQuery Ecl
+ repos 24
+ users 24
+
+linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 10
+ commitCount 63
+ sampleCount 1
+ example
+  :- lib(ic).
+  
+  /**
+   * Question 1.11
+   * vabs(?Val, ?AbsVal)
+   */
+  vabs(Val, AbsVal):-
+  	AbsVal #> 0,
+  	(
+  		Val #= AbsVal
+  	;
+  		Val #= -AbsVal
+  	),
+  	labeling([Val, AbsVal]).
+  
+  /**
+   * vabsIC(?Val, ?AbsVal)
+   */
+  vabsIC(Val, AbsVal):-
+  	AbsVal #> 0,
+  	Val #= AbsVal or Val #= -AbsVal,
+  	labeling([Val, AbsVal]).
+  
+  /**
+   * Question 1.12
+   */
+  % X #:: -10..10, vabs(X, Y).
+  % X #:: -10..10, vabsIC(X, Y).
+  
+  /**
+   * Question 1.13
+   * faitListe(?ListVar, ?Taille, +Min, +Max)
+   */
+  faitListe([], 0, _, _):-!.
+  faitListe([First|Rest], Taille, Min, Max):-
+  	First #:: Min..Max,
+  	Taille1 #= Taille - 1,
+  	faitListe(Rest, Taille1, Min, Max).
+  
+  /**
+   * Question 1.14
+   * suite(?ListVar)
+   */
+  suite([Xi, Xi1, Xi2]):-
+  	checkRelation(Xi, Xi1, Xi2).
+  suite([Xi, Xi1, Xi2|Rest]):-
+  	checkRelation(Xi, Xi1, Xi2),
+  	suite([Xi1, Xi2|Rest]).
+  
+  /**
+   * checkRelation(?Xi, ?Xi1, ?Xi2)
+   */
+  checkRelation(Xi, Xi1, Xi2):-
+  	vabs(Xi1, VabsXi1),
+  	Xi2 #= VabsXi1 - Xi.
+  
+  /**
+   * Question 1.15
+   * checkPeriode(+ListVar).
+   */
+  % TODO Any better solution?
+  checkPeriode(ListVar):-
+  	length(ListVar, Length),
+  	Length < 10.
+  checkPeriode([X1, X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]):-
+  	X1 =:= X10,
+  	checkPeriode([X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]).
+  % faitListe(ListVar, 18, -9, 9), suite(ListVar), checkPeriode(ListVar). => 99 solutions
+  
+  
+  /**
+   * Tests
+   */
+  /*
+  vabs(5, 5). => Yes
+  vabs(5, -5). => No
+  vabs(-5, 5). => Yes
+  vabs(X, 5).
+  vabs(X, AbsX).
+  vabsIC(5, 5). => Yes
+  vabsIC(5, -5). => No
+  vabsIC(-5, 5). => Yes
+  vabsIC(X, 5).
+  vabsIC(X, AbsX).
+  
+  faitListe(ListVar, 5, 1, 3). => 243 solutions
+  faitListe([_, _, _, _, _], Taille, 1, 3). => Taille = 5 !!!!!!!!!!!!!!!!
+  
+  faitListe(ListVar, 18, -9, 9), suite(ListVar). => 99 solutions
+  */
+
+githubLanguage ECLiPSe
+ fileExtensions ecl
+ trendingProjectsCount 0
+ type programming
+ group prolog
+ aceMode prolog
+ tmScope source.prolog.eclipse
+ repos 0

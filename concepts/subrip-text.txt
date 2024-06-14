@@ -1,0 +1,260 @@
+SubRip Text
+===========
+
+SubRip Text is an application created in 2005.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1833 on PLDB
+19 Years Old
+522k Repos
+
+- There are at least 521,758 SubRip Text repos on GitHub
+- GitHub supports syntax highlighting for SubRip Text
+- Read more about SubRip Text on the web: 1.
+ https://en.wikipedia.org/wiki/SubRip
+
+168
+00:20:41,150 --&gt; 00:20:45,109
+- How did he do that?
+- Made him an offer he couldn&#39;t refuse.
+
+1
+00:00:01,250 --&gt; 00:00:03,740
+Adding NCL language.
+
+2
+00:00:04,600 --&gt; 00:00:08,730
+Thanks for the pull request! Do you know if these files are NCL too?
+
+3
+00:00:09,800 --&gt; 00:00:13,700
+Those are poorly-named documentation files for NCL functions.
+
+4
+00:00:14,560 --&gt; 00:00:17,200
+- What&#39;s better?
+- This is better.
+
+5
+00:00:18,500 --&gt; 00:00:23,000
+- Would it be correct to recognise these files as text?
+- Yes.
+
+6
+00:00:23,890 --&gt; 00:00:30,000
+In that case, could you add &quot;NCL&quot; to the text entry in languages.yml too?
+
+7
+00:00:30,540 --&gt; 00:00:35,250
+I added the example to &quot;Text&quot; and updated the license in the grammar submodule.
+
+8
+00:00:38,500 --&gt; 00:00:42,360
+Cloning the submodule fails for me in local with this URL.
+
+9
+00:00:42,360 --&gt; 00:00:45,250
+Could you use Git or HTTPS...?
+
+10
+00:00:46,810 --&gt; 00:00:50,000
+I updated the grammar submodule link to HTTPS.
+
+11
+00:00:51,100 --&gt; 00:00:57,000
+It&#39;s still failing locally. I don&#39;t think you can just update the .gitmodules file.
+
+12
+00:00:57,750 --&gt; 00:01:03,000
+You&#39;ll probably have to remove the submodule and add it again to be sure.
+
+13
+00:01:04,336 --&gt; 00:01:11,800
+- I&#39;ll see first if it&#39;s not an issue on my side...
+- I removed the submodule and added it back with HTTPS.
+
+14
+00:01:13,670 --&gt; 00:01:18,000
+I tested the detection of NCL files with 2000 samples.
+
+15
+00:01:18,000 --&gt; 00:01:25,000
+The Bayesian classifier doesn&#39;t seem to be very good at distinguishing text from NCL.
+
+16
+00:01:25,000 --&gt; 00:01:30,740
+We could try to improve it by adding more samples, or we can define a new heuristic rule.
+
+17
+00:01:31,300 --&gt; 00:01:36,200
+- Do you want me to send you the sample files?
+- Yes, please do.
+
+18
+00:01:37,500 --&gt; 00:01:39,500
+In your inbox.
+
+19
+00:01:41,285 --&gt; 00:01:48,216
+- So if I manually go through these and sort out the errors, would that help?
+- Not really.
+
+20
+00:01:48,540 --&gt; 00:01:55,145
+It&#39;s a matter of keywords so there&#39;s not much to do there except for adding new samples.
+
+21
+00:01:55,447 --&gt; 00:02:02,000
+If adding a few more samples doesn&#39;t improve things, we&#39;ll see how to define a new heuristic rule.
+
+22
+00:02:04,740 --&gt; 00:02:09,600
+- I added quite a few NCL samples.
+- That&#39;s a bit over the top, isn&#39;t it?
+
+23
+00:02:10,250 --&gt; 00:02:16,000
+We currently can&#39;t add too many samples because of #2117.
+
+24
+00:02:18,000 --&gt; 00:02:20,830
+(sigh) I decreased the number of added samples.
+
+25
+00:02:21,630 --&gt; 00:02:25,300
+Could you test the detection results in local with the samples I gave you?
+
+26
+00:02:26,000 --&gt; 00:02:28,670
+- What is the command to run that test?
+- Here...
+
+27
+00:02:28,716 --&gt; 00:02:38,650
+[Coding intensifies]
+
+28
+00:02:38,650 --&gt; 00:02:43,330
+It is getting hung up on a false detection of Frege in one of the Text samples.
+
+29
+00:02:43,540 --&gt; 00:02:46,115
+Do you have any suggestions for implementing a heuristic?
+
+30
+00:02:47,640 --&gt; 00:02:55,200
+#2441 should fix this. In the meantime, you can change this in &quot;test_heuristics.rb&quot;
+
+31
+00:02:55,165 --&gt; 00:02:57,240
+Why did you have to change this?
+
+32
+00:02:57,777 --&gt; 00:03:04,480
+- It doesn&#39;t work for me unless I do that.
+- Hum, same for me. Arfon, does it work for you?
+
+33
+00:03:04,920 --&gt; 00:03:08,830
+Requiring linguist/language doesn&#39;t work for me either.
+
+34
+00:03:09,300 --&gt; 00:03:13,885
+We restructured some of the requires a while ago and I think this is just out-of-date code.
+
+35
+00:03:14,065 --&gt; 00:03:20,950
+From a large sample of known NCL files taken from Github, it&#39;s now predicting with about 98% accuracy.
+
+36
+00:03:21,183 --&gt; 00:03:28,000
+For a large sample of other files with the NCL extension, it is around 92%.
+
+37
+00:03:27,880 --&gt; 00:03:30,950
+From those, nearly all of the errors come from one GitHub repository,
+
+38
+00:03:30,950 --&gt; 00:03:34,160
+and they all contain the text strings, &quot;The URL&quot; and &quot;The Title&quot;.
+
+39
+00:03:35,660 --&gt; 00:03:43,260
+- Do you mean 92% files correctly identified as text?
+- Yes, it correctly identifies 92% as text.
+
+40
+00:03:44,000 --&gt; 00:03:46,150
+I&#39;d really like to see this dramatically reduced.
+
+41
+00:03:46,150 --&gt; 00:03:51,150
+What happens if we reduce to around 5 NCL sample files?
+
+42
+00:03:51,150 --&gt; 00:03:52,600
+Does Linguist still do a reasonable job?
+
+43
+00:03:53,470 --&gt; 00:03:58,190
+I reduced it to 16 NCL samples and 8 text samples.
+
+44
+00:03:58,190 --&gt; 00:04:01,720
+It correctly classifies my whole set of known NCL files.
+
+45
+00:04:01,870 --&gt; 00:04:05,730
+I tried with 5 samples but could not get the same level of accuracy.
+
+46
+00:04:06,670 --&gt; 00:04:10,400
+It incorrectly classifies all of the NCL files in this GitHub repository.
+
+47
+00:04:11,130 --&gt; 00:04:14,660
+All of these files contain the text strings, &quot;THE_URL:&quot; and &quot;THE_TITLE:&quot;.
+
+48
+00:04:14,660 --&gt; 00:04:19,500
+It did not misclassify any other text-files with the extension NCL.
+
+49
+00:04:19,970 --&gt; 00:04:25,188
+With 100% accuracy? Does that mean it that the results are better with less samples??
+
+50
+00:04:25,610 --&gt; 00:04:31,190
+I also removed a sample text-file which should have been classified as an NCL file.
+
+51
+00:04:31,000 --&gt; 00:04:35,895
+I think that probably made most of the difference, although I didn&#39;t test it atomically.
+
+52
+00:04:35,895 --&gt; 00:04:38,370
+Okay, that makes more sense.
+
+53
+00:04:39,515 --&gt; 00:04:43,450
+I don&#39;t get the same results for the text files. Full results here.
+
+54
+00:04:44,650 --&gt; 00:04:50,000
+They all look correctly classified to me, except for the ones in Fanghuan&#39;s repository.
+
+55
+00:04:50,000 --&gt; 00:04:55,920
+I manually went through all of the ones where I didn&#39;t already know based on the filename or the repository owner.
+
+56
+00:04:56,526 --&gt; 00:05:00,000
+[Presses button] It now correctly classifies all of my test files.
+
+57
+00:05:00,000 --&gt; 00:05:05,970
+R. Pavlick, thanks for this. These changes will be live in the next release of Linguist. In the next couple of weeks.
+
+58
+00:05:05,970 --&gt; 00:05:07,450
+Great! Thanks.

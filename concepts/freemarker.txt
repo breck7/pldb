@@ -1,0 +1,63 @@
+FreeMarker
+==========
+
+FreeMarker is an open source template language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#882 on PLDB
+24 Years Old
+6k Repos
+
+FreeMarker is a free Java-based template engine, originally focusing on dynamic web page generation with MVC software architecture. However, it is a general purpose template engine, with no dependency on servlets or HTTP or HTML, and is thus often used for generating source code, configuration files or e-mails.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Apache_FreeMarker
+
+- FreeMarker Wikipedia page
+ https://en.wikipedia.org/wiki/Apache_FreeMarker
+- There are at least 5,703 FreeMarker repos on GitHub
+- FreeMarker first developed in https://freemarker.apache.org/mailing-lists.html
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using FreeMarker in 4k repos on GitHub
+- Monaco package for syntax highlighting FreeMarker
+- GitHub supports syntax highlighting for FreeMarker
+- See also: (5 related languages)Java, HTML, JSP, Velocity, Thymeleaf
+
+&lt;#ftl strip_text=true /&gt;
+
+&lt;#macro page title&gt;
+    &lt;!doctype html&gt;
+    &lt;html lang=&quot;${.lang}&quot;&gt;
+        &lt;head&gt;
+            &lt;title&gt;${title}&lt;/title&gt;
+            &lt;@metaTags /&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;#nested /&gt;
+            &lt;@footer /&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+&lt;/#macro&gt;
+
+&lt;#---
+  Default meta tags
+--&gt;
+&lt;#macro metaTags&gt;
+    &lt;#compress&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+        &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
+    &lt;/#compress&gt;
+&lt;/#macro&gt;
+
+&lt;#macro footer&gt;
+    &lt;p&gt;This page is using FreeMarker v${.version}&lt;/p&gt;
+&lt;/#macro&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;p&gt;Hello Joe! You have the following messages:
+  &lt;p&gt;&lt;b&gt;Tim:&lt;/b&gt; Please don&#39;t forget to bring the conference papers!&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Cindy:&lt;/b&gt; Can you give me a visit this afternoon?&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Richard:&lt;/b&gt; Don&#39;t forget the papers this time!&lt;/p&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;

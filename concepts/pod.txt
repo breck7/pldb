@@ -1,0 +1,79 @@
+Pod
+===
+
+Pod is a text markup language created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1116 on PLDB
+27 Years Old
+0 Repos
+
+Plain Old Documentation (pod) is a lightweight markup language used to document the Perl programming language.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Plain_Old_Documentation
+
+- Pod Wikipedia page
+ https://en.wikipedia.org/wiki/Plain_Old_Documentation
+- There are at least 0 Pod repos on GitHub
+- Pod first developed in https://www.perl.org
+- GitHub supports syntax highlighting for Pod
+- See also: (10 related languages)Perl, XML, Tex, Markdown, Parrot, Bash, TiddlyWiki, MediaWiki, ASCII, UTF-8
+- Read more about Pod on the web: 1.
+ https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentation%22/comp.lang.perl.misc/A9zVCf4UrIs/1hSITu_f4ckJ
+
+use strict;
+use warnings;
+package DZT::Sample;
+
+sub return_arrayref_of_values_passed {
+  my $invocant = shift;
+  return \@_;
+}
+
+1;
+
+=head1 NAME
+
+My::Module - An example module
+
+=head1 SYNOPSIS
+
+    use My::Module;
+    my $object = My::Module-&gt;new();
+    print $object-&gt;as_string;
+
+=head1 DESCRIPTION
+
+This module does not really exist, it
+was made for the sole purpose of
+demonstrating how POD works.
+
+=head2 Methods
+
+=over 12
+
+=item C&lt;new&gt;
+
+Returns a new My::Module object.
+
+=item C&lt;as_string&gt;
+
+Returns a stringified representation of
+the object. This is mainly for debugging
+purposes.
+
+=back
+
+=head1 LICENSE
+
+This is released under the Artistic
+License. See L&lt;perlartistic&gt;.
+
+=head1 AUTHOR
+
+Juerd - L&lt;http://juerd.nl/&gt;
+
+=head1 SEE ALSO
+
+L&lt;perlpod&gt;, L&lt;perlpodspec&gt;
+
+=cut

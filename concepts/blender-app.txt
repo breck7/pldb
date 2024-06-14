@@ -1,0 +1,23 @@
+Blender
+=======
+
+Blender is an application created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1581 on PLDB
+26 Years Old
+
+Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, rendering, motion graphics, video editing and compositing. While current versions also feature an integrated game engine, the upcoming 2.8 release will remove it.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Blender_(software)
+
+- Blender Wikipedia page
+ https://en.wikipedia.org/wiki/Blender_(software)
+- Blender first developed in Blender Foundation
+
+import Blender
+from Blender import Scene, Text3d
+
+text = Text3d.New(&quot;Text&quot;)
+text.setText(&quot;Hello World&quot;)
+Scene.GetCurrent().objects.new(text)
+Blender.Redraw()

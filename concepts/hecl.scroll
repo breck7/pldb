@@ -1,0 +1,24 @@
+import ../code/conceptPage.scroll
+
+id hecl
+name hecl
+appeared 2004
+creators David N. Welton and Wolfgang Kechel
+tags pl
+website https://www.hecl.org/
+conceptDescription The Hecl Programming Language is a high-level, open source mobile scripting language inspired by the minimalism and power of tcl written in Java.
+
+relatedConcepts tcl java
+documentation https://www.hecl.org/docs/
+country United States
+originCommunity https://groups.google.com/g/hecl
+
+printToken puts
+
+hasPrintDebugging true
+hasLists true
+hasAssignment false
+hasIntegers true
+hasForEachLoops true
+hasForLoops true
+hasWhileLoops true

@@ -1,0 +1,72 @@
+import ../code/conceptPage.scroll
+
+id matplotlib
+name Matplotlib
+appeared 2003
+creators John D. Hunter
+tags dataVis library
+website http://matplotlib.org/
+latestVersion v3.9.0
+
+isOpenSource true
+writtenIn python svg restructuredtext cpp yaml meson json html markdown css javascript csv jupyter-notebook bourne-shell tex objective-c toml xml ini make c lua
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ newestCommit 2024
+ commits 50679
+ committers 1717
+ files 4548
+country Various
+originCommunity https://github.com/matplotlib
+
+twitter https://twitter.com/matplotlib
+
+githubRepo https://github.com/matplotlib/matplotlib
+ stars 15728
+ forks 6423
+ subscribers 583
+ created 2011
+ updated 2022
+ firstCommit 2003
+ description matplotlib: plotting with Python
+ issues 1829
+
+wikipedia https://en.wikipedia.org/wiki/Matplotlib
+ example
+  >>> from matplotlib import cm
+  >>> from mpl_toolkits.mplot3d import Axes3D
+  >>> import matplotlib.pyplot as plt
+  >>> import numpy as np
+  >>> fig = plt.figure()
+  >>> ax = fig.gca(projection='3d')
+  >>> X = np.arange(-5, 5, 0.25)
+  >>> Y = np.arange(-5, 5, 0.25)
+  >>> X, Y = np.meshgrid(X, Y)
+  >>> R = np.sqrt(X**2 + Y**2)
+  >>> Z = np.sin(R)
+  >>> surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm)
+  >>> plt.show()
+ related python numpy qt opengl matlab scipy gnuplot julia octave maxima excel-app jython sagemath
+ summary matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB, though its use is discouraged. SciPy makes use of matplotlib. matplotlib was originally written by John D. Hunter, has an active development community, and is distributed under a BSD-style license. Michael Droettboom was nominated as matplotlib's lead developer shortly before John Hunter's death in 2012. As of 23 June 2017, matplotlib 2.0.x supports Python versions 2.7 through 3.6. Matplotlib 1.2 is the first version of matplotlib to support Python 3.x. Matplotlib 1.4 is the last version of matplotlib to support Python 2.6.
+ pageId 2901907
+ dailyPageViews 218
+ created 2005
+ backlinksCount 85
+ revisionCount 241
+ appeared 2012
+
+domainName matplotlib.org
+ awisRank
+  2022 6017
+  2017 9197
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Matplotlib for Python Developers|2009|Sandro Tosi|10044410|3.19|21|5
+ Python and Matplotlib Essentials for Scientists and Engineers|2015|Matt A. Wood|46349225|2.00|2|2
+ Matplotlib for Python Developers: Effective techniques for data visualization with Python, 2nd Edition||Aldrin Yim|62830062|3.00|2|0
+ Python Data Analytics: Data Analysis and Science Using Pandas, Matplotlib and the Python Programming Language|2015|Fabio Nelli|46543455|2.00|1|1
+ Matplotlib for Python Developers: Effective Techniques for Data Visualization with Python, 2nd Edition||Aldrin Yim|62103804|0.0|0|0
+ Numerical Python: Scientific Computing and Data Science Applications with Numpy, Scipy and Matplotlib||Robert Johansson|66021570|0.0|0|0

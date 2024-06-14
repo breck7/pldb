@@ -1,0 +1,66 @@
+UML
+===
+
+UML, aka Unified Modeling Language, is a xml format created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#250 on PLDB
+28 Years Old
+
+The Unified Modeling Language (UML) is a general-purpose, developmental, modeling language in the field of software engineering, that is intended to provide a standard way to visualize the design of a system. UML was originally motivated by the desire to standardize the disparate notational systems and approaches to software design developed by Grady Booch, Ivar Jacobson and James Rumbaugh at Rational Software in 1994–1995, with further development led by them through 1996. In 1997 UML was adopted as a standard by the Object Management Group (OMG), and has been managed by this organization ever since. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Unified_Modeling_Language
+
+- UML Wikipedia page
+ https://en.wikipedia.org/wiki/Unified_Modeling_Language
+- UML docs
+ https://www.uml-diagrams.org/
+- UML on HOPL
+ https://hopl.info/showlanguage.prx?exp=7130
+- See also: (2 related languages)BPMN, SysML
+- 1 languages in PLDB linking to UML: XUML
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;XMI xmi.version=&quot;1.2&quot; xmlns:UML=&quot;org.omg/UML/1.4&quot;&gt;
+ &lt;XMI.header&gt;
+  &lt;XMI.documentation&gt;
+   &lt;XMI.exporter&gt;ananas.org stylesheet&lt;/XMI.exporter&gt;
+  &lt;/XMI.documentation&gt;
+  &lt;XMI.metamodel xmi.name=&quot;UML&quot; xmi.version=&quot;1.4&quot;/&gt;
+ &lt;/XMI.header&gt;
+ &lt;XMI.content&gt;
+  &lt;UML:Model xmi.id=&quot;M.1&quot; name=&quot;address&quot; visibility=&quot;public&quot;
+              isSpecification=&quot;false&quot; isRoot=&quot;false&quot;
+              isLeaf=&quot;false&quot; isAbstract=&quot;false&quot;&gt;
+   &lt;UML:Namespace.ownedElement&gt;
+    &lt;UML:Class xmi.id=&quot;C.1&quot; name=&quot;address&quot; visibility=&quot;public&quot;
+               isSpecification=&quot;false&quot; namespace=&quot;M.1&quot; isRoot=&quot;true&quot;
+               isLeaf=&quot;true&quot; isAbstract=&quot;false&quot; isActive=&quot;false&quot;&gt;
+     &lt;UML:Classifier.feature&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.1&quot; name=&quot;name&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.2&quot; name=&quot;street&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.3&quot; name=&quot;zip&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.4&quot; name=&quot;region&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.5&quot; name=&quot;city&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+      &lt;UML:Attribute xmi.id=&quot;A.6&quot; name=&quot;country&quot; visibility=&quot;private&quot;
+                     isSpecification=&quot;false&quot; ownerScope=&quot;instance&quot;/&gt;
+     &lt;/UML:Classifier.feature&gt;
+    &lt;/UML:Class&gt;
+   &lt;/UML:Namespace.ownedElement&gt;
+  &lt;/UML:Model&gt;
+ &lt;/XMI.content&gt;
+&lt;/XMI&gt;
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example

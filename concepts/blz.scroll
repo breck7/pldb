@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id blz
+name blz
+appeared 2015
+tags pl
+website https://blazingk.in/blz
+
+writtenIn java markdown json bourne-shell python xml yaml dockerfile csv bash
+repoStats
+ firstCommit 2014
+ commits 538
+ committers 8
+ files 480
+ newestCommit 2021
+country United States
+
+example
+ import Lists
+ :main
+   # Print cubes of even numbers
+   evens = range(1000).filter!(x -> x % 2 == 0)
+   print(evens.map!(x -> x ** 3)
+ end
+
+githubRepo https://github.com/blazingkin/blz-ospl
+ stars 23
+ forks 0
+ subscribers 6
+ created 2014
+ updated 2021
+ description An open source programming language
+ issues 17
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false

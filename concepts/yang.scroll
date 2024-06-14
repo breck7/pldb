@@ -1,0 +1,109 @@
+import ../code/conceptPage.scroll
+
+id yang
+name YANG
+appeared 2014
+creators Tom Nadeau
+tags application
+
+isOpenSource true
+writtenIn html xml markdown json bourne-shell yaml csv python svg
+fileType text
+wordRank 9514
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 2778
+ committers 148
+reference https://tools.ietf.org/html/rfc7950
+
+pygmentsHighlighter YANG
+ filename yang.py
+ fileExtensions yang
+languageServerProtocolProject https://github.com/yang-tools/yang-lsp
+ writtenIn xtend
+
+githubRepo https://github.com/YangModels/yang
+ firstCommit 2014
+ stars 1206
+ forks 1069
+ subscribers 187
+ created 2014
+ updated 2022
+ description YANG modules from standards organizations such as the IETF, The IEEE, The Metro Ethernet Forum, open source such as Open Daylight or vendor specific modules
+ issues 26
+
+hasFloats true
+hasIntegers true
+
+linguistGrammarRepo https://github.com/DzonyKalafut/language-yang.git
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 1
+ commitCount 4
+ sampleCount 1
+ example
+  module sfc-lisp-impl {
+  
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:controller:config:sfc-lisp:impl";
+    prefix "sfc-lisp-impl";
+  
+    import config { prefix config; revision-date 2013-04-05; }
+    import rpc-context { prefix rpcx; revision-date 2013-06-17; }
+    import opendaylight-md-sal-binding { prefix mdsal; revision-date 2013-10-28; }
+  
+  
+    description
+        "This module contains the base YANG definitions for
+        sfc-lisp implementation.";
+  
+    revision "2015-04-27" {
+        description
+            "Initial revision.";
+    }
+  
+    // This is the definition of the service implementation as a module identity
+    identity sfc-lisp-impl {
+        base config:module-type;
+  
+        // Specifies the prefix for generated java classes.
+        config:java-name-prefix SfcLisp;
+    }
+  
+  
+    // Augments the 'configuration' choice node under modules/module.
+    augment "/config:modules/config:module/config:configuration" {
+      case sfc-lisp-impl {
+        when "/config:modules/config:module/config:type = 'sfc-lisp-impl'";
+  
+        //wires in the data-broker service
+        container data-broker {
+          uses config:service-ref {
+            refine type {
+                mandatory false;
+                config:required-identity mdsal:binding-async-data-broker;
+            }
+          }
+        }
+  
+        container rpc-registry {
+          uses config:service-ref {
+            refine type {
+                mandatory true;
+                config:required-identity mdsal:binding-rpc-registry;
+            }
+          }
+        }
+      }
+    }
+  }
+
+githubLanguage YANG
+ fileExtensions yang
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.yang
+ repos 0

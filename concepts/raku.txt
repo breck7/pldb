@@ -1,0 +1,151 @@
+Raku
+====
+
+Raku is a programming language created in 2015 by Larry Wall.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Larry%20Wall
+
+#421 on PLDB
+9 Years Old
+3k Repos
+
+Try now: TIO
+
+Raku is a member of the Perl family of programming languages. Formerly known as Perl 6, it was renamed in October 2019.While historically several interpreter and compiler implementations were being written, today only the Rakudo implementation is in active development. Raku introduces elements of many modern and historical languages. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Raku_(programming_language)
+
+- Raku website
+ https://www.raku.org/
+- Raku downloads page
+ https://raku.org/downloads/
+- Raku Wikipedia page
+ https://en.wikipedia.org/wiki/Raku_(programming_language)
+- There are at least 2,521 Raku repos on GitHub
+- Raku first developed in https://www.raku.org/community
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Raku in 2k repos on GitHub
+- GitHub supports syntax highlighting for Raku
+- raku.org was registered in 1999
+- 8 languages in PLDB linking to Raku: Ace Editor, Alma, cloc, Muldis, Pygments, Rakudo, Star, TestML
+
+grammar Parser {
+    rule  TOP  { I &lt;love&gt; &lt;lang&gt; }
+    token love { &#39;♥&#39; | love }
+    token lang { &lt; Raku Perl Rust Go Python Ruby &gt; }
+ }
+ 
+ say Parser.parse: &#39;I ♥ Raku&#39;;
+ # OUTPUT: ｢I ♥ Raku｣ love =&gt; ｢♥｣ lang =&gt; ｢Raku｣
+ 
+ say Parser.parse: &#39;I love Perl&#39;;
+ # OUTPUT: ｢I love Perl｣ love =&gt; ｢love｣ lang =&gt; ｢Perl｣
+ start { sleep 1.5; print &quot;hi&quot; }
+ await Supply.from-list(&lt;A B C D E F&gt;).throttle: 2, {
+     sleep 0.5;
+     .print
+ }
+ # OUTPUT: ABCDhiEF
+ # No floating point noise:
+ say 0.1 + 0.2 == 0.3;        # OUTPUT: True
+ say (1/13 + 3/7 + 3/8).perl; # OUTPUT:  &lt;641/728&gt;
+ # Infinite list of primes:
+ my @primes = ^∞ .grep: *.is-prime;
+ say &quot;1001ˢᵗ prime is @primes[1000]&quot;;
+ 
+ # Lazily read words from a file
+ .say for &#39;50TB.file.txt&#39;.IO.words;
+
+say &quot;Hello World&quot;;
+
+# used in t/spec/S11-modules/nested.t
+
+BEGIN { @*INC.push(&#39;t/spec/packages&#39;) };
+
+module A::A {
+    use A::B;
+}
+
+# vim: ft=perl6
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+  'Hello world'
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token say
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported ✓
+ Token 
+ Example
+  my &foo = &f ∘ &g;
+row
+ Feature Refinement Types
+ FeatureLink ../features/hasRefinementTypes.html
+ Supported ✓
+ Token 
+ Example
+  subset Color of Any where Color | CMYK_Color;
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

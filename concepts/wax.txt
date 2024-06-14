@@ -1,0 +1,124 @@
+Wax
+===
+
+Wax is a programming language created in 2020 by Lingdong Huang.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Lingdong%20Huang
+
+#1480 on PLDB
+4 Years Old
+
+git clone https://github.com/LingDong-/wax
+
+Try now: Web
+
+- Wax is developed on GitHub
+- Wax compiles to C or C++ or Java or TypeScript or Python or C# or Swift or Lua or WebAssembly
+- Wax is written in C, WebAssembly, JavaScript, Python, Markdown, HTML, C++, SVG, Swift, Java, Make, Bourne shell, C#, Lua, TypeScript
+
+Language features
+======================================================
+
+row
+ Feature Operators
+ FeatureLink ../features/hasOperators.html
+ Supported ✓
+ Token 
+ Example
+  ;; > = && || >= 
+  ;; + - * / ^ % & | ! ~ 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; a comment
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  (@define MY_CONSTANT 5)
+  (@if MY_CONSTANT 5
+      (print "yes, it's")
+      (print @MY_CONSTANT)
+  )
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported ✓
+ Token 
+ Example
+  (set y (? (= x 0) 1 2))
+row
+ Feature Prefix Notation
+ FeatureLink ../features/hasPrefixNotation.html
+ Supported ✓
+ Token 
+ Example
+  (+ 1 1)
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported ✓
+ Token 
+ Example
+  (struct point
+      (let x float)
+      (let y float)
+  )
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  (let x (arr (vec 3 float)))
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported ✓
+ Token 
+ Example
+  (let m (map str int) (alloc (map str int)))
+  
+  (set m "xyz" 123)
+  
+  (insert m "abc" 456) ; exactly same as 'set'
+  
+  (print (get m "xyz"))
+  
+  (remove m "xyz")
+  
+  (print (get m "xyz"))
+  ;^ if a value is not there, the "zero" value of the element type is returned
+  ; for numbers, 0; for compound types, null.
+  
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  (set x 42)
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  (let x int 42)

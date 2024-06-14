@@ -1,0 +1,395 @@
+import ../code/conceptPage.scroll
+
+id ruby
+name Ruby
+appeared 1995
+creators Yukihiro Matsumoto
+tags pl
+website https://www.ruby-lang.org
+spec https://www.iso.org/standard/59579.html
+blog https://www.ruby-lang.org/en/community/weblogs/
+releaseNotes https://www.ruby-lang.org/en/downloads/releases/
+download https://www.ruby-lang.org/en/downloads/
+latestVersion 3.3.1
+conference https://rubyconf.org RubyConf
+
+isOpenSource true
+writtenIn ruby c yaml markdown rust erb m4 json python bourne-shell assembly-language make perl bash scheme cpp javascript toml yacc css lisp awk xml csv diff d idl sed z-shell html dockerfile
+tryItOnline ruby
+fileExtensions rb
+visualParadigm false
+clocExtensions appraisals berksfile brewfile builder buildfile capfile dangerfile deliverfile eye fastfile gemfile gemfile.lock gemspec god guardfile irbrc jarfile jbuilder mavenfile mspec podfile podspec pryrc puppetfile rabl rake rb rbuild rbw rbx ru snapfile thor thorfile vagrantfile watchr
+fileType text
+wordRank 5813
+documentation https://www.ruby-lang.org/en/documentation/
+emailList https://www.ruby-lang.org/en/community/mailing-lists/
+faq https://www.ruby-lang.org/en/documentation/faq/
+antlr https://github.com/antlr/grammars-v4/tree/master/ruby
+monaco ruby
+codeMirror ruby
+rosettaCode http://www.rosettacode.org/wiki/Category:Ruby
+quineRelay Ruby
+replit https://repl.it/languages/ruby
+packageRepository https://rubygems.org/
+ubuntuPackage ruby
+repoStats
+ firstCommit 1998
+ commits 102768
+ committers 985
+ files 12153
+ newestCommit 2024
+country Japan
+originCommunity https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org/
+proposals https://bugs.ruby-lang.org/projects/ruby-master/wiki/FeatureProposals
+projectEuler Ruby
+ memberCount
+  2019 5407
+  2022 5435
+reference https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
+
+helloWorldCollection Ruby
+ # Hello World in Ruby
+ puts "Hello World!"
+ 
+pygmentsHighlighter Ruby
+ filename ruby.py
+ fileExtensions rb rbw Rakefile rake gemspec rbx duby Gemfile Vagrantfile
+rijuRepl https://riju.codes/ruby
+ example
+  puts "Hello, world!"
+  
+subreddit https://reddit.com/r/ruby
+ memberCount
+  2017 36676
+  2022 75926
+leachim6 Ruby
+ filepath r/Ruby.rb
+ fileExtensions rb
+ example
+  #!/usr/bin/env ruby
+  print "Hello World"
+  
+gource https://www.youtube.com/watch?v=-_y4y1o6YQY
+languageServerProtocolProject https://github.com/castwide/solargraph
+ writtenIn ruby
+languageServerProtocolProject https://github.com/mtsmfm/language_server-ruby
+ writtenIn ruby
+languageServerProtocolProject https://github.com/swistak35/orbacle
+ writtenIn ruby
+languageServerProtocolProject https://github.com/kwerle/ruby_language_server
+ writtenIn ruby
+compilerExplorer Ruby
+ example
+  # Type your code here, or load an example.
+  def square(num)
+    num * num
+  end
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/ruby
+ memberCount 705060
+ groupCount 932
+keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
+githubRepo https://github.com/ruby/ruby
+ stars 20194
+ forks 5296
+ subscribers 1140
+ created 2010
+ updated 2023
+ description The Ruby Programming Language
+ issues 374
+
+lineCommentToken #
+multiLineCommentTokens =begin =end
+printToken puts
+stringToken "
+booleanTokens true false
+
+hasVariableSubstitutionSyntax false
+hasEnums false
+hasDependentTypes false
+hasDisposeBlocks false
+hasStrings true
+ "hello world"
+hasRegularExpressionsSyntaxSugar true
+ puts "Hello World".match(/\w/)
+hasDuckTyping true
+hasIntegers true
+ pldb = 80766866
+hasBooleans true
+hasAssignment true
+ pldb = 80766866
+hasExceptions true
+ def hello
+  puts "Hello, World!"
+    # start an exception handler
+    begin
+        raise "This is an exception"
+    rescue => e
+        puts "Exception caught: #{e}"
+    end
+  end
+ hello
+hasFunctionOverloading false
+hasAsyncAwait false
+hasConstants true
+ # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
+ Name = "John"
+ # Not a constant
+ name = "John"
+hasClasses true
+ # A tiny Person class in Ruby:
+ class Person
+   attr_accessor :name, :age, :   # getter and setter methods
+   def initialize(name, age)
+     @name = name
+     @age = age
+   end
+ end
+ 
+ # Create a new Person object:
+ person = Person.new("John", 30)
+ puts person.name
+ puts person.age
+ 
+ # Change the age of the person:
+ person.age = 35
+ puts person.age
+hasComments true
+ # A comment
+hasMultiLineComments true
+ =begin
+ A comment.
+ =end
+hasGarbageCollection true
+hasGenerators true
+ # Generator from an Enumerator object
+ chars = Enumerator.new(['A', 'B', 'C', 'Z'])
+ 
+ 4.times { puts chars.next }
+ 
+ # Generator from a block
+ count = Enumerator.new do |yielder|
+   i = 0
+   loop { yielder.yield i += 1 }
+ end
+ 
+ 100.times { puts count.next }
+hasHereDocs true
+hasDirectives true
+ coding: UTF-8
+hasImports true
+ load 'filename.rb'
+ require 'filename'
+ require 'trig.rb'
+hasIterators true
+ (0...42).each do |n|
+   puts n
+ end
+hasMixins true
+ module A
+    def a1
+    end
+    def a2
+    end
+ end
+ module B
+    def b1
+    end
+    def b2
+    end
+ end
+ class Sample
+ include A
+ include B
+    def s1
+    end
+ end
+ samp = Sample.new
+ samp.a1
+ samp.a2
+ samp.b1
+hasMultilineStrings true
+hasOperatorOverloading true
+hasPrintDebugging true
+ puts "Hi"
+hasLineComments true
+ # A comment
+hasRangeOperators true
+ (3...6)
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+isCaseSensitive true
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+
+jupyterKernel https://github.com/SciRuby/iruby
+wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
+ example
+  "Hello, World!".in_blue
+   => "<span style=\"color: #00f\">Hello, World!</span>"
+ related rails c yarv jruby ada clu dylan eiffel lisp lua perl python smalltalk clojure coffeescript crystal d elixir falcon groovy ioke julia mirah nu rust swift unicode regex yaml json xml java csharp jvm llvmir javascript objective-c parrot-vm linux solaris
+ summary Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. According to its creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, including functional, object-oriented, and imperative. It also has a dynamic type system and automatic memory management.
+ pageId 25768
+ dailyPageViews 1731
+ created 2001
+ backlinksCount 3048
+ revisionCount 2618
+ appeared 2007
+ fileExtensions rb
+
+hopl https://hopl.info/showlanguage.prx?exp=2458
+tiobe Ruby
+ currentRank 13
+pypl Ruby
+
+githubBigQuery Ruby
+ repos 374367
+ users 185514
+
+linguistGrammarRepo https://github.com/atom/language-ruby
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 76
+ commitCount 458
+ sampleCount 20
+ example
+  module Foo
+  end
+  
+
+isbndb 65
+ year|publisher|title|authors|isbn13
+ 2013|O'Reilly Media|Computer Science Programming Basics in Ruby: Exploring Concepts and Curriculum with Ruby|Frieder, Ophir and Frieder, Gideon and Grossman, David|9781449355975
+ 2008|O'Reilly Media|The Ruby Programming Language: Everything You Need to Know|Flanagan, David and Matsumoto, Yukihiro|9780596516178
+ 2010|Cengage Learning|Ruby Programming (Introduction to Programming)|Ford, Jr.  Jerry Lee|9781111222376
+ 2009|Pragmatic Bookshelf|Programming Ruby 1.9: The Pragmatic Programmers' Guide (Facets of Ruby)|Thomas, Dave and Fowler, Chad and Hunt, Andy|9781934356081
+ 2013|No Starch Press|Ruby Under a Microscope: An Illustrated Guide to Ruby Internals|Shaughnessy, Pat|9781593275273
+ 2006|Pragmatic Bookshelf|Enterprise Integration with Ruby|Schmidt, Maik|9780976694069
+ 2007|Apress|Practical Ruby Projects: Ideas for the Eclectic Programmer (Books for Professionals by Professionals)|Cyll, Christopher|9781590599112
+ 2006|Wrox|Beginning Ruby on Rails|Holzner, Steve|9780470069158
+ 2002|Syngress|Ruby Developers Guide|Syngress and Feldt, Robert and Johnson, Lyle and Ortiz, Jonothon|9781928994640
+ 2007|For Dummies|Ruby on Rails For Dummies|Burd, Barry|9780470081204
+ 2002|Sams Publishing|Sams Teach Yourself Ruby in 21 Days|Slagell, Mark|9780672322525
+ 2002|John Wiley & Sons|Making Use of Ruby w/WS|Mahadevan, Suresh|9780471219729
+ 2007|SitePoint|Build Your Own Ruby on Rails Web Applications|Lenz, Patrick|9780975841952
+ 2009|AddisonWesley Professional|Distributed Programming with Ruby|Bates, Mark|9780321638366
+ 2010|Pragmatic Bookshelf|Metaprogramming Ruby: Program Like the Ruby Pros|Paolo Perrotta|9781934356470
+ 20150424|Pearson Technology Group|Ruby on Rails Tutorial|Michael Hartl|9780134077789
+ 2012|Addison-Wesley Professional|Practical Object-Oriented Design in Ruby: An Agile Primer (Addison-Wesley Professional Ruby Series)|Metz, Sandi|9780132930888
+ 2008|Addison-Wesley Professional|Ruby Phrasebook|Clinton, Jason D|9780672328978
+ 2011|Addison-Wesley Professional|Ruby on Rails 3 Tutorial: Learn Rails by Example (Livelessons)|Hartl, Michael|9780132492546
+ 2011|O'Reilly Media|MacRuby: The Definitive Guide: Ruby and Cocoa on OS X|Aimonetti, Matt|9781449380373
+ 2014|Apress|Ruby Quick Syntax Reference|Clements, Matt|9781430265696
+ 2007|No Starch Press|Ruby by Example: Concepts and Code|Baird, Kevin C.|9781593271602
+ 2009|Wrox|Ruby on Rails for Microsoft Developers|Cangiano, Antonio|9780470374955
+ 2020|Apress|Beginning Ruby 3: From Beginner to Pro|DiLeo, Carleton|9781484263235
+ 20170111|Springer Nature|Beginning Ruby|Peter Cooper|9781430223641
+ 20070501|Springer Nature|Beginning Ruby|Kenneth Cooper|9781430203643
+ 2017|Independently published|Ruby For Beginners: Your Guide To Easily Learn Ruby Programming in 7 days|Academy, iCode|9781521367704
+ 20071015|Springer Nature|Practical Ruby for System Administration|Andre Ben-Hamou|9781430201946
+ 2008|Emereo Pty Ltd|Using Ruby On Rails For Web Development, Introduction Guide To Ruby On Rails: An Extensive Roundup Of 100 Ultimate Resources|Jacob White|9781921573125
+ 2021|Packt Publishing|Polished Ruby Programming: Build better software with more intuitive, maintainable, scalable, and high-performance Ruby code|Evans, Jeremy|9781801072724
+ 2007|Addison-Wesley Professional|Design Patterns in Ruby (Addison-Wesley Professional Ruby Series)|Olsen, Russ|9780132702508
+ 2018|Addison-Wesley Professional|Practical Object-Oriented Design: An Agile Primer Using Ruby|Metz, Sandi|9780134456478
+ 2007|Addison-Wesley Professional|Design Patterns in Ruby|Olsen, Russ|9780321490452
+ 2020|Addison-Wesley Professional|Ruby on Rails Tutorial|Michael, Hartl|9780136702696
+ 2015|O'Reilly Media|Ruby Cookbook: Recipes for Object-Oriented Scripting|Carlson, Lucas and Richardson, Leonard|9781449373719
+ 2011|Addison-Wesley Professional|Eloquent Ruby (Addison-Wesley Professional Ruby Series)|Olsen, Russ|9780321584106
+ 2007|Apress|Pro Active Record: Databases with Ruby and Rails (Expert's Voice)|Pytel, Chad and Yurek, Jonathan and Marshall, Kevin|9781590598474
+ 2010|Addison-Wesley Professional|Rails AntiPatterns: Best Practice Ruby on Rails Refactoring (Addison-Wesley Professional Ruby Series)|Pytel, Chad and Saleh, Tammer|9780132660068
+ 2013|Pragmatic Bookshelf|Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide (The Facets of Ruby)|Thomas, Dave and Hunt, Andy and Fowler, Chad|9781937785499
+ 2016-05-10T00:00:01Z|Codemy.com|Intro To Ruby Programming: Beginners Guide Series|Elder, John|9780692714416
+ 2015-03-02T00:00:01Z|Addison-Wesley Professional|Ruby Way, The: Solutions and Techniques in Ruby Programming (Addison-Wesley Professional Ruby Series)|Fulton, Hal and Arko, André|9780321714633
+ 2014|Pragmatic Bookshelf|Metaprogramming Ruby 2: Program Like the Ruby Pros (Facets of Ruby)|Perrotta, Paolo|9781941222126
+ 2014|No Starch Press|Ruby Wizardry: An Introduction to Programming for Kids|Weinstein, Eric|9781593275662
+ 2014|Addison-Wesley Professional|Effective Ruby: 48 Specific Ways to Write Better Ruby (Effective Software Development Series)|Jones, Peter J.|9780133847062
+ 2015|Addison-Wesley Professional|Ruby Way, The: Solutions and Techniques in Ruby Programming (Addison-Wesley Professional Ruby Series)|Fulton, Hal and Arko, André|9780132480376
+ 2016|Addison-Wesley Professional|Ruby on Rails Tutorial: Learn Web Development with Rails (Addison-Wesley Professional Ruby Series)|Hartl, Michael|9780134597508
+ 2010|Cengage Learning|Ruby Programming (Introduction to Programming)|Ford Jr., Jerry Lee|9781133172567
+ 2014|Addison-Wesley Professional|Learn Ruby the Hard Way: A Simple and Idiomatic Introduction to the Imaginative World Of Computational Thinking with Code (Zed Shaw's Hard Way Series)|Shaw, Zed A.|9780133135633
+ 2016|CreateSpace Independent Publishing Platform|Ruby: Learn Ruby in 24 Hours or Less - A Beginner’s Guide To Learning Ruby Programming Now (Ruby, Ruby Programming, Ruby Course)|Dwight, Robert|9781533191618
+ 2021|ND Publishing|Ruby Beginner's Crash Course: Beginner's Guide to Ruby Programming, Ruby On Rails & Rails Programming|Start Guides, Quick|9781777942809
+ 2009|Manning Publications|The Well-Grounded Rubyist: Covers Ruby 1.9.1|David A. Black|9781933988658
+ 2020|Apress|Learn Rails 6: Accelerated Web Development with Ruby on Rails|Notodikromo, Adam|9781484260258
+ 2018-02-04T00:00:01Z|CreateSpace Independent Publishing Platform|Ruby Programming: Basics to Advanced Concepts|Andahi, Alban|9781984935014
+ 2007|No Starch Press|Ruby by Example: Concepts and Code|Baird, Kevin C.|9781593271480
+ 2010|Addison-Wesley Professional|Ruby on Rails 3 Tutorial: Learn Rails by Example (Addison-Wesley Professional Ruby Series)|Hartl, Michael|9780132564199
+ 2019|Packt Publishing|The Ruby Workshop: Develop powerful applications by writing clean, expressive code with Ruby and Ruby on Rails|Paul, Akshat and Philips, Peter and Szabó, Dániel and Wallace, Cheyne|9781838648879
+ 2006|O'Reilly Media|Ruby Cookbook (Cookbooks (O'Reilly))|Carlson, Lucas and Richardson, Leonard|9780596523695
+ 2001|O'Reilly Media|Ruby In A Nutshell|Yukihiro Matsumoto|9780596002145
+ 2018|Apress|Learn Rails 5.2: Accelerated Web Development with Ruby on Rails|Wintermeyer, Stefan|9781484234891
+ 2015-10-21T00:00:01Z|CreateSpace Independent Publishing Platform|RUBY Beginner's Crash Course: Ruby for Beginner's Guide to Ruby Programming, Ruby On Rails & Rails Programming (Ruby, Operating Systems, Programming) (Volume 1)|Guides, Quick Start|9781518721649
+ 2009|Addison-Wesley Professional|Distributed Programming with Ruby (Addison-Wesley Professional Ruby Series)|Bates, Mark|9780321699930
+ 2009|O'Reilly Media|Head First Rails: A Learner's Companion to Ruby on Rails|Griffiths, David|9780596515775
+ 2009|O'Reilly Media|Ruby Best Practices: Increase Your Productivity - Write Better Code|Brown, Gregory T|9780596523008
+ 2006|Addison-Wesley Professional|The Ruby Way, Second Edition: Solutions and Techniques in Ruby Programming (2nd Edition)|Fulton, Hal|9780672328848
+ 2006|Manning Publications|Ruby for Rails: Ruby Techniques for Rails Developers|David Black|9781932394696
+
+githubLanguage Ruby
+ fileExtensions rb builder eye fcgi gemspec god jbuilder mspec pluginspec podspec prawn rabl rake rbi rbuild rbw rbx ru ruby spec thor watchr
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  thepracticaldev dev.to https://github.com/thepracticaldev.png https://github.com/thepracticaldev/dev.to Ruby #701516 10232 1313 360 "Where programmers share ideas and help each other grow"
+  rails rails https://github.com/rails.png https://github.com/rails/rails Ruby #701516 44018 17771 334 "Ruby on Rails"
+  faker-ruby faker https://github.com/faker-ruby.png https://github.com/faker-ruby/faker Ruby #701516 8005 2100 122 "A library for generating fake data such as names, addresses, and phone numbers."
+  jekyll jekyll https://github.com/jekyll.png https://github.com/jekyll/jekyll Ruby #701516 38586 8424 318 "🌐 Jekyll is a blog-aware static site generator in Ruby"
+  rapid7 metasploit-framework https://github.com/rapid7.png https://github.com/rapid7/metasploit-framework Ruby #701516 17501 8594 283 "Metasploit Framework"
+  Shopify liquid https://github.com/Shopify.png https://github.com/Shopify/liquid Ruby #701516 7357 957 91 "Liquid markup language. Safe, customer facing template language for flexible web apps."
+  tootsuite mastodon https://github.com/tootsuite.png https://github.com/tootsuite/mastodon Ruby #701516 18765 3265 424 "Your self-hosted, globally interconnected microblogging community"
+  lynndylanhurley devise_token_auth https://github.com/lynndylanhurley.png https://github.com/lynndylanhurley/devise_token_auth Ruby #701516 2818 879 30 "Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth."
+  Homebrew homebrew-core https://github.com/Homebrew.png https://github.com/Homebrew/homebrew-core Ruby #701516 6353 6781 198 "🍻 Default formulae for the missing package manager for macOS"
+  plataformatec devise https://github.com/plataformatec.png https://github.com/plataformatec/devise Ruby #701516 20171 4823 118 "Flexible authentication solution for Rails with Warden."
+  github explore https://github.com/github.png https://github.com/github/explore Ruby #701516 1303 4960 74 "Community-curated topic and collection pages on GitHub"
+  fastlane fastlane https://github.com/fastlane.png https://github.com/fastlane/fastlane Ruby #701516 26631 4084 396 "🚀 The easiest way to automate building and releasing your iOS and Android apps"
+  orbitalindex awesome-space https://github.com/orbitalindex.png https://github.com/orbitalindex/awesome-space Ruby #701516 637 32 423 "🛰️🚀A list of awesome space-related packages and resources maintained by The Orbital Index"
+  discourse discourse https://github.com/discourse.png https://github.com/discourse/discourse Ruby #701516 28975 6539 249 "A platform for community discussion. Free, open, simple."
+  rest-client rest-client https://github.com/rest-client.png https://github.com/rest-client/rest-client Ruby #701516 4728 877 58 "Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions."
+  huginn huginn https://github.com/huginn.png https://github.com/huginn/huginn Ruby #701516 22091 2380 253 "Create agents that monitor and act on your behalf. Your agents are standing by!"
+  elastic logstash https://github.com/elastic.png https://github.com/elastic/logstash Ruby #701516 10512 2837 126 "Logstash - transport and process your logs, events, or other data"
+  mperham sidekiq https://github.com/mperham.png https://github.com/mperham/sidekiq Ruby #701516 9802 1694 71 "Simple, efficient background processing for Ruby"
+  solidusio solidus https://github.com/solidusio.png https://github.com/solidusio/solidus Ruby #701516 2706 798 77 "Solidus, Rails eCommerce System"
+  Homebrew brew https://github.com/Homebrew.png https://github.com/Homebrew/brew Ruby #701516 18868 4230 352 "🍺 The missing package manager for macOS (or Linux)"
+  education classroom https://github.com/education.png https://github.com/education/classroom Ruby #701516 1116 384 38 "GitHub Classroom automates repository creation and access control, making it easy for teachers to distribute starter code and collect assignments on GitHub."
+  thoughtbot factory_bot https://github.com/thoughtbot.png https://github.com/thoughtbot/factory_bot Ruby #701516 6596 1878 54 "A library for setting up Ruby objects as test data."
+  CocoaPods CocoaPods https://github.com/CocoaPods.png https://github.com/CocoaPods/CocoaPods Ruby #701516 11889 2130 89 "The Cocoa Dependency Manager."
+  ruby ruby https://github.com/ruby.png https://github.com/ruby/ruby Ruby #701516 16129 4314 138 "The Ruby Programming Language [mirror]"
+  sinatra sinatra https://github.com/sinatra.png https://github.com/sinatra/sinatra Ruby #701516 10680 1923 60 "Classy web-development dressed in a DSL (official / canonical repo)"
+ trendingProjectsCount 26
+ type programming
+ filenames .irbrc .pryrc .simplecov Appraisals Berksfile Brewfile Buildfile Capfile Dangerfile Deliverfile Fastfile Gemfile Guardfile Jarfile Mavenfile Podfile Puppetfile Rakefile Snapfile Steepfile Thorfile Vagrantfile buildfile
+ interpreters ruby macruby rake jruby rbx
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.ruby
+ aliases jruby or macruby or rake or rb or rbx
+ repos 2659551
+
+indeedJobs ruby engineer
+ 2017 8719
+linkedInSkill ruby
+ 2018 271878
+stackOverflowSurvey
+ 2021
+  users 5569
+  medianSalary 80000
+  fans 4942
+  percentageUsing 0.07
+
+semanticScholar 13
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2010|BioRuby: bioinformatics software for the Ruby programming language|10.1093/bioinformatics/btq475|186|10|Naohisa Goto and P. Prins and M. Nakao and R. Bonnal and J. Aerts and Toshiaki Katayama|6806fe4a47310f6961cdaeca17fca6aed513d33f
+ 2001|Programming ruby|10.1145/505482.505496|40|5|Parasuram Anantharam|07cf5fc8f6a8cd4fdc419e541042297ff32f7c60
+ 2012|FSelector: a Ruby gem for feature selection|10.1093/bioinformatics/bts528|35|5|Tiejun Cheng and Yanli Wang and S. Bryant|9f44aa75bf8d4bd691ad30a31d4ae836774d7b3d
+ 2008|A little language for surveys: constructing an internal DSL in Ruby|10.1145/1593105.1593181|31|1|H. C. Cunningham|735dcf869561bd8c1cbcd51ab04a838ef79a1e9e
+ 2009|Feature-oriented programming with Ruby|10.1145/1629716.1629721|27|1|S. Günther and Sagar Sunkle|0a5e41f0b40a14c679edf1c45742e5d40e34de9e
+ 2009|The ruby intermediate language|10.1145/1640134.1640148|25|4|Michael Furr and Jong-hoon An and J. Foster and M. Hicks|0b6b91b17263b8b275514c19d6d74606836dcd39
+ 2014|FlowR: aspect oriented programming for information flow control in ruby|10.1145/2577080.2577090|17|1|Thomas Pasquier and J. Bacon and B. Shand|88725c499c0b425fcaaf36de32cdd287386a9870
+ 2014|αRby - An Embedding of Alloy in Ruby|10.1007/978-3-662-43652-3_5|16|3|Aleksandar Milicevic and I. Efrati and D. Jackson|c6709b3b8420194bacc64e8f1bd1149cbbeaf710
+ 2008|A machine vision extension for the Ruby programming language|10.1109/ICINFA.2008.4608143|7|0|J. Wedekind and B. Amavasai and K. Dutton and M. Boissenin|a0ea79afc0f997062f6305877ec38684fe9c33b6
+ 2008|Language design and implementation using ruby and the interpreter pattern|10.1145/1352135.1352155|4|0|Ariel Ortiz|602a908e10c1e586a5962823bbe7a3b749d822fb
+ 2018|Specializing ropes for ruby|10.1145/3237009.3237026|2|0|Kevin Menard and Chris Seaton and Benoit Daloze|6fcf92f1bf8a95512a01c0fef1236ac2610299db
+ 2020|Let’s Get It Started: Installing Ruby|10.1007/978-1-4842-1278-3_1|1|0|Pete Cooper|56bfb401cd9a9183005b3aae84ec7ed4c8c6b49f
+ 2013|A machine vision extension to the Ruby programming language using OpenCV and FFI|10.1109/IVCNZ.2013.6727013|1|0|A. Marburg and M. Hayes and A. Bainbridge-Smith|07e2461bccbd4a17609d022518a82bdba691c21d

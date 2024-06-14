@@ -1,0 +1,68 @@
+Genie
+=====
+
+Genie is an open source programming language created in 2008 by Jamie McCracken.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jamie%20McCracken
+
+#704 on PLDB
+16 Years Old
+21 Repos
+
+Genie is a modern, general-purpose high-level programming language in active development since 2008. It was designed as an alternative, simpler and cleaner dialect for the Vala compiler, while preserving the same functionality of the Vala language. Genie uses the same compiler and libraries as Vala; the two can indeed be used alongside each other. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Genie_(programming_language)
+
+- Genie Wikipedia page
+ https://en.wikipedia.org/wiki/Genie_(programming_language)
+- There are at least 21 Genie repos on GitHub
+- Genie first developed in GNOME Foundation
+- The  Google BigQuery Public Dataset GitHub snapshot shows 17 users using Genie in 17 repos on GitHub
+- Explore Genie snippets on Rosetta Code
+- Genie on HOPL
+ https://hopl.info/showlanguage.prx?exp=8118
+- See also: (7 related languages)Python, Boo, D, Object Pascal, Vala, Java, C
+
+init
+ print( &quot;Hello, World!&quot; )
+
+[indent=2]
+init
+  print &quot;Hello World&quot;
+
+class Sample
+
+	def run()
+		stdout.printf(&quot;Hello, world!\n&quot;)
+
+init
+	var sample = new Sample()
+	sample.run()
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

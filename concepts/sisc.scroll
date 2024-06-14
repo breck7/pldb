@@ -1,0 +1,22 @@
+import ../code/conceptPage.scroll
+
+id sisc
+name SISC
+appeared 2007
+tags pl
+
+centralPackageRepositoryCount 0
+country United States
+originCommunity Indiana University
+reference https://www.semanticscholar.org/paper/SISC%3A-A-Complete-Scheme-Interpreter-in-Java-Miller/0e752abc43138fcb75ac4785a8abde65a18ff925
+
+wikipedia https://en.wikipedia.org/wiki/SISC
+ related java guile c
+ summary SISC is an R5RS Scheme implementation, which includes a full number tower, hygienic macros, proper tail recursion, and first class continuations. SISC is short for Second Interpreter of Scheme Code, in reference to its predecessor LISC, the Lightweight Interpreter of Scheme Code.SISC is free software, dual-licensed under the Mozilla Public License and the GNU General Public License, Version 2. It was developed by Scott G. Miller and Matthias Radestock.
+ backlinksCount 10
+ pageId 13363730
+ dailyPageViews 11
+ created 2007
+ appeared 2007
+
+hopl https://hopl.info/showlanguage.prx?exp=8646

@@ -1,0 +1,42 @@
+XPages
+======
+
+XPages is an application created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1165 on PLDB
+16 Years Old
+22 Repos
+
+XPages is an IBM extension of Java Server Faces with a server side JavaScript runtime and the built-in NoSQL database IBM Domino. It allows data from IBM Notes and Relational Databases to be displayed to browser clients on all platforms. The programming model is based on web development languages and standards including JavaScript, Ajax, Java, the Dojo Toolkit, Server-side JavaScript and JavaServer Faces. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XPages
+
+- XPages website
+ http://xpages.info/
+- XPages Wikipedia page
+ https://en.wikipedia.org/wiki/XPages
+- There are at least 22 XPages repos on GitHub
+- XPages on Twitter
+ https://twitter.com/xpagesinfo
+- The  Google BigQuery Public Dataset GitHub snapshot shows 22 users using XPages in 33 repos on GitHub
+- GitHub supports syntax highlighting for XPages
+- xpages.info was registered in 2010
+- See also: (3 related languages)JavaScript, HTML, Java
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;faces-config&gt;
+  &lt;faces-config-extension&gt;
+    &lt;namespace-uri&gt;http://www.ibm.com/xsp/custom&lt;/namespace-uri&gt;
+    &lt;default-prefix&gt;xc&lt;/default-prefix&gt;
+  &lt;/faces-config-extension&gt;
+  &lt;composite-component&gt;
+    &lt;component-type&gt;navbar&lt;/component-type&gt;
+    &lt;composite-name&gt;navbar&lt;/composite-name&gt;
+    &lt;composite-file&gt;/navbar.xsp&lt;/composite-file&gt;
+    &lt;composite-extension&gt;
+      &lt;designer-extension&gt;
+        &lt;in-palette&gt;true&lt;/in-palette&gt;
+      &lt;/designer-extension&gt;
+    &lt;/composite-extension&gt;
+  &lt;/composite-component&gt;
+&lt;/faces-config&gt;

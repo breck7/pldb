@@ -1,0 +1,36 @@
+import ../code/conceptPage.scroll
+
+id lexon
+name Lexon
+appeared 2018
+tags contractLanguage
+website http://lexon.tech/
+
+relatedConcepts solidity
+monaco lexon
+country Uruguay
+originCommunity https://gitlab.com/lexon-foundation
+
+example
+ LEX Escrow.
+ 
+ Chapter: Pay In.
+ A Payer pays an Amount into Escrow and appoints the Payee and the Arbiter.
+ 
+ Chapter: Pay Out.
+ The Arbiter or the Payer may pay the Escrow to the Payee.
+ 
+ Chapter: Pay Back.
+ The Arbiter or the Payee may pay the Escrow to the Payer.
+
+keywords lexon lex clause terms contracts may pay pays appoints into to
+
+lineCommentToken COMMENT
+
+hasLineComments true
+ COMMENT A comment
+hasComments true
+ COMMENT A comment
+
+domainName lexon.tech
+ registered 2018

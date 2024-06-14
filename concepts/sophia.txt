@@ -1,0 +1,84 @@
+Sophia
+======
+
+Sophia is a contract language created in 2018 by Robert Virding.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding
+
+#875 on PLDB
+6 Years Old
+
+git clone https://github.com/aeternity/aesophia
+
+ Stand alone compiler for the Sophia smart contract language
+
+- Sophia website
+ https://aeternity.com/aesophia
+- Sophia is developed on GitHub and has 42 stars
+- Sophia first developed in https://github.com/aeternity
+- Sophia is written in Erlang, Markdown, YAML, Reason, HTML, Python
+- Monaco package for syntax highlighting Sophia
+
+contract library entrypoint function stateful state hash signature tuple list address string bool int record datatype type option oracle oracle_query Call Bits Bytes Oracle String Crypto Address Auth Chain None Some bits bytes event let map private public true false var if else throw
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example

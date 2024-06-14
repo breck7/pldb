@@ -1,0 +1,251 @@
+QML
+===
+
+QML, aka Qt Modeling Language, is a programming language created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#205 on PLDB
+15 Years Old
+15k Repos
+
+QML (Qt Modeling Language) is a user interface markup language. It is a declarative language (similar to CSS and JSON) for designing user interface–centric applications. Inline JavaScript code handles imperative aspects. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/QML
+
+- QML website
+ http://qt-project.org/doc/qt-5/qmlapplications.html
+- QML Wikipedia page
+ https://en.wikipedia.org/wiki/QML
+- QML docs
+ https://doc.qt.io/qt-6/qtqml-documents-topic.html
+- There are at least 14,755 QML repos on GitHub
+- QML first developed in Qt Group plc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using QML in 5k repos on GitHub
+- Pygments supports syntax highlighting for QML
+- GitHub supports syntax highlighting for QML
+- See also: (3 related languages)JSON, JavaScript, Ring
+- 6 languages in PLDB linking to QML: Ace Editor, kumir, leo-editor, Opa, Pygments, score
+
+Item {
+    Rectangle {
+        id: myRect
+        width: 120
+        height: 100
+    }
+    Rectangle {
+        width: myRect.width
+        height: 200
+    }
+}
+
+/****************************************************************************
+**
+** Copyright (C) 2015 The Qt Company Ltd.
+** Contact: http://www.qt.io/licensing
+**
+** This file is part of the Qt Build Suite.
+**
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and The Qt Company. For licensing terms and
+** conditions see http://www.qt.io/terms-conditions. For further information
+** use the contact form at http://www.qt.io/contact-us.
+**
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 or version 3 as published by the Free
+** Software Foundation and appearing in the file LICENSE.LGPLv21 and
+** LICENSE.LGPLv3 included in the packaging of this file.  Please review the
+** following information to ensure the GNU Lesser General Public License
+** requirements will be met: https://www.gnu.org/licenses/lgpl.html and
+** http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+**
+** In addition, as a special exception, The Qt Company gives you certain additional
+** rights.  These rights are described in The Qt Company LGPL Exception
+** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+**
+****************************************************************************/
+
+import qbs 1.0
+import qbs.FileInfo
+import qbs.ModUtils
+
+Module {
+    property string buildVariant: &quot;debug&quot;
+    property bool enableDebugCode: buildVariant == &quot;debug&quot;
+    property bool debugInformation: (buildVariant == &quot;debug&quot;)
+    property string optimization: (buildVariant == &quot;debug&quot; ? &quot;none&quot; : &quot;fast&quot;)
+    readonly property stringList hostOS: undefined // set internally
+    property string hostOSVersion: {
+        if (hostOS &amp;&amp; hostOS.contains(&quot;osx&quot;)) {
+            return getNativeSetting(&quot;/System/Library/CoreServices/ServerVersion.plist&quot;, &quot;ProductVersion&quot;) ||
+                   getNativeSetting(&quot;/System/Library/CoreServices/SystemVersion.plist&quot;, &quot;ProductVersion&quot;);
+        } else if (hostOS &amp;&amp; hostOS.contains(&quot;windows&quot;)) {
+            var version = getNativeSetting(&quot;HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion&quot;, &quot;CurrentVersion&quot;);
+            return version + &quot;.&quot; + hostOSBuildVersion;
+        }
+    }
+
+    property string hostOSBuildVersion: {
+        if (hostOS.contains(&quot;osx&quot;)) {
+            return getNativeSetting(&quot;/System/Library/CoreServices/ServerVersion.plist&quot;, &quot;ProductBuildVersion&quot;) ||
+                   getNativeSetting(&quot;/System/Library/CoreServices/SystemVersion.plist&quot;, &quot;ProductBuildVersion&quot;);
+        } else if (hostOS.contains(&quot;windows&quot;)) {
+            return getNativeSetting(&quot;HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion&quot;, &quot;CurrentBuildNumber&quot;);
+        }
+    }
+
+    readonly property var hostOSVersionParts: hostOSVersion ? hostOSVersion.split(&#39;.&#39;).map(function(item) { return parseInt(item, 10); }) : []
+    readonly property int hostOSVersionMajor: hostOSVersionParts[0] || 0
+    readonly property int hostOSVersionMinor: hostOSVersionParts[1] || 0
+    readonly property int hostOSVersionPatch: hostOSVersionParts[2] || 0
+
+    property stringList targetOS: hostOS
+    property string pathListSeparator: hostOS.contains(&quot;windows&quot;) ? &quot;;&quot; : &quot;:&quot;
+    property string pathSeparator: hostOS.contains(&quot;windows&quot;) ? &quot;\\&quot; : &quot;/&quot;
+    property string profile
+    property stringList toolchain
+    property string architecture
+    property bool install: false
+    property string installSourceBase
+    readonly property string installRoot: undefined
+    property string installDir
+    property string installPrefix: &quot;&quot;
+    property path sysroot
+
+    PropertyOptions {
+        name: &quot;buildVariant&quot;
+        allowedValues: [&#39;debug&#39;, &#39;release&#39;]
+        description: &quot;name of the build variant&quot;
+    }
+
+    PropertyOptions {
+        name: &quot;optimization&quot;
+        allowedValues: [&#39;none&#39;, &#39;fast&#39;, &#39;small&#39;]
+        description: &quot;optimization level&quot;
+    }
+
+    validate: {
+        var validator = new ModUtils.PropertyValidator(&quot;qbs&quot;);
+        validator.setRequiredProperty(&quot;architecture&quot;, architecture,
+                                      &quot;you might want to re-run &#39;qbs-setup-toolchains&#39;&quot;);
+        validator.setRequiredProperty(&quot;hostOS&quot;, hostOS);
+        validator.setRequiredProperty(&quot;targetOS&quot;, targetOS);
+        if (hostOS &amp;&amp; (hostOS.contains(&quot;windows&quot;) || hostOS.contains(&quot;osx&quot;))) {
+            validator.setRequiredProperty(&quot;hostOSVersion&quot;, hostOSVersion,
+                                          &quot;could not detect host operating system version; &quot; +
+                                          &quot;verify that system files and registry keys have not &quot; +
+                                          &quot;been modified.&quot;);
+            if (hostOSVersion)
+                validator.addVersionValidator(&quot;hostOSVersion&quot;, hostOSVersion, 2, 4);
+
+            validator.setRequiredProperty(&quot;hostOSBuildVersion&quot;, hostOSBuildVersion,
+                                          &quot;could not detect host operating system build version; &quot; +
+                                          &quot;verify that system files or registry have not been &quot; +
+                                          &quot;tampered with.&quot;);
+        }
+
+        validator.addCustomValidator(&quot;architecture&quot;, architecture, function (value) {
+            return architecture === canonicalArchitecture(architecture);
+        }, &quot;&#39;&quot; + architecture + &quot;&#39; is invalid. You must use the canonical name &#39;&quot; +
+        canonicalArchitecture(architecture) + &quot;&#39;&quot;);
+
+        validator.validate();
+    }
+
+    // private properties
+    property var commonRunEnvironment: {
+        var env = {};
+        if (targetOS.contains(&quot;windows&quot;)) {
+            env[&quot;PATH&quot;] = [
+                FileInfo.joinPaths(installRoot, installPrefix)
+            ];
+        } else if (hostOS.contains(&quot;darwin&quot;) &amp;&amp; targetOS.contains(&quot;darwin&quot;)) {
+            env[&quot;DYLD_FRAMEWORK_PATH&quot;] = [
+                FileInfo.joinPaths(installRoot, installPrefix, &quot;Library&quot;, &quot;Frameworks&quot;),
+                FileInfo.joinPaths(installRoot, installPrefix, &quot;lib&quot;),
+                FileInfo.joinPaths(installRoot, installPrefix)
+            ].join(pathListSeparator);
+
+            env[&quot;DYLD_LIBRARY_PATH&quot;] = [
+                FileInfo.joinPaths(installRoot, installPrefix, &quot;lib&quot;),
+                FileInfo.joinPaths(installRoot, installPrefix, &quot;Library&quot;, &quot;Frameworks&quot;),
+                FileInfo.joinPaths(installRoot, installPrefix)
+            ].join(pathListSeparator);
+
+            if (targetOS.contains(&quot;ios-simulator&quot;) &amp;&amp; sysroot) {
+                env[&quot;DYLD_ROOT_PATH&quot;] = [sysroot];
+            }
+        } else if (hostOS.contains(&quot;unix&quot;) &amp;&amp; targetOS.contains(&quot;unix&quot;)) {
+            env[&quot;LD_LIBRARY_PATH&quot;] = [
+                FileInfo.joinPaths(installRoot, installPrefix, &quot;lib&quot;)
+            ];
+        }
+
+        return env;
+    }
+
+    // internal properties
+    readonly property string version: [versionMajor, versionMinor, versionPatch].join(&quot;.&quot;)
+    readonly property int versionMajor: undefined // set internally
+    readonly property int versionMinor: undefined // set internally
+    readonly property int versionPatch: undefined // set internally
+}
+
+MouseArea {
+     onPressed: console.log(&quot;mouse button pressed&quot;)
+ }
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0x[0-9a-fA-F]+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

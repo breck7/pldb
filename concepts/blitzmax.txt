@@ -1,0 +1,99 @@
+BlitzMax
+========
+
+BlitzMax is an open source programming language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#505 on PLDB
+10 Years Old
+219 Repos
+
+git clone https://github.com/blitz-research/blitzmax
+
+BlitzMax
+
+- BlitzMax is developed on GitHub and has 141 stars
+- There are at least 219 BlitzMax repos on GitHub
+- BlitzMax first developed in Blitz Research
+- BlitzMax is written in C, C++, Lua, Assembly language, Objective-C, HTML, Make, XML, CSS, Bourne shell, Objective C++, CMake, Ini, WebAssembly, Perl
+- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using BlitzMax in 52 repos on GitHub
+- Explore BlitzMax snippets on Rosetta Code
+- Pygments supports syntax highlighting for BlitzMax
+- GitHub supports syntax highlighting for BlitzMax
+
+SuperStrict
+
+Framework Brl.StandardIO
+
+Type TMyType
+	Field property:int
+
+	Function A:int(param:int)
+		&#39;do nothing
+	End Function
+
+	Method B:int(param:int)
+		&#39;do nothing
+	End Method
+End Type
+
+Global my:TMyType = new TMyType
+?Win32
+	my.A()
+	my.B()
+?Linux
+	my.B()
+	my.A()
+?
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example

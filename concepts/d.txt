@@ -1,0 +1,215 @@
+D
+=
+
+D is a programming language created in 2001 by Walter Bright and Andrei Alexandrescu.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Walter%20Bright
+ https://pldb.io/concepts/../lists/creators.html#q=Andrei%20Alexandrescu
+
+#55 on PLDB
+23 Years Old
+13k Repos
+
+Try now: Riju · TIO
+
+The D programming language is an object-oriented, imperative, multi-paradigm system programming language created by Walter Bright of Digital Mars and released in 2001. Bright was joined in the design and development effort in 2007 by Andrei Alexandrescu. Though it originated as a re-engineering of C++, D is a distinct language, having redesigned some core C++ features while also taking inspiration from other languages, notably Java, Python, Ruby, C#, and Eiffel. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/D_(programming_language)
+
+- D website
+ https://dlang.org
+- D downloads page
+ https://dlang.org/download.html
+- D Wikipedia page
+ https://en.wikipedia.org/wiki/D_(programming_language)
+- D docs
+ https://dlang.org/documentation.html
+- There are at least 13,224 D repos on GitHub
+- D first developed in Digital Mars
+- D on Twitter
+ https://twitter.com/d_programming
+- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using D in 7k repos on GitHub
+- Check out the 7 D meetup groups on Meetup.com.
+- There are 243 Project Euler users using D
+- Explore D snippets on Rosetta Code
+- D is supported by the GDB
+- D on HOPL
+ https://hopl.info/showlanguage.prx?exp=3173
+- D ranks #26 in the TIOBE Index
+- D Ubuntu package
+ https://packages.ubuntu.com/jammy/gdc
+- D LSP implementation
+- CodeMirror package for syntax highlighting D
+- Pygments supports syntax highlighting for D
+- GitHub supports syntax highlighting for D
+- D appears in the Quine Relay project
+- There is a central package repository for D
+- Release Notes for D
+ https://dlang.org/changelog/
+- Official Blog page for D
+ https://dlang.org/blog/
+- Frequently Asked Questions for D
+ https://dlang.org/articles/faq.html
+- dlang.org was registered in 2010
+- See also: (23 related languages)FreeBSD, Linux, C, C#, Eiffel, Java, Python, MiniD, Vala, Swift, Genie, Ruby, Assembly language, LLVM IR, CIL, Eclipse, Visual Studio, Emacs, Vim, TextMate, Visual Studio Code, GDB, UTF-8
+- 24 languages in PLDB linking to D: Alma, Chapel, DRAKON, dub-pm, Encore, Flow9, GCC, invokator, Iode, Java, Julia, mal, MongoDB, MonkeyX, Open Shading Language, PHP, Pony, PostgreSQL, Pygments, Python, Ruby, Rust, Swift, Volt
+
+// Type your code here, or load an example.
+int square(int num) {
+    return num * num;
+}
+
+import std.stdio;
+
+void main()
+{
+    writeln(&quot;Hello, world!&quot;);
+}
+
+// Hello World in D
+
+import std.stdio;
+
+void main()
+{
+   writefln(&quot;Hello World!&quot;);
+}
+
+unittest
+{
+}
+
+1 import std.stdio, std.algorithm, std.range, std.string;
+ 2
+ 3 void main()
+ 4 {
+ 5     dstring[][dstring] signs2words;
+ 6
+ 7     foreach(dchar[] w; lines(File(&quot;words.txt&quot;)))
+ 8     {
+ 9         w = w.chomp().toLower();
+10         immutable key = w.dup.sort().release().idup;
+11         signs2words[key] ~= w.idup;
+12     }
+13
+14     foreach(words; signs2words)
+15         if(words.length &gt; 1)
+16             writefln(words.join(&quot; &quot;));
+17 }
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[Bb][01_]+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F_]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[0-7_]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /+ +/
+ Example
+  /+ A comment
+  +/
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Templates
+ FeatureLink ../features/hasTemplates.html
+ Supported ✓
+ Token 
+ Example
+  template TCopy(T)
+  {
+      void copy(out T to, T from)
+      {
+          to = from;
+      }
+  }
+  int i;
+  TCopy!(int).copy(i, 3);
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

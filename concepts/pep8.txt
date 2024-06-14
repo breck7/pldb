@@ -1,0 +1,62 @@
+Pep8
+====
+
+Pep8 is an open source assembly language created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#947 on PLDB
+15 Years Old
+165 Repos
+
+git clone https://github.com/StanWarford/pep8
+
+Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warford, Fourth edition
+
+- Pep8 is developed on GitHub and has 20 stars
+- There are at least 165 Pep8 repos on GitHub
+- Pep8 first developed in Pepperdine University
+- Pep8 is written in C++, Qt, HTML, XML, JavaScript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Pep8 in 33 repos on GitHub
+- GitHub supports syntax highlighting for Pep8
+- Read more about Pep8 on the web: 1.
+ http://computersystemsbook.com/4th-edition/pep8/
+
+ BR main
+ num: .EQUATE 0
+ main: SUBSP 2,i
+ DECI num,s
+ if: LDA num,s
+ ANDA 0x0001,i
+ BRNE else
+ STRO even_msg,d
+ BR endIf
+ else: STRO odd_msg,d
+ endIf: ADDSP 2,i
+ STOP
+ odd_msg: .ASCII &quot;The number is: Odd\x00&quot;
+ even_msg: .ASCII &quot;The number is: Even\x00&quot;
+ .END
+
+_start:	LDA	0,i
+	LDX	0,i
+	LDA	20, i
+	ADDA	51, i
+	CPA	0,i
+	BRLT	s3
+	BR	s4
+s1:	LDBYTEA	s3, x
+	NOTA
+	STBYTEA s3, x
+	ADDX	1,i
+	CPX	12, i
+	BRNE	s1
+s2:	STOP
+s4:	LDA	31, d
+	LDX	50, d
+	RET0
+	STOP
+s3:	CPX	-27746, d
+	ANDX	-8241, i
+	SUBA	-12337, sxf
+	LDX	-12289, sx
+	.END

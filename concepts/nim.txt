@@ -1,0 +1,187 @@
+Nim
+===
+
+Nim is an open source programming language created in 2008 by Andreas Rumpf.
+ https://pldb.io/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/creators.html#q=Andreas%20Rumpf
+
+#46 on PLDB
+16 Years Old
+8k Repos
+
+git clone https://github.com/nim-lang/Nim
+
+Try now: Riju · TIO
+
+Nim (formerly named Nimrod) is an imperative, multi-paradigm, compiled programming language designed and developed by Andreas Rumpf. It is designed to be "efficient, expressive, and elegant", supporting metaprogramming, functional, message passing, procedural, and object-oriented programming styles by providing several features such as compile time code generation, algebraic data types, a foreign function interface (FFI) with C and compiling to JavaScript, C and C++.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Nim_(programming_language)
+
+- Nim website
+ https://nim-lang.org/
+- Nim Wikipedia page
+ https://en.wikipedia.org/wiki/Nim_(programming_language)
+- Nim is developed on GitHub and has 13,062 stars
+- Nim docs
+ https://nim-lang.org/documentation.html
+- There are at least 8,018 Nim repos on GitHub
+- Nim first developed in https://github.com/nim-lang
+- Nim compiles to C or C++ or Objective-C or JavaScript
+- Nim is written in Nim, Markdown, HTML, YAML, C, Bourne shell, JSON, reStructuredText, Python, CSS, Assembly language, CSV, SQL, Tex, Ini, XML, Bash
+- Nim on Twitter
+ https://twitter.com/nim_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 299 users using Nim in 472 repos on GitHub
+- There are 36 Project Euler users using Nim
+- Explore Nim snippets on Rosetta Code
+- Nim appears in the TIOBE Index
+- Nim Ubuntu package
+ https://packages.ubuntu.com/jammy/nim
+- Nim LSP implementation
+- GitHub supports syntax highlighting for Nim
+- Nim appears in the Quine Relay project
+- There is a central package repository for Nim
+- Official Blog page for Nim
+ https://nim-lang.org/blog.html
+- Frequently Asked Questions for Nim
+ https://nim-lang.org/faq.html
+- nim-lang.org was registered in 2014
+- See also: (25 related languages)Ada, Modula-3, Lisp, Object Pascal, Python, Oberon, C, JavaScript, Pascal, Delphi, C#, Go, Objective-C, iOS, Android, Git, JSON, OpenGL, PostgreSQL, MySQL, SQLite, Lua, Scala, D, Rust
+- Read more about Nim on the web: 1.
+ https://irclogs.nim-lang.org/01-07-2012.html
+- 13 languages in PLDB linking to Nim: Ace Editor, cloc, FlatBuffers, Flow9, mal, Nim, Nimskull, pipelines, Pygments, shiv, spry, Star, Xidoc
+
+# Type your code here, or load an example.
+proc square(num: int): int {.exportc.} =
+  num * num
+
+echo &quot;Hello, world!&quot;
+
+echo(&quot;Hello World&quot;)
+
+# Hello world in Nim
+
+echo &quot;Hello World&quot;
+
+# from: https://github.com/nim-lang/Nim/blob/27b081d1f77604ee47c886e69dbc52f53ea3741f/compiler/nimfix/nimfix.nim.cfg
+
+# Special configuration file for the Nim project
+# gc:markAndSweep
+
+hint[XDeclaredButNotUsed]:off
+path:&quot;$projectPath/..&quot;
+
+path:&quot;$lib/packages/docutils&quot;
+path:&quot;$nim&quot;
+
+define:useStdoutAsStdmsg
+symbol:nimfix
+define:nimfix
+
+cs:partial
+#define:useNodeIds
+define:booting
+define:noDocgen
+
+proc printf(formatstr: cstring) {.header: &quot;&lt;stdio.h&gt;&quot;, varargs.}
+
+printf(&quot;%s %d\n&quot;, &quot;foo&quot;, 5)
+
+Language features
+======================================================
+
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  let δ = 0.00001
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false on off
+ Example
+   let res = true
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token #[ ]#
+ Example
+  #[ A comment
+  ]#
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token echo
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  # Though they may be phased out:
+  # https://github.com/nim-lang/RFCs/issues/456
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+  import macros
+  dumpTree:
+   result = 10
+row
+ Feature Templates
+ FeatureLink ../features/hasTemplates.html
+ Supported ✓
+ Token 
+ Example
+  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+  template debug*(args: varargs[string, `importOnly
+
+]) =
+   if logLevel ✓
+  Token 
+  Example
+ row
+  Feature Gotos
+  FeatureLink ../features/hasGotos.html
+  Supported X
+  Token 
+  Example

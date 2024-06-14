@@ -1,0 +1,122 @@
+High Level Assembly
+===================
+
+High Level Assembly, aka High Level Assembly, is an open source assembly language created in 2011 by Randall Hyde.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Randall%20Hyde
+
+#771 on PLDB
+13 Years Old
+
+High Level Assembly (HLA) is an high-level assembly language developed by Randall Hyde. It allows the use of higher-level language constructs to aid both beginners and advanced assembly developers. It fully supports advanced data types and object-oriented programming. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/High_Level_Assembly
+
+- High Level Assembly website
+ https://plantation-productions.com/Webster/HighLevelAsm/index.html
+- High Level Assembly Wikipedia page
+ https://en.wikipedia.org/wiki/High_Level_Assembly
+- High Level Assembly first developed in Plantation Productions, Inc
+- Explore High Level Assembly snippets on Rosetta Code
+- See also: (15 related languages)Assembly language, Linux, FreeBSD, IA-32, Pascal, Ada, Modula-2, Microsoft Macro Assembler, Turbo Assembler, X86, C, Netwide Assembler, GNU Assembler, Common Object File Format, Extensible Linking Format
+- Read more about High Level Assembly on the web: 1.
+ https://sourceforge.net/projects/hlav1/
+
+procedure SetFormat;
+
+static
+    chr     :w.CHARRANGE;
+    chr2    :w.CHARRANGE;
+    cf      :w.CHARFORMAT;
+
+begin SetFormat;
+    
+    w.SendMessage(hwnd, w.EM_GETMODIFY,0,0);
+    push    (eax);
+    
+    w.SendMessage(hwnd, w.EM_EXGETSEL,0, &amp;chr);
+    w.SendMessage(hwnd, w.EM_HIDESELECTION, true,0);
+    mov (0, chr2.cpMin);
+    mov (-1,chr2.cpMax);
+    w.SendMessage(hwnd, w.EM_EXSETSEL,0,&amp;chr2);
+    mov (@size(cf), cf.cbSize);
+    mov (w.CFM_CHARSET | w.CFM_FACE | w.CFM_SIZE | w.CFM_COLOR, cf.dwMask);
+    mov (logfont.lfCharSet, al);
+    mov (al,cf.bCharSet);
+    mov (logfont.lfPitchAndFamily, al);
+    mov (al, cf.bPitchAndFamily);
+    w.lstrcpyn(cf.szFaceName,&amp;logfont.lfFaceName,w.LF_FACESIZE);
+    mov (logfont.lfHeight, eax);
+    neg (eax);
+    mov (15,ecx);
+    mul     (ecx);
+    mov (eax, cf.yHeight);
+    mov (rgb, cf.crTextColor);
+    w.SendMessage(hwnd, w.EM_SETCHARFORMAT, w.SCF_SELECTION,&amp;cf);
+    w.SendMessage(hREd, w.WM_SETFONT, hFont, true);
+    w.SendMessage(hREd, w.EM_SETMARGINS, w.EC_LEFTMARGIN,5);
+    pop (eax);
+    w.SendMessage(hwnd, w.EM_SETMODIFY, eax,0);
+    w.SendMessage(hwnd, w.EM_EXSETSEL,0,&amp;chr);
+    w.SendMessage(hwnd,w.EM_HIDESELECTION, false, 0);
+
+end SetFormat;
+
+Language features
+======================================================
+
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  // _SortCases_
+  //
+  //  This routine does a bubble sort on an array
+  // of _caseRecord_ objects.  It sorts in ascending
+  // order using the "value" field as the key.
+  //
+  // This is a good old fashioned bubble sort which
+  // turns out to be very efficient because:
+  //
+  //  (1) The list of cases is usually quite small, and
+  //  (2) The data is usually already sorted (or mostly sorted).
+  
+  macro _SortCases_( ary, size ):i, bnd, didswap, temp;
+  
+      ?bnd := size - 1;
+      ?didswap := true;
+      #while( didswap )
+      
+          ?didswap := false;
+          ?i := 0;
+          #while( i  ary[i+1].value )
+              
+                  ?temp := ary[i];
+                  ?ary[i] := ary[i+1];
+                  ?ary[i+1] := temp;
+                  ?didswap := true;
+                  
+              #endif
+              ?i := i + 1;
+              
+          #endwhile
+          ?bnd := bnd - 1;
+          
+      #endwhile;
+          
+      
+  endmacro;
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+  // comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

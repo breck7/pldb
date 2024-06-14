@@ -1,0 +1,43 @@
+Vely
+====
+
+Vely is a programming language created in 2022.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3508 on PLDB
+2 Years Old
+
+- Vely website
+ https://vely.dev/
+- vely.dev was registered in 2022
+- Read more about Vely on the web: 1.
+ https://news.ycombinator.com/item?id=32231417
+
+void list_employees() {
+    out-header default
+    @&lt;html&gt;&lt;body&gt;
+
+    char *header = make_header(); // write any C code
+    p-out header
+
+    // Create report in outmsg string and fill it with database query result
+    write-string define outmsg
+        // Get data from the database
+        run-query#get_emp@db=&quot;select name, salary from employees order by name&quot; output name, salary
+            @Name: &lt;&lt;query-result#get_emp, name&gt;&gt;
+            @&lt;br/&gt;
+            @Salary: &lt;&lt;query-result#get_emp, salary&gt;&gt;
+            @&lt;br/&gt;&lt;br/&gt;
+        end-query
+    end-write-string
+
+    // Write report to a file and then to the client
+    write-file &quot;employees&quot; from outmsg status define st
+    if (st&lt;0) {
+        @Error in writing file (&lt;&lt;pf-out &quot;%lld&quot;, st&gt;&gt;)
+        exit-request
+    } else {
+        p-out outmsg
+    }
+    @&lt;/body&gt;&lt;/html&gt;
+}

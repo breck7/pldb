@@ -1,0 +1,26 @@
+import ../code/conceptPage.scroll
+
+id srv
+name srv
+appeared 2010
+tags idl
+website http://wiki.ros.org/srv
+
+fileExtensions srv
+country United States
+originCommunity Open Source Robotics Foundation, Inc
+
+example
+ #request constants
+ int8 FOO=1
+ int8 BAR=2
+ #request fields
+ int8 foobar
+ another_pkg/AnotherMessage msg
+ ---
+ #response constants
+ uint32 SECRET=123456
+ #response fields
+ another_pkg/YetAnotherMessage val
+ CustomMessageDefinedInThisPackage value
+ uint32 an_integer

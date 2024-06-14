@@ -1,0 +1,214 @@
+Red
+===
+
+Red is an open source programming language created in 2011 by Nenad Rakocevic.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Nenad%20Rakocevic
+
+#100 on PLDB
+13 Years Old
+453 Repos
+
+git clone https://github.com/red/red
+
+Try now: Riju · TIO
+
+Red is a computer programming language. Red was made to overcome the limitations of the programming language Rebol. Introduced in 2011 by Nenad Rakocevic, Red is both an imperative and functional programming language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Red_(programming_language)
+
+- Red website
+ http://www.red-lang.org/
+- Red Wikipedia page
+ https://en.wikipedia.org/wiki/Red_(programming_language)
+- Red is developed on GitHub and has 4,845 stars
+- Red docs
+ https://www.red-lang.org/p/documentation.html
+- There are at least 453 Red repos on GitHub
+- Red first developed in https://github.com/red
+- Red is written in R, Java, Markdown, XML, YAML, C, HTML, Bourne shell, CSS, Dockerfile, Visual Basic, CSV
+- Red on Twitter
+ https://twitter.com/red_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 92 users using Red in 98 repos on GitHub
+- Explore Red snippets on Rosetta Code
+- Red appears in the TIOBE Index
+- Red LSP implementation
+- Pygments supports syntax highlighting for Red
+- GitHub supports syntax highlighting for Red
+- Official Blog page for Red
+ https://www.red-lang.org/
+- Frequently Asked Questions for Red
+ https://www.red-lang.org/2015/12/answers-to-community-questions.html
+- red-lang.org was registered in 2010
+- See also: (7 related languages)Linux, Scala, Lua, X86, ARM, FreeBSD, Android
+- 1 languages in PLDB linking to Red: Scroll Notation
+
+Red [Title: &quot;Main&quot;]
+
+print &quot;Hello, world!&quot;
+
+Red [Needs: &#39;View]
+view [text &quot;Hello World&quot;]
+
+Red/System [
+    Title:      &quot;Red/System example file&quot;
+    Purpose:    &quot;Just some code for testing Pygments colorizer&quot;
+    Language:   http://www.red-lang.org/
+]
+
+#include %../common/FPU-configuration.reds
+
+; C types
+
+#define time!                   long!
+#define clock!                  long!
+
+date!: alias struct! [
+    second                      [integer!]  ; 0-61 (60?)
+    minute                      [integer!]  ; 0-59
+    hour                        [integer!]  ; 0-23
+
+    day                         [integer!]  ; 1-31
+    month                       [integer!]  ; 0-11
+    year                        [integer!]  ; Since 1900
+
+    weekday                     [integer!]  ; 0-6 since Sunday
+    yearday                     [integer!]  ; 0-365
+    daylight-saving-time?       [integer!]  ; Negative: unknown
+]
+
+#either OS = &#39;Windows [
+    #define clocks-per-second   1000
+][
+    ; CLOCKS_PER_SEC value for Syllable, Linux (XSI-conformant systems)
+    ; TODO: check for other systems
+    #define clocks-per-second   1000&#39;000
+]
+
+#import [LIBC-file cdecl [
+
+    ; Error handling
+
+    form-error: &quot;strerror&quot; [  ; Return error description.
+        code            [integer!]
+        return:         [c-string!]
+    ]
+    print-error: &quot;perror&quot; [  ; Print error to standard error output.
+        string          [c-string!]
+    ]
+
+    ; Memory management
+
+    make: &quot;calloc&quot; [  ; Allocate zero-filled memory.
+        chunks          [size!]
+        size            [size!]
+        return:         [binary!]
+    ]
+    resize: &quot;realloc&quot; [  ; Resize memory allocation.
+        memory          [binary!]
+        size            [size!]
+        return:         [binary!]
+    ]
+ ]
+ 
+ JVM!: alias struct! [
+    reserved0                   [int-ptr!]
+    reserved1                   [int-ptr!]
+    reserved2                   [int-ptr!]
+    
+    DestroyJavaVM               [function! [[JNICALL] vm [JVM-ptr!] return: [jint!]]]
+    AttachCurrentThread         [function! [[JNICALL] vm [JVM-ptr!] penv [struct! [p [int-ptr!]]] args [byte-ptr!] return: [jint!]]]
+    DetachCurrentThread         [function! [[JNICALL] vm [JVM-ptr!] return: [jint!]]]
+    GetEnv                      [function! [[JNICALL] vm [JVM-ptr!] penv [struct! [p [int-ptr!]]] version [integer!] return: [jint!]]]
+    AttachCurrentThreadAsDaemon [function! [[JNICALL] vm [JVM-ptr!] penv [struct! [p [int-ptr!]]] args [byte-ptr!] return: [jint!]]]
+]
+
+ ;just some datatypes for testing:
+ 
+ #some-hash
+ 10-1-2013
+ quit
+ 
+ ;binary:
+ #{00FF0000}
+ #{00FF0000 FF000000}
+ #{00FF0000	FF000000} ;with tab instead of space
+ 2#{00001111}
+ 64#{/wAAAA==}
+ 64#{/wAAA A==} ;with space	 inside
+ 64#{/wAAA	A==} ;with tab inside
+ 
+ 
+ ;string with char
+ {bla ^(ff) foo}
+ {bla ^(( foo}
+ ;some numbers:
+ 12
+ 1&#39;000
+ 1.2
+ FF00FF00h
+ 
+ ;some tests of hexa number notation with not common ending
+ [ff00h ff00h] ff00h{} FFh&quot;foo&quot; 00h(1 + 2) (AEh)
+
+;normal words:
+foo char
+
+;get-word
+:foo
+ 
+;lit-word:
+&#39;foo &#39;foo
+
+to-integer foo
+foo/(a + 1)/b
+
+call/output reform [&#39;which interpreter] path: copy &quot;&quot;
+
+ version-1.1:   00010001h
+ 
+ #if type = &#39;exe [
+    push system/stack/frame                 ;-- save previous frame pointer
+    system/stack/frame: system/stack/top    ;-- @@ reposition frame pointer just after the catch flag
+]
+push CATCH_ALL                              ;-- exceptions root barrier
+push 0                                      ;-- keep stack aligned on 64-bit
+
+Red/System [Title: &quot;A factorial script&quot;]
+
+factorial: func [
+	x       [integer!]                   ; This is compulsory in Red/System
+	return: [integer!]                   ; This is compulsory in Red/System
+][
+	either x = 0 [1][x * factorial x - 1]
+]
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

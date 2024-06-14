@@ -1,0 +1,23 @@
+MathML
+======
+
+MathML is a xml format created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3043 on PLDB
+26 Years Old
+
+- MathML Wikipedia page
+ https://en.wikipedia.org/wiki/MathML
+- MathML first developed in World Wide Web Consortium
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE math PUBLIC &quot;-//W3C//DTD MathML 2.0//EN&quot;
+         &quot;http://www.w3.org/Math/DTD/mathml2/mathml2.dtd&quot;&gt;
+&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
+  &lt;mrow&gt;
+    &lt;mi&gt;a&lt;/mi&gt; &lt;mo&gt;&amp;InvisibleTimes;&lt;/mo&gt; &lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+    &lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo&gt;&amp;InvisibleTimes;&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;
+    &lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;
+  &lt;/mrow&gt;
+&lt;/math&gt;

@@ -1,0 +1,41 @@
+FLOW-MATIC
+==========
+
+FLOW-MATIC is a programming language created in 1955 by Grace Hopper.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221955%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Grace%20Hopper
+
+#1226 on PLDB
+69 Years Old
+
+FLOW-MATIC, originally known as B-0 (Business Language version 0), was the first English-like data processing language. It was developed for the UNIVAC I at Remington Rand under Grace Hopper during the period from 1955 until 1959. It had a strong influence on the development of COBOL.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/FLOW-MATIC
+
+- FLOW-MATIC Wikipedia page
+ https://en.wikipedia.org/wiki/FLOW-MATIC
+- FLOW-MATIC first developed in Remington Rand
+- FLOW-MATIC on HOPL
+ https://hopl.info/showlanguage.prx?exp=27
+- See also: (3 related languages)ARITH-MATIC, MATH-MATIC, COBOL
+
+(0)  INPUT INVENTORY FILE-A PRICE FILE-B ; OUTPUT PRICED-INV FILE-C UNPRICED-INV
+     FILE-D ; HSP D .
+ (1)  COMPARE PRODUCT-NO (A) WITH PRODUCT-NO (B) ; IF GREATER GO TO OPERATION 10 ;
+     IF EQUAL GO TO OPERATION 5 ; OTHERWISE GO TO OPERATION 2 .
+ (2)  TRANSFER A TO D .
+ (3)  WRITE-ITEM D .
+ (4)  JUMP TO OPERATION 8 .
+ (5)  TRANSFER A TO C .
+ (6)  MOVE UNIT-PRICE (B) TO UNIT-PRICE (C) .
+ (7)  WRITE-ITEM C .
+ (8)  READ-ITEM A ; IF END OF DATA GO TO OPERATION 14 .
+ (9)  JUMP TO OPERATION 1 .
+(10)  READ-ITEM B ; IF END OF DATA GO TO OPERATION 12 .
+(11)  JUMP TO OPERATION 1 .
+(12)  SET OPERATION 9 TO GO TO OPERATION 2 .
+(13)  JUMP TO OPERATION 2 .
+(14)  TEST PRODUCT-NO (B) AGAINST ; IF EQUAL GO TO OPERATION 16 ;
+     OTHERWISE GO TO OPERATION 15 .
+(15)  REWIND B .
+(16)  CLOSE-OUT FILES C ; D .
+(17)  STOP . (END)

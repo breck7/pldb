@@ -1,0 +1,60 @@
+exkited
+=======
+
+exkited is a template language created in 2018 by Brandon Barber.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Brandon%20Barber
+
+#1912 on PLDB
+6 Years Old
+
+git clone https://github.com/maelswarm/exkited
+
+A minimalistic templating language that lets you generate markup with JavaScript.
+
+- exkited website
+ https://exkited.com
+- exkited is developed on GitHub and has 4 stars
+- exkited first developed in https://exkited.com
+- exkited is written in JSON, JavaScript, Markdown, EJS
+- exkited.com was registered in 2020
+
+&lt;html&gt;
+    &lt;div class=&quot;title&quot;&gt;
+        &lt;@ return data.title @&gt; // A &#39;data&#39; object may be passed rendering.
+    &lt;/div&gt;
+    &lt;@
+        let result = &#39;&#39;;
+        for(let x=0;x&lt;10;x++) {
+            for(let i=0;i&lt;4;i++) {
+                for(let j=0;j&lt;4;j++){
+                    result += `&lt;div&gt;@{i+j}&lt;/div&gt;`;
+                }
+            }
+        }
+        return result;
+    @&gt;
+    &lt;div class=&quot;average-price&quot;&gt;
+        &lt;@ return data.prices.reduce((accum, val) =&gt; accum += val) / data.prices.length; @&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;day-of-week&quot;&gt;
+        &lt;@
+            switch(data.dayIdx) {
+                case 0:
+                return &#39;Sunday&#39;;
+                case 1:
+                return &#39;Monday&#39;;
+                case 2:
+                return &#39;Tuesday&#39;;
+                case 3:
+                return &#39;Wednesday&#39;;
+                case 4:
+                return &#39;Thursday&#39;;
+                case 5:
+                return &#39;Friday&#39;;
+                case 6:
+                return &#39;Saturday&#39;;
+            }
+        @&gt;
+    &lt;/div&gt;
+&lt;/html&gt;

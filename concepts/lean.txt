@@ -1,0 +1,142 @@
+Lean
+====
+
+Lean is an open source programming language created in 2015 by Leonardo de Moura.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Leonardo%20de%20Moura
+
+#112 on PLDB
+9 Years Old
+2k Repos
+
+git clone https://github.com/leanprover/lean
+
+Try now: TIO
+
+Lean Theorem Prover
+
+- Lean website
+ http://leanprover.github.io/
+- Lean is developed on GitHub and has 2,045 stars
+- Lean docs
+ https://leanprover.github.io/documentation/
+- There are at least 1,807 Lean repos on GitHub
+- Lean first developed in Microsoft Research
+- Lean is written in Lean, C++, CMake, Bourne shell, Markdown, Python, C, YAML, TOML, Tex, Perl, HTML, Bash, Lua, Lex
+- The  Google BigQuery Public Dataset GitHub snapshot shows 233 users using Lean in 265 repos on GitHub
+- Pygments supports syntax highlighting for Lean
+- GitHub supports syntax highlighting for Lean
+- 4 languages in PLDB linking to Lean: cloc, Koka, Lean, Pygments
+
+#print &quot;Hello World&quot;
+
+/-
+Copyright (c) 2014 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+
+Module: algebra.binary
+Authors: Leonardo de Moura, Jeremy Avigad
+
+General properties of binary operations.
+-/
+
+import logic.eq
+open eq.ops
+
+namespace binary
+  section
+    variable {A : Type}
+    variables (op₁ : A → A → A) (inv : A → A) (one : A)
+
+    local notation a * b := op₁ a b
+    local notation a ⁻¹  := inv a
+    local notation 1     := one
+
+    definition commutative := ∀a b, a * b = b * a
+    definition associative := ∀a b c, (a * b) * c = a * (b * c)
+    definition left_identity := ∀a, 1 * a = a
+    definition right_identity := ∀a, a * 1 = a
+    definition left_inverse := ∀a, a⁻¹ * a = 1
+    definition right_inverse := ∀a, a * a⁻¹ = 1
+    definition left_cancelative := ∀a b c, a * b = a * c → b = c
+    definition right_cancelative := ∀a b c, a * b = c * b → a = c
+
+    definition inv_op_cancel_left := ∀a b, a⁻¹ * (a * b) = b
+    definition op_inv_cancel_left := ∀a b, a * (a⁻¹ * b) = b
+    definition inv_op_cancel_right := ∀a b, a * b⁻¹ * b =  a
+    definition op_inv_cancel_right := ∀a b, a * b * b⁻¹ = a
+
+    variable (op₂ : A → A → A)
+
+    local notation a + b := op₂ a b
+
+    definition left_distributive := ∀a b c, a * (b + c) = a * b + a * c
+    definition right_distributive := ∀a b c, (a + b) * c = a * c + b * c
+  end
+
+  context
+    variable {A : Type}
+    variable {f : A → A → A}
+    variable H_comm : commutative f
+    variable H_assoc : associative f
+    infixl `*` := f
+    theorem left_comm : ∀a b c, a*(b*c) = b*(a*c) :=
+    take a b c, calc
+      a*(b*c) = (a*b)*c  : H_assoc
+        ...   = (b*a)*c  : H_comm
+        ...   = b*(a*c)  : H_assoc
+
+    theorem right_comm : ∀a b c, (a*b)*c = (a*c)*b :=
+    take a b c, calc
+      (a*b)*c = a*(b*c) : H_assoc
+        ...   = a*(c*b) : H_comm
+        ...   = (a*c)*b : H_assoc
+  end
+
+  context
+    variable {A : Type}
+    variable {f : A → A → A}
+    variable H_assoc : associative f
+    infixl `*` := f
+    theorem assoc4helper (a b c d) : (a*b)*(c*d) = a*((b*c)*d) :=
+    calc
+      (a*b)*(c*d) = a*(b*(c*d)) : H_assoc
+              ... = a*((b*c)*d) : H_assoc
+  end
+
+end binary
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token #print
+ Example

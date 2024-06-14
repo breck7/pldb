@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id specrtl
+name specrtl
+appeared 2011
+tags pl
+conceptDescription specRTL (Spec Register Transfer Language) is a language designed to replace the existing RTL form machine descriptions which along with C Code forms the backend of GCC.
+
+centralPackageRepositoryCount 0
+country India
+originCommunity Indian Institute of Technology, Bombay
+reference https://www.cse.iitb.ac.in/grc/software/specRTL/specRTL.pdf
+
+example
+ concrete *cmp_ccno_1.insn instantiates set_compare
+ {
+   root(reg(NULL:FLAGS_REG),0=nonimmediate_operand:SWI:",?m",
+ 1=const0_operand:SWI:"");
+ }
+ {:
+   "ix86_match_ccmode (insn, CCNOmode)"
+   "@
+   test{}\t%0, %0
+   cmp{}\t{%1, %0|%0,%1}"
+   [(set_attr "type" "test,icmp")
+   (set_attr "length_immediate" "0,1")
+   (set_attr "mode" "")]
+ :}

@@ -1,0 +1,70 @@
+ClojureScript
+=============
+
+ClojureScript is an open source programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#72 on PLDB
+13 Years Old
+
+git clone https://github.com/clojure/clojurescript
+
+Try now: Web · Riju
+
+Clojure to JS compiler
+
+- ClojureScript website
+ https://clojurescript.org/
+- ClojureScript is developed on GitHub and has 8,887 stars
+- ClojureScript first developed in https://github.com/clojure
+- ClojureScript compiles to JavaScript
+- ClojureScript is written in ClojureScript, Clojure, JavaScript, Bourne shell, HTML, Markdown, Bash, YAML, XML, CSS, PowerShell, JSON, SVG
+- First announcement of ClojureScript via blogPost
+- There are 2,985 members in the ClojureScript subreddit
+- Pygments supports syntax highlighting for ClojureScript
+- ClojureScript cheat sheet
+ http://cljs.info/cheatsheet/
+- clojurescript.org was registered in 2011
+- 5 languages in PLDB linking to ClojureScript: ClojureScript, datascript, mal, Pygments, Reason
+
+(println &quot;Hello, world!&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example

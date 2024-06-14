@@ -1,0 +1,86 @@
+BALGOL
+======
+
+BALGOL is a programming language created in 1959 by Bob Barton.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221959%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Bob%20Barton
+
+#1974 on PLDB
+65 Years Old
+
+- BALGOL first developed in Burroughs
+- Read more about BALGOL on the web: 1. 2.
+ https://datatron.blogspot.com/2018/08/balgol-burroughs-algebraic-compiler.html
+ https://www.digm.com/UNITE/2019/2019-Origins-Burroughs-Algol.pdf
+
+INTEGER I..., J..., K..., L..., M..., N...$
+BOOLEAN KEEP, LAST$
+REAL MAT..., JOULES$
+REAL OTHERWISE$
+FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+FUNCTION PYTHAGOREAN(A, B) = SQRT(A*2 + B*2)$
+FOR I = 1, 3, 5, 7, 11, (13, 7, 99), 101, (103, 1, 125)$
+   A(I) = I$
+
+UNTIL A &gt; 125 OR OUTTAHERE$
+   BEGIN
+   OUTTAHERE = A EQL 77$
+   A = A + 3
+   END$
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  ALPHA = BETA = GAMMA = 2DELTA + 1$
+row
+ Feature Expressions
+ FeatureLink ../features/hasExpressions.html
+ Supported ✓
+ Token 
+ Example
+  ALPHA + BETA / GAMMA
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+  FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example

@@ -1,0 +1,72 @@
+WebIDL
+======
+
+WebIDL is an interface design language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#917 on PLDB
+12 Years Old
+17 Repos
+
+Web IDL is an interface description language (IDL) format for describing application programming interfaces (APIs) that are intended to be implemented in web browsers.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Web_IDL
+
+- WebIDL Wikipedia page
+ https://en.wikipedia.org/wiki/Web_IDL
+- There are at least 17 WebIDL repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 117 users using WebIDL in 120 repos on GitHub
+- Pygments supports syntax highlighting for WebIDL
+- GitHub supports syntax highlighting for WebIDL
+- See also: (2 related languages)IDL specification language, JavaScript
+
+/* -*- Mode: linguist-disable-strategy-modeline-IDL; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * The origin of this IDL file is
+ * http://www.w3.org/TR/css3-animations/#animation-events-
+ * http://dev.w3.org/csswg/css3-animations/#animation-events-
+ *
+ * Copyright © 2012 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C
+ * liability, trademark and document use rules apply.
+ */
+
+[Constructor(DOMString type, optional AnimationEventInit eventInitDict)]
+interface AnimationEvent : Event {
+  readonly attribute DOMString animationName;
+  readonly attribute float     elapsedTime;
+  readonly attribute DOMString pseudoElement;
+};
+
+dictionary AnimationEventInit : EventInit {
+  DOMString animationName = &quot;&quot;;
+  float elapsedTime = 0;
+  DOMString pseudoElement = &quot;&quot;;
+};
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

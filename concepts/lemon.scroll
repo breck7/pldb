@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id lemon
+name Lemon
+appeared 1989
+ > Lemon was originally written by Richard Hipp sometime in the late 1980s on a Sun4 Workstation using K&R C. There was a companion LL(1) parser generator program named "Lime". The Lime source code has been lost.
+  The lemon.c source file was originally many separate files that were compiled together to generate the "lemon" executable. Sometime in the 1990s, the individual source code files were combined together into the current single large "lemon.c" source file. You can still see traces of original filenames in the code.
+  Since 2001, Lemon has been part of the SQLite project and the source code to Lemon has been managed as a part of the SQLite source tree in the following files:
+  https://sqlite.org/src/doc/trunk/doc/lemon.html
+creators Dwayne Richard Hipp
+tags grammarLanguage
+website https://www.hwaci.com/sw/lemon/
+conceptDescription The Lemon program is an LALR(1) parser generator. It takes a context free grammar and converts it into a subroutine that will parse a file using that grammar.
+
+isPublicDomain true
+writtenIn c
+compilesTo c
+influencedBy bison yacc
+documentation https://sqlite.org/src/doc/trunk/doc/lemon.html
+
+wikipedia https://en.wikipedia.org/wiki/Lemon_(parser_generator)

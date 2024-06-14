@@ -1,0 +1,50 @@
+BQN
+===
+
+BQN, aka Big Questions Notation, is a programming language created in 2020 by Marshall Lochbaum.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Marshall%20Lochbaum
+
+#735 on PLDB
+4 Years Old
+
+git clone https://github.com/mlochbaum/BQN
+
+An APL-like programming language. Self-hosted!
+
+- BQN website
+ https://mlochbaum.github.io/BQN/
+- BQN is developed on GitHub and has 587 stars
+- BQN docs
+ https://mlochbaum.github.io/BQN/doc/index.html
+- BQN first developed in https://github.com/mlochbaum/BQN/issues
+- BQN is written in HTML, Markdown, Vim script, JavaScript, XML, AutoHotkey, CSS, SVG
+
+#! /usr/bin/env bqn
+
+# Case conversion utilities
+case ← {
+  diff ← -´ &quot;Aa&quot;
+  Lower ⇐ -⟜diff
+  Upper ⇐ Lower⁼
+}
+
+hw ← &lt;˘ 2‿∘ ⥊ &quot;helloworld&quot;
+hw case.Upper⌾(⊑¨)↩
+•Out hw ↩ ∾ ⥊⍉ [hw, &quot;, &quot;‿&quot;!&quot;]  # Hello, World!
+
+# Split at spaces and repeated characters
+Split ← {
+  !1==𝕩 ⋄ (!2=•Type)¨𝕩
+  Proc ← {
+    · 𝕊 &#39; &#39;: spl⇐1 ;             # Space: break and delete it
+    prev Fn cur: ⟨spl,str⟩⇐
+      spl←0 ⋄ str←⟨cur⟩          # Include and don&#39;t break...
+      { prev=cur ? spl+↩1 ; @ }  # except at equal characters
+  }
+  GV‿GS ← {𝕏¨}¨ ⟨ {⟨s⇐str⟩:s;&quot;&quot;}
+                  {𝕩.spl} ⟩
+  r ← Proc{»𝔽¨⊢} 𝕩
+  (∾¨ GV ⊔˜ ·+`GS) r
+}
+•Show Split hw  # ⟨ &quot;Hel&quot; &quot;lo,&quot; &quot;World!&quot; ⟩

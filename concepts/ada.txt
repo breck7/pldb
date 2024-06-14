@@ -1,0 +1,366 @@
+Ada
+===
+
+Ada is a programming language created in 1980 by Jean Ichbiah.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jean%20Ichbiah
+
+#41 on PLDB
+44 Years Old
+5k Repos
+
+Try now: Riju
+
+Ada is a structured, statically typed, imperative, wide-spectrum, and object-oriented high-level computer programming language, extended from Pascal and other languages. It has built-in language support for design-by-contract, extremely strong typing, explicit concurrency, offering tasks, synchronous message passing, protected objects, and non-determinism. Ada improves code safety and maintainability by using the compiler to find errors in favor of runtime errors. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ada_(programming_language)
+
+- Ada website
+ http://www.adaic.org
+- Ada Wikipedia page
+ https://en.wikipedia.org/wiki/Ada_(programming_language)
+- Ada docs
+ https://pyjarrett.github.io/programming-with-ada/
+- Ada mailing list
+ http://www.ada-auth.org/comment.html
+- There are at least 4,785 Ada repos on GitHub
+- Ada first developed in CII Honeywell Bull
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Ada in 2k repos on GitHub
+- There are 8,055 members in the Ada subreddit
+- There are 129 Project Euler users using Ada
+- Explore Ada snippets on Rosetta Code
+- Ada is supported by the GDB
+- Ada on HOPL
+ https://hopl.info/showlanguage.prx?exp=840
+- Ada ranks #28 in the TIOBE Index
+- Ada Ubuntu package
+ https://packages.ubuntu.com/jammy/gnat
+- Pygments supports syntax highlighting for Ada
+- GitHub supports syntax highlighting for Ada
+- Ada appears in the Quine Relay project
+- Indeed.com has 2,184 matches for "ada developer".
+- adaic.org was registered in 1998
+- See also: (22 related languages)Apache Spark, Ravenscar profile, ALGOL 68, Pascal, Smalltalk, Java, Eiffel, Chapel, Nim, PL/SQL, PL/pgSQL, Ruby, Rust, Seed7, SQL/PSM, VHDL, Unicode, Lisp, SETL, Algol, ALGOL 60, APSE
+- 13 languages in PLDB linking to Ada: Ace Editor, Bazel, Eiffel, Felix, GAP, GCC, High Level Assembly, mal, POV-Ray SDL, Pygments, Racket, Snowball, Spark
+
+-- This pragma will remove the warning produced by the default
+-- CE filename and the procedure name differing,
+-- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName
+pragma Source_File_Name (Square, Body_File_Name =&gt; &quot;example.adb&quot;);
+
+-- Type your code here, or load an example.
+function Square(num : Integer) return Integer is
+begin
+    return num**2;
+end Square;
+
+-- Ada 2012 also provides Expression Functions
+-- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html)
+-- as a short hand for functions whose body consists of a
+-- single return statement. However they cannot be used as a
+-- compilation unit.
+-- function Square(num : Integer) return Integer is (num**2);
+
+with Ada.Text_IO;
+
+procedure Main is
+begin
+   Ada.Text_IO.Put_Line(&quot;Hello, world!&quot;);
+end Main;
+
+with Ada.Text_IO;
+
+procedure Hello_World is
+   use Ada.Text_IO;
+begin
+   Put_line (&quot;Hello World&quot;);
+end Hello_World;
+
+-- Hello World in Ada
+
+with Text_IO;
+procedure Hello_World is
+
+begin
+  Text_IO.Put_Line(&quot;Hello World!&quot;);
+end Hello_World;
+
+with Ada.Text_IO; use Ada.Text_IO;
+
+procedure Traffic is
+
+   type Airplane_ID is range 1..10;             -- 10 airplanes
+
+   task type Airplane (ID: Airplane_ID);        -- task representing airplanes, with ID as initialisation parameter
+   type Airplane_Access is access Airplane;     -- reference type to Airplane
+
+   protected type Runway is                     -- the shared runway (protected to allow concurrent access)
+      entry Assign_Aircraft (ID: Airplane_ID);  -- all entries are guaranteed mutually exclusive
+      entry Cleared_Runway (ID: Airplane_ID);
+      entry Wait_For_Clear;
+   private
+      Clear: Boolean := True;                   -- protected private data - generally more than just a flag...
+   end Runway;
+   type Runway_Access is access all Runway;
+
+   -- the air traffic controller task takes requests for takeoff and landing
+   task type Controller (My_Runway: Runway_Access) is
+      -- task entries for synchronous message passing
+      entry Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access);
+      entry Request_Approach(ID: in Airplane_ID; Approach: out Runway_Access);
+   end Controller;
+
+   --  allocation of instances
+   Runway1    : aliased Runway;              -- instantiate a runway
+   Controller1: Controller (Runway1&#39;Access); -- and a controller to manage it
+
+   ------ the implementations of the above types ------
+   protected body Runway is
+      entry Assign_Aircraft (ID: Airplane_ID)
+ when Clear is   -- the entry guard - calling tasks are blocked until the condition is true
+      begin
+       Clear := False;
+       Put_Line (Airplane_ID&#39;Image (ID) &amp; &quot; on runway &quot;);
+      end;
+
+      entry Cleared_Runway (ID: Airplane_ID)
+ when not Clear is
+      begin
+         Clear := True;
+         Put_Line (Airplane_ID&#39;Image (ID) &amp; &quot; cleared runway &quot;);
+      end;
+
+      entry Wait_For_Clear
+ when Clear is
+      begin
+         null;      -- no need to do anything here - a task can only enter if &quot;Clear&quot; is true
+      end;
+   end Runway;
+
+   task body Controller is
+   begin
+      loop
+         My_Runway.Wait_For_Clear;   -- wait until runway is available (blocking call)
+         select                      -- wait for two types of requests (whichever is runnable first)
+            when Request_Approach&#39;count = 0 =&gt;  -- guard statement - only accept if there are no tasks queuing on Request_Approach
+             accept Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access)
+             do                                 -- start of synchronized part
+               My_Runway.Assign_Aircraft (ID);  -- reserve runway (potentially blocking call if protected object busy or entry guard false)
+               Takeoff := My_Runway;            -- assign &quot;out&quot; parameter value to tell airplane which runway
+             end Request_Takeoff;               -- end of the synchronised part
+         or
+            accept Request_Approach (ID: in Airplane_ID; Approach: out Runway_Access) do
+               My_Runway.Assign_Aircraft (ID);
+               Approach := My_Runway;
+            end Request_Approach;
+         or                          -- terminate if no tasks left who could call
+            terminate;
+         end select;
+      end loop;
+   end;
+
+   task body Airplane is
+      Rwy : Runway_Access;
+   begin
+      Controller1.Request_Takeoff (ID, Rwy); -- This call blocks until Controller task accepts and completes the accept block
+      Put_Line (Airplane_ID&#39;Image (ID) &amp; &quot;  taking off...&quot;);
+      delay 2.0;
+      Rwy.Cleared_Runway (ID);               -- call will not block as &quot;Clear&quot; in Rwy is now false and no other tasks should be inside protected object
+      delay 5.0; -- fly around a bit...
+      loop
+         select   -- try to request a runway
+            Controller1.Request_Approach (ID, Rwy); -- this is a blocking call - will run on controller reaching accept block and return on completion
+            exit; -- if call returned we&#39;re clear for landing - leave select block and proceed...
+         or
+            delay 3.0;  -- timeout - if no answer in 3 seconds, do something else (everything in following block)
+            Put_Line (Airplane_ID&#39;Image (ID) &amp; &quot;   in holding pattern&quot;);  -- simply print a message
+         end select;
+      end loop;
+      delay 4.0;  -- do landing approach...
+      Put_Line (Airplane_ID&#39;Image (ID) &amp; &quot;            touched down!&quot;);
+      Rwy.Cleared_Runway (ID);  -- notify runway that we&#39;re done here.
+   end;
+
+   New_Airplane: Airplane_Access;
+
+begin
+   for I in Airplane_ID&#39;Range loop  -- create a few airplane tasks
+      New_Airplane := new Airplane (I); -- will start running directly after creation
+      delay 4.0;
+   end loop;
+end Traffic;
+
+abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
+
+Language features
+======================================================
+
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Fixed Point Numbers
+ FeatureLink ../features/hasFixedPoint.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9_]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9_]+\.[0-9_]*
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9_]+#[0-9a-f_\.]+#
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Text_IO.Put_Line
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  with Gnat.Io; use Gnat.Io;
+  procedure Numbers is
+     Score: Integer;
+     F: Float := 1.0;
+  begin
+     Score := 3 + 2#1011#;
+     Put(score);
+     New_Line;
+     Score := Score + 1_000_000;
+     Put(Score);
+     New_Line;
+  end Numbers;
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported ✓
+ Token 
+ Example
+  generic
+     Max_Size : Natural; -- a generic formal value
+     type Element_Type is private; -- a generic formal type; accepts any nonlimited type
+  package Stacks is
+     type Size_Type is range 0 .. Max_Size;
+     type Stack is limited private;
+     procedure Create (S : out Stack;
+                       Initial_Size : in Size_Type := Max_Size);
+     procedure Push (Into : in out Stack; Element : in Element_Type);
+     procedure Pop (From : in out Stack; Element : out Element_Type);
+     Overflow : exception;
+     Underflow : exception;
+  private
+     subtype Index_Type is Size_Type range 1 .. Max_Size;
+     type Vector is array (Index_Type range ) of Element_Type;
+     type Stack (Allocated_Size : Size_Type := 0) is record
+        Top : Index_Type;
+        Storage : Vector (1 .. Allocated_Size);
+     end record;
+  end Stacks;
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

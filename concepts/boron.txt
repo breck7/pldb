@@ -1,0 +1,109 @@
+Boron
+=====
+
+Boron is an open source programming language created in 2009 by Karl Robillard.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Karl%20Robillard
+
+#1460 on PLDB
+15 Years Old
+
+- Boron website
+ http://urlan.sourceforge.net/boron/
+
+Language features
+======================================================
+
+row
+ Feature Threads
+ FeatureLink ../features/hasThreads.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token " { } {{ }}
+ Example
+  "Hello world"
+  {He said "That looks good!"}
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+  {{
+    Line 1
+    Line 2
+  }}
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print probe
+ Example
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  my-list: [1 two 3.0 "four"]
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Homoiconicity
+ FeatureLink ../features/hasHomoiconicity.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+  catch [throw 22 print "You'll never see this."]
+  
+  if error? try [read %does_not_exist] [print "File not found"]
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported ✓
+ Token 
+ Example
+  write %helloworld.txt "Hello, world!^/"
+row
+ Feature Shebang
+ FeatureLink ../features/canDoShebang.html
+ Supported ✓
+ Token 
+ Example
+  #!/usr/bin/env boron

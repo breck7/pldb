@@ -1,0 +1,29 @@
+import ../code/conceptPage.scroll
+
+id procfile
+name Procfile
+appeared 2012
+tags pl
+website https://devcenter.heroku.com/articles/procfile#procfile-format
+
+country United States
+originCommunity Heroku, Inc
+
+pygmentsHighlighter Procfile
+ filename procfile.py
+ fileExtensions Procfile
+example
+ web: bundle exec rails server -p $PORT
+
+hasIntegers true
+
+githubBigQuery Procfile
+ repos 1041
+ users 904
+
+githubLanguage Procfile
+ type programming
+ filenames Procfile
+ aceMode batchfile
+ tmScope source.procfile
+ repos 536

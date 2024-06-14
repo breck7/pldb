@@ -1,0 +1,161 @@
+Alloy
+=====
+
+Alloy is a programming language created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#631 on PLDB
+27 Years Old
+759 Repos
+
+In computer science and software engineering, Alloy is a declarative specification language for expressing complex structural constraints and behavior in a software system. Alloy provides a simple structural modeling tool based on first-order logic. Alloy is targeted at the creation of micro-models that can then be automatically checked for correctness. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Alloy_(specification_language)
+
+- Alloy website
+ http://alloytools.org/
+- Alloy Wikipedia page
+ https://en.wikipedia.org/wiki/Alloy_(specification_language)
+- There are at least 759 Alloy repos on GitHub
+- Alloy first developed in Massachusetts Institute of Technology
+- The  Google BigQuery Public Dataset GitHub snapshot shows 84 users using Alloy in 90 repos on GitHub
+- Pygments supports syntax highlighting for Alloy
+- GitHub supports syntax highlighting for Alloy
+- alloytools.org was registered in 2017
+- See also: (1 related languages)Z notation
+
+// A file system object in the file system
+sig FSObject { parent: lone Dir }
+
+// A directory in the file system
+sig Dir extends FSObject { contents: set FSObject }
+
+// A file in the file system
+sig File extends FSObject { }
+
+// A directory is the parent of its contents
+fact { all d: Dir, o: d.contents | o.parent = d }
+
+// All file system objects are either files or directories
+fact { File + Dir = FSObject }
+
+// There exists a root
+one sig Root extends Dir { } { no parent }
+
+// File system is connected
+fact { FSObject in Root.*contents }
+
+// The contents path is acyclic
+assert acyclic { no d: Dir | d in d.^contents }
+
+// Now check it for a scope of 5
+check acyclic for 5
+
+// File system has one root
+assert oneRoot { one d: Dir | no d.parent }
+
+// Now check it for a scope of 5
+check oneRoot for 5
+
+// Every fs object is in at most one directory
+assert oneLocation { all o: FSObject | lone d: Dir | o in d.contents }
+
+// Now check it for a scope of 5
+check oneLocation for 5
+
+module examples/systems/file_system
+
+/*
+ * Model of a generic file system.
+ */
+
+abstract sig Object {}
+
+sig Name {}
+
+sig File extends Object {} { some d: Dir | this in d.entries.contents }
+
+sig Dir extends Object {
+  entries: set DirEntry,
+  parent: lone Dir
+} {
+  parent = this.~@contents.~@entries
+  all e1, e2 : entries | e1.name = e2.name =&gt; e1 = e2
+  this !in this.^@parent
+  this != Root =&gt; Root in this.^@parent
+}
+
+one sig Root extends Dir {} { no parent }
+
+lone sig Cur extends Dir {}
+
+sig DirEntry {
+  name: Name,
+  contents: Object
+} {
+  one this.~entries
+}
+
+/**
+ * all directories besides root have one parent
+ */
+pred OneParent_buggyVersion {
+    all d: Dir - Root | one d.parent
+}
+
+/**
+ * all directories besides root have one parent
+ */
+pred OneParent_correctVersion {
+    all d: Dir - Root | (one d.parent &amp;&amp; one contents.d)
+}
+
+/**
+ * Only files may be linked (that is, have more than one entry)
+ * That is, all directories are the contents of at most one directory entry
+ */
+pred NoDirAliases {
+    all o: Dir | lone o.~contents
+}
+
+check { OneParent_buggyVersion =&gt; NoDirAliases } for 5 expect 1
+
+check { OneParent_correctVersion =&gt; NoDirAliases } for 5 expect 0
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9]+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,61 @@
+OpenSCAD
+========
+
+OpenSCAD is an open source programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#497 on PLDB
+14 Years Old
+11k Repos
+
+Try now: Riju
+
+OpenSCAD is a free software application for creating solid 3D CAD (computer-aided design) objects. It is a script-only based modeller that uses its own description language; parts can be previewed, but it cannot be interactively selected or modified by mouse in the 3D view. An OpenSCAD script specifies geometric primitives (such as spheres, boxes, cylinders, etc.) and defines how they are modified and combined (for instance by intersection, difference, envelope combination and Minkowski sums) to render a 3D model. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/OpenSCAD
+
+- OpenSCAD Wikipedia page
+ https://en.wikipedia.org/wiki/OpenSCAD
+- There are at least 10,989 OpenSCAD repos on GitHub
+- OpenSCAD first developed in https://opencollective.com/openscad
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using OpenSCAD in 2k repos on GitHub
+- Explore OpenSCAD snippets on Rosetta Code
+- GitHub supports syntax highlighting for OpenSCAD
+- See also: (5 related languages)OpenGL, Linux, FreeBSD, IA-32, AutoCAD DXF
+- Read more about OpenSCAD on the web: 1.
+ https://en.wikipedia.org/wiki/OpenSCAD
+
+ cube(5);
+ x = 4+y;
+ rotate(40) square(5,10);
+ translate([10,5]) { circle(5); square(4); }
+ rotate(60) color(&quot;red&quot;) { circle(5); square(4); }
+ color(&quot;blue&quot;) { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
+
+echo(&quot;Hello, world!&quot;);
+
+// Simple sphere in OpenSCAD
+
+sphere( r=10 );
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

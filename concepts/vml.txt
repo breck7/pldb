@@ -1,0 +1,45 @@
+VML
+===
+
+VML, aka Vector Markup Language, is a xml format created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1877 on PLDB
+26 Years Old
+
+Vector Markup Language (VML) was an XML-based file format for two-dimensional vector graphics. VML was specified in Part 4 of the Office Open XML standards ISO/IEC 29500 and ECMA-376. According to the specification, VML is a deprecated format included in Office Open XML for legacy reasons only. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Vector_Markup_Language
+
+- VML Wikipedia page
+ https://en.wikipedia.org/wiki/Vector_Markup_Language
+- See also: (6 related languages)XML, Office Open XML, SVG, JavaScript, Microsoft Excel, HTML
+
+&lt;html xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot;&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            v:* { behavior: url(#default#VML); display: inline-block; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;table width=&quot;600&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border-collapse: collapse;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td style=&quot;width: 300px; height: 80px; background-image: url(&#39;http://placekitten.com/g/300/80&#39;);&quot;&gt;
+            &lt;!--[if gte mso 9]&gt;
+            &lt;v:image xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; id=&quot;theImage&quot; style=&#39;behavior: url(#default#VML); display: inline-block; position: absolute; width: 300px; height: 80px; top: 0; left: 0; border: 0; z-index: 1;&#39; src=&quot;http://placekitten.com/g/300/80&quot; /&gt;
+                &lt;v:shape xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; id=&quot;theText&quot; style=&#39;behavior: url(#default#VML); display: inline-block; position: absolute; width: 300px; height: 80px; top: -5; left: -10; border: 0; z-index: 2;&#39;&gt;
+                &lt;div&gt;
+             &lt;![endif]--&gt;
+             &lt;table width=&quot;300&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;border-collapse: collapse;&quot;&gt;
+                 &lt;tr&gt;
+                     &lt;td height=&quot;80&quot; align=&quot;center&quot; valign=&quot;top&quot; style=&quot;color:#ffffff;font-size:20px;&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/td&gt;
+                 &lt;/tr&gt;
+             &lt;/table&gt;
+             &lt;!--[if gte mso 9]&gt;
+                 &lt;/div&gt;
+                 &lt;/v:shape&gt;
+             &lt;![endif]--&gt;
+             &lt;/td&gt;
+         &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;

@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id balgol
+name BALGOL
+appeared 1959
+creators Bob Barton
+tags pl
+
+influencedBy algol-58 fortran
+originCommunity Burroughs
+reference https://datatron.blogspot.com/2018/08/balgol-burroughs-algebraic-compiler.html
+reference https://www.digm.com/UNITE/2019/2019-Origins-Burroughs-Algol.pdf
+
+example
+ INTEGER I..., J..., K..., L..., M..., N...$
+ BOOLEAN KEEP, LAST$
+ REAL MAT..., JOULES$
+ REAL OTHERWISE$
+ FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+ FUNCTION PYTHAGOREAN(A, B) = SQRT(A*2 + B*2)$
+ FOR I = 1, 3, 5, 7, 11, (13, 7, 99), 101, (103, 1, 125)$
+    A(I) = I$
+ 
+ UNTIL A > 125 OR OUTTAHERE$
+    BEGIN
+    OUTTAHERE = A EQL 77$
+    A = A + 3
+    END$
+
+hasIntegers true
+hasFloats true
+hasBooleans true
+hasLists true
+ ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+hasFunctions true
+ FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+hasExpressions true
+ ALPHA + BETA / GAMMA
+hasAssignment true
+ ALPHA = BETA = GAMMA = 2DELTA + 1$
+hasConditionals true
+ EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$

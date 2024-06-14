@@ -1,0 +1,48 @@
+import ../code/conceptPage.scroll
+
+id z-flat
+name Z-flat
+appeared 2021
+creators Adam Hutchings
+tags pl
+conceptDescription Z-flat is a compiled, statically-typed programming language. Its design goals are intuitive syntax, type-safety, and easy library management.
+
+writtenIn cpp c markdown cmake yaml bourne-shell
+fileExtensions zf
+repoStats
+ firstCommit 2021
+ commits 764
+ committers 4
+ files 88
+ newestCommit 2021
+
+example
+ ~/ factorial /~
+ 
+ ~ recursive implementation ~
+ factorial_r(x: int): int {
+     if (x < 2) {
+         return 1;
+     } else {
+         return x * factorial_r(x - 1);
+     }
+ }
+ 
+ ~ iterative implementation ~
+ factorial_i(x: int): int {
+     ret: int = 1;
+     loop(x): i: int {
+         ret *= (i + 1);
+     }
+     return ret;
+ }
+
+githubRepo https://github.com/adamhutchings/zflat
+ firstCommit 2021
+ stars 7
+ forks 3
+ subscribers 3
+ created 2021
+ updated 2021
+ description The home of the Z♭ programming language, including the compiler and docs (in progress) and the standard library (not yet started)
+ issues 0

@@ -1,0 +1,54 @@
+ALGOL 68
+========
+
+ALGOL 68 is a programming language created in 1968.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221968%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#590 on PLDB
+56 Years Old
+
+ALGOL 68 (short for Algorithmic Language 1968) is an imperative computer programming language that was conceived as a successor to the ALGOL 60 programming language, designed with the goal of a much wider scope of application and more rigorously defined syntax and semantics. The contributions of ALGOL 68 to the field of computer science have been deep, wide ranging and enduring, although many of these contributions were only publicly identified when they had reappeared in subsequently developed programming languages.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ALGOL_68
+
+- ALGOL 68 Wikipedia page
+ https://en.wikipedia.org/wiki/ALGOL_68
+- ALGOL 68 first developed in International Federation for Information Processing
+- ALGOL 68 on HOPL
+ https://hopl.info/showlanguage.prx?exp=311
+- See also: (36 related languages)ALGOL 68-R, FLACC, ALGOL 60, C, Bourne shell, Bash, Python, Seed7, Mary, S3, S-algol, Pascal, Unix, Perl, Lisp, Unicode, BCPL, Algol, ASCII, Java, JOVIAL, Simula, CORAL, PEARL, RTL/2, HAL/S, Fortran, COBOL, CMS-2, BLISS, ALGOL W, SPARC, Solaris, Multics, ALGOL N, Ada
+- 1 languages in PLDB linking to ALGOL 68: Mary
+
+begin
+  print((&quot;Hello World&quot;,newline))
+end
+
+proc test = (real a, b) :...
+...
+test (x plus 1, x);
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  .PR POINT .PR
+  .PR UPPER .PR
+  .PR RES .PR
+  'pr' quote 'pr'

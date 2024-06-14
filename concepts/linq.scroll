@@ -1,0 +1,71 @@
+import ../code/conceptPage.scroll
+
+id linq
+name LINQ
+appeared 2007
+tags queryLanguage
+
+fileType text
+centralPackageRepositoryCount 0
+originCommunity Microsoft
+
+wikipedia https://en.wikipedia.org/wiki/Language_Integrated_Query
+ example
+  [Table(Name="Customers")]
+  public class Customer
+  {
+       [Column(IsPrimaryKey = true)]
+       public int CustID;
+  
+       [Column]
+       public string CustName;
+  }
+ related csharp f-sharp sql haskell php javascript typescript actionscript xml oxygene nemerle
+ summary Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages, although ports exist for PHP (PHPLinq), JavaScript (linq.js), TypeScript (linq.ts), and ActionScript (ActionLinq) - but none of these ports are strictly equivalent to LINQ in C# for example (where it is a part of the language, not an external library, and where it often addresses a wider range of needs). LINQ extends the language by the addition of query expressions, which are akin to SQL statements, and can be used to conveniently extract and process data from arrays, enumerable classes, XML documents, relational databases, and third-party data sources. Other uses, which utilize query expressions as a general framework for readably composing arbitrary computations, include the construction of event handlers or monadic parsers. LINQ also defines a set of method names (called standard query operators, or standard sequence operators), along with translation rules used by the compiler to translate fluent-style query expressions into expressions using these method names, lambda expressions and anonymous types. Many of the concepts that LINQ has introduced were originally tested in Microsoft's Cω research project. LINQ was released as a major part of .NET Framework 3.5 on November 19, 2007.
+ pageId 13706337
+ dailyPageViews 184
+ created 2005
+ backlinksCount 234
+ revisionCount 679
+ appeared 2007
+
+isbndb 28
+ year|publisher|title|authors|isbn13
+ 2008|Wrox|Professional LINQ|Klein, Scott|9780470041819
+ 2009|Wrox|Professional ADO.NET 3.5 with LINQ and the Entity Framework|Jennings, Roger|9780470182611
+ 20100101|Springer Nature|Pro LINQ in VB8|Joseph Rattz; Dennis Hayes|9781430216452
+ 20080902|Springer Nature|Pro LINQ Object Relational Mapping in C# 2008|Vijay P. Mehta|9781430205975
+ 2008|Sams Publishing|LINQ Unleashed: for C#|Kimmel, Paul|9780672329838
+ 2010|Microsoft Press|Programming Microsoft LINQ in .NET Framework 4 (Developer Reference)|Russo, Marco and Pialorsi, Paolo|9780735658837
+ 2008|Manning Publications|LINQ in Action|Fabrice Marguerie and Steve Eichert and Jim Wooley|9781933988160
+ 2021|Independently published|PROGRAMMING MICROSOFT LINQ NET CORE 5: Examples and Exercises in C#|Marcano, Anibal|9798499182307
+ 2008|Microsoft Press|Programming Microsoft® LINQ (PRO-Developer)|Paolo Pialorsi and Marco Russo|9780735624009
+ 2009|McGraw-Hill Education|LINQ Programming|Mayo, Joe|9780071597838
+ 2010|Addison-Wesley Professional|LINQ to Objects Using C# 4.0: Using and Extending LINQ to Objects and Parallel LINQ (PLINQ) (Addison-Wesley Microsoft Technology)|Magennis, Troy|9780321637178
+ 2010|AddisonWesley Professional|LINQ to Objects Using C# 4.0: Using and Extending LINQ to Objects and Parallel LINQ (PLINQ) (AddisonWesley Microsoft Technology)|Magennis, Troy|9780321637000
+ 2010|Microsoft Press|Programming Microsoft® LINQ in Microsoft .NET Framework 4 (Developer Reference)|Pialorsi, Paolo and Russo, Marco|9780735640573
+ 2011|Apress|Programming Reactive Extensions and LINQ (Expert's Voice in .NET)|Liberty, Jesse and Betts, Paul|9781430237471
+ 2007|Packt Publishing|LINQ Quickly|Kumar, N. Satheesh|9781847192547
+ 2011||Programming Microsoft Linq In Microsoft.net Framework 4 (with Cd )|Paolo Pialorsi and Marco Russo|9789350041840
+ 20081215|McGraw-Hill Professional|LINQ Programming|Joe Mayo|9780071597845
+ 2008|John Wiley & Sons, Ltd.|Professional Linq|Scott Klein|9780470285039
+ 20081008|Springer Nature|Pro LINQ|Joseph Rattz|9781430203827
+ 2007-11-16|Packt Publishing|LINQ Quickly|N Satheesh Kumar|9781847192554
+ 20080131|Simon & Schuster|LINQ in Action|Steve Eichert; James B. Wooley; Fabrice Marguerie|9781638354628
+ 20071224|Springer Nature|LINQ for Visual C# 2005|Fabio Claudio Ferracchiati|9781430202578
+ 20081011|Springer Nature|LINQ for Visual C# 2008|Fabio Claudio Ferracchiati|9781430215813
+ 20120201|Springer Nature|Programming Reactive Extensions and LINQ|Jesse Liberty; Paul Betts|9781430237488
+ ||Complete Practical Linq Tutorial In C#|Ilya Fofanov|9781800201255
+ 2008-12-06|Packt Publishing|WCF Multi-tier Services Development with LINQ|Mike Liu|9781847196620
+ 2008|John Wiley & Sons|Migrating To Linq To Sql In Thebeerhouse And Asp.net 2.0 Website Programming Problem Design Solution|Doug  Parsons|9780470375013
+ 2010|Wiley, John & Sons, Incorporated|Linqifying Thebeerhouse: An N-tier Linq Web Application With Asp.net 2.0 Website Programming: Problem - Design - Solution|Lee Dumond|9781118035528
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ LINQ For Dummies|2008|John Paul Mueller|6604665|3.50|4|1
+ Programming Microsoft® LINQ|2008|Paolo Pialorsi|3040440|3.69|13|0
+ Programming Reactive Extensions And Linq|2011|Jesse Liberty|16259917|2.70|20|1
+ Pro LINQ: Language Integrated Query in C# 2008|2007|Joseph C. Rattz Jr.|2276192|3.57|47|2
+ LINQ Programming|2008|Joe Mayo|29240442|4.67|6|0
+ Programming Microsoft LINQ in .NET Framework 4|2010|Paolo Pialorsi|13317423|3.80|20|2
+ Pro Linq: Language Integrated Query in C# 2010|2010|Joseph C. Rattz Jr.|13086757|4.15|20|1

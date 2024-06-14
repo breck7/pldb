@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id jsync
+name JSYNC
+appeared 2010
+creators Ingy döt Net
+tags dataNotation
+website http://jsync.org/
+conceptDescription JSYNC is a simple data serialization language. It takes the simplicity of JSON and combines it with the completeness of YAML.
+
+reference https://web.archive.org/web/20110723231221/http://jsync.org/
+
+example
+ [
+     "!records",
+     {
+         "!": "record",
+         "game": {
+             "!": "game",
+             "&": "001",
+             "date": "!!date March 2, 1962",
+             "versus": "New York"
+         },
+         "notes": ".!!! Awesome !!!",
+         "number": 100,
+         "player": {
+             "!": "player",
+             "&": "002",
+             "name": "Wilt Chamberlain",
+             "team": "Philadelphia"
+         },
+         "record": "Most points single game"
+     },
+     {
+         "!": "record",
+         "game": "*001",
+         "notes": "... add note here ...",
+         "number": 59,
+         "player": "*002",
+         "record": "Most points, one half"
+     }
+ ]

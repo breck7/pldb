@@ -1,0 +1,382 @@
+import ../code/conceptPage.scroll
+
+id swift
+name Swift
+appeared 2014
+creators Chris Lattner
+tags pl
+website https://swift.org
+latestVersion 5.10
+blog https://www.swift.org/blog/
+releaseNotes https://github.com/apple/swift/blob/main/CHANGELOG.md
+download https://www.swift.org/download/
+
+isOpenSource true
+writtenIn swift cpp cmake python markdown json objective-c restructuredtext yaml tex c objective-cpp bash llvmir bourne-shell xml vim-script make lisp html pascal d css assembly-language ini powershell javascript ruby awk matlab
+fileExtensions swift
+visualParadigm false
+clocExtensions swift
+fileType text
+wordRank 9077
+documentation https://www.swift.org/documentation/
+emailList https://www.swift.org/blog/forums/
+monaco swift
+codeMirror swift
+rosettaCode http://www.rosettacode.org/wiki/Category:Swift
+replit https://repl.it/languages/swift
+packageRepository https://cocoapods.org/
+repoStats
+ firstCommit 2010
+ commits 196634
+ committers 1509
+ files 25789
+ newestCommit 2024
+originCommunity Apple
+proposals https://github.com/apple/swift-evolution
+projectEuler Swift
+ memberCount
+  2019 523
+  2022 690
+
+helloWorldCollection Swift
+ // Hello world in Swift
+ 
+ println("Hello, world!")
+pygmentsHighlighter Swift
+ filename objective.py
+ fileExtensions swift
+rijuRepl https://riju.codes/swift
+ example
+  print("Hello, world!")
+  
+subreddit https://reddit.com/r/swift
+ memberCount
+  2017 29890
+  2022 93491
+twitter https://twitter.com/swiftlang
+leachim6 Swift
+ filepath s/Swift.swift
+ fileExtensions swift
+ example
+  print("Hello World")
+  
+gource https://www.youtube.com/watch?v=SFrdfk9Cvr8
+languageServerProtocolProject https://github.com/apple/sourcekit-lsp
+ writtenIn swift
+compilerExplorer Swift
+ example
+  // Type your code here, or load an example.
+  func square(n: Int) -> Int {
+      return n * n
+  }
+
+meetup https://www.meetup.com/topics/swift-language
+ memberCount 154306
+ groupCount 375
+keywords associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
+githubRepo https://github.com/apple/swift
+ firstCommit 2010
+ stars 60145
+ forks 9678
+ subscribers 2526
+ created 2015
+ updated 2022
+ description The Swift Programming Language
+ issues 5994
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
+booleanTokens true false
+
+hasVariableSubstitutionSyntax false
+hasAssignment true
+ let label = UILabel()
+hasStrings true
+ "hello world"
+hasSingleDispatch true
+hasComments true
+hasImports true
+ import UIKit
+ import UIKit.UITableViewController
+ let tvc = UITableViewController()
+ let vc = UIViewController()
+ let label = UILabel()
+hasInterfaces true
+ protocol MyProtocol {
+ init(parameter: Int)
+ var myVariable: Int { get set }
+ var myReadOnlyProperty: Int { get }
+ func myMethod()
+ func myMethodWithBody()
+ }
+ extension MyProtocol {
+ func myMethodWithBody() {
+   // implementation goes here
+   }
+ }
+hasOperatorOverloading true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+isCaseSensitive true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasConditionals true
+hasOctals true
+ // 0o[0-7_]+
+hasHexadecimals true
+ // 0x[0-9a-fA-F_]+
+hasFloats true
+ // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
+hasIntegers true
+ // [0-9][0-9_]*
+hasBinaryNumbers true
+ // 0b[01_]+
+
+wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
+ example
+  var someSortOfPrintableObject: SupportsToString
+  ...
+  print(someSortOfPrintableObject.toString())
+ related linux freebsd csharp clu d haskell objective-c python ruby rust ios llvmir c smalltalk java unicode android kotlin
+ summary Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6. On platforms other than Linux, it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program. Apple intended Swift to support many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and similar features, but "safer" (easier to catch software bugs); Swift has features addressing some common programming errors like null pointers and provides syntactic sugar to help avoid the pyramid of doom. Swift supports the concept of protocol extensibility, an extensibility system that can be applied to types, structs and classes, which Apple promotes as a real change in programming paradigms they term "protocol-oriented programming" (similar to traits). Swift was introduced at Apple's 2014 Worldwide Developers Conference (WWDC). It underwent an upgrade to version 1.2 during 2014 and a more major upgrade to Swift 2 at WWDC 2015. Initially a proprietary language, version 2.2 was made open-source software under the Apache License 2.0 on December 3, 2015, for Apple's platforms and Linux. In March 2017, Swift made the top 10 in the monthly TIOBE index ranking of popular programming languages, while since then it slipped down the list to 20.
+ pageId 42946389
+ dailyPageViews 1501
+ created 2014
+ backlinksCount 518
+ revisionCount 1256
+ appeared 2014
+ fileExtensions swift
+
+tiobe Swift
+ currentRank 20
+pypl Swift
+
+domainName swift.org
+ awisRank
+  2022 53358
+  2017 83258
+
+githubBigQuery Swift
+ repos 42531
+ users 25149
+
+linguistGrammarRepo https://github.com/textmate/swift.tmbundle
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 11
+ commitCount 101
+ sampleCount 43
+ example
+  println("Hello, world")
+  
+
+isbndb 125
+ year|publisher|title|authors|isbn13
+ 2014|Peachpit Press|Swift for Beginners: Develop and Design|Pitre, Boisy G.|9780134044705
+ 2014|Apress|Transitioning to Swift|Gardner, Scott and Gardner, Scott|9781484204078
+ 2016|Big Nerd Ranch Guides|Swift Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides)|Mathias, Matthew and Gallagher, John|9780134610610
+ 2018|Packt Publishing|Learn Swift by Building Applications: Explore Swift programming through iOS app development|Atanasov, Emil|9781786463920
+ 2015|Big Nerd Ranch Guides|Swift Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides)|Mathias, Matthew and Gallagher, John|9780134398013
+ 2019|Packt Publishing|Mastering Swift 5: Deep dive into the latest edition of the Swift programming language, 5th Edition|Hoffman, Jon|9781789139860
+ 2015|Razeware LLC|The Swift Apprentice: Beginning Programming with Swift 2|Clayton, Janie and Gallagher, Alexis and Galloway, Matt and Ganem, Eli and Kerber, Erik and Morrow, Ben|9781942878131
+ 2016|Wrox|Swift iOS 24-Hour Trainer|Mishra, Abhishek|9781119073550
+ 2017|Packt Publishing|Mastering Swift 4 - Fourth Edition: An in-depth and comprehensive guide to modern programming techniques with Swift|Hoffman, Jon|9781788477802
+ 2015|Packt Publishing|Application Development with Swift|Ghareeb, Hossam|9781785288173
+ 2017|Razeware LLC|Swift Apprentice Third Edition: Beginning Programming with Swift 4|raywenderlich.com Team and Clayton, Janie and Gallagher, Alexis and Galloway, Matt and Morrow, Ben and Pupaza, Cosmin and van Impe, Steven|9781942878438
+ 2015-11-04|Packt Publishing|Mastering Swift 2|Jon Hoffman|9781785886034
+ 2020|Packt Publishing|iOS 13 Programming for Beginners: Get started with building iOS apps with Swift 5 and Xcode 11, 4th Edition|Sahar, Ahmad and Clayton, Craig|9781838821906
+ 2015|Apress|Beginning Swift Games Development for iOS|Goodwill, James and Matlock, Wesley|9781484204016
+ 2014|O'Reilly Media|iOS 8 Swift Programming Cookbook: Solutions & Examples for iOS Apps|Nahavandipoor, Vandad|9781491908693
+ 2017|Apress|macOS Programming for Absolute Beginners: Developing Apps Using Swift and Xcode|Wang, Wallace|9781484226612
+ 2019|Packt Publishing|Swift Protocol-Oriented Programming: Increase productivity and build faster applications with Swift 5, 4th Edition|Hoffman, Jon|9781789349023
+ 2017|Wiley|Swift in the Cloud|Williamson, Leigh and Ponzo, John and Bohrer, Patrick and Olivieri, Ricardo and Weinmeister, Karl and Kallner, Samuel|9781119368472
+ 2015|Apress|Learn Swift on the Mac: For OS X and iOS|Malik, Waqar|9781484203774
+ 2015|O'Reilly Media|iOS Swift Game Development Cookbook: Simple Solutions for Game Development Problems|Manning, Jonathon and Buttfield-Addison, Paris|9781491920800
+ 2016|Packt Publishing|Object Oriented Programming with Swift 2|Hillar, Gaston C.|9781785885693
+ 2020|Packt Publishing|Mastering Swift 5.3: Upgrade your knowledge and become an expert in the latest version of the Swift programming language, 6th Edition|Hoffman, Jon|9781800562158
+ 2015-11-06|Packt Publishing|Swift High Performance|Kostiantyn Koval|9781785282201
+ 2016|Packt Publishing|Swift Data Structure and Algorithms|Azar, Erik and Alebicto, Mario Eguiluz|9781785884504
+ 43892|Packt Publishing|Hands-On Swift 5 Microservices Development|Ralph Kuepper; Tanner Nelson|9781789534832
+ 2016|Apress|Migrating to Swift from Flash and ActionScript|Adams, Radoslava Leseva and Lesev, Hristo|9781484216668
+ 2016|Apress|Beginning CareKit Development: Develop CareKit Applications Using Swift|Baxter, Christopher|9781484222263
+ 2018|Packt Publishing|Reactive Programming with Swift 4: Build asynchronous reactive applications with easy-to-maintain and clean code using RxSwift and Xcode 9|Singh, Navdeep|9781787120211
+ 2019|Apress|Swift 5 for Absolute Beginners: Learn to Develop Apps for iOS|Kaczmarek, Stefan and Lees, Brad and Bennett, Gary|9781484248683
+ 2017|Apress|iOS Code Testing: Test-Driven Development and Behavior-Driven Development with Swift|Mishra, Abhishek|9781484226896
+ 2015-10-27|Packt Publishing|Swift 2 Blueprints|Cecil Costa|9781783980765
+ 2014|Apress|Swift Quick Syntax Reference|Campbell, Matthew|9781484204399
+ 2016-01-06|Wiley Professional Development (P&T)|Swift iOS 24-Hour Trainer|Abhishek Mishra|9781119073420
+ 2015|Apress|Migrating to Swift from Web Development|Liao, Sean and Punak, Mark and Nemec, Anthony|9781484209318
+ 2015|Apress|Swift Game Programming for Absolute Beginners|Egges, Arjan|9781484206508
+ 2016|CreateSpace Independent Publishing Platform|Beginner's Guide to iOS 10 App Development Using Swift 3: Xcode, Swift and App Design Fundamentals|Yamacli, Serhan|9781540452153
+ 2017|Packt Publishing|Swift iOS Programming for Kids: Help your kids build simple and engaging applications with Swift 3.0|Sommer, Steffen D. and Campagno, Jim|9781787125650
+ 2015|Apress|Swift OS X Programming for Absolute Beginners|Wang, Wallace|9781484212332
+ 2015|Big Nerd Ranch, Exclusive Worldwide Distribution Of The English Edition Of This Book By Pearson Technology Group|Swift Programming: The Big Nerd Ranch Guide|Mathias, Matthew (author.)|9780134398068
+ 2015|Apress|Developing for Apple TV using tvOS and Swift|Bennett, Gary and Lees, Brad and Kaczmarek, Stefan|9781484217153
+ 20161115|Springer Nature|Build iOS Database Apps with Swift and SQLite|Kevin Languedoc|9781484222324
+ 2015|Apress|Learn Swift 2 on the Mac: For OS X and iOS|Malik, Waqar|9781484216279
+ 2021|Razeware LLC|Swift Apprentice (Seventh Edition): Beginning Programming with Swift|Tutorial Team, raywenderlich and Ganim, Eli and Pupăză, Cosmin and Galloway, Matt and Morrow, Ben and Gallagher, Alexis and Amer, Ehab Yosry|9781950325528
+ 2021|Razeware LLC|Combine: Asynchronous Programming with Swift (Third Edition)|Tutorial Team, raywenderlich and Mishali, Shai and Pillet, Florent and Todorov, Marin and Gardner, Scott|9781950325498
+ 2020-11-27T00:00:01Z|Packt Publishing|iOS 14 Programming for Beginners: Get started with building iOS apps with Swift 5.3 and Xcode 12, 5th Edition|Sahar, Ahmad|9781800209749
+ 2021|Razeware LLC|Combine: Asynchronous Programming with Swift (Second Edition)|Tutorial Team, raywenderlich and Gardner, Scott and Mishali, Shai and Pillet, Florent and Todorov, Marin|9781950325467
+ 2021|Packt Publishing|iOS 15 Programming for Beginners: Kickstart your mobile app development journey by building iOS apps with Swift 5.5 and Xcode 13, 6th Edition|Sahar, Ahmad|9781801811248
+ 2019|Independently published|Swift: The Complete Guide for Beginners,Intermediate and Advanced Detailed Strategies To Master Swift Programming|Martin, MG|9781096672289
+ 2021|Packt Publishing|Mastering iOS 14 Programming: Build professional-grade iOS 14 applications with Swift 5.3 and Xcode 12.4, 4th Edition|Alebicto, Mario Eguiluz and Barker, Chris and Wals, Donny|9781838822842
+ 2020|Big Nerd Ranch Guides|Swift Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides)|Ward, Mikey|9780135264201
+ 2019-11-25T00:00:01Z|Razeware LLC|Swift Apprentice (Fifth Edition): Beginning Programming with Swift|Tutorial Team, raywenderlich and Amer, Ehab and Gallagher, Alexis and Galloway, Matt and Ganim, Eli and Morrow, Ben and Pupaza, Cosmin|9781950325078
+ 2019|Apress|Beginning iPhone Development with Swift 5: Exploring the iOS SDK|Wang, Wallace|9781484248652
+ 2018|Packt Publishing|Swift Game Development: Learn iOS 12 game development using SpriteKit, SceneKit and ARKit 2.0, 3rd Edition|Shekar, Siddharth and Haney, Stephen|9781788472807
+ 2019|Apress|Pro iPhone Development with Swift 5: Design and Manage Top Quality Apps|Wang, Wallace|9781484249444
+ 2021|Razeware LLC|Data Structures & Algorithms in Swift (Fourth Edition): Implementing Practical Data Structures with Swift|Tutorial Team, raywenderlich and Lau, Kelvin and Ngo, Vincent|9781950325405
+ 2014|Apress|Beginning Xcode: Swift Edition|Knott, Matthew|9781484205389
+ 2017-12-26T00:00:01Z|Addison-Wesley Professional|Metal Programming Guide: Tutorial and Reference via Swift|Clayton, Janie|9780134668949
+ 2021|BPB Publications|iOS 15 Application Development for Beginners: Learn Swift Programming and Build iPhone Apps with SwiftUI and Xcode 13 (English Edition)|Kulsreshtha, Arpit|9789355511102
+ 2019-12-05T00:00:01Z|Razeware LLC|Combine: Asynchronous Programming with Swift (First Edition)|Tutorial Team, raywenderlich and Gardner, Scott and Mishali, Shai and Pillet, Florent and Todorov, Marin|9781942878841
+ 2019|Razeware LLC|Data Structures & Algorithms in Swift (Third Edition): Implementing Practical Data Structures with Swift|Tutorial Team, raywenderlich and Lau, Kelvin and Ngo, Vincent|9781942878995
+ 2020|Packt Publishing|iOS 13 Programming for Beginners: Get started with building iOS apps with Swift 5 and Xcode 11, 4th Edition|Sahar, Ahmad and Clayton, Craig|9781838820633
+ 2017|Apress|Beginning iPhone Development with Swift 4: Exploring the iOS SDK|Maskrey, Molly K.|9781484230725
+ 2021|Packt Publishing|Swift Cookbook: Over 60 proven recipes for developing better iOS applications with Swift 5.3, 2nd Edition|Moon, Keith and Barker, Chris|9781839210624
+ 2018|Packt Publishing|Hands-On Full-Stack Development with Swift: Develop full-stack web and native mobile applications using Swift and Vapor|Patel, Ankur|9781788626279
+ 2019-06-25T00:00:01Z|In Easy Steps Limited|Swift Programming in easy steps: Develop iOS apps - covers iOS 12 and Swift 5|Bartlett, Darryl|9781840787771
+ 2017|Razeware LLC|RxSwift: Reactive Programming with Swift|raywenderlich.com Team and Pillet, Florent and Bontognali, Junior and Todorov, Marin and Gardner, Scott|9781942878346
+ 2019|Independently published|Beginner’s Guide to iOS 13 App Development Using Swift 5.1: Xcode, Swift and App Design Fundamentals|Yamacli, Serhan|9781703090772
+ 2017|Apress|macOS Programming for Absolute Beginners: Developing Apps Using Swift and Xcode|Wang, Wallace|9781484226629
+ 2020|Packt Publishing|Learn SwiftUI: An introductory guide to creating intuitive cross-platform user interfaces using Swift 5|Barker, Chris|9781839210877
+ 2015|Peachpit Press|Swift for Beginners: Develop and Design|Pitre, Boisy G.|9780134289786
+ 2019-12-14T00:00:01Z|Devslopes|iOS 13 & Swift 5 Programming|Wahlbeck, Mark|9780578618111
+ 2015-02-01T00:00:01Z|Prentice Hall|Swift for Programmers (Deitel Developer Series)|Deitel, Paul J. and Deitel, Harvey|9780134021362
+ 2017|Apress|Learn Computer Science with Swift: Computation Concepts, Programming Paradigms, Data Management, and Modern Component Architectures with Swift and Playgrounds|Feiler, Jesse|9781484230657
+ 2017-03-22T00:00:01Z|Packt Publishing|Swift iOS Programming for Kids|Sommer, Steffen D. and Campagno, Jim|9781787120747
+ 2018-05-31T00:00:01Z|Packt Publishing|Beginning Swift: Master the fundamentals of programming in Swift 4|Kerr, Rob and Morstol, Kare|9781789534313
+ 2016|Packt Publishing|Test-Driven iOS Development with Swift|Hauser, Dr. Dominik|9781785880049
+ 2015|O'Reilly Media|Swift Pocket Reference|Gray, Anthony|9781491915424
+ 2017|Packt Publishing|Swift Functional Programming - Second Edition: Ease the creation, testing, and maintenance of Swift codes|Nayebi, Dr. Fatih|9781787283459
+ 2016|Packt Publishing|Swift Data Structure and Algorithms|Azar, Erik and Alebicto, Mario Eguiluz|9781785884658
+ 2017|Addison-Wesley Professional|iOS and macOS Performance Tuning: Cocoa, Cocoa Touch, Objective-C, and Swift (Developer's Library)|Weiher, Marcel|9780133085532
+ 2017|Packt Publishing|Swift 4 Protocol-Oriented Programming: Bring predictability, performance, and productivity to your Swift applications, 3rd Edition|Hoffman, Jon|9781788473828
+ 2016|Packt Publishing|Test-Driven iOS Development with Swift|Hauser, Dr. Dominik|9781785880735
+ 2018|Packt Publishing|iOS 12 Programming for Beginners: An introductory guide to iOS app development with Swift 4.2 and Xcode 10, 3rd Edition|Clayton, Craig|9781789348668
+ 2017-08-08T00:00:01Z|Pragmatic Bookshelf|Functional Programming: A PragPub Anthology: Exploring Clojure, Elixir, Haskell, Scala, and Swift||9781680502336
+ 2016-12-07T00:00:01Z|Razeware LLC|The Swift Apprentice Second Edition: Beginning programming with Swift 3|raywenderlich.com Team and Clayton, Janie and Gallagher, Alexis and Galloway, Matt and Ganem, Eli and Kerber, Erik and Morrow, Ben and Pupaza, Cosmin and Van Impe, Steven|9781942878230
+ 2017|Packt Publishing|Swift 4 Programming Cookbook: 50 task-oriented recipes to make you productive with Swift 4|Moon, Keith|9781786460899
+ 2015|Packt Publishing|Swift Cookbook - 50 Recipes to Help You Harness Swift|Costa, Cecil|9781784391898
+ 2015|Packt Publishing|Game Development with Swift: Embrace the mobile gaming revolution and bring your iPhone game ideas to life with Swift|Haney, Stephen|9781783550531
+ 2016|Packt Publishing|Swift 2 By Example|Scalzo, Giordano|9781785882777
+ 2018-01-09T00:00:01Z|O'Reilly Media|iOS 11 Swift Programming Cookbook: Solutions and Examples for iOS Apps|Nahavandipoor, Vandad|9781491992470
+ 2015-12-15T00:00:01Z|O'Reilly Media|Swift Pocket Reference: Programming for Ios and OS X: Covers Swift 2.1|Gray, Anthony|9781491940075
+ 2015|Apress|Pro Design Patterns in Swift|Freeman, Adam|9781484203958
+ 2014|Wrox|Beginning Swift Programming|Lee, Wei-Meng|9781119009313
+ 2018|Independently published|Introduction to Algorithms and Data Structures in Swift 4: Get ready for programming job interviews. Write better, faster Swift code. (Swift Clinic)|Nyisztor, Karoly|9781973291749
+ 2016|O'Reilly Media|iOS 10 Swift Programming Cookbook: Solutions and Examples for iOS Apps|Nahavandipoor, Vandad|9781491966433
+ 2015|Apress|Pro Design Patterns in Swift|Freeman, Adam|9781484203941
+ 2021|Addison-Wesley Professional|Programming in Swift (Developer's Library)|Kochan, Stephen G. and Mick, Patrick|9780134037578
+ 2015|Apress|Swift OS X Programming for Absolute Beginners|Wang, Wallace|9781484212349
+ 2017|Packt Publishing|Swift 4 Protocol-Oriented Programming: Bring predictability, performance, and productivity to your Swift applications, 3rd Edition|Hoffman, Jon|9781788470032
+ 2017|Packt Publishing|Swift Functional Programming - Second Edition: Ease the creation, testing, and maintenance of Swift codes|Nayebi, Dr. Fatih|9781787284500
+ 2016|Packt Publishing|Mastering Swift 3|Hoffman, Jon|9781786466129
+ 2017|Packt Publishing|Mastering Swift 3 - Linux|Hoffman, Jon|9781786460479
+ 2015|Packt Publishing|Learning Swift|Wagner, Andrew|9781784399627
+ 2017|BackupBrain|Bluetooth Low Energy in iOS Swift (Kindle Edition): Your Guide to Programming the Internet of Things (Bluetooth Low Energy Programming Book 1)|Gaitatzis, Tony|9781775128007
+ 2015|Packt Publishing|Swift 2 Design Patterns|Lange, Julien|9781785886119
+ 2018-01-31T00:00:01Z|Packt Publishing|Learn iOS 11 Programming with Swift 4 - Second Edition: Learn the fundamentals of iOS app development with Swift 4 and Xcode 9|Clayton, Craig|9781788390750
+ 2016|Packt Publishing|Swift 2 By Example|Scalzo, Giordano|9781785882920
+ 2014|Peachpit Press|Swift Translation Guide for Objective-C: Develop and Design|Kelly, Maurice|9780134044798
+ 2016|Addison-Wesley Professional|Learning Swift 2 Programming (2nd Edition)|Schatz, Jacob|9780134431598
+ 2015-09-11T00:00:01Z|Tenaya Creek Press|Understanding Swift Programming|Will, Craig A.|9780996228107
+ 2018-10-31T00:00:01Z|Packt Publishing|Mastering iOS 12 Programming: Build professional-grade iOS applications with Swift and Xcode 10, 3rd Edition|Wals, Donny|9781789133202
+ 2015|Apress|Beginning iPhone Development with Swift 2: Exploring the iOS SDK|Mark, David and Topley, Kim and Nutting, Jack and Olsson, Fredrik and LAMARCHE, JEFF|9781484217542
+ 2016|Apress|OS X App Development with CloudKit and Swift|Wade, Bruce|9781484218808
+ 2016-01-19T00:00:01Z|O'Reilly Media|iOS 9 Swift Programming Cookbook: Solutions and Examples for iOS Apps|Nahavandipoor, Vandad|9781491936696
+ 2015|Apress|Program the Internet of Things with Swift for iOS|Bakir, Ahmed and de la Torriente, Manny and Chesler, Gheorghe|9781484211946
+ 2015|Apress|Swift Game Programming for Absolute Beginners|Egges, Arjan|9781484206515
+ 2017|Packt Publishing|Mastering iOS 11 Programming: Build professional-grade iOS applications with Swift 4 and Xcode 9, 2nd Edition|Wals, Donny|9781788398237
+ 2017|Apress|Beginning Swift Games Development for iOS: Develop 2D and 3D games Using Apple's SceneKit and SpriteKit|Goodwill, James and Matlock, Wesley|9781484223109
+ 2016|Packt Publishing|Swift 3 New Features|Elliott, Keith|9781786462718
+ 2015|Apress|Beginning Swift Games Development for iOS|Goodwill, James and Matlock, Wesley|9781484204009
+ 2015|Addison-Wesley Professional|Learning Swift Programming (Addison-Wesley Learning)|Schatz, Jacob|9780133950403
+ 2014|Apress|Transitioning to Swift|Gardner, Scott|9781484204061
+ 2016|Razeware LLC|The Swift Apprentice: Updated for Swift 2.2: Beginning Programming with Swift 2.2|raywenderlich.com Team and Clayton, Janie and Gallagher, Alexis and Galloway, Matt and Ganem, Eli and Kerber, Erik and Morrow, Ben|9781942878179
+ 2014|O'Reilly Media|Introducing iOS 8: Swift Programming from Idea to App Store|Derico, Steve|9781491908617
+ 2018|Apress|Pro iPhone Development with Swift 4: Design and Manage Top Quality Apps|Maskrey, Molly and Wang, Wallace|9781484233818
+
+githubLanguage Swift
+ fileExtensions swift
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  LoopKit Loop https://github.com/LoopKit.png https://github.com/LoopKit/Loop Swift #ffac45 478 657 49 "An automated insulin delivery app template for iOS, built on LoopKit"
+  brentsimmons NetNewsWire https://github.com/brentsimmons.png https://github.com/brentsimmons/NetNewsWire Swift #ffac45 2174 151 728 "RSS reader for macOS."
+  dkhamsing open-source-ios-apps https://github.com/dkhamsing.png https://github.com/dkhamsing/open-source-ios-apps Swift #ffac45 21111 3506 354 "📱 Collaborative List of Open-Source iOS Apps"
+  pedrommcarrasco Brooklyn https://github.com/pedrommcarrasco.png https://github.com/pedrommcarrasco/Brooklyn Swift #ffac45 2926 131 200 "🍎 Screensaver inspired by Apple's Event on October 30, 2018"
+  yonaskolb XcodeGen https://github.com/yonaskolb.png https://github.com/yonaskolb/XcodeGen Swift #ffac45 2618 239 128 "A Swift command line tool for generating your Xcode project"
+  mozilla-mobile firefox-ios https://github.com/mozilla-mobile.png https://github.com/mozilla-mobile/firefox-ios Swift #ffac45 8877 2061 77 "Firefox for iOS"
+  httpswift swifter https://github.com/httpswift.png https://github.com/httpswift/swifter Swift #ffac45 2776 406 56 "Tiny http server engine written in Swift programming language."
+  WenchaoD FSPagerView https://github.com/WenchaoD.png https://github.com/WenchaoD/FSPagerView Swift #ffac45 4633 551 142 "FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner View、Product Show、Welcome/Guide Pages、Screen/ViewController Sliders."
+  marmelroy PhoneNumberKit https://github.com/marmelroy.png https://github.com/marmelroy/PhoneNumberKit Swift #ffac45 3094 357 97 "A Swift framework for parsing, formatting and validating international phone numbers. Inspired by Google's libphonenumber."
+  Alamofire Alamofire https://github.com/Alamofire.png https://github.com/Alamofire/Alamofire Swift #ffac45 31815 5728 273 "Elegant HTTP Networking in Swift"
+  JohnCoates Aerial https://github.com/JohnCoates.png https://github.com/JohnCoates/Aerial Swift #ffac45 15249 815 273 "Apple TV Aerial Screensaver for Mac"
+  ReactiveX RxSwift https://github.com/ReactiveX.png https://github.com/ReactiveX/RxSwift Swift #ffac45 17102 2889 232 "Reactive Programming in Swift"
+  luispadron UICircularProgressRing https://github.com/luispadron.png https://github.com/luispadron/UICircularProgressRing Swift #ffac45 1198 211 94 "A circular progress bar for iOS written in Swift"
+  apple swift-log https://github.com/apple.png https://github.com/apple/swift-log Swift #ffac45 1383 69 81 "A Logging API for Swift"
+  stephencelis SQLite.swift https://github.com/stephencelis.png https://github.com/stephencelis/SQLite.swift Swift #ffac45 6327 1092 86 "A type-safe, Swift-language layer over SQLite3."
+  matteocrippa awesome-swift https://github.com/matteocrippa.png https://github.com/matteocrippa/awesome-swift Swift #ffac45 17867 2509 205 "A collaborative list of awesome Swift libraries and resources. Feel free to contribute!"
+  SCENEE FloatingPanel https://github.com/SCENEE.png https://github.com/SCENEE/FloatingPanel Swift #ffac45 2768 188 128 "A clean and easy-to-use floating panel UI component for iOS"
+  krzyzanowskim CryptoSwift https://github.com/krzyzanowskim.png https://github.com/krzyzanowskim/CryptoSwift Swift #ffac45 7218 823 93 "CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift"
+  serhii-londar open-source-mac-os-apps https://github.com/serhii-londar.png https://github.com/serhii-londar/open-source-mac-os-apps Swift #ffac45 18202 1211 360 "🚀 Awesome list of open source applications for macOS."
+  HeroTransitions Hero https://github.com/HeroTransitions.png https://github.com/HeroTransitions/Hero Swift #ffac45 17276 1368 227 "Elegant transition library for iOS & tvOS"
+  Quick Quick https://github.com/Quick.png https://github.com/Quick/Quick Swift #ffac45 8386 777 82 "The Swift (and Objective-C) testing framework."
+  radex SwiftyUserDefaults https://github.com/radex.png https://github.com/radex/SwiftyUserDefaults Swift #ffac45 3871 266 55 "Modern Swift API for NSUserDefaults"
+  sindresorhus Gifski https://github.com/sindresorhus.png https://github.com/sindresorhus/Gifski Swift #ffac45 3753 109 595 "🌈 Convert videos to high-quality GIFs on your Mac"
+  Mortennn Dozer https://github.com/Mortennn.png https://github.com/Mortennn/Dozer Swift #ffac45 2187 78 162 "Hide status bar icons on macOS"
+  mxcl PromiseKit https://github.com/mxcl.png https://github.com/mxcl/PromiseKit Swift #ffac45 11928 1160 135 "Promises for Swift & ObjC."
+ trendingProjectsCount 26
+ type programming
+ aceMode text
+ codemirrorMode swift
+ codemirrorMimeType text/x-swift
+ tmScope source.swift
+ repos 1044892
+
+indeedJobs swift developer
+ 2017 2043
+linkedInSkill swift
+ 2018 171143
+stackOverflowSurvey
+ 2021
+  users 4204
+  medianSalary 58911
+  fans 6353
+  percentageUsing 0.05
+
+semanticScholar 19
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|The Swift Programming Language|10.1007/978-1-4842-0400-9_17|46|4|James Goodwill and Wesley Matlock|adcd58959ad2a95ba8aa1bb09326d3ed066aa9e8
+ 2016|An Empirical Study on the Usage of the Swift Programming Language|10.1109/SANER.2016.66|23|0|Marcel Rebouças and G. Pinto and Felipe Ebert and Weslley Torres and Alexander Serebrenik and F. C. Filho|b4be0cea3fc620a8f1028a4c8acf102e329f38a6
+ 2018|How Swift Developers Handle Errors|10.1145/3196398.3196428|15|0|Nathan Cassee and G. Pinto and F. C. Filho and Alexander Serebrenik|4692e9bacf9d1697c7360f04397b470bd2b4c537
+ 2015|Swift vs. Objective-C: A New Programming Language|10.9781/ijimai.2015.3310|12|0|Cristian González García and Jordán Pascual Espada and B. C. P. García-Bustelo and J. M. C. Lovelle|1da51dd08d172e1aec5db020817067a2cda12973
+ 2017|Visualizing Swift Projects as Cities|10.1109/ICSE-C.2017.115|5|0|Rafael Nunes and Marcel Rebouças and Francisco Soares-Neto and F. C. Filho|f23f315af89fa658b106470f999f96aec8730c6f
+ 2020|SWAN: a static analysis framework for swift|10.1145/3368089.3417924|5|0|Daniil Tiganov and Jeff Cho and Karim Ali and Julian Dolby|6494787cc4de4a9ff732b3f16d3f3059752f09a9
+ 2017|Dynamic atomicity: optimizing swift memory management|10.1145/3133841.3133843|4|1|D. Ungar and D. Grove and H. Franke|8439f7a913630eea665f55bfe35fb5b95b8ad3f5
+ 2014|Using Nion Swift for Data Collection, Analysis and Display|10.1017/S1431927614007272|3|0|C. Meyer and N. Dellby and Z. Dellby and T. Lovejoy and M. Sarahan and G. Skone and O. Krivanek|c2a158f586b5f2db34f5cbb625f59bd419b2099d
+ 2015|Beginning Swift Games Development for iOS|10.1007/978-1-4842-0400-9|3|0|James Goodwill and Wesley Matlock|99b7243cb20522080cf5ba1df32371278b055f34
+ 2019|Optimization of swift protocols|10.1145/3360590|2|0|R. Barik and Manu Sridharan and M. Ramanathan and Milind Chabbi|0187acc7b8ad265dd57ec91b415b8c59ccfb0a98
+ 2020|Trans-Compiler based Mobile Applications code converter: swift to java|10.1109/NILES50944.2020.9257928|2|0|Ahmad A. Muhammad and Amira G. Mahmoud and Shaymaa S. Elkalyouby and Rameez B. Hamza and A. Yousef|25ff1d466b8c50ebc94a57e0a8a0a9a5663a2e53
+ 2020|An SKOS-Based Vocabulary on the Swift Programming Language|10.1007/978-3-030-62466-8_16|2|0|Christian Grévisse and S. Rothkugel|c70241f4e51e7f1196655dfd6325e310e88ff373
+ 2015|EL FUTURO DE APPLE: SWIFT VERSUS OBJECTIVE-C|10.14483/UDISTRITAL.JOUR.REDES.2015.2.A01|1|0|Cristian González García and B. J. P. Espada and Cristina Pelayo G-Bustelo and J. M. C. Lovelle|2f7f41682a955c403fb854c7b050e0f36be4f409
+ 2015|A Swift Introduction to Swift App Development (Abstract Only)|10.1145/2676723.2678281|1|0|Michael P. Rogers and W. Siever|7b99beb5efb01555560035b37e40b21fa655d4c0
+ 2016|An Introduction to Swift|10.1007/978-1-4842-2223-2_23|1|0|Molly K. Maskrey and Kim Topley and David Mark and Fredrik Olsson and Jeff LaMarche|278ef58012ab40dec51e86e5ad8a942f86c5fabc
+ 2015|Program the Internet of Things with Swift for iOS|10.1007/978-1-4842-1194-6|1|0|A. Bakir and Gheorghe Chesler and Manny de la Torriente|320e46cdb72465d8474765664650d3fbed5165a6
+ 2018|Introducing Automatic Time Stamping (ATS) with a Reference Implementation in Swift|10.1109/ISORC.2018.00028|1|0|Sean Hamilton and Dhiman Sengupta and Rajesh E. Gupta|de6f049ff887591e8445247c752a0bea1a03b278
+ 2015|The Swift Language|10.1007/978-1-4842-0650-8_1|1|0|A. Egges|587238b49d4bf004dc20bac441ebbc692e69a144
+ 2017|Promotion of Educational Effectiveness by Translation-based Programming Language Learning Using Java and Swift|10.24251/HICSS.2017.016|1|0|Juhua Li and Kazunori Sakamoto and H. Washizaki and Y. Fukazawa|06a96400093f770fc2ec6e978e89adec99321162

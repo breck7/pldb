@@ -1,0 +1,140 @@
+Frege
+=====
+
+Frege is an open source programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#181 on PLDB
+13 Years Old
+223 Repos
+
+git clone https://github.com/frege/frege
+
+Frege is a non-strict, purely functional programming language for the Java virtual machine in the spirit of Haskell. It is considered a Haskell dialect or simply "a" Haskell for the Java virtual machine. Frege has a strong static type system with type inference. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Frege_(programming_language)
+
+- Frege website
+ https://github.com/Frege/frege
+- Frege Wikipedia page
+ https://en.wikipedia.org/wiki/Frege_(programming_language)
+- Frege is developed on GitHub and has 3,546 stars
+- Frege docs
+ http://www.frege-lang.org/doc/fregedoc.html
+- There are at least 223 Frege repos on GitHub
+- Frege first developed in https://github.com/Frege
+- Frege is written in Forth, Java, Tex, Perl, SVG, Markdown, Make, Yacc, Bourne shell, HTML, YAML
+- Frege on Twitter
+ https://twitter.com/fregelang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 142 users using Frege in 160 repos on GitHub
+- There are 3 Project Euler users using Frege
+- Explore Frege snippets on Rosetta Code
+- GitHub supports syntax highlighting for Frege
+- See also: (7 related languages)Haskell, JVM, Java, Java Bytecode, Linux, Unix, Eclipse
+
+{--
+    This program displays the
+    current time on stdandard output
+    every other second.
+    -}
+    
+module examples.CommandLineClock where
+
+data Date = native java.util.Date where
+    native new :: () -&gt; IO (MutableIO Date)     -- new Date()
+    native toString :: Mutable s Date -&gt; ST s String    -- d.toString()
+
+--- &#39;IO&#39; action to give us the current time as &#39;String&#39;
+current :: IO String
+current = do
+    d &lt;- Date.new ()
+    d.toString
+
+{-
+    &quot;java.lang.Thread.sleep&quot; takes a &quot;long&quot; and
+    returns nothing, but may throw an InterruptedException.
+    This is without doubt an IO action.
+    
+    public static void sleep(long millis)
+                  throws InterruptedException
+    
+    Encoded in Frege:
+    - argument type  long   Long
+    - result         void   ()
+    - does IO               IO ()
+    - throws ...            throws ....
+     
+-}
+-- .... defined in frege.java.Lang
+-- native sleep java.lang.Thread.sleep :: Long -&gt; IO () throws InterruptedException
+
+      
+main args =
+    forever do
+        current &gt;&gt;= print
+        print &quot;\r&quot;
+        stdout.flush
+        Thread.sleep 999
+                
+
+{--
+    This program displays the
+    current time on standard output
+    every other second.
+    -}
+    
+module examples.CommandLineClock where
+
+data Date = native java.util.Date where
+    native new :: () -&gt; IO (MutableIO Date)             -- new Date()
+    native toString :: Mutable s Date -&gt; ST s String    -- d.toString()
+
+--- &#39;IO&#39; action to give us the current time as &#39;String&#39;
+current :: IO String
+current = do
+    d &lt;- Date.new ()  -- reads system timer, hence IO
+    d.toString
+
+main args =
+    forever do
+        current &gt;&gt;= print   -- print formatted date
+        print &quot;\r&quot;          -- followed by carriage return
+        stdout.flush        -- make sure it&#39;s shown
+        Thread.sleep 999L   -- wait 0.999 seconds
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token {- -}
+ Example
+  {- A comment
+  -}
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

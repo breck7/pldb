@@ -1,0 +1,31 @@
+import ../code/conceptPage.scroll
+
+id myrddin
+name myrddin
+appeared 2016
+tags pl
+website https://myrlang.org
+conceptDescription <a href='https://myrlang.org'>Myrddin</a> is a systems programming language. Myrddin emphasizes control, simplicity, a clear mental model and predictable, transparent behavior. It features strong type checking, generics, type inference, closures, and traits. It aims to fit a similar niche as C, but with fewer bullets in your feet.
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Myrddin
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://github.com/oridb/mc/issues
+
+leachim6 Myrddin
+ filepath m/Myrddin.myr
+ fileExtensions myr
+ example
+  use std
+  
+  const main = {
+      std.put("Hello World\n")
+  }
+  
+  
+
+domainName myrlang.org
+ registered 2016
+ awisRank
+  2017 6310985

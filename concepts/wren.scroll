@@ -1,0 +1,90 @@
+import ../code/conceptPage.scroll
+
+id wren
+name Wren
+appeared 2013
+creators Bob Nystrom
+tags pl
+website https://wren.io/
+latestVersion 0.4.0
+conceptDescription Wren is a small, fast, class-based concurrent scripting language.
+
+isOpenSource true
+writtenIn markdown c python html xml lua ruby javascript dart css pascal make yaml bourne-shell svg
+tryItOnline wren
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Wren
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 1974
+ committers 132
+ files 1160
+ newestCommit 2022
+country United States
+reference https://news.ycombinator.com/item?id=23660464
+
+example
+ System.print("Hello, world!")
+ 
+ class Wren {
+   flyTo(city) {
+     System.print("Flying to %(city)")
+   }
+ }
+ 
+ var adjectives = Fiber.new {
+   ["small", "clean", "fast"].each {|word| Fiber.yield(word) }
+ }
+ 
+ while (!adjectives.isDone) System.print(adjectives.call())
+leachim6 Wren
+ filepath w/Wren.wren
+ fileExtensions wren
+ example
+  IO.print("Hello World")
+  
+
+githubRepo https://github.com/munificent/wren
+ stars 5694
+ forks 458
+ subscribers 144
+ created 2013
+ updated 2022
+ firstCommit 2013
+ description The Wren Programming Language. Wren is a small, fast, class-based concurrent scripting language.
+ issues 178
+
+lineCommentToken //
+printToken IO.print
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName wren.io
+ awisRank
+  2022 1902339
+  2017 2556277
+
+githubBigQuery Wren
+ repos 3
+ users 3
+
+isbndb 0
+
+githubLanguage Wren
+ type programming
+ fileExtensions wren
+ aceMode text
+ tmScope source.wren
+ aliases wrenlang
+ repos 8
+
+semanticScholar 0

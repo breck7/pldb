@@ -1,0 +1,30 @@
+OpenType Feature File
+=====================
+
+OpenType Feature File is an application created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1291 on PLDB
+28 Years Old
+
+- OpenType Feature File first developed in Microsoft and Adobe Systems
+- GitHub supports syntax highlighting for OpenType Feature File
+- Read more about OpenType Feature File on the web: 1.
+ https://en.wikipedia.org/wiki/OpenType
+
+# Script and language coverage
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+# Ligature formation
+feature liga {
+     substitute f i by f_i;
+     substitute f l by f_l;
+} liga;
+
+# Kerning
+feature kern {
+     position A Y -100;
+     position a y -80;
+     position s f&#39; &lt;0 0 10 0&gt; t;
+} kern;

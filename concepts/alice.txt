@@ -1,0 +1,26 @@
+Alice
+=====
+
+Alice is an open source programming language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1097 on PLDB
+24 Years Old
+
+Try now: TIO
+
+Alice ML is a programming language designed by the Programming Systems Laboratory at Saarland University, Saarbrücken, Germany. It is a dialect of Standard ML, augmented with support for lazy evaluation, concurrency (multithreading and distributed computing via remote procedure calls) and constraint programming.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Alice_(programming_language)
+
+- Alice website
+ http://www.ps.uni-saarland.de/alice
+- Alice Wikipedia page
+ https://en.wikipedia.org/wiki/Alice_(programming_language)
+- Alice first developed in Saarland University
+- See also: (4 related languages)ML, Oz, Standard ML, Haskell
+
+&quot;dlroW olleH&quot;d&amp;O`@
+
+fun fib 0 = 0
+   | fib 1 = 1
+   | fib n = spawn fib(n-1) + fib(n-2);

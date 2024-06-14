@@ -1,0 +1,154 @@
+Felix
+=====
+
+Felix is a programming language created in 2001 by John Skaller.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Skaller
+
+#342 on PLDB
+23 Years Old
+
+git clone https://github.com/felix-lang/felix
+
+The Felix Programming Language
+
+- Felix website
+ http://felix-lang.github.io/felix/
+- Felix is developed on GitHub and has 685 stars
+- Felix mailing list
+ https://groups.google.com/g/felix-language
+- Felix first developed in felix-language@googlegroups.com
+- Felix is written in OCaml, reStructuredText, Python, C, C++, Make, HTML, Tex, Bourne shell, Elixir, SVG, Markdown, Haskell, YAML, Vim script, XML, Scala, Java, Perl, Ada, CSS, Pascal, Lisp, M4, XHTML, Clojure, Objective-C, Bash, Nix
+- Pygments supports syntax highlighting for Felix
+- Read more about Felix on the web: 1.
+ http://web.archive.org/web/20080415185225/http://felix-lang.org/
+
+#import &lt;flx.flxh&gt;
+fun abs_div(a:int, b:int when b!=0)
+  expect result &gt;=0
+=&gt;
+  abs(a/b)
+;
+print (abs_div(2,4)); print &quot;\n&quot;;
+
+println$ &quot;Hello World&quot;;
+
+_ _deref all as assert attempt call callback case caseno cclass code compound ctypes do done downto elif else endattempt endcase endif endmatch enum except exceptions expect finally for forall forget fork functor goto ident if incomplete inherit instance interface jump lambda loop match module namespace new noexpand nonterm obj of open parse raise regexp reglex regmatch rename return the then to type typecase typedef typematch typeof upto when whilst with yield
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[Bb][01_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // (0|[1-9][0-9_]*)([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported ✓
+ Token 
+ Example
+  match x with
+   | Some x => println$ x;
+   | None => println "NONE";
+   endmatch;
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported ✓
+ Token 
+ Example
+  // overloads
+  fun f (x:double) => x +42.1;
+  fun f (x:int) =>  x + 1;
+  fun f (x:string) => x + "!";
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported ✓
+ Token 
+ Example
+  // generics
+  fun g (x) => f (f x);
+  println$ g 1, g "hello";
+  println$ _map f (1,"hello",2.0);
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+  var x = 1;
+  &x X
+ Token 
+ Example
+
+HackerNews discussions of Felix
+===============================
+
+title|titleLink|date|score|comments
+Felix - a fast scripting language|https://news.ycombinator.com/item?id=5007674|01/04/2013|107|83

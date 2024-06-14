@@ -1,0 +1,59 @@
+import ../code/conceptPage.scroll
+
+id flagship
+name flagship
+appeared 1986
+tags pl
+website http://www.flagship.de/
+
+country Germany
+originCommunity multisoft Datentechnik
+
+example
+ ** File: hello1.prg         // your first program
+ ? "Hello world!"            // similar to printf("\nHello world!")
+ wait                        // wait for user prompt before closing the application
+ 
+ ** File: hello2.prg         // your second application
+ set color to "W+/B"         // set color white on blue
+ @ 5,10 TO 9,30              // draw box
+ @ 7,12 SAY "hello world"    // print text on given coordinates
+ key = inkey(5)              // wait for key press within 5 seconds
+ 
+ ** File: dbf1.prg           // handles available/creates new database
+ #include "fspreset.fh"      // converts all file names to lower case
+ PARAMETER par1              // accepts command-line parameters
+ dbname := IF(EMPTY(par1), "mydbf1", par1)       // set default if required
+ IF .NOT. FILE(dbname + ".dbf")                  // database available?
+   DBCREATE(dbname, {{"Name",    "C", 25, 0}, ;  //  not yet, so
+                     {"Address", "C", 30, 0}, ;  //  create a new
+                     {"Born",    "D",  8, 0}, ;  //  database, here
+                     {"Note",    "M", 10, 0}} )  //  with 4 fields
+ ENDIF
+ USE (dbname) SHARED         // open the given database or mydbf1.dbf
+ IF !USED()                  // check the success
+    ? "sorry, cannot open", dbname
+    QUIT                     // abort the execution
+ ENDIF
+ BROWSE ()                   // browse/edit
+ QUIT                        // exit back to command line
+
+lineCommentToken //
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName flagship.de
+ awisRank
+  2022 11801152
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2018|6Genesis Flagship Program: Building the Bridges Towards 6G-Enabled Wireless Smart Society and Ecosystem|10.1109/LATINCOM.2018.8613209|69|4|M. Katz and Marja Matinmikko-Blue and M. Latva-aho|043b0f74aae98fe9a3c6a434d30aec743222502d
+ 1989|Hope+ on Flagship|10.1007/978-1-4471-3166-3_20|15|0|Iain B. Robertson|7ec09052fcd3a29949f2d56b0673608d2d260e2b

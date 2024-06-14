@@ -1,0 +1,69 @@
+GraphQL Schema Definition Language
+==================================
+
+GraphQL Schema Definition Language is an interface design language created in 2018.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2191 on PLDB
+6 Years Old
+
+- GraphQL Schema Definition Language first developed in https://github.com/graphql/
+- Read more about GraphQL Schema Definition Language on the web: 1.
+ https://github.com/graphql/graphql-spec/pull/90
+
+# Enumeration type for a level of priority
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+}
+# Our main todo type
+type Todo {
+  id: ID!
+  name: String!
+  description: String
+  priority: Priority!
+}
+type Query {
+  # Get one todo item
+  todo(id: ID!): Todo
+  # Get all todo items
+  allTodos: [Todo!]!
+}
+type Mutation {
+  addTodo(name: String!, priority: Priority = LOW): Todo!
+  removeTodo(id: ID!): Todo!
+}
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token “””
+ Example
+  “”” A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

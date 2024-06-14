@@ -1,0 +1,155 @@
+Veryl
+=====
+
+Veryl is an open source programming language created in 2022 by Naoya Hatta.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Naoya%20Hatta
+
+#437 on PLDB
+2 Years Old
+
+git clone https://github.com/veryl-lang/veryl
+
+Veryl: A Modern Hardware Description Language
+
+- Veryl website
+ https://www.veryl-lang.org/
+- Veryl is developed on GitHub and has 410 stars
+- Veryl docs
+ https://doc.veryl-lang.org/book/
+- Veryl is written in Rust, JSON, TOML, JavaScript, YAML, Markdown, TypeScript, Make, Bourne shell
+- Veryl LSP implementation
+- veryl-lang.org was registered in 2024
+
+// Hello world in Veryl
+module ModuleA {
+    initial {
+        $display(&quot;Hello, world!&quot;);
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token $display
+ Example
+  $display("Hi");
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  // file scope import
+  import $sv::SvPackage::*;
+  
+  module ModuleA {
+      import PackageA::*;
+      import PackageA::paramA;
+  }
+  
+  package PackageA {
+      local paramA: u32 = 1;
+  }
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  #[test(test1)]
+  embed (inline) sv{{{
+      module test1;
+          initial begin
+              assert (0) else $error("error");
+          end
+      endmodule
+  }}}
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // https://doc.veryl-lang.org/book/05_language_reference/02_lexical_structure.html
+  // a comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example

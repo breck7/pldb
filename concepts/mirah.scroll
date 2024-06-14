@@ -1,0 +1,84 @@
+import ../code/conceptPage.scroll
+
+id mirah
+name Mirah
+appeared 2009
+creators Charles Oliver Nutter
+tags pl
+website http://www.mirah.org
+latestVersion 0.2.1
+
+isOpenSource true
+writtenIn html ruby java javascript markdown css bash yaml xml bourne-shell
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Mirah
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 2858
+ committers 54
+ files 533
+ newestCommit 2017
+country United States
+originCommunity https://github.com/mirah
+
+example
+ def foo(a:String, b:int)
+
+githubRepo https://github.com/mirah/mirah
+ firstCommit 2008
+ stars 870
+ forks 63
+ subscribers 40
+ created 2010
+ updated 2022
+ description The Mirah Programming Language
+ issues 140
+
+hasComments true
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
+ example
+  def fib(a:int)
+    if a < 2
+      a
+    else
+      fib(a - 1) + fib(a - 2)
+    end
+  end
+ related jvm ruby java boo java-bytecode jruby csharp rails erb
+ summary Mirah (formerly Duby) is a programming language based on Ruby language syntax, local type inference, hybrid static–dynamic type system, and a pluggable compiler toolchain. Mirah was created by Charles Oliver Nutter to be "a 'Ruby-like' language, probably a subset of Ruby syntax, that [could] compile to solid, fast, idiomatic JVM bytecode." The word mirah refers to the gemstone ruby in the Javanese language, a play on the concept of Ruby in Java.
+ pageId 27970668
+ created 2010
+ backlinksCount 15
+ revisionCount 63
+ dailyPageViews 12
+ appeared 2009
+
+domainName mirah.org
+ registered 2010
+
+githubBigQuery Mirah
+ repos 43
+ users 32
+
+linguistGrammarRepo https://github.com/atom/language-ruby
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 76
+ commitCount 458
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2011||Mirah (programming Language)|Nethanel Willy|9786136789286
+
+githubLanguage Mirah
+ fileExtensions druby duby mirah
+ trendingProjectsCount 0
+ type programming
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.ruby
+ repos 68

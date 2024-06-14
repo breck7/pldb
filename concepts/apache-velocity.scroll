@@ -1,0 +1,60 @@
+import ../code/conceptPage.scroll
+
+id apache-velocity
+name Velocity
+appeared 2003
+tags template
+website http://velocity.apache.org/
+aka Velocity
+
+isOpenSource true
+fileType text
+codeMirror velocity
+centralPackageRepositoryCount 0
+originCommunity Apache
+
+helloWorldCollection Apache Velocity
+ <HTML>
+ <!-- Hello World in Velocity -->
+ <BODY>
+   #set( $foo = "Hello World" )
+   $foo
+ </BODY>
+ </HTML>
+ 
+pygmentsHighlighter Velocity
+ filename templates.py
+ fileExtensions vm fhtml
+
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
+ example
+  <html>
+      <body>
+          Hello Velocity World!
+      </body>
+  </html>
+ related java html sql postscript xml java-server-pages thymeleaf
+ summary Apache Velocity is a Java-based template engine that provides a template language to reference objects defined in Java code. It aims to ensure clean separation between the presentation tier and business tiers in a Web application (the model–view–controller design pattern). Velocity is an open source software project hosted by the Apache Software Foundation. It is released under the Apache License.
+ pageId 2285690
+ dailyPageViews 82
+ created 2005
+ backlinksCount 209
+ revisionCount 133
+ appeared 2003
+
+domainName velocity.apache.org
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2018|Apress|Accelerating Development Velocity Using Docker: Docker Across Microservices|Jangla, Kinnary|9781484239360
+ 2022|Scholars International Publishing Corp.|Surfcam Velocity III|Su-Chen Jonathon Lin; Dave Zamora|9781886552210
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2011|A PDL Approach for Qualitative Velocity|10.1142/S021848851100685X|12|0|A. Burrieza and Emilio Muñoz-Velasco and M. Ojeda‐Aciego|90cdaccc42a799503cc5bfbba1c96b7c8e3a4a75
+ 2014|High velocity impact and fragmentation of concrete : numerical simulation|10.18419/OPUS-593|4|0|B. Irhan|b88d4658b6efbfb4fb6e23b3399376b77cb5788e

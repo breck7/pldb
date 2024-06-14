@@ -1,0 +1,151 @@
+Nemerle
+=======
+
+Nemerle is a programming language created in 2003 by Krzysztof Czarnecki.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Krzysztof%20Czarnecki
+
+#350 on PLDB
+21 Years Old
+177 Repos
+
+Nemerle is a general-purpose high-level statically typed programming language designed for platforms using the Common Language Infrastructure (.NET/Mono). It offers functional, object-oriented (OO) and imperative features. It has a simple C#-like syntax and a powerful metaprogramming system. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Nemerle
+
+- Nemerle website
+ http://nemerle.org
+- Nemerle Wikipedia page
+ https://en.wikipedia.org/wiki/Nemerle
+- There are at least 177 Nemerle repos on GitHub
+- Nemerle first developed in JetBrains
+- The  Google BigQuery Public Dataset GitHub snapshot shows 257 users using Nemerle in 286 repos on GitHub
+- There are 10 Project Euler users using Nemerle
+- Explore Nemerle snippets on Rosetta Code
+- Nemerle on HOPL
+ https://hopl.info/showlanguage.prx?exp=8336
+- Nemerle appears in the TIOBE Index
+- Pygments supports syntax highlighting for Nemerle
+- GitHub supports syntax highlighting for Nemerle
+- nemerle.org was registered in 2003
+- See also: (7 related languages)C#, ML, Lisp, Java, OCaml, Haskell, SQL
+- 3 languages in PLDB linking to Nemerle: Eiffel, Nymph, Pygments
+
+class Hello
+{
+    static Main () : void
+    {
+        System.Console.WriteLine (&quot;Hello World&quot;);
+    }
+}
+
+// Hello World in Nemerle (a functional programming language for .NET)
+
+System.Console.WriteLine(&quot;Hello World&quot;);
+
+using System.Console;
+
+module Program
+{
+   Main() : void
+   {
+     WriteLine(&quot;Hello world&quot;);
+   }
+}
+
+using System;
+using System.Runtime.InteropServices;
+
+class PlatformInvokeTest
+{
+    [DllImport(&quot;msvcrt.dll&quot;)]
+    public extern static puts(c : string) : int;
+
+    [DllImport(&quot;msvcrt.dll&quot;)]
+    internal extern static _flushall() : int;
+
+    public static Main() : void
+    {
+        _ = puts(&quot;Test&quot;);
+        _ = _flushall();
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token System.Console.WriteLine
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Units of Measure
+ FeatureLink ../features/hasUnitsOfMeasure.html
+ Supported ✓
+ Token 
+ Example
+  def m3 = 1 g;
+  def m4 = Si.Mass(m1);
+  
+  WriteLine($"Mass in SI: $m4, in CGS: $m3");
+  
+  def x1 = Si.Area(1 cm * 10 m);
+  
+  WriteLine($"Area of 1 cm * 10 m = $x1 m");
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  // http://nemerle.org/About
+  def title = "Programming language authors";
+  def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
+      
+  // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+  def html = xml 
+      
+        $title
+      
+      
+        
+          $author
+        
+      
+    
+  #>
+  Trace.Assert(html.GetType().Equals(typeof(XElement)));
+  WriteLine(html.GetType());
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

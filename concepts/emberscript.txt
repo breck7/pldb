@@ -1,0 +1,48 @@
+EmberScript
+===========
+
+EmberScript is an open source programming language created in 2012 by Michael Ficarra and Gordon L. Hempton.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Ficarra
+ https://pldb.io/concepts/../lists/creators.html#q=Gordon%20L.%20Hempton
+
+#627 on PLDB
+12 Years Old
+206 Repos
+
+git clone https://github.com/ghempton/ember-script
+
+Ember-infused CoffeeScript
+
+- EmberScript website
+ http://emberscript.com/
+- EmberScript is developed on GitHub and has 358 stars
+- There are at least 206 EmberScript repos on GitHub
+- EmberScript first developed in https://github.com/ghempton/ember-script/issues
+- EmberScript is written in JavaScript, CoffeeScript, Ruby, Make, JSON, Markdown, YAML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 417 users using EmberScript in 459 repos on GitHub
+- GitHub supports syntax highlighting for EmberScript
+- emberscript.com was registered in 2012
+
+class App.FromNowView extends Ember.View
+    tagName: &#39;time&#39;
+    template: Ember.Handlebars.compile &#39;{{view.output}}&#39;
+    output: ~&gt;
+        return moment(@value).fromNow()
+
+    didInsertElement: -&gt;
+        @tick()
+
+    tick: -&gt;
+        f = -&gt;
+            @notifyPropertyChange &#39;output&#39;
+            @tick()
+
+        nextTick = Ember.run.later(this, f, 1000)
+        @set &#39;nextTick&#39;, nextTick
+
+    willDestroyElement: -&gt;
+        nextTick = @nextTick
+        Ember.run.cancel nextTick
+
+Ember.Handlebars.helper &#39;fromNow&#39;, App.FromNowView

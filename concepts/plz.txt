@@ -1,0 +1,68 @@
+PLZ
+===
+
+PLZ is a programming language created in 1979.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221979%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2307 on PLDB
+45 Years Old
+
+- PLZ first developed in Zilog, Inc
+- PLZ on HOPL
+ https://hopl.info/showlanguage.prx?exp=865
+- Read more about PLZ on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038
+
+bubble sort MODULE
+
+CONSTANT
+ false : .. 0
+ true := 1
+ 
+EXTERNAL
+ printarray PROCEDURE (first tWORD count BYTE)
+ 
+INTERNAL
+ a ARRAY [10 WORD]
+  := [33 10 2000 400 410
+   3 3 33 500 1999]
+ sort PROCEDURE (n BYTE)
+  LOCAL
+   i j limit BYTE
+   temp WORD
+   switched BYTE
+  ENTRY
+  DO
+   switched := false
+    i := 0
+    limit := n-2
+    DO
+     IF i &gt; limit THEN EXIT FI
+     j := i + 1
+     IF a[i] &gt; a[j] THEN
+      switched := true
+      temp :&#39;&quot; a [i)
+      a[i] := a[j]
+      a [j] : .. temp
+     FI
+     i +- 1
+   OD
+   IF switched .. false THEN RETURN FI
+  END sort
+GLOBAL
+ main PROCEDURE
+  ENTRY
+   sort (10)
+   printarray(ta[O] 10)
+  END main
+END bubble sort
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example

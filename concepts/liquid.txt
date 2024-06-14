@@ -1,0 +1,110 @@
+Liquid
+======
+
+Liquid is an open source template language created in 2008 by Tobias Lütke.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tobias%20L%C3%BCtke
+
+#81 on PLDB
+16 Years Old
+11k Repos
+
+git clone https://github.com/Shopify/liquid
+
+Liquid markup language. Safe, customer facing template language for flexible web apps.
+
+- Liquid website
+ https://shopify.github.io/liquid/
+- Liquid is developed on GitHub and has 9,596 stars
+- Liquid docs
+ https://shopify.dev/api/liquid
+- There are at least 11,459 Liquid repos on GitHub
+- Liquid first developed in https://github.com/Shopify
+- Liquid is written in Ruby, Liquid, YAML, Markdown
+- The  Google BigQuery Public Dataset GitHub snapshot shows 947 users using Liquid in 1k repos on GitHub
+- Monaco package for syntax highlighting Liquid
+- Pygments supports syntax highlighting for Liquid
+- GitHub supports syntax highlighting for Liquid
+- Indeed.com has 325 matches for "liquid engineer".
+- 4 languages in PLDB linking to Liquid: Ace Editor, Liquid, mochajs, Pygments
+
+&lt;h3&gt;We have wonderful products!&lt;/h3&gt;
+&lt;ul id=&quot;products&quot;&gt;
+  &lt;div id=&quot;productpage&quot;&gt;
+    &lt;div id=&quot;productimages&quot;&gt;&lt;div id=&quot;productimages-top&quot;&gt;&lt;div id=&quot;productimages-bottom&quot;&gt;
+      {% for image in product.images %}
+        {% if forloop.first %}
+          &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage&quot; rel=&quot;lightbox&quot;&gt;
+            &lt;img src=&quot;{{ image | product_img_url: &#39;medium&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+          &lt;/a&gt;
+        {% else %}
+          &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage-small&quot; rel=&quot;lightbox&quot;&gt;
+            &lt;img src=&quot;{{ image | product_img_url: &#39;small&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+          &lt;/a&gt;
+        {% endif %}
+      {% endfor %}
+    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;h2&gt;{{ product.title }}&lt;/h2&gt;
+
+    &lt;ul id=&quot;details&quot; class=&quot;hlist&quot;&gt;
+      &lt;li&gt;Vendor: {{ product.vendor | link_to_vendor }}&lt;/li&gt;
+      &lt;li&gt;Type: {{ product.type | link_to_type }}&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;small&gt;{{ product.price_min | money }}{% if product.price_varies %} - {{ product.price_max | money }}{% endif %}&lt;/small&gt;
+
+    &lt;div id=&quot;variant-add&quot;&gt;
+      &lt;form action=&quot;/cart/add&quot; method=&quot;post&quot;&gt;
+
+        &lt;select id=&quot;variant-select&quot; name=&quot;id&quot; class=&quot;product-info-options&quot;&gt;
+          {% for variant in product.variants %}
+            &lt;option value=&quot;{{ variant.id }}&quot;&gt;{{ variant.title }} - {{ variant.price | money }}&lt;/option&gt;
+          {% endfor %}
+        &lt;/select&gt;
+
+        &lt;div id=&quot;price-field&quot; class=&quot;price&quot;&gt;&lt;/div&gt;
+
+      &lt;div style=&quot;text-align:center;&quot;&gt;&lt;input type=&quot;image&quot; name=&quot;add&quot; value=&quot;Add to Cart&quot; id=&quot;add&quot; src=&quot;{{ &#39;addtocart.gif&#39; | asset_url }}&quot; /&gt;&lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;description textile&quot;&gt;
+      {{ product.description }}
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  &lt;!--
+    // prototype callback for multi variants dropdown selector
+    var selectCallback = function(variant, selector) {
+      if (variant &amp;&amp; variant.available == true) {
+        // selected a valid variant
+        $(&#39;add&#39;).removeClassName(&#39;disabled&#39;); // remove unavailable class from add-to-cart button
+        $(&#39;add&#39;).disabled = false;           // reenable add-to-cart button
+        $(&#39;price-field&#39;).innerHTML = Shopify.formatMoney(variant.price, &quot;{{shop.money_with_currency_format}}&quot;);  // update price field
+      } else {
+        // variant doesn&#39;t exist
+        $(&#39;add&#39;).addClassName(&#39;disabled&#39;);      // set add-to-cart button to unavailable class
+        $(&#39;add&#39;).disabled = true;              // disable add-to-cart button
+        $(&#39;price-field&#39;).innerHTML = (variant) ? &quot;Sold Out&quot; : &quot;Unavailable&quot;; // update price-field message
+      }
+    };
+
+    // initialize multi selector for product
+    Event.observe(document, &#39;dom:loaded&#39;, function() {
+      new Shopify.OptionSelectors(&quot;variant-select&quot;, { product: {{ product | json }}, onVariantSelected: selectCallback });
+    });
+  --&gt;
+  &lt;/script&gt;
+&lt;/ul&gt;
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example

@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id macchiato
+name Macchiato
+appeared 2019
+creators Eddie aka. tamamu
+tags pl
+website https://github.com/tamamu/macchiato
+
+writtenIn elixir markdown
+compilesTo javascript
+fileExtensions at
+repoStats
+ firstCommit 2019
+ commits 4
+ committers 2
+ files 14
+ newestCommit 2019
+country Japan
+originCommunity https://github.com/tamamu/macchiato/issues
+
+example
+ (defn inc (x) (+ 1 x))
+ (defn fizzbuzz (n)
+   (doseq (i (range 1 n#inc))
+          (match (list (mod i 3) (mod i 5))
+                 (0 0) (console:log "FizzBuzz")
+                 (0 _) (console:log "Fizz")
+                 (_ 0) (console:log "Buzz")
+                 _     (console:log i))))
+ (fizzbuzz 20)
+
+githubRepo https://github.com/tamamu/macchiato
+ stars 0
+ forks 0
+ subscribers 3
+ created 2019
+ updated 2019
+ description An AltJS of a dialect of Lisp
+ issues 0

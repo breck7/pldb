@@ -1,0 +1,25 @@
+htmx
+====
+
+htmx is a template language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#517 on PLDB
+4 Years Old
+
+git clone https://github.com/bigskysoftware/htmx
+
+ htmx - high power tools for HTML
+
+- htmx website
+ https://htmx.org/
+- htmx is developed on GitHub and has 7,059 stars
+- htmx first developed in https://github.com/bigskysoftware/
+- htmx is written in Markdown, JavaScript, HTML, SVG, JSON, CSS, TOML, TypeScript, Bourne shell, YAML, XML, Ruby, CSV
+- htmx.org was registered in 2020
+
+&lt;script src=&quot;https://unpkg.com/htmx.org@1.7.0&quot;&gt;&lt;/script&gt;
+&lt;!-- have a button POST a click via AJAX --&gt;
+&lt;button hx-post=&quot;/clicked&quot; hx-swap=&quot;outerHTML&quot;&gt;
+  Click Me
+&lt;/button&gt;

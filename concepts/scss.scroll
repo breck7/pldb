@@ -1,0 +1,123 @@
+import ../code/conceptPage.scroll
+
+id scss
+name SCSS
+appeared 2006
+creators Hampton Lintorn-Catlin
+tags stylesheetLanguage
+website http://sass-lang.com/
+webRepl https://playcode.io/scss/
+
+fileExtensions sass scss
+clocExtensions scss
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/scss
+monaco scss
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://github.com/sass
+reference https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+
+pygmentsHighlighter SCSS
+ filename css.py
+ fileExtensions scss
+rijuRepl https://riju.codes/scss
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  
+twitter https://twitter.com/sasscss
+leachim6 SCSS
+ filepath s/SCSS.scss
+ fileExtensions scss
+ example
+  body::before {
+      content: "Hello World";
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+
+hasSemanticIndentation true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasStrings true
+ "Hello world"
+hasMixins true
+ @mixin reset-list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ @mixin horizontal-list {
+   @include reset-list;
+ 
+   li {
+     display: inline-block;
+     margin: {
+       left: -2px;
+       right: 2em;
+     }
+   }
+ }
+ nav ul {
+   @include horizontal-list;
+ }
+
+domainName sass-lang.com
+ registered 2009
+ awisRank
+  2022 22267
+  2017 38503
+
+githubBigQuery SCSS
+ repos 8503
+ users 7569
+
+linguistGrammarRepo https://github.com/MarioRicalde/SCSS.tmbundle
+ firstCommit 2010
+ lastCommit 2015
+ committerCount 32
+ commitCount 203
+ sampleCount 1
+ example
+  $blue: #3bbfce;
+  $margin: 16px;
+  
+  .content-navigation {
+    border-color: $blue;
+    color:
+      darken($blue, 9%);
+  }
+  
+  .border {
+    padding: $margin / 2;
+    margin: $margin / 2;
+    border-color: $blue;
+  }
+  
+
+isbndb 0
+
+githubLanguage SCSS
+ fileExtensions scss
+ trendingProjectsCount 0
+ type markup
+ aceMode scss
+ codemirrorMode css
+ codemirrorMimeType text/x-scss
+ tmScope source.css.scss
+ repos 335325
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|23111454|0.0|0|0
+ Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|369788|0.0|0|0

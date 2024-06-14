@@ -1,0 +1,69 @@
+X PixMap
+========
+
+X PixMap is an application created in 1989.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1982 on PLDB
+35 Years Old
+170 Repos
+
+X PixMap (XPM) is an image file format used by the X Window System, created in 1989 by Daniel Dardailler and Colas Nahaboo working at Bull Research Center at Sophia Antipolis, France, and later enhanced by Arnaud Le Hors.It is intended primarily for creating icon pixmaps, and supports transparent pixels. Derived from the earlier XBM syntax, it is a plain text file in the XPM2 format or of a C programming language syntax, which can be included in a C program file.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/X_PixMap
+
+- X PixMap Wikipedia page
+ https://en.wikipedia.org/wiki/X_PixMap
+- There are at least 170 X PixMap repos on GitHub
+- GitHub supports syntax highlighting for X PixMap
+- See also: (3 related languages)X BitMap, C, ASCII
+
+/* XPM */
+static char * stick_unfocus_xpm[] = {
+&quot;20 17 20 1&quot;,
+&quot; 	c None&quot;,
+&quot;.	c #EBEBEB&quot;,
+&quot;+	c #E9E9E9&quot;,
+&quot;@	c #E6E6E6&quot;,
+&quot;#	c #E5E5E5&quot;,
+&quot;$	c #E2E2E2&quot;,
+&quot;%	c #DFDFDF&quot;,
+&quot;&amp;	c #DEDEDE&quot;,
+&quot;*	c #FEFEFE&quot;,
+&quot;=	c #C4C4C4&quot;,
+&quot;-	c #898989&quot;,
+&quot;;	c #B7B7B7&quot;,
+&quot;&gt;	c #6A6A6A&quot;,
+&quot;,	c #B9B9B9&quot;,
+&quot;&#39;	c #E4E4E4&quot;,
+&quot;)	c #686868&quot;,
+&quot;!	c #E0E0E0&quot;,
+&quot;~	c #666666&quot;,
+&quot;{	c #E8E8E8&quot;,
+&quot;]	c #E1E1E1&quot;,
+&quot;....................&quot;,
+&quot;....................&quot;,
+&quot;.....+@#$%&amp;%$#@+....&quot;,
+&quot;....+*********=&amp;+...&quot;,
+&quot;....@*********-=#...&quot;,
+&quot;....#**;;;;;**&gt;,&#39;...&quot;,
+&quot;....$**;**;;**);$...&quot;,
+&quot;....%**;;;;;**&gt;;&amp;...&quot;,
+&quot;....&amp;**;***;**&gt;;&amp;...&quot;,
+&quot;....&amp;**;;;;;**&gt;;&amp;...&quot;,
+&quot;....!*********~;!...&quot;,
+&quot;....!*********&gt;,&amp;...&quot;,
+&quot;....@=-&gt;)&gt;&gt;&gt;)&gt;-=#...&quot;,
+&quot;....+&amp;=,;;;;;,=&amp;+...&quot;,
+&quot;.....{]%%&amp;&amp;&amp;&amp;%@+....&quot;,
+&quot;....................&quot;,
+&quot;....................&quot;};
+
+P1
+16 7
+1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+1 1 0 0 1 0 0 1 1 0 1 1 0 0 1 1
+1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1
+1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0

@@ -1,0 +1,87 @@
+Operational Control Language
+============================
+
+Operational Control Language is a programming language created in 1986.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1751 on PLDB
+38 Years Old
+
+Operational Control Language (OCL) is the control language of the IBM System/34 and System/36 minicomputer family. Other control languages include CL (System/38 and AS/400), JCL (System/370), and REXX (AS/400). The facility of DOS to use batch files is also control language.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Operational_Control_Language
+
+- Operational Control Language Wikipedia page
+ https://en.wikipedia.org/wiki/Operational_Control_Language
+- Operational Control Language first developed in IBM
+- Operational Control Language on HOPL
+ https://hopl.info/showlanguage.prx?exp=2301
+- See also: (1 related languages)JCL
+
+** Procedure PROC1
+**
+** Written by Joe User 2006-05-29
+**
+**
+// * &#39;PROC1 procedure is running&#39;
+// * &#39; &#39;
+// IFF ACTIVE-&#39;PROC2,PROC3&#39; GOTO OKAY
+** IFF means &#39;if false&#39;
+** ACTIVE-&#39;nnn,nnn2&#39; means at least one of the listed programs is currently running
+** GOTO xxx means skip to the statement that says TAG xxx and resume processing
+// PAUSE &#39; Cannot continue because other Payroll is running&#39;
+// CANCEL                                               stops execution of this procedure
+// TAG OKAY
+// IFF DATAF1-PFILE1 IFF DATAF1-PFILE2 GOTO NODELT
+// * &#39; Caution, Pay Data Exists&#39;                        displays info on CRT
+// * &#39; &#39;
+// * &#39; Press 1 to continue and DELETE existing files&#39;
+// IFF &#39;1&#39;=?1R? CANCEL     A parameter is indicated by question marks surrounding a number
+** Using 1R between question marks indicates that the parameter is required and processing
+** waits for user input.  CANCEL means immediately go to end of job.
+// LOAD $DELET                                         $DELET is used to delete files
+// RUN
+// IF DATAF1-PFILE1 SCRATCH UNIT-F1,LABEL-PFILE1       deletes a disk file
+// IF DATAF1-PFILE2 SCRATCH UNIT-F1,LABEL-PFILE2
+// END                                              END returns control from a system program
+// LOAD PR101                                          PR101 is the sample RPG program
+// FILE NAME-PAYMAST,DISP-SHR                          PAYMAST is the payroll master file
+// FILE NAME-PFILE1,DISP-NEW,RECORDS-100,EXTEND-100    A new file PFILE1 is created
+** 100 records are assigned to PFILE1 - if full, the system tries to extend it by another 100
+** each time it fills.
+// RUN
+** It&#39;s not necessary or valid to put an END statement after most user programs
+// SWITCH 1XXXXXXX                                    Causes U1 to be SETON in the RPG program
+// LOCAL OFFSET-1,DATA-&#39;PROC1&#39;      Places PROC1 in the Local Data Area
+// LOCAL OFFSET-101,DATA-&#39;?USER?&#39;   Substitutes the operator&#39;s User ID
+** LDA becomes the external data structure (UDS) in an RPG program
+// LOAD PR102
+// FILE NAME-PAYMAST,DISP-SHR                         DISP-SHR means the file is shared
+** Other programs can use PAYMAST at the same time
+// FILE NAME-PFILE,LABEL-PFILE1
+** NAME/LABEL is used when the RPG disk file and the actual disk file names are different.
+// RUN
+// RETURN                                             Return means go to end-of-job
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

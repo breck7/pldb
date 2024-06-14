@@ -1,0 +1,58 @@
+Miranda
+=======
+
+Miranda is a programming language created in 1985 by David Turner.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Turner
+
+#783 on PLDB
+39 Years Old
+
+Try now: Riju
+
+Miranda is a lazy, purely functional programming language designed by David Turner as a successor to his earlier programming languages SASL and KRC, using some concepts from ML and Hope.  It was produced by Research Software Ltd. of England (which holds a trademark on the name Miranda) and was the first purely functional language to be commercially supported.Miranda was first released in 1985, as a fast interpreter in C for Unix-flavour operating systems, with subsequent releases in 1987 and 1989. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Miranda_(programming_language)
+
+- Miranda Wikipedia page
+ https://en.wikipedia.org/wiki/Miranda_(programming_language)
+- Miranda first developed in Research Software Ltd
+- Miranda on HOPL
+ https://hopl.info/showlanguage.prx?exp=911
+- See also: (11 related languages)KRC, ML, HOPE, Clean, Haskell, C, Unix, ISWIM, Occam, Python, Pascal
+
+main = [Stdout &quot;Hello, world!&quot;]
+
+main :: [sys_message]
+main = [Stdout &quot;Hello World&quot;]
+
+&gt; || The infinite list of all prime numbers.
+
+The list of potential prime numbers starts as all integers from 2 onwards;
+as each prime is returned, all the following numbers that can exactly be
+divided by it are filtered out of the list of candidates.
+
+&gt; primes = sieve [2..]
+&gt; sieve (p:x) = p : sieve [n | n &lt;- x; n mod p ~= 0]
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Stdout
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

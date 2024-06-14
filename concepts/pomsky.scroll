@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id pomsky
+name Pomsky
+appeared 2022
+creators Ludwig Stecher
+tags pl
+website https://pomsky-lang.org/
+latestVersion v0.4.3
+oldName Rulex
+
+writtenIn rust markdown toml javascript yaml java csharp python z-shell bash svg json
+repoStats
+ firstCommit 2022
+ commits 414
+ committers 7
+ files 546
+ newestCommit 2024
+country Germany
+originCommunity https://github.com/rulex-rs
+
+example
+ 'Hello' ' '+ ('world' | 'pomsky')
+
+githubRepo https://github.com/rulex-rs/pomsky
+ firstCommit 2022
+ stars 1068
+ forks 15
+ subscribers 6
+ created 2022
+ updated 2023
+ description A new, portable, regular expression language
+ issues 25

@@ -1,0 +1,131 @@
+Jison
+=====
+
+Jison is an open source programming language created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#246 on PLDB
+15 Years Old
+0 Repos
+
+git clone https://github.com/zaach/jison
+
+Bison in JavaScript.
+
+- Jison website
+ http://zaa.ch/jison/
+- Jison is developed on GitHub and has 4,136 stars
+- Jison docs
+ https://gerhobbelt.github.io/jison/docs/
+- There are at least 0 Jison repos on GitHub
+- Jison first developed in https://github.com/zaach/jison/issues
+- Jison is written in JavaScript, C#, HTML, JSON, CSS, XML, Ruby, Markdown, YAML, PHP, Yacc, Make
+- GitHub supports syntax highlighting for Jison
+
+/* description: ClassyLang grammar. Very classy. */
+/*
+  To build parser:
+
+    $ ./bin/jison examples/classy.jison examples/classy.jisonlex
+
+*/
+
+/* author: Zach Carter */
+
+%right ASSIGN
+%left OR
+%nonassoc EQUALITY GREATER
+%left PLUS MINUS
+%left TIMES
+%right NOT
+%left DOT
+
+%%
+
+pgm
+    : cdl MAIN LBRACE vdl el RBRACE ENDOFFILE
+    ;
+
+cdl
+    : c cdl
+    |
+    ;
+
+c
+    : CLASS id EXTENDS id LBRACE vdl mdl RBRACE
+    ;
+
+vdl
+    : VAR t id SEMICOLON vdl
+    |
+    ;
+
+mdl
+    : t id LPAREN t id RPAREN LBRACE vdl el RBRACE mdl
+    |
+    ;
+
+t
+    : NATTYPE
+    | id
+    ;
+
+id
+    : ID
+    ;
+
+el
+    : e SEMICOLON el
+    | e SEMICOLON
+    ;
+
+e
+    : NATLITERAL
+    | NUL
+    | id
+    | NEW id
+    | THIS
+    | IF LPAREN e RPAREN LBRACE el RBRACE ELSE LBRACE el RBRACE
+    | FOR LPAREN e SEMICOLON e SEMICOLON e RPAREN LBRACE el RBRACE
+    | READNAT LPAREN RPAREN
+    | PRINTNAT LPAREN e RPAREN
+    | e PLUS e
+    | e MINUS e
+    | e TIMES e
+    | e EQUALITY e
+    | e GREATER e
+    | NOT e
+    | e OR e
+    | e DOT id
+    | id ASSIGN e
+    | e DOT id ASSIGN e
+    | id LPAREN e RPAREN
+    | e DOT id LPAREN e RPAREN
+    | LPAREN e RPAREN
+    ;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

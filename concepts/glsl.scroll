@@ -1,0 +1,70 @@
+import ../code/conceptPage.scroll
+
+id glsl
+name GLSL
+appeared 1992
+tags pl
+
+clocExtensions comp fp frag frg fsh fshader geo geom glsl glslv gshader tesc tese vert vrx vsh vshader
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:GLSL
+centralPackageRepositoryCount 0
+country United States
+originCommunity OpenGL Architecture Review Board
+
+pygmentsHighlighter GLSL
+ filename graphics.py
+ fileExtensions vert frag geo
+languageServerProtocolProject https://github.com/svenstaro/glsl-language-server
+ writtenIn cpp
+
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
+
+wikipedia https://en.wikipedia.org/wiki/OpenGL_Shading_Language
+ related opengl c linux javascript delphi java webgl cg
+ summary OpenGL Shading Language (abbreviated: GLSL), is a high-level shading language with a syntax based on the C programming language. It was created by the OpenGL ARB (OpenGL Architecture Review Board) to give developers more direct control of the graphics pipeline without having to use ARB assembly language or hardware-specific languages.
+ pageId 2152476
+ dailyPageViews 46
+ created 2013
+ backlinksCount 45
+ revisionCount 311
+ appeared 1992
+
+tiobe GLSL
+
+githubBigQuery GLSL
+ repos 13882
+ users 11708
+
+linguistGrammarRepo https://github.com/euler0/sublime-glsl
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 9
+ commitCount 62
+ sampleCount 14
+ example
+  varying vec4 v_color;
+  
+  void main()
+  {
+  	gl_FragColor = v_color;
+  }
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2013|Packt Publishing|GLSL Essentials|Rodriguez, Jacobo|9781849698016
+ 2013|Packt Publishing|GLSL Essentials|Rodríguez, Jacobo|9781849698009
+
+githubLanguage GLSL
+ fileExtensions glsl fp frag frg fs fsh fshader geo geom glslf glslv gs gshader rchit rmiss shader tesc tese vert vrx vsh vshader
+ trendingProjectsCount 0
+ type programming
+ aceMode glsl
+ tmScope source.glsl
+ repos 11778

@@ -1,0 +1,90 @@
+Inno Setup
+==========
+
+Inno Setup is an open source programming language created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#976 on PLDB
+27 Years Old
+178k Repos
+
+Inno Setup is a free software script-driven installation system created in Delphi by Jordan Russell. The first version was released in 1997.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Inno_Setup
+
+- Inno Setup Wikipedia page
+ https://en.wikipedia.org/wiki/Inno_Setup
+- There are at least 178,157 Inno Setup repos on GitHub
+- Inno Setup first developed in https://jrsoftware.org/
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Inno Setup in 4k repos on GitHub
+- GitHub supports syntax highlighting for Inno Setup
+- See also: (5 related languages)Delphi, IA-32, Ini, Pascal, Unicode
+
+; Basic setup script for the Inno Setup installer builder.  For more
+; information on the free installer builder, see www.jrsoftware.org.
+;
+; This script was contributed by Tim Peters.
+; It was designed for Inno Setup 2.0.19 but works with later versions as well.
+
+[Setup]
+AppName=Expat
+AppId=expat
+AppVersion=2.1.0
+AppVerName=Expat 2.1.0
+AppCopyright=Copyright 1998-2012 Thai Open Source Software Center, Clark Cooper, and the Expat maintainers
+AppPublisher=The Expat Developers
+AppPublisherURL=http://www.libexpat.org/
+AppSupportURL=http://www.libexpat.org/
+AppUpdatesURL=http://www.libexpat.org/
+UninstallDisplayName=Expat XML Parser 2.1.0
+VersionInfoVersion=2.1.0
+
+DefaultDirName={pf}\Expat 2.1.0
+UninstallFilesDir={app}\Uninstall
+
+Compression=lzma
+SolidCompression=yes
+SourceDir=..
+OutputDir=win32
+DisableStartupPrompt=yes
+AllowNoIcons=yes
+DisableProgramGroupPage=yes
+DisableReadyPage=yes
+
+[Files]
+Flags: ignoreversion; Source: win32\bin\Release\xmlwf.exe;  DestDir: &quot;{app}\Bin&quot;
+Flags: ignoreversion; Source: win32\MANIFEST.txt;           DestDir: &quot;{app}&quot;
+Flags: ignoreversion; Source: Changes;                      DestDir: &quot;{app}&quot;; DestName: Changes.txt
+Flags: ignoreversion; Source: COPYING;                      DestDir: &quot;{app}&quot;; DestName: COPYING.txt
+Flags: ignoreversion; Source: README;                       DestDir: &quot;{app}&quot;; DestName: README.txt
+Flags: ignoreversion; Source: doc\*.html;                   DestDir: &quot;{app}\Doc&quot;
+Flags: ignoreversion; Source: doc\*.css;                    DestDir: &quot;{app}\Doc&quot;
+Flags: ignoreversion; Source: doc\*.png;                    DestDir: &quot;{app}\Doc&quot;
+Flags: ignoreversion; Source: win32\bin\Release\*.dll;      DestDir: &quot;{app}\Bin&quot;
+Flags: ignoreversion; Source: win32\bin\Release\*.lib;      DestDir: &quot;{app}\Bin&quot;
+Flags: ignoreversion; Source: expat.dsw;                    DestDir: &quot;{app}\Source&quot;
+Flags: ignoreversion; Source: win32\README.txt;             DestDir: &quot;{app}\Source&quot;
+Flags: ignoreversion; Source: bcb5\*.bp*;                   DestDir: &quot;{app}\Source\bcb5&quot;
+Flags: ignoreversion; Source: bcb5\*.mak;                   DestDir: &quot;{app}\Source\bcb5&quot;
+Flags: ignoreversion; Source: bcb5\*.def;                   DestDir: &quot;{app}\Source\bcb5&quot;
+Flags: ignoreversion; Source: bcb5\*.txt;                   DestDir: &quot;{app}\Source\bcb5&quot;
+Flags: ignoreversion; Source: bcb5\*.bat;                   DestDir: &quot;{app}\Source\bcb5&quot;
+Flags: ignoreversion; Source: lib\*.c;                      DestDir: &quot;{app}\Source\lib&quot;
+Flags: ignoreversion; Source: lib\*.h;                      DestDir: &quot;{app}\Source\lib&quot;
+Flags: ignoreversion; Source: lib\*.def;                    DestDir: &quot;{app}\Source\lib&quot;
+Flags: ignoreversion; Source: lib\*.dsp;                    DestDir: &quot;{app}\Source\lib&quot;
+Flags: ignoreversion; Source: examples\*.c;                 DestDir: &quot;{app}\Source\examples&quot;
+Flags: ignoreversion; Source: examples\*.dsp;               DestDir: &quot;{app}\Source\examples&quot;
+Flags: ignoreversion; Source: tests\*.c;                    DestDir: &quot;{app}\Source\tests&quot;
+Flags: ignoreversion; Source: tests\*.cpp;                  DestDir: &quot;{app}\Source\tests&quot;
+Flags: ignoreversion; Source: tests\*.h;                    DestDir: &quot;{app}\Source\tests&quot;
+Flags: ignoreversion; Source: tests\README.txt;             DestDir: &quot;{app}\Source\tests&quot;
+Flags: ignoreversion; Source: tests\benchmark\*.c;          DestDir: &quot;{app}\Source\tests\benchmark&quot;
+Flags: ignoreversion; Source: tests\benchmark\*.ds*;        DestDir: &quot;{app}\Source\tests\benchmark&quot;
+Flags: ignoreversion; Source: tests\benchmark\README.txt;   DestDir: &quot;{app}\Source\tests\benchmark&quot;
+Flags: ignoreversion; Source: xmlwf\*.c*;                   DestDir: &quot;{app}\Source\xmlwf&quot;
+Flags: ignoreversion; Source: xmlwf\*.h;                    DestDir: &quot;{app}\Source\xmlwf&quot;
+Flags: ignoreversion; Source: xmlwf\*.dsp;                  DestDir: &quot;{app}\Source\xmlwf&quot;
+
+[Messages]
+WelcomeLabel1=Welcome to the Expat XML Parser Setup Wizard
+WelcomeLabel2=This will install [name/ver] on your computer.%n%nExpat is an XML parser with a C-language API, and is primarily made available to allow developers to build applications which use XML using a portable API and fast implementation.%n%nIt is strongly recommended that you close all other applications you have running before continuing. This will help prevent any conflicts during the installation process.

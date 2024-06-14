@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id picat
+name Picat
+appeared 2012
+creators Neng-Fa Zhou and Jonathan Fruhman
+tags pl
+website http://www.picat-lang.org/
+
+relatedConcepts prolog
+reference http://www.hakank.org/picat/
+
+example
+ import util.
+ 
+ input_data(Tri) =>
+     Lines = read_file_lines("triangle.txt"),
+     Tri = new_array(Lines.length),
+     I = 1,
+     foreach(Line in Lines)
+         Tri[I] = Line.split().map(to_integer).to_array(),
+  I := I+1
+     end.
+leachim6 PiCat
+ filepath p/PiCat.pi
+ fileExtensions pi
+ example
+  main =>
+    println("Hello World").
+
+printToken println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName picat-lang.org
+ registered 2012
+ awisRank
+  2022 4716784

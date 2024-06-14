@@ -1,0 +1,104 @@
+chevrotain
+==========
+
+chevrotain is an open source library created in 2015.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#566 on PLDB
+9 Years Old
+
+git clone https://github.com/SAP/chevrotain
+
+Parser Building Toolkit for JavaScript
+
+- chevrotain website
+ http://sap.github.io/chevrotain/
+- chevrotain is developed on GitHub and has 1,957 stars
+- chevrotain first developed in SAP
+- chevrotain is written in TypeScript, JavaScript, Markdown, JSON, HTML, YAML, Bourne shell, CSS, JSON5, CSV
+
+&quot;use strict&quot;
+/**
+ * An Example of implementing a CSV Grammar with Chevrotain.
+ *
+ * Based on: https://github.com/antlr/grammars-v4/blob/master/csv/CSV.g4
+ *
+ * Note that this is a pure grammar without any actions (either embedded or via a CST Visitor).
+ */
+const { createToken, Lexer, Parser, EMPTY_ALT } = require(&quot;chevrotain&quot;)
+
+// ----------------- lexer -----------------
+const Text = createToken({ name: &quot;Text&quot;, pattern: /[^,\n\r&quot;]+/ })
+const Comma = createToken({ name: &quot;Comma&quot;, pattern: /,/ })
+const NewLine = createToken({
+    name: &quot;NewLine&quot;,
+    pattern: /\r?\n/
+})
+const String = createToken({ name: &quot;String&quot;, pattern: /&quot;(?:&quot;&quot;|[^&quot;])*&quot;/ })
+
+const allTokens = [Text, String, Comma, NewLine]
+const CsvLexer = new Lexer(allTokens)
+
+// Parser
+class CsvParser extends Parser {
+    constructor() {
+        super(allTokens)
+
+        // not mandatory, using $ (or any other sign) to reduce verbosity
+        const $ = this
+
+        $.RULE(&quot;csvFile&quot;, () =&gt; {
+            $.SUBRULE($.hdr)
+            $.AT_LEAST_ONE(() =&gt; {
+                $.SUBRULE2($.row)
+            })
+        })
+
+        $.RULE(&quot;hdr&quot;, () =&gt; {
+            $.SUBRULE($.row)
+        })
+
+        $.RULE(&quot;row&quot;, () =&gt; {
+            $.SUBRULE($.field)
+            $.MANY(() =&gt; {
+                $.CONSUME(Comma)
+                $.SUBRULE2($.field)
+            })
+            $.CONSUME(NewLine)
+        })
+
+        $.RULE(&quot;field&quot;, () =&gt; {
+            $.OR([
+                { ALT: () =&gt; $.CONSUME(Text) },
+                { ALT: () =&gt; $.CONSUME(String) },
+                { ALT: EMPTY_ALT(&quot;empty field&quot;) }
+            ])
+        })
+
+        // very important to call this after all the rules have been defined.
+        // otherwise the parser may not work correctly as it will lack information
+        // derived during the self analysis phase.
+        this.performSelfAnalysis()
+    }
+}
+
+// wrapping it all together
+// reuse the same parser instance.
+const parser = new CsvParser([])
+
+module.exports = function(text) {
+    // 1. Tokenize the input.
+    const lexResult = CsvLexer.tokenize(text)
+
+    // 2. Set the Parser&#39;s input
+    parser.input = lexResult.tokens
+
+    // 3. invoke the desired parser rule
+    const cst = parser.csvFile()
+
+    return {
+        cst: cst,
+        lexResult: lexResult,
+        parseErrors: parser.errors
+    }
+}

@@ -1,0 +1,50 @@
+Eagle
+=====
+
+Eagle is an application created in 1988.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#914 on PLDB
+36 Years Old
+
+EAGLE is a scriptable electronic design automation (EDA) application with schematic capture, printed circuit board (PCB) layout, auto-router and computer-aided manufacturing (CAM) features. EAGLE stands for Easily Applicable Graphical Layout Editor (German: Einfach Anzuwendender Grafischer Layout-Editor) and is developed by CadSoft Computer GmbH. The company was acquired by Autodesk Inc. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/EAGLE_(program)
+
+- Eagle Wikipedia page
+ https://en.wikipedia.org/wiki/EAGLE_(program)
+- Eagle first developed in Autodesk, Inc.
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Eagle in 2k repos on GitHub
+- GitHub supports syntax highlighting for Eagle
+- See also: (5 related languages)Linux, PostScript, XML, Arduino Programming Language, KiCad Legacy Layout
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE eagle SYSTEM &quot;eagle.dtd&quot;&gt;
+&lt;eagle version=&quot;6.3&quot;&gt;
+&lt;drawing&gt;
+&lt;settings&gt;
+&lt;setting alwaysvectorfont=&quot;no&quot;/&gt;
+&lt;setting verticaltext=&quot;up&quot;/&gt;
+&lt;/settings&gt;
+&lt;grid distance=&quot;10&quot; unitdist=&quot;mil&quot; unit=&quot;mil&quot; style=&quot;lines&quot; multiple=&quot;1&quot; display=&quot;no&quot; altdistance=&quot;0.025&quot; altunitdist=&quot;inch&quot; altunit=&quot;inch&quot;/&gt;
+&lt;layers&gt;
+&lt;layer number=&quot;1&quot; name=&quot;Top&quot; color=&quot;4&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;2&quot; name=&quot;Route2&quot; color=&quot;1&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;3&quot; name=&quot;Route3&quot; color=&quot;4&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;4&quot; name=&quot;Route4&quot; color=&quot;1&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;5&quot; name=&quot;Route5&quot; color=&quot;4&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;6&quot; name=&quot;Route6&quot; color=&quot;1&quot; fill=&quot;8&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;7&quot; name=&quot;Route7&quot; color=&quot;4&quot; fill=&quot;8&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;8&quot; name=&quot;Route8&quot; color=&quot;1&quot; fill=&quot;2&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;9&quot; name=&quot;Route9&quot; color=&quot;4&quot; fill=&quot;2&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;10&quot; name=&quot;Route10&quot; color=&quot;1&quot; fill=&quot;7&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;11&quot; name=&quot;Route11&quot; color=&quot;4&quot; fill=&quot;7&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;12&quot; name=&quot;Route12&quot; color=&quot;1&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;13&quot; name=&quot;Route13&quot; color=&quot;4&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;14&quot; name=&quot;Route14&quot; color=&quot;1&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;15&quot; name=&quot;Route15&quot; color=&quot;4&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;16&quot; name=&quot;Bottom&quot; color=&quot;1&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;17&quot; name=&quot;Pads&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;18&quot; name=&quot;Vias&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;19&quot; name=&quot;Unrouted&quot; color=&quot;6&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;20&quot; name=&quot;Dimension&quot; color=&quot;15&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;21&quot; name=&quot;tPlace&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; act

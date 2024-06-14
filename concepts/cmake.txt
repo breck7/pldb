@@ -1,0 +1,63 @@
+CMake
+=====
+
+CMake is an open source application created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#87 on PLDB
+24 Years Old
+
+git clone https://gitlab.kitware.com/cmake/cmake
+
+Try now: Riju
+
+CMake is cross-platform free and open-source software for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries. It is used in conjunction with native build environments such as make, Apple's Xcode, and Microsoft Visual Studio. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/CMake
+
+- CMake website
+ https://cmake.org/
+- CMake Wikipedia page
+ https://en.wikipedia.org/wiki/CMake
+- CMake on GitLab
+ https://gitlab.kitware.com/cmake/cmake
+- CMake first developed in Kitware, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 39k users using CMake in 56k repos on GitHub
+- Explore CMake snippets on Rosetta Code
+- CodeMirror package for syntax highlighting CMake
+- Pygments supports syntax highlighting for CMake
+- GitHub supports syntax highlighting for CMake
+- cmake.org was registered in 2001
+- See also: (16 related languages)C, Visual Studio, Eclipse, Linux, Ninja, Unix, Falcon, KiCad Legacy Layout, LLVM IR, MySQL, MariaDB, Qt, Advanced Message Queuing Protocol, ROOT, Meson, QMake
+- Read more about CMake on the web: 1.
+ https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
+- 162 languages in PLDB linking to CMake: acorn-lang, Adept, Apache Hbase, ArkScript, atomspace, AviSynth, Basis Codec, Bazel, beef-lang, Berry, binaryen, BlitzMax, Boomerang Decompiler, Broccoli, C2, C3, Calc4, Cap'n Proto, chaiscript, Chapel, checked-c, clay, cloc, Cone, Croc, curv, Dale, Dern, egel, Eiffel, elena, emerald-lang, Emojicode, Emscripten, F Prime, Fardlang, Fern, fish, FlatBuffers, Flow9, flua, ForthScript, Frost, GAP, Git, GLMS, GraphIt, gravity, gura, Halide, hashlink, Haxe Library Manager, HHVM, hobbes, Homa, Homebrew, Hook, huginn, HuwCode, HyPhy, Ibis, Idris, Impala, invokator, ircis, Jakt, Jank, jeebox, jinx, Jsonnet, Koka, Kotlin, ktexteditor-editor, kumir, latino, Lax, ldpl, Lean, Lesma, lift, Lily, Linux, lobster, loci, Metalang99, MewMew, MicroPython, mimium, MiniZinc, Mojo, MongoDB, MonkeyX, mun-lang, neeilang, Neko, never, NGS, Ninja, Node.js, Nuua, ObjectScript, Om, onnx, ooc, oopsilon, Opal, OpenNN, Open Shading Language, P, Pawn, PAWN, PCRE, Pony, POV-Ray SDL, psyche-c, Pygments, Python, PyTorch, Qore, Racket, React Native, Redis, RetDec, rhine, Rholang, RicScript, Roslyn compiler, Rust, score, Seq, sile, Simit, Simple Binary Encoding, skip, Solidity, Sophie, souper, Squirrel, SWI Prolog, Swift, t2b, Taichi, tamgu, TensorFlow, Terra, Textadept, tiledb, TreeSheets, Triton, UCL, Uno, Vale, Vcpkg, verona, VSXu, WebAssembly, whack, Wonkey, Xgboost, XGBoost, Yet Another Scripting Language, Z-flat
+
+project(default)
+
+add_compile_options(-Werror -Wall -Wextra -g)
+
+add_executable(output.s example.cpp)
+
+message(&quot;Hello, world!&quot;)
+
+message(&quot;Hello World&quot;)
+
+# Hello World in CMake
+
+message(STATUS &quot;Hello World!&quot;)
+
+cmake_minimum_required(VERSION 2.6)
+
+enable_testing()
+
+set(CMAKE_BUILD_TYPE debug)
+
+include_directories(&quot;/usr/local/include&quot;)
+
+find_library(ssl_LIBRARY NAMES ssl PATHS &quot;/usr/local/lib&quot;)
+
+add_custom_command(OUTPUT &quot;ver.c&quot; &quot;ver.h&quot; COMMAND ./ver.sh)
+
+add_executable(foo foo.c bar.c baz.c ver.c)
+
+target_link_libraries(foo ${ssl_LIBRARY})

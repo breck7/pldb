@@ -1,0 +1,52 @@
+ink
+===
+
+ink is an open source esoteric programming language created in 2015 by Joseph Humfrey.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Joseph%20Humfrey
+
+#258 on PLDB
+9 Years Old
+
+git clone https://github.com/inkle/ink
+
+Try now: Riju
+
+inkle's open source scripting language for writing interactive narrative.
+
+- ink website
+ http://www.inklestudios.com/ink
+- ink is developed on GitHub and has 3,218 stars
+- ink first developed in https://github.com/inkle
+- ink is written in C#, Markdown, XML, JSON, PowerShell, Bourne shell, YAML
+- ink on Twitter
+ https://twitter.com/inklestudios
+
+- I looked at Monsieur Fogg
+*   ... and I could contain myself no longer.
+    &#39;What is the purpose of our journey, Monsieur?&#39;
+    &#39;A wager,&#39; he replied.
+    * *     &#39;A wager!&#39;[] I returned.
+            He nodded.
+            * * *   &#39;But surely that is foolishness!&#39;
+            * * *  &#39;A most serious matter then!&#39;
+            - - -   He nodded again.
+            * * *   &#39;But can we win?&#39;
+                    &#39;That is what we will endeavour to find out,&#39; he answered.
+            * * *   &#39;A modest wager, I trust?&#39;
+                    &#39;Twenty thousand pounds,&#39; he replied, quite flatly.
+            * * *   I asked nothing further of him then[.], and after a final, polite cough, he  offered nothing more to me. &lt;&gt;
+    * *     &#39;Ah[.&#39;],&#39; I replied, uncertain what I thought.
+    - -     After that, &lt;&gt;
+*   ... but I said nothing[] and &lt;&gt;
+- we passed the day in silence.
+- -&gt; END
+
+std := load(&#39;../../../opt/ink/std&#39;)
+str := load(&#39;../../../opt/ink/str&#39;)
+
+log := std.log
+
+log(&#39;Hello, world!&#39;)
+
+Hello World

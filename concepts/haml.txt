@@ -1,0 +1,117 @@
+HAML
+====
+
+HAML, aka HTML Abstraction Markup Language, is an open source template language created in 2006 by Hampton Lintorn-Catlin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Hampton%20Lintorn-Catlin
+
+#77 on PLDB
+18 Years Old
+323 Repos
+
+git clone https://github.com/haml/haml
+
+Try now: Web
+
+Haml (HTML Abstraction Markup Language) is a templating system that is designed to avoid writing inline code in a web document and make the HTML easy and clean. Haml gives the flexibility to have some dynamic content in HTML. Similar to other web languages like PHP, ASP, JSP and template systems like eRuby, Haml also embeds some code that gets executed during runtime and generates HTML code in order to provide some dynamic content. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Haml
+
+- HAML website
+ http://haml.info/
+- HAML Wikipedia page
+ https://en.wikipedia.org/wiki/Haml
+- HAML is developed on GitHub and has 3,653 stars
+- HAML docs
+ https://haml.info/docs.html
+- There are at least 323 HAML repos on GitHub
+- HAML first developed in Unspace Interactive
+- HAML is written in Ruby, HAML, XHTML, ERB, Markdown, YAML, Bash, Logos, Slim
+- The  Google BigQuery Public Dataset GitHub snapshot shows 390 users using HAML in 465 repos on GitHub
+- There are 467 members in the HAML subreddit
+- CodeMirror package for syntax highlighting HAML
+- Pygments supports syntax highlighting for HAML
+- GitHub supports syntax highlighting for HAML
+- haml.info was registered in 2012
+- See also: (14 related languages)Ruby, HTML, PHP, ASP, JSP, ERB, ASCII, UTF-8, Ruby on Rails, CSS, BBCode, YAML, Sass, WML
+- 8 languages in PLDB linking to HAML: Ace Editor, cloc, CSVw, HAML, Scroll, Scroll Notation, Speedie, txtzyme
+
+%section.container
+ %h1= post.title
+ %h2= post.subtitle
+ .content
+   = post.content
+
+%html
+  %title Hello World
+  %body
+    %h1 Hello World
+
+%p
+  Hello,
+  World!
+
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html lang=&#39;en&#39; xml:lang=&#39;en&#39; xmlns=&#39;http://www.w3.org/1999/xhtml&#39;&gt;
+  &lt;head&gt;
+    &lt;title&gt;BoBlog&lt;/title&gt;
+    &lt;meta content=&#39;text/html; charset=utf-8&#39; http-equiv=&#39;Content-Type&#39; /&gt;
+    &lt;link href=&quot;/stylesheets/main.css&quot; media=&quot;screen&quot; rel=&quot;Stylesheet&quot; type=&quot;text/css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&#39;header&#39;&gt;
+      &lt;h1&gt;BoBlog&lt;/h1&gt;
+      &lt;h2&gt;Bob&#39;s Blog&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div id=&#39;content&#39;&gt;
+      &lt;div class=&#39;entry&#39;&gt;
+        &lt;h3 class=&#39;title&#39;&gt;Halloween&lt;/h3&gt;
+        &lt;p class=&#39;date&#39;&gt;Tuesday, October 31, 2006&lt;/p&gt;
+        &lt;p class=&#39;body&#39;&gt;
+          Happy Halloween, glorious readers! I&#39;m going to a party this evening... I&#39;m very excited.
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&#39;entry&#39;&gt;
+        &lt;h3 class=&#39;title&#39;&gt;New Rails Templating Engine&lt;/h3&gt;
+        &lt;p class=&#39;date&#39;&gt;Friday, August 11, 2006&lt;/p&gt;
+        &lt;p class=&#39;body&#39;&gt;
+          There&#39;s a very cool new Templating Engine out for Ruby on Rails. It&#39;s called Haml.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&#39;footer&#39;&gt;
+      &lt;p&gt;
+        All content copyright © Bob
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -# A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token -#
+ Example
+  -# A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported X
+ Token 
+ Example

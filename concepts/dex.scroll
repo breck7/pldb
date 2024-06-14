@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id dex
+name dex
+appeared 2018
+tags pl
+
+writtenIn haskell python julia yaml markdown bash cpp nix c lisp typescript make css html toml xml
+repoStats
+ firstCommit 2018
+ commits 4185
+ committers 58
+ files 260
+ newestCommit 2024
+country United States
+originCommunity Google
+
+example
+ :p x = 1.                -- let binding
+   y = (z = 2.; z + 1.)  -- let binding of a nested let expression
+   ..                    -- escaped cosmetic line break
+   x + y                 -- body of let expression
+
+githubRepo https://github.com/google-research/dex-lang
+ firstCommit 2018
+ stars 1232
+ forks 83
+ subscribers 53
+ created 2019
+ updated 2022
+ description Research language for array processing in the Haskell/ML family
+ issues 152
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+isbndb 0

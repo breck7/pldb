@@ -1,0 +1,131 @@
+WebAssembly
+===========
+
+WebAssembly is an open source bytecode format created in 2015 by Alon Zakai.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alon%20Zakai
+
+#59 on PLDB
+9 Years Old
+2k Repos
+
+git clone https://github.com/WebAssembly/wabt
+
+Try now: TIO
+
+WebAssembly (Wasm, WA) is a web standard that defines a binary format and a corresponding assembly-like text format for executable code in Web pages. It is meant to enable executing code nearly as fast as running native machine code. It was envisioned to complement JavaScript to speed up performance-critical parts of web applications and later on to enable web development in languages other than JavaScript. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/WebAssembly
+
+- WebAssembly website
+ http://webassembly.org/
+- WebAssembly Wikipedia page
+ https://en.wikipedia.org/wiki/WebAssembly
+- WebAssembly is developed on GitHub and has 4,534 stars
+- WebAssembly docs
+ https://developer.mozilla.org/en-US/docs/WebAssembly
+- There are at least 1,641 WebAssembly repos on GitHub
+- WebAssembly first developed in W3C
+- WebAssembly is written in C++, HTML, C, JavaScript, Python, WebAssembly, Markdown, YAML, Bourne shell, Make, CMake, CSS, Lua
+- The  Google BigQuery Public Dataset GitHub snapshot shows 148 users using WebAssembly in 160 repos on GitHub
+- Pygments supports syntax highlighting for WebAssembly
+- GitHub supports syntax highlighting for WebAssembly
+- Indeed.com has 5 matches for "webassembly engineer".
+- webassembly.org was registered in 2015
+- See also: (12 related languages)Asm.js, Assembly language, JavaScript, Unity, LLVM IR, C, Rust, Java, C#, Go, S-expressions, DOI
+- 26 languages in PLDB linking to WebAssembly: AssemblyScript, beef-lang, binaryen, BlitzMax, cloc, Cyber, Emscripten, Euphoria, Flow9, invokator, Node.js, POV-Ray SDL, psyche, Pygments, rio, Rust, SpiderMonkey, tridash, v8, Virgil, wah, walt, WebAssembly, wasmer, wats, Wax
+
+20 00
+50
+04 7E
+42 01
+05
+20 00
+20 00
+42 01
+7D
+10 00
+7E
+0B
+
+(module
+    (import &quot;wasi_unstable&quot; &quot;fd_write&quot;
+        (func $fd_write (param i32 i32 i32 i32) (result i32))
+    )
+
+    (memory 1)
+    (export &quot;memory&quot; (memory 0))
+
+    (data (i32.const 0) &quot;\08\00\00\00\0c\00\00\00Hello World\n&quot;)
+
+    (func $main (export &quot;_start&quot;)
+        i32.const 1
+        i32.const 0
+        i32.const 1
+        i32.const 20
+        call $fd_write
+        drop
+    )
+)
+
+(module
+  (import &quot;env&quot; &quot;printInt&quot; (func $printInt (param i32)))
+  (func $add (param $lhs i32) (param $rhs i32) (result i32)
+    get_local $lhs
+    get_local $rhs
+    i32.add
+  )
+
+  (func $main
+    (call $printInt
+      (call $add (i32.const 9) (i32.const 8))))
+
+  (export &quot;main&quot; (func $main))
+)
+
+(module
+  (import &quot;math&quot; &quot;exp&quot; (func $exp (param f64) (result f64)))
+  (func (export &quot;doubleExp&quot;) (param $0 f64) (result f64)
+    (f64.mul
+      (call $exp
+        (get_local $0))
+      (f64.const 2))))
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example

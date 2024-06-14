@@ -1,0 +1,152 @@
+Literate CoffeeScript
+=====================
+
+Literate CoffeeScript is a programming language created in 2013 by Jeremy Ashkenas.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Ashkenas
+
+#216 on PLDB
+11 Years Old
+8k Repos
+
+git clone https://github.com/jashkenas/coffeescript
+
+Unfancy JavaScript
+
+- Literate CoffeeScript website
+ https://coffeescript.org/#literate
+- Literate CoffeeScript is developed on GitHub and has 16,246 stars
+- There are at least 7,938 Literate CoffeeScript repos on GitHub
+- Literate CoffeeScript first developed in https://github.com/jashkenas/coffeescript/issues
+- Literate CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
+- GitHub supports syntax highlighting for Literate CoffeeScript
+- coffeescript.org was registered in 2009
+- Read more about Literate CoffeeScript on the web: 1.
+ https://news.ycombinator.com/item?id=5277916
+
+The **Scope** class regulates lexical scoping within CoffeeScript. As you
+generate code, you create a tree of scopes in the same shape as the nested
+function bodies. Each scope knows about the variables declared within it,
+and has a reference to its parent enclosing scope. In this way, we know which
+variables are new and need to be declared with `var`, and which are shared
+with external scopes.
+
+Import the helpers we plan to use.
+
+    {extend, last} = require &#39;./helpers&#39;
+
+    exports.Scope = class Scope
+
+The `root` is the top-level **Scope** object for a given file.
+
+      @root: null
+
+Initialize a scope with its parent, for lookups up the chain,
+as well as a reference to the **Block** node it belongs to, which is
+where it should declare its variables, and a reference to the function that
+it belongs to.
+
+      constructor: (@parent, @expressions, @method) -&gt;
+        @variables = [{name: &#39;arguments&#39;, type: &#39;arguments&#39;}]
+        @positions = {}
+        Scope.root = this unless @parent
+
+Adds a new variable or overrides an existing one.
+
+      add: (name, type, immediate) -&gt;
+        return @parent.add name, type, immediate if @shared and not immediate
+        if Object::hasOwnProperty.call @positions, name
+          @variables[@positions[name]].type = type
+        else
+          @positions[name] = @variables.push({name, type}) - 1
+
+When `super` is called, we need to find the name of the current method we&#39;re
+in, so that we know how to invoke the same method of the parent class. This
+can get complicated if super is being called from an inner function.
+`namedMethod` will walk up the scope tree until it either finds the first
+function object that has a name filled in, or bottoms out.
+
+      namedMethod: -&gt;
+        return @method if @method.name or !@parent
+        @parent.namedMethod()
+
+Look up a variable name in lexical scope, and declare it if it does not
+already exist.
+
+      find: (name) -&gt;
+        return yes if @check name
+        @add name, &#39;var&#39;
+        no
+
+Reserve a variable name as originating from a function parameter for this
+scope. No `var` required for internal references.
+
+      parameter: (name) -&gt;
+        return if @shared and @parent.check name, yes
+        @add name, &#39;param&#39;
+
+Just check to see if a variable has already been declared, without reserving,
+walks up to the root scope.
+
+      check: (name) -&gt;
+        !!(@type(name) or @parent?.check(name))
+
+Generate a temporary variable name at the given index.
+
+      temporary: (name, index) -&gt;
+        if name.length &gt; 1
+          &#39;_&#39; + name + if index &gt; 1 then index - 1 else &#39;&#39;
+        else
+          &#39;_&#39; + (index + parseInt name, 36).toString(36).replace /\d/g, &#39;a&#39;
+
+Gets the type of a variable.
+
+      type: (name) -&gt;
+        return v.type for v in @variables when v.name is name
+        null
+
+If we need to store an intermediate result, find an available name for a
+compiler-generated variable. `_var`, `_var2`, and so on...
+
+      freeVariable: (name, reserve=true) -&gt;
+        index = 0
+        index++ while @check((temp = @temporary name, index))
+        @add temp, &#39;var&#39;, yes if reserve
+        temp
+
+Ensure that an assignment is made at the top of this scope
+(or at the top-level scope, if requested).
+
+      assign: (name, value) -&gt;
+        @add name, {value, assigned: yes}, yes
+        @hasAssignments = yes
+
+Does this scope have any declared variables?
+
+      hasDeclarations: -&gt;
+        !!@declaredVariables().length
+
+Return the list of variables first declared in this scope.
+
+      declaredVariables: -&gt;
+        realVars = []
+        tempVars = []
+        for v in @variables when v.type is &#39;var&#39;
+          (if v.name.charAt(0) is &#39;_&#39; then tempVars else realVars).push v.name
+        realVars.sort().concat tempVars.sort()
+
+Return the list of assignments that are supposed to be made at the top
+of this scope.
+
+      assignedVariables: -&gt;
+        &quot;#{v.name} = #{v.type.value}&quot; for v in @variables when v.type.assigned
+
+Language features
+======================================================
+
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

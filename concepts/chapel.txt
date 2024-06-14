@@ -1,0 +1,168 @@
+Chapel
+======
+
+Chapel is an open source programming language created in 2004 by David Callahan and Hans Zima and Brad Chamberlain and John Plevyak.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Callahan
+ https://pldb.io/concepts/../lists/creators.html#q=Hans%20Zima
+ https://pldb.io/concepts/../lists/creators.html#q=Brad%20Chamberlain
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Plevyak
+
+#66 on PLDB
+20 Years Old
+212 Repos
+
+git clone https://github.com/chapel-lang/chapel
+
+Try now: TIO
+
+Chapel, the Cascade High Productivity Language, is a parallel programming language developed by Cray. It is being developed as part of the Cray Cascade project, a participant in DARPA's High Productivity Computing Systems (HPCS) program, which had the goal of increasing supercomputer productivity by the year 2010. It is being developed as an open source project, under version 2 of the Apache license.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Chapel_(programming_language)
+
+- Chapel website
+ https://chapel-lang.org/
+- Chapel Wikipedia page
+ https://en.wikipedia.org/wiki/Chapel_(programming_language)
+- Chapel is developed on GitHub and has 1,454 stars
+- Chapel docs
+ https://chapel-lang.org/docs/
+- There are at least 212 Chapel repos on GitHub
+- Chapel first developed in Cray
+- Chapel is written in Chapel, C++, C, reStructuredText, Assembly language, Python, Bash, CMake, Bourne shell, Make, HTML, M4, XML, TOML, Markdown, Perl, JSON, Tex, C shell, OCaml, YAML, Pascal, JavaScript, CSS, SVG, Vim script, C#, Dockerfile, Diff, Lisp, LLVM IR, Protocol Buffers, Ini, Fortran 90, Objective-C, FORTRAN 77, DTD, Lex, Bazel, Ruby, Jupyter Notebook, CUDA, PHP, TypeScript, Rust, CSV, Yacc, D, Haskell, Nix, Cython, Go, Java, awk, XSLT, Julia, sed
+- Chapel on Twitter
+ https://twitter.com/ChapelLanguage
+- The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Chapel in 55 repos on GitHub
+- There are 12,989 members in the Chapel subreddit
+- There are 11 Project Euler users using Chapel
+- Explore Chapel snippets on Rosetta Code
+- Chapel on HOPL
+ https://hopl.info/showlanguage.prx?exp=8171
+- Pygments supports syntax highlighting for Chapel
+- GitHub supports syntax highlighting for Chapel
+- Release Notes for Chapel
+ https://chapel-lang.org/releaseNotes.html
+- Official Blog page for Chapel
+ https://chapel-lang.org/whatsnew.html
+- Events page for Chapel
+ https://chapel-lang.org/events.html
+- Indeed.com has 1 matches for "chapel developer".
+- chapel-lang.org was registered in 2014
+- See also: (9 related languages)Ada, C#, C, Fortran, Java, Fortress, UPC, X10, ISBN
+- Read more about Chapel on the web: 1.
+ https://ieeexplore.ieee.org/document/1299190
+- 3 languages in PLDB linking to Chapel: Chapel, cloc, Pygments
+
+writeln(&quot;Hello World&quot;);
+
+writeln(&quot;Hello, world!&quot;);    // print &#39;Hello, world!&#39; to the console
+
+_ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01]+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[oO][0-7]+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token writeln
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

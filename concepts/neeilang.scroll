@@ -1,0 +1,62 @@
+import ../code/conceptPage.scroll
+
+id neeilang
+name neeilang
+appeared 2019
+creators Neeilan Selvalingam
+tags pl
+
+writtenIn cpp llvmir cmake bourne-shell markdown
+repoStats
+ firstCommit 2019
+ commits 175
+ committers 4
+ files 140
+ newestCommit 2023
+country Unknown
+originCommunity https://github.com/neeilan/neeilang/issues
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/
+
+example
+ fn main() : Int {
+   var a : Int = 5;
+   var b : Int = 3;
+ 
+   print a + b;    // 8
+   print a - b;    // 2
+   print b - a;    // -2
+ 
+   if (a >= 5) {
+     print "a >= 5"; // a >= 5
+   }
+ 
+   if (a > 5) {
+     print "a > 5";  // Not executed
+   }
+ 
+   if (a < 5) {
+     print "a < 5";  // Not executed
+   }
+ 
+   if (5 <= a) {
+     print "5 <= a";  // 5 <= a
+   }
+ 
+
+githubRepo https://github.com/neeilan/neeilang
+ firstCommit 2019
+ stars 42
+ subscribers 3
+ created 2019
+ updated 2022
+ description Fast, type-safe, object-oriented language by yours truly
+ forks 2
+ issues 0
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

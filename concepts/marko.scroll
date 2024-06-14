@@ -1,0 +1,78 @@
+import ../code/conceptPage.scroll
+
+id marko
+name Marko
+appeared 2014
+tags textMarkup
+website https://markojs.com/
+latestVersion v5.20.9
+
+isOpenSource true
+writtenIn javascript markdown html typescript json svg xml yaml css
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 6029
+ committers 171
+ files 6769
+ newestCommit 2024
+country United States
+originCommunity https://github.com/marko-js
+
+githubRepo https://github.com/marko-js/marko
+ firstCommit 2014
+ stars 11433
+ forks 634
+ subscribers 216
+ created 2014
+ updated 2022
+ description A declarative, HTML-based language that makes building web apps fun
+ issues 57
+
+domainName markojs.com
+ registered 2015
+ awisRank
+  2022 1272927
+
+githubBigQuery Marko
+ repos 12
+ users 12
+
+linguistGrammarRepo https://github.com/marko-js/marko-tmbundle
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 5
+ commitCount 40
+ sampleCount 3
+ example
+  $ var name = 'Frank';
+  $ var colors = ['red', 'green', 'blue'];
+  
+  <h1>
+      Hello ${name}!
+  </h1>
+  
+  <ul if(colors.length)>
+      <li style={color: color} for(color in colors)>
+          ${color}
+      </li>
+  </ul>
+  <div else>
+      No colors!
+  </div>
+
+isbndb 0
+
+githubLanguage Marko
+ fileExtensions marko
+ trendingProjectsCount 0
+ type markup
+ aceMode text
+ codemirrorMode htmlmixed
+ codemirrorMimeType text/html
+ tmScope text.marko
+ aliases markojs
+ repos 101
+
+semanticScholar 0

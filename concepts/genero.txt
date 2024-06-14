@@ -1,0 +1,45 @@
+Genero Business Development Language
+====================================
+
+Genero Business Development Language is a programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2862 on PLDB
+14 Years Old
+52 Repos
+
+- There are at least 52 Genero Business Development Language repos on GitHub
+- Genero Business Development Language first developed in Four Js Development Tools Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2 users using Genero Business Development Language in 14 repos on GitHub
+- Read more about Genero Business Development Language on the web: 1.
+ https://www.generomobile.com/techdocs/fjs-fgl-manual/#fgl-topics/c_fgl_intro_BDL_002.html
+
+OPTIONS SHORT CIRCUIT
+IMPORT FGL cust_data
+SCHEMA stores
+
+PRIVATE CONSTANT c_title = &quot;Customer data form&quot;
+PUBLIC TYPE t_cust RECORD LIKE customer.*
+PRIVATE DEFINE cust_arr DYNAMIC ARRAY OF t_cust
+
+MAIN
+    ...
+END MAIN
+
+DIALOG cust_dlg()
+    INPUT BY NAME cust_rec.*
+       ...
+    END INPUT
+END DIALOG
+
+FUNCTION cust_display()
+   ...
+END FUNCTION
+
+FUNCTION cust_input()
+   ...
+END FUNCTION
+
+REPORT cust_rep(row)
+   ...
+END REPORT

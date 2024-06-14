@@ -1,0 +1,154 @@
+import ../code/conceptPage.scroll
+
+id nemerle
+name Nemerle
+appeared 2003
+creators Krzysztof Czarnecki
+tags pl
+website http://nemerle.org
+
+influencedBy csharp ml lisp
+fileExtensions n
+visualParadigm false
+clocExtensions n
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Nemerle
+centralPackageRepositoryCount 0
+originCommunity JetBrains
+projectEuler Nemerle
+ memberCount
+  2019 9
+  2022 10
+
+helloWorldCollection Nemerle
+ // Hello World in Nemerle (a functional programming language for .NET)
+ 
+ System.Console.WriteLine("Hello World");
+ 
+pygmentsHighlighter Nemerle
+ filename dotnet.py
+ fileExtensions n
+leachim6 Nemerle
+ filepath n/Nemerle.n
+ fileExtensions n
+ example
+  class Hello
+  {
+      static Main () : void
+      {
+          System.Console.WriteLine ("Hello World");
+      }
+  }
+
+lineCommentToken //
+printToken System.Console.WriteLine
+stringToken "
+
+hasComments true
+hasSemanticIndentation true
+hasMacros true
+ // http://nemerle.org/About
+ def title = "Programming language authors";
+ def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
+     
+ // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+ def html = xml <#
+   <html>
+     <head>
+       <title>$title</title>
+     </head>
+     <body>
+       <ul $when(authors.Any())>
+         <li $foreach(author in authors)>$author</li>
+       </ul>
+     </body>
+   </html>
+ #>
+ Trace.Assert(html.GetType().Equals(typeof(XElement)));
+ WriteLine(html.GetType());
+hasTypeInference true
+hasUnitsOfMeasure true
+ def m3 = 1 g;
+ def m4 = Si.Mass(m1);
+ 
+ WriteLine($"Mass in SI: $m4, in CGS: $m3");
+ 
+ def x1 = Si.Area(1 cm * 10 m);
+ 
+ WriteLine($"Area of 1 cm * 10 m = $x1 m");
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Nemerle
+ example
+  using System;
+  using System.Runtime.InteropServices;
+  
+  class PlatformInvokeTest
+  {
+      [DllImport("msvcrt.dll")]
+      public extern static puts(c : string) : int;
+  
+      [DllImport("msvcrt.dll")]
+      internal extern static _flushall() : int;
+  
+      public static Main() : void
+      {
+          _ = puts("Test");
+          _ = _flushall();
+      }
+  }
+ related csharp ml lisp java ocaml haskell sql
+ summary Nemerle is a general-purpose high-level statically typed programming language designed for platforms using the Common Language Infrastructure (.NET/Mono). It offers functional, object-oriented (OO) and imperative features. It has a simple C#-like syntax and a powerful metaprogramming system. In June 2012, the core developers of Nemerle were hired by the Czech software development company JetBrains. The team is focusing on developing Nitra, a framework to implement extant and new programming languages. This framework will likely be used to create future versions of Nemerle. Nemerle is named after the Archmage Nemmerle, a character in the fantasy novel A Wizard of Earthsea by Ursula K. Le Guin.
+ pageId 30883042
+ dailyPageViews 37
+ created 2004
+ backlinksCount 121
+ revisionCount 247
+ appeared 2003
+ fileExtensions n
+
+hopl https://hopl.info/showlanguage.prx?exp=8336
+tiobe Nemerle
+
+domainName nemerle.org
+ registered 2003
+ awisRank
+  2022 9445077
+  2017 10979387
+
+githubBigQuery Nemerle
+ repos 286
+ users 257
+
+linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
+ firstCommit 2006
+ lastCommit 2012
+ committerCount 3
+ commitCount 14
+ sampleCount 1
+ example
+  using System.Console;
+  
+  module Program
+  {
+     Main() : void
+     {
+       WriteLine("Hello world");
+     }
+  }
+
+isbndb 0
+
+githubLanguage Nemerle
+ fileExtensions n
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.nemerle
+ repos 177
+
+semanticScholar 0

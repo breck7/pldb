@@ -1,0 +1,130 @@
+REBOL
+=====
+
+REBOL, aka Relative Expression-Based Object Language, is an open source programming language created in 1997 by Carl Sassenrath.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Carl%20Sassenrath
+
+#401 on PLDB
+27 Years Old
+30k Repos
+
+Try now: Riju · TIO
+
+Rebol ( REB-əl; historically REBOL) is a cross-platform data exchange language and a multi-paradigm dynamic programming language designed by Carl Sassenrath for network communications and distributed computing. It introduces the concept of dialecting: small, optimized, domain-specific languages for code and data, which is also the most notable property of the language according to its designer Carl Sassenrath:  Although it can be used for programming, writing functions, and performing processes, its greatest strength is the ability to easily create domain-specific languages or dialects  Douglas Crockford, known for his involvement in the development of JavaScript, has described Rebol as "a more modern language, but with some very similar ideas to Lisp, in that it's all built upon a representation of data which is then executable as programs" and as one of JSON's influences. Originally, the language and its official implementation were proprietary and closed source, developed by REBOL Technologies. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/REBOL
+
+- REBOL website
+ http://www.rebol.com
+- REBOL Wikipedia page
+ https://en.wikipedia.org/wiki/REBOL
+- REBOL docs
+ http://www.rebol.com/docs.html
+- There are at least 30,469 REBOL repos on GitHub
+- REBOL first developed in REBOL Technologies
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using REBOL in 2k repos on GitHub
+- There are 15 Project Euler users using REBOL
+- Explore REBOL snippets on Rosetta Code
+- REBOL on HOPL
+ https://hopl.info/showlanguage.prx?exp=2438
+- REBOL appears in the TIOBE Index
+- Pygments supports syntax highlighting for REBOL
+- GitHub supports syntax highlighting for REBOL
+- Indeed.com has 0 matches for "rebol developer".
+- rebol.com was registered in 1997
+- See also: (11 related languages)Self, Forth, Lisp, Logo, JSON, Red, JavaScript, C, Algol, S-expressions, PEG
+- 3 languages in PLDB linking to REBOL: Boron, Ren-C, Scroll Notation
+
+REBOL [Title: &quot;Main&quot;]
+print &quot;Hello, world!&quot;
+
+print &quot;Hello World&quot;
+
+; Hello World in REBOL
+
+print &quot;Hello World!&quot;
+
+Rebol []
+hello: func [] [
+    print &quot;hello, world!&quot;
+]
+hello
+
+Digit: charset [#&quot;0&quot; - #&quot;9&quot;]
+Value: [some Digit | &quot;(&quot; Expr &quot;)&quot;]
+Product: [Value any [[&quot;*&quot;| &quot;/&quot;] Value]]
+Sum: [Product any [[&quot;+&quot;| &quot;-&quot;] Product]]
+Expr: Sum
+parse/all &quot;12+13&quot; Expr
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token " { }
+ Example
+  "Hello world"
+  {He said "That looks good!"}
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print probe
+ Example
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  my-list: [1 two 3.0 "four"]
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Homoiconicity
+ FeatureLink ../features/hasHomoiconicity.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+  catch [throw 22 print "You'll never see this."]
+  
+  try/except [read %does_not_exist] [print "File not found"]
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported ✓
+ Token 
+ Example
+  write %helloworld.txt "Hello, world!^/"
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

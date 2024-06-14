@@ -1,0 +1,228 @@
+Verilog
+=======
+
+Verilog is a hardware description language created in 1984 by Phil Moorby and Prabhu Goel.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221984%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Phil%20Moorby
+ https://pldb.io/concepts/../lists/creators.html#q=Prabhu%20Goel
+
+#129 on PLDB
+40 Years Old
+48k Repos
+
+Try now: Riju
+
+Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction. It is also used in the verification of analog circuits and mixed-signal circuits, as well as in the design of genetic circuits.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Verilog
+
+- Verilog Wikipedia page
+ https://en.wikipedia.org/wiki/Verilog
+- Verilog docs
+ https://verilogguide.readthedocs.io/en/latest/
+- There are at least 48,035 Verilog repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Verilog in 3k repos on GitHub
+- There are 2,421 members in the Verilog subreddit
+- Explore Verilog snippets on Rosetta Code
+- Verilog on HOPL
+ https://hopl.info/showlanguage.prx?exp=1062
+- Verilog ranks #50 in the TIOBE Index
+- Verilog Ubuntu package
+ https://packages.ubuntu.com/jammy/iverilog
+- ANTLR grammar for Verilog
+- CodeMirror package for syntax highlighting Verilog
+- Pygments supports syntax highlighting for Verilog
+- GitHub supports syntax highlighting for Verilog
+- Verilog appears in the Quine Relay project
+- Indeed.com has 246 matches for "verilog developer".
+- See also: (5 related languages)SystemVerilog, C, VHDL, OpenVera, Property Specification Language
+
+module main;
+
+initial begin
+  $display(&quot;Hello, world!&quot;);
+end
+
+endmodule
+
+module main;
+  initial
+    begin
+      $display(&quot;Hello World&quot;);
+      $finish;
+    end
+endmodule
+
+/* Hello World in Verilog. */
+
+module main;
+
+ initial
+   begin
+     $display(&quot;Hello, World&quot;);
+     $finish ;
+   end
+
+ endmodule
+
+`timescale 1ns / 1ps
+// Copyright (C) 2008 Schuyler Eldridge, Boston University
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+module mux(opA,opB,sum,dsp_sel,out);
+	input [3:0] opA,opB;
+	input [4:0] sum;
+	input [1:0] dsp_sel;
+	output [3:0] out;
+	
+	reg cout;
+	
+	always @ (sum)
+		begin
+			if (sum[4] == 1)
+				cout &lt;= 4&#39;b0001;
+			else
+				cout &lt;= 4&#39;b0000;
+		end
+	
+	reg out;
+	
+	always @(dsp_sel,sum,cout,opB,opA)
+		begin
+			if (dsp_sel == 2&#39;b00)
+				out &lt;= sum[3:0];
+			else if (dsp_sel == 2&#39;b01)
+				out &lt;= cout;
+			else if (dsp_sel == 2&#39;b10)
+				out &lt;= opB;
+			else if (dsp_sel == 2&#39;b11)
+				out &lt;= opA;
+		end
+
+endmodule
+
+initial
+  a = 0;
+
+initial
+  b = a;
+
+initial
+  begin
+    #1;
+    $display(&quot;Value a=%d Value of b=%d&quot;,a,b);
+  end
+
+always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9]+)|(\'b)[01]+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9]+)|(\'d)[0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9]+)|(\'h)[0-9a-fA-F]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9]+)|(\'o)[0-7]+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token $display
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,102 @@
+Rust MIR
+========
+
+Rust MIR, aka Rust Mid-level Intermediate Representation, is an open source intermediate representation language created in 2016.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1421 on PLDB
+8 Years Old
+
+git clone https://github.com/rust-lang/rust/tree/master/src/librustc_mir
+
+Try now: Web
+
+- Rust MIR website
+ https://www.rust-lang.org
+- Rust MIR docs
+ https://blog.rust-lang.org/2016/04/19/MIR.html
+- Rust MIR first developed in https://github.com/rust-lang
+- Rust MIR compiles to LLVM IR
+- rust-lang.org was registered in 2010
+- Read more about Rust MIR on the web: 1. 2.
+ https://rustc-dev-guide.rust-lang.org/hir.html
+ https://blog.rust-lang.org/2016/04/19/MIR.html
+- 1 languages in PLDB linking to Rust MIR: Rust HIR
+
+// WARNING: This output format is intended for human consumers only
+// and is subject to change without notice. Knock yourself out.
+fn main() -&gt; () {
+    let mut _0: ();                      // return place in scope 0 at src/main.rs:1:11: 1:11
+    let mut _1: std::vec::Vec&lt;i32&gt;;      // in scope 0 at src/main.rs:2:9: 2:16
+    let _2: ();                          // in scope 0 at src/main.rs:3:5: 3:16
+    let mut _3: &amp;mut std::vec::Vec&lt;i32&gt;; // in scope 0 at src/main.rs:3:5: 3:16
+    let _4: ();                          // in scope 0 at src/main.rs:4:5: 4:16
+    let mut _5: &amp;mut std::vec::Vec&lt;i32&gt;; // in scope 0 at src/main.rs:4:5: 4:16
+    scope 1 {
+        debug vec =&gt; _1;                 // in scope 1 at src/main.rs:2:9: 2:16
+    }
+
+    bb0: {
+        _1 = Vec::&lt;i32&gt;::new() -&gt; bb1;   // scope 0 at src/main.rs:2:19: 2:29
+                                         // mir::Constant
+                                         // + span: src/main.rs:2:19: 2:27
+                                         // + user_ty: UserType(0)
+                                         // + literal: Const { ty: fn() -&gt; Vec&lt;i32&gt; {Vec::&lt;i32&gt;::new}, val: Value(Scalar(&lt;ZST&gt;)) }
+    }
+
+    bb1: {
+        _3 = &amp;mut _1;                    // scope 1 at src/main.rs:3:5: 3:16
+        _2 = Vec::&lt;i32&gt;::push(move _3, const 1_i32) -&gt; [return: bb2, unwind: bb5]; // scope 1 at src/main.rs:3:5: 3:16
+                                         // mir::Constant
+                                         // + span: src/main.rs:3:9: 3:13
+                                         // + literal: Const { ty: for&lt;&#39;r&gt; fn(&amp;&#39;r mut Vec&lt;i32&gt;, i32) {Vec::&lt;i32&gt;::push}, val: Value( Scalar(&lt;ZST&gt;)) }
+    }
+
+    bb2: {
+        _5 = &amp;mut _1;                    // scope 1 at src/main.rs:4:5: 4:16
+        _4 = Vec::&lt;i32&gt;::push(move _5, const 2_i32) -&gt; [return: bb3, unwind: bb5]; // scope 1 at src/main.rs:4:5: 4:16
+                                         // mir::Constant
+                                         // + span: src/main.rs:4:9: 4:13
+                                         // + literal: Const { ty: for&lt;&#39;r&gt; fn(&amp;&#39;r mut Vec&lt;i32&gt;, i32) {Vec::&lt;i32&gt;::push}, val: Value( Scalar(&lt;ZST&gt;)) }
+    }
+
+    bb3: {
+        drop(_1) -&gt; bb4;                 // scope 0 at src/main.rs:5:1: 5:2
+    }
+
+    bb4: {
+        return;                          // scope 0 at src/main.rs:5:2: 5:2
+    }
+
+    bb5 (cleanup): {
+        drop(_1) -&gt; bb6;                 // scope 0 at src/main.rs:5:1: 5:2
+    }
+
+    bb6 (cleanup): {
+        resume;                          // scope 0 at src/main.rs:1:1: 5:2
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

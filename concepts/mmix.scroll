@@ -1,0 +1,24 @@
+import ../code/conceptPage.scroll
+
+id mmix
+name mmix
+appeared 1999
+tags assembly
+conceptDescription During the 1990s I spent considerable time designing a computer that would be representative of modern machines, yet easy to learn. Several of the leading experts in the field gave me considerable help with the design. The result was MMIX — "A RISC computer for the new millennium". In 1999 I completed the preliminary software to support basic MMIX programming and the simulation of many versions of the architecture.
+
+rosettaCode http://www.rosettacode.org/wiki/Category:MMIX
+centralPackageRepositoryCount 0
+country Germany
+originCommunity HM Hochschule München University of Applied Sciences
+reference http://mmix.cs.hm.edu/examples/index.html
+
+example
+  LOC Data_Segment
+  GREG  @
+ Text  BYTE  "Hello world!",10,0
+ 
+  LOC #100
+ 
+ Main  LDA $255,Text
+  TRAP  0,Fputs,StdOut
+  TRAP  0,Halt,0

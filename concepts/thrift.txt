@@ -1,0 +1,86 @@
+Thrift
+======
+
+Thrift is an open source interface design language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#221 on PLDB
+17 Years Old
+447 Repos
+
+Thrift is an interface definition language and binary communication protocol that is used to define and create services for numerous languages. It is used as a remote procedure call (RPC) framework and was developed at Facebook for "scalable cross-language services development". It combines a software stack with a code generation engine to build cross-platform services that can connect applications written in a variety of languages and frameworks, including ActionScript, C, C++, C#, Cappuccino, Cocoa, Delphi, Erlang, Go, Haskell, Java, Node.js, Objective-C, OCaml, Perl, PHP, Python, Ruby and Smalltalk. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Apache_Thrift
+
+- Thrift website
+ http://thrift.apache.org/
+- Thrift Wikipedia page
+ https://en.wikipedia.org/wiki/Apache_Thrift
+- There are at least 447 Thrift repos on GitHub
+- Thrift first developed in Apache
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Thrift in 4k repos on GitHub
+- Pygments supports syntax highlighting for Thrift
+- GitHub supports syntax highlighting for Thrift
+- See also: (19 related languages)ActionScript, C, C#, Erlang, Go, Haskell, Java, Objective-C, OCaml, Perl, PHP, Python, Ruby, Smalltalk, JSON, SOAP, XML, ASN.1, Protocol Buffers
+- 7 languages in PLDB linking to Thrift: Apache Hbase, avro, cloc, HHVM, Impala, m3db, Pygments
+
+enum PhoneType {
+ HOME,
+ WORK,
+ MOBILE,
+ OTHER
+}
+
+struct Phone {
+  1: i32 id,
+  2: string number,
+  3: PhoneType type
+}
+
+service PhoneSvc {
+  Phone findById(1: i32 id),
+  list&lt;Phone&gt; findAll()
+}
+
+struct PullRequest {
+  1: string title
+}
+
+enum PhoneType {
+  HOME,
+  WORK,
+  MOBILE,
+  OTHER
+}
+
+struct Phone {
+  1: i32 id,
+  2: string number,
+  3: PhoneType type
+}
+
+service PhoneSvc {
+  Phone findById(1: i32 id),
+  list&lt;Phone&gt; findAll()
+}
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example

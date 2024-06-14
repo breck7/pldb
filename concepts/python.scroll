@@ -1,0 +1,728 @@
+import ../code/conceptPage.scroll
+
+id python
+name Python
+appeared 1991
+creators Guido van Rossum
+tags pl
+website https://www.python.org/
+spec https://docs.python.org/3/reference/
+releaseNotes https://docs.python.org/3/whatsnew/
+download https://www.python.org/downloads/
+latestVersion 3.12.3
+
+isOpenSource true
+writtenIn python restructuredtext c xml toml yaml bourne-shell json markdown html objective-c ini svg cpp powershell diff d make gradle m4 javascript bash assembly-language xslt lisp css kotlin idl dockerfile c-shell cmake dtd
+fileExtensions py pyc pyd pyo
+visualParadigm false
+clocExtensions buck build.bazel gclient gyp gypi lmi py py3 pyde pyi pyp pyt pyw sconscript sconstruct snakefile tac workspace wscript wsgi xpy
+fileType text
+wordRank 4048
+documentation https://docs.python.org/3/
+emailList https://mail.python.org/mailman/listinfo
+eventsPageUrl https://www.python.org/events/
+faq https://docs.python.org/3/faq/
+annualReportsUrl https://www.python.org/psf-landing/
+antlr https://github.com/antlr/grammars-v4/tree/master/python
+monaco python
+codeMirror python
+rosettaCode http://www.rosettacode.org/wiki/Category:Python
+quineRelay Python
+replit https://repl.it/languages/python
+packageRepository https://pypi.python.org/pypi
+ubuntuPackage python
+repoStats
+ firstCommit 1990
+ commits 149709
+ committers 3046
+ files 4866
+ newestCommit 2024
+country Netherlands
+originCommunity Centrum Wiskunde & Informatica
+proposals https://peps.python.org/
+projectEuler Python
+ memberCount
+  2019 46780
+  2022 60791
+reference https://www.programiz.com/python-programming/keyword-list
+
+discord https://www.pythondiscord.com/
+pygmentsHighlighter Python
+ filename python.py
+ fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
+rijuRepl https://riju.codes/python
+ example
+  print("Hello, world!")
+  
+ description Interpreted, high-level, general-purpose programming language
+ fileExtensions py pyi pyc pyd pyo pyw pyz
+ website https://www.python.org/
+ gitRepo https://github.com/python/cpython
+subreddit https://reddit.com/r/Python
+ memberCount
+  2017 197722
+  2022 979629
+gource https://www.youtube.com/watch?v=9mput42uZsQ
+languageServerProtocolProject http://www.pydev.org/vscode/index.html
+ writtenIn python
+languageServerProtocolProject https://github.com/palantir/python-language-server
+ writtenIn python
+languageServerProtocolProject https://github.com/Microsoft/python-language-server
+ writtenIn csharp
+compilerExplorer Python
+ example
+  def square(num):
+      return num * num
+  
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/python
+ memberCount 1424303
+ groupCount 1964
+keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
+githubRepo https://github.com/python/cpython
+ stars 51959
+ forks 26518
+ subscribers 1480
+ created 2017
+ updated 2023
+ description The Python programming language
+ issues 8360
+
+lineCommentToken #
+multiLineCommentTokens '''
+printToken print
+assignmentToken =
+booleanTokens True False
+
+hasVariableSubstitutionSyntax false
+hasMacros false
+hasEnums false
+ # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
+canWriteToDisk true
+ with open('helloworld.txt', 'w') as filehandle:
+  filehandle.write('Hello, world!\n')
+hasDuckTyping true
+hasSingleDispatch true
+hasRegularExpressionsSyntaxSugar false
+hasCaseInsensitiveIdentifiers false
+hasTernaryOperators true
+ print(1 if 1 else 0)
+hasBitWiseOperators true
+ x << y
+canDoShebang true
+ #!/usr/bin/env python
+hasSymbolTables true
+ # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+hasDynamicProperties true
+ class Person (object):
+   def __init__(self, name):
+    self.name = name
+ 
+ person = Person("John")
+ person.age = 50
+hasBooleans true
+hasClasses true
+ class Person (object):
+   def __init__(self, name):
+     self.name = name
+hasConditionals true
+ if True:
+  print("Hello world")
+hasComments true
+ # A comment
+hasMultiLineComments true
+ ''' A comment.
+ '''
+hasConstructors true
+hasGenerators true
+ https://wiki.python.org/moin/Generators
+hasDirectives true
+ from __future__ import feature
+ # coding=<encoding name>
+hasAssignment true
+ name = "John"
+hasImports true
+ import datetime
+ oTime = datetime.datetime.now()
+ from my_pkg import my_funcs
+hasInfixNotation true
+ seven = 3 + 4
+hasIterators true
+ https://www.w3schools.com/python/python_iterators.asp
+hasMixins true
+ # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+ class EssentialFunctioner(LoggerMixin, object):
+hasMultilineStrings true
+ template = """This is the first line.
+ This is the second line.
+ This is the third line."""
+hasPointers false
+hasIntegers true
+ pldb = 80766866
+hasUnitsOfMeasure false
+hasLists true
+ myList = [1, 2, 3, 4, 5]
+hasMultipleInheritance true
+ class Base1:
+     pass
+ class Base2:
+     pass
+ class MultiDerived(Base1, Base2):
+     pass
+ # Or multilevel inheritance:
+ class Base:
+     pass
+ class Derived1(Base):
+     pass
+ class Derived2(Derived1):
+     pass
+hasOperatorOverloading true
+ # Python Program illustrate how
+ # to overload an binary + operator
+   
+ class A:
+     def __init__(self, a):
+         self.a = a
+   
+     # adding two objects
+     def __add__(self, o):
+         return self.a + o.a
+ ob1 = A(1)
+ ob2 = A(2)
+ ob3 = A("Geeks")
+ ob4 = A("For")
+   
+ print(ob1 + ob2)
+ print(ob3 + ob4)
+hasSemanticIndentation true
+ class Person (object):
+   def __init__(self, name):
+     self.name = name
+hasInheritance true
+ class SumComputer(object):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def transform(self, x):
+        raise NotImplementedError
+    def inputs(self):
+        return range(self.a, self.b)
+    def compute(self):
+        return sum(self.transform(value) for value in self.inputs())
+  class SquareSumComputer(SumComputer):
+      def transform(self, x):
+          return x * x
+  class CubeSumComputer(SumComputer):
+      def transform(self, x):
+          return x * x * x
+hasStrings true
+ "hello world"
+hasZeroBasedNumbering true
+hasDisposeBlocks true
+ with resource_context_manager() as resource:
+    # Perform actions with the resource.
+ # Perform other actions where the resource is guaranteed to be deallocated.
+hasLineComments true
+ # A comment
+hasThreads true
+hasPrintDebugging true
+isCaseSensitive true
+hasWhileLoops true
+hasFunctions true
+hasOctals true
+ # 0[oO](?:_?[0-7])+
+hasHexadecimals true
+ # 0[xX](?:_?[a-fA-F0-9])+
+hasFloats true
+ # (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
+hasBinaryNumbers true
+ # 0[bB](?:_?[01])+
+hasScientificNotation true
+
+wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
+ related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib gdb freebsd ocaml tcl erlang pandas
+ summary Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java. It provides constructs that enable clear programming on both small and large scales. Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library. Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.
+ pageId 23862
+ dailyPageViews 7204
+ created 2001
+ backlinksCount 6849
+ revisionCount 6342
+ appeared 1991
+ fileExtensions py pyc pyd pyo
+
+hopl https://hopl.info/showlanguage.prx?exp=1658
+tiobe Python
+ currentRank 1
+pypl Python
+
+domainName python.org
+ registered 1995
+ awisRank
+  2022 728
+  2017 875
+
+githubBigQuery Python
+ repos 550171
+ users 297138
+
+linguistGrammarRepo https://github.com/tree-sitter/tree-sitter-python
+ sampleCount 20
+ example
+  #!/usr/bin/env python2.4
+  print "Python"
+  
+
+isbndb 339
+ year|publisher|title|authors|isbn13
+ 2014|No Starch Press|Black Hat Python: Python Programming for Hackers and Pentesters|Seitz, Justin|9781593275907
+ 2010|Franklin, Beedle & Associates|Python Programming: An Introduction to Computer Science|Zelle, John|9781590282410
+ 2015|McGraw-Hill Education TAB|Programming the Raspberry Pi, Second Edition: Getting Started with Python|Monk, Simon|9781259587405
+ 2011|CRC Press|Maya Python for Games and Film: A Complete Reference for Maya Python and the Maya Python API|Mechtley, Adam and Trowbridge, Ryan|9780123785787
+ 2013|The MIT Press|Introduction to Computation and Programming Using Python (MIT Press)|Guttag, John V.|9780262525008
+ 2010|Course Technology|Python Programming for the Absolute Beginner, 3rd Edition|Dawson, Michael|9781435455009
+ 2012|O'Reilly Media|Think Python|Allen B. Downey|9781449330729
+ 2009|No Starch Press|Gray Hat Python: Python Programming for Hackers and Reverse Engineers|Seitz, Justin|9781593271923
+ 2013|Jones & Bartlett Learning|Python Programming in Context|Miller, Bradley N. and Ranum, David L.|9781449699390
+ 2019|No Starch Press|Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming|Matthes, Eric|9781593279288
+ 2009|Addison-Wesley Professional|Python Essential Reference|Beazley, David|9780672329784
+ 2013|Addison-Wesley Professional|Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code (Zed Shaw's Hard Way Series)|Shaw, Zed|9780321884916
+ 2012|Pearson|The Practice of Computing Using Python (2nd Edition)|Punch, William F. and Enbody, Richard|9780132805575
+ 2014|lulu.com|Mathematics and Python Programming|Bautista, J.C.|9781326017965
+ 2009|O'Reilly Media|Head First Programming: A learner's guide to programming using the Python language|Griffiths, David and Barry, Paul|9780596802370
+ 2017|Pearson|Starting Out with Python Plus MyLab Programming with Pearson eText -- Access Card Package|Gaddis, Tony|9780134543666
+ 2014|CreateSpace Independent Publishing Platform|Python Programming for Beginners: An Introduction to the Python Computer Language and Computer Programming|Cannon, Jason|9781501000867
+ 2016|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering, 6)|Langtangen, Hans Petter|9783662498866
+ 2015|No Starch Press|Teach Your Kids to Code: A Parent-Friendly Guide to Python Programming|Payne, Bryson|9781593276140
+ 2011|Pearson|Starting Out with Python (2nd Edition) (Gaddis Series)|Gaddis, Tony|9780132576376
+ 2007|Prentice Hall|Rapid GUI Programming with Python and Qt (Prentice Hall Open Source Software Development)|Summerfield, Mark|9780132354189
+ 2014|Chapman and Hall/CRC|Explorations in Computing: An Introduction to Computer Science and Python Programming (Chapman & Hall/CRC Textbooks in Computing)|Conery, John S.|9781466572447
+ 2020|Esri Press|Python Scripting for ArcGIS Pro|Zandbergen, Paul A.|9781589484993
+ 2009|Pearson|Introduction To Computing And Programming In Python|Guzdial, Mark J. and Ericson, Barbara|9780136060239
+ 2006|Pearson P T R|Core Python Programming|Chun, Wesley J.|9780132269933
+ 2003|Addison-Wesley Professional|Text Processing in Python|Mertz, David and Mike Hendrickson|9780321112545
+ 2015|Packt Publishing|Python GUI Programming Cookbook|Meier, Burkhard A.|9781785283758
+ 2020|SAGE Publications, Inc|Introduction to Python Programming for Business and Social Science Applications|Kaefer, Frederick and Kaefer, Paul|9781544377445
+ 2014|Packt Publishing|Python Network Programming Cookbook|Sarker, Dr. M. O. Faruque|9781849513463
+ 2015|Springer|Python Programming Fundamentals (Undergraduate Topics in Computer Science)|Lee, Kent D.|9781447166412
+ 2020|Pearson|Starting Out with Python [RENTAL EDITION]||9780135929032
+ 2020|O'Reilly Media|Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python|Bruce, Peter and Bruce, Andrew and Gedeck, Peter|9781492072942
+ 2015|Packt Publishing|Python Parallel Programming Cookbook|Zaccone, Giancarlo|9781785289583
+ 2017|Addison-Wesley Professional|Learn More Python 3 the Hard Way: The Next Step for New Python Programmers (Zed Shaw's Hard Way Series)|Shaw, Zed|9780134123486
+ 2006|O'Reilly Media|Python in a Nutshell, Second Edition (In a Nutshell)|Martelli, Alex|9780596100469
+ 2018|Manning Publications|The Quick Python Book|Ceder, Naomi|9781617294037
+ 2009||Python For Software Design||9780511507311
+ 2016|Packt Publishing|Mastering Python: Master the art of writing beautiful and powerful Python by using all of the features that Python 3.5 offers|Hattem, Rick van|9781785289729
+ 2010|Wrox|Beginning Python: Using Python 2.6 and Python 3.1|Payne|9780470414637
+ 2012|Pearson|The Practice of Computing Using Python plus MyProgrammingLab with Pearson eText -- Access Card Package (2nd Edition)|Punch, William F. and Enbody, Richard|9780132992831
+ 2013|Packt Publishing|Learning Geospatial Analysis with Python|Lawhead, Joel|9781783281138
+ 2018|No Starch Press|Impractical Python Projects: Playful Programming Activities to Make You Smarter|Vaughan, Lee|9781593278908
+ 2017|Apress|Mastering Machine Learning with Python in Six Steps: A Practical Implementation Guide to Predictive Data Analytics Using Python|Swamynathan, Manohar|9781484228654
+ 2016|Packt Publishing|Designing Machine Learning Systems with Python|Julian, David|9781785882951
+ 2010|Apress|Python Algorithms: Mastering Basic Algorithms in the Python Language (Expert's Voice in Open Source)|Hetland, Magnus Lie|9781430232377
+ 2014|Packt Publishing|Mastering Python Regular Expressions|Lopez, Felix and Romero, Victor|9781783283156
+ 2015|CreateSpace Independent Publishing Platform|A collection of Data Science Interview Questions Solved in Python and Spark: Hands-on Big Data and Machine Learning (A Collection of Programming Interview Questions) (Volume 6)|Gulli, Antonio|9781517216719
+ 2007|Apress|Beginning Game Development with Python and Pygame: From Novice to Professional (Expert's Voice)|McGugan, Will|9781590598726
+ 2010|Apress|Foundations of Python Network Programming: The comprehensive guide to building network applications with Python (Books for Professionals by Professionals)|Goerzen, John and Bower, Tim and Rhodes, Brandon|9781430230038
+ 2015|Packt Publishing|Mastering Python for Data Science|Madhavan, Samir|9781784390150
+ 2000|Manning Publications|The Quick Python Book|Harms Ph.D., Daryl D and McDonald, Kenneth|9781884777745
+ 1996|CreateSpace Independent Publishing Platform|Programming Python|Mark Lutz|9781565921979
+ 2014|Packt Publishing|Parallel Programming with Python|Palach, Jan|9781783288397
+ 2013|Sams Publishing|Python Programming for Raspberry Pi, Sams Teach Yourself in 24 Hours|Blum, Richard and Bresnahan, Christine|9780789752055
+ 2015|Packt Publishing|Functional Python Programming|Lott, Steven|9781784396992
+ 2021|No Starch Press|Black Hat Python, 2nd Edition: Python Programming for Hackers and Pentesters|Seitz, Justin and Arnold, Tim|9781718501126
+ 2018|For Dummies|Beginning Programming with Python For Dummies|Mueller, John Paul|9781119457893
+ 2009|Cambridge University Press|Python for Software Design: How to Think Like a Computer Scientist|Downey, Allen B.|9780521725965
+ 2008|Prentice Hall|Python Fundamentals|Chun, Wesley J.|9780137143412
+ 2009|Cambridge University Press|Python for Software Design: How to Think Like a Computer Scientist|Downey, Allen B.|9780521898119
+ 2011|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering)|Langtangen, Hans Petter|9783642183652
+ 2014|Packt Publishing|Python Data Analysis|Idris, Ivan|9781783553358
+ 2020|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Starting out with Python|Gaddis, Tony|9780136679110
+ 2014|Packt Publishing|Learning Python Data Visualization|Adams, Chad|9781783553334
+ 2003|Cengage Learning PTR|Python Programming for the Absolute Beginner|Dawson, Michael|9781592000739
+ 2016|Apress|Beginning Ethical Hacking with Python|Sinha, Sanjib|9781484225400
+ 2017|DK Children|Coding Projects in Python (Computer Coding for Kids)|DK|9781465461889
+ 2017|Packt Publishing|Mastering Python Networking: Your one stop solution to using Python for network automation, DevOps, and SDN|Chou, Eric|9781784397005
+ 2016|Packt Publishing|Scientific Computing with Python 3|Fuhrer, Claus and Solem, Jan Erik and Verdier, Olivier|9781786463517
+ 2008|Packt Publishing|Expert Python Programming: Best practices for designing, coding, and distributing your Python software|Ziadé, Tarek|9781847194947
+ 2015|CreateSpace Independent Publishing Platform|A collection of Advanced Data Science and Machine Learning Interview Questions Solved in Python and Spark (II): Hands-on Big Data and Machine ... of Programming Interview Questions)|Gulli, Dr Antonio|9781518678646
+ 2017|Springer|Programming with Python|Padmanabhan, T R|9789811032769
+ 2016|Packt Publishing|Bayesian Analysis with Python|Martin, Osvaldo|9781785883804
+ 2017|O'Reilly Media|Python in a Nutshell: A Desktop Quick Reference|Martelli, Alex and Ravenscroft, Anna Martelli and Holden, Steve|9781449392925
+ 2010|Apress|The Definitive Guide to Jython: Python for the Java Platform (Expert's Voice in Software Development)|Juneau, Josh and Baker, Jim and Wierzbicki, Frank and Soto Muoz, Leo and Ng, Victor and Ng, Alex and Baker, Donna L.|9781430225270
+ 2015|O'Reilly Media|Programming Google App Engine with Python: Build and Run Scalable Python Apps on Google's Infrastructure|Sanderson, Dan|9781491900253
+ 2016|Cambridge University Press|Learning Scientific Programming with Python|Hill, Christian|9781107428225
+ 2014|Packt Publishing|Learning Selenium Testing Tools with Python|Gundecha, Unmesh|9781783983506
+ 11/2018|Wiley Global Education US|Python For Everyone, Enhanced eText|Cay S. Horstmann; Rance D. Necaise|9781119498537
+ 2019|Apress|Python Projects for Beginners: A Ten-Week Bootcamp Approach to Python Programming|Milliken, Connor P.|9781484253540
+ 2016|Packt Publishing|Learning Python Application Development|Sathaye, Ninad|9781785889196
+ 2009|Packt Publishing|Matplotlib for Python Developers|Tosi,Sandro|9781847197900
+ 2009|CreateSpace Independent Publishing Platform|Python/C Api Manual - Python 3: (Python Documentation Manual Part 4)|Van Rossum, Guido and Drake, Fred L.|9781441412737
+ 20200325|Pearson Education (US)|Starting Out with Python|Tony Gaddis|9780136719199
+ 2004|Apress|Foundations of Python Network Programming|Goerzen, John|9781590593714
+ 2011|Createspace Independent Publishing Platform|Python Programming|Wikibooks Contributors|9781466366053
+ 2017|Wiley-ISTE|Digital Signal Processing (DSP) with Python Programming|Charbit, Maurice|9781786301260
+ 2003|O'Reilly Media|Python in a Nutshell|Alex Martelli|9780596001889
+ 2012||Myprogramminglab With Pearson Etext -- Access Card -- For Starting Out With Python (myprogramminglab (access Codes))|Tony Gaddis|9780133075939
+ 2018|Packt Publishing|Python Programming Blueprints: Build nine projects by leveraging powerful frameworks such as Flask, Nameko, and Django|Furtado, Daniel and Pennington, Marcus|9781786468161
+ 2018|Wiley India|Core Python Programming, 2Ed [Paperback] [Jan 01, 2018] R. Nageswara Rao|R. Nageswara Rao|9789386052308
+ 2014|Packt Publishing|Python Tools for Visual Studio|Sabia, Martino and Wang, Cathy|9781783288687
+ 2016|CreateSpace Independent Publishing Platform|Python: The Fundamentals Of Python Programming|Jones, Paul|9781539530268
+ 2015|Pearson|Rapid GUI Programming with Python and Qt: The Definitive Guide to PyQt Programming (paperback)|Summerfield, Mark|9780134393339
+ 2002|Wiley|Making Use of Python|Gupta, Rashi|9780471219750
+ 1999|Premier Pr|Programming With Python|Altom, Tim and Chapman, Mitch|9780761523345
+ 2018|Packt Publishing|Internet of Things Programming Projects: Build modern IoT solutions with the Raspberry Pi 3 and Python|Dow, Colin|9781789134803
+ 2019|BPB Publications|Python for Professionals: Hands-on Guide for Python Professionals (English Edition)|Telles, Matt|9789389423754
+ 2018|Mercury Learning & Information|Python Basics: A Self-Teaching Introduction|Bhasin, H.|9781683923534
+ 2011|Chapman and Hall/CRC|A Concise Introduction to Programming in Python (Chapman & Hall/CRC Textbooks in Computing)|Johnson, Mark J.|9781439896945
+ 2016|Packt Publishing|Learning Predictive Analytics with Python: Gain practical insights into predictive modelling by implementing Predictive Analytics algorithms on public datasets with Python|Kumar, Ashish|9781783983261
+ 2010|Packt Publishing|Python Geospatial Development|Westra, Erik|9781849511544
+ 2011|Prentice Hall|Rapid Web Applications with TurboGears: Using Python to Create Ajax-Powered Sites|Ramm, Mark|9780132433884
+ 2019|BPB Publications|Let Us Python: Python Is Future, Embrace It Fast (Second Edition) (English Edition)|Kanetkar, Yashavant and Kanetkar, Aditya|9789389845006
+ 2014|Pearson|MyLab Programming with Pearson eText -- Access Code Card -- for An Introduction to Programming Using Python|Schneider, David|9780134058436
+ 2016|Createspace Independent Publishing Platform|Python: Python Programming: Learn Python Programming In A Day - A Comprehensive Introduction To The Basics Of Python & Computer Programming|Steve Gold|9781534608634
+ 2015|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Introduction to Computing and Programming in Python (My Programming Lab)|Guzdial, Mark and Ericson, Barbara and Guijarro-Crouch, Mercedes|9780134026244
+ 2016|Packt Publishing|Natural Language Processing: Python and NLTK|Hardeniya, Nitin and Perkins, Jacob and Chopra, Deepti and Joshi, Nisheeth and Mathur, Iti|9781787285101
+ 2019|BPB Publications|Python for Developers: Learn to Develop Efficient Programs using Python (English Edition)|Raj, Mohit|9788194401872
+ 2020|Mercury Learning & Information|Python 3 for Machine Learning|Campesato, Oswald|9781683924951
+ 2020|Wiley|Bite-Size Python: An Introduction to Python Programming|Speight, April|9781119643814
+ 2011|Apress|Pro Android Python with SL4A: Writing Android Native Apps Using Python, Lua, and Beanshell|Ferrill, Paul|9781430235699
+ 2008|Cengage Learning EMEA|Python for Rookies|Mount, Sarah and Shuttleworth, James and Winder, Russel|9781844807017
+ 2020|Apress|The Definitive Guide to Masonite: Building Web Applications with Python|Pitt, Christopher and Mancuso, Joe|9781484256015
+ 2016|Createspace Independent Publishing Platform|Deep Learning With Python|Chao Pan|9781721250974
+ 2018|Routledge|Introduction to Python for Science and Engineering (Series in Computational Physics)|Pine, David J.|9781138583894
+ 2016|CreateSpace Independent Publishing Platform|Python: Beginner’s Guide to Programming Code with Python (Python, Java, JavaScript, Code, Programming Language, Programming, Computer Programming) (Volume 1)|Masterson, Charlie|9781540501998
+ 20170921|Springer Nature|Snake Charming - The Musical Python|Iain Gray|9783319606606
+ 2017|CreateSpace Independent Publishing Platform|Tor: Accessing The Deep Web & Dark Web With Tor: How To Set Up Tor, Stay Anonymous Online, Avoid NSA Spying & Access The Deep Web & Dark Web (Tor, Tor ... Invisible, NSA Spying, Python Programming)|Jones, Jack|9781545269923
+ 2020|Drip Digital|Learn Python Quickly: A Complete Beginner’s Guide to Learning Python, Even If You’re New to Programming (Crash Course With Hands-On Project)|Quickly, Code|9781951791278
+ 2019|Independently published|Problem Solving with Python 3.6 Edition: A beginner's guide to Python & open-source programming tools|Kazarinoff, Peter D.|9781793814043
+ 2019|Packt Publishing|MicroPython Cookbook: Over 110 practical recipes for programming embedded systems and microcontrollers with Python|Alsabbagh, Marwan|9781838649951
+ 2020|Cambridge University Press|Python for Linguists|Hammond, Michael|9781108493444
+ 2018|Packt Publishing|Mastering Python for Networking and Security: Leverage Python scripts and libraries to overcome networking and security issues|Ortega, José Manuel|9781788990707
+ 2017|Apress|MicroPython for the Internet of Things: A Beginner’s Guide to Programming with Python on Microcontrollers|Bell, Charles|9781484231227
+ 2018|CRC Press|Understanding Optics with Python (Multidisciplinary and Applied Optics)|Lakshminarayanan, Vasudevan and Ghalila, Hassen and Ammar, Ahmed and Varadharajan, L. Srinivasa|9781498755047
+ 2018|Apress|Learn Keras for Deep Neural Networks: A Fast-Track Approach to Modern Deep Learning with Python|Moolayil, Jojo|9781484242391
+ 2014|CreateSpace Independent Publishing Platform|Python: Learn Python FAST! - The Ultimate Crash Course to Learning the Basics of the Python Programming Language In No Time|Hutt, Ryan|9781502741004
+ 2008|Addison-Wesley Professional|Python Web Development with Django|Forcier, Jeff and Paul Bissex and Wesley Chun|9780132701815
+ 2017|Apress|Pro Deep Learning with TensorFlow: A Mathematical Approach to Advanced Artificial Intelligence in Python|Pattanayak, Santanu|9781484230961
+ 2017|Packt Publishing|Python Network Programming Cookbook - Second Edition: Practical solutions to overcome real-world networking challenges|Kathiravelu, Pradeeban and Sarker, Dr. M. O. Faruque|9781786463999
+ 2018|CreateSpace Independent Publishing Platform|Writing Interpreters and Compilers for the Raspberry Pi Using Python|Dos Reis, Anthony J.|9781977509208
+ 2018|Springer|Dynamical Systems with Applications using Python|Lynch, Stephen|9783319781440
+ 2020|Chapman & Hall|Advanced Data Science and Analytics with Python (Chapman & Hall/CRC Data Mining and Knowledge Discovery Series)|Rogel-Salazar, Jesus|9781138315068
+ 2016|Springer|Python for Probability, Statistics, and Machine Learning|Unpingco, José|9783319307176
+ 2013|Wiley|Python for Everyone|Horstmann, Cay S. and Necaise, Rance D.|9781118645208
+ 2018|Independently published|50 Steps to Mastering Basic Python Programming: With 140 practice problems and available accompanying videos, software, and problem solutions|Shaffer, Dr. Steven C.|9781980763321
+ 2020|Apress|Beginning Game Programming with Pygame Zero: Coding Interactive Games on Raspberry Pi Using Python|Watkiss, Stewart|9781484256497
+ 2018|CreateSpace Independent Publishing Platform|Python for beginners: Step-By-Step Guide to Learning Python Programming|Lutz, Larry|9781717410580
+ 2017|Createspace Independent Publishing Platform|Python: The No B.s. Python Crash Course For Newbies - Learn Python Programming In 8 Hours! (programming Series) (volume 3)|Steven Codey|9781545180426
+ 20090213|Pearson Technology Group|Advanced Python 3 Programming Techniques|Mark Summerfield|9780321637710
+ 2016|Lulu.com|The Python Language Reference Manual|Sheridan, Chris|9781326570972
+ 2019|Pearson|Revel for Introduction to Python Programming and Data Structures -- Access Card|Liang, Y. Daniel|9780135187753
+ 2017|Independently published|Programming: Python Programming, JAVA Programming, HTML and CSS Programming for Beginners|Academy, iCode|9781520676081
+ 2017|CreateSpace Independent Publishing Platform|PYTHON & HACKING: The No-Nonsense Bundle: Learn Python Programming and Hacking Within 24 Hours!|University, Cyberpunk|9781543055399
+ 2019|Apress|Learn TensorFlow 2.0: Implement Machine Learning and Deep Learning Models with Python|Singh, Pramod and Manure, Avinash|9781484255582
+ 2019|Independently published|Problem Solving with Python 3.7 Edition: A beginner's guide to Python & open-source programming tools|Kazarinoff, Peter D.|9781693405419
+ 2019|Independently published|Data Structures and Algorithms in Python|Publishing, DS|9781691372379
+ 2018|Packt Publishing|Tkinter GUI Programming by Example: Learn to create modern GUIs using Tkinter by building real-world projects in Python|Love, David|9781788627481
+ 2020|Apress|Machine Learning Concepts with Python and the Jupyter Notebook Environment: Using Tensorflow 2.0|Silaparasetty, Nikita|9781484259665
+ 2016|CreateSpace Independent Publishing Platform|Python: The Complete Python Quickstart Guide (For Beginner's) (Python, Python Programming, Python for Dummies, Python for Beginners, Python crash course)|Style Academy, Life-|9781539567745
+ 2019|BPB Publications|Data Science with Jupyter: Master Data Science skills with easy-to-follow Python examples|Gupta, Prateek|9789388511377
+ 2018|CreateSpace Independent Publishing Platform|Python Programming: A Step By Step Guide For Beginners|Eddison, Leonard|9781719396509
+ 2018|In Easy Steps Limited|Python in easy steps: Covers Python 3.7|McGrath, Mike|9781840788365
+ 2019|Independently published|Python Programming: The Ultimate Crash Course for Beginners with all the Tools and Tricks to Learn Coding with Python (with Practical Examples)|Hayes, Howard|9781706111658
+ 2017|Createspace Independent Publishing Platform|Python Made Simple And Practical: A Step-by-step Guide To Learn Python Coding And Computer Science From Basic To Advanced Concepts.|James L. Young|9781546573333
+ 2015|Springer|The Python Workbook: A Brief Introduction with Exercises and Solutions|Stephenson, Ben|9783319142401
+ 2016|Chapman and Hall/CRC|Python for Bioinformatics (Chapman & Hall/CRC Mathematical and Computational Biology)|Bassi, Sebastian|9781584889304
+ 2016|CreateSpace Independent Publishing Platform|Python: An Ultimate Beginner's Guide to Python Programming|Gabon, Gale|9781533535573
+ 2018||Python Crash Course|Alexis Jordan|9781717716484
+ 20170113|Springer Nature|Programming with Python|T R Padmanabhan|9789811032776
+ 2019|Independently published|Mastering Deep Learning Fundamentals with Python: The Absolute Ultimate Guide for Beginners To Expert and Step By Step Guide to Understand Python Programming Concepts|Wilson, Richard|9781080537778
+ 2017-04-28|Packt Publishing|Python Deep Learning|Valentino Zocca and Gianmario Spacagna and Daniel Slater and Peter Roelants|9781786460660
+ 2015|Packt Publishing|Python Penetration Testing Essentials|Mohit|9781784395889
+ |Independently Published|Python Programming: An Easiest Beginner To Expert Guide To Learn Python|Burn and Andrew|9781090664846
+ 2016|Createspace Independent Publishing Platform|Python Programming: A Beginner's Guide To Learn Python In 7 Days|Ramsey Hamilton|9781533698537
+ 2018|Packt Publishing|Keras Deep Learning Cookbook: Over 30 recipes for implementing deep neural networks in Python|Dua, Rajdeep and Ghotra, Manpreet Singh|9781788621755
+ 2017|CreateSpace Independent Publishing Platform|Python: 2 Books in 1: Beginner's Guide + Best Practices to Programming Code with Python (Python, Java, JavaScript, Code, Programming Language, Programming, Computer Programming)|Masterson, Charlie|9781543292756
+ 2009|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering Book 6)|Langtangen, Hans Petter|9783642024757
+ 2019|Independently published|Raspberry Pi 3: A Practical Beginner's Guide To Understanding The Full Potential Of Raspberry Pi 3 By Starting Your Own Projects Using Python Programming|Sanders, Finn|9781093479508
+ 2017|Lulu.com|The Hacker's Guide To Scaling Python|Danjou, Julien|9781387379323
+ 2015|Packt Publishing|Python Data Visualization Cookbook - Second Edition|Milovanovic, Igor and Foures, Dimitry and Vettigli, Giuseppe|9781784394943
+ 2019|John Wiley & Sons|Python All-in-one For Dummies|John Shovic and Alan Simpson|9781119557678
+ 2014|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering Book 6)|Langtangen, Hans Petter|9783642549595
+ 2014|Apress|Learn Raspberry Pi Programming with Python|Donat, Wolfram|9781430264255
+ 2015|Packt Publishing|Python 3 Object-oriented Programming: Building robust and maintainable software with object oriented design patterns in Python|Phillips, Dusty|9781784395957
+ 2018|CreateSpace Independent Publishing Platform|Python Programming & Machine Learning With Python: Best Starter Pack Illustrated Guide For Beginners & Intermediates: The Future Is Here!|Sullivan, William|9781724534668
+ 2017|Createspace Independent Publishing Platform|Learn To Code:: The Beginner's Guide To Computer Programming - Python Machine Learning, Python For Beginners, Coding For Beginners|Dave Jones|9781548309794
+ 2017|Haynes Publishing UK|Coding - Computer programming (beginners onwards): Everything you need to get started with programming using Python (Owners' Workshop Manual)|Saunders, Mike|9781785211188
+ 2019|BPB Publications|Python Data Persistence: With SQL and NOSQL Databases|Lathkar, Malhar|9789388511759
+ 2018|BlackNES Guy Books|PYTHON & HACKING BUNDLE: 3 BOOKS IN 1: THE BLUEPRINT: Everything You Need To Know For Python Programming and Hacking!|Architects, CyberPunk|9781775235774
+ 2019|Independently published|PYTHON FOR BEGINNERS: The Ultimate Step by Step Learning Guide for Beginners to Python Programming in the Best Optimal Way|SANCHEZ, ENRIQUE|9781089550860
+ 2018|Independently published|Python Programming: A Step-by-Step Guide For Absolute Beginners|Brian Jenkins|9781792659416
+ 2019|EGEA Spa - Bocconi University Press|Python for non-Pythonians: How to Win Over Programming Languages|Grossetti, Francesco and Rubera, Gaia|9788885486867
+ 2007|Springer|Python Scripting for Computational Science (Texts in Computational Science and Engineering Book 3)|Langtangen, Hans Petter|9783540739166
+ 2016|People's Posts and Telecommunications Press|Python programming quickly get started to make the tedious work automation(Chinese Edition)|[ MEI ] Al Sweigart ZHU|9787115422699
+ 2021|Millennium Publishing Ltd|Python Programming For Beginners In 2021: Learn Python In 5 Days With Step By Step Guidance, Hands-on Exercises And Solution (Fun Tutorial For Novice Programmers) (Easy Coding Crash Course)|Tudor, James|9781913361273
+ 2019|Independently published|Python Data Analytics: A step by step fast and easy guide for whom are interested learn python data analytics. With examples, tips and tricks, includind basics of Pandas, Numpy and Matlotlib|programming languages project|9781704066530
+ 2019|Platinum Press LLC|Python Programming: Python Programming for Beginners, Python Programming for Intermediates|Stewart, Sarah|9781951339944
+ 2019|Apress|Natural Language Processing Recipes: Unlocking Text Data with Machine Learning and Deep Learning using Python|Kulkarni, Akshay and Shivananda, Adarsha|9781484242674
+ 2016|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering Book 6)|Langtangen, Hans Petter|9783662498873
+ 2017|Createspace Independent Publishing Platform|Python Succinctly|Jason Cannon|9781542827126
+ 20091002|O'Reilly Media, Inc.|Learning Python|Mark Lutz|9781449379322
+ 2003|O'Reilly Media, Incorporated|Learning Python|Mark Lutz and David Ascher|9781600330216
+ 2019|Independently published|LEARN PYTHON PROGRAMMING: Write code from scratch in a clear & concise way, with a complete basic course. From beginners to intermediate, an hands-on project with examples, to follow step by step|GRAY, WILLIAM|9781098525729
+ 2021|Apress|Programming Microcontrollers with Python: Experience the Power of Embedded Python|Subero, Armstrong|9781484270578
+ 2015|Createspace Independent Publishing Platform|Python: Learn Python Fast - The Ultimate Crash Course To Learning The Basics Of The Python Programming Language In No Time (python, Python ... Coding Fast With Hands-on Project) (volume 7)|Stephen Hoffman|9781517137861
+ 2016|Packt Publishing|Bayesian Analysis with Python|Martin, Osvaldo|9781785889851
+ 20091208|O'Reilly Media, Inc.|Bioinformatics Programming Using Python|Mitchell L  Model|9781449382902
+ 2018|Packt Publishing|Python Artificial Intelligence Projects for Beginners: Get up and running with Artificial Intelligence using 8 smart and exciting AI applications|Eckroth, Dr. Joshua|9781789538243
+ 2017|Createspace Independent Publishing Platform|Intermediate Python Programming: The Insider Guide To Intermediate Python Programming Concepts|Richard Ozer|9781978081123
+ 2014|Packt Publishing|Python for Secret Agents|Lott,  Steven F.|9781783980437
+ 20140423|Pearson Education (US)|Starting Out with Python|Tony Gaddis|9780133743692
+ 2021|Simvol-Pljus|Programming in Python 3. Detailed guidance. / Programmirovanie na Python 3. Podrobnoe rukovodstvo.|Various authors|9785932861615
+ 2017|Independently Published|Python Programming For Intermediates: Learn The Fundamentals Of Python In 7 Days|Michael Knapp|9781521439555
+ 2014|Apress|Foundations of Python Network Programming|Rhodes, Brandon and Goerzen, John|9781430258551
+ 2009|Champion Writers, Inc.|Python Programming With Oracle Database|Ray Terrill|9781608300136
+ 2020|Springer|Essential Python for the Physicist|Giovanni Moruzzi|9783030450274
+ 2018|CreateSpace Independent Publishing Platform|Python: The Ultimate Beginners Guide to Learn and Understand Python Programming (Volume 1)|Webber, Mr Zach|9781986840156
+ 20160830|O'Reilly Media, Inc.|The Hitchhiker's Guide to Python|Kenneth Reitz; Tanya Schlusser|9781491933220
+ 20180903|Taylor & Francis|Nonlinear Digital Filtering with Python|Ronald K. Pearson; Moncef Gabbouj|9781498714136
+ 2011|Apress|Python Algorithms: Mastering Basic Algorithms in the Python Language (Expert's Voice in Open Source)|Hetland, Magnus Lie|9781430232384
+ 2019|Packt Publishing|Expert Python Programming: Become a master in Python by learning coding best practices and advanced programming concepts in Python 3.7, 3rd Edition|Jaworski, Michał and Ziadé, Tarek|9781789806779
+ 2011|Apress|Pro Android Python with SL4A: Writing Android Native Apps Using Python, Lua, and Beanshell|Ferrill, Paul|9781430235705
+ 2018|Packt Publishing|Hands-On Bitcoin Programming with Python: Build powerful online payment centric applications with Python|Garg, Harish|9781789533163
+ 2019|Independently Published|Coding: This Book Includes: Python Coding And Programming + Linux For Beginners + Learn Python Programming”|Clark, Michael and Learn, Michael|9781673163865
+ 2016|Packt Publishing|Modern Python Cookbook: The latest in modern Python recipes for the busy modern programmer|Lott, Steven F.|9781786463845
+ 2014|John Wiley & Sons|Beginning Programming With Python For Dummies|John Paul Mueller|9781118891476
+ 2014|Packt Publishing|Raspberry Pi Cookbook for Python Programmers|Cox, Tim|9781849696630
+ 2020|SAGE Publications Ltd|Programming with Python for Social Scientists|Brooker, Phillip|9781526431721
+ 15-07-2019|Packt Publishing|Hands-On Web Scraping with Python|Anish Chapagain|9781789536195
+ 2018|Independently published|Programming: 4 Manuscripts in 1 book: Python For Beginners, Python 3 Guide, Learn Java, Excel 2016|Needham, Timothy C.|9781728914671
+ 2015|Packt Publishing|Programming ArcGIS with Python Cookbook - Second Edition|Pimpler, Eric|9781785281259
+ 2018|Apress|Data Science Fundamentals for Python and MongoDB|Paper, David|9781484235973
+ 2015|Cambridge University Press|Python Programming for Biology: Bioinformatics and Beyond|Stevens, Tim J.|9780521895835
+ 2017|John Wiley & Sons|Digital Signal Processing (dsp) With Python Programming|Maurice Charbit|9781119373032
+ 2019|Independently Published|Python Coding: Step-by-step Beginners' Guide To Learning Python Programming Language With Hands-on Project. Exercises Included|Zed Fast|9781670440549
+ 2015|Apress|Beginning Python Games Development, Second Edition: With PyGame|McGugan, Will and Kinsley, Harrison|9781484209707
+ 2015|CreateSpace Independent Publishing Platform|Python Programming: Getting started FAST With Learning of Python Programming Basics in No Time (Programming is Easy) (Volume 3)|Gimson, Matthew|9781519564849
+ 2011|Apress|Foundations of Python Network Programming: The comprehensive guide to building network applications with Python (Books for Professionals by Professionals)|Goerzen, John and Bower, Tim and Rhodes, Brandon|9781430230045
+ 2018|CreateSpace Independent Publishing Platform|Python Programming: A Step By Step Guide For Beginners|Eddison, Leonard|9781986278577
+ 2016|People Post Press|Teach children to learn programming language Python version(Chinese Edition)|Bryson Payne|9787115416346
+ 2019|Independently published|Learning Python: The Ultimate Guide to Learning How to Develop Applications for Beginners with Python Programming Language Using Numpy, Matplotlib, Scipy and Scikit-learn|Hack, Samuel|9781086759440
+ 2017|Pearson|Introduction to Computing and Programming in Python with MyProgrammingLab, Global Edition|Guzdial, Mark J. and Ericson, Barbara|9781292109954
+ 2015|Springer|Data Structures and Algorithms with Python (Undergraduate Topics in Computer Science)|Lee, Kent D. and Hubbard, Steve|9783319130729
+ 2016|Sams,|Sams Teach Yourself Python Programming For Raspberry Pi In 24 Hours|Blum, Richard , 1962- (author.)|9780134389585
+ 2017|Packt Publishing|Python Social Media Analytics: Analyze and visualize data from Twitter, YouTube, GitHub, and more|Chatterjee, Siddhartha and Krystyanczuk, Michal|9781787126756
+ 2014|Chapman and Hall/CRC|Making Music with Computers: Creative Programming in Python (Chapman & Hall/CRC Textbooks in Computing)|Manaris, Bill and Brown, Andrew R.|9781482222210
+ 2021|American Geophysical Union|Python for Remote Sensing Applications in Earth Science: A Practical Programming Guide (Special Publications)|Esmaili, Rebekah B.|9781119606888
+ 2011|Springer|A Primer on Scientific Programming with Python (Texts in Computational Science and Engineering Book 6)|Langtangen, Hans Petter|9783642183669
+ 2019|Apress|Building Android Apps in Python Using Kivy with Android Studio: With Pyjnius, Plyer, and Buildozer|Gad, Ahmed Fawzy Mohamed|9781484250310
+ 2017|Packt Publishing|Statistics for Machine Learning: Techniques for exploring supervised, unsupervised, and reinforcement learning models with Python and R|Dangeti, Pratap|9781788291224
+ 2017|Springer|Introduction to Data Science: A Python Approach to Concepts, Techniques and Applications (Undergraduate Topics in Computer Science)|Igual, Laura and Santi Seguí and Jordi Vitrià and Eloi Puertas and Petia Radeva and Oriol Pujol and Sergio Escalera and Francesc Dantí and Lluís Garrido|9783319500171
+ ||Introduction To Computing And Programming In Python Plus Myprogramming Lab Without Pearson Etext -- Access Card Package (3rd Edition)||9780133591521
+ 2019|Independently Published|Python Programming: 2 Books In 1: Ultimate Beginner's Guide & 7 Days Crash Course, Learn Computer Programming, Machine Learning And Data Science Quickly With Step-by-step Exercises|John Russel|9781673121223
+ 2019|Springer|Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python 3.6 (Texts in Computational Science and Engineering Book 15)|Linge, Svein and Hans Petter Langtangen|9783030168773
+ 2019-05-01T00:00:01Z|QuickStudy Reference Guides|Python Programming Language|Jayne, Berajah|9781423241881
+ 2016|Springer|Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python (Texts in Computational Science and Engineering Book 15)|Linge, Svein and Langtangen, Hans Petter|9783319324289
+ 2022|Independently published|Python Programming for Beginners: The #1 Python Programming Crash Course for Beginners to Learn Python Coding Well & Fast (with Hands-On Exercises)|Publishing, Codeone|9798430918002
+ 2012|No Starch Press, Incorporated|Python for Kids: A Playful Introduction to Programming|Briggs, Jason R.|9781593274078
+ 2021|Real Python (realpython.com)|Python Basics: A Practical Introduction to Python 3|Amos, David and Bader, Dan and Jablonski, Joanna and Heisler, Fletcher|9781775093329
+ 2017|O'Reilly Media|Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython|McKinney, Wes|9781491957660
+ 2021|Independently published|Python Programming for Beginners: The Ultimate Guide for Beginners to Learn Python Programming: Crash Course on Python Programming for Beginners (Python Programming Books)|Publishing, AMZ|9798536636619
+ 2019|No Starch Press|Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming|Matthes, Eric|9781593279295
+ 2014|O'Reilly Media|Python Pocket Reference: Python In Your Pocket (Pocket Reference (O'Reilly))|Lutz, Mark|9781449357016
+ 2020|Packt Publishing|40 Algorithms Every Programmer Should Know: Hone your problem-solving skills by learning different algorithms and their implementation in Python|Ahmad, Imran|9781789801217
+ 2013|O'Reilly Media|Python Cookbook, Third Edition|Beazley, David and Jones, Brian K.|9781449340377
+ 2020|Independently published|Python for Beginners: 2 Books in 1: Python Programming for Beginners, Python Workbook|ACADEMY, PROGRAMMING LANGUAGES|9781654414016
+ 2020|Quickstudy|Python Standard Library: A Quickstudy Laminated Reference Guide|Jayne, Berajah|9781423244233
+ 2018-10-30T00:00:01Z|Packt Publishing|Python 3 Object-Oriented Programming: Build robust and maintainable software with object-oriented design patterns in Python 3.8, 3rd Edition|Phillips, Dusty|9781789615852
+ 2020|Esri Press|Python Scripting for ArcGIS Pro|Zandbergen, Paul A. and Zandbergen, Paul|9781589485006
+ 2016|Franklin, Beedle & Associates|Python Programming: An Introduction to Computer Science, 3rd Ed.|John Zelle|9781590282755
+ 2021|No Starch Press|Black Hat Python, 2nd Edition: Python Programming for Hackers and Pentesters|Seitz, Justin and Arnold, Tim|9781718501133
+ 2021|Independently published|Python for Beginners: Learn Python Programming With No Coding Experience in 7 Days: The Easiest & Quickest Way to Learn Python Coding, Programming, Web-Programming. Be a Python Programmer|Ozoemena, Santos|9798478596194
+ 2019|Addison-Wesley Professional|Effective Python: 90 Specific Ways to Write Better Python (Effective Software Development Series)|Brett, Slatkin|9780134854595
+ 2017|Addison-Wesley Professional|Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code (Zed Shaw's Hard Way Series)|A., Shaw Zed|9780134693903
+ 2021|Packt Publishing|Learn Python Programming: An in-depth introduction to the fundamentals of Python, 3rd Edition|Romano, Fabrizio and Kruger, Heinrich|9781801815093
+ 2021|McGraw-Hill Education TAB|Programming the Raspberry Pi, Third Edition: Getting Started with Python|Monk, Simon|9781264257355
+ 2021|Mike Murach & Associates|Murach's Python Programming (2nd Edition)|Joel Murach and Michael Urban|9781943872749
+ 2020|Rockridge Press|Python Programming for Beginners: A Kid's Guide to Coding Fundamentals|Foster, Patricia|9781646113880
+ 2020|Packt Publishing|40 Algorithms Every Programmer Should Know: Hone your problem-solving skills by learning different algorithms and their implementation in Python|Ahmad, Imran|9781789809862
+ 2020|Independently published|Learn Coding Basics for Kids, Young Adults and People Who Are Young at Heart, With Python: Python Computer Programming Made Easy!|Stanley, Jack C. and Gross, Erik D. and Academy, The Tech|9798677949418
+ 2017|Manning|Deep Learning with Python|Chollet, Francois|9781638352044
+ 2015|No Starch Press|Python Crash Course: A Hands-On, Project-Based Introduction to Programming|Matthes, Eric|9781593276034
+ 2021|Columbia Business School Publishing|Python for MBAs|Griffel, Mattan and Guetta, Daniel|9780231193931
+ 2015|Esri Press|Python Scripting for ArcGIS (Python Scripting (3))|Zandbergen, Paul A.|9781589483712
+ 2016|Mike Murach & Associates|Murach's Python Programming|Michael Urban and Joel Murach|9781890774974
+ 2018-11-29T00:00:01Z|Packt Publishing|Learn Robotics Programming: Build and control autonomous robots using Raspberry Pi 3 and Python|Staple, Danny|9781789340747
+ 2019|Independently published|Computer Programming And Cyber Security for Beginners: This Book Includes: Python Machine Learning, SQL, Linux, Hacking with Kali Linux, Ethical Hacking. Coding and Cybersecurity Fundamentals|Codings, Zach|9781671532908
+ 2015|Addison-Wesley Professional|Effective Python: 59 Specific Ways to Write Better Python (Effective Software Development Series)|Slatkin, Brett|9780134034287
+ 2020|Manning Publications|Tiny Python Projects: 21 small fun projects for Python beginners designed to build programming skill, teach new algorithms and techniques, and introduce software testing|Youens-Clark, Ken|9781617297519
+ 2020|Packt Publishing|Django 3 By Example: Build powerful and reliable Python web applications from scratch, 3rd Edition|Melé, Antonio|9781838989323
+ 2015|Pearson|Introduction to Computing and Programming in Python|Guzdial, Mark and Ericson, Barbara|9780134025544
+ 2021|Independently published|PYTHON: Learn Coding Programs with Python Programming and Master Data Analysis & Analytics, Data Science and Machine Learning with the Complete Crash Course for Beginners - 5 Manuscripts in 1 Book|Academy, TechExp|9798597916552
+ 2009|Addison-Wesley Professional|Programming in Python 3: A Complete Introduction to the Python Language|Summerfield, Mark|9780321680563
+ 2021|McGraw-Hill Education TAB|Programming the Raspberry Pi, Third Edition: Getting Started with Python|Monk, Simon|9781264257362
+ 2019|Independently published|Python Workbook: Learn How to Quickly and Effectively Program with Exercises, Projects, and Solutions|LANGUAGES ACADEMY, PROGRAMMING|9781653039296
+ 2020|Coherent Press|Python from the Very Beginning: With 100 exercises and answers|Whitington, John|9780957671157
+ 2017|Independently published|Python for Beginners: An Introduction to Learn Python Programming with Tutorials and Hands-On Examples|Metzler, Nathan|9781973108795
+ 2021|No Starch Press|Learn to Code by Solving Problems: A Python Programming Primer|Zingaro, Daniel|9781718501331
+ 2021|Packt Publishing|Hands-On Data Analysis with Pandas: A Python data science handbook for data collection, wrangling, analysis, and visualization, 2nd Edition|Molin, Stefanie|9781800563452
+ 2021|Packt Publishing|Interactive Dashboards and Data Apps with Plotly and Dash: Harness the power of a fully fledged frontend web framework in Python – no JavaScript required|Dabbas, Elias|9781800568914
+ 2020-06-29T00:00:01Z|Packt Publishing|Raspberry Pi Computer Vision Programming: Design and implement computer vision applications with Raspberry Pi, OpenCV, and Python 3, 2nd Edition|Pajankar, Ashwin|9781800207219
+ 2020|Frank|Python programming for beginners|Cannon, Jason|9783033083073
+ 2021|AI Publishing LLC|Hands-on Python Programming for Beginners: Learn Practical Python Fast|Publishing, AI|9781734790191
+ 2016|Sundog Publishing|Python Programming and Visualization for Scientists|Alex J. DeCaria|9780972903387
+ 2016|Packt Publishing|Python: Deeper Insights into Machine Learning: Leverage benefits of machine learning techniques using Python|Raschka, Sebastian and Julian, David and Hearty, John|9781787128545
+ 2015|McGraw-Hill Education TAB|Programming the Raspberry Pi, Second Edition: Getting Started with Python|Monk, Simon|9781259587412
+ 2020|Packt Publishing|Practical Data Analysis Using Jupyter Notebook: Learn how to speak the language of data by extracting useful and actionable insights using Python|Wintjen, Marc|9781838825096
+ 2021|O'Reilly Media|Think Bayes: Bayesian Statistics in Python|Downey, Allen B.|9781492089469
+ 2020|Apress|Machine Learning in the Oil and Gas Industry: Including Geosciences, Reservoir Engineering, and Production Engineering with Python|Pandey, Yogendra Narayan and Rastogi, Ayush and Kainkaryam, Sribharath and Bhattacharya, Srimoyee and Saputelli, Luigi|9781484260937
+ 2006|For Dummies|Python For Dummies|Maruch, Stef and Maruch, Aahz|9780471778646
+ 2014|Packt Publishing|Mastering Object-oriented Python|F. Lott, Steven|9781783280971
+ 2009|Addison-Wesley Professional|Python Essential Reference (Developer's Library)|Beazley, David|9780768687026
+ 2018|Packt Publishing|Learn Python Programming: The no-nonsense, beginner's guide to programming, data science, and web development with Python 3.7, 2nd Edition|Romano, Fabrizio|9781788996662
+ 2021|Princeton University Press|A Student's Guide to Python for Physical Modeling: Second Edition|Kinder, Jesse M. and Nelson, Philip|9780691223667
+ 2019|Independently published|Python Programming For Beginners: Learn The Basics Of Python Programming (Python Crash Course, Programming for Dummies)|Tudor, James|9781075311932
+ 2013|Pragmatic Bookshelf, The|Practical Programming: An Introduction to Computer Science Using Python 3 (Pragmatic Programmers)|Gries, Paul and Campbell, Jennifer and Montojo, Jason|9781937785451
+ 2021|Packt Publishing|Practical Discrete Mathematics: Discover math principles that fuel algorithms for computer science and machine learning with Python|White, Ryan T. and Ray, Archana Tikayat|9781838983505
+ 2012|McGraw-Hill Education Tab|Programming the Raspberry Pi: Getting Started with Python|Monk, Simon|9780071807838
+ 2021|Independently published|Data Science for Beginners: 4 books in 1 — Master the Basics of Python Programming and Learn The Art of Data Science with Real-World Applications to Artificial Intelligence and Machine Learning|Park, Andrew|9798788844732
+ 2020|No Starch Press|Python One-Liners: Write Concise, Eloquent Python Like a Professional|Mayer, Christian|9781718500518
+ 2017|Microsoft Press|Begin to Code with Python|Miles, Rob|9781509304530
+ 2022|Independently published|Python: 3 books in 1- Your complete guide to python programming with Python for Beginners, Python Data Analysis and Python Machine Learning|Ellison, Brady|9798410695930
+ 2018|Princeton University Press|A Student's Guide to Python for Physical Modeling: Updated Edition|Kinder, Jesse M. and Nelson, Philip|9781400889426
+ 2021|Independently published|PYTHON: Learn Coding Programs with Python Programming and Master Data Analysis & Analytics, Data Science and Machine Learning with the Complete Crash Course for Beginners - 5 Manuscripts in 1 Book|Academy, TechExp|9798789894958
+ 2021|Packt Publishing|Python GUI Programming with Tkinter: Design and build functional and user-friendly GUI applications, 2nd Edition|Moore, Alan D.|9781801815925
+ 2012|No Starch Press|Python for Kids: A Playful Introduction To Programming|Briggs, Jason|9781593274948
+ 2018-05-15T00:00:01Z|Packt Publishing|Python GUI Programming with Tkinter: Develop responsive and powerful GUI applications with Tkinter|Moore, Alan D.|9781788835886
+ 2019|Packt Publishing|Python Network Programming: Conquer all your networking challenges with the powerful Python language|Ratan, Abhishek and Chou, Eric and Kathiravelu, Pradeeban and Sarker, Dr. M. O. Faruque|9781788830232
+ 2009|Addison-Wesley Professional|Programming in Python 3: A Complete Introduction to the Python Language|Summerfield, Mark|9780321699879
+ 2020|Cambridge University Press|Numerical Methods in Physics with Python|Gezerlis, Alex|9781108805889
+ 2020|Packt Publishing|Python Data Cleaning Cookbook: Modern techniques and Python tools to detect and remove dirty data and extract key insights|Walker, Michael|9781800564596
+ 2018|Packt Publishing|Learn Python Programming: The no-nonsense, beginner's guide to programming, data science, and web development with Python 3.7, 2nd Edition|Romano, Fabrizio|9781788991650
+ 2017|CreateSpace Independent Publishing Platform|Python Programming: for Engineers and Scientists|Turk, Irfan|9781543173833
+ 2019-02-28T00:00:01Z|Packt Publishing|Advanced Python Programming: Build high performance, concurrent, and multi-threaded apps with Python using proven design patterns|Lanaro, Dr. Gabriele and Nguyen, Quan and Kasampalis, Sakis|9781838551216
+ 2019|Packt Publishing|Mastering OpenCV 4 with Python: A practical guide covering topics from image processing, augmented reality to deep learning with OpenCV 4 and Python 3.7|Villán, Alberto Fernández|9781789349757
+ 2017|Pragmatic Bookshelf|Practical Programming: An Introduction to Computer Science Using Python 3.6|Gries, Paul and Campbell, Jennifer and Montojo, Jason|9781680502688
+ 2021|Packt Publishing|Hands-On Data Analysis with Pandas: A Python data science handbook for data collection, wrangling, analysis, and visualization, 2nd Edition|Molin, Stefanie|9781800565913
+ 2019-10-01T00:00:01Z|Oxford Univ Pr|Python Programming: Using Problem Solving Approach|Thareja, Reema|9780199480173
+ 2013|O'Reilly Media|Twisted Network Programming Essentials: Event-driven Network Programming with Python|McKellar, Jessica and Fettig, Abe|9781449326111
+ 2018|No Starch Press|Impractical Python Projects: Playful Programming Activities to Make You Smarter|Vaughan, Lee|9781593278915
+ 2019-12-24T00:00:01Z|Independently published|Python GUI Programming with PyQt: A Beginner’s Guide to Python 3 and GUI Application Development|Metzler, Nathan|9781650440712
+ 2013|O'Reilly Media|Think Bayes: Bayesian Statistics in Python|Allen B. Downey|9781449370787
+ 2021|Packt Publishing|Hands-On Financial Trading with Python: A practical guide to using Zipline and other Python libraries for backtesting trading strategies|Pik, Jiri and Ghosh, Sourav|9781838988807
+ 2018|Packt Publishing|Bioinformatics with Python Cookbook: Learn how to use modern Python bioinformatics libraries and applications to do cutting-edge research in computational biology, 2nd Edition|Antao, Tiago|9781789349986
+ 2022|Cambridge University Press|Mathematical Logic through Python|Gonczarowski, Yannai A. and Nisan, Noam|9781108949477
+ 2013-09-07T00:00:01Z|CreateSpace Independent Publishing Platform|Python for Biologists: A complete programming course for beginners|Jones, Dr Martin|9781492346135
+ 2018|Packt Publishing|Mastering Python Design Patterns: A guide to creating smart, efficient, and reusable software, 2nd Edition|Ayeva, Kamon and Kasampalis, Sakis|9781788832069
+
+githubLanguage Python
+ fileExtensions py cgi fcgi gyp gypi lmi py3 pyde pyi pyp pyt pyw rpy smk spec tac wsgi xpy
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  CorentinJ Real-Time-Voice-Cloning https://github.com/CorentinJ.png https://github.com/CorentinJ/Real-Time-Voice-Cloning Python #3572A5 7049 955 4051 "Clone a voice in 5 seconds to generate arbitrary speech in real-time"
+  Yorko mlcourse.ai https://github.com/Yorko.png https://github.com/Yorko/mlcourse.ai Python #3572A5 5417 3816 871 "Open Machine Learning Course"
+  iperov DeepFaceLab https://github.com/iperov.png https://github.com/iperov/DeepFaceLab Python #3572A5 8645 2006 3166 "DeepFaceLab is a tool that utilizes machine learning to replace faces in videos. Includes prebuilt ready to work standalone Windows 7,8,10 binary (look readme.md)."
+  taki0112 UGATIT https://github.com/taki0112.png https://github.com/taki0112/UGATIT Python #3572A5 3646 593 2798 "Official Tensorflow implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  shengqiangzhang examples-of-web-crawlers https://github.com/shengqiangzhang.png https://github.com/shengqiangzhang/examples-of-web-crawlers Python #3572A5 4155 1295 1321 "一些非常有趣的python爬虫例子,对新手比较友好,主要爬取淘宝、天猫、微信、豆瓣、QQ等网站。(Some interesting examples of python crawlers that are friendly to beginners. )"
+  google-research google-research https://github.com/google-research.png https://github.com/google-research/google-research Python #3572A5 3329 488 724 "Google AI Research"
+  deepfakes faceswap https://github.com/deepfakes.png https://github.com/deepfakes/faceswap Python #3572A5 24602 8021 3172 "Deepfakes Software For All"
+  znxlwm UGATIT-pytorch https://github.com/znxlwm.png https://github.com/znxlwm/UGATIT-pytorch Python #3572A5 1150 199 933 "Official PyTorch implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  pwxcoo chinese-xinhua https://github.com/pwxcoo.png https://github.com/pwxcoo/chinese-xinhua Python #3572A5 6111 1309 535 "📙 中华新华字典数据库。包括歇后语，成语，词语，汉字。"
+  tlbootcamp tlroadmap https://github.com/tlbootcamp.png https://github.com/tlbootcamp/tlroadmap Python #3572A5 1965 184 806 "👩🏼‍💻👨🏻‍💻Карта навыков и модель развития тимлидов"
+  pytorch fairseq https://github.com/pytorch.png https://github.com/pytorch/fairseq Python #3572A5 5336 1168 536 "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+  vinta awesome-python https://github.com/vinta.png https://github.com/vinta/awesome-python Python #3572A5 72704 14251 2125 "A curated list of awesome Python frameworks, libraries, software and resources"
+  Avik-Jain 100-Days-Of-ML-Code https://github.com/Avik-Jain.png https://github.com/Avik-Jain/100-Days-Of-ML-Code Python #3572A5 25578 6210 861 "100 Days of ML Coding"
+  pandas-dev pandas https://github.com/pandas-dev.png https://github.com/pandas-dev/pandas Python #3572A5 21188 8366 561 "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+  timgrossmann InstaPy https://github.com/timgrossmann.png https://github.com/timgrossmann/InstaPy Python #3572A5 8694 2384 280 "📷 Instagram Bot - Tool for automated Instagram interactions"
+  robotframework robotframework https://github.com/robotframework.png https://github.com/robotframework/robotframework Python #3572A5 3746 1186 153 "Generic automation framework for acceptance testing and RPA"
+  google python-fire https://github.com/google.png https://github.com/google/python-fire Python #3572A5 15088 900 469 "Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object."
+  eriklindernoren ML-From-Scratch https://github.com/eriklindernoren.png https://github.com/eriklindernoren/ML-From-Scratch Python #3572A5 13039 2386 1269 "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning."
+  nvbn thefuck https://github.com/nvbn.png https://github.com/nvbn/thefuck Python #3572A5 46597 2305 1380 "Magnificent app which corrects your previous console command."
+  instagrambot instabot https://github.com/instagrambot.png https://github.com/instagrambot/instabot Python #3572A5 1902 648 151 "🐙 Free Instagram scripts, bots and Python API wrapper. Get free instagram followers with our auto like, auto follow and other scripts!"
+  public-apis public-apis https://github.com/public-apis.png https://github.com/public-apis/public-apis Python #3572A5 61065 6583 1402 "A collective list of free APIs for use in software and web development."
+  tiangolo fastapi https://github.com/tiangolo.png https://github.com/tiangolo/fastapi Python #3572A5 4182 224 516 "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+  521xueweihan HelloGitHub https://github.com/521xueweihan.png https://github.com/521xueweihan/HelloGitHub Python #3572A5 15415 1708 1008 "Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目"
+  3b1b manim https://github.com/3b1b.png https://github.com/3b1b/manim Python #3572A5 13205 1540 1041 "Animation engine for explanatory math videos"
+  xingyizhou CenterNet https://github.com/xingyizhou.png https://github.com/xingyizhou/CenterNet Python #3572A5 2194 503 289 "Object detection, 3D detection, and pose estimation using center point detection:"
+ trendingProjectsCount 26
+ type programming
+ filenames .gclient DEPS SConscript SConstruct Snakefile wscript
+ interpreters python python2 python3
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python
+ aliases python3 or rusthon
+ repos 9300725
+
+indeedJobs python engineer
+ 2017 28965
+linkedInSkill python
+ 2018 1801117
+stackOverflowSurvey
+ 2021
+  users 39792
+  medianSalary 59454
+  fans 34929
+  percentageUsing 0.48
+
+semanticScholar 52
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2019|SciPy 1.0: fundamental algorithms for scientific computing in Python|10.1038/s41592-019-0686-2|8661|421|Pauli Virtanen and R. Gommers and T. Oliphant and Matt Haberland and Tyler Reddy and D. Cournapeau and Evgeni Burovski and Pearu Peterson and Warren Weckesser and Jonathan Bright and Stéfan J. van der Walt and M. Brett and Joshua Wilson and K. Millman and N. Mayorov and Andrew R. J. Nelson and E. Jones and Robert Kern and Eric Larson and C. J. Carey and Ilhan Polat and Yu Feng and Eric W. Moore and J. Vanderplas and D. Laxalde and Josef Perktold and R. Cimrman and I. Henriksen and E. Quintero and Charles R. Harris and A. Archibald and Antônio H. Ribeiro and Fabian Pedregosa and P. van Mulbregt and Aditya Alessandro Pietro Alex Andreas Andreas Anthony Ant Vijaykumar Bardelli Rothberg Hilboll Kloeckner Sco and A. Vijaykumar and Alessandro Pietro Bardelli and Alex Rothberg and A. Hilboll and Andre Kloeckner and A. Scopatz and Antony Lee and A. Rokem and C. N. Woods and Chad Fulton and Charles Masson and C. Häggström and Clark Fitzgerald and D. Nicholson and David R. Hagen and D. Pasechnik and E. Olivetti and Eric Martin and Eric Wieser and Fabrice Silva and F. Lenders and Florian Wilhelm and G. Young and Gavin A. Price and G. Ingold and Gregory E. Allen and Gregory R. Lee and H. Audren and I. Probst and J. Dietrich and J. Silterra and James T. Webber and J. Slavič and J. Nothman and J. Buchner and Johannes Kulick and Johannes L. Schönberger and J. V. de Miranda Cardoso and J. Reimer and J. Harrington and Juan Rodríguez and Juan Nunez-Iglesias and Justin Kuczynski and K. Tritz and M. Thoma and M. Newville and Matthias Kümmerer and Maximilian Bolingbroke and Michael Tartre and M. Pak and Nathaniel J. Smith and N. Nowaczyk and Nikolay Shebanov and O. Pavlyk and P. A. Brodtkorb and Perry Lee and R. McGibbon and Roman Feldbauer and Sam Lewis and S. Tygier and Scott Sievert and S. Vigna and Stefan Peterson and S. More and Tadeusz Pudlik and T. Oshima and T. Pingel and T. Robitaille and Thomas Spura and T. Jones and T. Cera and Tim Leslie and Tiziano Zito and Tom Krauss and U. Upadhyay and Y. Halchenko and Y. Vázquez-Baeza|f0d35b37fec26c3f1ed09253cbb9304fb62208d1
+ 2014|scikit-image: image processing in Python|10.7717/peerj.453|2701|73|S. Walt and Johannes L. Schönberger and Juan Nunez-Iglesias and François Boulogne and Joshua D. Warner and Neil Yager and E. Gouillart and Tony Yu|a2fcf53f0aef0bfaec6353676c4f1d4e36aab5c0
+ 2016|Probabilistic programming in Python using PyMC3|10.7287/peerj.preprints.1686v1|1322|145|J. Salvatier and T. Wiecki and C. Fonnesbeck|8085b60ce1771647f11ccc4728397275b502f359
+ 2017|The atomic simulation environment-a Python library for working with atoms.|10.1088/1361-648X/aa680e|1291|28|Ask Hjorth Larsen and Jens Jørgen Mortensen and J. Blomqvist and I. Castelli and R. Christensen and M. Dulak and J. Friis and M. Groves and B. Hammer and Cory Hargus and E. Hermes and P. C. Jennings and Peter Bjerre Jensen and J. Kermode and J. Kitchin and Esben Leonhard Kolsbjerg and J. Kubal and K. Kaasbjerg and S. Lysgaard and Jón Bergmann Maronsson and Tristan Maxson and T. Olsen and L. Pastewka and Andrew A. Peterson and C. Rostgaard and J. Schiøtz and O. Schütt and M. Strange and K. Thygesen and T. Vegge and L. Vilhelmsen and M. Walter and Z. Zeng and K. Jacobsen|433d14e40f0d5362df4016270ba97e13371bc42a
+ 2012|Pyomo — Optimization Modeling in Python|10.1007/978-1-4614-3226-5|573|46|W. Hart and C. Laird and J. Watson and D. L. Woodruff|aad4604a72ae4856ae9fb4d0c3f8748a7a895b7b
+ 2018|Pingouin: statistics in Python|10.21105/joss.01026|362|55|Raphael Vallat|cbac8b0d82ea8e9251d5530695841d816cb196b9
+ 2020|Pymoo: Multi-Objective Optimization in Python|10.1109/ACCESS.2020.2990567|236|20|Julian Blank and K. Deb|61e27dbae190b82639c57f180ecf97e4c46fcad9
+ 2016|The Python ARM Radar Toolkit (Py-ART), a Library for Working with Weather Radar Data in the Python Programming Language|10.5334/JORS.119|181|14|Jonathan J. Helmus and S. Collis|49d96266eb10a539b120c2bac02cd4ad454bb089
+ 2019|Machine Learning Made Easy: A Review of Scikit-learn Package in Python Programming Language|10.3102/1076998619832248|82|6|J. Hao and T. Ho|a8fadb33a38f1096f84f64bd66345717a5bc3241
+ 2005|On the performance of the Python programming language for serial and parallel scientific computations|10.1155/2005/619804|81|1|Xing Cai and H. Langtangen and H. Moe|9f4c51b5bc52aaa33b3fb48857ecbfb0bcf3347d
+ 2013|Pygrass: An Object Oriented Python Application Programming Interface (API) for Geographic Resources Analysis Support System (GRASS) Geographic Information System (GIS)|10.3390/IJGI2010201|48|3|P. Zambelli and Sören Gebbert and M. Ciolli|4cb258581acc3e9821dab7fbac28d3c7b5e0d33c
+ 2020|DNA Features Viewer, a sequence annotations formatting and plotting library for Python|10.1101/2020.01.09.900589|45|1|Valentin Zulkower and S. Rosser|2539ed2a518f604511faa22716a936b21f715efd
+ 2016|User interfaces for computational science: A domain specific language for OOMMF embedded in Python|10.1063/1.4977225|39|2|M. Beg and R. Pepper and H. Fangohr|319b1d8a7fdb25fa0e8e6261d8b440303eaf120e
+ 2011|Programming language Python for data processing|10.1109/ICECENG.2011.6057428|28|1|Z. Dobesová|3b2574ca20143a380283d827f361f99de3d57b7e
+ 2016|Learning Scientific Programming with Python|10.1017/cbo9781139871754|25|0|Christian Hill|dd5059f388d500015f1d84a3a1bb7a5a0ced8c9f
+ 2013|Python to learn programming|10.1088/1742-6596/423/1/012027|21|1|A. Bogdanchikov and M. Zhaparov and R. Suliyev|33ff56972266b079cf0c76ed70e7d4b395ba7cab
+ 2018|Python Programming Language for Power System Analysis Education and Research|10.1109/TDC-LA.2018.8511780|21|2|Thiago R. Fernandes and Leonardo R. Fernandes and T. R. Ricciardi and Luis F. Ugarte and M. D. de Almeida|a5c0568085dbd68be3c889051a27981ed096e985
+ 2020|Converting 2D-Medical Image Files “DICOM” into 3D- Models, Based on Image Processing, and Analysing Their Results with Python Programming|10.37394/23205.2020.19.2|18|0|Rafeek Mamdouh and H. El-Bakry and A. Riad and Nashaat Elkhamisy|0d04472d639b5977d5ee3f06f87373a8832dc9e6
+ 2020|Topoly: Python package to analyze topology of polymers|10.1093/bib/bbaa196|17|0|P. Dabrowski-Tumanski and P. Rubach and W. Niemyska and B. Greń and J. I. Sulkowska|49097dc79099613a5057138be4146e853e8940d6
+ 2019|ML2SQL - Compiling a Declarative Machine Learning Language to SQL and Python|10.5441/002/edbt.2019.56|15|0|Maximilian E. Schüle and Matthias Bungeroth and Dimitri Vorona and A. Kemper and Stephan Günnemann and Thomas Neumann|d0a8f899cc206bcbc438b752b3e3667ef175b997
+ 2017|Implementation of vehicle detection algorithm for self-driving car on toll road cipularang using Python language|10.1109/ICEVT.2017.8323550|14|0|M. V. G. Aziz and H. Hindersah and A. S. Prihatmanto|c811d4b3d4c7a1d1ff9cdca8eec2110579898729
+ 2019|Boa Meets Python: A Boa Dataset of Data Science Software in Python Language|10.1109/MSR.2019.00086|13|1|Sumon Biswas and Md Johirul Islam and Yijia Huang and Hridesh Rajan|df3f507f3d46dece98a527999676b978af4ae987
+ 2008|Students' perceptions of python as a first programming language at wits|10.1145/1384271.1384407|11|0|I. Sanders and Sasha Langford|1857aa5c9463cc673839c765f0088663749674ad
+ 2006|Parallelizing PDE Solvers Using the Python Programming Language|10.1007/3-540-31619-1_9|11|0|Xing Cai and H. Langtangen|73af7fa141a3482b652c026b4868b166a6e9a064
+ 2020|Simple Visual-Aided Automated Titration Using the Python Programming Language|10.1021/acs.jchemed.9b00802|11|0|Song Wei Benjamin Tan and P. K. Naraharisetti and Siew Kian Chin and Lai Yeng Lee|93387a14fa9bdc092326d77e6dabf25e3e6a3ce2
+ 2017|Research on the improvement of python language programming course teaching methods based on visualization|10.1109/ICCSE.2017.8085571|10|0|Xiaoyan Kui and Weiguo Liu and Jiazhi Xia and Huakun Du|90757079d209870b3e881af763150b9614261cf4
+ 2018|It's Like Python But: Towards Supporting Transfer of Programming Language Knowledge|10.1109/VLHCC.2018.8506508|10|0|Nischal Shrestha and Titus Barik and Chris Parnin|1f3c99beff721ca21c61158862647662f349b103
+ 2005|Using the Python programming language for bioinformatics|10.1002/047001153X.G409314|9|1|M. Sanner|cae1431de64e6cb16452c7cb0fb83b836bc20b47
+ 2015|Which Programming Language Should Students Learn First? A Comparison of Java and Python|10.1109/LaTiCE.2015.15|9|0|Chieh-An Lo and Yu-Tzu Lin and Cheng-Chih Wu|f9e85681e331ab22bf55e92bab27b9b2726e4eb6
+ 2015|Python Programming for Biology: A beginners’ guide|10.1017/CBO9780511843556.003|8|0|T. Stevens and W. Boucher|0ef02287cecda2f9634f3612cb1d5f3f59094d9e
+ 2019|Scalable Parallel Programming in Python with Parsl|10.1145/3332186.3332231|8|0|Y. Babuji and A. Woodard and Zhuozhao Li and D. Katz and Ben Clifford and Ian T Foster and M. Wilde and K. Chard|b215861908a7dd5a0e9edc0ba4f3d59efdb6863c
+ 2019|Static Analyses in Python Programming Courses|10.1145/3287324.3287503|8|0|David Liu and A. Petersen|4263a39a1a90d843dd182483ba173b9f78b8a711
+ 2015|Is Python an Appropriate Programming Language for Teaching Programming in Secondary Schools?|10.1515/ijicte-2015-0005|8|1|Eva Mészárosová|d3231d487b138472a57be12699a2ddb8db666187
+ 2020|Analysis of Student Misconceptions using Python as an Introductory Programming Language|10.1145/3372356.3372360|8|0|Fionnuala Johnson and Stephen McQuistin and J. O'Donnell|69cc696d5609501347ffe491b279ee6c32be4c27
+ 2016|New implementation of OGC Web Processing Service in Python programming language. PyWPS-4 and issues we are facing with processing of large raster data using OGC WPS|10.5194/ISPRS-ARCHIVES-XLI-B7-927-2016|8|0|J. Cepicky and Luís Moreira de Sousa|e7beaf22b07976097bb8407de4b640664df21e4e
+ 2017|Computer programming with Python for industrial and systems engineers: Perspectives from an instructor and students|10.1002/cae.21837|7|0|Yong Wang and Kasey J. Hill and Erin C. Foley|1a5e834fc3549460b64cc413c63a6d3b9c07233a
+ 2018|CharmPy: A Python Parallel Programming Model|10.1109/CLUSTER.2018.00059|7|0|J. J. Galvez and K. Senthil and L. Kalé|25c5f91b8a22888ab43848da789ef7ea8d361f3f
+ 2015|Python Programming for Biology: Bioinformatics and Beyond|10.1017/cbo9780511843556|7|0|T. Stevens and W. Boucher|cede6c6ee0ad80759d25047b363c98d34290db41
+ 2014|PySy: a Python package for enhanced concurrent programming|10.1002/cpe.2981|6|0|Todd Williamson and R. Olsson|c533a666f816a4803bec727de7080d76ce811e93
+ 2020|Development of a Programming Course for Students of a Teacher Training Higher Education Institution Using the Programming Language Python|10.20511/PYR2020.V8N3.484|6|0|Mikhail S. Prokopyev and E. Vlasova and T. Tretyakova and M. A. Sorochinsky and Rimma Alekseyevna Solovyeva|a108642c864ee0bf46a80d53f309a61f17e97664
+ 2015|An Introduction to Python and Computer Programming|10.1007/978-981-287-609-6|5|1|Yue Zhang|75089958e2f34e5e536627b7ab309aa1b0ced814
+ 2010|Python Programming Fundamentals|10.1007/978-1-4471-6642-9|5|0|Kent D. Lee|5f086c30767069c2f3a69338121180b0db504220
+ 2015|Python as a First Programming Language for Biomedical Scientists|10.25080/MAJORA-7B98E3ED-002|5|1|B. Chapman and J. Irwin|3076af3155928a19242d87c0a0ff82204542cfc5
+ 2016|Python – A comprehensive yet free programming language for statisticians|10.1080/09720510.2015.1103446|5|0|X. U. Shukla and Dinesh J. Parmar|412310f67b2ff7a85ef9babbbeea478bcefc8cc8
+ 2014|TEACHING ALGORITHMIZATION AND PROGRAMMING USING PYTHON LANGUAGE|10.14308/ite000493|4|0|Lvov M. and K. V.|22c6d35f122ebb71d84eb923ec8b4f601e9b7f87
+ 2019|Neural Network Programming in Python|10.35940/ijitee.f1075.0486s419|4|0||5a61e58eb7bd9823d3fd46b6a62b9f5532fb7961
+ 2021|An Empirical Study for Common Language Features Used in Python Projects|10.1109/SANER50967.2021.00012|4|1|Yun Peng and Yu Zhang and Mingzhe Hu|ecdc0e16b9212657a80a92e3f32177c9801ad38d
+ 2020|Python as Multi Paradigm Programming Language|10.5120/ijca2020919775|4|0|Nimit Thaker and Abhilash Shukla|d14fe76d02ecd92ec2a9f9d8c68380e368df761f
+ 2018|Board Games in the Computer Science Class to Improve Students’ Knowledge of the Python Programming Language|10.1109/ICONIC.2018.8601207|4|0|D. Jordaan|a1789d56cc0b8c02c62523a1de4e9781ffb14191
+ 2016|The Core Python Language I|10.1017/CBO9781139871754.002|3|0|Christian Hill|1e843d30863753566df0bf4da1d07b8dd7074916
+ 2019|Application of python programming language in measurements|10.2298/FUEE1901001P|3|0|P. Pejovic|9d6fef95807c0caf7da9c58d309bf77010a66c40
+ 2019|An Analysis on Python Programming Language Demand and Its Recent Trend in Bangladesh|10.1145/3373509.3373540|3|0|Aaquib Javed and Monika Zaman and Mohammad Monir Uddin and Tasnova Nusrat|82f771befdb6a7d06abb4496cd6b4fb08bef6eb7
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
+ Programming Python|1996|Mark Lutz|77671|3.96|898|23
+ Natural Language Processing with Python|2009|Steven    Bird|6581044|4.14|389|34

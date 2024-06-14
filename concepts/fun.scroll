@@ -1,0 +1,52 @@
+import ../code/conceptPage.scroll
+
+id fun
+name Fun
+appeared 2010
+creators Marcus Westin
+tags pl
+website http://marcuswest.in/essays/fun-intro/
+conceptDescription A programming language for the realtime web.
+
+repoStats
+ firstCommit 2010
+ commits 1182
+ committers 3
+ files 68
+country United States
+originCommunity http://marcuswest.in/
+
+example
+ // Fun code
+ let user = Session.User
+ let myTasks = Query({ type: "task", owner: user.id })
+ <h1>"Hello " user.name ", these are your tasks matey:"</h1>
+ for (task in myTasks) {
+     <div class="task" + (task.urgent ? " urgent")>
+         <input data=task.title />
+         if (task.completed) {
+             <span class="status">"Completed!"</span>
+         } else {
+             <button clickHandler=markComplete(task)/>"Mark as completed"</button>
+         }
+     </div>
+ }
+ let markComplete = handler(task) {
+     task.completed = true
+ }
+ <h3>"Create a new task"</h3>
+ <input data=Local.newTaskTitle />
+ <button clickHandler=createNewTask />
+ let createNewTask = handler() {
+     let title = Local.newTaskTitle
+     Local.newTaskTitle = ""
+     Global.create({ owner: user.id, type: "task", title: title })
+ }
+
+githubRepo https://github.com/marcuswestin/fun
+ stars 173
+ forks 8
+ subscribers 3
+ created 2010
+ updated 2013
+ description A programming language for the realtime web.

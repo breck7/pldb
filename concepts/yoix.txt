@@ -1,0 +1,206 @@
+Yoix
+====
+
+Yoix is an open source programming language created in 2000 by Rich Drechsler and John Mocenigo.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rich%20Drechsler
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Mocenigo
+
+#1301 on PLDB
+24 Years Old
+
+In computer programming, Yoix is a high-level, general-purpose, interpreted, dynamic programming language. The Yoix interpreter is implemented using standard Java technology without any add-on packages and requires only a Sun-compliant JVM to operate. Initially developed by AT&T Labs researchers for internal use, it has been available as free and open source software since late 2000.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Yoix
+
+- Yoix Wikipedia page
+ https://en.wikipedia.org/wiki/Yoix
+- See also: (7 related languages)C, Java, PostScript, Perl, Unix, Linux, HTML
+
+import yoix.stdio.*;
+
+printf(&quot;Hello World&quot;);
+
+import yoix.*.*;
+
+BuildYoixLogoImage(double height, Color color, int addshadow) {
+  // create the basic image, without shadow
+  GenImage(double height, Color color, Font imagefont, double scale) {
+    Image yoixlogo = {
+      int type = TYPE_RGB_ALPHA;
+      Color imgcolor = color;
+      double scale = scale;
+      Font imagefont = imagefont;
+      Font regfont = imagefont.scalefont(0.5, 0.5);
+      Graphics graphics = {
+        Font font = imagefont;
+        int textantialiasing = TRUE;
+      };
+      double ywd = stringWidth(graphics.font, &quot;Y&quot;);
+      Dimension size = {
+        double height = height;
+        double width = ywd * 5.25;
+      };
+      double owd = stringWidth(graphics.font, &quot;o&quot;);
+      double iwd = stringWidth(graphics.font, &quot;i&quot;);
+      double xwd = stringWidth(graphics.font, &quot;x&quot;);
+      ywd += iwd;
+      ywd /= 2.0;
+      paint(Rectangle r) {
+        double alpha = 1.0;
+        double alpha2 = 0.3333;
+        int    limit = 12;
+    
+        graphics {
+          gsave();
+          erasedrawable(0.0); // for transparent PNG
+          rectclip(r);
+          setrgbcolor(imgcolor.red, imgcolor.green, imgcolor.blue);
+          translate(48 * this.scale, 44 * this.scale);
+          for(n=0; n&lt;limit; n++) {
+            moveto(0.0, 0.0);
+            setfont(this.imagefont);
+            // &quot;handmade&quot; kerning
+            show(&quot;Y&quot;, alpha);
+            if (n == 0) {
+              moveto(ywd, 0.0);
+              show(&quot;o&quot;, alpha);
+              moveto(ywd + owd - 0.3 * iwd, 0.0);
+              show(&quot;i&quot;, alpha);
+              moveto(ywd + owd + 0.8 * iwd, 0.0);
+              show(&quot;x&quot;, alpha);
+              moveto(ywd + owd + 0.8 * iwd + xwd, -this.imagefont.height * 0.33);
+              setfont(this.regfont);
+              show(&quot;\xAE&quot;, alpha);
+              alpha = alpha2;
+            }
+            alpha *= 0.75;
+            rotate(30);
+          }
+          grestore();
+        }
+      }
+    };
+
+    return(yoixlogo);
+  }
+
+  Font basefont = {
+    String name = &quot;ClearviewATT-plain-48&quot;;
+  };
+  double scale = height / 90.0;
+  Font imagefont = basefont.scalefont(scale, scale);
+
+  if (addshadow) {
+    Image logo = GenImage(height, color, imagefont, scale);
+    image = new Image {
+      int type = TYPE_RGB_ALPHA;
+      Image source = logo;
+      Image img = logo;
+      // convolve image to make a (lightened) shadow
+      Image shadow = new Image {
+        int type = TYPE_RGB_ALPHA;
+        Image source = img;
+        Array kernel = new Array[100];
+        Pointer ptr;
+        for(ptr in kernel) *ptr = 0.0055;
+        paint() {
+          convolve(kernel);
+        }
+      };
+      // combine the image and shadow into one image
+      paint(Rectangle r) {
+        graphics {
+          gsave();
+          moveto(0, 0);
+          showimage(this.img);
+          moveto(this.img.size.height * 0.005, this.img.size.height * 0.02);
+          showimage(this.shadow);
+          grestore();
+        }
+      }
+    };
+  } else {
+    image = GenImage(height, color, imagefont, scale);
+  }
+
+  return(image);
+}
+
+// rudimentary argument processing (getopt is also available)
+// first argument is height of image
+double sz = (argc &gt; 1) ? atof(argv[1]) : 270;
+int shdw = 1;
+int print = 0;
+// second argument: if 0/1 turn shadow off/on, otherwise
+// assume it is a filename for printing.
+if (argc &gt; 2) {
+  if (argv[2] =~ &quot;^[01]TEMPLATEquot;) {
+    shdw = atoi(argv[2]);
+  } else {
+    print = 1;
+  }
+}
+
+Image yoixlogo = BuildYoixLogoImage(sz, Color.black, (sz &gt;= 72) &amp;&amp; shdw);
+
+if (print) {
+  Stream output;
+
+  if ((output = open(argv[2], &quot;w&quot;)) != NULL) {
+    encodeImage(yoixlogo, &quot;png&quot;, output);
+    close(output);
+  }
+} else {
+  JFrame jf = {
+    int visible = TRUE;
+    Dimension size = NULL;
+    Array layout = {
+      new JPanel {
+        Dimension preferredsize = {
+          double width = yoixlogo.size.width;
+          double height = yoixlogo.size.height;
+        };
+        Color background = Color.white;
+        Image backgroundimage = yoixlogo;
+        int backgroundhints = SCALE_NONE;
+      },
+    };
+  };
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

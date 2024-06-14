@@ -1,0 +1,40 @@
+Gerber Image
+============
+
+Gerber Image is an application created in 1980.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1113 on PLDB
+44 Years Old
+
+The Gerber format is an open ASCII vector format for 2D binary images. It is the de facto standard used by printed circuit board (PCB) industry software to describe the printed circuit board images: copper layers, solder mask, legend, etc.Gerber is used in PCB fabrication data. PCBs are designed on a specialized electronic design automation (EDA) or a computer-aided design (CAD) system. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Gerber_format
+
+- Gerber Image Wikipedia page
+ https://en.wikipedia.org/wiki/Gerber_format
+- Gerber Image first developed in Ucamco
+- GitHub supports syntax highlighting for Gerber Image
+- See also: (1 related languages)ASCII
+
+G04 #@! TF.FileFunction,Paste,Top*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (2016-07-14 BZR 6980)-product) date Sunday, 23 April 2017 &#39;PMt&#39; 23:49:01*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.150000*%
+G04 APERTURE END LIST*
+D10*
+M02*
+
+D11*
+X1785250Y2173980D02*
+X1796650Y2177730D01*
+X1785250Y2181480D01*
+X1796650Y2184580D01*
+D12*
+X3421095Y1407208D03*
+X1785250Y2173980D03*
+M02*

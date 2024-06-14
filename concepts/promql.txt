@@ -1,0 +1,47 @@
+PromQL
+======
+
+PromQL is a query language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1798 on PLDB
+10 Years Old
+
+- PromQL website
+ https://prometheus.io/docs/prometheus/latest/querying/basics/
+- PromQL first developed in https://github.com/prometheus
+- Pygments supports syntax highlighting for PromQL
+- PromQL cheat sheet
+ https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
+- Read more about PromQL on the web: 1.
+ https://timber.io/blog/promql-for-humans/
+
+topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example

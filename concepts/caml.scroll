@@ -1,0 +1,63 @@
+import ../code/conceptPage.scroll
+
+id caml
+name Caml
+appeared 1985
+creators Gérard Huet and Guy Cousineau and Ascánder Suárez and Pierre Weis and Michel Mauny
+tags pl
+website https://caml.inria.fr
+standsFor Categorical abstract machine language
+
+relatedConcepts ocaml
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Caml
+centralPackageRepositoryCount 0
+country France
+originCommunity INRIA
+
+leachim6 CAML
+ filepath c/CAML.ml
+ fileExtensions ml
+ example
+  print_endline "Hello World";;
+  
+
+printToken print_endline
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Caml
+ example
+  # haar [1; 2; 3; 4; -4; -3; -2; -1];;
+     - : int list = [0; 20; 4; 4; -1; -1; -1; -1]
+ related ocaml ml f-sharp lisp c standard-ml
+ summary Caml (originally an acronym for Categorical abstract machine language) is a multi-paradigm, general-purpose programming language which is a dialect of the ML programming language family. Caml was developed in France at INRIA and ENS. Like many descendants of ML, Caml is statically typed, strictly evaluated, and uses automatic memory management. OCaml, as of 2017 the main implementation of Caml, adds many features to the language, including an object layer.
+ pageId 2362118
+ dailyPageViews 84
+ created 2005
+ backlinksCount 31
+ revisionCount 124
+ appeared 1985
+
+hopl https://hopl.info/showlanguage.prx?exp=1460
+tiobe Caml
+
+domainName caml.inria.fr
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2010|LAP LAMBERT Academic Publishing|Creating High-Performance, Statically Type-Safe Network Applications: Domain-Specific Languages for constructing network applications using Objective Caml|Madhavapeddy, Anil|9783838355870
+ 2008|Abscissa Press|The Objective Caml Programming Language|Tim Rentsch|9780981599205
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2008|Caml trading – experiences with functional programming on Wall Street|10.1017/S095679680800676X|18|1|Y. Minsky and Stephen Weeks|44a9c723abf93c6237068cc853449598943699c7
+ 2008|Caml trading|10.1145/1328897.1328441|2|0|Y. Minsky|73c6801a4412becd2f1cf0536e9bf9381e565b39
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Objective Caml Programming Language||Tim Rentsch|14474263|5.00|1|0
+ Functional programming using Caml Light||Michel Mauny|58185709|4.00|1|0

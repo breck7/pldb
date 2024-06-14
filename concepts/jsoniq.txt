@@ -1,0 +1,55 @@
+JSONiq
+======
+
+JSONiq is a query language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#891 on PLDB
+13 Years Old
+153 Repos
+
+JSONiq is a query and functional programming language that is designed to declaratively query and transform collections of hierarchical and heterogeneous data in format of JSON, XML, as well as unstructured, textual data. JSONiq is an open specification published under the Creative Commons Attribution-ShareAlike 3.0 license. It is based on the XQuery language, with which it shares the same core expressions and operations on atomic types. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/JSONiq
+
+- JSONiq website
+ http://www.jsoniq.org/
+- JSONiq Wikipedia page
+ https://en.wikipedia.org/wiki/JSONiq
+- There are at least 153 JSONiq repos on GitHub
+- JSONiq is a superset of JSON
+- JSONiq first developed in https://groups.google.com/g/zorba-io-user
+- The  Google BigQuery Public Dataset GitHub snapshot shows 386 users using JSONiq in 423 repos on GitHub
+- GitHub supports syntax highlighting for JSONiq
+- jsoniq.org was registered in 2011
+- See also: (5 related languages)XQuery, SQL, JSON, XML, ISBN
+
+&quot;Hello World&quot;
+
+(: Query for returning one database entry :)
+
+import module namespace req = &quot;http://www.28msec.com/modules/http-request&quot;;
+import module namespace catalog = &quot;http://guide.com/catalog&quot;;
+
+variable $id := (req:param-values(&quot;id&quot;), &quot;London&quot;)[1];
+variable $part := (req:param-values(&quot;part&quot;), &quot;main&quot;)[1];
+
+catalog:get-data-by-key($id, $part)
+
+for $p in collection(&quot;persons&quot;)
+ return
+   &lt;person&gt;
+     &lt;firstName&gt;{$p(&quot;firstName&quot;)}&lt;/firstName&gt;
+     &lt;lastName&gt;{$p(&quot;lastName&quot;)}&lt;/lastName&gt;
+     &lt;age&gt;{$p(&quot;age&quot;)}&lt;/age&gt;
+   &lt;/person&gt;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"

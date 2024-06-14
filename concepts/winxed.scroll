@@ -1,0 +1,99 @@
+import ../code/conceptPage.scroll
+
+id winxed
+name winxed
+appeared 2009
+tags pl
+website http://winxed.net/
+
+writtenIn cpp json make markdown
+fileExtensions winxed
+repoStats
+ firstCommit 2009
+ commits 1682
+ committers 5
+ files 115
+ newestCommit 2014
+
+example
+ #! winxed
+ # (C) 2010 Julián Albo
+ /*
+ = head1 NAME
+ setup.winxed - Python distutils style
+ =head1 DESCRIPTION
+ Just some testing, not intended for real usage yet.
+ =head1 USAGE
+ Handle with care. See DESCRIPTION.
+ =cut
+ */
+ $load 'Getopt/Obj.pbc';
+ //**********************************************************************
+ // Json file read.
+ function loadData(string filename)
+ {
+     var json = load_language('data_json');
+     var file = open(filename);
+     if (file == null || file.is_closed())
+         throw Error("Can't open " + filename);
+     file.encoding('utf8');
+     string jsondata = file.readall();
+     file.close();
+     var code = json.compile(jsondata);
+     return code();
+ }
+ //**********************************************************************
+ function main(argv)
+ {
+     // Parse command line.
+     var getopts = new ['Getopt','Obj'];
+     getopts.notOptStop(1);
+     getopts.push_string('file=s');
+     getopts.push_string('v');
+     string progname = argv.shift();
+     var opts = getopts.get_options(argv);
+     int verbose = opts['v'] != null;
+     var file = opts['file'];
+     // Get setup data from json file specified in command line
+     // or default value.
+     string filename = 'setup.json';
+     if (file != null)
+         filename = file;
+     var data = loadData(filename);
+     if (verbose) {
+         string description = data['description'];
+  say("\tFile: ", filename);
+  say("\tName: ", data['name']);
+         say("\tDescription: ", description);
+  say("\t(C) ", data['copyright_holder']);
+  say();
+     }
+     using extern distutils;
+     setup(argv:[flat], data:[flat,named]);
+ }
+ // End
+
+githubRepo https://github.com/NotFound/winxed
+ firstCommit 2009
+ stars 29
+ forks 6
+ subscribers 2
+ created 2011
+ updated 2018
+ description The winxed programming language
+ issues 6
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName winxed.net
+ registered 2013

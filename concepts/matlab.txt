@@ -1,0 +1,163 @@
+MATLAB
+======
+
+MATLAB is a programming language created in 1984 by Cleve Moler.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221984%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Cleve%20Moler
+
+#24 on PLDB
+40 Years Old
+312k Repos
+
+MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python. Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the MuPAD symbolic engine, allowing access to symbolic computing abilities. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MATLAB
+
+- MATLAB website
+ http://mathworks.com/products/matlab
+- MATLAB Wikipedia page
+ https://en.wikipedia.org/wiki/MATLAB
+- MATLAB docs
+ https://www.mathworks.com/help/matlab/
+- MATLAB mailing list
+ https://lists.rothamsted.ac.uk/mailman/listinfo/matlab-users
+- There are at least 311,901 MATLAB repos on GitHub
+- MATLAB first developed in University of New Mexico
+- MATLAB on Twitter
+ https://twitter.com/matlab
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using MATLAB in 3k repos on GitHub
+- Check out the 25 MATLAB meetup groups on Meetup.com.
+- There are 46,296 members in the MATLAB subreddit
+- There are 3,252 Project Euler users using MATLAB
+- In the 2021 StackOverflow developer survey MATLAB programmers reported a median salary of $43,948. 5% of respondents reported using MATLAB. 3,846 programmers reported using MATLAB, and 1,562 said they wanted to use it
+- Explore MATLAB snippets on Rosetta Code
+- MATLAB on HOPL
+ https://hopl.info/showlanguage.prx?exp=2216
+- MATLAB ranks #12 in the TIOBE Index
+- Pygments supports syntax highlighting for MATLAB
+- GitHub supports syntax highlighting for MATLAB
+- PLDB has 2 Jupyter Kernels for MATLAB: github.com, github.com
+- There is a central package repository for MATLAB
+- Release Notes for MATLAB
+ https://www.mathworks.com/help/matlab/release-notes.html
+- Official Blog page for MATLAB
+ https://blogs.mathworks.com/matlab/
+- Events page for MATLAB
+ https://www.mathworks.com/company/events.html
+- Frequently Asked Questions for MATLAB
+ https://www.mathworks.com/matlabcentral/answers/faqs
+- Indeed.com has 6,204 matches for "matlab engineer".
+- See also: (40 related languages)MATHLAB, C, Java, Linux, IA-32, APL, PL/0, Speakeasy, Julia, GNU Octave, Scilab, C#, Fortran, Python, muPad, Simulink, R, Perl, XML, SQL, Maple, Mathematica, IDL, Sage, S, Perl Data Language, NumPy, SciPy, Matplotlib, Lua, Ruby, JavaScript, JVM, Hierarchical Data Format, PowerPC, Solaris, SPARC, Subversion, JSON, ISBN
+- 15 languages in PLDB linking to MATLAB: badlanguage, cloc, eff, Eiffel, Go, invokator, Iterm2, JSL, Linux, mal, mathics, NCAR Command Language, SciPy, Simit, Swift
+
+disp(&#39;Hello World&#39;)
+
+% Hello World in MATLAB.
+
+disp(&#39;Hello World&#39;);
+
+function [ d, d_mean, d_std ] = normalize( d )
+    d_mean = mean(d);
+    d = d - repmat(d_mean, size(d,1), 1);
+    d_std = std(d);
+    d = d./ repmat(d_std, size(d,1), 1);
+end
+
+[X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
+f = sinc(sqrt((X/pi).^2+(Y/pi).^2));
+surf(X,Y,f);
+axis([-10 10 -10 10 -0.3 1])
+xlabel(&#39;{\bfx}&#39;)
+ylabel(&#39;{\bfy}&#39;)
+zlabel(&#39;{\bfsinc} ({\bfR})&#39;)
+
+Language features
+======================================================
+
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token disp
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Iterators
+ FeatureLink ../features/hasIterators.html
+ Supported ✓
+ Token 
+ Example
+  % Define an array of integers
+  myArray = [1,3,5,7,11,13];
+  
+  for n = myArray
+     % ... do something with n
+     disp(n)  % Echo integer to Command Window
+  end
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import pkg.cls1
+  import pkg.pkfcn
+row
+ Feature Type Casting
+ FeatureLink ../features/hasExplicitTypeCasting.html
+ Supported ✓
+ Token 
+ Example
+  b = cast(a, 'like', p)
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token %{ %}
+ Example
+  %{
+  A comment.
+  %}
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  % This is a comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  "hello world"
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

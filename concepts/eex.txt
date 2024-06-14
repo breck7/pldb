@@ -1,0 +1,51 @@
+EEX
+===
+
+EEX is a template language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#986 on PLDB
+12 Years Old
+34 Repos
+
+- EEX website
+ https://hexdocs.pm/eex/EEx.html
+- There are at least 34 EEX repos on GitHub
+- EEX first developed in Elixir Team
+- GitHub supports syntax highlighting for EEX
+- Read more about EEX on the web: 1.
+ https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+- 2 languages in PLDB linking to EEX: Ace Editor, Elixir
+
+&lt;%= if true do %&gt;
+  It is obviously true
+&lt;% else %&gt;
+  This will never appear
+&lt;% end %&gt;
+
+&lt;h1&gt;Listing Books&lt;/h1&gt;
+ 
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Summary&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+
+&lt;%= for book &lt;- @books do %&gt;
+  &lt;tr&gt;
+    &lt;%# comment %&gt;
+    &lt;td&gt;&lt;%= book.title %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= book.content %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link &quot;Show&quot;, to: book_path(@conn, :show, book) %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link &quot;Edit&quot;, to: book_path(@conn, :edit, book) %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link &quot;Delete&quot;, to: book_path(@conn, :delete, book), method: :delete, data: [confirm: &quot;Are you sure?&quot;] %&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;% end %&gt;
+&lt;/table&gt;
+ 
+&lt;br /&gt;
+ 
+&lt;%= link &quot;New book&quot;, to: book_path(@conn, :new) %&gt;

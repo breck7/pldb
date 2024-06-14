@@ -1,0 +1,45 @@
+import ../code/conceptPage.scroll
+
+id amber
+name Amber
+appeared 2022
+creators PhoenixHimself
+tags pl
+website https://amber-lang.com/
+latestVersion 0.3.1-alpha
+conceptDescription Programming language that compiles to Bash. It's a high level programming language that makes it easy to create shell scripts. It's particularly well suited for cloud services.
+
+writtenIn rust bourne-shell markdown toml yaml
+compilesTo bash
+influencedBy javascript
+documentation https://docs.amber-lang.com/
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 224
+ committers 6
+ files 109
+
+example
+ // Define variables
+ let name = "John"
+ let age = 30
+ 
+ // Display a greeting
+ echo "Hello, my name is {name}"
+ 
+ // Perform conditional checks
+ if age < 18 {
+     echo "I'm not an adult yet"
+ } else {
+     echo "I'm an adult"
+ }
+ 
+ // Loop through an array
+ let fruits = ["apple", "banana", "cherry", "date"]
+ echo "My favorite fruits are:"
+ loop fruit in fruits {
+     echo fruit
+ }
+
+githubRepo https://github.com/Ph0enixKM/Amber

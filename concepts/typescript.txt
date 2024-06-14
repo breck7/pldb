@@ -1,0 +1,316 @@
+TypeScript
+==========
+
+TypeScript is an open source programming language created in 2012 by Anders Hejlsberg.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Anders%20Hejlsberg
+
+#14 on PLDB
+12 Years Old
+3m Repos
+
+git clone https://github.com/microsoft/TypeScript
+
+Try now: Web · Riju · TIO
+
+TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. Anders Hejlsberg, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/TypeScript
+
+- TypeScript website
+ http://www.typescriptlang.org/
+- TypeScript downloads page
+ https://www.typescriptlang.org/download
+- TypeScript Wikipedia page
+ https://en.wikipedia.org/wiki/TypeScript
+- TypeScript is developed on GitHub and has 88,139 stars
+- Watch the history of the TypeScript repo visualized with Gource
+- PLDB has 2 documentation sites for TypeScript: www.typescriptlang.org, devdocs.io
+- There are at least 3,281,749 TypeScript repos on GitHub
+- TypeScript is a superset of JavaScript
+- TypeScript first developed in Microsoft
+- TypeScript is written in TypeScript, JavaScript, JSON, Markdown, YAML, Diff, XML, Bourne shell, Dockerfile
+- TypeScript on Twitter
+ https://twitter.com/typescript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 36k users using TypeScript in 48k repos on GitHub
+- There are 87,839 members in the TypeScript subreddit
+- In the 2021 StackOverflow developer survey TypeScript programmers reported a median salary of $59,172. 30% of respondents reported using TypeScript. 24,909 programmers reported using TypeScript, and 26,905 said they wanted to use it
+- Explore TypeScript snippets on Rosetta Code
+- TypeScript appears in the TIOBE Index
+- TypeScript Ubuntu package
+ https://packages.ubuntu.com/jammy/node-typescript
+- TypeScript LSP implementation
+- Monaco package for syntax highlighting TypeScript
+- Pygments supports syntax highlighting for TypeScript
+- GitHub supports syntax highlighting for TypeScript
+- TypeScript appears in the Quine Relay project
+- There is 1 Jupyter Kernel for TypeScript
+- There is a central package repository for TypeScript
+- Release Notes for TypeScript
+ https://www.typescriptlang.org/docs/handbook/release-notes/
+- Official Blog page for TypeScript
+ https://devblogs.microsoft.com/typescript/
+- Indeed.com has 1,542 matches for "typescript developer".
+- typescriptlang.org was registered in 2012
+- See also: (18 related languages)JavaScript, Java, C#, Delphi, Turbo Pascal, JQuery, MongoDB, D3.js, Visual Studio, Eclipse, Emacs, Vim, Sublime Text, Visual Studio Code, Apache Maven, Dart, CoffeeScript, Elm
+- 134 languages in PLDB linking to TypeScript: Ace Editor, Argdown, arret, AssemblyScript, Austral, Bicep, blur-markup-language, bosque, Broccoli, Bucklescript, buzz, Candy, Caramel, cat, Chapel, chevrotain, Ć, Claro, cloc, Closure Templates, codecept, CodeMirror, D3.js, Deno, dex, Differential Datalog, TypeScript Type Declarations, Elpi, Elvish, emberjs-framework, Emscripten, Enso, erg, Eve, Fardlang, FlatBuffers, Flow9, flowchart.fun, gleam, Grammar, gridstudio-editor, Heron, HHVM, highlight.js, htmx, HuwCode, Hyperscript, Imba, Insitux, Jakt, jsil-compiler, json->url, JSON5, Koka, Kotlin, kumir, leo-editor, Lesma, Ligo, Link, lobster, Lodash, Luna, mal, Marko, Markwhen, Marp, Mask, Mathpix Markdown, MDX, Mech, Melody, mermaid, mochajs, Monaco Editor, Mond, neut, NilScript, Node.js, nulan, Observable Framework, Observable Plot, obsidian, Ohayo, ohm, OK, PEG.js, penrose, Pod6, Podlite, PostCSS, PROMETHEUS, PRQL, Pug, React Native, Rholang, Roc, rpscript, Rust, Savi, Scroll Notation, SDMS, Seq, Serious, spiral, SQRL, Static Typescript, Storymatic, Superjson, Svelte, tao3d, Tawa, tea, Timpani, tldraw, Truth, tsquery, TypeScript, Uno, V, v8, vega-editor-app, Vega, Veryl, Virgil, Vue, Wasp, Wax, 文言文編程語言, Wing, Wonkey, xlwings-editor, Xtext, YoptaScript
+
+console.log(&quot;Hello, world!&quot;);
+
+console.log(&quot;Hello World&quot;);
+
+// Hello world in TypeScript
+
+alert(&#39;Hello world!&#39;);
+
+console.log(&quot;Hello, World!&quot;);
+
+class Person {
+    private name: string;
+    private age: number;
+    private salary: number;
+
+    constructor(name: string, age: number, salary: number) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    toString(): string {
+        return `${this.name} (${this.age}) (${this.salary})`; // As of version 1.4
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Algebraic Data Type
+ FeatureLink ../features/hasAlgebraicTypes.html
+ Supported ✓
+ Token 
+ Example
+  declare type numOrString = string | number
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Union Types
+ FeatureLink ../features/hasUnionTypes.html
+ Supported ✓
+ Token 
+ Example
+  declare type numOrString = string | number
+row
+ Feature Single-Type Arrays
+ FeatureLink ../features/hasSingleTypeArrays.html
+ Supported ✓
+ Token 
+ Example
+  const scores: int[]
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Type Parameters
+ FeatureLink ../features/hasTypeParameters.html
+ Supported ✓
+ Token 
+ Example
+  function identity(arg: T): T {
+     return arg;
+  }
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+  class B {}
+  class A extends B {}
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token console.log
+ Example
+  console.log("Hi")
+row
+ Feature Namespaces
+ FeatureLink ../features/hasNamespaces.html
+ Supported ✓
+ Token 
+ Example
+  // Typescript even supports splitting namespaces across multiple files:
+  // Validation.ts
+  namespace Validation {
+      export interface StringValidator {
+          isAcceptable(s: string): boolean;
+      }
+  }
+  // LettersOnlyValidator.ts
+  /// 
+  namespace Validation {
+      const lettersRegexp = /^[A-Za-z]+$/;
+      export class LettersOnlyValidator implements StringValidator {
+          isAcceptable(s: string) {
+              return lettersRegexp.test(s);
+          }
+      }
+  }
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  // https://www.typescriptlang.org/docs/handbook/mixins.html
+  class SmartObject implements Disposable, Activatable {
+  }
+  // Note: still need to do some runtime ops to make that work.
+row
+ Feature Interfaces
+ FeatureLink ../features/hasInterfaces.html
+ Supported ✓
+ Token 
+ Example
+  // https://www.typescriptlang.org/docs/handbook/interfaces.html
+  interface SquareConfig {
+     color?: string;
+     width?: number;
+  }
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import { ZipCodeValidator } from "./ZipCodeValidator";
+  /// 
+  /// 
+  import moo = module('moo');
+  /// 
+row
+ Feature Type Casting
+ FeatureLink ../features/hasExplicitTypeCasting.html
+ Supported ✓
+ Token 
+ Example
+  something;
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+  class Person {}
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token 
+ Example
+  const result = true
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported ✓
+ Token 
+ Example
+  function identity(arg: T): T {
+     return arg;
+  }
+row
+ Feature Abstract Types
+ FeatureLink ../features/hasAbstractTypes.html
+ Supported ✓
+ Token 
+ Example
+  abstract class Animal {}
+  class Dog extends Animal
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+  class Person {
+    private _age = 2
+    public get age() {
+      return _age
+    }
+    protected year = 1990
+  }
+row
+ Feature Static Methods
+ FeatureLink ../features/hasStaticMethods.html
+ Supported ✓
+ Token 
+ Example
+  class Person {
+    static sayHi() {
+      console.log("Hello world")
+    }
+  }
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported ✓
+ Token 
+ Example
+  enum Direction {
+   Up,
+   Down
+  }
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example

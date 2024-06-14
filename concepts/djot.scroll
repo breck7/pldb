@@ -1,0 +1,106 @@
+import ../code/conceptPage.scroll
+
+id djot
+name Djot
+appeared 2022
+creators John MacFarlane
+tags textMarkup
+website https://djot.net
+latestVersion 0.2.0
+webRepl https://djot.net/playground/
+conceptDescription  A light markup language
+
+isOpenSource true
+writtenIn markdown html vim-script make css lua yaml
+influencedBy commonmark
+successorOf commonmark
+usesSemanticVersioning true
+fileExtensions dj
+documentation https://github.com/jgm/djot/blob/main/README.md
+repoStats
+ firstCommit 2022
+ commits 483
+ committers 25
+ files 16
+ newestCommit 2024
+country United States
+originCommunity https://github.com/jgm/djot/issues
+reference https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html
+
+example
+ _italic_
+ *bold*
+ `code`
+ H~2~O
+ 20^th^
+ {=highlighted=}
+ {+underlined+}
+ {-strikethrough-}
+ $`p = mv`
+ 
+ $$`E = K + U`
+ 
+ Start a new paragraph with a blank line.
+ 
+ > A blockquote
+ 
+ {% look like this
+ and can span multiple lines %}
+ 
+ # Horizontal lines:
+ ***
+ ---
+ 
+ Verbatim blocks:
+ 
+ ```
+ $ tree
+ .
+ ├── aa
+ │   └── foo.txt
+ ├── bb
+ │   └── bar.txt
+ └── c.png
+ ```
+ 
+ ```myLang
+ func say-hello(nm) {
+     print("hello ${nm}!");
+ }
+ ```
+ 
+ Links:
+ <https://example.com>
+ [read more](https://example.com)
+ [read this too][foo bar]
+ [one more link][]
+ 
+ 
+ ![beautiful skyline](clouds.jpg)
+ ![coastal shores][shore]
+ ![lush forests][]
+ 
+ [shore]: the-beach.jpg
+ [lush forests]: pines.jpg
+ 
+ # Tables
+ 
+ | Name | Size | Color |
+ | --- | --- | --- |
+ | lime | small | green |
+ | orange | medium | orange |
+ | grapefruit | large | yellow or pink |
+
+githubRepo https://github.com/jgm/djot
+ firstCommit 2022
+ stars 773
+ forks 25
+ subscribers 20
+ created 2022
+ updated 2022
+ description A light markup language
+ issues 58
+
+multiLineCommentTokens {% %}
+
+domainName djot.net

@@ -1,0 +1,238 @@
+Erlang
+======
+
+Erlang is an open source programming language created in 1986 by Joe Armstrong and Robert Virding and Mike Williams.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Joe%20Armstrong
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding
+ https://pldb.io/concepts/../lists/creators.html#q=Mike%20Williams
+
+#34 on PLDB
+38 Years Old
+29k Repos
+
+Try now: Riju
+
+Erlang ( ER-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics: Distributed Fault-tolerant Soft real-time, Highly available, non-stop applications Hot swapping, where code can be changed without stopping a system. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Erlang_(programming_language)
+
+- Erlang website
+ https://www.erlang.org
+- Erlang downloads page
+ https://www.erlang.org/downloads
+- Erlang Wikipedia page
+ https://en.wikipedia.org/wiki/Erlang_(programming_language)
+- Erlang docs
+ https://www.erlang.org/docs
+- There are at least 28,645 Erlang repos on GitHub
+- Erlang first developed in Ericsson
+- Erlang on Twitter
+ https://twitter.com/erlang_org
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Erlang in 15k repos on GitHub
+- Check out the 306 Erlang meetup groups on Meetup.com.
+- There are 9,057 members in the Erlang subreddit
+- There are 618 Project Euler users using Erlang
+- In the 2021 StackOverflow developer survey Erlang programmers reported a median salary of $80,077. 1% of respondents reported using Erlang. 651 programmers reported using Erlang, and 1,379 said they wanted to use it
+- Explore Erlang snippets on Rosetta Code
+- Erlang on HOPL
+ https://hopl.info/showlanguage.prx?exp=1728
+- Erlang ranks #49 in the TIOBE Index
+- Erlang Ubuntu package
+ https://packages.ubuntu.com/jammy/erlang
+- ANTLR grammar for Erlang
+- Erlang LSP implementation
+- CodeMirror package for syntax highlighting Erlang
+- Pygments supports syntax highlighting for Erlang
+- GitHub supports syntax highlighting for Erlang
+- Erlang appears in the Quine Relay project
+- PLDB has 2 Jupyter Kernels for Erlang: github.com, github.com
+- There is a central package repository for Erlang
+- Release Notes for Erlang
+ https://www.erlang.org/news
+- Official Blog page for Erlang
+ https://www.erlang.org/blog
+- Frequently Asked Questions for Erlang
+ https://www.erlang.org/faq/introduction.html
+- Indeed.com has 183 matches for "erlang engineer".
+- erlang.org was registered in 1998
+- See also: (17 related languages)Prolog, Smalltalk, PLEX, F#, Clojure, Rust, Scala, Opa, Elixir, Dart, Oz, Java, ASCII, Occam, CSP, LFE, Lisp
+- 13 languages in PLDB linking to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, gleam, hamler, mal, Pygments, Reia, Sophia
+
+-module(square).
+-export([square/1]).
+
+square(A) -&gt; A*A.
+
+-module(main).
+-export([main/0]).
+
+main() -&gt;
+    io:fwrite(&quot;Hello, world!\n&quot;).
+
+-module(erlang_hw).
+-export([start/0]).
+
+start() -&gt;
+  io:format(&quot;Hello World~n&quot;).
+
+%% Hello World in Erlang
+
+-module(hello).
+
+-export([hello/0]).
+
+hello() -&gt;
+   io:format(&quot;Hello World!~n&quot;, []).
+
+#!/usr/bin/env escript
+-export([main/1]).
+
+main([]) -&gt; io:format(&quot;Hello, World!~n&quot;).
+
+%% Second version
+  -module(counter).
+  -export([start/0, codeswitch/1]).
+
+  start() -&gt; loop(0).
+
+  loop(Sum) -&gt;
+    receive
+       {increment, Count} -&gt;
+          loop(Sum+Count);
+       reset -&gt;
+          loop(0);
+       {counter, Pid} -&gt;
+          Pid ! {counter, Sum},
+          loop(Sum);
+       code_switch -&gt;
+          ?MODULE:codeswitch(Sum)
+    end.
+
+  codeswitch(Sum) -&gt; loop(Sum).
+
+after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  % [+-]?\d+.\d+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token io:format
+ Example
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  -define(Const, Replacement).
+  -define(Func(Var1,...,VarN), Replacement).
+row
+ Feature hasExports
+ FeatureLink ../features/hasExports.html
+ Supported ✓
+ Token 
+ Example
+  -export([start/0, codeswitch/1]).
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  -include("my_records.hrl").
+  -include("incdir/my_records.hrl").
+  -include("/home/user/proj/my_records.hrl").
+  -include("$PROJ_ROOT/my_records.hrl").
+  -include_lib("kernel/include/file.hrl").
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  -define(TIMEOUT, 200).
+  ...
+  call(Request) ->
+     server:call(refserver, Request, ?TIMEOUT).
+  -undef(Macro).
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  % hello world program
+row
+ Feature Shebang
+ FeatureLink ../features/canDoShebang.html
+ Supported ✓
+ Token 
+ Example
+  #!/usr/bin/env escript
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example
+  "hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

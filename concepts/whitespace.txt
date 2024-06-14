@@ -1,0 +1,133 @@
+Whitespace
+==========
+
+Whitespace is an esoteric programming language created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#506 on PLDB
+21 Years Old
+
+Try now: Riju · TIO
+
+Whitespace is an esoteric programming language developed by Edwin Brady and Chris Morris at the University of Durham (also developers of the Kaya and Idris programming languages). It was released on 1 April 2003 (April Fool's Day). Its name is a reference to whitespace characters. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Whitespace_(programming_language)
+
+- Whitespace Wikipedia page
+ https://en.wikipedia.org/wiki/Whitespace_(programming_language)
+- Whitespace docs
+ https://hackage.haskell.org/package/whitespace-0.4/src/docs/tutorial.html
+- Explore Whitespace snippets on Rosetta Code
+- Whitespace appears in the TIOBE Index
+- Whitespace appears in the Quine Relay project
+- See also: (6 related languages)Idris, Python, Brainfuck, INTERCAL, LOLCODE, Malbolge
+
+Hello, world
+	
+     		  	 	
+	
+     		 		  
+	
+     		 		  
+	
+     		 				
+	
+     	 		  
+	
+     	     
+	
+     			 			
+	
+     		 				
+	
+     			  	 
+	
+     		 		  
+	
+     		  	  
+	
+  
+
+   	  	   
+	
+     		  	 	
+	
+     		 		  
+	
+     		 		  
+	
+     		 				
+	
+      	     
+	
+     	 	 			
+	
+     		 				
+	
+     			  	 
+	
+     		 		  
+	
+     		  	  
+	
+  
+
+Hello #World #in #Whitespace	* # #	* # # #
++	*[Space]
++ #is #marked #with&quot;#&quot; # #[tab]	#with&quot;*&quot;	*line-feed #with #&quot;+&quot;	* #	*so
++it	#would
++be #easier #to #write #again... #All	*the	*non-whitespace-characters #are	*ignored...	* # #
++	*
++ # # # # #	*	* #	*	* # #
++	*
++ # # # # #	*	* #	*	*	*	*
++	*
++ # # # # #	* # # # # #
++	*
++ # # # # #	* #	* #	*	*	*
++	*
++ # # # # #	*	* #	*	*	*	*
++	*
++ # # # # #	*	*	* # #	* #
++	*
++ # # # # #	*	* #	*	* # #
++	*
++ # # # # #	*	* # #	* # #
++	*
++ # # # # #	* # # # #	*
++	*
++ # # # # #	* #	* #
++	*
++ # #
++
++
++
+
+S S S T	S S T	S S S L
+T	L
+S S S S S T	T	S S T	S T	L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S T	T	T	T	L
+T	L
+S S S S S T	S T	T	S S L
+T	L
+S S S S S T	S S S S S L
+T	L
+S S S S S T	T	T	S T	T	T	L
+T	L
+S S S S S T	T	S T	T	T	T	L
+T	L
+S S S S S T	T	T	S S T	S L
+T	L
+S S S S S T	T	S T	T	S S L
+T	L
+S S S S S T	T	S S T	S S L
+T	L
+S S S S S T	S S S S T	L
+T	L
+S S L
+L
+L

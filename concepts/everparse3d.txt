@@ -1,0 +1,28 @@
+EverParse3D
+===========
+
+EverParse3D is an interface design language created in 2022 by Nikhil Swamy and Tahina Ramananandro and Aseem Rastogi and Irina Spiridonova and Haobin Ni and Dmitry Malloy and Juan Vazquez and Michael Tang and Omar Cardona and Arti Gupta.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Nikhil%20Swamy
+ https://pldb.io/concepts/../lists/creators.html#q=Tahina%20Ramananandro
+ https://pldb.io/concepts/../lists/creators.html#q=Aseem%20Rastogi
+ https://pldb.io/concepts/../lists/creators.html#q=Irina%20Spiridonova
+ https://pldb.io/concepts/../lists/creators.html#q=Haobin%20Ni
+ https://pldb.io/concepts/../lists/creators.html#q=Dmitry%20Malloy
+ https://pldb.io/concepts/../lists/creators.html#q=Juan%20Vazquez
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Tang
+ https://pldb.io/concepts/../lists/creators.html#q=Omar%20Cardona
+ https://pldb.io/concepts/../lists/creators.html#q=Arti%20Gupta
+
+#2599 on PLDB
+2 Years Old
+
+- EverParse3D first developed in Microsoft
+- EverParse3D compiles to C
+- Read more about EverParse3D on the web: 1.
+ https://www.microsoft.com/en-us/research/publication/hardening-attack-surfaces-with-formally-proven-binary-format-parsers/
+
+typedef struct _OrderedPair {
+ UINT32 fst;
+ UINT32 snd { fst &lt;= snd };
+ } OrderedPair;

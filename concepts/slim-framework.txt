@@ -1,0 +1,37 @@
+Slim Framework
+==============
+
+Slim Framework is a framework created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#594 on PLDB
+11 Years Old
+
+git clone https://github.com/slimphp/Slim
+
+Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
+
+- Slim Framework website
+ https://www.slimframework.com
+- Slim Framework is developed on GitHub and has 11,833 stars
+- Slim Framework docs
+ https://www.slimframework.com/docs/v4/
+- Slim Framework first developed in https://github.com/slimphp
+- Slim Framework is written in PHP, Markdown, YAML, XML, JSON
+
+&lt;?php
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Factory\AppFactory;
+
+require __DIR__ . &#39;/../vendor/autoload.php&#39;;
+
+$app = AppFactory::create();
+
+$app-&gt;get(&#39;/hello/{name}&#39;, function (Request $request, Response $response, array $args) {
+    $name = $args[&#39;name&#39;];
+    $response-&gt;getBody()-&gt;write(&quot;Hello, $name&quot;);
+    return $response;
+});
+
+$app-&gt;run();

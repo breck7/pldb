@@ -1,0 +1,111 @@
+import ../code/conceptPage.scroll
+
+id omega
+name omega
+appeared 2005
+creators Tim Sheard
+tags pl
+website http://web.cecs.pdx.edu/~sheard/Omega/index.html
+conceptDescription The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
+
+country United States
+originCommunity Portland State University
+reference https://code.google.com/archive/p/omega
+
+example
+ --
+ -- This code written by James Hook
+ -- This file should work with Omega version 1.1
+ -- released May 23, 2005
+ -- See http://www.cs.pdx.edu/~sheard/Omega/index.html
+ 
+ {-- These are predefined by the compiler
+ kind Nat = Z | S Nat
+ 
+ data Nat' n
+   = Z where n = Z
+   | forall m . S (Nat' m) where n = S m
+ -}
+ 
+ 
+ data LE a b
+   = LeBase where a = b
+   | ex c . LeStep (LE a c) where b = S c
+ 
+ reflLE :: LE a a
+ reflLE = LeBase
+ 
+ transLE :: (LE a b) -> (LE b c) -> (LE a c)
+ transLE p LeBase = p
+ transLE p (LeStep q) = LeStep (transLE p q)
+ 
+ compare :: Nat' a -> Nat' b -> ((LE a b)+(LE b a))
+ compare Z Z = L LeBase
+ compare Z (S x) =
+   case compare Z x of L w -> L (LeStep w)
+ compare (S x) Z =
+   case compare Z x of L w -> R (LeStep w)
+ compare (S x) (S y) = mapP g g (compare x y )
+   where mapP f g (L x) = L(f x)
+         mapP f g (R x) = R(g x)
+         g :: LE x y -> LE (S x) (S y)
+         g LeBase = LeBase
+         g (LeStep x) = LeStep (g x)
+ 
+ data MonoList min max
+   = MonoNil (LE min max)
+   | forall n a . MonoCons (Nat' n) (LE a n) (LE n max) (MonoList min a)
+ 
+ appMonoList :: MonoList b c -> MonoList a b -> MonoList a c
+ appMonoList (MonoNil bc) (MonoNil ab) =
+       MonoNil (transLE ab bc)
+ appMonoList (MonoNil bc) (MonoCons n an nb xs) =
+       MonoCons n an (transLE nb bc) xs
+ appMonoList (MonoCons m dm mc ys) xs =
+       MonoCons m dm mc (appMonoList ys xs)
+ 
+ singletonMonoList :: Nat' n -> MonoList n n
+ singletonMonoList n = MonoCons n reflLE reflLE (MonoNil reflLE)
+ 
+ data IntervalList min max
+   = ILNil (LE min max)
+   | forall x . ILCons (Nat' x) (LE min x) (LE x max) (IntervalList min max)
+ 
+ partition :: Nat' n -> LE a n -> LE n b -> IntervalList a b ->
+                      (IntervalList a n, IntervalList n b)
+ partition x an nb xs = partitionAcc (ILNil an) (ILNil nb) xs
+   where partitionAcc ls gs (ILNil ab) = (ls,gs)
+         partitionAcc ls gs (ILCons y ay yb ys) =
+             case compare y x of
+               L yx -> partitionAcc (ILCons y ay yx ls) gs ys
+               R xy -> partitionAcc ls (ILCons y xy yb gs) ys
+ 
+ qsort :: IntervalList a b -> MonoList a b
+ qsort (ILNil ab) = MonoNil ab
+ qsort (ILCons x ax xb (ILNil ab)) = MonoCons x ax xb (MonoNil reflLE)
+ qsort (ILCons x ax xb xs) =
+      let (less,greater) = partition x ax xb xs
+          sortedLess = qsort less
+    sortedGreater = qsort greater
+      in appMonoList sortedGreater (appMonoList (singletonMonoList x) sortedLess)
+ 
+ --
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
+
+isbndb 0
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1991|The Omega test: A fast and practical integer programming algorithm for dependence analysis|10.1145/125826.125848|950|82|W. Pugh|285024b15197b5face8bdef1d03f36949b8339c4
+ 2008|Programming in Omega|10.1007/978-3-540-88059-2_5|31|0|T. Sheard and Nathan Mishra-Linger|69077e4f231a87a15ae3e0dff8c718d5e36f729d

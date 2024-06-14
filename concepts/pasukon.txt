@@ -1,0 +1,72 @@
+pasukon
+=======
+
+pasukon is a grammar language created in 2020 by Federico Ramirez.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Federico%20Ramirez
+
+#1176 on PLDB
+4 Years Old
+
+git clone https://github.com/gosukiwi/Pasukon
+
+Try now: Web
+
+JavaScript practical parser generator library using combinators
+
+- pasukon website
+ https://pasukon.rocks
+- pasukon is developed on GitHub and has 109 stars
+- pasukon first developed in https://github.com/gosukiwi/Pasukon/issues
+- pasukon is written in JavaScript, JSON, Markdown
+- Read more about pasukon on the web: 1.
+ https://news.ycombinator.com/item?id=24347956
+
+lex
+  match  NUMBER     /[0-9]+(?:\.[0-9]+)?/
+  match  PLUS       &#39;+&#39;
+  match  MINUS      &#39;-&#39;
+  match  TIMES      &#39;*&#39;
+  match  DIV        &#39;/&#39;
+  match  POPEN      &#39;(&#39;
+  match  PCLOSE     &#39;)&#39;
+  ignore WHITESPACE /^\s+/
+/lex
+
+addition
+  | (subtraction as :lhs) then :PLUS then (subtraction as :rhs)
+  |&gt; &#39;return $.lhs + $.rhs&#39;
+  | subtraction
+  ;
+
+subtraction
+  | (multiplication as :lhs) then :MINUS then (multiplication as :rhs)
+  |&gt; &#39;return $.lhs - $.rhs&#39;
+  | multiplication
+  ;
+
+multiplication
+  | (division as :lhs) then :TIMES then (division as :rhs)
+  |&gt; &#39;return $.lhs * $.rhs&#39;
+  | division
+  ;
+
+division
+  | (expression as :lhs) then :DIV then (expression as :rhs)
+  |&gt; &#39;return $.lhs / $.rhs&#39;
+  | expression
+  ;
+
+expression
+  | :POPEN then (addition as :expr) then :PCLOSE
+  |&gt; &#39;return $.expr&#39;
+  | number
+  ;
+
+number
+  | :NUMBER &#39;return +$1&#39;
+  ;
+
+start
+  | addition
+  ;

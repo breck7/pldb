@@ -1,0 +1,105 @@
+ECL
+===
+
+ECL is a programming language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#296 on PLDB
+24 Years Old
+234 Repos
+
+git clone https://github.com/hpcc-systems/HPCC-Platform
+
+ECL is a declarative, data centric programming language designed in 2000 to allow a team of programmers to process big data across a high performance computing cluster without the programmer being involved in many of the lower level, imperative decisions.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
+
+- ECL website
+ http://hpccsystems.com/
+- ECL Wikipedia page
+ https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
+- ECL is developed on GitHub and has 521 stars
+- There are at least 234 ECL repos on GitHub
+- ECL first developed in LexisNexis Risk Solutions Group
+- The  Google BigQuery Public Dataset GitHub snapshot shows 25 users using ECL in 25 repos on GitHub
+- Explore ECL snippets on Rosetta Code
+- CodeMirror package for syntax highlighting ECL
+- Pygments supports syntax highlighting for ECL
+- GitHub supports syntax highlighting for ECL
+- hpccsystems.com was registered in 2010
+- See also: (5 related languages)Linux, Prolog, Pascal, SQL, Clarion
+
+/*
+ * Multi-line comment
+ */
+#option (&#39;slidingJoins&#39;, true);
+
+namesRecord :=
+            RECORD
+string20        surname;
+string10        forename;
+integer2        age;
+integer2        dadAge;
+integer2        mumAge;
+            END;
+
+namesRecord2 :=
+            record
+string10        extra;
+namesRecord;
+            end;
+
+namesTable := dataset(&#39;x&#39;,namesRecord,FLAT);
+namesTable2 := dataset(&#39;y&#39;,namesRecord2,FLAT);
+
+integer2 aveAgeL(namesRecord l) := (l.dadAge+l.mumAge)/2;
+integer2 aveAgeR(namesRecord2 r) := (r.dadAge+r.mumAge)/2;
+
+// Standard join on a function of left and right
+output(join(namesTable, namesTable2, aveAgeL(left) = aveAgeR(right)));
+
+//Several simple examples of sliding join syntax
+output(join(namesTable, namesTable2, left.age &gt;= right.age - 10 and left.age &lt;= right.age +10));
+output(join(namesTable, namesTable2, left.age between right.age - 10 and right.age +10));
+output(join(namesTable, namesTable2, left.age between right.age + 10 and right.age +30));
+output(join(namesTable, namesTable2, left.age between (right.age + 20) - 10 and (right.age +20) + 10));
+output(join(namesTable, namesTable2, aveAgeL(left) between aveAgeR(right)+10 and aveAgeR(right)+40));
+
+//Same, but on strings.  Also includes age to ensure sort is done by non-sliding before sliding.
+output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+&#39;AAAAAAAAAA&#39; and right.surname[1..10]+&#39;ZZZZZZZZZZ&#39; and left.age=right.age));
+output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+&#39;AAAAAAAAAA&#39; and right.surname[1..10]+&#39;ZZZZZZZZZZ&#39; and left.age=right.age,all));
+
+//This should not generate a self join
+output(join(namesTable, namesTable, left.age between right.age - 10 and right.age +10));
+
+D := DATASET([{&#39;ECL&#39;},{&#39;Declarative&#39;},{&#39;Data&#39;},{&#39;Centric&#39;},{&#39;Programming&#39;},{&#39;Language&#39;}],{STRING Value;});
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

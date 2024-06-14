@@ -1,0 +1,97 @@
+APL
+===
+
+APL, aka A Programming Language, is a programming language created in 1964 by Kenneth E. Iverson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221964%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kenneth%20E.%20Iverson
+
+#93 on PLDB
+60 Years Old
+416 Repos
+
+Try now: Web · Riju · Replit
+
+APL (named after the book A Programming Language) is a programming language developed in the 1960s by Kenneth E. Iverson. Its central datatype is the multidimensional array. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/APL_(programming_language)
+
+- APL Wikipedia page
+ https://en.wikipedia.org/wiki/APL_(programming_language)
+- APL docs
+ https://xosnitc.github.io/apl-spec.html
+- There are at least 416 APL repos on GitHub
+- APL first developed in Harvard University
+- The  Google BigQuery Public Dataset GitHub snapshot shows 87 users using APL in 95 repos on GitHub
+- There are 2,478 Project Euler users using APL
+- In the 2021 StackOverflow developer survey APL programmers reported a median salary of $75,631. 1% of respondents reported using APL. 536 programmers reported using APL, and 568 said they wanted to use it
+- Explore APL snippets on Rosetta Code
+- APL on HOPL
+ https://hopl.info/showlanguage.prx?exp=18
+- APL appears in the TIOBE Index
+- CodeMirror package for syntax highlighting APL
+- Pygments supports syntax highlighting for APL
+- GitHub supports syntax highlighting for APL
+- There is 1 Jupyter Kernel for APL
+- See also: (33 related languages)APLX, J, Go, K, MATLAB, Nial, Polymorphic Programming Language, Q, S, SAC, Speakeasy, Wolfram Language, IBM 1620, BASIC, MUSIC/SP, Unix, ISBN, ASCII, COBOL, Java, Linux, Ruby, R, Unicode, C, Fortran, C#, CIL, Microsoft Excel, GNU Octave, Scilab, LYaPAS, RPL
+- 9 languages in PLDB linking to APL: april, BQN, cloc, co-dfns, Futhark, Goal, Pygments, Scroll Notation, U
+
+&#39;Hello, world!&#39;
+
+⎕←&#39;Hello World&#39;
+
+⍝ Hello World in APL
+
+⎕←\&#39;Hello World\&#39;
+
+#!/usr/local/bin/apl --script
+NEWLINE ← ⎕UCS 10
+HEADERS ← &#39;Content-Type: text/plain&#39;, NEWLINE
+HEADERS
+⍝ ⎕←HEADERS
+⍝ ⍕⎕TS
+)OFF
+
+txt←&#39;&lt;html&gt;&lt;body&gt;&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#39;
+⎕←{⍵/⍨~{⍵∨≠\⍵}⍵∊&#39;&lt;&gt;&#39;}txt
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported ✓
+ Token 
+ Example
+  foo←f∘g
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ⍝
+ Example
+  ⍝ A comment
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

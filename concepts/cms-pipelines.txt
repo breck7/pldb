@@ -1,0 +1,27 @@
+CMS Pipelines
+=============
+
+CMS Pipelines is a programming language created in 1986.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2319 on PLDB
+38 Years Old
+
+CMS Pipelines implements the pipeline concept under the VM/CMS operating system. The programs in a pipeline operate on a sequential stream of records. A program writes records that are read by the next program in the pipeline. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/CMS_Pipelines
+
+- CMS Pipelines Wikipedia page
+ https://en.wikipedia.org/wiki/CMS_Pipelines
+- CMS Pipelines first developed in IBM
+- Read more about CMS Pipelines on the web: 1.
+ https://www-01.ibm.com/support/docview.wss?uid=pub1sl26001805
+
+PIPE (end ?)
+   &lt; input txt
+ | a: locate /Hello/
+ | insert / World!/ after
+ | i: faninany
+ | &gt; newfile txt a
+ ? a:
+ | xlate upper
+ | i:

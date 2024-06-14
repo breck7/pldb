@@ -1,0 +1,100 @@
+Filebench WML
+=============
+
+Filebench WML is an open source programming language created in 2011 by Vasily Tarasov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Vasily%20Tarasov
+
+#515 on PLDB
+13 Years Old
+566 Repos
+
+git clone https://github.com/filebench/filebench
+
+File system and storage benchmark that uses a custom language to generate a large variety of workloads.
+
+- Filebench WML website
+ https://github.com/filebench/filebench/wiki
+- Filebench WML is developed on GitHub and has 257 stars
+- There are at least 566 Filebench WML repos on GitHub
+- Filebench WML first developed in https://github.com/filebench
+- Filebench WML is written in FORTRAN 77, C, Make, C++, Yacc, M4, Lex
+- The  Google BigQuery Public Dataset GitHub snapshot shows 16 users using Filebench WML in 19 repos on GitHub
+- Read more about Filebench WML on the web: 1.
+ https://github.com/filebench/filebench/wiki/Workload-model-language
+
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the &quot;License&quot;).
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets &quot;[]&quot; replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+set $dir=/tmp
+set $nfiles=1000
+set $meandirwidth=20
+set $meanfilesize=16k
+set $iosize=1m
+set $nthreads=1
+
+set mode quit firstdone
+
+define fileset name=bigfileset,path=$dir,size=$meanfilesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=100,paralloc
+define fileset name=destfiles,path=$dir,size=$meanfilesize,entries=$nfiles,dirwidth=$meandirwidth
+
+define process name=filereader,instances=1
+{
+  thread name=filereaderthread,memsize=10m,instances=$nthreads
+  {
+    flowop openfile name=openfile1,filesetname=bigfileset,fd=1
+    flowop readwholefile name=readfile1,fd=1,iosize=$iosize
+    flowop createfile name=createfile2,filesetname=destfiles,fd=2
+    flowop writewholefile name=writefile2,fd=2,srcfd=1,iosize=$iosize
+    flowop closefile name=closefile1,fd=1
+    flowop closefile name=closefile2,fd=2
+  }
+}
+
+echo  &quot;Copyfiles Version 3.0 personality successfully loaded&quot;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

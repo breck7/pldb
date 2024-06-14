@@ -1,0 +1,51 @@
+import ../code/conceptPage.scroll
+
+id zz
+name zz
+appeared 2019
+creators Arvid E. Picciani
+tags pl
+aka drunk octopus
+
+writtenIn toml rust bourne-shell markdown yaml html c
+repoStats
+ firstCommit 2019
+ commits 366
+ committers 18
+ files 482
+ newestCommit 2021
+
+example
+ using <stdio.h>::{printf}
+ 
+ export fn main() -> int {
+     let r = Random{
+         num: 42,
+     };
+     printf("your lucky number: %u\n", r.gen());
+     return 0;
+ }
+ 
+ struct Random {
+     u32 num;
+ }
+ 
+ fn gen(Random *self) -> u32 {
+     return self->num;
+ }
+
+githubRepo https://github.com/aep/zz
+ firstCommit 2019
+ stars 1603
+ forks 45
+ subscribers 39
+ created 2019
+ updated 2022
+ description 🍺🐙  ZetZ a zymbolic verifier and tranzpiler to bare metal C
+ issues 32
+
+printToken printf
+
+hasPrintDebugging true
+
+isbndb 0

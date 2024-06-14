@@ -1,0 +1,74 @@
+nimrod
+======
+
+nimrod is a programming language created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1702 on PLDB
+11 Years Old
+
+- nimrod website
+ http://nimrod-lang.org
+- The  Google BigQuery Public Dataset GitHub snapshot shows 375 users using nimrod in 601 repos on GitHub
+- Pygments supports syntax highlighting for nimrod
+- nimrod-lang.org was registered in 2013
+
+addr and as asm bind block break case cast concept const continue converter defer discard distinct div do elif else end enum except export finally for func if in yield interface is isnot iterator let macro method mixin mod not notin object of or out proc ptr raise ref return shl shr static template try tuple type using when while xor
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+
+HackerNews discussions of nimrod
+================================
+
+title|titleLink|date|score|comments
+Nimrod: A new approach to metaprogramming|https://news.ycombinator.com/item?id=6820474|11/29/2013|218|57

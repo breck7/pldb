@@ -1,0 +1,46 @@
+import ../code/conceptPage.scroll
+
+id blacklight
+name Blacklight
+appeared 2015
+creators Anthony M. Cook
+tags pl
+website http://blog.anthonymcook.com/blacklight/
+latestVersion v0.2.0
+conceptDescription blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
+
+writtenIn go bash markdown yaml json powershell
+repoStats
+ firstCommit 2015
+ commits 666
+ committers 4
+ files 99
+ newestCommit 2024
+country Unknown
+originCommunity http://anthonymcook.com/
+
+example
+ newq newq                ;; create send and receive queues
+ [
+   [
+     deq                  ;; will block if the queue is empty
+     n-to-cv rot swap enq ;; convert number into a cv (string) and send back
+     swap                 ;; reorder queues so we can loop without confusion
+   ] loop                 ;; using loop since it goes forever
+ ] work                   ;; start new thread and swap the queues
+ swap                     ;; bring send queue to top
+ 1 enq 2 enq 3 enq 4 enq  ;; send some numbers to be converted
+ 0
+ [ 1 add ]
+ [ 1000 eq ]
+ until drop               ;; give the main thread busywork
+ swap q-to-v              ;; get contents of receive Q as V
+ print                    ;; display contents of V
+
+githubRepo https://github.com/acook/blacklight
+ stars 42
+ forks 5
+ subscribers 10
+ created 2015
+ updated 2022
+ description a stack-based concatenative virtual machine for implementing highly concurrent languages

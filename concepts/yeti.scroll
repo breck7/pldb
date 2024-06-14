@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id yeti
+name yeti
+appeared 2007
+tags pl
+website http://mth.github.io/yeti/
+latestVersion v0.9.9
+webRepl http://try-yeti.appspot.com/
+
+writtenIn java restructuredtext bourne-shell xml vim-script gradle make lisp css c tex diff
+repoStats
+ firstCommit 2007
+ commits 2992
+ committers 12
+ files 170
+ newestCommit 2024
+
+example
+ ack m n =
+     if m == 0 then
+         n + 1
+     elif n == 0 then
+         ack (m - 1) 1
+     else
+         ack (m - 1) (ack m (n - 1))
+     fi;
+ 
+ println "ack 3 8 = \(ack 3 8)"
+
+githubRepo https://github.com/mth/yeti
+ firstCommit 2007
+ stars 226
+ forks 16
+ subscribers 16
+ created 2008
+ updated 2022
+ description Functional programming language for JVM.
+ issues 4

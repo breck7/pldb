@@ -1,0 +1,256 @@
+Fortran
+=======
+
+Fortran is a programming language created in 1957 by John Backus.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221957%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Backus
+
+#48 on PLDB
+67 Years Old
+29k Repos
+
+Try now: Riju
+
+Fortran (; formerly FORTRAN, derived from Formula Translation) is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing. Originally developed by IBM in the 1950s for scientific and engineering applications, Fortran came to dominate this area of programming early on and has been in continuous use for over half a century in computationally intensive areas such as numerical weather prediction, finite element analysis, computational fluid dynamics, computational physics, crystallography and computational chemistry. It is a popular language for high-performance computing and is used for programs that benchmark and rank the world's fastest supercomputers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Fortran
+
+- Fortran Wikipedia page
+ https://en.wikipedia.org/wiki/Fortran
+- Fortran docs
+ https://people.ucsc.edu/~dlee79/2019/fall/am129_209/chapters/chapt02/ch02_fortran_basic.html
+- Fortran specs
+ https://www.iso.org/obp/ui/#iso:std:iso-iec:1539:-1:ed-4:v1:en
+- Fortran mailing list
+ https://gcc.gnu.org/mailman/listinfo/fortran
+- There are at least 29,127 Fortran repos on GitHub
+- Fortran first developed in IBM
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Fortran in 3k repos on GitHub
+- There are 6,269 members in the Fortran subreddit
+- There are 464 Project Euler users using Fortran
+- Explore Fortran snippets on Rosetta Code
+- Fortran is supported by the GDB
+- Fortran on HOPL
+ https://hopl.info/showlanguage.prx?exp=8
+- Fortran ranks #32 in the TIOBE Index
+- ANTLR grammar for Fortran
+- Fortran LSP implementation
+- CodeMirror package for syntax highlighting Fortran
+- Pygments supports syntax highlighting for Fortran
+- GitHub supports syntax highlighting for Fortran
+- There is 1 Jupyter Kernel for Fortran
+- Official Blog page for Fortran
+ https://fortran-lang.org/en/news/
+- Frequently Asked Questions for Fortran
+ http://www.faqs.org/faqs/fortran-faq/
+- Indeed.com has 447 matches for "fortran engineer".
+- See also: (23 related languages)Speedcoding, ALGOL 58, BASIC, C, Chapel, CMS-2, PL/I, PACT I, MUMPS, RATFOR, Assembly language, Laning and Zierler system, IBM 1620, UCSD Pascal, WATFIV, ASCII, Modula-2, Ada, Mortran, Ratfiv, JCL, SIMSCRIPT, F
+- Read more about Fortran on the web: 1.
+ https://en.wikipedia.org/wiki/Fortran_95_language_features
+- 5 languages in PLDB linking to Fortran: BALGOL, EXPLOR, GCC, ICETRAN, Scroll Notation
+
+! Type your code here, or load an example.
+real function square(x)
+    implicit none
+    real, intent(in) :: x
+    square = x * x
+    return
+end function square
+
+       PROGRAM hello
+          PRINT *, &quot;Hello, world!&quot;
+       END PROGRAM hello
+
+print *,&#39;Hello World&#39;
+end
+
+C     Hello World in Fortran
+
+      PROGRAM HELLO
+      WRITE (*,100)
+      STOP
+  100 FORMAT (&#39; Hello World! &#39; /)
+      END
+
+! Codes/HYCOM/hycom/ATLb2.00/src_2.0.01_22_one/
+      real onemu, twomu
+      data onemu/0.0098/
+      data twomu/1./
+      data threemu/0.e9/
+      end
+
+program average
+
+  ! Read in some numbers and take the average
+  ! As written, if there are no data points, an average of zero is returned
+  ! While this may not be desired behavior, it keeps this example simple
+
+  implicit none
+
+  real, dimension(:), allocatable :: points
+  integer                         :: number_of_points
+  real                            :: average_points=0., positive_average=0., negative_average=0.
+
+  write (*,*) &quot;Input number of points to average:&quot;
+  read  (*,*) number_of_points
+
+  allocate (points(number_of_points))
+
+  write (*,*) &quot;Enter the points to average:&quot;
+  read  (*,*) points
+
+  ! Take the average by summing points and dividing by number_of_points
+  if (number_of_points &gt; 0) average_points = sum(points) / number_of_points
+
+  ! Now form average over positive and negative points only
+  if (count(points &gt; 0.) &gt; 0) then
+     positive_average = sum(points, points &gt; 0.) / count(points &gt; 0.)
+  end if
+
+  if (count(points &lt; 0.) &gt; 0) then
+     negative_average = sum(points, points &lt; 0.) / count(points &lt; 0.)
+  end if
+
+  deallocate (points)
+
+  ! Print result to terminal
+  write (*,&#39;(a,g12.4)&#39;) &#39;Average = &#39;, average_points
+  write (*,&#39;(a,g12.4)&#39;) &#39;Average of positive points = &#39;, positive_average
+  write (*,&#39;(a,g12.4)&#39;) &#39;Average of negative points = &#39;, negative_average
+
+end program average
+
+ACCESS ACTION ADVANCE ALLOCATABLE ALLOCATE ASSIGN ASSIGNMENT BACKSPACE BLANK BLOCK CALL CASE CHARACTER CLOSE COMMON COMPLEX CONTAINS CONTINUE CYCLE DATA DEALLOCATE DEFAULT DELIM DIMENSION DIRECT DO DOUBLE ELSE ELSEWHERE END ENDFILE ENTRY EOR EQUIVALENCE ERR EXIST EXIT EXTERNAL FILE FMT FORM FORMAT FORMATTED FUNCTION GO IF IMPLICIT IN INOUT INQUIRE INTEGER INTENT INTERFACE INTRINSIC IOLENGTH 10STAT KIND LEN LOGICAL MODULE NAME NAMED NAMELIST NEXTREC NML NONE NULLIFY NUMBER ONLY OPEN OPENED OPERATOR OPTIONAL OUT PAD PARAMETER PAUSE POINTER POSITION PRECISION PRINT PRIVATE PROCEDURE PROGRAM PUBLIC READ READWRITE REAL REC RECl RECURSIVE RESULT RETURN REWIND SAVE SELECT SEQUENCE SEQUENTIAL SIZE STAT STATUS STOP SUBROUTINE TARGET THEN TO TYPE UNFORMATTED UNIT USE WHERE WHILE WRITE
+
+Language features
+======================================================
+
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token !
+ Example
+  C A comment
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+  module constants
+  implicit none
+  
+     real, parameter :: pi = 3.1415926536
+     real, parameter :: e = 2.7182818285
+     
+  contains
+     subroutine show_consts()
+        print*, "Pi = ", pi
+        print*,  "e = ", e
+     end subroutine show_consts
+     
+  end module constants
+  
+  
+  program module_example
+  use constants
+  implicit none
+  
+     real :: x, ePowerx, area, radius
+     x = 2.0
+     radius = 7.0
+     ePowerx = e ** x
+     area = pi * radius**2
+     
+     call show_consts()
+     
+     print*, "e raised to the power of 2.0 = ", ePowerx
+     print*, "Area of a circle with radius 7.0 = ", area
+     
+  end program module_exampl
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+  C     Hello World in Fortran
+  
+        PROGRAM HELLO
+        WRITE (*,100)
+        STOP
+    100 FORMAT (' Hello World! ' /)
+        END
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  x = 2.0
+  y = x + X
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  C
+  C Lines that begin with 'C' (in the first or 'comment' column) are comments
+  C
+row
+ Feature Fixed Point Numbers
+ FeatureLink ../features/hasFixedPoint.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example
+row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported X
+ Token 
+ Example
+  C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html

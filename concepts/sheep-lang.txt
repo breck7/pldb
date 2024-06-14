@@ -1,0 +1,79 @@
+Sheep
+=====
+
+Sheep is a programming language created in 2000 by Wouter Van Oortmerssen.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Wouter%20Van%20Oortmerssen
+
+#2107 on PLDB
+24 Years Old
+
+- Sheep website
+ http://strlen.com/sheep-language/
+- Sheep first developed in https://strlen.com/sheep-language
+- Read more about Sheep on the web: 1.
+ https://www.osnews.com/story/169/interview-wouter-van-oortmerssen-on-sheep/
+
+— Tree of Pythagoras
+
+— based on an old E example by Raymond Hoving
+
+import “ave”
+
+define pythtree ax:real ay:real bx:real by:real depth:int do
+
+  cx = ax-ay+by
+
+  cy = ax+ay-bx
+
+  dx = bx+by-ay
+
+  dy = ax-bx+by
+
+  ex = 0.5*(cx-cy+dx+dy)
+
+  ey = 0.5*(cx+cy-dx+dy)
+
+  c = -1-depth*$100020
+
+  ave_line cx cy ax ay c
+
+  ave_line ax ay bx by c
+
+  ave_line bx by dx dy c
+
+  ave_line dx dy cx cy c
+
+  ave_line cx cy ex ey c
+
+  ave_line ex ey dx dy c
+
+  if depth &lt; 12 then
+    pythtree cx cy ex ey depth+1
+    pythtree ex ey dx dy depth+1
+  end
+end
+
+width = 640
+height = 480
+
+ave_openwindow &quot;Pythagoras Tree&quot; width height 0
+
+pythtree width/2-width/12 height-20 width/2+width/12 height-20 0
+
+ave_update
+repeat
+until ave_getmessage = &#39;Q&#39;
+
+Language features
+======================================================
+
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+  define pythtree ax:real ay:real bx:real by:real depth:int do
+     cx = ax-ay+by
+   end

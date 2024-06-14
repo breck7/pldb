@@ -1,0 +1,202 @@
+VHDL
+====
+
+VHDL, aka VHSIC Hardware Description Language, is a hardware description language created in 1983.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#76 on PLDB
+41 Years Old
+34k Repos
+
+VHDL (VHSIC Hardware Description Language) is a hardware description language used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits. VHDL can also be used as a general purpose parallel programming language.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/VHDL
+
+- VHDL Wikipedia page
+ https://en.wikipedia.org/wiki/VHDL
+- VHDL docs
+ https://vhdlguide.readthedocs.io/en/latest/
+- There are at least 34,211 VHDL repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using VHDL in 2k repos on GitHub
+- There are 2,320 members in the VHDL subreddit
+- Explore VHDL snippets on Rosetta Code
+- VHDL on HOPL
+ https://hopl.info/showlanguage.prx?exp=1188
+- VHDL ranks #44 in the TIOBE Index
+- ANTLR grammar for VHDL
+- VHDL LSP implementation
+- CodeMirror package for syntax highlighting VHDL
+- Pygments supports syntax highlighting for VHDL
+- GitHub supports syntax highlighting for VHDL
+- See also: (6 related languages)Verilog, Ada, Pascal, VHDL-AMS, Property Specification Language, ISBN
+- 5 languages in PLDB linking to VHDL: Ace Editor, invokator, mal, Pygments, Spatial
+
+use std.textio.all;
+
+entity hello_world is
+end hello_world;
+
+architecture behaviour of hello_world is
+begin
+	process
+    begin
+       write (output, String&#39;(&quot;Hello World&quot;));
+       wait;
+    end process;
+end behaviour;
+
+--Hello World in VHDL
+
+ENTITY helloworld IS
+END helloworld;
+
+ARCHITECTURE hw OF helloworld IS
+
+BEGIN
+
+ASSERT FALSE
+REPORT &quot;HELLO, WORLD!&quot;
+SEVERITY NOTE;
+
+END hw;
+
+-- VHDL example file
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity inverter is
+	port(a : in std_logic;
+	     b : out std_logic);
+end entity;
+
+architecture rtl of inverter is
+begin
+	b &lt;= not a;
+end architecture;
+
+process
+begin
+  wait until START = &#39;1&#39;; -- wait until START is high
+  
+  for i in 1 to 10 loop -- then wait for a few clock periods...
+    wait until rising_edge(CLK);
+  end loop;
+
+  for i in 1 to 10 loop 	-- write numbers 1 to 10 to DATA, 1 every cycle
+    DATA &lt;= to_unsigned(i, 8);
+    wait until rising_edge(CLK);
+  end loop;
+
+  -- wait until the output changes
+  wait on RESULT;
+  
+  -- now raise ACK for clock period
+  ACK &lt;= &#39;1&#39;;
+  wait until rising_edge(CLK);
+  ACK &lt;= &#39;0&#39;;
+
+  -- and so on...
+end process;
+
+abs access after alias all and architecture array assert attribute begin block body buffer bus case component configuration constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in inertial inout is label library linkage literal loop map mod nand new next nor not null of on open or others out package port postponed procedure process pure range record register reject rem report return rol ror select severity signal shared sla sll sra srl subtype then to transport type unaffected units until use variable wait when while with xnor xor
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  -- B"[01_]+"
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- \d{1,2}#[0-9a-f_]+#?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  -- X"[0-9a-f_]+"
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  -- O"[0-7_]+"
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  signals some_signal : integer ;
+  signal some_other_signal : integer ;
+  signal result : integer ;
+  ReSULT ✓
+ Token write
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,31 @@
+Dartmouth BASIC
+===============
+
+Dartmouth BASIC is a programming language created in 1964 by John G. Kemeny and Thomas E. Kurtz.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221964%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20G.%20Kemeny
+ https://pldb.io/concepts/../lists/creators.html#q=Thomas%20E.%20Kurtz
+
+#1531 on PLDB
+60 Years Old
+
+Dartmouth BASIC is the original version of the BASIC programming language.  It is so named because it was designed and implemented at Dartmouth College by John Kemény and Thomas Kurtz. It was developed as part of the Dartmouth Time Sharing System (DTSS) and was one of the first programming languages intended to be used interactively. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Dartmouth_BASIC
+
+- Dartmouth BASIC Wikipedia page
+ https://en.wikipedia.org/wiki/Dartmouth_BASIC
+- Dartmouth BASIC first developed in Dartmouth College
+- Dartmouth BASIC on HOPL
+ https://hopl.info/showlanguage.prx?exp=1948
+- See also: (10 related languages)Algol, BASIC, Microsoft BASIC, True BASIC, ACT-III, ALGOL 60, ASCII, HP Time-Shared BASIC, BASIC-PLUS, Altair BASIC
+
+5 LET S = 0
+10 MAT INPUT V
+20 LET N = NUM
+30 IF N = 0 THEN 99
+40 FOR I = 1 TO N
+45   LET S = S + V(I)
+50 NEXT I
+60 PRINT S/N
+70 GO TO 5
+99 END

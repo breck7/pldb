@@ -1,0 +1,56 @@
+Lily
+====
+
+Lily is an open source programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#408 on PLDB
+13 Years Old
+
+git clone https://github.com/FascinatedBox/lily
+
+Try now: Web · TIO
+
+Interpreted language focused on expressiveness and type safety.
+
+- Lily website
+ http://lily-lang.org
+- Lily is developed on GitHub and has 1,079 stars
+- Lily on GitLab
+ https://gitlab.com/FascinatedBox/lily
+- Lily first developed in https://gitlab.com/FascinatedBox/lily/-/issues
+- Lily is written in C, Lua, Ruby, Python, CMake, Markdown, YAML
+- Explore Lily snippets on Rosetta Code
+- lily-lang.org was registered in 2016
+
+scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }
+
+class Terminal(public var @foreground: Color, width_str: String)
+{
+    public var @width = width_str.parse_i().unwrap_or(80)
+
+    public define set_fg(new_color: Color) {
+        @foreground = new_color
+    }
+}
+
+var terms = [Terminal(Color.White, &quot;A&quot;), Terminal(Color.Red, &quot;40&quot;)]
+
+terms.each(|e| e.width += 20 )
+     |&gt; print
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

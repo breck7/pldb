@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id chicken
+name CHICKEN
+appeared 2000
+creators Felix Winkelmann
+tags pl compiler
+website https://www.call-cc.org/
+latestVersion 5.3.0
+aka Chicken Scheme
+
+isOpenSource true
+writtenIn scheme bourne-shell c lisp tex make css html
+implementationOf scheme
+documentation https://wiki.call-cc.org/man/5/The%20User%27s%20Manual
+wordRank 3605
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ newestCommit 2024
+ commits 6584
+ committers 79
+ files 353
+country Various
+originCommunity The Chicken Team
+
+example
+ A glimpse of CHICKEN
+ ;;; hello-world.scm
+ (print "Hello, world!")
+ 
+ ;;; Running it interpreted:
+ $ csi -s hello-world.scm
+ Hello, world!
+ 
+ ;;; Compiling and running the executable binary:
+ $ csc hello-world.scm
+ 
+ $ ./hello-world
+ Hello, world!
+
+gitRepo https://code.call-cc.org/git/chicken-core.git
+
+wikipedia https://en.wikipedia.org/wiki/CHICKEN_(Scheme_implementation)
+ related scheme linux ios android stalin
+ summary Chicken (stylized as CHICKEN) is a programming language, specifically a compiler and interpreter which implement a dialect of the programming language Scheme, and which compiles Scheme source code to standard C. It is mostly R5RS compliant and offers many extensions to the standard. The newer R7RS standard is supported through an extension library. Chicken is free and open-source software available under a BSD license. It is implemented mostly in Scheme, with some parts in C for performance or to make embedding into C programs easier.
+ created 2000
+ backlinksCount 128
+ pageId 4397102
+ dailyPageViews 24
+ appeared 1994
+
+hopl https://hopl.info/showlanguage.prx?exp=8676

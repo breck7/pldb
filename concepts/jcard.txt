@@ -1,0 +1,37 @@
+jcard
+=====
+
+jcard is a json format created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#4589 on PLDB
+10 Years Old
+
+- jcard first developed in Versit Consortium
+- Read more about jcard on the web: 1.
+ https://en.wikipedia.org/wiki/VCard
+
+[&quot;vcard&quot;,
+  [
+    [&quot;version&quot;, {}, &quot;text&quot;, &quot;4.0&quot;],
+    [&quot;n&quot;, {}, &quot;text&quot;, [&quot;Gump&quot;, &quot;Forrest&quot;, &quot;&quot;, &quot;Mr.&quot;, &quot;&quot;]],
+    [&quot;fn&quot;, {}, &quot;text&quot;, &quot;Forrest Gump&quot;],
+    [&quot;org&quot;, {}, &quot;text&quot;, &quot;Bubba Gump Shrimp Co.&quot;],
+    [&quot;title&quot;, {} ,&quot;text&quot;, &quot;Shrimp Man&quot;],
+    [&quot;photo&quot;, {&quot;mediatype&quot;:&quot;image/gif&quot;}, &quot;uri&quot;, &quot;http://www.example.com/dir_photos/my_photo.gif&quot;],
+    [&quot;tel&quot;, {&quot;type&quot;:[&quot;work&quot;, &quot;voice&quot;]}, &quot;uri&quot;, &quot;tel:+1-111-555-1212&quot;],
+    [&quot;tel&quot;, {&quot;type&quot;:[&quot;home&quot;, &quot;voice&quot;]}, &quot;uri&quot;, &quot;tel:+1-404-555-1212&quot;],
+    [&quot;adr&quot;,
+      {&quot;label&quot;:&quot;100 Waters Edge\nBaytown, LA 30314\nUnited States of America&quot;, &quot;type&quot;:&quot;work&quot;, &quot;pref&quot;:&quot;1&quot;},
+      &quot;text&quot;,
+      [&quot;&quot;, &quot;&quot;, &quot;100 Waters Edge&quot;, &quot;Baytown&quot;, &quot;LA&quot;, &quot;50505&quot;, &quot;United States of America&quot;]
+    ],
+    [&quot;adr&quot;,
+      {&quot;label&quot;:&quot;42 Plantation St.\nBaytown, LA 30314\nUnited States of America&quot;, &quot;type&quot;:&quot;home&quot;},
+      &quot;text&quot;,
+      [&quot;&quot;, &quot;&quot;, &quot;42 Plantation St.&quot;, &quot;Baytown&quot;, &quot;LA&quot;, &quot;30314&quot;, &quot;United States of America&quot;]
+    ],
+    [&quot;email&quot;, {}, &quot;text&quot;, &quot;forrestgump@example.com&quot;],
+    [&quot;rev&quot;, {}, &quot;timestamp&quot;, &quot;2008-04-24T19:52:43Z&quot;]
+  ]
+]

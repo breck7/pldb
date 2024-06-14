@@ -1,0 +1,52 @@
+XProc
+=====
+
+XProc is a programming language created in 1990.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1180 on PLDB
+34 Years Old
+93 Repos
+
+XProc is a W3C Recommendation to define an XML transformation language to define XML Pipelines. Below is an example abbreviated XProc file:  This is a pipeline that consists of two atomic steps, XInclude and Validate. The pipeline itself has three inputs, “source” (a source document), “schemas” (a list of W3C XML Schemas) and  “parameters” (for passing parameters). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XProc
+
+- XProc Wikipedia page
+ https://en.wikipedia.org/wiki/XProc
+- There are at least 93 XProc repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 174 users using XProc in 223 repos on GitHub
+- Explore XProc snippets on Rosetta Code
+- GitHub supports syntax highlighting for XProc
+- See also: (4 related languages)XML, Java, XQuery, XPath
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;p:declare-step xmlns:p=&quot;http://www.w3.org/ns/xproc&quot;
+    xmlns:c=&quot;http://www.w3.org/ns/xproc-step&quot; version=&quot;1.0&quot;&gt;
+    &lt;p:input port=&quot;source&quot;&gt;
+        &lt;p:inline&gt;
+            &lt;doc&gt;Hello world!&lt;/doc&gt;
+        &lt;/p:inline&gt;
+    &lt;/p:input&gt;
+    &lt;p:output port=&quot;result&quot;/&gt;
+    &lt;p:identity/&gt;
+&lt;/p:declare-step&gt;
+
+&lt;p:pipeline name=&quot;pipeline&quot; xmlns:p=&quot;http://www.w3.org/ns/xproc&quot;
+  version=&quot;1.0&quot;&gt;
+  &lt;p:input port=&quot;schemas&quot; sequence=&quot;true&quot;/&gt;
+
+  &lt;p:xinclude name=&quot;included&quot;&gt;
+    &lt;p:input port=&quot;source&quot;&gt;
+      &lt;p:pipe step=&quot;pipeline&quot; port=&quot;source&quot;/&gt;
+    &lt;/p:input&gt;
+  &lt;/p:xinclude&gt;
+
+  &lt;p:validate-with-xml-schema name=&quot;validated&quot;&gt;
+    &lt;p:input port=&quot;source&quot;&gt;
+      &lt;p:pipe step=&quot;included&quot; port=&quot;result&quot;/&gt;
+    &lt;/p:input&gt;
+    &lt;p:input port=&quot;schema&quot;&gt;
+      &lt;p:pipe step=&quot;pipeline&quot; port=&quot;schemas&quot;/&gt;
+    &lt;/p:input&gt;
+  &lt;/p:validate-with-xml-schema&gt;
+&lt;/p:pipeline&gt;

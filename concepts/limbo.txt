@@ -1,0 +1,125 @@
+Limbo
+=====
+
+Limbo is an open source programming language created in 1995 by Rob Pike.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rob%20Pike
+
+#568 on PLDB
+29 Years Old
+529 Repos
+
+Try now: Riju
+
+Limbo is a programming language for writing distributed systems and is the language used to write applications for the Inferno operating system. It was designed at Bell Labs by Sean Dorward, Phil Winterbottom, and Rob Pike. The Limbo compiler generates architecture-independent object code which is then interpreted by the Dis virtual machine or compiled just before runtime to improve performance. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Limbo_(programming_language)
+
+- Limbo website
+ http://www.vitanuova.com/inferno/limbo.html
+- Limbo Wikipedia page
+ https://en.wikipedia.org/wiki/Limbo_(programming_language)
+- Limbo docs
+ http://resibots.eu/limbo/
+- There are at least 529 Limbo repos on GitHub
+- Limbo first developed in https://groups.google.com/g/inferno-os
+- The  Google BigQuery Public Dataset GitHub snapshot shows 360 users using Limbo in 367 repos on GitHub
+- Explore Limbo snippets on Rosetta Code
+- Limbo on HOPL
+ https://hopl.info/showlanguage.prx?exp=2166
+- Limbo appears in the TIOBE Index
+- Pygments supports syntax highlighting for Limbo
+- See also: (10 related languages)C, Pascal, CSP, ALEF, Newsqueak, Stackless Python, Go, Rust, Ada, ISBN
+
+Lock: module
+{
+	PATH:	con &quot;/dis/lib/lock.dis&quot;;
+
+	Semaphore: adt {
+		c: chan of int;
+		obtain:	fn(nil: self ref Semaphore);
+		release: fn(nil: self ref Semaphore);
+		new: fn(): ref Semaphore;
+	};
+	
+	init: fn();
+};
+
+implement Cmd;
+
+include &quot;sys.m&quot;;
+include &quot;draw.m&quot;;
+
+Cmd : module {
+    init : fn (ctxt : ref Draw-&gt;Context, args : list of string);
+};
+
+init(nil : ref Draw-&gt;Context, nil : list of string)
+{
+    sys := load Sys Sys-&gt;PATH;
+    sys-&gt;print(&quot;Hello, world!\n&quot;);
+}
+
+implement Hello;
+
+include &quot;sys.m&quot;;
+	sys: Sys;
+include &quot;draw.m&quot;;
+
+Hello: module
+{
+	init:	fn(ctxt: ref Draw-&gt;Context, argv: list of string);
+};
+
+init(ctxt: ref Draw-&gt;Context, argv: list of string)
+{
+	sys = load Sys Sys-&gt;PATH;
+	sys-&gt;print(&quot;Hello World\n&quot;);
+}
+
+Hello World in Limbo.
+Limbo is the programming language of the Inferno OS
+(from Lucent Bell Labs).
+
+implement Cmd;
+
+include &quot;sys.m&quot;;
+include &quot;draw.m&quot;;
+
+Cmd : module {
+    init : fn (ctxt : ref Draw-&gt;Context, args : list of string);
+};
+
+init(nil : ref Draw-&gt;Context, nil : list of string)
+{
+    sys := load Sys Sys-&gt;PATH;
+    sys-&gt;print(&quot;Hello World\n&quot;);
+}
+
+implement Command;
+ 
+ include &quot;sys.m&quot;;
+     sys: Sys;
+ 
+
+ 
+ init(Context, nil: list of string)
+ {
+     sys = load Sys Sys-&gt;PATH;
+     print(&quot;Hello World!\n&quot;);
+ }
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token sys->print
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

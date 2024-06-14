@@ -1,0 +1,37 @@
+import ../code/conceptPage.scroll
+
+id cobolscript
+name CobolScript
+appeared 1999
+tags pl
+website https://web.archive.org/web/20010402110850/http://deskware.com/
+
+centralPackageRepositoryCount 0
+country United States
+originCommunity Deskware
+
+leachim6 CobolScript
+ filepath c/CobolScript.cbl
+ fileExtensions cbl
+ example
+  DISPLAY `Content-type: text/html `.
+  DISPLAY LINEFEED.
+  DISPLAY `<HTML><BODY>`.
+  DISPLAY `<CENTER>Hello World</CENTER>`.
+  DISPLAY `</BODY></HTML>`.
+  GOBACK.
+  
+
+printToken DISPLAY
+
+hasPrintDebugging true
+
+wikipedia https://en.wikipedia.org/wiki/CobolScript
+ related cobol
+ summary CobolScript is a programming language created by Matthew Dean and Charles Schereda of Deskware in 1999. The language was intended to provide web-enabled COBOL, and was targeted at businesses using legacy software written in that language.
+ created 2016
+ backlinksCount 16
+ pageId 50155661
+ revisionCount 10
+ dailyPageViews 6
+ appeared 1999

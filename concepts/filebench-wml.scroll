@@ -1,0 +1,110 @@
+import ../code/conceptPage.scroll
+
+id filebench-wml
+name Filebench WML
+appeared 2011
+creators Vasily Tarasov
+tags pl
+website https://github.com/filebench/filebench/wiki
+latestVersion 1.4.9
+conceptDescription Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
+
+isOpenSource true
+writtenIn fortran-77 c make cpp yacc m4 lex
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 223
+ committers 14
+ files 136
+ newestCommit 2020
+country United States
+originCommunity https://github.com/filebench
+reference https://github.com/filebench/filebench/wiki/Workload-model-language
+
+example
+ #
+ # CDDL HEADER START
+ #
+ # The contents of this file are subject to the terms of the
+ # Common Development and Distribution License (the "License").
+ # You may not use this file except in compliance with the License.
+ #
+ # You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+ # or http://www.opensolaris.org/os/licensing.
+ # See the License for the specific language governing permissions
+ # and limitations under the License.
+ #
+ # When distributing Covered Code, include this CDDL HEADER in each
+ # file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+ # If applicable, add the following below this CDDL HEADER, with the
+ # fields enclosed by brackets "[]" replaced with your own identifying
+ # information: Portions Copyright [yyyy] [name of copyright owner]
+ #
+ # CDDL HEADER END
+ #
+ #
+ # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+ # Use is subject to license terms.
+ #
+ 
+ set $dir=/tmp
+ set $nfiles=1000
+ set $meandirwidth=20
+ set $meanfilesize=16k
+ set $iosize=1m
+ set $nthreads=1
+ 
+ set mode quit firstdone
+ 
+ define fileset name=bigfileset,path=$dir,size=$meanfilesize,entries=$nfiles,dirwidth=$meandirwidth,prealloc=100,paralloc
+ define fileset name=destfiles,path=$dir,size=$meanfilesize,entries=$nfiles,dirwidth=$meandirwidth
+ 
+ define process name=filereader,instances=1
+ {
+   thread name=filereaderthread,memsize=10m,instances=$nthreads
+   {
+     flowop openfile name=openfile1,filesetname=bigfileset,fd=1
+     flowop readwholefile name=readfile1,fd=1,iosize=$iosize
+     flowop createfile name=createfile2,filesetname=destfiles,fd=2
+     flowop writewholefile name=writefile2,fd=2,srcfd=1,iosize=$iosize
+     flowop closefile name=closefile1,fd=1
+     flowop closefile name=closefile2,fd=2
+   }
+ }
+ 
+ echo  "Copyfiles Version 3.0 personality successfully loaded"
+ 
+
+githubRepo https://github.com/filebench/filebench
+ stars 257
+ forks 96
+ subscribers 22
+ created 2016
+ updated 2022
+ description File system and storage benchmark that uses a custom language to generate a large variety of workloads.
+ issues 68
+ firstCommit 2011
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+githubBigQuery Filebench WML
+ repos 19
+ users 16
+
+isbndb 0
+
+githubLanguage Filebench WML
+ fileExtensions f
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 566

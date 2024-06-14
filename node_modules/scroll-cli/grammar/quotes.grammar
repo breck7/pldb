@@ -1,0 +1,23 @@
+quoteLineParser
+ catchAllCellType anyCell
+ catchAllParser quoteLineParser
+
+quoteParser
+ cruxFromId
+ description A blockquote.
+ catchAllParser quoteLineParser
+ extends abstractScrollParser
+ javascript
+  compile() {
+   return `<blockquote class="scrollQuote">${this.childrenToString()}</blockquote>`
+  }
+  compileTextVersion() {
+    return this.childrenToString()
+  }
+
+quickQuoteParser
+ crux >
+ extends indentableParagraphParser
+ javascript
+  defaultClassName = "scrollQuote"
+  tag = "blockquote"

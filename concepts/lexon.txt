@@ -1,0 +1,45 @@
+Lexon
+=====
+
+Lexon is a contract language created in 2018.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1869 on PLDB
+6 Years Old
+
+- Lexon website
+ http://lexon.tech/
+- Lexon first developed in https://gitlab.com/lexon-foundation
+- Monaco package for syntax highlighting Lexon
+- lexon.tech was registered in 2018
+
+LEX Escrow.
+
+Chapter: Pay In.
+A Payer pays an Amount into Escrow and appoints the Payee and the Arbiter.
+
+Chapter: Pay Out.
+The Arbiter or the Payer may pay the Escrow to the Payee.
+
+Chapter: Pay Back.
+The Arbiter or the Payee may pay the Escrow to the Payer.
+
+lexon lex clause terms contracts may pay pays appoints into to
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  COMMENT A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token COMMENT
+ Example
+  COMMENT A comment

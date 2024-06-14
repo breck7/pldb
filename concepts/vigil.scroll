@@ -1,0 +1,45 @@
+import ../code/conceptPage.scroll
+
+id vigil
+name Vigil
+appeared 2013
+creators Bob Nystrom
+tags esolang
+
+writtenIn python markdown
+repoStats
+ firstCommit 2013
+ commits 15
+ committers 7
+ files 6
+ newestCommit 2022
+
+example
+ def fib(n):
+  if n < 2:
+      result = n
+  else:
+      result = fib(n - 1) + fib(n - 2)
+  # fib() never returns negative number.
+  swear result >= 0
+  return result
+
+githubRepo https://github.com/munificent/vigil
+ firstCommit 2013
+ stars 2574
+ forks 64
+ subscribers 75
+ created 2013
+ updated 2022
+ description Vigil, the eternal morally vigilant programming language
+ issues 21
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+isbndb 0

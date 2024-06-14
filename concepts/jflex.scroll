@@ -1,0 +1,144 @@
+import ../code/conceptPage.scroll
+
+id jflex
+name JFlex
+appeared 2003
+tags grammarLanguage
+website http://jflex.de/
+latestVersion v1.9.1
+conceptDescription JFlex is a lexical analyzer generator (also known as scanner generator) for Java, written in Java.
+
+isOpenSource true
+writtenIn java starlark markdown perl bourne-shell vtl-lang xml make yaml tex css bash json vim-script lisp yacc bazel actionscript
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 2497
+ committers 27
+ files 8186
+ newestCommit 2023
+country Switzerland and Australia
+originCommunity https://github.com/jflex-de/
+
+githubRepo https://github.com/jflex-de/jflex
+ firstCommit 2003
+ stars 469
+ forks 101
+ subscribers 22
+ created 2015
+ updated 2022
+ description The fast scanner generator for Java™ with full Unicode support
+ issues 49
+
+multiLineCommentTokens /* */
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName jflex.de
+ awisRank
+  2022 2163823
+
+githubBigQuery JFlex
+ repos 39
+ users 38
+
+linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 1
+ commitCount 5
+ sampleCount 2
+ example
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * Copyright (C) 1998-2015  Gerwin Klein <lsf@jflex.de>                    *
+   * All rights reserved.                                                    *
+   *                                                                         *
+   * License: BSD                                                            *
+   *                                                                         *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  /* Java 1.2 language lexer specification */
+  
+  /* Use together with unicode.flex for Unicode preprocesssing */
+  /* and java12.cup for a Java 1.2 parser                      */
+  
+  /* Note that this lexer specification is not tuned for speed.
+     It is in fact quite slow on integer and floating point literals,
+     because the input is read twice and the methods used to parse
+     the numbers are not very fast.
+     For a production quality application (e.g. a Java compiler)
+     this could be optimized */
+  
+  
+  import java_cup.runtime.*;
+  
+  %%
+  
+  %public
+  %class Scanner
+  %implements sym
+  
+  %unicode
+  
+  %line
+  %column
+  
+  %cup
+  %cupdebug
+  
+  %{
+    StringBuilder string = new StringBuilder();
+    
+    private Symbol symbol(int type) {
+      return new JavaSymbol(type, yyline+1, yycolumn+1);
+    }
+  
+    private Symbol symbol(int type, Object value) {
+      return new JavaSymbol(type, yyline+1, yycolumn+1, value);
+    }
+  
+    /**
+     * assumes correct representation of a long value for
+     * specified radix in scanner buffer from <code>start</code>
+     * to <code>end</code>
+     */
+    private long parseLong(int start, int end, int radix) {
+      long result = 0;
+      long digit;
+  
+      for (int i = start; i < end; i++) {
+        digit  = Character.digit(yycharat(i),radix);
+        result*= radix;
+        result+= digit;
+      }
+  
+      return result;
+    }
+  %}
+  
+  /* main character classes */
+  LineTerminator = \r|\n|\r\n
+  InputCharacter = [^\r\n]
+  
+  WhiteSpace = {LineTerminator} | [ \t\f]
+  
+  /* comments */
+  Comment = {Tradi
+
+isbndb 0
+
+githubLanguage JFlex
+ fileExtensions flex jflex
+ trendingProjectsCount 0
+ type programming
+ group Lex
+ aceMode text
+ tmScope source.jflex
+ repos 2

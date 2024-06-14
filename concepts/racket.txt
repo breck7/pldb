@@ -1,0 +1,198 @@
+Racket
+======
+
+Racket is an open source programming language created in 1994 by Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Matthias%20Felleisen
+ https://pldb.io/concepts/../lists/creators.html#q=Matthew%20Flatt
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Bruce%20Findler
+ https://pldb.io/concepts/../lists/creators.html#q=Shriram%20Krishnamurthi
+
+#49 on PLDB
+30 Years Old
+18k Repos
+
+git clone https://github.com/racket/racket
+
+Try now: Riju · TIO
+
+Racket is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Racket_(programming_language)
+
+- Racket website
+ http://racket-lang.org
+- Racket downloads page
+ https://download.racket-lang.org/
+- Racket Wikipedia page
+ https://en.wikipedia.org/wiki/Racket_(programming_language)
+- Racket is developed on GitHub
+- Racket docs
+ https://docs.racket-lang.org/
+- There are at least 17,790 Racket repos on GitHub
+- Racket first developed in PLT Inc.
+- Racket is written in Racket, C, Scheme, M4, Assembly language, Bourne shell, JSON, Tex, XML, Make, Markdown, Diff, YAML, Pascal, C++, Expect, Ada, HTML, C#, Meson, Python, CSS, JavaScript, C shell, Perl, SaltStack, Bash, IDL, R, CMake, SAS, Dockerfile, PowerShell
+- Racket on Twitter
+ https://twitter.com/racketlang
+- Recurring conference about Racket: RacketCon
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Racket in 4k repos on GitHub
+- Check out the 6 Racket meetup groups on Meetup.com.
+- There are 316 Project Euler users using Racket
+- Explore Racket snippets on Rosetta Code
+- Racket appears in the TIOBE Index
+- Pygments supports syntax highlighting for Racket
+- GitHub supports syntax highlighting for Racket
+- There is 1 Jupyter Kernel for Racket
+- There is a central package repository for Racket
+- Release Notes for Racket
+ https://docs.racket-lang.org/release/index.html
+- Official Blog page for Racket
+ https://blog.racket-lang.org/
+- Frequently Asked Questions for Racket
+ https://www.cs.uni.edu/~wallingf/teaching/cs3540/resources/racket-faq.html
+- Indeed.com has 1 matches for "racket engineer".
+- racket-lang.org was registered in 2010
+- See also: (16 related languages)X86, PowerPC, SPARC, MIPS architecture, ARM, Scheme, Eiffel, Rust, Clojure, Lisp, Java, Unicode, JSON, Unix, Linux, Arc
+- 24 languages in PLDB linking to Racket: cloc, datafun, eskew, fructure-editor, Hackett, Liso, mal, Mu, p4p, pie-lang, Pycket, Pygments, Racket, remix, rockstar-rkt, scribble, Scroll Notation, sham, shill, Slideshow, t-lang, turnstile-plus, video, Zuo
+
+#lang racket/base
+(display &quot;Hello, world!\n&quot;)
+
+#lang racket
+&quot;Hello World&quot;
+
+;; Hello world in Racket
+
+#lang racket/base
+&quot;Hello, World!&quot;
+
+; Clean, simple and efficient code -- that&#39;s the power of Racket!
+; http://racket-lang.org/
+
+(define (bottles n more)
+  (printf &quot;~a bottle~a of beer~a&quot;
+          (case n [(0) &quot;no more&quot;] [(1) &quot;1&quot;] [else n])
+          (if (= n 1) &quot;&quot; &quot;s&quot;)
+          more))
+
+(for ([n (in-range 99 0 -1)])
+  (bottles n &quot; on the wall, &quot;)
+  (bottles n &quot;.\n&quot;)
+  (printf &quot;Take one down and pass it around, &quot;)
+  (bottles (sub1 n) &quot; on the wall.\n\n&quot;))
+
+(displayln &quot;No more bottles of beer on the wall, no more bottles of beer.&quot;)
+(displayln &quot;Go to the store and buy some more, 99 bottles of beer on the wall.&quot;)
+
+#lang typed/racket
+
+(: fact (Integer -&gt; Integer))
+(define (fact n)
+  (cond [(zero? n) 1]
+        [else (* n (fact (- n 1)))]))
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token display
+ Example
+row
+ Feature Homoiconicity
+ FeatureLink ../features/hasHomoiconicity.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+  (module nest racket
+     (provide (for-syntax meta-eggs)
+              (for-meta 1 meta-chicks)
+              num-eggs)
+     (define-for-syntax meta-eggs 2)
+     (define-for-syntax meta-chicks 3)
+     (define num-eggs 2))
+row
+ Feature Prefix Notation
+ FeatureLink ../features/hasPrefixNotation.html
+ Supported ✓
+ Token 
+ Example
+  (+ 1 2 3)
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  (mixin (interface-expr ...) (interface-expr ...)
+   class-clause ...)
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  ; https://docs.racket-lang.org/guide/macros.html
+  (define-syntax-rule (swap x y)
+  (let ([tmp x])
+    (set! x y)
+    (set! y tmp)))
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  (require (prefix-in tcp: racket/tcp))
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Symbol Tables
+ FeatureLink ../features/hasSymbolTables.html
+ Supported ✓
+ Token 
+ Example
+  ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

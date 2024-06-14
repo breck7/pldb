@@ -1,0 +1,74 @@
+import ../code/conceptPage.scroll
+
+id json-graph-format
+name json-graph-format
+appeared 2014
+tags jsonFormat
+website http://jsongraphformat.info/
+latestVersion 1.0.0
+aka jgf
+
+writtenIn json markdown yaml python
+repoStats
+ firstCommit 2014
+ commits 117
+ committers 12
+ files 22
+ newestCommit 2021
+country United States
+originCommunity https://github.com/jsongraph
+
+example
+ {
+     "graph": {
+         "directed": false,
+         "type": "graph type",
+         "label": "graph label",
+         "metadata": {
+             "user-defined": "values"
+         },
+         "nodes": [
+             {
+                 "id": "0",
+                 "type": "node type",
+                 "label": "node label(0)",
+                 "metadata": {
+                     "user-defined": "values"
+                 }
+             },
+             {
+                 "id": "1",
+                 "type": "node type",
+                 "label": "node label(1)",
+                 "metadata": {
+                     "user-defined": "values"
+                 }
+             }
+         ],
+         "edges": [
+             {
+                 "source": "0",
+                 "relation": "edge relationship",
+                 "target": "1",
+                 "directed": false,
+                 "label": "edge label",
+                 "metadata": {
+                     "user-defined": "values"
+                 }
+             }
+         ]
+     }
+ }
+
+githubRepo https://github.com/jsongraph/json-graph-specification
+ firstCommit 2014
+ stars 387
+ forks 35
+ subscribers 22
+ created 2014
+ updated 2022
+ description A proposal for representing graph structure (nodes / edges) in JSON.
+ issues 5
+
+domainName jsongraphformat.info
+ registered 2015

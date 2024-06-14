@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id podlite
+name Podlite
+appeared 2020
+creators Alexandr Zahatski
+tags textMarkup
+website https://podlite.org/
+spec https://podlite.org/specification
+latestVersion 0.0.38
+webRepl https://pod6.in/
+conceptDescription Podlite, a lightweight block-oriented markup language that's all about flexibility and ease of use.
+
+isOpenSource true
+writtenIn typescript json markdown javascript yaml css prolog
+relatedConcepts markdown scroll
+repoStats
+ firstCommit 2020
+ commits 818
+ committers 3
+ files 354
+ newestCommit 2024
+
+example
+  =begin pod
+  
+  =head1 A heading
+  
+  This is Podlite too. Specifically, this is a simple C<para> block
+  
+      $this = pod('also');  # Specifically, a code block
+  
+  =end pod
+
+githubRepo https://github.com/podlite/podlite
+ stars 37
+ forks 1
+ subscribers 3
+ created 2020
+ updated 2024
+ description Implementation of Podlite markup language
+ issues 1

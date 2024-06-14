@@ -1,0 +1,80 @@
+Arduino Programming Language
+============================
+
+Arduino Programming Language is a programming language created in 2005 by Massimo Banzi and David Cuartielles and Tom Igoe and Gianluca Martino and David Mellis.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Massimo%20Banzi
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Cuartielles
+ https://pldb.io/concepts/../lists/creators.html#q=Tom%20Igoe
+ https://pldb.io/concepts/../lists/creators.html#q=Gianluca%20Martino
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Mellis
+
+#104 on PLDB
+19 Years Old
+
+Arduino is an open-source hardware and software company, project and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical and digital world. Its products are licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL), permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially in preassembled form or as do-it-yourself (DIY) kits. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Arduino
+
+- Arduino Programming Language website
+ https://www.arduino.cc
+- Arduino Programming Language Wikipedia page
+ https://en.wikipedia.org/wiki/Arduino
+- Arduino Programming Language docs
+ https://docs.arduino.cc/
+- Arduino Programming Language first developed in Arduino
+- The  Google BigQuery Public Dataset GitHub snapshot shows 16k users using Arduino Programming Language in 20k repos on GitHub
+- There are 514,177 members in the Arduino Programming Language subreddit
+- Pygments supports syntax highlighting for Arduino Programming Language
+- Release Notes for Arduino Programming Language
+ https://www.arduino.cc/en/software/ReleaseNotes
+- Official Blog page for Arduino Programming Language
+ https://blog.arduino.cc/
+- Arduino Programming Language cheat sheet
+ https://github.com/liffiton/Arduino-Cheat-Sheet
+- Indeed.com has 598 matches for "arduino developer".
+- See also: (9 related languages)Atmel AVR, X86, C, Processing, BASIC Stamp, ARM, Java, Linux, IA-32
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(&quot;Hello World&quot;);
+}
+
+void loop() {
+
+}
+
+#define LED_PIN 13                  // Pin number attached to LED.
+
+void setup() {
+    pinMode(LED_PIN, OUTPUT);       // Configure pin 13 to be a digital output.
+}
+
+void loop() {
+    digitalWrite(LED_PIN, HIGH);    // Turn on the LED.
+    delay(1000);                    // Wait 1 second (1000 milliseconds).
+    digitalWrite(LED_PIN, LOW);     // Turn off the LED.
+    delay(1000);                    // Wait 1 second.
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Serial.println
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example

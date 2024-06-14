@@ -1,0 +1,33 @@
+Xidoc
+=====
+
+Xidoc is an open source text markup language created in 2021 by Adam Blažek.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Adam%20Bla%C5%BEek
+
+#1368 on PLDB
+3 Years Old
+
+git clone https://github.com/xigoi/xidoc
+
+A consistent markup language
+
+- Xidoc website
+ https://xidoc.nim.town/
+- Xidoc is developed on GitHub and has 33 stars
+- Xidoc first developed in Adam Blažek
+- Xidoc is written in JavaScript, Nim, HTML, C, CSS, SVG, Markdown, YAML, Bash
+
+[section HTML;
+  [p
+    HTML is such an [it ugly] language!
+    Each [code html; &lt;tag&gt;] has to be repeated twice.
+  ]
+]
+[section [LaTeX];
+  [p
+    [LaTeX] is great for writing math formulas like [$ e^{\tau i} = 1],
+    but it&#39;s painful to write with all those [code latex; \begin], [code latex; \end]
+    and different syntaxes for different things.
+  ]
+]

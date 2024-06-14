@@ -1,0 +1,61 @@
+import ../code/conceptPage.scroll
+
+id ligo
+name Ligo
+appeared 2019
+tags contractLanguage
+website https://ligolang.org/
+latestVersion 1.6.0
+webRepl https://ide.ligolang.org/
+aka jsligo
+aka cameligo
+aka pascaligo
+aka reasonligo
+
+writtenIn ocaml markdown javascript json typescript haskell bourne-shell svg yaml css ruby scss make dockerfile coq vim-script lisp mustache nix python html xml
+relatedConcepts solidity pascal reason ocaml
+monaco pascaligo
+repoStats
+ firstCommit 2016
+ commits 20823
+ committers 253
+ files 9497
+ newestCommit 2024
+country France
+originCommunity https://www.marigold.dev/projects
+
+cheatSheetUrl https://ligolang.org/docs/api/cheat-sheet
+
+keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
+gitlabRepo https://gitlab.com/ligolang/ligo
+
+lineCommentToken //
+multiLineCommentTokens (* *)
+booleanTokens true false
+
+hasStrings true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ // A comment
+hasBooleans true
+hasFunctions true
+hasConditionals true
+
+domainName ligolang.org
+ registered 2019
+ awisRank
+  2022 5947641
+
+githubLanguage CameLIGO
+ type programming
+ fileExtensions religo
+ group LigoLANG
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.religo
+ repos 0

@@ -1,0 +1,54 @@
+Noweb
+=====
+
+Noweb is a text markup language created in 1989 by Norman Ramsey.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Norman%20Ramsey
+
+#1093 on PLDB
+35 Years Old
+
+git clone https://github.com/nrnrnr/noweb
+
+The noweb tool for literate programming
+
+- Noweb website
+ https://www.cs.tufts.edu/~nr/noweb/
+- Noweb Wikipedia page
+ https://en.wikipedia.org/wiki/Noweb
+- Noweb is developed on GitHub and has 177 stars
+- Noweb first developed in Tufts University
+- Noweb is written in Bourne shell, Make, Tex, C, Perl, awk, Korn shell, C shell, Lisp, HTML
+
+\section{Hello world}
+
+Today I awoke and decided to write
+some code, so I started to write Hello World in \textsf C.
+
+&lt;&lt;hello.c&gt;&gt;=
+/*
+  &lt;&lt;license&gt;&gt;
+*/
+#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[]) {
+  printf(&quot;Hello World!\n&quot;);
+  return 0;
+}
+@
+\noindent \ldots then I did the same in PHP.
+
+&lt;&lt;hello.php&gt;&gt;=
+&lt;?php
+  /*
+  &lt;&lt;license&gt;&gt;
+  */
+  echo &quot;Hello world!\n&quot;;
+?&gt;
+@
+\section{License}
+Later the same day some lawyer reminded me about licenses.
+So, here it is:
+
+&lt;&lt;license&gt;&gt;=
+This work is placed in the public domain.

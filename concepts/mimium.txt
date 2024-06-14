@@ -1,0 +1,33 @@
+mimium
+======
+
+mimium is a programming language created in 2019 by Tomoya Matsuura.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tomoya%20Matsuura
+
+#903 on PLDB
+5 Years Old
+
+git clone https://github.com/mimium-org/mimium
+
+mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
+
+- mimium website
+ https://mimium.org
+- mimium is developed on GitHub and has 251 stars
+- mimium first developed in Kyushu University
+- mimium is written in C++, CMake, Markdown, YAML, Lex, Python, Dockerfile, Make, reStructuredText, SVG
+- mimium on Twitter
+ https://twitter.com/mimium-org
+- mimium.org was registered in 2020
+- Read more about mimium on the web: 1.
+ https://dblp.org/rec/conf/icfp/MatsuuraJ21
+
+// A minimal example below generates a sinewave of 440Hz:
+// minimal.mmm
+twopi = 3.141595*2
+sr = 48000
+fn dsp(){
+    out = sin(now * 440 * twopi / sr)
+    return (out,out)
+}

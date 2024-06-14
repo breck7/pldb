@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id linux-kernel-module
+name Linux Kernel Module
+appeared 1996
+tags application
+conceptDescription As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
+
+fileExtensions ko
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity Linux Kernel Organization, Inc
+reference https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+
+example
+ /*
+  * hello−1.c − The simplest kernel module.
+  */
+ #include <linux/module.h> /* Needed by all modules */
+ #include <linux/kernel.h> /* Needed for KERN_INFO */
+ int init_module(void)
+ {
+  printk(KERN_INFO "Hello world 1.\n");
+  /*
+  * A non 0 return means init_module failed; module can't be loaded.
+  */
+  return 0;
+ }
+ void cleanup_module(void)
+ {
+  printk(KERN_INFO "Goodbye world 1.\n");
+ }
+example
+ fs/mbcache.ko
+ fs/mbcache.o
+
+githubLanguage Linux Kernel Module
+ fileExtensions mod
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope none

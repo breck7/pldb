@@ -1,0 +1,89 @@
+OpenVera
+========
+
+OpenVera is a programming language created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1212 on PLDB
+23 Years Old
+
+OpenVera is a hardware verification language developed and managed by Synopsys. OpenVera is an interoperable, open hardware verification language for testbench creation. The OpenVera language was used as the basis for the advanced verification features in the IEEE Std. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/OpenVera
+
+- OpenVera Wikipedia page
+ https://en.wikipedia.org/wiki/OpenVera
+- OpenVera first developed in Systems Science Inc
+- See also: (1 related languages)SystemVerilog
+- Read more about OpenVera on the web: 1.
+ http://wiki.c2.com/?VeraLanguage
+
+// This Examples shows how random
+// Test vectors is generated
+
+// This is base object
+class m_base_o {
+  rand bit [7:0] addr ;
+  rand bit [7:0] data ;
+  rand bit       rd_wr;
+
+  constraint c1 {
+    addr &gt; 0;
+    data &gt; 0;
+  }
+
+  task print() {
+    printf (&quot;-------------------------\n&quot;);
+    printf (&quot;Address : %x\n&quot;,addr);
+    printf (&quot;Data    : %x\n&quot;,data);
+    printf (&quot;Write   : %x\n&quot;,rd_wr);
+ }
+}
+
+// This is transcation generator
+class txgen {
+  m_base_o base_ob;
+  integer num_cmds;
+  integer i,s;
+
+  // Method to generate commands
+  task gen_tx () {
+     base_ob = new();
+    // Generate num_cmds commands
+    for ( i = 0; i &lt; num_cmds; i ++) {
+      s = base_ob.randomize();
+      base_ob.print();
+    }
+  }
+}
+
+// Top level for any vera testbench
+program memory {
+   txgen tx;
+   tx = new();
+   tx.num_cmds = 5;
+   tx.gen_tx();
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

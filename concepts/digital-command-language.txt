@@ -1,0 +1,40 @@
+DIGITAL Command Language
+========================
+
+DIGITAL Command Language is a programming language created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1541 on PLDB
+27 Years Old
+4k Repos
+
+DIGITAL Command Language (DCL) is the standard command language adopted by most of the operating systems (OSs) that were sold by the former Digital Equipment Corporation (which was acquired by Compaq, which was in turn acquired by Hewlett-Packard). DCL had its roots in the IAS, TOPS-20, and RT-11 OSs and was implemented as a standard across most of Digital's OSs, notably RSX-11, but took its most powerful form in the OpenVMS OS. Written when the programming language Fortran was in heavy use, DCL is a scripting language supporting several datatypes, including strings, integers, bit arrays, arrays and booleans, but not floating point numbers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/DIGITAL_Command_Language
+
+- DIGITAL Command Language Wikipedia page
+ https://en.wikipedia.org/wiki/DIGITAL_Command_Language
+- There are at least 3,602 DIGITAL Command Language repos on GitHub
+- DIGITAL Command Language first developed in Digital Equipment Corporation
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using DIGITAL Command Language in 4k repos on GitHub
+- See also: (4 related languages)PowerShell, Fortran, Unix, ISBN
+
+$! Compiling with VAXC is said to work, but it requires the usual cruft
+$! (vaxcrtl and all), and to avoid hair we don&#39;t supply said cruft here.
+$ CC/DECC/PREFIX=all VMSBACKUP.C/DEFINE=(HAVE_MT_IOCTLS=0,HAVE_UNIXIO_H=1)
+$ CC/DECC/PREFIX=all DCLMAIN.C
+$! Probably we don&#39;t want match as it probably doesn&#39;t implement VMS-style
+$! matching, but I haven&#39;t looking into the issues yet.
+$ CC/DECC/PREFIX=all match
+$ LINK/exe=VMSBACKUP.EXE -
+vmsbackup.obj,dclmain.obj,match.obj,sys$input/opt
+identification=&quot;VMSBACKUP4.1.1&quot;
+
+$ i = 1
+$ variable&#39;i&#39; = &quot;blue&quot;
+$ i = 2
+$ variable&#39;i&#39; = &quot;green&quot;
+$ j = 1
+$ color = variable&#39;j&#39;
+$ rainbow&#39;color&#39; = &quot;red&quot;
+$ color = variable&#39;i&#39;
+$ rainbow&#39;color&#39; = &quot;yellow&quot;

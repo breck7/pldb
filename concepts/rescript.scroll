@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id rescript
+name Rescript
+appeared 2020
+tags pl
+website https://rescript-lang.org/
+webRepl https://rescript-lang.org/try
+conceptDescription ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
+
+compilesTo javascript
+clocExtensions res resi
+
+example
+ module Button = {
+   @react.component
+   let make = (~count: int) => {
+     let times = switch count {
+     | 1 => "once"
+     | 2 => "twice"
+     | n => Belt.Int.toString(n) ++ " times"
+     }
+     let msg = "Click me " ++ times
+ 
+     <button> {msg->React.string} </button>
+   }
+ }
+twitter https://twitter.com/rescriptlang
+leachim6 ReScript
+ filepath r/ReScript.res
+ fileExtensions res
+ example
+  Js.log("Hello World")
+
+lineCommentToken //
+printToken Js.log
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName rescript-lang.org
+ registered 2020
+ awisRank
+  2022 712029
+
+githubBigQuery ReScript
+ repos 54
+ users 52
+
+githubLanguage ReScript
+ type programming
+ fileExtensions res
+ interpreters ocaml
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.rescript
+ repos 1604

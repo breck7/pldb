@@ -1,0 +1,127 @@
+UrWeb
+=====
+
+UrWeb is an open source programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#532 on PLDB
+16 Years Old
+83 Repos
+
+git clone https://github.com/urweb/urweb
+
+The Ur/Web programming language
+
+- UrWeb website
+ http://www.impredicative.com/ur/
+- UrWeb is developed on GitHub and has 755 stars
+- There are at least 83 UrWeb repos on GitHub
+- UrWeb is written in Standard ML, Python, C, Lisp, Make, Bourne shell, M4, Coq, JavaScript, Nix, CSS, HTML, Tex, Lex, Markdown, Lua, YAML, SQL
+- The  Google BigQuery Public Dataset GitHub snapshot shows 62 users using UrWeb in 64 repos on GitHub
+- GitHub supports syntax highlighting for UrWeb
+
+open Parse.String
+
+val digit = satisfy isdigit
+
+val decimal_of_len n =
+    ds &lt;- count n digit;
+    return (List.foldl (fn d acc =&gt; 10*acc + ((ord d)-(ord #&quot;0&quot;))) 0 ds)
+
+val date =
+    y &lt;- decimal_of_len 4;
+    char&#39; #&quot;-&quot;;
+    m &lt;- decimal_of_len 2;
+    char&#39; #&quot;-&quot;;
+    d &lt;- decimal_of_len 2;
+    if m &gt; 0 &amp;&amp; m &lt;= 12 then
+        return {Year=y, Month=(Datetime.intToMonth (m-1)), Day=d}
+    else
+        fail
+
+(* We parse fractions of a second, but ignore them since Datetime
+   doesn&#39;t permit representing them. *)
+val time =
+    h &lt;- decimal_of_len 2;
+    char&#39; #&quot;:&quot;;
+    m &lt;- decimal_of_len 2;
+    s &lt;- maybe (char&#39; #&quot;:&quot;;
+                s &lt;- decimal_of_len 2;
+                maybe&#39; (char&#39; #&quot;.&quot;; skipWhile isdigit);
+                return s);
+    return {Hour=h, Minute=m, Second=Option.get 0 s}
+
+val timezone_offset =
+    let val zulu = char&#39; #&quot;Z&quot;; return 0
+        val digits = decimal_of_len 2
+        val sign = or (char&#39; #&quot;+&quot;; return 1)
+                      (char&#39; #&quot;-&quot;; return (-1))
+    in
+        zulu `or` (s &lt;- sign;
+                   h &lt;- digits;
+                   m &lt;- (maybe&#39; (char&#39; #&quot;:&quot;); or digits (return 0));
+                   return (s*(h*60+m)))
+    end
+
+val datetime_with_tz =
+    d &lt;- date; char&#39; #&quot;T&quot;; t &lt;- time;
+    tz &lt;- timezone_offset;
+    return (d ++ t ++ {TZOffsetMinutes=tz})
+
+val datetime =
+    d &lt;- datetime_with_tz;
+    return (d -- #TZOffsetMinutes)
+
+fun process v =
+    case parse (d &lt;- datetime_with_tz; eof; return d) v of
+        Some r =&gt;
+        let
+            val {Year=year,Month=month,Day=day,
+                 Hour=hour,Minute=minute,Second=second} =
+                Datetime.addMinutes (r.TZOffsetMinutes) (r -- #TZOffsetMinutes)
+            fun pad x =
+                if x &lt; 10 then &quot;0&quot; `strcat` show x else show x
+        in
+            &lt;xml&gt;{[pad hour]}:{[pad minute]}:{[pad second]} {[month]} {[day]}, {[year]}&lt;/xml&gt;
+        end
+      | None =&gt; &lt;xml&gt;none&lt;/xml&gt;
+
+fun main () : transaction page =
+    input &lt;- source &quot;2012-01-01T01:10:42Z&quot;;
+    return &lt;xml&gt;
+      &lt;body&gt;
+        &lt;label&gt;
+          Enter an
+          &lt;a href=&quot;https://en.wikipedia.org/wiki/ISO_8601&quot;&gt;ISO 8601&lt;/a&gt;
+          datetime here:
+          &lt;ctextbox source={input} /&gt;
+        &lt;/label&gt;
+        &lt;ul&gt;&lt;dyn signal={v &lt;- signal input; return (process v)} /&gt;&lt;/ul&gt;
+      &lt;/body&gt;
+    &lt;/xml&gt;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* A comment
+  *)
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,104 @@
+IDL
+===
+
+IDL, aka Interactive Data Language, is a programming language created in 1977 by David Stern.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Stern
+
+#120 on PLDB
+47 Years Old
+2k Repos
+
+IDL, short for Interactive Data Language, is a programming language used for data analysis. It is popular in particular areas of science, such as astronomy, atmospheric physics and medical imaging. IDL shares a common syntax with PV-Wave and originated from the same codebase, though the languages have subsequently diverged in detail. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/IDL_(programming_language)
+
+- IDL website
+ http://www.exelisvis.com/ProductsServices/IDL.aspx
+- IDL Wikipedia page
+ https://en.wikipedia.org/wiki/IDL_(programming_language)
+- IDL docs
+ https://www.l3harrisgeospatial.com/docs/using_idl_home.html
+- There are at least 2,337 IDL repos on GitHub
+- IDL first developed in L3Harris Geospatial Solutions, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using IDL in 5k repos on GitHub
+- Explore IDL snippets on Rosetta Code
+- IDL on HOPL
+ https://hopl.info/showlanguage.prx?exp=760
+- IDL appears in the TIOBE Index
+- ANTLR grammar for IDL
+- CodeMirror package for syntax highlighting IDL
+- Pygments supports syntax highlighting for IDL
+- GitHub supports syntax highlighting for IDL
+- There is 1 Jupyter Kernel for IDL
+- See also: (11 related languages)GNU Data Language, PV-Wave, Fortran, C, Unix, Smalltalk, MATLAB, NumPy, Python, Perl Data Language, Perl
+- Read more about IDL on the web: 1.
+ https://www.harrisgeospatial.com/Software-Technology/IDL
+- 19 languages in PLDB linking to IDL: cloc, Deno, Eiffel, Emscripten, FLEX, Gradle, Halide, HHVM, idyll, J, JSON-LD, Kotlin, MongoDB, Node.js, PostgreSQL, Pygments, Python, Racket, Ruby
+
+print, &quot;Hello World&quot;
+end
+
+IDL&gt; ; Hello World in IDL (Interactive Data Language)
+IDL&gt; print, &quot;Hello World&quot;
+
+MODULE mg_analysis
+DESCRIPTION Tools for analysis
+VERSION 1.0
+SOURCE mgalloy
+BUILD_DATE January 18, 2011
+
+FUNCTION MG_ARRAY_EQUAL      2 2 KEYWORDS
+FUNCTION MG_TOTAL            1 1
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

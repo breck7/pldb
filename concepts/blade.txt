@@ -1,0 +1,56 @@
+Blade
+=====
+
+Blade is a template language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#900 on PLDB
+13 Years Old
+41k Repos
+
+- Blade website
+ https://laravel.com/docs/5.7/blade
+- There are at least 41,201 Blade repos on GitHub
+- Blade first developed in Laravel
+- The  Google BigQuery Public Dataset GitHub snapshot shows 324 users using Blade in 372 repos on GitHub
+- GitHub supports syntax highlighting for Blade
+- 2 languages in PLDB linking to Blade: Ace Editor, cloc
+
+&lt;!-- Stored in resources/views/layouts/app.blade.php --&gt;
+
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;App Name - @yield(&#39;title&#39;)&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        @section(&#39;sidebar&#39;)
+            This is the master sidebar.
+        @show
+
+        &lt;div class=&quot;container&quot;&gt;
+            @yield(&#39;content&#39;)
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;@yield(&#39;title&#39;, &#39;We love GitHub&#39;)&lt;/title&gt;
+    @stack(&#39;scripts&#39;)
+    @stack(&#39;styles&#39;)
+&lt;/head&gt;
+&lt;body&gt;
+    @include(&#39;partials.nav&#39;)
+
+    @yield(&#39;content&#39;)
+
+    &lt;ul&gt;
+        @foreach($foo as $bar)
+        &lt;li&gt;{{ $bar }}&lt;/li&gt;
+        @endforeach
+    &lt;/ul&gt;
+
+    {!! $raw_content !!}
+&lt;/body&gt;
+&lt;/html&gt;

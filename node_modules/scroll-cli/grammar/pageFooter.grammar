@@ -1,0 +1,62 @@
+pageFooterParser
+ cruxFromId
+ description A footer for your page.
+ extends abstractScrollParser
+ string hakon
+  .pageFooter
+   margin-top 8px
+   padding-top 8px
+   text-align center
+   svg
+    width 30px
+    height 30px
+    fill rgba(204,204,204, .5)
+    padding 0 7px
+    &:hover
+     fill #333
+  .pageFooterScrollLink
+   display block
+   font-family Verdana
+   font-weight 100
+   margin .5em
+   color rgba(204,204,204,.5)
+   &:hover
+    color #333
+    text-decoration none
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  get css() {
+    const hakonParser = this.root.hakonParser
+    return new hakonParser(this.hakon).compile()
+  }
+  compile() {
+   const file = this.parent.file
+   const { SVGS, SCROLL_VERSION, viewSourceUrl } = file
+   const closeContainerTag = "</div>"
+   return (
+    closeContainerTag + `<style>${this.css}</style>` +
+    file.compileStumpCode(`p
+   class scrollViewSource doNotPrint
+   a View source
+    href ${viewSourceUrl}
+  div
+   class pageFooter doNotPrint
+   a ${SVGS.email}
+    href mailto:${file.email}
+   a ${SVGS.download}
+    href ${file.downloadUrl}
+   a ${SVGS.git}
+    href ${file.git}
+   a Built with Scroll v${SCROLL_VERSION}
+    href https://scroll.pub
+    class pageFooterScrollLink
+    style display:block; margin: .5em;`)
+   )
+  }
+
+gazetteFooterParser
+ extends pageFooterParser
+ boolean isDeprecated true
+ description DEPRECATED! Use "pageFooter" instead.

@@ -1,0 +1,69 @@
+import ../code/conceptPage.scroll
+
+id recfiles
+name Recfiles
+appeared 2009
+creators Jose E. Marchesi
+tags dataNotation
+website https://www.gnu.org/software/recutils/
+latestVersion v1.7.91
+conceptDescription GNU recutils is a set of tools and libraries to access human-editable, text-based databases called recfiles. The data is stored as a sequence of records, each record containing an arbitrary number of named fields. Advanced capabilities usually found in other data storage systems are supported: data types, data integrity (keys, mandatory fields, etc.) as well as the ability of records to refer to other records (sort of foreign keys). Despite its simplicity, recfiles can be used to store medium-sized databases.
+
+writtenIn c bourne-shell make sed tex css lex m4 yacc python
+demoVideo https://fscons.org/videos/2011/gnu-recutils-changed-title-and-subject.webm
+fileExtensions rec
+repoStats
+ firstCommit 2009
+ newestCommit 2023
+ commits 1259
+ committers 23
+ files 261
+country United States
+originCommunity Free Software Foundation
+reference https://www.gnu.org/software/recutils/
+
+example
+ %rec: Book
+ %mandatory: Title
+ %type: Location enum loaned home unknown
+ %doc:
+ + A book in my personal collection.
+ 
+ Title: GNU Emacs Manual
+ Author: Richard M. Stallman
+ Publisher: FSF
+ Location: home
+ 
+ Title: The Colour of Magic
+ Author: Terry Pratchett
+ Location: loaned
+ 
+ Title: Mio Cid
+ Author: Anonymous
+ Location: home
+ 
+ Title: chapters.gnu.org administration guide
+ Author: Nacho Gonzalez
+ Author: Jose E. Marchesi
+ Location: unknown
+ 
+ Title: Yeelong User Manual
+ Location: home
+
+gitRepo https://git.savannah.gnu.org/git/recutils.git
+
+lineCommentToken #
+
+hasComments true
+ # Blah blah…
+ # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Recfiles
+ summary recfiles is a file format for human-editable, plain text databases. Databases using this file format can be edited using any text editor. recfiles allow for basic relational database operations, typing, auto-incrementing, as well as a simple join operation. Recutils is a collection of tools, like recfmt, recsel, and rec2csv used to work with recfile databases. Various software libraries support the format.
+ backlinksCount 1
+ pageId 63063548
+ dailyPageViews -1
+ appeared 1964

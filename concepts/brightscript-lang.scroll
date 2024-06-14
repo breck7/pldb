@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id brightscript-lang
+name BrightScript
+appeared 2008
+tags pl
+website http://docs.brightsign.biz/display/DOC/BrightScript
+conceptDescription BrightScript is a powerful scripting language for building media and networked applications for embedded devices. This language features integrated support for a lightweight library of BrightScript objects, which are used to expose the API of the platform (device) that is running BrightScript. The BrightScript language connects generalized script functionality with underlying components for networking, media playback, UI screens, and interactive interfaces; BrightScript is optimized for generating user-friendly applications with minimal programmer effort. Now part of Roku.
+
+centralPackageRepositoryCount 0
+country Australia
+originCommunity Atlassian
+
+example
+ REM
+ REM The game of Snake
+ REM demonstrates BrightScript programming concepts
+ REM June 22, 2008
+  
+ REM
+ REM Every BrightScript program must have a single Main()
+ REM
+  
+ Sub Main()
+  
+     game_board=newGameBoard()
+  
+     While true
+         game_board.SetSnake(newSnake(game_board.StartX(), game_board.StartY()))
+         game_board.Draw()
+         game_board.EventLoop()
+         if game_board.GameOver() then ExitWhile
+     End While
+ End Sub

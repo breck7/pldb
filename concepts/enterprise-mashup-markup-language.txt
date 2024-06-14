@@ -1,0 +1,25 @@
+Enterprise Mashup Markup Language
+=================================
+
+Enterprise Mashup Markup Language is a programming language created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3574 on PLDB
+23 Years Old
+
+EMML, or Enterprise Mashup Markup Language, is an XML markup language for creating enterprise mashups, which are software applications that consume and mash data from variety of sources, often performing logical or mathematical operations as well as presenting data. Mashed data produced by enterprise mashups are presented in graphical user interfaces as mashlets, widgets, or gadgets. EMML can also be considered a declarative mashup domain-specific language (DSL). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language
+
+- Enterprise Mashup Markup Language Wikipedia page
+ https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language
+- Enterprise Mashup Markup Language first developed in JackBe Corporation
+- See also: (9 related languages)XML, Eclipse, JSON, JavaScript, JRuby, Groovy, XQuery, HTML, XPath
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;![CDATA[
+            var r = new String(result)
+            var ar = r.split(&quot;=&quot;);
+            auth = ar[ar.length-1];
+            auth = auth.slice(0, -1)
+            ]]&gt;
+&lt;/script&gt;

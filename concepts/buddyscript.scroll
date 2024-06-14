@@ -1,0 +1,44 @@
+import ../code/conceptPage.scroll
+
+id buddyscript
+name BuddyScript
+appeared 2002
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity ActiveBuddy
+
+helloWorldCollection BuddyScript
+ # Hello World in BuddyScript
+ 
+ + =AnythingPerfect
+ 
+   - Hello, world!
+ 
+leachim6 BuddyScript
+ filepath b/BuddyScript
+ example
+  =AnythingPerfect
+  
+    - Hello World
+  
+
+lineCommentToken #
+
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+
+wikipedia https://en.wikipedia.org/wiki/BuddyScript
+ related python
+ summary BuddyScript is a domain-specific language originally developed by ActiveBuddy. The main purpose of the language is to be able to process natural language queries and return results in natural language form. It was the core language for the SmarterChild and Windows Live Agents which were IM/Web based robots. As the Windows Live Agents SDK has been retired by Microsoft, the future of BuddyScript is uncertain. Like Python BuddyScript uses whitespace indentation to delimit blocks (also known as off-side rule).
+ dailyPageViews 3
+ pageId 19855193
+ created 2008
+ backlinksCount 5
+ revisionCount 17
+ appeared 2009

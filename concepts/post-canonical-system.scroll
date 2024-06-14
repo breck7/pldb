@@ -1,0 +1,25 @@
+import ../code/conceptPage.scroll
+
+id post-canonical-system
+name Post production
+appeared 1941
+creators Emil Post
+tags grammarLanguage
+
+country United States
+originCommunity Stanford University
+reference http://www-formal.stanford.edu/jmc/mcc59.pdf
+
+example
+ Alphabet: {[, ]}
+ Initial word: []
+ Production rules:
+ (1)       $ → [$]
+ (2)       $ → $$
+ (3)       $1$2 → $1[]$2
+
+wikipedia https://en.wikipedia.org/wiki/Post_canonical_system
+
+hopl https://hopl.info/showlanguage.prx?exp=2474
+
+isbndb 0

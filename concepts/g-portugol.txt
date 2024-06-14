@@ -1,0 +1,28 @@
+G-Portugol
+==========
+
+G-Portugol is an open source programming language created in 2005 by Thiago Silva.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Thiago%20Silva
+
+#1676 on PLDB
+19 Years Old
+
+git clone https://github.com/rafaelgou/gpt
+
+G-Portugol - compilador e interpretador - Fork do SourceForge - http://gpt.berlios.de/site/
+
+- G-Portugol is developed on GitHub and has 4 stars
+- G-Portugol first developed in https://sourceforge.net/projects/gpt.berlios
+- G-Portugol is written in C++, Make, Bourne shell, M4, Markdown
+- G-Portugol Ubuntu package
+ https://packages.ubuntu.com/jammy/gpt
+- G-Portugol appears in the Quine Relay project
+- Read more about G-Portugol on the web: 1.
+ https://pt.wikipedia.org/wiki/G-Portugol
+
+algoritmo OlaMundo;
+
+início
+   imprima(&quot;Olá, Mundo!&quot;);
+fim

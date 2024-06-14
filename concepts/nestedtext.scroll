@@ -1,0 +1,69 @@
+import ../code/conceptPage.scroll
+
+id nestedtext
+name NestedText
+appeared 2020
+creators Ken Kundert
+tags dataNotation
+website https://nestedtext.org
+
+writtenIn python restructuredtext yaml ini toml json make xml bourne-shell csv css
+relatedConcepts yaml
+repoStats
+ firstCommit 2020
+ commits 502
+ committers 8
+ files 102
+ newestCommit 2024
+country United States
+originCommunity https://nurdletech.com
+
+pygmentsHighlighter NestedText
+ filename configs.py
+ fileExtensions nt
+example
+ # Contact information for our officers
+ 
+ Katheryn McDaniel:
+     position: president
+     address:
+         > 138 Almond Street
+         > Topeka, Kansas 20697
+     phone:
+         cell: 1-210-555-5297
+         home: 1-210-555-8470
+             # Katheryn prefers that we always call her on her cell phone.
+     email: KateMcD@aol.com
+     additional roles:
+         - board member
+ 
+ Margaret Hodge:
+     position: vice president
+     address:
+         > 2586 Marigold Lane
+         > Topeka, Kansas 20682
+     phone: 1-470-555-0398
+     email: margaret.hodge@ku.edu
+     additional roles:
+         - new membership task force
+         - accounting task force
+
+githubRepo https://github.com/KenKundert/nestedtext
+ firstCommit 2020
+ stars 270
+ forks 11
+ subscribers 9
+ created 2020
+ updated 2022
+ description Human Readable and Writable Data Interchange Format
+ issues 3
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName nestedtext.org

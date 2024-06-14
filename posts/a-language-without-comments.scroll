@@ -1,0 +1,36 @@
+author https://github.com/breck7 Breck Yunits
+date 2022.07.14
+groups All
+title A Language Without Comments
+
+import postHeader.scroll
+printTitle
+printAuthor
+mediumColumns 1
+
+image a-language-without-comments.png
+
+JSON is the _only_ popular language in PLDB without comments. JSON supports neither line comments nor multiline comments.
+ dateline
+ link BASE_URL/concepts/json.html JSON
+ link ../features/hasLineComments.html line comments
+ link ../features/hasMultiLineComments.html multiline comments
+
+endSnippet
+
+## JSON originally had comments
+Douglas Crockford explained his unique design decision in 2012. He had comments originally but removed them to prevent ecosystem fragmentation:
+quote
+ I removed comments from JSON because I saw people were using them to hold parsing directives, a practice which would have destroyed interoperability. I know that the lack of comments makes some people sad, but it shouldn't.
+ 
+ Suppose you are using JSON to keep configuration files, which you would like to annotate. Go ahead and insert all the comments you like. Then pipe it through JSMin before handing it to your JSON parser.
+ 
+ - Douglas Crockford - April 30, 2012 - <a href="https://web.archive.org/web/20141227005220/https://plus.google.com/+DouglasCrockfordEsq/posts/RK8qyGVaGSr">Source</a>
+
+## Some Supersets of JSON have comments
+A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
+ link BASE_URL/concepts/json5.html JSON5
+ link BASE_URL/concepts/hjson.html Hjson
+ link BASE_URL/concepts/json-with-comments.html JSON with Comments
+
+import footer.scroll

@@ -1,0 +1,72 @@
+import ../code/conceptPage.scroll
+
+id ron
+name Ron
+appeared 2015
+creators Juniper Tyree
+tags dataNotation
+latestVersion v0.8.1
+standsFor Rusty Object Notation
+conceptDescription RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+
+writtenIn rust markdown yaml toml
+repoStats
+ firstCommit 2015
+ commits 668
+ committers 72
+ files 116
+ newestCommit 2024
+country Finland
+originCommunity https://github.com/ron-rs
+
+example
+ GameConfig( // optional struct name
+     window_size: (800, 600),
+     window_title: "PAC-MAN",
+     fullscreen: false,
+     
+     mouse_sensitivity: 1.4,
+     key_bindings: {
+         "up": Up,
+         "down": Down,
+         "left": Left,
+         "right": Right,
+         
+         // Uncomment to enable WASD controls
+         /*
+         "W": Up,
+         "A": Down,
+         "S": Left,
+         "D": Right,
+         */
+     },
+     
+     difficulty_options: (
+         start_difficulty: Easy,
+         adaptive: false,
+     ),
+ )
+
+githubRepo https://github.com/ron-rs/ron
+ firstCommit 2015
+ stars 2045
+ forks 98
+ subscribers 27
+ created 2015
+ updated 2022
+ description Rusty Object Notation
+ issues 26
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+isbndb 0

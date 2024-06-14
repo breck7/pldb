@@ -1,0 +1,96 @@
+PowerBuilder
+============
+
+PowerBuilder is a programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#343 on PLDB
+14 Years Old
+747 Repos
+
+PowerBuilder is an integrated development environment owned by SAP since the acquisition of Sybase in 2010.  On July 5, 2016, SAP and Appeon entered into an agreement whereby Appeon would be responsible for developing, selling, and supporting PowerBuilder.PowerBuilder has been in use since 1991, peaking around 1998 with around 100,000 users. While PowerBuilder's market share has declined over the years, many applications created with it are still in use today. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PowerBuilder
+
+- PowerBuilder Wikipedia page
+ https://en.wikipedia.org/wiki/PowerBuilder
+- There are at least 747 PowerBuilder repos on GitHub
+- PowerBuilder first developed in SAP SE
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14 users using PowerBuilder in 17 repos on GitHub
+- Explore PowerBuilder snippets on Rosetta Code
+- See also: (4 related languages)C#, JSON, XML, SQL
+- 1 languages in PLDB linking to PowerBuilder: Serious
+
+// The MIT License (MIT)
+
+// Copyright (c) 2016 dario ureña
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the &quot;Software&quot;), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+// Source: https://github.com/darioaxel/PowerScriptToKDMTransformer/blob/173c3949d5684150c34f7405f0689310eade0362/resources/basics/TestPBT.pbt
+
+Save Format v3.0(19990112)
+@begin Projects
+ 0 &quot;myproject\\myprojectlib.pbl&quot;;
+@end;
+appname &quot;myproject&quot;;
+applib &quot;myproject\\myproject.pbl&quot;;
+LibList &quot;myproject\\myproject.pbl;myproject\\lib\\logger\\logger.pbl;myproject\\lib\\payroll\\payroll.pbl;myproject\\lib\\contract\\contract.pbl;myproject\\lib\\common\\common.pbl;&quot;;
+type &quot;pb&quot;;
+
+MessageBox(&quot;Hello World&quot;)
+
+UPDATE my_employee SET STATUS = &#39;A&#39;;
+ IF sqlca.sqlcode&lt;&gt;0 THEN ...
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token MessageBox
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

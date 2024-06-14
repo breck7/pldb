@@ -1,0 +1,106 @@
+Vim script
+==========
+
+Vim script is an open source programming language created in 1991.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#427 on PLDB
+33 Years Old
+4k Repos
+
+Try now: Riju
+
+Vim (; a contraction of Vi IMproved) is a clone, with additions, of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Vim_script
+
+- Vim script Wikipedia page
+ https://en.wikipedia.org/wiki/Vim_script
+- There are at least 3,544 Vim script repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Vim script in 11k repos on GitHub
+- Pygments supports syntax highlighting for Vim script
+- GitHub supports syntax highlighting for Vim script
+- See also: (17 related languages)C, Unix, Linux, iOS, Android, vi, Tcl, Lua, Perl, Python, Racket, Ruby, Regular Expressions, Gzip, FTP, HTTP, Unicode
+- 97 languages in PLDB linking to Vim script: Ad-hoc, ana, Austral, BQN, Bucklescript, C2, Caramel, Carbon, Catala, Céu, Chapel, Ć, Claro, clay, Click, crmsh, Croc, Cryptol, CSpydr, Cyber, Dale, dedukti, Dern, Differential Datalog, Djot, dllup, egel, elymas, Factor, Felix, Flow9, GAP, GN, gentee, hakaru, HHVM, hobbes, huginn, hurl, icarus, ink-lang, invokator, Jakt, Jank, JFlex, kitlang, kitten, Koka, lambda-zero, Ligo, Lil, Linux, Logica, mal, mirth, Mu, mycroft, mythryl, nesC, newclay, NewLisp, NGS, Ninja, Nit, Node.js, noulith, ObjectScript, Opa, Opal, Oxyl, Pan, penrose, GNU Poke, Pygments, PyTorch, Qore, Ragel, redprl, RicScript, rosie, Simit, sixten, skip, Semantic Patch Language, Star, Sugar, Swift, truck, V, v8, Vimwiki, Virgil, Wart, WLambda, xsv-app, xxl, yeti
+
+:echo &quot;Hello, world!&quot;
+
+echo &quot;Hello World&quot;
+
+&quot; Name:     Solarized vim colorscheme
+&quot; Author:   Ethan Schoonover &lt;es@ethanschoonover.com&gt;
+&quot; URL:      http://ethanschoonover.com/solarized
+&quot;           (see this url for latest release &amp; screenshots)
+&quot; License:  OSI approved MIT license (see end of this file)
+&quot; Created:  In the middle of the night
+&quot; Modified: 2011 May 05
+&quot;
+&quot; Usage &quot;{{{
+&quot;
+&quot; ---------------------------------------------------------------------
+&quot; ABOUT:
+&quot; ---------------------------------------------------------------------
+&quot; Solarized is a carefully designed selective contrast colorscheme with dual
+&quot; light and dark modes that runs in both GUI, 256 and 16 color modes.
+&quot;
+&quot; See the homepage above for screenshots and details.
+&quot;
+&quot; ---------------------------------------------------------------------
+&quot; OPTIONS:
+&quot; ---------------------------------------------------------------------
+&quot; See the &quot;solarized.txt&quot; help file included with this colorscheme (in the
+&quot; &quot;doc&quot; subdirectory) for information on options, usage, the Toggle Background
+&quot; function and more. If you have already installed Solarized, this is available
+&quot; from the Solarized menu and command line as &quot;:help solarized&quot;
+&quot;
+&quot; ---------------------------------------------------------------------
+&quot; INSTALLATION:
+&quot; ---------------------------------------------------------------------
+&quot; Two options for installation: manual or pathogen
+&quot;
+&quot; MANUAL INSTALLATION OPTION:
+&quot; ---------------------------------------------------------------------
+&quot;
+&quot; 1.  Download the solarized distribution (available on the homepage above)
+&quot;     and unarchive the file.
+&quot; 2.  Move `solarized.vim` to your `.vim/colors` directory.
+&quot; 3.  Move each of the files in each subdirectories to the corresponding .vim
+&quot;     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload
+&quot;     directory as .vim/autoload/togglebg.vim).
+&quot;
+&quot; RECOMMENDED PATHOGEN INSTALLATION OPTION:
+&quot; ---------------------------------------------------------------------
+&quot;
+&quot; 1.  Download and install Tim Pope&#39;s
+
+&quot; This is the Hello World program in Vim script.
+echo &quot;Hello, world!&quot;
+
+&quot; This is a simple while loop in Vim script.
+let i = 1
+while i &lt; 5
+  echo &quot;count is&quot; i
+  let i += 1
+endwhile
+
+Language features
+======================================================
+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token echo
+ Example

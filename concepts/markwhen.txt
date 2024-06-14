@@ -1,0 +1,74 @@
+Markwhen
+========
+
+Markwhen is a text markup language created in 2022 by Rob Koch.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rob%20Koch
+
+#569 on PLDB
+2 Years Old
+
+git clone https://github.com/mark-when/markwhen
+
+Try now: Web
+
+Make a cascading timeline from markdown-like text. Supports simple American/European date styles, ISO8601, images, links, locations, and more.
+
+- Markwhen website
+ https://markwhen.com/
+- Markwhen is developed on GitHub and has 2,263 stars
+- Markwhen first developed in https://github.com/mark-when
+- Markwhen is written in TypeScript, JSON, HTML, JavaScript, Markdown, CSS, SVG, Dockerfile, YAML
+
+title: Welcome to Markwhen 👋
+
+#Project1: #d336b1
+
+section Welcome #welcome
+now: This example timeline showcases some of markwhen&#39;s features.
+
+Feel free to delete everything to start making your own timeline #welcome
+
+now: You can also view this example timeline at [markwhen.com/example](https://markwhen.com/example) #welcome
+
+Or you can save this timeline so you can refer to it later, by going to Browser storage &amp; files, and clicking Save current.
+
+now: For more information, view the documentation [here](https://docs.markwhen.com) or join the [discord](https://discord.gg/kQbqP4uz)
+#welcome
+endSection
+
+section All Projects
+group Project 1 #Project1
+// Supports ISO8601
+2023-01/2023-03: Sub task #John
+2023-03/2023-06: Sub task 2 #Michelle
+More info about sub task 2
+
+- [ ] We need to get this done
+- [x] And this
+- [ ] This one is extra
+
+2023-07: Yearly planning
+endGroup
+ group Project 2 #Project2
+2023-04/4 months: Larger sub task #Danielle
+
+// Supports American date formats
+03/2023 - 1 year: Longer ongoing task #Michelle
+
+- [x] Sub task 1
+- [x] Sub task 2
+- [ ] Sub task 3
+- [ ] Sub task 4
+- [ ] so many checkboxes omg
+
+10/2023 - 2 months: Holiday season
+endGroup
+
+group Project 3
+01/2024: Project kickoff
+02/2024-04/2024: Other stuff
+endGroup
+endSection
+
+2023-01-03 every other week for 1 year: Biweekly meeting

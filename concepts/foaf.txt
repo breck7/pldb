@@ -1,0 +1,34 @@
+FOAF
+====
+
+FOAF is a xml format created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3039 on PLDB
+17 Years Old
+
+- FOAF Wikipedia page
+ https://en.wikipedia.org/wiki/FOAF
+- FOAF first developed in http://rdfweb.org/mailman/listinfo/rdfweb-dev
+- Read more about FOAF on the web: 1.
+ http://xmlns.com/foaf/spec/
+
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+
+&lt;#JW&gt;
+    a foaf:Person ;
+    foaf:name &quot;James Wales&quot; ;
+    foaf:mbox &lt;mailto:jwales@bomis.com&gt; ;
+    foaf:homepage &lt;http://www.jameswales.com&gt; ;
+    foaf:nick &quot;Jimbo&quot; ;
+    foaf:depiction &lt;http://www.jameswales.com/aus_img_small.jpg&gt; ;
+    foaf:interest &lt;http://www.wikimedia.org&gt; ;
+    foaf:knows [
+        a foaf:Person ;
+        foaf:name &quot;Angela Beesley&quot;
+    ] .
+
+&lt;http://www.wikimedia.org&gt;
+    rdfs:label &quot;Wikimedia&quot; .

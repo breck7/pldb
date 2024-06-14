@@ -1,0 +1,20 @@
+import ../code/conceptPage.scroll
+
+id flare
+name Flare
+appeared 2001
+creators Dmitriy Myshkin and Eliezer Yudkowsky and Mike Li and Michael Baj and Richard Walker
+tags pl
+website https://flarelang.sourceforge.net
+conceptDescription Flare is a proposal for the first "annotative" programming language.  In dialects of LISP, both the program and the program data are represented as lists.  In Flare, the program, program data, and ideally the program state, are all represented as well-formed XML.  Because XML is annotative (additional sub-elements can be easily added to any parent element without destroying the structural integrity of existing data) and extensible (new sub-element types can be easily created), these properties are shared by Flare objects and Flare programs.  This fundamental idiom enables a wide variety of new patterns, and should enable significantly greater modularity, cleanness, ease of adaptation, and so on.
+
+influencedBy xml python java cpp eiffel common-lisp scheme perl haskell
+originCommunity Singularity Institute for Artificial Intelligence
+
+example
+ <human>
+  <name>Bob</name>
+  <hands>2</hands>
+  <legs>2</legs>
+  <age>35.23</age>
+ </human>

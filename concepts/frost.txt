@@ -1,0 +1,63 @@
+Frost
+=====
+
+Frost is a programming language created in 2017 by Ethan Nicholas.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ethan%20Nicholas
+
+#1500 on PLDB
+7 Years Old
+
+git clone https://github.com/ethannicholas/Frost
+
+Frost is a powerful, general purpose, multi-paradigm programming language
+
+- Frost website
+ https://www.frostlang.org/
+- Frost is developed on GitHub and has 36 stars
+- Frost first developed in https://github.com/ethannicholas/Frost/issues
+- Frost is written in Markdown, CSS, C, XSLT, JavaScript, CMake, HTML
+- frostlang.org was registered in 2019
+
+========================================================
+Simple version of the Unix `head` utility. Reads a file
+and outputs the first `count` lines from it to the
+standard output stream.
+
+@param path the file to read
+@param count the number of lines to display
+========================================================
+method head(path:File, count:Int) {
+    try {
+        path.lines()[..count].apply(Console.printLine)
+    }
+    fail(error) {
+        abort(error.message)
+    }
+}
+
+method abort(msg:String) {
+    Console.printLine(msg)
+    System.exit(1)
+}
+
+method main(args:ListView&lt;String&gt;) {
+    if args.count != 3 {
+        abort(&quot;usage: head &lt;path&gt; &lt;count&gt;&quot;)
+    }
+    def count := args[2].asInt
+    if count == null {
+        abort(&quot;error: &#39;\{args[2]}&#39; is not an integer&quot;)
+    }
+    head(File(args[1]), count)
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Console.printLine
+ Example

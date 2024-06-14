@@ -1,0 +1,72 @@
+import ../code/conceptPage.scroll
+
+id ejs
+name EJS
+appeared 2010
+creators Tj Holowaychuk
+tags template
+latestVersion 1.0.0
+
+isOpenSource true
+writtenIn ejs javascript html markdown make json yaml css
+clocExtensions ejs
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 228
+ committers 35
+ files 50
+ newestCommit 2015
+country United Kingdom
+originCommunity https://apex.sh
+
+example
+ <% if (user) { %>
+    <h2><%= user.name %></h2>
+ <% } %>
+
+githubRepo https://github.com/tj/ejs
+ firstCommit 2010
+ stars 4441
+ forks 540
+ subscribers 140
+ created 2010
+ updated 2022
+ description Embedded JavaScript templates for node
+ issues 104
+
+githubBigQuery EJS
+ repos 614
+ users 560
+
+linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
+ firstCommit 2011
+ lastCommit 2016
+ committerCount 3
+ commitCount 5
+ sampleCount 2
+ example
+  <% include parts/depend %>
+  
+  <div class="row">
+    <% if (user.primaryAccount == "teacher") { %>
+      <% include teacher/sidebar %>
+      <% include teacher/dashboard %>
+    <% } else if (user.primaryAccount == "student") { %>
+      <% include student/sidebar %>
+      <% include student/dashboard %>
+    <% } else { %>
+      <center><h2>There seems to be a problem</h2></center>
+    <% } %>
+  </div>
+
+isbndb 0
+
+githubLanguage EJS
+ fileExtensions ejs ect ejst jst
+ trendingProjectsCount 0
+ type markup
+ aceMode ejs
+ tmScope text.html.js
+ repos 92857

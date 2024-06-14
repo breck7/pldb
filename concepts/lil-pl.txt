@@ -1,0 +1,49 @@
+Lil
+===
+
+Lil is a programming language created in 2022.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#737 on PLDB
+2 Years Old
+
+git clone https://github.com/JohnEarnest/Decker
+
+Try now: Web
+
+A multimedia sketchpad
+
+- Lil website
+ https://beyondloom.com/decker/lil.html
+- Lil is developed on GitHub and has 396 stars
+- Lil docs
+ https://beyondloom.com/decker/lil.html
+- Lil first developed in https://github.com/JohnEarnest/Decker/issues
+- Lil is written in Markdown, Bourne shell, JavaScript, C, XML, HTML, Vim script, awk, Make, YAML, Lisp, Nix
+
+on mode a do   # line comment
+    r:()
+    each x in a
+        r[x]:1+r[x]
+    end
+    extract first key orderby value desc from r
+end
+
+mode[1,2,2,3,4,2,1]
+
+Language features
+======================================================
+
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  emptyList = ()
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example

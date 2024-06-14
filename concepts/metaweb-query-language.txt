@@ -1,0 +1,22 @@
+Metaweb Query Language
+======================
+
+Metaweb Query Language is a query language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#4599 on PLDB
+18 Years Old
+
+- Metaweb Query Language first developed in Metaweb Technologies, Inc
+- Read more about Metaweb Query Language on the web: 1.
+ https://rpbouman.blogspot.com/2011/01/mql-to-sql-json-based-query-language.html?m=0
+
+{
+    &quot;name&quot;: None,
+    &quot;mid&quot;: None,
+    &quot;type&quot;: &quot;/food/dish&quot;,
+    &quot;count&quot;: None,
+    #&quot;return&quot;: &quot;count&quot;,
+    &quot;limit&quot;: 20,
+    &quot;sort&quot;: &quot;name&quot;,
+}

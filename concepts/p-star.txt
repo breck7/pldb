@@ -1,0 +1,32 @@
+P*
+==
+
+P* is a programming language created in 2013 by Atle Solbakken.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Atle%20Solbakken
+
+#1724 on PLDB
+11 Years Old
+
+git clone https://github.com/P-star/P-star
+
+Main repository for the P* web programming language.
+
+- P* website
+ https://www.p-star.org/home
+- P* is developed on GitHub and has 5 stars
+- P* first developed in https://github.com/P-star
+- P* is written in C++, Bourne shell, M4, Make, XML, SVG, CSS, Markdown, XSLT
+
+#!/usr/bin/wpl -f
+SCENE main {
+    /* Create a variable named &#39;env&#39; of special type &#39;ENV&#39; */
+    ENV env;
+    /* Create a variable named &#39;path&#39; of type &#39;string&#39; */
+    string path;
+    /* Tell the env variable to retrieve the environment
+    variable PATH and put the result into our &#39;path&#39; variable */
+    path = env-&gt;PATH;
+    /* Put the variable &#39;path&#39; into a text string and then print it out */
+    echo &quot;My shell looks for programs in these directories: $path\n&quot;;
+}

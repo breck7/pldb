@@ -1,0 +1,34 @@
+Hyperscript
+===========
+
+Hyperscript is a programming language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#649 on PLDB
+4 Years Old
+
+git clone https://github.com/bigskysoftware/_hyperscript
+
+a small scripting language for the web
+
+- Hyperscript website
+ https://hyperscript.org/
+- Hyperscript is developed on GitHub and has 863 stars
+- Hyperscript first developed in https://github.com/bigskysoftware
+- Hyperscript is written in JavaScript, Markdown, HTML, TypeScript, JSON, CSS, Python, SVG
+- hyperscript.org was registered in 2020
+
+&lt;script src=&quot;https://unpkg.com/hyperscript.org@0.9.5&quot;&gt;&lt;/script&gt;
+
+&lt;button _=&quot;on click toggle .clicked&quot;&gt;
+  Toggle the &quot;clicked&quot; class on me
+&lt;/button&gt;
+
+&lt;div hs=&quot;on mouseOver toggle mouse-over on #foo&quot;&gt;
+&lt;/div&gt;
+
+&lt;div data-hs=&quot;on click call aJavascriptFunction() then
+              wait 10s then
+              call anotherJavascriptFunction()&quot;&gt;
+           Do some stuff
+&lt;/div&gt;

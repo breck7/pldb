@@ -1,0 +1,38 @@
+orange
+======
+
+orange is a programming language created in 2014 by Robert Fratto.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Fratto
+
+#1219 on PLDB
+10 Years Old
+
+git clone https://github.com/orange-lang/orange
+
+- orange website
+ https://web.archive.org/web/20191002000130/http://orange-lang.org/
+- orange is developed on GitHub and has 70 stars
+- orange first developed in https://github.com/orange-lang
+- orange is written in Go, YAML, Markdown, Dockerfile
+
+extern printf(char* s, ...) -&gt; int32
+
+class Person
+  public char* name
+
+  public Person(char* name)
+    @name = name
+  end
+end
+
+Person john = Person(&quot;Johnny&quot;)
+printf(&quot;Hello, %s!\n&quot;, john.name)
+
+alias bool break catch char class const continue data def delete do double elif else enum extend extern false final finally float fro get if import int int16 int32 int64 int8 interface new of package private property protected public return set static string super this throw true try uint uint16 uint362 uint64 uint8 var virtual void where while
+
+HackerNews discussions of orange
+================================
+
+title|titleLink|date|score|comments
+Orange: A simple systems programming language|https://news.ycombinator.com/item?id=9784334|06/26/2015|55|38

@@ -1,0 +1,23 @@
+import ../code/conceptPage.scroll
+
+id microblocks
+name MicroBlocks
+appeared 2021
+creators John Maloney and Jens Mönig and Bernat Romagosa
+tags visual
+website https://microblocks.fun/
+conceptDescription MicroBlocks is a blocks programming language for physical computing inspired by Scratch. It runs on microcontrollers such as the micro:bit, Calliope mini, AdaFruit Circuit Playground Express, and many others
+
+writtenIn c markdown bourne-shell cpp javascript html svg json python ini xml css
+influencedBy scratch
+repoStats
+ firstCommit 2017
+ newestCommit 2023
+ commits 5389
+ committers 29
+ files 614
+
+twitter https://x.com/microblocksfun
+discord https://discord.gg/TCpHYbcvkS
+
+gitRepo https://bitbucket.org/john_maloney/smallvm

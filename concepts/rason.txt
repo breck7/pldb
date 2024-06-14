@@ -1,0 +1,39 @@
+rason
+=====
+
+rason is a programming language created in 2015.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2679 on PLDB
+9 Years Old
+
+- rason website
+ https://www.rason.com/
+- rason first developed in Frontline Systems Inc
+- rason.com was registered in 2003
+- 1 languages in PLDB linking to rason: GNU Linear Programming Kit
+
+{
+    data :
+    {
+        &quot;price&quot; : { value: 200 },
+        &quot;capacity&quot; : { value: 100 },
+        &quot;sold&quot; : { value: 110 },
+        &quot;refund_no_shows&quot; : { value: 0.5 },
+        &quot;refund_overbook&quot; : { value: 1.25 }
+    },
+    uncertainVariables :
+    {
+        &quot;no_shows&quot; : { formula: &quot;PsiLogNormal(0.1*sold, 0.06*sold)&quot; }
+    },
+    formulas :
+    {
+        &quot;show_ups&quot; : { formula: &quot;sold - Round(no_shows, 0)&quot; },
+        &quot;overbook&quot; : { formula: &quot;Max(0, show_ups - capacity)&quot; }
+    },
+    uncertainFunctions :
+    {
+        &quot;revenue&quot; : { formula: &quot;price*(sold - refund_no_shows * Round(no_shows, 0) - refund_overbook * overbook)&quot;,
+        mean : [], stdev: [], max : [], min : [] }
+    }
+}

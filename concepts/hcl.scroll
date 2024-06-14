@@ -1,0 +1,109 @@
+import ../code/conceptPage.scroll
+
+id hcl
+name HCL
+appeared 2014
+tags dataNotation
+latestVersion v2.20.1
+standsFor HashiCorp configuration language
+conceptDescription HCL (HashiCorp Configuration Language) is a configuration language built by HashiCorp. The goal of HCL is to build a structured configuration language that is both human and machine friendly for use with command-line tools, but specifically targeted towards DevOps tools, servers, etc. HCL is also fully JSON compatible. That is, JSON can be used as completely valid input to a system expecting HCL. This helps makes systems interoperable with other systems. HCL is heavily inspired by libucl, nginx configuration, and others similar.
+
+isOpenSource true
+writtenIn go hcl markdown json restructuredtext make bourne-shell yaml ruby python
+clocExtensions hcl nomad tf tfvars
+fileType text
+documentation https://developer.hashicorp.com/terraform/language/syntax/configuration
+monaco hcl
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 1574
+ committers 105
+ files 366
+ newestCommit 2024
+originCommunity HashiCorp
+
+rijuRepl https://riju.codes/hcl
+ example
+  output = "Hello, world!"
+  
+example
+ variable "ami" {
+    description = "the AMI to use"
+ }
+ <<FOO
+ hello
+ world
+ FOO
+
+keywords var local path for_each any string number bool true false null if  else  endif  for  in endfor
+githubRepo https://github.com/hashicorp/hcl
+ stars 4132
+ forks 469
+ subscribers 340
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description HCL is the HashiCorp configuration language.
+ issues 162
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasConditionals true
+
+githubBigQuery HCL
+ repos 2995
+ users 2307
+
+linguistGrammarRepo https://github.com/alexlouden/Terraform.tmLanguage
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 16
+ commitCount 58
+ sampleCount 5
+ example
+  consul = "1.2.3.4"
+  
+  // This is a comment
+  template "foo" {
+    bar = "zip"
+  }
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2021|Apress|Beginning HCL Programming: Using Hashicorp Language for Automation and Configuration|Riti, Pierluigi|9781484266335
+ 20210411|Springer Nature|Beginning HCL Programming|Pierluigi Riti; David Flynn|9781484266342
+
+githubLanguage HCL
+ fileExtensions hcl nomad tf tfvars workflow
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  terraform-google-modules terraform-google-kubernetes-engine https://github.com/terraform-google-modules.png https://github.com/terraform-google-modules/terraform-google-kubernetes-engine HCL #ccc 146 113 18 "A Terraform module for configuring GKE clusters."
+  hashicorp terraform-guides https://github.com/hashicorp.png https://github.com/hashicorp/terraform-guides HCL #ccc 413 279 28 "Example usage of HashiCorp Terraform"
+  brikis98 terraform-up-and-running-code https://github.com/brikis98.png https://github.com/brikis98/terraform-up-and-running-code HCL #ccc 767 451 41 "Code samples for the book ""Terraform: Up & Running"" by Yevgeniy Brikman"
+  terraform-aws-modules terraform-aws-eks https://github.com/terraform-aws-modules.png https://github.com/terraform-aws-modules/terraform-aws-eks HCL #ccc 660 480 44 "A Terraform module to create an Elastic Kubernetes (EKS) cluster and associated worker instances on AWS."
+  terraform-aws-modules terraform-aws-vpc https://github.com/terraform-aws-modules.png https://github.com/terraform-aws-modules/terraform-aws-vpc HCL #ccc 770 732 32 "Terraform module which creates VPC resources on AWS"
+ trendingProjectsCount 6
+ type programming
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.terraform
+ aliases HashiCorp Configuration Language or terraform
+ repos 180390
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Layering RTL, SAFL, Handel-C and Bluespec constructs on Chisel HCL|10.1109/MEMCOD.2015.7340477|2|1|D. Greaves|29555321aa1ffee0cc205b0adbdae4d978a0c684

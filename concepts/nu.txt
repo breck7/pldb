@@ -1,0 +1,51 @@
+Nu
+==
+
+Nu is an open source programming language created in 2007 by Tim Burks.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tim%20Burks
+
+#773 on PLDB
+17 Years Old
+215 Repos
+
+Nu is an interpreted object-oriented programming language, with a Lisp-like syntax, created by Tim Burks as an alternative scripting language to program OS X through its Cocoa application programming interface (API). Implementations also exist for iPhone and Linux. The language was first announced at C4, a conference for indie Mac developers held in August 2007.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Nu_(programming_language)
+
+- Nu Wikipedia page
+ https://en.wikipedia.org/wiki/Nu_(programming_language)
+- There are at least 215 Nu repos on GitHub
+- Nu first developed in https://github.com/programming-nu
+- The  Google BigQuery Public Dataset GitHub snapshot shows 331 users using Nu in 375 repos on GitHub
+- GitHub supports syntax highlighting for Nu
+- See also: (6 related languages)X86, Lisp, Objective-C, Ruby, Linux, F-Script
+
+(puts &quot;Hello World&quot;)
+
+#!/usr/bin/env nush
+(puts &quot;Hello&quot;)
+
+(unless @prefix
+        (set @prefix
+             &quot;#{((((NSProcessInfo processInfo) arguments) 0) dirName)}..&quot;))
+
+(unless @icon_files
+        (set @icon_files
+             (array &quot;#{@prefix}/share/nu/resources/nu.icns&quot;)))
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token puts
+ Example

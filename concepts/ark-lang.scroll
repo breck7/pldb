@@ -1,0 +1,51 @@
+import ../code/conceptPage.scroll
+
+id ark-lang
+name Ark
+appeared 2014
+tags pl
+website https://ark-lang.github.io/
+
+writtenIn toml go markdown make yaml bourne-shell
+repoStats
+ firstCommit 2014
+ commits 3483
+ committers 48
+ files 233
+ newestCommit 2019
+
+example
+ // binding to printf
+ [c] func printf(fmt: ^u8, ...);
+ 
+ pub func main(argc: int, argv: ^^u8) -> int {
+     // accessed via the C module
+     C::printf(c"Running %s\n", ^argv);
+ 
+     // mutable i, type inferred
+     mut i := 0;
+ 
+     for i < 5 {
+         C::printf(c"%d\n", i);
+ 
+         i += 1;
+     }
+     return 0;
+ }
+ 
+
+githubRepo https://github.com/ark-lang/ark
+ firstCommit 2014
+ stars 676
+ forks 51
+ subscribers 42
+ created 2014
+ updated 2022
+ description A compiled systems programming language written in Go using the LLVM framework
+ issues 45
+
+domainName ark-lang.github.io
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 10845659|Show HN: A programming language I've been working on called Ark|2016-01-05 20:10:20 UTC|1452024620|felixangell1024|3|15

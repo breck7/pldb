@@ -1,0 +1,62 @@
+import ../code/conceptPage.scroll
+
+id unrealscript
+name UnrealScript
+appeared 1998
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+
+wikipedia https://en.wikipedia.org/wiki/UnrealScript
+ related linux asmjs javascript webgl android ios java
+ summary The Unreal Engine is a game engine developed by Epic Games, first showcased in the 1998 first-person shooter game Unreal. Although primarily developed for first-person shooters, it has been successfully used in a variety of other genres, including stealth, fighting games, MMORPGs, and other RPGs. With its code written in C++, the Unreal Engine features a high degree of portability and is a tool used by many game developers today, with it being source-available. The most recent version is Unreal Engine 4, which was released to the public in 2014.
+ pageId 417152
+ created 2002
+ backlinksCount 862
+ revisionCount 120
+ dailyPageViews 13
+ appeared 1998
+
+githubBigQuery UnrealScript
+ repos 9501
+ users 5230
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+ sampleCount 2
+ example
+  class US3HelloWorld extends GameInfo;
+   
+  event InitGame( string Options, out string Error )
+  {
+      `log( "Hello, world!" );
+  }
+  
+  defaultproperties
+  {
+  }
+  
+
+githubLanguage UnrealScript
+ fileExtensions uc
+ trendingProjectsCount 0
+ type programming
+ aceMode java
+ codemirrorMode clike
+ codemirrorMimeType text/x-java
+ tmScope source.java
+ repos 1335
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Unrealscript Game Programming Cookbook|2013|Dave Voyles|24323426|3.50|2|0
+ UnrealScript Game Programming All in One [With CDROM]|2006|John P. Flynt|1956745|3.14|7|1
+ Unreal Development Kit Game Programming with Unrealscript: Beginner's Guide|2011|R. Cordone|20142360|4.25|12|1
+ Unreal Development Kit Game Programming with UnrealScript: Beginner's Guide|2011|Rachel Cordone|28391442|3.00|8|0
+ Unreal Development Kit Game Programming with Unrealscript Beginner's Guide|2011|Rachel Cordone|22937490|3.50|2|1
+ Unreal Development Kit Game Programming with Unrealscript: Beginner's Guide: Create Games Beyond Your Imagination with the Unreal Development Kit|2011|Rachel Cordone|23291525|0.0|0|0
+ Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0

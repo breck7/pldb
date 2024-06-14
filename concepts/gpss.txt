@@ -1,0 +1,27 @@
+General Purpose Simulation System
+=================================
+
+General Purpose Simulation System, aka General Purpose Simulation System, is a programming language created in 1960.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221960%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1361 on PLDB
+64 Years Old
+
+General Purpose Simulation System (GPSS) is a discrete time simulation general-purpose programming language, where a simulation clock advances in discrete steps. A system is modelled as transactions enter the system and are passed from one service (represented by blocks) to another. It is used primarily as a process flow oriented simulation language; this is particularly well-suited for problems such as a factory.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GPSS
+
+- General Purpose Simulation System Wikipedia page
+ https://en.wikipedia.org/wiki/GPSS
+- General Purpose Simulation System first developed in IBM
+- General Purpose Simulation System on HOPL
+ https://hopl.info/showlanguage.prx?exp=141
+- See also: (1 related languages)APL
+
+FACILITY           AVERAGE           NUMBER         AVERAGE         SEIZING      PREEMPTING
+                UTILIZATION          ENTRIES       TIME/TRAN       TRANS. NO.    TRANS. NO.
+       Joe            .860               26          15.884              26
+
+QUEUE       MAXIMUM   AVERAGE    TOTAL     ZERO     PERCENT   AVERAGE   $AVERAGE     TABLE    CURRENT
+           CONTENTS   CONTENT   ENTRIES   ENTRIES    ZEROS  TIME/TRANS TIME/TRANS   NUMBER   CONTENTS
+  Chairs          1      .160       27        12      44.4      2.851      5.133                    1
+$AVERAGE TIME/TRANS = AVERAGE TIME/TRANS EXCLUDING ZERO ENTITIES

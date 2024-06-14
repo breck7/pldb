@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id cilk
+name CIL
+appeared 1994
+tags pl
+website http://www.cilk.com/
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Cilk
+centralPackageRepositoryCount 0
+country United States
+originCommunity Intel
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Cilk
+ example
+  // y ← α x + y
+   void axpy(int n, float alpha, const float *x, float *y)
+   {
+       for (int i = 0; i < n; i++) {
+           y[i] += alpha * x[i];
+       }
+   }
+ related c opencl nesl unified-parallel-c
+ summary Cilk, Cilk++ and Cilk Plus are general-purpose programming languages designed for multithreaded parallel computing. They are based on the C and C++ programming languages, which they extend with constructs to express parallel loops and the fork–join idiom. Originally developed in the 1990s at the Massachusetts Institute of Technology (MIT) in the group of Charles E. Leiserson, Cilk was later commercialized as Cilk++ by a spinoff company, Cilk Arts. That company was subsequently acquired by Intel, which increased compatibility with existing C and C++ code, calling the result Cilk Plus.
+ pageId 945803
+ dailyPageViews 85
+ created 2004
+ backlinksCount 179
+ revisionCount 211
+ appeared 1994
+
+hopl https://hopl.info/showlanguage.prx?exp=1899
+tiobe CIL
+
+domainName cilk.com
+ registered 1999
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 2008|Apress|CIL Programming: Under the Hood of .NET (Expert's Voice)|Bock, Jason|9781430208457
+ 2002|Apress|CIL Programming: Under the Hood of .NET|Bock, Jason|9781590590416
+ 2013|Apress|CIL Programming: Under the Hood of .NET|Bock, Jason|9781430251569
+
+githubLanguage CIL
+ type data
+ fileExtensions cil
+ aceMode text
+ tmScope source.cil
+ repos 1
+
+semanticScholar 4
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2004|CIL + Metadata > Executable Program|10.5381/jot.2004.3.2.a2|8|0|Giuseppe Attardi and A. Cisternino and Diego Colombo|5391e1abf4e75970c25bfed0fc0548bb62bcd4aa
+ 1984|Interactive verification of communication software on the basis of CIL|10.1145/800056.802065|7|1|H. Krumm and O. Drobnik|b2379292d4ba1430da0ceb5bd007574b7bc7bb42
+ 2002|CIL Programming: Under the Hood™ of .NET|10.1007/978-1-4302-0845-7|5|0|Jason Bock|eec8568a3e6a51db647aafcac1779eb8993bae4d
+ 2018|CIL to Java-Bytecode Translation for Static Analysis Leveraging|10.1145/3193992.3193994|3|0|Pietro Ferrara and A. Cortesi and F. Spoto|24536578ef032ac8f7076fa381a920bd4386b6db

@@ -1,0 +1,69 @@
+import ../code/conceptPage.scroll
+
+id cuelang
+name Cue
+appeared 2018
+creators Marcel van Lohuizen
+tags dataNotation
+website https://cuelang.org/
+latestVersion v0.4.0
+webRepl https://cuelang.org/play
+
+writtenIn go yaml protobuf json markdown dockerfile
+repoStats
+ firstCommit 2018
+ commits 1527
+ committers 63
+ files 1421
+ newestCommit 2021
+country United Kingdom and United States and Switzerland
+originCommunity https://github.com/cue-lang
+
+example
+ #Spec: {
+   kind: string
+ 
+   name: {
+     first:   !=""  // must be specified and non-empty
+     middle?: !=""  // optional, but must be non-empty when specified
+     last:    !=""
+   }
+ 
+   // The minimum must be strictly smaller than the maximum and vice versa.
+   minimum?: int & <maximum
+   maximum?: int & >minimum
+ }
+ 
+ // A spec is of type #Spec
+ spec: #Spec
+ spec: {
+   knid: "Homo Sapiens" // error, misspelled field
+ 
+   name: first: "Jane"
+  
+twitter https://twitter.com/cue_lang
+
+githubRepo https://github.com/cuelang/cue
+ firstCommit 2018
+ stars 3148
+ forks 188
+ subscribers 49
+ created 2019
+ updated 2022
+ description CUE has moved to https://github.com/cue-lang/cue
+ issues 1
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName cuelang.org
+ registered 2018
+ awisRank
+  2022 1108581
+
+isbndb 0

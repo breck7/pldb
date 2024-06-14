@@ -1,0 +1,34 @@
+QuickBASIC
+==========
+
+QuickBASIC is a programming language created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1592 on PLDB
+39 Years Old
+
+Microsoft QuickBASIC (also QB) is an Integrated Development Environment (or IDE) and compiler for the BASIC programming language that was developed by Microsoft. QuickBASIC runs mainly on DOS, though there was a short-lived version for the classic Mac OS. It is loosely based on GW-BASIC but adds user-defined types, improved programming structures, better graphics and disk support and a compiler in addition to the interpreter. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/QuickBASIC
+
+- QuickBASIC Wikipedia page
+ https://en.wikipedia.org/wiki/QuickBASIC
+- QuickBASIC first developed in Microsoft
+- QuickBASIC on HOPL
+ https://hopl.info/showlanguage.prx?exp=5233
+- See also: (9 related languages)QBasic, BASIC, GW-BASIC, Visual Basic, Linux, FreeBASIC, QB64, PowerBASIC, Turbo Basic
+
+REM sample of bubble sort
+N = 10
+DIM A(N) AS INTEGER
+FOR L = 1 TO N
+    A(L) = INT(RND * 10 + 1)
+NEXT
+FOR X = 1 TO N
+    FOR Y = 1 TO N - 1
+        IF A(X) &lt; A(Y) THEN SWAP A(X), A(Y)
+    NEXT
+NEXT
+FOR L = 1 TO N
+    PRINT A(L)
+NEXT
+END

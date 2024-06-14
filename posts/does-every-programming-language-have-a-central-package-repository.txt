@@ -1,0 +1,44 @@
+Does every programming language have a central package repository?
+==================================================================
+by Breck Yunits
+
+February 7, 2019
+
+Like millions of other programmers, every day I depend on central package repositories (CR) like npm, PyPI and CRAN.
+ https://npmjs.org
+ https://pypi.python.org
+ https://cran.r-project.org
+
+The other day I was curious: does every programming language have one of these? I decided to find out. I pointed my crawler and trained a model to check for a package repository for every one of the 3,006 languages I am tracking. The results surprised me.
+
+***
+
+★ Only 1% have them
+===================
+
+My model found only 39 languages with central package repositories. (For comparison, Wikipedia lists ~20). That's just ~1% of languages. I thought it would be higher.
+
+★ ~30% of the Top 100 have them
+===============================
+
+Given that a programming language is very popular and appears in my top 100 list, it is about 15 - 30x more likely to have a CR. Given a language is not in the top 100,  Objective-C, and Nuget => F# and other .Net langs. In this post I collapsed things so each repo only has 1 language.
+
+Update: 8/26/2019. Multiple readers pointed out that my stat for Ruby was off by 10x. I used the # I found on this page, which turned out to be just the gems beginning with the letter A. I apologize for the mistake and am very grateful for the corrections.
+ https://rubygems.org/gems
+
+Thanks to PallHaraldsson for reviewing this post and encouraging it to get updated.
+ https://github.com/PallHaraldsson
+
+html.h1 Does every programming language have a central package repository?
+web.get https://pldb.io/pldb.csv
+ filter.where appeared > 1950
+  columns.keep appeared packageRepository title
+   columns.setType appeared year
+    columns.rename packageRepository cpr
+     group.by cpr
+      tables.basic
+     filter.where cpr !=
+      tables.basic
+      group.by appeared
+       vega.bar
+        yColumn count

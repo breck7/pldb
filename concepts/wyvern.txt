@@ -1,0 +1,41 @@
+Wyvern
+======
+
+Wyvern is a programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#707 on PLDB
+12 Years Old
+
+git clone https://github.com/wyvernlang/wyvern
+
+Wyvern is a computer programming language created by Jonathan Aldrich and Alex Potanin for the development of web and mobile applications with security and assurance being number one priority. Wyvern supports object capabilities, it is structurally typed, and aims to make secure way of programming easier than insecure - as described in the Wyvern Manifesto. One of the early available features that make Wyvern special is a way to safely use multiple programming languages within the same program so programmers can use the language most appropriate for each function while at the same time increasing the program's security. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Wyvern_(programming_language)
+
+- Wyvern website
+ http://wyvernlang.github.io/
+- Wyvern Wikipedia page
+ https://en.wikipedia.org/wiki/Wyvern_(programming_language)
+- Wyvern is developed on GitHub and has 534 stars
+- Wyvern is written in Java, JavaScript, Bash, JSON, Markdown, Bourne shell, Logos, EJS, Python, XML, HTML, Protocol Buffers, Lisp, CSS, YAML, SVG, Make
+
+require stdout
+
+stdout.print(&quot;Hello World&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token stdout.print
+ Example

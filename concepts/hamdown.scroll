@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id hamdown
+name hamdown
+appeared 2018
+tags textMarkup
+
+writtenIn ruby markdown gherkin yaml bash
+repoStats
+ firstCommit 2018
+ commits 61
+ committers 6
+ files 29
+ newestCommit 2019
+country Serbia
+originCommunity https://github.com/inem/hamdown/issues
+
+example
+ # Main Title
+ 
+ %h2.f2.helvetica.strike
+   Fancy title
+   **with some bold**
+ 
+ Some content
+
+githubRepo https://github.com/inem/hamdown
+ firstCommit 2018
+ stars 111
+ forks 4
+ subscribers 8
+ created 2018
+ updated 2022
+ description [WIP] Next generation template language for fans of Haml and Markdown
+ issues 6
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 17312562|Show HN: New markup language for fans of Haml and Markdown|2018-06-14 15:53:47 UTC|1528991627|inem|58|64

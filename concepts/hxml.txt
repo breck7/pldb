@@ -1,0 +1,55 @@
+HXML
+====
+
+HXML is an application created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1095 on PLDB
+15 Years Old
+0 Repos
+
+- There are at least 0 HXML repos on GitHub
+- HXML first developed in Haxe Foundation
+- Pygments supports syntax highlighting for HXML
+- GitHub supports syntax highlighting for HXML
+- Read more about HXML on the web: 1.
+ https://haxe.org/manual/compiler-usage-hxml.html
+
+-cp src
+-dce full
+
+--each
+
+-js bin/homepage.js
+-main website.HomePage
+
+--next
+
+-js bin/gallery.js
+-main website.GalleryPage
+
+--next
+
+-js bin/contact.js
+-main website.ContactPage
+
+buildGlobal.hxml
+-lib mcover:2.1.1
+-D unittest
+-x TestMain
+--macro mcover.MCover.coverage([&#39;checkstyle&#39;], [&#39;src&#39;], [&#39;checkstyle.reporter&#39;, &#39;checkstyle.Main&#39;])
+
+--next
+-cmd neko run -s src -s test -p resources/static-analysis.txt
+-cmd neko run --default-config resources/default-config.json
+-cmd neko run -c resources/default-config.json
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example

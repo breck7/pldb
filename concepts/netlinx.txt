@@ -1,0 +1,187 @@
+NetLinx
+=======
+
+NetLinx is a programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#788 on PLDB
+17 Years Old
+122 Repos
+
+NetLinx is both a range of controllers manufactured by AMX and the name of the proprietary programming language (loosely based on C) used to program the devices.  The NetLinx controllers are rack mountable devices which run a version of VxWorks and integrate both a processor and device controllers and are typically utilized for audio-visual control systems. An example is the mid-range NetLinx Integrated NI-2100 controller which has 3 RS-232/RS-485 serial ports, 4 relays, 4 infrared/serial ports and 4 input/outputs. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/NetLinx
+
+- NetLinx Wikipedia page
+ https://en.wikipedia.org/wiki/NetLinx
+- There are at least 122 NetLinx repos on GitHub
+- NetLinx first developed in AMX, LLC
+- The  Google BigQuery Public Dataset GitHub snapshot shows 21 users using NetLinx in 25 repos on GitHub
+- GitHub supports syntax highlighting for NetLinx
+- See also: (2 related languages)C, ASCII
+- Read more about NetLinx on the web: 1.
+ https://www.amx.com/en/site_elements/language-reference-guide-netlinx-programming-language
+
+(***********************************************************
+    Mock Projector
+    
+    For testing syntax highlighting
+************************************************************)
+
+#if_not_defined MOCK_PROJECTOR
+#define MOCK_PROJECTOR 1
+(***********************************************************)
+(* System Type : NetLinx                                   *)
+(***********************************************************)
+(*           DEVICE NUMBER DEFINITIONS GO BELOW            *)
+(***********************************************************)
+DEFINE_DEVICE
+
+dvPROJECTOR = 5001:1:0;
+
+(***********************************************************)
+(*              CONSTANT DEFINITIONS GO BELOW              *)
+(***********************************************************)
+DEFINE_CONSTANT
+
+// Power States
+POWER_STATE_ON      = 0;
+POWER_STATE_OFF     = 1;
+POWER_STATE_WARMING = 2;
+POWER_STATE_COOLING = 3;
+
+// Inputs
+INPUT_HDMI          = 0;
+INPUT_VGA           = 1;
+INPUT_COMPOSITE     = 2;
+INPUT_SVIDEO        = 3;
+
+(***********************************************************)
+(*                    INCLUDES GO BELOW                    *)
+(***********************************************************)
+
+#include &#39;amx-lib-log&#39;
+
+(***********************************************************)
+(*              DATA TYPE DEFINITIONS GO BELOW             *)
+(***********************************************************)
+DEFINE_TYPE
+
+struct projector_t
+{
+    integer power_state;
+    integer input;
+    integer lamp_hours;
+}
+
+(***********************************************************)
+(*              VARIABLE DEFINITIONS GO BELOW              *)
+(***********************************************************)
+DEFINE_VARIABLE
+
+volatile projector_t proj_1;
+
+(***********************************************************)
+(*         SUBROUTINE/FUNCTION DEFINITIONS GO BELOW        *)
+(***********************************************************)
+
+define_function initialize(projector_t self)
+{
+    self.power_state = POWER_STATE_OFF;
+    self.input = INPUT_HDMI;
+    self.lamp_hours = 0;
+}
+
+define_function switch_input(projector_t self, integer input)
+{
+    self.input = input;
+    print(LOG_LEVEL_INFO, &quot;&#39;Projector set to input: &#39;, itoa(input)&quot;);
+}
+
+(***********************************************************)
+(*                 STARTUP CODE GOES BELOW                 *)
+(***********************************************************)
+DEFINE_START
+
+initialize(proj_1);
+
+(***********************************************************)
+(*                   THE EVENTS GO BELOW                   *)
+(***********************************************************)
+DEFINE_EVENT
+
+data_event[dvPROJECTOR]
+{
+    string:
+    {
+        parse_message(data.text);
+    }
+    
+    command: {}
+    online:  {}
+    offline: {}
+}
+
+button_event[dvTP, BTN_HDMI]
+button_event[dvTP, BTN_VGA]
+button_event[dvTP, BTN_COMPOSITE]
+button_event[dvTP, BTN_SVIDEO]
+{
+    push:
+    {
+        switch (button.input.channel)
+        {
+            case BTN_HDMI:      switch_input(proj_1, INPUT_HDMI);
+            case BTN_VGA:       switch_input(proj_1, INPUT_VGA);
+            case BTN_COMPOSITE: switch_input(proj_1, INPUT_COMPOSITE);
+            case BTN_SVIDEO:    switch_input(proj_1, INPUT_SVIDEO);
+        }
+    }
+    
+    release: {}
+}
+
+(***********************************************************)
+(*                 THE MAINLINE GOES BELOW                 *)
+(***********************************************************)
+DEFINE_PROGRAM
+
+[dvTP, BTN_POWER_ON]  = (proj_1.power_state == POWER_STATE_ON);
+[dvTP, BTN_POWER_OFF] = (proj_1.power_state == POWER_STATE_OFF);
+
+(***********************************************************)
+(*                     END OF PROGRAM                      *)
+(*          DO NOT PUT ANY CODE BELOW THIS COMMENT         *)
+(***********************************************************)
+#end_if
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

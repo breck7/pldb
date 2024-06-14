@@ -1,0 +1,85 @@
+FLUX
+====
+
+FLUX is an open source programming language created in 2014 by Paul O’Shannessy.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Paul%20O%E2%80%99Shannessy
+
+#133 on PLDB
+10 Years Old
+187 Repos
+
+git clone https://github.com/facebook/flux
+
+Application Architecture for Building User Interfaces
+
+- FLUX website
+ https://facebook.github.io/flux/
+- FLUX is developed on GitHub and has 17,320 stars
+- PLDB has 2 documentation sites for FLUX: fluxcd.io, docs.influxdata.com
+- There are at least 187 FLUX repos on GitHub
+- FLUX first developed in https://github.com/fluxcd
+- FLUX is written in JavaScript, Markdown, JSON, SVG, CSS, HTML, YAML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 792 users using FLUX in 853 repos on GitHub
+
+// concrete node signatures
+Listen ()
+  =&gt; (int socket);
+
+ReadRequest (int socket)
+  =&gt; (int socket, bool close, image_tag *request);
+
+CheckCache (int socket, bool close, image_tag *request)
+  =&gt; (int socket, bool close, image_tag *request);
+
+// omitted for space:
+// ReadInFromDisk, StoreInCache
+Compress (int socket, bool close, image_tag *request, __u8 *rgb_data)
+  =&gt; (int socket, bool close, image_tag *request);
+Write (int socket, bool close, image_tag *request)
+  =&gt; (int socket, bool close, image_tag *request);
+Complete (int socket, bool close, image_tag *request) =&gt; ();
+
+// source node
+source Listen =&gt; Image;
+
+// abstract node
+Image = ReadRequest -&gt; CheckCache -&gt; Handler -&gt; Write -&gt; Complete;
+
+// predicate type &amp; dispatch
+typedef hit TestInCache;
+Handler:[_, _, hit] = ;
+Handler:[_, _, _] =
+ReadInFromDisk -&gt; Compress -&gt; StoreInCache;
+
+// error handler
+handle error ReadInFromDisk =&gt; FourOhFor;
+
+// atomicity constraints
+atomic CheckCache:{cache};
+atomic StoreInCache:{cache};
+atomic Complete:{cache};
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

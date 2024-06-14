@@ -1,0 +1,49 @@
+Explorer
+========
+
+Explorer is an open source visual programming language created in 2020 by Hannah Ritchie and Breck Yunits and Shahid Ahmad.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Hannah%20Ritchie
+ https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits
+ https://pldb.io/concepts/../lists/creators.html#q=Shahid%20Ahmad
+
+#2023 on PLDB
+4 Years Old
+
+[Image Omitted]
+ A screenshot of the visual programming language Explorer.
+
+- Video demo of Explorer
+ https://www.youtube.com/watch?v=0l2QWH-iV3k
+- Explorer first developed in Our World In Data
+- Read more about Explorer on the web: 1.
+ https://github.com/owid/owid-grapher/tree/master/explorer
+
+selection	Canada~India
+title	Population of different countries
+subtitle	How many people live in each country?
+type	DiscreteBar
+hasMapTab	true
+hideControls	true
+ySlugs	Population
+table
+	Country	Population	Year	MapleleafsInFlag
+	Canada	32000000	2020	1
+	India	1000000000	2020	0
+	France	50000000	2020	0
+columns
+	slug	type	name	notes
+	Country	EntityName	Country	Unreviewed
+	Population	Numeric	Population	Unreviewed
+	Year	Year	Year	Unreviewed
+	MapleleafsInFlag	Numeric	MapleleafsInFlag	Unreviewed
+
+Language features
+======================================================
+
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported X
+ Token 
+ Example

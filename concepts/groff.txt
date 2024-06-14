@@ -1,0 +1,66 @@
+groff
+=====
+
+groff is a text markup language created in 1990.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#624 on PLDB
+34 Years Old
+
+- groff website
+ https://www.gnu.org/software/groff/groff.html
+- groff Wikipedia page
+ https://en.wikipedia.org/wiki/Groff_(software)
+- groff docs
+ https://www.gnu.org/software/groff/manual/html_node/index.html
+- groff first developed in GNU Project
+- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using groff in 26k repos on GitHub
+- There are 357 members in the groff subreddit
+- Pygments supports syntax highlighting for groff
+- 1 languages in PLDB linking to groff: nroff
+
+.sp 1.5i
+My thoughts on the subject
+.sp
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token .ig
+ Example
+  text text text...
+  .ig
+  This is part of a large block
+  of text that has been
+  temporarily(?) commented out.
+  
+  We can restore it simply by removing
+  the .ig request and the ".." at the
+  end of the block.
+  ..
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  .de P
+  .  br
+  .  sp .8v
+  ..
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  Test
+  \" comment
+  Test
+  Test
+  \# comment
+  Test

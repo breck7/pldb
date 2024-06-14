@@ -1,0 +1,55 @@
+import ../code/conceptPage.scroll
+
+id gettext
+name Gettext Catalog
+appeared 1990
+tags textMarkup
+
+isOpenSource true
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity Free Software Foundation, Inc
+reference https://www.gnu.org/software/gettext/
+
+pygmentsHighlighter Gettext Catalog
+ filename textfmts.py
+ fileExtensions pot po
+
+hasLineComments true
+hasComments true
+
+wikipedia https://en.wikipedia.org/wiki/Gettext
+ example
+  #: src/name.c:36
+  msgid "My name is %s.\n"
+  msgstr "Je m'appelle %s.\n"
+ related c emacs-editor unix csharp perl php python scala
+ summary In computing, gettext is an internationalization and localization (i18n) system commonly used for writing multilingual programs on Unix-like computer operating systems. The most commonly used implementation of gettext is GNU gettext, released by the GNU Project in 1995.
+ created 2004
+ backlinksCount 66
+ pageId 646489
+ revisionCount 271
+ dailyPageViews 107
+ appeared 1995
+
+githubBigQuery Gettext Catalog
+ repos 650
+ users 509
+
+linguistGrammarRepo https://github.com/textmate/gettext.tmbundle
+ firstCommit 2007
+ lastCommit 2014
+ committerCount 3
+ commitCount 22
+
+isbndb 0
+
+githubLanguage Gettext Catalog
+ fileExtensions po pot
+ trendingProjectsCount 0
+ type prose
+ aceMode text
+ tmScope source.po
+ aliases pot
+ repos 62782

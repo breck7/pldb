@@ -1,0 +1,340 @@
+PHP
+===
+
+PHP, aka Personal Home Page, is a programming language created in 1995 by Rasmus Lerdorf.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rasmus%20Lerdorf
+
+#10 on PLDB
+29 Years Old
+3m Repos
+
+git clone https://github.com/php/php-src
+
+Try now: Riju · TIO · Replit
+
+PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Development Team. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PHP
+
+- PHP website
+ https://php.net
+- PHP downloads page
+ https://www.php.net/downloads.php
+- PHP Wikipedia page
+ https://en.wikipedia.org/wiki/PHP
+- PHP is developed on GitHub and has 33,991 stars
+- Watch the history of the PHP repo visualized with Gource
+- PLDB has 2 documentation sites for PHP: devdocs.io, www.php.net
+- PHP mailing list
+ https://www.php.net/mailing-lists.php
+- Video demo of PHP
+ https://www.youtube.com/watch?v=ZdP0KM49IVk
+- There are at least 3,479,326 PHP repos on GitHub
+- PHP first developed in Zend
+- PHP is written in PHP, C, Pascal, M4, JSON, XML, Assembly language, YAML, Markdown, C++, Bourne shell, GLSL, HTML, XSLT, XSD, reStructuredText, Ini, Lua, Diff, Reason, CSV, DTD, Yacc, awk, Lex, JavaScript, Python, D, Make, Bash, Dockerfile
+- PHP on Twitter
+ https://twitter.com/official_php
+- The  Google BigQuery Public Dataset GitHub snapshot shows 202k users using PHP in 340k repos on GitHub
+- Check out the 2,012 PHP meetup groups on Meetup.com.
+- There are 150,168 members in the PHP subreddit
+- There are 3,210 Project Euler users using PHP
+- In the 2021 StackOverflow developer survey PHP programmers reported a median salary of $38,916. 22% of respondents reported using PHP. 18,130 programmers reported using PHP, and 8,852 said they wanted to use it
+- Explore PHP snippets on Rosetta Code
+- PHP on HOPL
+ https://hopl.info/showlanguage.prx?exp=2361
+- PHP ranks #10 in the TIOBE Index
+- PHP Ubuntu package
+ https://packages.ubuntu.com/jammy/php-cli
+- ANTLR grammar for PHP
+- PHP LSP implementation
+- CodeMirror package for syntax highlighting PHP
+- Monaco package for syntax highlighting PHP
+- Pygments supports syntax highlighting for PHP
+- GitHub supports syntax highlighting for PHP
+- PHP appears in the Quine Relay project
+- PLDB has 2 Jupyter Kernels for PHP: github.com, github.com
+- There is a central package repository for PHP
+- Annual Reports for PHP
+ https://www.zend.com/blog/state-php-2022
+- Release Notes for PHP
+ https://www.php.net/releases/index.php
+- Events page for PHP
+ https://www.php.net/cal.php
+- Indeed.com has 9,017 matches for "php developer".
+- php.net was registered in 1997
+- See also: (28 related languages)C, HHVM, Parrot, Java, Perl, Tcl, Falcon, Hack, HTML, X86, Unicode, WordPress, JSON, MySQL, MIME, JavaScript, XML, PIR, CIL, FTP, PostgreSQL, SQLite, AWS, JSP, Linux, Python, MediaWiki, Drupal
+- Read more about PHP on the web: 1.
+ http://php.net/manual/en/reserved.keywords.php
+- 56 languages in PLDB linking to PHP: Ace Editor, Apache Hbase, AsciiMath, chaiscript, Chapel, chrysaLisp, cloc, codecept, Cyber, dexvis, Eiffel, FlatBuffers, Flow9, Functional PHP Preprocessor, Haxe, HHVM, Hook, huginn, Ioke, Jekyll, Jison, JQuery, Latte, ldpl, leo-editor, Lux, mal, MongoDB, MonkeyX, Nadesiko, Node.js, Nuua, packagist-pm, Pharen, Phel, PHP, POV-Ray SDL, PRQL, Pygments, ramen, SDMS, Slim Framework, SmallBASIC, SourcePawn, SQHTML, SRL, Swym, Textile, tht, ToonTalk, Twig, Typoscript, wasmer, WordPress, Yes It Is, Zephir
+
+&lt;?php
+
+echo &quot;Hello, world!\n&quot;;
+
+&lt;?php
+
+echo &#39;Hello World&#39;;
+
+&lt;?php
+  // Hello world in PHP
+  echo &#39;Hello World!&#39;;
+?&gt;
+
+#!/usr/bin/php
+&lt;?php
+
+echo &quot;PHP\n&quot;;
+
+class Person
+{
+    public $firstName;
+    public $lastName;
+
+    public function __construct(string $firstName, string $lastName = &#39;&#39;) { // optional second argument
+        $this-&gt;firstName = $firstName;
+        $this-&gt;lastName  = $lastName;
+    }
+
+    public function greet(): string {
+        return &#39;Hello, my name is &#39; . $this-&gt;firstName .
+               (($this-&gt;lastName != &#39;&#39;) ? (&#39; &#39; . $this-&gt;lastName) : &#39;&#39;) . &#39;.&#39;;
+    }
+
+    public static function staticGreet(string $firstName, string $lastName) {
+        return &#39;Hello, my name is &#39; . $firstName . &#39; &#39; . $lastName . &#39;.&#39;;
+    }
+}
+
+$he    = new Person(&#39;John&#39;, &#39;Smith&#39;);
+$she   = new Person(&#39;Sally&#39;, &#39;Davis&#39;);
+$other = new Person(&#39;iAmine&#39;);
+
+echo $he-&gt;greet(); // prints &quot;Hello, my name is John Smith.&quot;
+echo &#39;&lt;br /&gt;&#39;;
+
+echo $she-&gt;greet(); // prints &quot;Hello, my name is Sally Davis.&quot;
+echo &#39;&lt;br /&gt;&#39;;
+
+echo $other-&gt;greet(); // prints &quot;Hello, my name is iAmine.&quot;
+echo &#39;&lt;br /&gt;&#39;;
+
+echo Person::staticGreet(&#39;Jane&#39;, &#39;Doe&#39;); // prints &quot;Hello, my name is Jane Doe.&quot;
+
+__CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token echo
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Variadic Functions
+ FeatureLink ../features/hasVariadicFunctions.html
+ Supported ✓
+ Token 
+ Example
+  function sum(...$nums)
+  {
+      return array_sum($nums);
+  }
+  echo sum(1, 2, 3); // 6
+row
+ Feature Traits
+ FeatureLink ../features/hasTraits.html
+ Supported ✓
+ Token 
+ Example
+  // The template
+  trait TSingleton
+  {
+      private static $_instance = null;
+      private function __construct(){} // Must have private default constructor and be aware not to open it in the class
+      public static function getInstance()
+      {
+          if (null === self::$_instance)
+          {
+              self::$_instance = new self();
+          }
+          return self::$_instance;
+      }
+  }
+  class FrontController
+  {
+      use TSingleton;
+  }
+  // Can also be used in already extended classes
+  class WebSite extends SomeClass
+  {
+      use TSingleton;
+  }
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+  $xml = ✓
+ Token 
+ Example
+  ✓
+ Token 
+ Example
+  $name = "John"
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported ✓
+ Token 
+ Example
+  ✓
+ Token 
+ Example
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Magic Getters and Setters
+ FeatureLink ../features/hasMagicGettersAndSetters.html
+ Supported ✓
+ Token 
+ Example
+      public function __set($name, $value)
+     {
+         echo "Setting '$name' to '$value'\n";
+         $this->data[$name] = $value;
+     }
+  
+     public function __get($name)
+     {
+         echo "Getting '$name'\n";
+         if (array_key_exists($name, $this->data)) {
+             return $this->data[$name];
+         }
+  
+         $trace = debug_backtrace();
+         trigger_error(
+             'Undefined property via __get(): ' . $name .
+             ' in ' . $trace[0]['file'] .
+             ' on line ' . $trace[0]['line'],
+             E_USER_NOTICE);
+         return null;
+     }
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  "hello world"
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

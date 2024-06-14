@@ -1,0 +1,152 @@
+Applescript
+===========
+
+Applescript is an open source programming language created in 1993.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#264 on PLDB
+31 Years Old
+3k Repos
+
+AppleScript is a scripting language created by Apple Inc. and built into the Classic Mac OS since System 7 and into all versions of macOS. The term "AppleScript" may refer to the scripting system itself, to an individual script written in the AppleScript language, or to the language itself.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AppleScript
+
+- Applescript website
+ https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html
+- Applescript Wikipedia page
+ https://en.wikipedia.org/wiki/AppleScript
+- Applescript docs
+ https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
+- There are at least 3,425 Applescript repos on GitHub
+- Applescript first developed in Apple
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Applescript in 4k repos on GitHub
+- Explore Applescript snippets on Rosetta Code
+- Applescript on HOPL
+ https://hopl.info/showlanguage.prx?exp=1830
+- Applescript appears in the TIOBE Index
+- Pygments supports syntax highlighting for Applescript
+- GitHub supports syntax highlighting for Applescript
+- Indeed.com has 6 matches for "applescript developer".
+- See also: (10 related languages)HyperTalk, Rexx, HyperCard, iOS, XPath, JavaScript, Perl, Python, Ruby, Tcl
+
+display dialog &quot;Hello World&quot;
+
+-- &quot;Hello World&quot; in AppleScript:
+
+display dialog &quot;Hello World&quot;
+
+(*
+Get User Name
+
+This script uses UI element scripting to get the name for the
+current user.
+
+If &quot;Enable access for assistive devices&quot; is not checked,
+this script will open the Universal Access System Preference and ask
+the user to check the checkbox.
+
+Copyright 2007 Apple Inc.
+
+You may incorporate this Apple sample code into your program(s) without
+restriction.  This Apple sample code has been provided &quot;AS IS&quot; and the
+responsibility for its operation is yours.  You are not permitted to
+redistribute this Apple sample code as &quot;Apple sample code&quot; after having
+made changes.  If you&#39;re going to redistribute the code, we require
+that you make it clear that the code was descended from Apple sample
+code, but that you&#39;ve made changes.
+*)
+
+tell application &quot;System Preferences&quot;
+	activate
+	set current pane to pane &quot;com.apple.preferences.users&quot;
+end tell
+
+tell application &quot;System Events&quot;
+	if UI elements enabled then
+		tell tab group 1 of window &quot;Accounts&quot; of process &quot;System Preferences&quot;
+			click radio button 1
+			delay 2
+			get value of text field 1
+		end tell
+	else
+		tell application &quot;System Preferences&quot;
+			activate
+			set current pane to pane &quot;com.apple.preference.universalaccess&quot;
+			display dialog &quot;UI element scripting is not enabled. Check \&quot;Enable access for assistive devices\&quot;&quot;
+		end tell
+	end if
+end tell
+
+tell application &quot;Finder&quot;
+	set anyNumber to my (random number from 5 to 50)
+end tell
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- [-+]?\d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token display dialog
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

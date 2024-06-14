@@ -1,0 +1,18 @@
+import ../code/conceptPage.scroll
+
+id datomic
+name Datomic
+appeared 2012
+tags queryLanguage
+website https://docs.datomic.com/on-prem/query/query.html
+conceptDescription Datomic's query and rules system is an extended form of Datalog. Datalog is a deductive query system, typically consisting of: A database of facts; A set of rules for deriving new facts from existing facts; a query processor that, given some partial specification of a fact or rule: finds all matching facts.
+
+relatedConcepts edn datalog
+country United States
+originCommunity Cognitect, Inc
+
+example
+ [:find ?e
+  :where [?e :age 42]]
+
+semanticScholar 0

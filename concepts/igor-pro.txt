@@ -1,0 +1,78 @@
+IGOR Pro
+========
+
+IGOR Pro is a programming language created in 1993.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#549 on PLDB
+31 Years Old
+146 Repos
+
+IGOR Pro is a scientific data analysis software, numerical computing environment and programming language that runs on Windows or Mac operating systems. It is developed by WaveMetrics Inc., and was originally aimed at time series analysis, but has since then evolved and covers other applications such as curve fitting and image processing. It comes with a fully functional programming language and compiler, but many functions are also accessible through menus. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/IGOR_Pro
+
+- IGOR Pro Wikipedia page
+ https://en.wikipedia.org/wiki/IGOR_Pro
+- There are at least 146 IGOR Pro repos on GitHub
+- IGOR Pro first developed in WaveMetrics, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 48 users using IGOR Pro in 80 repos on GitHub
+- Pygments supports syntax highlighting for IGOR Pro
+- GitHub supports syntax highlighting for IGOR Pro
+- See also: (1 related languages)C
+- Read more about IGOR Pro on the web: 1.
+ https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech/1QMC8N6AyLw/1Vvaa5rZPBwJ
+- 1 languages in PLDB linking to IGOR Pro: cloc
+
+#pragma rtGlobals=3
+
+StrConstant myConstString=&quot;abcd&quot;
+// some comment
+constant myConst=123
+
+Structure struct1
+	string str
+	variable var
+EndStructure
+
+static Structure struct2
+	string str
+	variable var
+EndStructure
+
+#include &quot;someFile&quot;
+
+#ifdef NOT_DEFINED
+	// conditional compilation
+#endif
+
+override ThreadSafe MultiThread static Proc Picture Prompt DoPrompt macro window function end Structure EndStructure EndMacro Menu SubMenu
+
+Language features
+======================================================
+
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

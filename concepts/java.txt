@@ -1,0 +1,619 @@
+Java
+====
+
+Java is an open source programming language created in 1995 by James Gosling.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=James%20Gosling
+
+#4 on PLDB
+29 Years Old
+12m Repos
+
+git clone https://github.com/openjdk/jdk
+
+Try now: Riju · Replit
+
+Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Java_(programming_language)
+
+- Java website
+ https://openjdk.org/
+- Java downloads page
+ https://www.oracle.com/java/technologies/downloads/
+- Java Wikipedia page
+ https://en.wikipedia.org/wiki/Java_(programming_language)
+- Java is developed on GitHub and has 15,796 stars
+- Java specs
+ https://docs.oracle.com/javase/specs/
+- Java mailing list
+ https://mail.openjdk.org/mailman/listinfo
+- There are at least 11,529,980 Java repos on GitHub
+- Java first developed in Sun Microsystems
+- Java is written in Java, C++, XML, C, HTML, Bourne shell, XSD, Objective-C, Assembly language, XSLT, Markdown, DTD, M4, JavaScript, awk, SVG, Make, YAML, CSS, Bash, Korn shell, D, Perl, C shell, Python, SQL, sed, CSV, Metal, Ini, JSON, JSP, Expect, Diff
+- Java on Twitter
+ https://twitter.com/java
+- The  Google BigQuery Public Dataset GitHub snapshot shows 217k users using Java in 370k repos on GitHub
+- Check out the 2,090 Java meetup groups on Meetup.com.
+- There are 266,613 members in the Java subreddit
+- There are 29,675 Project Euler users using Java
+- In the 2021 StackOverflow developer survey Java programmers reported a median salary of $51,888. 35% of respondents reported using Java. 29,162 programmers reported using Java, and 17,222 said they wanted to use it
+- Explore Java snippets on Rosetta Code
+- Java on HOPL
+ https://hopl.info/showlanguage.prx?exp=2131
+- Java ranks #3 in the TIOBE Index
+- Java Ubuntu package
+ https://packages.ubuntu.com/jammy/openjdk-8-jdk
+- ANTLR grammar for Java
+- Java LSP implementation
+- Monaco package for syntax highlighting Java
+- Pygments supports syntax highlighting for Java
+- GitHub supports syntax highlighting for Java
+- Java appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Java
+- There are 2 central package repositories for Java: 1. 2.
+ https://search.maven.org/
+ https://mvnrepository.com/popular
+- Release Notes for Java
+ https://openjdk.org/projects/jdk-updates/
+- Official Blog page for Java
+ https://blogs.oracle.com/java/
+- Events page for Java
+ https://dev.java/community/events/
+- Indeed.com has 32,645 matches for "java engineer".
+- See also: (41 related languages)JavaScript, Pizza, Ada, C#, Eiffel, Mesa, Modula-3, Oberon, Objective-C, UCSD Pascal, Object Pascal, BeanShell, Chapel, Clojure, Fantom, Gambas, Groovy, Hack, J#, Kotlin, PHP, Python, Scala, Seed7, Vala, Java Bytecode, JVM, C, Oak, Linux, Solaris, ARM, Eclipse, HTML, HTTP, MIME, JSP, Motif, Android, XML, Java EE version history
+- 133 languages in PLDB linking to Java: Armed Bear Common Lisp, Ace Editor, Apache Hbase, Avail, Ballerina, Bazel, BeBasic, blz, Cali-Lang, categorical-query-language, Ceylon, Chapel, Ć, Claro, clay, Click, cloc, Clojure, Closure Templates, CouchDB, Curly, Cyber, Dafny, Deesel, dexvis, Differential Datalog, DRAKON, duro, dyvil, eC, Edina, Eiffel, elegance, Enso, Felix, Flare, FlatBuffers, Flix, Flow9, Frege, Fuzuli, GamerLanguage, Golo, Gradle, Halide, Haxe, Hadoop Distributed File System, hecl, HHVM, Idio, Idris, Impala, invokator, Ioke, Java, JavaScript, JFlex, JSLT, Jsonnet, k-framework, KamilaLisp, koara, Koka, Kotlin, lift, Linotte, lobster, Luna, Lux, mai, mal, Melody, Mirah, MongoDB, MonkeyX, NCAR Command Language, nesC, NetLogo, Nextflow, nianiolang, Nit, obsidian, Omgrofl, Opa, Opal, Oracle Java, P, Pan, partiql, passambler, pegdown, pinto, Pizza, Plaid, polyglot-compiler, Pomsky, Project Mentat, PRQL, Pygments, PyTorch, rainbow, Rakudo, React Native, Rebeca Modeling Language, Red, Revolution, Roc, RustScript, Rye, Scala.js, setlx, Simple Binary Encoding, skulpt, Smali, SmallBASIC, Snowball, tamgu, TensorFlow, txtzyme, Uno, Virgil, Wax, Whiley, Wonkey, Wyvern, Xgboost, XGBoost, Ecstasy, Xtext, YAWL, yeti, zenscript, zlang
+
+// Type your code here, or load an example.
+class Square {
+    static int square(int num) {
+        return num * num;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello, world!&quot;);
+    }
+}
+
+public class Java {
+	public static void main(String[] args) {
+		System.out.println(&quot;Hello World&quot;);
+	}
+}
+
+// Hello World in Java
+
+class HelloWorld {
+  static public void main( String args[] ) {
+    System.out.println( &quot;Hello World!&quot; );
+  }
+}
+
+/**
+ *   Copyright (c) Rich Hickey. All rights reserved.
+ *   The use and distribution terms for this software are covered by the
+ *   Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+ *   which can be found in the file epl-v10.html at the root of this distribution.
+ *   By using this software in any fashion, you are agreeing to be bound by
+ * 	 the terms of this license.
+ *   You must not remove this notice, or any other, from this software.
+ **/
+
+/* rich Apr 19, 2008 */
+
+package clojure.lang;
+
+import java.lang.ref.Reference;
+import java.math.BigInteger;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.lang.ref.SoftReference;
+import java.lang.ref.ReferenceQueue;
+
+public class Util{
+static public boolean equiv(Object k1, Object k2){
+	if(k1 == k2)
+		return true;
+	if(k1 != null)
+		{
+		if(k1 instanceof Number &amp;&amp; k2 instanceof Number)
+			return Numbers.equal((Number)k1, (Number)k2);
+		else if(k1 instanceof IPersistentCollection || k2 instanceof IPersistentCollection)
+			return pcequiv(k1,k2);
+		return k1.equals(k2);
+		}
+	return false;
+}
+
+static public boolean equiv(long k1, long k2){
+	return k1 == k2;
+}
+
+static public boolean equiv(Object k1, long k2){
+	return equiv(k1, (Object)k2);
+}
+
+static public boolean equiv(long k1, Object k2){
+	return equiv((Object)k1, k2);
+}
+
+static public boolean equiv(double k1, double k2){
+	return k1 == k2;
+}
+
+static public boolean equiv(Object k1, double k2){
+	return equiv(k1, (Object)k2);
+}
+
+static public boolean equiv(double k1, Object k2){
+	return equiv((Object)k1, k2);
+}
+
+static public boolean equiv(boolean k1, boolean k2){
+	return k1 == k2;
+}
+
+static public boolean equiv(Object k1, boolean k2){
+	return equiv(k1, (Object)k2);
+}
+
+static public boolean equiv(boolean k1, Object k2){
+	return equiv((Object)k1, k2);
+}
+
+static public boolean equiv(char c1, char c2) {
+    return c1 == c2;
+}
+
+static public boolean pcequiv(Object k1, Object k2){
+	if(k1 instanceof IPersistentCollection)
+		return ((IPersistentCollection)k1).equiv(k2);
+	return ((IPersistentCollection)k2).equiv(k1);
+}
+
+static public boolean equals(Object k1, Object k2){
+	if(k1 == k2)
+		return true;
+	return k1 != null &amp;&amp; k1.equals(k2);
+}
+
+static public boolean identical(Object k1, Object k2){
+	return k1 == k2;
+}
+
+static public Class classOf(Object x){
+	if(x != null)
+		return x.getClass();
+	return null;
+}
+
+static public int compare(Object k1, Object k2){
+	if(k1 == k2)
+		return 0;
+	if(k1 != null)
+		{
+		if(k2 == null)
+			return 1;
+		if(k1 instanceof Number)
+			return Numbers.compare((Number) k1, (Number) k2);
+		return ((Comparable) k1).compareTo(k2);
+		}
+	return -1;
+}
+
+static public int hash(Object o){
+	if(o == null)
+		return 0;
+	return o.hashCode();
+}
+
+static public int hasheq(Object o){
+	if(o == null)
+		return 0;
+	if(o instanceof Number)
+		return Numbers.hasheq((Number)o);
+	else if(o instanceof IHashEq)
+		return ((IHashEq)o).hasheq();
+	return o.hashCode();
+}
+
+static public int hashCombine(int seed, int hash){
+	//a la boost
+	seed ^= hash + 0x9e3779b9 + (seed &lt;&lt; 6) + (seed &gt;&gt; 2);
+	return seed;
+}
+
+static public boolean isPrimitive(Class c){
+	return c != null &amp;&amp; c.isPrimitive() &amp;&amp; !(c == Void.TYPE);
+}
+
+static public boolean isInteger(Object x){
+	return x instanceof Integer
+			|| x instanceof Long
+	        || x instanceof BigInt
+			|| x instanceof BigInteger;
+}
+
+static public Object ret1(Object ret, Object nil){
+		return ret;
+}
+
+static public ISeq ret1(ISeq ret, Object nil){
+		return ret;
+}
+
+static public &lt;K,V&gt; void clearCache(ReferenceQueue rq, ConcurrentHashMap&lt;K, Reference&lt;V&gt;&gt; cache){
+		//cleanup any dead entries
+	if(rq.poll() != null)
+		{
+		while(rq.poll() != null)
+			;
+		for(Map.Entry&lt;K, Reference&lt;V&gt;&gt; e : cache.entrySet())
+			{
+            Reference&lt;V&gt; val = e.getValue();
+			if(val != null &amp;&amp; val.get() == null)
+				cache.remove(e.getKey(), val);
+			}
+		}
+}
+
+static public RuntimeException runtimeException(String s){
+	return new RuntimeException(s);
+}
+
+static public RuntimeException runtimeException(String s, Throwable e){
+	return new RuntimeException(s, e);
+}
+
+/**
+ * Throw even checked exceptions without being required
+ * to declare them or catch them. Suggested idiom:
+ * &lt;p&gt;
+ * &lt;code&gt;throw sneakyThrow( some exception );&lt;/code&gt;
+ */
+static public RuntimeException sneakyThrow(Throwable t) {
+    // http://www.mail-archive.com/javaposse@googlegroups.com/msg05984.html
+	if (t == null)
+		throw new NullPointerException();
+	Util.&lt;RuntimeException&gt;sneakyThrow0(t);
+	return null;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+static private &lt;T extends Throwable&gt; void sneakyThrow0(Throwable t) throws T {
+	throw (T) t;
+}
+
+}
+
+// Hello.java (Java SE 5)
+import javax.swing.*;
+
+public class Hello extends JFrame {
+    public Hello() {
+        super(&quot;hello&quot;);
+        super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        super.add(new JLabel(&quot;Hello, world!&quot;));
+        super.pack();
+        super.setVisible(true);
+    }
+
+    public static void main(final String[] args) {
+        new Hello();
+    }
+}
+
+abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
+
+Language features
+======================================================
+
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01][01_]*[lL]?
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // 0|[1-9][0-9_]*[lL]?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[0-7_]+[lL]?
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token System.out.println
+ Example
+row
+ Feature Threads
+ FeatureLink ../features/hasThreads.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+  // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
+  // The first statement, other than comments, in a Java source file, must be the package declaration.
+  // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
+  // This source file must be Drawing.java in the illustration directory.
+  package illustration;
+  import java.awt.*;
+  public class Drawing {
+   // ...
+  }
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Iterators
+ FeatureLink ../features/hasIterators.html
+ Supported ✓
+ Token 
+ Example
+  Iterator iter = list.iterator();
+  //Iterator iter = list.iterator();    in J2SE 5.0
+  while (iter.hasNext()) {
+      System.out.print(iter.next());
+      if (iter.hasNext())
+          System.out.print(", ");
+  }
+row
+ Feature Interfaces
+ FeatureLink ../features/hasInterfaces.html
+ Supported ✓
+ Token 
+ Example
+  interface MyInterface{
+     /* This is a default method so we need not
+      * to implement this method in the implementation
+      * classes
+      */
+     default void newMethod(){
+         System.out.println("Newly added default method");
+     }
+     /* Already existing public and abstract method
+      * We must need to implement this method in
+      * implementation classes.
+      */
+     void existingMethod(String str);
+  }
+  public class Example implements MyInterface{
+    // implementing abstract method
+      public void existingMethod(String str){
+          System.out.println("String is: "+str);
+      }
+      public static void main(String[] args) {
+        Example obj = new Example();
+        
+        //calling the default method of interface
+          obj.newMethod();
+          //calling the abstract method of interface
+          obj.existingMethod("Java 8 is easy to learn");
+    
+      }
+  }
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import javax.swing.*;
+  import javax.swing.JOptionPane;
+  // use fully qualified name without import:
+  javax.swing.JOptionPane.showMessageDialog(null, "Hi");
+  // There are 166 packages containing 3279 classes and interfaces in Java 5.
+  // import java.io.*; Input-output classes.
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Single Dispatch
+ FeatureLink ../features/hasSingleDispatch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported ✓
+ Token 
+ Example
+  List v = new ArrayList();
+  v.add("test");
+  Integer i = v.get(0); // (type error)  compilation-time error
+row
+ Feature Assert Statements
+ FeatureLink ../features/hasAssertStatements.html
+ Supported ✓
+ Token 
+ Example
+  // By default, assertions are disabled
+  // java –enableassertions Test
+  int score = 10;
+  assert score >= 10 : " Below";
+  System.out.println("score is "+score);
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported X
+ Token 
+ Example
+row
+ Feature S-Expressions
+ FeatureLink ../features/hasSExpressions.html
+ Supported X
+ Token 
+ Example

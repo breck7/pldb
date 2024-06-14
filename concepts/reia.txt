@@ -1,0 +1,122 @@
+Reia
+====
+
+Reia is a programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#522 on PLDB
+16 Years Old
+
+git clone https://github.com/tarcieri/reia
+
+Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM
+
+- Reia website
+ http://reia-lang.org
+- Reia is developed on GitHub and has 777 stars
+- Reia first developed in https://github.com/tarcieri/reia/issues
+- Reia is written in Reason, Erlang, Bourne shell, Ruby, Markdown
+- reia-lang.org was registered in 2008
+- Read more about Reia on the web: 1.
+ http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html
+
+# Hello, world!
+&quot;Hello, world!&quot;.puts()
+
+# Assignment
+number = 42
+opposite = true
+
+# Conditions
+number = -42 if opposite
+
+# Lists (stored as immutable singly-linked lists)
+list = [1, 2, 3, 4, 5]
+
+# Tuples (think of them as immutable arrays)
+tuple = (1, 2, 3, 4, 5)
+
+# Atoms (known as symbols to Ruby people)
+# Think of them as an open-ended enumeration
+atom = :up_and_atom
+
+# Dicts (also known as hashes to Ruby people)
+dict = {:foo =&gt; 1, :bar =&gt; 2, :baz =&gt; 3}
+
+# Strings (unlike Erlang, Reia has a real String type!)
+string = &quot;I&#39;m a string! Woohoo I&#39;m a string! #{&#39;And I interpolate too!&#39;}&quot;
+
+# Ranges
+range = 0..42
+
+# Funs (anonymous functions, a.k.a. lambdas, procs, closures, etc.)
+# Calling me with plustwo(40) would return 42
+plustwo = fun(n) { n + 2 }
+
+# Modules (collections of functions)
+# Calling Plusser.addtwo(40) would return 42
+module Plusser
+  def addtwo(n)
+    n + 2
+  end
+end
+
+# Classes (of immutable objects. Once created objects can&#39;t be changed!)
+class Adder
+  # Reia supports binding instance variables directly when they&#39;re passed
+  # as arguments to initialize
+  def initialize(@n); end
+
+  def plus(n)
+    @n + n
+  end
+end
+
+# Instantiate classes by calling Classname(arg1, arg2, ...)
+# For you Ruby people who want Classname.new(...) this is coming soon!
+fortytwo = Adder(40).plus(2)
+
+# Function references can be obtained by omitting parens from a function call,
+# like JavaScript or Python
+numbers = [1,2,3]
+reverser = [1,2,3].reverse
+
+# Function references can be invoked just like lambdas
+reversed = reverser() # reversed is now [3,2,1]
+
+# You can add a ! to the end of any method to rebind the method receiver to
+# the return value of the given method minus the bang.
+numbers.reverse!() # numbers is now [3,2,1]
+
+# List comprehensions
+doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+
+HackerNews discussions of Reia
+==============================
+
+title|titleLink|date|score|comments
+Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|https://news.ycombinator.com/item?id=1889905|11/10/2010|2|1

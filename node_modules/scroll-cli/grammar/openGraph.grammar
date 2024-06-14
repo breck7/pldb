@@ -1,0 +1,8 @@
+descriptionParser
+ catchAllCellType stringCell
+ description Description for Open Graph. https://ogp.me/. If not defined, Scroll will try to generate it's own.
+ extends abstractTopLevelSingleMetaParser
+
+openGraphImageParser
+ description URL for Open Graph Image. https://ogp.me/. If not defined, Scroll will try to generate it's own using the first image tag on your page.
+ extends abstractUrlSettingParser

@@ -1,0 +1,36 @@
+RSS
+===
+
+RSS, aka Really Simple Syndication, is a protocol created in 1999 by Dan Libby and Ramanathan V. Guha.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Dan%20Libby
+ https://pldb.io/concepts/../lists/creators.html#q=Ramanathan%20V.%20Guha
+
+#2156 on PLDB
+25 Years Old
+
+- RSS Wikipedia page
+ https://en.wikipedia.org/wiki/RSS
+- RSS first developed in https://www.rssboard.org
+- 1 languages in PLDB linking to RSS: YESS
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;
+&lt;rss version=&quot;2.0&quot;&gt;
+&lt;channel&gt;
+ &lt;title&gt;&lt;/title&gt;
+ &lt;link&gt;https://pldb.io/&lt;/link&gt;
+ &lt;description&gt;PLDB: a Programming Language Database. Build the next great programming language.&lt;/description&gt;
+ &lt;lastBuildDate&gt;Wed, 22 Feb 2023 13:36:44 +0000&lt;/lastBuildDate&gt;
+ &lt;language&gt;en-us&lt;/language&gt;
+ &lt;item&gt;
+  &lt;title&gt;A brief interview with Tcl creator John Ousterhout&lt;/title&gt;
+  &lt;link&gt;https://pldb.io/posts/JohnOusterhout.html&lt;/link&gt;
+  &lt;pubDate&gt;Wed, 08 Feb 2023 00:00:00 +0000&lt;/pubDate&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;title&gt;Data entry Livestream&lt;/title&gt;
+  &lt;link&gt;https://pldb.io/posts/addingDataLivestream.html&lt;/link&gt;
+  &lt;pubDate&gt;Wed, 08 Feb 2023 00:00:00 +0000&lt;/pubDate&gt;
+ &lt;/item&gt;
+&lt;/channel&gt;
+&lt;/rss&gt;

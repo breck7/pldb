@@ -1,0 +1,118 @@
+NetLogo
+=======
+
+NetLogo is an open source programming language created in 1999 by Uri Wilensky.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Uri%20Wilensky
+
+#182 on PLDB
+25 Years Old
+4k Repos
+
+git clone https://github.com/NetLogo/NetLogo
+
+NetLogo is an agent-based programming language and integrated modeling environment.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/NetLogo
+
+- NetLogo website
+ http://ccl.northwestern.edu/netlogo/
+- NetLogo Wikipedia page
+ https://en.wikipedia.org/wiki/NetLogo
+- NetLogo is developed on GitHub and has 890 stars
+- There are at least 3,859 NetLogo repos on GitHub
+- NetLogo first developed in Northwestern University
+- NetLogo is written in Scala, Java, CSV, mustache, XML, Bourne shell, Markdown, YAML, HTML, XSLT, CSS, Bash, DTD
+- NetLogo on Twitter
+ https://twitter.com/netlogo
+- The  Google BigQuery Public Dataset GitHub snapshot shows 138 users using NetLogo in 154 repos on GitHub
+- Explore NetLogo snippets on Rosetta Code
+- NetLogo on HOPL
+ https://hopl.info/showlanguage.prx?exp=7674
+- GitHub supports syntax highlighting for NetLogo
+- See also: (5 related languages)StarLogo, Logo, ISBN, Scala, Java
+- 1 languages in PLDB linking to NetLogo: xTAO Modeling Language
+
+patches-own [
+  living?         ;; indicates if the cell is living
+  live-neighbors  ;; counts how many neighboring cells are alive
+]
+
+to setup-blank
+  clear-all
+  ask patches [ cell-death ]
+  reset-ticks
+end
+
+to setup-random
+  clear-all
+  ask patches
+    [ ifelse random-float 100.0 &lt; initial-density
+      [ cell-birth ]
+      [ cell-death ] ]
+  reset-ticks
+end
+
+to cell-birth
+  set living? true
+  set pcolor fgcolor
+end
+
+to cell-death
+  set living? false
+  set pcolor bgcolor
+end
+
+to go
+  ask patches
+    [ set live-neighbors count neighbors with [living?] ]
+  ;; Starting a new &quot;ask patches&quot; here ensures that all the patches
+  ;; finish executing the first ask before any of them start executing
+  ;; the second ask.  This keeps all the patches in synch with each other,
+  ;; so the births and deaths at each generation all happen in lockstep.
+  ask patches
+    [ ifelse live-neighbors = 3
+      [ cell-birth ]
+      [ if live-neighbors != 2
+        [ cell-death ] ] ]
+  tick
+end
+
+to draw-cells
+  let erasing? [living?] of patch mouse-xcor mouse-ycor
+  while [mouse-down?]
+    [ ask patch mouse-xcor mouse-ycor
+      [ ifelse erasing?
+        [ cell-death ]
+        [ cell-birth ] ]
+      display ]
+end
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id virgil
+name Virgil
+appeared 2006
+creators Ben L. Titzer
+tags pl
+
+writtenIn bash markdown c json assembly-language java typescript bourne-shell javascript make vim-script wasm cpp html yaml lisp toml python
+repoStats
+ firstCommit 2012
+ commits 2680
+ committers 28
+ files 22957
+ newestCommit 2024
+reference https://news.ycombinator.com/item?id=31954053
+
+example
+ def main() {
+    System.puts("Hello World!\n");
+ }
+leachim6 Virgil
+ filepath v/Virgil.v3
+ fileExtensions v3
+ example
+   def main() {
+          System.puts("Hello World\n");
+   }
+
+githubRepo https://github.com/titzer/virgil
+ firstCommit 2012
+ stars 323
+ forks 9
+ subscribers 10
+ created 2015
+ updated 2022
+ description A fast and lightweight native programming language
+ issues 5
+
+printToken System.puts
+
+hasPrintDebugging true

@@ -1,0 +1,71 @@
+import ../code/conceptPage.scroll
+
+id neko
+name Neko
+appeared 2005
+creators Nicolas Cannasse
+tags pl
+website https://nekovm.org/
+
+isOpenSource true
+writtenIn c cmake ocaml bourne-shell markdown yaml powershell json haxe xml toml
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Neko
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2005
+ commits 2531
+ committers 43
+ files 204
+ newestCommit 2024
+country Unknown
+originCommunity Haxe Foundation
+
+rijuRepl https://riju.codes/neko
+ example
+  $print("Hello, world!\n");
+  
+leachim6 Neko
+ filepath n/Neko.neko
+ fileExtensions neko
+ example
+  $print("Hello World\n");
+  
+
+githubRepo https://github.com/HaxeFoundation/neko
+ firstCommit 2005
+ stars 510
+ forks 101
+ subscribers 37
+ created 2013
+ updated 2022
+ description The Neko Virtual Machine
+ issues 53
+
+printToken $print
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Neko_(programming_language)
+ example
+  get_params = $loader.loadprim("mod_neko@get_params",0);
+  $print("PARAMS = "+get_params());
+ related c ocaml ia-32 linux haxe jvm groovy
+ summary Neko is a high-level dynamically typed programming language developed by Nicolas Cannasse as part of research and development (R&D) efforts at two indie video game firms in Bordeaux, France: first at Motion Twin and then at Shiro Games.
+ pageId 15110419
+ created 2008
+ backlinksCount 20
+ revisionCount 59
+ dailyPageViews 32
+ appeared 2005
+
+domainName nekovm.org
+ registered 2005
+ awisRank
+  2022 8443224
+
+isbndb 0
+
+semanticScholar 0

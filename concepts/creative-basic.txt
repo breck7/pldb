@@ -1,0 +1,64 @@
+Creative Basic
+==============
+
+Creative Basic is a programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2429 on PLDB
+16 Years Old
+
+Creative Basic (CB) is a third-generation event-driven programming language for Windows, with an integrated development environment (IDE). Current version executables are interpreted and require no runtime libraries be installed on the end-user's computer.  A planned future version will have compiled executables. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Creative_Basic
+
+- Creative Basic Wikipedia page
+ https://en.wikipedia.org/wiki/Creative_Basic
+
+def w:WINDOW
+def wstyle:INT
+
+wstyle = @SIZE|@MINBOX|@MAXBOX
+
+WINDOW w,50,50,800,600,wstyle,0,&quot;Window Title&quot;,main
+SETWINDOWCOLOR w,RGB(0,0,90)
+
+CONTROL w,&quot;B,Exit,(800-80)/2, 500, 80, 40, 0, 1&quot;
+
+WAITUNTIL w = 0
+END
+
+SUB main
+SELECT @CLASS
+	case @IDCLOSEWINDOW
+		closewindow w
+&#39; clicking the Exit button ...
+	case @IDCONTROL
+		select @CONTROLID
+			case 1
+				closewindow w
+		endselect
+endselect
+RETURN
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

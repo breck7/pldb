@@ -1,0 +1,25 @@
+import ../code/conceptPage.scroll
+
+id kivy-lang
+name kivy-lang
+appeared 2010
+tags pl
+conceptDescription A meta language that look like QML in QT
+
+country Various
+originCommunity https://github.com/kivy
+reference https://github.com/kivy/kivy/blob/master/kivy/data/style.kv
+
+example
+ #:kivy 1.0
+ Widget:
+     Button:
+         text: "Hello World"
+     Button:
+         text: "I'm another label"
+         pos: (200, 200)
+
+stringToken "
+
+hasStrings true
+ "Hello world"

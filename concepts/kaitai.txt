@@ -1,0 +1,39 @@
+kaitai
+======
+
+kaitai is an interface design language created in 2016 by Mikhail Yakshin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mikhail%20Yakshin
+
+#298 on PLDB
+8 Years Old
+
+git clone https://github.com/kaitai-io/kaitai_struct
+
+Try now: Web
+
+Kaitai Struct: declarative language to generate binary data parsers in C++ / C# / Go / Java / JavaScript / Lua / Perl / PHP / Python / Ruby
+
+- kaitai website
+ http://kaitai.io/
+- kaitai is developed on GitHub and has 3,040 stars
+- kaitai first developed in http://kaitai.io/
+- kaitai is written in Markdown, Bourne shell, YAML
+- kaitai on Twitter
+ https://twitter.com/kaitai_io
+- kaitai.io was registered in 2016
+- Read more about kaitai on the web: 1.
+ http://kaitai.io/
+
+meta:
+  id: tcp_segment
+  endian: be
+seq:
+  - id: src_port
+    type: u2
+  - id: dst_port
+    type: u2
+  - id: seq_num
+    type: u4
+  - id: ack_num
+    type: u4

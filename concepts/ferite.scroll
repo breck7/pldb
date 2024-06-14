@@ -1,0 +1,27 @@
+import ../code/conceptPage.scroll
+
+id ferite
+name Ferite
+appeared 2000
+tags pl
+
+rosettaCode http://www.rosettacode.org/wiki/Category:Ferite
+centralPackageRepositoryCount 0
+
+leachim6 Ferite
+ filepath f/Ferite.fe
+ fileExtensions fe
+ example
+  uses "console";
+  Console.println( "Hello World" );
+  
+
+printToken Console.println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Ferite
+ dailyPageViews -1

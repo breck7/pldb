@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id k
+name K
+appeared 1993
+creators Arthur Whitney
+tags pl
+conceptDescription K is like APL, but K restricts itself to the ASCII character set.
+
+fileType text
+wordRank 381
+rosettaCode http://www.rosettacode.org/wiki/Category:K
+centralPackageRepositoryCount 0
+country United States
+originCommunity Kx Systems
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+helloWorldCollection K
+ / Hello world in K
+ 
+ "Hello world!"
+pygmentsHighlighter K
+ filename q.py
+ fileExtensions k
+leachim6 K
+ filepath k/K.k
+ fileExtensions k
+ example
+  "Hello World\n"
+
+lineCommentToken /
+
+hasComments true
+hasLineComments true
+ / A comment
+hasSemanticIndentation false
+hasHexadecimals true
+ / [0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}
+hasFloats true
+ / ([0-9]*[.]?[0-9]+|[0-9]+[.]?[0-9]*)[eE][+-]?[0-9]+[ef]?
+hasIntegers true
+ / [0-9]+[ihtuv]
+hasBinaryNumbers true
+ / [01]+b
+
+wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
+ related scheme q apl sql j sql-92 solaris linux
+ summary K is a proprietary array processing language developed by Arthur Whitney and commercialized by Kx Systems. Since then, an open-source implementation known as Kona has also been developed. The language serves as the foundation for kdb+, an in-memory, column-based database, and other related financial products. The language, originally developed in 1993, is a variant of APL and contains elements of Scheme. Advocates of the language emphasize its speed, facility in handling arrays, and expressive syntax.
+ pageId 890956
+ dailyPageViews 113
+ created 2004
+ backlinksCount 42
+ revisionCount 221
+ appeared 1993
+
+hopl https://hopl.info/showlanguage.prx?exp=2142
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2012|Label-Based Programming Language Semantics in K Framework with SDF|10.1109/SYNASC.2012.23|5|0|Denis Bogdanas|2d2c7913677cd28c7d2717cf08f5a812349e5d16

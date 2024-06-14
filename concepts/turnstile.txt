@@ -1,0 +1,85 @@
+turnstile
+=========
+
+turnstile is a grammar language created in 2017 by Stephen Chang and Alex Knauth and Ben Greenman and Milo Turner and Michael Ballantyne.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Chang
+ https://pldb.io/concepts/../lists/creators.html#q=Alex%20Knauth
+ https://pldb.io/concepts/../lists/creators.html#q=Ben%20Greenman
+ https://pldb.io/concepts/../lists/creators.html#q=Milo%20Turner
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Ballantyne
+
+#2621 on PLDB
+7 Years Old
+
+- Read more about turnstile on the web: 1.
+ https://docs.racket-lang.org/turnstile/index.html
+
+#lang turnstile
+(provide → Int λ #%app #%datum + ann)
+ 
+(define-base-type Int)
+(define-type-constructor → #:arity &gt; 0)
+ 
+(define-primop + : (→ Int Int Int))
+ 
+; [APP]
+(define-typed-syntax (#%app e_fn e_arg ...) ≫
+  [⊢ e_fn ≫ e_fn- ⇒ (~→ τ_in ... τ_out)]
+  #:fail-unless (stx-length=? #&#39;[τ_in ...] #&#39;[e_arg ...])
+                (format &quot;arity mismatch, expected ~a args, given ~a&quot;
+                        (stx-length #&#39;[τ_in ...]) #&#39;[e_arg ...])
+  [⊢ e_arg ≫ e_arg- ⇐ τ_in] ...
+  --------
+  [⊢ (#%app- e_fn- e_arg- ...) ⇒ τ_out])
+ 
+; [LAM]
+(define-typed-syntax λ #:datum-literals (:)
+  [(_ ([x:id : τ_in:type] ...) e) ≫
+   [[x ≫ x- : τ_in.norm] ... ⊢ e ≫ e- ⇒ τ_out]
+   -------
+   [⊢ (λ- (x- ...) e-) ⇒ (→ τ_in.norm ... τ_out)]]
+  [(_ (x:id ...) e) ⇐ (~→ τ_in ... τ_out) ≫
+   [[x ≫ x- : τ_in] ... ⊢ e ≫ e- ⇐ τ_out]
+   ---------
+   [⊢ (λ- (x- ...) e-)]])
+ 
+; [ANN]
+(define-typed-syntax (ann e (~datum :) τ:type) ≫
+  [⊢ e ≫ e- ⇐ τ.norm]
+  --------
+  [⊢ e- ⇒ τ.norm])
+ 
+; [DATUM]
+(define-typed-syntax #%datum
+  [(_ . n:integer) ≫
+   --------
+   [⊢ (#%datum- . n) ⇒ Int]]
+  [(_ . x) ≫
+   --------
+   [#:error (type-error #:src #&#39;x
+                        #:msg &quot;Unsupported literal: ~v&quot; #&#39;x)]])
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

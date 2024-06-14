@@ -1,0 +1,33 @@
+MDL
+===
+
+MDL is a programming language created in 1971.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221971%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2007 on PLDB
+53 Years Old
+
+MDL (the MIT Design Language) is a descendant of the Lisp programming language. Its initial purpose was to provide high level language support for the Dynamic Modeling Group at MIT's Project MAC. It was initially developed in 1971 on the  PDP-10 computer under the Incompatible Timesharing System. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MDL_(programming_language)
+
+- MDL Wikipedia page
+ https://en.wikipedia.org/wiki/MDL_(programming_language)
+- MDL first developed in Massachusetts Institute of Technology
+- Explore MDL snippets on Rosetta Code
+- See also: (6 related languages)Scheme, Common Lisp, Java, Prolog, Smalltalk, Simula
+
+&lt;DEFINE EXIT-TO (EXITS RMS)
+        #DECL ((EXITS) EXIT (RMS) &lt;UVECTOR [REST ROOM]&gt;)
+        &lt;MAPF &lt;&gt;
+              &lt;FUNCTION (E)
+                 #DECL ((E) &lt;OR DIRECTION ROOM CEXIT NEXIT DOOR&gt;)
+                 &lt;COND (&lt;TYPE? .E DIRECTION&gt;)
+                       (&lt;AND &lt;TYPE? .E ROOM&gt; &lt;MEMQ .E .RMS&gt;&gt;
+                        &lt;MAPLEAVE T&gt;)
+                       (&lt;AND &lt;TYPE? .E CEXIT&gt; &lt;MEMQ &lt;2 .E&gt; .RMS&gt;&gt;
+                        &lt;MAPLEAVE T&gt;)
+                       (&lt;AND &lt;TYPE? .E DOOR&gt;
+                             &lt;OR &lt;MEMQ &lt;DROOM1 .E&gt; .RMS&gt;
+                                 &lt;MEMQ &lt;DROOM2 .E&gt; .RMS&gt;&gt;&gt;
+                        &lt;MAPLEAVE T&gt;)&gt;&gt;
+              .EXITS&gt;&gt;

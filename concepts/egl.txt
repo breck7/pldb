@@ -1,0 +1,71 @@
+EGL
+===
+
+EGL, aka Enterprise Generation Language, is a programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1042 on PLDB
+16 Years Old
+
+EGL (Enterprise Generation Language), originally developed by IBM and now available as the EDT (EGL Development Tools) Open Source project under the Eclipse Public License (EPL), is a programming technology designed to meet the challenges of modern, multi-platform application development by providing a common language and programming model across languages, frameworks, and runtime platforms. The language borrows concepts familiar to anyone using statically typed languages like Java, COBOL, C, etc. However, it borrows the concept of stereotype from Unified Modeling Language (UML) that is not typically found in statically typed programming languages. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/EGL_(programming_language)
+
+- EGL Wikipedia page
+ https://en.wikipedia.org/wiki/EGL_(programming_language)
+- EGL first developed in IBM
+- Explore EGL snippets on Rosetta Code
+- EGL on HOPL
+ https://hopl.info/showlanguage.prx?exp=7930
+- EGL appears in the TIOBE Index
+- See also: (10 related languages)Java, COBOL, C, UML, JavaScript, JVM, Linux, IBM System z, SOAP, RPG
+
+program HelloWorld
+    function main()
+        SysLib.writeStdout(&quot;Hello World&quot;);
+    end
+end
+
+1 package com.mycompany.ui;
+ 2
+ 3 import com.mycompany.services.Employee;
+ 4 import com.mycompany.services.EmployeeService;
+ 5 import dojo.widgets.DojoGrid;
+ 6 import dojo.widgets.DojoGridColumn;
+ 7
+ 8 handler EmployeeView type RUIhandler { initialUI = [ grid ],
+ 9                                        onConstructionFunction = start,
+10                                        cssFile = &quot;main.css&quot; }
+11
+12     grid DojoGrid { behaviors = [ ], headerBehaviors = [ ], columns = [
+13                     new DojoGridColumn { displayName = &quot;First Name&quot;, name = &quot;FIRSTNAME&quot; },
+14                     new DojoGridColumn { displayName = &quot;Last Name&quot;, name = &quot;LASTNAME&quot; },
+15                     new DojoGridColumn { displayName = &quot;Salary&quot;, name = &quot;SALARY&quot; }
+16             ] };
+17
+18     function start()
+19         svc EmployeeService { };
+20         call svc.getEmployees () returning to displayEmployees;
+21     end
+22
+23     function displayEmployees(retResult Employee [ ] in)
+24         grid.data = retResult as any [ ];
+25     end
+26
+27 end
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token SysLib.writeStdout
+ Example

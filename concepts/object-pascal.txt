@@ -1,0 +1,105 @@
+Object Pascal
+=============
+
+Object Pascal is a programming language created in 1986.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#461 on PLDB
+38 Years Old
+
+Object Pascal refers to a branch of object-oriented derivatives of Pascal, mostly known as the primary programming language of Embarcadero Delphi.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Object_Pascal
+
+- Object Pascal Wikipedia page
+ https://en.wikipedia.org/wiki/Object_Pascal
+- Object Pascal docs
+ https://castle-engine.io/modern_pascal
+- Object Pascal first developed in https://gitlab.com/groups/freepascal.org/fpc/-/issues
+- Object Pascal on HOPL
+ https://hopl.info/showlanguage.prx?exp=1170
+- See also: (24 related languages)X86, ARM, Free Pascal, PowerPC, SPARC, MIPS architecture, Oxygene, Java, JavaScript, Turbo Pascal, Pascal, Simula, Smalltalk, C#, Genie, Nim, iOS, Linux, FreeBSD, Solaris, Morfik, Visual Studio, Android, Delphi
+
+program ObjectPascalExample;
+
+type
+   THelloWorld = class
+      procedure Put;
+   end;
+
+procedure THelloWorld.Put;
+begin
+   Writeln(&#39;Hello World&#39;);
+end;
+
+var
+   HelloWorld: THelloWorld;
+
+begin
+   HelloWorld := THelloWorld.Create;
+   HelloWorld.Put;
+   HelloWorld.Free;
+end.
+
+type
+   THelloWorld = class
+      procedure Put;
+      begin
+         PrintLn(&#39;Hello, World!&#39;);
+      end
+   end;
+
+var HelloWorld := THelloWorld.Create;
+
+HelloWorld.Put;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token { }
+ Example
+  (* A comment
+  *)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* This is a multi-line comments
+   and it will span multiple lines. *)
+  { This is a single line comment in pascal }
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

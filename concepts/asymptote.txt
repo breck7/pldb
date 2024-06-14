@@ -1,0 +1,60 @@
+Asymptote
+=========
+
+Asymptote is an open source application created in 2004 by Andy Hammerlindl and John C. Bowman and Tom Prince.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Andy%20Hammerlindl
+ https://pldb.io/concepts/../lists/creators.html#q=John%20C.%20Bowman
+ https://pldb.io/concepts/../lists/creators.html#q=Tom%20Prince
+
+#907 on PLDB
+20 Years Old
+
+Try now: Riju
+
+Asymptote is a descriptive vector graphics language — developed by Andy Hammerlindl, John C. Bowman (University of Alberta), and Tom Prince — which provides a natural coordinate-based framework for technical drawing. Asymptote runs on all major platforms (Unix, Mac OS, Microsoft Windows). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Asymptote_(vector_graphics_language)
+
+- Asymptote Wikipedia page
+ https://en.wikipedia.org/wiki/Asymptote_(vector_graphics_language)
+- Asymptote first developed in University of Alberta
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Asymptote in 25 repos on GitHub
+- Explore Asymptote snippets on Rosetta Code
+- Pygments supports syntax highlighting for Asymptote
+- See also: (7 related languages)Unix, LaTeX, PostScript, PDF, SVG, Tex, Python
+
+write(&quot;Hello, world!&quot;);
+
+import graph;
+import settings;
+outformat=&quot;pdf&quot;;
+
+size(300,300);
+
+// Function.
+real[] x1 = {-1.5,0};
+real[] y1 = {0,0};
+real[] x2 = {0,1.5};
+real[] y2 = {1,1};
+draw(graph(x1,y1),red+2);
+draw(graph(x2,y2),red+2);
+
+draw((0,0)--(0,1),red+1.5+linetype(&quot;4 4&quot;));
+fill( circle((0,1),0.035), red);
+filldraw( circle((0,0),0.03), white, red+1.5);
+
+// Axes.
+xaxis( Label(&quot;$xTEMPLATEquot;), Ticks(new real[]{-1,-0.5,0.5,1}), Arrow);
+yaxis( Label(&quot;$yTEMPLATEquot;), Ticks(new real[]{0.5,1}), Arrow, ymin=-0.18, ymax=1.25);
+// Origin.
+labelx(&quot;$OTEMPLATEquot;,0,SW);
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

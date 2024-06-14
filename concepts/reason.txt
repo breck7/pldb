@@ -1,0 +1,663 @@
+Reason
+======
+
+Reason is an open source programming language created in 2016.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#53 on PLDB
+8 Years Old
+2k Repos
+
+git clone https://github.com/facebook/reason
+
+Try now: Riju · TIO
+
+Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
+
+- Reason website
+ https://reasonml.github.io/
+- Reason is developed on GitHub and has 9,670 stars
+- Reason docs
+ https://reasonml.github.io/docs/en/what-and-why
+- There are at least 1,924 Reason repos on GitHub
+- Reason first developed in Facebook
+- Reason compiles to OCaml
+- Reason is written in OCaml, Reason, Markdown, JSON, Bourne shell, Diff, Make, JavaScript, YAML, Nix, HTML, Bash
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Reason in 24 repos on GitHub
+- Check out the 11 Reason meetup groups on Meetup.com.
+- Explore Reason snippets on Rosetta Code
+- Reason LSP implementation
+- Pygments supports syntax highlighting for Reason
+- GitHub supports syntax highlighting for Reason
+- Official Blog page for Reason
+ https://reasonml.github.io/blog/
+- 12 languages in PLDB linking to Reason: Caramel, cloc, hazel, Kotlin, Ligo, MongoDB, PHP, Pygments, Reason, Reia, Sophia, xodio
+
+type schoolPerson = Teacher | Director | Student(string);
+
+let greeting = person =&gt;
+  switch (person) {
+  | Teacher =&gt; &quot;Hey Professor!&quot;
+  | Director =&gt; &quot;Hello Director.&quot;
+  | Student(&quot;Richard&quot;) =&gt; &quot;Still here Ricky?&quot;
+  | Student(anyOtherName) =&gt; &quot;Hey, &quot; ++ anyOtherName ++ &quot;.&quot;
+  };
+
+print_string(&quot;Hello, world!\n&quot;);
+
+print_string &quot;Hello World&quot;
+
+type component = {displayName: string};
+
+let module Bar = {
+  let createElement c::c=? children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Nesting = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Much = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Foo = {
+  let createElement a::a=? b::b=? children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module One = {
+  let createElement
+      test::test=?
+      foo::foo=?
+      children =&gt; {
+    displayName: &quot;test&quot;
+  };
+  let createElementobvioustypo
+      test::test
+      children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Two = {
+  let createElement foo::foo=? children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Sibling = {
+  let createElement
+      foo::foo=?
+      (children: list component) =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Test = {
+  let createElement yo::yo=? children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module So = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Foo2 = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Text = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Exp = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Pun = {
+  let createElement intended::intended=? children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module Namespace = {
+  let module Foo = {
+    let createElement
+        intended::intended=?
+        anotherOptional::x=100
+        children =&gt; {
+      displayName: &quot;test&quot;
+    };
+  };
+};
+
+let module LotsOfArguments = {
+  let createElement
+      argument1::argument1=?
+      argument2::argument2=?
+      argument3::argument3=?
+      argument4::argument4=?
+      argument5::argument5=?
+      argument6::argument6=?
+      children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let div argument1::argument1=? children =&gt; {
+  displayName: &quot;test&quot;
+};
+
+let module List1 = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module List2 = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let module List3 = {
+  let createElement children =&gt; {
+    displayName: &quot;test&quot;
+  };
+};
+
+let (/&gt;&lt;) a b =&gt; a + b;
+
+let (&gt;&lt;) a b =&gt; a + b;
+
+let (/&gt;) a b =&gt; a + b;
+
+let (&gt;&lt;\/) a b =&gt; a + b;
+
+let tag1 = 5 /&gt;&lt; 6;
+
+let tag2 = 5 &gt;&lt; 7;
+
+let tag3 = 5 /&gt; 7;
+
+let tag4 = 5 &gt;&lt;\/ 7;
+
+let b = 2;
+
+let selfClosing = &lt;Foo /&gt;;
+
+let selfClosing2 = &lt;Foo a=1 b=true /&gt;;
+
+let selfClosing3 =
+  &lt;Foo
+    a=&quot;really long values that should&quot;
+    b=&quot;cause the entire thing to wrap&quot;
+  /&gt;;
+
+let a = &lt;Foo&gt; &lt;Bar c=(fun a =&gt; a + 2) /&gt; &lt;/Foo&gt;;
+
+let a3 = &lt;So&gt; &lt;Much&gt; &lt;Nesting /&gt; &lt;/Much&gt; &lt;/So&gt;;
+
+let a4 =
+  &lt;Sibling&gt;
+    &lt;One test=true foo=b /&gt;
+    &lt;Two foo=b /&gt;
+  &lt;/Sibling&gt;;
+
+let a5 = &lt;Foo&gt; &quot;testing a string here&quot; &lt;/Foo&gt;;
+
+let a6 =
+  &lt;Foo2&gt;
+    &lt;Text&gt; &quot;testing a string here&quot; &lt;/Text&gt;
+    &lt;Test yo=1 /&gt;
+    &lt;Text&gt; &quot;another string&quot; &lt;/Text&gt;
+    &lt;Bar /&gt;
+    &lt;Exp&gt; (2 + 4) &lt;/Exp&gt;
+  &lt;/Foo2&gt;;
+
+let intended = true;
+
+let punning = &lt;Pun intended /&gt;;
+
+let namespace = &lt;Namespace.Foo /&gt;;
+
+let c = &lt;Foo /&gt;;
+
+let d = &lt;Foo /&gt;;
+
+let spaceBefore =
+  &lt;So&gt; &lt;Much&gt; &lt;Nesting /&gt; &lt;/Much&gt; &lt;/So&gt;;
+
+let spaceBefore2 = &lt;So&gt; &lt;Much /&gt; &lt;/So&gt;;
+
+let siblingNotSpaced =
+  &lt;So&gt; &lt;Much /&gt; &lt;Much /&gt; &lt;/So&gt;;
+
+let jsxInList = [&lt;Foo /&gt;];
+
+let jsxInList2 = [&lt;Foo /&gt;];
+
+let jsxInListA = [&lt;Foo /&gt;];
+
+let jsxInListB = [&lt;Foo /&gt;];
+
+let jsxInListC = [&lt;Foo /&gt;];
+
+let jsxInListD = [&lt;Foo /&gt;];
+
+let jsxInList3 = [&lt;Foo /&gt;, &lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let jsxInList4 = [&lt;Foo /&gt;, &lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let jsxInList5 = [&lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let jsxInList6 = [&lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let jsxInList7 = [&lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let jsxInList8 = [&lt;Foo /&gt;, &lt;Foo /&gt;];
+
+let testFunc b =&gt; b;
+
+let jsxInFnCall = testFunc &lt;Foo /&gt;;
+
+let lotsOfArguments =
+  &lt;LotsOfArguments
+    argument1=1
+    argument2=2
+    argument3=3
+    argument4=4
+    argument5=5
+    argument6=&quot;test&quot;&gt;
+    &lt;Namespace.Foo /&gt;
+  &lt;/LotsOfArguments&gt;;
+
+let lowerCase = &lt;div argument1=1 /&gt;;
+
+let b = 0;
+
+let d = 0;
+
+/*
+ * Should pun the first example:
+ */
+let a = &lt;Foo a&gt; 5 &lt;/Foo&gt;;
+
+let a = &lt;Foo a=b&gt; 5 &lt;/Foo&gt;;
+
+let a = &lt;Foo a=b b=d&gt; 5 &lt;/Foo&gt;;
+
+let a = &lt;Foo a&gt; 0.55 &lt;/Foo&gt;;
+
+let a = Foo.createElement &quot;&quot; [@JSX];
+
+let ident = &lt;Foo&gt; a &lt;/Foo&gt;;
+
+let fragment1 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment2 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment3 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment4 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment5 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment6 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment7 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment8 = &lt;&gt; &lt;Foo /&gt; &lt;Foo /&gt; &lt;/&gt;;
+
+let fragment9 = &lt;&gt; 2 2 2 2 &lt;/&gt;;
+
+let fragment10 = &lt;&gt; 2.2 3.2 4.6 1.2 &lt;/&gt;;
+
+let fragment11 = &lt;&gt; &quot;str&quot; &lt;/&gt;;
+
+let fragment12 = &lt;&gt; (6 + 2) (6 + 2) (6 + 2) &lt;/&gt;;
+
+let fragment13 = &lt;&gt; fragment11 fragment11 &lt;/&gt;;
+
+let listOfItems1 = &lt;List1&gt; 1 2 3 4 5 &lt;/List1&gt;;
+
+let listOfItems2 =
+  &lt;List2&gt; 1.0 2.8 3.8 4.0 5.1 &lt;/List2&gt;;
+
+let listOfItems3 =
+  &lt;List3&gt; fragment11 fragment11 &lt;/List3&gt;;
+
+/*
+ * Several sequential simple jsx expressions must be separated with a space.
+ */
+let thisIsRight a b =&gt; ();
+
+let tagOne children =&gt; ();
+
+let tagTwo children =&gt; ();
+
+/* thisIsWrong &lt;tagOne /&gt;&lt;tagTwo /&gt;; */
+thisIsRight &lt;tagOne /&gt; &lt;tagTwo /&gt;;
+
+/* thisIsWrong &lt;tagOne&gt; &lt;/tagOne&gt;&lt;tagTwo&gt; &lt;/tagTwo&gt;; */
+thisIsRight &lt;tagOne /&gt; &lt;tagTwo /&gt;;
+
+let a children =&gt; ();
+
+let b children =&gt; ();
+
+let thisIsOkay =
+  &lt;List1&gt; &lt;a /&gt; &lt;b /&gt; &lt;a /&gt; &lt;b /&gt; &lt;/List1&gt;;
+
+let thisIsAlsoOkay =
+  &lt;List1&gt; &lt;a /&gt; &lt;b /&gt; &lt;/List1&gt;;
+
+/* Doesn&#39;t make any sense, but suppose you defined an
+   infix operator to compare jsx */
+&lt;a /&gt; &lt; &lt;b /&gt;;
+
+&lt;a /&gt; &gt; &lt;b /&gt;;
+
+&lt;a /&gt; &lt; &lt;b /&gt;;
+
+&lt;a /&gt; &gt; &lt;b /&gt;;
+
+let listOfListOfJsx = [&lt;&gt; &lt;/&gt;];
+
+let listOfListOfJsx = [&lt;&gt; &lt;Foo /&gt; &lt;/&gt;];
+
+let listOfListOfJsx = [
+  &lt;&gt; &lt;Foo /&gt; &lt;/&gt;,
+  &lt;&gt; &lt;Bar /&gt; &lt;/&gt;
+];
+
+let listOfListOfJsx = [
+  &lt;&gt; &lt;Foo /&gt; &lt;/&gt;,
+  &lt;&gt; &lt;Bar /&gt; &lt;/&gt;,
+  ...listOfListOfJsx
+];
+
+let sameButWithSpaces = [&lt;&gt; &lt;/&gt;];
+
+let sameButWithSpaces = [&lt;&gt; &lt;Foo /&gt; &lt;/&gt;];
+
+let sameButWithSpaces = [
+  &lt;&gt; &lt;Foo /&gt; &lt;/&gt;,
+  &lt;&gt; &lt;Bar /&gt; &lt;/&gt;
+];
+
+let sameButWithSpaces = [
+  &lt;&gt; &lt;Foo /&gt; &lt;/&gt;,
+  &lt;&gt; &lt;Bar /&gt; &lt;/&gt;,
+  ...sameButWithSpaces
+];
+
+/*
+ * Test named tag right next to an open bracket.
+ */
+let listOfJsx = [];
+
+let listOfJsx = [&lt;Foo /&gt;];
+
+let listOfJsx = [&lt;Foo /&gt;, &lt;Bar /&gt;];
+
+let listOfJsx = [&lt;Foo /&gt;, &lt;Bar /&gt;, ...listOfJsx];
+
+let sameButWithSpaces = [];
+
+let sameButWithSpaces = [&lt;Foo /&gt;];
+
+let sameButWithSpaces = [&lt;Foo /&gt;, &lt;Bar /&gt;];
+
+let sameButWithSpaces = [
+  &lt;Foo /&gt;,
+  &lt;Bar /&gt;,
+  ...sameButWithSpaces
+];
+
+/**
+ * Test no conflict with polymorphic variant types.
+ */
+type thisType = [ | `Foo | `Bar];
+
+type t &#39;a = [&lt; thisType] as &#39;a;
+
+let asd =
+  &lt;One test=true foo=2&gt; &quot;a&quot; &quot;b&quot; &lt;/One&gt; [@foo];
+
+let asd2 =
+  One.createElementobvioustypo
+  test::false
+  [&quot;a&quot;, &quot;b&quot;]
+  [@JSX]
+  [@foo];
+
+let span
+    test::(test: bool)
+    foo::(foo: int)
+    children =&gt; 1;
+
+let asd =
+  &lt;span test=true foo=2&gt; &quot;a&quot; &quot;b&quot; &lt;/span&gt; [@foo];
+
+/* &quot;video&quot; call doesn&#39;t end with a list, so the expression isn&#39;t converted to JSX */
+let video test::(test: bool) children =&gt; children;
+
+let asd2 = video test::false 10 [@JSX] [@foo];
+
+let div children =&gt; 1;
+
+((fun () =&gt; div) ()) [] [@JSX];
+
+let myFun () =&gt;
+  &lt;&gt;
+    &lt;Namespace.Foo
+      intended=true
+      anotherOptional=200
+    /&gt;
+    &lt;Namespace.Foo
+      intended=true
+      anotherOptional=200
+    /&gt;
+    &lt;Namespace.Foo
+      intended=true anotherOptional=200&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+    &lt;/Namespace.Foo&gt;
+  &lt;/&gt;;
+
+let myFun () =&gt; &lt;&gt; &lt;/&gt;;
+
+let myFun () =&gt;
+  &lt;&gt;
+    &lt;Namespace.Foo
+      intended=true
+      anotherOptional=200
+    /&gt;
+    &lt;Namespace.Foo
+      intended=true
+      anotherOptional=200
+    /&gt;
+    &lt;Namespace.Foo
+      intended=true anotherOptional=200&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+      &lt;Foo /&gt;
+    &lt;/Namespace.Foo&gt;
+  &lt;/&gt;;
+
+/**
+ * Children should wrap without forcing attributes to.
+ */
+&lt;Foo a=10 b=0&gt;
+  &lt;Bar /&gt;
+  &lt;Bar /&gt;
+  &lt;Bar /&gt;
+  &lt;Bar /&gt;
+&lt;/Foo&gt;;
+/**
+ * Failing test cases:
+ */
+/* let res = &lt;Foo a=10 b=(&lt;Foo a=200 /&gt;) &gt; */
+/*   &lt;Bar /&gt; */
+/* &lt;/Foo&gt;; */
+/* let res = &lt;Foo a=10 b=(&lt;Foo a=200 /&gt;) /&gt;; */
+
+as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01][01_]*
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // \d[\d_]*
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][\da-fA-F][\da-fA-F_]*
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[oO][0-7][0-7_]*
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print_string
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Destructuring
+ FeatureLink ../features/hasDestructuring.html
+ Supported ✓
+ Token 
+ Example
+  type person = {name: string, age: int};
+  let somePerson = {name: "Guy", age: 30};
+  let {name, age} = somePerson;
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

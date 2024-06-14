@@ -1,0 +1,191 @@
+Croc
+====
+
+Croc is a programming language created in 2006 by Jarrett Billingsley.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jarrett%20Billingsley
+
+#695 on PLDB
+18 Years Old
+
+git clone https://github.com/JarrettBillingsley/Croc
+
+The MiniD (has been renamed Croc) programming language is a small, lightweight, extension language in the vein of Lua or Squirrel, but designed to be used mainly with the D programming language.  It supports both object-oriented and imperative programming paradigms, as well as some simple functional aspects. Distributed under the licence of zlib/libpng, MiniD is free software.. Read more on Wikipedia...
+ https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
+
+- Croc website
+ https://web.archive.org/web/20120625151120/http://jfbillingsley.com/croc/
+- Croc Wikipedia page
+ https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
+- Croc is developed on GitHub and has 74 stars
+- Croc first developed in http://www.dsource.org/projects/minid
+- Croc is written in C++, XML, CMake, Markdown, HTML, CSS, Python, Vim script
+- Pygments supports syntax highlighting for Croc
+- See also: (7 related languages)D, Lua, Squirrel, Python, Io, JavaScript, C
+- 1 languages in PLDB linking to Croc: MiniD
+
+module samples.interfaces
+
+class Method
+{
+    _name
+    _numParams
+
+    this(name: string, numParams: int)
+    {
+        :_name = name
+        :_numParams = numParams
+    }
+
+    function name() =
+        :_name
+
+    function implements(f: function) =
+        f.numParams() == :_numParams
+
+    function toString() =
+        &quot;{} ({} params)&quot;.format(:_name, :_numParams)
+}
+
+class Interface
+{
+    _name
+    _methods
+    _implementors
+
+    this(name: string, methods: array)
+    {
+        if(!methods.all(\m -&gt; m as Method))
+            throw TypeError(&quot;All methods must be Methods&quot;)
+
+        :_name = name
+        :_methods = methods.dup()
+        :_implementors = {}
+    }
+
+    function implement(T: class)
+    {
+        foreach(m; :_methods)
+        {
+            local name = m.name()
+
+            if(!hasMethod(T, name) || !m.implements(T.(name)))
+                throw TypeError(&quot;Class {} does not implement method &#39;{}&#39; from {}&quot;.format(nameOf(T), m, :_name))
+        }
+
+        :_implementors[T] = true
+    }
+
+    function opCall(val: instance)
+    {
+        if(superOf(val) not in :_implementors)
+            :implement(superOf(val))
+
+        return true
+    }
+}
+
+function implements(T: class, vararg)
+{
+    for(i; 0 .. #vararg)
+    {
+        local p = vararg[i]
+
+        if(!(p as Interface))
+            throw TypeError(&quot;All varargs must be Interfaces&quot;)
+
+        p.implement(T)
+    }
+
+    return T
+}
+
+local IStream = Interface(&quot;IStream&quot;,
+[
+    Method(&quot;read&quot;, 3)
+    Method(&quot;write&quot;, 3)
+    Method(&quot;seek&quot;, 2)
+])
+
+class DerpStream
+{
+    function read(m, offset, size) {}
+    function write(m, offset, size) {}
+    function seek(offset, whence) {}
+}
+
+function streamSomething(s: @IStream)
+{
+    s.read()
+    writeln(&quot;yay!&quot;)
+}
+
+function main()
+{
+    local d = DerpStream()
+    streamSomething(d)
+}
+
+function first(x: array|string) = x[0]
+
+ writeln(first([1, 2, 3])) // prints 1
+ writeln(first(&quot;hello&quot;))   // prints h
+ writeln(first(45))        // error, invalid parameter type &#39;int&#39;
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01][01_]*
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*)(?![.eE])
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

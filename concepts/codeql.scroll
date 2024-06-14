@@ -1,0 +1,48 @@
+import ../code/conceptPage.scroll
+
+id codeql
+name CodeQL
+appeared 2018
+creators Pavel Avgustinov
+tags queryLanguage
+website https://codeql.github.com/
+conceptDescription CodeQL let's you query code as if it were data.
+
+fileExtensions ql
+repoStats
+ firstCommit 2018
+ commits 57878
+ committers 480
+ files 42417
+originCommunity GitHub
+reference https://www.cyberark.com/resources/threat-research-blog/make-memcpy-safe-again-codeql
+
+example
+ from DataFlow::PathNode source, DataFlow::PathNode sink, UnsafeDeserializationConfig conf
+   
+           where conf.hasFlowPath(source, sink)
+   
+           select sink.getNode().(UnsafeDeserializationSink).getMethodAccess(), source, sink,
+       "Unsafe deserialization of $@.", source.getNode(), "user input"
+
+githubRepo https://github.com/github/codeql
+ firstCommit 2018
+ stars 5035
+ forks 1089
+ subscribers 191
+ created 2018
+ updated 2022
+ description CodeQL: the libraries and queries that power security researchers around the world, as well as code scanning in GitHub Advanced Security (code scanning), LGTM.com, and LGTM Enterprise
+ issues 736
+
+githubBigQuery CodeQL
+ repos 25
+ users 23
+
+githubLanguage CodeQL
+ type programming
+ fileExtensions ql qll
+ aceMode text
+ tmScope source.ql
+ aliases ql
+ repos 3559

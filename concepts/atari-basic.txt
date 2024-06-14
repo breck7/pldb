@@ -1,0 +1,20 @@
+Atari BASIC
+===========
+
+Atari BASIC is a programming language created in 1983.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2082 on PLDB
+41 Years Old
+
+Atari BASIC is an interpreter for the BASIC programming language that shipped with the Atari 8-bit family of 6502-based home computers. Unlike most 8-bit BASICs, Atari BASIC is not a derivative of Microsoft BASIC, and differs in significant ways. It includes keywords for Atari-specific features and lacks support for string arrays, for example. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Atari_BASIC
+
+- Atari BASIC Wikipedia page
+ https://en.wikipedia.org/wiki/Atari_BASIC
+- Atari BASIC first developed in Shepardson Microsystems
+- See also: (10 related languages)Atari Microsoft BASIC, Atari ST BASIC, BASIC Programming, Microsoft BASIC, BASIC, Applesoft BASIC, BASIC-PLUS, HP Time-Shared BASIC, Optimized Systems Software, Turbo-Basic XL
+- 1 languages in PLDB linking to Atari BASIC: Turbo-Basic XL
+
+10 REM Opens the cassette device on channel 1 for reading in BASIC
+20 OPEN #1,4,0,&quot;C:MYPROG.DAT&quot;

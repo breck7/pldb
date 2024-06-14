@@ -1,0 +1,115 @@
+SuperCollider
+=============
+
+SuperCollider is an open source programming language created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#368 on PLDB
+28 Years Old
+4k Repos
+
+SuperCollider is an environment and programming language originally released in 1996 by James McCartney for real-time audio synthesis and algorithmic composition. Since then it has been evolving into a system used and further developed by both scientists and artists working with sound. It is an efficient and expressive dynamic programming language providing a framework for acoustic research, algorithmic music, interactive programming and live coding. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SuperCollider
+
+- SuperCollider website
+ http://supercollider.github.io
+- SuperCollider Wikipedia page
+ https://en.wikipedia.org/wiki/SuperCollider
+- SuperCollider docs
+ https://doc.sccode.org/
+- There are at least 3,782 SuperCollider repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using SuperCollider in 4k repos on GitHub
+- Explore SuperCollider snippets on Rosetta Code
+- SuperCollider on HOPL
+ https://hopl.info/showlanguage.prx?exp=6465
+- SuperCollider appears in the TIOBE Index
+- Pygments supports syntax highlighting for SuperCollider
+- GitHub supports syntax highlighting for SuperCollider
+- See also: (14 related languages)FreeBSD, Linux, Smalltalk, C, Lisp, Pure Data, Scheme, Haskell, Scala, Clojure, Android, iOS, Emacs, Vim
+
+&quot;Hello World&quot;.postln;
+
+// Hello World in SuperCollider
+
+&quot;Hello, world!&quot;.postln;
+
+WarpPreset {
+	*new {|path|
+		if(path.notNil) {
+			^Object.readArchive(path);
+		};
+
+		^super.new.init();
+	}
+
+	init {
+
+	}
+
+	save {
+		Dialog.savePanel({|path|
+			this.writeArchive(path);
+		});
+	}
+}
+
+// Factorial function
+f = { |x| if(x == 0) { 1 } { f.(x-1) * x } };
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0x[0-9a-fA-F]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token postln
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

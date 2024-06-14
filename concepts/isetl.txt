@@ -1,0 +1,49 @@
+ISETL
+=====
+
+ISETL is a programming language created in 1989 by Jacob T. Schwartz.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jacob%20T.%20Schwartz
+
+#1633 on PLDB
+35 Years Old
+
+SETL (SET Language) is a very high-level programming language based on the mathematical theory of sets.  It was originally developed by (Jack) Jacob T. Schwartz at the New York University (NYU) Courant Institute of Mathematical Sciences in the late 1960s.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
+
+- ISETL Wikipedia page
+ https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
+- ISETL first developed in Clarkson University
+- ISETL on HOPL
+ https://hopl.info/showlanguage.prx?exp=2123
+- See also: (4 related languages)ALGOL 60, ABC, Ada, Python
+- Read more about ISETL on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe916e
+
+procedure factorial(n); -- calculates the factorial n!
+  return if n = 1 then 1 else n * factorial(n - 1) end if;
+end factorial;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

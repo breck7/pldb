@@ -1,0 +1,101 @@
+Dafny
+=====
+
+Dafny is an open source programming language created in 2009 by K. Rustan M. Leino.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=K.%20Rustan%20M.%20Leino
+
+#224 on PLDB
+15 Years Old
+157 Repos
+
+git clone https://github.com/Microsoft/dafny
+
+Try now: Riju · TIO
+
+Dafny is an imperative compiled language that targets C# and supports formal specification through preconditions, postconditions, loop invariants and loop variants.  The language combines ideas primarily from the Functional and Imperative paradigms, and includes limited support for Object-Oriented Programming.  Features include generic classes, dynamic allocation, inductive datatypes and a variation of separation logic known as implicit dynamic frames for reasoning about side effects. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Dafny_(programming_language)
+
+- Dafny website
+ https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/
+- Dafny Wikipedia page
+ https://en.wikipedia.org/wiki/Dafny_(programming_language)
+- Dafny is developed on GitHub and has 1,714 stars
+- There are at least 157 Dafny repos on GitHub
+- Dafny first developed in Microsoft
+- Dafny is written in C#, Markdown, Java, YAML, F#, TOML, Python, Go, XML, HTML, Make, Bash, JavaScript, Tex, Bourne shell, Gradle, CSS, JSON, Rust, Diff, SVG
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Dafny in 1 repos on GitHub
+- Explore Dafny snippets on Rosetta Code
+- Dafny Ubuntu package
+ https://packages.ubuntu.com/jammy/dafny
+- Dafny appears in the Quine Relay project
+- See also: (5 related languages)C#, Spec Sharp, Apache Spark, Idris, Agda
+
+method Main() {
+  print &quot;Hello, world!\n&quot;;
+}
+
+// Hello world in Dafny
+
+method Main() {
+  print &quot;Hello, World!\n&quot;;
+}
+
+datatype List = Nil | Link(data:int,next:List)
+
+function sum(l:List): int {
+  match l
+    case Nil =&gt; 0
+    case Link(d,n) =&gt; d + sum(n)
+}
+
+predicate isNatList(l:List) {
+  match l
+    case Nil =&gt; true
+    case Link(d,n) =&gt; d &gt;= 0 &amp;&amp; isNatList(n)
+}
+
+ghost method NatSumLemma(l:List, n:int)
+requires isNatList(l) &amp;&amp; n == sum(l)
+ensures n &gt;= 0
+{
+  match l
+    case Nil =&gt;
+      // Discharged Automatically
+    case Link(data,next) =&gt; {
+      // Apply Inductive Hypothesis
+      NatSumLemma(next,sum(next));
+      // Check what known by Dafny
+      assert data &gt;= 0;
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

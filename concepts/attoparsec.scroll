@@ -1,0 +1,29 @@
+import ../code/conceptPage.scroll
+
+id attoparsec
+name attoparsec
+appeared 2010
+tags library
+website http://hackage.haskell.org/package/attoparsec
+latestVersion 0.14.4
+conceptDescription attoparsec is a fast Haskell parser combinator library, aimed particularly at dealing efficiently with network protocols and complicated text/binary file formats.
+
+writtenIn haskell json markdown make yaml c
+relatedConcepts megaparsec
+repoStats
+ firstCommit 2006
+ commits 896
+ committers 55
+ files 88
+ newestCommit 2024
+country Republic of Ireland
+originCommunity https://github.com/bos/attoparsec/issues
+
+githubRepo https://github.com/haskell/attoparsec
+ stars 495
+ forks 91
+ subscribers 21
+ created 2010
+ updated 2023
+ description A fast Haskell library for parsing ByteStrings
+ issues 32

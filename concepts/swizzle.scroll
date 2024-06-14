@@ -1,0 +1,46 @@
+import ../code/conceptPage.scroll
+
+id swizzle
+name swizzle
+appeared 2018
+creators Robert Swierczek
+tags esolang
+
+writtenIn bourne-shell c markdown
+repoStats
+ firstCommit 2018
+ commits 27
+ committers 5
+ files 21
+ newestCommit 2020
+
+example
+ {M
+     1=i
+     (i 100 <=?
+         (i 15 % 0 ==?
+             "FizzBuzz" P;
+         :(i 3 % 0 ==?
+             "Fizz" P;
+         :(i 5 % 0 ==?
+             "Buzz" P;
+         :
+             i "%d" P;;
+         )))
+         10 "%c" P;;
+         i++;
+     @)
+ }
+ M
+
+githubRepo https://github.com/rswier/swizzle
+ firstCommit 2018
+ stars 22
+ subscribers 5
+ created 2018
+ updated 2022
+ description An esoteric programming language
+ forks 2
+ issues 1
+
+isbndb 0

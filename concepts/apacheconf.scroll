@@ -1,0 +1,58 @@
+import ../code/conceptPage.scroll
+
+id apacheconf
+name ApacheConf
+appeared 1995
+tags application
+website https://httpd.apache.org/
+
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity Apache Software Foundation
+reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
+
+pygmentsHighlighter ApacheConf
+ filename configs.py
+ fileExtensions .htaccess apache.conf apache2.conf
+
+domainName httpd.apache.org
+
+githubBigQuery ApacheConf
+ repos 68565
+ users 55081
+
+linguistGrammarRepo https://github.com/textmate/apache.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 10
+ commitCount 93
+ sampleCount 1
+ example
+  #######################
+  # HOSTNAME
+  ######################
+  
+  <VirtualHost 127.0.0.1:PORT>
+      ServerAdmin patrick@heysparkbox.com
+      DocumentRoot "/var/www/HOSTNAME"
+      ServerName HOSTNAME
+  
+      <Directory "/var/www/HOSTNAME">
+         Options Indexes MultiViews FollowSymLinks
+         AllowOverride All
+         Order allow,deny
+         Allow from all
+         DirectoryIndex index.php
+     </Directory>
+  </VirtualHost>
+  
+
+githubLanguage ApacheConf
+ fileExtensions apacheconf vhost
+ trendingProjectsCount 0
+ type data
+ filenames .htaccess apache2.conf httpd.conf
+ aceMode apache_conf
+ tmScope source.apache-config
+ aliases aconf or apache

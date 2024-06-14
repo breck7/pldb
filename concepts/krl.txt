@@ -1,0 +1,70 @@
+KRL
+===
+
+KRL, aka knowledge representation language, is a programming language created in 1976 by Daniel G. Bobrow and Terry Winograd.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Daniel%20G.%20Bobrow
+ https://pldb.io/concepts/../lists/creators.html#q=Terry%20Winograd
+
+#1053 on PLDB
+48 Years Old
+440 Repos
+
+KRL is a knowledge representation language, developed by Daniel G. Bobrow and Terry Winograd while at Xerox PARC and Stanford University, respectively. It is a frame-based language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/KRL_(programming_language)
+
+- KRL Wikipedia page
+ https://en.wikipedia.org/wiki/KRL_(programming_language)
+- There are at least 440 KRL repos on GitHub
+- KRL first developed in Xerox PARC and Stanford University
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using KRL in 30 repos on GitHub
+- KRL on HOPL
+ https://hopl.info/showlanguage.prx?exp=763
+- See also: (1 related languages)KUKA Robot Language
+
+ruleset sample {
+  meta {
+    name &quot;Hello World&quot;
+    description &lt;&lt;
+Hello world
+&gt;&gt;
+    author &quot;Phil Windley&quot;
+  }
+
+  // just one rule
+  rule hello {
+    select when web pageview
+    notify(&quot;Hello world!&quot;, &quot;Just a note to say hello&quot;);
+  }
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

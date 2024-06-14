@@ -1,0 +1,54 @@
+Smarty
+======
+
+Smarty is an open source template language created in 2006 by Monte Ohrt and Messju Mohr and Uwe Tews.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Monte%20Ohrt
+ https://pldb.io/concepts/../lists/creators.html#q=Messju%20Mohr
+ https://pldb.io/concepts/../lists/creators.html#q=Uwe%20Tews
+
+#386 on PLDB
+18 Years Old
+31k Repos
+
+Smarty is a web template system written in PHP. Smarty is primarily promoted as a tool for separation of concerns. Smarty is intended to simplify compartmentalization, allowing the front-end of a web page to change separately from its back-end. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Smarty_(template_engine)
+
+- Smarty website
+ http://www.smarty.net
+- Smarty Wikipedia page
+ https://en.wikipedia.org/wiki/Smarty_(template_engine)
+- There are at least 31,402 Smarty repos on GitHub
+- Smarty first developed in http://groups.google.com/group/smarty-developers
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Smarty in 17k repos on GitHub
+- Smarty appears in the TIOBE Index
+- CodeMirror package for syntax highlighting Smarty
+- Pygments supports syntax highlighting for Smarty
+- GitHub supports syntax highlighting for Smarty
+- smarty.net was registered in 2002
+- See also: (3 related languages)PHP, ISBN, Twig
+- 4 languages in PLDB linking to Smarty: Ace Editor, cloc, Eiffel, mgmt
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+   &lt;meta charset=&quot;utf-8&quot;&gt;
+   &lt;title&gt;{$title_text|escape}&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt; {* This is a little comment that won&#39;t be visible in the HTML source *}
+{$body_html}
+&lt;/body&gt; &lt;!-- this is a little comment that will be seen in the HTML source --&gt;
+&lt;/html&gt;
+
+define(&#39;SMARTY_DIR&#39;, &#39;smarty-2.6.22/&#39;);
+require_once(SMARTY_DIR . &#39;Smarty.class.php&#39;);
+
+$smarty = new Smarty();
+$smarty-&gt;template_dir = &#39;./templates/&#39;;
+$smarty-&gt;compile_dir = &#39;./templates/compile/&#39;;
+
+$smarty-&gt;assign(&#39;title_text&#39;, &#39;TITLE: This is the Smarty basic example ...&#39;);
+$smarty-&gt;assign(&#39;body_html&#39;, &#39;&lt;p&gt;BODY: This is the message set using assign()&lt;/p&gt;&#39;);
+
+$smarty-&gt;display(&#39;index.tpl&#39;);

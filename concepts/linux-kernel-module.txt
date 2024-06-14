@@ -1,0 +1,33 @@
+Linux Kernel Module
+===================
+
+Linux Kernel Module is an application created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2304 on PLDB
+28 Years Old
+
+- Linux Kernel Module first developed in Linux Kernel Organization, Inc
+- Read more about Linux Kernel Module on the web: 1.
+ https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+
+/*
+ * hello−1.c − The simplest kernel module.
+ */
+#include &lt;linux/module.h&gt; /* Needed by all modules */
+#include &lt;linux/kernel.h&gt; /* Needed for KERN_INFO */
+int init_module(void)
+{
+ printk(KERN_INFO &quot;Hello world 1.\n&quot;);
+ /*
+ * A non 0 return means init_module failed; module can&#39;t be loaded.
+ */
+ return 0;
+}
+void cleanup_module(void)
+{
+ printk(KERN_INFO &quot;Goodbye world 1.\n&quot;);
+}
+
+fs/mbcache.ko
+fs/mbcache.o

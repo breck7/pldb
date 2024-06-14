@@ -1,0 +1,42 @@
+PEG
+===
+
+PEG, aka parsing expression grammar, is a grammar language created in 2002.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#831 on PLDB
+22 Years Old
+
+In computer science, a parsing expression grammar, or PEG, is a type of analytic formal grammar, i.e. it describes a formal language in terms of a set of rules for recognizing strings in the language. The formalism was introduced by Bryan Ford in 2004 and is closely related to the family of top-down parsing languages introduced in the early 1970s. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Parsing_expression_grammar
+
+- PEG Wikipedia page
+ https://en.wikipedia.org/wiki/Parsing_expression_grammar
+- Pygments supports syntax highlighting for PEG
+- See also: (1 related languages)Regular Expressions
+
+Expr    ← Sum
+Sum     ← Product ((&#39;+&#39; / &#39;-&#39;) Product)*
+Product ← Value ((&#39;*&#39; / &#39;/&#39;) Value)*
+Value   ← [0-9]+ / &#39;(&#39; Expr &#39;)&#39;
+
+Value   ← [0-9.]+ / &#39;(&#39; Expr &#39;)&#39;
+Product ← Expr ((&#39;*&#39; / &#39;/&#39;) Expr)*
+Sum     ← Expr ((&#39;+&#39; / &#39;-&#39;) Expr)*
+Expr    ← Product / Sum / Value
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example

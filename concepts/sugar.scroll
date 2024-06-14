@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id sugar
+name Sugar
+appeared 2006
+creators Sébastien Pierre
+tags pl
+website https://github.com/sebastien/sugar/blob/master/Documentation/sugar-quickref.pdf
+conceptDescription Makes JavaScript development sweeter !
+
+writtenIn c xml python javascript html make c-shell lisp bourne-shell svg vim-script
+fileExtensions sjs
+repoStats
+ firstCommit 2006
+ commits 311
+ committers 9
+ files 528
+ newestCommit 2017
+country New Zealand
+
+example
+    @module helloworld
+    @class HelloWorld
+    | This is a docstring for my hello world
+        @property message
+        @constructor
+            message = "Hello, World !"
+        @end
+        @method say
+            alert ( message )
+        @end
+    @end
+
+githubRepo https://github.com/sebastien/sugar
+ stars 45
+ forks 3
+ subscribers 4
+ created 2006
+ updated 2017
+ description Makes JavaScript development sweeter !

@@ -1,0 +1,46 @@
+Redis
+=====
+
+Redis is an open source application created in 2009 by Salvatore Sanfilippo.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Salvatore%20Sanfilippo
+
+#118 on PLDB
+15 Years Old
+
+git clone https://github.com/antirez/redis
+
+Try now: Riju
+
+Redis is an open-source in-memory database project implementing a distributed, in-memory key-value store with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps and spatial indexes. The project is mainly developed by Salvatore Sanfilippo and is currently sponsored by Redis Labs. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Redis
+
+- Redis website
+ https://redis.io/
+- Redis Wikipedia page
+ https://en.wikipedia.org/wiki/Redis
+- Redis is developed on GitHub and has 55,750 stars
+- Redis first developed in Redis Ltd
+- Redis is written in C, JSON, Bourne shell, Markdown, Lua, YAML, Make, Ruby, XML, Python, C++, HTML, CMake, M4, CSS, Bash, JavaScript, XSLT, SVG
+- Redis on Twitter
+ https://twitter.com/redisfeed
+- Monaco package for syntax highlighting Redis
+- There is 1 Jupyter Kernel for Redis
+- redis.io was registered in 2010
+- See also: (30 related languages)ActionScript, C, C#, Clojure, Common Lisp, D, Dart, Erlang, Go, Haskell, Haxe, Io, Java, Julia, Lua, Objective-C, OCaml, Perl, PHP, Pure Data, Python, R, Racket, Ruby, Rust, Scala, Smalltalk, Tcl, AWS, Microsoft Azure
+
+ECHO &quot;Hello, world!&quot;
+
+set Hello World
+
+APPEND AUTH BGREWRITEAOF BGSAVE BITCOUNT BITFIELD BITOP BITPOS BLPOP BRPOP BRPOPLPUSH CLIENT KILL LIST GETNAME PAUSE REPLY SETNAME CLUSTER ADDSLOTS COUNT-FAILURE-REPORTS COUNTKEYSINSLOT DELSLOTS FAILOVER FORGET GETKEYSINSLOT INFO KEYSLOT MEET NODES REPLICATE RESET SAVECONFIG SET-CONFIG-EPOCH SETSLOT SLAVES SLOTS COMMAND COUNT GETKEYS CONFIG GET REWRITE SET RESETSTAT DBSIZE DEBUG OBJECT SEGFAULT DECR DECRBY DEL DISCARD DUMP ECHO EVAL EVALSHA EXEC EXISTS EXPIRE EXPIREAT FLUSHALL FLUSHDB GEOADD GEOHASH GEOPOS GEODIST GEORADIUS GEORADIUSBYMEMBER GETBIT GETRANGE GETSET HDEL HEXISTS HGET HGETALL HINCRBY HINCRBYFLOAT HKEYS HLEN HMGET HMSET HSET HSETNX HSTRLEN HVALS INCR INCRBY INCRBYFLOAT KEYS LASTSAVE LINDEX LINSERT LLEN LPOP LPUSH LPUSHX LRANGE LREM LSET LTRIM MGET MIGRATE MONITOR MOVE MSET MSETNX MULTI PERSIST PEXPIRE PEXPIREAT PFADD PFCOUNT PFMERGE PING PSETEX PSUBSCRIBE PUBSUB PTTL PUBLISH PUNSUBSCRIBE QUIT RANDOMKEY READONLY READWRITE RENAME RENAMENX RESTORE ROLE RPOP RPOPLPUSH RPUSH RPUSHX SADD SAVE SCARD SCRIPT FLUSH LOAD SDIFF SDIFFSTORE SELECT SETBIT SETEX SETNX SETRANGE SHUTDOWN SINTER SINTERSTORE SISMEMBER SLAVEOF SLOWLOG SMEMBERS SMOVE SORT SPOP SRANDMEMBER SREM STRLEN SUBSCRIBE SUNION SUNIONSTORE SWAPDB SYNC TIME TOUCH TTL TYPE UNSUBSCRIBE UNLINK UNWATCH WAIT WATCH ZADD ZCARD ZCOUNT ZINCRBY ZINTERSTORE ZLEXCOUNT ZRANGE ZRANGEBYLEX ZREVRANGEBYLEX ZRANGEBYSCORE ZRANK ZREM ZREMRANGEBYLEX ZREMRANGEBYRANK ZREMRANGEBYSCORE ZREVRANGE ZREVRANGEBYSCORE ZREVRANK ZSCORE ZUNIONSTORE SCAN SSCAN HSCAN ZSCAN
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example

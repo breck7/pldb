@@ -1,0 +1,87 @@
+import ../code/conceptPage.scroll
+
+id spss
+name SPSS
+appeared 1968
+creators Norman H. Nie and C. Hadlai Hull and Dale H. Bent
+tags pl
+website https://www.ibm.com/us-en/marketplace/spss-statistics
+releaseNotes https://www.ibm.com/support/pages/ibm-spss-statistics-200-release-notess
+
+fileType text
+documentation https://www.ibm.com/support/pages/ibm-spss-statistics-28-documentation
+centralPackageRepositoryCount 0
+country United States
+originCommunity SPSS Inc
+
+helloWorldCollection SPSS
+ * SPSS Syntax
+ * "Hello World" title in the Output Window of SPSS via SPSS Syntax.
+ 
+ TITLE 'Hello World'.
+ 
+leachim6 SPSS
+ filepath s/SPSS.spss
+ fileExtensions spss
+ example
+  BEGIN PROGRAM.
+  print "Hello World"
+  END PROGRAM.
+
+printToken print
+stringToken "
+
+hasComments true
+ * A comment where first character must be *.
+hasLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/SPSS
+ related linux java python visual-basic r ascii sql html xml unix
+ summary SPSS Statistics is a software package used for logical batched and non-batched statistical analysis. Long produced by SPSS Inc., it was acquired by IBM in 2009. The current versions (2015) are officially named IBM SPSS Statistics. Companion products in the same family are used for survey authoring and deployment (IBM SPSS Data Collection, now divested under UNICOM Intelligence), data mining (IBM SPSS Modeler), text analytics, and collaboration and deployment (batch and automated scoring services). The software name originally stood for Statistical Package for the Social Sciences (SPSS), reflecting the original market, although the software is now popular in other fields as well, including the health sciences and marketing.
+ pageId 179088
+ dailyPageViews 1898
+ created 2002
+ backlinksCount 503
+ revisionCount 878
+ appeared 1968
+
+hopl https://hopl.info/showlanguage.prx?exp=240
+tiobe SPSS
+
+isbndb 12
+ year|publisher|title|authors|isbn13
+ 2007|For Dummies|SPSS For Dummies|Griffith, Arthur|9780470113448
+ 2021|SPSS Inc.|SPSS Programming and Data Management: A Guide for SPSS and SAS Users, 3rd Edition|Raynald Levesque and SPSS Inc.|9781568273747
+ 2011|Springer|R for SAS and SPSS Users (Statistics and Computing)|Muenchen, Robert A.|9781461406853
+ 2011|Springer|R for SAS and SPSS Users (Statistics and Computing)|Muenchen, Robert A.|9781461406846
+ 2013|Routledge|Multilevel and Longitudinal Modeling with IBM SPSS (Quantitative Methodology Series)|Heck, Ronald H.|9780415817110
+ 2017|Wiley|SPSS Statistics for Data Analysis and Visualization|McCormick, Keith and Salcedo, Jesus|9781119003663
+ 2009|SAGE Publications Ltd|Using SPSS Syntax: A Beginner′s Guide|Collier, Jacqueline|9781446246658
+ 2017|Packt Publishing|IBM SPSS Modeler Essentials: Effective techniques for building powerful data mining and predictive analytics solutions|Salcedo, Jesus and McCormick, Keith|9781788296823
+ 2004|SAGE Publications, Inc|An Intermediate Guide to SPSS Programming: Using Syntax for Data Management|Boslaugh, Sarah E.|9781483389332
+ 2004|SAGE Publications, Inc|An Intermediate Guide to SPSS Programming: Using Syntax for Data Management|Boslaugh, Sarah E.|9780761931850
+ 2022|Khanna Publishing House|Data Science And Analytics: With Python, R And Spss Programming|V.K. Jain|9789386173676
+ 2006|SPSS Inc.|SPSS Programming and Data Management|SPSS|9781568273907
+
+indeedJobs spss developer
+ 2022 25
+linkedInSkill spss
+ 2018 956163
+
+semanticScholar 5
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2009|A Guide to Doing Statistics in Second Language Research Using SPSS|10.4324/9781315775661|722|116|Jenifer Larson-Hall|795142d7d53536ecb8195638fa9dd1eb6bda44d2
+ 2012|An SPSS R-Menu for Ordinal Factor Analysis|10.18637/JSS.V046.I04|200|25|Mário Basto and J. Pereira|9b3db04e8286b35f6c6e0dde28e5b8d275ddcff0
+ 2017|SPSS Statistics for Data Analysis and Visualization|10.1002/9781119183426|35|4|Keith McCormick and Jesus Salcedo|ff06fc8f0b627f0f061abe7ccc277a9f67856938
+ 2005|An intermediate guide to SPSS programming : using syntax for data management|10.5860/choice.42-5913|8|0|S. Boslaugh|2156927494658615734e43c893f25f4f58dcf186
+ 2014|Using the Statistical Program R Instead of SPSS To Analyze Data|10.1021/BK-2014-1166.CH008|6|1|Hui Tang and Pengsheng Ji|e81f588b28d078867894a82bdaeb73f9bf40b9bc
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SPSS For Dummies|2007|Arthur Griffith|959353|3.54|67|10
+ SPSS Statistics for Dummies|2015|Keith McCormick|45494211|4.10|10|2

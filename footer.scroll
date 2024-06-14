@@ -1,0 +1,25 @@
+importOnly
+
+viewSource
+
+copyButtons
+
+stumpNoSnippet
+ div
+  class trueBaseThemeFooter
+  a PLDB
+   href BASE_URL/index.html
+   class trueBaseThemeLogo
+  span - Build the next great programming language
+  span ·
+  a About
+   href BASE_URL/pages/about.html
+  span ·
+  a Acknowledgements
+   href BASE_URL/pages/acknowledgements.html
+  span ·
+  a Published by Breck's Lab
+   href https://breckyunits.com/lab.html
+
+<script src="BASE_URL/lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>

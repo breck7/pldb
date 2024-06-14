@@ -1,0 +1,131 @@
+mckeeman-form
+=============
+
+mckeeman-form is a grammar language created in 2020 by Bill McKeeman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Bill%20McKeeman
+
+#2606 on PLDB
+4 Years Old
+
+- mckeeman-form first developed in Dartmouth College
+- Read more about mckeeman-form on the web: 1.
+ https://www.youtube.com/watch?v=RGizBNflVKw
+
+json
+ element
+
+value
+ object
+ array
+ string
+ number
+ &quot;true&quot;
+ &quot;false&quot;
+ &quot;null&quot;
+
+object
+ &#39;{&#39; ws &#39;}&#39;
+ &#39;{&#39; members &#39;}&#39;
+
+members
+ member
+ member &#39;,&#39; members
+
+member
+ ws string ws &#39;:&#39; element
+
+array
+ &#39;[&#39; ws &#39;]&#39;
+ &#39;[&#39; elements &#39;]&#39;
+
+elements
+ element
+ element &#39;,&#39; elements
+
+element
+ ws value ws
+
+string
+ &#39;&quot;&#39; characters &#39;&quot;&#39;
+
+characters
+ &quot;&quot;
+ character characters
+
+character
+ &#39;0020&#39; . &#39;10FFFF&#39; - &#39;&quot;&#39; - &#39;\&#39;
+ &#39;\&#39; escape
+
+escape
+ &#39;&quot;&#39;
+ &#39;\&#39;
+ &#39;/&#39;
+ &#39;b&#39;
+ &#39;f&#39;
+ &#39;n&#39;
+ &#39;r&#39;
+ &#39;t&#39;
+ &#39;u&#39; hex hex hex hex
+
+hex
+ digit
+ &#39;A&#39; . &#39;F&#39;
+ &#39;a&#39; . &#39;f&#39;
+
+number
+ integer fraction exponent
+
+integer
+ digit
+ onenine digits
+ &#39;-&#39; digit
+ &#39;-&#39; onenine digits
+
+digits
+ digit
+ digit digits
+
+digit
+ &#39;0&#39;
+ onenine
+
+onenine
+ &#39;1&#39; . &#39;9&#39;
+
+fraction
+ &quot;&quot;
+ &#39;.&#39; digits
+
+exponent
+ &quot;&quot;
+ &#39;E&#39; sign digits
+ &#39;e&#39; sign digits
+
+sign
+ &quot;&quot;
+ &#39;+&#39;
+ &#39;-&#39;
+
+ws
+ &quot;&quot;
+ &#39;0020&#39; ws
+ &#39;000A&#39; ws
+ &#39;000D&#39; ws
+ &#39;0009&#39; ws
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

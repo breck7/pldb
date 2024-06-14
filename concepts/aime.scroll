@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id aime
+name Aime
+appeared 2013
+creators Ciprian Niculescu
+tags pl
+website https://aime-embedded.sourceforge.net/
+conceptDescription aime is an imperative procedural programming language, with a C inspired syntax.
+
+country Unknown
+originCommunity https://sourceforge.net/projects/aime-embedded/
+
+example
+ integer
+ median3(integer a, integer b, integer c)
+ {
+     integer m;
+     if (a < b) {
+         if (b < c) {
+             m = b;
+         } else {
+             if (a < c) {
+                 m = c;
+             } else {
+                 m = a;
+             }
+         }
+     } else {
+         if (a < c) {
+             m = a;
+         } else {
+             if (b < c) {
+                 m = c;
+             } else {
+                 m = b;
+             }
+         }
+     }
+     return m;
+ }

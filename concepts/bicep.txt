@@ -1,0 +1,89 @@
+Bicep
+=====
+
+Bicep is a json format created in 2020 by Anthony Martin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Anthony%20Martin
+
+#214 on PLDB
+4 Years Old
+3k Repos
+
+git clone https://github.com/Azure/bicep
+
+Bicep is a declarative language for describing and deploying Azure resources
+
+- Bicep is developed on GitHub and has 2,438 stars
+- There are at least 2,562 Bicep repos on GitHub
+- Bicep first developed in Microsoft
+- Bicep compiles to ARM Templates
+- Bicep is written in C#, JSON, TypeScript, SVG, XML, HTML, Markdown, YAML, JavaScript, PowerShell, Bourne shell, CSS
+- The  Google BigQuery Public Dataset GitHub snapshot shows 13 users using Bicep in 17 repos on GitHub
+- Monaco package for syntax highlighting Bicep
+- Read more about Bicep on the web: 1.
+ https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/
+
+@minLength(3)
+@maxLength(11)
+param storagePrefix string
+
+param storageSKU string = &#39;Standard_LRS&#39;
+param location string = resourceGroup().location
+
+var uniqueStorageName = &#39;${storagePrefix}${uniqueString(resourceGroup().id)}&#39;
+
+resource stg &#39;Microsoft.Storage/storageAccounts@2019-04-01&#39; = {
+  name: uniqueStorageName
+  location: location
+  sku: {
+    name: storageSKU
+  }
+  kind: &#39;StorageV2&#39;
+  properties: {
+    supportsHttpsTrafficOnly: true
+  }
+}
+
+module webModule &#39;./webApp.bicep&#39; = {
+  name: &#39;webDeploy&#39;
+  params: {
+    skuName: &#39;S1&#39;
+    location: location
+  }
+}
+
+output storageEndpoint object = stg.properties.primaryEndpoints
+
+targetScope resource module param var output for in if existing
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment

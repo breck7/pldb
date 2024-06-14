@@ -1,0 +1,81 @@
+SMT
+===
+
+SMT, aka Satisfiability Modulo Theories, is a programming language created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#872 on PLDB
+21 Years Old
+582 Repos
+
+- SMT website
+ http://smtlib.cs.uiowa.edu/language.shtml
+- There are at least 582 SMT repos on GitHub
+- SMT first developed in The University of Iowa
+- The  Google BigQuery Public Dataset GitHub snapshot shows 130 users using SMT in 149 repos on GitHub
+- GitHub supports syntax highlighting for SMT
+
+; Getting assertions
+(set-option :produce-assertions true)
+(set-logic QF_UF)
+(declare-const p Bool) (declare-const q Bool)
+(push 1)
+ (assert (or p q))
+ (push 1)
+  (assert (not q))
+  (get-assertions)
+  ; ((or p q)
+  ;  (not q)
+  ; )
+ (pop 1)
+  (get-assertions)
+ ; ((or p q))
+ (pop 1)
+ (get-assertions)
+ ; ()
+(exit)
+
+(set-logic QF_LIA)
+(set-info :source | SMT-COMP&#39;06 organizers |)
+(set-info :smt-lib-version 2.0)
+(set-info :category &quot;check&quot;)
+(set-info :status unsat)
+(set-info :notes |This benchmark is designed to check if the DP supports bignumbers.|)
+(declare-fun x1 () Int)
+(declare-fun x2 () Int)
+(declare-fun x3 () Int)
+(declare-fun x4 () Int)
+(declare-fun x5 () Int)
+(declare-fun x6 () Int)
+(assert (and (or (&gt;= x1 1000) (&gt;= x1 1002))
+             (or (&gt;= x2 (* 1230 x1)) (&gt;= x2 (* 1003 x1)))
+			 (or (&gt;= x3 (* 1310 x2)) (&gt;= x3 (* 1999 x2)))
+			 (or (&gt;= x4 (* 4000 x3)) (&gt;= x4 (* 8000 x3)))
+			 (or (&lt;= x5 (* (- 4000) x4)) (&lt;= x5 (* (- 8000) x4)))
+			 (or (&gt;= x6 (* (- 3) x5)) (&gt;= x6 (* (- 2) x5))) (&lt; x6 0)))
+(check-sat)
+(exit)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

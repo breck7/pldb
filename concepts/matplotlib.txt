@@ -1,0 +1,39 @@
+Matplotlib
+==========
+
+Matplotlib is an open source data visualization grammar created in 2003 by John D. Hunter.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20D.%20Hunter
+
+#220 on PLDB
+21 Years Old
+
+git clone https://github.com/matplotlib/matplotlib
+
+matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB, though its use is discouraged. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Matplotlib
+
+- Matplotlib website
+ http://matplotlib.org/
+- Matplotlib Wikipedia page
+ https://en.wikipedia.org/wiki/Matplotlib
+- Matplotlib is developed on GitHub and has 15,728 stars
+- Matplotlib first developed in https://github.com/matplotlib
+- Matplotlib is written in Python, SVG, reStructuredText, C++, YAML, Meson, JSON, HTML, Markdown, CSS, JavaScript, CSV, Jupyter Notebook, Bourne shell, Tex, Objective-C, TOML, XML, Ini, Make, C, Lua
+- Matplotlib on Twitter
+ https://twitter.com/matplotlib
+- See also: (13 related languages)Python, NumPy, Qt, OpenGL, MATLAB, SciPy, Gnuplot, Julia, GNU Octave, Maxima, Microsoft Excel, Jython, Sage
+
+&gt;&gt;&gt; from matplotlib import cm
+&gt;&gt;&gt; from mpl_toolkits.mplot3d import Axes3D
+&gt;&gt;&gt; import matplotlib.pyplot as plt
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; fig = plt.figure()
+&gt;&gt;&gt; ax = fig.gca(projection=&#39;3d&#39;)
+&gt;&gt;&gt; X = np.arange(-5, 5, 0.25)
+&gt;&gt;&gt; Y = np.arange(-5, 5, 0.25)
+&gt;&gt;&gt; X, Y = np.meshgrid(X, Y)
+&gt;&gt;&gt; R = np.sqrt(X**2 + Y**2)
+&gt;&gt;&gt; Z = np.sin(R)
+&gt;&gt;&gt; surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm)
+&gt;&gt;&gt; plt.show()

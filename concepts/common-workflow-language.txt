@@ -1,0 +1,89 @@
+CWL
+===
+
+CWL is an open source programming language created in 2014 by Luka Stojanovic.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Luka%20Stojanovic
+
+#346 on PLDB
+10 Years Old
+464 Repos
+
+git clone https://github.com/common-workflow-language/cwltool
+
+Common Workflow Language reference implementation
+
+- CWL website
+ https://www.commonwl.org/
+- CWL is developed on GitHub and has 284 stars
+- There are at least 464 CWL repos on GitHub
+- CWL first developed in https://w3id.org/cwl/meeting_minutes
+- CWL is written in Python, YAML, Markdown, JSON, reStructuredText, Bourne shell, JavaScript, Make, Ini, Dockerfile, TOML
+- CWL on Twitter
+ https://twitter.com/commonwl
+- The  Google BigQuery Public Dataset GitHub snapshot shows 57 users using CWL in 75 repos on GitHub
+- GitHub supports syntax highlighting for CWL
+- commonwl.org was registered in 2015
+- Read more about CWL on the web: 1.
+ https://doi.org/10.6084/m9.figshare.3115156.v2
+
+#!/usr/bin/env cwl-runner
+# Originally from
+# https://github.com/Duke-GCB/GGR-cwl/blob/54e897263a702ff1074c8ac814b4bf7205d140dd/utils/trunk-peak-score.cwl
+# Released under the MIT License:
+# https://github.com/Duke-GCB/GGR-cwl/blob/54e897263a702ff1074c8ac814b4bf7205d140dd/LICENSE
+# Converted to CWL v1.0 syntax using
+# https://github.com/common-workflow-language/cwl-upgrader
+# and polished by Michael R. Crusoe &lt;mrc@commonwl.org&gt;
+# All modifications also released under the MIT License
+cwlVersion: v1.0
+class: CommandLineTool
+doc: Trunk scores in ENCODE bed6+4 files
+
+hints:
+  DockerRequirement:
+    dockerPull: dukegcb/workflow-utils
+
+inputs:
+  peaks:
+    type: File
+  sep:
+    type: string
+    default: \t
+
+outputs:
+  trunked_scores_peaks:
+    type: stdout
+
+baseCommand: awk
+
+arguments:
+- -F $(inputs.sep)
+- BEGIN{OFS=FS}$5&gt;1000{$5=1000}{print}
+- $(inputs.peaks.path)
+
+stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

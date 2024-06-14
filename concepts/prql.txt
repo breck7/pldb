@@ -1,0 +1,74 @@
+PRQL
+====
+
+PRQL, aka Pipelined Relational Query Language, is a query language created in 2022 by Maximilian Roos.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Maximilian%20Roos
+
+#211 on PLDB
+2 Years Old
+
+git clone https://github.com/prql/prql
+
+PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+
+- PRQL website
+ https://prql-lang.org/
+- PRQL is developed on GitHub and has 4,261 stars
+- PRQL first developed in https://github.com/PRQL
+- PRQL compiles to SQL
+- PRQL is written in Rust, Markdown, YAML, TOML, HTML, JavaScript, JSON, CSS, CSV, C#, PHP, Elixir, TypeScript, JSX, Bourne shell, Python, Java, Zig, Make, Dockerfile, XML, SQL, Nix, C, C++, Handlebars, SVG
+- prql-lang.org was registered in 2022
+- Read more about PRQL on the web: 1. 2.
+ https://news.ycombinator.com/item?id=31897430
+ https://news.ycombinator.com/item?id=30060784
+
+from employees
+filter country == &quot;USA&quot;                       # Each line transforms the previous result.
+aggregate [                                   # `aggregate` reduces column to a value.
+  max salary,
+  min salary,
+  count,                                      # Closing commas are allowed :)
+]
+
+from employees
+filter start_date &gt; @2021-01-01               # Clear date syntax.
+derive [                                      # `derive` adds columns / variables.
+  gross_salary = salary + (tax ?? 0),         # Terse coalesce
+  gross_cost = gross_salary + benefits_cost,  # Variables can use other variables.
+]
+filter gross_cost &gt; 0
+group [title, country] (                      # `group` runs a pipeline over each group.
+  aggregate [                                 # `aggregate` reduces each group to a row.
+    average gross_salary,
+    sum_gross_cost = sum gross_cost,          # `=` sets a column name.
+  ]
+)
+filter sum_gross_cost &gt; 100000                # Identical syntax for SQL&#39;s `WHERE` &amp; `HAVING`.
+derive id = f&quot;{title}_{country}&quot;              # F-strings like python.
+sort [sum_gross_cost, -country]               # `-country` means descending order.
+take 1..20                                    # Range expressions (also valid here as `take 20`).
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

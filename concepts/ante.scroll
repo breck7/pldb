@@ -1,0 +1,58 @@
+import ../code/conceptPage.scroll
+
+id ante
+name Ante
+appeared 2015
+creators Jake Fecher
+tags pl
+website http://antelang.org
+latestVersion v0.8.0
+conceptDescription <a href='https://github.com/jfecher/ante'>Ante</a> is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
+
+isOpenSource true
+writtenIn rust nix toml markdown yaml json dockerfile
+tryItOnline ante
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2020
+ commits 1444
+ committers 19
+ files 164
+ newestCommit 2024
+
+rijuRepl https://riju.codes/ante
+ example
+  print "Hello, world!"
+  
+leachim6 Ante
+ filepath a/Ante.ante
+ fileExtensions ante
+ example
+  9♦8♥J♦A♦2♣3♥7♠J♦A♦7♦J♦J♦A♦3♦J♦5♥6♦4♥J♥A♥6♠6♠J♥A♦8♦J♦A♦8♠J♦A♦3♦J♦A♦6♠J♦A♦8♠J♦A♥3♦2♠J♥A♥2♣6♠J♥
+  
+
+githubRepo https://github.com/jfecher/ante
+ stars 1420
+ forks 49
+ subscribers 25
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description A safe, easy systems language
+ issues 17
+
+printToken print
+
+hasPrintDebugging true
+
+domainName antelang.org
+ registered 2018
+ awisRank
+  2022 919643
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Two Different Points of View through Artificial Intelligence and Vector Autoregressive Models for Ex Post and Ex Ante Forecasting|10.1155/2015/409361|6|2|A. Aydin and S. C. Cavdar|d3b9babba0eb33cc651bcaf78106dcdbfacc2590

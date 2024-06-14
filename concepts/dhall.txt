@@ -1,0 +1,91 @@
+Dhall
+=====
+
+Dhall is a data notation created in 2017.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#135 on PLDB
+7 Years Old
+817 Repos
+
+git clone https://github.com/dhall-lang/dhall-lang
+
+Try now: Web · Riju
+
+Maintainable configuration files
+
+- Dhall website
+ https://dhall-lang.org/
+- Dhall is developed on GitHub and has 3,577 stars
+- There are at least 817 Dhall repos on GitHub
+- Dhall first developed in https://github.com/dhall-lang
+- Dhall is written in Dhall, Markdown, Nix, Haskell, SVG, Bourne shell, HTML, Diff, JSON, CSS, Python, JavaScript, YAML
+- Dhall on Twitter
+ https://twitter.com/dhall_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Dhall in 60 repos on GitHub
+- 6 languages in PLDB linking to Dhall: cloc, Dhall, lamdu-editor, Lamdu, mal, PureScript
+
+-- ./company.dhall
+
+let Prelude =
+      https://prelude.dhall-lang.org/v19.0.0/package.dhall sha256:eb693342eb769f782174157eba9b5924cf8ac6793897fc36a31ccbd6f56dafe2
+
+let companyName = &quot;Example Dot Com&quot;
+
+let User = { name : Text, account : Text, age : Natural }
+
+let users
+    : List User
+    = [ { name = &quot;John Doe&quot;, account = &quot;john&quot;, age = 23 }
+      , { name = &quot;Jane Smith&quot;, account = &quot;jane&quot;, age = 29 }
+      , { name = &quot;William Allen&quot;, account = &quot;bill&quot;, age = 41 }
+      ]
+
+let toEmail = \(user : User) -&gt; &quot;${user.account}@example.com&quot;
+
+let Bio = { name : Text, age : Natural }
+
+let toBio = \(user : User) -&gt; user.(Bio)
+
+let companySize = Prelude.List.length User users
+
+let greetingPage =
+      &#39;&#39;
+      &lt;html&gt;
+      &lt;title&gt;Welcome to ${companyName}!&lt;/title&gt;
+      &lt;body&gt;
+      &lt;p&gt;Welcome to our humble company of ${Natural/show companySize} people!&lt;/p&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+        &#39;&#39;
+
+in  { emails = Prelude.List.map User Text toEmail users
+    , bios = Prelude.List.map User Bio toBio users
+    , greetingPage = greetingPage
+    }
+
+{ output = &quot;Hello, world!&quot; }
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

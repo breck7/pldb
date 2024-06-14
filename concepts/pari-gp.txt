@@ -1,0 +1,89 @@
+PARI/GP
+=======
+
+PARI/GP is an open source programming language created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#775 on PLDB
+39 Years Old
+
+Try now: Riju · TIO
+
+PARI/GP is a computer algebra system with the main aim of facilitating number theory computations. Versions 2.1.0 and higher are distributed under the GNU General Public License. It runs on most common operating systems.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PARI/GP
+
+- PARI/GP website
+ http://pari.math.u-bordeaux.fr/
+- PARI/GP Wikipedia page
+ https://en.wikipedia.org/wiki/PARI/GP
+- PARI/GP first developed in Université Bordeaux
+- There are 123 Project Euler users using PARI/GP
+- PARI/GP Ubuntu package
+ https://packages.ubuntu.com/jammy/pari-gp
+- PARI/GP appears in the Quine Relay project
+- There is 1 Jupyter Kernel for PARI/GP
+- See also: (6 related languages)C, Pascal, Fortran, Perl, Python, Sage
+
+print(&quot;Hello, world!&quot;)
+
+? \p 212
+   realprecision = 221 significant digits (212 digits displayed)
+? (1.378-0.09143*I)^(14.87+0.3721*I)
+time = 0 ms.
+%1 = 80.817082637557070449383034933010288336925078193546211741027496566803185
+11092579265743992920628314516739962724446042667886245322716456966120413965187
+3272488827365261487845201056199035423784093096984005713791800191 - 94.8384618
+89186304973351271821601500916571303364865064205039706592481303045713982306764
+33264430511752515705768858710051382035377195497482934017239179757538824688799
+0680136241031895212412150770309289450962931402933*I
+
+? 123456! + 0.
+time = 1,656 ms.
+%2 = 2.6040699049291378729513930560926568818273270409503019584610185579952057
+37967683415793560716617127908735520017061666000857261271456698589373086528293
+4317244121152865814030204645985573419251305342231135573491050756 E574964
+
+? sin(x)
+time = 0 ms.
+%3 = x - 1/6*x^3 + 1/120*x^5 - 1/5040*x^7 + 1/362880*x^9 - 1/39916800*x^11
++ 1/6227020800*x^13 - 1/1307674368000*x^15 + O(x^17)
+
+? for(z=25,30, print (factor(2^z-1)))
+[31, 1; 601, 1; 1801, 1]
+[3, 1; 2731, 1; 8191, 1]
+[7, 1; 73, 1; 262657, 1]
+[3, 1; 5, 1; 29, 1; 43, 1; 113, 1; 127, 1]
+[233, 1; 1103, 1; 2089, 1]
+[3, 2; 7, 1; 11, 1; 31, 1; 151, 1; 331, 1]
+time = 5 ms.
+
+? K = bnfinit(x^2 + 23); K.cyc
+time = 1ms.
+%4 = [3]
+/* This number field has class number 3. */
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

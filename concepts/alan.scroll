@@ -1,0 +1,25 @@
+import ../code/conceptPage.scroll
+
+id alan
+name alan
+appeared 2018
+tags pl
+website https://alan-platform.com/pages/tuts/introducing.html
+
+fileType text
+wordRank 3609
+centralPackageRepositoryCount 0
+originCommunity Kjerner
+
+example
+ 'Reasons': collection { }
+ 'Users': collection {
+   'Name': text
+   'Active': stategroup @default: 'Yes' (
+     'Yes' -> { }
+     'No' -> {
+       'Reason': text -> ?^ .^ .'Reasons'
+     }
+   )
+ }
+ 'Active Users':= integer 'n' = count .'Users'?'Active'|'Yes'

@@ -1,0 +1,102 @@
+Brainfuck
+=========
+
+Brainfuck is an esoteric programming language created in 1993 by Urban Müller.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Urban%20M%C3%BCller
+
+#89 on PLDB
+31 Years Old
+2k Repos
+
+Try now: Riju · TIO · Replit
+
+Brainfuck is an esoteric programming language created in 1993 by Urban Müller, and notable for its extreme minimalism. The language consists of only eight simple commands and an instruction pointer. While it is fully Turing-complete, it is not intended for practical use, but to challenge and amuse programmers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Brainfuck
+
+- Brainfuck Wikipedia page
+ https://en.wikipedia.org/wiki/Brainfuck
+- Brainfuck docs
+ https://gist.github.com/roachhd/dce54bec8ba55fb17d3a
+- There are at least 1,631 Brainfuck repos on GitHub
+- Brainfuck first developed in Sentience Politics
+- The  Google BigQuery Public Dataset GitHub snapshot shows 790 users using Brainfuck in 832 repos on GitHub
+- Brainfuck Ubuntu package
+ https://packages.ubuntu.com/jammy/bf
+- ANTLR grammar for Brainfuck
+- CodeMirror package for syntax highlighting Brainfuck
+- Pygments supports syntax highlighting for Brainfuck
+- GitHub supports syntax highlighting for Brainfuck
+- Brainfuck appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Brainfuck
+- See also: (2 related languages)ASCII, C
+- 8 languages in PLDB linking to Brainfuck: beef-lang, cloc, CSpydr, DDP, HyPhy, Nit, Pygments, semicolon
+
+++++++++
+[
+    &gt;++++
+    [
+        &gt;++
+        &gt;+++
+        &gt;+++
+        &gt;+
+        &lt;&lt;&lt;&lt;-
+    ]
+    &gt;+
+    &gt;+
+    &gt;-
+    &gt;&gt;+
+    [&lt;]
+
+    &lt;-
+]
+
+&gt;&gt;.
+&gt;---.
++++++++..+++.
+&gt;&gt;.
+&lt;-.
+&lt;.
++++.------.--------.
+&gt;&gt;+.
+&gt;++.
+
+-[-------&gt;+&lt;]&gt;-.-[-&gt;+++++&lt;]&gt;++.+++++++..+++.[---&gt;+&lt;]&gt;-----.---[-&gt;+++&lt;]&gt;.-[---&gt;+&lt;]&gt;---.+++.------.--------.
+
+Hello World in Brainfuck
+
+++++++++++[&gt;+++++++&gt;++++++++++&gt;+++&lt;&lt;&lt;-]&gt;++.&gt;+.+++++++
+..+++.&gt;++.&lt;&lt;+++++++++++++++.&gt;.+++.------.--------.&gt;+.
+
+// Hello World
+
+++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.
+
+-,+[                         Read first character and start outer character reading loop
+    -[                       Skip forward if character is 0
+        &gt;&gt;++++[&gt;++++++++&lt;-]  Set up divisor (32) for division loop
+                               (MEMORY LAYOUT: dividend copy remainder divisor quotient zero zero)
+        &lt;+&lt;-[                Set up dividend (x minus 1) and enter division loop
+            &gt;+&gt;+&gt;-[&gt;&gt;&gt;]      Increase copy and remainder / reduce divisor / Normal case: skip forward
+            &lt;[[&gt;+&lt;-]&gt;&gt;+&gt;]    Special case: move remainder back to divisor and increase quotient
+            &lt;&lt;&lt;&lt;&lt;-           Decrement dividend
+        ]                    End division loop
+    ]&gt;&gt;&gt;[-]+                 End skip loop; zero former divisor and reuse space for a flag
+    &gt;--[-[&lt;-&gt;+++[-]]]&lt;[         Zero that flag unless quotient was 2 or 3; zero quotient; check flag
+        ++++++++++++&lt;[       If flag then set up divisor (13) for second division loop
+                               (MEMORY LAYOUT: zero copy dividend divisor remainder quotient zero zero)
+            &gt;-[&gt;+&gt;&gt;]         Reduce divisor; Normal case: increase remainder
+            &gt;[+[&lt;+&gt;-]&gt;+&gt;&gt;]   Special case: increase remainder / move it back to divisor / increase quotient
+            &lt;&lt;&lt;&lt;&lt;-           Decrease dividend
+        ]                    End division loop
+        &gt;&gt;[&lt;+&gt;-]             Add remainder back to divisor to get a useful 13
+        &gt;[                   Skip forward if quotient was 0
+            -[               Decrement quotient and skip forward if quotient was 1
+                -&lt;&lt;[-]&gt;&gt;     Zero quotient and divisor if quotient was 2
+            ]&lt;&lt;[&lt;&lt;-&gt;&gt;-]&gt;&gt;    Zero divisor and subtract 13 from copy if quotient was 1
+        ]&lt;&lt;[&lt;&lt;+&gt;&gt;-]          Zero divisor and add 13 to copy if quotient was 0
+    ]                        End outer skip loop (jump to here if ((character minus 1)/32) was not 2 or 3)
+    &lt;[-]                     Clear remainder from first division if second division was skipped
+    &lt;.[-]                    Output ROT13ed character from copy and clear it
+    &lt;-,+                     Read next character
+]                            End character reading loop

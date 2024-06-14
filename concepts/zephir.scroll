@@ -1,0 +1,137 @@
+import ../code/conceptPage.scroll
+
+id zephir
+name Zephir
+appeared 2013
+creators Andres Gutierrez
+tags pl
+website https://zephir-lang.com/
+latestVersion 0.17.0
+
+isOpenSource true
+writtenIn php c json bourne-shell yaml markdown m4 xml dockerfile javascript bash css make lisp
+fileType text
+documentation https://docs.zephir-lang.com/0.12/en/welcome
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 6144
+ committers 146
+ files 1454
+ newestCommit 2024
+
+pygmentsHighlighter Zephir
+ filename php.py
+ fileExtensions zep
+twitter https://twitter.com/zephirlang
+
+githubRepo https://github.com/phalcon/zephir
+ firstCommit 2013
+ stars 3128
+ forks 470
+ subscribers 206
+ created 2013
+ updated 2022
+ description Zephir is a compiled high level language aimed to the creation of C-extensions for PHP.
+ issues 94
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasHexadecimals true
+ // 0x[0-9a-fA-F]+
+hasFloats true
+ // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+hasIntegers true
+ // [0-9]+
+
+domainName zephir-lang.com
+ registered 2013
+ awisRank
+  2022 3671741
+
+githubBigQuery Zephir
+ repos 140
+ users 127
+
+linguistGrammarRepo https://github.com/phalcon/zephir-sublime
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 13
+ commitCount 37
+ sampleCount 2
+ example
+  /**
+   * CBLOCK tests
+   * asfas
+   */
+  
+  %{
+  // top statement before namespace, add to after headers
+  #define MAX_FACTOR 40
+  }%
+  
+  namespace Test;
+  
+  %{
+  // top statement before class, add to after headers
+  // test include .h
+  #include "kernel/require.h"
+  }%
+  
+  %{
+  
+  // c implement fibonacci
+  static long fibonacci(long n) {
+          if (n < 2) return n;
+          else return fibonacci(n - 2) + fibonacci(n - 1);
+  }
+  
+  }%
+  
+  class Cblock
+  {
+      public function testCblock1()
+      {
+          int a = 0;
+  
+          %{
+              a = MAX_FACTOR;
+          }%
+  
+          return a;
+      }
+  
+      public function testCblock2()
+      {
+              long a = 0;
+  
+              %{
+                  a = fibonacci(MAX_FACTOR);
+              }%
+  
+              return a;
+      }
+  
+  }
+  
+
+isbndb 0
+
+githubLanguage Zephir
+ fileExtensions zep
+ trendingProjectsCount 0
+ type programming
+ aceMode php
+ tmScope source.php.zephir
+ repos 91
+
+semanticScholar 0

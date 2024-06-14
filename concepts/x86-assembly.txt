@@ -1,0 +1,139 @@
+x86 Assembly
+============
+
+x86 Assembly is an assembly language created in 1972.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221972%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#282 on PLDB
+52 Years Old
+61k Repos
+
+Try now: Riju
+
+x86 assembly language is a family of backward-compatible assembly languages, which provide some level of compatibility all the way back to the Intel 8008 introduced in April 1972. x86 assembly languages are used to produce object code for the x86 class of processors. Like all assembly languages, it uses short mnemonics to represent the fundamental instructions that the CPU in a computer can understand and follow. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/X86_assembly_language
+
+- x86 Assembly Wikipedia page
+ https://en.wikipedia.org/wiki/X86_assembly_language
+- x86 Assembly docs
+ https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+- There are at least 61,156 x86 Assembly repos on GitHub
+- x86 Assembly is supported by the GDB
+- GitHub supports syntax highlighting for x86 Assembly
+- See also: (6 related languages)Assembly language, X86, MMX instruction set, Unix, Netwide Assembler, GNU Assembler
+- 1 languages in PLDB linking to x86 Assembly: SectorC
+
+	.text
+	.globl main
+main:
+	movq $1, %rax
+	movq $1, %rdi
+	leaq message(%rip), %rsi
+	movq $14, %rdx
+	syscall
+	movq $60, %rax
+	movq $0, %rdi
+	syscall
+	.data
+message:
+	.string &quot;Hello, world!\n&quot;
+
+ .cstring
+LC0:
+ .ascii &quot;Hello World\0&quot;
+ .text
+.globl _main
+_main:
+LFB3:
+ pushq %rbp
+LCFI0:
+ movq  %rsp, %rbp
+LCFI1:
+ leaq  LC0(%rip), %rdi
+ call  _puts
+ movl  $0, %eax
+ leave
+ ret
+LFE3:
+ .section __TEXT,__eh_frame,coalesced,no_toc+strip_static_syms+live_support
+EH_frame1:
+ .set L$set$0,LECIE1-LSCIE1
+ .long L$set$0
+LSCIE1:
+ .long 0x0
+ .byte 0x1
+ .ascii &quot;zR\0&quot;
+ .byte 0x1
+ .byte 0x78
+ .byte 0x10
+ .byte 0x1
+ .byte 0x10
+ .byte 0xc
+ .byte 0x7
+ .byte 0x8
+ .byte 0x90
+ .byte 0x1
+ .align 3
+LECIE1:
+.globl _main.eh
+_main.eh:
+LSFDE1:
+ .set L$set$1,LEFDE1-LASFDE1
+ .long L$set$1
+LASFDE1:
+ .long LASFDE1-EH_frame1
+ .quad LFB3-.
+ .set L$set$2,LFE3-LFB3
+ .quad L$set$2
+ .byte 0x0
+ .byte 0x4
+ .set L$set$3,LCFI0-LFB3
+ .long L$set$3
+ .byte 0xe
+ .byte 0x10
+ .byte 0x86
+ .byte 0x2
+ .byte 0x4
+ .set L$set$4,LCFI1-LCFI0
+ .long L$set$4
+ .byte 0xd
+ .byte 0x6
+ .align 3
+LEFDE1:
+ .subsections_via_symbols
+
+cmp	eax, ebx
+	jne	do_something
+	; ...
+do_something:
+	; do something here
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Processor Registers
+ FeatureLink ../features/hasProcessorRegisters.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

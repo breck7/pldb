@@ -1,0 +1,161 @@
+Bluespec
+========
+
+Bluespec is a programming language created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#812 on PLDB
+24 Years Old
+275 Repos
+
+Bluespec, Inc. is a semiconductor tool design company co-founded by Prof. Arvind of MIT in June 2003. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Bluespec
+
+- Bluespec Wikipedia page
+ https://en.wikipedia.org/wiki/Bluespec
+- There are at least 275 Bluespec repos on GitHub
+- Bluespec first developed in Bluespec, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Bluespec in 51 repos on GitHub
+- GitHub supports syntax highlighting for Bluespec
+- See also: (2 related languages)Haskell, SystemVerilog
+
+package TbTL;
+
+import TL::*;
+
+interface Lamp;
+   method Bool changed;
+   method Action show_offs;
+   method Action show_ons;
+   method Action reset;
+endinterface
+
+module mkLamp#(String name, Bool lamp)(Lamp);
+   Reg#(Bool) prev &lt;- mkReg(False);
+
+   method changed = (prev != lamp);
+
+   method Action show_offs;
+      if (prev &amp;&amp; !lamp)
+      $write (name + &quot; off, &quot;);
+   endmethod
+
+   method Action show_ons;
+      if (!prev &amp;&amp; lamp)
+      $write (name + &quot; on, &quot;);
+   endmethod
+
+   method Action reset;
+      prev &lt;= lamp;
+   endmethod
+endmodule
+
+(* synthesize *)
+module mkTest();
+   let dut &lt;- sysTL;
+
+   Reg#(Bit#(16)) ctr &lt;- mkReg(0);
+
+   Reg#(Bool) carN &lt;- mkReg(False);
+   Reg#(Bool) carS &lt;- mkReg(False);
+   Reg#(Bool) carE &lt;- mkReg(False);
+   Reg#(Bool) carW &lt;- mkReg(False);
+
+   Lamp lamps[12];
+
+   lamps[0] &lt;- mkLamp(&quot;0:  NS  red  &quot;, dut.lampRedNS);
+   lamps[1] &lt;- mkLamp(&quot;1:  NS  amber&quot;, dut.lampAmberNS);
+   lamps[2] &lt;- mkLamp(&quot;2:  NS  green&quot;, dut.lampGreenNS);
+   lamps[3] &lt;- mkLamp(&quot;3:  E   red  &quot;, dut.lampRedE);
+   lamps[4] &lt;- mkLamp(&quot;4:  E   amber&quot;, dut.lampAmberE);
+   lamps[5] &lt;- mkLamp(&quot;5:  E   green&quot;, dut.lampGreenE);
+   lamps[6] &lt;- mkLamp(&quot;6:  W   red  &quot;, dut.lampRedW);
+   lamps[7] &lt;- mkLamp(&quot;7:  W   amber&quot;, dut.lampAmberW);
+   lamps[8] &lt;- mkLamp(&quot;8:  W   green&quot;, dut.lampGreenW);
+
+   lamps[9]  &lt;- mkLamp(&quot;9:  Ped red  &quot;, dut.lampRedPed);
+   lamps[10] &lt;- mkLamp(&quot;10: Ped amber&quot;, dut.lampAmberPed);
+   lamps[11] &lt;- mkLamp(&quot;11: Ped green&quot;, dut.lampGreenPed);
+
+   rule start (ctr == 0);
+      $dumpvars;
+   endrule
+
+   rule detect_cars;
+      dut.set_car_state_N(carN);
+      dut.set_car_state_S(carS);
+      dut.set_car_state_E(carE);
+      dut.set_car_state_W(carW);
+   endrule
+
+   rule go;
+      ctr &lt;= ctr + 1;
+      if (ctr == 5000) carN &lt;= True;
+      if (ctr == 6500) carN &lt;= False;
+      if (ctr == 12_000) dut.ped_button_push;
+   endrule
+
+   rule stop (ctr &gt; 32768);
+      $display(&quot;TESTS FINISHED&quot;);
+      $finish(0);
+   endrule
+
+   function do_offs(l) = l.show_offs;
+      function do_ons(l) = l.show_ons;
+      function do_reset(l) = l.reset;
+
+      function do_it(f);
+         action
+         for (Integer i=0; i&lt;12; i=i+1)
+            f(lamps[i]);
+         endaction
+      endfunction
+
+      function any_changes();
+         Bool b = False;
+         for (Integer i=0; i&lt;12; i=i+1)
+             b = b || lamps[i].changed;
+         return b;
+      endfunction
+
+      rule show (any_changes());
+      do_it(do_offs);
+      do_it(do_ons);
+      do_it(do_reset);
+      $display(&quot;(at time %d)&quot;, $time);
+   endrule
+endmodule
+
+endpackage
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* A comment
+  *)
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

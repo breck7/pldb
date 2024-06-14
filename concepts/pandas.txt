@@ -1,0 +1,60 @@
+Pandas
+======
+
+Pandas is an open source library created in 2008 by Wes McKinney.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Wes%20McKinney
+
+#228 on PLDB
+16 Years Old
+
+git clone https://github.com/pandas-dev/pandas/
+
+In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Pandas_(software)
+
+- Pandas website
+ https://pandas.pydata.org
+- Pandas Wikipedia page
+ https://en.wikipedia.org/wiki/Pandas_(software)
+- Pandas is developed on GitHub
+- Pandas first developed in https://github.com/pandas-dev
+- Pandas is written in Python, reStructuredText, HTML, Cython, SVG, YAML, CSV, Markdown, C, JSON, Bourne shell, Meson, CSS, XML, Dockerfile, TOML, XSLT, Jupyter Notebook, Bash
+- Pandas on Twitter
+ https://twitter.com/pandas_dev
+- Indeed.com has 341 matches for "pandas engineer".
+- See also: (8 related languages)Python, Cython, C, Matplotlib, NumPy, SciPy, R, Scikit-learn
+
+&gt;&gt;&gt;import pandas as pd
+Series
+&gt;&gt;&gt;s = pd.Series([1, 3, 5, np.nan, 6, 8])
+DataFrame
+&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt;df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list(&quot;ABCD&quot;))
+&gt;&gt;&gt; df.head()
+&gt;&gt;&gt;df.tail()
+Quick Statistics summary of data
+&gt;&gt;&gt; df.describe()
+Indexing
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example

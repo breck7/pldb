@@ -1,0 +1,130 @@
+EuLisp
+======
+
+EuLisp is a programming language created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1248 on PLDB
+39 Years Old
+
+EuLisp is a statically and dynamically scoped Lisp dialect developed by a loose formation of industrial and academic Lisp users and developers from around Europe. The standardizers intended to create a new Lisp "less encumbered by the past" (compared to Common Lisp), and not so minimalist as Scheme. Another objective was to integrate the object-oriented programming paradigm well. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/EuLisp
+
+- EuLisp Wikipedia page
+ https://en.wikipedia.org/wiki/EuLisp
+- PLDB has 2 documentation sites for EuLisp: henry.github.io, people.bath.ac.uk
+- EuLisp first developed in https://henry.github.io
+- EuLisp on HOPL
+ https://hopl.info/showlanguage.prx?exp=1139
+- See also: (22 related languages)Lisp, Linux, Common Lisp, Scheme, T, Standard ML, Haskell, Dylan, ISLISP, Interlisp, Lisp Machine Lisp, Le-Lisp, Emacs Lisp, AutoLISP, OpenLisp, PicoLisp, NewLisp, Racket, Guile, Clojure, Arc, LFE
+
+(defmodule hanoi
+  (syntax (syntax-0)
+   import (level-0)
+   export (hanoi))
+
+;;;-------------------------------------------------
+;;; Tower definition
+;;;-------------------------------------------------
+(defconstant *max-tower-height* 10)
+
+(defclass &lt;tower&gt; ()
+  ((id reader: tower-id keyword: id:)
+   (blocks accessor: tower-blocks)))
+
+(defun build-tower (x n)
+  (labels ((loop (i res)
+                 (if (= i 0) res
+                   (loop (- i 1) (cons i res)))))
+          ((setter tower-blocks) x (loop n ()))
+          x))
+
+(defmethod generic-print ((x &lt;tower&gt;) (s &lt;stream&gt;))
+  (sformat s &quot;#&lt;tower ~a: ~a&gt;&quot; (tower-id x) (tower-blocks x)))
+
+;;;-------------------------------------------------
+;;; Access to tower blocks
+;;;-------------------------------------------------
+(defgeneric push (x y))
+
+(defmethod push ((x &lt;tower&gt;) (y &lt;fpi&gt;))
+  (let ((blocks (tower-blocks x)))
+    (if (or (null? blocks) (&lt; y (car blocks)))
+        ((setter tower-blocks) x (cons y blocks))
+      (error &lt;condition&gt;
+             (fmt &quot;cannot push block of size ~a on tower ~a&quot; y x)))))
+
+(defgeneric pop (x))
+
+(defmethod pop ((x &lt;tower&gt;))
+  (let ((blocks (tower-blocks x)))
+    (if blocks
+        (progn
+          ((setter tower-blocks) x (cdr blocks))
+          (car blocks))
+      (error &lt;condition&gt;
+             (fmt &quot;cannot pop block from empty tower ~a&quot; x)))))
+
+;;;-------------------------------------------------
+;;; Move n blocks from tower x1 to tower x2 using x3 as buffer
+;;;-------------------------------------------------
+(defgeneric move (n x1 x2 x3))
+
+(defmethod move ((n &lt;fpi&gt;) (x1 &lt;tower&gt;) (x2 &lt;tower&gt;) (x3 &lt;tower&gt;))
+  (if (= n 1)
+      (progn
+        (push x2 (pop x1))
+        (print x1 nl x2 nl x3 nl nl))
+    (progn
+      (move (- n 1) x1 x3 x2)
+      (move 1 x1 x2 x3)
+      (move (- n 1) x3 x2 x1))))
+
+;;;-------------------------------------------------
+;;; Initialize and run the &#39;Towers of Hanoi&#39;
+;;;-------------------------------------------------
+(defun hanoi ()
+  (let ((x1 (make &lt;tower&gt; id: 0))
+        (x2 (make &lt;tower&gt; id: 1))
+        (x3 (make &lt;tower&gt; id: 2)))
+    (build-tower x1 *max-tower-height*)
+    (build-tower x2 0)
+    (build-tower x3 0)
+    (print x1 nl x2 nl x3 nl nl)
+    (move *max-tower-height* x1 x2 x3)))
+
+(hanoi)
+
+;;;-------------------------------------------------
+)  ;; End of module hanoi
+;;;-------------------------------------------------
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

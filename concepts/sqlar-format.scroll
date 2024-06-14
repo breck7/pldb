@@ -1,0 +1,12 @@
+import ../code/conceptPage.scroll
+
+id sqlar-format
+name sqlar-format
+appeared 2014
+tags binaryDataFormat
+conceptDescription This program (named "sqlar") operates much like "zip", except that the compressed archive it builds is stored in an SQLite database instead of a ZIP archive.
+
+relatedConcepts gzip zip-format
+country United States
+originCommunity  Hipp, Wyrick & Company, Inc
+reference https://sqlite.org/sqlar/doc/trunk/README.md

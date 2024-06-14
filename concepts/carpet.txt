@@ -1,0 +1,70 @@
+Carpet
+======
+
+Carpet is a programming language created in 1997 by Giandomenico Spezzano and Domenico Talia.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Giandomenico%20Spezzano
+ https://pldb.io/concepts/../lists/creators.html#q=Domenico%20Talia
+
+#2303 on PLDB
+27 Years Old
+
+- Carpet first developed in University of Calabria
+- Carpet on HOPL
+ https://hopl.info/showlanguage.prx?exp=6227
+- Read more about Carpet on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/ca5c3e6a3f7e5223052fef1d626c6f29e4b6bc8a
+- Read more about Carpet on the web: 1.
+ https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=ec6ea12f096627857637678555a968f40a94a6d1
+
+cadef
+{
+dimension 2;
+radius 1;
+state (short which, rand, gas);
+neighbor Margolus[9]([1,0]East,[1,1]SE,[0,1]South,[-1,1]SO,
+ [-1,0]West,[-1,-1]NW,[0,-1]North,[1,-1] NE,[1,0] East);
+}
+ int i; short temp, temprand;
+{
+if((cell_which == 0 &amp;&amp; step %2 == 1)||(cell_which == 3 &amp;&amp; step % 2 == 0))
+ { temprand = 0;
+ for(i=0; i &lt; 3; i++)
+ temprand = temprand + Margolus_rand[i];
+ temprand = temprand + cell_rand;
+ if (temprand % 2 == 1)
+ update(cell_gas, South_gas);
+ else
+ update(cell_gas, East_gas);
+ } else
+ if((cell_which == 1 &amp;&amp; step % 2 == 1)||(cell_which == 2 &amp;&amp; step % 2 == 0))
+ { temprand = 0;
+ for(i=2; i &lt; 5; i++)
+ temprand = temprand + Margolus_rand[i];
+ temprand = temprand + cell_rand;
+ if (temprand % 2 == 1)
+ update(cell_gas, West_gas);
+ else
+ update(cell_gas, South_gas);
+ } else
+ if((cell_which == 3 &amp;&amp; step %2 == 1)||(cell_which == 0 &amp;&amp; step % 2 == 0))
+{ temprand = 0;
+ for(i=4; i &lt; 7; i++)
+ temprand = temprand + Margolus_rand[i];
+ temprand = temprand + cell_rand;
+ if (temprand % 2 == 1)
+ update(cell_gas, North_gas);
+ else
+ update(cell_gas, West_gas);
+ } else
+ { temprand = 0;
+ for (i=6; i &lt; 9; i++)
+ temprand= temprand + Margolus_rand[i];
+ temprand = temprand + cell_rand;
+ if (temprand % 2 == 1)
+ update(cell_gas, East_gas);
+ else
+ update(cell_gas, North_gas);
+ }
+ temp = (cell_rand + East_rand + North_rand + West_rand + South_rand ) % 2
+ up

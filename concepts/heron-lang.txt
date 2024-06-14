@@ -1,0 +1,53 @@
+Heron
+=====
+
+Heron is a programming language created in 2016 by Christopher Diggins.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Christopher%20Diggins
+
+#1230 on PLDB
+8 Years Old
+
+git clone https://github.com/cdiggins/heron-language
+
+A pure functional type-inferred language based on JavaScript
+
+- Heron website
+ https://cdiggins.github.io/heron-language
+- Heron is developed on GitHub and has 56 stars
+- Heron first developed in https://github.com/cdiggins/heron-language/issues
+- Heron is written in JavaScript, TypeScript, HTML, JSON, Markdown, CSS, SVG, YAML, Python, XML
+- Heron on Twitter
+ https://twitter.com/cdiggins
+
+// Named function with statement body
+function sum(xs) {
+    var result = 0;
+    for (var x in xs)
+        result += x;
+    return result;
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

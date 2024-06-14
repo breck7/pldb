@@ -1,0 +1,178 @@
+Terra
+=====
+
+Terra is an open source programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#202 on PLDB
+12 Years Old
+410 Repos
+
+git clone https://github.com/zdevito/terra
+
+Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
+
+- Terra website
+ http://terralang.org/
+- Terra is developed on GitHub and has 2,432 stars
+- Terra docs
+ https://docs.terra.money/
+- There are at least 410 Terra repos on GitHub
+- Terra is written in C++, Lua, Markdown, C, CMake, Bourne shell, YAML, JavaScript, HTML, CSS, Dockerfile, Make, Nix, Diff
+- The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Terra in 206 repos on GitHub
+- Explore Terra snippets on Rosetta Code
+- GitHub supports syntax highlighting for Terra
+
+-- This top-level code is plain Lua code.
+function printhello()
+    -- This is a plain Lua function
+    print(&quot;Hello, Lua!&quot;)
+end
+printhello()
+
+-- Terra is backwards compatible with C, we&#39;ll use C&#39;s io library in our example.
+C = terralib.includec(&quot;stdio.h&quot;)
+
+-- The keyword &#39;terra&#39; introduces a new Terra function.
+terra hello(argc : int, argv : &amp;rawstring)
+    -- Here we call a C function from Terra
+    C.printf(&quot;Hello, Terra!\n&quot;)
+    return 0
+end
+
+-- You can call Terra functions directly from Lua, they are JIT compiled
+-- using LLVM to create machine code
+hello(0,nil)
+
+-- Terra functions are first-class values in Lua, and can be introspected
+-- and meta-programmed using it
+hello:disas()
+--[[ output:
+    assembly for function at address 0x60e6010
+    0x60e6010(+0):    push  rax
+    0x60e6011(+1):    movabs  rdi, 102129664
+    0x60e601b(+11):   movabs  rax, 140735712154681
+    0x60e6025(+21):   call  rax
+    0x60e6027(+23):   xor eax, eax
+    0x60e6029(+25):   pop rdx
+    0x60e602a(+26):   ret
+]]
+
+-- You can save Terra code as executables, object files, or shared libraries
+-- and link them into existing programs
+terralib.saveobj(&quot;helloterra&quot;,{ main = hello })
+
+print(&quot;Hello World&quot;)
+
+C = terralib.includecstring [[
+	#include &lt;stdio.h&gt;
+	#include &lt;stdlib.h&gt;
+]]
+local arraytypes = {}
+function Array(T)
+	local struct ArrayImpl {
+		data : &amp;T;
+		N : int;
+	}
+	function ArrayImpl.metamethods.__typename(self)
+	    return &quot;Array(&quot;..tostring(T)..&quot;)&quot;
+	end
+	arraytypes[ArrayImpl] = true
+	terra ArrayImpl:init(N : int)
+		self.data = [&amp;T](C.malloc(N*sizeof(T)))
+		self.N = N
+	end
+	terra ArrayImpl:free()
+		C.free(self.data)
+	end
+	ArrayImpl.metamethods.__apply = macro(function(self,idx)
+		return `self.data[idx]
+	end)
+	ArrayImpl.metamethods.__methodmissing = macro(function(methodname,selfexp,...)
+		local args = terralib.newlist {...}
+		local i = symbol(int)
+		local promotedargs = args:map(function(a)
+			if arraytypes[a:gettype()] then
+				return `a(i)
+			else
+				return a
+			end
+		end)
+		return quote
+			var self = selfexp
+			var r : ArrayImpl
+			r:init(self.N)
+			for [i] = 0,r.N do
+				r.data[i] = self.data[i]:[methodname](promotedargs)
+			end
+		in
+			r
+		end
+	end)
+	return ArrayImpl
+end
+
+struct Complex {
+	real : float;
+	imag : float;
+}
+
+terra Complex:add(c : Complex)
+	return Complex { self.real + c.real, self.imag + c.imag }
+end
+
+ComplexArray = Array(Complex)
+N = 10
+terra testit()
+	var ca : ComplexArray
+	ca:init(N)
+	for i = 0,N do
+		ca(i) = Complex { i, i + 1 }
+	end
+	var ra = ca:add(ca)
+	return ra
+end
+local r = testit()
+assert(r.N == N)
+for i = 0,N-1 do
+	assert(r.data[i].real == 2*i)
+	assert(r.data[i].imag == 2*(i+1))
+end
+assert(tostring(Array(int)) == &quot;Array(int32)&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

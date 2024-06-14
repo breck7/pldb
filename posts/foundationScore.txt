@@ -1,0 +1,18 @@
+What languages do the people who build languages use?
+=====================================================
+by Breck Yunits
+
+May 28, 2024
+
+PLDB now has _foundationScore_, which measures how often a language is used in the main implementations of other languages.
+
+To calculate foundationScore, we download the git repos for all open source languages in PLDB (which is >98% of them), run cloc on each, and sum the output.
+ https://pldb.io/posts/../concepts/cloc.html
+
+The results are below. Click the image for the interactive version. You can also see all the foundationScore data in the PLDB Explorer.
+ https://pldb.io/posts/../lists/explorer.html#columns=rank~name~id~appeared~tags~creators~writtenIn~foundationScore&order=7.desc
+
+[Image Omitted]
+ Interactive Version
+  https://www.datawrapper.de/_/d5QKD/
+ https://www.datawrapper.de/_/d5QKD/

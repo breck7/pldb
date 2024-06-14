@@ -1,0 +1,18 @@
+importOnly
+replaceJs CURRENT_YEAR dayjs().format("YYYY")
+
+## Citation
+PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
+
+> https://pldb.io
+
+> PLDB contributors. (CURRENT_YEAR) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
+
+code
+ @article{pldb,
+   author = {PLDB contributors},
+   title = {PLDB: a Programming Language Database},
+   journal = {PLDB},
+   year = {CURRENT_YEAR},
+   note = {https://pldb.io}
+  }

@@ -1,0 +1,33 @@
+RMarkdown
+=========
+
+RMarkdown is an open source text markup language created in 2014 by JJ Allaire.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=JJ%20Allaire
+
+#259 on PLDB
+10 Years Old
+198 Repos
+
+git clone https://github.com/rstudio/rmarkdown
+
+Dynamic Documents for R
+
+- RMarkdown website
+ https://rmarkdown.rstudio.com/
+- RMarkdown is developed on GitHub and has 2,471 stars
+- There are at least 198 RMarkdown repos on GitHub
+- RMarkdown first developed in https://github.com/rstudio
+- RMarkdown is written in R, CSS, JavaScript, Markdown, YAML, HTML, Lua, SVG, Tex, Bourne shell, XML, SCSS, CSV
+- GitHub supports syntax highlighting for RMarkdown
+
+# An example RMarkdown
+
+Some text.
+
+## A graphic in R
+
+```{r}
+plot(1:10)
+hist(rnorm(10000))
+```

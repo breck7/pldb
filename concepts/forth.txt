@@ -1,0 +1,121 @@
+Forth
+=====
+
+Forth is a programming language created in 1970 by Charles H. Moore.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Charles%20H.%20Moore
+
+#83 on PLDB
+54 Years Old
+2k Repos
+
+Try now: Riju · Replit
+
+Forth is an imperative stack-based computer programming language and environment originally designed by Charles "Chuck" Moore. Language features include structured programming, reflection (the ability to modify the program structure during program execution), concatenative programming (functions are composed with juxtaposition) and extensibility (the programmer can create new commands). Although not an acronym, the language's name is sometimes spelled with all capital letters as FORTH, following the customary usage during its earlier years. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Forth_(programming_language)
+
+- Forth Wikipedia page
+ https://en.wikipedia.org/wiki/Forth_(programming_language)
+- Forth docs
+ https://www.forth.com/starting-forth/
+- There are at least 1,537 Forth repos on GitHub
+- Forth first developed in National Radio Astronomy Observatory
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Forth in 2k repos on GitHub
+- There are 63 Project Euler users using Forth
+- Explore Forth snippets on Rosetta Code
+- Forth on HOPL
+ https://hopl.info/showlanguage.prx?exp=182
+- Forth appears in the TIOBE Index
+- Forth Ubuntu package
+ https://packages.ubuntu.com/jammy/gforth
+- CodeMirror package for syntax highlighting Forth
+- Pygments supports syntax highlighting for Forth
+- GitHub supports syntax highlighting for Forth
+- Forth appears in the Quine Relay project
+- PLDB has 2 Jupyter Kernels for Forth: github.com, github.com
+- There is a central package repository for Forth
+- Indeed.com has 0 matches for "forth developer".
+- See also: (15 related languages)Lisp, APL, Factor, PostScript, RPL, REBOL, Reverse Polish notation, FreeBSD, C, Linux, Unix, Atmel AVR, TI MSP430, ASCII, Joy
+- 12 languages in PLDB linking to Forth: Ace Editor, cloc, DragonBASIC, Frege, mal, phorth, preforth, Pygments, r3, reforth, Scroll Notation, skip
+
+.&quot; Hello, world!&quot; CR
+
+.( Hello World)
+
+&#39; Hello world in Forth
+
+.&quot; Hello World&quot; CR
+
+: HELLO  ( -- )
+    .&quot; Hello Forth (fth)!&quot; ;
+
+HELLO
+
+hex
+create AKey   61 c, 8A c, 63 c, D2 c, FB c,
+: test   cr   0 DO  rc4_byte . LOOP  cr ;
+AKey 5 rc4_init
+2C F9 4C EE DC  5 test   \ output should be: F1 38 29 C9 DE
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  \ (\#|%|&|\-|\+)?[0-9]+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  \ (\$[0-9A-F]+)
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token .
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token \
+ Example
+  \ A comment
+row
+ Feature Postfix Notation
+ FeatureLink ../features/hasPostfixNotation.html
+ Supported ✓
+ Token 
+ Example
+  \ Multiplies 25 and 10 and then adds 50 to result
+  25 10 * 50 +
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported X
+ Token 
+ Example

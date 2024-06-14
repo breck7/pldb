@@ -1,0 +1,753 @@
+Jule
+====
+
+Jule is an open source programming language created in 2021 by Mertcan Davulcu.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mertcan%20Davulcu
+
+#798 on PLDB
+3 Years Old
+
+git clone https://github.com/julelang/jule
+
+Jule is the simple, efficient, statically typed and compiled system programming language.
+
+- Jule website
+ https://jule.dev
+- Jule is developed on GitHub and has 67 stars
+- Jule docs
+ https://jule.dev/pages/manual.html?page=jule-lang
+- Jule first developed in https://github.com/julelang
+- Jule is written in YAML, Markdown, Bourne shell, Dockerfile
+- jule.dev was registered in 2022
+
+ fn quicksort(mut s: []int) {
+     if s.len &lt;= 1 {
+         ret
+     }
+ 
+     let mut i = -1
+     let last = s[s.len-1]
+     for j in s {
+         let mut x = &amp;s[j]
+         if (unsafe{ *x &lt;= last }) {
+             i++
+             let mut y = &amp;s[i]
+             unsafe { *x, *y = *y, *x }
+         }
+     }
+ 
+     quicksort(s[:i])
+     quicksort(s[i+1:])
+ }
+ 
+ fn main() {
+     let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
+     outln(my_slice)
+     quicksort(my_slice)
+     outln(my_slice)
+ }
+
+fn main() {
+    outln(&quot;Hello World&quot;)
+}
+
+use std::math::{PI}
+
+trait Shape {
+    fn area(self): f32
+}
+
+struct Rectangle {
+    width: int
+    height: int
+}
+
+impl Shape for Rectangle {
+    fn area(self): f32 {
+        ret self.width * self.height
+    }
+}
+
+struct Circle {
+    r: f32
+}
+
+impl Shape for Circle {
+    fn area(self): f32 {
+        ret PI * self.r * self.r
+    }
+}
+
+fn main() {
+    let rect: Shape = Rectangle{90, 5}
+    let circ: Shape = Circle{90.5}
+    outln(rect.area())
+    outln(circ.area())
+}
+
+fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
+
+Language features
+======================================================
+
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token use
+ Example
+  use std::fs
+  use std::sys::{self, open, O_RDWR}
+  use std::math::*
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+  `Multiline strings
+  is available in Jule
+  with raw strings`
+row
+ Feature hasStringConcatOperator
+ FeatureLink ../features/hasStringConcatOperator.html
+ Supported ✓
+ Token 
+ Example
+  +
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported ✓
+ Token 
+ Example
+  use std::fs::{open, O_WRONLY}
+  
+  fn main() {
+      let (mut f, _) = open("myfile.txt", O_WRONLY, 0)
+      let bytes = ([]byte)("Text to write")
+      f.write(bytes)
+      f.close()
+  }
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported ✓
+ Token 
+ Example
+  ++
+  --
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  if BOOLEAN_EXPRESSION {
+      outln(""Condition is true)
+  }
+row
+ Feature Manual Memory Management
+ FeatureLink ../features/hasManualMemoryManagement.html
+ Supported ✓
+ Token 
+ Example
+  use std::mem::c::{malloc, free}
+  
+  fn main() {
+      let mut ptr = malloc(8)
+      free(ptr)
+      ptr = nil
+  }
+row
+ Feature Type Casting
+ FeatureLink ../features/hasExplicitTypeCasting.html
+ Supported ✓
+ Token 
+ Example
+  let x = (int)(3.14)
+row
+ Feature hasArraySlicingSyntax
+ FeatureLink ../features/hasArraySlicingSyntax.html
+ Supported ✓
+ Token 
+ Example
+  sliceable_expression[start_index:to_index]
+row
+ Feature Duck Typing
+ FeatureLink ../features/hasDuckTyping.html
+ Supported ✓
+ Token 
+ Example
+  fn lock_object[T](obj: T) {
+      obj.lock()
+  }
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+  match X {
+  | Y:         outln("X is Y")
+  | Z:         outln("X is Z")
+  | A | B | C: outln("X is A, B, or C")
+  |:           outln("X is not Y, Z, A, B and C")
+  }
+row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasMemberVariables
+ FeatureLink ../features/hasMemberVariables.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+  pub
+row
+ Feature Type Annotations
+ FeatureLink ../features/hasTypeAnnotations.html
+ Supported ✓
+ Token 
+ Example
+  let x: f64 = 89
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+  let mut x = 0
+  x = 20
+row
+ Feature Threads
+ FeatureLink ../features/hasThreads.html
+ Supported ✓
+ Token 
+ Example
+  fn my_thread() {
+      outln("Hello from thread")
+  }
+  
+  fn main() {
+      co my_thread()
+  }
+row
+ Feature Statements
+ FeatureLink ../features/hasStatements.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasStatementTerminatorCharacter
+ FeatureLink ../features/hasStatementTerminatorCharacter.html
+ Supported ✓
+ Token 
+ Example
+  ;
+row
+ Feature hasBoundedCheckedArrays
+ FeatureLink ../features/hasBoundedCheckedArrays.html
+ Supported ✓
+ Token 
+ Example
+  let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
+row
+ Feature hasSelfOrThisWord
+ FeatureLink ../features/hasSelfOrThisWord.html
+ Supported ✓
+ Token 
+ Example
+  self
+row
+ Feature hasRequiredMainFunction
+ FeatureLink ../features/hasRequiredMainFunction.html
+ Supported ✓
+ Token 
+ Example
+  fn main() {}
+row
+ Feature Gotos
+ FeatureLink ../features/hasGotos.html
+ Supported ✓
+ Token 
+ Example
+  goto a_label
+row
+ Feature Labels
+ FeatureLink ../features/hasLabels.html
+ Supported ✓
+ Token 
+ Example
+  a_label:
+row
+ Feature hasDynamicSizedArrays
+ FeatureLink ../features/hasDynamicSizedArrays.html
+ Supported ✓
+ Token 
+ Example
+  let mut a_slice = [1, 2, 3, 4, 5, 6]
+  a_slice = append(a_slice, 7, 8, 9, 10)
+row
+ Feature hasIfElses
+ FeatureLink ../features/hasIfElses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasIfs
+ FeatureLink ../features/hasIfs.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Doc comments
+ FeatureLink ../features/hasDocComments.html
+ Supported ✓
+ Token 
+ Example
+  // Documentation comment for a_function
+  fn a_function() {}
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+  for my_condition {
+      // ...
+  }
+row
+ Feature hasForLoops
+ FeatureLink ../features/hasForLoops.html
+ Supported ✓
+ Token 
+ Example
+  // Jule has for loops with while-next iterations
+  let mut i = 0
+  for i ✓
+ Token 
+ Example
+  for x, y in my_enumerable {
+      // ...
+  }
+row
+ Feature canReadCommandLineArgs
+ FeatureLink ../features/canReadCommandLineArgs.html
+ Supported ✓
+ Token 
+ Example
+  use std::os::{ARGS}
+  
+  fn main() {
+      outln(ARGS)
+  }
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasFnArguments
+ FeatureLink ../features/hasFnArguments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Dependent types
+ FeatureLink ../features/hasDependentTypes.html
+ Supported ✓
+ Token 
+ Example
+  int uint uintptr
+row
+ Feature Unary Operators
+ FeatureLink ../features/hasUnaryOperators.html
+ Supported ✓
+ Token 
+ Example
+  * & - + ^ !
+row
+ Feature Variadic Functions
+ FeatureLink ../features/hasVariadicFunctions.html
+ Supported ✓
+ Token 
+ Example
+  fn average(x: ...f64): f64 {
+      // ...
+  }
+row
+ Feature Assert Statements
+ FeatureLink ../features/hasAssertStatements.html
+ Supported ✓
+ Token 
+ Example
+  use std::debug
+  use std::debug::assert::{assert}
+  
+  fn main() {
+      std::debug::ENABLE = true
+      let x = 200
+      assert(x ✓
+ Token 
+ Example
+  & | ^ >
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasValueReturnedFunctions
+ FeatureLink ../features/hasValueReturnedFunctions.html
+ Supported ✓
+ Token 
+ Example
+  fn get_pi(): f64 {
+      ret 3.14159265359
+  }
+row
+ Feature hasGlobalScope
+ FeatureLink ../features/hasGlobalScope.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+  1E2
+  .12345E+6
+  1.e+0
+  0x15e-2
+  0x2.p10
+  0X.8p-0
+  0x1.Fp+0
+  0x1fffp-16
+  0x1p-2
+row
+ Feature hasVoidFunctions
+ FeatureLink ../features/hasVoidFunctions.html
+ Supported ✓
+ Token 
+ Example
+  fn a_void_function() {
+      // ...
+  }
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  0b0001010101
+row
+ Feature Decimals
+ FeatureLink ../features/hasDecimals.html
+ Supported ✓
+ Token 
+ Example
+  12345
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  0455
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  0xDFF90
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported ✓
+ Token 
+ Example
+  struct Employee {
+      first_name: str
+      last_name: str
+      salary: f32
+  }
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  12345
+  0b0001010101
+  0455
+  0xDFF90
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  3.14
+  32.60
+  032.60
+  3.
+  0.3
+  1E2
+  .12345E+6
+  1.e+0
+  0x1p-2
+  0x2.p10
+  0x1.Fp+0
+  0X.8p-0
+  0x1fffp-16
+  0x15e-2
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported ✓
+ Token 
+ Example
+  enum ExitCode {
+      Success = 0,
+      Failure = 1
+  }
+row
+ Feature hasContinue
+ FeatureLink ../features/hasContinue.html
+ Supported ✓
+ Token 
+ Example
+  continue
+  continue a_label
+row
+ Feature hasBreak
+ FeatureLink ../features/hasBreak.html
+ Supported ✓
+ Token 
+ Example
+  break
+  break a_label
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported ✓
+ Token 
+ Example
+  let anonymous = fn() {
+      outln("Anonymous Function")
+  }
+  anonymous()
+row
+ Feature Null
+ FeatureLink ../features/hasNull.html
+ Supported ✓
+ Token 
+ Example
+  nil
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+  const PI = 3.14159265359
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+  true false
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported ✓
+ Token 
+ Example
+  fn generic_function[T](s: []T) {
+      // ...
+  }
+row
+ Feature Traits
+ FeatureLink ../features/hasTraits.html
+ Supported ✓
+ Token 
+ Example
+  trait Person {
+      fn get_full_name(self): str
+      fn get_age(self): byte
+  }
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported ✓
+ Token 
+ Example
+  let my_map: [int:str] = {
+      0: "Key 0",
+      1: "Key 1",
+      2: "Key 2",
+  }
+row
+ Feature Methods
+ FeatureLink ../features/hasMethods.html
+ Supported ✓
+ Token 
+ Example
+  impl MyStruct {
+      fn my_method(self) {}
+  }
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+  fn a_function() {
+      // ...
+  }
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+  let ptr: *int = nil
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token outln
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /*
+    A multi line comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+  /* A comment */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Jule String Literal"
+  `Jule Raw String Literal`
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported X
+ Token 
+ Example
+row
+ Feature hasTryCatch
+ FeatureLink ../features/hasTryCatch.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Async Await
+ FeatureLink ../features/hasAsyncAwait.html
+ Supported X
+ Token 
+ Example
+row
+ Feature canUseQuestionMarksAsPartOfIdentifier
+ FeatureLink ../features/canUseQuestionMarksAsPartOfIdentifier.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported X
+ Token 
+ Example
+row
+ Feature hasUserDefinedOperators
+ FeatureLink ../features/hasUserDefinedOperators.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported X
+ Token 
+ Example
+row
+ Feature hasMethodOverloading
+ FeatureLink ../features/hasMethodOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,53 @@
+htmlAnyCell
+ extends stringCell
+
+htmlParser
+ description A catch all block to drop in any loose html. Use for HTML one liners and/or blocks of HTML.
+ cruxFromId
+ extends abstractScrollParser
+ catchAllParser htmlLineParser
+ catchAllCellType htmlAnyCell
+ javascript
+  compile() {
+   return `${this.content ?? ""}${this.childrenToString()}`
+  }
+  compileTextVersion() {
+    return ""
+  }
+
+htmlLineParser
+ catchAllCellType htmlAnyCell
+ catchAllParser htmlLineParser
+
+quickHtmlParser
+ extends htmlParser
+ cells htmlAnyCell
+ pattern ^<
+ description Start a line with a less than sign to immediately write HTML
+ javascript
+  compile() {
+   return `${this.getLine() ?? ""}${this.childrenToString()}`
+  }
+
+stumpContentParser
+ catchAllCellType anyCell
+
+stumpParser
+ cruxFromId
+ extends abstractScrollParser
+ description Stump is a Tree Language that compiles to HTML.
+ catchAllParser stumpContentParser
+ javascript
+  compile() {
+   const file = this.parent.file
+   return file.compileStumpCode(this.childrenToString())
+  }
+
+stumpNoSnippetParser
+ extends stumpParser
+ description Useful for headers and footers when you have something you don't want included in snippets.
+ cruxFromId
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }

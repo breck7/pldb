@@ -1,0 +1,93 @@
+Cell
+====
+
+Cell is an open source programming language created in 2017.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#957 on PLDB
+7 Years Old
+
+git clone https://github.com/cell-lang/compiler
+
+Cell compiler
+
+- Cell website
+ http://cell-lang.net/
+- Cell is developed on GitHub and has 98 stars
+- Cell first developed in https://github.com/cell-lang
+- Cell is written in Markdown
+- Cell on Twitter
+ https://twitter.com/cell_lang
+- cell-lang.net was registered in 2017
+
+type AddUser = add_user(
+ id:            UserId,
+ username:      String,
+ signup_date:   Date,
+ first_name:    String,
+ last_name:     String,
+ date_of_birth: Date?
+);
+
+OnlineForum.AddUser {
+  id = self.id;
+  // Inserting the new user id and setting all the mandatory attributes
+  insert user(id),
+         username(id, self.username),
+         first_name(id, self.first_name),
+         last_name(id, self.last_name),
+         signup_date(id, self.signup_date);
+  // Setting the date_of_birth attribute, if available
+  insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
+}
+
+reactive Thermostat {
+  input:
+    temperature: Float;
+
+  output:
+    on: Bool;
+
+  state:
+    // When the system is initialized, on is true if
+    // and only if the current temperature exceeds 28°C
+    on: Bool = temperature &gt; 28.0;
+
+  rules:
+    // Switching on the air conditioner when
+    // the temperature exceeds 28°C
+    on = true when temperature &gt; 28.0;
+
+    // Switching it off when it falls below 24°C
+    on = false when temperature &lt; 24.0;
+}
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

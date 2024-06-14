@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id never
+name never
+appeared 2018
+tags pl
+website https://never-lang.readthedocs.io
+latestVersion v2.3.9
+
+writtenIn c yaml cmake markdown yacc lex xml html python make javascript bourne-shell
+repoStats
+ firstCommit 2018
+ commits 604
+ committers 7
+ files 786
+ newestCommit 2024
+country Spain
+originCommunity https://github.com/never-lang
+
+example
+ func main() -> float
+ {
+    100.0 * 1.8 + 32.0
+ }
+
+githubRepo https://github.com/never-lang/never
+ firstCommit 2018
+ stars 315
+ subscribers 15
+ created 2018
+ updated 2022
+ description Never: statically typed, embeddable functional programming language.
+ forks 7
+ issues 0
+
+domainName never-lang.readthedocs.io
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2005|Sams Publishing|Java After Hours: 10 Projects You'll Never Do at Work|Holzner, Steven|9780672327476

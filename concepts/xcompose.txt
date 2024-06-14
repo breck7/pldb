@@ -1,0 +1,57 @@
+XCompose
+========
+
+XCompose is an application created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1837 on PLDB
+18 Years Old
+0 Repos
+
+- There are at least 0 XCompose repos on GitHub
+- GitHub supports syntax highlighting for XCompose
+- Read more about XCompose on the web: 1.
+ https://wiki.debian.org/XCompose
+
+include &quot;%L&quot;
+
+&lt;Multi_key&gt; &lt;g&gt; &lt;a&gt; : &quot;α&quot;
+&lt;Multi_key&gt; &lt;g&gt; &lt;b&gt; : &quot;β&quot;
+&lt;Multi_key&gt; &lt;g&gt; &lt;g&gt; : &quot;γ&quot;
+
+# for Emacs: -*- coding: utf-8 -*-
+include &quot;%L&quot;
+
+# def emit(keys, codepoint, word):
+#     print (&#39;&lt;Multi_key&gt; %s &lt;period&gt;\t: &quot;%s&quot;\tU%04X\t\t# CIRCLED DIGIT %s&#39; %
+#            (keys, unichr(codepoint), codepoint, word)).encode(&#39;utf8&#39;)
+# numbers = &#39;one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty&#39;
+# words = numbers.upper().split()
+# emit(&#39;&lt;0&gt;&#39;, 0x24EA, &quot;ZERO&quot;)
+# for num, word in zip(range(1, 21), words):
+#     emit(&#39; &#39;.join(&quot;&lt;%s&gt;&quot; % char for char in str(num)), 0x245f + num, word)
+
+# Custom additions: Typography
+&lt;Multi_key&gt; &lt;period&gt; &lt;period&gt;		: &quot;…&quot;	U2026		# HORIZONTAL ELLIPSIS
+&lt;Multi_key&gt; &lt;v&gt; &lt;period&gt; &lt;period&gt;	: &quot;⋮&quot;	U22EE		# VERTICAL ELLIPSIS
+&lt;Multi_key&gt; &lt;c&gt; &lt;period&gt; &lt;period&gt;	: &quot;⋯&quot;	U22EF		# MIDLINE HORIZONTAL ELLIPSIS
+&lt;Multi_key&gt; &lt;slash&gt; &lt;period&gt; &lt;period&gt;	: &quot;⋰&quot;	U22F0		# UP RIGHT DIAGONAL ELLIPSIS
+# To avoid conflict with \. for combining dot above.
+#&lt;Multi_key&gt; &lt;backslash&gt; &lt;period&gt; &lt;period&gt; : &quot;⋱&quot; U22F1		# DOWN RIGHT DIAGONAL ELLIPSIS
+&lt;Multi_key&gt; &lt;period&gt; &lt;backslash&gt; &lt;period&gt; : &quot;⋱&quot; U22F1		# DOWN RIGHT DIAGONAL ELLIPSIS
+# Will we someday regret this, wanting 2. for ⒉ ?
+&lt;Multi_key&gt; &lt;2&gt; &lt;period&gt;	 	  : &quot;‥&quot;	U2025		# TWO DOT LEADER
+# This should not be needed.
+#&lt;Multi_key&gt; &lt;1&gt; &lt;period&gt;		  : &quot;․&quot;	U2024		# ONE DOT LEADER
+&lt;Multi_key&gt; &lt;c&gt; &lt;1&gt; &lt;period&gt;		  : &quot;·&quot;	U00B7		# MIDDLE DOT (maybe I can remember the keystroke better?
+&lt;Multi_key&gt; &lt;period&gt; &lt;slash&gt; &lt;period&gt;	: &quot;⁒&quot;	U2052		# COMMERCIAL MINUS SIGN
+# Printable sign for space.  But is \&lt;space&gt; too useful a key combo to use
+# for this?
+&lt;Multi_key&gt; &lt;backslash&gt; &lt;space&gt;		: &quot;␣&quot;	U2423		# OPEN BOX
+# These two are already present for me:
+# &lt;Multi_key&gt; &lt;minus&gt; &lt;minus&gt; &lt;minus&gt;	: &quot;—&quot;	U2014		# EM DASH
+# &lt;Multi_key&gt; &lt;minus&gt; &lt;minus&gt; &lt;period&gt;	: &quot;–&quot;	U2013		# EN DASH
+&lt;Multi_key&gt; &lt;minus&gt; &lt;minus&gt; &lt;space&gt;	: &quot;– &quot;			# EN DASH (followed by space)
+&lt;Multi_key&gt; &lt;minus&gt; &lt;asciitilde&gt; &lt;minus&gt; : &quot;―&quot; U2015 # HORIZONTAL BAR
+&lt;Multi_key&gt; &lt;minus&gt; &lt;2&gt; &lt;M&gt;	 	 : &quot;⸺&quot; U2E3A # TWO-EM DASH
+&lt;M

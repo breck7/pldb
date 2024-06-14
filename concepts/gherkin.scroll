@@ -1,0 +1,62 @@
+import ../code/conceptPage.scroll
+
+id gherkin
+name Gherkin
+appeared 2008
+tags pl
+website https://docs.cucumber.io/gherkin/
+aka Cucumber
+conceptDescription Executable specifications
+
+clocExtensions feature
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity SmartBear Software
+reference https://docs.cucumber.io/gherkin/reference/
+
+pygmentsHighlighter Gherkin
+ filename testing.py
+ fileExtensions feature
+example
+ Feature: Guess the word
+ 
+  # The first example has two steps
+  Scenario: Maker starts a game
+    When the Maker starts a game
+    Then the Maker waits for a Breaker to join
+ 
+  # The second example has three steps
+  Scenario: Breaker joins a game
+    Given the Maker has started a game with the word "silky"
+    When the Breaker joins the Maker's game
+    Then the Breaker must guess a word with 5 characters
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+githubBigQuery Gherkin
+ repos 4844
+ users 4098
+
+linguistGrammarRepo https://github.com/cucumber/cucumber-tmbundle
+ firstCommit 2008
+ lastCommit 2017
+ committerCount 35
+ commitCount 261
+
+isbndb 0
+
+githubLanguage Gherkin
+ fileExtensions feature story
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope text.gherkin.feature
+ aliases cucumber
+ repos 7787

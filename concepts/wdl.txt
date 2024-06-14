@@ -1,0 +1,72 @@
+WDL
+===
+
+WDL, aka Workflow Description Language, is an open source programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#324 on PLDB
+12 Years Old
+888 Repos
+
+git clone https://github.com/openwdl/wdl
+
+Workflow Description Language - Specification and Implementations
+
+- WDL website
+ http://www.openwdl.org/
+- WDL is developed on GitHub and has 550 stars
+- There are at least 888 WDL repos on GitHub
+- WDL is written in Markdown, YAML, JSON
+- WDL on Twitter
+ https://twitter.com/wdl_dev
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using WDL in 30 repos on GitHub
+- GitHub supports syntax highlighting for WDL
+- openwdl.org was registered in 2017
+- Read more about WDL on the web: 1.
+ https://software.broadinstitute.org/wdl/
+
+# Sample originally from https://github.com/broadinstitute/centaur
+
+task hello {
+  String addressee
+  command {
+    echo &quot;Hello ${addressee}!&quot;
+  }
+  output {
+    String salutation = read_string(stdout())
+  }
+  runtime {
+    docker: &quot;ubuntu@sha256:71cd81252a3563a03ad8daee81047b62ab5d892ebbfbf71cf53415f29c130950&quot;
+  }
+}
+
+workflow wf_hello {
+  call hello
+  output {
+     hello.salutation
+  }
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

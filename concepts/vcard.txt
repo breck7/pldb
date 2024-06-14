@@ -1,0 +1,27 @@
+vCard
+=====
+
+vCard is a text data format created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#4421 on PLDB
+26 Years Old
+
+- vCard Wikipedia page
+ https://en.wikipedia.org/wiki/vCard
+
+BEGIN:VCARD
+VERSION:4.0
+N:Gump;Forrest;;Mr.;
+FN:Forrest Gump
+ORG:Bubba Gump Shrimp Co.
+TITLE:Shrimp Man
+PHOTO;MEDIATYPE=image/gif:http://www.example.com/dir_photos/my_photo.gif
+TEL;TYPE=work,voice;VALUE=uri:tel:+1-111-555-1212
+TEL;TYPE=home,voice;VALUE=uri:tel:+1-404-555-1212
+ADR;TYPE=WORK;PREF=1;LABEL=&quot;100 Waters Edge\nBaytown\, LA 30314\nUnited States of America&quot;:;;100 Waters Edge;Baytown;LA;30314;United States of America
+ADR;TYPE=HOME;LABEL=&quot;42 Plantation St.\nBaytown\, LA 30314\nUnited States of America&quot;:;;42 Plantation St.;Baytown;LA;30314;United States of America
+EMAIL:forrestgump@example.com
+REV:20080424T195243Z
+x-qq:21588891
+END:VCARD

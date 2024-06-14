@@ -1,0 +1,289 @@
+Kotlin
+======
+
+Kotlin is an open source programming language created in 2011 by Andrey Breslav.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Andrey%20Breslav
+
+#26 on PLDB
+13 Years Old
+901k Repos
+
+git clone https://github.com/JetBrains/kotlin
+
+Try now: Riju · TIO · Replit
+
+Kotlin is a statically-typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains programmers based in Saint Petersburg, Russia. While the syntax is not compatible with Java, Kotlin is designed to interoperate with Java code and is reliant on Java code from the existing Java Class Library, such as the collections framework. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+
+- Kotlin website
+ https://kotlinlang.org
+- Kotlin Wikipedia page
+ https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+- Kotlin is developed on GitHub and has 43,795 stars
+- Watch the history of the Kotlin repo visualized with Gource
+- PLDB has 2 documentation sites for Kotlin: kotlinlang.org, devdocs.io
+- There are at least 901,474 Kotlin repos on GitHub
+- Kotlin first developed in JetBrains
+- Kotlin is written in Kotlin, Java, Gradle, XML, JavaScript, C++, JSON, Markdown, Swift, TypeScript, C, Objective-C, Bourne shell, IDL, Objective C++, Protocol Buffers, Ruby, Bash, Groovy, HTML, CSS, YAML, Dockerfile, Diff, Python, Reason, CMake, CSV, AsciiDoc, EJS, TOML, Velocity Template Language, Puppet, LLVM IR, Scala
+- Kotlin on Twitter
+ https://twitter.com/kotlin
+- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Kotlin in 8k repos on GitHub
+- Check out the 138 Kotlin meetup groups on Meetup.com.
+- There are 61,654 members in the Kotlin subreddit
+- There are 275 Project Euler users using Kotlin
+- In the 2021 StackOverflow developer survey Kotlin programmers reported a median salary of $55,071. 8% of respondents reported using Kotlin. 6,866 programmers reported using Kotlin, and 10,691 said they wanted to use it
+- Explore Kotlin snippets on Rosetta Code
+- Kotlin ranks #48 in the TIOBE Index
+- ANTLR grammar for Kotlin
+- Monaco package for syntax highlighting Kotlin
+- Pygments supports syntax highlighting for Kotlin
+- GitHub supports syntax highlighting for Kotlin
+- There is 1 Jupyter Kernel for Kotlin
+- Release Notes for Kotlin
+ https://kotlinlang.org/docs/releases.html
+- Events page for Kotlin
+ https://kotlinlang.org/community/events/
+- Frequently Asked Questions for Kotlin
+ https://kotlinlang.org/docs/faq.html
+- Kotlin cheat sheet
+ https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf
+- Indeed.com has 5,276 matches for "kotlin developer".
+- kotlinlang.org was registered in 2013
+- See also: (16 related languages)JVM, Java Bytecode, JavaScript, Java, Scala, Groovy, C#, Gosu, Swift, LLVM IR, Android, Pascal, Perl, Eclipse, Apache Maven, Emacs
+- Read more about Kotlin on the web: 1. 2.
+ https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
+ https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/
+- 17 languages in PLDB linking to Kotlin: Ace Editor, Avail, Céu, cloc, FlatBuffers, Gradle, Kotlin, mal, Melody, Moirai, partiql, Project Mentat, Pygments, Python, React Native, Ecstasy, Yakou Lang
+
+// Type your code here, or load an example.
+fun square(num: Int): Int = num * num
+
+println(&quot;Hello, world!&quot;)
+
+fun main() {
+  println(&quot;Hello World&quot;)
+}
+
+// Hello world in Kotlin
+
+fun main(args : Array&lt;String&gt;) {
+    println(&quot;Hello, world!&quot;)
+}
+
+package addressbook
+
+class Contact(
+  val name : String,
+  val emails : List&lt;EmailAddress&gt;,
+  val addresses : List&lt;PostalAddress&gt;,
+  val phonenums : List&lt;PhoneNumber&gt;
+)
+
+class EmailAddress(
+  val user : String,
+  val host : String
+)
+
+class PostalAddress(
+  val streetAddress : String,
+  val city : String,
+  val zip : String,
+  val state : USState?,
+  val country : Country
+) {
+   assert {(state == null) xor (country == Countries[&quot;US&quot;]) }
+}
+
+class PhoneNumber(
+  val country : Country,
+  val areaCode : Int,
+  val number : Long
+)
+
+object Countries {
+  fun get(id : CountryID) : Country = countryTable[id]
+  
+  private var table : Map&lt;String, Country&gt;? = null
+  private val countryTable : Map&lt;String, Country&gt;
+    get() {
+      if (table == null) {
+        table = HashMap()
+        for (line in TextFile(&quot;countries.txt&quot;).lines(stripWhiteSpace = true)) {
+          table[line] = Country(line)
+        }
+      }
+      return table
+    }
+}
+
+class Country(val name : String)
+
+// returns null if...
+  // - foo() returns null,
+  // - or if foo() is non-null, but bar() returns null,
+  // - or if foo() and bar() are non-null, but baz() returns null.
+  // vice versa, return value is non-null if and only if foo(), bar() and baz() are non-null
+  foo()?.bar()?.baz()
+
+as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !==  = [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Interfaces
+ FeatureLink ../features/hasInterfaces.html
+ Supported ✓
+ Token 
+ Example
+  interface Named {
+     val name: String
+  }
+  interface Person : Named {
+      val firstName: String
+      val lastName: String
+      
+      override val name: String get() = "$firstName $lastName"
+  }
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import foo.Bar // Bar is now accessible without qualification
+  import foo.* // everything in 'foo' becomes accessible
+  import bar.Bar as bBar // bBar stands for 'bar.Bar'
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported ✓
+ Token 
+ Example
+  // Since if statements are expressions
+  println(if (true) true else false)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  table = HashMap()
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported X
+ Token 
+ Example

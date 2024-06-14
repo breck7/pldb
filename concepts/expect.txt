@@ -1,0 +1,82 @@
+Expect
+======
+
+Expect is an open source programming language created in 1990.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#277 on PLDB
+34 Years Old
+
+Expect, an extension to the Tcl scripting language written by Don Libes, is a program to automate interactions with programs that expose a text terminal interface.  Expect was originally written in 1990 for Unix systems, but has since become available for Microsoft Windows and other systems.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Expect
+
+- Expect website
+ http://core.tcl.tk/expect/index
+- Expect Wikipedia page
+ https://en.wikipedia.org/wiki/Expect
+- Expect first developed in www.tcl.tk/community/coreteam
+- Expect on HOPL
+ https://hopl.info/showlanguage.prx?exp=1622
+- See also: (6 related languages)Tcl, Unix, Regular Expressions, Python, Ruby, Perl
+- 16 languages in PLDB linking to Expect: Ad-hoc, beef-lang, crmsh, Dern, eC, Flow, HHVM, icarus, invokator, Java, MicroPython, oil, GNU Poke, Racket, skip, Wonkey
+
+# Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
+# in the script.
+# Open a telnet session to a remote server, and wait for a username prompt.
+spawn telnet $remote_server
+expect &quot;username:&quot;
+# Send the username, and then wait for a password prompt.
+send &quot;$my_user_id\r&quot;
+expect &quot;password:&quot;
+# Send the password, and then wait for a shell prompt.
+send &quot;$my_password\r&quot;
+expect &quot;%&quot;
+# Send the prebuilt command, and then wait for another shell prompt.
+send &quot;$my_command\r&quot;
+expect &quot;%&quot;
+# Capture the results of the command into a variable. This can be displayed, or written to disk.
+set results $expect_out(buffer)
+# Exit the telnet session, and wait for a special end-of-file character.
+send &quot;exit\r&quot;
+expect eof
+
+#timeout is a predefined variable in expect which by default is set to 10 sec
+#spawn_id is another default variable in expect.
+#It is good practice to close spawn_id handle created by spawn command
+set timeout 60
+spawn ssh $user@machine
+while {1} {
+  expect {
+
+    eof                          {break}
+    &quot;The authenticity of host&quot;   {send &quot;yes\r&quot;}
+    &quot;password:&quot;                  {send &quot;$password\r&quot;}
+    &quot;*\]&quot;                        {send &quot;exit\r&quot;}
+  }
+}
+wait
+close $spawn_id
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

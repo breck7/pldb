@@ -1,0 +1,172 @@
+sed
+===
+
+sed is a programming language created in 1974 by Lee E. McMahon.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Lee%20E.%20McMahon
+
+#116 on PLDB
+50 Years Old
+322 Repos
+
+Try now: Riju · TIO
+
+sed (stream editor) is a Unix utility that parses and transforms text, using a simple, compact programming language. sed was developed from 1973 to 1974 by Lee E. McMahon of Bell Labs, and is available today for most operating systems. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Sed
+
+- sed Wikipedia page
+ https://en.wikipedia.org/wiki/Sed
+- sed docs
+ https://www.gnu.org/software/sed/manual/sed.html
+- There are at least 322 sed repos on GitHub
+- sed first developed in Bell Telephone Laboratories
+- The  Google BigQuery Public Dataset GitHub snapshot shows 998 users using sed in 1k repos on GitHub
+- Explore sed snippets on Rosetta Code
+- sed on HOPL
+ https://hopl.info/showlanguage.prx?exp=782
+- sed appears in the TIOBE Index
+- sed Ubuntu package
+ https://packages.ubuntu.com/jammy/sed
+- Pygments supports syntax highlighting for sed
+- GitHub supports syntax highlighting for sed
+- sed appears in the Quine Relay project
+- See also: (9 related languages)C, Chomski, Perl, awk, Unix, Regular Expressions, grep, vi, Vim
+- 21 languages in PLDB linking to sed: Bash, Boomerang Decompiler, Chapel, Eiffel, HHVM, Java, Koka, Kubernetes, latino, Linux, NCAR Command Language, NGS, Node.js, opam-pm, GNU Poke, PostgreSQL, Pygments, Recfiles, Rholang, Ruby, tao3d
+
+s/.*/Hello, world!/
+
+#!/usr/bin/sed -f sed.sed
+c\
+Hello World
+q
+
+# Towers of Hanoi in sed.
+#
+#	@(#)hanoi.sed	8.1 (Berkeley) 6/6/93
+# $FreeBSD$
+#
+#
+# Ex:
+# Run &quot;sed -f hanoi.sed&quot;, and enter:
+#
+#	:abcd: : :&lt;CR&gt;
+#
+# note -- TWO carriage returns were once required, this will output the
+# sequence of states involved in moving 4 rings, the largest called &quot;a&quot; and
+# the smallest called &quot;d&quot;, from the first to the second of three towers, so
+# that the rings on any tower at any time are in descending order of size.
+# You can start with a different arrangement and a different number of rings,
+# say :ce:b:ax: and it will give the shortest procedure for moving them all
+# to the middle tower.  The rules are: the names of the rings must all be
+# lower-case letters, they must be input within 3 fields (representing the
+# towers) and delimited by 4 colons, such that the letters within each field
+# are in alphabetical order (i.e. rings are in descending order of size).
+#
+# For the benefit of anyone who wants to figure out the script, an &quot;internal&quot;
+# line of the form
+#		b:0abx:1a2b3 :2   :3x2
+# has the following meaning: the material after the three markers :1, :2,
+# and :3 represents the three towers; in this case the current set-up is
+# &quot;:ab :   :x  :&quot;.  The numbers after a, b and x in these fields indicate
+# that the next time it gets a chance, it will move a to tower 2, move b
+# to tower 3, and move x to tower 2.  The string after :0 just keeps track
+# of the alphabetical order of the names of the rings.  The b at the
+# beginning means that it is now dealing with ring b (either about to move
+# it, or re-evaluating where it should next be moved to).
+#
+# Although this version is &quot;limited&quot; to 26 rings because of the size of the
+# alphabet, one could write a script using the same idea in which the rings
+# were represented by arbitrary [strings][within][brackets], and in place of
+# the built-in line of the script giving the order of the letters of the
+# alphabet, it would accept from the user a line giving the ordering to be
+# assumed, e.g. [ucbvax][decvax][hplabs][foo][bar].
+#
+#			George Bergman
+#			Math, UC Berkeley 94720 USA
+
+# cleaning, diagnostics
+s/  *//g
+/^$/d
+/[^a-z:]/{a\
+Illegal characters: use only a-z and &quot;:&quot;.  Try again.
+d
+}
+/^:[a-z]*:[a-z]*:[a-z]*:$/!{a\
+Incorrect format: use\
+\	: string1 : string2 : string3 :&lt;CR&gt;\
+Try again.
+d
+}
+/\([a-z]\).*\1/{a\
+Repeated letters not allowed.  Try again.
+d
+}
+# initial formatting
+h
+s/[a-z]/ /g
+G
+s/^:\( *\):\( *\):\( *\):\n:\([a-z]*\):\([a-z]*\):\([a-z]*\):$/:1\4\2\3:2\5\1\3:3\6\1\2:0/
+s/[a-z]/&amp;2/g
+s/^/abcdefghijklmnopqrstuvwxyz/
+:a
+s/^\(.\).*\1.*/&amp;\1/
+s/.//
+/^[^:]/ba
+s/\([^0]*\)\(:0.*\)/\2\1:/
+s/^[^0]*0\(.\)/\1&amp;/
+:b
+# outputting current state without markers
+h
+s/.*:1/:/
+s/[123]//gp
+g
+:c
+# establishing destinations
+/^\(.\).*\1:1/td
+/^\(.\).*:1[^:]*\11/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\31/
+/^\(.\).*:1[^:]*\12/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\33/
+/^\(.\).*:1[^:]*\13/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\32/
+/^\(.\).*:2[^:]*\11/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\33/
+/^\(.\).*:2[^:]*\12/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\32/
+/^\(.\).*:2[^:]*\13/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\31/
+/^\(.\).*:3[^:]*\11/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\32/
+/^\(.\).*:3[^:]*\12/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\31/
+/^\(.\).*:3[^:]*\13/s/^\(.\)\(.*\1\([a-z]\).*\)\3./\3\2\33/
+bc
+# iterate back to find smallest out-of-place ring
+:d
+s/^\(.\)\(:0[^:]*\([^:]\)\1.*:\([123]\)[^:]*\1\)\4/\3\2\4/
+td
+# move said ring (right, resp. left)
+s/^\(.\)\(.*\)\1\([23]\)\(.*:\3[^ ]*\) /\1\2 \4\1\3/
+s/^\(.\)\(.*:\([12]\)[^ ]*\) \(.*\)\1\3/\1\2\1\3\4 /
+tb
+s/.*/Done!  Try another, or end with ^D./p
+d
+
+This is my dog, whose name is Frank.
+This is my fish,
+whose name is George.
+This is my goat, whose name is Adam.
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example

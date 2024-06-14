@@ -1,0 +1,123 @@
+ColdFusion
+==========
+
+ColdFusion is an open source programming language created in 1995 by Joseph J. Allaire.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Joseph%20J.%20Allaire
+
+#160 on PLDB
+29 Years Old
+21k Repos
+
+Adobe ColdFusion is a commercial rapid web application development platform created by J. J. Allaire in 1995. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ColdFusion
+
+- ColdFusion website
+ https://www.adobe.com/products/coldfusion
+- ColdFusion Wikipedia page
+ https://en.wikipedia.org/wiki/ColdFusion
+- ColdFusion docs
+ https://cfdocs.org/
+- There are at least 20,756 ColdFusion repos on GitHub
+- ColdFusion first developed in Adobe
+- ColdFusion on Twitter
+ https://twitter.com/coldfusion
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using ColdFusion in 2k repos on GitHub
+- Check out the 22 ColdFusion meetup groups on Meetup.com.
+- There are 10 Project Euler users using ColdFusion
+- Explore ColdFusion snippets on Rosetta Code
+- Pygments supports syntax highlighting for ColdFusion
+- GitHub supports syntax highlighting for ColdFusion
+- There is a central package repository for ColdFusion
+- See also: (23 related languages)Java, HTML, CFML, ASP, JSP, PHP, JavaScript, CFScript, SOAP, PDF, SMTP, FTP, XML, XPath, Solaris, Microsoft Excel, Linux, Eclipse, WSDL, JSON, Jython, Groovy, JRuby
+- 4 languages in PLDB linking to ColdFusion: Ace Editor, cloc, ColdFusion Components, Pygments
+
+&lt;cfset message = &quot;Hello World&quot;&gt;
+&lt;cfoutput&gt; #message#&lt;/cfoutput&gt;
+
+&lt;!---Hello world in ColdFusion---&gt;
+
+&lt;cfset message = &quot;Hello World&quot;&gt;
+&lt;cfoutput&gt; #message#&lt;/cfoutput&gt;
+
+&lt;!--- cfcomment ---&gt;
+&lt;!--- nested &lt;!--- cfcomment ---&gt; ---&gt;
+&lt;!--- multi-line
+nested
+&lt;!---
+cfcomment
+---&gt;
+---&gt;
+&lt;!-- html comment --&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Date Functions&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;cfset RightNow = Now()&gt;
+&lt;cfoutput&gt;
+ #RightNow#&lt;br /&gt;
+ #DateFormat(RightNow)#&lt;br /&gt;
+ #DateFormat(RightNow,&quot;mm/dd/yy&quot;)#&lt;br /&gt;
+ #TimeFormat(RightNow)#&lt;br /&gt;
+ #TimeFormat(RightNow,&quot;hh:mm tt&quot;)#&lt;br /&gt;
+ #IsDate(RightNow)#&lt;br /&gt;
+ #IsDate(&quot;January 31, 2007&quot;)#&lt;br /&gt;
+ #IsDate(&quot;foo&quot;)#&lt;br /&gt;
+ #DaysInMonth(RightNow)#
+&lt;/cfoutput&gt;
+&lt;cfset x=&quot;x&quot;&gt;
+&lt;cfset y=&quot;y&quot;&gt;
+&lt;cfset z=&quot;z&quot;&gt;
+&lt;cfoutput group=&quot;x&quot;&gt;
+    #x#
+    &lt;cfoutput&gt;#y#&lt;/cfoutput&gt;
+    #z#
+&lt;/cfoutput&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;cfset person = &quot;Paul&quot;&gt;
+&lt;cfset greeting = &quot;Hello #person#&quot;&gt;
+
+&lt;cfset greeting = &quot;Hello&quot; &amp; &quot; world!&quot;&gt;
+&lt;cfset a = 5&gt;
+&lt;cfset b = 10&gt;
+&lt;cfset c = a^b&gt;
+&lt;cfset c = a MOD b&gt;
+&lt;cfset c = a / b&gt;
+&lt;cfset c = a * b&gt;
+&lt;cfset c = a + b&gt;
+&lt;cfset c = a - b&gt;
+&lt;!--- &lt;!-- another &lt;!--- nested --&gt; ---&gt; comment ---&gt;
+
+http://path/to/components/Component.cfc?method=search&amp;query=your+query&amp;mode=strict
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token cfoutput
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id converge
+name converge
+appeared 2004
+tags pl
+website https://convergepl.org/
+
+country United Kingdom
+originCommunity King's College London
+
+example
+ import Sys
+ 
+ func main():
+   Sys::println("Hello world!")
+
+hasSemanticIndentation true
+
+domainName convergepl.org
+ registered 2004

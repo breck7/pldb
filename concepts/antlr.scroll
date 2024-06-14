@@ -1,0 +1,160 @@
+import ../code/conceptPage.scroll
+
+id antlr
+name ANTLR
+appeared 1992
+creators Terence Parr
+tags grammarLanguage
+website http://www.antlr.org
+
+isOpenSource true
+clocExtensions g g4
+fileType text
+documentation https://www.antlr.org/
+documentation https://www.antlr2.org/doc/
+documentation https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687234/ANTLR+v3+documentation
+antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
+rosettaCode http://www.rosettacode.org/wiki/Category:ANTLR
+centralPackageRepositoryCount 0
+country United States
+originCommunity University of San Francisco
+
+pygmentsHighlighter ANTLR
+ filename parsers.py
+example
+ /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
+ // Derived from http://json.org
+ grammar JSON;
+ json
+    : value
+    ;
+ obj
+    : '{' pair (',' pair)* '}'
+    | '{' '}'
+    ;
+ pair
+    : STRING ':' value
+    ;
+ arr
+    : '[' value (',' value)* ']'
+    | '[' ']'
+    ;
+ value
+    : STRING
+    | NUMBER
+    | obj
+    | arr
+    | 'true'
+    | 'false'
+    | 'null'
+    ;
+ 
+ STRING
+    : '"' (ESC | SAFECODEPOINT)* '"'
+    ;
+ 
+ fragment ESC
+    : '\\' (["\\/bfnrt] | UNICODE)
+    ;
+ fragment UNICODE
+    : 'u' HEX HEX HEX HEX
+    ;
+ fragment HEX
+    : [0-9a-fA-F]
+    ;
+ fragment SAFECODEPOINT
+    : ~ ["\\\u0000-\u001F]
+    ;
+ 
+ NUMBER
+    : '-'? INT ('.' [0-9] +)? EXP?
+    ;
+ 
+ fragment INT
+    : '0' | [1-9] [0-9]*
+    ;
+ 
+ // no leading zeros
+ 
+ fragment EXP
+    : [Ee] [+\-]? INT
+    ;
+ 
+ // \- since - means "range" inside [...]
+ 
+ WS
+    : [ \t\n\r] + -> skip
+    ;
+twitter https://twitter.com/the_antlr_guy
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
+
+wikipedia https://en.wikipedia.org/wiki/ANTLR
+ example
+  TextReader reader;
+   // (...) Fill TextReader with character
+   SumLexer lexer = new SumLexer(reader);
+   SumParser parser = new SumParser(lexer);
+  
+   parser.expression();
+ related java actionscript c csharp javascript objective-c perl python ruby standard-ml swift go groovy jython processing coco-r javacc peg
+ summary In computer-based language recognition, ANTLR (pronounced Antler), or Another Tool For Language Recognition, is a parser generator that uses LL(*) for parsing. ANTLR is the successor to the Purdue Compiler Construction Tool Set (PCCTS), first developed in 1989, and is under active development. Its maintainer is Professor Terence Parr of the University of San Francisco.
+ pageId 765588
+ dailyPageViews 103
+ created 2004
+ backlinksCount 60
+ revisionCount 253
+ appeared 1989
+
+hopl https://hopl.info/showlanguage.prx?exp=1825
+
+domainName antlr.org
+ registered 1997
+ awisRank
+  2022 477725
+
+githubBigQuery ANTLR
+ repos 2866
+ users 2571
+
+linguistGrammarRepo https://github.com/textmate/antlr.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 5
+ commitCount 31
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 20130115|O'Reilly Media, Inc.|The Definitive ANTLR 4 Reference|Terence Parr|9781680505009
+
+githubLanguage ANTLR
+ fileExtensions g4
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  antlr grammars-v4 https://github.com/antlr.png https://github.com/antlr/grammars-v4 ANTLR #9DC3FF 4119 1736 119 "Grammars written for ANTLR v4; expectation that the grammars are free of actions."
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope source.antlr
+ repos 1415
+
+indeedJobs antlr engineer
+ 2017 7
+linkedInSkill antlr
+ 2018 2312
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2018|Multilingual Detection of Code Clones Using ANTLR Grammar Definitions|10.1109/APSEC.2018.00088|7|0|Yuichi Semura and Norihiro Yoshida and Eunjong Choi and Katsuro Inoue|d52793ccd9657e79a6ec8087b84ac5148d7d6e6f

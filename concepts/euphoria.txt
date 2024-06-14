@@ -1,0 +1,91 @@
+Euphoria
+========
+
+Euphoria, aka End User Programming Hierarchial Objects for Robust Interpreted Applications, is an open source programming language created in 1993 by Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Cowgar
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Craig
+ https://pldb.io/concepts/../lists/creators.html#q=Matt%20Lewis
+ https://pldb.io/concepts/../lists/creators.html#q=Derek%20Parnell
+
+#585 on PLDB
+31 Years Old
+75 Repos
+
+git clone https://github.com/OpenEuphoria/euphoria
+
+Try now: Riju
+
+Euphoria is a programming language originally created by Robert Craig of Rapid Deployment Software in Toronto, Ontario, Canada. Initially developed (though not publicly released) on the Atari ST, the first commercial release was for the 16-bit DOS platform and was proprietary. In 2006, with the release of version 3, Euphoria became open-source software. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Euphoria_(programming_language)
+
+- Euphoria website
+ http://openeuphoria.org
+- Euphoria Wikipedia page
+ https://en.wikipedia.org/wiki/Euphoria_(programming_language)
+- Euphoria is developed on GitHub and has 55 stars
+- There are at least 75 Euphoria repos on GitHub
+- Euphoria first developed in Rapid Deployment Software
+- Euphoria is written in Elixir, C, Bourne shell, Make, WebAssembly, HTML, JSON, JavaScript, CSS, YAML, Markdown, Tex, Prolog, XML, Lex, Dockerfile
+- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Euphoria in 47 repos on GitHub
+- There are 8 Project Euler users using Euphoria
+- Explore Euphoria snippets on Rosetta Code
+- Euphoria on HOPL
+ https://hopl.info/showlanguage.prx?exp=2020
+- Euphoria appears in the TIOBE Index
+- openeuphoria.org was registered in 2007
+- See also: (9 related languages)Linux, FreeBSD, C, BASIC, ASCII, Lua, Python, REBOL, Ruby
+
+puts(1, &quot;Hello, world!\n&quot;)
+
+puts(1, &quot;Hello World&quot;)
+
+-- Hello World in Euphoria
+
+puts(1, &quot;Hello World!\n&quot;)
+
+global function replace_item( object old, object new, sequence group )
+   integer pos
+             -- Code begins --
+   pos = find( old, group )
+   if pos &gt; 0 then
+       group[pos] = new
+   end if
+   return group
+end function
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token puts
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

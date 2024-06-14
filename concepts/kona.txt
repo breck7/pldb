@@ -1,0 +1,26 @@
+kona
+====
+
+kona is a programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#821 on PLDB
+14 Years Old
+
+git clone https://github.com/kevinlawler/kona
+
+Open-source implementation of the K programming language
+
+- kona is developed on GitHub and has 1,253 stars
+- kona first developed in https://github.com/kevinlawler/kona/issues
+- kona is written in C, Bourne shell, Make, Lisp, Markdown, awk, YAML
+- Read more about kona on the web: 1.
+ http://www.hakank.org/k/
+
+factorial:{*/1+!:x}
+fib1:{(x(|+\)\1 1)[;1]}
+fib2:{x{x,+/-2#x}/!2}
+fib_rec:{:[x&lt;2;1;_f[x-1]+_f[x-2]]}
+maxsubsum:{|/0(0|+)\x}
+primes_to_n_sieve:{2_&amp;{:[x@y;x&amp;@[1,-1_ z#(1_ y#1),0;y;:;1];x]}/[x#1;2_!__ceil_sqrt x;x]}
+primes_to_n_sieve2:{:[x&lt;4;,2;r,1_&amp;~|/x#&#39;~!:&#39;r: _f[_ _ceil _sqrt x]]}

@@ -1,0 +1,77 @@
+import ../code/conceptPage.scroll
+
+id ecr
+name Embedded Crystal
+appeared 2016
+tags template
+website https://manas.tech
+latestVersion 1.12.1
+conceptDescription Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
+
+writtenIn crystal ecr yaml markdown html javascript powershell bourne-shell css c svg make xml python json z-shell bash cpp nix ini
+clocExtensions ecr
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 16193
+ committers 638
+ files 2304
+ newestCommit 2024
+country Argentina
+originCommunity Manas Technology Solutions
+reference https://crystal-lang.org/api/0.22.0/ECR.html
+
+example
+ # greeting.ecr
+ <%- if @name -%>
+ Greeting, <%= @name %>!
+ <%- else -%>
+ Greeting!
+ <%- end -%>
+ 
+ Greeting.new(nil).to_s #=> Greeting!
+
+githubRepo https://github.com/crystal-lang/crystal/
+ stars 17909
+ forks 1367
+ subscribers 416
+ created 2012
+ updated 2022
+ description The Crystal Programming Language
+ issues 1520
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName manas.tech
+
+linguistGrammarRepo https://github.com/atom-crystal/language-crystal
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 47
+ commitCount 320
+ sampleCount 1
+ example
+  <% if @name %>
+    Greeting, <%= @name %>!
+  <% else %>
+    Greeting!
+  <% end %>
+
+githubLanguage HTML+ECR
+ fileExtensions ecr
+ trendingProjectsCount 0
+ type markup
+ group HTML
+ aceMode text
+ codemirrorMode htmlmixed
+ codemirrorMimeType text/html
+ tmScope text.html.ecr
+ aliases ecr
+ repos 287

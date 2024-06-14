@@ -1,0 +1,145 @@
+MiniD
+=====
+
+MiniD is a programming language created in 2006 by Jarrett Billingsley.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jarrett%20Billingsley
+
+#951 on PLDB
+18 Years Old
+0 Repos
+
+The MiniD (has been renamed Croc) programming language is a small, lightweight, extension language in the vein of Lua or Squirrel, but designed to be used mainly with the D programming language.  It supports both object-oriented and imperative programming paradigms, as well as some simple functional aspects. Distributed under the licence of zlib/libpng, MiniD is free software.. Read more on Wikipedia...
+ https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
+
+- MiniD website
+ http://www.dsource.org/projects/minid
+- MiniD Wikipedia page
+ https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
+- There are at least 0 MiniD repos on GitHub
+- MiniD first developed in http://www.dsource.org/projects/minid
+- Pygments supports syntax highlighting for MiniD
+- See also: (6 related languages)D, Lua, Squirrel, Python, Io, C
+- 1 languages in PLDB linking to MiniD: Croc
+
+module matrix
+
+local SIZE = 30
+
+function mkmatrix(rows, cols)
+{
+    local count = 1
+    local m = array.new(rows)
+
+    for(i: 0 .. rows)
+    {
+        m[i] = array.new(cols)
+
+        for(j: 0 .. cols)
+        {
+            ++count
+            m[i][j] = count
+        }
+    }
+
+    return m
+}
+
+function mmult(rows, cols, m1, m2, m3)
+{
+    for(i: 0 .. rows)
+    {
+        for(j: 0 .. cols)
+        {
+            local val = 0
+
+            for(k: 0 .. cols)
+                val += m1[i][k] * m2[k][j]
+
+            m3[i][j] = val
+        }
+    }
+
+    return m3
+}
+
+function main(N)
+{
+    local n = 1
+
+    if(isString(N))
+        n = toInt(N)
+
+    local m1 = mkmatrix(SIZE, SIZE)
+    local m2 = mkmatrix(SIZE, SIZE)
+    local mm = mkmatrix(SIZE, SIZE)
+
+    for(i: 0 .. n)
+        mmult(SIZE, SIZE, m1, m2, mm)
+
+    writefln(mm[0][0], &quot; &quot;, mm[2][3], &quot; &quot;, mm[3][2], &quot; &quot;, mm[4][4])
+}
+
+function first(x: array|string) = x[0]
+
+ writeln(first([1, 2, 3])) // prints 1
+ writeln(first(&quot;hello&quot;))   // prints h
+ writeln(first(45))        // error, invalid parameter type &#39;int&#39;
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01][01_]*
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*)(?![.eE])
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,75 @@
+import ../code/conceptPage.scroll
+
+id violent-es
+name Violent ES
+appeared 2022
+creators Matheus Dias de Souza
+tags pl
+website https://github.com/violent-es/violent-es
+conceptDescription Robust dialect of the EcmaScript scripting language. Not available yet, work in progress.
+
+writtenIn csharp markdown json
+repoStats
+ firstCommit 2023
+ commits 562
+ committers 3
+ files 130
+ newestCommit 2024
+country Unknown
+originCommunity https://github.com/violent-es/violent-es
+
+example
+ enum Product {
+     // ['smartphone', 0]
+     const SMARTPHONE;
+     
+     // ['aUtOmObIlE', 1]
+     const AUTOMOBILE = 'aUtOmObIlE';
+     
+     // ['kxxx', 65]
+     const KEYBOARD = [65, 'kxxx'];
+     
+     function customMethod():void {
+     }
+ }
+ 
+ var p:Produle = 'kxxx';
+ var p = Product.KEYBOARD;
+ p.valueOf(); // 65
+ p.toString(); // 'kxxx'
+ p = 65 as! Product;
+ p = 'kxxx' as! Product;
+ 
+ [Flags]
+ enum Permissions {
+     // ['fooBlah', 1]
+     const FOO_BLAH;
+     
+     // ['qux', 2]
+     const QUX;
+     
+     // ['baz', 4]
+     const BAZ;
+ }
+ 
+ var p:Permissions = ['fooBlah', 'qux'];
+ p = {fooBlah: true, baz: false};
+ p = p.toggle('fooBlah');
+ p = p.filter('qux');
+ p = p.include('qux');
+ p = p.exclude('qux');
+ 'qux' in p;
+ 
+ // empty
+ p = undefined;
+ p = {};
+ p = [];
+
+keywords as await break case catch class const continue default delete do each else embed enum extends false final finally for from function get if implements import in include interface internal is meta namespace native new null override package private protected proxy public resource return set static switch this throw throws true try type typeof undefined use var void where while with yield
+githubRepo https://github.com/violent-es/violent-es
+ stars 3
+ forks 0
+ subscribers 1
+ created 2022
+ updated 2022
+ description Compiler and more for the Violent ES language

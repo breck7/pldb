@@ -1,0 +1,19 @@
+groups All
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.allFeaturesImports
+title All Features
+
+import header.scroll
+printTitle
+
+mediumColumns 1
+
+A list of COUNT features found in programming languages.
+
+endSnippet
+
+TABLE
+
+import footer.scroll
+tableSearch

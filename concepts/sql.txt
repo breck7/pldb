@@ -1,0 +1,117 @@
+SQL
+===
+
+SQL, aka Structured Query Language, is a query language created in 1974 by Donald D. Chamberlin and Raymond F. Boyce.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Donald%20D.%20Chamberlin
+ https://pldb.io/concepts/../lists/creators.html#q=Raymond%20F.%20Boyce
+
+#15 on PLDB
+50 Years Old
+1k Repos
+
+SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, SQL offers two main advantages: first, it introduced the concept of accessing many records with one single command; and second, it eliminates the need to specify how to reach a record, e.g. with or without an index. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SQL
+
+- SQL Wikipedia page
+ https://en.wikipedia.org/wiki/SQL
+- SQL docs
+ https://docs.data.world/documentation/sql/concepts/basic/intro.html
+- SQL specs
+ https://modern-sql.com/standard
+- There are at least 1,222 SQL repos on GitHub
+- SQL first developed in IBM
+- The  Google BigQuery Public Dataset GitHub snapshot shows 602 users using SQL in 641 repos on GitHub
+- There are 124 Project Euler users using SQL
+- In the 2021 StackOverflow developer survey SQL programmers reported a median salary of $56,228. 47% of respondents reported using SQL. 38,835 programmers reported using SQL, and 26,631 said they wanted to use it
+- Explore SQL snippets on Rosetta Code
+- SQL on HOPL
+ https://hopl.info/showlanguage.prx?exp=533
+- SQL ranks #9 in the TIOBE Index
+- CodeMirror package for syntax highlighting SQL
+- Monaco package for syntax highlighting SQL
+- Pygments supports syntax highlighting for SQL
+- GitHub supports syntax highlighting for SQL
+- There is 1 Jupyter Kernel for SQL
+- Indeed.com has 147,983 matches for "sql developer".
+- See also: (26 related languages)SQL-92, Datalog, LINQ, PowerShell, C, SQL/PSM, SQLPL, Transact-SQL, MySQL, PL/SQL, Ada, PostgreSQL, PL/pgSQL, Java, Perl, Python, Tcl, JavaScript, XML, XQuery, .QL, ISBL, QUEL, MUMPS, ISBN, DOI
+- 47 languages in PLDB linking to SQL: Ace Editor, atomspace, Ballerina, Bucardo, categorical-query-language, cloc, dexvis, Differential Datalog, DRAKON, Eiffel, Factor, gogs-editor, Haxe Library Manager, HHVM, Ibis, Impala, Java, Kefir, Lil, Links, Logica, mal, Mindsdb, nesC, Nim, Node.js, partiql, PgBouncer, PostgreSQL, PRQL, Pygments, Amazon Redshift, Revolution, Scroll Notation, SDMS, Slony, SourcePawn, SQHTML, tornado, TQL, ultralisp-pm, UrWeb, V, wasmer, Wasp, YAWL, Yes It Is
+
+SELECT &#39;Hello World&#39;;
+
+# Hello World in SQL
+
+SELECT &#39;Hello World&#39;;
+
+--this is the most basic oracle sql command
+select * from dual;
+
+ADD ALL ALLOCATE ALTER AND ANY ARE AS ASC ASSERTION AT AUTHORIZATION AVG BEGIN BETWEEN BIT BOOLEAN BOTH BY CALL CASCADE CASCADED CASE CAST CHAR CHARACTER CHECK CLOSE COLLATE COLLATION COLUMN COMMIT CONNECT CONNECTION CONSTRAINT CONSTRAINTS CONTINUE CONVERT CORRESPONDING COUNT CREATE CURRENT CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DEALLOCATE DEC DECIMAL DECLARE DEFERRABLE DEFERRED DELETE DESC DESCRIBE DIAGNOSTICS DISCONNECT DISTINCT DOUBLE DROP ELSE END ENDEXEC ESCAPE EXCEPT EXCEPTION EXEC EXECUTE EXISTS EXPLAIN EXTERNAL FALSE FETCH FIRST FLOAT FOR FOREIGN FOUND FROM FULL FUNCTION GET GET_CURRENT_CONNECTION GLOBAL GO GOTO GRANT GROUP HAVING HOUR IDENTITY IMMEDIATE IN INDICATOR INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INT INTEGER INTERSECT INTO IS ISOLATION JOIN KEY LAST LEFT LIKE LONGINT LOWER LTRIM MATCH MAX MIN MINUTE NATIONAL NATURAL NCHAR NVARCHAR NEXT NO NOT NULL NULLIF NUMERIC OF ON ONLY OPEN OPTION OR ORDER OUT OUTER OUTPUT OVERLAPS PAD PARTIAL PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURE PUBLIC READ REAL REFERENCES RELATIVE RESTRICT REVOKE RIGHT ROLLBACK ROWS RTRIM SCHEMA SCROLL SECOND SELECT SESSION_USER SET SMALLINT SOME SPACE SQL SQLCODE SQLERROR SQLSTATE SUBSTR SUBSTRING SUM SYSTEM_USER TABLE TEMPORARY TIMEZONE_HOUR TIMEZONE_MINUTE TO TRAILING TRANSACTION TRANSLATE TRANSLATION TRUE UNION UNIQUE UNKNOWN UPDATE UPPER USER USING VALUES VARCHAR VARYING VIEW WHENEVER WHERE WITH WORK WRITE XML XMLEXISTS XMLPARSE XMLSERIALIZE YEAR
+
+Language features
+======================================================
+
+row
+ Feature Fixed Point Numbers
+ FeatureLink ../features/hasFixedPoint.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9]+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token TRUE FALSE
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

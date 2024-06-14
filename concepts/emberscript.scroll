@@ -1,0 +1,81 @@
+import ../code/conceptPage.scroll
+
+id emberscript
+name EmberScript
+appeared 2012
+creators Michael Ficarra and Gordon L. Hempton
+tags pl
+website http://emberscript.com/
+latestVersion 0.0.14
+
+isOpenSource true
+writtenIn javascript coffeescript ruby make json markdown yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 749
+ committers 35
+ files 82
+ newestCommit 2015
+country Various
+originCommunity https://github.com/ghempton/ember-script/issues
+
+githubRepo https://github.com/ghempton/ember-script
+ firstCommit 2012
+ stars 358
+ forks 28
+ subscribers 11
+ created 2012
+ updated 2022
+ description Ember-infused CoffeeScript
+ issues 28
+
+domainName emberscript.com
+ registered 2012
+
+githubBigQuery EmberScript
+ repos 459
+ users 417
+
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 1
+ example
+  class App.FromNowView extends Ember.View
+      tagName: 'time'
+      template: Ember.Handlebars.compile '{{view.output}}'
+      output: ~>
+          return moment(@value).fromNow()
+  
+      didInsertElement: ->
+          @tick()
+  
+      tick: ->
+          f = ->
+              @notifyPropertyChange 'output'
+              @tick()
+  
+          nextTick = Ember.run.later(this, f, 1000)
+          @set 'nextTick', nextTick
+  
+      willDestroyElement: ->
+          nextTick = @nextTick
+          Ember.run.cancel nextTick
+  
+  Ember.Handlebars.helper 'fromNow', App.FromNowView
+  
+  
+
+githubLanguage EmberScript
+ fileExtensions em emberscript
+ trendingProjectsCount 0
+ type programming
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
+ repos 206

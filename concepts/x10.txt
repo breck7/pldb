@@ -1,0 +1,171 @@
+X10
+===
+
+X10 is an open source programming language created in 2004 by Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kemal%20Ebcio%C4%9Flu
+ https://pldb.io/concepts/../lists/creators.html#q=Saravanan%20Arumugam
+ https://pldb.io/concepts/../lists/creators.html#q=Vijay%20Saraswat
+ https://pldb.io/concepts/../lists/creators.html#q=Vivek%20Sarkar
+
+#484 on PLDB
+20 Years Old
+45 Repos
+
+X10 is a programming language being developed by IBM at the Thomas J. Watson Research Center as part of the Productive, Easy-to-use, Reliable Computing System (PERCS) project funded by DARPA's High Productivity Computing Systems (HPCS) program. Its primary authors are Kemal Ebcioğlu, Vijay Saraswat, Saravanan Arumugam, and Vivek Sarkar. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/X10_(programming_language)
+
+- X10 website
+ http://x10-lang.org
+- X10 Wikipedia page
+ https://en.wikipedia.org/wiki/X10_(programming_language)
+- X10 docs
+ https://x10.sourceforge.net/documentation/languagespec/x10-latest.pdf
+- There are at least 45 X10 repos on GitHub
+- X10 first developed in IBM
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using X10 in 19 repos on GitHub
+- Explore X10 snippets on Rosetta Code
+- X10 on HOPL
+ https://hopl.info/showlanguage.prx?exp=8172
+- X10 appears in the TIOBE Index
+- Pygments supports syntax highlighting for X10
+- GitHub supports syntax highlighting for X10
+- x10-lang.org was registered in 2008
+- See also: (5 related languages)Linux, Java, Chapel, Fortress, UPC
+
+/*
+ *  This file is part of the X10 project (http://x10-lang.org).
+ *
+ *  This file is licensed to You under the Eclipse Public License (EPL);
+ *  You may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *      http://www.opensource.org/licenses/eclipse-1.0.php
+ *
+ *  (C) Copyright IBM Corporation 2006-2016.
+ */
+
+import x10.io.Console;
+
+public class HelloWorld {
+  public static def main(Rail[String]) {
+      Console.OUT.println(&quot;Hello World&quot;);
+  }
+}
+
+/*
+ *  This file is part of the X10 project (http://x10-lang.org).
+ *
+ *  This file is licensed to You under the Eclipse Public License (EPL);
+ *  You may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *      http://www.opensource.org/licenses/eclipse-1.0.php
+ *
+ *  (C) Copyright IBM Corporation 2006-2014.
+ */
+
+import x10.io.Console;
+
+/**
+ * The classic hello world program, shows how to output to the console.
+ */
+class HelloWorld {
+  public static def main(Rail[String]) {
+      Console.OUT.println(&quot;Hello World!&quot; );
+  }
+}
+
+as assert async at athome ateach atomic break case catch class clocked continue def default do else final finally finish for goto haszero here if import in instanceof interface isref new offer operator package return struct switch throw try type val var when while
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Async Await
+ FeatureLink ../features/hasAsyncAwait.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token import
+ Example
+  import x10.io.Console;
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Console.OUT.println
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

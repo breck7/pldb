@@ -1,0 +1,10 @@
+importOnly
+
+html
+ <div class="trueBaseSearchForm trueBaseSearchFormPadded">
+  <form style="display:inline;" method="get" action="BASE_URL/lists/explorer.html">
+   <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
+   <input class="searchButton" type="submit" value="Search">
+  </form>
+ </div>
+ <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("searchFormInput"))</script>

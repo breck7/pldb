@@ -1,0 +1,70 @@
+Khi
+===
+
+Khi is a data notation created in 2023.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3440 on PLDB
+1 Years Old
+
+git clone https://github.com/khilang/khi
+
+- Khi is developed on GitHub
+- Khi is written in Markdown
+- Read more about Khi on the web: 1.
+ https://www.reddit.com/r/ProgrammingLanguages/comments/1agpct9/khi_universal_data_format_for_configuration_and/
+
+# Encyclopedia article about aluminium
+
+&gt; uuid: 0c5aacfe-d828-43c7-a530-12a802af1df4
+&gt; type: chemical-element
+&gt; key: aluminium
+&gt; title: Aluminium
+&gt; description: The &lt;@&gt;:element:{chemical element} aluminium.
+&gt; tags: [metal; common]
+
+&gt; chemical-symbol: Al
+&gt; atomic-number: 13
+&gt; stp-phase: &lt;Solid&gt;
+&gt; melting-point: 933.47
+&gt; boiling-point: 2743
+&gt; density: 2.7
+&gt; electron-shells: [2; 8; 3]
+
+# External references
+&gt; ext-refs: {
+  &gt; wikipedia: \https://en.wikipedia.org/wiki/Aluminium
+  &gt; snl: \https://snl.no/aluminium
+}
+
+# Internal references
+&gt; refs: {
+  &gt; element: 740097ea-10fa-4203-b086-58632f099167
+  &gt; chemsym: 6e2f634c-f180-407a-b9ce-2138b412b248
+  &gt; atomnum: 1a5e1974-a78c-4820-afeb-79bef6974814
+  &gt; react: ab7d8a1f-c028-4466-9bb2-41a39d153241
+  &gt; aloxide: c1ff08e7-a88f-42d5-83c3-6adc4835a07b
+  &gt; stab: b3b13474-4fe3-4556-9568-925c066916a5
+  &gt; purity: 40786551-85c4-461c-ba6e-4d54d5863820
+  &gt; ion: effd5c7a-da31-4357-a94c-91343e9a05eb
+  &gt; metal: 84333088-cfcc-4e78-8d3f-7307dcab144b
+}
+
+&gt; content: {
+
+  &lt;p&gt; &lt;@&gt;:self:Aluminium is a &lt;@&gt;:element:{chemical element}
+  with &lt;@&gt;:chemsym:{chemical symbol} &lt;chemsym&gt; and
+  &lt;@&gt;:atomnum:{atomic number} &lt;atomnum&gt;.
+
+  &lt;p&gt; In &lt;@&gt;:purity:pure form, it is a highly &lt;@&gt;:react:reactive
+  &lt;@&gt;:metal:metal~, but normally a thin coat of
+  &lt;@&gt;:aloxide:{aluminium oxide} forms on its surface, keeping it
+  highly &lt;@&gt;:stab:stable~.
+
+  &lt;p&gt; In nature, it occurs as the &lt;@&gt;:ion:ion &lt;TEMPLATEgt;:{&lt;Al&gt;^{3+}}.
+  It constitutes &lt;TEMPLATEgt;:8.2% of the earth&#39;s crust, making it the
+  most common &lt;@&gt;:metal:metal found there.
+
+  ...
+
+}

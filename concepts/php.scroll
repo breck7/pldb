@@ -1,0 +1,630 @@
+import ../code/conceptPage.scroll
+
+id php
+name PHP
+appeared 1995
+creators Rasmus Lerdorf
+tags pl
+website https://php.net
+latestVersion 8.3.7
+releaseNotes https://www.php.net/releases/index.php
+download https://www.php.net/downloads.php
+standsFor Personal Home Page
+
+writtenIn php c pascal m4 json xml assembly-language yaml markdown cpp bourne-shell glsl html xslt xsd restructuredtext ini lua diff reason csv dtd yacc awk lex javascript python d make bash dockerfile
+demoVideo https://www.youtube.com/watch?v=ZdP0KM49IVk
+tryItOnline php
+fileExtensions php phtml php3 php4 php5 php7 phps
+visualParadigm false
+clocExtensions aw ctp phakefile php php3 php4 php5 php_cs php_cs.dist phps phpt phtml
+fileType text
+wordRank 1596
+documentation https://devdocs.io/php/
+documentation https://www.php.net/docs.php.
+emailList https://www.php.net/mailing-lists.php
+eventsPageUrl https://www.php.net/cal.php
+annualReportsUrl https://www.zend.com/blog/state-php-2022
+antlr https://github.com/antlr/grammars-v4/tree/master/php
+monaco php
+codeMirror php
+rosettaCode http://www.rosettacode.org/wiki/Category:PHP
+quineRelay PHP
+replit https://repl.it/languages/php
+packageRepository https://packagist.org/
+ubuntuPackage php-cli
+repoStats
+ firstCommit 1999
+ commits 147515
+ committers 1581
+ files 23287
+ newestCommit 2024
+country Canada
+originCommunity Zend
+proposals https://wiki.php.net/rfc
+projectEuler PHP
+ memberCount
+  2019 3134
+  2022 3210
+reference http://php.net/manual/en/reserved.keywords.php
+
+helloWorldCollection PHP
+ <?php
+   // Hello world in PHP
+   echo 'Hello World!';
+ ?>
+pygmentsHighlighter PHP
+ filename php.py
+ fileExtensions php php[345] inc
+rijuRepl https://riju.codes/php
+ example
+  <?php
+  
+  echo "Hello, world!\n";
+  
+subreddit https://reddit.com/r/PHP
+ memberCount
+  2017 54023
+  2022 150168
+twitter https://twitter.com/official_php
+leachim6 PHP
+ filepath p/PHP.php
+ fileExtensions php
+ example
+  <?php
+  
+  echo 'Hello World';
+  
+gource https://www.youtube.com/watch?v=yLsUwIhg_k4
+languageServerProtocolProject https://github.com/bmewburn/vscode-intelephense
+ writtenIn typescript
+languageServerProtocolProject https://github.com/felixfbecker/php-language-server
+ writtenIn php
+languageServerProtocolProject https://gitlab.com/Serenata/Serenata
+ writtenIn php
+languageServerProtocolProject https://github.com/phan/phan
+ writtenIn php
+
+meetup https://www.meetup.com/topics/php
+ memberCount 904206
+ groupCount 2012
+keywords __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
+githubRepo https://github.com/php/php-src
+ firstCommit 1999
+ stars 33991
+ forks 7234
+ subscribers 1441
+ created 2011
+ updated 2022
+ description The PHP Interpreter
+ issues 392
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken '
+
+hasBooleans true
+hasStrings true
+ "hello world"
+hasMagicGettersAndSetters true
+     public function __set($name, $value)
+    {
+        echo "Setting '$name' to '$value'\n";
+        $this->data[$name] = $value;
+    }
+ 
+    public function __get($name)
+    {
+        echo "Getting '$name'\n";
+        if (array_key_exists($name, $this->data)) {
+            return $this->data[$name];
+        }
+ 
+        $trace = debug_backtrace();
+        trigger_error(
+            'Undefined property via __get(): ' . $name .
+            ' in ' . $trace[0]['file'] .
+            ' on line ' . $trace[0]['line'],
+            E_USER_NOTICE);
+        return null;
+    }
+hasComments true
+hasConstructors true
+hasHereDocs true
+hasTernaryOperators true
+ <?php echo 1 ? 1 : 0;
+hasAssignment true
+ $name = "John"
+hasImports true
+ <?php
+ include 'vars.php';
+ require 'filename'; // FATAL error if fails
+hasMultilineStrings true
+ $xml = <<<XML
+ l
+ vv
+ XML;
+hasOperatorOverloading true
+hasTraits true
+ // The template
+ trait TSingleton
+ {
+     private static $_instance = null;
+     private function __construct(){} // Must have private default constructor and be aware not to open it in the class
+     public static function getInstance()
+     {
+         if (null === self::$_instance)
+         {
+             self::$_instance = new self();
+         }
+         return self::$_instance;
+     }
+ }
+ class FrontController
+ {
+     use TSingleton;
+ }
+ // Can also be used in already extended classes
+ class WebSite extends SomeClass
+ {
+     use TSingleton;
+ }
+hasVariadicFunctions true
+ function sum(...$nums)
+ {
+     return array_sum($nums);
+ }
+ echo sum(1, 2, 3); // 6
+hasFunctions true
+hasIncrementAndDecrementOperators true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasInheritance true
+hasConditionals true
+
+jupyterKernel https://github.com/dawehner/ipython-php
+jupyterKernel https://github.com/Litipk/Jupyter-PHP
+wikipedia https://en.wikipedia.org/wiki/PHP
+ example
+  class Person
+  {
+      public $firstName;
+      public $lastName;
+  
+      public function __construct(string $firstName, string $lastName = '') { // optional second argument
+          $this->firstName = $firstName;
+          $this->lastName  = $lastName;
+      }
+  
+      public function greet(): string {
+          return 'Hello, my name is ' . $this->firstName .
+                 (($this->lastName != '') ? (' ' . $this->lastName) : '') . '.';
+      }
+  
+      public static function staticGreet(string $firstName, string $lastName) {
+          return 'Hello, my name is ' . $firstName . ' ' . $lastName . '.';
+      }
+  }
+  
+  $he    = new Person('John', 'Smith');
+  $she   = new Person('Sally', 'Davis');
+  $other = new Person('iAmine');
+  
+  echo $he->greet(); // prints "Hello, my name is John Smith."
+  echo '<br />';
+  
+  echo $she->greet(); // prints "Hello, my name is Sally Davis."
+  echo '<br />';
+  
+  echo $other->greet(); // prints "Hello, my name is iAmine."
+  echo '<br />';
+  
+  echo Person::staticGreet('Jane', 'Doe'); // prints "Hello, my name is Jane Doe."
+ related c hhvm parrot-vm java perl tcl falcon hack html x86-isa unicode wordpress json mysql mime javascript xml parrot-internal-representation cil ftp postgresql sqlite aws java-server-pages linux python mediawiki drupal
+ summary PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Development Team. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor. PHP code may be embedded into HTML or HTML5 markup, or it can be used in combination with various web template systems, web content management systems and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in the web server or as a Common Gateway Interface (CGI) executable. The web server software combines the results of the interpreted and executed PHP code, which may be any type of data, including images, with the generated web page. PHP code may also be executed with a command-line interface (CLI) and can be used to implement standalone graphical applications. The standard PHP interpreter, powered by the Zend Engine, is free software released under the PHP License. PHP has been widely ported and can be deployed on most web servers on almost every operating system and platform, free of charge. The PHP language evolved without a written formal specification or standard until 2014, leaving the canonical PHP interpreter as a de facto standard. Since 2014 work has gone on to create a formal PHP specification.
+ pageId 24131
+ dailyPageViews 3151
+ created 2001
+ backlinksCount 7839
+ revisionCount 10104
+ appeared 1994
+ fileExtensions php phtml php3 php4 php5 php7 phps
+
+hopl https://hopl.info/showlanguage.prx?exp=2361
+tiobe PHP
+ currentRank 10
+pypl PHP
+
+domainName php.net
+ registered 1997
+ awisRank
+  2022 1353
+  2017 935
+
+githubBigQuery PHP
+ repos 339509
+ users 202442
+
+linguistGrammarRepo https://github.com/textmate/php.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 28
+ commitCount 509
+ sampleCount 15
+ example
+  #!/usr/bin/php
+  <?php
+  
+  echo "PHP\n";
+
+isbndb 269
+ year|publisher|title|authors|isbn13
+ 2009|O'Reilly Media|Head First PHP & MySQL: A Brain-Friendly Guide|Lynn Beighley and Michael Morrison|9780596006303
+ 2012|Peachpit Press|PHP Advanced and Object-Oriented Programming: Visual QuickPro Guide (Visual QuickPro Guides)|Ullman, Larry|9780321832184
+ 2002|Prentice Hall|The Web Wizard's Guide to PHP|Lash, David|9780321121745
+ 2006|O'Reilly Media|PHP Cookbook: Solutions and Examples for PHP Programmers|Trachtenberg, Adam and Sklar, David|9780596101015
+ 2012|CreateSpace Independent Publishing Platform|The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL|Forbes, Alan|9781494267353
+ 2004|O'Reilly Media|Learning PHP 5|Sklar, David|9780596005603
+ |Apress Distributed To The Book Trade Worldwide By Springer-verlag New York|Php Objects, Patterns, And Practice|Zandstra, Matt.|9781430229254
+ 2016|Apress|Design Patterns in PHP and Laravel|Dockins, Kelt|9781484224519
+ 2004|O'Reilly Media|Web Database Applications with PHP & MySQL, 2nd Edition|Hugh E. Williams and David Lane|9780596005436
+ 2004|O'Reilly Media|Upgrading to PHP 5|Trachtenberg, Adam|9780596006365
+ 2012|O'Reilly Media|PHP & MySQL: The Missing Manual|McLaughlin, Brett|9781449325572
+ 2013|Apress|PHP Objects, Patterns, and Practice|Zandstra, Matt|9781430260318
+ 2010|Apress|Beginning PHP and MySQL: From Novice to Professional (Expert's Voice in Web Development)|Gilmore, W Jason|9781430231141
+ 2001|Peachpit Press|PHP Advanced for the World Wide Web: Visual QuickPro Guide|Ullman, Larry|9780201775976
+ 2004|Cengage Learning PTR|PHP 5 / MySQL Programming for the Absolute Beginner|Harris, Andy|9781592004942
+ 2016|Apress|PHP Objects, Patterns, and Practice|ZANDSTRA, MATT|9781484219959
+ 2015|Apress|Learn PHP 7: Object Oriented Modular Programming using HTML5, CSS3, JavaScript, XML, JSON, and MySQL|Prettyman, Steve|9781484217290
+ 2010|Packt Publishing|PHP 5 E-commerce Development|Peacock, Michael|9781847199645
+ 2011|Apress|Pro PHP Programming (Expert's Voice in Open Source)|Gogala, Mladen and MacIntyre, Peter and MacDonald, Adam and Danchilla, Brian|9781430235606
+ 2006|Cengage Learning PTR|PHP for Teens|Sethi, Maneesh|9781598631395
+ 2008|Cengage Learning EMEA|Dynamic Web Application Development Using PHP and MySQL|Stobart, Simon and Parsons, David|9781844807536
+ 2006|musketeers.me, LLC|Phparchitect's Zend PHP 5 Certification Study Guide|Shafik, Davey and Ramsey, Ben|9780973862140
+ 2007|O'Reilly Media|Learning PHP & MySQL: Step-by-Step Guide to Creating Database-Driven Web Sites|Davis, Michele E. and Phillips, Jon A.|9780596514013
+ 2002|Sams Publishing|PHP and PostgreSQL Advanced Web Programming|Geschwinde, Ewald and Schoenig, Hans-Juergen|9780672323829
+ |Novatec|PHP Com XML||9788575220252
+ 2007|Peachpit Press|PHP 5 Advanced: Visual QuickPro Guide|Ullman, Larry|9780321376015
+ 2008|Wiley|Flash and PHP Bible|Keefe, Matthew|9780470258248
+ 2005|Addison-Wesley Professional|Spring Into PHP 5|Holzner, Steven|9780131498624
+ 2017|Createspace Independent Publishing Platform|Learn Php: The Complete Beginner's Guide To Learn Php Programming (php Guide)|Bruce Berke|9781544883847
+ 2016|Packt Publishing|Modular Programming with PHP 7|Ajzele, Branko|9781786462954
+ 2007|Packt Publishing|Learning Joomla! 1.5 Extension Development: Creating Modules, Components, and Plugins with PHP|LeBlanc, Joseph L.|9781847191304
+ 2005|O'Reilly Media|PHP in a Nutshell: A Desktop Quick Reference|Hudson, Paul|9780596100674
+ 2016|Packt Publishing|PHP 7 Programming Blueprints|Palala, Jose and Helmich, Martin|9781785889714
+ 2004|Prentice Hall|PHP 5 Power Programming|Gutmans, Andi|9780131471498
+ 2009|Sams|Sams Teach Yourself PHP and MySQL: Video Learning Starter Kit|Sams Publishing|9780672330278
+ 2013|O'Reilly Media|Node.js for PHP Developers: Porting PHP to Node.js|Howard, Daniel|9781449333607
+ 2016|Apress|PHP CLI: Create Command Line Interface Scripts with PHP|Aley, Rob|9781484222379
+ 2010|Packt Publishing|PHP 5 Social Networking|Peacock, Michael|9781849512381
+ 2011|O'Reilly Media|PHP & MySQL: The Missing Manual|McLaughlin, Brett|9780596515867
+ 2005|O'Reilly Media|PHP Hacks: Tips & Tools For Creating Dynamic Websites|Herrington, Jack D.|9780596101398
+ 2020|Apress|Learn PHP 8: Using MySQL, JavaScript, CSS3, and HTML5|Prettyman, Steve|9781484262399
+ 2015|Routledge|Web Programming for Business: PHP Object-Oriented Programming with Oracle|Paper, David|9780415818049
+ 2005|For Dummies|PHP and MySQL Everyday Apps For Dummies|Valade, Janet|9780764575877
+ 2006|O'Reilly Media|Learning PHP and MySQL|Michele E. Davis and Jon A. Phillips|9780596101107
+ 2008|Packt Publishing|Learning Drupal 6 Module Development: A practical tutorial for creating your first Drupal 6 modules with PHP|Butcher, Matt|9781847194442
+ 2019|Independently published|PHP: Advanced Detailed Approach to Master PHP Programming Language for Web Development|Martin, MG|9781075932557
+ 2006|McGraw-Hill Education|Oracle Database 10g Express Edition PHP Web Programming (Oracle Press)|McLaughlin, Michael|9780072263251
+ 2012|Springer|PHP and MySQL Manual: Simple, yet Powerful Web Programming (Springer Professional Computing)|Stobart, Simon and Vassileiou, Mike|9781447110552
+ 2001|Addison-Wesley|Create Dynamic Web Pages Using PHP and MySQL|Tansley, David|9780201734027
+ 2004|Course Technology PTR|PHP Game Programming|Rutledge, Matt|9781592001538
+ 31-10-2019|Packt Publishing|The PHP Workshop|Alexandru Busuioc; David Carr; Markus Gray; Vijay Joshi; Mark McCollum; Bart McLeod; M A Hossain Ton|9781838647285
+ 2014|Apress|PHP for Absolute Beginners|Lengstorf, Jason and Blom Hansen, Thomas|9781430268147
+ 2003|Apress|Advanced PHP for Flash|Webster, Steve and Rice, Matt and Palmer, James and Sutherland, Kev and Marks, Todd and Hanson, Jacob and Eide, Harvard and Eide, Håvard|9781590591871
+ 2018|Independently Published|Php: A Comprehensive Intermediate Guide To Learn The Concept Of Php Programming|Martin and Mg|9781730781094
+ 2004|Apress|Essential PHP Tools: Modules, Extensions, and Accelerators|Sklar, David|9781590592809
+ 2003|Wrox Press|PHP MySQL Website Programming: Problem - Design - Solution|Chris Lea and Mike Buzzard and Cinis, Jessey and Thomas, Dilip|9781861008275
+ 2016|php[architect]|Functional Programming in PHP (2nd ed): a php[architect] guide|Holywell, Simon and Bruce, Kevin Hamilton|9781940111469
+ 2006|A-List Publishing|Hackish PHP Pranks & Tricks|Flenov, Michael|9781931769525
+ 2010|Packt Publishing|Magento 1.3: PHP Developer's Guide|Huskisson,Jamie|9781847197429
+ 2001|Pearson Educacion|PHP 4 - Serie Practica (Spanish Edition)|Fabrega Martinez, Pedro Pablo|9788420531120
+ 2006|Packt Publishing|Smarty PHP Template Programming And Applications|Hasin Hayder and J. P. Maia and Lucian Gheorghe|9781904811404
+ 2002|A-List Pub|Creating Your Web Site with PHP|Koterov, Dmitriy|9781931769044
+ |Visibooks, LLC|The Visibooks Guide to PHP Basics|Paul Gruhn|9781597060332
+ 2016|Addison-Wesley Professional|PHP and MySQL Web Development (Developer's Library)|Luke, Welling and Thomson Laura|9780133038637
+ 2007|Packt Publishing|PHP Web 2.0 Mashup Projects: Practical PHP Mashups with Google Maps, Flickr, Amazon, YouTube, MSN Search, Yahoo!|Chow, Shu-Wai|9781847190888
+ 2014|Apress|PHP Solutions: Dynamic Web Design Made Easy|Powers, David|9781484206355
+ 2016|Apress|PHP and MySQL Recipes: A Problem-Solution Approach|Kromann, Frank M.|9781484206058
+ 2010|Shroff Publishers and Distributors Pvt. Ltd.|LAMP Programming, for Professionals - Covers MySQL 5.4 & PHP 6 (Book/CD-ROM/CentOS 5.4 DVD) by Sharanam Shah, Vaishali Shah (2010) Hardcover|Sharanam Shah and Vaishali Shah|9788184048438
+ 2007|Jones & Bartlett Learning|Filemaker Web Publishing: A Complete Guide To Using The API For PHP|Allyson Olm and Stephen Knight and Michael Petrov|9781598220414
+ 2017|Independently published|Object-Oriented PHP Best Practices: A Small Handbook of Conventions for Writing Readable, Sustainable OOPHP Code|Hawramani, Ikram|9781520921464
+ 20110110|Springer Nature|Pro PHP Refactoring|Francesco Trucchia; Jacopo Romei|9781430227281
+ 20160106|O'Reilly Media, Inc.|PHP Web Services|Lorna Jane Mitchell|9781491933046
+ 2008|Apress|PHP Object-Oriented Solutions|Powers, David|9781430210122
+ 2019|Independently Published|Php : A Beginner's Guide|Bruce Herbert|9781099807183
+ 20091001|Springer Nature|Zend Enterprise PHP Patterns|John Coggeshall; Morgan Tocker|9781430219750
+ 20100806|Springer Nature|Pro PHP and jQuery|Jason Lengstorf|9781430228486
+ 20080311|Springer Nature|Practical Web 2.0 Applications with PHP|Quentin Zervaas|9781430204756
+ 20070205|Springer Nature|Pro PHP XML and Web Services|Robert Richards|9781430201397
+ 2012|Apress|Pro PHP MVC (Expert's Voice in Open Source)|Pitt, Chris|9781430241652
+ 2019|Independently published|PHP: A Step By Step Guide from Beginner to Expert (Learn PHP in 2 Hours and Start Programming Today)|Clyde, Alexander|9781078335126
+ 2015|Createspace Independent Publishing Platform|Php Programming: Learn Php Programming: - Crush It In One Day. Learn It Fast. Learn It Once. Get Coding Today.|Giggle Publishing|9781517659738
+ 20140804|Pearson Education (US)|Introduction to JavaScript Programming with XML and PHP|Elizabeth Drake|9780133560107
+ 2009|Apress|PHP for Absolute Beginners (Expert's Voice in Open Source)|Lengstorf, Jason|9781430224747
+ 2019||Php Mysql: Interview Exam, Certification Exam, 100 Questions And Answers|Ray Yao|9781798562062
+ 2015|Apress|Make an E-commerce Site in a Weekend: Using PHP|Harwani, Bintu|9781484216729
+ 2014|Apress|Practical PHP and MySQL Website Databases: A Simplified Approach (Expert's Voice in Web Development)|West, Adrian W.|9781430260776
+ 2004-02-20T00:00:01Z|Sams|Advanced PHP Programming|Schlossnagle, George|9780672325618
+ 2002|O'Reilly Media|PHP Pocket Reference, 2nd Edition|Rasmus Lerdorf|9780596004026
+ 2021|Apress|Pro PHP 8 MVC: Model View Controller Architecture-Driven Application Development|Pitt, Christopher|9781484269572
+ 2017|Peachpit Press|PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|Ullman, Larry|9780134301914
+ 2010|Cengage Learning|PHP Programming with MySQL: The Web Technologies Series|Gosselin, Don and Kokoska, Diana and Easterbrooks, Robert|9781111790523
+ 2015|CreateSpace Independent Publishing Platform|The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL|Forbes, Alan|9781522792147
+ 2017|Peachpit Press|PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|Ullman, Larry|9780134301846
+ 2010|Course Technology / Cengage Learning|PHP Programming with MySQL: The Web Technologies Series|Gosselin, Don and Kokoska, Diana and Easterbrooks, Robert|9780538745840
+ 2014|Packt Publishing|Building a Web Application with PHP and MariaDB: A Reference Guide|Sriparasa, Sai Srinivas|9781783981632
+ 2018|Apress|Beginning PHP and MySQL: From Novice to Professional|Kromann, Frank M.|9781430260448
+ 2011|O'Reilly Media|Head First PHP & MySQL|Morrison, Michael and Beighley, Lynn|9780596800802
+ 2016|Apress|PHP Objects, Patterns, and Practice|ZANDSTRA, MATT|9781484219966
+ 2016|Peachpit Press|PHP for the Web: Visual QuickStart Guide|Ullman, Larry|9780134301884
+ 2021|Apress|PHP 8 Solutions: Dynamic Web Design and Development Made Easy|Powers, David|9781484271414
+ 2014|O'Reilly Media|PHP Cookbook: Solutions & Examples for PHP Programmers|Sklar, David and Trachtenberg, Adam|9781449363758
+ 2008|Addison-Wesley Professional|PHP and MySQL Web Development (4th Edition)|Welling, Luke and Thomson, Laura|9780672329166
+ 2011|Peachpit Press|PHP and MySQL for Dynamic Web Sites, Fourth Edition: Visual QuickPro Guide|Ullman, Larry|9780132767583
+ 2021|php[architect]|PHP Web Development with MySQL: A Hands On Approach to Application Programming|Marks, Kenneth E.|9781940111957
+ 2014|Peachpit Press|PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|Ullman, Larry|9780321784070
+ 2018-05-21T00:00:01Z|CreateSpace Independent Publishing Platform|PHP Programming for Beginners: Programming Concepts. How to use PHP with MySQL and Oracle databases (MySqli, PDO)|Skudaev, Sergey|9781548980078
+ 2020-12-02T00:00:01Z|Paul Gibbs|PHP Tutorials: Programming with PHP and MySQL: Learn PHP 7 / 8 with MySQL databases for web Programming|Gibbs, Paul|9780992869755
+ 2012T|PP|PHP ADVANCED AND OBJECT-ORIENTED PROGRAMMING: VISUAL QUICKPRO GUIDE|Ullman, Larry|9789332502093
+ 2019|Apress|PHP 7 Solutions: Dynamic Web Design Made Easy|Powers, David|9781484243381
+ 2019|Independently published|PHP: The Complete Guide for Beginners,Intermediate and Advanced Detailed Approach To Master PHP Programming|Martin, MG|9781080691098
+ 2020|Apress|Learn PHP 8: Using MySQL, JavaScript, CSS3, and HTML5|Prettyman, Steve|9781484262405
+ 2009|Wrox|Beginning PHP 5.3|Doyle, Matt|9780470413968
+ 2017|Packt Publishing|PHP 7 Data Structures and Algorithms: Implement linked lists, stacks, and queues using PHP|Rahman, Mizanur|9781786463579
+ 2011|Peachpit Press|PHP for the Web: Visual QuickStart Guide|Ullman, Larry|9780321733450
+ 2017|Apress|PHP 7 Zend Certification Study Guide: Ace the ZCE 2017-PHP Exam|Beak, Andrew|9781484232460
+ 2016|Packt Publishing|PHP 7 Programming Cookbook|Bierer, Doug|9781785882548
+ 2013|Pearson|Introduction to JavaScript Programming with XML and PHP|Drake, Elizabeth|9780133068306
+ 2016|In Easy Steps Limited|PHP 7 in easy steps|McGrath, Mike|9781840787467
+ 2012|Peachpit Press|PHP Advanced and Object-Oriented Programming: Visual QuickPro Guide (Visual QuickPro Guides)|Ullman, Larry|9780133057782
+ 2016|Packt Publishing|PHP 7 Programming Cookbook|Bierer, Doug|9781785883446
+ 2013|Pearson|Introduction to JavaScript Programming with XML and PHP (2-downloads)|Drake, Elizabeth|9780133251821
+ 2007|Manning Publications|PHP in Action: Objects, Design, Agility|Dagfinn Reiersol and Marcus Baker and Chris Shiflett|9781932394757
+ 2008|Apress|PHP Object-Oriented Solutions|Powers, David|9781430210115
+ 2016|Packt Publishing|Learning PHP 7|Lopez, Antonio|9781785883415
+ 2004|Sams Publishing|Advanced PHP Programming|Schlossnagle, George|9780672333149
+ 2016|Packt Publishing|Learning PHP 7|Lopez, Antonio|9781785880544
+ 2010|O'Reilly Media|PHP: The Good Parts: Delivering the Best of PHP|MacIntyre, Peter|9780596804374
+ 2015-04-14T00:00:01Z|CreateSpace Independent Publishing Platform|PhP: Learn PHP Programming Quick & Easy|Dimes, Troy|9781511594226
+ 2005|O'Reilly Media|Essential PHP Security|Shiflett, Chris|9780596006563
+ 2011|Peachpit Press|PHP for the Web: Visual QuickStart Guide|Ullman, Larry|9780132639880
+ 2013|O'Reilly Media|Learning PHP Design Patterns|Sanders, William|9781449344917
+ 2003|Sams Publishing|Sams Teach Yourself PHP in 24 Hours (3rd Edition): Php in 24 Hours|Zandstra, Matt|9780672326196
+ 2008|Sams Publishing|Sams Teach Yourself Ajax, JavaScript, and PHP All in One|Ballard, Phil and Moncur, Michael|9780768685442
+ 2016|Packt Publishing|PHP 7: Real World Application Development|Bierer, Doug and Hussain, Altaf and Ajzele, Branko|9781787120143
+ 2014|Packt Publishing|Web Application Development with Yii 2 and PHP|Safronov,  Mark and Winesett,  Jeffrey|9781783981892
+ 2015|McGraw-Hill Education|PHP and MySQL Web Development: A Beginner’s Guide (Beginner's Guide)|Matthews, Marty|9780071837316
+ 2006|O'Reilly Media|Programming PHP|Lerdorf, Rasmus and Tatroe, Kevin and MacIntyre, Peter|9780596006815
+ 2016-04-09T00:00:01Z|CreateSpace Independent Publishing Platform|PHP: Learn PHP in 24 Hours or Less - A Beginner’s Guide To Learning PHP Programming Now (PHP, PHP Programming, PHP Course)|Dwight, Robert|9781530904389
+ 2018|Apress|Practical PHP 7, MySQL 8, and MariaDB Website Databases: A Simplified Approach to Developing Database-Driven Websites|West, Adrian W. and Prettyman, Steve|9781484238431
+ 2008|John Wiley &Sons|PHP & MySQL Web Development All-in-One Desk Reference For Dummies|Valade, Janet|9780470167779
+ 2005|SitePoint|No Nonsense XML Web Development With PHP: Master PHP 5's Powerful New XML Functionality|Myer, Thomas|9780975240205
+ 2015-05-18T00:00:01Z|CreateSpace Independent Publishing Platform|Php: Learn PHP In A DAY! - The Ultimate Crash Course to Learning the Basics of PHP In No Time (Learn PHP FAST - The Ultimate Crash Course to Learning ... of the PHP Programming Language In No Time)|Acodemy|9781511872171
+ 2009|MC Press|The IBM i Programmer's Guide to PHP|Olen, Jeff and Schroeder, Kevin|9781583470831
+ 2008|Cengage Learning PTR|PHP 6/MySQL Programming for the Absolute Beginner|Harris, Andrew B.|9781598637984
+ 2017|Packt Publishing|Functional PHP|Crettenand, Gilles|9781785880322
+ 2016|Packt Publishing|Modular Programming with PHP 7|Ajzele, Branko|9781786461469
+ 2022|Independently published|PHP Programming: A Step-by-Step Guide to Learn, in an Easy Way, the Fundamentals of PHP Programming Language 3nd Edition|Robinson, Daniel|9798403343497
+ 2015|Packt Publishing|Learning Phalcon PHP|Rada, Calin|9781783555109
+ 2010|Packt Publishing|PHP jQuery Cookbook|Joshi, Vijay|9781849512756
+ 2010|Apress|Pro PHP Security: From Application Security Principles to the Implementation of XSS Defenses (Expert's Voice in Open Source)|Snyder, Chris and Myer, Thomas and Southwell, Michael|9781430233183
+ 2011|Apress|Pro PHP Security: From Application Security Principles to the Implementation of XSS Defenses (Expert's Voice in Open Source)|Snyder, Chris and Thomas Myer and Michael Southwell|9781430233190
+ 2015-08-28T00:00:01Z|CreateSpace Independent Publishing Platform|PHP Programming For Beginners: The Simple Guide to Learning PHP Fast!|Warren, Tim|9781517080525
+ 2011|Wrox|PHP and MySQL 24-Hour Trainer|Tarr, Andrea|9781118066881
+ 2002|O'Reilly Media|PHP Cookbook|Sklar, David and Trachtenberg, Adam|9781565926813
+ 2011|Packt Publishing|PHP Ajax Cookbook|Sedliak, Milan and Bhattarai, Roshan and Anbiah, R. Rajesh Jeba|9781849513098
+ 2006|Pearson|PHP and MySQL by Example|Quigley, Ellie and Gargenta, Marko|9780138006020
+ 2014|Apress|PHP Objects, Patterns, and Practice|Zandstra, Matt|9781430260325
+ 2005|O'Reilly Media|PHPUnit Pocket Guide: Test-Driven Development in PHP|Bergmann, Sebastian|9780596101039
+ 2008|Sams Publishing|Sams Teach Yourself Ajax, JavaScript, and PHP All in One|Ballard, Phil and Moncur, Michael|9780672329654
+ 2011|Apress|Pro PHP Application Performance: Tuning PHP Web Projects for Maximum Performance (Expert's Voice in Open Source)|Padilla, Armando and Hawkins, DUPTim|9781430228998
+ 2013|Packt Publishing|Apache Solr PHP Integration|Kumar, Jayant|9781782164937
+ 2016|Packt Publishing|Learning PHP 7 High Performance|Hussain, Altaf|9781785882265
+ 2016|Packt Publishing|Mastering PHP Design Patterns|Ali, Junade|9781785887130
+ 2010|New Riders|Effortless E-Commerce with PHP and MySQL (Voices That Matter)|Ullman, Larry|9780321678829
+ 2010|Wrox|Expert PHP and MySQL|Curioso, Andrew and Bradford, Ronald and Galbraith, Patrick|9780470563120
+ 2019-11-29T00:00:01Z|Independently published|PHP: The Ultimate Crash Course To Learn PHP with Practical Computer Coding Exercises|Academy, Computer Programming|9781713215486
+ 2005|Course Technology|PHP Programming with MySQL|Gosselin, Don|9780619216870
+ 2008|Addison-Wesley Professional|Securing PHP Web Applications|Ballad, Tricia and Ballad, William|9780321534347
+ 2012|Addison-Wesley Professional|PHP and MySQL Phrasebook (Developer's Library)|Wenz, Christian Wenz|9780321834638
+ 2009|Wrox|Professional PHP Design Patterns|Saray, Aaron|9780470496701
+ 2010|McGraw-Hill Education|Plug-In PHP: 100 Power Solutions: Simple Solutions to Practical PHP Problems|Nixon, Robin|9780071666596
+ 2009|Peachpit Press|PHP for the Web: Visual QuickStart Guide|Ullman, Larry|9780321617446
+ 2011|Microsoft Press|Integrating PHP with Windows|Hollosi, Arno|9780735647916
+ 2002|O'Reilly Media|Programming PHP|Lerdorf, Rasmus and Tatroe, Kevin|9781565926103
+ 2015|Apress|Learn PHP 7: Object Oriented Modular Programming using HTML5, CSS3, JavaScript, XML, JSON, and MySQL|Prettyman, Steve|9781484217306
+ 2008|Peachpit Press|PHP for the World Wide Web, Third Edition|Ullman, Larry|9780321442499
+ 2001|Sams|PHP and MySQL Web Development|Luke Welling and Laura Thomson|9780672317842
+ 2022|Mike Murach & Associates|Murach's PHP and MySQL (4th Edition)|Joel Murach and Ray Harris|9781943873005
+ 2013|Packt Publishing|Persistence in PHP with Doctrine ORM|Dunglas, Kévin|9781782164104
+ 2016-09-24T00:00:01Z|Apress|Lumen Programming Guide: Writing PHP Microservices, REST and Web Service APIs|Redmond, Paul|9781484221860
+ 2017|CreateSpace Independent Publishing Platform|PHP Beginners Course: Understand basics of PHP / MySQL programming in 5 days|Thenmayer, Klaus|9781542609876
+ 2012|Packt Publishing|Web Application Development with Yii and PHP|Winesett, Jeffrey|9781849518727
+ 2010|Apress|Pro PHP Application Performance: Tuning PHP Web Projects for Maximum Performance (Expert's Voice in Open Source)|Padilla, Armando and Hawkins, DUPTim|9781430228981
+ 2008|Cengage Learning PTR|PHP 6 Fast and Easy Web Development|Telles, Matt and Meloni, Julie C.|9781598634716
+ 2007|Apress|Beginning PHP and Oracle: From Novice to Professional (Expert's Voice)|Gilmore, W Jason and Bryla, Bob|9781430203674
+ 1999|Apress|Professional PHP Programming|Castagnetto, Jesus M. and Rawat, Harish and Veliath, Deepak T.|9781861002969
+ 2009|Wrox|Beginning PHP 6, Apache, MySQL 6 Web Development|Boronczyk, Timothy and Naramore, Elizabeth and Gerner, Jason and Le Scouarnec, Yann and Stolz, Jeremy|9780470391143
+ 2015|Springer|Web Programming with PHP and MySQL: A Practical Guide|Bramer, Max|9783319226590
+ 2013|Packt Publishing|Instant PHP Web Scraping|Ward, Jacob|9781782164760
+ 2002|Pearson Technology Group|Open Source Development with LAMP: Using Linux, Apache, MySQL, Perl, and PHP|Lee, James|9780201770612
+ 2001|Sams|Php Functions Essential Reference|Wilson, Tprbem and Michlitsch, Brett and Merrall, Graeme|9780735709706
+ 2003|Prentice Hall|Core PHP Programming (3rd Edition)|Atkinson, Leon and Suraski, Zeev|9780130463463
+ 2011|Apress|Pro PHP Programming (Expert's Voice in Open Source)|MacIntyre, Peter and Brian Danchilla and Mladen Gogala and Adam MacDonald|9781430235613
+ 2008|McGraw-Hill Education|Oracle Database Ajax & PHP Web Application Development (Oracle Press)|Barney, Lee and McLaughlin, Michael|9780071502771
+ 2012|Addison-Wesley Professional|PHP and MySQL Phrasebook (Developer's Library)|Wenz, Christian|9780133040333
+ 2004|SitePoint|The PHP Anthology: Object Oriented PHP Solution, Volume 1|Fuecks, Harry|9780957921856
+ 2004|Sams Publishing|PHP 5 Unleashed|John C. Coggeshall|9780672325113
+ 2004|Cengage Learning PTR|PHP 5 Fast & Easy Web Development|Meloni, Julie C.|9781592004737
+ 2004|SitePoint|Build Your Own Database Driven Website Using PHP and MySQL: Learning PHP & MySQL Has Never Been So Easy!|Yank, Kevin|9780975240212
+ 2009|Apress|Beginning PHP 5 and MySQL: From Novice to Professional|Gilmore, W Jason|9781893115514
+ 2014-11-14T00:00:01Z|CreateSpace Independent Publishing Platform|PHP Programming and MySQL For Beginners: A Simple Start To PHP & MySQL Written By A Software Engineer (PHP Programming, MySQL, Computer Programming, Software Engineering) (Volume 1)|Sanderson, Scott|9781503216051
+ 2014|Packt Publishing|Building a Web Application with PHP and MariaDB: A Reference Guide|Sriparasa, Sai Srinivas|9781783981625
+ 2015|CreateSpace Independent Publishing Platform|Programming For Beginner's Box Set: Learn HTML, HTML5 & CSS3, Java, PHP & MySQL, C# With the Ultimate Guides For Beginner's (Programming for Beginners in under 8 hours!)|Wilson, T. J|9781515046530
+ 2007|SitePoint|The PHP Anthology: 101 Essential Tips, Tricks & Hacks|Balbo, Ben and Fuecks, Harry and Shafik, Davey and Turmelle, Ligaya and O'Phinney, Matthew Weler|9780975841990
+ 2020|Apress|PHP 8 Quick Scripting Reference: A Pocket Guide to PHP Web Scripting|Olsson, Mikael|9781484266199
+ 2005|McGraw-Hill Education|How to Do Everything with PHP and MySQL|Vaswani, Vikram|9780071466547
+ 2008|Pearson Technology Group|PHP Developer's Cookbook|Hughes, Sterling|9780672323256
+ 2010|Apress|Pro PHP and jQuery (Expert's Voice in Open Source)|Lengstorf, Jason|9781430228479
+ 2000-08-03T00:00:01Z|Pearson Education|Core Php Programming: Using Php to Build Dynamic Web Sites|Atkinson, Leon|9780130893987
+ 2005|Visual|PHP 5: Your visual blueprint for creating open source, server-side content|Boudreaux, Toby|9780764583322
+ 2017|Packt Publishing|PHP Reactive Programming: Leverage the power of Reactive Programming in PHP|Sikora, Martin|9781786462879
+ 2018|BPB Publications|PHP Beginner's Practical Guide|Guleria, Pratiyush|9789387284203
+ 1999|Prentice Hall Ptr|Core PHP Programming|Atkinson, Leon|9780130207876
+ 2003|Apress|PHP MySQL Website Programming: Problem - Design - Solution|Chris Lea and Mike Buzzard and Dilip Thomas and Jessey White-Cinis|9781590591505
+ 2004|Peachpit Press|PHP for the World Wide Web, Second Edition|Ullman, Larry|9780321245656
+ 2018|CADCIM Technologies|Introducing PHP 7/MySQL|Purdue Univ, Prof. Sham Tickoo|9781942689713
+ 2015|CreateSpace Independent Publishing Platform|PHP: The Ultimate Step by Step guide for beginners on how to learn PHP and MYSQL programming in just 6 hours|Dawson, Ted|9781516927494
+ 2013|Packt Publishing|Apache Solr PHP Integration|Kumar, Jayant|9781782164920
+ 2000|Cengage Learning PTR|PHP Essentials (Prima Tech Linux Series)|Meloni, Julie C.|9780761527299
+ 2005|McGraw-Hill Education|How to Do Everything with PHP and MySQL|Vaswani, Vikram|9780072257953
+ 2013|Apress|Expert PHP and MySQL: Application Design and Development (Expert's Voice in Web Development)|Rochkind, Marc|9781430260080
+ 2009|Springer|An Introduction to PHP for Scientists and Engineers: Beyond JavaScript|Brooks, David R.|9781848002371
+ 2006|Apress|Beginning PHP and PostgreSQL E-Commerce: From Novice to Professional (Beginning, from Novice to Professional)|Darie, Cristian and Bucica, Mihai and Balanescu, Emilian|9781590596487
+ 2000|Course Technology PTR|PHP Fast & Easy Web Development|Meloni, Julie C.|9780761530558
+ 2015-02-20T00:00:01Z|CreateSpace Independent Publishing Platform|Beginners Guide On PHP Programming: Quick And Easy Guide To Learn PHP With My-SQL|Long, James P.|9781511846783
+ 2008-08-13T00:00:01Z|Carolina Academic Press|A Web-Based Introduction to Programming: Essential Algorithms, Syntax and Control Structures Using PHP and XHTML|Michael J. O'kane|9781594605239
+ 2002|Sams|Php Programming for Windows (Landmark (New Riders))|Stopford, Andrew|9780735711693
+ 2002|Sams|Xml and Php|Vaswani, Vikram|9780735712270
+ 2019-11-28T00:00:01Z|Apress|Building Scalable PHP Web Applications Using the Cloud: A Simple Guide to Programming and Administering Cloud-Based Applications|Bartlett, Jonathan|9781484252116
+ 2003|Barnes&Nobles|PHP in Easy Steps|Mike McGrath and Mike McGrath|9780760747865
+ 2021|Packt Publishing|PHP 8 Programming Tips, Tricks and Best Practices: A practical guide to PHP 8 features, usage changes, and advanced programming techniques|Bierer, Doug|9781801071871
+ 2004|SitePoint|PHP Anthology: OBject Oriented PHP Solutions, Vol.2- Applications|Fuecks, Harry|9780957921849
+ 2007|Packt Publishing|PHP Oracle Web Development: Data processing, Security, Caching, XML, Web Services, and Ajax|Vasiliev, Yuli|9781847193636
+ 2002|Prentice Hall|Advanced PHP for Web Professionals|Cosentino, Christopher|9780130085399
+ 2008|Springer|An Introduction to PHP for Scientists and Engineers: Beyond JavaScript|Brooks, David R.|9781848002364
+ 2009|Packt Publishing|jQuery 1.3 with PHP|Verens, Kae|9781847196989
+ 2003|Springer|PHP and MySQL Manual: Simple, yet Powerful Web Programming (Springer Professional Computing)|Stobart, Simon and Vassileiou, Mike|9781852337476
+ 2004|Barnes & Noble|PHP 5 in Easy Steps|Mike McGrath|9780760763315
+ 2017|Apress|Pro Functional PHP Programming: Application Development Strategies for Performance Optimization, Concurrency, Testability, and Code Brevity|Aley, Rob|9781484229576
+ 1999|Computing McGraw-Hill|PHP3: Programming Browser-Based Applications with PHP|Medinets, David|9780071353427
+ 2007|VDM Verlag Dr. Mueller e.K.|A PHP Compiler for the .NET Platform|Romeikat, Raphael|9783836414708
+ 2007|Springer|Ruby on Rails for PHP and Java Developers|Vohra, Deepak|9783540731443
+ 2022|Apress|Beginning PHP 8 and MySQL: For Programming and Web Development|Engebreth, Gunnard|9781484280812
+ 2019|Independently published|Python Programming: A beginners’ guide to understand machine learning and master coding. Includes Smalltalk, Java, TCL, JavaScript, Perl, Scheme, Common Lisp, Data Science Analysis, C++, PHP & Ruby|Bash, Adam|9781708047979
+ 2006|Packt Publishing|PHP Programming with PEAR: XML, Data, Dates, Web Services, and Web APIs|Stephan, Schmidt and Stefanov, Stoyan and Aaron, Wormus and Carsten, Lucke|9781904811794
+ 2011|LAP LAMBERT Academic Publishing|Easy PHP: An Easy Approach to PHP|Ahmed, Anil|9783847330219
+ 2002|Sybex|Mastering PHP 4.1 with CDROM|Jeremy Allen and Charles Hornberger|9780782129243
+ 2001|Apress|Wireless Web Development with PHP and WAP|Rischpater, Ray|9781893115934
+ 2015|CreateSpace Independent Publishing Platform|PHP - HTML for a customizable edit form (IT Easy Solutions - Programming & Office Automation) (Volume 1)|Taricco, Mr Gian Piero|9781514646670
+ 2005|McGraw-Hill|Teach Yourself PHP With MYSOL (Teach Yourself: Computers)|McBride, Nat|9780071461511
+ 2003-06-30T00:00:01Z|Anaya Multimedia-Anaya Interactiva|Desarrollo Web Con Php Y Mysql / PHP and MYSQL Web Development (Programacion / Programming) (Spanish Edition)|Welling, Luke|9788441515697
+ |Shroff Publishers & Distributors Pvt Ltd|Programming PHP|MacIntyre, Peter|9789351102113
+ 20111025|O'Reilly Media, Inc.|PHP Master|Davey Shafik; Lorna Mitchell; Matthew Turland|9781457192623
+ 2020|LAP LAMBERT Academic Publishing|PHP Shots: Learn PHP Tricks in few Minutes|Arora, Shagun|9786200482549
+ 2007|McGraw-Hill Osborne Media|PHP Programming Solutions|Vaswani, Vikram|9780071487450
+ 20080101|Springer Nature|Essential PHP Tools|David Sklar|9781430207146
+ 2007|McGraw Hill|PHP Programming Solutions|Vaswani, Vikram|9780071596596
+ 2020|LAP LAMBERT Academic Publishing|PRACTICE BOOK OF WEB TECHNOLOGIES-(PHP) FOR BEGINNERS: PHP PROGRAMMING|Singh, Chamkaur and Kaur, Sarabjeet and Singh Kalsi, Jasvir|9786202512510
+ 20130605|eBookit.com|PHP This! A Beginners Guide to Learning Object Oriented  PHP|Michelle Gosney|9781456615291
+ 2018||Php For Beginners 2019|Shekhar Mishra|9781792079795
+ 2004|Oreilly & Associates Inc|Php Security Collection - Pdf|Coggeshall, John and Malcolm, Clancy|9780596007416
+ 2008|Addison-Wesley Professional|Securing PHP Web Applications|Ballad, Tricia and Ballad, William|9780321574336
+ 2015|No Starch Press, Incorporated|Php And Mysql For Kids|Johann-Christian Hanke|9781593275655
+ 2009|ANAYA MULTIMEDIA|Programacion con PHP 6 y MySQL/ Programming with PHP 6 and MySQL (Spanish Edition)|Harris, Andy|9788441525528
+ 2007|Peachpit Press|PHP 5 Advanced: Visual QuickPro Guide|Ullman, Larry|9780132712286
+ 2011|Wiley & Sons, Incorporated, John|Php And Mysql 24-hour Trainer|Andrea Tarr|9781118172933
+ 2006|O'Reilly Media|Web Database Applications with PHP & MySQL|Shillingford, Nadine|9780596100032
+ 2016-09-30|Packt Publishing|PHP 7: Real World Application Development|Doug Bierer and Altaf Hussain and Branko Ajzele|9781787129009
+ 2002|Muska & Lipman/Premier-Trade|PHP Fast & Easy Web Development, 2nd Edition|Meloni, Julie C.|9781931841870
+
+githubLanguage PHP
+ fileExtensions php aw ctp fcgi inc php3 php4 php5 phps phpt
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  fzaninotto Faker https://github.com/fzaninotto.png https://github.com/fzaninotto/Faker PHP #4F5D95 21754 2507 375 "Faker is a PHP library that generates fake data for you"
+  laravel laravel https://github.com/laravel.png https://github.com/laravel/laravel PHP #4F5D95 54813 16809 929 "A PHP framework for web artisans"
+  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463
+  monicahq monica https://github.com/monicahq.png https://github.com/monicahq/monica PHP #4F5D95 7726 935 302 "Personal CRM. Remember everything about your friends and family."
+  mautic mautic https://github.com/mautic.png https://github.com/mautic/mautic PHP #4F5D95 3421 1236 88 "Mautic: Open Source Marketing Automation Software."
+  danielmiessler SecLists https://github.com/danielmiessler.png https://github.com/danielmiessler/SecLists PHP #4F5D95 19907 8011 550 "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more."
+  the-benchmarker web-frameworks https://github.com/the-benchmarker.png https://github.com/the-benchmarker/web-frameworks PHP #4F5D95 2932 243 204 "Which is the fastest web framework?"
+  Seldaek monolog https://github.com/Seldaek.png https://github.com/Seldaek/monolog PHP #4F5D95 15663 1570 315 "Sends your logs to files, sockets, inboxes, databases and various web services"
+  firefly-iii firefly-iii https://github.com/firefly-iii.png https://github.com/firefly-iii/firefly-iii PHP #4F5D95 2718 426 130 "Firefly III: a personal finances manager"
+  easy-swoole easyswoole https://github.com/easy-swoole.png https://github.com/easy-swoole/easyswoole PHP #4F5D95 2336 365 282 "High performance Coroutine PHP Framework, base on Swoole"
+  PrestaShop PrestaShop https://github.com/PrestaShop.png https://github.com/PrestaShop/PrestaShop PHP #4F5D95 3922 3305 77 "PrestaShop offers a fully scalable open source ecommerce solution."
+  akaunting akaunting https://github.com/akaunting.png https://github.com/akaunting/akaunting PHP #4F5D95 2097 797 137 "Free and Online Accounting Software"
+  phacility phabricator https://github.com/phacility.png https://github.com/phacility/phabricator PHP #4F5D95 10942 1385 116 "Open software engineering platform and fun adventure game"
+  yiisoft yii2 https://github.com/yiisoft.png https://github.com/yiisoft/yii2 PHP #4F5D95 13073 6810 94 "Yii 2: The Fast, Secure and Professional PHP Framework"
+  swoft-cloud swoft https://github.com/swoft-cloud.png https://github.com/swoft-cloud/swoft PHP #4F5D95 3829 590 447 "🚀 PHP Microservice Full Coroutine Framework"
+  elastic elasticsearch-php https://github.com/elastic.png https://github.com/elastic/elasticsearch-php PHP #4F5D95 3510 712 106 "Official PHP low-level client for Elasticsearch."
+  elementor elementor https://github.com/elementor.png https://github.com/elementor/elementor PHP #4F5D95 2505 632 81 "The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design."
+  opencart opencart https://github.com/opencart.png https://github.com/opencart/opencart PHP #4F5D95 5040 3838 87 "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution."
+  tymondesigns jwt-auth https://github.com/tymondesigns.png https://github.com/tymondesigns/jwt-auth PHP #4F5D95 8258 1047 134 "🔐 JSON Web Token Authentication for Laravel & Lumen"
+  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41
+  magento magento2 https://github.com/magento.png https://github.com/magento/magento2 PHP #4F5D95 7806 6717 128 "All Submissions you make to Magento Inc. (""Magento"") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, subli…"
+  tennc webshell https://github.com/tennc.png https://github.com/tennc/webshell PHP #4F5D95 4829 3617 191 "This is a webshell open source project"
+  area17 twill https://github.com/area17.png https://github.com/area17/twill PHP #4F5D95 1507 162 119 "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible. Chat with us and others on Spectrum! https://spectrum.chat/twill"
+  hyperf-cloud hyperf https://github.com/hyperf-cloud.png https://github.com/hyperf-cloud/hyperf PHP #4F5D95 1186 167 366 "🚀 A coroutine framework that focuses on hyperspeed and flexibility, specifically used for build microservices or middlewares."
+  composer composer https://github.com/composer.png https://github.com/composer/composer PHP #4F5D95 20839 5592 354 "Dependency Manager for PHP"
+ trendingProjectsCount 26
+ type programming
+ filenames .php .php_cs .php_cs.dist Phakefile
+ interpreters php
+ aceMode php
+ codemirrorMode php
+ codemirrorMimeType application/x-httpd-php
+ tmScope text.html.php
+ aliases inc
+ repos 3479326
+
+indeedJobs php developer
+ 2017 9017
+linkedInSkill php
+ 2018 2133213
+stackOverflowSurvey
+ 2021
+  users 18130
+  medianSalary 38916
+  fans 8852
+  percentageUsing 0.22
+
+semanticScholar 26
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|Efficient and Flexible Discovery of PHP Application Vulnerabilities|10.1109/EuroSP.2017.14|42|6|M. Backes and K. Rieck and Malte Skoruppa and Ben Stock and Fabian Yamaguchi|4eb7e810e2aa6e9547dc3a12daae53ef70accd38
+ 2014|PHP AiR: Analyzing PHP systems with Rascal|10.1109/CSMR-WCRE.2014.6747217|26|1|M. Hills and P. Klint|ccdd735ec2aa48f844e69187e946e9d05e9fd7e3
+ 2014|Analysing Student Programs in the PHP Intelligent Tutoring System|10.1007/s40593-014-0014-z|22|1|Dinesha Weragama and J. Reye|b2cbbdb1efcdbf34cbe670dfcc786433991c2bb2
+ 2014|Maintenance Patterns of Large-Scale PHP Web Applications|10.1109/ICSME.2014.60|19|2|Panos Kyriakakis and A. Chatzigeorgiou|c35d1d04446b8cbe696493db22344cc6507584e8
+ 2014|Identifying and locating interference issues in PHP applications: the case of WordPress|10.1145/2597008.2597153|16|2|L. Eshkevari and G. Antoniol and J. Cordy and M. D. Penta|ef89f04493508d96938f9f4e14a7fdf80b723a0c
+ 2014|The Development of Web Based Expert System for Diagnosing Children Diseases Using PHP and MySQL|10.14445/22312803/IJCTT-V10P134|12|0|Hustina waty and Randy Aprianggi|e4b687662191d88ae1249632f281317aca509e55
+ 2015|ANALISA KONSEP OBJECT ORIENTED PROGRAMMING PADA BAHASA PEMROGRAMAN PHP|10.31294/jki.v3i2.1662|10|1|Kadek Wibowo|aabde6301d2d5361962e5a633871656eff4aee0c
+ 2016|Aplikasi Diagnosis Gangguan Kecemasan Menggunakan Metode Forward Chaining Berbasis Web dengan PHP dan MYSQL|10.15408/SIJSI.V9I1.2960|7|0|Raka Yusuf and Harni Kusniyati and Yurike Nuramelia|926bb33994dc8ced2416bdf997a19c0497e32220
+ 2016|E-learning of PHP based on the solutions of real-life problems|10.1007/S40692-015-0050-1|6|1|G. M. M. Bashir and A. S. L. Hoque and Bipul Chandra Dev Nath|4ea747a8a19da550a1085b5d9f6cd55c26970b47
+ 2012|Designing the Knowledge Base for a PHP Tutor|10.1007/978-3-642-30950-2_94|5|0|Dinesha Weragama and J. Reye|635811dd348e866aa4d7e7dc99a66f02c5dd16a1
+ 2020|Sistem Informasi Berbasis Web Sma Al- Mukhtariyah Mamben Lauk Berbasis Php Dan Mysql Dengan Framework Codeigniter|10.29408/JIT.V3I1.1793|5|0|S. Suhartini and Muhamad Sadali and Yupi Kuspandi Putra|3293452be118ca6720c4a6ea1bfd2bf7198b713b
+ 2014|A logical error detector for novice PHP programmers|10.1109/VLHCC.2014.6883062|3|0|Tung Nguyen and C. Chua|c320cd427ae066bfe365b5461788c0bdf33d1507
+ 2017|Evolution of PHP Applications: A Systematic Literature Review|10.3991/ijes.v5i1.6437|3|0|Alinaswe Siame and D. Kunda|11bfca21cee85dfe9860f550c297f4967a1a96c4
+ 2013|Determination of Bahasa Melayu Word List From Friday Sermon Transcripts Using PHP and MySQL|10.11113/JT.V64.2071|2|0|M. Harun and Muhammad ‘Aasim Asyafi’ie bin Ahmad and S. Hamid and Fareha Abdul Rahman and P. I. Khalid|cfa538107946ab4e1f77ae41db99d8af9a0a3471
+ 2014|Sistem Pemrosesan Transaksi Pada Toko Bangunan Berbasis Web Dengan PHP dan MySQL|10.14710/JTSISKOM.2.2.2014.170-174|2|0|Rizky Gelar Maliq and R. Isnanto and Ike Pertiwi Windasari|dbfb0559140c92a193e4723fc8ca7242531286b9
+ 2016|SISTEM INFORMASI MANAJEMEN SURAT BERBASIS PHP DAN MYSQL DI INSTITUT SENI INDONESIA PADANGPANJANG|10.36275/stsp.v16i1.53|2|1|Irwan Yusti|71d4444fc6c57e59c4e1137b97d0b3da121e028a
+ 2017|Static optimization in PHP 7|10.1145/3033019.3033026|2|0|N. Popov and Biagio Cosenza and B. Juurlink and Dmitry Stogov|54cac445f04718a06b61f5616615baf28f4cc092
+ 2018|Vulnerability Detection in PHP Web Application Using Lexical Analysis Approach with Machine Learning|10.1109/ICODSE.2018.8705809|2|0|Dhika Rizki Anbiya and A. Purwarianti and Y. Asnar|b30cf4d01b0085647e6f146364eeaf97a88a5cf2
+ 2020|Information Retrieval Technique for Indonesian PDF Document with Modified Stemming Porter Method Using PHP|10.1088/1742-6596/1477/3/032016|2|0|Faizal Riza and S. Rifai and Akmal Dirgantara and Sfenrianto and Rasenda and Syarifudin Herdyansyah|66a1049603e6166b9cc4975433eb388c6fdb6c4d
+ 2011|Pro PHP Programming|10.1007/978-1-4302-3561-3|2|0|Peter B. MacIntyre and Brian Danchilla and Mladen Gogala|401a0b2b887c3d8c50f95ad8f59dff6a3f725df2
+ 2016|Evolution of method invocation and object instantiation patterns in a PHP ecosystem|10.1145/3003733.3003777|1|0|Panos Kyriakakis and A. Chatzigeorgiou and Apostolos Ampatzoglou and S. Xinogalos|b3cbb06d4fd1967a30cdab16989c18a2b18f4722
+ 2016|MIGRATION CODE PADA BACKEND CRIMEZONE DARI PHP KE SCALA|10.21609/JSI.V12I2.489|1|0|A. Suhendra and A. Bachtiar|b28d1b5faeb54e58c991f3eaca916db1c9dd757f
+ 2003|Object-Oriented Programming with PHP|10.1007/978-1-4302-1120-4_6|1|0|Luis Argerich and Wankyu Choi and J. Coggeshall and Ken Egervari and Martin Geisler and Zak Greant and Andrew F. Hill and C. Hubbard and James Moore and Devon O’Dell and Jon Parise and Harish Rawat and Tarique Sani and Christopher Scollo and Deepak Thomas and Chris Ullman|4fd455e698d4b0687184c1a2db10e05b89f4f2ad
+ 2019|Mutation Testing for Evaluating PHP Web Applications|10.4018/ijsi.2019100102|1|0|A. Saifan and M. Ata|e870a0eebcd0ce3ac4d41f93531a1904f9f3e66c
+ 2021|Analisis Perbandingan Bahasa Pemrograman PHP Laravel dengan PHP Native pada Pengembangan Website|10.36448/expert.v11i1.2012|1|0|R. Endra and Yuthsi Aprilinda and Yanuar Dharmawan and Wahyu Ramadhan|0a1a7f81189724590b1d1b73e2f85b59616414d7
+ 2015|The PHP Language: Types of Statement|10.1007/978-3-319-22659-0_3|1|0|M. Bramer|d1ced82bbe63acf677f5f0e5327cfb97b00da35d
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
+ PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
+ PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
+ Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
+ Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11

@@ -1,0 +1,59 @@
+RPM Spec
+========
+
+RPM Spec is an application created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1575 on PLDB
+27 Years Old
+
+- RPM Spec first developed in Red Hat, Inc
+- GitHub supports syntax highlighting for RPM Spec
+- Read more about RPM Spec on the web: 1.
+ https://rpm-packaging-guide.github.io/#working-with-spec-files
+
+#
+# spec file for package manos
+#
+# Copyright (c) 2010 Jackson Harper (jackson@novell.com)
+#
+#
+
+Name:           manos-devel
+Version:        0.1.1
+Release:        1
+License:        MIT/X11
+BuildRoot:      %{_tmppath}/manos-%{version}-build
+BuildRequires:  mono-devel &gt;= 2.6
+BuildRequires:  mono-nunit &gt;= 2.6
+Source0:        manos-%{version}.tar.bz2
+Source1:        rpmlintrc
+Summary:        The Manos Web Application Framework
+Group:          Development/Web/Servers
+BuildArch:      noarch
+
+%description
+Manos is an easy to use, easy to test, high performance web application framework that stays out of your way and makes your life ridiculously simple.
+
+%files
+%defattr(-, root, root)
+%{_prefix}/lib/manos
+%{_bindir}/manos
+%{_datadir}/manos
+%{_prefix}/lib/pkgconfig/manos.pc
+%{_datadir}/man/man1/manos.1.gz
+
+%prep
+%setup -q -n manos-%{version}
+
+%build
+./configure --prefix=%{buildroot}%{_prefix} --install-prefix=%{_prefix}
+make
+
+%install
+make install
+
+%clean
+rm -rf %{buildroot}
+
+%changelog

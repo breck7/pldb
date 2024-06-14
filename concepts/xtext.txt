@@ -1,0 +1,71 @@
+Xtext
+=====
+
+Xtext is a grammar language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#487 on PLDB
+18 Years Old
+
+git clone https://github.com/eclipse/xtext
+
+Xtext is an open-source software framework for developing programming languages and domain-specific languages (DSLs). Unlike standard parser generators, Xtext generates not only a parser, but also a class model for the abstract syntax tree, as well as providing a fully featured, customizable Eclipse-based IDE.Xtext is being developed in the Eclipse Project as part of the Eclipse Modeling Framework Project and is licensed under the Eclipse Public License.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Xtext
+
+- Xtext website
+ https://www.eclipse.org/Xtext/
+- Xtext Wikipedia page
+ https://en.wikipedia.org/wiki/Xtext
+- Xtext is developed on GitHub and has 645 stars
+- Xtext is written in Java, XML, Xtend, Ini, HTML, JavaScript, Gradle, Bourne shell, CSS, Markdown, JSON, TypeScript, YAML, Dockerfile, CSV, Objective C++, SVG
+- Xtext on Twitter
+ https://twitter.com/xtext
+- Read more about Xtext on the web: 1.
+ https://dl.acm.org/citation.cfm?id=1869625
+
+grammar org.eclipse.xtext.common.Terminals
+    hidden(WS, ML_COMMENT, SL_COMMENT)
+ 
+import &quot;http://www.eclipse.org/emf/2002/Ecore&quot; as ecore
+ 
+terminal ID:
+    &#39;^&#39;?(&#39;a&#39;..&#39;z&#39;|&#39;A&#39;..&#39;Z&#39;|&#39;_&#39;)(&#39;a&#39;..&#39;z&#39;|&#39;A&#39;..&#39;Z&#39;|&#39;_&#39;|&#39;0&#39;..&#39;9&#39;)*;
+ 
+terminal INT returns ecore::EInt:
+    (&#39;0&#39;..&#39;9&#39;)+;
+ 
+terminal STRING:
+    &#39;&quot;&#39; ( &#39;\\&#39;(&#39;b&#39;|&#39;t&#39;|&#39;n&#39;|&#39;f&#39;|&#39;r&#39;|&#39;u&#39;|&#39;&quot;&#39;|&quot;&#39;&quot;|&#39;\\&#39;) | !(&#39;\\&#39;|&#39;&quot;&#39;) )* &#39;&quot;&#39; |
+    &quot;&#39;&quot; ( &#39;\\&#39;(&#39;b&#39;|&#39;t&#39;|&#39;n&#39;|&#39;f&#39;|&#39;r&#39;|&#39;u&#39;|&#39;&quot;&#39;|&quot;&#39;&quot;|&#39;\\&#39;) | !(&#39;\\&#39;|&quot;&#39;&quot;) )* &quot;&#39;&quot;;
+ 
+terminal ML_COMMENT:
+    &#39;/*&#39; -&gt; &#39;*/&#39;;
+ 
+terminal SL_COMMENT:
+    &#39;//&#39; !(&#39;\n&#39;|&#39;\r&#39;)* (&#39;\r&#39;? &#39;\n&#39;)?;
+ 
+terminal WS:
+    (&#39; &#39;|&#39;\t&#39;|&#39;\r&#39;|&#39;\n&#39;)+;
+ 
+terminal ANY_OTHER:
+    .;
+
+Language features
+======================================================
+
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  grammar org.example.domainmodel.Domainmodel
+         with org.eclipse.xtext.common.Terminals
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import "http://www.xtext.org/example/Domainmodel"
+  import "http://www.xtext.org/example/Domainmodel" as dmodel

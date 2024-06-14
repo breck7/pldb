@@ -1,0 +1,52 @@
+import ../code/conceptPage.scroll
+
+id skip
+name skip
+appeared 2018
+tags pl
+website http://skiplang.com/
+
+isOpenSource true
+writtenIn expect markdown c json html javascript cpp cmake python bourne-shell bash m4 css perl lisp yaml svg vim-script make pascal dockerfile ocaml forth
+fileType text
+wordRank 1838
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2018
+ commits 361
+ committers 23
+ files 6358
+ newestCommit 2022
+originCommunity Facebook
+
+leachim6 Skip
+ filepath s/Skip.sk
+ fileExtensions sk
+ example
+  fun main(): void {
+    print_string("Hello World")
+  }
+
+githubRepo https://github.com/skiplang/skip
+ firstCommit 2018
+ stars 1912
+ forks 71
+ subscribers 60
+ created 2018
+ updated 2022
+ description A programming language to skip the things you have already computed
+ issues 46
+
+printToken print_string
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName skiplang.com
+ registered 2017
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2017|Lioncrest Publishing|Skip College, Start Programming: The Complete How-To Guide to Teaching Yourself Software Development|Hinton, Sam|9781619616899

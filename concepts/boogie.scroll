@@ -1,0 +1,36 @@
+import ../code/conceptPage.scroll
+
+id boogie
+name Boogie
+appeared 2008
+tags pl
+website https://boogie-docs.readthedocs.io/en/latest/
+conceptDescription The Boogie IVL (intermediate verification language) is a simple language designed for verification which was originally created by Microsoft Research.
+
+originCommunity Microsoft
+
+pygmentsHighlighter Boogie
+ filename verification.py
+ fileExtensions bpl
+example
+ // Variable a is a nested map that maps
+ // integers to a map that maps 32-bit wide bitvectors
+ // to booleans.
+ var a:[int][bv32]bool;
+
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
+
+githubBigQuery Boogie
+ repos 4
+ users 4
+
+githubLanguage Boogie
+ type programming
+ fileExtensions bpl
+ interpreters boogie
+ aceMode text
+ tmScope source.boogie
+ repos 21

@@ -1,0 +1,187 @@
+AMPL
+====
+
+AMPL, aka A Mathematical Programming Language, is an open source programming language created in 1985 by Robert Fourer and David Gay and Brian Kernighan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Fourer
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Gay
+ https://pldb.io/concepts/../lists/creators.html#q=Brian%20Kernighan
+
+#265 on PLDB
+39 Years Old
+6k Repos
+
+A Mathematical Programming Language (AMPL) is an algebraic modeling language to describe and solve high-complexity problems for large-scale mathematical computing (i.e., large-scale optimization and scheduling-type problems). It was developed by Robert Fourer, David Gay, and Brian Kernighan at Bell Laboratories. AMPL supports dozens of solvers, both open source and commercial software, including CBC, CPLEX, FortMP, Gurobi, MINOS, IPOPT, SNOPT, KNITRO, and LGO. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AMPL
+
+- AMPL website
+ https://ampl.com/
+- AMPL Wikipedia page
+ https://en.wikipedia.org/wiki/AMPL
+- AMPL docs
+ https://ampl.com/learn/docs/
+- There are at least 5,570 AMPL repos on GitHub
+- AMPL first developed in AMPL Optimization LLC
+- AMPL on Twitter
+ https://twitter.com/amplopt
+- The  Google BigQuery Public Dataset GitHub snapshot shows 806 users using AMPL in 852 repos on GitHub
+- Explore AMPL snippets on Rosetta Code
+- AMPL on HOPL
+ https://hopl.info/showlanguage.prx?exp=7232
+- Pygments supports syntax highlighting for AMPL
+- GitHub supports syntax highlighting for AMPL
+- Events page for AMPL
+ https://ampl.com/about/upcoming-events/
+- Frequently Asked Questions for AMPL
+ https://ampl.com/learn/docs/faqs/
+- Indeed.com has 3 matches for "ampl developer".
+- ampl.com was registered in 1995
+- See also: (8 related languages)Linux, Unix, awk, C, Algebraic modeling language, NL, XML, Microsoft Excel
+- 2 languages in PLDB linking to AMPL: mpl, rason
+
+set PROD;  # products
+
+param rate {PROD} &gt; 0;     # tons produced per hour
+param avail &gt;= 0;          # hours available in week
+
+param profit {PROD};       # profit per ton
+param market {PROD} &gt;= 0;  # limit on tons sold in week
+
+var Make {p in PROD} &gt;= 0, &lt;= market[p]; # tons produced
+
+maximize Total_Profit: sum {p in PROD} profit[p] * Make[p];
+
+               # Objective: total profits from all products
+
+subject to Time: sum {p in PROD} (1/rate[p]) * Make[p] &lt;= avail;
+
+               # Constraint: total of hours used by all
+               # products may not exceed hours available
+
+# A toy knapsack problem from the LocalSolver docs written in AMPL.
+
+set I;
+param Value{I};
+param Weight{I};
+param KnapsackBound;
+var Take{I} binary;
+
+maximize TotalValue: sum{i in I} Take[i] * Value[i];
+s.t. WeightLimit: sum{i in I} Take[i] * Weight[i] &lt;= KnapsackBound;
+
+data;
+
+param:
+I: Weight Value :=
+0    10     1
+1    60    10
+2    30    15
+3    40    40
+4    30    60
+5    20    90
+6    20   100
+7     2    15;
+
+param KnapsackBound := 102;
+
+set Plants;
+ set Markets;
+
+ # Capacity of plant p in cases
+ param Capacity{p in Plants};
+
+ # Demand at market m in cases
+ param Demand{m in Markets};
+
+ # Distance in thousands of miles
+ param Distance{Plants, Markets};
+
+ # Freight in dollars per case per thousand miles
+ param Freight;
+
+ # Transport cost in thousands of dollars per case
+ param TransportCost{p in Plants, m in Markets} :=
+     Freight * Distance[p, m] / 1000;
+
+ # Shipment quantities in cases
+ var shipment{Plants, Markets} &gt;= 0;
+
+ # Total transportation costs in thousands of dollars
+ minimize cost:
+     sum{p in Plants, m in Markets} TransportCost[p, m] * shipment[p, m];
+
+ # Observe supply limit at plant p
+ s.t. supply{p in Plants}: sum{m in Markets} shipment[p, m] &lt;= Capacity[p];
+
+ # Satisfy demand at market m
+ s.t. demand{m in Markets}: sum{p in Plants} shipment[p, m] &gt;= Demand[m];
+
+ data;
+
+ set Plants := seattle san-diego;
+ set Markets := new-york chicago topeka;
+
+ param Capacity :=
+     seattle   350
+     san-diego 600;
+
+ param Demand :=
+     new-york 325
+     chicago  300
+     topeka   275;
+
+ param Distance : new-york chicago topeka :=
+     seattle        2.5      1.7     1.8
+     san-diego      2.5      1.8     1.4;
+
+ param Freight := 90;
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # \d+([eE][+-]?\d+)?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

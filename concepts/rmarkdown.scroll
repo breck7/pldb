@@ -1,0 +1,71 @@
+import ../code/conceptPage.scroll
+
+id rmarkdown
+name RMarkdown
+appeared 2014
+creators JJ Allaire
+tags textMarkup
+website https://rmarkdown.rstudio.com/
+latestVersion v0.9.6
+
+isOpenSource true
+writtenIn r css javascript markdown yaml html lua svg tex bourne-shell xml scss csv
+fileExtensions rmd
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 3977
+ committers 143
+ files 499
+ newestCommit 2024
+country United States
+originCommunity https://github.com/rstudio
+
+githubRepo https://github.com/rstudio/rmarkdown
+ firstCommit 2014
+ stars 2471
+ forks 933
+ subscribers 142
+ created 2014
+ updated 2022
+ description Dynamic Documents for R
+ issues 207
+
+domainName rmarkdown.rstudio.com
+
+linguistGrammarRepo https://github.com/atom/language-gfm
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 58
+ commitCount 426
+ sampleCount 1
+ example
+  # An example RMarkdown
+  
+  Some text.
+  
+  ## A graphic in R
+  
+  ```{r}
+  plot(1:10)
+  hist(rnorm(10000))
+  ```
+
+githubLanguage RMarkdown
+ fileExtensions qmd rmd
+ trendingProjectsCount 0
+ type prose
+ aceMode markdown
+ codemirrorMode gfm
+ codemirrorMimeType text/x-gfm
+ tmScope source.gfm
+ wrap true
+ repos 198
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Bookdown: Authoring Books and Technical Documents with R Markdown||Yihui Xie|54265969|3.67|3|0
+ bookdown: Authoring Books and Technical Documents with R Markdown (Chapman & Hall/CRC The R Series)||Yihui Xie|54727209|4.38|8|1

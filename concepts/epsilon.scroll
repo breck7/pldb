@@ -1,0 +1,49 @@
+import ../code/conceptPage.scroll
+
+id epsilon
+name epsilon
+appeared 1967
+tags pl
+website https://www.eclipse.org/epsilon/doc/eol/
+conceptDescription EOL is an imperative programming language for creating, querying and modifying EMF models. You can think of it as a mixture of Javascript and OCL, combining the best of both worlds. As such, it provides all the usual imperative features found in Javascript (e.g. statement sequencing, variables, for and while loops, if branches etc.) and all the nice features of OCL such as those handy collection querying functions.
+
+fileExtensions eol
+country Canada
+originCommunity Eclipse Foundation, Inc
+
+example
+ var m : new Model;
+ 
+ m.name = "m";
+ 
+ // Create five packages
+ for (i in 1.to(5)){
+   var package : Package = new Package;
+   package.name = "p" + i;
+   package.package = m;
+ 
+   // Create three classes in each package
+   for (j in 1.to(3)) {
+     
+     var class : Class = new Class;
+     class.name = "c" + i + "" + j;
+     class.isAbstract = false;
+     class.package = package;
+     
+   }
+   
+ }
+ 
+ // Assign random supertypes to the classes created
+ for (c in Class.allInstances) {
+   c.extends = Class.allInstances.random();
+ }
+twitter https://twitter.com/eclipseepsilon
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

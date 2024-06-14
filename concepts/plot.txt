@@ -1,0 +1,30 @@
+Plot
+====
+
+Plot is a template language created in 2019 by John Sundell.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Sundell
+
+#785 on PLDB
+5 Years Old
+
+git clone https://github.com/JohnSundell/Plot
+
+A DSL for writing type-safe HTML, XML and RSS in Swift.
+
+- Plot is developed on GitHub and has 1,780 stars
+- Plot first developed in https://github.com/JohnSundell/Plot/pulls
+- Plot is written in Swift, Markdown
+
+let html = HTML(
+    .head(
+        .title(&quot;My website&quot;),
+        .stylesheet(&quot;styles.css&quot;)
+    ),
+    .body(
+        .div(
+            .h1(&quot;My website&quot;),
+            .p(&quot;Writing HTML in Swift is pretty great!&quot;)
+        )
+    )
+)

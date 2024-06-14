@@ -1,0 +1,139 @@
+Smalltalk
+=========
+
+Smalltalk is a programming language created in 1972 by Alan Kay and Dan Ingalls and Adele Goldberg.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221972%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alan%20Kay
+ https://pldb.io/concepts/../lists/creators.html#q=Dan%20Ingalls
+ https://pldb.io/concepts/../lists/creators.html#q=Adele%20Goldberg
+
+#71 on PLDB
+52 Years Old
+9k Repos
+
+Try now: Riju
+
+Smalltalk is an object-oriented, dynamically typed, reflective programming language. Smalltalk was created as the language to underpin the "new world" of computing exemplified by "human–computer symbiosis." It was designed and created in part for educational use, more so for constructionist learning, at the Learning Research Group (LRG) of Xerox PARC by Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Scott Wallace, and others during the 1970s. The language was first generally released as Smalltalk-80. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Smalltalk
+
+- Smalltalk Wikipedia page
+ https://en.wikipedia.org/wiki/Smalltalk
+- Smalltalk docs
+ https://www.gnu.org/software/smalltalk/manual/html_node/
+- There are at least 9,336 Smalltalk repos on GitHub
+- Smalltalk first developed in Xerox PARC
+- The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using Smalltalk in 6k repos on GitHub
+- There are 111 Project Euler users using Smalltalk
+- Explore Smalltalk snippets on Rosetta Code
+- Smalltalk on HOPL
+ https://hopl.info/showlanguage.prx?exp=828
+- Smalltalk appears in the TIOBE Index
+- Smalltalk Ubuntu package
+ https://packages.ubuntu.com/jammy/gnu-smalltalk
+- ANTLR grammar for Smalltalk
+- CodeMirror package for syntax highlighting Smalltalk
+- Pygments supports syntax highlighting for Smalltalk
+- GitHub supports syntax highlighting for Smalltalk
+- Smalltalk appears in the Quine Relay project
+- There is a central package repository for Smalltalk
+- See also: (42 related languages)Pharo, Squeak, VisualWorks, Lisp, Simula, Euler, IMP, PLANNER, Logo, Applescript, Dart, Dylan, Erlang, Etoys, Falcon, Go, Groovy, Io, Ioke, Java, Lasso, Lisaac, NewtonScript, Object Rexx, Objective-C, PHP, Raku, Python, Ruby, Scala, Scratch, Self, SQL, Flavors, CLOS, Prolog, ASCII, JavaScript, Visual Smalltalk Enterprise, Smalltalk MT, JVM, Strongtalk
+- 10 languages in PLDB linking to Smalltalk: beef-lang, cloc, Factor, Flow9, mal, oopsilon, POV-Ray SDL, Pygments, STON, strat
+
+&#39;Hello, world!&#39; displayNl !
+
+Transcript show: &#39;Hello World&#39;.
+
+ChartJs
+dataFunction
+	^ &#39;bars&#39;
+
+quadMultiply: i1 and: i2
+    &quot;This method multiplies the given numbers by each other and the result by 4.&quot;
+    | mul |
+    mul := i1 * i2.
+    ^mul * 4
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token "
+ Example
+  " A comment
+  "
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token displayNl
+ Example
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiple Dispatch
+ FeatureLink ../features/hasMultipleDispatch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,39 @@
+Gödel (Goedel)
+==============
+
+Gödel (Goedel) is a programming language created in 1992 by John Lloyd and Patricia Hill.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Lloyd
+ https://pldb.io/concepts/../lists/creators.html#q=Patricia%20Hill
+
+#1477 on PLDB
+32 Years Old
+
+Gödel is a declarative, general-purpose programming language that adheres to the logic programming paradigm. It is a strongly typed language, the type system being based on many-sorted logic with parametric polymorphism. It is named after logician Kurt Gödel.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Gödel_(programming_language)
+
+- Gödel (Goedel) Wikipedia page
+ https://en.wikipedia.org/wiki/Gödel_(programming_language)
+- Gödel (Goedel) first developed in University of Bristol
+- Gödel (Goedel) on HOPL
+ https://hopl.info/showlanguage.prx?exp=1762
+- Read more about Gödel (Goedel) on the web: 1.
+ https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/books/goedel-book.html
+
+MODULE      GCD.
+IMPORT      Integers.
+ 
+PREDICATE   Gcd : Integer * Integer * Integer.
+Gcd(i,j,d) &lt;-
+           CommonDivisor(i,j,d) &amp;
+           ~ SOME [e] (CommonDivisor(i,j,e) &amp; e &gt; d).
+ 
+PREDICATE   CommonDivisor : Integer * Integer * Integer.
+CommonDivisor(i,j,d) &lt;-
+           IF (i = 0 \/ j = 0)
+           THEN
+             d = Max(Abs(i),Abs(j))
+           ELSE
+             1 =&lt; d =&lt; Min(Abs(i),Abs(j)) &amp;
+             i Mod d = 0 &amp;
+             j Mod d = 0.

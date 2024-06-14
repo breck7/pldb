@@ -1,0 +1,40 @@
+latino
+======
+
+latino is an open source programming language created in 2015 by Primitivo R. Montero.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Primitivo%20R.%20Montero
+
+#1237 on PLDB
+9 Years Old
+
+git clone https://github.com/primitivorm/latino
+
+Lenguaje de programación de código abierto para latinos y de habla hispana.
+
+- latino website
+ https://lenguaje-latino.org/
+- latino is developed on GitHub and has 11 stars
+- latino first developed in https://github.com/lenguaje-latino
+- latino is written in C, Bourne shell, Markdown, CMake, YAML, Make, SVG, Bash, Dockerfile, M4, Tex, XML, Yacc, Lex, awk, sed, PowerShell
+- latino is written with the native language of Spanish
+- lenguaje-latino.org was registered in 2022
+
+escribir(&quot;Hello World&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token escribir
+ Example

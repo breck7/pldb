@@ -1,0 +1,48 @@
+D3.js
+=====
+
+D3.js is an open source library created in 2010 by Mike Bostock.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mike%20Bostock
+
+#207 on PLDB
+14 Years Old
+
+git clone https://github.com/d3/d3
+
+D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented SVG, HTML5, and CSS standards. It is the successor to the earlier Protovis framework. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/D3.js
+
+- D3.js website
+ https://d3js.org/
+- D3.js Wikipedia page
+ https://en.wikipedia.org/wiki/D3.js
+- D3.js is developed on GitHub and has 101,774 stars
+- D3.js first developed in https://github.com/d3
+- D3.js is written in Markdown, JavaScript, JSON, TypeScript, YAML, CSV, Bourne shell, CSS, SVG
+- D3.js on Twitter
+ https://twitter.com/d3js_org
+- d3js.org was registered in 2011
+- See also: (9 related languages)JavaScript, SVG, CSS, ActionScript, HTML, JSON, CSV, GeoJSON, JQuery
+
+// Data
+  var countriesData = [
+     { name:&quot;Ireland&quot;,  income:53000, life: 78, pop:6378, color: &quot;black&quot;},
+     { name:&quot;Norway&quot;,   income:73000, life: 87, pop:5084, color: &quot;blue&quot; },
+     { name:&quot;Tanzania&quot;, income:27000, life: 50, pop:3407, color: &quot;grey&quot; }
+  ];
+// Create SVG container
+  var svg = d3.select(&quot;#hook&quot;).append(&quot;svg&quot;)
+        .attr(&quot;width&quot;, 120)
+        .attr(&quot;height&quot;, 120)
+        .style(&quot;background-color&quot;, &quot;#D0D0D0&quot;);
+// Create SVG elements from data
+    svg.selectAll(&quot;circle&quot;)                  // create virtual circle template
+      .data(countriesData)                   // bind data
+    .enter()                                 // for each row in data...
+      .append(&quot;circle&quot;)                      // bind circle &amp; data row such that...
+        .attr(&quot;id&quot;, function(d) { return d.name })            // set the circle&#39;s id according to the country name
+        .attr(&quot;cx&quot;, function(d) { return d.income / 1000  })  // set the circle&#39;s horizontal position according to income
+        .attr(&quot;cy&quot;, function(d) { return d.life })            // set the circle&#39;s vertical position according to life expectancy
+        .attr(&quot;r&quot;,  function(d) { return d.pop / 1000 *2 })   // set the circle&#39;s radius according to country&#39;s population
+        .attr(&quot;fill&quot;, function(d) { return d.color });        // set the circle&#39;s color according to country&#39;s color

@@ -1,0 +1,15 @@
+import ../code/conceptPage.scroll
+
+id moose
+name MOOSE
+appeared 1994
+tags pl
+conceptDescription MOOSE is a Maisie-based Object-Oriented Simulation Environment that uses inheritance to support iterative design of efficient simulation models.  The novel features of MOOSE include its ability to describe complex guards that may be used by an object to specify dynamic enabling conditions for its methods and may also be inherited selectively by a derived object.  MOOSE is the first simulation environment to suggest the use of inheritance in driving parallel implementations of an object that may exploit specific knowledge about the application, architecture, or simulation algorithm to improve its efficiency.  The paper introduces object-oriented design of simulation models, gives an overview of MOOSE, and illustrates its use in the design of parallel simulation models.  Experimental results are provided on the speedup achieved by a parallel simulation of a simple stochastic benchmark.
+
+centralPackageRepositoryCount 0
+country United States
+originCommunity University of California, Los Angeles
+reference https://semanticscholar.org/paper/1cc39dd769f48c27436451a3fe4d590d0a1a7940
+reference https://www.linkedin.com/in/jerrywaldorf
+
+hopl https://hopl.info/showlanguage.prx?exp=3552

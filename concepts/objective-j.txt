@@ -1,0 +1,142 @@
+Objective-J
+===========
+
+Objective-J is an open source programming language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#609 on PLDB
+16 Years Old
+1k Repos
+
+Objective-J is a programming language developed as part of the Cappuccino web development framework. Its syntax is nearly identical to the Objective-C syntax and it shares with JavaScript the same relationship that Objective-C has with the C programming language: that of being a strict, but small, superset; adding traditional inheritance and Smalltalk/Objective-C style dynamic dispatch. Pure JavaScript, being a prototype-based language, already has a notion of object orientation and inheritance, but Objective-J adds the use of class-based programming to JavaScript. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Objective-J
+
+- Objective-J website
+ http://www.cappuccino-project.org/
+- Objective-J Wikipedia page
+ https://en.wikipedia.org/wiki/Objective-J
+- There are at least 1,058 Objective-J repos on GitHub
+- Objective-J first developed in https://github.com/cappuccino
+- The  Google BigQuery Public Dataset GitHub snapshot shows 298 users using Objective-J in 340 repos on GitHub
+- Pygments supports syntax highlighting for Objective-J
+- GitHub supports syntax highlighting for Objective-J
+- cappuccino-project.org was registered in 2011
+- See also: (4 related languages)Objective-C, JavaScript, C, Smalltalk
+
+document.write(&quot;Hello World&quot;);
+
+@import &lt;Foundation/CPObject.j&gt;
+
+@implementation AppController : CPObject
+{
+}
+
+- (void)applicationDidFinishLaunching:(CPNotification)aNotification
+{
+    // The end result of this layout will be the kind of master/detail/auxilliary view
+    // found in iTunes, Mail, and many other apps.
+
+    var theWindow = [[CPWindow alloc] initWithContentRect:CGRectMakeZero() styleMask:CPBorderlessBridgeWindowMask],
+        contentView = [theWindow contentView];
+
+    var navigationArea = [[CPView alloc] initWithFrame:CGRectMake(0.0, 0.0, 150.0, CGRectGetHeight([contentView bounds]) - 150.0)];
+
+    [navigationArea setBackgroundColor:[CPColor redColor]];
+
+    // This view will grow in height, but stay fixed width attached to the left side of the screen.
+    [navigationArea setAutoresizingMask:CPViewHeightSizable | CPViewMaxXMargin];
+
+    [contentView addSubview:navigationArea];
+
+    var metaDataArea = [[CPView alloc] initWithFrame:CGRectMake(0.0, CGRectGetMaxY([navigationArea frame]), 150.0, 150.0)];
+
+    [metaDataArea setBackgroundColor:[CPColor greenColor]];
+
+    // This view will stay the same size in both directions, and fixed to the lower left corner.
+    [metaDataArea setAutoresizingMask:CPViewMinYMargin | CPViewMaxXMargin];
+
+    [contentView addSubview:metaDataArea];
+
+    var contentArea = [[CPView alloc] initWithFrame:CGRectMake(150.0, 0.0, CGRectGetWidth([contentView bounds]) - 150.0, CGRectGetHeight([contentView bounds]))];
+
+    [contentArea setBackgroundColor:[CPColor blueColor]];
+
+    // This view will grow in both height an width.
+    [contentArea setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
+
+    [contentView addSubview:contentArea];
+
+    [theWindow orderFront:self];
+}
+
+@end
+
+@implementation Address : CPObject
+{
+  CPString name;
+  CPString city;
+}
+
+- (id)initWithName:(CPString)aName city:(CPString)aCity
+{
+  self = [super init];
+
+  name = aName;
+  city = aCity;
+
+  return self;
+}
+
+- (void)setName:(CPString)aName
+{
+  name = aName;
+}
+
+- (CPString)name
+{
+  return name;
+}
+
++ (id)newAddressWithName:(CPString)aName city:(CPString)aCity
+{
+  return [[self alloc] initWithName:aName city:aCity];
+}
+
+@end
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token document.write
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

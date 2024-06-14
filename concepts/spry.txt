@@ -1,0 +1,75 @@
+spry
+====
+
+spry is a programming language created in 2015 by Göran Krampe.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=G%C3%B6ran%20Krampe
+
+#639 on PLDB
+9 Years Old
+
+git clone https://github.com/gokr/spry
+
+A Smalltalk and Rebol inspired language implemented as an AST interpreter in Nim
+
+- spry website
+ http://sprylang.se/
+- spry is developed on GitHub and has 378 stars
+- spry first developed in https://sprylang.se/about.html
+- spry is written in Bourne shell, Nim, JavaScript, Markdown, Python, HTML, R, YAML, JSON
+
+# Let&#39;s add a method to:do: that works as in Smalltalk.
+# Methods take the first argument, the &quot;receiver&quot;, from the left
+# and binds it to &quot;self&quot;.
+to:do: = method [:to :block
+  n = self
+  [n &lt;= to] whileTrue: [
+    do block n
+    ..n = (n + 1)]]
+
+# Then we can loop in Smalltalk style echoing 1 to 5!
+1 to: 5 do: [echo :x]
+
+# We can similarly implement select: from Smalltalk
+select: = method [:pred
+  result = ([] clone)
+  self reset
+  [self end?] whileFalse: [
+    n = (self next)
+    do pred n then: [result add: n]]
+  ^result]
+
+# Then use it to produce [3 4]
+echo ([1 2 3 4] select: [:x &gt; 2])
+
+#48!#65!#6c!#6c!#6f!#20!#57!#6f!#72!#6c!#64!
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

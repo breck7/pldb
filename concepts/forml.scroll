@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id forml
+name Forml
+appeared 2011
+creators Andrew Stein
+tags pl
+website http://texodus.github.io/forml/
+conceptDescription A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
+
+repoStats
+ firstCommit 2011
+ commits 327
+ committers 14
+ files 57
+country United States
+originCommunity https://github.com/texodus
+
+example
+     hello_world = do
+         `console.log("Hello World")` -- Calls to Javascript always return type `JS a`
+         x <- `Math.sqrt(9)`          -- `x` is inferred to be the unrestricted type `a`
+         let z = x + 1                -- `x` is now restricted to type `Num`
+         return (z + 1)                  -- type of `hello_world` is inferred to be `JS Num`
+     8 == do! hello_world >>= λx = `x + 3`
+
+githubRepo https://github.com/texodus/forml/
+ stars 76
+ forks 15
+ subscribers 9
+ created 2011
+ updated 2013
+ description A programming language

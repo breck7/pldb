@@ -1,0 +1,95 @@
+import ../code/conceptPage.scroll
+
+id snobol
+name SNOBOL
+appeared 1962
+creators David J. Farber and Ralph E. Griswold
+tags pl
+
+fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/snobol
+rosettaCode http://www.rosettacode.org/wiki/Category:Snobol
+centralPackageRepositoryCount 0
+country United States
+originCommunity Bell Telephone Laboratories
+reference https://archives.lib.umn.edu/repositories/3/resources/302
+
+helloWorldCollection SNOBOL
+ * Hello World in Snobol
+ 
+         OUTPUT = "Hello World!"
+ 
+pygmentsHighlighter Snobol
+ filename snobol.py
+ fileExtensions snobol
+rijuRepl https://riju.codes/snobol
+ example
+   OUTPUT = "Hello, world!"
+  END
+  
+leachim6 SNOBOL
+ filepath s/SNOBOL
+ example
+            OUTPUT = "Hello World"
+  END
+  
+
+lineCommentToken *
+printToken OUTPUT
+stringToken "
+
+hasLineComments true
+ * A comment
+hasComments true
+ * A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/SNOBOL
+ example
+  OUTPUT = "This program will ask you for personal names"
+             OUTPUT = "until you press return without giving it one"
+             NameCount = 0                                            :(GETINPUT)
+   AGAIN     NameCount = NameCount + 1
+             OUTPUT = "Name " NameCount ": " PersonalName
+   GETINPUT  OUTPUT = "Please give me name " NameCount + 1
+             PersonalName = INPUT
+             PersonalName LEN(1)                                      :S(AGAIN)
+             OUTPUT = "Finished. " NameCount " names requested."
+   END
+ related spitbol icon lua comit trac javascript awk perl regex algol cobol prolog apl basic fortran c ada unicon
+ summary SNOBOL (StriNg Oriented and symBOlic Language) is a series of computer programming languages developed between 1962 and 1967 at AT&T Bell Laboratories by David J. Farber, Ralph E. Griswold and Ivan P. Polonsky, culminating in SNOBOL4. It was one of a number of text-string-oriented languages developed during the 1950s and 1960s; others included COMIT and TRAC. SNOBOL4 stands apart from most programming languages of its era by having patterns as a first-class data type (i.e. a data type whose values can be manipulated in all ways permitted to any other data type in the programming language) and by providing operators for pattern concatenation and alternation. In later object-oriented languages, such as JavaScript, patterns are a type of object, and admit various manipulations. Further, strings generated during execution can be treated as programs and executed (as in the eval function of other languages). SNOBOL4 was quite widely taught in larger US universities in the late 1960s and early 1970s and was widely used in the 1970s and 1980s as a text manipulation language in the humanities. In the 1980s and 1990s its use faded as newer languages such as AWK and Perl made string manipulation by means of regular expressions fashionable. SNOBOL4 patterns subsume BNF grammars, which are equivalent to context-free grammars and more powerful than regular expressions. The "regular expressions" in current versions of AWK and Perl are in fact extensions of regular expressions in the traditional sense, but regular expressions, unlike SNOBOL4 patterns, are not recursive, which gives a distinct computational advantage to SNOBOL4 patterns. (Recursive expressions did appear in Perl 5.10, though, released in December 2007.) One of the designers of SNOBOL, Ralph Griswold, designed successors to SNOBOL4 called SL5 and Icon, which combined the backtracking of SNOBOL4 pattern matching with more standard ALGOL-like structuring, as well as adding some features of their own.
+ pageId 29515
+ dailyPageViews 64
+ created 2002
+ backlinksCount 116
+ revisionCount 322
+ appeared 1962
+
+hopl https://hopl.info/showlanguage.prx?exp=171
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 1971|Prentice-Hall|The SNOBOL 4 programming language (Automatic Computation)|Ralph E. Griswold and J. F. Poage and I. P. Polonsky|9780138153731
+ 1968|Prentice-hall|The Snobol 4 Programming Language|Ralph E Griswold|9780138153571
+ 1986-03-06T00:00:01Z|Oxford University Press|SNOBOL Programming for the Humanities|Hockey, Susan|9780198246763
+ 1976|Elsevier Science|The Programmer's Introduction to SNOBOL (Programming Languages Series, 3) (Elsevier Computer Science Library)|Ward Douglas Maurer|9780444001726
+ 1986|Oxford University Press|Snobol Programming For The Humanities|Susan Hockey|9780198246756
+
+semanticScholar 4
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1964|SNOBOL , A String Manipulation Language|10.1145/321203.321207|119|2|D. Farber and R. Griswold and I. P. Polonsky|30901b8eb11da71262fd343114efcb42c5c486fa
+ 1968|The SNOBOL 4 programming language|10.2307/2004908|57|1|R. Griswold|f5022fa2514ea495dd2da3f0ea81649ba1ac1faa
+ 1978|A history of the SNOBOL programming languages|10.1145/960118.808393|4|0|R. Griswold|4249a854acc44740b5f7d45782bfa6c63eb13286
+ 1978|ACM SIGPLAN history of programming languages conference SNOBOL language summary|10.1145/960118.808392|2|0|Michael D. Shapiro|d13d6d105ce3b5aaad7e1af1d6b85eb9d207b51d
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Snobol 4 Programming Language||Ralph E. Griswold|4019527|3.80|5|1
+ The Snobol 4 Programming Language|1971|Andrew Clues|766467|3.00|1|0
+ Snobol Programming for the Humanities|1985|Susan Hockey|5060467|4.00|1|0
+ The Programmer's Introduction to Snobol|1976|Ward Douglas Maurer|6455209|0.0|0|0
+ Snobol: An Introduction to Programming (Hayden computer programming series)|1975|Peter R Newsted|13307178|2.50|2|1
+ Encyclopedia of Microcomputers: Volume 15 - Reporting on Parallel Software to Snobol||Allen Kent|42221988|0.0|0|0

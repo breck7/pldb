@@ -1,0 +1,31 @@
+import ../code/conceptPage.scroll
+
+id fcl
+name FCL
+appeared 1989
+tags pl
+standsFor Flow chart language
+
+relatedConcepts dot
+country Denmark
+originCommunity Copenhagen University && Technical University of Denmark && DIKU && Computer Resources International A/S
+
+example
+ (n)
+ (init)
+ 
+ init: x1 = 1
+       x2 = 1
+ 
+ fib:  x1 = x1 + x2
+ 
+       t = x1
+       x1 = x2
+       x2 = t
+ 
+       n = -(n 1)
+ 
+       if >(n 2) then fib else exit
+ exit: return x2
+
+wikipedia https://en.wikipedia.org/wiki/Flow_chart_language

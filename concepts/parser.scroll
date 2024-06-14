@@ -1,0 +1,61 @@
+import ../code/conceptPage.scroll
+
+id parser
+name Parser 3
+appeared 1997
+creators Konstantin Morshnev
+tags pl
+website http://www.parser.ru/
+aka parser3
+
+isOpenSource true
+fileType text
+quineRelay Parser 3
+centralPackageRepositoryCount 0
+ubuntuPackage parser3-cgi
+country Russia
+originCommunity Art. Lebedev Studio
+
+helloWorldCollection Parser 3
+ # Hello World in Parser
+ 
+ Hello world!
+rijuRepl https://riju.codes/parser3
+ example
+  $console:line[Hello, world!]
+leachim6 Parser
+ filepath p/Parser.p
+ fileExtensions p
+ example
+  @main[]
+    ^rem{Will print "Hello World" when run as CGI script}
+    $hello[Hello World]
+    $result[$hello]
+  
+
+lineCommentToken #
+printToken $console:line
+stringToken "
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Parser_(CGI_language)
+ related xml pcre
+ summary Parser is a free server-side CGI web scripting language developed by Art. Lebedev Studio and released under the GPL. Originally, Parser was merely a simple macro processing language. The latest 3rd revision (March 2006) introduced object-oriented programming features. The compiler for the language was developed in C++ by studio employees Konstantin Morshnev and Alexander Petrosyan to automate often repeated tasks, especially maintenance of already existing websites. It was used in many web projects of the studio. Since revision 3 it was released as free software and it is now used in other websites, mostly in Russia (according to a partial list at the language's website). The language supports technologies needed for common web design tasks: XML, Document Object Model (DOM), Perl Compatible Regular Expressions (PCRE) and others.
+ pageId 13923210
+ dailyPageViews 8
+ created 2007
+ backlinksCount 16
+ revisionCount 29
+ appeared 1997
+
+domainName parser.ru
+ awisRank
+  2022 7803956

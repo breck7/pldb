@@ -1,0 +1,133 @@
+Icon
+====
+
+Icon is a programming language created in 1977 by Ralph Griswold.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ralph%20Griswold
+
+#509 on PLDB
+47 Years Old
+
+Try now: Riju · TIO
+
+Icon is a very high-level programming language featuring goal-directed execution and many facilities for managing strings and textual patterns. It is related to SNOBOL and SL5, string processing languages. Icon is not object-oriented, but an object-oriented extension called Idol was developed in 1996 which eventually became Unicon.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Icon_(programming_language)
+
+- Icon website
+ http://www.cs.arizona.edu/icon
+- Icon Wikipedia page
+ https://en.wikipedia.org/wiki/Icon_(programming_language)
+- Icon docs
+ https://www2.cs.arizona.edu/icon/
+- Icon first developed in The University of Arizona
+- Explore Icon snippets on Rosetta Code
+- Icon on HOPL
+ https://hopl.info/showlanguage.prx?exp=510
+- Icon appears in the TIOBE Index
+- Icon Ubuntu package
+ https://packages.ubuntu.com/jammy/icont
+- Pygments supports syntax highlighting for Icon
+- Icon appears in the Quine Relay project
+- See also: (9 related languages)SNOBOL, Algol, Python, Unicon, C, Pascal, Java, Smalltalk, CLU
+- 1 languages in PLDB linking to Icon: Unicon
+
+procedure main ()
+    write(&quot;Hello, world!&quot;)
+end
+
+procedure main()
+    write(&quot;Hello World&quot;);
+end
+
+# Hello world in Icon (http://www.cs.arizona.edu/icon/)
+
+procedure main()
+    write(&quot;Hello world&quot;)
+end
+
+procedure main()
+     s := &quot;Mon Dec 8&quot;
+     s ? write(Mdate() | &quot;not a valid date&quot;)
+ end
+ # Define a matching function that returns
+ # a string that matches a day month dayofmonth
+ procedure Mdate()
+ # Define some initial values
+ static dates
+ static days
+ initial {
+        days := [&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thr&quot;,&quot;Fri&quot;,&quot;Sat&quot;,&quot;Sun&quot;]
+        dates := [&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,
+                  &quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]
+ }
+ every suspend   (retval &lt;-  tab(match(!days)) ||     # Match a day
+                             =&quot; &quot; ||                  # Followed by a blank
+                             tab(match(!dates)) ||    # Followed by the month
+                             =&quot; &quot; ||                  # Followed by a blank
+                             matchdigits(2)           # Followed by at least 2 digits
+                 ) &amp;
+                 (=&quot; &quot; | pos(0) ) &amp;                   # Either a blank or the end of the string
+                 retval                               # And finally return the string
+ end
+ # Matching function that returns a string of n digits
+ procedure matchdigits(n)
+     suspend (v := tab(many(&amp;digits)) &amp; *v &lt;= n) &amp; v
+ end
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token write
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

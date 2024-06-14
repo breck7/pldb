@@ -1,0 +1,87 @@
+Seed7
+=====
+
+Seed7 is a programming language created in 2005 by Thomas Mertes.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Thomas%20Mertes
+
+#711 on PLDB
+19 Years Old
+
+Seed7 is an extensible general-purpose programming language designed by Thomas Mertes. It is syntactically similar to Pascal and Ada. Along with many other features, it provides an extension mechanism. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Seed7
+
+- Seed7 website
+ http://seed7.sourceforge.net
+- Seed7 Wikipedia page
+ https://en.wikipedia.org/wiki/Seed7
+- Seed7 first developed in https://sourceforge.net/p/seed7/mailman/seed7-users
+- Explore Seed7 snippets on Rosetta Code
+- Seed7 appears in the TIOBE Index
+- See also: (18 related languages)Linux, Unix, Pascal, Modula-2, Ada, ALGOL 68, C, Java, Unicode, TLS, HTTP, FTP, SMTP, MySQL, MariaDB, SQLite, PostgreSQL, XML
+- Read more about Seed7 on the web: 1.
+ https://www.reddit.com/r/ProgrammingLanguages/comments/n0nii7/have_you_heard_about_seed7
+
+$ include &quot;seed7_05.s7i&quot;;
+
+const proc: main is func
+  begin
+    writeln(&quot;Hello World&quot;);
+  end func;
+
+# Hello World in Seed7
+
+$ include &quot;seed7_05.s7i&quot;;
+
+const proc: main is func
+  begin
+    writeln(&quot;Hello World!&quot;);
+  end func;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token writeln
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

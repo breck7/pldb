@@ -1,0 +1,24 @@
+import ../code/conceptPage.scroll
+
+id nrl
+name Namespace Routing Language
+appeared 2003
+tags xmlFormat
+aka nrl
+
+country Thailand
+originCommunity Thai Open Source Software Center Ltd
+reference https://relaxng.org/jclark/nrl.html
+
+example
+ <rules xmlns="http://www.thaiopensource.com/validate/nrl">
+  <namespace ns="http://schemas.xmlsoap.org/soap/envelope/">
+    <validate schema="soap-envelope.xsd"/>
+  </namespace>
+  <namespace ns="http://www.w3.org/1999/xhtml">
+    <validate schema="xhtml.rng"/>
+    <validate schema="xhtml.sch"/>
+  </namespace>
+ </rules>
+
+wikipedia https://en.wikipedia.org/wiki/Namespace_Routing_Language

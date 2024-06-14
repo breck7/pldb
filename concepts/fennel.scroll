@@ -1,0 +1,86 @@
+import ../code/conceptPage.scroll
+
+id fennel
+name Fennel
+appeared 2016
+creators Calvin Rose
+tags pl
+website https://fennel-lang.org/
+latestVersion 1.4.2
+
+writtenIn fennel markdown lua yaml make diff bourne-shell
+clocExtensions fnl
+repoStats
+ firstCommit 2016
+ commits 2125
+ committers 84
+ files 167
+ newestCommit 2024
+country Various
+originCommunity https://lists.sr.ht/%7Etechnomancy/fennel
+
+pygmentsHighlighter Fennel
+ filename lisp.py
+ fileExtensions fnl
+example
+ ;; Sample: read the state of the keyboard and move the player accordingly
+ (local dirs {:up [0 -1] :down [0 1] :left [-1 0] :right [1 0]})
+ (each [key delta (pairs dirs)]
+   (when (love.keyboard.isDown key)
+     (let [[dx dy] delta
+           [px py] player
+           x (+ px (* dx player.speed dt))
+           y (+ py (* dy player.speed dt))]
+       (: world :move player x y))))
+leachim6 Fennel
+ filepath f/Fennel.fnl
+ fileExtensions fnl
+ example
+  (print "Hello World")
+  
+
+githubRepo https://github.com/bakpakin/fennel
+ firstCommit 2016
+ stars 1699
+ forks 96
+ subscribers 44
+ created 2016
+ updated 2022
+ description Lua Lisp Language
+ issues 8
+
+lineCommentToken ;
+printToken print
+stringToken "
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ ; -?\d+\.\d+
+hasIntegers true
+ ; -?\d+
+
+domainName fennel-lang.org
+ registered 2018
+ awisRank
+  2022 1619996
+
+githubBigQuery Fennel
+ repos 12
+ users 12
+
+isbndb 0
+
+githubLanguage Fennel
+ type programming
+ fileExtensions fnl
+ interpreters fennel
+ aceMode text
+ tmScope source.fnl
+ repos 207

@@ -1,0 +1,72 @@
+XL
+==
+
+XL is an open source programming language created in 2000 by Christophe de Dinechin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Christophe%20de%20Dinechin
+
+#490 on PLDB
+24 Years Old
+
+git clone https://github.com/c3d/xl
+
+XL ("eXtensible Language") is the first and so far the only computer programming language designed to support concept programming.XL features programmer-reconfigurable syntax and semantics. Compiler plug-ins can be used to add new features to the language. A base set of plug-ins implements a relatively standard imperative language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XL_(programming_language)
+
+- XL website
+ http://xlr.sourceforge.net/
+- XL Wikipedia page
+ https://en.wikipedia.org/wiki/XL_(programming_language)
+- XL is developed on GitHub and has 202 stars
+- XL is written in CSS, C++, Make, YAML, Bash, Markdown, Lisp, awk, HTML, AsciiDoc, Python, Ini, JavaScript
+- See also: (10 related languages)Ada, BASIC, C, Fortran, Java, Lisp, Prolog, Visual Basic, Smalltalk, Forth
+- Read more about XL on the web: 1.
+ https://fosdem.org/2020/schedule/event/xllang/
+- 1 languages in PLDB linking to XL: tao3d
+
+0! is 1
+N! is N * (N-1)!
+
+for I in 1..5 loop
+    print &quot;The factorial of &quot;, I, &quot; is &quot;, I!
+
+// XL programming language: http://xlr.sourceforge.net
+writeln &quot;Hello World&quot;
+
+if true then TrueBody else FalseBody -&gt; TrueBody
+  if false then TrueBody else FalseBody -&gt; FalseBody
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token writeln
+ Example
+row
+ Feature Templates
+ FeatureLink ../features/hasTemplates.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

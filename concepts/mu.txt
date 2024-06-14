@@ -1,0 +1,63 @@
+Mu
+==
+
+Mu is an open source programming language created in 2014 by Kartik K. Agaram.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kartik%20K.%20Agaram
+
+#380 on PLDB
+10 Years Old
+
+git clone https://github.com/akkartik/mu
+
+Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
+
+- Mu website
+ https://github.com/akkartik/mu
+- Mu is developed on GitHub and has 1,227 stars
+- Mu first developed in https://github.com/akkartik/mu/issues
+- Mu is written in HTML, C++, Bourne shell, Markdown, Vim script, Racket, Bash, JSON, C, XML, CSS, Z shell, JavaScript, Python, Less, Lisp
+- Read more about Mu on the web: 1.
+ http://akkartik.name/akkartik-convivial-20200607.pdf
+
+# dump stack from bottom to top
+fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {
+  var self/esi: (addr grapheme-stack) &lt;- copy _self
+  var data-ah/edi: (addr handle array code-point-utf8) &lt;- get self, data
+  var _data/eax: (addr array code-point-utf8) &lt;- lookup *data-ah
+  var data/edi: (addr array code-point-utf8) &lt;- copy _data
+  var top-addr/ecx: (addr int) &lt;- get self, top
+  var i/eax: int &lt;- copy 0
+  {
+    compare i, *top-addr
+    break-if-&gt;=
+    var g/edx: (addr code-point-utf8) &lt;- index data, i
+    write-code-point-utf8 out, *g
+    i &lt;- increment
+    loop
+  }
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

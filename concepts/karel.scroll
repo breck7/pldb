@@ -1,0 +1,74 @@
+import ../code/conceptPage.scroll
+
+id karel
+name Karel
+appeared 1981
+creators Richard E. Pattis
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity University of California, Irvine
+
+leachim6 Karel
+ filepath k/Karel.kl
+ fileExtensions kl
+ example
+  PROGRAM hello_world
+  BEGIN
+    WRITE("Hello World", CR)
+  END hello_world
+  
+
+printToken WRITE
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Karel_(programming_language)
+ example
+  BEGINNING-OF-PROGRAM
+   
+   DEFINE turnRight AS
+   BEGIN
+     turnLeft;
+     turnLeft;
+     turnLeft;
+   END
+   
+   BEGINNING-OF-EXECUTION
+     ITERATE 3 TIMES
+     BEGIN
+       turnRight;
+       move
+     END
+     turnoff
+   END-OF-EXECUTION
+   
+  END-OF-PROGRAM
+ related pascal java javascript robomind
+ summary Karel is an educational programming language for beginners, created by Richard E. Pattis in his book Karel The Robot: A Gentle Introduction to the Art of Programming. Pattis used the language in his courses at Stanford University, California. The language is named after Karel Čapek, a Czech writer who introduced the word robot.
+ pageId 1433925
+ dailyPageViews 91
+ created 2005
+ backlinksCount 27
+ revisionCount 205
+ appeared 1981
+
+hopl https://hopl.info/showlanguage.prx?exp=958
+
+isbndb 10
+ year|publisher|title|authors|isbn13
+ 1995|Wiley|Karel The Robot: A Gentle Introduction to the Art of Programming|Pattis, Richard E.|9780471597254
+ 2013|Dreamsongs Press|Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java|Bergin, Joseph and Stehlik, Mark and Roberts, Jim and Pattis, Richard|9780970579515
+ 2013|Software Tools|Beyond Karel J Robot: A Gentle Introduction to the Art of Object-Oriented Programming in Java, Volume 2|Bergin, Joseph|9780985154301
+ 1994|Wiley|Karel the Robot: A Gentle Introduction to the Art of Programming|Pattis, Richard E.|9780471089285
+ 2011||Karel (programming Language)|Jordan Naoum|9786136725284
+ 1994|John Wiley And Sons (wie)|Karel The Robot: Gentle Introduction To The Art Of Programming|Richard E. Pattis|9780471117339
+ |John Wiley & Sons Inc|Concepts in Java 2, 2e with Karel C++ Set||9780471398080
+ 1995|Wiley|Mac Software To Accompany Karel The Robot: A Gentle Introduction To The Art Of Programming 2e|Richard E. Pattis|9780471107057
+ 1995|Wiley|Ibm Software To Accompany Karel The Robot: A Gentle Introduction To The Art Of Programming, Second Edition|Richard E. Pattis|9780471107026
+ 1994|John Wiley & Sons Inc|Karel The Robot - A Gentle Introduction To The Art Of Object Oriented Programming 2e Tm Pattis, Richard E.|Richard E. Pattis|9780471308362

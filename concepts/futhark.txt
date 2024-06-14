@@ -1,0 +1,69 @@
+Futhark
+=======
+
+Futhark is an open source programming language created in 2013 by Troels Henriksen and Cosmin Oancea and Martin Elsman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Troels%20Henriksen
+ https://pldb.io/concepts/../lists/creators.html#q=Cosmin%20Oancea
+ https://pldb.io/concepts/../lists/creators.html#q=Martin%20Elsman
+
+#236 on PLDB
+11 Years Old
+92 Repos
+
+git clone https://github.com/diku-dk/futhark
+
+:boom::computer::boom: A data-parallel functional programming language
+
+- Futhark website
+ https://futhark-lang.org
+- Futhark is developed on GitHub and has 1,814 stars
+- There are at least 92 Futhark repos on GitHub
+- Futhark first developed in University of Copenhagen
+- Futhark is written in Haskell, reStructuredText, Markdown, Bourne shell, Python, C, YAML, Nix, Make, JavaScript, JSON, OpenCL, CSS, XML, TOML, Yacc, Logos, CUDA, SVG, Tex
+- The  Google BigQuery Public Dataset GitHub snapshot shows 0 users using Futhark in 107 repos on GitHub
+- Explore Futhark snippets on Rosetta Code
+- Pygments supports syntax highlighting for Futhark
+- Official Blog page for Futhark
+ https://futhark-lang.org/blog.html
+- futhark-lang.org was registered in 2016
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

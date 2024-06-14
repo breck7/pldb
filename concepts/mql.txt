@@ -1,0 +1,103 @@
+MQL5
+====
+
+MQL5 is a programming language created in 2005.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#664 on PLDB
+19 Years Old
+1k Repos
+
+MQL4 (MetaQuotes Language 4) and MQL5 (MetaQuotes Language 5) are integrated programming languages designed for developing trading robots, technical market indicators, scripts and function libraries within the MetaTrader software. The primary objective of MQL4 and MQL5 is automation of trading and facilitation of operational analysis. MQL4 and MQL5 comprises an extensive codebase source code library used for developing trading robots.. Read more on Wikipedia...
+ https://de.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5
+
+- MQL5 Wikipedia page
+ https://de.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5
+- There are at least 1,273 MQL5 repos on GitHub
+- MQL5 first developed in MetaQuotes Software
+- The  Google BigQuery Public Dataset GitHub snapshot shows 34 users using MQL5 in 38 repos on GitHub
+- Pygments supports syntax highlighting for MQL5
+- GitHub supports syntax highlighting for MQL5
+- Read more about MQL5 on the web: 1.
+ https://www.wikidata.org/wiki/Q11765028
+
+//+------------------------------------------------------------------+
+//|                                                script-sample.mq5 |
+//|                                   Copyright 2016, Andrey Osorgin |
+//+------------------------------------------------------------------+
+//|                     The MIT License (MIT)                        |
+//|                                                                  |
+//| Permission is hereby granted, free of charge, to any person      |
+//| obtaining a copy of this software and associated documentation   |
+//| files (the &quot;Software&quot;), to deal in the Software without          |
+//| restriction, including without limitation the rights to use,     |
+//| copy, modify, merge, publish, distribute, sublicense, and/or sell|
+//| copies of the Software, and to permit persons to whom the        |
+//| Software is furnished to do so, subject to the following         |
+//| conditions:                                                      |
+//|                                                                  |
+//| The above copyright notice and this permission notice shall be   |
+//| included in all copies or substantial portions of the Software.  |
+//|                                                                  |
+//| THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,  |
+//| EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES  |
+//| OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND         |
+//| NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT      |
+//| HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,     |
+//| WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING     |
+//| FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR    |
+//| OTHER DEALINGS IN THE SOFTWARE.                                  |
+//|                                                                  |
+//| A copy of the MIT License (MIT) is available at                  |
+//| https://opensource.org/licenses/MIT                              |
+//+------------------------------------------------------------------+
+#property version   &quot;1.00&quot;
+#property script_show_inputs
+
+#include &lt;Trade\Trade.mqh&gt;
+
+input int StopLoss=100; // Stop Loss
+input int TakeProfit=100; // Take Profit
+//+------------------------------------------------------------------+
+//| Script program start function                                    |
+//+------------------------------------------------------------------+
+void OnStart()
+  {
+   CTrade trade;
+//---
+   long stoplevel=SymbolInfoInteger(Symbol(),SYMBOL_TRADE_STOPS_LEVEL);
+   Print(&quot;Minimum stop level is: &quot;,stoplevel);
+   double ask=SymbolInfoDouble(Symbol(),SYMBOL_ASK);
+   double bid=SymbolInfoDouble(Symbol(),SYMBOL_BID);
+   double sl = NormalizeDouble(bid - StopLoss*Point(),Digits());
+   double tp = NormalizeDouble(ask + TakeProfit*Point(),Digits());
+//---
+   bool result=trade.Buy(0.01,Symbol(),ask,sl,tp,&quot;test&quot;);
+//---
+   Print(&quot;Success? &quot;,result);
+  }
+//+------------------------------------------------------------------+
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

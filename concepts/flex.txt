@@ -1,0 +1,94 @@
+FLEX
+====
+
+FLEX is an open source grammar language created in 1987 by Vern Paxson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Vern%20Paxson
+
+#227 on PLDB
+37 Years Old
+
+git clone https://github.com/westes/flex
+
+Try now: Riju
+
+Flex (fast lexical analyzer generator) is a free and open-source software alternative to lex. It is a computer program that generates lexical analyzers (also known as "scanners" or "lexers"). It is frequently used as the lex implementation together with Berkeley Yacc parser generator on BSD-derived operating systems (as both lex and yacc are part of POSIX), or together with GNU bison (a version of yacc) in *BSD ports and in Linux distributions. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
+
+- FLEX website
+ https://github.com/westes/flex
+- FLEX Wikipedia page
+ https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
+- FLEX is developed on GitHub and has 2,618 stars
+- PLDB has 2 documentation sites for FLEX: www.di.uminho.pt, www.geeksforgeeks.org
+- FLEX first developed in University of California, Berkeley
+- FLEX is written in Lex, C, Bourne shell, Make, Yacc, LLVM IR, M4, Markdown, YAML, Perl, awk, C++, IDL
+- FLEX on HOPL
+ https://hopl.info/showlanguage.prx?exp=2033
+- See also: (5 related languages)Bison, Yacc, C, RATFOR, PL/0
+- Read more about FLEX on the web: 1.
+ https://github.com/babyraging/yash
+
+%{
+#include &lt;stdio.h&gt;
+%}
+
+%%
+%%
+
+int yywrap() {
+  printf(&quot;Hello, world!\n&quot;);
+  return 1;
+}
+
+int main() {
+  yylex();
+  return 0;
+}
+
+%{
+#include &quot;y.tab.h&quot;
+%}
+
+digit         [0-9]
+letter        [a-zA-Z]
+
+%%
+&quot;+&quot;                  { return PLUS;       }
+&quot;-&quot;                  { return MINUS;      }
+&quot;*&quot;                  { return TIMES;      }
+&quot;/&quot;                  { return SLASH;      }
+&quot;(&quot;                  { return LPAREN;     }
+&quot;)&quot;                  { return RPAREN;     }
+&quot;;&quot;                  { return SEMICOLON;  }
+&quot;,&quot;                  { return COMMA;      }
+&quot;.&quot;                  { return PERIOD;     }
+&quot;:=&quot;                 { return BECOMES;    }
+&quot;=&quot;                  { return EQL;        }
+&quot;&lt;&gt;&quot;                 { return NEQ;        }
+&quot;&lt;&quot;                  { return LSS;        }
+&quot;&gt;&quot;                  { return GTR;        }
+&quot;&lt;=&quot;                 { return LEQ;        }
+&quot;&gt;=&quot;                 { return GEQ;        }
+&quot;begin&quot;              { return BEGINSYM;   }
+&quot;call&quot;               { return CALLSYM;    }
+&quot;const&quot;              { return CONSTSYM;   }
+&quot;do&quot;                 { return DOSYM;      }
+&quot;end&quot;                { return ENDSYM;     }
+&quot;if&quot;                 { return IFSYM;      }
+&quot;odd&quot;                { return ODDSYM;     }
+&quot;procedure&quot;          { return PROCSYM;    }
+&quot;then&quot;               { return THENSYM;    }
+&quot;var&quot;                { return VARSYM;     }
+&quot;while&quot;              { return WHILESYM;   }
+{letter}({letter}|{digit})* {
+                       yylval.id = strdup(yytext);
+                       return IDENT;      }
+{digit}+             { yylval.num = atoi(yytext);
+                       return NUMBER;     }
+[ \t\n\r]            /* skip whitespace */
+.                    { printf(&quot;Unknown character [%c]\n&quot;,yytext[0]);
+                       return UNKNOWN;    }
+%%
+
+int yywrap(void){return 1;}

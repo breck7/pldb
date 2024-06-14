@@ -1,0 +1,94 @@
+import ../code/conceptPage.scroll
+
+id postcss
+name PostCSS
+appeared 2013
+creators Andrey Sitnik
+tags textMarkup
+website https://postcss.org/
+latestVersion 8.4.38
+
+isOpenSource true
+writtenIn typescript javascript markdown yaml json
+fileType text
+documentation https://postcss.org/docs/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 4065
+ committers 443
+ files 105
+ newestCommit 2024
+country Various
+originCommunity https://github.com/postcss
+
+twitter https://twitter.com/postcss
+leachim6 PostCSS
+ filepath p/PostCSS.pcss
+ fileExtensions pcss
+ example
+  body::before {
+      content: "Hello World";
+  }
+
+githubRepo https://github.com/postcss/postcss
+ firstCommit 2013
+ stars 26406
+ forks 1505
+ subscribers 525
+ created 2013
+ updated 2022
+ description Transforming styles with JS plugins
+ issues 12
+
+multiLineCommentTokens /* */
+stringToken "
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName postcss.org
+ registered 2015
+ awisRank
+  2022 257386
+
+linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 10
+ commitCount 231
+ sampleCount 1
+ example
+  @define-mixin size $size {
+    width: $size;
+  }
+  
+  $big: 100px;
+  
+  /* Main block */
+  .block {
+    &_logo {
+      background: inline("./logo.png");
+      @mixin size $big;
+    }
+  }
+
+isbndb 0
+
+githubLanguage PostCSS
+ fileExtensions pcss postcss
+ trendingProjectsCount 0
+ type markup
+ group CSS
+ aceMode text
+ tmScope source.postcss
+ repos 0
+
+semanticScholar 0

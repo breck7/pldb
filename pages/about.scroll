@@ -1,0 +1,83 @@
+groups All
+replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
+replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
+replaceJs DAYS_SINCE_LAUNCH Math.floor(dayjs().diff(dayjs("2022-08-28"), "day", true))
+title About
+
+import header.scroll
+printTitle
+
+thinColumns 4
+
+Welcome to PLDB: a Programming Language Database!
+
+PLDB is a comprehensive database of programming languages and their features. The focus is on *programming languages*, but the database also includes other languages and entities one degree away--from popular high level plain text formats to binary specifications and beyond.
+
+PLDB is for two groups of people:
+1. *Programming language creators.* PLDB is organized big data to help you create great new languages, and improve existing ones. When making design decisions, quickly look up what features other languages have tried. Benefit from the experiences of thousands that have built languages before you. If you are researching something and can't find what you need here, you can add it and send a pull request, or share your request on Twitter.
+ https://x.com/breckyunits share your request on Twitter
+2. *Programming language users.* PLDB provides a data-driven view of the programming language universe, to demystify the world of programming languages for you, and provide sound strategic and tactical advice to help you in your projects and your career. If you have a question not answered by the data here, you can add it and send a pull request, or share your request on Twitter.
+ https://x.com/breckyunits share your request on Twitter
+
+## Join!
+Want to get involved? Read more here.
+ link join.html here
+
+## Open source
+All data and source code used to generate this site are on GitHub.
+ https://github.com/breck7/pldb GitHub
+
+## Web server
+PLDB is an entirely static site. PLDB.io is served via GitHub Pages. You can clone the source to PLDB and build it locally and use PLDB entirely offline on your own machine.
+
+## Acknowledgements
+This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
+ link acknowledgements.html acknowledgements
+
+## Cloc Stats
+Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
+ link BASE_URL/concepts/cloc.html cloc
+ https://github.com/breck7/pldb pldb repo
+
+bash cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
+
+# Mirrors
+The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a GitHub Pages server. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+ link ../concepts/url.html URL
+ link ../concepts/dns.html DNS
+ link ../concepts/ipv4.html IPv4
+ link ../concepts/html.html HTML
+ link ../concepts/css.html CSS
+ link ../concepts/javascript.html Javascript
+ link ../concepts/png.html PNG
+ link ../concepts/svg.html SVG
+ link ../concepts/json.html JSON
+
+In case there's a problem with GitHub pages, you should be able to access the exact same site locally by downloading the source from GitHub.
+
+If GitHub Pages AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+
+bashCode
+ git clone https://github.com/breck7/pldb.git
+ # Then to keep it updated:
+ cd pldb
+ git pull
+
+## History
+- Breck Yunits started PLDB as an anonymous Jekyll blog named "CodeLani" on November 18, 2017.
+ link ../lists/explorer.html#q=Breck%20Yunits Breck Yunits
+ link ../concepts/jekyll.html Jekyll
+ link ../posts/hello-world.html November 18, 2017
+- Breck renamed CodeLani to PLDB and migrated it to Scroll and TrueBase on June 27, 2022.
+ link ../concepts/scroll.html Scroll
+ https://github.com/breck7/pldb/commit/273f34a8620111e326a49332761e2c01823b58ef CodeLani to PLDB
+- The new PLDB launched on HackerNews DAYS_SINCE_LAUNCH days ago, on August 28, 2022.
+ https://news.ycombinator.com/item?id=32619671 launched
+- Design patterns learned from TrueBase were merged into Scroll and PLDB became a fully functional static site on May 10, 2024
+
+The site owes its existence to a kind (_but firm_) Internet commenter who told Breck Yunits to "learn to research properly" if he wanted to make his languages any good.
+ https://breckyunits.com Breck Yunits
+
+import ../citation.scroll
+
+import footer.scroll

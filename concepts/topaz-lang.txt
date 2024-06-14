@@ -1,0 +1,38 @@
+Topaz
+=====
+
+Topaz is a programming language created in 2021 by m-schm.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=m-schm
+
+#2219 on PLDB
+3 Years Old
+
+git clone https://github.com/m-schm/topaz
+
+Dependently typed language that compiles to JavaScript
+
+- Topaz website
+ https://github.com/m-schm/topaz
+- Topaz is developed on GitHub and has 1 stars
+- Topaz compiles to JavaScript
+- Topaz is written in Haskell, YAML, Markdown
+
+;; This is a comment
+;; `Ven n a` represents lists that are `n` long, that contain `a`s
+;; A Vec is either:
+type Vec (n: Uint) (a: Type) =
+  ;; empty, with length 0...
+  Nil: {a} -&gt; Vec 0 a
+  ;; or 1 item longer than a Vec of length n.
+  `::`: {n a} -&gt; a -&gt; Vec n a -&gt; Vec (n+1) a
+;; `zip` should take two lists and return a list of pairs.
+;; The two lists are required to be the same length because `n` is the same for
+;; both parameters.
+let zip {n a b} (left: Vec n a) (right: Vec n b): Vec n (a, b) =
+  match left, right in
+    ;; Either both lists are empty...
+    Nil,     Nil     =&gt; Nil
+    ;; or they both contain at least one item.
+    x :: xs, y :: ys =&gt; (x, y) :: zip xs ys
+    ;; No other cases are needed, because the lists are the same length!

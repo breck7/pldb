@@ -1,0 +1,58 @@
+import ../code/conceptPage.scroll
+
+id beanshell
+name BeanShell
+appeared 1999
+tags pl
+website http://www.beanshell.org/
+
+isOpenSource true
+tryItOnline beanshell
+fileType text
+centralPackageRepositoryCount 0
+country Various
+originCommunity Java Community Process
+
+rijuRepl https://riju.codes/beanshell
+ example
+  print("Hello, world!");
+  
+leachim6 Beanshell
+ filepath b/Beanshell.bsh
+ fileExtensions bsh
+ example
+  print ("Hello World");
+  
+
+printToken print
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/BeanShell
+ related java jvm javascript perl
+ summary BeanShell is a Java-like scripting language, invented by Patrick Niemeyer. It runs in the Java Runtime Environment (JRE) and uses a variation of the Java syntax, in addition to scripting commands and syntax.
+ pageId 1565435
+ created 2005
+ backlinksCount 120
+ revisionCount 118
+ dailyPageViews 44
+ appeared 1999
+
+domainName beanshell.org
+ registered 1999
+ awisRank
+  2022 4177493
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2011|Apress|Pro Android Python with SL4A: Writing Android Native Apps Using Python, Lua, and Beanshell|Ferrill, Paul|9781430235699
+ 2011|Apress|Pro Android Python with SL4A: Writing Android Native Apps Using Python, Lua, and Beanshell|Ferrill, Paul|9781430235705
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0

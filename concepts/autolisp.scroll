@@ -1,0 +1,91 @@
+import ../code/conceptPage.scroll
+
+id autolisp
+name AutoLISP
+appeared 1986
+creators David Betz
+tags pl
+
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:AutoLISP
+centralPackageRepositoryCount 0
+country United States
+originCommunity Autodesk && Basis Software
+
+leachim6 AutoLISP
+ filepath a/AutoLISP.lsp
+ fileExtensions lsp
+ example
+  (alert "Hello World")
+  
+
+stringToken "
+
+isLisp true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/AutoLISP
+ example
+  1 (defun c:pointlabel ( / pnt )
+   2     (if (setq pnt (getpoint "\nSpecify point: "))
+   3         (progn
+   4             (entmake
+   5                 (list
+   6                    '(0 . "POINT")
+   7                     (cons 10 (trans pnt 1 0))
+   8                 )
+   9             )
+  10             (entmake
+  11                 (list
+  12                    '(0 . "TEXT")
+  13                     (cons 10 (trans (cons (+ (car pnt) 0.6) (cdr pnt)) 1 0))
+  14                     (cons 40 (getvar 'textsize))
+  15                     (cons  1 (strcat "X:" (rtos (car pnt)) " Y:" (rtos (cadr pnt))))
+  16                 )
+  17             )
+  18         )
+  19     )
+  20     (princ)
+  21 )
+ related autocad-app vba lisp interlisp lisp-machine-lisp scheme common-lisp t emacs-lisp islisp openlisp picolisp eulisp newlisp racket clojure arc lfe
+ summary AutoLISP is a dialect of the LISP programming language built specifically for use with the full version of AutoCAD and its derivatives, which include AutoCAD Map 3D, AutoCAD Architecture and AutoCAD Mechanical. Neither the application programming interface nor the interpreter to execute AutoLISP code are included in the AutoCAD LT product line.
+ pageId 51458
+ dailyPageViews 82
+ created 2001
+ backlinksCount 74
+ revisionCount 232
+ appeared 1986
+
+hopl https://hopl.info/showlanguage.prx?exp=1842
+tiobe AutoLISP
+
+isbndb 14
+ year|publisher|title|authors|isbn13
+ 1996|Goodheart-Willcox Pub|Autolisp Programming: Principles and Techniques|Rawls, Rod R. and Hagen, Mark A.|9781566374170
+ 2008|Princeton Architectural Press|The Codewriting Workbook: Creating Computational Architecture in AutoLISP|Krawczyk, Robert J.|9781568987927
+ 2000|Thomson Delmar Learning|AutoLISP to Visual LISP: Design Solutions: Design Solutions for AutoCAD 2000 (Autodesk's Programmer Series)|Standiford, Kevin|9780766815179
+ 1998|Longman Pub Group|A Practical Guide to AutoCAD AutoLISP|Bousfield, Trevor|9780582326736
+ |Goodheart-Willcox Pub|AutoLISP Programming|Rod Rawls|9780870069420
+ 1994|Goodheart-willcox Pub|Autolisp Programming/solution Manual|Rod Rawls and Mark Hagen|9780870069437
+ 1999|Wiley|Using Autolisp With Autocad|Robert Mcfarlane and Camillus P. Mcelhinney|9780470328996
+ 1996|Pearson|Introduction To Autolisp|Peter M. Moanfeldt|9780132066242
+ 1998|Goodheart-willcox Pub|Autolisp Programming: Principles & Techniques|Rod R. Rawls and Mark A. Hagen|9781566374187
+ 2014-08-11|Wiley Professional Development (P&T)|AutoCAD Platform Customization: AutoLISP|Lee Ambrosius|9781118900550
+ 1995|Goodheart-willcox Pub|Autolisp Programming: Principles And Techniques|Rod R. Rawls and Mark A. Hagen|9781566371964
+ 1989|Ariel Communications|Autolisp Concepts: Programming For Productivity|William Kramer|9780926401006
+ 1999|Coriolis Group|Autolisp R15 In Depth: Expand Your Programming Possibilities||9781576104071
+ |Browning Computer Documentation|Autolisp Programming: A Coursework Book For The City & Guilds 4351-05 Scheme||9780952024101
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2013|Methodical complex of training in programming on AutoLISP language|10.12737/471|2|0|E. Alshakova|a2debd870483830578736892d1aeae39270920d1
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ AutoLISP Programming|1993|Rod R. Rawls|675018|2.50|2|0
+ AutoLISP Programming: Principles and Techniques|1997|Rod R. Rawls|15332754|0.0|0|0
+ AutoLISP: Programming by Example|1992|Gene Straka|3212808|0.0|0|0
+ AutoLISP: Programming by Example|1992|Gene Straka|15209678|0.0|0|0
+ AutoLISP Concepts: Programming for Productivity|1989|William Kramer|6371294|0.0|0|0
+ AutoLISP in Plain English: A Practical Guide for Non-Programmers|1987|George O. Head|675019|4.33|3|0

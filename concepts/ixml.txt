@@ -1,0 +1,35 @@
+Invisible XML
+=============
+
+Invisible XML is a grammar language created in 2020 by Steven Pemberton.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Steven%20Pemberton
+
+#1420 on PLDB
+4 Years Old
+
+git clone https://github.com/invisiblexml/ixml/
+
+Invisible XML
+
+- Invisible XML website
+ https://invisiblexml.org/
+- Invisible XML is developed on GitHub and has 15 stars
+- Invisible XML first developed in https://github.com/invisibleXML
+- Invisible XML is written in XML, Markdown, XSLT, XQuery, HTML, CSS, JavaScript, YAML, Bourne shell, Gradle, SVG, Make, Lisp
+- invisiblexml.org was registered in 2020
+- Read more about Invisible XML on the web: 1.
+ https://news.ycombinator.com/item?id=32120230
+
+url: scheme, &quot;:&quot;, authority, path.
+
+scheme: letter+.
+
+authority: &quot;//&quot;, host.
+host: sub++&quot;.&quot;.
+sub: letter+.
+
+path: (&quot;/&quot;, seg)+.
+seg: fletter*.
+-letter: [&quot;a&quot;-&quot;z&quot;]; [&quot;A&quot;-&quot;Z&quot;]; [&quot;0&quot;-&quot;9&quot;].
+-fletter: letter; &quot;.&quot;.

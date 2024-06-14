@@ -1,0 +1,27 @@
+HCard
+=====
+
+HCard is a xml format created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3040 on PLDB
+15 Years Old
+
+- HCard Wikipedia page
+ https://en.wikipedia.org/wiki/HCard
+- HCard first developed in CommerceNet
+
+&lt;div class=&quot;vcard&quot;&gt;
+    &lt;div class=&quot;fn org&quot;&gt;Wikimedia Foundation Inc.&lt;/div&gt;
+    &lt;div class=&quot;adr&quot;&gt;
+        &lt;div class=&quot;street-address&quot;&gt;149 New Montgomery Street, 3rd Floor&lt;/div&gt;
+        &lt;div&gt; &lt;span class=&quot;locality&quot;&gt;San Francisco&lt;/span&gt;, &lt;abbr class=&quot;region&quot; title=&quot;California&quot;&gt;CA&lt;/abbr&gt; &lt;span class=&quot;postal-code&quot;&gt;94105&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;country-name&quot;&gt;USA&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;Phone: &lt;span class=&quot;tel&quot;&gt;+1-415-839-6885&lt;/span&gt;&lt;/div&gt;
+    &lt;div&gt;Email: &lt;span class=&quot;email&quot;&gt;info@wikimedia.org&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;tel&quot;&gt;
+        &lt;span class=&quot;type&quot;&gt;Fax&lt;/span&gt;:
+        &lt;span class=&quot;value&quot;&gt;+1-415-882-0495&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

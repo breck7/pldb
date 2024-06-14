@@ -1,0 +1,348 @@
+DDML
+====
+
+DDML, aka Document Definition Markup Language, is a xml format created in 1999.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2357 on PLDB
+25 Years Old
+
+Document Definition Markup Language (DDML) is an XML schema language proposed in 1999 by various contributors from the xml-dev electronic mailing list. It was published only as a W3C Note, not a Recommendation, and never found favor with developers. DDML began as XSchema, a reformulation of XML DTDs as full XML documents, so that elements and attributes, rather than declarations, could be used to describe a schema. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Document_Definition_Markup_Language
+
+- DDML Wikipedia page
+ https://en.wikipedia.org/wiki/Document_Definition_Markup_Language
+- DDML first developed in http://www.xml.org/xml-dev/
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+
+&lt;!DOCTYPE &quot;DocumentDef&quot;&gt;
+
+&lt;DocumentDef FileExtension=&quot;ddm&quot; prefix=&quot;&quot;&gt;
+
+  &lt;ElementDecl Name=&quot;DocumentDef&quot; Root=&quot;Recommended&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Choice Frequency=&quot;ZeroOrMore&quot;&gt;
+          &lt;Ref Element=&quot;ElementDecl&quot;/&gt;
+          &lt;Ref Element=&quot;Model&quot;/&gt;
+          &lt;Ref Element=&quot;AttDef&quot;/&gt;
+          &lt;Ref Element=&quot;AttGroup&quot;/&gt;
+          &lt;Ref Element=&quot;Notation&quot;/&gt;
+          &lt;Ref Element=&quot;UnparsedEntity&quot;/&gt;
+          &lt;Ref Element=&quot;Enumeration&quot;/&gt;
+          &lt;Ref Element=&quot;DocumentDef&quot;/&gt;
+        &lt;/Choice&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;xmlns&quot; Required=&quot;Yes&quot; AttValue=&quot;http://www.purl.org/NET/ddml/v1&quot;/&gt;
+      &lt;AttDef Name=&quot;DDML&quot; prefix=&quot;xmlns&quot; Required=&quot;Yes&quot; AttValue=&quot;http://www.purl.org/NET/ddml/v1&quot;/&gt;
+      &lt;AttDef Name=&quot;ns&quot;/&gt;
+      &lt;AttDef Name=&quot;ElementNS&quot;/&gt;
+      &lt;AttDef Name=&quot;prefix&quot; Type=&quot;Nmtoken&quot;/&gt;
+      &lt;AttDef Name=&quot;Version&quot; Required=&quot;Yes&quot; AttValue=&quot;1.0&quot;/&gt;
+      &lt;AttDef Name=&quot;MimeType&quot; AttValue=&quot;application/xml&quot;/&gt;
+      &lt;AttDef Name=&quot;FileExtension&quot; AttValue=&quot;xml&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;ElementDecl&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;Model&quot;/&gt;
+        &lt;Ref Element=&quot;AttGroup&quot; Frequency=&quot;Optional&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Name&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;ns&quot;/&gt;
+      &lt;AttDef Name=&quot;prefix&quot; Type=&quot;Nmtoken&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+      &lt;AttDef Name=&quot;Root&quot; Type=&quot;Enumerated&quot; AttValue=&quot;Possible&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;Recommended&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Possible&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Unlikely&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Model&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Choice&gt;
+          &lt;Ref Element=&quot;Ref&quot;/&gt;
+          &lt;Ref Element=&quot;Choice&quot;/&gt;
+          &lt;Ref Element=&quot;Seq&quot;/&gt;
+          &lt;Ref Element=&quot;Empty&quot;/&gt;
+          &lt;Ref Element=&quot;Any&quot;/&gt;
+          &lt;Ref Element=&quot;PCData&quot;/&gt;
+          &lt;Ref Element=&quot;Mixed&quot;/&gt;
+        &lt;/Choice&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Empty&quot;&gt;
+    &lt;Model&gt;
+      &lt;Empty/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Any&quot;&gt;
+    &lt;Model&gt;
+      &lt;Empty/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;PCData&quot;&gt;
+    &lt;Model&gt;
+      &lt;Empty/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Ref&quot;&gt;
+    &lt;Model&gt;
+      &lt;Empty/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Element&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;ElementNS&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+      &lt;AttDef Name=&quot;Frequency&quot; Type=&quot;Enumerated&quot; AttValue=&quot;Required&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;Required&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Optional&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;ZeroOrMore&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;OneOrMore&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Mixed&quot;&gt;
+    &lt;Model&gt;
+      &lt;Ref Element=&quot;Ref&quot; Frequency=&quot;OneOrMore&quot;/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;ElementNS&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+      &lt;AttDef Name=&quot;Frequency&quot; Type=&quot;Enumerated&quot; Required=&quot;Yes&quot; AttValue=&quot;ZeroOrMore&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;ZeroOrMore&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Choice&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Choice&gt;
+          &lt;Ref Element=&quot;Seq&quot;/&gt;
+          &lt;Ref Element=&quot;Ref&quot;/&gt;
+          &lt;Ref Element=&quot;Model&quot;/&gt;
+        &lt;/Choice&gt;
+        &lt;Choice Frequency=&quot;OneOrMore&quot;&gt;
+          &lt;Ref Element=&quot;Seq&quot;/&gt;
+          &lt;Ref Element=&quot;Ref&quot;/&gt;
+          &lt;Ref Element=&quot;Model&quot;/&gt;
+        &lt;/Choice&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;ElementNS&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+      &lt;AttDef Name=&quot;Frequency&quot; Type=&quot;Enumerated&quot; AttValue=&quot;Required&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;Required&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Optional&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;ZeroOrMore&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;OneOrMore&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Seq&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Choice&gt;
+          &lt;Ref Element=&quot;Choice&quot;/&gt;
+          &lt;Ref Element=&quot;Ref&quot;/&gt;
+          &lt;Ref Element=&quot;Model&quot;/&gt;
+        &lt;/Choice&gt;
+        &lt;Choice Frequency=&quot;OneOrMore&quot;&gt;
+          &lt;Ref Element=&quot;Choice&quot;/&gt;
+          &lt;Ref Element=&quot;Ref&quot;/&gt;
+          &lt;Ref Element=&quot;Model&quot;/&gt;
+        &lt;/Choice&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;ElementNS&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+      &lt;AttDef Name=&quot;Frequency&quot; Type=&quot;Enumerated&quot; AttValue=&quot;Required&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;Required&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Optional&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;ZeroOrMore&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;OneOrMore&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;AttGroup&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Choice Frequency=&quot;ZeroOrMore&quot;&gt;
+           &lt;Ref Element=&quot;AttDef&quot;/&gt;
+           &lt;Ref Element=&quot;AttGroup&quot;/&gt;
+        &lt;/Choice&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;ns&quot;/&gt;
+      &lt;AttDef Name=&quot;prefix&quot; Type=&quot;Nmtoken&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;AttDef&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;Enumeration&quot; Frequency=&quot;Optional&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Name&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;ns&quot;/&gt;
+      &lt;AttDef Name=&quot;prefix&quot; Type=&quot;Nmtoken&quot;/&gt;
+      &lt;AttDef Name=&quot;Type&quot; Type=&quot;Enumerated&quot; AttValue=&quot;CData&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;CData&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;ID&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;IDRef&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;IDRefs&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Entity&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Entities&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Nmtoken&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Nmtokens&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Notation&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;Enumerated&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+      &lt;AttDef Name=&quot;Required&quot; Type=&quot;Enumeration&quot; AttValue=&quot;No&quot;&gt;
+        &lt;Enumeration&gt;
+          &lt;EnumerationValue Value=&quot;Yes&quot;/&gt;
+          &lt;EnumerationValue Value=&quot;No&quot;/&gt;
+        &lt;/Enumeration&gt;
+      &lt;/AttDef&gt;
+      &lt;AttDef Name=&quot;AttValue&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Enumeration&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequen cy=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;EnumerationValue&quot; Frequency=&quot;OneOrMore&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;EnumerationValue&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Value&quot; Required=&quot;Yes&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Notation&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Name&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;PubidLiteral&quot;/&gt;
+      &lt;AttDef Name=&quot;SystemLiteral&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;UnparsedEntity&quot;&gt;
+    &lt;Model&gt;
+      &lt;Seq&gt;
+        &lt;Ref Element=&quot;Doc&quot; Frequency=&quot;Optional&quot;/&gt;
+        &lt;Ref Element=&quot;More&quot; Frequency=&quot;Optional&quot;/&gt;
+      &lt;/Seq&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;Name&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;SystemLiteral&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;PubidLiteral&quot;/&gt;
+      &lt;AttDef Name=&quot;Notation&quot; Type=&quot;Nmtoken&quot; Required=&quot;Yes&quot;/&gt;
+      &lt;AttDef Name=&quot;id&quot; Type=&quot;ID&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;Doc&quot; prefix=&quot;DDML&quot;&gt;
+    &lt;Model&gt;
+       &lt;!-- The struct model from IBTWSH goes here.
+            Defining IBTWSH in DDML is left as an
+            exercise to the reader.            ;       --&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;xmlns&quot; Required=&quot;Yes&quot; AttValue=&quot;&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+  &lt;ElementDecl Name=&quot;More&quot; prefix=&quot;DDML&quot;&gt;
+    &lt;Model&gt;
+      &lt;Any/&gt;
+    &lt;/Model&gt;
+    &lt;AttGroup&gt;
+      &lt;AttDef Name=&quot;xmlns&quot; AttValue=&quot;&quot;/&gt;
+    &lt;/AttGroup&gt;
+  &lt;/ElementDecl&gt;
+
+&lt;/DocumentDef&gt;

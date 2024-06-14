@@ -1,0 +1,16 @@
+plink-bed-format
+================
+
+plink-bed-format is a binary data format created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2104 on PLDB
+17 Years Old
+
+- plink-bed-format website
+ https://www.cog-genomics.org/plink2/formats#bed
+- plink-bed-format first developed in https://github.com/samtools
+- Read more about plink-bed-format on the web: 1.
+ https://www.sciencedirect.com/science/article/pii/S0002929707613524
+
+0x6c 0x1b 0x01 0xdc 0x0f 0xe7 0x0f 0x6b 0x01

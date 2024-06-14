@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id fp3
+name fp
+appeared 2022
+creators Joona Piirainen
+tags pl
+latestVersion 0.0.1
+standsFor Functional Programming
+
+writtenIn glsl haskell yaml bash nix markdown toml
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2022
+ commits 83
+ committers 4
+ files 105
+ newestCommit 2023
+country Finland
+originCommunity https://japiirainen.com/
+reference https://dl.acm.org/doi/10.1145/359576.359579
+
+githubRepo https://github.com/japiirainen/fp
+ firstCommit 2022
+ stars 56
+ forks 0
+ description a programming language inspired by the fp language described in the 1977 Turing Award lecture by John Backus.
+
+hasConditionals true
+hasWhileLoops true
+hasLists true
+hasFunctionComposition true
+ /+∘α(bu + 1):<1,2,3,4,5,6,7,8,9,10>

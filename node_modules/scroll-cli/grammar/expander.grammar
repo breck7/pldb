@@ -1,0 +1,14 @@
+expanderParser
+ cruxFromId
+ description Prints the section in an expandable html details and summary tag.
+ extends paragraphParser
+ javascript
+  compile() {
+   this.parent.sectionStack.push("</details>")
+   return `<details>${super.compile()}`
+  }
+  compileTextVersion() {
+    return this.content
+  }
+  tag = "summary"
+  defaultClassName = ""

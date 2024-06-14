@@ -1,0 +1,46 @@
+TELCOMP
+=======
+
+TELCOMP is a programming language created in 1966.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#4289 on PLDB
+58 Years Old
+
+TELCOMP was a programming language developed at Bolt, Beranek and Newman (BBN) in about 1964 and in use until at least 1974. BBN offered TELCOMP as a paid service, with first revenue in October 1965.  The service was sold to a company called On-Line Systems in 1972. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/TELCOMP
+
+- TELCOMP Wikipedia page
+ https://en.wikipedia.org/wiki/TELCOMP
+- TELCOMP on HOPL
+ https://hopl.info/showlanguage.prx?exp=478
+- See also: (3 related languages)JOSS, MUMPS, Logo
+
+1.04 TYPE #,&quot;ENTER ONE OF THE FOLLOWING:-&quot;;MENU
+ 1.05 TYPE FORM X FOR X=1:1:4 FOR END=10^15
+ 1.06 READ GRNO IN FORM 15
+ 1.065 DONE IF GRNO=END
+ 1.07 TO STEP 1.06 IF GRNO&gt;4
+ 1.08 TO PART GRNO+1
+ 
+ 2.01 DO PART 50
+ 2.02 READ N,K
+ 2.03 DO PART 51
+ 2.04 TO PART 15
+ 
+ ..
+ 
+ 15.01 LINE FOR X=1:1:3
+ 15.02 TYPE MINPL,MAXPL IN FORM 17
+ 15.03 TYPE FORM 17
+ 15.04 DO PART GRNO+15 FOR X=MNPL:STPL:MXPL
+ 
+ 16.01 Y=(X^N)+K
+ 16.02 Y1[X]=(((Y-MNPL)/(MXPL-MNPL))*2)-1
+ 
+ ..
+ 
+ FORM 15
+ ITEM NUMBER?   #####
+ FORM 17
+ MINIMUM ##### MAXIMUM ######

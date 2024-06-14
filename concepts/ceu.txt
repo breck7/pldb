@@ -1,0 +1,39 @@
+Céu
+===
+
+Céu is a programming language created in 2011 by Francisco Sant'Anna.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Francisco%20Sant'Anna
+
+#1773 on PLDB
+13 Years Old
+
+git clone https://github.com/fsantanna/ceu
+
+- Céu website
+ http://www.ceu-lang.org
+- Céu is developed on GitHub and has 1 stars
+- Céu first developed in Pontifical Catholic University of Rio de Janeiro
+- Céu is written in Kotlin, Markdown, Gradle, Vim script, Make, Bourne shell
+- ceu-lang.org was registered in 2012
+- Read more about Céu on the web: 1.
+ http://www.ceu-lang.org/chico/ceu_sensys11.pdf
+
+input int KEY;
+par/or do
+  every 1s do
+    _printf(&quot;Hello World!\n&quot;);
+  end
+with
+  await KEY;
+end
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token _printf
+ Example

@@ -1,0 +1,26 @@
+RDFa
+====
+
+RDFa is a xml format created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#693 on PLDB
+20 Years Old
+
+RDFa (or Resource Description Framework in Attributes) is  a W3C Recommendation that adds a set of attribute-level extensions to HTML, XHTML and various XML-based document types for embedding rich metadata within Web documents. The RDF data-model mapping enables its use for embedding RDF subject-predicate-object expressions within XHTML documents. It also enables the extraction of RDF model triples by compliant user agents. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/RDFa
+
+- RDFa website
+ http://rdfa.info/
+- RDFa Wikipedia page
+ https://en.wikipedia.org/wiki/RDFa
+- RDFa first developed in World Wide Web Consortium
+- rdfa.info was registered in 2006
+- 1 languages in PLDB linking to RDFa: Notation3
+
+&lt;div xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+  about=&quot;http://www.example.com/books/wikinomics&quot;&gt;
+  &lt;span property=&quot;dc:title&quot;&gt;Wikinomics&lt;/span&gt;
+  &lt;span property=&quot;dc:creator&quot;&gt;Don Tapscott&lt;/span&gt;
+  &lt;span property=&quot;dc:date&quot;&gt;2006-10-01&lt;/span&gt;
+&lt;/div&gt;

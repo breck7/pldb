@@ -1,0 +1,130 @@
+import ../code/conceptPage.scroll
+
+id gap
+name GAP
+appeared 1986
+creators gap
+tags pl
+website http://www.gap-system.org/
+latestVersion 11.5.3
+standsFor Groups, Algorithms and Programming
+
+isOpenSource true
+writtenIn c assembly-language gdscript xml bourne-shell m4 cpp make markdown perl tex ada csharp yaml python html pascal cmake vim-script javascript yacc lisp lex sas fortran-77 css ruby csv ini
+tryItOnline gap
+fileType text
+wordRank 4114
+rosettaCode http://www.rosettacode.org/wiki/Category:GAP
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 1996
+ commits 10670
+ committers 72
+ files 5007
+ newestCommit 2024
+country Germany
+originCommunity RWTH Aachen University
+projectEuler GAP
+ memberCount
+  2022 33
+
+pygmentsHighlighter GAP
+ filename algebra.py
+ fileExtensions g gd gi gap
+rijuRepl https://riju.codes/gap
+ example
+  Print("Hello, world!\n");
+  
+twitter https://twitter.com/gap_system
+
+githubRepo https://github.com/gap-system/gap
+ firstCommit 1996
+ stars 615
+ forks 149
+ subscribers 31
+ created 2015
+ updated 2022
+ description Main development repository for GAP - Groups, Algorithms, Programming, a System for Computational Discrete Algebra
+ issues 491
+
+lineCommentToken #
+
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
+ example
+  gap> G:=SmallGroup(8,1); # Set G to be a group of order 8.
+  <pc group of size 8 with 3 generators>
+  gap> i:=IsomorphismPermGroup(G); # Find an isomorphism from G to a group of permutations
+  <action isomorphism>
+  gap> Image(i,G); # The image of G under I - these are the generators of im G.
+  Group([ (1,5,3,7,2,6,4,8), (1,3,2,4)(5,7,6,8), (1,2)(3,4)(5,6)(7,8) ])
+  gap> Elements(Image(i,G)); # All the elements of im G.
+  [ (), (1,2)(3,4)(5,6)(7,8), (1,3,2,4)(5,7,6,8), (1,4,2,3)(5,8,6,7),
+     (1,5,3,7,2,6,4,8), (1,6,3,8,2,5,4,7), (1,7,4,5,2,8,3,6), (1,8,4,6,2,7,3,5) ]
+ related c unix sagemath
+ summary GAP (Groups, Algorithms and Programming) is a computer algebra system for computational discrete algebra with particular emphasis on computational group theory.
+ pageId 262144
+ created 2016
+ backlinksCount 66
+ revisionCount 1
+ dailyPageViews 1
+ appeared 1986
+
+hopl https://hopl.info/showlanguage.prx?exp=2668
+
+domainName gap-system.org
+ registered 2000
+ awisRank
+  2022 1123892
+
+githubBigQuery GAP
+ repos 4082
+ users 3657
+
+linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
+ firstCommit 2010
+ lastCommit 2018
+ committerCount 3
+ commitCount 10
+ sampleCount 9
+ example
+  gap> START_TEST("Test of factor groups and natural homomorphisms");
+  
+  gap> G:=HeisenbergPcpGroup(2);
+  Pcp-group with orders [ 0, 0, 0, 0, 0 ]
+  
+  gap> H:=Subgroup(G,[G.2,G.3,G.4,G.5]);
+  gap> K:=G/H;
+  gap> NaturalHomomorphism(K);
+  
+  gap> A:=Subgroup(H, [G.3]);
+  Pcp-group with orders [ 0 ]
+  gap> B:=Subgroup(Subgroup(G,[G.1,G.4,G.5]), [G.4]);
+  Pcp-group with orders [ 0 ]
+  gap> Normalizer(A,B);
+  Pcp-group with orders [ 0 ]
+  gap> # The following used to trigger the error "arguments must have a common parent group"
+  gap> Normalizer(B,A);
+  Pcp-group with orders [ 0 ]
+  
+  
+  gap> STOP_TEST( "factor.tst", 10000000);
+  
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 2012|O'Reilly Media|HTML5 and JavaScript Web Apps: Bridging the Gap Between the Web and the Mobile Web|Hales, Wesley|9781449320515
+ 1992|Psychology Press|The Symbolic And Connectionist Paradigms: Closing The Gap (cognitive Science Series : Technical Monographs And Edited Collection)|Dinsmore, John|9780805810806
+ 1995|Spectra|Chaos and Order: The Gap Into Madness (The Gap Cycle)|Donaldson, Stephen R.|9780553572537
+
+githubLanguage GAP
+ fileExtensions g gap gd gi tst
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.gap
+ repos 3760

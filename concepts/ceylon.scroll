@@ -1,0 +1,159 @@
+import ../code/conceptPage.scroll
+
+id ceylon
+name Ceylon
+appeared 2011
+creators Gavin King
+tags pl
+website http://ceylon-lang.org
+latestVersion 1.2.1-osgi
+
+isOpenSource true
+writtenIn java javascript xml xslt bourne-shell gradle markdown html groovy css dtd json ini bash make asciidoc perl yaml
+runsOnVm jvm
+tryItOnline ceylon
+fileType text
+documentation https://ceylon-lang.org/documentation/current/
+rosettaCode http://www.rosettacode.org/wiki/Category:Ceylon
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 40307
+ committers 12
+ files 13362
+ newestCommit 2020
+originCommunity Red Hat
+projectEuler Ceylon
+ memberCount
+  2019 5
+  2022 8
+
+helloWorldCollection Ceylon
+ // Hello world in Ceylon
+ 
+ print("Hello, World!");
+pygmentsHighlighter Ceylon
+ filename jvm.py
+ fileExtensions ceylon
+rijuRepl https://riju.codes/ceylon
+ example
+  shared void run() {
+      print("Hello, world!");
+  }
+  
+ description Object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat
+ fileExtensions ceylon
+ website https://ceylon-lang.org/
+ gitRepo https://ceylon-lang.org/code/source/
+twitter https://twitter.com/ceylonlang
+leachim6 Ceylon
+ filepath c/Ceylon.ceylon
+ fileExtensions ceylon
+ example
+  shared void hello() {
+      print("Hello World");
+  }
+  
+languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
+ writtenIn ceylon
+
+githubRepo https://github.com/eclipse/ceylon
+ stars 387
+ forks 64
+ subscribers 41
+ created 2015
+ updated 2022
+ firstCommit 2017
+ description The Ceylon compiler, language module, and command line tools
+ issues 1027
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
+
+hasOperatorOverloading true
+hasStaticTyping true
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
+hasFloats true
+ // \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
+hasIntegers true
+ // \d{1,3}(_\d{3})+[kMGTP]?
+hasBinaryNumbers true
+ // \$([01]{4})(_[01]{4})+
+
+wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
+ example
+  /* The classic Hello World program */
+  shared void run() {
+      print("Hello, World!");
+  }
+ related jvm javascript java scala smalltalk ml lisp maven-pom typescript dart fantom
+ summary Ceylon is an object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat. Ceylon programs run on the Java virtual machine (JVM), and can be compiled to JavaScript. The language design focuses on source code readability, predictability, toolability, modularity, and metaprogrammability. Important features of Ceylon include: A type system enforcing null safety and list element existence at compile time Regular syntax and semantics, avoiding special cases and primitively-defined constructs in favor of syntactic sugar Support for generic programming and metaprogramming, with reified generics Modularity built into the language, based on JBoss modules, interoperable with OSGi and Maven powerful tools, including an Eclipse-based IDE The name "Ceylon" is an oblique reference to Java, in that Java and Sri Lanka, formerly known as Ceylon, are islands known for growth and export of coffee and tea. In August 2017, Ceylon was donated to the Eclipse Foundation.
+ pageId 31483631
+ dailyPageViews 72
+ created 2011
+ backlinksCount 33
+ revisionCount 218
+ appeared 2011
+ fileExtensions ceyloncite web
+
+tiobe Ceylon
+
+domainName ceylon-lang.org
+ registered 2011
+ awisRank
+  2017 1029547
+
+githubBigQuery Ceylon
+ repos 167
+ users 85
+
+linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 6
+ commitCount 29
+ sampleCount 1
+ example
+  "Test function for Ceylon"
+  by ("Enrique")
+  shared void test() {
+      print("test");
+  }
+  
+  "Test class for Ceylon"
+  shared class Test(name) satisfies Comparable<Test> {
+      shared String name;
+      shared actual String string = "Test ``name``.";
+  
+      shared actual Comparison compare(Test other) {
+          return name<=>other.name;
+      }
+  }
+  
+
+isbndb 0
+
+githubLanguage Ceylon
+ fileExtensions ceylon
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.ceylon
+ repos 336
+
+semanticScholar 0

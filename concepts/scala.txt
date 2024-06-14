@@ -1,0 +1,261 @@
+Scala
+=====
+
+Scala is an open source programming language created in 2004 by Martin Odersky.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Martin%20Odersky
+
+#22 on PLDB
+20 Years Old
+219k Repos
+
+Try now: Web · Riju · TIO
+
+Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Scala_(programming_language)
+
+- Scala website
+ http://www.scala-lang.org
+- Scala downloads page
+ https://scala-lang.org/download/
+- Scala Wikipedia page
+ https://en.wikipedia.org/wiki/Scala_(programming_language)
+- Scala docs
+ https://docs.scala-lang.org/
+- Scala mailing list
+ https://www.scala-lang.org/community/
+- There are at least 219,084 Scala repos on GitHub
+- Scala first developed in École Polytechnique Fédérale de Lausanne
+- Scala on Twitter
+ https://twitter.com/scala_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 21k users using Scala in 35k repos on GitHub
+- Check out the 624 Scala meetup groups on Meetup.com.
+- There are 46,218 members in the Scala subreddit
+- There are 1,985 Project Euler users using Scala
+- In the 2021 StackOverflow developer survey Scala programmers reported a median salary of $77,832. 3% of respondents reported using Scala. 2,148 programmers reported using Scala, and 3,165 said they wanted to use it
+- Explore Scala snippets on Rosetta Code
+- Scala on HOPL
+ https://hopl.info/showlanguage.prx?exp=6814
+- Scala ranks #39 in the TIOBE Index
+- Scala Ubuntu package
+ https://packages.ubuntu.com/jammy/scala
+- ANTLR grammar for Scala
+- Scala LSP implementation
+- Monaco package for syntax highlighting Scala
+- Pygments supports syntax highlighting for Scala
+- GitHub supports syntax highlighting for Scala
+- Scala appears in the Quine Relay project
+- PLDB has 2 Jupyter Kernels for Scala: github.com, github.com
+- There is a central package repository for Scala
+- Release Notes for Scala
+ https://www.scala-lang.org/download/all.html
+- Official Blog page for Scala
+ https://www.scala-lang.org/blog/
+- Events page for Scala
+ https://scala-lang.org/events/
+- Frequently Asked Questions for Scala
+ https://docs.scala-lang.org/tutorials/FAQ/index.html
+- Indeed.com has 3,679 matches for "scala engineer".
+- scala-lang.org was registered in 2007
+- See also: (32 related languages)JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, PHP, Ruby
+- 27 languages in PLDB linking to Scala: Ace Editor, baysick, chisel, cloc, Enso, Felix, firrtl, Flix, Gradle, k-framework, Kotlin, lift, Luna, mal, NetLogo, obsidian, parboiled2, Pygments, Rholang, Scala.js, Apache Spark, Spatial, topshell, Vale, Vyxal, Xgboost, XGBoost
+
+// Type your code here, or load an example.
+object Square {
+    def square(num: Int): Int =
+        num * num
+}
+
+println(&quot;Hello, world!&quot;)
+
+object HelloWorld extends App {
+  println(&quot;Hello World&quot;)
+}
+
+// Hello world in Scala
+
+object HelloWorld extends App {
+  println(&quot;Hello world!&quot;)
+}
+
+#!/bin/sh
+exec scala &quot;$0&quot; &quot;$@&quot;
+!#
+
+object HelloWorld {
+  def main(args: Array[String]) {
+    println(&quot;Hello, world!&quot;)
+  }
+}
+
+val urls = List(&quot;http://scala-lang.org&quot;,  &quot;https://github.com/scala/scala&quot;)
+
+def fromURL(url: String) = scala.io.Source.fromURL(url)
+  .getLines().mkString(&quot;\n&quot;)
+
+val t = System.currentTimeMillis()
+urls.par.map(fromURL(_))
+println(&quot;time: &quot; + (System.currentTimeMillis - t) + &quot;ms&quot;)
+
+abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Implicit Arguments
+ FeatureLink ../features/hasImplicitArguments.html
+ Supported ✓
+ Token 
+ Example
+  // https://docs.scala-lang.org/tour/implicit-parameters.html
+  abstract class Monoid[A] {
+    def add(x: A, y: A): A
+    def unit: A
+  }
+  
+  object ImplicitTest {
+    implicit val stringMonoid: Monoid[String] = new Monoid[String] {
+      def add(x: String, y: String): String = x concat y
+      def unit: String = ""
+    }
+    
+    implicit val intMonoid: Monoid[Int] = new Monoid[Int] {
+      def add(x: Int, y: Int): Int = x + y
+      def unit: Int = 0
+    }
+    
+    def sum[A](xs: List[A])(implicit m: Monoid[A]): A =
+      if (xs.isEmpty) m.unit
+      else m.add(xs.head, sum(xs.tail))
+      
+    def main(args: Array[String]): Unit = {
+      println(sum(List(1, 2, 3)))       // uses intMonoid implicitly
+      println(sum(List("a", "b", "c"))) // uses stringMonoid implicitly
+    }
+  }
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  // https://docs.scala-lang.org/scala3/guides/macros/macros.html
+  import scala.quoted.* // imports Quotes, Expr
+  
+  def inspectCode(x: Expr[Any])(using Quotes): Expr[Any] =
+    println(x.show)
+    x
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Partial Application
+ FeatureLink ../features/hasPartialApplication.html
+ Supported ✓
+ Token 
+ Example
+  def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

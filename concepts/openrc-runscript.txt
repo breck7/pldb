@@ -1,0 +1,152 @@
+OpenRC runscript
+================
+
+OpenRC runscript is an application created in 2007 by Roy Marples.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Roy%20Marples
+
+#430 on PLDB
+17 Years Old
+
+git clone https://github.com/OpenRC/openrc
+
+The OpenRC init system
+
+- OpenRC runscript is developed on GitHub and has 1,109 stars
+- OpenRC runscript first developed in https://roy.marples.name/projects
+- OpenRC runscript is written in Meson, C, Bourne shell, Markdown, YAML, Perl
+- GitHub supports syntax highlighting for OpenRC runscript
+- Read more about OpenRC runscript on the web: 1.
+ http://www.linuxhowtos.org/manpages/8/openrc-run.htm
+
+#!/sbin/openrc-run
+command=/usr/bin/foo
+command_args=&quot;${foo_args} --bar&quot;
+pidfile=/var/run/foo.pid
+name=&quot;FooBar Daemon&quot;
+
+description=&quot;FooBar is a daemon that eats and drinks&quot;
+extra_commands=&quot;show&quot;
+extra_started_commands=&quot;drink eat&quot;
+description_drink=&quot;Opens mouth and reflexively swallows&quot;
+description_eat=&quot;Chews food in mouth&quot;
+description_show=&quot;Shows what&#39;s in the tummy&quot;
+
+_need_dbus()
+{
+    grep -q dbus /etc/foo/plugins
+}
+
+depend()
+{
+    # We write a pidfile and to /var/cache, so we need localmount.
+    need localmount
+    # We can optionally use the network, but it&#39;s not essential.
+    use net
+    # We should be after bootmisc so that /var/run is cleaned before
+    # we put our pidfile there.
+    after bootmisc
+
+    # Foo may use a dbus plugin.
+    # However, if we add the dbus plugin whilst foo is running and
+    # stop dbus, we don&#39;t need to stop foo as foo didn&#39;t use dbus.
+    config /etc/foo/plugins
+    local _need=
+    if service_started; then
+        _need=`service_get_value need`
+    else
+        if _need_dbus; then
+           _need=&quot;${_need} dbus&quot;
+        fi
+    fi
+    need ${_need}
+}
+
+# This function does any pre-start setup. If it fails, the service will
+# not be started.
+# If you need this function to behave differently for a restart command,
+# you should check the value of RC_CMD for &quot;restart&quot;.
+# This also applies to start_post, stop_pre and stop_post.
+start_pre()
+{
+        if [ &quot;$RC_CMD&quot; = restart ]; then
+                # This block will only execute for a restart command. Use a
+                # structure like this if you need special processing for a
+                # restart which you do not need for a normal start.
+                # The function can also fail from here, which will mean that a
+                # restart can fail.
+                # This logic can also be used in start_post, stop_pre and
+                # stop_post.
+        fi
+    # Ensure that our dirs are correct
+    checkpath --directory --owner foo:foo --mode 0775 \
+        /var/run/foo /var/cache/foo
+}
+
+start_post()
+{
+    # Save our need
+    if _need_dbus; then
+        service_set_value need dbus
+    fi
+}
+
+stop_post() {
+    # Clean any spills
+    rm -rf /var/cache/foo/*
+}
+
+drink()
+{
+    ebegin &quot;Starting to drink&quot;
+    ${command} --drink beer
+    eend $? &quot;Failed to drink any beer :(&quot;
+}
+
+eat()
+{
+    local result=0 retval= ate= food=
+    ebegin &quot;Starting to eat&quot;
+
+    if yesno &quot;${foo_diet}&quot;; then
+        eend 1 &quot;We are on a diet!&quot;
+        return 1
+    fi
+
+    for food in /usr/share/food/*; do
+        veinfo &quot;Eating `basename ${food}`&quot;
+        ${command} --eat ${food}
+        retval=$?
+        : $(( result += retval ))
+        [ ${retval} = 0 ] &amp;&amp; ate=&quot;${ate} `basename ${food}`&quot;
+    done
+
+    if eend ${result} &quot;Failed to eat all the food&quot;; then
+        service_set_value ate &quot;${ate}&quot;
+    fi
+}
+
+show()
+{
+    einfo &quot;Foo has eaten: `service_get_value ate`&quot;
+}
+
+#!/sbin/openrc-run
+
+description=&quot;Daemon for Advanced Configuration and Power Interface&quot;
+
+extra_started_commands=&quot;reload&quot;
+command=&quot;/usr/sbin/acpid&quot;
+command_args=&quot;$ACPID_ARGS&quot;
+start_stop_daemon_args=&quot;--quiet&quot;
+
+depend() {
+	need localmount
+	use logger
+}
+
+reload() {
+	ebegin &quot;Reloading acpid configuration&quot;
+	start-stop-daemon --exec $command --signal HUP
+	eend $?
+}

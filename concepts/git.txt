@@ -1,0 +1,42 @@
+Git
+===
+
+Git, aka global information tracker, is an open source version control application created in 2005 by Linus Torvalds.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Linus%20Torvalds
+
+#78 on PLDB
+19 Years Old
+
+git clone https://github.com/git/git
+
+Git () is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Git
+
+- Git website
+ https://git-scm.com
+- Git Wikipedia page
+ https://en.wikipedia.org/wiki/Git
+- Git is developed on GitHub and has 45,955 stars
+- Watch the history of the Git repo visualized with Gource
+- Git docs
+ https://git-scm.com/doc
+- Git first developed in https://github.com/git/
+- Git is written in Bourne shell, C, Perl, Diff, Make, Markdown, ASP.NET, YAML, JavaScript, XSLT, Go, Python, Bash, M4, CSS, XML, Lisp, CMake, Z shell, C shell, Ruby, Rescript
+- Check out the 102 Git meetup groups on Meetup.com.
+- Release Notes for Git
+ https://github.com/git/git/tree/master/Documentation/RelNotes
+- Git cheat sheet
+ https://training.github.com/
+- git-scm.com was registered in 2008
+- See also: (10 related languages)C, Perl, Tcl, Python, Linux, IA-32, Mercurial, HTTP, FTP, Subversion
+- 1 languages in PLDB linking to Git: Sourcetree
+
+The name &quot;git&quot; was given by Linus Torvalds when he wrote the very
+first version. He described the tool as &quot;the stupid content tracker&quot;
+and the name as (depending on your way):
+
+ - random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of &quot;get&quot; may or may not be relevant.
+ - stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
+ - &quot;global information tracker&quot;: you&#39;re in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
+ - &quot;goddamn idiotic truckload of shit&quot;: when it breaks

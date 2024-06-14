@@ -1,0 +1,42 @@
+QMake
+=====
+
+QMake is an open source programming language created in 2002.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#969 on PLDB
+22 Years Old
+4k Repos
+
+qmake is an utility that automates the generation of makefiles. Makefiles are used by the program make to build executable programs from source code; therefore qmake is a make-makefile tool, or makemake for short. The makefiles that qmake produces are tailored to the particular platform where it is run from based on qmake project files. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Qmake
+
+- QMake Wikipedia page
+ https://en.wikipedia.org/wiki/Qmake
+- There are at least 3,624 QMake repos on GitHub
+- QMake first developed in Qt Group plc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using QMake in 18k repos on GitHub
+- GitHub supports syntax highlighting for QMake
+- See also: (5 related languages)Linux, FreeBSD, Make, Qt, CMake
+- Read more about QMake on the web: 1.
+ http://doc.qt.io/archives/qt-4.8/qmake-tutorial.html
+
+CONFIG += qt debug
+HEADERS += hello.h
+SOURCES += hello.cpp
+SOURCES += main.cpp
+win32 {
+    SOURCES += hellowin.cpp
+}
+unix {
+    SOURCES += hellounix.cpp
+}
+!exists( main.cpp ) {
+    error( &quot;No main.cpp file found&quot; )
+}
+win32:debug {
+    CONFIG += console
+}
+
+#!/usr/bin/qmake
+message(This is QMake.)

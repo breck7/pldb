@@ -1,0 +1,115 @@
+V
+=
+
+V is a programming language created in 2019 by Alexander Medvednikov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Medvednikov
+
+#122 on PLDB
+5 Years Old
+1k Repos
+
+git clone https://github.com/vlang/v
+
+Try now: Riju
+
+Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in  V translation. https://vlang.io
+
+- V website
+ https://vlang.io/
+- V is developed on GitHub and has 29,603 stars
+- Watch the history of the V repo visualized with Gource
+- V docs
+ https://github.com/vlang/v/blob/master/doc/docs.md
+- There are at least 1,382 V repos on GitHub
+- V is written in Coq, Markdown, C, HTML, YAML, XML, GLSL, JSON, TOML, SVG, Bourne shell, CSS, Dockerfile, JavaScript, Objective-C, Make, Python, awk, C++, C#, TypeScript, Go, SQL, Ruby, Assembly language
+- V on Twitter
+ https://twitter.com/v_language
+- The  Google BigQuery Public Dataset GitHub snapshot shows 44 users using V in 45 repos on GitHub
+- There are 1,547 members in the V subreddit
+- vlang.io was registered in 2019
+
+import json
+
+struct User {
+    name string
+    age  int
+mut:
+    is_registered bool
+}
+
+fn main() {
+    s := &#39;[{&quot;name&quot;:&quot;Frodo&quot;, &quot;age&quot;:25}, {&quot;name&quot;:&quot;Bobby&quot;, &quot;age&quot;:10}]&#39;
+    mut users := json.decode([]User, s) or {
+        eprintln(&#39;Failed to parse json&#39;)
+        return
+    }
+    for user in users {
+        println(&#39;$user.name: $user.age&#39;)
+    }
+    println(&#39;&#39;)
+    for i, mut user in users {
+        println(&#39;$i) $user.name&#39;)
+        if !user.can_register() {
+            println(&#39;Cannot register $user.name, they are too young&#39;)
+            continue
+        }
+        // `user` is declared as `mut` in the for loop,
+        // modifying it will modify the array
+        user.register()
+    }
+    // Let&#39;s encode users again just for fun
+    println(&#39;&#39;)
+    println(json.encode(users))
+}
+
+fn (u User) can_register() bool {
+    return u.age &gt;= 16
+}
+
+fn (mut u User) register() {
+    u.is_registered = true
+}
+
+fn main() {
+	println(&#39;Hello, world!&#39;)
+}
+
+println(&quot;Hello World&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

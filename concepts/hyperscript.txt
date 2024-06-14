@@ -1,0 +1,34 @@
+Hyperscript
+===========
+
+Hyperscript is a template language created in 2012 by Dominic Tarr.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Dominic%20Tarr
+
+#881 on PLDB
+12 Years Old
+
+git clone https://github.com/hyperhype/hyperscript
+
+Create HyperText with JavaScript.
+
+- Hyperscript is developed on GitHub and has 2,389 stars
+- Hyperscript first developed in https://github.com/hyperhype
+- Hyperscript is written in HTML, JavaScript, YAML, Markdown, JSON
+
+var h = require(&#39;hyperscript&#39;)
+h(&#39;div#page&#39;,
+  h(&#39;div#header&#39;,
+    h(&#39;h1.classy&#39;, &#39;h&#39;, { style: {&#39;background-color&#39;: &#39;#22f&#39;} })),
+  h(&#39;div#menu&#39;, { style: {&#39;background-color&#39;: &#39;#2f2&#39;} },
+    h(&#39;ul&#39;,
+      h(&#39;li&#39;, &#39;one&#39;),
+      h(&#39;li&#39;, &#39;two&#39;),
+      h(&#39;li&#39;, &#39;three&#39;))),
+    h(&#39;h2&#39;, &#39;content title&#39;,  { style: {&#39;background-color&#39;: &#39;#f22&#39;} }),
+    h(&#39;p&#39;,
+      &quot;so it&#39;s just like a templating engine,\n&quot;,
+      &quot;but easy to use inline with javascript\n&quot;),
+    h(&#39;p&#39;,
+      &quot;the intention is for this to be used to create\n&quot;,
+      &quot;reusable, interactive html widgets. &quot;))

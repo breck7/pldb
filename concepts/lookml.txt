@@ -1,0 +1,161 @@
+LookML
+======
+
+LookML is a programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#991 on PLDB
+12 Years Old
+5k Repos
+
+- LookML website
+ https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
+- There are at least 5,427 LookML repos on GitHub
+- LookML first developed in Looker
+- The  Google BigQuery Public Dataset GitHub snapshot shows 47 users using LookML in 185 repos on GitHub
+- GitHub supports syntax highlighting for LookML
+- Read more about LookML on the web: 1.
+ https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
+
+######################################
+# FILE: ecommercestore.model.lkml    #
+# Define the explores and join logic #
+######################################
+connection: order_database
+include: &quot;*.view.lkml&quot;
+explore: orders {
+  join: customers {
+    sql_on: ${orders.customer_id} = ${customers.id} ;;
+  }
+}
+
+##########################################################
+# FILE: orders.view.lkml                                 #
+# Define the dimensions and measures for the ORDERS view #
+##########################################################
+view: orders {
+  dimension: id {
+    primary_key: yes
+    type: number
+    sql: ${TABLE}.id ;;
+  }
+  dimension: customer_id {      # field: orders.customer_id
+    sql: ${TABLE}.customer_id ;;
+  }
+  dimension: amount {           # field: orders.amount
+    type: number
+    value_format: &quot;0.00&quot;
+    sql: ${TABLE}.amount ;;
+  }
+  dimension_group: created {                # generates fields:
+    type: time                              # orders.created_time, orders.created_date
+    timeframes: [time, date, week, month]   # orders.created_week, orders.created_month
+    sql: ${TABLE}.created_at ;;
+  }
+  measure: count {             # field: orders.count
+    type: count                # creates a sql COUNT(*)
+    drill_fields: [drill_set*] # list of fields to show when someone clicks &#39;ORDERS Count&#39;
+  }
+  measure: total_amount {
+    type: sum
+    sql: ${amount} ;;
+  }
+  set: drill_set {
+    fields: [id, created_time, customers.name, amount]
+  }
+}
+
+#############################################################
+# FILE: customers.view.lkml                                 #
+# Define the dimensions and measures for the CUSTOMERS view #
+#############################################################
+view: customers {
+  dimension: id {
+    primary_key: yes
+    type: number
+    sql: ${TABLE}.id ;;
+  }
+  dimension: city {                    # field: customers.city
+    sql: ${TABLE}.city ;;
+  }
+  dimension: state {                   # field: customers.state
+    sql: ${TABLE}.state ;;
+  }
+  dimension: name {
+    sql: CONCAT(${TABLE}.firstname, &quot; &quot;, ${TABLE}.lastname) ;;
+  }
+  measure: count {             # field: customers.count
+    type: count                # creates a sql COUNT(*)
+    drill_fields: [drill_set*] # fields to show when someone clicks &#39;CUSTOMERS Count&#39;
+  }
+  set: drill_set {                     # set: customers.drill_set
+    fields: [id, state, orders.count]  # list of fields to show when someone clicks &#39;CUSTOMERS Count&#39;
+  }
+}
+
+- view: comments
+  fields:
+
+  - dimension: id
+    primary_key: true
+    type: int
+    sql: ${TABLE}.id
+
+  - dimension: body
+    sql: ${TABLE}.body
+
+  - dimension_group: created
+    type: time
+    timeframes: [time, date, week, month]
+    sql: ${TABLE}.created_at
+
+  - dimension: headline_id
+    type: int
+    hidden: true
+    sql: ${TABLE}.headline_id
+
+  - dimension_group: updated
+    type: time
+    timeframes: [time, date, week, month]
+    sql: ${TABLE}.updated_at
+
+  - dimension: user_id
+    type: int
+    hidden: true
+    sql: ${TABLE}.user_id
+
+  - measure: count
+    type: count
+    detail: detail*
+
+  # ----- Detail ------
+  sets:
+    detail:
+      - id
+      - headlines.id
+      - headlines.name
+      - users.id
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

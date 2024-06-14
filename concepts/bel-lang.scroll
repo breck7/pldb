@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id bel-lang
+name Biological Expression Language
+appeared 2003
+tags textDataFormat
+website http://openbel.org/
+standsFor Biological Expression Language
+
+country United States
+originCommunity bel.bio
+reference https://github.com/OpenBEL/language
+
+example
+ r(HGNC:CFTR, var("r.1653_1655delcuu"))
+ r(REF:"NM_000492.3", var("r.1653_1655delcuu"))
+
+domainName openbel.org
+ registered 2011
+
+semanticScholar 0

@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id scrollnotation
+name Scroll Notation
+appeared 2017
+creators Breck Yunits
+tags dataNotation
+website https://notation.scroll.pub
+latestVersion 78.0.0
+oldName Tree Notation
+webRepl https://sdk.scroll.pub/sandbox/
+conceptDescription A minimalist notation consisting of just the word break rule, line break rule, and the off-side rule.
+
+isPublicDomain true
+isOpenSource true
+writtenIn javascript typescript html json svg css yaml xml markdown
+relatedConcepts i-expressions json yaml toml xml haml ini grammar
+influencedBy haml treesheets racket lisp haskell antlr typescript mathematica scheme python csharp red cobol rebol apl r html css xml json cpp forth fortran sql
+repoStats
+ firstCommit 2017
+ commits 1473
+ committers 11
+ files 226
+ newestCommit 2024
+
+example
+ title Scroll Notation
+ type dataNotation
+ example
+  title Scroll Notation
+  type dataNotation
+twitter https://twitter.com/breck7
+
+githubRepo https://github.com/breck7/scrollsdk
+ stars 365
+ forks 14
+ subscribers 9
+ created 2017
+ updated 2023
+ description Build your own language using Scroll Notation.
+ issues 40
+
+hasSemanticIndentation true
+ example
+  title Scroll Notation
+hasEscapeCharacters false
+hasComments false
+
+domainName treenotation.org
+ // old domain
+ registered 2019
+
+isbndb 0

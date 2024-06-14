@@ -1,0 +1,107 @@
+winxed
+======
+
+winxed is a programming language created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1357 on PLDB
+15 Years Old
+
+git clone https://github.com/NotFound/winxed
+
+The winxed programming language
+
+- winxed website
+ http://winxed.net/
+- winxed is developed on GitHub and has 29 stars
+- winxed is written in C++, JSON, Make, Markdown
+- winxed.net was registered in 2013
+
+#! winxed
+# (C) 2010 Julián Albo
+/*
+= head1 NAME
+setup.winxed - Python distutils style
+=head1 DESCRIPTION
+Just some testing, not intended for real usage yet.
+=head1 USAGE
+Handle with care. See DESCRIPTION.
+=cut
+*/
+$load &#39;Getopt/Obj.pbc&#39;;
+//**********************************************************************
+// Json file read.
+function loadData(string filename)
+{
+    var json = load_language(&#39;data_json&#39;);
+    var file = open(filename);
+    if (file == null || file.is_closed())
+        throw Error(&quot;Can&#39;t open &quot; + filename);
+    file.encoding(&#39;utf8&#39;);
+    string jsondata = file.readall();
+    file.close();
+    var code = json.compile(jsondata);
+    return code();
+}
+//**********************************************************************
+function main(argv)
+{
+    // Parse command line.
+    var getopts = new [&#39;Getopt&#39;,&#39;Obj&#39;];
+    getopts.notOptStop(1);
+    getopts.push_string(&#39;file=s&#39;);
+    getopts.push_string(&#39;v&#39;);
+    string progname = argv.shift();
+    var opts = getopts.get_options(argv);
+    int verbose = opts[&#39;v&#39;] != null;
+    var file = opts[&#39;file&#39;];
+    // Get setup data from json file specified in command line
+    // or default value.
+    string filename = &#39;setup.json&#39;;
+    if (file != null)
+        filename = file;
+    var data = loadData(filename);
+    if (verbose) {
+        string description = data[&#39;description&#39;];
+ say(&quot;\tFile: &quot;, filename);
+ say(&quot;\tName: &quot;, data[&#39;name&#39;]);
+        say(&quot;\tDescription: &quot;, description);
+ say(&quot;\t(C) &quot;, data[&#39;copyright_holder&#39;]);
+ say();
+    }
+    using extern distutils;
+    setup(argv:[flat], data:[flat,named]);
+}
+// End
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

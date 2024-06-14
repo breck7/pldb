@@ -1,0 +1,22 @@
+Loom
+====
+
+Loom is a knowledge base created in 1987.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2269 on PLDB
+37 Years Old
+
+- Loom website
+ https://www.isi.edu/isd/LOOM/LOOM-HOME.html
+- Loom first developed in Information Sciences Institute
+- Loom on HOPL
+ https://hopl.info/showlanguage.prx?exp=3991
+- Read more about Loom on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/6031b724f174da0069ea61ffa9da928adb090b24
+
+(defconcept air-base
+             :is-primitive
+                     (and military-installation
+                     (exactly 1 name)
+                     (at-least 1 runway-length)))

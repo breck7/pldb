@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id iswim
+name ISWIM
+appeared 1966
+creators Peter Landin
+tags pl
+standsFor If you See What I Mean
+
+fileType text
+centralPackageRepositoryCount 0
+country United Kingdom
+originCommunity RAND Corporation
+
+example
+ Print `Hello world'
+
+printToken Print
+
+hasSemanticIndentation true
+hasPrintDebugging true
+
+wikipedia https://en.wikipedia.org/wiki/ISWIM
+ related algol-60 lisp haskell clean lucid krc hope miranda
+ summary ISWIM is an abstract computer programming language (or a family of programming languages) devised by Peter J. Landin and first described in his article The Next 700 Programming Languages, published in the Communications of the ACM in 1966. The acronym stands for "If you See What I Mean" (also said to have stood for "I See What You Mean", but ISWYM was mistyped as ISWIM). Although not implemented, it has proved very influential in the development of programming languages, especially functional programming languages such as SASL, Miranda, ML, Haskell and their successors, and dataflow programming languages like Lucid.
+ pageId 233385
+ created 2003
+ backlinksCount 43
+ revisionCount 97
+ dailyPageViews 24
+ appeared 1966
+
+hopl https://hopl.info/showlanguage.prx?exp=261
+
+isbndb 0

@@ -1,0 +1,80 @@
+Guix Workflow Language
+======================
+
+Guix Workflow Language, aka Guix Workflow Language, is a programming language created in 2017.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1797 on PLDB
+7 Years Old
+
+- Guix Workflow Language website
+ https://www.guixwl.org/
+- Guix Workflow Language first developed in GNU Project
+- guixwl.org was registered in 2017
+
+ ;; https://www.guixwl.org/extended-start
+ ;; We are going to extend the workflow defined in the file
+ ;; &quot;example-workflow.w&quot;.
+ define dynamic-workflow
+   load-workflow &quot;/tmp/examples/example-workflow.w&quot;
+ 
+ process: (list-file-template filename)
+   name
+     string-append &quot;list-file-&quot;
+                   basename filename
+   packages &quot;gzip&quot;
+   inputs filename
+   outputs
+     string-append filename &quot;.list&quot;
+   run-time
+     complexity
+       space 20 mebibytes
+       time  30 seconds
+   # { gzip --list {{inputs}} &gt; {{outputs}} }
+ 
+ ;; Get all processes of the other workflow.
+ define foreign-processes
+   workflow-processes dynamic-workflow
+ 
+ ;; Get the processes that we want to extend on.
+ define compress-file-processes
+   processes-filter-by-name foreign-processes &quot;compress-file&quot;
+ 
+ ;; Create the new processes.
+ define list-file-processes
+   map list-file-template
+       append-map process-outputs compress-file-processes
+ 
+ workflow: extended-dynamic-workflow
+   processes
+     append
+       ;; These are the process connections of the imported workflow
+       workflow-restrictions dynamic-workflow
+       ;; And these are the new process connections.  The &quot;zip&quot; procedure
+       ;; pairs up each of the processes in &quot;list-file-processes&quot; with
+       ;; one of the processes in &quot;compress-file-processes&quot;.
+       zip list-file-processes compress-file-processes
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

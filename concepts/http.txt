@@ -1,0 +1,60 @@
+HTTP
+====
+
+HTTP is a protocol created in 1989 by Tim Berners-Lee.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tim%20Berners-Lee
+
+#145 on PLDB
+35 Years Old
+0 Repos
+
+The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+
+- HTTP Wikipedia page
+ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+- HTTP docs
+ https://www.w3.org/Protocols/rfc2616/rfc2616.html
+- There are at least 0 HTTP repos on GitHub
+- HTTP first developed in The World Wide Web Consortium
+- CodeMirror package for syntax highlighting HTTP
+- Pygments supports syntax highlighting for HTTP
+- GitHub supports syntax highlighting for HTTP
+- Indeed.com has 771,996 matches for "http developer".
+- See also: (12 related languages)FTP, SMTP, TLS, TCP, UDP, URL, HTML, CSS, ASCII, Gzip, REST, ISBN
+
+import http.server
+import socketserver
+from http import HTTPStatus
+
+class Handler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(HTTPStatus.OK)
+        self.end_headers()
+        self.wfile.write(b&#39;Hello World&#39;)
+
+httpd = socketserver.TCPServer((&#39;&#39;, 8000), Handler)
+httpd.serve_forever()
+
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: UTF-8
+Content-Length: 138
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Server: Apache/1.3.3.7 (Unix) (Red-Hat/Linux)
+ETag: &quot;3f80f-1b6-3e1cb03b&quot;
+Accept-Ranges: bytes
+Connection: close
+
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;An Example Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Hello World, this is a very simple HTML document.
+&lt;/body&gt;
+&lt;/html&gt;
+
+http://http://http://@http://http://?http://#http:// is a legitimate URL

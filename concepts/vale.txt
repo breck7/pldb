@@ -1,0 +1,34 @@
+Vale
+====
+
+Vale is a programming language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#784 on PLDB
+4 Years Old
+
+git clone https://github.com/ValeLang/Vale
+
+Compiler for the Vale programming language - http://vale.dev/
+
+- Vale website
+ https://vale.dev/
+- Vale is developed on GitHub and has 716 stars
+- Vale is written in Scala, Markdown, C++, C, XML, HTML, Bourne shell, Python, YAML, CMake, Dockerfile
+- Vale on Twitter
+ https://twitter.com/vale_pl
+- vale.dev was registered in 2019
+
+exported func main() {
+  println(&quot;Hello world!&quot;);
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example

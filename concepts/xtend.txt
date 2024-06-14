@@ -1,0 +1,150 @@
+Xtend
+=====
+
+Xtend is an open source programming language created in 2011 by Sven Efftinge and Sebastian Zarnekow.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Sven%20Efftinge
+ https://pldb.io/concepts/../lists/creators.html#q=Sebastian%20Zarnekow
+
+#451 on PLDB
+13 Years Old
+1k Repos
+
+Xtend is a general-purpose high-level programming language for the Java Virtual Machine. Syntactically and semantically Xtend has its roots in the Java programming language but focuses on a more concise syntax and some additional functionality such as type inference, extension methods, and operator overloading. Being primarily an object-oriented language, it also integrates features known from functional programming, e.g. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Xtend
+
+- Xtend website
+ http://www.xtend-lang.org
+- Xtend Wikipedia page
+ https://en.wikipedia.org/wiki/Xtend
+- There are at least 1,438 Xtend repos on GitHub
+- Xtend on Twitter
+ https://twitter.com/xtendlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 623 users using Xtend in 834 repos on GitHub
+- Xtend appears in the TIOBE Index
+- Pygments supports syntax highlighting for Xtend
+- GitHub supports syntax highlighting for Xtend
+- xtend-lang.org was registered in 2011
+- See also: (5 related languages)Java, Scala, Groovy, Smalltalk, Eclipse
+- 3 languages in PLDB linking to Xtend: cloc, Pygments, Xtext
+
+/*******************************************************************************
+ * Copyright (c) 2012 itemis AG (http://www.itemis.eu) and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Author - Sven Efftinge
+ *******************************************************************************/
+package example6
+
+import org.junit.Test
+import static org.junit.Assert.*
+import java.io.FileReader
+import java.util.Set
+import static extension com.google.common.io.CharStreams.*
+
+class Movies {
+	
+	/**
+	 * @return the total number of action movies
+	 */
+	@Test def void numberOfActionMovies() {
+		assertEquals(828, movies.filter[categories.contains(&#39;Action&#39;)].size)
+	}
+	
+	/**
+	 * @return the year the best rated movie of 80ies (1980-1989) was released.
+	 */
+	@Test def void yearOfBestMovieFrom80ies() {
+		assertEquals(1989, movies.filter[(1980..1989).contains(year)].sortBy[rating].last.year)
+	}
+	
+	/**
+	 * @return the sum of the number of votes of the two top rated movies.
+	 */
+	@Test def void sumOfVotesOfTop2() {
+		val long movies = movies.sortBy[-rating].take(2).map[numberOfVotes].reduce[a, b| a + b]
+		assertEquals(47_229, movies)
+	}
+	
+	val movies = new FileReader(&#39;data.csv&#39;).readLines.map[ line |
+		val segments = line.split(&#39;  &#39;).iterator
+		return new Movie(
+			segments.next,
+			Integer::parseInt(segments.next),
+			Double::parseDouble(segments.next),
+			Long::parseLong(segments.next),
+			segments.toSet
+		)
+	]
+}
+
+@Data class Movie {
+	String title
+	int year
+	double rating
+	long numberOfVotes
+	Set&lt;String&gt; categories
+}
+
+def sayHello(String name) &#39;&#39;&#39;
+    Hello «name» !
+&#39;&#39;&#39;
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

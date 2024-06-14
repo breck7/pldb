@@ -1,0 +1,45 @@
+Android
+=======
+
+Android is an open source operating system created in 2008 by Andy Rubin and Rich Miner and Nick Sears and Chris White.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Andy%20Rubin
+ https://pldb.io/concepts/../lists/creators.html#q=Rich%20Miner
+ https://pldb.io/concepts/../lists/creators.html#q=Nick%20Sears
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20White
+
+#151 on PLDB
+16 Years Old
+
+Android is a mobile operating system developed by Google, based on a modified version of the Linux kernel and other open source software and designed primarily for touchscreen mobile devices such as smartphones and tablets. In addition, Google has further developed Android TV for televisions, Android Auto for cars, and Wear OS for wrist watches, each with a specialized user interface. Variants of Android are also used on game consoles, digital cameras, PCs and other electronics. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Android_(operating_system)
+
+- Android website
+ https://android.com/
+- Android Wikipedia page
+ https://en.wikipedia.org/wiki/Android_(operating_system)
+- Android first developed in Android Inc. and Google
+- Android on Twitter
+ https://twitter.com/android
+- Check out the 2,707 Android meetup groups on Meetup.com.
+- Release Notes for Android
+ https://developer.android.com/about/versions
+- android.com was registered in 1997
+- See also: (11 related languages)Java, C, ARM, X86, Linux, Go, Kotlin, Eclipse, MIPS architecture, iOS, Java Bytecode
+
+package com.example.helloworld;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class HelloWorld extends Activity {
+
+   @Override
+   public void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       TextView tv = new TextView(this);
+       tv.setText(&quot;Hello World&quot;);
+       setContentView(tv);
+   }
+}

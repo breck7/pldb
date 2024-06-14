@@ -1,0 +1,58 @@
+Yorick
+======
+
+Yorick is an open source programming language created in 1996 by David H. Munro.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20H.%20Munro
+
+#1009 on PLDB
+28 Years Old
+
+Try now: Riju
+
+Yorick is an interpreted programming language designed for numerics, graph plotting, and steering large scientific simulation codes. It is quite fast due to array syntax, and extensible via C or Fortran routines. It was created in 1996 by David H. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Yorick_(programming_language)
+
+- Yorick website
+ http://yorick.github.com
+- Yorick Wikipedia page
+ https://en.wikipedia.org/wiki/Yorick_(programming_language)
+- Explore Yorick snippets on Rosetta Code
+- Yorick on HOPL
+ https://hopl.info/showlanguage.prx?exp=2637
+- Yorick appears in the TIOBE Index
+- Yorick Ubuntu package
+ https://packages.ubuntu.com/jammy/yorick
+- Yorick appears in the Quine Relay project
+- See also: (3 related languages)C, Fortran, Perl Data Language
+
+write, &quot;Hello, world!&quot;
+
+#!/usr/bin/yorick -batch
+print, &quot;Hello World&quot;;
+
+&gt; x=[[1,2,3],[4,5,6]]
+&gt; x
+[[1,2,3],[4,5,6]]
+&gt; y=[[7,8],[9,10],[11,12]]
+&gt; x(,+)*y(+,)
+[[39,54,69],[49,68,87],[59,82,105]]
+&gt; x(+,)*y(,+)
+[[58,139],[64,154]]
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example

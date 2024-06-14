@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id kal
+name Kal
+appeared 2012
+tags pl
+website http://rzimmerman.github.io/kal
+latestVersion 0.5.6
+conceptDescription Kal is a highly readable, easy-to-use language that compiles to JavaScript.
+
+writtenIn markdown json yaml
+compilesTo javascript
+repoStats
+ firstCommit 2012
+ commits 444
+ committers 6
+ files 47
+ newestCommit 2014
+country United States
+originCommunity https://github.com/rzimmerman/kal/issues
+
+pygmentsHighlighter Kal
+ filename javascript.py
+ fileExtensions kal
+example
+ task getUserFriends (userName)
+  wait for user from db.users.findOne {name:userName}
+  wait for friends from db.friends.find {userId:user.id}
+  return friends
+
+githubRepo https://github.com/rzimmerman/kal
+ stars 394
+ forks 17
+ subscribers 26
+ created 2012
+ updated 2014
+ description A powerful, easy-to-use, and easy-to-read programming language for the future.
+
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+
+isbndb 0

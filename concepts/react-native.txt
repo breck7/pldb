@@ -1,0 +1,34 @@
+React Native
+============
+
+React Native is an open source framework created in 2015 by Jordan Walke and Christopher Chedeau.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jordan%20Walke
+ https://pldb.io/concepts/../lists/creators.html#q=Christopher%20Chedeau
+
+#206 on PLDB
+9 Years Old
+
+git clone https://github.com/facebook/react-native
+
+A framework for building native applications using React
+
+- React Native website
+ http://www.reactnative.com/
+- React Native Wikipedia page
+ https://en.wikipedia.org/wiki/React_Native
+- React Native is developed on GitHub and has 103,571 stars
+- React Native first developed in Facebook, Inc or TheFacebook, Inc
+- React Native is written in JavaScript, Java, Kotlin, C++, Objective C++, SVG, XML, Markdown, Objective-C, TypeScript, Ruby, CMake, JSON, YAML, Bourne shell, Gradle, Assembly language, HTML, TOML, JSX, Swift
+- reactnative.com was registered in 2015
+
+import React from &quot;react&quot;;
+import { Text, View } from &quot;react-native&quot;;
+
+export default function HelloWorld() {
+    return (
+        &lt;View&gt;
+            &lt;Text&gt;Hello World&lt;/Text&gt;
+        &lt;/View&gt;
+    );
+}

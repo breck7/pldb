@@ -1,0 +1,59 @@
+import ../code/conceptPage.scroll
+
+id eve
+name Eve
+appeared 2016
+tags pl
+website http://witheve.com/
+latestVersion 0.3.0-preview5
+webRepl http://play.witheve.com/#/examples/quickstart.eve
+
+isOpenSource true
+writtenIn typescript css javascript markdown json html yaml dockerfile
+fileType text
+wordRank 5008
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 3250
+ committers 45
+ files 71
+ newestCommit 2018
+country United States
+originCommunity https://github.com/witheve
+
+example
+ // People older than 30
+ [#person age > 30]
+ // The same as above
+ [#person age]
+ age > 30
+ // Also the same as above
+ people = [#person]
+twitter https://twitter.com/with_eve
+
+githubRepo https://github.com/witheve/Eve
+ stars 7057
+ forks 257
+ subscribers 200
+ created 2013
+ updated 2022
+ firstCommit 2016
+ description Better tools for thought
+ issues 76
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName witheve.com
+ registered 2014
+ awisRank
+  2022 2683795
+  2017 1167011
+
+isbndb 0

@@ -1,0 +1,119 @@
+Game Maker Language
+===================
+
+Game Maker Language is a programming language created in 1999.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#809 on PLDB
+25 Years Old
+278 Repos
+
+- There are at least 278 Game Maker Language repos on GitHub
+- Game Maker Language first developed in YoYo Games Ltd
+- The  Google BigQuery Public Dataset GitHub snapshot shows 394 users using Game Maker Language in 430 repos on GitHub
+- There are 2 Project Euler users using Game Maker Language
+- GitHub supports syntax highlighting for Game Maker Language
+- Read more about Game Maker Language on the web: 1.
+ https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/index.html
+
+// Hello World in GML (Game Maker Language)
+draw_text(10,10,&quot;Hello World&quot;)
+screen_refresh()
+keyboard_wait()
+
+/***************************************************
+  Builds and sends the actual piwik tracking request
+  
+  Copyright (c) 2015 John Hatch
+  Licenced under the MIT licence: http://opensource.org/licenses/MIT
+ ***************************************************/
+
+// Source - https://github.com/johnhatch14/GMS-Extensions/blob/master/PiwikAnalyticsForGMS/GMS_PiwikAnalytics.gmx/scripts/_piwikSendBasicReq.gml
+
+//Build argument map
+   var args = ds_map_create();
+   
+   //-----
+   // Populate GET arguments to Piwik HTTP API
+   // See full HTTP API reference at http://developer.piwik.org/api-reference/tracking-api
+   //-----
+   
+   //Required args
+   ds_map_add(args, &quot;idsite&quot;, string(_Piwik_idsite));
+   ds_map_add(args, &quot;rec&quot;, &quot;1&quot;);
+   ds_map_add(args, &quot;url&quot;, _piwikUrlEncode(_Piwik_baseurl + &quot;/&quot; + room_get_name(room)));
+   ds_map_add(args, &quot;apiv&quot;, &quot;1&quot;);
+   ds_map_add(args, &quot;_id&quot;, _piwikUrlEncode(_Piwik_id));
+   ds_map_add(args, &quot;rand&quot;, _piwikUrlEncode( string(round(random(999999999)+game_id)) ));
+   //ds_map_add(args, &quot;new_visit&quot;, &quot;0&quot;);
+   
+   //Pass local time to API
+   var ctz = date_get_timezone();
+   date_set_timezone(timezone_local);
+   var now = date_current_datetime();
+   ds_map_add(args, &quot;h&quot;, _piwikUrlEncode(string(date_get_hour(now))));
+   ds_map_add(args, &quot;m&quot;, _piwikUrlEncode(string(date_get_minute(now))));
+   ds_map_add(args, &quot;s&quot;, _piwikUrlEncode(string(date_get_second(now))));
+   date_set_timezone(ctz);
+   
+   // Add any other arguments passed to script in the form &quot;param=value&quot; to the http arg map
+   //-----
+   var arg_keyval;
+   for (var i=0; i&lt;argument_count; i++)
+   {
+    arg_keyval = _piwikStringExplode(argument[i],&#39;=&#39;);
+    ds_map_add(args, arg_keyval[0], _piwikUrlEncode(string(arg_keyval[1])));
+   }
+
+//Build argument string
+   var argstring = &quot;&quot;;
+   var prevkey = ds_map_find_first(args);
+   argstring += (prevkey + &quot;=&quot; + args[? prevkey] + &quot;&amp;&quot;);
+   repeat (ds_map_size(args)-1)
+   {
+    prevkey = ds_map_find_next(args, prevkey);
+    argstring += (prevkey + &quot;=&quot; + args[? prevkey] + &quot;&amp;&quot;);
+   }
+ds_map_destroy(args);
+
+//Append query string to ds_list of requests to be sent at End Step.
+ds_list_add(_PIWIK_REQS, &quot;?&quot; + argstring);
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,16 @@
+import ../code/conceptPage.scroll
+
+id feel
+name Friendly Enough Expression Language
+appeared 2015
+tags queryLanguage
+standsFor Friendly Enough Expression Language
+conceptDescription FEEL defines a syntax for expressing conditions that input data should be evaluated against
+
+country Germany
+originCommunity Camunda
+reference https://docs.camunda.org/manual/7.11/reference/dmn11/feel/
+
+hasBooleans true
+hasIntegers true
+hasStrings true

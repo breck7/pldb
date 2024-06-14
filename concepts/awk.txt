@@ -1,0 +1,243 @@
+awk
+===
+
+awk, aka Aho, Weinberger, Kernighan, is a programming language created in 1977 by Alfred Aho and Peter J. Weinberger and Brian Kernighan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alfred%20Aho
+ https://pldb.io/concepts/../lists/creators.html#q=Peter%20J.%20Weinberger
+ https://pldb.io/concepts/../lists/creators.html#q=Brian%20Kernighan
+
+#62 on PLDB
+47 Years Old
+3k Repos
+
+Try now: Riju · TIO
+
+AWK is a programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems. The AWK language is a data-driven scripting language consisting of a set of actions to be taken against streams of textual data – either run directly on files or used as part of a pipeline – for purposes of extracting or transforming text, such as producing formatted reports. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AWK
+
+- awk website
+ http://www.cs.princeton.edu/~bwk/btl.mirror/
+- awk Wikipedia page
+ https://en.wikipedia.org/wiki/AWK
+- awk docs
+ https://www.gnu.org/software/gawk/manual/gawk.html
+- There are at least 2,552 awk repos on GitHub
+- awk first developed in Bell Labs
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on GitHub
+- There are 1,929 members in the awk subreddit
+- There are 14 Project Euler users using awk
+- Explore awk snippets on Rosetta Code
+- awk on HOPL
+ https://hopl.info/showlanguage.prx?exp=1844
+- awk ranks #37 in the TIOBE Index
+- awk Ubuntu package
+ https://packages.ubuntu.com/jammy/gawk
+- Pygments supports syntax highlighting for awk
+- GitHub supports syntax highlighting for awk
+- awk appears in the Quine Relay project
+- Indeed.com has 7 matches for "awk engineer".
+- See also: (14 related languages)C, SNOBOL, Bourne shell, Tcl, AMPL, Perl, Lua, Regular Expressions, Unix, sed, FreeBSD, Solaris, Java, ISBN
+- 39 languages in PLDB linking to awk: Armed Bear Common Lisp, Bash, bawk, beef-lang, Chapel, crmsh, Eiffel, ELFE, FFmpeg, FLEX, Flow9, Go, HHVM, Incipit, Java, kona, latino, Lil, Linux, mal, Manim, MongoDB, NGS, Node.js, Noweb, PHP, GNU Poke, POV-Ray SDL, Prism, Pygments, Ragel, Revolution, Ruby, Slony, Semantic Patch Language, Swift, V, Wonkey, XL
+
+BEGIN { print &quot;Hello, world!&quot; }
+
+# awk -f awk.awk
+BEGIN { print &quot;Hello World&quot; }
+
+# Hello world in AWK
+
+BEGIN {
+  print &quot;Hello World!&quot;
+}
+
+#!/bin/awk -f
+
+BEGIN {
+  # It is not possible to define output file names here because
+  # FILENAME is not define in the BEGIN section
+  n = &quot;&quot;;
+  printf &quot;Generating data files ...&quot;;
+  network_max_bandwidth_in_byte = 10000000;
+  network_max_packet_per_second = 1000000;
+  last3 = 0;
+  last4 = 0;
+  last5 = 0;
+  last6 = 0;
+}
+{
+  if ($1 ~ /Average/)
+    { # Skip the Average values
+      n = &quot;&quot;;
+      next;
+    }
+
+  if ($2 ~ /all/)
+    { # This is the cpu info
+      print $3 &gt; FILENAME&quot;.cpu.user.dat&quot;;
+#	  print $4 &gt; FILENAME&quot;.cpu.nice.dat&quot;;
+      print $5 &gt; FILENAME&quot;.cpu.system.dat&quot;;
+#     print $6 &gt; FILENAME&quot;.cpu.iowait.dat&quot;;
+      print $7 &gt; FILENAME&quot;.cpu.idle.dat&quot;;
+      print 100-$7 &gt; FILENAME&quot;.cpu.busy.dat&quot;;
+    }
+  if ($2 ~ /eth0/)
+    { # This is the eth0 network info
+      if ($3 &gt; network_max_packet_per_second)
+	print last3 &gt; FILENAME&quot;.net.rxpck.dat&quot;; # Total number of packets received per second.
+      else
+	{
+	  last3 = $3;
+	  print $3 &gt; FILENAME&quot;.net.rxpck.dat&quot;; # Total number of packets received per second.
+	}
+      if ($4 &gt; network_max_packet_per_second)
+	print last4 &gt; FILENAME&quot;.net.txpck.dat&quot;; # Total number of packets transmitted per second.
+      else
+	{
+	  last4 = $4;
+	  print $4 &gt; FILENAME&quot;.net.txpck.dat&quot;; # Total number of packets transmitted per second.
+	}
+      if ($5 &gt; network_max_bandwidth_in_byte)
+	print last5 &gt; FILENAME&quot;.net.rxbyt.dat&quot;; # Total number of bytes received per second.
+      else
+	{
+	  last5 = $5;
+	  print $5 &gt; FILENAME&quot;.net.rxbyt.dat&quot;; # Total number of bytes received per second.
+	}
+      if ($6 &gt; network_max_bandwidth_in_byte)
+	print last6 &gt; FILENAME&quot;.net.txbyt.dat&quot;; # Total number of bytes transmitted per second.
+      else
+	{
+	  last6 = $6;
+	  print $6 &gt; FILENAME&quot;.net.txbyt.dat&quot;; # Total number of bytes transmitted per second.
+	}
+#     print $7 &gt; FILENAME&quot;.net.rxcmp.dat&quot;; # Number of compressed packets received per second (for cslip etc.).
+#     print $8 &gt; FILENAME&quot;.net.txcmp.dat&quot;; # Number of compressed packets transmitted per second.
+#     print $9 &gt; FILENAME&quot;.net.rxmcst.dat&quot;; # Number of multicast packets received per second.
+    }
+
+  # Detect which is the next info to be parsed
+  if ($2 ~ /proc|cswch|tps|kbmemfree|totsck/)
+    {
+      n = $2;
+    }
+
+  # Only get lines with numbers (real data !)
+  if ($2 ~ /[0-9]/)
+    {
+      if (n == &quot;proc/s&quot;)
+	{ # This is the proc/s info
+	  print $2 &gt; FILENAME&quot;.proc.dat&quot;;
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;cswch/s&quot;)
+	{ # This is the context switches per second info
+	  print $2 &gt; FILENAME&quot;.ctxsw.dat&quot;;
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;tps&quot;)
+	{ # This is the disk info
+	  print $2 &gt; FILENAME&quot;.disk.tps.dat&quot;; # total transfers per second
+	  print $3 &gt; FILENAME&quot;.disk.rtps.dat&quot;; # read requests per second
+	  print $4 &gt; FILENAME&quot;.disk.wtps.dat&quot;; # write requests per second
+	  print $5 &gt; FILENAME&quot;.disk.brdps.dat&quot;; # block reads per second
+	  print $6 &gt; FILENAME&quot;.disk.bwrps.dat&quot;; # block writes per second
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;kbmemfree&quot;)
+	{ # This is the mem info
+	  print $2 &gt; FILENAME&quot;.mem.kbmemfree.dat&quot;; # Amount of free memory available in kilobytes.
+	  print $3 &gt; FILENAME&quot;.mem.kbmemused.dat&quot;; # Amount of used memory in kilobytes. This does not take into account memory used by the kernel itself.
+	  print $4 &gt; FILENAME&quot;.mem.memused.dat&quot;; # Percentage of used memory.
+#         It appears the kbmemshrd has been removed from the sysstat output - ntolia
+#	  print $X &gt; FILENAME&quot;.mem.kbmemshrd.dat&quot;; # Amount of memory shared by the system in kilobytes.  Always zero with 2.4 kernels.
+#	  print $5 &gt; FILENAME&quot;.mem.kbbuffers.dat&quot;; # Amount of memory used as buffers by the kernel in kilobytes.
+	  print $6 &gt; FILENAME&quot;.mem.kbcached.dat&quot;; # Amount of memory used to cache data by the kernel in kilobytes.
+#	  print $7 &gt; FILENAME&quot;.mem.kbswpfree.dat&quot;; # Amount of free swap space in kilobytes.
+#	  print $8 &gt; FILENAME&quot;.mem.kbswpused.dat&quot;; # Amount of used swap space in kilobytes.
+	  print $9 &gt; FILENAME&quot;.mem.swpused.dat&quot;; # Percentage of used swap space.
+#	  n = &quot;&quot;;
+ 	}
+      if (n == &quot;totsck&quot;)
+	{ # This is the socket info
+	  print $2 &gt; FILENAME&quot;.sock.totsck.dat&quot;; # Total number of used sockets.
+	  print $3 &gt; FILENAME&quot;.sock.tcpsck.dat&quot;; # Number of TCP sockets currently in use.
+#	  print $4 &gt; FILENAME&quot;.sock.udpsck.dat&quot;; # Number of UDP sockets currently in use.
+#	  print $5 &gt; FILENAME&quot;.sock.rawsck.dat&quot;; # Number of RAW sockets currently in use.
+#	  print $6 &gt; FILENAME&quot;.sock.ip-frag.dat&quot;; # Number of IP fragments currently in use.
+#	  n = &quot;&quot;;
+ 	}
+    }
+}
+END {
+  print &quot; &#39;&quot; FILENAME &quot;&#39; done.&quot;;
+}
+
+BEGIN {
+    pattern = ARGV[1]
+    for (i = 1; i &lt; ARGC; i++) # remove first argument
+        ARGV[i] = ARGV[i + 1]
+    ARGC--
+    if (ARGC == 1) { # the pattern was the only thing, so force read from standard input (used by book)
+        ARGC = 2
+        ARGV[1] = &quot;-&quot;
+    }
+}
+$0 ~ pattern { print FILENAME &quot;:&quot; $0 }
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0x[0-9a-fA-F]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

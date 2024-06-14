@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id urbiscript
+name Urbiscript
+appeared 2003
+creators Jean-Christophe Baillie
+tags pl
+
+isOpenSource true
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter UrbiScript
+ filename urbi.py
+ fileExtensions u
+
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasMultiLineComments true
+hasComments true
+
+wikipedia https://en.wikipedia.org/wiki/Urbiscript
+ example
+  at (x + y == z)
+      echo("%s + %s == %s" % [x, y, z]);
+ related self io c
+ summary urbiscript is a programming language for robotics.  It features syntactic support for concurrency and event-based programming.  It is a prototype-based object-oriented scripting language.  It is dynamic: name resolution is performed during the program execution (late binding); slots (member variables) can be added/removed at runtime, and even prototypes (superclasses) of an object can be changed at runtime. Memory management is performed by reference counting. Tightly bound to the Urbi platform it supports seamless integration of C++/Java components.
+ created 2011
+ backlinksCount 7
+ pageId 33150834
+ revisionCount 44
+ dailyPageViews 5
+ appeared 2003

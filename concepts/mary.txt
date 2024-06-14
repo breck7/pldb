@@ -1,0 +1,66 @@
+Mary
+====
+
+Mary is a programming language created in 1970.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1284 on PLDB
+54 Years Old
+
+Mary was a programming language designed and implemented by RUNIT at Trondheim, Norway in the 1970s. It borrowed many features from ALGOL 68 but was designed for machine-oriented programming. An unusual feature of its syntax was that expressions were constructed using the conventional infix operators, but all of them had the same precedence and evaluation went from left to right unless there were brackets. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Mary_(programming_language)
+
+- Mary Wikipedia page
+ https://en.wikipedia.org/wiki/Mary_(programming_language)
+- Mary is a superset of ALGOL 68
+- Mary first developed in Stiftelsen for industriell og teknisk forskning
+- Mary on HOPL
+ https://hopl.info/showlanguage.prx?exp=647
+- See also: (4 related languages)SPARC, ALGOL 68, C, Algol
+
+BEGIN
+   INT i := 10;          %% Variable with initial value.
+   REF INT ri := i;      %% Pointer initialized to point to i.
+   INT j := 11;
+   j :- REF INT =: ri;   %% Type conversion and assignment
+                         %% ri now points to j.
+   i =: (ri :- VAL REF INT);
+                         %% Assignment and type conversion
+                         %% ri points to j so j is changed.
+   IF j &gt; 10             %% Conditional statement with result
+   THEN                  %% used inside an arithmetic expression.
+      1
+   ELSE
+      2
+   FI + j =: j;
+END
+
+Language features
+======================================================
+
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  % A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

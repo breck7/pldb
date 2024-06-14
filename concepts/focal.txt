@@ -1,0 +1,50 @@
+Formulating On-Line Calculations in Algebraic Language
+======================================================
+
+Formulating On-Line Calculations in Algebraic Language, aka Formulating On-Line Calculations in Algebraic Language, is a programming language created in 1968 by Richard Merrill.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221968%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20Merrill
+
+#1070 on PLDB
+56 Years Old
+
+Try now: TIO
+
+FOCAL is an interpreted programming language resembling JOSS. The name is an acronym for Formulating On-Line Calculations in Algebraic Language. Largely the creation of Richard Merrill, FOCAL was initially written for and had its largest impact on the Digital Equipment Corporation's (DEC's) PDP-8 computers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/FOCAL_(programming_language)
+
+- Formulating On-Line Calculations in Algebraic Language Wikipedia page
+ https://en.wikipedia.org/wiki/FOCAL_(programming_language)
+- Formulating On-Line Calculations in Algebraic Language first developed in Digital Equipment Corporation
+- Explore Formulating On-Line Calculations in Algebraic Language snippets on Rosetta Code
+- Formulating On-Line Calculations in Algebraic Language on HOPL
+ https://hopl.info/showlanguage.prx?exp=406
+- See also: (3 related languages)JOSS, BASIC, MUMPS
+
+0.1.0.1 TYPE &quot;HELLO WORLD&quot; , !
+
+FOCAL15 V6B
+*01.10 ASK &quot;IN WHAT YEAR WERE YOU BORN?&quot;, YEAR
+*01.20 SET YEAROFFOCAL=YEAR-1969+1
+*01.30 IF (YEAROFFOCAL) 02.10,02.10,01.40
+*01.40 TYPE &quot;YOU WERE BORN IN THE YEAR &quot;,YEAROFFOCAL,&quot; OF FOCAL!&quot;,!
+*01.50 GOTO 01.10
+*02.10 TYPE &quot;YOU ARE TOO OLD FOR FOCAL, POPS&quot;,!
+*02.20 GOTO 01.10
+*GO
+IN WHAT YEAR WERE YOU BORN?:1969
+YOU WERE BORN IN THE YEAR     1.0000 OF FOCAL
+IN WHAT YEAR WERE YOU BORN?:1950
+YOU ARE TOO OLD FOR FOCAL, POPS
+IN WHAT YEAR WERE YOU BORN?:
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"

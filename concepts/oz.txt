@@ -1,0 +1,154 @@
+Oz
+==
+
+Oz is an open source programming language created in 1991 by Gert Smolka.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Gert%20Smolka
+
+#381 on PLDB
+33 Years Old
+371 Repos
+
+Try now: Riju
+
+Oz is a multiparadigm programming language, developed in the Programming Systems Lab at Université catholique de Louvain, for programming language education. It has a canonical textbook: Concepts, Techniques, and Models of Computer Programming. Oz was first designed by Gert Smolka and his students in 1991. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Oz_(programming_language)
+
+- Oz website
+ http://mozart.github.io
+- Oz Wikipedia page
+ https://en.wikipedia.org/wiki/Oz_(programming_language)
+- PLDB has 2 documentation sites for Oz: www.ps.uni-saarland.de, mozart2.org
+- There are at least 371 Oz repos on GitHub
+- Oz first developed in Universität des Saarlandes
+- The  Google BigQuery Public Dataset GitHub snapshot shows 70 users using Oz in 72 repos on GitHub
+- There are 4 Project Euler users using Oz
+- Explore Oz snippets on Rosetta Code
+- Oz on HOPL
+ https://hopl.info/showlanguage.prx?exp=2327
+- Oz appears in the TIOBE Index
+- CodeMirror package for syntax highlighting Oz
+- GitHub supports syntax highlighting for Oz
+- Indeed.com has 0 matches for "oz engineer".
+- See also: (11 related languages)Erlang, Lisp, Prolog, Alice, Scala, Unix, FreeBSD, Linux, Curry, Mercury, Visual Prolog
+
+functor
+import
+    Application
+    System
+define
+    {System.showInfo &#39;Hello, world!&#39;}
+    {Application.exit 0}
+end
+
+% Hello World in Oz
+
+functor
+import
+  System
+  Application
+define
+  {System.showInfo &quot;Hello World!&quot;}
+  {Application.exit 0}
+end
+
+% You can get a lot of information about Oz by following theses links  :
+% - http://mozart.github.io/
+% - http://en.wikipedia.org/wiki/Oz_(programming_language)
+% There is also a well known book that uses Oz for pedagogical reason :
+% - http://mitpress.mit.edu/books/concepts-techniques-and-models-computer-programming
+% And there are two courses on edX about &#39;Paradigms of Computer Programming&#39; that also uses Oz for pedagogical reason :
+% - https://www.edx.org/node/2751#.VHijtfl5OSo
+% - https://www.edx.org/node/4436#.VHijzfl5OSo
+%
+% Here is an example of some code written with Oz.
+
+declare
+% Computes the sum of square of the N first integers.
+fun {Sum N}
+  local SumAux in
+    fun {SumAux N Acc}
+      if N==0 then Acc
+      else
+        {Sum N-1 Acc}
+      end
+    end
+    {SumAux N 0}
+  end
+end
+
+% Returns true if N is a prime and false otherwize
+fun {Prime N}
+  local PrimeAcc in
+    fun {PrimeAcc N Acc}
+	    if(N == 1) then false
+	    elseif(Acc == 1) then true
+	    else
+	      if (N mod Acc) == 0 then false
+	      else
+	       {PrimeAcc N Acc-1}
+	      end
+	   end
+    end
+  {PrimeAcc N (N div 2)}
+  end
+end
+
+% Reverse a list using cells and for loop (instead of recursivity)
+fun {Reverse L}
+  local RevList in
+    RevList = {NewCell nil}
+    for E in L do
+      RevList := E|@RevList
+    end
+    @RevList
+  end
+end
+
+class Counter
+   attr val
+   meth init(Value)
+      val:=Value
+   end
+   meth browse
+      {Browse @val}
+   end
+   meth inc(Value)
+      val :=@val+Value
+   end
+end
+
+local C in
+   C = {New Counter init(0)}
+   {C inc(6)}
+   {C browse}
+end
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token %
+ Example
+  % A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

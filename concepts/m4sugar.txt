@@ -1,0 +1,61 @@
+M4Sugar
+=======
+
+M4Sugar is a programming language created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1399 on PLDB
+21 Years Old
+0 Repos
+
+- There are at least 0 M4Sugar repos on GitHub
+- M4Sugar first developed in Free Software Foundation, Inc.
+- GitHub supports syntax highlighting for M4Sugar
+- Read more about M4Sugar on the web: 1.
+ http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
+
+m4_define([m4_list_declare], [m4_do(
+	[m4_define([$1_GET], [m4_expand([m4_list_nth([$1], $][1)])])],
+	[m4_define([$1_FOREACH], [m4_foreach([item], [m4_dquote_elt(m4_list_contents([$1]))], m4_quote($][1))])],
+)])
+
+m4_define([m4_list_add], [m4_do(
+	[m4_pushdef([_LIST_NAME], [[_LIST_$1]])],
+	[m4_ifndef(_LIST_NAME,
+		[m4_define(_LIST_NAME, m4_dquote(m4_escape([$2])))],
+		[m4_define(_LIST_NAME, m4_dquote(m4_list_contents([$1]), m4_escape([$2])))],
+	)],
+	[m4_popdef([_LIST_NAME])],
+)])
+
+m4_define([m4_list_contents], [m4_do(
+	[m4_pushdef([_LIST_NAME], [[_LIST_$1]])],
+	[m4_ifndef(_LIST_NAME, [], m4_quote(_LIST_NAME))],
+	[m4_popdef([_LIST_NAME])],
+)])
+
+m4_define([m4_list_nth], [m4_argn([$2], m4_list_contents([$1]))])
+
+m4_define([m4_list_pop_front], [m4_do(
+	[m4_pushdef([_LIST_NAME], [[_LIST_$1]])],
+	[m4_car(m4_unquote(_LIST_NAME))],
+	[m4_define(_LIST_NAME, m4_cdr(m4_unquote(_LIST_NAME)))],
+	[m4_popdef([_LIST_NAME])],
+)])
+
+m4_define([m4_list_pop_back], [m4_do(
+	[m4_pushdef([_LIST_NAME], [[_LIST_$1]])],
+	[m4_define(_LIST_NAME, m4_dquote(m4_reverse(m4_unquote(_LIST_NAME))))],
+	[m4_list_pop_front([$1])],
+	[m4_define(_LIST_NAME, m4_dquote(m4_reverse(m4_unquote(_LIST_NAME))))],
+	[m4_popdef([_LIST_NAME])],
+)])
+
+dnl
+dnl $1: List name
+dnl $2: What
+dnl $3: If contains
+dnl $4: If not
+m4_define([m4_list_contains], [m4_do(
+	[m4_foreach([item], m4_list_contents([$1]), m4_if(item, [$2], [[$3]], [[$4]]))]
+)])

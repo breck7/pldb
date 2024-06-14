@@ -1,0 +1,185 @@
+CoffeeScript
+============
+
+CoffeeScript is an open source programming language created in 2009 by Jeremy Ashkenas.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Ashkenas
+
+#29 on PLDB
+15 Years Old
+65k Repos
+
+git clone https://github.com/jashkenas/coffeescript/
+
+Try now: Riju · TIO · Replit
+
+CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability. Specific additional features include list comprehension and pattern matching. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/CoffeeScript
+
+- CoffeeScript website
+ http://coffeescript.org
+- CoffeeScript Wikipedia page
+ https://en.wikipedia.org/wiki/CoffeeScript
+- CoffeeScript is developed on GitHub
+- PLDB has 2 documentation sites for CoffeeScript: coffeescript.org, devdocs.io
+- There are at least 64,590 CoffeeScript repos on GitHub
+- CoffeeScript first developed in https://github.com/jashkenas
+- CoffeeScript compiles to JavaScript
+- CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 45k users using CoffeeScript in 69k repos on GitHub
+- Explore CoffeeScript snippets on Rosetta Code
+- CoffeeScript appears in the TIOBE Index
+- CoffeeScript Ubuntu package
+ https://packages.ubuntu.com/jammy/coffeescript
+- CodeMirror package for syntax highlighting CoffeeScript
+- Monaco package for syntax highlighting CoffeeScript
+- Pygments supports syntax highlighting for CoffeeScript
+- GitHub supports syntax highlighting for CoffeeScript
+- CoffeeScript appears in the Quine Relay project
+- There is 1 Jupyter Kernel for CoffeeScript
+- Frequently Asked Questions for CoffeeScript
+ https://github.com/jashkenas/coffeescript/wiki/FAQ
+- coffeescript.org was registered in 2009
+- See also: (17 related languages)Haskell, JavaScript, Perl, Python, Ruby, YAML, LiveScript, Ruby on Rails, JQuery, Apache Maven, Java, Markdown, Elm, Haxe, Dart, Opa, TypeScript
+- 28 languages in PLDB linking to CoffeeScript: Ace Editor, BlackCoffee, CoffeeScript, contracts.coffee, CSON, daonode, dexvis, Eiffel, EmberScript, fjs, grid-notation, HHVM, IcedCoffeeScript, Jekyll, kode, lispyscript, Literate CoffeeScript, mal, mochajs, Node.js, Pug, Pygments, Statsplorer, Taijilang, taxa, TestML, ToffeeScript, U
+
+console.log &quot;Hello, world!&quot;
+
+alert &quot;Hello World&quot;
+
+// Hello world in CoffeeScript
+
+alert &quot;Hello, World!&quot;
+
+console.log &quot;Hello, World!&quot;
+
+author = &quot;Wittgenstein&quot;
+quote  = &quot;A picture is a fact. -- #{ author }&quot;
+
+sentence = &quot;#{ 22 / 7 } is a decent approximation of π&quot;
+
+and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0x[0-9a-fA-F]+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token ###
+ Example
+  ### A comment
+  ###
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token console.log
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported X
+ Token 
+ Example

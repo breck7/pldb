@@ -1,0 +1,39 @@
+PML
+===
+
+PML, aka Practical Markup Language, is a text markup language created in 1986 by Christian Neumanns.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Christian%20Neumanns
+
+#2513 on PLDB
+38 Years Old
+
+- PML website
+ https://www.pml-lang.dev/
+- PML first developed in https://github.com/pml-lang
+- Read more about PML on the web: 1.
+ https://medium.com/@christian.ppl
+
+[doc [title PML Demo]
+
+    [ch [title Introduction]
+        This is a [i simple] example.
+
+        You can add images, audio, and videos:
+        [image (
+            source = images/strawberries.jpg
+             width = 300
+             align = center
+        )]
+    ]
+
+    [ch [title Source Code]
+        You can show highlighted source code:
+        [code (lang=java)
+            // Simple Java example
+            public static void sayHello ( String name ) {
+                System.out.println ( &quot;Hello &quot; + name );
+            }
+        code]
+    ]
+]

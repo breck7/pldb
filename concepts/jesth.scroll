@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id jesth
+name Jesth
+appeared 2022
+tags dataNotation
+latestVersion 0.0.8
+standsFor Just Extract Sections Then Hack !
+
+writtenIn markdown python toml json
+relatedConcepts toml json yaml
+repoStats
+ firstCommit 2022
+ commits 39
+ committers 1
+ files 104
+ newestCommit 2024
+country Unknown
+originCommunity https://github.com/pyrustic
+reference https://news.ycombinator.com/item?id=35991018
+
+example
+ This text actually belongs to an anonymous section,
+ which happens to also be the first section of this document
+ 
+ []
+ This text actually belongs to the second anonymous section
+ of this document.
+ If the very first section of a document is anonymous, it can
+ ignore to define its header.
+
+githubRepo https://github.com/pyrustic/jesth
+ stars 193
+ forks 3
+ subscribers 2
+ created 2022
+ updated 2024
+ description Human-readable versatile data format
+ issues 0

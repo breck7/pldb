@@ -1,0 +1,88 @@
+Fennel
+======
+
+Fennel is a programming language created in 2016 by Calvin Rose.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Calvin%20Rose
+
+#143 on PLDB
+8 Years Old
+207 Repos
+
+git clone https://github.com/bakpakin/fennel
+
+Lua Lisp Language
+
+- Fennel website
+ https://fennel-lang.org/
+- Fennel is developed on GitHub and has 1,699 stars
+- There are at least 207 Fennel repos on GitHub
+- Fennel first developed in https://lists.sr.ht/%7Etechnomancy/fennel
+- Fennel is written in Fennel, Markdown, Lua, YAML, Make, Diff, Bourne shell
+- The  Google BigQuery Public Dataset GitHub snapshot shows 12 users using Fennel in 12 repos on GitHub
+- Pygments supports syntax highlighting for Fennel
+- fennel-lang.org was registered in 2018
+- 5 languages in PLDB linking to Fennel: cloc, Fennel, funl, mal, Pygments
+
+;; Sample: read the state of the keyboard and move the player accordingly
+(local dirs {:up [0 -1] :down [0 1] :left [-1 0] :right [1 0]})
+(each [key delta (pairs dirs)]
+  (when (love.keyboard.isDown key)
+    (let [[dx dy] delta
+          [px py] player
+          x (+ px (* dx player.speed dt))
+          y (+ py (* dy player.speed dt))]
+      (: world :move player x y))))
+
+(print &quot;Hello World&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  ; -?\d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  ; -?\d+\.\d+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

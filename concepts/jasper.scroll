@@ -1,0 +1,37 @@
+import ../code/conceptPage.scroll
+
+id jasper
+name jasper
+appeared 2014
+creators Emanuel Rylke
+tags pl
+webRepl http://ema-fox.github.io/jasper/
+
+writtenIn markdown
+repoStats
+ firstCommit 2014
+ commits 66
+ committers 1
+ files 7
+ newestCommit 2014
+country Germany
+originCommunity https://github.com/ema-fox/jasper/issues
+
+example
+ (+ 2 3)
+ (map [+ 1 _] '(1 2 3))
+ (let a 4 (map [+ 3 a _] '(1 2 3)))
+ (alert "Hello world!")
+ (map str '(1 2 3) '(foo bar baz))
+
+githubRepo https://github.com/ema-fox/jasper
+ firstCommit 2014
+ stars 3
+ subscribers 2
+ created 2014
+ updated 2021
+ description compile to js lisp inspired by arc
+ forks 0
+ issues 0
+
+isbndb 0

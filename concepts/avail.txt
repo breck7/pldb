@@ -1,0 +1,53 @@
+Avail
+=====
+
+Avail is a programming language created in 2010 by Mark van Gulik and Todd L. Smith.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mark%20van%20Gulik
+ https://pldb.io/concepts/../lists/creators.html#q=Todd%20L.%20Smith
+
+#1410 on PLDB
+14 Years Old
+
+git clone https://github.com/AvailLang/Avail
+
+The Avail programming language. Includes the virtual machine, standard library, and standard examples.
+
+- Avail website
+ https://www.availlang.org/
+- Avail is developed on GitHub and has 48 stars
+- Avail first developed in The Avail Foundation, LLC
+- Avail is written in Kotlin, SVG, XML, JSON, CSS, Gradle, JavaScript, Markdown, HTML, Bash, Bourne shell, Java, JSON5
+
+Public method &quot;Play Wump the Wumpus with reader_with reporter_&quot; is
+[
+    reader : []→string,
+    writer : [string]→⊤
+|
+    /* Set up the game&#39;s I/O. */
+    Wump the Wumpus reader := reader;
+    Wump the Wumpus reporter := writer;
+    /* Create a new game. All references to game objects within the block are
+     * implicitly understood as relative to this new game.
+     */
+    newGame ::= a game of Wump the Wumpus;
+    Use newGame as the implied game and do
+    [
+        Welcome;
+        Look around, having just entered;
+        Until the game is over, do
+        [
+            Give the agent a turn;
+            Give the first swarm a turn;
+            Give the second swarm a turn;
+            Give the wumpus a turn;
+        ];
+        If the agent is alive then
+        [
+            If the wumpus is dead then [Report victory;]
+            else [Report cowardice;];
+        ]
+        else [Report defeat;];
+        Goodbye;
+    ];
+] : ⊤;

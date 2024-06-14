@@ -1,0 +1,94 @@
+Bison
+=====
+
+Bison is an open source grammar language created in 1985 by Robert Corbett.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Corbett
+
+#347 on PLDB
+39 Years Old
+196 Repos
+
+GNU bison, commonly known as Bison, is a parser generator that is part of the GNU Project. Bison reads a specification of a context-free language, warns about any parsing ambiguities, and generates a parser (either in C, C++, or Java) which reads sequences of tokens and decides whether the sequence conforms to the syntax specified by the grammar. Bison by default generates LALR parsers but can also create GLR parsers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GNU_bison
+
+- Bison website
+ https://www.gnu.org/software/bison/
+- Bison Wikipedia page
+ https://en.wikipedia.org/wiki/GNU_bison
+- Bison docs
+ https://www.gnu.org/software/bison/manual/bison.html
+- There are at least 196 Bison repos on GitHub
+- Bison first developed in GNU Project
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Bison in 4k repos on GitHub
+- Bison on HOPL
+ https://hopl.info/showlanguage.prx?exp=4653
+- GitHub supports syntax highlighting for Bison
+- See also: (12 related languages)C, M4, Java, Yacc, Ruby, PHP, Go, Bash, LilyPond, PostgreSQL, MySQL, GNU Octave
+- Read more about Bison on the web: 1.
+ https://github.com/babyraging/yash
+- 1 languages in PLDB linking to Bison: Lemon
+
+/* Reverse Polish Notation calculator. */
+
+%{
+  #include &lt;stdio.h&gt;
+  #include &lt;math.h&gt;
+  int yylex (void);
+  void yyerror (char const *);
+%}
+
+%define api.value.type {double}
+%token NUM
+
+%% /* Grammar rules and actions follow. */
+
+# Makefile
+
+FILES	= Lexer.c Parser.c Expression.c main.c
+CC	= g++
+CFLAGS	= -g -ansi
+
+test:		$(FILES)
+		$(CC) $(CFLAGS) $(FILES) -o test
+
+Lexer.c:	Lexer.l
+		flex Lexer.l
+
+Parser.c:	Parser.y Lexer.c
+		bison Parser.y
+
+clean:
+		rm -f *.o *~ Lexer.c Lexer.h Parser.c Parser.h test
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

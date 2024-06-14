@@ -1,0 +1,27 @@
+OMG IDL
+=======
+
+OMG IDL, aka OMG Interface Definition Language, is an interface design language created in 2018.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2504 on PLDB
+6 Years Old
+
+- OMG IDL website
+ https://www.omg.org/spec/IDL/About-IDL/
+- OMG IDL first developed in Object Management Group
+- Pygments supports syntax highlighting for OMG IDL
+
+interface A {
+    typedef long L1;
+    short opA (in L1 l_1);
+};
+interface B {
+    typedef short L1;
+    L1 opB (in long l);
+};
+interface C: B, A {
+    typedef L1 L2; // Error: L1 ambiguous
+    typedef A::L1 L3; // A::L1 is OK
+    B::L1 opC (in L3 l_3); // All OK no ambiguities
+};

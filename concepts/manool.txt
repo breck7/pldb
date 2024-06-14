@@ -1,0 +1,59 @@
+manool
+======
+
+manool is a programming language created in 2018 by Alex Protasov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alex%20Protasov
+
+#1202 on PLDB
+6 Years Old
+
+git clone https://github.com/rusini/manool
+
+Fairly readable homoiconic language with primarily value (non-referential) semantics that balances the programmer's productivity with scalability
+
+- manool website
+ https://manool.org/
+- manool is developed on GitHub and has 56 stars
+- manool first developed in https://github.com/rusini/manool/pulls
+- manool is written in C++, C, YAML, Markdown, Bourne shell, Make, Bash
+- manool.org was registered in 2018
+- Read more about manool on the web: 1.
+ https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
+
+-- recursive version, MANOOLish &quot;cascading&quot; notation
+{ {extern &quot;manool.org.18/std/0.3/all&quot;} in
+: let rec
+  { Fact = -- compile-time constant binding
+    { proc { N } as -- precondition: N.IsI48[] &amp; (N &gt;= 0)
+    : if N == 0 then 1 else
+      N * Fact[N - 1]
+    }
+  }
+  in
+  Out.WriteLine[&quot;Factorial of 10 is &quot;; Fact[10]]
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

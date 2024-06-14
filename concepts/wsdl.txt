@@ -1,0 +1,73 @@
+WSDL
+====
+
+WSDL, aka Web Services Description Language, is a xml format created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#908 on PLDB
+24 Years Old
+
+The Web Services Description Language (WSDL ) is an XML-based interface definition language that is used for describing the functionality offered by a web service. The acronym is also used for any specific WSDL description of a web service (also referred to as a WSDL file), which provides a machine-readable description of how the service can be called, what parameters it expects, and what data structures it returns. Therefore, its purpose is roughly similar to that of a method signature in a programming language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Web_Services_Description_Language
+
+- WSDL Wikipedia page
+ https://en.wikipedia.org/wiki/Web_Services_Description_Language
+- WSDL docs
+ https://www.w3.org/TR/2001/NOTE-wsdl-20010315
+- See also: (3 related languages)XML, SOAP, BPEL
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;description xmlns=&quot;http://www.w3.org/ns/wsdl&quot;
+             xmlns:tns=&quot;http://www.tmsws.com/wsdl20sample&quot;
+             xmlns:whttp=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot;
+             xmlns:wsoap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot;
+             targetNamespace=&quot;http://www.tmsws.com/wsdl20sample&quot;&gt;
+
+&lt;documentation&gt;
+    This is a sample WSDL 2.0 document.
+&lt;/documentation&gt;
+
+&lt;!-- Abstract type --&gt;
+   &lt;types&gt;
+      &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+                xmlns=&quot;http://www.tmsws.com/wsdl20sample&quot;
+                targetNamespace=&quot;http://www.example.com/wsdl20sample&quot;&gt;
+                 
+         &lt;xs:element name=&quot;request&quot;&gt; ... &lt;/xs:element&gt;
+         &lt;xs:element name=&quot;response&quot;&gt; ... &lt;/xs:element&gt;
+      &lt;/xs:schema&gt;
+   &lt;/types&gt;
+
+&lt;!-- Abstract interfaces --&gt;
+   &lt;interface name=&quot;Interface1&quot;&gt;
+      &lt;fault name=&quot;Error1&quot; element=&quot;tns:response&quot;/&gt;
+      &lt;operation name=&quot;Get&quot; pattern=&quot;http://www.w3.org/ns/wsdl/in-out&quot;&gt;
+         &lt;input messageLabel=&quot;In&quot; element=&quot;tns:request&quot;/&gt;
+         &lt;output messageLabel=&quot;Out&quot; element=&quot;tns:response&quot;/&gt;
+      &lt;/operation&gt;
+   &lt;/interface&gt;
+
+&lt;!-- Concrete Binding Over HTTP --&gt;
+   &lt;binding name=&quot;HttpBinding&quot; interface=&quot;tns:Interface1&quot;
+            type=&quot;http://www.w3.org/ns/wsdl/http&quot;&gt;
+      &lt;operation ref=&quot;tns:Get&quot; whttp:method=&quot;GET&quot;/&gt;
+   &lt;/binding&gt;
+   
+&lt;!-- Concrete Binding with SOAP--&gt;
+   &lt;binding name=&quot;SoapBinding&quot; interface=&quot;tns:Interface1&quot;
+            type=&quot;http://www.w3.org/ns/wsdl/soap&quot;
+            wsoap:protocol=&quot;http://www.w3.org/2003/05/soap/bindings/HTTP/&quot;
+            wsoap:mepDefault=&quot;http://www.w3.org/2003/05/soap/mep/request-response&quot;&gt;
+      &lt;operation ref=&quot;tns:Get&quot; /&gt;
+   &lt;/binding&gt;
+
+&lt;!-- Web Service offering endpoints for both bindings--&gt;
+   &lt;service name=&quot;Service1&quot; interface=&quot;tns:Interface1&quot;&gt;
+      &lt;endpoint name=&quot;HttpEndpoint&quot;
+                binding=&quot;tns:HttpBinding&quot;
+                address=&quot;http://www.example.com/rest/&quot;/&gt;
+      &lt;endpoint name=&quot;SoapEndpoint&quot;
+                binding=&quot;tns:SoapBinding&quot;
+                address=&quot;http://www.example.com/soap/&quot;/&gt;
+   &lt;/service&gt;
+&lt;/description&gt;

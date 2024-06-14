@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id dtd
+name DTD
+appeared 1996
+tags grammarLanguage
+standsFor document type definition
+
+clocExtensions dtd
+fileType text
+centralPackageRepositoryCount 0
+country Switzerland
+originCommunity International Organization for Standardization
+
+pygmentsHighlighter DTD
+ filename html.py
+ fileExtensions dtd
+
+wikipedia https://en.wikipedia.org/wiki/Document_type_definition
+ example
+  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <!DOCTYPE people_list [
+    <!ELEMENT people_list (person*)>
+    <!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT birthdate (#PCDATA)>
+    <!ELEMENT gender (#PCDATA)>
+    <!ELEMENT socialsecuritynumber (#PCDATA)>
+  ]>
+  <people_list>
+    <person>
+      <name>Fred Bloggs</name>
+      <birthdate>2008-11-27</birthdate>
+      <gender>Male</gender>
+    </person>
+  </people_list>
+ related xml html
+ summary A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A Document Type Definition (DTD) defines the legal building blocks of an XML document. It defines the document structure with a list of legal elements and attributes. A DTD can be declared inline inside an XML document, or as an external reference. XML uses a subset of SGML DTD. As of 2009, newer XML namespace-aware schema languages (such as W3C XML Schema and ISO RELAX NG) have largely superseded DTDs. A namespace-aware version of DTDs is being developed as Part 9 of ISO DSDL. DTDs persist in applications that need special publishing characters, such as the XML and HTML Character Entity References, which derive from larger sets defined as part of the ISO SGML standard effort.
+ pageId 8537
+ dailyPageViews 235
+ created 2001
+ backlinksCount 72
+ revisionCount 583
+ appeared 2009
+
+isbndb 0
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Inside XML DTDs: Scientific and Technical|1999|Simon St. Laurent|2097228|3.00|4|0
+ XML Programming Success in a Day: Beginner's Guide to Fast, Easy, and Efficient Learning of XML Programming (XML, XML Programming, Programming, XML Guide, ... XSL, DTD's, Schemas, HTML5, JavaScript)|2015|Sam Key|45569772|3.22|18|3

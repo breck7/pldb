@@ -1,0 +1,70 @@
+Cue
+===
+
+Cue is a data notation created in 2018 by Marcel van Lohuizen.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Marcel%20van%20Lohuizen
+
+#288 on PLDB
+6 Years Old
+
+git clone https://github.com/cuelang/cue
+
+Try now: Web
+
+CUE has moved to https://github.com/cue-lang/cue
+
+- Cue website
+ https://cuelang.org/
+- Cue is developed on GitHub and has 3,148 stars
+- Cue first developed in https://github.com/cue-lang
+- Cue is written in Go, YAML, Protocol Buffers, JSON, Markdown, Dockerfile
+- Cue on Twitter
+ https://twitter.com/cue_lang
+- cuelang.org was registered in 2018
+
+#Spec: {
+  kind: string
+
+  name: {
+    first:   !=&quot;&quot;  // must be specified and non-empty
+    middle?: !=&quot;&quot;  // optional, but must be non-empty when specified
+    last:    !=&quot;&quot;
+  }
+
+  // The minimum must be strictly smaller than the maximum and vice versa.
+  minimum?: int &amp; &lt;maximum
+  maximum?: int &amp; &gt;minimum
+}
+
+// A spec is of type #Spec
+spec: #Spec
+spec: {
+  knid: &quot;Homo Sapiens&quot; // error, misspelled field
+
+  name: first: &quot;Jane&quot;
+ 
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

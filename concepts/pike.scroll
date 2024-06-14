@@ -1,0 +1,117 @@
+import ../code/conceptPage.scroll
+
+id pike
+name Pike
+appeared 1994
+creators Fredrik Hübinette
+tags pl
+website https://pike.lysator.liu.se/
+
+isOpenSource true
+tryItOnline pike
+fileType text
+wordRank 9961
+documentation https://pike.lysator.liu.se/docs/man/
+rosettaCode http://www.rosettacode.org/wiki/Category:Pike
+quineRelay Pike
+centralPackageRepositoryCount 0
+ubuntuPackage pike8.0
+country Sweden
+originCommunity Chalmers Datorförening
+projectEuler Pike
+ memberCount
+  2019 3
+  2022 6
+
+helloWorldCollection Pike
+ // Hello world in Pike (pike.roxen.com)
+ 
+ int main(){
+         write("Hello World!\n");
+ }
+ 
+pygmentsHighlighter Pike
+ filename c_like.py
+ fileExtensions pike pmod
+rijuRepl https://riju.codes/pike
+ example
+  int main()
+  {
+    write("Hello, world!\n");
+    return 0;
+  }
+  
+leachim6 Pike
+ filepath p/Pike.pike
+ fileExtensions pike
+ example
+  int main() {
+      write("Hello World\n");
+      return 0;
+  }
+  
+
+lineCommentToken //
+printToken write
+
+hasComments true
+hasMacros true
+ #define CYCLES 20
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
+wikipedia https://en.wikipedia.org/wiki/Pike_(programming_language)
+ example
+  mixed anything;
+  anything = (int)5.5;         // anything is now the integer value 5
+  anything = (string)anything; // anything is now the string value "5"
+ related lpc c
+ summary Pike is an interpreted, general-purpose, high-level, cross-platform, dynamic programming language, with a syntax similar to that of C. Unlike many other dynamic languages, Pike is both statically and dynamically typed, and requires explicit type definitions. It features a flexible type system that allows the rapid development and flexible code of dynamically typed languages, while still providing some of the benefits of a statically typed language. Pike features garbage collection, advanced data types, and first-class anonymous functions, with support for many programming paradigms, including object-oriented, functional and imperative programming. Pike is free software, released under the GPL, LGPL and MPL licenses.
+ pageId 86780
+ dailyPageViews 45
+ created 2002
+ backlinksCount 66
+ revisionCount 165
+ appeared 1994
+
+hopl https://hopl.info/showlanguage.prx?exp=2369
+tiobe Pike
+
+domainName pike.lysator.liu.se
+
+githubBigQuery Pike
+ repos 105
+ users 94
+
+linguistGrammarRepo https://github.com/hww3/pike-textmate
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 1
+ commitCount 1
+ sampleCount 3
+ example
+  #!/usr/bin/env pike
+  
+  int main(int argc, array argv) {
+  	return 0;
+  }
+  
+  
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2010||Pike (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786131011245
+
+githubLanguage Pike
+ fileExtensions pike pmod
+ trendingProjectsCount 0
+ type programming
+ interpreters pike
+ aceMode text
+ tmScope source.pike
+ repos 145
+
+semanticScholar 0

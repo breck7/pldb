@@ -1,0 +1,32 @@
+import ../code/conceptPage.scroll
+
+id world
+name world
+appeared 2011
+tags pl
+website http://www.world-lang.org
+
+example
+ timeval: struct [
+     slong sec
+     sint32 usec
+ ] none
+ 
+ timezone: struct [
+     sint minuteswest
+     sint dsttime
+ ] none
+ 
+ gettimeofday: routine [
+     [typecheck]
+     libc "gettimeofday" [
+         tp [struct!] pointer
+         tzp [struct!] pointer
+     ]
+     sint
+ ]
+
+domainName world-lang.org
+ registered 2011
+ awisRank
+  2022 9357613

@@ -1,0 +1,64 @@
+import ../code/conceptPage.scroll
+
+id mirc
+name MIRC scripting language
+appeared 1995
+creators Khaled Mardam-Bey
+tags pl
+website http://mirc.com/
+
+isOpenSource false
+fileType text
+codeMirror mirc
+centralPackageRepositoryCount 0
+country Great Britain
+originCommunity https://www.mirc.com
+
+leachim6 Mirc
+ filepath m/Mirc.mrc
+ fileExtensions mrc
+ example
+  echo -a Hello World
+  
+
+printToken echo
+
+hasPrintDebugging true
+
+wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
+ example
+  ;Placed in a remote script
+  
+  ;When a user types Hello! in a channel,
+  ;you answer back: Hello, [nickname]!
+  
+  on *:TEXT:Hello!:#:{ msg $chan Hello, $nick $+ ! }
+  
+  ;When a user types Hello! in a private message,
+  ;you answer back: Hello, [nickname]!
+  
+  on *:TEXT:Hello!:?: { msg $nick Hello, $nick $+ ! }
+  
+  ;Here is a script which automatically gives voice to a user
+  ;who joins a particular channel (The Bot or user should have HOP)
+  
+  on *:JOIN:#?: { mode $chan +v $nick }
+  
+  ;A bad word script
+  
+  on *:Text:die*:#: { .mode $chan +b $nick | kick $chan $nick Dont say that again }
+ related ini
+ summary The mIRC scripting language, often unofficially abbreviated to "mSL", is the scripting language embedded in mIRC, an IRC client for Windows.
+ pageId 310996
+ dailyPageViews 37
+ created 2003
+ backlinksCount 69
+ revisionCount 313
+ appeared 1995
+
+domainName mirc.com
+ registered 1997
+ awisRank
+  2022 198825
+
+isbndb 0

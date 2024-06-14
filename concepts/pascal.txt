@@ -1,0 +1,239 @@
+Pascal
+======
+
+Pascal is a programming language created in 1970 by Niklaus Wirth.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Niklaus%20Wirth
+
+#44 on PLDB
+54 Years Old
+49k Repos
+
+Try now: Riju
+
+Pascal is an imperative and procedural programming language, which Niklaus Wirth designed in 1968–69 and published in 1970, as a small, efficient language intended to encourage good programming practices using structured programming and data structuring. It is named in honor of the French mathematician, philosopher and physicist Blaise Pascal. Pascal was developed on the pattern of the ALGOL 60 language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Pascal_(programming_language)
+
+- Pascal downloads page
+ https://www.freepascal.org/download.html
+- Pascal Wikipedia page
+ https://en.wikipedia.org/wiki/Pascal_(programming_language)
+- Pascal docs
+ https://www.freepascal.org/docs.html
+- Pascal mailing list
+ https://www.freepascal.org/maillist.html
+- Video demo of Pascal
+ https://www.youtube.com/watch?v=Hw4GEwhCZpc
+- There are at least 49,346 Pascal repos on GitHub
+- Pascal first developed in ETH Zürich
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Pascal in 10k repos on GitHub
+- There are 1,858 members in the Pascal subreddit
+- There are 710 Project Euler users using Pascal
+- Explore Pascal snippets on Rosetta Code
+- Pascal is supported by the GDB
+- Pascal on HOPL
+ https://hopl.info/showlanguage.prx?exp=520
+- Pascal appears in the TIOBE Index
+- Pascal Ubuntu package
+ https://packages.ubuntu.com/jammy/fp-compiler
+- ANTLR grammar for Pascal
+- CodeMirror package for syntax highlighting Pascal
+- Monaco package for syntax highlighting Pascal
+- GitHub supports syntax highlighting for Pascal
+- Pascal appears in the Quine Relay project
+- Release Notes for Pascal
+ https://www.freepascal.org/news.html
+- Frequently Asked Questions for Pascal
+ https://www.freepascal.org/faq.html
+- Indeed.com has 102 matches for "pascal developer".
+- See also: (35 related languages)Delphi, Free Pascal, Turbo Pascal, UCSD Pascal, ALGOL W, Ada, Go, Java, Modula, Modula-2, Modula-3, Oberon, Object Pascal, Oxygene, Seed7, ALGOL 60, Euler, Lisp, ALGOL 68, Assembly language, Tex, Simula, Fortran, Watcom, C, X86, IP Pascal, C#, Algol, PL/I, iOS, Android, Unicode, Linux, FreeBSD
+- 53 languages in PLDB linking to Pascal: Ace Editor, ADLIB, Bazel, binaryen, C2, chaiscript, Chapel, chrysaLisp, cloc, egel, Eiffel, Emscripten, Extended Pascal, Fardlang, Felix, GAP, Halide, haste, HHVM, High Level Assembly, H++, Julia, Ligo, mal, MicroPython, MongoDB, mythryl, Node.js, P, Pawn, PAWN, PHP, PLZ, GNU Poke, polymath, POV-Ray SDL, psyche-c, Pygments, Racket, raptorjit, Revolution, RicScript, SciPy, skip, Snowball, SourcePawn, stacklang, Swift, TensorFlow, typecobol, v8, Virt, Wren
+
+unit output;
+
+interface
+
+function Square(const num: Integer): Integer;
+
+implementation
+
+// Type your code here, or load an example.
+
+function Square(const num: Integer): Integer;
+begin
+    Square := num * num;
+end;
+
+end.
+
+program Main;
+begin
+   writeln(&#39;Hello, world!&#39;);
+end.
+
+program HelloWorld(output);
+begin
+        writeln(&#39;Hello World&#39;);
+end.
+
+{Hello World in Pascal}
+
+program HelloWorld(output);
+begin
+  WriteLn(&#39;Hello World!&#39;);
+end.
+
+uses
+  uw27294;
+
+var
+  p : procedure;
+
+procedure test;
+
+begin
+  p:=@test;
+  writeln(&#39;OK&#39;);
+end;
+
+procedure global;
+begin
+  p:=nil;
+  test;
+  p();
+end;
+
+begin
+  global;
+  uw27294.global;
+end.
+
+program Printing;
+
+var i : integer;
+
+procedure Print(j : integer);
+begin
+  ...
+end;
+
+begin { main program }
+  ...
+  Print(i);
+end.
+
+* + - / :=  = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  s := (A + a + A);
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token writeln
+ Example
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported ✓
+ Token 
+ Example
+  program Adhoc;
+  
+  function Add(x, y : Integer) : Integer;
+  begin
+      Add := x + y
+  end;
+  
+  function Add(s, t : String) : String;
+  begin
+      Add := Concat(s, t)
+  end;
+  
+  begin
+      Writeln(Add(1, 2));                   (* Prints "3"             *)
+      Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
+  end.
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token { }
+ Example
+  (* A comment
+  *)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  { This is a single line comment in pascal. But needs to be closed. }
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

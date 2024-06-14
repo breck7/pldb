@@ -1,0 +1,217 @@
+R
+=
+
+R is an open source programming language created in 1993 by Ross Ihaka and Robert Gentleman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ross%20Ihaka
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Gentleman
+
+#17 on PLDB
+31 Years Old
+690k Repos
+
+Try now: Riju · TIO
+
+R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/R_(programming_language)
+
+- R website
+ https://www.r-project.org
+- R downloads page
+ https://cran.r-project.org/bin/windows/base/
+- R Wikipedia page
+ https://en.wikipedia.org/wiki/R_(programming_language)
+- R docs
+ https://devdocs.io/r/
+- R mailing list
+ https://www.r-project.org/mail.html
+- There are at least 689,533 R repos on GitHub
+- R first developed in University of Auckland
+- R on Twitter
+ https://twitter.com/_r_foundation
+- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using R in 29k repos on GitHub
+- Check out the 84 R meetup groups on Meetup.com.
+- There are 29,980 members in the R subreddit
+- There are 1,329 Project Euler users using R
+- In the 2021 StackOverflow developer survey R programmers reported a median salary of $59,454. 5% of respondents reported using R. 4,185 programmers reported using R, and 4,015 said they wanted to use it
+- Explore R snippets on Rosetta Code
+- R on HOPL
+ https://hopl.info/showlanguage.prx?exp=2426
+- R ranks #11 in the TIOBE Index
+- R Ubuntu package
+ https://packages.ubuntu.com/jammy/r-base
+- ANTLR grammar for R
+- R LSP implementation
+- CodeMirror package for syntax highlighting R
+- Monaco package for syntax highlighting R
+- GitHub supports syntax highlighting for R
+- R appears in the Quine Relay project
+- There is 1 Jupyter Kernel for R
+- There are 2 central package repositories for R: 1. 2.
+ https://cran.r-project.org/
+ http://bioconductor.org/
+- Release Notes for R
+ https://developer.r-project.org/
+- Official Blog page for R
+ https://developer.r-project.org/Blog/public/
+- Frequently Asked Questions for R
+ https://cran.r-project.org/doc/FAQ/R-FAQ.html
+- Indeed.com has 3,912 matches for "r data scientist".
+- r-project.org was registered in 1999
+- See also: (25 related languages)Common Lisp, S, Scheme, Julia, C, Fortran, Java, Python, LaTeX, APL, MATLAB, GNU Octave, Knitr, Sweave, UTF-8, RStudio, Eclipse, Emacs, LyX, Perl, Ruby, F#, SPSS, Stata, Mathematica
+- 37 languages in PLDB linking to R: Ace Editor, Catala, checked-c, cloc, dexvis, dplyr, Eiffel, HAL Format, highlight.js, Ibis, invokator, JSL, Lux, mal, MongoDB, Nit, Node.js, Observable Framework, Ohayo, oil, Pygments, Racket, raptorjit, Red, Ren-C, Revolution, RMarkdown, Rye, SciPy, Scroll Notation, spry, Statsplorer, Tea, tidyverse, v8, Xgboost, XGBoost
+
+print(&quot;Hello, world!&quot;)
+
+cat(&quot;Hello World&quot;)
+
+# Hello World in R
+cat(&quot;Hello world\n&quot;)
+
+hello &lt;- function() {
+    print(&quot;hello, world!&quot;)
+}
+hello()
+
+install.packages(&quot;caTools&quot;)  # install external package
+library(caTools)           # external package providing write.gif function
+jet.colors &lt;- colorRampPalette(c(&quot;#00007F&quot;, &quot;blue&quot;, &quot;#007FFF&quot;, &quot;cyan&quot;, &quot;#7FFF7F&quot;,
+                                 &quot;yellow&quot;, &quot;#FF7F00&quot;, &quot;red&quot;, &quot;#7F0000&quot;))
+dx &lt;- 400                  # define width
+dy &lt;- 400                  # define height
+C &lt;- complex( real=rep(seq(-2.2, 1.0, length.out=dx), each=dy ),
+              imag=rep(seq(-1.2, 1.2, length.out=dy), dx ) )
+C &lt;- matrix(C,dy,dx)       # reshape as square matrix of complex numbers
+Z &lt;- 0                     # initialize Z to zero
+X &lt;- array(0, c(dy,dx,20)) # initialize output 3D array
+for (k in 1:20) {          # loop with 20 iterations
+  Z &lt;- Z^2+C               # the central difference equation
+  X[,,k] &lt;- exp(-abs(Z))   # capture results
+}
+write.gif(X, &quot;Mandelbrot.gif&quot;, col=jet.colors, delay=100)
+
+if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token TRUE FALSE
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Pipes
+ FeatureLink ../features/hasPipes.html
+ Supported ✓
+ Token 
+ Example
+  # R has pipes via a library like dplyr
+  starwars %>% filter(species == "Droid")
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Lazy Evaluation
+ FeatureLink ../features/hasLazyEvaluation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  source("filename.r")
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported ✓
+ Token 
+ Example
+  ! x
+  x & y
+  x && y
+  x | y
+  x || y
+  xor(x, y)
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

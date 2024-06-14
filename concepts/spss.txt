@@ -1,0 +1,81 @@
+SPSS
+====
+
+SPSS is a programming language created in 1968 by Norman H. Nie and C. Hadlai Hull and Dale H. Bent.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221968%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Norman%20H.%20Nie
+ https://pldb.io/concepts/../lists/creators.html#q=C.%20Hadlai%20Hull
+ https://pldb.io/concepts/../lists/creators.html#q=Dale%20H.%20Bent
+
+#69 on PLDB
+56 Years Old
+
+SPSS Statistics is a software package used for logical batched and non-batched statistical analysis. Long produced by SPSS Inc., it was acquired by IBM in 2009. The current versions (2015) are officially named IBM SPSS Statistics. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SPSS
+
+- SPSS website
+ https://www.ibm.com/us-en/marketplace/spss-statistics
+- SPSS Wikipedia page
+ https://en.wikipedia.org/wiki/SPSS
+- SPSS docs
+ https://www.ibm.com/support/pages/ibm-spss-statistics-28-documentation
+- SPSS first developed in SPSS Inc
+- SPSS on HOPL
+ https://hopl.info/showlanguage.prx?exp=240
+- SPSS appears in the TIOBE Index
+- Release Notes for SPSS
+ https://www.ibm.com/support/pages/ibm-spss-statistics-200-release-notess
+- Indeed.com has 25 matches for "spss developer".
+- See also: (10 related languages)Linux, Java, Python, Visual Basic, R, ASCII, SQL, HTML, XML, Unix
+- 2 languages in PLDB linking to SPSS: JSL, Tea
+
+BEGIN PROGRAM.
+print &quot;Hello World&quot;
+END PROGRAM.
+
+* SPSS Syntax
+* &quot;Hello World&quot; title in the Output Window of SPSS via SPSS Syntax.
+
+TITLE &#39;Hello World&#39;.
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  * A comment where first character must be *.
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

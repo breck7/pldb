@@ -1,0 +1,61 @@
+Halide
+======
+
+Halide is an open source programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#213 on PLDB
+14 Years Old
+
+git clone https://github.com/halide/Halide
+
+a language for fast, portable data-parallel computation
+
+- Halide website
+ http://halide-lang.org/
+- Halide is developed on GitHub and has 4,985 stars
+- Halide first developed in https://github.com/halide
+- Halide is written in C++, CMake, Python, Make, Bourne shell, Markdown, Java, LLVM IR, XML, YAML, C, JSON, Objective C++, JavaScript, Gradle, Bash, HTML, CSS, Jupyter Notebook, Pascal, IDL, TOML, Assembly language
+- halide-lang.org was registered in 2012
+- Read more about Halide on the web: 1.
+ https://news.ycombinator.com/item?id=7544855
+
+Func blur_3x3(Func input) {
+ Func blur_x, blur_y;
+ Var x, y, xi, yi;
+
+ // The algorithm - no storage or order
+ blur_x(x, y) = (input(x-1, y) + input(x, y) + input(x+1, y))/3;
+ blur_y(x, y) = (blur_x(x, y-1) + blur_x(x, y) + blur_x(x, y+1))/3;
+
+ // The schedule - defines order, locality; implies storage
+ blur_y.tile(x, y, xi, yi, 256, 32)
+       .vectorize(xi, 8).parallel(y);
+ blur_x.compute_at(blur_y, x).vectorize(x, 8);
+
+ return blur_y;
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

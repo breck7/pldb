@@ -1,0 +1,29 @@
+import ../code/conceptPage.scroll
+
+id tmtp
+name TMTP
+appeared 2017
+tags protocol
+website https://mnmnotmail.org
+latestVersion v0.1.0
+conceptDescription Site-specific Internet messaging
+
+writtenIn go markdown json bourne-shell
+relatedConcepts smtp
+repoStats
+ firstCommit 2017
+ commits 297
+ committers 4
+ files 18
+ newestCommit 2022
+reference https://news.ycombinator.com/item?id=32550328
+
+githubRepo https://github.com/networkimprov/mnm
+ firstCommit 2017
+ stars 216
+ forks 11
+ subscribers 12
+ created 2017
+ updated 2022
+ description mnm implements TMTP protocol. Let Internet sites message members directly, instead of unreliable, insecure email. Contributors welcome! (Server)
+ issues 7

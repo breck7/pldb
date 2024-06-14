@@ -1,0 +1,60 @@
+json-graph-format
+=================
+
+json-graph-format is a json format created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#968 on PLDB
+10 Years Old
+
+git clone https://github.com/jsongraph/json-graph-specification
+
+A proposal for representing graph structure (nodes / edges) in JSON.
+
+- json-graph-format website
+ http://jsongraphformat.info/
+- json-graph-format is developed on GitHub and has 387 stars
+- json-graph-format first developed in https://github.com/jsongraph
+- json-graph-format is written in JSON, Markdown, YAML, Python
+- jsongraphformat.info was registered in 2015
+
+{
+    &quot;graph&quot;: {
+        &quot;directed&quot;: false,
+        &quot;type&quot;: &quot;graph type&quot;,
+        &quot;label&quot;: &quot;graph label&quot;,
+        &quot;metadata&quot;: {
+            &quot;user-defined&quot;: &quot;values&quot;
+        },
+        &quot;nodes&quot;: [
+            {
+                &quot;id&quot;: &quot;0&quot;,
+                &quot;type&quot;: &quot;node type&quot;,
+                &quot;label&quot;: &quot;node label(0)&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;1&quot;,
+                &quot;type&quot;: &quot;node type&quot;,
+                &quot;label&quot;: &quot;node label(1)&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            }
+        ],
+        &quot;edges&quot;: [
+            {
+                &quot;source&quot;: &quot;0&quot;,
+                &quot;relation&quot;: &quot;edge relationship&quot;,
+                &quot;target&quot;: &quot;1&quot;,
+                &quot;directed&quot;: false,
+                &quot;label&quot;: &quot;edge label&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            }
+        ]
+    }
+}

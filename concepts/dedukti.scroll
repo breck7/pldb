@@ -1,0 +1,49 @@
+import ../code/conceptPage.scroll
+
+id dedukti
+name dedukti
+appeared 2009
+tags pl
+website https://deducteam.github.io
+latestVersion v2.6.0
+
+writtenIn ocaml bourne-shell markdown make lisp xml yaml vim-script python
+repoStats
+ firstCommit 2009
+ commits 2777
+ committers 62
+ files 576
+ newestCommit 2024
+country France
+originCommunity https://github.com/Deducteam
+
+example
+ Nat: Type.
+ zero: Nat.
+ succ: Nat -> Nat.
+ def plus: Nat -> Nat -> Nat.
+ [ n ] plus zero n --> n
+ [ n ] plus n zero --> n
+ [ n, m ] plus (succ n) m --> succ (plus n m)
+ [ n, m ] plus n (succ m) --> succ (plus n m).
+
+githubRepo https://github.com/Deducteam/Dedukti
+ firstCommit 2009
+ stars 155
+ forks 18
+ subscribers 16
+ created 2017
+ updated 2022
+ description Implementation of the λΠ-calculus modulo rewriting
+ issues 35
+
+multiLineCommentTokens (; ;)
+
+hasComments true
+ (; This is a comment ;)
+hasMultiLineComments true
+ (; A comment
+ ;)
+hasSemanticIndentation false
+
+domainName deducteam.github.io

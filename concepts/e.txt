@@ -1,0 +1,106 @@
+E
+=
+
+E is an open source programming language created in 1997 by Mark S. Miller.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mark%20S.%20Miller
+
+#512 on PLDB
+27 Years Old
+354 Repos
+
+E is an object-oriented programming language for secure distributed computing, created by Mark S. Miller, Dan Bornstein, and others at Electric Communities in 1997.  E is mainly descended from the concurrent language Joule and from Original-E, a set of extensions to Java for secure distributed programming. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/E_(programming_language)
+
+- E website
+ http://erights.org/
+- E Wikipedia page
+ https://en.wikipedia.org/wiki/E_(programming_language)
+- There are at least 354 E repos on GitHub
+- E first developed in Combex, Inc.
+- The  Google BigQuery Public Dataset GitHub snapshot shows 291 users using E in 304 repos on GitHub
+- Explore E snippets on Rosetta Code
+- E on HOPL
+ https://hopl.info/showlanguage.prx?exp=1990
+- erights.org was registered in 1998
+- See also: (5 related languages)GNU E, Joule, Java, Python, Pascal
+
+def factorial(n :int) :int {
+  if (n == 1) {
+    return 1
+  } else if (n &gt; 0) {
+    return n * factorial(n-1)
+  } else {
+    throw(&quot;invalid argument to factorial: &quot;+n)
+  }
+}
+
+# E snippet from
+# http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
+when (tempVow) -&gt; {
+    #...use tempVow
+} catch prob {
+    #.... report problem
+} finally {
+    #....log event
+}
+
+println(&quot;Hello World&quot;)
+
+def makeMint(name) :any {
+   def [sealer, unsealer] := makeBrandPair(name)
+   def mint {
+     to makePurse(var balance :(int &gt;= 0)) :any {
+       def decr(amount :(0..balance)) :void {
+         balance -= amount
+       }
+       def purse {
+         to getBalance() :int { return balance }
+         to sprout() :any { return mint.makePurse(0) }
+         to getDecr() :any { return sealer.seal(decr) }
+         to deposit(amount :int, src) :void {
+           unsealer.unseal(src.getDecr())(amount)
+           balance += amount
+         }
+       }
+       return purse
+     }
+   }
+   return mint
+ }
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

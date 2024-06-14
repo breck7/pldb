@@ -1,0 +1,20 @@
+Mortran
+=======
+
+Mortran is a programming language created in 1973.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221973%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3548 on PLDB
+51 Years Old
+
+Mortran (More Fortran) is an extension of the Fortran programming language used for scientific computation. It introduces syntax changes, including the use of semicolons to end statements, in order to improve readability and flexibility. Mortran code is macro-processed into Fortran code for compilation. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Mortran
+
+- Mortran Wikipedia page
+ https://en.wikipedia.org/wiki/Mortran
+- Mortran first developed in Stanford University
+- See also: (1 related languages)Fortran
+
+I = SQRT(X/2.0)
+          A(I,K) = SQRT(X/2.0)
+          J = SQRT(X/2.0)

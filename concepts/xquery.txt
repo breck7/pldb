@@ -1,0 +1,173 @@
+XQuery
+======
+
+XQuery is a programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#159 on PLDB
+17 Years Old
+2k Repos
+
+XQuery (XML Query) is a query and functional programming language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query working group of the W3C. The work is closely coordinated with the development of XSLT by the XSL Working Group; the two groups share responsibility for XPath, which is a subset of XQuery. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XQuery
+
+- XQuery website
+ http://www.w3.org/XML/Query/
+- XQuery Wikipedia page
+ https://en.wikipedia.org/wiki/XQuery
+- XQuery docs
+ https://www.w3.org/TR/xquery-31/
+- There are at least 1,753 XQuery repos on GitHub
+- XQuery first developed in W3C
+- The  Google BigQuery Public Dataset GitHub snapshot shows 983 users using XQuery in 1k repos on GitHub
+- Explore XQuery snippets on Rosetta Code
+- XQuery appears in the TIOBE Index
+- CodeMirror package for syntax highlighting XQuery
+- Pygments supports syntax highlighting for XQuery
+- GitHub supports syntax highlighting for XQuery
+- Official Blog page for XQuery
+ https://www.w3.org/blog/tags/xquery/
+- Indeed.com has 125 matches for "XQuery developer".
+- See also: (10 related languages)XPath, SQL, Lisp, Prolog, XML, Java, C#, JSONiq, JSON, ISBN
+- 4 languages in PLDB linking to XQuery: Ace Editor, cloc, Invisible XML, Pygments
+
+let $hello := &quot;Hello World&quot;
+return $hello
+
+(: Hello World with XQuery :)
+let $i := &quot;Hello World&quot;
+return $i
+
+(: -------------------------------------------------------------------------------------
+
+    xproc.xqm - core xqm contains entry points, primary eval-step function and
+    control functions.
+
+ ---------------------------------------------------------------------------------------- :)
+xquery version &quot;3.0&quot;  encoding &quot;UTF-8&quot;;
+
+module namespace xproc = &quot;http://xproc.net/xproc&quot;;
+
+ (: declare namespaces :)
+ declare namespace p=&quot;http://www.w3.org/ns/xproc&quot;;
+ declare namespace c=&quot;http://www.w3.org/ns/xproc-step&quot;;
+ declare namespace err=&quot;http://www.w3.org/ns/xproc-error&quot;;
+
+ (: module imports :)
+(:  import module namespace util = &quot;http://xproc.net/xproc/util&quot; at &quot;util1.xqm&quot;; :)
+ import module namespace const = &quot;http://xproc.net/xproc/const&quot; at &quot;const.xqm&quot;;
+ import module namespace parse = &quot;http://xproc.net/xproc/parse&quot; at &quot;parse.xqm&quot;;
+ import module namespace u = &quot;http://xproc.net/xproc/util&quot; at &quot;util.xqm&quot;;
+
+ (: declare options :)
+ declare boundary-space preserve;
+ declare option saxon:output &quot;indent=yes&quot;;
+
+ (: declare functions :)
+ declare variable $xproc:run-step       := xproc:run#6;
+ declare variable $xproc:parse-and-eval := ();
+ declare variable $xproc:declare-step   := ();
+ declare variable $xproc:choose         := ();
+ declare variable $xproc:try            := ();
+ declare variable $xproc:catch          := ();
+ declare variable $xproc:group          := ();
+ declare variable $xproc:for-each       := ();
+ declare variable $xproc:viewport       := ();
+ declare variable $xproc:library        := ();
+ declare variable $xproc:pipeline       := ();
+ declare variable $xproc:variable       := ();
+
+ (: list all declared namespaces :)
+ (: -------------------------------------------------------------------------- :)
+ declare function xproc:enum-namespaces($pipeline){
+ (: -------------------------------------------------------------------------- :)
+    &lt;namespace name=&quot;{$pipeline/@name}&quot;&gt;{u:enum-ns(&lt;dummy&gt;{$pipeline}&lt;/dummy&gt;)}&lt;/namespace&gt;
+ };
+
+ (: entry point :)
+ (: -------------------------------------------------------------------------- :)
+ declare function xproc:run($pipeline,$stdin,$dflag,$tflag,$bindings,$options){
+ (: -------------------------------------------------------------------------- :)
+
+ (: STEP I: preprocess :)
+ let $validate   := ()
+ let $namespaces := xproc:enum-namespaces($pipeline)
+ let $parse      := parse:explicit-bindings( parse:AST(parse:explicit-name(parse:explicit-type($pipeline))))
+ let $ast        := element p:declare-step {$parse/@*,
+       parse:pipeline-step-sort( $parse/*, () )
+     }
+
+ (: STEP II: eval AST :)
+ let $eval_result := ()
+
+ (: STEP III: serialize and return results :)
+ let $serialized_result := $pipeline
+
+ return
+   $serialized_result
+ };
+
+&lt;html&gt;&lt;body&gt;
+ {
+   for $act in doc(&quot;hamlet.xml&quot;)//ACT
+   let $speakers := distinct-values($act//SPEAKER)
+   return
+     &lt;div&gt;
+       &lt;h1&gt;{ string($act/TITLE) }&lt;/h1&gt;
+       &lt;ul&gt;
+       {
+         for $speaker in $speakers
+         return &lt;li&gt;{ $speaker }&lt;/li&gt;
+       }
+       &lt;/ul&gt;
+     &lt;/div&gt;
+ }
+ &lt;/body&gt;&lt;/html&gt;
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (: Hello World with XQuery :)
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

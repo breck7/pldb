@@ -1,0 +1,161 @@
+Linden Scripting Language
+=========================
+
+Linden Scripting Language, aka Linden Scripting Language, is a programming language created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#749 on PLDB
+21 Years Old
+638 Repos
+
+- There are at least 638 Linden Scripting Language repos on GitHub
+- Linden Scripting Language first developed in Linden Research, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 373 users using Linden Scripting Language in 397 repos on GitHub
+- Explore Linden Scripting Language snippets on Rosetta Code
+- Pygments supports syntax highlighting for Linden Scripting Language
+- GitHub supports syntax highlighting for Linden Scripting Language
+- Read more about Linden Scripting Language on the web: 1.
+ http://wiki.secondlife.com/wiki/LSL_Portal
+
+default
+{
+    state_entry()
+    {
+        llSay(0, &quot;Hello World&quot;);
+    }
+}
+
+/*
+    Testing syntax highlighting
+    for the Linden Scripting Language
+*/
+
+integer someIntNormal       = 3672;
+integer someIntHex          = 0x00000000;
+integer someIntMath         = PI_BY_TWO;
+
+integer event               = 5673;// &#39;event&#39; is invalid.illegal
+
+key someKeyTexture          = TEXTURE_DEFAULT;
+string someStringSpecial    = EOF;
+
+some_user_defined_function_without_return_type(string inputAsString)
+{
+    llSay(PUBLIC_CHANNEL, inputAsString);
+}
+
+string user_defined_function_returning_a_string(key inputAsKey)
+{
+    return (string)inputAsKey;
+}
+
+default
+{
+    state_entry()
+    {
+        key someKey = NULL_KEY;
+        someKey = llGetOwner();
+
+        string someString = user_defined_function_returning_a_string(someKey);
+
+        some_user_defined_function_without_return_type(someString);
+    }
+
+    touch_start(integer num_detected)
+    {
+        list agentsInRegion = llGetAgentList(AGENT_LIST_REGION, []);
+        integer numOfAgents = llGetListLength(agentsInRegion);
+
+        integer index;                                                          // defaults to 0
+        for (; index &lt;= numOfAgents - 1; index++)                               // for each agent in region
+        {
+            llRegionSayTo(llList2Key(agentsInRegion, index), PUBLIC_CHANNEL, &quot;Hello, Avatar!&quot;);
+        }
+    }
+
+    touch_end(integer num_detected)
+    {
+        someIntNormal       = 3672;
+        someIntHex          = 0x00000000;
+        someIntMath         = PI_BY_TWO;
+
+        event               = 5673;// &#39;event&#39; is invalid.illegal
+
+        someKeyTexture      = TEXTURE_DEFAULT;
+        someStringSpecial   = EOF;
+
+        llSetInventoryPermMask(&quot;some item&quot;, MASK_NEXT, PERM_ALL);// &#39;llSetInventoryPermMask&#39; is reserved.godmode
+
+        llWhisper(PUBLIC_CHANNEL, &quot;Leaving \&quot;default\&quot; now...&quot;);
+        state other;
+    }
+}
+
+state other
+{
+    state_entry()
+    {
+        llWhisper(PUBLIC_CHANNEL, &quot;Entered \&quot;state other\&quot;, returning to \&quot;default\&quot; again...&quot;);
+        state default;
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // \d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

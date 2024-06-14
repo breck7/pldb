@@ -1,0 +1,65 @@
+Windows Registry Entries
+========================
+
+Windows Registry Entries is an application created in 1992.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2322 on PLDB
+32 Years Old
+139 Repos
+
+- There are at least 139 Windows Registry Entries repos on GitHub
+- GitHub supports syntax highlighting for Windows Registry Entries
+- Read more about Windows Registry Entries on the web: 1.
+ https://en.wikipedia.org/wiki/Windows_Registry
+
+Windows Registry Editor Version 5.00
+
+; Comment Comment Comment
+
+[HKLM\SOFTWARE\Fake_Key\Fake_SubKey_1] ; Comment Comment Comment
+
+[HKLM\SOFTWARE\Fake_Key\Fake_SubKey_1\Fake_SubKey_2]
+@=- ; Comment Comment Comment
+
+[HKLM\SOFTWARE\Fake_SubKey\Fake_SubKey_1\Fake_SubKey_2\Fake_SubKey_3]
+@=&quot;Default Value&quot; ; Comment Comment Comment
+&quot;String Value&quot;=&quot;My String Value&quot; ; Comment Comment Comment
+&quot;String Value With Escaped Chars&quot;=&quot;C:\\Blah\\Blah\\Blee&quot; ; Comment Comment Comment
+&quot;Binary Value&quot;=hexadecimal
+&quot;DWORD Value&quot;=dword:00000005
+&quot;Bit Value&quot;=0
+&quot;Binary Value&quot;=hex:25,53,79,73,74,65,6d,52,6f,6f,74,25,00
+&quot;Value D&quot;=hex(0):&lt;REG_NONE (as comma-delimited list of hexadecimal values)&gt; ; Comment Comment Comment
+&quot;Value E&quot;=hex(1):&lt;REG_SZ (as comma-delimited list of hexadecimal values representing a UTF-16LE NUL-terminated string)&gt;
+&quot;Expandable String Value&quot;=hex(2):25,53,79,73,74,65,6d,52,6f,6f,74,25,00
+&quot;Value G&quot;=hex(3):&lt;Binary data (as comma-delimited list of hexadecimal values)&gt; ; equal to &quot;Value B&quot;
+&quot;Value H&quot;=hex(4):&lt;DWORD value (as comma-delimited list of 4 hexadecimal values, in little endian byte order)&gt;
+&quot;Value I&quot;=hex(5):&lt;DWORD value (as comma-delimited list of 4 hexadecimal values, in big endian byte order)&gt;
+&quot;Multi String Value&quot;=hex(7):25,53,79,73,74,65,6d,52,6f,6f,74,25,00\
+25,53,79,73,74,65,6d,52,6f,6f,74,25,00\
+25,53,79,73,74,65,6d,52,6f,6f,74,25,00\
+25,53,79,73,74,65,6d,52,6f,6f,74,25,00\
+&quot;Value K&quot;=hex(8):&lt;REG_RESOURCE_LIST (as comma-delimited list of hexadecimal values)&gt;
+&quot;Value L&quot;=hex(a):&lt;REG_RESOURCE_REQUIREMENTS_LIST (as comma-delimited list of hexadecimal values)&gt;
+&quot;Value M&quot;=hex(b):&lt;QWORD value (as comma-delimited list of 8 hexadecimal values, in little endian byte order)&gt;
+&quot;Deleted Value&quot;=- ; Comment Comment Comment
+
+[HKEY_LOCAL_MACHINE]
+[HKLM]
+
+[HKEY_CURRENT_CONFIG]
+[HKCC]
+
+[HKEY_CLASSES_ROOT]
+[HKCR]
+
+[HKEY_CURRENT_USER]
+[HKCU]
+
+[HKEY_USERS]
+[HKU]
+
+[HKEY_PERFORMANCE_DATA]
+
+[HKEY_DYN_DATA]

@@ -1,0 +1,117 @@
+Pig Latin
+=========
+
+Pig Latin is an open source query language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#192 on PLDB
+16 Years Old
+1k Repos
+
+Apache Pig is a high-level platform for creating programs that run on Apache Hadoop. The language for this platform is called Pig Latin.  Pig can execute its Hadoop jobs in MapReduce, Apache Tez, or Apache Spark. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Apache_Pig
+
+- Pig Latin website
+ https://pig.apache.org/
+- Pig Latin Wikipedia page
+ https://en.wikipedia.org/wiki/Apache_Pig
+- There are at least 1,347 Pig Latin repos on GitHub
+- Pig Latin first developed in Apache
+- The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using Pig Latin in 606 repos on GitHub
+- CodeMirror package for syntax highlighting Pig Latin
+- Pygments supports syntax highlighting for Pig Latin
+- GitHub supports syntax highlighting for Pig Latin
+- See also: (8 related languages)Linux, Java, SQL, Python, JavaScript, Ruby, Groovy, Sawzall
+- 3 languages in PLDB linking to Pig Latin: Ace Editor, cloc, Pygments
+
+input_lines = LOAD &#39;/tmp/word.txt&#39; AS (line:chararray);
+words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+filtered_words = FILTER words BY word MATCHES &#39;\\w+&#39;;
+word_groups = GROUP filtered_words BY word;
+word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
+ordered_word_count = ORDER word_count BY count DESC;
+STORE ordered_word_count INTO &#39;/tmp/results.txt&#39;;
+
+Hello WorldPIGHello World
+
+/**
+ * sample.pig
+ */
+
+REGISTER $SOME_JAR;
+
+A = LOAD &#39;person&#39; USING PigStorage() AS (name:chararray, age:int); -- Load person
+B = FOREACH A generate name;
+DUMP B;
+
+input_lines = LOAD &#39;/tmp/my-copy-of-all-pages-on-internet&#39; AS (line:chararray);
+ 
+ -- Extract words from each line and put them into a pig bag
+ -- datatype, then flatten the bag to get one word on each row
+ words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+ 
+ -- filter out any words that are just white spaces
+ filtered_words = FILTER words BY word MATCHES &#39;\\w+&#39;;
+ 
+ -- create a group for each word
+ word_groups = GROUP filtered_words BY word;
+ 
+ -- count the entries in each group
+ word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
+ 
+ -- order the records by count
+ ordered_word_count = ORDER word_count BY count DESC;
+ STORE ordered_word_count INTO &#39;/tmp/number-of-words-on-internet&#39;;
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9]+L?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9]*\.[0-9]+(e[0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  -- 0x[0-9a-f]+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

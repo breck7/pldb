@@ -1,0 +1,224 @@
+Smali
+=====
+
+Smali is an open source assembly language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#162 on PLDB
+14 Years Old
+2k Repos
+
+git clone https://github.com/JesusFreke/smali
+
+smali/baksmali
+
+- Smali is developed on GitHub and has 5,465 stars
+- Smali docs
+ https://github.com/JesusFreke/smali/wiki
+- There are at least 2,479 Smali repos on GitHub
+- Smali first developed in https://github.com/JesusFreke/smali/issues
+- Smali is written in Java, Gradle, XML, Bash, Markdown, Bourne shell, C, Make
+- The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Smali in 212 repos on GitHub
+- Pygments supports syntax highlighting for Smali
+- GitHub supports syntax highlighting for Smali
+
+.method public getTokens(I)I
+ .locals 2
+ .param p1, &quot;amt&quot;    # I
+ 
+ .prologue
+ const/4 v0, 0x0
+ 
+ .line 512
+ iget-boolean v1, p0, Lcom/limbenjamin/Example;-&gt;isPaid:Z
+ 
+ if-nez v1, :cond_1
+ 
+ .line 514
+ :cond_0
+ :goto_0
+ return v0
+ 
+ .line 513
+ :cond_1
+ iget-object v1, p0, Lcom/limbenjamin/Example;-&gt;handler:Lcom/limbenjamin/ExampleHandler;
+ 
+ if-eqz v1, :cond_0
+ 
+ .line 514
+ move v3, p1
+ 
+ iget-object v0, p0, Lcom/limbenjamin/Example;-&gt;handler:Lcom/limbenjamin/ExampleHandler;
+ 
+ invoke-interface {v0, v3}, Lcom/limbenjamin/ExampleHandler;-&gt;creditTokens(I)V
+ 
+ move-result v0
+ 
+ goto :goto_0
+.end method
+
+.class public LHelloWorld;
+
+.super Ljava/lang/Object;
+
+.method public static main([Ljava/lang/String;)V
+    .registers 2
+
+    sget-object v0, Ljava/lang/System;-&gt;out:Ljava/io/PrintStream;
+
+    const-string	v1, &quot;Hello World&quot;
+
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;-&gt;println(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.class public Lcom/tdq/game/shootbubble/sprite/PenguinSprite;
+.super Lcom/tdq/game/shootbubble/sprite/Sprite;
+.source &quot;PenguinSprite.java&quot;
+
+# static fields
+.field public static final LOST_SEQUENCE:[[I
+
+.field public static final STATE_FIRE:I = 0x2
+
+.field public static final STATE_GAME_LOST:I = 0x5
+
+.field public static final STATE_GAME_WON:I = 0x4
+
+.field public static final STATE_TURN_LEFT:I = 0x0
+
+.field public static final STATE_TURN_RIGHT:I = 0x1
+
+.field public static final STATE_VOID:I = 0x3
+
+.field public static final WON_SEQUENCE:[[I
+
+# instance fields
+.field private count:I
+
+.field private currentPenguin:I
+
+.field private finalState:I
+
+.field private nextPosition:I
+
+.field private rand:Ljava/util/Random;
+
+.field private spritesImage:Lcom/tdq/game/shootbubble/sprite/BmpWrap;
+
+# direct methods
+.method static constructor &lt;clinit&gt;()V
+    .locals 8
+
+    .prologue
+    const/4 v7, 0x4
+
+    const/4 v6, 0x3
+
+    const/4 v5, 0x1
+
+    const/4 v4, 0x0
+
+    const/4 v3, 0x2
+
+    .line 67
+    const/16 v0, 0x8
+
+    new-array v0, v0, [[I
+
+    new-array v1, v3, [I
+
+    fill-array-data v1, :array_0
+
+    aput-object v1, v0, v4
+
+    new-array v1, v3, [I
+
+    fill-array-data v1, :array_1
+
+    aput-object v1, v0, v5
+
+    new-array v1, v3, [I
+
+    fill-array-data v1, :array_2
+
+    aput-object v1, v0, v3
+
+    new-array v1, v3, [I
+
+    fill-array-data v1, :array_3
+
+    aput-object v1, v0, v6
+
+    new-array v1, v3, [I
+
+    fill-array-data v1, :array_4
+
+    aput-object v1, v0, v7
+
+    const/4 v1, 0x5
+
+    new-array v2, v3, [I
+
+    fill-array-data v2, :array_5
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    new-array v2, v3, [I
+
+    fill-array-data v2, :array_6
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    new-array v2, v3, [I
+
+    fill-array-data v2, :array_7
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lcom/tdq/game/shootbubble/sprite/PenguinSprite;-&gt;LOST_SEQUENCE:[[I
+
+    .line 69
+    const/16 v0, 0x8
+
+    new-array v0, v0, [[I
+
+    new-array v1, v3, [I
+
+    fil
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

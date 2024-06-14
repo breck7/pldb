@@ -1,0 +1,31 @@
+import ../code/conceptPage.scroll
+
+id xpm-format
+name X PixMap
+appeared 1989
+tags textDataFormat
+
+fileExtensions xpm
+
+example
+ static char* <variable_name>[] = {
+ <Values>
+ <Colors>
+ <Pixels>
+ <Extensions>
+ };
+
+wikipedia https://en.wikipedia.org/wiki/X_PixMap
+
+isbndb 0
+
+githubLanguage X PixMap
+ type data
+ fileExtensions xpm pm
+ group C
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.c
+ aliases xpm
+ repos 170

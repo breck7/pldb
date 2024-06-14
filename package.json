@@ -1,0 +1,52 @@
+{
+  "name": "pldb",
+  "version": "10.0.0",
+  "description": "PLDB: a Programming Language Database",
+  "main": "./pldb.json",
+  "scripts": {
+    "build": "./cli.js buildGrammarFile; scroll list | scroll build",
+    "test": "scroll list | scroll test",
+    "format": "scroll list | scroll format",
+    "open": "open index.html",
+    "up": "npm install scroll-cli@latest",
+    "gits": "./legacy.js crawlGits",
+    "githubs": "./legacy.js crawlGitHub",
+    "fetchContributors": "wget -O pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
+    "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
+    "checkLinks": "linkinator -r https://pldb.io > ignore/brokenLinks.txt"
+  },
+  "prettier": {
+    "parser": "babel",
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": false,
+    "printWidth": 120,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed"
+  },
+  "bin": {
+    "pldb": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breck7/pldb.git"
+  },
+  "keywords": [
+    "programming languages"
+  ],
+  "author": "Breck Yunits et al.",
+  "files": [
+    "pldb.json"
+  ],
+  "homepage": "https://pldb.io",
+  "devDependencies": {
+    "dayjs": "^1.11.7",
+    "lodash": "^4.17.21",
+    "monaco-editor": "^0.34.1",
+    "numeral": "^2.0.6",
+    "scroll-cli": "^95.0.0",
+    "scrollsdk": "^78.0.0",
+    "semver": "^7.6.2"
+  }
+}

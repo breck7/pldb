@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id homa
+name Homa
+appeared 2018
+creators John Ousterhout
+tags protocol
+website https://web.stanford.edu/~ouster/cgi-bin/home.php
+spec https://github.com/PlatformLab/HomaModule/blob/master/protocol.md
+latestVersion v2.0
+conceptDescription TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
+
+isOpenSource true
+writtenIn python c cpp markdown bash make bourne-shell perl cmake
+influencedBy tcp
+usesSemanticVersioning false
+documentation https://homa-transport.atlassian.net/wiki/spaces/HOMA/overview
+repoStats
+ firstCommit 2018
+ commits 1091
+ committers 15
+ files 140
+ newestCommit 2024
+country United States
+originCommunity Stanford University
+reference https://web.stanford.edu/~ouster/cgi-bin/papers/replaceTcp.pdf
+
+githubRepo https://github.com/PlatformLab/HomaModule
+ firstCommit 2018
+ stars 93
+ forks 22
+ subscribers 7
+ created 2018
+ updated 2022
+ description A Linux kernel module that implements the Homa transport protocol.
+ issues 2
+
+domainName web.stanford.edu/
+
+semanticScholar https://www.semanticscholar.org/paper/We-Need-a-Replacement-for-TCP-in-the-Datacenter-Ousterhout/a20b5dc886c09871bc95551d2383bf67e7bb6ea0

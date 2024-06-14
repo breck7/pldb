@@ -1,0 +1,223 @@
+PicoLisp
+========
+
+PicoLisp is a programming language created in 1988 by Alexander Burger.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Burger
+
+#654 on PLDB
+36 Years Old
+114 Repos
+
+Try now: TIO
+
+PicoLisp is an open source Lisp dialect. It runs on Linux and other POSIX-compliant systems.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PicoLisp
+
+- PicoLisp website
+ https://picolisp.com/
+- PicoLisp Wikipedia page
+ https://en.wikipedia.org/wiki/PicoLisp
+- PicoLisp docs
+ https://picolisp.com/wiki/?Documentation
+- There are at least 114 PicoLisp repos on GitHub
+- PicoLisp first developed in https://www.mail-archive.com/picolisp@software-lab.de
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using PicoLisp in 99 repos on GitHub
+- Explore PicoLisp snippets on Rosetta Code
+- GitHub supports syntax highlighting for PicoLisp
+- Official Blog page for PicoLisp
+ http://pico-lisp.blogspot.com/
+- picolisp.com was registered in 2007
+- See also: (9 related languages)Lisp, Linux, S-expressions, Common Lisp, Emacs Lisp, Prolog, C, Assembly language, Java
+
+# 11dec13abu
+# (c) Software Lab. Alexander Burger
+
+(de permute (Lst)
+   (ifn (cdr Lst)
+      (cons Lst)
+      (mapcan
+         &#39;((X)
+            (mapcar
+               &#39;((Y) (cons X Y))
+               (permute (delete X Lst)) ) )
+         Lst ) ) )
+
+(de subsets (N Lst)
+   (cond
+      ((=0 N) &#39;(NIL))
+      ((not Lst))
+      (T
+         (conc
+            (mapcar
+               &#39;((X) (cons (car Lst) X))
+               (subsets (dec N) (cdr Lst)) )
+            (subsets N (cdr Lst)) ) ) ) )
+
+(de shuffle (Lst)
+   (by &#39;(NIL (rand)) sort Lst) )
+
+(de samples (Cnt Lst)
+   (make
+      (until (=0 Cnt)
+         (when (&gt;= Cnt (rand 1 (length Lst)))
+            (link (car Lst))
+            (dec &#39;Cnt) )
+         (pop &#39;Lst) ) ) )
+
+# Genetic Algorithm
+(de gen (&quot;Pop&quot; &quot;Cond&quot; &quot;Re&quot; &quot;Mu&quot; &quot;Se&quot;)
+   (until (&quot;Cond&quot; &quot;Pop&quot;)
+      (for (&quot;P&quot; &quot;Pop&quot; &quot;P&quot; (cdr &quot;P&quot;))
+         (set &quot;P&quot;
+            (maxi &quot;Se&quot;  # Selection
+               (make
+                  (for (&quot;P&quot; &quot;Pop&quot; &quot;P&quot;)
+                     (rot &quot;P&quot; (rand 1 (length &quot;P&quot;)))
+                     (link  # Recombination + Mutation
+                        (&quot;Mu&quot; (&quot;Re&quot; (pop &#39;&quot;P&quot;) (pop &#39;&quot;P&quot;))) ) ) ) ) ) ) )
+   (maxi &quot;Se&quot; &quot;Pop&quot;) )
+
+# Alpha-Beta tree search
+(de game (&quot;Flg&quot; &quot;Cnt&quot; &quot;Moves&quot; &quot;Move&quot; &quot;Cost&quot;)
+   (let (&quot;Alpha&quot; &#39;(1000000)  &quot;Beta&quot; -1000000)
+      (recur (&quot;Flg&quot; &quot;Cnt&quot; &quot;Alpha&quot; &quot;Beta&quot;)
+         (let? &quot;Lst&quot; (&quot;Moves&quot; &quot;Flg&quot;)
+            (if (=0 (dec &#39;&quot;Cnt&quot;))
+               (loop
+                  (&quot;Move&quot; (caar &quot;Lst&quot;))
+                  (setq &quot;*Val&quot; (list (&quot;Cost&quot; &quot;Flg&quot;) (car &quot;Lst&quot;)))
+                  (&quot;Move&quot; (cdar &quot;Lst&quot;))
+                  (T (&gt;= &quot;Beta&quot; (car &quot;*Val&quot;))
+                     (cons &quot;Beta&quot; (car &quot;Lst&quot;) (cdr &quot;Alpha&quot;)) )
+                  (when (&gt; (car &quot;Alpha&quot;) (car &quot;*Val&quot;))
+                     (setq &quot;Alpha&quot; &quot;*Val&quot;) )
+                  (NIL (setq &quot;Lst&quot; (cdr &quot;Lst&quot;)) &quot;Alpha&quot;) )
+               (setq &quot;Lst&quot;
+                  (sort
+                     (mapcar
+                        &#39;((&quot;Mov&quot;)
+                           (prog2
+                              (&quot;Move&quot; (car &quot;Mov&quot;))
+                              (cons (&quot;Cost&quot; &quot;Flg&quot;) &quot;Mov&quot;)
+                              (&quot;Move&quot; (cdr &quot;Mov&quot;)) ) )
+                        &quot;Lst&quot; ) ) )
+               (loop
+                  (&quot;Move&quot; (cadar &quot;Lst&quot;))
+                  (setq &quot;*Val&quot;
+                     (if (recurse (not &quot;Flg&quot;) &quot;Cnt&quot; (cons (- &quot;Beta&quot;)) (- (car &quot;Alpha&quot;)))
+                        (cons (- (car @)) (cdar &quot;Lst&quot;) (cdr @))
+                        (list (caar &quot;Lst&quot;) (cdar &quot;Lst&quot;)) ) )
+                  (&quot;Move&quot; (cddar &quot;Lst&quot;))
+                  (T (&gt;= &quot;Beta&quot; (car &quot;*Val&quot;))
+                     (cons &quot;Beta&quot; (cdar &quot;Lst&quot;) (cdr &quot;Alpha&quot;)) )
+                  (when (&gt; (car &quot;Alpha&quot;) (car &quot;*Val&quot;))
+                     (setq &quot;Alpha&quot; &quot;*Val&quot;) )
+                  (NIL (setq &quot;Lst&quot; (cdr &quot;Lst&quot;)) &quot;Alpha&quot;) ) ) ) ) ) )
+
+### Grids ###
+(de grid (DX DY FX FY)
+   (let Grid
+      (make
+         (for X DX
+            (link
+               (make
+                  (for Y DY
+                     (set
+                        (link
+                           (if (&gt; DX 26)
+                              (box)
+                              (intern (pack (char (+ X 96)) Y)) ) )
+                        (cons (cons) (cons)) ) ) ) ) ) )
+      (let West (and FX (last Grid))
+         (for (Lst Grid  Lst)
+            (let
+               (Col (pop &#39;Lst)
+                  East (or (car Lst) (and FX (car Grid)))
+                  South (and FY (last Col)) )
+               (for (L Col  L)
+                  (with (pop &#39;L)
+                     (set (: 0 1) (pop &#39;West))  # west
+                     (con (: 0 1) (pop &#39;East))  # east
+                     (set (: 0 -1) South)       # south
+                     (con (: 0 -1)              # north
+                        (or (car L) (and FY (car Col))) )
+                     (setq South This) ) )
+               (setq West Col) ) ) )
+      Grid ) )
+
+(de west (This)
+   (: 0 1 1) )
+
+(de east (This)
+   (: 0 1 -1) )
+
+(de south (This)
+   (: 0 -1 1) )
+
+(de north (This)
+   (: 0 -1 -1) )
+
+(de disp (&quot;Grid&quot; &quot;How&quot; &quot;Fun&quot; &quot;X&quot; &quot;Y&quot; &quot;DX&quot; &quot;DY&quot;)
+   (setq &quot;Grid&quot;
+      (if &quot;X&quot;
+         (mapcar
+            &#39;((L) (flip (head &quot;DY&quot; (nth L &quot;Y&quot;))))
+            (head &quot;DX&quot; (nth &quot;Grid&quot; &quot;X&quot;)) )
+         (mapcar reverse &quot;Grid&quot;) ) )
+   (let (N (+ (length (cdar &quot;Grid&quot;)) (or &quot;Y&quot; 1))  Sp (length N))
+      (&quot;border&quot; north)
+      (while (caar &quot;Grid&quot;)
+         (prin &quot; &quot; (align Sp N) &quot; &quot;
+            (and &quot;How&quot; (if (and (nT &quot;How&quot;) (west (caar &quot;Grid&quot;))) &quot; &quot; &#39;|)) )
+         (for L &quot;Grid&quot;
+            (prin
+               (&quot;Fun&quot; (car L))
+               (and &quot;How&quot; (if (and (nT &quot;How&quot;) (east (car L))) &quot; &quot; &#39;|)) ) )
+         (prinl)
+         (&quot;border&quot; south)
+         (map pop &quot;Grid&quot;)
+         (dec &#39;N) )
+      (unless (&gt; (default &quot;X&quot; 1) 26)
+         (space (inc Sp))
+         (for @ &quot;Grid&quot;
+            (prin &quot; &quot; (and &quot;How&quot; &quot;  &quot;) (char (+ 96 &quot;X&quot;)))
+            (T (&gt; (inc &#39;&quot;X&quot;) 26)) )
+         (prinl) ) ) )
+
+(de &quot;border&quot; (Dir)
+   (when &quot;How&quot;
+      (space Sp)
+      (prin &quot;  +&quot;)
+      (for L &quot;Grid&quot;
+         (prin (if (and (nT &quot;How&quot;) (Dir (car L))) &quot;   +&quot; &quot;---+&quot;)) )
+      (prinl) ) )
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

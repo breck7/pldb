@@ -1,0 +1,28 @@
+chain-format
+============
+
+chain-format is a text data format created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2838 on PLDB
+11 Years Old
+
+- chain-format first developed in University of California, Santa Cruz
+- Read more about chain-format on the web: 1.
+ https://genome.ucsc.edu/goldenPath/help/chain.html
+
+chain 4900 chrY 58368225 + 25985403 25985638 chr5 151006098 - 43257292 43257528 1
+9       1       0
+10      0       5
+61      4       0
+16      0       4
+42      3       0
+16      0       8
+14      1       0
+3       7       0
+48
+chain 4900 chrY 58368225 + 25985406 25985566 chr5 151006098 - 43549808 43549970 2
+16      0       2
+60      4       0
+10      0       4
+70

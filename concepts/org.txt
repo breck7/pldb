@@ -1,0 +1,216 @@
+Org
+===
+
+Org is an open source text markup language created in 2003 by Carsten Dominik.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Carsten%20Dominik
+
+#467 on PLDB
+21 Years Old
+18 Repos
+
+Try now: Riju
+
+Org-mode (also: Org mode; ) is a document editing, formatting, and organizing mode, designed for notes, planning, and authoring within the free software text editor Emacs. The name is used to encompass plain text files ("org files") that include simple marks to indicate levels of a hierarchy (such as the outline of an essay, a topic list with subtopics, nested computer code, etc.), and an editor with functions that can read the markup and manipulate hierarchy elements (expand/hide elements, move blocks of elements, check off to-do list items, etc.). Org-mode was created by Carsten Dominik in 2003, originally to organize his own life and work, and since the first release numerous other users and developers have contributed to this free software package. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Org-mode
+
+- Org website
+ https://orgmode.org/
+- Org Wikipedia page
+ https://en.wikipedia.org/wiki/Org-mode
+- Org docs
+ https://orgmode.org/manual/
+- There are at least 18 Org repos on GitHub
+- Org first developed in https://list.orgmode.org/
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Org in 1 repos on GitHub
+- orgmode.org was registered in 2007
+- See also: (11 related languages)Emacs, HTML, LaTeX, Markdown, reStructuredText, Textile, Git, MediaWiki, Pandoc, Vim, Sublime Text
+- Read more about Org on the web: 1.
+ https://orgmode.org/org.html#Document-structure
+
+* Top level headline
+** Second level
+*** 3rd level
+    some text
+*** 3rd level
+    more text
+
+* Another top level headline
+
+#+OPTIONS:    H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
+#+SEQ_TODO:   TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
+#+TAGS:       Write(w) Update(u) Fix(f) Check(c)
+#+TITLE:      org-ruby
+#+AUTHOR:     Brian Dewey
+#+EMAIL:      bdewey@gmail.com
+#+LANGUAGE:   en
+#+PRIORITIES: A C B
+#+CATEGORY:   worg
+
+{Back to Worg&#39;s index}
+
+* Motivation
+
+  The dominant simple plain-text markup languages for the web are
+  Textile and Markdown. A factor for the popularity of those markup
+  formats is the widespread availability of simple, free packages for
+  converting the formats to HTML. For example, the world of
+  Ruby-powered websites has settled on RedCloth for converting Textile
+  to HTML.
+
+  The default way to convert org-mode files to HTML is the powerful
+  publishing functionality provided by =emacs=. However, =emacs= does
+  not easiliy integrate into many existing website frameworks.
+
+  =Org-ruby= tries to make it easier to use org-mode files in both
+  dyanmic and static website generation tools written in
+  Ruby. =Org-ruby= is a simple Ruby gem to convert org-mode files to
+  HTML.
+
+* Using Org-ruby
+
+  =Org-ruby= follows the same model as other Ruby markup
+  libraries. You install the gem:
+
+  #+BEGIN_EXAMPLE
+  sudo gem install org-ruby
+  #+END_EXAMPLE
+
+  Then, to convert an org-file to HTML in your Ruby code:
+
+  #+BEGIN_EXAMPLE
+  require &#39;rubygems&#39;
+  require &#39;org-ruby&#39;
+
+  data = IO.read(filename)
+  puts Orgmode::Parser.new(data).to_html
+  #+END_EXAMPLE
+
+* Walkthrough: Using org-ruby with Webby
+
+  Here is an example of how to integrate =org-ruby= into Webby, a
+  static website generation tool written in Ruby.
+
+  Webby follows a similar pattern to other static site generation
+  tools (like nanoc, Jekyll, and webgen):
+
+  - You author website content in text with simple markup
+  - Each page is fed through one or more /filters/ to produce HTML
+  - The HTML is mixed in with layouts to produce the final pages
+
+  For a Webby site, a the source for a page may look like this:
+
+  #+BEGIN_EXAMPLE
+  ---
+  title:           Special Directories
+  created_at:      2009-12-17
+  status:          Complete
+  filter:
+    - erb
+    - maruku
+  tags:
+    - powershell
+  ---
+  &lt;%= @page.title %&gt;
+  ==================
+
+  Special Directories are a set of directories, each of which has a
+  function that will navigate you to the appropriate directory using
+  the push-location cmdlet. For example, the function `home` might
+  navigate to `c:\users\bdewey.`
+
+  Install
+  -------
+
+  Copy the module to somewhere in `ENV:PSModulePath`. Then,
+
+      InstallModule SpecialDirectories
+  #+END_EXAMPLE
+
+  In the above example, the text is written in Markdown. At the top of
+  the file, metadata informs Webby to pass the text through two
+  /filters/ to produce HTML. The first filter, =erb=, handles embedded
+  Ruby. In this case, it will replace ~&lt;%= @page.title %&gt;~ with the
+  page title (=Special Directories=). The second filter uses Maruku to
+  translate Markdown into HTML.
+
+  You can use the exact same pattern to include org-mode files in a
+  Webby site. For this walkthrough, I assume you already have Webby
+  installed, and that you&#39;ve already created a site.
+
+  1. Make sure you have =org-ruby= installed: =sudo gem install
+     org-ruby=.
+  2. You need to register a new Webby filter to handle org-mode
+     content. Webby makes this easy. In the =lib/= folder of your
+     site, create a file =orgmode.rb=:
+
+     #+BEGIN_EXAMPLE
+     require &#39;org-ruby&#39;
+
+     Webby::Filters.register :org do |input|
+       Orgmode::Parser.new(input).to_html
+     end
+     #+END_EXAMPLE
+
+     This code creates a new filter, =org=, that will use the
+     =org-ruby= parser to translate org-mode input into HTML.
+  3. Create your content. For example:
+
+     #+BEGIN_EXAMPLE
+---
+title:              Orgmode Parser
+created_at:         2009-12-21
+status:             Under development
+filter:
+  - erb
+  - org
+tags:
+  - orgmode
+  - ruby
+---
+&lt;%= @page.title %&gt;
+
+  Status: &lt;%= @page.status %&gt;
+
+* Description
+
+  Helpful Ruby routines for parsing orgmode files. The most
+  significant thing this library does today is convert orgmode files
+  to textile. Currently, you cannot do much to customize the
+  conversion. The supplied textile conversion is optimized for
+  extracting &quot;content&quot; from the orgfile as opposed to &quot;metadata.&quot;
+
+* History
+
+** 2009-12-29: Version 0.4
+
+   - The first thing output in HTML gets the class &quot;title&quot;
+   - HTML output is now indented
+   - Proper support for multi-paragraph list items.
+
+     See? This paragraph is part of the last bullet.
+
+   - Fixed bugs:
+     - &quot;rake spec&quot; wouldn&#39;t work on Linux. Needed &quot;require &#39;rubygems&#39;&quot;.
+       #+END_EXAMPLE
+
+     This file will go through the =erb= and =org= filters; as defined
+     in the previous step, the =org= filter will use =org-ruby= to
+     generate HTML.
+
+  That&#39;s all there is to it!
+
+Hello, world!
+
+Hello World
+
+Language features
+======================================================
+
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

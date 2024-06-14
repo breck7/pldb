@@ -1,0 +1,70 @@
+import ../code/conceptPage.scroll
+
+id textile
+name Textile
+appeared 2002
+creators netcarver
+tags textMarkup
+website https://textile-lang.com
+latestVersion v4.1.0
+
+isOpenSource true
+writtenIn yaml php markdown dockerfile xml make json
+fileType text
+wordRank 8426
+codeMirror textile
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 1524
+ committers 12
+ files 93
+ newestCommit 2024
+
+rijuRepl https://riju.codes/textile
+ example
+  Hello, world!
+  
+example
+ """
+ _This_ is a *test.*
+ 
+ * One
+ * Two
+ * Three
+ 
+ Link to "Slashdot":http://slashdot.org/
+ """
+
+githubRepo https://github.com/textile/php-textile
+ firstCommit 2010
+ stars 208
+ forks 48
+ subscribers 28
+ created 2010
+ updated 2022
+ description Textile markup language parser for PHP
+ issues 25
+
+wikipedia https://en.wikipedia.org/wiki/Textile_(markup_language)
+ related markdown php perl python ruby javascript csharp html qt ios android
+ summary Textile is a lightweight markup language that uses a text formatting syntax to convert plain text into structured HTML markup. Textile is used for writing articles, forum posts, readme documentation, and any other type of written content published online.
+ pageId 2375629
+ dailyPageViews 141
+ created 2005
+ backlinksCount 75
+ revisionCount 496
+ appeared 2002
+
+isbndb 0
+
+githubLanguage Textile
+ fileExtensions textile
+ trendingProjectsCount 0
+ type prose
+ aceMode textile
+ codemirrorMode textile
+ codemirrorMimeType text/x-textile
+ tmScope none
+ wrap true
+ repos 0

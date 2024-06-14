@@ -1,0 +1,57 @@
+import ../code/conceptPage.scroll
+
+id p4p
+name p4p
+appeared 2010
+tags pl
+website https://shriram.github.io/p4p
+conceptDescription an alternate syntax for Racket.
+
+writtenIn racket css javascript html
+repoStats
+ firstCommit 2010
+ commits 20
+ committers 2
+ files 15
+ newestCommit 2014
+country United States
+originCommunity Brown University
+reference http://shriram.github.io/p4p
+
+example
+ defvar: m = 10
+ defvar: this-better-be-6 = add(1, 2, 3)
+ defvar: this-better-be-0 = add()
+ deffun: five() = 5
+ deffun: trpl(x) = add(x, x, x)
+ deffun: g(a, b, c) = add(a, b, c)
+ deffun: d/dx(f) =
+ 
+   defvar: delta = 0.001
+ 
+   fun: (x) in:
+ 
+     div(sub(f(add(x, delta)),
+ 
+             f(x)),
+ 
+         delta)
+  deffun: fib(n) =
+    if: numeq(n, 0)
+      1
+    elseif: numeq(n, 1)
+      1
+    else:
+      add(fib(sub1(n)), fib(sub(n, 2)))
+
+githubRepo https://github.com/shriram/p4p
+ firstCommit 2010
+ stars 12
+ forks 2
+ subscribers 2
+ created 2010
+ updated 2022
+ description An alternate syntax for Racket
+ issues 0
+
+hasSemanticIndentation true

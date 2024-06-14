@@ -1,0 +1,87 @@
+ALGOL 60
+========
+
+ALGOL 60 is a programming language created in 1960 by John Backus and Friedrich L. Bauer and Julien Green and Charles Katz and John McCarthy and Peter Naur and Alan Perlis and Heinz Rutishauser and Klaus Samelson and Adriaan van Wijngaarden and Bernard Vauquois and Joseph Henry Wegstein and Michael Woodger.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221960%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Backus
+ https://pldb.io/concepts/../lists/creators.html#q=Friedrich%20L.%20Bauer
+ https://pldb.io/concepts/../lists/creators.html#q=Julien%20Green
+ https://pldb.io/concepts/../lists/creators.html#q=Charles%20Katz
+ https://pldb.io/concepts/../lists/creators.html#q=John%20McCarthy
+ https://pldb.io/concepts/../lists/creators.html#q=Peter%20Naur
+ https://pldb.io/concepts/../lists/creators.html#q=Alan%20Perlis
+ https://pldb.io/concepts/../lists/creators.html#q=Heinz%20Rutishauser
+ https://pldb.io/concepts/../lists/creators.html#q=Klaus%20Samelson
+ https://pldb.io/concepts/../lists/creators.html#q=Adriaan%20van%20Wijngaarden
+ https://pldb.io/concepts/../lists/creators.html#q=Bernard%20Vauquois
+ https://pldb.io/concepts/../lists/creators.html#q=Joseph%20Henry%20Wegstein
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Woodger
+
+#335 on PLDB
+64 Years Old
+
+ALGOL 60 (short for Algorithmic Language 1960) is a member of the ALGOL family of computer programming languages. It followed on from ALGOL 58 which had introduced code blocks and the begin and end pairs for delimiting them.  ALGOL 60 was the first language implementing nested function definitions with lexical scope. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ALGOL_60
+
+- ALGOL 60 Wikipedia page
+ https://en.wikipedia.org/wiki/ALGOL_60
+- ALGOL 60 docs
+ http://www.algol60.org/4documentation.htm
+- ALGOL 60 first developed in International Federation for Information Processing
+- ALGOL 60 on HOPL
+ https://hopl.info/showlanguage.prx?exp=1807
+- See also: (28 related languages)ALGOL 58, Simula, CPL, Pascal, Ada, C, Algol, CPL, BCPL, B, ALGOL W, ALGOL 68, COBOL, Scheme, Lisp, SMIL, ACT-III, Elliott ALGOL, Executive Systems Problem Oriented Language, NEWP, ALGOL N, Atlas Autocode, CORAL, Edinburgh IMP, ISWIM, JOVIAL, NELIAC, S-algol
+- 2 languages in PLDB linking to ALGOL 60: Executive Systems Problem Oriented Language, Simula
+
+procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
+   value n, m; array a; integer n, m, i, k; real y;
+comment The absolute greatest element of the matrix a, of size n by m,
+    is transferred to y, and the subscripts of this element to i and k;
+begin
+    integer p, q;
+    y := 0; i := k := 1;
+    for p := 1 step 1 until n do
+        for q := 1 step 1 until m do
+            if abs(a[p, q]) &gt; y then
+                begin y := abs(a[p, q]);
+                    i := p; k := q
+                end
+end Absmax
+
+BEGIN
+  FILE F(KIND=REMOTE);
+  EBCDIC ARRAY E[0:11];
+  REPLACE E BY &quot;HELLO WORLD&quot;;
+  WRITE(F, *, E);
+END.
+
+&#39;PROGRAM&#39; (HELLO)
+  &#39;BEGIN&#39;
+     &#39;COMMENT&#39; OPEN QUOTE IS &#39;(&#39;, CLOSE IS &#39;)&#39;, PRINTABLE SPACE HAS TO
+               BE WRITTEN AS % BECAUSE SPACES ARE IGNORED;
+     WRITE TEXT(&#39;(&#39;HELLO%WORLD&#39;)&#39;);
+  &#39;END&#39;
+  &#39;FINISH&#39;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token WRITE
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

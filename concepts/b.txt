@@ -1,0 +1,71 @@
+B
+=
+
+B is a programming language created in 1969 by Ken Thompson and Dennis Ritchie.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221969%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ken%20Thompson
+ https://pldb.io/concepts/../lists/creators.html#q=Dennis%20Ritchie
+
+#396 on PLDB
+55 Years Old
+
+B is a programming language developed at Bell Labs circa 1969. It is the work of Ken Thompson with Dennis Ritchie. B was derived from BCPL, and its name may be a contraction of BCPL. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/B_(programming_language)
+
+- B Wikipedia page
+ https://en.wikipedia.org/wiki/B_(programming_language)
+- B first developed in Bell Labs
+- Explore B snippets on Rosetta Code
+- B on HOPL
+ https://hopl.info/showlanguage.prx?exp=492
+- See also: (9 related languages)ABC, BCPL, PL/I, C, Multics, ALGOL 58, Unix, TMG, Yacc
+
+main() {
+    putchar (&#39;Hell&#39;); putchar (&#39;o Wo&#39;); putchar (&#39;rld&#39;); putchar (&#39;*n&#39;);
+}
+
+/* The following function will print a non-negative number, n, to
+   the base b, where 2&lt;=b&lt;=10.  This routine uses the fact that
+   in the ASCII character set, the digits 0 to 9 have sequential
+   code values.  */
+
+printn(n, b) {
+        extrn putchar;
+        auto a;
+
+        if (a = n / b)        /* assignment, not test for equality */
+                printn(a, b); /* recursive */
+        putchar(n % b + &#39;0&#39;);
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token putchar
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

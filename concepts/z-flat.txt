@@ -1,0 +1,36 @@
+Z-flat
+======
+
+Z-flat is a programming language created in 2021 by Adam Hutchings.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Adam%20Hutchings
+
+#2227 on PLDB
+3 Years Old
+
+git clone https://github.com/adamhutchings/zflat
+
+The home of the Z♭ programming language, including the compiler and docs (in progress) and the standard library (not yet started)
+
+- Z-flat is developed on GitHub and has 7 stars
+- Z-flat is written in C++, C, Markdown, CMake, YAML, Bourne shell
+
+~/ factorial /~
+
+~ recursive implementation ~
+factorial_r(x: int): int {
+    if (x &lt; 2) {
+        return 1;
+    } else {
+        return x * factorial_r(x - 1);
+    }
+}
+
+~ iterative implementation ~
+factorial_i(x: int): int {
+    ret: int = 1;
+    loop(x): i: int {
+        ret *= (i + 1);
+    }
+    return ret;
+}

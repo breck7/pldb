@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id kamby
+name Kamby
+appeared 2022
+creators Henrique Gogó
+tags pl
+website https://kamby.org/
+webRepl https://kamby.org/
+conceptDescription A small, embeddable and convenient language for who want to use and understand what is happening behind the scenes. The core is just ~400LOC and binary has just 20kb
+
+writtenIn c javascript html make markdown
+influencedBy lisp
+repoStats
+ firstCommit 2022
+ commits 115
+ committers 1
+ files 14
+ newestCommit 2023
+country Brazil
+originCommunity https://github.com/henriquegogo/kamby/issues
+reference https://news.ycombinator.com/item?id=32761113
+
+example
+ planet = [
+   name := 'World'
+   nick := 'Earth'
+ ]
+ 
+ 'Hello, ' + (planet :: {name})
+      
+
+githubRepo https://github.com/henriquegogo/kamby
+ stars 75
+ forks 2
+ subscribers 1
+ created 2022
+ updated 2023
+ description Kamby Language
+ issues 4

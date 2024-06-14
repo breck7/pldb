@@ -1,0 +1,71 @@
+import ../code/conceptPage.scroll
+
+id markus
+name Markus
+appeared 2020
+tags queryLanguage
+
+writtenIn rust json toml markdown javascript python c cpp bourne-shell yaml
+repoStats
+ firstCommit 2019
+ commits 374
+ committers 1
+ files 46
+ newestCommit 2020
+country United States
+originCommunity https://github.com/Markus-Studio
+
+example
+ type User: user {
+   name: string;
+ }
+ 
+ type Task {
+   owner: User;
+   title: string;
+   done: bool;
+ }
+ 
+ query myTasks() {
+   is(Task),
+   # %user is the current authenticated user.
+   eq(.owner, %user)
+ }
+ 
+ action newTask($title: string) {
+   create Task {
+     user: %user,
+     title: $title,
+     done: false
+   };
+ }
+ 
+ action toggleStatus($task: Task) {
+   validate eq($task.owner, %user);
+ 
+   update $task {
+     .done: not(.done)
+   };
+ }
+ 
+ action delete($task: Task) {
+   validate eq($task.owner, %user);
+   delete $task;
+ }
+ 
+ action edit($task: Task, $new_title: string) {
+   validate eq($task.owner, %user);
+   update $task {
+     .title: $new_title
+   };
+ }
+ 
+
+githubRepo https://github.com/Markus-Studio/Markus
+ stars 2
+ forks 0
+ subscribers 2
+ created 2020
+ updated 2021
+ description A declarative (database) query language!
+ issues 2

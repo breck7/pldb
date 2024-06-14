@@ -1,0 +1,54 @@
+Cypher Query Language
+=====================
+
+Cypher Query Language is a query language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#647 on PLDB
+13 Years Old
+
+Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph. Cypher is a relatively simple but still very powerful language. Very complicated database queries can easily be expressed through Cypher. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cypher_Query_Language
+
+- Cypher Query Language website
+ https://neo4j.com/developer/cypher-query-language/
+- Cypher Query Language Wikipedia page
+ https://en.wikipedia.org/wiki/Cypher_Query_Language
+- Cypher Query Language first developed in Neo4j
+- CodeMirror package for syntax highlighting Cypher Query Language
+- Monaco package for syntax highlighting Cypher Query Language
+- Pygments supports syntax highlighting for Cypher Query Language
+- See also: (2 related languages)SQL, SPARQL
+
+MATCH (start:Content)-[:RELATED_CONTENT]-&gt;(content:Content)
+WHERE content.source = &#39;user&#39;
+OPTIONAL MATCH (content)-[r]-()
+DELETE r, content
+
+ALL AND AS ASC ASCENDING BY CALL CASE CONTAINS CREATE DELETE DESC DESCENDING DETACH DISTINCT ELSE END ENDS EXISTS IN IS LIMIT MANDATORY MATCH MERGE NOT ON ON OPTIONAL OR ORDER REMOVE RETURN SET SKIP STARTS THEN UNION UNWIND WHEN WHERE WITH XOR YIELD
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment

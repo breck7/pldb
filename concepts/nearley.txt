@@ -1,0 +1,161 @@
+Nearley
+=======
+
+Nearley is an open source grammar language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#217 on PLDB
+10 Years Old
+53 Repos
+
+git clone https://github.com/Hardmath123/nearley
+
+📜🔜🌲 Simple, fast, powerful parser toolkit for JavaScript.
+
+- Nearley website
+ https://nearley.js.org/
+- Nearley is developed on GitHub and has 3,231 stars
+- Nearley docs
+ https://nearley.js.org/docs/how-to-grammar-good
+- There are at least 53 Nearley repos on GitHub
+- Nearley first developed in https://github.com/kach/nearley/issues
+- Nearley is written in JavaScript, HTML, Markdown, JSON, SVG, CSS, YAML, Bourne shell
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Nearley in 33 repos on GitHub
+- GitHub supports syntax highlighting for Nearley
+
+# nearley grammar
+@builtin &quot;string.ne&quot;
+
+@{%
+
+function insensitive(sl) {
+    var s = sl.literal;
+    result = [];
+    for (var i=0; i&lt;s.length; i++) {
+        var c = s.charAt(i);
+        if (c.toUpperCase() !== c || c.toLowerCase() !== c) {
+            result.push(new RegExp(&quot;[&quot; + c.toLowerCase() + c.toUpperCase() + &quot;]&quot;));
+        } else {
+            result.push({literal: c});
+        }
+    }
+    return {subexpression: [{tokens: result, postprocess: function(d) {return d.join(&quot;&quot;); }}]};
+}
+
+%}
+
+final -&gt; whit? prog whit?  {% function(d) { return d[1]; } %}
+
+prog -&gt; prod  {% function(d) { return [d[0]]; } %}
+      | prod whit prog  {% function(d) { return [d[0]].concat(d[2]); } %}
+
+prod -&gt; word whit? (&quot;-&quot;|&quot;=&quot;):+ &quot;&gt;&quot; whit? expression+  {% function(d) { return {name: d[0], rules: d[5]}; } %}
+      | word &quot;[&quot; wordlist &quot;]&quot; whit? (&quot;-&quot;|&quot;=&quot;):+ &quot;&gt;&quot; whit? expression+ {% function(d) {return {macro: d[0], args: d[2], exprs: d[8]}} %}
+      | &quot;@&quot; whit? js  {% function(d) { return {body: d[2]}; } %}
+      | &quot;@&quot; word whit word  {% function(d) { return {config: d[1], value: d[3]}; } %}
+      | &quot;@include&quot;  whit? string {% function(d) {return {include: d[2].literal, builtin: false}} %}
+      | &quot;@builtin&quot;  whit? string {% function(d) {return {include: d[2].literal, builtin: true }} %}
+
+expression+ -&gt; completeexpression
+             | expression+ whit? &quot;|&quot; whit? completeexpression  {% function(d) { return d[0].concat([d[4]]); } %}
+
+expressionlist -&gt; completeexpression
+             | expressionlist whit? &quot;,&quot; whit? completeexpression {% function(d) { return d[0].concat([d[4]]); } %}
+
+wordlist -&gt; word
+            | wordlist whit? &quot;,&quot; whit? word {% function(d) { return d[0].concat([d[4]]); } %}
+
+completeexpression -&gt; expr  {% function(d) { return {tokens: d[0]}; } %}
+                    | expr whit? js  {% function(d) { return {tokens: d[0], postprocess: d[2]}; } %}
+
+expr_member -&gt;
+      word {% id %}
+    | &quot;TEMPLATEquot; word {% function(d) {return {mixin: d[1]}} %}
+    | word &quot;[&quot; expressionlist &quot;]&quot; {% function(d) {return {macrocall: d[0], args: d[2]}} %}
+    | string &quot;i&quot;:? {% function(d) { if (d[1]) {return insensitive(d[0]); } else {return d[0]; } } %}
+    | &quot;%&quot; word {% function(d) {return {token: d[1]}} %}
+    | charclass {% id %}
+    | &quot;(&quot; whit? expression+ whit? &quot;)&quot; {% function(d) {return {&#39;subexpression&#39;: d[2]} ;} %}
+    | expr_member whit? ebnf_modifier {% function(d) {return {&#39;ebnf&#39;: d[0], &#39;modifier&#39;: d[2]}; } %}
+
+ebnf_modifier -&gt; &quot;:+&quot; {% id %} | &quot;:*&quot; {% id %} | &quot;:?&quot; {% id %}
+
+expr -&gt; expr_member
+      | expr whit expr_member  {% function(d){ return d[0].concat([d[2]]); } %}
+
+word -&gt; [\w\?\+]  {% function(d){ return d[0]; } %}
+      | word [\w\?\+]  {% function(d){ return d[0]+d[1]; } %}
+
+string -&gt; dqstring {% function(d) {return { literal: d[0] }; } %}
+#string -&gt; &quot;\&quot;&quot; charset &quot;\&quot;&quot;  {% function(d) { return { literal: d[1].join(&quot;&quot;) }; } %}
+#
+#charset -&gt; null
+#         | charset char  {% function(d) { return d[0].concat([d[1]]); } %}
+#
+#char -&gt; [^\\&quot;]  {% function(d) { return d[0]; } %}
+#      | &quot;\\&quot; .  {% function(d) { return JSON.parse(&quot;\&quot;&quot;+&quot;\\&quot;+d[1]+&quot;\&quot;&quot;); } %}
+
+charclass -&gt; &quot;.&quot;  {% function(d) { return new RegExp(&quot;.&quot;); } %}
+           | &quot;[&quot; charclassmembers &quot;]&quot;  {% function(d) { return new RegExp(&quot;[&quot; + d[1].join(&#39;&#39;) + &quot;]&quot;); } %}
+
+charclassmembers -&gt; null
+                  | charclassmembers charclassmember  {% function(d) { return d[0].concat([d[1]]); } %}
+
+charclassmember -&gt; [^\\\]]  {% function(d) { return d[0]; } %}
+                 | &quot;\\&quot; .  {% function(d) { return d[0] + d[1]; } %}
+
+js -&gt; &quot;{&quot; &quot;%&quot; jscode &quot;%&quot; &quot;}&quot;  {% function(d) { return d[2]; } %}
+
+jscode -&gt; null  {% function() {return &quot;&quot;;} %}
+        | jscode [^%]  {% function(d) {return d[0] + d[1];} %}
+        | jscode &quot;%&quot; [^}] {% function(d) {return d[0] + d[1] + d[2]; } %}
+
+# Whitespace with a comment
+whit -&gt; whitraw
+      | whitraw? comment whit?
+
+# Optional whitespace with a comment
+whit? -&gt; null
+       | whit
+
+# Literally a string of whitespace
+whitraw -&gt; [\s]
+         | whitraw [\s]
+
+# A string of whitespace OR the empty string
+whitraw? -&gt; null
+          | whitraw
+
+comment -&gt; &quot;#&quot; commentchars &quot;\n&quot;
+commentchars -&gt; null
+              | commentchars [^\n]
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

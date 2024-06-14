@@ -1,0 +1,60 @@
+Fibonacci
+=========
+
+Fibonacci is a programming language created in 1991 by Antonio Albano and Giorgio Ghelli and and Renzo Orsini.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Antonio%20Albano
+ https://pldb.io/concepts/../lists/creators.html#q=Giorgio%20Ghelli
+ https://pldb.io/concepts/../lists/creators.html#q=and%20Renzo%20Orsini
+
+#1976 on PLDB
+33 Years Old
+
+- Fibonacci first developed in Università di Pisa
+- Fibonacci on HOPL
+ https://hopl.info/showlanguage.prx?exp=5759
+- Read more about Fibonacci on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
+- Read more about Fibonacci on the web: 1.
+ https://dl.acm.org/doi/pdf/10.5555/615224.615227
+
+let john = role Person
+ private
+  let address = var (&quot;Darwin road, 123 - London&quot;) ;5
+ methods
+  Name = &quot;John Daniels&quot;;
+  BirthYear = 1967;
+  Age = currentYear() - me.BirthYear;
+  Address = at (address);
+  modAddress (newAddress: String) =
+      if stringLength(newAddress) &lt;= 0
+      then failwith &quot;incorrect address&quot;
+      else address := newAddress
+  Introduce = &quot;My name is &quot; &amp; me.Name &amp;
+       &quot;and I was born in &quot; ~ intToString(me.BirthYear);
+end;
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* query examples *)
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

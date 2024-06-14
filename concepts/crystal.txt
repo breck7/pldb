@@ -1,0 +1,250 @@
+Crystal
+=======
+
+Crystal is an open source programming language created in 2014 by Ary Borenszweig and Juan Wajnerman and Brian Cardiff.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ary%20Borenszweig
+ https://pldb.io/concepts/../lists/creators.html#q=Juan%20Wajnerman
+ https://pldb.io/concepts/../lists/creators.html#q=Brian%20Cardiff
+
+#52 on PLDB
+10 Years Old
+8k Repos
+
+git clone https://github.com/crystal-lang/crystal
+
+Try now: Web · Riju · TIO
+
+In computer software programming languages, Crystal is a general-purpose, object-oriented programming language, designed and developed by Ary Borenszweig and Juan Wajnerman and more than 200 contributors. With syntax inspired by the language Ruby, it is a compiled language with static type-checking, but specifying the types of variables or method arguments is generally unneeded. Types are resolved by an advanced global type inference algorithm. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Crystal_(programming_language)
+
+- Crystal website
+ https://crystal-lang.org
+- Crystal Wikipedia page
+ https://en.wikipedia.org/wiki/Crystal_(programming_language)
+- Crystal is developed on GitHub and has 17,909 stars
+- Watch the history of the Crystal repo visualized with Gource
+- PLDB has 2 documentation sites for Crystal: crystal-lang.org, devdocs.io
+- There are at least 7,522 Crystal repos on GitHub
+- Crystal first developed in https://forum.crystal-lang.org/
+- Crystal is written in Crystal, Embedded Crystal, YAML, Markdown, HTML, JavaScript, PowerShell, Bourne shell, CSS, C, SVG, Make, XML, Python, JSON, Z shell, Bash, C++, Nix, Ini
+- Crystal on Twitter
+ https://twitter.com/crystallanguage
+- The  Google BigQuery Public Dataset GitHub snapshot shows 767 users using Crystal in 1k repos on GitHub
+- There are 4,118 members in the Crystal subreddit
+- There are 14 Project Euler users using Crystal
+- In the 2021 StackOverflow developer survey Crystal programmers reported a median salary of $72,400. 1% of respondents reported using Crystal. 466 programmers reported using Crystal, and 790 said they wanted to use it
+- Explore Crystal snippets on Rosetta Code
+- Crystal ranks #24 in the TIOBE Index
+- Crystal LSP implementation
+- Pygments supports syntax highlighting for Crystal
+- GitHub supports syntax highlighting for Crystal
+- Release Notes for Crystal
+ https://github.com/crystal-lang/crystal/blob/master/CHANGELOG.md
+- Official Blog page for Crystal
+ https://crystal-lang.org/blog/
+- Frequently Asked Questions for Crystal
+ https://forum.crystal-lang.org/
+- crystal-lang.org was registered in 2013
+- See also: (10 related languages)IA-32, FreeBSD, Ruby, C, Rust, Go, C#, Python, LLVM IR, CSP
+- 6 languages in PLDB linking to Crystal: Ace Editor, Crystal, Embedded Crystal, mal, Pygments, Savi
+
+# Type your code here, or load an example.
+
+# compile with --prelude=empty
+fun square(num : Int32) : Int32
+  num &amp;* num
+end
+
+puts &quot;Hello, world!&quot;
+
+puts &quot;Hello World&quot;
+
+# Hello world in Crystal
+
+puts &quot;Hello World&quot;
+
+#!/usr/bin/env bin/crystal --run
+require &quot;../../spec_helper&quot;
+
+describe &quot;Type inference: declare var&quot; do
+  it &quot;types declare var&quot; do
+    assert_type(&quot;a :: Int32&quot;) { int32 }
+  end
+
+  it &quot;types declare var and reads it&quot; do
+    assert_type(&quot;a :: Int32; a&quot;) { int32 }
+  end
+
+  it &quot;types declare var and changes its type&quot; do
+    assert_type(&quot;a :: Int32; while 1 == 2; a = &#39;a&#39;; end; a&quot;) { union_of(int32, char) }
+  end
+
+  it &quot;declares instance var which appears in initialize&quot; do
+    result = assert_type(&quot;
+      class Foo
+        @x :: Int32
+      end
+
+      Foo.new&quot;) { types[&quot;Foo&quot;] }
+
+    mod = result.program
+
+    foo = mod.types[&quot;Foo&quot;] as NonGenericClassType
+    foo.instance_vars[&quot;@x&quot;].type.should eq(mod.int32)
+  end
+
+  it &quot;declares instance var of generic class&quot; do
+    result = assert_type(&quot;
+      class Foo(T)
+        @x :: T
+      end
+
+      Foo(Int32).new&quot;) do
+        foo = types[&quot;Foo&quot;] as GenericClassType
+        foo_i32 = foo.instantiate([int32] of Type | ASTNode)
+        foo_i32.lookup_instance_var(&quot;@x&quot;).type.should eq(int32)
+        foo_i32
+    end
+  end
+
+  it &quot;declares instance var of generic class after reopen&quot; do
+    result = assert_type(&quot;
+      class Foo(T)
+      end
+
+      f = Foo(Int32).new
+
+      class Foo(T)
+        @x :: T
+      end
+
+      f&quot;) do
+        foo = types[&quot;Foo&quot;] as GenericClassType
+        foo_i32 = foo.instantiate([int32] of Type | ASTNode)
+        foo_i32.lookup_instance_var(&quot;@x&quot;).type.should eq(int32)
+        foo_i32
+    end
+  end
+
+  it &quot;declares an instance variable in initialize&quot; do
+    assert_type(&quot;
+      class Foo
+        def initialize
+          @x :: Int32
+        end
+
+        def x
+          @x
+        end
+      end
+
+      Foo.new.x
+      &quot;) { int32 }
+  end
+end
+
+channel = Channel(Int32).new
+
+spawn do
+  puts &quot;Before first send&quot;
+  channel.send(1)
+  puts &quot;Before second send&quot;
+  channel.send(2)
+end
+
+puts &quot;Before first receive&quot;
+value = channel.receive
+puts value # =&gt; 1
+
+puts &quot;Before second receive&quot;
+value = channel.receive
+puts value # =&gt; 2
+
+abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
+
+Language features
+======================================================
+
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token require
+ Example
+  require "../../spec_helper"
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token puts
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

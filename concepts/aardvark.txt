@@ -1,0 +1,318 @@
+Aardvark
+========
+
+Aardvark is an open source programming language created in 2020 by Hg0428 and JustCoding123 and CompilingCoder and TheBoys619 and PlasDev and ZDev1.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Hg0428
+ https://pldb.io/concepts/../lists/creators.html#q=JustCoding123
+ https://pldb.io/concepts/../lists/creators.html#q=CompilingCoder
+ https://pldb.io/concepts/../lists/creators.html#q=TheBoys619
+ https://pldb.io/concepts/../lists/creators.html#q=PlasDev
+ https://pldb.io/concepts/../lists/creators.html#q=ZDev1
+
+#1333 on PLDB
+4 Years Old
+
+git clone https://github.com/Aardvark-team/Aardvark-py
+
+- Aardvark is developed on GitHub and has 2 stars
+- Aardvark docs
+ https://aardvark-docs.programit.repl.co/
+- Aardvark first developed in discord
+- Aardvark is written in Python, Markdown, Bourne shell, TOML, PowerShell, JSON
+
+stdout.write(&quot;Hello World!\n&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Sets
+ FeatureLink ../features/hasSets.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasSelfOrThisWord
+ FeatureLink ../features/hasSelfOrThisWord.html
+ Supported ✓
+ Token 
+ Example
+  You can name it whatever you like.
+row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Prefix Notation
+ FeatureLink ../features/hasPrefixNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Postfix Notation
+ FeatureLink ../features/hasPostfixNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported ✓
+ Token 
+ Example
+  This functionality is included in switch statements.
+row
+ Feature Operators
+ FeatureLink ../features/hasOperators.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Null
+ FeatureLink ../features/hasNull.html
+ Supported ✓
+ Token 
+ Example
+  `null`
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Manual Memory Management
+ FeatureLink ../features/hasManualMemoryManagement.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported ✓
+ Token 
+ Example
+  ++ and --
+row
+ Feature Implicit Arguments
+ FeatureLink ../features/hasImplicitArguments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasIfs
+ FeatureLink ../features/hasIfs.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasIfElses
+ FeatureLink ../features/hasIfElses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Here Document
+ FeatureLink ../features/hasHereDocs.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  `16_fa7` would evaluate as a hexadecimal number
+row
+ Feature hasGlobalScope
+ FeatureLink ../features/hasGlobalScope.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasForLoops
+ FeatureLink ../features/hasForLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasFnArguments
+ FeatureLink ../features/hasFnArguments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature First-Class Functions
+ FeatureLink ../features/hasFirstClassFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+  Has throw, try, and catch
+row
+ Feature Dynamic Properties
+ FeatureLink ../features/hasDynamicProperties.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+  `static` keyword
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasContinue
+ FeatureLink ../features/hasContinue.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature hasBreak
+ FeatureLink ../features/hasBreak.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  `2_101` would evaluate as a binary number.
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Labels
+ FeatureLink ../features/hasLabels.html
+ Supported X
+ Token 
+ Example

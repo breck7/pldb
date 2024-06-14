@@ -1,0 +1,151 @@
+Slash
+=====
+
+Slash is an open source programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#665 on PLDB
+12 Years Old
+572 Repos
+
+git clone https://github.com/slash-lang/slash
+
+A new language for the web
+
+- Slash website
+ http://slash-lang.org/
+- Slash is developed on GitHub and has 387 stars
+- There are at least 572 Slash repos on GitHub
+- Slash first developed in https://github.com/slash-lang/slash
+- Slash is written in C, Perl, Make, Ruby, Markdown, Bash, YAML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 388 users using Slash in 427 repos on GitHub
+- Pygments supports syntax highlighting for Slash
+- GitHub supports syntax highlighting for Slash
+
+&lt;%
+
+class Env {
+    def init {
+        @memory = [];
+        @ptr = 0;
+    }
+
+    def ptr       { @ptr }
+    def ptr=(ptr) { @ptr = ptr }
+
+    def current_value         { @memory[@ptr] || 0 }
+    def current_value=(value) { @memory[@ptr] = value }
+}
+
+class AST {
+    class Next {
+        def eval(env) {
+            env.ptr++;
+        }
+    }
+
+    class Prev {
+        def eval(env) {
+            env.ptr--;
+        }
+    }
+
+    class Inc {
+        def eval(env) {
+            env.current_value++;
+        }
+    }
+
+    class Dec {
+        def eval(env) {
+            env.current_value--;
+        }
+    }
+
+    class Output {
+        def eval(env) {
+            print(env.current_value.char);
+        }
+    }
+
+    class Input {
+        def eval(env) {
+            ...
+        }
+    }
+
+    class Sequence {
+        def init(nodes) {
+            @nodes = nodes;
+        }
+
+        def eval(env) {
+            for node in @nodes {
+                node.eval(env);
+            }
+        }
+    }
+
+    class Loop {
+        def init(seq) {
+            @seq = seq;
+        }
+
+        def eval(env) {
+            while env.current_value != 0 {
+                @seq.eval(env);
+            }
+        }
+    }
+}
+
+class Parser {
+    def init(str) {
+        @chars = str.split(&quot;&quot;);
+    }
+
+    def parse {
+        @stack = [[]];
+        for char in @chars {
+            _parse_char(char);
+        }
+        if @stack.length != 1 {
+            throw SyntaxError.new(&quot;unexpected end of input&quot;);
+        }
+        AST::Sequence.new(@stack.last);
+    }
+
+    def _parse_char(char) {
+        switch char {
+            &quot;&gt;&quot; { _add(AST::Next.new); }
+            &quot;&lt;&quot; { _add(AST::Prev.new); }
+            &quot;+&quot; { _add(AST::Inc.new); }
+            &quot;-&quot; { _add(AST::Dec.new); }
+            &quot;.&quot; { _add(AST::Output.new); }
+            &quot;,&quot; { _add(AST::Input.new); }
+            &quot;[&quot; { _open_loop(); }
+            &quot;]&quot; { _close_loop(); }
+        }
+    }
+
+    def _add(node) {
+        @stack.last.push(node);
+    }
+
+    def _open_loop {
+        @stack.push([]);
+    }
+
+    def _close_loop {
+        if @stack.length == 1 {
+            throw SyntaxError.new(&quot;unexpected &#39;]&#39;&quot;);
+        }
+
+        nodes = @stack.pop;
+        _add(AST::Loop.new(AST::Sequence.new(nodes)));
+    }
+}
+
+src = File.read(ARGV.first);
+ast = Parser.new(src).parse;
+ast.eval(Env.new);

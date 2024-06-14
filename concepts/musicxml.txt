@@ -1,0 +1,56 @@
+MusicXML
+========
+
+MusicXML is a programming language created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2134 on PLDB
+20 Years Old
+
+MusicXML is an XML-based file format for representing Western musical notation. The format is open, fully documented, and can be freely used under the W3C Community Final Specification Agreement.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MusicXML
+
+- MusicXML Wikipedia page
+ https://en.wikipedia.org/wiki/MusicXML
+- MusicXML first developed in World Wide Web Consortium
+- MusicXML on HOPL
+ https://hopl.info/showlanguage.prx?exp=6430
+- See also: (4 related languages)XML, DTD, Sibelius, JavaScript
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
+&lt;!DOCTYPE score-partwise PUBLIC
+    &quot;-//Recordare//DTD MusicXML 3.1 Partwise//EN&quot;
+    &quot;http://www.musicxml.org/dtds/partwise.dtd&quot;&gt;
+&lt;score-partwise version=&quot;3.1&quot;&gt;
+  &lt;part-list&gt;
+    &lt;score-part id=&quot;P1&quot;&gt;
+      &lt;part-name&gt;Music&lt;/part-name&gt;
+    &lt;/score-part&gt;
+  &lt;/part-list&gt;
+  &lt;part id=&quot;P1&quot;&gt;
+    &lt;measure number=&quot;1&quot;&gt;
+      &lt;attributes&gt;
+        &lt;divisions&gt;1&lt;/divisions&gt;
+        &lt;key&gt;
+          &lt;fifths&gt;0&lt;/fifths&gt;
+        &lt;/key&gt;
+        &lt;time&gt;
+          &lt;beats&gt;4&lt;/beats&gt;
+          &lt;beat-type&gt;4&lt;/beat-type&gt;
+        &lt;/time&gt;
+        &lt;clef&gt;
+          &lt;sign&gt;G&lt;/sign&gt;
+          &lt;line&gt;2&lt;/line&gt;
+        &lt;/clef&gt;
+      &lt;/attributes&gt;
+      &lt;note&gt;
+        &lt;pitch&gt;
+          &lt;step&gt;C&lt;/step&gt;
+          &lt;octave&gt;4&lt;/octave&gt;
+        &lt;/pitch&gt;
+        &lt;duration&gt;4&lt;/duration&gt;
+        &lt;type&gt;whole&lt;/type&gt;
+      &lt;/note&gt;
+    &lt;/measure&gt;
+  &lt;/part&gt;
+&lt;/score-partwise&gt;

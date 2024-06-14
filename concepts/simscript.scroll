@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id simscript
+name SIMSCRIPT
+appeared 1963
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+country United States
+originCommunity RAND
+
+wikipedia https://en.wikipedia.org/wiki/SIMSCRIPT
+ related fortran simula quikscript gpss
+ summary SIMSCRIPT is a free-form, English-like general-purpose simulation language conceived by Harry Markowitz and Bernard Hausner at the RAND Corporation in 1963. It was implemented as a Fortran preprocessor on the IBM 7090 and was designed for large discrete event simulations. It influenced Simula. Though earlier versions were released into the public domain, SIMSCRIPT was commercialized by Markowitz's company, California Analysis Center, Inc., which produced proprietary versions SIMSCRIPT I.5 and SIMSCRIPT II.5.
+ pageId 1064164
+ dailyPageViews 17
+ created 2004
+ backlinksCount 13
+ revisionCount 46
+ appeared 1963
+
+hopl https://hopl.info/showlanguage.prx?exp=190
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1983|Caci Products Co|Simscript Ii.5: Programming Language|Ed Russell|9789996806339
+ 1969|Prentice-hall|The Simscript Ii Programming Language (prentice-hall Series In Automatic Computation)|Philip J Kiviat|9780138101763
+ ||Simulation Programming Languages: Simula, Mathematica, Simulation Language, Simscript Ii.5, Spice, Eicaslab, Modelica, Goldsim|Books and LLC|9781155277387
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Simscript II Programming Language|1969|P. J. Kiviat|17288845|0.0|0|0

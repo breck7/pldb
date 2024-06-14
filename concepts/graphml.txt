@@ -1,0 +1,27 @@
+GraphML
+=======
+
+GraphML is a xml format created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2171 on PLDB
+23 Years Old
+
+GraphML is an XML-based file format for graphs. The GraphML file format results from the joint effort of the graph drawing community to define a common format for exchanging graph structure data. It uses an XML-based syntax and supports the entire range of possible graph structure constellations including directed, undirected, mixed graphs, hypergraphs, and application-specific attributes.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GraphML
+
+- GraphML Wikipedia page
+ https://en.wikipedia.org/wiki/GraphML
+- GraphML first developed in https://list.dia.uniroma3.it/mailman/listinfo/gdnet
+- See also: (4 related languages)Graph Modeling Language, XML, DOT, Java
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;graphml xmlns=&quot;http://graphml.graphdrawing.org/xmlns&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd&quot;&gt;
+  &lt;graph id=&quot;G&quot; edgedefault=&quot;undirected&quot;&gt;
+    &lt;node id=&quot;n0&quot;/&gt;
+    &lt;node id=&quot;n1&quot;/&gt;
+    &lt;edge id=&quot;e1&quot; source=&quot;n0&quot; target=&quot;n1&quot;/&gt;
+  &lt;/graph&gt;
+&lt;/graphml&gt;

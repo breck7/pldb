@@ -1,0 +1,39 @@
+loadConceptsParser
+ description Load all concepts in all scroll files in a folder and remove any "import" statements.
+ extends abstractScrollParser
+ cruxFromId
+ cells keywordCell filePathCell
+ javascript
+  compile() {
+   // A little hacky
+   const { Disk } = require("scrollsdk/products/Disk.node.js")
+   const path = require("path")
+   const {file} = this.parent
+   const folder = path.join(file.folderPath, this.getWord(1))
+   const ONE_BIG_FILE = Disk.getFiles(folder).filter(file => file.endsWith(".scroll")).map(Disk.read).filter(str => /^id /mg.test(str)).join("\n\n").replace(/import .+/g, "")
+    this.parent.concat(ONE_BIG_FILE)
+   //console.log(ONE_BIG_FILE)
+   return ""
+  }
+
+printConceptsParser
+ description Print the concepts in a page into an HTML table.
+ cruxFromId
+ extends abstractCommentParser
+ javascript
+   compile() {
+   // A hacky but simple way to do this for now.
+   const node = this.appendSibling("table \t", this.parent.file.compileConcepts("concepts.tsv"))
+   const html = node.compile()
+   node.destroy()
+   return html
+   }
+
+writeConceptsParser
+ cruxFromId
+ catchAllCellType filePathCell
+ description Compiles concepts to a delimited file and write to disk.
+ extends abstractCommandParser
+ sortByParser
+  cruxFromId
+  cells keywordCell anyCell

@@ -1,0 +1,128 @@
+import ../code/conceptPage.scroll
+
+id markdown
+name Markdown
+appeared 2004
+creators John Gruber and Aaron Swartz
+tags textMarkup
+website https://daringfireball.net/projects/markdown/
+latestVersion 1.0.1
+webRepl https://daringfireball.net/projects/markdown/dingus
+webRepl https://dillinger.io/
+webRepl https://stackedit.io/app#
+
+isOpenSource true
+writtenIn perl
+influencedBy atx
+compilesTo html
+clocExtensions contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook
+fileType text
+documentation https://www.markdownguide.org/basic-syntax/
+monaco markdown
+codeMirror markdown
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://talk.commonmark.org/
+
+pygmentsHighlighter Markdown
+ filename markup.py
+ fileExtensions md markdown
+rijuRepl https://riju.codes/markdown
+ example
+  Hello, world!
+subreddit https://reddit.com/r/Markdown
+ memberCount
+  2022 2463
+leachim6 Markdown
+ filepath m/Markdown.md
+ fileExtensions md
+ example
+  Hello World
+  
+
+hasSemanticIndentation true
+hasLineComments false
+hasBooleans false
+
+wikipedia https://en.wikipedia.org/wiki/Markdown
+ example
+  # Heading
+  
+  ## Sub-heading
+  
+  ### Another deeper heading
+   
+  Paragraphs are separated
+  by a blank line.
+  
+  Two spaces at the end of a line leave a
+  line break.
+  
+  Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+  
+  Horizontal rule:
+  
+  ---
+  
+  Bullet list:
+  
+    * apples
+    * oranges
+    * pears
+  
+  Numbered list:
+  
+    1. apples
+    2. oranges
+    3. pears
+  
+  A [link](http://example.com).
+ related html textile restructuredtext perl pandoc-app mime php python ruby drupal mediawiki rstudio-editor r c apl asciidoc org txt2tags
+ summary Markdown is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. As the initial description of Markdown contained ambiguities and unanswered questions, many implementations and extensions of Markdown appeared over the years to answer these issues.
+ pageId 2415885
+ dailyPageViews 1954
+ created 2005
+ backlinksCount 286
+ revisionCount 1124
+ appeared 2004
+
+githubBigQuery Markdown
+ repos 8
+ users 8
+
+linguistGrammarRepo https://github.com/atom/language-gfm
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 58
+ commitCount 426
+ sampleCount 8
+ example
+  Tender
+  ======
+  
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 2020|Routledge|R Markdown Cookbook (Chapman & Hall/CRC The R Series)|Xie, Yihui|9780367563837
+ 2017|Chapman and Hall/CRC|blogdown: Creating Websites with R Markdown (Chapman & Hall/CRC The R Series)|Xie, Yihui and Hill, Alison Presmanes and Thomas, Amber|9781138480452
+ 20190816|Springer Nature|Introducing Markdown and Pandoc|Thomas Mailund|9781484251492
+ 08/2013|Packt Publishing|Instant Markdown|Herrero Arturo|9781783559152
+ 20180727|Taylor & Francis|R Markdown|Yihui Xie; J.J. Allaire; Garrett Grolemund|9780429782961
+
+githubLanguage Markdown
+ fileExtensions md livemd markdown mdown mdwn mdx mkd mkdn mkdown ronn scd workbook
+ trendingProjectsCount 0
+ type prose
+ filenames contents.lr
+ aceMode markdown
+ codemirrorMode gfm
+ codemirrorMimeType text/x-gfm
+ tmScope source.gfm
+ wrap true
+ aliases pandoc
+ repos 1023
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|R Markdown|10.1002/wics.1348|22|1|Benjamin Baumer and Dana Udwin|8d26eef104eae6e9d902a39eba546ed182195205
+ 2019|Codebraid: Live Code in Pandoc Markdown|10.25080/MAJORA-7DDC1DD1-008|2|0|Geoffrey M. Poore|fa7fd0916680a78582c6a05b2e6f65ff9a68106a

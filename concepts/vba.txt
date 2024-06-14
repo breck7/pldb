@@ -1,0 +1,42 @@
+VBA
+===
+
+VBA, aka Visual Basic for Applications, is a programming language created in 1993.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#247 on PLDB
+31 Years Old
+29k Repos
+
+Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language Visual Basic 6, which was discontinued in 2008, and its associated integrated development environment (IDE). Although Visual Basic is no longer supported or updated by Microsoft, VBA itself got upgraded in 2010 with the introduction of Visual Basic for Applications 7 in Microsoft Office applications. Visual Basic for Applications enables building user-defined functions (UDFs), automating processes and accessing Windows API and other low-level functionality through dynamic-link libraries (DLLs). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
+
+- VBA Wikipedia page
+ https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
+- VBA docs
+ https://learn.microsoft.com/en-us/office/vba/api/overview/
+- There are at least 28,503 VBA repos on GitHub
+- VBA first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using VBA in 200 repos on GitHub
+- In the 2021 StackOverflow developer survey VBA programmers reported a median salary of $53,825. 5% of respondents reported using VBA. 3,847 programmers reported using VBA, and 1,069 said they wanted to use it
+- Explore VBA snippets on Rosetta Code
+- ANTLR grammar for VBA
+- Indeed.com has 511 matches for "vba engineer".
+- See also: (11 related languages)QuickBASIC, Visual Basic, Microsoft Excel, AUTOCAD, BASIC, Microsoft BASIC, Visual Basic .NET, VBScript, JScript, C#, Visual Studio
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example

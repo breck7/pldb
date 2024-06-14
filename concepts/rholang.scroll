@@ -1,0 +1,54 @@
+import ../code/conceptPage.scroll
+
+id rholang
+name Rholang
+appeared 2016
+tags contractLanguage
+website https://rchain-community.github.io/
+latestVersion v0.13.0-alpha3
+conceptDescription Rholang is an open and scalable blockchain language designed for speed, reliability and formal process orchestration build on latest research in the reflective high order process calculus.
+
+isOpenSource true
+writtenIn scala cpp markdown c python make bourne-shell xml protobuf yaml bash json cmake nix perl ini dockerfile typescript toml sed
+documentation https://rchain-community.github.io/docs
+repoStats
+ firstCommit 2017
+ commits 14740
+ committers 136
+ files 1593
+ newestCommit 2022
+originCommunity https://rchain-community.github.io/
+
+subreddit https://www.reddit.com/r/CouchDB
+ memberCount
+  2022 1000
+example
+ new helloworld, stdout(`rho:io:stdout`) in {
+    contract helloworld( world ) = {
+        for( @msg <- world ) {
+            stdout!(msg)
+        }
+    } |
+    new world, world2 in {
+         helloworld!(*world) |
+         world!("Hello World") |
+          helloworld!(*world2) |
+          world2!("Hello World again")
+    }
+ }
+ 
+twitter https://twitter.com/rchain_coop
+
+githubRepo https://github.com/rchain/rchain
+ stars 678
+ forks 215
+ subscribers 87
+ created 2017
+ updated 2023
+ description Blockchain (smart contract) platform using CBC-Casper proof of stake + Rholang for concurrent execution.
+ issues 132
+
+domainName rchain-community.github.io
+
+indeedJobs couchdb developer
+ 2022 13

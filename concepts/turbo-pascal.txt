@@ -1,0 +1,54 @@
+Turbo Pascal
+============
+
+Turbo Pascal is a compiler created in 1983.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1184 on PLDB
+41 Years Old
+
+Turbo Pascal is a software development system that includes a compiler and an integrated development environment (IDE) for the Pascal programming language running on CP/M, CP/M-86, and MS-DOS, developed by Borland under Philippe Kahn's leadership. For versions 6 and 7 (last), both a lower-priced Turbo Pascal and more expensive Borland Pascal were produced; Borland Pascal was more oriented towards professional software development, with more libraries and standard library source code. The name Borland Pascal is also used more generically for Borland's dialect of the Pascal programming language, significantly different from Standard Pascal. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Turbo_Pascal
+
+- Turbo Pascal Wikipedia page
+ https://en.wikipedia.org/wiki/Turbo_Pascal
+- Turbo Pascal on HOPL
+ https://hopl.info/showlanguage.prx?exp=1372
+- See also: (13 related languages)X86, Pascal, Assembly language, UCSD Pascal, Turbo Assembler, Microsoft Macro Assembler, Java, Modula-2, Object Pascal, Free Pascal, C, Visual Studio, Delphi
+
+program WriteName;
+var
+  i    : Integer;        {variable to be used for looping}
+  Name : String;         {declares the variable Name as a string}
+begin
+  Write(&#39;Please tell me your name: &#39;);
+  ReadLn(Name);          {ReadLn returns the string entered by the user}
+  for i := 1 to 100 do
+  begin
+    WriteLn(&#39;Hello &#39;, Name)
+  end;
+ readln;
+end.
+
+Language features
+======================================================
+
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  // In Turbo Pascal, directives are called significant comments, because in the language grammar they follow the same syntax as comments.
+  // In Turbo Pascal, a significant comment is a comment whose first character is a dollar sign and whose second character is a letter;
+  // for example, the equivalent of C's #include "file" directive is the significant comment:
+  {$I "file"}
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  { within pairs of braces }
+  (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)
+  // preceded by two forward slashes

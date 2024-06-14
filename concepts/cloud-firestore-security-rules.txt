@@ -1,0 +1,120 @@
+Cloud Firestore Security Rules
+==============================
+
+Cloud Firestore Security Rules is an application created in 2017.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1572 on PLDB
+7 Years Old
+
+- Cloud Firestore Security Rules first developed in Google
+- GitHub supports syntax highlighting for Cloud Firestore Security Rules
+- Read more about Cloud Firestore Security Rules on the web: 1.
+ https://firebase.google.com/docs/reference/rules/rules
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /activities/{activity} {
+
+      allow create: if isSignedIn()
+                    &amp;&amp; isOwner(incomingData().authorId)
+                    &amp;&amp; isValidActivity(incomingData())
+                    &amp;&amp; hasAllowedActivityFieldsForCreate(incomingData());
+
+      allow read, delete: if isSignedIn()
+                          &amp;&amp; isOwner(existingData().authorId);
+
+      allow update: if isSignedIn()
+                    &amp;&amp; isOwner(existingData().authorId)
+                    &amp;&amp; isValidActivity(incomingData())
+                    &amp;&amp; hasAllowedActivityFieldsForUpdate(incomingData());
+
+    }
+    match /skills/{skill} {
+
+      allow create: if isSignedIn()
+                    &amp;&amp; isOwner(incomingData().authorId)
+                    &amp;&amp; isValidSkill(incomingData())
+                    &amp;&amp; hasAllowedSkillFieldsForCreate(incomingData());
+
+      allow read, delete: if isSignedIn()
+                          &amp;&amp; isOwner(existingData().authorId);
+
+      allow update: if isSignedIn()
+                    &amp;&amp; isOwner(existingData().authorId)
+                    &amp;&amp; isValidSkill(incomingData())
+                    &amp;&amp; hasAllowedSkillFieldsForUpdate(incomingData());
+
+    }
+    match /activities-skills/{activitySkill} {
+
+      allow create: if isSignedIn()
+                    &amp;&amp; isOwner(incomingData().authorId)
+                    &amp;&amp; isValidActivitySkill(incomingData())
+                    &amp;&amp; hasAllowedActivitySkillFieldsForCreate(incomingData());
+
+      allow read, delete: if isSignedIn()
+                          &amp;&amp; isOwner(existingData().authorId);
+
+      allow update: if isSignedIn()
+                    &amp;&amp; isOwner(existingData().authorId)
+                    &amp;&amp; isValidActivitySkill(incomingData())
+                    &amp;&amp; hasAllowedActivitySkillFieldsForUpdate(incomingData());
+
+    }
+     /// Functions ///
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+    function existingData() {
+      return resource.data;
+    }
+    function incomingData() {
+      return request.resource.data;
+    }
+    function isValidActivity(activity) {
+      return activity.title is string
+      	&amp;&amp; activity.title.size() &gt; 3
+        &amp;&amp; activity.title.size() &lt; 250
+        &amp;&amp; activity.summary is string
+        &amp;&amp; (activity.audienceCountMin is int || activity.audienceCountMin == null)
+        &amp;&amp; (activity.audienceCountMax is int || activity.audienceCountMax == null)
+        &amp;&amp; (activity.audienceAgeMin is int || activity.audienceAgeMin == null)
+        &amp;&amp; (activity.audienceAgeMax is int || activity.audienceAgeMax == null)
+        &amp;&amp; activity.lastUpdateDate.date() is timestamp;
+    }
+    function hasAllowedActivityFieldsForUpdate(activity) {
+      return activity.keys().size() == 9 &amp;&amp; activity.keys().hasAll([&#39;authorId&#39;, &#39;title&#39;, &#39;summary&#39;, &#39;audienceCountMin&#39;, &#39;audienceCountMax&#39;, &#39;audienceAgeMin&#39;, &#39;audienceAgeMax&#39;, &#39;lastUpdateDate&#39;]);
+    }
+    function hasAllowedActivityFieldsForCreate(activity) {
+      return activity.keys().size() == 8 &amp;&amp; activity.keys().hasAll([&#39;authorId&#39;, &#39;title&#39;, &#39;summary&#39;, &#39;audienceCountMin&#39;, &#39;audienceCountMax&#39;, &#39;audienceAgeMin&#39;, &#39;audienceAgeMax&#39;, &#39;lastUpdateDate&#39;]);
+    }
+
+    function isValidSkill(skill) {
+      return skill.title is string
+        &amp;&amp; skill.title.size() &gt; 3
+        &amp;&amp; skill.title.size() &lt; 250
+        &amp;&amp; skill.summary is string
+        &amp;&amp; skill.lastUpdateDate.date() is timestamp;
+    }
+    function hasAllowedSkillFieldsForUpdate(skill) {
+      return skill.keys().size() == 5 &amp;&amp; skill.keys().hasAll([&#39;authorId&#39;, &#39;title&#39;, &#39;summary&#39;, &#39;lastUpdateDate&#39;]);
+    }
+    function hasAllowedSkillFieldsForCreate(skill) {
+      return skill.keys().size() == 4 &amp;&amp; skill.keys().hasAll([&#39;authorId&#39;, &#39;title&#39;, &#39;summary&#39;, &#39;lastUpdateDate&#39;]);
+    }
+    function isValidActivitySkill(activitySkill) {
+      return activitySkill.skillId is string
+        &amp;&amp; activitySkill.activityId is string;
+    }
+    function hasAllowedActivitySkillFieldsForUpdate(activitySkill) {
+      return activitySkill.keys().size() == 4 &amp;&amp; activitySkill.keys().hasAll([&#39;authorId&#39;, &#39;skillId&#39;, &#39;activityId&#39;]);
+    }
+    function hasAllowedActivitySkillFieldsForCreate(activitySkill) {
+      return activitySkill.keys().size() == 3 &amp;&amp; activitySkill.keys().hasAll([&#39;authorId&#39;, &#39;skillId&#39;, &#39;activityId&#39;]);
+    }
+  }
+}

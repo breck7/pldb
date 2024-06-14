@@ -1,0 +1,131 @@
+import ../code/conceptPage.scroll
+
+id j
+name J
+appeared 1990
+creators Kenneth E. Iverson and Roger Hui
+tags pl
+website http://www.jsoftware.com
+latestVersion 9.5.1
+
+isOpenSource true
+writtenIn c assembly-language bourne-shell make xml markdown yaml cpp idl html
+tryItOnline j
+visualParadigm false
+fileType text
+wordRank 417
+documentation https://www.jsoftware.com/help/learning/contents.htm
+rosettaCode http://www.rosettacode.org/wiki/Category:J
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2016
+ commits 5106
+ committers 11
+ files 1215
+ newestCommit 2024
+country United States
+originCommunity Jsoftware Inc
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+reference https://aplwiki.com/wiki/Jsoftware
+
+helloWorldCollection J
+ NB. Hello World in J
+ 'Hello World' 1!:2(2)
+pygmentsHighlighter J
+ filename j.py
+ fileExtensions ijs
+rijuRepl https://riju.codes/j
+ example
+  echo 'Hello, world!'
+  
+leachim6 J
+ filepath j/J.ijs
+ fileExtensions ijs
+ example
+  #!/opt/local/bin/jc
+  echo 'Hello World'
+  exit ''
+  
+gource https://www.youtube.com/watch?v=DJyQnlVf95E
+
+githubRepo https://github.com/jsoftware/jsource
+ firstCommit 2016
+ stars 536
+ forks 72
+ subscribers 38
+ created 2016
+ updated 2022
+ description J engine source mirror
+ issues 125
+
+lineCommentToken NB.
+printToken echo
+stringToken '
+
+hasComments true
+hasLineComments true
+ NB. A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+hasFloats true
+ NB. _?\d+\.(?=\d+)
+hasIntegers true
+ NB. _?\d+
+
+jupyterKernel https://github.com/martin-saurer/jkernel
+wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
+ example
+  3 |. 1 0 1 1 0 0 1 1 1 1 1             NB. rotate
+  1 0 0 1 1 1 1 1 1 0 1
+ related linux apl fp fl numpy supercollider ascii unix sql c unicode k q
+ summary The J programming language, developed in the early 1990s by Kenneth E. Iverson and Roger Hui, is a synthesis of APL (also by Iverson) and the FP and FL function-level languages created by John Backus. To avoid repeating the APL special-character problem, J uses only the basic ASCII character set, resorting to the use of the dot and colon as inflections to form short words similar to digraphs. Most such "primary" (or "primitive") J words serve as mathematical symbols, with the dot or colon extending the meaning of the basic characters available. Also, many characters which in other languages often must be paired (such as [] {} "" `` or <>) are treated by J as stand-alone words or, when inflected, as single-character roots of multi-character words. J is a very terse array programming language, and is most suited to mathematical and statistical programming, especially when performing operations on matrices. It has also been used in extreme programming and network performance analysis. Like the original FP/FL languages, J supports function-level programming via its tacit programming features. Unlike most languages that support object-oriented programming, J's flexible hierarchical namespace scheme (where every name exists in a specific locale) can be effectively used as a framework for both class-based and prototype-based object-oriented programming. Since March 2011, J is free and open-source software under the GPLv3 license. One may also purchase source under a negotiated license.
+ pageId 73227
+ dailyPageViews 561
+ created 2002
+ backlinksCount 196
+ revisionCount 498
+ appeared 1990
+
+hopl https://hopl.info/showlanguage.prx?exp=1558
+tiobe J
+
+domainName jsoftware.com
+ registered 1996
+ awisRank
+  2022 2232128
+
+githubBigQuery J
+ repos 151
+ users 124
+
+linguistGrammarRepo https://github.com/tikkanz/JSyntax
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 4
+ commitCount 43
+ sampleCount 2
+ example
+  #!/bin/jconsole
+  echo 'Hello, GitHub!'
+  exit ''
+  
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ |Firewall|Programming In C [Paperback] [Jan 01, 2011] DIXIT J B| J. B. Dixit|9789380298399
+
+githubLanguage J
+ fileExtensions ijs
+ trendingProjectsCount 0
+ type programming
+ interpreters jconsole
+ aceMode text
+ tmScope source.j
+ repos 468
+
+semanticScholar 0

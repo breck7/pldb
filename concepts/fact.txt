@@ -1,0 +1,32 @@
+Fully Automated Compiling Technique
+===================================
+
+Fully Automated Compiling Technique, aka Fully Automated Compiling Technique, is a programming language created in 1959.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221959%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1659 on PLDB
+65 Years Old
+
+FACT is an early discontinued computer programming language, created by the Datamatic Division of Minneapolis Honeywell for its model 800 series business computers in 1959.  FACT was an acronym for "Fully Automated Compiling Technique".  It was an influence on the design of the COBOL programming language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/FACT_(computer_language)
+
+- Fully Automated Compiling Technique Wikipedia page
+ https://en.wikipedia.org/wiki/FACT_(computer_language)
+- Fully Automated Compiling Technique first developed in Computer Sciences Corporation and Honeywell
+- Fully Automated Compiling Technique on HOPL
+ https://hopl.info/showlanguage.prx?exp=68
+- See also: (1 related languages)COBOL
+
+L   1  PAGE-HEADING                 BATCH NO.   ^ IN ERROR   PAGE ^
+L   2  COLUMN-HEADING     EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS
+L   3  ERROR-LINE               ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^
+L   4  BOND-HEADING       BOND ORDERS  EMP. NO.     NAME           DATE       BOND    PAGE   ^
+L   5  BONDORDER-LINE                        ^                ^   ^- ^- ^      . ^
+L   6  DEL-HEADING        TERMINATIONS  EMP. NO.   DATE        NAME         BOND CR. TOTALS.. GROSS     TAX     FICA   INSUR    RET     PAGE  ^
+L   7  DELETIONS-LINE                         ^   ^- ^- ^                ^      . ^              . ^      . ^     . ^     . ^     . ^
+L   8  ERROR-HEADING      ERRORS...    EMP. NO.    DATE         TYPE         PAGE  ^
+L   9  ERROR-LINE                            ^    ^- ^- ^                 ^
+L  10  TITLE-LINE         PLACE CHECK FORM IN PRINTER
+L  12 1PAYLINE                       ^             ^/ ^/ ^                                                 .^     ^/ ^/  ^
+L  13 2PAYLINE                                                                          . ^     . ^     . ^     .^      . ^
+L  14 3PAYLINE                                    ^        $****. ^                                     . ^             . ^

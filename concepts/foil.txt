@@ -1,0 +1,35 @@
+File Oriented Interpretive Language
+===================================
+
+File Oriented Interpretive Language, aka File Oriented Interpretive Language, is a programming language created in 1967.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221967%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2054 on PLDB
+57 Years Old
+
+FOIL was the name for two different programming languages.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/FOIL_(programming_language)
+
+- File Oriented Interpretive Language Wikipedia page
+ https://en.wikipedia.org/wiki/FOIL_(programming_language)
+- File Oriented Interpretive Language first developed in University of Michigan
+- File Oriented Interpretive Language on HOPL
+ https://hopl.info/showlanguage.prx?exp=325
+- See also: (4 related languages)PILOT, BASIC, ABC, Forth
+
+:START COUNT=0
+ TY Enter the number of times you want to repeat the statement:
+ ACCEPT
+ MAX=NUMBER.(1)
+ :LOOP
+ TY This loop has run #COUNT times it will terminate when it runs #MAX times
+ IF COUNT&lt;MAX,
+    COUNT=COUNT+1
+    GO TO :LOOP
+ TY Do you want to do this again?
+ ACCEPT
+ IF &#39;yes&#39;, GO TO START
+ IF &#39;no&#39; GO TO FINISH
+ :FINISH
+ TY Goodbye!
+ STOP

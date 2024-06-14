@@ -1,0 +1,22 @@
+Lucid
+=====
+
+Lucid is a template language created in 2014 by Chris Done.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20Done
+
+#1242 on PLDB
+10 Years Old
+
+git clone https://github.com/chrisdone/lucid
+
+Clear to write, read and edit DSL for writing HTML
+
+- Lucid is developed on GitHub and has 253 stars
+- Lucid first developed in https://github.com/chrisdone/lucid/issues
+- Lucid is written in Haskell, Markdown, YAML, CSS, JavaScript, Dockerfile
+
+table_ [rows_ &quot;2&quot;]
+       (tr_ (do td_ [class_ &quot;top&quot;,colspan_ &quot;2&quot;,style_ &quot;color:red&quot;]
+                    (p_ &quot;Hello, attributes!&quot;)
+                td_ &quot;yay!&quot;))

@@ -1,0 +1,82 @@
+Mech
+====
+
+Mech is a programming language created in 2018 by Corey Montella.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Corey%20Montella
+
+#994 on PLDB
+6 Years Old
+
+git clone https://github.com/mech-lang/mech
+
+Try now: Web
+
+🦾 Main repository for the Mech programming language. Start here!
+
+- Mech website
+ http://mech-lang.org
+- Mech is developed on GitHub and has 138 stars
+- Mech first developed in Lehigh University
+- Mech is written in Rust, Markdown, TOML, JSON, YAML, HTML, TypeScript, Dockerfile
+- Mech on Twitter
+ https://twitter.com/MechLang
+- mech-lang.org was registered in 2018
+- Read more about Mech on the web: 1.
+ https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+
+# Breakout
+
+## The Game
+
+game setup
+  #system/timer = [resolution: 15 tick: 0 hours: 0 minutes: 0 seconds: 0]
+  #app/main = [root: &quot;drawing&quot; direction: _ contains: [#game]]
+
+game area
+  #game = [|type     class contains    parameters|
+            #paddle-control
+            &quot;canvas&quot; _     [#elements] [width: 400 height: 400]]
+
+controller slider
+  #paddle-control = [type: &quot;slider&quot; class: _ contains: _ parameters:  [min: 0 max: 300 value: 40]]
+
+draw the game area
+  pos = #paddle-control{1,4}{1,3}
+  start = pos
+  end = pos + 100
+  #elements = [|shape    parameters|
+                &quot;circle&quot; [cx: #ball.x cy: #ball.y radius: 10 fill: &quot;#000000&quot;]
+                &quot;line&quot;   [x1: start y1: 350 x2: end y2: 350 stroke: &quot;#000000&quot;]]
+
+## The Ball
+
+block
+  #ball = [x: 20 y: 20 vx: 1 vy: 3]
+
+update ball position
+  ~ #system/timer.tick
+  #ball.x := #ball.x + #ball.vx
+  #ball.y := #ball.y + #ball.vy
+
+bounce the ball off the paddle
+  ~ #ball.y
+  pos = #paddle-control{1,4}{1,3}
+  start = pos
+  end = pos + 100
+  ix = #ball.y &gt; 340 &amp; #ball.x &gt; start &amp; #ball.x &lt; end &amp; #ball.y &lt; 342
+  #ball.vy{ix} := -#ball.vy
+
+bounce the ball off the ceiling
+  ~ #ball.y
+  #ball.vy{#ball.y &lt; 10} := -#ball.vy
+
+bounce the ball off the walls
+  ~ #ball.x
+  #ball.vx{#ball.x &gt; 390 | #ball.x &lt; 10} := -#ball.vx
+
+reset the ball if it makes it past the paddle
+  ~ #ball.y
+  ix = #ball.y &gt; 390
+  #ball.x{ix} := 20
+  #ball.y{ix} := 20

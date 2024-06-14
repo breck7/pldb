@@ -1,0 +1,21 @@
+title PLDB Release Notes
+
+import rootHeader.scroll
+
+printTitle
+thinColumns
+
+Here's a list of the notable changes in PLDB. Changes that break URLs or CSV files should be noted here.
+
+# 9.0.0 5/08/2024
+- 🎉 migrated from TrueBase to Scroll 84!
+
+# 8.0.0 3/13/2023
+- 🎉 upgrading to TrueBase 9. There will be bugs.
+
+# 7.1.0 2/19/2023
+- 🎉 started releaseNotes!
+
+endColumns
+
+import footer.scroll

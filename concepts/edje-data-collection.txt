@@ -1,0 +1,112 @@
+Edje Data Collection
+====================
+
+Edje Data Collection is a json format created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1039 on PLDB
+14 Years Old
+31k Repos
+
+- There are at least 30,865 Edje Data Collection repos on GitHub
+- Edje Data Collection first developed in Enlightenment development team
+- GitHub supports syntax highlighting for Edje Data Collection
+- Read more about Edje Data Collection on the web: 1.
+ https://phab.enlightenment.org/w/edjebasics/
+
+// https://raw.githubusercontent.com/billiob/terminology/master/data/themes/mild.edc
+/* overlay to default to make theme easier on the eyes, less effects */
+
+#ifndef BG_COLOR
+#define BG_COLOR 48 48 48 255
+#endif
+
+#ifndef BG_COLOR_TRANSLUCENT
+#define BG_COLOR_TRANSLUCENT 48 48 48 200
+#endif
+
+#ifndef BELL_OVERLAY_COLOR
+#define BELL_OVERLAY_COLOR 220 220 220 16
+#endif
+
+collections {
+   group { name: &quot;terminology/background&quot;;
+
+#ifndef INHERIT_PROVIDE_OWN_COLORS
+       color_classes {
+#include &quot;default_colors.in.edc&quot;
+       }
+#endif
+
+      images {
+        image: &quot;bg_bevel.png&quot; COMP;
+        image: &quot;bg_shine.png&quot; COMP;
+        image: &quot;bg_glint.png&quot; COMP;
+        image: &quot;bg_led_base.png&quot; COMP;
+        image: &quot;bg_led.png&quot; COMP;
+        image: &quot;bg_led_strobe.png&quot; COMP;
+        image: &quot;pm_shadow.png&quot; COMP;
+        image: &quot;pm_overlay.png&quot; COMP;
+        image: &quot;pm_fill.png&quot; COMP;
+        image: &quot;tab_bg_l0.png&quot; COMP;
+        image: &quot;tab_bg_l1.png&quot; COMP;
+        image: &quot;tab_bg_r0.png&quot; COMP;
+        image: &quot;tab_bg_r1.png&quot; COMP;
+        image: &quot;tab_shad_l0.png&quot; COMP;
+        image: &quot;tab_shad_l1.png&quot; COMP;
+        image: &quot;tab_shad_r0.png&quot; COMP;
+        image: &quot;tab_shad_r1.png&quot; COMP;
+      }
+      sounds {
+         sample { name: &quot;bell&quot; LOSSY 64;
+            source: &quot;bell.wav&quot;;
+         }
+      }
+
+      script {
+         public message(Msg_Type:type, id, ...) {
+            new r, g, b, a, v;
+
+            if ((type != MSG_INT) || (id != 1)) return;
+
+            v = (getarg(2) * 255) / 100;
+
+            custom_state(PART:&quot;base&quot;, &quot;default&quot;, 0.0);
+            get_state_val(PART:&quot;base&quot;, STATE_COLOR, r, g, b, a);
+            set_state_val(PART:&quot;base&quot;, STATE_COLOR, r, g, b, v);
+            set_state(PART:&quot;base&quot;, &quot;custom&quot;, 0.0);
+
+            custom_state(PART:&quot;fade&quot;, &quot;default&quot;, 0.0);
+            get_state_val(PART:&quot;fade&quot;, STATE_COLOR, r, g, b, a);
+            set_state_val(PART:&quot;fade&quot;, STATE_COLOR, r, g, b, v);
+            set_state(PART:&quot;fade&quot;, &quot;custom&quot;, 0.0);
+         }
+      }
+
+      pa
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

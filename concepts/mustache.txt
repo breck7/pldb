@@ -1,0 +1,29 @@
+mustache
+========
+
+mustache is an open source template language created in 2009 by Chris Wanstrath.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20Wanstrath
+
+#153 on PLDB
+15 Years Old
+6k Repos
+
+git clone https://github.com/mustache/mustache
+
+Logic-less Ruby templates.
+
+- mustache website
+ http://mustache.github.io/
+- mustache is developed on GitHub and has 2,841 stars
+- There are at least 6,085 mustache repos on GitHub
+- mustache first developed in https://github.com/mustache
+- mustache is written in Ruby, mustache, YAML, Markdown, HTML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using mustache in 616 repos on GitHub
+- 8 languages in PLDB linking to mustache: Ballerina, cloc, codecept, HHVM, Ligo, mustache, NetLogo, obsidian
+
+Hello {{name}}
+You have just won {{value}} dollars!
+{{#in_ca}}
+Well, {{taxed_value}} dollars, after taxes.
+{{/in_ca}}

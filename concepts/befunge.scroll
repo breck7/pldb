@@ -1,0 +1,83 @@
+import ../code/conceptPage.scroll
+
+id befunge
+name Befunge
+appeared 1993
+creators Chris Pressey
+tags esolang
+
+tryItOnline befunge
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Befunge
+quineRelay Befunge
+centralPackageRepositoryCount 0
+country United States
+originCommunity Cat's Eye Technologies
+projectEuler Befunge
+ memberCount
+  2019 9
+  2022 10
+
+helloWorldCollection BEFUNGE
+ v Hello World in Befunge
+ 
+ >"dlroW olleH",,,,,,,,,,,@
+ 
+pygmentsHighlighter Befunge
+ filename esoteric.py
+ fileExtensions befunge
+rijuRepl https://riju.codes/befunge
+ example
+  64+"!dlrow ,olleH">:#,_@
+  
+ description Two-dimensional esoteric programming language invented in 1993 by Chris Pressey with the goal of being as difficult to compile as possible
+ fileExtensions be bf b93 b98 befunge
+ website https://catseye.tc/article/Languages.md#befunge-93
+ gitRepo https://github.com/amicloud/befunge93
+leachim6 Befunge
+ filepath b/Befunge.be
+ fileExtensions be
+ example
+  >"dlroW olleH",,,,,,,,,,,@
+  
+
+hasComments true
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Befunge
+ example
+  >25*"!dlrow ,olleH":v
+                    v:,_@
+                    >  ^
+ related forth intercal ascii brainfuck lisp python whitespace malbolge
+ summary Befunge is a stack-based, reflective, esoteric programming language. It differs from conventional languages in that programs are arranged on a two-dimensional grid. "Arrow" instructions direct the control flow to the left, right, up or down, and loops are constructed by sending the control flow in a cycle. It has been described as "a cross between Forth and Lemmings."  A worthy companion to INTERCAL; a computer language family which escapes the quotidian limitation of linear control flow and embraces program counters flying through multiple dimensions with exotic topologies.
+ pageId 53391
+ dailyPageViews 80
+ created 2002
+ backlinksCount 57
+ revisionCount 228
+ appeared 1993
+
+hopl https://hopl.info/showlanguage.prx?exp=1717
+
+githubBigQuery Befunge
+ repos 7
+ users 7
+
+linguistGrammarRepo https://github.com/johanasplund/sublime-befunge
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 2
+ commitCount 20
+
+isbndb 0
+
+githubLanguage Befunge
+ fileExtensions befunge
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.befunge
+ repos 1
+
+semanticScholar 0

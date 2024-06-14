@@ -1,0 +1,100 @@
+Pike
+====
+
+Pike is an open source programming language created in 1994 by Fredrik Hübinette.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Fredrik%20H%C3%BCbinette
+
+#458 on PLDB
+30 Years Old
+145 Repos
+
+Try now: Riju · TIO
+
+Pike is an interpreted, general-purpose, high-level, cross-platform, dynamic programming language, with a syntax similar to that of C. Unlike many other dynamic languages, Pike is both statically and dynamically typed, and requires explicit type definitions. It features a flexible type system that allows the rapid development and flexible code of dynamically typed languages, while still providing some of the benefits of a statically typed language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Pike_(programming_language)
+
+- Pike website
+ https://pike.lysator.liu.se/
+- Pike Wikipedia page
+ https://en.wikipedia.org/wiki/Pike_(programming_language)
+- Pike docs
+ https://pike.lysator.liu.se/docs/man/
+- There are at least 145 Pike repos on GitHub
+- Pike first developed in Chalmers Datorförening
+- The  Google BigQuery Public Dataset GitHub snapshot shows 94 users using Pike in 105 repos on GitHub
+- There are 6 Project Euler users using Pike
+- Explore Pike snippets on Rosetta Code
+- Pike on HOPL
+ https://hopl.info/showlanguage.prx?exp=2369
+- Pike appears in the TIOBE Index
+- Pike Ubuntu package
+ https://packages.ubuntu.com/jammy/pike8.0
+- Pygments supports syntax highlighting for Pike
+- GitHub supports syntax highlighting for Pike
+- Pike appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Pike
+- See also: (2 related languages)LPC, C
+
+int main()
+{
+  write(&quot;Hello, world!\n&quot;);
+  return 0;
+}
+
+int main() {
+    write(&quot;Hello World\n&quot;);
+    return 0;
+}
+
+// Hello world in Pike (pike.roxen.com)
+
+int main(){
+        write(&quot;Hello World!\n&quot;);
+}
+
+#!/usr/bin/env pike
+
+int main(int argc, array argv) {
+	return 0;
+}
+
+mixed anything;
+anything = (int)5.5;         // anything is now the integer value 5
+anything = (string)anything; // anything is now the string value &quot;5&quot;
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token write
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  #define CYCLES 20
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

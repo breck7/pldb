@@ -1,0 +1,144 @@
+Common Lisp
+===========
+
+Common Lisp is a programming language created in 1984 by Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221984%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Scott%20Fahlman
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20P.%20Gabriel
+ https://pldb.io/concepts/../lists/creators.html#q=David%20A.%20Moon
+ https://pldb.io/concepts/../lists/creators.html#q=Kent%20Pitman
+ https://pldb.io/concepts/../lists/creators.html#q=Guy%20Steele
+ https://pldb.io/concepts/../lists/creators.html#q=Dan%20Weinreb
+
+#156 on PLDB
+40 Years Old
+24k Repos
+
+Try now: Riju
+
+Common Lisp (CL) is a dialect of the Lisp programming language, published in ANSI standard document ANSI INCITS 226-1994 (R2004) (formerly X3.226-1994 (R1999)). The Common Lisp HyperSpec, a hyperlinked HTML version, has been derived from the ANSI Common Lisp standard. The Common Lisp language was developed as a standardized and improved successor of Maclisp. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Common_Lisp
+
+- Common Lisp website
+ http://common-lisp.net/
+- Common Lisp downloads page
+ https://common-lisp.net/downloads
+- Common Lisp Wikipedia page
+ https://en.wikipedia.org/wiki/Common_Lisp
+- Common Lisp docs
+ https://common-lisp.net/documentation
+- There are at least 24,262 Common Lisp repos on GitHub
+- Common Lisp first developed in American National Standards Institute
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Common Lisp in 6k repos on GitHub
+- Common Lisp on HOPL
+ https://hopl.info/showlanguage.prx?exp=946
+- Common Lisp appears in the TIOBE Index
+- Common Lisp Ubuntu package
+ https://packages.ubuntu.com/jammy/clisp
+- Pygments supports syntax highlighting for Common Lisp
+- GitHub supports syntax highlighting for Common Lisp
+- Common Lisp appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Common Lisp
+- Official Blog page for Common Lisp
+ https://common-lisp.net/news
+- Frequently Asked Questions for Common Lisp
+ https://common-lisp.net/faq
+- Indeed.com has 24 matches for ""common lisp"".
+- common-lisp.net was registered in 2003
+- See also: (38 related languages)Lisp, CLISP, LispWorks, Lisp Machine Lisp, Scheme, Interlisp, Clojure, Dylan, Emacs Lisp, EuLisp, ISLISP, Julia, R, Cadence SKILL, Spice Lisp, S-expressions, ASCII, Unicode, C, Pascal, Java, AutoLISP, ALGOL 68, Ada, Perl, Unix, FreeBSD, Linux, Solaris, X86, Corman Common Lisp, Maxima, ACL2, POPLOG, Pop-11, Prolog, Standard ML, Emacs
+- 1 languages in PLDB linking to Common Lisp: Flare
+
+(format t &quot;Hello, world!&quot;)
+
+(defun hello-world ()
+  (format t &quot;Hello World~%&quot;))
+
+(hello-world)
+
+(DEFUN HELLO ()
+  (PRINT &#39;HELLO))
+
+CL-USER &gt; (available-shells)
+(#P&quot;/bin/bash&quot; #P&quot;/bin/csh&quot; #P&quot;/bin/ksh&quot; #P&quot;/bin/sh&quot; #P&quot;/bin/tcsh&quot; #P&quot;/bin/zsh&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINT
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiple Dispatch
+ FeatureLink ../features/hasMultipleDispatch.html
+ Supported ✓
+ Token 
+ Example
+   (defmethod collide-with ((x asteroid) (y asteroid))
+    ;; deal with asteroid hitting asteroid
+    )
+  (defmethod collide-with ((x asteroid) (y spaceship))
+    ;; deal with asteroid hitting spaceship
+    )
+  (defmethod collide-with ((x spaceship) (y asteroid))
+    ;; deal with spaceship hitting asteroid
+    )
+  (defmethod collide-with ((x spaceship) (y spaceship))
+    ;; deal with spaceship hitting spaceship
+    )
+row
+ Feature Single Dispatch
+ FeatureLink ../features/hasSingleDispatch.html
+ Supported ✓
+ Token 
+ Example
+  ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
+  (defclass Person () ())
+  (defmethod frobnicate ((p Person) record spreadsheet)
+   (format t "~a ~a ~a~&" (type-of p) (type-of record) (type-of spreadsheet)))
+  (defclass Asteroid () ())
+  (defmethod frobnicate ((a Asteroid) velocity size)
+   ; do stuff
+   )
+  ; At runtime these 2 would be routed to respective methods:
+  (frobnicate a-person his-record big-spreadsheet)
+  (frobnicate an-asteroid very-fast pretty-small)
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

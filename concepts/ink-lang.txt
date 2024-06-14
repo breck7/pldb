@@ -1,0 +1,37 @@
+ink-lang
+========
+
+ink-lang is a programming language created in 2019 by Linus Lee.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Linus%20Lee
+
+#868 on PLDB
+5 Years Old
+
+git clone https://github.com/thesephist/ink
+
+Ink is a minimal programming language inspired by modern JavaScript and Go, with functional style.
+
+- ink-lang website
+ https://dotink.co
+- ink-lang is developed on GitHub and has 489 stars
+- ink-lang first developed in https://github.com/thesephist/ink/issues
+- ink-lang is written in Go, Markdown, Vim script, Make, YAML
+- ink-lang on Twitter
+ https://twitter.com/thesephist
+- dotink.co was registered in 2019
+
+std := load(&#39;std&#39;)
+
+log := std.log
+
+listen(&#39;0.0.0.0:8080&#39;, evt =&gt; (
+  evt.type :: {
+    &#39;error&#39; -&gt; log(&#39;Error: &#39; + evt.message)
+    &#39;req&#39; -&gt; (evt.end)({
+      status: 200
+      headers: {&#39;Content-Type&#39;: &#39;text/plain&#39;}
+      body: &#39;Hello, World!&#39;
+    })
+  }
+))

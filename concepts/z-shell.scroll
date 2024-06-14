@@ -1,0 +1,67 @@
+import ../code/conceptPage.scroll
+
+id z-shell
+name Z shell
+appeared 1990
+creators Paul Falstad
+tags pl
+website http://www.zsh.org/
+screenshot z-shell.png
+aka zsh
+
+isOpenSource true
+demoVideo https://www.youtube.com/watch?v=MSPu-lYF-A8
+tryItOnline https://rootnroll.com/d/oh-my-zsh/
+fileExtensions .ZSH
+clocExtensions zsh
+fileType text
+documentation https://zsh.sourceforge.io/Doc/Release/Introduction.html
+quineRelay zsh
+centralPackageRepositoryCount 0
+ubuntuPackage zsh
+country United States
+originCommunity Princeton University
+reference https://zsh.sourceforge.io/Guide/
+reference https://git.code.sf.net/p/zsh/code
+
+rijuRepl https://riju.codes/zsh
+ example
+  echo "Hello, world!"
+  
+leachim6 Z Shell
+ filepath z/Z Shell.zsh
+ example
+  #!/bin/zsh
+  echo "Hello World"
+  
+
+lineCommentToken #
+printToken echo
+stringToken "
+
+hasHereDocs true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Z_shell
+ related c bourne-shell bash korn-shell tcp ftp
+ summary The Z shell (Zsh) is a Unix shell that can be used as an interactive login shell and as a powerful command interpreter for shell scripting. Zsh is an extended Bourne shell with a large number of improvements, including some features of Bash, ksh, and tcsh.
+ pageId 95928
+ dailyPageViews 261
+ created 2002
+ backlinksCount 59
+ revisionCount 229
+ appeared 1990
+
+hopl https://hopl.info/showlanguage.prx?exp=2642
+tiobe Z shell
+
+domainName zsh.org
+ registered 1998
+ awisRank
+  2022 656733
+
+isbndb 0
+
+semanticScholar 0

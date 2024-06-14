@@ -1,0 +1,90 @@
+chrysaLisp
+==========
+
+chrysaLisp is a programming language created in 2015 by Chris Hinsley.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20Hinsley
+
+#978 on PLDB
+9 Years Old
+
+git clone https://github.com/vygr/ChrysaLisp
+
+Parallel OS, with GUI, Terminal, OO Assembler, Class libraries, C-Script compiler, Lisp interpreter and more...
+
+- chrysaLisp is developed on GitHub and has 1,314 stars
+- chrysaLisp first developed in Tao Group
+- chrysaLisp is written in Markdown, Lisp, Pascal, SVG, PowerShell, Bourne shell, C++, C, PHP, Make
+
+;imports
+(import &#39;sys/lisp.inc)
+(import &#39;class/lisp.inc)
+(import &#39;gui/lisp.inc)
+
+(structure &#39;event 0
+  (byte &#39;win_close &#39;win_min &#39;win_max &#39;win_button))
+
+(ui-tree window (create-window (+ window_flag_close window_flag_min window_flag_max)) nil
+  (ui-element _ (create-flow) (&#39;flow_flags (logior flow_flag_down flow_flag_fillw flow_flag_lasth))
+    (ui-element display (create-label) (&#39;text &quot;0&quot; &#39;color argb_white &#39;flow_flags flow_flag_align_hright
+      &#39;font (create-font &quot;fonts/OpenSans-Regular.ttf&quot; 24)))
+    (ui-element _ (create-grid) (&#39;grid_width 4 &#39;grid_height 4 &#39;color toolbar_col
+        &#39;font (create-font &quot;fonts/OpenSans-Regular.ttf&quot; 42))
+      (each (lambda (text)
+        (component-connect
+          (ui-element _ (create-button) (&#39;text (if (eql text &quot;C&quot;) &quot;AC&quot; text)))
+          event_win_button)) &quot;789/456*123-0=C+&quot;))))
+
+(gui-add (apply view-change (cat (list window 920 48)
+  (view-pref-size (window-set-title (window-connect-close (window-connect-min
+    (window-connect-max window event_win_max) event_win_min) event_win_close) &quot;Calculator&quot;)))))
+
+(defun do_lastop ()
+  (cond
+    ((eql lastop &quot;+&quot;)
+      (setq accum (+ accum num)))
+    ((eql lastop &quot;-&quot;)
+      (setq accum (- accum num)))
+    ((eql lastop &quot;*&quot;)
+      (setq accum (* accum num)))
+    ((eql lastop &quot;/&quot;)
+      (if (/= num 0) (setq accum (/ accum num)))))
+  accum)
+
+(defq id t accum 0 value 0 num 0 lastop nil)
+(while id
+  (cond
+    ((&gt;= (setq id (get-long (defq msg (mail-read (task-mailbox))) ev_msg_target_id)) event_win_button)
+      (defq op (get (view-find-id window (get-long msg ev_msg_action_source_id)) &#39;text))
+      (cond
+        ((eql op &quot;AC&quot;)
+          (setq accum 0 value 0 num 0 lastop nil))
+        ((find op &quot;=+-/*&quot;)
+          (if lastop
+            (setq value (do_lastop))
+            (setq value num accum num))
+          (setq lastop op num 0))
+        (t
+          (cond
+            ((= num 0)
+              (unless (eql op &quot;0&quot;))
+                (setq num (to-num op)))
+            (t (setq num (to-num (cat (str num) op)))))
+          (setq value num)))
+      (set display &#39;text (str value))
+      (view-dirty (view-layout display)))
+    ((= id event_win_close)
+      ;close button
+      (setq id nil))
+    ((= id event_win_min)
+      ;min button
+      (bind &#39;(x y _ _) (view-get-bounds window))
+      (bind &#39;(w h) (view-pref-size window))
+      (view-change-dirty window x y w h))
+    ((= id event_win_max)
+      ;max button
+      (bind &#39;(x y _ _) (view-get-bounds window))
+      (view-change-dirty window x y 512 512))
+    (t (view-event window msg))))
+
+(view-hide window)

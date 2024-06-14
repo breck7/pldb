@@ -1,0 +1,43 @@
+Committee on Uniform Security Identification Procedures
+=======================================================
+
+Committee on Uniform Security Identification Procedures, aka Committee on Uniform Security Identification Procedures, is a schema created in 1968.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221968%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1816 on PLDB
+56 Years Old
+
+A CUSIP is a nine-character alphanumeric code that identifies a North American financial security for the purposes of facilitating clearing and settlement of trades.  The CUSIP was adopted as an American National Standard under Accredited Standards X9.6. The CUSIP system is owned by the American Bankers Association and is operated by S&P Global Market Intelligence. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/CUSIP
+
+- Committee on Uniform Security Identification Procedures Wikipedia page
+ https://en.wikipedia.org/wiki/CUSIP
+- Committee on Uniform Security Identification Procedures first developed in Committee on Uniform Security Identification Procedures
+
+algorithm Cusip-Check-Digit(cusip) is
+   Input: an 8-character CUSIP
+
+   sum := 0
+   for 1 ≤ i ≤ 8 do
+      c := the ith character of cusip
+      if c is a digit then
+         v := numeric value of the digit c
+      else if c is a letter then
+         p := ordinal position of c in the alphabet (A=1, B=2...)
+         v := p + 9
+      else if c = &quot;*&quot; then
+         v := 36
+      else if c = &quot;@&quot; then
+         v := 37
+      else if c = &quot;#&quot; then
+         v := 38
+      end if
+      if i is even then
+         v := v × 2
+      end if
+
+      sum := sum + int ( v div 10 ) + v mod 10
+   repeat
+
+   return (10 - (sum mod 10)) mod 10
+end function

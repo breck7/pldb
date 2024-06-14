@@ -1,0 +1,30 @@
+FaCT
+====
+
+FaCT is an open source programming language created in 2017 by Deian Stefan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Deian%20Stefan
+
+#1020 on PLDB
+7 Years Old
+
+git clone https://github.com/PLSysSec/FaCT
+
+Flexible and Constant Time Programming Language
+
+- FaCT is developed on GitHub and has 92 stars
+- FaCT first developed in University of California San Diego and Stanford University and PI for Security and Privacy and Inria Sophia Antipolis and IMDEA Software Institute
+- FaCT is written in OCaml, C, Bourne shell, Markdown, Make, Dockerfile
+- Read more about FaCT on the web: 1.
+ https://ranjitjhala.github.io/static/fact_dsl.pdf
+
+void
+swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 swapi) {
+  if (swapi == 1) {
+    for (uint32 i from 0 to 5) {
+      secret uint64 x = a[i];
+      a[i] = b[i];
+      b[i] = x;
+    }
+  }
+}

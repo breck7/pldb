@@ -1,0 +1,29 @@
+Pact
+====
+
+Pact is an open source contract language created in 2016 by Stuart Popejoy.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Stuart%20Popejoy
+
+#610 on PLDB
+8 Years Old
+
+git clone https://github.com/kadena-io/pact
+
+The Pact Smart Contract Language
+
+- Pact website
+ http://kadena.io/try-pact/
+- Pact is developed on GitHub and has 536 stars
+- Pact docs
+ https://pact-language.readthedocs.io/en/stable/
+- Pact first developed in Kadena LLC
+- Pact is written in Haskell, YAML, Markdown, C, reStructuredText, Bourne shell, Nix, JSON, CSV, Python, CSS, HTML, XML
+
+(map (+ 1) [1 2 3])
+
+HackerNews discussions of Pact
+==============================
+
+title|titleLink|date|score|comments
+Show HN: Pact – a safe smart contract language (web editor)|https://news.ycombinator.com/item?id=12944077|11/13/2016|18|2

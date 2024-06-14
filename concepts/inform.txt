@@ -1,0 +1,138 @@
+Inform
+======
+
+Inform is a programming language created in 1993 by Graham Nelson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Graham%20Nelson
+
+#488 on PLDB
+31 Years Old
+1m Repos
+
+Inform is a programming language and design system for interactive fiction originally created in 1993 by Graham Nelson. Inform can generate programs designed for the Z-code or Glulx virtual machines. Versions 1 through 5 were released between 1993 and 1996. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Inform
+
+- Inform website
+ http://inform7.com/
+- Inform Wikipedia page
+ https://en.wikipedia.org/wiki/Inform
+- Inform docs
+ https://ganelson.github.io/inform-website/doc/
+- There are at least 1,046,854 Inform repos on GitHub
+- Inform first developed in https://inform-fiction.org/
+- The  Google BigQuery Public Dataset GitHub snapshot shows 56 users using Inform in 60 repos on GitHub
+- Inform appears in the TIOBE Index
+- Pygments supports syntax highlighting for Inform
+- GitHub supports syntax highlighting for Inform
+- inform7.com was registered in 2009
+- See also: (5 related languages)Linux, Z-machine, BASIC, Text Adventure Development System, ISBN
+
+&quot;Hello World&quot; by &quot;I.F. Author&quot;
+
+The world is a room.
+
+When play begins, say &quot;Hello World&quot;
+
+!  &quot;Hello world&quot; in Inform
+[ Main;
+  print &quot;Hello world^&quot;;
+];
+
+&quot;Test Case&quot; by Andrew Plotkin.
+
+Include Trivial Extension by Andrew Plotkin.
+
+Volume 1 - overview
+
+Chapter - setting the scene
+
+The Kitchen is a room.
+
+[Comment: this kitchen is modelled after the one in Zork, although it lacks the detail to establish this to the player.]
+
+Section - the kitchen table
+
+The spicerack is a container in the Kitchen.
+
+Table of Spices
+Name Flavor
+&quot;cinnamon&quot; 5
+&quot;nutmeg&quot; 4
+&quot;szechuan pepper&quot;  8
+
+The description of the spicerack is &quot;It&#39;s mostly empty.&quot;
+
+Chapter - a character
+
+A purple cow called Gelett is in the Kitchen.
+
+[This comment spans multiple lines..
+
+...and this line contains [nested square[] brackets]...
+
+...which is legal in Inform 7.]
+
+Instead of examining Gelett:
+ say &quot;You&#39;d rather see than be one.&quot;
+
+Instead of examining Gelett:
+ say &quot;You&#39;d rather see than be one.&quot;
+
+Check smelling Gelett:
+ say &quot;This text contains several lines.
+
+A blank line is displayed as a paragraph break,
+but a simple line break is not.&quot;;
+ stop the action.
+
+Section - cow catching
+
+Gelett has a number called the mooness.
+
+Instead of taking Gelett:
+ increment the mooness of Gelett;
+ if the mooness of Gelett is one:
+   say &quot;Gelett moos once.&quot;;
+ else:
+   say &quot;Gelett moos [mooness of Gelett in words] times.&quot;;
+
+Volume 2 - the turn cycle
+
+Every turn:
+ say &quot;A turn passes[one of][or] placidly[or] idly[or] tediously[at random].&quot;
+
+&quot;Hello Deductible&quot; by &quot;I.F. Author&quot;
+
+The story headline is &quot;An Interactive Example&quot;.
+
+The Living Room is a room. &quot;A comfortably furnished living room.&quot;
+The Kitchen is north of the Living Room.
+The Front Door is south of the Living Room.
+The Front Door is a door. The Front Door is closed and locked.
+
+The insurance salesman is a man in the Living Room. The description is &quot;An insurance salesman in a tacky polyester suit. He seems eager to speak to you.&quot; Understand &quot;man&quot; as the insurance salesman.
+
+A briefcase is carried by the insurance salesman. The description is &quot;A slightly worn, black briefcase.&quot;  Understand &quot;case&quot; as the briefcase.
+
+The insurance paperwork is in the briefcase. The description is &quot;Page after page of small legalese.&quot; Understand &quot;papers&quot; or &quot;documents&quot; or &quot;forms&quot; as the paperwork.
+
+Instead of listening to the insurance salesman:
+	say &quot;The salesman bores you with a discussion of life  insurance policies.  From his briefcase he pulls some paperwork which he hands to you.&quot;;
+	move the insurance paperwork to the player.
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

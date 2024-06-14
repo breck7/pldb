@@ -1,0 +1,108 @@
+AGC
+===
+
+AGC, aka Apollo Guidance Computer, is an assembly language created in 1966.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#321 on PLDB
+58 Years Old
+210 Repos
+
+The Apollo Guidance Computer (AGC) was a digital computer produced for the Apollo program that was installed on board each Apollo Command Module (CM) and Lunar Module (LM). The AGC provided computation and electronic interfaces for guidance, navigation, and control of the spacecraft. The AGC has a 16-bit word length, with 15 data bits and one parity bit. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+
+- AGC Wikipedia page
+ https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+- AGC docs
+ https://www.ibiblio.org/apollo/assembly_language_manual.html
+- There are at least 210 AGC repos on GitHub
+- AGC first developed in MIT Instrumentation Laboratory and Charles Stark Draper Laboratory and Raytheon
+- GitHub supports syntax highlighting for AGC
+- See also: (2 related languages)SI, Assembly language
+
+SWCHSET     STORE   NOMTPI
+INTLOOP     DLOAD   DAD
+            TTPI
+            NOMTPI
+        STCALL  TDEC1
+            PRECSET
+        CALL
+            S33/34.1
+        BZE EXIT
+            SWCHCLR
+        TC  ALARM
+        OCT 611
+        CAF V05N09
+        TC  BANKCALL
+        CADR    GOFLASH
+        TC  GOTOPOOH
+        TC  P34/P74A    # PROCEED
+        TC  -7      # V32
+
+# Copyright:	Public domain.
+# Filename:	BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc
+# Purpose: 	Part of the source code for Luminary 1A build 099.
+#		It is part of the source code for the Lunar Module&#39;s (LM)
+#		Apollo Guidance Computer (AGC), for Apollo 11.
+# Assembler:	yaYUL
+# Contact:	Ron Burkey &lt;info@sandroid.org&gt;.
+# Website:	www.ibiblio.org/apollo.
+# Pages:	731-751
+# Mod history:	2009-05-19 RSB	Adapted from the corresponding
+#				Luminary131 file, using page
+#				images from Luminary 1A.
+#		2009-06-07 RSB	Corrected 3 typos.
+#		2009-07-23 RSB	Added Onno&#39;s notes on the naming
+#				of this function, which he got from
+#				Don Eyles.
+#
+# This source code has been transcribed or otherwise adapted from
+# digitized images of a hardcopy from the MIT Museum.  The digitization
+# was performed by Paul Fjeld, and arranged for by Deborah Douglas of
+# the Museum.  Many thanks to both.  The images (with suitable reduction
+# in storage size and consequent reduction in image quality as well) are
+# available online at www.ibiblio.org/apollo.  If for some reason you
+# find that the images are illegible, contact me at info@sandroid.org
+# about getting access to the (much) higher-quality images which Paul
+# actually created.
+#
+# Notations on the hardcopy document read, in part:
+#
+#	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
+#	16:27 JULY 14, 1969
+
+# Page 731
+## At the get-together of the AGC developers celebrating the 40th anniversary
+## of the first moonwalk, Don Eyles (one of the authors of this routine along
+## with Peter Adler) has related to us a little interesting history behind the
+## naming of the routine.&lt;br&gt;
+## &lt;br&gt;
+## It traces back to 1965 and the Los Angeles riots, and was inspired
+## by disc jockey extraordinaire and radio station owner Magnificent Montague.
+## Magnificent Montague used the phrase &quot;Burn, baby! BURN!&quot; when spinning the
+## hottest new records. Magnificent Montague was the charismatic voice of
+## soul music in Chicago, New York, and
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

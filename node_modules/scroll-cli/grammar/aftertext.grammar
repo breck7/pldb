@@ -1,0 +1,356 @@
+// Related work:
+ CSS is great for text selector ideas: https://www.w3schools.com/cssref/css_selectors.asp
+ Roff has a lot of related markup ideas: https://www.systutorials.com/docs/linux/man/7-groff_man/
+abstractAftertextParser
+ description Text followed by markup commands.
+ extends abstractScrollParser
+ inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser aftertextTagParser commentParser
+ example
+  aftertext
+   Hello brave new world
+   link home.com new
+   bold brave new
+   underline new world
+   strikethrough wor
+ javascript
+  get markupInserts() {
+   const { originalTextPostLinkify } = this
+   return this.filter(node => node.isMarkup)
+    .map(node => node.getInserts(originalTextPostLinkify))
+    .filter(i => i)
+    .flat()
+  }
+  get originalText() {
+   return this.content ?? ""
+  }
+  get originalTextPostLinkify() {
+   const { originalText } = this
+   const shouldLinkify = this.get("linkify") === "false" || originalText.includes("<a ") ? false : true
+   return shouldLinkify ? this.replaceNotes(Utils.linkify(originalText)) : originalText
+  }
+  replaceNotes(originalText) {
+   // Skip the replacements if there are no footnotes or the text has none.
+   if (!this.root.footnotes.length || !originalText.includes("^")) return originalText
+   this.root.footnotes.forEach((note, index) => {
+    const needle = note.firstWord
+    const {linkBack} = note
+    if (originalText.includes(needle)) originalText = originalText.replace(new RegExp("\\" + needle + "\\b"), `<a href="#${note.anchorId}" class="scrollNoteLink" id="${linkBack}"><sup>${note.label}</sup></a>`)
+   })
+   return originalText
+  }
+  get text() {
+   const { originalTextPostLinkify, markupInserts } = this
+   let adjustment = 0
+   let newText = originalTextPostLinkify
+   // If multiple tags start at same index, the tag that closes first should start last. Otherwise HTML breaks.
+   markupInserts.sort((a, b) => (a.index === b.index ? b.endIndex - a.endIndex : a.index - b.index))
+   markupInserts.forEach(insertion => {
+    insertion.index += adjustment
+    const consumeStartCharacters = insertion.consumeStartCharacters ?? 0
+    const consumeEndCharacters = insertion.consumeEndCharacters ?? 0
+    newText = newText.slice(0, insertion.index - consumeEndCharacters) + insertion.string + newText.slice(insertion.index + consumeStartCharacters)
+    adjustment += insertion.string.length - consumeEndCharacters - consumeStartCharacters
+   })
+   return newText
+  }
+  tag = "p"
+  get className() {
+   if (this.get("classes"))
+     return this.get("classes")
+   const classLine = this.getNode("class")
+   if (classLine && classLine.applyToParentElement) return classLine.content
+   return this.defaultClassName
+  }
+  defaultClassName = "scrollParagraph"
+  get isHidden() {
+    return this.has("hidden")
+  }
+  compile(compileSettings) {
+   if (this.isHidden) return ""
+   this.compileSettings = compileSettings
+   const { className } = this
+   const classAttr = className ? `class="${this.className}"` : ""
+   const tag = this.get("tag") || this.tag
+   if (tag === "none") // Allow no tag for aftertext in tables
+     return this.text
+   return this.getHtmlRequirements(compileSettings) + `<${tag} ${this.divAttributes}${classAttr}>${this.text}</${tag}>`
+  }
+  get divAttributes() {
+   const attrs = this.filter(node => node.isAttribute)
+   return attrs.length ? attrs.map(node => node.divAttributes).join(" ") + " " : ""
+  }
+
+abstractAftertextAttributeParser
+ cells keywordCell
+ boolean isAttribute true
+ javascript
+  get divAttributes() {
+   return `${this.firstWord}="${this.content}"`
+  }
+  compile() {
+   return ""
+  }
+
+aftertextTagParser
+ cells keywordCell htmlTagCell
+ description Override the HTML tag that the compiled node will use.
+ crux tag
+ javascript
+  compile() {
+   return ""
+  }
+
+abstractAftertextDirectiveParser
+ cells keywordCell
+ catchAllCellType stringCell
+ javascript
+  isMarkup = true
+  compile() {
+   return ""
+  }
+  getErrors() {
+    const errors = super.getErrors()
+    if (!this.isMarkup || this.matchWholeLine) return errors
+    const inserts = this.getInserts(this.parent.originalTextPostLinkify)
+    // todo: make AbstractTreeError class exported by Grammar to allow Parsers to define their own error types.
+    // todo: also need to be able to map lines back to their line in source (pre-imports)
+    if (!inserts.length)
+      errors.push({toObject: () => {return { message: `No match found for "${this.getLine()}".`}}})
+    return errors
+  }
+  get pattern() {
+   return this.getWordsFrom(1).join(" ")
+  }
+  get shouldMatchAll() {
+   return this.has("matchAll")
+  }
+  getMatches(text) {
+   const { pattern } = this
+   const escapedPattern = pattern.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")
+   return [...text.matchAll(new RegExp(escapedPattern, "g"))].map(match => {
+    const { index } = match
+    const endIndex = index + pattern.length
+    return [
+     { index, string: `<${this.openTag}${this.allAttributes}>`, endIndex },
+     { index: endIndex, endIndex, string: `</${this.closeTag}>` }
+    ]
+   })
+  }
+  getInserts(text) {
+   const matches = this.getMatches(text)
+   if (!matches.length) return false
+   if (this.shouldMatchAll) return matches.flat()
+   const match = this.getNode("match")
+   if (match)
+    return match.indexes
+     .map(index => matches[index])
+     .filter(i => i)
+     .flat()
+   return matches[0]
+  }
+  get allAttributes() {
+   const attr = this.attributes.join(" ")
+   return attr ? " " + attr : ""
+  }
+  get attributes() {
+   return []
+  }
+  get openTag() {
+   return this.tag
+  }
+  get closeTag() {
+   return this.tag
+  }
+
+abstractMarkupParser
+ extends abstractAftertextDirectiveParser
+ inScope abstractMarkupParameterParser
+
+abstractMarkupParameterParser
+ cells keywordCell
+ cruxFromId
+
+matchAllParser
+ description Use this to match all occurrences of the text.
+ extends abstractMarkupParameterParser
+
+matchParser
+ catchAllCellType integerCell
+ description Use this to specify which index(es) to match.
+ javascript
+  get indexes() {
+   return this.getWordsFrom(1).map(num => parseInt(num))
+  }
+ example
+  aftertext
+   hello ello ello
+   bold ello
+    match 0 2
+ extends abstractMarkupParameterParser
+
+wrapNameCell
+ description What wraps are available to turn on?
+ enum bold italics code katex
+
+wrapsOnParser
+ cruxFromId
+ description Enable `code`, *bold*, and _italics_ rules.
+ extends abstractAftertextDirectiveParser
+ catchAllCellType wrapNameCell
+ javascript
+  get shouldMatchAll() {
+   return true
+  }
+  get wraps() {
+    const wraps = [{delimiter: "`", tag: "code", exclusive: true, name: "code"},{delimiter: "*", tag: "strong", name: "bold"}, {delimiter: "_", tag: "em", name: "italics"}]
+    if (this.root.has("katex"))
+      wraps.unshift({delimiter: "$", tag: "span", attributes: ' class="scrollKatex"', exclusive: true, name: "katex"})
+    if (this.content)
+      return wraps.filter(wrap => this.content.includes(wrap.name))
+    return wraps
+  }
+  getMatches(text) {
+   const exclusives = []
+   return this.wraps.map(wrap => this.runPattern(text, wrap, exclusives)).filter(i => i).flat()
+  }
+  runPattern(text, wrap, exclusives = []) {
+   const {delimiter, tag, attributes} = wrap
+   const escapedDelimiter = delimiter.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")
+   const pattern = new RegExp(`${escapedDelimiter}[^${escapedDelimiter}]+${escapedDelimiter}`, "g")
+   const delimiterLength = delimiter.length
+   return [...text.matchAll(pattern)].map(match => {
+    const { index } = match
+    const endIndex = index + match[0].length
+    // I'm too lazy to clean up Grammar to write a proper inline markup parser so doing this for now.
+    // The exclusive idea is to not try and apply bold or italic styles inside a TeX or code inline style.
+    // Note that the way this is currently implemented any TeX in an inline code will get rendered, but code
+    // inline of TeX will not. Seems like an okay tradeoff until a proper refactor and cleanup can be done.
+    if (exclusives.some(exclusive => index >= exclusive[0] && index <= exclusive[1]))
+      return undefined
+    if (wrap.exclusive)
+      exclusives.push([index, endIndex])
+    return [
+     { index, string: `<${tag + (attributes ? " " + attributes : "")}>`, endIndex, consumeStartCharacters: delimiterLength },
+     { index: endIndex, endIndex, string: `</${tag}>`, consumeEndCharacters: delimiterLength }
+    ]
+   }).filter(i => i)
+  }
+
+wrapParser
+ cruxFromId
+ cells keywordCell delimiterCell tagOrUrlCell
+ catchAllCellType htmlAttributesCell
+ extends wrapsOnParser
+ description Define a custom wrap, for example "wrap _ em" would support: _italics_.
+ javascript
+  getMatches(text) {
+   try {
+    const delimiter = this.getWord(1)
+    const tag = this.getWord(2)
+    const attributes = this.getWordsFrom(3).join(" ")
+    if (tag.startsWith("https:")) return this.runPattern(text, {delimiter, tag: "a", attributes: `href="${tag}"` + attributes})
+    return this.runPattern(text, {delimiter, tag, attributes})
+   } catch (err) {
+    console.error(err)
+    return []
+   }
+   // Note: doubling up doesn't work because of the consumption characters.
+  }
+
+boldParser
+ cruxFromId
+ description Bold the matching text.
+ extends abstractMarkupParser
+ javascript
+  tag = "b"
+
+italicsParser
+ cruxFromId
+ description Italicize the matching text.
+ extends abstractMarkupParser
+ javascript
+  tag = "i"
+
+underlineParser
+ description Underline the matching text.
+ cruxFromId
+ extends abstractMarkupParser
+ javascript
+  tag = "u"
+
+aftertextCodeParser
+ description Wrap the matching text in a <code> span.
+ crux code
+ extends abstractMarkupParser
+ javascript
+  tag = "code"
+
+abstractHtmlAttributeParser
+ javascript
+  compile() {
+   return ""
+  }
+
+classMarkupParser
+ description Add a custom class to the parent element instead. If matching text provided, a span with the class will be added around the matching text.
+ extends abstractMarkupParser
+ cells keywordCell classNameCell
+ crux class
+ javascript
+  tag = "span"
+  get applyToParentElement() {
+   return this.words.length === 2
+  }
+  getInserts(text) {
+   // If no select text is added, set the class on the parent element.
+   if (this.applyToParentElement) return []
+   return super.getInserts(text)
+  }
+  get className() {
+   return this.getWord(1)
+  }
+  get attributes() {
+   return [`class="${this.className}"`]
+  }
+  get matchWholeLine() {
+    return this.applyToParentElement
+  }
+  get pattern() {
+   return this.matchWholeLine ? this.parent.content : this.getWordsFrom(2).join(" ")
+  }
+
+classesMarkupParser
+ extends classMarkupParser
+ crux classes
+ javascript
+  applyToParentElement = true
+  get className() {
+   return this.content
+  }
+
+strikethroughParser
+ cruxFromId
+ extends abstractMarkupParser
+ javascript
+  tag = "s"
+
+aftertextIdParser
+ crux id
+ description Provide an ID to be output in the generated HTML tag.
+ extends abstractAftertextAttributeParser
+ cells keywordCell htmlIdCell
+ single
+
+aftertextStyleParser
+ crux style
+ description Provide code for the generated HTML tag's "style" attribute.
+ extends abstractAftertextAttributeParser
+ cells keywordCell
+ catchAllCellType cssAnyCell
+
+aftertextHiddenParser
+ crux hidden
+ cells keywordCell
+ description Do not compile this node to HTML.
+ extends abstractAftertextAttributeParser
+ single

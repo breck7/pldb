@@ -1,0 +1,96 @@
+VBScript
+========
+
+VBScript is a programming language created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#176 on PLDB
+28 Years Old
+6k Repos
+
+VBScript ("Microsoft Visual Basic Scripting Edition") is an Active Scripting language developed by Microsoft that is modeled on Visual Basic. It allows Microsoft Windows system administrators to generate powerful tools for managing computers with error handling, subroutines, and other advanced programming constructs. It can give the user complete control over many aspects of their computing environment. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/VBScript
+
+- VBScript website
+ https://msdn.microsoft.com/en-us/library/t0aew7h6.aspx
+- VBScript Wikipedia page
+ https://en.wikipedia.org/wiki/VBScript
+- PLDB has 2 documentation sites for VBScript: www.csidata.com, learn.microsoft.com
+- There are at least 6,076 VBScript repos on GitHub
+- VBScript first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 327 users using VBScript in 339 repos on GitHub
+- There are 916 members in the VBScript subreddit
+- Explore VBScript snippets on Rosetta Code
+- VBScript on HOPL
+ https://hopl.info/showlanguage.prx?exp=5226
+- VBScript ranks #34 in the TIOBE Index
+- CodeMirror package for syntax highlighting VBScript
+- Pygments supports syntax highlighting for VBScript
+- Indeed.com has 142 matches for "vbscript developer".
+- See also: (10 related languages)ASP, Visual Basic, PowerShell, JScript, Batchfile, Regular Expressions, JavaScript, MUMPS, Applescript, FastTrack Scripting Host
+
+&#39; Hello World in VBScript (Windows Scripting Host)
+msgbox &quot;Hello, World!&quot;
+
+&lt;% Option Explicit
+ %&gt;&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+     &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+ &lt;html&gt;
+ 	&lt;head&gt;
+ 		&lt;title&gt;VBScript Example&lt;/title&gt;
+ 	&lt;/head&gt;
+ 	&lt;body&gt;
+        &lt;div&gt;&lt;%
+ 		&#39; Grab current time from Now() function.
+                &#39; An &#39;=&#39; sign occurring after a context switch (&lt;%) is shorthand
+                &#39; for a call to the Write() method of the Response object.
+ 		Dim timeValue = Now %&gt;
+ 		The time, in 24-hour format, is
+                &lt;%=Hour(timeValue)%&gt;:&lt;%=Minute(timeValue)%&gt;:&lt;%=Second(timeValue)%&gt;.
+        &lt;/div&gt;
+ 	&lt;/body&gt;
+ &lt;/html&gt;
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  ' [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  ' [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  ' &h[0-9a-f]+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

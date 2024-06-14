@@ -1,0 +1,97 @@
+import ../code/conceptPage.scroll
+
+id smarty
+name Smarty
+appeared 2006
+creators Monte Ohrt and Messju Mohr and Uwe Tews
+tags template
+website http://www.smarty.net
+
+isOpenSource true
+clocExtensions smarty tpl
+fileType text
+codeMirror smarty
+centralPackageRepositoryCount 0
+country United States and Germany
+originCommunity http://groups.google.com/group/smarty-developers
+
+pygmentsHighlighter Smarty
+ filename templates.py
+ fileExtensions tpl
+example
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>{$title_text|escape}</title>
+ </head>
+ 
+ <body> {* This is a little comment that won't be visible in the HTML source *}
+ {$body_html}
+ </body> <!-- this is a little comment that will be seen in the HTML source -->
+ </html>
+
+wikipedia https://en.wikipedia.org/wiki/Smarty_(template_engine)
+ example
+  define('SMARTY_DIR', 'smarty-2.6.22/');
+  require_once(SMARTY_DIR . 'Smarty.class.php');
+  
+  $smarty = new Smarty();
+  $smarty->template_dir = './templates/';
+  $smarty->compile_dir = './templates/compile/';
+  
+  $smarty->assign('title_text', 'TITLE: This is the Smarty basic example ...');
+  $smarty->assign('body_html', '<p>BODY: This is the message set using assign()</p>');
+  
+  $smarty->display('index.tpl');
+ related php isbn twig
+ summary Smarty is a web template system written in PHP. Smarty is primarily promoted as a tool for separation of concerns. Smarty is intended to simplify compartmentalization, allowing the front-end of a web page to change separately from its back-end. Ideally, this lowers costs and minimizes the efforts associated with software maintenance. Smarty generates web content through the placement of special Smarty tags within a document. These tags are processed and substituted with other code. Tags are directives for Smarty that are enclosed by template delimiters. These directives can be variables, denoted by a dollar sign ($), functions, logical or loop statements. Smarty allows PHP programmers to define custom functions that can be accessed using Smarty tags.
+ pageId 774939
+ dailyPageViews 63
+ created 2018
+ backlinksCount 67
+ revisionCount 4
+ appeared 2006
+
+tiobe Smarty
+
+domainName smarty.net
+ registered 2002
+ awisRank
+  2022 119996
+
+githubBigQuery Smarty
+ repos 17325
+ users 14285
+
+linguistGrammarRepo https://github.com/textmate/php-smarty.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 8
+ commitCount 34
+
+isbndb 4
+ year|publisher|title|authors|isbn13
+ 2006|Packt Publishing|Smarty PHP Template Programming And Applications|Hasin Hayder and J. P. Maia and Lucian Gheorghe|9781904811404
+ 2006-04-30|Packt Publishing|Smarty PHP Template Programming and Applications|Hasin Hayder and Joao Prado Maia and Lucian Gheorghe|9781847190284
+ 20070619|O'Reilly Media, Inc.|PHP and Smarty on Large-Scale Web Development|Bruno Pedro|9780596513795
+ 2006|Packt Pub.|Smarty: PHP template programming and applications : a step-by-step guide to building PHP web sites and applications using the Smarty templating engine|Prado Maia, João.|9781904811404
+
+githubLanguage Smarty
+ fileExtensions tpl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  helm charts https://github.com/helm.png https://github.com/helm/charts Smarty #ccc 9872 9946 429 "Curated applications for Kubernetes"
+  bitnami charts https://github.com/bitnami.png https://github.com/bitnami/charts Smarty #ccc 596 328 51 "Helm Charts"
+  confluentinc cp-helm-charts https://github.com/confluentinc.png https://github.com/confluentinc/cp-helm-charts Smarty #ccc 286 251 19 "The Confluent Platform Helm charts enable you to deploy Confluent Platform services on Kubernetes for development, test, and proof of concept environments."
+  istio installer https://github.com/istio.png https://github.com/istio/installer Smarty #ccc 81 65 7 "A modular, a-la-carte installer for Istio components"
+  cloudnativeapp charts https://github.com/cloudnativeapp.png https://github.com/cloudnativeapp/charts Smarty #ccc 120 49 48 "Localized Helm charts from Helm Hub to China"
+  Anankke SSPanel-Uim https://github.com/Anankke.png https://github.com/Anankke/SSPanel-Uim Smarty #ccc 2661 1683 224 "SSPanel V3 魔改再次修改版"
+  fluxcd flux-get-started https://github.com/fluxcd.png https://github.com/fluxcd/flux-get-started Smarty #ccc 32 631 6 "Getting started with Flux and the Helm Operator"
+ trendingProjectsCount 8
+ type programming
+ aceMode smarty
+ codemirrorMode smarty
+ codemirrorMimeType text/x-smarty
+ tmScope text.html.smarty
+ repos 31402

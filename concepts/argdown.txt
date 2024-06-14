@@ -1,0 +1,143 @@
+Argdown
+=======
+
+Argdown is a text markup language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#600 on PLDB
+10 Years Old
+
+git clone https://github.com/christianvoigt/argdown
+
+Try now: Web
+
+a simple syntax for complex argumentation
+
+- Argdown website
+ https://argdown.org/
+- Argdown is developed on GitHub and has 583 stars
+- Argdown first developed in Karlsruhe Institute of Technology
+- Argdown is written in TypeScript, Markdown, JSON, JavaScript, SVG, CSS, HTML, XML, Bourne shell, Stylus, PowerShell
+- argdown.org was registered in 2018
+
+ # Welcome to Argdown!
+
+ [Intro]: Argdown is a simple syntax for defining argumentative
+ structures, inspired by Markdown.
+   + Writing a *pro &amp; contra list* in Argdown is as
+     simple as writing a twitter message (actually we are
+     right in the middle of one).
+   + But you can also
+     **logically reconstruct** more complex dialectical
+     relations between arguments or dive into
+     the details of their premise-conclusion structures.
+   + Finally, you can export Argdown as a graph and create
+     **argument maps** of whole debates.
+
+ This Argdown document only demonstrates the basic syntax elements.
+ The argument map produced is a &quot;bogus debate&quot;.
+
+ To read a reconstruction of a *real* debate, select one of the
+ **example debates** by moving your mouse to the *&quot;Examples&quot;* button
+ on the upper left, above the text editor.
+
+ ## Argdown Basics
+
+ This is a normal statement with __bold__ and _italic_ text,
+ a #tag and a [link](https://github.com/christianvoigt/argdown-parser).
+
+ [Statement 1]: Another statement (after a blank line),
+ this time with a title defined in square brackets.
+ We can use the title to refer to this statement later
+ or mention it in other statements. #(Another tag)
+
+ [Statement 2]: Let&#39;s do that now: The previous
+ statement was @[Statement 1].
+   + &lt;Argument title&gt;: Statements can be supported
+     by __arguments__. Arguments are defined by
+     using angle brackets. #tag
+   - &lt;Another argument&gt;: This arguments attacks @[Statement 2]. #tag
+     - &lt;Yet another argument&gt;: Arguments can also
+       be supported or attacked. #yet-another-tag
+       &lt;!--
+       By the way,
+       this is a multiline comment.
+       --&gt;
+
+ We can also do that the other way around:
+
+ [Intro]
+   -&gt; &lt;Argument 1&gt;
+
+ Headings can be used to group arguments and statements together.
+ In the map these groups are visualized as grey boxes.
+
+ Tags are visualized by the colors of the arguments and statements in the map.
+
+ ### Argument reconstructions
+
+ So far, we have ignored the internal structure of arguments. Arguments
+ consist of premises from which conclusions are inferred. We can precisely
+ define this premise-conclusion structure with Argdown:
+
+ &lt;Argument 1&gt;
+
+ (1) First premise (this is is a normal statement
+     and you can do everything with it, we have done
+     with the statements above).
+ (2) [Statement 2]: We have already defined a statement
+     with this title.
+     Argdown allows you to add multiple statements
+     to the same &quot;equivalence class&quot; by giving them
+     the same title. The statements will then be treated
+     as logically equivalent.
+ --
+ Some inference rule (Some additional info: 1,2)
+ --
+ (3) And now the conclusion
+   -&gt; Outgoing relations of the conclusion,
+   are also interpreted as outgoing relations of
+   the whole argument.
+   +&gt; &lt;Yet another argument&gt;
+   &lt;!--
+   The second relation is only &quot;sketched&quot;,
+   because it does not declare which premise
+   of @&lt;Argument 2&gt; is supported.
+   (At this point this is not possible,
+   as we have not yet reconstructed @&lt;Argument 2&gt;)
+   --&gt;
+   -&gt; [Statement 1]
+
+   We can also link to headings:
+   [Back to top](#heading-welcome-to-argdown)
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+  
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

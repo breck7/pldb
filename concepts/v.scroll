@@ -1,0 +1,125 @@
+import ../code/conceptPage.scroll
+
+id v
+name V
+appeared 2019
+creators Alexander Medvednikov
+tags pl
+website https://vlang.io/
+latestVersion 0.4.6
+oldName volt
+
+writtenIn coq markdown c html yaml xml glsl json toml svg bourne-shell css dockerfile javascript objective-c make python awk cpp csharp typescript go sql ruby assembly-language
+documentation https://github.com/vlang/v/blob/master/doc/docs.md
+repoStats
+ firstCommit 2019
+ commits 17736
+ committers 874
+ files 8021
+ newestCommit 2024
+
+rijuRepl https://riju.codes/v
+ example
+  fn main() {
+  	println('Hello, world!')
+  }
+  
+ description Simple, statically-typed compiled programming language designed for building maintainable software
+ fileExtensions v
+ website https://vlang.io/
+ gitRepo https://github.com/vlang/v
+subreddit https://reddit.com/r/vlang
+ memberCount
+  2022 1547
+example
+ import json
+ 
+ struct User {
+     name string
+     age  int
+ mut:
+     is_registered bool
+ }
+ 
+ fn main() {
+     s := '[{"name":"Frodo", "age":25}, {"name":"Bobby", "age":10}]'
+     mut users := json.decode([]User, s) or {
+         eprintln('Failed to parse json')
+         return
+     }
+     for user in users {
+         println('$user.name: $user.age')
+     }
+     println('')
+     for i, mut user in users {
+         println('$i) $user.name')
+         if !user.can_register() {
+             println('Cannot register $user.name, they are too young')
+             continue
+         }
+         // `user` is declared as `mut` in the for loop,
+         // modifying it will modify the array
+         user.register()
+     }
+     // Let's encode users again just for fun
+     println('')
+     println(json.encode(users))
+ }
+ 
+ fn (u User) can_register() bool {
+     return u.age >= 16
+ }
+ 
+ fn (mut u User) register() {
+     u.is_registered = true
+ }
+twitter https://twitter.com/v_language
+leachim6 V
+ filepath v/V.v
+ fileExtensions v
+ example
+  println("Hello World")
+  
+gource https://www.youtube.com/watch?v=zqUE-57Bb1M
+
+githubRepo https://github.com/vlang/v
+ firstCommit 2019
+ stars 29603
+ forks 1818
+ subscribers 470
+ created 2019
+ updated 2022
+ description Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
+ issues 753
+
+lineCommentToken //
+printToken println
+stringToken "
+
+hasStrings true
+ "hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName vlang.io
+ registered 2019
+ awisRank
+  2022 372075
+
+githubBigQuery V
+ repos 45
+ users 44
+
+githubLanguage V
+ type programming
+ fileExtensions v
+ aceMode golang
+ codemirrorMode go
+ codemirrorMimeType text/x-go
+ tmScope source.v
+ aliases vlang
+ repos 1382

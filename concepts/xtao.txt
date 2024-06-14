@@ -1,0 +1,36 @@
+xTAO Modeling Language
+======================
+
+xTAO Modeling Language is a xml format created in 2005.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3374 on PLDB
+19 Years Old
+
+- Read more about xTAO Modeling Language on the web: 1. 2.
+ https://dl.acm.org/doi/abs/10.1145/1082983.1082968
+ https://doi.org/10.1145/1082983.1082968
+
+&lt;Goal&gt;
+ &lt;Name&gt;table_comparison&lt;/Name&gt;
+ &lt;DesiredState&gt;
+ &lt;Description&gt;
+ &lt;Name&gt;compareOK&lt;/Name&gt;
+ &lt;LanguageName&gt;TAOLanguage&lt;/LanguageName&gt;
+ &lt;Data&gt;srcTable EQ destTable |
+ srcTable NEQ destTable | NO&lt;/Data&gt;
+ &lt;/Description&gt;
+ &lt;/DesiredState&gt;
+ &lt;Params&gt;
+ &lt;Description&gt;
+ &lt;Name&gt;srcTable&lt;/Name&gt;
+ &lt;LanguageName/&gt;
+ &lt;Data/&gt;
+ &lt;/Description&gt;
+ &lt;Description&gt;
+ &lt;Name&gt;destTable&lt;/Name&gt;
+ &lt;LanguageName/&gt;
+ &lt;Data/&gt;
+ &lt;/Description&gt;
+ &lt;/Params&gt;
+&lt;/Goal&gt;

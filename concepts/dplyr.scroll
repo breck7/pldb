@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id dplyr
+name dplyr
+appeared 2012
+creators Hadley Wickham
+tags dataScience library
+website https://dplyr.tidyverse.org
+latestVersion v1.1.4
+conceptDescription dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges: mutate() adds new variables that are functions of existing variables. select() picks variables based on their names. filter() picks cases based on their values. summarise() reduces multiple values down to a single summary. arrange() changes the ordering of the rows.
+
+writtenIn r markdown cpp svg yaml bourne-shell csv
+relatedConcepts tidyverse
+repoStats
+ firstCommit 2012
+ newestCommit 2024
+ commits 10002
+ committers 313
+ files 540
+
+githubRepo https://github.com/tidyverse/dplyr/

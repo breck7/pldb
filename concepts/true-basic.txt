@@ -1,0 +1,75 @@
+True BASIC
+==========
+
+True BASIC is a programming language created in 1983 by John George Kemeny and Thomas Eugene Kurtz.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20George%20Kemeny
+ https://pldb.io/concepts/../lists/creators.html#q=Thomas%20Eugene%20Kurtz
+
+#1516 on PLDB
+41 Years Old
+
+True BASIC is a variant of the BASIC programming language descended from Dartmouth BASIC — the original BASIC — invented by college professors John G. Kemeny and Thomas E. Kurtz.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/True_BASIC
+
+- True BASIC Wikipedia page
+ https://en.wikipedia.org/wiki/True_BASIC
+- True BASIC on HOPL
+ https://hopl.info/showlanguage.prx?exp=2590
+- See also: (8 related languages)BASIC, Dartmouth BASIC, Microsoft BASIC, GW-BASIC, TRS-80 Color Computer, Assembly language, CBASIC, ISBN
+
+!Draw the Car
+SET WINDOW 0,20,0,20
+SET COLOR 5
+BOX AREA 2,6,2,3
+BOX AREA 9,13,2,3
+BOX AREA 16,20,2,3
+SET COLOR 249
+PLOT LINES :0,5;20,5
+FLOOD 10,1
+BOX KEEP 0,20,0,5 IN road$
+BOX CIRCLE 2,3,5,6
+FLOOD 2.5,5.5
+BOX CIRCLE 5,6,5,6
+FLOOD 5.5,5.5
+SET COLOR 35
+PLOT LINES :2.5,6;5.5,6
+PLOT LINES :5,6;8,6;8,8;6,8;6,10;2,10;2,8;0,8;0,6;3,6
+FLOOD 4,8
+SET COLOR 248
+BOX AREA 4,5,8,9
+
+BOX KEEP 0,8,5,10 IN car$ !Save the car in &#39;carTEMPLATE#39;
+ 
+FOR x=1 TO 20 STEP 1 !Create a &#39;for&#39; loop
+    BOX SHOW road$ AT 0,0
+    BOX SHOW car$ AT x,5
+    PAUSE .1
+    CLEAR
+NEXT x !End the &#39;for&#39; loop
+
+END !End the programs
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ! A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token !
+ Example
+  ! A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

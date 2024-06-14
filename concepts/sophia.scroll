@@ -1,0 +1,50 @@
+import ../code/conceptPage.scroll
+
+id sophia
+name Sophia
+appeared 2018
+creators Robert Virding
+tags contractLanguage
+website https://aeternity.com/aesophia
+latestVersion v8.0.1
+
+writtenIn erlang markdown yaml reason html python
+relatedConcepts solidity
+monaco sophia
+repoStats
+ firstCommit 2018
+ commits 1104
+ committers 32
+ files 286
+ newestCommit 2024
+country Liechtenstein
+originCommunity https://github.com/aeternity
+
+keywords contract library entrypoint function stateful state hash signature tuple list address string bool int record datatype type option oracle oracle_query Call Bits Bytes Oracle String Crypto Address Auth Chain None Some bits bytes event let map private public true false var if else throw
+githubRepo https://github.com/aeternity/aesophia
+ firstCommit 2018
+ stars 42
+ forks 19
+ subscribers 30
+ created 2018
+ updated 2022
+ description  Stand alone compiler for the Sophia smart contract language
+ issues 42
+
+lineCommentToken //
+multiLineCommentTokens /* */
+booleanTokens true false
+
+hasStrings true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasBooleans true
+hasExceptions true
+hasFunctions true
+hasAccessModifiers true
+hasConditionals true

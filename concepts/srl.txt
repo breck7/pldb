@@ -1,0 +1,27 @@
+SRL
+===
+
+SRL, aka Simple Regex Language, is an open source query language created in 2016 by Karim Geiger.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Karim%20Geiger
+
+#440 on PLDB
+8 Years Old
+
+git clone https://github.com/SimpleRegex/SRL-PHP
+
+Simple Regex Language
+
+- SRL website
+ https://simple-regex.com/
+- SRL is developed on GitHub and has 1,806 stars
+- SRL first developed in https://github.com/SimpleRegex
+- SRL is written in PHP, Markdown, JSON, XML, YAML
+- simple-regex.com was registered in 2016
+
+begin with any of (digit, letter, one of &quot;._%+-&quot;) once or more,
+literally &quot;@&quot;,
+any of (digit, letter, one of &quot;.-&quot;) once or more,
+literally &quot;.&quot;,
+letter at least 2 times,
+must end, case insensitive

@@ -1,0 +1,59 @@
+import ../code/conceptPage.scroll
+
+id mustache
+name mustache
+appeared 2009
+creators Chris Wanstrath
+tags template
+website http://mustache.github.io/
+latestVersion v1.1.1
+
+isOpenSource true
+writtenIn ruby mustache yaml markdown html
+clocExtensions mustache
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 853
+ committers 78
+ files 98
+ newestCommit 2022
+country United States and France and Portugal and Croatia
+originCommunity https://github.com/mustache
+
+example
+ Hello {{name}}
+ You have just won {{value}} dollars!
+ {{#in_ca}}
+ Well, {{taxed_value}} dollars, after taxes.
+ {{/in_ca}}
+
+githubRepo https://github.com/mustache/mustache
+ firstCommit 2009
+ stars 2841
+ forks 278
+ subscribers 62
+ created 2009
+ updated 2022
+ description Logic-less Ruby templates.
+ issues 44
+
+domainName mustache.github.io
+ awisRank
+  2022 475411
+
+githubBigQuery Mustache
+ repos 616
+ users 535
+
+isbndb 0
+
+githubLanguage Mustache
+ type markup
+ fileExtensions mustache
+ aceMode smarty
+ codemirrorMode smarty
+ codemirrorMimeType text/x-smarty
+ tmScope text.html.smarty
+ repos 6085

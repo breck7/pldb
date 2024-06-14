@@ -1,0 +1,50 @@
+import ../code/conceptPage.scroll
+
+id taichi
+name Taichi
+appeared 2019
+creators Yuanming Hu
+tags pl
+website https://taichi-lang.org/
+latestVersion v1.7.1
+conceptDescription Taichi Lang is an open-source, imperative, parallel programming language for high-performance numerical computation. It is embedded in Python and uses just-in-time (JIT) compiler frameworks, for example LLVM, to offload the compute-intensive Python code to the native GPU or CPU instructions.
+
+writtenIn python cpp markdown cmake json glsl yaml cuda bourne-shell objective-cpp powershell toml c jupyter-notebook make ini
+repoStats
+ firstCommit 2016
+ commits 11493
+ committers 283
+ files 1562
+ newestCommit 2024
+reference http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf
+
+example
+ // For CPU
+ Parallelize(int num_threads) // Multi-threading
+ Vectorize(int width) // Loop vectorization
+ // For GPU
+ BlockDim(int blockDim) // Specify GPU block size
+ // For scratchpad optimization
+ AssumeInRange(Expr base, int lower, int upper)
+ Cache(Expr)
+ // Cache data into GPU L1 cache
+ CacheL1(Expr)
+ More discussions on h
+
+githubRepo https://github.com/taichi-dev/taichi
+ firstCommit 2016
+ stars 20126
+ forks 2031
+ subscribers 394
+ created 2016
+ updated 2022
+ description Productive & portable high-performance programming in Python.
+ issues 581
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

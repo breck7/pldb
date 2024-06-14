@@ -1,0 +1,32 @@
+Jemplate
+========
+
+Jemplate is a template language created in 2006 by Ingy döt Net.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ingy%20d%C3%B6t%20Net
+
+#1599 on PLDB
+18 Years Old
+
+git clone https://github.com/ingydotnet/jemplate
+
+Industrial strength JavaScript template framework
+
+- Jemplate website
+ https://www.jemplate.net/
+- Jemplate is developed on GitHub and has 64 stars
+- Jemplate is written in HTML, JavaScript, Perl, Make, YAML, Markdown, Ini, Bash, JSON, Bourne shell
+
+&lt;style&gt; .stretch { width: 100%; height: auto; max-height: 100%; } &lt;/style&gt;
+&lt;div class=&quot;row&quot;&gt;
+[% FOREACH kitty = items -%]
+	[%- LAST IF loop.index==12; -%]
+	&lt;div class=&quot;col-md-2&quot;&gt;
+		&lt;a href=&quot;[% kitty.link %]&quot;&gt;
+			&lt;div style=&quot;width: 240px; height: 240px; overflow:hidden;&quot;&gt;
+						&lt;img src=&quot;[% kitty.media.m %]&quot; alt=&quot;[% kitty.title.replace(&#39;#.+&#39;,&#39;&#39;) | html %]&quot; class=&quot;img-circle stretch&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+[% END %]
+&lt;/div&gt;

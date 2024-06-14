@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id toy-lang
+name Toy
+appeared 2018
+creators Kayne Ruse
+tags pl
+website https://toylang.com/
+latestVersion v1.3.1
+
+writtenIn c markdown make json cpp xml yaml
+repoStats
+ firstCommit 2022
+ commits 749
+ committers 7
+ files 168
+ newestCommit 2023
+
+example
+ if (1 < 2) {
+  print "this will print to the console";
+ } else {
+  print "this will not";
+ }
+
+githubRepo https://github.com/Ratstail91/Toy
+ firstCommit 2018
+ stars 40
+ subscribers 5
+ created 2018
+ updated 2022
+ description A toy programming language.
+ forks 1
+ issues 0
+
+printToken print
+
+hasPrintDebugging true
+
+domainName toylang.com
+ registered 2019
+
+isbndb 0

@@ -1,0 +1,30 @@
+GRASS
+=====
+
+GRASS is a programming language created in 1977.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1401 on PLDB
+47 Years Old
+
+Try now: Riju · TIO
+
+GRASS (GRAphics Symbiosis System) is a programming language created to script 2D vector graphics animations. GRASS was similar to BASIC in syntax, but added numerous instructions for specifying 2D object animation, including scaling, translation, rotation and color changes over time. It quickly became a hit with the artistic community who were experimenting with the new medium of computer graphics, and is most famous for its use by Larry Cuba to create the original "attacking the Death Star will not be easy" animation in Star Wars (1977). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GRASS_(programming_language)
+
+- GRASS Wikipedia page
+ https://en.wikipedia.org/wiki/GRASS_(programming_language)
+- GRASS first developed in Ohio State University
+- GRASS on HOPL
+ https://hopl.info/showlanguage.prx?exp=4146
+- See also: (4 related languages)BASIC, OpenGL, C, True BASIC
+
+wWWwwww
+
+SINCURVE=[PROMPT &quot;WHAT IS THE OFFSET?&quot;
+INPUT OFFSET
+x=-160
+angle=0
+POINT OFFSET+x,SIN(angle)*80,3
+angle=angle+2
+IF (x=x+1)&lt;159,SKIP -2]

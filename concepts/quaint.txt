@@ -1,0 +1,83 @@
+Quaint
+======
+
+Quaint is a text markup language created in 2014 by Olivier Breuleux.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Olivier%20Breuleux
+
+#1369 on PLDB
+10 Years Old
+
+git clone https://github.com/breuleux/quaint
+
+Try now: Web
+
+The Quaint markup language
+
+- Quaint website
+ http://breuleux.github.io/quaint/
+- Quaint is developed on GitHub and has 28 stars
+- Quaint first developed in https://github.com/breuleux/quaint/issues
+- Quaint is written in JSON, JavaScript, Markdown, CSS
+
+;; Edit me!
+
+meta ::
+  title = My Resume
+  author = My Name
+
+= meta::title
+
+Hello, my name is __meta::author and this is meta::title~! I have many skills:
+
+* Pirate skills
+  * Eye patch
+  * Peg leg
+* _Ninja skills
+  css ::
+    .invisible { color: transparent; }
+  # span.invisible % Stealth!
+  # Nunchakus
+* Robot skills
+  * Beep! Boop!
+* I can also cook!
+  + Meal       + Can I cook it? + How good?
+  | Potatoes   | Yes            | Delicious
+  | Steak      | Yes            | Rare
+  | Egg salad  | You bet!       | Decadent
+  | Cheesecake | Yes!!!         | Oh my god
+
+My website is @@{web}. Find me on Google@@http://google.com~! It&#39;s easy as 2 + 2 = {2 + 2}!
+
+web =&gt; http://my.amazing.website.com
+
+Please embed my `code on your website:
+
+javascript &amp;
+  function virus() { alert(&quot;AAAAAAAAHHH&quot;); }
+
+@@image:assets/quaint-small.png
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ;; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;;
+ Example
+  ;; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

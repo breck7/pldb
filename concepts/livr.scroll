@@ -1,0 +1,45 @@
+import ../code/conceptPage.scroll
+
+id livr
+name Livr
+appeared 2012
+creators Viktor Turskyi
+tags dataValidationLanguage
+website https://livr-spec.org/
+webRepl http://webbylab.github.io/livr-playground/
+standsFor Language Independent Validation Rules
+
+writtenIn json markdown svg less
+repoStats
+ firstCommit 2012
+ commits 251
+ committers 15
+ files 264
+ newestCommit 2022
+country United States
+originCommunity https://github.com/koorchik/LIVR/issues
+
+example
+ {
+     name: 'required',
+     phone: {max_length: 10},
+     address: {nested_object: {
+         city: 'required',
+         zip: ['required', 'positive_integer']
+     }}
+ }
+
+githubRepo https://github.com/koorchik/LIVR
+ firstCommit 2012
+ stars 277
+ forks 20
+ subscribers 16
+ created 2012
+ updated 2022
+ description Language Independent Validation Rules Specification
+ issues 21
+
+domainName livr-spec.org
+ registered 2013
+
+semanticScholar 0

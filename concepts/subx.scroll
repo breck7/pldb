@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id subx
+name SubX
+appeared 2019
+creators Kartik K. Agaram
+tags assembly
+conceptDescription Author of Mu decided this year to switch implementation from C++ to his own x86 assembler subset named SubX.
+
+fileExtensions subx
+reference https://github.com/akkartik/mu#readme
+
+example
+ # 0x20-0x7e: basic latin
+ # 0x20 = space
+   08/size
+   00/is-combine
+   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+semanticScholar 0

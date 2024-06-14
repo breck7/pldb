@@ -1,0 +1,315 @@
+Multi-User Forth
+================
+
+Multi-User Forth, aka Multi-User Forth, is a programming language created in 1995.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1438 on PLDB
+29 Years Old
+0 Repos
+
+TinyMUCK or, more broadly, a MUCK, is a type of user-extendable online text-based role-playing game, designed for role playing and social interaction. Backronyms like "Multi-User Chat/Created/Computer/Character/Carnal Kingdom" and "Multi-User Construction Kit" are sometimes cited, but are not the actual origin of the term; "muck" is simply a play on the term MUD.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MUF_(programming_language)
+
+- Multi-User Forth Wikipedia page
+ https://en.wikipedia.org/wiki/MUF_(programming_language)
+- Multi-User Forth docs
+ https://mud.fandom.com/wiki/MUF_(programming_language)
+- There are at least 0 Multi-User Forth repos on GitHub
+- Multi-User Forth first developed in University of California, Berkeley
+- Explore Multi-User Forth snippets on Rosetta Code
+- See also: (2 related languages)Multi-User Forth, Forth
+
+$include $lib/strings
+$include $lib/match
+lvar check-obj-addr
+   
+: check-next-loop (d -- )
+   dup not if pop exit then
+   dup exit? over thing? or
+   me @ 3 pick .controls and if
+      dup check-obj-addr @ execute
+   then
+   next check-next-loop
+;
+   
+: check-contents (d -- )
+   contents check-next-loop
+;
+   
+: check-exits (d -- )
+   exits check-next-loop
+;
+   
+: exec-err (d mtypestr warnstr -- )
+   &quot;On &quot; 4 rotate unparseobj strcat
+   &quot;, in it&#39;s &quot; strcat rot strcat
+   &quot;, &quot; strcat swap strcat .tell
+;
+   
+: can-linkto? (player object -- i)
+   dup &quot;link_ok&quot; flag? if pop pop 1 exit then
+   .controls
+;
+   
+: check-exec (d mtype execstr -- )
+   dup &quot;@&quot; 1 strncmp if pop pop pop exit then
+   1 strcut swap pop
+   &quot; &quot; .split pop
+   dup &quot;TEMPLATEquot; 1 strncmp not if
+      dup match ok? not if
+         &quot; is not a known registered program.&quot; strcat
+         exec-err exit
+      then
+      dup match program? not if
+         &quot; is not a program.&quot; strcat
+         exec-err exit
+      then
+      3 pick owner over match can-linkto? not if
+         &quot; is not Link_OK.&quot; strcat
+         exec-err exit
+      then
+   else
+      dup number? not if
+         &quot; is not a program dbref.&quot; strcat
+         &quot;@&quot; swap strcat exec-err exit
+      then
+      dup atoi dbref ok? not if
+         &quot; is not a valid program reference.&quot; strcat
+         &quot;@&quot; swap strcat exec-err exit
+      then
+      dup atoi dbref program? not if
+         &quot; is not a valid program reference.&quot; strcat
+         &quot;@&quot; swap strcat exec-err exit
+      then
+      3 pick owner over atoi dbref can-linkto? not if
+         &quot; is not Link_OK.&quot; strcat
+         &quot;@&quot; swap strcat exec-err exit
+      then
+   then
+   pop pop pop
+;
+   
+   
+: missing-err ( d s -- )
+   swap unparseobj
+   &quot; is missing an &quot;
+   strcat swap strcat
+   &quot; message.&quot; strcat .tell
+;
+   
+: colon-err ( d s -- )
+   swap unparseobj
+   &quot; has an unnecesary &#39;:&#39; at the start of its &quot;
+   strcat swap strcat
+   &quot; message.&quot; strcat .tell
+;
+   
+: check-desc (d -- )
+   dup desc not if
+      &quot;@description&quot; missing-err
+   else
+      &quot;@description&quot; over
+      desc check-exec
+   then
+;
+   
+: check-succ (d -- )
+   dup succ not if
+      &quot;@success&quot; missing-err
+   else
+      &quot;@success&quot; over
+      succ check-exec
+   then
+;
+   
+: check-fail (d -- )
+   dup fail not if
+      &quot;@fail&quot; missing-err
+   else
+      &quot;@fail&quot; over
+      fail check-exec
+   then
+;
+   
+: check-drop (d -- )
+   dup drop not if
+      &quot;@drop&quot; missing-err
+   else
+      &quot;@drop&quot; over
+      drop check-exec
+   then
+;
+   
+: check-osucc (d -- )
+   dup osucc not if
+      &quot;@osuccess&quot; missing-err
+   else
+      dup osucc &quot;:&quot; 1 strncmp not if
+         &quot;@osuccess&quot; colon-err
+      else pop
+      then
+   then
+;
+   
+: check-ofail (d -- )
+   dup ofail not if
+      &quot;@ofail&quot; missing-err
+   else
+      dup ofail &quot;:&quot; 1 strncmp not if
+         &quot;@ofail&quot; colon-err
+      else pop
+      then
+   then
+;
+   
+: check-odrop (d -- )
+   dup odrop not if
+      &quot;@odrop&quot; missing-err
+   else
+      dup odrop &quot;:&quot; 1 strncmp not if
+         &quot;@odrop&quot; colon-err
+      else pop
+      then
+   then
+;
+   
+   
+$define islocked? (d -- i) getlockstr &quot;*UNLOCKED*&quot; stringcmp $enddef
+   
+: islocked_always? (d -- i)
+   getlockstr dup &quot;#0&quot; stringcmp not if pop 1 exit then
+   dup &quot;#&quot; STRsplit swap pop atoi
+   &quot;#&quot; swap intostr strcat
+   (lockstr &quot;#dbref&quot;)
+   dup &quot;&amp;!&quot; over strcat strcat
+   3 pick stringcmp not if pop pop 1 exit then
+   &quot;&amp;&quot; over strcat strcat &quot;!&quot; swap strcat
+   stringcmp not if 1 exit then
+   0
+;
+   
+: check-link ( d -- )
+   dup getlink not if
+      dup unparseobj &quot; is unlinked.&quot; strcat .tell
+   else
+      dup getlink over location dbcmp if
+         dup islocked? not if
+            dup unparseobj
+            &quot; is linked to it&#39;s location, but is unlocked.&quot;
+            strcat .tell
+         then
+      else (is not linked to it&#39;s location)
+         dup getlink program? if
+            dup dup owner swap getlink can-linkto? not if
+               dup unparseobj
+               &quot; is linked to a program which is not Link_OK.&quot;
+               strcat .tell
+            then
+         then
+      then
+   then
+   pop
+;
+         
+: check-room (d -- )
+   dup check-desc
+   dup islocked? if
+      dup islocked_always? not if
+         dup check-succ
+      then
+      dup check-fail
+   then
+   dup getlink if
+      dup check-drop
+      dup check-odrop
+   then
+   dup check-contents
+   check-exits
+;
+   
+: check-exit ( d -- )
+   dup check-link
+   dup check-desc
+   dup getlink dup ok? if
+      program? not if
+         dup islocked_always? not if
+            dup check-succ
+            dup check-osucc
+            dup check-odrop
+         then
+         dup islocked? if
+            dup check-fail
+            dup check-ofail
+         then
+      then
+   else pop
+   then
+   pop
+;
+   
+: check-thing ( d -- )
+   dup check-desc
+   dup islocked_always? not if
+      dup check-succ
+      dup check-osucc
+   then
+   dup islocked? if
+      dup check-fail
+      dup check-ofail
+   then
+   dup check-drop
+   dup check-odrop
+   check-exits
+;
+   
+: check-player ( d -- )
+   dup check-desc
+   dup islocked_always? not if
+      dup check-succ
+      dup check-osucc
+   then
+   dup islocked? if
+      dup check-fail
+      dup check-ofail
+   then
+   dup check-contents
+   check-exits
+;
+   
+: check-program ( d -- )
+   check-desc
+;
+   
+: check-obj (d -- )
+   dup room?   if check-room   exit then
+   dup exit?   if check-exit   exit then
+   dup thing?  if check-thing  exit then
+   dup player? if check-player exit then
+   check-program
+;
+   
+: main
+   &#39;check-obj check-obj-addr !
+   .strip dup not if pop &quot;here&quot; then
+   .match_controlled
+   dup #-3 dbcmp if pop me @ getlink then
+   dup ok? not if pop exit then
+   check-obj
+   me @ &quot;Check done.&quot; notify
+;
+
+: main
+    me @ &quot;Hello World&quot; notify
+;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"

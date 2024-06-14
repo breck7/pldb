@@ -1,0 +1,48 @@
+ALGO
+====
+
+ALGO is a programming language created in 1958.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221958%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2256 on PLDB
+66 Years Old
+
+ALGO is an algebraic programming language developed between 1959 and 1961 for the Bendix G-15 computer. ALGO was one of several programming languages inspired by the Preliminary Report on the Language written in Zürich in 1958. This report underwent several modifications before becoming the Revised Report on which most ALGOL implementations are based. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ALGO
+
+- ALGO Wikipedia page
+ https://en.wikipedia.org/wiki/ALGO
+- ALGO first developed in Bendix Corporation
+- See also: (3 related languages)ALGOL 60, NELIAC, ALGOL 58
+
+1 TITLE TRABB PARDO-KNUTH ALGORITHM
+ 2 SUBSCript I,J
+ 3 DATA A(11)
+ 4 FORMAt FI(2DT), FLARGE(3D)
+ 5 PROCEDURE F(T=Z)
+ 6 BEGIN
+ 7 Z=SQRT(ABS(T))+5*T^3
+ 8 END
+ 9 FOR I=0(1)10
+10 A[I]=KEYBD
+11 FOR J=0(1)10 BEGIN
+12 I=J-10
+13 F(A[I]=Y)
+14 PRINT(FI)=I
+15 IF Y &gt; 400
+16 GO TO LARGE
+17 PRINT(FL)=Y
+18 GO TO NEXT
+19 LARGE: PRINT(FLARGE)=999
+20 NEXT: CARR(1) END
+21 2END
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINT
+ Example

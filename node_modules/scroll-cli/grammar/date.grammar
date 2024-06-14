@@ -1,0 +1,50 @@
+dateParser
+ catchAllCellType dateCell
+ description Date this file was first published.
+ extends abstractTopLevelSingleMetaParser
+
+datelineParser
+ cruxFromId
+ description Gives your paragraph a dateline like "December 15, 2021 — The..."
+ extends abstractAftertextDirectiveParser
+ javascript
+  getInserts() {
+   const {day} = this
+   if (!day) return false
+   return [{ index: 0, string: `<span class="scrollDateline">${day} — </span>` }]
+  }
+  matchWholeLine = true
+  get day() {
+   let day = this.content || this.root.get("date")
+   if (!day) return ""
+   try {
+    const dayjs = require("dayjs")
+    return dayjs(day).format(`MMMM D, YYYY`)
+   } catch (err) {
+    console.error(err)
+   }
+   return day || ""
+  }
+
+printDateParser
+ extends abstractScrollParser
+ cruxFromId
+ cells keywordCell
+ javascript
+  compile() {
+   return `<div style="text-align: center;" class="scrollDateline">${this.day}</div>`
+  }
+  get day() {
+   let day = this.content || this.root.get("date")
+   if (!day) return ""
+   try {
+    const dayjs = require("dayjs")
+    return dayjs(day).format(`MMMM D, YYYY`)
+   } catch (err) {
+    console.error(err)
+   }
+   return day || ""
+  }
+  compileTextVersion() {
+    return this.day
+  }

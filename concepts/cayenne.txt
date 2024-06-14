@@ -1,0 +1,35 @@
+Cayenne
+=======
+
+Cayenne is a programming language created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2179 on PLDB
+26 Years Old
+
+Cayenne is a dependently typed functional programming language created by Lennart Augustsson in 1998, making it one of the earliest dependently type programming language (as opposed to proof assistant or logical framework). A notable design decision is that the language allows unbounded recursive functions to be used on the type level, making type checking undecidable. Most dependently typed proof assistants and later dependently typed languages such as Agda included a termination checker to prevent the type checker from looping, while the contemporary Dependent ML restricted the expressivity of the type-level language to maintain decidability. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cayenne_(programming_language)
+
+- Cayenne Wikipedia page
+ https://en.wikipedia.org/wiki/Cayenne_(programming_language)
+- Cayenne first developed in Chalmers University of Technology
+- Cayenne on HOPL
+ https://hopl.info/showlanguage.prx?exp=5746
+- See also: (3 related languages)Agda, DML, Haskell
+
+PrintfType :: String -&gt; #
+PrintfType (Nil)          = String
+PrintfType (&#39;%&#39;:(&#39;d&#39;:cs)) = Int    -&gt; PrintfType cs
+PrintfType (&#39;%&#39;:(&#39;s&#39;:cs)) = String -&gt; PrintfType cs
+PrintfType (&#39;%&#39;:( _ :cs)) =           PrintfType cs
+PrintfType ( _ :cs)       =           PrintfType cs
+
+aux :: (fmt::String) -&gt; String -&gt; PrintfType fmt
+aux  (Nil)          out = out
+aux  (&#39;%&#39;:(&#39;d&#39;:cs)) out = \ (i::Int)    -&gt; aux  cs (out ++ show i)
+aux  (&#39;%&#39;:(&#39;s&#39;:cs)) out = \ (s::String) -&gt; aux  cs (out ++ s)
+aux  (&#39;%&#39;:( c :cs)) out =                  aux  cs (out ++ c : Nil)
+aux  (c:cs)         out =                  aux  cs (out ++ c : Nil)
+
+printf :: (fmt::String) -&gt; PrintfType fmt
+printf fmt = aux fmt Nil

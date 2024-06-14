@@ -1,0 +1,90 @@
+PAWN
+====
+
+PAWN is an open source programming language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#491 on PLDB
+18 Years Old
+3k Repos
+
+git clone https://github.com/compuphase/pawn
+
+Try now: Riju
+
+Pawn is a quick and small scripting language that requires few resources.
+
+- PAWN website
+ https://www.compuphase.com/pawn/pawn.htm
+- PAWN is developed on GitHub and has 385 stars
+- There are at least 3,270 PAWN repos on GitHub
+- PAWN first developed in Informatie-Technologisch Bureau CompuPhase
+- PAWN is written in Pascal, C, Assembly language, Tex, CMake, Rexx, XSLT, CSS, Markdown, C++
+- The  Google BigQuery Public Dataset GitHub snapshot shows 434 users using PAWN in 502 repos on GitHub
+- GitHub supports syntax highlighting for PAWN
+
+#include &lt;core&gt;
+
+main() {
+    print(&quot;Hello, world!\n&quot;);
+}
+
+#include &lt;a_samp&gt;
+
+forward OneSecTimer();
+
+new lasttick = 0;
+
+main()
+{
+	print(&quot;\n----------------------------------&quot;);
+	print(&quot;  This is a blank GameModeScript&quot;);
+	print(&quot;----------------------------------\n&quot;);
+}
+
+public OnGameModeInit()
+{
+	// Set timer of 1 second.
+	SetTimer(&quot;OneSecTimer&quot;, 1000, 1);
+	print(&quot;GameModeInit()&quot;);
+	SetGameModeText(&quot;Timer Test&quot;);
+	AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
+	return 1;
+}
+
+public OneSecTimer() {
+
+	if(lasttick == 0) {
+     	lasttick = GetTickCount();
+		return;
+	}
+	new sText[256];
+	format(sText,sizeof(sText),&quot;GetTickCountOffset = %d&quot;,GetTickCount() - lasttick);
+	print(sText);
+	SendClientMessageToAll(0xFF0000, sText);
+	lasttick = GetTickCount();
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

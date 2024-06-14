@@ -1,0 +1,37 @@
+import ../code/conceptPage.scroll
+
+id json-url
+name json->url
+appeared 2017
+creators Tim Bray
+tags jsonFormat
+website https://jsonurl.org
+latestVersion v1.1.7
+webRepl https://jsonurl.org/#sandbox
+conceptDescription JSON→URL is a language-independent data interchange format for the JSON data model suitable for use within a URL/URI query string. It is defined by an open specification, though not through a standards body.
+
+isOpenSource true
+writtenIn javascript json markdown bourne-shell yaml typescript
+tryItOnline https://jsonurl.org/#sandbox
+documentation https://github.com/jsonurl/specification
+repoStats
+ firstCommit 2020
+ commits 556
+ committers 11
+ files 73
+ newestCommit 2023
+country Canada
+originCommunity Textuality Services, Inc.
+reference https://www.textuality.com/
+reference https://www.rfc-editor.org/rfc/rfc8259
+
+githubRepo https://github.com/jsonurl/jsonurl-js
+ stars 15
+ forks 6
+ subscribers 4
+ created 2020
+ updated 2022
+ description JSON->URL defines a text format for the JSON data model suitable for use within a URL/URI (as described by RFC3986). This repository holds the JavaScript reference implementation of JSON->URL.
+ issues 8
+
+wikipedia https://en.wikipedia.org/wiki/JSON%E2%86%92URL

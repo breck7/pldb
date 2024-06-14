@@ -1,0 +1,99 @@
+Brightscript
+============
+
+Brightscript is a programming language created in 2010.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1025 on PLDB
+14 Years Old
+832 Repos
+
+- There are at least 832 Brightscript repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 86 users using Brightscript in 98 repos on GitHub
+- GitHub supports syntax highlighting for Brightscript
+- Read more about Brightscript on the web: 1.
+ https://medium.com/float-left-insights/what-makes-roku-brightscript-a-powerful-scripting-language-5f46532f496d
+- 1 languages in PLDB linking to Brightscript: cloc
+
+&#39; *********************************************************
+&#39; **  Simple Grid Screen Demonstration App
+&#39; **  Jun 2010
+&#39; **  Copyright (c) 2010 Roku Inc. All Rights Reserved.
+&#39; *********************************************************
+
+&#39;************************************************************
+&#39;** Application startup
+&#39;************************************************************
+Sub Main()
+
+    &#39;initialize theme attributes like titles, logos and overhang color
+    initTheme()
+  
+    gridstyle = &quot;Flat-Movie&quot;
+
+    &#39;set to go, time to get started
+    while gridstyle &lt;&gt; &quot;&quot;
+        print &quot;starting grid style= &quot;;gridstyle
+        screen=preShowGridScreen(gridstyle)
+        gridstyle = showGridScreen(screen, gridstyle)
+    end while
+
+End Sub
+
+&#39;*************************************************************
+&#39;** Set the configurable theme attributes for the application
+&#39;**
+&#39;** Configure the custom overhang and Logo attributes
+&#39;** These attributes affect the branding of the application
+&#39;** and are artwork, colors and offsets specific to the app
+&#39;*************************************************************
+
+Sub initTheme()
+    app = CreateObject(&quot;roAppManager&quot;)
+    app.SetTheme(CreateDefaultTheme())
+End Sub
+
+&#39;******************************************************
+&#39;** @return The default application theme.
+&#39;** Screens can make slight adjustments to the default
+&#39;** theme by getting it from here and then overriding
+&#39;** individual theme attributes.
+&#39;******************************************************
+Function CreateDefaultTheme() as Object
+    theme = CreateObject(&quot;roAssociativeArray&quot;)
+
+    theme.ThemeType = &quot;generic-dark&quot;
+
+    &#39; All these are greyscales
+    theme.GridScreenBackgroundColor = &quot;#363636&quot;
+    theme.GridScreenMessageColor    = &quot;#808080&quot;
+    theme.GridScreenRetrievingColor = &quot;#CCCCCC&quot;
+    theme.GridScreenListNameColor   = &quot;#FFFFFF&quot;
+
+    &#39; Color values work here
+    theme.GridScreenDescriptionTitleColor    = &quot;#001090&quot;
+    theme.GridScreenDescriptionDateColor     = &quot;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

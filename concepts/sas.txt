@@ -1,0 +1,112 @@
+SAS
+===
+
+SAS, aka Statistical Analysis System, is a programming language created in 1976 by Anthony James Barr.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Anthony%20James%20Barr
+
+#30 on PLDB
+48 Years Old
+8k Repos
+
+The SAS language is a computer programming language used for statistical analysis, created by Anthony James Barr at North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as RTF, HTML and PDF documents. The SAS language runs under compilers that can be used on Microsoft Windows, Linux, and various other UNIX and  mainframe computers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SAS_language
+
+- SAS website
+ https://www.sas.com
+- SAS Wikipedia page
+ https://en.wikipedia.org/wiki/SAS_language
+- SAS docs
+ https://support.sas.com/en/documentation.html
+- There are at least 8,407 SAS repos on GitHub
+- SAS first developed in North Carolina State University
+- SAS on Twitter
+ https://twitter.com/sassoftware
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using SAS in 1k repos on GitHub
+- There are 7,963 members in the SAS subreddit
+- There are 54 Project Euler users using SAS
+- Explore SAS snippets on Rosetta Code
+- SAS on HOPL
+ https://hopl.info/showlanguage.prx?exp=733
+- SAS ranks #21 in the TIOBE Index
+- Pygments supports syntax highlighting for SAS
+- GitHub supports syntax highlighting for SAS
+- There is 1 Jupyter Kernel for SAS
+- Release Notes for SAS
+ https://support.sas.com/software/updates/index.html
+- Frequently Asked Questions for SAS
+ https://www.sas.com/en_us/certification/faq.html
+- Indeed.com has 1,160 matches for "sas programmer".
+- sas.com was registered in 1990
+- See also: (2 related languages)HTML, Linux
+- 10 languages in PLDB linking to SAS: Bazel, beef-lang, Eiffel, Flow9, GAP, HHVM, JSL, POV-Ray SDL, Racket, Tea
+
+%macro putit( string= );
+     %put &amp;string;
+     %mend;
+
+%putit(string=Hello World)
+
+/* Hello world in SAS */
+
+* Writes as output title;
+TITLE &quot;Hello World!&quot;;
+* writes to the log;
+data _null_;
+    PUT &quot;Hello world!&quot;;
+run;
+
+/* Example DATA step code for linguist */
+
+libname source &#39;C:\path\to\file&#39;
+
+data work.working_copy;
+	set source.original_file.sas7bdat;
+run;
+
+data work.working_copy;
+	set work.working_copy;
+	if Purge = 1 then delete;
+run;
+
+data work.working_copy;
+	set work.working_copy;
+	if ImportantVariable = . then MissingFlag = 1;
+run;
+
+Language features
+======================================================
+
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token *
+ Example
+  * A comment
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

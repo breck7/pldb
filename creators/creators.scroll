@@ -1,0 +1,867 @@
+writeConcepts creators.json
+
+// A ScrollSet with information on programming language creators
+
+idParser
+ extends abstractIdParser
+websiteParser
+ extends abstractUrlMeasureParser
+ float sortIndex 1.1
+gitsParser
+ description A link to their GitHub or GitLab or other Git portfolio.
+ extends abstractUrlMeasureParser
+ float sortIndex 1.2
+interviewParser
+ description A link to an interview.
+ extends abstractUrlMeasureParser
+ float sortIndex 1.21
+twitterParser
+ extends abstractUrlMeasureParser
+ float sortIndex 1.3
+bornParser
+ cells measureNameCell yearCell
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.4
+wikipediaParser
+ extends abstractUrlMeasureParser
+ float sortIndex 1.6
+
+id Aaron Swartz
+born 1986
+wikipedia https://en.wikipedia.org/wiki/Aaron_Swartz
+
+id Mark Sibly
+gits https://github.com/blitz-research
+
+id Adele Goldberg
+born 1945
+wikipedia https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)
+
+id David Roundy
+born 1973
+wikipedia https://en.wikipedia.org/wiki/David_Roundy
+
+id Patrick Michaud
+website https://pmichaud.com/
+
+id Breck Yunits
+website https://breckyunits.com
+gits https://github.com/breck7
+twitter https://twitter.com/breckyunits
+born 1984
+
+id Adriaan van Wijngaarden
+born 1916
+wikipedia https://en.wikipedia.org/wiki/Adriaan_van_Wijngaarden
+
+id Alain Colmerauer
+born 1941
+wikipedia https://en.wikipedia.org/wiki/Alain_Colmerauer
+
+id Alan Edelman
+born 1963
+wikipedia https://en.wikipedia.org/wiki/Alan_Edelman
+
+id Alan Kay
+born 1940
+wikipedia https://en.wikipedia.org/wiki/Alan_Kay
+
+id Hadley Wickham
+website https://hadley.nz/
+gits https://github.com/hadley
+twitter https://x.com/hadleywickham
+born 1979
+wikipedia https://en.wikipedia.org/wiki/Hadley_Wickham
+
+id Alan Perlis
+born 1922
+wikipedia https://en.wikipedia.org/wiki/Alan_Perlis
+
+id Mitchel Resnick
+born 1956
+wikipedia https://en.wikipedia.org/wiki/Mitchel_Resnick
+
+id John Maloney
+interview https://faberllull.cat/en/resident.cfm?id=38257&url=john-maloney.htm
+
+id Jens Mönig
+gits https://github.com/jmoenig
+twitter https://x.com/moenig
+
+id Bernat Romagosa
+website http://romagosa.work/
+gits https://github.com/bromagosa
+
+id Yasmin Kafai
+website https://www.yasminkafai.com/
+wikipedia https://en.wikipedia.org/wiki/Yasmin_Kafai
+
+id Alfred Aho
+born 1941
+wikipedia https://en.wikipedia.org/wiki/Alfred_Aho
+
+id Jeffrey Heer
+website https://homes.cs.washington.edu/~jheer/
+gits https://github.com/jheer
+twitter https://x.com/jeffrey_heer
+born 1979
+wikipedia https://en.wikipedia.org/wiki/Jeffrey_Heer
+
+id Anders Hejlsberg
+born 1960
+wikipedia https://en.wikipedia.org/wiki/Anders_Hejlsberg
+
+id Andrei Alexandrescu
+born 1969
+wikipedia https://en.wikipedia.org/wiki/Andrei_Alexandrescu
+
+id John D. Hunter
+born 1968
+wikipedia https://en.wikipedia.org/wiki/John_D._Hunter
+
+id Anthony James Barr
+born 1940
+wikipedia https://en.wikipedia.org/wiki/Anthony_James_Barr
+
+id Arthur Whitney
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Arthur_Whitney_(computer_scientist)
+
+id Barbara Liskov
+born 1939
+wikipedia https://en.wikipedia.org/wiki/Barbara_Liskov
+
+id Bertrand Meyer
+born 1950
+wikipedia https://en.wikipedia.org/wiki/Bertrand_Meyer
+
+id Lingdong Huang
+website https://lingdong.works/
+gits https://github.com/LingDong-/
+twitter https://x.com/LingdongH
+born 1997
+
+id Bill Paxton
+born 1949
+wikipedia https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)
+
+id Jose E. Marchesi
+website https://www.jemarch.net/
+born 1980
+
+id Bjarne Stroustrup
+born 1950
+wikipedia https://en.wikipedia.org/wiki/Bjarne_Stroustrup
+
+id Brad Cox
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Brad_Cox
+
+id Brendan Eich
+born 1961
+wikipedia https://en.wikipedia.org/wiki/Brendan_Eich
+
+id Brian Fox
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
+
+id Brian Kernighan
+born 1942
+wikipedia https://en.wikipedia.org/wiki/Brian_Kernighan
+
+id Carl Sassenrath
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Carl_Sassenrath
+
+id Jean Paoli
+wikipedia https://en.wikipedia.org/wiki/Jean_Paoli
+
+id Michael Sperberg-McQueen
+website http://cmsmcq.com/
+wikipedia https://en.wikipedia.org/wiki/Michael_Sperberg-McQueen
+
+id John W. Cowan
+website http://vrici.lojban.org/~cowan/
+wikipedia https://en.wikipedia.org/wiki/John_W._Cowan
+
+id Kevin Hammond
+gits https://github.com/kevinhammond
+twitter https://x.com/khstandrews
+
+id Fredrik Kjolstad
+website https://fredrikbk.com/
+gits https://github.com/fredrikbk
+
+id James Cooke Brown
+born 1921
+wikipedia https://en.wikipedia.org/wiki/James_Cooke_Brown
+
+id Alex Beregszaszi
+website https://rtfs.hu/
+gits https://github.com/axic
+twitter https://x.com/alexberegszaszi
+
+id Norman H. Nie
+born 1943
+wikipedia https://en.wikipedia.org/wiki/Norman_H._Nie
+
+id Charles Goldfarb
+born 1939
+wikipedia https://en.wikipedia.org/wiki/Charles_Goldfarb
+
+id Charles H. Moore
+born 1938
+wikipedia https://en.wikipedia.org/wiki/Charles_H._Moore
+
+id Mike Lesk
+born 1945
+wikipedia https://en.wikipedia.org/wiki/Mike_Lesk
+
+id Eric Schmidt
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Eric_Schmidt
+
+id Stephen C. Johnson
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Stephen_C._Johnson
+
+id Charles Katz
+born 1938
+wikipedia https://en.wikipedia.org/wiki/Charles_Katz
+
+id Chris Lattner
+born 1978
+wikipedia https://en.wikipedia.org/wiki/Chris_Lattner
+
+id Chuck Geschke
+born 1939
+wikipedia https://en.wikipedia.org/wiki/Charles_Geschke
+
+id Cleve Moler
+born 1939
+wikipedia https://en.wikipedia.org/wiki/Cleve_Moler
+
+id Dan Ingalls
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Dan_Ingalls
+
+id Dan Weinreb
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Daniel_Weinreb
+
+id Dave Bayer
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Dave_Bayer
+
+id David May
+born 1951
+wikipedia https://en.wikipedia.org/wiki/David_May_(computer_scientist)
+
+id Dave Winer
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Dave_Winer
+
+id David A. Moon
+born 1956
+wikipedia https://en.wikipedia.org/wiki/David_A._Moon
+
+id David Axmark
+born 1962
+wikipedia https://en.wikipedia.org/wiki/David_Axmark
+
+id David Cournapeau
+born 1980
+wikipedia https://en.wikipedia.org/wiki/David_Cournapeau
+
+id David Ungar
+born 1955
+wikipedia https://en.wikipedia.org/wiki/David_Ungar
+
+id Dennis Ritchie
+born 1941
+wikipedia https://en.wikipedia.org/wiki/Dennis_Ritchie
+
+id Don Box
+born 1964
+wikipedia https://en.wikipedia.org/wiki/Don_Box
+
+id Don Syme
+born 1965
+wikipedia https://en.wikipedia.org/wiki/Don_Syme
+
+id Donald D. Chamberlin
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Donald_D._Chamberlin
+
+id Mike Bostock
+website https://bost.ocks.org/mike/
+gits https://github.com/mbostock
+twitter https://x.com/mbostock
+wikipedia https://en.wikipedia.org/wiki/Mike_Bostock
+
+id Douglas Crockford
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Douglas_Crockford
+
+id Douglas McIlroy
+born 1932
+wikipedia https://en.wikipedia.org/wiki/Douglas_McIlroy
+
+id Erik Arvidsson
+gits shttps://github.com/arv
+twitter https://x.com/erikarvidsson
+
+id Aaron Boodman
+website https://aaronboodman.com/
+gits https://github.com/aboodman
+
+id Dwayne Richard Hipp
+website https://www.hwaci.com/drh/index.html
+born 1961
+wikipedia https://en.wikipedia.org/wiki/D._Richard_Hipp
+
+id Friedrich L. Bauer
+born 1924
+wikipedia https://en.wikipedia.org/wiki/Friedrich_L._Bauer
+
+id Gary Grossman
+born 1962
+wikipedia https://en.wikipedia.org/wiki/Gary_Grossman
+
+id Gerald Jay Sussman
+born 1947
+wikipedia https://en.wikipedia.org/wiki/Gerald_Jay_Sussman
+
+id Grace Hopper
+born 1906
+wikipedia https://en.wikipedia.org/wiki/Grace_Hopper
+
+id Graham Nelson
+born 1968
+wikipedia https://en.wikipedia.org/wiki/Graham_Nelson
+
+id PhoenixHimself
+gits https://github.com/Ph0enixKM
+twitter https://x.com/PhoenixHimself
+
+id Guido van Rossum
+born 1956
+wikipedia https://en.wikipedia.org/wiki/Guido_van_Rossum
+
+id Guy Steele
+born 1954
+wikipedia https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.
+
+id Håkon Wium Lie
+born 1965
+wikipedia https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie
+
+id Hampton Lintorn-Catlin
+born 1982
+wikipedia https://en.wikipedia.org/wiki/Hampton_Lintorn-Catlin
+
+id James Gosling
+born 1955
+wikipedia https://en.wikipedia.org/wiki/James_Gosling
+
+id James Strachan
+born 1969
+wikipedia https://en.wikipedia.org/wiki/James_Strachan_(programmer)
+
+id Jean E. Sammet
+born 1928
+wikipedia https://en.wikipedia.org/wiki/Jean_E._Sammet
+
+id Jean Ichbiah
+born 1940
+wikipedia https://en.wikipedia.org/wiki/Jean_Ichbiah
+
+id Donald Knuth
+website https://cs.stanford.edu/~knuth/
+born 1938
+wikipedia https://en.wikipedia.org/wiki/Donald_Knuth
+
+id Anthony Bonkoski
+website https://xorvoid.com/
+gits https://github.com/xorvoid
+born 1990
+
+id Jeff Bezanson
+born 1980
+wikipedia https://en.wikipedia.org/wiki/Jeff_Bezanson_(programmer)
+
+id Ary Borenszweig
+gits https://github.com/asterite
+
+id Andreas Rumpf
+gits https://github.com/Araq
+
+id Nenad Rakocevic
+gits https://github.com/dockimbel
+
+id Jeffrey Snover
+born 1962
+wikipedia https://en.wikipedia.org/wiki/Jeffrey_Snover
+
+id Jeremy Ashkenas
+born 1981
+wikipedia https://en.wikipedia.org/wiki/Jeremy_Ashkenas
+
+id Phil Freeman
+website https://functorial.com/
+gits https://github.com/paf31
+twitter https://twitter.com/paf31
+
+id Joe Armstrong
+born 1950
+wikipedia https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
+
+id Joe Ossanna
+born 1928
+wikipedia https://en.wikipedia.org/wiki/Joe_Ossanna
+
+id John Backus
+born 1924
+wikipedia https://en.wikipedia.org/wiki/John_Backus
+
+id John G. Kemeny
+born 1926
+wikipedia https://en.wikipedia.org/wiki/John_G._Kemeny
+
+id John Gruber
+born 1973
+wikipedia https://en.wikipedia.org/wiki/John_Gruber
+
+id John Hughes
+born 1958
+wikipedia https://en.wikipedia.org/wiki/John_Hughes_(computer_scientist)
+
+id John McCarthy
+born 1927
+wikipedia https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
+
+id John Ousterhout
+born 1954
+wikipedia https://en.wikipedia.org/wiki/John_Ousterhout
+
+id John Warnock
+born 1940
+wikipedia https://en.wikipedia.org/wiki/John_Warnock
+
+id Joseph J. Allaire
+born 1969
+wikipedia https://en.wikipedia.org/wiki/Joseph_J._Allaire
+
+id Ken Thompson
+born 1943
+wikipedia https://en.wikipedia.org/wiki/Ken_Thompson
+
+id Kenneth E. Iverson
+born 1920
+wikipedia https://en.wikipedia.org/wiki/Kenneth_E._Iverson
+
+id Kent Pitman
+born 1956
+wikipedia https://en.wikipedia.org/wiki/Kent_Pitman
+
+id Clark Evans
+website https://clarkevans.com/
+
+id Terence Parr
+website https://parrt.cs.usfca.edu/
+gits https://github.com/parrt
+born 1964
+wikipedia https://en.wikipedia.org/wiki/Terence_Parr
+
+id Steve Ruiz
+website https://www.steveruiz.me/
+gits https://github.com/steveruizok
+twitter https://x.com/steveruizok
+born 1987
+
+id John Resig
+website https://johnresig.com/
+twitter https://x.com/jeresig
+born 1984
+wikipedia https://en.wikipedia.org/wiki/John_Resig
+
+id TJ Holowaychuk
+gits https://x.com/tjholowaychuk
+twitter https://x.com/tjholowaychuk
+born 1988
+
+id Edwin Brady
+website https://www.type-driven.org.uk/edwinb/
+gits https://www.github.com/edwinb
+twitter https://www.twitter.com/edwinbrady
+
+id Nicolas Cannasse
+gits https://github.com/ncannasse
+twitter https://x.com/ncannasse
+
+id Axel Liljencrantz
+gits https://github.com/liljencrantz
+
+id Phil Moorby
+born 1953
+wikipedia https://en.wikipedia.org/wiki/Phil_Moorby
+
+id Aseem Kishore
+website https://aseemk.com/
+gits https://github.com/aseemk
+twitter https://x.com/aseemk
+
+id Paul Tagliamonte
+website https://pault.ag/
+gits https://github.com/paultag
+
+id Sanjiva Weerawarana
+website http://sanjiva.weerawarana.org/
+gits https://github.com/sanjiva
+wikipedia https://en.wikipedia.org/wiki/Sanjiva_Weerawarana
+
+id Alberto Demichelis
+gits https://github.com/albertodemichelis
+twitter https://x.com/squirrellang
+
+id Sylvan Clebsch
+gits https://github.com/sylvanc
+
+id Thorsten Ball
+website https://thorstenball.com/
+gits https://github.com/mrnugget
+twitter https://x.com/thorstenball
+
+id Slava Pestov
+website https://factorcode.org/slava/
+gits https://github.com/slavapestov
+
+id Leonardo de Moura
+website https://leodemoura.github.io/
+gits https://github.com/leodemoura
+
+id Thomas S Hatch
+gits https://github.com/thatch45
+twitter https://x.com/thatch45
+
+id Leslie Lamport
+website https://lamport.org/
+born 1941
+wikipedia https://en.wikipedia.org/wiki/Leslie_Lamport
+
+id Urban Müller
+website https://web.archive.org/web/20040930212131/http://wuarchive.wustl.edu/~umueller/
+
+id Alon Zakai
+website https://kripken.github.io/blog/about/
+gits https://github.com/kripken
+twitter https://x.com/kripken
+
+id Oren Ben-Kiki
+website http://www.ben-kiki.org/oren/
+gits https://github.com/orenbenkiki
+twitter https://x.com/orenbenkiki
+born 1964
+
+id Stephen Bourne
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Stephen_R._Bourne
+
+id Alexander Medvednikov
+gits https://github.com/medvednikov
+born 1993
+
+id Vitalik Buterin
+twitter https://x.com/VitalikButerin
+born 1994
+wikipedia https://en.wikipedia.org/wiki/Vitalik_Buterin
+
+id Andrew Kelley
+website https://andrewkelley.me/
+gits https://github.com/andrewrk/
+
+id Evan Czaplicki
+gits https://github.com/evancz
+twitter https://x.com/evancz
+
+id Lee Byron
+website https://leebyron.com/
+gits https://github.com/leebyron
+twitter https://twitter.com/leeb
+
+id Thierry Coquand
+website https://www.cse.chalmers.se/~coquand/
+born 1961
+wikipedia https://en.wikipedia.org/wiki/Thierry_Coquand
+
+id Andrey Breslav
+website https://www.abreslav.com/
+twitter https://x.com/abreslav
+born 1984
+
+id Christian Reitwiessner
+gits https://github.com/chriseth
+twitter https://x.com/ethchris
+
+id Tim Bray
+website https://www.tbray.org/
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Tim_Bray
+
+id José Valim
+gits https://github.com/josevalim
+twitter https://x.com/josevalim
+
+id Graydon Hoare
+website https://graydon2.dreamwidth.org/
+gits https://github.com/graydon
+twitter https://x.com/graydon_pub
+born 1977
+
+id Konrad Zuse
+born 1910
+wikipedia https://en.wikipedia.org/wiki/Konrad_Zuse
+
+id Larry Wall
+website http://www.wall.org/~larry/
+born 1954
+wikipedia https://en.wikipedia.org/wiki/Larry_Wall
+
+id Lars Bak
+gits https://github.com/larsbak
+born 1965
+wikipedia https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)
+
+id Lars Pensjö
+born 1963
+wikipedia https://en.wikipedia.org/wiki/Lars_Pensjö
+
+id Lee E. McMahon
+born 1931
+wikipedia https://en.wikipedia.org/wiki/Lee_E._McMahon
+
+id Mark S. Miller
+born 1958
+wikipedia https://en.wikipedia.org/wiki/Mark_S._Miller
+
+id Martin Odersky
+born 1958
+wikipedia https://en.wikipedia.org/wiki/Martin_Odersky
+
+id Martin Richards
+born 1940
+wikipedia https://en.wikipedia.org/wiki/Martin_Richards_(computer_scientist)
+
+id Matthew Flatt
+born 1967
+wikipedia https://en.wikipedia.org/wiki/Matthew_Flatt
+
+id Matthias Felleisen
+born 1958
+wikipedia https://en.wikipedia.org/wiki/Matthias_Felleisen
+
+id Michael Widenius
+born 1962
+wikipedia https://en.wikipedia.org/wiki/Michael_Widenius
+
+id Mike Cowlishaw
+born 1948
+wikipedia https://en.wikipedia.org/wiki/Mike_Cowlishaw
+
+id Nathaniel Borenstein
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Nathaniel_Borenstein
+
+id Ned Freed
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Ned_Freed
+
+id Niklaus Wirth
+born 1934
+wikipedia https://en.wikipedia.org/wiki/Niklaus_Wirth
+
+id Ole-Johan Dahl
+born 1931
+wikipedia https://en.wikipedia.org/wiki/Ole-Johan_Dahl
+
+id P. J. Plauger
+born 1944
+wikipedia https://en.wikipedia.org/wiki/P._J._Plauger
+
+id Paul Graham
+born 1964
+wikipedia https://en.wikipedia.org/wiki/Paul_Graham_(programmer)
+
+id Paul Hudak
+born 1952
+wikipedia https://en.wikipedia.org/wiki/Paul_Hudak
+
+id Peter J. Weinberger
+born 1942
+wikipedia https://en.wikipedia.org/wiki/Peter_J._Weinberger
+
+id Peter Naur
+born 1928
+wikipedia https://en.wikipedia.org/wiki/Peter_Naur
+
+id Ralph Griswold
+born 1934
+wikipedia https://en.wikipedia.org/wiki/Ralph_Griswold
+
+id Rasmus Lerdorf
+born 1968
+wikipedia https://en.wikipedia.org/wiki/Rasmus_Lerdorf
+
+id Raymond F. Boyce
+born 1947
+wikipedia https://en.wikipedia.org/wiki/Raymond_F._Boyce
+
+id Rich Hickey
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Rich_Hickey
+
+id Richard P. Gabriel
+born 1949
+wikipedia https://en.wikipedia.org/wiki/Richard_P._Gabriel
+
+id Richard Stallman
+born 1953
+wikipedia https://en.wikipedia.org/wiki/Richard_Stallman
+
+id Rob Pike
+website http://herpolhode.com/rob/
+gits https://github.com/robpike
+born 1956
+wikipedia https://en.wikipedia.org/wiki/Rob_Pike
+
+id Robert Bruce Findler
+born 1971
+wikipedia https://en.wikipedia.org/wiki/Robert_Bruce_Findler
+
+id Robert Fourer
+born 1949
+wikipedia https://en.wikipedia.org/wiki/Robert_Fourer
+
+id Robert Gentleman
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)
+
+id Robert Griesemer
+born 1964
+wikipedia https://en.wikipedia.org/wiki/Robert_Griesemer
+
+id Roberto Ierusalimschy
+born 1960
+wikipedia https://en.wikipedia.org/wiki/Roberto_Ierusalimschy
+
+id Robin Milner
+born 1934
+wikipedia https://en.wikipedia.org/wiki/Robin_Milner
+
+id Roger Hui
+born 1953
+wikipedia https://en.wikipedia.org/wiki/Roger_Hui
+
+id Ross Ihaka
+born 1954
+wikipedia https://en.wikipedia.org/wiki/Ross_Ihaka
+
+id Ryan Dahl
+born 1980
+wikipedia https://en.wikipedia.org/wiki/Ryan_Dahl
+
+id Scott Fahlman
+born 1948
+wikipedia https://en.wikipedia.org/wiki/Scott_Fahlman
+
+id Shriram Krishnamurthi
+born 1973
+wikipedia https://en.wikipedia.org/wiki/Shriram_Krishnamurthi
+
+id Sophie Wilson
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Sophie_Wilson
+
+id Stefan Karpinski
+born 1982
+wikipedia https://en.wikipedia.org/wiki/Stefan_Karpinski
+
+id Stephen Wolfram
+website https://www.stephenwolfram.com/
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Stephen_Wolfram
+
+id Steve Crocker
+born 1944
+wikipedia https://en.wikipedia.org/wiki/Steve_Crocker
+
+id Steve Furber
+born 1953
+wikipedia https://en.wikipedia.org/wiki/Steve_Furber
+
+id Steve Omohundro
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Steve_Omohundro
+
+id Travis Oliphant
+website https://technicaldiscovery.blogspot.com/
+gits https://github.com/teoliphant
+twitter https://x.com/teoliphant
+born 1971
+wikipedia https://en.wikipedia.org/wiki/Travis_Oliphant
+
+id Jordan Walke
+gits https://github.com/jordwalke
+twitter https://x.com/jordwalke
+
+id Wes McKinney
+website https://wesmckinney.com/
+gits https://github.com/wesm
+twitter https://x.com/wesmckinn
+born 1985
+wikipedia https://en.wikipedia.org/wiki/Wes_McKinney
+
+id Christopher Chedeau
+website https://blog.vjeux.com/
+gits https://github.com/vjeux
+twitter https://twitter.com/vjeux
+
+id Thomas E. Kurtz
+born 1928
+wikipedia https://en.wikipedia.org/wiki/Thomas_E._Kurtz
+
+id Tim Berners-Lee
+born 1955
+wikipedia https://en.wikipedia.org/wiki/Tim_Berners-Lee
+
+id Tobias Lütke
+born 1980
+wikipedia https://en.wikipedia.org/wiki/Tobias_Lütke
+
+id Tom Preston-Werner
+born 1979
+wikipedia https://en.wikipedia.org/wiki/Tom_Preston-Werner
+
+id Vern Paxson
+born 1969
+wikipedia https://en.wikipedia.org/wiki/Vern_Paxson
+
+id Viral B. Shah
+born 1980
+wikipedia https://en.wikipedia.org/wiki/Viral_B._Shah
+
+id John-David Dalton
+gits https://github.com/jdalton
+twitter https://x.com/jdalton
+
+id Walter Bright
+born 1957
+wikipedia https://en.wikipedia.org/wiki/Walter_Bright
+
+id Xavier Leroy
+born 1968
+wikipedia https://en.wikipedia.org/wiki/Xavier_Leroy
+
+id Yukihiro Matsumoto
+born 1965
+wikipedia https://en.wikipedia.org/wiki/Yukihiro_Matsumoto

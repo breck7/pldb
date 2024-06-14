@@ -1,0 +1,79 @@
+Graph Modeling Language
+=======================
+
+Graph Modeling Language is an application created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1447 on PLDB
+27 Years Old
+12k Repos
+
+Graph Modeling Language (GML) is a hierarchical ASCII-based file format for describing graphs. It has been also named Graph Meta Language.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Graph_Modelling_Language
+
+- Graph Modeling Language Wikipedia page
+ https://en.wikipedia.org/wiki/Graph_Modelling_Language
+- There are at least 12,488 Graph Modeling Language repos on GitHub
+- Graph Modeling Language first developed in University of Passau
+- See also: (3 related languages)GraphML, ASCII, Python
+- Read more about Graph Modeling Language on the web: 1.
+ http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
+
+graph
+[
+  directed 0
+  node
+  [
+    id 0
+    label &quot;Node 1&quot;
+    value 100
+  ]
+  node
+  [
+    id 1
+    label &quot;Node 2&quot;
+    value 200
+  ]
+  edge
+  [
+    source 1
+    target 0
+  ]
+]
+
+graph [
+	comment &quot;This is a sample graph&quot;
+	directed 1
+	id 42
+	label &quot;Hello, I am a graph&quot;
+	node [
+		id 1
+		label &quot;node 1&quot;
+		thisIsASampleAttribute 42
+	]
+	node [
+		id 2
+		label &quot;node 2&quot;
+		thisIsASampleAttribute 43
+	]
+	node [
+		id 3
+		label &quot;node 3&quot;
+		thisIsASampleAttribute 44
+	]
+	edge [
+		source 1
+		target 2
+		label &quot;Edge from node 1 to node 2&quot;
+	]
+	edge [
+		source 2
+		target 3
+		label &quot;Edge from node 2 to node 3&quot;
+	]
+	edge [
+		source 3
+		target 1
+		label &quot;Edge from node 3 to node 1&quot;
+	]
+]

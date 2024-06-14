@@ -1,0 +1,100 @@
+Ezhil
+=====
+
+Ezhil is an open source programming language created in 2007 by Muthu Annamalai.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Muthu%20Annamalai
+
+#974 on PLDB
+17 Years Old
+
+Try now: Riju
+
+Ezhil, in Tamil language script (எழில்), is a compact, open source, interpreted, programming language, originally designed to enable native-Tamil speaking students, K-12 age-group to learn computer programming, and enable learning numeracy and computing, outside of linguistic expertise in predominately English language-based computer systems. In the Ezhil programming language, Tamil keywords and language-grammar are chosen to easily enable the native Tamil speaker write programs in the Ezhil system. Ezhil allows easy representation of computer program closer to the Tamil language logical constructs equivalent to the conditional, branch and loop statements in modern English based programming languages. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ezhil_(programming_language)
+
+- Ezhil website
+ http://ezhillang.org
+- Ezhil Wikipedia page
+ https://en.wikipedia.org/wiki/Ezhil_(programming_language)
+- Ezhil first developed in Google scholar
+- Ezhil on Twitter
+ https://twitter.com/ezhillang
+- Explore Ezhil snippets on Rosetta Code
+- Pygments supports syntax highlighting for Ezhil
+- ezhillang.org was registered in 2021
+- See also: (4 related languages)Linux, Logo, BASIC, Python
+
+பதிப்பி &quot;வணக்கம், உலகமே!&quot;
+
+# Hello world in Ezhil
+
+பதிப்பி &quot;வணக்கம்!&quot;
+பதிப்பி &quot;உலகே வணக்கம்&quot;
+பதிப்பி &quot;******* நன்றி!. *******&quot;
+exit()
+
+நிரல்பாகம் yin(radius, color1, color2)
+    #turtle_width(3)
+    turtle_color(&quot;black&quot;)
+    turtle_fill(True)
+    turtle_circle(radius/2., 180)
+    turtle_circle(radius, 180)
+    turtle_left(180)
+    turtle_circle( -1*radius/2.0 , 180 )
+    turtle_color(color1)
+    turtle_fill(True)
+    turtle_color(color2)
+    turtle_left(90)
+    turtle_up()
+    turtle_forward(radius*0.375)
+    turtle_right(90)
+    turtle_down()
+    turtle_circle(radius*0.125)
+    turtle_left(90)
+    turtle_fill(False)
+    turtle_up()
+    turtle_backward(radius*0.375)
+    turtle_down()
+    turtle_left(90)
+முடி
+
+நிரல்பாகம் main()
+    #turtle_reset()
+    yin(200, &quot;white&quot;, &quot;black&quot;)
+    yin(200, &quot;black&quot;, &quot;white&quot;)
+    turtle_ht()
+    pause( &quot;Done! Hit enter to quit&quot;, 5)
+முடி
+
+main()
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

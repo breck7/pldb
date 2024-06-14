@@ -1,0 +1,17 @@
+import ../code/conceptPage.scroll
+
+id xql-lang
+name XQL
+appeared 1998
+creators Hiroshi Ishikawa and Kazumi Kubota and Yasuhiko Kanemasa
+tags queryLanguage
+conceptDescription XQL: A Query Language for XML Data
+
+country Japan
+reference https://www.w3.org/TandS/QL/QL98/pp/flab.txt
+
+example
+ select result:<$book.title, $book.author>
+ from bib:URL "www.a.b.c/bib.xml", book:$bib.book
+ where $book.publisher.name ="Addison-Wesley"
+ groupby $book.title

@@ -1,0 +1,146 @@
+PureScript
+==========
+
+PureScript is an open source programming language created in 2013 by Phil Freeman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Phil%20Freeman
+
+#73 on PLDB
+11 Years Old
+5k Repos
+
+git clone https://github.com/purescript/purescript
+
+Try now: TIO
+
+A strongly-typed language that compiles to JavaScript
+
+- PureScript website
+ http://functorial.com/purescript
+- PureScript Wikipedia page
+ https://en.wikipedia.org/wiki/PureScript
+- PureScript is developed on GitHub and has 7,813 stars
+- PureScript docs
+ https://github.com/purescript/documentation
+- There are at least 5,443 PureScript repos on GitHub
+- PureScript compiles to JavaScript
+- PureScript is written in PureScript, Haskell, JavaScript, Markdown, JSON, Bourne shell, YAML, CSS, Less, Yacc, Make, Dhall, XML
+- PureScript on Twitter
+ https://twitter.com/purescript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 382 users using PureScript in 826 repos on GitHub
+- There are 4 Project Euler users using PureScript
+- PureScript LSP implementation
+- GitHub supports syntax highlighting for PureScript
+- There is 1 Jupyter Kernel for PureScript
+- There is a central package repository for PureScript
+- Release Notes for PureScript
+ https://github.com/purescript/purescript/releases
+- 4 languages in PLDB linking to PureScript: mal, nulan, PureScript, Reason
+
+import Prelude
+import Effect.Console (log)
+
+greet :: String -&gt; String
+greet name = &quot;Hello, &quot; &lt;&gt; name &lt;&gt; &quot;!&quot;
+
+main = log (greet &quot;World&quot;)
+
+module Main where
+
+import Debug.Trace
+
+main = trace &quot;Hello World&quot;
+
+module Control.Arrow where
+
+import Data.Tuple
+
+class Arrow a where
+  arr :: forall b c. (b -&gt; c) -&gt; a b c
+  first :: forall b c d. a b c -&gt; a (Tuple b d) (Tuple c d)
+
+instance arrowFunction :: Arrow (-&gt;) where
+  arr f = f
+  first f (Tuple b d) = Tuple (f b) d
+
+second :: forall a b c d. (Category a, Arrow a) =&gt; a b c -&gt; a (Tuple d b) (Tuple d c)
+second f = arr swap &gt;&gt;&gt; first f &gt;&gt;&gt; arr swap
+
+swap :: forall a b. Tuple a b -&gt; Tuple b a
+swap (Tuple x y) = Tuple y x
+
+infixr 3 ***
+infixr 3 &amp;&amp;&amp;
+
+(***) :: forall a b b&#39; c c&#39;. (Category a, Arrow a) =&gt; a b c -&gt; a b&#39; c&#39; -&gt; a (Tuple b b&#39;) (Tuple c c&#39;)
+(***) f g = first f &gt;&gt;&gt; second g
+
+(&amp;&amp;&amp;) :: forall a b b&#39; c c&#39;. (Category a, Arrow a) =&gt; a b c -&gt; a b c&#39; -&gt; a b (Tuple c c&#39;)
+(&amp;&amp;&amp;) f g = arr (\b -&gt; Tuple b b) &gt;&gt;&gt; (f *** g)
+
+class ArrowZero a where
+  zeroArrow :: forall b c. a b c
+
+infixr 5 &lt;+&gt;
+
+class ArrowPlus a where
+  (&lt;+&gt;) :: forall b c. a b c -&gt; a b c -&gt; a b c
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token {- -}
+ Example
+  {- A comment
+  -}
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example
+  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+  -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
+  foo = bar +
+   baz
+row
+ Feature Doc comments
+ FeatureLink ../features/hasDocComments.html
+ Supported ✓
+ Token 
+ Example
+  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+  -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
+  bool :: forall a. Boolean -> a -> a -> a
+  bool true x _ = x
+  bool false _ x = x
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+
+HackerNews discussions of PureScript
+====================================
+
+title|titleLink|date|score|comments
+Show HN: PureScript - a functional language which compiles to Javascript|https://news.ycombinator.com/item?id=6644685|10/31/2013|2|0

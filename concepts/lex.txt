@@ -1,0 +1,135 @@
+Lex
+===
+
+Lex is a grammar language created in 1975 by Mike Lesk and Eric Schmidt.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mike%20Lesk
+ https://pldb.io/concepts/../lists/creators.html#q=Eric%20Schmidt
+
+#189 on PLDB
+49 Years Old
+3k Repos
+
+Lex is a computer program that generates lexical analyzers ("scanners" or "lexers"). Lex is commonly used with the yacc parser generator. Lex, originally written by Mike Lesk and Eric Schmidt and described in 1975, is the standard lexical analyzer generator on many Unix systems, and an equivalent tool is specified as part of the POSIX standard. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Lex_(software)
+
+- Lex Wikipedia page
+ https://en.wikipedia.org/wiki/Lex_(software)
+- There are at least 2,902 Lex repos on GitHub
+- Lex first developed in https://github.com/babyraging/yash/issues
+- The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Lex in 12k repos on GitHub
+- Lex on HOPL
+ https://hopl.info/showlanguage.prx?exp=680
+- GitHub supports syntax highlighting for Lex
+- See also: (6 related languages)Yacc, Unix, C, Regular Expressions, Bison, Ragel
+- Read more about Lex on the web: 1.
+ https://github.com/babyraging/yash
+- 59 languages in PLDB linking to Lex: Ad-hoc, ana, Blox, Boomerang Decompiler, C3, Carbon, Chapel, cor, Crema, duro, eC, Eiffel, elena, Em, Euphoria, Fancy, Filebench WML, FLEX, GAP, HHVM, hobbes, invokator, Jison Lex, jq, Koka, latino, Lean, Linux, little, Logica, mal, mimium, mlpolyr, Mudlle, mythryl, NCAR Command Language, nesC, never, Opal, Open Shading Language, OpenComal, orca, PHP, GNU Poke, PostgreSQL, PROMETHEUS, Ragel, RamdaScript, Recfiles, redprl, RicScript, shill, Slony, solid, Streem, t2b, UrWeb, VSXu, YARA
+
+/*** Definition section ***/
+
+%{
+/* C code to be copied verbatim */
+#include &lt;stdio.h&gt;
+%}
+
+%%
+    /*** Rules section ***/
+
+    /* [0-9]+ matches a string of one or more digits */
+[0-9]+  {
+            /* yytext is a string containing the matched text. */
+            printf(&quot;Saw an integer: %s\n&quot;, yytext);
+        }
+
+.|\n    {   /* Ignore all other characters. */   }
+
+%%
+/*** C Code section ***/
+
+int main(void)
+{
+    /* Call the lexer, then quit. */
+    yylex();
+    return 0;
+}
+
+/*
+   +----------------------------------------------------------------------+
+   | Zend Engine                                                          |
+   +----------------------------------------------------------------------+
+   | Copyright (c) 1998-2012 Zend Technologies Ltd. (http://www.zend.com) |
+   +----------------------------------------------------------------------+
+   | This source file is subject to version 2.00 of the Zend license,     |
+   | that is bundled with this package in the file LICENSE, and is        |
+   | available through the world-wide-web at the following url:           |
+   | http://www.zend.com/license/2_00.txt.                                |
+   | If you did not receive a copy of the Zend license and are unable to  |
+   | obtain it through the world-wide-web, please send a note to          |
+   | license@zend.com so we can mail you a copy immediately.              |
+   +----------------------------------------------------------------------+
+   | Authors: Zeev Suraski &lt;zeev@zend.com&gt;                                |
+   |          Jani Taskinen &lt;jani@php.net&gt;                                |
+   |          Marcus Boerger &lt;helly@php.net&gt;                              |
+   |          Nuno Lopes &lt;nlopess@php.net&gt;                                |
+   |          Scott MacVicar &lt;scottmac@php.net&gt;                           |
+   +----------------------------------------------------------------------+
+*/
+
+/* $Id$ */
+
+#include &lt;errno.h&gt;
+#include &quot;zend.h&quot;
+#include &quot;zend_globals.h&quot;
+#include &lt;zend_ini_parser.h&gt;
+#include &quot;zend_ini_scanner.h&quot;
+
+#if 0
+# define YYDEBUG(s, c) printf(&quot;state: %d char: %c\n&quot;, s, c)
+#else
+# define YYDEBUG(s, c)
+#endif
+
+#include &quot;zend_ini_scanner_defs.h&quot;
+
+#define YYCTYPE   unsigned char
+/* allow the scanner to read one null byte after the end of the string (from ZEND_MMAP_AHEAD)
+ * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
+#define YYFILL(n) { if (YYCURSOR &gt; YYLIMIT) return 0
+
+Saw an integer: 123
+Saw an integer: 2
+Saw an integer: 6
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

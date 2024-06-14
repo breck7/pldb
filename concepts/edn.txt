@@ -1,0 +1,159 @@
+EDN
+===
+
+EDN, aka Extensible Data Notation, is an open source data notation created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#177 on PLDB
+12 Years Old
+0 Repos
+
+git clone https://github.com/edn-format/edn
+
+Extensible Data Notation
+
+- EDN is developed on GitHub and has 2,351 stars
+- EDN docs
+ https://learnxinyminutes.com/docs/edn/#:~:text=Extensible%20Data%20Notation%20(EDN)%20is,restricted%20to%20data%2C%20no%20code.
+- There are at least 0 EDN repos on GitHub
+- EDN first developed in https://github.com/edn-format
+- EDN is written in Markdown
+- GitHub supports syntax highlighting for EDN
+- 1 languages in PLDB linking to EDN: Datomic
+
+{:a 1, &quot;foo&quot; :bar, [1 2 3] four}
+
+[{:db/id #db/id [db.part/db]
+  :db/ident :object/name
+  :db/doc &quot;Name of a Solar System object.&quot;
+  :db/valueType :db.type/string
+  :db/index true
+  :db/cardinality :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id [db.part/db]
+  :db/ident :object/meanRadius
+  :db/doc &quot;Mean radius of an object.&quot;
+  :db/index true
+  :db/valueType :db.type/double
+  :db/cardinality :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id [db.part/db]
+  :db/ident :data/source
+  :db/doc &quot;Source of the data in a transaction.&quot;
+  :db/valueType :db.type/string
+  :db/index true
+  :db/cardinality :db.cardinality/one
+  :db.install/_attribute :db.part/db}]
+[{:db/id #db/id [db.part/tx]
+  :db/doc &quot;Solar system objects bigger than Pluto.&quot;}
+ {:db/id #db/id [db.part/tx]
+  :data/source &quot;http://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size&quot;}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Sun&quot;
+  :object/meanRadius 696000.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Jupiter&quot;
+  :object/meanRadius 69911.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Saturn&quot;
+  :object/meanRadius 58232.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Uranus&quot;
+  :object/meanRadius 25362.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Neptune&quot;
+  :object/meanRadius 24622.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Earth&quot;
+  :object/meanRadius 6371.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Venus&quot;
+  :object/meanRadius 6051.8}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Mars&quot;
+  :object/meanRadius 3390.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Ganymede&quot;
+  :object/meanRadius 2631.2}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Titan&quot;
+  :object/meanRadius 2576.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Mercury&quot;
+  :object/meanRadius 2439.7}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Callisto&quot;
+  :object/meanRadius 2410.3}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Io&quot;
+  :object/meanRadius 1821.5}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Moon&quot;
+  :object/meanRadius 1737.1}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Europa&quot;
+  :object/meanRadius 1561.0}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Triton&quot;
+  :object/meanRadius 1353.4}
+ {:db/id #db/id [db.part/user]
+  :object/name &quot;Eris&quot;
+  :object/meanRadius 1163.0}]
+
+Language features
+======================================================
+
+row
+ Feature Sets
+ FeatureLink ../features/hasSets.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

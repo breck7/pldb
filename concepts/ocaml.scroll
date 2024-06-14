@@ -1,0 +1,198 @@
+import ../code/conceptPage.scroll
+
+id ocaml
+name OCaml
+appeared 1996
+creators Xavier Leroy
+tags pl
+website http://ocaml.org
+blog https://ocaml.org/blog
+releaseNotes https://ocaml.org/releases
+
+isOpenSource true
+tryItOnline ocaml
+fileExtensions ml mli
+visualParadigm false
+clocExtensions eliom eliomi ml ml4 mli mll mly
+fileType text
+documentation https://ocaml.org/docs
+documentation https://devdocs.io/ocaml/
+faq https://opam.ocaml.org/doc/FAQ.html
+rosettaCode http://www.rosettacode.org/wiki/Category:OCaml
+quineRelay OCaml
+packageRepository https://opam.ocaml.org/
+ubuntuPackage ocaml
+country France
+originCommunity Institut national de recherche en sciences et technologies du numérique
+projectEuler OCaml
+ memberCount
+  2019 142
+  2022 219
+
+helloWorldCollection OCaml
+ (* Hello World in OCaml *)
+ print_string "Hello World!\n";;
+pygmentsHighlighter OCaml
+ filename ml.py
+ fileExtensions ml mli mll mly
+rijuRepl https://riju.codes/ocaml
+ example
+  ;;
+  print_string "Hello, world!\n"
+  
+twitter https://twitter.com/ocamllang
+leachim6 OCaml
+ filepath o/OCaml.ml
+ fileExtensions ml
+ example
+  print_string "Hello World\n"
+compilerExplorer OCaml
+ example
+  let square x = x * x
+  
+
+meetup https://www.meetup.com/topics/ocaml-programming
+ memberCount 23394
+ groupCount 87
+keywords as assert begin class constraint do done downto else end exception external false for fun function functor if in include inherit initializer lazy let match method module mutable new object of open private raise rec sig struct then to true try type value val virtual when while with
+
+multiLineCommentTokens (* *)
+printToken print_string
+booleanTokens true false
+
+hasLineComments false
+hasComments true
+ (* This is a single-line comment. *)
+ (* This is a
+  * multi-line
+  * comment.
+  *)
+hasMultipleInheritance true
+hasTypeInference true
+hasModules true
+ (* In OCaml, every piece of code is wrapped into a module. *)
+ (* amodule.ml *)
+ let hello () = print_endline "Hello"
+ (* bmodule.ml *)
+ Amodule.hello ()
+hasMultiLineComments true
+ (* A comment
+ *)
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasFunctions true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+
+jupyterKernel https://github.com/andrewray/iocaml
+jupyterKernel https://github.com/akabe/ocaml-jupyter
+wikipedia https://en.wikipedia.org/wiki/OCaml
+ example
+  fun x_1 -> (x_1 *
+       let y_3 =
+           let y_2 = (x_1 * 1)
+           in (y_2 * y_2)
+       in (y_3 * y_3))
+ related occam c ia-32 sparc arm unix f-sharp caml cool standard-ml ats elm fstar haxe opa rust scala ml python perl java csharp fortran javascript jvm pic-microcontroller emacs-editor vim-editor opengl hack php ios android coq wasm haskell
+ summary OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs. OCaml's toolset includes an interactive top-level interpreter, a bytecode compiler, a reversible debugger, a package manager (OPAM), and an optimizing native code compiler. It has a large standard library, making it useful for many of the same applications as Python or Perl, and has robust modular and object-oriented programming constructs that make it applicable for large-scale software engineering. OCaml is the successor to Caml Light. The acronym CAML originally stood for Categorical Abstract Machine Language, although OCaml omits this abstract machine. OCaml is a free and open-source software project managed and principally maintained by French Institute for Research in Computer Science and Automation (INRIA). In the early 2000s, many new languages adopted elements from OCaml, most notably F# and Scala.
+ pageId 39652
+ dailyPageViews 424
+ created 2002
+ backlinksCount 445
+ revisionCount 886
+ appeared 1996
+ fileExtensions ml mli
+
+hopl https://hopl.info/showlanguage.prx?exp=2294
+tiobe OCaml
+
+domainName ocaml.org
+ registered 2000
+ awisRank
+  2022 335321
+  2017 160837
+
+githubBigQuery OCaml
+ repos 5622
+ users 3634
+
+linguistGrammarRepo https://github.com/textmate/ocaml.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 11
+ commitCount 241
+ sampleCount 10
+ example
+  (*
+   * Copyright (c) 2013 Jeremy Yallop.
+   *
+   * This file is distributed under the terms of the MIT License.
+   * See the file LICENSE for details.
+   *)
+  let string_of format v =
+    let buf = Buffer.create 100 in
+    let fmt = Format.formatter_of_buffer buf in begin
+      format fmt v;
+      Format.pp_print_flush fmt ();
+      Buffer.contents buf
+    end
+
+isbndb 6
+ year|publisher|title|authors|isbn13
+ 2021|Wiley-ISTE|Concepts and Semantics of Programming Languages 1: A Semantical Approach with OCaml and Python|Hardin, The¿re¿se and Jaume, Mathieu and Pessaux, François and Viguie Donzeau-Gouge, Ve¿ronique|9781786305305
+ 2022|Springer|OCaml Scientific Computing: Functional Programming in Data Science and Artificial Intelligence (Undergraduate Topics in Computer Science)|Wang, Liang and Zhao, Jianxin and Mortier, Richard|9783030976446
+ 2006|Apress|Practical OCaml|Smith, Joshua B.|9781590596203
+ 20080103|Springer Nature|Practical OCaml|Joshua B. Smith|9781430202448
+ 20220526|Springer Nature|OCaml Scientific Computing|Liang Wang; Jianxin Zhao; Richard Mortier|9783030976453
+ 2010||Ocaml Programming Language Family: Ocaml Software, Objective Caml, Marionnet, Fftw, Mldonkey, Unison, Frama-c, Hol Light, Coq, Geneweb|Books Llc and Books and LLC|9781158073269
+
+githubLanguage OCaml
+ fileExtensions ml eliom eliomi ml4 mli mll mly
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  coq coq https://github.com/coq.png https://github.com/coq/coq OCaml #3be133 2275 366 118 "Coq is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs."
+  facebook pyre-check https://github.com/facebook.png https://github.com/facebook/pyre-check OCaml #3be133 2985 148 243 "Performant type-checking for python."
+  ocaml ocaml https://github.com/ocaml.png https://github.com/ocaml/ocaml OCaml #3be133 2473 590 53 "The core OCaml system: compilers, runtime system, base libraries"
+  facebook flow https://github.com/facebook.png https://github.com/facebook/flow OCaml #3be133 19958 1699 131 "Adds static typing to JavaScript to improve developer productivity and code quality."
+  facebook infer https://github.com/facebook.png https://github.com/facebook/infer OCaml #3be133 10169 1365 134 "A static analyzer for Java, C, C++, and Objective-C"
+ trendingProjectsCount 6
+ type programming
+ interpreters ocaml ocamlrun ocamlscript
+ aceMode ocaml
+ codemirrorMode mllike
+ codemirrorMimeType text/x-ocaml
+ tmScope source.ocaml
+ repos 27376
+
+semanticScholar 14
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2000|Using, Understanding, and Unraveling the OCaml Language. From Practice to Theory and Vice Versa|10.1007/3-540-45699-6_9|42|2|Didier Rémy|dbf92034106f3c26488946a043a48c9187bc0821
+ 2006|Type-safe distributed programming for OCaml|10.1145/1159876.1159881|25|2|John N. Billings and Peter Sewell and Mark R. Shinwell and Rok Strnisa|7a3fe7e9246140a6e07aeb07841a8b052d0784b5
+ 2018|Typed Embedding of a Relational Language in OCaml|10.4204/EPTCS.285.1|14|2|D. Kosarev and D. Boulytchev|f11043b0ebaa3923e39d3e1010fd8f87bda5552e
+ 2021|Retrofitting effect handlers onto OCaml|10.1145/3453483.3454039|13|2|K. Sivaramakrishnan and Stephen Dolan and Leo White and T. Kelly and S. Jaffer and A. Madhavapeddy|fbf84ef1173647b7bdf7f674c8acff9f61180728
+ 2018|Merlin: a language server for OCaml (experience report)|10.1145/3236798|12|0|Frédéric Bour and Thomas Refis and G. Scherer|83af07fe7334441c22973321127459731403cfa6
+ 2019|GOSPEL - Providing OCaml with a Formal Specification Language|10.1007/978-3-030-30942-8_29|8|0|A. Charguéraud and J. Filliâtre and C. Lourenço and Mário Pereira|96745e021ccaeb721d1854b7dea4eceb75d71357
+ 2014|GPGPU Composition with OCaml|10.1145/2627373.2627379|4|0|M. Bourgoin and E. Chailloux|3a54d960ab04fddb451800a65b55970a1c2e4382
+ 2015|Improving Type Error Messages in OCaml|10.4204/EPTCS.198.4|4|0|A. Charguéraud|8d994f1118904a90ede5abefec8c8b8c0ba5ab6e
+ 2008|Caml-Shcaml: an ocaml library for unix shell programming|10.1145/1411304.1411316|4|1|A. Heller and Jesse A. Tov|4ec33572f58d0f2a0411abdc88e483a7bdc9fde7
+ 2019|Chemoinformatics and structural bioinformatics in OCaml|10.1186/s13321-019-0332-0|4|0|F. Berenger and Kam Y. J. Zhang and Yoshihiro Yamanishi|b10743378eabcbc7d3415e4c43c6dcad192604f2
+ 2020|Retrofitting parallelism onto OCaml|10.1145/3408995|4|1|K. Sivaramakrishnan and Stephen Dolan and Leo White and S. Jaffer and T. Kelly and Anmol Sahoo and S. Parimala and Atul Dhiman and A. Madhavapeddy|0202d541aadfe56d9cce09c1c5c609098778b908
+ 2019|WCET of OCaml Bytecode on Microcontrollers: An Automated Method and Its Formalisation|10.4230/OASIcs.WCET.2019.5|2|0|S. Varoumas and T. Crolard|8b3c59637fb8f5c4d181125aa03b9fe48792a4c8
+ 2011|Using camlp4 for presenting dynamic mathematics on the web: DynaMoW, an OCaml language extension for the run-time generation of mathematical contents and their presentation on the web|10.1145/2034773.2034809|1|0|F. Chyzak and Alexis Darrasse|2fbcc662edca887550e0ce0463695b3ecfcf0381
+ 2021|Cameleer: a Deductive Verification Tool for OCaml|10.1007/978-3-030-81688-9_31|1|0|Mário Pereira and A. Ravara|00ba0130dc4666ce2b3aa584dbf32ec325cbd0ba
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Real World OCaml: Functional programming for the masses|2013|Yaron Minsky|21890163|4.28|88|7
+ Unix System Programming in OCaml|1994|Xavier Leroy|43400023|4.00|1|0
+ Apprendre à programmer avec OCaml|2014|Sylvain Conchon|43307400|4.00|1|0
+ Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa||Didier Rémy|23588230|5.00|1|0
+ Apprendre à programmer avec OCaml: Algorithmes et structures de données (Noire)||Jean-Christophe Filliatre|59798916|0.0|0|0

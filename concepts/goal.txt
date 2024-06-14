@@ -1,0 +1,50 @@
+Goal
+====
+
+Goal is a programming language created in 2022.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1955 on PLDB
+2 Years Old
+
+git clone https://codeberg.org/anaseto/goal
+
+- Goal first developed in https://bardinflor.perso.aquilenet.fr/index-en
+- Goal is written in Go, Markdown, CSV, HTML, CSS
+- Read more about Goal on the web: 1.
+ https://www.reddit.com/r/ProgrammingLanguages/comments/zycdaq/goal_an_array_programming_language_written_in_go/
+
+csvs:&quot;\n&quot;_`
+1,2,3
+4,5,6
+7,8,9
+`
+tsvs:&quot;\n&quot;_`
+1	2	3
+4	5	6
+7	8	9
+`
+(
+  (csvTEMPLATE#39;&#39;-1+&quot;n&quot;$csv csvs) ~ &quot;\n&quot;_`
+0,1,2
+3,4,5
+6,7,8
+`
+  (&quot;\t&quot;csvTEMPLATE#39;&#39;-1+&quot;n&quot;TEMPLATEquot;\t&quot;csv tsvs) ~ &quot;\n&quot;_`
+0	1	2
+3	4	5
+6	7	8
+`
+  (csv &quot;1,2,3&quot;) ~ (,&quot;1&quot; &quot;2&quot; &quot;3&quot;)
+)
+/RESULT:
+
+Language features
+======================================================
+
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported ✓
+ Token 
+ Example

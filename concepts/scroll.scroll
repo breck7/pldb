@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id scroll
+name Scroll
+appeared 2019
+creators Breck Yunits
+tags staticSiteGenerator textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup
+website https://scroll.pub/
+blog https://scroll.pub/blog/
+releaseNotes https://scroll.pub/releaseNotes.html
+latestVersion 93.2.0
+webRepl https://try.scroll.pub/
+conceptDescription Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
+
+isPublicDomain true
+isOpenSource true
+writtenIn javascript yaml css json
+influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordpress tex mathematica dplyr antlr reactjs
+subsetOf scrollnotation
+relatedConcepts markdown scrollnotation grammar
+fileExtensions scroll
+faq https://scroll.pub/faq.html
+repoStats
+ firstCommit 2019
+ commits 1230
+ committers 6
+ files 141
+ newestCommit 2024
+country United States
+originCommunity https://github.com/breck7/scroll/issues
+
+example
+ title This is Scroll. The keyword for title is title.
+ 
+ paragraph
+  Scroll is an extensible alternative to Markdown.
+
+githubRepo https://github.com/breck7/scroll
+ firstCommit 2019
+ stars 357
+ forks 5
+ subscribers 7
+ created 2019
+ updated 2024
+ description The extensible alternative to Markdown.
+ issues 6
+
+hasImports true
+ import settings.scroll
+hasTernaryOperators false
+hasSemanticIndentation true
+ * A link to PLDB
+  https://pldb.io
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ // A
+  multiline comment
+hasMultilineStrings true
+ plainText
+  This is a
+  multiline string
+
+domainName scroll.pub
+ registered 2021

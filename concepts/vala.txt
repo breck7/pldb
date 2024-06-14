@@ -1,0 +1,102 @@
+Vala
+====
+
+Vala is an open source programming language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#196 on PLDB
+18 Years Old
+3k Repos
+
+Try now: Riju · TIO
+
+Vala is an object-oriented programming language with a self-hosting compiler that generates C code and uses the GObject system. Vala is syntactically similar to C# and includes several features such as: anonymous functions, signals, properties, generics, assisted memory management, exception handling, type inference, and foreach statements. Its developers Jürg Billeter and Raffaele Sandrini aim to bring these features to the plain C runtime with little overhead and no special runtime support by targeting the GObject object system. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Vala_(programming_language)
+
+- Vala website
+ https://wiki.gnome.org/Projects/Vala
+- Vala Wikipedia page
+ https://en.wikipedia.org/wiki/Vala_(programming_language)
+- Vala docs
+ https://wiki.gnome.org/Projects/Vala/Documentation
+- There are at least 3,465 Vala repos on GitHub
+- Vala compiles to C
+- Vala on Twitter
+ https://twitter.com/vala_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Vala in 2k repos on GitHub
+- Explore Vala snippets on Rosetta Code
+- Pygments supports syntax highlighting for Vala
+- GitHub supports syntax highlighting for Vala
+- See also: (13 related languages)C, C#, D, Java, Boo, Emacs, Sublime Text, TextMate, Eclipse, Vim, Visual Studio Code, Genie, Python
+- Read more about Vala on the web: 1. 2.
+ https://vala.dev/
+ https://news.ycombinator.com/item?id=32113825
+- 3 languages in PLDB linking to Vala: Ace Editor, cloc, mal
+
+int main (string[] args) {
+   var app = new Gtk.Application(
+     &quot;com.example.App&quot;,
+     ApplicationFlags.FLAGS_NONE
+   );
+   
+   app.activate.connect(() =&gt; {
+     var win = new Gtk.ApplicationWindow(app);
+ 
+     var btn = new Gtk.Button.with_label(&quot;Hello World&quot;);
+     btn.click.connect(win.close);
+ 
+     win.child = btn;
+     win.present();
+   })
+   return app.run(args);
+ }
+
+void main () {
+    print(&quot;Hello, world!\n&quot;);
+}
+
+static void main (string[] args)
+{
+	stdout.printf (&quot;Hello World\n&quot;);
+}
+
+void main () {
+  print(&quot;Hello, world!\n&quot;);
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token stdout.printf
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,179 @@
+Apex
+====
+
+Apex is a programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#655 on PLDB
+17 Years Old
+23k Repos
+
+- Apex website
+ https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
+- There are at least 22,719 Apex repos on GitHub
+- Apex first developed in Salesforce
+- The  Google BigQuery Public Dataset GitHub snapshot shows 537 users using Apex in 778 repos on GitHub
+- First announcement of Apex via interview
+- Explore Apex snippets on Rosetta Code
+- Apex ranks #43 in the TIOBE Index
+- ANTLR grammar for Apex
+- Apex LSP implementation
+- Monaco package for syntax highlighting Apex
+- GitHub supports syntax highlighting for Apex
+- Read more about Apex on the web: 1.
+ https://en.wikipedia.org/wiki/Salesforce.com#Apex
+
+global with sharing class HelloWorld {
+  global static void main() {
+    System.debug(&#39;Hello World&#39;);
+  }
+}
+
+public class GeoUtils {
+	// generate a KML string given a page reference, call getContent()
+	// then cleanup the output.
+	public static string generateFromContent(PageReference pr) {
+		string ret = &#39;&#39;;
+		try {
+	        ret = (string) pr.getContent().toString();
+			
+			ret = ret.replaceAll(&#39;&quot;&#39;,&#39;\&#39;&#39; ); // get content produces quote chars \&quot;
+	        ret = ret.replaceAll( &#39;&amp;&#39;,&#39;&amp;amp;&#39;);// we need to escape these in the node value
+        } catch (exception e ) {
+        	system.debug( &#39;ERROR &#39;+e);
+        }
+   		
+   		ret = ret.replaceAll(&#39;\n&#39;,&#39; &#39;);	// must use ALL since many new line may get
+        ret = ret.replaceAll(&#39;\r&#39;,&#39; &#39;);	// get these also!
+      //  system.debug( ret); // dump the KML
+        return ret ;
+	}
+	
+	public static Map&lt;String, String&gt; geo_response = new Map&lt;String, String&gt;{&#39;200&#39;=&gt;&#39;G_GEO_SUCCESS&#39;,
+    &#39;400&#39;=&gt;&#39;G_GEO_BAD_REQUEST&#39;,
+    &#39;500&#39;=&gt;&#39;G_GEO_SERVER_ERROR&#39;,
+    &#39;601&#39;=&gt;&#39;G_GEO_MISSING_ADDRESS&#39;,
+    &#39;602&#39;=&gt;&#39;G_GEO_UNKNOWN_ADDRESS&#39;,
+    &#39;603&#39;=&gt;&#39;G_GEO_UNAVAILABLE_ADDRESS&#39;,
+    &#39;604&#39;=&gt;&#39;G_GEO_UNKNOWN_DIRECTIONS&#39;,
+    &#39;610&#39;=&gt;&#39;G_GEO_BAD_KEY&#39;,
+    &#39;620&#39;=&gt;&#39;G_GEO_TOO_MANY_QUERIES&#39;
+    };
+        
+	public static string accountAddressString ( account acct ) {
+    	// form an address string given an account object
+    	string adr = acct.billingstreet + &#39;,&#39; + acct.billingcity + &#39;,&#39; + acct.billingstate;
+        if ( acct.billingpostalcode != null ) adr += &#39;,&#39; + acct.billingpostalcode;
+        if ( acct.billingcountry != null ) adr += &#39;,&#39; + acct.billingcountry;
+        adr = adr.replaceAll(&#39;\&quot;&#39;, &#39;&#39; );
+        adr = adr.replaceAll(&#39;\&#39;&#39;, &#39;&#39; );
+        adr = adr.replaceAll( &#39;\n&#39;, &#39; &#39; );
+        adr = adr.replaceAll( &#39;\r&#39;, &#39; &#39; );
+        system.debug( adr );
+        return adr;
+    }
+    
+	public static testmethod void t1() {
+		PageReference pageRef =  Page.kmlPreviewTemplate;
+        Test.setCurrentPage(pageRef);
+        system.assert ( GeoUtils.generateFromContent( pageRef ) != null );
+        Account a =  new Account( name=&#39;foo&#39;, billingstreet=&#39;main&#39;, billingcity=&#39;springfield&#39;,billingstate=&#39;il&#39;,
+         billingpostalcode=&#39;9&#39;,billingcountry=&#39;us&#39;);
+        insert a;
+        system.assertEquals( &#39;main,springfield,il,9,us&#39;,accountAddressString( a) );
+       
+	}
+}
+
+abstract ABSTRACT Abstract activate ACTIVATE Activate and AND And any ANY Any array ARRAY Array as AS As asc ASC Asc assert ASSERT Assert autonomous AUTONOMOUS Autonomous begin BEGIN Begin bigdecimal BIGDECIMAL Bigdecimal blob BLOB Blob boolean BOOLEAN Boolean break BREAK Break bulk BULK Bulk by BY By case CASE Case cast CAST Cast catch CATCH Catch char CHAR Char class CLASS Class collect COLLECT Collect commit COMMIT Commit const CONST Const continue CONTINUE Continue convertcurrency CONVERTCURRENCY Convertcurrency decimal DECIMAL Decimal default DEFAULT Default delete DELETE Delete desc DESC Desc do DO Do double DOUBLE Double else ELSE Else end END End enum ENUM Enum exception EXCEPTION Exception exit EXIT Exit export EXPORT Export extends EXTENDS Extends false FALSE False final FINAL Final finally FINALLY Finally float FLOAT Float for FOR For from FROM From future FUTURE Future get GET Get global GLOBAL Global goto GOTO Goto group GROUP Group having HAVING Having hint HINT Hint if IF If implements IMPLEMENTS Implements import IMPORT Import in IN In inner INNER Inner insert INSERT Insert instanceof INSTANCEOF Instanceof int INT Int interface INTERFACE Interface into INTO Into join JOIN Join last_90_days LAST_90_DAYS Last_90_days last_month LAST_MONTH Last_month last_n_days LAST_N_DAYS Last_n_days last_week LAST_WEEK Last_week like LIKE Like limit LIMIT Limit list LIST List long LONG Long loop LOOP Loop map MAP Map merge MERGE Merge native NATIVE Native new NEW New next_90_days NEXT_90_DAYS Next_90_days next_month NEXT_MONTH Next_month next_n_days NEXT_N_DAYS Next_n_days next_week NEXT_WEEK Next_week not NOT Not null NULL Null nulls NULLS Nulls number NUMBER Number object OBJECT Object of OF Of on ON On or OR Or outer OUTER Outer override OVERRIDE Override package PACKAGE Package parallel PARALLEL Parallel pragma PRAGMA Pragma private PRIVATE Private protected PROTECTED Protected public PUBLIC Public retrieve RETRIEVE Retrieve return RETURN Return returning RETURNING Returning rollback ROLLBACK Rollback savepoint SAVEPOINT Savepoint search SEARCH Search select SELECT Select set SET Set short SHORT Short sort SORT Sort stat STAT Stat static STATIC Static strictfp STRICTFP Strictfp super SUPER Super switch SWITCH Switch synchronized SYNCHRONIZED Synchronized system SYSTEM System testmethod TESTMETHOD Testmethod then THEN Then this THIS This this_month THIS_MONTH This_month this_week THIS_WEEK This_week throw THROW Throw throws THROWS Throws today TODAY Today tolabel TOLABEL Tolabel tomorrow TOMORROW Tomorrow transaction TRANSACTION Transaction transient TRANSIENT Transient trigger TRIGGER Trigger true TRUE True try TRY Try type TYPE Type undelete UNDELETE Undelete update UPDATE Update upsert UPSERT Upsert using USING Using virtual VIRTUAL Virtual void VOID Void volatile VOLATILE Volatile webservice WEBSERVICE Webservice when WHEN When where WHERE Where while WHILE While yesterday YESTERDAY Yesterday
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

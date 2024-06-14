@@ -1,0 +1,78 @@
+Xbasic
+======
+
+Xbasic is an open source programming language created in 1988 by Max Reason.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Max%20Reason
+
+#1467 on PLDB
+36 Years Old
+
+XBasic is a variant of the BASIC programming language that was developed in the late 1980s for the Motorola 88000 CPU and Unix by Max Reason. In the early 1990s it was ported to Windows and Linux, and since 1999 it has been available as open source software with its runtime library under the LGPL license. It should not be confused with TI Extended BASIC, which is sometimes called XBasic or X Basic. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Xbasic
+
+- Xbasic Wikipedia page
+ https://en.wikipedia.org/wiki/Xbasic
+- Explore Xbasic snippets on Rosetta Code
+- See also: (6 related languages)BASIC, C, Unix, Linux, Assembly language, XBLite
+
+IMPORT &quot;xst&quot;
+DECLARE FUNCTION  Hello ()
+
+FUNCTION  Hello ()
+ XstDisplayConsole ()
+ PRINT &quot;Hello World&quot;
+END FUNCTION
+END PROGRAM
+
+&#39; Programs contain:
+ &#39; 1. A PROLOG with type/function/constant declarations.
+ &#39; 2. This Entry() function where execution begins.
+ &#39; 3. Zero or more additional functions.
+ &#39;
+ FUNCTION Entry()
+
+ PRINT &quot;Hello World&quot;
+
+ PRINT 2+2
+ PRINT 44/12
+ PRINT 33*3
+
+ END FUNCTION
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINT
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

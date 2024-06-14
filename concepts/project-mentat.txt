@@ -1,0 +1,54 @@
+Project Mentat
+==============
+
+Project Mentat is a query language created in 2016 by Richard Newman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20Newman
+
+#1207 on PLDB
+8 Years Old
+
+git clone https://github.com/qpdb/mentat
+
+A persistent, relational store inspired by Datomic and DataScript.
+
+- Project Mentat website
+ https://mentat.rs/
+- Project Mentat is developed on GitHub and has 28 stars
+- Project Mentat first developed in Mozilla Foundation
+- Project Mentat is written in HTML, Rust, JavaScript, Java, TOML, XML, Swift, Markdown, YAML, CSS, JSON, Gradle, Bourne shell, Python, Dockerfile, SVG, Kotlin, Make
+- Read more about Project Mentat on the web: 1.
+ https://mozilla.github.io/mentat
+
+{:db/id          :person/email
+ :db/valueType   :db.type/string
+ :db/cardinality :db.cardinality/many     ; People can have multiple email addresses.
+ :db/unique      :db.unique/identity      ; For our purposes, each email identifies one person.
+ :db/index       true}                    ; We want fast lookups by email.
+{:db/id          :person/friend
+ :db/valueType   :db.type/ref
+ :db/cardinality :db.cardinality/many}    ; People can have many friends.
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,63 @@
+QB64
+====
+
+QB64 is an open source programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1062 on PLDB
+17 Years Old
+
+QB64 (originally QB32) is a self-hosting BASIC compiler for Microsoft Windows, Linux and Mac OS X, designed to be compatible with Microsoft QBasic and QuickBASIC. QB64 is a C++ emitter, which is integrated with a C++ compiler to provide compilation via C++ code and GCC optimization.QB64 implements most QBasic statements, and can run many QBasic programs, including Microsoft's QBasic Gorillas and Nibbles games. Furthermore, QB64 has been designed to contain an IDE resembling the QBASIC IDE. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/QB64
+
+- QB64 Wikipedia page
+ https://en.wikipedia.org/wiki/QB64
+- QB64 first developed in https://qb64.boards.net
+- See also: (4 related languages)Linux, QuickBASIC, BASIC, QBasic
+
+t1 = _FREETIMER
+t2 = _FREETIMER
+ON TIMER(t1, 1) GOSUB Timer.Trap &#39;the code following the Timer.Trap label will be run every 1 second
+
+ON TIMER(t2, .5) mySub &#39;QB64 can also trigger a SUB procedure with TIMER;
+&#39;                       in this case mySUB will be triggered every 500 milliseconds
+
+&#39;activate timers:
+TIMER(t1) ON
+TIMER(t2) ON
+
+DO &#39;go into an infinite loop until the window is closed
+    _LIMIT 1 &#39;run the main loop at 1 cycle per second, to show how timers are independent from main program flow
+LOOP
+
+Timer.Trap:
+PRINT &quot;1s; &quot;;
+RETURN
+
+SUB mySub
+    PRINT &quot;500ms; &quot;;
+END SUB
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

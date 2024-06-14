@@ -1,0 +1,94 @@
+NCAR Command Language
+=====================
+
+NCAR Command Language, aka NCAR Command Language, is an open source programming language created in 1994.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#477 on PLDB
+30 Years Old
+654 Repos
+
+git clone https://github.com/NCAR/ncl
+
+The NCAR Command Language (NCL) is a scripting language for the analysis and visualization of climate and weather data.
+
+- NCAR Command Language website
+ https://www.ncl.ucar.edu/index.shtml
+- NCAR Command Language is developed on GitHub and has 208 stars
+- There are at least 654 NCAR Command Language repos on GitHub
+- NCAR Command Language first developed in University Corporation for Atmospheric Research
+- NCAR Command Language is written in FORTRAN 77, C, Objective-C, MATLAB, MUMPS, C shell, Rescript, sed, Mathematica, Bourne shell, Fortran 90, Python, XML, Perl, Make, Markdown, Lex, Java, YAML, Korn shell, Yacc, CSV, XSLT, Ini, Diff, Visual Basic
+- The  Google BigQuery Public Dataset GitHub snapshot shows 61 users using NCAR Command Language in 64 repos on GitHub
+- Pygments supports syntax highlighting for NCAR Command Language
+- GitHub supports syntax highlighting for NCAR Command Language
+
+;-----------------------------------------------------------------
+;  NCL User Guide Example:   NUG_bar_chart.ncl
+;
+;  KMF 30.10.14
+;-----------------------------------------------------------------
+; These load commands are not required in NCL versions 6.2.0 and later.
+load &quot;$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_code.ncl&quot;
+load &quot;$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_csm.ncl&quot;
+
+begin
+
+   low  =  0.0
+   high =  1.0
+
+   n = 12
+
+   x = fspan(1.0, 12.0, n)
+   y = random_uniform(low, high, n)
+
+   wks = gsn_open_wks(&quot;png&quot;,&quot;NUG_bar_chart&quot;)
+
+   res                       =  True
+   res@gsnXYBarChart         =  True
+   res@gsnXYBarChartBarWidth =  0.3
+   res@gsnXYBarChartColors   = &quot;blue&quot;
+
+   res@trXMinF               =  0.0              ;-- x-axis min value
+   res@trXMaxF               = 13.0              ;-- x-axis max value
+   res@trYMinF               =  0.0              ;-- y-axis min value
+   res@trYMaxF               =  1.0              ;-- y-axis max value
+
+   res@tmXBMode              = &quot;Explicit&quot;        ;-- explicit labels
+   res@tmXBValues            =  ispan(1,12,1)
+   res@tmXBLabels            = (/&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;, \
+                                 &quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;/)
+   res@tmXBLabelFontHeightF  =  0.015
+
+   res@tiMainString          = &quot;NCL Doc Example: bar chart&quot;
+
+   plot = gsn_csm_xy(wks, x, y, res)
+
+end
+
+val=102
+a=val/4.
+print(a)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

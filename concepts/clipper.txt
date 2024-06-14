@@ -1,0 +1,68 @@
+Clipper
+=======
+
+Clipper is a programming language created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#553 on PLDB
+39 Years Old
+
+Clipper is an xBase compiler, which is a computer programming language, that is used to create software programs that originally operated primarily under MS-DOS. Although it is a powerful general-purpose programming language, it was primarily used to create database/business programs.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Clipper_(programming_language)
+
+- Clipper website
+ http://www.grafxsoft.com/clipper.htm
+- Clipper Wikipedia page
+ https://en.wikipedia.org/wiki/Clipper_(programming_language)
+- Video demo of Clipper
+ https://www.youtube.com/watch?v=Opv647iFbAk
+- Clipper first developed in Nantucket Corporation
+- Explore Clipper snippets on Rosetta Code
+- Clipper on HOPL
+ https://hopl.info/showlanguage.prx?exp=1909
+- Clipper appears in the TIOBE Index
+- See also: (11 related languages)xBase, C, Visual Objects, Visual Basic, Delphi, XBase++, Linux, Unix, Visual FoxPro, SQL, DBase
+
+? &quot;Hello World&quot;
+
+// Hello World in Clipper
+
+? &quot;Hello World&quot;
+
+USE Customer SHARED NEW
+clear
+@  1, 0 SAY &quot;CustNum&quot; GET Customer-&gt;CustNum PICT &quot;999999&quot; VALID Customer-&gt;CustNum &gt; 0
+@  3, 0 SAY &quot;Contact&quot; GET Customer-&gt;Contact VALID !empty(Customer-&gt;Contact)
+@  4, 0 SAY &quot;Address&quot; GET Customer-&gt;Address
+READ
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

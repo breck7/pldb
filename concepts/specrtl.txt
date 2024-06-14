@@ -1,0 +1,27 @@
+specrtl
+=======
+
+specrtl is a programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3358 on PLDB
+13 Years Old
+
+- specrtl first developed in Indian Institute of Technology, Bombay
+- Read more about specrtl on the web: 1.
+ https://www.cse.iitb.ac.in/grc/software/specRTL/specRTL.pdf
+
+concrete *cmp_ccno_1.insn instantiates set_compare
+{
+  root(reg(NULL:FLAGS_REG),0=nonimmediate_operand:SWI:&quot;,?m&quot;,
+1=const0_operand:SWI:&quot;&quot;);
+}
+{:
+  &quot;ix86_match_ccmode (insn, CCNOmode)&quot;
+  &quot;@
+  test{}\t%0, %0
+  cmp{}\t{%1, %0|%0,%1}&quot;
+  [(set_attr &quot;type&quot; &quot;test,icmp&quot;)
+  (set_attr &quot;length_immediate&quot; &quot;0,1&quot;)
+  (set_attr &quot;mode&quot; &quot;&quot;)]
+:}

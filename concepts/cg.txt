@@ -1,0 +1,66 @@
+Cg
+==
+
+Cg, aka C for Graphics, is a programming language created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#543 on PLDB
+21 Years Old
+
+Cg (short for C for Graphics) is a high-level shading language developed by Nvidia in close collaboration with Microsoft for programming vertex and pixel shaders. Cg is based on the C programming language and although they share the same syntax, some features of C were modified and new data types were added to make Cg more suitable for programming graphics processing units. This language is only suitable for GPU programming and is not a general programming language. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cg_(programming_language)
+
+- Cg Wikipedia page
+ https://en.wikipedia.org/wiki/Cg_(programming_language)
+- Cg first developed in Nvidia
+- Cg on HOPL
+ https://hopl.info/showlanguage.prx?exp=6204
+- Cg appears in the TIOBE Index
+- See also: (3 related languages)C, OpenGL, Unity
+- Read more about Cg on the web: 1.
+ https://arxiv.org/pdf/cs/0302013.pdf
+
+// input vertex
+ struct VertIn {
+     float4 pos   : POSITION;
+     float4 color : COLOR0;
+ };
+ 
+ // output vertex
+ struct VertOut {
+     float4 pos   : POSITION;
+     float4 color : COLOR0;
+ };
+ 
+ // vertex shader main entry
+ VertOut main(VertIn IN, uniform float4x4 modelViewProj) {
+     VertOut OUT;
+     OUT.pos     = mul(modelViewProj, IN.pos); // calculate output coords
+     OUT.color   = IN.color; // copy input color to output
+     OUT.color.z = 1.0f; // blue component of color = 1.0f
+     return OUT;
+ }
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

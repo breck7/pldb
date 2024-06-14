@@ -1,0 +1,76 @@
+import ../code/conceptPage.scroll
+
+id gradle
+name Gradle
+appeared 2008
+creators Hans Dockter
+tags application
+website https://gradle.org
+latestVersion v8.8.0-RC1
+
+isOpenSource true
+writtenIn java groovy gradle kotlin xml asciidoc toml markdown scala cpp javascript yaml css c html plantuml svg json swift bourne-shell java-server-pages xslt xsd csv objective-cpp assembly-language dtd idl objective-c gherkin ruby
+clocExtensions gradle gradle.kts
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ newestCommit 2024
+ commits 120154
+ committers 1010
+ files 24233
+country Various
+originCommunity https://github.com/gradle
+
+twitter https://twitter.com/gradle
+
+githubRepo https://github.com/gradle/gradle
+ firstCommit 2008
+ stars 13551
+ forks 3913
+ subscribers 506
+ created 2009
+ updated 2022
+ description Adaptable, fast automation for all
+ issues 1950
+
+domainName gradle.org
+ registered 2007
+ awisRank
+  2022 15168
+
+linguistGrammarRepo https://github.com/alkemist/gradle.tmbundle
+ firstCommit 2011
+ lastCommit 2014
+ committerCount 1
+ commitCount 29
+ sampleCount 2
+ example
+  apply plugin: GreetingPlugin
+  
+  greeting {
+      message = 'Hi'
+      greeter = 'Gradle'
+  }
+  
+  class GreetingPlugin implements Plugin<Project> {
+      void apply(Project project) {
+          project.extensions.create("greeting", GreetingPluginExtension)
+          project.task('hello') << {
+              println "${project.greeting.message} from ${project.greeting.greeter}"
+          }
+      }
+  }
+  
+  class GreetingPluginExtension {
+      String message
+      String greeter
+  }
+
+githubLanguage Gradle
+ fileExtensions gradle
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.groovy.gradle
+ repos 4

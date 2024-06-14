@@ -1,0 +1,46 @@
+import ../code/conceptPage.scroll
+
+id taf
+name taf
+appeared 2012
+creators Manuel Simoni
+tags pl
+conceptDescription A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
+
+writtenIn html javascript css
+repoStats
+ firstCommit 2012
+ commits 13
+ committers 1
+ files 12
+ newestCommit 2013
+reference http://www.manuelsimoni.net/taf/doc/plan.html
+
+example
+ (define (make-person name email)
+   #(person :name name :email email)) ; creates a person record with name and email fields
+ 
+ (define-generic (to-string obj))
+ (define-method (to-string (obj #(person :name :email))) ; matches persons and binds name and email field to local variables
+   (concat (list name " <" email ">")))
+ 
+ (to-string (make-person "Manuel" "msimoni@gmail.com"))
+ ; ==> "Manuel <msimoni@gmail.com>"
+
+githubRepo https://github.com/manuel/taf
+ firstCommit 2012
+ stars 56
+ forks 2
+ subscribers 9
+ created 2012
+ updated 2022
+ description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
+ issues 0
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

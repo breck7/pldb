@@ -1,0 +1,210 @@
+OCaml
+=====
+
+OCaml is an open source programming language created in 1996 by Xavier Leroy.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Xavier%20Leroy
+
+#65 on PLDB
+28 Years Old
+27k Repos
+
+Try now: Riju · TIO
+
+OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs. OCaml's toolset includes an interactive top-level interpreter, a bytecode compiler, a reversible debugger, a package manager (OPAM), and an optimizing native code compiler. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/OCaml
+
+- OCaml website
+ http://ocaml.org
+- OCaml Wikipedia page
+ https://en.wikipedia.org/wiki/OCaml
+- PLDB has 2 documentation sites for OCaml: ocaml.org, devdocs.io
+- There are at least 27,376 OCaml repos on GitHub
+- OCaml first developed in Institut national de recherche en sciences et technologies du numérique
+- OCaml on Twitter
+ https://twitter.com/ocamllang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using OCaml in 6k repos on GitHub
+- Check out the 87 OCaml meetup groups on Meetup.com.
+- There are 219 Project Euler users using OCaml
+- Explore OCaml snippets on Rosetta Code
+- OCaml on HOPL
+ https://hopl.info/showlanguage.prx?exp=2294
+- OCaml appears in the TIOBE Index
+- OCaml Ubuntu package
+ https://packages.ubuntu.com/jammy/ocaml
+- Pygments supports syntax highlighting for OCaml
+- GitHub supports syntax highlighting for OCaml
+- OCaml appears in the Quine Relay project
+- PLDB has 2 Jupyter Kernels for OCaml: github.com, github.com
+- There is a central package repository for OCaml
+- Release Notes for OCaml
+ https://ocaml.org/releases
+- Official Blog page for OCaml
+ https://ocaml.org/blog
+- Frequently Asked Questions for OCaml
+ https://opam.ocaml.org/doc/FAQ.html
+- ocaml.org was registered in 2000
+- See also: (36 related languages)Occam, C, IA-32, SPARC, ARM, Unix, F#, Caml, Classroom Object Oriented Language, Standard ML, ATS, Elm, F*, Haxe, Opa, Rust, Scala, ML, Python, Perl, Java, C#, Fortran, JavaScript, JVM, PIC microcontroller, Emacs, Vim, OpenGL, Hack, PHP, iOS, Android, Coq, WebAssembly, Haskell
+- 49 languages in PLDB linking to OCaml: Ace Editor, atomspace, Austral, bamboo, Bucklescript, Caml, Caramel, Catala, Chapel, cloc, comby, Coq, datafun, dedukti, eff, Elpi, FaCT, Felix, Flow, Flow9, F*, gintonic, Haxe, hazel, HHVM, IPL, juvix, Koka, Ligo, LinearML, Links, mal, Neko, Not Quite C, Opa, opam-pm, psyche, Pygments, Ragel, ramen, Reason, SATySFi, silk, sill, skip, Slick, Semantic Patch Language, Umka, Vale
+
+let square x = x * x
+
+;;
+print_string &quot;Hello, world!\n&quot;
+
+print_string &quot;Hello World\n&quot;
+
+(* Hello World in OCaml *)
+print_string &quot;Hello World!\n&quot;;;
+
+(*
+ * Copyright (c) 2013 Jeremy Yallop.
+ *
+ * This file is distributed under the terms of the MIT License.
+ * See the file LICENSE for details.
+ *)
+let string_of format v =
+  let buf = Buffer.create 100 in
+  let fmt = Format.formatter_of_buffer buf in begin
+    format fmt v;
+    Format.pp_print_flush fmt ();
+    Buffer.contents buf
+  end
+
+fun x_1 -&gt; (x_1 *
+     let y_3 =
+         let y_2 = (x_1 * 1)
+         in (y_2 * y_2)
+     in (y_3 * y_3))
+
+as assert begin class constraint do done downto else end exception external false for fun function functor if in include inherit initializer lazy let match method module mutable new object of open private raise rec sig struct then to true try type value val virtual when while with
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print_string
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+  (* In OCaml, every piece of code is wrapped into a module. *)
+  (* amodule.ml *)
+  let hello () = print_endline "Hello"
+  (* bmodule.ml *)
+  Amodule.hello ()
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* This is a single-line comment. *)
+  (* This is a
+   * multi-line
+   * comment.
+   *)
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,26 @@
+import ../code/conceptPage.scroll
+
+id avro
+name avro
+appeared 2012
+tags idl
+website https://avro.apache.org/
+
+relatedConcepts protobuf thrift
+fileType binary
+centralPackageRepositoryCount 0
+country Various
+originCommunity The Apache Software Foundation
+
+example
+ {"namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "fields": [
+      {"name": "name", "type": "string"},
+      {"name": "favorite_number",  "type": ["int", "null"]},
+      {"name": "favorite_color", "type": ["string", "null"]}
+  ]
+ }
+
+domainName avro.apache.org

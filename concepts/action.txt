@@ -1,0 +1,96 @@
+Action!
+=======
+
+Action! is a programming language created in 1983.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1099 on PLDB
+41 Years Old
+
+Action! is a procedural programming language similar to ALGOL 68 that is intended to produce high-performance programs for the Atari 8-bit family. The language was written by Clinton Parker and distributed on ROM cartridge by Optimized Systems Software starting in 1983. Action! was used to develop at least two commercial products—the Homepak productivity suite and Games Computers Play client program—and numerous programs in ANALOG Computing and Antic magazines. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Action!_(programming_language)
+
+- Action! Wikipedia page
+ https://en.wikipedia.org/wiki/Action!_(programming_language)
+- Action! first developed in Optimized Systems Software
+- See also: (3 related languages)Optimized Systems Software, ALGOL 68, Atari BASIC
+
+BYTE RTCLOK=20, ; addr of sys timer
+     SDMCTL=559 ; DMA control
+
+BYTE ARRAY FLAGS(8190)
+
+CARD COUNT,I,K,PRIME,TIME
+
+PROC SIEVE()
+
+  SDMCTL=0 ; shut off Antic
+  RTCLOK=0 ; only one timer needed
+
+  COUNT=0         ; init count
+  FOR I=0 TO 8190 ; and flags
+    DO
+    FLAGS(I)=&#39;T ; &quot;&#39;T&quot; is a compiler-provided constant for True
+    OD
+
+  FOR I=0 TO 8190 ; and flags
+    DO
+    IF FLAGS(I)=&#39;T THEN
+      PRIME=I+I+3
+      K=I+PRIME
+      WHILE K&lt;=8190
+        DO
+        FLAGS(K)=&#39;F ; &quot;&#39;F&quot; is a compiler-provided constant for False
+        K==+PRIME
+        OD
+      COUNT==+1
+    FI
+    OD
+  TIME=RTCLOK ; get timer reading
+  SDMCTL=34   ; restore screen
+
+  PRINTF(&quot;%E %U PRIMES IN&quot;,COUNT)
+  PRINTF(&quot;%E %U JIFFIES&quot;,TIME)
+RETURN
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINTF
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,114 @@
+BCPL
+====
+
+BCPL, aka Basic Combined Programming Language, is a programming language created in 1966 by Martin Richards.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Martin%20Richards
+
+#354 on PLDB
+58 Years Old
+
+BCPL ("Basic Combined Programming Language"; or 'Before C Programming Language' (a common humorous backronym) ) is a procedural, imperative, and structured computer programming language. Originally intended for writing compilers for other languages, BCPL is no longer in common use. However, its influence is still felt because a stripped down and syntactically changed version of BCPL, called B, was the language on which the C programming language was based. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/BCPL
+
+- BCPL Wikipedia page
+ https://en.wikipedia.org/wiki/BCPL
+- BCPL docs
+ http://www.math.bas.bg/bantchev/place/bcpl.html
+- BCPL first developed in University of Cambridge
+- Explore BCPL snippets on Rosetta Code
+- BCPL on HOPL
+ https://hopl.info/showlanguage.prx?exp=374
+- BCPL appears in the TIOBE Index
+- See also: (8 related languages)CPL, B, C, Go, Pascal, Java, Fortran, CPL
+
+GET &quot;LIBHDR&quot;
+
+LET START() = VALOF $(
+        FOR I = 1 TO 5 DO
+                WRITEF(&quot;%N! = %I4*N&quot;, I, FACT(I))
+        RESULTIS 0
+$)
+
+AND FACT(N) = N = 0 -&gt; 1, N * FACT(N - 1)
+
+GET &quot;LIBHDR&quot;
+
+LET START() BE
+$(
+  WRITES(&quot;Hello World*N&quot;)
+$)
+
+// Hello world in BCLP
+GET &quot;libhdr&quot;
+
+LET start() = VALOF
+$( writes(&quot;Hello world*N&quot;)
+   RESULTIS 0
+$)
+
+GET &quot;LIBHDR&quot;
+
+GLOBAL $(
+	COUNT: 200
+	ALL: 201
+$)
+
+LET TRY(LD, ROW, RD) BE
+	TEST ROW = ALL THEN
+		COUNT := COUNT + 1
+	ELSE $(
+		LET POSS = ALL &amp; ~(LD | ROW | RD)
+		UNTIL POSS = 0 DO $(
+			LET P = POSS &amp; -POSS
+			POSS := POSS - P
+			TRY(LD + P &lt;&lt; 1, ROW + P, RD + P &gt;&gt; 1)
+		$)
+	$)
+
+LET START() = VALOF $(
+	ALL := 1
+	FOR I = 1 TO 12 DO $(
+		COUNT := 0
+		TRY(0, 0, 0)
+		WRITEF(&quot;%I2-QUEENS PROBLEM HAS %I5 SOLUTIONS*N&quot;, I, COUNT)
+		ALL := 2 * ALL + 1
+	$)
+	RESULTIS 0
+$)
+
+Language features
+======================================================
+
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token :=
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token WRITES
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

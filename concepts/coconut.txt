@@ -1,0 +1,97 @@
+Coconut
+=======
+
+Coconut is an open source programming language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#173 on PLDB
+10 Years Old
+
+git clone https://github.com/evhub/coconut
+
+Try now: Web · Riju · TIO
+
+Simple, elegant, Pythonic functional programming.
+
+- Coconut website
+ http://coconut-lang.org/
+- Coconut is developed on GitHub and has 3,495 stars
+- Coconut first developed in http://coconut-lang.org
+- Coconut compiles to Python
+- Coconut is written in Python, YAML, Markdown, JSON, Make, reStructuredText, TOML
+- There is 1 Jupyter Kernel for Coconut
+- coconut-lang.org was registered in 2016
+- Read more about Coconut on the web: 1.
+ https://news.ycombinator.com/item?id=23759721
+
+print(&quot;Hello, world!&quot;)
+
+&quot;Hello World&quot; |&gt; print
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Algebraic Data Type
+ FeatureLink ../features/hasAlgebraicTypes.html
+ Supported ✓
+ Token 
+ Example
+  data Empty()
+  data Leaf(n)
+  data Node(l, r)
+  
+  def size(Empty()) = 0
+  
+  addpattern def size(Leaf(n)) = 1
+  
+  addpattern def size(Node(l, r)) = size(l) + size(r)
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported ✓
+ Token 
+ Example
+  (f..g..h)(x, y, z)
+row
+ Feature Destructuring
+ FeatureLink ../features/hasDestructuring.html
+ Supported ✓
+ Token 
+ Example
+  {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported ✓
+ Token 
+ Example
+  x -> x ** 2
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported ✓
+ Token 
+ Example
+  5 `mod` 3 == 2
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported ✓
+ Token 
+ Example
+  match [head] + tail in [0, 1, 2, 3]:
+     print(head, tail)

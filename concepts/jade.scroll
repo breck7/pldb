@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id jade
+name JADE
+appeared 1996
+tags pl
+
+fileType text
+wordRank 9715
+codeMirror jade
+centralPackageRepositoryCount 0
+country New Zealand
+originCommunity Jade Software Corporation
+
+helloWorldCollection JADE
+ // Hello World in JADE
+ write "Hello World";
+leachim6 Jade
+ filepath j/Jade.jade
+ fileExtensions jade
+ example
+  helloWorld();
+  
+  begin
+     write "Hello World";
+  end;
+
+lineCommentToken //
+printToken write
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
+ example
+  helloWorld();
+  
+  begin
+     write "Hello, World!";
+  end;
+ related java c pascal modula-2 linc-4gl
+ summary JADE is a proprietary object-oriented software development and deployment platform product from the New Zealand-based Jade Software Corporation, first released in 1996. It consists of the JADE programming language, IDE and debugger, integrated application server and object database management system. Designed as an end-to-end development environment to allow systems to be coded in one language from the database server down to the clients, it also provides APIs for other languages, including .NET Framework, Java, C/C++ and Web services. Although a free limited licence is available for development, using the JADE platform requires per-process fees to be paid.
+ pageId 5887624
+ dailyPageViews 84
+ created 2005
+ backlinksCount 33
+ revisionCount 172
+ appeared 1996
+
+hopl https://hopl.info/showlanguage.prx?exp=2130
+tiobe JADE
+
+isbndb 4
+ year|publisher|title|authors|isbn13
+ 2011|Morgan Kaufmann|GPU Computing Gems Jade Edition (Applications of GPU Computing Series)|Hwu, Wen-mei W.|9780123859631
+ 2016|CreateSpace Independent Publishing Platform|An Introduction to Object-Oriented Systems Development with JADE|Clarke, Bevan John|9781539106661
+ 2007|Wiley|Developing Multi-Agent Systems with JADE|Bellifemine, Fabio Luigi and Caire, Giovanni and Greenwood, Dominic|9780470057476
+ 2011|Morgan Kaufmann|GPU Computing Gems Jade Edition (Applications of GPU Computing Series)|Wen-mei W. Hwu|9780123859648

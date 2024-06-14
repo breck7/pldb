@@ -1,0 +1,50 @@
+import ../code/conceptPage.scroll
+
+id elena
+name elena
+appeared 2013
+creators Alex Rakov
+tags pl
+website http://elenalang.sourceforge.net/
+latestVersion v6.0.10
+
+writtenIn lex cpp html xml assembly-language markdown bash yaml css make cmake hlsl python javascript
+repoStats
+ firstCommit 2013
+ commits 5562
+ committers 11
+ files 859
+ newestCommit 2024
+country Germany
+originCommunity ELENA Language Project
+reference https://news.ycombinator.com/item?id=24222038
+
+twitter https://twitter.com/elena_language
+leachim6 Elena
+ filepath e/Elena.elena
+ fileExtensions elena
+ example
+  public program
+  [
+      console writeLine("Hello World").
+  ]
+  
+
+githubRepo https://github.com/ELENA-LANG/elena-lang
+ firstCommit 2013
+ stars 81
+ forks 8
+ subscribers 9
+ created 2013
+ updated 2019
+ description ELENA is a dynamic object-oriented programming language. It features message dispatching, mixins and a script engine
+ issues 87
+
+printToken writeLine
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName elenalang.sourceforge.net

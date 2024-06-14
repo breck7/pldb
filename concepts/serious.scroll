@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id serious
+name Serious
+appeared 2021
+creators lorentzj
+tags pl
+website https://lorentzj.github.io/sirius
+webRepl https://lorentzj.github.io/sirius/demo.html
+
+writtenIn rust typescript javascript html powerbuilder json css toml bourne-shell markdown
+repoStats
+ firstCommit 2023
+ commits 117
+ committers 1
+ files 89
+ newestCommit 2023
+country Unknown
+originCommunity https://github.com/lorentzj/sirius/issues
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/xttlp5/comment/iqrx0ri/
+reference https://kandi.openweaver.com/rust/lorentzj/sirius
+
+example
+ let x = 3;
+ let y = 4;
+ print (x^2 + y^2)^0.5;
+
+githubRepo https://github.com/lorentzj/serious
+ stars 2
+ forks 0
+ subscribers 1
+ created 2021
+ updated 2023
+ description The Sirius programming langauge
+ issues 0

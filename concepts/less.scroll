@@ -1,0 +1,131 @@
+import ../code/conceptPage.scroll
+
+id less
+name Less
+appeared 2009
+creators Alexis Sellier
+tags stylesheetLanguage
+website http://lesscss.org
+webRepl https://playcode.io/less/
+
+isOpenSource true
+clocExtensions less
+fileType text
+wordRank 535
+antlr https://github.com/antlr/grammars-v4/tree/master/less
+monaco less
+centralPackageRepositoryCount 0
+country Various
+originCommunity https://github.com/less
+
+pygmentsHighlighter LessCss
+ filename css.py
+ fileExtensions less
+rijuRepl https://riju.codes/less
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  
+leachim6 Less
+ filepath l/Less.less
+ fileExtensions less
+ example
+  body::before {
+      content: "Hello World"
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
+ example
+  #header {
+    color: #333333;
+    border-left: 1px;
+    border-right: 3px;
+  }
+  #footer {
+    color: #114411;
+    border-color: #7d2717;
+  }
+ related javascript sass css ruby stylus
+ summary Less (sometimes stylized as LESS) is a dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less is open source. Its first version was written in Ruby; however, in the later versions, use of Ruby has been deprecated and replaced by JavaScript. The indented syntax of Less is a nested metalanguage, as valid CSS is valid Less code with the same semantics. Less provides the following mechanisms: variables, nesting, mixins, operators and functions; the main difference between Less and other CSS precompilers being that Less allows real-time compilation via less.js by the browser.
+ pageId 31294765
+ dailyPageViews 186
+ created 2011
+ backlinksCount 48
+ revisionCount 256
+ appeared 2009
+
+domainName lesscss.org
+ registered 2009
+ awisRank
+  2022 210051
+  2017 102718
+
+githubBigQuery Less
+ repos 2585
+ users 2276
+
+linguistGrammarRepo https://github.com/atom/language-less.git
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 35
+ commitCount 309
+ sampleCount 1
+ example
+  @blue: #3bbfce;
+  @margin: 16px;
+  
+  .content-navigation {
+    border-color: @blue;
+    color:
+      darken(@blue, 9%);
+  }
+  
+  .border {
+    padding: @margin / 2;
+    margin: @margin / 2;
+    border-color: @blue;
+  }
+  
+
+isbndb 7
+ year|publisher|title|authors|isbn13
+ 2019|Independently published|Manipulation Secrets: How To Manipulate Anyone In Less Than Five Minutes Using Speed Reading, Ethical Manipulation And Simple Mind Control Techniques ... Case Studies And DIY-Tests (DARK PSYCHOLOGY)|Lightman, Patrick|9781086014358
+ 2017|Packt Publishing|Game Development Patterns and Best Practices: Better games, less hassle|Doran, John P. and Casanova, Matt|9781787127838
+ 2002|Workman Publishing Company|How to Connect in Business in 90 Seconds or Less|Boothman, Nicholas|9780761125952
+ 2015|Pragmatic Bookshelf|Metaprogramming Elixir: Write Less Code, Get More Done (and Have Fun!)|McCord, Chris|9781680500417
+ 2010|Packt Publishing|OGRE 3D 1.7 Beginner's Guide (Learn by Doing: Less Theory, More Results)|Felix Kerger|9781849512480
+ 2018|Cambridge University Press|The Science of Strategic Conservation: Protecting More with Less|Messer, Kent D. and Allen III, William L.|9781316642184
+ 2004|Listen & Live Audio, Inc.|How to Make People Like You in 90 Seconds or Less|Boothman, Nicholas|9781593160425
+
+githubLanguage Less
+ fileExtensions less
+ trendingProjectsCount 0
+ type markup
+ aceMode less
+ codemirrorMode css
+ codemirrorMimeType text/css
+ tmScope source.css.less
+ aliases less-css
+ repos 12105
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2010|tinySLAM: A SLAM algorithm in less than 200 lines C-language program|10.1109/ICARCV.2010.5707402|79|7|B. Steux and O. Hamzaoui|bfde965e330d488af0cfe87b13069c71970b2d2a
+ 2011|How to make ad hoc proof automation less ad hoc|10.1145/2034773.2034798|64|3|Georges Gonthier and Beta Ziliani and Aleksandar Nanevski and Derek Dreyer|b50d6b7724bdf8064ffee9f8456a4def48f07ef5
+ 2003|Pair Programming: More Learning And Less Anxiety In A First Programming Course|10.18260/1-2--11728|20|0|Jennifer Brougham and S. Freeman and Beverly K. Jaeger|abdbb5509d31d07c7e4d10c47812e38568cd4d59

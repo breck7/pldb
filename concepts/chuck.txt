@@ -1,0 +1,66 @@
+Ch
+==
+
+Ch is a programming language created in 2003 by Ge Wang.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ge%20Wang
+
+#548 on PLDB
+21 Years Old
+571 Repos
+
+ChucK is a concurrent, strongly timed audio programming language for real-time synthesis, composition, and performance, which runs on Linux, Mac OS X, Microsoft Windows, and iOS. It is designed to favor readability and flexibility for the programmer over other considerations such as raw performance. It natively supports deterministic concurrency and multiple, simultaneous, dynamic control rates. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ChucK
+
+- Ch website
+ http://chuck.cs.princeton.edu
+- Ch Wikipedia page
+ https://en.wikipedia.org/wiki/ChucK
+- There are at least 571 Ch repos on GitHub
+- Ch first developed in chuck team
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using Ch in 95 repos on GitHub
+- Explore Ch snippets on Rosetta Code
+- Ch appears in the TIOBE Index
+- GitHub supports syntax highlighting for Ch
+- See also: (2 related languages)Linux, iOS
+
+// our signal graph (patch)
+ SinOsc f =&gt; dac;
+ // set gain
+ .3 =&gt; f.gain;
+ // an array of pitch classes (in half steps)
+ [ 0, 2, 4, 6, 9, 10 ] @=&gt; int hi[];
+ 
+ // infinite loop
+ while( true )
+ {
+     // choose a note, shift registers, convert to frequency
+     Std.mtof( 65 + Std.rand2(0,1) * 43 +
+         hi[Std.rand2(0,hi.cap()-1)] ) =&gt; f.freq;
+ 
+     // advance time by 120 ms
+     120::ms =&gt; now;
+ }
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

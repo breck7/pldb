@@ -1,0 +1,52 @@
+EXPRESS
+=======
+
+EXPRESS is a data notation created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1251 on PLDB
+20 Years Old
+
+EXPRESS is a standard data modeling language for product data. EXPRESS is formalized in the ISO Standard for the Exchange of Product model STEP (ISO 10303), and standardized as ISO 10303-11.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language)
+
+- EXPRESS Wikipedia page
+ https://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language)
+- EXPRESS first developed in International Organization for Standardization
+
+SCHEMA Family;
+
+ENTITY Person
+   ABSTRACT SUPERTYPE OF (ONEOF (Male, Female));
+     name: STRING;
+     mother: OPTIONAL Female;
+     father: OPTIONAL Male;
+END_ENTITY;
+
+ENTITY Female
+   SUBTYPE OF (Person);
+END_ENTITY;
+
+ENTITY Male
+   SUBTYPE of (Person);
+END_ENTITY;
+
+END_SCHEMA;
+
+const express = require(&#39;express&#39;)
+const app = express()
+
+app.get(&#39;/&#39;, (_, res) =&gt; res.send(&quot;Hello World&quot;))
+
+app.listen(8080)
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"

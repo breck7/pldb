@@ -1,0 +1,164 @@
+PowerShell
+==========
+
+PowerShell is an open source programming language created in 2006 by Jeffrey Snover.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeffrey%20Snover
+
+#19 on PLDB
+18 Years Old
+161k Repos
+
+git clone https://github.com/PowerShell/PowerShell
+
+Try now: Riju · TIO
+
+PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Initially a Windows component only, known as Windows PowerShell, it was made open-source and cross-platform on 18 August 2016 with the introduction of PowerShell Core. The former is built on .NET Framework while the latter on .NET Core. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PowerShell
+
+- PowerShell website
+ http://microsoft.com/powershell
+- PowerShell Wikipedia page
+ https://en.wikipedia.org/wiki/PowerShell
+- PowerShell is developed on GitHub
+- PowerShell docs
+ https://learn.microsoft.com/en-us/powershell/
+- There are at least 161,144 PowerShell repos on GitHub
+- PowerShell first developed in Microsoft
+- PowerShell is written in C#, PowerShell, XML, YAML, Markdown, XSD, JSON, XAML, Bourne shell, SVG, CSV, Razor, Dockerfile, XSLT, plantuml, Python
+- PowerShell on Twitter
+ https://twitter.com/powershell_team
+- The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using PowerShell in 33k repos on GitHub
+- There are 201,622 members in the PowerShell subreddit
+- There are 159 Project Euler users using PowerShell
+- In the 2021 StackOverflow developer survey PowerShell programmers reported a median salary of $68,824. 11% of respondents reported using PowerShell. 8,871 programmers reported using PowerShell, and 4,896 said they wanted to use it
+- Explore PowerShell snippets on Rosetta Code
+- PowerShell appears in the TIOBE Index
+- PowerShell LSP implementation
+- Monaco package for syntax highlighting PowerShell
+- Pygments supports syntax highlighting for PowerShell
+- GitHub supports syntax highlighting for PowerShell
+- There is 1 Jupyter Kernel for PowerShell
+- There is a central package repository for PowerShell
+- Indeed.com has 19,576 matches for "powershell developer".
+- See also: (17 related languages)Perl, C#, DIGITAL Command Language, SQL, Tcl, Puppet, JScript, VBScript, Linux, ASCII, awk, grep, sed, XML, Assembly CLI, Office Open XML, Bash
+- 65 languages in PLDB linking to PowerShell: Aardvark, Ace Editor, AL, Argdown, AviSynth, Bazel, Bicep, Blacklight, Boomerang Decompiler, carp, chrysaLisp, clash, ClojureScript, CouchDB, crush, Cryptol, Crystal, curv, Deno, Embedded Crystal, Elixir, Emscripten, Enso, Flow, gleam, huginn, hurl, ink, Kubernetes, latino, lift, Linotte, Luna, mages, mal, MongoDB, Neko, Node.js, Nushell, onnx, P, Pony, POV-Ray SDL, PowerShell, Pygments, Python, PyTorch, Racket, Rakudo, Roslyn compiler, Rust, Scoop, score, Solidity, spiral, Star, Swift, Taichi, tiledb, typecobol, Vale, Vcpkg, Wasp, Xgboost, XGBoost
+
+Write-Host &quot;Hello, world!&quot;
+
+&#39;Hello World&#39;
+
+# Hello World in Microsoft Powershell
+
+&#39;Hello World!&#39;
+
+#!/usr/bin/env pwsh
+
+# source:  https://github.com/PowerShell/PowerShellStandard/blob/3436bfc162d6804dd11d1d76c4faff486b4b405d/build.ps1
+
+param (
+    [Parameter(ParameterSetName=&quot;Clean&quot;)][switch]$Clean,
+    [Parameter(ParameterSetName=&quot;Test&quot;)][switch]$Test
+)
+
+import-module $PSScriptRoot/PowerShellStandard.psm1 -force
+
+if ( $Clean ) {
+    Start-Clean
+    return
+}
+
+Start-Build
+
+if ( $Test ) {
+    Invoke-Test
+}
+
+name value1 value2
+name -Param1 value1 -Param2 value2
+
+begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+  
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token echo
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

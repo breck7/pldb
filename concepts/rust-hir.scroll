@@ -1,0 +1,23 @@
+import ../code/conceptPage.scroll
+
+id rust-hir
+name Rust HIR
+appeared 2015
+tags ir
+webRepl https://play.rust-lang.org/
+standsFor Rust High-level Intermediate Representation
+firstAnnouncement https://github.com/rust-lang/rfcs/blob/master/text/1191-hir.md
+announcementMethod rfc
+
+relatedConcepts rust-mir swift-il
+fileType text
+centralPackageRepositoryCount 0
+country Various
+originCommunity https://github.com/rust-lang/rfcs/issues
+
+example
+ #[prelude_import]
+ use ::std::prelude::rust_2015::*;
+ #[macro_use]
+ extern crate std;
+ fn main() { let mut vec = Vec::new(); vec.push(1); vec.push(2); }

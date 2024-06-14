@@ -1,0 +1,11 @@
+import ../code/conceptPage.scroll
+
+id ycp
+name ycp
+appeared 2005
+tags pl
+conceptDescription The YaST-language YCP is a scripting language to be interpreted by the YCP-engine (YCP interpreter) specially designed for manipulation with a system configuration. Its syntax is very similar to C programming language. Because YCP can make use of the whole infrastructure that YaST provides, the actions that can be accomplished with YCP are very powerful.
+
+fileType text
+centralPackageRepositoryCount 0
+reference https://doc.opensuse.org/projects/YaST/SLES11/tdg/Book-YCPLanguage.html

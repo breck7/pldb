@@ -1,0 +1,206 @@
+Tcl
+===
+
+Tcl, aka Tool Command Language, is an open source programming language created in 1988 by John Ousterhout.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Ousterhout
+
+#128 on PLDB
+36 Years Old
+14k Repos
+
+Try now: Riju · TIO
+
+Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Tcl
+
+- Tcl website
+ http://www.tcl.tk
+- Tcl Wikipedia page
+ https://en.wikipedia.org/wiki/Tcl
+- PLDB has 2 documentation sites for Tcl: www.tcl.tk, devdocs.io
+- There are at least 13,969 Tcl repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using Tcl in 8k repos on GitHub
+- There are 71 Project Euler users using Tcl
+- Explore Tcl snippets on Rosetta Code
+- Tcl appears in the TIOBE Index
+- Tcl Ubuntu package
+ https://packages.ubuntu.com/jammy/tcl
+- CodeMirror package for syntax highlighting Tcl
+- Monaco package for syntax highlighting Tcl
+- Pygments supports syntax highlighting for Tcl
+- GitHub supports syntax highlighting for Tcl
+- Tcl appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Tcl
+- Release Notes for Tcl
+ http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+- Official Blog page for Tcl
+ https://www.tcl.tk/software/tcltk/whatsnew.tml
+- See also: (22 related languages)awk, Lisp, PHP, Tea, PowerShell, C, Python, Expect, Unicode, Regular Expressions, Java, Unix, Linux, Bourne shell, XOTcl, Snit, Verilog, VHDL, UDP, MySQL, PostgreSQL, SQLite
+- 1 languages in PLDB linking to Tcl: hecl
+
+puts {Hello, world!}
+
+puts &quot;Hello World&quot;
+
+#!/usr/local/bin/tclsh
+# Hello World in Tcl
+
+puts &quot;Hello World!&quot;
+
+# XDG Base Directory Specification handling
+#
+# Copyright (C) 2013 Lawrence Woodman
+#
+# Licensed under an MIT licence.  Please see LICENCE.md for details.
+#
+# For XDG Base Directory Specification
+#   http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+#
+package require Tcl 8.5
+
+namespace eval XDG {
+  variable DEFAULTS &quot;&quot;
+  namespace export DATA_HOME CONFIG_HOME CACHE_HOME
+  namespace export RUNTIME_DIR DATA_DIRS CONFIG_DIRS
+}
+
+proc XDG::SetDefaults {} {
+  variable DEFAULTS
+  if {$DEFAULTS ne &quot;&quot;} return
+  set DEFAULTS [list \
+    DATA_HOME   [file join $::env(HOME) .local share] \
+    CONFIG_HOME [file join $::env(HOME) .config] \
+    CACHE_HOME  [file join $::env(HOME) .cache] \
+    DATA_DIRS   [list [file join /usr local share] [file join /usr share]] \
+    CONFIG_DIRS [list [file join /etc xdg ]]
+  ]
+}
+
+proc XDG::XDGVarSet {var} {
+  expr {[info exists ::env(XDG_$var)] &amp;&amp; $::env(XDG_$var) ne &quot;&quot;}
+}
+
+proc XDG::Dir {var {subdir &quot;&quot;} } {
+  variable DEFAULTS
+  SetDefaults
+  set dir [dict get $DEFAULTS $var]
+
+  if {[XDGVarSet $var]} {
+    set dir $::env(XDG_$var)
+  }
+
+  return [file join $dir $subdir]
+}
+
+proc XDG::Dirs {var {subdir &quot;&quot;} } {
+  variable DEFAULTS
+  SetDefaults
+  set rawDirs [dict get $DEFAULTS $var]
+
+  if {[XDGVarSet $var]} {
+    set rawDirs [split $::env(XDG_$var) &quot;:&quot;]
+  }
+
+  set outDirs {}
+  foreach dir $rawDirs {
+    lappend outDirs [file join $dir $subdir]
+  }
+  return $outDirs
+}
+
+# The remaining procs reference the environmental variables XDG_
+# followed by the proc name.
+proc XDG::DATA_HOME {{subdir &quot;&quot;}} {Dir DATA_HOME $subdir}
+proc XDG::CONFIG_HOME {{subdir &quot;&quot;}} {Dir CONFIG_HOME $subdir}
+proc XDG::CACHE_HOME {{subdir &quot;&quot;}} {Dir CACHE_HOME $subdir}
+
+proc XDG::RUNTIME_DIR {{subdir &quot;&quot;}} {
+  if {![XDGVarSet RUNTIME_DIR]} { return {} }
+  return [file join $::env(XDG_RUNTIME_DIR) $subdir]
+}
+
+# The following procs returning the directories as a list with the most
+# important first.
+proc XDG::DATA_DIRS {{subdir &quot;&quot;}} {Dirs DATA_DIRS $subdir}
+proc XDG::CONFIG_DIRS {{subdir &quot;&quot;}} {Dirs CONFIG_DIRS $subdir}
+
+oo::class create fruit {
+    method eat {} {
+        puts &quot;yummy!&quot;
+    }
+}
+oo::class create banana {
+    superclass fruit
+    constructor {} {
+        my variable peeled
+        set peeled 0
+    }
+    method peel {} {
+        my variable peeled
+        set peeled 1
+        puts &quot;skin now off&quot;
+    }
+    method edible? {} {
+        my variable peeled
+        return $peeled
+    }
+    method eat {} {
+        if {![my edible?]} {
+            my peel
+        }
+        next
+    }
+}
+set b [banana new]
+$b eat               → prints &quot;skin now off&quot; and &quot;yummy!&quot;
+fruit destroy
+$b eat               → error &quot;unknown command&quot;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token puts
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,134 @@
+Visual Basic
+============
+
+Visual Basic is a programming language created in 1991.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#40 on PLDB
+33 Years Old
+
+Try now: Riju
+
+Visual Basic is a third-generation event-driven programming language and integrated development environment (IDE) from Microsoft for its Component Object Model (COM) programming model first released in 1991 and declared legacy during 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ActiveX Data Objects, and creation of ActiveX controls and objects. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Visual_Basic
+
+- Visual Basic website
+ https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
+- Visual Basic Wikipedia page
+ https://en.wikipedia.org/wiki/Visual_Basic
+- Visual Basic docs
+ https://learn.microsoft.com/en-us/dotnet/visual-basic/
+- Visual Basic first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Visual Basic in 11k repos on GitHub
+- Check out the 21 Visual Basic meetup groups on Meetup.com.
+- There are 7,807 members in the Visual Basic subreddit
+- Visual Basic on HOPL
+ https://hopl.info/showlanguage.prx?exp=1374
+- Visual Basic ranks #6 in the TIOBE Index
+- Visual Basic Ubuntu package
+ https://packages.ubuntu.com/jammy/mono-vbnc
+- ANTLR grammar for Visual Basic
+- Monaco package for syntax highlighting Visual Basic
+- GitHub supports syntax highlighting for Visual Basic
+- Visual Basic appears in the Quine Relay project
+- Indeed.com has 3,294 matches for "visual basic engineer".
+- See also: (18 related languages)Visual Basic .NET, Visual Studio, BASIC, Gambas, Xojo, Basic4ppc, NS Basic, VBA, Perl, Pascal, Fortran, VBScript, Ruby, QuickBASIC, AUTOCAD, ASP, WinWrap Basic, LotusScript
+- 13 languages in PLDB linking to Visual Basic: cloc, Emscripten, Ibis, Iterm2, Linotte, mal, NCAR Command Language, Pygments, Red, SmallBASIC, Speedie, weebasic, xlwings-editor
+
+Module Program
+    Function Square(num As Integer) As Integer
+        Return num * num
+    End Function
+End Module
+
+Module Main
+    Sub Main(args As String())
+        Console.WriteLine(&quot;Hello, world!&quot;)
+    End Sub
+End Module
+
+Module HelloWorld
+    Sub Main()
+        MsgBox(&quot;Hello World&quot;)
+    End Sub
+End Module
+
+Option Explicit
+Dim Count As Integer
+Private Sub Form_Load()
+    Count = 0
+    Timer1.Interval = 1000 &#39; units of milliseconds
+End Sub
+Private Sub Timer1_Timer()
+    Count = Count + 1
+    Label1.Caption = Count
+End Sub
+
+AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Console.WriteLine
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  Option Explicit On|Off
+  Option Compare Binary
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Token 
+ Example

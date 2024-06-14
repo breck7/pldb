@@ -1,0 +1,23 @@
+Django
+======
+
+Django is an open source library created in 2005.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#703 on PLDB
+19 Years Old
+
+Django ( JANG-goh) is a free and open-source web framework, written in Python, which follows the model-view-template (MVT) architectural pattern. It is maintained by the Django Software Foundation (DSF), an independent organization established as a 501(c)(3) non-profit. Django's primary goal is to ease the creation of complex, database-driven websites. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Django_(web_framework)
+
+- Django Wikipedia page
+ https://en.wikipedia.org/wiki/Django_(web_framework)
+- Django first developed in Django Software Foundation
+- CodeMirror package for syntax highlighting Django
+- GitHub supports syntax highlighting for Django
+- See also: (16 related languages)Python, Regular Expressions, HTML, XML, JSON, Nginx, PostgreSQL, MySQL, SQLite, MongoDB, Jython, Ruby, Perl, PHP, Erlang, ISBN
+
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse(&quot;Hello World&quot;)

@@ -1,0 +1,19 @@
+import ../code/conceptPage.scroll
+
+id ccs
+name CCS
+appeared 1999
+tags pl
+conceptDescription CCS is a proprietary scripting language for executing sequences of command-line interface (CLI) commands on NetMRI-supported network devices, to perform job automation tasks. If you know Cisco IOS, writing CCS scripts is relatively straightforward.
+
+clocExtensions ccs
+country United States
+originCommunity Infoblox Inc
+reference https://www.infoblox.com/wp-content/uploads/infoblox-eval-download-netmri-NetMRI_CCS_Scripting_Guide.pdf
+
+example
+ Script-Filter:
+ $Vendor eq "Cisco" and
+ $sysDescr like /IOS/ and
+ $Version like /^1[2-9]/ and
+ $Type in ['Router', 'Switch-Router']]

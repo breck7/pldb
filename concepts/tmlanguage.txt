@@ -1,0 +1,31 @@
+TextMate Language
+=================
+
+TextMate Language is a grammar language created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3385 on PLDB
+20 Years Old
+
+- TextMate Language website
+ https://macromates.com/manual/en/language_grammars
+- 2 languages in PLDB linking to TextMate Language: Pygments, Sublime Syntax
+
+scopeName = &#39;source.untitled&#39;;
+fileTypes = ( );
+foldingStartMarker = &#39;\{\s*TEMPLATE#39;;
+foldingStopMarker = &#39;^\s*\}&#39;;
+patterns = (
+   {  name = &#39;keyword.control.untitled&#39;;
+      match = &#39;\b(if|while|for|return)\b&#39;;
+   },
+   {  name = &#39;string.quoted.double.untitled&#39;;
+      begin = &#39;&quot;&#39;;
+      end = &#39;&quot;&#39;;
+      patterns = (
+         {  name = &#39;constant.character.escape.untitled&#39;;
+            match = &#39;\\.&#39;;
+         }
+      );
+   },
+);

@@ -1,0 +1,60 @@
+import ../code/conceptPage.scroll
+
+id handlebars
+name Handlebars
+appeared 2010
+tags template
+website http://handlebarsjs.com/
+
+clocExtensions handlebars hbs
+fileType text
+monaco handlebars
+codeMirror handlebars
+centralPackageRepositoryCount 0
+country Austria and China
+originCommunity https://github.com/handlebars-lang
+
+pygmentsHighlighter Handlebars
+ filename templates.py
+example
+ <div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body">
+    {{body}}
+  </div>
+ </div>
+
+domainName handlebarsjs.com
+ registered 2011
+ awisRank
+  2022 104731
+  2017 113602
+
+githubBigQuery Handlebars
+ repos 7598
+ users 5871
+
+linguistGrammarRepo https://github.com/daaain/Handlebars
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 14
+ commitCount 153
+ sampleCount 2
+ example
+  <div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+
+isbndb 0
+
+githubLanguage Handlebars
+ fileExtensions handlebars hbs
+ trendingProjectsCount 0
+ type markup
+ aceMode handlebars
+ tmScope text.html.handlebars
+ aliases hbs or htmlbars
+ repos 28186

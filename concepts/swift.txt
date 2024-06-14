@@ -1,0 +1,269 @@
+Swift
+=====
+
+Swift is an open source programming language created in 2014 by Chris Lattner.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20Lattner
+
+#20 on PLDB
+10 Years Old
+1m Repos
+
+git clone https://github.com/apple/swift
+
+Try now: Riju · Replit
+
+Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Swift_(programming_language)
+
+- Swift website
+ https://swift.org
+- Swift downloads page
+ https://www.swift.org/download/
+- Swift Wikipedia page
+ https://en.wikipedia.org/wiki/Swift_(programming_language)
+- Swift is developed on GitHub and has 60,145 stars
+- Watch the history of the Swift repo visualized with Gource
+- Swift docs
+ https://www.swift.org/documentation/
+- Swift mailing list
+ https://www.swift.org/blog/forums/
+- There are at least 1,044,892 Swift repos on GitHub
+- Swift first developed in Apple
+- Swift is written in Swift, C++, CMake, Python, Markdown, JSON, Objective-C, reStructuredText, YAML, Tex, C, Objective C++, Bash, LLVM IR, Bourne shell, XML, Vim script, Make, Lisp, HTML, Pascal, D, CSS, Assembly language, Ini, PowerShell, JavaScript, Ruby, awk, MATLAB
+- Swift on Twitter
+ https://twitter.com/swiftlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using Swift in 43k repos on GitHub
+- Check out the 375 Swift meetup groups on Meetup.com.
+- There are 93,491 members in the Swift subreddit
+- There are 690 Project Euler users using Swift
+- In the 2021 StackOverflow developer survey Swift programmers reported a median salary of $58,911. 5% of respondents reported using Swift. 4,204 programmers reported using Swift, and 6,353 said they wanted to use it
+- Explore Swift snippets on Rosetta Code
+- Swift ranks #20 in the TIOBE Index
+- Swift LSP implementation
+- CodeMirror package for syntax highlighting Swift
+- Monaco package for syntax highlighting Swift
+- Pygments supports syntax highlighting for Swift
+- GitHub supports syntax highlighting for Swift
+- There is a central package repository for Swift
+- Release Notes for Swift
+ https://github.com/apple/swift/blob/main/CHANGELOG.md
+- Official Blog page for Swift
+ https://www.swift.org/blog/
+- Indeed.com has 2,043 matches for "swift developer".
+- See also: (18 related languages)Linux, FreeBSD, C#, CLU, D, Haskell, Objective-C, Python, Ruby, Rust, iOS, LLVM IR, C, Smalltalk, Java, Unicode, Android, Kotlin
+- 28 languages in PLDB linking to Swift: Ace Editor, Ante, cloc, Dixy, FlatBuffers, Flow9, Gradle, Homebrew, Iterm2, kai, Koka, Kotlin, mal, MongoDB, Plot, Project Mentat, Pygments, React Native, Reason, Roc, Stencil, Swift, TensorFlow, Uno, wasmer, Wax, Wing, zolang
+
+// Type your code here, or load an example.
+func square(n: Int) -&gt; Int {
+    return n * n
+}
+
+print(&quot;Hello, world!&quot;)
+
+print(&quot;Hello World&quot;)
+
+// Hello world in Swift
+
+println(&quot;Hello, world!&quot;)
+
+println(&quot;Hello, world&quot;)
+
+var someSortOfPrintableObject: SupportsToString
+...
+print(someSortOfPrintableObject.toString())
+
+associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0b[01_]+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9][0-9_]*
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0x[0-9a-fA-F_]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0o[0-7_]+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Interfaces
+ FeatureLink ../features/hasInterfaces.html
+ Supported ✓
+ Token 
+ Example
+  protocol MyProtocol {
+  init(parameter: Int)
+  var myVariable: Int { get set }
+  var myReadOnlyProperty: Int { get }
+  func myMethod()
+  func myMethodWithBody()
+  }
+  extension MyProtocol {
+  func myMethodWithBody() {
+    // implementation goes here
+    }
+  }
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import UIKit
+  import UIKit.UITableViewController
+  let tvc = UITableViewController()
+  let vc = UIViewController()
+  let label = UILabel()
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Single Dispatch
+ FeatureLink ../features/hasSingleDispatch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  let label = UILabel()
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported X
+ Token 
+ Example

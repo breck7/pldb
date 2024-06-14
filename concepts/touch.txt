@@ -1,0 +1,69 @@
+Touch
+=====
+
+Touch is a text markup language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2138 on PLDB
+4 Years Old
+
+git clone https://github.com/touchmarine/to
+
+📜 Touch Lightweight Markup Language; Familiar, Extendable, Auto-Formattable
+
+- Touch website
+ http://touchlabs.io/play
+- Touch is developed on GitHub and has 14 stars
+- Touch is written in Go, JSON, Markdown
+
+/ this is a block comment
+
+= Title
+_ Subtitle
+
+== h2
+=== h3
+
+/ numbered headings (prefixed with 1 and 1.1)
+## h2
+### h3
+
+&gt; blockquote
+* note
+- list
+1. numbered list
+
+/ code block
+`js
+function num() {
+    return 1
+}
+`
+
+/ preformatted block
+&#39;
+      ___________________________
+    &lt; I&#39;m an expert in my field. &gt;
+      ---------------------------
+          \   ^__^
+           \  (oo)\_______
+              (__)\       )\/\
+                  ||----w |
+                  ||     ||
+&#39;
+/ art from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example
+
+// an inline comment //
+__emphasis__ // italics //
+**strong**   // bold //
+``code``
+((link))
+[[link text]]((link URL))
+
+a \ // line break //
+b
+
+/ autolinks
+www.example.test
+http://example.test
+https://example.test

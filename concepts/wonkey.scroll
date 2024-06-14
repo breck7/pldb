@@ -1,0 +1,36 @@
+import ../code/conceptPage.scroll
+
+id wonkey
+name Wonkey
+appeared 2021
+tags pl
+website https://wonkey-coders.github.io/
+conceptDescription Wonkey is an open-source cross-platform programming language.
+
+writtenIn c cpp markdown assembly-language json f-sharp xml make python objective-c cmake html glsl bourne-shell java svg css objective-cpp yaml m4 javascript perl bash expect lua gradle awk csharp metal typescript ini
+repoStats
+ firstCommit 2021
+ commits 486
+ committers 8
+ files 8511
+ newestCommit 2023
+reference https://news.ycombinator.com/item?id=32360952
+
+example
+ Function Add( a:Int, b:Int )
+     Return a + b
+ End
+ 
+ Function Add( a:Float, b:Float )
+     Return a + b
+ End
+
+githubRepo https://github.com/wonkey-coders/wonkey
+ firstCommit 2021
+ stars 108
+ forks 10
+ subscribers 13
+ created 2021
+ updated 2022
+ description Wonkey is a programming language for the creation of cross-platform video games, but not only :). Join us https://discord.gg/awfuRtZay7
+ issues 1

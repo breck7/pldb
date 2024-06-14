@@ -1,0 +1,69 @@
+import ../code/conceptPage.scroll
+
+id maxima
+name Maxima
+appeared 1982
+tags pl
+website http://maxima.sourceforge.net/
+
+isOpenSource true
+tryItOnline maxima
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Maxima
+centralPackageRepositoryCount 0
+country United States
+originCommunity Massachusetts Institute of Technology
+projectEuler Maxima
+ memberCount
+  2022 19
+
+pygmentsHighlighter Maxima
+ filename maxima.py
+ fileExtensions mac max
+leachim6 Maxima
+ filepath m/Maxima.max
+ fileExtensions max
+ example
+  print("Hello World")$
+  
+
+keywords if then else elseif do while repeat until for from to downto step thru
+
+printToken print
+stringToken "
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasWhileLoops true
+hasConditionals true
+hasFloats true
+hasIntegers true
+hasMultiLineComments true
+
+jupyterKernel https://github.com/robert-dodier/maxima-jupyter
+wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
+ related common-lisp unix linux android algol lisp gnuplot fortran jupyter-editor python qt sagemath r lyx-editor emacs-editor isbn
+ summary Maxima is a computer algebra system (CAS) based on a 1982 version of Macsyma. It is written in Common Lisp and runs on all POSIX platforms such as macOS, Unix, BSD, and Linux, as well as under Microsoft Windows and Android. It is free software released under the terms of the GNU General Public License (GPL).
+ pageId 95925
+ created 2002
+ backlinksCount 250
+ revisionCount 380
+ dailyPageViews 134
+ appeared 1982
+
+domainName maxima.sourceforge.net
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 20190521|Springer Nature|Finite Elements Using Maxima|Andreas Öchsner; Resam Makvandi|9783030171995
+ 2011-10-14|Wiley|Maxima and Minima with Applications|Wilfred Kaplan|9781118031049
+
+semanticScholar 4
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2020|FPGA implementation of an Islanding detection technique for microgrid using periodic maxima of superimposed voltage components|10.1049/iet-gtd.2018.5914|7|0|Praveen Kumar and Vishal Kumar and R. Pratap|9e8dc4076a7c78f146cbe5aba3db98a29a178bbf
+ 2019|Search for Global Maxima in Multimodal Functions by Applying Numerical Optimization Algorithms: A Comparison between Golden Section and Simulated Annealing|10.3390/COMPUTATION7030043|7|0|J. Guillot and Diego Restrepo-Leal and Carlos Robles-Algarín and I. Oliveros|4ca5a3622c6d50e7ebc4dc712d27d4d7c7eafa1c
+ 2014|Maxima and Octave in Development of Online Applications: Service Based Approach|10.3991/ijet.v9i5.3848|4|0|K. Žáková|c86ee6956b04e96664e6f5916faa59ede6d5fc96
+ 2017|Clifford Algebra Implementations in Maxima|10.7546/JGSP-43-2017-73-105|1|0|D. Prodanov|7fb000ff96109cd89c76ba039641fee09e2d254d

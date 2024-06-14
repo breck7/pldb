@@ -1,0 +1,84 @@
+OWL
+===
+
+OWL, aka One World Language, is a xml format created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#290 on PLDB
+20 Years Old
+199 Repos
+
+The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Web_Ontology_Language
+
+- OWL Wikipedia page
+ https://en.wikipedia.org/wiki/Web_Ontology_Language
+- OWL docs
+ https://www.w3.org/TR/owl-guide/
+- There are at least 199 OWL repos on GitHub
+- OWL first developed in World Wide Web Consortium
+- The  Google BigQuery Public Dataset GitHub snapshot shows 524 users using OWL in 642 repos on GitHub
+- OWL on HOPL
+ https://hopl.info/showlanguage.prx?exp=4934
+- GitHub supports syntax highlighting for OWL
+- See also: (8 related languages)RDF, XML, HTML, AXIOM, Turtle, SQL, Prolog, UML
+- 2 languages in PLDB linking to OWL: Bossam Rule Language, OWL DL
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+
+&lt;!DOCTYPE rdf:RDF [
+    &lt;!ENTITY owl &quot;http://www.w3.org/2002/07/owl#&quot; &gt;
+    &lt;!ENTITY xsd &quot;http://www.w3.org/2001/XMLSchema#&quot; &gt;
+    &lt;!ENTITY rdfs &quot;http://www.w3.org/2000/01/rdf-schema#&quot; &gt;
+    &lt;!ENTITY rdf &quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; &gt;
+]&gt;
+
+&lt;rdf:RDF xmlns=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#&quot;
+     xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;
+     xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema#&quot;
+     xmlns:rdfs=&quot;http://www.w3.org/2000/01/rdf-schema#&quot;
+     xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
+     xmlns:owl=&quot;http://www.w3.org/2002/07/owl#&quot;&gt;
+    &lt;owl:Ontology rdf:about=&quot;&quot;&gt;
+        &lt;owl:versionInfo xml:lang=&quot;en&quot;
+            &gt;v.1.4. Added Food class (used in domain/range of hasIngredient), Added several hasCountryOfOrigin restrictions on pizzas, Made hasTopping invers functional&lt;/owl:versionInfo&gt;
+        &lt;owl:versionInfo rdf:datatype=&quot;&amp;xsd;string&quot;&gt;version 1.5&lt;/owl:versionInfo&gt;
+        &lt;owl:versionInfo xml:lang=&quot;en&quot;
+            &gt;v.1.5. Removed protege.owl import and references. Made ontology URI date-independent&lt;/owl:versionInfo&gt;
+        &lt;rdfs:comment xml:lang=&quot;en&quot;
+            &gt;An example ontology that contains all constructs required for the various versions of the Pizza Tutorial run by Manchester University (see http://www.co-ode.org/resources/tutorials/)&lt;/rdfs:comment&gt;
+    &lt;/owl:Ontology&gt;
+    
+
+    &lt;!--
+    ///////////////////////////////////////////////////////////////////////////
+    //
+    //   OWL Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////
+     --&gt;
+
+    
+
+    &lt;!-- Class: http://www.co-ode.org/ontologies/pizza/pizza.owl#American --&gt;
+
+    &lt;owl:Class rdf:about=&quot;#American&quot;&gt;
+        &lt;rdfs:label xml:lang=&quot;pt&quot;&gt;Americana&lt;/rdfs:label&gt;
+        &lt;rdfs:subClassOf&gt;
+            &lt;owl:Restriction&gt;
+                &lt;owl:onProperty rdf:resource=&quot;#hasTopping&quot;/&gt;
+                &lt;owl:someValuesFrom rdf:resource=&quot;#TomatoTopping&quot;/&gt;
+            &lt;/owl:Re
+
+&lt;http://example.org/tea.owl&gt; rdf:type owl:Ontology .
+ :Tea  rdf:type            owl:Class .
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

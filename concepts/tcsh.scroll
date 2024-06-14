@@ -1,0 +1,59 @@
+import ../code/conceptPage.scroll
+
+id tcsh
+name tcsh
+appeared 1983
+tags pl
+
+tryItOnline tcsh
+fileType text
+centralPackageRepositoryCount 0
+country United States
+
+pygmentsHighlighter Tcsh
+ filename shell.py
+ fileExtensions tcsh csh
+rijuRepl https://riju.codes/tcsh
+ example
+  echo "Hello, world!"
+  
+leachim6 TCSH
+ filepath t/TCSH.tcsh
+ fileExtensions tcsh
+ example
+  #!/bin/tcsh
+  echo "Hello World"
+  
+
+printToken echo
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+hopl https://hopl.info/showlanguage.prx?exp=2560
+
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 31
+ commitCount 243
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1995|O'Reilly & Associates|Using csh & tcsh (Nutshell Handbooks)|DuBois, Paul|9781565921320
+ 19950701|O'Reilly Media, Inc.|Using csh & tcsh|Paul DuBois|9781449391683
+ 19950701|O'Reilly Media, Inc.|Using csh & tcsh|Paul DuBois|9781449391065
+
+githubLanguage Tcsh
+ fileExtensions tcsh csh
+ trendingProjectsCount 0
+ type programming
+ group Shell
+ interpreters tcsh csh
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
+ repos 0

@@ -1,0 +1,13 @@
+import ../code/conceptPage.scroll
+
+id hlvm
+name High-Level Virtual Machine
+appeared 2009
+tags vm
+website http://www.ffconsultancy.com/ocaml/hlvm/
+standsFor High-Level Virtual Machine
+conceptDescription HLVM is a cross-platform open-source high-level virtual machine. The virtual machine is written in OCaml and uses the excellent LLVM library for efficient high-performance native code generation.
+
+country United Kingdom
+originCommunity https://github.com/ocaml-forge
+reference http://forge.ocamlcore.org/projects/hlvm/

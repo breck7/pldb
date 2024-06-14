@@ -1,0 +1,63 @@
+import ../code/conceptPage.scroll
+
+id mu
+name Mu
+appeared 2014
+creators Kartik K. Agaram
+tags pl
+website https://github.com/akkartik/mu
+
+isOpenSource true
+writtenIn html cpp bourne-shell markdown vim-script racket bash json c xml css z-shell javascript python less lisp
+fileExtensions mu
+fileType text
+wordRank 9065
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 9007
+ committers 15
+ files 1013
+ newestCommit 2023
+country United States
+originCommunity https://github.com/akkartik/mu/issues
+reference http://akkartik.name/akkartik-convivial-20200607.pdf
+
+example
+ # dump stack from bottom to top
+ fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {
+   var self/esi: (addr grapheme-stack) <- copy _self
+   var data-ah/edi: (addr handle array code-point-utf8) <- get self, data
+   var _data/eax: (addr array code-point-utf8) <- lookup *data-ah
+   var data/edi: (addr array code-point-utf8) <- copy _data
+   var top-addr/ecx: (addr int) <- get self, top
+   var i/eax: int <- copy 0
+   {
+     compare i, *top-addr
+     break-if->=
+     var g/edx: (addr code-point-utf8) <- index data, i
+     write-code-point-utf8 out, *g
+     i <- increment
+     loop
+   }
+ }
+
+githubRepo https://github.com/akkartik/mu
+ stars 1227
+ forks 46
+ subscribers 38
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
+ issues 3
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+isbndb 0

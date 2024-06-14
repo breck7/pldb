@@ -1,0 +1,41 @@
+baysick
+=======
+
+baysick is an esoteric programming language created in 2009 by Michael Fogus.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Fogus
+
+#952 on PLDB
+15 Years Old
+
+git clone https://github.com/fogus/baysick
+
+An embedded Insane-specific Language for Scala implementing the BASIC programming language
+
+- baysick website
+ http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+- baysick is developed on GitHub and has 244 stars
+- baysick first developed in Cognitect, Inc
+- baysick is written in Scala, Markdown
+- baysick on Twitter
+ https://twitter.com/fogus
+
+object SquareRoot extends Baysick {
+  def main(args:Array[String]) = {
+    10 PRINT &quot;Enter a number&quot;
+    20 INPUT &#39;n
+    30 PRINT &quot;Square root of &quot; % &quot;&#39;n is &quot; % SQRT(&#39;n)
+    40 END
+    RUN
+  }
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINT
+ Example

@@ -1,0 +1,217 @@
+Spin
+====
+
+Spin is a programming language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#861 on PLDB
+18 Years Old
+38k Repos
+
+- There are at least 38,264 Spin repos on GitHub
+- Spin first developed in Parallax Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 101 users using Spin in 129 repos on GitHub
+- Explore Spin snippets on Rosetta Code
+- GitHub supports syntax highlighting for Spin
+- Read more about Spin on the web: 1.
+ https://learn.parallax.com/educators/teach/spin-programming-multicore-propeller
+
+﻿&#39;&#39;****************************************
+&#39;&#39;*  Debug_Lcd v1.2                      *
+&#39;&#39;*  Authors: Jon Williams, Jeff Martin  *
+&#39;&#39;*  Copyright (c) 2006 Parallax, Inc.   *
+&#39;&#39;*  See end of file for terms of use.   *
+&#39;&#39;****************************************
+&#39;&#39;
+&#39;&#39; Debugging wrapper for Serial_Lcd object
+&#39;&#39;
+&#39;&#39; v1.2 - March 26, 2008 - Updated by Jeff Martin to conform to Propeller object initialization standards.
+&#39;&#39; v1.1 - April 29, 2006 - Updated by Jon Williams for consistency.
+&#39;&#39;
+
+OBJ
+
+  lcd : &quot;serial_lcd&quot;                                    &#39; driver for Parallax Serial LCD
+  num : &quot;simple_numbers&quot;                                &#39; number to string conversion
+
+PUB init(pin, baud, lines) : okay
+
+&#39;&#39; Initializes serial LCD object
+&#39;&#39; -- returns true if all parameters okay
+
+  okay := lcd.init(pin, baud, lines)
+
+PUB finalize
+
+&#39;&#39; Finalizes lcd object -- frees the pin (floats)
+
+  lcd.finalize
+
+  
+PUB putc(txbyte)
+
+&#39;&#39; Send a byte to the terminal
+
+  lcd.putc(txbyte)
+  
+  
+PUB str(strAddr)
+
+&#39;&#39; Print a zero-terminated string
+
+  lcd.str(strAddr)
+
+PUB dec(value)
+
+&#39;&#39; Print a signed decimal number
+
+  lcd.str(num.dec(value))
+
+PUB decf(value, width)
+
+&#39;&#39; Prints signed decimal value in space-padded, fixed-width field
+
+  lcd.str(num.decf(value, width))
+  
+
+PUB decx(value, digits)
+
+&#39;&#39; Prints zero-padded, signed-decimal string
+&#39;&#39; -- if value is negative, field width is digits+1
+
+  lcd.str(num.decx(value, digits))
+
+PUB hex(value, digits)
+
+&#39;&#39; Print a hexadecimal number
+
+  lcd.str(num.hex(value, digits))
+
+PUB ihex(value, digits)
+
+&#39;&#39; Print an indicated hexadecimal number
+
+  lcd.str(num.ihex(value, digits))
+
+PUB bin(value, digits)
+
+&#39;&#39; Print a binary number
+
+  lcd.str(num.bin(value, digits))
+
+PUB ibin(value, digits)
+
+&#39;&#39; Print an indicated (%) binary number
+
+  lcd.str(num.ibin(value, digits))
+    
+
+PUB cls
+
+&#39;&#39; Clears LCD and moves cursor to home (0, 0) position
+
+  lcd.cls
+
+PUB home
+
+&#39;&#39; Moves cursor to 0, 0
+
+  lcd.home
+  
+
+PUB gotoxy(col, line)
+
+&#39;&#39; Moves cursor to col/line
+
+  lcd.gotoxy(col, line)
+
+  
+PUB clrln(line)
+
+&#39;&#39; Clears line
+
+  lcd.clrln(line)
+
+PUB cursor(type)
+
+&#39;&#39; Selects cursor type
+&#39;&#39;   0 : cursor off, blink off
+&#39;&#39;   1 : cursor off, blink on
+&#39;&#39;   2 : cursor on, blink off
+&#39;&#39;   3 : cursor on, blink on
+
+  lcd.cursor(type)
+       
+
+PUB display(status)
+
+&#39;&#39; Controls display visibility; use display(false) to hide contents without clearing
+
+  if status
+    lcd.displayOn
+  else
+    lcd.displayOff
+
+PUB custom(char, chrDataAddr)
+
+&#39;&#39; Installs custom character map
+&#39;&#39; -- chrDataAddr is address of 8-byte character definition array
+
+  lcd.custom(char, chrDataAddr)
+
+      
+PUB backLight(status)
+
+&#39;&#39; Enable (true) or disable (false) LCD backlight
+&#39;&#39; -- affects only backlit models
+
+  lcd.backLight(status)
+
+{{
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                   TERMS OF USE: MIT License                                                  │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation    │
+│files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy,    │
+│modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software│
+│is furnished to do so, subject to the following conditions:                                                                   │
+│                                                                                                                              │
+│The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.│
+│                                                                                                                              │
+│THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE          │
+│WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR         │
+│COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,   │
+│ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                         │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+}}
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

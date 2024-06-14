@@ -1,0 +1,122 @@
+import ../code/conceptPage.scroll
+
+id mql
+name MQL5
+appeared 2005
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+country Russia
+originCommunity MetaQuotes Software
+reference https://www.wikidata.org/wiki/Q11765028
+
+pygmentsHighlighter MQL
+ filename c_like.py
+ fileExtensions mq4 mq5 mqh
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+wikipedia https://de.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5
+ summary MQL4 (MetaQuotes Language 4) and MQL5 (MetaQuotes Language 5) are integrated programming languages designed for developing trading robots, technical market indicators, scripts and function libraries within the MetaTrader software. The primary objective of MQL4 and MQL5 is automation of trading and facilitation of operational analysis. MQL4 and MQL5 comprises an extensive codebase source code library used for developing trading robots.
+ pageId 44398671
+ dailyPageViews 52
+ created 2014
+ backlinksCount 8
+ revisionCount 60
+ appeared 2005
+
+githubBigQuery MQL4
+ repos 38
+ users 34
+
+linguistGrammarRepo https://github.com/mqsoft/MQL5-sublime
+ firstCommit 2016
+ lastCommit 2016
+ committerCount 1
+ commitCount 4
+ sampleCount 3
+ example
+  //+------------------------------------------------------------------+
+  //|                                                script-sample.mq5 |
+  //|                                   Copyright 2016, Andrey Osorgin |
+  //+------------------------------------------------------------------+
+  //|                     The MIT License (MIT)                        |
+  //|                                                                  |
+  //| Permission is hereby granted, free of charge, to any person      |
+  //| obtaining a copy of this software and associated documentation   |
+  //| files (the "Software"), to deal in the Software without          |
+  //| restriction, including without limitation the rights to use,     |
+  //| copy, modify, merge, publish, distribute, sublicense, and/or sell|
+  //| copies of the Software, and to permit persons to whom the        |
+  //| Software is furnished to do so, subject to the following         |
+  //| conditions:                                                      |
+  //|                                                                  |
+  //| The above copyright notice and this permission notice shall be   |
+  //| included in all copies or substantial portions of the Software.  |
+  //|                                                                  |
+  //| THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,  |
+  //| EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES  |
+  //| OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND         |
+  //| NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT      |
+  //| HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,     |
+  //| WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING     |
+  //| FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR    |
+  //| OTHER DEALINGS IN THE SOFTWARE.                                  |
+  //|                                                                  |
+  //| A copy of the MIT License (MIT) is available at                  |
+  //| https://opensource.org/licenses/MIT                              |
+  //+------------------------------------------------------------------+
+  #property version   "1.00"
+  #property script_show_inputs
+  
+  #include <Trade\Trade.mqh>
+  
+  input int StopLoss=100; // Stop Loss
+  input int TakeProfit=100; // Take Profit
+  //+------------------------------------------------------------------+
+  //| Script program start function                                    |
+  //+------------------------------------------------------------------+
+  void OnStart()
+    {
+     CTrade trade;
+  //---
+     long stoplevel=SymbolInfoInteger(Symbol(),SYMBOL_TRADE_STOPS_LEVEL);
+     Print("Minimum stop level is: ",stoplevel);
+     double ask=SymbolInfoDouble(Symbol(),SYMBOL_ASK);
+     double bid=SymbolInfoDouble(Symbol(),SYMBOL_BID);
+     double sl = NormalizeDouble(bid - StopLoss*Point(),Digits());
+     double tp = NormalizeDouble(ask + TakeProfit*Point(),Digits());
+  //---
+     bool result=trade.Buy(0.01,Symbol(),ask,sl,tp,"test");
+  //---
+     Print("Success? ",result);
+    }
+  //+------------------------------------------------------------------+
+  
+
+githubLanguage MQL4
+ fileExtensions mq5 mqh
+ trendingProjectsCount 0
+ type programming
+ aceMode c_cpp
+ tmScope source.mql5
+ repos 1273
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Expert Advisor Programming: Creating Automated Trading Systems in MQL for Metatrader 4|2009|Andrew R. Young|11791642|3.65|17|1
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ How Hard is Mql4 Programming: A guide for the Absolute Beginner. (JimdDandy's Mql4 Programming Books Book 1)|2014|Jim Hodges|43563344|4.43|7|2
+ Programmer En Mql4||Henri Baltzer|63225783|0.0|0|0
+ Expert Advisor Programming for MetaTrader 4. Creating automated trading systems in the MQL4 language|2009|Andrew R. Young|11791642|3.65|17|1
+ Expert Advisor Programming for Metatrader 5: Creating Automated Trading Systems in the Mql5 Language|2013|Andrew R. Young|23933556|3.83|6|0
+ Introduction to MetaTrader 5 and Programming with MQL5 : Create your 1st Investment Robot with MQL5 step by step from ZERO.||Rafael F. V. C. Santos|63495915|1.00|1|0
+ MQL5 programming language: Advanced use of the trading platform MetaTrader 5: Creating trading robots and indicators||Timur Mashnin|54147063|3.00|1|0

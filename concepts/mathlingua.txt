@@ -1,0 +1,25 @@
+MathLingua
+==========
+
+MathLingua is a programming language created in 2019.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3483 on PLDB
+5 Years Old
+
+- MathLingua website
+ https://www.mathlingua.org/
+- MathLingua first developed in https://github.com/DominicKramer/mathlingua/issues
+- mathlingua.org was registered in 2019
+
+Result:
+. for: X
+  where:
+  . &#39;X \subset \reals&#39;
+  then:
+  . iff:
+    . &#39;X is \real.compact \set&#39;
+    then:
+    . &#39;X is \real.closed \real.bounded \set&#39;
+Metadata:
+. name = &quot;Heine-Borel Theorem&quot;

@@ -1,0 +1,58 @@
+BibTeX
+======
+
+BibTeX is an application created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#608 on PLDB
+39 Years Old
+
+BibTeX is reference management software for formatting lists of references. The BibTeX tool is typically used together with the LaTeX document preparation system. Within the typesetting system, its name is styled as                                                 B                                                                I                   B                                                                       T                                                                               E                                                                       X                                     {\displaystyle {\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }}   . Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/BibTeX
+
+- BibTeX website
+ https://www.ctan.org/pkg/bibtex
+- BibTeX Wikipedia page
+ https://en.wikipedia.org/wiki/BibTeX
+- BibTeX first developed in The TeX Users Group
+- Pygments supports syntax highlighting for BibTeX
+- See also: (9 related languages)LaTeX, Tex, URL, Common Lisp, Unicode, Scribe, HTML, Emacs, PDF
+
+ @inproceedings{Gousi13,
+  author = {Gousios, Georgios},
+  title = {The GHTorrent dataset and tool suite},
+  booktitle = {Proceedings of the 10th Working Conference on Mining Software
+    Repositories},
+  series = {MSR &#39;13},
+  year = {2013},
+  isbn = {978-1-4673-2936-1},
+  location = {San Francisco, CA, USA},
+  pages = {233--236},
+  numpages = {4},
+  url = {http://dl.acm.org/citation.cfm?id=2487085.2487132},
+  acmid = {2487132},
+  publisher = {IEEE Press},
+  address = {Piscataway, NJ, USA},
+ }
+
+%Hello world in BibTex
+
+ENTRY{author}{}{}
+
+FUNCTION {hello.world}
+{
+  &quot;Hello World!&quot; write$ newline$
+}
+
+READ
+EXECUTE {hello.world}
+
+@Book{abramowitz+stegun,
+ author    = &quot;Milton {Abramowitz} and Irene A. {Stegun}&quot;,
+ title     = &quot;Handbook of Mathematical Functions with
+              Formulas, Graphs, and Mathematical Tables&quot;,
+ publisher = &quot;Dover&quot;,
+ year      =  1964,
+ address   = &quot;New York City&quot;,
+ edition   = &quot;ninth Dover printing, tenth GPO printing&quot;
+}

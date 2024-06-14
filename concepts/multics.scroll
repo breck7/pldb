@@ -1,0 +1,29 @@
+import ../code/conceptPage.scroll
+
+id multics
+name Multics
+appeared 1967
+tags pl
+
+isOpenSource false
+centralPackageRepositoryCount 0
+country Canada
+originCommunity University of Calgary
+reference https://semanticscholar.org/paper/bbdb16ebe3c71e7b6d32750ae61d0aab7ab72e84
+
+wikipedia https://en.wikipedia.org/wiki/Multics
+ related pl-i assembly-language unix linux algol
+ summary Multics (Multiplexed Information and Computing Service) is an influential early time-sharing operating system, based around the concept of a single-level memory. Virtually all modern operating systems were heavily influenced by Multics – often through Unix, which was created by some of the people who had worked on Multics – either directly (Linux, macOS) or indirectly (Windows NT).
+ backlinksCount 303
+ pageId 18847
+ dailyPageViews 190
+ created 2001
+ appeared 1969
+
+hopl https://hopl.info/showlanguage.prx?exp=3513
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1980|Multics Emacs (Prose and Cons): A commercial text-processing system in Lisp|10.1145/800087.802784|5|1|B. Greenberg|ed42164691bd7f567ba0c8f61bdb061f3b70c750

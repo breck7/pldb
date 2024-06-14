@@ -1,0 +1,62 @@
+import ../code/conceptPage.scroll
+
+id lily
+name Lily
+appeared 2011
+tags pl
+website http://lily-lang.org
+webRepl http://lily-lang.org/intro-sandbox.html
+conceptDescription An interpreted language with a focus on expressiveness and type safety
+
+isOpenSource true
+writtenIn c lua ruby python cmake markdown yaml
+tryItOnline lily
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Lily
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 5225
+ committers 28
+ files 195
+ newestCommit 2021
+country Unknown
+originCommunity https://gitlab.com/FascinatedBox/lily/-/issues
+
+example
+ scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }
+ 
+ class Terminal(public var @foreground: Color, width_str: String)
+ {
+     public var @width = width_str.parse_i().unwrap_or(80)
+ 
+     public define set_fg(new_color: Color) {
+         @foreground = new_color
+     }
+ }
+ 
+ var terms = [Terminal(Color.White, "A"), Terminal(Color.Red, "40")]
+ 
+ terms.each(|e| e.width += 20 )
+      |> print
+
+gitlabRepo https://gitlab.com/FascinatedBox/lily
+githubRepo https://github.com/FascinatedBox/lily
+ firstCommit 2011
+ stars 1079
+ forks 39
+ subscribers 32
+ created 2014
+ updated 2022
+ description Interpreted language focused on expressiveness and type safety.
+ issues 0
+
+hasComments true
+hasSemanticIndentation false
+
+domainName lily-lang.org
+ registered 2016
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2017|Independently published|The Lily and the Cross: A Ring and Crown Novel|de la Cruz, Melissa|9781973305514

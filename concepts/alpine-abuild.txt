@@ -1,0 +1,110 @@
+Alpine Abuild
+=============
+
+Alpine Abuild is a programming language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1187 on PLDB
+18 Years Old
+99 Repos
+
+- There are at least 99 Alpine Abuild repos on GitHub
+- Alpine Abuild first developed in alpinelinux
+- GitHub supports syntax highlighting for Alpine Abuild
+- Read more about Alpine Abuild on the web: 1.
+ https://git.alpinelinux.org/cgit/abuild/tree/sample.APKBUILD
+
+# Contributor: Natanael Copa &lt;ncopa@alpinelinux.org&gt;
+# Maintainer: Natanael Copa &lt;ncopa@alpinelinux.org&gt;
+pkgname=abuild
+pkgver=2.27.0
+_ver=${pkgver%_git*}
+pkgrel=0
+pkgdesc=&quot;Script to build Alpine Packages&quot;
+url=&quot;http://git.alpinelinux.org/cgit/abuild/&quot;
+arch=&quot;all&quot;
+license=&quot;GPL2&quot;
+depends=&quot;fakeroot sudo pax-utils openssl apk-tools&gt;=2.0.7-r1 libc-utils
+	attr tar pkgconf patch&quot;
+if [ &quot;$CBUILD&quot; = &quot;$CHOST&quot; ]; then
+	depends=&quot;$depends curl&quot;
+fi
+makedepends_build=&quot;pkgconfig&quot;
+makedepends_host=&quot;openssl-dev&quot;
+makedepends=&quot;$makedepends_host $makedepends_build&quot;
+install=&quot;$pkgname.pre-install $pkgname.pre-upgrade&quot;
+subpackages=&quot;apkbuild-cpan:cpan apkbuild-gem-resolver:gems&quot;
+options=&quot;suid&quot;
+pkggroups=&quot;abuild&quot;
+source=&quot;http://dev.alpinelinux.org/archive/abuild/abuild-$_ver.tar.xz
+	&quot;
+
+_builddir=&quot;$srcdir/$pkgname-$_ver&quot;
+prepare() {
+	cd &quot;$_builddir&quot;
+	for i in $source; do
+		case $i in
+		*.patch)
+			msg &quot;Applying $i&quot;
+			patch -p1 -i &quot;$srcdir&quot;/$i || return 1
+			;;
+		esac
+	done
+	sed -i -e &quot;/^CHOST=/s/=.*/=$CHOST/&quot; abuild.conf
+}
+
+build() {
+	cd &quot;$_builddir&quot;
+	make || return 1
+}
+
+package() {
+	cd &quot;$_builddir&quot;
+	make install DESTDIR=&quot;$pkgdir&quot; || return 1
+	install -m 644 abuild.conf &quot;$pkgdir&quot;/etc/abuild.conf || return 1
+	install -d -m 775 -g abuild &quot;$pkgdir&quot;/var/cache/distfiles || return 1
+}
+
+cpan() {
+	pkgdesc=&quot;Script to generate perl APKBUILD from CPAN&quot;
+	depends=&quot;perl perl-libwww perl-json&quot;
+	arch=&quot;noarch&quot;
+	mkdir -p &quot;$subpkgdir&quot;/usr/bin
+	mv &quot;$pkgdir&quot;/usr/bin/apkbuild-cpan &quot;$subpkgdir&quot;/usr/bin/
+}
+
+gems() {
+	pkgdesc=&quot;APKBUILD dependency resolver for RubyGems&quot;
+	depends=&quot;ruby ruby-augeas&quot;
+	arch=&quot;noarch&quot;
+	mkdir -p &quot;$subpkgdir&quot;/usr/bin
+	mv &quot;$pkgdir&quot;/usr/bin/apkbuild-gem-resolver &quot;$subpkgdir&quot;/usr/bin/
+}
+
+md5sums=&quot;c67e4c971c54b4d550e16db3ba331f96  abuild-2.27.0.tar.xz&quot;
+sha256sums=&quot;c8db017e3dd168edb20ceeb91971535cf66b8c95f29d3288f88ac755bffc60e5  abuild-2.27.0.tar.xz&quot;
+sha512sums=&quot;98e1da4e47f3ab68700b3bc992c83e103f770f3196e433788ee74145f57cd33e5239c87f0a7a15f7266840d5bad893fc8c0d4c826d663df53deaee2678c56984  abuild-2.27.0.tar.xz&quot;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

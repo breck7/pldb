@@ -1,0 +1,26 @@
+SMTP
+====
+
+SMTP, aka Simple Mail Transfer Protocol, is a protocol created in 1982.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221982%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#284 on PLDB
+42 Years Old
+
+Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic mail (email) transmission. First defined by RFC 821 in 1982, it was last updated in 2008 with Extended SMTP additions by RFC 5321, which is the protocol in widespread use today. Although electronic mail servers and other mail transfer agents use SMTP to send and receive mail messages, user-level client mail applications typically use SMTP only for sending messages to a mail server for relaying. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+
+- SMTP Wikipedia page
+ https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+- SMTP docs
+ https://www.rfc-editor.org/rfc/rfc5321
+- SMTP first developed in USC Viterbi School of Engineering
+- See also: (10 related languages)FTP, HTTP, TLS, TCP, UDP, ASCII, MIME, UTF-8, EML, DOI
+- 1 languages in PLDB linking to SMTP: TMTP
+
+S: 220 smtp2.example.com ESMTP Postfix
+C: EHLO bob.example.com
+S: 250-smtp2.example.com Hello bob.example.org [192.0.2.201]
+S: 250-SIZE 14680064
+S: 250-PIPELINING
+S: 250 HELP

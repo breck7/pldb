@@ -1,0 +1,93 @@
+GAP
+===
+
+GAP, aka Groups, Algorithms and Programming, is an open source programming language created in 1986 by gap.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=gap
+
+#286 on PLDB
+38 Years Old
+4k Repos
+
+git clone https://github.com/gap-system/gap
+
+Try now: Riju · TIO
+
+GAP (Groups, Algorithms and Programming) is a computer algebra system for computational discrete algebra with particular emphasis on computational group theory.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GAP_(programming_language)
+
+- GAP website
+ http://www.gap-system.org/
+- GAP Wikipedia page
+ https://en.wikipedia.org/wiki/GAP_(programming_language)
+- GAP is developed on GitHub and has 615 stars
+- There are at least 3,760 GAP repos on GitHub
+- GAP first developed in RWTH Aachen University
+- GAP is written in C, Assembly language, GDScript, XML, Bourne shell, M4, C++, Make, Markdown, Perl, Tex, Ada, C#, YAML, Python, HTML, Pascal, CMake, Vim script, JavaScript, Yacc, Lisp, Lex, SAS, FORTRAN 77, CSS, Ruby, CSV, Ini
+- GAP on Twitter
+ https://twitter.com/gap_system
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using GAP in 4k repos on GitHub
+- There are 33 Project Euler users using GAP
+- Explore GAP snippets on Rosetta Code
+- GAP on HOPL
+ https://hopl.info/showlanguage.prx?exp=2668
+- Pygments supports syntax highlighting for GAP
+- GitHub supports syntax highlighting for GAP
+- gap-system.org was registered in 2000
+- See also: (3 related languages)C, Unix, Sage
+
+Print(&quot;Hello, world!\n&quot;);
+
+gap&gt; START_TEST(&quot;Test of factor groups and natural homomorphisms&quot;);
+
+gap&gt; G:=HeisenbergPcpGroup(2);
+Pcp-group with orders [ 0, 0, 0, 0, 0 ]
+
+gap&gt; H:=Subgroup(G,[G.2,G.3,G.4,G.5]);
+gap&gt; K:=G/H;
+gap&gt; NaturalHomomorphism(K);
+
+gap&gt; A:=Subgroup(H, [G.3]);
+Pcp-group with orders [ 0 ]
+gap&gt; B:=Subgroup(Subgroup(G,[G.1,G.4,G.5]), [G.4]);
+Pcp-group with orders [ 0 ]
+gap&gt; Normalizer(A,B);
+Pcp-group with orders [ 0 ]
+gap&gt; # The following used to trigger the error &quot;arguments must have a common parent group&quot;
+gap&gt; Normalizer(B,A);
+Pcp-group with orders [ 0 ]
+
+gap&gt; STOP_TEST( &quot;factor.tst&quot;, 10000000);
+
+gap&gt; G:=SmallGroup(8,1); # Set G to be a group of order 8.
+&lt;pc group of size 8 with 3 generators&gt;
+gap&gt; i:=IsomorphismPermGroup(G); # Find an isomorphism from G to a group of permutations
+&lt;action isomorphism&gt;
+gap&gt; Image(i,G); # The image of G under I - these are the generators of im G.
+Group([ (1,5,3,7,2,6,4,8), (1,3,2,4)(5,7,6,8), (1,2)(3,4)(5,6)(7,8) ])
+gap&gt; Elements(Image(i,G)); # All the elements of im G.
+[ (), (1,2)(3,4)(5,6)(7,8), (1,3,2,4)(5,7,6,8), (1,4,2,3)(5,8,6,7),
+   (1,5,3,7,2,6,4,8), (1,6,3,8,2,5,4,7), (1,7,4,5,2,8,3,6), (1,8,4,6,2,7,3,5) ]
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

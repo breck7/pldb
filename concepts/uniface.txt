@@ -1,0 +1,40 @@
+Uniface
+=======
+
+Uniface is a programming language created in 1994.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1023 on PLDB
+30 Years Old
+
+Uniface is a development and deployment platform for enterprise applications that can run in a large range of runtime environments, including mobile, mainframe, web, Service-oriented architecture (SOA), Windows, Java EE and .NET.  Uniface is a model-driven, Rapid Application Development (RAD) environment used to create mission-critical applications. Uniface applications are database- and platform-independent. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Uniface_(programming_language)
+
+- Uniface website
+ http://uniface.com
+- Uniface Wikipedia page
+ https://en.wikipedia.org/wiki/Uniface_(programming_language)
+- Uniface on Twitter
+ https://twitter.com/uniface
+- Explore Uniface snippets on Rosetta Code
+- uniface.com was registered in 1998
+- See also: (8 related languages)MySQL, SMTP, C, Java, Unix, Linux, SQL, PostgreSQL
+
+message &quot;Hello World&quot;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token message
+ Example

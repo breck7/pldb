@@ -1,0 +1,133 @@
+import ../code/conceptPage.scroll
+
+id maskjs
+name Mask
+appeared 2012
+tags template
+website http://www.atmajs.com/
+latestVersion 0.72.47
+
+isOpenSource true
+writtenIn typescript javascript json html markdown yaml css ini
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 1714
+ committers 9
+ files 537
+ newestCommit 2023
+country Germany
+originCommunity https://github.com/atmajs
+
+pygmentsHighlighter Mask
+ filename javascript.py
+ fileExtensions mask
+
+githubRepo https://github.com/atmajs/maskjs
+ firstCommit 2012
+ stars 95
+ forks 6
+ subscribers 10
+ created 2012
+ updated 2022
+ description Markup | Template | HMVC
+ issues 1
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+domainName atmajs.com
+ registered 2013
+
+githubBigQuery Mask
+ repos 595
+ users 576
+
+linguistGrammarRepo https://github.com/tenbits/sublime-mask
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 2
+ commitCount 60
+ sampleCount 1
+ example
+  
+  // HTML Elements
+  header {
+      
+      img .logo src='/images/~[currentLogo].png' alt=logo;
+      
+      h4 > 'Bar View'
+      
+      if (currentUser) {
+          
+          .account >
+              a href='/acount' >
+                  'Hello, ~[currentUser.username]'
+      }
+  }
+  
+  .view {
+      ul {
+         
+          // Iteration
+          for ((user, index) of users) {
+              
+              li.user data-id='~[user.id]' {
+                  
+                  // interpolation
+                  .name > '~[ user.username ]'
+                  
+                  // expression
+                  .count > '~[: user.level.toFixed(2) ]'
+                  
+                  // util
+                  /* Localization sample
+                   * lastActivity: "Am {0:dd. MM} war der letzte Eintrag"
+                   */
+                  .date > '~[ L: "lastActivity",  user.date]'
+              }
+          }
+      }
+      
+      // Component
+      :countdownComponent {
+          input type = text >
+              :dualbind value='number';
+              
+          button x-signal='click: countdownStart' > 'Start';
+          
+          h5 {
+              '~[bind: number]'
+              
+              :animation x-slot='countdownStart' {
+                  @model > 'transition | scale(0) > scale(1) | 500ms'
+                  @next  > 'background-color | red > blue | 2s linear'
+              }
+          }
+      }
+  }
+  
+  footer > :bazCompo {
+      
+      'Component generated at ~[: $u.format($c.date, "HH-mm") ]'
+  }
+
+isbndb 0
+
+githubLanguage Mask
+ fileExtensions mask
+ trendingProjectsCount 0
+ type markup
+ aceMode mask
+ tmScope source.mask
+ repos 306

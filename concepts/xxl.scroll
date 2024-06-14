@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id xxl
+name xxl
+appeared 2016
+tags pl
+
+writtenIn javascript c markdown bourne-shell vim-script bash
+repoStats
+ firstCommit 2016
+ commits 715
+ committers 5
+ files 87
+ newestCommit 2020
+
+example
+ // enclose (c)urly(b)races, (s)quare(b)brackets, (q)uotes:
+ 'ecb is {"{",x,"}"}; 'esb is {"[",x,"]"}; 'eq is {"\"",x,"\""};
+ 'jc is {join ","}; 'jac is {each y jc};  // join x with commas; apply y to each of x then join with commas
+ 'pair is {encode,":",(y encode)};        // key:val pair for dict
+ 'dict is {key as 'k; x val as 'v; [k],v >: pair jc ecb}; // get keys/vals, pair merge, commas, braces
+ // wrap non-scalar values in appropriate way:
+ 'many is {as 'el type case ('char, {el str eq}, 'dict, {el dict}, {el jac encode esb})};
+ 'encode is {ravel[many,str]};            // ravel calls x y[0] for arrays (len > 1), x y[1] for scalars
+
+githubRepo https://github.com/tlack/xxl
+ firstCommit 2016
+ stars 175
+ forks 11
+ subscribers 21
+ created 2016
+ updated 2022
+ description a minimal vector programming language
+ issues 3
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

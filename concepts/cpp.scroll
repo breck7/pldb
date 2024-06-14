@@ -1,0 +1,481 @@
+import ../code/conceptPage.scroll
+
+id cpp
+name C++
+appeared 1985
+creators Bjarne Stroustrup
+tags pl
+website http://isocpp.org/
+spec https://isocpp.org/std/the-standard
+latestVersion C++20
+blog https://www.isocpp.org/blog
+releaseNotes https://en.cppreference.com/w/cpp/language/history
+conference https://cppcon.org/ CppCon
+conference https://cppcon.org CppCon
+
+isOpenSource true
+supersetOf c
+usesSemanticVersioning false
+gdbSupport true
+visualParadigm false
+clocExtensions C c++ c++m cc ccm CPP cpp cppm cxx cxxm h++ inl ipp ixx pcc tcc tpp
+fileType text
+documentation https://devdocs.io/cpp/
+emailList https://lists.isocpp.org/mailman/listinfo.cgi
+eventsPageUrl https://isocpp.org/blog/category/events
+annualReportsUrl https://isocpp.org/about/annual-reports
+antlr https://github.com/antlr/grammars-v4/tree/master/cpp
+monaco cpp
+quineRelay C++
+replit https://repl.it/languages/cpp
+centralPackageRepositoryCount 0
+ubuntuPackage g++
+country United States
+originCommunity Bell Labs
+projectEuler C/C++
+ memberCount
+  2022 46028
+  2019 41087
+
+helloWorldCollection C++
+ // Hello World in C++ (pre-ISO)
+ 
+ #include <iostream.h>
+ 
+ main()
+ {
+     cout << "Hello World!" << endl;
+     return 0;
+ }
+ 
+pygmentsHighlighter C++
+ filename c_cpp.py
+ fileExtensions cpp hpp c++ h++ cc hh cxx hxx C H cp CPP tpp
+rijuRepl https://riju.codes/cpp
+ example
+  #include <iostream>
+  
+  int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+  }
+  
+ description General-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language
+ fileExtensions C cc cpp cxx c++ h hh hpp hxx h++
+ gitRepo https://github.com/llvm/llvm-project
+subreddit https://reddit.com/r/cpp
+ memberCount
+  2017 56189
+  2022 220359
+twitter https://twitter.com/isocpp
+leachim6 C++
+ filepath c/C++.cpp
+ fileExtensions cpp
+ example
+  #include <iostream>
+  
+  int main()
+  {
+     std::cout << "Hello World" << std::endl;
+  }
+  
+compilerExplorer C++
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+      return num * num;
+  }
+githubCopilotOptimized true
+
+meetup https://www.meetup.com/topics/c
+ memberCount 69338
+ groupCount 204
+keywords #define #defined #elif #else #endif #error #if #ifdef #ifndef #include #line #pragma #undef alignas alignof and and_eq asm atomic_cancel atomic_commit atomic_noexcept auto bitand bitor bool break case catch char char16_t char32_t class compl concept const constexpr const_cast continue decltype default delete do double dynamic_cast else enum explicit export extern false final float for friend goto if inline int import long module mutable namespace new noexcept not not_eq nullptr operator or or_eq override private protected public register reinterpret_cast requires return short signed sizeof static static_assert static_cast struct switch synchronized template this thread_local throw transaction_safe transaction_safe_dynamic true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken std::cout
+assignmentToken =
+stringToken "
+booleanTokens true false
+
+hasPartialApplication true
+ // http://www.cplusplus.com/reference/functional/bind/
+ // bind example
+ #include <iostream>     // std::cout
+ #include <functional>   // std::bind
+ 
+ // a function: (also works with function object: std::divides<double> my_divide;)
+ double my_divide (double x, double y) {return x/y;}
+ 
+ struct MyPair {
+   double a,b;
+   double multiply() {return a*b;}
+ };
+ 
+ int main () {
+   using namespace std::placeholders;    // adds visibility of _1, _2, _3,...
+ 
+   // binding functions:
+   auto fn_five = std::bind (my_divide,10,2);               // returns 10/2
+   std::cout << fn_five() << '\n';                          // 5
+ 
+   auto fn_half = std::bind (my_divide,_1,2);               // returns x/2
+   std::cout << fn_half(10) << '\n';                        // 5
+ 
+   auto fn_invert = std::bind (my_divide,_2,_1);            // returns y/x
+   std::cout << fn_invert(10,2) << '\n';                    // 0.2
+ 
+   auto fn_rounding = std::bind<int> (my_divide,_1,_2);     // returns int(x/y)
+   std::cout << fn_rounding(10,3) << '\n';                  // 3
+ 
+   MyPair ten_two {10,2};
+ 
+   // binding members:
+   auto bound_member_fn = std::bind (&MyPair::multiply,_1); // returns x.multiply()
+   std::cout << bound_member_fn(ten_two) << '\n';           // 20
+ 
+   auto bound_member_data = std::bind (&MyPair::a,ten_two); // returns ten_two.a
+   std::cout << bound_member_data() << '\n';                // 10
+ 
+   return 0;
+ }
+hasSingleDispatch true
+hasMagicGettersAndSetters false
+hasConstructors true
+ class Foobar {
+  public:
+   Foobar(double r = 1.0,
+          double alpha = 0.0)  // Constructor, parameters with default values.
+       : x_(r * cos(alpha))    // <- Initializer list
+   {
+     y_ = r * sin(alpha);  // <- Normal assignment
+   }
+ 
+  private:
+   double x_;
+   double y_;
+ };
+ Foobar a,
+        b(3),
+        c(5, M_PI/4);
+hasIterators true
+ std::vector<int> items;
+ items.push_back(5);  // Append integer value '5' to vector 'items'.
+ items.push_back(2);  // Append integer value '2' to vector 'items'.
+ items.push_back(9);  // Append integer value '9' to vector 'items'.
+ 
+ for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
+   std::cout << *it;  // And print value of 'items' for current index.
+ }
+hasFunctionOverloading true
+ // volume of a cube
+ int volume(const int s) {
+  return s*s*s;
+ }
+ // volume of a cylinder
+ double volume(const double r, const int h) {
+   return 3.1415926*r*r*static_cast<double>(h);
+ }
+hasNamespaces true
+ #include <iostream>
+ using namespace std;
+ 
+ // Variable created inside namespace
+ namespace first
+ {
+   int val = 500;
+ }
+  
+ // Global variable
+ int val = 100;
+ // Ways to do it: https://en.cppreference.com/w/cpp/language/namespace
+ namespace ns_name { declarations }
+ inline namespace ns_name { declarations }
+ namespace { declarations }
+ ns_name::name
+ using namespace ns_name;
+ using ns_name::name;
+ namespace name = qualified-namespace ;
+ namespace ns_name::inline(since C++20)(optional) name { declarations }
+hasMultipleInheritance true
+hasOperatorOverloading true
+hasTemplates true
+ template <int length>
+ Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
+ {
+     for (int i = 0; i < length; ++i)
+         value[i] += rhs.value[i];
+     return *this;
+ }
+hasVirtualFunctions true
+ class Animal {
+  public:
+   // Intentionally not virtual:
+   void Move(void) {
+     std::cout << "This animal moves in some way" << std::endl;
+   }
+   virtual void Eat(void) = 0;
+ };
+ 
+ // The class "Animal" may possess a definition for Eat if desired.
+ class Llama : public Animal {
+  public:
+   // The non virtual function Move is inherited but not overridden.
+   void Eat(void) override {
+     std::cout << "Llamas eat grass!" << std::endl;
+   }
+ };
+hasThreads true
+hasClasses true
+hasExceptions true
+hasAccessModifiers true
+
+jupyterKernel https://github.com/root-mirror/cling
+jupyterKernel https://github.com/QuantStack/xeus-cling
+wikipedia https://en.wikipedia.org/wiki/C++
+ example
+  1 #include <iostream>
+  2 #include <vector>
+  3 #include <stdexcept>
+  4
+  5 int main() {
+  6     try {
+  7         std::vector<int> vec{3, 4, 3, 1};
+  8         int i{vec.at(4)}; // Throws an exception, std::out_of_range (indexing for vec is from 0-3 not 1-4)
+  9     }
+  10     // An exception handler, catches std::out_of_range, which is thrown by vec.at(4)
+  11     catch (std::out_of_range &e) {
+  12         std::cerr << "Accessing a non-existent element: " << e.what() << '\n';
+  13     }
+  14     // To catch any other standard library exceptions (they derive from std::exception)
+  15     catch (std::exception &e) {
+  16         std::cerr << "Exception thrown: " << e.what() << '\n';
+  17     }
+  18     // Catch any unrecognised exceptions (i.e. those which don't derive from std::exception)
+  19     catch (...) {
+  20         std::cerr << "Some fatal error\n";
+  21     }
+  22 }
+ related ada algol-68 c clu ml simula python csharp chapel d java lua perl php rust nim sql bcpl unix assembly-language regex
+ summary C++ ( pronounced cee plus plus) is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, servers (e.g. e-commerce, web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes). C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM. C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in December 2014 as ISO/IEC 14882:2014 (informally known as C++14). The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, ISO/IEC 14882:2003, standard. The current C++14 standard supersedes these and C++11, with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Bjarne Stroustrup at Bell Labs since 1979, as an extension of the C language as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization. The C++17 standard is due in July 2017, with the draft largely implemented by some compilers already, and C++20 is the next planned standard thereafter. Many other programming languages have been influenced by C++, including C#, D, Java, and newer versions of C.
+ pageId 72038
+ dailyPageViews 4307
+ created 2001
+ backlinksCount 10943
+ revisionCount 1487
+ appeared 1998
+
+hopl https://hopl.info/showlanguage.prx?exp=1202
+tiobe C++
+ currentRank 4
+pypl C++
+
+domainName isocpp.org
+ registered 2012
+ awisRank
+  2022 210505
+
+githubBigQuery C++
+ repos 277733
+ users 170927
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ sampleCount 49
+ example
+  #include <cstdint>
+  
+  namespace Gui
+  {
+  
+  }
+  
+
+isbndb 128
+ year|publisher|title|authors|isbn13
+ 2011|PEARSON INDIA|ADTs, Data Structures, and Problem Solving with C++|Nyhoff|9780131409095
+ 2013|Pearson|Data Structures & Algorithm Analysis in C++|Weiss, Mark|9780132847377
+ 2012|Addison-Wesley Professional|C++ Primer (5th Edition)|Lippman, Stanley and Lajoie, Josée and Moo, Barbara|9780321714114
+ 2001|Pearson|Data Structures with C++ Using STL|Ford, William and Topp, William|9780130858504
+ 2013|Pearson|Introduction to Programming with C++ (Myprogramminglab)|Liang, Y. Daniel|9780133252811
+ 2013|Pearson|C++ How to Program (Early Objects Version) (9th Edition)|Deitel, Paul and Deitel, Harvey|9780133378719
+ 2014|Cengage Learning|C++ Programming: Program Design Including Data Structures|Malik, D. S.|9781285852751
+ 2011|Pearson|Engineering Problem Solving with C++ (3rd Edition)|Etter, Delores M. and Ingber, Jeanine A.|9780132492652
+ 2011|Pearson|Problem Solving With C++|Savitch, Walter|9780132162739
+ 2010|Pearson|C++ How to Program: Late Objects Version (How to Program (Deitel))|Deitel, Paul and Deitel, Harvey|9780132165419
+ 2007|Pearson|C++ Programming Today|Johnston, Barbara|9780136150992
+ 2003|Pearson|C++ for Java Programmers|Weiss, Mark|9780139194245
+ 2010|Wiley|C++ for Everyone|Horstmann, Cay S.|9780470927137
+ 1995|Pearson|Data Structures Using C and C++ (2nd Edition)|Langsam, Yedidyah and Augenstein, Moshe J. and Tenenbaum, Aaron M.|9780130369970
+ 2012|Cengage Learning|Introduction to Programming with C++|Zak, Diane|9781285061474
+ 2006|Pearson College Div|Data Structures And Algorithm Analysis in C++|Weiss, Mark Allen|9780321441461
+ 2011|Jones & Bartlett Learning|C++ Plus Data Structures|Dale, Nell|9781449646752
+ 2004|Addison-Wesley Professional|Developing Series 60 Applications: A Guide for Symbian OS C++ Developers: A Guide for Symbian OS C++ Developers|Edwards, Leigh and Barker, Richard and Staff of EMCC Software Ltd.|9780321227225
+ 1997|Addison-Wesley Professional|The C++ Programming Language (3rd Edition)|Stroustrup, Bjarne|9780201889543
+ 2012|PEARSON INDIA|C++ Standard Library, The: A Tutorial And Reference 2Nd Edition|NICOLAI M JOSUTTIS|9780321623218
+ 2012|Pearson|Starting Out with Games & Graphics in C++|Gaddis, Tony|9780133128079
+ 2008|Addison Wesley|Problem Solving with C++|Savitch, Walter|9780321531346
+ 2009|Jones & Bartlett Learning|Programming And Problem Solving With C++|Dale, Nell|9780763771560
+ 2009|Course Technology|Introduction to C++ Programming, Brief Edition|D. S. Malik|9781423902461
+ 2008|Addison-Wesley Professional|Programming: Principles and Practice Using C++|Stroustrup, Bjarne|9780321543721
+ 2008|Cengage Learning|C++ Programming: From Problem Analysis to Program Design|Malik, D. S.|9781423902096
+ 1998|Pearson|An Introduction to Computing Using C++ and Object Technology|Ford, William H. and Topp, William R.|9780132681520
+ 2004|Addison-Wesley Professional|C++ Template Metaprogramming|Abrahams, David|9780321227256
+ 2017|Cengage Learning|C++ Programming: Program Design Including Data Structures (MindTap Course List)|Malik, D. S.|9781337117562
+ 2012|Course Technology|C++ Programs to Accompany Programming Logic and Design|Smith, Jo Ann|9781133525806
+ 2011|Wiley|C++ for Everyone|Horstmann, Cay S.|9780470920923
+ 2010|Cengage Learning|C++ Programming: From Problem Analysis to Program Design (Introduction to Programming)|Malik, D. S.|9780538798082
+ 2000|Course Technology|Understanding Programming: An Introduction Using C++|Cannon, Scott R.|9780534379759
+ 2009|Pearson|Absolute C++ (4th Edition)|Savitch, Walter|9780136083818
+ 1994|Mcgraw-Hill Osborne Media|C++ from the Ground Up: Learn C++ from the Master|Schildt, Herbert|9780078819698
+ 2019|Packt Publishing|Hands-On Embedded Programming with C++17: Create versatile and robust embedded solutions for MCUs and RTOSes with modern C++|Posch, Maya|9781788629300
+ 2013|Pearson|C++ How to Program plus MyProgrammingLab with Pearson eText -- Access Card Package (9th Edition)|Deitel, Paul and Deitel, Harvey|9780133450736
+ 2008|Prentice Hall|C++ GUI Programming with Qt 4 (2nd Edition) (Prentice Hall Open Source Software Development Series)|Blanchette, Jasmin and Summerfield, Mark|9780132354165
+ 2003|McGraw-Hill Education|C++ from the Ground Up, Third Edition|Schildt, Herbert|9780072228977
+ 2008|Cengage Learning|Object-Oriented Programming Using C++ (Introduction to Programming)|Farrell, Joyce|9781423902577
+ 2017|Pearson|Problem Solving with C++ Plus MyLab Programming with Pearson eText -- Access Card Package|Savitch, Walter|9780134710747
+ 2007|Prentice Hall|C++ How to Program (6th Edition)|Deitel, Paul J.|9780136152507
+ 1992|Addison-Wesley Pub (Sd)|Algorithms in C++|Sedgewick, Robert|9780201510591
+ 2005|Wrox|Professional C++|Solter, Nicholas A. and Kleper, Scott J.|9780764574849
+ 2003|Cambridge University Press|Parallel Scientific Computing in C++ and MPI: A Seamless Approach to Parallel Algorithms and their Implementation|Karniadakis, George Em|9780521520805
+ 2006|Prentice Hall PTR|C++ GUI Programming with Qt 4|Blanchette, Jasmin and Summerfield, Mark|9780131872493
+ 2005|Addison-Wesley Professional|C++ Primer|Lippman, Stanley B. and Lajoie, Josee and Moo, Barbara E.|9780201721485
+ 1995|Computing McGraw-Hill|Enough Rope to Shoot Yourself in the Foot: Rules for C and C++ Programming (Unix/C)|Holub, Allen I.|9780070296893
+ 2004|Course Technology|Assembly Language and Computer Architecture Using C++ and Java™|Dos Reis, Anthony J.|9780534405274
+ 1999|Addison-Wesley Professional|Advanced CORBA® Programming with C++|Henning, Michi and Vinoski, Steve|9780201379273
+ 2009|Pearson|Introduction to Programming with C++ (2nd Edition)|Liang, Y. Daniel|9780136097204
+ 1989|Pearson Ptr|Programming in C++|Dewhurst, Stephen|9780137231560
+ 2011|In Easy Steps Limited|C++ Programming in easy steps|McGrath, Mike|9781840784329
+ 2002|Addison-Wesley Professional|C++ Gotchas: Avoiding Common Problems in Coding and Design|Dewhurst, Stephen C.|9780321125187
+ 2017|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Starting Out with C++ from Control Structures to Objects (My Programming Lab)|Gaddis, Tony|9780134484198
+ 1994|Macmillan Coll Div|Object Oriented Programming In C++|Johnsonbaugh, Richard and Kalin, Martin|9780023606823
+ 2010|Wrox|Ivor Horton's Beginning Visual C++ 2010|Horton, Ivor|9780470500880
+ 2008|Pearson|C++ Programming And Fundamental Concepts|Anderson Jr., Arthur E.|9780131182660
+ 2009|For Dummies|C++ All-In-One Desk Reference For Dummies|Mueller, John Paul and Cogswell, Jeff|9780470317358
+ 1996|Addison-Wesley Professional|Inside the C++ Object Model|Lippman, Stanley B.|9780201834543
+ 2013|Packt Publishing|Boost.Asio C++ Network Programming|Torjo, John|9781782163268
+ 2002|Addison-Wesley Professional|C++ Network Programming, Volume 2: Systematic Reuse with ACE and Frameworks|Debbie Lafferty and Schmidt, Douglas and Huston, Stephen|9780201795257
+ 1999|Addison-Wesley Professional|Essential C++|Lippman, Stanley B.|9780201485189
+ 2016|Packt Publishing|Beginning C++ Game Programming|Horton, John|9781786466198
+ 1998|Oxford University Press|An Introduction to C++ and Numerical Methods|Ortega, James M. and Grimshaw, Andrew S.|9780195117677
+ 2014|Pearson|Mylab Programming with Pearson Etext -- Access Card -- For Problem Solving with C++|Savitch, Walter|9780133834413
+ 1998|Sams|The Waite Group's Object-Oriented Programming in C++|Lafore, Robert and Waite Group|9781571691606
+ 2008|Packt Publishing|Microsoft Visual C++ Windows Applications by Example: Code and explanation for real-world MFC C++ Applications|Stefan Björnander|9781847195562
+ 2002|Prentice Hall|C++ How to Program (4th Edition)|Deitel, Harvey M. and Deitel, Paul J.|9780130384744
+ 1998|Addison-Wesley Professional|C++ For C Programmers, Third Edition (3rd Edition)|Pohl, Ira|9780201395198
+ 2012|Cambridge University Press|Numerical Methods in Finance with C++ (Mastering Mathematical Finance)|Capinski, Maciej J.|9780521177160
+ 2002|Wiley|Object-Oriented Programming in C++|Josuttis, Nicolai M.|9780470843994
+ 2006|Cengage Learning PTR|Beginning C++ Through Game Programming, Second Edition|Dawson, Michael|9781598633603
+ 2005|Peachpit Pr|C++ Programming|Ullman, Larry E. and Signer, Andreas|9780321356567
+ 2015|Apress|Advanced Metaprogramming in Classic C++|Di Gennaro, Davide|9781484210116
+ 1998|Waite Group Pr|C++ Primer Plus (Mitchell Waite Signature Series)|Prata, Stephen|9781571691316
+ 2018|Packt Publishing|Expert C++ Programming: Leveraging the power of modern C++ to build scalable modular applications|Swaminathan, Jeganathan and Posch, Maya and Galowicz, Jacek|9781788831390
+ 1995|O'Reilly & Associates|C++ The Core Language: A Foundation for C Programmers (Nutshell Handbooks)|Brown, Doug and Satir, Gregory|9781565921160
+ 1999|Microsoft Press|Learn Microsoft Visual C++ 6.0 Now|Sphar, Chuck|9781572319653
+ 2015|Pearson|Mylab Programming with Pearson Etext -- Access Code Card -- For Absolute C++|Savitch, Walter and Mock, Kenrick|9780134254005
+ 1995|McGraw-Hill College|Programming With Class: Introduction To Computer Science With C++|Kamin, Samuel N. and Reingold, Edward M.|9780070518339
+ 2005|Addison-Wesley Professional|C++ Common Knowledge: Essential Intermediate Programming: Essential Intermediate Programming|Dewhurst, Stephen|9780321321923
+ 2005|Charles River Media|C++ Standard Library Practical Tips (Programming Series)|Reese, Greg|9781584504009
+ 2001|Sams|Sams Teach Yourself C++ in 21 Days (Sams Teach Yourself...in 21 Days)|Liberty, Jesse|9780672320729
+ 2000|Microsoft Press|Microsoft Mastering: MFC Development Using Microsoft Visual C++ 6.0 (DV-DLT Mastering)|Microsoft Press|9780735609259
+ 2001|Addison-Wesley Professional|C++ Network Programming, Volume I: Mastering Complexity with ACE and Patterns: Mastering Complexity with ACE and Patterns|Schmidt, Douglas and Huston, Stephen|9780201604641
+ 2018|Manning Publications|Functional Programming in C++: How to improve your C++ programs using functional techniques|Cukic, Ivan|9781617293818
+ 2006|A-list Publishing|Hackish C++ Games & Demos|Michael Flenov|9781931769587
+ 1998|Sigs|Using Motif With C++ (sigs: Advances In Object Technology)|Daniel J. Bernstein|9780132073905
+ 2001|Irwin Professional Publishing|C++ Program Design|Davidson|9780072411638
+ 1989|Addison-Wesley|C++ primer|Lippman, Stanley B|9780201164879
+ 1996|Jones & Bartlett Pub|Programming and Problem Solving With C++|Dale, Nell B. and Weems, Chip and Headington, Mark and Dale, Nell|9780763702922
+ 2021|Reema Thareja|Object Oriented Programming With C++|OXFORD UNIVERSITY PRESS and OXFORD UNIVERSITY PRESS and OXFORD UNIVERSITY PRESS|9780199459636
+ 2005|For Dummies|C++ Timesaving Techniques For Dummies|Telles, Matthew|9780764579868
+ 2021|Prentice Hall of India|Unix System Programming Using C++|Chan, Terrence|9788120314689
+ 1992|Que Pub|C++ by Example (Programming Series)|Perry, Greg M.|9781565290389
+ 1996|Mcgraw-Hill|Schaum's Outlines - Programming With C++|Hubbard, John R. and Hubbard, John R.|9780070308374
+ 1994|Wiley|Programming for Graphics Files: In C and C++|Levine, John R. and Levine, John|9780471598565
+ 2020|Apress|Modern C++ for Absolute Beginners: A Friendly Introduction to C++ Programming Language and C++11 to C++20 Standards|Dmitrović, Slobodan|9781484260463
+ 2003|Jones And Bartlett Publishers|C++ Plus Data Structures|Dale, Nell|9780763704810
+ 2016|Packt Publishing|C++ Windows Programming|Bjornander, Stefan|9781786464224
+ 2007|Course Technology|An Introduction to Programming With C++ (Available Titles Skills Assessment Manager (SAM) - Office 2010)|Zak, Diane|9781418836184
+ 2007|Springer|Introduction to C++ Programming and Graphics|Pozrikidis, Constantine|9780387689920
+ 1994|Morgan Kaufmann Pub|Windows Animation Programming With C++|Young, Michael J.|9780127737508
+ 2006|Addison Wesley|Problem Solving, Abstraction & Design Using C++ (5th Edition)|Friedman, Frank L. and Koffman, Elliot B.|9780321450050
+ 2006|Oxford University Press|Object-Oriented Programming with C++ (Oxford Higher Education)|Sahay, Sourav|9780195681529
+ 2013|Addison-Wesley Professional|C++ Programming Language, The|Bjarne, Stroustrup|9780133522853
+ 2001|Pearson|C++ Programming with Design Patterns Revealed|Muldner, Tomasz|9780201722314
+ 1999|Wiley|Speech Recognition: Theory and C++ Implementation|Becchetti, Claudio and Ricotti, Lucio Prina|9780471977308
+ 1999|McGraw-Hill|Schaum's Easy Outline: Programming with C++|Hubbard, John R.|9780070527133
+ 1996|Prentice Hall|C++ and Object Oriented Programming|Irvine, Kip R.|9780023598524
+ 1999|Pearson|Object-Oriented Programming in C++ (2nd Edition)|Johnsonbaugh, Richard and Kalin, Martin|9780130158857
+ 2015|Apress|Practical C++ Financial Programming|Oliveira, Carlos|9781430267157
+ 2012|Wrox|Ivor Horton's Beginning Visual C++ 2012|Horton, Ivor|9781118368084
+ 2004|Wiley|Financial Instrument Pricing Using C++|Duffy, Daniel J.|9780470855096
+ 1999|Sams|Sams Teach Yourself C++ in 21 Days, Third Edition|Liberty, Jesse|9780672315152
+ 2005|Course Technology|Program Development and Design Using C++|Bronson, Gary J.|9780619216771
+ 1995|Wiley-interscience|A Jump Start Course In C++ Programming|James W. Cooper and Richard B. Lam|9780471031710
+ 1993|Que Pub|Borland C++ Power Programming/Book and Disk|Walnum, Clayton|9781565291720
+ 1999|Que Pub|Practical C++|McGregor, Robert W.|9780789721440
+ 2008|Prentice Hall In Association With Trolltech Press|C++ Gui Programming With Qt 4|Blanchette, Jasmin.|9780137143979
+ 2005|Addison Wesley|Starting Out With C++: Brief Version Update, Visual C++ .net (4th Edition)|Tony Gaddis and Barret Krupnow|9780321419613
+ 1997|TBS|Object-oriented Programming with C++|E Balagurusamy|9780074620380
+ 2008|In Easy Steps Limited|C++ Programming In Easy Steps|McGrath, Mike|9781840783520
+ 1996|Addison-Wesley|Stl Tutorial & Reference Guide: C++ Programming With the Standard Template Library (Addison-Wesley Professional Computing Series)|Musser, David R. and Saini, Atul|9780201633986
+ 2016|Packt Publishing|Boost.Asio C++ Network Programming Cookbook: Over 25 hands-on recipes to create robust and highly-effi cient cross-platform distributed applications with the Boost.Asio library|Radchuk, Dmytro|9781783986545
+ 2000|Scott Jones|Starting Out With The C++ (2nd Brief Edition)|Tony Gaddis|9781576760406
+ 2019|BPB Publications|Data Structures Through C++: Experience Data Structures C++ through animations|Kanetkar, Yashavant|9789388511360
+
+githubLanguage C++
+ fileExtensions cpp c++ cc cp cxx h h++ hh hpp hxx inc inl ino ipp ixx re tcc tpp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  google mediapipe https://github.com/google.png https://github.com/google/mediapipe C++ #f34b7d 2824 386 2250 "MediaPipe is a cross-platform framework for building multimodal applied machine learning pipelines"
+  fmtlib fmt https://github.com/fmtlib.png https://github.com/fmtlib/fmt C++ #f34b7d 6596 796 273 "A modern formatting library"
+  TheCherno Hazel https://github.com/TheCherno.png https://github.com/TheCherno/Hazel C++ #f34b7d 1589 265 130 "Hazel Engine"
+  arendst Sonoff-Tasmota https://github.com/arendst.png https://github.com/arendst/Sonoff-Tasmota C++ #f34b7d 7683 1795 281 "Provide ESP8266 based itead Sonoff with Web, MQTT and OTA firmware using Arduino IDE or PlatformIO"
+  ocornut imgui https://github.com/ocornut.png https://github.com/ocornut/imgui C++ #f34b7d 16553 2604 474 "Dear ImGui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies"
+  anhkgg SuperWeChatPC https://github.com/anhkgg.png https://github.com/anhkgg/SuperWeChatPC C++ #f34b7d 2071 573 474 超级微信电脑客户端，支持多开、防消息撤销、语音消息备份...开放WeChatSDK
+  gnuradio gnuradio https://github.com/gnuradio.png https://github.com/gnuradio/gnuradio C++ #f34b7d 1798 1055 79 "GNU Radio"
+  plaidml plaidml https://github.com/plaidml.png https://github.com/plaidml/plaidml C++ #f34b7d 2457 214 120 "PlaidML is a framework for making deep learning work everywhere."
+  TonyChen56 WeChatRobot https://github.com/TonyChen56.png https://github.com/TonyChen56/WeChatRobot C++ #f34b7d 1468 559 938 PC版微信机器人
+  huihut interview https://github.com/huihut.png https://github.com/huihut/interview C++ #f34b7d 7108 2269 641 "📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。"
+  skypjack entt https://github.com/skypjack.png https://github.com/skypjack/entt C++ #f34b7d 2053 180 302 "Gaming meets modern C++ - a fast and reliable entity-component system (ECS) and much more"
+  OneLoneCoder videos https://github.com/OneLoneCoder.png https://github.com/OneLoneCoder/videos C++ #f34b7d 535 395 72 "The official distribution of olcConsoleGameEngine, a tool used in javidx9's YouTube videos and projects"
+  dolphin-emu dolphin https://github.com/dolphin-emu.png https://github.com/dolphin-emu/dolphin C++ #f34b7d 5521 1278 96 "Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements."
+  osquery osquery https://github.com/osquery.png https://github.com/osquery/osquery C++ #f34b7d 14868 1796 457 "SQL powered operating system instrumentation, monitoring, and analytics."
+  danielkrupinski Osiris https://github.com/danielkrupinski.png https://github.com/danielkrupinski/Osiris C++ #f34b7d 260 115 56 "Free open-source training software / cheat for Counter-Strike: Global Offensive, written in modern C++. GUI powered by imgui."
+  carla-simulator carla https://github.com/carla-simulator.png https://github.com/carla-simulator/carla C++ #f34b7d 3098 840 239 "Open-source simulator for autonomous driving research."
+  grpc grpc https://github.com/grpc.png https://github.com/grpc/grpc C++ #f34b7d 22945 5381 557 "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
+  FastLED FastLED https://github.com/FastLED.png https://github.com/FastLED/FastLED C++ #f34b7d 3180 828 63 "The main FastLED library (successor to FastSPI_LED). Please direct questions/requests for advice to the reddit community - http://fastled.io/r - we'd like to keep issues to just tracking bugs/enhancements/tasks. *NOTE* major library work is currently on hold"
+  TarsCloud Tars https://github.com/TarsCloud.png https://github.com/TarsCloud/Tars C++ #f34b7d 7510 1822 243 "Tars is a high-performance RPC framework based on name service and Tars protocol, also integrated administration platform, and implemented hosting-service via flexible schedule."
+  apache thrift https://github.com/apache.png https://github.com/apache/thrift C++ #f34b7d 6723 3037 131 "Apache Thrift"
+  NVIDIA DALI https://github.com/NVIDIA.png https://github.com/NVIDIA/DALI C++ #f34b7d 1829 208 245 "A library containing both highly optimized building blocks and an execution engine for data pre-processing in deep learning applications"
+  haoel leetcode https://github.com/haoel.png https://github.com/haoel/leetcode C++ #f34b7d 11615 3642 295 "LeetCode Problems' Solutions"
+  llvm llvm-project https://github.com/llvm.png https://github.com/llvm/llvm-project C++ #f34b7d 1832 557 213 "This is the canonical git mirror of the LLVM subversion repository. The repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org."
+  pytorch pytorch https://github.com/pytorch.png https://github.com/pytorch/pytorch C++ #f34b7d 31392 7706 966 "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+  microsoft onnxruntime https://github.com/microsoft.png https://github.com/microsoft/onnxruntime C++ #f34b7d 1113 247 135 "ONNX Runtime: cross-platform, high performance scoring engine for ML models"
+ trendingProjectsCount 26
+ type programming
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-c++src
+ tmScope source.c++
+ aliases cpp
+ repos 2161625
+
+indeedJobs c++ engineer
+ 2017 22237
+linkedInSkill c++
+ 2018 3886123
+stackOverflowSurvey
+ 2021
+  users 20057
+  medianSalary 54049
+  fans 15249
+  percentageUsing 0.24
+
+semanticScholar 6
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1986|C++ Programming Language|10.1002/9781118361054.ch3|7014|230|B. Stroustrup|c04e29b09f67158e7c4405ddad18108a1ddecbd4
+ 2018|TOPAS and TOPAS-Academic: an optimization program integrating computer algebra and crystallographic objects written in C++|10.1107/S1600576718000183|627|27|A. Coelho|f24ca222ed1a87ff7892d5bf969643eb240e86b3
+ 1991|Advanced C++ Programming Styles and Idioms|10.1109/TOOLS.1997.681881|468|14|J. Coplien|20627f2ad92cf787efb4ec960e49b89d10bb4529
+ 2000|Introduction to the GiNaC Framework for Symbolic Computation within the C++ Programming Language|10.1006/jsco.2001.0494|389|39|Christian Bauer and A. Frink and R. Kreckel|5b2f780c3ce63f1795bbfa6e3e7e22d8ae5e268b
+ 2004|Supporting Students in C++ Programming Courses with Automatic Program Style Assessment|10.28945/300|84|6|Kirsti Ala-Mutka and Toni Uimonen and Hannu-Matti Järvinen|7880378ba289053eadf19cb03ce2f543616a2b53
+ 1999|An Overview of the C++ Programming Language|10.1201/9781420049114.sec3|24|3|B. Stroustrup|eb331db6ec60d64b9e0d90978ee7398d9e2f0605

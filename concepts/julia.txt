@@ -1,0 +1,358 @@
+Julia
+=====
+
+Julia is an open source programming language created in 2012 by Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeff%20Bezanson
+ https://pldb.io/concepts/../lists/creators.html#q=Alan%20Edelman
+ https://pldb.io/concepts/../lists/creators.html#q=Stefan%20Karpinski
+ https://pldb.io/concepts/../lists/creators.html#q=Viral%20B.%20Shah
+
+#33 on PLDB
+12 Years Old
+54k Repos
+
+git clone https://github.com/JuliaLang/julia
+
+Try now: Riju · TIO
+
+Julia is a high-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science, without the typical need of separate compilation to be fast, while also being effective for general-purpose programming, web use or as a specification language. Distinctive aspects of Julia's design include a type system with parametric polymorphism and types in a fully dynamic programming language and multiple dispatch as its core programming paradigm. It allows concurrent, parallel and distributed computing, and direct calling of C and Fortran libraries without glue code. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Julia_(programming_language)
+
+- Julia website
+ http://julialang.org/
+- Julia downloads page
+ https://julialang.org/downloads/
+- Julia Wikipedia page
+ https://en.wikipedia.org/wiki/Julia_(programming_language)
+- Julia is developed on GitHub and has 41,515 stars
+- Watch the history of the Julia repo visualized with Gource
+- Julia docs
+ https://docs.julialang.org/en/v1/
+- There are at least 53,507 Julia repos on GitHub
+- Julia first developed in https://github.com/JuliaLang
+- Julia is written in Julia, Markdown, TOML, C, Make, C++, LLVM IR, Bourne shell, Diff, XML, Scheme, Lisp, Assembly language, Tex, YAML, JSON, Objective-C, Python, SVG, Pascal, Clojure, D, CSS, Dockerfile
+- Julia on Twitter
+ https://twitter.com/julialanguage
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Julia in 6k repos on GitHub
+- Check out the 36 Julia meetup groups on Meetup.com.
+- There are 20,624 members in the Julia subreddit
+- There are 700 Project Euler users using Julia
+- In the 2021 StackOverflow developer survey Julia programmers reported a median salary of $65,228. 1% of respondents reported using Julia. 1,068 programmers reported using Julia, and 2,445 said they wanted to use it
+- Explore Julia snippets on Rosetta Code
+- Julia ranks #35 in the TIOBE Index
+- Julia Ubuntu package
+ https://packages.ubuntu.com/jammy/julia
+- Julia LSP implementation
+- CodeMirror package for syntax highlighting Julia
+- Monaco package for syntax highlighting Julia
+- Pygments supports syntax highlighting for Julia
+- GitHub supports syntax highlighting for Julia
+- Julia appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Julia
+- There is a central package repository for Julia
+- Release Notes for Julia
+ https://docs.julialang.org/en/v1/NEWS/
+- Official Blog page for Julia
+ https://julialang.org/blog/
+- Events page for Julia
+ https://discourse.julialang.org/c/community/events/56
+- Frequently Asked Questions for Julia
+ https://discourse.julialang.org/faq
+- Indeed.com has 85 matches for "julia engineer".
+- See also: (28 related languages)C, Scheme, LLVM IR, Fortran, IA-32, Linux, FreeBSD, Lisp, Lua, Mathematica, Wolfram Language, MATLAB, Perl, Python, R, Ruby, Regular Expressions, Unicode, UTF-8, Common Lisp, Dylan, Algol, Fortress, HTML, XML, JSON, ARM, PowerPC
+- 10 languages in PLDB linking to Julia: Ace Editor, Chapel, cloc, dex, invokator, Julia, Links, mal, polyglot-compiler, Pygments
+
+println(&quot;Hello, world!&quot;)
+
+println(&quot;Hello World&quot;)
+
+# Hello world in Julia
+
+println(&quot;Hello, World!&quot;)
+
+#!/usr/bin/env julia
+
+# From https://github.com/JoshCheek/language-sampler-for-fullpath/blob/b766dcdbd249ec63516f491390a75315e78cba95/julia/fullpath
+help_screen = &quot;&quot;&quot;
+usage: fullpath *[relative-paths] [-c]
+
+  Prints the fullpath of the paths
+  If no paths are given as args, it will read them from stdin
+
+  If there is only one path, the trailing newline is omitted
+
+  The -c flag will copy the results into your pasteboard
+&quot;&quot;&quot;
+
+help  = false
+copy  = false
+dir   = pwd()
+paths = []
+
+for arg = ARGS
+  if arg == &quot;-h&quot; || arg == &quot;--help&quot;
+    help = true
+  elseif arg == &quot;-c&quot; || arg == &quot;--copy&quot;
+    copy = true
+  elseif arg != &quot;&quot;
+    push!(paths, arg)
+  end
+end
+
+if help
+  print(help_screen)
+  exit()
+end
+
+function notempty(string)
+  return !isempty(string)
+end
+
+if length(paths) == 0
+  paths = filter(notempty, map(chomp, readlines()))
+end
+
+function print_paths(stream, paths)
+  if length(paths) == 1
+    path = paths[1]
+    print(stream, &quot;$dir/$path&quot;)
+  else
+    for path = paths
+      println(stream, &quot;$dir/$path&quot;)
+    end
+  end
+end
+
+if copy
+  read, write, process = readandwrite(`pbcopy`)
+  print_paths(write, paths)
+  close(write)
+end
+
+print_paths(STDOUT, paths)
+
+julia&gt; p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
+julia&gt; println(&quot;Hello world!&quot;, &quot; I&#39;m on cloud &quot;, f(0, 4), &quot; as Julia supports recognizable syntax!&quot;)
+Hello world! I&#39;m on cloud 9 as Julia supports recognizable syntax!
+
+begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  # 0b[01]+((_[01]+)+)?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  # 0o[0-7]+((_[0-7]+)+)?
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Token 
+ Example
+  module MyModule
+  using Lib
+  
+  using BigLib: thing1, thing2
+  
+  import Base.show
+  
+  export MyType, foo
+  
+  struct MyType
+      x
+  end
+  
+  bar(x) = 2x
+  foo(a::MyType) = bar(a.x) + 1
+  
+  show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
+  end
+row
+ Feature Pipes
+ FeatureLink ../features/hasPipes.html
+ Supported ✓
+ Token 
+ Example
+  [1,2,3] |> (y -> f(3, y))
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  # Including the same code in different modules provides mixin-like behavior.
+  module Normal
+  include("mycode.jl")
+  end
+  
+  module Testing
+  include("safe_operators.jl")
+  include("mycode.jl")
+  end
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
+  # One can have multiple files per module, and multiple modules per file:
+  using MyModule
+  using MyModule: x, p
+  import MyModule
+  import MyModule.x, MyModule.p
+  import MyModule: x, p
+  module Foo
+  include("file1.jl")
+  include("file2.jl")
+  end
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example
+  print("hello world")
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  80766866
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token #= =#
+ Example
+  #=
+  A comment.
+  =#
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  δ = 0.00001
+row
+ Feature Multiple Dispatch
+ FeatureLink ../features/hasMultipleDispatch.html
+ Supported ✓
+ Token 
+ Example
+  collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
+  collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
+  collide_with(x::Spaceship, y::Asteroid) = ... # deal with spaceship hitting asteroid
+  collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
+  macro show_value(variable)
+      quote
+          println("The ", $(string(variable)), " you passed is ", $(esc(variable)))
+      end
+  end
+  
+  @show_value(orange)
+  @show_value(apple)
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

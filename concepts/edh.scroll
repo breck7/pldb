@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id edh
+name Đ
+appeared 2019
+creators Compl Yue
+tags pl
+website https://github.com/e-wrks/edh
+aka edh
+conceptDescription Edh is a dynamically & strongly typed, procedural (thus imperative), value-oriented (i.e. immutable first, yet with non-traditional Object constructs), interpreted programming language, that parasitic on GHC and heavily relying on the Haskell implementation of Software Transactional Memory for unified intuition of concurrency and data-consistency.
+
+writtenIn haskell markdown python json javascript yaml
+repoStats
+ firstCommit 2020
+ commits 1457
+ committers 2
+ files 156
+ newestCommit 2022
+country China
+originCommunity https://github.com/e-wrks
+
+example
+ method satExample() or ({generator _ ()
+   for x1 from [true, false] do
+   for x2 from [true, false] do
+   # ...
+   for xN from [true, false] do
+   yield formula (
+     x1, x2,
+     # ...,
+     xn
+   )
+ })
+
+githubRepo https://github.com/e-wrks/edh
+ firstCommit 2019
+ stars 27
+ subscribers 5
+ created 2020
+ updated 2020
+ description Đ (Edh) - The next-big-things ought to happen with Haskell not C/C++
+ forks 5
+ issues 0

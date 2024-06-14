@@ -1,0 +1,76 @@
+import ../code/conceptPage.scroll
+
+id xl-lang
+name XL
+appeared 2000
+creators Christophe de Dinechin
+tags pl
+website http://xlr.sourceforge.net/
+latestVersion v1.70.0
+
+isOpenSource true
+writtenIn css cpp make yaml bash markdown lisp awk html asciidoc python ini javascript
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2003
+ commits 5437
+ committers 23
+ files 1369
+ newestCommit 2022
+reference https://fosdem.org/2020/schedule/event/xllang/
+
+example
+ 0! is 1
+ N! is N * (N-1)!
+ 
+ for I in 1..5 loop
+     print "The factorial of ", I, " is ", I!
+leachim6 XL
+ filepath x/XL.xl
+ fileExtensions xl
+ example
+  // XL programming language: http://xlr.sourceforge.net
+  writeln "Hello World"
+  
+
+githubRepo https://github.com/c3d/xl
+ firstCommit 2003
+ stars 202
+ forks 11
+ subscribers 14
+ created 2012
+ updated 2022
+ description A minimalist, general-purpose programming language based on meta-programming and parse tree rewrites
+ issues 45
+
+printToken writeln
+stringToken "
+booleanTokens True False
+
+hasSemanticIndentation true
+hasTemplates true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasBooleans true
+
+wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
+ example
+  if true then TrueBody else FalseBody -> TrueBody
+    if false then TrueBody else FalseBody -> FalseBody
+ related ada basic c fortran java lisp prolog visual-basic smalltalk forth
+ summary XL ("eXtensible Language") is the first and so far the only computer programming language designed to support concept programming.XL features programmer-reconfigurable syntax and semantics. Compiler plug-ins can be used to add new features to the language. A base set of plug-ins implements a relatively standard imperative language. Programmers can write their own plug-ins to implement application-specific notations, such as symbolic differentiation, which can then be used as readily as built-in language features.
+ created 2005
+ backlinksCount 36
+ pageId 2855241
+ revisionCount 106
+ dailyPageViews 26
+ appeared 2000
+
+domainName xlr.sourceforge.net
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1983|Phoenix Pub. Associates|The Atari 600 XL program book|Goode, Peter|9780946576111
+ 2010||Xl (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130899875
+ 2010||Xl (xml Programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786131028571

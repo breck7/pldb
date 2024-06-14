@@ -1,0 +1,29 @@
+import ../code/conceptPage.scroll
+
+id farcaster
+name Farcaster
+appeared 2021
+creators Dan Romero and Varun Srinivasan
+tags protocol
+latestVersion 0.0.1
+conceptDescription Farcaster is a decentralized social network built on top of Ethereum. The Layer 1 blockchain manages user identities, while a Layer 2 network propagates updates between users. It offers: Secure, memorable, and human-readable user identifiers like @alice. Real-time settlement and propagation of changes between users. Decentralized access to all data on the network at reasonable costs.
+
+writtenIn markdown yaml json
+influencedBy activity-pub ssb
+repoStats
+ firstCommit 2022
+ commits 159
+ committers 25
+ files 11
+ newestCommit 2024
+country United States
+originCommunity https://github.com/farcasterxyz
+
+githubRepo https://github.com/farcasterxyz/protocol
+ stars 1335
+ forks 66
+ subscribers 32
+ created 2022
+ updated 2023
+ description Specification of the Farcaster Protocol
+ issues 7

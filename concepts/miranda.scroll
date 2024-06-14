@@ -1,0 +1,72 @@
+import ../code/conceptPage.scroll
+
+id miranda
+name Miranda
+appeared 1985
+creators David Turner
+tags pl
+
+fileType text
+centralPackageRepositoryCount 0
+country United Kingdom
+originCommunity Research Software Ltd
+
+rijuRepl https://riju.codes/miranda
+ example
+  main = [Stdout "Hello, world!"]
+  
+ description Pure, non-strict, polymorphic, higher order functional programming language designed by David Turner in 1983-6
+ fileExtensions m
+ website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
+ gitRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/
+leachim6 Miranda
+ filepath m/Miranda.m
+ fileExtensions m
+ example
+  main :: [sys_message]
+  main = [Stdout "Hello World"]
+  
+
+printToken Stdout
+stringToken "
+
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
+ example
+  > || The infinite list of all prime numbers.
+  
+  The list of potential prime numbers starts as all integers from 2 onwards;
+  as each prime is returned, all the following numbers that can exactly be
+  divided by it are filtered out of the list of candidates.
+  
+  > primes = sieve [2..]
+  > sieve (p:x) = p : sieve [n | n <- x; n mod p ~= 0]
+ related krc ml hope clean haskell c unix iswim occam python pascal
+ summary Miranda is a lazy, purely functional programming language designed by David Turner as a successor to his earlier programming languages SASL and KRC, using some concepts from ML and Hope.  It was produced by Research Software Ltd. of England (which holds a trademark on the name Miranda) and was the first purely functional language to be commercially supported.Miranda was first released in 1985, as a fast interpreter in C for Unix-flavour operating systems, with subsequent releases in 1987 and 1989. Miranda had a strong influence on the later Haskell programming language.
+ pageId 93267
+ created 2002
+ backlinksCount 47
+ revisionCount 140
+ dailyPageViews 56
+ appeared 1985
+
+hopl https://hopl.info/showlanguage.prx?exp=911
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1991-09-20T00:00:01Z|Taylor & Francis Books Ltd|Functional Programming with Miranda|Hoyler, Ian|9780273034537
+ 1995|Prentice Hall|Programming With Miranda|Clack, Chris and Myers, Colin and Poon, Ellen|9780131925922
+
+semanticScholar 7
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1986|An overview of Miranda|10.1145/15042.15053|247|19|D. Turner|35306f7f53096a62cc087655f6f6e1e21d5100ac
+ 1986|Laws in Miranda|10.1145/319838.319839|35|1|S. Thompson|ff17127456c7e6156c744d0b7df8c60f9e150ba3
+ 1993|Using Miranda as a first programming language|10.1017/S0956796800000575|20|3|Tim Lambert and P. Lindsay and K. Robinson|216f9a40d8dfe5d8c775a3e5fe17972ecc7fb1b3
+ 1994|A visual Miranda machine|10.1109/SEDC.1994.475337|14|3|M. Auguston and J. Reinfelds|57a92013fe97eab9d2fcdab1c94ae1b2cf640d0f
+ 1989|A logic for Miranda|10.1007/BF01887213|12|0|S. Thompson|f24a5b82c29d8e207368c9e1533fdf5ff953fd29
+ 1991|Using XView/X11 from Miranda|10.1007/978-1-4471-3196-0_30|7|0|Satnam Singh|6f11dc39c5a2eafae616c00be5f44e596bc8eecd
+ 1996|SNACC: a parser generator for use with Miranda|10.1145/331119.331416|2|0|D. Turner|3f44c9986b64c301c4014527782743a052d10196

@@ -1,0 +1,87 @@
+Xojo
+====
+
+Xojo is an open source programming language created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#385 on PLDB
+28 Years Old
+570 Repos
+
+The Xojo programming environment is developed and commercially marketed by Xojo, Inc. of Austin, Texas for software development targeting macOS, Microsoft Windows, Linux, iOS, the Web and Raspberry Pi. Xojo uses a proprietary object-oriented BASIC dialect, also known as Xojo.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Xojo
+
+- Xojo website
+ http://xojo.com
+- Xojo Wikipedia page
+ https://en.wikipedia.org/wiki/Xojo
+- There are at least 570 Xojo repos on GitHub
+- Xojo on Twitter
+ https://twitter.com/xojo
+- The  Google BigQuery Public Dataset GitHub snapshot shows 43 users using Xojo in 68 repos on GitHub
+- Explore Xojo snippets on Rosetta Code
+- Xojo appears in the TIOBE Index
+- GitHub supports syntax highlighting for Xojo
+- See also: (8 related languages)Linux, iOS, BASIC, JVM, X86, XML, Visual Basic, Gambas
+- 1 languages in PLDB linking to Xojo: REALBasic (now Xojo)
+
+Function Run(args() as String) As Integer
+  Print &quot;Hello World&quot;
+  Quit
+End Function
+
+#tag Toolbar
+Begin Toolbar MyToolbar
+	Begin ToolButton FirstItem
+		Caption = &quot;First Item&quot;
+		HelpTag = &quot;&quot;
+		Style = 0
+	End
+	Begin ToolButton SecondItem
+		Caption = &quot;Second Item&quot;
+		HelpTag = &quot;&quot;
+		Style = 0
+	End
+End
+#tag EndToolbar
+
+Dim names() As String = Array(&quot;Red Sox&quot;, &quot;Yankees&quot;, &quot;Orioles&quot;, &quot;Blue Jays&quot;, &quot;Rays&quot;)
+For i As Integer = 0 To names.UBound
+  ListBox1.AddRow(names(i))
+Next
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

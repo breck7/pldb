@@ -1,0 +1,30 @@
+3APL
+====
+
+3APL is a programming language created in 1998.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2958 on PLDB
+26 Years Old
+
+An Abstract Agent Programming Language or Artificial Autonomous Agents Programming Language or 3APL (pronounced triple-A-P-L) is an experimental tool and programming language for the development, implementation and testing of multiple cognitive agents using the Belief-Desire-Intention (BDI) approach.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/3APL
+
+- 3APL Wikipedia page
+ https://en.wikipedia.org/wiki/3APL
+- 3APL first developed in Computer science Department, Utrecht University
+- 3APL on HOPL
+ https://hopl.info/showlanguage.prx?exp=7802
+- See also: (3 related languages)Java, Prolog, Strips
+- Read more about 3APL on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/5167cbb780bac55456a0f69c16f175eb61269c8d
+
+PLANBASE { SetStatus(started); }
+PR-RULES {
+	goTo(R) &lt;- location(R,X,Y) AND NOT at(X,Y) | {
+		NowAt(X,Y);
+	}
+	clean(R) &lt;- location(R,X,Y) AND at(X,Y) | {
+		Clean(R);
+	}
+}

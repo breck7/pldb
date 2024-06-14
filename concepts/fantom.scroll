@@ -1,0 +1,150 @@
+import ../code/conceptPage.scroll
+
+id fantom
+name Fantom
+appeared 2005
+tags pl
+website http://www.fantom.org
+
+isOpenSource true
+runsOnVm jvm
+tryItOnline fantom
+fileType text
+documentation https://docs.fantom.foundation/
+rosettaCode http://www.rosettacode.org/wiki/Category:Fantom
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://github.com/fantom-lang
+
+pygmentsHighlighter Fantom
+ filename fantom.py
+ fileExtensions fan
+leachim6 Fantom
+ filepath f/Fantom.fan
+ fileExtensions fan
+ example
+  // Hello from Fantom!
+  class HelloWorld {
+    static Void main() {
+      echo("Hello World")
+    }
+  }
+  
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Fantom_(programming_language)
+ example
+  // Hello from Fantom!
+  class HelloWorld
+  {
+    static Void main()
+    {
+      echo("Hello, World!")
+    }
+  }
+ related csharp java scala ruby erlang javascript boo ceylon gosu groovy kotlin
+ summary Fantom is a general purpose object-oriented programming language created by Brian and Andy Frank that runs on the Java Runtime Environment (JRE), JavaScript, and the .NET Common Language Runtime (CLR) (.NET support is considered "prototype" status). Its primary design goal is to provide a standard library API that abstracts away the question of whether the code will ultimately run on the JRE or CLR. Like C# and Java, Fantom uses a curly brace syntax. The language supports functional programming through closures and concurrency through the Actor model. Fantom takes a "middle of the road" approach to its type system, blending together aspects of both static and dynamic typing.
+ pageId 18969637
+ dailyPageViews 60
+ created 2008
+ backlinksCount 49
+ revisionCount 145
+ appeared 2005
+
+tiobe Fantom
+
+domainName fantom.org
+ registered 2003
+ awisRank
+  2022 3280615
+
+githubBigQuery Fantom
+ repos 38
+ users 36
+
+linguistGrammarRepo https://github.com/rkoeninger/sublime-fantom
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 2
+ commitCount 14
+ sampleCount 2
+ example
+  /*
+   * Author: Robert Koeninger
+   * License: WTFPL (http://www.wtfpl.net/)
+   */
+  
+  mixin Expr
+  {
+    abstract Obj? eval()
+  }
+  
+  class Constant : Expr
+  {
+    Obj? value
+  
+    new make(Obj? value) { this.value = value }
+    override Obj? eval() { value }
+  }
+  
+  enum class Op
+  {
+    plus,
+    minus
+  }
+  
+  class Infix : Expr
+  {
+    Op op
+    Expr left
+    Expr right
+  
+    new make(Op op, Expr left, Expr right)
+    {
+      this.op = op
+      this.left = left
+      this.right = right
+    }
+  
+    override Obj? eval()
+    {
+      switch (op)
+      {
+        case Op.plus:
+          return (Int)left.eval() + (Int)right.eval()
+        case Op.minus:
+          return (Int)left.eval() - (Int)right.eval()
+        default:
+          throw Err("undefined Op")
+      }
+    }
+  }
+  
+
+isbndb 0
+
+githubLanguage Fantom
+ fileExtensions fan
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.fan
+ repos 176
+
+semanticScholar 0

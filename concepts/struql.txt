@@ -1,0 +1,64 @@
+StruQL
+======
+
+StruQL is a query language created in 1999 by Mary Fernández and Dan Suciu and and Igor Tatarinov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mary%20Fern%C3%A1ndez
+ https://pldb.io/concepts/../lists/creators.html#q=Dan%20Suciu
+ https://pldb.io/concepts/../lists/creators.html#q=and%20Igor%20Tatarinov
+
+#2311 on PLDB
+25 Years Old
+
+- StruQL first developed in AT&T Labs and North Dakota State University
+- Read more about StruQL on the web: 1.
+ https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
+
+ // Link root page to page of all accounts
+ link Root() -&gt; &quot;Accounts&quot; -&gt; AccountsPage()
+ // AccountsPage refers to each account in account database and its associated page
+ { where (acct, name, street, city, state, zip) in SQL.query(&quot;AccountDB&quot;, &quot;select acct ...&quot;)
+ link AccountsPage() -&gt; &quot;Info&quot; -&gt; Info(acct),
+ Info(acct) -&gt; { &quot;Acct&quot; acct, &quot;Name&quot; name, &quot;Street&quot; street,
+ &quot;City&quot; city, &quot;State&quot; state, &quot;Zip&quot; zip,
+ &quot;AcctPage&quot; AcctPage(acct) },
+ AcctPage(acct) -&gt; &quot;Info&quot; -&gt; Info(acct)
+ 
+  // AcctPage refers to non-zero usage records in the usage database.
+  { where (date, dom is int, intl is int) in SQL.query(&quot;UsageDB&quot;, &quot;select date ...&quot;, acct)
+  dom + intl &gt; 0
+  link AcctPage(acct) -&gt; &quot;UsageData&quot; -&gt; UsageData(acct),
+  UsageData(acct) -&gt; &quot;Entry&quot; -&gt; UsageEntry(acct, date),
+  UsageEntry(acct, date) -&gt; { &quot;Date&quot; date, &quot;Total&quot; (dom + intl) }
+  }
+  // Query postal database to determine possible aliases for account
+  { where XMLRoot{root}, root -&gt; &quot;addresses&quot;.&quot;entry&quot; -&gt; addr,
+  addr -&gt; { &quot;name&quot; alias, &quot;address&quot;.&quot;street&quot; street1, &quot;address&quot;.&quot;zip&quot; zip },
+  street1 = street
+  link Info(acct) -&gt; &quot;Alias&quot; -&gt; alias
+  }
+  }
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

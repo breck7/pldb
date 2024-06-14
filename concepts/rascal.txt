@@ -1,0 +1,36 @@
+Rascal
+======
+
+Rascal is an open source grammar language created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#529 on PLDB
+11 Years Old
+722 Repos
+
+git clone https://github.com/usethesource/rascal
+
+Rascal is an experimental domain specific language for metaprogramming, such as static code analysis, program transformation and implementation of domain specific languages. It is a general meta language in the sense that it does not have a bias for any particular software language. It includes primitives from relational calculus and term rewriting. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/RascalMPL
+
+- Rascal website
+ https://www.rascal-mpl.org/
+- Rascal Wikipedia page
+ https://en.wikipedia.org/wiki/RascalMPL
+- Rascal is developed on GitHub and has 317 stars
+- There are at least 722 Rascal repos on GitHub
+- Rascal first developed in https://github.com/usethesource
+- The  Google BigQuery Public Dataset GitHub snapshot shows 99 users using Rascal in 107 repos on GitHub
+- Explore Rascal snippets on Rosetta Code
+- GitHub supports syntax highlighting for Rascal
+- rascal-mpl.org was registered in 2010
+- See also: (3 related languages)Linux, Unix, ANTLR
+
+module Syntax
+
+extend lang::std::Layout;
+extend lang::std::Id;
+
+start syntax Machine = machine: State+ states;
+syntax State = @Foldable state: &quot;state&quot; Id name Trans* out;
+syntax Trans = trans: Id event &quot;:&quot; Id to;

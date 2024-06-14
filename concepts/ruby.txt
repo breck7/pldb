@@ -1,0 +1,385 @@
+Ruby
+====
+
+Ruby is an open source programming language created in 1995 by Yukihiro Matsumoto.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Yukihiro%20Matsumoto
+
+#9 on PLDB
+29 Years Old
+3m Repos
+
+git clone https://github.com/ruby/ruby
+
+Try now: Riju · TIO · Replit
+
+Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. According to its creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ruby_(programming_language)
+
+- Ruby website
+ https://www.ruby-lang.org
+- Ruby downloads page
+ https://www.ruby-lang.org/en/downloads/
+- Ruby Wikipedia page
+ https://en.wikipedia.org/wiki/Ruby_(programming_language)
+- Ruby is developed on GitHub and has 20,194 stars
+- Watch the history of the Ruby repo visualized with Gource
+- Ruby docs
+ https://www.ruby-lang.org/en/documentation/
+- Ruby specs
+ https://www.iso.org/standard/59579.html
+- Ruby mailing list
+ https://www.ruby-lang.org/en/community/mailing-lists/
+- There are at least 2,659,551 Ruby repos on GitHub
+- Ruby first developed in https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org/
+- Ruby is written in Ruby, C, YAML, Markdown, Rust, ERB, M4, JSON, Python, Bourne shell, Assembly language, Make, Perl, Bash, Scheme, C++, JavaScript, TOML, Yacc, CSS, Lisp, awk, XML, CSV, Diff, D, IDL, sed, Z shell, HTML, Dockerfile
+- Recurring conference about Ruby: RubyConf
+- The  Google BigQuery Public Dataset GitHub snapshot shows 186k users using Ruby in 374k repos on GitHub
+- Check out the 932 Ruby meetup groups on Meetup.com.
+- There are 75,926 members in the Ruby subreddit
+- There are 5,435 Project Euler users using Ruby
+- In the 2021 StackOverflow developer survey Ruby programmers reported a median salary of $80,000. 7% of respondents reported using Ruby. 5,569 programmers reported using Ruby, and 4,942 said they wanted to use it
+- Explore Ruby snippets on Rosetta Code
+- Ruby on HOPL
+ https://hopl.info/showlanguage.prx?exp=2458
+- Ruby ranks #13 in the TIOBE Index
+- Ruby Ubuntu package
+ https://packages.ubuntu.com/jammy/ruby
+- ANTLR grammar for Ruby
+- Ruby LSP implementation
+- CodeMirror package for syntax highlighting Ruby
+- Monaco package for syntax highlighting Ruby
+- Pygments supports syntax highlighting for Ruby
+- GitHub supports syntax highlighting for Ruby
+- Ruby appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Ruby
+- There is a central package repository for Ruby
+- Release Notes for Ruby
+ https://www.ruby-lang.org/en/downloads/releases/
+- Official Blog page for Ruby
+ https://www.ruby-lang.org/en/community/weblogs/
+- Frequently Asked Questions for Ruby
+ https://www.ruby-lang.org/en/documentation/faq/
+- Indeed.com has 8,719 matches for "ruby engineer".
+- See also: (40 related languages)Ruby on Rails, C, YARV, JRuby, Ada, CLU, Dylan, Eiffel, Lisp, Lua, Perl, Python, Smalltalk, Clojure, CoffeeScript, Crystal, D, Elixir, Falcon, Groovy, Ioke, Julia, Mirah, Nu, Rust, Swift, Unicode, Regular Expressions, YAML, JSON, XML, Java, C#, JVM, LLVM IR, JavaScript, Objective-C, Parrot, Linux, Solaris
+- Read more about Ruby on the web: 1.
+ https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
+- 88 languages in PLDB linking to Ruby: Ace Editor, Ante, Apache Hbase, bloom, Brain-Flak, capybara, chaiscript, Chapel, cloc, contracts.coffee, CouchDB, CSVw, Cyber, dexvis, dgraph, EmberScript, Factor, Fancy, FFmpeg, FlatBuffers, Flow9, forest-lang, GamerLanguage, GAP, Git, glush, Golo, Gradle, hamdown, HAML, HCL, hexagony, HHVM, hivemind, Homebrew, Hook, htmx, inko, invokator, Ioke, Iterm2, Jekyll, Jison, Kakoune, Knight, Kotlin, Ligo, Lily, Linux, Liquid, Lux, mal, Mirah, MongoDB, mustache, Nit, Node.js, nydp, Plaid, PogoScript, Potion, Pygments, PyTorch, Qalb, Ragel, ramen, RapidBatch, rbs, React Native, Redis, Reia, Roc, Rouge, Ruby, Savi, Slash, Slim, squiggle, Statsplorer, Stencil, Swift, TensorFlow, TestML, ToffeeScript, txtzyme, V, 文言文編程語言, Wren
+
+# Type your code here, or load an example.
+def square(num)
+  num * num
+end
+
+puts &quot;Hello, world!&quot;
+
+#!/usr/bin/env ruby
+print &quot;Hello World&quot;
+
+# Hello World in Ruby
+puts &quot;Hello World!&quot;
+
+module Foo
+end
+
+&quot;Hello, World!&quot;.in_blue
+ =&gt; &quot;&lt;span style=\&quot;color: #00f\&quot;&gt;Hello, World!&lt;/span&gt;&quot;
+
+__ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Range Operator
+ FeatureLink ../features/hasRangeOperators.html
+ Supported ✓
+ Token 
+ Example
+  (3...6)
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token puts
+ Example
+  puts "Hi"
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Mixins
+ FeatureLink ../features/hasMixins.html
+ Supported ✓
+ Token 
+ Example
+  module A
+     def a1
+     end
+     def a2
+     end
+  end
+  module B
+     def b1
+     end
+     def b2
+     end
+  end
+  class Sample
+  include A
+  include B
+     def s1
+     end
+  end
+  samp = Sample.new
+  samp.a1
+  samp.a2
+  samp.b1
+row
+ Feature Iterators
+ FeatureLink ../features/hasIterators.html
+ Supported ✓
+ Token 
+ Example
+  (0...42).each do |n|
+    puts n
+  end
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  load 'filename.rb'
+  require 'filename'
+  require 'trig.rb'
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported ✓
+ Token 
+ Example
+  coding: UTF-8
+row
+ Feature Here Document
+ FeatureLink ../features/hasHereDocs.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Generators
+ FeatureLink ../features/hasGenerators.html
+ Supported ✓
+ Token 
+ Example
+  # Generator from an Enumerator object
+  chars = Enumerator.new(['A', 'B', 'C', 'Z'])
+  
+  4.times { puts chars.next }
+  
+  # Generator from a block
+  count = Enumerator.new do |yielder|
+    i = 0
+    loop { yielder.yield i += 1 }
+  end
+  
+  100.times { puts count.next }
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token =begin =end
+ Example
+  =begin
+  A comment.
+  =end
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+  # A tiny Person class in Ruby:
+  class Person
+    attr_accessor :name, :age, :   # getter and setter methods
+    def initialize(name, age)
+      @name = name
+      @age = age
+    end
+  end
+  
+  # Create a new Person object:
+  person = Person.new("John", 30)
+  puts person.name
+  puts person.age
+  
+  # Change the age of the person:
+  person.age = 35
+  puts person.age
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+  # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
+  Name = "John"
+  # Not a constant
+  name = "John"
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+  def hello
+   puts "Hello, World!"
+     # start an exception handler
+     begin
+         raise "This is an exception"
+     rescue => e
+         puts "Exception caught: #{e}"
+     end
+   end
+  hello
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  pldb = 80766866
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  pldb = 80766866
+row
+ Feature Duck Typing
+ FeatureLink ../features/hasDuckTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported ✓
+ Token 
+ Example
+  puts "Hello World".match(/\w/)
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "hello world"
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Async Await
+ FeatureLink ../features/hasAsyncAwait.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Dispose Blocks Pattern
+ FeatureLink ../features/hasDisposeBlocks.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Dependent types
+ FeatureLink ../features/hasDependentTypes.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported X
+ Token 
+ Example

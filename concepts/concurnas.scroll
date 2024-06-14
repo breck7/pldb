@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id concurnas
+name concurnas
+appeared 2018
+tags pl
+website http://concurnas.com/
+
+country England
+originCommunity https://github.com/Concurnas
+reference https://news.ycombinator.com/item?id=23321096
+
+example
+ def gcd(x int, y int){//greatest common divisor of two integers
+   while(y){
+     (x, y) = (y, x mod y)
+   }
+   x
+ }
+ calc1 = gcd(8, 20)!//run this calculation in a isolate
+ calc2 = gcd(6, 45)!//run this calculation in a separate isolate
+ calc3 = calc1 if calc1 > calc2 else calc2
+ //^^^ wait for the results of calc1 and calc2 before assigning calc3
+twitter https://twitter.com/concurnas
+leachim6 Concurnas
+ filepath c/Concurnas.conc
+ fileExtensions conc
+ example
+  System.out.println("Hello World")
+  
+
+printToken System.out.println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName concurnas.com
+ registered 2018

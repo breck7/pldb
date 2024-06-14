@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id ceu
+name Céu
+appeared 2011
+creators Francisco Sant'Anna
+tags pl
+website http://www.ceu-lang.org
+
+writtenIn kotlin markdown gradle vim-script make bourne-shell
+repoStats
+ firstCommit 2022
+ commits 342
+ committers 2
+ files 57
+ newestCommit 2022
+country Brazil
+originCommunity Pontifical Catholic University of Rio de Janeiro
+reference http://www.ceu-lang.org/chico/ceu_sensys11.pdf
+
+example
+ input int KEY;
+ par/or do
+   every 1s do
+     _printf("Hello World!\n");
+   end
+ with
+   await KEY;
+ end
+
+githubRepo https://github.com/fsantanna/ceu
+ stars 1
+ forks 0
+ subscribers 1
+ created 2022
+ updated 2022
+
+printToken _printf
+
+hasPrintDebugging true
+
+domainName ceu-lang.org
+ registered 2012

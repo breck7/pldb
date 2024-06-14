@@ -1,0 +1,173 @@
+Click
+=====
+
+Click is an open source programming language created in 1999.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#287 on PLDB
+25 Years Old
+39 Repos
+
+git clone https://github.com/kohler/click
+
+The Click modular router: fast modular packet processing and analysis
+
+- Click website
+ https://github.com/kohler/click/wiki/Language
+- Click is developed on GitHub and has 667 stars
+- Click docs
+ https://click.palletsprojects.com/en/8.1.x/
+- There are at least 39 Click repos on GitHub
+- Click first developed in Massachusetts Institute of Technology
+- Click is written in C++, C, Perl, Bourne shell, Make, Java, M4, Diff, YAML, Tex, Markdown, Dockerfile, Vim script, XSLT, Yacc, DTD, XML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 115 users using Click in 127 repos on GitHub
+- GitHub supports syntax highlighting for Click
+
+rates :: AvailableRates
+elementclass sr2 {
+  $sr2_ip, $sr2_nm, $wireless_mac, $gateway, $probes|
+
+arp :: ARPTable();
+lt :: LinkTable(IP $sr2_ip);
+
+gw :: SR2GatewaySelector(ETHTYPE 0x062c,
+		      IP $sr2_ip,
+		      ETH $wireless_mac,
+		      LT lt,
+		      ARP arp,
+		      PERIOD 15,
+		      GW $gateway);
+
+gw -&gt; SR2SetChecksum -&gt; [0] output;
+
+set_gw :: SR2SetGateway(SEL gw);
+
+es :: SR2ETTStat(ETHTYPE 0x0641,
+	      ETH $wireless_mac,
+	      IP $sr2_ip,
+	      PERIOD 30000,
+	      TAU 300000,
+	      ARP arp,
+	      PROBES $probes,
+	      ETT metric,
+	      RT rates);
+
+metric :: SR2ETTMetric(LT lt);
+
+forwarder :: SR2Forwarder(ETHTYPE 0x0643,
+			      IP $sr2_ip,
+			      ETH $wireless_mac,
+			      ARP arp,
+			      LT lt);
+
+querier :: SR2Querier(ETH $wireless_mac,
+		     SR forwarder,
+		     LT lt,
+		     ROUTE_DAMPENING true,
+		     TIME_BEFORE_SWITCH 5,
+		     DEBUG true);
+
+query_forwarder :: SR2MetricFlood(ETHTYPE 0x0644,
+			       IP $sr2_ip,
+			       ETH $wireless_mac,
+			       LT lt,
+			       ARP arp,
+			       DEBUG false);
+
+query_responder :: SR2QueryResponder(ETHTYPE 0x0645,
+				    IP $sr2_ip,
+				    ETH $wireless_mac,
+				    LT lt,
+				    ARP arp,
+				    DEBUG true);
+
+query_responder -&gt; SR2SetChecksum -&gt; [0] output;
+query_forwarder -&gt; SR2SetChecksum -&gt; SR2Print(forwarding) -&gt; [0] output;
+query_forwarder [1] -&gt; query_responder;
+
+data_ck :: SR2SetChecksum()
+
+input [1]
+-&gt; host_cl :: IPClassifier(dst net $sr2_ip mask $sr2_nm,
+				-)
+-&gt; querier
+-&gt; data_ck;
+
+host_cl [1] -&gt; [0] set_gw [0] -&gt; querier;
+
+forwarder[0]
+  -&gt; dt ::DecIPTTL
+  -&gt; data_ck
+  -&gt; [2] output;
+
+dt[1]
+-&gt; Print(ttl-error)
+-&gt; ICMPError($sr2_ip, timeexceeded, 0)
+-&gt; querier;
+
+// queries
+querier [1] -&gt; [1] query_forwarder;
+es -&gt; SetTimestamp() -&gt; [1] output;
+
+forwarder[1] //ip packets to me
+  -&gt; SR2StripHeader()
+  -&gt; CheckIPHeader()
+  -&gt; from_gw_cl :: IPClassifier(src net $sr2_ip mask $sr2_nm,
+				-)
+  -&gt; [3] output;
+
+from_gw_cl [1] -&gt; [1] set_gw [1] -&gt; [3] output;
+
+ input [0]
+   -&gt; ncl :: Classifier(
+			12/0643 , //sr2_forwarder
+			12/0644 , //sr2
+			12/0645 , //replies
+			12/0641 , //sr2_es
+			12/062c , //sr2_gw
+			);
+ 
+ 
+ ncl[0] -&gt; SR2CheckHeader() -&gt; [0] forwarder;
+ ncl[1] -&gt; SR2CheckHeader() -&gt; PrintSR(query) -&gt; query_forwarder
+ ncl[2] -&gt; SR2CheckHeader() -&gt; query_responder;
+ ncl[3] -&gt; es;
+ ncl[4] -&gt; SR2CheckHeader() -&gt; gw;
+ 
+}
+
+Idle -&gt; s :: sr2(2.0.0.1, 255.0.0.0, 00:00:00:00:00:01, false, &quot;12 60 12 1500&quot;) -&gt; Discard;
+Idle -&gt; [1] s;
+s[1] -&gt; Discard;
+s[2] -&gt; Discard;
+s[3] -&gt; Discard;
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

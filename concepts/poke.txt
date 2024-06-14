@@ -1,0 +1,42 @@
+GNU Poke
+========
+
+GNU Poke is an open source programming language created in 2017 by Jose E. Marchesi.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jose%20E.%20Marchesi
+
+#1312 on PLDB
+7 Years Old
+
+git clone https://git.savannah.gnu.org/git/poke.git
+
+- GNU Poke website
+ http://www.jemarch.net/poke
+- GNU Poke docs
+ https://www.jemarch.net/poke-4.0-manual/
+- Video demo of GNU Poke
+ https://www.youtube.com/watch?v=KZ8meNZ_IhY&themeRefresh=1
+- GNU Poke is written in C, Make, Expect, M4, Bourne shell, Lex, Yacc, Vim script, CSS, Lisp, sed, awk, Scheme, Nix, Pascal
+
+# The following two lines are dot commands
+.load my-pickle.pk
+.set obase 16
+
+# The following line is a Poke statement
+dump :size 0x100#B :from 0x10#B
+
+# The following line is a Poke expression statement without any side effect.
+# Consequently it is valid, but rather useless.
+4 == 4
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+  #!/usr/bin/poke -L
+  !#

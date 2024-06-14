@@ -1,0 +1,88 @@
+Aldor
+=====
+
+Aldor is an open source programming language created in 1990 by Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20Dimick%20Jenks
+ https://pldb.io/concepts/../lists/creators.html#q=Barry%20Trager
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Watt
+ https://pldb.io/concepts/../lists/creators.html#q=James%20Davenport
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Sutor
+ https://pldb.io/concepts/../lists/creators.html#q=Scott%20Morrison
+
+#1111 on PLDB
+34 Years Old
+
+Aldor is a programming language. It is the successor of A# as the extension language of the Axiom computer algebra system. Aldor combines imperative, functional, and object-oriented features. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Aldor
+
+- Aldor website
+ http://www.aldor.org
+- Aldor Wikipedia page
+ https://en.wikipedia.org/wiki/Aldor
+- Aldor first developed in Western University
+- Aldor on HOPL
+ https://hopl.info/showlanguage.prx?exp=6911
+- There is 1 Jupyter Kernel for Aldor
+- aldor.org was registered in 2000
+- See also: (5 related languages)Linux, Solaris, Pascal, Haskell, Python
+
+#include &quot;aldor&quot;
+#include &quot;aldorio&quot;
+
+import from Integer, String;
+
+bob(n: Integer): String == {
+    b: String := &quot; bottle&quot;;
+
+    if n ~= 1 then b := b + &quot;s&quot;;
+    b + &quot; of beer&quot;;
+}
+
+main(): () == {
+    n: Integer := 99;
+    otw: String := &quot; on the wall&quot;;
+
+    -- refrain
+    while n &gt; 0 repeat {
+        stdout &lt;&lt; n &lt;&lt; bob(n) &lt;&lt; otw &lt;&lt; &quot;, &quot; &lt;&lt; n &lt;&lt; bob(n) &lt;&lt; &quot;.&quot; &lt;&lt; newline;
+        stdout &lt;&lt; &quot;Take one down and pass it around, &quot;;
+        n := n - 1;
+        if n &gt; 0 then stdout &lt;&lt; n;
+        else stdout &lt;&lt; &quot;no more&quot;;
+        stdout &lt;&lt; bob(n) &lt;&lt; otw &lt;&lt; &quot;.&quot; &lt;&lt; newline;
+        stdout &lt;&lt; newline;
+    }
+
+    -- last verse
+    stdout &lt;&lt; &quot;No more&quot; &lt;&lt; bob(n) &lt;&lt; otw &lt;&lt; &quot;, no more&quot; &lt;&lt; bob(n) &lt;&lt; &quot;.&quot; &lt;&lt; newline;
+    stdout &lt;&lt; &quot;Go to the store and buy some more, &quot;;
+    n: Integer := 99;
+    stdout &lt;&lt; n &lt;&lt; bob(n) &lt;&lt; otw &lt;&lt; &quot;.&quot; &lt;&lt; newline;
+}
+
+main();
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

@@ -1,0 +1,270 @@
+Lua
+===
+
+Lua is an open source programming language created in 1993 by Roberto Ierusalimschy.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Roberto%20Ierusalimschy
+
+#23 on PLDB
+31 Years Old
+244k Repos
+
+Try now: Riju · TIO · Replit
+
+Lua ( LOO-ə, from Portuguese: lua [ˈlu.(w)ɐ] meaning moon) is a lightweight, multi-paradigm programming language designed primarily for embedded systems and clients. Lua is cross-platform, since the interpreter is written in ANSI C, and has a relatively simple C API. Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Lua_(programming_language)
+
+- Lua website
+ https://www.lua.org/
+- Lua downloads page
+ https://www.lua.org/download.html
+- Lua Wikipedia page
+ https://en.wikipedia.org/wiki/Lua_(programming_language)
+- PLDB has 2 documentation sites for Lua: www.lua.org, devdocs.io
+- Lua mailing list
+ https://www.lua.org/lua-l.html
+- There are at least 243,541 Lua repos on GitHub
+- Lua first developed in Tecgraf
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23k users using Lua in 34k repos on GitHub
+- Check out the 24 Lua meetup groups on Meetup.com.
+- There are 20,927 members in the Lua subreddit
+- There are 477 Project Euler users using Lua
+- Explore Lua snippets on Rosetta Code
+- Lua on HOPL
+ https://hopl.info/showlanguage.prx?exp=2196
+- Lua ranks #30 in the TIOBE Index
+- Lua Ubuntu package
+ https://packages.ubuntu.com/jammy/lua5.4
+- ANTLR grammar for Lua
+- Lua LSP implementation
+- CodeMirror package for syntax highlighting Lua
+- Monaco package for syntax highlighting Lua
+- Pygments supports syntax highlighting for Lua
+- GitHub supports syntax highlighting for Lua
+- Lua appears in the Quine Relay project
+- PLDB has 3 Jupyter Kernels for Lua: github.com, github.com, github.com
+- There is a central package repository for Lua
+- Release Notes for Lua
+ https://www.lua.org/versions.html
+- Official Blog page for Lua
+ https://www.lua.org/news.html
+- Frequently Asked Questions for Lua
+ https://www.lua.org/faq.html
+- Indeed.com has 736 matches for "lua developer".
+- lua.org was registered in 2000
+- See also: (28 related languages)CLU, Modula-2, Scheme, SNOBOL, Falcon, GameMonkey Script, Io, JavaScript, Julia, MiniD, Red, Ruby, Squirrel, Tcl, Lisp, Python, Modula, awk, Ada, Eiffel, Haskell, SQL, VHDL, Self, Raku, Parrot, Android, C
+- Read more about Lua on the web: 1.
+ http://www.lua.org/manual/5.1/manual.html#2.1
+- 62 languages in PLDB linking to Lua: Ace Editor, BlitzMax, Bounce, buzz, Carbon, circle-lang, cloc, commonmark, CSpydr, Cyber, Deno, Djot, DRAKON, Emscripten, Encore, Factor, Fennel, FlatBuffers, Haxe, Hina, Hook, Hush, Ibis, Jakt, Jammy, Lean, Lil, Lily, LuaJIT, mal, Matplotlib, micro-editor, Minilang, MongoDB, MoonScript, mun-lang, mycroft, Nelua, oopsilon, PHP, Prism, Pygments, raptorjit, Redis, RMarkdown, rosie, Savi, sile, Speedie, tbox-lib, Terra, Textadept, titan, Typed Lua, UCL, Umka, UrWeb, WebAssembly, Wax, Wonkey, Wren, Wu
+
+print(&quot;Hello, world!&quot;)
+
+print(&quot;Hello World&quot;)
+
+# Hello World in Lua
+
+print &quot;Hello world&quot;
+
+-- A simple counting object that increments an internal counter whenever it receives a bang at its first inlet, or changes to whatever number it receives at its second inlet.
+
+local HelloCounter = pd.Class:new():register(&quot;h-counter&quot;)
+
+function HelloCounter:initialize(sel, atoms)
+	self.inlets = 2
+	self.outlets = 1
+	self.num = 0
+	return true
+end
+
+function HelloCounter:in_1_bang()
+	self:outlet(1, &quot;float&quot;, {self.num})
+	self.num = self.num + 1
+end
+
+function HelloCounter:in_2_float(f)
+	self.num = f
+end
+
+$ cc -o example example.c -llua
+$ ./example
+Result: 8
+
+and break do else elseif end false for function goto if in local nil not or repeat return then true until while
+
+Language features
+======================================================
+
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+  pi  = 3.14159
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  myList = {1, 2, 3}
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported ✓
+ Token 
+ Example
+  & | ~ > ~
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  -- 0[xX][0-9a-fA-F]+ (integer)
+  -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? (float)
+  0x5F3759DF
+  0x0.1D
+  0xA23p-4
+  0X1.921FB54442D18P+1
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  80766866
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- [0-9]*\.[0-9]+([eE][+-]?[0-9]+)? -- (decimal float)
+  -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? -- (hex float)
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+  1E2
+  .12345E+6
+  1.e+0
+  0x15e-2
+  0x2.p10
+  0X.8p-0
+  0x1.Fp+0
+  0x1fffp-16
+  0x1p-2
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  if true then
+      print("true")
+  end
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+  function myFunction()
+      print("hello")
+  end
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+  while true do
+      print("hello")
+  end
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+  true
+  false
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+  print("hello world")
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported ✓
+ Token 
+ Example
+  myMap = {
+      key = "value",
+      [35] = 35,
+  }
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token --[[ --]]
+ Example
+  --[[
+  A comment.
+  --]]
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported X
+ Token 
+ Example

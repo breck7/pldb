@@ -1,0 +1,51 @@
+import ../code/conceptPage.scroll
+
+id txr
+name txr
+appeared 2009
+creators Kaz Kylheku
+tags pl
+website http://www.nongnu.org/txr/
+conceptDescription Programming Language for Convenient Data Munging
+
+rosettaCode http://www.rosettacode.org/wiki/Category:TXR
+
+example
+ @(bind special-words ("arch." "var." "ver." "anci." "fam."))
+ @(bind ahash @(hash :equal-based))
+ @(repeat)
+ @id @@ @alpha @@ @animal @@ @words
+ @  (rebind words @(split-str words " "))
+ @  (bind record (id alpha animal words))
+ @  (do (push record [ahash alpha]))
+ @(end)
+ @(bind sorted-rec-groups nil)
+ @(do
+    (defun popularity-sort (recs)
+      (let ((histogram [group-reduce (hash)
+                                     third (do inc @1)
+                                     recs 0]))
+       [sort recs > [chain third histogram]]))
+ 
+    (dohash (key records ahash)
+      (let (contains does-not combined)
+        (each* ((r records)
+                (w [mapcar fourth r]))
+          (if (isec w special-words)
+            (push r contains)
+            (push r does-not)))
+        (push (append (popularity-sort does-not)
+                      (popularity-sort contains))
+              sorted-rec-groups)))
+    (set sorted-rec-groups [sort sorted-rec-groups :
+                                 [chain first second]]))
+ @(output)
+ @  (repeat)
+ @    (repeat)
+ @(rep)@{sorted-rec-groups} @@ @(last)@{sorted-rec-groups " "}@(end)
+ @    (end)
+ @  (end)
+ @(end)
+
+hasComments true
+hasSemanticIndentation false

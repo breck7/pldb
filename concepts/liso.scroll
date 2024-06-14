@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id liso
+name Liso
+appeared 2014
+creators Olivier Breuleux
+tags dataNotation
+website http://breuleux.net/blog/liso.html
+aka o-expressions
+conceptDescription Implemention of O-Expressions idea in Racket.
+
+writtenIn racket
+compilesTo s-expressions
+country Canada
+originCommunity https://github.com/breuleux/liso/issues
+reference http://breuleux.net/blog/oexprs.html
+
+example
+ @varsrec
+       odd?[n] =
+          @if n == 0:
+             #f
+             even?[n - 1]
+       even?[n] =
+          @if n == 0:
+             #t
+             odd?[n - 1]:
+    even?[30]

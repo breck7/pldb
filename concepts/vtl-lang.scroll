@@ -1,0 +1,45 @@
+import ../code/conceptPage.scroll
+
+id vtl-lang
+name Velocity Template Language
+appeared 2000
+tags template
+standsFor Velocity Template Language
+conceptDescription Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.
+
+clocExtensions vm
+reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
+
+example
+ <html>
+   <body>
+     Hello $customer.Name!
+     <table>
+     #foreach( $mud in $mudsOnSpecial )
+       #if ( $customer.hasPurchased($mud) )
+         <tr>
+           <td>
+             $flogger.getPromo( $mud )
+           </td>
+         </tr>
+       #end
+     #end
+     </table>
+   </body>
+ </html>
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
+
+githubBigQuery Velocity Template Language
+ repos 4
+ users 4
+
+githubLanguage Velocity Template Language
+ type markup
+ fileExtensions vtl
+ aceMode velocity
+ codemirrorMode velocity
+ codemirrorMimeType text/velocity
+ tmScope source.velocity
+ aliases vtl or velocity
+ repos 0

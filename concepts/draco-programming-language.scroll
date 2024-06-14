@@ -1,0 +1,44 @@
+import ../code/conceptPage.scroll
+
+id draco-programming-language
+name Draco
+appeared 1987
+creators Chris Gray
+tags pl
+
+centralPackageRepositoryCount 0
+country United States
+originCommunity https://web.archive.org/web/20090221030835/http://www.graysage.com/
+
+leachim6 Draco
+ filepath d/Draco.d
+ fileExtensions d
+ example
+  proc main()void:
+      writeln("Hello World");
+  corp;
+  
+
+printToken writeln
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Draco_(programming_language)
+ related pascal c
+ summary Draco was a shareware programming language created by Chris Gray. First developed for CP/M sytems, Amiga version followed in 1987.Although Draco, a blend of Pascal and C, was well suited for general purpose programming, its uniqueness as a language was its main weak point. Gray used Draco for the Amiga to create a port of Peter Langston's game Empire.
+ created 2004
+ backlinksCount 16
+ pageId 507348
+ revisionCount 46
+ dailyPageViews 6
+ appeared 1987
+
+hopl https://hopl.info/showlanguage.prx?exp=1317
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1984|The Draco Approach to Constructing Software from Reusable Components|10.1109/TSE.1984.5010280|399|9|J. Neighbors|4716cdaebfe504ea8d4a3bea19bd3d281a0577c4
+ 2018|Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco|10.1109/TVCG.2018.2865240|154|21|Dominik Moritz and Chenglong Wang and Greg L. Nelson and Halden Lin and Adam M. Smith and Bill Howe and Jeffrey Heer|8db0faf2764f8b578c5d702989d437ff8bea9f14

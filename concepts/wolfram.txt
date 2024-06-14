@@ -1,0 +1,97 @@
+Wolfram Language
+================
+
+Wolfram Language is an open source programming language created in 1988 by Stephen Wolfram.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Wolfram
+
+#252 on PLDB
+36 Years Old
+
+Try now: Web · Riju
+
+The Wolfram Language, a general multi-paradigm programming language developed by Wolfram Research, is the programming language of mathematical symbolic computation program Mathematica and the Wolfram Programming Cloud. It emphasizes symbolic computation, functional programming, and rule-based programming and can employ arbitrary structures and data. It includes built-in functions for generating and running Turing machines, creating graphics and audio, analyzing 3D models, matrix manipulations, and solving differential equations. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Wolfram_Language
+
+- Wolfram Language website
+ https://www.wolfram.com/language/
+- Wolfram Language Wikipedia page
+ https://en.wikipedia.org/wiki/Wolfram_Language
+- Wolfram Language first developed in Wolfram Research
+- Check out the 4 Wolfram Language meetup groups on Meetup.com.
+- There are 610 members in the Wolfram Language subreddit
+- Wolfram Language appears in the TIOBE Index
+- There is 1 Jupyter Kernel for Wolfram Language
+- See also: (11 related languages)Wolfram Mathematica, APL, C, Lisp, Pascal, Prolog, Simula, Smalltalk, Julia, Mathematica, Unity
+
+Print[&quot;Hello, world!&quot;]
+
+Print[&quot;Hello World&quot;];
+
+(* Hello world in Wolfram Language *)
+
+CloudDeploy[&quot;Hello World&quot;]
+
+Language features
+======================================================
+
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+  f[x_Integer] := x^2;
+  f[x_String] := "not a number";
+  f[x_Symbol] := x^2;
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+  Switch[expr,
+   pattern1, code1,
+   pattern2, code2,
+   pattern3, code3
+  ]
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* A comment *)
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported X
+ Token 
+ Example

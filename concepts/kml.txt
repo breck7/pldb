@@ -1,0 +1,29 @@
+KML
+===
+
+KML, aka Keyhole Markup Language, is a xml format created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1147 on PLDB
+17 Years Old
+
+Keyhole Markup Language (KML) is an XML notation for expressing geographic annotation and visualization within Internet-based, two-dimensional maps and three-dimensional Earth browsers. KML was developed for use with Google Earth, which was originally named Keyhole Earth Viewer. It was created by Keyhole, Inc, which was acquired by Google in 2004. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Keyhole_Markup_Language
+
+- KML Wikipedia page
+ https://en.wikipedia.org/wiki/Keyhole_Markup_Language
+- KML first developed in Keyhole, Inc and Google
+- See also: (3 related languages)XML, Geography Markup Language, COLLADA
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;kml xmlns=&quot;http://www.opengis.net/kml/2.2&quot;&gt;
+&lt;Document&gt;
+&lt;Placemark&gt;
+  &lt;name&gt;New York City&lt;/name&gt;
+  &lt;description&gt;New York City&lt;/description&gt;
+  &lt;Point&gt;
+    &lt;coordinates&gt;-74.006393,40.714172,0&lt;/coordinates&gt;
+  &lt;/Point&gt;
+&lt;/Placemark&gt;
+&lt;/Document&gt;
+&lt;/kml&gt;

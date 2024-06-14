@@ -1,0 +1,44 @@
+Sweet Expressions
+=================
+
+Sweet Expressions is a data notation created in 2013 by David A. Wheeler and Alan Manuel K. Gloria.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20A.%20Wheeler
+ https://pldb.io/concepts/../lists/creators.html#q=Alan%20Manuel%20K.%20Gloria
+
+#1964 on PLDB
+11 Years Old
+
+- Sweet Expressions website
+ https://srfi.schemers.org/srfi-110/srfi-110.html
+- Read more about Sweet Expressions on the web: 1.
+ https://sourceforge.net/p/readable/code/ci/develop/tree/
+
+define fibfast(n)   ; Typical function notation
+  if {n &lt; 2}        ; Indentation, infix {...}
+     n              ; Single expr = no new list
+     fibup n 2 1 0  ; Simple function calls
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

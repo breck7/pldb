@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id emerald
+name Emerald
+appeared 1987
+tags pl
+
+wordRank 9032
+centralPackageRepositoryCount 0
+country United States and Denmark
+originCommunity University of Washington && Digital Equipment Corporation && University of Arizona && Copenhagen University
+reference https://semanticscholar.org/paper/c58d5d68aff6a596c5aade80fe87c2ea9074d8f2
+
+leachim6 Emerald
+ filepath e/Emerald.m
+ fileExtensions m
+ example
+  const main <- object mainProgram
+      initially
+  		stdout.putString["Hello World\n"]
+  	end initially
+  end mainProgram
+
+printToken stdout.putString
+
+hasPrintDebugging true
+
+hopl https://hopl.info/showlanguage.prx?exp=1320

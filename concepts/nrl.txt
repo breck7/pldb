@@ -1,0 +1,24 @@
+Namespace Routing Language
+==========================
+
+Namespace Routing Language is a xml format created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2578 on PLDB
+21 Years Old
+
+- Namespace Routing Language Wikipedia page
+ https://en.wikipedia.org/wiki/Namespace_Routing_Language
+- Namespace Routing Language first developed in Thai Open Source Software Center Ltd
+- Read more about Namespace Routing Language on the web: 1.
+ https://relaxng.org/jclark/nrl.html
+
+&lt;rules xmlns=&quot;http://www.thaiopensource.com/validate/nrl&quot;&gt;
+ &lt;namespace ns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+   &lt;validate schema=&quot;soap-envelope.xsd&quot;/&gt;
+ &lt;/namespace&gt;
+ &lt;namespace ns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+   &lt;validate schema=&quot;xhtml.rng&quot;/&gt;
+   &lt;validate schema=&quot;xhtml.sch&quot;/&gt;
+ &lt;/namespace&gt;
+&lt;/rules&gt;

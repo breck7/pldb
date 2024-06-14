@@ -1,0 +1,154 @@
+import ../code/conceptPage.scroll
+
+id haml
+name HAML
+appeared 2006
+creators Hampton Lintorn-Catlin
+tags template
+website http://haml.info/
+latestVersion v6.3.0
+webRepl https://haml-multiline--pftg.repl.co/
+standsFor HTML Abstraction Markup Language
+
+isOpenSource true
+writtenIn ruby haml xhtml erb markdown yaml bash logos slim
+clocExtensions haml haml.deface
+fileType text
+documentation https://haml.info/docs.html
+codeMirror haml
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2006
+ commits 6795
+ committers 223
+ files 209
+ newestCommit 2024
+country Canada
+originCommunity Unspace Interactive
+
+pygmentsHighlighter Haml
+ filename html.py
+ fileExtensions haml
+subreddit https://reddit.com/r/dlang
+ memberCount
+  2022 467
+example
+ %section.container
+  %h1= post.title
+  %h2= post.subtitle
+  .content
+    = post.content
+leachim6 Haml
+ filepath h/Haml.haml
+ fileExtensions haml
+ example
+  %html
+    %title Hello World
+    %body
+      %h1 Hello World
+
+githubRepo https://github.com/haml/haml
+ firstCommit 2006
+ stars 3653
+ forks 569
+ subscribers 86
+ created 2008
+ updated 2022
+ description HTML Abstraction Markup Language - A Markup Haiku
+ issues 11
+
+lineCommentToken -#
+
+canWriteToDisk false
+hasSemanticIndentation true
+hasLineComments true
+ -# A comment
+hasComments true
+ -# A comment
+
+wikipedia https://en.wikipedia.org/wiki/Haml
+ example
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+      <title>BoBlog</title>
+      <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+      <link href="/stylesheets/main.css" media="screen" rel="Stylesheet" type="text/css" />
+    </head>
+    <body>
+      <div id='header'>
+        <h1>BoBlog</h1>
+        <h2>Bob's Blog</h2>
+      </div>
+      <div id='content'>
+        <div class='entry'>
+          <h3 class='title'>Halloween</h3>
+          <p class='date'>Tuesday, October 31, 2006</p>
+          <p class='body'>
+            Happy Halloween, glorious readers! I'm going to a party this evening... I'm very excited.
+          </p>
+        </div>
+        <div class='entry'>
+          <h3 class='title'>New Rails Templating Engine</h3>
+          <p class='date'>Friday, August 11, 2006</p>
+          <p class='body'>
+            There's a very cool new Templating Engine out for Ruby on Rails. It's called Haml.
+          </p>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          All content copyright © Bob
+        </p>
+      </div>
+    </body>
+  </html>
+ related ruby html php asp java-server-pages erb ascii utf-8 rails css bbcode yaml sass wml
+ summary Haml (HTML Abstraction Markup Language) is a templating system that is designed to avoid writing inline code in a web document and make the HTML easy and clean. Haml gives the flexibility to have some dynamic content in HTML. Similar to other web languages like PHP, ASP, JSP and template systems like eRuby, Haml also embeds some code that gets executed during runtime and generates HTML code in order to provide some dynamic content. In order to run Haml code, files need to have .haml extension. These files are similar to .erb or eRuby files which also help to embed Ruby code while developing a web application. While parsing coding comments, Haml uses the same rules as Ruby 1.9 or later. Haml understands only ASCII compatible encodings like UTF-8 but not UTF-16 or UTF-32 because these are not compatible with ASCII. Haml can be used in command line, as a separate Ruby module, or in a Ruby on Rails application making Haml suitable for a wide range of applications.
+ pageId 11674306
+ dailyPageViews 45
+ created 2006
+ backlinksCount 34
+ revisionCount 283
+ appeared 2015
+
+domainName haml.info
+ registered 2012
+ awisRank
+  2022 1114726
+
+githubBigQuery Haml
+ repos 465
+ users 390
+
+linguistGrammarRepo https://github.com/ezekg/language-haml
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 29
+ commitCount 171
+ sampleCount 2
+ example
+  %p
+    Hello,
+    World!
+  
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2013-09-25|Packt Publishing|Instant Haml|Krzysztof Niksinskiis|9781783283781
+
+githubLanguage Haml
+ fileExtensions haml hamldeface
+ trendingProjectsCount 0
+ type markup
+ aceMode haml
+ codemirrorMode haml
+ codemirrorMimeType text/x-haml
+ tmScope text.haml
+ repos 323
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTML: Hypertext Markup Language, Cascading Style Sheets, Dynamic HTML, Extensible Hypertext Markup Language, Html5, Haml, Webfarbe|2010|Books LLC|14640226|5.00|2|0

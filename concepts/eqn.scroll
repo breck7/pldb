@@ -1,0 +1,15 @@
+import ../code/conceptPage.scroll
+
+id eqn
+name eqn
+appeared 1974
+tags textMarkup
+
+relatedConcepts troff tex latex
+country United States
+originCommunity AT&T Bell Laboratories
+
+example
+ sum from { k = 1 } to N { k sup 2 }
+
+wikipedia https://en.wikipedia.org/wiki/Eqn_(software)

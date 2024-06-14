@@ -1,0 +1,109 @@
+import ../code/conceptPage.scroll
+
+id ioke
+name Ioke
+appeared 2008
+creators Ola Bini
+tags pl
+website http://ioke.org
+
+isOpenSource true
+writtenIn java csharp xml html lisp css php bash python ruby
+runsOnVm jvm
+fileExtensions ik
+fileType text
+documentation https://ioke.org/wiki/index.php/Main_Page
+rosettaCode http://www.rosettacode.org/wiki/Category:Ioke
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2008
+ commits 3601
+ committers 19
+ files 631
+ newestCommit 2011
+country Ecuador
+originCommunity https://github.com/olabini/ioke/issues/
+reference https://ioke.org/wiki/index.php/Guide
+
+pygmentsHighlighter Ioke
+ filename jvm.py
+ fileExtensions ik
+rijuRepl https://riju.codes/ioke
+ example
+  "Hello, world!" println
+  
+leachim6 Ioke
+ filepath i/Ioke.ik
+ fileExtensions ik
+ example
+  "Hello World" println
+  
+
+githubRepo https://github.com/olabini/ioke
+ stars 161
+ forks 24
+ subscribers 13
+ created 2010
+ updated 2022
+ firstCommit 2008
+ description ioke is a new language for the JVM, based on Io and other languages.
+ issues 1
+
+printToken println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+
+wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
+ related io smalltalk lisp ruby jruby
+ summary Ioke is a dynamic, strongly typed, prototype-based programming language targeting the Java Virtual Machine and the Common Language Runtime. It was designed by Ola Bini, a developer of JRuby. It has a very simple homoiconic syntax, somewhat similar to Io.
+ pageId 20148120
+ dailyPageViews 22
+ created 2008
+ backlinksCount 16
+ revisionCount 49
+ appeared 2008
+ fileExtensions ik
+
+tiobe Ioke
+
+domainName ioke.org
+ registered 2008
+ awisRank
+  2017 12850561
+
+githubBigQuery Ioke
+ repos 41
+ users 39
+
+linguistGrammarRepo https://github.com/vic/ioke-outdated
+ firstCommit 2008
+ lastCommit 2009
+ committerCount 13
+ commitCount 1552
+ sampleCount 1
+ example
+  #!/usr/bin/env ioke
+  
+  "Hello world." println
+  
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2012||Ioke (programming Language)|Timoteus Elmo|9786137118351
+
+githubLanguage Ioke
+ fileExtensions ik
+ trendingProjectsCount 0
+ type programming
+ interpreters ioke
+ aceMode text
+ tmScope source.ioke
+ repos 17
+
+semanticScholar 0

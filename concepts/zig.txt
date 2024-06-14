@@ -1,0 +1,114 @@
+Zig
+===
+
+Zig is an open source programming language created in 2015 by Andrew Kelley.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Andrew%20Kelley
+
+#51 on PLDB
+9 Years Old
+4k Repos
+
+git clone https://github.com/ziglang/zig
+
+Try now: Riju · TIO
+
+General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+
+- Zig website
+ https://ziglang.org/
+- Zig Wikipedia page
+ https://en.wikipedia.org/wiki/Zig_(programming_language)
+- Zig is developed on GitHub and has 14,344 stars
+- Watch the history of the Zig repo visualized with Gource
+- Zig docs
+ https://ziglang.org/documentation/master/
+- There are at least 3,909 Zig repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 20 users using Zig in 21 repos on GitHub
+- There are 5,511 members in the Zig subreddit
+- Explore Zig snippets on Rosetta Code
+- Pygments supports syntax highlighting for Zig
+- Release Notes for Zig
+ https://ziglang.org/download/0.10.0/release-notes.html
+- Official Blog page for Zig
+ https://ziglang.org/news/
+- Frequently Asked Questions for Zig
+ https://github.com/ziglang/zig/wiki/FAQ
+- 10 languages in PLDB linking to Zig: Ace Editor, bog, buzz, cloc, Cyber, mal, PCRE, PRQL, Pygments, Roc
+
+// Type your code here, or load an example.
+export fn square(num: i32) i32 {
+    return num * num;
+}
+
+const std = @import(&quot;std&quot;);
+
+pub fn main() anyerror!void {
+    std.log.info(&quot;Hello, world!&quot;, .{});
+}
+
+const std = @import(&quot;std&quot;);
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    try stdout.print(&quot;Hello World&quot;, .{});
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token std.debug.print
+ Example

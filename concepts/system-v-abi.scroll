@@ -1,0 +1,19 @@
+import ../code/conceptPage.scroll
+
+id system-v-abi
+name System V ABI
+appeared 1983
+tags binaryExecutable
+aka SysV ABI
+conceptDescription An example of a symbol table can be found in the SysV Application Binary Interface (ABI) specification, which mandates how symbols are to be laid out in a binary file, so that different compilers, linkers and loaders can all consistently find and work with the symbols in a compiled object.
+
+reference https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf
+
+example
+ Address  Type  Name
+ 00000020  a T_BIT
+ 00000040  a F_BIT
+ 00000080  a I_BIT
+ 20000004  t irqvec
+ 20000008  t fiqvec
+ 2000000c  t InitReset

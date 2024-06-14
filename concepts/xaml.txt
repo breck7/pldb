@@ -1,0 +1,34 @@
+XAML
+====
+
+XAML is a xml format created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#635 on PLDB
+16 Years Old
+
+Extensible Application Markup Language (XAML  (listen)) is a declarative XML-based language developed by Microsoft that is used for initializing structured values and objects. It is available under Microsoft's Open Specification Promise. The acronym originally stood for Extensible Avalon Markup Language, Avalon being the code-name for Windows Presentation Foundation (WPF).XAML is used extensively in .NET Framework 3.0 & .NET Framework 4.0 technologies, particularly Windows Presentation Foundation (WPF), Silverlight, Windows Workflow Foundation (WF), Windows Runtime XAML Framework and Windows Store apps. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language
+
+- XAML Wikipedia page
+ https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language
+- XAML docs
+ https://www.noesisengine.com/docs/Gui.Core.XamlIntroduction.html
+- There are 202,070 members in the XAML subreddit
+- See also: (8 related languages)XML, Visual Studio, C#, Visual Basic .NET, XML Binding Language, HTML, JavaScript, Linux
+- 8 languages in PLDB linking to XAML: Flow9, HHVM, jinx, MonkeyX, PowerShell, Ripple, Roslyn compiler, Uno
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;XAML Example&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;MySilverlight.js&quot; /&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;Silver.js&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;MySilverlight&quot; &gt;
+    &lt;/div&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      createMySilverlight();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

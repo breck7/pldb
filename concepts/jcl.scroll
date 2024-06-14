@@ -1,0 +1,55 @@
+import ../code/conceptPage.scroll
+
+id jcl
+name JCL
+appeared 1964
+tags pl
+standsFor Job Control Language
+
+clocExtensions jcl
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:JCL
+centralPackageRepositoryCount 0
+country United States
+originCommunity IBM
+
+pygmentsHighlighter JCL
+ filename scripting.py
+ fileExtensions jcl
+
+hasComments true
+hasSemanticIndentation false
+hasLineComments true
+
+wikipedia https://en.wikipedia.org/wiki/Job_Control_Language
+ example
+  * $$ JOB JNM=NAME,DISP=K,CLASS=2
+  
+  [some JCL statements here]
+  
+  * $$ EOJ
+ related unix assembly-language clist
+ summary Job Control Language (JCL) is a name for scripting languages used on IBM mainframe operating systems to instruct the system on how to run a batch job or start a subsystem. More specifically, the purpose of JCL is to say which programs to run, using which files or devices  for input or output, and at times to also indicate under what conditions to skip a step. There are two distinct IBM Job Control languages: one for the operating system lineage that begins with DOS/360 and whose latest member is z/VSE; and the other for the lineage from OS/360 to z/OS, the latter now including JES extensions, Job Entry Control Language (JECL). They share some basic syntax rules and a few basic concepts, but are otherwise very different.
+ pageId 391487
+ dailyPageViews 155
+ created 2003
+ backlinksCount 163
+ revisionCount 546
+ appeared 1964
+
+hopl https://hopl.info/showlanguage.prx?exp=2134
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 1989|Mike Murach & Associates Inc|Dos/VSE JCL|Eckols, Steve and Milnes, Michele|9780911625509
+ 1989|Addison-Wesley|MVS JCL and Utilities: A Comprehensive Treatment|Trombetta, Michael and Finkelstein, Sue Carolyn|9780201083187
+ 1976T|American Elsevier Pub. Co|JCL and advanced Fortran programming (Methods in geomathematics)|Ramdén, H. Å|9780444414151
+ 20101001|De Gruyter|MVS/ESA JCL|Michael Winter|9783486599008
+ 1982|Cbi Pub Co|Jcl In A System 370 Environment (the Computer And Management Information Systems Series)|Barry L. Bateman|9780843616064
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Practical MVS JCL for Today's Programmer|1987|James G. Janossy|3713091|4.00|3|0
+ Zos JCL (Job Control Language)|2002|Gary DeWard Brown|23914799|4.00|4|1

@@ -1,0 +1,98 @@
+starlark
+========
+
+starlark is a programming language created in 2018 by Laurent Le Brun.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Laurent%20Le%20Brun
+
+#142 on PLDB
+6 Years Old
+3k Repos
+
+git clone https://github.com/bazelbuild/starlark
+
+Starlark Language
+
+- starlark is developed on GitHub and has 1,416 stars
+- There are at least 3,423 starlark repos on GitHub
+- starlark first developed in https://github.com/bazelbuild
+- starlark is written in Markdown, Python, Bazel, YAML, Bourne shell
+- The  Google BigQuery Public Dataset GitHub snapshot shows 562 users using starlark in 1k repos on GitHub
+- Read more about starlark on the web: 1.
+ https://bazel.build/contribute/policy
+- 18 languages in PLDB linking to starlark: asterius-compiler, Bazel, Cap'n Proto, Carbon, Claro, cloc, Closure Templates, FlatBuffers, JFlex, Jsonnet, Kubernetes, MongoDB, Node.js, PCRE, PyTorch, TensorFlow, v8, YARA
+
+# Define a number
+number = 18
+
+# Define a dictionary
+people = {
+    &quot;Alice&quot;: 22,
+    &quot;Bob&quot;: 40,
+    &quot;Charlie&quot;: 55,
+    &quot;Dave&quot;: 14,
+}
+
+names = &quot;, &quot;.join(people.keys())  # Alice, Bob, Charlie, Dave
+
+# Define a function
+def greet(name):
+  &quot;&quot;&quot;Return a greeting.&quot;&quot;&quot;
+  return &quot;Hello {}!&quot;.format(name)
+
+greeting = greet(names)
+
+above30 = [name for name, age in people.items() if age &gt;= 30]
+
+print(&quot;{} people are above 30.&quot;.format(len(above30)))
+
+def fizz_buzz(n):
+    &quot;&quot;&quot;Print Fizz Buzz numbers from 1 to n.&quot;&quot;&quot;
+    for i in range(1, n + 1):
+        s = &quot;&quot;
+        if i % 3 == 0:
+            s += &quot;Fizz&quot;
+        if i % 5 == 0:
+            s += &quot;Buzz&quot;
+        print(s if s else i)
+
+fizz_buzz(20)
+
+print(&quot;Hello World&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,41 @@
+mavo
+====
+
+mavo is a template language created in 2015 by Lea Verou.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Lea%20Verou
+
+#462 on PLDB
+9 Years Old
+
+git clone https://github.com/mavoweb/mavo
+
+Create web applications entirely by writing HTML and CSS!
+
+- mavo website
+ https://mavo.io/
+- mavo is developed on GitHub and has 2,676 stars
+- mavo first developed in https://github.com/mavoweb
+- mavo is written in JavaScript, CSS, JSON, SCSS, Markdown, HTML, TOML
+- mavo on Twitter
+ https://twitter.com/mavoweb
+- mavo.io was registered in 2016
+
+&lt;main mv-app=&quot;todo&quot; mv-storage=&quot;local&quot; mv-mode=&quot;edit&quot;&gt;
+ &lt;header&gt;
+   &lt;h1&gt;My tasks&lt;/h1&gt;
+   &lt;p&gt;[count(done)] done out of [count(task)] total&lt;/p&gt;
+ &lt;/header&gt;
+
+ &lt;ul&gt;
+   &lt;li property=&quot;task&quot; mv-multiple&gt;
+     &lt;label&gt;
+       &lt;input property=&quot;done&quot; type=&quot;checkbox&quot; /&gt;
+       &lt;span property=&quot;taskTitle&quot;&gt;Do stuff&lt;/span&gt;
+     &lt;/label&gt;
+   &lt;/li&gt;
+   &lt;button mv-action=&quot;delete(task where done)&quot;&gt;
+     Clear Completed
+   &lt;/button&gt;
+ &lt;/ul&gt;
+&lt;/main&gt;

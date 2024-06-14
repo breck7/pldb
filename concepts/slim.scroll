@@ -1,0 +1,123 @@
+import ../code/conceptPage.scroll
+
+id slim
+name Slim
+appeared 2010
+creators  Andy Stone
+tags template
+website https://slim-template.github.io
+latestVersion v5.2.1
+conceptDescription A lightweight templating engine
+
+isOpenSource true
+writtenIn ruby slim markdown yaml erb javascript
+clocExtensions slim
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 2021
+ committers 127
+ files 127
+ newestCommit 2024
+country United States
+originCommunity https://github.com/slim-template
+reference https://web.archive.org/web/20150313184235/http://slim-lang.com/
+
+pygmentsHighlighter Slim
+ filename webmisc.py
+ fileExtensions slim
+example
+ doctype html
+ html
+   head
+     title Slim Examples
+     meta name="keywords" content="template language"
+     meta name="author" content=author
+     javascript:
+       alert('Slim supports embedded javascript!')
+ 
+   body
+     h1 Markup examples
+leachim6 Slim
+ filepath s/Slim.slim
+ fileExtensions slim
+ example
+  doctype html
+  head
+    title Hello World
+  body
+    h1 Hello World
+
+githubRepo https://github.com/slim-template/slim
+ firstCommit 2010
+ stars 5110
+ forks 502
+ subscribers 122
+ created 2010
+ updated 2022
+ description Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic.
+ issues 80
+
+domainName slim-lang.com
+ registered 2010
+ awisRank
+  2022 3570207
+  2017 824418
+
+githubBigQuery Slim
+ repos 206
+ users 176
+
+linguistGrammarRepo https://github.com/slim-template/ruby-slim.tmbundle
+ firstCommit 2010
+ lastCommit 2017
+ committerCount 24
+ commitCount 109
+ sampleCount 1
+ example
+  doctype html
+  html
+    head
+      title Slim Examples
+      meta name="keywords" content="template language"
+      meta name="author" content=author
+      javascript:
+        alert('Slim supports embedded javascript!')
+  
+    body
+      h1 Markup examples
+  
+      #content
+        p This example shows you how a basic Slim file looks like.
+  
+        == yield
+  
+        - unless items.empty?
+          table
+            - for item in items do
+              tr
+                td.name = item.name
+                td.price = item.price
+        - else
+          p
+           | No items found.  Please add some inventory.
+             Thank you!
+  
+      div id="footer"
+        = render 'footer'
+        | Copyright © #{year} #{author}
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 2821133|Slim - A Fast, Lightweight Template Engine for Ruby|http://slim-lang.com/|2011-07-29 10:47:44 UTC|1311936464|duck|7|5
+
+githubLanguage Slim
+ fileExtensions slim
+ trendingProjectsCount 0
+ type markup
+ aceMode text
+ codemirrorMode slim
+ codemirrorMimeType text/x-slim
+ tmScope text.slim
+ repos 305

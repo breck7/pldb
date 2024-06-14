@@ -1,0 +1,133 @@
+Haxe
+====
+
+Haxe is an open source programming language created in 2005 by Nicolas Cannasse.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Nicolas%20Cannasse
+
+#58 on PLDB
+19 Years Old
+17k Repos
+
+git clone https://github.com/HaxeFoundation/haxe
+
+Try now: Riju · TIO
+
+Haxe is computer software, a high-level, cross-platform, multi-paradigm programming language and compiler that can produce applications and source code, for many different computing platforms, from one code-base. It is free and open-source software, distributed under the GNU General Public License (GPL) 2.0, and the standard library under an MIT License. Haxe includes a set of common functions that are supported across all platforms, such as numeric data types, text, arrays, binary and some common file formats. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Haxe
+
+- Haxe website
+ http://haxe.org
+- Haxe Wikipedia page
+ https://en.wikipedia.org/wiki/Haxe
+- Haxe is developed on GitHub and has 4,955 stars
+- Haxe docs
+ https://haxe.org/documentation/introduction/
+- There are at least 16,827 Haxe repos on GitHub
+- Haxe first developed in Haxe Foundation
+- Haxe is written in Haxe, OCaml, JSON, Lua, Java, YAML, Make, ActionScript, Bourne shell, Markdown, C, XML, JavaScript, Python, PHP, Diff, C++, Objective-C, Ini, HTML
+- Haxe on Twitter
+ https://twitter.com/haxe_org
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Haxe in 3k repos on GitHub
+- Explore Haxe snippets on Rosetta Code
+- Haxe appears in the TIOBE Index
+- Haxe Ubuntu package
+ https://packages.ubuntu.com/jammy/haxe
+- Haxe LSP implementation
+- CodeMirror package for syntax highlighting Haxe
+- Pygments supports syntax highlighting for Haxe
+- GitHub supports syntax highlighting for Haxe
+- Haxe appears in the Quine Relay project
+- There is a central package repository for Haxe
+- Official Blog page for Haxe
+ https://haxe.org/blog/
+- Indeed.com has 1 matches for "haxe developer".
+- haxe.org was registered in 2005
+- See also: (27 related languages)Hack, OCaml, ARM, IA-32, Android, iOS, Linux, ActionScript, Java, JavaScript, C#, PHP, Python, Lua, Neko, XML, Haskell, ML, Go, Dart, Opa, Clojure, CoffeeScript, TypeScript, Scala, Monkey, Vala
+- 11 languages in PLDB linking to Haxe: Ace Editor, cloc, Flow9, hashlink, Haxe, Haxe Library Manager, mal, Neko, Pygments, Reason, Star
+
+class Main {
+    static public function main() {
+        trace(&quot;Hello, world!&quot;);
+    }
+}
+
+class HelloWorld {
+    static function main() {
+        trace(&quot;Hello World&quot;);
+    }
+}
+
+// Hello world in Haxe
+
+class Hello {
+    static public function main() {
+        trace(&quot;Hello world!&quot;);
+    }
+}
+
+class FooBar {
+
+   public var foo:Int;
+   public var bar:String;
+
+   public function new(){ foo=1; bar=&quot;2&quot;;}
+
+   function anyFooBar(v:{foo:Int,bar:String}) trace(v.foo);
+
+   static function test(){
+        var fb = new FooBar();
+        fb.anyFooBar(fb);
+        fb.anyFooBar({foo:123,bar:&quot;456&quot;});
+   }
+}
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

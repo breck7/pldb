@@ -1,0 +1,232 @@
+import ../code/conceptPage.scroll
+
+id objective-c
+name Objective-C
+appeared 1984
+creators Brad Cox
+tags pl
+website https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+latestVersion 2.0
+aka objectivec
+
+supersetOf c
+gdbSupport true
+fileExtensions h m mm C
+clocExtensions m
+fileType text
+documentation https://developer.apple.com/documentation/objectivec
+antlr https://github.com/antlr/grammars-v4/tree/master/objc
+monaco objective-c
+rosettaCode http://www.rosettacode.org/wiki/Category:Objective-C
+quineRelay Objective-C
+packageRepository https://cocoapods.org/
+ubuntuPackage gobjc
+country United States
+originCommunity Apple
+projectEuler Objective-C
+ memberCount
+  2019 66
+  2022 60
+
+helloWorldCollection Objective-C
+ /* Hello World in Objective-C.
+ ** Since the standard implementation is identical to K&R C,
+ ** a version that says hello to a set of people passed on
+ ** the command line is shown here.
+ */
+ 
+ #include <stdio.h>
+ #include <objpak.h>
+ int main(int argc,char **argv)
+ {
+     id set = [Set new];
+     argv++;while (--argc) [set add:[String str:*argv++]];
+     [set do:{ :each | printf("hello, %s!\n",[each str]); }];
+     return 0;
+ }
+ 
+pygmentsHighlighter Objective-C
+ filename objective.py
+ fileExtensions m h
+rijuRepl https://riju.codes/objectivec
+ example
+  #import <Foundation/Foundation.h>
+  
+  int main() {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSLog(@"Hello, world!");
+    [pool drain];
+    return 0;
+  }
+  
+subreddit https://reddit.com/r/ObjectiveC
+ memberCount
+  2017 5468
+  2022 6609
+leachim6 Objective C
+ filepath o/Objective C.m
+ example
+  /*
+   Build on OS X:
+   clang -framework Foundation -fobjc-arc objc.m -o objc
+   
+   Build on Linux with GNUstep:
+   clang `gnustep-config --objc-flags` `gnustep-config --base-libs` -fobjc-nonfragile-abi -fobjc-arc objc.m -o objc
+   */
+  
+  #import <Foundation/Foundation.h>
+  
+  int main(void)
+  {
+      NSLog(@"Hello World");
+  }
+  
+
+meetup https://www.meetup.com/topics/objective-c
+ memberCount 235352
+ groupCount 445
+keywords auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Bool _Complex _Imaginary BOOL Class bycopy byref id IMP in inout nil NO NULL oneway out Protocol SEL self Super YES @ @interface @end @implementation @protocol @class @public @protected @private @property @try @throw @catch() @finally @synthesize @dynamic @selector atomic nonatomic retain
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken printf
+stringToken "
+
+hasStrings true
+ "hello world"
+hasSingleDispatch true
+hasPointers true
+hasConstructors true
+hasGarbageCollection false
+hasImports true
+ // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
+ #import <Foundation/Foundation.h>
+ #include <asl.h>
+ #include <mach/mach.h>
+hasInterfaces true
+ @protocol Printing
+    -(void) print;
+ @end
+hasOperatorOverloading false
+hasLineComments true
+ // A comment
+hasMessagePassing true
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasWhileLoops true
+hasConstants true
+hasSwitch true
+hasConditionals true
+
+wikipedia https://en.wikipedia.org/wiki/Objective-C
+ example
+  -(void) firstLabel: (int)param1 secondLabel: (int)param2;
+ related c smalltalk groovy java nu objective-j tom-oopl swift ios simula ada self ruby llvmir linux vala
+ summary Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. It was the main programming language used by Apple for the OS X and iOS operating systems, and their respective application programming interfaces (APIs) Cocoa and Cocoa Touch prior to the introduction of Swift. The programming language Objective-C was originally developed in the early 1980s. It was selected as the main language used by NeXT for its NeXTSTEP operating system, from which OS X and iOS are derived. Portable Objective-C programs that do not use the Cocoa or Cocoa Touch libraries, or those using parts that may be ported or reimplemented for other systems, can also be compiled for any system supported by GNU Compiler Collection (GCC) or Clang. Objective-C source code 'implementation' program files usually have .m filename extensions, while Objective-C 'header/interface' files have .h extensions, the same as C header files. Objective-C++ files are denoted with a .mm file extension.
+ pageId 39809523
+ dailyPageViews 910
+ created 2002
+ backlinksCount 1275
+ revisionCount 1901
+ appeared 1984
+ fileExtensions h m mm C
+
+hopl https://hopl.info/showlanguage.prx?exp=1247
+tiobe Objective-C
+ currentRank 19
+pypl Objective-C
+
+githubBigQuery Objective-C
+ repos 167113
+ users 97044
+
+linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 14
+ commitCount 499
+ sampleCount 22
+ example
+  #import "Foo.h"
+  
+  
+  @implementation Foo
+  
+  @end
+  
+
+isbndb 11
+ year|publisher|title|authors|isbn13
+ 2012|Addison-Wesley Professional|Programming in Objective-C (Developer's Library)|Kochan, Stephen G.|9780321887283
+ 2008|Apress|Learn Objective-C on the Mac (Learn Series)|Knaster, Scott and Dalrymple, Mark|9781430218159
+ 2011|Wiley|Objective-C|DeVoe, Jiva|9780470479223
+ 2012|Apress|Learn Objective-C on the Mac: For OS X and iOS|Knaster, Scott and Dalrymple, Mark and Malik, Waqar|9781430241881
+ 2011|Apress|Objective-C for Absolute Beginners: iPhone, iPad and Mac Programming Made Easy|Bennett, Gary and Fisher, Mitchell and Lees, Brad|9781430236535
+ 2011|O'Reilly Media|Head First iPhone and iPad Development: A Learner's Guide to Creating Objective-C Applications for the iPhone and iPad|Pilone, Dan and Pilone, Tracey|9781449387822
+ 2009|Apress|Learn Objective-C for Java Developers (Learn Series)|Bucanek, James|9781430223696
+ 2010|McGraw-Hill Education|Objective-C for iPhone Developers, A Beginner's Guide|Brannan, James|9780071703284
+ 2011|O'Reilly Media|Learning the iOS 4 SDK for JavaScript Programmers: Create Native Apps with Objective-C and Xcode|Goodman, Danny|9781449388454
+ 2011|Apress|Pro Objective-C Design Patterns for iOS|Chung, Carlo|9781430233312
+ 2011|Manning Publications|Objective-C Fundamentals|Fairbairn, Christopher and Ruffenach, Collin and Fahrenkrug, Johannes|9781935182535
+
+githubLanguage Objective-C
+ fileExtensions m h
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  MustangYM WeChatExtension-ForMac https://github.com/MustangYM.png https://github.com/MustangYM/WeChatExtension-ForMac Objective-C #438eff 1706 302 460 Mac版微信的功能拓展
+  firebase firebase-ios-sdk https://github.com/firebase.png https://github.com/firebase/firebase-ios-sdk Objective-C #438eff 1341 317 54 "Firebase iOS SDK"
+  Flipboard FLEX https://github.com/Flipboard.png https://github.com/Flipboard/FLEX Objective-C #438eff 10723 1223 112 "An in-app debugging and exploration tool for iOS"
+  sparkle-project Sparkle https://github.com/sparkle-project.png https://github.com/sparkle-project/Sparkle Objective-C #438eff 4445 795 54 "A software update framework for macOS"
+  Sunnyyoung WeChatTweak-macOS https://github.com/Sunnyyoung.png https://github.com/Sunnyyoung/WeChatTweak-macOS Objective-C #438eff 3641 479 210 "A dynamic library tweak for WeChat macOS - 首款微信 macOS 客户端撤回拦截与多开"
+  gnachman iTerm2 https://github.com/gnachman.png https://github.com/gnachman/iTerm2 Objective-C #438eff 9157 917 200 "iTerm2 is a terminal emulator for Mac OS X that does amazing things."
+  react-native-community react-native-permissions https://github.com/react-native-community.png https://github.com/react-native-community/react-native-permissions Objective-C #438eff 1592 506 50 "Check and request user permissions in ReactNative (iOS and Android)"
+  react-native-webrtc react-native-webrtc https://github.com/react-native-webrtc.png https://github.com/react-native-webrtc/react-native-webrtc Objective-C #438eff 2291 556 54 "The WebRTC module for React Native"
+  banchichen TZImagePickerController https://github.com/banchichen.png https://github.com/banchichen/TZImagePickerController Objective-C #438eff 6628 1487 106 "一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。 A clone of UIImagePickerController, support picking multiple photos、original photo、video, also allow preview photo and video, support iOS6+"
+  git-up GitUp https://github.com/git-up.png https://github.com/git-up/GitUp Objective-C #438eff 8649 567 81 "The Git interface you've been missing all your life has finally arrived."
+  kstenerud KSCrash https://github.com/kstenerud.png https://github.com/kstenerud/KSCrash Objective-C #438eff 2785 421 51 "The Ultimate iOS Crash Reporter"
+  halfrost Halfrost-Field https://github.com/halfrost.png https://github.com/halfrost/Halfrost-Field Objective-C #438eff 4210 702 102 "✍️ 这里是写博客的地方 —— Halfrost-Field 冰霜之地"
+  WenchaoD FSCalendar https://github.com/WenchaoD.png https://github.com/WenchaoD/FSCalendar Objective-C #438eff 8285 1457 124 "A fully customizable iOS calendar library, compatible with Objective-C and Swift"
+  facebook Shimmer https://github.com/facebook.png https://github.com/facebook/Shimmer Objective-C #438eff 9052 1092 58 "An easy way to add a simple, shimmering effect to any view in an iOS app."
+  liberalisman iOS-InterviewQuestion-collection https://github.com/liberalisman.png https://github.com/liberalisman/iOS-InterviewQuestion-collection Objective-C #438eff 2176 419 91 "iOS 开发者在面试过程中，常见的一些面试题，建议尽量弄懂了原理，并且多实践。"
+  realm realm-cocoa https://github.com/realm.png https://github.com/realm/realm-cocoa Objective-C #438eff 13425 1754 71 "Realm is a mobile database: a replacement for Core Data & SQLite"
+  luggit react-native-config https://github.com/luggit.png https://github.com/luggit/react-native-config Objective-C #438eff 2536 440 62 "Bring some 12 factor love to your mobile apps!"
+  pujiaxin33 JXPagingView https://github.com/pujiaxin33.png https://github.com/pujiaxin33/JXPagingView Objective-C #438eff 911 154 94 类似微博主页、简书主页等效果。多页面嵌套，既可以上下滑动，也可以左右滑动切换页面。支持HeaderView悬浮、支持下拉刷新、上拉加载更多。
+  nst iOS-Runtime-Headers https://github.com/nst.png https://github.com/nst/iOS-Runtime-Headers Objective-C #438eff 7298 1564 42 "iOS Objective-C headers as derived from runtime introspection"
+  kayanouriko E-HentaiViewer https://github.com/kayanouriko.png https://github.com/kayanouriko/E-HentaiViewer Objective-C #438eff 534 78 43 一个E-Hentai的iOS端阅读器
+  zendesk zendesk_sdk_ios https://github.com/zendesk.png https://github.com/zendesk/zendesk_sdk_ios Objective-C #438eff 105 72 4 "Zendesk Mobile SDK for iOS"
+  KJCracks Clutch https://github.com/KJCracks.png https://github.com/KJCracks/Clutch Objective-C #438eff 2607 534 58 "Fast iOS executable dumper"
+  AliSoftware OHHTTPStubs https://github.com/AliSoftware.png https://github.com/AliSoftware/OHHTTPStubs Objective-C #438eff 4256 512 49 "Stub your network requests easily! Test your apps with fake network data and custom response time, response code and headers!"
+  openid AppAuth-iOS https://github.com/openid.png https://github.com/openid/AppAuth-iOS Objective-C #438eff 657 328 18 "iOS and macOS SDK for communicating with OAuth 2.0 and OpenID Connect providers."
+  uber ios-snapshot-test-case https://github.com/uber.png https://github.com/uber/ios-snapshot-test-case Objective-C #438eff 977 99 26 "Snapshot view unit tests for iOS"
+ trendingProjectsCount 26
+ type programming
+ aceMode objectivec
+ codemirrorMode clike
+ codemirrorMimeType text/x-objectivec
+ tmScope source.objc
+ aliases obj-c or objc or objectivec
+ repos 535667
+
+indeedJobs objective-c engineer
+ 2017 4276
+stackOverflowSurvey
+ 2021
+  users 2310
+  medianSalary 64859
+  fans 1400
+  percentageUsing 0.03
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Objective C|1999|Stephen G. Kochan|116159|3.96|445|21
+ Programming in Objective-C 2.0|2008|Stephen G. Kochan|3467967|3.85|370|16
+ Objective-C Programming: The Big Nerd Ranch Guide|2011|Aaron Hillegass|14382053|4.17|634|41
+ The Objective-C Programming Language||Apple Inc.|15769650|3.62|24|0

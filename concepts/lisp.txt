@@ -1,0 +1,76 @@
+Lisp
+====
+
+Lisp is an open source programming language created in 1958 by John McCarthy.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221958%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=John%20McCarthy
+
+#32 on PLDB
+66 Years Old
+
+Lisp (historically, LISP) is a family of computer programming languages with a long history and a distinctive, fully parenthesized prefix notation. Originally specified in 1958, Lisp is the second-oldest high-level programming language in widespread use today. Only Fortran is older, by one year. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Lisp_(programming_language)
+
+- Lisp Wikipedia page
+ https://en.wikipedia.org/wiki/Lisp_(programming_language)
+- Lisp docs
+ https://common-lisp.net/documentation
+- Lisp first developed in Massachusetts Institute of Technology
+- Recurring conference about Lisp: The,European,Lisp,Symposium
+- Check out the 232 Lisp meetup groups on Meetup.com.
+- There are 34,743 members in the Lisp subreddit
+- There are 1,372 Project Euler users using Lisp
+- In the 2021 StackOverflow developer survey Lisp programmers reported a median salary of $75,669. 1% of respondents reported using Lisp. 1,096 programmers reported using Lisp, and 1,513 said they wanted to use it
+- Explore Lisp snippets on Rosetta Code
+- Lisp on HOPL
+ https://hopl.info/showlanguage.prx?exp=14
+- Lisp ranks #38 in the TIOBE Index
+- Indeed.com has 112 matches for "lisp engineer".
+- See also: (64 related languages)Arc, AutoLISP, Clojure, Common Lisp, Emacs Lisp, EuLisp, Interlisp, ISLISP, LFE, NewLisp, Portable Standard Lisp, Racket, RPL, Scheme, Cadence SKILL, Spice Lisp, T, Information Processing Language, CLIPS, CLU, COWSEL, Dylan, Elixir, Falcon, Forth, Haskell, Io, Ioke, JavaScript, Julia, Logo, Lua, ML, Nim, Nu, OPS5, Perl, POP-2, Pop-11, Python, R, Ruby, Scala, Swift, Smalltalk, Tcl, Wolfram Language, Fortran, S-expressions, Lisp Machine Lisp, OpenLisp, PicoLisp, LISP 2, Multics, ACL2, JVM, YARV, Emacs, AUTOCAD, LilyPond, Algol, Flavors, C, XML
+- 126 languages in PLDB linking to Lisp: Armed Bear Common Lisp, Ace Editor, april, Austral, Bucklescript, candor, Cap'n Proto, Caramel, carp, Catala, Chapel, CHICKEN, chrysaLisp, Common Lisp with Arc Macros and Procedures, clay, cloc, Coq, dedukti, Dendral, Dern, dex, edgelisp, eff, Egison, elegance, Encore, Factor, Fancy, Felix, femtolisp, Flow9, F*, GAP, GN, Git, GraphIt, gura, hakaru, HAL Format, harlan, HHVM, huginn, hurl, Hush, Idio, invokator, Ioke, Invisible XML, Jakt, JFlex, JSLT, Julia, Kalyn, Kamby, KamilaLisp, kitten, Koka, kona, lamdu-editor, Lamdu, Lawvere, lem-editor, Ligo, Lil, lila-lang, Links, Lux, Magit, mal, mgmt, mimix-stream-language, mockingbird-notation, monte, Mu, Mudlle, Nemerle, nesC, NewLisp, Ninja, Node.js, Noweb, Opa, Opal, Parenscript, penrose, Plaid, Please Build, GNU Poke, polyglot-compiler, popr, PostgreSQL, Potion, Pygments, Python, Qore, quicklisp-pm, r4, ralph, redprl, Revolution, rosie, Ruby, Savi, Scroll, Scroll Notation, setlx, shill, Simit, skip, Slony, SmallBASIC, Semantic Patch Language, solid, Sugar, Swift, tridash, ultralisp-pm, UrWeb, Virgil, Wyvern, XL, Ecstasy, YASnippet, yeti, Z, Zephir
+
+; LISP
+(DEFUN hello ()
+  (PRINT (LIST &#39;HELLO &#39;WORLD))
+)
+
+(hello)
+
+(defun -reverse (list)
+  (let ((return-value &#39;()))
+    (dolist (e list) (push e return-value))
+    return-value))
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token PRINT
+ Example
+row
+ Feature Homoiconicity
+ FeatureLink ../features/hasHomoiconicity.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example

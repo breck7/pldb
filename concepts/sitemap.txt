@@ -1,0 +1,33 @@
+Sitemap
+=======
+
+Sitemap is a xml format created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2525 on PLDB
+23 Years Old
+
+- Sitemap website
+ https://sitemaps.org/
+- Sitemap first developed in Google Inc
+- sitemaps.org was registered in 2001
+- Read more about Sitemap on the web: 1.
+ https://en.wikipedia.org/wiki/Site_map
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;
+
+   &lt;url&gt;
+
+      &lt;loc&gt;http://www.example.com/&lt;/loc&gt;
+
+      &lt;lastmod&gt;2005-01-01&lt;/lastmod&gt;
+
+      &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+
+      &lt;priority&gt;0.8&lt;/priority&gt;
+
+   &lt;/url&gt;
+
+&lt;/urlset&gt;

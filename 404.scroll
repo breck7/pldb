@@ -1,0 +1,18 @@
+permalink 404.html
+replace BASE_URL
+title Page not found
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
+
+import header.scroll
+
+printTitle
+thinColumns 1
+
+Sorry, the url you requested was not found.
+
+helpfulNotFound /sitemap.txt /posts/sitemap.txt /concepts/conceptsSitemap.txt /pages/sitemap.txt /lists/sitemap.txt /features/sitemap.txt
+
+If you think there's a bug on our site, please let us know via Twitter. Thank you!
+ https://x.com/breckyunits please let us know via Twitter
+
+pageFooter

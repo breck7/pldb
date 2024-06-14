@@ -1,0 +1,31 @@
+GN
+==
+
+GN is an open source application created in 2015.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#839 on PLDB
+9 Years Old
+
+git clone https://github.com/o-lim/generate-ninja
+
+GN, a meta-build system that generates Ninja build files
+
+- GN is developed on GitHub and has 74 stars
+- GN first developed in https://github.com/o-lim/generate-ninja/issues
+- GN is written in C++, Python, Markdown, JSON, XML, Bourne shell, Vim script, YAML, Lisp, Make, Objective C++
+- GitHub supports syntax highlighting for GN
+
+# Copyright 2014 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import(&quot;//build/toolchain/toolchain.gni&quot;)
+
+declare_args() {
+  # Indicates if the build should use the Chrome-specific plugins for enforcing
+  # coding guidelines, etc. Only used when compiling with Clang.
+  clang_use_chrome_plugins = is_clang &amp;&amp; !is_nacl &amp;&amp; !use_xcode_clang
+
+  clang_base_path = &quot;//third_party/llvm-build/Release+Asserts&quot;
+}

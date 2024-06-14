@@ -1,0 +1,68 @@
+JSON Schema
+===========
+
+JSON Schema is a data validation language created in 2010 by Kris Zyp.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kris%20Zyp
+
+#404 on PLDB
+14 Years Old
+
+git clone https://github.com/json-schema-org/json-schema-spec
+
+The JSON Schema I-D sources
+
+- JSON Schema website
+ http://json-schema.org/
+- JSON Schema is developed on GitHub and has 2,623 stars
+- JSON Schema first developed in https://github.com/json-schema-org
+- JSON Schema is written in Markdown, JSON, JavaScript, YAML, XML, Make
+- json-schema.org was registered in 2007
+
+{
+  &quot;$id&quot;: &quot;https://example.com/calendar.schema.json&quot;,
+  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+  &quot;description&quot;: &quot;A representation of an event&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;required&quot;: [ &quot;dtstart&quot;, &quot;summary&quot; ],
+  &quot;properties&quot;: {
+    &quot;dtstart&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Event starting time&quot;
+    },
+    &quot;dtend&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Event ending time&quot;
+    },
+    &quot;summary&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;location&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;url&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;duration&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Event duration&quot;
+    },
+    &quot;rdate&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Recurrence date&quot;
+    },
+    &quot;rrule&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Recurrence rule&quot;
+    },
+    &quot;category&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;description&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;geo&quot;: {
+      &quot;$ref&quot;: &quot;https://example.com/geographical-location.schema.json&quot;
+    }
+  }
+}

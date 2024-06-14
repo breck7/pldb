@@ -1,0 +1,104 @@
+GCC Machine Description
+=======================
+
+GCC Machine Description is a programming language created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1040 on PLDB
+23 Years Old
+1k Repos
+
+- There are at least 1,027 GCC Machine Description repos on GitHub
+- GCC Machine Description first developed in University of Arizona
+- The  Google BigQuery Public Dataset GitHub snapshot shows 856 users using GCC Machine Description in 878 repos on GitHub
+- GitHub supports syntax highlighting for GCC Machine Description
+- Read more about GCC Machine Description on the web: 1.
+ https://en.wikipedia.org/wiki/Register_transfer_language
+
+;;- Machine description for the PDP-10.
+;;  Copyright (C) 2001, 2002 Lars Brinkhoff.
+;;  Contributed by Lars Brinkhoff &lt;lars@nocrew.org&gt;, funded by XKL, LLC.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Index
+
+;;   Front Page
+;;   Index
+;;   Constraints for Immediate Operands
+;;   To-do List
+;;   Instruction Wish-List
+;;   Attributes
+;;	length, skip, reorg_type
+;;   Unspec Usage
+;;	UNSPEC_ADJSP, UNSPEC_ADJBP, UNSPEC_ADDRESS, UNSPEC_FFO, UNSPEC_SUBBP,
+;;	VUNSPEC_BLT, VUNSPEC_FSC, VUNSPEC_XBLT, VUNSPEC_MOVSLJ, VUNSPEC_MOVST
+;;   Constants
+;;      RIGHT_HALF, LEFT_HALF, SIGNBIT, SP_REGNUM
+;;   Optimizations
+;;   Data Movement
+;;	LDB, ILDB, (LDBI), LDBE, ILDBE, (LDBEI), DPB, IDPB, (DPBI),
+;;	HRR, HRL, HLR, HLL, HRRM, HRLM, HLRM, HLLM,
+;;	HRRZ, HRLZ, HLRZ, HLLZ, HRRE, HRLE, HLRE, HLLE,
+;;	SETZM, SETOM,
+;;	MOVE, MOVEI, MOVSI, HRLOI, HRROI, MOVEM,
+;;	MOVS, EXCH, SETZB,
+;;	DMOVE, DMOVEM,
+;;	BLT, XBLT, (MOVSLJ), (MOVST), (CMPS)
+;;   Conditional Data Movement
+;;	SKIPL, SKIPE, SKIPLE, SKIPGE, SKIPN, SKIPG,
+;;	TDZA
+;;   Integer Arithmetic
+;;	AOS, SOS,
+;;	ADD, ADDI, ADDM, ADDB, DADD,
+;;	SUB, SUBI, SUBM, SUBB, DSUB,
+;;	IMUL, IMULI, IMULM, IMULB, MUL, MULI, MULM, MULB, DMUL,
+;;	IDIV, IDIVI, IDIVM, DIV, DIVI, DIVM, DDIV,
+;;	UIDIV, UIDIVI, UIDIVM, UIMOD, UIMODI, UIMODM,
+;;	MOVN, MOVNM, MOVNS, MOVNI, DMOVN, DMOVNM,
+;;	MOVM, MOVMM, MOVMS,
+;;	FFS
+;;   Integer Conversions
+;;	ANDI, HRRZ, SEXT, HRRE, ANDI, HRR
+;;   Shifting and Rotating
+;;	LSH, LSHC, ASH, ASHC, ROT, ROTC
+;;   Logical Operations
+;;	AND, ANDI, ANDM, ANDB, TLZ, ANDCMI,
+;;	ANDCA, ANDCAI, ANDCAM, ANDCAB, ANDCBI,
+;;	ANDCM, ANDCMM, ANDCMB,
+;;	XOR, XORI, XORM, XORB, TLC, EQVI,
+;;	IOR, IORI, IORM, IORB, TLO, ORCMI,
+;;	ANDCB, ANDCBM, ANDCBB,
+;;	EQV, EQVM, EQVB,
+;;	SETCA, SETCAM, SETCAB,
+;;	SETCM, SETCMM, SETCMB,
+;;	ORCA, ORCAI, ORCAM, ORCAB, ORCBI,
+;;	ORCM, ORCMM, ORCMB,
+;;	ORCB, ORCBM, ORCBB
+;;   Floating-point Arithmetic
+;;	FADR, FADRI, FADRM, FADRB, DFAD, GFAD,
+;;	FSBR, FSBRI, FSBRM, FSBRB, DFSB,
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

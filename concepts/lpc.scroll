@@ -1,0 +1,58 @@
+import ../code/conceptPage.scroll
+
+id lpc
+name LPC
+appeared 1995
+creators Lars Pensjö
+tags pl
+website http://lpmuds.net
+standsFor Lars Pensjö C
+
+fileType text
+centralPackageRepositoryCount 0
+country Sweden
+originCommunity Chalmers Datorförening
+
+helloWorldCollection Lars Pensj%C3%B6 C
+ // Hello World in LPC
+ 
+ void create()
+ {
+        message("info","Hello World!",this_user());
+ }
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/LPC_(programming_language)
+ example
+  function op = (:
+          return sqrt($1 * $1 + $2 * $2);
+      :);
+ related c lisp perl pike java php
+ summary LPC (short for Lars Pensjö C) is an object-oriented programming language derived from C and developed originally by Lars Pensjö to facilitate MUD building on LPMuds. Though designed for game development, its flexibility has led to it being used for a variety of purposes, and to its evolution into the language Pike. LPC syntax places it in the family of C-like languages, with C and C++ its strongest influences.
+ pageId 904645
+ dailyPageViews 47
+ created 2004
+ backlinksCount 264
+ revisionCount 211
+ appeared 1993
+
+hopl https://hopl.info/showlanguage.prx?exp=1409
+tiobe LPC
+
+domainName lpmuds.net
+ registered 2006
+ awisRank
+  2017 19387417
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1998|Multicodebook vector quantization of LPC parameters|10.1109/ICASSP.1998.674367|1|0|C. Xydeas and T. Chapman|85d57012e851b2fb857258b255846a2926b0c71c

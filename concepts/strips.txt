@@ -1,0 +1,69 @@
+Strips
+======
+
+Strips is a programming language created in 1969.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221969%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#835 on PLDB
+55 Years Old
+
+In artificial intelligence, STRIPS (Stanford Research Institute Problem Solver) is an automated planner developed by Richard Fikes and Nils Nilsson in 1971 at SRI International. The same name was later used to refer to the formal language of the inputs to this planner. This language is the base for most of the languages for expressing automated planning problem instances in use today; such languages are commonly known as action languages. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/STRIPS
+
+- Strips Wikipedia page
+ https://en.wikipedia.org/wiki/STRIPS
+- Strips first developed in Stanford University
+- Strips on HOPL
+ https://hopl.info/showlanguage.prx?exp=2413
+- Read more about Strips on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
+
+Actions:
+               // move from X to Y
+               _Move(X, Y)_
+               Preconditions:  At(X), Level(low)
+               Postconditions: not At(X), At(Y)
+               
+               // climb up on the box
+               _ClimbUp(Location)_
+               Preconditions:  At(Location), BoxAt(Location), Level(low)
+               Postconditions: Level(high), not Level(low)
+               
+               // climb down from the box
+               _ClimbDown(Location)_
+               Preconditions:  At(Location), BoxAt(Location), Level(high)
+               Postconditions: Level(low), not Level(high)
+               
+               // move monkey and box from X to Y
+               _MoveBox(X, Y)_
+               Preconditions:  At(X), BoxAt(X), Level(low)
+               Postconditions: BoxAt(Y), not BoxAt(X), At(Y), not At(X)
+               
+               // take the bananas
+               _TakeBananas(Location)_
+               Preconditions:  At(Location), BananasAt(Location), Level(high)
+               Postconditions: Have(bananas)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

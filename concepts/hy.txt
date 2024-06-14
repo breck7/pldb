@@ -1,0 +1,128 @@
+Hy
+==
+
+Hy is an open source programming language created in 2013 by Paul Tagliamonte.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Paul%20Tagliamonte
+
+#139 on PLDB
+11 Years Old
+398 Repos
+
+git clone https://github.com/hylang/hy
+
+Try now: Riju · TIO
+
+Hy (alternately, Hylang) is a programming language, a dialect of the language Lisp designed to interact with the language Python by translating expressions into Python's abstract syntax tree (AST). Hy was introduced at Python Conference (PyCon) 2013 by Paul Tagliamonte.Similar to Kawa's and Clojure's mapping of s-expressions onto the Java virtual machine (JVM), Hy is meant to operate as a transparent Lisp front end to Python's abstract syntax. Lisp allows operating on code as data (metaprogramming). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Hy_(programming_language)
+
+- Hy website
+ http://hylang.org/
+- Hy Wikipedia page
+ https://en.wikipedia.org/wiki/Hy_(programming_language)
+- Hy is developed on GitHub and has 4,282 stars
+- Hy docs
+ https://docs.hylang.org/en/stable/
+- There are at least 398 Hy repos on GitHub
+- Hy first developed in https://github.com/hylang
+- Hy is written in Python, reStructuredText, SVG, YAML, Markdown, CSS, Dockerfile
+- The  Google BigQuery Public Dataset GitHub snapshot shows 154 users using Hy in 180 repos on GitHub
+- Explore Hy snippets on Rosetta Code
+- Pygments supports syntax highlighting for Hy
+- GitHub supports syntax highlighting for Hy
+- PLDB has 2 Jupyter Kernels for Hy: github.com, github.com
+- hylang.org was registered in 2013
+- See also: (5 related languages)Lisp, IA-32, Clojure, Python, JVM
+
+(+ &quot;Hyllo &quot; &quot;World&quot; &quot;!&quot;)
+
+(print &quot;Hello, world!&quot;)
+
+(print &quot;Hello World&quot;)
+
+;; Fibonacci example in Hy.
+
+(defn fib [n]
+  (if (&lt;= n 2) n
+      (+ (fib (- n 1)) (fib (- n 2)))))
+
+(if (= __name__ &quot;__main__&quot;)
+  (for [x [1 2 3 4 5 6 7 8]]
+    (print (fib x))))
+
+=&gt; (print &quot;Hy!&quot;)
+Hy!
+=&gt; (defn salutationsnm [name] (print (+ &quot;Hy &quot; name &quot;!&quot;)))
+=&gt; (salutationsnm &quot;YourName&quot;)
+Hy YourName!
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  ; -?\d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  ; -?\d+\.\d+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  ; 0[xX][a-fA-F0-9]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  ; 0[0-7]+j?
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

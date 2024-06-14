@@ -1,0 +1,70 @@
+import ../code/conceptPage.scroll
+
+id soap
+name SOAP
+appeared 1998
+creators Dave Winer and Don Box and Bob Atkinson and Mohsen Al-Ghosein
+tags xmlFormat
+standsFor Simple Object Access Protocol
+
+fileType text
+wordRank 5253
+documentation https://knowledge.channeladvisor.com/kc?id=kb_article&sysparm_article=KB0018150&sys_kb_id=b02d13c91bd5d1d42d9eea40604bcb2e&spa=1
+centralPackageRepositoryCount 0
+country United States
+originCommunity Microsoft
+
+wikipedia https://en.wikipedia.org/wiki/SOAP
+ example
+  POST /InStock HTTP/1.1
+  Host: www.example.org
+  Content-Type: application/soap+xml; charset=utf-8
+  Content-Length: 299
+  SOAPAction: "http://www.w3.org/2003/05/soap-envelope"
+  
+  <?xml version="1.0"?>
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:m="http://www.example.org/stock/Manikandan">
+    <soap:Header>
+    </soap:Header>
+    <soap:Body>
+      <m:GetStockPrice>
+        <m:StockName>GOOGLE</m:StockName>
+      </m:GetStockPrice>
+    </soap:Body>
+  </soap:Envelope>
+ related http smtp linux xml tcp wddx rfc wsdl tls json rest
+ summary SOAP (originally Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission. SOAP allows processes running on disparate operating systems (such as Windows and Linux) to communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.
+ pageId 29215
+ dailyPageViews 2103
+ created 2001
+ backlinksCount 752
+ revisionCount 1982
+ appeared 1998
+
+isbndb 11
+ year|publisher|title|authors|isbn13
+ 2002|O'Reilly Media|Programming Web Services With SOAP|James Snell and Doug Tidwell and Pavel Kulchenko|9780596000950
+ 2000|Microsoft Press|XML and Soap Programming for BizTalk Servers (DV-MPS Programming)|Travis, Brian E|9780735611269
+ 2012|McFarland & Company, Incorporated Publishers|Soap Operas Worldwide: Cultural and Serial Realities|Marilyn J. Matelski|9780786472802
+ 2002|O'Reilly Media|Java and SOAP|Englander, Robert|9780596001759
+ 2003|Addison Wesley Publishing Company|J2EE Web Services: XML SOAP WSDL UDDI WS-I JAX-RPC JAXR SAAJ JAXP|Monson-Haefel, Richard|9780321146182
+ 2010|University Press of Mississippi|The Survival of Soap Opera: Transformations for a New Media Era||9781604737165
+ 2004|Rowman & Littlefield Publishers|The Soap Opera Paradigm: Television Programming and Corporate Priorities|Wittebols, James H.|9780742520028
+ 2002|Sybex Inc|SOAP Programming with Java|Brogden, Bill and Brogden, William B.|9780782129281
+ 1998|McFarland Publishing|Soap Operas Worldwide: Cultural and Serial Realities|Matelski, Marilyn J.|9780786405572
+ ||Advanced Soap Programming|Adams and Ryan|9780596003296
+ 20020520|O'Reilly Media, Inc.|Java and SOAP|Robert Englander|9780596515638
+
+indeedJobs soap language
+ 2022 7493
+
+semanticScholar 8
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2003|Using SOAP and .NET Web Service to build SCORM RTE and LMS|10.1109/AINA.2003.1192913|28|4|T. Shih and Wen-Chih Chang and Nigel H. Lin and Louis H. Lin and Hun-Hui Hsu and C. Hsieh|803cf64d6eeff0275e575582ab81b7108f8902a8
+ 2017|Investigations On Some Aspects of Reliability of Content Based Routing SOAP based Windows Communication Foundation Services|10.4018/IJIRR.2017010102|10|0|S. Medhi and A. Bora and T. Bezboruah|bececc6bd005df2a6cae40c8046cc4397241b531
+ 1973|Babel and SOAP applications of extensible compilers|10.1002/spe.4380030105|7|0|R. Scowen|46af397f66815b344043a1948e525f1ba93da7c9
+ 2004|Efficient SOAP processing in embedded systems|10.1109/ECBS.2004.1316691|7|0|J. Janecek|513297da0006bcebf35fd31674c51b15e71de074
+ 2004|On the Performance of SOAP in a Non-trivial Peer-to-Peer Experiment|10.1007/978-3-540-24848-4_14|2|0|T. V. Cutsem and S. Mostinckx and W. Meuter and J. Dedecker and T. D'Hondt|46cc9de5ea190504115f7125e51fd700945701bb
+ 2007|A Comparative Performance Evaluation of Different Implementations of the SOAP Protocol.|10.1109/ECOWS.2007.16|2|0|José A. García and Roi Blanco and Antonio Blanco and J. París|eec1add1eff3ce46c3f5c5b5f8546048ab0f0d53
+ 2010|Performance Evaluation for SOAP and RFC in SAP Netweaver Platform|10.1109/ICWS.2010.114|1|0|Z. Cao and R. Jandhyala and Shiva Koduvayur|dc676ab52f397f4cb4994fe9f732d27842efafec
+ 2018|Analisis dan Perancangan Sistem Mediation dengan Protokol Soap pada Web Service untuk Mengintegrasikan Antar Sistem Informasi yang Berbeda Platform|10.31937/SI.V8I2.665|1|0|Muhamad Femy Mulya and Nofita Rismawati|73fa067903aa710f02efa59af7f4c60168a8f06d

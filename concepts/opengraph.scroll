@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id opengraph
+name opengraph
+appeared 2010
+tags xmlFormat
+website https://ogp.me/
+conceptDescription The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
+
+country United States
+originCommunity Facebook
+
+example
+ <html prefix="og: http://ogp.me/ns#">
+ <head>
+ <title>The Rock (1996)</title>
+ <meta property="og:title" content="The Rock" />
+ <meta property="og:type" content="video.movie" />
+ <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+ <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+ ...
+ </head>
+ ...
+ </html>
+
+hasBooleans true
+ true
+ false
+ 1
+ 0
+
+domainName ogp.me
+ registered 2010
+ awisRank
+  2022 75250

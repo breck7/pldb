@@ -1,0 +1,47 @@
+import ../code/conceptPage.scroll
+
+id judoscript
+name Judoscript
+appeared 2001
+creators James Jianbo Huang
+tags pl
+
+isOpenSource true
+rosettaCode http://www.rosettacode.org/wiki/Category:JudoScript
+centralPackageRepositoryCount 0
+country Unknown
+originCommunity https://github.com/metaprgmr/Judoscript/issues
+
+leachim6 JudoScript
+ filepath j/JudoScript
+ example
+  . "Hello World";
+  
+
+lineCommentToken //
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Judoscript
+ example
+  // print out information found inside HTML
+  do 'http://www.example.com' as sgml {
+      <a>:          println 'Found a hyperlink:' , $_.href;
+      <p>:          println 'Found a paragraph tag.';
+      TEXT:         println 'Found some text:'   , $_.length();
+  }
+ related python ruby perl smalltalk java
+ summary Judoscript is one of several general purpose programming languages designed primarily for scripting on the Java platform. Its originator and primary developer is software engineer James Jianbo Huang.
+ created 2007
+ backlinksCount 12
+ pageId 13570551
+ revisionCount 31
+ dailyPageViews 4
+ appeared 2001

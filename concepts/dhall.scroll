@@ -1,0 +1,101 @@
+import ../code/conceptPage.scroll
+
+id dhall
+name Dhall
+appeared 2017
+tags dataNotation
+website https://dhall-lang.org/
+latestVersion v23.0.0
+webRepl https://dhall-lang.org/
+
+writtenIn dhall markdown nix haskell svg bourne-shell html diff json css python javascript yaml
+clocExtensions dhall
+repoStats
+ firstCommit 2017
+ commits 1077
+ committers 97
+ files 3701
+ newestCommit 2024
+country Various
+originCommunity https://github.com/dhall-lang
+
+rijuRepl https://riju.codes/dhall
+ example
+  { output = "Hello, world!" }
+example
+ -- ./company.dhall
+ 
+ let Prelude =
+       https://prelude.dhall-lang.org/v19.0.0/package.dhall sha256:eb693342eb769f782174157eba9b5924cf8ac6793897fc36a31ccbd6f56dafe2
+ 
+ let companyName = "Example Dot Com"
+ 
+ let User = { name : Text, account : Text, age : Natural }
+ 
+ let users
+     : List User
+     = [ { name = "John Doe", account = "john", age = 23 }
+       , { name = "Jane Smith", account = "jane", age = 29 }
+       , { name = "William Allen", account = "bill", age = 41 }
+       ]
+ 
+ let toEmail = \(user : User) -> "${user.account}@example.com"
+ 
+ let Bio = { name : Text, age : Natural }
+ 
+ let toBio = \(user : User) -> user.(Bio)
+ 
+ let companySize = Prelude.List.length User users
+ 
+ let greetingPage =
+       ''
+       <html>
+       <title>Welcome to ${companyName}!</title>
+       <body>
+       <p>Welcome to our humble company of ${Natural/show companySize} people!</p>
+       </body>
+       </html>
+         ''
+ 
+ in  { emails = Prelude.List.map User Text toEmail users
+     , bios = Prelude.List.map User Bio toBio users
+     , greetingPage = greetingPage
+     }
+twitter https://twitter.com/dhall_lang
+
+githubRepo https://github.com/dhall-lang/dhall-lang
+ firstCommit 2017
+ stars 3577
+ forks 162
+ subscribers 67
+ created 2017
+ updated 2022
+ description Maintainable configuration files
+ issues 127
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName dhall-lang.org
+ awisRank
+  2022 4422660
+
+githubBigQuery Dhall
+ repos 60
+ users 46
+
+isbndb 0
+
+githubLanguage Dhall
+ type programming
+ fileExtensions dhall
+ aceMode haskell
+ codemirrorMode haskell
+ codemirrorMimeType text/x-haskell
+ tmScope source.haskell
+ repos 817

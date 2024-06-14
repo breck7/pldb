@@ -1,0 +1,46 @@
+import ../code/conceptPage.scroll
+
+id slim-framework
+name Slim Framework
+appeared 2013
+tags framework
+website https://www.slimframework.com
+latestVersion 4.13.0
+
+writtenIn php markdown yaml xml json
+documentation https://www.slimframework.com/docs/v4/
+repoStats
+ firstCommit 2010
+ commits 5015
+ committers 311
+ files 144
+ newestCommit 2024
+country United States and United Kingdom and Canada
+originCommunity https://github.com/slimphp
+
+example
+ <?php
+ use Psr\Http\Message\ResponseInterface as Response;
+ use Psr\Http\Message\ServerRequestInterface as Request;
+ use Slim\Factory\AppFactory;
+ 
+ require __DIR__ . '/../vendor/autoload.php';
+ 
+ $app = AppFactory::create();
+ 
+ $app->get('/hello/{name}', function (Request $request, Response $response, array $args) {
+     $name = $args['name'];
+     $response->getBody()->write("Hello, $name");
+     return $response;
+ });
+ 
+ $app->run();
+
+githubRepo https://github.com/slimphp/Slim
+ stars 11833
+ forks 1944
+ subscribers 502
+ created 2010
+ updated 2024
+ description Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
+ issues 12

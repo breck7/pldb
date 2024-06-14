@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id hoon
+name hoon
+appeared 2011
+tags pl
+website https://developers.urbit.org/reference/glossary/hoon
+conceptDescription Hoon is a high-level, statically typed, functional programming language, custom-designed for use with Urbit. For a functional language it has a surprisingly imperative style, and mastering it doesn't require knowing any advanced mathematics.
+
+clocExtensions hoon
+country Unknown
+originCommunity https://github.com/cgyarvin/urbit/issues
+reference https://github.com/cgyarvin/urbit/blob/master/doc/book/3-syntax.markdown
+
+example
+ ::  A message you ping another ship with
+ ::
+ ::::  /===/mar/ping/message/hoon
+   ::
+ /-  ping-message
+ !:
+ |_  ping-message
+ ++  grab
+   |%
+   +=  noun
+     ping-message
+   --
+ --
+
+githubBigQuery hoon
+ repos 3
+ users 3
+
+isbndb 0
+
+githubLanguage hoon
+ type programming
+ fileExtensions hoon
+ aceMode text
+ tmScope source.hoon
+ repos 84

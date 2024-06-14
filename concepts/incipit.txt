@@ -1,0 +1,36 @@
+Incipit
+=======
+
+Incipit is a text markup language created in 2021 by Lucas de Sena.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Lucas%20de%20Sena
+
+#2198 on PLDB
+3 Years Old
+
+git clone https://github.com/phillbush/incipit
+
+the incipit plain text markup language, and some troff macro packages
+
+- Incipit is developed on GitHub and has 8 stars
+- Incipit first developed in https://github.com/phillbush/incipit/issues
+- Incipit is written in awk, Make
+
+.Enumeration incipit.
+Each enumeration item can have a incipit colon, which will be explained
+on the “§ Incipit” section below.  The incipit colon is a colon
+describing the topic of the item.
+
+The following is an example of enumeration.
+• (A) First item:
+      This is the first item of a labeled enumeration.
+      This item also contains an incipit colon.
+• (B) Second item:
+      This is the second item of a labeled enumeration.
+      It also contains an incipit colon.
+• (C) Third item.
+    • First subitem of third item.
+    • Second subitem of third item.
+    • Third subitem of third item.
+    • Fourth subitem of third item.
+• (D) Fourth item.

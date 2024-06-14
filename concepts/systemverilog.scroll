@@ -1,0 +1,127 @@
+import ../code/conceptPage.scroll
+
+id systemverilog
+name SystemVerilog
+appeared 2002
+tags pl
+
+fileType text
+documentation http://courses.eees.dei.unibo.it/LABMPHSENG/wp-content/uploads/2016/02/SystemVerilog_3.1a.pdf
+monaco systemverilog
+rosettaCode http://www.rosettacode.org/wiki/Category:SystemVerilog
+centralPackageRepositoryCount 0
+originCommunity Synopsys
+
+pygmentsHighlighter systemverilog
+ filename hdl.py
+ fileExtensions sv svh
+
+keywords accept_on alias always always_comb always_ff always_latch and assert assign assume automatic before begin bind bins binsof bit break buf bufif0 bufif1 byte case casex casez cell chandle checker class clocking cmos config const constraint context continue cover covergroup coverpoint cross deassign default defparam design disable dist do edge else end endcase endchecker endclass endclocking endconfig endfunction endgenerate endgroup endinterface endmodule endpackage endprimitive endprogram endproperty endspecify endsequence endtable endtask enum event eventually expect export extends extern final first_match for force foreach forever fork forkjoin function generate genvar global highz0 highz1 if iff ifnone ignore_bins illegal_bins implements implies import incdir include initial inout input inside instance int integer interconnect interface intersect join join_any join_none large let liblist library local localparam logic longint macromodule matches medium modport module nand negedge nettype new nexttime nmos nor noshowcancelled not notif0 notif1 null or output package packed parameter pmos posedge primitive priority program property protected pull0 pull1 pulldown pullup pulsestyle_ondetect pulsestyle_onevent pure rand randc randcase randsequence rcmos real realtime ref reg reject_on release repeat restrict return rnmos rpmos rtran rtranif0 rtranif1 s_always s_eventually s_nexttime s_until s_until_with scalared sequence shortint shortreal showcancelled signed small soft solve specify specparam static string strong strong0 strong1 struct super supply0 supply1 sync_accept_on sync_reject_on table tagged task this throughout time timeprecision timeunit tran tranif0 tranif1 tri tri0 tri1 triand trior trireg type typedef union unique unique0 unsigned until until_with untyped use uwire var vectored virtual void wait wait_order wand weak weak0 weak1 while wildcard wire with within wor xnor xor
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasFunctions true
+hasInheritance true
+hasConditionals true
+hasOctals true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
+hasHexadecimals true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
+hasFloats true
+ // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+hasIntegers true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
+hasBinaryNumbers true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
+
+wikipedia https://en.wikipedia.org/wiki/SystemVerilog
+ example
+  class eth_frame;
+     // Definitions as above
+     covergroup cov;
+        coverpoint dest {
+            bins bcast[1] = {48'hFFFFFFFFFFFF};
+            bins ucast[1] = default;
+        }
+        coverpoint f_type {
+            bins length[16] = { [0:1535] };
+            bins typed[16] = { [1536:32767] };
+            bins other[1] = default;
+        }
+        psize: coverpoint payload.size {
+            bins size[] = { 46, [47:63], 64, [65:511], [512:1023], [1024:1499], 1500 };
+        }
+  
+        sz_x_t: cross f_type, psize;
+     endgroup
+  endclass
+ related verilog vhdl openvera java c property-specification-language axiom
+ summary SystemVerilog, standardized as IEEE 1800, is a hardware description and hardware verification language used to model, design, simulate, test and implement electronic systems. SystemVerilog is based on Verilog and some extensions, and since 2008 Verilog is now part of the same IEEE standard. It is commonly used in the semiconductor and electronic design industry as an evolution of Verilog.
+ pageId 2540686
+ created 2005
+ backlinksCount 305
+ revisionCount 385
+ dailyPageViews 225
+ appeared 2002
+ fileExtensions header file
+
+githubBigQuery SystemVerilog
+ repos 1052
+ users 872
+
+linguistGrammarRepo https://github.com/TheClams/SystemVerilog
+ sampleCount 4
+ example
+  function integer log2;
+    input integer x;
+    begin
+      x = x-1;
+      for (log2 = 0; x > 0; log2 = log2 + 1)
+        x = x >> 1;
+    end
+  endfunction
+  
+
+isbndb 6
+ year|publisher|title|authors|isbn13
+ 2012|Springer|SystemVerilog for Verification: A Guide to Learning the Testbench Language Features|Spear, Chris and Tumbush, Greg|9781461407140
+ 20060915|Springer Nature|SystemVerilog for Verification|Chris Spear|9780387270388
+ 2021|Packt Publishing|FPGA Programming for Beginners: Bring your ideas to life by creating hardware designs and electronic circuits with SystemVerilog|Bruno, Frank|9781789805413
+ 2021|Packt Publishing|FPGA Programming for Beginners: Bring your ideas to life by creating hardware designs and electronic circuits with SystemVerilog|Bruno, Frank|9781789807790
+ 2018|Wiley|FPGA Prototyping by SystemVerilog Examples: Xilinx MicroBlaze MCS SoC Edition|Chu, Pong P.|9781119282709
+ 2014|CreateSpace Independent Publishing Platform|Logic Design and Verification Using SystemVerilog|Thomas, Donald|9781500385781
+
+githubLanguage SystemVerilog
+ fileExtensions sv svh vh
+ trendingProjectsCount 0
+ type programming
+ aceMode verilog
+ codemirrorMode verilog
+ codemirrorMimeType text/x-systemverilog
+ tmScope source.systemverilog
+ repos 9972
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|Model-based design verification for embedded systems through SVOCL: an OCL extension for SystemVerilog|10.1007/s10617-017-9182-z|36|0|Muhammad Waseem Anwar and M. Rashid and F. Azam and M. Kashif|8a7f871e1b2f49cbf063a7d92f7b253a1be11a9e
+ 2019|A model-driven framework for design and verification of embedded systems through SystemVerilog|10.1007/s10617-019-09229-y|33|0|Muhammad Waseem Anwar and M. Rashid and F. Azam and M. Kashif and Wasi Haider Butt|fd1f66c3b18e1e704474946f8c3ad03404f5ecae
+ 2018|Verifying an Implementation of Genetic Algorithm on FPGA-SoC using SystemVerilog|10.3384/ECP171421095|1|0|Hayder Al-Hakeem and S. Karhu and J. Alander|8d919ca9f37b11536a68ee9998001efd7f0af503
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SystemVerilog for Verification: A Guide to Learning the Testbench Language Features|2006|Chris Spear|4423331|4.19|16|1
+ Systemverilog for Verification: A Guide to Learning the Testbench Language Features|2008|Christian B. Spear|16459520|4.71|7|1
+ Systemverilog for Verification: A Guide to Learning the Testbench Language Features|2006|Chris Spear|959746|4.22|9|0

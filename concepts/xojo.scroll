@@ -1,0 +1,95 @@
+import ../code/conceptPage.scroll
+
+id xojo
+name Xojo
+appeared 1996
+tags pl
+website http://xojo.com
+aka REALbasic
+
+isOpenSource false
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Xojo
+centralPackageRepositoryCount 0
+
+twitter https://twitter.com/xojo
+leachim6 RealBasic
+ filepath r/RealBasic.realbasic
+ fileExtensions realbasic
+ example
+  Function Run(args() as String) As Integer
+    Print "Hello World"
+    Quit
+  End Function
+  
+
+lineCommentToken //
+printToken Print
+stringToken "
+
+hasComments true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Xojo
+ example
+  Dim names() As String = Array("Red Sox", "Yankees", "Orioles", "Blue Jays", "Rays")
+  For i As Integer = 0 To names.UBound
+    ListBox1.AddRow(names(i))
+  Next
+ related linux ios basic jvm x86-isa xml visual-basic gambas
+ summary The Xojo programming environment is developed and commercially marketed by Xojo, Inc. of Austin, Texas for software development targeting macOS, Microsoft Windows, Linux, iOS, the Web and Raspberry Pi. Xojo uses a proprietary object-oriented BASIC dialect, also known as Xojo.
+ pageId 39624220
+ created 2013
+ backlinksCount 140
+ revisionCount 281
+ dailyPageViews 75
+ appeared 2018
+
+tiobe Xojo
+
+domainName xojo.com
+ awisRank
+  2022 238343
+  2017 155033
+
+githubBigQuery Xojo
+ repos 68
+ users 43
+
+linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 4
+ commitCount 61
+ sampleCount 6
+ example
+  #tag Toolbar
+  Begin Toolbar MyToolbar
+  	Begin ToolButton FirstItem
+  		Caption = "First Item"
+  		HelpTag = ""
+  		Style = 0
+  	End
+  	Begin ToolButton SecondItem
+  		Caption = "Second Item"
+  		HelpTag = ""
+  		Style = 0
+  	End
+  End
+  #tag EndToolbar
+  
+
+githubLanguage Xojo
+ fileExtensions xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.xojo
+ repos 570
+
+semanticScholar 0

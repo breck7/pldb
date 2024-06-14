@@ -1,0 +1,22 @@
+import ../code/conceptPage.scroll
+
+id tefkat
+name Tefkat
+appeared 2004
+tags pl
+website http://tefkat.sourceforge.net/
+
+example
+ RULE ClassToTable
+ FORALL  Class c { name: n; }
+ MAKE    Table t { name: n; }
+ ;
+
+wikipedia https://en.wikipedia.org/wiki/Tefkat
+ summary Tefkat is a Model Transformation Language and a model transformation engine.  The language is based on F-logic and the theory of stratified logic programs.  The engine is an Eclipse plug-in for the Eclipse Modeling Framework (EMF).
+ backlinksCount 4
+ pageId 7726497
+ dailyPageViews 2
+ appeared 2006
+
+domainName tefkat.sourceforge.net

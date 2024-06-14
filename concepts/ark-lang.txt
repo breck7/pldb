@@ -1,0 +1,41 @@
+Ark
+===
+
+Ark is a programming language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1245 on PLDB
+10 Years Old
+
+git clone https://github.com/ark-lang/ark
+
+A compiled systems programming language written in Go using the LLVM framework
+
+- Ark website
+ https://ark-lang.github.io/
+- Ark is developed on GitHub and has 676 stars
+- Ark is written in TOML, Go, Markdown, Make, YAML, Bourne shell
+
+// binding to printf
+[c] func printf(fmt: ^u8, ...);
+
+pub func main(argc: int, argv: ^^u8) -&gt; int {
+    // accessed via the C module
+    C::printf(c&quot;Running %s\n&quot;, ^argv);
+
+    // mutable i, type inferred
+    mut i := 0;
+
+    for i &lt; 5 {
+        C::printf(c&quot;%d\n&quot;, i);
+
+        i += 1;
+    }
+    return 0;
+}
+
+HackerNews discussions of Ark
+=============================
+
+title|titleLink|date|score|comments
+Show HN: A programming language I've been working on called Ark|https://news.ycombinator.com/item?id=10845659|01/05/2016|15|3

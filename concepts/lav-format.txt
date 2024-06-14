@@ -1,0 +1,46 @@
+lav-format
+==========
+
+lav-format is a text data format created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2494 on PLDB
+20 Years Old
+
+- lav-format website
+ http://www.bx.psu.edu/miller_lab/dist/lav_format.html
+- lav-format first developed in The Pennsylvania State University
+
+#:lav
+   d {
+     &quot;lastz.v0.3 malus.fa aurantium.fa C=2 W=8 T=0
+        A    C    G    T
+       91 -114  -31 -123
+     -114  100 -125  -31
+      -31 -125  100 -114
+     -123  -31 -114   91
+     O = 400, E = 30, K = 3000, L = 3000, M = 0&quot;
+   }
+   #:lav
+   s {
+     &quot;malus.fa&quot; 1 191411218 0 1
+     &quot;aurantium.fa&quot; 1 90634903 0 1
+   }
+   h {
+     &quot;&gt; apple&quot;
+     &quot;&gt; orange&quot;
+   }
+   a {
+     s 20643
+     b 46566766 2083211
+     e 46567353 2083795
+     l 46566766 2083211 46566796 2083241 61
+     l 46566797 2083245 46566814 2083262 78
+     l 46566821 2083263 46567353 2083795 65
+   }
+   a {
+     s 4233
+     b 47246530 10635696
+     e 47246660 10635826
+     l 47246530 10635696 47246660 10635826 63
+   }

@@ -1,0 +1,93 @@
+reStructuredText
+================
+
+reStructuredText is an open source text markup language created in 2002 by David Goodger.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Goodger
+
+#186 on PLDB
+22 Years Old
+31 Repos
+
+Try now: Riju
+
+reStructuredText (sometimes abbreviated as RST, ReST, or reST) is a file format for textual data used primarily in the Python programming language community for technical documentation. It is part of the Docutils project of the Python Doc-SIG (Documentation Special Interest Group), aimed at creating a set of tools for Python similar to Javadoc for Java or POD for Perl. Docutils can extract comments and information from Python programs, and format them into various forms of program documentation. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ReStructuredText
+
+- reStructuredText Wikipedia page
+ https://en.wikipedia.org/wiki/ReStructuredText
+- reStructuredText docs
+ https://docutils.sourceforge.io/rst.html
+- There are at least 31 reStructuredText repos on GitHub
+- reStructuredText first developed in https://sourceforge.net/p/docutils/_list/tickets
+- Monaco package for syntax highlighting reStructuredText
+- Pygments supports syntax highlighting for reStructuredText
+- GitHub supports syntax highlighting for reStructuredText
+- See also: (12 related languages)REST, Java, Pod, Perl, Python, CMake, Markdown, Org, Textile, HTML, AsciiDoc, Txt2tags
+- Read more about reStructuredText on the web: 1.
+ http://docutils.sourceforge.net/rst.html
+- 114 languages in PLDB linking to reStructuredText: Armed Bear Common Lisp, Ace Editor, AIL, AsciiDots, ASDF, astroml, AviSynth, Bazel, Berry, Chapel, chatterbot, clash, cloc, Coconut, CWL, Coq, CouchDB, Cryptol, curv, Differential Datalog, djangoql, docopt, Easybuild, edgedb, Egison, Elpi, Emscripten, F Prime, Factor, Fardlang, Felix, fish, Flatline, Futhark, HCL, HHVM, highlight.js, hobbes, Hy, Idio, Idris, Impala, invokator, Iterm2, Jeeves, Jinja, k-framework, leo-editor, lift, Links, Linux, loci, Manim, mathics, Matplotlib, Metalang99, mgmt, MicroPython, mimium, Minilang, MiniZinc, mochi, MongoDB, monte, myia, mys, NestedText, Nim, Natural Language Toolkit, Node.js, nulan, Numba, nylo, obsidian, ooc, Open Shading Language, Pact, Pan, Pandas, phorth, PHP, Pygments, Pyth, Python, PyTorch, redprl, RicScript, Rita, RobotFramework, roy, Scikit-learn, SciPy, Seq, skulpt, Snowball, Solidity, Sophie, Sqlalchemy, Squirrel, Stencil, Swift, SymPy, tiledb, tornado, Triton, ultralisp-pm, Vale, Volt, vyper, Xgboost, XGBoost, xlwings-editor, YARA, yeti
+
+Hello, world!
+
+============
+Hello World
+============
+
+Contributing to SciPy
+=====================
+
+This document aims to give an overview of how to contribute to SciPy.  It
+tries to answer commonly asked questions, and provide some insight into how the
+community process works in practice.  Readers who are familiar with the SciPy
+community and are experienced Python coders may want to jump straight to the
+`git workflow`_ documentation.
+
+Contributing new code
+---------------------
+
+If you have been working with the scientific Python toolstack for a while, you
+probably have some code lying around of which you think &quot;this could be useful
+for others too&quot;.  Perhaps it&#39;s a good idea then to contribute it to SciPy or
+another open source project.  The first question to ask is then, where does
+this code belong?  That question is hard to answer here, so we start with a
+more specific one: *what code is suitable for putting into SciPy?*
+Almost all of the new code added to scipy has in common that it&#39;s potentially
+useful in multiple scientific domains and it fits in the scope of existing
+scipy submodules.  In principle new submodules can be added too, but this is
+far less common.  For code that is specific to a single application, there may
+be an existing project that can use the code.  Some scikits (`scikit-learn`_,
+`scikits-image`_, `statsmodels`_, etc.) are good examples here; they have a
+narrower focus and because of that more domain-specific code than SciPy.
+
+Now if you have code that you would like to see included in SciPy, how do you
+go about it?  After checking that your code can be distributed in SciPy under a
+compatible license (see FAQ for details), the first step is to discuss on the
+scipy-dev mailing list.  All new features, as well as changes to existing code,
+are discussed and decided on there.  You can, and probably should, already
+start this discussion before your code is finished.
+
+Assuming the outcome of the discussion on the mailing list is positive and you
+have a function or piece of code that does what you nee
+
+::
+
+  some literal text
+
+This may also be used inline at the end of a paragraph, like so::
+
+  some more literal text
+
+.. code:: python
+
+   print(&quot;A literal block directive explicitly marked as python code&quot;)
+
+Language features
+======================================================
+
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

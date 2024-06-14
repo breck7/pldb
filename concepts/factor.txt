@@ -1,0 +1,98 @@
+Factor
+======
+
+Factor is an open source programming language created in 2003 by Slava Pestov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Slava%20Pestov
+
+#146 on PLDB
+21 Years Old
+201 Repos
+
+git clone https://github.com/factor/factor
+
+Try now: Riju · TIO
+
+Factor is a stack-oriented programming language created by Slava Pestov. Factor is dynamically typed and has automatic memory management, as well as powerful metaprogramming features. The language has a single implementation featuring a self-hosted optimizing compiler and an interactive development environment. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Factor_(programming_language)
+
+- Factor website
+ https://factorcode.org/
+- Factor Wikipedia page
+ https://en.wikipedia.org/wiki/Factor_(programming_language)
+- Factor is developed on GitHub and has 1,282 stars
+- There are at least 201 Factor repos on GitHub
+- Factor first developed in https://github.com/factor
+- Factor is written in XML, C++, Lisp, C, HTML, CSS, GLSL, Vim script, CSV, JavaScript, Markdown, CSON, Assembly language, JSON, Bourne shell, SQL, CUDA, YAML, reStructuredText, Smalltalk, SVG, Perl, Make, DTD, Objective C++, Lua, Nix, Ruby, Rust
+- Factor on Twitter
+ https://twitter.com/factorbuilds
+- The  Google BigQuery Public Dataset GitHub snapshot shows 110 users using Factor in 111 repos on GitHub
+- There are 50 Project Euler users using Factor
+- Explore Factor snippets on Rosetta Code
+- Factor appears in the TIOBE Index
+- CodeMirror package for syntax highlighting Factor
+- Pygments supports syntax highlighting for Factor
+- GitHub supports syntax highlighting for Factor
+- factorcode.org was registered in 2005
+- See also: (17 related languages)Linux, Joy, Forth, Lisp, Self, Java, Scheme, C, Java Bytecode, Reverse Polish notation, XML, OpenGL, PostgreSQL, SQLite, Objective-C, Fortran, Smalltalk
+- Read more about Factor on the web: 1.
+ https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
+- 1 languages in PLDB linking to Factor: Interleaved Notation
+
+IN: main
+USE: io
+
+&quot;Hello, world!&quot; print
+
+USING: io ;
+&quot;Hello World&quot; print
+
+: make-html ( string -- xml )
+    dup
+    &lt;XML
+        &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;&lt;-&gt;&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;&lt;h1&gt;&lt;-&gt;&lt;/h1&gt;&lt;/body&gt;
+        &lt;/html&gt;
+    XML&gt; ;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id usd
+name USD
+appeared 2016
+tags pl
+website https://graphics.pixar.com/usd/release/index.html
+standsFor Universal Scene Description
+
+originCommunity Pixar
+
+pygmentsHighlighter USD
+ filename usd.py
+ fileExtensions usd usda
+example
+ #usda 1.0
+ 
+ def Xform "hello"
+ {
+     def Sphere "world"
+     {
+     }
+ }
+
+hasLineComments true
+hasComments true
+
+isbndb 0

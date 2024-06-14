@@ -1,0 +1,45 @@
+Mscgen
+======
+
+Mscgen is a text markup language created in 2016.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2270 on PLDB
+8 Years Old
+
+- Mscgen website
+ http://www.mcternan.me.uk/mscgen/
+- Mscgen first developed in https://code.google.com/archive/p/mscgen/issues
+- Pygments supports syntax highlighting for Mscgen
+
+# MSC for some fictional process
+msc {
+  hscale = &quot;2&quot;;
+
+  a,b,c;
+
+  a-&gt;b [ label = &quot;ab()&quot; ] ;
+  b-&gt;c [ label = &quot;bc(TRUE)&quot;];
+  c=&gt;c [ label = &quot;process(1)&quot; ];
+  c=&gt;c [ label = &quot;process(2)&quot; ];
+  ...;
+  c=&gt;c [ label = &quot;process(n)&quot; ];
+  c=&gt;c [ label = &quot;process(END)&quot; ];
+  a&lt;&lt;=c [ label = &quot;callback()&quot;];
+  ---  [ label = &quot;If more to run&quot;, ID=&quot;*&quot; ];
+  a-&gt;a [ label = &quot;next()&quot;];
+  a-&gt;c [ label = &quot;ac1()\nac2()&quot;];
+  b&lt;-c [ label = &quot;cb(TRUE)&quot;];
+  b-&gt;b [ label = &quot;stalled(...)&quot;];
+  a&lt;-b [ label = &quot;ab() = FALSE&quot;];
+}
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token TRUE FALSE
+ Example

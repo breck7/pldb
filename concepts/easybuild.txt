@@ -1,0 +1,41 @@
+Easybuild
+=========
+
+Easybuild is an open source application created in 2014 by Kenneth Hoste.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Kenneth%20Hoste
+
+#558 on PLDB
+10 Years Old
+
+git clone https://github.com/easybuilders/easybuild
+
+EasyBuild - building software with ease
+
+- Easybuild website
+ http://easybuilders.github.io/easybuild/
+- Easybuild is developed on GitHub and has 377 stars
+- Easybuild first developed in https://github.com/easybuilders/
+- Easybuild is written in YAML, Bourne shell, Python, reStructuredText, Markdown
+- GitHub supports syntax highlighting for Easybuild
+
+# not really (there&#39;s an EB_bzip2 easyblock), but fine for use in unit tests
+easyblock = &#39;ConfigureMake&#39;
+
+name = &#39;bzip2&#39;
+version = &#39;1.0.6&#39;
+
+homepage = &#39;http://www.bzip.org/&#39;
+description = &quot;&quot;&quot;bzip2 is a freely available, patent free, high-quality data compressor. It typically
+compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical
+compressors), whilst being around twice as fast at compression and six times faster at decompression.&quot;&quot;&quot;
+
+toolchain = {&#39;name&#39;: &#39;GCC&#39;, &#39;version&#39;: &#39;4.9.2&#39;}
+toolchainopts = {&#39;pic&#39;: True}
+
+sources = [SOURCE_TAR_GZ]
+source_urls = [&#39;http://www.bzip.org/%(version)s&#39;]
+
+builddependencies = [(&#39;gzip&#39;, &#39;1.6&#39;)]
+
+moduleclass = &#39;tools&#39;

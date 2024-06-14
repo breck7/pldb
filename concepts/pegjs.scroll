@@ -1,0 +1,88 @@
+import ../code/conceptPage.scroll
+
+id pegjs
+name PEG.js
+appeared 2010
+creators David Majda
+tags grammarLanguage
+website https://pegjs.org/
+latestVersion v0.10.0
+webRepl https://pegjs.org/online
+conceptDescription PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
+
+isOpenSource true
+writtenIn javascript markdown css json typescript html yaml
+compilesTo javascript
+clocExtensions pegjs
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 1417
+ committers 29
+ files 178
+ newestCommit 2019
+country Germany and United Kingdom
+originCommunity https://github.com/pegjs
+
+example
+ start
+  = additive
+ 
+ additive
+   = left:multiplicative "+" right:additive { return left + right; }
+   / multiplicative
+ 
+ multiplicative
+   = left:primary "*" right:multiplicative { return left * right; }
+   / primary
+ 
+ primary
+   = integer
+   / "(" additive:additive ")" { return additive; }
+ 
+ integer "integer"
+   = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+twitter https://twitter.com/pegjs
+
+githubRepo https://github.com/pegjs/pegjs
+ stars 4410
+ forks 437
+ subscribers 91
+ created 2010
+ updated 2022
+ firstCommit 2010
+ description PEG.js: Parser generator for JavaScript
+ issues 116
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName pegjs.org
+ awisRank
+  2022 804820
+  2017 1244889
+
+githubBigQuery PEG.js
+ repos 63
+ users 63
+
+githubLanguage PEG.js
+ type programming
+ fileExtensions pegjs
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType text/javascript
+ tmScope source.pegjs
+ repos 72
+
+semanticScholar 0

@@ -1,0 +1,67 @@
+import ../code/conceptPage.scroll
+
+id em
+name Em
+appeared 2020
+tags textMarkup
+standsFor Easy Markup
+
+writtenIn c lex html markdown
+repoStats
+ firstCommit 2020
+ commits 4
+ committers 1
+ files 9
+ newestCommit 2020
+country Unknown
+originCommunity https://github.com/peter-fa
+
+example
+ This is an optional HTML title.
+ 
+ .p
+ This is a paragraph.
+ 
+ .p
+ This is a paragraph. It ends
+ here.
+ 
+ .p
+ This is a    paragraph. It
+ ends
+ here.
+ 
+ .l
+ This is a list item.
+ 
+ This is a list item.
+ 
+ This is a list item.
+ 
+ 
+ .p
+ This is a paragraph. #This word
+ is italic.
+ 
+ .p
+ This is a paragraph. @This word
+ is bold.
+ 
+ .p
+ This is a paragraph. #{These words}
+ are italic.
+ 
+ .p
+ This is a paragraph. @{These words}
+ are bold.
+ 
+
+githubRepo https://github.com/peter-fa/em
+ firstCommit 2020
+ stars 0
+ forks 0
+ subscribers 1
+ created 2020
+ updated 2020
+ description Easy Markup is a lightweight markup language.
+ issues 0

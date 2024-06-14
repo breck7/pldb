@@ -1,0 +1,54 @@
+Mond
+====
+
+Mond is a programming language created in 2014 by Rohan Singh.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Rohan%20Singh
+
+#975 on PLDB
+10 Years Old
+
+git clone https://github.com/Rohansi/Mond
+
+A scripting language for .NET Core
+
+- Mond website
+ https://web.archive.org/web/20160429013247/https://rohbot.net/mond/
+- Mond is developed on GitHub and has 292 stars
+- Mond first developed in https://github.com/Rohansi/Mond
+- Mond is written in C#, JSON, TypeScript, JavaScript, CSS, YAML, Razor, Markdown, HTML, XML
+
+// documentation can be found here: https://github.com/Rohansi/Mond/wiki
+seq range(start, end) {
+    for (var i = start; i &lt;= end; i++)
+        yield i;
+}
+
+seq where(list, filter) {
+    foreach (var x in list) {
+        if (filter(x))
+            yield x;
+    }
+}
+
+seq select(list, transform) {
+    foreach (var x in list)
+        yield transform(x);
+}
+
+fun toArray(list) {
+    var array = [];
+
+    foreach (var value in list) {
+        array.add(value);
+    }
+
+    return array;
+}
+
+return range(0, 1000)
+       |&gt; where(x -&gt; x % 2 == 0)
+       |&gt; select(x -&gt; x / 2)
+       |&gt; toArray();
+
+Infinity NaN break case const continue debugger default do else false for foreach fun global if in null return seq switch true undefined var while yield

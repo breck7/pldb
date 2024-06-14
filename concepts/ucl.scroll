@@ -1,0 +1,52 @@
+import ../code/conceptPage.scroll
+
+id ucl
+name UCL
+appeared 2013
+tags dataNotation
+latestVersion 0.9.2
+standsFor Universal Configuration Language
+
+isOpenSource true
+writtenIn json c rescript bourne-shell python make markdown m4 cmake yaml haskell lua cpp
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 1125
+ committers 57
+ files 171
+ newestCommit 2024
+
+example
+ param = value;
+ section {
+     param = value;
+     param1 = value1;
+     flag = true;
+     number = 10k;
+     time = 0.2s;
+     string = "something";
+     subsection {
+         host = {
+             host = "hostname";
+             port = 900;
+         }
+         host = {
+             host = "hostname";
+             port = 901;
+         }
+     }
+ }
+
+githubRepo https://github.com/vstakhov/libucl
+ stars 1443
+ forks 139
+ subscribers 53
+ created 2013
+ updated 2022
+ firstCommit 2013
+ description Universal configuration library parser
+ issues 67
+
+isbndb 0

@@ -1,0 +1,175 @@
+MoonScript
+==========
+
+MoonScript is an open source programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#167 on PLDB
+13 Years Old
+818 Repos
+
+git clone https://github.com/leafo/moonscript
+
+Try now: Web · TIO
+
+:crescent_moon: A language that compiles to Lua
+
+- MoonScript website
+ http://moonscript.org/
+- MoonScript is developed on GitHub and has 2,801 stars
+- MoonScript docs
+ https://moonscript.org/reference/
+- There are at least 818 MoonScript repos on GitHub
+- MoonScript first developed in https://github.com/leafo/moonscript/issues
+- MoonScript compiles to Lua
+- MoonScript is written in Lua, Markdown, YAML, Make, Bourne shell, C
+- The  Google BigQuery Public Dataset GitHub snapshot shows 276 users using MoonScript in 359 repos on GitHub
+- Explore MoonScript snippets on Rosetta Code
+- Pygments supports syntax highlighting for MoonScript
+- GitHub supports syntax highlighting for MoonScript
+
+class Thing
+  name: &quot;unknown&quot;
+
+class Person extends Thing
+  say_name: =&gt; print &quot;Hello, I am #{@name}!&quot;
+
+with Person!
+  .name = &quot;MoonScript&quot;
+  \say_name!
+
+print &#39;Hello World&#39;
+
+types = require &quot;moonscript.types&quot;
+util = require &quot;moonscript.util&quot;
+data = require &quot;moonscript.data&quot;
+
+import reversed, unpack from util
+import ntype, mtype, build, smart_node, is_slice, value_is_singular from types
+import insert from table
+import NameProxy, LocalName from require &quot;moonscript.transform.names&quot;
+
+destructure = require &quot;moonscript.transform.destructure&quot;
+
+local implicitly_return
+
+class Run
+  new: (@fn) =&gt;
+    self[1] = &quot;run&quot;
+
+  call: (state) =&gt;
+    self.fn state
+
+-- transform the last stm is a list of stms
+-- will puke on group
+apply_to_last = (stms, fn) -&gt;
+  -- find last (real) exp
+  last_exp_id = 0
+  for i = #stms, 1, -1
+    stm = stms[i]
+    if stm and mtype(stm) != Run
+      last_exp_id = i
+      break
+
+  return for i, stm in ipairs stms
+    if i == last_exp_id
+      fn stm
+    else
+      stm
+
+-- is a body a sindle expression/statement
+is_singular = (body) -&gt;
+  return false if #body != 1
+  if &quot;group&quot; == ntype body
+    is_singular body[2]
+  else
+    true
+
+find_assigns = (body, out={}) -&gt;
+  for thing in *body
+    switch thing[1]
+      when &quot;group&quot;
+        find_assigns thing[2], out
+      when &quot;assign&quot;
+        table.insert out, thing[2] -- extract names
+  out
+
+hoist_declarations = (body) -&gt;
+  assigns = {}
+
+  -- hoist the plain old assigns
+  for names in *find_assigns body
+    for name in *names
+      table.insert assigns, name if type(name) == &quot;string&quot;
+
+  -- insert after runs
+  idx = 1
+  while mtype(body[idx]) == Run do idx += 1
+
+  table.insert body, idx, {&quot;declare&quot;, assigns}
+
+expand_elseif_assign = (ifstm) -&gt;
+  for i = 4, #ifstm
+    case = ifstm[i]
+    if ntype(case) == &quot;elseif&quot; and ntype(case[2]) == &quot;assign&quot;
+      split = { unpack ifstm, 1, i - 1 }
+      insert split, {
+        &quot;else&quot;, {
+          {&quot;if&quot;, case[2], case[3], unpack ifstm, i + 1}
+        }
+      }
+      return split
+
+  ifstm
+
+constructor_name = &quot;new&quot;
+
+with_continue_listener = (body) -&gt;
+  continue_name = nil
+  {
+    Run =&gt;
+      @listen &quot;continue&quot;, -&gt;
+        unless continue_name
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

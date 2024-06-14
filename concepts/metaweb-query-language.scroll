@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id metaweb-query-language
+name Metaweb Query Language
+appeared 2006
+tags queryLanguage
+
+country United States
+originCommunity Metaweb Technologies, Inc
+reference https://rpbouman.blogspot.com/2011/01/mql-to-sql-json-based-query-language.html?m=0
+
+example
+ {
+     "name": None,
+     "mid": None,
+     "type": "/food/dish",
+     "count": None,
+     #"return": "count",
+     "limit": 20,
+     "sort": "name",
+ }

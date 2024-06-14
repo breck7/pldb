@@ -1,0 +1,66 @@
+importOnly
+replaceNodejs
+ // const {Tables} = require("./Computer.js")
+ const tops = [
+    {
+        "name": "JavaScript",
+        "id": "javascript",
+        "rank": "1"
+    },
+    {
+        "name": "Python",
+        "id": "python",
+        "rank": "2"
+    },
+    {
+        "name": "C",
+        "id": "c",
+        "rank": "3"
+    },
+    {
+        "name": "Java",
+        "id": "java",
+        "rank": "4"
+    },
+    {
+        "name": "C++",
+        "id": "cpp",
+        "rank": "5"
+    },
+    {
+        "name": "HTML",
+        "id": "html",
+        "rank": "6"
+    },
+    {
+        "name": "Perl",
+        "id": "perl",
+        "rank": "7"
+    },
+    {
+        "name": "CSS",
+        "id": "css",
+        "rank": "8"
+    },
+    {
+        "name": "Ruby",
+        "id": "ruby",
+        "rank": "9"
+    },
+    {
+        "name": "PHP",
+        "id": "php",
+        "rank": "10"
+    }
+  ]
+ module.exports = {
+      TOP_LANGS: tops
+        .map(file => `<a href="concepts/${file.id}.html">${file.name}</a>`)
+        .join(" · ")
+    }
+
+Top Languages
+ link ./lists/top1000.html
+ class pldbHomepageLink
+
+TOP_LANGS

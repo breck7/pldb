@@ -1,0 +1,93 @@
+PL/I
+====
+
+PL/I, aka Programming Language One, is a programming language created in 1964.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221964%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#243 on PLDB
+60 Years Old
+
+PL/I (Programming Language One, pronounced ) is a procedural, imperative computer programming language designed for scientific, engineering, business and system programming uses. It has been used by various academic, commercial and industrial organizations since it was introduced in the 1960s, and continues to be actively used. PL/I's main domains are data processing, numerical computation, scientific computing, and system programming; it supports recursion, structured programming, linked data structure handling, fixed-point, floating-point, complex, character string handling, and bit string handling. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PL/I
+
+- PL/I Wikipedia page
+ https://en.wikipedia.org/wiki/PL/I
+- PLDB has 2 documentation sites for PL/I: www.ibm.com, www.ibm.com
+- PL/I first developed in IBM
+- There are 1 Project Euler users using PL/I
+- PL/I on HOPL
+ https://hopl.info/showlanguage.prx?exp=185
+- PL/I appears in the TIOBE Index
+- See also: (25 related languages)PL/M, XPL, PL/P, PL/C, COBOL, Fortran, Algol, CMS-2, SP/k, B, Rexx, AUTOCODER, COMTRAN, GEORGE, Multics, BASIC, Pascal, Daisy Systems, Linux, HAL/S, Unix, Java, C, ISBN, DOI
+- 2 languages in PLDB linking to PL/I: cloc, PL/I-FORMAC
+
+/* Read in a line, which contains a string,
+/* and then print every subsequent line that contains that string. */
+
+find_strings: procedure options (main);
+   declare pattern character (100) varying;
+   declare line character (100) varying;
+   declare line_no fixed binary;
+
+   on endfile (sysin) stop;
+
+   get edit (pattern) (L);
+   line_no = 1;
+   do forever;
+      get edit (line) (L);
+      if index(line, pattern) &gt; 0 then
+         put skip list (line_no, line);
+      line_no = line_no + 1;
+   end;
+
+end find_strings;
+
+Language features
+======================================================
+
+row
+ Feature Fixed Point Numbers
+ FeatureLink ../features/hasFixedPoint.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token =
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Threads
+ FeatureLink ../features/hasThreads.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

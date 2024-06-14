@@ -1,0 +1,166 @@
+AspectJ
+=======
+
+AspectJ is an open source programming language created in 2001 by Eric Bodden.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Eric%20Bodden
+
+#366 on PLDB
+23 Years Old
+671 Repos
+
+Try now: Riju
+
+AspectJ is an aspect-oriented programming (AOP) extension created at PARC for the Java programming language. It is available in Eclipse Foundation open-source projects, both stand-alone and integrated into Eclipse. AspectJ has become a widely used de facto standard for AOP by emphasizing simplicity and usability for end users. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AspectJ
+
+- AspectJ website
+ http://www.eclipse.org/aspectj/
+- AspectJ Wikipedia page
+ https://en.wikipedia.org/wiki/AspectJ
+- There are at least 671 AspectJ repos on GitHub
+- AspectJ first developed in Eclipse Foundation
+- The  Google BigQuery Public Dataset GitHub snapshot shows 734 users using AspectJ in 793 repos on GitHub
+- Explore AspectJ snippets on Rosetta Code
+- AspectJ on HOPL
+ https://hopl.info/showlanguage.prx?exp=7055
+- AspectJ appears in the TIOBE Index
+- AspectJ Ubuntu package
+ https://packages.ubuntu.com/jammy/aspectj
+- ANTLR grammar for AspectJ
+- Pygments supports syntax highlighting for AspectJ
+- GitHub supports syntax highlighting for AspectJ
+- AspectJ appears in the Quine Relay project
+- See also: (4 related languages)Java, Eclipse, Emacs, ISBN
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello, world!&quot;);
+    }
+}
+
+System.out.println(&quot;Hello World&quot;);
+
+package com.blogspot.miguelinlas3.aspectj.cache;
+
+import java.util.Map;
+import java.util.WeakHashMap;
+
+import org.aspectj.lang.JoinPoint;
+
+import com.blogspot.miguelinlas3.aspectj.cache.marker.Cacheable;
+
+/**
+ * This simple aspect simulates the behaviour of a very simple cache
+ *
+ * @author migue
+ *
+ */
+public aspect CacheAspect {
+
+	public pointcut cache(Cacheable cacheable): execution(@Cacheable * * (..)) &amp;&amp; @annotation(cacheable);
+	
+	Object around(Cacheable cacheable): cache(cacheable){
+	
+		String evaluatedKey = this.evaluateKey(cacheable.scriptKey(), thisJoinPoint);
+		
+		if(cache.containsKey(evaluatedKey)){
+			System.out.println(&quot;Cache hit for key &quot; + evaluatedKey);
+			return this.cache.get(evaluatedKey);
+		}
+		
+		System.out.println(&quot;Cache miss for key &quot; + evaluatedKey);
+		Object value = proceed(cacheable);
+		cache.put(evaluatedKey, value);
+		return value;
+	}
+	
+	protected String evaluateKey(String key, JoinPoint joinPoint) {
+		// TODO add some smart staff to allow simple scripting in @Cacheable annotation
+		return key;
+	}
+	
+	protected Map&lt;String, Object&gt; cache = new WeakHashMap&lt;String, Object&gt;();
+}
+
+pointcut set() : execution(* set*(..) ) &amp;&amp; this(Point);
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  // 0[bB][01][01_]*[lL]?
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // 0|[1-9][0-9_]*[lL]?
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[0-7_]+[lL]?
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token System.out.println
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

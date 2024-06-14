@@ -1,0 +1,146 @@
+Isabelle
+========
+
+Isabelle is an open source programming language created in 1986.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#445 on PLDB
+38 Years Old
+839 Repos
+
+The Isabelle theorem prover is an interactive theorem prover, a Higher Order Logic (HOL) theorem prover. It is an LCF-style theorem prover (written in Standard ML), so it is based on a small logical core to ease logical correctness. Isabelle is generic: it provides a meta-logic (a weak type theory), which is used to encode object logics like first-order logic (FOL), higher-order logic (HOL) or Zermelo–Fraenkel set theory (ZFC). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
+
+- Isabelle website
+ http://isabelle.in.tum.de/
+- Isabelle Wikipedia page
+ https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
+- There are at least 839 Isabelle repos on GitHub
+- Isabelle first developed in University Of Cambridge and Technische Universität München
+- The  Google BigQuery Public Dataset GitHub snapshot shows 115 users using Isabelle in 137 repos on GitHub
+- Isabelle LSP implementation
+- Pygments supports syntax highlighting for Isabelle
+- GitHub supports syntax highlighting for Isabelle
+- See also: (2 related languages)Standard ML, Coq
+- Read more about Isabelle on the web: 1.
+ https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+
+theory HelloWorld
+imports Main
+begin
+
+section{*Playing around with Isabelle*}
+
+text{* creating a lemma with the name hello_world*}
+lemma hello_world: &quot;True&quot; by simp
+
+(*inspecting it*)
+thm hello_world
+
+text{* defining a string constant HelloWorld *}
+
+definition HelloWorld :: &quot;string&quot; where
+  &quot;HelloWorld \&lt;equiv&gt; &#39;&#39;Hello World!&#39;&#39;&quot;
+
+(*reversing HelloWorld twice yilds HelloWorld again*)
+theorem &quot;rev (rev HelloWorld) = HelloWorld&quot;
+  by (fact List.rev_rev_ident)
+
+text{*now we delete the already proven List.rev_rev_ident lema and show it by hand*}
+declare List.rev_rev_ident[simp del]
+hide_fact List.rev_rev_ident
+
+(*It&#39;s trivial since we can just &#39;execute&#39; it*)
+corollary &quot;rev (rev HelloWorld) = HelloWorld&quot;
+  apply(simp add: HelloWorld_def)
+  done
+
+text{*does it hold in general?*}
+theorem rev_rev_ident:&quot;rev (rev l) = l&quot;
+  proof(induction l)
+  case Nil thus ?case by simp
+  next
+  case (Cons l ls)
+    assume IH: &quot;rev (rev ls) = ls&quot;
+    have &quot;rev (l#ls) = (rev ls) @ [l]&quot; by simp
+    hence &quot;rev (rev (l#ls)) = rev ((rev ls) @ [l])&quot; by simp
+    also have &quot;\&lt;dots&gt; = [l] @ rev (rev ls)&quot; by simp
+    finally show &quot;rev (rev (l#ls)) = l#ls&quot; using IH by simp
+  qed
+
+corollary &quot;\&lt;forall&gt;(l::string). rev (rev l) = l&quot; by(fastforce intro: rev_rev_ident)
+
+end
+
+theorem sqrt2_not_rational:
+  &quot;sqrt (real 2) ∉ ℚ&quot;
+proof
+  let ?x = &quot;sqrt (real 2)&quot;
+  assume &quot;?x ∈ ℚ&quot;
+  then obtain m n :: nat where
+    sqrt_rat: &quot;¦?x¦ = real m / real n&quot; and lowest_terms: &quot;coprime m n&quot;
+    by (rule Rats_abs_nat_div_natE)
+  hence &quot;real (m^2) = ?x^2 * real (n^2)&quot; by (auto simp add: power2_eq_square)
+  hence eq: &quot;m^2 = 2 * n^2&quot; using of_nat_eq_iff power2_eq_square by fastforce
+  hence &quot;2 dvd m^2&quot; by simp
+  hence &quot;2 dvd m&quot; by simp
+  have &quot;2 dvd n&quot; proof-
+    from ‹2 dvd m› obtain k where &quot;m = 2 * k&quot; ..
+    with eq have &quot;2 * n^2 = 2^2 * k^2&quot; by simp
+    hence &quot;2 dvd n^2&quot; by simp
+    thus &quot;2 dvd n&quot; by simp
+  qed
+  with ‹2 dvd m› have &quot;2 dvd gcd m n&quot; by (rule gcd_greatest)
+  with lowest_terms have &quot;2 dvd 1&quot; by simp
+  thus False using odd_one by blast
+qed
+
+Language features
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token True False
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  (* A comment
+  *)
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

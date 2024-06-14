@@ -1,0 +1,38 @@
+import ../code/conceptPage.scroll
+
+id filterscript
+name Filterscript
+appeared 2012
+tags pl
+conceptDescription A subset of RenderScript
+
+fileType text
+centralPackageRepositoryCount 0
+
+example
+ #pragma version(1)
+ #pragma rs java_package_name(foo)
+ 
+ int __attribute__((kernel)) root(uint32_t ain) {
+   return 0;
+ }
+ 
+ void __attribute__((kernel)) in_only(uint32_t ain) {
+ }
+ 
+ int __attribute__((kernel)) out_only() {
+   return 0;
+ }
+ 
+ int __attribute__((kernel)) everything(uint32_t ain, uint32_t x, uint32_t y) {
+   return 0;
+ }
+
+githubLanguage Filterscript
+ fileExtensions fs
+ trendingProjectsCount 0
+ type programming
+ group RenderScript
+ aceMode text
+ tmScope none
+ repos 0

@@ -1,0 +1,22 @@
+import ../code/conceptPage.scroll
+
+id rbscript
+name rbscript
+appeared 1996
+tags pl
+
+centralPackageRepositoryCount 0
+reference https://docs.xojo.com/index.php/RBScript
+
+example
+ Dim years, days As Integer
+ years = Val(Input("")) // Prompt the user to enter a value
+ days = years * 365
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

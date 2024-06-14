@@ -1,0 +1,100 @@
+xBase
+=====
+
+xBase is a programming language created in 1986.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#420 on PLDB
+38 Years Old
+3k Repos
+
+xBase is the generic term for all programming languages that derive from the original dBASE (Ashton-Tate) programming language and database formats. These are sometimes informally known as dBASE "clones". While there was a non-commercial predecessor to the Ashton-Tate product (Vulcan written by Wayne Ratliff), most clones are based on Ashton-Tate's 1986 dBASE III+ release — scripts written in the dBASE III+ dialect are most likely to run on all the clones.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XBase
+
+- xBase Wikipedia page
+ https://en.wikipedia.org/wiki/XBase
+- xBase docs
+ https://www.eclipse.org/Xtext/documentation/305_xbase.html#xbase-expressions
+- There are at least 2,564 xBase repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 313 users using xBase in 350 repos on GitHub
+- Explore xBase snippets on Rosetta Code
+- xBase on HOPL
+ https://hopl.info/showlanguage.prx?exp=2621
+- xBase appears in the TIOBE Index
+- GitHub supports syntax highlighting for xBase
+- See also: (1 related languages)Jet Propulsion Laboratory Display Information System
+- 2 languages in PLDB linking to xBase: cloc, Pygments
+
+do while .t.
+ ? &#39;Hello World&#39;
+enddo
+
+#ifndef __HARBOUR__
+   #ifndef __XPP__
+      #ifndef __CLIP__
+         #ifndef FlagShip
+            #define __CLIPPER__
+         #endif
+      #endif
+   #endif
+#endif
+
+/* File create flags */
+#define FC_NORMAL          0  /* No file attributes are set */
+#define FC_READONLY        1
+#define FC_HIDDEN          2
+#define FC_SYSTEM          4
+
+// New-style comment
+#command SET DELETED &lt;x:ON,OFF,&amp;&gt;      =&gt; Set( _SET_DELETED, &lt;(x)&gt; )
+#command SET DELETED (&lt;x&gt;)             =&gt; Set( _SET_DELETED, &lt;x&gt; )
+#command @ &lt;row&gt;, &lt;col&gt; SAY &lt;exp&gt; [PICTURE &lt;pic&gt;] [COLOR &lt;clr&gt;] =&gt; ;
+         DevPos( &lt;row&gt;, &lt;col&gt; ) ; DevOutPict( &lt;exp&gt;, &lt;pic&gt; [, &lt;clr&gt;] )
+         
+#command ENDIF &lt;*x*&gt; =&gt; endif
+
+#ifdef __CLIPPER__
+   #xtranslate hb_MemoWrit( [&lt;x,...&gt;] )  =&gt; MemoWrit( &lt;x&gt; )
+   #xtranslate hb_dbExists( &lt;t&gt; )        =&gt; File( &lt;t&gt; )
+   #xtranslate hb_dbPack()               =&gt; __dbPack()
+   #xtranslate hb_default( @&lt;v&gt;, &lt;x&gt; )   =&gt; iif( StrTran( ValType( &lt;v&gt; ), &quot;M&quot;, &quot;C&quot; ) == StrTran( ValType( &lt;x&gt; ), &quot;M&quot;, &quot;C&quot; ),, &lt;v&gt; := &lt;x&gt;, )
+#endif
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

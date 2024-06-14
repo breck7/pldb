@@ -1,0 +1,19 @@
+Esoteric Reaction
+=================
+
+Esoteric Reaction is an esoteric programming language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2721 on PLDB
+4 Years Old
+
+git clone https://github.com/bigyihsuan/EsotericReaction
+
+Esolang using chemical "formulas" as code
+
+- Esoteric Reaction is developed on GitHub and has 3 stars
+- Esoteric Reaction first developed in https://bigyihsuan.github.io
+- Esoteric Reaction is written in Rust, Markdown, CSV, JSON, Python, TOML
+
+ &lt;code&gt;	   ::= &lt;equation&gt; | &lt;equation&gt; &lt;code&gt;
+ &lt;equation&gt; ::= &lt;reagent&gt; &lt;rhs&gt; | &lt;COMMENT&gt; | &lt;reagent&gt; &lt;rhs&gt; &lt;COMMENT&gt;

@@ -1,0 +1,69 @@
+YASnippet
+=========
+
+YASnippet is an open source text markup language created in 2008 by Zhang Chiyuan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Zhang%20Chiyuan
+
+#269 on PLDB
+16 Years Old
+403 Repos
+
+git clone https://github.com/joaotavora/yasnippet
+
+A template system for Emacs
+
+- YASnippet website
+ http://joaotavora.github.com/yasnippet/
+- YASnippet is developed on GitHub and has 2,476 stars
+- There are at least 403 YASnippet repos on GitHub
+- YASnippet is written in Lisp, Markdown, CSS, YAML, Make
+- The  Google BigQuery Public Dataset GitHub snapshot shows 261 users using YASnippet in 264 repos on GitHub
+- GitHub supports syntax highlighting for YASnippet
+
+# -*- mode: snippet -*-
+# name: fun
+# key: fun
+# expand-env: ((yas-indent-line &#39;fixed))
+# --
+${1:function-name} :: ${2:type}
+$1 ${3:arguments} $0
+
+# name: Read stdin
+# key: stdin
+# group: es6
+# --
+new Promise(resolve =&gt; {
+	let input = &quot;&quot;;
+	process.stdin.setEncoding(&quot;UTF8&quot;);
+	process.stdin.on(&quot;readable&quot;, () =&gt; {
+		const chunk = process.stdin.read();
+		null !== chunk ? input += chunk : resolve(input);
+	})
+}).then(data =&gt; {
+	$1
+});
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

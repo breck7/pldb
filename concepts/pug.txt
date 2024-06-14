@@ -1,0 +1,169 @@
+Pug
+===
+
+Pug is an open source template language created in 2010 by Tj Holowaychuk.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tj%20Holowaychuk
+
+#68 on PLDB
+14 Years Old
+12k Repos
+
+git clone https://github.com/pugjs/pug
+
+Try now: Web · Riju
+
+Pug – robust, elegant, feature rich template engine for Node.js
+
+- Pug website
+ https://pugjs.org
+- Pug is developed on GitHub and has 20,817 stars
+- Pug docs
+ https://pugjs.org/api/getting-started.html
+- There are at least 11,560 Pug repos on GitHub
+- Pug first developed in https://github.com/pugjs
+- Pug is written in Pug, JSON, HTML, JavaScript, Markdown, YAML, TypeScript, Stylus, CSS, CoffeeScript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Pug in 575 repos on GitHub
+- Monaco package for syntax highlighting Pug
+- Pygments supports syntax highlighting for Pug
+- GitHub supports syntax highlighting for Pug
+- 3 languages in PLDB linking to Pug: Ace Editor, Nit, Pug
+
+html
+  body
+    p Hello, world!
+
+doctype html
+html
+    head
+       title Hello World
+    body
+       h1 Hello World
+
+p.
+  Hello,
+  World!
+
+append block case default doctype each else extends for if in include mixin typeof unless var when
+
+Language features
+======================================================
+
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  - var title = "On Dogs: Man's Best Friend";
+  
+  h1= title
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+  mixin article(title)
+    .article
+      .article-wrapper
+        h1= title
+        if block
+          block
+        else
+          p No content provided
+  
+  +article('Hello world')
+  
+  +article('Hello world')
+    p This is my
+    p Amazing article
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+  - var friends = 10
+  case friends
+    when 0
+      p you have no friends
+    when 1
+      p you have a friend
+    default
+      p you have #{friends} friends
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  - var user = {description: 'foo bar baz'}
+  - var authorised = false
+  #user
+    if user.description
+      h2.green Description
+      p.description= user.description
+    else if authorised
+      h2.blue Description
+      p.description.
+        User has no description,
+        why not add one...
+    else
+      h2.red Description
+      p.description User has no description
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  //- index.pug
+  doctype html
+  html
+    include includes/head.pug
+    body
+      h1 My Site
+      p Welcome to my super lame site.
+      include includes/foot.pug
+row
+ Feature hasForEachLoops
+ FeatureLink ../features/hasForEachLoops.html
+ Supported ✓
+ Token 
+ Example
+  ul
+    each val in [1, 2, 3, 4, 5]
+      li= val
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

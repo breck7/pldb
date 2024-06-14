@@ -1,0 +1,82 @@
+DOML
+====
+
+DOML, aka Data Oriented Markup Language, is a data notation created in 2017.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2418 on PLDB
+7 Years Old
+
+git clone https://github.com/DOML-Lang/DOML
+
+The specification document for DOML
+
+- DOML is developed on GitHub and has 4 stars
+- DOML first developed in https://github.com/DOML-Lang
+- DOML is written in Markdown
+
+# Version 0.3
+// Construct a new Color
+Test = Color() {
+  RGB = 255, 64, 128,
+}
+
+// Constructors do exist
+// the parameter names are purely for your own merit, they will check if its possible however (will be possible on most systems)
+TheSame = Color::Normalized(r: 1, g: 0.25, b: 0.5) {
+  Name = &quot;Bob&quot;
+}
+
+// You can also just declare an object without scoping it
+Other = Color()
+Other.Name = &quot;X&quot;
+
+// You can declare random other values
+MyValue = 2
+
+// You can also edit the original Test at any point EITHER by doing
+Test.R = 50
+// Or by doing
+Test.{
+  G = 128
+}
+
+// You can declare arrays like
+ArrayObject = []Color {
+  ::Normalized(0.95, 0.55, 0.22){
+    Name = &quot;Other&quot;, // Trailing commas are always allowed
+  },
+  // You can still do an empty construction
+  ::() {
+    RGB = 50, 25, 125,
+  },
+  // And thus you can leave out the ::()
+  {
+    RGB = 50, 25, 125,
+  },
+}
+
+// You can also copy objects by doing
+NewObj = Other
+
+// Or can do something like
+NewObj.Name = ArrayObject[0].Name
+
+// You can also declare arrays inside object definitions
+MyTags = Tags() {
+  // Note: all have to be of the same type
+  SetTags = [&quot;Hello&quot;, &quot;Other&quot;, &quot;bits&quot;, &quot;bobs&quot;, &quot;kick&quot;]
+  Name = MyTags.GetTags[0] // And indexing them works like you would think
+}
+
+// You can declare dictionaries like
+// Dictionaries within objects can also be created similarly
+MyDictionary = [String : Color] {
+  {
+    &quot;Bob&quot; : Color::Normalized(0.5, 1.2, 3.5) {
+      Name = &quot;Bob&#39;s Color&quot;
+    }
+  },
+}
+// No need to keep classes around in this example
+# Deinit all

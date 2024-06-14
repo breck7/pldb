@@ -1,0 +1,130 @@
+Nix
+===
+
+Nix is an open source package manager created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#542 on PLDB
+21 Years Old
+
+- Nix first developed in NixOS Foundation
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Nix in 3k repos on GitHub
+- Explore Nix snippets on Rosetta Code
+- Pygments supports syntax highlighting for Nix
+- GitHub supports syntax highlighting for Nix
+- Read more about Nix on the web: 1.
+ https://nixos.org/
+- 70 languages in PLDB linking to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
+
+{
+ boot.loader.grub.device = &quot;/dev/sda&quot;;
+
+ fileSystems.&quot;/&quot;.device = &quot;/dev/sda1&quot;;
+
+ services.sshd.enable = true;
+}
+
+{ stdenv, fetchurl, fetchgit, openssl, zlib, pcre, libxml2, libxslt, expat
+, rtmp ? false
+, fullWebDAV ? false
+, syslog ? false
+, moreheaders ? false, ...}:
+
+let
+  version = &quot;1.4.4&quot;;
+  mainSrc = fetchurl {
+    url = &quot;http://nginx.org/download/nginx-${version}.tar.gz&quot;;
+    sha256 = &quot;1f82845mpgmhvm151fhn2cnqjggw9w7cvsqbva9rb320wmc9m63w&quot;;
+  };
+
+  rtmp-ext = fetchgit {
+    url = git://github.com/arut/nginx-rtmp-module.git;
+    rev = &quot;1cfb7aeb582789f3b15a03da5b662d1811e2a3f1&quot;;
+    sha256 = &quot;03ikfd2l8mzsjwx896l07rdrw5jn7jjfdiyl572yb9jfrnk48fwi&quot;;
+  };
+
+  dav-ext = fetchgit {
+    url = git://github.com/arut/nginx-dav-ext-module.git;
+    rev = &quot;54cebc1f21fc13391aae692c6cce672fa7986f9d&quot;;
+    sha256 = &quot;1dvpq1fg5rslnl05z8jc39sgnvh3akam9qxfl033akpczq1bh8nq&quot;;
+  };
+
+  syslog-ext = fetchgit {
+    url = https://github.com/yaoweibin/nginx_syslog_patch.git;
+    rev = &quot;165affd9741f0e30c4c8225da5e487d33832aca3&quot;;
+    sha256 = &quot;14dkkafjnbapp6jnvrjg9ip46j00cr8pqc2g7374z9aj7hrvdvhs&quot;;
+  };
+
+  moreheaders-ext = fetchgit {
+    url = https://github.com/agentzh/headers-more-nginx-module.git;
+    rev = &quot;refs/tags/v0.23&quot;;
+    sha256 = &quot;12pbjgsxnvcf2ff2i2qdn39q4cm5czlgrng96j8ml4cgxvnbdh39&quot;;
+  };
+in
+
+stdenv.mkDerivation rec {
+  name = &quot;nginx-${version}&quot;;
+  src = mainSrc;
+
+  buildInputs = [ openssl zlib pcre libxml2 libxslt
+    ] ++ stdenv.lib.optional fullWebDAV expat;
+
+  patches = if syslog then [ &quot;${syslog-ext}/syslog_1.4.0.patch&quot; ] else [];
+
+  configureFlags = [
+    &quot;--with-http_ssl_module&quot;
+    &quot;--with-http_spdy_module&quot;
+    &quot;--with-http_xslt_module&quot;
+    &quot;--with-http_sub_module&quot;
+    &quot;--with-http_dav_module&quot;
+    &quot;--with-http_gzip_static_module&quot;
+    &quot;--with-http_secure_link_module&quot;
+    &quot;--with-ipv6&quot;
+    # Install destination problems
+    # &quot;--with-http_perl_module&quot;
+  ] ++ stdenv.lib.optional rtmp &quot;--add-module=${rtmp-ext}&quot;
+    ++ stdenv.lib.optional fullWebDAV &quot;--add-module=${dav-ext}&quot;
+    ++ stdenv.lib.optional syslog &quot;--add-module=${syslog-ext}&quot;
+    ++ stdenv.lib.optional moreheaders &quot;--add-module=${moreheaders-ext}&quot;;
+
+  preConfigure = &#39;&#39;
+    export NIX_CFLAGS_COMPILE=&quot;$NIX_CFLAGS_COMPILE -I${libxml2 }/include/libxml2&quot;
+  &#39;&#39;;
+
+  # escape example
+  postInstall = &#39;&#39;
+    mv $out/sbin $out/bin &#39;&#39;&#39; &#39;&#39;${
+   ${ if true then ${ &quot;&quot; } else false }
+  &#39;&#39;;
+
+  meta = {
+    description = &quot;A reverse proxy and lightweight webserver&quot;;
+    maintainers = [ stdenv.lib.maintainers.raskin];
+    platforms = stdenv.lib.platforms.all;
+    inherit version;
+  };
+}
+
+rec with let in inherit assert if else then ...
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example

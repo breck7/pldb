@@ -1,0 +1,172 @@
+Varnish Configuration Language
+==============================
+
+Varnish Configuration Language is an application created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1400 on PLDB
+18 Years Old
+594 Repos
+
+- There are at least 594 Varnish Configuration Language repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 404 users using Varnish Configuration Language in 428 repos on GitHub
+- Pygments supports syntax highlighting for Varnish Configuration Language
+- GitHub supports syntax highlighting for Varnish Configuration Language
+- Read more about Varnish Configuration Language on the web: 1.
+ https://en.wikipedia.org/wiki/Varnish_(software)
+
+acl local {
+ &quot;localhost&quot;;         // myself
+ &quot;192.0.2.0&quot;/24;      // and everyone on the local network
+ ! &quot;192.0.2.23&quot;;      // except for the dialin router
+}
+
+/*-
+ * Copyright (c) 2006 Verdens Gang AS
+ * Copyright (c) 2006-2011 Varnish Software AS
+ * All rights reserved.
+ *
+ * Author: Poul-Henning Kamp &lt;phk@phk.freebsd.dk&gt;
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS&#39;&#39; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL AUTHOR OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * The default VCL code.
+ *
+ * NB! You do NOT need to copy &amp; paste all of these functions into your
+ * own vcl code, if you do not provide a definition of one of these
+ * functions, the compiler will automatically fall back to the default
+ * code from this file.
+ *
+ * This code will be prefixed with a backend declaration built from the
+ * -b argument.
+ */
+
+sub vcl_recv {
+    if (req.restarts == 0) {
+	if (req.http.x-forwarded-for) {
+	    set req.http.X-Forwarded-For =
+		req.http.X-Forwarded-For + &quot;, &quot; + client.ip;
+	} else {
+	    set req.http.X-Forwarded-For = client.ip;
+	}
+    }
+    if (req.request != &quot;GET&quot; &amp;&amp;
+      req.request != &quot;HEAD&quot; &amp;&amp;
+      req.request != &quot;PUT&quot; &amp;&amp;
+      req.request != &quot;POST&quot; &amp;&amp;
+      req.request != &quot;TRACE&quot; &amp;&amp;
+      req.request != &quot;OPTIONS&quot; &amp;&amp;
+      req.request != &quot;DELETE&quot;) {
+        /* Non-RFC2616 or CONNECT which is weird. */
+        return (pipe);
+    }
+    if (req.request != &quot;GET&quot; &amp;&amp; req.request != &quot;HEAD&quot;) {
+        /* We only deal with GET and HEAD by default */
+        return (pass);
+    }
+    if (req.http.Authorization || req.http.Cookie) {
+        /* Not cacheable by default */
+        return (pass);
+    }
+    return (lookup);
+}
+
+sub vcl_pipe {
+    # Note that only the first request to the backend will have
+    # X-Forwarded-For set.  If you use X-Forwarded-For and want to
+    # have it set for all requests, make sure to have:
+    # set bereq.http.connection = &quot;close&quot;;
+    # here.  It is not set by default as it might break some broken web
+    # applications, like IIS with NTLM authentication.
+    return (pipe);
+}
+
+sub vcl_pass {
+    return (pass);
+}
+
+sub vcl_hash {
+    hash_data(req.url);
+    if (req.http.host) {
+        hash_data(req.http.host);
+    } else {
+        hash_data(server.ip);
+    }
+    return (hash);
+}
+
+sub vcl_hit {
+    return (deliver);
+}
+
+sub vcl_miss {
+    return (fetch);
+}
+
+sub vcl_fetch {
+    if (beresp.ttl &lt;= 0s ||
+        beresp.http.Set-Cookie ||
+        beresp.http.Vary == &quot;*&quot;) {
+		/*
+		 * Mark as &quot;Hit-For-Pass&quot; for the next 2 minutes
+		 */
+		set beresp.ttl = 120 s;
+		return (hit_for_pass);
+    }
+    return (deliver);
+}
+
+sub vcl_deliver {
+    return (deliver);
+}
+
+sub vcl_error {
+    set obj.http.Content-Type = &quot;text/html; charset=utf-8&quot;;
+    set obj.http.Retry-After = &quot;5&quot;;
+    synthetic {&quot;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+ &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&quot;} + obj.status + &quot; &quot; + obj.response + {&quot;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Error &quot;} + obj.status + &quot; &quot; + obj.response + {&quot;&lt;/h1&gt;
+    &lt;p&gt;&quot;} + obj.response + {&quot;&lt;/p&gt;
+    &lt;h3&gt;Guru Meditation:&lt;/h3&gt;
+    &lt;p&gt;XID: &quot;} + req.xid + {&quot;&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Varnish cache server&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+&quot;};
+    return (deliver);
+}
+
+sub vcl_init {
+	return (ok);
+}
+
+sub vcl_fini {
+	return (ok);
+}

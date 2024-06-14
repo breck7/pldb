@@ -1,0 +1,158 @@
+COBOL
+=====
+
+COBOL, aka COmmon Business Oriented Language, is a programming language created in 1959 by Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221959%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Howard%20Bromberg
+ https://pldb.io/concepts/../lists/creators.html#q=Norman%20Discount
+ https://pldb.io/concepts/../lists/creators.html#q=Vernon%20Reeves
+ https://pldb.io/concepts/../lists/creators.html#q=Jean%20E.%20Sammet
+ https://pldb.io/concepts/../lists/creators.html#q=William%20Selden
+ https://pldb.io/concepts/../lists/creators.html#q=Gertrude%20Tierney
+ https://pldb.io/concepts/../lists/creators.html#q=Grace%20Hopper
+
+#38 on PLDB
+65 Years Old
+3k Repos
+
+Try now: Riju
+
+COBOL (, an acronym for common business-oriented language) is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/COBOL
+
+- COBOL Wikipedia page
+ https://en.wikipedia.org/wiki/COBOL
+- COBOL docs
+ https://openbase.com/js/cobol/documentation
+- PLDB has 2 mailing list sites for COBOL: lists.midrange.com, lists.openmainframeproject.org
+- There are at least 3,411 COBOL repos on GitHub
+- COBOL first developed in Conference/Committee on Data Systems Languages
+- The  Google BigQuery Public Dataset GitHub snapshot shows 628 users using COBOL in 667 repos on GitHub
+- Check out the 4 COBOL meetup groups on Meetup.com.
+- There are 2,605 members in the COBOL subreddit
+- There are 39 Project Euler users using COBOL
+- In the 2021 StackOverflow developer survey COBOL programmers reported a median salary of $52,340. 1% of respondents reported using COBOL. 437 programmers reported using COBOL, and 309 said they wanted to use it
+- Explore COBOL snippets on Rosetta Code
+- COBOL on HOPL
+ https://hopl.info/showlanguage.prx?exp=139
+- COBOL ranks #25 in the TIOBE Index
+- COBOL Ubuntu package
+ https://packages.ubuntu.com/jammy/open-cobol
+- CodeMirror package for syntax highlighting COBOL
+- Pygments supports syntax highlighting for COBOL
+- GitHub supports syntax highlighting for COBOL
+- COBOL appears in the Quine Relay project
+- Indeed.com has 838 matches for "cobol developer".
+- See also: (16 related languages)COMTRAN, Eiffel, FLOW-MATIC, Smalltalk, PL/I, Programming Language for Business, ALGOL 58, Fully Automated Compiling Technique, Algol, Unicode, XML, Unix, Visual Basic .NET, UTF-8, JCL, Pascal
+- 5 languages in PLDB linking to COBOL: Ace Editor, cloc, Pygments, Scroll Notation, typecobol
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. MAIN.
+PROCEDURE DIVISION.
+    DISPLAY &quot;Hello, world!&quot;.
+    STOP RUN.
+
+       identification division.
+       program-id. cobol.
+       procedure division.
+       main.
+           display &#39;Hello World.&#39; end-display.
+           stop run.
+
+       * Hello World in COBOL
+
+*****************************
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO.
+ENVIRONMENT DIVISION.
+DATA DIVISION.
+PROCEDURE DIVISION.
+MAIN SECTION.
+DISPLAY &quot;Hello World!&quot;
+STOP RUN.
+****************************
+
+        program-id. hello.
+        procedure division.
+        display &quot;Hello, World!&quot;.
+        stop run.
+
+19.52.48 JOB    3  $HASP100 COBUCLG  ON READER1     COBOL BASE TEST
+    19.52.48 JOB    3  IEF677I WARNING MESSAGE(S) FOR JOB COBUCLG  ISSUED
+    19.52.48 JOB    3  $HASP373 COBUCLG  STARTED - INIT  1 - CLASS A - SYS BSP1
+    19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+    19.52.48 JOB    3  IEC130I SYSLIB   DD STATEMENT MISSING
+    19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+    19.52.48 JOB    3  IEFACTRT - Stepname  Procstep  Program   Retcode
+    19.52.48 JOB    3  COBUCLG    BASETEST  COB       IKFCBL00  RC= 0000
+    19.52.48 JOB    3  COBUCLG    BASETEST  LKED      IEWL      RC= 0000
+    19.52.48 JOB    3  +HELLO, WORLD
+    19.52.48 JOB    3  COBUCLG    BASETEST  GO        PGM=*.DD  RC= 0000
+    19.52.48 JOB    3  $HASP395 COBUCLG  ENDED
+
+ACCEPT ACCESS ADD ADDRESS ADVANCING AFTER ALL ALPHABET ALPHABETIC ALPHABETIC-LOWER ALPHABETIC-UPPER ALPHANUMERIC ALPHANUMERIC-EDITED ALSO ALTER ALTERNATE AND ANY APPLY ARE AREA AREAS ASCENDING ASSIGN AT AUTHOR BASIS BEFORE BEGINNING BINARY BLANK BLOCK BOTTOM BY CALL CANCEL CBL CD CF CH CHARACTER CHARACTERS CLASS CLASS-ID CLOCK-UNITS CLOSE COBOL CODE CODE-SET COLLATING COLUMN COM-REG COMMA COMMON COMMUNICATION COMP COMP-1 COMP-2 COMP-3 COMP-4 COMP-5 COMPUTATIONAL COMPUTATIONAL-1 COMPUTATIONAL-2 COMPUTATIONAL-3 COMPUTATIONAL-4 COMPUTATIONAL-5 COMPUTE CONFIGURATION CONTAINS CONTENT CONTINUE CONTROL CONTROLS CONVERTING COPY CORR CORRESPONDING COUNT CURRENCY DATA DATE-COMPILED DATE-WRITTEN DAY DAY-OF-WEEK DBCS DE DEBUG-CONTENTS DEBUG-ITEM DEBUG-LINE DEBUG-NAME DEBUG-SUB-1 DEBUG-SUB-2 DEBUG-SUB-3 DEBUGGING DECIMAL-POINT DECLARATIVES DELETE DELIMITED DELIMITER DEPENDING DESCENDING DESTINATION DETAIL DISPLAY DISPLAY-1 DIVIDE DIVISION DOWN DUPLICATES DYNAMIC EGCS EGI EJECT ELSE EMI ENABLE END END-ADD END-CALL END-COMPUTE END-DELETE END-DIVIDE END-EVALUATE END-IF END-INVOKE END-MULTIPLY END-OF-PAGE END-PERFORM END-READ END-RECEIVE END-RETURN END-REWRITE END-SEARCH END-START END-STRING END-SUBTRACT END-UNSTRING END-WRITE ENDING ENTER ENTRY ENVIRONMENT EOP EQUAL ERROR ESI EVALUATE EVERY EXCEPTION EXIT EXTEND EXTERNAL FALSE FD FILE FILE-CONTROL FILLER FINAL FIRST FOOTING FOR FROM FUNCTION GENERATE GIVING GLOBAL GO GOBACK GREATER GROUP HEADING HIGH-VALUE HIGH-VALUES I-O I-O-CONTROL ID IDENTIFICATION IF IN INDEX INDEXED INDICATE INHERITS INITIAL INITIALIZE INITIATE INPUT INPUT-OUTPUT INSERT INSPECT INSTALLATION INTO INVALID INVOKE IS JUST JUSTIFIED KANJI KEY LABEL LAST LEADING LEFT LENGTH LESS LIMIT LIMITS LINAGE LINAGE-COUNTER LINE LINE-COUNTER LINES LINKAGE LOCAL-STORAGE LOCK LOW-VALUE LOW-VALUES MEMORY MERGE MESSAGE METACLASS METHOD METHOD-ID MODE MODULES MORE-LABELS MOVE MULTIPLE MULTIPLY NATIVE NATIVE_BINARY NEGATIVE NEXT NO NOT NULL NULLS NUMBER NUMERIC NUMERIC-EDITED OBJECT OBJECT-COMPUTER OCCURS OF OFF OMITTED ON OPEN OPTIONAL OR ORDER ORGANIZATION OTHER OUTPUT OVERFLOW OVERRIDE PACKED-DECIMAL PADDING PAGE PAGE-COUNTER PASSWORD PERFORM PF PH PIC PICTURE PLUS POINTER POSITION POSITIVE PRINTING PROCEDURE PROCEDURE-POINTER PROCEDURES PROCEED PROCESSING PROGRAM PROGRAM-ID PURGE QUEUE QUOTE QUOTES RANDOM RD READ READY RECEIVE RECORD RECORDING RECORDS RECURSIVE REDEFINES REEL REFERENCE REFERENCES RELATIVE RELEASE RELOAD REMAINDER REMOVAL RENAMES REPLACE REPLACING REPORT REPORTING REPORTS REPOSITORY RERUN RESERVE RESET RETURN RETURN-CODE RETURNING REVERSED REWIND REWRITE RF RH RIGHT ROUNDED RUN SAME SD SEARCH SECTION SECURITY SEGMENT SEGMENT-LIMIT SELECT SELF SEND SENTENCE SEPARATE SEQUENCE SEQUENTIAL SERVICE SET SHIFT-IN SHIFT-OUT SIGN SIZE SKIP1 SKIP2 SKIP3 SORT SORT-CONTROL SORT-CORE-SIZE SORT-FILE-SIZE SORT-MERGE SORT-MESSAGE SORT-MODE-SIZE SORT-RETURN SOURCE SOURCE-COMPUTER SPACE SPACES SPECIAL-NAMES STANDARD STANDARD-1 STANDARD-2 START STATUS STOP STRING SUB-QUEUE-1 SUB-QUEUE-2 SUB-QUEUE-3 SUBTRACT SUM SUPER SUPPRESS SYMBOLIC SYNC SYNCHRONIZED TABLE TALLY TALLYING TAPE TERMINAL TERMINATE TEST TEXT THAN THEN THROUGH THRU TIME TIMES TITLE TO TOP TRACE TRAILING TRUE TYPE UNIT UNSTRING UNTIL UP UPON USAGE USE USING VALUE VALUES VARYING WHEN WHEN-COMPILED WITH WORDS WORKING-STORAGE WRITE WRITE-ONLY ZERO ZEROES ZEROS
+
+Language features
+======================================================
+
+row
+ Feature Fixed Point Numbers
+ FeatureLink ../features/hasFixedPoint.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token TRUE FALSE
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token DISPLAY
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token *>
+ Example
+  MOVE ABC to XYZ  *> This is a comment.
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported X
+ Token 
+ Example

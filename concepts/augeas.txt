@@ -1,0 +1,39 @@
+Augeas
+======
+
+Augeas is an open source programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1256 on PLDB
+17 Years Old
+68 Repos
+
+Augeas is a free software  configuration-management library, written in the C programming language.  It is licensed under the terms of the GNU Lesser General Public License. Augeas uses programs called  lenses (in reference to the Harmony Project) to map a filesystem to an XML tree which can then be parsed using an XPath syntax, using a bidirectional transformation. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Augeas_(software)
+
+- Augeas website
+ http://augeas.net/
+- Augeas Wikipedia page
+ https://en.wikipedia.org/wiki/Augeas_(software)
+- There are at least 68 Augeas repos on GitHub
+- Augeas first developed in Red Hat Software
+- The  Google BigQuery Public Dataset GitHub snapshot shows 265 users using Augeas in 293 repos on GitHub
+- Pygments supports syntax highlighting for Augeas
+- augeas.net was registered in 2008
+- See also: (12 related languages)C, XML, XPath, Python, Ruby, OCaml, Perl, Haskell, Java, PHP, Tcl, Puppet
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example

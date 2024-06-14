@@ -1,0 +1,121 @@
+import ../code/conceptPage.scroll
+
+id yaml
+name YAML
+appeared 2001
+creators Clark Evans and Oren Ben-Kiki and Ingy döt Net
+tags dataNotation
+website http://www.yaml.org/spec/1.2/spec.html#Introduction
+spec https://yaml.org/spec/1.2.2/
+latestVersion 1.2.2
+standsFor YAML Ain't Markup Language
+
+isOpenSource true
+clocExtensions clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql
+fileType text
+documentation https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+monaco yaml
+codeMirror yaml
+centralPackageRepositoryCount 0
+
+pygmentsHighlighter YAML
+ filename data.py
+ fileExtensions yaml yml
+rijuRepl https://riju.codes/yaml
+ example
+  output: "Hello, world!"
+  
+leachim6 YAML
+ filepath y/YAML.yaml
+ fileExtensions yaml
+ example
+  hello: world
+languageServerProtocolProject https://github.com/redhat-developer/yaml-language-server
+ writtenIn typescript
+
+lineCommentToken #
+
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
+hasSets true
+ # Explicitly typed set.
+ baseball players: !!set
+   ? Mark McGwire
+   ? Sammy Sosa
+   ? Ken Griffey
+ # Flow style
+ baseball teams: !!set { Boston Red Sox, Detroit Tigers, New York Yankees }
+
+wikipedia https://en.wikipedia.org/wiki/YAML
+ example
+  ---
+  example: >
+          HTML goes into YAML without modification
+  message: |
+  
+          <blockquote style="font: italic 12pt Times">
+          <p>"Three is always greater than two,
+             even for large values of two"</p>
+          <p>--Author Unknown</p>
+          </blockquote>
+  date: 2007-06-01
+ related json perl python mime c html soap emacs-editor utf-8 asciidoc s-expressions
+ summary YAML (YAML Ain't Markup Language) is a human-readable data serialization language. It is commonly used for configuration files, but could be used in many applications where data is being stored (e.g. debugging output) or transmitted (e.g. document headers). YAML targets many of the same communications applications as XML, but has taken a more minimal approach which intentionally breaks compatibility with SGML. YAML 1.2 is a superset of JSON, another minimalist data serialization format where braces and brackets are used instead of indentation. Custom data types are allowed, but YAML natively encodes scalars (such as strings, integers, and floats), lists, and associative arrays (also known as hashes or dictionaries). These data types are based on the Perl programming language, though all commonly used high-level programming languages share very similar concepts. YAML supports both Python-style indentation to indicate nesting, and a more compact format that uses [] for lists and {} for hashes. The colon-centered syntax used to express key-value pairs is inspired by electronic mail headers as defined in RFC 0822, and the document separator "---" is borrowed from MIME (RFC 2045). Escape sequences are reused from C, and whitespace wrapping for multi-line strings is inspired from HTML. Lists and hashes can contain nested lists and hashes, forming a tree structure; arbitrary graphs can be represented using YAML aliases (similar to XML in SOAP). YAML is intended to be read and written in streams, a feature inspired by SAX. Support for reading and writing YAML is available for several programming languages. Some source code editors such as Emacs and various integrated development environments have features that make editing YAML easier, such as folding up nested structures or automatically highlighting syntax errors.
+ pageId 326530
+ dailyPageViews 1529
+ created 2003
+ backlinksCount 221
+ revisionCount 1089
+ appeared 2001
+
+githubBigQuery YAML
+ repos 13
+ users 12
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 6
+ example
+  ---
+  name: R Console
+  fileTypes: []
+  
+  scopeName: source.r-console
+  uuid: F629C7F3-823B-4A4C-8EEE-9971490C5710
+  patterns:
+  - name: source.r.embedded.r-console
+    begin: "^> "
+    beginCaptures:
+      "0":
+        name: punctuation.section.embedded.r-console
+    end: \n|\z
+    patterns:
+    - include: source.r
+  keyEquivalent: ^~R
+  
+
+isbndb 0
+
+githubLanguage YAML
+ fileExtensions yml mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yamlsed ymlmysql
+ trendingProjectsCount 0
+ type data
+ filenames .clang-format .clang-tidy .gemrc CITATION.cff glide.lock yarn.lock
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
+ aliases yml
+ repos 525
+
+linkedInSkill yaml
+ 2018 6065
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2019|Laughter in the Wild: A Study Into DoS Vulnerabilities in YAML Libraries|10.1109/TrustCom/BigDataSE.2019.00053|1|0|Shawn Rasheed and Jens Dietrich and Amjed Tahir|06a260d68293e8bd8860647df8f9e2336c35d5fb

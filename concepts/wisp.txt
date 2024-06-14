@@ -1,0 +1,125 @@
+wisp
+====
+
+wisp is an open source programming language created in 2012 by Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Santosh%20Rajan
+ https://pldb.io/concepts/../lists/creators.html#q=Irakli%20Gozalishvili
+ https://pldb.io/concepts/../lists/creators.html#q=LeXofLeviafan
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20McCormick
+
+#319 on PLDB
+12 Years Old
+30 Repos
+
+git clone https://github.com/Gozala/wisp
+
+A little Clojure-like LISP in JavaScript
+
+- wisp website
+ https://web.archive.org/web/20201121215216/https://gozala.io/wisp/
+- wisp is developed on GitHub and has 963 stars
+- There are at least 30 wisp repos on GitHub
+- wisp is written in Markdown, JSON, Make, YAML, JavaScript
+- The  Google BigQuery Public Dataset GitHub snapshot shows 17 users using wisp in 23 repos on GitHub
+- GitHub supports syntax highlighting for wisp
+
+(alert &quot;Hello world!&quot;)
+
+;; # wisp
+
+; Wisp is homoiconic JS dialect with a clojure syntax, s-expressions and
+; macros. Wisp code compiles to a human readable javascript, which is one
+; of they key differences from clojurescript.
+
+;; ## wisp data structures
+
+;; 1. nil - is just like js undefined with a differenc that it&#39;s
+;;    not something can be defined. In fact it&#39;s just a shortcut for
+;;    void(0) in JS.
+nil ;; =&gt; void(0)
+
+;; 2. Booleans - Wisp booleans true / false are JS booleans
+
+true ;; =&gt; true
+
+;; 3. Numbers - Wisp numbers are JS numbers
+1  ;; =&gt; 1
+
+;; 4. Strings - Wisp strings are JS Strings
+&quot;Hello world&quot;
+;;    Wisp strings can be multiline
+&quot;Hello,
+My name is wisp!&quot;
+
+;; 5. Characters - Characters are sugar for JS single char strings
+\a  ;; =&gt; &quot;a&quot;
+
+;; 6. Keywords - Keywords are symbolic identifiers that evaluate to
+;;               themselves.
+:keyword  ;; =&gt; &quot;keyword&quot;
+;;    Since in JS string constats fulfill this purpose of symbolic
+;;    identifiers, keywords compile to equivalent JS strings.
+(window.addEventListener :load handler false)
+;;    Keywords can be invoked as functions, that desugars to plain
+;;    associated value access in JS
+(:bar foo) ;; =&gt; foo[&quot;bar&quot;]
+
+;; 7. Vectors - Wisp vectors are JS arrays.
+[ 1 2 3 4 ]
+;;    Note: Commas are white space &amp; can be used if desired
+[ 1, 2, 3, 4]
+
+;; 8. Maps - Maps are hash maps, plain JS objects. Note that unlike
+;;    in clojure keys can not be of arbitary types.
+{ &quot;foo&quot; bar :beep-bop &quot;bop&quot; 1 2 }
+;;    Commas are optional but can come handy for separating key value
+;;    pairs.
+{ a 1, b 2 }
+;; In a future JSONs syntax may be made compatible with map syntax.
+
+;; 9. Lists - You can&#39;t have a lisp without lists! Wisp has lists too.
+;;    Wisp is homoiconic and it&#39;s code is made up of lists representing
+;;    expressions. The first item in the expression is a function, being
+;;    invoked with rest items as arguments.
+(foo bar baz) ; =&gt; foo(bar, baz);
+
+;; # Conventions
+;; Wisp puts a lot of effort in making naming conventions tra
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ; A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token ;
+ Example
+  ; A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

@@ -1,0 +1,59 @@
+JSON-LD
+=======
+
+JSON-LD, aka JavaScript Object Notation for Linked Data, is an open source data validation language created in 2010 by Dave Longley.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Dave%20Longley
+
+#183 on PLDB
+14 Years Old
+0 Repos
+
+git clone https://github.com/digitalbazaar/jsonld.js
+
+JSON-LD (JavaScript Object Notation for Linked Data), is a method of encoding Linked Data using JSON. It was a goal to require as little effort as possible from developers to transform their existing JSON to JSON-LD. This allows data to be serialized in a way that is similar to traditional JSON. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/JSON-LD
+
+- JSON-LD website
+ https://json-ld.org/
+- JSON-LD Wikipedia page
+ https://en.wikipedia.org/wiki/JSON-LD
+- JSON-LD is developed on GitHub and has 1,425 stars
+- There are at least 0 JSON-LD repos on GitHub
+- JSON-LD first developed in https://www.w3.org/2018/json-ld-wg/
+- JSON-LD is written in JavaScript, Markdown, JSON, YAML, IDL, Bourne shell
+- Pygments supports syntax highlighting for JSON-LD
+- GitHub supports syntax highlighting for JSON-LD
+- json-ld.org was registered in 2010
+- 3 languages in PLDB linking to JSON-LD: Microdata HTML, RDF, RDFa
+
+{
+  &quot;@context&quot;: {
+    &quot;property&quot;: &quot;http://example.com/vocab#property&quot;
+  },
+  &quot;@id&quot;: &quot;../document-relative&quot;,
+  &quot;@type&quot;: &quot;#document-relative&quot;,
+  &quot;property&quot;: {
+    &quot;@context&quot;: {
+      &quot;@base&quot;: &quot;http://example.org/test/&quot;
+    },
+    &quot;@id&quot;: &quot;../document-base-overwritten&quot;,
+    &quot;@type&quot;: &quot;#document-base-overwritten&quot;,
+    &quot;property&quot;: [
+      {
+        &quot;@context&quot;: null,
+        &quot;@id&quot;: &quot;../document-relative&quot;,
+        &quot;@type&quot;: &quot;#document-relative&quot;,
+        &quot;property&quot;: &quot;context completely reset, drops property&quot;
+      },
+      {
+        &quot;@context&quot;: {
+          &quot;@base&quot;: null
+        },
+        &quot;@id&quot;: &quot;../document-relative&quot;,
+        &quot;@type&quot;: &quot;#document-relative&quot;,
+        &quot;property&quot;: &quot;only @base is cleared&quot;
+      }
+    ]
+  }
+}

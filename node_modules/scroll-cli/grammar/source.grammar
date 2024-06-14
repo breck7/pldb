@@ -1,0 +1,12 @@
+printSourceParser
+ description Prints out the source code for each file in a group.
+ extends printFeedParser
+ example
+  printSource index
+  permalink source.txt
+ javascript
+  compile() {
+   const file = this.root.file
+   const files = file.getFilesInGroupsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
+   return `${files.map(file => file.filePath + "\n " + file.originalScrollCode.replace(/\n/g, "\n ") ).join("\n")}`
+  }

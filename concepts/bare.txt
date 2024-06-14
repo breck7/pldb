@@ -1,0 +1,56 @@
+BARE
+====
+
+BARE is an interface design language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2259 on PLDB
+4 Years Old
+
+- BARE website
+ https://baremessages.org
+- BARE first developed in Internet Engineering Task Force
+- Pygments supports syntax highlighting for BARE
+- baremessages.org was registered in 2020
+
+type PublicKey data[128]
+type Time str # ISO 8601
+
+type Department enum {
+  ACCOUNTING
+  ADMINISTRATION
+  CUSTOMER_SERVICE
+  DEVELOPMENT
+
+  # Reserved for the CEO
+  JSMITH = 99
+}
+
+type Address list&lt;str&gt;[4] # street, city, state, country
+
+type Customer struct {
+  name: str
+  email: str
+  address: Address
+  orders: list&lt;struct {
+    orderId: i64
+    quantity: i32
+  }&gt;
+  metadata: map&lt;str&gt;&lt;data&gt;
+}
+
+type Employee struct {
+  name: str
+  email: str
+  address: Address
+  department: Department
+  hireDate: Time
+  publicKey: optional&lt;PublicKey&gt;
+  metadata: map&lt;str&gt;&lt;data&gt;
+}
+
+type TerminatedEmployee void
+
+type Person union {Customer | Employee | TerminatedEmployee}
+
+type enum u8 u16 u32 u64 uint i8 i16 i32 i64 int f32 f64 bool void data string optional map

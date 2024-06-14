@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id ten
+name ten
+appeared 2019
+creators Ray Stubbs
+tags pl
+website https://ten-lang.io
+
+fileExtensions ten
+repoStats
+ firstCommit 2019
+ commits 196
+ committers 1
+ files 184
+
+example
+ each( irange( 1, 101 )
+   [ num ]
+     if
+       num % 15 = 0: show"FizzBuzz "
+       num % 3  = 0: show"Fizz "
+       num % 5  = 0: show"Buzz "
+     else
+       show( num, " " )
+ )
+ show( N )
+
+githubRepo https://github.com/ten-lang/libten
+ firstCommit 2019
+ stars 36
+ forks 4
+ subscribers 6
+ created 2019
+ updated 2022
+ description A minimal, consistent, embeddable scripting language.
+ issues 1
+
+domainName ten-lang.io

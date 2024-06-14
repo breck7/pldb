@@ -1,0 +1,28 @@
+json->url
+=========
+
+json->url is an open source json format created in 2017 by Tim Bray.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Tim%20Bray
+
+#1193 on PLDB
+7 Years Old
+
+git clone https://github.com/jsonurl/jsonurl-js
+
+Try now: Web · TIO
+
+JSON->URL defines a text format for the JSON data model suitable for use within a URL/URI (as described by RFC3986). This repository holds the JavaScript reference implementation of JSON->URL.
+
+- json->url website
+ https://jsonurl.org
+- json->url Wikipedia page
+ https://en.wikipedia.org/wiki/JSON%E2%86%92URL
+- json->url is developed on GitHub and has 15 stars
+- json->url docs
+ https://github.com/jsonurl/specification
+- json->url first developed in Textuality Services, Inc.
+- json->url is written in JavaScript, JSON, Markdown, Bourne shell, YAML, TypeScript
+- Read more about json->url on the web: 1. 2.
+ https://www.textuality.com/
+ https://www.rfc-editor.org/rfc/rfc8259

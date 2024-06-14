@@ -1,0 +1,41 @@
+abs
+===
+
+abs is a programming language created in 2018 by Alessandro Nadalin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alessandro%20Nadalin
+
+#845 on PLDB
+6 Years Old
+
+git clone https://github.com/abs-lang/abs
+
+Home of the ABS programming language: the joy of shell scripting.
+
+- abs website
+ https://www.abs-lang.org
+- abs is developed on GitHub and has 461 stars
+- abs is written in JavaScript, Markdown, HTML, Go, Bourne shell, JSON, YAML, Stylus, Make, Dockerfile, SVG, CSS
+- abs-lang.org was registered in 2018
+
+r = $(curl &quot;http://data.nba.net/prod/v1/20170201/0021600732_boxscore.json&quot; -H &#39;DNT: 1&#39; -H &#39;Accept-Encoding: gzip, deflate, sdch&#39; -H &#39;Accept-Language: en&#39; -H &#39;User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36&#39; -H &#39;Accept: */*&#39; -H &#39;Referer: http://stats.nba.com/&#39; -H &#39;Connection: keep-alive&#39; --compressed);
+if !r.ok {
+    echo(&quot;Could not fetch game data. Bummer!&quot;)
+    exit(1)
+}
+doc = r.json()
+arena = doc.basicGameData.arena.name
+city = doc.basicGameData.arena.city
+echo(&quot;The game was played at the %s in %s&quot;, arena, city)
+highlight = doc.basicGameData.nugget.text
+if highlight.len() {
+    echo(&quot;The press said: \&quot;%s\&quot;&quot;, highlight)
+}
+# The game was played at the TD Garden in Boston
+# The press said: &quot;Thomas scores 19 of 44 points in 4th quarter&quot;
+
+HackerNews discussions of abs
+=============================
+
+title|titleLink|date|score|comments
+The ABS programming language|https://news.ycombinator.com/item?id=18755021|12/25/2018|6|3

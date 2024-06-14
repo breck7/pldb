@@ -1,0 +1,34 @@
+Y
+=
+
+Y is a programming language created in 1981.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221981%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2622 on PLDB
+43 Years Old
+
+- Y on HOPL
+ https://hopl.info/showlanguage.prx?exp=982
+- Read more about Y on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/3c3904c1ebf7883312bdba56e581cb3541fa1c90
+
+module helloworld
+
+	define(EOF,(-1))
+	
+	import printf from &quot;ylib.d&quot;
+
+	main()
+		printf(&quot;Hello World\n&quot;)
+	end
+end
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example

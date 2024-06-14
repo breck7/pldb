@@ -1,0 +1,126 @@
+HLSL
+====
+
+HLSL is a programming language created in 2002.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#332 on PLDB
+22 Years Old
+2k Repos
+
+The High-Level Shader Language or High-Level Shading Language (HLSL) is a proprietary shading language developed by Microsoft for the Direct3D 9 API to augment the shader assembly language, and went on to become the required shading language for the unified shader model of Direct3D 10 and higher. HLSL is analogous to the GLSL shading language used with the OpenGL standard. It is very similar to the Nvidia Cg shading language, as it was developed alongside it. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/High-Level_Shading_Language
+
+- HLSL Wikipedia page
+ https://en.wikipedia.org/wiki/High-Level_Shading_Language
+- There are at least 2,093 HLSL repos on GitHub
+- HLSL first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using HLSL in 2k repos on GitHub
+- Pygments supports syntax highlighting for HLSL
+- GitHub supports syntax highlighting for HLSL
+- See also: (2 related languages)OpenGL, Cg
+- Read more about HLSL on the web: 1.
+ https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
+- 6 languages in PLDB linking to HLSL: elena, Emscripten, lobster, MonkeyX, Pygments, SpiderBasic
+
+// The entry point and target profile are needed to compile this example:
+// -T ps_6_6 -E PSMain
+
+struct PSInput
+{
+    float4 position : SV_Position;
+    float4 color    : COLOR0;
+};
+
+float4 PSMain(PSInput input) : SV_Target0
+{
+    return input.color * input.color;
+}
+
+float alpha = 1.f;
+
+texture tex;
+sampler tex_sampler = sampler_state
+{
+	Texture = (tex);
+	MipFilter = LINEAR;
+	MinFilter = LINEAR;
+	MagFilter = LINEAR;
+	
+	AddressU = WRAP;
+	AddressV = WRAP;
+};
+
+struct VS_OUTPUT
+{
+	float4 pos  : POSITION;
+	float2 tex  : TEXCOORD1;
+};
+
+VS_OUTPUT vertex(float4 ipos : POSITION, float2 tex  : TEXCOORD0)
+{
+	VS_OUTPUT Out;
+	Out.pos = ipos;
+	Out.tex = tex * 2;
+	return Out;
+}
+
+float4 pixel(VS_OUTPUT In) : COLOR
+{
+	return tex2D(tex_sampler, In.tex) * alpha;
+}
+
+technique blur_ps_vs_2_0
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vertex();
+		PixelShader  = compile ps_2_0 pixel();
+	}
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example

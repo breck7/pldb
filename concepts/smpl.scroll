@@ -1,0 +1,54 @@
+import ../code/conceptPage.scroll
+
+id smpl
+name Semantic Patch Language
+appeared 2006
+creators Yoann Padioleau
+tags grammarLanguage
+website http://coccinelle.lip6.fr/
+latestVersion 1.1.1
+
+writtenIn ocaml c rescript cpp make tex bourne-shell markdown python perl m4 dockerfile yaml lisp bash hcl vim-script diff c-shell awk json xml html css
+repoStats
+ firstCommit 2006
+ commits 7648
+ committers 84
+ files 5308
+ newestCommit 2024
+country France
+originCommunity Institut national de recherche en sciences et technologies du numérique
+
+githubRepo https://github.com/coccinelle/coccinelle
+ firstCommit 2006
+ stars 489
+ forks 95
+ subscribers 30
+ created 2010
+ updated 2022
+ description Source code of the Coccinelle project (mirror of the main Coccinelle repository located at Inria)
+ issues 205
+
+wikipedia https://en.wikipedia.org/wiki/Coccinelle_(software)
+ summary Coccinelle (French for ladybug) is an open-source utility for matching and transforming the source code of programs written in the C programming language.
+ backlinksCount 13
+ pageId 31592209
+ dailyPageViews 20
+ appeared 2018
+
+domainName coccinelle.lip6.fr
+
+githubBigQuery SmPL
+ repos 120
+ users 114
+
+isbndb 0
+
+githubLanguage SmPL
+ type programming
+ fileExtensions cocci
+ aceMode text
+ tmScope source.smpl
+ aliases coccinelle
+ repos 15
+
+semanticScholar 0

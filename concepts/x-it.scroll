@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id x-it
+name [x]it!
+appeared 2022
+creators Jan Heuermann
+tags dataNotation
+website https://xit.jotaen.net
+
+writtenIn markdown
+relatedConcepts todotxt
+repoStats
+ firstCommit 2022
+ commits 9
+ committers 2
+ files 2
+ newestCommit 2023
+reference https://news.ycombinator.com/item?id=32552782
+
+example
+ [ ] This is an open item
+ [x] This is a checked item
+ [@] This is an ongoing item
+ [~] This is an obsolete item
+
+githubRepo https://github.com/jotaen/xit
+ firstCommit 2022
+ stars 599
+ forks 6
+ subscribers 9
+ created 2022
+ updated 2022
+ description A plain-text file format for todos and check lists
+ issues 0

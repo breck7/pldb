@@ -1,0 +1,66 @@
+import ../code/conceptPage.scroll
+
+id futhark
+name Futhark
+appeared 2013
+creators Troels Henriksen and Cosmin Oancea and Martin Elsman
+tags pl
+website https://futhark-lang.org
+blog https://futhark-lang.org/blog.html
+conceptDescription <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
+
+isOpenSource true
+writtenIn haskell restructuredtext markdown bourne-shell python c yaml nix make javascript json opencl css xml toml yacc logos cuda svg tex
+influencedBy apl
+fileExtensions fut
+clocExtensions fut
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Futhark
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 16744
+ committers 90
+ files 3023
+ newestCommit 2024
+country Denmark
+originCommunity University of Copenhagen
+
+pygmentsHighlighter Futhark
+ filename futhark.py
+ fileExtensions fut
+
+githubRepo https://github.com/diku-dk/futhark
+ firstCommit 2013
+ stars 1814
+ forks 132
+ subscribers 66
+ created 2013
+ updated 2022
+ description :boom::computer::boom: A data-parallel functional programming language
+ issues 53
+
+hasComments true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+
+domainName futhark-lang.org
+ registered 2016
+ awisRank
+  2022 11224882
+  2017 2706803
+
+githubBigQuery Futhark
+ repos 107
+
+isbndb 0
+
+githubLanguage Futhark
+ type programming
+ fileExtensions fut
+ aceMode text
+ tmScope source.futhark
+ repos 92

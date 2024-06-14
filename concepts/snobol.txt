@@ -1,0 +1,85 @@
+SNOBOL
+======
+
+SNOBOL is a programming language created in 1962 by David J. Farber and Ralph E. Griswold.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221962%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20J.%20Farber
+ https://pldb.io/concepts/../lists/creators.html#q=Ralph%20E.%20Griswold
+
+#603 on PLDB
+62 Years Old
+
+Try now: Riju
+
+SNOBOL (StriNg Oriented and symBOlic Language) is a series of computer programming languages developed between 1962 and 1967 at AT&T Bell Laboratories by David J. Farber, Ralph E. Griswold and Ivan P. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SNOBOL
+
+- SNOBOL Wikipedia page
+ https://en.wikipedia.org/wiki/SNOBOL
+- SNOBOL first developed in Bell Telephone Laboratories
+- Explore SNOBOL snippets on Rosetta Code
+- SNOBOL on HOPL
+ https://hopl.info/showlanguage.prx?exp=171
+- ANTLR grammar for SNOBOL
+- Pygments supports syntax highlighting for SNOBOL
+- See also: (18 related languages)SPITBOL, Icon, Lua, COMIT, TRAC, JavaScript, awk, Perl, Regular Expressions, Algol, COBOL, Prolog, APL, BASIC, Fortran, C, Ada, Unicon
+- Read more about SNOBOL on the web: 1.
+ https://archives.lib.umn.edu/repositories/3/resources/302
+
+ OUTPUT = &quot;Hello, world!&quot;
+END
+
+          OUTPUT = &quot;Hello World&quot;
+END
+
+* Hello World in Snobol
+
+        OUTPUT = &quot;Hello World!&quot;
+
+OUTPUT = &quot;This program will ask you for personal names&quot;
+           OUTPUT = &quot;until you press return without giving it one&quot;
+           NameCount = 0                                            :(GETINPUT)
+ AGAIN     NameCount = NameCount + 1
+           OUTPUT = &quot;Name &quot; NameCount &quot;: &quot; PersonalName
+ GETINPUT  OUTPUT = &quot;Please give me name &quot; NameCount + 1
+           PersonalName = INPUT
+           PersonalName LEN(1)                                      :S(AGAIN)
+           OUTPUT = &quot;Finished. &quot; NameCount &quot; names requested.&quot;
+ END
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token OUTPUT
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  * A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token *
+ Example
+  * A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,83 @@
+Latte
+=====
+
+Latte is an open source template language created in 2008 by David Grudl.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Grudl
+
+#443 on PLDB
+16 Years Old
+270 Repos
+
+git clone https://github.com/nette/latte
+
+☕ Latte: the safest & truly intuitive templates for PHP. Engine for those who want the most secure PHP sites.
+
+- Latte website
+ https://latte.nette.org
+- Latte is developed on GitHub and has 825 stars
+- There are at least 270 Latte repos on GitHub
+- Latte first developed in https://github.com/nette
+- Latte is written in PHP, HTML, Markdown, YAML, JSON, XML, Ini
+- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Latte in 26 repos on GitHub
+- GitHub supports syntax highlighting for Latte
+
+{**
+ * @param string $basePath web base path
+ * @param string $robots tell robots how to index the content of a page (optional)
+ * @param array $flashes flash messages
+ *}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+	&lt;meta name=&quot;robots&quot; content=&quot;{$robots}&quot; n:ifset=&quot;$robots&quot;&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+	&lt;title&gt;{ifset $title}{$title} › {/ifset}Translation report&lt;/title&gt;
+
+	&lt;link rel=&quot;stylesheet&quot; media=&quot;screen,projection,tv&quot; href=&quot;{$cdnUrl}/css/style.css?v={$cssHash}&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;{$cdnUrl}/favicon.png&quot;&gt;
+	&lt;!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!--[if lt IE 9]&gt;
+		&lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;script n:syntax=&quot;off&quot;&gt;
+		(function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+		ga(&#39;create&#39;, &#39;UA-33892654-4&#39;, &#39;khanovaskola.cz&#39;);
+		ga(&#39;send&#39;, &#39;pageview&#39;);
+    &lt;/script&gt;
+	{block #head}{/block}
+&lt;/head&gt;
+
+&lt;body class=&quot;amara-guest history-empty&quot;&gt;
+	&lt;script&gt; document.documentElement.className+=&#39; js&#39; &lt;/script&gt;
+
+	{block #navbar}
+		{include _navbar.latte}
+	{/block}
+
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-8 col-md-offset-2&quot; n:inner-foreach=&quot;$flashes as $flash&quot;&gt;
+				{include _flash.latte, flash =&gt; $flash}
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		{include #content}
+	&lt;/div&gt;
+
+	&lt;footer&gt;
+	&lt;/footer&gt;
+
+	&lt;script src=&quot;{$cdnUrl}/js/compiled.js?v={$jsHash}&quot;&gt;&lt;/script&gt;
+	{block #scripts}{/block}
+&lt;/body&gt;
+&lt;/html&gt;

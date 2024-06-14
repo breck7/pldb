@@ -1,0 +1,44 @@
+paragraphParser
+ // todo Perhaps rewrite this from scratch and move out of aftertext.
+ extends abstractAftertextParser
+ catchAllCellType stringCell
+ description A paragraph.
+ cruxFromId
+ javascript
+  compile(compileSettings) {
+   if (this.isHidden) return ""
+   // Hacky, I know.
+   const newLine = this.has("wrapsOn") ? undefined : this.appendLine("wrapsOn")
+   const compiled = super.compile(compileSettings)
+   if (newLine)
+    newLine.destroy()
+   return compiled
+  }
+  compileTextVersion() {
+    const children = this.filter(node => node.compileTextVersion).map(node => node.compileTextVersion()).filter(i => i).join("\n")
+    const dateline = this.getNode("dateline")
+    return (dateline ? dateline.day + "\n\n" : "") + (this.originalText || "") + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
+  }
+
+quickParagraphParser
+ crux *
+ extends paragraphParser
+ example
+  * I had a _new_ idea.
+
+
+indentableParagraphParser
+ extends paragraphParser
+ inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser indentableParagraphParser
+ javascript
+  compile() {
+   return (
+    super.compile() +
+    this.map(node => node.compile())
+     .join("\n")
+     .trim()
+   )
+  }
+  compileTextVersion() {
+    return this.getWord(0) + " " + super.compileTextVersion()
+  }

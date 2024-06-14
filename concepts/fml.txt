@@ -1,0 +1,173 @@
+Fuzzy Markup Language
+=====================
+
+Fuzzy Markup Language, aka Fuzzy Markup Language, is a xml format created in 2004.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2139 on PLDB
+20 Years Old
+
+Fuzzy Markup Language (FML) is a specific purpose markup language based on XML, used for describing the structure and behavior of a fuzzy system independently of the hardware architecture devoted to host and run it.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Fuzzy_markup_language
+
+- Fuzzy Markup Language Wikipedia page
+ https://en.wikipedia.org/wiki/Fuzzy_markup_language
+- Fuzzy Markup Language first developed in University of Salerno
+- See also: (1 related languages)XML
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  ........
+	&lt;xs:complexType name=&quot;KnowledgeBaseType&quot;&gt;
+		&lt;xs:sequence&gt;
+		   &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;
+			   &lt;xs:element name=&quot;FuzzyVariable&quot; type=&quot;FuzzyVariableType&quot;/&gt;
+			   &lt;xs:element name=&quot;TSKVariable&quot; type=&quot;TSKVariableType&quot;/&gt;
+			 &lt;/xs:choice&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;FuzzyVariableType&quot;&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name=&quot;FuzzyTerm&quot; type=&quot;FuzzyTermType&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:attribute name=&quot;name&quot; type=&quot;xs:string&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;defuzzifier&quot; default=&quot;COG&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;MM|COG|COA|WA|Custom&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+		&lt;xs:attribute name=&quot;accumulation&quot; default=&quot;MAX&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;MAX|SUM&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+		&lt;xs:attribute name=&quot;scale&quot; type=&quot;xs:string&quot; /&gt;
+		&lt;xs:attribute name=&quot;domainleft&quot; type=&quot;xs:float&quot;  use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;domainright&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;defaultValue&quot; type=&quot;xs:float&quot; default=&quot;0&quot;/&gt;
+		&lt;xs:attribute name=&quot;type&quot;  default=&quot;input&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;input|output&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;FuzzyTermType&quot;&gt;
+		&lt;xs:choice&gt;
+			&lt;xs:element name=&quot;RightLinearShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;LeftLinearShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;PIShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;TriangularShape&quot; type=&quot;ThreeParamType&quot;/&gt;
+			&lt;xs:element name=&quot;GaussianShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;RightGaussianShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;LeftGaussianShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;TrapezoidShape&quot; type=&quot;FourParamType&quot;/&gt;
+			&lt;xs:element name=&quot;SingletonShape&quot; type=&quot;OneParamType&quot;/&gt;
+			&lt;xs:element name=&quot;RectangularShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;ZShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;SShape&quot; type=&quot;TwoParamType&quot;/&gt;
+			&lt;xs:element name=&quot;UserShape&quot; type=&quot;UserShapeType&quot;/&gt;
+		&lt;/xs:choice&gt;
+        &lt;xs:complexType name=&quot;TwoParamType&quot;&gt;
+		&lt;xs:attribute name=&quot;Param1&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param2&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;ThreeParamType&quot;&gt;
+		&lt;xs:attribute name=&quot;Param1&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param2&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param3&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;FourParamType&quot;&gt;
+		&lt;xs:attribute name=&quot;Param1&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param2&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param3&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;Param4&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;UserShapeType&quot;&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name=&quot;Point&quot; type=&quot;PointType&quot; minOccurs=&quot;2&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;PointType&quot;&gt;
+		&lt;xs:attribute name=&quot;x&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;y&quot; type=&quot;xs:float&quot; use=&quot;required&quot;/&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;RuleBaseType&quot;&gt;
+		&lt;xs:attribute name=&quot;name&quot; type=&quot;xs:string&quot; use=&quot;required&quot;/&gt;
+		&lt;xs:attribute name=&quot;activationMethod&quot; default=&quot;MIN&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;PROD|MIN&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+		&lt;xs:attribute name=&quot;andMethod&quot; default=&quot;MIN&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;PROD|MIN&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+		&lt;xs:attribute name=&quot;orMethod&quot; default=&quot;MAX&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern value=&quot;PROBOR|MAX&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+		&lt;xs:attribute name=&quot;type&quot; use=&quot;required&quot;&gt;
+			&lt;xs:simpleType&gt;
+					&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+						&lt;xs:pattern value=&quot;TSK|Tsk|tsk|Mamdani|mamdani&quot;/&gt;
+					&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;MamdaniRuleBaseType&quot;&gt;
+		&lt;xs:complexContent&gt;
+     		&lt;xs:extension base=&quot;RuleBaseType&quot;&gt;
+				&lt;xs:sequence&gt;
+					&lt;xs:element name=&quot;Rule&quot; type=&quot;MamdaniFuzzyRuleType&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+				&lt;/xs:sequence&gt;
+			&lt;/xs:extension&gt;
+		&lt;/xs:complexContent&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;AntecedentType&quot;&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name=&quot;Clause&quot; type=&quot;ClauseType&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;MamdaniConsequentType&quot;&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name=&quot;Clause&quot; type=&quot;ClauseType&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name=&quot;ClauseType&quot;&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name=&quot;Variable&quot;&gt;
+				&lt;xs:simpleType&gt;
+					&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+						&lt;xs:whiteSpace value=&quot;collapse&quot;/&gt;
+						&lt;xs:pattern value=&quot;(([A-Z])|([a-z]))+([A-Z]|[a-z]|[0-9])*&quot;/&gt;
+					&lt;/xs:restriction&gt;
+				&lt;/xs:simpleType&gt;
+			&lt;/xs:element&gt;
+			&lt;xs:element name=&quot;Term&quot; type=&quot;xs:string&quot;&gt;
+			&lt;/xs:element&gt;
+		&lt;/xs:sequence&gt;
+		&lt;xs:attribute name=&quot;modifier&quot; use=&quot;optional&quot;&gt;
+			&lt;xs:simpleType&gt;
+				&lt;xs:restriction base=&quot;xs:string&quot;&gt;
+					&lt;xs:pattern
+                                            value=&quot;above|below|extremely|intensify|more_or_less|norm|not|plus|slightly|somewhat|very&quot;/&gt;
+				&lt;/xs:restriction&gt;
+			&lt;/xs:simpleType&gt;
+		&lt;/xs:attribute&gt;
+	&lt;/xs:complexType&gt;
+	..........
+&lt;/xs:schema&gt;

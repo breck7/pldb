@@ -1,0 +1,13 @@
+import ../code/conceptPage.scroll
+
+id rdata-format
+name rdata-format
+appeared 2000
+tags binaryDataFormat
+
+fileExtensions Rdata rdata rda RData
+fileType binary
+centralPackageRepositoryCount 0
+country Various
+originCommunity https://github.com/datacamp
+reference https://www.rdocumentation.org/packages/base/versions/3.5.1/topics/save

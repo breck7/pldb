@@ -1,0 +1,42 @@
+TQL
+===
+
+TQL, aka TrueBase Query Language, is an open source query language created in 2023 by Breck Yunits.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits
+
+#1596 on PLDB
+1 Years Old
+
+git clone https://github.com/breck7/truebase
+
+TrueBase - information you can trust. A novel plain text database for collaborative narrative-free knowledge graphs.
+
+- TQL website
+ https://truebase.pub/tql/
+- TQL is developed on GitHub and has 7 stars
+- TQL is written in Grammar, JavaScript
+
+where appeared &gt; 2009
+where appeared &lt; 2020
+notMissing githubRepo_stars
+where type = pl
+sortBy githubRepo_stars
+select githubRepo_stars
+reverse
+
+Language features
+======================================================
+
+row
+ Feature hasBuiltInRegex
+ FeatureLink ../features/hasBuiltInRegex.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported ✓
+ Token 
+ Example

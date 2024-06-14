@@ -1,0 +1,76 @@
+Djot
+====
+
+Djot is an open source text markup language created in 2022 by John MacFarlane.
+ https://pldb.io/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/creators.html#q=John%20MacFarlane
+
+#456 on PLDB
+2 Years Old
+
+git clone https://github.com/jgm/djot
+
+Try now: Web
+
+A light markup language
+
+- Djot website
+ https://djot.net
+- Djot is developed on GitHub and has 773 stars
+- Djot docs
+ https://github.com/jgm/djot/blob/main/README.md
+- Djot first developed in https://github.com/jgm/djot/issues
+- Djot is written in Markdown, HTML, Vim script, Make, CSS, Lua, YAML
+- Read more about Djot on the web: 1.
+ https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html
+
+_italic_
+*bold*
+`code`
+H~2~O
+20^th^
+{=highlighted=}
+{+underlined+}
+{-strikethrough-}
+importOnly
+
+p = mv`
+ $`E = K + U`
+ Start a new paragraph with a blank line.
+ &gt; A blockquote
+ {% look like this
+ and can span multiple lines %}
+ # Horizontal lines:
+ ***
+ ---
+ Verbatim blocks:
+ ```
+ $ tree
+ .
+ ├── aa
+ │   └── foo.txt
+ ├── bb
+ │   └── bar.txt
+ └── c.png
+ ```
+ ```myLang
+ func say-hello(nm) {
+     print(&quot;hello ${nm}!&quot;);
+ }
+ ```
+ Links:
+ &lt;https://example.com&gt;
+ [read more](https://example.com)
+ [read this too][foo bar]
+ [one more link][]
+ ![beautiful skyline](clouds.jpg)
+ ![coastal shores][shore]
+ ![lush forests][]
+ [shore]: the-beach.jpg
+ [lush forests]: pines.jpg
+ # Tables
+ | Name | Size | Color |
+ | --- | --- | --- |
+ | lime | small | green |
+ | orange | medium | orange |
+ | grapefruit | large | yellow or pink |

@@ -1,0 +1,118 @@
+Classroom Object Oriented Language
+==================================
+
+Classroom Object Oriented Language, aka Classroom Object Oriented Language, is a programming language created in 1996 by Alexander Aiken.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Aiken
+
+#621 on PLDB
+28 Years Old
+102 Repos
+
+Cool, an acronym for Classroom Object Oriented Language, is a computer programming language designed by Alexander Aiken for use in an undergraduate compiler course project. While small enough for a one term project, Cool still has many of the features of modern programming languages, including objects, automatic memory management, strong static typing and simple reflection. The reference Cool compiler is written in C++, built fully on the public domain tools. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cool_(programming_language)
+
+- Classroom Object Oriented Language Wikipedia page
+ https://en.wikipedia.org/wiki/Cool_(programming_language)
+- There are at least 102 Classroom Object Oriented Language repos on GitHub
+- Classroom Object Oriented Language first developed in Stanford University
+- The  Google BigQuery Public Dataset GitHub snapshot shows 56 users using Classroom Object Oriented Language in 57 repos on GitHub
+- GitHub supports syntax highlighting for Classroom Object Oriented Language
+- See also: (7 related languages)CLIPS, Sather, Java, ML, Pascal, OCaml, MIPS architecture
+
+class Main inherits IO {
+   main(): Object {
+	out_string(&quot;Hello World.\n&quot;)
+   };
+};
+
+(* This simple example of a list class is adapted from an example in the
+   Cool distribution. *)
+
+class List {
+   isNil() : Bool { true };
+   head()  : Int { { abort(); 0; } };
+   tail()  : List { { abort(); self; } };
+   cons(i : Int) : List {
+      (new Cons).init(i, self)
+   };
+};
+
+class Cons inherits List {
+   car : Int;	-- The element in this list cell
+   cdr : List;	-- The rest of the list
+   isNil() : Bool { false };
+   head()  : Int { car };
+   tail()  : List { cdr };
+   init(i : Int, rest : List) : List {
+      {
+	 car &lt;- i;
+	 cdr &lt;- rest;
+	 self;
+      }
+   };
+};
+
+class Main inherits IO {
+  main(): Object {{
+    out_string(&quot;Enter an integer greater-than or equal-to 0: &quot;);
+
+    let input: Int &lt;- in_int() in
+      if input &lt; 0 then
+        out_string(&quot;ERROR: Number must be greater-than or equal-to 0\n&quot;)
+      else {
+        out_string(&quot;The factorial of &quot;).out_int(input);
+        out_string(&quot; is &quot;).out_int(factorial(input));
+        out_string(&quot;\n&quot;);
+      }
+      fi;
+  }};
+
+  factorial(num: Int): Int {
+    if num = 0 then 1 else num * factorial(num - 1) fi
+  };
+};
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token (* *)
+ Example
+  (* A comment
+  *)
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token out_string
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

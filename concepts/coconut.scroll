@@ -1,0 +1,89 @@
+import ../code/conceptPage.scroll
+
+id coconut
+name Coconut
+appeared 2014
+tags pl
+website http://coconut-lang.org/
+latestVersion v3.1.0
+webRepl https://cs121-team-panda.github.io/coconut-interpreter/
+
+isOpenSource true
+writtenIn python yaml markdown json make restructuredtext toml
+compilesTo python
+tryItOnline coconut
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2014
+ commits 5238
+ committers 37
+ files 95
+ newestCommit 2024
+country Various
+originCommunity http://coconut-lang.org
+reference https://news.ycombinator.com/item?id=23759721
+
+rijuRepl https://riju.codes/coconut
+ example
+  print("Hello, world!")
+  
+ description Simple, elegant, Pythonic functional programming
+ fileExtensions coco
+ website https://coconut-lang.org/
+ gitRepo https://github.com/evhub/coconut
+leachim6 Coconut
+ filepath c/Coconut.coc
+ fileExtensions coc
+ example
+  "Hello World" |> print
+  
+
+githubRepo https://github.com/evhub/coconut
+ stars 3495
+ forks 104
+ subscribers 63
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description Simple, elegant, Pythonic functional programming.
+ issues 71
+
+printToken print
+stringToken "
+
+hasPatternMatching true
+ match [head] + tail in [0, 1, 2, 3]:
+    print(head, tail)
+hasInfixNotation true
+ 5 `mod` 3 == 2
+hasAnonymousFunctions true
+ x -> x ** 2
+hasDestructuring true
+ {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
+hasFunctionComposition true
+ (f..g..h)(x, y, z)
+hasAlgebraicTypes true
+ data Empty()
+ data Leaf(n)
+ data Node(l, r)
+ 
+ def size(Empty()) = 0
+ 
+ addpattern def size(Leaf(n)) = 1
+ 
+ addpattern def size(Node(l, r)) = size(l) + size(r)
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+jupyterKernel http://coconut-lang.org/
+
+domainName coconut-lang.org
+ registered 2016
+ awisRank
+  2017 4032050
+
+isbndb 0
+
+semanticScholar 0

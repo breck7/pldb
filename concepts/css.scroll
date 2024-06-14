@@ -1,0 +1,283 @@
+import ../code/conceptPage.scroll
+
+id css
+name CSS
+appeared 1996
+creators Håkon Wium Lie
+tags stylesheetLanguage
+website https://www.w3.org/Style/CSS/
+spec https://www.w3.org/Style/CSS/specs.en.html
+latestVersion css3
+webRepl https://playcode.io/css/
+standsFor Cascading Style Sheets
+maintainerOrganization W3C
+
+isOpenSource true
+clocExtensions css
+fileType text
+wordRank 3840
+documentation https://devdocs.io/css/
+antlr https://github.com/antlr/grammars-v4/tree/master/css3
+monaco css
+codeMirror css
+centralPackageRepositoryCount 0
+country Switzerland
+originCommunity Conseil Européen pour la Recherche Nucléaire
+reference https://examples.p6c.dev/categories/parsers/CSSGrammar.html
+
+helloWorldCollection Cascading Style Sheets
+ /* Hello World in CSS */
+ body:before {
+     content: "Hello World";
+ }
+ 
+pygmentsHighlighter CSS
+ filename css.py
+ fileExtensions css
+leachim6 CSS
+ filepath c/CSS.css
+ fileExtensions css
+ example
+  body::before {
+      content: "Hello World";
+  }
+  
+
+meetup https://www.meetup.com/topics/css
+ memberCount 608659
+ groupCount 963
+
+multiLineCommentTokens /* */
+stringToken "
+
+hasEnums false
+hasMixins false
+canWriteToDisk false
+hasImports true
+ @import 'custom.css';
+hasFunctions false
+hasTernaryOperators false
+hasLineComments false
+hasComments true
+ /* This is a single-line comment */ p { color: red; }
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+ example
+  body {
+     overflow: hidden;
+     background: #000000;
+  }
+ related html javascript webgl xml svg xpath
+ summary Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content. Separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. It can also display the web page differently depending on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author specified. Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents. The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
+ pageId 23290197
+ dailyPageViews 1937
+ created 2001
+ backlinksCount 7498
+ revisionCount 3840
+ appeared 1996
+
+githubBigQuery CSS
+ repos 808537
+ users 505671
+
+linguistGrammarRepo https://github.com/atom/language-css
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 48
+ commitCount 418
+ sampleCount 2
+ example
+  /*!
+   * Bootstrap v2.3.1
+   *
+   * Copyright 2012 Twitter, Inc
+   * Licensed under the Apache License v2.0
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Designed and built with all the love in the world @twitter by @mdo and @fat.
+   */
+  .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+  .clearfix:after{clear:both;}
+  .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
+  .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+  article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+  audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+  audio:not([controls]){display:none;}
+  html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+  a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+  a:hover,a:active{outline:0;}
+  sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;}
+  sup{top:-0.5em;}
+  sub{bottom:-0.25em;}
+  img{max-width:100%;width:auto\9;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+  #map_canvas img,.google-maps img{max-width:none;}
+  button,input,select,textarea{margin:0;font-size:100%;vertical-align:middle;}
+  button,input{*overflow:visible;line-height:normal;}
+  button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
+  button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+  label,select,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"]{cursor:pointer;}
+  input[type="search"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}
+  input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
+  textarea{overflow:
+
+isbndb 101
+ year|publisher|title|authors|isbn13
+ 2005|O'Reilly Media|Head First Html With CSS & XHTML|Eric Freeman and Elisabeth Freeman and Elisabeth Robson|9780596101978
+ 2010|O'Reilly Media|CSS Cookbook, 3rd Edition (Animal Guide)|Christopher Schmitt|9780596155933
+ 2010|Course Technology, Cengage Learning|Blended Html, Xhtml, and CSS|Henry Bojack|9780538746335
+ 2006|Apress|Pro CSS Techniques (Expert's Voice)|Rubin, Dan and Lloyd, Ian and Croft, Jeffrey|9781590597323
+ 2004|Peachpit Press|DHTML and CSS Advanced: Visual QuickPro Guide|Teague, Jason Cranford|9780321266910
+ 2004|Wiley|HTML, XHTML, and CSS Bible (Bible) 3rd Edition|Pfaffenberger, Bryan and Schafer, Steven M. and White, Chuck and Karow, Bill|9780764557392
+ 2004|Wrox|Beginning Web Programming with HTML, XHTML, and CSS (Wrox Beginning Guides)|Duckett, Jon|9780764570780
+ 2009|McGraw-Hill Education|HTML, XHTML & CSS QuickSteps|Hart-Davis, Guy|9780071633178
+ 2017|Independently published|Programming: Python Programming, JAVA Programming, HTML and CSS Programming for Beginners|Academy, iCode|9781520676081
+ 2010|Sams Publishing|Sams Teach Yourself Web Publishing with HTML and CSS in One Hour a Day: Includes New HTML5 Coverage|Lemay, Laura and Colburn, Rafe|9780672331367
+ 20061017|O'Reilly Media, Inc.|CSS Cookbook|Christopher Schmitt|9780596554682
+ 2017|Packt Publishing|Enduring CSS|Frain, Ben|9781787284531
+ 2014|Apress|CSS Quick Syntax Reference|Olsson, Mikael|9781430264910
+ 20071018|Springer Nature|Beginning HTML with CSS and XHTML|Craig Cook; David Schultz|9781430203506
+ 2015|Apress|Beginning CSS Preprocessors: With SASS, Compass.js and Less.js|Prabhu, Anirudh|9781484213476
+ 2008|Apress|The Essential Guide to CSS and HTML Web Design (Essentials)|Grannell, Craig|9781430204794
+ 2011|Apress|Pro CSS for High Traffic Websites (Expert's Voice in Web Design)|Kennedy, Antony and de Leon, Inayaili|9781430232896
+ 2013|Apress|CSS for Windows 8 App Development (Expert's Voice in Windows 8)|Foster, Jeremy|9781430249849
+ 2020|Packt Publishing|Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques, 3rd Edition|Frain, Ben|9781839219795
+ 2022|SitePoint|Tailwind CSS|Gerchev, Ivaylo|9781098140991
+ 2020|Independently published|Coding for Kids Ages 9-15: Simple HTML, CSS and JavaScript lessons to get you started with Programming from Scratch|Mather, Bob|9798644382446
+ 2020|Apress|Modern CSS: Master the Key Concepts of CSS for Modern Web Development|Attardi, Joe|9781484262948
+ 2014|Adobe Press|CSS Animations and Transitions for the Modern Web|Bradley, Steven|9780133980547
+ 2013|O'Reilly Media|CSS Text: Styling Your Words|Meyer, Eric A.|9781449373740
+ 2021|Independently published|Coding for Absolute Beginners: Master the Basics of Computer Programming with Python, Java, SQL, C, C++, C#, HTML, and CSS|Warner, Andrew|9798543586372
+ 2014|Sams Publishing|HTML, CSS and JavaScript All in One, Sams Teach Yourself: Covering HTML5, CSS3, and jQuery|Meloni, Julie C.|9780133795189
+ 2011|For Dummies|HTML, XHTML and CSS For Dummies|Tittel, Ed and Noble, Jeff|9780470916599
+ 2019|Manning|Web Design Playground: HTML & CSS The Interactive Way|McFedries, Paul|9781638350590
+ 2015|No Starch Press|Build an HTML5 Game: A Developer's Guide with CSS and JavaScript|Bunyan, Karl|9781593275754
+ 2014|O'Reilly Media|Learning PHP, MySQL, JavaScript, CSS & HTML5: A Step-by-Step Guide to Creating Dynamic Websites|Nixon, Robin|9781491949467
+ 2012|Cengage Learning|New Perspectives on Blended HTML and CSS Fundamentals: Introductory|Bojack, Henry and Scollard, Sharon|9781285414652
+ 2016|CreateSpace Independent Publishing Platform|Programming: Computer Programming For Beginners: Learn The Basics Of HTML5, JavaScript & CSS (Coding, C Programming, Java Programming, Web Design, JavaScript, Python, HTML and CSS)|Connor, Joseph|9781541006225
+ 2017|CreateSpace Independent Publishing Platform|Computer Programming For Beginners: Learn The Basics of Java, SQL, C, C++, C#, Python, HTML, CSS and Javascript|Alvin, Cooper|9781981497805
+ 2011|New Riders|CSS for Print Designers|Graffam, J. D.|9780321765888
+ 2017|Apress|CSS Mastery: Advanced Web Standards Solutions|Collison, Simon and Budd, Andy and Moll, Cameron|9781430223986
+ 2017|Independently published|HTML & CSS For Beginners: Your Step by Step Guide to Easily HtmL & Css Programming in 7 Days|Academy, iCode|9781520561400
+ 2010|Mike Murach & Associates|Murach's HTML, XHTML, and CSS|Anne Boehm|9781890774578
+ 2009|Apress|AdvancED CSS|Lewis, Joe and Moscovitz, Meitar|9781430219330
+ 2006|O'Reilly Media|CSS Cookbook (Cookbooks (O'Reilly))|Schmitt, Christopher|9780596527419
+ 2015|McGraw Hill|CSS & CSS3: 20 Lessons to Successful Web Development: 20 Lessons to Successful Web Development [ENHANCED EBOOK]|Nixon, Robin|9780071850216
+ 2008|Wrox|Beginning Web Programming with HTML, XHTML, and CSS|Duckett, Jon|9780470259313
+ 2008|For Dummies|HTML, XHTML, and CSS All-in-One Desk Reference For Dummies|Harris, Andy and McCulloh, Chris|9780470186275
+ 2005-07-01T00:00:01Z|Teora USA, LLC|HTML, XHTML, CSS and XML by Example: A Practical Guide (By Example Series)|Teodoru Gugoiu|9781594960376
+ 2018|Apress|CSS Framework Alternatives: Explore Five Lightweight Alternatives to Bootstrap and Foundation with Project Examples|Shenoy, Aravind and Prabhu, Anirudh|9781484233993
+ 2017|Chapman and Hall/CRC|Introduction to Web Interaction Design: With HTML and CSS|Macaulay, Michael|9781138911857
+ 2008|Apress|HTML and CSS Web Standards Solutions: A Web Standardistas' Approach|Persson, Nicklas and Murphy, Christopher|9781430216063
+ 2007|Apress|Beginning HTML with CSS and XHTML: Modern Guide and Reference (Beginning: from Novice to Professional)|Cook, Craig and Schultz, David|9781590597477
+ 2009|Wrox|Beginning JavaScript and CSS Development with jQuery|York, Richard|9780470227794
+ 2018|Independently published|HTML, CSS & JavaScript for Complete Beginners: A Step by Step Guide to Learning HTML5, CSS3 and the JavaScript Programming Language|Hawramani, Ikram|9781790591848
+ 2007|Sybex|Mastering Integrated HTML and CSS|DeBolt, Virginia|9780470097540
+ 2007|Thomson Course Technology|New Perspectives on Blended HTML, XHTML, and CSS|Bojack, Henry|9781423906513
+ 2009|Apress|Getting StartED with CSS|Powers, David|9781430225430
+ 2003|Wiley|JavaScript: A Programmer's Companion from Basic through DHTML, CSS and DOM|Koch, Stefan|9780470847046
+ 2020-02-28T00:00:01Z|Elluminet Press|HTML & CSS for Beginners: Learn the Fundamentals of Computer Programming (1) (Essential Coding)|Foster, Jo|9781913151140
+ 2001|Prentice Hall|Essential CSS and DHTML for Web Professionals (2nd Edition)|Livingston, Dan|9780130649959
+ 2015|CreateSpace Independent Publishing Platform|Html & CSS Programming: The Ultimate guide on How you can write Html and CSS in Under 10 Hours|Dawson, Ted|9781519536709
+ 2019-09-03T00:00:01Z|Independently published|You Are The Css To My Html: Size 6 x 9 inch - 120 Pages - Lined (Ruled) Notebook/Journal|Journal, Programming and Coding Lovers|9781690768128
+ 43014|Packt Publishing|Mastering CSS|Rich Finelli|9781787120570
+ 2013|lulu.com|Html & Css Programming Guide|Ramasamy, Venkatesh|9781304699787
+ 20160613|O'Reilly Media, Inc.|Table Layout in CSS|Eric A. Meyer|9781491930489
+ 2015-08-21T00:00:01Z|Lulu.com|CSS Programming Professional Made Easy|Key, Sam|9781329461710
+ 2019|Independently published|Source Code: Path to Programming CSS|Society, Source Code|9781090804709
+ 20160912|Springer Nature|ASP.NET MVC with Entity Framework and CSS|Lee Naylor|9781484221372
+ 2021|Jacob Parker|HTML & CSS: The Simplified Beginners Guide to build your websites and Easily Html & CSS Programming in 7 Days|Parker, Jacob|9781803060545
+ 2008T|Wiley|Beginning Web Programming With Html, Xhtml, And Css|Jon Duckett|9788126516971
+ 2015|CreateSpace Independent Publishing Platform|Python Programming In A Day & CSS Programming Professional Made Easy|Key, Sam|9781511454568
+ 2015|CreateSpace Independent Publishing Platform|C++ Programming Professional Made Easy & CSS Programming Professional Made Easy|Key, Sam|9781517222819
+ 2014|Tsinghua University Press|HTML 5 and CSS 3 programming from basic to applied (with DVD-ROM disc 1)(Chinese Edition)|ZHU HONG TAO . ZHAO XI LAI|9787302317999
+ 20110223|Hachette|Css|Fabien Basmaison; Antoine Cailliau|9782822409711
+ 2007|Eyrolles|Css 2|Raphaël Goetter|9782212850734
+ 20160726|Springer Nature|CSS Mastery|Andy Budd; Emil Björklund|9781430258643
+ 2007|Wiley & Sons, Incorporated, John|Beginning Css|Richard York|9780470175071
+ 20150604|O'Reilly Media, Inc.|CSS Secrets|Lea Verou|9781449372767
+ 20130821|O'Reilly Media, Inc.|CSS Text|Eric A. Meyer|9781449373771
+ 20181011|O'Reilly Media, Inc.|CSS Master|Tiffany B Brown|9781492071013
+ 20160113|O'Reilly Media, Inc.|CSS Floating|Eric A. Meyer|9781491929612
+ 20181022|O'Reilly Media, Inc.|Modern CSS|Craig Buckler; Ilya Bodrov-Krukowski; Claudio Ribeiro; Tiffany B Brown; David Attard; Ahmed Bouchefr|9781492069973
+ 20130821|O'Reilly Media, Inc.|CSS Text|Eric A. Meyer|9781449373788
+ 20210815|O'Reilly Media, Inc.|CSS Master|Tiffany B Brown|9781098129484
+ 20160113|O'Reilly Media, Inc.|CSS Floating|Eric A. Meyer|9781491929599
+ 20200515|Springer Nature|Architecting CSS|Martine Dowden; Michael Dowden|9781484257500
+ 20150604|O'Reilly Media, Inc.|CSS Secrets|Lea Verou|9781449372774
+ 20091215|O'Reilly Media, Inc.|CSS Cookbook|Christopher Schmitt|9781449389055
+ 20091215|O'Reilly Media, Inc.|CSS Cookbook|Christopher Schmitt|9781449382940
+ 2017|Createspace Independent Publishing Platform|Html And Css|Micheal Knapp|9781542829908
+ 20160413|O'Reilly Media, Inc.|Positioning in CSS|Eric A. Meyer|9781491930328
+ 20130912|O'Reilly Media, Inc.|Jump Start CSS|Louis   Lazaris|9781457192258
+ 20130912|O'Reilly Media, Inc.|Jump Start CSS|Louis   Lazaris|9781457192265
+ 20180308|Simon & Schuster|CSS in Depth|Keith Grant|9781638355861
+ 20180402|O'Reilly Media, Inc.|CSS Pocket Reference|Eric Meyer|9781492033349
+ 20170525|O'Reilly Media, Inc.|Flexbox in CSS|Estelle Weyl|9781491981436
+ 2017|CreateSpace Independent Publishing Platform|Html & Css For Beginners|iCode Academy|9781535236102
+ 2009|Prentice Hall|CSS Fundamentals [With DVD]|Montoya and Christian|9780137043835
+ 2022-04-22|Elluminet Press|HTML& CSS for Beginners|Jo Foster|9781913151706
+ 20071222|Springer Nature|Beginning CSS Web Development|Simon Collison|9781430202257
+ 20210125|ClydeBank Media|HTML & CSS QuickStart Guide|David DuRocher|9781636100029
+ 11/2021|Mike Murach & Associates|Murach's HTML and CSS|Zak Ruvalcaba, Anne Boehm|9781943872886
+ 20210505|O'Reilly Media, Inc.|Modern CSS with Tailwind|Noel Rappin|9781680508574
+ 20181022|O'Reilly Media, Inc.|The Advanced CSS Collection|Craig Buckler; Ilya Bodrov-Krukowski; Claudio Ribeiro; Tiffany B Brown; David Attard; Ahmed Bouchefr|9781492069898
+ 20100325|Springer Nature|Getting StartED with CSS|David Powers|9781430225447
+ 2019|Anak Hebat Indonesia|Buku Sakti Html, Css & Javascript|Adam Saputra, S.Si.|9786232443723
+
+githubLanguage CSS
+ fileExtensions css
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  LanikSJ slack-dark-mode https://github.com/LanikSJ.png https://github.com/LanikSJ/slack-dark-mode CSS #563d7c 425 52 202 "Slack Dark Mode for macOS Desktop"
+  Cyb3rWard0g HELK https://github.com/Cyb3rWard0g.png https://github.com/Cyb3rWard0g/HELK CSS #563d7c 1743 327 110 "The Hunting ELK"
+  microsoft TypeScript-Node-Starter https://github.com/microsoft.png https://github.com/microsoft/TypeScript-Node-Starter CSS #563d7c 5908 1323 307 "A starter template for TypeScript and Node with a detailed README describing how to use the two together."
+  UndeadSec SocialFish https://github.com/UndeadSec.png https://github.com/UndeadSec/SocialFish CSS #563d7c 1216 441 97 "Educational Phishing Tool & Information Collector"
+  jonasschmedtmann advanced-css-course https://github.com/jonasschmedtmann.png https://github.com/jonasschmedtmann/advanced-css-course CSS #563d7c 1413 1726 86 "Starter files, final projects and FAQ for my Advanced CSS course"
+  necolas normalize.css https://github.com/necolas.png https://github.com/necolas/normalize.css CSS #563d7c 36137 7356 423 "A modern alternative to CSS resets"
+  vinceliuice Mojave-gtk-theme https://github.com/vinceliuice.png https://github.com/vinceliuice/Mojave-gtk-theme CSS #563d7c 352 71 58 "Mojave is a macos Mojave like theme for GTK 3, GTK 2 and Gnome-Shell"
+  nikitavoloboev my-mac-os https://github.com/nikitavoloboev.png https://github.com/nikitavoloboev/my-mac-os CSS #563d7c 15117 629 171 "List of applications and tools that make my macOS experience even more amazing"
+  jgthms bulma https://github.com/jgthms.png https://github.com/jgthms/bulma CSS #563d7c 36439 2965 550 "Modern CSS framework based on Flexbox"
+  rstacruz cheatsheets https://github.com/rstacruz.png https://github.com/rstacruz/cheatsheets CSS #563d7c 7217 1704 226 "My cheatsheets"
+  troxler awesome-css-frameworks https://github.com/troxler.png https://github.com/troxler/awesome-css-frameworks CSS #563d7c 2026 151 99 "List of awesome CSS frameworks"
+  pmarsceill just-the-docs https://github.com/pmarsceill.png https://github.com/pmarsceill/just-the-docs CSS #563d7c 847 420 80 "A modern, high customizable, responsive Jekyll theme for documention with built-in search."
+  tailwindcss tailwindcss https://github.com/tailwindcss.png https://github.com/tailwindcss/tailwindcss CSS #563d7c 14288 666 761 "A utility-first CSS framework for rapid UI development."
+  StylishThemes GitHub-Dark https://github.com/StylishThemes.png https://github.com/StylishThemes/GitHub-Dark CSS #563d7c 5847 421 215 "Dark GitHub style"
+  ryanoasis nerd-fonts https://github.com/ryanoasis.png https://github.com/ryanoasis/nerd-fonts CSS #563d7c 16392 1030 650 "Iconic font aggregator, collection, & patcher. 3,600+ icons, 40+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more"
+  BlackrockDigital startbootstrap-sb-admin https://github.com/BlackrockDigital.png https://github.com/BlackrockDigital/startbootstrap-sb-admin CSS #563d7c 2234 1587 29 "A free, open source, Bootstrap admin theme created by Start Bootstrap"
+  DMQ mvvm https://github.com/DMQ.png https://github.com/DMQ/mvvm CSS #563d7c 3821 942 113 剖析vue实现原理，自己动手实现mvvm
+  BNDong Cnblogs-Theme-SimpleMemory https://github.com/BNDong.png https://github.com/BNDong/Cnblogs-Theme-SimpleMemory CSS #563d7c 300 256 67 "🍭 Cnblogs theme / Basic theme : SimpleMemory"
+  uikit uikit https://github.com/uikit.png https://github.com/uikit/uikit CSS #563d7c 14876 2128 144 "A lightweight and modular front-end framework for developing fast and powerful web interfaces"
+  BlackrockDigital startbootstrap-sb-admin-2 https://github.com/BlackrockDigital.png https://github.com/BlackrockDigital/startbootstrap-sb-admin-2 CSS #563d7c 7083 4238 166 "A free, open source, Bootstrap admin theme created by Start Bootstrap"
+  theme-next hexo-theme-next https://github.com/theme-next.png https://github.com/theme-next/hexo-theme-next CSS #563d7c 3901 1230 248 "Elegant and powerful theme for Hexo."
+  microsoft azuredevopslabs https://github.com/microsoft.png https://github.com/microsoft/azuredevopslabs CSS #563d7c 200 146 19 "Learn how you can plan smartly, collaborate better, and ship faster with a set of modern development services with Azure DevOps."
+  Tencent weui.js https://github.com/Tencent.png https://github.com/Tencent/weui.js CSS #563d7c 2546 837 42 "A lightweight javascript library for WeUI."
+  daneden animate.css https://github.com/daneden.png https://github.com/daneden/animate.css CSS #563d7c 61860 13095 738 "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
+  kitian616 jekyll-TeXt-theme https://github.com/kitian616.png https://github.com/kitian616/jekyll-TeXt-theme CSS #563d7c 833 788 65 "💎 🐳 A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc."
+ trendingProjectsCount 26
+ type markup
+ aceMode css
+ codemirrorMode css
+ codemirrorMimeType text/css
+ tmScope source.css
+ repos 4446834
+
+indeedJobs css developer
+ 2017 16898
+linkedInSkill css
+ 2018 2871891
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2016|An Empirical Study on the Use of CSS Preprocessors|10.1109/SANER.2016.18|22|1|D. Mazinanian and Nikolaos Tsantalis|c064a3f1e0d9d086baa50433435f884905e15177
+ 2018|CSS Preprocessing: Tools and Automation Techniques|10.3390/info9010017|3|0|R. Queirós|6f85bbca627498fa404f6f705b3000ca0155c989
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTML, XHTML & CSS for Dummies|2008|Ed Tittel|2557278|3.55|109|14

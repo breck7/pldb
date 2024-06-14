@@ -1,0 +1,121 @@
+Shen
+====
+
+Shen is a programming language created in 2011 by Mark Tarver.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mark%20Tarver
+
+#416 on PLDB
+13 Years Old
+50 Repos
+
+git clone https://github.com/Shen-Language/shen-sources
+
+Shen language kernel sources for porters
+
+- Shen website
+ http://shenlanguage.org/
+- Shen is developed on GitHub and has 344 stars
+- Shen mailing list
+ https://groups.google.com/g/qilang
+- There are at least 50 Shen repos on GitHub
+- Shen first developed in https://github.com/Shen-Language
+- Shen is written in Markdown, SVG, Make
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14 users using Shen in 16 repos on GitHub
+- Explore Shen snippets on Rosetta Code
+- Pygments supports syntax highlighting for Shen
+- GitHub supports syntax highlighting for Shen
+- shenlanguage.org was registered in 2011
+
+(pr &quot;Hello World&quot;)
+
+\\ Hello world in Shen
+
+(0-) (pr &quot;hello world&quot;)
+
+(load &quot;grammar.shen&quot;)
+
+\*
+
+JSON Lexer
+
+1. Read a stream of characters
+2. Whitespace characters not in strings should be discarded.
+3. Whitespace characters in strings should be preserved
+4. Strings can contain escaped double quotes. e.g. &quot;\&quot;&quot;
+
+*\
+
+(define whitespacep
+  \* e.g. ASCII 32 == #\Space. *\
+  \* All the others are whitespace characters from an ASCII table. *\
+  Char -&gt; (member Char [&quot;c#9;&quot; &quot;c#10;&quot; &quot;c#11;&quot; &quot;c#12;&quot; &quot;c#13;&quot; &quot;c#32;&quot;]))
+
+(define replace-whitespace
+  &quot;&quot; -&gt; &quot;&quot;
+  (@s Whitespace Suffix) -&gt; (@s &quot;&quot; (replace-whitespace Suffix)) where (whitespacep Whitespace)
+  (@s Prefix Suffix) -&gt; (@s Prefix (replace-whitespace Suffix)))
+
+(define fetch-until-unescaped-doublequote
+  [] -&gt; []
+  [&quot;\&quot; &quot;c#34;&quot; | Chars] -&gt; [&quot;\&quot; &quot;c#34;&quot; | (fetch-until-unescaped-doublequote Chars)]
+  [&quot;c#34;&quot; | Chars] -&gt; []
+  [Char | Chars] -&gt; [Char | (fetch-until-unescaped-doublequote Chars)])
+
+\* (define strip-whitespace-chars *\
+\*   [] -&gt; [] *\
+\*   [&quot;c#34;&quot; | Chars] -&gt; [&quot;c#34;&quot; | ( *\
+\*   [WhitespaceChar | Chars] -&gt; (strip-whitespace-chars Chars) where (whitespace? WhitespaceChar) *\
+\*   [Char | Chars] -&gt; [Char | (strip-whitespace-chars Chars)]) *\
+
+(define tokenise
+  JSONString -&gt;
+  (let CharList (explode JSONString)
+       CharList))
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token pr
+ Example

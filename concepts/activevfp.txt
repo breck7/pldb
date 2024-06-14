@@ -1,0 +1,115 @@
+ActiveVFP
+=========
+
+ActiveVFP is an open source programming language created in 2001.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1641 on PLDB
+23 Years Old
+
+ActiveVFP (also known as AVFP) is a server-side scripting framework designed for Web development to produce dynamic Web pages. Similar to PHP, but using the native Visual Foxpro (VFP) language and database (or other databases like Microsoft SQL and MySQL), ActiveVFP can also be used in Model-View-Controller (MVC) web applications as well as RESTful API.  ActiveVFP is completely free and open source and does not require the purchase of Microsoft Visual FoxPro or any additional software. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ActiveVFP
+
+- ActiveVFP Wikipedia page
+ https://en.wikipedia.org/wiki/ActiveVFP
+- ActiveVFP first developed in VFP Community
+- See also: (5 related languages)PHP, Visual FoxPro, MySQL, REST, HTML
+
+* customers.prg -Customers Controller
+* * bypasses Main.prg and .AVFP script code
+*
+DEFINE CLASS customersController AS restController
+ *
+ PROCEDURE openData
+  SELECT 0
+  USE (THIS.homeFolder + &quot;customers.dbf&quot;) ALIAS customers
+ ENDPROC
+ 
+ PROCEDURE infoAction &amp;&amp; GET www.hostname.com/app/customers/info
+  RETURN &quot;homeFolder: &lt;b&gt;&quot; + THIS.homeFolder + &quot;&lt;/b&gt;&quot;
+ ENDPROC
+ 
+ PROCEDURE getAction &amp;&amp; GET www.hostname.com/app/customers/&lt;id&gt;
+  LOCAL cCustId
+  cCustId = THIS.Params[1]
+  THIS.openData()
+  SELECT CUSTOMERS
+  LOCATE FOR custId = cCustId
+  IF FOUND()
+   LOCAL cJSON
+   **USE mydbf  &amp;&amp;test error
+   *quick and dirty JSON
+   cJSON = [{&quot;custId&quot;:&quot;] + RTRIM(custId) + [&quot;,&quot;custName&quot;:&quot;] + RTRIM(custName) + [&quot;,] + ;
+           [&quot;custStat&quot;:&quot;] + RTRIM(custStat) + [&quot;}]
+   RETURN cJSON
+  ENDIF
+ ENDPROC
+ 
+ PROCEDURE listAction  &amp;&amp; GET www.hostname.com/app/customers/
+  LOCAL cHTML
+  cHTML = &quot;&quot;
+  *oEmp=newOBJECT(&#39;schedbizobj&#39;,&#39;c:\avfp5.61Demo\prg\utiltest2.prg&#39;)
+  SET PROC to substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+&#39;prg\AVFPutilities&#39; ADDITIVE   &amp;&amp; Make sure you use ADDITIVE or bad things happen!
+  THIS.openData()
+  SELECT CUSTOMERS
+  cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+&#39;viewtest.avfp&#39;))
+  RETURN cHTML
+ ENDPROC
+ 
+ PROCEDURE helloworld      &amp;&amp; custom method (&amp;&amp; GET www.hostname.com/app/customers/helloworld/)
+  LOCAL cHTML
+  cHTML = &quot;&quot;
+  *USE mydbf
+  *SET PROC to substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+&#39;prg\AVFPutilities&#39; ADDITIVE   &amp;&amp; Make sure you use ADDITIVE or bad things happen!
+  cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+&#39;hello.avfp&#39;))
+  RETURN cHTML
+ ENDPROC
+ 
+ PROCEDURE getemployees      &amp;&amp; custom method   (&amp;&amp; GET www.hostname.com/app/customers/getemployee/&lt;id&gt;
+  
+	oJSON=NEWOBJECT(&#39;json&#39;,&#39;json.prg&#39;)
+    
+    SET PATH TO oProp.AppStartPath+&#39;data\AVFPdemo41\&#39;
+	
+	select e.emp_id as id, e.first_Name as firstName, e.last_Name as lastName, e.title as title, [images/Emps/]+e.picture as picture,count(r.emp_id) as reportCount ;
+	from employee e left join employee r on VAL(r.reports_to) = VAL(e.emp_id) ;
+	INTO Cursor SearchResults;
+	group by e.last_Name,e.emp_id, e.first_Name,e.title, e.picture ;
+	order by e.last_Name,e.first_Name
+
+	oJSON.keyforcursors=&quot;items&quot;
+
+	* send JSON data and properties back
+	oResponse.ContentType = &quot;application/json;charset=utf-8&quot;
+	oResponse.Write(oJSON.stringify(&#39;SearchResults&#39;))
+	oResponse.Flush
+	lcHTMLout=[]
+ ENDPROC
+
+************************************************************************
+
+ENDDEFINE
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  * A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token *
+ Example
+  * A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

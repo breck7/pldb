@@ -1,0 +1,49 @@
+import ../code/conceptPage.scroll
+
+id parasail
+name parasail
+appeared 2009
+creators Seth Tucker Taft
+tags pl
+website http://parasail-lang.org
+conceptDescription ParaSail is a new parallel programming language designed to support the development of inherently safe and secure, highly parallel applications that can be mapped to multicore, manycore, heterogeneous, or distributed architectures.
+
+fileExtensions .psi .psl
+documentation https://adacore.github.io/ParaSail/images/parasail_ref_manual.pdf
+country United States
+originCommunity Ada Core Technologies
+
+pygmentsHighlighter ParaSail
+ filename parasail.py
+ fileExtensions psi psl
+leachim6 ParaSail
+ filepath p/ParaSail.psi
+ fileExtensions psi
+ example
+  func Hello_World(var IO) is
+      IO.Println("Hello World");
+  end func Hello_World;
+  
+
+printToken IO.Println
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true
+
+wikipedia https://en.wikipedia.org/wiki/ParaSail_(programming_language)
+ summary Parallel Specification and Implementation Language (ParaSail) is an object-oriented parallel programming language. Its design and ongoing implementation is described in a blog and on its official website.
+
+domainName parasail-lang.org
+ registered 2012
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 19121947|ParaSail Programming Language: parallel programming language|http://parasail-lang.org/|2019-02-09 12:26:40 UTC|1549715200|based2|19|97

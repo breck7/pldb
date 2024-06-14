@@ -1,0 +1,61 @@
+endSnippetParser
+ description Insert one of these where you want to cut the file for a snippet.
+ extends abstractScrollParser
+ cruxFromId
+ javascript
+  compile() {
+   return ""
+  }
+
+snippetsParser
+ // todo: why are we extending AT here and not loops? Is it for class/id etc?
+ extends abstractAftertextParser
+ cruxFromId
+ cells keywordCell
+ catchAllCellType groupNameWithOptionalFolderCell
+ description Prints the snippets of all files in the named group(s).
+ example
+  snippets index
+ javascript
+  makeSnippet(file, compileSettings) {
+    const {scrollProgram, endSnippetIndex} = file
+    if (endSnippetIndex === -1) return scrollProgram.compileEmbeddedVersion(compileSettings) + file.viewSourceHtml
+    const linkRelativeToCompileTarget = compileSettings.relativePath + file.permalink
+    const joinChar = "\n"
+    const html = scrollProgram
+        .map((child, index) => (index >= endSnippetIndex ? "" : child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+        .filter(i => i)
+        .join(joinChar)
+        .trim() +
+      `<a class="scrollContinueReadingLink" href="${linkRelativeToCompileTarget}">Continue reading...</a>`
+    return html
+  }
+  compile() {
+   const file = this.parent.file
+   const files = file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+   const alreadyRequired = this.root.alreadyRequired
+   const snippets = files.map(file => {
+    const compileSettings = {relativePath: file.relativePath, alreadyRequired }
+    return `<div class="scrollSnippetContainer">${this.makeSnippet(file.file, compileSettings)}</div>`
+    }).join("\n\n")
+   return `<div class="scrollColumns" style="column-width:35ch;">${snippets}</div>`
+  }
+  compileTextVersion() {
+   const file = this.parent.file
+   const files = file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+   return files.map(file =>  {
+    const title = file.file.title
+    const ruler = "=".repeat(title.length)
+    // Note: I tried to print the description here but the description generating code needs work.
+    return `${title}\n${ruler}\n${file.file.date}\n${file.file.absoluteLink}`
+   }).join("\n\n")
+  }
+
+fullSnippetsParser
+ extends snippetsParser
+ cruxFromId
+ description Prints the full contents of files that are in the named group.
+ javascript
+  makeSnippet(file, compileSettings) {
+   return file.scrollProgram.compileEmbeddedVersion(compileSettings) + file.viewSourceHtml
+  }

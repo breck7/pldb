@@ -1,0 +1,76 @@
+Dak
+===
+
+Dak is a programming language created in 2022 by Naitik Shah.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Naitik%20Shah
+
+#1354 on PLDB
+2 Years Old
+
+git clone https://github.com/daaku/dak
+
+Try now: Web
+
+Dak is a Lisp like language that transpiles to JavaScript.
+
+- Dak website
+ https://www.daklang.com/
+- Dak is developed on GitHub and has 70 stars
+- Dak first developed in https://github.com/daaku/dak/issues
+- Dak compiles to JavaScript
+- Dak is written in JavaScript, YAML, CSS, Markdown, JSON, TOML, SVG
+
+; Functions are varied and colorful.
+
+; Simple function:
+(fn add [a b]
+  (+ a b))
+(prn (add 40 1))
+
+; Async function:
+(fn@ add-promises [a b]
+  (+ @a @b))
+(prn @(add-promises (Promise.resolve 40) (Promise.resolve 2)))
+
+; Generator function:
+(fn* powers [n count]
+  (let [current 1]
+    (for [i 0 count]
+      (yield (*= current n)))))
+(for-of [v (powers 2 5)]
+  (prn v))
+
+; Async generator function:
+(fn@* foo [a b]
+  (yield (inc @a))
+  (yield (inc @b)))
+(for@ [v (foo (Promise.resolve 41) (Promise.resolve -43))]
+  (prn v))
+
+; Exported function:
+(fn ^:export plus [a b]
+  (+ a b))
+
+; Exported default function:
+(fn ^:export ^:default [a b]
+  (- a b))
+
+; Declaration syntax:
+(fn ^:decl TheClass [a]
+  (set this.answer a))
+(prn (TheClass. 42))
+
+; Explicit return is available:
+(fn until [a]
+  (while true
+    (if (= (++ a) 42)
+      (return :boom))))
+(prn :returned (until 40))
+
+; Yield &amp; Yield* are available:
+(fn* it [a]
+  (yield (++ a))
+  (yield* [(++ a) (++ a)]))
+(for-of [v (it 39)]
+  (prn &quot;it:&quot; v))

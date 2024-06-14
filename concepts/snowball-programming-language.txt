@@ -1,0 +1,26 @@
+Snowball
+========
+
+Snowball is a programming language created in 2001 by Martin Porter.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Martin%20Porter
+
+#615 on PLDB
+23 Years Old
+
+git clone https://github.com/snowballstem/snowball
+
+Snowball is a small string processing programming language designed for creating stemming algorithms for use in information retrieval.The Snowball compiler translates a Snowball script (a  .sbl file) into either a thread-safe ANSI C program or a Java program. For ANSI C, each Snowball script produces a program file and corresponding header file (with  .c  and  .h  extensions). The Snowball compiler checks the consistency of its script, and this check was used to discover a typo in a seminal academic paper by Lovins which had remained undetected for 30 years.The basic datatypes handled by Snowball are strings of characters, signed integers, and boolean truth values, or more simply strings, integers and booleans. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
+
+- Snowball website
+ https://snowballstem.org
+- Snowball Wikipedia page
+ https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
+- Snowball is developed on GitHub and has 721 stars
+- Snowball first developed in https://lists.tartarus.org/pipermail/snowball-discuss
+- Snowball is written in C, Python, Rust, Go, Ada, C#, Java, Perl, Pascal, JavaScript, reStructuredText, Markdown, Make, YAML, Diff, XML, TOML
+- Pygments supports syntax highlighting for Snowball
+- See also: (4 related languages)SNOBOL, Java, ASCII, C
+- Read more about Snowball on the web: 1.
+ http://snowball.tartarus.org

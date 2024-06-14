@@ -1,0 +1,56 @@
+import ../code/conceptPage.scroll
+
+id silk
+name silk
+appeared 2019
+tags pl
+website https://ajaymt.github.io/silk/
+
+writtenIn ocaml bourne-shell markdown
+repoStats
+ firstCommit 2019
+ commits 90
+ committers 1
+ files 30
+ newestCommit 2021
+country United States
+originCommunity University of Illinois at Urbana-Champaign
+reference https://news.ycombinator.com/item?id=22926080
+
+example
+ // this is a comment
+ 
+ extern func printf(s *i8) void;
+ 
+ func main(argc i32, argv **i8) i32 {
+   printf("hello, world\n");
+ 
+   if argc > 1 {
+     val arg = @(argv + 1);
+     printf(arg);
+   }
+ 
+   return 0;
+ }
+
+githubRepo https://github.com/AjayMT/silk
+ firstCommit 2019
+ stars 68
+ forks 1
+ subscribers 4
+ created 2019
+ updated 2022
+ description The Silk Programming Language
+ issues 1
+
+lineCommentToken //
+printToken printf
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+isbndb 0

@@ -1,0 +1,40 @@
+import ../code/conceptPage.scroll
+
+id explorer
+name Explorer
+appeared 2020
+creators Hannah Ritchie and Breck Yunits and Shahid Ahmad
+tags visual
+screenshot explorer.png
+aka Hannah
+conceptDescription Programs are encoded as TSVs so are easy to read+write from a spreadsheet IDE, code, or plain text editor.
+
+isOpenSource true
+relatedConcepts 6gunz
+influencedBy treesheets
+demoVideo https://www.youtube.com/watch?v=0l2QWH-iV3k
+visualParadigm true
+originCommunity Our World In Data
+reference https://github.com/owid/owid-grapher/tree/master/explorer
+
+example
+ selection	Canada~India
+ title	Population of different countries
+ subtitle	How many people live in each country?
+ type	DiscreteBar
+ hasMapTab	true
+ hideControls	true
+ ySlugs	Population
+ table
+ 	Country	Population	Year	MapleleafsInFlag
+ 	Canada	32000000	2020	1
+ 	India	1000000000	2020	0
+ 	France	50000000	2020	0
+ columns
+ 	slug	type	name	notes
+ 	Country	EntityName	Country	Unreviewed
+ 	Population	Numeric	Population	Unreviewed
+ 	Year	Year	Year	Unreviewed
+ 	MapleleafsInFlag	Numeric	MapleleafsInFlag	Unreviewed
+
+hasTernaryOperators false

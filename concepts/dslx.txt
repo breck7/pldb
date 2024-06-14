@@ -1,0 +1,79 @@
+dslx
+====
+
+dslx is a programming language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2396 on PLDB
+4 Years Old
+
+- dslx first developed in Google
+- Read more about dslx on the web: 1.
+ https://google.github.io/xls/dslx_reference/
+
+fn cast_to_array(x: u6) -&gt; u2[3] {
+  x as u2[3]
+}
+
+fn cast_from_array(a: u2[3]) -&gt; u6 {
+  a as u6
+}
+
+fn concat_arrays(a: u2[3], b: u2[3]) -&gt; u2[6] {
+  a ++ b
+}
+
+test cast_to_array {
+  let a_value: u6 = u6:0b011011;
+  let a: u2[3] = cast_to_array(a_value);
+  let a_array = u2[3]:[1, 2, 3];
+  let _ = assert_eq(a, a_array);
+  // Note: converting back from array to bits gives the original value.
+  let _ = assert_eq(a_value, cast_from_array(a));
+
+  let b_value: u6 = u6:0b111001;
+  let b_array: u2[3] = u2[3]:[3, 2, 1];
+  let b: u2[3] = cast_to_array(b_value);
+  let _ = assert_eq(b, b_array);
+  let _ = assert_eq(b_value, cast_from_array(b));
+
+  // Concatenation of bits is analogous to concatenation of their converted
+  // arrays. That is:
+  //
+  //  convert(concat(a, b)) == concat(convert(a), convert(b))
+  let concat_value: u12 = a_value ++ b_value;
+  let concat_array: u2[6] = concat_value as u2[6];
+  let _ = assert_eq(concat_array, concat_arrays(a_array, b_array));
+
+  // Show a few classic &quot;endianness&quot; example using 8-bit array values.
+  let x = u32:0xdeadbeef;
+  let _ = assert_eq(x as u8[4], u8[4]:[0xde, 0xad, 0xbe, 0xef]);
+  let y = u16:0xbeef;
+  let _ = assert_eq(y as u8[2], u8[2]:[0xbe, 0xef]);
+
+  ()
+}
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

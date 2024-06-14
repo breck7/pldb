@@ -1,0 +1,77 @@
+Cython
+======
+
+Cython is an open source programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#154 on PLDB
+17 Years Old
+698 Repos
+
+Cython is a superset of the Python programming language, designed to give C-like performance with code which is mostly written in Python. Cython is a compiled language that generates CPython extension modules. These extension modules can then be loaded and used by regular Python code using the import statement. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cython
+
+- Cython website
+ http://cython.org
+- Cython Wikipedia page
+ https://en.wikipedia.org/wiki/Cython
+- Cython docs
+ https://cython.readthedocs.io/en/latest/
+- There are at least 698 Cython repos on GitHub
+- Cython is a superset of Python
+- Cython first developed in https://github.com/sagemath
+- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Cython in 580 repos on GitHub
+- Pygments supports syntax highlighting for Cython
+- GitHub supports syntax highlighting for Cython
+- See also: (9 related languages)Python, C, Linux, Pyrex, Sage, XML, SciPy, Pandas, Scikit-learn
+- 13 languages in PLDB linking to Cython: atomspace, Chapel, edgedb, Fardlang, HHVM, Horse64, Impala, Pandas, Scikit-learn, SciPy, Sqlalchemy, TensorFlow, tornado
+
+In [1]: %load_ext Cython
+
+In [2]: %%cython
+   ...: def f(n):
+   ...:     a = 0
+   ...:     for i in range(n):
+   ...:         a += i
+   ...:     return a
+   ...:
+   ...: cpdef g(int n):
+   ...:     cdef int a = 0, i
+   ...:     for i in range(n):
+   ...:         a += i
+   ...:     return a
+   ...:
+
+In [3]: %timeit f(1000000)
+42.7 ms ± 783 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+
+In [4]: %timeit g(1000000)
+74 µs ± 16.6 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example

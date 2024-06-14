@@ -1,0 +1,114 @@
+import ../code/conceptPage.scroll
+
+id e
+name E
+appeared 1997
+creators Mark S. Miller
+tags pl
+website http://erights.org/
+conceptDescription E is an object-oriented programming language for secure distributed computing.
+
+isOpenSource true
+visualParadigm false
+fileType text
+wordRank 82
+rosettaCode http://www.rosettacode.org/wiki/Category:E
+centralPackageRepositoryCount 0
+country United States
+originCommunity Combex, Inc.
+
+example
+ def factorial(n :int) :int {
+   if (n == 1) {
+     return 1
+   } else if (n > 0) {
+     return n * factorial(n-1)
+   } else {
+     throw("invalid argument to factorial: "+n)
+   }
+ }
+example
+ # E snippet from
+ # http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
+ when (tempVow) -> {
+     #...use tempVow
+ } catch prob {
+     #.... report problem
+ } finally {
+     #....log event
+ }
+ 
+leachim6 E
+ filepath e/E.e
+ fileExtensions e
+ example
+  println("Hello World")
+  
+
+lineCommentToken #
+printToken println
+stringToken "
+
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/E_(programming_language)
+ example
+  def makeMint(name) :any {
+     def [sealer, unsealer] := makeBrandPair(name)
+     def mint {
+       to makePurse(var balance :(int >= 0)) :any {
+         def decr(amount :(0..balance)) :void {
+           balance -= amount
+         }
+         def purse {
+           to getBalance() :int { return balance }
+           to sprout() :any { return mint.makePurse(0) }
+           to getDecr() :any { return sealer.seal(decr) }
+           to deposit(amount :int, src) :void {
+             unsealer.unseal(src.getDecr())(amount)
+             balance += amount
+           }
+         }
+         return purse
+       }
+     }
+     return mint
+   }
+ related gnu-e joule java python pascal
+ summary E is an object-oriented programming language for secure distributed computing, created by Mark S. Miller, Dan Bornstein, and others at Electric Communities in 1997.  E is mainly descended from the concurrent language Joule and from Original-E, a set of extensions to Java for secure distributed programming.  E combines message-based computation with Java-like syntax.  A concurrency model based on event loops and promises ensures that deadlock can never occur.
+ pageId 1377046
+ created 2005
+ backlinksCount 75
+ revisionCount 104
+ dailyPageViews 77
+ appeared 1997
+
+hopl https://hopl.info/showlanguage.prx?exp=1990
+
+domainName erights.org
+ registered 1998
+ awisRank
+  2022 11154366
+
+githubBigQuery E
+ repos 304
+ users 291
+
+isbndb 0
+
+githubLanguage E
+ fileExtensions e
+ trendingProjectsCount 0
+ type programming
+ interpreters rune
+ aceMode text
+ tmScope none
+ repos 354
+
+semanticScholar 0

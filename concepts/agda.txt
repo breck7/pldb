@@ -1,0 +1,152 @@
+Agda
+====
+
+Agda is an open source programming language created in 2007 by Ulf Norell and Catarina Coquand.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ulf%20Norell
+ https://pldb.io/concepts/../lists/creators.html#q=Catarina%20Coquand
+
+#237 on PLDB
+17 Years Old
+2k Repos
+
+Try now: TIO
+
+Agda is a dependently typed functional programming language originally developed by Ulf Norell at Chalmers University of Technology with implementation described in his PhD thesis. The current version of Agda was originally known as Agda 2. The original Agda system was developed at Chalmers by Catarina Coquand in 1999. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Agda_(programming_language)
+
+- Agda website
+ http://wiki.portal.chalmers.se/agda
+- Agda Wikipedia page
+ https://en.wikipedia.org/wiki/Agda_(programming_language)
+- Agda docs
+ https://agda.readthedocs.io/en/v2.6.2.2/
+- There are at least 2,120 Agda repos on GitHub
+- Agda first developed in Chalmers University of Technology
+- The  Google BigQuery Public Dataset GitHub snapshot shows 143 users using Agda in 207 repos on GitHub
+- Explore Agda snippets on Rosetta Code
+- Agda on HOPL
+ https://hopl.info/showlanguage.prx?exp=7860
+- Pygments supports syntax highlighting for Agda
+- GitHub supports syntax highlighting for Agda
+- See also: (7 related languages)Coq, Epigram, Haskell, Idris, Emacs, Unicode, JavaScript
+- 4 languages in PLDB linking to Agda: cloc, datafun, obsidian, Pygments
+
+module agda where
+open import IO
+
+main = run (putStrLn &quot;Hello World&quot;)
+
+module NatCat where
+
+open import Relation.Binary.PropositionalEquality
+
+-- If you can show that a relation only ever has one inhabitant
+-- you get the category laws for free
+module
+  EasyCategory
+  (obj : Set)
+  (_⟶_ : obj → obj → Set)
+  (_∘_ : ∀ {x y z} → x ⟶ y → y ⟶ z → x ⟶ z)
+  (id : ∀ x → x ⟶ x)
+  (single-inhabitant : (x y : obj) (r s : x ⟶ y) → r ≡ s)
+  where
+
+  idʳ : ∀ x y (r : x ⟶ y) → r ∘ id y ≡ r
+  idʳ x y r = single-inhabitant x y (r ∘ id y) r
+
+  idˡ : ∀ x y (r : x ⟶ y) → id x ∘ r ≡ r
+  idˡ x y r = single-inhabitant x y (id x ∘ r) r
+
+  ∘-assoc : ∀ w x y z (r : w ⟶ x) (s : x ⟶ y) (t : y ⟶ z) → (r ∘ s) ∘ t ≡ r ∘ (s ∘ t)
+  ∘-assoc w x y z r s t = single-inhabitant w z ((r ∘ s) ∘ t) (r ∘ (s ∘ t))
+
+open import Data.Nat
+
+same : (x y : ℕ) (r s : x ≤ y) → r ≡ s
+same .0 y z≤n z≤n = refl
+same .(suc m) .(suc n) (s≤s {m} {n} r) (s≤s s) = cong s≤s (same m n r s)
+
+≤-trans : ∀ x y z → x ≤ y → y ≤ z → x ≤ z
+≤-trans .0 y z z≤n s = z≤n
+≤-trans .(suc m) .(suc n) .(suc n₁) (s≤s {m} {n} r) (s≤s {.n} {n₁} s) = s≤s (≤-trans m n n₁ r s)
+
+≤-refl : ∀ x → x ≤ x
+≤-refl zero = z≤n
+≤-refl (suc x) = s≤s (≤-refl x)
+
+module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
+
+data _≤_ : ℕ → ℕ → Set where
+   z≤n : {n : ℕ} → zero ≤ n
+   s≤s : {n m : ℕ} → n ≤ m → suc n ≤ suc m
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  -- \d+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  -- \d+[eE][+-]?\d+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  -- 0[xX][\da-fA-F]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token putStrLn
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  -- A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token --
+ Example
+  -- A comment
+row
+ Feature Typed Holes
+ FeatureLink ../features/hasTypedHoles.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

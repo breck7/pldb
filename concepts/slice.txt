@@ -1,0 +1,117 @@
+Slice
+=====
+
+Slice is a programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#889 on PLDB
+13 Years Old
+40 Repos
+
+- There are at least 40 Slice repos on GitHub
+- Slice first developed in ZeroC, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 13 users using Slice in 20 repos on GitHub
+- GitHub supports syntax highlighting for Slice
+- Read more about Slice on the web: 1.
+ https://zeroc.com/products/ice
+
+// YellowPages.ice
+module YellowPages
+{
+    class PersonDetails
+    {
+       string phoneNumber;
+       optional(1) string address;
+    }
+
+    interface PhoneBook
+    {
+        PersonDetails find(string name);
+    }
+}
+
+#pragma once
+
+#ifndef SOME_TEST
+[[&quot;java:package:linguist&quot;]]
+#endif
+
+module Linguist
+{
+    enum MyEnum
+    {
+        One,
+        Two,
+        Three
+    }
+
+    struct MyStruct
+    {
+        // An int
+        int a;
+        /* string */
+        string b;
+
+        MyEnum e;
+    }
+
+    exception MyException {
+        string e;
+    }
+
+    dictionary&lt;string, string&gt; MyDict;
+
+    sequence&lt;MyEnum&gt; MyEnumSeq;
+
+    class BaseClass {
+        int value = -1;
+    }
+
+    class MyClass extends BaseClass
+    {
+        MyDict info;
+
+        optional(1) string op;
+    }
+
+    interface MyInterface
+    {
+        void operationA(out bool valid);
+        idempotent void operationB(int a);
+        MyEnumseq getEnum();
+
+        [&quot;cpp:const&quot;, &quot;cpp:noexcept&quot;] string getName();
+    }
+}
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

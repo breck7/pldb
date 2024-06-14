@@ -1,0 +1,97 @@
+Twig
+====
+
+Twig is an open source template language created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#330 on PLDB
+15 Years Old
+6k Repos
+
+git clone https://github.com/mitsuhiko/twig
+
+Twig is a template engine for the PHP programming language. Its syntax originates from Jinja and Django templates. It's an open source product licensed under a BSD License and maintained by Fabien Potencier. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Twig_(template_engine)
+
+- Twig website
+ https://twig.symfony.com/
+- Twig Wikipedia page
+ https://en.wikipedia.org/wiki/Twig_(template_engine)
+- Twig is developed on GitHub and has 35 stars
+- There are at least 5,791 Twig repos on GitHub
+- Twig is written in PHP, HTML
+- The  Google BigQuery Public Dataset GitHub snapshot shows 626 users using Twig in 811 repos on GitHub
+- CodeMirror package for syntax highlighting Twig
+- Monaco package for syntax highlighting Twig
+- Pygments supports syntax highlighting for Twig
+- GitHub supports syntax highlighting for Twig
+- See also: (9 related languages)PHP, Jinja, Django, Eclipse, Emacs, Sublime Text, TextMate, Vim, Smarty
+- 2 languages in PLDB linking to Twig: Ace Editor, packagist-pm
+
+{% extends &quot;base.html&quot; %}
+{% block navigation %}
+    &lt;ul id=&quot;navigation&quot;&gt;
+    {% for item in navigation %}
+        &lt;li&gt;
+            &lt;a href=&quot;{{ item.href }}&quot;&gt;
+                {% if item.level == 2 %}&amp;nbsp;&amp;nbsp;{% endif %}
+                {{ item.caption|upper }}
+            &lt;/a&gt;
+        &lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+{% endblock navigation %}
+
+{% extends &quot;base.html&quot; %}
+{% block navigation %}
+    &lt;ul id=&quot;navigation&quot;&gt;
+    {% for item in navigation %}
+        &lt;li&gt;
+            &lt;a href=&quot;{{ item.href }}&quot;&gt;
+                {% if item.level == 2 %}&amp;nbsp;&amp;nbsp;{% endif %}
+                {{ item.caption|upper }}
+            &lt;/a&gt;
+        &lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+{% endblock navigation %}
+
+apply autoescape block deprecated do embed extends flush for from if import include macro sandbox set use verbatim with endapply endautoescape endblock endembed endfor endif endmacro endsandbox endset endwith true false
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  {# A comment
+  #}
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token {# #}
+ Example
+  {# A comment
+  #}

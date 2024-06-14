@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id prometheus
+name PROMETHEUS
+appeared 2012
+creators Matt T. Proud
+tags pl
+website https://prometheus.io/
+latestVersion v2.52.0
+
+writtenIn go yaml typescript markdown json javascript css bourne-shell svg html scss make protobuf lex dockerfile xml less yacc
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2012
+ commits 14358
+ committers 1175
+ files 1248
+ newestCommit 2024
+country Germany
+originCommunity SoundCloud Limited
+reference https://download.opensuse.org/update/leap/15.2/oss/x86_64/golang-github-prometheus-prometheus-2.22.1-lp152.3.4.1.x86_64.rpm.mirrorlist
+reference http://www.ai1.uni-bayreuth.de/en/projects/Prometheus/index.html
+
+githubRepo https://github.com/prometheus/prometheus
+ firstCommit 2012
+ stars 46169
+ forks 7765
+ subscribers 1134
+ created 2012
+ updated 2023
+ description The Prometheus monitoring system and time series database.
+ issues 837
+
+hopl https://hopl.info/showlanguage.prx?exp=2411

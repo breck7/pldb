@@ -1,0 +1,27 @@
+TUTOR
+=====
+
+TUTOR is a programming language created in 1969 by Paul Tenczar and Richard Blomme.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221969%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Paul%20Tenczar
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20Blomme
+
+#2566 on PLDB
+55 Years Old
+
+TUTOR (also known as PLATO Author Language) is a programming language developed for use on the PLATO system at the University of Illinois at Urbana-Champaign around 1965. TUTOR was initially designed by Paul Tenczar for use in computer assisted instruction (CAI) and computer managed instruction (CMI) (in computer programs called "lessons") and has many features for that purpose. For example, TUTOR has powerful answer-parsing and answer-judging commands, graphics, and features to simplify handling student records and statistics by instructors. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/TUTOR_(programming_language)
+
+- TUTOR Wikipedia page
+ https://en.wikipedia.org/wiki/TUTOR_(programming_language)
+- TUTOR on HOPL
+ https://hopl.info/showlanguage.prx?exp=788
+- See also: (5 related languages)COBOL, Python, C, Pascal, ASCII
+
+unit    someu
+        NAME1,NAME2,NAME3(SIZE)
+        NAME4=CONSTANT
+        floating:NAME5,NAME6,NAME7(SIZE)
+        integer, NUM BITS:NAME8,NAME9
+        integer, NUM BITS,signed:NAME10
+        integer:NAME11

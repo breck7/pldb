@@ -1,0 +1,174 @@
+import ../code/conceptPage.scroll
+
+id lean
+name Lean
+appeared 2015
+creators Leonardo de Moura
+tags pl
+website http://leanprover.github.io/
+latestVersion v3.4.2
+
+isOpenSource true
+writtenIn lean cpp cmake bourne-shell markdown python c yaml toml tex perl html bash lua lex
+tryItOnline lean
+clocExtensions hlean lean
+fileType text
+wordRank 8525
+documentation https://leanprover.github.io/documentation/
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 13762
+ committers 51
+ files 2908
+ newestCommit 2023
+country United States
+originCommunity Microsoft Research
+
+pygmentsHighlighter Lean
+ filename theorem.py
+ fileExtensions lean
+leachim6 Lean
+ filepath l/Lean
+ example
+  #print "Hello World"
+
+githubRepo https://github.com/leanprover/lean
+ firstCommit 2013
+ stars 2045
+ forks 217
+ subscribers 115
+ created 2013
+ updated 2022
+ description Lean Theorem Prover
+ issues 58
+
+printToken #print
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasIntegers true
+hasLineComments true
+hasComments true
+
+domainName leanprover.github.io
+ awisRank
+  2022 540082
+
+githubBigQuery Lean
+ repos 265
+ users 233
+
+linguistGrammarRepo https://github.com/leanprover/Lean.tmbundle
+ firstCommit 2015
+ lastCommit 2016
+ committerCount 3
+ commitCount 17
+ sampleCount 2
+ example
+  /-
+  Copyright (c) 2014 Microsoft Corporation. All rights reserved.
+  Released under Apache 2.0 license as described in the file LICENSE.
+  
+  Module: algebra.binary
+  Authors: Leonardo de Moura, Jeremy Avigad
+  
+  General properties of binary operations.
+  -/
+  
+  import logic.eq
+  open eq.ops
+  
+  namespace binary
+    section
+      variable {A : Type}
+      variables (op₁ : A → A → A) (inv : A → A) (one : A)
+  
+      local notation a * b := op₁ a b
+      local notation a ⁻¹  := inv a
+      local notation 1     := one
+  
+      definition commutative := ∀a b, a * b = b * a
+      definition associative := ∀a b c, (a * b) * c = a * (b * c)
+      definition left_identity := ∀a, 1 * a = a
+      definition right_identity := ∀a, a * 1 = a
+      definition left_inverse := ∀a, a⁻¹ * a = 1
+      definition right_inverse := ∀a, a * a⁻¹ = 1
+      definition left_cancelative := ∀a b c, a * b = a * c → b = c
+      definition right_cancelative := ∀a b c, a * b = c * b → a = c
+  
+      definition inv_op_cancel_left := ∀a b, a⁻¹ * (a * b) = b
+      definition op_inv_cancel_left := ∀a b, a * (a⁻¹ * b) = b
+      definition inv_op_cancel_right := ∀a b, a * b⁻¹ * b =  a
+      definition op_inv_cancel_right := ∀a b, a * b * b⁻¹ = a
+  
+      variable (op₂ : A → A → A)
+  
+      local notation a + b := op₂ a b
+  
+      definition left_distributive := ∀a b c, a * (b + c) = a * b + a * c
+      definition right_distributive := ∀a b c, (a + b) * c = a * c + b * c
+    end
+  
+    context
+      variable {A : Type}
+      variable {f : A → A → A}
+      variable H_comm : commutative f
+      variable H_assoc : associative f
+      infixl `*` := f
+      theorem left_comm : ∀a b c, a*(b*c) = b*(a*c) :=
+      take a b c, calc
+        a*(b*c) = (a*b)*c  : H_assoc
+          ...   = (b*a)*c  : H_comm
+          ...   = b*(a*c)  : H_assoc
+  
+      theorem right_comm : ∀a b c, (a*b)*c = (a*c)*b :=
+      take a b c, calc
+        (a*b)*c = a*(b*c) : H_assoc
+          ...   = a*(c*b) : H_comm
+          ...   = (a*c)*b : H_assoc
+    end
+  
+    context
+      variable {A : Type}
+      variable {f : A → A → A}
+      variable H_assoc : associative f
+      infixl `*` := f
+      theorem assoc4helper (a b c d) : (a*b)*(c*d) = a*((b*c)*d) :=
+      calc
+        (a*b)*(c*d) = a*(b*(c*d)) : H_assoc
+                ... = a*((b*c)*d) : H_assoc
+    end
+  
+  end binary
+  
+
+isbndb 4
+ year|publisher|title|authors|isbn13
+ 2013|Pragmatic Bookshelf|Functional Programming Patterns in Scala and Clojure: Write Lean Programs for the JVM|Bevilacqua-Linn, Michael|9781937785475
+ 2009|CRC Press|Measuring and Improving Performance: Information Technology Applications in Lean Systems|Martin, James William|9781420084184
+ 2016|Apress|Lean Python: Learn Just Enough Python to Build Useful Tools|Gerrard, Paul|9781484223857
+ 2021|Apress|Lean Software Systems Engineering for Developers: Managing Requirements, Complexity, Teams, and Change Like a Champ|Durham, Doug and Michel, Chad|9781484269336
+
+githubLanguage Lean
+ fileExtensions lean hlean
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.lean
+ repos 1807
+
+semanticScholar 10
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2019|Exploring the role of human factors in lean management|10.1108/IJLSS-08-2017-0094|32|2|P. Gaiardelli and Barbara Resta and Stefano Dotti|12228cf77a74d25d79a94aa7959cd5649eb63ddf
+ 2019|Development of a Lean Computational Thinking Abilities Assessment for Middle Grades Students|10.1145/3287324.3287390|31|4|E. Wiebe and Jennifer E. London and Osman Aksit and Bradford W. Mott and K. Boyer and James C. Lester|62b302055f9ca5ecf4469c56c607f12eee205d1a
+ 2019|Lean management approach in hospitals: a systematic review|10.1108/IJLSS-05-2017-0051|22|3|Haleh Mousavi Isfahani and S. Tourani and H. Seyedin|65f5eacd03a677f40f3c0e6c695962e4b273458b
+ 2019|Memory-Efficient Performance Monitoring on Programmable Switches with Lean Algorithms|10.1137/1.9781611976021.3|20|0|Zaoxing Liu and Samson Zhou and Ori Rottenstreich and V. Braverman and J. Rexford|d9ed95f065d770e595f302be8334b64a1b0f961f
+ 2021|The Lean 4 Theorem Prover and Programming Language|10.1007/978-3-030-79876-5_37|18|1|L. D. Moura and Sebastian Ullrich|c4c0d6ffd70081d143b32be53b06fec1259b3ad8
+ 2001|lolliCop - A Linear Logic Implementation of a Lean Connection-Method Theorem Prover for First-Order Classical Logic|10.1007/3-540-45744-5_55|8|0|J. S. Hodas and Naoyuki Tamura|c12f7f4af28822d01b449213cad8ac85ba5c4ba6
+ 2010|A lean specification for GADTs: system F with first-class equality proofs|10.1007/s10990-011-9065-0|4|1|Arie Middelkoop and A. Dijkstra and S. Swierstra|395df42520b2a07f04605515890a7eb0870fdd60
+ 2018|Using Agile Games to Invigorate Agile and Lean Software Development Learning in Classrooms|10.1007/978-981-13-2751-3_18|3|0|Rashina Hoda|b4e7e39b7a590d940e902e4c8c8a960df83a4f10
+ 2019|Built-In Lean Management Tools in Simulation Modeling|10.1109/WSC40007.2019.9004812|3|0|P. Pawlewski|03859bf77f8c4d21dfbb36cba377b3467f3a3100
+ 2018|NLP Lean Programming Framework: Developing NLP Applications More Effectively|10.18653/v1/N18-5001|1|0|Marc Schreiber and B. Kraft and Albert Zündorf|04c6990ea6520f1af4ddcacabc1042bd03681da5

@@ -1,0 +1,80 @@
+import ../code/conceptPage.scroll
+
+id jison-lex
+name Jison Lex
+appeared 2013
+creators Zachary Carter
+tags pl
+latestVersion 0.3.4
+
+isOpenSource true
+writtenIn javascript lex json markdown
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 33
+ committers 6
+ files 8
+ newestCommit 2014
+country United States and The Netherlands and Germany
+originCommunity https://github.com/zaach/jison-lex/issues
+
+githubRepo https://github.com/zaach/jison-lex
+ firstCommit 2013
+ stars 50
+ forks 30
+ subscribers 6
+ created 2013
+ updated 2022
+ description generates lexical analyzers. used by jison.
+ issues 20
+
+booleanTokens true false
+
+hasBooleans true
+
+linguistGrammarRepo https://github.com/cdibbs/language-jison
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 9
+ commitCount 131
+ sampleCount 2
+ example
+  
+  %%
+  \n+                         {yy.freshLine = true;}
+  \s+                         {yy.freshLine = false;}
+  "y{"[^}]*"}"                {yytext = yytext.substr(2, yyleng - 3); return 'ACTION';}
+  [a-zA-Z_][a-zA-Z0-9_-]*     {return 'NAME';}
+  '"'([^"]|'\"')*'"'          {return 'STRING_LIT';}
+  "'"([^']|"\'")*"'"          {return 'STRING_LIT';}
+  "|"                         {return '|';}
+  "["("\]"|[^\]])*"]"         {return 'ANY_GROUP_REGEX';}
+  "("                         {return '(';}
+  ")"                         {return ')';}
+  "+"                         {return '+';}
+  "*"                         {return '*';}
+  "?"                         {return '?';}
+  "^"                         {return '^';}
+  "/"                         {return '/';}
+  "\\"[a-zA-Z0]               {return 'ESCAPE_CHAR';}
+  "$"                         {return '$';}
+  "<<EOF>>"                   {return '$';}
+  "."                         {return '.';}
+  "%%"                        {return '%%';}
+  "{"\d+(","\s?\d+|",")?"}"   {return 'RANGE_REGEX';}
+  /"{"                        %{if (yy.freshLine) { this.input('{'); return '{'; } else { this.unput('y'); }%}
+  "}"                         %{return '}';%}
+  "%{"(.|\n)*?"}%"            {yytext = yytext.substr(2, yyleng - 4); return 'ACTION';}
+  .                           {/* ignore bad characters */}
+  <<EOF>>                     {return 'EOF';}
+
+githubLanguage Jison Lex
+ fileExtensions jisonlex
+ trendingProjectsCount 0
+ type programming
+ group Lex
+ aceMode text
+ tmScope source.jisonlex
+ repos 0

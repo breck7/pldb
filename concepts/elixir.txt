@@ -1,0 +1,399 @@
+Elixir
+======
+
+Elixir is an open source programming language created in 2011 by José Valim.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jos%C3%A9%20Valim
+
+#28 on PLDB
+13 Years Old
+89k Repos
+
+git clone https://github.com/elixir-lang/elixir
+
+Try now: Riju · TIO
+
+Elixir is a functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine (BEAM). Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications. Elixir also provides a productive tooling and an extensible design. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Elixir_(programming_language)
+
+- Elixir website
+ https://elixir-lang.org
+- Elixir downloads page
+ https://elixir-lang.org/install.html
+- Elixir Wikipedia page
+ https://en.wikipedia.org/wiki/Elixir_(programming_language)
+- Elixir is developed on GitHub and has 20,394 stars
+- Watch the history of the Elixir repo visualized with Gource
+- PLDB has 2 documentation sites for Elixir: elixir-lang.org, devdocs.io
+- There are at least 89,242 Elixir repos on GitHub
+- Elixir first developed in The Elixir Team
+- Elixir is written in Elixir, Markdown, Erlang, YAML, Bourne shell, EEX, Make, PowerShell
+- Elixir on Twitter
+ https://twitter.com/elixirlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using Elixir in 7k repos on GitHub
+- Check out the 211 Elixir meetup groups on Meetup.com.
+- There are 23,468 members in the Elixir subreddit
+- There are 173 Project Euler users using Elixir
+- In the 2021 StackOverflow developer survey Elixir programmers reported a median salary of $80,077. 2% of respondents reported using Elixir. 1,438 programmers reported using Elixir, and 3,374 said they wanted to use it
+- Explore Elixir snippets on Rosetta Code
+- Elixir appears in the TIOBE Index
+- Elixir Ubuntu package
+ https://packages.ubuntu.com/jammy/elixir
+- Elixir LSP implementation
+- Monaco package for syntax highlighting Elixir
+- Pygments supports syntax highlighting for Elixir
+- GitHub supports syntax highlighting for Elixir
+- Elixir appears in the Quine Relay project
+- There is 1 Jupyter Kernel for Elixir
+- There is a central package repository for Elixir
+- Official Blog page for Elixir
+ https://elixir-lang.org/blog/
+- Indeed.com has 214 matches for "elixir developer".
+- See also: (6 related languages)Erlang, Ruby, Clojure, LFE, Unicode, UTF-8
+- 12 languages in PLDB linking to Elixir: 05AB1E, Ace Editor, cloc, CouchDB, Elixir, Euphoria, Felix, gleam, Macchiato, mal, PRQL, Pygments
+
+IO.puts(&quot;Hello, world!&quot;)
+
+#!/usr/bin/env elixir
+IO.puts &quot;Hello World&quot;
+
+# Hello world in Elixir
+
+defmodule HelloWorld do
+  IO.puts &quot;Hello, World!&quot;
+end
+
+%{&quot;cowboy&quot;: {:hex, :cowboy, &quot;1.0.0&quot;},
+  &quot;cowlib&quot;: {:hex, :cowlib, &quot;1.0.1&quot;},
+  &quot;hackney&quot;: {:hex, :hackney, &quot;0.14.3&quot;},
+  &quot;hound&quot;: {:hex, :hound, &quot;0.6.0&quot;},
+  &quot;httpoison&quot;: {:hex, :httpoison, &quot;0.5.0&quot;},
+  &quot;idna&quot;: {:hex, :idna, &quot;1.0.1&quot;},
+  &quot;phoenix&quot;: {:hex, :phoenix, &quot;0.10.0&quot;},
+  &quot;plug&quot;: {:hex, :plug, &quot;0.11.1&quot;},
+  &quot;poison&quot;: {:hex, :poison, &quot;1.3.1&quot;},
+  &quot;ranch&quot;: {:hex, :ranch, &quot;1.0.0&quot;}}
+
+task = Task.async fn -&gt; perform_complex_action() end
+other_time_consuming_action()
+Task.await task
+
+after and catch do else end false fn in nil not or rescue true when
+
+Language features
+======================================================
+
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported ✓
+ Token 
+ Example
+  δ = 0.00001
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+  raise "oops, something went wrong"
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported ✓
+ Token 
+ Example
+  def fib(0), do: 1
+  def fib(1), do: 1
+  def fib(n) when n >= 2, do: fib(n-1) + fib(n-2)
+row
+ Feature Runtime Guards
+ FeatureLink ../features/hasRunTimeGuards.html
+ Supported ✓
+ Token 
+ Example
+  def abs(number) when number > 0, do: number
+  def abs(number), do: -number
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Token 
+ Example
+  template = """
+  This is the first line.
+  This is the second line.
+  This is the third line.
+  """
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported ✓
+ Token 
+ Example
+  seven = 3 + 4
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported ✓
+ Token 
+ Example
+  1.23e45
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported ✓
+ Token 
+ Example
+  fn -> IO.puts("hello world") end
+row
+ Feature Pipes
+ FeatureLink ../features/hasPipes.html
+ Supported ✓
+ Token 
+ Example
+  "Elixir" |> String.graphemes() |> Enum.frequencies()
+row
+ Feature Streams
+ FeatureLink ../features/hasStreams.html
+ Supported ✓
+ Token 
+ Example
+  https://hexdocs.pm/elixir/Stream.html
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported ✓
+ Token 
+ Example
+  # https://hexdocs.pm/elixir/Macro.html
+  defmodule Example do
+    defmacro macro_inspect(value) do
+      IO.inspect(value)
+      value
+    end
+    def fun_inspect(value) do
+      IO.inspect(value)
+      value
+    end
+  end
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported ✓
+ Token 
+ Example
+  https://hexdocs.pm/elixir/Protocol.html
+row
+ Feature Range Operator
+ FeatureLink ../features/hasRangeOperators.html
+ Supported ✓
+ Token 
+ Example
+  1..3
+row
+ Feature Single Dispatch
+ FeatureLink ../features/hasSingleDispatch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported ✓
+ Token 
+ Example
+  %{key: "value"}
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported ✓
+ Token 
+ Example
+  # 0b[01]+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  # \d(_?\d)*
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  # \d(_?\d)*\.\d(_?\d)*([eE][-+]?\d(_?\d)*)?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  # 0x[\da-fA-F]+
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported ✓
+ Token 
+ Example
+  # 0o[0-7]+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Token 
+ Example
+  my_list = [1, 2, 3, 4, 5]
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported ✓
+ Token 
+ Example
+  ~r/integer: \d+/
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token IO.puts
+ Example
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported ✓
+ Token 
+ Example
+  send(pid, :ping)
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token #
+ Example
+  # A comment
+row
+ Feature Default Parameters Pattern
+ FeatureLink ../features/hasDefaultParameters.html
+ Supported ✓
+ Token 
+ Example
+  def multiply(a, b \\ 1) do
+    a * b
+  end
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  if true do
+    IO.puts("Hello world")
+  end
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Token 
+ Example
+  name = "John"
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  # Alias the module so it can be called as Bar instead of Foo.Bar
+  alias Foo.Bar, as: Bar
+  
+  # Require the module in order to use its macros
+  require Foo
+  
+  # Import functions from Foo so they can be called without the `Foo.` prefix
+  import Foo
+  
+  # Invokes the custom code defined in Foo as an extension point
+  use Foo
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  # A comment
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported ✓
+ Token 
+ Example
+  File.write!("helloworld.txt", "Hello, world!\n")
+row
+ Feature Shebang
+ FeatureLink ../features/canDoShebang.html
+ Supported ✓
+ Token 
+ Example
+  #!/usr/bin/env elixir
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Multiple Dispatch
+ FeatureLink ../features/hasMultipleDispatch.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Units of Measure
+ FeatureLink ../features/hasUnitsOfMeasure.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported X
+ Token 
+ Example

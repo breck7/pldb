@@ -1,0 +1,49 @@
+import ../code/conceptPage.scroll
+
+id conceptual
+name Conceptual
+appeared 2019
+tags pl
+website https://github.com/Antipurity/conceptual
+aka Antipurity
+conceptDescription The Conceptual language aims to completely separate all features and quirks of programming and bring them to the realm of concepts, bridging machines and minds. This language is not a goal in itself, but a platform for the future; understanding this future allows to put its features into their proper context.
+
+writtenIn tex markdown javascript html
+repoStats
+ firstCommit 2019
+ commits 245
+ committers 2
+ files 136
+ newestCommit 2021
+country Unknown
+originCommunity https://github.com/Antipurity/conceptual
+
+example
+ concept
+ (
+ map
+ txt	'(examples F): Returns examples of usage of a function, in `(… (CodeString BecomesString) …)` format.
+ (examples): Returns all available examples in a (… (Name … (CodeString BecomesString) …) …) format.'
+ call	(_jsEval "function(f) {
+   if (_isArray(f)) return error
+   if (f === undefined) {
+     // Accumulate all examples (from parse.ctx).
+     const result = [map]
+     parse.ctx.forEach((v,k) => {
+       if (k[0] === '_') return
+       const r = _getDataOverride(v, examples)
+       if (r !== undefined)
+         result.push(v, r)
+     })
+     return result
+   } else
+     return _checkOverride(f, examples, f)
+ }"
+
+githubRepo https://github.com/Antipurity/conceptual
+ stars 8
+ forks 0
+ subscribers 2
+ created 2019
+ updated 2021
+ description An experimental programming language / IDE of evil.

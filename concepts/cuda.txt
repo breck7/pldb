@@ -1,0 +1,180 @@
+CUDA
+====
+
+CUDA, aka Compute Unified Device Architecture, is an open source programming language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#39 on PLDB
+17 Years Old
+18k Repos
+
+CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. It allows software developers and software engineers to use a CUDA-enabled graphics processing unit (GPU) for general purpose processing – an approach termed GPGPU (General-Purpose computing on Graphics Processing Units). The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/CUDA
+
+- CUDA website
+ https://developer.nvidia.com/cuda-zone
+- CUDA downloads page
+ https://developer.nvidia.com/cuda-downloads
+- CUDA Wikipedia page
+ https://en.wikipedia.org/wiki/CUDA
+- CUDA docs
+ https://docs.nvidia.com/cuda/
+- There are at least 18,135 CUDA repos on GitHub
+- CUDA first developed in Nvidia
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using CUDA in 4k repos on GitHub
+- Check out the 32 CUDA meetup groups on Meetup.com.
+- Pygments supports syntax highlighting for CUDA
+- GitHub supports syntax highlighting for CUDA
+- Release Notes for CUDA
+ https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+- Official Blog page for CUDA
+ https://developer.nvidia.com/blog/tag/cuda/
+- Frequently Asked Questions for CUDA
+ https://developer.nvidia.com/cuda-faq
+- Indeed.com has 483 matches for "cuda engineer".
+- See also: (18 related languages)Linux, C, Fortran, OpenGL, OpenCL, LLVM IR, Python, Perl, Java, Ruby, Lua, Haskell, R, MATLAB, IDL, Mathematica, Common Lisp, F#
+- 14 languages in PLDB linking to CUDA: Chapel, circle-lang, Factor, FFmpeg, Futhark, Numba, OpenNN, Open Shading Language, Pygments, PyTorch, spiral, Taichi, Xgboost, XGBoost
+
+#include &lt;stdio.h&gt;
+
+__global__ void hello_world(){
+    printf(&quot;Hello World\n&quot;);
+}
+
+int main() {
+    hello_world&lt;&lt;&lt;1,1&gt;&gt;&gt;();
+    return 0;
+}
+
+// Hello world in CUDA
+
+#include &lt;stdio.h&gt;
+ 
+const int N = 16;
+const int blocksize = 16;
+ 
+__global__
+void hello(char *a, int *b)
+{
+	a[threadIdx.x] += b[threadIdx.x];
+}
+ 
+int main()
+{
+	char a[N] = &quot;Hello \0\0\0\0\0\0&quot;;
+	int b[N] = {15, 10, 6, 0, -11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+ 
+	char *ad;
+	int *bd;
+	const int csize = N*sizeof(char);
+	const int isize = N*sizeof(int);
+ 
+	printf(&quot;%s&quot;, a);
+ 
+	cudaMalloc( (void**)&amp;ad, csize );
+	cudaMalloc( (void**)&amp;bd, isize );
+	cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
+	cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
+	
+	dim3 dimBlock( blocksize, 1 );
+	dim3 dimGrid( 1, 1 );
+	hello&lt;&lt;&lt;dimGrid, dimBlock&gt;&gt;&gt;(ad, bd);
+	cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
+	cudaFree( ad );
+	cudaFree( bd );
+	
+	printf(&quot;%s\n&quot;, a);
+	return EXIT_SUCCESS;
+}
+
+#include &lt;stdio.h&gt;
+#include &lt;cuda_runtime.h&gt;
+
+/**
+ * CUDA Kernel Device code
+ *
+ * Computes the vector addition of A and B into C. The 3 vectors have the same
+ * number of elements numElements.
+ */
+__global__ void
+vectorAdd(const float *A, const float *B, float *C, int numElements)
+{
+    int i = blockDim.x * blockIdx.x + threadIdx.x;
+
+    if (i &lt; numElements)
+    {
+        C[i] = A[i] + B[i];
+    }
+}
+
+/**
+ * Host main routine
+ */
+int
+main(void)
+{
+    // Error code to check return values for CUDA calls
+    cudaError_t err = cudaSuccess;
+
+    // Launch the Vector Add CUDA Kernel
+    int threadsPerBlock = 256;
+    int blocksPerGrid =(numElements + threadsPerBlock - 1) / threadsPerBlock;
+    vectorAdd&lt;&lt;&lt;blocksPerGrid, threadsPerBlock&gt;&gt;&gt;(d_A, d_B, d_C, numElements);
+    err = cudaGetLastError();
+
+    if (err != cudaSuccess)
+    {
+        fprintf(stderr, &quot;Failed to launch vectorAdd kernel (error code %s)!\n&quot;, cudaGetErrorString(err));
+        exit(EXIT_FAILURE);
+    }
+
+    // Reset the device and exit
+    err = cudaDeviceReset();
+
+    return 0;
+}
+
+import numpy
+from pycublas import CUBLASMatrix
+A = CUBLASMatrix( numpy.mat([[1,2,3]],[[4,5,6]],numpy.float32) )
+B = CUBLASMatrix( numpy.mat([[2,3]],[4,5],[[6,7]],numpy.float32) )
+C = A*B
+print C.np_mat()
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

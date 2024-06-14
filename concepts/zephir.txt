@@ -1,0 +1,135 @@
+Zephir
+======
+
+Zephir is an open source programming language created in 2013 by Andres Gutierrez.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Andres%20Gutierrez
+
+#171 on PLDB
+11 Years Old
+91 Repos
+
+git clone https://github.com/phalcon/zephir
+
+Zephir is a compiled high level language aimed to the creation of C-extensions for PHP.
+
+- Zephir website
+ https://zephir-lang.com/
+- Zephir is developed on GitHub and has 3,128 stars
+- Zephir docs
+ https://docs.zephir-lang.com/0.12/en/welcome
+- There are at least 91 Zephir repos on GitHub
+- Zephir is written in PHP, C, JSON, Bourne shell, YAML, Markdown, M4, XML, Dockerfile, JavaScript, Bash, CSS, Make, Lisp
+- Zephir on Twitter
+ https://twitter.com/zephirlang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 127 users using Zephir in 140 repos on GitHub
+- Pygments supports syntax highlighting for Zephir
+- GitHub supports syntax highlighting for Zephir
+- zephir-lang.com was registered in 2013
+
+/**
+ * CBLOCK tests
+ * asfas
+ */
+
+%{
+// top statement before namespace, add to after headers
+#define MAX_FACTOR 40
+}%
+
+namespace Test;
+
+%{
+// top statement before class, add to after headers
+// test include .h
+#include &quot;kernel/require.h&quot;
+}%
+
+%{
+
+// c implement fibonacci
+static long fibonacci(long n) {
+        if (n &lt; 2) return n;
+        else return fibonacci(n - 2) + fibonacci(n - 1);
+}
+
+}%
+
+class Cblock
+{
+    public function testCblock1()
+    {
+        int a = 0;
+
+        %{
+            a = MAX_FACTOR;
+        }%
+
+        return a;
+    }
+
+    public function testCblock2()
+    {
+            long a = 0;
+
+            %{
+                a = fibonacci(MAX_FACTOR);
+            }%
+
+            return a;
+    }
+
+}
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9]+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+  // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0x[0-9a-fA-F]+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

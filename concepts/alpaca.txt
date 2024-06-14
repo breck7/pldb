@@ -1,0 +1,49 @@
+Alpaca
+======
+
+Alpaca is a programming language created in 2017 by Jeremy Pierre.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Pierre
+
+#570 on PLDB
+7 Years Old
+
+git clone https://github.com/alpaca-lang/alpaca
+
+Functional programming inspired by ML for the Erlang VM
+
+- Alpaca website
+ http://alpaca-lang.org
+- Alpaca is developed on GitHub and has 1,438 stars
+- Alpaca first developed in https://github.com/alpaca-lang
+- Alpaca compiles to BEAM Bytecode
+- Alpaca is written in Erlang, Markdown, YAML, Make, Bourne shell
+- Read more about Alpaca on the web: 1.
+ https://github.com/j14159/abstract-alpaca
+
+module simple_example
+
+-- a basic top-level function:
+let add2 x = x + 2
+
+let something_with_let_bindings x =
+  -- a function:
+  let adder a b = a + b in
+  -- a variable (immutable):
+  let x_plus_2 = adder x 2 in
+  add2 x
+
+-- a polymorphic ADT:
+type messages &#39;x = &#39;x | Fetch pid &#39;x
+
+{- A function that can be spawned to receive `messages int`
+    messages, that increments its state by received integers
+    and can be queried for its state.
+-}
+let will_be_a_process x = receive with
+    i -&gt; will_be_a_process (x + i)
+  | Fetch sender -&gt;
+    let sent = send x sender in
+    will_be_a_process x
+
+let start_a_process init = spawn will_be_a_process init

@@ -1,0 +1,266 @@
+Dart
+====
+
+Dart is an open source programming language created in 2011 by Lars Bak.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Lars%20Bak
+
+#37 on PLDB
+13 Years Old
+738k Repos
+
+Try now: Riju · TIO
+
+Dart is a general-purpose programming language originally developed by Google and later approved as a standard by Ecma (ECMA-408). It is used to build web, server and mobile applications, and for Internet of Things (IoT) devices. It is open-source software under a permissive free software license (modified BSD license). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Dart_(programming_language)
+
+- Dart website
+ http://www.dartlang.org
+- Dart downloads page
+ https://dart.dev/get-dart
+- Dart Wikipedia page
+ https://en.wikipedia.org/wiki/Dart_(programming_language)
+- Dart docs
+ https://dart.dev/guides
+- There are at least 737,948 Dart repos on GitHub
+- Dart first developed in Google
+- Dart on Twitter
+ https://twitter.com/dart_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Dart in 6k repos on GitHub
+- There are 35,109 members in the Dart subreddit
+- There are 54 Project Euler users using Dart
+- In the 2021 StackOverflow developer survey Dart programmers reported a median salary of $32,986. 6% of respondents reported using Dart. 4,965 programmers reported using Dart, and 7,018 said they wanted to use it
+- Explore Dart snippets on Rosetta Code
+- Dart ranks #22 in the TIOBE Index
+- Dart LSP implementation
+- CodeMirror package for syntax highlighting Dart
+- Monaco package for syntax highlighting Dart
+- Pygments supports syntax highlighting for Dart
+- GitHub supports syntax highlighting for Dart
+- There is a central package repository for Dart
+- Release Notes for Dart
+ https://dart.dev/guides/whats-new
+- Official Blog page for Dart
+ https://news.dartlang.org/
+- Frequently Asked Questions for Dart
+ https://dart.dev/faq
+- Indeed.com has 208 matches for "dart developer".
+- dartlang.org was registered in 2011
+- See also: (24 related languages)C#, Erlang, JavaScript, Smalltalk, Strongtalk, C, Android, iOS, Eclipse, Linux, Sublime Text, Emacs, Vim, Visual Studio Code, Algol, Ruby, Self, CoffeeScript, Elm, Fantom, Go, Haxe, Opa, TypeScript
+- 8 languages in PLDB linking to Dart: Ace Editor, buzz, Candy, FlatBuffers, mal, pointless, Pygments, Wren
+
+// Type your code here, or load an example.
+int square(int num) {
+  return num * num;
+}
+
+int main(List&lt;String&gt; args) {
+    return square(int.fromEnvironment(&quot;input&quot;));
+}
+
+void main() {
+  print(&#39;Hello, world!&#39;);
+}
+
+main() {
+  print(&#39;Hello World&#39;);
+}
+
+// Hello world in Dart
+
+main() {
+   print(&#39;Hello world!&#39;);
+}
+
+import &#39;dart:math&#39; as math;
+
+class Point {
+  num x, y;
+
+  Point(this.x, this.y);
+
+  num distanceTo(Point other) {
+    var dx = x - other.x;
+    var dy = y - other.y;
+    return math.sqrt(dx * dx + dy * dy);
+  }
+}
+
+void main() {
+  var p = new Point(2, 3);
+  var q = new Point(3, 4);
+  print(&#39;distance from p to q = ${p.distanceTo(q)}&#39;);
+}
+
+// Import the math library to get access to the sqrt function.
+import &#39;dart:math&#39; as math;
+
+// Create a class for Point.
+class Point {
+
+  // Final variables cannot be changed once they are assigned.
+  // Create two instance variables.
+  final num x, y;
+
+  // A constructor, with syntactic sugar for setting instance variables.
+  Point(this.x, this.y);
+
+  // A named constructor with an initializer list.
+  Point.origin()
+      : x = 0,
+        y = 0;
+
+  // A method.
+  num distanceTo(Point other) {
+    var dx = x - other.x;
+    var dy = y - other.y;
+    return math.sqrt(dx * dx + dy * dy);
+  }
+
+  // Example of Operator Overloading
+  Point operator +(Point other) =&gt; new Point(x + other.x, y + other.y);
+}
+
+// All Dart programs start with main().
+void main() {
+  // Instantiate point objects.
+  var p1 = new Point(10, 10);
+  var p2 = new Point.origin();
+  var distance = p1.distanceTo(p2);
+  print(distance);
+}
+
+abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends external factory false final finally for get if implements import in is library new null operator part rethrow return set static super switch sync this throw true try typedef var void while with yield
+
+Language features
+======================================================
+
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+  // 0[xX][0-9a-fA-F]+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Async Await
+ FeatureLink ../features/hasAsyncAwait.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token '
+ Example
+  'Hello world'
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  import 'file-system.dart';
+  import 'dart:math' as math;
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // Hi
+  /* Assume address is not null. */
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

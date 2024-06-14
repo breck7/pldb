@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id charity
+name Charity
+appeared 1992
+tags pl
+website http://pll.cpsc.ucalgary.ca/charity1/www/home.html
+
+fileType text
+wordRank 4766
+centralPackageRepositoryCount 0
+country Canada
+originCommunity University of Calgary
+
+example
+ %
+ %   Some very badly written Charity
+ %
+ 
+ data LA(A) -> D = ss: A -> D
+                 | ff: -> D.
+
+lineCommentToken %
+
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Charity_(programming_language)
+ related linux ml
+ summary Charity is an experimental purely functional programming language, developed at the University of Calgary under the supervision of Robin Cockett. Based on ideas by Hagino Tatsuya, it is completely grounded in category theory. Disregarding interactions with the outside world, all Charity programs are guaranteed to terminate or stay productive. The language allows ordinary recursive data types, such as might be found in ML, which are required to be finite, and corecursive data types, which are allowed to be potentially infinite. The control structure for operating on recursive data types is primitive recursion or paramorphism, and the control structure for corecursive data types is primitive co-recursion or apomorphism. Neither control structure can operate over the other kind of data, so all paramorphisms terminate and all apomorphisms are productive.
+ pageId 1364508
+ created 2005
+ backlinksCount 16
+ revisionCount 38
+ dailyPageViews 18
+ appeared 1992
+
+hopl https://hopl.info/showlanguage.prx?exp=1540
+
+githubBigQuery Charity
+ repos 10
+ users 7
+
+githubLanguage Charity
+ fileExtensions ch
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 11

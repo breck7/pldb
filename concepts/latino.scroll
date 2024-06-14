@@ -1,0 +1,53 @@
+import ../code/conceptPage.scroll
+
+id latino
+name latino
+appeared 2015
+creators Primitivo R. Montero
+tags pl
+website https://lenguaje-latino.org/
+latestVersion v0.9.1
+nativeLanguage Spanish
+
+isOpenSource true
+writtenIn c bourne-shell markdown cmake yaml make svg bash dockerfile m4 tex xml yacc lex awk sed powershell
+fileType text
+wordRank 7415
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2015
+ commits 1161
+ committers 33
+ files 389
+ newestCommit 2021
+country Mexico
+originCommunity https://github.com/lenguaje-latino
+
+leachim6 Latino
+ filepath l/Latino.lat
+ fileExtensions lat
+ example
+  escribir("Hello World")
+  
+
+githubRepo https://github.com/primitivorm/latino
+ stars 11
+ forks 1
+ subscribers 1
+ created 2020
+ updated 2021
+ firstCommit 2015
+ description Lenguaje de programación de código abierto para latinos y de habla hispana.
+ issues 0
+
+printToken escribir
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName lenguaje-latino.org
+ registered 2022
+ awisRank
+  2017 5444100

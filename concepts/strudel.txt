@@ -1,0 +1,22 @@
+strudel
+=======
+
+strudel is a text data format created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#4226 on PLDB
+13 Years Old
+
+- strudel first developed in The James Hutton Institute
+- Read more about strudel on the web: 1.
+ http://bioinf.scri.ac.uk/strudel/help/data.shtml
+
+feature  Rice  1 LOC_Os05g01020  gene  1903    &quot;TBC domain containing protein, expressed&quot;
+feature Rice  1 LOC_Os09g20010  gene  10218   expressed protein
+feature Barley  1H  12_30969  SNP 15
+feature Barley  1H  11_11223  SNP 78
+feature Barley  1H  11_11224  SNP 100
+homolog Barley  12_30969  Rice  LOC_Os05g01020  7.00E-91    #00FF00
+homolog Barley  11_11223  Rice  LOC_Os09g20010  6.00E-50
+chromosome  Barley  1H  #593423
+URL Rice  http://rice.plantbiology.msu.edu/cgi-bin/gbrowse/rice/?name=

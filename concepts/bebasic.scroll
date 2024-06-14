@@ -1,0 +1,44 @@
+import ../code/conceptPage.scroll
+
+id bebasic
+name BeBasic
+appeared 2009
+creators BBK
+tags pl
+website https://github.com/wenerme/bbvm
+latestVersion v1.0.0
+
+writtenIn java go gradle javascript markdown bash yaml json
+repoStats
+ firstCommit 2014
+ commits 195
+ committers 1
+ files 159
+ newestCommit 2021
+country China
+originCommunity polymer-china
+
+example
+ ; ____________________
+ ; \______   \______   \___  _______
+ ;  |    |  _/|    |  _/\  \/ /     \
+ ;  |    |   \|    |   \ \   /  Y Y  \
+ ;  |______  /|______  /  \_/|__|_|  /
+ ;         \/        \/            \/
+ 
+ JMP CODE
+ DATA STR CHAR "Hello, BBvm",0
+ CODE:
+ 
+ OUT 1, STR
+ EXIT
+
+githubRepo https://github.com/wenerme/bbvm
+ firstCommit 2014
+ stars 12
+ forks 1
+ subscribers 2
+ created 2014
+ updated 2022
+ description BeBasic Virtual Machine
+ issues 0

@@ -1,0 +1,33 @@
+vdscript
+========
+
+vdscript is an open source programming language created in 2000 by Avery Lee.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Avery%20Lee
+
+#475 on PLDB
+24 Years Old
+
+[Image Omitted]
+ A screenshot of the programming language vdscript.
+
+VirtualDub is a free and open-source video capture and video processing utility for Microsoft Windows written by Avery Lee. It is designed to process linear video streams, including filtering and recompression. It uses AVI container format to store captured video.The first version of VirtualDub, written for Windows 95, to be released on SourceForge was uploaded on August 20, 2000.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/VirtualDub
+
+- vdscript website
+ https://virtualdub.org
+- vdscript Wikipedia page
+ https://en.wikipedia.org/wiki/VirtualDub
+- vdscript docs
+ https://virtualdub.org/docs/vdscript.txt
+- vdscript first developed in https://virtualdub.org/virtualdub_history.html
+- vdscript is written in C++
+- There is a central package repository for vdscript
+- Read more about vdscript on the web: 1.
+ https://sourceforge.net/projects/virtualdub
+
+declare foo;
+foo = VirtualDub.video.filters;
+foo.Add(&quot;bar&quot;);
+
+declare

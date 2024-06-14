@@ -1,0 +1,41 @@
+import ../code/conceptPage.scroll
+
+id nuua
+name Nuua
+appeared 2018
+tags pl
+website https://nuua.io
+
+writtenIn cpp cmake python javascript markdown php json
+repoStats
+ firstCommit 2018
+ commits 116
+ committers 2
+ files 103
+ newestCommit 2019
+country Spain
+originCommunity https://github.com/nuua-io
+
+example
+ class Triangle {
+     b: float
+     h: float
+     fun area(): float -> (self.b * self.h) / 2.0
+ }
+ 
+ fun main(argv: [string]) {
+     t := Triangle!{b: 10.0, h: 5.0}
+     print "The area is: " + t.area() as string
+ }
+
+githubRepo https://github.com/nuua-io/Nuua
+ firstCommit 2018
+ stars 37
+ forks 2
+ subscribers 3
+ created 2018
+ updated 2022
+ description The Nuua Programming Language - A zero dependencies, high level strong typed, interpreted language built on the top of modern C++17.
+ issues 0
+
+domainName nuua.io

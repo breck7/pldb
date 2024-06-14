@@ -1,0 +1,55 @@
+import ../code/conceptPage.scroll
+
+id tornado
+name tornado
+appeared 2009
+creators Ben Darnell and Brett Taylor
+tags template
+website http://www.tornadoweb.org/en/stable/guide/templates.html
+latestVersion v6.4.0
+
+isOpenSource true
+writtenIn python restructuredtext html ini bourne-shell yaml css javascript json xml markdown c make cython sql toml dockerfile csv
+fileType text
+codeMirror tornado
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 4787
+ committers 472
+ files 310
+ newestCommit 2024
+originCommunity Facebook
+
+example
+ <html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+     <ul>
+       {% for item in items %}
+         <li>{{ escape(item) }}</li>
+       {% end %}
+     </ul>
+   </body>
+ </html>
+
+githubRepo https://github.com/tornadoweb/tornado
+ firstCommit 2009
+ stars 20633
+ forks 5453
+ subscribers 1003
+ created 2009
+ updated 2022
+ description Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+ issues 230
+
+isbndb 4
+ year|publisher|title|authors|isbn13
+ 2009|National Geographic|Tornado Hunter: Getting Inside the Most Violent Storms on Earth|Samaras, Tim and Bechtel, Stefan|9781426203022
+ 2009|National Geographic|Tornado Hunter: Getting Inside the Most Violent Storms on Earth|Bechtel, Stefan and Samaras, Tim|9781426205804
+ 20120319|O'Reilly Media, Inc.|Introduction to Tornado|Michael Dory; Allison Parrish; Brendan Berg|9781449333980
+ 20120319|O'Reilly Media, Inc.|Introduction to Tornado|Michael Dory; Allison Parrish; Brendan Berg|9781449333973
+
+semanticScholar 0

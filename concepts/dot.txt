@@ -1,0 +1,130 @@
+DOT
+===
+
+DOT is a text markup language created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#185 on PLDB
+17 Years Old
+28k Repos
+
+DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/DOT_(graph_description_language)
+
+- DOT Wikipedia page
+ https://en.wikipedia.org/wiki/DOT_(graph_description_language)
+- DOT docs
+ https://graphviz.org/doc/info/lang.html
+- There are at least 27,831 DOT repos on GitHub
+- DOT first developed in AT&T Labs Research
+- The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on GitHub
+- ANTLR grammar for DOT
+- Pygments supports syntax highlighting for DOT
+- GitHub supports syntax highlighting for DOT
+- There is 1 Jupyter Kernel for DOT
+- See also: (6 related languages)JavaScript, Java, Python, Google Cloud Platform, ActionScript, SVG
+- 7 languages in PLDB linking to DOT: D2, FCL, flowchart.fun, Flowgorithm, Finite State Language, Mscgen, Workfl
+
+ // The graph name and the semicolons are optional
+graph graphname {
+    a -- b -- c;
+    b -- d;
+}
+
+/*
+  Huffman Tree DOT graph.
+
+  DOT Reference :  http://www.graphviz.org/doc/info/lang.html
+                   http://en.wikipedia.org/wiki/DOT_language
+  Timestamp     :  1415989074
+  Phrase        :  &#39;OH GOD WHY IS LINGUIST SO ANAL ABOUT THIS STUFF&#39;
+
+  Generated on http://huffman.ooz.ie/
+*/
+
+digraph G {
+    edge [label=0];
+    graph [ranksep=0];
+    T [shape=record, label=&quot;{{T|4}|000}&quot;];
+    S [shape=record, label=&quot;{{S|5}|001}&quot;];
+    SPACE [shape=record, label=&quot;{{SPACE|9}|01}&quot;];
+    A [shape=record, label=&quot;{{A|3}|1000}&quot;];
+    H [shape=record, label=&quot;{{H|3}|1001}&quot;];
+    U [shape=record, label=&quot;{{U|3}|1010}&quot;];
+    L [shape=record, label=&quot;{{L|2}|10110}&quot;];
+    N [shape=record, label=&quot;{{N|2}|10111}&quot;];
+    I [shape=record, label=&quot;{{I|4}|1100}&quot;];
+    O [shape=record, label=&quot;{{O|4}|1101}&quot;];
+    G [shape=record, label=&quot;{{G|2}|11100}&quot;];
+    F [shape=record, label=&quot;{{F|2}|11101}&quot;];
+    GF [label=4];
+    W [shape=record, label=&quot;{{W|1}|111100}&quot;];
+    Y [shape=record, label=&quot;{{Y|1}|111101}&quot;];
+    B [shape=record, label=&quot;{{B|1}|111110}&quot;];
+    D [shape=record, label=&quot;{{D|1}|111111}&quot;];
+    BD [label=2];
+    WYBD [label=4];
+    GFWYBD [label=8];
+    47 -&gt; 18 -&gt; 9 -&gt; T;
+    29 -&gt; 13 -&gt; 6 -&gt; A;
+    7 -&gt; U;
+    4 -&gt; L;
+    16 -&gt; 8 -&gt; I;
+    GFWYBD -&gt; GF -&gt; G;
+    WYBD -&gt; 2 -&gt; W;
+    BD -&gt; B;9 -&gt; S [label=1];
+    18 -&gt; SPACE [label=1];
+    6 -&gt; H [label=1];
+    13 -&gt; 7 -&gt; 4 -&gt; N [label=1];
+    8 -&gt; O [label=1];
+    GF -&gt; F [label=1];
+    2 -&gt; Y [label=1];
+    47 -&gt; 29 -&gt; 16 -&gt; GFWYBD -&gt; WYBD -&gt; BD -&gt; D [label=1];
+}
+
+digraph g {
+	node [shape=plaintext];
+	A1 -&gt; B1;
+	A2 -&gt; B2;
+	A3 -&gt; B3;
+	
+	A1 -&gt; A2 [label=f];
+	A2 -&gt; A3 [label=g];
+	B2 -&gt; B3 [label=&quot;g&#39;&quot;];
+	B1 -&gt; B3 [label=&quot;(g o f)&#39;&quot; tailport=s headport=s];
+
+	{ rank=same; A1 A2 A3 }
+	{ rank=same; B1 B2 B3 }
+}
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,53 @@
+Em
+==
+
+Em, aka Easy Markup, is a text markup language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2459 on PLDB
+4 Years Old
+
+git clone https://github.com/peter-fa/em
+
+Easy Markup is a lightweight markup language.
+
+- Em is developed on GitHub and has 0 stars
+- Em first developed in https://github.com/peter-fa
+- Em is written in C, Lex, HTML, Markdown
+
+This is an optional HTML title.
+
+.p
+This is a paragraph.
+
+.p
+This is a paragraph. It ends
+here.
+
+.p
+This is a    paragraph. It
+ends
+here.
+
+.l
+This is a list item.
+
+This is a list item.
+
+This is a list item.
+
+.p
+This is a paragraph. #This word
+is italic.
+
+.p
+This is a paragraph. @This word
+is bold.
+
+.p
+This is a paragraph. #{These words}
+are italic.
+
+.p
+This is a paragraph. @{These words}
+are bold.

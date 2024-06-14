@@ -1,0 +1,97 @@
+P4
+==
+
+P4 is an open source programming language created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#504 on PLDB
+10 Years Old
+574 Repos
+
+P4 is a programming language designed to allow programming of packet forwarding planes. In contrast to a general purpose language such as C or Python, P4 is a domain-specific language with a number of constructs optimized around network data forwarding.  P4 is an open-source, permissively licensed language and is maintained by a non-profit organization called the P4 Language Consortium. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/P4_(programming_language)
+
+- P4 website
+ http://p4.org
+- P4 Wikipedia page
+ https://en.wikipedia.org/wiki/P4_(programming_language)
+- There are at least 574 P4 repos on GitHub
+- P4 first developed in Barefoot Networks and Intel and Stanford University and Princeton University and Google and Microsoft Research
+- P4 on Twitter
+ https://twitter.com/p4org
+- The  Google BigQuery Public Dataset GitHub snapshot shows 29 users using P4 in 38 repos on GitHub
+- GitHub supports syntax highlighting for P4
+- p4.org was registered in 2002
+- See also: (2 related languages)C, Python
+
+// Copyright 2015, Barefoot Networks, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+action set_mirror_id(session_id) {
+    clone_ingress_pkt_to_egress(session_id);
+}
+
+table mirror_acl {
+    reads {
+        ingress_metadata.if_label : ternary;
+        ingress_metadata.bd_label : ternary;
+
+        /* ip acl */
+        ingress_metadata.lkp_ipv4_sa : ternary;
+        ingress_metadata.lkp_ipv4_da : ternary;
+        ingress_metadata.lkp_ip_proto : ternary;
+
+        /* mac acl */
+        ingress_metadata.lkp_mac_sa : ternary;
+        ingress_metadata.lkp_mac_da : ternary;
+        ingress_metadata.lkp_mac_type : ternary;
+    }
+    actions {
+        nop;
+        set_mirror_id;
+    }
+    size : INGRESS_MIRROR_ACL_TABLE_SIZE;
+}
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

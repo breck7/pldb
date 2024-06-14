@@ -1,0 +1,35 @@
+CSpydr
+======
+
+CSpydr is a programming language created in 2021 by Spydr06.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Spydr06
+
+#1703 on PLDB
+3 Years Old
+
+git clone https://github.com/spydr06/cspydr
+
+A static typed low-level compiled programming language inspired by Rust and C
+
+- CSpydr website
+ https://github.com/spydr06/cspydr
+- CSpydr is developed on GitHub and has 38 stars
+- CSpydr first developed in https://github.com/spydr06/
+- CSpydr is written in C, Markdown, Bourne shell, Make, JSON, SVG, Lua, Bash, Vim script, C++, Assembly language, TOML, Brainfuck
+
+# fibonacci.csp
+import &quot;io.csp&quot;;
+fn fib(n: i32): i32 {
+    let a = 0;
+    let b = 0;
+    for 0 .. n {
+        a + b |&gt; (a = b, b = $);
+    }
+    &lt;- a;
+}
+fn main(): i32 {
+    let n = 10;
+    std::io::printf(&quot;fib(%i) = %i\n&quot;, n, fib(n));
+    &lt;- 0;
+}

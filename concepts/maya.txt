@@ -1,0 +1,79 @@
+Maya Embedded Language
+======================
+
+Maya Embedded Language is a programming language created in 2013.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1033 on PLDB
+11 Years Old
+
+The Maya Embedded Language (MEL) is a scripting language used to simplify tasks in Autodesk's 3D Graphics Software Maya. Most tasks that can be achieved through Maya's GUI can be achieved with MEL, as well as certain tasks that are not available from the GUI. MEL offers a method of speeding up complicated or repetitive tasks, as well as allowing users to redistribute a specific set of commands to others that may find it useful.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Maya_Embedded_Language
+
+- Maya Embedded Language Wikipedia page
+ https://en.wikipedia.org/wiki/Maya_Embedded_Language
+- Maya Embedded Language first developed in Autodesk, Inc
+- See also: (3 related languages)Perl, Tcl, Python
+
+// animated duplicates/instances script
+proc animatedDuplication (int $rangeStart, int $rangeEnd, int $numOfDuplicates, int $duplicateOrInstance)
+{
+    int $range_start = $rangeStart;
+    int $range_end = $rangeEnd;
+    int $num_of_duplicates = $numOfDuplicates;
+    int $step_size = ($range_end - $range_start) / $num_of_duplicates;
+    int $i = 0;
+    int $temp;
+
+    currentTime $range_start;     // set to range start
+
+    string $selectedObjects[];    // to store selected objects
+    $selectedObjects = `ls -sl`;  // store selected objects
+    select $selectedObjects;
+
+    while ($i &lt;= $num_of_duplicates)
+    {
+        $temp = $range_start + ($step_size * $i);
+        currentTime ($temp);
+        // selected the objects to duplicate or instance
+        select $selectedObjects;
+        if($duplicateOrInstance == 0)
+        {
+            duplicate;
+        }
+        else
+        {
+            instance;
+        }
+        $i++;
+    }
+}
+
+ // Usage example:
+ //  duplicate the current selection 5 times --
+ //  evenly distributed between frame 1 and 240
+ animatedDuplication(1, 240, 5, 0);
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

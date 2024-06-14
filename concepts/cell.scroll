@@ -1,0 +1,103 @@
+import ../code/conceptPage.scroll
+
+id cell
+name Cell
+appeared 2017
+tags pl
+website http://cell-lang.net/
+conceptDescription Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
+
+isOpenSource true
+writtenIn markdown
+fileType text
+wordRank 695
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2017
+ commits 576
+ committers 2
+ files 130
+ newestCommit 2021
+country Various
+originCommunity https://github.com/cell-lang
+
+example
+ type AddUser = add_user(
+  id:            UserId,
+  username:      String,
+  signup_date:   Date,
+  first_name:    String,
+  last_name:     String,
+  date_of_birth: Date?
+ );
+ 
+ OnlineForum.AddUser {
+   id = self.id;
+   // Inserting the new user id and setting all the mandatory attributes
+   insert user(id),
+          username(id, self.username),
+          first_name(id, self.first_name),
+          last_name(id, self.last_name),
+          signup_date(id, self.signup_date);
+   // Setting the date_of_birth attribute, if available
+   insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
+ }
+example
+ reactive Thermostat {
+   input:
+     temperature: Float;
+ 
+   output:
+     on: Bool;
+ 
+   state:
+     // When the system is initialized, on is true if
+     // and only if the current temperature exceeds 28°C
+     on: Bool = temperature > 28.0;
+ 
+   rules:
+     // Switching on the air conditioner when
+     // the temperature exceeds 28°C
+     on = true when temperature > 28.0;
+ 
+     // Switching it off when it falls below 24°C
+     on = false when temperature < 24.0;
+ }
+twitter https://twitter.com/cell_lang
+
+githubRepo https://github.com/cell-lang/compiler
+ stars 98
+ forks 2
+ subscribers 9
+ created 2017
+ updated 2022
+ description Cell compiler
+ issues 1
+
+lineCommentToken //
+booleanTokens true false
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
+
+domainName cell-lang.net
+ registered 2017
+ awisRank
+  2022 3568675
+  2017 2019201
+
+isbndb 9
+ year|publisher|title|authors|isbn13
+ 2008|Prentice Hall|Programming the Cell Processor: For Games, Graphics, and Computation|Scarpino, Matthew|9780136008866
+ 2004|Morgan Kaufmann|The Mobile Connection: The Cell Phone's Impact on Society (Interactive Technologies)|Ling, Rich|9781558609365
+ 2008|Wiley-Interscience|Chemical and Functional Genomic Approaches to Stem Cell Biology and Regenerative Medicine||9780470041468
+ 1986|Cambridge University Press|Embryogenesis In Angiosperms: A Developmental And Experimental Study (developmental And Cell Biology Series)|Valayamghat Raghavan|9780521267717
+ 1995|Springer|Formal Development of Reactive Systems: Case Study Production Cell (Lecture Notes in Computer Science (891))||9783540588672
+ 2008|Morgan Kaufmann|In Silico: 3D Animation and Simulation of Cell Biology with Maya and MEL (The Morgan Kaufmann Series in Computer Graphics)|Sharpe, Jason and Lumsden, Charles John and Woolridge, Nicholas|9780123736550
+ 20070723|Springer Nature|A Computer Scientist's Guide to Cell Biology|William W. Cohen|9780387482781
+ 1975|Springer-verlag|Cell Cycle And Cell Differentiation (results And Problems In Cell Differentiation, Volume 7)|J Holtzer and H Reinert|9780387070698
+ 2009|Humana|Regulatory Networks in Stem Cells (Stem Cell Biology and Regenerative Medicine)|Farit G. Avkhadiev; Karl-Joachim Wirths|9781603272278

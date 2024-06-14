@@ -1,0 +1,113 @@
+import ../code/conceptPage.scroll
+
+id q
+name Q
+appeared 2003
+creators Arthur Whitney
+tags pl
+
+fileType text
+wordRank 559
+codeMirror q
+rosettaCode http://www.rosettacode.org/wiki/Category:Q
+centralPackageRepositoryCount 0
+originCommunity Kx Systems
+projectEuler Q
+ memberCount
+  2019 132
+  2022 152
+
+helloWorldCollection Q
+ /* Hello world in Q */
+ 
+ hello            = writes "Hello, world!\n";
+pygmentsHighlighter Q
+ filename q.py
+ fileExtensions q
+leachim6 Q
+ filepath q/Q.q
+ fileExtensions q
+ example
+  "Hello World"
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+jupyterKernel https://github.com/jvictorchen/IKdbQ
+jupyterKernel https://github.com/newtux/KdbQ_kernel
+wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
+ example
+  q)select from t where name like "ja*",age>50
+  name age
+  --------
+  jack 60
+  
+  q)select rows:count i by age from t
+  age| rows
+  ---| ----
+  20 | 1
+  50 | 2
+  60 | 1
+ related q-equational-programming-language scheme k apl sql
+ summary Q is a proprietary array processing language developed by Arthur Whitney and commercialized by Kx Systems. The language serves as the query language for kdb+, a disk based and in-memory, column-based database. kdb+ is based upon K, a terse variant of APL. Q is a thin wrapper around K, providing a more readable, English-like interface.
+ pageId 18595067
+ dailyPageViews 99
+ created 2008
+ backlinksCount 23
+ revisionCount 91
+ appeared 2003
+
+tiobe Q
+
+githubBigQuery q
+ repos 170
+ users 157
+
+linguistGrammarRepo https://github.com/komsit37/sublime-q
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 7
+ commitCount 73
+ sampleCount 2
+ example
+  dst:`:tq
+  src:`:tqsrc
+  F:key src
+  
+  / trade fields (types;widths)   trf after 200609
+  tf:`time`ex`sym`s`cond`size`price`stop`corr`seq`cts`trf
+  tt:("TCSS*IFBIJCC ";9 1 6 10 4 9 11 1 2 16 1 1,1+20060930<"I"$-8#string first F)
+  
+  / quote fields (types;widths)
+  qf:`time`ex`sym`s`bid`bsize`ask`asize`cond`mmid`bex`aex`seq`bbo`qbbo`corr`cqs
+  qt:("TCSSFIFIC*CCJCCCC ";9 1 6 10 11 7 11 7 1 4 1 1 16 1 1 1 1 2)
+  
+  / sym[.s] "e"$pricebidask
+  g:{[f;x]`sym`time xcols delete s from @[;`sym;{$[null y;x;` sv x,y]}';x`s]@[x;f;"e"$%;1e4]}
+  foo:{[d;f;t;g;x]@[;`sym;`p#].Q.dsftg[(dst;"D"$-8#string x;d);(` sv src,x;sum t 1;0);f;t;g]}
+  
+  \t foo[`trade;tf;tt;g[`price]  ]each F where F like"taqtrade*[0-9]";
+  \t foo[`quote;qf;qt;g[`bid`ask]]each F where F like"taqquote*[0-9]";
+  
+  \
+  http://www.nyxdata.com/Data-Products/Daily-TAQ
+  
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2008|CreateSpace Independent Publishing Platform|Q For Mortals: A Tutorial In Q Programming|Borror, Jeffry A.|9781434829016
+
+githubLanguage q
+ fileExtensions q
+ type programming
+ aceMode text
+ tmScope source.q
+ repos 768
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2012|Static Type Inference for the Q language using Constraint Logic Programming|10.4230/LIPIcs.ICLP.2012.119|4|0|Zsolt Zombori and J. Csorba and P. Szeredi|416a54053b15552edd56b98f688135cb92061b9e
+ 2019|Programming quantum computers: a primer with IBM Q and D-Wave exercises|10.1145/3293883.3302578|3|0|F. Mueller and Greg Byrd and P. Dreher|4e8508575d95a7262084d73b61ecdf2c3691437d

@@ -1,0 +1,27 @@
+import ../code/conceptPage.scroll
+
+id sora
+name sora
+appeared 2019
+tags pl
+
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/dgs976/cast_expressions_syntax_semantics/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+
+example
+ func get(node: &mut Foo, k: usize) -> maybe &mut Foo {
+     if k == 0 {
+         return node // no semicolons, only newlines
+     } else if let next = node->next { // node->next is a maybe &mut Foo, this accesses the value of the maybe type.
+         return get(next, k-1)
+     } else {
+         return null
+     }
+ }
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

@@ -1,0 +1,48 @@
+import ../code/conceptPage.scroll
+
+id cpl
+name CPL
+appeared 1963
+creators Christopher Strachey
+tags pl
+standsFor Combined Programming Language
+
+fileType text
+centralPackageRepositoryCount 0
+country United Kingdom
+originCommunity University of Cambridge && University of London
+
+assignmentToken :=
+
+hasAssignment true
+
+wikipedia https://en.wikipedia.org/wiki/CPL_(programming_language)
+ example
+  Max(Items, ValueFunction) = value of
+  § (Best, BestVal) = (NIL, -∞)
+  while Items do §
+  (Item, Val) = (Head(Items), ValueFunction(Head(Items)))
+  if Val > BestVal then (Best, BestVal) := (Item, Val)
+  Items := Rest(Items) §⃒
+  result is Best §⃒
+ related algol-60 bcpl pop-2 b c
+ summary CPL (Combined Programming Language) is a multi-paradigm programming language, that was developed in the early 1960s.  It is an early ancestor of the C language via the BCPL and B languages.
+ pageId 828614
+ created 2001
+ backlinksCount 31
+ revisionCount 157
+ dailyPageViews 58
+ appeared 1963
+
+hopl https://hopl.info/showlanguage.prx?exp=181
+
+isbndb 0
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1963|The Main Features of CPL|10.1093/COMJNL/6.2.134|66|1|D. W. Barron and J. Buxton and D. Hartley and Eric Nixon and C. Strachey|8da5a37ad82fef63bb2fc61103556506e4a7df74
+ 2013|How BCPL Evolved from CPL|10.1093/comjnl/bxs026|1|0|M. Richards|d6b48c3577d5115b6d7e848accea82e65046b6d4
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Cpl (Programming Language)||Jesse Russell|54888258|0.0|0|0

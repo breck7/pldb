@@ -1,0 +1,159 @@
+import ../code/conceptPage.scroll
+
+id pug
+name Pug
+appeared 2010
+creators Tj Holowaychuk
+tags template
+website https://pugjs.org
+latestVersion 2.0.0-beta6
+webRepl https://playcode.io/pug/
+
+isOpenSource true
+writtenIn pug json html javascript markdown yaml typescript stylus css coffeescript
+clocExtensions jade pug
+fileType text
+documentation https://pugjs.org/api/getting-started.html
+monaco pug
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2010
+ commits 2715
+ committers 266
+ files 918
+ newestCommit 2021
+country Various
+originCommunity https://github.com/pugjs
+
+pygmentsHighlighter Pug
+ filename html.py
+ fileExtensions pug jade
+rijuRepl https://riju.codes/pug
+ example
+  html
+    body
+      p Hello, world!
+  
+leachim6 Pug
+ filepath p/Pug.pug
+ fileExtensions pug
+ example
+  doctype html
+  html
+      head
+         title Hello World
+      body
+         h1 Hello World
+
+keywords append block case default doctype each else extends for if in include mixin typeof unless var when
+githubRepo https://github.com/pugjs/pug
+ firstCommit 2010
+ stars 20817
+ forks 1973
+ subscribers 553
+ created 2010
+ updated 2022
+ description Pug – robust, elegant, feature rich template engine for Node.js
+ issues 280
+
+lineCommentToken //
+
+hasSemanticIndentation true
+hasForEachLoops true
+ ul
+   each val in [1, 2, 3, 4, 5]
+     li= val
+hasImports true
+ //- index.pug
+ doctype html
+ html
+   include includes/head.pug
+   body
+     h1 My Site
+     p Welcome to my super lame site.
+     include includes/foot.pug
+hasConditionals true
+ - var user = {description: 'foo bar baz'}
+ - var authorised = false
+ #user
+   if user.description
+     h2.green Description
+     p.description= user.description
+   else if authorised
+     h2.blue Description
+     p.description.
+       User has no description,
+       why not add one...
+   else
+     h2.red Description
+     p.description User has no description
+hasSwitch true
+ - var friends = 10
+ case friends
+   when 0
+     p you have no friends
+   when 1
+     p you have a friend
+   default
+     p you have #{friends} friends
+hasFunctions true
+ mixin article(title)
+   .article
+     .article-wrapper
+       h1= title
+       if block
+         block
+       else
+         p No content provided
+ 
+ +article('Hello world')
+ 
+ +article('Hello world')
+   p This is my
+   p Amazing article
+hasAssignment true
+ - var title = "On Dogs: Man's Best Friend";
+ 
+ h1= title
+hasStrings true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasInheritance true
+
+domainName pugjs.org
+ awisRank
+  2022 173271
+
+githubBigQuery Pug
+ repos 575
+ users 528
+
+linguistGrammarRepo https://github.com/davidrios/jade-tmbundle
+ firstCommit 2010
+ lastCommit 2016
+ committerCount 16
+ commitCount 118
+ sampleCount 2
+ example
+  p.
+    Hello,
+    World!
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2016|Apress|Programming Web Applications with Node, Express and Pug|Krause, Jörg|9781484225103
+ 20161220|Springer Nature|Programming Web Applications with Node, Express and Pug|Jörg Krause|9781484225110
+
+githubLanguage Pug
+ fileExtensions jade pug
+ trendingProjectsCount 0
+ type markup
+ aceMode jade
+ codemirrorMode pug
+ codemirrorMimeType text/x-pug
+ tmScope text.jade
+ repos 11560
+
+semanticScholar 0

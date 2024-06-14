@@ -1,0 +1,157 @@
+ActionScript
+============
+
+ActionScript is a programming language created in 1998 by Gary Grossman.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Gary%20Grossman
+
+#132 on PLDB
+26 Years Old
+25k Repos
+
+438 184 ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (later acquired by Adobe Systems). It is a derivation of HyperTalk, the scripting language for HyperCard. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ActionScript
+
+- ActionScript Wikipedia page
+ https://en.wikipedia.org/wiki/ActionScript
+- ActionScript docs
+ https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html
+- There are at least 24,615 ActionScript repos on GitHub
+- ActionScript first developed in Macromedia
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using ActionScript in 9k repos on GitHub
+- Explore ActionScript snippets on Rosetta Code
+- ActionScript appears in the TIOBE Index
+- Pygments supports syntax highlighting for ActionScript
+- GitHub supports syntax highlighting for ActionScript
+- Indeed.com has 88 matches for "ActionScript developer".
+- See also: (11 related languages)JavaScript, Java, Haxe, HyperTalk, HyperCard, iOS, Android, JSON, OpenGL, XML, MXML
+- 6 languages in PLDB linking to ActionScript: Ace Editor, Haxe, JFlex, LinearML, MonkeyX, Pygments
+
+package
+{
+	import flash.display.Sprite;
+	import flash.text.TextField;
+	
+	public class actionscript extends Sprite
+	{
+		private var hello:TextField = new TextField();
+		
+		public function actionscript(){
+			hello.text = &quot;Hello World&quot;;
+			addChild(hello);
+		}
+	}
+}
+
+package mypackage
+{
+	public class Hello
+	{
+		/* Let&#39;s say hello!
+		 * This is just a test script for Linguist&#39;s Actionscript detection.
+		 */
+		public function sayHello():void
+		{
+			trace(&quot;Hello, world&quot;);
+		}
+	}
+}
+
+private function getNeighbours(_arg1:int, _arg2:int):Array{
+  var _local3:Array = -(((null - !NULL!) % ~(undefined)));
+  var _local4:*;
+  var _local5:*;
+  var _local6:*;
+  _local3 = new Array();
+  _local4 = 0;
+  for (;//unresolved jump
+  , _arg2 &lt; 8;_local4++) {
+    _local5 = (_arg1 + int(!NULL!));
+    _local6 = (_arg2 + int(!NULL!));
+    if (true){
+      _arg1 = (((//unresolved nextvalue or nextname &lt;&lt; !NULL!) + !NULL!)
+&lt;&lt; undefined);
+      _arg1 = (!(!NULL!) ^ !NULL!);
+      (!NULL! instanceof !NULL!);
+      var _local1 = (((!NULL! as !NULL!) + !NULL!) == this);
+      if (!(!NULL! == !NULL!)){
+        -((true &lt;&lt; !NULL!)).push(Cell(cells[_local5][_local6]));
+      }
+    }
+    if (!true){
+      (_local6 &lt; 0);
+      (_local6 &lt; 0);
+      (_local5 &lt; 0);
+    }
+  }
+return (_local3);
+}
+
+Language features
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  /* A comment
+  */
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token trace
+ Example
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Token 
+ Example
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

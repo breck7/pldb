@@ -1,0 +1,52 @@
+ArchieML
+========
+
+ArchieML is a data notation created in 2015.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2086 on PLDB
+9 Years Old
+
+Try now: Web
+
+- ArchieML website
+ http://archieml.org/
+- ArchieML first developed in The New York Times
+
+[days]
+* Sunday
+note: holiday!
+* Monday
+* Tuesday
+
+Whitespace is still fine around the &#39;*&#39;
+  *   Wednesday
+
+* Thursday
+
+Friday!
+* Friday
+* Saturday
+[]
+[+books]
+kicker: Books you should read
+
+score: ★★★★★!!!
+title: Wuthering Heights
+author: Emily Brontë
+
+title: Middlemarch
+author: George Eliot
+score: ★★★★☆
+[]
+
+Language features
+======================================================
+
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example
+  AML ignores all whitespace not within a value. We believe this makes it easier for non-programmers to use, and is essential for use in environments with non-monospaced fonts, like in Google Documents.

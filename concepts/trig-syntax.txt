@@ -1,0 +1,39 @@
+TriG syntax
+===========
+
+TriG syntax is a data notation created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3390 on PLDB
+17 Years Old
+
+TriG is a serialization format for RDF (Resource Description Framework) graphs. It is a plain text format for serializing named graphs and RDF Datasets which offers a compact and readable alternative to the XML-based TriX syntax.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/TriG_(syntax)
+
+- TriG syntax Wikipedia page
+ https://en.wikipedia.org/wiki/TriG_(syntax)
+
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+ @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+ @prefix swp: &lt;http://www.w3.org/2004/03/trix/swp-1/&gt; .
+ @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+ @prefix ex: &lt;http://www.example.org/vocabulary#&gt; .
+ @prefix : &lt;http://www.example.org/exampleDocument#&gt; .
+ 
+ :G1 { :Monica ex:name &quot;Monica Murphy&quot; .
+       :Monica ex:homepage &lt;http://www.monicamurphy.org&gt; .
+       :Monica ex:email &lt;mailto:monica@monicamurphy.org&gt; .
+       :Monica ex:hasSkill ex:Management }
+ 
+ :G2 { :Monica rdf:type ex:Person .
+       :Monica ex:hasSkill ex:Programming }
+ 
+ :G3 { :G1 swp:assertedBy _:w1 .
+       _:w1 swp:authority :Chris .
+       _:w1 dc:date &quot;2003-10-02&quot;^^xsd:date .
+       :G2 swp:quotedBy _:w2 .
+       :G3 swp:assertedBy _:w2 .
+       _:w2 dc:date &quot;2003-09-03&quot;^^xsd:date .
+       _:w2 swp:authority :Chris .
+       :Chris rdf:type ex:Person .
+       :Chris ex:email &lt;mailto:chris@bizer.de&gt; }

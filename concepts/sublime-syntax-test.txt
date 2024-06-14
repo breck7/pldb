@@ -1,0 +1,42 @@
+Sublime Syntax Test Lang
+========================
+
+Sublime Syntax Test Lang is a grammar language created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3504 on PLDB
+16 Years Old
+
+- Sublime Syntax Test Lang website
+ https://www.sublimetext.com/docs/3/syntax.html#testing
+
+// SYNTAX TEST &quot;Packages/C/C.sublime-syntax&quot;
+#pragma once
+// &lt;- source.c meta.preprocessor.c++
+ // &lt;- keyword.control.import
+
+// foo
+// ^ source.c comment.line
+// &lt;- punctuation.definition.comment
+
+/* foo */
+// ^ source.c comment.block
+// &lt;- punctuation.definition.comment.begin
+//     ^ punctuation.definition.comment.end
+
+#include &quot;stdio.h&quot;
+// &lt;- meta.preprocessor.include.c++
+//       ^ meta string punctuation.definition.string.begin
+//               ^ meta string punctuation.definition.string.end
+int square(int x)
+// &lt;- storage.type
+//  ^ meta.function entity.name.function
+//         ^ storage.type
+{
+    return x * x;
+//  ^^^^^^ keyword.control
+}
+
+&quot;Hello, World! // not a comment&quot;;
+// ^ string.quoted.double
+//                  ^ string.quoted.double - comment

@@ -1,0 +1,125 @@
+Ant Build System
+================
+
+Ant Build System is an application created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1169 on PLDB
+24 Years Old
+
+- Ant Build System website
+ http://ant.apache.org/
+- Ant Build System first developed in Apache Software Foundation
+- GitHub supports syntax highlighting for Ant Build System
+- Read more about Ant Build System on the web: 1.
+ https://en.wikipedia.org/wiki/Apache_Ant
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt;
+&lt;project name=&quot;WebBuild&quot;&gt;
+
+    &lt;!-- generate timestamps --&gt;
+    &lt;tstamp /&gt;
+
+    &lt;!-- Debugging Macro --&gt;
+    &lt;import file=&quot;echopath.xml&quot; /&gt;
+
+    &lt;!-- JS build files macro --&gt;
+    &lt;import file=&quot;rhinoscript.xml&quot; /&gt;
+
+    &lt;!-- Component Build Files --&gt;
+    &lt;import file=&quot;setup.xml&quot; /&gt;
+    &lt;import file=&quot;clean.xml&quot; /&gt;
+    &lt;import file=&quot;copy.xml&quot; /&gt;
+    &lt;import file=&quot;file.transform.xml&quot; /&gt;
+    &lt;import file=&quot;external.tools.xml&quot; /&gt;
+    &lt;import file=&quot;rename.xml&quot; /&gt;
+    &lt;import file=&quot;js.xml&quot; /&gt;
+    &lt;import file=&quot;css.xml&quot; /&gt;
+    &lt;import file=&quot;img.xml&quot; /&gt;
+    &lt;import file=&quot;png8.xml&quot; /&gt;
+    &lt;import file=&quot;yui.xml&quot; /&gt;
+    &lt;import file=&quot;cdn.xml&quot; /&gt;
+    &lt;import file=&quot;datauri.xml&quot; /&gt;
+    &lt;import file=&quot;devlive.xml&quot; /&gt;
+
+    &lt;!-- This dirname is the only complete path we know for sure, everything builds off of it --&gt;
+    &lt;dirname property=&quot;dir.build&quot; file=&quot;${ant.file.WebBuild}&quot; /&gt;
+
+    &lt;!-- get name for newly built folder --&gt;
+    &lt;basename property=&quot;app.name&quot;       file=&quot;${basedir}&quot; /&gt;
+
+    &lt;!-- read global properties file --&gt;
+    &lt;property file=&quot;${dir.build}\build.properties&quot; /&gt;
+
+    &lt;!-- Build Directories --&gt;
+    &lt;property name=&quot;dir.build.js&quot;   location=&quot;${dir.build}/js&quot; /&gt;
+
+    &lt;!-- App Directories --&gt;
+    &lt;property name=&quot;dir.app&quot;        location=&quot;${dir.result}/${app.name}&quot; /&gt;
+    &lt;property name=&quot;dir.app.temp&quot;   location=&quot;${dir.temp}/${app.name}&quot; /&gt;
+    &lt;property name=&quot;dir.app.files&quot;  location=&quot;${dir.app.temp}/${dir.files}&quot; /&gt;
+
+    &lt;!-- Files --&gt;
+    &lt;property name=&quot;mapping.js&quot;     location=&quot;${dir.app.temp}/${mapping.file.js}&quot; /&gt;
+    &lt;property name=&quot;mapping.css&quot;    location=&quot;${dir.app.temp}/${mapping.file.css}&quot; /&gt;
+    &lt;property name=&quot;mapping.img&quot;    location=&quot;${dir.app.temp}/${mapping.file.img}&quot; /&gt;
+    &lt;property name=&quot;mapping.swf&quot;    location=&quot;${dir.app.temp}/${mapping.file.swf}&quot; /&gt;
+    &lt;property name=&quot;mapping.fonts&quot;  location=&quot;${dir.app.temp}/${mapping.file.fonts}&quot; /&gt;
+
+    &lt;!-- Tool Directories --&gt;
+    &lt;property name=&quot;dir.bin&quot;    location=&quot;${dir.build}/Bin&quot; /&gt;
+    &lt;property name=&quot;dir.jar&quot;    location=&quot;${dir.bin}/jar&quot; /&gt;
+
+    &lt;!-- Tool Files --&gt;
+	&lt;property name=&quot;tools.compressor&quot;     location=&quot;${dir.jar}/${tools.file.compressor}&quot; /&gt;
+	&lt;property name=&quot;tools.cssembed&quot;       location=&quot;${dir.jar}/${tools.file.cssembed}&quot; /&gt;
+    &lt;property name=&quot;tools.filetransform&quot;  location=&quot;${dir.jar}/${tools.file.filetransform}&quot; /&gt;
+    &lt;property name=&quot;tools.optipng&quot;        location=&quot;${dir.bin}/${tools.file.optipng}&quot; /&gt;
+    &lt;property name=&quot;tools.jpegtran&quot;       location=&quot;${dir.bin}/${tools.file.jpegtran}&quot; /&gt;
+
+    &lt;!-- BUILD TARGETS --&gt;
+
+    &lt;!-- low level utility build targets --&gt;
+
+    &lt;!-- Build the tools --&gt;
+    &lt;target name=&quot;-setup.build.tools&quot;
+            depends=&quot;-define.filetransform, -define.cssembed, -define.yuicompressor, -define.jsclasspath&quot;
+    /&gt;
+
+    &lt;!-- set up filesystem properties --&gt;
+    &lt;target
+        name=&quot;-setup&quot;
+        depends=&quot;-setup.mode, -setup.conditions, -setup.js, -setup.css, -setup.swf, -setup.img, -setup.fonts, -setup.yui&quot;
+    /&gt;
+
+    &lt;!-- utility-ish targets --&gt;
+    &lt;target name=&quot;copy&quot;         depends=&quot;clean, tools, -copy&quot; /&gt;
+    &lt;target name=&quot;tools&quot;        depends=&quot;-setup.build.tools&quot; /&gt;
+    &lt;target name=&quot;finalize&quot;     depends=&quot;copy, -finalize&quot; /&gt;
+    &lt;target name=&quot;-prepare&quot;     depends=&quot;copy, -setup&quot; /&gt;
+
+    &lt;!-- individual component build targets (empty descriptions are to make sure they show in &quot;ant -p&quot;) --&gt;
+    &lt;target name=&quot;devlive&quot;      depends=&quot;-prepare, -devlive&quot;            description=&quot;&quot; /&gt;
+    &lt;target name=&quot;js&quot;           depends=&quot;-prepare, -js&quot;                 description=&quot;&quot; /&gt;
+    &lt;target name=&quot;css&quot;          depends=&quot;-prepare, -css&quot;                description=&quot;&quot; /&gt;
+    &lt;target name=&quot;rename&quot;       depends=&quot;-prepare, -rename&quot;             description=&quot;&quot; /&gt;
+    &lt;target name=&quot;yui&quot;          depends=&quot;-prepare, rename, -yui&quot;        description=&quot;&quot; /&gt;
+    &lt;target name=&quot;cdn&quot;          depends=&quot;-prepare, -cdn&quot;                description=&quot;&quot; /&gt;
+
+    &lt;!-- high level build targets (Excluding of images is on purpose here, it&#39;s slow) --&gt;
+    &lt;target name=&quot;core&quot;
+            depends=&quot;devlive, js, css, cdn, rename, yui, -js.inline&quot;
+            description=&quot;Core build work&quot;
+    /&gt;
+
+    &lt;target name=&quot;prod&quot;
+            depends=&quot;core, finalize&quot;
+            description=&quot;Full Production Build&quot;
+    /&gt;
+
+    &lt;!-- debug target --&gt;
+    &lt;target name=&quot;debug&quot; depends=&quot;-setup&quot;&gt;
+        &lt;echoproperties/&gt;
+    &lt;/target&gt;
+
+&lt;/project&gt;

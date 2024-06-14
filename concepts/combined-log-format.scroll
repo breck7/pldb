@@ -1,0 +1,16 @@
+import ../code/conceptPage.scroll
+
+id combined-log-format
+name Combined Log Format
+appeared 2002
+tags textDataFormat
+conceptDescription Common Log Format plus referrer and user agent columns.
+
+forkOf common-log-format
+country United States
+originCommunity University of Illinois at Urbana–Champaign
+reference https://documentation.softwareag.com/webmethods/microservices_container/msc10-11/10-11_MSC_PIE_webhelp/index.html#page/integration-server-integrated-webhelp/to-http_log_4.html
+reference http://justsolve.archiveteam.org/wiki/Combined_Log_Format
+
+example
+ 0:0:0:0:0:0:0:1 - Administrator [17/Sep/2021:13:51:27 -0400] "GET /invoke/pub.flow/getTransportInfo" 200 2502 https://mycompany.com/test/webapp "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"

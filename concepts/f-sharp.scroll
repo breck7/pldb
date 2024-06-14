@@ -1,0 +1,224 @@
+import ../code/conceptPage.scroll
+
+id f-sharp
+name F#
+appeared 2005
+creators Don Syme
+tags pl
+website http://fsharp.org
+releaseNotes https://github.com/dotnet/fsharp/blob/main/release-notes.md
+aka f#
+aka fsharp
+
+isOpenSource true
+fileExtensions fs fsi fsx fsscript
+visualParadigm false
+clocExtensions fsi fs fs
+fileType text
+documentation https://learn.microsoft.com/en-us/dotnet/fsharp/
+faq https://forums.fsharp.org/
+monaco fsharp
+quineRelay F#
+replit https://repl.it/languages/fsharp
+packageRepository https://www.nuget.org/
+ubuntuPackage fsharp
+country United Kingdom
+originCommunity Microsoft Research
+projectEuler F#
+ memberCount
+  2019 1199
+  2022 1245
+reference https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/index
+
+helloWorldCollection F#
+ (* Hello World in F# *)
+ 
+ printf "Hello World!\n"
+pygmentsHighlighter F#
+ filename dotnet.py
+ fileExtensions fs fsi
+rijuRepl https://riju.codes/fsharp
+ example
+  printfn "Hello, world!"
+  
+leachim6 FSharp
+ filepath f/FSharp.fs
+ fileExtensions fs
+ example
+  printfn "Hello World"
+  
+compilerExplorer F#
+ example
+  module Program
+  
+  let square num = num * num
+  
+
+meetup https://www.meetup.com/topics/f-programming
+ memberCount 37224
+ groupCount 128
+keywords abstract and atomic as assert asr base begin break checked component const constraint constructor continue class default delegate do done downcast downto elif else end exception eager event external extern false finally for fun function fixed functor global if in include inherit inline interface internal land lor lsl lsr lxor lazy let match member mod module mutable namespace method mixin new not null of open or object override private parallel process protected pure public rec return static sealed struct sig then to true tailcall trait try type upcast use val void virtual volatile when while with yield
+
+lineCommentToken //
+multiLineCommentTokens (* *)
+printToken printfn
+stringToken "
+booleanTokens true false
+
+hasComments true
+hasDocComments true
+ /// Adds 2 numbers
+ let rec add x y =
+  x + y
+hasDirectives true
+ #if VERSION1
+ let function1 x y =
+    printfn "x: %d y: %d" x y
+    x + 2 * y
+ #else
+ let function1 x y =
+    printfn "x: %d y: %d" x y
+    x - 2*y
+ #endif
+ // Line directives as source maps can be used when compiling to F#:
+ #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
+hasImports true
+ open module-or-namespace-name
+ open System.IO
+ open List
+ open Seq
+hasNamespaces true
+ namespace Widgets
+ type MyWidget1 =
+    member this.WidgetName = "Widget1"
+ module WidgetsModule =
+    let widgetName = "Widget2"
+hasOperatorOverloading true
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasUnitsOfMeasure true
+ // https://fsharpforfunandprofit.com/posts/units-of-measure/
+ [<Measure>] type N = kg m/sec^2
+ 
+ let force1 = 5.0<kg m/sec^2>
+ let force2 = 5.0<N>
+ 
+ force1 = force2 // true
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasStrings true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasFunctions true
+hasAccessModifiers true
+hasConditionals true
+hasOctals true
+ // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+hasHexadecimals true
+ // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
+hasFloats true
+ // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
+hasIntegers true
+ // \d[\d_]*[uU]?[yslLnQRZINGmM]?
+hasBinaryNumbers true
+ // 0[bB][01][01_]*[uU]?[yslLn]?
+
+jupyterKernel https://github.com/fsprojects/IfSharp
+wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+ example
+  /// A simple prime number detector
+  let isPrime (n:int) =
+     let bound = int (sqrt (float n))
+     seq {2 .. bound} |> Seq.forall (fun x -> n % x <> 0)
+  
+  // We are using async workflows
+  let primeAsync n =
+      async { return (n, isPrime n) }
+  
+  /// Return primes between m and n using multiple threads
+  let primes m n =
+      seq {m .. n}
+          |> Seq.map primeAsync
+          |> Async.Parallel
+          |> Async.RunSynchronously
+          |> Array.filter snd
+          |> Array.map fst
+  
+  // Run a test
+  primes 1000000 1002000
+      |> Array.iter (printfn "%d")
+ summary F# (pronounced F sharp) is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods. F# is most often used as a cross-platform Common Language Infrastructure (CLI) language, but it can also generate JavaScript and graphics processing unit (GPU) code. F# is developed by the F# Software Foundation, Microsoft and open contributors. An open source, cross-platform compiler for F# is available from the F# Software Foundation. F# is also a fully supported language in Visual Studio and Xamarin Studio. Other tools supporting F# development include Mono, MonoDevelop, SharpDevelop, MBrace and WebSharper. Plug-ins supporting F# exist for many widely used editors, most notably the Ionide extension for Atom and Visual Studio Code, and integrations for other editors such as Vim, Emacs, and Sublime Text. F# is member of the ML language family and originated as a .NET Framework implementation of a core of the programming language OCaml, It has also been influenced by C#, Python, Haskell, Scala, and Erlang.
+ pageId 239964
+ dailyPageViews 619
+ created 2003
+ backlinksCount 429
+ revisionCount 714
+ appeared 2005
+ fileExtensions fs fsi fsx fsscript
+
+hopl https://hopl.info/showlanguage.prx?exp=3716
+tiobe F#
+
+domainName fsharp.org
+ awisRank
+  2022 560999
+  2017 443419
+
+githubBigQuery F#
+ repos 5877
+ users 3845
+
+linguistGrammarRepo https://github.com/fsprojects/atom-fsharp
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 6
+ commitCount 347
+ sampleCount 8
+ example
+  module Sample
+  
+  open System
+  
+  type Foo =
+      {
+          Bar : string
+      }
+  
+  type Baz = interface end
+  
+  let Sample1(xs : int list) : string =
+      xs
+      |> List.map (fun x -> string x)
+      |> String.concat ","
+  
+
+isbndb 0
+
+githubLanguage F#
+ fileExtensions fs fsi fsx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  dotnet fsharp https://github.com/dotnet.png https://github.com/dotnet/fsharp F# #b845fc 1919 476 39 "The F# compiler, FSharp.Core library, and tools for F#"
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ codemirrorMode mllike
+ codemirrorMimeType text/x-fsharp
+ tmScope source.fsharp
+ aliases fsharp
+
+stackOverflowSurvey
+ 2021
+  users 804
+  medianSalary 81037
+  fans 2157
+  percentageUsing 0.01
+
+semanticScholar 0

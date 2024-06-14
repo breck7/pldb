@@ -1,0 +1,22 @@
+tablam
+======
+
+tablam is a query language created in 2020 by Mario Montoya.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Mario%20Montoya
+
+#1495 on PLDB
+4 Years Old
+
+git clone https://github.com/Tablam/TablaM
+
+The practical relational programing language for data-oriented applications
+
+- tablam website
+ http://www.tablam.org/
+- tablam is developed on GitHub and has 132 stars
+- tablam is written in Rust, Markdown, TOML, Bourne shell, JSON, YAML, HTML, SVG, CSS, JavaScript, XML
+- tablam.org was registered in 2014
+
+city ?where .population &gt; 100_000 ?select .name, .country
+points ?sort .x

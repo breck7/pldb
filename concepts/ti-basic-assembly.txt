@@ -1,0 +1,78 @@
+TI Program
+==========
+
+TI Program is an assembly language created in 1970.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3368 on PLDB
+54 Years Old
+2m Repos
+
+- There are at least 1,586,478 TI Program repos on GitHub
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using TI Program in 7 repos on GitHub
+- Read more about TI Program on the web: 1.
+ https://en.wikipedia.org/wiki/TI-BASIC
+
+.AlphaCS
+#ExprOff
+If getKey(41)
+	sub(ADM)
+End
+Lbl START
+&quot;appv alpha &quot;-&gt;Str1
+&quot;appvAlphaCS&quot;-&gt;Str2
+.ALPHA CS
+[7EFFFFE7FFFFE7E7]-&gt;Pic11
+[E0E0E0E0E0FFFF7F]-&gt;Pic12
+[FEFFE7FFFEE0E0E0]-&gt;Pic13
+[E7E7E7FFFFE7E7E7]-&gt;Pic14
+[7EFFFFE7FFFFE7E7]-&gt;Pic15
+[7FFFFFE0E0FFFF7F]-&gt;Pic16
+[7FFFFF781EFFFFFE]-&gt;Pic17
+.arch
+[0038447C44440000]-&gt;Pic21
+.hide
+[0054004400540000]-&gt;Pic22
+.lock
+[0038447C7C7C0000]-&gt;Pic23
+.(c) Scott Mangiapane
+Data(72,8)-&gt;GDB0
+[42600A360008000100994DDF2A6C61B1B28091294A22AAAAAAAB005A6DCA226A69B9A9800000000000202000000000000000C0200000000000000000000000000000000000000000]
+.icon unknown
+Data(16,16)-&gt;GDB11
+[EFFEA803EB8308032BFB28032BFB0803EBFBA803EBFB08032B8328032FFF07FF]
+.icon SRC
+Data(16,16)-&gt;GDB12
+[01801A583E7C3FFC3FFC3E7C1A580A500240FFFFC471BDAFCC6FF5AF8DB1FFFF]
+.icon ASM
+Data(16,16)-&gt;GDB13
+[FFFFFFFFFFFFFFFFFFFFCE6BB5D586D5B75DB4DDFFFFFFFFFFFFFFFFFFFFFFFF]
+.icon shell
+Data(16,16)-&gt;GDB14
+[FFFFFFFFFFFFFFFFFFFFFFFF97B5B155D5359595FFFFFFFFFFFFFFFFFFFFFFFF]
+Goto SET
+prgmSRCFUNC
+prgmSRCGUI
+prgmSRCSORT
+Lbl SET
+.start, set up
+ClrDraw
+StoreGDB
+DiagnosticOff
+Fix 5
+Full
+!If GetCalc(Str1,[Y1])
+	sub(NEW)
+	StoreGDB
+End
+GetCalc(Str1,[Y1])
+If {[Y1]+0}
+	!If sub(CODE)
+		Goto END
+	End
+End
+Asm(FDCB249E)
+If {[Y1]+6}
+	Asm(FDCB24DE)
+End
+Goto DLIST

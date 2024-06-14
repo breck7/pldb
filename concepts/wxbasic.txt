@@ -1,0 +1,110 @@
+WxBasic
+=======
+
+WxBasic is an open source programming language created in 2002.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2058 on PLDB
+22 Years Old
+
+wxBasic is a free software / open-source software, cross-platform BASIC interpreter. As it is based on syntax of the BASIC language, it is designed to be simple to learn and understand, and allow novice programmers to write applications for graphical environments like Windows and Linux with minimal effort.  wxBasic is a bytecode based language, like Perl or Java. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/WxBasic
+
+- WxBasic Wikipedia page
+ https://en.wikipedia.org/wiki/WxBasic
+- See also: (5 related languages)Linux, Perl, Java, Visual Basic, C
+
+&#39; from http://wxbasic.sourceforge.net/phpBB2/viewtopic.php?t=554
+  &#39; Simple Text Viewer written in wxBasic
+  dim AppName = &quot;Text Viewer&quot;
+  fileName = &quot;&quot;
+
+  &#39; Main window
+  dim frame = new wxFrame( Nothing, -1, AppName &amp; &quot; - Untitled Document&quot; )
+  &#39; Text edit control
+  dim control = new wxTextCtrl( frame, -1, &quot;&quot;, wxPoint( 0, 0 ),
+  wxSize( 100, 100 ), wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH)
+
+  &#39; Status bar - The one at the bottom of the window
+  dim status = frame.CreateStatusBar( 1 )
+  frame.SetStatusText(&quot;Ready&quot;)
+  &#39;
+  &#39; Dialog used for Open
+  dim fileDialog = new wxFileDialog( frame )
+  &#39;
+  &#39; add menubar to the frame
+  dim mBar = new wxMenuBar()
+  frame.SetMenuBar(mBar)
+  &#39;
+  &#39; build the &quot;File&quot; dropdown menu
+  dim mFile = new wxMenu()
+  mBar.Append(mFile, &quot;&amp;File&quot;)
+
+  &#39; make it
+  &#39;
+  mFile.Append( wxID_OPEN, &quot;&amp;Open...&quot;, &quot;Loads an existing file from disk&quot; )
+  &#39;
+  mFile.AppendSeparator()
+  mFile.Append( wxID_EXIT, &quot;E&amp;xit\tAlt-X&quot;, &quot;Exit Application&quot; )
+
+  Sub onFileOpen( event )
+     fileDialog.SetMessage(&quot;Open File&quot;)
+     fileDialog.SetStyle( wxOPEN )
+     If fileDialog.ShowModal() = wxID_OK Then
+       fileName = fileDialog.GetPath()
+       Ext = fileDialog.GetFilename()
+       control.Clear()
+       control.LoadFile( fileName )
+       frame.SetTitle( AppName &amp; &quot; - &quot; &amp; fileName )
+       frame.SetStatusText(Ext)
+    End If
+  End Sub
+  &#39;
+  Connect( frame, wxID_OPEN, wxEVT_COMMAND_MENU_SELECTED, &quot;onFileOpen&quot; )
+
+  Sub onFileExit( event )
+    frame.Close(True)
+  End Sub
+  &#39;
+  Connect( frame, wxID_EXIT, wxEVT_COMMAND_MENU_SELECTED, &quot;onFileExit&quot; )
+
+  &#39; build the &quot;Help&quot; dropdown menu
+  dim mHelp = new wxMenu()
+  mBar.Append(mHelp, &quot;&amp;Help&quot;)
+  mHelp.Append( wxID_HELP, &quot;&amp;About\tF1&quot;, &quot;About this program&quot; )
+  &#39;
+  Sub onHelpAbout( event )
+    Dim msg = &quot;Text View allows any text file\n&quot; &amp;
+    &quot;to be viewed regardless of its extension.\n&quot; &amp;
+    &quot;If the file being opened isn&#39;t a text file\n&quot; &amp;
+    &quot;then it won&#39;t be displayed. There will be a\n&quot; &amp;
+    &quot;little garbage shown and that&#39;s all.&quot;
+    wxMessageBox( msg, &quot;About Text View&quot;, wxOK + wxICON_INFORMATION, frame )
+  End Sub
+  Connect( frame, wxID_HELP, wxEVT_COMMAND_MENU_SELECTED, &quot;onHelpAbout&quot; )
+
+  frame.Show(True)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  ' A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token '
+ Example
+  ' A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

@@ -1,0 +1,58 @@
+GOLD
+====
+
+GOLD is a grammar language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1493 on PLDB
+12 Years Old
+
+GOLD is a free parsing system that is designed to support multiple programming languages.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/GOLD_(parser)
+
+- GOLD website
+ http://goldparser.org/
+- GOLD Wikipedia page
+ https://en.wikipedia.org/wiki/GOLD_(parser)
+- GOLD first developed in California State University, Sacramento
+- goldparser.org was registered in 2011
+- See also: (10 related languages)ANTLR, Visual Basic, Assembly language, C#, D, Java, Pascal, Python, Visual Basic .NET, Regular Expressions
+
+&lt;Statement&gt; ::= if &lt;Expression&gt; then &lt;Statements&gt; end
+            |  while &lt;Expression&gt; do &lt;Statements&gt; end
+            |  for Id = &lt;Range&gt; do &lt;Statements&gt; end
+
+&lt;Statements&gt;  ::= &lt;Statements&gt; &lt;Statement&gt;
+               |  &lt;Statement&gt;
+
+&lt;Statement&gt;   ::= display &lt;Expression&gt;
+               |  display &lt;Expression&gt; read ID
+               |  assign ID &#39;=&#39; &lt;Expression&gt;
+               |  while &lt;Expression&gt; do &lt;Statements&gt; end
+               |  if &lt;Expression&gt; then &lt;Statements&gt; end
+               |  if &lt;Expression&gt; then &lt;Statements&gt; else &lt;Statements&gt; end
+               
+&lt;Expression&gt;  ::= &lt;Expression&gt; &#39;&gt;&#39;  &lt;Add Exp&gt;
+               |  &lt;Expression&gt; &#39;&lt;&#39;  &lt;Add Exp&gt;
+               |  &lt;Expression&gt; &#39;&lt;=&#39; &lt;Add Exp&gt;
+               |  &lt;Expression&gt; &#39;&gt;=&#39; &lt;Add Exp&gt;
+               |  &lt;Expression&gt; &#39;==&#39; &lt;Add Exp&gt;
+               |  &lt;Expression&gt; &#39;&lt;&gt;&#39; &lt;Add Exp&gt;
+               |  &lt;Add Exp&gt;
+
+&lt;Add Exp&gt;     ::= &lt;Add Exp&gt; &#39;+&#39; &lt;Mult Exp&gt;
+               |  &lt;Add Exp&gt; &#39;-&#39; &lt;Mult Exp&gt;
+               |  &lt;Add Exp&gt; &#39;&amp;&#39; &lt;Mult Exp&gt;
+               |  &lt;Mult Exp&gt;
+
+&lt;Mult Exp&gt;    ::= &lt;Mult Exp&gt; &#39;*&#39; &lt;Negate Exp&gt;
+               |  &lt;Mult Exp&gt; &#39;/&#39; &lt;Negate Exp&gt;
+               |  &lt;Negate Exp&gt;
+
+&lt;Negate Exp&gt;  ::= &#39;-&#39; &lt;Value&gt;
+               |  &lt;Value&gt;
+
+&lt;Value&gt;       ::= Identifier
+               |  StringLiteral
+               |  NumberLiteral
+               |  &#39;(&#39; &lt;Expression&gt; &#39;)&#39;

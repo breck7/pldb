@@ -1,0 +1,42 @@
+Open Data Protcol
+=================
+
+Open Data Protcol is a protocol created in 2007.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1178 on PLDB
+17 Years Old
+
+In computing, Open Data Protocol (OData) is an open  protocol which allows the creation and consumption of queryable and interoperable RESTful  APIs in a simple and standard way. Microsoft initiated OData in 2007. Versions 1.0, 2.0, and 3.0 are released under the Microsoft Open Specification Promise. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Open_Data_Protocol
+
+- Open Data Protcol website
+ https://www.odata.org/
+- Open Data Protcol Wikipedia page
+ https://en.wikipedia.org/wiki/Open_Data_Protocol
+- Open Data Protcol first developed in Microsoft
+- odata.org was registered in 2009
+
+{
+  &quot;@odata.context&quot;: &quot;http://services.odata.org/V4/OData/OData.svc/$metadata#Products&quot;,
+  &quot;value&quot;: [
+    {
+      &quot;ID&quot;: 0,
+      &quot;Name&quot;: &quot;Meat&quot;,
+      &quot;Description&quot;: &quot;Red Meat&quot;,
+      &quot;ReleaseDate&quot;: &quot;1992-01-01T00:00:00Z&quot;,
+      &quot;DiscontinuedDate&quot;: null,
+      &quot;Rating&quot;: 14,
+      &quot;Price&quot;: 2.5
+    },
+    {
+      &quot;ID&quot;: 1,
+      &quot;Name&quot;: &quot;Milk&quot;,
+      &quot;Description&quot;: &quot;Low fat milk&quot;,
+      &quot;ReleaseDate&quot;: &quot;1995-10-01T00:00:00Z&quot;,
+      &quot;DiscontinuedDate&quot;: null,
+      &quot;Rating&quot;: 3,
+      &quot;Price&quot;: 3.5
+    }
+  ]
+}

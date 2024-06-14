@@ -1,0 +1,95 @@
+import ../code/conceptPage.scroll
+
+id pan
+name Pan
+appeared 2011
+creators Charles Loomis
+tags pl
+website http://www.quattor.org/
+
+isOpenSource true
+writtenIn java xml html restructuredtext ini clojure perl vim-script yaml svg python markdown bash
+fileType text
+wordRank 3457
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2011
+ commits 954
+ committers 26
+ files 1267
+ newestCommit 2022
+country Various
+originCommunity https://github.com/quattor
+
+pygmentsHighlighter Pan
+ filename dsls.py
+ fileExtensions pan
+
+githubRepo https://github.com/quattor/pan
+ firstCommit 2011
+ stars 10
+ forks 18
+ subscribers 25
+ created 2012
+ updated 2022
+ description Pan Language Compiler and Tools
+ issues 64
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/Pan_(programming_language)
+ example
+  [ object | declaration | unique | structure ] template template-name;
+  [ statement … ]
+ related java
+ summary The pan configuration language allows the definition of machine configuration information and an associated schema with a simple, human-accessible syntax. A pan language compiler transforms the configuration information contained within a set of pan templates to a machine-friendly XML or JSON format. The pan language is used within the Quattor toolkit to define the desired configuration for one or more machines. The language is primarily a declarative language where elements in a hierarchical tree are set to particular values. The pan syntax is human-friendly and fairly simple, yet allows system administrators to simultaneously set configuration values, define an overall configuration schema, and validate the final configuration against the schema.
+ pageId 33160613
+ created 2011
+ backlinksCount 5
+ revisionCount 27
+ dailyPageViews 4
+ fileExtensions pan tpl
+
+domainName quattor.org
+ registered 2003
+
+githubBigQuery Pan
+ repos 150
+ users 119
+
+linguistGrammarRepo https://github.com/quattor/language-pan
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 17
+ commitCount 117
+ sampleCount 18
+ example
+  unique template site/one/onevm;
+  
+  include 'components/chkconfig/config';
+  
+  # set opennebula map
+  include 'quattor/aii/opennebula/schema';
+  bind "/system/opennebula" = opennebula_vmtemplate;
+  
+  include 'site/config-vm';
+  
+  include 'quattor/aii/opennebula/default';
+  
+  "/software/packages/{acpid}" = dict();
+  "/software/components/chkconfig/service/acpid" = dict('on', '', 'startstop', true);
+  
+
+githubLanguage Pan
+ fileExtensions pan
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pan
+ repos 41

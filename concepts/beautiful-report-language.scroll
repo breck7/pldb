@@ -1,0 +1,26 @@
+import ../code/conceptPage.scroll
+
+id beautiful-report-language
+name beautiful-report-language
+appeared 2003
+tags pl
+website http://brl.sourceforge.net/
+aka BRL
+
+centralPackageRepositoryCount 0
+reference http://brl.sourceforge.net/brl_toc.html
+
+example
+ [(define myname "Bruce")
+ (define my "Bruce's")]
+ 
+ <pre>
+ This is [my] web page.
+ [myname myname
+  myname myname]
+ 
+ [my] favorite person is [[your name here].
+ [my] favorite number is [(brl-random 2)].
+ </pre>
+
+domainName brl.sourceforge.net

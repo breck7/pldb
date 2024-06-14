@@ -1,0 +1,51 @@
+IP Pascal
+=========
+
+IP Pascal is a programming language created in 1990 by Scott Moore.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Scott%20Moore
+
+#1560 on PLDB
+34 Years Old
+
+IP Pascal is an implementation of the Pascal programming language using the IP portability platform, a multiple machine, operating system and language implementation system.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/IP_Pascal
+
+- IP Pascal website
+ https://web.archive.org/web/20190307061527/http://www.moorecad.com/ippas/
+- IP Pascal Wikipedia page
+ https://en.wikipedia.org/wiki/IP_Pascal
+- IP Pascal first developed in https://scottmoore.consulting
+- IP Pascal on HOPL
+ https://hopl.info/showlanguage.prx?exp=6942
+- See also: (10 related languages)Pascal, C#, Unicode, UTF-8, Java, UCSD Pascal, Visual Basic, Turbo Pascal, Linux, ISBN
+
+program hello(input, output);
+ uses gralib;
+ var er: evtrec;
+ begin
+    bcolor(output, green);
+    curvis(output, false);
+    auto(output, false);
+    page(output);
+    fcolor(output, red);
+    frect(output, 50, 50, maxxg(output)-50, maxyg(output)-50);
+    fcolorg(output, maxint, maxint-(maxint div 3), maxint-maxint div 3);
+    frect(output, 50, 50, 53, maxyg(output)-50);
+    frect(output, 50, 50, maxxg(output)-50, 53);
+    fcolorg(output, maxint div 2, 0, 0);
+    frect(output, 52, maxyg(output)-53, maxxg(output)-50, maxyg(output)-50);
+    frect(output, maxxg(output)-53, 52, maxxg(output)-50, maxyg(output)-50);
+    font(output, font_sign);
+    fontsiz(output, 100);
+    binvis(output);
+    fcolor(output, cyan);
+    cursorg(output, maxxg(output) div 2-strsiz(output, &#39;hello, world&#39;) div 2+3,
+                    maxyg(output) div 2-100 div 2+3);
+    writeln(&#39;hello, world&#39;);
+    fcolor(output, blue);
+    cursorg(output, maxxg(output) div 2-strsiz(output, &#39;hello, world&#39;) div 2,
+                    maxyg(output) div 2-100 div 2);
+    writeln(&#39;hello, world&#39;);
+    repeat event(input, er) until er.etype = etterm
+  end.

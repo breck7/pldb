@@ -1,0 +1,47 @@
+import ../code/conceptPage.scroll
+
+id fsl
+name Finite State Language
+appeared 2016
+tags pl
+webRepl https://stonecypher.github.io/jssm-viz-demo/graph_explorer.html
+conceptDescription Finite State Language, or FSL (pronounced "fossil,") is a programming language to make complex Finite State Machines easy to create and maintain. Finite State Machines can help make your code simpler, easier to test, more provable, and easier to reason about.
+
+relatedConcepts dot
+clocExtensions fsl jssm
+country Various
+originCommunity https://github.com/StoneCypher/jssm/issues
+reference https://github.com/StoneCypher/jssm
+
+example
+ machine_name: "Traffic light";
+ 
+ flow: down;
+ 
+ arrange [Green Yellow];
+ 
+ Off 'Enable' -> Red;
+   Red 'Next' => Green 'Next' => Yellow 'Next' => Red;
+ 
+ [Red Yellow Green] ~> Off;
+ 
+ // visual styling
+ 
+ state Red    : { background-color: pink;        corners: rounded; };
+ state Yellow : { background-color: lightyellow; corners: rounded; };
+ state Green  : { background-color: lightgreen;  corners: rounded; };
+ 
+ state Off : {
+   background-color : steelblue;
+   text-color       : white;
+   shape            : octagon;
+   linestyle        : dashed;
+ };
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

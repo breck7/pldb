@@ -1,0 +1,21 @@
+checked-c
+=========
+
+checked-c is a programming language created in 2015 by David Tarditi.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Tarditi
+
+#527 on PLDB
+9 Years Old
+
+git clone https://github.com/Microsoft/checkedc
+
+Checked C is an extension to C that lets programmers write C code that is guaranteed by the compiler to be type-safe.  The goal is to let people easily make their existing C code type-safe and eliminate entire classes of errors. Checked C does not address use-after-free errors. This repo has a wiki for Checked C, sample code, the specification, and test code.
+
+- checked-c website
+ https://www.microsoft.com/en-us/research/project/checked-c/
+- checked-c is developed on GitHub and has 2,723 stars
+- checked-c first developed in Microsoft Research
+- checked-c is written in C, Tex, Markdown, Make, R, CMake, CSV
+- Read more about checked-c on the web: 1.
+ https://www.microsoft.com/en-us/research/project/checked-c/

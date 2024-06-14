@@ -1,0 +1,402 @@
+import ../code/conceptPage.scroll
+
+id abap
+name ABAP
+appeared 1983
+tags pl
+website http://scn.sap.com/community/abap
+blog https://blogs.sap.com/tags/833755570260738661924709785639136/
+releaseNotes https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html
+standsFor Advanced Business Application Programming
+
+clocExtensions abap
+fileType text
+documentation https://help.sap.com/doc/abapdocu_755_index_htm/7.55/en-US/index.htm
+eventsPageUrl https://blogs.sap.com/2020/04/21/abap-community-online-events/
+monaco abap
+rosettaCode http://www.rosettacode.org/wiki/Category:ABAP
+centralPackageRepositoryCount 0
+originCommunity SAP
+projectEuler ABAP
+ memberCount
+  2019 45
+  2022 47
+
+pygmentsHighlighter ABAP
+ filename business.py
+ fileExtensions abap ABAP
+leachim6 ABAP
+ filepath a/ABAP.abap
+ fileExtensions abap
+ example
+  REPORT ZHELLO_WORLD.
+  
+  START-OF-SELECTION.
+      WRITE: 'Hello World'.
+  
+  
+  
+
+keywords abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit import importing in inactive incl include includes including increment index index-line infotypes inheriting init initial initialization inner inout input insert instance instances instr intensified interface interface-pool interfaces internal intervals into inverse inverted-date is iso job join keep keeping kernel key keys keywords kind language last late layout leading leave left left-justified leftplus leftspace legacy length let level levels like line lines line-count linefeed line-selection line-size list listbox list-processing little llang load load-of-program lob local locale locator logfile logical log-point long loop low lower lpad lpi ltrim mail main major-id mapping margin mark mask match matchcode max maximum medium members memory mesh message message-id messages messaging method methods min minimum minor-id mm/dd/yy mm/dd/yyyy mmddyy mode modif modifier modify module move move-corresponding multiply multiply-corresponding name nametab native nested nesting new new-line new-page new-section next no no-display no-extension no-gap no-gaps no-grouping no-heading no-scrolling no-sign no-title no-topofpage no-zero node nodes non-unicode non-unique not null number object objects obligatory occurrence occurrences occurs of off offset ole on only open option optional options or order other others out outer output output-length overflow overlay pack package pad padding page pages parameter parameters parameter-table part partially pattern percentage perform performing person pf1 pf10 pf11 pf12 pf13 pf14 pf15 pf2 pf3 pf4 pf5 pf6 pf7 pf8 pf9 pf-status pink places pool pos_high pos_low position pragmas precompiled preferred preserving primary print print-control priority private procedure process program property protected provide public push pushbutton put queue-only quickinfo radiobutton raise raising range ranges read reader read-only receive received receiver receiving red redefinition reduce reduced ref reference refresh regex reject remote renaming replace replacement replacing report request requested reserve reset resolution respecting responsible result results resumable resume retry return returncode returning returns right right-justified rightplus rightspace risk rmc_communication_failure rmc_invalid_status rmc_system_failure role rollback rows rpad rtrim run sap sap-spool saving scale_preserving scale_preserving_scientific scan scientific scientific_with_leading_zero scroll scroll-boundary scrolling search secondary seconds section select selection selections selection-screen selection-set selection-sets selection-table select-options send separate separated set shared shift short shortdump-id sign_as_postfix single size skip skipping smart some sort sortable sorted source specified split spool spots sql sqlscript stable stamp standard starting start-of-editing start-of-selection state statement statements static statics statusinfo step-loop stop structure structures style subkey submatches submit subroutine subscreen subtract subtract-corresponding suffix sum summary summing supplied supply suppress switch switchstates symbol syncpoints syntax syntax-check syntax-trace system-call system-exceptions system-exit tab tabbed table tables tableview tabstrip target task tasks test testing test-injection test-seam text textpool then throw time times timestamp timezone tims_is_valid title titlebar title-lines to tokenization tokens top-lines top-of-page trace-file trace-table trailing transaction transfer transformation translate transporting trmac truncate truncation try tstmp_add_seconds tstmp_current_utctimestamp tstmp_is_valid tstmp_seconds_between type type-pool type-pools types uline unassign under unicode union unique unit_conversion unix unpack until unwind up update upper user user-command using utf-8 valid value value-request values vary varying verification-message version via view visible wait warning when whenever where while width window windows with with-heading without with-title word work write writer xml xsd yellow yes yymmdd zero zone abap_system_timezone abap_user_timezone access action adabas adjust_numbers allow_precision_loss allowed amdp applicationuser as_geo_json as400 associations balance behavior breakup bulk cds cds_client check_before_save child clients corr corr_spearman cross cycles datn_add_days datn_add_months datn_days_between dats_from_datn dats_tims_to_tstmp dats_to_datn db2 db6 ddl dense_rank depth deterministic discarding entities entity error failed finalize first_value fltp_to_dec following fractional full graph grouping hierarchy hierarchy_ancestors hierarchy_ancestors_aggregate hierarchy_descendants hierarchy_descendants_aggregate hierarchy_siblings incremental indicators lag last_value lead leaves like_regexpr link locale_sap lock locks many mapped matched measures median mssqlnt multiple nodetype ntile nulls occurrences_regexpr one operations oracle orphans over parent parents partition pcre period pfcg_mapping preceding privileged product projection rank redirected replace_regexpr reported response responses root row row_number sap_system_date save schema session sets shortdump siblings spantree start stddev string_agg subtotal sybase tims_from_timn tims_to_timn to_blob to_clob total trace-entry tstmp_to_dats tstmp_to_dst tstmp_to_tims tstmpl_from_utcl tstmpl_to_utcl unbounded utcl_add_seconds utcl_current utcl_seconds_between uuid var verbatim
+
+lineCommentToken *
+stringToken '
+booleanTokens true false
+
+hasComments true
+hasLineComments true
+ * A comment
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+isCaseSensitive false
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasFunctions true
+hasSwitch true
+hasAccessModifiers true
+hasConditionals true
+hasIntegers true
+ * [0-9]+
+
+wikipedia https://en.wikipedia.org/wiki/ABAP
+ example
+  * First define structured type
+  TYPES: BEGIN OF t_vbrk,
+           VBELN TYPE VBRK-VBELN,
+           ZUONR TYPE VBRK-ZUONR,
+         END OF t_vbrk.
+  
+  * Now define internal table of our defined type t_vbrk
+  DATA : gt_vbrk TYPE STANDARD TABLE OF t_vbrk,
+         gt_vbrk_2 TYPE STANDARD TABLE OF t_vbrk.   "easy to define more tables
+  
+  * If needed, define structure (line of internal table)
+  * Definition with type or with reference to internal table:
+  DATA : gs_vbrk TYPE t_vbrk,
+         gs_vbrk2 LIKE LINE OF gt_vbrk2.
+  
+  * You can also define table type if needed
+  TYPES tt_vbrk TYPE STANDARD TABLE OF t_vbrk.
+ related objective-c cobol sql java unix solaris linux systemz eclipse-editor
+ summary ABAP (Advanced Business Application Programming, originally Allgemeiner Berichts-Aufbereitungs-Prozessor, German for "general report creation processor") is a high-level programming language created by the German software company SAP SE. It is currently positioned, alongside Java, as the language for programming the SAP Application Server, which is part of the NetWeaver platform for building business applications.
+ pageId 271832
+ dailyPageViews 439
+ created 2003
+ backlinksCount 181
+ revisionCount 1472
+ appeared 1983
+
+tiobe ABAP
+ currentRank 40
+pypl Abap
+
+githubBigQuery ABAP
+ repos 450
+ users 387
+
+linguistGrammarRepo https://github.com/pvl/abap.tmbundle
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 4
+ commitCount 42
+ sampleCount 1
+ example
+  */**
+  * The MIT License (MIT)
+  * Copyright (c) 2012 René van Mil
+  *
+  * Permission is hereby granted, free of charge, to any person obtaining
+  * a copy of this software and associated documentation files (the
+  * "Software"), to deal in the Software without restriction, including
+  * without limitation the rights to use, copy, modify, merge, publish,
+  * distribute, sublicense, and/or sell copies of the Software, and to
+  * permit persons to whom the Software is furnished to do so, subject to
+  * the following conditions:
+  *
+  * The above copyright notice and this permission notice shall be
+  * included in all copies or substantial portions of the Software.
+  *
+  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+  * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+  * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  */
+  
+  *----------------------------------------------------------------------*
+  *       CLASS CL_CSV_PARSER DEFINITION
+  *----------------------------------------------------------------------*
+  *
+  *----------------------------------------------------------------------*
+  class cl_csv_parser definition
+    public
+    inheriting from cl_object
+    final
+    create public .
+  
+    public section.
+  *"* public components of class CL_CSV_PARSER
+  *"* do not include other source files here!!!
+  
+      type-pools abap .
+      methods constructor
+        importing
+          !delegate type ref to if_csv_parser_delegate
+          !csvstring type string
+          !separator type c
+          !skip_first_line type abap_bool .
+      methods parse
+        raising
+          cx_csv_parse_error .
+    protected section.
+  *"* protected components of class CL_CSV_PARSER
+  *"* do not include other source files here!!!
+    private section.
+  *"* private components of class CL_CSV_PARSER
+  *"* do not include other source files here!!!
+  
+      constants _textindicator type c value '"'.              "#EC NOTEXT
+      data _delegate type ref to if_csv_parser_delegate .
+      data _csvstring type string .
+      data _separator type c .
+      type-pools abap .
+      data _skip_first_line type abap_bool .
+  
+      methods _lines
+        returning
+          value(returning) type stringtab .
+      methods _parse_line
+        importing
+          !line type string
+        returning
+          value(returning) type stringtab
+        raising
+          cx_csv_parse_error .
+  endclass.                    "CL_CSV_PARSER DEFINITION
+  
+  
+  
+  *----------------------------------------------------------------------*
+  *       CLASS CL_CSV_PARSER IMPLEMENTATION
+  *----------------------------------------------------------------------*
+  *
+  *----------------------------------------------------------------------*
+  class cl_csv_parser implementation.
+  
+  
+  * <SIGNATURE>---------------------------------------------------------------------------------------+
+  * | Instance Public Method CL_CSV_PARSER->CONSTRUCTOR
+  * +-------------------------------------------------------------------------------------------------+
+  * | [--->] DELEGATE                       TYPE REF TO IF_CSV_PARSER_DELEGATE
+  * | [--->] CSVSTRING                      TYPE        STRING
+  * | [--->] SEPARATOR                      TYPE        C
+  * | [--->] SKIP_FIRST_LINE                TYPE        ABAP_BOOL
+  * +--------------------------------------------------------------------------------------</SIGNATURE>
+    method constructor.
+      super->constructor( ).
+      _delegate = delegate.
+      _csvstring = csvstring.
+      _separator = separator.
+      _skip_first_line = skip_first_line.
+    endmethod.                    "constructor
+  
+  
+  * <SIGNATURE>---------------------------------------------------------------------------------------+
+  * | Instance Public Method CL_CSV_PARSER->PARSE
+  * +-------------------------------------------------------------------------------------------------+
+  * | [!CX!] CX_CSV_PARSE_ERROR
+  * +--------------------------------------------------------------------------------------</SIGNATURE>
+    method parse.
+      data msg type string.
+      if _csvstring is initial.
+        message e002(csv) into msg.
+        raise exception type cx_csv_parse_error
+          exporting
+            message = msg.
+      endif.
+  
+      " Get the lines
+      data is_first_line type abap_bool value abap_true.
+      data lines type standard table of string.
+      lines = _lines( ).
+      field-symbols <line> type string.
+      loop at lines assigning <line>.
+        " Should we skip the first line?
+        if _skip_first_line = abap_true and is_first_line = abap_true.
+          is_first_line = abap_false.
+          continue.
+        endif.
+        " Parse the line
+        data values type standard table of string.
+        values = _parse_line( <line> ).
+        " Send values to delegate
+        _delegate->values_found( values ).
+      endloop.
+    endmethod.                    "parse
+  
+  
+  * <SIGNATURE>---------------------------------------------------------------------------------------+
+  * | Instance Private Method CL_CSV_PARSER->_LINES
+  * +-------------------------------------------------------------------------------------------------+
+  * | [<-()] RETURNING                      TYPE        STRINGTAB
+  * +--------------------------------------------------------------------------------------</SIGNATURE>
+    method _lines.
+      split _csvstring at cl_abap_char_utilities=>cr_lf into table returning.
+    endmethod.                    "_lines
+  
+  
+  * <SIGNATURE>---------------------------------------------------------------------------------------+
+  * | Instance Private Method CL_CSV_PARSER->_PARSE_LINE
+  * +-------------------------------------------------------------------------------------------------+
+  * | [--->] LINE                           TYPE        STRING
+  * | [<-()] RETURNING                      TYPE        STRINGTAB
+  * | [!CX!] CX_CSV_PARSE_ERROR
+  * +--------------------------------------------------------------------------------------</SIGNATURE>
+    method _parse_line.
+      data msg type string.
+  
+      data csvvalue type string.
+      data csvvalues type standard table of string.
+  
+      data char type c.
+      data pos type i value 0.
+      data len type i.
+      len = strlen( line ).
+      while pos < len.
+        char = line+pos(1).
+        if char <> _separator.
+          if char = _textindicator.
+            data text_ended type abap_bool.
+            text_ended = abap_false.
+            while text_ended = abap_false.
+              pos = pos + 1.
+              if pos < len.
+                char = line+pos(1).
+                if char = _textindicator.
+                  text_ended = abap_true.
+                else.
+                  if char is initial. " Space
+                    concatenate csvvalue ` ` into csvvalue.
+                  else.
+                    concatenate csvvalue char into csvvalue.
+                  endif.
+                endif.
+              else.
+                " Reached the end of the line while inside a text value
+                " This indicates an error in the CSV formatting
+                text_ended = abap_true.
+                message e003(csv) into msg.
+                raise exception type cx_csv_parse_error
+                  exporting
+                    message = msg.
+              endif.
+            endwhile.
+            " Check if next character is a separator, otherwise the CSV formatting is incorrect
+            data nextpos type i.
+            nextpos = pos + 1.
+            if nextpos < len and line+nextpos(1) <> _separator.
+              message e003(csv) into msg.
+              raise exception type cx_csv_parse_error
+                exporting
+                  message = msg.
+            endif.
+          else.
+            if char is initial. " Space
+              concatenate csvvalue ` ` into csvvalue.
+            else.
+              concatenate csvvalue char into csvvalue.
+            endif.
+          endif.
+        else.
+          append csvvalue to csvvalues.
+          clear csvvalue.
+        endif.
+        pos = pos + 1.
+      endwhile.
+      append csvvalue to csvvalues. " Don't forget the last value
+  
+      returning = csvvalues.
+    endmethod.                    "_parse_line
+  endclass.                    "CL_CSV_PARSER IMPLEMENTATION
+
+isbndb 51
+ year|publisher|title|authors|isbn13
+ 2002|Addison-Wesley Professional|SAP.Keller: ABAP Objects_c|Keller, Horst and Keller, Horst and Kruger, Sascha|9780201750805
+ 2018|SAP Press|ABAP Programming Model for SAP Fiori: ABAP Development for SAP S/4HANA (SAP PRESS)|Stefan Haas and Bince Mathew|9781493217649
+ 1999|Premier Pr|Advanced Abap Programming For Sap (sap R/3)|Gareth M De Bruyn and Ken Kroes|9780761517986
+ 2010|Springer|Web Dynpro ABAP for Practitioners|Gellert, Ulrich and Cristea, Ana Daniela|9783642113857
+ 2019|SAP Press|ABAP: The Comprehensive Guide to SAP ABAP 7.52 and 1909 (Second Edition) (SAP PRESS)|Kiran Bandari|9781493218660
+ 2019|SAP Press|ABAP: An Introduction and Beginner's Guide to Programming with SAP ABAP (2nd Edition) (SAP PRESS)|Brian O'Neil and Jelena Perfiljeva|9781493218806
+ 2015-11-30T00:00:01Z|SAP Press|ABAP Objects: ABAP Object-Oriented Programming (OOP) (2nd Edition) (SAP PRESS)|James Wood and Joseph Rupert|9781592299935
+ 2019|SAP Press|ABAP to the Future: Advanced, Modern ABAP (Third Edition) (SAP PRESS)|Paul Hardy|9781493217618
+ 2019|Packt Publishing|Mastering SAP ABAP: A complete guide to developing fast, durable, and maintainable ABAP programs in SAP|Grześkowiak, Paweł and Ciesielski, Wojciech and Ćwik, Wojciech|9781787129498
+ 2011|SAP PRESS|Discover ABAP: Your Introduction to ABAP Objects|Kühnhauser, Karl-Heinz and Franz, Thorsten|9781592294022
+ 2007|SAP PRESS|ABAP Objects: ABAP Programming in SAP NetWeaver|Keller, Horst and Krüger, Sascha|9781592290796
+ 2017|Independently published|Learn ABAP in 1 Day: Definitive Guide to Learn SAP ABAP Programming for Beginners|Rungta, Krishna|9781521595701
+ 2014-07-17T00:00:01Z|Cengage Learning PTR|Introduction to ABAP Programming for SAP, 3rd Edition|Gareth M. De Bruyn and Robert Lyfareff and Mark Balleza and Dhruv Kashyap|9781305266476
+ 2019|SAP Press|ABAP RESTful Programming Model: ABAP Development for SAP S/4HANA (SAP PRESS)|Stefan Haas and Bince Mathew|9781493219032
+ 2009-09-28T00:00:01Z|SAP PRESS|Official ABAP Programming Guidelines|Keller, Horst and Thümmel, Wolf Hagen|9781592292905
+ 2012|Packt Publishing|SAP ABAP Advanced cookbook (Quick Answers to Common Problems)|Zaidi, Rehan|9781849684897
+ 2019|Packt Publishing|Mastering SAP ABAP: A complete guide to developing fast, durable, and maintainable ABAP programs in SAP|Grzeskowiak, Pawel and Ciesielski, Wojciech and Cwik, Wojciech|9781787288942
+ 2010-05-28T00:00:01Z|SAP PRESS|ABAP Cookbook: Programming Recipes for Everyday Solutions|Wood, James|9781592293261
+ 2021|Apress|Improving the Quality of ABAP Code: Striving for Perfection|Hardy, Paul David|9781484267110
+ 2013|Springer|Web Dynpro ABAP for Practitioners|Gellert, Ulrich and Cristea, Ana Daniela|9783642382475
+ 2009-01-28T00:00:01Z|SAP PRESS|Object-Oriented Programming with ABAP Objects|Wood, James|9781592292356
+ 2010|SAP PRESS|ABAP Development for Materials Management in SAP: User Exits and BAdIs|Schwaninger, Jürgen|9781592293735
+ 2017|Apress|Pro SAP Scripts, Smartforms, and Data Migration: ABAP Programming Simplified|Markandeya, Sushil|9781484231838
+ 2006|Apress|Foundations of Java for ABAP Programmers|Rooney, Alistair|9781590596258
+ 2012|Packt Publishing|SAP ABAP Advanced cookbook (Quick Answers to Common Problems)|Zaidi Rehan|9781849684880
+ 2006|Equity Press|SAP ABAP Certification Review: SAP ABAP Interview Questions, Answers, And Explanations|Fewer, Barry|9781933804064
+ 2004|SAP PRESS|Enhancing the Quality of ABAP Development|Heuvelmans, Wouter and Krouwels, Albert and Meijs, Ben and Sommen, Ron|9781592290307
+ 20170620|Springer Nature|JavaScript Essentials for SAP ABAP Developers|Rehan Zaidi|9781484222201
+ 2017|Rheinwerk Publishing,|Complete Abap|Bandari, Kiran|9781493212743
+ 2010-05-28|Rheinwerk Publishing, Inc.|ABAP Cookbook|James Wood|9781592298877
+ 2012-10-28|Rheinwerk Publishing, Inc.|Web Dynpro ABAP|James Wood and Shaan Parvaze|9781592295999
+ 20190927|Springer Nature|SAP ABAP Objects|Rehan Zaidi|9781484249642
+ 20210529|Springer Nature|ABAP in Eclipse|Łukasz Pęgiel|9781484269633
+ 2009-06-28|Rheinwerk Publishing, Inc.|ABAP Performance Tuning|Hermann Gahm|9781592295555
+ 2019-11-21|Rheinwerk Publishing, Inc.|ABAP RESTful Programming Model|Stefan Haas and Bince Mathew|9781493219049
+ 2013-10-28|Rheinwerk Publishing, Inc.|Function Modules in ABAP|Tanmaya Gupta|9781592298518
+ 2019-02-26|Rheinwerk Publishing, Inc.|ABAP to the Future|Paul Hardy|9781493217625
+ 2018-11-27|Rheinwerk Publishing, Inc.|ABAP Programming Model for SAP Fiori|Stefan Haas and Bince Mathew|9781493217656
+ 2018-08-01|Createspace Independent Publishing Platform|Interface Programming In Sap Abap|Dr Boris Rubarth|9781722902940
+ 20210401|Springer Nature|Automated Unit Testing with ABAP|James E. McDonough|9781484269510
+ 1996|Prima Pub|Introduction To Abap 4 Programming|Gareth Debruyn|9780761508038
+ 2016|Rheinwerk Publishing,|Object-oriented Programming With Abap Objects|Wood, James and Rupert, Joe|
+ 2015-10-22|Rheinwerk Publishing, Inc.|Object-Oriented Programming with ABAP Objects|James Wood and Joseph Rupert|9781592299942
+ 2010-11-28|Rheinwerk Publishing, Inc.|BRFplus—Business Rule Management for ABAP Applications|Thomas Albrecht and Carsten Ziegler|9781592298914
+ 1999|Consultants Network Inc|Instant Access: Sap Developer's Reference For Abap|The Consultants Network Inc.|9780965563345
+ 2011-01-28|Rheinwerk Publishing, Inc.|ABAP Development for Financial Accounting: Custom Enhancements|Sergey Korolev|9781592297399
+ 2012-09-28|Rheinwerk Publishing, Inc.|ABAP Development for Sales and Distribution in SAP|Michael Koch|9781592296033
+ 2000|Youguys Pub|Abap Programming: A Guide To The Certification Course|Kathleen Sikora|9780970655400
+ 2017|Apress|Pro Sap Scripts, Smartforms, And Data Migration: Abap Programming Simplified|Sushil Markandeya|9781484231821
+ 2010-11-28|Rheinwerk Publishing, Inc.|ABAP Development for Materials Management in SAP: User Exits and BAdIs|Jürgen Schwaninger|9781592297436
+ 2003|Sap Press|Web Programming With The Sap Web Application Server: The Complete Guide For Abap And Web Developers|Frédéric Heinemann and Christian Rau|9781592290130
+
+githubLanguage ABAP
+ fileExtensions abap
+ trendingProjectsCount 0
+ type programming
+ aceMode abap
+ tmScope source.abap
+ repos 4488
+
+indeedJobs abap developer
+ 2022 283
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2002|Teaching SAP's ABAP Programming Language to IS Students: Adopting and Adapting Web-based Technologies|10.28945/2530|6|0|Brendan McCarthy and Paul Hawking|24eebbc39ee141a470e92d7d154c5bb7590f7914
+ 2008|ABAP OBJECTS: DESIGNING A PROGRAMMING COURSE FOR INFORMATION SYSTEMS STUDENTS USING SAP SOFTWARE|10.48009/1_iis_2008_165-167|1|0|C. Rogers|4b660a8a0cd7ff636673dd7553d2ad7a19914d04
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ ABAP Objects: ABAP Programming in SAP NetWeaver Book/DVD Package|2007|H. Keller|2336185|4.25|8|1
+ Introduction to ABAP/4 Programming for SAP|1996|Robert Lyfareff|1052163|3.67|6|1
+ ABAP Objects: Introduction to Programming SAP Applications|2002|Horst Keller|1090441|4.10|20|1
+ Advanced ABAP Programming for SAP|1999|Gareth M. De Bruyn|1220544|3.00|4|0

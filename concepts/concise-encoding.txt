@@ -1,0 +1,198 @@
+Concise Encoding
+================
+
+Concise Encoding is a data notation created in 2018 by Karl Stenerud.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Karl%20Stenerud
+
+#673 on PLDB
+6 Years Old
+
+git clone https://github.com/kstenerud/concise-encoding
+
+The secure data format for a  modern world
+
+- Concise Encoding website
+ https://concise-encoding.org
+- Concise Encoding is developed on GitHub and has 225 stars
+- Concise Encoding first developed in https://github.com/kstenerud/concise-encoding
+- Concise Encoding is written in Markdown, SVG, JSON
+- concise-encoding.org was registered in 2019
+
+c1
+{
+    &quot;boolean&quot;       = true
+    &quot;binary int&quot;    = -0b10001011
+    &quot;octal int&quot;     = 0o644
+    &quot;decimal int&quot;   = -10000000
+    &quot;hex int&quot;       = 0xfffe0001
+    &quot;very long int&quot; = 100000000000000000000000000000000000009
+    &quot;decimal float&quot; = -14.125
+    &quot;hex float&quot;     = 0x5.1ec4p+20
+    &quot;very long flt&quot; = 4.957234990634579394723460546348e+100000
+    &quot;not-a-number&quot;  = nan
+    &quot;infinity&quot;      = inf
+    &quot;neg infinity&quot;  = -inf
+}
+
+c1
+{
+    &quot;string&quot; = &quot;Strings support escape sequences: \n \t \+1f415.&quot;
+    &quot;url&quot;    = @&quot;https://example.com/&quot;
+    &quot;email&quot;  = @&quot;mailto:me@somewhere.com&quot;
+}
+
+c1
+{
+    &quot;uuid&quot;      = f1ce4567-e89b-12d3-a456-426655440000
+    &quot;date&quot;      = 2019-07-01
+    &quot;time&quot;      = 18:04:00.948/Europe/Prague
+    &quot;timestamp&quot; = 2010-07-15/13:28:15.415942344
+    &quot;null&quot;      = null
+    &quot;media&quot;     = |m application/x-sh 23 21 2f 62 69 6e 2f 73 68 0a 0a
+                    65 63 68 6f 20 68 65 6c 6c 6f 20 77 6f 72 6c 64 0a|
+}
+
+c1
+{
+    &quot;list&quot;          = [1 2.5 &quot;a string&quot;]
+    &quot;map&quot;           = {&quot;one&quot;=1 2=&quot;two&quot; &quot;today&quot;=2020-09-10}
+    &quot;bytes&quot;         = |u8x 01 ff de ad be ef|
+    &quot;int16 array&quot;   = |i16 7374 17466 -9957|
+    &quot;uint16 hex&quot;    = |u16x 91fe 443a 9c15|
+    &quot;float32 array&quot; = |f32 1.5e10 -8.31e-12|
+}
+
+c1
+[
+    @vehicle&lt;&quot;make&quot;   &quot;model&quot;    &quot;drive&quot; &quot;sunroof&quot;&gt;
+    @vehicle(&quot;Ford&quot;   &quot;Explorer&quot; &quot;4wd&quot;   true     )
+    @vehicle(&quot;Toyota&quot; &quot;Corolla&quot;  &quot;fwd&quot;   false    )
+    @vehicle(&quot;Honda&quot;  &quot;Civic&quot;    &quot;fwd&quot;   false    )
+]
+
+c1
+[
+    {
+        &quot;make&quot; = &quot;Ford&quot;
+        &quot;model&quot; = &quot;Explorer&quot;
+        &quot;drive&quot; = &quot;4wd&quot;
+        &quot;sunroof&quot; = true
+    }
+    {
+        &quot;make&quot; = &quot;Toyota&quot;
+        &quot;model&quot; = &quot;Corolla&quot;
+        &quot;drive&quot; = &quot;fwd&quot;
+        &quot;sunroof&quot; = false
+    }
+    {
+        &quot;make&quot; = &quot;Honda&quot;
+        &quot;model&quot; = &quot;Civic&quot;
+        &quot;drive&quot; = &quot;fwd&quot;
+        &quot;sunroof&quot; = false
+    }
+]
+
+c1
+//
+// The tree:
+//
+//       2
+//      / \
+//     5   7
+//    /   /|\
+//   9   6 1 2
+//  /   / \
+// 4   8   5
+//
+(2
+    (7
+        2
+        1
+        (6
+            5
+            8
+        )
+    )
+    (5
+        (9
+            4
+        )
+    )
+)
+
+c1
+//
+// The weighted graph:
+//
+//     b
+//    /|\
+//   4 1 1
+//  /  |  \
+// a-3-c-4-d
+//
+{
+    &quot;vertices&quot; = [
+        &amp;a:{}
+        &amp;b:{}
+        &amp;c:{}
+        &amp;d:{}
+    ]
+    &quot;edges&quot; = [
+        @($a {&quot;weight&quot;=4 &quot;direction&quot;=&quot;both&quot;} $b)
+        @($a {&quot;weight&quot;=3 &quot;direction&quot;=&quot;both&quot;} $c)
+        @($b {&quot;weight&quot;=1 &quot;direction&quot;=&quot;both&quot;} $c)
+        @($b {&quot;weight&quot;=1 &quot;direction&quot;=&quot;both&quot;} $d)
+        @($c {&quot;weight&quot;=4 &quot;direction&quot;=&quot;both&quot;} $d)
+    ]
+}
+
+c1
+{
+    // Entire map will be referenced later as $id1
+    &quot;marked object&quot; = &amp;id1:{
+        &quot;recursive&quot; = $id1
+    }
+    &quot;ref1&quot; = $id1
+    &quot;ref2&quot; = $id1
+
+    // Reference pointing to part of another document.
+    &quot;outside ref&quot; = TEMPLATEquot;https://xyz.com/document.cte#some_id&quot;
+}
+
+c1
+{
+    // Custom types are user-defined, with user-supplied codecs.
+    &quot;custom text&quot;   = |c &quot;cplx(2.94+3i)&quot;|
+    &quot;custom binary&quot; = |c 01 f6 28 3c 40 00 00 40 40|
+}
+
+Language features
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported ✓
+ Token true false
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

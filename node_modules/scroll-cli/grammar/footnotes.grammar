@@ -1,0 +1,35 @@
+footnoteDefinitionParser
+ description A footnote. Can also be used as section notes.
+ extends paragraphParser
+ boolean isFootnote true
+ pattern ^\^.+$
+ // We need to quickLinks back in scope because there is currently a bug in ScrollSDK/Grammar where if a parser extending a parent class has a child parser defined, then any regex parsers in the parent class will not be tested unless explicitly included in scope again.
+ inScope quickLinkParser
+ labelParser
+  description If you want to show a custom label for a footnote. Default label is the note definition index.
+  cruxFromId
+  cells keywordCell
+  catchAllCellType stringCell
+ javascript
+  get divAttributes() {
+   return super.divAttributes + ` id="${this.anchorId}"`
+  }
+  get anchorId() {
+   return `note${this.noteDefinitionIndex}`
+  }
+  get label() {
+   // In the future we could allow common practices like author name
+   return this.get("label") || `[${this.noteDefinitionIndex}]`
+  }
+  get linkBack() {
+   return `noteUsage${this.noteDefinitionIndex}`
+  }
+  get text() {
+   return `<a class="scrollFootNoteUsageLink" href="#noteUsage${this.noteDefinitionIndex}">${this.label}</a> ${super.text}`
+  }
+  get noteDefinitionIndex() {
+   return this.parent.footnotes.indexOf(this) + 1
+  }
+  compileTextVersion() {
+    return this.getWord(0) + ": " + super.compileTextVersion()
+  }

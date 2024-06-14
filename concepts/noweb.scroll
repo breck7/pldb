@@ -1,0 +1,65 @@
+import ../code/conceptPage.scroll
+
+id noweb
+name Noweb
+appeared 1989
+creators Norman Ramsey
+tags textMarkup
+website https://www.cs.tufts.edu/~nr/noweb/
+
+writtenIn bourne-shell make tex c perl awk korn-shell c-shell lisp html
+relatedConcepts cweb
+repoStats
+ firstCommit 1991
+ commits 351
+ committers 7
+ files 385
+ newestCommit 2024
+country United States
+originCommunity Tufts University
+
+example
+ \section{Hello world}
+ 
+ Today I awoke and decided to write
+ some code, so I started to write Hello World in \textsf C.
+ 
+ <<hello.c>>=
+ /*
+   <<license>>
+ */
+ #include <stdio.h>
+ 
+ int main(int argc, char *argv[]) {
+   printf("Hello World!\n");
+   return 0;
+ }
+ @
+ \noindent \ldots then I did the same in PHP.
+ 
+ <<hello.php>>=
+ <?php
+   /*
+   <<license>>
+   */
+   echo "Hello world!\n";
+ ?>
+ @
+ \section{License}
+ Later the same day some lawyer reminded me about licenses.
+ So, here it is:
+ 
+ <<license>>=
+ This work is placed in the public domain.
+
+githubRepo https://github.com/nrnrnr/noweb
+ firstCommit 1991
+ stars 177
+ forks 20
+ subscribers 18
+ created 2012
+ updated 2022
+ description The noweb tool for literate programming
+ issues 6
+
+wikipedia https://en.wikipedia.org/wiki/Noweb

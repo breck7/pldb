@@ -1,0 +1,80 @@
+Ioke
+====
+
+Ioke is an open source programming language created in 2008 by Ola Bini.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ola%20Bini
+
+#406 on PLDB
+16 Years Old
+17 Repos
+
+git clone https://github.com/olabini/ioke
+
+Try now: Riju
+
+Ioke is a dynamic, strongly typed, prototype-based programming language targeting the Java Virtual Machine and the Common Language Runtime. It was designed by Ola Bini, a developer of JRuby. It has a very simple homoiconic syntax, somewhat similar to Io.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ioke_(programming_language)
+
+- Ioke website
+ http://ioke.org
+- Ioke Wikipedia page
+ https://en.wikipedia.org/wiki/Ioke_(programming_language)
+- Ioke is developed on GitHub and has 161 stars
+- Ioke docs
+ https://ioke.org/wiki/index.php/Main_Page
+- There are at least 17 Ioke repos on GitHub
+- Ioke first developed in https://github.com/olabini/ioke/issues/
+- Ioke is written in Java, C#, XML, HTML, Lisp, CSS, PHP, Bash, Python, Ruby
+- The  Google BigQuery Public Dataset GitHub snapshot shows 39 users using Ioke in 41 repos on GitHub
+- Explore Ioke snippets on Rosetta Code
+- Ioke appears in the TIOBE Index
+- Pygments supports syntax highlighting for Ioke
+- GitHub supports syntax highlighting for Ioke
+- ioke.org was registered in 2008
+- See also: (5 related languages)Io, Smalltalk, Lisp, Ruby, JRuby
+- Read more about Ioke on the web: 1.
+ https://ioke.org/wiki/index.php/Guide
+
+&quot;Hello, world!&quot; println
+
+&quot;Hello World&quot; println
+
+#!/usr/bin/env ioke
+
+&quot;Hello world.&quot; println
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token println
+ Example

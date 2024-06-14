@@ -1,0 +1,69 @@
+import ../code/conceptPage.scroll
+
+id unison
+name unison
+appeared 2015
+tags pl
+website http://unisonweb.org/
+
+isOpenSource true
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 14701
+ committers 111
+ files 1405
+reference https://www.youtube.com/watch?v=rp_Eild1aq8
+
+rijuRepl https://riju.codes/unison
+ example
+  use io
+  
+  runProg: '{IO, Exception} a -> '{IO} ()
+  runProg f = 'let
+    printErr err = match err with
+      Failure _ errMsg _ -> handle putBytes (stdHandle StdErr) (toUtf8 errMsg) with cases
+        {raise _ -> _} -> ()
+        {_} -> ()
+    match catch f with
+      Left err -> printErr err
+      Right _ -> ()
+  
+  main: '{IO} ()
+  main = runProg 'let
+    printLine "Hello, world!"
+  
+example
+ -- comments start with `--`
+ -- alice : Node, bob : Node
+ x = factorial 6
+ Remote.transfer alice
+ y = foo x -- happens on `alice` node
+ Remote.transfer bob
+ bar x y -- happens on `bob` node
+twitter https://twitter.com/unisonweb
+
+githubRepo https://github.com/unisonweb/unison
+ firstCommit 2013
+ stars 4472
+ forks 234
+ subscribers 115
+ created 2015
+ updated 2022
+ description A friendly programming language from the future
+ issues 807
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName unisonweb.org
+ registered 2014
+
+isbndb 0
+
+semanticScholar 0

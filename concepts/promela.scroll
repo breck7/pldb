@@ -1,0 +1,43 @@
+import ../code/conceptPage.scroll
+
+id promela
+name Promela
+appeared 1997
+tags pl
+
+country United States
+originCommunity Bell Labs
+
+rijuRepl https://riju.codes/promela
+ example
+  active proctype main() {
+    printf("Hello, world!\n");
+  }
+leachim6 Promela
+ filepath p/Promela.pml
+ fileExtensions pml
+ example
+  active proctype main(){
+    printf("Hello World")
+  }
+  
+
+printToken printf
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Promela
+
+githubBigQuery Promela
+ repos 21
+ users 21
+
+githubLanguage Promela
+ type programming
+ fileExtensions pml
+ aceMode text
+ tmScope source.promela
+ repos 109

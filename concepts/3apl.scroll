@@ -1,0 +1,30 @@
+import ../code/conceptPage.scroll
+
+id 3apl
+name 3APL
+appeared 1998
+tags pl
+
+centralPackageRepositoryCount 0
+originCommunity Computer science Department, Utrecht University
+reference https://semanticscholar.org/paper/5167cbb780bac55456a0f69c16f175eb61269c8d
+
+wikipedia https://en.wikipedia.org/wiki/3APL
+ example
+  PLANBASE { SetStatus(started); }
+  PR-RULES {
+  	goTo(R) <- location(R,X,Y) AND NOT at(X,Y) | {
+  		NowAt(X,Y);
+  	}
+  	clean(R) <- location(R,X,Y) AND at(X,Y) | {
+  		Clean(R);
+  	}
+  }
+ related java prolog strips
+ summary An Abstract Agent Programming Language or Artificial Autonomous Agents Programming Language or 3APL (pronounced triple-A-P-L) is an experimental tool and programming language for the development, implementation and testing of multiple cognitive agents using the Belief-Desire-Intention (BDI) approach.
+ backlinksCount 11
+ pageId 5229527
+ dailyPageViews 5
+ created 2006
+
+hopl https://hopl.info/showlanguage.prx?exp=7802

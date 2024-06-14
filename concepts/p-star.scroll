@@ -1,0 +1,42 @@
+import ../code/conceptPage.scroll
+
+id p-star
+name P*
+appeared 2013
+creators Atle Solbakken
+tags pl
+website https://www.p-star.org/home
+aka p-star
+conceptDescription P* (pronounced P-star) is a programming language specifically designed for web development. P* provides easy in-language support for common tasks in this field.
+
+writtenIn cpp bourne-shell m4 make xml svg css markdown xslt
+repoStats
+ firstCommit 2013
+ commits 582
+ committers 7
+ files 406
+ newestCommit 2020
+country Norway
+originCommunity https://github.com/P-star
+
+example
+ #!/usr/bin/wpl -f
+ SCENE main {
+     /* Create a variable named 'env' of special type 'ENV' */
+     ENV env;
+     /* Create a variable named 'path' of type 'string' */
+     string path;
+     /* Tell the env variable to retrieve the environment
+     variable PATH and put the result into our 'path' variable */
+     path = env->PATH;
+     /* Put the variable 'path' into a text string and then print it out */
+     echo "My shell looks for programs in these directories: $path\n";
+ }
+
+githubRepo https://github.com/P-star/P-star
+ stars 5
+ forks 4
+ subscribers 4
+ created 2013
+ updated 2020
+ description Main repository for the P* web programming language.

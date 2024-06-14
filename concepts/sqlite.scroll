@@ -1,0 +1,79 @@
+import ../code/conceptPage.scroll
+
+id sqlite
+name SQLite
+appeared 2000
+creators Dwayne Richard Hipp
+tags queryLanguage
+website https://sqlite.org
+latestVersion 3.46.0
+download https://sqlite.org/download.html
+blog https://www.sqlite.org/news.html
+releaseNotes https://www.sqlite.org/changes.html
+webRepl https://sqlite.org/fiddle/index.html
+
+isPublicDomain true
+isOpenSource true
+writtenIn c
+usesSemanticVersioning true
+tryItOnline sqlite
+fileType text
+documentation https://www.sqlite.org/docs.html
+faq https://www.sqlite.org/faq.html
+antlr https://github.com/antlr/grammars-v4/tree/master/sqlite
+centralPackageRepositoryCount 0
+country United States
+originCommunity  Hipp, Wyrick & Company, Inc
+reference https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
+
+rijuRepl https://riju.codes/sqlite
+ example
+  SELECT 'Hello, world!';
+  
+subreddit https://reddit.com/r/sqlite
+ memberCount
+  2022 2744
+gource https://www.youtube.com/watch?v=kjdxiG17hGM
+
+keywords ABORT ACTION ADD AFTER ALL ALTER ANALYZE AND AS ASC ATTACH AUTOINCREMENT BEFORE BEGIN BETWEEN BY CASCADE CASE CAST CHECK COLLATE COLUMN COMMIT CONFLICT CONSTRAINT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP DATABASE DEFAULT DEFERRABLE DEFERRED DELETE DESC DETACH DISTINCT DROP EACH ELSE END ESCAPE EXCEPT EXCLUSIVE EXISTS EXPLAIN FAIL FOR FOREIGN FROM FULL GLOB GROUP HAVING IF IGNORE IMMEDIATE IN INDEX INDEXED INITIALLY INNER INSERT INSTEAD INTERSECT INTO IS ISNULL JOIN KEY LEFT LIKE LIMIT MATCH NATURAL NO NOT NOTNULL NULL OF OFFSET ON OR ORDER OUTER PLAN PRAGMA PRIMARY QUERY RAISE RECURSIVE REFERENCES REGEXP REINDEX RELEASE RENAME REPLACE RESTRICT RIGHT ROLLBACK ROW SAVEPOINT SELECT SET TABLE TEMP TEMPORARY THEN TO TRANSACTION TRIGGER UNION UNIQUE UPDATE USING VACUUM VALUES VIEW VIRTUAL WHEN WHERE WITH WITHOUT
+
+hasBooleans false
+hasCaseInsensitiveIdentifiers false
+
+wikipedia https://en.wikipedia.org/wiki/SQLite
+ related c sql postgresql tcl json sql-92 perl unicode jscript vbscript django drupal rails solaris android freebsd ios autoit basic freebasic purebasic visual-basic.net xojo csharp clipper curl d elixir emacs-lisp f-sharp go haskell haxe java javascript julia lisp common-lisp openlisp livecode labview lua matlab nim objective-c ocaml pascal free-pascal delphi php pike python r racket rebol ruby scheme smalltalk swift isbn doi
+ summary SQLite ( or ) is a relational database management system contained in a C programming library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. SQLite is ACID-compliant and implements most of the SQL standard, using a dynamically and weakly typed SQL syntax that does not guarantee the domain integrity. SQLite is a popular choice as embedded database software for local/client storage in application software such as web browsers. It is arguably the most widely deployed database engine, as it is used today by several widespread browsers, operating systems, and embedded systems (such as mobile phones), among others. SQLite has bindings to many programming languages.
+ pageId 244884
+ dailyPageViews 569
+ created 2003
+ backlinksCount 624
+ revisionCount 1414
+ appeared 2000
+
+domainName sqlite.org
+ registered 2002
+ awisRank
+  2022 27031
+  2017 24351
+
+isbndb 8
+ year|publisher|title|authors|isbn13
+ 2011|Apress|The Definitive Guide to SQLite (Expert's Voice in Open Source)|Allen, Grant and Owens, Mike|9781430232261
+ 20061206|Springer Nature|The Definitive Guide to SQLite|Mike Owens|9781430201724
+ 20161115|Springer Nature|Build iOS Database Apps with Swift and SQLite|Kevin Languedoc|9781484222324
+ 2015|Apress|Introducing SQLite for Mobile Developers|Feiler, Jesse|9781484217665
+ 2019-11-25T00:00:01Z|Independently published|Think PyQt: A Smarter Way to Explore MariaDB and SQLite Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711653815
+ 2019-11-24T00:00:01Z|Independently published|Learn PyQt By Example: A Quick Start Guide to MySQL and SQLite Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711134468
+ 2019|Independently published|Learn PyQt The Hard Way: A Quick Start Guide to PostgreSQL and SQLite Driven Programming|Siahaan, Vivian and Sianipar, Rismon Hasiholan|9781711384313
+ 2004|Sams|SQLite|Newman, Chris.|9780672326851
+
+indeedJobs sqlite developer
+ 2022 561
+
+semanticScholar 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Introducing Sqlite for Mobile Developers||Jesse Feiler|48076971|3.50|2|0
+ Introducing SQLite for Mobile Developers||Jesse Feiler|56046925|0.0|0|0
+ iPhone Database Programming Exercises: SQLite|2010|Norman McEntire|40492191|2.00|1|0

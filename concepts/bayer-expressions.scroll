@@ -1,0 +1,20 @@
+import ../code/conceptPage.scroll
+
+id bayer-expressions
+name Bayer Expressions
+appeared 2018
+creators Dave Bayer
+tags dataNotation
+conceptDescription An alternative notation for S-Expressions that uses fewer parentheses. As described by the creator: Indentation implies parentheses. A pipe "|" opens a parenthesis that auto-closes at the end of that line or at the next ")". A dollar "$" opens a parenthesis that auto-closes when the indentation recovers. The result has a lighter, more poetic look than any language I know, and the parentheses that are left actually matter, so I pay attention to them.
+
+relatedConcepts s-expressions i-expressions
+reference https://news.ycombinator.com/item?id=19431720
+
+example
+ define | edge? g e
+   let
+     $ es | edges g
+       e2 | reverse e
+     or (member e es) (member e2 es)
+
+isbndb 0

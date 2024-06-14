@@ -1,0 +1,46 @@
+Subleq
+======
+
+Subleq is an instruction set architecture created in 2009 by David Roberts.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Roberts
+
+#1699 on PLDB
+15 Years Old
+
+git clone https://github.com/davidar/subleq
+
+Try now: Riju
+
+CPU design and toolchain for a simple computer architecture
+
+- Subleq is developed on GitHub and has 94 stars
+- Subleq is written in JavaScript, Make, C++, Python, C, XML, Markdown, CSS, HTML
+
+12 12 3
+36 37 6
+37 12 9
+37 37 12
+0 -1 15
+38 36 18
+12 12 21
+53 37 24
+37 12 27
+37 37 30
+36 12 -1
+37 37 0
+39 0 -1
+72 101 108
+108 111 44
+32 119 111
+114 108 100
+33 10 53
+
+loop:       hello (-1)
+            minusOne loop
+            minusOne checkEnd+1
+checkEnd:   Z hello (-1)
+            Z Z loop
+				
+. minusOne: -1
+. hello: &quot;Hello World\n&quot; Z: 0

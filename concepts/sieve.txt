@@ -1,0 +1,72 @@
+Sieve mail filtering language
+=============================
+
+Sieve mail filtering language is an application created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#901 on PLDB
+16 Years Old
+10 Repos
+
+Sieve is a programming language that can be used for email filtering. It owes its creation to the CMU Cyrus Project, creators of Cyrus IMAP server. The language is not tied to any particular operating system or mail architecture. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
+
+- Sieve mail filtering language Wikipedia page
+ https://en.wikipedia.org/wiki/Sieve_(mail_filtering_language)
+- There are at least 10 Sieve mail filtering language repos on GitHub
+- Sieve mail filtering language first developed in University of Washington and Carnegie Mellon University
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9 users using Sieve mail filtering language in 9 repos on GitHub
+- CodeMirror package for syntax highlighting Sieve mail filtering language
+- Pygments supports syntax highlighting for Sieve mail filtering language
+- See also: (4 related languages)sed, awk, Unicode, SMTP
+
+# Sieve filter
+
+# Declare the extensions used by this script.
+#
+require [&quot;fileinto&quot;, &quot;reject&quot;];
+
+# Messages bigger than 100K will be rejected with an error message
+#
+if size :over 100K {
+   reject &quot;I&#39;m sorry, I do not accept mail over 100kb in size.
+Please upload larger files to a server and send me a link.
+Thanks.&quot;;
+}
+
+# Mails from a mailing list will be put into the folder &quot;mailinglist&quot;
+#
+elsif address :is [&quot;From&quot;, &quot;To&quot;] &quot;mailinglist@blafasel.invalid&quot; {
+   fileinto &quot;INBOX.mailinglist&quot;;
+}
+
+# Spam Rule: Message does not contain my address in To, CC or Bcc
+# header, or subject is something with &quot;money&quot; or &quot;Viagra&quot;.
+#
+elsif anyof (not address :all :contains [&quot;To&quot;, &quot;Cc&quot;, &quot;Bcc&quot;] &quot;me@blafasel.invalid&quot;,
+header :matches &quot;Subject&quot; [&quot;*money*&quot;,&quot;*Viagra*&quot;]) {
+      fileinto &quot;INBOX.spam&quot;;
+}
+
+# Keep the rest.
+# This is not necessary because there is a &quot;implicit keep&quot; Rule
+#
+else {
+     keep;
+}
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example

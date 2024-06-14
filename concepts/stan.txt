@@ -1,0 +1,63 @@
+Stan
+====
+
+Stan is an open source programming language created in 2012.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#560 on PLDB
+12 Years Old
+774 Repos
+
+Stan is a probabilistic programming language for statistical inference written in C++. The Stan language is used to specify a (Bayesian) statistical model with an imperative program calculating the log probability density function. Stan is licensed under the New BSD License. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Stan_(software)
+
+- Stan website
+ http://mc-stan.org/
+- Stan Wikipedia page
+ https://en.wikipedia.org/wiki/Stan_(software)
+- There are at least 774 Stan repos on GitHub
+- Stan first developed in https://github.com/stan-dev
+- Stan is written in C++
+- Stan on Twitter
+ https://twitter.com/mcmc_stan
+- The  Google BigQuery Public Dataset GitHub snapshot shows 134 users using Stan in 154 repos on GitHub
+- Pygments supports syntax highlighting for Stan
+- GitHub supports syntax highlighting for Stan
+- See also: (4 related languages)IA-32, R, MATLAB, Stata
+
+data {
+  int&lt;lower=0&gt; N;
+  vector[N] incumbency_88;
+  vector[N] vote_86;
+  vector[N] vote_88;
+}
+parameters {
+  vector[3] beta;
+  real&lt;lower=0&gt; sigma;
+}
+model {
+    vote_88 ~ normal(beta[1] + beta[2] * vote_86
+                     + beta[3] * incumbency_88,sigma);
+}
+
+Language features
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported ✓
+ Token 
+ Example

@@ -1,0 +1,17 @@
+import ../code/conceptPage.scroll
+
+id bag-format
+name bag-format
+appeared 2010
+tags binaryDataFormat
+website http://wiki.ros.org/Bags
+conceptDescription A bag is a file format in ROS for storing ROS message data. Bags -- so named because of their .bag extension -- have an important role in ROS, and a variety of tools have been written to allow you to store, process, analyze, and visualize them.
+
+fileExtensions bag
+country United States
+originCommunity Open Robotics
+reference http://wiki.ros.org/Bags/Format
+
+hasBooleans true
+hasFloats true
+hasIntegers true

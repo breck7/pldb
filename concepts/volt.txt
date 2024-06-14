@@ -1,0 +1,145 @@
+Volt
+====
+
+Volt is an open source programming language created in 2011.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#652 on PLDB
+13 Years Old
+158 Repos
+
+git clone https://github.com/VoltLang/Volta
+
+Compiler for the Volt Programming Language
+
+- Volt website
+ http://www.volt-lang.org/
+- Volt is developed on GitHub and has 142 stars
+- There are at least 158 Volt repos on GitHub
+- Volt is written in D, Markdown, C, Assembly language, TOML, Make, JSON, XML, reStructuredText
+- The  Google BigQuery Public Dataset GitHub snapshot shows 298 users using Volt in 351 repos on GitHub
+- GitHub supports syntax highlighting for Volt
+- volt-lang.org was registered in 2013
+
+// Copyright © 2012-2013, Jakob Bornecrantz.  All rights reserved.
+// See copyright notice in src/volt/license.d (BOOST ver. 1.0).
+module main;
+
+import core.stdc.stdio;
+import core.stdc.stdlib;
+
+import watt.process;
+import watt.path;
+
+import results;
+import list;
+import cmd;
+
+int main()
+{
+	auto cmdGroup = new CmdGroup();
+	bool printOk = true;
+	bool printImprovments = true;
+	bool printFailing = true;
+	bool printRegressions = true;
+	string compiler = getEnv(&quot;VOLT&quot;);
+
+	if (compiler is null) {
+		printf(&quot;compiler envar not set\n&quot;.ptr);
+		return -1;
+	}
+
+	/// @todo Scan for files
+	auto tests = testList;
+
+	int total;
+	int passed;
+	int failed;
+	int improved;
+	int regressed;
+
+	auto rets = new Result[] (tests.length);
+	for (size_t i; i &lt; tests.length; i++) {
+		rets[i] = new Result();
+		rets[i].runTest(cmdGroup, tests[i], compiler);
+	}
+
+	cmdGroup.waitAll();
+
+	for (size_t i; i &lt; tests.length; i++) {
+		auto ret = rets[i];
+		total++;
+		if (ret.ok) {
+			passed++;
+			improved += cast(int)!ret.hasPassed;
+
+			if (!ret.hasPassed &amp;&amp; printImprovments) {
+				printf(&quot;%s: %s, improved!\n&quot;.ptr, ret.test.ptr, ret.msg.ptr);
+			} else if (printOk) {
+				printf(&quot;%s: %s\n&quot;.ptr, ret.test.ptr, ret.msg.ptr);
+			}
+		} else {
+			failed++;
+			regressed += cast(int)ret.hasPassed;
+
+			if (ret.hasPassed &amp;&amp; printRegressions) {
+				printf(&quot;%s: %s, regressed!\n&quot;.ptr, ret.test.ptr, ret.msg.ptr);
+			} else if (printFailing) {
+				printf(&quot;%s: %s\n&quot;.ptr, ret.test.ptr, ret.msg.ptr);
+			}
+		}
+		fflush(stdout);
+	}
+
+	auto xml = fopen(&quot;results.xml&quot;.ptr, &quot;w+&quot;.ptr);
+	if (xml !is null) {
+		fprintf(xml, &quot;&lt;testsuites errors=\&quot;%u\&quot; failures=\&quot;%u\&quot; tests=\&quot;%u\&quot;&gt;\n&quot;.ptr,
+				regressed, failed - regressed, total);
+		for (size_t i; i &lt; rets.length; i++) {
+			rets[i].xmlLog(xml);
+		}
+		fprintf(xml, &quot;&lt;/testsuites&gt;\n&quot;.ptr);
+		fflush(xml);
+		fclose(xml);
+		xml = null;
+	}
+
+	auto rate = cast(float)passed / cast(float)total * 100.f;
+	printf(&quot;Summary: %i tests, %i pass%s, %i failure%s, %.2f%% pass rate, %i regressions, %i improvements.\n&quot;.ptr,
+	       total,
+	       passed, (passed == 1 ? &quot;&quot;.ptr : &quot;es&quot;.ptr),
+	       failed, (failed == 1 ? &quot;&quot;.ptr : &quot;s&quot;.ptr),
+	       cast(double)rate, regressed, improved);
+
+	return regressed ? -1 : 0;
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

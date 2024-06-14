@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id mathpix-markdown
+name Mathpix Markdown
+appeared 2019
+tags textMarkup
+latestVersion 1.3.7
+conceptDescription Standard Markdown and extended it with key LaTeX features and chemistry support. Mathpix Markdown extends standard Markdown, for more power and control when converting your document to HTML, LaTeX, PDF, and DOCX.
+
+writtenIn typescript javascript markdown json jsx css html yaml ejs
+supersetOf markdown
+documentation https://mathpix.com/docs/mathpix-markdown/syntax-reference
+repoStats
+ firstCommit 2019
+ commits 999
+ committers 9
+ files 874
+ newestCommit 2024
+country United States
+originCommunity https://github.com/Mathpix
+reference https://mathpix.com/markdown-to-latex
+
+example
+ Compute \(f(x) = x^2 + 2\) if \(x=2\).
+
+githubRepo https://github.com/Mathpix/mathpix-markdown-it
+ stars 447
+ forks 41
+ subscribers 14
+ created 2019
+ updated 2024
+ description Markdown rendering + Latex extras (equations, tables, ...), with conversion features, for the scientific community
+ issues 47

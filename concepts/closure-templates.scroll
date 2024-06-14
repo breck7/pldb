@@ -1,0 +1,98 @@
+import ../code/conceptPage.scroll
+
+id closure-templates
+name Closure Templates
+appeared 2009
+tags template
+
+isOpenSource true
+writtenIn java starlark markdown html javascript protobuf python xml typescript json bazel yaml
+fileType text
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2009
+ commits 5978
+ committers 90
+ files 1544
+ newestCommit 2024
+country United States
+originCommunity Google
+
+example
+ /**
+  * Says hello to the world.
+  */
+ {template .helloWorld}
+   Hello world!
+ {/template}
+
+githubRepo https://github.com/google/closure-templates
+ firstCommit 2009
+ stars 561
+ forks 190
+ subscribers 40
+ created 2014
+ updated 2022
+ description A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
+ issues 118
+
+multiLineCommentTokens /* */
+
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+githubBigQuery Closure Templates
+ repos 25
+ users 18
+
+linguistGrammarRepo https://github.com/mthadley/language-closure-templates
+ firstCommit 2017
+ lastCommit 2017
+ committerCount 2
+ commitCount 19
+ sampleCount 1
+ example
+  {namespace Exmaple}
+  
+  /**
+   * Example
+   */
+  {template .foo}
+    {@param count: string}
+    {@param? name: int}
+  
+    {if isNonnull($name)}
+      <h1>{$name}</h1>
+    {/if}
+  
+    <div class="content">
+      {switch count}
+        {case 0}
+          {call Empty.view}
+            {param count: $count /}
+          {/call}
+        {default}
+          <h2>Wow, so many!</h2>
+      {/switch}
+    </div>
+  {/template}
+
+isbndb 0
+
+githubLanguage Closure Templates
+ fileExtensions soy
+ trendingProjectsCount 0
+ type markup
+ aceMode soy_template
+ codemirrorMode soy
+ codemirrorMimeType text/x-soy
+ tmScope text.html.soy
+ aliases soy
+ repos 424389
+
+semanticScholar 0

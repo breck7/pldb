@@ -1,0 +1,33 @@
+import ../code/conceptPage.scroll
+
+id kaml
+name KAML
+appeared 2018
+tags dataNotation
+standsFor KAML ain't markup language
+
+writtenIn markdown xml
+supersetOf yaml json
+repoStats
+ firstCommit 2018
+ commits 59
+ committers 2
+ files 6
+ newestCommit 2019
+country Switzerland
+originCommunity https://github.com/ISLEcode
+reference https://github.com/ISLEcode/KAML/blob/master/kaml-specifications.md#about
+
+example
+ title="KAML Example"                    # A simple string
+ author=Jean-Michel\ Marcastel           # Alternate string representation with escaped whitespaces
+ number=1234                             # Numeric value handled as a string
+
+githubRepo https://github.com/ISLEcode/KAML
+ stars 3
+ forks 0
+ subscribers 2
+ created 2018
+ updated 2020
+ description KAML ain't markup language
+ issues 0

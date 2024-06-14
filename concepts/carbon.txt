@@ -1,0 +1,52 @@
+Carbon
+======
+
+Carbon is a programming language created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#873 on PLDB
+4 Years Old
+
+git clone https://github.com/carbon-language/carbon-lang
+
+Carbon language specification and documentation.
+
+- Carbon is developed on GitHub and has 1,099 stars
+- Carbon first developed in https://github.com/carbon-language
+- Carbon is written in Markdown, C++, Bazel, Python, YAML, starlark, Bourne shell, JSON, SVG, Diff, JavaScript, Vim script, Dockerfile, XML, Protocol Buffers, C, Scheme, HTML, Yacc, Lua, Lex, Make, TOML
+- Read more about Carbon on the web: 1.
+ https://news.ycombinator.com/item?id=32151609
+
+package Sorting api;
+
+fn Partition[T:! Comparable &amp; Movable](s: Slice(T))
+     -&gt; i64 {
+  var i: i64 = -1;
+
+  for (e: T in s) {
+    if (e &lt;= s.Last()) {
+      ++i;
+      Swap(&amp;s[i], &amp;e);
+    }
+  }
+  return i;
+}
+
+fn QuickSort[T:! Comparable &amp; Movable](s: Slice(T)) {
+  if (s.Size() &lt;= 1) {
+    return;
+  }
+  let p: i64 = Partition(s);
+  QuickSort(s[:p - 1]));
+  QuickSort(s[p + 1:]));
+}
+
+package sample api;
+
+fn Square(x: i32) -&gt; i32 {
+  return x * x;
+}
+
+fn Main() -&gt; i32 {
+  return Square(12);
+}

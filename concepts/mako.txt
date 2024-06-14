@@ -1,0 +1,53 @@
+Mako
+====
+
+Mako is a template language created in 2006.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#759 on PLDB
+18 Years Old
+188 Repos
+
+- Mako website
+ https://www.makotemplates.org/
+- There are at least 188 Mako repos on GitHub
+- Mako first developed in https://www.makotemplates.org/community.html
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Mako in 4k repos on GitHub
+- Pygments supports syntax highlighting for Mako
+- GitHub supports syntax highlighting for Mako
+- makotemplates.org was registered in 2006
+- 3 languages in PLDB linking to Mako: cloc, Mindsdb, Pygments
+
+&lt;%inherit file=&quot;base.html&quot;/&gt;
+&lt;%
+    rows = [[v for v in range(0,10)] for row in range(0,10)]
+%&gt;
+&lt;table&gt;
+    % for row in rows:
+        ${makerow(row)}
+    % endfor
+&lt;/table&gt;
+
+&lt;%def name=&quot;makerow(row)&quot;&gt;
+    &lt;tr&gt;
+    % for name in row:
+        &lt;td&gt;${name}&lt;/td&gt;\
+    % endfor
+    &lt;/tr&gt;
+&lt;/%def&gt;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example

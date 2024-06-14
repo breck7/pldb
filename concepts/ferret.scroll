@@ -1,0 +1,49 @@
+import ../code/conceptPage.scroll
+
+id ferret
+name ferret
+appeared 2017
+creators Nurullah Akkaya
+tags pl
+website http://ferret-lang.org
+latestVersion 0.4.0
+
+writtenIn yaml make markdown
+repoStats
+ firstCommit 2015
+ commits 1645
+ committers 10
+ files 8
+ newestCommit 2020
+country North Cyprus
+originCommunity Near East University
+
+example
+ ;;; lazy-sum.clj
+ (defn positive-numbers
+   ([]
+    (positive-numbers 1))
+   ([n]
+    (cons n (lazy-seq (positive-numbers (inc n))))))
+ 
+ (println (->> (positive-numbers)
+               (take 5)
+               (apply +)))
+ 
+
+githubRepo https://github.com/nakkaya/ferret
+ firstCommit 2015
+ stars 1008
+ forks 43
+ subscribers 39
+ created 2016
+ updated 2022
+ description Ferret is a free software lisp implementation for real time embedded control systems.
+ issues 12
+
+domainName ferret-lang.org
+ registered 2017
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 14951116|Ferret – A free software Clojure implementation|http://ferret-lang.org/|2017-08-07 20:45:21 UTC|1502138721|greydius|79|266

@@ -1,0 +1,26 @@
+Berry
+=====
+
+Berry is a programming language created in 2018 by 官文亮.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=%E5%AE%98%E6%96%87%E4%BA%AE
+
+#745 on PLDB
+6 Years Old
+
+git clone https://github.com/berry-lang/berry
+
+A ultra-lightweight embedded scripting language optimized for microcontrollers.
+
+- Berry website
+ https://github.com/berry-lang/berry
+- Berry is developed on GitHub and has 1,400 stars
+- Berry first developed in https://github.com/berry-lang/
+- Berry is written in C, reStructuredText, Python, JSON, Markdown, Make, YAML, CMake, XML, Bourne shell
+
+def fib(x)
+    if (x &lt;= 1)
+        return x
+    end
+    return fib(x - 1) + fib(x - 2)
+end

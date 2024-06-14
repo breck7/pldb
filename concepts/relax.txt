@@ -1,0 +1,59 @@
+relax
+=====
+
+relax is a grammar language created in 2000 by Makoto Murata.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Makoto%20Murata
+
+#2518 on PLDB
+24 Years Old
+
+- relax website
+ http://www.xml.gr.jp/relax/
+- relax first developed in https://www.gr.jp
+
+&lt;module
+      moduleVersion=&quot;1.2&quot;
+      relaxCoreVersion=&quot;1.0&quot;
+      targetNamespace=&quot;&quot;
+      xmlns=&quot;http://www.xml.gr.jp/xmlns/relaxCore&quot;&gt;
+
+  &lt;interface&gt;
+    &lt;export label=&quot;doc&quot;/&gt;
+  &lt;/interface&gt;
+
+  &lt;elementRule role=&quot;doc&quot;&gt;
+    &lt;sequence&gt;
+      &lt;ref label=&quot;title&quot;/&gt;
+      &lt;ref label=&quot;para&quot; occurs=&quot;*&quot;/&gt;
+    &lt;/sequence&gt;
+  &lt;/elementRule&gt;
+ 
+  &lt;elementRule role=&quot;para&quot;&gt;
+    &lt;mixed&gt;
+      &lt;ref label=&quot;em&quot; occurs=&quot;*&quot;/&gt;
+    &lt;/mixed&gt;
+  &lt;/elementRule&gt;
+  
+  &lt;elementRule role=&quot;title&quot;&gt;
+    &lt;mixed&gt;
+      &lt;ref label=&quot;em&quot; occurs=&quot;*&quot;/&gt;
+    &lt;/mixed&gt;
+  &lt;/elementRule&gt;
+
+  &lt;elementRule role=&quot;em&quot; type=&quot;string&quot;/&gt;
+  
+  &lt;tag name=&quot;doc&quot;/&gt;
+
+  &lt;tag name=&quot;para&quot;&gt;
+    &lt;attribute name=&quot;class&quot; type=&quot;NMTOKEN&quot;/&gt;
+  &lt;/tag&gt;
+  
+  &lt;tag name=&quot;title&quot;&gt;
+    &lt;attribute name=&quot;class&quot; type=&quot;NMTOKEN&quot;/&gt;
+    &lt;attribute name=&quot;number&quot; required=&quot;true&quot; type=&quot;integer&quot;/&gt;
+  &lt;/tag&gt;
+
+  &lt;tag name=&quot;em&quot;/&gt;
+
+&lt;/module&gt;

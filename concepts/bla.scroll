@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id bla
+name Bla
+appeared 1994
+creators Wouter Van Oortmerssen
+tags pl
+website http://strlen.com/bla-language/
+
+country Netherlands
+originCommunity University of Amsterdam
+
+example
+ map(f,[])    = []
+ map(f,[h|t]) = [f(h)|map(f,t)]
+ 
+ qsort([],_)     = []
+ qsort([h|t],lt) = append(qsort(filter(lambda(x) = lt(x,h),t),lt),
+                       [h|qsort(filter(lambda(x) = not lt(x,h),t),lt)])
+ 
+ stack[T]() = self where
+   d = []
+   isempty() = d=[]
+   push(x:T) do d:=[x|d]
+   pop():T = d | []    -> nil   -- raise stack_empty
+               | [h|t] -> h do d:=t
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false

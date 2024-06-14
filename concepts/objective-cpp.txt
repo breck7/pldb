@@ -1,0 +1,109 @@
+Objective C++
+=============
+
+Objective C++ is a programming language created in 1993.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#555 on PLDB
+31 Years Old
+536k Repos
+
+Try now: Riju
+
+- There are at least 535,669 Objective C++ repos on GitHub
+- Objective C++ first developed in Apple
+- The  Google BigQuery Public Dataset GitHub snapshot shows 15k users using Objective C++ in 18k repos on GitHub
+- Pygments supports syntax highlighting for Objective C++
+- GitHub supports syntax highlighting for Objective C++
+- Read more about Objective C++ on the web: 1.
+ https://en.wikipedia.org/wiki/Objective-C
+- 25 languages in PLDB linking to Objective C++: Bazel, BlitzMax, Factor, Flow9, GCC, GN, Gradle, Halide, invokator, Iterm2, Kotlin, kumir, MongoDB, MonkeyX, PyTorch, React Native, Revolution, score, Swift, Taichi, tao3d, TensorFlow, Uno, Wonkey, Xtext
+
+#import &lt;Foundation/Foundation.h&gt;
+
+int main() {
+  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+  NSLog(@&quot;Hello, world!&quot;);
+  [pool drain];
+  return 0;
+}
+
+// grabbed from https://raw.github.com/AOKP/external_webkit/61b2fb934bdd3a5fea253e2de0bcf8a47a552333/Source/WebCore/page/mac/EventHandlerMac.mm
+
+/*
+ * Copyright (C) 2006, 2007, 2008, 2009 Apple Inc. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE COMPUTER, INC. ``AS IS&#39;&#39; AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE COMPUTER, INC. OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#include &quot;config.h&quot;
+#include &quot;EventHandler.h&quot;
+
+#include &quot;AXObjectCache.h&quot;
+#include &quot;BlockExceptions.h&quot;
+#include &quot;Chrome.h&quot;
+#include &quot;ChromeClient.h&quot;
+#include &quot;ClipboardMac.h&quot;
+#include &quot;DragController.h&quot;
+#include &quot;EventNames.h&quot;
+#include &quot;FocusController.h&quot;
+#include &quot;Frame.h&quot;
+#include &quot;FrameLoader.h&quot;
+#include &quot;FrameView.h&quot;
+#include &quot;KeyboardEvent.h&quot;
+#include &quot;MouseEventWithHitTestResults.h&quot;
+#include &quot;NotImplemented.h&quot;
+#include &quot;Page.h&quot;
+#include &quot;PlatformKeyboardEvent.h&quot;
+#include &quot;Pl
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token /* */
+ Example
+  /* A comment
+  */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

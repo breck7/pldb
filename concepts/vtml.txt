@@ -1,0 +1,35 @@
+Visual Tool Markup Language
+===========================
+
+Visual Tool Markup Language is a programming language created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2977 on PLDB
+27 Years Old
+
+Visual Tool Markup Language, a user interface markup language used by Macromedia HomeSite, ColdFusion Studio and JRun Studio. VTML is used for tag editors and custom dialogs shipped with these applications and can be used to extend the user interface and to support additional tag-based languages. It is documented in help files included with these applications or available online, notably in the "VTML Reference" and "Customizing the Development Environment" sections. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/VTML
+
+- Visual Tool Markup Language Wikipedia page
+ https://en.wikipedia.org/wiki/VTML
+- Read more about Visual Tool Markup Language on the web: 1.
+ http://www.ulitzer.com/node/41770
+
+&lt;TAG&gt; &lt;ATTRIBUTES&gt;
+... Defines tag attribute properties and behavior
+&lt;/ATTRIBUTES&gt;
+&lt;ATTRIBCATEGORIES&gt;
+... Defines logical grouping for tag attributes
+&lt;/ATTRIBCATEGORIES&gt;
+
+&lt;EDITORLAYOUT&gt;
+... Defines the layout of a tag editor
+&lt;/EDITORLAYOUT&gt;
+
+&lt;TAGLAYOUT&gt;
+... Defines the tag generation template
+&lt;/TAGLAYOUT&gt;
+&lt;TAGDESCRIPTION&gt;
+... HTML-based documentation for the tag
+&lt;/TAGDESCRIPTION&gt;
+&lt;/TAG&gt;

@@ -1,0 +1,43 @@
+Gettext Catalog
+===============
+
+Gettext Catalog is an open source text markup language created in 1990.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#646 on PLDB
+34 Years Old
+63k Repos
+
+In computing, gettext is an internationalization and localization (i18n) system commonly used for writing multilingual programs on Unix-like computer operating systems. The most commonly used implementation of gettext is GNU gettext, released by the GNU Project in 1995.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Gettext
+
+- Gettext Catalog Wikipedia page
+ https://en.wikipedia.org/wiki/Gettext
+- There are at least 62,782 Gettext Catalog repos on GitHub
+- Gettext Catalog first developed in Free Software Foundation, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 509 users using Gettext Catalog in 650 repos on GitHub
+- Pygments supports syntax highlighting for Gettext Catalog
+- GitHub supports syntax highlighting for Gettext Catalog
+- See also: (8 related languages)C, Emacs, Unix, C#, Perl, PHP, Python, Scala
+- Read more about Gettext Catalog on the web: 1.
+ https://www.gnu.org/software/gettext/
+
+#: src/name.c:36
+msgid &quot;My name is %s.\n&quot;
+msgstr &quot;Je m&#39;appelle %s.\n&quot;
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example

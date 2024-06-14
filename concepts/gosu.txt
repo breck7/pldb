@@ -1,0 +1,83 @@
+Gosu
+====
+
+Gosu is an open source programming language created in 2002.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#403 on PLDB
+22 Years Old
+701 Repos
+
+Gosu is a statically-typed programming language that runs on the Java Virtual Machine released under the Apache 2. This general-purpose programming language is used in several open-source software projects including SparkGS and Ragnar DB among several others, and is widely used in the insurance industry via Guidewire Software's commercial products. The language borrows from several existing languages including Java, C#, and ECMAScript. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Gosu_(programming_language)
+
+- Gosu website
+ http://gosu-lang.org/
+- Gosu Wikipedia page
+ https://en.wikipedia.org/wiki/Gosu_(programming_language)
+- There are at least 701 Gosu repos on GitHub
+- Gosu first developed in Guidewire Software, Inc
+- The  Google BigQuery Public Dataset GitHub snapshot shows 486 users using Gosu in 539 repos on GitHub
+- Explore Gosu snippets on Rosetta Code
+- Gosu appears in the TIOBE Index
+- Pygments supports syntax highlighting for Gosu
+- GitHub supports syntax highlighting for Gosu
+- gosu-lang.org was registered in 2009
+- See also: (7 related languages)Java Bytecode, Java, C#, Kotlin, JavaScript, Pascal, Go
+
+print(&quot;Hello World&quot;)
+
+function hello() {
+  print(&quot;hello&quot;)
+}
+
+var list = {1, 2, 3}
+var result = list.where(\ elem -&gt; elem &gt;= 2)
+print(result)
+
+Language features
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported ✓
+ Token 
+ Example
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token print
+ Example

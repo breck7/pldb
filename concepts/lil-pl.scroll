@@ -1,0 +1,46 @@
+import ../code/conceptPage.scroll
+
+id lil-pl
+name Lil
+appeared 2022
+tags pl
+website https://beyondloom.com/decker/lil.html
+webRepl https://beyondloom.com/decker/tour.html
+conceptDescription Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
+
+writtenIn markdown bourne-shell javascript c xml html vim-script awk make yaml lisp nix
+relatedConcepts sql lua
+influencedBy hypercard
+documentation https://beyondloom.com/decker/lil.html
+repoStats
+ firstCommit 2022
+ commits 581
+ committers 17
+ files 191
+ newestCommit 2024
+country United States
+originCommunity https://github.com/JohnEarnest/Decker/issues
+
+example
+ on mode a do   # line comment
+     r:()
+     each x in a
+         r[x]:1+r[x]
+     end
+     extract first key orderby value desc from r
+ end
+ 
+ mode[1,2,2,3,4,2,1]
+
+githubRepo https://github.com/JohnEarnest/Decker
+ stars 396
+ forks 21
+ subscribers 16
+ created 2022
+ updated 2023
+ description A multimedia sketchpad
+ issues 2
+
+hasStrings true
+hasLists true
+ emptyList = ()

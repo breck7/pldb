@@ -1,0 +1,101 @@
+import ../code/conceptPage.scroll
+
+id raml
+name RAML
+appeared 2013
+tags yamlFormat
+website http://raml.org/spec.html
+latestVersion 1.0.0
+standsFor RESTful API Modeling Language
+
+isOpenSource true
+writtenIn markdown json yaml
+clocExtensions raml
+fileType text
+documentation https://raml.org/developers/document-your-api
+centralPackageRepositoryCount 0
+repoStats
+ firstCommit 2013
+ commits 655
+ committers 41
+ files 11
+ newestCommit 2021
+country United States
+originCommunity https://github.com/raml-org
+
+languageServerProtocolProject https://github.com/raml-org/raml-language-server
+
+githubRepo https://github.com/raml-org/raml-spec
+ firstCommit 2013
+ stars 3780
+ forks 853
+ subscribers 160
+ created 2013
+ updated 2022
+ description RAML Specification
+ issues 223
+
+githubBigQuery RAML
+ repos 472
+ users 416
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 1
+ example
+  #%RAML 0.8
+  
+  title: World Music API
+  baseUri: http://example.api.com/{version}
+  version: v1
+  traits:
+    - paged:
+        queryParameters:
+          pages:
+            description: The number of pages to return
+            type: number
+    - secured: !include http://raml-example.com/secured.yml
+  /songs:
+    is: [ paged, secured ]
+    get:
+      queryParameters:
+        genre:
+          description: filter the songs by genre
+    post:
+    /{songId}:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: |
+                  { "$schema": "http://json-schema.org/schema",
+                    "type": "object",
+                    "description": "A canonical song",
+                    "properties": {
+                      "title":  { "type": "string" },
+                      "artist": { "type": "string" }
+                    },
+                    "required": [ "title", "artist" ]
+                  }
+              application/xml:
+      delete:
+        description: |
+          This method will *delete* an **individual song**
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2020|BPB Publications|Hands-on MuleSoft Anypoint platform Volume 1: Designing and Implementing RAML APIs with MuleSoft Anypoint Platform (English Edition)|Nachimuthu, Nanda|9789389898231
+
+githubLanguage RAML
+ fileExtensions raml
+ trendingProjectsCount 0
+ type markup
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
+ repos 4190

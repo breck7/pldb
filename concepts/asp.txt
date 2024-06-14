@@ -1,0 +1,63 @@
+ASP
+===
+
+ASP, aka Active Server Pages, is an open source template language created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#175 on PLDB
+28 Years Old
+48k Repos
+
+Active Server Pages (ASP), later known as Classic ASP or ASP Classic, is Microsoft's first server-side script engine for dynamically generated web pages. ASP.NET, first released in January 2002, has superseded ASP.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Active_Server_Pages
+
+- ASP Wikipedia page
+ https://en.wikipedia.org/wiki/Active_Server_Pages
+- ASP docs
+ https://learn.microsoft.com/en-us/previous-versions/iis/6.0-sdk/ms526064(v=vs.90)
+- There are at least 47,971 ASP repos on GitHub
+- ASP first developed in Microsoft
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23k users using ASP in 33k repos on GitHub
+- Explore ASP snippets on Rosetta Code
+- ASP on HOPL
+ https://hopl.info/showlanguage.prx?exp=5356
+- Pygments supports syntax highlighting for ASP
+- GitHub supports syntax highlighting for ASP
+- Indeed.com has 9,630 matches for "ASP developer".
+- See also: (6 related languages)VBScript, JScript, HTML, C#, JSP, PHP
+- 1 languages in PLDB linking to ASP: ASP.NET
+
+&lt;%@ Language= &quot;VBScript&quot; %&gt;
+&lt;%
+    Response.Write(&quot;Hello World&quot;)
+%&gt;
+
+&lt;%
+On Error Resume Next
+
+Response.Write 1 / 0 &#39; Division by zero
+
+If Err.Number &lt;&gt; 0 Then
+     Response.Write &quot;Error Code: &quot; &amp; Server.HTMLEncode(Err.Number) &amp; &quot;&lt;br /&gt;&quot;
+     Response.Write &quot;Error Source: &quot; &amp; Server.HTMLEncode(Err.Source) &amp; &quot;&lt;br /&gt;&quot;
+     Response.Write &quot;Error Description: &quot; &amp; Server.HTMLEncode(Err.Description) &amp; &quot;&lt;br /&gt;&quot;
+     Err.Clear
+End If
+%&gt;
+
+Language features
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Token "
+ Example
+  "Hello world"
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token Response.Write
+ Example

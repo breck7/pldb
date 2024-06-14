@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id streem
+name Streem
+appeared 2014
+creators Yukihiro Matsumoto
+tags pl
+website https://github.com/matz/streem
+conceptDescription Streem is a stream based concurrent scripting language. It is based on a programming model similar to the shell, with influences from Ruby, Erlang, and other functional programming languages.
+
+writtenIn c markdown yaml make bourne-shell yacc lex dockerfile
+repoStats
+ firstCommit 2014
+ commits 986
+ committers 41
+ files 63
+ newestCommit 2022
+country Japan
+originCommunity Ruby Association,NaCl
+
+example
+ # channel to broadcast to all clients
+ broadcast = chan()
+ tcp_server(8008) | {s ->
+   broadcast | s   # connect to broadcast channel
+   s | broadcast   # broadcast incoming message
+ }
+
+keywords case class def else emit false if import method namespace new nil return skip true
+githubRepo https://github.com/matz/streem
+ stars 4600
+ forks 258
+ subscribers 366
+ created 2014
+ updated 2022

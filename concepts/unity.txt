@@ -1,0 +1,43 @@
+UNITY
+=====
+
+UNITY is a programming language created in 1988.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1551 on PLDB
+36 Years Old
+
+UNITY is a programming language constructed by K. Mani Chandy and Jayadev Misra for their book Parallel Program Design: A Foundation. It is a theoretical language which focuses on what, instead of where, when or how. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/UNITY_(programming_language)
+
+- UNITY Wikipedia page
+ https://en.wikipedia.org/wiki/UNITY_(programming_language)
+- UNITY on HOPL
+ https://hopl.info/showlanguage.prx?exp=1446
+
+Program bubblesort
+declare
+    n: integer,
+    A: array [0..n-1] of integer
+initially
+    n = 20 #
+    &lt;|| i : 0 &lt;= i and i &lt; n :: A[i] = rand() % 100 &gt;
+assign
+    &lt;# k : 0 &lt;= k &lt; 2 ::
+        &lt;|| i : i % 2 = k and 0 &lt;= i &lt; n - 1 ::
+            A[i], A[i+1] := A[i+1], A[i]
+                if A[i] &gt; A[i+1] &gt; &gt;
+end
+
+Program shortestpath2
+declare
+    n: integer,
+    D: array [0..n-1, 0..n-1] of integer
+initially
+    n = 10 #
+    &lt;|| i,j : 0 &lt;= i &lt; n and 0 &lt;= j &lt; n ::
+        D[i,j] = rand() % 10 &gt;
+assign
+    &lt;|| i,j : 0 &lt;= i &lt; n and 0 &lt;= j &lt; n ::
+        D[i,j] := min(D[i,j], &lt;min k : 0 &lt;= k &lt; n :: D[i,k] + D[k,j] &gt;) &gt;
+end

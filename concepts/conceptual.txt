@@ -1,0 +1,39 @@
+Conceptual
+==========
+
+Conceptual is a programming language created in 2019.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#2022 on PLDB
+5 Years Old
+
+git clone https://github.com/Antipurity/conceptual
+
+An experimental programming language / IDE of evil.
+
+- Conceptual website
+ https://github.com/Antipurity/conceptual
+- Conceptual is developed on GitHub and has 8 stars
+- Conceptual first developed in https://github.com/Antipurity/conceptual
+- Conceptual is written in Tex, Markdown, JavaScript, HTML
+
+concept
+(
+map
+txt	&#39;(examples F): Returns examples of usage of a function, in `(… (CodeString BecomesString) …)` format.
+(examples): Returns all available examples in a (… (Name … (CodeString BecomesString) …) …) format.&#39;
+call	(_jsEval &quot;function(f) {
+  if (_isArray(f)) return error
+  if (f === undefined) {
+    // Accumulate all examples (from parse.ctx).
+    const result = [map]
+    parse.ctx.forEach((v,k) =&gt; {
+      if (k[0] === &#39;_&#39;) return
+      const r = _getDataOverride(v, examples)
+      if (r !== undefined)
+        result.push(v, r)
+    })
+    return result
+  } else
+    return _checkOverride(f, examples, f)
+}&quot;

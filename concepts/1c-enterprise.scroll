@@ -1,0 +1,66 @@
+import ../code/conceptPage.scroll
+
+id 1c-enterprise
+name 1C Enterprise Script
+appeared 2002
+tags pl
+conceptDescription The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language
+
+fileType text
+centralPackageRepositoryCount 0
+country Russia
+originCommunity 1C Company
+reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_enterprise_8_3/
+
+leachim6 1C Enterprise
+ filepath #/1C Enterprise
+ example
+  Message("Hello World");
+  
+
+printToken Message
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+githubBigQuery 1C Enterprise
+ repos 274
+ users 250
+
+linguistGrammarRepo https://github.com/xDrivenDevelopment/atom-language-1c-bsl.git
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 3
+ commitCount 261
+ sampleCount 6
+ example
+  ﻿Каталог = ОбъединитьПути(ТекущийКаталог(), "libs\oscript-library\src");
+  Загрузчик_Оригинал_ИмяФайла = ОбъединитьПути(Каталог, "package-loader.os");
+  
+  Файлы = НайтиФайлы(Каталог, , Ложь);
+  Для Каждого ВыбФайл Из Файлы Цикл
+  
+      Если ВыбФайл.ЭтоФайл() Тогда
+          Продолжить;
+      КонецЕсли;
+  
+      Загрузчик_ИмяФайла = ОбъединитьПути(ВыбФайл.ПолноеИмя, "package-loader.os");
+      Загрузчик_Файл = Новый Файл(Загрузчик_ИмяФайла);
+  
+      Если Загрузчик_Файл.Существует() Тогда
+          Продолжить;
+      КонецЕсли;
+  
+      КопироватьФайл(Загрузчик_Оригинал_ИмяФайла, Загрузчик_ИмяФайла);
+  
+  КонецЦикла;
+
+githubLanguage 1C Enterprise
+ fileExtensions bsl os
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.bsl
+ repos 38669

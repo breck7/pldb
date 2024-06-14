@@ -1,0 +1,65 @@
+silk
+====
+
+silk is a programming language created in 2019.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#1198 on PLDB
+5 Years Old
+
+git clone https://github.com/AjayMT/silk
+
+The Silk Programming Language
+
+- silk website
+ https://ajaymt.github.io/silk/
+- silk is developed on GitHub and has 68 stars
+- silk first developed in University of Illinois at Urbana-Champaign
+- silk is written in OCaml, Bourne shell, Markdown
+- Read more about silk on the web: 1.
+ https://news.ycombinator.com/item?id=22926080
+
+// this is a comment
+
+extern func printf(s *i8) void;
+
+func main(argc i32, argv **i8) i32 {
+  printf(&quot;hello, world\n&quot;);
+
+  if argc &gt; 1 {
+    val arg = @(argv + 1);
+    printf(arg);
+  }
+
+  return 0;
+}
+
+Language features
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Token printf
+ Example
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Token 
+ Example
+  // A comment
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Token //
+ Example
+  // A comment
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Token 
+ Example

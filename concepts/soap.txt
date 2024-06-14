@@ -1,0 +1,40 @@
+SOAP
+====
+
+SOAP, aka Simple Object Access Protocol, is a xml format created in 1998 by Dave Winer and Don Box and Bob Atkinson and Mohsen Al-Ghosein.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Dave%20Winer
+ https://pldb.io/concepts/../lists/creators.html#q=Don%20Box
+ https://pldb.io/concepts/../lists/creators.html#q=Bob%20Atkinson
+ https://pldb.io/concepts/../lists/creators.html#q=Mohsen%20Al-Ghosein
+
+#331 on PLDB
+26 Years Old
+
+SOAP (originally Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/SOAP
+
+- SOAP Wikipedia page
+ https://en.wikipedia.org/wiki/SOAP
+- SOAP docs
+ https://knowledge.channeladvisor.com/kc?id=kb_article&sysparm_article=KB0018150&sys_kb_id=b02d13c91bd5d1d42d9eea40604bcb2e&spa=1
+- SOAP first developed in Microsoft
+- Indeed.com has 7,493 matches for "soap language".
+- See also: (11 related languages)HTTP, SMTP, Linux, XML, TCP, WDDX, RFC, WSDL, TLS, JSON, REST
+
+POST /InStock HTTP/1.1
+Host: www.example.org
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 299
+SOAPAction: &quot;http://www.w3.org/2003/05/soap-envelope&quot;
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:m=&quot;http://www.example.org/stock/Manikandan&quot;&gt;
+  &lt;soap:Header&gt;
+  &lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;m:GetStockPrice&gt;
+      &lt;m:StockName&gt;GOOGLE&lt;/m:StockName&gt;
+    &lt;/m:GetStockPrice&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
