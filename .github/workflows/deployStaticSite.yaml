@@ -22,5 +22,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: scroll-output # The branch the action should deploy to.
+          branch: wws # The branch the action should deploy to.
           folder: .
