@@ -1314,7 +1314,7 @@ class Feature {
   get percentage() {
     const { yes, no } = this
     const measurements = yes + no
-    return measurements < 100 ? "-" : lodash.round((100 * yes) / measurements, 0) + "%"
+    return measurements < 20 ? "-" : lodash.round((100 * yes) / measurements, 0) + "%"
   }
 
   get aka() {
@@ -1365,7 +1365,7 @@ class Feature {
     if (!this.tables.featureCache) this.tables.featureCache = {}
     if (this.tables.featureCache[id]) return this.tables.featureCache[id]
     // todo: re-add support for "extended"
-    this.tables.featureCache[id] = this.tables.pldb.filter(file => file[id] !== "")
+    this.tables.featureCache[id] = this.tables.pldb.filter(file => file[id] !== "" && file[id] !== undefined)
     return this.tables.featureCache[id]
   }
 
