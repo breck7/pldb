@@ -1901,6 +1901,12 @@ firstAnnouncementParser
  description What is a URL announcing the creation or release of this language?
  extends abstractUrlMeasureParser
 
+interviewsParser
+ description What is a URL(s) to an interview with the creator(s) about this language?
+ extends abstractUrlMeasureParser
+ single false
+ float sortIndex 1.999
+
 // freedom
 isOpenSourceParser
  description Is this an open source project?

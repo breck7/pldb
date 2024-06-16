@@ -49,6 +49,15 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/julia.html"
  show(io::IO, a::MyType) = print(io, &quot;MyType $(a.x)&quot;)
  end
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a>
+ (module nest racket
+    (provide (for-syntax meta-eggs)
+             (for-meta 1 meta-chicks)
+             num-eggs)
+    (define-for-syntax meta-eggs 2)
+    (define-for-syntax meta-chicks 3)
+    (define num-eggs 2))
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran.html">Fortran</a>
  module constants
  implicit none
@@ -82,15 +91,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran.htm
     
  end program module_exampl
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a>
- (module nest racket
-    (provide (for-syntax meta-eggs)
-             (for-meta 1 meta-chicks)
-             num-eggs)
-    (define-for-syntax meta-eggs 2)
-    (define-for-syntax meta-chicks 3)
-    (define num-eggs 2))
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ocaml.html">OCaml</a>
  (* In OCaml, every piece of code is wrapped into a module. *)
  (* amodule.ml *)
@@ -109,7 +109,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>
+* Languages *with* Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>
 
 ***
 

@@ -1011,6 +1011,16 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "interviews",
+    "Values": 35,
+    "Coverage": "0%",
+    "Question": "What is a URL(s) to an interview with the creator(s) about this language?",
+    "Example": "https://pldb.io/posts/brianKernighan.html",
+    "Type": "string",
+    "SortIndex": 1.999,
+    "IsComputed": false
+  },
+  {
     "Name": "isPublicDomain",
     "Values": 75,
     "Coverage": "1%",

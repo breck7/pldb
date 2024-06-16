@@ -413,6 +413,13 @@ foo(a::MyType) = bar(a.x) + 1
 
 show(io::IO, a::MyType) = print(io, &quot;MyType $(a.x)&quot;)
 end</code></div>
+<div class="codeWithHeader"><div class="codeHeader">Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a></div><code class="scrollCodeBlock">(module nest racket
+   (provide (for-syntax meta-eggs)
+            (for-meta 1 meta-chicks)
+            num-eggs)
+   (define-for-syntax meta-eggs 2)
+   (define-for-syntax meta-chicks 3)
+   (define num-eggs 2))</code></div>
 <div class="codeWithHeader"><div class="codeHeader">Example from <b>1 languages</b>: <a href="../concepts/fortran.html">Fortran</a></div><code class="scrollCodeBlock">module constants
 implicit none
 
@@ -444,13 +451,6 @@ implicit none
    print*, &quot;Area of a circle with radius 7.0 = &quot;, area
    
 end program module_exampl</code></div>
-<div class="codeWithHeader"><div class="codeHeader">Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a></div><code class="scrollCodeBlock">(module nest racket
-   (provide (for-syntax meta-eggs)
-            (for-meta 1 meta-chicks)
-            num-eggs)
-   (define-for-syntax meta-eggs 2)
-   (define-for-syntax meta-chicks 3)
-   (define num-eggs 2))</code></div>
 <div class="codeWithHeader"><div class="codeHeader">Example from <b>1 languages</b>: <a href="../concepts/ocaml.html">OCaml</a></div><code class="scrollCodeBlock">(* In OCaml, every piece of code is wrapped into a module. *)
 (* amodule.ml *)
 let hello () = print_endline &quot;Hello&quot;
@@ -462,7 +462,7 @@ Amodule.hello ()</code></div>
  function Path (|string|)
   // return the app&#39;s path here</code></div>
 <div class="dinkus"><span>*</span></div>
-<p class="scrollParagraph">Languages <strong>with</strong> Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a></p>
+<p class="scrollParagraph">Languages <strong>with</strong> Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a></p>
 <div class="dinkus"><span>*</span></div>
 <p class="scrollParagraph">View all concepts <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasModules&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasModules%22%2C%22origData%22%3A%22hasModules%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">with</a> or <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasModules&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasModules%22%2C%22origData%22%3A%22hasModules%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">missing</a> a <strong>hasModules</strong> measurement</p>
 <div class="dinkus"><span>*</span></div>
