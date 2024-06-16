@@ -906,6 +906,16 @@ ${creatorsLinks}
     const download = this.get("download")
     if (download) facts.push(`${title} downloads page\n ${download}`)
 
+    let interviews = this.get("interviews")
+    if (interviews) {
+      interviews = interviews.split(" ")
+      facts.push(
+        `Interview${interviews.length > 1 ? "s" : ""} with the creator${
+          this.get("creators")?.includes(" and ") ? "s" : ""
+        } of ${title}: ${linkManyAftertext(interviews)}`
+      )
+    }
+
     const wikipediaLink = this.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
     if (wikiLink) facts.push(`${title} Wikipedia page\n ${wikiLink}`)
