@@ -975,7 +975,7 @@ import footer.scroll
   }
 
   helpCommand() {
-    this.log(`\n📜📜📜 WELCOME TO SCROLL (v${SCROLL_VERSION}) 📜📜📜`)
+    this.log(`\n📜 WELCOME TO SCROLL (v${SCROLL_VERSION})`)
     return this.log(`\nThis is the Scroll help page.\n\nCommands you can run from your Scroll's folder:\n\n${this._allCommands.map(comm => `🖌️ ` + comm.replace(this.CommandFnDecoratorSuffix, "")).join("\n")}\n​​`)
   }
 }
