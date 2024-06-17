@@ -3,7 +3,7 @@ import ../code/conceptPage.scroll
 id horse64
 name Horse64
 appeared 2020
-creators Ellie
+creators Ellie Kanning-Dawn
 tags pl
 website https://horse64.org/
 description Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
@@ -12,7 +12,18 @@ isOpenSource true
 writtenIn horse64 moose64 python markdown cython yaml svg xml make bash
 fileExtensions h64
 documentation https://horse64.org/docs
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 1121
+ committers 2
+ files 208
 country Germany
+
+example
+ func main {
+     print("Hello World")
+ }
 
 gitRepo https://codeberg.org/Horse64/core.horse64.org
 
