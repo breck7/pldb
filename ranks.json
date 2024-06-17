@@ -1070,13 +1070,13 @@
     "foundationScore": 4,
     "numberOfJobsEstimate": 0,
     "inboundLinksCount": 5,
-    "measurements": 34,
+    "measurements": 35,
     "numberOfUsersEstimateRank": 164,
     "foundationScoreRank": 137,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 137,
-    "measurementsRank": 149,
-    "pldbScore": 23769,
+    "measurementsRank": 137,
+    "pldbScore": 23781,
     "index": 72
   },
   "svg": {
@@ -1675,8 +1675,8 @@
     "foundationScoreRank": 137,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 151,
-    "measurementsRank": 149,
-    "pldbScore": 23492,
+    "measurementsRank": 150,
+    "pldbScore": 23491,
     "index": 112
   },
   "jquery": {
@@ -1810,8 +1810,8 @@
     "foundationScoreRank": 92,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 96,
-    "measurementsRank": 149,
-    "pldbScore": 23448,
+    "measurementsRank": 150,
+    "pldbScore": 23447,
     "index": 121
   },
   "robotframework": {
@@ -1900,8 +1900,8 @@
     "foundationScoreRank": 167,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 169,
-    "measurementsRank": 149,
-    "pldbScore": 23432,
+    "measurementsRank": 150,
+    "pldbScore": 23431,
     "index": 127
   },
   "tcl": {
@@ -2380,8 +2380,8 @@
     "foundationScoreRank": 137,
     "numberOfJobsEstimateRank": 85,
     "inboundLinksCountRank": 151,
-    "measurementsRank": 149,
-    "pldbScore": 23288,
+    "measurementsRank": 150,
+    "pldbScore": 23287,
     "index": 159
   },
   "coldfusion": {
@@ -2590,8 +2590,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 23236,
+    "measurementsRank": 150,
+    "pldbScore": 23235,
     "index": 173
   },
   "monaco": {
@@ -2894,21 +2894,6 @@
     "pldbScore": 23176,
     "index": 193
   },
-  "vala": {
-    "id": "vala",
-    "numberOfUsersEstimate": 1171,
-    "foundationScore": 3,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 3,
-    "measurements": 34,
-    "numberOfUsersEstimateRank": 711,
-    "foundationScoreRank": 152,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 169,
-    "measurementsRank": 149,
-    "pldbScore": 23175,
-    "index": 194
-  },
   "m4": {
     "id": "m4",
     "numberOfUsersEstimate": 715,
@@ -2921,6 +2906,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 33,
     "measurementsRank": 216,
+    "pldbScore": 23174,
+    "index": 194
+  },
+  "vala": {
+    "id": "vala",
+    "numberOfUsersEstimate": 1171,
+    "foundationScore": 3,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 3,
+    "measurements": 34,
+    "numberOfUsersEstimateRank": 711,
+    "foundationScoreRank": 152,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 169,
+    "measurementsRank": 150,
     "pldbScore": 23174,
     "index": 195
   },
@@ -4300,8 +4300,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22933,
+    "measurementsRank": 150,
+    "pldbScore": 22932,
     "index": 287
   },
   "rexx": {
@@ -4814,21 +4814,6 @@
     "pldbScore": 22871,
     "index": 321
   },
-  "simula": {
-    "id": "simula",
-    "numberOfUsersEstimate": 1110,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 34,
-    "numberOfUsersEstimateRank": 731,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22866,
-    "index": 322
-  },
   "yang": {
     "id": "yang",
     "numberOfUsersEstimate": 4762,
@@ -4842,7 +4827,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 556,
     "pldbScore": 22865,
-    "index": 323
+    "index": 322
   },
   "wdl": {
     "id": "wdl",
@@ -4857,7 +4842,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 279,
     "pldbScore": 22865,
-    "index": 324
+    "index": 323
   },
   "c2": {
     "id": "c2",
@@ -4871,6 +4856,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
     "measurementsRank": 164,
+    "pldbScore": 22865,
+    "index": 324
+  },
+  "simula": {
+    "id": "simula",
+    "numberOfUsersEstimate": 1110,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 34,
+    "numberOfUsersEstimateRank": 731,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 150,
     "pldbScore": 22865,
     "index": 325
   },
@@ -5504,21 +5504,6 @@
     "pldbScore": 22748,
     "index": 367
   },
-  "supercollider": {
-    "id": "supercollider",
-    "numberOfUsersEstimate": 801,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 34,
-    "numberOfUsersEstimateRank": 855,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22742,
-    "index": 368
-  },
   "skip": {
     "id": "skip",
     "numberOfUsersEstimate": 2150,
@@ -5531,6 +5516,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 496,
+    "pldbScore": 22741,
+    "index": 368
+  },
+  "supercollider": {
+    "id": "supercollider",
+    "numberOfUsersEstimate": 801,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 34,
+    "numberOfUsersEstimateRank": 855,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 150,
     "pldbScore": 22741,
     "index": 369
   },
@@ -5834,21 +5834,6 @@
     "pldbScore": 22682,
     "index": 389
   },
-  "nit": {
-    "id": "nit",
-    "numberOfUsersEstimate": 673,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 34,
-    "numberOfUsersEstimateRank": 915,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22682,
-    "index": 390
-  },
   "datascript": {
     "id": "datascript",
     "numberOfUsersEstimate": 5708,
@@ -5862,7 +5847,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 925,
     "pldbScore": 22681,
-    "index": 391
+    "index": 390
   },
   "codecept": {
     "id": "codecept",
@@ -5876,6 +5861,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
+    "pldbScore": 22681,
+    "index": 391
+  },
+  "nit": {
+    "id": "nit",
+    "numberOfUsersEstimate": 673,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 34,
+    "numberOfUsersEstimateRank": 915,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 150,
     "pldbScore": 22681,
     "index": 392
   },
@@ -6340,8 +6340,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22625,
+    "measurementsRank": 150,
+    "pldbScore": 22624,
     "index": 423
   },
   "dat-protocol": {
@@ -6715,8 +6715,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22588,
+    "measurementsRank": 150,
+    "pldbScore": 22587,
     "index": 448
   },
   "metal": {
@@ -7334,21 +7334,6 @@
     "pldbScore": 22502,
     "index": 489
   },
-  "lasso": {
-    "id": "lasso",
-    "numberOfUsersEstimate": 396,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 142,
-    "inboundLinksCount": 0,
-    "measurements": 34,
-    "numberOfUsersEstimateRank": 1135,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 81,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22500,
-    "index": 490
-  },
   "sourcepawn": {
     "id": "sourcepawn",
     "numberOfUsersEstimate": 644,
@@ -7361,6 +7346,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 314,
+    "pldbScore": 22499,
+    "index": 490
+  },
+  "lasso": {
+    "id": "lasso",
+    "numberOfUsersEstimate": 396,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 142,
+    "inboundLinksCount": 0,
+    "measurements": 34,
+    "numberOfUsersEstimateRank": 1135,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 81,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 150,
     "pldbScore": 22499,
     "index": 491
   },
@@ -7615,8 +7615,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 149,
-    "pldbScore": 22462,
+    "measurementsRank": 150,
+    "pldbScore": 22461,
     "index": 508
   },
   "icon": {

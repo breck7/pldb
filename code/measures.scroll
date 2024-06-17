@@ -46,6 +46,7 @@ abstractUniqueStringMeasureParser
 
 abstractStringListMeasureParser
  extends abstractStringMeasureParser
+ listDelimiter  
 
 abstractPopulationCountMeasureParser
  extends abstractIntegerMeasureParser
@@ -92,6 +93,7 @@ abstractRelationshipParser
 abstractFilenameRelationshipParser
  extends abstractRelationshipParser
  float sortIndex 2.2
+ listDelimiter  
 abstractIDRelationshipParser
  extends abstractRelationshipParser
 
@@ -213,6 +215,11 @@ measurementsParser
  extends abstractComputedIntMeasureParser
  float sortIndex 1.11
  description How many measurements do we have about this thing?
+
+expandedMeasurementsParser
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.11
+ description How many measurements do we have about this thing counting each list item as a measurement?
 
 foundationScoreParser
  extends abstractComputedIntMeasureParser

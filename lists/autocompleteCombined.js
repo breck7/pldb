@@ -1392,14 +1392,14 @@ var autocompleteJs = [
     "url": "/concepts/octave.html"
   },
   {
-    "label": "Vala",
-    "id": "vala",
-    "url": "/concepts/vala.html"
-  },
-  {
     "label": "M4",
     "id": "m4",
     "url": "/concepts/m4.html"
+  },
+  {
+    "label": "Vala",
+    "id": "vala",
+    "url": "/concepts/vala.html"
   },
   {
     "label": "Koka",
@@ -2032,11 +2032,6 @@ var autocompleteJs = [
     "url": "/concepts/apollo-guidance-computer.html"
   },
   {
-    "label": "Simula",
-    "id": "simula",
-    "url": "/concepts/simula.html"
-  },
-  {
     "label": "YANG",
     "id": "yang",
     "url": "/concepts/yang.html"
@@ -2050,6 +2045,11 @@ var autocompleteJs = [
     "label": "C2",
     "id": "c2",
     "url": "/concepts/c2.html"
+  },
+  {
+    "label": "Simula",
+    "id": "simula",
+    "url": "/concepts/simula.html"
   },
   {
     "label": "Svelte",
@@ -2262,14 +2262,14 @@ var autocompleteJs = [
     "url": "/concepts/k.html"
   },
   {
-    "label": "SuperCollider",
-    "id": "supercollider",
-    "url": "/concepts/supercollider.html"
-  },
-  {
     "label": "skip",
     "id": "skip",
     "url": "/concepts/skip.html"
+  },
+  {
+    "label": "SuperCollider",
+    "id": "supercollider",
+    "url": "/concepts/supercollider.html"
   },
   {
     "label": "Observable",
@@ -2372,11 +2372,6 @@ var autocompleteJs = [
     "url": "/concepts/asciidots.html"
   },
   {
-    "label": "Nit",
-    "id": "nit",
-    "url": "/concepts/nit.html"
-  },
-  {
     "label": "datascript",
     "id": "datascript",
     "url": "/concepts/datascript.html"
@@ -2385,6 +2380,11 @@ var autocompleteJs = [
     "label": "codecept",
     "id": "codecept",
     "url": "/concepts/codecept.html"
+  },
+  {
+    "label": "Nit",
+    "id": "nit",
+    "url": "/concepts/nit.html"
   },
   {
     "label": "Logica",
@@ -2872,14 +2872,14 @@ var autocompleteJs = [
     "url": "/concepts/xl-lang.html"
   },
   {
-    "label": "Lasso",
-    "id": "lasso",
-    "url": "/concepts/lasso.html"
-  },
-  {
     "label": "SourcePawn",
     "id": "sourcepawn",
     "url": "/concepts/sourcepawn.html"
+  },
+  {
+    "label": "Lasso",
+    "id": "lasso",
+    "url": "/concepts/lasso.html"
   },
   {
     "label": "Java Properties",

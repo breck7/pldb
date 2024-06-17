@@ -2,7 +2,7 @@ Name,Values,Coverage,Question,Example,Type,Source,SortIndex,IsComputed,IsRequire
 id,14685,300%,What is the ID of this concept?,05ab1e,string,,1,false,true
 name,14685,300%,What is the name of this concept?,05AB1E,string,,1.1,false,true
 appeared,14685,300%,What year was the language publicly released and/or announced?,2015,number,,1.101,false,true
-creators,4086,83%,What are the name(s) of the original creators of the language delimited by " and "?,Matthew Steel,string,,1.102,false,
+creators,4089,83%,What are the name(s) of the original creators of the language delimited by " and "?,Matthew Steel,string,,1.102,false,
 measurements,14685,300%,How many measurements do we have about this thing?,11,number,,1.11,true,
 tags,14685,300%,Which category(ies) in PLDB's subjective ontology does this entity fit into?,esolang,string,,1.2,false,true
 rijuRepl_website,87,1%,What is the URL of the official homepage for this language project?,https://www.adaic.org/,string,,1.21,false,
@@ -108,6 +108,7 @@ languageServerProtocolProject_writtenIn,159,3%,What language(s) is the main impl
 writtenIn,3276,66%,What language(s) is the main implementation written in?,elixir markdown yaml,string,,2.1,false,
 numberOfUsersEstimate,14685,300%,What is our estimate of number of users of this language?,818,number,,2.1,true,
 numberOfJobsEstimate,14685,300%,What is our estimate of the number of jobs in this language?,0,number,,2.1,true,
+expandedMeasurements,14685,300%,How many measurements do we have about this thing counting each list item as a measurement?,15,number,,2.11,true,
 relatedConcepts,567,11%,What languages are related?,logo,string,,2.2,false,
 runsOnVm,27,0%,What virtual machine(s) does this language run on?,jvm,string,,2.2,false,
 influencedBy,180,3%,What languages influenced this one?,rust,string,,2.2,false,
@@ -121,7 +122,7 @@ forkOf,9,0%,What language is this language a fork of?,common-log-format,string,,
 compilesTo,219,4%,Which language(s) does this language primarily compile to?,beam-bytecode,string,,2.2,false,
 inputLanguages,27,0%,"Which language(s) does this take as input? For compilers, what languages does this compile compile?",c,string,,2.2,false,
 irc,12,0%,What is a link to an official (or popular unofficial) IRC channel(s) for language development?,https://darcs.net/IRC,string,,2.3,false,
-numberOfCreators,4086,83%,How many creators?,1,number,,2.33,true,
+numberOfCreators,4089,83%,How many creators?,1,number,,2.33,true,
 isSelfHosted,3276,66%,Is the main implementation of this language written in this language?,false,boolean,,2.33,true,
 latestMajorVersion,1905,38%,What is the latest major version (if using semver)?,1,number,,2.33,true,
 usesSemanticVersioning,1905,38%,Does the official release of the language use semantic versioning?,true,boolean,,2.34,true,

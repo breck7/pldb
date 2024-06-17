@@ -34,7 +34,7 @@
   },
   {
     "Name": "creators",
-    "Values": 5448,
+    "Values": 5452,
     "Coverage": "111%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -1081,6 +1081,16 @@
     "IsComputed": true
   },
   {
+    "Name": "expandedMeasurements",
+    "Values": 19580,
+    "Coverage": "400%",
+    "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
+    "Example": "15",
+    "Type": "number",
+    "SortIndex": 2.11,
+    "IsComputed": true
+  },
+  {
     "Name": "relatedConcepts",
     "Values": 756,
     "Coverage": "15%",
@@ -1212,7 +1222,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 5448,
+    "Values": 5452,
     "Coverage": "111%",
     "Question": "How many creators?",
     "Example": "1",

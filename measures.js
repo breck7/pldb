@@ -34,7 +34,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 6810,
+    "Values": 6815,
     "Coverage": "139%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -1081,6 +1081,16 @@ const measures = [
     "IsComputed": true
   },
   {
+    "Name": "expandedMeasurements",
+    "Values": 24475,
+    "Coverage": "500%",
+    "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
+    "Example": "15",
+    "Type": "number",
+    "SortIndex": 2.11,
+    "IsComputed": true
+  },
+  {
     "Name": "relatedConcepts",
     "Values": 945,
     "Coverage": "19%",
@@ -1212,7 +1222,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 6810,
+    "Values": 6815,
     "Coverage": "139%",
     "Question": "How many creators?",
     "Example": "1",
