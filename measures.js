@@ -422,7 +422,7 @@ const measures = [
   },
   {
     "Name": "webRepl",
-    "Values": 475,
+    "Values": 480,
     "Coverage": "9%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -1152,7 +1152,7 @@ const measures = [
   },
   {
     "Name": "supersetOf",
-    "Values": 245,
+    "Values": 250,
     "Coverage": "5%",
     "Question": "Is this language a superset of another?",
     "Example": "pascal",
@@ -2547,6 +2547,16 @@ const measures = [
     "Values": 125,
     "Coverage": "2%",
     "Question": "Does the language have a garbage collector or must memory of constructs be managed manually?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
+    "Name": "hasGradualTypes",
+    "Values": 15,
+    "Coverage": "0%",
+    "Question": "Does the language support gradual types?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 7,

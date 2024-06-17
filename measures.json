@@ -422,7 +422,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 380,
+    "Values": 384,
     "Coverage": "7%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -1152,7 +1152,7 @@
   },
   {
     "Name": "supersetOf",
-    "Values": 196,
+    "Values": 200,
     "Coverage": "4%",
     "Question": "Is this language a superset of another?",
     "Example": "pascal",
@@ -2547,6 +2547,16 @@
     "Values": 100,
     "Coverage": "2%",
     "Question": "Does the language have a garbage collector or must memory of constructs be managed manually?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
+    "Name": "hasGradualTypes",
+    "Values": 12,
+    "Coverage": "0%",
+    "Question": "Does the language support gradual types?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 7,

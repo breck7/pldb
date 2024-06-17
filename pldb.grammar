@@ -1479,6 +1479,13 @@ hasGarbageCollectionParser
  string pseudoExample var iDontNeedToFreeThis
  string reference https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
 
+hasGradualTypesParser
+ extends abstractFeatureParser
+ description Does the language support gradual types?
+ string aka progressive types
+ string pseudoExample a: int # the type is optional
+ string reference https://en.wikipedia.org/wiki/Gradual_typing
+
 // hasGenerators
 hasGeneratorsParser
  extends abstractFeatureParser

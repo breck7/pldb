@@ -34,7 +34,7 @@
     "numberOfUsersEstimate": 2952597,
     "foundationScore": 369,
     "numberOfJobsEstimate": 46976,
-    "inboundLinksCount": 384,
+    "inboundLinksCount": 385,
     "measurements": 117,
     "numberOfUsersEstimateRank": 7,
     "foundationScoreRank": 8,
@@ -200,13 +200,13 @@
     "foundationScore": 132,
     "numberOfJobsEstimate": 1542,
     "inboundLinksCount": 140,
-    "measurements": 83,
+    "measurements": 84,
     "numberOfUsersEstimateRank": 35,
     "foundationScoreRank": 17,
     "numberOfJobsEstimateRank": 52,
     "inboundLinksCountRank": 17,
-    "measurementsRank": 16,
-    "pldbScore": 24338,
+    "measurementsRank": 13,
+    "pldbScore": 24341,
     "index": 14
   },
   "sql": {
@@ -1105,8 +1105,8 @@
     "foundationScoreRank": 152,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 151,
-    "measurementsRank": 102,
-    "pldbScore": 23761,
+    "measurementsRank": 103,
+    "pldbScore": 23760,
     "index": 74
   },
   "hcl": {
@@ -1825,8 +1825,8 @@
     "foundationScoreRank": 152,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 169,
-    "measurementsRank": 415,
-    "pldbScore": 23447,
+    "measurementsRank": 416,
+    "pldbScore": 23446,
     "index": 122
   },
   "v": {
@@ -2170,8 +2170,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 0,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23360,
+    "measurementsRank": 416,
+    "pldbScore": 23359,
     "index": 145
   },
   "factor": {
@@ -2200,24 +2200,9 @@
     "foundationScoreRank": 101,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 103,
-    "measurementsRank": 392,
-    "pldbScore": 23354,
+    "measurementsRank": 393,
+    "pldbScore": 23353,
     "index": 147
-  },
-  "postscript": {
-    "id": "postscript",
-    "numberOfUsersEstimate": 2585,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 1,
-    "measurements": 39,
-    "numberOfUsersEstimateRank": 452,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 243,
-    "measurementsRank": 102,
-    "pldbScore": 23347,
-    "index": 148
   },
   "squirrel": {
     "id": "squirrel",
@@ -2232,6 +2217,21 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 80,
     "pldbScore": 23347,
+    "index": 148
+  },
+  "postscript": {
+    "id": "postscript",
+    "numberOfUsersEstimate": 2585,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 1,
+    "measurements": 39,
+    "numberOfUsersEstimateRank": 452,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 243,
+    "measurementsRank": 103,
+    "pldbScore": 23346,
     "index": 149
   },
   "wren": {
@@ -2275,8 +2275,8 @@
     "foundationScoreRank": 105,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 111,
-    "measurementsRank": 455,
-    "pldbScore": 23318,
+    "measurementsRank": 456,
+    "pldbScore": 23317,
     "index": 152
   },
   "less": {
@@ -2339,21 +2339,6 @@
     "pldbScore": 23307,
     "index": 156
   },
-  "vuejs": {
-    "id": "vuejs",
-    "numberOfUsersEstimate": 299386,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 32,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23299,
-    "index": 157
-  },
   "rails": {
     "id": "rails",
     "numberOfUsersEstimate": 197225,
@@ -2366,6 +2351,21 @@
     "numberOfJobsEstimateRank": 32,
     "inboundLinksCountRank": 398,
     "measurementsRank": 496,
+    "pldbScore": 23298,
+    "index": 157
+  },
+  "vuejs": {
+    "id": "vuejs",
+    "numberOfUsersEstimate": 299386,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 32,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 23298,
     "index": 158
   },
@@ -2515,8 +2515,8 @@
     "foundationScoreRank": 187,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 415,
-    "pldbScore": 23255,
+    "measurementsRank": 416,
+    "pldbScore": 23254,
     "index": 168
   },
   "flow": {
@@ -2530,8 +2530,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23250,
+    "measurementsRank": 393,
+    "pldbScore": 23249,
     "index": 169
   },
   "micropython": {
@@ -2545,8 +2545,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23242,
+    "measurementsRank": 416,
+    "pldbScore": 23241,
     "index": 170
   },
   "mumps": {
@@ -2699,21 +2699,6 @@
     "pldbScore": 23221,
     "index": 180
   },
-  "jq": {
-    "id": "jq",
-    "numberOfUsersEstimate": 26554,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 111,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23220,
-    "index": 181
-  },
   "frege": {
     "id": "frege",
     "numberOfUsersEstimate": 4411,
@@ -2727,6 +2712,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 185,
     "pldbScore": 23220,
+    "index": 181
+  },
+  "jq": {
+    "id": "jq",
+    "numberOfUsersEstimate": 26554,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 111,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
+    "pldbScore": 23219,
     "index": 182
   },
   "json-ld": {
@@ -2740,8 +2740,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 169,
-    "measurementsRank": 392,
-    "pldbScore": 23219,
+    "measurementsRank": 393,
+    "pldbScore": 23218,
     "index": 183
   },
   "ml": {
@@ -2845,8 +2845,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 23191,
+    "measurementsRank": 456,
+    "pldbScore": 23190,
     "index": 190
   },
   "logo": {
@@ -2954,21 +2954,6 @@
     "pldbScore": 23173,
     "index": 197
   },
-  "luna": {
-    "id": "luna",
-    "numberOfUsersEstimate": 6171,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 1,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 276,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 243,
-    "measurementsRank": 455,
-    "pldbScore": 23170,
-    "index": 198
-  },
   "pl-sql": {
     "id": "pl-sql",
     "numberOfUsersEstimate": 2355,
@@ -2982,6 +2967,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 164,
     "pldbScore": 23170,
+    "index": 198
+  },
+  "luna": {
+    "id": "luna",
+    "numberOfUsersEstimate": 6171,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 1,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 276,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 243,
+    "measurementsRank": 456,
+    "pldbScore": 23169,
     "index": 199
   },
   "jsonnet": {
@@ -3149,21 +3149,6 @@
     "pldbScore": 23135,
     "index": 210
   },
-  "yara": {
-    "id": "yara",
-    "numberOfUsersEstimate": 10350,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 196,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23135,
-    "index": 211
-  },
   "prql": {
     "id": "prql",
     "numberOfUsersEstimate": 4554,
@@ -3177,6 +3162,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 279,
     "pldbScore": 23135,
+    "index": 211
+  },
+  "yara": {
+    "id": "yara",
+    "numberOfUsersEstimate": 10350,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 196,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
+    "pldbScore": 23134,
     "index": 212
   },
   "bicep": {
@@ -3205,8 +3205,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23128,
+    "measurementsRank": 393,
+    "pldbScore": 23127,
     "index": 214
   },
   "enso": {
@@ -3265,8 +3265,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 23113,
+    "measurementsRank": 456,
+    "pldbScore": 23112,
     "index": 218
   },
   "couchdb": {
@@ -3280,8 +3280,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 103,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 23110,
+    "measurementsRank": 456,
+    "pldbScore": 23109,
     "index": 219
   },
   "thrift": {
@@ -3295,8 +3295,8 @@
     "foundationScoreRank": 118,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 120,
-    "measurementsRank": 415,
-    "pldbScore": 23110,
+    "measurementsRank": 416,
+    "pldbScore": 23109,
     "index": 220
   },
   "matplotlib": {
@@ -3434,21 +3434,6 @@
     "pldbScore": 23089,
     "index": 229
   },
-  "pandas": {
-    "id": "pandas",
-    "numberOfUsersEstimate": 5153,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 341,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 314,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 70,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23089,
-    "index": 230
-  },
   "mlir": {
     "id": "mlir",
     "numberOfUsersEstimate": 2551,
@@ -3462,6 +3447,21 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 355,
     "pldbScore": 23089,
+    "index": 230
+  },
+  "pandas": {
+    "id": "pandas",
+    "numberOfUsersEstimate": 5153,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 341,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 314,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 70,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
+    "pldbScore": 23088,
     "index": 231
   },
   "cson": {
@@ -3520,8 +3520,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 23070,
+    "measurementsRank": 456,
+    "pldbScore": 23069,
     "index": 235
   },
   "futhark": {
@@ -3565,8 +3565,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23063,
+    "measurementsRank": 393,
+    "pldbScore": 23062,
     "index": 238
   },
   "jekyll": {
@@ -3685,8 +3685,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 23037,
+    "measurementsRank": 416,
+    "pldbScore": 23036,
     "index": 246
   },
   "vba": {
@@ -3700,8 +3700,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 64,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23034,
+    "measurementsRank": 393,
+    "pldbScore": 23033,
     "index": 247
   },
   "emacs-lisp": {
@@ -3730,8 +3730,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 23027,
+    "measurementsRank": 393,
+    "pldbScore": 23026,
     "index": 249
   },
   "uml": {
@@ -3794,6 +3794,21 @@
     "pldbScore": 23016,
     "index": 253
   },
+  "mojo": {
+    "id": "mojo",
+    "numberOfUsersEstimate": 1767,
+    "foundationScore": 1,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 1,
+    "measurements": 24,
+    "numberOfUsersEstimateRank": 562,
+    "foundationScoreRank": 187,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 243,
+    "measurementsRank": 355,
+    "pldbScore": 23009,
+    "index": 254
+  },
   "hack": {
     "id": "hack",
     "numberOfUsersEstimate": 1436,
@@ -3807,7 +3822,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 118,
     "pldbScore": 23001,
-    "index": 254
+    "index": 255
   },
   "aws": {
     "id": "aws",
@@ -3822,7 +3837,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
     "pldbScore": 22998,
-    "index": 255
+    "index": 256
   },
   "pytorch": {
     "id": "pytorch",
@@ -3837,7 +3852,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22998,
-    "index": 256
+    "index": 257
   },
   "regex": {
     "id": "regex",
@@ -3852,7 +3867,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 623,
     "pldbScore": 22998,
-    "index": 257
+    "index": 258
   },
   "ink": {
     "id": "ink",
@@ -3865,9 +3880,9 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22996,
-    "index": 258
+    "measurementsRank": 416,
+    "pldbScore": 22995,
+    "index": 259
   },
   "rmarkdown": {
     "id": "rmarkdown",
@@ -3880,9 +3895,9 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22992,
-    "index": 259
+    "measurementsRank": 456,
+    "pldbScore": 22991,
+    "index": 260
   },
   "pov-ray-sdl": {
     "id": "pov-ray-sdl",
@@ -3897,7 +3912,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 253,
     "pldbScore": 22991,
-    "index": 260
+    "index": 261
   },
   "ceylon": {
     "id": "ceylon",
@@ -3912,7 +3927,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 53,
     "pldbScore": 22983,
-    "index": 261
+    "index": 262
   },
   "hjson": {
     "id": "hjson",
@@ -3927,7 +3942,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 314,
     "pldbScore": 22982,
-    "index": 262
+    "index": 263
   },
   "azure": {
     "id": "azure",
@@ -3942,7 +3957,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
     "pldbScore": 22978,
-    "index": 263
+    "index": 264
   },
   "applescript": {
     "id": "applescript",
@@ -3957,7 +3972,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 80,
     "pldbScore": 22976,
-    "index": 264
+    "index": 265
   },
   "ampl": {
     "id": "ampl",
@@ -3972,7 +3987,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 106,
     "pldbScore": 22974,
-    "index": 265
+    "index": 266
   },
   "qbasic": {
     "id": "qbasic",
@@ -3987,7 +4002,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 235,
     "pldbScore": 22966,
-    "index": 266
+    "index": 267
   },
   "yii": {
     "id": "yii",
@@ -4002,7 +4017,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22965,
-    "index": 267
+    "index": 268
   },
   "systemverilog": {
     "id": "systemverilog",
@@ -4017,7 +4032,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 118,
     "pldbScore": 22960,
-    "index": 268
+    "index": 269
   },
   "yasnippet": {
     "id": "yasnippet",
@@ -4030,9 +4045,9 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22957,
-    "index": 269
+    "measurementsRank": 416,
+    "pldbScore": 22956,
+    "index": 270
   },
   "emojicode": {
     "id": "emojicode",
@@ -4045,9 +4060,9 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 22955,
-    "index": 270
+    "measurementsRank": 393,
+    "pldbScore": 22954,
+    "index": 271
   },
   "beef": {
     "id": "beef",
@@ -4062,7 +4077,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 314,
     "pldbScore": 22953,
-    "index": 271
+    "index": 272
   },
   "dtrace": {
     "id": "dtrace",
@@ -4077,7 +4092,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 235,
     "pldbScore": 22953,
-    "index": 272
+    "index": 273
   },
   "simple-binary-encoding": {
     "id": "simple-binary-encoding",
@@ -4092,7 +4107,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22950,
-    "index": 273
+    "index": 274
   },
   "progsbase": {
     "id": "progsbase",
@@ -4107,7 +4122,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 26,
     "pldbScore": 22947,
-    "index": 274
+    "index": 275
   },
   "ace": {
     "id": "ace",
@@ -4122,7 +4137,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 925,
     "pldbScore": 22946,
-    "index": 275
+    "index": 276
   },
   "expect": {
     "id": "expect",
@@ -4137,7 +4152,7 @@
     "inboundLinksCountRank": 74,
     "measurementsRank": 496,
     "pldbScore": 22945,
-    "index": 276
+    "index": 277
   },
   "rest": {
     "id": "rest",
@@ -4152,7 +4167,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
     "pldbScore": 22941,
-    "index": 277
+    "index": 278
   },
   "x86-assembly": {
     "id": "x86-assembly",
@@ -4167,7 +4182,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 496,
     "pldbScore": 22941,
-    "index": 278
+    "index": 279
   },
   "turtle": {
     "id": "turtle",
@@ -4182,7 +4197,7 @@
     "inboundLinksCountRank": 151,
     "measurementsRank": 623,
     "pldbScore": 22940,
-    "index": 279
+    "index": 280
   },
   "unison": {
     "id": "unison",
@@ -4197,7 +4212,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 496,
     "pldbScore": 22940,
-    "index": 280
+    "index": 281
   },
   "taichi": {
     "id": "taichi",
@@ -4212,7 +4227,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22939,
-    "index": 281
+    "index": 282
   },
   "modula-2": {
     "id": "modula-2",
@@ -4227,7 +4242,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 86,
     "pldbScore": 22938,
-    "index": 282
+    "index": 283
   },
   "smtp": {
     "id": "smtp",
@@ -4242,7 +4257,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 788,
     "pldbScore": 22937,
-    "index": 283
+    "index": 284
   },
   "scipy": {
     "id": "scipy",
@@ -4257,7 +4272,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22937,
-    "index": 284
+    "index": 285
   },
   "chatterbot": {
     "id": "chatterbot",
@@ -4272,7 +4287,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22934,
-    "index": 285
+    "index": 286
   },
   "gap": {
     "id": "gap",
@@ -4287,7 +4302,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 149,
     "pldbScore": 22933,
-    "index": 286
+    "index": 287
   },
   "rexx": {
     "id": "rexx",
@@ -4302,7 +4317,7 @@
     "inboundLinksCountRank": 137,
     "measurementsRank": 90,
     "pldbScore": 22931,
-    "index": 287
+    "index": 288
   },
   "click": {
     "id": "click",
@@ -4317,7 +4332,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 279,
     "pldbScore": 22929,
-    "index": 288
+    "index": 289
   },
   "cuelang": {
     "id": "cuelang",
@@ -4330,9 +4345,9 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22926,
-    "index": 289
+    "measurementsRank": 456,
+    "pldbScore": 22925,
+    "index": 290
   },
   "numpy": {
     "id": "numpy",
@@ -4347,7 +4362,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 314,
     "pldbScore": 22924,
-    "index": 290
+    "index": 291
   },
   "owl": {
     "id": "owl",
@@ -4362,7 +4377,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 556,
     "pldbScore": 22923,
-    "index": 291
+    "index": 292
   },
   "zuo": {
     "id": "zuo",
@@ -4377,7 +4392,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 556,
     "pldbScore": 22921,
-    "index": 292
+    "index": 293
   },
   "onnx": {
     "id": "onnx",
@@ -4392,7 +4407,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22920,
-    "index": 293
+    "index": 294
   },
   "doi": {
     "id": "doi",
@@ -4407,7 +4422,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22918,
-    "index": 294
+    "index": 295
   },
   "java-server-pages": {
     "id": "java-server-pages",
@@ -4422,7 +4437,7 @@
     "inboundLinksCountRank": 120,
     "measurementsRank": 788,
     "pldbScore": 22912,
-    "index": 295
+    "index": 296
   },
   "nltk": {
     "id": "nltk",
@@ -4437,7 +4452,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22912,
-    "index": 296
+    "index": 297
   },
   "oberon": {
     "id": "oberon",
@@ -4452,7 +4467,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 137,
     "pldbScore": 22912,
-    "index": 297
+    "index": 298
   },
   "ecl": {
     "id": "ecl",
@@ -4467,7 +4482,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 279,
     "pldbScore": 22911,
-    "index": 298
+    "index": 299
   },
   "pgbouncer": {
     "id": "pgbouncer",
@@ -4482,21 +4497,6 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
     "pldbScore": 22910,
-    "index": 299
-  },
-  "mojo": {
-    "id": "mojo",
-    "numberOfUsersEstimate": 1767,
-    "foundationScore": 1,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 1,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 562,
-    "foundationScoreRank": 187,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 243,
-    "measurementsRank": 455,
-    "pldbScore": 22909,
     "index": 300
   },
   "kaitai": {
@@ -4510,8 +4510,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22909,
+    "measurementsRank": 456,
+    "pldbScore": 22908,
     "index": 301
   },
   "dogescript": {
@@ -4705,8 +4705,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22891,
+    "measurementsRank": 416,
+    "pldbScore": 22890,
     "index": 314
   },
   "idyll": {
@@ -4810,8 +4810,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22872,
+    "measurementsRank": 456,
+    "pldbScore": 22871,
     "index": 321
   },
   "simula": {
@@ -5005,8 +5005,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 194,
-    "measurementsRank": 415,
-    "pldbScore": 22849,
+    "measurementsRank": 416,
+    "pldbScore": 22848,
     "index": 334
   },
   "sizzle": {
@@ -5159,21 +5159,6 @@
     "pldbScore": 22818,
     "index": 344
   },
-  "ron": {
-    "id": "ron",
-    "numberOfUsersEstimate": 2412,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 477,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22814,
-    "index": 345
-  },
   "common-workflow-language": {
     "id": "common-workflow-language",
     "numberOfUsersEstimate": 1226,
@@ -5187,6 +5172,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 235,
     "pldbScore": 22814,
+    "index": 345
+  },
+  "ron": {
+    "id": "ron",
+    "numberOfUsersEstimate": 2412,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 477,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
+    "pldbScore": 22813,
     "index": 346
   },
   "bison": {
@@ -5260,8 +5260,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22791,
+    "measurementsRank": 416,
+    "pldbScore": 22790,
     "index": 351
   },
   "kubernetes": {
@@ -5545,8 +5545,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 392,
-    "pldbScore": 22736,
+    "measurementsRank": 393,
+    "pldbScore": 22735,
     "index": 370
   },
   "mu": {
@@ -5590,8 +5590,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22732,
+    "measurementsRank": 416,
+    "pldbScore": 22731,
     "index": 373
   },
   "dylan": {
@@ -5624,21 +5624,6 @@
     "pldbScore": 22715,
     "index": 375
   },
-  "datalog": {
-    "id": "datalog",
-    "numberOfUsersEstimate": 820,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 2,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 847,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 194,
-    "measurementsRank": 392,
-    "pldbScore": 22711,
-    "index": 376
-  },
   "meson": {
     "id": "meson",
     "numberOfUsersEstimate": 535,
@@ -5651,6 +5636,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 75,
     "measurementsRank": 496,
+    "pldbScore": 22710,
+    "index": 376
+  },
+  "datalog": {
+    "id": "datalog",
+    "numberOfUsersEstimate": 820,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 2,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 847,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 194,
+    "measurementsRank": 393,
     "pldbScore": 22710,
     "index": 377
   },
@@ -5785,8 +5785,8 @@
     "foundationScoreRank": 137,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 151,
-    "measurementsRank": 415,
-    "pldbScore": 22689,
+    "measurementsRank": 416,
+    "pldbScore": 22688,
     "index": 386
   },
   "tla": {
@@ -5815,8 +5815,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22683,
+    "measurementsRank": 416,
+    "pldbScore": 22682,
     "index": 388
   },
   "asciidots": {
@@ -5939,21 +5939,6 @@
     "pldbScore": 22673,
     "index": 396
   },
-  "b": {
-    "id": "b",
-    "numberOfUsersEstimate": 1380,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 658,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22673,
-    "index": 397
-  },
   "flow9": {
     "id": "flow9",
     "numberOfUsersEstimate": 837,
@@ -5967,7 +5952,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 235,
     "pldbScore": 22673,
-    "index": 398
+    "index": 397
   },
   "skulpt": {
     "id": "skulpt",
@@ -5981,6 +5966,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
+    "pldbScore": 22672,
+    "index": 398
+  },
+  "b": {
+    "id": "b",
+    "numberOfUsersEstimate": 1380,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 658,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 22672,
     "index": 399
   },
@@ -6134,21 +6134,6 @@
     "pldbScore": 22657,
     "index": 409
   },
-  "lily": {
-    "id": "lily",
-    "numberOfUsersEstimate": 1226,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 697,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 22657,
-    "index": 410
-  },
   "maxima": {
     "id": "maxima",
     "numberOfUsersEstimate": 691,
@@ -6162,6 +6147,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 179,
     "pldbScore": 22657,
+    "index": 410
+  },
+  "lily": {
+    "id": "lily",
+    "numberOfUsersEstimate": 1226,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 697,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
+    "pldbScore": 22656,
     "index": 411
   },
   "modelica": {
@@ -6239,6 +6239,21 @@
     "pldbScore": 22646,
     "index": 416
   },
+  "raku": {
+    "id": "raku",
+    "numberOfUsersEstimate": 216,
+    "foundationScore": 8,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 9,
+    "measurements": 40,
+    "numberOfUsersEstimateRank": 1416,
+    "foundationScoreRank": 105,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 103,
+    "measurementsRank": 90,
+    "pldbScore": 22642,
+    "index": 417
+  },
   "self": {
     "id": "self",
     "numberOfUsersEstimate": 461,
@@ -6252,7 +6267,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 200,
     "pldbScore": 22640,
-    "index": 417
+    "index": 418
   },
   "jcl": {
     "id": "jcl",
@@ -6267,7 +6282,7 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 496,
     "pldbScore": 22639,
-    "index": 418
+    "index": 419
   },
   "numba": {
     "id": "numba",
@@ -6282,7 +6297,7 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 1076,
     "pldbScore": 22636,
-    "index": 419
+    "index": 420
   },
   "xbase": {
     "id": "xbase",
@@ -6297,21 +6312,6 @@
     "inboundLinksCountRank": 194,
     "measurementsRank": 253,
     "pldbScore": 22632,
-    "index": 420
-  },
-  "raku": {
-    "id": "raku",
-    "numberOfUsersEstimate": 216,
-    "foundationScore": 8,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 9,
-    "measurements": 39,
-    "numberOfUsersEstimateRank": 1416,
-    "foundationScoreRank": 105,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 103,
-    "measurementsRank": 102,
-    "pldbScore": 22630,
     "index": 421
   },
   "papyrus": {
@@ -6790,8 +6790,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22572,
+    "measurementsRank": 416,
+    "pldbScore": 22571,
     "index": 453
   },
   "g-code": {
@@ -6809,21 +6809,6 @@
     "pldbScore": 22569,
     "index": 454
   },
-  "dale": {
-    "id": "dale",
-    "numberOfUsersEstimate": 1126,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 723,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22568,
-    "index": 455
-  },
   "arc": {
     "id": "arc",
     "numberOfUsersEstimate": 431,
@@ -6837,6 +6822,21 @@
     "inboundLinksCountRank": 243,
     "measurementsRank": 235,
     "pldbScore": 22568,
+    "index": 455
+  },
+  "dale": {
+    "id": "dale",
+    "numberOfUsersEstimate": 1126,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 723,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
+    "pldbScore": 22567,
     "index": 456
   },
   "djot": {
@@ -6854,21 +6854,6 @@
     "pldbScore": 22566,
     "index": 457
   },
-  "pike": {
-    "id": "pike",
-    "numberOfUsersEstimate": 446,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 39,
-    "numberOfUsersEstimateRank": 1079,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 102,
-    "pldbScore": 22565,
-    "index": 458
-  },
   "lfe": {
     "id": "lfe",
     "numberOfUsersEstimate": 405,
@@ -6881,6 +6866,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
     "measurementsRank": 235,
+    "pldbScore": 22564,
+    "index": 458
+  },
+  "pike": {
+    "id": "pike",
+    "numberOfUsersEstimate": 446,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 39,
+    "numberOfUsersEstimateRank": 1079,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 103,
     "pldbScore": 22564,
     "index": 459
   },
@@ -7120,8 +7120,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22528,
+    "measurementsRank": 456,
+    "pldbScore": 22527,
     "index": 475
   },
   "minidsdb": {
@@ -7229,21 +7229,6 @@
     "pldbScore": 22515,
     "index": 482
   },
-  "stylus": {
-    "id": "stylus",
-    "numberOfUsersEstimate": 391,
-    "foundationScore": 4,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 4,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1140,
-    "foundationScoreRank": 137,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 151,
-    "measurementsRank": 415,
-    "pldbScore": 22513,
-    "index": 483
-  },
   "please-build": {
     "id": "please-build",
     "numberOfUsersEstimate": 2734,
@@ -7256,6 +7241,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
+    "pldbScore": 22512,
+    "index": 483
+  },
+  "stylus": {
+    "id": "stylus",
+    "numberOfUsersEstimate": 391,
+    "foundationScore": 4,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 4,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1140,
+    "foundationScoreRank": 137,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 151,
+    "measurementsRank": 416,
     "pldbScore": 22512,
     "index": 484
   },
@@ -7379,21 +7379,6 @@
     "pldbScore": 22498,
     "index": 492
   },
-  "pawn": {
-    "id": "pawn",
-    "numberOfUsersEstimate": 800,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 856,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 22498,
-    "index": 493
-  },
   "lilypond": {
     "id": "lilypond",
     "numberOfUsersEstimate": 731,
@@ -7407,6 +7392,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 355,
     "pldbScore": 22498,
+    "index": 493
+  },
+  "pawn": {
+    "id": "pawn",
+    "numberOfUsersEstimate": 800,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 856,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
+    "pldbScore": 22497,
     "index": 494
   },
   "binary-notation": {
@@ -7600,8 +7600,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 194,
-    "measurementsRank": 455,
-    "pldbScore": 22463,
+    "measurementsRank": 456,
+    "pldbScore": 22462,
     "index": 507
   },
   "whiley": {
@@ -7900,8 +7900,8 @@
     "foundationScoreRank": 14,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 14,
-    "measurementsRank": 455,
-    "pldbScore": 22428,
+    "measurementsRank": 456,
+    "pldbScore": 22427,
     "index": 527
   },
   "checked-c": {
@@ -8020,8 +8020,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 22415,
+    "measurementsRank": 393,
+    "pldbScore": 22414,
     "index": 535
   },
   "json-with-comments": {
@@ -8125,8 +8125,8 @@
     "foundationScoreRank": 32,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 32,
-    "measurementsRank": 415,
-    "pldbScore": 22406,
+    "measurementsRank": 416,
+    "pldbScore": 22405,
     "index": 542
   },
   "cg": {
@@ -8200,24 +8200,9 @@
     "foundationScoreRank": 187,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 415,
-    "pldbScore": 22395,
+    "measurementsRank": 416,
+    "pldbScore": 22394,
     "index": 547
-  },
-  "intercal": {
-    "id": "intercal",
-    "numberOfUsersEstimate": 720,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 898,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22393,
-    "index": 548
   },
   "chuck": {
     "id": "chuck",
@@ -8232,6 +8217,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 355,
     "pldbScore": 22393,
+    "index": 548
+  },
+  "intercal": {
+    "id": "intercal",
+    "numberOfUsersEstimate": 720,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 898,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
+    "pldbScore": 22392,
     "index": 549
   },
   "linotte": {
@@ -8290,8 +8290,8 @@
     "foundationScoreRank": 187,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 455,
-    "pldbScore": 22383,
+    "measurementsRank": 456,
+    "pldbScore": 22382,
     "index": 553
   },
   "livecode": {
@@ -8309,21 +8309,6 @@
     "pldbScore": 22381,
     "index": 554
   },
-  "objective-cpp": {
-    "id": "objective-cpp",
-    "numberOfUsersEstimate": 200,
-    "foundationScore": 24,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 25,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 1471,
-    "foundationScoreRank": 56,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 57,
-    "measurementsRank": 392,
-    "pldbScore": 22380,
-    "index": 555
-  },
   "clipper": {
     "id": "clipper",
     "numberOfUsersEstimate": 516,
@@ -8337,6 +8322,21 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 355,
     "pldbScore": 22380,
+    "index": 555
+  },
+  "objective-cpp": {
+    "id": "objective-cpp",
+    "numberOfUsersEstimate": 200,
+    "foundationScore": 24,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 25,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 1471,
+    "foundationScoreRank": 56,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 57,
+    "measurementsRank": 393,
+    "pldbScore": 22379,
     "index": 556
   },
   "dlvm": {
@@ -8384,21 +8384,6 @@
     "pldbScore": 22373,
     "index": 559
   },
-  "stan": {
-    "id": "stan",
-    "numberOfUsersEstimate": 561,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 982,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 22372,
-    "index": 560
-  },
   "jython": {
     "id": "jython",
     "numberOfUsersEstimate": 885,
@@ -8411,6 +8396,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 556,
+    "pldbScore": 22371,
+    "index": 560
+  },
+  "stan": {
+    "id": "stan",
+    "numberOfUsersEstimate": 561,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 982,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
     "pldbScore": 22371,
     "index": 561
   },
@@ -8429,21 +8429,6 @@
     "pldbScore": 22369,
     "index": 562
   },
-  "minizinc": {
-    "id": "minizinc",
-    "numberOfUsersEstimate": 657,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 923,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22368,
-    "index": 563
-  },
   "m3db": {
     "id": "m3db",
     "numberOfUsersEstimate": 5514,
@@ -8456,6 +8441,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1076,
+    "pldbScore": 22367,
+    "index": 563
+  },
+  "minizinc": {
+    "id": "minizinc",
+    "numberOfUsersEstimate": 657,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 923,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
     "pldbScore": 22367,
     "index": 564
   },
@@ -8695,24 +8695,9 @@
     "foundationScoreRank": 84,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 88,
-    "measurementsRank": 392,
-    "pldbScore": 22347,
-    "index": 580
-  },
-  "logos": {
-    "id": "logos",
-    "numberOfUsersEstimate": 200,
-    "foundationScore": 21,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 21,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1471,
-    "foundationScoreRank": 61,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 63,
-    "measurementsRank": 415,
+    "measurementsRank": 393,
     "pldbScore": 22346,
-    "index": 581
+    "index": 580
   },
   "erb": {
     "id": "erb",
@@ -8727,7 +8712,7 @@
     "inboundLinksCountRank": 94,
     "measurementsRank": 694,
     "pldbScore": 22345,
-    "index": 582
+    "index": 581
   },
   "gdb": {
     "id": "gdb",
@@ -8741,6 +8726,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
+    "pldbScore": 22345,
+    "index": 582
+  },
+  "logos": {
+    "id": "logos",
+    "numberOfUsersEstimate": 200,
+    "foundationScore": 21,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 21,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1471,
+    "foundationScoreRank": 61,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 63,
+    "measurementsRank": 416,
     "pldbScore": 22345,
     "index": 583
   },
@@ -8980,8 +8980,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 415,
-    "pldbScore": 22322,
+    "measurementsRank": 416,
+    "pldbScore": 22321,
     "index": 599
   },
   "argdown": {
@@ -9284,36 +9284,6 @@
     "pldbScore": 22284,
     "index": 619
   },
-  "groff": {
-    "id": "groff",
-    "numberOfUsersEstimate": 378,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 1,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 1162,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 243,
-    "measurementsRank": 455,
-    "pldbScore": 22284,
-    "index": 620
-  },
-  "blitzbasic": {
-    "id": "blitzbasic",
-    "numberOfUsersEstimate": 475,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1047,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22284,
-    "index": 621
-  },
   "cool": {
     "id": "cool",
     "numberOfUsersEstimate": 345,
@@ -9327,6 +9297,36 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 253,
     "pldbScore": 22284,
+    "index": 620
+  },
+  "groff": {
+    "id": "groff",
+    "numberOfUsersEstimate": 378,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 1,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 1162,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 243,
+    "measurementsRank": 456,
+    "pldbScore": 22283,
+    "index": 621
+  },
+  "blitzbasic": {
+    "id": "blitzbasic",
+    "numberOfUsersEstimate": 475,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1047,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
+    "pldbScore": 22283,
     "index": 622
   },
   "pdf": {
@@ -9415,8 +9415,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22275,
+    "measurementsRank": 456,
+    "pldbScore": 22274,
     "index": 628
   },
   "comby": {
@@ -9595,8 +9595,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22257,
+    "measurementsRank": 416,
+    "pldbScore": 22256,
     "index": 640
   },
   "noms-db": {
@@ -9700,8 +9700,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22234,
+    "measurementsRank": 456,
+    "pldbScore": 22233,
     "index": 647
   },
   "hyperscript-lang": {
@@ -9850,8 +9850,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 169,
-    "measurementsRank": 455,
-    "pldbScore": 22214,
+    "measurementsRank": 456,
+    "pldbScore": 22213,
     "index": 657
   },
   "cilk": {
@@ -9865,8 +9865,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22212,
+    "measurementsRank": 456,
+    "pldbScore": 22211,
     "index": 658
   },
   "bosque": {
@@ -10004,21 +10004,6 @@
     "pldbScore": 22202,
     "index": 667
   },
-  "dax": {
-    "id": "dax",
-    "numberOfUsersEstimate": 401,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1132,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22199,
-    "index": 668
-  },
   "clarion": {
     "id": "clarion",
     "numberOfUsersEstimate": 546,
@@ -10031,6 +10016,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 556,
+    "pldbScore": 22198,
+    "index": 668
+  },
+  "dax": {
+    "id": "dax",
+    "numberOfUsersEstimate": 401,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1132,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 22198,
     "index": 669
   },
@@ -10120,8 +10120,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22176,
+    "measurementsRank": 456,
+    "pldbScore": 22175,
     "index": 675
   },
   "dexvis": {
@@ -10810,8 +10810,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22107,
+    "measurementsRank": 456,
+    "pldbScore": 22106,
     "index": 721
   },
   "ferret": {
@@ -11170,8 +11170,8 @@
     "foundationScoreRank": 187,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 455,
-    "pldbScore": 22065,
+    "measurementsRank": 456,
+    "pldbScore": 22064,
     "index": 745
   },
   "berry": {
@@ -11305,8 +11305,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22050,
+    "measurementsRank": 416,
+    "pldbScore": 22049,
     "index": 754
   },
   "luna-1": {
@@ -11335,8 +11335,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22044,
+    "measurementsRank": 456,
+    "pldbScore": 22043,
     "index": 756
   },
   "vimwiki": {
@@ -11425,8 +11425,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22025,
+    "measurementsRank": 416,
+    "pldbScore": 22024,
     "index": 762
   },
   "cone": {
@@ -11459,21 +11459,6 @@
     "pldbScore": 22022,
     "index": 764
   },
-  "oxygene": {
-    "id": "oxygene",
-    "numberOfUsersEstimate": 271,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1311,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 22020,
-    "index": 765
-  },
   "tap": {
     "id": "tap",
     "numberOfUsersEstimate": 430,
@@ -11486,6 +11471,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 623,
+    "pldbScore": 22019,
+    "index": 765
+  },
+  "oxygene": {
+    "id": "oxygene",
+    "numberOfUsersEstimate": 271,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1311,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 22019,
     "index": 766
   },
@@ -11519,21 +11519,6 @@
     "pldbScore": 22015,
     "index": 768
   },
-  "opal": {
-    "id": "opal",
-    "numberOfUsersEstimate": 297,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 1278,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22013,
-    "index": 769
-  },
   "uno": {
     "id": "uno",
     "numberOfUsersEstimate": 370,
@@ -11546,6 +11531,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 556,
+    "pldbScore": 22012,
+    "index": 769
+  },
+  "opal": {
+    "id": "opal",
+    "numberOfUsersEstimate": 297,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 1278,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
     "pldbScore": 22012,
     "index": 770
   },
@@ -11560,8 +11560,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22010,
+    "measurementsRank": 456,
+    "pldbScore": 22009,
     "index": 771
   },
   "fat": {
@@ -11579,21 +11579,6 @@
     "pldbScore": 22006,
     "index": 772
   },
-  "nu": {
-    "id": "nu",
-    "numberOfUsersEstimate": 290,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 1285,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22006,
-    "index": 773
-  },
   "karel": {
     "id": "karel",
     "numberOfUsersEstimate": 475,
@@ -11606,6 +11591,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 694,
+    "pldbScore": 22005,
+    "index": 773
+  },
+  "nu": {
+    "id": "nu",
+    "numberOfUsersEstimate": 290,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 1285,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
     "pldbScore": 22005,
     "index": 774
   },
@@ -11635,8 +11635,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 22000,
+    "measurementsRank": 456,
+    "pldbScore": 21999,
     "index": 776
   },
   "pogoscript": {
@@ -11665,8 +11665,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21993,
+    "measurementsRank": 416,
+    "pldbScore": 21992,
     "index": 778
   },
   "ladder-logic": {
@@ -11789,21 +11789,6 @@
     "pldbScore": 21968,
     "index": 786
   },
-  "beanshell": {
-    "id": "beanshell",
-    "numberOfUsersEstimate": 241,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1365,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21966,
-    "index": 787
-  },
   "netlinx": {
     "id": "netlinx",
     "numberOfUsersEstimate": 290,
@@ -11816,6 +11801,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 496,
+    "pldbScore": 21965,
+    "index": 787
+  },
+  "beanshell": {
+    "id": "beanshell",
+    "numberOfUsersEstimate": 241,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1365,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 21965,
     "index": 788
   },
@@ -12254,21 +12254,6 @@
     "pldbScore": 21911,
     "index": 817
   },
-  "jasmin": {
-    "id": "jasmin",
-    "numberOfUsersEstimate": 201,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 1445,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 21909,
-    "index": 818
-  },
   "livr": {
     "id": "livr",
     "numberOfUsersEstimate": 354,
@@ -12281,6 +12266,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
     "measurementsRank": 788,
+    "pldbScore": 21908,
+    "index": 818
+  },
+  "jasmin": {
+    "id": "jasmin",
+    "numberOfUsersEstimate": 201,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 1445,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
     "pldbScore": 21908,
     "index": 819
   },
@@ -12385,8 +12385,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 243,
-    "measurementsRank": 415,
-    "pldbScore": 21892,
+    "measurementsRank": 416,
+    "pldbScore": 21891,
     "index": 826
   },
   "reverse-polish-notation": {
@@ -12625,8 +12625,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21860,
+    "measurementsRank": 416,
+    "pldbScore": 21859,
     "index": 842
   },
   "ia-32": {
@@ -12910,8 +12910,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21820,
+    "measurementsRank": 456,
+    "pldbScore": 21819,
     "index": 861
   },
   "phel": {
@@ -13390,8 +13390,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21770,
+    "measurementsRank": 416,
+    "pldbScore": 21769,
     "index": 893
   },
   "excel-app": {
@@ -13810,8 +13810,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21728,
+    "measurementsRank": 456,
+    "pldbScore": 21727,
     "index": 921
   },
   "metalang99": {
@@ -14095,8 +14095,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21697,
+    "measurementsRank": 456,
+    "pldbScore": 21696,
     "index": 940
   },
   "edgedb": {
@@ -15400,8 +15400,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21523,
+    "measurementsRank": 456,
+    "pldbScore": 21522,
     "index": 1027
   },
   "rubygems-pm": {
@@ -15764,21 +15764,6 @@
     "pldbScore": 21460,
     "index": 1051
   },
-  "krl": {
-    "id": "krl",
-    "numberOfUsersEstimate": 90,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1877,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21454,
-    "index": 1052
-  },
   "linearml": {
     "id": "linearml",
     "numberOfUsersEstimate": 502,
@@ -15791,6 +15776,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1270,
+    "pldbScore": 21453,
+    "index": 1052
+  },
+  "krl": {
+    "id": "krl",
+    "numberOfUsersEstimate": 90,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1877,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 21453,
     "index": 1053
   },
@@ -15884,21 +15884,6 @@
     "pldbScore": 21432,
     "index": 1059
   },
-  "orc-lang": {
-    "id": "orc-lang",
-    "numberOfUsersEstimate": 86,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 1903,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21428,
-    "index": 1060
-  },
   "jupyter-editor": {
     "id": "jupyter-editor",
     "numberOfUsersEstimate": 2406,
@@ -15911,6 +15896,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1839,
+    "pldbScore": 21427,
+    "index": 1060
+  },
+  "orc-lang": {
+    "id": "orc-lang",
+    "numberOfUsersEstimate": 86,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 1903,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 21427,
     "index": 1061
   },
@@ -15989,21 +15989,6 @@
     "pldbScore": 21413,
     "index": 1066
   },
-  "moo": {
-    "id": "moo",
-    "numberOfUsersEstimate": 80,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 23,
-    "numberOfUsersEstimateRank": 1941,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 21413,
-    "index": 1067
-  },
   "clist": {
     "id": "clist",
     "numberOfUsersEstimate": 125,
@@ -16016,6 +16001,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 623,
+    "pldbScore": 21412,
+    "index": 1067
+  },
+  "moo": {
+    "id": "moo",
+    "numberOfUsersEstimate": 80,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 23,
+    "numberOfUsersEstimateRank": 1941,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 393,
     "pldbScore": 21412,
     "index": 1068
   },
@@ -16334,21 +16334,6 @@
     "pldbScore": 21364,
     "index": 1089
   },
-  "mouse": {
-    "id": "mouse",
-    "numberOfUsersEstimate": 81,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 1936,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21355,
-    "index": 1090
-  },
   "lever": {
     "id": "lever",
     "numberOfUsersEstimate": 162,
@@ -16361,6 +16346,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 788,
+    "pldbScore": 21354,
+    "index": 1090
+  },
+  "mouse": {
+    "id": "mouse",
+    "numberOfUsersEstimate": 81,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 1936,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
     "pldbScore": 21354,
     "index": 1091
   },
@@ -16825,8 +16825,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 21293,
+    "measurementsRank": 393,
+    "pldbScore": 21292,
     "index": 1122
   },
   "powerbasic": {
@@ -17144,21 +17144,6 @@
     "pldbScore": 21271,
     "index": 1143
   },
-  "nice": {
-    "id": "nice",
-    "numberOfUsersEstimate": 66,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 2061,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21270,
-    "index": 1144
-  },
   "miniml-error": {
     "id": "miniml-error",
     "numberOfUsersEstimate": 1467,
@@ -17171,6 +17156,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1839,
+    "pldbScore": 21269,
+    "index": 1144
+  },
+  "nice": {
+    "id": "nice",
+    "numberOfUsersEstimate": 66,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 2061,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 21269,
     "index": 1145
   },
@@ -17204,21 +17204,6 @@
     "pldbScore": 21263,
     "index": 1147
   },
-  "s-algol": {
-    "id": "s-algol",
-    "numberOfUsersEstimate": 65,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 22,
-    "numberOfUsersEstimateRank": 2069,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 21262,
-    "index": 1148
-  },
   "apt": {
     "id": "apt",
     "numberOfUsersEstimate": 340,
@@ -17231,6 +17216,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1270,
+    "pldbScore": 21261,
+    "index": 1148
+  },
+  "s-algol": {
+    "id": "s-algol",
+    "numberOfUsersEstimate": 65,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 22,
+    "numberOfUsersEstimateRank": 2069,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 416,
     "pldbScore": 21261,
     "index": 1149
   },
@@ -17440,8 +17440,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21236,
+    "measurementsRank": 456,
+    "pldbScore": 21235,
     "index": 1163
   },
   "fleck": {
@@ -17590,8 +17590,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21222,
+    "measurementsRank": 456,
+    "pldbScore": 21221,
     "index": 1173
   },
   "kodu-game-lab": {
@@ -18074,21 +18074,6 @@
     "pldbScore": 21170,
     "index": 1205
   },
-  "project-mentat": {
-    "id": "project-mentat",
-    "numberOfUsersEstimate": 60,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 2124,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 398,
-    "measurementsRank": 455,
-    "pldbScore": 21167,
-    "index": 1206
-  },
   "markovjunior": {
     "id": "markovjunior",
     "numberOfUsersEstimate": 6068,
@@ -18102,7 +18087,7 @@
     "inboundLinksCountRank": 398,
     "measurementsRank": 2299,
     "pldbScore": 21166,
-    "index": 1207
+    "index": 1206
   },
   "ghostscript": {
     "id": "ghostscript",
@@ -18116,6 +18101,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 1839,
+    "pldbScore": 21166,
+    "index": 1207
+  },
+  "project-mentat": {
+    "id": "project-mentat",
+    "numberOfUsersEstimate": 60,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 2124,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 398,
+    "measurementsRank": 456,
     "pldbScore": 21166,
     "index": 1208
   },
@@ -18220,8 +18220,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 21145,
+    "measurementsRank": 393,
+    "pldbScore": 21144,
     "index": 1215
   },
   "pearl": {
@@ -18550,8 +18550,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 392,
-    "pldbScore": 21097,
+    "measurementsRank": 393,
+    "pldbScore": 21096,
     "index": 1237
   },
   "raptorjit": {
@@ -19570,8 +19570,8 @@
     "foundationScoreRank": 212,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
-    "measurementsRank": 415,
-    "pldbScore": 20968,
+    "measurementsRank": 416,
+    "pldbScore": 20967,
     "index": 1305
   },
   "categorical-query-language": {
@@ -20125,8 +20125,8 @@
     "foundationScoreRank": 92,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 96,
-    "measurementsRank": 392,
-    "pldbScore": 20879,
+    "measurementsRank": 393,
+    "pldbScore": 20878,
     "index": 1342
   },
   "mathematica-editor": {
@@ -22484,21 +22484,6 @@
     "pldbScore": 20600,
     "index": 1499
   },
-  "swift-il": {
-    "id": "swift-il",
-    "numberOfUsersEstimate": 1,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 2,
-    "measurements": 21,
-    "numberOfUsersEstimateRank": 2897,
-    "foundationScoreRank": 212,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 194,
-    "measurementsRank": 455,
-    "pldbScore": 20598,
-    "index": 1500
-  },
   "frost": {
     "id": "frost",
     "numberOfUsersEstimate": 50,
@@ -22511,6 +22496,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 398,
     "measurementsRank": 925,
+    "pldbScore": 20597,
+    "index": 1500
+  },
+  "swift-il": {
+    "id": "swift-il",
+    "numberOfUsersEstimate": 1,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 2,
+    "measurements": 21,
+    "numberOfUsersEstimateRank": 2897,
+    "foundationScoreRank": 212,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 194,
+    "measurementsRank": 456,
     "pldbScore": 20597,
     "index": 1501
   },
