@@ -6,23 +6,14 @@ appeared 2020
 creators Ellie
 tags pl
 website https://horse64.org/
+description Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
 
-import ../code/conceptPage.scroll
-
-id horse64
-name Horse64
-appeared 2020
-creators Ellie
-tags pl
-
-writtenIn horse64 moose64 python markdown cython yaml svg xml make bash
-website https://horse64.org/
-  description Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
-documentation https://horse64.org/docs
 isOpenSource true
-country Germany
-gitRepo https://codeberg.org/Horse64/core.horse64.org
+writtenIn horse64 moose64 python markdown cython yaml svg xml make bash
 fileExtensions h64
+documentation https://horse64.org/docs
+country Germany
+
+gitRepo https://codeberg.org/Horse64/core.horse64.org
+
 fileNames horp.conf
-
-
