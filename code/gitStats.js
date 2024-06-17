@@ -1,5 +1,7 @@
 const { execSync } = require("child_process")
 
+const timeout = 60 * 1000 * 10
+
 class GitStats {
   constructor(repoUrl, targetDir) {
     this.repoUrl = repoUrl
@@ -10,7 +12,7 @@ class GitStats {
     const { repoUrl, targetDir } = this
     console.log(`Cloning into ${this.targetDir}`)
     const command = `git clone ${repoUrl} ${targetDir}`
-    execSync(command, { encoding: "utf8", timeout: 60000 })
+    execSync(command, { encoding: "utf8", timeout })
     return this
   }
 
@@ -18,7 +20,7 @@ class GitStats {
     const { repoUrl, targetDir } = this
     console.log(`Pulling into ${this.targetDir}`)
     const command = `git pull ${repoUrl} ${targetDir}`
-    execSync(command, { encoding: "utf8", timeout: 20000 })
+    execSync(command, { encoding: "utf8", timeout })
     return this
   }
 

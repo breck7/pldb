@@ -4,6 +4,8 @@ const lodash = require("lodash")
 const { TreeNode } = require("scrollsdk/products/TreeNode.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
+const { ScrollFile, ScrollFileSystem } = require("scroll-cli")
+const scrollFs = new ScrollFileSystem()
 
 class ScrollSetCLI {
   constructor() {
@@ -45,12 +47,11 @@ class ScrollSetCLI {
   setAndSave(file, measurementPath, measurementValue) {
     const tree = this.getTree(file)
     tree.set(measurementPath, measurementValue)
-    return this.save(file, tree)
+    return this.formatAndSave(file, tree)
   }
 
-  save(file, tree) {
-    const dest = this.makeFilePath(file.id)
-    return Disk.write(dest, tree.toString())
+  formatAndSave(file, tree) {
+    return new ScrollFile(tree.toString(), this.makeFilePath(file.id), scrollFs).formatAndSave()
   }
 
   makeNameSearchIndex(files = this.concepts.slice(0).reverse()) {

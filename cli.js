@@ -92,7 +92,7 @@ class PLDBCli extends ScrollSetCLI {
         const tree = this.getTree(file)
         tree.touchNode("repoStats").setProperties(gitStats.summary)
         if (!tree.has("appeared")) tree.set("appeared", gitStats.firstCommit.toString())
-        this.save(file, tree)
+        this.formatAndSave(file, tree)
       } catch (err) {
         console.error(err, file.id)
       }
