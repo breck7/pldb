@@ -912,7 +912,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 4340,
+    "Values": 4344,
     "Coverage": "88%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -922,7 +922,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 4184,
+    "Values": 4188,
     "Coverage": "85%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -932,7 +932,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 4340,
+    "Values": 4344,
     "Coverage": "88%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -942,7 +942,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 4340,
+    "Values": 4344,
     "Coverage": "88%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -952,7 +952,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 4328,
+    "Values": 4332,
     "Coverage": "88%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1745,7 +1745,7 @@
   },
   {
     "Name": "example",
-    "Values": 3364,
+    "Values": 3368,
     "Coverage": "68%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",

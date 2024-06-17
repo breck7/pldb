@@ -912,7 +912,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5425,
+    "Values": 5430,
     "Coverage": "110%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -922,7 +922,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5230,
+    "Values": 5235,
     "Coverage": "106%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -932,7 +932,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5425,
+    "Values": 5430,
     "Coverage": "110%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -942,7 +942,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5425,
+    "Values": 5430,
     "Coverage": "110%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -952,7 +952,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5410,
+    "Values": 5415,
     "Coverage": "110%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1745,8 +1745,8 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 4205,
-    "Coverage": "85%",
+    "Values": 4210,
+    "Coverage": "86%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
     "Type": "string",
