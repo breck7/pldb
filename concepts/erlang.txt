@@ -29,6 +29,7 @@ Erlang ( ER-lang) is a general-purpose, concurrent, functional programming langu
  https://www.erlang.org/docs
 - There are at least 28,645 Erlang repos on GitHub
 - Erlang first developed in Ericsson
+- Erlang is written in Erlang, C, Markdown, Make, JSON, Bourne shell, C++, XML, Java, Elixir, XSD, Assembly language, Python, HTML, SQL, Perl, Lisp, D, M4, YAML, sed, Bash, Dockerfile, Ini, DTD, CSS, JavaScript, Diff, SVG, XSLT, plantuml
 - Erlang on Twitter
  https://twitter.com/erlang_org
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Erlang in 15k repos on GitHub
@@ -59,7 +60,7 @@ Erlang ( ER-lang) is a general-purpose, concurrent, functional programming langu
 - Indeed.com has 183 matches for "erlang engineer".
 - erlang.org was registered in 1998
 - See also: (17 related languages)Prolog, Smalltalk, PLEX, F#, Clojure, Rust, Scala, Opa, Elixir, Dart, Oz, Java, ASCII, Occam, CSP, LFE, Lisp
-- 13 languages in PLDB linking to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, gleam, hamler, mal, Pygments, Reia, Sophia
+- 14 languages in PLDB linking to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, Erlang, gleam, hamler, mal, Pygments, Reia, Sophia
 
 -module(square).
 -export([square/1]).

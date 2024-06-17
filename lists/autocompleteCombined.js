@@ -637,14 +637,14 @@ var autocompleteJs = [
     "url": "/concepts/markdown.html"
   },
   {
-    "label": "Solidity",
-    "id": "solidity",
-    "url": "/concepts/solidity.html"
-  },
-  {
     "label": "Pascal",
     "id": "pascal",
     "url": "/concepts/pascal.html"
+  },
+  {
+    "label": "Solidity",
+    "id": "solidity",
+    "url": "/concepts/solidity.html"
   },
   {
     "label": "YAML",
@@ -687,14 +687,14 @@ var autocompleteJs = [
     "url": "/concepts/crystal.html"
   },
   {
-    "label": "Reason",
-    "id": "reason",
-    "url": "/concepts/reason.html"
-  },
-  {
     "label": "D",
     "id": "d",
     "url": "/concepts/d.html"
+  },
+  {
+    "label": "Reason",
+    "id": "reason",
+    "url": "/concepts/reason.html"
   },
   {
     "label": "MySQL",
@@ -717,14 +717,14 @@ var autocompleteJs = [
     "url": "/concepts/haxe.html"
   },
   {
-    "label": "WebAssembly",
-    "id": "wasm",
-    "url": "/concepts/wasm.html"
-  },
-  {
     "label": "GraphQL",
     "id": "graphql",
     "url": "/concepts/graphql.html"
+  },
+  {
+    "label": "WebAssembly",
+    "id": "wasm",
+    "url": "/concepts/wasm.html"
   },
   {
     "label": "Groovy",
@@ -787,14 +787,14 @@ var autocompleteJs = [
     "url": "/concepts/clojurescript.html"
   },
   {
-    "label": "PureScript",
-    "id": "purescript",
-    "url": "/concepts/purescript.html"
-  },
-  {
     "label": "SVG",
     "id": "svg",
     "url": "/concepts/svg.html"
+  },
+  {
+    "label": "PureScript",
+    "id": "purescript",
+    "url": "/concepts/purescript.html"
   },
   {
     "label": "HCL",
@@ -847,14 +847,14 @@ var autocompleteJs = [
     "url": "/concepts/assembly-language.html"
   },
   {
-    "label": "Visual Basic .NET",
-    "id": "visual-basic.net",
-    "url": "/concepts/visual-basic.net.html"
-  },
-  {
     "label": "Make",
     "id": "make",
     "url": "/concepts/make.html"
+  },
+  {
+    "label": "Visual Basic .NET",
+    "id": "visual-basic.net",
+    "url": "/concepts/visual-basic.net.html"
   },
   {
     "label": "CMake",
@@ -872,14 +872,14 @@ var autocompleteJs = [
     "url": "/concepts/brainfuck.html"
   },
   {
-    "label": "Gradle",
-    "id": "gradle",
-    "url": "/concepts/gradle.html"
-  },
-  {
     "label": "Deno",
     "id": "deno",
     "url": "/concepts/deno.html"
+  },
+  {
+    "label": "Gradle",
+    "id": "gradle",
+    "url": "/concepts/gradle.html"
   },
   {
     "label": "JSON5",
@@ -887,14 +887,14 @@ var autocompleteJs = [
     "url": "/concepts/json5.html"
   },
   {
-    "label": "APL",
-    "id": "apl",
-    "url": "/concepts/apl.html"
-  },
-  {
     "label": "Yacc",
     "id": "yacc",
     "url": "/concepts/yacc.html"
+  },
+  {
+    "label": "APL",
+    "id": "apl",
+    "url": "/concepts/apl.html"
   },
   {
     "label": "ARM",
@@ -977,14 +977,14 @@ var autocompleteJs = [
     "url": "/concepts/odin.html"
   },
   {
-    "label": "Lean",
-    "id": "lean",
-    "url": "/concepts/lean.html"
-  },
-  {
     "label": "Linux",
     "id": "linux",
     "url": "/concepts/linux.html"
+  },
+  {
+    "label": "Lean",
+    "id": "lean",
+    "url": "/concepts/lean.html"
   },
   {
     "label": "JQuery",
@@ -1037,14 +1037,14 @@ var autocompleteJs = [
     "url": "/concepts/robotframework.html"
   },
   {
-    "label": "Bazel",
-    "id": "bazel",
-    "url": "/concepts/bazel.html"
-  },
-  {
     "label": "V",
     "id": "v",
     "url": "/concepts/v.html"
+  },
+  {
+    "label": "Bazel",
+    "id": "bazel",
+    "url": "/concepts/bazel.html"
   },
   {
     "label": "ABAP",
@@ -1132,14 +1132,14 @@ var autocompleteJs = [
     "url": "/concepts/labview.html"
   },
   {
-    "label": "starlark",
-    "id": "starlark",
-    "url": "/concepts/starlark.html"
-  },
-  {
     "label": "Fennel",
     "id": "fennel",
     "url": "/concepts/fennel.html"
+  },
+  {
+    "label": "starlark",
+    "id": "starlark",
+    "url": "/concepts/starlark.html"
   },
   {
     "label": "AutoHotkey",
@@ -1182,14 +1182,14 @@ var autocompleteJs = [
     "url": "/concepts/android.html"
   },
   {
-    "label": "Less",
-    "id": "less",
-    "url": "/concepts/less.html"
-  },
-  {
     "label": "mustache",
     "id": "mustache",
     "url": "/concepts/mustache.html"
+  },
+  {
+    "label": "Less",
+    "id": "less",
+    "url": "/concepts/less.html"
   },
   {
     "label": "Cython",
@@ -1597,11 +1597,6 @@ var autocompleteJs = [
     "url": "/concepts/codemirror.html"
   },
   {
-    "label": "Agda",
-    "id": "agda",
-    "url": "/concepts/agda.html"
-  },
-  {
     "label": "Semantic Versioning",
     "id": "semver",
     "url": "/concepts/semver.html"
@@ -1610,6 +1605,11 @@ var autocompleteJs = [
     "label": "Futhark",
     "id": "futhark",
     "url": "/concepts/futhark.html"
+  },
+  {
+    "label": "Agda",
+    "id": "agda",
+    "url": "/concepts/agda.html"
   },
   {
     "label": "Scala.js",
@@ -1677,14 +1677,14 @@ var autocompleteJs = [
     "url": "/concepts/uml.html"
   },
   {
-    "label": "v8",
-    "id": "v8",
-    "url": "/concepts/v8.html"
-  },
-  {
     "label": "Diff",
     "id": "diff",
     "url": "/concepts/diff.html"
+  },
+  {
+    "label": "v8",
+    "id": "v8",
+    "url": "/concepts/v8.html"
   },
   {
     "label": "Wolfram Language",
@@ -1812,14 +1812,14 @@ var autocompleteJs = [
     "url": "/concepts/rest.html"
   },
   {
-    "label": "Turtle",
-    "id": "turtle",
-    "url": "/concepts/turtle.html"
-  },
-  {
     "label": "x86 Assembly",
     "id": "x86-assembly",
     "url": "/concepts/x86-assembly.html"
+  },
+  {
+    "label": "Turtle",
+    "id": "turtle",
+    "url": "/concepts/turtle.html"
   },
   {
     "label": "unison",
@@ -2347,14 +2347,14 @@ var autocompleteJs = [
     "url": "/concepts/jasmine.html"
   },
   {
-    "label": "Smarty",
-    "id": "smarty",
-    "url": "/concepts/smarty.html"
-  },
-  {
     "label": "Xojo",
     "id": "xojo",
     "url": "/concepts/xojo.html"
+  },
+  {
+    "label": "Smarty",
+    "id": "smarty",
+    "url": "/concepts/smarty.html"
   },
   {
     "label": "TLA",
@@ -2607,14 +2607,14 @@ var autocompleteJs = [
     "url": "/concepts/mariadb.html"
   },
   {
-    "label": "Veryl",
-    "id": "veryl",
-    "url": "/concepts/veryl.html"
-  },
-  {
     "label": "DTD",
     "id": "dtd",
     "url": "/concepts/dtd.html"
+  },
+  {
+    "label": "Veryl",
+    "id": "veryl",
+    "url": "/concepts/veryl.html"
   },
   {
     "label": "Io",
@@ -2832,14 +2832,14 @@ var autocompleteJs = [
     "url": "/concepts/dojo.html"
   },
   {
-    "label": "Stylus",
-    "id": "stylus",
-    "url": "/concepts/stylus.html"
-  },
-  {
     "label": "NewLisp",
     "id": "newlisp",
     "url": "/concepts/newlisp.html"
+  },
+  {
+    "label": "Stylus",
+    "id": "stylus",
+    "url": "/concepts/stylus.html"
   },
   {
     "label": "Please Build",
@@ -3192,14 +3192,14 @@ var autocompleteJs = [
     "url": "/concepts/bc.html"
   },
   {
-    "label": "Objective C++",
-    "id": "objective-cpp",
-    "url": "/concepts/objective-cpp.html"
-  },
-  {
     "label": "LiveCode",
     "id": "livecode",
     "url": "/concepts/livecode.html"
+  },
+  {
+    "label": "Objective C++",
+    "id": "objective-cpp",
+    "url": "/concepts/objective-cpp.html"
   },
   {
     "label": "Clipper",
@@ -3307,16 +3307,6 @@ var autocompleteJs = [
     "url": "/concepts/monkey.html"
   },
   {
-    "label": "Logos",
-    "id": "logos",
-    "url": "/concepts/logos.html"
-  },
-  {
-    "label": "Gherkin",
-    "id": "gherkin",
-    "url": "/concepts/gherkin.html"
-  },
-  {
     "label": "OpenEdge ABL",
     "id": "openedge-advanced-business-language",
     "url": "/concepts/openedge-advanced-business-language.html"
@@ -3330,6 +3320,16 @@ var autocompleteJs = [
     "label": "Uiua",
     "id": "uiua",
     "url": "/concepts/uiua.html"
+  },
+  {
+    "label": "Gherkin",
+    "id": "gherkin",
+    "url": "/concepts/gherkin.html"
+  },
+  {
+    "label": "Logos",
+    "id": "logos",
+    "url": "/concepts/logos.html"
   },
   {
     "label": "ERB",
@@ -3987,14 +3987,14 @@ var autocompleteJs = [
     "url": "/concepts/bpmn.html"
   },
   {
-    "label": "CSV",
-    "id": "csv",
-    "url": "/concepts/csv.html"
-  },
-  {
     "label": "Nushell",
     "id": "nushell",
     "url": "/concepts/nushell.html"
+  },
+  {
+    "label": "CSV",
+    "id": "csv",
+    "url": "/concepts/csv.html"
   },
   {
     "label": "muon",
@@ -9747,6 +9747,11 @@ var autocompleteJs = [
     "url": "/concepts/6gunz.html"
   },
   {
+    "label": "plantuml",
+    "id": "plantuml",
+    "url": "/concepts/plantuml.html"
+  },
+  {
     "label": "boa",
     "id": "boa",
     "url": "/concepts/boa.html"
@@ -9845,11 +9850,6 @@ var autocompleteJs = [
     "label": "co2",
     "id": "co2",
     "url": "/concepts/co2.html"
-  },
-  {
-    "label": "plantuml",
-    "id": "plantuml",
-    "url": "/concepts/plantuml.html"
   },
   {
     "label": "Small-C",
@@ -11057,14 +11057,14 @@ var autocompleteJs = [
     "url": "/concepts/stalin.html"
   },
   {
-    "label": "Visual Studio",
-    "id": "visual-studio-editor",
-    "url": "/concepts/visual-studio-editor.html"
-  },
-  {
     "label": "XSD",
     "id": "xsd",
     "url": "/concepts/xsd.html"
+  },
+  {
+    "label": "Visual Studio",
+    "id": "visual-studio-editor",
+    "url": "/concepts/visual-studio-editor.html"
   },
   {
     "label": "FXML",
