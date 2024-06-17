@@ -1523,9 +1523,9 @@ class Tables {
   }
 
   toTable(data) {
-    const header = lodash.keys(data[0]).join("\t")
-    const rows = lodash.map(data, row => lodash.values(row).join("\t"))
-    const tsv = [header, ...rows].join("\n ")
+    const cols = lodash.keys(data[0])
+    const rows = lodash.map(data, row => cols.map(col => row[col]).join("\t"))
+    const tsv = [cols.join("\t"), ...rows].join("\n ")
     return "tabTable\n " + tsv
   }
 
@@ -1931,6 +1931,16 @@ const computeds = {
     let count = 0
     concept.forEach(node => {
       if (node.isMeasure) count++
+    })
+    return count
+  },
+
+  expandedMeasurements(concept) {
+    let count = 0
+    concept.forEach(node => {
+      if (!node.isMeasure) return
+      if (node.listDelimiter !== undefined) count += node.getLine().split(node.listDelimiter).length
+      else count++
     })
     return count
   },
