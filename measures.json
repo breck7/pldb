@@ -772,7 +772,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 4520,
+    "Values": 4528,
     "Coverage": "92%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -912,7 +912,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 4344,
+    "Values": 4352,
     "Coverage": "88%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -922,7 +922,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 4188,
+    "Values": 4196,
     "Coverage": "85%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -932,7 +932,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 4344,
+    "Values": 4352,
     "Coverage": "88%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -942,7 +942,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 4344,
+    "Values": 4352,
     "Coverage": "88%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -952,7 +952,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 4332,
+    "Values": 4340,
     "Coverage": "88%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1871,7 +1871,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 4380,
+    "Values": 4388,
     "Coverage": "89%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",

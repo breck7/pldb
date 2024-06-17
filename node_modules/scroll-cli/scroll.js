@@ -250,6 +250,14 @@ class ScrollFile {
     this.permalink = this.scrollProgram.get(scrollKeywords.permalink) || (this.filename ? this.filename.replace(SCROLL_FILE_EXTENSION, "") + ".html" : "")
   }
 
+  formatAndSave() {
+    const { originalScrollCode, formatted } = this
+
+    if (originalScrollCode === formatted) return false
+    this.fileSystem.write(this.filePath, formatted)
+    return true
+  }
+
   get absoluteLink() {
     return this.ensureAbsoluteLink(this.permalink)
   }
@@ -845,15 +853,7 @@ import footer.scroll
   formatCommand(cwd) {
     const fileSystem = new ScrollFileSystem()
     const folder = this.resolvePath(cwd)
-    const files = fileSystem.getScrollFilesInFolder(folder)
-    files.forEach(file => {
-      const { originalScrollCode, formatted } = file
-
-      if (originalScrollCode === formatted) return true
-
-      fileSystem.write(file.filePath, formatted)
-      this.log(`💾 formatted ${file.filename}`)
-    })
+    fileSystem.getScrollFilesInFolder(folder).forEach(file => (file.formatAndSave() ? this.log(`💾 formatted ${file.filename}`) : ""))
   }
 
   async buildCommand(cwd) {

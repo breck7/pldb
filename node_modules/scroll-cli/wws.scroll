@@ -1,9 +1,9 @@
 title The World Wide Scroll
+writeConcepts wws.csv wws.json wws.tsv
+writeMeasures wwsMeasures.tsv
 
 import header.scroll
 printTitle
-writeConcepts wws.csv wws.json wws.tsv
-writeMeasures wwsMeasures.tsv
 
 mediumColumns 1
 
@@ -51,6 +51,16 @@ import stripeBuyButton.scroll
 idParser
  extends abstractIdParser
 
+wwwParser
+ extends abstractUrlMeasureParser
+ description What is the URL to this folder on the World Wide Web?
+ float sortIndex 1.01
+
+sourceParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the source code for this folder?
+ float sortIndex 1.02
+
 ownerParser
  // required
  extends abstractStringMeasureParser
@@ -62,16 +72,6 @@ ownerParser
   extends abstractStringMeasureParser
   description What is the email address of the owner of this folder?
   float sortIndex 1.11
-
-wwwParser
- extends abstractUrlMeasureParser
- description What is the URL to this folder on the World Wide Web?
- float sortIndex 1.01
-
-sourceParser
- extends abstractUrlMeasureParser
- description What is the URL to the source code for this folder?
- float sortIndex 1.02
 
 registeredParser
  extends abstractStringMeasureParser
@@ -86,34 +86,34 @@ expiresParser
 // The World Wide Scroll
 
 id scroll
+www https://scroll.pub
+source https://github.com/breck7/scroll
 owner Breck Yunits
  email breck7@gmail.com
-source https://github.com/breck7/scroll
-www https://scroll.pub
 registered 6/12/2024
 expires 6/12/2034
 
 id breck
+www https://breckyunits.com
+source https://github.com/breck7/breckyunits.com
 owner Breck Yunits
  email breck7@gmail.com
-source https://github.com/breck7/breckyunits.com
-www https://breckyunits.com
 registered 6/12/2024
 expires 6/12/2034
 
 id pldb
+www https://pldb.io
+source https://github.com/breck7/pldb
 owner Breck Yunits
  email breck7@gmail.com
-source https://github.com/breck7/pldb
-www https://pldb.io
 registered 6/12/2024
 expires 6/12/2034
 
 id cancerdb
+www https://cancerdb.com
+source https://github.com/breck7/CancerDB
 owner Breck Yunits
  email breck7@gmail.com
-source https://github.com/breck7/CancerDB
-www https://cancerdb.com
 registered 6/12/2024
 expires 6/12/2034
 

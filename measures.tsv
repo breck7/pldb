@@ -77,7 +77,7 @@ forLanguages	96	1%	Which languages is this repository for?	ballerina	string		1.9
 dblp	0	0%	What are publications about this language from https://dblp.org/?			dblp.org	1.9	false	
 dblp_hits	0	0%	How many matching publications?				1.9	false	
 dblp_publications	0	0%	An inline PSV table of hits.				1.9	false	
-mainRepo	2260	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
+mainRepo	2264	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
 standsFor	694	14%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false	
 aka	344	7%	What is this also known as?	4D	string		1.9	false	
 oldName	26	0%	What is the old name of this language?	ML-flavoured Erlang	string		1.9	false	
@@ -91,11 +91,11 @@ inboundLinks	796	16%	Which other concepts link to this one?	explorer	string		1.9
 isFinished	9790	200%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true	
 nativeLanguage	34	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false	
 announcementMethod	30	0%	How was the language first announced?	interview	string		1.9	false	
-repoStats_firstCommit	2172	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
-repoStats_newestCommit	2094	42%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
-repoStats_commits	2172	44%	How many commits to the repo?	871	number		1.9	false	
-repoStats_committers	2172	44%	How many committers to the repo?	28	number		1.9	false	
-repoStats_files	2166	44%	How many files in the repo?	49	number		1.9	false	
+repoStats_firstCommit	2176	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
+repoStats_newestCommit	2098	42%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
+repoStats_commits	2176	44%	How many commits to the repo?	871	number		1.9	false	
+repoStats_committers	2176	44%	How many committers to the repo?	28	number		1.9	false	
+repoStats_files	2170	44%	How many files in the repo?	49	number		1.9	false	
 equation	30	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false	
 description	14	0%	How is this language described here?	Forsp: A Forth+Lisp Hybrid Lambda Calculus Language	string		1.99	false	
 githubRepo_description	2068	42%	How is this language described here?	A concise stack-based golfing language	string		1.99	false	
@@ -185,7 +185,7 @@ githubCopilotOptimized	14	0%	Is this language optimized for GitHub copilot, as f
 meetup	114	2%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false	
 gitRepo	40	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false	
 specRepo	4	0%	What is the URL of the official spec for the language project?	https://github.com/whatwg/html	string		4	false	
-githubRepo	2190	44%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false	
+githubRepo	2194	44%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false	
 gitlabRepo	26	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false	
 sourcehutRepo	10	0%	What is the URL of the official sourcehut repo for this project?	https://sourceforge.net/projects/avisynth2/	string	sr.ht	4	false	
 rijuRepl_gitRepo	78	1%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://gcc.gnu.org/git.html	string		4	false	

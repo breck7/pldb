@@ -772,7 +772,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 5650,
+    "Values": 5660,
     "Coverage": "115%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -912,8 +912,8 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5430,
-    "Coverage": "110%",
+    "Values": 5440,
+    "Coverage": "111%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
     "Type": "number",
@@ -922,8 +922,8 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5235,
-    "Coverage": "106%",
+    "Values": 5245,
+    "Coverage": "107%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
     "Type": "number",
@@ -932,8 +932,8 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5430,
-    "Coverage": "110%",
+    "Values": 5440,
+    "Coverage": "111%",
     "Question": "How many commits to the repo?",
     "Example": "871",
     "Type": "number",
@@ -942,8 +942,8 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5430,
-    "Coverage": "110%",
+    "Values": 5440,
+    "Coverage": "111%",
     "Question": "How many committers to the repo?",
     "Example": "28",
     "Type": "number",
@@ -952,7 +952,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5415,
+    "Values": 5425,
     "Coverage": "110%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1871,8 +1871,8 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 5475,
-    "Coverage": "111%",
+    "Values": 5485,
+    "Coverage": "112%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
     "Type": "string",
