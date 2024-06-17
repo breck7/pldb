@@ -6,23 +6,14 @@ appeared 2020
 creators Ellie
 tags pl
 website https://horse64.org/
+description Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
 
-writtenIn markdown python cython yaml svg xml make bash
-repoStats
- firstCommit 2022
- commits 1113
- committers 2
- files 208
- newestCommit 2024
-country Unknown
-originCommunity https://codeberg.org/Horse64/core.horse64.org/issues
+isOpenSource true
+writtenIn horse64 moose64 python markdown cython yaml svg xml make bash
+fileExtensions h64
+documentation https://horse64.org/docs
+country Germany
 
-githubRepo https://github.com/horse64/core.horse64.org
- firstCommit 2022
- stars 2
- forks 0
- subscribers 1
- created 2022
- updated 2022
- description THIS IS A MIRROR, CHECK https://codeberg.org/Horse64/core.horse64.org
- issues 0
+gitRepo https://codeberg.org/Horse64/core.horse64.org
+
+fileNames horp.conf

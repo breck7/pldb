@@ -1,7 +1,7 @@
 [
   {
     "Name": "id",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -12,7 +12,7 @@
   },
   {
     "Name": "name",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -23,7 +23,7 @@
   },
   {
     "Name": "appeared",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -34,7 +34,7 @@
   },
   {
     "Name": "creators",
-    "Values": 5444,
+    "Values": 5448,
     "Coverage": "111%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -44,7 +44,7 @@
   },
   {
     "Name": "measurements",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -54,7 +54,7 @@
   },
   {
     "Name": "tags",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -75,7 +75,7 @@
   },
   {
     "Name": "website",
-    "Values": 6716,
+    "Values": 6720,
     "Coverage": "137%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "http://www.3mf.io/specification/",
@@ -95,7 +95,7 @@
   },
   {
     "Name": "foundationScore",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -145,7 +145,7 @@
   },
   {
     "Name": "exampleCount",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -155,7 +155,7 @@
   },
   {
     "Name": "rank",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1258",
@@ -165,7 +165,7 @@
   },
   {
     "Name": "lastActivity",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -185,7 +185,7 @@
   },
   {
     "Name": "pldbScore",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
     "Example": "21057",
@@ -251,7 +251,7 @@
   },
   {
     "Name": "githubRepo_created",
-    "Values": 4168,
+    "Values": 4164,
     "Coverage": "85%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -261,7 +261,7 @@
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 4224,
+    "Values": 4220,
     "Coverage": "86%",
     "Question": "What year was the last commit made?",
     "Example": "2022",
@@ -271,7 +271,7 @@
   },
   {
     "Name": "githubRepo_firstCommit",
-    "Values": 3372,
+    "Values": 3368,
     "Coverage": "68%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -281,7 +281,7 @@
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 4196,
+    "Values": 4192,
     "Coverage": "85%",
     "Question": "How many subscribers to the repo?",
     "Example": "20",
@@ -291,7 +291,7 @@
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 4228,
+    "Values": 4224,
     "Coverage": "86%",
     "Question": "How many forks of the repo?",
     "Example": "39",
@@ -301,7 +301,7 @@
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 4240,
+    "Values": 4236,
     "Coverage": "86%",
     "Question": "How many stars of the repo?",
     "Example": "672",
@@ -311,7 +311,7 @@
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 3832,
+    "Values": 3828,
     "Coverage": "78%",
     "Question": "How many isses on the repo?",
     "Example": "29",
@@ -852,7 +852,7 @@
   },
   {
     "Name": "isLanguage",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -862,7 +862,7 @@
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -872,7 +872,7 @@
   },
   {
     "Name": "inboundLinks",
-    "Values": 1584,
+    "Values": 1592,
     "Coverage": "32%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -882,7 +882,7 @@
   },
   {
     "Name": "isFinished",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -912,7 +912,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 4344,
+    "Values": 4340,
     "Coverage": "88%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -922,7 +922,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 4188,
+    "Values": 4184,
     "Coverage": "85%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -932,7 +932,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 4344,
+    "Values": 4340,
     "Coverage": "88%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -942,7 +942,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 4344,
+    "Values": 4340,
     "Coverage": "88%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -952,7 +952,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 4332,
+    "Values": 4328,
     "Coverage": "88%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -972,7 +972,7 @@
   },
   {
     "Name": "description",
-    "Values": 20,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "How is this language described here?",
     "Example": "Forsp: A Forth+Lisp Hybrid Lambda Calculus Language",
@@ -982,7 +982,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 4140,
+    "Values": 4136,
     "Coverage": "84%",
     "Question": "How is this language described here?",
     "Example": "A concise stack-based golfing language",
@@ -1062,7 +1062,7 @@
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1072,7 +1072,7 @@
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1212,7 +1212,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 5444,
+    "Values": 5448,
     "Coverage": "111%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1323,7 +1323,7 @@
   },
   {
     "Name": "fileExtensions",
-    "Values": 864,
+    "Values": 868,
     "Coverage": "17%",
     "Question": "What are the file extensions for this language?",
     "Example": "a51",
@@ -1364,7 +1364,7 @@
   },
   {
     "Name": "documentation",
-    "Values": 1396,
+    "Values": 1400,
     "Coverage": "28%",
     "Question": "What is a URL to the official documentation for this language?",
     "Example": "https://aardvark-docs.programit.repl.co/",
@@ -1580,7 +1580,7 @@
   },
   {
     "Name": "originCommunity",
-    "Values": 15852,
+    "Values": 15848,
     "Coverage": "323%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
@@ -1851,7 +1851,7 @@
   },
   {
     "Name": "gitRepo",
-    "Values": 76,
+    "Values": 80,
     "Coverage": "1%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://git.savannah.gnu.org/git/bash.git",
@@ -1871,7 +1871,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 4384,
+    "Values": 4380,
     "Coverage": "89%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -3666,7 +3666,7 @@
   {
     "Name": "wikipedia",
     "Values": 7488,
-    "Coverage": "153%",
+    "Coverage": "152%",
     "Question": "What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?",
     "Example": "https://en.wikipedia.org/wiki/IBM_1620",
     "Type": "string",
@@ -3676,7 +3676,7 @@
   },
   {
     "Name": "bookCount",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3686,7 +3686,7 @@
   },
   {
     "Name": "paperCount",
-    "Values": 19576,
+    "Values": 19580,
     "Coverage": "400%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
@@ -3751,7 +3751,7 @@
   {
     "Name": "linguistGrammarRepo",
     "Values": 1664,
-    "Coverage": "34%",
+    "Coverage": "33%",
     "Question": "What is the URL to the Linguist Grammar repo used by GitHub for this language?",
     "Example": "https://github.com/xDrivenDevelopment/atom-language-1c-bsl.git",
     "Type": "string",
