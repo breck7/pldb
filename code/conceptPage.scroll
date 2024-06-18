@@ -9,7 +9,7 @@ replaceJs TEMPLATE
  }
 writeText
 
-import measures.scroll
+import measures.parsers
 
 import ../header.scroll
 

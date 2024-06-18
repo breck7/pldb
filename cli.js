@@ -14,7 +14,7 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 
 class PLDBCli extends ScrollSetCLI {
   conceptsFolder = path.join(baseFolder, "concepts")
-  grammarFile = "code/measures.scroll"
+  parsersFile = "code/measures.parsers"
   scrollSetName = "pldb"
   compiledConcepts = "./pldb.json"
 

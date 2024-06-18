@@ -34,7 +34,7 @@ Create a new Scroll file in `concepts` with a unique URL friendly filename and s
 Edit the corresponding `concepts/*.scroll` file and send a pull request.
 
 ## To add a new measure
-Update the file `code/measures.scroll` and add at least 1 measurement to a concept in `concepts` and send a pull request.
+Update the file `code/measures.parsers` and add at least 1 measurement to a concept in `concepts` and send a pull request.
 
 ## To build the site locally
 code
@@ -51,7 +51,7 @@ code
  npm run format
 
 ## To explore this repo
-The most important folder is `concepts`, which contains the ScrollSet (a file for each concept). The file `code/measures.scroll` contains the Parsers (schema) for the ScrollSet.
+The most important folder is `concepts`, which contains the ScrollSet (a file for each concept). The file `code/measures.parsers` contains the Parsers (schema) for the ScrollSet.
 You can see the `cloc` language stats on this repo at https://pldb.io/pages/about.html.
 
 ## To use as an npm package:
