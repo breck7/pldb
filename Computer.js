@@ -4,7 +4,7 @@ const { TreeNode } = require("scrollsdk/products/TreeNode.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
-const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "measures.scroll")))
+const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "measures.parsers")))
 const listsFolder = path.join(__dirname, "lists")
 const pagesDir = path.join(__dirname, "pages")
 const numeral = require("numeral")
@@ -831,7 +831,7 @@ image ${image}
       twitter: this.get("twitter"),
       edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
         new TreeNode(
-          `url https://pldb.io/pldb.grammar\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
+          `url https://pldb.io/pldb.parsers\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
         ).toString()
       )}`
     }
@@ -1301,7 +1301,7 @@ codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywor
 class Feature {
   constructor(measure, tables) {
     this.measure = measure
-    this.fileName = "measures.scroll"
+    this.fileName = "measures.parsers"
     this.id = measure.Name
     this.tables = tables
   }

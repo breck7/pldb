@@ -3,7 +3,7 @@ footnoteDefinitionParser
  extends paragraphParser
  boolean isFootnote true
  pattern ^\^.+$
- // We need to quickLinks back in scope because there is currently a bug in ScrollSDK/Grammar where if a parser extending a parent class has a child parser defined, then any regex parsers in the parent class will not be tested unless explicitly included in scope again.
+ // We need to quickLinks back in scope because there is currently a bug in ScrollSDK/parsers where if a parser extending a parent class has a child parser defined, then any regex parsers in the parent class will not be tested unless explicitly included in scope again.
  inScope quickLinkParser
  labelParser
   description If you want to show a custom label for a footnote. Default label is the note definition index.

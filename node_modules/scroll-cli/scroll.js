@@ -18,8 +18,8 @@ const packageJson = require("./package.json")
 // Constants
 const SCROLL_VERSION = packageJson.version
 const SCROLL_FILE_EXTENSION = ".scroll"
-const GRAMMAR_EXTENSION = ".grammar"
-// Todo: how to keep in sync with grammar?
+const PARSERS_FILE_EXTENSION = ".parsers"
+// Todo: how to keep in sync with scroll files?
 const scrollKeywords = {
   title: "title",
   description: "description",
@@ -86,7 +86,7 @@ class ScrollFileSystem extends TreeFileSystem {
 
 const removeBlanks = data => data.map(obj => Object.fromEntries(Object.entries(obj).filter(([_, value]) => value !== "")))
 const escapeCommas = str => (typeof str === "string" && str.includes(",") ? `"${str}"` : str)
-const defaultScrollParser = new TreeFileSystem().getParser(Disk.getFiles(path.join(__dirname, "grammar")).filter(file => file.endsWith(GRAMMAR_EXTENSION)))
+const defaultScrollParser = new TreeFileSystem().getParser(Disk.getFiles(path.join(__dirname, "parsers")).filter(file => file.endsWith(PARSERS_FILE_EXTENSION)))
 const DefaultScrollParser = defaultScrollParser.parser // todo: remove?
 
 // todo: groups is currently matching partial substrings
@@ -814,7 +814,7 @@ import footer.scroll
     const fileSystem = new ScrollFileSystem()
     const folderPath = Utils.ensureFolderEndsInSlash(folder)
     fileSystem.getScrollFilesInFolder(folderPath) // Init all parsers
-    const grammarErrors = fileSystem.parsers.map(parser => parser.getAllErrors().map(err => err.toObject())).flat()
+    const parserErrors = fileSystem.parsers.map(parser => parser.getAllErrors().map(err => err.toObject())).flat()
 
     const scrollErrors = fileSystem
       .getScrollFilesInFolder(folderPath)
@@ -825,20 +825,20 @@ import footer.scroll
       )
       .flat()
 
-    return { grammarErrors, scrollErrors }
+    return { parserErrors, scrollErrors }
   }
 
   testCommand(cwd) {
     const start = Date.now()
     const folder = this.resolvePath(cwd)
-    const { grammarErrors, scrollErrors } = this.getErrorsInFolder(folder)
+    const { parserErrors, scrollErrors } = this.getErrorsInFolder(folder)
 
     const seconds = (Date.now() - start) / 1000
 
-    if (grammarErrors.length) {
+    if (parserErrors.length) {
       this.log(``)
-      this.log(`❌ ${grammarErrors.length} grammar errors in "${cwd}"`)
-      this.log(new TreeNode(grammarErrors).toFormattedTable(200))
+      this.log(`❌ ${parserErrors.length} parser errors in "${cwd}"`)
+      this.log(new TreeNode(parserErrors).toFormattedTable(200))
       this.log(``)
     }
     if (scrollErrors.length) {
@@ -847,7 +847,7 @@ import footer.scroll
       this.log(new TreeNode(scrollErrors).toFormattedTable(100))
       this.log(``)
     }
-    if (!grammarErrors.length && !scrollErrors.length) return this.log(`✅ 0 errors in "${cwd}". Tests took ${seconds} seconds.`)
+    if (!parserErrors.length && !scrollErrors.length) return this.log(`✅ 0 errors in "${cwd}". Tests took ${seconds} seconds.`)
   }
 
   formatCommand(cwd) {

@@ -2,7 +2,7 @@ printAuthorParser
  description Prints a byline with the author's name and optionally a link to them.
  extends abstractScrollParser
  cruxFromId
- // todo: we need pattern matching added to Grammar to support having no params or a url and personNameCell
+ // todo: we need pattern matching added to sdk to support having no params or a url and personNameCell
  cells keywordCell
  catchAllCellType anyCell
  example

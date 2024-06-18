@@ -18,7 +18,7 @@ Download the PLDB ScrollSet as: CSV | TSV | JSON
  link pldb.tsv TSV
  link pldb.json JSON
 
-import code/measures.scroll
+import code/measures.parsers
 loadConcepts concepts
 
 Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON

@@ -1,6 +1,419 @@
-importOnly
+// Basic cell types
+blankCell
+anyCell
 
-// parsersOnly
+// Enum cell types
+enumCell
+ highlightScope constant.language
+booleanCell
+ enum true false
+ extends enumCell
+
+// String cell types
+stringCell
+ highlightScope string
+
+wordCell
+ highlightScope string
+ description A non-empty single word string.
+ regex .+
+
+// Date cell types
+dateCell
+ highlightScope string
+
+// Numeric cell types
+numberCell
+ highlightScope constant.numeric
+integerCell
+ extends numberCell
+ highlightScope constant.numeric.integer
+floatCell
+ extends numberCell
+ highlightScope constant.numeric.float
+percentCell
+ highlightScope constant.numeric.float
+ extends stringCell
+ // todo: this currently extends from stringCell b/c scrollsdk needs to be fixed. seems like if extending from number then the hard coded number typescript regex takes precedence over a custom regex
+countCell
+ extends integerCell
+yearCell
+ extends integerCell
+
+// Scroll cell types
+keywordCell
+ highlightScope keyword
+
+commentCell
+ highlightScope comment
+
+delimiterCell
+ description String to use as a delimiter.
+ highlightScope string
+
+codeCell
+ highlightScope comment
+
+bulletPointCell
+ description Any token used as a bullet point such as "-" or "1." or ">"
+ highlightScope keyword
+
+personNameCell
+ extends stringCell
+
+// Link cell types
+urlCell
+ highlightScope constant.language
+absoluteUrlCell
+ highlightScope constant.language
+ regex (ftp|https?)://.+
+
+emailAddressCell
+ extends stringCell
+
+// File system cell types
+permalinkCell
+ highlightScope string
+ description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
+
+filePathCell
+ extends stringCell
+
+// HTML cell types
+tagOrUrlCell
+ description An HTML tag or a url.
+ highlightScope constant.language
+
+htmlAttributesCell
+ highlightScope comment
+
+htmlTagCell
+ highlightScope constant.language
+ enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
+
+classNameCell
+ highlightScope constant
+
+htmlIdCell
+ extends anyCell
+
+
+abstractScrollParser
+ cells keywordCell
+ javascript
+  compileEmbeddedVersion(compileSettings) {
+   return this.compile(compileSettings)
+  }
+  compileTextVersion() {
+    return ""
+  }
+  getHtmlRequirements(compileSettings) {
+    const {requireOnce} = this
+    if (!requireOnce)
+      return ""
+    const set = compileSettings?.alreadyRequired || this.root.alreadyRequired
+    if (set.has(requireOnce))
+      return ""
+    
+    set.add(requireOnce)
+    return requireOnce + "\n\n"
+  }
+
+abstractScrollWithRequirementsParser
+ extends abstractScrollParser
+ cruxFromId
+ javascript
+  compile(compileSettings) {
+    return this.getHtmlRequirements(compileSettings) + this.compileInstance()
+  }
+
+abstractTopLevelSingleMetaParser
+ description Use these keywords once per file.
+ extends abstractScrollParser
+ inScope slashCommentParser
+ cruxFromId
+ cells keywordCell
+ javascript
+  isTopMatter = true
+  isSetterParser = true
+  compile() {
+   return ""
+  }
+
+abstractCommandParser
+ extends abstractScrollParser
+ cruxFromId
+ cells keywordCell
+ inScope slashCommentParser
+ javascript
+  isTopMatter = true
+  compile() {
+   return ""
+  }
+
+scrollParser
+ extensions scroll
+ description Scroll is a language for scientists of all ages. Refine, share and collaborate on ideas.
+ root
+ inScope abstractScrollParser blankLineParser
+ catchAllParser errorParser
+ compilesTo html
+ javascript
+  setFile(file) {
+   this.file = file
+   return this
+  }
+  compile(compileSettings) {
+    this.sectionStack = []
+    return this.map(child => child.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
+  }
+  sectionStack = []
+  clearSectionStack() {
+   const result = this.sectionStack.join("")
+   this.sectionStack = []
+   return result
+  }
+  get hakonParser() {
+    if (this.isNodeJs())
+      return require("scrollsdk/products/hakon.nodejs.js")
+    return hakonParser
+  }
+  alreadyRequired = new Set()
+  compileEmbeddedVersion(compileSettings) {
+   this.sectionStack = []
+   return this.map(child => (child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+     .filter(i => i)
+     .join("\n")
+     .trim() + this.clearSectionStack()
+  }
+  get footnotes() {
+   if (this._footnotes === undefined) this._footnotes = this.filter(node => node.isFootnote)
+   return this._footnotes
+  }
+  file = {}
+  get permalink() {
+   return this.get("permalink") || this.file.permalink || ""
+  }
+ example
+  # Hello world
+  ## This is Scroll
+  * It compiles to HTML.
+  
+  code
+   // You can add code as well.
+   print("Hello world")
+
+abstractFileSettingParser
+ extends abstractTopLevelSingleMetaParser
+ cells keywordCell
+ javascript
+  compile() {
+   return ""
+  }
+
+abstractUrlSettingParser
+ extends abstractFileSettingParser
+ cells keywordCell urlCell
+ cruxFromId
+
+abstractSiteStringSettingParser
+ extends abstractFileSettingParser
+ catchAllCellType stringCell
+ cruxFromId
+
+commentLineParser
+ catchAllCellType commentCell
+
+abstractCommentParser
+ description Comments do not appear in the compiled HTML.
+ catchAllCellType commentCell
+ cells commentCell
+ extends abstractScrollParser
+ baseParser blobParser
+ javascript
+  compile() {
+   return ``
+  }
+ catchAllParser commentLineParser
+
+commentParser
+ extends abstractCommentParser
+ cruxFromId
+
+slashCommentParser
+ extends commentParser
+ crux //
+
+blankLineParser
+ description Blank lines compile to nothing in the HTML.
+ cells blankCell
+ javascript
+  compile() {
+   return this.parent.clearSectionStack()
+  }
+ pattern ^$
+ tags doNotSynthesize
+
+measureNameCell
+ extends keywordCell
+ // A regex for column names for max compatibility with a broad range of data science tools:
+ regex [a-zA-Z][a-zA-Z0-9]*
+
+writeMeasuresParser
+ cruxFromId
+ catchAllCellType filePathCell
+ description Writes measure statistics to a delimited file and write to disk.
+ extends abstractCommandParser
+ sortByParser
+  cruxFromId
+  cells keywordCell anyCell
+
+printMeasuresParser
+ description Print measures statistics in a page into an HTML table.
+ cruxFromId
+ extends abstractCommentParser
+ javascript
+   compile() {
+   // A hacky but simple way to do this for now.
+   const node = this.appendSibling("table \t", this.parent.file.compileMeasures("tsv"))
+   const html = node.compile()
+   node.destroy()
+   return html
+   }
+
+// The main measure parser. All measures should extend from this.
+abstractMeasureParser
+ cells measureNameCell
+ cruxFromId
+ boolean isMeasure true
+ float sortIndex 1.9
+ boolean isComputed false
+ string typeForCsvDocs unspecified
+ extends abstractScrollParser
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compile() {
+   return ""
+  }
+  get measureValue() {
+    return this.content ?? ""
+  }
+  get measureName() {
+    return this.getFirstWordPath().replace(/ /g, "_")
+  }
+
+// String Measures
+abstractWordMeasureParser
+ description A measure that contains a single word.
+ cells measureNameCell wordCell
+ string typeForCsvDocs word
+ extends abstractMeasureParser
+
+abstractStringMeasureParser
+ string typeForCsvDocs string
+ catchAllCellType stringCell
+ extends abstractMeasureParser
+
+// URL Parsers
+abstractUrlMeasureParser
+ string typeForCsvDocs url
+ cells measureNameCell urlCell
+ extends abstractWordMeasureParser
+
+// Required ID measure which denotes a concept
+abstractIdParser
+ crux id
+ description What is the ID of this concept?
+ extends abstractStringMeasureParser
+ float sortIndex 1
+ boolean isMeasureRequired true
+ javascript
+  getErrors() {
+    const errors = super.getErrors()
+    let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
+    if (!requiredMeasureNames.length) return errors
+    let next = this.next
+    while (requiredMeasureNames.length && next.firstWord !== "id" && next.getIndex() !== 0) {
+      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstWord)
+      next = next.next
+    }
+    requiredMeasureNames.forEach(name => {
+      errors.push({toObject: () => {return { message: `Concept "${this.content}" is missing required measure "${name}".`}}})
+    })
+    return errors
+  }
+
+// Numeric Measures
+abstractNumericMeasureParser
+ string typeForCsvDocs number
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+
+abstractIntegerMeasureParser
+ string typeForCsvDocs integer
+ cells measureNameCell integerCell
+ extends abstractNumericMeasureParser
+
+abstractFloatMeasureParser
+ cells measureNameCell floatCell
+ extends abstractNumericMeasureParser
+
+abstractPercentageMeasureParser
+ cells measureNameCell percentCell
+ extends abstractNumericMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+
+// Enum Measures
+abstractEnumMeasureParser
+ string typeForCsvDocs enum
+ cells measureNameCell enumCell
+ extends abstractMeasureParser
+
+// Boolean Measures
+abstractBooleanMeasureParser
+ string typeForCsvDocs boolean
+ cells measureNameCell booleanCell
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : content == "true"
+  }
+
+
+importParser
+ description Import one file into another.
+ cruxFromId
+ extends abstractScrollParser
+ catchAllCellType filePathCell
+ javascript
+  compile() {
+   return ""
+  }
+ example
+  import header.scroll
+
+importOnlyParser
+ description Mark a file as not one to build. This line will be not be imported into the importing file.
+ cruxFromId
+ extends abstractTopLevelSingleMetaParser
+ javascript
+  compile() {
+   return ""
+  }
+
+errorParser
+ baseParser errorParser
 
 // Common Measures
 

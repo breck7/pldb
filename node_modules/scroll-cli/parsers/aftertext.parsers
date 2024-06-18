@@ -112,7 +112,7 @@ abstractAftertextDirectiveParser
     const errors = super.getErrors()
     if (!this.isMarkup || this.matchWholeLine) return errors
     const inserts = this.getInserts(this.parent.originalTextPostLinkify)
-    // todo: make AbstractTreeError class exported by Grammar to allow Parsers to define their own error types.
+    // todo: make AbstractTreeError class exported by sdk to allow Parsers to define their own error types.
     // todo: also need to be able to map lines back to their line in source (pre-imports)
     if (!inserts.length)
       errors.push({toObject: () => {return { message: `No match found for "${this.getLine()}".`}}})
@@ -221,7 +221,7 @@ wrapsOnParser
    return [...text.matchAll(pattern)].map(match => {
     const { index } = match
     const endIndex = index + match[0].length
-    // I'm too lazy to clean up Grammar to write a proper inline markup parser so doing this for now.
+    // I'm too lazy to clean up sdk to write a proper inline markup parser so doing this for now.
     // The exclusive idea is to not try and apply bold or italic styles inside a TeX or code inline style.
     // Note that the way this is currently implemented any TeX in an inline code will get rendered, but code
     // inline of TeX will not. Seems like an okay tradeoff until a proper refactor and cleanup can be done.
