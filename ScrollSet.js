@@ -100,7 +100,7 @@ name `
     })
   }
 
-  buildGrammarFileCommand() {
+  buildParsersFile() {
     const code = `node_modules/scroll-cli/parsers/cellTypes.parsers
 node_modules/scroll-cli/parsers/root.parsers
 node_modules/scroll-cli/parsers/comments.parsers

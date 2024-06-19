@@ -33,7 +33,7 @@ const delimiter = `|_$^`
 const quickTree = (rows, header) => `table ${delimiter}
  ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
-// todo: move to grammar
+// todo: move to Parsers
 const languageTags = new Set(
   `assembly
 barCodeFormat
@@ -81,7 +81,7 @@ yamlFormat`.split("\n")
 )
 const isLanguage = tag => languageTags.has(tag)
 
-// Todo: move to Grammar with an enum concept?
+// Todo: move to Parsers with an enum concept?
 const tagNames = new TreeNode(`application
 assembly assembly language
 binaryDataFormat
@@ -1852,7 +1852,7 @@ class Tables {
       "css",
       "scrollnotation",
       "scroll",
-      "grammar",
+      "parsers",
       "python",
       "bash",
       "markdown",
