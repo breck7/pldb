@@ -802,7 +802,7 @@ const measures = [
   },
   {
     "Name": "oldName",
-    "Values": 65,
+    "Values": 70,
     "Coverage": "1%",
     "Question": "What is the old name of this language?",
     "Example": "ML-flavoured Erlang",

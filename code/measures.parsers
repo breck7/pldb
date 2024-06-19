@@ -83,7 +83,7 @@ abstractCodeMeasureParser
 
 abstractRelationshipParser
  extends abstractConceptEdgesMeasureParser
- // todo: remove need for sortKey in Grammar
+ // todo: remove need for sortKey in Parsers
  string sortKey abstractRelationshipParser
  boolean isLinks true
 abstractFilenameRelationshipParser
@@ -170,7 +170,7 @@ canWriteToDiskParser
 abstractChatUrlMeasureParser
  description What is a URL to a chat room about the language?
  extends abstractUrlMeasureParser
- // todo remove the need for the below from grammar
+ // todo remove the need for the below from Parsers
  string sortKey abstractChatUrlMeasureParser
 
 // cheatSheetUrl
@@ -521,7 +521,7 @@ gdbSupportParser
 // git
 abstractGitRepoUrlMeasureParser
  extends abstractUrlMeasureParser
- // todo remove the need for the below from grammar
+ // todo remove the need for the below from Parsers
  string sortKey abstractGitRepoUrlMeasureParser
  float sortIndex 4
 
@@ -2541,7 +2541,7 @@ domainNameParser
   string sourceDomain aws.amazon.com
 
 // wikipedia
-// todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
+// todo Scoping by file in Parsers would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaParser
  float sortIndex 9
  inScope fileExtensionsParser exampleParser

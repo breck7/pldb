@@ -3,10 +3,10 @@ const path = require("path")
 const { Disk } = require("../products/Disk.node.js")
 const { Utils } = require("../products/Utils.js")
 const { TreeNode } = require("../products/TreeNode.js")
-const { HandGrammarProgram } = require("../products/GrammarLanguage.js")
-const grammarParser = require("../products/grammar.nodejs.js")
+const { HandParsersProgram } = require("../products/Parsers.js")
+const parsersParser = require("../products/parsers.nodejs.js")
 const { posix } = require("../products/Path.js")
-const GRAMMAR_EXTENSION = ".grammar"
+const PARSERS_EXTENSION = ".parsers"
 const parserRegex = /^[a-zA-Z0-9_]+Parser/gm
 // A regex to check if a multiline string has a line that starts with "import ".
 const importRegex = /^import /gm
@@ -69,7 +69,7 @@ class TreeFileSystem {
     this._treeCache = {}
     this._parserCache = {}
     this._expandedImportCache = {}
-    this._grammarExpandersCache = {}
+    this._parsersExpandersCache = {}
     if (inMemoryFiles) this._storage = new MemoryWriter(inMemoryFiles)
     else this._storage = new DiskWriter()
   }
@@ -103,15 +103,17 @@ class TreeFileSystem {
     if (_expandedImportCache[absoluteFilePath]) return _expandedImportCache[absoluteFilePath]
     let code = this.read(absoluteFilePath)
     const isImportOnly = importOnlyRegex.test(code)
-    // Strip any parsers
-    const stripIt = code.includes("// parsersOnly") // temporary perf hack
-    if (stripIt)
+    // Perf hack
+    // If its a parsers file, it will have no content, just parsers (and maybe imports).
+    // The parsers will already have been processed. We can skip them
+    const stripParsers = absoluteFilePath.endsWith(PARSERS_EXTENSION)
+    if (stripParsers)
       code = code
         .split("\n")
         .filter(line => line.startsWith("import "))
         .join("\n")
     const filepathsWithParserDefinitions = []
-    if (this._doesFileHaveGrammarDefinitions(absoluteFilePath)) filepathsWithParserDefinitions.push(absoluteFilePath)
+    if (this._doesFileHaveParsersDefinitions(absoluteFilePath)) filepathsWithParserDefinitions.push(absoluteFilePath)
     if (!importRegex.test(code))
       return {
         afterImportPass: code,
@@ -142,37 +144,38 @@ class TreeFileSystem {
       importFilePaths,
       isImportOnly,
       afterImportPass: combinedLines,
-      filepathsWithParserDefinitions: importFilePaths.filter(filename => this._doesFileHaveGrammarDefinitions(filename)).concat(filepathsWithParserDefinitions)
+      filepathsWithParserDefinitions: importFilePaths.filter(filename => this._doesFileHaveParsersDefinitions(filename)).concat(filepathsWithParserDefinitions)
     }
     return _expandedImportCache[absoluteFilePath]
   }
-  _doesFileHaveGrammarDefinitions(absoluteFilePath) {
+  _doesFileHaveParsersDefinitions(absoluteFilePath) {
     if (!absoluteFilePath) return false
-    const { _grammarExpandersCache } = this
-    if (_grammarExpandersCache[absoluteFilePath] === undefined) _grammarExpandersCache[absoluteFilePath] = !!this._storage.read(absoluteFilePath).match(parserRegex)
-    return _grammarExpandersCache[absoluteFilePath]
+    const { _parsersExpandersCache } = this
+    if (_parsersExpandersCache[absoluteFilePath] === undefined) _parsersExpandersCache[absoluteFilePath] = !!this._storage.read(absoluteFilePath).match(parserRegex)
+    return _parsersExpandersCache[absoluteFilePath]
   }
-  _getOneGrammarParserFromFiles(filePaths, baseGrammarCode) {
+  _getOneParsersParserFromFiles(filePaths, baseParsersCode) {
     const parserDefinitionRegex = /^[a-zA-Z0-9_]+Parser/
+    const cellDefinitionRegex = /^[a-zA-Z0-9_]+Cell/
     const asOneFile = filePaths
       .map(filePath => {
         const content = this._storage.read(filePath)
-        if (filePath.endsWith(GRAMMAR_EXTENSION)) return content
+        if (filePath.endsWith(PARSERS_EXTENSION)) return content
         // Strip scroll content
         return new TreeNode(content)
-          .filter(node => node.getLine().match(parserDefinitionRegex))
+          .filter(node => node.getLine().match(parserDefinitionRegex) || node.getLine().match(cellDefinitionRegex))
           .map(node => node.asString)
           .join("\n")
       })
       .join("\n")
       .trim()
-    // todo: clean up scrollsdk so we are using supported methods (perhaps add a formatOptions that allows you to tell Grammar not to run prettier on js nodes)
-    return new grammarParser(baseGrammarCode + "\n" + asOneFile)._sortNodesByInScopeOrder()._sortWithParentParsersUpTop()
+    // todo: clean up scrollsdk so we are using supported methods (perhaps add a formatOptions that allows you to tell Parsers not to run prettier on js nodes)
+    return new parsersParser(baseParsersCode + "\n" + asOneFile)._sortNodesByInScopeOrder()._sortWithParentParsersUpTop()
   }
   get parsers() {
-    return Object.values(this._parserCache).map(parser => parser.grammarParser)
+    return Object.values(this._parserCache).map(parser => parser.parsersParser)
   }
-  getParser(filePaths, baseGrammarCode = "") {
+  getParser(filePaths, baseParsersCode = "") {
     const { _parserCache } = this
     const key = filePaths
       .filter(fp => fp)
@@ -180,19 +183,19 @@ class TreeFileSystem {
       .join("\n")
     const hit = _parserCache[key]
     if (hit) return hit
-    const grammarParser = this._getOneGrammarParserFromFiles(filePaths, baseGrammarCode)
-    const grammarCode = grammarParser.asString
+    const parsersParser = this._getOneParsersParserFromFiles(filePaths, baseParsersCode)
+    const parsersCode = parsersParser.asString
     _parserCache[key] = {
-      grammarParser,
-      grammarCode,
-      parser: new HandGrammarProgram(grammarCode).compileAndReturnRootParser()
+      parsersParser,
+      parsersCode,
+      parser: new HandParsersProgram(parsersCode).compileAndReturnRootParser()
     }
     return _parserCache[key]
   }
   assembleFile(absoluteFilePath, defaultParserCode) {
     const assembledFile = this._assembleFile(absoluteFilePath)
     if (!defaultParserCode) return assembledFile
-    // BUILD CUSTOM COMPILER, IF THERE ARE CUSTOM GRAMMAR NODES DEFINED
+    // BUILD CUSTOM COMPILER, IF THERE ARE CUSTOM PARSERS NODES DEFINED
     if (assembledFile.filepathsWithParserDefinitions.length) assembledFile.parser = this.getParser(assembledFile.filepathsWithParserDefinitions, defaultParserCode).parser
     return assembledFile
   }

@@ -2,10 +2,10 @@
 {
   const { Utils } = require("./Utils.js")
   const { TreeNode } = require("./TreeNode.js")
-  const { HandGrammarProgram } = require("./GrammarLanguage.js")
-  const { GrammarBackedNode } = require("./GrammarLanguage.js")
+  const { HandParsersProgram } = require("./Parsers.js")
+  const { ParserBackedNode } = require("./Parsers.js")
 
-  class stampParser extends GrammarBackedNode {
+  class stampParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(errorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { "#!": hashbangParser, file: fileParser, folder: folderParser }), undefined)
     }
@@ -80,7 +80,7 @@
       const pathStartIndex = rootFolderPath.length + 1
       return files.map(file => fileFn(file, file.substr(pathStartIndex))).join("\n")
     }
-    static cachedHandGrammarProgramRoot = new HandGrammarProgram(`// todo File permissions
+    static cachedHandParsersProgramRoot = new HandParsersProgram(`// todo File permissions
 
 // Cell parsers
 anyCell
@@ -103,7 +103,7 @@ keywordCell
 // Line parsers
 stampParser
  root
- description A prefix Tree Language for creating distributable text template files that expand to folders and files.
+ description A prefix Language for creating distributable text template files that expand to folders and files.
  catchAllParser errorParser
  javascript
   async executeSeries(parentDir) {
@@ -235,13 +235,13 @@ folderParser
    fs.mkdirSync(path, {recursive: true})
   }
  crux folder`)
-    get handGrammarProgram() {
-      return this.constructor.cachedHandGrammarProgramRoot
+    get handParsersProgram() {
+      return this.constructor.cachedHandParsersProgramRoot
     }
     static rootParser = stampParser
   }
 
-  class hashbangParser extends GrammarBackedNode {
+  class hashbangParser extends ParserBackedNode {
     get commentCell() {
       return this.getWord(0)
     }
@@ -250,7 +250,7 @@ folderParser
     }
   }
 
-  class catchAllAnyLineParser extends GrammarBackedNode {
+  class catchAllAnyLineParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(catchAllAnyLineParser, undefined, undefined)
     }
@@ -262,7 +262,7 @@ folderParser
     }
   }
 
-  class dataParser extends GrammarBackedNode {
+  class dataParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(catchAllAnyLineParser, undefined, undefined)
     }
@@ -271,19 +271,19 @@ folderParser
     }
   }
 
-  class errorParser extends GrammarBackedNode {
+  class errorParser extends ParserBackedNode {
     getErrors() {
       return this._getErrorParserErrors()
     }
   }
 
-  class executableParser extends GrammarBackedNode {
+  class executableParser extends ParserBackedNode {
     get keywordCell() {
       return this.getWord(0)
     }
   }
 
-  class fileParser extends GrammarBackedNode {
+  class fileParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(undefined, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { data: dataParser, executable: executableParser }), undefined)
     }
@@ -313,7 +313,7 @@ folderParser
     }
   }
 
-  class folderParser extends GrammarBackedNode {
+  class folderParser extends ParserBackedNode {
     get keywordCell() {
       return this.getWord(0)
     }

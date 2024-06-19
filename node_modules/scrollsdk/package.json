@@ -1,6 +1,6 @@
 {
   "name": "scrollsdk",
-  "version": "78.0.0",
+  "version": "80.0.0",
   "description": "This npm package includes the Scroll Notation class, the Scroll Parser compiler-compiler, a Scroll IDE, and more, all implemented in TypeScript.",
   "types": "./built/scrollsdk.node.d.ts",
   "main": "./products/TreeNode.js",
@@ -16,9 +16,9 @@
   },
   "files": [
     "products/Disk.node.js",
-    "products/grammar.nodejs.js",
-    "products/GrammarCompiler.js",
-    "products/GrammarLanguage.js",
+    "products/parsers.nodejs.js",
+    "products/ParsersCompiler.js",
+    "products/Parsers.js",
     "products/hakon.nodejs.js",
     "products/Path.js",
     "products/stamp.nodejs.js",

@@ -1,16 +1,17 @@
 import ../code/conceptPage.scroll
 
-id grammar
-name Grammar
+id parsers
+name Parsers
 appeared 2017
 creators Breck Yunits
 tags grammarLanguage compiler
-website https://sdk.scroll.pub/langs/grammar/
-releaseNotes https://sdk.scroll.pub/langs/grammar/
+website https://sdk.scroll.pub/langs/parsers/
+releaseNotes https://sdk.scroll.pub/langs/parsers/
 latestVersion 77.1.0
+oldName Grammar
 webRepl https://sdk.scroll.pub/designer/
-roadmap https://sdk.scroll.pub/langs/grammar/
-conceptDescription Grammar is a Tree Language for creating new Tree Languages. A compiler compiler. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
+roadmap https://sdk.scroll.pub/langs/parsers/
+conceptDescription Parsers is a language for building on top of Scroll Notation. A compiler compiler. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Parsers uses both postfix and prefix language features.
 
 isPublicDomain true
 isOpenSource true

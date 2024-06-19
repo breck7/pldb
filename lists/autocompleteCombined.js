@@ -1012,11 +1012,6 @@ var autocompleteJs = [
     "url": "/concepts/fstar.html"
   },
   {
-    "label": "Redis",
-    "id": "redis",
-    "url": "/concepts/redis.html"
-  },
-  {
     "label": "IDL",
     "id": "idl",
     "url": "/concepts/idl.html"
@@ -1025,6 +1020,11 @@ var autocompleteJs = [
     "label": "SaltStack",
     "id": "saltstack",
     "url": "/concepts/saltstack.html"
+  },
+  {
+    "label": "Redis",
+    "id": "redis",
+    "url": "/concepts/redis.html"
   },
   {
     "label": "Standard ML",
@@ -1242,14 +1242,14 @@ var autocompleteJs = [
     "url": "/concepts/korn-shell.html"
   },
   {
-    "label": "API Blueprint",
-    "id": "api-blueprint",
-    "url": "/concepts/api-blueprint.html"
-  },
-  {
     "label": "Eiffel",
     "id": "eiffel",
     "url": "/concepts/eiffel.html"
+  },
+  {
+    "label": "API Blueprint",
+    "id": "api-blueprint",
+    "url": "/concepts/api-blueprint.html"
   },
   {
     "label": "PEG.js",
@@ -1782,14 +1782,14 @@ var autocompleteJs = [
     "url": "/concepts/emojicode.html"
   },
   {
-    "label": "beef-lang",
-    "id": "beef",
-    "url": "/concepts/beef.html"
-  },
-  {
     "label": "DTrace",
     "id": "dtrace",
     "url": "/concepts/dtrace.html"
+  },
+  {
+    "label": "beef-lang",
+    "id": "beef",
+    "url": "/concepts/beef.html"
   },
   {
     "label": "Simple Binary Encoding",
@@ -1877,14 +1877,14 @@ var autocompleteJs = [
     "url": "/concepts/cuelang.html"
   },
   {
-    "label": "NumPy",
-    "id": "numpy",
-    "url": "/concepts/numpy.html"
-  },
-  {
     "label": "OWL",
     "id": "owl",
     "url": "/concepts/owl.html"
+  },
+  {
+    "label": "NumPy",
+    "id": "numpy",
+    "url": "/concepts/numpy.html"
   },
   {
     "label": "Zuo",
@@ -2082,14 +2082,14 @@ var autocompleteJs = [
     "url": "/concepts/hhvm.html"
   },
   {
-    "label": "GLSL",
-    "id": "glsl",
-    "url": "/concepts/glsl.html"
-  },
-  {
     "label": "SOAP",
     "id": "soap",
     "url": "/concepts/soap.html"
+  },
+  {
+    "label": "GLSL",
+    "id": "glsl",
+    "url": "/concepts/glsl.html"
   },
   {
     "label": "ALGOL 60",
@@ -2537,6 +2537,11 @@ var autocompleteJs = [
     "url": "/concepts/papyrus.html"
   },
   {
+    "label": "Parsers",
+    "id": "parsers",
+    "url": "/concepts/parsers.html"
+  },
+  {
     "label": "ATS",
     "id": "ats",
     "url": "/concepts/ats.html"
@@ -2635,11 +2640,6 @@ var autocompleteJs = [
     "label": "fay",
     "id": "fay",
     "url": "/concepts/fay.html"
-  },
-  {
-    "label": "Grammar",
-    "id": "grammar",
-    "url": "/concepts/grammar.html"
   },
   {
     "label": "Latte",
@@ -2872,11 +2872,6 @@ var autocompleteJs = [
     "url": "/concepts/xl-lang.html"
   },
   {
-    "label": "SourcePawn",
-    "id": "sourcepawn",
-    "url": "/concepts/sourcepawn.html"
-  },
-  {
     "label": "Lasso",
     "id": "lasso",
     "url": "/concepts/lasso.html"
@@ -2890,6 +2885,11 @@ var autocompleteJs = [
     "label": "LilyPond",
     "id": "lilypond",
     "url": "/concepts/lilypond.html"
+  },
+  {
+    "label": "SourcePawn",
+    "id": "sourcepawn",
+    "url": "/concepts/sourcepawn.html"
   },
   {
     "label": "PAWN",
@@ -3577,14 +3577,14 @@ var autocompleteJs = [
     "url": "/concepts/egison.html"
   },
   {
-    "label": "Alloy",
-    "id": "alloy",
-    "url": "/concepts/alloy.html"
-  },
-  {
     "label": "Max",
     "id": "max",
     "url": "/concepts/max.html"
+  },
+  {
+    "label": "Alloy",
+    "id": "alloy",
+    "url": "/concepts/alloy.html"
   },
   {
     "label": "Desmos",
@@ -3902,11 +3902,6 @@ var autocompleteJs = [
     "url": "/concepts/autolisp.html"
   },
   {
-    "label": "C shell",
-    "id": "c-shell",
-    "url": "/concepts/c-shell.html"
-  },
-  {
     "label": "OX",
     "id": "ox",
     "url": "/concepts/ox.html"
@@ -3915,6 +3910,11 @@ var autocompleteJs = [
     "label": "Augmented Backus-Naur Form",
     "id": "abnf",
     "url": "/concepts/abnf.html"
+  },
+  {
+    "label": "C shell",
+    "id": "c-shell",
+    "url": "/concepts/c-shell.html"
   },
   {
     "label": "Revolution",
@@ -3937,14 +3937,14 @@ var autocompleteJs = [
     "url": "/concepts/curv.html"
   },
   {
-    "label": "Genie",
-    "id": "genie",
-    "url": "/concepts/genie.html"
-  },
-  {
     "label": "Django",
     "id": "django",
     "url": "/concepts/django.html"
+  },
+  {
+    "label": "Genie",
+    "id": "genie",
+    "url": "/concepts/genie.html"
   },
   {
     "label": "Roslyn compiler",
@@ -5042,14 +5042,14 @@ var autocompleteJs = [
     "url": "/concepts/pic.html"
   },
   {
-    "label": "Sather",
-    "id": "sather",
-    "url": "/concepts/sather.html"
-  },
-  {
     "label": "STON",
     "id": "ston",
     "url": "/concepts/ston.html"
+  },
+  {
+    "label": "Sather",
+    "id": "sather",
+    "url": "/concepts/sather.html"
   },
   {
     "label": "Joy",
@@ -5167,11 +5167,6 @@ var autocompleteJs = [
     "url": "/concepts/gas.html"
   },
   {
-    "label": "MiniD",
-    "id": "minid",
-    "url": "/concepts/minid.html"
-  },
-  {
     "label": "psyche-c",
     "id": "psyche-c",
     "url": "/concepts/psyche-c.html"
@@ -5180,6 +5175,11 @@ var autocompleteJs = [
     "label": "Sibilant",
     "id": "sibilant",
     "url": "/concepts/sibilant.html"
+  },
+  {
+    "label": "MiniD",
+    "id": "minid",
+    "url": "/concepts/minid.html"
   },
   {
     "label": "baysick",
@@ -5382,14 +5382,14 @@ var autocompleteJs = [
     "url": "/concepts/lookml.html"
   },
   {
-    "label": "Refal",
-    "id": "refal",
-    "url": "/concepts/refal.html"
-  },
-  {
     "label": "kasaya",
     "id": "kasaya",
     "url": "/concepts/kasaya.html"
+  },
+  {
+    "label": "Refal",
+    "id": "refal",
+    "url": "/concepts/refal.html"
   },
   {
     "label": "Mech",
@@ -5957,14 +5957,14 @@ var autocompleteJs = [
     "url": "/concepts/kai.html"
   },
   {
-    "label": "Frink",
-    "id": "frink",
-    "url": "/concepts/frink.html"
-  },
-  {
     "label": "FRACTRAN",
     "id": "fractran",
     "url": "/concepts/fractran.html"
+  },
+  {
+    "label": "Frink",
+    "id": "frink",
+    "url": "/concepts/frink.html"
   },
   {
     "label": "SymPy",

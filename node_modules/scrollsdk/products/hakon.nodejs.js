@@ -2,10 +2,10 @@
 {
   const { Utils } = require("./Utils.js")
   const { TreeNode } = require("./TreeNode.js")
-  const { HandGrammarProgram } = require("./GrammarLanguage.js")
-  const { GrammarBackedNode } = require("./GrammarLanguage.js")
+  const { HandParsersProgram } = require("./Parsers.js")
+  const { ParserBackedNode } = require("./Parsers.js")
 
-  class hakonParser extends GrammarBackedNode {
+  class hakonParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(selectorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { comment: commentParser }), undefined)
     }
@@ -18,7 +18,7 @@
         .map(child => child.compile())
         .join("")
     }
-    static cachedHandGrammarProgramRoot = new HandGrammarProgram(`// Cell Parsers
+    static cachedHandParsersProgramRoot = new HandParsersProgram(`// Cell Parsers
 anyCell
 keywordCell
 commentKeywordCell
@@ -51,7 +51,7 @@ commentCell
 hakonParser
  root
  // todo Add variables?
- description A prefix Tree Language that compiles to CSS
+ description A prefix Language that compiles to CSS
  compilesTo css
  inScope commentParser
  catchAllParser selectorParser
@@ -121,13 +121,13 @@ selectorParser
   }\\n\`
   }
  cells selectorCell`)
-    get handGrammarProgram() {
-      return this.constructor.cachedHandGrammarProgramRoot
+    get handParsersProgram() {
+      return this.constructor.cachedHandParsersProgramRoot
     }
     static rootParser = hakonParser
   }
 
-  class propertyParser extends GrammarBackedNode {
+  class propertyParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(errorParser, undefined, undefined)
     }
@@ -150,7 +150,7 @@ selectorParser
     }
   }
 
-  class errorParser extends GrammarBackedNode {
+  class errorParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(errorParser, undefined, undefined)
     }
@@ -162,7 +162,7 @@ selectorParser
     }
   }
 
-  class commentParser extends GrammarBackedNode {
+  class commentParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(commentParser, undefined, undefined)
     }
@@ -174,7 +174,7 @@ selectorParser
     }
   }
 
-  class selectorParser extends GrammarBackedNode {
+  class selectorParser extends ParserBackedNode {
     createParserCombinator() {
       return new TreeNode.ParserCombinator(
         selectorParser,

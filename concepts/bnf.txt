@@ -20,7 +20,7 @@ In computer science, Backus–Naur form or Backus normal form (BNF) is a notatio
 - ANTLR grammar for BNF
 - Pygments supports syntax highlighting for BNF
 - See also: (18 related languages)ALGOL 58, Algol, ALGOL 60, Compiler-Compiler, Yacc, SYMBOL, ASCII, Regular Expressions, PL/I, PEG, ANTLR, Java, Haskell, Coco/R, GOLD, Bison, XPL, ISBN
-- 1 languages in PLDB linking to BNF: Grammar
+- 1 languages in PLDB linking to BNF: Parsers
 
 &lt;syntax&gt;         ::= &lt;rule&gt; | &lt;rule&gt; &lt;syntax&gt;
  &lt;rule&gt;           ::= &lt;opt-whitespace&gt; &quot;&lt;&quot; &lt;rule-name&gt; &quot;&gt;&quot; &lt;opt-whitespace&gt; &quot;::=&quot; &lt;opt-whitespace&gt; &lt;expression&gt; &lt;line-end&gt;

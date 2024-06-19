@@ -97,7 +97,7 @@ const parseMeasures = parser => {
   if (measureCache.get(parser)) return measureCache.get(parser)
   // Generate a fake program with one of every of the available keywords. Then parse it. Then we can easily access the meta data on the parsers
   const dummyProgram = new parser(
-    parser.cachedHandGrammarProgramRoot // is there a better method name than this?
+    parser.cachedHandParsersProgramRoot // is there a better method name than this?
       .map(node => node.getLine())
       .filter(line => line.endsWith("Parser"))
       .map(line => line.replace("Parser", ""))
@@ -230,7 +230,7 @@ class ScrollFile {
     let afterImportPass = originalScrollCode
     let parser = DefaultScrollParser
     if (absoluteFilePath) {
-      const assembledFile = fileSystem.assembleFile(absoluteFilePath, defaultScrollParser.grammarCode)
+      const assembledFile = fileSystem.assembleFile(absoluteFilePath, defaultScrollParser.parsersCode)
       // Do not build a file marked 'importOnly'
       this.shouldBuild = !assembledFile.isImportOnly
       afterImportPass = assembledFile.afterImportPass
@@ -324,7 +324,7 @@ class ScrollFile {
   }
 
   get formatted() {
-    // Todo: think this through and create the best long term strategy. Perhaps sortIndex float is a universal property on Grammar.
+    // Todo: think this through and create the best long term strategy. Perhaps sortIndex float is a universal property on Parsers.
     /* Current layout:
 [importOnly?]
 [topMatter*]
@@ -863,7 +863,7 @@ import footer.scroll
 
   _keywordsRequiringExternals(parser) {
     // todo: could be cleaned up a bit
-    if (!parser.keywordsRequiringExternals) parser.keywordsRequiringExternals = parser.cachedHandGrammarProgramRoot.filter(node => node.copyFromExternal).map(node => node.getLine().replace("Parser", ""))
+    if (!parser.keywordsRequiringExternals) parser.keywordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(node => node.copyFromExternal).map(node => node.getLine().replace("Parser", ""))
     return parser.keywordsRequiringExternals
   }
 
