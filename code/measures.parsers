@@ -1907,9 +1907,10 @@ nativeLanguageParser
  description What is the native human language for this language, if not English?
  extends abstractEnumMeasureParser
 
-firstAnnouncementParser
- description What is a URL announcing the creation or release of this language?
+paperParser
+ description What is a URL to a paper(s) by the creator(s) introducing this language?
  extends abstractUrlMeasureParser
+ float sortIndex 1.99
 
 interviewsParser
  description What is a URL(s) to an interview with the creator(s) about this language?
@@ -1930,17 +1931,6 @@ isPublicDomainParser
  description Is this public domain?
  extends abstractBooleanMeasureParser
  float sortIndex 2.0
-
-//
- announcementMethodCell
-  description Common ways languages are first announced.
-  enum pressRelease paper rfc webpage blogPost interview dissertation
-  highlightScope constant.language
-
-announcementMethodParser
- description How was the language first announced?
- extends abstractEnumMeasureParser
- cells measureNameCell stringCell
 
 // hopl
 hoplParser

@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id civet
+name Civet
+appeared 2022
+creators Daniel X Moore
+tags pl
+website https://civet.dev/
+webRepl https://civet.dev/playground
+description A TypeScript superset that favors more types and less typing
+
+writtenIn json typescript markdown javascript svg coffeescript bourne-shell yaml css html awk bash toml
+supersetOf typescript
+compilesTo typescript javascript
+influencedBy coffeescript elm livescript flow haskell perl python ruby crystal bash
+documentation https://civet.dev/reference
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 2839
+ committers 25
+ files 344
+
+discord https://discord.gg/xkrW9GebBc
+example
+ switch x
+   0
+     console.log("zero")
+   /^\s+$/
+     console.log("whitespace")
+   [{type: "text", content}, ...rest]
+     console.log("leading text", content)
+cheatSheetUrl https://civet.dev/cheatsheet
+
+githubRepo https://github.com/DanielXMoore/Civet

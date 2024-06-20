@@ -5,10 +5,9 @@ name Interleaved Notation
 appeared 2022
 creators Michael Homer
 tags pl
-spec https://michael.homer.nz/Publications/PAINT2022/InterleavedNotation-Homer2022.pdf
 screenshot interleaved-notation.png
 webRepl http://ecs.vuw.ac.nz/~mwh/demos/p22-2d-concat/
-announcementMethod paper
+paper https://michael.homer.nz/Publications/PAINT2022/InterleavedNotation-Homer2022.pdf
 conceptDescription A two-dimensional notation for programs, comprising alternating rows of functions and operands with arguments and return values indicated by physical layout,and a tool for interactive live editing of programs in this notation.
 
 relatedConcepts colorforth factor

@@ -1039,14 +1039,8 @@ ${creatorsLinks}
       facts.push(`Check out the ${groupCount} <a href="${meetup}/">${title} meetup groups</a> on Meetup.com.`)
     }
 
-    const firstAnnouncement = this.get("firstAnnouncement")
-    const announcementMethod = this.get("announcementMethod")
-    if (firstAnnouncement)
-      facts.push(
-        `<a href="${firstAnnouncement}">First announcement of</a> ${title}${
-          announcementMethod ? " via " + announcementMethod : ""
-        }`
-      )
+    const paper = this.get("paper")
+    if (paper) facts.push(`<a href="${paper}">First announcement of</a> ${title}`)
 
     const subreddit = this.get("subreddit")
     if (subreddit) {

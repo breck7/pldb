@@ -1,0 +1,96 @@
+import ../code/conceptPage.scroll
+
+id fold
+name Fold
+appeared 2016
+creators Erik Demaine and Jason S. Ku and Robert J. Lang
+tags jsonFormat
+spec https://github.com/edemaine/fold/blob/main/doc/spec.md
+conceptDescription FOLD file format for origami models, crease patterns, etc.
+paper https://erikdemaine.org/papers/FOLD_CGW2016/paper.pdf
+
+writtenIn coffeescript markdown javascript html json
+repoStats
+ firstCommit 2016
+ newestCommit 2023
+ commits 206
+ committers 7
+ files 26
+
+example
+ {
+  "file_spec": 1.1,
+  "file_creator": "fold-convert --flat-fold",
+  "file_classes": [
+    "singleModel"
+  ],
+  "frame_classes": [
+    "foldedForm"
+  ],
+  "vertices_coords": [
+    [0,0],
+    [1,0],
+    [0,0],
+    [0,1]
+  ],
+  "edges_vertices": [
+    [0,1],
+    [1,2],
+    [2,3],
+    [3,0],
+    [3,1]
+  ],
+  "edges_assignment": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "V"
+  ],
+  "edges_foldAngle": [
+    0,
+    0,
+    0,
+    0,
+    180
+  ],
+  "cpedit:page": {"xMin":0,"yMin":0,"xMax":1,"yMax":1},
+  "file_title": "diagonal",
+  "vertices_edges": [
+    [0,3],
+    [1,4,0],
+    [1,2],
+    [3,4,2]
+  ],
+  "faces_vertices": [
+    [0,1,3],
+    [1,2,3]
+  ],
+  "faces_edges": [
+    [0,4,3],
+    [1,2,4]
+  ],
+  "edges_faces": [
+    [0,null],
+    [1,null],
+    [1,null],
+    [0,null],
+    [1,0]
+  ],
+  "faces_flatFoldTransform": [
+    [[1,0,0],[0,1,0]],
+    [[0,-1,1],[-1,0,1]]
+  ],
+  "faces_flatFoldOrientation": [
+    1,
+    -1
+  ],
+  "vertices_flatUnfoldCoords": [
+    [0,0],
+    [1,0],
+    [1,1],
+    [0,1]
+  ]
+ }
+
+githubRepo https://github.com/edemaine/fold

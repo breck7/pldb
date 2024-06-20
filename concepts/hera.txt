@@ -1,0 +1,150 @@
+Hera
+====
+
+Hera is a grammar language created in 2021 by Daniel X Moore.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Daniel%20X%20Moore
+
+#2725 on PLDB
+3 Years Old
+
+git clone https://github.com/DanielXMoore/Hera
+
+- Hera is developed on GitHub
+- Hera is written in JSON, TypeScript, JavaScript, Go, CoffeeScript, Markdown, YAML, Bash, Bourne shell, Make
+
+# WIP Coffee-like lang
+
+Grammar
+  Line*
+
+Line
+  Indent Content EOL
+  Indent EOL
+
+Indent
+  &quot;  &quot;*
+
+Content
+  Statement
+  Expression
+
+Expression
+  Applied
+
+# Function application:
+# a b
+# a(b)
+# a b, c, d
+# a(b, c, d)
+Applied
+  Operated Application?
+
+Application
+  &quot;()&quot;
+  __ &quot;(&quot; ArgumentList &quot;)&quot;
+  Space+ ArgumentList
+
+ArgumentList
+  Expression (__ &quot;,&quot; __ Expression)*
+
+Operated
+  Assigned (__ BinaryOp __ Assigned)*
+  UnaryOp* Assigned
+
+Assigned
+  (Accessed __ &quot;=&quot; __)+ Expression
+  Accessed
+
+Accessed
+  Primary Access*
+
+Access
+  &quot;?&quot;? &quot;.&quot; Name
+  &quot;?&quot;? &quot;[&quot; Expression &quot;]&quot;
+
+Primary
+  &quot;(&quot; Expression &quot;)&quot;
+  Function
+  Literal
+  Name
+
+This
+  &quot;this&quot;
+  &quot;@&quot;
+
+Function
+  Parameters &quot;-&gt;&quot;
+
+Literal
+  StringValue
+  Numeric
+  &quot;true&quot;
+  &quot;false&quot;
+  &quot;null&quot;
+  &quot;undefined&quot;
+
+Parameters
+  &quot;(&quot; Name (Comma Name)+ &quot;)&quot;
+  &quot;(&quot; Name &quot;)&quot;
+  &quot;&quot;
+
+Comma
+  Space* &quot;,&quot; Space*
+
+Name
+  [$a-zA-Z_][$a-zA-Z0-9_]*
+
+BinaryOp
+  &quot;+&quot;
+  &quot;-&quot;
+  &quot;*&quot;
+  &quot;/&quot;
+  &quot;and&quot;
+  &quot;&amp;&amp;&quot;
+  &quot;or&quot;
+  &quot;||&quot;
+
+# TODO: delete, void, typeof
+UnaryOp
+  [!~+-]
+
+Statement
+  Import
+  Export
+
+Import
+  /import[^\r\n]*/
+
+Export
+  /export[^\r\n]*/
+
+Numeric
+  /\d+(?:\.\d*)?/
+
+StringValue
+  &quot;\&quot;&quot; $DoubleStringCharacter* &quot;\&quot;&quot; -&gt; $2
+  &quot;\&#39;&quot; $SingleStringCharacter* &quot;\&#39;&quot; -&gt; $2
+
+DoubleStringCharacter
+  [^&quot;\\]+
+  EscapeSequence
+
+SingleStringCharacter
+  [^&#39;\\]+
+  EscapeSequence
+
+EscapeSequence
+  $( &quot;\\&quot; . )
+
+# Required non-newline white space
+Space
+  [\t ]
+
+# Whitespace including newlines
+__
+  /\s*/
+
+# End of line
+EOL
+  /\r\n|\n|\r/

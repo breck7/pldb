@@ -1,0 +1,94 @@
+Fold
+====
+
+Fold is a json format created in 2016 by Erik Demaine and Jason S. Ku and Robert J. Lang.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Erik%20Demaine
+ https://pldb.io/concepts/../lists/creators.html#q=Jason%20S.%20Ku
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20J.%20Lang
+
+#2215 on PLDB
+8 Years Old
+
+git clone https://github.com/edemaine/fold
+
+- Fold is developed on GitHub
+- Fold specs
+ https://github.com/edemaine/fold/blob/main/doc/spec.md
+- Fold is written in CoffeeScript, Markdown, JavaScript, HTML, JSON
+- First announcement of Fold
+
+{
+ &quot;file_spec&quot;: 1.1,
+ &quot;file_creator&quot;: &quot;fold-convert --flat-fold&quot;,
+ &quot;file_classes&quot;: [
+   &quot;singleModel&quot;
+ ],
+ &quot;frame_classes&quot;: [
+   &quot;foldedForm&quot;
+ ],
+ &quot;vertices_coords&quot;: [
+   [0,0],
+   [1,0],
+   [0,0],
+   [0,1]
+ ],
+ &quot;edges_vertices&quot;: [
+   [0,1],
+   [1,2],
+   [2,3],
+   [3,0],
+   [3,1]
+ ],
+ &quot;edges_assignment&quot;: [
+   &quot;B&quot;,
+   &quot;B&quot;,
+   &quot;B&quot;,
+   &quot;B&quot;,
+   &quot;V&quot;
+ ],
+ &quot;edges_foldAngle&quot;: [
+   0,
+   0,
+   0,
+   0,
+   180
+ ],
+ &quot;cpedit:page&quot;: {&quot;xMin&quot;:0,&quot;yMin&quot;:0,&quot;xMax&quot;:1,&quot;yMax&quot;:1},
+ &quot;file_title&quot;: &quot;diagonal&quot;,
+ &quot;vertices_edges&quot;: [
+   [0,3],
+   [1,4,0],
+   [1,2],
+   [3,4,2]
+ ],
+ &quot;faces_vertices&quot;: [
+   [0,1,3],
+   [1,2,3]
+ ],
+ &quot;faces_edges&quot;: [
+   [0,4,3],
+   [1,2,4]
+ ],
+ &quot;edges_faces&quot;: [
+   [0,null],
+   [1,null],
+   [1,null],
+   [0,null],
+   [1,0]
+ ],
+ &quot;faces_flatFoldTransform&quot;: [
+   [[1,0,0],[0,1,0]],
+   [[0,-1,1],[-1,0,1]]
+ ],
+ &quot;faces_flatFoldOrientation&quot;: [
+   1,
+   -1
+ ],
+ &quot;vertices_flatUnfoldCoords&quot;: [
+   [0,0],
+   [1,0],
+   [1,1],
+   [0,1]
+ ]
+}

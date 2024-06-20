@@ -1,7 +1,7 @@
 import ../code/conceptPage.scroll
 
 id txt
-name TXT Files
+name Plain text
 appeared 1963
  // todo: figure out correct year
 tags textMarkup dataNotation
@@ -14,4 +14,5 @@ fileExtensions txt
 
 example
  A plain text file.
-// todo: is there a wikipedia page?
+
+wikipedia https://en.wikipedia.org/wiki/Text_file

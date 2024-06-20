@@ -1,0 +1,155 @@
+import ../code/conceptPage.scroll
+
+id hera
+name Hera
+appeared 2021
+creators Daniel X Moore
+tags grammarLanguage
+
+writtenIn json typescript javascript go coffeescript markdown yaml bash bourne-shell make
+fileExtensions hera
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 212
+ committers 4
+ files 90
+
+example
+ # WIP Coffee-like lang
+ 
+ Grammar
+   Line*
+ 
+ Line
+   Indent Content EOL
+   Indent EOL
+ 
+ Indent
+   "  "*
+ 
+ Content
+   Statement
+   Expression
+ 
+ Expression
+   Applied
+ 
+ # Function application:
+ # a b
+ # a(b)
+ # a b, c, d
+ # a(b, c, d)
+ Applied
+   Operated Application?
+ 
+ Application
+   "()"
+   __ "(" ArgumentList ")"
+   Space+ ArgumentList
+ 
+ ArgumentList
+   Expression (__ "," __ Expression)*
+ 
+ Operated
+   Assigned (__ BinaryOp __ Assigned)*
+   UnaryOp* Assigned
+ 
+ Assigned
+   (Accessed __ "=" __)+ Expression
+   Accessed
+ 
+ Accessed
+   Primary Access*
+ 
+ Access
+   "?"? "." Name
+   "?"? "[" Expression "]"
+ 
+ Primary
+   "(" Expression ")"
+   Function
+   Literal
+   Name
+ 
+ This
+   "this"
+   "@"
+ 
+ Function
+   Parameters "->"
+ 
+ Literal
+   StringValue
+   Numeric
+   "true"
+   "false"
+   "null"
+   "undefined"
+ 
+ Parameters
+   "(" Name (Comma Name)+ ")"
+   "(" Name ")"
+   ""
+ 
+ Comma
+   Space* "," Space*
+ 
+ Name
+   [$a-zA-Z_][$a-zA-Z0-9_]*
+ 
+ BinaryOp
+   "+"
+   "-"
+   "*"
+   "/"
+   "and"
+   "&&"
+   "or"
+   "||"
+ 
+ # TODO: delete, void, typeof
+ UnaryOp
+   [!~+-]
+ 
+ Statement
+   Import
+   Export
+ 
+ Import
+   /import[^\r\n]*/
+ 
+ Export
+   /export[^\r\n]*/
+ 
+ Numeric
+   /\d+(?:\.\d*)?/
+ 
+ StringValue
+   "\"" $DoubleStringCharacter* "\"" -> $2
+   "\'" $SingleStringCharacter* "\'" -> $2
+ 
+ DoubleStringCharacter
+   [^"\\]+
+   EscapeSequence
+ 
+ SingleStringCharacter
+   [^'\\]+
+   EscapeSequence
+ 
+ EscapeSequence
+   $( "\\" . )
+ 
+ # Required non-newline white space
+ Space
+   [\t ]
+ 
+ # Whitespace including newlines
+ __
+   /\s*/
+ 
+ # End of line
+ EOL
+   /\r\n|\n|\r/
+
+githubRepo https://github.com/DanielXMoore/Hera
