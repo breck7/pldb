@@ -7,6 +7,7 @@ creators Erik Demaine and Jason S. Ku and Robert J. Lang
 tags jsonFormat
 spec https://github.com/edemaine/fold/blob/main/doc/spec.md
 conceptDescription FOLD file format for origami models, crease patterns, etc.
+paper https://erikdemaine.org/papers/FOLD_CGW2016/paper.pdf
 
 writtenIn coffeescript markdown javascript html json
 repoStats
@@ -93,5 +94,3 @@ example
  }
 
 githubRepo https://github.com/edemaine/fold
-
-paper https://erikdemaine.org/papers/FOLD_CGW2016/paper.pdf
