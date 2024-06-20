@@ -14,7 +14,8 @@ conceptDescription Scroll is a language for scientists of all ages. Scroll has a
 
 isPublicDomain true
 isOpenSource true
-writtenIn javascript yaml css json
+writtenIn parsers scrollnotation javascript yaml css json
+compilesTo html csv tsv json rss txt
 influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordpress tex mathematica dplyr antlr reactjs
 subsetOf scrollnotation
 relatedConcepts markdown scrollnotation parsers
