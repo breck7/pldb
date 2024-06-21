@@ -1672,7 +1672,7 @@ class Tables {
       let nameCol = `<a name='${anchorTag}' />${name}`
       const links = {
         git: person.gits,
-        home: person.website,
+        home: person.homepage,
         twitter: person.twitter,
         wikipedia: person.wikipedia
       }
