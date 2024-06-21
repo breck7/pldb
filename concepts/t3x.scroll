@@ -3,11 +3,22 @@ import ../code/conceptPage.scroll
 id t3x
 name T3X
 appeared 1995
+creators Nils M Holm
 tags pl
 website http://www.t3x.org/
+conceptDescription T3X is a small, portable, procedural, block-structured, recursive, almost typeless, and to some degree object-oriented programming language. Its syntax is similar to Pascal, its semantics resembles BCPL's.
 
-centralPackageRepositoryCount 0
+documentation https://www.t3x.org/t3x/t3x.html
 reference https://news.ycombinator.com/item?id=14273177
+
+example
+ USE t3x: t;
+ DO t.write(T3X.SYSOUT, "Hello, World!\n", 14); END
+
+lineCommentToken !
+
+hasLineComments true
+ DO END  ! Do nothing
 
 hopl https://hopl.info/showlanguage.prx?exp=2549
 
@@ -15,5 +26,3 @@ domainName t3x.org
  registered 2000
  awisRank
   2022 11921361
-
-semanticScholar 0
