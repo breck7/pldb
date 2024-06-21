@@ -20,11 +20,11 @@
   },
   {
     "id": "Patrick Michaud",
-    "website": "https://pmichaud.com/"
+    "homepage": "https://pmichaud.com/"
   },
   {
     "id": "Breck Yunits",
-    "website": "https://breckyunits.com",
+    "homepage": "https://breckyunits.com",
     "gits": "https://github.com/breck7",
     "twitter": "https://twitter.com/breckyunits",
     "born": 1984
@@ -51,7 +51,7 @@
   },
   {
     "id": "Hadley Wickham",
-    "website": "https://hadley.nz/",
+    "homepage": "https://hadley.nz/",
     "gits": "https://github.com/hadley",
     "twitter": "https://x.com/hadleywickham",
     "born": 1979,
@@ -77,12 +77,12 @@
   },
   {
     "id": "Bernat Romagosa",
-    "website": "http://romagosa.work/",
+    "homepage": "http://romagosa.work/",
     "gits": "https://github.com/bromagosa"
   },
   {
     "id": "Yasmin Kafai",
-    "website": "https://www.yasminkafai.com/",
+    "homepage": "https://www.yasminkafai.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Yasmin_Kafai"
   },
   {
@@ -92,7 +92,7 @@
   },
   {
     "id": "Jeffrey Heer",
-    "website": "https://homes.cs.washington.edu/~jheer/",
+    "homepage": "https://homes.cs.washington.edu/~jheer/",
     "gits": "https://github.com/jheer",
     "twitter": "https://x.com/jeffrey_heer",
     "born": 1979,
@@ -100,6 +100,8 @@
   },
   {
     "id": "Anders Hejlsberg",
+    "gits": "https://github.com/ahejlsberg",
+    "twitter": "https://x.com/ahejlsberg",
     "born": 1960,
     "wikipedia": "https://en.wikipedia.org/wiki/Anders_Hejlsberg"
   },
@@ -135,7 +137,7 @@
   },
   {
     "id": "Lingdong Huang",
-    "website": "https://lingdong.works/",
+    "homepage": "https://lingdong.works/",
     "gits": "https://github.com/LingDong-/",
     "twitter": "https://x.com/LingdongH",
     "born": 1997
@@ -147,11 +149,12 @@
   },
   {
     "id": "Jose E. Marchesi",
-    "website": "https://www.jemarch.net/",
+    "homepage": "https://www.jemarch.net/",
     "born": 1980
   },
   {
     "id": "Bjarne Stroustrup",
+    "homepage": "https://www.stroustrup.com/",
     "born": 1950,
     "wikipedia": "https://en.wikipedia.org/wiki/Bjarne_Stroustrup"
   },
@@ -162,6 +165,8 @@
   },
   {
     "id": "Brendan Eich",
+    "homepage": "https://brendaneich.com/",
+    "twitter": "https://x.com/BrendanEich",
     "born": 1961,
     "wikipedia": "https://en.wikipedia.org/wiki/Brendan_Eich"
   },
@@ -182,7 +187,7 @@
   },
   {
     "id": "Marshall Lochbaum",
-    "website": "https://mlochbaum.github.io/",
+    "homepage": "https://mlochbaum.github.io/",
     "gits": "https://github.com/mlochbaum"
   },
   {
@@ -196,18 +201,18 @@
   },
   {
     "id": "Kartik Chandra",
-    "website": "https://cs.stanford.edu/~kach/",
+    "homepage": "https://cs.stanford.edu/~kach/",
     "gits": "https://github.com/kach",
     "twitter": "https://x.com/_k_a_c_h_"
   },
   {
     "id": "Michael Sperberg-McQueen",
-    "website": "http://cmsmcq.com/",
+    "homepage": "http://cmsmcq.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Michael_Sperberg-McQueen"
   },
   {
     "id": "John W. Cowan",
-    "website": "http://vrici.lojban.org/~cowan/",
+    "homepage": "http://vrici.lojban.org/~cowan/",
     "wikipedia": "https://en.wikipedia.org/wiki/John_W._Cowan"
   },
   {
@@ -217,7 +222,7 @@
   },
   {
     "id": "Fredrik Kjolstad",
-    "website": "https://fredrikbk.com/",
+    "homepage": "https://fredrikbk.com/",
     "gits": "https://github.com/fredrikbk"
   },
   {
@@ -227,7 +232,7 @@
   },
   {
     "id": "Alex Beregszaszi",
-    "website": "https://rtfs.hu/",
+    "homepage": "https://rtfs.hu/",
     "gits": "https://github.com/axic",
     "twitter": "https://x.com/alexberegszaszi"
   },
@@ -268,7 +273,7 @@
   },
   {
     "id": "Chris Lattner",
-    "website": "https://www.nondot.org/sabre/",
+    "homepage": "https://www.nondot.org/sabre/",
     "gits": "https://github.com/lattner",
     "twitter": "https://x.com/clattner_llvm",
     "born": 1978,
@@ -286,7 +291,7 @@
   },
   {
     "id": "Chris Pearson",
-    "website": "https://www.chrispsn.com/",
+    "homepage": "https://www.chrispsn.com/",
     "gits": "https://github.com/chrispsn",
     "twitter": "https://x.com/kcodetweets"
   },
@@ -302,7 +307,7 @@
   },
   {
     "id": "Daniel X Moore",
-    "website": "https://danielx.net/",
+    "homepage": "https://danielx.net/",
     "twitter": "https://x.com/DanielXMoore"
   },
   {
@@ -337,7 +342,7 @@
   },
   {
     "id": "Erik Demaine",
-    "website": "https://erikdemaine.org/",
+    "homepage": "https://erikdemaine.org/",
     "gits": "https://github.com/edemaine"
   },
   {
@@ -347,11 +352,12 @@
   },
   {
     "id": "Andrey Zholos",
-    "website": "http://althenia.net/",
+    "homepage": "http://althenia.net/",
     "gits": "https://github.com/zholos"
   },
   {
     "id": "Dennis Ritchie",
+    "homepage": "https://www.bell-labs.com/usr/dmr/www/",
     "born": 1941,
     "wikipedia": "https://en.wikipedia.org/wiki/Dennis_Ritchie"
   },
@@ -362,7 +368,7 @@
   },
   {
     "id": "Ellie Kanning-Dawn",
-    "website": "https://ekdawn.com/about#bio"
+    "homepage": "https://ekdawn.com/about#bio"
   },
   {
     "id": "Don Syme",
@@ -371,7 +377,7 @@
   },
   {
     "id": "Marina Fernández de Retana",
-    "website": "https://anaseto.codeberg.page/"
+    "homepage": "https://anaseto.codeberg.page/"
   },
   {
     "id": "Donald D. Chamberlin",
@@ -380,17 +386,19 @@
   },
   {
     "id": "Mike Bostock",
-    "website": "https://bost.ocks.org/mike/",
+    "homepage": "https://bost.ocks.org/mike/",
     "gits": "https://github.com/mbostock",
     "twitter": "https://x.com/mbostock",
     "wikipedia": "https://en.wikipedia.org/wiki/Mike_Bostock"
   },
   {
     "id": "Peter Schaffter",
-    "website": "https://www.schaffter.ca/"
+    "homepage": "https://www.schaffter.ca/"
   },
   {
     "id": "Douglas Crockford",
+    "homepage": "https://www.crockford.com/",
+    "gits": "https://github.com/douglascrockford",
     "born": 1955,
     "wikipedia": "https://en.wikipedia.org/wiki/Douglas_Crockford"
   },
@@ -401,7 +409,7 @@
   },
   {
     "id": "Nils Holm",
-    "website": "https://www.t3x.org/"
+    "homepage": "https://www.t3x.org/"
   },
   {
     "id": "Erik Arvidsson",
@@ -410,12 +418,12 @@
   },
   {
     "id": "Aaron Boodman",
-    "website": "https://aaronboodman.com/",
+    "homepage": "https://aaronboodman.com/",
     "gits": "https://github.com/aboodman"
   },
   {
     "id": "Dwayne Richard Hipp",
-    "website": "https://www.hwaci.com/drh/index.html",
+    "homepage": "https://www.hwaci.com/drh/index.html",
     "born": 1961,
     "wikipedia": "https://en.wikipedia.org/wiki/D._Richard_Hipp"
   },
@@ -436,7 +444,7 @@
   },
   {
     "id": "Wouter Van Oortmerssen",
-    "website": "https://strlen.com/",
+    "homepage": "https://strlen.com/",
     "gits": "https://github.com/aardappel",
     "twitter": "https://x.com/wvo"
   },
@@ -457,6 +465,7 @@
   },
   {
     "id": "Guido van Rossum",
+    "homepage": "https://gvanrossum.github.io/",
     "born": 1956,
     "wikipedia": "https://en.wikipedia.org/wiki/Guido_van_Rossum"
   },
@@ -467,6 +476,7 @@
   },
   {
     "id": "Håkon Wium Lie",
+    "homepage": "https://www.wiumlie.no/",
     "born": 1965,
     "wikipedia": "https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie"
   },
@@ -477,6 +487,8 @@
   },
   {
     "id": "James Gosling",
+    "homepage": "https://nighthacks.com/",
+    "twitter": "https://x.com/errcraft",
     "born": 1955,
     "wikipedia": "https://en.wikipedia.org/wiki/James_Gosling"
   },
@@ -497,13 +509,13 @@
   },
   {
     "id": "Donald Knuth",
-    "website": "https://cs.stanford.edu/~knuth/",
+    "homepage": "https://cs.stanford.edu/~knuth/",
     "born": 1938,
     "wikipedia": "https://en.wikipedia.org/wiki/Donald_Knuth"
   },
   {
     "id": "Anthony Bonkoski",
-    "website": "https://xorvoid.com/",
+    "homepage": "https://xorvoid.com/",
     "gits": "https://github.com/xorvoid",
     "born": 1990
   },
@@ -531,17 +543,21 @@
   },
   {
     "id": "Jeremy Ashkenas",
+    "homepage": "https://ashkenas.com/",
+    "twitter": "https://x.com/jashkenas",
     "born": 1981,
     "wikipedia": "https://en.wikipedia.org/wiki/Jeremy_Ashkenas"
   },
   {
     "id": "Phil Freeman",
-    "website": "https://functorial.com/",
+    "homepage": "https://functorial.com/",
     "gits": "https://github.com/paf31",
     "twitter": "https://twitter.com/paf31"
   },
   {
     "id": "Joe Armstrong",
+    "homepage": "https://joearms.github.io",
+    "gits": "https://github.com/joearms",
     "born": 1950,
     "wikipedia": "https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)"
   },
@@ -607,25 +623,25 @@
   },
   {
     "id": "Clark Evans",
-    "website": "https://clarkevans.com/"
+    "homepage": "https://clarkevans.com/"
   },
   {
     "id": "Terence Parr",
-    "website": "https://parrt.cs.usfca.edu/",
+    "homepage": "https://parrt.cs.usfca.edu/",
     "gits": "https://github.com/parrt",
     "born": 1964,
     "wikipedia": "https://en.wikipedia.org/wiki/Terence_Parr"
   },
   {
     "id": "Steve Ruiz",
-    "website": "https://www.steveruiz.me/",
+    "homepage": "https://www.steveruiz.me/",
     "gits": "https://github.com/steveruizok",
     "twitter": "https://x.com/steveruizok",
     "born": 1987
   },
   {
     "id": "John Resig",
-    "website": "https://johnresig.com/",
+    "homepage": "https://johnresig.com/",
     "twitter": "https://x.com/jeresig",
     "born": 1984,
     "wikipedia": "https://en.wikipedia.org/wiki/John_Resig"
@@ -638,7 +654,7 @@
   },
   {
     "id": "Edwin Brady",
-    "website": "https://www.type-driven.org.uk/edwinb/",
+    "homepage": "https://www.type-driven.org.uk/edwinb/",
     "gits": "https://www.github.com/edwinb",
     "twitter": "https://www.twitter.com/edwinbrady"
   },
@@ -658,18 +674,18 @@
   },
   {
     "id": "Aseem Kishore",
-    "website": "https://aseemk.com/",
+    "homepage": "https://aseemk.com/",
     "gits": "https://github.com/aseemk",
     "twitter": "https://x.com/aseemk"
   },
   {
     "id": "Paul Tagliamonte",
-    "website": "https://pault.ag/",
+    "homepage": "https://pault.ag/",
     "gits": "https://github.com/paultag"
   },
   {
     "id": "Sanjiva Weerawarana",
-    "website": "http://sanjiva.weerawarana.org/",
+    "homepage": "http://sanjiva.weerawarana.org/",
     "gits": "https://github.com/sanjiva",
     "wikipedia": "https://en.wikipedia.org/wiki/Sanjiva_Weerawarana"
   },
@@ -684,18 +700,18 @@
   },
   {
     "id": "Thorsten Ball",
-    "website": "https://thorstenball.com/",
+    "homepage": "https://thorstenball.com/",
     "gits": "https://github.com/mrnugget",
     "twitter": "https://x.com/thorstenball"
   },
   {
     "id": "Slava Pestov",
-    "website": "https://factorcode.org/slava/",
+    "homepage": "https://factorcode.org/slava/",
     "gits": "https://github.com/slavapestov"
   },
   {
     "id": "Leonardo de Moura",
-    "website": "https://leodemoura.github.io/",
+    "homepage": "https://leodemoura.github.io/",
     "gits": "https://github.com/leodemoura"
   },
   {
@@ -705,23 +721,23 @@
   },
   {
     "id": "Leslie Lamport",
-    "website": "https://lamport.org/",
+    "homepage": "https://lamport.org/",
     "born": 1941,
     "wikipedia": "https://en.wikipedia.org/wiki/Leslie_Lamport"
   },
   {
     "id": "Urban Müller",
-    "website": "https://web.archive.org/web/20040930212131/http://wuarchive.wustl.edu/~umueller/"
+    "homepage": "https://web.archive.org/web/20040930212131/http://wuarchive.wustl.edu/~umueller/"
   },
   {
     "id": "Alon Zakai",
-    "website": "https://kripken.github.io/blog/about/",
+    "homepage": "https://kripken.github.io/blog/about/",
     "gits": "https://github.com/kripken",
     "twitter": "https://x.com/kripken"
   },
   {
     "id": "Oren Ben-Kiki",
-    "website": "http://www.ben-kiki.org/oren/",
+    "homepage": "http://www.ben-kiki.org/oren/",
     "gits": "https://github.com/orenbenkiki",
     "twitter": "https://x.com/orenbenkiki",
     "born": 1964
@@ -744,7 +760,7 @@
   },
   {
     "id": "Andrew Kelley",
-    "website": "https://andrewkelley.me/",
+    "homepage": "https://andrewkelley.me/",
     "gits": "https://github.com/andrewrk/"
   },
   {
@@ -754,19 +770,19 @@
   },
   {
     "id": "Lee Byron",
-    "website": "https://leebyron.com/",
+    "homepage": "https://leebyron.com/",
     "gits": "https://github.com/leebyron",
     "twitter": "https://twitter.com/leeb"
   },
   {
     "id": "Thierry Coquand",
-    "website": "https://www.cse.chalmers.se/~coquand/",
+    "homepage": "https://www.cse.chalmers.se/~coquand/",
     "born": 1961,
     "wikipedia": "https://en.wikipedia.org/wiki/Thierry_Coquand"
   },
   {
     "id": "Andrey Breslav",
-    "website": "https://www.abreslav.com/",
+    "homepage": "https://www.abreslav.com/",
     "twitter": "https://x.com/abreslav",
     "born": 1984
   },
@@ -777,7 +793,7 @@
   },
   {
     "id": "Tim Bray",
-    "website": "https://www.tbray.org/",
+    "homepage": "https://www.tbray.org/",
     "born": 1955,
     "wikipedia": "https://en.wikipedia.org/wiki/Tim_Bray"
   },
@@ -788,7 +804,7 @@
   },
   {
     "id": "Graydon Hoare",
-    "website": "https://graydon2.dreamwidth.org/",
+    "homepage": "https://graydon2.dreamwidth.org/",
     "gits": "https://github.com/graydon",
     "twitter": "https://x.com/graydon_pub",
     "born": 1977
@@ -800,7 +816,7 @@
   },
   {
     "id": "Larry Wall",
-    "website": "http://www.wall.org/~larry/",
+    "homepage": "http://www.wall.org/~larry/",
     "born": 1954,
     "wikipedia": "https://en.wikipedia.org/wiki/Larry_Wall"
   },
@@ -827,6 +843,7 @@
   },
   {
     "id": "Martin Odersky",
+    "homepage": "https://lampwww.epfl.ch/~odersky/",
     "born": 1958,
     "wikipedia": "https://en.wikipedia.org/wiki/Martin_Odersky"
   },
@@ -867,6 +884,7 @@
   },
   {
     "id": "Niklaus Wirth",
+    "homepage": "https://people.inf.ethz.ch/wirth/",
     "born": 1934,
     "wikipedia": "https://en.wikipedia.org/wiki/Niklaus_Wirth"
   },
@@ -907,6 +925,8 @@
   },
   {
     "id": "Rasmus Lerdorf",
+    "homepage": "https://lerdorf.com/bio/",
+    "twitter": "https://x.com/rasmus",
     "born": 1968,
     "wikipedia": "https://en.wikipedia.org/wiki/Rasmus_Lerdorf"
   },
@@ -917,6 +937,7 @@
   },
   {
     "id": "Rich Hickey",
+    "gits": "https://github.com/richhickey",
     "born": 1959,
     "wikipedia": "https://en.wikipedia.org/wiki/Rich_Hickey"
   },
@@ -932,7 +953,7 @@
   },
   {
     "id": "Rob Pike",
-    "website": "http://herpolhode.com/rob/",
+    "homepage": "http://herpolhode.com/rob/",
     "gits": "https://github.com/robpike",
     "born": 1956,
     "wikipedia": "https://en.wikipedia.org/wiki/Rob_Pike"
@@ -954,11 +975,13 @@
   },
   {
     "id": "Robert Griesemer",
+    "gits": "https://github.com/griesemer",
     "born": 1964,
     "wikipedia": "https://en.wikipedia.org/wiki/Robert_Griesemer"
   },
   {
     "id": "Roberto Ierusalimschy",
+    "homepage": "https://www.inf.puc-rio.br/~roberto/",
     "born": 1960,
     "wikipedia": "https://en.wikipedia.org/wiki/Roberto_Ierusalimschy"
   },
@@ -1004,7 +1027,7 @@
   },
   {
     "id": "Stephen Wolfram",
-    "website": "https://www.stephenwolfram.com/",
+    "homepage": "https://www.stephenwolfram.com/",
     "born": 1959,
     "wikipedia": "https://en.wikipedia.org/wiki/Stephen_Wolfram"
   },
@@ -1025,7 +1048,7 @@
   },
   {
     "id": "Travis Oliphant",
-    "website": "https://technicaldiscovery.blogspot.com/",
+    "homepage": "https://technicaldiscovery.blogspot.com/",
     "gits": "https://github.com/teoliphant",
     "twitter": "https://x.com/teoliphant",
     "born": 1971,
@@ -1038,7 +1061,7 @@
   },
   {
     "id": "Wes McKinney",
-    "website": "https://wesmckinney.com/",
+    "homepage": "https://wesmckinney.com/",
     "gits": "https://github.com/wesm",
     "twitter": "https://x.com/wesmckinn",
     "born": 1985,
@@ -1046,7 +1069,7 @@
   },
   {
     "id": "Christopher Chedeau",
-    "website": "https://blog.vjeux.com/",
+    "homepage": "https://blog.vjeux.com/",
     "gits": "https://github.com/vjeux",
     "twitter": "https://twitter.com/vjeux"
   },
@@ -1057,6 +1080,7 @@
   },
   {
     "id": "Tim Berners-Lee",
+    "twitter": "https://x.com/timberners_lee",
     "born": 1955,
     "wikipedia": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
   },
@@ -1097,6 +1121,7 @@
   },
   {
     "id": "Yukihiro Matsumoto",
+    "gits": "https://github.com/matz",
     "born": 1965,
     "wikipedia": "https://en.wikipedia.org/wiki/Yukihiro_Matsumoto"
   }
