@@ -1,0 +1,17 @@
+sparklineParser
+ description Generate a sparkline.
+ extends abstractScrollWithRequirementsParser
+ example
+  sparkline 1 2 3 4 5
+ string copyFromExternal sparkline.js
+ string requireOnce <script src="sparkline.js"></script>
+ javascript
+  compileInstance() {
+   const id = "spark" + this._getUid()
+   const data = this.content.split(" ").map(str => parseFloat(str))
+   const start = this.has("start") ? parseInt(this.get("start")) : 0
+   const width = this.get("width") || 100
+   const height = this.get("height") || 30
+   const lineColor = this.get("color") || "black"
+   return `<span id="${id}"></span><script>new Sparkline(document.getElementById("${id}"), {dotRadius: 0, width: ${width}, height: ${height}, lineColor: "${lineColor}", tooltip: (value,index) => ${start} + index + ": " + value}).draw(${JSON.stringify(data)})</script>`
+  }
