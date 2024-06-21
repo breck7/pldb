@@ -1,14 +1,23 @@
-mlite
+mLite
 =====
 
-mlite is a programming language created in 2004.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+mLite is a programming language created in 2014 by Nils M Holm.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Nils%20M%20Holm
 
-#2793 on PLDB
-20 Years Old
+#2100 on PLDB
+10 Years Old
 
-- mlite website
+- mLite website
  https://www.t3x.org/mlite/index.html
-- mlite first developed in https://www.t3x.org
-- Read more about mlite on the web: 1.
+- mLite docs
+ https://www.t3x.org/mlite/mll.pdf
+- mLite first developed in https://www.t3x.org
+- Read more about mLite on the web: 1.
  https://lobste.rs/s/ukhvbs/mlite_language
+
+;; create lists of numbers
+fun iota (a, b) where (a = b)
+                = [a]
+       | (a, b) = a :: iota (a + 1, b)
+       | a      = iota (1, a)
