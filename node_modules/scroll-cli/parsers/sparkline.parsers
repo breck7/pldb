@@ -5,6 +5,7 @@ sparklineParser
   sparkline 1 2 3 4 5
  string copyFromExternal sparkline.js
  string requireOnce <script src="sparkline.js"></script>
+ catchAllCellType numberCell
  javascript
   compileInstance() {
    const id = "spark" + this._getUid()
