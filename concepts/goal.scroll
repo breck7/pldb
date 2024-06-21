@@ -5,9 +5,13 @@ name Goal
 appeared 2022
 tags pl
 latestVersion 0.37.0
+webRepl https://anaseto.codeberg.page/try-goal/
+conceptDescription Goal is a K-like language that brings in ideas from Perl and BQN and is written in Go.
 
 writtenIn go markdown csv html css
 influencedBy apl j k
+faq https://anaseto.codeberg.page/goal-docs/chap-FAQ.html
+documentation https://anaseto.codeberg.page/goal-docs/chap-tutorial.html
 repoStats
  firstCommit 2022
  commits 1998
