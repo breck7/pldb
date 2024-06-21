@@ -3,12 +3,14 @@ import ../code/conceptPage.scroll
 id frundis
 name Frundis
 appeared 2016
+creators Marina Fernández de Retana
 tags textMarkup
 website https://bardinflor.perso.aquilenet.fr/frundis/intro-en
 conceptDescription The frundis language is a semantic markup language with a simplified roff-like syntax, originally intended for supporting authoring of novels, but it can be used for more varied stuff. It relies on the exporting capabilities of the tool frundis to LaTeX, XHTML, EPUB (2 and 3), markdown and groff mom. Only LaTeX, XHTML and EPUB output formats are considered complete and mature.
 
 writtenIn html go tex markdown xhtml xml vim-script perl css
-compilesTo latex xhtml epub markdown
+compilesTo latex xhtml epub markdown groff
+demoVideo https://www.youtube.com/watch?v=QqDOkcrh1eU
 repoStats
  firstCommit 2016
  newestCommit 2024
