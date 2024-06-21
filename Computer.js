@@ -1674,7 +1674,8 @@ class Tables {
         git: person.gits,
         home: person.homepage,
         twitter: person.twitter,
-        wikipedia: person.wikipedia
+        wikipedia: person.wikipedia,
+        self_improvement: person.interview
       }
       const linksCol = Object.keys(links)
         .filter(key => links[key])
