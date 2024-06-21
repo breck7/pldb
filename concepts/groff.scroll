@@ -7,8 +7,15 @@ tags textMarkup
 website https://www.gnu.org/software/groff/groff.html
 conceptDescription Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
 
+writtenIn bourne-shell cpp make c html m4 perl protobuf sed objective-cpp csharp css awk tex ruby forth vim-script diff
 relatedConcepts troff
 documentation https://www.gnu.org/software/groff/manual/html_node/index.html
+repoStats
+ firstCommit 1991
+ newestCommit 2024
+ commits 9804
+ committers 69
+ files 1364
 country United States
 originCommunity GNU Project
 
@@ -22,6 +29,8 @@ example
  .sp 1.5i
  My thoughts on the subject
  .sp
+
+gitRepo https://git.savannah.gnu.org/git/groff.git/
 
 lineCommentToken \" \#
 multiLineCommentTokens .ig
