@@ -22,6 +22,10 @@ bornParser
  cells measureNameCell yearCell
  extends abstractIntegerMeasureParser
  float sortIndex 1.4
+diedParser
+ cells measureNameCell yearCell
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.41
 wikipediaParser
  extends abstractUrlMeasureParser
  float sortIndex 1.6
@@ -985,7 +989,7 @@ gits https://github.com/matz
 born 1965
 wikipedia https://en.wikipedia.org/wiki/Yukihiro_Matsumoto
 
-id Cornelis "Cees" H.A. Coster
+id Cornelis H. A. Koster
 born 1943
 died 2013
 wikipedia https://en.wikipedia.org/wiki/Cornelis_H._A._Koster
