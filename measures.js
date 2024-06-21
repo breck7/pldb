@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -12,7 +12,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -23,7 +23,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 24520,
+    "Values": 24525,
     "Coverage": "499%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -34,7 +34,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 6875,
+    "Values": 6880,
     "Coverage": "140%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -44,7 +44,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -54,7 +54,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -95,7 +95,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -145,7 +145,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -155,7 +155,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1258",
@@ -165,7 +165,7 @@ const measures = [
   },
   {
     "Name": "lastActivity",
-    "Values": 24520,
+    "Values": 24525,
     "Coverage": "499%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -175,7 +175,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 5500,
+    "Values": 5505,
     "Coverage": "112%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -185,10 +185,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21093",
+    "Example": "21096",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -321,7 +321,7 @@ const measures = [
   },
   {
     "Name": "screenshot",
-    "Values": 75,
+    "Values": 80,
     "Coverage": "1%",
     "Question": "What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?",
     "Example": "activity-pub.png",
@@ -622,7 +622,7 @@ const measures = [
   {
     "Name": "githubLanguage_aceMode",
     "Values": 2600,
-    "Coverage": "53%",
+    "Coverage": "52%",
     "Question": "What is the name of the Ace Mode used for highlighting whenever a file is edited, matching one of the filenames in http://git.io/3XO_Cg, or \"text\" for everything else?",
     "Example": "text",
     "Type": "string",
@@ -762,7 +762,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 5700,
+    "Values": 5705,
     "Coverage": "116%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -842,7 +842,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -852,7 +852,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -862,7 +862,7 @@ const measures = [
   },
   {
     "Name": "inboundLinks",
-    "Values": 2020,
+    "Values": 2025,
     "Coverage": "41%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -872,7 +872,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -892,7 +892,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5480,
+    "Values": 5485,
     "Coverage": "111%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -902,7 +902,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5285,
+    "Values": 5290,
     "Coverage": "107%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -912,7 +912,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5480,
+    "Values": 5485,
     "Coverage": "111%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -922,7 +922,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5480,
+    "Values": 5485,
     "Coverage": "111%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -932,7 +932,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5465,
+    "Values": 5470,
     "Coverage": "111%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -990,7 +990,7 @@ const measures = [
   },
   {
     "Name": "conceptDescription",
-    "Values": 4955,
+    "Values": 4960,
     "Coverage": "101%",
     "Question": "What is a short description of this language?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1020,7 +1020,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 7335,
+    "Values": 7340,
     "Coverage": "149%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1040,7 +1040,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 5500,
+    "Values": 5505,
     "Coverage": "112%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1050,7 +1050,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1060,7 +1060,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1070,7 +1070,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1210,7 +1210,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 6875,
+    "Values": 6880,
     "Coverage": "140%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1220,7 +1220,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 5500,
+    "Values": 5505,
     "Coverage": "112%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1869,7 +1869,7 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 5510,
+    "Values": 5515,
     "Coverage": "112%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -3674,7 +3674,7 @@ const measures = [
   {
     "Name": "wikipedia",
     "Values": 9370,
-    "Coverage": "191%",
+    "Coverage": "190%",
     "Question": "What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?",
     "Example": "https://en.wikipedia.org/wiki/IBM_1620",
     "Type": "string",
@@ -3684,7 +3684,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3694,7 +3694,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 24525,
+    "Values": 24530,
     "Coverage": "500%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
