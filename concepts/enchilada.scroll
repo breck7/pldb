@@ -1,0 +1,18 @@
+import ../code/conceptPage.scroll
+
+id enchilada
+name Enchilada
+appeared 2006
+creators Robbert van Dalen
+tags pl
+isFinished true
+ // https://concatenative.org/wiki/view/Enchilada: "As of 20090705, work on Enchilada has stopped."
+conceptDescription Enchilada is a research project that takes one central idea to the extreme: Information cannot be destroyed.
+
+isPublicDomain true
+reference http://lambda-the-ultimate.org/node/1697
+reference https://web.archive.org/web/20180323113328/http://www.enchiladacode.nl/
+reference https://web.archive.org/web/20170106025545fw_/http://enchiladacode.nl/rationale.html
+
+example
+ 10 ~ 0 [+] {f={b={s=[b] s f * |}}} {e==e}
