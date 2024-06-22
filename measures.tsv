@@ -89,11 +89,11 @@ inboundLinksCount	9822	200%	How many other concepts link to this one?	0	number		
 inboundLinks	810	16%	Which other concepts link to this one?	explorer	string		1.9	true	
 isFinished	9822	200%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true	
 nativeLanguage	34	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false	
-repoStats_firstCommit	2198	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
-repoStats_newestCommit	2120	43%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
-repoStats_commits	2198	44%	How many commits to the repo?	871	number		1.9	false	
-repoStats_committers	2198	44%	How many committers to the repo?	28	number		1.9	false	
-repoStats_files	2192	44%	How many files in the repo?	49	number		1.9	false	
+repoStats_firstCommit	2200	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
+repoStats_newestCommit	2122	43%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
+repoStats_commits	2200	44%	How many commits to the repo?	871	number		1.9	false	
+repoStats_committers	2200	44%	How many committers to the repo?	28	number		1.9	false	
+repoStats_files	2194	44%	How many files in the repo?	49	number		1.9	false	
 equation	30	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false	
 description	0	0%	How is this language described here?				1.99	false	
 githubRepo_description	2068	42%	How is this language described here?	A concise stack-based golfing language	string		1.99	false	

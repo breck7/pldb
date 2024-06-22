@@ -892,7 +892,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 4396,
+    "Values": 4400,
     "Coverage": "89%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -902,7 +902,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 4240,
+    "Values": 4244,
     "Coverage": "86%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -912,7 +912,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 4396,
+    "Values": 4400,
     "Coverage": "89%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -922,7 +922,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 4396,
+    "Values": 4400,
     "Coverage": "89%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -932,7 +932,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 4384,
+    "Values": 4388,
     "Coverage": "89%",
     "Question": "How many files in the repo?",
     "Example": "49",
