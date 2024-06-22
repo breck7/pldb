@@ -892,7 +892,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5490,
+    "Values": 5495,
     "Coverage": "111%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -902,7 +902,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5295,
+    "Values": 5300,
     "Coverage": "107%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -912,7 +912,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5490,
+    "Values": 5495,
     "Coverage": "111%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -922,7 +922,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5490,
+    "Values": 5495,
     "Coverage": "111%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -932,7 +932,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5475,
+    "Values": 5480,
     "Coverage": "111%",
     "Question": "How many files in the repo?",
     "Example": "49",
