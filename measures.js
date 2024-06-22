@@ -175,7 +175,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 5515,
+    "Values": 5520,
     "Coverage": "112%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -1040,7 +1040,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 5515,
+    "Values": 5520,
     "Coverage": "112%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1220,7 +1220,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 5515,
+    "Values": 5520,
     "Coverage": "112%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
