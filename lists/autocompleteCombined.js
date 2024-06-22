@@ -10072,11 +10072,6 @@ var autocompleteJs = [
     "url": "/concepts/shadama.html"
   },
   {
-    "label": "holyc",
-    "id": "holyc",
-    "url": "/concepts/holyc.html"
-  },
-  {
     "label": "formality",
     "id": "formality",
     "url": "/concepts/formality.html"
@@ -10090,6 +10085,11 @@ var autocompleteJs = [
     "label": "r3",
     "id": "r3",
     "url": "/concepts/r3.html"
+  },
+  {
+    "label": "holyc",
+    "id": "holyc",
+    "url": "/concepts/holyc.html"
   },
   {
     "label": "PIC microcontroller",
@@ -10577,16 +10577,6 @@ var autocompleteJs = [
     "url": "/concepts/sp-k.html"
   },
   {
-    "label": "Explorer",
-    "id": "explorer",
-    "url": "/concepts/explorer.html"
-  },
-  {
-    "label": "Module Management System",
-    "id": "module-management-system",
-    "url": "/concepts/module-management-system.html"
-  },
-  {
     "label": "Blockly",
     "id": "blockly",
     "url": "/concepts/blockly.html"
@@ -10600,6 +10590,16 @@ var autocompleteJs = [
     "label": "ircis",
     "id": "ircis",
     "url": "/concepts/ircis.html"
+  },
+  {
+    "label": "Explorer",
+    "id": "explorer",
+    "url": "/concepts/explorer.html"
+  },
+  {
+    "label": "Module Management System",
+    "id": "module-management-system",
+    "url": "/concepts/module-management-system.html"
   },
   {
     "label": "Pascal Script",
@@ -11182,11 +11182,6 @@ var autocompleteJs = [
     "url": "/concepts/nxt-g.html"
   },
   {
-    "label": "Visual Studio Code",
-    "id": "visual-studio-code-editor",
-    "url": "/concepts/visual-studio-code-editor.html"
-  },
-  {
     "label": "Edge Side Includes",
     "id": "edge-side-includes",
     "url": "/concepts/edge-side-includes.html"
@@ -11195,6 +11190,11 @@ var autocompleteJs = [
     "label": "polymath",
     "id": "polymath",
     "url": "/concepts/polymath.html"
+  },
+  {
+    "label": "Visual Studio Code",
+    "id": "visual-studio-code-editor",
+    "url": "/concepts/visual-studio-code-editor.html"
   },
   {
     "label": "Ad-hoc",
@@ -11417,14 +11417,14 @@ var autocompleteJs = [
     "url": "/concepts/power-bi-app.html"
   },
   {
-    "label": "Tableau Software",
-    "id": "tableau-app",
-    "url": "/concepts/tableau-app.html"
-  },
-  {
     "label": "Edina",
     "id": "edina",
     "url": "/concepts/edina.html"
+  },
+  {
+    "label": "Tableau Software",
+    "id": "tableau-app",
+    "url": "/concepts/tableau-app.html"
   },
   {
     "label": "Knight",
@@ -11492,14 +11492,14 @@ var autocompleteJs = [
     "url": "/concepts/basic-programming.html"
   },
   {
-    "label": "Stripe company",
-    "id": "stripe",
-    "url": "/concepts/stripe.html"
-  },
-  {
     "label": "duro",
     "id": "duro",
     "url": "/concepts/duro.html"
+  },
+  {
+    "label": "Stripe company",
+    "id": "stripe",
+    "url": "/concepts/stripe.html"
   },
   {
     "label": "DDP",
@@ -11932,11 +11932,6 @@ var autocompleteJs = [
     "url": "/concepts/gema.html"
   },
   {
-    "label": "Jargon",
-    "id": "jargon",
-    "url": "/concepts/jargon.html"
-  },
-  {
     "label": "ABSET",
     "id": "abset",
     "url": "/concepts/abset.html"
@@ -11975,6 +11970,11 @@ var autocompleteJs = [
     "label": "PALcode",
     "id": "palcode",
     "url": "/concepts/palcode.html"
+  },
+  {
+    "label": "Jargon",
+    "id": "jargon",
+    "url": "/concepts/jargon.html"
   },
   {
     "label": "Sam Coupé",
@@ -12087,14 +12087,14 @@ var autocompleteJs = [
     "url": "/concepts/asp.net.html"
   },
   {
-    "label": "Fortran 90",
-    "id": "fortran-90",
-    "url": "/concepts/fortran-90.html"
-  },
-  {
     "label": "Windows Registry Entries",
     "id": "windows-registry-entries",
     "url": "/concepts/windows-registry-entries.html"
+  },
+  {
+    "label": "Fortran 90",
+    "id": "fortran-90",
+    "url": "/concepts/fortran-90.html"
   },
   {
     "label": "cql",
@@ -12297,14 +12297,14 @@ var autocompleteJs = [
     "url": "/concepts/smarts.html"
   },
   {
-    "label": "HDMI",
-    "id": "hdmi-standard",
-    "url": "/concepts/hdmi-standard.html"
-  },
-  {
     "label": "MML",
     "id": "man-machine-language",
     "url": "/concepts/man-machine-language.html"
+  },
+  {
+    "label": "HDMI",
+    "id": "hdmi-standard",
+    "url": "/concepts/hdmi-standard.html"
   },
   {
     "label": "Integer BASIC",
@@ -12562,14 +12562,14 @@ var autocompleteJs = [
     "url": "/concepts/spill.html"
   },
   {
-    "label": "XML Metadata Interchange",
-    "id": "xmi",
-    "url": "/concepts/xmi.html"
-  },
-  {
     "label": "Li-Chen Wang",
     "id": "li-chen-wang",
     "url": "/concepts/li-chen-wang.html"
+  },
+  {
+    "label": "XML Metadata Interchange",
+    "id": "xmi",
+    "url": "/concepts/xmi.html"
   },
   {
     "label": "DOML",
@@ -12597,14 +12597,14 @@ var autocompleteJs = [
     "url": "/concepts/newclay.html"
   },
   {
-    "label": "SHA-2",
-    "id": "sha-2-hash-function",
-    "url": "/concepts/sha-2-hash-function.html"
-  },
-  {
     "label": "PL/P",
     "id": "pl-p",
     "url": "/concepts/pl-p.html"
+  },
+  {
+    "label": "SHA-2",
+    "id": "sha-2-hash-function",
+    "url": "/concepts/sha-2-hash-function.html"
   },
   {
     "label": "Cambridge Algebra System",
@@ -13762,6 +13762,11 @@ var autocompleteJs = [
     "url": "/concepts/y-lang.html"
   },
   {
+    "label": "Broccoli",
+    "id": "broccoli",
+    "url": "/concepts/broccoli.html"
+  },
+  {
     "label": "Digital Visual Interface",
     "id": "dvi-standard",
     "url": "/concepts/dvi-standard.html"
@@ -13770,11 +13775,6 @@ var autocompleteJs = [
     "label": "Almquist shell",
     "id": "almquist-shell",
     "url": "/concepts/almquist-shell.html"
-  },
-  {
-    "label": "Broccoli",
-    "id": "broccoli",
-    "url": "/concepts/broccoli.html"
   },
   {
     "label": "Bon",
@@ -14047,11 +14047,6 @@ var autocompleteJs = [
     "url": "/concepts/lila-lang.html"
   },
   {
-    "label": "Loglan",
-    "id": "loglan",
-    "url": "/concepts/loglan.html"
-  },
-  {
     "label": "Agora",
     "id": "agora",
     "url": "/concepts/agora.html"
@@ -14085,6 +14080,11 @@ var autocompleteJs = [
     "label": "TMG",
     "id": "tmg",
     "url": "/concepts/tmg.html"
+  },
+  {
+    "label": "Loglan",
+    "id": "loglan",
+    "url": "/concepts/loglan.html"
   },
   {
     "label": "eskew",
@@ -15272,11 +15272,6 @@ var autocompleteJs = [
     "url": "/concepts/nixos.html"
   },
   {
-    "label": "WHOIS",
-    "id": "whois-protocol",
-    "url": "/concepts/whois-protocol.html"
-  },
-  {
     "label": "3APL",
     "id": "3apl",
     "url": "/concepts/3apl.html"
@@ -15320,6 +15315,11 @@ var autocompleteJs = [
     "label": "Yakou Lang",
     "id": "yakou-lang",
     "url": "/concepts/yakou-lang.html"
+  },
+  {
+    "label": "WHOIS",
+    "id": "whois-protocol",
+    "url": "/concepts/whois-protocol.html"
   },
   {
     "label": "Deb file format",
@@ -15522,21 +15522,6 @@ var autocompleteJs = [
     "url": "/concepts/trs-80-color-computer.html"
   },
   {
-    "label": "Cish",
-    "id": "cish",
-    "url": "/concepts/cish.html"
-  },
-  {
-    "label": "IBM BASIC",
-    "id": "ibm-basic",
-    "url": "/concepts/ibm-basic.html"
-  },
-  {
-    "label": "Unity3D Asset",
-    "id": "unity3d-asset",
-    "url": "/concepts/unity3d-asset.html"
-  },
-  {
     "label": "Batari Basic",
     "id": "batari-basic",
     "url": "/concepts/batari-basic.html"
@@ -15575,6 +15560,21 @@ var autocompleteJs = [
     "label": "PS-algol",
     "id": "ps-algol",
     "url": "/concepts/ps-algol.html"
+  },
+  {
+    "label": "Cish",
+    "id": "cish",
+    "url": "/concepts/cish.html"
+  },
+  {
+    "label": "IBM BASIC",
+    "id": "ibm-basic",
+    "url": "/concepts/ibm-basic.html"
+  },
+  {
+    "label": "Unity3D Asset",
+    "id": "unity3d-asset",
+    "url": "/concepts/unity3d-asset.html"
   },
   {
     "label": "Zeta",
@@ -17715,6 +17715,11 @@ var autocompleteJs = [
     "label": "8th",
     "id": "8th",
     "url": "/concepts/8th.html"
+  },
+  {
+    "label": "Ait",
+    "id": "ait",
+    "url": "/concepts/ait.html"
   },
   {
     "label": "albatross",
