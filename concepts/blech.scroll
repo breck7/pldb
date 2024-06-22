@@ -2,7 +2,7 @@ import ../code/conceptPage.scroll
 
 id blech
 name Blech
-appeared 2020
+appeared 2019
 creators Franz-Josef Grosch
 tags pl
 website https://www.blech-lang.org/
@@ -11,6 +11,12 @@ paper https://www.blech-lang.org/blog/2020/05/27/the-purpose-of-blech/
 conceptDescription Blech is a synchronous programming language for embedded, reactive, realtime-critical software. It allows writing reactive subprograms and combining them both sequentially and concurrently. Blech compiles to clean C, which may be integrated into existing projects or simulation frameworks. The name Blech ironically describes embedded hardware. It expresses that Blech programs can run directly on the Blech of pretty much any embedded device.
 
 compilesTo c
+repoStats
+ firstCommit 2019
+ newestCommit 2022
+ commits 537
+ committers 8
+ files 1122
 
 twitter https://twitter.com/BlechLanguage
 example
