@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -12,7 +12,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -23,7 +23,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -34,7 +34,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 6915,
+    "Values": 6920,
     "Coverage": "140%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -44,7 +44,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -54,7 +54,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -95,7 +95,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -145,7 +145,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -155,7 +155,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1261",
@@ -165,7 +165,7 @@ const measures = [
   },
   {
     "Name": "lastActivity",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -175,7 +175,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 5520,
+    "Values": 5525,
     "Coverage": "112%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -185,10 +185,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21118",
+    "Example": "21123",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -443,7 +443,7 @@ const measures = [
   {
     "Name": "wikipedia_summary",
     "Values": 8055,
-    "Coverage": "164%",
+    "Coverage": "163%",
     "Question": "What is the text summary of the language from the Wikipedia page?",
     "Example": "The IBM 1620 was announced by IBM on October 21, 1959, and marketed as an inexpensive \"scientific computer\". After a total production of about two thousand machines, it was withdrawn on November 19, 1970. Modified versions of the 1620 were used as the CPU of the IBM 1710 and IBM 1720 Industrial Process Control Systems (making it the first digital computer considered reliable enough for real-time process control of factory equipment). Being variable word length decimal, as opposed to fixed-word-length pure binary, made it an especially attractive first computer to learn on –  and hundreds of thousands of students had their first experiences with a computer on the IBM 1620. Core memory cycle times were 20 microseconds for the (earlier) Model I, 10 microseconds for the Model II (about a thousand times slower than typical computer main memory in 2006). The Model II was introduced in 1962.",
     "Type": "string",
@@ -493,7 +493,7 @@ const measures = [
   {
     "Name": "wikipedia_pageId",
     "Values": 8005,
-    "Coverage": "163%",
+    "Coverage": "162%",
     "Question": "What is the internal ID for this entity on WP?",
     "Example": "92577",
     "Type": "number",
@@ -762,7 +762,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 5720,
+    "Values": 5725,
     "Coverage": "116%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -842,7 +842,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -852,7 +852,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -872,7 +872,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -892,8 +892,8 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5500,
-    "Coverage": "111%",
+    "Values": 5505,
+    "Coverage": "112%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
     "Type": "number",
@@ -902,7 +902,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5305,
+    "Values": 5310,
     "Coverage": "108%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -912,8 +912,8 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5500,
-    "Coverage": "111%",
+    "Values": 5505,
+    "Coverage": "112%",
     "Question": "How many commits to the repo?",
     "Example": "871",
     "Type": "number",
@@ -922,8 +922,8 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5500,
-    "Coverage": "111%",
+    "Values": 5505,
+    "Coverage": "112%",
     "Question": "How many committers to the repo?",
     "Example": "28",
     "Type": "number",
@@ -932,7 +932,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5485,
+    "Values": 5490,
     "Coverage": "111%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -990,7 +990,7 @@ const measures = [
   },
   {
     "Name": "conceptDescription",
-    "Values": 4975,
+    "Values": 4980,
     "Coverage": "101%",
     "Question": "What is a short description of this language?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1020,7 +1020,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 7355,
+    "Values": 7360,
     "Coverage": "149%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1040,7 +1040,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 5520,
+    "Values": 5525,
     "Coverage": "112%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1050,7 +1050,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1060,7 +1060,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1070,7 +1070,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1180,7 +1180,7 @@ const measures = [
   },
   {
     "Name": "compilesTo",
-    "Values": 385,
+    "Values": 390,
     "Coverage": "7%",
     "Question": "Which language(s) does this language primarily compile to?",
     "Example": "beam-bytecode",
@@ -1210,7 +1210,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 6915,
+    "Values": 6920,
     "Coverage": "140%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1220,7 +1220,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 5520,
+    "Values": 5525,
     "Coverage": "112%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1743,7 +1743,7 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 4250,
+    "Values": 4255,
     "Coverage": "86%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -1869,7 +1869,7 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 5530,
+    "Values": 5535,
     "Coverage": "112%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -1953,7 +1953,7 @@ const measures = [
   {
     "Name": "stringToken",
     "Values": 1670,
-    "Coverage": "34%",
+    "Coverage": "33%",
     "Question": "What token(s) is used to delimit a string?",
     "Example": "\"",
     "Type": "string",
@@ -3684,7 +3684,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3694,7 +3694,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 24555,
+    "Values": 24560,
     "Coverage": "500%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

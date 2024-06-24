@@ -1,0 +1,30 @@
+import ../code/conceptPage.scroll
+
+id pegasus
+name Pegasus
+appeared 2018
+creators Daniel Fedorin
+tags grammarLanguage
+conceptDescription A parser generator for C and Crystal.
+
+writtenIn crystal ecr c yaml markdown
+compilesTo c crystal
+repoStats
+ firstCommit 2018
+ newestCommit 2023
+ commits 185
+ committers 1
+ files 67
+
+example
+ token space = / +/ [ skip ];
+ token digit = /[0-9]/;
+ token list_start = /\[/;
+ token list_end = /\]/;
+ token comma = /,/;
+ 
+ rule list = list_start list_recursive list_end;
+ rule list_recursive = digit | digit comma list_recursive;
+ 
+
+githubRepo https://github.com/DanilaFe/pegasus
