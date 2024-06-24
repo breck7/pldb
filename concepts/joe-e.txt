@@ -5,7 +5,7 @@ Joe-E is a programming language created in 2004 by David A. Wagner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
  https://pldb.io/concepts/../lists/creators.html#q=David%20A.%20Wagner
 
-#2754 on PLDB
+#2757 on PLDB
 20 Years Old
 
 Joe-E is a subset of the Java programming language intended to support programming according to object-capability discipline.The language is notable for being an early object-capability subset language.  It has influenced later subset languages, such as ADsafe and Caja/Cajita, subsets of Javascript. It is also notable for allowing methods to be verified as functionally pure, based on their method signatures.The restrictions imposed by the Joe-E verifier include:  Classes may not have mutable static fields, because these create global state. Read more on Wikipedia...
