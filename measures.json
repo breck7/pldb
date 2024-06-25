@@ -65,7 +65,7 @@
   },
   {
     "Name": "rijuRepl_website",
-    "Values": 116,
+    "Values": 112,
     "Coverage": "2%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.adaic.org/",
@@ -158,7 +158,7 @@
     "Values": 19676,
     "Coverage": "400%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1263",
+    "Example": "1264",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -980,7 +980,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 160,
+    "Values": 156,
     "Coverage": "3%",
     "Question": "How is this language described here?",
     "Example": "Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages",
@@ -1260,7 +1260,7 @@
   },
   {
     "Name": "rijuRepl_fileExtensions",
-    "Values": 156,
+    "Values": 152,
     "Coverage": "3%",
     "Question": "What are the file extensions for this language?",
     "Example": "adb ads",
@@ -1681,7 +1681,7 @@
   },
   {
     "Name": "rijuRepl",
-    "Values": 884,
+    "Values": 880,
     "Coverage": "17%",
     "Question": "What is a URL to try this language on riju.codes?",
     "Example": "https://riju.codes/abc",
@@ -1692,7 +1692,7 @@
   },
   {
     "Name": "rijuRepl_example",
-    "Values": 884,
+    "Values": 880,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "WRITE \"Hello, world!\" / ",
@@ -1902,7 +1902,7 @@
   },
   {
     "Name": "rijuRepl_gitRepo",
-    "Values": 156,
+    "Values": 152,
     "Coverage": "3%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://gcc.gnu.org/git.html",
