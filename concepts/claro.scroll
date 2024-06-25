@@ -5,7 +5,7 @@ name Claro
 appeared 2021
 creators Jason Steving
 tags pl
-website https://clarolang.com/
+website https://docs.clarolang.com/
 latestVersion v0.1.509
 
 writtenIn bazel java markdown starlark typescript json javascript css protobuf html yaml bourne-shell diff vim-script toml dockerfile
@@ -18,28 +18,15 @@ repoStats
 country United States
 originCommunity https://github.com/JasonSteving99
 
-rijuRepl https://riju.codes/claro
- example
-  # Thanks for trying out Claro during its early development stages!
-  # To learn Claro by example, check out:
-  # https://clarolang.com/tree/main/src/java/com/claro/claro_programs
-  
-  print("Hello, world!");
-  
- description High-level toy programming language providing standardized Software Engineering best practices out of the box
- fileExtensions claro
- website https://clarolang.com/
- gitRepo https://github.com/JasonSteving99/claro-lang
-
 githubRepo https://github.com/JasonSteving99/claro-lang
  firstCommit 2020
- stars 3
- forks 1
+ stars 138
+ forks 10
  subscribers 2
  created 2020
- updated 2022
+ updated 2024
  description Claro Lang
- issues 18
+ issues 11
 
 lineCommentToken #
 printToken print
