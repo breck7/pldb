@@ -1,0 +1,19 @@
+import ../code/conceptPage.scroll
+
+id decker
+name Decker
+appeared 2022
+creators John Earnest
+tags pl
+website https://beyondloom.com/decker/
+conceptDescription Decker is a multimedia platform for creating and sharing interactive documents, with sound, images, hypertext, and scripted behavior.
+
+influencedBy HyperCard Twine Bitsy
+documentation https://beyondloom.com/decker/
+country USA
+originCommunity https://beyondloom.com/decker/
+
+example
+ on click do
+  display.text: 3*display.text
+ end
