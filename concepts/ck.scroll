@@ -1,0 +1,17 @@
+import ../code/conceptPage.scroll
+
+id ck
+name cK
+appeared 2003
+creators Stevan Apter
+tags pl
+website https://nsl.com/papers/ck.htm
+conceptDescription cK is a Joy-style concatenative syntactic overlay for the K programming language.
+
+influencedBy Joy K
+documentation https://nsl.com/papers/ck.htm
+country USA
+originCommunity https://nsl.com/
+
+example
+ 10 20 30 [[`x`y`z] x y + z -] let

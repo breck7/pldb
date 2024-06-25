@@ -1,0 +1,17 @@
+import ../code/conceptPage.scroll
+
+id xy
+name XY
+appeared 2004
+creators Stevan Apter
+tags pl
+website https://nsl.com/k/xy/xy.htm
+conceptDescription XY is a family of array-oriented, concatenative programming languages with first-class continuations. XY 1 has quotations, lists, functions, and patterns. XY 2 is flat. XY 0 has quotations and shuffle-symbols but dispenses with lists and patterns.
+
+influencedBy K Joy
+documentation https://nsl.com/k/xy/xy.htm
+country USA
+originCommunity https://nsl.com/
+
+example
+ 10 ) #: [20 30] 40
