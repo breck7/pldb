@@ -1,0 +1,23 @@
+import ../code/conceptPage.scroll
+
+id earnest-lil
+name Lil
+appeared 2022
+creators John Earnest
+tags pl
+website https://beyondloom.com/decker/lil.html
+conceptDescription Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
+
+influencedBy k q sql
+documentation https://beyondloom.com/decker/lil.html
+country USA
+originCommunity https://beyondloom.com/decker/lil.html
+
+example
+ on mode a do   # line comment
+  r:()
+  each x in a
+   r[x]:1+r[x]
+  end
+  first extract key orderby value desc from r
+ end
