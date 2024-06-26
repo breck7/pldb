@@ -1,0 +1,19 @@
+related twine
+
+import ../code/conceptPage.scroll
+
+id harlowe
+name Harlowe
+creators Leon Arnott
+tags textMarkup
+conceptDescription The default Twine 2 story format.
+
+example
+ <tw-storydata startnode=1 options=debug>
+ <tw-passagedata pid=1 name=Start>(enchant:?Page,(background:white)+(color:black))[[Next]]</tw-passagedata>
+ <tw-passagedata pid=2 name=Next>[[Last]]</tw-passagedata>
+ <tw-passagedata pid=3 name=Last>**Success**</tw-passagedata>
+ </tw-storydata>
+
+gitRepo https://foss.heptapod.net/games/harlowe
+docs http://twine2.neocities.org/
