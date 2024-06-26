@@ -1,12 +1,13 @@
-related twine
-
 import ../code/conceptPage.scroll
 
 id harlowe
 name Harlowe
 creators Leon Arnott
+appeared 2020
 tags textMarkup
 conceptDescription The default Twine 2 story format.
+
+relatedConcepts twine
 
 example
  <tw-storydata startnode=1 options=debug>
@@ -16,4 +17,5 @@ example
  </tw-storydata>
 
 gitRepo https://foss.heptapod.net/games/harlowe
+
 docs http://twine2.neocities.org/

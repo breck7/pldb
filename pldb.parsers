@@ -2444,6 +2444,14 @@ creatorsParser
  catchAllCellType stringCell
  listDelimiter  and
 
+maintainersParser
+ float sortIndex 1.1021
+ extends abstractStringListMeasureParser
+ boolean alwaysRecommended true
+ description What are the name(s) of the maintainer(s) of the language delimited by " and "?
+ catchAllCellType stringCell
+ listDelimiter  and
+
 numberOfCreatorsParser
  description How many creators?
  extends abstractComputedIntMeasureParser
