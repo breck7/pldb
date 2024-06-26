@@ -2,8 +2,15 @@ import ../code/conceptPage.scroll
 
 id moose64
 name Moose64
-appeared 2020
+appeared 2024
 creators Ellie Kanning-Dawn
 tags pl
 website https://m64.horse64.org/
 conceptDescription Moose64 is like C but with pretty Horse64 syntax and basic plain OOP, for maintainable high-performance code.
+
+isOpenSource true
+writtenIn horse64 moose64
+fileExtensions m64
+fileNames horp.conf
+
+gitRepo https://codeberg.org/Horse64/m64.horse64.org
