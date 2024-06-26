@@ -1,7 +1,7 @@
-title PLDB.CSV
 buildConcepts pldb.csv pldb.json pldb.tsv pldb.js
  sortBy rank
 buildMeasures measures.tsv measures.csv measures.json measures.js
+title PLDB.CSV
 
 import rootHeader.scroll
 printTitle
