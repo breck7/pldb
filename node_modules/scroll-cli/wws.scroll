@@ -1,6 +1,6 @@
 title The World Wide Scroll
-writeConcepts wws.csv wws.json wws.tsv
-writeMeasures wwsMeasures.tsv
+buildConcepts wws.csv wws.json wws.tsv
+buildMeasures wwsMeasures.tsv
 
 import header.scroll
 printTitle

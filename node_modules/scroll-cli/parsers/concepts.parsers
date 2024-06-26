@@ -29,7 +29,7 @@ printConceptsParser
    return html
    }
 
-writeConceptsParser
+buildConceptsParser
  cruxFromId
  catchAllCellType filePathCell
  description Compiles concepts to a delimited file and write to disk.

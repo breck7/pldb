@@ -35,9 +35,9 @@ const scrollKeywords = {
   replace: "replace",
   replaceJs: "replaceJs",
   replaceNodejs: "replaceNodejs",
-  writeConcepts: "writeConcepts",
-  writeMeasures: "writeMeasures",
-  writeText: "writeText",
+  buildConcepts: "buildConcepts",
+  buildMeasures: "buildMeasures",
+  buildText: "buildText",
   conceptDelimiter: "id",
   import: "import",
   importOnly: "importOnly",
@@ -60,6 +60,12 @@ const CSV_FIELDS = ["date", "title", "permalink", "groups", "wordCount", "minute
 class ScrollFileSystem extends TreeFileSystem {
   getScrollFile(filePath) {
     return this._getParsedFile(filePath, ScrollFile)
+  }
+
+  productCache = {}
+  writeProduct(absolutePath, content) {
+    this.productCache[absolutePath] = content
+    return this.write(absolutePath, content)
   }
 
   parsedFiles = {} // Files parsed by a Tree Language Root Parser
@@ -768,7 +774,7 @@ import settings.scroll
 printFeed All
 `,
       "footer.scroll": `importOnly
-writeText
+buildText
 
 pageFooter
 `,
@@ -874,60 +880,71 @@ import footer.scroll
     return parser.keywordsRequiringExternals
   }
 
-  _copyExternalFiles(file, folder, fileSystem, externalFilesCopied) {
+  externalFilesCopied = {}
+  _copyExternalFiles(file, folder, fileSystem) {
     // If this file uses a parser that has external requirements,
     // copy those from external folder into the destination folder.
     const keywordsRequiringExternals = this._keywordsRequiringExternals(file.parser)
+    const { externalFilesCopied } = this
+    if (!externalFilesCopied[folder]) externalFilesCopied[folder] = {}
     keywordsRequiringExternals.forEach(word => {
-      if (externalFilesCopied[word]) return
+      if (externalFilesCopied[folder][word]) return
       if (file.has(word)) {
         const node = file.scrollProgram.getNode(word)
         const externalFiles = node.copyFromExternal.split(" ")
         externalFiles.forEach(name => {
           const newPath = path.join(folder, name)
-          fileSystem.write(newPath, Disk.read(path.join(__dirname, "external", name)))
+          fileSystem.writeProduct(newPath, Disk.read(path.join(__dirname, "external", name)))
           this.log(`💾 Wrote external file needed by ${file.filename} to ${name}`)
         })
-        externalFilesCopied[word] = true
+        externalFilesCopied[folder][word] = true
       }
     })
   }
 
-  _writeConceptsAndMeasures(file, folder, fileSystem) {
+  _buildConceptsAndMeasures(file, folder, fileSystem) {
     // If this proves useful maybe make slight adjustments to Scroll lang to be more imperative.
-    if (!file.has(scrollKeywords.writeConcepts)) return
+    if (!file.has(scrollKeywords.buildConcepts)) return
     const { permalink } = file
-    file.scrollProgram.findNodes(scrollKeywords.writeConcepts).forEach(node => {
+    file.scrollProgram.findNodes(scrollKeywords.buildConcepts).forEach(node => {
       const files = node.getWordsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".tsv"))
       const sortBy = node.get("sortBy")
       files.forEach(link => {
-        fileSystem.write(folder + link, file.compileConcepts(link, sortBy))
+        fileSystem.writeProduct(path.join(folder, link), file.compileConcepts(link, sortBy))
         this.log(`💾 Wrote concepts in ${file.filename} to ${link}`)
       })
     })
 
-    if (!file.has(scrollKeywords.writeMeasures)) return
-    file.scrollProgram.findNodes(scrollKeywords.writeMeasures).forEach(node => {
+    if (!file.has(scrollKeywords.buildMeasures)) return
+    file.scrollProgram.findNodes(scrollKeywords.buildMeasures).forEach(node => {
       const files = node.getWordsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".tsv"))
       const sortBy = node.get("sortBy")
       files.forEach(link => {
-        fileSystem.write(folder + link, file.compileMeasures(link, sortBy))
+        fileSystem.writeProduct(path.join(folder, link), file.compileMeasures(link, sortBy))
         this.log(`💾 Wrote measures in ${file.filename} to ${link}`)
       })
     })
   }
 
-  _writeText(file, folder, fileSystem) {
+  _buildText(file, folder, fileSystem) {
     // If this proves useful maybe make slight adjustments to Scroll lang to be more imperative.
-    if (!file.has(scrollKeywords.writeText)) return
+    if (!file.has(scrollKeywords.buildText)) return
     const { permalink } = file
-    file.scrollProgram.findNodes(scrollKeywords.writeText).forEach(node => {
+    file.scrollProgram.findNodes(scrollKeywords.buildText).forEach(node => {
       const link = node.getWord(1) || permalink.replace(".html", ".txt")
-      fileSystem.write(folder + link, file.asText)
+      fileSystem.writeProduct(path.join(folder, link), file.asText)
       this.log(`💾 Wrote ${file.filename} to text file ${link}`)
     })
+  }
+
+  _buildHtml(file, folder, fileSystem) {
+    const { permalink, html } = file
+    file.build()
+    fileSystem.writeProduct(path.join(folder, permalink), html)
+    this._copyExternalFiles(file, folder, fileSystem)
+    this.log(`💾 Wrote ${file.filename} to ${permalink}`)
   }
 
   buildFilesInFolder(fileSystem, folder = "/") {
@@ -937,26 +954,17 @@ import footer.scroll
     const filesToBuild = files.filter(file => file.shouldBuild)
     this.log(`Building ${filesToBuild.length} files from ${files.length} ${SCROLL_FILE_EXTENSION} files found in '${folder}'\n`)
     this.logIndent++
-    const pages = filesToBuild.map(file => {
-      const { permalink, html } = file
-      file.build()
-      fileSystem.write(folder + permalink, html)
-      this.log(`💾 Wrote ${file.filename} to ${permalink}`)
-
-      this._writeConceptsAndMeasures(file, folder, fileSystem)
-      this._writeText(file, folder, fileSystem)
-
-      const externalFilesCopied = {}
-      this._copyExternalFiles(file, folder, fileSystem, externalFilesCopied)
-
-      return { permalink: folder + permalink, html }
+    filesToBuild.forEach(file => {
+      this._buildHtml(file, folder, fileSystem)
+      this._buildConceptsAndMeasures(file, folder, fileSystem)
+      this._buildText(file, folder, fileSystem)
     })
     const seconds = (Date.now() - start) / 1000
     this.logIndent--
     this.log(``)
-    this.log(`⌛️ Compiled ${pages.length} files to html in ${seconds} seconds. ${lodash.round(pages.length / seconds)} pages per second\n`)
+    this.log(`⌛️ Processed ${filesToBuild.length} files in ${seconds} seconds. ${lodash.round(filesToBuild.length / seconds)} files per second\n`)
 
-    return pages
+    return fileSystem.productCache
   }
 
   listCommand(cwd) {

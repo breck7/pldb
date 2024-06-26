@@ -259,7 +259,7 @@ measureNameCell
  // A regex for column names for max compatibility with a broad range of data science tools:
  regex [a-zA-Z][a-zA-Z0-9]*
 
-writeMeasuresParser
+buildMeasuresParser
  cruxFromId
  catchAllCellType filePathCell
  description Writes measure statistics to a delimited file and write to disk.
