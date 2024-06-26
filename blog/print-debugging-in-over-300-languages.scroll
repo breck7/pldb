@@ -159,7 +159,7 @@ comment
     pldbFolder.loadFolder()
     const code = new TreeNode(
       Disk.read(
-        __dirname + "/blog/posts/does-every-programming-language-support-print-debugging.scroll"
+        __dirname + "/blog/does-every-programming-language-support-print-debugging.scroll"
       )
     )
     const tree = TreeNode.fromCsv(code.getNode("rawData").childrenToString())

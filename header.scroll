@@ -1,5 +1,5 @@
 importOnly
-rssFeedUrl https://pldb.io/posts/feed.xml
+rssFeedUrl https://pldb.io/blog/feed.xml
 
 import settings.scroll
 
@@ -67,7 +67,7 @@ stumpNoSnippet
   a Extensions
    href BASE_URL/lists/extensions.html
   a Blog
-   href BASE_URL/posts/index.html
+   href BASE_URL/blog/index.html
   a Explorer
    href BASE_URL/lists/explorer.html
   a CSV
