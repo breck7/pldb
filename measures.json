@@ -185,7 +185,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 4440,
+    "Values": 4444,
     "Coverage": "90%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -772,7 +772,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 4604,
+    "Values": 4608,
     "Coverage": "93%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -1030,7 +1030,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 5916,
+    "Values": 5920,
     "Coverage": "120%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1050,7 +1050,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 4440,
+    "Values": 4444,
     "Coverage": "90%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1230,7 +1230,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 4440,
+    "Values": 4444,
     "Coverage": "90%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1331,7 +1331,7 @@
   },
   {
     "Name": "fileExtensions",
-    "Values": 880,
+    "Values": 884,
     "Coverage": "17%",
     "Question": "What are the file extensions for this language?",
     "Example": "a51",
@@ -1859,8 +1859,8 @@
   },
   {
     "Name": "gitRepo",
-    "Values": 96,
-    "Coverage": "1%",
+    "Values": 100,
+    "Coverage": "2%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://git.savannah.gnu.org/git/bash.git",
     "Type": "string",

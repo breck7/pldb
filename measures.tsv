@@ -17,7 +17,7 @@ latestVersion	1274	25%	What is the latest version?	v1.0.0-test.3-bugfix	string		
 exampleCount	9852	200%	How many examples do we have written in this language?	2	number		1.5	true	
 rank	9852	200%	How does this concept rank amongst all other concepts?	1265	number		1.5	true	
 lastActivity	9852	200%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true	
-writtenInCount	2220	45%	How many languages is this implementation written in?	3	number		1.6	true	
+writtenInCount	2222	45%	How many languages is this implementation written in?	3	number		1.6	true	
 pldbScore	9852	200%	What is the combined score of this language across all the categories of rankings?	21176	number		1.6	true	
 meetup_memberCount	114	2%	How many people in this meetup group?	1514159	number		1.9	false	
 meetup_groupCount	114	2%	How many groups?	2707	number		1.9	false	
@@ -77,7 +77,7 @@ forLanguages	96	1%	Which languages is this repository for?	ballerina	string		1.9
 dblp	0	0%	What are publications about this language from https://dblp.org/?			dblp.org	1.9	false	
 dblp_hits	0	0%	How many matching publications?				1.9	false	
 dblp_publications	0	0%	An inline PSV table of hits.				1.9	false	
-mainRepo	2302	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
+mainRepo	2304	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
 standsFor	698	14%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false	
 aka	346	7%	What is this also known as?	4D	string		1.9	false	
 oldName	28	0%	What is the old name of this language?	ML-flavoured Erlang	string		1.9	false	
@@ -103,9 +103,9 @@ rijuRepl_description	78	1%	How is this language described here?	Structured, stat
 conceptDescription	2020	41%	What is a short description of this language?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false	
 interviews	16	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false	
 isPublicDomain	36	0%	Is this public domain?	true	boolean		2	false	
-isOpenSource	2958	60%	Is this an open source project?	true	boolean		2.01	true	
+isOpenSource	2960	60%	Is this an open source project?	true	boolean		2.01	true	
 languageServerProtocolProject_writtenIn	106	2%	What language(s) is the main implementation written in?	typescript	string		2.1	false	
-writtenIn	2220	45%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false	
+writtenIn	2222	45%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false	
 numberOfUsersEstimate	9852	200%	What is our estimate of number of users of this language?	818	number		2.1	true	
 numberOfJobsEstimate	9852	200%	What is our estimate of the number of jobs in this language?	0	number		2.1	true	
 expandedMeasurements	9852	200%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true	
@@ -123,7 +123,7 @@ compilesTo	156	3%	Which language(s) does this language primarily compile to?	bea
 inputLanguages	18	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false	
 irc	8	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false	
 numberOfCreators	2796	56%	How many creators?	1	number		2.33	true	
-isSelfHosted	2220	45%	Is the main implementation of this language written in this language?	false	boolean		2.33	true	
+isSelfHosted	2222	45%	Is the main implementation of this language written in this language?	false	boolean		2.33	true	
 latestMajorVersion	1274	25%	What is the latest major version (if using semver)?	1	number		2.33	true	
 usesSemanticVersioning	1274	25%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true	
 demoVideo	32	0%	What is a URL of a demo video of this language?	https://www.youtube.com/watch?v=qGOIt0xh0dw	string		2.4	false	
@@ -133,7 +133,7 @@ tryItOnline	266	5%	What is a link to try this language on https://tio.run?	abc	s
 githubLanguage_fileExtensions	1038	21%	What are the file extensions for this language?	bsl os	string		2.4	false	
 leachim6_fileExtensions	736	14%	What are the file extensions for this language?	abap	string		2.4	false	
 pygmentsHighlighter_fileExtensions	650	13%	What are the file extensions for this language?	abap ABAP	string		2.4	false	
-fileExtensions	440	8%	What are the file extensions for this language?	a51	string		2.4	false	
+fileExtensions	442	8%	What are the file extensions for this language?	a51	string		2.4	false	
 clocExtensions	468	9%	What are the file extensions for this language recognized by Al Danial's cloc?	abap	string		2.4	false	
 gdbSupport	26	0%	Is the language supported by the GNU Debugger?	true	boolean	sourceware.org	2.4	false	
 visualParadigm	190	3%	Is this a visual programming thing? Sometimes called "no code" or "low code"?	true	boolean		2.4	false	
@@ -184,7 +184,7 @@ languageServerProtocolProject	110	2%	What is the URL to a project implementing L
 compilerExplorer	68	1%	What is this language's name on https://godbolt.org?	Ada	string	godbolt.org	3.4	false	
 githubCopilotOptimized	14	0%	Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?	true	boolean		3.5	false	
 meetup	114	2%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false	
-gitRepo	48	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false	
+gitRepo	50	1%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false	
 specRepo	4	0%	What is the URL of the official spec for the language project?	https://github.com/whatwg/html	string		4	false	
 githubRepo	2224	45%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false	
 gitlabRepo	26	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false	

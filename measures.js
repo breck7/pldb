@@ -185,7 +185,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 5550,
+    "Values": 5555,
     "Coverage": "112%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -772,7 +772,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 5755,
+    "Values": 5760,
     "Coverage": "116%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -1030,7 +1030,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 7395,
+    "Values": 7400,
     "Coverage": "150%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1050,7 +1050,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 5550,
+    "Values": 5555,
     "Coverage": "112%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1230,7 +1230,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 5550,
+    "Values": 5555,
     "Coverage": "112%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1331,7 +1331,7 @@ const measures = [
   },
   {
     "Name": "fileExtensions",
-    "Values": 1100,
+    "Values": 1105,
     "Coverage": "22%",
     "Question": "What are the file extensions for this language?",
     "Example": "a51",
@@ -1859,7 +1859,7 @@ const measures = [
   },
   {
     "Name": "gitRepo",
-    "Values": 120,
+    "Values": 125,
     "Coverage": "2%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://git.savannah.gnu.org/git/bash.git",
