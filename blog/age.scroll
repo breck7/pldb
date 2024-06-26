@@ -1,0 +1,68 @@
+author https://github.com/breck7 Breck Yunits
+date 5/19/2024
+openGraphImage https://pldb.io/blog/age.png
+title Am I too old to create a popular programming language?
+
+import postHeader.scroll
+printTitle
+mediumColumns 1
+printAuthor
+
+Is it too late to create a popular programming language after age 40? Let's find out!
+ dateline
+
+I computed an "ageAtCreation" column for 185 programming languages in the PLDB.
+
+dashboard
+ 36 median age
+ 37.5 avg age
+dashboard
+ 16 min age
+ 70 max age
+
+image age.png
+ openGraph
+ caption Interactive Version.
+  https://www.datawrapper.de/_/4ait6/
+
+endSnippet
+
+# Programming Language Creation Peaks In Your 30's
+image ageHistogram.png
+ caption Programmers create the most languages in their 30's. Programmers in their 40's create the second most. After that it drops off fast.
+
+# Conclusion
+
+TypeScript, Go, JSON, and Clojure are a handful of very popular Top 100 languages that were created by people after age 40.
+ link ../concepts/typescript.html TypeScript
+ link ../concepts/go.html Go
+ link ../concepts/json.html JSON
+ link ../concepts/clojure.html Clojure
+
+If you are under 55, it is not unprecedented to create a popular programming language.
+
+Download the data
+ link age.tsv
+
+ohayoCode
+ html.h1 Am I too old to create a popular programming language?
+ web.get https://pldb.io/blog/age.tsv
+  vega.histogram
+   xColumn ageAtCreation
+  columns.describe
+   tables.basic
+  filter.where ageAtCreation > 50
+   columns.describe
+    tables.basic
+  filter.where ageAtCreation > 40
+   columns.describe
+    tables.basic
+  tables.basic
+  vega.scatter
+   xColumn ageAtCreation
+   yColumn pldbScore
+
+****
+
+endColumns
+import ../footer.scroll

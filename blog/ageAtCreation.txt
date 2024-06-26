@@ -1,0 +1,73 @@
+The Ages of Programming Language Creators
+=========================================
+by Breck Yunits
+
+May 19, 2024
+
+Dennis Ritchie created C when he was 31. Douglas Crockford created JSON when he was 46. Ken Iverson created J at age 70. Here is a new dataset with "ageAtCreation" for 185 programming languages.
+ https://pldb.io/blog/../concepts/c.html
+ https://pldb.io/blog/../concepts/json.html
+ https://pldb.io/blog/../concepts/j.html
+
+36 median age
+37.5 avg age
+16 min age
+70 max age
+
+[Image Omitted]
+ https://datawrapper.dwcdn.net/rT0yG/1/
+ Interactive Version.
+  https://datawrapper.dwcdn.net/rT0yG/1/
+
+No one under 20 has ever created a popular programming language
+===============================================================
+Aaron Swartz created atx at 16, which hinted at his later work with John Gruber on Markdown. Rasmus Lerdorf created PHP at age 27. Stallman created Emacs at 23.
+ https://pldb.io/blog/../concepts/atx.html
+ https://pldb.io/blog/../concepts/markdown.html
+ https://pldb.io/blog/../concepts/php.html
+ https://pldb.io/blog/../concepts/emacs-editor.html
+
+But no one under 20 ever created a top language. I find that mildly interesting.
+
+Programming Language Creation Peaks In Your 30's
+================================================
+[Image Omitted]
+ Programmers create the most languages in their 30's. Programmers in their 40's create the second most. After that it drops off.
+
+Keep on Creating
+================
+TypeScript, Go, JSON, and Clojure are a handful of very popular Top 100 languages that were created by people in their 40's and 50's.
+ https://pldb.io/blog/../concepts/typescript.html
+ https://pldb.io/blog/../concepts/go.html
+ https://pldb.io/blog/../concepts/json.html
+ https://pldb.io/blog/../concepts/clojure.html
+
+Creating your own languages is fun (most of the time), regardless of whether it catches on. But it can be even more fun to build one that catches on, and it's never too late to start something new.
+
+****
+
+Notes
+=====
+
+- Download the data
+ https://pldb.io/blog/age.tsv
+- A reddit user shared some related work ;) from 2012: The Secret of a Successful Programming Language? A Really Great Beard.
+ https://www.reddit.com/r/programming/comments/1cw2ri4/comment/l4tt60k/
+ https://archive.fo/uB8x4
+
+html.h1 The Ages of Programming Language Creators
+web.get https://pldb.io/blog/age.tsv
+ vega.histogram
+  xColumn ageAtCreation
+ columns.describe
+  tables.basic
+ filter.where ageAtCreation > 50
+  columns.describe
+   tables.basic
+ filter.where ageAtCreation > 40
+  columns.describe
+   tables.basic
+ tables.basic
+ vega.scatter
+  xColumn ageAtCreation
+  yColumn pldbScore

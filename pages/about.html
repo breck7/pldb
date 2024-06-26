@@ -12,7 +12,7 @@
  <meta property="og:title" content="About">
  <meta property="og:description" content="PLDB: a Programming Language Database. Build the next great programming language.">
  <meta property="og:image" content="">
- <link rel="alternate" type="application/rss+xml" title="About" href="https://pldb.io/posts/feed.xml">
+ <link rel="alternate" type="application/rss+xml" title="About" href="https://pldb.io/blog/feed.xml">
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
@@ -368,7 +368,7 @@ li.scrollParagraph {
  <a href="../lists/creators.html">Creators</a>
  <a href="../lists/resources.html">Resources</a>
  <a href="../lists/extensions.html">Extensions</a>
- <a href="../posts/index.html">Blog</a>
+ <a href="../blog/index.html">Blog</a>
  <a href="../lists/explorer.html">Explorer</a>
  <a href="../csv.html">CSV</a>
  <a href="../download.html">Download</a>
@@ -407,12 +407,12 @@ li.scrollParagraph {
 <div class="scrollSection"><h2 class="scrollParagraph">Cloc Stats</h2>
 <p class="scrollParagraph">Below are the <a href="../concepts/cloc.html">cloc</a> stats for the <a href="https://github.com/breck7/pldb">pldb repo</a> as of 06/26/2024.</p>
 </div>
-<div class="codeWithHeader"><div class="codeHeader">cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt</div><code class="scrollCodeBlock">github.com/AlDanial/cloc v 1.90  T=1.02 s (4923.3 files/s, 202219.5 lines/s)
+<div class="codeWithHeader"><div class="codeHeader">cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt</div><code class="scrollCodeBlock">github.com/AlDanial/cloc v 1.90  T=1.00 s (5035.4 files/s, 206825.4 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Scroll                        5011          30326              0         168224
-JavaScript                       9            496            189           2808
+JavaScript                       8            494            189           2771
 Parsers                          1            316              0           2256
 JSON                             3              2              0           1462
 Explorer                         3             23              0            336
@@ -421,7 +421,7 @@ YAML                             3              5              5             48
 Bourne Shell                     1              1              1             18
 SVG                              4              0              0              4
 -------------------------------------------------------------------------------
-SUM:                          5037          31225            213         175450
+SUM:                          5036          31223            213         175413
 -------------------------------------------------------------------------------</code></div>
 <div class="scrollSection"><h1 class="scrollParagraph">Mirrors</h1>
 <p class="scrollParagraph">The <a href="../concepts/url.html">URL</a> for the official PLDB site is <a href="https://pldb.io" target="_blank">https://pldb.io</a>. <a href="../concepts/dns.html">DNS</a> will take that domain name and send your browser an <a href="../concepts/ipv4.html">IPv4</a> address. Your browser will send a request to that address which will reach a GitHub Pages server. That server will send you the <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/javascript.html">Javascript</a>, <a href="../concepts/png.html">PNG</a>s, <a href="../concepts/svg.html">SVG</a>s and <a href="../concepts/json.html">JSON</a> that make up the built website.</p>
@@ -433,7 +433,7 @@ SUM:                          5037          31225            213         175450
 cd pldb
 git pull</code>
 <div class="scrollSection"><h2 class="scrollParagraph">History</h2>
-<ul ><li ><a href="../lists/explorer.html#q=Breck%20Yunits">Breck Yunits</a> started PLDB as an anonymous <a href="../concepts/jekyll.html">Jekyll</a> blog named "CodeLani" on <a href="../posts/hello-world.html">November 18, 2017</a>.</li>
+<ul ><li ><a href="../lists/explorer.html#q=Breck%20Yunits">Breck Yunits</a> started PLDB as an anonymous <a href="../concepts/jekyll.html">Jekyll</a> blog named "CodeLani" on <a href="../blog/hello-world.html">November 18, 2017</a>.</li>
 <li >Breck renamed <a href="https://github.com/breck7/pldb/commit/273f34a8620111e326a49332761e2c01823b58ef">CodeLani to PLDB</a> and migrated it to <a href="../concepts/scroll.html">Scroll</a> and TrueBase on June 27, 2022.</li>
 <li >The new PLDB <a href="https://news.ycombinator.com/item?id=32619671">launched</a> on HackerNews 668 days ago, on August 28, 2022.</li>
 <li >Design patterns learned from TrueBase were merged into Scroll and PLDB became a fully functional static site on May 10, 2024</li></ul>

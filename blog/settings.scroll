@@ -1,0 +1,5 @@
+importOnly
+baseUrl https://pldb.io/blog/
+replace BASE_URL ..
+rssFeedUrl feed.xml
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/blog/

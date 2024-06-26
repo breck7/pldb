@@ -1003,7 +1003,7 @@ const measures = [
     "Values": 40,
     "Coverage": "0%",
     "Question": "What is a URL(s) to an interview with the creator(s) about this language?",
-    "Example": "https://pldb.io/posts/brianKernighan.html",
+    "Example": "https://pldb.io/blog/brianKernighan.html",
     "Type": "string",
     "SortIndex": 1.999,
     "IsComputed": false
