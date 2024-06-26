@@ -7,7 +7,7 @@ replaceJs TEMPLATE
   const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
   Tables.getLanguageTemplate(absolutePath);
  }
-writeText
+buildText
 
 import measures.parsers
 
