@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -12,7 +12,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -23,7 +23,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -34,8 +34,8 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 7055,
-    "Coverage": "142%",
+    "Values": 7065,
+    "Coverage": "143%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
     "Type": "string",
@@ -54,7 +54,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -64,7 +64,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -85,7 +85,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 8490,
+    "Values": 8500,
     "Coverage": "172%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "http://www.3mf.io/specification/",
@@ -105,7 +105,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -155,7 +155,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -165,7 +165,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1268",
@@ -175,7 +175,7 @@ const measures = [
   },
   {
     "Name": "lastActivity",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -185,7 +185,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 5585,
+    "Values": 5590,
     "Coverage": "113%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -195,10 +195,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21216",
+    "Example": "21226",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -772,8 +772,8 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 5775,
-    "Coverage": "116%",
+    "Values": 5780,
+    "Coverage": "117%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
     "Type": "string",
@@ -843,7 +843,7 @@ const measures = [
   {
     "Name": "hoplId",
     "Values": 9035,
-    "Coverage": "183%",
+    "Coverage": "182%",
     "Question": "What is the HOPL id of this language?",
     "Example": "4365",
     "Type": "number",
@@ -852,7 +852,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -862,7 +862,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -882,7 +882,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -902,7 +902,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 5545,
+    "Values": 5550,
     "Coverage": "112%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -912,7 +912,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 5350,
+    "Values": 5355,
     "Coverage": "108%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -922,7 +922,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 5545,
+    "Values": 5550,
     "Coverage": "112%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -932,7 +932,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 5545,
+    "Values": 5550,
     "Coverage": "112%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -942,7 +942,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 5530,
+    "Values": 5535,
     "Coverage": "112%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -980,7 +980,7 @@ const measures = [
   },
   {
     "Name": "paper",
-    "Values": 115,
+    "Values": 120,
     "Coverage": "2%",
     "Question": "What is a URL to a paper(s) by the creator(s) introducing this language?",
     "Example": "https://functional-art.org/2017/ait",
@@ -1000,7 +1000,7 @@ const measures = [
   },
   {
     "Name": "conceptDescription",
-    "Values": 5060,
+    "Values": 5070,
     "Coverage": "102%",
     "Question": "What is a short description of this language?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1030,7 +1030,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 7415,
+    "Values": 7425,
     "Coverage": "150%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1050,7 +1050,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 5585,
+    "Values": 5590,
     "Coverage": "113%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1060,7 +1060,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1070,7 +1070,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1080,7 +1080,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1230,8 +1230,8 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 7055,
-    "Coverage": "142%",
+    "Values": 7065,
+    "Coverage": "143%",
     "Question": "How many creators?",
     "Example": "1",
     "Type": "number",
@@ -1240,7 +1240,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 5585,
+    "Values": 5590,
     "Coverage": "113%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1571,7 +1571,7 @@ const measures = [
   {
     "Name": "centralPackageRepositoryCount",
     "Values": 15060,
-    "Coverage": "305%",
+    "Coverage": "304%",
     "Question": "How many central package repositories does this language have?",
     "Example": "0",
     "Type": "number",
@@ -1671,7 +1671,7 @@ const measures = [
   },
   {
     "Name": "discord",
-    "Values": 35,
+    "Values": 40,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://discord.gg/MM3HmfzRfS",
@@ -1889,8 +1889,8 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 5575,
-    "Coverage": "112%",
+    "Values": 5580,
+    "Coverage": "113%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
     "Type": "string",
@@ -3704,7 +3704,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3714,7 +3714,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 24680,
+    "Values": 24690,
     "Coverage": "500%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
@@ -3725,7 +3725,7 @@ const measures = [
   {
     "Name": "hopl",
     "Values": 9035,
-    "Coverage": "183%",
+    "Coverage": "182%",
     "Question": "What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?",
     "Example": "https://hopl.info/showlanguage.prx?exp=4365",
     "Type": "string",
