@@ -4,7 +4,7 @@ Stockholm format
 Stockholm format is a text data format created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#2672 on PLDB
+#2673 on PLDB
 27 Years Old
 
 Stockholm format is a multiple sequence alignment format used by Pfam and Rfam to disseminate protein and RNA sequence alignments. The alignment editors Ralee  and Belvu support Stockholm format as do the probabilistic database search tools, Infernal and HMMER, and the phylogenetic analysis tool Xrate. A simple example of an Rfam alignment (UPSK RNA) with a pseudoknot in Stockholm format is shown below: # STOCKHOLM 1.0 #=GF ID    UPSK #=GF SE    Predicted; Infernal  #=GF SS    Published; PMID 9223489 #=GF RN    [1] #=GF RM    9223489 #=GF RT    The role of the pseudoknot at the 3' end of turnip yellow mosaic #=GF RT    virus RNA in minus-strand synthesis by the viral RNA-dependent RNA #=GF RT    polymerase. Read more on Wikipedia...

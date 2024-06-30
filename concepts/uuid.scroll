@@ -1,0 +1,18 @@
+import ../code/conceptPage.scroll
+
+id uuid
+name UUID
+standsFor Universally Unique IDentifiers
+paper https://datatracker.ietf.org/doc/html/rfc4122
+appeared 2005
+aka GUID
+aka Globally Unique Identifier
+spec https://datatracker.ietf.org/doc/html/rfc9562
+tags standard
+creators Paul J. Leach
+
+example 550e8400-e29b-41d4-a716-446655440000
+
+wikipedia https://en.wikipedia.org/wiki/Universally_unique_identifier
+
+reference https://dl.acm.org/doi/10.1145/800220.806679
