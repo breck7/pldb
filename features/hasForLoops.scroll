@@ -11,13 +11,6 @@ viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
 mediumColumns 1
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
- // Jule has for loops with while-next iterations
- let mut i = 0
- for i &lt; 10; i++ {
-     // ...
- }
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
  let mut sum = 0
  for let c in &quot;hellö wörld&quot;
@@ -29,13 +22,20 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">b
        &quot;w&quot; =&gt; sum += 5
        &quot;d&quot; =&gt; sum += 6
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ // Jule has for loops with while-next iterations
+ let mut i = 0
+ for i &lt; 10; i++ {
+     // ...
+ }
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  while i in 10
    &quot;hello: $i&quot;
 
 ***
 
-* Languages *with* hasForLoops include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/hecl.html">hecl</a>
+* Languages *with* hasForLoops include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/hecl.html">hecl</a>
 
 ***
 

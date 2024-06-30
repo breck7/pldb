@@ -1,7 +1,7 @@
 [
   {
     "Name": "id",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -12,7 +12,7 @@
   },
   {
     "Name": "name",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -23,7 +23,7 @@
   },
   {
     "Name": "appeared",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -34,8 +34,8 @@
   },
   {
     "Name": "creators",
-    "Values": 5592,
-    "Coverage": "113%",
+    "Values": 5640,
+    "Coverage": "114%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
     "Type": "string",
@@ -44,17 +44,17 @@
   },
   {
     "Name": "maintainers",
-    "Values": 4,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "What are the name(s) of the maintainer(s) of the language delimited by \" and \"?",
-    "Example": "Dan Cox",
+    "Example": "Junio Hamano",
     "Type": "string",
     "SortIndex": 1.1021,
     "IsComputed": false
   },
   {
     "Name": "measurements",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -64,7 +64,7 @@
   },
   {
     "Name": "tags",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -85,7 +85,7 @@
   },
   {
     "Name": "website",
-    "Values": 6784,
+    "Values": 6792,
     "Coverage": "137%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "http://www.3mf.io/specification/",
@@ -95,7 +95,7 @@
   },
   {
     "Name": "spec",
-    "Values": 132,
+    "Values": 140,
     "Coverage": "2%",
     "Question": "What is a URL to the official spec for this language?",
     "Example": "https://www.iso-9899.info/wiki/The_Standard",
@@ -105,7 +105,7 @@
   },
   {
     "Name": "foundationScore",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -155,7 +155,7 @@
   },
   {
     "Name": "exampleCount",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -165,17 +165,17 @@
   },
   {
     "Name": "rank",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1265",
+    "Example": "1268",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
   },
   {
     "Name": "lastActivity",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -185,7 +185,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 4444,
+    "Values": 4468,
     "Coverage": "90%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -195,10 +195,10 @@
   },
   {
     "Name": "pldbScore",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21176",
+    "Example": "21212",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -292,7 +292,7 @@
   {
     "Name": "githubRepo_subscribers",
     "Values": 4192,
-    "Coverage": "85%",
+    "Coverage": "84%",
     "Question": "How many subscribers to the repo?",
     "Example": "20",
     "Type": "number",
@@ -503,7 +503,7 @@
   {
     "Name": "wikipedia_pageId",
     "Values": 6404,
-    "Coverage": "130%",
+    "Coverage": "129%",
     "Question": "What is the internal ID for this entity on WP?",
     "Example": "92577",
     "Type": "number",
@@ -532,7 +532,7 @@
   {
     "Name": "githubBigQuery_users",
     "Values": 1676,
-    "Coverage": "34%",
+    "Coverage": "33%",
     "Question": "How many unique users have a repo using this language according to Google BigQuery?",
     "Example": "250",
     "Type": "number",
@@ -582,7 +582,7 @@
   {
     "Name": "githubLanguage_trendingProjectsCount",
     "Values": 1776,
-    "Coverage": "36%",
+    "Coverage": "35%",
     "Question": "How many trending repos for this language does GitHub report?",
     "Example": "0",
     "Type": "number",
@@ -772,7 +772,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 4608,
+    "Values": 4620,
     "Coverage": "93%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -782,7 +782,7 @@
   },
   {
     "Name": "standsFor",
-    "Values": 1396,
+    "Values": 1400,
     "Coverage": "28%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -792,7 +792,7 @@
   },
   {
     "Name": "aka",
-    "Values": 692,
+    "Values": 704,
     "Coverage": "14%",
     "Question": "What is this also known as?",
     "Example": "4D",
@@ -852,7 +852,7 @@
   },
   {
     "Name": "isLanguage",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -862,7 +862,7 @@
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -872,7 +872,7 @@
   },
   {
     "Name": "inboundLinks",
-    "Values": 1648,
+    "Values": 1668,
     "Coverage": "33%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -882,7 +882,7 @@
   },
   {
     "Name": "isFinished",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -902,7 +902,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 4424,
+    "Values": 4436,
     "Coverage": "89%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -912,7 +912,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 4268,
+    "Values": 4280,
     "Coverage": "86%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -922,7 +922,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 4424,
+    "Values": 4436,
     "Coverage": "89%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -932,7 +932,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 4424,
+    "Values": 4436,
     "Coverage": "89%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -942,7 +942,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 4412,
+    "Values": 4424,
     "Coverage": "89%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -980,7 +980,7 @@
   },
   {
     "Name": "paper",
-    "Values": 76,
+    "Values": 88,
     "Coverage": "1%",
     "Question": "What is a URL to a paper(s) by the creator(s) introducing this language?",
     "Example": "https://functional-art.org/2017/ait",
@@ -1000,7 +1000,7 @@
   },
   {
     "Name": "conceptDescription",
-    "Values": 4040,
+    "Values": 4048,
     "Coverage": "82%",
     "Question": "What is a short description of this language?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1010,7 +1010,7 @@
   },
   {
     "Name": "interviews",
-    "Values": 32,
+    "Values": 40,
     "Coverage": "0%",
     "Question": "What is a URL(s) to an interview with the creator(s) about this language?",
     "Example": "https://pldb.io/blog/brianKernighan.html",
@@ -1020,7 +1020,7 @@
   },
   {
     "Name": "isPublicDomain",
-    "Values": 72,
+    "Values": 84,
     "Coverage": "1%",
     "Question": "Is this public domain?",
     "Example": "true",
@@ -1030,7 +1030,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 5920,
+    "Values": 5932,
     "Coverage": "120%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1050,7 +1050,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 4444,
+    "Values": 4468,
     "Coverage": "90%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1060,7 +1060,7 @@
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1070,7 +1070,7 @@
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1080,7 +1080,7 @@
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1110,7 +1110,7 @@
   },
   {
     "Name": "influencedBy",
-    "Values": 276,
+    "Values": 280,
     "Coverage": "5%",
     "Question": "What languages influenced this one?",
     "Example": "rust",
@@ -1209,6 +1209,16 @@
     "IsComputed": false
   },
   {
+    "Name": "protocols",
+    "Values": 4,
+    "Coverage": "0%",
+    "Question": "Which protocols does this speak?",
+    "Example": "www ftp http nntp gopher",
+    "Type": "string",
+    "SortIndex": 2.2,
+    "IsComputed": false
+  },
+  {
     "Name": "irc",
     "Values": 16,
     "Coverage": "0%",
@@ -1220,8 +1230,8 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 5592,
-    "Coverage": "113%",
+    "Values": 5640,
+    "Coverage": "114%",
     "Question": "How many creators?",
     "Example": "1",
     "Type": "number",
@@ -1230,7 +1240,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 4444,
+    "Values": 4468,
     "Coverage": "90%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1342,7 +1352,7 @@
   {
     "Name": "clocExtensions",
     "Values": 936,
-    "Coverage": "19%",
+    "Coverage": "18%",
     "Question": "What are the file extensions for this language recognized by Al Danial's cloc?",
     "Example": "abap",
     "Type": "string",
@@ -1454,7 +1464,7 @@
   {
     "Name": "fileType",
     "Values": 5080,
-    "Coverage": "103%",
+    "Coverage": "102%",
     "Question": "What is the file encoding for programs in this language?",
     "Example": "paper",
     "Type": "string",
@@ -1518,7 +1528,7 @@
   {
     "Name": "monaco",
     "Values": 296,
-    "Coverage": "6%",
+    "Coverage": "5%",
     "Question": "What is a URL to a Monaco syntax highlighting package for this language?",
     "Example": "abap",
     "Type": "string",
@@ -1560,7 +1570,7 @@
   },
   {
     "Name": "centralPackageRepositoryCount",
-    "Values": 12056,
+    "Values": 12048,
     "Coverage": "244%",
     "Question": "How many central package repositories does this language have?",
     "Example": "0",
@@ -1588,8 +1598,8 @@
   },
   {
     "Name": "originCommunity",
-    "Values": 15872,
-    "Coverage": "322%",
+    "Values": 15884,
+    "Coverage": "321%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
     "Type": "string",
@@ -1598,7 +1608,7 @@
   },
   {
     "Name": "country",
-    "Values": 14936,
+    "Values": 14960,
     "Coverage": "303%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1629,7 +1639,7 @@
   },
   {
     "Name": "reference",
-    "Values": 8604,
+    "Values": 8608,
     "Coverage": "174%",
     "Question": "What is a URL to more info about this thing?",
     "Example": "https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998",
@@ -1639,7 +1649,7 @@
   },
   {
     "Name": "subreddit",
-    "Values": 368,
+    "Values": 376,
     "Coverage": "7%",
     "Question": "What is a URL of a subreddit(s) for this language?",
     "Example": "https://reddit.com/r/ada",
@@ -1650,7 +1660,7 @@
   },
   {
     "Name": "twitter",
-    "Values": 1024,
+    "Values": 1028,
     "Coverage": "20%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -1879,7 +1889,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 4448,
+    "Values": 4460,
     "Coverage": "90%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -3683,7 +3693,7 @@
   },
   {
     "Name": "wikipedia",
-    "Values": 7508,
+    "Values": 7544,
     "Coverage": "152%",
     "Question": "What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?",
     "Example": "https://en.wikipedia.org/wiki/IBM_1620",
@@ -3694,7 +3704,7 @@
   },
   {
     "Name": "bookCount",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3704,7 +3714,7 @@
   },
   {
     "Name": "paperCount",
-    "Values": 19704,
+    "Values": 19740,
     "Coverage": "400%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
@@ -3813,7 +3823,7 @@
   {
     "Name": "indeedJobs",
     "Values": 444,
-    "Coverage": "9%",
+    "Coverage": "8%",
     "Question": "How many job descriptions match this query for this language on indeed.com?",
     "Example": "abap developer",
     "Type": "string",
@@ -3843,7 +3853,7 @@
   },
   {
     "Name": "semanticScholar",
-    "Values": 1264,
+    "Values": 1260,
     "Coverage": "25%",
     "Question": "What are papers about this language from Semantic Scholar?",
     "Example": "year|title|doi|citations|influentialCitations|authors|paperId\\n2002|Teaching SAP's ABAP Programming Language to IS Students: Adopting and Adapting Web-based Technologies|10.28945/2530|6|0|Brendan McCarthy and Paul Hawking|24eebbc39ee141a470e92d7d154c5bb7590f7914\\n2008|ABAP OBJECTS: DESIGNING A PROGRAMMING COURSE FOR INFORMATION SYSTEMS STUDENTS USING SAP SOFTWARE|10.48009/1_iis_2008_165-167|1|0|C. Rogers|4b660a8a0cd7ff636673dd7553d2ad7a19914d04",

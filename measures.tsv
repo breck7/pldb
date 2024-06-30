@@ -1,24 +1,24 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired
-id	9852	200%	What is the ID of this concept?	05ab1e	string		1	false	true
-name	9852	200%	What is the name of this concept?	05AB1E	string		1.1	false	true
-appeared	9852	200%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true
-creators	2796	56%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false	
-maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Dan Cox	string		1.1021	false	
-measurements	9852	200%	How many measurements do we have about this thing?	11	number		1.11	true	
-tags	9852	200%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true
+id	9870	200%	What is the ID of this concept?	05ab1e	string		1	false	true
+name	9870	200%	What is the name of this concept?	05AB1E	string		1.1	false	true
+appeared	9870	200%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true
+creators	2820	57%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false	
+maintainers	4	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false	
+measurements	9870	200%	How many measurements do we have about this thing?	11	number		1.11	true	
+tags	9870	200%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true
 rijuRepl_website	56	1%	What is the URL of the official homepage for this language project?	https://www.adaic.org/	string		1.21	false	
-website	3392	68%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false	
-spec	66	1%	What is a URL to the official spec for this language?	https://www.iso-9899.info/wiki/The_Standard	string		1.22	false	
-foundationScore	9852	200%	How many languages are built using this language?	0	number		1.3	true	
+website	3396	68%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false	
+spec	70	1%	What is a URL to the official spec for this language?	https://www.iso-9899.info/wiki/The_Standard	string		1.22	false	
+foundationScore	9870	200%	How many languages are built using this language?	0	number		1.3	true	
 blog	124	2%	What is the URL to the official blog for this language?	https://blogs.sap.com/tags/833755570260738661924709785639136/	string		1.33	false	
 releaseNotes	134	2%	What is the URL to the release notes or changelog for this language?	https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html	string		1.33	false	
 download	82	1%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false	
 latestVersion	1274	25%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false	
-exampleCount	9852	200%	How many examples do we have written in this language?	2	number		1.5	true	
-rank	9852	200%	How does this concept rank amongst all other concepts?	1265	number		1.5	true	
-lastActivity	9852	200%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true	
-writtenInCount	2222	45%	How many languages is this implementation written in?	3	number		1.6	true	
-pldbScore	9852	200%	What is the combined score of this language across all the categories of rankings?	21176	number		1.6	true	
+exampleCount	9870	200%	How many examples do we have written in this language?	2	number		1.5	true	
+rank	9870	200%	How does this concept rank amongst all other concepts?	1268	number		1.5	true	
+lastActivity	9870	200%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true	
+writtenInCount	2234	45%	How many languages is this implementation written in?	3	number		1.6	true	
+pldbScore	9870	200%	What is the combined score of this language across all the categories of rankings?	21212	number		1.6	true	
 meetup_memberCount	114	2%	How many people in this meetup group?	1514159	number		1.9	false	
 meetup_groupCount	114	2%	How many groups?	2707	number		1.9	false	
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false	
@@ -49,15 +49,15 @@ wikipedia_created	2776	56%	When was the *Wikipedia page* for this entity created
 wikipedia_dailyPageViews	3334	67%	How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.	60	number		1.9	false	
 wikipedia_backlinksCount	3236	65%	How many pages on WP link to this page?	112	number		1.9	false	
 wikipedia_revisionCount	2584	52%	How many revisions does this page have?	481	number		1.9	false	
-wikipedia_pageId	3202	65%	What is the internal ID for this entity on WP?	92577	number		1.9	false	
+wikipedia_pageId	3202	64%	What is the internal ID for this entity on WP?	92577	number		1.9	false	
 domainName_registered	1236	25%	When was this domain first registered?	2014	number		1.9	false	
 domainName_awisRank	0	0%	What is the Alexa Web Information Service (AWIS) domain ranking?			aws.amazon.com	1.9	false	
-githubBigQuery_users	838	17%	How many unique users have a repo using this language according to Google BigQuery?	250	number		1.9	false	
+githubBigQuery_users	838	16%	How many unique users have a repo using this language according to Google BigQuery?	250	number		1.9	false	
 githubBigQuery_repos	840	17%	How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot?	274	number		1.9	false	
 githubLanguage_filenames	106	2%	What are the filenames commonly associated with this language?	APKBUILD	string		1.9	false	
 githubLanguage_wrap	28	0%	Does GitHub override it's default of not wrapping lines when displaying this language?	true	boolean		1.9	false	
 githubLanguage_repos	980	19%	How many repos for this language does GitHub report?	38669	number		1.9	false	
-githubLanguage_trendingProjectsCount	888	18%	How many trending repos for this language does GitHub report?	0	number		1.9	false	
+githubLanguage_trendingProjectsCount	888	17%	How many trending repos for this language does GitHub report?	0	number		1.9	false	
 githubLanguage_trendingProjects	150	3%	What are trending projects in this language GitHub?	author name avatar url language languageColor stars forks currentPeriodStars description\nantlr grammars-v4 https://github.com/antlr.png https://github.com/antlr/grammars-v4 ANTLR #9DC3FF 4119 1736 119 "Grammars written for ANTLR v4; expectation that the grammars are free of actions."	string		1.9	false	
 githubLanguage_group	82	1%	What is the name of the parent language group according to GitHub?	Shell	string		1.9	false	
 githubLanguage_aliases	284	5%	What are additional aliases, excluding name.downcase which are implicitly included?	actionscript 3 or actionscript3 or as3	string		1.9	false	
@@ -77,41 +77,41 @@ forLanguages	96	1%	Which languages is this repository for?	ballerina	string		1.9
 dblp	0	0%	What are publications about this language from https://dblp.org/?			dblp.org	1.9	false	
 dblp_hits	0	0%	How many matching publications?				1.9	false	
 dblp_publications	0	0%	An inline PSV table of hits.				1.9	false	
-mainRepo	2304	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
-standsFor	698	14%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false	
-aka	346	7%	What is this also known as?	4D	string		1.9	false	
+mainRepo	2310	46%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true	
+standsFor	700	14%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false	
+aka	352	7%	What is this also known as?	4D	string		1.9	false	
 oldName	28	0%	What is the old name of this language?	ML-flavoured Erlang	string		1.9	false	
 packageInstallCount	22	0%	How many packages have been downloaded?	770549116	number		1.9	false	
 packageCount	96	1%	How many packages are in the repository?	105	number		1.9	false	
 packageAuthors	8	0%	How many people contribute packages to this cpm?	13699	number		1.9	false	
 hoplId	3614	73%	What is the HOPL id of this language?	4365	number		1.9	true	
-isLanguage	9852	200%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true	
-inboundLinksCount	9852	200%	How many other concepts link to this one?	0	number		1.9	true	
-inboundLinks	824	16%	Which other concepts link to this one?	explorer	string		1.9	true	
-isFinished	9852	200%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true	
+isLanguage	9870	200%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true	
+inboundLinksCount	9870	200%	How many other concepts link to this one?	0	number		1.9	true	
+inboundLinks	834	16%	Which other concepts link to this one?	explorer	string		1.9	true	
+isFinished	9870	200%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true	
 nativeLanguage	34	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false	
-repoStats_firstCommit	2212	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
-repoStats_newestCommit	2134	43%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
-repoStats_commits	2212	44%	How many commits to the repo?	871	number		1.9	false	
-repoStats_committers	2212	44%	How many committers to the repo?	28	number		1.9	false	
-repoStats_files	2206	44%	How many files in the repo?	49	number		1.9	false	
+repoStats_firstCommit	2218	44%	What year the first commit made in this git repo?	2015	number		1.9	false	
+repoStats_newestCommit	2140	43%	What year was the newest commit made in this git repo?	2022	number		1.9	false	
+repoStats_commits	2218	44%	How many commits to the repo?	871	number		1.9	false	
+repoStats_committers	2218	44%	How many committers to the repo?	28	number		1.9	false	
+repoStats_files	2212	44%	How many files in the repo?	49	number		1.9	false	
 equation	30	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false	
 description	0	0%	How is this language described here?				1.99	false	
 githubRepo_description	2068	41%	How is this language described here?	A concise stack-based golfing language	string		1.99	false	
-paper	38	0%	What is a URL to a paper(s) by the creator(s) introducing this language?	https://functional-art.org/2017/ait	string		1.99	false	
+paper	44	0%	What is a URL to a paper(s) by the creator(s) introducing this language?	https://functional-art.org/2017/ait	string		1.99	false	
 rijuRepl_description	78	1%	How is this language described here?	Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages	string		1.99	false	
-conceptDescription	2020	41%	What is a short description of this language?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false	
-interviews	16	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false	
-isPublicDomain	36	0%	Is this public domain?	true	boolean		2	false	
-isOpenSource	2960	60%	Is this an open source project?	true	boolean		2.01	true	
+conceptDescription	2024	41%	What is a short description of this language?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false	
+interviews	20	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false	
+isPublicDomain	42	0%	Is this public domain?	true	boolean		2	false	
+isOpenSource	2966	60%	Is this an open source project?	true	boolean		2.01	true	
 languageServerProtocolProject_writtenIn	106	2%	What language(s) is the main implementation written in?	typescript	string		2.1	false	
-writtenIn	2222	45%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false	
-numberOfUsersEstimate	9852	200%	What is our estimate of number of users of this language?	818	number		2.1	true	
-numberOfJobsEstimate	9852	200%	What is our estimate of the number of jobs in this language?	0	number		2.1	true	
-expandedMeasurements	9852	200%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true	
+writtenIn	2234	45%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false	
+numberOfUsersEstimate	9870	200%	What is our estimate of number of users of this language?	818	number		2.1	true	
+numberOfJobsEstimate	9870	200%	What is our estimate of the number of jobs in this language?	0	number		2.1	true	
+expandedMeasurements	9870	200%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true	
 relatedConcepts	388	7%	What languages are related?	logo	string		2.2	false	
 runsOnVm	18	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false	
-influencedBy	138	2%	What languages influenced this one?	rust	string		2.2	false	
+influencedBy	140	2%	What languages influenced this one?	rust	string		2.2	false	
 successorOf	10	0%	Was this language launched as the successor of another?	asp	string		2.2	false	
 subsetOf	22	0%	Is this language a subset of another?	c	string		2.2	false	
 implementationOf	12	0%	Is this language an implementation of another?	scheme	string		2.2	false	
@@ -121,9 +121,10 @@ extensionOf	2	0%	What language is this language an extension of?	cpp	string		2.2
 forkOf	6	0%	What language is this language a fork of?	common-log-format	string		2.2	false	
 compilesTo	156	3%	Which language(s) does this language primarily compile to?	beam-bytecode	string		2.2	false	
 inputLanguages	18	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false	
+protocols	2	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false	
 irc	8	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false	
-numberOfCreators	2796	56%	How many creators?	1	number		2.33	true	
-isSelfHosted	2222	45%	Is the main implementation of this language written in this language?	false	boolean		2.33	true	
+numberOfCreators	2820	57%	How many creators?	1	number		2.33	true	
+isSelfHosted	2234	45%	Is the main implementation of this language written in this language?	false	boolean		2.33	true	
 latestMajorVersion	1274	25%	What is the latest major version (if using semver)?	1	number		2.33	true	
 usesSemanticVersioning	1274	25%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true	
 demoVideo	32	0%	What is a URL of a demo video of this language?	https://www.youtube.com/watch?v=qGOIt0xh0dw	string		2.4	false	
@@ -151,20 +152,20 @@ antlr	120	2%	What is a URL to an ANTLR grammar for this language?	https://github
 replit	60	1%	What is a URL to try this language on replit.com?	https://repl.it/languages/apl	string	replit.com	2.8	false	
 rosettaCode	662	13%	What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?	http://www.rosettacode.org/wiki/Category:ABAP	string	rosettacode.org	2.8	false	
 codeMirror	160	3%	What is a URL to a CodeMirror syntax highlighting package for this language?	velocity	string	codemirror.net	2.8	false	
-monaco	148	3%	What is a URL to a Monaco syntax highlighting package for this language?	abap	string	microsoft.github.io/monaco-editor/	2.8	false	
+monaco	148	2%	What is a URL to a Monaco syntax highlighting package for this language?	abap	string	microsoft.github.io/monaco-editor/	2.8	false	
 quineRelay	140	2%	What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?	Ada	string	github.com/mame/quine-relay	2.8	false	
 packageRepository	120	2%	What is a URL to the package repository for this language?	https://www.npmjs.com/package/avisynth	string		2.9	false	
 ubuntuPackage	130	2%	What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?	gnat	string	ubuntu.com	2.9	false	
-centralPackageRepositoryCount	6028	122%	How many central package repositories does this language have?	0	number		2.9	false	
+centralPackageRepositoryCount	6024	122%	How many central package repositories does this language have?	0	number		2.9	false	
 repoStats	0	0%	What are basic stats on this repo?				2.9	false	
 proposals	22	0%	What is the URL to a the place where language proposals are made, if one exists?	https://github.com/golang/proposal	string		2.99	false	
-originCommunity	7936	161%	In what community(ies) did the language first originate?	Department of Computer Science, University of Toronto	string		2.99	false	
-country	7468	151%	What country was this language first developed in?	Russia	string		2.99	false	
+originCommunity	7942	160%	In what community(ies) did the language first originate?	Department of Computer Science, University of Toronto	string		2.99	false	
+country	7480	151%	What country was this language first developed in?	Russia	string		2.99	false	
 funFact	6	0%	What is a code block or some text containing a fun or unusual fact about the language?	 C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++	string		2.99	false	
 projectEuler	208	4%	Is this language one of the ones listed on https://projecteuler.net/?	ABAP	string	projecteuler.net	2.999	false	
-reference	4302	87%	What is a URL to more info about this thing?	https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998	string		2.9999	false	
-subreddit	184	3%	What is a URL of a subreddit(s) for this language?	https://reddit.com/r/ada	string	reddit.com	3	false	
-twitter	512	10%	What is a URL to the official Twitter account of this thing, if any?	https://twitter.com/3mfconsortium	string	twitter.com	3	false	
+reference	4304	87%	What is a URL to more info about this thing?	https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998	string		2.9999	false	
+subreddit	188	3%	What is a URL of a subreddit(s) for this language?	https://reddit.com/r/ada	string	reddit.com	3	false	
+twitter	514	10%	What is a URL to the official Twitter account of this thing, if any?	https://twitter.com/3mfconsortium	string	twitter.com	3	false	
 discord	14	0%	What is a URL to an official (or popular unofficial) Discord for this language?	https://discord.gg/MM3HmfzRfS	string		3	false	
 discourse	4	0%	What is a URL to an official (or popular unofficial) Discourse for this language?	https://coq.discourse.group/	string		3	false	
 linguistGrammarRepo_example	730	14%	What is a representative snippet for this language?	﻿Каталог = ОбъединитьПути(ТекущийКаталог(), "libs\oscript-library\src"); Загрузчик_Оригинал_ИмяФайла = ОбъединитьПути(Каталог, "package-loader.os");  Файлы = НайтиФайлы(Каталог, , Ложь); Для Каждого ВыбФайл Из Файлы Цикл      Если ВыбФайл.ЭтоФайл() Тогда         Продолжить;     КонецЕсли;      Загрузчик_ИмяФайла = ОбъединитьПути(ВыбФайл.ПолноеИмя, "package-loader.os");     Загрузчик_Файл = Новый Файл(Загрузчик_ИмяФайла);      Если Загрузчик_Файл.Существует() Тогда         Продолжить;     КонецЕсли;      КопироватьФайл(Загрузчик_Оригинал_ИмяФайла, Загрузчик_ИмяФайла);  КонецЦикла;	string		3	false	
@@ -186,7 +187,7 @@ githubCopilotOptimized	14	0%	Is this language optimized for GitHub copilot, as f
 meetup	114	2%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false	
 gitRepo	50	1%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false	
 specRepo	4	0%	What is the URL of the official spec for the language project?	https://github.com/whatwg/html	string		4	false	
-githubRepo	2224	45%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false	
+githubRepo	2230	45%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false	
 gitlabRepo	26	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false	
 sourcehutRepo	10	0%	What is the URL of the official sourcehut repo for this project?	https://sourceforge.net/projects/avisynth2/	string	sr.ht	4	false	
 rijuRepl_gitRepo	76	1%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://gcc.gnu.org/git.html	string		4	false	
@@ -366,9 +367,9 @@ letterFirstIdentifiers	4	0%	Must identifiers start with a letter?	true	boolean		
 mergesWhitespace	4	0%	Does this language merge whitespace, so N spaces is treated the same as a single space?	true	boolean		7	false	
 supportsBreakpoints	4	0%	Does this language support breakpoints?	true	boolean		7	false	
 jupyterKernel	146	2%	What is a link to a Jupyter Kernel for this language?	https://github.com/mattpap/IAldor	string	jupyter.org	9	false	
-wikipedia	3754	76%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false	
-bookCount	9852	200%	What is the count of booked we have published about this thing?	0	number		10	true	
-paperCount	9852	200%	What is the count of papers we have published about this thing?	0	number		10	true	
+wikipedia	3772	76%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false	
+bookCount	9870	200%	What is the count of booked we have published about this thing?	0	number		10	true	
+paperCount	9870	200%	What is the count of papers we have published about this thing?	0	number		10	true	
 hopl	3614	73%	What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?	https://hopl.info/showlanguage.prx?exp=4365	string	hopl.info	11	false	
 pypl	58	1%	What is this language's id on https://pypl.github.io?	Abap	string	pypl.github.io	11	false	
 tiobe	408	8%	What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?	ABAP	string	tiobe.com	11	false	
@@ -381,5 +382,5 @@ githubLanguage	1058	21%	What is the name of this language on GitHub's list of su
 indeedJobs	222	4%	How many job descriptions match this query for this language on indeed.com?	abap developer	string	indeed.com	36	false	
 linkedInSkill	114	2%	How many people list this skill on LinkedIn?	android	string	linkedin.com	36	false	
 stackOverflowSurvey	0	0%	What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?			insights.stackoverflow.com	36	false	
-semanticScholar	632	12%	What are papers about this language from Semantic Scholar?	year|title|doi|citations|influentialCitations|authors|paperId\n2002|Teaching SAP's ABAP Programming Language to IS Students: Adopting and Adapting Web-based Technologies|10.28945/2530|6|0|Brendan McCarthy and Paul Hawking|24eebbc39ee141a470e92d7d154c5bb7590f7914\n2008|ABAP OBJECTS: DESIGNING A PROGRAMMING COURSE FOR INFORMATION SYSTEMS STUDENTS USING SAP SOFTWARE|10.48009/1_iis_2008_165-167|1|0|C. Rogers|4b660a8a0cd7ff636673dd7553d2ad7a19914d04	string	semanticscholar.org	90	false	
+semanticScholar	630	12%	What are papers about this language from Semantic Scholar?	year|title|doi|citations|influentialCitations|authors|paperId\n2002|Teaching SAP's ABAP Programming Language to IS Students: Adopting and Adapting Web-based Technologies|10.28945/2530|6|0|Brendan McCarthy and Paul Hawking|24eebbc39ee141a470e92d7d154c5bb7590f7914\n2008|ABAP OBJECTS: DESIGNING A PROGRAMMING COURSE FOR INFORMATION SYSTEMS STUDENTS USING SAP SOFTWARE|10.48009/1_iis_2008_165-167|1|0|C. Rogers|4b660a8a0cd7ff636673dd7553d2ad7a19914d04	string	semanticscholar.org	90	false	
 goodreads	400	8%	What are books about this language from Goodreads?	title|year|author|goodreadsId|rating|ratings|reviews\nProgramming the IBM 1620|1965|Eric A. Weiss|23978396|0.0|0|0	string	goodreads.com	101	false	

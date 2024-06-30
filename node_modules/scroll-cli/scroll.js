@@ -101,7 +101,7 @@ const getGroup = (groupName, files) => files.filter(file => file.shouldBuild && 
 const measureCache = new Map()
 const parseMeasures = parser => {
   if (measureCache.get(parser)) return measureCache.get(parser)
-  // Generate a fake program with one of every of the available keywords. Then parse it. Then we can easily access the meta data on the parsers
+  // Generate a fake program with one of every of the available parsers. Then parse it. Then we can easily access the meta data on the parsers
   const dummyProgram = new parser(
     parser.cachedHandParsersProgramRoot // is there a better method name than this?
       .map(node => node.getLine())
@@ -281,7 +281,7 @@ class ScrollFile {
     return [this.title, relativePath + this.permalink, text, this.date, this.wordCount, this.minutes].join("\t")
   }
 
-  // todo: clean up this naming pattern and add a keyword instead of special casing 404.html
+  // todo: clean up this naming pattern and add a parser instead of special casing 404.html
   get allHtmlFiles() {
     return this.allScrollFiles.filter(file => file.shouldBuild && (file.permalink.endsWith(".html") || file.permalink.endsWith(".htm")) && file.permalink !== "404.html")
   }
@@ -404,8 +404,8 @@ class ScrollFile {
     const varMap = {}
     tree
       .filter(node => {
-        const keyword = node.firstWord
-        return keyword === scrollKeywords.replace || keyword === scrollKeywords.replaceJs || keyword === scrollKeywords.replaceNodejs
+        const parserWord = node.firstWord
+        return parserWord === scrollKeywords.replace || parserWord === scrollKeywords.replaceJs || parserWord === scrollKeywords.replaceNodejs
       })
       .forEach(node => {
         let value = node.length ? node.childrenToString() : node.getWordsFrom(2).join(" ")
@@ -574,12 +574,12 @@ class ScrollFile {
     return this.scrollProgram.get(scrollKeywords.title) ?? ""
   }
 
-  get(keyword) {
-    return this.scrollProgram.get(keyword)
+  get(parserWord) {
+    return this.scrollProgram.get(parserWord)
   }
 
-  has(keyword) {
-    return this.scrollProgram.has(keyword)
+  has(parserWord) {
+    return this.scrollProgram.has(parserWord)
   }
 
   get viewSourceUrl() {
@@ -874,20 +874,20 @@ import footer.scroll
     return this
   }
 
-  _keywordsRequiringExternals(parser) {
+  _parserWordsRequiringExternals(parser) {
     // todo: could be cleaned up a bit
-    if (!parser.keywordsRequiringExternals) parser.keywordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(node => node.copyFromExternal).map(node => node.getLine().replace("Parser", ""))
-    return parser.keywordsRequiringExternals
+    if (!parser.parserWordsRequiringExternals) parser.parserWordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(node => node.copyFromExternal).map(node => node.getLine().replace("Parser", ""))
+    return parser.parserWordsRequiringExternals
   }
 
   externalFilesCopied = {}
   _copyExternalFiles(file, folder, fileSystem) {
     // If this file uses a parser that has external requirements,
     // copy those from external folder into the destination folder.
-    const keywordsRequiringExternals = this._keywordsRequiringExternals(file.parser)
+    const parserWordsRequiringExternals = this._parserWordsRequiringExternals(file.parser)
     const { externalFilesCopied } = this
     if (!externalFilesCopied[folder]) externalFilesCopied[folder] = {}
-    keywordsRequiringExternals.forEach(word => {
+    parserWordsRequiringExternals.forEach(word => {
       if (externalFilesCopied[folder][word]) return
       if (file.has(word)) {
         const node = file.scrollProgram.getNode(word)
