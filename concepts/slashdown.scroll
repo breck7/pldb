@@ -1,0 +1,61 @@
+import ../code/conceptPage.scroll
+
+id slashdown
+name Slashdown
+appeared 2021
+creators Nick Noble
+tags textMarkup
+webRepl https://slashdown-playground.vercel.app/
+
+writtenIn typescript json yaml markdown javascript html
+influencedBy markdown mdx
+repoStats
+ firstCommit 2021
+ newestCommit 2023
+ commits 71
+ committers 2
+ files 21
+
+example
+ / .h-full.p-4.prose
+ 
+   /header .flex.justify-between
+     **Slashdown**
+ 
+     /nav .space-x-2
+       [JS](#)
+       [Ruby](#)
+ 
+   /section #hero .rounded-lg.bg-gray-200.p-4.pb-0.overflow-hidden
+ 
+     # For when MDX is too much and Markdown is too little
+     *(Or you just don't like closing tags)*
+ 
+   /article
+ 
+     ## Slashdown is a superset of markdown.
+ 
+     Using indentation and some simple syntax, you can hand write markup with more customizability and *dare I say* OOOMPH!
+ 
+     It was designed for [HTMX](), [Tailwind](), and joy. In fact, this page has Tailwind's PlayCDN enabled – go to town experimenting!
+ 
+     ## The basics
+ 
+     ### Any line that starts with a `/` is a tag.
+     By default, it will render a div, but you can name it anything you want: `/section`, `/MyComponent`, `/x-thing`.
+ 
+     ### Attributes can follow:
+     `/button hx-post="/clicked" hx-swap="outerHTML"`
+ 
+     #### Common shorthands for classes and IDs:
+     `/section #hero .rounded.bg-gray-200.p-4`
+ 
+     #### Stacking, for organization
+ 
+ 
+     ### Text at the end
+     At the end of a tag, you can add ` = ` followed by anything except line breaks. This will be treated as innerText for that tag.
+     `/section #hero .rounded.bg-gray-200.p-4`
+ 
+
+githubRepo https://github.com/nickisnoble/slashdown
