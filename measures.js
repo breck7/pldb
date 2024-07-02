@@ -1382,7 +1382,7 @@ const measures = [
   },
   {
     "Name": "documentation",
-    "Values": 1835,
+    "Values": 1840,
     "Coverage": "37%",
     "Question": "What is a URL to the official documentation for this language?",
     "Example": "https://aardvark-docs.programit.repl.co/",
@@ -2702,7 +2702,7 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 230,
+    "Values": 235,
     "Coverage": "4%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",
@@ -3789,7 +3789,7 @@ const measures = [
   },
   {
     "Name": "hackerNewsDiscussions",
-    "Values": 895,
+    "Values": 900,
     "Coverage": "18%",
     "Question": "What are URLS to Hacker News posts discussing this language?",
     "Example": "id|title|time|timestamp|by|comments|score\\n17544330|Show HN: 6gunz – spreadsheet / programming language / microservices framework|2018-07-16 19:36:57 UTC|1531769817|repsilat|5|9",

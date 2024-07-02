@@ -1,13 +1,13 @@
 ArkScript
 =========
 
-ArkScript is a programming language created in 2019 by Alexandre Plateau and Pierre Pharel and Natendrtfm.
+ArkScript is an open source programming language created in 2019 by Alexandre Plateau and Pierre Pharel and Natendrtfm.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
  https://pldb.io/concepts/../lists/creators.html#q=Alexandre%20Plateau
  https://pldb.io/concepts/../lists/creators.html#q=Pierre%20Pharel
  https://pldb.io/concepts/../lists/creators.html#q=Natendrtfm
 
-#466 on PLDB
+#403 on PLDB
 5 Years Old
 
 git clone https://github.com/ArkScript-lang/Ark
@@ -15,36 +15,38 @@ git clone https://github.com/ArkScript-lang/Ark
 ArkScript is a small, fast, functional and scripting language for C++ projects
 
 - ArkScript website
- https://arkscript-lang.github.io
-- ArkScript is developed on GitHub and has 452 stars
+ https://arkscript-lang.dev
+- ArkScript is developed on GitHub and has 574 stars
+- ArkScript docs
+ https://arkscript-lang.dev/documentation.html
 - ArkScript first developed in Alexandre Plateau
 - ArkScript is written in C++, Markdown, YAML, JSON, CSV, CMake, Bash, Python, Bourne shell, SVG, XML, Dockerfile
 
-{
-    # more or less game
-    (print &quot;More or less game!&quot;)
-    (import &quot;random.bin&quot;)
-    (import &quot;Math/Arithmetic.ark&quot;)
-    
-    (let number (mod (abs (random)) 10000))
-    (mut value 0)
-    (mut essais 0)
-    (mut continue true)
-    
-    (while continue {
-        (set value (toNumber (input &quot;Input a numeric value: &quot;)))
-        (if (&lt; value number)
-            # then
-            (print &quot;More!&quot;)
-            # else
-            (if (= value number)
-                # then
-                { (print &quot;Bingo!&quot;) (set continue false) }
-                # else
-                (print &quot;Less!&quot;)))
-        (set essais (+ 1 essais))})
-    (print &quot;You won in &quot; essais &quot; tries&quot;)
-}
+(import std.random)
+(import std.Math)
+
+(let number (mod (math:abs (random)) 10000))
+
+(let game (fun () {
+    (let impl (fun (tries) {
+        (let guess (toNumber (input &quot;Input a numeric value: &quot;)))
+
+        (if (&lt; guess number)
+            {
+                (print &quot;It&#39;s more than &quot; guess)
+                (impl (+ tries 1))}
+            (if (= guess number)
+                {
+                    (print &quot;You found it!&quot;)
+                    tries }
+                {
+                    (print &quot;It&#39;s less than &quot; guess)
+                    (impl (+ tries 1))}))}))
+
+    (let tries (impl 0))
+    (print &quot;You won in &quot; tries &quot; tries.&quot;)}))
+
+(game)
 
 (print &quot;Hello World&quot;)
 
@@ -71,6 +73,14 @@ row
  Token print
  Example
 row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported ✓
+ Token 
+ Example
+  (import std.List)
+  (import std.Math :max)
+row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
@@ -90,3 +100,10 @@ row
  Supported X
  Token 
  Example
+
+HackerNews discussions of ArkScript
+===================================
+
+title|titleLink|date|score|comments
+Show HN: ArkScript, a small and fast language for scripting video games|https://news.ycombinator.com/item?id=22695517|03/26/2020|101|42
+Show HN: An Online Playground for ArkScript|https://news.ycombinator.com/item?id=40695579|06/16/2024|1|1
