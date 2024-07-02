@@ -887,14 +887,14 @@ var autocompleteJs = [
     "url": "/concepts/brainfuck.html"
   },
   {
-    "label": "Yacc",
-    "id": "yacc",
-    "url": "/concepts/yacc.html"
-  },
-  {
     "label": "Deno",
     "id": "deno",
     "url": "/concepts/deno.html"
+  },
+  {
+    "label": "Yacc",
+    "id": "yacc",
+    "url": "/concepts/yacc.html"
   },
   {
     "label": "ARM",
@@ -1347,14 +1347,14 @@ var autocompleteJs = [
     "url": "/concepts/restructuredtext.html"
   },
   {
-    "label": "jq",
-    "id": "jq",
-    "url": "/concepts/jq.html"
-  },
-  {
     "label": "Frege",
     "id": "frege",
     "url": "/concepts/frege.html"
+  },
+  {
+    "label": "jq",
+    "id": "jq",
+    "url": "/concepts/jq.html"
   },
   {
     "label": "Lex",
@@ -2027,14 +2027,14 @@ var autocompleteJs = [
     "url": "/concepts/wisp.html"
   },
   {
-    "label": "Svelte",
-    "id": "svelte",
-    "url": "/concepts/svelte.html"
-  },
-  {
     "label": "Twig",
     "id": "twig",
     "url": "/concepts/twig.html"
+  },
+  {
+    "label": "Svelte",
+    "id": "svelte",
+    "url": "/concepts/svelte.html"
   },
   {
     "label": "C2",
@@ -2437,11 +2437,6 @@ var autocompleteJs = [
     "url": "/concepts/b.html"
   },
   {
-    "label": "ArkScript",
-    "id": "arkscript",
-    "url": "/concepts/arkscript.html"
-  },
-  {
     "label": "skulpt",
     "id": "skulpt",
     "url": "/concepts/skulpt.html"
@@ -2467,14 +2462,19 @@ var autocompleteJs = [
     "url": "/concepts/kitten.html"
   },
   {
-    "label": "JSON Schema",
-    "id": "json-schema",
-    "url": "/concepts/json-schema.html"
+    "label": "ArkScript",
+    "id": "arkscript",
+    "url": "/concepts/arkscript.html"
   },
   {
     "label": "Gosu",
     "id": "gosu",
     "url": "/concepts/gosu.html"
+  },
+  {
+    "label": "JSON Schema",
+    "id": "json-schema",
+    "url": "/concepts/json-schema.html"
   },
   {
     "label": "Ioke",
@@ -2682,14 +2682,14 @@ var autocompleteJs = [
     "url": "/concepts/jsil-compiler.html"
   },
   {
-    "label": "Fantom",
-    "id": "fantom",
-    "url": "/concepts/fantom.html"
-  },
-  {
     "label": "Isabelle",
     "id": "isabelle",
     "url": "/concepts/isabelle.html"
+  },
+  {
+    "label": "Fantom",
+    "id": "fantom",
+    "url": "/concepts/fantom.html"
   },
   {
     "label": "NSIS",
@@ -3977,14 +3977,14 @@ var autocompleteJs = [
     "url": "/concepts/crush.html"
   },
   {
-    "label": "UCL",
-    "id": "ucl",
-    "url": "/concepts/ucl.html"
-  },
-  {
     "label": "Seed7",
     "id": "seed7",
     "url": "/concepts/seed7.html"
+  },
+  {
+    "label": "UCL",
+    "id": "ucl",
+    "url": "/concepts/ucl.html"
   },
   {
     "label": "Roslyn compiler",
