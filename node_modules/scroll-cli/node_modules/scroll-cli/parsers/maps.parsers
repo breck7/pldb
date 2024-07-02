@@ -1,0 +1,64 @@
+abstractPointConfigParser
+ // todo: scoped parsers should support abstract types
+ cruxFromId
+ cells keywordCell
+ catchAllCellType stringCell
+ single
+
+latParser
+ cells keywordCell floatCell
+ cruxFromId
+ single
+longParser
+ cells keywordCell floatCell
+ cruxFromId
+ single
+
+mapParser
+ inScope latParser longParser
+ zoomParser
+  cells keywordCell integerCell
+  cruxFromId
+  single
+ heightParser
+  cells keywordCell floatCell
+  cruxFromId
+  single
+ pointParser
+  cells keywordCell
+  inScope latParser longParser
+  cruxFromId
+  titleParser
+   extends abstractPointConfigParser
+  descriptionParser
+   extends abstractPointConfigParser
+ extends abstractScrollWithRequirementsParser
+ description Uses LeafletJs
+ string copyFromExternal leaflet.css leaflet.js
+ string requireOnce
+  <link rel="stylesheet" href="leaflet.css">
+  <script src="leaflet.js"></script>
+ javascript
+  compileInstance() {
+   const height = 500
+   const id = this._getUid()
+   return `<div id="map${id}" style="height: ${height}px;"></div>
+  <script>
+   {
+    const lat = ${this.get("lat") ?? 37.8}
+    const long = ${this.get("long") ?? 4}
+    const zoomLevel = ${this.get("zoom") ?? 4}
+    const points = ${JSON.stringify(this.findNodes("point").map(node => node.toObject()))}
+    const map = L.map("map${id}").setView([lat, long], zoomLevel)
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+     attribution: '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+     maxZoom: 18
+    }).addTo(map)
+    points.forEach(point => {
+     L.marker([point.lat, point.long])
+      .addTo(map)
+      .bindPopup("<b>" +point.title + "</b><br />" + point.description)
+    })
+   }
+  </script>`
+  }

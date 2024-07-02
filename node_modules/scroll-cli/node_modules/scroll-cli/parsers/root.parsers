@@ -1,0 +1,122 @@
+abstractScrollParser
+ cells keywordCell
+ javascript
+  compileEmbeddedVersion(compileSettings) {
+   return this.compile(compileSettings)
+  }
+  compileTextVersion() {
+    return ""
+  }
+  getHtmlRequirements(compileSettings) {
+    const {requireOnce} = this
+    if (!requireOnce)
+      return ""
+    const set = compileSettings?.alreadyRequired || this.root.alreadyRequired
+    if (set.has(requireOnce))
+      return ""
+    
+    set.add(requireOnce)
+    return requireOnce + "\n\n"
+  }
+
+abstractScrollWithRequirementsParser
+ extends abstractScrollParser
+ cruxFromId
+ javascript
+  compile(compileSettings) {
+    return this.getHtmlRequirements(compileSettings) + this.compileInstance()
+  }
+
+abstractTopLevelSingleMetaParser
+ description Use these keywords once per file.
+ extends abstractScrollParser
+ inScope slashCommentParser
+ cruxFromId
+ cells keywordCell
+ javascript
+  isTopMatter = true
+  isSetterParser = true
+  compile() {
+   return ""
+  }
+
+abstractCommandParser
+ extends abstractScrollParser
+ cruxFromId
+ cells keywordCell
+ inScope slashCommentParser
+ javascript
+  isTopMatter = true
+  compile() {
+   return ""
+  }
+
+scrollParser
+ extensions scroll
+ description Scroll is a language for scientists of all ages. Refine, share and collaborate on ideas.
+ root
+ inScope abstractScrollParser blankLineParser
+ catchAllParser catchAllParagraphParser
+ compilesTo html
+ javascript
+  setFile(file) {
+   this.file = file
+   return this
+  }
+  compile(compileSettings) {
+    this.sectionStack = []
+    return this.map(child => child.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
+  }
+  sectionStack = []
+  clearSectionStack() {
+   const result = this.sectionStack.join("")
+   this.sectionStack = []
+   return result
+  }
+  get hakonParser() {
+    if (this.isNodeJs())
+      return require("scrollsdk/products/hakon.nodejs.js")
+    return hakonParser
+  }
+  alreadyRequired = new Set()
+  compileEmbeddedVersion(compileSettings) {
+   this.sectionStack = []
+   return this.map(child => (child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+     .filter(i => i)
+     .join("\n")
+     .trim() + this.clearSectionStack()
+  }
+  get footnotes() {
+   if (this._footnotes === undefined) this._footnotes = this.filter(node => node.isFootnote)
+   return this._footnotes
+  }
+  file = {}
+  get permalink() {
+   return this.get("permalink") || this.file.permalink || ""
+  }
+ example
+  # Hello world
+  ## This is Scroll
+  * It compiles to HTML.
+  
+  code
+   // You can add code as well.
+   print("Hello world")
+
+abstractFileSettingParser
+ extends abstractTopLevelSingleMetaParser
+ cells keywordCell
+ javascript
+  compile() {
+   return ""
+  }
+
+abstractUrlSettingParser
+ extends abstractFileSettingParser
+ cells keywordCell urlCell
+ cruxFromId
+
+abstractSiteStringSettingParser
+ extends abstractFileSettingParser
+ catchAllCellType stringCell
+ cruxFromId

@@ -1,0 +1,11 @@
+dayjsParser
+ description Advanced directive that evals some Javascript code in an environment including "dayjs".
+ cruxFromId
+ extends abstractAftertextDirectiveParser
+ javascript
+  getInserts() {
+   const dayjs = require("dayjs")
+   const days = eval(this.content)
+   const index = this.parent.originalTextPostLinkify.indexOf("days")
+   return [{ index, string: `${days} ` }]
+  }

@@ -12,7 +12,7 @@ printTitleParser
    // Hacky, I know.
    const {content} = this
    if (content === undefined)
-    this.setContent(this.parent.get("title"))
+    this.setContent(this.parent.file.title)
    const { permalink } = this.parent.file
    if (!permalink) {
     this.setContent(content) // Restore it as it was.
@@ -25,7 +25,7 @@ printTitleParser
    return compiled
   }
   get originalText() {
-   return this.content ?? this.parent.get("title") ?? ""
+   return this.content ?? this.parent.file.title ?? ""
   }
   defaultClassName = "scrollTitle"
   tag = "h1"

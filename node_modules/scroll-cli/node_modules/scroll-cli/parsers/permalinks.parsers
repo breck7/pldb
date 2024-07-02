@@ -1,0 +1,16 @@
+baseUrlParser
+ description Root url of this published site on the web. Must be provided for RSS Feeds and OpenGraph tags to work, but has no effect locally.
+ extends abstractUrlSettingParser
+
+downloadUrlParser
+ description In the default Scroll theme the download button will link to this.
+ extends abstractUrlSettingParser
+
+homeUrlParser
+ description In the default Scroll theme the home button will link to "index.html". You can override this with this setting.
+ extends abstractUrlSettingParser
+
+permalinkParser
+ description When compiling, Scroll will save this file to {permalink}
+ extends abstractTopLevelSingleMetaParser
+ cells keywordCell permalinkCell

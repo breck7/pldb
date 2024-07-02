@@ -1,0 +1,16 @@
+slideshowParser
+ description Turns a page into a slideshow. A dinkus (***) separates slides. Left and right arrows navigate.
+ extends abstractScrollWithRequirementsParser
+ string copyFromExternal jquery-3.7.1.min.js slideshow.js
+ example
+  slideshow
+  Why did the cow cross the road?
+  ***
+  Because it wanted to go to the MOOOO-vies.
+  ***
+  THE END
+  ****
+ javascript
+  compile() {
+   return `<style>html {font-size: var(--base-font-size, 28px);} body {margin: auto; width: 500px;}.slideshowNav{text-align: center; margin-bottom:20px; font-size: 14px;} a{text-decoration: none;</style><script defer src="jquery-3.7.1.min.js"></script><div class="slideshowNav"></div><script defer src="slideshow.js"></script>`
+  }

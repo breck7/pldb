@@ -1,0 +1,30 @@
+abstractDinkusParser
+ extends abstractAftertextParser
+ string dinkus *
+ boolean isDinkus true
+ javascript
+  compile() {
+   return `<div class="dinkus"><span>${this.dinkus}</span></div>`
+  }
+  compileTextVersion() {
+    return this.getLine()
+  }
+
+horizontalRuleParser
+ crux ---
+ description Prints an html <hr> tag
+ extends abstractDinkusParser
+ javascript
+  compile() {
+   return `<hr>`
+  }
+
+dinkusParser
+ crux ***
+ description Prints a centered *
+ extends abstractDinkusParser
+
+endOfPostDinkusParser
+ extends abstractDinkusParser
+ crux ****
+ string dinkus ⁂

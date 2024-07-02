@@ -1,0 +1,15 @@
+chatLineParser
+ catchAllCellType anyCell
+ catchAllParser chatLineParser
+chatParser
+ description A dialogue between two people.
+ catchAllParser chatLineParser
+ cruxFromId
+ extends abstractScrollParser
+ javascript
+  compile() {
+   return this.map((line, index) => `<div style="text-align: ${index % 2 ? "right" : "left"};" class="scrollChat ${index % 2 ? "scrollChatRight" : "scrollChatLeft"}"><span>${line.asString}</span></div>`).join("")
+  }
+  compileTextVersion() {
+    return this.childrenToString()
+  }

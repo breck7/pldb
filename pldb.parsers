@@ -18,6 +18,10 @@ wordCell
  description A non-empty single word string.
  regex .+
 
+semanticVersionCell
+ highlightScope string
+ description A 3 part sem version string like 1.2.1
+
 // Date cell types
 dateCell
  highlightScope string
@@ -329,6 +333,7 @@ abstractIdParser
  extends abstractStringMeasureParser
  float sortIndex 1
  boolean isMeasureRequired true
+ boolean isConceptDelimiter true
  javascript
   getErrors() {
     const errors = super.getErrors()

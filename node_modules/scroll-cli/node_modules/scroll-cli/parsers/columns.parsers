@@ -1,0 +1,46 @@
+thinColumnsParser
+ extends abstractAftertextParser
+ cruxFromId
+ catchAllCellType integerCell
+ description Start a multicolumn grid.
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  columnWidth = 35
+  columnGap = 20
+  compile() {
+   const {columnWidth, columnGap} = this
+   const maxColumns = parseInt(this.getWord(1) ?? 10)
+   const maxTotalWidth = maxColumns * columnWidth + (maxColumns - 1) * columnGap
+   // Starting the columns always first clears the section stack.
+   return this.parent.clearSectionStack() + `<div class="scrollColumns" style="column-width:${columnWidth}ch;column-count:${maxColumns};max-width:${maxTotalWidth}ch;">`
+  }
+
+startColumnsParser
+ description Deprecated. Use "thinColumns" instead.
+ boolean isDeprecated true
+ extends thinColumnsParser
+
+wideColumnsParser
+ extends thinColumnsParser
+ description Start a double wide column.
+ javascript
+  columnWidth = 90
+
+mediumColumnsParser
+ extends thinColumnsParser
+ javascript
+  columnWidth = 65
+
+endColumnsParser
+ extends abstractAftertextParser
+ cruxFromId
+ description End a multicolumn grid.
+ javascript
+  compile() {
+   return "</div>"
+  }
+  compileEmbeddedVersion() {
+   return ""
+  }

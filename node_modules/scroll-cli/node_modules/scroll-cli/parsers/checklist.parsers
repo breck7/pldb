@@ -1,0 +1,21 @@
+checklistTodoParser
+ extends indentableParagraphParser
+ example
+  [] Get milk
+ description An incomplete checklist item.
+ crux []
+ string checked 
+ javascript
+  get text() {
+   return `<div style="text-indent:${(this.getIndentLevel() - 1) * 20}px;"><input type="checkbox" ${this.checked} id="${this.id}"><label for="${this.id}">` + super.text + `</label></div>`
+  }
+  get id() {
+   return this.get("id") || "item" + this._getUid()
+  }
+checklistDoneParser
+ extends checklistTodoParser
+ description A complete checklist list item.
+ string checked checked
+ crux [x]
+ example
+  [x] get milk

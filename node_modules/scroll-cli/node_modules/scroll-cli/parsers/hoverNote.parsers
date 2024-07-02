@@ -1,0 +1,19 @@
+lineOfTextParser
+ catchAllCellType stringCell
+ boolean isTextParser true
+hoverNoteParser
+ description Add a caveat viewable on hover on matching text. When you want to be sure you've thoroughly addressed obvious concerns but ones that don't warrant to distract from the main argument of the text.
+ cruxFromId
+ extends classMarkupParser
+ catchAllParser lineOfTextParser
+ cells keywordCell
+ javascript
+  get pattern() {
+   return this.getWordsFrom(1).join(" ")
+  }
+  get attributes() {
+   return [`class="scrollHoverNote"`, `title="${this.hoverNoteText}"`]
+  }
+  get hoverNoteText() {
+   return this.childrenToString().replace(/\n/g, " ")
+  }

@@ -1,0 +1,89 @@
+abstractPostLoopParser
+ description Do something with all posts. Takes an optional list of folder/group names.
+ extends abstractScrollParser
+ cruxFromId
+ cells keywordCell
+ catchAllCellType groupNameWithOptionalFolderCell
+ javascript
+  get files() {
+   return this.root.file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+  }
+
+loopParser
+ extends abstractAftertextParser
+ cells keywordCell
+ description Iterate over files, lines or words, evaluating code and joining the resulting HTML.
+ cruxFromId
+ inScope abstractItemsProviderParser
+ joinParser
+  extends abstractLoopConfigParser
+  description HTML to use to join the items.
+ limitParser
+  extends abstractLoopConfigParser
+  description HTML to use to join the items.
+ javascriptParser
+  extends abstractLoopConfigParser
+  description Javascript to execute for each file in the loop.
+ javascript
+  compile() {
+   const code = this.get("javascript")
+   const joinWith = this.get("join") ?? ""
+   try {
+    const limit = this.get("limit")
+    let items = this.items
+    if (limit) items = items.slice(0, parseInt(limit))
+    return items.map((item, index) => eval(code)).join(joinWith)
+   } catch (err) {
+    console.error(err)
+    return ""
+   } finally {
+    this.teardown()
+   }
+  }
+  get items() {
+   const provider = this.getChildInstancesOfParserId("abstractItemsProviderParser")[0]
+   return provider ? provider.items : []
+  }
+  teardown() {}
+
+abstractLoopConfigParser
+ cells keywordCell
+ cruxFromId
+ catchAllCellType stringCell
+
+// Extend this if you want to create a new provider
+abstractItemsProviderParser
+ cells keywordCell
+
+// Some basic providers:
+loopLinesParser
+ crux lines
+ extends abstractItemsProviderParser
+ description Iterate over the provided lines.
+ catchAllParser loopLineParser
+ loopLineParser
+  catchAllCellType stringCell
+ javascript
+  get items() {
+   return this.map(node => node.asString)
+  }
+
+loopWordsParser
+ crux words
+ extends abstractItemsProviderParser
+ catchAllCellType stringCell
+ description Iterate over the provided words.
+ javascript
+  get items() {
+   return this.getWordsFrom(1)
+  }
+
+loopGroupsParser
+ crux groups
+ extends abstractItemsProviderParser
+ catchAllCellType groupNameWithOptionalFolderCell
+ description Set this to iterate over scroll files in a folder. Provide both the folder and group name like this: [folder]/[groupName]
+ javascript
+  get items() {
+   return this.root.file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+  }

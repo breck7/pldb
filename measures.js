@@ -8,7 +8,32 @@ const measures = [
     "Type": "string",
     "SortIndex": 1,
     "IsComputed": false,
-    "IsRequired": true
+    "IsRequired": true,
+    "IsConceptDelimiter": true
+  },
+  {
+    "Name": "id",
+    "Values": 24700,
+    "Coverage": "500%",
+    "Question": "What is the ID of this concept?",
+    "Example": "05ab1e",
+    "Type": "string",
+    "SortIndex": 1,
+    "IsComputed": false,
+    "IsRequired": true,
+    "IsConceptDelimiter": true
+  },
+  {
+    "Name": "id",
+    "Values": 24700,
+    "Coverage": "500%",
+    "Question": "What is the ID of this concept?",
+    "Example": "05ab1e",
+    "Type": "string",
+    "SortIndex": 1,
+    "IsComputed": false,
+    "IsRequired": true,
+    "IsConceptDelimiter": true
   },
   {
     "Name": "name",
@@ -61,6 +86,17 @@ const measures = [
     "Type": "number",
     "SortIndex": 1.11,
     "IsComputed": true
+  },
+  {
+    "Name": "tags",
+    "Values": 24700,
+    "Coverage": "500%",
+    "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
+    "Example": "esolang",
+    "Type": "string",
+    "SortIndex": 1.2,
+    "IsComputed": false,
+    "IsRequired": true
   },
   {
     "Name": "tags",
@@ -966,17 +1002,17 @@ const measures = [
     "Coverage": "0%",
     "Question": "How is this language described here?",
     "SortIndex": 1.99,
-    "IsComputed": false
+    "IsComputed": false,
+    "Crux": "description"
   },
   {
     "Name": "githubRepo_description",
-    "Values": 5170,
-    "Coverage": "104%",
+    "Values": 0,
+    "Coverage": "0%",
     "Question": "How is this language described here?",
-    "Example": "A concise stack-based golfing language",
-    "Type": "string",
     "SortIndex": 1.99,
-    "IsComputed": false
+    "IsComputed": false,
+    "Crux": "description"
   },
   {
     "Name": "paper",
@@ -990,13 +1026,12 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 195,
-    "Coverage": "3%",
+    "Values": 0,
+    "Coverage": "0%",
     "Question": "How is this language described here?",
-    "Example": "Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages",
-    "Type": "string",
     "SortIndex": 1.99,
-    "IsComputed": false
+    "IsComputed": false,
+    "Crux": "description"
   },
   {
     "Name": "conceptDescription",
@@ -1007,6 +1042,15 @@ const measures = [
     "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false
+  },
+  {
+    "Name": "description",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "How is this language described here?",
+    "SortIndex": 1.99,
+    "IsComputed": false,
+    "Crux": "description"
   },
   {
     "Name": "interviews",
