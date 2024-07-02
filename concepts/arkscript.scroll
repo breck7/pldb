@@ -5,46 +5,50 @@ name ArkScript
 appeared 2019
 creators Alexandre Plateau and Pierre Pharel and Natendrtfm
 tags pl
-website https://arkscript-lang.github.io
+website https://arkscript-lang.dev
 latestVersion v4.0.0-rc5
-conceptDescription ArkScript is a small, fast, functional and scripting language for video games.
+conceptDescription ArkScript is a small, fast, functional and scripting language for C++ projects
 
+documentation https://arkscript-lang.dev/documentation.html
+country France
+
+isOpenSource true
 writtenIn cpp markdown yaml json csv cmake bash python bourne-shell svg xml dockerfile
 repoStats
  firstCommit 2019
- commits 2396
- committers 43
+ commits 2412
+ committers 24
  files 405
  newestCommit 2024
 country France
 originCommunity Alexandre Plateau
 
 example
- {
-     # more or less game
-     (print "More or less game!")
-     (import "random.bin")
-     (import "Math/Arithmetic.ark")
-     
-     (let number (mod (abs (random)) 10000))
-     (mut value 0)
-     (mut essais 0)
-     (mut continue true)
-     
-     (while continue {
-         (set value (toNumber (input "Input a numeric value: ")))
-         (if (< value number)
-             # then
-             (print "More!")
-             # else
-             (if (= value number)
-                 # then
-                 { (print "Bingo!") (set continue false) }
-                 # else
-                 (print "Less!")))
-         (set essais (+ 1 essais))})
-     (print "You won in " essais " tries")
- }
+ (import std.random)
+ (import std.Math)
+ 
+ (let number (mod (math:abs (random)) 10000))
+ 
+ (let game (fun () {
+     (let impl (fun (tries) {
+         (let guess (toNumber (input "Input a numeric value: ")))
+ 
+         (if (< guess number)
+             {
+                 (print "It's more than " guess)
+                 (impl (+ tries 1))}
+             (if (= guess number)
+                 {
+                     (print "You found it!")
+                     tries }
+                 {
+                     (print "It's less than " guess)
+                     (impl (+ tries 1))}))}))
+ 
+     (let tries (impl 0))
+     (print "You won in " tries " tries.")}))
+ 
+ (game)
 leachim6 ArkScript
  filepath a/ArkScript.ark
  fileExtensions ark
@@ -54,13 +58,13 @@ leachim6 ArkScript
 
 githubRepo https://github.com/ArkScript-lang/Ark
  firstCommit 2019
- stars 452
+ stars 574
  forks 42
  subscribers 12
  created 2019
- updated 2022
+ updated 2024
  description ArkScript is a small, fast, functional and scripting language for C++ projects
- issues 22
+ issues 12
 
 lineCommentToken #
 printToken print
@@ -71,12 +75,20 @@ hasLineComments true
  # A comment
 hasComments true
  # A comment
+hasImports true
+ (import std.List)
+ (import std.Math :max)
 hasPrintDebugging true
 hasSemanticIndentation false
 hasStrings true
  "Hello world"
 hasBooleans true
 
-domainName arkscript-lang.github.io
+domainName arkscript-lang.dev
 
 semanticScholar 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 22695517|Show HN: ArkScript, a small and fast language for scripting video games|2020-03-26 16:57:12 UTC|1585238232|jackrabbit_|42|101
+ 40695579|Show HN: An Online Playground for ArkScript|2024-06-16 08:29:32 UTC|1718519372|jackrabbit_|1|1
