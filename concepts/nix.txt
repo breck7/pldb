@@ -4,7 +4,7 @@ Nix
 Nix is an open source package manager created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#530 on PLDB
+#531 on PLDB
 21 Years Old
 
 - Nix first developed in NixOS Foundation
@@ -14,7 +14,7 @@ Nix is an open source package manager created in 2003.
 - GitHub supports syntax highlighting for Nix
 - Read more about Nix on the web: 1.
  https://nixos.org/
-- 70 languages in PLDB linking to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
+- 71 languages in PLDB linking to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, Ladybird, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
 
 {
  boot.loader.grub.device = &quot;/dev/sda&quot;;
