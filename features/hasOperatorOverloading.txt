@@ -1,0 +1,55 @@
+Operator Overloading
+====================
+
+# Python Program illustrate how
+# to overload an binary + operator
+  
+class A:
+    def __init__(self, a):
+        self.a = a
+  
+    # adding two objects
+    def __add__(self, o):
+        return self.a + o.a
+ob1 = A(1)
+ob2 = A(2)
+ob3 = A(&quot;Geeks&quot;)
+ob4 = A(&quot;For&quot;)
+  
+print(ob1 + ob2)
+print(ob3 + ob4)
+
+fn int IntList.get(IntList* this, int idx) @operator([])
+{
+   return this.vals[idx];
+}
+...
+IntList x = ...
+foo(x[1]);
+
+f[x_Integer] := x^2;
+f[x_String] := &quot;not a number&quot;;
+f[x_Symbol] := x^2;
+
+str = &quot;a&quot; + &quot;b&quot;
+array &lt;~ str
+
+***
+
+Languages *with* Operator Overloading include Python, C++, Perl, Ruby, PHP, C#, R, Rust, Swift, Scala, Lua, MATLAB, Haskell, Kotlin, Clojure, Dart, Ada, D, Groovy, F#, Smalltalk, Visual Basic .NET, Eiffel, C3, Wolfram Language, Ceylon, Raku, Io, Object Pascal, FreeBASIC, Seed7, Free Pascal, Speedie
+
+***
+
+Languages *without* Operator Overloading include JavaScript, C, Java, Go, TypeScript, Objective-C, Visual Basic, Pascal, BASIC, Modula-2, progsbase, Veryl, Jule
+
+***
+
+View all concepts with or missing a *hasOperatorOverloading* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOperatorOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasOperatorOverloading%22%2C%22origData%22%3A%22hasOperatorOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOperatorOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasOperatorOverloading%22%2C%22origData%22%3A%22hasOperatorOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Operator Overloading on the web: 1. 2.
+ https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading
+ https://en.wikipedia.org/wiki/Operator_overloading

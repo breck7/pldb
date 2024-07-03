@@ -32,7 +32,7 @@ abstractTableParser
   compile() {
    return `<table class="scrollTable"><thead><tr>${this.tableHeader.join("\n")}</tr></thead>\n<tbody>${this.tableBody}</tbody></table>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.childrenToString()
   }
 
@@ -144,7 +144,7 @@ printTableParser
     }
      return tsv
    }
-   compileTextVersion() {
+   compileTxt() {
      return this.tsv
    }
 
@@ -153,7 +153,7 @@ tabularDataParser
  pattern \t
  extends abstractCommentParser
  javascript
-  compileTextVersion() {
+  compileTxt() {
     return ""
   }
   get headerNode() {

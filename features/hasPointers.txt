@@ -1,0 +1,71 @@
+Pointers
+========
+
+int *ptr;
+
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+  i, j := 42, 2701
+
+  p := &amp;i         // point to i
+  fmt.Println(*p) // read i through the pointer
+  *p = 21         // set i through the pointer
+  fmt.Println(i)  // see the new value of i
+
+  p = &amp;j         // point to j
+  *p = *p / 37   // divide j through the pointer
+  fmt.Println(j) // see the new value of j
+}
+
+// Pointers supported only under certain conditions.
+// Get 16 bytes of memory from the process&#39;s unmanaged memory
+IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
+
+var x = 1;
+&amp;x &lt;- 2;
+
+let ptr: *int = nil
+
+|| i = 0
+|| p = &amp;i
+*p = 1
+if (i == 1)
+ &quot;success&quot;
+
+type real_list_t
+  real :: sample_data(100)
+  type (real_list_t), pointer :: next =&gt; null ()
+end type
+
+type (real_list_t), target :: my_real_list
+type (real_list_t), pointer :: real_list_temp
+
+real_list_temp =&gt; my_real_list
+do
+  read (1,iostat=ioerr) real_list_temp%sample_data
+  if (ioerr /= 0) exit
+  allocate (real_list_temp%next)
+  real_list_temp =&gt; real_list_temp%next
+end do
+
+***
+
+Languages *with* Pointers include C, Go, C#, Objective-C, COBOL, Ada, D, Eiffel, C3, PL/I, Modula-2, Oberon, Felix, Dale, BlitzMax, FreeBASIC, Jule, Speedie, Aardvark, Fortran 90
+
+***
+
+Languages *without* Pointers include JavaScript, Python, Java, Elixir, progsbase
+
+***
+
+View all concepts with or missing a *hasPointers* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Pointers on the web: 1.
+ https://en.wikipedia.org/wiki/Pointer_(computer_programming)

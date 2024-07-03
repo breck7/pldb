@@ -1,0 +1,102 @@
+Mixins
+======
+
+# https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+class EssentialFunctioner(LoggerMixin, object):
+
+module A
+   def a1
+   end
+   def a2
+   end
+end
+module B
+   def b1
+   end
+   def b2
+   end
+end
+class Sample
+include A
+include B
+   def s1
+   end
+end
+samp = Sample.new
+samp.a1
+samp.a2
+samp.b1
+
+// https://www.typescriptlang.org/docs/handbook/mixins.html
+class SmartObject implements Disposable, Activatable {
+}
+// Note: still need to do some runtime ops to make that work.
+
+# Including the same code in different modules provides mixin-like behavior.
+module Normal
+include(&quot;mycode.jl&quot;)
+end
+
+module Testing
+include(&quot;safe_operators.jl&quot;)
+include(&quot;mycode.jl&quot;)
+end
+
+(mixin (interface-expr ...) (interface-expr ...)
+ class-clause ...)
+
+@mixin reset-list
+  margin: 0
+  padding: 0
+  list-style: none
+@mixin horizontal-list
+  @include reset-list
+  li
+    display: inline-block
+    margin:
+      left: -2px
+      right: 2em
+nav ul
+  @include horizontal-list
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+nav ul {
+  @include horizontal-list;
+}
+
+grammar org.example.domainmodel.Domainmodel
+       with org.eclipse.xtext.common.Terminals
+
+***
+
+Languages *with* Mixins include Python, Ruby, TypeScript, Julia, Racket, Sass, SCSS, Xtext
+
+***
+
+Languages *without* Mixins include CSS
+
+***
+
+View all concepts with or missing a *hasMixins* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMixins&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMixins%22%2C%22origData%22%3A%22hasMixins%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMixins&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMixins%22%2C%22origData%22%3A%22hasMixins%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Mixins on the web: 1.
+ https://en.wikipedia.org/wiki/Mixin

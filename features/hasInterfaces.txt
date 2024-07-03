@@ -1,0 +1,106 @@
+Interfaces
+==========
+
+interface MyInterface{
+   /* This is a default method so we need not
+    * to implement this method in the implementation
+    * classes
+    */
+   default void newMethod(){
+       System.out.println(&quot;Newly added default method&quot;);
+   }
+   /* Already existing public and abstract method
+    * We must need to implement this method in
+    * implementation classes.
+    */
+   void existingMethod(String str);
+}
+public class Example implements MyInterface{
+  // implementing abstract method
+    public void existingMethod(String str){
+        System.out.println(&quot;String is: &quot;+str);
+    }
+    public static void main(String[] args) {
+      Example obj = new Example();
+      
+      //calling the default method of interface
+        obj.newMethod();
+        //calling the abstract method of interface
+        obj.existingMethod(&quot;Java 8 is easy to learn&quot;);
+  
+    }
+}
+
+// https://www.typescriptlang.org/docs/handbook/interfaces.html
+interface SquareConfig {
+   color?: string;
+   width?: number;
+}
+
+protocol MyProtocol {
+init(parameter: Int)
+var myVariable: Int { get set }
+var myReadOnlyProperty: Int { get }
+func myMethod()
+func myMethodWithBody()
+}
+extension MyProtocol {
+func myMethodWithBody() {
+  // implementation goes here
+  }
+}
+
+interface Named {
+   val name: String
+}
+interface Person : Named {
+    val firstName: String
+    val lastName: String
+    
+    override val name: String get() = &quot;$firstName $lastName&quot;
+}
+
+@protocol Printing
+   -(void) print;
+@end
+
+interface Character {
+ id: ID!
+ name: String!
+ friends: [Character]
+ appearsIn: [Episode]!
+}
+type Human implements Character {
+  id: ID!
+  name: String!
+  friends: [Character]
+  appearsIn: [Episode]!
+  starships: [Starship]
+  totalCredits: Int
+}
+type Droid implements Character {
+  id: ID!
+  name: String!
+  friends: [Character]
+  appearsIn: [Episode]!
+  primaryFunction: String
+}
+
+***
+
+Languages *with* Interfaces include Java, TypeScript, Swift, Kotlin, Objective-C, GraphQL
+
+***
+
+Languages *without* Interfaces include progsbase
+
+***
+
+View all concepts with or missing a *hasInterfaces* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInterfaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasInterfaces%22%2C%22origData%22%3A%22hasInterfaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInterfaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasInterfaces%22%2C%22origData%22%3A%22hasInterfaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Interfaces on the web: 1.
+ https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)

@@ -1795,7 +1795,7 @@ class Tables {
       json +
       "\n\n" +
       Disk.read(path.join(__dirname, "code", "browser", "client.js"))
-    return `plainText\n ` + js.replace(/\n/g, "\n ")
+    return `script\n ` + js.replace(/\n/g, "\n ")
   }
 
   get keywordsImports() {

@@ -1,0 +1,45 @@
+Classes
+=======
+
+class Person {}
+
+class Person (object):
+  def __init__(self, name):
+    self.name = name
+
+# A tiny Person class in Ruby:
+class Person
+  attr_accessor :name, :age, :   # getter and setter methods
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+end
+
+# Create a new Person object:
+person = Person.new(&quot;John&quot;, 30)
+puts person.name
+puts person.age
+
+# Change the age of the person:
+person.age = 35
+puts person.age
+
+***
+
+Languages *with* Classes include JavaScript, Python, Java, C++, Ruby, PHP, TypeScript, C#, PowerShell, Swift, Scala, Haskell, Kotlin, CoffeeScript, Dart, Crystal, Reason, Groovy, OCaml, F#, Chapel, ABAP, SystemVerilog, Clean, X10, Angelscript, Apex, JS++, Speedie, Aardvark
+
+***
+
+Languages *without* Classes include C, C3, progsbase, C2
+
+***
+
+View all concepts with or missing a *hasClasses* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasClasses%22%2C%22origData%22%3A%22hasClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasClasses%22%2C%22origData%22%3A%22hasClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Classes on the web: 1.
+ https://en.wikipedia.org/wiki/Class_(computer_programming)

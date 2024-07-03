@@ -1,0 +1,58 @@
+Conditionals
+============
+
+if (true)
+ console.log(&quot;hi!&quot;)
+
+if True:
+ print(&quot;Hello world&quot;)
+
+if true then
+    print(&quot;true&quot;)
+end
+
+if true do
+  IO.puts(&quot;Hello world&quot;)
+end
+
+- var user = {description: &#39;foo bar baz&#39;}
+- var authorised = false
+#user
+  if user.description
+    h2.green Description
+    p.description= user.description
+  else if authorised
+    h2.blue Description
+    p.description.
+      User has no description,
+      why not add one...
+  else
+    h2.red Description
+    p.description User has no description
+
+(if positive? 1 -1)
+
+if BOOLEAN_EXPRESSION {
+    outln(&quot;&quot;Condition is true)
+}
+
+EITHER IF A &gt; B$ FWD = 1$ OTHERWISE$ FWD = 0$
+
+***
+
+Languages *with* Conditionals include JavaScript, C, Python, Java, Perl, Ruby, PHP, Go, C#, R, Bash, PowerShell, Rust, Swift, Scala, Lua, Haskell, Kotlin, Elixir, CoffeeScript, Objective-C, Julia, Erlang, Dart, Ada, Pascal, Solidity, Crystal, Reason, Scheme, Groovy, OCaml, F#, Chapel, Pug, HCL, VHDL, F*, ABAP, Verilog, Koka, C3, Opa, Bicep, janet, SystemVerilog, progsbase, Slope, AutoIt, Twig, C2, Clean, Felix, Dylan, Flow9, Maxima, ATS, Veryl, X10, Angelscript, Ligo, Apex, Jule, HOPE, Sophia, JS++, Speedie, fp, Aardvark, PowerQuery M, Q#, nimrod, BALGOL
+
+***
+
+Languages *without* Conditionals include HTML, JSON, XML
+
+***
+
+View all concepts with or missing a *hasConditionals* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasConditionals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasConditionals%22%2C%22origData%22%3A%22hasConditionals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasConditionals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasConditionals%22%2C%22origData%22%3A%22hasConditionals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Conditionals on the web: 1.
+ https://en.wikipedia.org/wiki/Conditional_(computer_programming)

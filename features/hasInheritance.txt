@@ -1,0 +1,43 @@
+Inheritance
+===========
+
+class B {}
+class A extends B {}
+
+class SumComputer(object):
+   def __init__(self, a, b):
+       self.a = a
+       self.b = b
+   def transform(self, x):
+       raise NotImplementedError
+   def inputs(self):
+       return range(self.a, self.b)
+   def compute(self):
+       return sum(self.transform(value) for value in self.inputs())
+ class SquareSumComputer(SumComputer):
+     def transform(self, x):
+         return x * x
+ class CubeSumComputer(SumComputer):
+     def transform(self, x):
+         return x * x * x
+
+class Person (Animal)
+
+***
+
+Languages *with* Inheritance include JavaScript, Python, Java, PHP, TypeScript, Scala, CoffeeScript, Dart, Groovy, Pug, C3, SystemVerilog, Twig, Apex, spider, SpiderBasic, JS++, Speedie, Aardvark
+
+***
+
+Languages *without* Inheritance include progsbase
+
+***
+
+View all concepts with or missing a *hasInheritance* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInheritance&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasInheritance%22%2C%22origData%22%3A%22hasInheritance%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInheritance&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasInheritance%22%2C%22origData%22%3A%22hasInheritance%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Inheritance on the web: 1.
+ https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)

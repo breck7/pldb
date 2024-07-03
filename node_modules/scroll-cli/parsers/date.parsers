@@ -45,6 +45,6 @@ printDateParser
    }
    return day || ""
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.day
   }

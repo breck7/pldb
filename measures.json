@@ -99,17 +99,6 @@
     "IsRequired": true
   },
   {
-    "Name": "tags",
-    "Values": 19760,
-    "Coverage": "400%",
-    "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
-    "Example": "esolang",
-    "Type": "string",
-    "SortIndex": 1.2,
-    "IsComputed": false,
-    "IsRequired": true
-  },
-  {
     "Name": "rijuRepl_website",
     "Values": 112,
     "Coverage": "2%",

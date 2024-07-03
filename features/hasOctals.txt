@@ -1,0 +1,76 @@
+Octals
+======
+
+// 0[oO]?[0-7]+n?
+0o464063622
+
+# 0[oO](?:_?[0-7])+
+
+// 0[0-7_]+[lL]?
+
+# 0_?[0-7]+(_[0-7]+)*
+
+// 0[0-7]+
+
+// 0o[0-7_]+
+
+-- 0[oO]_*[0-7](_*[0-7])*
+
+# 0o[0-7]+
+
+# 0o[0-7]+((_[0-7]+)+)?
+
+% 0o[0-7]+
+
+// 0[oO][0-7][0-7_]*
+
+// 0[0-7_]+
+
+// 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+
+// 0[oO][0-7]+
+
+-- O&quot;[0-7_]+&quot;
+
+// 0[0-7]+[LlUu]*
+
+// ([0-9]+)|(\&#39;o)[0-7]+
+
+; 0\d+
+
+; 0[0-7]+j?
+
+% [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()&lt;&gt;\[\]{}/%\s])
+
+-- 0[cC][0-7]+
+
+0o177
+
+// ([1-9][_0-9]*)?\s*\&#39;[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
+
+# 0[0-7]+j?
+
+# 0\d+
+
+// 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+
+0455
+
+***
+
+Languages *with* Octals include JavaScript, Python, Java, Perl, Go, Swift, Haskell, Elixir, Julia, Prolog, Zig, Reason, D, Coq, OCaml, F#, Chapel, VHDL, Protocol Buffers, IDL, F*, Verilog, AutoHotkey, Hy, Puppet, PostScript, Cython, Eiffel, C3, Opa, SystemVerilog, NumPy, Cryptol, AutoIt, GLSL, HLSL, Golo, Boo, Felix, AspectJ, Meson, ooc, Isabelle, Logtalk, SourcePawn, Earl Grey, Jule, FloScript, Aardvark, Pawn, nimrod, CBOR data definition language
+
+***
+
+Languages *without* Octals include Lua, progsbase, Speedie
+
+***
+
+View all concepts with or missing a *hasOctals* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOctals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasOctals%22%2C%22origData%22%3A%22hasOctals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOctals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasOctals%22%2C%22origData%22%3A%22hasOctals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Octals on the web: 1.
+ https://en.wikipedia.org/wiki/Octal

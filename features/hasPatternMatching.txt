@@ -1,0 +1,40 @@
+Pattern Matching
+================
+
+fib 0 = 1
+fib 1 = 1
+fib n | n &gt;= 2
+      = fib (n-1) + fib (n-2)
+
+def fib(0), do: 1
+def fib(1), do: 1
+def fib(n) when n &gt;= 2, do: fib(n-1) + fib(n-2)
+
+match [head] + tail in [0, 1, 2, 3]:
+   print(head, tail)
+
+match x with
+ | Some x =&gt; println$ x;
+ | None =&gt; println &quot;NONE&quot;;
+ endmatch;
+
+This functionality is included in switch statements.
+
+***
+
+Languages *with* Pattern Matching include Rust, Haskell, Elixir, Coconut, Felix, Egison, HOPE, Aardvark, NPL
+
+***
+
+Languages *without* Pattern Matching include progsbase, Veryl
+
+***
+
+View all concepts with or missing a *hasPatternMatching* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPatternMatching&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPatternMatching%22%2C%22origData%22%3A%22hasPatternMatching%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPatternMatching&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPatternMatching%22%2C%22origData%22%3A%22hasPatternMatching%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Pattern Matching on the web: 1.
+ https://en.wikipedia.org/wiki/Pattern_matching

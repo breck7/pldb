@@ -7,7 +7,7 @@ expanderParser
    this.parent.sectionStack.push("</details>")
    return `<details>${super.compile()}`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.content
   }
   tag = "summary"

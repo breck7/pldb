@@ -6,8 +6,8 @@ abstractHeaderParser
    this.parent.sectionStack.push("</div>")
    return `<div class="scrollSection">` + super.compile(compileSettings)
   }
-  compileTextVersion() {
-    const line = super.compileTextVersion()
+  compileTxt() {
+    const line = super.compileTxt()
     return line + "\n" + "=".repeat(line.length)
   }
 

@@ -1,0 +1,40 @@
+Ternary operators
+=================
+
+let i = true ? 1 : 0
+
+#include &lt;stdio.h&gt;
+int main(void) { printf(&quot;%d&quot;, 1 ? 1 : 0); }
+
+print(1 if 1 else 0)
+
+&lt;?php echo 1 ? 1 : 0;
+
+// Since if statements are expressions
+println(if (true) true else false)
+
+int foo = x ? 1 : 0;
+
+while
+ printline (1,0)(random[]&gt;0.5)
+
+(set y (? (= x 0) 1 2))
+
+***
+
+Languages *with* Ternary operators include JavaScript, C, Python, PHP, Kotlin, C3, Speedie, Wax
+
+***
+
+Languages *without* Ternary operators include HTML, CSS, JSON, XML, Scroll, Jule, Explorer
+
+***
+
+View all concepts with or missing a *hasTernaryOperators* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTernaryOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTernaryOperators%22%2C%22origData%22%3A%22hasTernaryOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTernaryOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTernaryOperators%22%2C%22origData%22%3A%22hasTernaryOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Ternary operators on the web: 1.
+ https://en.wikipedia.org/wiki/Ternary_operation

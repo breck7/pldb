@@ -1,0 +1,76 @@
+Binary Literals
+===============
+
+// 0[bB][01]+n?
+0b100110100000110011110010010
+
+# 0[bB](?:_?[01])+
+
+// 0[bB][01][01_]*[lL]?
+
+# 0b[01]+(_[01]+)*
+
+// 0b[01_]+
+
+-- 0[bB]_*[01](_*[01])*
+
+# 0b[01]+
+
+# 0b[01]+((_[01]+)+)?
+
+% 0b[01]+
+
+// 0[bB][01][01_]*
+
+// 0[Bb][01_]+
+
+-- b&#39;[01]+&#39;
+
+// 0[bB][01][01_]*[uU]?[yslLn]?
+
+// 0[bB][01]+
+
+-- B&quot;[01_]+&quot;
+
+// ([0-9]+)|(\&#39;b)[01]+
+
+-- 0[bB][01]+
+
+0b110011
+
+// \$([01]{4})(_[01]{4})+
+
+// ([1-9][_0-9]*)?\s*\&#39;[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
+
+/ [01]+b
+
+// 0[Bb][01_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+
+// [01]+b
+
+&#39; \%[10]+
+
+0b0001010101
+
+|| num = 0b010101
+
+`2_101` would evaluate as a binary number.
+
+***
+
+Languages *with* Binary Literals include JavaScript, Python, Java, Perl, Swift, Haskell, Elixir, Julia, Prolog, Zig, Reason, D, MySQL, Coq, OCaml, F#, Chapel, VHDL, F*, Verilog, Eiffel, C3, Opa, Futhark, Ceylon, SystemVerilog, NumPy, K, Felix, AspectJ, ooc, Isabelle, Logtalk, BlitzMax, Whiley, Monkey, BlitzBasic, Earl Grey, Croc, Jule, FloScript, MiniD, Savi, Speedie, parasail, Aardvark, nimrod, CBOR data definition language
+
+***
+
+Languages *without* Binary Literals include progsbase
+
+***
+
+View all concepts with or missing a *hasBinaryNumbers* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBinaryNumbers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBinaryNumbers%22%2C%22origData%22%3A%22hasBinaryNumbers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBinaryNumbers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBinaryNumbers%22%2C%22origData%22%3A%22hasBinaryNumbers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Binary Literals on the web: 1.
+ https://en.wikipedia.org/wiki/Binary_number

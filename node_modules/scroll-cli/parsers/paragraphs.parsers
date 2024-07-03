@@ -14,8 +14,8 @@ paragraphParser
     newLine.destroy()
    return compiled
   }
-  compileTextVersion() {
-    const children = this.filter(node => node.compileTextVersion).map(node => node.compileTextVersion()).filter(i => i).join("\n")
+  compileTxt() {
+    const children = this.filter(node => node.compileTxt).map(node => node.compileTxt()).filter(i => i).join("\n")
     const dateline = this.getNode("dateline")
     return (dateline ? dateline.day + "\n\n" : "") + (this.originalText || "") + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
   }
@@ -39,6 +39,6 @@ indentableParagraphParser
      .trim()
    )
   }
-  compileTextVersion() {
-    return this.getWord(0) + " " + super.compileTextVersion()
+  compileTxt() {
+    return this.getWord(0) + " " + super.compileTxt()
   }

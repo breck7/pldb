@@ -1,0 +1,33 @@
+Doc comments
+============
+
+/// Adds 2 numbers
+let rec add x y =
+ x + y
+
+-- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+-- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
+bool :: forall a. Boolean -&gt; a -&gt; a -&gt; a
+bool true x _ = x
+bool false _ x = x
+
+/**
+ * @param [in] foo &quot;The foo value&quot;
+ * @return &quot;the toal foo count&quot;
+ **/
+
+// Documentation comment for a_function
+fn a_function() {}
+
+function Find (|string| pattern, |int| pos=0, |int|)
+ description &quot;Returns the position of pattern in self, starting from &#39;pos&#39;. If not found, we return -1.&quot;
+
+***
+
+Languages *with* Doc comments include F#, PureScript, C3, Jule, Speedie
+
+***
+
+View all concepts with or missing a *hasDocComments* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDocComments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDocComments%22%2C%22origData%22%3A%22hasDocComments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDocComments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDocComments%22%2C%22origData%22%3A%22hasDocComments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

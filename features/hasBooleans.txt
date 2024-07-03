@@ -1,0 +1,48 @@
+Booleans
+========
+
+false
+
+c := true
+
+const result = true
+
+true
+false
+
+ let res = true
+
+(define open? #t)
+
+true false
+
+; The symbol nil represents falsity as well as the empty list.
+; The symbol t is the default representation for truth, but any object other than nil also counts as true.
+
+null.bool
+true
+false
+
+true
+false
+1
+0
+
+***
+
+Languages *with* Booleans include JavaScript, C, Python, Java, Ruby, PHP, JSON, Go, TypeScript, SQL, C#, R, Rust, Swift, Scala, Lua, Kotlin, Elixir, CoffeeScript, Julia, COBOL, Dart, Visual Basic, Ada, Pascal, Solidity, Nim, Crystal, PostgreSQL, Reason, MySQL, GraphQL, Groovy, OCaml, F#, HCL, Liquid, Protocol Buffers, Visual Basic .NET, MongoDB, ANTLR, F*, ABAP, MoonScript, EDN, NetLogo, PL/SQL, C3, Nearley, CouchDB, SPARQL, janet, UML, Modula-2, progsbase, Click, Slope, idyll, wisp, Twig, C2, Simula, eC, Transact-SQL, Modula-3, Oz, TLA, ArkScript, MariaDB, Isabelle, XL, Lasso, Angelscript, Classroom Object Oriented Language, BlitzBasic, spry, Ligo, Apex, Concise Encoding, Augmented Backus-Naur Form, Jule, Jison Lex, Bluespec, Spin, Sophia, JSON Lines, Cell, Ezhil, Jupyter Notebook, Action!, S-algol, Uniform eXchange Format, JS++, Speedie, Aardvark, PROMAL, carth, Bel, C/AL, Amazon Redshift, PowerQuery M, blockml, Ion, Ren, Arden syntax, fizz, BALGOL, Caché Basic, bag-format, Freefem, llhd, Mscgen, PLZ, opengraph, Friendly Enough Expression Language, mckeeman-form
+
+***
+
+Languages *without* Booleans include Markdown, Ini, SQLite, Veryl
+
+***
+
+View all concepts with or missing a *hasBooleans* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBooleans&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBooleans%22%2C%22origData%22%3A%22hasBooleans%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBooleans&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBooleans%22%2C%22origData%22%3A%22hasBooleans%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Booleans on the web: 1.
+ https://en.wikipedia.org/wiki/Boolean_data_type

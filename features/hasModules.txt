@@ -1,0 +1,104 @@
+Module Pattern
+==============
+
+// Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
+// The first statement, other than comments, in a Java source file, must be the package declaration.
+// Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
+// This source file must be Drawing.java in the illustration directory.
+package illustration;
+import java.awt.*;
+public class Drawing {
+ // ...
+}
+
+// In C#, namespaces are the semi-equivalent of Java&#39;s packages.
+namespace com.test
+{
+   class Test {}
+}
+
+module MyModule
+using Lib
+
+using BigLib: thing1, thing2
+
+import Base.show
+
+export MyType, foo
+
+struct MyType
+    x
+end
+
+bar(x) = 2x
+foo(a::MyType) = bar(a.x) + 1
+
+show(io::IO, a::MyType) = print(io, &quot;MyType $(a.x)&quot;)
+end
+
+(module nest racket
+   (provide (for-syntax meta-eggs)
+            (for-meta 1 meta-chicks)
+            num-eggs)
+   (define-for-syntax meta-eggs 2)
+   (define-for-syntax meta-chicks 3)
+   (define num-eggs 2))
+
+module constants
+implicit none
+
+   real, parameter :: pi = 3.1415926536
+   real, parameter :: e = 2.7182818285
+   
+contains
+   subroutine show_consts()
+      print*, &quot;Pi = &quot;, pi
+      print*,  &quot;e = &quot;, e
+   end subroutine show_consts
+   
+end module constants
+
+program module_example
+use constants
+implicit none
+
+   real :: x, ePowerx, area, radius
+   x = 2.0
+   radius = 7.0
+   ePowerx = e ** x
+   area = pi * radius**2
+   
+   call show_consts()
+   
+   print*, &quot;e raised to the power of 2.0 = &quot;, ePowerx
+   print*, &quot;Area of a circle with radius 7.0 = &quot;, area
+   
+end program module_exampl
+
+(* In OCaml, every piece of code is wrapped into a module. *)
+(* amodule.ml *)
+let hello () = print_endline &quot;Hello&quot;
+(* bmodule.ml *)
+Amodule.hello ()
+
+module my_module::submodule;
+...
+
+module App
+ function Path (|string|)
+  // return the app&#39;s path here
+
+***
+
+Languages *with* Module Pattern include Java, C#, Julia, Racket, Fortran, OCaml, C3, progsbase, Speedie, Aardvark
+
+***
+
+View all concepts with or missing a *hasModules* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasModules&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasModules%22%2C%22origData%22%3A%22hasModules%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasModules&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasModules%22%2C%22origData%22%3A%22hasModules%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Module Pattern on the web: 1.
+ https://en.wikipedia.org/wiki/Module_pattern

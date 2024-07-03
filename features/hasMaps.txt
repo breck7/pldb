@@ -1,0 +1,49 @@
+Maps
+====
+
+{&quot;name&quot;: &quot;Mary&quot;}
+
+myMap = {
+    key = &quot;value&quot;,
+    [35] = 35,
+}
+
+%{key: &quot;value&quot;}
+
+let my_map: [int:str] = {
+    0: &quot;Key 0&quot;,
+    1: &quot;Key 1&quot;,
+    2: &quot;Key 2&quot;,
+}
+
+|| x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
+printline x[&quot;b&quot;] // Bird
+
+(let m (map str int) (alloc (map str int)))
+
+(set m &quot;xyz&quot; 123)
+
+(insert m &quot;abc&quot; 456) ; exactly same as &#39;set&#39;
+
+(print (get m &quot;xyz&quot;))
+
+(remove m &quot;xyz&quot;)
+
+(print (get m &quot;xyz&quot;))
+;^ if a value is not there, the &quot;zero&quot; value of the element type is returned
+; for numbers, 0; for compound types, null.
+
+***
+
+Languages *with* Maps include JSON, Lua, Elixir, EDN, Jule, Speedie, Wax
+
+***
+
+View all concepts with or missing a *hasMaps* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMaps&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMaps%22%2C%22origData%22%3A%22hasMaps%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMaps&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMaps%22%2C%22origData%22%3A%22hasMaps%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Maps on the web: 1.
+ https://en.wikipedia.org/wiki/Associative_array

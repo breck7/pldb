@@ -1,0 +1,214 @@
+File Imports
+============
+
+import { helloWorld } from &quot;./helloWorld.js&quot;;
+
+//  If a header file is included within &lt;&gt;, the preprocessor will search a predetermined directory path to locate the header file. If the header file is enclosed in &quot;&quot;, the preprocessor will look for the header file in the same directory as the source file.
+#include &lt;stdio.h&gt;
+#include &quot;stdio.h&quot;
+
+import datetime
+oTime = datetime.datetime.now()
+from my_pkg import my_funcs
+
+import javax.swing.*;
+import javax.swing.JOptionPane;
+// use fully qualified name without import:
+javax.swing.JOptionPane.showMessageDialog(null, &quot;Hi&quot;);
+// There are 166 packages containing 3279 classes and interfaces in Java 5.
+// import java.io.*; Input-output classes.
+
+@import &#39;custom.css&#39;;
+
+use Digest::MD5 &#39;md5_hex&#39;;
+
+load &#39;filename.rb&#39;
+require &#39;filename&#39;
+require &#39;trig.rb&#39;
+
+&lt;?php
+include &#39;vars.php&#39;;
+require &#39;filename&#39;; // FATAL error if fails
+
+import (
+   &quot;fmt&quot;
+   &quot;math&quot;
+)
+import . &quot;fmt&quot;
+import _ &quot;io&quot;
+import log &quot;github.com/foo/bar&quot;
+import m &quot;math&quot;
+
+import { ZipCodeValidator } from &quot;./ZipCodeValidator&quot;;
+/// &lt;reference path=&quot;../typings/jquery.d.ts&quot;/&gt;
+/// &lt;reference path=&quot;components/someclass.ts&quot;/&gt;
+import moo = module(&#39;moo&#39;);
+/// &lt;amd-dependency path=&quot;legacy/moduleA&quot; name=&quot;moduleA&quot;/&gt;
+
+using static System.Console;
+using static System.Math;
+class Program
+{
+    static void Main()
+    {
+        WriteLine(Sqrt(3*3 + 4*4));
+    }
+}
+
+source(&quot;filename.r&quot;)
+
+source ./bash.sh
+
+use ::std::fs;  // Imports from the `std` crate, not the module below.
+use self::std::fs as self_fs;  // Imports the module below.
+mod my;
+use self::foo::Zoo as _;
+#[path = &quot;foo.rs&quot;]
+mod c;
+
+import UIKit
+import UIKit.UITableViewController
+let tvc = UITableViewController()
+let vc = UIViewController()
+let label = UILabel()
+
+import pkg.cls1
+import pkg.pkfcn
+
+import Data.Maybe
+import Mod as Foo
+import Mod (x,y, (+++))
+import qualified Mod
+import Mod hiding (x,y,(+++))
+import qualified Mod hiding (x,y)
+
+import foo.Bar // Bar is now accessible without qualification
+import foo.* // everything in &#39;foo&#39; becomes accessible
+import bar.Bar as bBar // bBar stands for &#39;bar.Bar&#39;
+
+(load &quot;fun&quot;)
+(load &quot;files/fun&quot;)
+(load-file &quot;./files/fun.clj&quot;)
+(defproject project-a
+:dependencies [[org.clojure/clojure &quot;1.5.1&quot;]
+              [project-b &quot;0.1.0&quot;]])
+(require &#39;[clojure.string :as string])
+(use &#39;[clojure.string :only [split]])
+(import &#39;java.util.Date)
+(java.util.Date.)
+(require &#39;clojure.contrib.def &#39;clojure.contrib.except &#39;clojure.contrib.sql)
+(require &#39;(clojure.contrib def except sql))
+
+# Alias the module so it can be called as Bar instead of Foo.Bar
+alias Foo.Bar, as: Bar
+
+# Require the module in order to use its macros
+require Foo
+
+# Import functions from Foo so they can be called without the `Foo.` prefix
+import Foo
+
+# Invokes the custom code defined in Foo as an extension point
+use Foo
+
+// #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
+#import &lt;Foundation/Foundation.h&gt;
+#include &lt;asl.h&gt;
+#include &lt;mach/mach.h&gt;
+
+# Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
+# One can have multiple files per module, and multiple modules per file:
+using MyModule
+using MyModule: x, p
+import MyModule
+import MyModule.x, MyModule.p
+import MyModule: x, p
+module Foo
+include(&quot;file1.jl&quot;)
+include(&quot;file2.jl&quot;)
+end
+
+-include(&quot;my_records.hrl&quot;).
+-include(&quot;incdir/my_records.hrl&quot;).
+-include(&quot;/home/user/proj/my_records.hrl&quot;).
+-include(&quot;$PROJ_ROOT/my_records.hrl&quot;).
+-include_lib(&quot;kernel/include/file.hrl&quot;).
+
+import &#39;file-system.dart&#39;;
+import &#39;dart:math&#39; as math;
+
+(require (prefix-in tcp: racket/tcp))
+
+require &quot;../../spec_helper&quot;
+
+open module-or-namespace-name
+open System.IO
+open List
+open Seq
+
+//- index.pug
+doctype html
+html
+  include includes/head.pug
+  body
+    h1 My Site
+    p Welcome to my super lame site.
+    include includes/foot.pug
+
+const fs = require(&quot;fs&quot;)
+
+import ballerina/http;
+import ballerina/io;
+
+import std::io;
+
+(load-mod my-module)
+(load &quot;examples/test.slo&quot;)
+
+import runtime;
+
+(import std.List)
+(import std.Math :max)
+
+import settings.scroll
+
+// file scope import
+import $sv::SvPackage::*;
+
+module ModuleA {
+    import PackageA::*;
+    import PackageA::paramA;
+}
+
+package PackageA {
+    local paramA: u32 = 1;
+}
+
+import x10.io.Console;
+
+import &quot;http://www.xtext.org/example/Domainmodel&quot;
+import &quot;http://www.xtext.org/example/Domainmodel&quot; as dmodel
+
+import m &#39;math&#39;
+
+let {print} = import &quot;std.io&quot;
+
+use std::fs
+use std::sys::{self, open, O_RDWR}
+use std::math::*
+
+import Proj
+
+***
+
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, F#, Pug, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, bog, Jule, Speedie, Aardvark
+
+***
+
+Languages *without* File Imports include HTML, JSON
+
+***
+
+View all concepts with or missing a *hasImports* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasImports&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasImports%22%2C%22origData%22%3A%22hasImports%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasImports&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasImports%22%2C%22origData%22%3A%22hasImports%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

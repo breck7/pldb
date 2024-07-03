@@ -1,0 +1,127 @@
+Directives
+==========
+
+&quot;use strict&quot;;
+&quot;use asm&quot;;
+
+#include &lt;stdio.h&gt;
+#define height 10
+#ifdef
+#endif
+#if
+#else
+#ifndef
+#undef
+#pragma
+
+from __future__ import feature
+# coding=&lt;encoding name&gt;
+
+# In Perl, the keyword &quot;use&quot;, which imports modules, can also be used to specify directives, such as use strict; or use utf8;
+use utf8;
+
+coding: UTF-8
+
+#define MAX_CLIENTS 200
+int array[MAX_CLIENTS];
+
+#if PRODUCTION
+//code
+#elif DEVELOPMENT
+//code
+#else
+//code
+#endif
+
+// A conditionally-compiled module
+#[cfg(target_os = &quot;linux&quot;)]
+mod bar {
+    /* ... */
+}
+// General metadata applied to the enclosing module or crate.
+#![crate_type = &quot;lib&quot;]
+// A function marked as a unit test
+#[test]
+fn test_foo() {
+    /* ... */
+}
+// A lint attribute used to suppress a warning/error
+#[allow(non_camel_case_types)]
+type int8_t = i8;
+
+// Inner attribute applies to the entire function.
+fn some_unused_variables() {
+  #![allow(unused_variables)]
+
+  let x = ();
+  let y = ();
+  let z = ();
+}
+
+{-# INLINE foo #-}
+
+-define(TIMEOUT, 200).
+...
+call(Request) -&gt;
+   server:call(refserver, Request, ?TIMEOUT).
+-undef(Macro).
+
+Option Explicit On|Off
+Option Compare Binary
+
+#if VERSION1
+let function1 x y =
+   printfn &quot;x: %d y: %d&quot; x y
+   x + 2 * y
+#else
+let function1 x y =
+   printfn &quot;x: %d y: %d&quot; x y
+   x - 2*y
+#endif
+// Line directives as source maps can be used when compiling to F#:
+#line 25 &quot;C:\\Projects\\MyProject\\MyProject\\Script1&quot;
+
+#[test(test1)]
+embed (inline) sv{{{
+    module test1;
+        initial begin
+            assert (0) else $error(&quot;error&quot;);
+        end
+    endmodule
+}}}
+
+.PR POINT .PR
+.PR UPPER .PR
+.PR RES .PR
+&#39;pr&#39; quote &#39;pr&#39;
+
+// In Turbo Pascal, directives are called significant comments, because in the language grammar they follow the same syntax as comments.
+// In Turbo Pascal, a significant comment is a comment whose first character is a dollar sign and whose second character is a letter;
+// for example, the equivalent of C&#39;s #include &quot;file&quot; directive is the significant comment:
+{$I &quot;file&quot;}
+
+# Directives are special lines that have syntax and semantics of their own. Directives all start with a name of the form .foo; new directives may be added by future versions of the language.
+.import math.constants
+area = x * math.constants.Pi, ^ 2
+.from math.constants import Pi, E
+area = x sq, * Pi
+polar = a * [E ^ [b * 0+j1]]
+
+***
+
+Languages *with* Directives include JavaScript, C, Python, Perl, Ruby, C#, Rust, Haskell, Erlang, Visual Basic, Ada, F#, Common Lisp, C2, Veryl, ALGOL 68, Jule, Turbo Pascal, FML, ScriptEase
+
+***
+
+Languages *without* Directives include C3, progsbase
+
+***
+
+View all concepts with or missing a *hasDirectives* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDirectives&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDirectives%22%2C%22origData%22%3A%22hasDirectives%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDirectives&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDirectives%22%2C%22origData%22%3A%22hasDirectives%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Directives on the web: 1.
+ https://en.wikipedia.org/wiki/Directive_(programming)

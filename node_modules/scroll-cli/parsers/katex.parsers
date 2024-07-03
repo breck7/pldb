@@ -23,6 +23,6 @@ katexParser
    const content = this.content === undefined ? "" : this.content
    return `<div class="scrollKatex" id="${id}">${content + this.childrenToString()}</div>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return ( this.content ? this.content : "" )+ this.childrenToString()
   }

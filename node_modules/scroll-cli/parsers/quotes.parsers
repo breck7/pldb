@@ -11,7 +11,7 @@ quoteParser
   compile() {
    return `<blockquote class="scrollQuote">${this.childrenToString()}</blockquote>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.childrenToString()
   }
 

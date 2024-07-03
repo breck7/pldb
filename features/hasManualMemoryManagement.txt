@@ -1,0 +1,37 @@
+Manual Memory Management
+========================
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int main(void)
+{
+  int *poin = malloc(4);
+  free(poin);
+}
+
+use std::mem::c::{malloc, free}
+
+fn main() {
+    let mut ptr = malloc(8)
+    free(ptr)
+    ptr = nil
+}
+
+***
+
+Languages *with* Manual Memory Management include C, C3, progsbase, Dale, Jule, Aardvark
+
+***
+
+Languages *without* Manual Memory Management include Speedie
+
+***
+
+View all concepts with or missing a *hasManualMemoryManagement* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasManualMemoryManagement&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasManualMemoryManagement%22%2C%22origData%22%3A%22hasManualMemoryManagement%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasManualMemoryManagement&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasManualMemoryManagement%22%2C%22origData%22%3A%22hasManualMemoryManagement%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Manual Memory Management on the web: 1.
+ https://en.wikipedia.org/wiki/Manual_memory_management

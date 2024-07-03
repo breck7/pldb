@@ -1,0 +1,59 @@
+Functions
+=========
+
+function helloWorld() {console.log(&quot;hi&quot;)}
+
+function myFunction()
+    print(&quot;hello&quot;)
+end
+
+mixin article(title)
+  .article
+    .article-wrapper
+      h1= title
+      if block
+        block
+      else
+        p No content provided
+
++article(&#39;Hello world&#39;)
+
++article(&#39;Hello world&#39;)
+  p This is my
+  p Amazing article
+
+func fib(n int) int:
+   coyield
+   if n &lt; 2:
+       return n
+   return fib(n - 1) + fib(n - 2)
+
+fn a_function() {
+    // ...
+}
+
+function Example (|string| data)
+ file &lt;~ data
+
+(fn (x) (+ x 1))
+
+FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+
+***
+
+Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, Bash, PowerShell, Scala, Lua, Kotlin, Julia, Erlang, Ada, Solidity, Crystal, Reason, Groovy, OCaml, F#, Pug, VHDL, F*, ABAP, Verilog, Koka, C3, Opa, janet, SystemVerilog, progsbase, ATS, X10, IGOR Pro, Ligo, Cyber, Jule, Eclipse Command Language, Sophia, Speedie, Bel, Q#, BALGOL
+
+***
+
+Languages *without* Functions include CSS
+
+***
+
+View all concepts with or missing a *hasFunctions* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasFunctions%22%2C%22origData%22%3A%22hasFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasFunctions%22%2C%22origData%22%3A%22hasFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Functions on the web: 1.
+ https://en.wikipedia.org/wiki/Subroutine

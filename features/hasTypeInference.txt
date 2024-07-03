@@ -1,0 +1,26 @@
+Type Inference
+==============
+
+|| x = &quot;Hello&quot;
+|| y = FunctionThatReturnsAString() // is now a string
+x = 1 // fails to compile
+y = 2 // fails to compile
+
+***
+
+Languages *with* Type Inference include Go, TypeScript, Rust, Swift, Scala, Haskell, Kotlin, Prolog, Crystal, D, Elm, Haxe, OCaml, F#, Standard ML, ML, Frege, Opa, RDF, Ceylon, Boo, Nemerle, Xtend, Stan, Speedie, Obliq
+
+***
+
+Languages *without* Type Inference include Veryl
+
+***
+
+View all concepts with or missing a *hasTypeInference* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeInference&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeInference%22%2C%22origData%22%3A%22hasTypeInference%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeInference&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTypeInference%22%2C%22origData%22%3A%22hasTypeInference%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Type Inference on the web: 1.
+ https://en.wikipedia.org/wiki/Type_inference

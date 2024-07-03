@@ -1,0 +1,20 @@
+hasBlobs
+========
+
+// In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
+// A valid blob value with one required padding character.
+{{ VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE= }}
+
+***
+
+Languages *with* hasBlobs include Ion
+
+***
+
+Languages *without* hasBlobs include C2
+
+***
+
+View all concepts with or missing a *hasBlobs* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBlobs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBlobs%22%2C%22origData%22%3A%22hasBlobs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBlobs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBlobs%22%2C%22origData%22%3A%22hasBlobs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

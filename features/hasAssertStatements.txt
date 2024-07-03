@@ -1,0 +1,66 @@
+Assert Statements
+=================
+
+#include &lt;assert.h&gt;
+int i, a[10];
+for (i = 0; i &lt; 10; ++i)
+  {
+  assert(0 &lt;= i &amp;&amp; i &lt; 10);
+  a[i] = 10-i;
+  }
+for (i = 0; i &lt; 10; ++i)
+  {
+  assert(0 &lt;= i &amp;&amp; i &lt; 10);
+  assert(0 &lt;= a[i] &amp;&amp; a[i] &lt; 10);
+  a[a[i]] = a[i];
+  }
+
+// By default, assertions are disabled
+// java –enableassertions Test
+int score = 10;
+assert score &gt;= 10 : &quot; Below&quot;;
+System.out.println(&quot;score is &quot;+score);
+
+assert(a &gt; 0, &quot;Expected a positive number&quot;);
+$assert(Foo.sizeof == 8, &quot;Foo sizecheck at compile time failed&quot;);
+
+use std::debug
+use std::debug::assert::{assert}
+
+fn main() {
+    std::debug::ENABLE = true
+    let x = 200
+    assert(x &lt; 200)
+}
+
+class Person
+ |int| age
+ setter age
+  // &quot;expect&quot; will actually add an Error to a list of errors
+  expect (value &gt;= 0) (&quot;bad age $value set!&quot;)
+  .age = value
+
+main
+ || p = person()
+ p.age = -10
+ if !stderr.ok
+  &quot;Oof we got some errors&quot;
+
+***
+
+Languages *with* Assert Statements include C, Java, C3, Jule, Speedie
+
+***
+
+Languages *without* Assert Statements include progsbase
+
+***
+
+View all concepts with or missing a *hasAssertStatements* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAssertStatements&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasAssertStatements%22%2C%22origData%22%3A%22hasAssertStatements%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAssertStatements&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasAssertStatements%22%2C%22origData%22%3A%22hasAssertStatements%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Assert Statements on the web: 1.
+ https://en.wikipedia.org/wiki/Debug_code#Assert_Statements

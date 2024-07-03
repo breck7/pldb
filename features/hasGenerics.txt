@@ -1,0 +1,83 @@
+Generics
+========
+
+List&lt;String&gt; v = new ArrayList&lt;String&gt;();
+v.add(&quot;test&quot;);
+Integer i = v.get(0); // (type error)  compilation-time error
+
+function identity&lt;T&gt;(arg: T): T {
+   return arg;
+}
+
+// Declare the generic class.
+public class GenericList&lt;T&gt;
+{
+    public void Add(T input) { }
+}
+class TestGenericList
+{
+    private class ExampleClass { }
+    static void Main()
+    {
+        // Declare a list of type int.
+        GenericList&lt;int&gt; list1 = new GenericList&lt;int&gt;();
+        list1.Add(1);
+
+        // Declare a list of type string.
+        GenericList&lt;string&gt; list2 = new GenericList&lt;string&gt;();
+        list2.Add(&quot;&quot;);
+
+        // Declare a list of type ExampleClass.
+        GenericList&lt;ExampleClass&gt; list3 = new GenericList&lt;ExampleClass&gt;();
+        list3.Add(new ExampleClass());
+    }
+}
+
+generic
+   Max_Size : Natural; -- a generic formal value
+   type Element_Type is private; -- a generic formal type; accepts any nonlimited type
+package Stacks is
+   type Size_Type is range 0 .. Max_Size;
+   type Stack is limited private;
+   procedure Create (S : out Stack;
+                     Initial_Size : in Size_Type := Max_Size);
+   procedure Push (Into : in out Stack; Element : in Element_Type);
+   procedure Pop (From : in out Stack; Element : out Element_Type);
+   Overflow : exception;
+   Underflow : exception;
+private
+   subtype Index_Type is Size_Type range 1 .. Max_Size;
+   type Vector is array (Index_Type range &lt;&gt;) of Element_Type;
+   type Stack (Allocated_Size : Size_Type := 0) is record
+      Top : Index_Type;
+      Storage : Vector (1 .. Allocated_Size);
+   end record;
+end Stacks;
+
+// generics
+fun g (x) =&gt; f (f x);
+println$ g 1, g &quot;hello&quot;;
+println$ _map f (1,&quot;hello&quot;,2.0);
+
+fn generic_function[T](s: []T) {
+    // ...
+}
+
+***
+
+Languages *with* Generics include Java, TypeScript, C#, Ada, Felix, Jule
+
+***
+
+Languages *without* Generics include progsbase
+
+***
+
+View all concepts with or missing a *hasGenerics* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGenerics&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasGenerics%22%2C%22origData%22%3A%22hasGenerics%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGenerics&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasGenerics%22%2C%22origData%22%3A%22hasGenerics%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Generics on the web: 1.
+ https://en.wikipedia.org/wiki/Generic_programming

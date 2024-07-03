@@ -1,0 +1,72 @@
+Generators
+==========
+
+function* fibonacci(limit) {
+    let [prev, curr] = [0, 1];
+    while (!limit || curr &lt;= limit) {
+        yield curr;
+        [prev, curr] = [curr, prev + curr];
+    }
+}
+// bounded by upper limit 10
+for (let n of fibonacci(10)) {
+    console.log(n);
+}
+// generator without an upper bound limit
+for (let n of fibonacci()) {
+    console.log(n);
+    if (n &gt; 10000) break;
+}
+// manually iterating
+let fibGen = fibonacci();
+console.log(fibGen.next().value); // 1
+console.log(fibGen.next().value); // 1
+console.log(fibGen.next().value); // 2
+console.log(fibGen.next().value); // 3
+console.log(fibGen.next().value); // 5
+console.log(fibGen.next().value); // 8
+// picks up from where you stopped
+for (let n of fibGen) {
+    console.log(n);
+    if (n &gt; 10000) break;
+}
+
+https://wiki.python.org/moin/Generators
+
+# Generator from an Enumerator object
+chars = Enumerator.new([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;Z&#39;])
+
+4.times { puts chars.next }
+
+# Generator from a block
+count = Enumerator.new do |yielder|
+  i = 0
+  loop { yielder.yield i += 1 }
+end
+
+100.times { puts count.next }
+
+// Method that takes an iterable input (possibly an array)
+// and returns all even numbers.
+public static IEnumerable&lt;int&gt; GetEven(IEnumerable&lt;int&gt; numbers) {
+    foreach (int i in numbers) {
+        if ((i % 2) == 0) {
+            yield return i;
+        }
+    }
+}
+
+***
+
+Languages *with* Generators include JavaScript, Python, Ruby, C#
+
+***
+
+View all concepts with or missing a *hasGenerators* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGenerators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasGenerators%22%2C%22origData%22%3A%22hasGenerators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGenerators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasGenerators%22%2C%22origData%22%3A%22hasGenerators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Generators on the web: 1.
+ https://en.wikipedia.org/wiki/Generator_(computer_programming)

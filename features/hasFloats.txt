@@ -1,0 +1,148 @@
+Floats
+======
+
+// (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
+80766866.0
+
+# (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
+
+// ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+
+# (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
+
+2.3
+
+// \d+(\.\d+[eE][+\-]?\d+|\.\d*|[eE][+\-]?\d+)
+
+// [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
+
+-- [0-9]*\.[0-9]+([eE][+-]?[0-9]+)? -- (decimal float)
+-- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? -- (hex float)
+
+-- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
+
+; -?\d+\.\d+
+
+# \d(_?\d)*\.\d(_?\d)*([eE][-+]?\d(_?\d)*)?
+
+# [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+
+# (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
+
+% [+-]?\d+.\d+
+
+% (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+
+-- [0-9_]+\.[0-9_]*
+
+# (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
+
+// -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
+
+// 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
+
+-- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
+
+-- _?\d+\.(?=\d+)
+
+// -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
+
+// (\d*\.\d+)([eE][+-]?[0-9]+)?i?
+
+-- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
+
+-- \d+[eE][+-]?\d+
+
+// (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[LlUu]*
+
+NB. _?\d+\.(?=\d+)
+
+// (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+
+; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+
+% (\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()&lt;&gt;\[\]{}/%\s])
+
+-- ([0-9]+\.[0-9]*)|([0-9]*\.[0-9]+)
+
+// [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+
+&#39; [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
+
+-- [0-9]*\.[0-9]+(e[0-9]+)?[fd]?
+
+% (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
+
+// [0-9]+\.[0-9]+([eE][\-+]?[0-9]+)?
+
+# [+\-]?(\d+\.\d*[eE][+-]?\d+|\.?\d+[eE][+-]?\d+)
+
+// [0-9]*\.[0-9]+
+
+# (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+
+// \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
+
+-- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
+
+// (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
+
+/ ([0-9]*[.]?[0-9]+|[0-9]+[.]?[0-9]*)[eE][+-]?[0-9]+[ef]?
+
+# -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
+
+# (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
+
+// 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
+
+// \d+(\.?\d*[eE][-+]?\d+|\.\d*)
+
+// (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+
+# [0-9]+\.[0-9]+([eE][0-9]+)?[fd]?(?:[a-zA-Z_]+)?
+
+# [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
+
+// [0-9]+\.[0-9]+
+
+&#39; [0-9]+\.[0-9]*(?!\.)
+
+// ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
+
+// (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
+
+3.14
+32.60
+032.60
+3.
+0.3
+1E2
+.12345E+6
+1.e+0
+0x1p-2
+0x2.p10
+0x1.Fp+0
+0X.8p-0
+0x1fffp-16
+0x15e-2
+
+|| num = 0.0
+
+// http://amzn.github.io/ion-docs/docs/spec.html
+-0.12e4           // Type is float
+
+***
+
+Languages *with* Floats include JavaScript, Python, Java, Perl, JSON, Go, Swift, Lua, Haskell, Clojure, Elixir, CoffeeScript, Julia, Erlang, Prolog, Mathematica, Ada, TOML, Zig, Reason, D, MySQL, Elm, WebAssembly, GraphQL, awk, Coq, OCaml, F#, Chapel, ClojureScript, VHDL, Idris, Protocol Buffers, J, IDL, F*, ActionScript, Verilog, Pony, Fennel, AutoHotkey, Hy, Puppet, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Pig Latin, GNU Octave, Koka, QML, Opa, Thrift, SPARQL, janet, Pandas, Agda, Futhark, POV-Ray SDL, AMPL, Ceylon, Applescript, QBasic, SystemVerilog, Turtle, progsbase, NumPy, Cryptol, Scilab, AutoIt, K, GLSL, HLSL, Golo, YANG, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, ooc, Nit, chaiscript, Gosu, Ioke, Maxima, Modelica, Shen, Fancy, Io, Xtend, LiveScript, LilyPond, SourcePawn, PL/pgSQL, Icon, BlitzMax, Whiley, Stan, GDScript, Monkey, OpenEdge ABL, BlitzBasic, Earl Grey, Croc, Kal, JSLT, Linden Scripting Language, Jule, FloScript, Unicon, monte, MiniD, JS++, Speedie, Flatline, Easytrieve, parasail, Aardvark, Pawn, Wax, Urbiscript, Ion, nimrod, AmbientTalk, PromQL, SARL, BALGOL, CBOR data definition language, bag-format, RAISE Specification Language, SquidConf, juttle
+
+***
+
+View all concepts with or missing a *hasFloats* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFloats&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasFloats%22%2C%22origData%22%3A%22hasFloats%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFloats&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasFloats%22%2C%22origData%22%3A%22hasFloats%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Floats on the web: 1. 2.
+ https://evanw.github.io/float-toy/
+ https://en.wikipedia.org/wiki/Floating-point_arithmetic

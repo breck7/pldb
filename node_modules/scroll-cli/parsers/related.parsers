@@ -17,7 +17,7 @@ relatedListParser
     return html
    }).join("\n")
   }
-  compileTextVersion() {
+  compileTxt() {
    // Todo: reuse code between these 2 methods.
    const file = this.root.file
    const ids = this.root.get("related")?.split(" ") || []

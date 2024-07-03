@@ -1,0 +1,50 @@
+Units of Measure
+================
+
+// https://fsharpforfunandprofit.com/posts/units-of-measure/
+[&lt;Measure&gt;] type N = kg m/sec^2
+
+let force1 = 5.0&lt;kg m/sec^2&gt;
+let force2 = 5.0&lt;N&gt;
+
+force1 = force2 // true
+
+def m3 = 1 g;
+def m4 = Si.Mass(m1);
+
+WriteLine($&quot;Mass in SI: $m4, in CGS: $m3&quot;);
+
+def x1 = Si.Area(1 cm * 10 m);
+
+WriteLine($&quot;Area of 1 cm * 10 m = $x1 m&quot;);
+
+type SpecificHeatCapacity = Real (
+  final quantity=&quot;SpecificHeatCapacity&quot;,
+  final unit=&quot;J/(kg.K)&quot;
+);
+
+10 feet 12 feet 8 feet -&gt; gallons
+
+|| time = 1day - 10s
+|| size = 10.2MB
+
+54_kg * (_c^2)
+
+***
+
+Languages *with* Units of Measure include F#, Nemerle, Modelica, Frink, Speedie, TI-89 series
+
+***
+
+Languages *without* Units of Measure include Python, Bash, Elixir, C3
+
+***
+
+View all concepts with or missing a *hasUnitsOfMeasure* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasUnitsOfMeasure&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasUnitsOfMeasure%22%2C%22origData%22%3A%22hasUnitsOfMeasure%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasUnitsOfMeasure&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasUnitsOfMeasure%22%2C%22origData%22%3A%22hasUnitsOfMeasure%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Units of Measure on the web: 1.
+ https://en.wikipedia.org/wiki/Unit_of_measurement

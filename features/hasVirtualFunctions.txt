@@ -1,0 +1,40 @@
+Virtual function
+================
+
+class Animal {
+ public:
+  // Intentionally not virtual:
+  void Move(void) {
+    std::cout &lt;&lt; &quot;This animal moves in some way&quot; &lt;&lt; std::endl;
+  }
+  virtual void Eat(void) = 0;
+};
+
+// The class &quot;Animal&quot; may possess a definition for Eat if desired.
+class Llama : public Animal {
+ public:
+  // The non virtual function Move is inherited but not overridden.
+  void Eat(void) override {
+    std::cout &lt;&lt; &quot;Llamas eat grass!&quot; &lt;&lt; std::endl;
+  }
+};
+
+class abc
+ virtual DoSomething (|string| name)
+ behaviour DoSomething
+  printline &quot;hello: $name&quot;
+
+***
+
+Languages *with* Virtual function include C++, Speedie
+
+***
+
+View all concepts with or missing a *hasVirtualFunctions* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasVirtualFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasVirtualFunctions%22%2C%22origData%22%3A%22hasVirtualFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasVirtualFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasVirtualFunctions%22%2C%22origData%22%3A%22hasVirtualFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Virtual function on the web: 1.
+ https://en.wikipedia.org/wiki/Virtual_function

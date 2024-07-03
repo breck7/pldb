@@ -40,7 +40,7 @@ linkParser
  cruxFromId
  javascript
   tag = "a"
-  compileTextVersion() {
+  compileTxt() {
     return this.root.file.ensureAbsoluteLink(this.link)
   }
   get link() {

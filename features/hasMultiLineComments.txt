@@ -1,0 +1,128 @@
+MultiLine Comments
+==================
+
+/* A comment
+*/
+
+&#39;&#39;&#39; A comment.
+&#39;&#39;&#39;
+
+&lt;!-- A comment
+--&gt;
+
+=begin comment
+This is all part of multiline comment.
+You can use as many lines as you like
+These comments will be ignored by the
+compiler until the next =cut is encountered.
+=cut
+
+=begin
+A comment.
+=end
+
+&lt;# A comment
+#&gt;
+
+--[[
+A comment.
+--]]
+
+%{
+A comment.
+%}
+
+(comment A comment
+)
+
+### A comment
+###
+
+#=
+A comment.
+=#
+
+(* A comment
+*)
+
+#[ A comment
+]#
+
+/+ A comment
++/
+
+{- A comment
+-}
+
+#| A comment
+|#
+
+(* a comment *)
+
+&quot; A comment
+&quot;
+
+{ A comment
+}
+
+/*
+  Multiline comment
+*/
+
+{# A comment
+#}
+
+// A
+ multiline comment
+
+text text text...
+.ig
+This is part of a large block
+of text that has been
+temporarily(?) commented out.
+
+We can restore it simply by removing
+the .ig request and the &quot;..&quot; at the
+end of the block.
+..
+
+/*
+  A multi line comment
+*/
+
+(; A comment
+;)
+
+&#39;&#39;&#39; A comment
+&#39;&#39;&#39;
+
+/*
+multiline
+comments
+*/
+
+#!/usr/bin/poke -L
+!#
+
+###
+A comment
+###
+
+***
+
+Languages *with* MultiLine Comments include JavaScript, C, Python, Java, HTML, CSS, Perl, Ruby, PHP, Go, XML, TypeScript, SQL, C#, PowerShell, Rust, Swift, Scala, Lua, MATLAB, Haskell, Kotlin, Clojure, CoffeeScript, Objective-C, SAS, Julia, Prolog, Mathematica, CUDA, Dart, Pascal, Solidity, Nim, PostgreSQL, Reason, D, MySQL, Elm, Scheme, Haxe, WebAssembly, Groovy, Coq, OCaml, F#, Chapel, Smalltalk, SVG, HCL, PureScript, Protocol Buffers, JSON5, Yacc, OpenCL, ANTLR, Delphi, Stata, PostCSS, ActionScript, Verilog, Pony, Hy, PostScript, Less, PEG.js, Zephir, DOT, Frege, Lex, Pig Latin, GNU Octave, C3, QML, Jsonnet, Opa, Bicep, Processing, MIPS architecture, Agda, PL/I, Nextflow, Jison, Wolfram Language, Hack, POV-Ray SDL, AMPL, Ceylon, Hjson, Applescript, DTrace, SystemVerilog, Modula-2, Rexx, progsbase, Oberon, ECL, Cryptol, JAI, AutoIt, GLSL, Twig, HLSL, eC, Transact-SQL, Boo, Bison, Ron, AspectJ, EBNF, ooc, Modula-3, SCSS, Closure Templates, TLA, B, Flow9, Gosu, Maxima, xBase, Shen, Scroll, ATS, JFlex, Veryl, Io, Xtend, LiveScript, Isabelle, Fantom, Object Pascal, groff, X10, Lasso, LilyPond, SourcePawn, PL/pgSQL, P4, BlitzMax, Whiley, Csound, clay, Nix, UrWeb, JSON with Comments, Objective C++, Angelscript, basic calculator, Monkey, OpenEdge ABL, XSLT, Argdown, Classroom Object Oriented Language, Alloy, Cypher Query Language, Mask, Ligo, Apex, DAX, Croc, PL/M, muPad, Linden Scripting Language, Mako, Fortress, PARI/GP, DM, NetLinx, Jule, Eclipse Command Language, Game Maker Language, Bluespec, HuJSON, Cycript, Sophia, Slice, XS, Sieve mail filtering language, LoomScript, dedukti, WebIDL, COMPONENT PASCAL, MiniD, CartoCSS, Type Language, RenderScript, Edje Data Collection, HAGGIS, Orc, CLIST, kai, ARexx, JS++, Augeas, Speedie, Simple Actor Language System and Architecture, GNU Poke, Plus, Aardvark, TAL, winxed, Handel-C, Pawn, Boron, Amazon Redshift, PowerQuery M, blockml, Urbiscript, Ion, ProbeVue, omega, AmbientTalk, Arden syntax, JSL, boa, Boogie, SARL, Spice, Fibonacci, FML, Soy, Manchester syntax, bioscript, Smithy
+
+***
+
+Languages *without* MultiLine Comments include JSON, R, Bash, Elixir, Erlang, COBOL, Visual Basic, Ada, Crystal, Fortran, Tex, VHDL, LaTeX, Tcl, Eiffel, Nginx, janet, Emacs Lisp, GraphQL Schema Definition Language
+
+***
+
+View all concepts with or missing a *hasMultiLineComments* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultiLineComments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMultiLineComments%22%2C%22origData%22%3A%22hasMultiLineComments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultiLineComments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMultiLineComments%22%2C%22origData%22%3A%22hasMultiLineComments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about MultiLine Comments on the web: 1.
+ https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments

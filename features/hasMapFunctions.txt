@@ -1,0 +1,23 @@
+Map Functions
+=============
+
+[1,2.1].map(Math.round)
+
+class Functor f where
+   fmap :: (a -&gt; b) -&gt; f a -&gt; f b
+   (&lt;$) :: a -&gt; f b -&gt; f a
+
+***
+
+Languages *with* Map Functions include JavaScript, Haskell
+
+***
+
+View all concepts with or missing a *hasMapFunctions* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMapFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMapFunctions%22%2C%22origData%22%3A%22hasMapFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMapFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMapFunctions%22%2C%22origData%22%3A%22hasMapFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Map Functions on the web: 1.
+ https://en.wikipedia.org/wiki/Map_(higher-order_function)

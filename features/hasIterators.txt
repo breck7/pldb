@@ -1,0 +1,60 @@
+Iterators
+=========
+
+https://www.w3schools.com/python/python_iterators.asp
+
+Iterator iter = list.iterator();
+//Iterator&lt;MyType&gt; iter = list.iterator();    in J2SE 5.0
+while (iter.hasNext()) {
+    System.out.print(iter.next());
+    if (iter.hasNext())
+        System.out.print(&quot;, &quot;);
+}
+
+std::vector&lt;int&gt; items;
+items.push_back(5);  // Append integer value &#39;5&#39; to vector &#39;items&#39;.
+items.push_back(2);  // Append integer value &#39;2&#39; to vector &#39;items&#39;.
+items.push_back(9);  // Append integer value &#39;9&#39; to vector &#39;items&#39;.
+
+for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through &#39;items&#39;.
+  std::cout &lt;&lt; *it;  // And print value of &#39;items&#39; for current index.
+}
+
+(0...42).each do |n|
+  puts n
+end
+
+for n in 0..42 {
+  println!(&quot;{}&quot;, n);
+}
+
+% Define an array of integers
+myArray = [1,3,5,7,11,13];
+
+for n = myArray
+   % ... do something with n
+   disp(n)  % Echo integer to Command Window
+end
+
+|| items = [5,6,7,8]
+for i in items
+ printline i
+
+***
+
+Languages *with* Iterators include Python, Java, C++, Ruby, Rust, MATLAB, Speedie
+
+***
+
+Languages *without* Iterators include progsbase
+
+***
+
+View all concepts with or missing a *hasIterators* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIterators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasIterators%22%2C%22origData%22%3A%22hasIterators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIterators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasIterators%22%2C%22origData%22%3A%22hasIterators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Iterators on the web: 1.
+ https://en.wikipedia.org/wiki/Iterator

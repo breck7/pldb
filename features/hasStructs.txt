@@ -1,0 +1,50 @@
+Structs
+=======
+
+struct account {
+  int account_number;
+  char *first_name;
+  char *last_name;
+  float balance;
+};
+
+struct Test
+{
+   int x;
+   float y;
+   String z;
+}
+
+struct Employee {
+    first_name: str
+    last_name: str
+    salary: f32
+}
+
+struct Fuel
+ |int| A
+ |byte| B
+
+(struct point
+    (let x float)
+    (let y float)
+)
+
+{ first : &quot;Tom&quot; , last: &quot;Riddle&quot; }  // Structure with two fields
+{&quot;first&quot;:&quot;Tom&quot;,&quot;last&quot;:&quot;Riddle&quot;}     // The same value with confusing style
+{center:{x:1.0, y:12.5}, radius:3}  // Nested struct
+
+***
+
+Languages *with* Structs include C, C3, progsbase, C2, Jule, Speedie, Wax, Ion
+
+***
+
+View all concepts with or missing a *hasStructs* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStructs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasStructs%22%2C%22origData%22%3A%22hasStructs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStructs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasStructs%22%2C%22origData%22%3A%22hasStructs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Structs on the web: 1.
+ https://en.wikipedia.org/wiki/Struct_(C_programming_language)

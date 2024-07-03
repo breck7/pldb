@@ -1,0 +1,45 @@
+While Loops
+===========
+
+let times = 10
+while (times) {times--}
+console.log(&quot;done&quot;)
+
+while true do
+    print(&quot;hello&quot;)
+end
+
+while (int x = foo(); x &gt; 0)
+{
+  sum += x;
+}
+
+while fiber.status() != #done:
+  res = coresume fiber
+  count += 1
+
+for my_condition {
+    // ...
+}
+
+while true
+  &quot;hello&quot;
+
+***
+
+Languages *with* While Loops include JavaScript, C, Python, Java, Perl, Ruby, PHP, C#, R, Bash, PowerShell, Rust, Swift, Scala, Lua, Kotlin, CoffeeScript, Objective-C, Julia, Dart, Ada, Pascal, Solidity, Crystal, Reason, Groovy, OCaml, F#, Chapel, VHDL, ABAP, Verilog, C3, SystemVerilog, AutoIt, Dylan, Maxima, X10, Angelscript, Apex, Cyber, Jule, JS++, Speedie, fp, Q#, hecl, nimrod
+
+***
+
+Languages *without* While Loops include progsbase, Veryl, HOPE
+
+***
+
+View all concepts with or missing a *hasWhileLoops* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasWhileLoops&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasWhileLoops%22%2C%22origData%22%3A%22hasWhileLoops%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasWhileLoops&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasWhileLoops%22%2C%22origData%22%3A%22hasWhileLoops%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about While Loops on the web: 1.
+ https://en.wikipedia.org/wiki/While_loop

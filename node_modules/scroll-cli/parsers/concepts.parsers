@@ -31,9 +31,8 @@ printConceptsParser
 
 buildConceptsParser
  cruxFromId
- catchAllCellType filePathCell
  description Compiles concepts to a delimited file and write to disk.
- extends abstractCommandParser
+ extends abstractBuildCommandParser
  sortByParser
   cruxFromId
   cells keywordCell anyCell

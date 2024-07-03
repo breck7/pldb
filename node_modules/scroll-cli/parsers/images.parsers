@@ -51,7 +51,7 @@ imageParser
    const target = this.has("target") ? this.get("target") : (this.has("link") ? "" : "_blank")
    return `<a href="${clickLink}" target="${target}" ${className} ${id}><img src="${linkRelativeToCompileTarget}" ${dimensionAttributes}loading="lazy"></a>`
   }
-  compileTextVersion() {
-    const children = this.filter(node => node.compileTextVersion).map(node => node.compileTextVersion()).filter(i => i).join("\n")
+  compileTxt() {
+    const children = this.filter(node => node.compileTxt).map(node => node.compileTxt()).filter(i => i).join("\n")
     return  "[Image Omitted]" + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
   }

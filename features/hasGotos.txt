@@ -1,0 +1,60 @@
+Gotos
+=====
+
+// C/C++ program to check if a number is
+// even or not using goto statement
+#include &lt;iostream&gt;
+using namespace std;
+  
+// function to check even or not
+void checkEvenOrNot(int num)
+{
+    if (num % 2 == 0)
+        goto even; // jump to even
+    else
+        goto odd; // jump to odd
+  
+even:
+    cout &lt;&lt; num &lt;&lt; &quot; is evenn&quot;;
+    return; // return if even
+odd:
+    cout &lt;&lt; num &lt;&lt; &quot; is oddn&quot;;
+}
+  
+// Driver program to test above function
+int main()
+{
+    int num = 26;
+    checkEvenOrNot(num);
+    return 0;
+}
+
+10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
+15 REM It fills the screen with the phrase &quot;HELLO&quot;
+20 PRINT &quot;HELLO&quot;
+30 GOTO 20
+
+:: this would create an endless loop
+:myLabel
+goto myLabel
+
+goto a_label
+
+***
+
+Languages *with* Gotos include C, BASIC, Batchfile, Jule
+
+***
+
+Languages *without* Gotos include Nim, C3, progsbase, Slope
+
+***
+
+View all concepts with or missing a *hasGotos* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGotos&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasGotos%22%2C%22origData%22%3A%22hasGotos%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGotos&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasGotos%22%2C%22origData%22%3A%22hasGotos%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Gotos on the web: 1.
+ https://en.wikipedia.org/wiki/Goto

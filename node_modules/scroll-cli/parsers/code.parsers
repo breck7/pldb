@@ -10,7 +10,7 @@ codeParser
   compile() {
    return `<code class="scrollCodeBlock">${this.childrenToString().replace(/\</g, "&lt;")}</code>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.childrenToString()
   }
  cruxFromId

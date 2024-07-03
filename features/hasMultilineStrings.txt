@@ -1,0 +1,67 @@
+Multiline Strings
+=================
+
+const lines = `one
+two`
+
+template = &quot;&quot;&quot;This is the first line.
+This is the second line.
+This is the third line.&quot;&quot;&quot;
+
+$xml = &lt;&lt;&lt;XML
+l
+vv
+XML;
+
+template = &quot;&quot;&quot;
+This is the first line.
+This is the second line.
+This is the third line.
+&quot;&quot;&quot;
+
+String s = `this
+ string is multiline`;
+
+plainText
+ This is a
+ multiline string
+
+`Multiline strings
+is available in Jule
+with raw strings`
+
+&quot;hello
+you
+beauty&quot;
+
+{{
+  Line 1
+  Line 2
+}}
+
+( &#39;&#39;&#39;hello &#39;&#39;&#39;     // Sexp with one element
+  &#39;&#39;&#39;world!&#39;&#39;&#39;  )
+
+(&quot;hello world!&quot;)   // The exact same sexp value
+
+// This Ion value is a string containing three newlines. The serialized
+// form&#39;s first newline is escaped into nothingness.
+&#39;&#39;&#39;\
+The first line of the string.
+This is the second line of the string,
+and this is the third line.
+&#39;&#39;&#39;
+
+***
+
+Languages *with* Multiline Strings include JavaScript, Python, Ruby, PHP, Elixir, C3, progsbase, Scroll, Jule, Speedie, Aardvark, Boron, Ion
+
+***
+
+Languages *without* Multiline Strings include JSON
+
+***
+
+View all concepts with or missing a *hasMultilineStrings* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultilineStrings&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMultilineStrings%22%2C%22origData%22%3A%22hasMultilineStrings%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultilineStrings&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMultilineStrings%22%2C%22origData%22%3A%22hasMultilineStrings%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

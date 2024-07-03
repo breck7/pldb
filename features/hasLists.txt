@@ -1,0 +1,56 @@
+Lists
+=====
+
+const list = [1,2,3]
+
+myList = [1, 2, 3, 4, 5]
+
+[1, 2, 3]
+
+myList := []int{1, 2, 3}
+
+myList = {1, 2, 3}
+
+my_list = [1, 2, 3, 4, 5]
+
+my-list: [1 two 3.0 &quot;four&quot;]
+
+emptyList = ()
+
+[1 2]
+
+; here is a list of a, b, and c:
+(a . (b . (c . nil)))
+; can be written as
+(a b c)
+
+(let x (arr (vec 3 float)))
+
+null.list         // A null list value
+[]                // An empty list value
+[1, 2, 3]         // List of three ints
+[ 1 , two ]       // List of an int and a symbol
+[a , [b]]         // Nested list
+[ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
+[ 1, , 2 ]        // ERROR: missing element between commas
+
+ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+
+***
+
+Languages *with* Lists include JavaScript, Python, JSON, Go, Lua, Elixir, GraphQL, EDN, janet, REBOL, Lil, Uniform eXchange Format, Speedie, fp, Aardvark, Bel, Boron, Wax, Ion, hecl, BALGOL
+
+***
+
+Languages *without* Lists include progsbase
+
+***
+
+View all concepts with or missing a *hasLists* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasLists&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasLists%22%2C%22origData%22%3A%22hasLists%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasLists&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasLists%22%2C%22origData%22%3A%22hasLists%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Lists on the web: 1.
+ https://en.wikipedia.org/wiki/List_(abstract_data_type)

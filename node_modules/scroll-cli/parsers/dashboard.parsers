@@ -23,6 +23,6 @@ dashboardParser
   compile() {
    return `<table class="scrollDashboard">${this.tableBody}</table>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.childrenToString()
   }

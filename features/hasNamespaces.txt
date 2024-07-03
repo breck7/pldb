@@ -1,0 +1,82 @@
+Namespaces
+==========
+
+#include &lt;iostream&gt;
+using namespace std;
+
+// Variable created inside namespace
+namespace first
+{
+  int val = 500;
+}
+ 
+// Global variable
+int val = 100;
+// Ways to do it: https://en.cppreference.com/w/cpp/language/namespace
+namespace ns_name { declarations }
+inline namespace ns_name { declarations }
+namespace { declarations }
+ns_name::name
+using namespace ns_name;
+using ns_name::name;
+namespace name = qualified-namespace ;
+namespace ns_name::inline(since C++20)(optional) name { declarations }
+
+// Typescript even supports splitting namespaces across multiple files:
+// Validation.ts
+namespace Validation {
+    export interface StringValidator {
+        isAcceptable(s: string): boolean;
+    }
+}
+// LettersOnlyValidator.ts
+/// &lt;reference path=&quot;Validation.ts&quot; /&gt;
+namespace Validation {
+    const lettersRegexp = /^[A-Za-z]+$/;
+    export class LettersOnlyValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return lettersRegexp.test(s);
+        }
+    }
+}
+
+namespace MyNamespace;
+class MyClass
+{
+  public void MyMethod()
+  {
+    System.Console.WriteLine(&quot;Creating my namespace&quot;);
+  }
+}
+
+namespace Widgets
+type MyWidget1 =
+   member this.WidgetName = &quot;Widget1&quot;
+module WidgetsModule =
+   let widgetName = &quot;Widget2&quot;
+
+import std::io;
+...
+io::printf(&quot;%d&quot;, i);
+
+(ns-create &#39;hello-world)
+(ns-define
+  &#39;hello-world
+  &#39;print
+  (lambda ()
+    (display &quot;hello world!\n&quot;)))
+(hello-world::print)
+
+***
+
+Languages *with* Namespaces include C++, TypeScript, C#, F#, C3, Slope, Dale
+
+***
+
+Languages *without* Namespaces include C, Speedie
+
+***
+
+View all concepts with or missing a *hasNamespaces* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamespaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasNamespaces%22%2C%22origData%22%3A%22hasNamespaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamespaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasNamespaces%22%2C%22origData%22%3A%22hasNamespaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

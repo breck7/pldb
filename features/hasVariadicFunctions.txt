@@ -1,0 +1,50 @@
+Variadic Functions
+==================
+
+double average(int count, ...)
+{
+ //
+}
+
+function sum(...$nums)
+{
+    return array_sum($nums);
+}
+echo sum(1, 2, 3); // 6
+
+// This variadic function takes an arbitrary number of ints as arguments.
+func sum(nums ...int) {
+  fmt.Print(&quot;The sum of &quot;, nums) // Also a variadic function.
+  total := 0
+  for _, num := range nums {
+    total += num
+  }
+  fmt.Println(&quot; is&quot;, total) // Also a variadic function.
+}
+
+fn void foo_typed(int x, int... arg) { ... }
+fn void foo_untyped(int x, ...arg)
+...
+foo_typed(1, 2, 3);
+foo_untyped(1, &quot;hello&quot;, 1.2);
+
+(lambda (...) (apply + ...))
+
+fn average(x: ...f64): f64 {
+    // ...
+}
+
+***
+
+Languages *with* Variadic Functions include C, PHP, Go, C3, Slope, Jule
+
+***
+
+View all concepts with or missing a *hasVariadicFunctions* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasVariadicFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasVariadicFunctions%22%2C%22origData%22%3A%22hasVariadicFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasVariadicFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasVariadicFunctions%22%2C%22origData%22%3A%22hasVariadicFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Variadic Functions on the web: 1.
+ https://en.wikipedia.org/wiki/Variadic_function

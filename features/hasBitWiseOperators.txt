@@ -1,0 +1,44 @@
+Bitwise Operators
+=================
+
+var x = 5 &amp; 1;
+
+int i = 4; /* bit pattern equivalent is binary 100 */
+int j = i &lt;&lt; 2; /* makes it binary 10000, which multiplies the original number by 4 i.e. 16 */
+
+x &lt;&lt; y
+
+! x
+x &amp; y
+x &amp;&amp; y
+x | y
+x || y
+xor(x, y)
+
+&amp; | ~ &lt;&lt; &gt;&gt; ~
+
+int i = b &lt;&lt; 4 + x; // Same as (b &lt;&lt; 4) + x
+
+(&amp; 0xFF 0x1B)
+
+&amp; | ^ &lt;&lt; &gt;&gt;
+
+***
+
+Languages *with* Bitwise Operators include JavaScript, C, Python, R, Lua, C3, Slope, C2, Dale, Jule, Speedie
+
+***
+
+Languages *without* Bitwise Operators include progsbase
+
+***
+
+View all concepts with or missing a *hasBitWiseOperators* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBitWiseOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBitWiseOperators%22%2C%22origData%22%3A%22hasBitWiseOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBitWiseOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBitWiseOperators%22%2C%22origData%22%3A%22hasBitWiseOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Bitwise Operators on the web: 1. 2.
+ https://en.wikipedia.org/wiki/Bitwise_operations_in_C
+ https://en.wikipedia.org/wiki/Bitwise_operation

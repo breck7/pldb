@@ -21,7 +21,7 @@ printAuthorParser
   get name() {
     return this.getWordsFrom(2).join(" ") || this.parent.getNode("author")?.getWordsFrom(2).join(" ")
   }
-  compileTextVersion() {
+  compileTxt() {
     return `by ${this.name}`
   }
 

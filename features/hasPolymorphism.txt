@@ -1,0 +1,33 @@
+Polymorphism
+============
+
+&quot;a&quot; + &quot;b&quot;; 1 + 2
+
+https://hexdocs.pm/elixir/Protocol.html
+
+// overloads
+fun f (x:double) =&gt; x +42.1;
+fun f (x:int) =&gt;  x + 1;
+fun f (x:string) =&gt; x + &quot;!&quot;;
+
+|object| x = somefunction()
+|| y = x.render // returns a string by calling the virtual func &quot;render&quot;
+
+***
+
+Languages *with* Polymorphism include JavaScript, Elixir, Pascal, Felix, Speedie
+
+***
+
+Languages *without* Polymorphism include Jule
+
+***
+
+View all concepts with or missing a *hasPolymorphism* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPolymorphism&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPolymorphism%22%2C%22origData%22%3A%22hasPolymorphism%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPolymorphism&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPolymorphism%22%2C%22origData%22%3A%22hasPolymorphism%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Polymorphism on the web: 1.
+ https://en.wikipedia.org/wiki/Polymorphism_(computer_science)

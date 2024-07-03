@@ -3,7 +3,7 @@ printCsvParser
  extends printFeedParser
  example
   printCsv index
-  permalink posts.csv
+  buildTxt posts.csv
  javascript
   compile() {
    const file = this.root.file

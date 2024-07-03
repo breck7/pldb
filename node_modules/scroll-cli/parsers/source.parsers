@@ -3,7 +3,7 @@ printSourceParser
  extends printFeedParser
  example
   printSource index
-  permalink source.txt
+  buildTxt source.txt
  javascript
   compile() {
    const file = this.root.file

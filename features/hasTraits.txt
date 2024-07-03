@@ -1,0 +1,46 @@
+Traits
+======
+
+// The template
+trait TSingleton
+{
+    private static $_instance = null;
+    private function __construct(){} // Must have private default constructor and be aware not to open it in the class
+    public static function getInstance()
+    {
+        if (null === self::$_instance)
+        {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+}
+class FrontController
+{
+    use TSingleton;
+}
+// Can also be used in already extended classes
+class WebSite extends SomeClass
+{
+    use TSingleton;
+}
+
+trait Person {
+    fn get_full_name(self): str
+    fn get_age(self): byte
+}
+
+***
+
+Languages *with* Traits include PHP, Jule
+
+***
+
+View all concepts with or missing a *hasTraits* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTraits&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTraits%22%2C%22origData%22%3A%22hasTraits%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTraits&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTraits%22%2C%22origData%22%3A%22hasTraits%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Traits on the web: 1.
+ https://en.wikipedia.org/wiki/Trait_(computer_programming)

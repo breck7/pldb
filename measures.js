@@ -99,17 +99,6 @@ const measures = [
     "IsRequired": true
   },
   {
-    "Name": "tags",
-    "Values": 24700,
-    "Coverage": "500%",
-    "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
-    "Example": "esolang",
-    "Type": "string",
-    "SortIndex": 1.2,
-    "IsComputed": false,
-    "IsRequired": true
-  },
-  {
     "Name": "rijuRepl_website",
     "Values": 140,
     "Coverage": "2%",

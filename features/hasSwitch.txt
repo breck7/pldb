@@ -1,0 +1,73 @@
+Switch Statements
+=================
+
+var animal = &quot;dog&quot;
+switch (animal) {
+ case &quot;dog&quot;: console.log(&quot;yay&quot;); break;
+ case &quot;cat&quot;: console.log(&quot;oh&quot;); break;
+}
+
+switch(expression) {
+   case true  :
+      break;
+   default :
+   //
+   break;
+}
+
+- var friends = 10
+case friends
+  when 0
+    p you have no friends
+  when 1
+    p you have a friend
+  default
+    p you have #{friends} friends
+
+switch(expression)
+{
+   case 1:
+      do_something();
+   case 2:
+      if (x &gt; 0) nextcase 1; // Jump to 1
+      nextcase; // Jump to the next case.
+   default:
+      foo();
+}
+
+Switch[expr,
+ pattern1, code1,
+ pattern2, code2,
+ pattern3, code3
+]
+
+(case my-num
+  (5 (display &quot;Five!&quot;))
+  (0 (display &quot;Zero!&quot;))
+  (else (display &quot;Not an option&quot;)))
+
+match X {
+| Y:         outln(&quot;X is Y&quot;)
+| Z:         outln(&quot;X is Z&quot;)
+| A | B | C: outln(&quot;X is A, B, or C&quot;)
+|:           outln(&quot;X is not Y, Z, A, B and C&quot;)
+}
+
+***
+
+Languages *with* Switch Statements include JavaScript, C, Java, PHP, Go, C#, PowerShell, Swift, CoffeeScript, Objective-C, Dart, Reason, Groovy, Pug, ABAP, C3, Wolfram Language, Slope, Flow9, X10, Angelscript, Apex, Jule, JS++
+
+***
+
+Languages *without* Switch Statements include progsbase
+
+***
+
+View all concepts with or missing a *hasSwitch* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSwitch&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSwitch%22%2C%22origData%22%3A%22hasSwitch%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSwitch&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSwitch%22%2C%22origData%22%3A%22hasSwitch%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Switch Statements on the web: 1.
+ https://en.wikipedia.org/wiki/Switch_statement

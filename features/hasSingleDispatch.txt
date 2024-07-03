@@ -1,0 +1,36 @@
+Single Dispatch
+===============
+
+; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
+(defclass Person () ())
+(defmethod frobnicate ((p Person) record spreadsheet)
+ (format t &quot;~a ~a ~a~&amp;&quot; (type-of p) (type-of record) (type-of spreadsheet)))
+(defclass Asteroid () ())
+(defmethod frobnicate ((a Asteroid) velocity size)
+ ; do stuff
+ )
+; At runtime these 2 would be routed to respective methods:
+(frobnicate a-person his-record big-spreadsheet)
+(frobnicate an-asteroid very-fast pretty-small)
+
+|| x = &quot;str&quot;
+|| i = x.find(&quot;t&quot;)
+
+***
+
+Languages *with* Single Dispatch include JavaScript, Python, Java, C++, Swift, Elixir, Objective-C, Common Lisp, Speedie
+
+***
+
+Languages *without* Single Dispatch include progsbase
+
+***
+
+View all concepts with or missing a *hasSingleDispatch* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSingleDispatch&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSingleDispatch%22%2C%22origData%22%3A%22hasSingleDispatch%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSingleDispatch&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSingleDispatch%22%2C%22origData%22%3A%22hasSingleDispatch%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Single Dispatch on the web: 1.
+ https://en.wikipedia.org/wiki/Dynamic_dispatch#Single_and_multiple_dispatch

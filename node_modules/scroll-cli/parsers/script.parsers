@@ -1,0 +1,25 @@
+buildJsParser
+ description Compile a file to JS and save to disk.
+ extends abstractBuildCommandParser
+
+scriptAnyCell
+ extends anyCell
+scriptLineParser
+ catchAllCellType scriptAnyCell
+ catchAllParser scriptLineParser
+scriptParser
+ extends abstractScrollParser
+ description Prints Javascript content wrapped in script tags.
+ cruxFromId
+ catchAllParser scriptLineParser
+ catchAllCellType scriptAnyCell
+ javascript
+  compile() {
+   return `<script>${this.scriptContent}</script>`
+  }
+  get scriptContent() {
+    return this.content ?? this.childrenToString()
+  }
+  compileJs() {
+    return this.scriptContent
+  }

@@ -1,0 +1,27 @@
+Message Passing
+===============
+
+send(pid, :ping)
+
+|| chld = app.fork(&quot;ipc_identifier_123&quot;, app.rawargs)
+chld &lt;~ &quot;send message&quot;
+printline chld.get // receive message
+
+***
+
+Languages *with* Message Passing include Go, Scala, Elixir, Objective-C, Erlang, Smalltalk, Applescript, progsbase, Self, HyperCard, Speedie, Concurrent ML
+
+***
+
+Languages *without* Message Passing include C3
+
+***
+
+View all concepts with or missing a *hasMessagePassing* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMessagePassing&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMessagePassing%22%2C%22origData%22%3A%22hasMessagePassing%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMessagePassing&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMessagePassing%22%2C%22origData%22%3A%22hasMessagePassing%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Message Passing on the web: 1.
+ https://en.wikipedia.org/wiki/Message_passing

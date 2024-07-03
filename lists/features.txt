@@ -1,0 +1,63 @@
+Features
+========
+
+A list of 52 features found in programming languages. View all features.
+ https://pldb.io/lists/allFeatures.html
+
+We also have a page of all keywords and all file extensions.
+ https://pldb.io/lists/keywords.html
+ https://pldb.io/lists/extensions.html
+
+title|_$^titleLink|_$^pseudoExample|_$^yes|_$^no|_$^percentage
+Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^623|_$^4|_$^99%
+Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^527|_$^21|_$^96%
+Strings|_$^../features/hasStrings.html|_$^"Hello PLDB"|_$^365|_$^0|_$^100%
+Print() Debugging|_$^../features/hasPrintDebugging.html|_$^print "Hello PLDB"|_$^318|_$^1|_$^100%
+MultiLine Comments|_$^../features/hasMultiLineComments.html|_$^/* Hello PLDB */|_$^224|_$^19|_$^92%
+Integers|_$^../features/hasIntegers.html|_$^80766866|_$^159|_$^1|_$^99%
+Floats|_$^../features/hasFloats.html|_$^80766866.0|_$^137|_$^0|_$^100%
+Booleans|_$^../features/hasBooleans.html|_$^pldb = true|_$^116|_$^4|_$^97%
+Hexadecimals|_$^../features/hasHexadecimals.html|_$^0x4D06792|_$^107|_$^1|_$^99%
+Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^73|_$^3|_$^96%
+Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true line1  print "Hello PLDB"|_$^66|_$^517|_$^11%
+Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
+Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^52|_$^1|_$^98%
+While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48|_$^3|_$^94%
+Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^48|_$^1|_$^98%
+File Imports|_$^../features/hasImports.html|_$^import pldb|_$^45|_$^2|_$^96%
+Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^42|_$^1|_$^98%
+Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
+Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^30|_$^4|_$^88%
+Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^27|_$^1|_$^96%
+Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
+Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^26|_$^9|_$^74%
+Switch Statements|_$^../features/hasSwitch.html|_$^switch animal: case dog-buy; case cat-sell;|_$^24|_$^1|_$^96%
+Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^23|_$^54|_$^30%
+Exceptions|_$^../features/hasExceptions.html|_$^throw new Error("PLDB uh oh")|_$^22|_$^3|_$^88%
+Lists|_$^../features/hasLists.html|_$^[2, 3, 10]|_$^21|_$^1|_$^95%
+Pointers|_$^../features/hasPointers.html|_$^int *pldb|_$^20|_$^5|_$^80%
+Directives|_$^../features/hasDirectives.html|_$^use strict;|_$^20|_$^2|_$^91%
+Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^19|_$^1|_$^95%
+Case Sensitivity|_$^../features/isCaseSensitive.html|_$^pldb != PLDB|_$^18|_$^8|_$^69%
+Access Modifiers|_$^../features/hasAccessModifiers.html|_$^class PLDBFile { public title }|_$^18|_$^3|_$^86%
+Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^17|_$^8|_$^68%
+Lispy|_$^../features/isLisp.html|_$^(+ 1 2)|_$^15|_$^1|_$^-
+Constructors|_$^../features/hasConstructors.html|_$^PLDBFile { constructor() {} }|_$^15|_$^4|_$^-
+Scientific Notation|_$^../features/hasScientificNotation.html|_$^8076686.6e1|_$^14|_$^0|_$^-
+Multiple Inheritance|_$^../features/hasMultipleInheritance.html|_$^extends parentWhichExtendsSomethingElse|_$^14|_$^5|_$^-
+Multiline Strings|_$^../features/hasMultilineStrings.html|_$^hello = """Hello\nPLDB"""|_$^13|_$^1|_$^-
+Message Passing|_$^../features/hasMessagePassing.html|_$^"get pldb"|_$^12|_$^1|_$^-
+Bitwise Operators|_$^../features/hasBitWiseOperators.html|_$^3 == (2 &#124; 1)|_$^11|_$^1|_$^-
+Static Typing|_$^../features/hasStaticTyping.html|_$^int pldbRank = 100|_$^10|_$^0|_$^-
+Module Pattern|_$^../features/hasModules.html|_$^module PLDB {}|_$^10|_$^0|_$^-
+Single Dispatch|_$^../features/hasSingleDispatch.html|_$^person.run()|_$^9|_$^1|_$^-
+Regular Expression Syntax Sugar|_$^../features/hasRegularExpressionsSyntaxSugar.html|_$^/pldb/|_$^9|_$^6|_$^-
+Pattern Matching|_$^../features/hasPatternMatching.html|_$^fib 0 = 1; fib 1 = 1|_$^9|_$^2|_$^-
+Increment and decrement operators|_$^../features/hasIncrementAndDecrementOperators.html|_$^i++|_$^9|_$^2|_$^-
+Here Document|_$^../features/hasHereDocs.html|_$^`A big multliline text block`|_$^9|_$^1|_$^-
+Zero-based numbering|_$^../features/hasZeroBasedNumbering.html|_$^firstItem = pldb[0]|_$^8|_$^3|_$^-
+Ternary operators|_$^../features/hasTernaryOperators.html|_$^true ? 1 : 0|_$^8|_$^7|_$^-
+Enums|_$^../features/hasEnums.html|_$^colorsEnum { "red", "white", "blue"}|_$^8|_$^5|_$^-
+Disk Output|_$^../features/canWriteToDisk.html|_$^write("pldb.csv", "...")|_$^7|_$^4|_$^-
+Units of Measure|_$^../features/hasUnitsOfMeasure.html|_$^42cm|_$^6|_$^4|_$^-
+Variable Substitution Syntax|_$^../features/hasVariableSubstitutionSyntax.html|_$^name = "PLDB"; print $name|_$^2|_$^10|_$^-

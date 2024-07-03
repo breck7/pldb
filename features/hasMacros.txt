@@ -1,0 +1,243 @@
+Macros
+======
+
+// https://learn.microsoft.com/en-us/cpp/preprocessor/macros-c-cpp?redirectedfrom=MSDN&amp;view=msvc-170
+// https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
+#define min(X, Y)  ((X) &lt; (Y) ? (X) : (Y))
+  x = min(a, b);          →  x = ((a) &lt; (b) ? (a) : (b));
+  y = min(1, 2);          →  y = ((1) &lt; (2) ? (1) : (2));
+  z = min(a + 28, *p);    →  z = ((a + 28) &lt; (*p) ? (a + 28) : (*p));
+
+// https://doc.rust-lang.org/book/ch19-06-macros.html
+#[macro_export]
+macro_rules! vec {
+    ( $( $x:expr ),* ) =&gt; {
+        {
+            let mut temp_vec = Vec::new();
+            $(
+                temp_vec.push($x);
+            )*
+            temp_vec
+        }
+    };
+}
+
+// https://docs.scala-lang.org/scala3/guides/macros/macros.html
+import scala.quoted.* // imports Quotes, Expr
+
+def inspectCode(x: Expr[Any])(using Quotes): Expr[Any] =
+  println(x.show)
+  x
+
+; https://www.braveclojure.com/writing-macros/
+; https://clojure.org/reference/macros
+(defmacro and
+ &quot;Evaluates exprs one at a time, from left to right. If a form
+ returns logical false (nil or false), and returns that value and
+ doesn&#39;t evaluate any of the other expressions, otherwise it returns
+ the value of the last expr. (and) returns true.&quot;
+ {:added &quot;1.0&quot;}
+ ([] true)
+ ([x] x)
+ ([x &amp; next]
+  `(let [and# ~x]
+     (if and# (and ~@next) and#))))
+
+# https://hexdocs.pm/elixir/Macro.html
+defmodule Example do
+  defmacro macro_inspect(value) do
+    IO.inspect(value)
+    value
+  end
+  def fun_inspect(value) do
+    IO.inspect(value)
+    value
+  end
+end
+
+# https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
+macro show_value(variable)
+    quote
+        println(&quot;The &quot;, $(string(variable)), &quot; you passed is &quot;, $(esc(variable)))
+    end
+end
+
+@show_value(orange)
+@show_value(apple)
+
+-define(Const, Replacement).
+-define(Func(Var1,...,VarN), Replacement).
+
+term_expansion(parent_child(Parent, Child),
+             child_parent(Child, Parent)).
+parent_child(trevor, simon).
+% With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
+?- child_parent(Child, Parent).
+ Child = simon, Parent = trevor.
+
+# https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+import macros
+dumpTree:
+ result = 10
+
+; https://docs.racket-lang.org/guide/macros.html
+(define-syntax-rule (swap x y)
+(let ([tmp x])
+  (set! x y)
+  (set! y tmp)))
+
+(define-syntax backwards
+ (syntax-rules ()
+   ((_) (syntax-error &quot;(backwards) not allowed&quot;))
+   ((_ e) e)
+   ((_ e1 ... e2)
+    (begin e2 (backwards e1 ...)))))
+
+macro square(x)
+{
+  return x * x;
+}
+
+// http://nemerle.org/About
+def title = &quot;Programming language authors&quot;;
+def authors = [&quot;Anders Hejlsberg&quot;, &quot;Simon Peyton-Jones&quot;];
+    
+// &#39;xml&#39; - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+def html = xml &lt;#
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;$title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;ul $when(authors.Any())&gt;
+        &lt;li $foreach(author in authors)&gt;$author&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+#&gt;
+Trace.Assert(html.GetType().Equals(typeof(XElement)));
+WriteLine(html.GetType());
+
+define macro table
+  { table(?table-class:expression, ?table-contents) }
+    =&gt; { let ht = make(?table-class); ?table-contents; ht; }
+  { table(?rest:*) } =&gt; { table(&lt;table&gt;, ?rest); }
+
+  table-contents:
+  { } =&gt; { }
+  { ?key:expression =&gt; ?value:expression, ... }
+    =&gt; { ht[?key] := ?value; ... }
+end macro table
+
+; http://www.arclanguage.org/tut.txt
+; We know enough now to start writing macros.  Macros are basically
+; functions that generate code.  Of course, generating code is easy;
+; just call list.
+;
+; arc&gt; (list &#39;+ 1 2)
+; (+ 1 2)
+;
+; What macros offer is a way of getting code generated this way into
+; your programs.  Here&#39;s a (rather stupid) macro definition:
+;
+; arc&gt; (mac foo ()
+;        (list &#39;+ 1 2))
+; *** redefining foo
+; #3(tagged mac #&lt;procedure&gt;)
+;
+; Notice that a macro definition looks exactly like a function
+; definition, but with def replaced by mac.
+;
+; What this macro says is that whenever the expression (foo) occurs
+; in your code, it shouldn&#39;t be evaluated in the normal way like a
+; function call.  Instead it should be replaced by the result of
+; evaluating the body of the macro definition, (list &#39;+ 1 2).
+; This is called the &quot;expansion&quot; of the macro call.
+
+#define CYCLES 20
+
+.de P
+.  br
+.  sp .8v
+..
+
+// _SortCases_
+//
+//  This routine does a bubble sort on an array
+// of _caseRecord_ objects.  It sorts in ascending
+// order using the &quot;value&quot; field as the key.
+//
+// This is a good old fashioned bubble sort which
+// turns out to be very efficient because:
+//
+//  (1) The list of cases is usually quite small, and
+//  (2) The data is usually already sorted (or mostly sorted).
+
+macro _SortCases_( ary, size ):i, bnd, didswap, temp;
+
+    ?bnd := size - 1;
+    ?didswap := true;
+    #while( didswap )
+    
+        ?didswap := false;
+        ?i := 0;
+        #while( i &lt; bnd )
+        
+            #if( ary[i].value &gt; ary[i+1].value )
+            
+                ?temp := ary[i];
+                ?ary[i] := ary[i+1];
+                ?ary[i+1] := temp;
+                ?didswap := true;
+                
+            #endif
+            ?i := i + 1;
+            
+        #endwhile
+        ?bnd := bnd - 1;
+        
+    #endwhile;
+        
+    
+endmacro;
+
+; A macro is essentially a function that generates code. I would have
+; liked the first example of a macro to be something simpler, but fn
+; is the one we need first. So I&#39;ll introduce macros using a simpler
+; macro that isn&#39;t part of Bel, then explain fn.
+; Here is a very simple macro:
+(mac nilwith (x)
+  (list &#39;cons nil x))
+
+(@define MY_CONSTANT 5)
+(@if MY_CONSTANT 5
+    (print &quot;yes, it&#39;s&quot;)
+    (print @MY_CONSTANT)
+)
+
+- defmacro:
+  name: foo
+  args: [who]
+  value:
+      Hello: who
+- foo:
+  who: World
+
+***
+
+Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Julia, Erlang, Prolog, Nim, Racket, Scheme, Factor, C3, Slope, Nemerle, Dylan, Arc, Pike, groff, Gerbil Scheme, High Level Assembly, Speedie, Bel, Wax, YAMP, honu
+
+***
+
+Languages *without* Macros include JavaScript, Python, Java, HTML, JSON, XML, Kotlin, Smalltalk, progsbase
+
+***
+
+View all concepts with or missing a *hasMacros* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMacros&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMacros%22%2C%22origData%22%3A%22hasMacros%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMacros&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMacros%22%2C%22origData%22%3A%22hasMacros%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Macros on the web: 1.
+ https://en.wikipedia.org/wiki/Macro_(computer_science)

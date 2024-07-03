@@ -1,0 +1,50 @@
+Exceptions
+==========
+
+try {
+ undefinedFn()
+} catch (err) {
+ console.log(err)
+}
+
+def hello
+ puts &quot;Hello, World!&quot;
+   # start an exception handler
+   begin
+       raise &quot;This is an exception&quot;
+   rescue =&gt; e
+       puts &quot;Exception caught: #{e}&quot;
+   end
+ end
+hello
+
+raise &quot;oops, something went wrong&quot;
+
+catch [throw 22 print &quot;You&#39;ll never see this.&quot;]
+
+try/except [read %does_not_exist] [print &quot;File not found&quot;]
+
+Has throw, try, and catch
+
+catch [throw 22 print &quot;You&#39;ll never see this.&quot;]
+
+if error? try [read %does_not_exist] [print &quot;File not found&quot;]
+
+***
+
+Languages *with* Exceptions include JavaScript, Java, C++, Ruby, PHP, C#, PowerShell, Swift, Scala, Kotlin, Elixir, CoffeeScript, Dart, Solidity, Groovy, ABAP, REBOL, X10, Apex, Sophia, Aardvark, Boron
+
+***
+
+Languages *without* Exceptions include C, progsbase, Speedie
+
+***
+
+View all concepts with or missing a *hasExceptions* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExceptions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasExceptions%22%2C%22origData%22%3A%22hasExceptions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExceptions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasExceptions%22%2C%22origData%22%3A%22hasExceptions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Exceptions on the web: 1.
+ https://en.wikipedia.org/wiki/Exception_handling

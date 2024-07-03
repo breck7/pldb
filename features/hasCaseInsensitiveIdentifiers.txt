@@ -1,0 +1,50 @@
+Case Insensitive Identifiers
+============================
+
+with Gnat.Io; use Gnat.Io;
+procedure Numbers is
+   Score: Integer;
+   F: Float := 1.0;
+begin
+   Score := 3 + 2#1011#;
+   Put(score);
+   New_Line;
+   Score := Score + 1_000_000;
+   Put(Score);
+   New_Line;
+end Numbers;
+
+s := (A + a + A);
+
+# Though they may be phased out:
+# https://github.com/nim-lang/RFCs/issues/456
+
+x = 2.0
+y = x + X
+
+signals some_signal : integer ;
+signal some_other_signal : integer ;
+signal result : integer ;
+ReSULT &lt;= SOME_SIGNAL + sOME_oTHer_SIGNal ; -- Although totally unrecommended - this is perfectly legal
+
+if &quot;abc&quot;.LeNgTh == 3
+  &quot;cool length&quot;
+
+***
+
+Languages *with* Case Insensitive Identifiers include HTML, CSS, SQL, SAS, COBOL, Visual Basic, Ada, Pascal, Nim, Fortran, PostgreSQL, MySQL, SPSS, VHDL, Forth, Visual Basic .NET, Delphi, BASIC, AutoHotkey, Eiffel, Batchfile, Speedie, Gforth
+
+***
+
+Languages *without* Case Insensitive Identifiers include JavaScript, C, Python, Java, Perl, Ruby, PHP, JSON, Go, XML, TypeScript, R, Rust, Swift, Scala, Lua, Haskell, Kotlin, Clojure, Elixir, CoffeeScript, Objective-C, Lisp, Julia, Erlang, Prolog, CUDA, Dart, Racket, Reason, D, Elm, Scheme, GraphQL, OCaml, F#, Chapel, Smalltalk, Node.js, LaTeX, Arduino Programming Language, SQLite, Maple, Tcl, ActionScript, XQuery, C3, Modula-2, progsbase, C2, Sage, Modula-3, Veryl, Bel
+
+***
+
+View all concepts with or missing a *hasCaseInsensitiveIdentifiers* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasCaseInsensitiveIdentifiers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasCaseInsensitiveIdentifiers%22%2C%22origData%22%3A%22hasCaseInsensitiveIdentifiers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasCaseInsensitiveIdentifiers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasCaseInsensitiveIdentifiers%22%2C%22origData%22%3A%22hasCaseInsensitiveIdentifiers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Case Insensitive Identifiers on the web: 1.
+ https://rosettacode.org/wiki/Case-sensitivity_of_identifiers

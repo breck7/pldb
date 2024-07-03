@@ -1,0 +1,46 @@
+Templates
+=========
+
+template &lt;int length&gt;
+Vector&lt;length&gt;&amp; Vector&lt;length&gt;::operator+=(const Vector&lt;length&gt;&amp; rhs)
+{
+    for (int i = 0; i &lt; length; ++i)
+        value[i] += rhs.value[i];
+    return *this;
+}
+
+# https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+template debug*(args: varargs[string, `$`]) =
+if logLevel &lt;= Level.debug:
+  const module = instantiationInfo().filename[0 .. ^5]
+  echo &quot;[$# $#][$#]: $#&quot; % [getDateStr(), getClockStr(),
+    module, join args]
+
+template TCopy(T)
+{
+    void copy(out T to, T from)
+    {
+        to = from;
+    }
+}
+int i;
+TCopy!(int).copy(i, 3);
+
+***
+
+Languages *with* Templates include C++, Nim, D, XL
+
+***
+
+Languages *without* Templates include C, Speedie
+
+***
+
+View all concepts with or missing a *hasTemplates* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTemplates&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTemplates%22%2C%22origData%22%3A%22hasTemplates%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTemplates&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTemplates%22%2C%22origData%22%3A%22hasTemplates%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Templates on the web: 1.
+ https://en.wikipedia.org/wiki/Template_metaprogramming

@@ -1,0 +1,54 @@
+Function Overloading
+====================
+
+// volume of a cube
+int volume(const int s) {
+ return s*s*s;
+}
+// volume of a cylinder
+double volume(const double r, const int h) {
+  return 3.1415926*r*r*static_cast&lt;double&gt;(h);
+}
+
+program Adhoc;
+
+function Add(x, y : Integer) : Integer;
+begin
+    Add := x + y
+end;
+
+function Add(s, t : String) : String;
+begin
+    Add := Concat(s, t)
+end;
+
+begin
+    Writeln(Add(1, 2));                   (* Prints &quot;3&quot;             *)
+    Writeln(Add(&#39;Hello, &#39;, &#39;World!&#39;));    (* Prints &quot;Hello, World!&quot; *)
+end.
+
+function volume (|float| a, |float|)
+ return a*a*a
+function volume (|float| r, |float| h, |float|)
+ // volume of a cylinder
+ return math.pi*r*r*h
+
+***
+
+Languages *with* Function Overloading include C++, Pascal, Dale, Speedie
+
+***
+
+Languages *without* Function Overloading include JavaScript, Ruby, C3, Jule
+
+***
+
+View all concepts with or missing a *hasFunctionOverloading* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFunctionOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasFunctionOverloading%22%2C%22origData%22%3A%22hasFunctionOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFunctionOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasFunctionOverloading%22%2C%22origData%22%3A%22hasFunctionOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Function Overloading on the web: 1. 2.
+ https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading
+ https://en.wikipedia.org/wiki/Function_overloading

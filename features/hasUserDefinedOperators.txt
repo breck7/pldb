@@ -1,0 +1,34 @@
+hasUserDefinedOperators
+=======================
+
+Hope enables us to use a function with two arguments as an infix operator. e must assign it a priority and use it as an infix operator everywhere, including the equations that define it. A bigger number in the infix declaration means a higher priority. Most of Hope&#39;s standard functions are supplied as infix operators.
+infix mult 8;
+dec mult : num # num - &gt; num;
+---xmulty&lt;= ifY=0then0elsexmult(y-1)+x;
+
+class myclass
+ |int| Num
+ operator add (|int| x, |myclass|)
+  return myclass(.num + x)
+ render
+  fs &lt;~ .num
+
+main
+ || x = myclass(1)
+ || y = myclass(2)
+ || z = y + x
+ printline z
+
+***
+
+Languages *with* hasUserDefinedOperators include HOPE, Speedie
+
+***
+
+Languages *without* hasUserDefinedOperators include C3, Jule
+
+***
+
+View all concepts with or missing a *hasUserDefinedOperators* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasUserDefinedOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasUserDefinedOperators%22%2C%22origData%22%3A%22hasUserDefinedOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasUserDefinedOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasUserDefinedOperators%22%2C%22origData%22%3A%22hasUserDefinedOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D

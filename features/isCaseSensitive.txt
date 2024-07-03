@@ -1,0 +1,25 @@
+Case Sensitivity
+================
+
+[subsections &quot;areCaseSensitive&quot;]
+
+|| Same = &quot;x&quot; == &quot;X&quot; // same = false
+
+***
+
+Languages *with* Case Sensitivity include JavaScript, C, Python, Java, Ruby, Go, C#, Swift, Haskell, Elixir, Prolog, Ini, Verilog, C3, progsbase, Slope, Jule, Speedie
+
+***
+
+Languages *without* Case Sensitivity include SQL, Ada, Pascal, Fortran, Forth, ABAP, BASIC, Gforth
+
+***
+
+View all concepts with or missing a *isCaseSensitive* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~isCaseSensitive&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22isCaseSensitive%22%2C%22origData%22%3A%22isCaseSensitive%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~isCaseSensitive&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22isCaseSensitive%22%2C%22origData%22%3A%22isCaseSensitive%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Case Sensitivity on the web: 1.
+ https://en.wikipedia.org/wiki/Case_sensitivity

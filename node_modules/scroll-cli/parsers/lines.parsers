@@ -6,7 +6,7 @@ abstractDinkusParser
   compile() {
    return `<div class="dinkus"><span>${this.dinkus}</span></div>`
   }
-  compileTextVersion() {
+  compileTxt() {
     return this.getLine()
   }
 

@@ -1,4 +1,3 @@
-importOnly
 replaceJs CURRENT_YEAR dayjs().format("YYYY")
 
 ## Citation

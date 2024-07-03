@@ -1,0 +1,111 @@
+Hexadecimals
+============
+
+// 0[xX][0-9a-fA-F]+n?
+0x4D06792
+
+# 0[xX](?:_?[a-fA-F0-9])+
+
+// 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+
+# 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
+
+// 0[xX][0-9a-fA-F]+
+
+// 0x[0-9a-fA-F_]+
+
+-- 0[xX][0-9a-fA-F]+ (integer)
+-- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? (float)
+0x5F3759DF
+0x0.1D
+0xA23p-4
+0X1.921FB54442D18P+1
+
+-- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
+
+; 0x-?[abcdef\d]+
+
+# 0x[\da-fA-F]+
+
+# 0x[0-9a-fA-F]+
+
+# 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
+
+% 0x[0-9a-fA-F]+
+
+-- [0-9_]+#[0-9a-f_\.]+#
+
+// 0[xX][\da-fA-F][\da-fA-F_]*
+
+// 0[xX][0-9a-fA-F_]+
+
+-- x&#39;([0-9a-f]{2})+&#39;
+
+// 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
+
+-- X&quot;[0-9a-f_]+&quot;
+
+-- 0[xX][\da-fA-F]+
+
+\ (\$[0-9A-F]+)
+
+// 0x[0-9a-fA-F]+[LlUu]*
+
+// ([0-9]+)|(\&#39;h)[0-9a-fA-F]+
+
+; 0[xX][a-fA-F0-9]+
+
+% &lt;[0-9A-Fa-f]+&gt;(?=[()&lt;&gt;\[\]{}/%\s])
+
+-- 0[xX][a-fA-F0-9]+
+
+// 0x[0-9a-fA-F]+
+
+&#39; &amp;h[0-9a-f]+
+
+-- 0x[0-9a-f]+
+
+// #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
+
+// ([1-9][_0-9]*)?\s*\&#39;[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
+
+/ [0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}
+
+# 0[xX][a-fA-F0-9]+
+
+# 0x[a-fA-F0-9]+
+
+// 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+
+# \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
+
+&#39; \$[0-9a-fA-Z]+
+
+# 0x[0-9A-Fa-f]+
+
+// 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+
+0xDFF90
+
+|| num = 0xBEEF
+
+`16_fa7` would evaluate as a hexadecimal number
+
+***
+
+Languages *with* Hexadecimals include JavaScript, Python, Java, Perl, Go, Swift, Lua, Haskell, Clojure, Elixir, CoffeeScript, Julia, Prolog, Dart, Ada, Zig, Reason, D, MySQL, WebAssembly, awk, Coq, OCaml, F#, Chapel, ClojureScript, VHDL, Idris, Forth, Protocol Buffers, IDL, F*, ActionScript, Verilog, Pony, AutoHotkey, Hy, Puppet, PostScript, Cython, Eiffel, Zephir, VBScript, Pig Latin, Koka, C3, QML, Opa, Thrift, Agda, Futhark, Ceylon, SystemVerilog, NumPy, Cryptol, AutoIt, K, GLSL, HLSL, Golo, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, Meson, ooc, Nit, chaiscript, Ioke, Vim script, Xtend, Isabelle, Logtalk, SourcePawn, Icon, BlitzMax, Whiley, clay, S, GDScript, Monkey, OpenEdge ABL, BlitzBasic, Ragel, Earl Grey, Croc, Kal, Linden Scripting Language, Jule, FloScript, Unicon, monte, MiniD, Savi, JS++, Speedie, Flatline, parasail, Aardvark, TAL, Pawn, Urbiscript, nimrod, SARL, CBOR data definition language, RAISE Specification Language
+
+***
+
+Languages *without* Hexadecimals include progsbase
+
+***
+
+View all concepts with or missing a *hasHexadecimals* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasHexadecimals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasHexadecimals%22%2C%22origData%22%3A%22hasHexadecimals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasHexadecimals&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasHexadecimals%22%2C%22origData%22%3A%22hasHexadecimals%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Hexadecimals on the web: 1.
+ https://en.wikipedia.org/wiki/Hexadecimal

@@ -30,6 +30,6 @@ footnoteDefinitionParser
   get noteDefinitionIndex() {
    return this.parent.footnotes.indexOf(this) + 1
   }
-  compileTextVersion() {
-    return this.getWord(0) + ": " + super.compileTextVersion()
+  compileTxt() {
+    return this.getWord(0) + ": " + super.compileTxt()
   }
