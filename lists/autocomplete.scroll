@@ -1,4 +1,4 @@
-permalink autocompleteCombined.js
+buildJs autocompleteCombined.js
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = {SCRIPT: Tables.autocompleteJs}
