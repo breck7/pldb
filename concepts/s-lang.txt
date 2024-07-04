@@ -5,7 +5,7 @@ s-lang is a programming language created in 1992 by John E. Davis.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
  https://pldb.io/concepts/../lists/creators.html#q=John%20E.%20Davis
 
-#2863 on PLDB
+#2865 on PLDB
 32 Years Old
 
 S-Lang is an interpreted language that was designed from the start to be easily embedded into a program to provide it with a powerful extension language. Examples of programs that use S-Lang as an extension language include the jed text editor and the slrn newsreader. Although S-Lang does not exist as a separate application, it is distributed with a quite capable program called slsh (``slang-shell'') that embeds the interpreter and allows one to execute S-Lang scripts, or simply experiment with S-Lang at an interactive prompt. Many of the the examples in this document are presented in the context of one of the above applications. S-Lang was originally a stack language that supported a postscript-like syntax. For that reason, I named it S-Lang, where the S was supposed to emphasize its stack-based nature. About a year later, I began to work on a preparser that would allow one unfamiliar with stack based languages to make use of a more traditional infix syntax. Currently, the syntax of the language resembles C, nevertheless some postscript-like features still remain, e.g., the `%' character is still used as a comment delimiter.

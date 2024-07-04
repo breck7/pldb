@@ -141,11 +141,6 @@ import &#39;dart:math&#39; as math;
 
 require &quot;../../spec_helper&quot;
 
-open module-or-namespace-name
-open System.IO
-open List
-open Seq
-
 //- index.pug
 doctype html
 html
@@ -154,6 +149,11 @@ html
     h1 My Site
     p Welcome to my super lame site.
     include includes/foot.pug
+
+open module-or-namespace-name
+open System.IO
+open List
+open Seq
 
 const fs = require(&quot;fs&quot;)
 
@@ -201,7 +201,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, F#, Pug, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, bog, Jule, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, bog, Jule, Speedie, Aardvark
 
 ***
 

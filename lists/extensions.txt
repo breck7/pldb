@@ -64,12 +64,12 @@ WebAssembly|_$^../concepts/wasm.html|_$^wasm wast wat|_$^3
 GraphQL|_$^../concepts/graphql.html|_$^gql graphql graphqls|_$^3
 Groovy|_$^../concepts/groovy.html|_$^groovy gant grt gtpl gvy jenkinsfile gradle|_$^7
 awk|_$^../concepts/awk.html|_$^auk awk gawk mawk nawk|_$^5
+Pug|_$^../concepts/pug.html|_$^jade pug|_$^2
 Tex|_$^../concepts/tex.html|_$^aux bbx bib bst cbx dtx ins lbx ltx mkii mkiv mkvi sty tex cls toc|_$^16
 Coq|_$^../concepts/coq.html|_$^v coq|_$^2
 OCaml|_$^../concepts/ocaml.html|_$^ml mli eliom eliomi ml4 mll mly|_$^7
 F#|_$^../concepts/f-sharp.html|_$^fs fsi fsx fsscript|_$^4
 Chapel|_$^../concepts/chapel.html|_$^chpl|_$^1
-Pug|_$^../concepts/pug.html|_$^jade pug|_$^2
 LLVM IR|_$^../concepts/llvmir.html|_$^ll|_$^1
 Smalltalk|_$^../concepts/smalltalk.html|_$^st cs|_$^2
 ClojureScript|_$^../concepts/clojurescript.html|_$^cljs|_$^1
@@ -111,8 +111,8 @@ Delphi|_$^../concepts/delphi.html|_$^pas dpr|_$^2
 F*|_$^../concepts/fstar.html|_$^fst fsti|_$^2
 Standard ML|_$^../concepts/standard-ml.html|_$^sml fun sig ml|_$^4
 SaltStack|_$^../concepts/saltstack.html|_$^sls|_$^1
-RobotFramework|_$^../concepts/robotframework.html|_$^robot resource|_$^2
 Bazel|_$^../concepts/bazel.html|_$^BUILD|_$^1
+RobotFramework|_$^../concepts/robotframework.html|_$^robot resource|_$^2
 Stata|_$^../concepts/stata.html|_$^ado DO do doh ihlp mata matah sthlp|_$^8
 Z shell|_$^../concepts/z-shell.html|_$^.ZSH zsh|_$^2
 ABAP|_$^../concepts/abap.html|_$^abap ABAP|_$^2
@@ -142,8 +142,8 @@ Less|_$^../concepts/less.html|_$^less|_$^1
 Cython|_$^../concepts/cython.html|_$^pxd pxi pyx|_$^3
 mustache|_$^../concepts/mustache.html|_$^mustache|_$^1
 Common Lisp|_$^../concepts/common-lisp.html|_$^lisp lsp l cl fasl asd ny podsl sexp|_$^9
-Manim|_$^../concepts/manim.html|_$^.py|_$^1
 XQuery|_$^../concepts/xquery.html|_$^xq xql xqm xqy xquery|_$^5
+Manim|_$^../concepts/manim.html|_$^.py|_$^1
 ColdFusion|_$^../concepts/coldfusion.html|_$^cfm cfml|_$^2
 Vue|_$^../concepts/vuejs.html|_$^vue|_$^1
 Korn shell|_$^../concepts/korn-shell.html|_$^ksh|_$^1
@@ -178,8 +178,8 @@ PL/SQL|_$^../concepts/pl-sql.html|_$^pls bdy ddl fnc pck pkb pks plb plsql prc s
 C3|_$^../concepts/c3.html|_$^c3 c3i|_$^2
 QML|_$^../concepts/qml.html|_$^qbs qml|_$^2
 Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
-Opa|_$^../concepts/opa.html|_$^opa|_$^1
 Qt|_$^../concepts/qt.html|_$^ui|_$^1
+Opa|_$^../concepts/opa.html|_$^opa|_$^1
 Terra|_$^../concepts/terra.html|_$^t|_$^1
 Bourne shell|_$^../concepts/bourne-shell.html|_$^sh|_$^1
 Nearley|_$^../concepts/nearley.html|_$^ne nearley|_$^2
@@ -193,8 +193,8 @@ Ninja|_$^../concepts/ninja.html|_$^ninja|_$^1
 SPARQL|_$^../concepts/sparql.html|_$^sparql rq|_$^2
 janet|_$^../concepts/janet.html|_$^janet|_$^1
 Dafny|_$^../concepts/dafny.html|_$^dfy|_$^1
-Processing|_$^../concepts/processing.html|_$^pde|_$^1
 CSON|_$^../concepts/cson.html|_$^cson|_$^1
+Processing|_$^../concepts/processing.html|_$^pde|_$^1
 Agda|_$^../concepts/agda.html|_$^agda lagda|_$^2
 Marko|_$^../concepts/marko.html|_$^marko|_$^1
 Futhark|_$^../concepts/futhark.html|_$^fut|_$^1
@@ -221,8 +221,8 @@ QBasic|_$^../concepts/qbasic.html|_$^BAS bas|_$^2
 SystemVerilog|_$^../concepts/systemverilog.html|_$^sv svh vh header file|_$^5
 Turtle|_$^../concepts/turtle.html|_$^ttl|_$^1
 YASnippet|_$^../concepts/yasnippet.html|_$^yasnippet|_$^1
-beef-lang|_$^../concepts/beef.html|_$^bf|_$^1
 x86 Assembly|_$^../concepts/x86-assembly.html|_$^s ms|_$^2
+beef-lang|_$^../concepts/beef.html|_$^bf|_$^1
 Modula-2|_$^../concepts/modula-2.html|_$^mod m2 def MOD DEF mi md|_$^7
 Rexx|_$^../concepts/rexx.html|_$^cmd exec rexx rex pprx rx arexx|_$^7
 OWL|_$^../concepts/owl.html|_$^owl|_$^1
@@ -304,9 +304,9 @@ CodeQL|_$^../concepts/codeql.html|_$^ql qll|_$^2
 Fancy|_$^../concepts/fancy.html|_$^fy fancypack|_$^2
 Metal|_$^../concepts/metal.html|_$^metal|_$^1
 Veryl|_$^../concepts/veryl.html|_$^veryl|_$^1
+LiveScript|_$^../concepts/livescript.html|_$^ls _ls|_$^2
 Io|_$^../concepts/io.html|_$^io|_$^1
 Xtend|_$^../concepts/xtend.html|_$^xtend|_$^1
-LiveScript|_$^../concepts/livescript.html|_$^ls _ls|_$^2
 Latte|_$^../concepts/latte.html|_$^latte|_$^1
 Isabelle|_$^../concepts/isabelle.html|_$^ROOT thy|_$^2
 Fantom|_$^../concepts/fantom.html|_$^fan|_$^1
@@ -325,8 +325,8 @@ groff|_$^../concepts/groff.html|_$^[1-9] man 1p 3pm|_$^4
 Stylus|_$^../concepts/stylus.html|_$^styl|_$^1
 vdscript|_$^../concepts/vdscript.html|_$^VirtualDub.jobs|_$^1
 NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
-Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
 BNF|_$^../concepts/bnf.html|_$^bnf|_$^1
+Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
 NewLisp|_$^../concepts/newlisp.html|_$^nl lisp lsp kif|_$^4
 X10|_$^../concepts/x10.html|_$^x10|_$^1
 Xtext|_$^../concepts/xtext.html|_$^xtext|_$^1
@@ -346,8 +346,8 @@ BlitzMax|_$^../concepts/blitzmax.html|_$^bmx|_$^1
 Whiley|_$^../concepts/whiley.html|_$^whiley|_$^1
 Csound|_$^../concepts/csound.html|_$^csd sco orc udo|_$^4
 E|_$^../concepts/e.html|_$^e|_$^1
-Filebench WML|_$^../concepts/filebench-wml.html|_$^f|_$^1
 Dockerfile|_$^../concepts/dockerfile.html|_$^Dockerfile dockerfile|_$^2
+Filebench WML|_$^../concepts/filebench-wml.html|_$^f|_$^1
 clay|_$^../concepts/clay.html|_$^clay|_$^1
 PureBasic|_$^../concepts/purebasic.html|_$^pb pbi|_$^2
 FoxPRO|_$^../concepts/foxpro.html|_$^PRG prg|_$^2
@@ -356,8 +356,8 @@ Rascal|_$^../concepts/rascal.html|_$^rsc|_$^1
 IcedCoffeeScript|_$^../concepts/icedcoffeescript.html|_$^coffee|_$^1
 UrWeb|_$^../concepts/urweb.html|_$^ur urs|_$^2
 JSON with Comments|_$^../concepts/json-with-comments.html|_$^jsonc code-snippets sublime-build sublime-commands sublime-completions sublime-keymap sublime-macro sublime-menu sublime-mousemap sublime-project sublime-settings sublime-theme sublime-workspace sublime_metrics sublime_session|_$^15
-contracts.coffee|_$^../concepts/contracts.coffee.html|_$^coffee|_$^1
 Objective C++|_$^../concepts/objective-cpp.html|_$^mm hh|_$^2
+contracts.coffee|_$^../concepts/contracts.coffee.html|_$^coffee|_$^1
 S|_$^../concepts/s.html|_$^S R .Rhistory .Rprofile .Renviron|_$^5
 BlackCoffee|_$^../concepts/blackcoffee.html|_$^coffee|_$^1
 IGOR Pro|_$^../concepts/igor-pro.html|_$^ipf|_$^1
@@ -368,8 +368,8 @@ basic calculator|_$^../concepts/bc.html|_$^bc|_$^1
 ERB|_$^../concepts/erb.html|_$^ERB erb erbdeface rhtml|_$^4
 Easybuild|_$^../concepts/easybuild.html|_$^eb|_$^1
 Stan|_$^../concepts/stan.html|_$^stan|_$^1
-Cobra|_$^../concepts/cobra.html|_$^cobra|_$^1
 Gherkin|_$^../concepts/gherkin.html|_$^feature story|_$^2
+Cobra|_$^../concepts/cobra.html|_$^cobra|_$^1
 Logos|_$^../concepts/logos.html|_$^x xm xi xmi|_$^4
 Limbo|_$^../concepts/limbo.html|_$^b m|_$^2
 GDScript|_$^../concepts/gdscript.html|_$^gd|_$^1
@@ -522,8 +522,8 @@ LookML|_$^../concepts/lookml.html|_$^lookml modellkml viewlkml|_$^3
 SRecode Template|_$^../concepts/srecode-template.html|_$^srt|_$^1
 Type Language|_$^../concepts/type-language.html|_$^tl|_$^1
 RenderScript|_$^../concepts/renderscript.html|_$^rs rsh|_$^2
-pointless|_$^../concepts/pointless.html|_$^ptls|_$^1
 CWEB|_$^../concepts/cweb.html|_$^w|_$^1
+pointless|_$^../concepts/pointless.html|_$^ptls|_$^1
 Yorick|_$^../concepts/yorick.html|_$^i|_$^1
 UPC|_$^../concepts/unified-parallel-c.html|_$^upc|_$^1
 Brightscript|_$^../concepts/roku-brightscript.html|_$^brs|_$^1
@@ -585,12 +585,12 @@ Jisp|_$^../concepts/jisp.html|_$^jisp|_$^1
 Cadence SKILL|_$^../concepts/cadence-skill.html|_$^il|_$^1
 Scala Markup Language|_$^../concepts/scaml.html|_$^scaml|_$^1
 Newspeak|_$^../concepts/newspeak.html|_$^ns2|_$^1
-Speedie|_$^../concepts/speedie.html|_$^spd scproj|_$^2
 DataWeave|_$^../concepts/dataweave.html|_$^dwl|_$^1
 desktop|_$^../concepts/desktop.html|_$^desktop desktopin service|_$^3
 Literate Haskell|_$^../concepts/literate-haskell.html|_$^lhs|_$^1
 OpenType Feature File|_$^../concepts/opentype-feature-file.html|_$^fea|_$^1
 RUNOFF|_$^../concepts/runoff.html|_$^rnh rno|_$^2
+Speedie|_$^../concepts/speedie.html|_$^spd scproj|_$^2
 Wavefront Object|_$^../concepts/wavefront-object.html|_$^obj|_$^1
 Recfiles|_$^../concepts/recfiles.html|_$^rec|_$^1
 Easytrieve|_$^../concepts/easytrieve.html|_$^ezt mac|_$^2
@@ -644,8 +644,8 @@ Ham|_$^../concepts/ham.html|_$^ham|_$^1
 Promela|_$^../concepts/promela.html|_$^pml|_$^1
 Hot Cocoa Lisp|_$^../concepts/hotcocoalisp.html|_$^hcl|_$^1
 IPL|_$^../concepts/intuitionistic.html|_$^ipl|_$^1
-Shapefile|_$^../concepts/shapefile.html|_$^shp shx dbf|_$^3
 CSpydr|_$^../concepts/cspydr.html|_$^csp|_$^1
+Shapefile|_$^../concepts/shapefile.html|_$^shp shx dbf|_$^3
 Subleq|_$^../concepts/subleq.html|_$^sq|_$^1
 RigC|_$^../concepts/rigc.html|_$^rigc|_$^1
 nimrod|_$^../concepts/nimrod.html|_$^nim nimrod|_$^2

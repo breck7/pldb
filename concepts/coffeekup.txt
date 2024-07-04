@@ -1,0 +1,74 @@
+CoffeeKup
+=========
+
+CoffeeKup is a template language created in 2010 by Maurice Machado.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Maurice%20Machado
+
+#2672 on PLDB
+14 Years Old
+
+git clone https://github.com/mauricemach/coffeekup
+
+Markup as CoffeeScript.
+
+- CoffeeKup appears in categories: template language
+- CoffeeKup is developed on GitHub
+- CoffeeKup is written in CoffeeScript, HTML, Markdown, JavaScript, Bourne shell, CSS, JSON
+- 1 languages in PLDB linking to CoffeeKup: Jedi
+
+doctype 5
+html -&gt;
+  head -&gt;
+    meta charset: &#39;utf-8&#39;
+    title &quot;#{@title or &#39;Untitled&#39;} | A completely plausible website&quot;
+    meta(name: &#39;description&#39;, content: @description) if @description?
+    
+    link rel: &#39;stylesheet&#39;, href: &#39;/css/app.css&#39;
+    
+    style &#39;&#39;&#39;
+      body {font-family: sans-serif}
+      header, nav, section, footer {display: block}
+    &#39;&#39;&#39;
+    
+    script src: &#39;/js/jquery.js&#39;
+    
+    coffeescript -&gt;
+      $(document).ready -&gt;
+        alert &#39;Alerts suck!&#39;
+  body -&gt;
+    header -&gt;
+      h1 @title or &#39;Untitled&#39;
+      
+      nav -&gt;
+        ul -&gt;
+          (li -&gt; a href: &#39;/&#39;, -&gt; &#39;Home&#39;) unless @path is &#39;/&#39;
+          li -&gt; a href: &#39;/chunky&#39;, -&gt; &#39;Bacon!&#39;
+          switch @user.role
+            when &#39;owner&#39;, &#39;admin&#39;
+              li -&gt; a href: &#39;/admin&#39;, -&gt; &#39;Secret Stuff&#39;
+            when &#39;vip&#39;
+              li -&gt; a href: &#39;/vip&#39;, -&gt; &#39;Exclusive Stuff&#39;
+            else
+              li -&gt; a href: &#39;/commoners&#39;, -&gt; &#39;Just Stuff&#39;
+
+    div &#39;#myid.myclass.anotherclass&#39;, style: &#39;position: fixed&#39;, -&gt;
+      p &#39;Divitis kills! Inline styling too.&#39;
+
+    section -&gt;
+      # A helper function you built and included.
+      breadcrumb separator: &#39;&gt;&#39;, clickable: yes
+      
+      h2 &quot;Let&#39;s count to 10:&quot;
+      p i for i in [1..10]
+      
+      # Another hypothetical helper.
+      form_to @post, -&gt;
+        textbox &#39;#title&#39;, label: &#39;Title:&#39;
+        textbox &#39;#author&#39;, label: &#39;Author:&#39;
+        submit &#39;Save&#39;
+
+    footer -&gt;
+      # CoffeeScript comments. Not visible in the output document.
+      comment &#39;HTML comments.&#39;
+      p &#39;Bye!&#39;

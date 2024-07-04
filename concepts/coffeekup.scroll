@@ -1,0 +1,75 @@
+import ../code/conceptPage.scroll
+
+id coffeekup
+name CoffeeKup
+appeared 2010
+creators Maurice Machado
+tags template
+description Markup as CoffeeScript.
+
+writtenIn coffeescript html markdown javascript bourne-shell css json
+repoStats
+ firstCommit 2010
+ newestCommit 2011
+ commits 180
+ committers 13
+ files 37
+
+example
+ doctype 5
+ html ->
+   head ->
+     meta charset: 'utf-8'
+     title "#{@title or 'Untitled'} | A completely plausible website"
+     meta(name: 'description', content: @description) if @description?
+     
+     link rel: 'stylesheet', href: '/css/app.css'
+     
+     style '''
+       body {font-family: sans-serif}
+       header, nav, section, footer {display: block}
+     '''
+     
+     script src: '/js/jquery.js'
+     
+     coffeescript ->
+       $(document).ready ->
+         alert 'Alerts suck!'
+   body ->
+     header ->
+       h1 @title or 'Untitled'
+       
+       nav ->
+         ul ->
+           (li -> a href: '/', -> 'Home') unless @path is '/'
+           li -> a href: '/chunky', -> 'Bacon!'
+           switch @user.role
+             when 'owner', 'admin'
+               li -> a href: '/admin', -> 'Secret Stuff'
+             when 'vip'
+               li -> a href: '/vip', -> 'Exclusive Stuff'
+             else
+               li -> a href: '/commoners', -> 'Just Stuff'
+ 
+     div '#myid.myclass.anotherclass', style: 'position: fixed', ->
+       p 'Divitis kills! Inline styling too.'
+ 
+     section ->
+       # A helper function you built and included.
+       breadcrumb separator: '>', clickable: yes
+       
+       h2 "Let's count to 10:"
+       p i for i in [1..10]
+       
+       # Another hypothetical helper.
+       form_to @post, ->
+         textbox '#title', label: 'Title:'
+         textbox '#author', label: 'Author:'
+         submit 'Save'
+ 
+     footer ->
+       # CoffeeScript comments. Not visible in the output document.
+       comment 'HTML comments.'
+       p 'Bye!'
+
+githubRepo https://github.com/mauricemach/coffeekup
