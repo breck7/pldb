@@ -4,7 +4,7 @@ id dts
 name TypeScript Type Declarations
 appeared 2012
 tags headerLang
-conceptDescription TypeScript .d.ts files are declaration files that contain only type information. These files don't produce .js outputs; they are only used for typechecking.
+description TypeScript .d.ts files are declaration files that contain only type information. These files don't produce .js outputs; they are only used for typechecking.
 
 subsetOf typescript
 relatedConcepts typescript

@@ -4,7 +4,7 @@ id chain-format
 name chain-format
 appeared 2013
 tags textDataFormat
-conceptDescription The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
+description The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
 
 fileType text
 centralPackageRepositoryCount 0

@@ -8,7 +8,7 @@ tags queryLanguage
 website https://prql-lang.org/
 latestVersion 0.11.4
 standsFor Pipelined Relational Query Language
-conceptDescription PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
 
 writtenIn rust markdown yaml toml html javascript json css csv csharp php elixir typescript jsx bourne-shell python java zig make dockerfile xml sql nix c cpp handlebars svg
 compilesTo sql
