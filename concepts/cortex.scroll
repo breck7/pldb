@@ -1,0 +1,28 @@
+import ../code/conceptPage.scroll
+
+id cortex
+name Cortex
+appeared 2019
+creators Arno Gourdol
+tags pl
+website https://cortexjs.io/cortex/
+conceptDescription Cortex is a programming language for scientific computing built on the Cortex Compute Engine.
+
+writtenIn typescript markdown json javascript bourne-shell html css bash yaml
+repoStats
+ firstCommit 2019
+ newestCommit 2024
+ commits 899
+ committers 11
+ files 248
+
+example
+ Simplify(2 + 3x^3 + 2x^2 + x^3 + 1)
+ // ➔ 4x^3 + 2x^2 + 3
+ 
+ x = 2^11 - 1
+ "\(x) is a \(Domain(x))"
+ // ➔ "2047 is a PrimeNumber"
+ 
+
+githubRepo https://github.com/cortex-js/compute-engine

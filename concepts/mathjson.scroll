@@ -1,0 +1,41 @@
+related latex katex tex
+
+import ../code/conceptPage.scroll
+
+id mathjson
+name MathJSON
+appeared 2019
+creators Arno Gourdol
+tags textMarkup
+website https://cortexjs.io/math-json/
+webRepl https://cortexjs.io/compute-engine/demo/
+conceptDescription MathJSON: a lightweight data interchange format for mathematical notation.
+
+writtenIn typescript markdown json javascript bourne-shell html css bash yaml
+repoStats
+ firstCommit 2019
+ newestCommit 2024
+ commits 899
+ committers 11
+ files 248
+
+example
+ ["Divide", "n", ["Add", 1, "n"]]
+example
+ ["Apply", ["Derivative", ["InverseFunction", "Sin"]], "x"]
+example
+ [
+   "Equal",
+   [
+     "Add",
+     [
+       "Power",
+       "ExponentialE",
+       ["Multiply", "ImaginaryUnit", "Pi"]
+     ],
+     1
+   ],
+   0
+ ]
+
+githubRepo https://github.com/cortex-js/compute-engine
