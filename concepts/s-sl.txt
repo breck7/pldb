@@ -4,12 +4,13 @@ S/SL
 S/SL is a programming language created in 1980.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#2158 on PLDB
+#2157 on PLDB
 44 Years Old
 
 The Syntax/Semantic Language (S/SL) is an executable high level specification language for recursive descent parsers, semantic analyzers and code generators developed by James Cordy, Ric Holt and David Wortman at the University of Toronto in 1980.S/SL is a small programming language that supports cheap recursion and defines input, output, and error token names (& values), semantic mechanisms (class interfaces whose methods are really escapes to routines in a host programming language but allow good abstraction in the pseudocode) and a pseudocode program that defines the syntax of the input language by the token stream the program accepts. Alternation, control flow and one-symbol look-ahead constructs are part of the language. The S/SL processor compiles this pseudocode into a table (byte-codes) that is interpreted by the S/SL table-walker (interpreter). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/S/SL_programming_language
 
+- S/SL appears in categories: programming language
 - S/SL Wikipedia page
  https://en.wikipedia.org/wiki/S/SL_programming_language
 - S/SL first developed in University of Toronto

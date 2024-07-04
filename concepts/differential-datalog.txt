@@ -12,6 +12,7 @@ git clone https://github.com/vmware/differential-datalog
 
 DDlog is a programming language for incremental computation. It is well suited for writing programs that continuously update their output in response to input changes. A DDlog programmer does not write incremental algorithms; instead they specify the desired input-output mapping in a declarative manner.
 
+- Differential Datalog appears in categories: programming language
 - Differential Datalog is developed on GitHub and has 1,186 stars
 - Differential Datalog docs
  https://github.com/vmware/differential-datalog/blob/master/doc/tutorial/tutorial.md

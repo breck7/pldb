@@ -13,6 +13,7 @@ Try now: TIO
 FRACTRAN is a Turing-complete esoteric programming language invented by the mathematician John Conway. A FRACTRAN program is an ordered list of positive fractions together with an initial positive integer input n. The program is run by updating the integer n as follows: for the first fraction f in the list for which nf is an integer, replace n by nf repeat this rule until no fraction in the list produces an integer when multiplied by n, then halt. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/FRACTRAN
 
+- FRACTRAN appears in categories: esoteric programming language
 - FRACTRAN Wikipedia page
  https://en.wikipedia.org/wiki/FRACTRAN
 - FRACTRAN first developed in University of Cambridge, Sidney Sussex College

@@ -11,6 +11,7 @@ git clone https://github.com/kevinlawler/kona
 
 Kona is the open-source implementation of the k3 programming language. k is a synthesis of APL and LISP. Although many of the capabilities come from APL, the fundamental data construct is quite different. In APL the construct is a multi-dimensional matrix-like array, where the dimension of the array can range from 0 to some maximum (often 9). In k, like LISP, the fundamental data construct is a list. Also, like LISP, the k language is ASCII-based, so you don't need a special keyboard.
 
+- kona appears in categories: programming language
 - kona is developed on GitHub and has 1,253 stars
 - kona first developed in https://github.com/kevinlawler/kona/issues
 - kona is written in C, Bourne shell, Make, Lisp, Markdown, awk, YAML

@@ -10,6 +10,7 @@ Cayenne is a programming language created in 1998.
 Cayenne is a dependently typed functional programming language created by Lennart Augustsson in 1998, making it one of the earliest dependently type programming language (as opposed to proof assistant or logical framework). A notable design decision is that the language allows unbounded recursive functions to be used on the type level, making type checking undecidable. Most dependently typed proof assistants and later dependently typed languages such as Agda included a termination checker to prevent the type checker from looping, while the contemporary Dependent ML restricted the expressivity of the type-level language to maintain decidability. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cayenne_(programming_language)
 
+- Cayenne appears in categories: programming language
 - Cayenne Wikipedia page
  https://en.wikipedia.org/wiki/Cayenne_(programming_language)
 - Cayenne first developed in Chalmers University of Technology

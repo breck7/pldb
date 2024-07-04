@@ -10,6 +10,7 @@ Sweave is a template language created in 2002.
 Sweave is a function in the statistical programming language R that enables integration of R code into LaTeX or LyX documents. The purpose is "to create dynamic reports, which can be updated automatically if data or analysis change".The data analysis is performed at the moment of writing the report, or more exactly, at the moment of compiling the Sweave code with Sweave (i.e., essentially with R) and subsequently with LaTeX. This can facilitate the creation of up-to-date reports for the author. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sweave
 
+- Sweave appears in categories: template language
 - Sweave Wikipedia page
  https://en.wikipedia.org/wiki/Sweave
 - Sweave compiles to LaTeX

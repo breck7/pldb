@@ -903,6 +903,19 @@ ${creatorsLinks}
     const facts = []
     if (website) facts.push(`${title} website\n ${website}`)
 
+    const tags = this.get(PLDBKeywords.tags).split(" ")
+    facts.push(
+      `${title} appears in categories: ` +
+        tags
+          .map(
+            tag =>
+              `<a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"${tag}"%5D%7D%5D%2C"logic"%3A"AND"%7D'>${
+                tagNames[tag] || tag
+              }</a>`
+          )
+          .join(", ")
+    )
+
     const download = this.get("download")
     if (download) facts.push(`${title} downloads page\n ${download}`)
 

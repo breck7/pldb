@@ -10,6 +10,7 @@ Stackless Python is an interpreter created in 1998.
 Stackless Python, or Stackless, is a Python programming language interpreter, so named because it avoids depending on the C call stack for its own stack. In practice, Stackless Python uses the C stack, but the stack is cleared between function calls . The most prominent feature of Stackless is microthreads, which avoid much of the overhead associated with usual operating system threads. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Stackless_Python
 
+- Stackless Python appears in categories: interpreter
 - Stackless Python Wikipedia page
  https://en.wikipedia.org/wiki/Stackless_Python
 - Stackless Python first developed in http://www.stackless.com/pipermail/stackless-checkins

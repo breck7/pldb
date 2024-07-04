@@ -13,6 +13,7 @@ git clone https://github.com/FasterXML/smile-format-specification
 Smile is a computer data interchange format based on JSON. It can also be considered a binary serialization of the generic JSON data model, which means tools that operate on JSON may be used with Smile as well, as long as a proper encoder/decoder exists for the tool. The name comes from first 2 bytes of the 4 byte header, which consist of Smiley ":)" followed by a linefeed: choice made to make it easier to recognize Smile-encoded data files using textual command-line tools.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Smile_(data_interchange_format)
 
+- Smile data interchange format appears in categories: binaryDataFormat
 - Smile data interchange format Wikipedia page
  https://en.wikipedia.org/wiki/Smile_(data_interchange_format)
 - Smile data interchange format is developed on GitHub and has 64 stars

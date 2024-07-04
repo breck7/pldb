@@ -9,6 +9,7 @@ snakemake is a programming language created in 2012.
 
 A workflow is defined in a ‘Snakefile’ through a domain-specific language that is close to standard Python syntax. It consists of rules that denote how to create output files from input files. The workflow is implied by dependencies between the rules that arise from one rule needing an output file of another as an input file.
 
+- snakemake appears in categories: programming language
 - snakemake first developed in University of Duisburg-Essen
 - Read more about snakemake on the web: 1.
  https://academic.oup.com/bioinformatics/article/28/19/2520/290322

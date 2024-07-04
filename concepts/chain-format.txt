@@ -9,6 +9,7 @@ chain-format is a text data format created in 2013.
 
 The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
 
+- chain-format appears in categories: textDataFormat
 - chain-format first developed in University of California, Santa Cruz
 - Read more about chain-format on the web: 1.
  https://genome.ucsc.edu/goldenPath/help/chain.html
