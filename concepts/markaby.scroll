@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id markaby
+name Markaby
+appeared 2006
+tags template library
+description markup as ruby
+
+writtenIn ruby yaml
+repoStats
+ firstCommit 2006
+ newestCommit 2024
+ commits 469
+ committers 17
+ files 32
+
+example
+ require 'markaby'
+ 
+ mab = Markaby::Builder.new
+ mab.html do
+   head { title "Boats.com" }
+   body do
+     h1 "Boats.com has great deals"
+     ul do
+       li "$49 for a canoe"
+       li "$39 for a raft"
+       li "$29 for a huge boot that floats and can fit 5 people"
+     end
+   end
+ end
+ puts mab.to_s
+
+githubRepo https://github.com/markaby/markaby
