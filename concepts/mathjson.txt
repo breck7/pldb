@@ -1,0 +1,37 @@
+MathJSON
+========
+
+MathJSON is a text markup language created in 2019 by Arno Gourdol.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Arno%20Gourdol
+
+#1900 on PLDB
+5 Years Old
+
+git clone https://github.com/cortex-js/compute-engine
+
+Try now: Web
+
+- MathJSON website
+ https://cortexjs.io/math-json/
+- MathJSON is developed on GitHub
+- MathJSON is written in TypeScript, Markdown, JSON, JavaScript, Bourne shell, HTML, CSS, Bash, YAML
+- See also: (3 related languages)LaTeX, KaTeX, Tex
+
+[&quot;Divide&quot;, &quot;n&quot;, [&quot;Add&quot;, 1, &quot;n&quot;]]
+
+[&quot;Apply&quot;, [&quot;Derivative&quot;, [&quot;InverseFunction&quot;, &quot;Sin&quot;]], &quot;x&quot;]
+
+[
+  &quot;Equal&quot;,
+  [
+    &quot;Add&quot;,
+    [
+      &quot;Power&quot;,
+      &quot;ExponentialE&quot;,
+      [&quot;Multiply&quot;, &quot;ImaginaryUnit&quot;, &quot;Pi&quot;]
+    ],
+    1
+  ],
+  0
+]
