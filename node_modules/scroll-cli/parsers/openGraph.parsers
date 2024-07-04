@@ -1,5 +1,6 @@
-descriptionParser
+openGraphDescriptionParser
  catchAllCellType stringCell
+ crux description
  description Description for Open Graph. https://ogp.me/. If not defined, Scroll will try to generate it's own.
  extends abstractTopLevelSingleMetaParser
 

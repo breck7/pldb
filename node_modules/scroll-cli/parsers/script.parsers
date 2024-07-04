@@ -1,5 +1,5 @@
 buildJsParser
- description Compile a file to JS and save to disk.
+ description Compile document to JS and save to disk.
  extends abstractBuildCommandParser
 
 scriptAnyCell

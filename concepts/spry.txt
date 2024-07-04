@@ -10,7 +10,7 @@ spry is a programming language created in 2015 by Göran Krampe.
 
 git clone https://github.com/gokr/spry
 
-A Smalltalk and Rebol inspired language implemented as an AST interpreter in Nim
+Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
 
 - spry website
  http://sprylang.se/

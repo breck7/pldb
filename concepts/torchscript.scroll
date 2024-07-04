@@ -4,7 +4,7 @@ id torchscript
 name torchscript
 appeared 2018
 tags pl
-conceptDescription The PyTorch 1.0 release candidate introduces Torch Script, a Python subset that can be JIT-compiled into C++ or other high-speed code.
+description The PyTorch 1.0 release candidate introduces Torch Script, a Python subset that can be JIT-compiled into C++ or other high-speed code.
 
 centralPackageRepositoryCount 0
 reference https://pytorch.org/docs/stable/jit.html

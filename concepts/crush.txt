@@ -10,7 +10,7 @@ crush is a programming language created in 2020 by Axel Liljencrantz.
 
 git clone https://github.com/liljencrantz/crush
 
-Crush is a command line shell that is also a powerful modern programming language.
+Crush is an attempt to make a traditional command line shell that is also a modern programming language. It has the features one would expect from a modern programming language like a type system, closures and lexical scoping, but with a syntax geared toward both batch and interactive shell usage.
 
 - crush is developed on GitHub and has 1,804 stars
 - crush first developed in https://github.com/liljencrantz/

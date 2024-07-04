@@ -7,6 +7,8 @@ Sublime Syntax is a grammar language created in 2008.
 #3430 on PLDB
 16 Years Old
 
+Sublime Syntax files are YAML files with a small header, followed by a list of contexts. Each context has a list of patterns that describe how to highlight text in that context, and how to change the current text.
+
 - Sublime Syntax website
  https://www.sublimetext.com/docs/3/syntax.html
 - 3 languages in PLDB linking to Sublime Syntax: Pygments, Sublime Syntax Test Lang, TextMate Language

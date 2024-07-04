@@ -9,7 +9,7 @@ attoparsec is a library created in 2010.
 
 git clone https://github.com/haskell/attoparsec
 
-A fast Haskell library for parsing ByteStrings
+attoparsec is a fast Haskell parser combinator library, aimed particularly at dealing efficiently with network protocols and complicated text/binary file formats.
 
 - attoparsec website
  http://hackage.haskell.org/package/attoparsec

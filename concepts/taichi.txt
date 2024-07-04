@@ -10,7 +10,7 @@ Taichi is a programming language created in 2019 by Yuanming Hu.
 
 git clone https://github.com/taichi-dev/taichi
 
-Productive & portable high-performance programming in Python.
+Taichi Lang is an open-source, imperative, parallel programming language for high-performance numerical computation. It is embedded in Python and uses just-in-time (JIT) compiler frameworks, for example LLVM, to offload the compute-intensive Python code to the native GPU or CPU instructions.
 
 - Taichi website
  https://taichi-lang.org/

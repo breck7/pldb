@@ -10,7 +10,7 @@ NGS, aka Next Generation Shell, is an open source programming language created i
 
 git clone https://github.com/ilyash/ngs
 
-Next Generation Shell (NGS)
+NGS - Next Generation Shell, a language (and a shell in the future) for ops tasks. NGS aims to be an alternative for both bash/Python/Ruby/Perl/Go and configuration management tools. It has syntax for the common operations and libraries (currently only AWS) for idempotent resources manipulation. NGS unique features include built in exit code handling and syntax for run-a-command-and-parse-output.
 
 - NGS website
  https://ngs-lang.org/

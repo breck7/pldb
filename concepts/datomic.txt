@@ -7,6 +7,8 @@ Datomic is a query language created in 2012.
 #2368 on PLDB
 12 Years Old
 
+Datomic's query and rules system is an extended form of Datalog. Datalog is a deductive query system, typically consisting of: A database of facts; A set of rules for deriving new facts from existing facts; a query processor that, given some partial specification of a fact or rule: finds all matching facts.
+
 - Datomic website
  https://docs.datomic.com/on-prem/query/query.html
 - Datomic first developed in Cognitect, Inc

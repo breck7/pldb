@@ -7,6 +7,8 @@ Ion is an interface design language created in 2016.
 #1603 on PLDB
 8 Years Old
 
+Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
+
 - Ion is a superset of JSON
 - Ion first developed in Amazon.com, Inc
 - Read more about Ion on the web: 1.

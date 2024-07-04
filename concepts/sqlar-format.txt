@@ -7,6 +7,8 @@ sqlar-format is a binary data format created in 2014.
 #4265 on PLDB
 10 Years Old
 
+This program (named "sqlar") operates much like "zip", except that the compressed archive it builds is stored in an SQLite database instead of a ZIP archive.
+
 - sqlar-format first developed in  Hipp, Wyrick & Company, Inc
 - Read more about sqlar-format on the web: 1.
  https://sqlite.org/sqlar/doc/trunk/README.md

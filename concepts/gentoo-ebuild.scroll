@@ -5,7 +5,7 @@ name Gentoo Ebuild
 appeared 1999
 tags pl
 website https://wiki.gentoo.org/wiki/Ebuild
-conceptDescription An ebuild file is a text file, used by Gentoo package managers, which identifies a specific software package and how the Gentoo package manager should handle it. It uses a bash-like syntax style and is standardized through the EAPI version. Gentoo Linux uses ebuilds as the package management format for individual software titles.
+description An ebuild file is a text file, used by Gentoo package managers, which identifies a specific software package and how the Gentoo package manager should handle it. It uses a bash-like syntax style and is standardized through the EAPI version. Gentoo Linux uses ebuilds as the package management format for individual software titles.
 
 fileType text
 centralPackageRepositoryCount 0

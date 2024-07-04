@@ -1,5 +1,5 @@
 buildTxtParser
- description Compile a post to text and save to disk.
+ description Compile document to plain text and save to disk.
  extends abstractBuildCommandParser
 
 plainTextParser

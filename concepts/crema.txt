@@ -11,7 +11,7 @@ Crema is a programming language created in 2014 by Jacob Torrey and Jared Wright
 
 git clone https://github.com/ainfosec/crema
 
-Crema: A Sub-Turing Programming Language
+Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
 
 - Crema website
  https://github.com/ainfosec/crema/wiki

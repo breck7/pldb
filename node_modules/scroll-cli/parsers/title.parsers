@@ -1,5 +1,6 @@
-titleParser
+pageTitleParser
  catchAllCellType personNameCell
+ crux title
  description Title of the page for meta tags. Prints nothing by itself. Use "printTitle" to print this title in a big HTML tag.
  extends abstractTopLevelSingleMetaParser
 

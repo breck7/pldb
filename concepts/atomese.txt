@@ -7,6 +7,8 @@ Atomese is a programming language created in 2007.
 #1803 on PLDB
 17 Years Old
 
+Atomese was originally intended to be a language for knowledge representation (KR): that is, a way of encoding facts and hypothesis, in a machine-readable way, such that the knowledge can be manipulated, data-mined, reasoned with. This language subset was vaguely inspired by Prolog and Datalog. More correctly, it was constructed by layering concepts from mathematical logic onto a graph database: representing logical, symbolic statements as graphs.
+
 - Atomese website
  https://wiki.opencog.org/w/Atomese
 - Atomese first developed in OpenCog Foundation

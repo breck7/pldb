@@ -8,6 +8,8 @@ whalecalf is a grammar language created in 2000 by Alexander Okhotin.
 #3558 on PLDB
 24 Years Old
 
+Whale Calf is a research-level parser generator for Boolean grammars, which are context-free grammars augmented with Boolean operations. It is written by Alexander Okhotin in C++, and is mainly aimed at demonstrating different parsing algorithms, of which the most practically useful is the Generalized LR (GLR). The main development took place in 2000-2004, though (as of April 2017) some occasional corrections are still being made.
+
 - whalecalf website
  http://users.utu.fi/aleokh/whalecalf/
 - Read more about whalecalf on the web: 1.

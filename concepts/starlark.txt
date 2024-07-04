@@ -11,7 +11,7 @@ starlark is a programming language created in 2018 by Laurent Le Brun.
 
 git clone https://github.com/bazelbuild/starlark
 
-Starlark Language
+The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
 
 - starlark is developed on GitHub and has 1,416 stars
 - There are at least 3,423 starlark repos on GitHub

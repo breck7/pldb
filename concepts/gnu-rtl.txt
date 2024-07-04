@@ -7,6 +7,8 @@ gnu-rtl is an intermediate representation language created in 1987.
 #3219 on PLDB
 37 Years Old
 
+In GCC, RTL is generated from the GIMPLE representation, transformed by various passes in the GCC 'middle-end', and then converted to assembly language.
+
 - gnu-rtl first developed in Free Software Foundation, Inc
 - Read more about gnu-rtl on the web: 1.
  https://en.wikipedia.org/wiki/Register_transfer_language

@@ -5,7 +5,7 @@ name Multihash
 appeared 2017
 tags hashFunction
 website http://multiformats.io/multihash/
-conceptDescription Multihash is a protocol for differentiating outputs from various well-established hash functions, addressing size + encoding considerations. It is useful to write applications that future-proof their use of hashes, and allow multiple hash functions to coexist.
+description Multihash is a protocol for differentiating outputs from various well-established hash functions, addressing size + encoding considerations. It is useful to write applications that future-proof their use of hashes, and allow multiple hash functions to coexist.
 
 country Various
 originCommunity https://github.com/multiformats

@@ -1,5 +1,5 @@
 buildRssParser
- description Compile a folder to RSS and save to disk.
+ description Compile metadata on a group(s) of documents to RSS and save to disk.
  extends abstractBuildCommandParser
 
 rssFeedUrlParser

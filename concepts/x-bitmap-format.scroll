@@ -4,7 +4,7 @@ id x-bitmap-format
 name X BitMap
 appeared 1989
 tags textDataFormat
-conceptDescription XBM files differ markedly from most image files in that they take the form of C source files.
+description XBM files differ markedly from most image files in that they take the form of C source files.
 
 example
  #define test_width 16

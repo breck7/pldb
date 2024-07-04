@@ -7,6 +7,8 @@ qbe is a programming language created in 2015.
 #3542 on PLDB
 9 Years Old
 
+QBE aims to be a pure C embeddable backend that provides 70% of the performance of advanced compilers in 10% of the code. Its small size serves both its aspirations of correctness and our ability to understand, fix, and improve it. It also serves its users by providing trivial integration and great flexibility.
+
 - qbe website
  https://c9x.me/compile/
 - qbe first developed in https://lists.sr.ht/~mpu/qbe

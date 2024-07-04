@@ -7,6 +7,8 @@ torchscript is a programming language created in 2018.
 #4693 on PLDB
 6 Years Old
 
+The PyTorch 1.0 release candidate introduces Torch Script, a Python subset that can be JIT-compiled into C++ or other high-speed code.
+
 - Read more about torchscript on the web: 1.
  https://pytorch.org/docs/stable/jit.html
 

@@ -10,7 +10,7 @@ mdl, aka Microarchitecture Description Language, is an instruction set architect
 
 git clone https://github.com/MPACT-ORG/llvm-project/
 
-The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Note: the repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org.
+We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
 
 - mdl website
  https://github.com/MPACT-ORG

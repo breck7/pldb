@@ -15,6 +15,8 @@ Aardvark is an open source programming language created in 2020 by Hg0428 and Ju
 
 git clone https://github.com/Aardvark-team/Aardvark-py
 
+Aardvark was originally designed in Python as an interpretter. This encompassed all releases up to 1.0. Then, in 2021 and 2022, other implementations started emerging, written in language such as Go and C++. In 2022, however, Aardvark underwent the 1.0 redesign. The language was redesigned from the ground up and re-implemented with a new, but temporary Python interpretter. Now, in 2023, the team is building the final compiler. This compiler is written in Aardvark itself and compiles to LLVM. It has the goal of being faster than C while easier than Python. It was designed for beginners and pros alike. The documentation is avaialiable here: https://aardvark-docs.programit.repl.co. It includes many tutorials and articles.
+
 - Aardvark is developed on GitHub and has 2 stars
 - Aardvark docs
  https://aardvark-docs.programit.repl.co/

@@ -9,7 +9,7 @@ Cali-Lang is a programming language created in 2015.
 
 git clone https://github.com/cali-lang/cali.lang.base
 
-Base implementation of Cali interpreter.
+Cali is an object oriented interpreted programming language written in Java. It is an efficiency (glue) language that is loosely typed. Cali has it's own standard library but anyone can create external Java modules to extend Cali. In fact, the entire standard library was written by wrapping Java code.
 
 - Cali-Lang website
  https://web.archive.org/web/20160820093952/http://cali-lang.com/

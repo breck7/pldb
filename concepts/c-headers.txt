@@ -7,5 +7,7 @@ C Header Files is a header lang created in 1972.
 #3749 on PLDB
 52 Years Old
 
+A header file is a file containing C declarations and macro definitions (see Macros) to be shared between several source files. You request the use of a header file in your program by including it, with the C preprocessing directive ‘#include’.
+
 - Read more about C Header Files on the web: 1.
  https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html

@@ -7,6 +7,8 @@ GCC GIMPLE is an intermediate representation language created in 2003.
 #3902 on PLDB
 21 Years Old
 
+GCC is a widely used compiler infrastructure that supports a variety of input languages, e.g., C, C++, Fortran, Java, and Ada, and over 30 different target machine architectures. GCC translates each of its front-end languages into a language-independent intermediate representation, called GIMPLE, which then gets translated to machine code for one of GCC’s many target architectures. A subset of GENERIC.
+
 - GCC GIMPLE first developed in GNU Project
 - Read more about GCC GIMPLE on the web: 1.
  https://en.wikipedia.org/wiki/GNU_Compiler_Collection#GENERIC_and_GIMPLE

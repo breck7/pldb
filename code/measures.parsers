@@ -318,7 +318,7 @@ demoVideoParser
  float sortIndex 2.4
 
 // description
-conceptDescriptionParser
+descriptionParser
  boolean alwaysRecommended true
  extends abstractStringMeasureParser
  float sortIndex 1.99
@@ -326,7 +326,7 @@ conceptDescriptionParser
 
 subDescriptionParser
  // todo fix columnName crux path issue.
- extends conceptDescriptionParser
+ extends descriptionParser
  description How is this language described here?
  crux description
 

@@ -8,6 +8,8 @@ LES, aka Loyc Expression Syntax, is a grammar language created in 2012 by David 
 #2295 on PLDB
 12 Years Old
 
+LES is an interchange format for syntax trees, comparable to s-expressions but designed for languages in the Algol family such as C, C++, C#, Java, EcmaScript, Rust and Python. It can be described as “JSON for code”: just as XML/YAML/JSON are tree structures that assign no particular meaning to the data inside, likewise LES represents syntax trees without assigning any particular meaning to them.
+
 - LES website
  http://loyc.net/les/
 - LES first developed in https://github.com/qwertie/loyc.net/issues

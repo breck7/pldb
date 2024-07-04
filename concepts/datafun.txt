@@ -10,7 +10,7 @@ datafun is an open source programming language created in 2015 by Michael Arntze
 
 git clone https://github.com/rntz/datafun
 
-Research on integrating datalog & lambda calculus via monotonicity types
+It's a simple, pure, and total functional language that generalizes Datalog. Datafun's superpower is that it can concisely and declaratively express and compute fixed points of monotone maps on semilattices.
 
 - datafun website
  http://www.rntz.net/datafun/

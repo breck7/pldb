@@ -1,5 +1,5 @@
 buildCssParser
- description Compile a file to CSS and save to disk.
+ description Compile document to CSS and save to disk.
  extends abstractBuildCommandParser
 
 cssAnyCell

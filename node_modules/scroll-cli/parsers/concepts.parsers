@@ -31,7 +31,7 @@ printConceptsParser
 
 buildConceptsParser
  cruxFromId
- description Compiles concepts to a delimited file and write to disk.
+ description Compiles concepts to a data format(s) and save to disk.
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId

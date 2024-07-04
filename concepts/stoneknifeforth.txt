@@ -9,7 +9,7 @@ stoneknifeforth is a programming language created in 2008.
 
 git clone https://github.com/kragen/stoneknifeforth
 
-a tiny self-hosted Forth implementation
+This is StoneKnifeForth, a very simple language inspired by Forth. It is not expected to be useful; instead, its purpose is to show how simple a compiler can be. The compiler is a bit under two pages of code when the comments are removed. This package includes a “metacircular compiler” which is written in StoneKnifeForth and compiles StoneKnifeForth to an x86 Linux ELF executable.
 
 - stoneknifeforth is developed on GitHub and has 369 stars
 - stoneknifeforth first developed in https://github.com/kragen/stoneknifeforth/issues

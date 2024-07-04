@@ -5,7 +5,7 @@ name plink-fam-format
 appeared 2007
 tags textDataFormat
 website https://www.cog-genomics.org/plink2/formats#fam
-conceptDescription Sample information file accompanying a .bed binary genotype table. The FAM file is just the first six columns of the PED file.
+description Sample information file accompanying a .bed binary genotype table. The FAM file is just the first six columns of the PED file.
 
 fileExtensions fam
 fileType text

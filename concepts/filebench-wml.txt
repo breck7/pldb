@@ -11,7 +11,7 @@ Filebench WML is an open source programming language created in 2011 by Vasily T
 
 git clone https://github.com/filebench/filebench
 
-File system and storage benchmark that uses a custom language to generate a large variety of workloads.
+Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
 
 - Filebench WML website
  https://github.com/filebench/filebench/wiki

@@ -7,6 +7,8 @@ JavaScriptCore is a virtual machine created in 2002.
 #3964 on PLDB
 22 Years Old
 
+The JavaScriptCore framework provides the ability to evaluate JavaScript programs from within Swift, Objective-C, and C-based apps. You can use also use JavaScriptCore to insert custom objects into the JavaScript environment.
+
 - JavaScriptCore first developed in Apple, Inc
 - Read more about JavaScriptCore on the web: 1.
  https://en.wikipedia.org/wiki/WebKit#JavaScriptCore

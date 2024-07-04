@@ -7,6 +7,8 @@ System V ABI is a binary executable format created in 1983.
 #4684 on PLDB
 41 Years Old
 
+An example of a symbol table can be found in the SysV Application Binary Interface (ABI) specification, which mandates how symbols are to be laid out in a binary file, so that different compilers, linkers and loaders can all consistently find and work with the symbols in a compiled object.
+
 - Read more about System V ABI on the web: 1.
  https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf
 

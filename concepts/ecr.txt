@@ -10,7 +10,7 @@ Embedded Crystal is a template language created in 2016.
 
 git clone https://github.com/crystal-lang/crystal/
 
-The Crystal Programming Language
+Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
 
 - Embedded Crystal website
  https://manas.tech

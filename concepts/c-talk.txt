@@ -8,6 +8,8 @@ c-talk is a programming language created in 1999 by Konstantin Knizhnik.
 #2797 on PLDB
 25 Years Old
 
+C-Talk is interpreted scripting language with C-like syntax and dynamic type checking. Variables in C-Talk have no type. So there is no compile time type checking in C-Talk, all checking is performed at runtime. To preserve reference integrity, explicit memory deallocation is prohibited in C-Talk, unused objects are automatically deallocated by garbage collector.
+
 - c-talk website
  http://www.garret.ru/ctalk.html
 - c-talk first developed in Moscow State Industrial University

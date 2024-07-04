@@ -7,6 +7,8 @@ ROS Message is an interface design language created in 2010.
 #3373 on PLDB
 14 Years Old
 
+The format of this language is simple: a message description is a list of data field descriptions and constant definitions on separate lines.
+
 - ROS Message first developed in https://github.com/ros-infrastructure
 - Read more about ROS Message on the web: 1.
  http://wiki.ros.org/msg

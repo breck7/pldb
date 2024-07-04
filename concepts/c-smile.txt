@@ -8,6 +8,8 @@ c-smile is a programming language created in 2002 by Andrew Fedoniouk.
 #2796 on PLDB
 22 Years Old
 
+C-SMILE is a scripting language, which inherits it's syntax and structure from C, C++, Java(tm) and JavaScript. On hypothetical "axis of programming languages" it resides somewhere between Java(tm) and JavaScript. In the same way as in JavaScript, all variables are typeless and as in Java it is mandatory to declare variables before usage. C-SMILE has a compiler, a virtual machine running bytecodes, and a C/C++ extensible runtime. C-SMILE is intended to run in standalone or embedded mode.
+
 - c-smile website
  http://c-smile.sourceforge.net/
 - c-smile first developed in terra informatica and deeptown

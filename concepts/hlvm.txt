@@ -7,6 +7,8 @@ High-Level Virtual Machine, aka High-Level Virtual Machine, is a virtual machine
 #2829 on PLDB
 15 Years Old
 
+HLVM is a cross-platform open-source high-level virtual machine. The virtual machine is written in OCaml and uses the excellent LLVM library for efficient high-performance native code generation.
+
 - High-Level Virtual Machine website
  http://www.ffconsultancy.com/ocaml/hlvm/
 - High-Level Virtual Machine first developed in https://github.com/ocaml-forge

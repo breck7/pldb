@@ -10,7 +10,7 @@ Superjson is a data notation created in 2014 by Matthew Mueller.
 
 git clone https://github.com/blitz-js/superjson
 
-Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.
+A superset of JSON adding: undefined bigint Date RegExp Set Map Error
 
 - Superjson is developed on GitHub and has 1,517 stars
 - Superjson is a superset of JSON

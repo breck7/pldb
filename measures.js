@@ -987,18 +987,22 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 0,
-    "Coverage": "0%",
+    "Values": 5080,
+    "Coverage": "102%",
     "Question": "How is this language described here?",
+    "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
+    "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
     "Crux": "description"
   },
   {
     "Name": "githubRepo_description",
-    "Values": 0,
-    "Coverage": "0%",
+    "Values": 5080,
+    "Coverage": "102%",
     "Question": "How is this language described here?",
+    "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
+    "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
     "Crux": "description"
@@ -1015,28 +1019,33 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 0,
-    "Coverage": "0%",
+    "Values": 5080,
+    "Coverage": "102%",
     "Question": "How is this language described here?",
+    "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
+    "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
     "Crux": "description"
   },
   {
-    "Name": "conceptDescription",
+    "Name": "description",
     "Values": 5080,
     "Coverage": "102%",
-    "Question": "What is a short description of this language?",
+    "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
     "Type": "string",
     "SortIndex": 1.99,
-    "IsComputed": false
+    "IsComputed": false,
+    "Crux": "description"
   },
   {
     "Name": "description",
-    "Values": 0,
-    "Coverage": "0%",
+    "Values": 5080,
+    "Coverage": "102%",
     "Question": "How is this language described here?",
+    "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
+    "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
     "Crux": "description"

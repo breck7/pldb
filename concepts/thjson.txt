@@ -10,6 +10,8 @@ thjson, aka Tagged Human JSON, is a data notation created in 2017 by Caspian Pri
 
 git clone https://github.com/Puppygames/thjson
 
+THJSON looks almost exactly like HJSON - it is in fact a superset of HJSON, which itself is a superset of JSON. The extra bit is the addition of a class name in round brackets before a map (maps are objects that are enclosed in {} parentheses).
+
 - thjson is developed on GitHub
 - thjson is written in Java, Markdown, XML
 

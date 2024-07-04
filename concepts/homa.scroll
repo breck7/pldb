@@ -8,7 +8,7 @@ tags protocol
 website https://web.stanford.edu/~ouster/cgi-bin/home.php
 spec https://github.com/PlatformLab/HomaModule/blob/master/protocol.md
 latestVersion v2.0
-conceptDescription TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
+description TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
 
 isOpenSource true
 writtenIn python c cpp markdown bash make bourne-shell perl cmake

@@ -7,6 +7,8 @@ floorplan is a programming language created in 2019.
 #4624 on PLDB
 5 Years Old
 
+In this paper we introduce Floorplan, a declarative language for specifying memory layouts at a high level. Constraints formerly implemented by describing how to compute locations are, in Floorplan, defined declaratively using explicit layout constructs.
+
 - floorplan first developed in Tufts University
 - Read more about floorplan on the web: 1.
  https://cronburg.com/papers/floorplan19.pdf

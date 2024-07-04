@@ -7,6 +7,8 @@ Xmind Format is a xml format created in 2007.
 #4712 on PLDB
 17 Years Old
 
+The .xmind file format implementing XMind Workbooks consists of a ZIP compressed archive containing an XML document for contents, an XML document for styles, a .png image file for thumbnails, and some directories for attachments. The file format is open and based on some principles of OpenDocument/Office Open XML.
+
 - Read more about Xmind Format on the web: 1. 2.
  https://en.wikipedia.org/wiki/XMind
  https://xmind.app/

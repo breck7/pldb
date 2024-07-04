@@ -7,6 +7,8 @@ Linux Kernel Module is an application created in 1996.
 #2335 on PLDB
 28 Years Old
 
+As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
+
 - Linux Kernel Module first developed in Linux Kernel Organization, Inc
 - Read more about Linux Kernel Module on the web: 1.
  https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf

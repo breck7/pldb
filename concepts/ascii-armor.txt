@@ -7,6 +7,8 @@ ASCII Armor is a text encoding format created in 2007.
 #3700 on PLDB
 17 Years Old
 
+OpenPGP provides the service of converting the raw 8-bit binary octet stream to a stream of printable ASCII characters, called Radix-64 encoding or ASCII Armor.
+
 - Pygments supports syntax highlighting for ASCII Armor
 - Read more about ASCII Armor on the web: 1.
  https://datatracker.ietf.org/doc/html/rfc4880#page-54

@@ -10,7 +10,7 @@ mimix-stream-language is a programming language created in 2018 by Rommel MARTIN
 
 git clone https://github.com/themimixcompany/msl-engine
 
-MSL Engine
+MSL is built from Lisp style s-expressions. MSL differs from Lisp in the way it processes functions and arguments, so Lisp expressions cannot be directly included inside MSL nor vice-versa. MSL code can only contain other MSL.
 
 - mimix-stream-language website
  https://mimix.io/dev/msl

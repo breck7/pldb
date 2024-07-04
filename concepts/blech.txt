@@ -10,6 +10,8 @@ Blech is a programming language created in 2019 by Franz-Josef Grosch.
 
 git clone https://github.com/blech-lang/blech
 
+Blech is a synchronous programming language for embedded, reactive, realtime-critical software. It allows writing reactive subprograms and combining them both sequentially and concurrently. Blech compiles to clean C, which may be integrated into existing projects or simulation frameworks. The name Blech ironically describes embedded hardware. It expresses that Blech programs can run directly on the Blech of pretty much any embedded device.
+
 - Blech website
  https://www.blech-lang.org/
 - Blech is developed on GitHub

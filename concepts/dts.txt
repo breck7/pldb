@@ -7,6 +7,8 @@ TypeScript Type Declarations is a header lang created in 2012.
 #2895 on PLDB
 12 Years Old
 
+TypeScript .d.ts files are declaration files that contain only type information. These files don't produce .js outputs; they are only used for typechecking.
+
 - TypeScript Type Declarations first developed in Microsoft
 - Read more about TypeScript Type Declarations on the web: 1.
  https://microsoft.github.io/TypeScript-New-Handbook/chapters/type-declarations/

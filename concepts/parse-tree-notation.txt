@@ -7,6 +7,8 @@ Parse Tree Notation is a grammar language created in 1994.
 #4657 on PLDB
 30 Years Old
 
+An important aspect of Parse Tree Notation (PTN) is that the data structure being manipulated is the parse tree for the program, not its token list. Pattern matching in PTN is on subtrees of the program's parse tree, using DCG rules to identify the subtrees of interest
+
 - Parse Tree Notation first developed in University of Melbourne
 - Read more about Parse Tree Notation on the web: 1.
  https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/tools/grammars/ptn.html

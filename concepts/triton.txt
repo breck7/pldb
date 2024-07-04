@@ -10,7 +10,7 @@ Triton is a programming language created in 2021 by Philippe Tillet.
 
 git clone https://github.com/openai/triton
 
-Development repository for the Triton language and compiler
+This is the development repository of Triton, a language and compiler for writing highly efficient custom Deep-Learning primitives. The aim of Triton is to provide an open-source environment to write fast code at higher productivity than CUDA, but also with higher flexibility than other existing DSLs.
 
 - Triton is developed on GitHub and has 3,881 stars
 - Triton first developed in OpenAI

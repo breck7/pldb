@@ -4,7 +4,7 @@ id sqlite-storage-format
 name sqlite-storage-format
 appeared 2000
 tags binaryDataFormat
-conceptDescription The complete state of an SQLite database is usually contained in a single file on disk called the "main database file". During a transaction, SQLite stores additional information in a second file called the "rollback journal", or if SQLite is in WAL mode, a write-ahead log file.
+description The complete state of an SQLite database is usually contained in a single file on disk called the "main database file". During a transaction, SQLite stores additional information in a second file called the "rollback journal", or if SQLite is in WAL mode, a write-ahead log file.
 
 country United States
 originCommunity  Hipp, Wyrick & Company, Inc

@@ -7,6 +7,8 @@ bag-format is a binary data format created in 2010.
 #2106 on PLDB
 14 Years Old
 
+A bag is a file format in ROS for storing ROS message data. Bags -- so named because of their .bag extension -- have an important role in ROS, and a variety of tools have been written to allow you to store, process, analyze, and visualize them.
+
 - bag-format website
  http://wiki.ros.org/Bags
 - bag-format first developed in Open Robotics
