@@ -50,7 +50,7 @@ class ScrollSetCLI {
     return this.formatAndSave(file, tree)
   }
 
-  formatAndSave(file, tree) {
+  formatAndSave(file, tree = this.getTree(file)) {
     return new ScrollFile(tree.toString(), this.makeFilePath(file.id), scrollFs).formatAndSave()
   }
 
