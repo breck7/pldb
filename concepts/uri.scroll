@@ -1,0 +1,17 @@
+related uuid
+
+import ../code/conceptPage.scroll
+
+id uri
+name URI
+appeared 2005
+creators Tim Berners-Lee and Roy Thomas Fielding and Larry Masinter
+tags standard schema
+standsFor Uniform Resource Identifier
+oldName Universal Resource Identifier
+paper https://datatracker.ietf.org/doc/html/rfc3986#section-1.1
+description A URI is a unique sequence of characters that identifies an abstract or physical resource, such as resources on a webpage, mail address, phone number, books, real-world objects such as people and places, concepts.
+
+supersetOf url
+
+wikipedia https://en.wikipedia.org/wiki/Uniform_Resource_Identifier

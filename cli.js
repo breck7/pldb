@@ -99,6 +99,14 @@ class PLDBCli extends ScrollSetCLI {
     })
   }
 
+  async formatCommand(lang) {
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have measurementscrawlers project installed separateely.
+    if (!lang) return
+    const file = this.concepts.filter(file => lang === file.id)[0]
+    if (file) this.formatAndSave(file)
+  }
+
   gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
 
   async crawlVersionsCommand(lang) {
