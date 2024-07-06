@@ -2278,7 +2278,7 @@ referenceParser
  float sortIndex 2.9999
 
 // relationships
-relatedConceptsParser
+relatedParser
  extends abstractFilenameRelationshipParser
  description What languages are related?
  // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".

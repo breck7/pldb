@@ -8,7 +8,7 @@ aka Amazon Ion
 description Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
 
 supersetOf json
-relatedConcepts protobuf
+related protobuf
 country United States
 originCommunity Amazon.com, Inc
 reference https://amzn.github.io/ion-docs/
