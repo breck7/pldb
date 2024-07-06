@@ -1,0 +1,219 @@
+buildConcepts podcasts.json podcasts.tsv podcasts.csv
+ sortBy -episodes
+groups All
+title Podcasts about Programming
+
+import header.scroll
+printTitle
+
+thinColumns 1
+Download as JSON | TSV | CSV
+ link podcasts.json JSON
+ link podcasts.tsv TSV
+ link podcasts.csv CSV
+endColumns
+
+// A ScrollSet with information on programming podcasts
+
+printConcepts
+ sortBy -episodes
+
+idParser
+ extends abstractIdParser
+websiteParser
+ extends abstractUrlMeasureParser
+ float sortIndex 1.1
+descriptionParser
+ description A brief description of the podcast.
+ extends abstractStringMeasureParser
+ float sortIndex 1.2
+creatorsParser
+ description The creators of the podcast.
+ extends abstractStringMeasureParser
+ float sortIndex 1.3
+ listDelimiter  and
+startedParser
+ cells measureNameCell yearCell
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.4
+episodesParser
+ description The number of episodes so far.
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.5
+appleRatingsParser
+ description The number of ratings on Apple podcasts.
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.7
+appleParser
+ description A link to the podcast on Apple Podcasts.
+ extends abstractUrlMeasureParser
+ float sortIndex 1.6
+
+id CoRecursive
+website https://corecursive.com
+description The stories and people behind the code. Hear stories of software development from interesting people.
+creators Adam Gordon Bell
+started 2018
+episodes 93
+apple https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512
+appleRatings 182
+
+id ADSP
+website https://adspthepodcast.com/
+description The Algorithms + Data Structures = Programs Podcast (aka ADSP: The Podcast) is a programming podcast hosted by two NVIDIA software engineers that focuses on the C++ and Rust programming languages. Topics discussed include algorithms, data structures, programming languages, latest news in tech and more. The podcast was initially inspired by Magic Read Along.
+creators Conor Hoekstra and Bryce Adelstein Lelbach
+started 2020
+episodes 190
+apple https://podcasts.apple.com/ca/podcast/algorithms-data-structures-programs/id1541407369
+appleRatings 11
+
+id Two's Complement
+website https://www.twoscomplement.org/
+description Two’s Complement is a programming podcast, hosted by Matt Godbolt and Ben Rady; two programmers who both grew up wanting to make video games.
+creators Ben Rady and Matt Godbolt
+started 2020
+episodes 48
+apple https://podcasts.apple.com/us/podcast/twos-complement/id1546393988
+appleRatings 21
+
+id Darknet Diaries
+website https://darknetdiaries.com
+description True stories from the dark side of the Internet. A podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.
+creators Jack Rhysider
+started 2017
+episodes 157
+apple https://podcasts.apple.com/us/podcast/darknet-diaries/id1296350485
+appleRatings 7200
+
+id Lex Fridman
+website https://lexfridman.com/podcast/
+description Conversations about science, technology, history, philosophy, and the nature of intelligence, consciousness, love, and power.
+creators Lex Fridman
+started 2018
+episodes 437
+apple https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584
+appleRatings 10900
+
+id CppCast
+website https://cppcast.com/
+description The first podcast by C++ developers for C++ developers.
+creators Timur Doumler and Phil Nash
+started 2015
+episodes 384
+apple https://podcasts.apple.com/us/podcast/cppcast/id968703120
+appleRatings 105
+
+id The Future of Coding
+website https://futureofcoding.org/episodes/
+description Exploring the future of programming and computing.
+creators Steve Krouse
+started 2017
+episodes 72
+apple https://podcasts.apple.com/us/podcast/future-of-coding/id1265527976
+appleRatings 25
+
+id Oxide and Friends
+website https://oxide.computer/podcasts/oxide-and-friends
+description Oxide hosts a weekly Discord show where we discuss a wide range of topics: computer history, startups, Oxide hardware bringup, and other topics du jour.
+creators Bryan Cantrill and Adam Leventhal
+started 2021
+episodes 115
+apple https://podcasts.apple.com/us/podcast/oxide-and-friends/id1625932222
+appleRatings 34
+
+id The Array Cast
+website https://www.arraycast.com
+description We explore the Array Languages of APL, J, k, q and offshoots. If you are Array Language curious, this is the podcast for you. Occasionally we may dive into the weeds, but most of the time we try to stay accessible to the general listener.
+creators Conor Hoekstra
+started 2019
+episodes 83
+apple https://podcasts.apple.com/us/podcast/the-array-cast/id1568833451
+appleRatings 30
+
+id Soft Skills Engineering
+website https://softskills.audio/
+description A humorous take on the human side of software engineering.
+creators Jamison Dance and Dave Smith
+started 2015
+episodes 416
+apple https://podcasts.apple.com/us/podcast/soft-skills-engineering/id1091341048
+appleRatings 255
+
+id StaffEng
+website https://podcast.staffeng.com/
+description Conversations with software engineers who have progressed beyond the career level, into Staff levels and beyond. We discuss the areas of work that set Staff-plus level engineers apart from other individual contributors; things like setting technical direction, mentorship and sponsorship, providing engineering perspective to the org.
+creators David Noël-Romas and Alex Kessinger
+started 2020
+episodes 22
+apple https://podcasts.apple.com/us/podcast/staffeng/id1559261829
+appleRatings 24
+
+id 2.5 Admins
+website https://2.5admins.com/
+description 2.5 Admins is a podcast featuring two sysadmins called Allan Jude and Jim Salter, and a producer/editor who can just about configure a Samba share called Joe Ressington. Every two weeks we get together, talk about recent tech news, and answer some of your admin-related questions.
+creators Jim Salter and Allan Jude and Joe Ressington
+started 2020
+episodes 202
+apple https://podcasts.apple.com/gb/podcast/2-5-admins/id1509561572
+appleRatings 10
+
+id Software Engineering Radio
+website https://se-radio.net/
+description From the IEEE. Targeted at the professional software developer.
+creators Markus Völter
+started 2006
+episodes 624
+apple https://podcasts.apple.com/us/podcast/software-engineering-radio-the-podcast-for/id120906714
+appleRatings 255
+
+id The Engineering Room with Dave Farley
+website https://www.youtube.com/playlist?list=PLwLLcwQlnXByuoAE-jYYg8MSNrzodVtJX
+description Interviews and discussions about engineering practices.
+creators Dave Farley
+started 2020
+episodes 30
+apple https://podcasts.apple.com/gb/podcast/the-engineering-room-with-dave-farley/id1728703568
+appleRatings 4
+
+id ThoughtWorks Technology Podcast
+website https://www.thoughtworks.com/en-us/insights/podcasts/technology-podcasts
+description Discussions on the latest in technology and software development.
+creators Rebecca Parsons and Alexey Boas
+started 2018
+episodes 100
+apple https://podcasts.apple.com/gb/podcast/thoughtworks-technology-podcast/id881136697
+appleRatings 13
+
+id Software Unscripted
+website https://x.com/rtfeldman
+description Richard Feldman talks about programming and related topics.
+creators Richard Feldman
+started 2019
+episodes 94
+apple https://podcasts.apple.com/us/podcast/software-unscripted/id1602572955
+appleRatings 20
+
+id The Data Engineering Show
+website https://www.dataengineeringshow.com/
+description The Data Engineering Show is a podcast for data engineering and BI practitioners to go beyond theory. Learn from the biggest influencers in tech about their practical day-to-day data challenges and solutions in a casual and fun setting.
+creators Eldad Farkash and Boaz Farkash
+started 2021
+episodes 37
+apple https://podcasts.apple.com/us/podcast/the-data-engineering-show/id1561927688
+appleRatings 7
+
+id CS Primer Show
+website https://show.csprimer.com
+description A show about computer science and computer science education by Charlie Harrington and Oz Nova.
+creators Charlie Harrington
+started 2023
+episodes 18
+apple https://podcasts.apple.com/us/podcast/the-cs-primer-show/id1680382257
+appleRatings 6
+
+This ScrollSet was inpsired by this post on HackerNews.
+ https://scroll.pub/blog/scrollsets.html ScrollSet
+ https://news.ycombinator.com/item?id=40889280 this post
+
+import ../footer.scroll
+tableSearch
