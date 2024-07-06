@@ -1132,7 +1132,7 @@ const measures = [
   },
   {
     "Name": "relatedConcepts",
-    "Values": 970,
+    "Values": 975,
     "Coverage": "19%",
     "Question": "What languages are related?",
     "Example": "logo",
