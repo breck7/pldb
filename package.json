@@ -9,9 +9,6 @@
     "format": "scroll list | scroll format",
     "open": "open index.html",
     "up": "npm install scroll-cli@latest",
-    "gits": "./legacy.js crawlGits",
-    "githubs": "./legacy.js crawlGitHub",
-    "fetchContributors": "wget -O pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.io > ignore/brokenLinks.txt"
   },

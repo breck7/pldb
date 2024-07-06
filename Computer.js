@@ -1879,7 +1879,7 @@ class Tables {
       "markdown",
       "json",
       "typescript",
-      "png-format",
+      "png",
       "svg",
       "explorer",
       "gitignore"

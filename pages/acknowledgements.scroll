@@ -4,6 +4,9 @@ replaceNodejs
  module.exports = Tables.acknowledgements
 title Acknowledgements
 
+// Currently fetched manually because of pagination.
+// https://api.github.com/repos/breck7/pldb/contributors
+
 import header.scroll
 printTitle
 
