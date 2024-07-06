@@ -11,7 +11,7 @@ description "General-purpose modern and clean object-oriented programming langua
 
 writtenIn speedie cpp
 supersetOf jeebox
-relatedConcepts i-expressions json yaml toml xml haml ini parsers scrollnotation
+related i-expressions json yaml toml xml haml ini parsers scrollnotation
 influencedBy javascript python c lua cpp visual-basic hypercard html css xml json
 gdbSupport false
 fileExtensions spd scproj

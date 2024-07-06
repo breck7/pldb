@@ -193,7 +193,7 @@ const measures = [
     "Values": 24750,
     "Coverage": "500%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1268",
+    "Example": "1269",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -223,7 +223,7 @@ const measures = [
     "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21283",
+    "Example": "21279",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -897,7 +897,7 @@ const measures = [
   },
   {
     "Name": "inboundLinks",
-    "Values": 2095,
+    "Values": 2110,
     "Coverage": "42%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -1131,9 +1131,19 @@ const measures = [
     "IsComputed": true
   },
   {
-    "Name": "relatedConcepts",
-    "Values": 975,
-    "Coverage": "19%",
+    "Name": "related",
+    "Values": 990,
+    "Coverage": "20%",
+    "Question": "What languages are related?",
+    "Example": "logo",
+    "Type": "string",
+    "SortIndex": 2.2,
+    "IsComputed": false
+  },
+  {
+    "Name": "related",
+    "Values": 990,
+    "Coverage": "20%",
     "Question": "What languages are related?",
     "Example": "logo",
     "Type": "string",

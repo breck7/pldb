@@ -20,6 +20,7 @@ A specification language for crypto primitives and more in Rust.
 - hacspec is written in Rust, Coq, TOML, Markdown, JSON, YAML, C, Make, Tex, Bourne shell, Dockerfile, Python, SVG, Logos
 - First announcement of hacspec
 - hacspec.org was registered in 2020
+- See also: (1 related languages)Rust
 
 pub type Res = (usize, usize);
 pub enum ResTyp {

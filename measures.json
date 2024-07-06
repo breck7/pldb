@@ -193,7 +193,7 @@
     "Values": 19800,
     "Coverage": "400%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1268",
+    "Example": "1269",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -223,7 +223,7 @@
     "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21283",
+    "Example": "21279",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -897,8 +897,8 @@
   },
   {
     "Name": "inboundLinks",
-    "Values": 1676,
-    "Coverage": "33%",
+    "Values": 1688,
+    "Coverage": "34%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
     "Type": "string",
@@ -1131,9 +1131,19 @@
     "IsComputed": true
   },
   {
-    "Name": "relatedConcepts",
-    "Values": 780,
-    "Coverage": "15%",
+    "Name": "related",
+    "Values": 792,
+    "Coverage": "16%",
+    "Question": "What languages are related?",
+    "Example": "logo",
+    "Type": "string",
+    "SortIndex": 2.2,
+    "IsComputed": false
+  },
+  {
+    "Name": "related",
+    "Values": 792,
+    "Coverage": "16%",
     "Question": "What languages are related?",
     "Example": "logo",
     "Type": "string",

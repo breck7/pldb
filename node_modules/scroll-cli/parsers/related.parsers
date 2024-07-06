@@ -1,4 +1,4 @@
-relatedListParser
+printRelatedListParser
  description Prints a list of related posts with years.
  extends abstractScrollParser
  cruxFromId
@@ -29,15 +29,14 @@ relatedListParser
   }).join("\n")
   }
 
-relatedParser
+relatedScrollFilesParser
+ extends abstractTopLevelSingleMetaParser
  catchAllCellType permalinkCell
- cruxFromId
- cells keywordCell
+ crux related
  description Set any related posts. Prints nothing by itself.
  example
   ...
   That's all I have to say about hiking.
   related fishing camping
   # Related Posts
-  relatedList
- extends abstractTopLevelSingleMetaParser
+  printRelatedList

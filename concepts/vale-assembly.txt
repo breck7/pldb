@@ -15,6 +15,7 @@ Vale is a tool for constructing formally verified high-performance assembly lang
 - Vale appears in categories: assembly language
 - Vale is developed on GitHub and has 217 stars
 - Vale is written in reStructuredText, F#, XML, Python, Bourne shell, Markdown, C#, Dockerfile, C, Bash, PowerShell, JSON, OCaml, Make
+- See also: (1 related languages)F*
 
 procedure ReadA(ghost a:seq(uint32),inline b:bool)
  reads r0; mem;

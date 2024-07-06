@@ -8,7 +8,7 @@ website https://github.com/apple/swift/blob/master/docs/SIL.rst
 standsFor Swift Intermediate Language
 description SIL is an SSA-form IR with high-level semantic information designed to implement the Swift programming language. In contrast to LLVM IR, SIL is a generally target-independent format representation that can be used for code distribution, but it can also express target-specific concepts as well as LLVM can.
 
-relatedConcepts cir llvmir
+related cir llvmir
 fileExtensions sil
 fileType text
 centralPackageRepositoryCount 0

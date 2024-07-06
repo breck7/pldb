@@ -4,7 +4,7 @@ SHADOW
 SHADOW is a programming language created in 1958.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221958%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#2974 on PLDB
+#2975 on PLDB
 66 Years Old
 
 This paper provides an account of the Shadow language that is used to describe syntax and of a corresponding subroutine that enables a computer to perform syntactic analysis. The input to this subroutine consists of a string to be analyzed and a description of the syntax that is to be used. The syntax is expressed in the Shadow language. The output consists of a trace table that expresses the results of the syntactic analysis in a tabular form. Several versions of the subroutine and some associated programs have been in use now for over three years. The present account of the language and the subroutine contains a summary of material that has been described previously in unpublished reports and also some additional discussion of the work in relation to the more general questions of problem-oriented languages and string transformations.

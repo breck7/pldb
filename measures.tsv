@@ -17,10 +17,10 @@ releaseNotes	134	2%	What is the URL to the release notes or changelog for this l
 download	82	1%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	1276	25%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
 exampleCount	9900	200%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	9900	200%	How does this concept rank amongst all other concepts?	1268	number		1.5	true			
+rank	9900	200%	How does this concept rank amongst all other concepts?	1269	number		1.5	true			
 lastActivity	9900	200%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
 writtenInCount	2252	45%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	9900	200%	What is the combined score of this language across all the categories of rankings?	21283	number		1.6	true			
+pldbScore	9900	200%	What is the combined score of this language across all the categories of rankings?	21279	number		1.6	true			
 meetup_memberCount	114	2%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	114	2%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
@@ -89,7 +89,7 @@ packageAuthors	8	0%	How many people contribute packages to this cpm?	13699	numbe
 hoplId	3614	73%	What is the HOPL id of this language?	4365	number		1.9	true			
 isLanguage	9900	200%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
 inboundLinksCount	9900	200%	How many other concepts link to this one?	0	number		1.9	true			
-inboundLinks	838	16%	Which other concepts link to this one?	explorer	string		1.9	true			
+inboundLinks	844	17%	Which other concepts link to this one?	explorer	string		1.9	true			
 isFinished	9900	200%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	34	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
 repoStats_firstCommit	2236	45%	What year the first commit made in this git repo?	2015	number		1.9	false			
@@ -112,7 +112,8 @@ writtenIn	2252	45%	What language(s) is the main implementation written in?	elixi
 numberOfUsersEstimate	9900	200%	What is our estimate of number of users of this language?	818	number		2.1	true			
 numberOfJobsEstimate	9900	200%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
 expandedMeasurements	9900	200%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
-relatedConcepts	390	7%	What languages are related?	logo	string		2.2	false			
+related	396	8%	What languages are related?	logo	string		2.2	false			
+related	396	8%	What languages are related?	logo	string		2.2	false			
 runsOnVm	18	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false			
 influencedBy	146	2%	What languages influenced this one?	rust	string		2.2	false			
 successorOf	10	0%	Was this language launched as the successor of another?	asp	string		2.2	false			
