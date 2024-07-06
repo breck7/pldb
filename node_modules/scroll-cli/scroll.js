@@ -796,7 +796,7 @@ class ScrollCli {
   }
 
   async initCommand(cwd) {
-    const standardDateFormat = `MM/DD/YYYY`
+    // todo: use stamp for this.
     const initFolder = {
       ".gitignore": `*.html
 *.txt
@@ -804,45 +804,31 @@ feed.xml`,
       "header.scroll": `importOnly
 import settings.scroll
 metaTags
-gazetteCss
-pageHeader
 buildTxt
 buildHtml
-`,
-      "feed.scroll": `buildRss feed.xml
-
-import settings.scroll
-printFeed All
-`,
-      "footer.scroll": `pageFooter
-`,
+gazetteCss
+pageHeader
+printTitle`,
+      "feed.scroll": `import settings.scroll
+buildRss feed.xml
+printFeed All`,
+      "footer.scroll": `importOnly
+pageFooter`,
       "settings.scroll": `baseUrl https://scroll.pub/
 email feedback@scroll.pub
-git https://github.com/breck7/scroll
-`,
-      "helloWorld.scroll": `${scrollKeywords.date} ${dayjs().format(standardDateFormat)}
-groups All
-${scrollKeywords.title} Hello world
-
+git https://github.com/breck7/scroll`,
+      "helloWorld.scroll": `groups All
 import header.scroll
-printTitle
 
-thinColumns 1
-
+thinColumns
 This is my first blog post using Scroll.
-
 endColumns
-import footer.scroll
-`,
-      "index.scroll": `description My thoughts about life and the world.
-${scrollKeywords.title} My Blog
-
+****
+import footer.scroll`,
+      "index.scroll": `title My Blog
 import header.scroll
-printTitle
 printSnippets All
-
-import footer.scroll
-`
+import footer.scroll`
     }
 
     this.log(`Initializing scroll in "${cwd}"`)

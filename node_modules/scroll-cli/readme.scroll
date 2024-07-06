@@ -18,6 +18,10 @@ endColumns
 <br>
 thinColumns 2
 
+? Where can I try it?
+Here.
+ http://sand.scroll.pub/
+
 ? What is Scroll?
 Scroll is a language for scientists of all ages.
 
@@ -44,15 +48,22 @@ This site you are reading is powered by Scroll.
  link index.html This site
 
 ? Can I try Scroll in the browser?
-Yes. Here is a web demo.
- https://try.scroll.pub/ web demo
+Yes. Launch a new Scroll site here.
+ http://sand.scroll.pub/ Launch a new Scroll site here
+
+Or try the Scroll editor with autocomplete and highlighting.
+ https://try.scroll.pub/ Scroll editor with autocomplete and highlighting
 
 ? What makes Scroll different?
 Scroll has an unusually simple syntax called Scroll Notation, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
  link blog/scrollsets.html knowledge bases
  https://notation.scroll.pub Scroll Notation
 
-? How do I install Scroll?
+? How do I try Scroll without installing?
+Here.
+ http://sand.scroll.pub/
+
+? How do I install Scroll on my machine?
 Scroll is an npm package. Install with:
  https://www.npmjs.com/package/scroll-cli npm package
 code
