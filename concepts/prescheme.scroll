@@ -1,0 +1,32 @@
+import ../code/conceptPage.scroll
+
+id prescheme
+name Pre-Scheme
+appeared 1986
+creators Richard Kelsey, Jonathan Rees
+tags pl
+website https://prescheme.org/
+description Pre-Scheme is a statically typed dialect of the Scheme programming language, combining the flexibility of Scheme with the efficiency and low-level machine access of C.
+
+reference https://prescheme.org/references.html
+
+example
+    ;;; hello: an example Pre-Scheme program
+    (define (main argc argv)
+    (if (= argc 2)
+        (let ((out (current-output-port)))
+            (write-string "Hello, world, " out)
+            (write-string (vector-ref argv 1) out)
+            (write-char #\! out)
+            (newline out)
+            0)
+        (let ((out (current-error-port)))
+            (write-string "Usage: " out)
+            (write-string (vector-ref argv 0) out)
+            (write-string " <user>" out)
+            (newline out)
+            (write-string "  Greets the world & <user>." out)
+            (newline out)
+            1)))
+
+gitRepo https://codeberg.org/prescheme/prescheme.git
