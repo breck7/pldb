@@ -1,0 +1,29 @@
+Scheme 48
+=========
+
+Scheme 48 is a programming language created in 1986 by Richard Kelsey and Jonathan Rees.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Richard%20Kelsey
+ https://pldb.io/concepts/../lists/creators.html#q=Jonathan%20Rees
+
+#2868 on PLDB
+38 Years Old
+
+Scheme 48 is an implementation of Scheme written by Richard Kelsey and Jonathan Rees. The name ‘Scheme 48’ commemorates our having written the original version in forty-eight hours, on August 6th and 7th, 1986.
+
+- Scheme 48 website
+ https://s48.org/
+- Scheme 48 appears in categories: programming language
+- Scheme 48 is an implementation of Scheme
+
+(define (make-counter)
+  (let ((value (make-cell 0)))
+    (lambda ()
+      (ensure-atomicity
+        (lambda ()
+          (let ((v (+ (provisional-cell-ref value)
+                      1)))
+            (provisional-cell-set! value v)
+            v))))))
+
+docs https://s48.org/1.9.2/manual/manual.html

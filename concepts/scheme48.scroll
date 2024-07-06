@@ -1,0 +1,25 @@
+import ../code/conceptPage.scroll
+
+id scheme48
+name Scheme 48
+appeared 1986
+creators Richard Kelsey and Jonathan Rees
+tags pl
+website https://s48.org/
+latestVersion 1.9.2
+description Scheme 48 is an implementation of Scheme written by Richard Kelsey and Jonathan Rees. The name ‘Scheme 48’ commemorates our having written the original version in forty-eight hours, on August 6th and 7th, 1986.
+
+implementationOf scheme
+
+example
+ (define (make-counter)
+   (let ((value (make-cell 0)))
+     (lambda ()
+       (ensure-atomicity
+         (lambda ()
+           (let ((v (+ (provisional-cell-ref value)
+                       1)))
+             (provisional-cell-set! value v)
+             v))))))
+
+docs https://s48.org/1.9.2/manual/manual.html

@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@ const measures = [
   },
   {
     "Name": "id",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -25,7 +25,7 @@ const measures = [
   },
   {
     "Name": "id",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -37,7 +37,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -48,7 +48,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -59,7 +59,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 7110,
+    "Values": 7115,
     "Coverage": "143%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -79,7 +79,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -89,7 +89,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -110,7 +110,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 8525,
+    "Values": 8530,
     "Coverage": "172%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "http://www.3mf.io/specification/",
@@ -130,7 +130,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -170,7 +170,7 @@ const measures = [
   },
   {
     "Name": "latestVersion",
-    "Values": 3185,
+    "Values": 3190,
     "Coverage": "64%",
     "Question": "What is the latest version?",
     "Example": "v1.0.0-test.3-bugfix",
@@ -180,7 +180,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -190,7 +190,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1268",
@@ -200,7 +200,7 @@ const measures = [
   },
   {
     "Name": "lastActivity",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -220,10 +220,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21278",
+    "Example": "21283",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -877,7 +877,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -887,7 +887,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -907,7 +907,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -938,7 +938,7 @@ const measures = [
   {
     "Name": "repoStats_newestCommit",
     "Values": 5395,
-    "Coverage": "109%",
+    "Coverage": "108%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
     "Type": "number",
@@ -987,7 +987,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 5115,
+    "Values": 5120,
     "Coverage": "103%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -998,7 +998,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_description",
-    "Values": 5115,
+    "Values": 5120,
     "Coverage": "103%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1019,7 +1019,7 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 5115,
+    "Values": 5120,
     "Coverage": "103%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1030,7 +1030,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 5115,
+    "Values": 5120,
     "Coverage": "103%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1041,7 +1041,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 5115,
+    "Values": 5120,
     "Coverage": "103%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1102,7 +1102,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1112,7 +1112,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1122,7 +1122,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1182,7 +1182,7 @@ const measures = [
   },
   {
     "Name": "implementationOf",
-    "Values": 30,
+    "Values": 35,
     "Coverage": "0%",
     "Question": "Is this language an implementation of another?",
     "Example": "scheme",
@@ -1272,7 +1272,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 7110,
+    "Values": 7115,
     "Coverage": "143%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1292,7 +1292,7 @@ const measures = [
   },
   {
     "Name": "latestMajorVersion",
-    "Values": 3185,
+    "Values": 3190,
     "Coverage": "64%",
     "Question": "What is the latest major version (if using semver)?",
     "Example": "1",
@@ -1302,7 +1302,7 @@ const measures = [
   },
   {
     "Name": "usesSemanticVersioning",
-    "Values": 3185,
+    "Values": 3190,
     "Coverage": "64%",
     "Question": "Does the official release of the language use semantic versioning?",
     "Example": "true",
@@ -1805,7 +1805,7 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 4335,
+    "Values": 4340,
     "Coverage": "87%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -3746,7 +3746,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3756,7 +3756,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 24745,
+    "Values": 24750,
     "Coverage": "500%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

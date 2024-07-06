@@ -1,7 +1,7 @@
 [
   {
     "Name": "id",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@
   },
   {
     "Name": "id",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -25,7 +25,7 @@
   },
   {
     "Name": "id",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -37,7 +37,7 @@
   },
   {
     "Name": "name",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -48,7 +48,7 @@
   },
   {
     "Name": "appeared",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -59,7 +59,7 @@
   },
   {
     "Name": "creators",
-    "Values": 5688,
+    "Values": 5692,
     "Coverage": "114%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -79,7 +79,7 @@
   },
   {
     "Name": "measurements",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -89,7 +89,7 @@
   },
   {
     "Name": "tags",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -110,7 +110,7 @@
   },
   {
     "Name": "website",
-    "Values": 6820,
+    "Values": 6824,
     "Coverage": "137%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "http://www.3mf.io/specification/",
@@ -130,7 +130,7 @@
   },
   {
     "Name": "foundationScore",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -170,7 +170,7 @@
   },
   {
     "Name": "latestVersion",
-    "Values": 2548,
+    "Values": 2552,
     "Coverage": "51%",
     "Question": "What is the latest version?",
     "Example": "v1.0.0-test.3-bugfix",
@@ -180,7 +180,7 @@
   },
   {
     "Name": "exampleCount",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -190,7 +190,7 @@
   },
   {
     "Name": "rank",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1268",
@@ -200,7 +200,7 @@
   },
   {
     "Name": "lastActivity",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2022",
@@ -211,7 +211,7 @@
   {
     "Name": "writtenInCount",
     "Values": 4504,
-    "Coverage": "91%",
+    "Coverage": "90%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
     "Type": "number",
@@ -220,10 +220,10 @@
   },
   {
     "Name": "pldbScore",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21278",
+    "Example": "21283",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -877,7 +877,7 @@
   },
   {
     "Name": "isLanguage",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -887,7 +887,7 @@
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -907,7 +907,7 @@
   },
   {
     "Name": "isFinished",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -987,7 +987,7 @@
   },
   {
     "Name": "description",
-    "Values": 4092,
+    "Values": 4096,
     "Coverage": "82%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -998,7 +998,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 4092,
+    "Values": 4096,
     "Coverage": "82%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1019,7 +1019,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 4092,
+    "Values": 4096,
     "Coverage": "82%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1030,7 +1030,7 @@
   },
   {
     "Name": "description",
-    "Values": 4092,
+    "Values": 4096,
     "Coverage": "82%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1041,7 +1041,7 @@
   },
   {
     "Name": "description",
-    "Values": 4092,
+    "Values": 4096,
     "Coverage": "82%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1093,7 +1093,7 @@
   {
     "Name": "writtenIn",
     "Values": 4504,
-    "Coverage": "91%",
+    "Coverage": "90%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
     "Type": "string",
@@ -1102,7 +1102,7 @@
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "818",
@@ -1112,7 +1112,7 @@
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1122,7 +1122,7 @@
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1182,7 +1182,7 @@
   },
   {
     "Name": "implementationOf",
-    "Values": 24,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "Is this language an implementation of another?",
     "Example": "scheme",
@@ -1272,7 +1272,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 5688,
+    "Values": 5692,
     "Coverage": "114%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1283,7 +1283,7 @@
   {
     "Name": "isSelfHosted",
     "Values": 4504,
-    "Coverage": "91%",
+    "Coverage": "90%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
     "Type": "boolean",
@@ -1292,7 +1292,7 @@
   },
   {
     "Name": "latestMajorVersion",
-    "Values": 2548,
+    "Values": 2552,
     "Coverage": "51%",
     "Question": "What is the latest major version (if using semver)?",
     "Example": "1",
@@ -1302,7 +1302,7 @@
   },
   {
     "Name": "usesSemanticVersioning",
-    "Values": 2548,
+    "Values": 2552,
     "Coverage": "51%",
     "Question": "Does the official release of the language use semantic versioning?",
     "Example": "true",
@@ -1805,7 +1805,7 @@
   },
   {
     "Name": "example",
-    "Values": 3468,
+    "Values": 3472,
     "Coverage": "70%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -3746,7 +3746,7 @@
   },
   {
     "Name": "bookCount",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3756,7 +3756,7 @@
   },
   {
     "Name": "paperCount",
-    "Values": 19796,
+    "Values": 19800,
     "Coverage": "400%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
