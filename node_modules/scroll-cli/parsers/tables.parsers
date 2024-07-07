@@ -30,7 +30,16 @@ abstractTableParser
     .join("\n")
   }
   compile() {
-   return `<table class="scrollTable"><thead><tr>${this.tableHeader.join("\n")}</tr></thead>\n<tbody>${this.tableBody}</tbody></table>`
+   return `<table id="table${this._getUid()}" class="scrollTable">
+   <thead><tr>${this.tableHeader.join("\n")}</tr></thead>
+   <tbody>${this.tableBody}</tbody>
+   </table>
+   <script>
+   document.querySelector('#table${this._getUid()}').addEventListener('click', e => {
+    if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
+    e.currentTarget.classList.toggle('expandedTable');
+   });
+   </script>`
   }
   compileTxt() {
     return this.childrenToString()

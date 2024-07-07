@@ -227,20 +227,30 @@ h4.scrollQuestion {
   overflow: hidden;
   white-space: nowrap;
 }
-.scrollTable td:hover {
-  text-overflow: unset;
-  overflow: unset;
-  white-space: unset;
-}
 .scrollTable th {
   text-transform: capitalize;
-}
-.scrollTable th {
   border-bottom: 2px solid rgba(0,0,0,.6);
   text-align: left;
 }
+.scrollTable td {
+  cursor: crosshair;
+}
 .scrollTable tr:nth-child(even) {
   background: rgba(224,224,224,.6);
+}
+.scrollTable.expandedTable {
+  table-layout: unset;
+  background: white;
+  position: relative;
+  z-index: 10;
+  overflow: unset;
+}
+.scrollTable.expandedTable td,.scrollTable.expandedTable th {
+  overflow: unset;
+  white-space: unset;
+}
+.scrollTable.expandedTable td {
+  cursor: unset;
 }
 .scrollByLine {
   font-size: .875rem;

@@ -139,17 +139,25 @@ gazetteCssParser
     padding .1875rem
     overflow hidden
     white-space nowrap
-   td:hover
-    text-overflow unset
-    overflow unset
-    white-space unset
    th
     text-transform capitalize
-   th
     border-bottom 2px solid rgba(0,0,0,.6)
     text-align left
+   td
+    cursor crosshair
    tr:nth-child(even)
     background rgba(224,224,224,.6)
+  .scrollTable.expandedTable
+   table-layout unset
+   background white
+   position relative
+   z-index 10
+   overflow unset
+   td,th
+    overflow unset
+    white-space unset
+   td
+    cursor unset
   
   .scrollByLine
    font-size .875rem
