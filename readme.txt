@@ -18,9 +18,6 @@ The entire ScrollSet is ready to analyze in popular formats. Full documentation 
 - As CSV: https://pldb.io/pldb.csv
 - As TSV: https://pldb.io/pldb.tsv
 - As JSON: https://pldb.io/pldb.json
-- The JSON file is also available via npm:
-// npm install pldb
-console.log(require("pldb").javascript.appeared)
 
 To add a new language
 =====================
@@ -67,11 +64,6 @@ To explore this repo
 ====================
 The most important folder is `concepts`, which contains the ScrollSet (a file for each concept). The file `code/measures.parsers` contains the Parsers (schema) for the ScrollSet.
 You can see the `cloc` language stats on this repo at https://pldb.io/pages/about.html.
-
-To use as an npm package:
-=========================
-npm install pldb
-console.log(require("pldb").javascript.appeared)
 
 Citation
 ========
