@@ -12,7 +12,9 @@ loadConceptsParser
    const ONE_BIG_FILE = Disk.getFiles(folder).filter(file => file.endsWith(".scroll")).map(Disk.read).filter(str => /^id /mg.test(str)).join("\n\n").replace(/import .+/g, "")
     this.parent.concat(ONE_BIG_FILE)
    //console.log(ONE_BIG_FILE)
-   return ""
+  }
+  compile() {
+    return ""
   }
 
 printConceptsParser

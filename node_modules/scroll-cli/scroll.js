@@ -105,11 +105,14 @@ const parseMeasures = parser => {
   if (measureCache.get(parser)) return measureCache.get(parser)
   // Generate a fake program with one of every of the available parsers. Then parse it. Then we can easily access the meta data on the parsers
   const dummyProgram = new parser(
-    parser.cachedHandParsersProgramRoot // is there a better method name than this?
-      .filter(node => node.getLine().endsWith("Parser"))
-      .map(node => node.get("crux") || node.getLine())
-      .map(line => line.replace("Parser", ""))
-      .join("\n")
+    Array.from(
+      new Set(
+        parser.cachedHandParsersProgramRoot // is there a better method name than this?
+          .filter(node => node.getLine().endsWith("Parser") && !node.getLine().startsWith("abstract"))
+          .map(node => node.get("crux") || node.getLine())
+          .map(line => line.replace("Parser", ""))
+      )
+    ).join("\n")
   )
   // Delete any nodes that are not measures
   dummyProgram.filter(node => !node.isMeasure).forEach(node => node.destroy())
@@ -119,7 +122,6 @@ const parseMeasures = parser => {
   })
   // Delete any nested nodes that are not measures
   dummyProgram.topDownArray.filter(node => !node.isMeasure).forEach(node => node.destroy())
-
   const measures = dummyProgram.topDownArray.map(node => {
     return {
       Name: node.measureName,
@@ -155,8 +157,8 @@ const getConcepts = parsed => {
   return concepts
 }
 
-const addMeasureStats = (concepts, measures) => {
-  return measures.map(measure => {
+const addMeasureStats = (concepts, measures) =>
+  measures.map(measure => {
     let Type = false
     concepts.forEach(concept => {
       const value = concept[measure.Name]
@@ -172,7 +174,6 @@ const addMeasureStats = (concepts, measures) => {
     measure.Coverage = Math.floor((100 * measure.Values) / concepts.length) + "%"
     return measure
   })
-}
 
 // note that this is currently global, assuming there wont be
 // name conflicts in computed measures in a single scroll
@@ -401,8 +402,14 @@ class ScrollFile {
     return this._compileArray(filename, lodash.orderBy(this.concepts, orderBy[0], orderBy[1]))
   }
 
+  _withStats
+  get measuresWithStats() {
+    if (!this._withStats) this._withStats = addMeasureStats(this.concepts, this.measures)
+    return this._withStats
+  }
+
   compileMeasures(filename = "csv", sortBy = "") {
-    const withStats = addMeasureStats(this.concepts, this.measures)
+    const withStats = this.measuresWithStats
     if (!sortBy) return this._compileArray(filename, withStats)
     const orderBy = this.makeOrderByArr(sortBy)
     return this._compileArray(filename, lodash.orderBy(withStats, orderBy[0], orderBy[1]))

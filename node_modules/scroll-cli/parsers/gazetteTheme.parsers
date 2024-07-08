@@ -144,7 +144,7 @@ gazetteCssParser
     border-bottom 2px solid rgba(0,0,0,.6)
     text-align left
    td
-    cursor crosshair
+    cursor zoom-in
    tr:nth-child(even)
     background rgba(224,224,224,.6)
   .scrollTable.expandedTable
@@ -157,7 +157,7 @@ gazetteCssParser
     overflow unset
     white-space unset
    td
-    cursor unset
+    cursor zoom-out
   
   .scrollByLine
    font-size .875rem
