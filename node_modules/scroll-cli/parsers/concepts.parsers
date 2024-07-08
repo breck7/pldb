@@ -4,8 +4,7 @@ loadConceptsParser
  cruxFromId
  cells keywordCell filePathCell
  javascript
-  compile() {
-   // A little hacky
+  build() {
    const { Disk } = require("scrollsdk/products/Disk.node.js")
    const path = require("path")
    const {file} = this.parent
