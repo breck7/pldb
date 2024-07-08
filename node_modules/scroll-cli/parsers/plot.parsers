@@ -62,6 +62,7 @@ scatterplotParser
     const dataset = this.getNode("data")
     const datasetContent = dataset?.content
     const isUrl = !!datasetContent?.match(/^https?:/)
+    const fileExtension = datasetContent ? datasetContent.split(".").pop() : "csv"
     if (dataset?.length)
       data = dataset.childrenToString()
     else if (datasetContent && !isUrl) {
@@ -70,9 +71,9 @@ scatterplotParser
       const {file} = this.parent
       data = Disk.read(path.join(file.folderPath, datasetContent))
     }
-    let dataString = `d3.csvParse(\`${data}\`, d3.autoType)`
+    let dataString = `d3.${fileExtension}Parse(\`${data}\`, d3.autoType)`
     if (isUrl)
-      dataString = `await d3.${datasetContent.endsWith("tsv") ? "tsv" : "csv"}("${datasetContent}")`
+      dataString = `await d3.${fileExtension}("${datasetContent}")`
     return dataString
   }
   get marks() {
