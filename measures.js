@@ -1186,7 +1186,7 @@ const measures = [
   },
   {
     "Name": "compilesTo",
-    "Values": 78,
+    "Values": 79,
     "Coverage": "1%",
     "Question": "Which language(s) does this language primarily compile to?",
     "Example": "beam-bytecode",

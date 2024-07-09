@@ -5,21 +5,20 @@ Cognate is a programming language created in 2020 by Finn Barber.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
  https://pldb.io/concepts/../lists/creators.html#q=Finn%20Barber
 
-#2789 on PLDB
+#2507 on PLDB
 4 Years Old
 
-git clone https://github.com/cognate-lang/cognate 
+git clone https://github.com/cognate-lang/cognate
 
-A human readable quasi-concatenative programming language
+A human readable quasi-concatenative programming language. Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
 
 - Cognate website
  https://cognate-lang.github.io/
 - Cognate appears in categories: programming language
 - Cognate is developed on GitHub
+- Cognate compiles to C
 - First announcement of Cognate
 
 ~~ Prime numbers in Cognate
 
-compliesTo C
-
-conceptDescription Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
+Def Factor (Zero? Modulo Swap);

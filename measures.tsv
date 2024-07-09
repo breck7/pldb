@@ -118,7 +118,7 @@ renamedTo	5	0%	What is the new name of this language?	zeek	string		2.2	false
 supersetOf	52	1%	Is this language a superset of another?	pascal	string		2.2	false			
 extensionOf	1	0%	What language is this language an extension of?	cpp	string		2.2	false			
 forkOf	3	0%	What language is this language a fork of?	common-log-format	string		2.2	false			
-compilesTo	78	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		2.2	false			
+compilesTo	79	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		2.2	false			
 inputLanguages	9	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false			
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			

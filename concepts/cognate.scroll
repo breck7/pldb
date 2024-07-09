@@ -5,19 +5,18 @@ name Cognate
 appeared 2020
 creators Finn Barber
 tags pl
-description A human readable quasi-concatenative programming language
 paper https://cognate-lang.github.io/learn.html
 
-compliesTo C
-githubRepo https://github.com/cognate-lang/cognate 
+compilesTo c
+githubRepo https://github.com/cognate-lang/cognate
 
-conceptDescription Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
+description A human readable quasi-concatenative programming language. Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
 
 website https://cognate-lang.github.io/
 
 example
  ~~ Prime numbers in Cognate
-
+ 
  Def Factor (Zero? Modulo Swap);
 
  Def Primes (
@@ -32,5 +31,5 @@ example
        ) to Found
     )
  );
-
+ 
  Print Primes up to 1000;
