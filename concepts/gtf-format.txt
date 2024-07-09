@@ -4,7 +4,7 @@ Gene transfer format
 Gene transfer format is a text data format created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#2427 on PLDB
+#2428 on PLDB
 18 Years Old
 
 The Gene transfer format (GTF) is a file format used to hold information about gene structure.  It is a tab-delimited text format based on the general feature format (GFF), but contains some additional conventions specific to gene information.  A significant feature of the GTF that can be validated: given a sequence and a GTF file, one can check that the format is correct. Read more on Wikipedia...

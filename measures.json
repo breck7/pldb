@@ -186,7 +186,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1128,
+    "Values": 1129,
     "Coverage": "22%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -199,7 +199,7 @@
     "Values": 4953,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21291",
+    "Example": "21290",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -903,7 +903,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1120,
+    "Values": 1121,
     "Coverage": "22%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -913,7 +913,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1081,
+    "Values": 1082,
     "Coverage": "21%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -923,7 +923,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1120,
+    "Values": 1121,
     "Coverage": "22%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -933,7 +933,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1120,
+    "Values": 1121,
     "Coverage": "22%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -943,7 +943,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1117,
+    "Values": 1118,
     "Coverage": "22%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1046,7 +1046,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1128,
+    "Values": 1129,
     "Coverage": "22%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1236,7 +1236,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1128,
+    "Values": 1129,
     "Coverage": "22%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
