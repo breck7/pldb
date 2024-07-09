@@ -1,0 +1,750 @@
+buildConcepts events.json events.tsv events.csv
+groups All
+title Upcoming Programming Language Conferences
+
+import header.scroll
+printTitle
+
+thinColumns 1
+Download as JSON | TSV | CSV
+ link events.json JSON
+ link events.tsv TSV
+ link events.csv CSV
+endColumns
+
+// A ScrollSet with information on programming language events
+
+printConcepts
+
+# Other Event Pages
+pipeTable
+ name|nameLink
+ SIGPLAN Conferences|https://sigplan.org/Conferences
+ PRL Seminars|https://prl.ccs.neu.edu/seminars.html
+ Wikipedia list of PL Conferences|https://en.wikipedia.org/wiki/Category:Programming_languages_conferences
+ Compilers Calls For Papers|https://www.wikicfp.com/cfp/call?conference=compilers
+ Programming Languages Calls For Papers|https://www.wikicfp.com/cfp/call?conference=programming%20languages
+ CPP Links: Conferences|https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences
+ World Academy of Science, Engineering and Technology|https://waset.org/software-engineering-conferences-in-2023
+ Dev events|https://dev.events/
+ Conference Index|https://conferenceindex.org/conferences/software-programming
+ Women Who Code Index|https://www.womenwhocode.com/events
+ Clocate - Conferences|https://www.clocate.com/conferences-on+software-engineering/c3UtMjMz/
+
+tableSearch
+
+nameParser
+ extends abstractIdParser
+ float sortIndex 1.1
+
+seriesParser
+ extends abstractStringMeasureParser
+ float sortIndex 2.2
+
+monthParser
+ extends abstractStringMeasureParser
+ float sortIndex 3.3000000000000003
+
+dayParser
+ extends abstractIntegerMeasureParser
+ float sortIndex 4.4
+
+yearParser
+ extends abstractIntegerMeasureParser
+ float sortIndex 5.5
+
+daysParser
+ extends abstractIntegerMeasureParser
+ float sortIndex 6.6000000000000005
+
+locationParser
+ extends abstractStringMeasureParser
+ float sortIndex 7.700000000000001
+
+countryParser
+ extends abstractStringMeasureParser
+ float sortIndex 8.8
+
+nameLinkParser
+ extends abstractUrlMeasureParser
+ float sortIndex 9.9
+
+twitterParser
+ extends abstractStringMeasureParser
+ float sortIndex 11
+
+twitterLinkParser
+ extends abstractUrlMeasureParser
+ float sortIndex 11
+
+statusParser
+ extends abstractStringMeasureParser
+ float sortIndex 12.100000000000001
+
+name European Lisp Symposium
+series EULisp
+month April
+day 24
+year 2023
+days 2
+location Amsterdam
+country Netherlands
+nameLink https://www.european-lisp-symposium.org/2023/
+status over
+
+name 45th International Conference on Software Engineering
+series ICSE2023
+month May
+day 14
+year 2023
+days 5
+location Melbourne Convention and Exhibition Centre
+country Australia
+nameLink https://conf.researchr.org/home/icse-2023
+status over
+
+name 18th International Conference on Software Technologies
+series ICSOFT2023
+month July
+day 10
+year 2023
+days 2
+location Rome
+country Italy
+nameLink https://icsoft.scitevents.org/
+status over
+
+name 12th International Conference on Data Science, Technology and Applications
+series DATA2023
+month July
+day 11
+year 2023
+days 2
+location Rome
+country Italy
+nameLink https://data.scitevents.org/
+status over
+
+name World Conference on Computer and Information Technology
+series WCCIT
+month March
+day 3
+year 2023
+days 1
+location Vienna
+country Austria
+nameLink https://www.steconf.org/conference/world-conference-on-computer-and-information-technology/
+status over
+
+name Connect Empower 2023(Women Who Code)
+series CE
+month March
+day 2
+year 2023
+days 2
+location San Francisco
+country USA
+nameLink https://hopin.com/events/connect-2023/registration
+status over
+
+name 9th International Conference on Advances in Computer Science and Information Technology
+series ACSTY2023
+month January
+day 28
+year 2023
+days 2
+location Copenhagen
+country Denmark
+nameLink https://acsty2023.org/
+status over
+
+name Data Science and Machine Learning
+series DSML
+month January
+day 9
+year 2023
+days 1
+location Ruddlesway
+country Germany
+nameLink https://datascience.annualcongress.com/registration.php
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2021
+series SPLASH
+month December
+day 5
+year 2022
+days 5
+location Milford Sound
+country New Zealand
+nameLink https://2022.splashcon.org/
+twitter splashcon
+twitterLink https://twitter.com/splashcon
+status over
+
+name RacketCon 2022
+series RacketCon
+month October
+day 28
+year 2022
+days 2
+location Providence, Rhode Island
+country USA
+nameLink https://con.racket-lang.org/
+status over
+
+name PostgreSQL Conference Europe
+series PCE
+month October
+day 26
+year 2022
+days 2
+location Berlin
+country Germany
+nameLink https://2022.pgconf.eu/
+status over
+
+name Blockchain Over Coffee
+series BOC
+month October
+day 6
+year 2022
+days 1
+location San Francisco
+country USA
+status over
+
+name Strange Loop 2022
+series StangeLoop
+month September
+day 22
+year 2022
+days 3
+location Union Station, St. Louis, Missouri
+country USA
+nameLink https://www.thestrangeloop.com/
+twitter strangeloop_stl
+twitterLink https://twitter.com/strangeloop_stl
+status over
+
+name International Conference on Functional Programming 2022
+series ICFP
+month September
+day 11
+year 2022
+days 5
+location Ljubljana
+country Slovenia
+nameLink https://icfp22.sigplan.org/
+status over
+
+name Psychology of Programming Interest Group 2022
+series PPIG
+month September
+day 5
+year 2022
+days 4
+location Milton Keynes
+country UK
+nameLink https://ppig.org/workshops/2022-annual-workshop/
+status over
+
+name Balisage: The Markup Conference 2022
+series Balisage
+month August
+day 1
+year 2022
+days 4
+location Online
+country Online
+nameLink http://www.balisage.net/
+status over
+
+name Programming Language Design and Implementation 2022
+series PLDI
+month June
+day 15
+year 2022
+days 2
+location San Diego
+country USA
+nameLink https://conf.researchr.org/home/pldi-2022
+status over
+
+name RacketCon 2021
+series RacketCon
+month November
+day 5
+year 2021
+days 2
+location Online
+country Online
+nameLink https://con.racket-lang.org/2021/
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2021
+series SPLASH
+month October
+day 17
+year 2021
+days 5
+location Chicago, Illinois
+country USA
+nameLink https://2021.splashcon.org/
+twitter splashcon
+twitterLink https://twitter.com/splashcon
+status over
+
+name Strange Loop 2021
+series StangeLoop
+month September
+day 30
+year 2021
+days 3
+location Union Station, St. Louis, Missouri
+country USA
+nameLink https://www.thestrangeloop.com/
+twitter strangeloop_stl
+twitterLink https://twitter.com/strangeloop_stl
+status over
+
+name International Conference on Functional Programming 2021
+series ICFP
+month August
+day 22
+year 2021
+days 5
+location Online
+country Online
+nameLink https://icfp21.sigplan.org/
+status over
+
+name Balisage: The Markup Conference 2021
+series Balisage
+month August
+day 2
+year 2021
+days 5
+location Washington, D.C.
+country USA
+nameLink http://www.balisage.net/
+status over
+
+name Psychology of Programming Interest Group 2021
+series PPIG
+month June
+day 21
+year 2021
+days 5
+location Online
+country Online
+nameLink https://ppig.org/workshops/2021-annual-workshop/
+status over
+
+name History of Programming Languages IV
+series HOPL
+month June
+day 20
+year 2021
+days 3
+location Online
+country Online
+nameLink https://hopl4.sigplan.org/
+status over
+
+name Programming Language Design and Implementation 2021
+series PLDI
+month June
+day 20
+year 2021
+days 3
+location Online
+country Online
+nameLink https://conf.researchr.org/home/pldi-2021
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2020
+series SPLASH
+month November
+day 15
+year 2020
+days 5
+location Online
+country Online
+nameLink https://2020.splashcon.org/
+twitter splashcon
+twitterLink https://twitter.com/splashcon
+status over
+
+name RacketCon 2020
+series RacketCon
+month October
+day 17
+year 2020
+days 2
+location Online
+country Online
+nameLink https://con.racket-lang.org/
+status over
+
+name Strange Loop 2020
+series StangeLoop
+month October
+day 1
+year 2020
+days 3
+location Stifel Theatre, St. Louis, MO, USA
+country USA
+nameLink https://www.thestrangeloop.com/
+twitter strangeloop_stl
+twitterLink https://twitter.com/strangeloop_stl
+status over
+
+name International Conference on Functional Programming 2020
+series ICFP
+month August
+day 24
+year 2020
+days 3
+location Online
+country Online
+nameLink https://icfp19.sigplan.org/home/icfp-2020
+status over
+
+name Psychology of Programming Interest Group 2020
+series PPIG
+month July
+day 29
+year 2020
+days 3
+location Online
+country Online
+nameLink http://www.ppig.org/upcoming/ppig-2020
+status over
+
+name Balisage: The Markup Conference 2020
+series Balisage
+month July
+day 28
+year 2020
+days 3
+location Rockville, Maryland
+country USA
+nameLink http://www.balisage.net/
+status over
+
+name Programming Language Design and Implementation 2020
+series PLDI
+month June
+day 15
+year 2020
+days 5
+location Online
+country Online
+nameLink https://conf.researchr.org/home/pldi-2020
+status over
+
+name 42nd International Conference on Software Engineering
+series ICSE
+month May
+day 23
+year 2020
+days 5
+location Online
+country Online
+nameLink https://conf.researchr.org/home/icse-2020
+status over
+
+name 2020 ACM CHI Conference on Human Factors in Computing Systems
+series CHI
+month April
+day 25
+year 2020
+days 5
+location Honolulu, Hawaii
+country USA
+nameLink http://www.ppig.org/upcoming/chi-2020
+status over
+
+name ‹Programming›
+series ICASEP
+month March
+day 23
+year 2020
+days 3
+location Online
+country Online
+nameLink https://2020.programming-conference.org/
+twitter programmingconf
+twitterLink https://twitter.com/programmingconf
+status over
+
+name Psychology of Programming Interest Group Work-in-Progress 2020
+series PPIGWIP
+month February
+day 17
+year 2020
+days 2
+location Sheffield Hallam University, Sheffield
+country UK
+nameLink http://www.ppig.org/upcoming/ppig-wip-2020
+status over
+
+name Principles of Programming Languages 2020
+series POPL
+month January
+day 19
+year 2020
+days 5
+location New Orleans, Louisiana
+country United States
+nameLink https://popl20.sigplan.org/
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2019
+series SPLASH
+month October
+day 20
+year 2019
+days 5
+location Athens, Greece
+country Greece
+nameLink https://conf.researchr.org/home/splash-2019
+status over
+
+name Strange Loop 2019
+series StangeLoop
+month September
+day 12
+year 2019
+days 3
+location Stifel Theatre, St. Louis, MO, USA
+country USA
+nameLink https://www.thestrangeloop.com/
+status over
+
+name Psychology of Programming Interest Group
+series PPIG
+month August
+day 28
+year 2019
+days 3
+location School of Computing, Urban Sciences Building, Newcastle University, Newcastle, UK
+country UK
+nameLink http://www.ppig.org/workshops/ppig-2019-30th-annual-workshop
+status over
+
+name International Conference on Functional Programming 2019
+series ICFP
+month August
+day 19
+year 2019
+days 3
+location Berlin, Germany
+country Germany
+nameLink https://icfp19.sigplan.org/
+status over
+
+name Second International Summer School on Metaprogramming
+series ISSMP
+month August
+day 11
+year 2019
+days 5
+location Schloss Dagstuhl, Germany
+country Germany
+nameLink https://www.cl.cam.ac.uk/events/metaprog/2019/
+status over
+
+name Balisage: The Markup Conference 2019
+series Balisage
+month July
+day 29
+year 2019
+days 3
+location Rockville, Maryland, USA
+country USA
+nameLink http://www.balisage.net/
+status over
+
+name RacketCon 2019
+series RacketCon
+month July
+day 13
+year 2019
+days 2
+location University of Utah, Salt Lake City, Utah, USA
+country USA
+nameLink https://con.racket-lang.org/
+status over
+
+name Programming Language Design and Implementation 2019
+series PLDI
+month June
+day 24
+year 2019
+days 3
+location Phoenix, AZ, USA
+country USA
+nameLink https://pldi19.sigplan.org/home
+status over
+
+name Oregon Programming Languages Summer School 2019
+series OPLSS
+month June
+day 17
+year 2019
+days 30
+location Eugene, OR, USA
+country USA
+nameLink https://www.cs.uoregon.edu/research/summerschool/summer19/
+status over
+
+name Principles of Programming Languages 2019
+series POPL
+month January
+day 13
+year 2019
+days 5
+location Lisbon, Portugal
+country Portugal
+nameLink https://popl19.sigplan.org/
+status over
+
+name Code Mesh 2018
+series CodeMesh
+month November
+day 8
+year 2018
+days 2
+location London, UK
+country UK
+nameLink https://codesync.global/conferences/code-mesh-2018/
+twitter codemeshio
+twitterLink https://twitter.com/codemeshio
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2018
+series SPLASH
+month November
+day 4
+year 2018
+days 5
+location Boston, MA, USA
+country USA
+nameLink https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA
+status over
+
+name International Conference on Functional Programming 2018
+series ICFP
+month October
+day 23
+year 2018
+days 5
+location St. Louis, Missouri, USA
+country USA
+nameLink https://conf.researchr.org/home/icfp-2018
+status over
+
+name Strange Loop 2018
+series StangeLoop
+month September
+day 26
+year 2018
+days 3
+location St. Louis, MO, USA
+country USA
+nameLink https://www.thestrangeloop.com/
+status over
+
+name Programming Language Design and Implementation 2018
+series PLDI
+month June
+day 18
+year 2018
+days 5
+location Philadelphia, PA, USA
+country USA
+nameLink http://pldi18.sigplan.org/
+status over
+
+name CRAFT 2018
+series CRAFT
+month May
+day 8
+year 2018
+days 3
+location Budapest
+country Hungary
+nameLink https://craft-conf.com/
+status over
+
+name 2018 ACM CHI Conference on Human Factors in Computing Systems
+series CHI
+month April
+day 21
+year 2018
+days 5
+location Montreal
+country Canada
+nameLink https://chi2018.acm.org/
+status over
+
+name Principles of Programming Languages 2018
+series POPL
+month January
+day 10
+year 2018
+days 3
+location Los Angeles, CA, USA
+country USA
+nameLink https://popl18.sigplan.org/
+status over
+
+name Code Mesh 2017
+series CodeMesh
+month November
+day 7
+year 2017
+days 3
+location London, UK
+country UK
+nameLink http://www.codemesh.io/
+twitter codemeshio
+twitterLink https://twitter.com/codemeshio
+status over
+
+name Systems, Programming, Languages and Applications: Software for Humanity 2017
+series SPLASH
+month October
+day 22
+year 2017
+days 5
+location Vancouver, Canada
+country Canada
+nameLink https://2017.splashcon.org/
+status over
+
+name Strange Loop 2017
+series StangeLoop
+month September
+day 28
+year 2017
+days 3
+location Peabody Opera House, St. Louis, MO, USA
+country USA
+nameLink https://www.thestrangeloop.com/
+status over
+
+name History of Programming Languages III
+series HOPL
+month June
+day 9
+year 2007
+days 2
+location San Diego, CA, USA
+country USA
+nameLink http://research.ihost.com/hopl/HOPL-III.html
+status over
+
+import ../footer.scroll
