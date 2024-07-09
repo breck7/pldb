@@ -1,24 +1,24 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
-id	4950	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
-name	4950	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
-appeared	4950	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
-creators	1423	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
+id	4952	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
+name	4952	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
+appeared	4952	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
+creators	1425	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
-measurements	4950	100%	How many measurements do we have about this thing?	11	number		1.11	true			
-tags	4950	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
+measurements	4952	100%	How many measurements do we have about this thing?	11	number		1.11	true			
+tags	4952	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
 rijuRepl_website	28	0%	What is the URL of the official homepage for this language project?	https://www.adaic.org/	string		1.21	false			
-website	1706	34%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false			
+website	1707	34%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false			
 spec	36	0%	What is a URL to the official spec for this language?	https://www.iso-9899.info/wiki/The_Standard	string		1.22	false			
-foundationScore	4950	100%	How many languages are built using this language?	0	number		1.3	true			
+foundationScore	4952	100%	How many languages are built using this language?	0	number		1.3	true			
 blog	62	1%	What is the URL to the official blog for this language?	https://blogs.sap.com/tags/833755570260738661924709785639136/	string		1.33	false			
 releaseNotes	67	1%	What is the URL to the release notes or changelog for this language?	https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html	string		1.33	false			
 download	41	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
-latestVersion	638	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
-exampleCount	4950	100%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	4950	100%	How does this concept rank amongst all other concepts?	1269	number		1.5	true			
-lastActivity	4950	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
-writtenInCount	1126	22%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	4950	100%	What is the combined score of this language across all the categories of rankings?	21279	number		1.6	true			
+latestVersion	639	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
+exampleCount	4952	100%	How many examples do we have written in this language?	2	number		1.5	true			
+rank	4952	100%	How does this concept rank amongst all other concepts?	1270	number		1.5	true			
+lastActivity	4952	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
+writtenInCount	1128	22%	How many languages is this implementation written in?	3	number		1.6	true			
+pldbScore	4952	100%	What is the combined score of this language across all the categories of rankings?	21286	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
@@ -77,40 +77,40 @@ forLanguages	48	0%	Which languages is this repository for?	ballerina	string		1.9
 dblp	0	0%	What are publications about this language from https://dblp.org/?			dblp.org	1.9	false			
 dblp_hits	0	0%	How many matching publications?				1.9	false			
 dblp_publications	0	0%	An inline PSV table of hits.				1.9	false			
-mainRepo	1165	23%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
-standsFor	352	7%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false			
+mainRepo	1167	23%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
+standsFor	353	7%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false			
 aka	177	3%	What is this also known as?	4D	string		1.9	false			
 oldName	15	0%	What is the old name of this language?	ML-flavoured Erlang	string		1.9	false			
 packageInstallCount	11	0%	How many packages have been downloaded?	770549116	number		1.9	false			
 packageCount	48	0%	How many packages are in the repository?	105	number		1.9	false			
 packageAuthors	4	0%	How many people contribute packages to this cpm?	13699	number		1.9	false			
 hoplId	1807	36%	What is the HOPL id of this language?	4365	number		1.9	true			
-isLanguage	4950	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
-inboundLinksCount	4950	100%	How many other concepts link to this one?	0	number		1.9	true			
-inboundLinks	422	8%	Which other concepts link to this one?	explorer	string		1.9	true			
-isFinished	4950	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
+isLanguage	4952	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
+inboundLinksCount	4952	100%	How many other concepts link to this one?	0	number		1.9	true			
+inboundLinks	424	8%	Which other concepts link to this one?	explorer	string		1.9	true			
+isFinished	4952	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	17	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
-repoStats_firstCommit	1118	22%	What year the first commit made in this git repo?	2015	number		1.9	false			
-repoStats_newestCommit	1079	21%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
-repoStats_commits	1118	22%	How many commits to the repo?	871	number		1.9	false			
-repoStats_committers	1118	22%	How many committers to the repo?	28	number		1.9	false			
-repoStats_files	1115	22%	How many files in the repo?	49	number		1.9	false			
+repoStats_firstCommit	1120	22%	What year the first commit made in this git repo?	2015	number		1.9	false			
+repoStats_newestCommit	1081	21%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
+repoStats_commits	1120	22%	How many commits to the repo?	871	number		1.9	false			
+repoStats_committers	1120	22%	How many committers to the repo?	28	number		1.9	false			
+repoStats_files	1117	22%	How many files in the repo?	49	number		1.9	false			
 equation	15	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false			
-description	1024	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
-githubRepo_description	1024	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+description	1026	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+githubRepo_description	1026	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
 paper	25	0%	What is a URL to a paper(s) by the creator(s) introducing this language?	https://functional-art.org/2017/ait	string		1.99	false			
-rijuRepl_description	1024	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+rijuRepl_description	1026	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
 interviews	10	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 isPublicDomain	21	0%	Is this public domain?	true	boolean		2	false			
-isOpenSource	1494	30%	Is this an open source project?	true	boolean		2.01	true			
+isOpenSource	1496	30%	Is this an open source project?	true	boolean		2.01	true			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		2.1	false			
-writtenIn	1126	22%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false			
-numberOfUsersEstimate	4950	100%	What is our estimate of number of users of this language?	818	number		2.1	true			
-numberOfJobsEstimate	4950	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
-expandedMeasurements	4950	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
-related	198	4%	What languages are related?	logo	string		2.2	false			
+writtenIn	1128	22%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false			
+numberOfUsersEstimate	4952	100%	What is our estimate of number of users of this language?	818	number		2.1	true			
+numberOfJobsEstimate	4952	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
+expandedMeasurements	4952	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
+related	198	3%	What languages are related?	logo	string		2.2	false			
 runsOnVm	9	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false			
-influencedBy	73	1%	What languages influenced this one?	rust	string		2.2	false			
+influencedBy	74	1%	What languages influenced this one?	rust	string		2.2	false			
 successorOf	5	0%	Was this language launched as the successor of another?	asp	string		2.2	false			
 subsetOf	11	0%	Is this language a subset of another?	c	string		2.2	false			
 implementationOf	7	0%	Is this language an implementation of another?	scheme	string		2.2	false			
@@ -122,10 +122,10 @@ compilesTo	78	1%	Which language(s) does this language primarily compile to?	beam
 inputLanguages	9	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false			
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
-numberOfCreators	1423	28%	How many creators?	1	number		2.33	true			
-isSelfHosted	1126	22%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
-latestMajorVersion	638	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
-usesSemanticVersioning	638	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
+numberOfCreators	1425	28%	How many creators?	1	number		2.33	true			
+isSelfHosted	1128	22%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
+latestMajorVersion	639	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
+usesSemanticVersioning	639	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
 demoVideo	16	0%	What is a URL of a demo video of this language?	https://www.youtube.com/watch?v=qGOIt0xh0dw	string		2.4	false			
 rijuRepl_fileExtensions	38	0%	What are the file extensions for this language?	adb ads	string		2.4	false			
 wikipedia_fileExtensions	106	2%	What are the file extensions for this language?	adb ads	string		2.4	false			
@@ -174,7 +174,7 @@ wikipedia_example	630	12%	What is a representative snippet for this language?	C 
 compilerExplorer_example	34	0%	What is a representative snippet for this language?	-- This pragma will remove the warning produced by the default -- CE filename and the procedure name differing, -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName pragma Source_File_Name (Square, Body_File_Name => "example.adb");  -- Type your code here, or load an example. function Square(num : Integer) return Integer is begin     return num**2; end Square;  -- Ada 2012 also provides Expression Functions -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html) -- as a short hand for functions whose body consists of a -- single return statement. However they cannot be used as a -- compilation unit. -- function Square(num : Integer) return Integer is (num**2); 	string		3	false			
 leachim6_example	427	8%	What is a representative snippet for this language?	"Hello World	string		3	false			
 pygmentsHighlighter	340	6%	What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?	ABAP	string	pygments.org	3	false			
-example	868	17%	What is a representative snippet for this language?	PUSH 4 PUSH 5 MULTIPLY	string		3	false			
+example	870	17%	What is a representative snippet for this language?	PUSH 4 PUSH 5 MULTIPLY	string		3	false			
 helloWorldCollection	150	3%	What is the name of this project in the Hello World Collection?	\ Hello world in ABC  WRITE "Hello, World!" /	string	helloworldcollection.de	3	false			
 theLanguage	1	0%	What is the entire definition of the language, if it's a small one?	;;; Qlang version 0.1 ;;; R5RS Scheme plus getprop, putprop, error  ;; queue primitives from SICP pp. 209-212 ;; in classical Lisp, called "tconc" representation  (define front-ptr car) (define rear-ptr cdr) (define set-front-ptr! set-car!) (define set-rear-ptr! set-cdr!)  (define (empty-queue? queue) (null? (front-ptr queue))) (define (make-queue) (cons '() '())) (define (insert-queue! queue item)  (let ((new-pair (cons item '())))   (cond ((empty-queue? queue)    (set-front-ptr! queue new-pair)    (set-rear-ptr! queue new-pair))         (else    (set-cdr! (rear-ptr queue) new-pair)    (set-rear-ptr! queue new-pair)))))  (define (delete-queue! queue)  (if (empty-queue? queue)   (error "delete-queue!" "empty queue")   (let ((front (car (front-ptr queue))))    (set-front-ptr! queue (cdr (front-ptr queue)))    front)))  (define queue->list front-ptr)  ;; define a Qlang primitive (define (q-prim sym fn arity)  (putprop sym 'q-subr fn)  (putprop sym 'q-arity arity))  ;; return the arity of an operator, or -1 if not an operator (define (q-arity sym)  (if (symbol? sym)   (getprop sym 'q-arity -1)   -1))  ;; return the Qlang definition of a symbol (define (q-def sym) (getprop sym 'q-subr #f))  ;; execute Qlang expression encoded as list (define (q-exec list)  (let ((queue (make-queue)))   (for-each (lambda (elem) (insert-queue! queue elem)) list)   (q-exec-queue queue)))  ;; execute Qlang expression encoded as queue (define (q-exec-queue queue)  (let* ((item (delete-queue! queue))         (arity (q-arity item)))   (cond ((empty-queue? queue)    item)               ((negative? arity)    (insert-queue! queue item)    (q-exec-queue queue))         ((q-args-available? (queue->list queue) item arity)    (insert-queue! queue     (apply (q-def item)      (q-get-args! queue arity)))    (q-exec-queue queue))         (else    (insert-queue! queue item)    (q-exec-queue queue)))))  ;; Are the right number of arguments available? (define (q-args-available? args sym count)  (cond ((zero? count)   #t)        ((null? args)   (error (symbol->string sym) "missing arguments"))        ((>= (q-arity (car args)) 0)   #f)        (else   (q-args-available? (cdr args) sym (- count 1)))))  (define (q-get-args! queue count)  (if (zero? count)   '()   (let ((arg (delete-queue! queue)))    (cons arg (q-get-args! queue (- count 1))))))  ;; some primitives (q-prim '+ + 2) (q-prim '* * 2) (q-prim 'pi (lambda () 3.141592653) 0)	string		3	false			
 leachim6	427	8%	What is a URL to this language in leachim6's hello-world project?	05AB1E	string	github.com/leachim6/hello-world	3.2	false			
@@ -186,8 +186,8 @@ githubCopilotOptimized	7	0%	Is this language optimized for GitHub copilot, as fo
 meetup	57	1%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false			
 gitRepo	26	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false			
 specRepo	2	0%	What is the URL of the official spec for the language project?	https://github.com/whatwg/html	string		4	false			
-githubRepo	1124	22%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false			
-gitlabRepo	13	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false			
+githubRepo	1125	22%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false			
+gitlabRepo	14	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false			
 sourcehutRepo	5	0%	What is the URL of the official sourcehut repo for this project?	https://sourceforge.net/projects/avisynth2/	string	sr.ht	4	false			
 rijuRepl_gitRepo	38	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://gcc.gnu.org/git.html	string		4	false			
 keywords	115	2%	What are all the keywords in this language?	abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit 	string		4	false			
@@ -367,12 +367,12 @@ mergesWhitespace	2	0%	Does this language merge whitespace, so N spaces is treate
 supportsBreakpoints	2	0%	Does this language support breakpoints?	true	boolean		7	false			
 jupyterKernel	73	1%	What is a link to a Jupyter Kernel for this language?	https://github.com/mattpap/IAldor	string	jupyter.org	9	false			
 wikipedia	1888	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
-bookCount	4950	100%	What is the count of booked we have published about this thing?	0	number		10	true			
-paperCount	4950	100%	What is the count of papers we have published about this thing?	0	number		10	true			
+bookCount	4952	100%	What is the count of booked we have published about this thing?	0	number		10	true			
+paperCount	4952	100%	What is the count of papers we have published about this thing?	0	number		10	true			
 hopl	1807	36%	What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?	https://hopl.info/showlanguage.prx?exp=4365	string	hopl.info	11	false			
 pypl	29	0%	What is this language's id on https://pypl.github.io?	Abap	string	pypl.github.io	11	false			
 tiobe	204	4%	What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?	ABAP	string	tiobe.com	11	false			
-domainName	891	18%	What is the domain for this language's website if it has its own?	6gu.nz	string		12	false			
+domainName	891	17%	What is the domain for this language's website if it has its own?	6gu.nz	string		12	false			
 githubBigQuery	420	8%	What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?	1C Enterprise	string	cloud.google.com	13	false			
 linguistGrammarRepo	416	8%	What is the URL to the Linguist Grammar repo used by GitHub for this language?	https://github.com/xDrivenDevelopment/atom-language-1c-bsl.git	string	github.com	16	false			
 hackerNewsDiscussions	180	3%	What are URLS to Hacker News posts discussing this language?	id|title|time|timestamp|by|comments|score\n17544330|Show HN: 6gunz – spreadsheet / programming language / microservices framework|2018-07-16 19:36:57 UTC|1531769817|repsilat|5|9	string	news.ycombinator.com	18	false			

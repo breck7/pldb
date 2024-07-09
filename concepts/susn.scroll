@@ -1,0 +1,55 @@
+import ../code/conceptPage.scroll
+
+id susn
+name SUSN
+appeared 2023
+creators Nate Cull
+tags dataNotation
+latestVersion 7
+standsFor Simple Uniform Semantic Notation
+description A hand-editable data format for small personal knowledge bases
+
+writtenIn markdown javascript
+influencedBy json rdf markdown gemini recfiles xml s-expressions
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 74
+ committers 1
+ files 4
+
+example
+ [module 0
+ title Tomorrow
+ novas 0
+ timeline 1982
+ year 2014
+ book It's 1982. One of the 1982s, at least. This one is a little faster...
+ [track Singing In The 80s
+ [by The Monitors
+ country Australia
+ ]
+ year 1980
+ [cast Jack
+ tag debut
+ ]
+ book Jack is a soldier with shadows.
+ tag coldopen
+ tag memory
+ [lyrics
+ . I didn't know if I wanted to laugh or cry
+ . The night that disco died
+ . The laser lights were kicking off my dancing shoes
+ . But there was nobody dancing inside
+ . Got high with the song of doom
+ . The moon was listening in
+ .
+ . What will we be singing in the '80s?
+ . What should we be singing now?
+ . What will we be singing in the '80s?
+ . What should we be singing now?
+ ]
+ ]
+ ]
+
+gitlabRepo https://gitlab.com/natecull/susn

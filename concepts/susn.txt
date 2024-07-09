@@ -1,0 +1,51 @@
+SUSN
+====
+
+SUSN, aka Simple Uniform Semantic Notation, is a data notation created in 2023 by Nate Cull.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Nate%20Cull
+
+#2128 on PLDB
+1 Years Old
+
+git clone https://gitlab.com/natecull/susn
+
+A hand-editable data format for small personal knowledge bases
+
+- SUSN appears in categories: dataNotation
+- SUSN on GitLab
+ https://gitlab.com/natecull/susn
+- SUSN is written in Markdown, JavaScript
+
+[module 0
+title Tomorrow
+novas 0
+timeline 1982
+year 2014
+book It&#39;s 1982. One of the 1982s, at least. This one is a little faster...
+[track Singing In The 80s
+[by The Monitors
+country Australia
+]
+year 1980
+[cast Jack
+tag debut
+]
+book Jack is a soldier with shadows.
+tag coldopen
+tag memory
+[lyrics
+. I didn&#39;t know if I wanted to laugh or cry
+. The night that disco died
+. The laser lights were kicking off my dancing shoes
+. But there was nobody dancing inside
+. Got high with the song of doom
+. The moon was listening in
+.
+. What will we be singing in the &#39;80s?
+. What should we be singing now?
+. What will we be singing in the &#39;80s?
+. What should we be singing now?
+]
+]
+]

@@ -4,7 +4,7 @@ SequenceL
 SequenceL is an open source programming language created in 1989.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#1722 on PLDB
+#1723 on PLDB
 35 Years Old
 
 SequenceL is a general purpose functional programming language and auto-parallelizing (Parallel computing) compiler and tool set, whose primary design objectives are performance on multi-core processor hardware, ease of programming, platform portability/optimization, and code clarity and readability.  Its main advantage is that it can be used to write straightforward code that automatically takes full advantage of all the processing power available, without programmers needing to be concerned with identifying parallelisms, specifying vectorization, avoiding race conditions, and other challenges of manual directive-based programming approaches such as OpenMP. Programs written in SequenceL can be compiled to multithreaded code that runs in parallel, with no explicit indications from a programmer of how or what to parallelize. Read more on Wikipedia...
