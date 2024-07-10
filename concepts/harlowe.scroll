@@ -8,6 +8,7 @@ tags textMarkup
 description The default Twine 2 story format.
 
 related twine
+documentation http://twine2.neocities.org/
 
 example
  <tw-storydata startnode=1 options=debug>
@@ -17,5 +18,3 @@ example
  </tw-storydata>
 
 gitRepo https://foss.heptapod.net/games/harlowe
-
-documentation http://twine2.neocities.org/
