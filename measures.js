@@ -199,7 +199,7 @@ const measures = [
     "Values": 4953,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21290",
+    "Example": "21288",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -423,7 +423,7 @@ const measures = [
   },
   {
     "Name": "webRepl",
-    "Values": 104,
+    "Values": 105,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -873,7 +873,7 @@ const measures = [
   },
   {
     "Name": "inboundLinks",
-    "Values": 424,
+    "Values": 425,
     "Coverage": "8%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -1501,7 +1501,7 @@ const measures = [
   },
   {
     "Name": "rosettaCode",
-    "Values": 331,
+    "Values": 332,
     "Coverage": "6%",
     "Question": "What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?",
     "Example": "http://www.rosettacode.org/wiki/Category:ABAP",
@@ -1667,7 +1667,7 @@ const measures = [
   },
   {
     "Name": "discord",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://discord.gg/MM3HmfzRfS",
