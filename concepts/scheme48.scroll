@@ -10,6 +10,7 @@ latestVersion 1.9.2
 description Scheme 48 is an implementation of Scheme written by Richard Kelsey and Jonathan Rees. The name ‘Scheme 48’ commemorates our having written the original version in forty-eight hours, on August 6th and 7th, 1986.
 
 implementationOf scheme
+documentation https://s48.org/1.9.2/manual/manual.html
 
 example
  (define (make-counter)
@@ -21,5 +22,3 @@ example
                        1)))
              (provisional-cell-set! value v)
              v))))))
-
-documentation https://s48.org/1.9.2/manual/manual.html

@@ -4,7 +4,7 @@ Indental
 Indental is a data notation created in 2017.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#2107 on PLDB
+#2108 on PLDB
 7 Years Old
 
 This space-sensitive database format is designed to store a dictionary of elements, accessible by name. The parser is a mere 50 lines, and allows for human-readable data structures for static sites such as Oscean, also see Tablatal. In the Indental file, an unindented line declares the key to a new root node, children lines can associate either parameters or lists to their parent node, a line divided with a colon will associate a value to a parameter to the parent node, and a sequence of equally indented lines will append to a list.

@@ -37,47 +37,48 @@ nameParser
  extends abstractIdParser
  float sortIndex 1.1
 
+statusParser
+ extends abstractStringMeasureParser
+ float sortIndex 1.11
+
 seriesParser
  extends abstractStringMeasureParser
- float sortIndex 2.2
+ float sortIndex 1.2
 
 startsParser
  extends abstractStringMeasureParser
- float sortIndex 4.4
+ float sortIndex 1.4
 
 yearParser
  extends abstractIntegerMeasureParser
- float sortIndex 5.5
+ float sortIndex 1.5
 
 daysParser
  extends abstractIntegerMeasureParser
- float sortIndex 6.6000000000000005
+ float sortIndex 1.6
 
 locationParser
  extends abstractStringMeasureParser
- float sortIndex 7.700000000000001
+ float sortIndex 1.7
 
 countryParser
  extends abstractStringMeasureParser
- float sortIndex 8.8
+ float sortIndex 1.8
 
 nameLinkParser
  extends abstractUrlMeasureParser
- float sortIndex 9.9
+ float sortIndex 1.9
 
 twitterParser
  extends abstractStringMeasureParser
- float sortIndex 11
+ float sortIndex 1.91
 
 twitterLinkParser
  extends abstractUrlMeasureParser
- float sortIndex 11
-
-statusParser
- extends abstractStringMeasureParser
- float sortIndex 12.100000000000001
+ float sortIndex 1.91
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2024
+status upcoming
 series SPLASH
 starts October 20
 year 2024
@@ -87,9 +88,9 @@ country USA
 nameLink https://2024.splashcon.org/
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status upcoming
 
 name OOPSLA 2024
+status upcoming
 series Object-Oriented Programming, Systems, Languages & Applications
 starts October 20
 year 2024
@@ -99,9 +100,9 @@ country USA
 nameLink https://2024.splashcon.org/track/splash-2024-OOPSLA
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status upcoming
 
 name RacketCon 2024
+status upcoming
 series RacketCon
 starts October 5
 year 2024
@@ -109,9 +110,9 @@ days 2
 location University of Washington, Seattle, WA
 country USA
 nameLink https://con.racket-lang.org/
-status upcoming
 
 name Dyalog '24
+status upcoming
 series Dyalog
 starts September 15
 year 2024
@@ -119,9 +120,9 @@ days 5
 location Glasgow, Scotland
 country UK
 nameLink https://www.dyalog.com/user-meetings/dyalog24.htm
-status upcoming
 
 name International Conference on Functional Programming 2024
+status upcoming
 series ICFP
 starts September 2
 year 2024
@@ -131,9 +132,9 @@ country Italy
 nameLink https://icfp24.sigplan.org/
 twitter icfp_conf
 twitterLink https://twitter.com/icfp_conf
-status upcoming
 
 name JuliaCon 2024
+status upcoming
 series JuliaCon
 starts July 9
 year 2024
@@ -141,9 +142,9 @@ days 5
 location Eindhoven
 country Netherlands
 nameLink https://juliacon.org/2024/
-status upcoming
 
 name DATA2024
+status upcoming
 series International Conference on Data Science, Technology and Applications
 starts July 9
 year 2024
@@ -151,9 +152,9 @@ days 3
 location Dijon
 country France
 nameLink https://data.scitevents.org/
-status upcoming
 
 name ICSOFT
+status upcoming
 series International Conference on Software Technologies
 starts July 9
 year 2024
@@ -161,9 +162,9 @@ days 3
 location Dijon
 country France
 nameLink https://icsoft.scitevents.org/
-status upcoming
 
 name Programming Language Design and Implementation 2024
+status over
 series PLDI
 starts June 24
 year 2024
@@ -171,9 +172,9 @@ days 5
 location Copenhagen
 country Denmark
 nameLink https://pldi24.sigplan.org/
-status over
 
 name PyCon 2024
+status over
 series PyCon
 starts May 15
 year 2024
@@ -181,9 +182,9 @@ days 8
 location Pittsburgh, Pennsylvania
 country USA
 nameLink https://us.pycon.org/2024/
-status over
 
 name European Lisp Symposium
+status over
 series EULisp
 starts May 6
 year 2024
@@ -191,9 +192,9 @@ days 2
 location Vienna
 country Austria
 nameLink https://www.european-lisp-symposium.org/2024/index.html
-status over
 
 name RacketCon 2023
+status over
 series RacketCon
 starts October 28
 year 2023
@@ -201,9 +202,9 @@ days 2
 location Northwestern University, Evanston, IL
 country USA
 nameLink https://con.racket-lang.org/2023/
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2023
+status over
 series SPLASH
 starts October 22
 year 2023
@@ -213,9 +214,9 @@ country Portugal
 nameLink https://2023.splashcon.org/
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status over
 
 name Haskell Symposium 2023
+status over
 series HaskellSymposium
 starts September 8
 year 2023
@@ -223,9 +224,9 @@ days 2
 location Seattle, WA
 country USA
 nameLink https://www.haskell.org/haskell-symposium/2023/index.html
-status over
 
 name European Lisp Symposium
+status over
 series EULisp
 starts April 24
 year 2023
@@ -233,9 +234,9 @@ days 2
 location Amsterdam
 country Netherlands
 nameLink https://www.european-lisp-symposium.org/2023/
-status over
 
 name 45th International Conference on Software Engineering
+status over
 series ICSE2023
 starts May 14
 year 2023
@@ -243,9 +244,9 @@ days 5
 location Melbourne Convention and Exhibition Centre
 country Australia
 nameLink https://conf.researchr.org/home/icse-2023
-status over
 
 name ICSOFT2023
+status over
 series International Conference on Software Technologies
 starts July 10
 year 2023
@@ -253,9 +254,9 @@ days 2
 location Rome
 country Italy
 nameLink https://icsoft.scitevents.org/
-status over
 
 name DATA2023
+status over
 series International Conference on Data Science, Technology and Applications
 starts July 11
 year 2023
@@ -263,9 +264,9 @@ days 2
 location Rome
 country Italy
 nameLink https://data.scitevents.org/
-status over
 
 name World Conference on Computer and Information Technology
+status over
 series WCCIT
 starts March 3
 year 2023
@@ -273,9 +274,9 @@ days 1
 location Vienna
 country Austria
 nameLink https://www.steconf.org/conference/world-conference-on-computer-and-information-technology/
-status over
 
 name Connect Empower 2023(Women Who Code)
+status over
 series CE
 starts March 2
 year 2023
@@ -283,9 +284,9 @@ days 2
 location San Francisco
 country USA
 nameLink https://hopin.com/events/connect-2023/registration
-status over
 
 name 9th International Conference on Advances in Computer Science and Information Technology
+status over
 series ACSTY2023
 starts January 28
 year 2023
@@ -293,9 +294,9 @@ days 2
 location Copenhagen
 country Denmark
 nameLink https://acsty2023.org/
-status over
 
 name Data Science and Machine Learning
+status over
 series DSML
 starts January 9
 year 2023
@@ -303,9 +304,9 @@ days 1
 location Ruddlesway
 country Germany
 nameLink https://datascience.annualcongress.com/registration.php
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2021
+status over
 series SPLASH
 starts December 5
 year 2022
@@ -315,9 +316,9 @@ country New Zealand
 nameLink https://2022.splashcon.org/
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status over
 
 name RacketCon 2022
+status over
 series RacketCon
 starts October 28
 year 2022
@@ -325,9 +326,9 @@ days 2
 location Providence, Rhode Island
 country USA
 nameLink https://con.racket-lang.org/
-status over
 
 name PostgreSQL Conference Europe
+status over
 series PCE
 starts October 26
 year 2022
@@ -335,9 +336,9 @@ days 2
 location Berlin
 country Germany
 nameLink https://2022.pgconf.eu/
-status over
 
 name Strange Loop 2022
+status over
 series StangeLoop
 starts September 22
 year 2022
@@ -347,9 +348,9 @@ country USA
 nameLink https://www.thestrangeloop.com/
 twitter strangeloop_stl
 twitterLink https://twitter.com/strangeloop_stl
-status over
 
 name International Conference on Functional Programming 2022
+status over
 series ICFP
 starts September 11
 year 2022
@@ -357,9 +358,9 @@ days 5
 location Ljubljana
 country Slovenia
 nameLink https://icfp22.sigplan.org/
-status over
 
 name Psychology of Programming Interest Group 2022
+status over
 series PPIG
 starts September 5
 year 2022
@@ -367,9 +368,9 @@ days 4
 location Milton Keynes
 country UK
 nameLink https://ppig.org/workshops/2022-annual-workshop/
-status over
 
 name Balisage: The Markup Conference 2022
+status over
 series Balisage
 starts August 1
 year 2022
@@ -377,9 +378,9 @@ days 4
 location Online
 country Online
 nameLink http://www.balisage.net/
-status over
 
 name Programming Language Design and Implementation 2022
+status over
 series PLDI
 starts June 15
 year 2022
@@ -387,9 +388,9 @@ days 2
 location San Diego
 country USA
 nameLink https://conf.researchr.org/home/pldi-2022
-status over
 
 name RacketCon 2021
+status over
 series RacketCon
 starts November 5
 year 2021
@@ -397,9 +398,9 @@ days 2
 location Online
 country Online
 nameLink https://con.racket-lang.org/2021/
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2021
+status over
 series SPLASH
 starts October 17
 year 2021
@@ -409,9 +410,9 @@ country USA
 nameLink https://2021.splashcon.org/
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status over
 
 name Strange Loop 2021
+status over
 series StangeLoop
 starts September 30
 year 2021
@@ -421,9 +422,9 @@ country USA
 nameLink https://www.thestrangeloop.com/
 twitter strangeloop_stl
 twitterLink https://twitter.com/strangeloop_stl
-status over
 
 name International Conference on Functional Programming 2021
+status over
 series ICFP
 starts August 22
 year 2021
@@ -431,9 +432,9 @@ days 5
 location Online
 country Online
 nameLink https://icfp21.sigplan.org/
-status over
 
 name Balisage: The Markup Conference 2021
+status over
 series Balisage
 starts August 2
 year 2021
@@ -441,9 +442,9 @@ days 5
 location Washington, D.C.
 country USA
 nameLink http://www.balisage.net/
-status over
 
 name Psychology of Programming Interest Group 2021
+status over
 series PPIG
 starts June 21
 year 2021
@@ -451,9 +452,9 @@ days 5
 location Online
 country Online
 nameLink https://ppig.org/workshops/2021-annual-workshop/
-status over
 
 name History of Programming Languages IV
+status over
 series HOPL
 starts June 20
 year 2021
@@ -461,9 +462,9 @@ days 3
 location Online
 country Online
 nameLink https://hopl4.sigplan.org/
-status over
 
 name Programming Language Design and Implementation 2021
+status over
 series PLDI
 starts June 20
 year 2021
@@ -471,9 +472,9 @@ days 3
 location Online
 country Online
 nameLink https://conf.researchr.org/home/pldi-2021
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2020
+status over
 series SPLASH
 starts November 15
 year 2020
@@ -483,9 +484,9 @@ country Online
 nameLink https://2020.splashcon.org/
 twitter splashcon
 twitterLink https://twitter.com/splashcon
-status over
 
 name RacketCon 2020
+status over
 series RacketCon
 starts October 17
 year 2020
@@ -493,9 +494,9 @@ days 2
 location Online
 country Online
 nameLink https://con.racket-lang.org/
-status over
 
 name Strange Loop 2020
+status over
 series StangeLoop
 starts October 1
 year 2020
@@ -505,9 +506,9 @@ country USA
 nameLink https://www.thestrangeloop.com/
 twitter strangeloop_stl
 twitterLink https://twitter.com/strangeloop_stl
-status over
 
 name International Conference on Functional Programming 2020
+status over
 series ICFP
 starts August 24
 year 2020
@@ -515,9 +516,9 @@ days 3
 location Online
 country Online
 nameLink https://icfp19.sigplan.org/home/icfp-2020
-status over
 
 name Psychology of Programming Interest Group 2020
+status over
 series PPIG
 starts July 29
 year 2020
@@ -525,9 +526,9 @@ days 3
 location Online
 country Online
 nameLink http://www.ppig.org/upcoming/ppig-2020
-status over
 
 name Balisage: The Markup Conference 2020
+status over
 series Balisage
 starts July 28
 year 2020
@@ -535,9 +536,9 @@ days 3
 location Rockville, Maryland
 country USA
 nameLink http://www.balisage.net/
-status over
 
 name Programming Language Design and Implementation 2020
+status over
 series PLDI
 starts June 15
 year 2020
@@ -545,9 +546,9 @@ days 5
 location Online
 country Online
 nameLink https://conf.researchr.org/home/pldi-2020
-status over
 
 name 42nd International Conference on Software Engineering
+status over
 series ICSE
 starts May 23
 year 2020
@@ -555,9 +556,9 @@ days 5
 location Online
 country Online
 nameLink https://conf.researchr.org/home/icse-2020
-status over
 
 name 2020 ACM CHI Conference on Human Factors in Computing Systems
+status over
 series CHI
 starts April 25
 year 2020
@@ -565,9 +566,9 @@ days 5
 location Honolulu, Hawaii
 country USA
 nameLink http://www.ppig.org/upcoming/chi-2020
-status over
 
 name ‹Programming›
+status over
 series ICASEP
 starts March 23
 year 2020
@@ -577,9 +578,9 @@ country Online
 nameLink https://2020.programming-conference.org/
 twitter programmingconf
 twitterLink https://twitter.com/programmingconf
-status over
 
 name Psychology of Programming Interest Group Work-in-Progress 2020
+status over
 series PPIGWIP
 starts February 17
 year 2020
@@ -587,9 +588,9 @@ days 2
 location Sheffield Hallam University, Sheffield
 country UK
 nameLink http://www.ppig.org/upcoming/ppig-wip-2020
-status over
 
 name Principles of Programming Languages 2020
+status over
 series POPL
 starts January 19
 year 2020
@@ -597,9 +598,9 @@ days 5
 location New Orleans, Louisiana
 country United States
 nameLink https://popl20.sigplan.org/
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2019
+status over
 series SPLASH
 starts October 20
 year 2019
@@ -607,9 +608,9 @@ days 5
 location Athens, Greece
 country Greece
 nameLink https://conf.researchr.org/home/splash-2019
-status over
 
 name Strange Loop 2019
+status over
 series StangeLoop
 starts September 12
 year 2019
@@ -617,9 +618,9 @@ days 3
 location Stifel Theatre, St. Louis, MO, USA
 country USA
 nameLink https://www.thestrangeloop.com/
-status over
 
 name Psychology of Programming Interest Group
+status over
 series PPIG
 starts August 28
 year 2019
@@ -627,9 +628,9 @@ days 3
 location School of Computing, Urban Sciences Building, Newcastle University, Newcastle, UK
 country UK
 nameLink http://www.ppig.org/workshops/ppig-2019-30th-annual-workshop
-status over
 
 name International Conference on Functional Programming 2019
+status over
 series ICFP
 starts August 19
 year 2019
@@ -637,9 +638,9 @@ days 3
 location Berlin, Germany
 country Germany
 nameLink https://icfp19.sigplan.org/
-status over
 
 name Second International Summer School on Metaprogramming
+status over
 series ISSMP
 starts August 11
 year 2019
@@ -647,9 +648,9 @@ days 5
 location Schloss Dagstuhl, Germany
 country Germany
 nameLink https://www.cl.cam.ac.uk/events/metaprog/2019/
-status over
 
 name Balisage: The Markup Conference 2019
+status over
 series Balisage
 starts July 29
 year 2019
@@ -657,9 +658,9 @@ days 3
 location Rockville, Maryland, USA
 country USA
 nameLink http://www.balisage.net/
-status over
 
 name RacketCon 2019
+status over
 series RacketCon
 starts July 13
 year 2019
@@ -667,9 +668,9 @@ days 2
 location University of Utah, Salt Lake City, Utah, USA
 country USA
 nameLink https://con.racket-lang.org/
-status over
 
 name Programming Language Design and Implementation 2019
+status over
 series PLDI
 starts June 24
 year 2019
@@ -677,9 +678,9 @@ days 3
 location Phoenix, AZ, USA
 country USA
 nameLink https://pldi19.sigplan.org/home
-status over
 
 name Oregon Programming Languages Summer School 2019
+status over
 series OPLSS
 starts June 17
 year 2019
@@ -687,9 +688,9 @@ days 30
 location Eugene, OR, USA
 country USA
 nameLink https://www.cs.uoregon.edu/research/summerschool/summer19/
-status over
 
 name Principles of Programming Languages 2019
+status over
 series POPL
 starts January 13
 year 2019
@@ -697,9 +698,9 @@ days 5
 location Lisbon, Portugal
 country Portugal
 nameLink https://popl19.sigplan.org/
-status over
 
 name Code Mesh 2018
+status over
 series CodeMesh
 starts November 8
 year 2018
@@ -709,9 +710,9 @@ country UK
 nameLink https://codesync.global/conferences/code-mesh-2018/
 twitter codemeshio
 twitterLink https://twitter.com/codemeshio
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2018
+status over
 series SPLASH
 starts November 4
 year 2018
@@ -719,9 +720,9 @@ days 5
 location Boston, MA, USA
 country USA
 nameLink https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA
-status over
 
 name International Conference on Functional Programming 2018
+status over
 series ICFP
 starts October 23
 year 2018
@@ -729,9 +730,9 @@ days 5
 location St. Louis, Missouri, USA
 country USA
 nameLink https://conf.researchr.org/home/icfp-2018
-status over
 
 name Strange Loop 2018
+status over
 series StangeLoop
 starts September 26
 year 2018
@@ -739,9 +740,9 @@ days 3
 location St. Louis, MO, USA
 country USA
 nameLink https://www.thestrangeloop.com/
-status over
 
 name Programming Language Design and Implementation 2018
+status over
 series PLDI
 starts June 18
 year 2018
@@ -749,9 +750,9 @@ days 5
 location Philadelphia, PA, USA
 country USA
 nameLink http://pldi18.sigplan.org/
-status over
 
 name CRAFT 2018
+status over
 series CRAFT
 starts May 8
 year 2018
@@ -759,9 +760,9 @@ days 3
 location Budapest
 country Hungary
 nameLink https://craft-conf.com/
-status over
 
 name 2018 ACM CHI Conference on Human Factors in Computing Systems
+status over
 series CHI
 starts April 21
 year 2018
@@ -769,9 +770,9 @@ days 5
 location Montreal
 country Canada
 nameLink https://chi2018.acm.org/
-status over
 
 name Principles of Programming Languages 2018
+status over
 series POPL
 starts January 10
 year 2018
@@ -779,9 +780,9 @@ days 3
 location Los Angeles, CA, USA
 country USA
 nameLink https://popl18.sigplan.org/
-status over
 
 name Code Mesh 2017
+status over
 series CodeMesh
 starts November 7
 year 2017
@@ -791,9 +792,9 @@ country UK
 nameLink http://www.codemesh.io/
 twitter codemeshio
 twitterLink https://twitter.com/codemeshio
-status over
 
 name Systems, Programming, Languages and Applications: Software for Humanity 2017
+status over
 series SPLASH
 starts October 22
 year 2017
@@ -801,9 +802,9 @@ days 5
 location Vancouver, Canada
 country Canada
 nameLink https://2017.splashcon.org/
-status over
 
 name Strange Loop 2017
+status over
 series StangeLoop
 starts September 28
 year 2017
@@ -811,9 +812,9 @@ days 3
 location Peabody Opera House, St. Louis, MO, USA
 country USA
 nameLink https://www.thestrangeloop.com/
-status over
 
 name History of Programming Languages III
+status over
 series HOPL
 starts June 9
 year 2007
@@ -821,6 +822,5 @@ days 2
 location San Diego, CA, USA
 country USA
 nameLink http://research.ihost.com/hopl/HOPL-III.html
-status over
 
 import ../footer.scroll
