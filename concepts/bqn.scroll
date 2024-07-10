@@ -7,11 +7,13 @@ creators Marshall Lochbaum
 tags pl
 website https://mlochbaum.github.io/BQN/
 standsFor Big Questions Notation
+webRepl https://mlochbaum.github.io/BQN/
 description An APL-like programming language. Self-hosted!
 
-writtenIn html markdown vim-script javascript xml autohotkey css svg
+writtenIn bqn html markdown vim-script javascript xml autohotkey css svg
 influencedBy apl
 documentation https://mlochbaum.github.io/BQN/doc/index.html
+rosettaCode http://www.rosettacode.org/wiki/Category:BQN
 repoStats
  firstCommit 2020
  commits 2840
@@ -21,6 +23,7 @@ repoStats
 country United States
 originCommunity https://github.com/mlochbaum/BQN/issues
 
+discord https://discord.gg/SDTW36EhWF
 example
  #! /usr/bin/env bqn
  
