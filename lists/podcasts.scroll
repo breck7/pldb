@@ -3,6 +3,8 @@ buildConcepts podcasts.json podcasts.tsv podcasts.csv
 groups All
 title Podcasts about Programming
 
+// todo: add youtube links and subscriber counts?
+
 import header.scroll
 printTitle
 
@@ -219,6 +221,36 @@ started 2024
 episodes 7
 appleRatings 3
 appleRatingsLink https://podcasts.apple.com/us/podcast/book-overflow/id1745257325
+
+id Syntax
+ // via stolinksi https://www.reddit.com/r/programming/comments/1dwvezp/comment/lbxg1fu/
+website https://syntax.fm/
+description Tasty Treats for Web Developers. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.
+creators Wes Bos and Scott Tolinski and CJ Reynolds
+started 2017
+episodes 794
+appleRatings 132
+appleRatingsLink https://podcasts.apple.com/ca/podcast/syntax-tasty-web-development-treats/id1253186678
+
+id Signals & Threads
+ // via cmanikan17 https://www.reddit.com/r/programming/comments/1dwvezp/comment/lby6g45/
+website https://signalsandthreads.com/
+description Listen in on Jane Street’s Ron Minsky as he has conversations with engineers who are working on everything from clock synchronization to reliable multicast, build systems to reconfigurable hardware. Get a peek at how Jane Street approaches problems, and how those ideas relate to tech more broadly.
+creators Ron Minsky
+started 2020
+episodes 20
+appleRatings 67
+appleRatingsLink https://podcasts.apple.com/us/podcast/signals-and-threads/id1528917129
+
+id Programming Throwdown
+ // via ck108860 https://www.reddit.com/r/programming/comments/1dwvezp/comment/lbynumj/
+website https://www.programmingthrowdown.com/
+description Programming Throwdown educates Computer Scientists and Software Engineers on a cavalcade of programming and tech topics. Every show will cover a new programming language, so listeners will be able to speak intelligently about any programming language.
+creators Patrick Wheeler and Jason Gauci
+started 2018
+episodes 175
+appleRatings 548
+appleRatingsLink https://podcasts.apple.com/us/podcast/programming-throwdown/id427166321
 
 This ScrollSet was inpsired by this post on HackerNews.
  https://scroll.pub/blog/scrollsets.html ScrollSet
