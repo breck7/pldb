@@ -87,10 +87,10 @@ Make|_$^../concepts/make.html|_$^am Gnumakefile gnumakefile Makefile makefile mk
 Visual Basic .NET|_$^../concepts/visual-basic.net.html|_$^vb VB vbproj vbhtml|_$^4
 CMake|_$^../concepts/cmake.html|_$^cmake cmake.in CMakeLists.txt cmakein|_$^4
 Ini|_$^../concepts/ini.html|_$^buildozer.spec editorconfig ini lektorproject prefs cfg dof pro properties url inf .editorconfig service socket device mount automount swap target path timer slice scope|_$^23
+Brainfuck|_$^../concepts/brainfuck.html|_$^b bf|_$^2
 Gradle|_$^../concepts/gradle.html|_$^gradle gradle.kts|_$^2
 JSON5|_$^../concepts/json5.html|_$^json5|_$^1
 APL|_$^../concepts/apl.html|_$^apl apla aplc aplf apli apln aplo dyalog dyapp mipage|_$^10
-Brainfuck|_$^../concepts/brainfuck.html|_$^b bf|_$^2
 Yacc|_$^../concepts/yacc.html|_$^y yacc yy|_$^3
 OpenCL|_$^../concepts/opencl.html|_$^cl opencl|_$^2
 Embedded Crystal|_$^../concepts/ecr.html|_$^ecr|_$^1
@@ -126,8 +126,8 @@ Verilog|_$^../concepts/verilog.html|_$^v veo|_$^2
 Pony|_$^../concepts/pony.html|_$^pony|_$^1
 Sass|_$^../concepts/sass.html|_$^sass scss|_$^2
 FLUX|_$^../concepts/flux.html|_$^fx flux|_$^2
-starlark|_$^../concepts/starlark.html|_$^bazel bzl star|_$^3
 Fennel|_$^../concepts/fennel.html|_$^fnl|_$^1
+starlark|_$^../concepts/starlark.html|_$^bazel bzl star|_$^3
 AutoHotkey|_$^../concepts/autohotkey.html|_$^ahk ahkl|_$^2
 BASIC|_$^../concepts/basic.html|_$^bas|_$^1
 Hy|_$^../concepts/hy.html|_$^hy|_$^1
@@ -174,8 +174,8 @@ Nginx|_$^../concepts/nginx-config.html|_$^nginx nginxconf vhost nginx.conf|_$^4
 GNU Octave|_$^../concepts/octave.html|_$^m|_$^1
 QML|_$^../concepts/qml.html|_$^qbs qml|_$^2
 Koka|_$^../concepts/koka.html|_$^kk kki|_$^2
-Batchfile|_$^../concepts/batch.html|_$^bat cmd|_$^2
 C3|_$^../concepts/c3.html|_$^c3 c3i|_$^2
+Batchfile|_$^../concepts/batch.html|_$^bat cmd|_$^2
 PL/SQL|_$^../concepts/pl-sql.html|_$^pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw|_$^16
 Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
 Qt|_$^../concepts/qt.html|_$^ui|_$^1
@@ -291,8 +291,8 @@ xBase|_$^../concepts/xbase.html|_$^prg prw ch|_$^3
 Maxima|_$^../concepts/maxima.html|_$^mac max|_$^2
 Self|_$^../concepts/self.html|_$^self|_$^1
 Modelica|_$^../concepts/modelica.html|_$^mo|_$^1
-Gnuplot|_$^../concepts/gnuplot.html|_$^gp gnu gnuplot p plot plt|_$^6
 Vim script|_$^../concepts/vim-script.html|_$^vim vba vimrc vmb .vimrc .exrc .gvimrc _vimrc _exrc _gvimrc gvimrc|_$^11
+Gnuplot|_$^../concepts/gnuplot.html|_$^gp gnu gnuplot p plot plt|_$^6
 Shen|_$^../concepts/shen.html|_$^shen|_$^1
 Scroll|_$^../concepts/scroll.html|_$^scroll|_$^1
 DTD|_$^../concepts/dtd.html|_$^dtd|_$^1
@@ -319,14 +319,14 @@ Djot|_$^../concepts/djot.html|_$^dj|_$^1
 Pike|_$^../concepts/pike.html|_$^pike pmod|_$^2
 AsciiDoc|_$^../concepts/asciidoc.html|_$^adoc asciidoc asc|_$^3
 Object Pascal|_$^../concepts/object-pascal.html|_$^p pp pas|_$^3
+Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
 Org|_$^../concepts/org.html|_$^org|_$^1
 groff|_$^../concepts/groff.html|_$^[1-9] man 1p 3pm|_$^4
 Stylus|_$^../concepts/stylus.html|_$^styl|_$^1
 Textile|_$^../concepts/textile.html|_$^textile|_$^1
 vdscript|_$^../concepts/vdscript.html|_$^VirtualDub.jobs|_$^1
-NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 BNF|_$^../concepts/bnf.html|_$^bnf|_$^1
-Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
+NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 NewLisp|_$^../concepts/newlisp.html|_$^nl lisp lsp kif|_$^4
 X10|_$^../concepts/x10.html|_$^x10|_$^1
 Logtalk|_$^../concepts/logtalk.html|_$^lgt logtalk|_$^2
@@ -393,8 +393,8 @@ Classroom Object Oriented Language|_$^../concepts/cool.html|_$^cl|_$^1
 BlitzBasic|_$^../concepts/blitzbasic.html|_$^bb decls|_$^2
 Ragel|_$^../concepts/ragel.html|_$^rl|_$^1
 EmberScript|_$^../concepts/emberscript.html|_$^em emberscript|_$^2
-Harbour|_$^../concepts/harbour.html|_$^hb prg ch hbp|_$^4
 Earl Grey|_$^../concepts/earl-grey.html|_$^eg|_$^1
+Harbour|_$^../concepts/harbour.html|_$^hb prg ch hbp|_$^4
 Egison|_$^../concepts/egison.html|_$^egi|_$^1
 Alloy|_$^../concepts/alloy.html|_$^als|_$^1
 Max|_$^../concepts/max.html|_$^maxpat maxhelp maxproj mxt pat|_$^5
@@ -402,24 +402,24 @@ XAML|_$^../concepts/xaml.html|_$^xaml|_$^1
 KiCad Legacy Layout|_$^../concepts/kicad.html|_$^sch lib brd kicad_pcb kicad_wks kicad_mod|_$^6
 Gettext Catalog|_$^../concepts/gettext.html|_$^po pot|_$^2
 Cypher Query Language|_$^../concepts/cypher.html|_$^cyp cypher|_$^2
-Mask|_$^../concepts/maskjs.html|_$^mask|_$^1
 CFML|_$^../concepts/cfml.html|_$^cfm cfc|_$^2
+Mask|_$^../concepts/maskjs.html|_$^mask|_$^1
 Volt|_$^../concepts/volt.html|_$^volt|_$^1
 Ren'Py|_$^../concepts/renpy.html|_$^rpy|_$^1
 Ligo|_$^../concepts/ligo.html|_$^religo|_$^1
 PicoLisp|_$^../concepts/picolisp.html|_$^l|_$^1
 Apex|_$^../concepts/apex.html|_$^cls|_$^1
 CIL|_$^../concepts/cilk.html|_$^cil|_$^1
-Falcon|_$^../concepts/falcon.html|_$^ftd fal fam|_$^3
 MQL5|_$^../concepts/mql.html|_$^mq5 mqh mq4|_$^3
+Falcon|_$^../concepts/falcon.html|_$^ftd fal fam|_$^3
 Pan|_$^../concepts/pan.html|_$^pan tpl|_$^2
 Slash|_$^../concepts/slash.html|_$^sl sla|_$^2
 Clarion|_$^../concepts/clarion.html|_$^clw|_$^1
 FreeBASIC|_$^../concepts/freebasic.html|_$^bi bas|_$^2
 spider|_$^../concepts/spider.html|_$^spider|_$^1
-Croc|_$^../concepts/croc.html|_$^croc|_$^1
 GraphIt|_$^../concepts/graph-it.html|_$^gt|_$^1
 C shell|_$^../concepts/c-shell.html|_$^csh tcsh|_$^2
+Croc|_$^../concepts/croc.html|_$^croc|_$^1
 Netwide Assembler|_$^../concepts/nasm.html|_$^asm ASM|_$^2
 astro|_$^../concepts/astro.html|_$^astro|_$^1
 Tea|_$^../concepts/tea.html|_$^tea|_$^1
@@ -435,8 +435,8 @@ muPad|_$^../concepts/mupad.html|_$^mu|_$^1
 JSX|_$^../concepts/jsx.html|_$^jsx|_$^1
 JSLT|_$^../concepts/jslt.html|_$^jslt|_$^1
 Lux|_$^../concepts/lux.html|_$^lux|_$^1
-Linden Scripting Language|_$^../concepts/lsl.html|_$^lsl lslp|_$^2
 Mako|_$^../concepts/mako.html|_$^mako mao|_$^2
+Linden Scripting Language|_$^../concepts/lsl.html|_$^lsl lslp|_$^2
 buzz|_$^../concepts/buzz.html|_$^buzz|_$^1
 Curry|_$^../concepts/curry.html|_$^curry|_$^1
 Oxygene|_$^../concepts/oxygene.html|_$^oxygene|_$^1
@@ -615,8 +615,8 @@ Groovy Server Pages|_$^../concepts/groovy-server-pages.html|_$^gsp|_$^1
 M4Sugar|_$^../concepts/m4sugar.html|_$^m4|_$^1
 Varnish Configuration Language|_$^../concepts/vcl.html|_$^vcl|_$^1
 Miva|_$^../concepts/miva.html|_$^mv mvc mvt|_$^3
-Glyph Bitmap Distribution Format|_$^../concepts/glyph-bitmap-distribution-format.html|_$^bdf|_$^1
 Darcs Advanced Revision Control System|_$^../concepts/darcs.html|_$^darcspatch dpatch|_$^2
+Glyph Bitmap Distribution Format|_$^../concepts/glyph-bitmap-distribution-format.html|_$^bdf|_$^1
 XC|_$^../concepts/xc.html|_$^xc|_$^1
 Rita|_$^../concepts/rita.html|_$^rita|_$^1
 NL|_$^../concepts/nl.html|_$^nl|_$^1
