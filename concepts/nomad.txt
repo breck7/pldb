@@ -1,0 +1,34 @@
+Nomad
+=====
+
+Nomad is an esoteric programming language created in 2021 by Samuel Kelemen.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Samuel%20Kelemen
+
+#2274 on PLDB
+3 Years Old
+
+git clone https://github.com/asyncengineering/nomad
+
+Nomad is a multi-paradigm language created from 2018 to 2021 with the goal of simplifying modern programming to as few concepts as possible, in order to facilitate complexity in other areas; Specifically, probabilistic programming.
+
+- Nomad appears in categories: esoteric programming language, programming language
+- Nomad is developed on GitHub
+- Nomad is written in Go, HCL, Markdown
+- Nomad on Esolang
+ https://esolangs.org/wiki/nomad
+
+ Direction: type = North | East | South | West
+ Suite: type = Diamond | Spade | Club | Heart
+
+ directionHeading: (direction: #Direction) -&gt; Nat
+ directionHeading= direction ?
+                             | North =&gt; 0
+                             | East  =&gt; 90
+                             | South =&gt; 180
+                             | West  =&gt; 270
+
+sum: (numbers :List[Int]) -&gt; Int =
+     numbers ?
+             | [] =&gt; 0
+             | head :: tail =&gt; head + sum tail

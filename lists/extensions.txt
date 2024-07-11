@@ -55,8 +55,8 @@ Racket|_$^../concepts/racket.html|_$^rkt rktl rktd scrbl plt ss scm|_$^7
 Crystal|_$^../concepts/crystal.html|_$^cr|_$^1
 Fortran|_$^../concepts/fortran.html|_$^f for f90 f95 f03 f08 f15 f77 fpp F03 F90|_$^11
 Zig|_$^../concepts/zig.html|_$^zig|_$^1
-Reason|_$^../concepts/reason.html|_$^re rei|_$^2
 D|_$^../concepts/d.html|_$^d di|_$^2
+Reason|_$^../concepts/reason.html|_$^re rei|_$^2
 Elm|_$^../concepts/elm.html|_$^elm|_$^1
 Scheme|_$^../concepts/scheme.html|_$^scm ss sc sch sld sps sls|_$^7
 Haxe|_$^../concepts/haxe.html|_$^hx hxml hxsl|_$^3
@@ -72,10 +72,10 @@ F#|_$^../concepts/f-sharp.html|_$^fs fsi fsx fsscript|_$^4
 Chapel|_$^../concepts/chapel.html|_$^chpl|_$^1
 LLVM IR|_$^../concepts/llvmir.html|_$^ll|_$^1
 Smalltalk|_$^../concepts/smalltalk.html|_$^st cs|_$^2
+HCL|_$^../concepts/hcl.html|_$^hcl nomad tf tfvars workflow|_$^5
 ClojureScript|_$^../concepts/clojurescript.html|_$^cljs|_$^1
 HAML|_$^../concepts/haml.html|_$^haml haml.deface hamldeface|_$^3
 SVG|_$^../concepts/svg.html|_$^SVG svg|_$^2
-HCL|_$^../concepts/hcl.html|_$^hcl nomad tf tfvars workflow|_$^5
 PureScript|_$^../concepts/purescript.html|_$^purs|_$^1
 VHDL|_$^../concepts/vhdl.html|_$^VHD vhd VHDL vhdl vhf vhi vho vhs vht vhw|_$^10
 Idris|_$^../concepts/idris.html|_$^idr lidr|_$^2
@@ -177,8 +177,8 @@ Koka|_$^../concepts/koka.html|_$^kk kki|_$^2
 Batchfile|_$^../concepts/batch.html|_$^bat cmd|_$^2
 C3|_$^../concepts/c3.html|_$^c3 c3i|_$^2
 PL/SQL|_$^../concepts/pl-sql.html|_$^pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw|_$^16
-Qt|_$^../concepts/qt.html|_$^ui|_$^1
 Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
+Qt|_$^../concepts/qt.html|_$^ui|_$^1
 Bourne shell|_$^../concepts/bourne-shell.html|_$^sh|_$^1
 Opa|_$^../concepts/opa.html|_$^opa|_$^1
 Terra|_$^../concepts/terra.html|_$^t|_$^1
@@ -366,9 +366,9 @@ JScript|_$^../concepts/jscript.html|_$^js jse wsf wsc|_$^4
 basic calculator|_$^../concepts/bc.html|_$^bc|_$^1
 Ch|_$^../concepts/chuck.html|_$^ck|_$^1
 ERB|_$^../concepts/erb.html|_$^ERB erb erbdeface rhtml|_$^4
-Gherkin|_$^../concepts/gherkin.html|_$^feature story|_$^2
 Logos|_$^../concepts/logos.html|_$^x xm xi xmi|_$^4
 Easybuild|_$^../concepts/easybuild.html|_$^eb|_$^1
+Gherkin|_$^../concepts/gherkin.html|_$^feature story|_$^2
 Stan|_$^../concepts/stan.html|_$^stan|_$^1
 Cobra|_$^../concepts/cobra.html|_$^cobra|_$^1
 Limbo|_$^../concepts/limbo.html|_$^b m|_$^2
@@ -573,8 +573,8 @@ SpiderBasic|_$^../concepts/spiderbasic.html|_$^pb|_$^1
 Dasm|_$^../concepts/dasm.html|_$^dasm16 dasm|_$^2
 Recfiles|_$^../concepts/recfiles.html|_$^rec|_$^1
 juniper|_$^../concepts/juniper.html|_$^junos|_$^1
-COLLADA|_$^../concepts/collada.html|_$^dae|_$^1
 Snap!|_$^../concepts/snap.html|_$^ypr ysp xml|_$^3
+COLLADA|_$^../concepts/collada.html|_$^dae|_$^1
 JS++|_$^../concepts/jspp.html|_$^jspp|_$^1
 QOIR|_$^../concepts/qoir.html|_$^qoir|_$^1
 Elpi|_$^../concepts/elpi.html|_$^elpi|_$^1
@@ -600,8 +600,8 @@ zenscript|_$^../concepts/zenscript.html|_$^zs|_$^1
 PIR|_$^../concepts/parrot-internal-representation.html|_$^pir|_$^1
 TXL|_$^../concepts/txl.html|_$^txl|_$^1
 Frank|_$^../concepts/frank-lang.html|_$^fk|_$^1
-Property list|_$^../concepts/plist.html|_$^plist|_$^1
 clarity|_$^../concepts/clarity.html|_$^clar|_$^1
+Property list|_$^../concepts/plist.html|_$^plist|_$^1
 TSV|_$^../concepts/tsv.html|_$^tsv|_$^1
 Fjölnir|_$^../concepts/fjolnir.html|_$^fjo fjv sma ein|_$^4
 TAL|_$^../concepts/tal.html|_$^tal|_$^1
@@ -614,8 +614,8 @@ Omgrofl|_$^../concepts/omgrofl.html|_$^omgrofl|_$^1
 Groovy Server Pages|_$^../concepts/groovy-server-pages.html|_$^gsp|_$^1
 M4Sugar|_$^../concepts/m4sugar.html|_$^m4|_$^1
 Varnish Configuration Language|_$^../concepts/vcl.html|_$^vcl|_$^1
-Glyph Bitmap Distribution Format|_$^../concepts/glyph-bitmap-distribution-format.html|_$^bdf|_$^1
 Miva|_$^../concepts/miva.html|_$^mv mvc mvt|_$^3
+Glyph Bitmap Distribution Format|_$^../concepts/glyph-bitmap-distribution-format.html|_$^bdf|_$^1
 Darcs Advanced Revision Control System|_$^../concepts/darcs.html|_$^darcspatch dpatch|_$^2
 XC|_$^../concepts/xc.html|_$^xc|_$^1
 Rita|_$^../concepts/rita.html|_$^rita|_$^1

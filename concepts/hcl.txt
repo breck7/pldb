@@ -4,7 +4,7 @@ HCL
 HCL, aka HashiCorp configuration language, is an open source data notation created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#75 on PLDB
+#72 on PLDB
 10 Years Old
 180k Repos
 
@@ -24,7 +24,7 @@ HCL (HashiCorp Configuration Language) is a configuration language built by Hash
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using HCL in 3k repos on GitHub
 - Monaco package for syntax highlighting HCL
 - GitHub supports syntax highlighting for HCL
-- 12 languages in PLDB linking to HCL: Ace Editor, cloc, dgraph, edgedb, Haxe Library Manager, HCL, Hot Cocoa Lisp, ko, m3db, Mindsdb, Semantic Patch Language, Wing
+- 13 languages in PLDB linking to HCL: Ace Editor, cloc, dgraph, edgedb, Haxe Library Manager, HCL, Hot Cocoa Lisp, ko, m3db, Mindsdb, Nomad, Semantic Patch Language, Wing
 
 variable &quot;ami&quot; {
    description = &quot;the AMI to use&quot;

@@ -20,9 +20,9 @@ Binary Literals
 
 % 0b[01]+
 
-// 0[bB][01][01_]*
-
 // 0[Bb][01_]+
+
+// 0[bB][01][01_]*
 
 -- b&#39;[01]+&#39;
 
@@ -58,7 +58,7 @@ Binary Literals
 
 ***
 
-Languages *with* Binary Literals include JavaScript, Python, Java, Perl, Swift, Haskell, Elixir, Julia, Prolog, Zig, Reason, D, MySQL, Coq, OCaml, F#, Chapel, VHDL, F*, Verilog, Eiffel, C3, Opa, Futhark, Ceylon, SystemVerilog, NumPy, K, Felix, AspectJ, ooc, Isabelle, Logtalk, BlitzMax, Whiley, Monkey, BlitzBasic, Earl Grey, Croc, Jule, FloScript, MiniD, Savi, Speedie, parasail, Aardvark, nimrod, CBOR data definition language
+Languages *with* Binary Literals include JavaScript, Python, Java, Perl, Swift, Haskell, Elixir, Julia, Prolog, Zig, D, Reason, MySQL, Coq, OCaml, F#, Chapel, VHDL, F*, Verilog, Eiffel, C3, Opa, Futhark, Ceylon, SystemVerilog, NumPy, K, Felix, AspectJ, ooc, Isabelle, Logtalk, BlitzMax, Whiley, Monkey, BlitzBasic, Earl Grey, Croc, Jule, FloScript, MiniD, Savi, Speedie, parasail, Aardvark, nimrod, CBOR data definition language
 
 ***
 
