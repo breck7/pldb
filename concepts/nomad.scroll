@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+
+id nomad
+name Nomad
+appeared 2021
+creators Samuel Kelemen
+tags esolang pl
+description Nomad is a multi-paradigm language created from 2018 to 2021 with the goal of simplifying modern programming to as few concepts as possible, in order to facilitate complexity in other areas; Specifically, probabilistic programming.
+
+writtenIn go hcl markdown
+esolang https://esolangs.org/wiki/nomad
+repoStats
+ firstCommit 2021
+ newestCommit 2023
+ commits 18
+ committers 3
+ files 24
+
+example
+  Direction: type = North | East | South | West
+  Suite: type = Diamond | Spade | Club | Heart
+ 
+  directionHeading: (direction: #Direction) -> Nat
+  directionHeading= direction ?
+                              | North => 0
+                              | East  => 90
+                              | South => 180
+                              | West  => 270
+example
+ sum: (numbers :List[Int]) -> Int =
+      numbers ?
+              | [] => 0
+              | head :: tail => head + sum tail
+
+githubRepo https://github.com/asyncengineering/nomad
