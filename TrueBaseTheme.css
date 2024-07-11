@@ -81,21 +81,6 @@ body {
 .trueBaseThemeFooter a:hover {
   color: black;
 }
-.trueBaseThemeGitHubTopRight {
-  text-align: right;
-  position: absolute;
-  display: block;
-  right: 20px;
-  top: 8px;
-}
-.trueBaseThemeGitHubTopRight svg {
-  width: 26px;
-  fill: rgba(204, 204, 204, 0.5);
-}
-.trueBaseThemeGitHubTopRight svg:hover {
-  fill: #333;
-}
-
 .trueBaseThemeFooter {
   margin-top: 18px;
   color: #828282;
