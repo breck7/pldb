@@ -1,3 +1,32 @@
+.pldbHomepageLink a {
+  color: #000;
+}
+.newPostLink {
+  line-height: 1.3em;
+}
+.singleColumn {
+  max-width: 800px;
+  margin: auto;
+}
+.hasFeature {
+  color: green;
+}
+.doesNotHaveFeature {
+  color: red;
+}
+.keywordsBlock .scrollCodeBlock {
+  white-space: normal;
+}
+#monacoContainer {
+  display: block;
+  height: 10em;
+  border: 1px solid grey;
+  margin-top: 8px;
+}
+li.scrollParagraph {
+  margin: 0;
+}
+
 body {
   font-family: Helvetica;
 }
