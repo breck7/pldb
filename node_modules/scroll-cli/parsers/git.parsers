@@ -1,6 +1,3 @@
-viewSourceBaseUrlParser
- description The base link to be used to generate the "View source" link.
- extends abstractUrlSettingParser
 
 gitParser
  description A link to the web Git UI for this site.
