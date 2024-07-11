@@ -11,7 +11,7 @@ abstractAftertextParser
    link home.com new
    bold brave new
    underline new world
-   strikethrough wor
+   strike wor
  javascript
   get markupInserts() {
    const { originalTextPostLinkify } = this
@@ -328,8 +328,8 @@ classesMarkupParser
    return this.content
   }
 
-strikethroughParser
- cruxFromId
+aftertextStrikeParser
+ crux strike
  extends abstractMarkupParser
  javascript
   tag = "s"

@@ -14,7 +14,7 @@ class SlideShow {
   }
 
   hideAll() {
-    jQuery("div,p,figure").hide()
+    jQuery("div,p,figure,code,pre").hide()
   }
 
   get slides() {
