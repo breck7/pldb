@@ -23,3 +23,20 @@ printViewSourceParser
    a View source
     href ${viewSourceUrl}`)
   }
+
+printViewSourceBadgeParser
+ description Print a "View source" badge in top right.
+ extends abstractAftertextParser
+ cruxFromId
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compile() {
+   const file = this.parent.file
+   const { viewSourceUrl, SVGS } = file
+   return file.compileStumpCode(`div
+   class scrollViewSourceBadge doNotPrint
+   a ${SVGS.git}
+    href ${viewSourceUrl}`)
+  }

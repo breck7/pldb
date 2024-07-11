@@ -165,6 +165,19 @@ gazetteCssParser
    margin .25rem 0
    text-align center
   
+  comment View source badge
+  .scrollViewSourceBadge
+   text-align right
+   position absolute
+   display block
+   right 20px
+   top 8px
+   svg
+    width 24px
+    height 24px
+    fill rgba(204,204,204,0.8)
+   svg:hover
+    fill #333
   comment Subtle "Article Source" link
   .scrollViewSource
    text-align center

@@ -1,21 +1,12 @@
-groups All
-replace BASE_URL .
 title PLDB: a Programming Language DataBase
-
-import header.scroll
-
-keyboardNav
+import rootHeader.scroll
 
 <center>
-
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
  wrap ~ span style="color:black;"
  wrap % span style="color:#828282;"
 
-css .scrollFilePage { text-align: center;}
-
 import searchForm.scroll
-
 import topLangs.scroll
 
 <br><br>

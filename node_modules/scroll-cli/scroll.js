@@ -604,10 +604,8 @@ class ScrollFile {
     const viewSourceUrl = this.get(scrollKeywords.viewSourceUrl)
     if (viewSourceUrl) return viewSourceUrl
 
-    const filename = path.basename(this.filePath)
-
     const viewSourceBaseUrl = this.get(scrollKeywords.viewSourceBaseUrl)
-    return viewSourceBaseUrl ? viewSourceBaseUrl.replace(/\/$/, "") + "/" + filename : filename
+    return (viewSourceBaseUrl ? viewSourceBaseUrl.replace(/\/$/, "") + "/" : "") + this.filename
   }
 
   get groups() {
