@@ -1,24 +1,24 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
-id	4958	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
-name	4958	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
-appeared	4958	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
-creators	1428	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
+id	4959	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
+name	4959	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
+appeared	4959	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
+creators	1429	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
-measurements	4958	100%	How many measurements do we have about this thing?	11	number		1.11	true			
-tags	4958	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
+measurements	4959	100%	How many measurements do we have about this thing?	11	number		1.11	true			
+tags	4959	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
 rijuRepl_website	28	0%	What is the URL of the official homepage for this language project?	https://www.adaic.org/	string		1.21	false			
-website	1709	34%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false			
+website	1710	34%	What is the URL of the official homepage for this language project?	http://www.3mf.io/specification/	string		1.21	false			
 spec	36	0%	What is a URL to the official spec for this language?	https://www.iso-9899.info/wiki/The_Standard	string		1.22	false			
-foundationScore	4958	100%	How many languages are built using this language?	0	number		1.3	true			
+foundationScore	4959	100%	How many languages are built using this language?	0	number		1.3	true			
 blog	62	1%	What is the URL to the official blog for this language?	https://blogs.sap.com/tags/833755570260738661924709785639136/	string		1.33	false			
 releaseNotes	67	1%	What is the URL to the release notes or changelog for this language?	https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html	string		1.33	false			
 download	41	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	639	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
-exampleCount	4958	100%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	4958	100%	How does this concept rank amongst all other concepts?	1272	number		1.5	true			
-lastActivity	4958	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
+exampleCount	4959	100%	How many examples do we have written in this language?	2	number		1.5	true			
+rank	4959	100%	How does this concept rank amongst all other concepts?	1272	number		1.5	true			
+lastActivity	4959	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
 writtenInCount	1130	22%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	4958	100%	What is the combined score of this language across all the categories of rankings?	21311	number		1.6	true			
+pldbScore	4959	100%	What is the combined score of this language across all the categories of rankings?	21316	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
@@ -85,10 +85,10 @@ packageInstallCount	11	0%	How many packages have been downloaded?	770549116	numb
 packageCount	48	0%	How many packages are in the repository?	105	number		1.9	false			
 packageAuthors	4	0%	How many people contribute packages to this cpm?	13699	number		1.9	false			
 hoplId	1807	36%	What is the HOPL id of this language?	4365	number		1.9	true			
-isLanguage	4958	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
-inboundLinksCount	4958	100%	How many other concepts link to this one?	0	number		1.9	true			
+isLanguage	4959	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
+inboundLinksCount	4959	100%	How many other concepts link to this one?	0	number		1.9	true			
 inboundLinks	425	8%	Which other concepts link to this one?	explorer	string		1.9	true			
-isFinished	4958	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
+isFinished	4959	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	17	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
 repoStats_firstCommit	1122	22%	What year the first commit made in this git repo?	2015	number		1.9	false			
 repoStats_newestCommit	1083	21%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
@@ -105,9 +105,9 @@ isPublicDomain	21	0%	Is this public domain?	true	boolean		2	false
 isOpenSource	1498	30%	Is this an open source project?	true	boolean		2.01	true			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		2.1	false			
 writtenIn	1130	22%	What language(s) is the main implementation written in?	elixir markdown yaml	string		2.1	false			
-numberOfUsersEstimate	4958	100%	What is our estimate of number of users of this language?	818	number		2.1	true			
-numberOfJobsEstimate	4958	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
-expandedMeasurements	4958	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
+numberOfUsersEstimate	4959	100%	What is our estimate of number of users of this language?	818	number		2.1	true			
+numberOfJobsEstimate	4959	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
+expandedMeasurements	4959	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
 related	198	3%	What languages are related?	logo	string		2.2	false			
 runsOnVm	9	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false			
 influencedBy	74	1%	What languages influenced this one?	rust	string		2.2	false			
@@ -122,7 +122,7 @@ compilesTo	79	1%	Which language(s) does this language primarily compile to?	beam
 inputLanguages	9	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false			
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
-numberOfCreators	1428	28%	How many creators?	1	number		2.33	true			
+numberOfCreators	1429	28%	How many creators?	1	number		2.33	true			
 isSelfHosted	1130	22%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	639	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	639	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
@@ -366,9 +366,9 @@ letterFirstIdentifiers	2	0%	Must identifiers start with a letter?	true	boolean		
 mergesWhitespace	2	0%	Does this language merge whitespace, so N spaces is treated the same as a single space?	true	boolean		7	false			
 supportsBreakpoints	2	0%	Does this language support breakpoints?	true	boolean		7	false			
 jupyterKernel	73	1%	What is a link to a Jupyter Kernel for this language?	https://github.com/mattpap/IAldor	string	jupyter.org	9	false			
-wikipedia	1891	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
-bookCount	4958	100%	What is the count of booked we have published about this thing?	0	number		10	true			
-paperCount	4958	100%	What is the count of papers we have published about this thing?	0	number		10	true			
+wikipedia	1892	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
+bookCount	4959	100%	What is the count of booked we have published about this thing?	0	number		10	true			
+paperCount	4959	100%	What is the count of papers we have published about this thing?	0	number		10	true			
 hopl	1807	36%	What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?	https://hopl.info/showlanguage.prx?exp=4365	string	hopl.info	11	false			
 pypl	29	0%	What is this language's id on https://pypl.github.io?	Abap	string	pypl.github.io	11	false			
 tiobe	204	4%	What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?	ABAP	string	tiobe.com	11	false			
