@@ -1,0 +1,44 @@
+plang
+=====
+
+plang is a programming language created in 2023 by Ingi Gauti.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ingi%20Gauti
+
+#2087 on PLDB
+1 Years Old
+
+git clone https://github.com/PLangHQ/plang
+
+Plang is a programming language written in natural language.
+
+- plang website
+ https://plang.is/
+- plang appears in categories: programming language
+- plang is developed on GitHub
+- plang is written in C#, Markdown, JSON, XML, Python, CSV, JavaScript, CSS
+
+Start
+- write out &quot;Hello PLang world&quot;
+
+Language features
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Token 
+ Example
+  - if %products.Count% > 0 then
+   - go through %products% call !ProcessProduct
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Token 
+ Example
+  - call !FooBar %name%
+
+hasVariables true
+ - set %name% as "Dwight Shrewd"
