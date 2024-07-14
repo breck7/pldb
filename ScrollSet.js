@@ -103,6 +103,7 @@ name `
   buildParsersFileCommand() {
     const code = `node_modules/scroll-cli/parsers/cellTypes.parsers
 node_modules/scroll-cli/parsers/root.parsers
+node_modules/scroll-cli/parsers/build.parsers
 node_modules/scroll-cli/parsers/comments.parsers
 node_modules/scroll-cli/parsers/blankLine.parsers
 node_modules/scroll-cli/parsers/measures.parsers

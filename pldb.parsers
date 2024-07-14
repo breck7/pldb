@@ -216,6 +216,23 @@ abstractUrlSettingParser
  cruxFromId
 
 
+buildCommandWordCell
+ extends commandWordCell
+ description Give build command words their own color.
+ highlightScope constant
+
+abstractBuildCommandParser
+ extends abstractScrollParser
+ cruxFromId
+ cells buildCommandWordCell
+ catchAllCellType filePathCell
+ inScope slashCommentParser
+ javascript
+  isTopMatter = true
+  compile() {
+   return ""
+  }
+
 commentLineParser
  catchAllCellType commentCell
 
