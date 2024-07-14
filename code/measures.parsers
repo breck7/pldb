@@ -2480,7 +2480,6 @@ tagsParser
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
  catchAllCellType tagCell
- cells anyCell
 
 // ubuntu
 ubuntuPackageParser
