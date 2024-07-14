@@ -5,7 +5,7 @@ captionAftertextParser
 
 abstractCaptionedParser
  extends abstractScrollParser
- cells keywordCell urlCell
+ cells commandWordCell urlCell
  inScope captionAftertextParser slashCommentParser
  cruxFromId
  javascript
@@ -22,7 +22,7 @@ imageParser
  openGraphParser
   description Add this line to make this the open graph image.
   cruxFromId
-  cells keywordCell
+  cells commandWordCell
  javascript
   getFigureContent(compileSettings) {
    const file = this.root.file

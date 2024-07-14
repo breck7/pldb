@@ -1,5 +1,5 @@
 measureNameCell
- extends keywordCell
+ extends commandWordCell
  // A regex for column names for max compatibility with a broad range of data science tools:
  regex [a-zA-Z][a-zA-Z0-9]*
 
@@ -9,12 +9,12 @@ buildMeasuresParser
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
-  cells keywordCell anyCell
+  cells commandWordCell anyCell
 
 printMeasuresParser
  description Print measures statistics in a page into an HTML table.
  cruxFromId
- extends abstractCommentParser
+ extends abstractScrollParser
  javascript
    compile() {
    // A hacky but simple way to do this for now.

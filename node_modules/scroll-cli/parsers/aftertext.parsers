@@ -81,7 +81,7 @@ abstractAftertextParser
   }
 
 abstractAftertextAttributeParser
- cells keywordCell
+ cells commandWordCell
  boolean isAttribute true
  javascript
   get divAttributes() {
@@ -92,7 +92,7 @@ abstractAftertextAttributeParser
   }
 
 aftertextTagParser
- cells keywordCell htmlTagCell
+ cells commandWordCell htmlTagCell
  description Override the HTML tag that the compiled node will use.
  crux tag
  javascript
@@ -101,7 +101,7 @@ aftertextTagParser
   }
 
 abstractAftertextDirectiveParser
- cells keywordCell
+ cells commandWordCell
  catchAllCellType stringCell
  javascript
   isMarkup = true
@@ -167,7 +167,7 @@ abstractMarkupParser
  inScope abstractMarkupParameterParser
 
 abstractMarkupParameterParser
- cells keywordCell
+ cells commandWordCell
  cruxFromId
 
 matchAllParser
@@ -238,7 +238,7 @@ wrapsOnParser
 
 wrapParser
  cruxFromId
- cells keywordCell delimiterCell tagOrUrlCell
+ cells commandWordCell delimiterCell tagOrUrlCell
  catchAllCellType htmlAttributesCell
  extends wrapsOnParser
  description Define a custom wrap, for example "wrap _ em" would support: _italics_.
@@ -294,7 +294,7 @@ abstractHtmlAttributeParser
 classMarkupParser
  description Add a custom class to the parent element instead. If matching text provided, a span with the class will be added around the matching text.
  extends abstractMarkupParser
- cells keywordCell classNameCell
+ cells commandWordCell classNameCell
  crux class
  javascript
   tag = "span"
@@ -338,19 +338,19 @@ aftertextIdParser
  crux id
  description Provide an ID to be output in the generated HTML tag.
  extends abstractAftertextAttributeParser
- cells keywordCell htmlIdCell
+ cells commandWordCell htmlIdCell
  single
 
 aftertextStyleParser
  crux style
  description Provide code for the generated HTML tag's "style" attribute.
  extends abstractAftertextAttributeParser
- cells keywordCell
+ cells commandWordCell
  catchAllCellType cssAnyCell
 
 aftertextHiddenParser
  crux hidden
- cells keywordCell
+ cells commandWordCell
  description Do not compile this node to HTML.
  extends abstractAftertextAttributeParser
  single

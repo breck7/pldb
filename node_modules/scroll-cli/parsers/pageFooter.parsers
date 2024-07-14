@@ -57,8 +57,3 @@ pageFooterParser
      href https://scroll.pub`)
    )
   }
-
-gazetteFooterParser
- extends pageFooterParser
- boolean isDeprecated true
- description DEPRECATED! Use "pageFooter" instead.

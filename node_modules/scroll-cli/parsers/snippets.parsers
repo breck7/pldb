@@ -11,7 +11,7 @@ printSnippetsParser
  // todo: why are we extending AT here and not loops? Is it for class/id etc?
  extends abstractAftertextParser
  cruxFromId
- cells keywordCell
+ cells commandWordCell
  catchAllCellType groupNameWithOptionalFolderCell
  description Prints the snippets of all files in the named group(s).
  example

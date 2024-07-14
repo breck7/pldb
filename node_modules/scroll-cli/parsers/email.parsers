@@ -1,5 +1,5 @@
-emailParser
+siteOwnerEmailParser
  description Email address for the site owner.
- extends abstractFileSettingParser
- cruxFromId
- cells keywordCell emailAddressCell
+ extends abstractTopLevelSingleMetaParser
+ crux email
+ cells metaCommandWordCell emailAddressCell

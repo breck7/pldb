@@ -2,18 +2,18 @@ linkifyParser
  description Use this to disable linkify on the text.
  extends abstractAftertextDirectiveParser
  cruxFromId
- cells keywordCell booleanCell
+ cells commandWordCell booleanCell
 
 linkTargetParser
  extends abstractHtmlAttributeParser
  description If you want to set the target of the link. To "_blank", for example.
  crux target
- cells keywordCell anyCell
+ cells commandWordCell anyCell
 
 linkTitleParser
  description If you want to set the title of the link.
  crux title
- cells keywordCell
+ cells commandWordCell
  catchAllCellType anyCell
  example
   * This report showed the treatment had a big impact.
@@ -26,12 +26,12 @@ programLinkParser
 linkParser
  extends abstractMarkupParser
  description Put the matching text in an <a> tag.
- cells keywordCell urlCell
+ cells commandWordCell urlCell
  inScope linkTitleParser linkTargetParser commentParser
  programParser
   description Anything here will be URI encoded and then appended to the link.
   cruxFromId
-  cells keywordCell
+  cells commandWordCell
   catchAllParser programLinkParser
   javascript
    get encoded() {

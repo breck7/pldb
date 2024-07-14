@@ -4,6 +4,7 @@ javascriptCell
 abstractVariableParser
  extends abstractScrollParser
  catchAllCellType stringCell
+ cells preBuildCommandWordCell
  cruxFromId
  javascript
   isTopMatter = true

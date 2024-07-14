@@ -2,7 +2,7 @@ printRelatedListParser
  description Prints a list of related posts with years.
  extends abstractScrollParser
  cruxFromId
- cells keywordCell
+ cells commandWordCell
  javascript
   compile() {
    const file = this.root.file

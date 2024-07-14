@@ -1,6 +1,7 @@
 catchAllParagraphParser
  description Any top level line that doesn't match a keyword is treated as a paragraph node.
  extends paragraphParser
+ boolean suggestInAutocomplete false
  cells stringCell
  javascript
   get originalText() {

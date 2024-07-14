@@ -1,5 +1,5 @@
 abstractScrollParser
- cells keywordCell
+ cells commandWordCell
  javascript
   compileEmbeddedVersion(compileSettings) {
    return this.compile(compileSettings)
@@ -27,12 +27,20 @@ abstractScrollWithRequirementsParser
     return this.getHtmlRequirements(compileSettings) + this.compileInstance()
   }
 
+metaCommandWordCell
+ extends commandWordCell
+ description Give meta command words their own color.
+ highlightScope constant.numeric
+ // Obviously this is not numeric. But I like the green color for now.
+   We need a better design to replace this "highlightScope" concept
+   https://github.com/breck7/scrollsdk/issues/186
+
 abstractTopLevelSingleMetaParser
  description Use these keywords once per file.
  extends abstractScrollParser
  inScope slashCommentParser
  cruxFromId
- cells keywordCell
+ cells metaCommandWordCell
  javascript
   isTopMatter = true
   isSetterParser = true
@@ -92,20 +100,7 @@ scrollParser
    // You can add code as well.
    print("Hello world")
 
-abstractFileSettingParser
- extends abstractTopLevelSingleMetaParser
- cells keywordCell
- javascript
-  compile() {
-   return ""
-  }
-
 abstractUrlSettingParser
- extends abstractFileSettingParser
- cells keywordCell urlCell
- cruxFromId
-
-abstractSiteStringSettingParser
- extends abstractFileSettingParser
- catchAllCellType stringCell
+ extends abstractTopLevelSingleMetaParser
+ cells metaCommandWordCell urlCell
  cruxFromId

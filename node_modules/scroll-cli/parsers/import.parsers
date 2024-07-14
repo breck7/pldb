@@ -1,6 +1,7 @@
 importParser
  description Import one file into another.
  cruxFromId
+ cells preBuildCommandWordCell
  extends abstractScrollParser
  catchAllCellType filePathCell
  javascript
@@ -13,6 +14,7 @@ importParser
 importOnlyParser
  description Mark a file as not one to build. This line will be not be imported into the importing file.
  cruxFromId
+ cells preBuildCommandWordCell
  extends abstractTopLevelSingleMetaParser
  javascript
   compile() {

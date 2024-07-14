@@ -13,4 +13,4 @@ homeUrlParser
 permalinkParser
  description When compiling, Scroll will save this file to {permalink}
  extends abstractTopLevelSingleMetaParser
- cells keywordCell permalinkCell
+ cells metaCommandWordCell permalinkCell

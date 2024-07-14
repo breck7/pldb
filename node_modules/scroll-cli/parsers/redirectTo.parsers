@@ -1,7 +1,7 @@
 redirectToParser
  description Prints an HTML redirect tag. In the future might also emit nginx config.
  extends abstractScrollParser
- cells keywordCell urlCell
+ cells commandWordCell urlCell
  cruxFromId
  example
   redirectTo https://scroll.pub/releaseNotes.html

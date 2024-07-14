@@ -1,5 +1,5 @@
 listAftertextParser
- extends indentableParagraphParser
+ extends abstractIndentableParagraphParser
  example
   - I had a _new_ thought.
  description A list item.

@@ -742,10 +742,19 @@ class ScrollFile {
   }
 }
 
+const isUserPipingInput = () => {
+  if (process.platform === "win32") return false
+
+  // Check if stdin is explicitly set to a TTY
+  if (process.stdin.isTTY === true) return false
+
+  return fs.fstatSync(0).isFIFO()
+}
+
 class ScrollCli {
   CommandFnDecoratorSuffix = "Command"
 
-  executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
+  executeUsersInstructionsFromShell(args = [], userIsPipingInput = isUserPipingInput()) {
     const command = args[0] // Note: we don't take any parameters on purpose. Simpler UX.
     const commandName = `${command}${this.CommandFnDecoratorSuffix}`
     if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](process.cwd())
@@ -755,6 +764,7 @@ class ScrollCli {
   }
 
   _runCommandOnPipedStdIn(commandName) {
+    this.log(`Running ${commandName} on piped input`)
     let pipedData = ""
     process.stdin.on("readable", function () {
       pipedData += this.read() // todo: what's the lambda way to do this?

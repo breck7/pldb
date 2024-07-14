@@ -5,11 +5,5 @@ blinkParser
  javascript
   compile() {
    return `<span class="scrollBlink">${super.compile()}</span>
-    <script>
-    setInterval(()=>{
-        Array.from(document.getElementsByClassName("scrollBlink")).forEach(el => 
-        el.style.color = el.style.color === "white" ? "black" : "white"
-        )
-    }, 2000)
-    </script>`
+    <script>setInterval(()=>{ Array.from(document.getElementsByClassName("scrollBlink")).forEach(el => el.style.visibility = el.style.visibility === "hidden" ? "visible" : "hidden") }, 2000)</script>`
   }

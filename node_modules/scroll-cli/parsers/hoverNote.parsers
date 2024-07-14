@@ -6,7 +6,7 @@ hoverNoteParser
  cruxFromId
  extends classMarkupParser
  catchAllParser lineOfTextParser
- cells keywordCell
+ cells commandWordCell
  javascript
   get pattern() {
    return this.getWordsFrom(1).join(" ")

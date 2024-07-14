@@ -1,8 +1,9 @@
 loadConceptsParser
+ // todo: clean this up. just add smarter imports with globs?
  description Load all concepts in all scroll files in a folder and remove any "import" statements.
- extends abstractScrollParser
+ extends abstractBuildCommandParser
  cruxFromId
- cells keywordCell filePathCell
+ cells preBuildCommandWordCell filePathCell
  javascript
   build() {
    const { Disk } = require("scrollsdk/products/Disk.node.js")
@@ -20,7 +21,7 @@ loadConceptsParser
 printConceptsParser
  description Print the concepts in a page into an HTML table.
  cruxFromId
- extends abstractCommentParser
+ extends abstractScrollParser
  javascript
    compile() {
    // A hacky but simple way to do this for now.
@@ -36,4 +37,4 @@ buildConceptsParser
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
-  cells keywordCell anyCell
+  cells commandWordCell anyCell

@@ -11,7 +11,7 @@ readingListItemParser
 readingListParser
  extends abstractScrollParser
  description Easily create a reading list with links, titles, and author names.
- cells keywordCell
+ cells commandWordCell
  cruxFromId
  catchAllParser readingListItemParser
  example

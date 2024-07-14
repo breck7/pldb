@@ -52,7 +52,7 @@ stampParser
      hello.js
       console.log("Hello world")
  cruxFromId
- cells keywordCell
+ cells preBuildCommandWordCell
  javascript
   build() {
     const dir = this.root.file.folderPath

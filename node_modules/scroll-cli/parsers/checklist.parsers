@@ -1,5 +1,5 @@
 checklistTodoParser
- extends indentableParagraphParser
+ extends abstractIndentableParagraphParser
  example
   [] Get milk
  description An incomplete checklist item.

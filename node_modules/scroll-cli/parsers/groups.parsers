@@ -5,9 +5,7 @@ groupNameWithOptionalFolderCell
  extends stringCell
 groupsParser
  description Add this file to zero or more groups.
- cruxFromId
  example
-  groups index.html
+  groups All
  extends abstractTopLevelSingleMetaParser
- cells keywordCell
  catchAllCellType groupNameCell

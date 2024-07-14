@@ -10,7 +10,7 @@ ohayoCodeParser
 observableParser
  extends abstractScrollParser
  cruxFromId
- cells keywordCell urlCell
+ cells commandWordCell urlCell
  description Provide a direct link to analyze this data in Observable.
  javascript
   compile() {

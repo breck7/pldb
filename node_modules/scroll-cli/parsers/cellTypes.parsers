@@ -45,8 +45,14 @@ yearCell
  extends integerCell
 
 // Scroll cell types
-keywordCell
+commandWordCell
+ description A word that indicates a certain parser to use.
  highlightScope keyword
+
+preBuildCommandWordCell
+ extends commandWordCell
+ description Give build command words their own color.
+ highlightScope constant.character.escape
 
 commentCell
  highlightScope comment

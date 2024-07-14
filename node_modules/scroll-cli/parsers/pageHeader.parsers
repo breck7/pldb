@@ -56,8 +56,3 @@ pageHeaderParser
    ${gitLink}
    ${nextButton}`)
   }
-
-gazetteHeaderParser
- extends pageHeaderParser
- boolean isDeprecated true
- description DEPRECATED! Use "pageHeader" instead.

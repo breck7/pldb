@@ -2,7 +2,7 @@ abstractPostLoopParser
  description Do something with all posts. Takes an optional list of folder/group names.
  extends abstractScrollParser
  cruxFromId
- cells keywordCell
+ cells commandWordCell
  catchAllCellType groupNameWithOptionalFolderCell
  javascript
   get files() {
@@ -11,7 +11,7 @@ abstractPostLoopParser
 
 loopParser
  extends abstractAftertextParser
- cells keywordCell
+ cells commandWordCell
  description Iterate over files, lines or words, evaluating code and joining the resulting HTML.
  cruxFromId
  inScope abstractItemsProviderParser
@@ -47,13 +47,13 @@ loopParser
   teardown() {}
 
 abstractLoopConfigParser
- cells keywordCell
+ cells commandWordCell
  cruxFromId
  catchAllCellType stringCell
 
 // Extend this if you want to create a new provider
 abstractItemsProviderParser
- cells keywordCell
+ cells commandWordCell
 
 // Some basic providers:
 loopLinesParser
