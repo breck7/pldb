@@ -24,7 +24,6 @@ const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
 // https://github.com/google/material-design-icons/issues/166
 const SVGS = {
   leetSheet: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <rect width="24" height="24" fill="none" stroke="black" stroke-width="1"/>
   <text x="12" y="9" font-family="Monospace" font-size="8" fill="black" text-anchor="middle" dominant-baseline="middle">LEET</text>
   <text x="12" y="17" font-family="Monospace" font-size="6" fill="black" text-anchor="middle" dominant-baseline="middle">SHEET</text>
  </svg>`,
@@ -827,9 +826,9 @@ image ${image}
   get quickLinks() {
     const links = {
       home: this.website,
-      git: this.parsed.mainRepo,
-      terminal: this.repl,
       leetSheet: this.get("leetSheet"),
+      terminal: this.repl,
+      git: this.parsed.mainRepo,
       wikipedia: this.get(`wikipedia`),
       reddit: this.get("subreddit"),
       twitter: this.get("twitter"),
