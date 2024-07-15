@@ -3,10 +3,7 @@ date 2022.07.13
 groups All
 title Does every programming language have line comments?
 
-import postHeader.scroll
-printTitle
-mediumColumns 1
-printAuthor
+import standardPostHeader.scroll
 
 image line-comments.png
 

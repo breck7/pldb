@@ -4,10 +4,7 @@ groups All frontpage
 openGraphImage https://pldb.io/blog/ages.png
 title The Ages of Programming Language Creators
 
-import postHeader.scroll
-printTitle
-mediumColumns 1
-printAuthor
+import standardPostHeader.scroll
 
 Dennis Ritchie created C when he was 31. Douglas Crockford created JSON when he was 46. Ken Iverson created J at age 70. Here is a new dataset with "ageAtCreation" for 185 programming languages.
  dateline
