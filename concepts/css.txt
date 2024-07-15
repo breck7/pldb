@@ -92,76 +92,76 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   /* This is a single-line comment */ p { color: red; }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   @import 'custom.css';
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported X
- Token 
  Example
+ Token

@@ -131,238 +131,237 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // 0[bB][01]+n?
   0b100110100000110011110010010
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
   80766866.0
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // 0[xX][0-9a-fA-F]+n?
   0x4D06792
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // 0[oO]?[0-7]+n?
   0o464063622
+ Token 
 row
  Feature Sets
  FeatureLink ../features/hasSets.html
  Supported ✓
- Token 
  Example
   set = new Set()
   set.add("foo")
+ Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
  Supported ✓
- Token 
  Example
   function o(f, g) {
      return function(x) {
          return f(g(x));
      }
   }
+ Token 
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
  Supported ✓
- Token 
  Example
   const o = {p: 42, q: true};
   const {p, q} = o;
+ Token 
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
  Supported ✓
- Token 
  Example
   function multiply(a, b = 1) {
    return a * b;
   }
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
   let i = 0
   i++
   i--
+ Token 
 row
  Feature Methods
  FeatureLink ../features/hasMethods.html
  Supported ✓
- Token 
  Example
   class Person {
    method1() {}
    method2() {}
   }
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   function helloWorld() {console.log("hi")}
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   let times = 10
   while (times) {times--}
   console.log("done")
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported ✓
- Token 
  Example
   let i = true ? 1 : 0
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   var animal = "dog"
   switch (animal) {
    case "dog": console.log("yay"); break;
    case "cat": console.log("oh"); break;
   }
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token `
  Example
   "hello world"
+ Token `
 row
  Feature Letter-first Identifiers
  FeatureLink ../features/letterFirstIdentifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
   class B {}
   class A extends B {}
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token console.log
  Example
   console.log("Hi")
+ Token console.log
 row
  Feature References
  FeatureLink ../features/hasReferences.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Operators
  FeatureLink ../features/hasOperators.html
  Supported ✓
- Token 
  Example
   1 + 1
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   const lines = `one
   two`
+ Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
  Supported ✓
- Token 
  Example
   (() => console.log("hello world"))()
+ Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
  Supported ✓
- Token 
  Example
   const six = 2 + 2 + 2
+ Token 
 row
  Feature Implicit Type Casting
  FeatureLink ../features/hasImplicitTypeConversions.html
  Supported ✓
- Token 
  Example
   console.log("hello " + 2)
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
   var name = "John"
+ Token =
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   "use strict";
   "use asm";
+ Token 
 row
  Feature Generators
  FeatureLink ../features/hasGenerators.html
  Supported ✓
- Token 
  Example
   function* fibonacci(limit) {
       let [prev, curr] = [0, 1];
@@ -381,48 +380,48 @@ row
       console.log(n);
       if (n > 10000) break;
   }
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature First-Class Functions
  FeatureLink ../features/hasFirstClassFunctions.html
  Supported ✓
- Token 
  Example
   [2.0,1.1].map(Math.round)
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
   try {
    undefinedFn()
   } catch (err) {
    console.log(err)
   }
+ Token 
 row
  Feature hasDynamicTyping
  FeatureLink ../features/hasDynamicTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   const one = 1
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
   class Person {
    constructor(name) {
@@ -430,54 +429,54 @@ row
    }
   }
   new Person("Jane")
+ Token 
 row
  Feature Labels
  FeatureLink ../features/hasLabels.html
  Supported ✓
- Token 
  Example
   main:
   console.log("pldb")
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   if (true)
    console.log("hi!")
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
   class Person {}
+ Token 
 row
  Feature Method Chaining
  FeatureLink ../features/hasMethodChaining.html
  Supported ✓
- Token 
  Example
   "hello world".toString().substr(0, 1).length
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Magic Getters and Setters
  FeatureLink ../features/hasMagicGettersAndSetters.html
  Supported ✓
- Token 
  Example
   // Can be implemented in ES6 using proxies:
   "use strict";
@@ -498,20 +497,20 @@ row
   });
   console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
   console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
+ Token 
 row
  Feature Dynamic Properties
  FeatureLink ../features/hasDynamicProperties.html
  Supported ✓
- Token 
  Example
   class Person {}
   const person = new Person()
   person.age = 50
+ Token 
 row
  Feature Source Maps
  FeatureLink ../features/hasSourceMaps.html
  Supported ✓
- Token 
  Example
   {
    version: 3,
@@ -521,216 +520,217 @@ row
    sourceRoot: 'http://example.com/www/js/',
    mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
   };
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   var x = 5 & 1;
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported ✓
- Token 
  Example
   "a" + "b"; 1 + 2
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Merges Whitespace
  FeatureLink ../features/mergesWhitespace.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   const list = [1,2,3]
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   80766866
+ Token 
 row
  Feature Breakpoints
  FeatureLink ../features/supportsBreakpoints.html
  Supported ✓
- Token 
  Example
   if (false)
     debugger
+ Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
  Supported ✓
- Token 
  Example
   const addNumbers = (num1, num2) => num1 + num2
   const add5 = num => addNumbers(10, num)
+ Token 
 row
  Feature Map Functions
  FeatureLink ../features/hasMapFunctions.html
  Supported ✓
- Token 
  Example
   [1,2.1].map(Math.round)
+ Token 
 row
  Feature Binary Operators
  FeatureLink ../features/hasBinaryOperators.html
  Supported ✓
- Token 
  Example
   1 + 1
+ Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported ✓
- Token 
  Example
   async doSomething => await somethingElse()
+ Token 
 row
  Feature Expressions
  FeatureLink ../features/hasExpressions.html
  Supported ✓
- Token 
  Example
   1 + 1
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported ✓
- Token 
  Example
   console.log("Hello World".match(/\w/))
+ Token 
 row
  Feature Statements
  FeatureLink ../features/hasStatements.html
  Supported ✓
- Token 
  Example
   let x = 3;
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import { helloWorld } from "./helloWorld.js";
+ Token 
 row
  Feature hasExports
  FeatureLink ../features/hasExports.html
  Supported ✓
- Token 
  Example
   export function myFunction() {
   }
+ Token 
 row
  Feature hasSymbols
  FeatureLink ../features/hasSymbols.html
  Supported ✓
- Token 
  Example
   // A symbol is a unique and immutable primitive value, often used as a unique key for object properties
   pldb = Symbol()
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Processor Registers
  FeatureLink ../features/hasProcessorRegisters.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Dispatch
  FeatureLink ../features/hasMultipleDispatch.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Abstract Types
  FeatureLink ../features/hasAbstractTypes.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature S-Expressions
  FeatureLink ../features/hasSExpressions.html
  Supported X
- Token 
  Example
+ Token

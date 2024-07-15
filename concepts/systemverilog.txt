@@ -63,104 +63,104 @@ row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

@@ -36,52 +36,52 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   ALPHA = BETA = GAMMA = 2DELTA + 1$
+ Token 
 row
  Feature Expressions
  FeatureLink ../features/hasExpressions.html
  Supported ✓
- Token 
  Example
   ALPHA + BETA / GAMMA
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
+ Token

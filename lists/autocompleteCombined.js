@@ -1407,14 +1407,14 @@ var autocompleteJs = [
     "url": "/concepts/luna.html"
   },
   {
-    "label": "GNU Octave",
-    "id": "octave",
-    "url": "/concepts/octave.html"
-  },
-  {
     "label": "QML",
     "id": "qml",
     "url": "/concepts/qml.html"
+  },
+  {
+    "label": "GNU Octave",
+    "id": "octave",
+    "url": "/concepts/octave.html"
   },
   {
     "label": "Koka",
@@ -1747,6 +1747,11 @@ var autocompleteJs = [
     "url": "/concepts/hjson.html"
   },
   {
+    "label": "DTrace",
+    "id": "dtrace",
+    "url": "/concepts/dtrace.html"
+  },
+  {
     "label": "Applescript",
     "id": "applescript",
     "url": "/concepts/applescript.html"
@@ -1755,11 +1760,6 @@ var autocompleteJs = [
     "label": "Microsoft Azure",
     "id": "azure",
     "url": "/concepts/azure.html"
-  },
-  {
-    "label": "DTrace",
-    "id": "dtrace",
-    "url": "/concepts/dtrace.html"
   },
   {
     "label": "Expect",
@@ -1942,14 +1942,14 @@ var autocompleteJs = [
     "url": "/concepts/scikit-learn.html"
   },
   {
-    "label": "Scilab",
-    "id": "scilab",
-    "url": "/concepts/scilab.html"
-  },
-  {
     "label": "JAI",
     "id": "jai",
     "url": "/concepts/jai.html"
+  },
+  {
+    "label": "Scilab",
+    "id": "scilab",
+    "url": "/concepts/scilab.html"
   },
   {
     "label": "Keras",
@@ -2432,14 +2432,14 @@ var autocompleteJs = [
     "url": "/concepts/chaiscript.html"
   },
   {
-    "label": "skulpt",
-    "id": "skulpt",
-    "url": "/concepts/skulpt.html"
-  },
-  {
     "label": "Flow9",
     "id": "flow9",
     "url": "/concepts/flow9.html"
+  },
+  {
+    "label": "skulpt",
+    "id": "skulpt",
+    "url": "/concepts/skulpt.html"
   },
   {
     "label": "Rholang",
@@ -2692,14 +2692,14 @@ var autocompleteJs = [
     "url": "/concepts/isabelle.html"
   },
   {
-    "label": "NSIS",
-    "id": "nsis",
-    "url": "/concepts/nsis.html"
-  },
-  {
     "label": "Arc",
     "id": "arc",
     "url": "/concepts/arc.html"
+  },
+  {
+    "label": "NSIS",
+    "id": "nsis",
+    "url": "/concepts/nsis.html"
   },
   {
     "label": "Emacs",
@@ -3297,14 +3297,14 @@ var autocompleteJs = [
     "url": "/concepts/markwhen.html"
   },
   {
-    "label": "Alpaca",
-    "id": "alpaca",
-    "url": "/concepts/alpaca.html"
-  },
-  {
     "label": "Limbo",
     "id": "limbo",
     "url": "/concepts/limbo.html"
+  },
+  {
+    "label": "Alpaca",
+    "id": "alpaca",
+    "url": "/concepts/alpaca.html"
   },
   {
     "label": "Hackett",

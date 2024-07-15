@@ -97,64 +97,63 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
  Supported ✓
- Token 
  Example
   (3...6)
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token puts
  Example
   puts "Hi"
+ Token puts
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported ✓
- Token 
  Example
   module A
      def a1
@@ -178,42 +177,42 @@ row
   samp.a1
   samp.a2
   samp.b1
+ Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
  Supported ✓
- Token 
  Example
   (0...42).each do |n|
     puts n
   end
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   load 'filename.rb'
   require 'filename'
   require 'trig.rb'
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   coding: UTF-8
+ Token 
 row
  Feature Here Document
  FeatureLink ../features/hasHereDocs.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Generators
  FeatureLink ../features/hasGenerators.html
  Supported ✓
- Token 
  Example
   # Generator from an Enumerator object
   chars = Enumerator.new(['A', 'B', 'C', 'Z'])
@@ -227,33 +226,33 @@ row
   end
   
   100.times { puts count.next }
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token =begin =end
  Example
   =begin
   A comment.
   =end
+ Token =begin =end
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
   # A tiny Person class in Ruby:
   class Person
@@ -272,21 +271,21 @@ row
   # Change the age of the person:
   person.age = 35
   puts person.age
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
   Name = "John"
   # Not a constant
   name = "John"
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
   def hello
    puts "Hello, World!"
@@ -298,91 +297,92 @@ row
      end
    end
   hello
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   pldb = 80766866
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   pldb = 80766866
+ Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported ✓
- Token 
  Example
   puts "Hello World".match(/\w/)
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Dispose Blocks Pattern
  FeatureLink ../features/hasDisposeBlocks.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Dependent types
  FeatureLink ../features/hasDependentTypes.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token

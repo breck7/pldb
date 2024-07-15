@@ -43,41 +43,41 @@ row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
  Supported ✓
- Token 
  Example
   :: this would create an endless loop
   :myLabel
   goto myLabel
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   REM A comment
   :: Another type of comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token REM
  Example
   REM A comment
+ Token REM
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token echo
  Example
+ Token echo
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
+ Token

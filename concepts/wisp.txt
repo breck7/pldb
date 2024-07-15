@@ -95,32 +95,32 @@ row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   ; A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token

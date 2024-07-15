@@ -85,123 +85,122 @@ row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // 0b[01_]+
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // [0-9][0-9_]*
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // 0x[0-9a-fA-F_]+
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // 0o[0-7_]+
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
+ Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
  Supported ✓
- Token 
  Example
   protocol MyProtocol {
   init(parameter: Int)
@@ -215,58 +214,59 @@ row
     // implementation goes here
     }
   }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import UIKit
   import UIKit.UITableViewController
   let tvc = UITableViewController()
   let vc = UIViewController()
   let label = UILabel()
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   let label = UILabel()
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token

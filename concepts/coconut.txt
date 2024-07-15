@@ -36,20 +36,19 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
+ Token print
 row
  Feature Algebraic Data Type
  FeatureLink ../features/hasAlgebraicTypes.html
  Supported ✓
- Token 
  Example
   data Empty()
   data Leaf(n)
@@ -60,39 +59,40 @@ row
   addpattern def size(Leaf(n)) = 1
   
   addpattern def size(Node(l, r)) = size(l) + size(r)
+ Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
  Supported ✓
- Token 
  Example
   (f..g..h)(x, y, z)
+ Token 
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
  Supported ✓
- Token 
  Example
   {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
+ Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
  Supported ✓
- Token 
  Example
   x -> x ** 2
+ Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
  Supported ✓
- Token 
  Example
   5 `mod` 3 == 2
+ Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
  Supported ✓
- Token 
  Example
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)
+ Token

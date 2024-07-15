@@ -99,28 +99,27 @@ row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   pi  = 3.14159
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   myList = {1, 2, 3}
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   & | ~ > ~
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   -- 0[xX][0-9a-fA-F]+ (integer)
   -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? (float)
@@ -128,26 +127,26 @@ row
   0x0.1D
   0xA23p-4
   0X1.921FB54442D18P+1
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   80766866
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   -- [0-9]*\.[0-9]+([eE][+-]?[0-9]+)? -- (decimal float)
   -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? -- (hex float)
+ Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
   1E2
   .12345E+6
@@ -158,114 +157,115 @@ row
   0x1.Fp+0
   0x1fffp-16
   0x1p-2
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   if true then
       print("true")
   end
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   function myFunction()
       print("hello")
   end
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   while true do
       print("hello")
   end
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
   true
   false
+ Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
   print("hello world")
+ Token print
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
  Supported ✓
- Token 
  Example
   myMap = {
       key = "value",
       [35] = 35,
   }
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token --
  Example
   -- A comment
+ Token --
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token --[[ --]]
  Example
   --[[
   A comment.
   --]]
+ Token --[[ --]]
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported X
- Token 
  Example
+ Token

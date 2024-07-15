@@ -41,27 +41,26 @@ row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
   printline ["a", "b", "c"][0] // prints "a"
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
   "error 1 here"
+ Token print
 row
  Feature Dispose Blocks Pattern
  FeatureLink ../features/hasDisposeBlocks.html
  Supported ✓
- Token 
  Example
   using SomeObject
    for 10
@@ -69,18 +68,18 @@ row
     if (random[]>0.5)
      return // someobject.SyntaxUsingComplete called here
   // someobject.SyntaxUsingComplete called here too
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
   class Person
    |int| age
@@ -91,26 +90,26 @@ row
    || p = person()
    p.age = -1     // calls a function rather than the property
    || n = p.age   // reads the property directly!
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
   class Person (Animal)
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
   class Person
    |string| name
+ Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
  Supported ✓
- Token 
  Example
   || msg = message()
   while
@@ -120,18 +119,18 @@ row
     "empty"
     return
    msg = nil
+ Token 
 row
  Feature Unary Operators
  FeatureLink ../features/hasUnaryOperators.html
  Supported ✓
- Token 
  Example
   || x = !0
+ Token 
 row
  Feature hasUserDefinedOperators
  FeatureLink ../features/hasUserDefinedOperators.html
  Supported ✓
- Token 
  Example
   class myclass
    |int| Num
@@ -139,44 +138,41 @@ row
     return myclass(.num + x)
    render
     fs ✓
- Token 
  Example
   str = "a" + "b"
   array ✓
- Token 
  Example
   function volume (|float| a, |float|)
    return a*a*a
   function volume (|float| r, |float| h, |float|)
    // volume of a cylinder
    return math.pi*r*r*h
+ Token 
 row
  Feature Single-Type Arrays
  FeatureLink ../features/hasSingleTypeArrays.html
  Supported ✓
- Token 
  Example
   |array of string| s
   s ✓
- Token 
  Example
   || items = [5,6,7,8]
   for i in items
    printline i
+ Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
  Supported ✓
- Token 
  Example
   || items = [5,6,7,8]
   for i in items
    printline i
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
   class Foobar
    |float| x
@@ -188,119 +184,118 @@ row
   || a = foobar()
   || b = foobar(3)
   || c = foobar(5, M_PI/4)
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   || num = 0b010101
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   || num = 0.0
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   || num = 0xBEEF
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   function Example (|string| data)
    file ✓
- Token 
  Example
   myList = [1, 2, 3, 4, 5]
+ Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported ✓
- Token 
  Example
   || time = 1day - 10s
   || size = 10.2MB
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   pldb = 80766866
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   || i = 0
   || p = &i
   *p = 1
   if (i == 1)
    "success"
+ Token 
 row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
  Supported ✓
- Token 
  Example
   The~entire~Language is (%written in:@Jeebox)
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   "hello
   you
   beauty"
+ Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
  Supported ✓
- Token 
  Example
   seven = 3 + 4
+ Token 
 row
  Feature Breakpoints
  FeatureLink ../features/supportsBreakpoints.html
  Supported ✓
- Token 
  Example
   debugger
+ Token 
 row
  Feature Source Maps
  FeatureLink ../features/hasSourceMaps.html
  Supported ✓
- Token 
  Example
   linkage
    bannedclasses (file, process, shellstream, archive)
    // using these classes... even indirectly, will create an error
    // the error message will show the entire call-chain that reached these classes
+ Token 
 row
  Feature Virtual function
  FeatureLink ../features/hasVirtualFunctions.html
  Supported ✓
- Token 
  Example
   class abc
    virtual DoSomething (|string| name)
    behaviour DoSomething
     printline "hello: $name"
+ Token 
 row
  Feature Static Methods
  FeatureLink ../features/hasStaticMethods.html
  Supported ✓
- Token 
  Example
   class abc
    module
@@ -308,259 +303,254 @@ row
      "abc"
   main
    abc.print
+ Token 
 row
  Feature Type Parameters
  FeatureLink ../features/hasTypeParameters.html
  Supported ✓
- Token 
  Example
   function ABC (|string| name)
+ Token 
 row
  Feature hasTimestamps
  FeatureLink ../features/hasTimestamps.html
  Supported ✓
- Token 
  Example
   printline __time_id__
+ Token 
 row
  Feature hasMethodOverloading
  FeatureLink ../features/hasMethodOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasVoidFunctions
  FeatureLink ../features/hasVoidFunctions.html
  Supported ✓
- Token 
  Example
   || x = 123
   function abc
    x = 10
+ Token 
 row
  Feature hasGlobalScope
  FeatureLink ../features/hasGlobalScope.html
  Supported ✓
- Token 
  Example
   || x = 123
   function abc
    x = 10
+ Token 
 row
  Feature hasFnArguments
  FeatureLink ../features/hasFnArguments.html
  Supported ✓
- Token 
  Example
   function ABC (|string| name)
+ Token 
 row
  Feature canReadCommandLineArgs
  FeatureLink ../features/canReadCommandLineArgs.html
  Supported ✓
- Token 
  Example
   printline app[0]
+ Token 
 row
  Feature hasDynamicSizedArrays
  FeatureLink ../features/hasDynamicSizedArrays.html
  Supported ✓
- Token 
  Example
   || arr = []
   arr ✓
- Token 
  Example
   main
    "hello world"
+ Token 
 row
  Feature hasSelfOrThisWord
  FeatureLink ../features/hasSelfOrThisWord.html
  Supported ✓
- Token 
  Example
   self.Remove
   .remove
+ Token 
 row
  Feature hasStatementTerminatorCharacter
  FeatureLink ../features/hasStatementTerminatorCharacter.html
  Supported ✓
- Token 
  Example
   if x: x++, x*=2, return
   
+ Token 
 row
  Feature hasMemberVariables
  FeatureLink ../features/hasMemberVariables.html
  Supported ✓
- Token 
  Example
   class abc
    |int| def
+ Token 
 row
  Feature hasStringConcatOperator
  FeatureLink ../features/hasStringConcatOperator.html
  Supported ✓
- Token 
  Example
   || ab = "a" + "b"
+ Token 
 row
  Feature Characters
  FeatureLink ../features/hasCharacters.html
  Supported ✓
- Token 
  Example
   || char = 'b'
   if b > 32
    "good"
+ Token 
 row
  Feature hasEscapeCharacters
  FeatureLink ../features/hasEscapeCharacters.html
  Supported ✓
- Token 
  Example
   || str = "\01\02\03"
+ Token 
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
  Supported ✓
- Token 
  Example
   while i in 10
     "hello: $i"
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   while true
     "hello"
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
   name = "John"
+ Token =
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import Proj
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /*
   multiline
   comments
   */
+ Token /* */
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // comment
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
   || msg = message()
   DoSomethingWith(msg)
   // msg now gets disposed
   
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   constants
    Opened = 1
    Closed = 2
+ Token 
 row
  Feature hasBreak
  FeatureLink ../features/hasBreak.html
  Supported ✓
- Token 
  Example
   for i in 10
    if i > 3: exit
    printline i // 1,2,3
+ Token 
 row
  Feature hasContinue
  FeatureLink ../features/hasContinue.html
  Supported ✓
- Token 
  Example
   for i in 10
    if i ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Symbol Tables
  FeatureLink ../features/hasSymbolTables.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Shebang
  FeatureLink ../features/canDoShebang.html
  Supported ✓
- Token 
  Example
   #!/usr/local/bin/spd
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   x ✓
- Token 
  Example
   || chld = app.fork("ipc_identifier_123", app.rawargs)
   chld ✓
- Token 
  Example
   while
    printline (1,0)(random[]>0.5)
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
   if "abc".LeNgTh == 3
     "cool length"
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
   || Same = "x" == "X" // same = false
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   "helloworld.txt" ✓
- Token 
  Example
   flags
    A
@@ -574,109 +564,109 @@ row
    Z
    W
   // X=0, Y=1, Z=3, W=4
+ Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
  Supported ✓
- Token 
  Example
   struct Fuel
    |int| A
    |byte| B
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   || x = message()
   || y = x|object| // lose type info
   || z = y|message| // regain it
+ Token 
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
  Supported ✓
- Token 
  Example
   module App
    function Path (|string|)
     // return the app's path here
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
   || x = "str"
   || i = x.find("t")
+ Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
   || x = 1
   x++
   x--
+ Token 
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
  Supported ✓
- Token 
  Example
   || x = "Hello"
   x = 1 // fails to compile... because x is a string
+ Token 
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
   || x = "Hello"
   || y = FunctionThatReturnsAString() // is now a string
   x = 1 // fails to compile
   y = 2 // fails to compile
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Magic Getters and Setters
  FeatureLink ../features/hasMagicGettersAndSetters.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
  Supported ✓
- Token 
  Example
   function Find (|string| pattern, |int| pos=0, |int|)
+ Token 
 row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
  Supported ✓
- Token 
  Example
   class é©©
    constructor
     printline .class.name // "é©©"
+ Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
  Supported ✓
- Token 
  Example
   function Find (|string| pattern, |int| pos=0, |int|)
    description "Returns the position of pattern in self, starting from 'pos'. If not found, we return -1."
+ Token 
 row
  Feature Assert Statements
  FeatureLink ../features/hasAssertStatements.html
  Supported ✓
- Token 
  Example
   class Person
    |int| age
@@ -690,120 +680,121 @@ row
    p.age = -10
    if !stderr.ok
     "Oof we got some errors"
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported ✓
- Token 
  Example
   |object| x = somefunction()
   || y = x.render // returns a string by calling the virtual func "render"
+ Token 
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
  Supported ✓
- Token 
  Example
   || x = ["a":"Apple", "b":"Bird", "c":"Cat"]
   printline x["b"] // Bird
+ Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
  Supported ✓
- Token 
  Example
   
   main
   "hello world ${app.args[0]}"
   
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Templates
  FeatureLink ../features/hasTemplates.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
  Supported X
- Token 
  Example
   || return = 123
   || if = 456
   if if == 456
    return return
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasTryCatch
  FeatureLink ../features/hasTryCatch.html
  Supported X
- Token 
  Example
   || data = "somefile".file.readall
   if !data
    stderr.printerrors // prints any file-system error that occurred during .readall
+ Token 
 row
  Feature Dynamic Properties
  FeatureLink ../features/hasDynamicProperties.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Dispatch
  FeatureLink ../features/hasMultipleDispatch.html
  Supported X
- Token 
  Example
+ Token

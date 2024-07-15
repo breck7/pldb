@@ -100,84 +100,83 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token TRUE FALSE
  Example
+ Token TRUE FALSE
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
+ Token =
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
+ Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
  Supported ✓
- Token 
  Example
   # R has pipes via a library like dplyr
   starwars %>% filter(species == "Droid")
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Lazy Evaluation
  FeatureLink ../features/hasLazyEvaluation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   source("filename.r")
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   ! x
   x & y
@@ -185,34 +184,35 @@ row
   x | y
   x || y
   xor(x, y)
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported X
- Token 
  Example
+ Token

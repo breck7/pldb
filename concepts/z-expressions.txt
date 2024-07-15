@@ -27,31 +27,30 @@ row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token --
  Example
   -- A comment
+ Token --
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
   defun message msg
         do print : Here's a message
            print msg
            print : End of message.
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   -- A simple function, that is used inside the macro below.
   defun ap x y
@@ -62,3 +61,4 @@ row
   -- Example with print:
   print : Hello, World!
           What's going on in here?
+ Token

@@ -72,7 +72,6 @@ row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   switch(expression)
   {
@@ -84,11 +83,11 @@ row
      default:
         foo();
   }
+ Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
  Supported ✓
- Token 
  Example
   struct Test
   {
@@ -96,92 +95,92 @@ row
      float y;
      String z;
   }
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   String s = "hello";
   String t = `I say "hello"`;
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported ✓
- Token 
  Example
   int foo = x ? 1 : 0;
+ Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   while (int x = foo(); x > 0)
   {
     sum += x;
   }
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   a = b;
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
  Supported ✓
- Token 
  Example
   fn void foo_typed(int x, int... arg) { ... }
   fn void foo_untyped(int x, ...arg)
   ...
   foo_typed(1, 2, 3);
   foo_untyped(1, "hello", 1.2);
+ Token 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
  Supported ✓
- Token 
  Example
   module my_module::submodule;
   ...
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
   fn int IntList.get(IntList* this, int idx) @operator([])
   {
@@ -190,65 +189,65 @@ row
   ...
   IntList x = ...
   foo(x[1]);
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   String s = `this
    string is multiline`;
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /*
     Multiline comment
   */
+ Token /* */
 row
  Feature Methods
  FeatureLink ../features/hasMethods.html
  Supported ✓
- Token 
  Example
   fn int Foo.get_value(Foo* this)
   {
      return this.value;
   }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import std::io;
+ Token 
 row
  Feature hasForEachLoops
  FeatureLink ../features/hasForEachLoops.html
  Supported ✓
- Token 
  Example
   foreach (x : list)
   {
     foo(x);
   }
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   macro square(x)
   {
     return x * x;
   }
+ Token 
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
  Supported ✓
- Token 
  Example
   union Foo
   {
@@ -259,23 +258,23 @@ row
       char[2] z;
     }
   }
+ Token 
 row
  Feature Single-Type Arrays
  FeatureLink ../features/hasSingleTypeArrays.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Unary Operators
  FeatureLink ../features/hasUnaryOperators.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported ✓
- Token 
  Example
   enum TestEnum : int
   {
@@ -283,106 +282,106 @@ row
      BAR,
      BAZ
   }
+ Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
  Supported ✓
- Token 
  Example
   /**
    * @param [in] foo "The foo value"
    * @return "the toal foo count"
    **/
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   const FOO = 123;
   const void* BAR = null;
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
  Supported ✓
- Token 
  Example
   fn void test(int x = 10) { ... }
+ Token 
 row
  Feature Assert Statements
  FeatureLink ../features/hasAssertStatements.html
  Supported ✓
- Token 
  Example
   assert(a > 0, "Expected a positive number");
   $assert(Foo.sizeof == 8, "Foo sizecheck at compile time failed");
+ Token 
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
   i++; --j;
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   int x = 314159;
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   import std::io;
   ...
   io::printf("%d", i);
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   double d = 3.3;
   int x = (int)d;
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   0b110011
+ Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Lazy Evaluation
  FeatureLink ../features/hasLazyEvaluation.html
  Supported ✓
- Token 
  Example
   fn void print(String s)
   {
@@ -395,282 +394,282 @@ row
   // Only "Said: Hello" is printed:
   @foo(false, print("Bye"));
   @foo(true, print("Hello"));
+ Token 
 row
  Feature Labels
  FeatureLink ../features/hasLabels.html
  Supported ✓
- Token 
  Example
   while FOO: (x > 0)
   {
     for (int i = 0; i  i) break FOO;
     }
   }
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Implicit Type Casting
  FeatureLink ../features/hasImplicitTypeConversions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasIfElses
  FeatureLink ../features/hasIfElses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasIfs
  FeatureLink ../features/hasIfs.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Expressions
  FeatureLink ../features/hasExpressions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasEscapeCharacters
  FeatureLink ../features/hasEscapeCharacters.html
  Supported ✓
- Token 
  Example
   "\e\n\r"
+ Token 
 row
  Feature hasContinue
  FeatureLink ../features/hasContinue.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasBreak
  FeatureLink ../features/hasBreak.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasBoundedCheckedArrays
  FeatureLink ../features/hasBoundedCheckedArrays.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasArraySlicingSyntax
  FeatureLink ../features/hasArraySlicingSyntax.html
  Supported ✓
- Token 
  Example
   int[] slice1 = array[0..5]; // start..end
   int[] slice2 = array[0:6]; // start:length
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   0o177
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   int i = b ✓
- Token true false
  Example
+ Token true false
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
   /* Another comment */
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasUserDefinedOperators
  FeatureLink ../features/hasUserDefinedOperators.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Abstract Types
  FeatureLink ../features/hasAbstractTypes.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature S-Expressions
  FeatureLink ../features/hasSExpressions.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Message Passing
  FeatureLink ../features/hasMessagePassing.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Magic Getters and Setters
  FeatureLink ../features/hasMagicGettersAndSetters.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Here Document
  FeatureLink ../features/hasHereDocs.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Dynamic Properties
  FeatureLink ../features/hasDynamicProperties.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasBuiltInRegex
  FeatureLink ../features/hasBuiltInRegex.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported X
- Token 
  Example
+ Token

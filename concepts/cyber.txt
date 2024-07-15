@@ -44,69 +44,68 @@ row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   while fiber.status() != #done:
     res = coresume fiber
     count += 1
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   count = 0
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token 
  Example
   -- Counts iterations.
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   count = 0
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token 
  Example
   print '{res} {count}'
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   func fib(n int) int:
      coyield
      if n ✓
- Token 
  Example
+ Token 
 row
  Feature hasForEachLoops
  FeatureLink ../features/hasForEachLoops.html
  Supported ✓
- Token 
  Example
   for worlds each w:
     print 'Hello, {w}!'
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   'World'
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import m 'math'
+ Token

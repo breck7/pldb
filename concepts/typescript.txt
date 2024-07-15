@@ -90,99 +90,98 @@ row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Algebraic Data Type
  FeatureLink ../features/hasAlgebraicTypes.html
  Supported ✓
- Token 
  Example
   declare type numOrString = string | number
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
  Supported ✓
- Token 
  Example
   declare type numOrString = string | number
+ Token 
 row
  Feature Single-Type Arrays
  FeatureLink ../features/hasSingleTypeArrays.html
  Supported ✓
- Token 
  Example
   const scores: int[]
+ Token 
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Type Parameters
  FeatureLink ../features/hasTypeParameters.html
  Supported ✓
- Token 
  Example
   function identity(arg: T): T {
      return arg;
   }
+ Token 
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
   class B {}
   class A extends B {}
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token console.log
  Example
   console.log("Hi")
+ Token console.log
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   // Typescript even supports splitting namespaces across multiple files:
   // Validation.ts
@@ -201,81 +200,81 @@ row
           }
       }
   }
+ Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported ✓
- Token 
  Example
   // https://www.typescriptlang.org/docs/handbook/mixins.html
   class SmartObject implements Disposable, Activatable {
   }
   // Note: still need to do some runtime ops to make that work.
+ Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
  Supported ✓
- Token 
  Example
   // https://www.typescriptlang.org/docs/handbook/interfaces.html
   interface SquareConfig {
      color?: string;
      width?: number;
   }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import { ZipCodeValidator } from "./ZipCodeValidator";
   /// 
   /// 
   import moo = module('moo');
   /// 
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   something;
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
   class Person {}
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
   const result = true
+ Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
  Supported ✓
- Token 
  Example
   function identity(arg: T): T {
      return arg;
   }
+ Token 
 row
  Feature Abstract Types
  FeatureLink ../features/hasAbstractTypes.html
  Supported ✓
- Token 
  Example
   abstract class Animal {}
   class Dog extends Animal
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
   class Person {
     private _age = 2
@@ -284,42 +283,43 @@ row
     }
     protected year = 1990
   }
+ Token 
 row
  Feature Static Methods
  FeatureLink ../features/hasStaticMethods.html
  Supported ✓
- Token 
  Example
   class Person {
     static sayHi() {
       console.log("Hello world")
     }
   }
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported ✓
- Token 
  Example
   enum Direction {
    Up,
    Down
   }
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token

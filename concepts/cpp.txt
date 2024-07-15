@@ -129,56 +129,53 @@ row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Virtual function
  FeatureLink ../features/hasVirtualFunctions.html
  Supported ✓
- Token 
  Example
   class Animal {
    public:
     // Intentionally not virtual:
     void Move(void) {
       std::cout ✓
- Token 
  Example
   template 
   Vector& Vector::operator+=(const Vector& rhs)
   {
       for (int i = 0; i ✓
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   #include 
   using namespace std;
@@ -200,11 +197,11 @@ row
   using ns_name::name;
   namespace name = qualified-namespace ;
   namespace ns_name::inline(since C++20)(optional) name { declarations }
+ Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported ✓
- Token 
  Example
   // volume of a cube
   int volume(const int s) {
@@ -214,11 +211,11 @@ row
   double volume(const double r, const int h) {
     return 3.1415926*r*r*static_cast(h);
   }
+ Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
  Supported ✓
- Token 
  Example
   std::vector items;
   items.push_back(5);  // Append integer value '5' to vector 'items'.
@@ -227,20 +224,18 @@ row
   
   for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
     std::cout ✓
- Token 
  Example
   class Foobar {
    public:
     Foobar(double r = 1.0,
            double alpha = 0.0)  // Constructor, parameters with default values.
         : x_(r * cos(alpha))    // ✓
- Token 
  Example
+ Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
  Supported ✓
- Token 
  Example
   // http://www.cplusplus.com/reference/functional/bind/
   // bind example
@@ -262,5 +257,5 @@ row
     auto fn_five = std::bind (my_divide,10,2);               // returns 10/2
     std::cout  (my_divide,_1,_2);     // returns int(x/y)
     std::cout X
- Token 
  Example
+ Token

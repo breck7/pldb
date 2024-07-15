@@ -93,34 +93,34 @@ row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   objects = program.o foo.o utils.o
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported ✓
- Token 
  Example
   objects = program.o foo.o utils.o
   $(objects)
+ Token

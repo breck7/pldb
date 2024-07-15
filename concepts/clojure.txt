@@ -94,61 +94,60 @@ row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   ; -?\d+
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   ; -?\d+\.\d+
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   ; 0x-?[abcdef\d]+
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token (comment )
  Example
   (comment A comment
   )
+ Token (comment )
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token println
  Example
+ Token println
 row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   ; https://www.braveclojure.com/writing-macros/
   ; https://clojure.org/reference/macros
@@ -163,11 +162,11 @@ row
    ([x & next]
     `(let [and# ~x]
        (if and# (and ~@next) and#))))
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   (load "fun")
   (load "files/fun")
@@ -181,44 +180,45 @@ row
   (java.util.Date.)
   (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
   (require '(clojure.contrib def except sql))
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
  Supported ✓
- Token 
  Example
   (defn fun-full [x y] (+ x y))
   (fun-full 2 3)
   (def fun-half (partial fun-full 2))
   (fun-half 3)
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Lispy
  FeatureLink ../features/isLisp.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

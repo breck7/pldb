@@ -60,47 +60,47 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token '
  Example
   'Hello world'
+ Token '
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token { }
  Example
   (* A comment
   *)
+ Token { }
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   (* This is a multi-line comments
    and it will span multiple lines. *)
   { This is a single line comment in pascal }
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported X
- Token 
  Example
+ Token

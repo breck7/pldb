@@ -32,72 +32,71 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   (if positive? 1 -1)
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   (case my-num
     (5 (display "Five!"))
     (0 (display "Zero!"))
     (else (display "Not an option")))
+ Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
  Supported ✓
- Token 
  Example
   (lambda (...) (apply + ...))
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   (load-mod my-module)
   (load "examples/test.slo")
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
   `hello	wold`
+ Token "
 row
  Feature canUseQuestionMarksAsPartOfIdentifier
  FeatureLink ../features/canUseQuestionMarksAsPartOfIdentifier.html
  Supported ✓
- Token 
  Example
   (define yes? #t)
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   (ns-create 'hello-world)
   (ns-define
@@ -106,11 +105,11 @@ row
     (lambda ()
       (display "hello world!\n")))
   (hello-world::print)
+ Token 
 row
  Feature hasBuiltInRegex
  FeatureLink ../features/hasBuiltInRegex.html
  Supported ✓
- Token 
  Example
   (regex-match? `[0-9]+` "Hello 12345")
   (regex-replace `Hello, (\w+)!importOnly

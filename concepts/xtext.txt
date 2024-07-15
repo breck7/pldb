@@ -58,15 +58,15 @@ row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported ✓
- Token 
  Example
   grammar org.example.domainmodel.Domainmodel
          with org.eclipse.xtext.common.Terminals
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import "http://www.xtext.org/example/Domainmodel"
   import "http://www.xtext.org/example/Domainmodel" as dmodel
+ Token

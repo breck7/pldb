@@ -132,99 +132,98 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token echo
  Example
+ Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
  Supported ✓
- Token 
  Example
   function sum(...$nums)
   {
       return array_sum($nums);
   }
   echo sum(1, 2, 3); // 6
+ Token 
 row
  Feature Traits
  FeatureLink ../features/hasTraits.html
  Supported ✓
- Token 
  Example
   // The template
   trait TSingleton
@@ -249,51 +248,48 @@ row
   {
       use TSingleton;
   }
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   $xml = ✓
- Token 
  Example
   ✓
- Token 
  Example
   $name = "John"
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported ✓
- Token 
  Example
   ✓
- Token 
  Example
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Magic Getters and Setters
  FeatureLink ../features/hasMagicGettersAndSetters.html
  Supported ✓
- Token 
  Example
       public function __set($name, $value)
      {
@@ -316,28 +312,29 @@ row
              E_USER_NOTICE);
          return null;
      }
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token '
  Example
   "hello world"
+ Token '
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

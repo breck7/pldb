@@ -102,114 +102,113 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   # 0b[01]+(_[01]+)*
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   # \d+(_\d+)*
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   # (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   # 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   # 0_?[0-7]+(_[0-7]+)*
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
+ Token print
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
  Supported ✓
- Token 
  Example
   # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
   @array = (1..10);
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   use Digest::MD5 'md5_hex';
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   # In Perl, the keyword "use", which imports modules, can also be used to specify directives, such as use strict; or use utf8;
   use utf8;
+ Token 
 row
  Feature Here Document
  FeatureLink ../features/hasHereDocs.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token =begin =cut
  Example
   =begin comment
   This is all part of multiline comment.
@@ -217,47 +216,48 @@ row
   These comments will be ignored by the
   compiler until the next =cut is encountered.
   =cut
+ Token =begin =cut
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
  Supported ✓
- Token 
  Example
   sub first-and-last ( $first, $last ) {
      say "Name is $first $last";
   }
   my &surname-smith = &first-and-last.assuming( *, 'Smith' );
   &surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤»
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported ✓
- Token 
  Example
   print "Hello World".match(/\w/)
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

@@ -54,42 +54,41 @@ row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   - var title = "On Dogs: Man's Best Friend";
   
   h1= title
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   mixin article(title)
     .article
@@ -105,11 +104,11 @@ row
   +article('Hello world')
     p This is my
     p Amazing article
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   - var friends = 10
   case friends
@@ -119,11 +118,11 @@ row
       p you have a friend
     default
       p you have #{friends} friends
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   - var user = {description: 'foo bar baz'}
   - var authorised = false
@@ -139,11 +138,11 @@ row
     else
       h2.red Description
       p.description User has no description
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   //- index.pug
   doctype html
@@ -153,18 +152,19 @@ row
       h1 My Site
       p Welcome to my super lame site.
       include includes/foot.pug
+ Token 
 row
  Feature hasForEachLoops
  FeatureLink ../features/hasForEachLoops.html
  Supported ✓
- Token 
  Example
   ul
     each val in [1, 2, 3, 4, 5]
       li= val
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token

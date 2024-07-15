@@ -316,141 +316,140 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // 0[bB][01][01_]*[lL]?
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // 0|[1-9][0-9_]*[lL]?
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // 0[0-7_]+[lL]?
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token System.out.println
  Example
+ Token System.out.println
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
  Supported ✓
- Token 
  Example
   // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
   // The first statement, other than comments, in a Java source file, must be the package declaration.
@@ -461,17 +460,17 @@ row
   public class Drawing {
    // ...
   }
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
  Supported ✓
- Token 
  Example
   Iterator iter = list.iterator();
   //Iterator iter = list.iterator();    in J2SE 5.0
@@ -480,11 +479,11 @@ row
       if (iter.hasNext())
           System.out.print(", ");
   }
+ Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
  Supported ✓
- Token 
  Example
   interface MyInterface{
      /* This is a default method so we need not
@@ -515,11 +514,11 @@ row
     
       }
   }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import javax.swing.*;
   import javax.swing.JOptionPane;
@@ -527,96 +526,97 @@ row
   javax.swing.JOptionPane.showMessageDialog(null, "Hi");
   // There are 166 packages containing 3279 classes and interfaces in Java 5.
   // import java.io.*; Input-output classes.
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
  Supported ✓
- Token 
  Example
   List v = new ArrayList();
   v.add("test");
   Integer i = v.get(0); // (type error)  compilation-time error
+ Token 
 row
  Feature Assert Statements
  FeatureLink ../features/hasAssertStatements.html
  Supported ✓
- Token 
  Example
   // By default, assertions are disabled
   // java –enableassertions Test
   int score = 10;
   assert score >= 10 : " Below";
   System.out.println("score is "+score);
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature S-Expressions
  FeatureLink ../features/hasSExpressions.html
  Supported X
- Token 
  Example
+ Token

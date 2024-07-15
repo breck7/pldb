@@ -71,38 +71,37 @@ row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token PRINT
  Example
+ Token PRINT
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Multiple Dispatch
  FeatureLink ../features/hasMultipleDispatch.html
  Supported ✓
- Token 
  Example
    (defmethod collide-with ((x asteroid) (y asteroid))
     ;; deal with asteroid hitting asteroid
@@ -116,11 +115,11 @@ row
   (defmethod collide-with ((x spaceship) (y spaceship))
     ;; deal with spaceship hitting spaceship
     )
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
   ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
   (defclass Person () ())
@@ -133,15 +132,16 @@ row
   ; At runtime these 2 would be routed to respective methods:
   (frobnicate a-person his-record big-spreadsheet)
   (frobnicate an-asteroid very-fast pretty-small)
+ Token 
 row
  Feature Lispy
  FeatureLink ../features/isLisp.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

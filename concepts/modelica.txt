@@ -51,43 +51,43 @@ row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // \d+
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported ✓
- Token 
  Example
   type SpecificHeatCapacity = Real (
     final quantity="SpecificHeatCapacity",
     final unit="J/(kg.K)"
   );
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

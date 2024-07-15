@@ -134,50 +134,49 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token '
  Example
+ Token '
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token :=
  Example
+ Token :=
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
   s := (A + a + A);
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token writeln
  Example
+ Token writeln
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported ✓
- Token 
  Example
   program Adhoc;
   
@@ -195,48 +194,49 @@ row
       Writeln(Add(1, 2));                   (* Prints "3"             *)
       Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
   end.
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token { }
  Example
   (* A comment
   *)
+ Token { }
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   { This is a single line comment in pascal. But needs to be closed. }
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported X
- Token 
  Example
+ Token

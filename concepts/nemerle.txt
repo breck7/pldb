@@ -78,27 +78,26 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token System.Console.WriteLine
  Example
+ Token System.Console.WriteLine
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported ✓
- Token 
  Example
   def m3 = 1 g;
   def m4 = Si.Mass(m1);
@@ -108,17 +107,17 @@ row
   def x1 = Si.Area(1 cm * 10 m);
   
   WriteLine($"Area of 1 cm * 10 m = $x1 m");
+ Token 
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   // http://nemerle.org/About
   def title = "Programming language authors";
@@ -138,15 +137,16 @@ row
   #>
   Trace.Assert(html.GetType().Equals(typeof(XElement)));
   WriteLine(html.GetType());
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token

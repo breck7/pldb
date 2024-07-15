@@ -129,33 +129,32 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token '
  Example
   'Hello world'
+ Token '
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
+ Token =
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token !
  Example
   C A comment
+ Token !
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
  Supported ✓
- Token 
  Example
   module constants
   implicit none
@@ -188,11 +187,11 @@ row
      print*, "Area of a circle with radius 7.0 = ", area
      
   end program module_exampl
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
   C     Hello World in Fortran
   
@@ -201,57 +200,58 @@ row
         STOP
     100 FORMAT (' Hello World! ' /)
         END
+ Token print
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
   x = 2.0
   y = x + X
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   C
   C Lines that begin with 'C' (in the first or 'comment' column) are comments
   C
+ Token 
 row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
  Supported X
- Token 
  Example
   C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
+ Token

@@ -16,7 +16,7 @@ pygmentsHighlighter PromQL
  fileExtensions promql
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))
-leetSheet https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
+leetSheets https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
 
 hasFloats true
 hasIntegers true

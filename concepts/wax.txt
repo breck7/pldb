@@ -26,64 +26,63 @@ row
  Feature Operators
  FeatureLink ../features/hasOperators.html
  Supported ✓
- Token 
  Example
   ;; > = && || >= 
   ;; + - * / ^ % & | ! ~ 
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; a comment
+ Token ;
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   (@define MY_CONSTANT 5)
   (@if MY_CONSTANT 5
       (print "yes, it's")
       (print @MY_CONSTANT)
   )
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported ✓
- Token 
  Example
   (set y (? (= x 0) 1 2))
+ Token 
 row
  Feature Prefix Notation
  FeatureLink ../features/hasPrefixNotation.html
  Supported ✓
- Token 
  Example
   (+ 1 1)
+ Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
  Supported ✓
- Token 
  Example
   (struct point
       (let x float)
       (let y float)
   )
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   (let x (arr (vec 3 float)))
+ Token 
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
  Supported ✓
- Token 
  Example
   (let m (map str int) (alloc (map str int)))
   
@@ -99,29 +98,30 @@ row
   ;^ if a value is not there, the "zero" value of the element type is returned
   ; for numbers, 0; for compound types, null.
   
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   (set x 42)
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   (let x int 42)
+ Token

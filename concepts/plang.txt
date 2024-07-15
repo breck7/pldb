@@ -28,17 +28,17 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   - if %products.Count% > 0 then
    - go through %products% call !ProcessProduct
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   - call !FooBar %name%
+ Token 
 
 hasVariables true
  - set %name% as "Dwight Shrewd"

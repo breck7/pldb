@@ -23,7 +23,6 @@ row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   - defmacro:
     name: foo
@@ -32,3 +31,4 @@ row
         Hello: who
   - foo:
     who: World
+ Token

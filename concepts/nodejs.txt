@@ -50,39 +50,39 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token console.log
  Example
+ Token console.log
 row
  Feature Streams
  FeatureLink ../features/hasStreams.html
  Supported ✓
- Token 
  Example
   const stream = require('stream');
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   const fs = require("fs")
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   require("fs").writeFileSync("foo.txt", "foo", "utf8")
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token

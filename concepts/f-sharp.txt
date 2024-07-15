@@ -103,104 +103,103 @@ row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // 0[bB][01][01_]*[uU]?[yslLn]?
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // \d[\d_]*[uU]?[yslLnQRZINGmM]?
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
+ Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token (* *)
  Example
   (* A comment
   *)
+ Token (* *)
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token printfn
  Example
+ Token printfn
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported ✓
- Token 
  Example
   // https://fsharpforfunandprofit.com/posts/units-of-measure/
   [] type N = kg m/sec^2
@@ -209,57 +208,57 @@ row
   let force2 = 5.0
   
   force1 = force2 // true
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   namespace Widgets
   type MyWidget1 =
      member this.WidgetName = "Widget1"
   module WidgetsModule =
      let widgetName = "Widget2"
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   open module-or-namespace-name
   open System.IO
   open List
   open Seq
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   #if VERSION1
   let function1 x y =
@@ -272,24 +271,25 @@ row
   #endif
   // Line directives as source maps can be used when compiling to F#:
   #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
+ Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
  Supported ✓
- Token 
  Example
   /// Adds 2 numbers
   let rec add x y =
    x + y
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token

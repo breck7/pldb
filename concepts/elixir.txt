@@ -88,96 +88,95 @@ row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
  Supported ✓
- Token 
  Example
   δ = 0.00001
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
   raise "oops, something went wrong"
+ Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
  Supported ✓
- Token 
  Example
   def fib(0), do: 1
   def fib(1), do: 1
   def fib(n) when n >= 2, do: fib(n-1) + fib(n-2)
+ Token 
 row
  Feature Runtime Guards
  FeatureLink ../features/hasRunTimeGuards.html
  Supported ✓
- Token 
  Example
   def abs(number) when number > 0, do: number
   def abs(number), do: -number
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   template = """
   This is the first line.
   This is the second line.
   This is the third line.
   """
+ Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
  Supported ✓
- Token 
  Example
   seven = 3 + 4
+ Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
   1.23e45
+ Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
  Supported ✓
- Token 
  Example
   fn -> IO.puts("hello world") end
+ Token 
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
  Supported ✓
- Token 
  Example
   "Elixir" |> String.graphemes() |> Enum.frequencies()
+ Token 
 row
  Feature Streams
  FeatureLink ../features/hasStreams.html
  Supported ✓
- Token 
  Example
   https://hexdocs.pm/elixir/Stream.html
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   # https://hexdocs.pm/elixir/Macro.html
   defmodule Example do
@@ -190,145 +189,145 @@ row
       value
     end
   end
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported ✓
- Token 
  Example
   https://hexdocs.pm/elixir/Protocol.html
+ Token 
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
  Supported ✓
- Token 
  Example
   1..3
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
  Supported ✓
- Token 
  Example
   %{key: "value"}
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   # 0b[01]+
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   # \d(_?\d)*
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   # \d(_?\d)*\.\d(_?\d)*([eE][-+]?\d(_?\d)*)?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   # 0x[\da-fA-F]+
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   # 0o[0-7]+
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   my_list = [1, 2, 3, 4, 5]
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported ✓
- Token 
  Example
   ~r/integer: \d+/
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token IO.puts
  Example
+ Token IO.puts
 row
  Feature Message Passing
  FeatureLink ../features/hasMessagePassing.html
  Supported ✓
- Token 
  Example
   send(pid, :ping)
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
  Supported ✓
- Token 
  Example
   def multiply(a, b \\ 1) do
     a * b
   end
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   if true do
     IO.puts("Hello world")
   end
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   name = "John"
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   # Alias the module so it can be called as Bar instead of Foo.Bar
   alias Foo.Bar, as: Bar
@@ -341,60 +340,61 @@ row
   
   # Invokes the custom code defined in Foo as an extension point
   use Foo
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   File.write!("helloworld.txt", "Hello, world!\n")
+ Token 
 row
  Feature Shebang
  FeatureLink ../features/canDoShebang.html
  Supported ✓
- Token 
  Example
   #!/usr/bin/env elixir
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Dispatch
  FeatureLink ../features/hasMultipleDispatch.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported X
- Token 
  Example
+ Token

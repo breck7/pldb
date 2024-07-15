@@ -38,18 +38,18 @@ row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   // In Turbo Pascal, directives are called significant comments, because in the language grammar they follow the same syntax as comments.
   // In Turbo Pascal, a significant comment is a comment whose first character is a dollar sign and whose second character is a letter;
   // for example, the equivalent of C's #include "file" directive is the significant comment:
   {$I "file"}
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   { within pairs of braces }
   (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)
   // preceded by two forward slashes
+ Token

@@ -31,13 +31,6 @@ body {
   font-family: Helvetica;
 }
 
-.doubleWide {
-  max-width: 800px;
-  margin: auto;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
 .scrollButton {
   text-align: center;
   margin: 21px 0;
@@ -122,10 +115,6 @@ body {
   font-size: 2em;
 }
 
-.scrollTable pre {
-  max-width: 80ch;
-  overflow: auto;
-}
 .scrollCodeBlock {
   border: 1px solid rgba(204, 204, 204, 0.8);
   border-radius: 3px;
@@ -155,35 +144,8 @@ body {
   font-size: 12px;
   font-style: italic;
 }
-
-.tqlForm {
-}
-
 .error {
   color: red;
-}
-
-#tqlErrors {
-  font-size: 10px;
-  color: #333;
-}
-
-.tqlForm .CodeMirror {
-  display: inline-block;
-}
-
-.tqlForm textarea {
-  height: 8em;
-  width: 60ch;
-  border: 0;
-}
-
-.tqlForm input {
-  height: 8em;
-  vertical-align: top;
-  width: 16em;
-  border: 0;
-  cursor: pointer;
 }
 
 .trueBaseSearchFormPadded {
@@ -326,29 +288,3 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-
-/* edit form code */
-
-#editForm {
-  width: 100%;
-  height: 75%;
-}
-.cell {
-  width: 48%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 5px;
-}
-.linkButton {
-  color: blue;
-  cursor: pointer;
-}
-#patch {
-  width: 600px;
-  height: 100px;
-}
-#helpfulResearchLinks {
-  font-size: 80%;
-}
-
-/* end edit form code */

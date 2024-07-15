@@ -241,11 +241,20 @@ h4.scrollQuestion {
 .scrollTable tr:nth-child(even) {
   background: rgba(224,224,224,.6);
 }
+.scrollTable pre {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
 .scrollTable.expandedTable {
   table-layout: unset;
   background: white;
   position: relative;
   z-index: 10;
+  overflow: unset;
+}
+.scrollTable.expandedTable pre {
+  white-space: unset;
   overflow: unset;
 }
 .scrollTable.expandedTable td,.scrollTable.expandedTable th {

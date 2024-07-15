@@ -52,22 +52,21 @@ row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature S-Expressions
  FeatureLink ../features/hasSExpressions.html
  Supported ✓
- Token 
  Example
   null.sexp         // A null S-expression value
   ()                // An empty expression value
@@ -76,11 +75,11 @@ row
   
   (a+-b)  ( 'a' '+-' 'b' )    // Equivalent; three symbols
   (a.b;)  ( 'a' '.' 'b' ';')  // Equivalent; four symbols
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   null.list         // A null list value
   []                // An empty list value
@@ -89,11 +88,11 @@ row
   [a , [b]]         // Nested list
   [ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
   [ 1, , 2 ]        // ERROR: missing element between commas
+ Token 
 row
  Feature Type Annotations
  FeatureLink ../features/hasTypeAnnotations.html
  Supported ✓
- Token 
  Example
   int32::12                                // Suggests 32 bits as end-user type
   'my.custom.type' :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
@@ -104,19 +103,19 @@ row
   bool :: null.int                         // A very misleading annotation on the integer null
   '' :: 1                                  // An empty annotation
   null.symbol :: 1                         // ERROR: type annotation cannot be null
+ Token 
 row
  Feature hasSymbols
  FeatureLink ../features/hasSymbols.html
  Supported ✓
- Token 
  Example
   myvar2       // A different symbol
   'hi ho'      // Symbol requiring quotes
+ Token 
 row
  Feature Decimals
  FeatureLink ../features/hasDecimals.html
  Supported ✓
- Token 
  Example
   null.decimal      // A null decimal value
   0.123             // Type is decimal
@@ -124,52 +123,52 @@ row
   123_456.789_012   // Decimal with underscores
   -0d-1             // Decimal maintains precision: -0. != -0.0
   -0d0              // Negative zero decimal (distinct from positive zero)
+ Token 
 row
  Feature hasTimestamps
  FeatureLink ../features/hasTimestamps.html
  Supported ✓
- Token 
  Example
   // Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
   2007-02-23T12:14Z                // Seconds are optional, but local offset is not
   2007-01-01T00:00-00:00           // Happy New Year in UTC, unknown local offset
+ Token 
 row
  Feature Clobs
  FeatureLink ../features/hasClobs.html
  Supported ✓
- Token 
  Example
   // The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
   // An Ion clob type is similar to the blob type except that the denotation in the Ion text format uses an ASCII-based string notation rather than a base64 encoding to denote its binary value. It is important to make the distinction that clob is a sequence of raw octets and string is a sequence of Unicode code points.
   // The string may only contain legal 7-bit ASCII character
+ Token 
 row
  Feature hasBlobs
  FeatureLink ../features/hasBlobs.html
  Supported ✓
- Token 
  Example
   // In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
   // A valid blob value with one required padding character.
   {{ VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE= }}
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
  Supported ✓
- Token 
  Example
   null
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   ( '''hello '''     // Sexp with one element
     '''world!'''  )
@@ -183,11 +182,11 @@ row
   This is the second line of the string,
   and this is the third line.
   '''
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // http://amzn.github.io/ion-docs/docs/spec.html
   null.int   // A null int value
@@ -200,48 +199,49 @@ row
   1_2_3      // An int with underscores
   0xFA_CE    // An int denoted in hexadecimal with underscores
   0b10_10_10 // An int denoted in binary with underscores
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   // A subset of symbols called identifiers can be denoted in text without single-quotes.
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // http://amzn.github.io/ion-docs/docs/spec.html
   -0.12e4           // Type is float
+ Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
  Supported ✓
- Token 
  Example
   { first : "Tom" , last: "Riddle" }  // Structure with two fields
   {"first":"Tom","last":"Riddle"}     // The same value with confusing style
   {center:{x:1.0, y:12.5}, radius:3}  // Nested struct
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
   null.bool
   true
   false
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

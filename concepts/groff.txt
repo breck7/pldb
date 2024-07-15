@@ -37,7 +37,6 @@ row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token .ig
  Example
   text text text...
   .ig
@@ -49,21 +48,21 @@ row
   the .ig request and the ".." at the
   end of the block.
   ..
+ Token .ig
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   .de P
   .  br
   .  sp .8v
   ..
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   Test
   \" comment
@@ -71,3 +70,4 @@ row
   Test
   \# comment
   Test
+ Token

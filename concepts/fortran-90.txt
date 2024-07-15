@@ -23,7 +23,6 @@ row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   type real_list_t
     real :: sample_data(100)
@@ -40,3 +39,4 @@ row
     allocate (real_list_temp%next)
     real_list_temp => real_list_temp%next
   end do
+ Token

@@ -43,110 +43,109 @@ row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   // 0[Bb][01_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   // (0|[1-9][0-9_]*)([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token println
  Example
+ Token println
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
  Supported ✓
- Token 
  Example
   match x with
    | Some x => println$ x;
    | None => println "NONE";
    endmatch;
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported ✓
- Token 
  Example
   // overloads
   fun f (x:double) => x +42.1;
   fun f (x:int) =>  x + 1;
   fun f (x:string) => x + "!";
+ Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
  Supported ✓
- Token 
  Example
   // generics
   fun g (x) => f (f x);
   println$ g 1, g "hello";
   println$ _map f (1,"hello",2.0);
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   var x = 1;
   &x X
- Token 
  Example
+ Token 
 
 HackerNews discussions of Felix
 ===============================

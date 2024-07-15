@@ -6,7 +6,7 @@ Arc is a programming language created in 2001 by Paul Graham and Robert Morris.
  https://pldb.io/concepts/../lists/creators.html#q=Paul%20Graham
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Morris
 
-#455 on PLDB
+#454 on PLDB
 23 Years Old
 236 Repos
 
@@ -45,14 +45,13 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   ; http://www.arclanguage.org/tut.txt
   ; We know enough now to start writing macros.  Macros are basically
@@ -78,15 +77,16 @@ row
   ; function call.  Instead it should be replaced by the result of
   ; evaluating the body of the macro definition, (list '+ 1 2).
   ; This is called the "expansion" of the macro call.
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token prn
  Example
+ Token prn
 row
  Feature Lispy
  FeatureLink ../features/isLisp.html
  Supported ✓
- Token 
  Example
+ Token

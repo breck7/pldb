@@ -93,104 +93,103 @@ row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   -- 0[bB]_*[01](_*[01])*
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   -- \d(_*\d)*
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   -- 0[oO]_*[0-7](_*[0-7])*
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token putStrLn
  Example
+ Token putStrLn
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
  Supported ✓
- Token 
  Example
   foo = f . g
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token --
  Example
   -- A comment
+ Token --
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import Data.Maybe
   import Mod as Foo
@@ -198,66 +197,66 @@ row
   import qualified Mod
   import Mod hiding (x,y,(+++))
   import qualified Mod hiding (x,y)
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   {-# INLINE foo #-}
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
  Supported ✓
- Token 
  Example
   fib 0 = 1
   fib 1 = 1
   fib n | n >= 2
         = fib (n-1) + fib (n-2)
+ Token 
 row
  Feature Zippers
  FeatureLink ../features/hasZippers.html
  Supported ✓
- Token 
  Example
   -- https://wiki.haskell.org/Zipper_monad/TravelTree
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token {- -}
  Example
+ Token {- -}
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
    -- a single line comment
    {- A multiline comment
       which can continue for many lines
    -}
+ Token 
 row
  Feature Map Functions
  FeatureLink ../features/hasMapFunctions.html
  Supported ✓
- Token 
  Example
   class Functor f where
      fmap :: (a -> b) -> f a -> f b
      ( f b -> f a
+ Token 
 row
  Feature Monad
  FeatureLink ../features/hasMonads.html
  Supported ✓
- Token 
  Example
   -- https://stackoverflow.com/questions/44965/what-is-a-monad
   parseExpr = parseString  parseNumber
@@ -265,28 +264,28 @@ row
   parseString = do
           char '"'
           x ✓
- Token 
  Example
   -- Found hole `_' with type f (Free f b)
+ Token 
 row
  Feature Runtime Guards
  FeatureLink ../features/hasRunTimeGuards.html
  Supported ✓
- Token 
  Example
   f x
    | x > 0 = 1
    | otherwise = 0
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token

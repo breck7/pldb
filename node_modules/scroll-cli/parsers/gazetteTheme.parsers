@@ -150,7 +150,15 @@ gazetteCssParser
     cursor zoom-in
    tr:nth-child(even)
     background rgba(224,224,224,.6)
+  .scrollTable
+   pre
+    white-space nowrap
+    overflow hidden
+    margin 0
   .scrollTable.expandedTable
+   pre
+    white-space unset
+    overflow unset
    table-layout unset
    background white
    position relative

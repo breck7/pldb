@@ -96,32 +96,31 @@ row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token use
  Example
   use std::fs
   use std::sys::{self, open, O_RDWR}
   use std::math::*
+ Token use
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   `Multiline strings
   is available in Jule
   with raw strings`
+ Token 
 row
  Feature hasStringConcatOperator
  FeatureLink ../features/hasStringConcatOperator.html
  Supported ✓
- Token 
  Example
   +
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   use std::fs::{open, O_WRONLY}
   
@@ -131,34 +130,34 @@ row
       f.write(bytes)
       f.close()
   }
+ Token 
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
   ++
   --
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   if BOOLEAN_EXPRESSION {
       outln(""Condition is true)
   }
+ Token 
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
  Supported ✓
- Token 
  Example
   use std::mem::c::{malloc, free}
   
@@ -167,34 +166,34 @@ row
       free(ptr)
       ptr = nil
   }
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   let x = (int)(3.14)
+ Token 
 row
  Feature hasArraySlicingSyntax
  FeatureLink ../features/hasArraySlicingSyntax.html
  Supported ✓
- Token 
  Example
   sliceable_expression[start_index:to_index]
+ Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
  Supported ✓
- Token 
  Example
   fn lock_object[T](obj: T) {
       obj.lock()
   }
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   match X {
   | Y:         outln("X is Y")
@@ -202,45 +201,45 @@ row
   | A | B | C: outln("X is A, B, or C")
   |:           outln("X is not Y, Z, A, B and C")
   }
+ Token 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasMemberVariables
  FeatureLink ../features/hasMemberVariables.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
   pub
+ Token 
 row
  Feature Type Annotations
  FeatureLink ../features/hasTypeAnnotations.html
  Supported ✓
- Token 
  Example
   let x: f64 = 89
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
   let mut x = 0
   x = 20
+ Token =
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported ✓
- Token 
  Example
   fn my_thread() {
       outln("Hello from thread")
@@ -249,156 +248,155 @@ row
   fn main() {
       co my_thread()
   }
+ Token 
 row
  Feature Statements
  FeatureLink ../features/hasStatements.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasStatementTerminatorCharacter
  FeatureLink ../features/hasStatementTerminatorCharacter.html
  Supported ✓
- Token 
  Example
   ;
+ Token 
 row
  Feature hasBoundedCheckedArrays
  FeatureLink ../features/hasBoundedCheckedArrays.html
  Supported ✓
- Token 
  Example
   let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
+ Token 
 row
  Feature hasSelfOrThisWord
  FeatureLink ../features/hasSelfOrThisWord.html
  Supported ✓
- Token 
  Example
   self
+ Token 
 row
  Feature hasRequiredMainFunction
  FeatureLink ../features/hasRequiredMainFunction.html
  Supported ✓
- Token 
  Example
   fn main() {}
+ Token 
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
  Supported ✓
- Token 
  Example
   goto a_label
+ Token 
 row
  Feature Labels
  FeatureLink ../features/hasLabels.html
  Supported ✓
- Token 
  Example
   a_label:
+ Token 
 row
  Feature hasDynamicSizedArrays
  FeatureLink ../features/hasDynamicSizedArrays.html
  Supported ✓
- Token 
  Example
   let mut a_slice = [1, 2, 3, 4, 5, 6]
   a_slice = append(a_slice, 7, 8, 9, 10)
+ Token 
 row
  Feature hasIfElses
  FeatureLink ../features/hasIfElses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasIfs
  FeatureLink ../features/hasIfs.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
  Supported ✓
- Token 
  Example
   // Documentation comment for a_function
   fn a_function() {}
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
   for my_condition {
       // ...
   }
+ Token 
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
  Supported ✓
- Token 
  Example
   // Jule has for loops with while-next iterations
   let mut i = 0
   for i ✓
- Token 
  Example
   for x, y in my_enumerable {
       // ...
   }
+ Token 
 row
  Feature canReadCommandLineArgs
  FeatureLink ../features/canReadCommandLineArgs.html
  Supported ✓
- Token 
  Example
   use std::os::{ARGS}
   
   fn main() {
       outln(ARGS)
   }
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasFnArguments
  FeatureLink ../features/hasFnArguments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Dependent types
  FeatureLink ../features/hasDependentTypes.html
  Supported ✓
- Token 
  Example
   int uint uintptr
+ Token 
 row
  Feature Unary Operators
  FeatureLink ../features/hasUnaryOperators.html
  Supported ✓
- Token 
  Example
   * & - + ^ !
+ Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
  Supported ✓
- Token 
  Example
   fn average(x: ...f64): f64 {
       // ...
   }
+ Token 
 row
  Feature Assert Statements
  FeatureLink ../features/hasAssertStatements.html
  Supported ✓
- Token 
  Example
   use std::debug
   use std::debug::assert::{assert}
@@ -407,35 +405,34 @@ row
       std::debug::ENABLE = true
       let x = 200
       assert(x ✓
- Token 
  Example
   & | ^ >
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature hasValueReturnedFunctions
  FeatureLink ../features/hasValueReturnedFunctions.html
  Supported ✓
- Token 
  Example
   fn get_pi(): f64 {
       ret 3.14159265359
   }
+ Token 
 row
  Feature hasGlobalScope
  FeatureLink ../features/hasGlobalScope.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
   1E2
   .12345E+6
@@ -446,69 +443,69 @@ row
   0x1.Fp+0
   0x1fffp-16
   0x1p-2
+ Token 
 row
  Feature hasVoidFunctions
  FeatureLink ../features/hasVoidFunctions.html
  Supported ✓
- Token 
  Example
   fn a_void_function() {
       // ...
   }
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   0b0001010101
+ Token 
 row
  Feature Decimals
  FeatureLink ../features/hasDecimals.html
  Supported ✓
- Token 
  Example
   12345
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   0455
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   0xDFF90
+ Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
  Supported ✓
- Token 
  Example
   struct Employee {
       first_name: str
       last_name: str
       salary: f32
   }
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   12345
   0b0001010101
   0455
   0xDFF90
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   3.14
   32.60
@@ -524,231 +521,232 @@ row
   0X.8p-0
   0x1fffp-16
   0x15e-2
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported ✓
- Token 
  Example
   enum ExitCode {
       Success = 0,
       Failure = 1
   }
+ Token 
 row
  Feature hasContinue
  FeatureLink ../features/hasContinue.html
  Supported ✓
- Token 
  Example
   continue
   continue a_label
+ Token 
 row
  Feature hasBreak
  FeatureLink ../features/hasBreak.html
  Supported ✓
- Token 
  Example
   break
   break a_label
+ Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
  Supported ✓
- Token 
  Example
   let anonymous = fn() {
       outln("Anonymous Function")
   }
   anonymous()
+ Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
  Supported ✓
- Token 
  Example
   nil
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
   const PI = 3.14159265359
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
   true false
+ Token true false
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
  Supported ✓
- Token 
  Example
   fn generic_function[T](s: []T) {
       // ...
   }
+ Token 
 row
  Feature Traits
  FeatureLink ../features/hasTraits.html
  Supported ✓
- Token 
  Example
   trait Person {
       fn get_full_name(self): str
       fn get_age(self): byte
   }
+ Token 
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
  Supported ✓
- Token 
  Example
   let my_map: [int:str] = {
       0: "Key 0",
       1: "Key 1",
       2: "Key 2",
   }
+ Token 
 row
  Feature Methods
  FeatureLink ../features/hasMethods.html
  Supported ✓
- Token 
  Example
   impl MyStruct {
       fn my_method(self) {}
   }
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   fn a_function() {
       // ...
   }
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   let ptr: *int = nil
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token outln
  Example
+ Token outln
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /*
     A multi line comment
   */
+ Token /* */
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
   /* A comment */
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Jule String Literal"
   `Jule Raw String Literal`
+ Token "
 row
  Feature Lispy
  FeatureLink ../features/isLisp.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasTryCatch
  FeatureLink ../features/hasTryCatch.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature canUseQuestionMarksAsPartOfIdentifier
  FeatureLink ../features/canUseQuestionMarksAsPartOfIdentifier.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasUserDefinedOperators
  FeatureLink ../features/hasUserDefinedOperators.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature hasMethodOverloading
  FeatureLink ../features/hasMethodOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

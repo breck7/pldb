@@ -75,14 +75,13 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported ✓
- Token 
  Example
   @mixin reset-list
     margin: 0
@@ -97,9 +96,10 @@ row
         right: 2em
   nav ul
     @include horizontal-list
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token

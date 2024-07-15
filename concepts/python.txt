@@ -87,100 +87,99 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓
- Token 
  Example
   # 0[bB](?:_?[01])+
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
   # (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
+ Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
  Supported ✓
- Token 
  Example
   # 0[xX](?:_?[a-fA-F0-9])+
+ Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
  Supported ✓
- Token 
  Example
   # 0[oO](?:_?[0-7])+
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print
  Example
+ Token print
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Dispose Blocks Pattern
  FeatureLink ../features/hasDisposeBlocks.html
  Supported ✓
- Token 
  Example
   with resource_context_manager() as resource:
      # Perform actions with the resource.
   # Perform other actions where the resource is guaranteed to be deallocated.
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
  Supported ✓
- Token 
  Example
   class SumComputer(object):
      def __init__(self, a, b):
@@ -198,20 +197,20 @@ row
    class CubeSumComputer(SumComputer):
        def transform(self, x):
            return x * x * x
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
   class Person (object):
     def __init__(self, name):
       self.name = name
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
   # Python Program illustrate how
   # to overload an binary + operator
@@ -230,11 +229,11 @@ row
     
   print(ob1 + ob2)
   print(ob3 + ob4)
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported ✓
- Token 
  Example
   class Base1:
       pass
@@ -249,131 +248,131 @@ row
       pass
   class Derived2(Derived1):
       pass
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   myList = [1, 2, 3, 4, 5]
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   pldb = 80766866
+ Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   template = """This is the first line.
   This is the second line.
   This is the third line."""
+ Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
  Supported ✓
- Token 
  Example
   # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
   class EssentialFunctioner(LoggerMixin, object):
+ Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
  Supported ✓
- Token 
  Example
   https://www.w3schools.com/python/python_iterators.asp
+ Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
  Supported ✓
- Token 
  Example
   seven = 3 + 4
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   import datetime
   oTime = datetime.datetime.now()
   from my_pkg import my_funcs
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
   name = "John"
+ Token =
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   from __future__ import feature
   # coding=
+ Token 
 row
  Feature Generators
  FeatureLink ../features/hasGenerators.html
  Supported ✓
- Token 
  Example
   https://wiki.python.org/moin/Generators
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token '''
  Example
   ''' A comment.
   '''
+ Token '''
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
   if True:
    print("Hello world")
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
   class Person (object):
     def __init__(self, name):
       self.name = name
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token True False
  Example
+ Token True False
 row
  Feature Dynamic Properties
  FeatureLink ../features/hasDynamicProperties.html
  Supported ✓
- Token 
  Example
   class Person (object):
     def __init__(self, name):
@@ -381,90 +380,90 @@ row
   
   person = Person("John")
   person.age = 50
+ Token 
 row
  Feature Symbol Tables
  FeatureLink ../features/hasSymbolTables.html
  Supported ✓
- Token 
  Example
   # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+ Token 
 row
  Feature Shebang
  FeatureLink ../features/canDoShebang.html
  Supported ✓
- Token 
  Example
   #!/usr/bin/env python
+ Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
  Supported ✓
- Token 
  Example
   x ✓
- Token 
  Example
   print(1 if 1 else 0)
+ Token 
 row
  Feature Single Dispatch
  FeatureLink ../features/hasSingleDispatch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   with open('helloworld.txt', 'w') as filehandle:
    filehandle.write('Hello, world!\n')
+ Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported X
- Token 
  Example
   # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token

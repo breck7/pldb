@@ -93,43 +93,42 @@ row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
+ Token =
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
   switch(expression) {
      case true  :
@@ -138,61 +137,61 @@ row
      //
      break;
   }
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token printf
  Example
+ Token printf
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
  Supported ✓
- Token 
  Example
   double average(int count, ...)
   {
    //
   }
+ Token 
 row
  Feature Operators
  FeatureLink ../features/hasOperators.html
  Supported ✓
- Token 
  Example
   1 + 1;
+ Token 
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
  Supported ✓
- Token 
  Example
   #include 
   #include 
@@ -201,42 +200,41 @@ row
     int *poin = malloc(4);
     free(poin);
   }
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   // https://learn.microsoft.com/en-us/cpp/preprocessor/macros-c-cpp?redirectedfrom=MSDN&view=msvc-170
   // https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
   #define min(X, Y)  ((X) ✓
- Token 
  Example
   int pldb = 80766866;
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   //  If a header file is included within , the preprocessor will search a predetermined directory path to locate the header file. If the header file is enclosed in "", the preprocessor will look for the header file in the same directory as the source file.
   #include 
   #include "stdio.h"
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   double da = 3.3;
   double db = 3.3;
   double dc = 3.4;
   int result = (int)da + (int)db + (int)dc; //result == 9
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   #include 
   #define height 10
@@ -247,11 +245,11 @@ row
   #ifndef
   #undef
   #pragma
+ Token 
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
  Supported ✓
- Token 
  Example
   // C/C++ program to check if a number is
   // even or not using goto statement
@@ -268,7 +266,6 @@ row
     
   even:
       cout ✓
- Token 
  Example
   struct account {
     int account_number;
@@ -276,18 +273,18 @@ row
     char *last_name;
     float balance;
   };
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Symbol Tables
  FeatureLink ../features/hasSymbolTables.html
  Supported ✓
- Token 
  Example
   // Declare an external function
   extern double bar(double x);
@@ -299,137 +296,135 @@ row
   
       // Sum all the values bar(1) to bar(count)
       for (int i = 1;  i ✓
- Token 
  Example
   int i = 4; /* bit pattern equivalent is binary 100 */
   int j = i ✓
- Token 
  Example
   #include 
   int i, a[10];
   for (i = 0; i ✓
- Token 
  Example
   "hello world"
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   int *ptr;
+ Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
  Supported ✓
- Token 
  Example
   #include 
   int main(void) { printf("%d", 1 ? 1 : 0); }
+ Token 
 row
  Feature Characters
  FeatureLink ../features/hasCharacters.html
  Supported ✓
- Token 
  Example
   char character = 'P';
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported ✓
- Token 
  Example
   enum Gender {
     Male,
     Female,
   };
+ Token 
 row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Templates
  FeatureLink ../features/hasTemplates.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
  Supported X
- Token 
  Example
+ Token

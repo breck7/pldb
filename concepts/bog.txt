@@ -27,7 +27,6 @@ row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported ✓
- Token 
  Example
   let {print} = import "std.io"
   let foo = fn()
@@ -49,11 +48,11 @@ row
   print("in main")
   let res = await foo_frame
   print("main finished:", res)
+ Token 
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
  Supported ✓
- Token 
  Example
   let mut sum = 0
   for let c in "hellö wörld"
@@ -64,11 +63,11 @@ row
         "ö" => sum += 4
         "w" => sum += 5
         "d" => sum += 6
+ Token 
 row
  Feature hasTryCatch
  FeatureLink ../features/hasTryCatch.html
  Supported ✓
- Token 
  Example
   let foo = fn(arg)
     try
@@ -78,45 +77,46 @@ row
     catch let err
         return err
     return 99
+ Token 
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
  Supported ✓
- Token 
  Example
   let add = fn ((a,b)) a + b
   let tuplify = fn (a,b) (a,b)
   return add(tuplify(1,2)) # 3
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   let {print} = import "std.io"
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   "pldb"
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   let pldb = "pldb"
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token 
  Example
+ Token

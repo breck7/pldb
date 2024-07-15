@@ -53,56 +53,56 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
   [subsections "areCaseSensitive"]
+ Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   [branch "master"]
   remote = origin
   merge = refs/heads/master
+ Token 
 row
  Feature hasEscapeCharacters
  FeatureLink ../features/hasEscapeCharacters.html
  Supported ✓
- Token 
  Example
   ; \" \\ \n \t \b
   [section "subsection with \"quotes\""]
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # a '#' or ';' character indicates
   ; a comment
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

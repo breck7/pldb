@@ -89,47 +89,46 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token #| |#
  Example
   #| A comment
   |#
+ Token #| |#
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token display
  Example
+ Token display
 row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Prefix Notation
  FeatureLink ../features/hasPrefixNotation.html
  Supported ✓
- Token 
  Example
   (+ 1 2 3)
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   (define-syntax backwards
    (syntax-rules ()
@@ -137,34 +136,35 @@ row
      ((_ e) e)
      ((_ e1 ... e2)
       (begin e2 (backwards e1 ...)))))
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Lispy
  FeatureLink ../features/isLisp.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

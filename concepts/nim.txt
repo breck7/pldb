@@ -95,96 +95,95 @@ row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
  Supported ✓
- Token 
  Example
   let δ = 0.00001
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false on off
  Example
    let res = true
+ Token true false on off
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token =
  Example
+ Token =
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token #[ ]#
  Example
   #[ A comment
   ]#
+ Token #[ ]#
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token echo
  Example
+ Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
   # Though they may be phased out:
   # https://github.com/nim-lang/RFCs/issues/456
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
   import macros
   dumpTree:
    result = 10
+ Token 
 row
  Feature Templates
  FeatureLink ../features/hasTemplates.html
  Supported ✓
- Token 
  Example
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
   template debug*(args: varargs[string, `importOnly
 
 ]) =
    if logLevel ✓
-  Token 
   Example
+  Token 
  row
   Feature Gotos
   FeatureLink ../features/hasGotos.html
   Supported X
-  Token 
   Example
+  Token

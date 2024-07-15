@@ -49,7 +49,6 @@ row
  Feature Macros
  FeatureLink ../features/hasMacros.html
  Supported ✓
- Token 
  Example
   ; A macro is essentially a function that generates code. I would have
   ; liked the first example of a macro to be something simpler, but fn
@@ -58,105 +57,106 @@ row
   ; Here is a very simple macro:
   (mac nilwith (x)
     (list 'cons nil x))
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token 
  Example
   (\h \e \l \l \o)
   ; can also be represented as
   "hello"
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token 
  Example
   ; The symbol nil represents falsity as well as the empty list.
   ; The symbol t is the default representation for truth, but any object other than nil also counts as true.
+ Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
  Supported ✓
- Token 
  Example
   (fn (x) (+ x 1))
+ Token 
 row
  Feature Expressions
  FeatureLink ../features/hasExpressions.html
  Supported ✓
- Token 
  Example
   (+ 1 2)
+ Token 
 row
  Feature Streams
  FeatureLink ../features/hasStreams.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   ; here is a list of a, b, and c:
   (a . (b . (c . nil)))
   ; can be written as
   (a b c)
+ Token 
 row
  Feature Characters
  FeatureLink ../features/hasCharacters.html
  Supported ✓
- Token 
  Example
   \p
   ; Characters that aren't letters may have longer names. For example the bell character, after which Bel is named, is
   \bel
+ Token 
 row
  Feature hasSymbols
  FeatureLink ../features/hasSymbols.html
  Supported ✓
- Token 
  Example
   foo
+ Token 
 row
  Feature Pairs
  FeatureLink ../features/hasPairs.html
  Supported ✓
- Token 
  Example
   (foo . bar)
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token prn
  Example
+ Token prn
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   ; A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token

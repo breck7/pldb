@@ -94,51 +94,51 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token {- -}
  Example
   {- A comment
   -}
+ Token {- -}
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token --
  Example
   -- A comment
+ Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported ✓
- Token 
  Example
   -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
   -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
   foo = bar +
    baz
+ Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
  Supported ✓
- Token 
  Example
   -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
   -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
   bool :: forall a. Boolean -> a -> a -> a
   bool true x _ = x
   bool false _ x = x
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 
 HackerNews discussions of PureScript
 ====================================

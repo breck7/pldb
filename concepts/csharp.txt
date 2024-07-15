@@ -104,55 +104,54 @@ row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
  Supported ✓
- Token 
  Example
   // Call example:
   //   var c = Compose(f, g);
@@ -161,53 +160,53 @@ row
   //   Func f = _ => ...
   
   Func Compose(Func f, Func g) => _ => f(g(_));
+ Token 
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
  Supported ✓
- Token 
  Example
   public void ExampleMethod(string optionalstr = "default string") {}
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token //
  Example
   // A comment
+ Token //
 row
  Feature Dispose Blocks Pattern
  FeatureLink ../features/hasDisposeBlocks.html
  Supported ✓
- Token 
  Example
   using (Resource resource = GetResource())
   {
      // Perform actions with the resource.
      ...
   }
+ Token 
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
  Supported ✓
- Token 
  Example
   // In C#, namespaces are the semi-equivalent of Java's packages.
   namespace com.test
   {
      class Test {}
   }
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
  Supported ✓
- Token 
  Example
   namespace MyNamespace;
   class MyClass
@@ -217,11 +216,11 @@ row
       System.Console.WriteLine("Creating my namespace");
     }
   }
+ Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
  Supported ✓
- Token 
  Example
   using static System.Console;
   using static System.Math;
@@ -232,11 +231,11 @@ row
           WriteLine(Sqrt(3*3 + 4*4));
       }
   }
+ Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
  Supported ✓
- Token 
  Example
   Animal animal = new Cat();
   
@@ -245,11 +244,11 @@ row
   
   animal = null;
   b = animal as Bulldog;          // b == null
+ Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
  Supported ✓
- Token 
  Example
   #define MAX_CLIENTS 200
   int array[MAX_CLIENTS];
@@ -261,11 +260,11 @@ row
   #else
   //code
   #endif
+ Token 
 row
  Feature Generators
  FeatureLink ../features/hasGenerators.html
  Supported ✓
- Token 
  Example
   // Method that takes an iterable input (possibly an array)
   // and returns all even numbers.
@@ -276,11 +275,11 @@ row
           }
       }
   }
+ Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
  Supported ✓
- Token 
  Example
   public class MyClass
   {
@@ -302,11 +301,11 @@ row
   // Code somewhere
   // Instantiating an object with the constructor above
   MyClass c = new MyClass(42, "string");
+ Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
  Supported ✓
- Token 
  Example
   // Declare the generic class.
   public class GenericList
@@ -331,78 +330,79 @@ row
           list3.Add(new ExampleClass());
       }
   }
+ Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
  Supported ✓
- Token 
  Example
   // Pointers supported only under certain conditions.
   // Get 16 bytes of memory from the process's unmanaged memory
   IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
+ Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
  Supported ✓
- Token 
  Example
   public async Task FindPageSize(Uri uri)
   {
       byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
       return data.Length;
   }
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token Console.WriteLine
  Example
   Console.WriteLine("This is C#");
+ Token Console.WriteLine
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
  Supported ✓
- Token 
  Example
   int pldb = 80766866;
+ Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
   int pldb = 80766866;
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "hello world"
+ Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   // A comment
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

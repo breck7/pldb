@@ -108,21 +108,20 @@ row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   # A comment
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token #
  Example
   # A comment
+ Token #
 row
  Feature hasIds
  FeatureLink ../features/hasIds.html
  Supported ✓
- Token 
  Example
   # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
   query {
@@ -133,36 +132,36 @@ row
       name
     }
   }
+ Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
  Supported ✓
- Token 
  Example
   union SearchResult = Human | Droid | Starship
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
+ Token "
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
  Supported ✓
- Token 
  Example
   interface Character {
    id: ID!
@@ -185,38 +184,39 @@ row
     appearsIn: [Episode]!
     primaryFunction: String
   }
+ Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
  Supported ✓
- Token 
  Example
   enum Episode {
     NEWHOPE
     EMPIRE
     JEDI
   }
+ Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
  Supported ✓
- Token true false
  Example
+ Token true false
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token

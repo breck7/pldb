@@ -37,7 +37,7 @@ leachim6 Express
   app.get('/', (_, res) => res.send("Hello World"))
   
   app.listen(8080)
-leetSheet https://cheatsheets.zip/express
+leetSheets https://cheatsheets.zip/express
 
 stringToken "
 

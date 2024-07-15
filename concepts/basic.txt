@@ -67,60 +67,60 @@ row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token "
  Example
   "Hello world"
+ Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token PRINT
  Example
+ Token PRINT
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token REM
  Example
   REM A comment
+ Token REM
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
  Supported ✓
- Token 
  Example
   10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
   15 REM It fills the screen with the phrase "HELLO"
   20 PRINT "HELLO"
   30 GOTO 20
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
   REM This BASIC program shows the use of the PRINT and GOTO Statements.
+ Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
  Supported X
- Token 
  Example
+ Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
  Supported X
- Token 
  Example
+ Token

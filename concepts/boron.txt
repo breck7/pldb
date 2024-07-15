@@ -21,92 +21,92 @@ row
  Feature Threads
  FeatureLink ../features/hasThreads.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
  Supported ✓
- Token " { } {{ }}
  Example
   "Hello world"
   {He said "That looks good!"}
+ Token " { } {{ }}
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
  Supported ✓
- Token 
  Example
   {{
     Line 1
     Line 2
   }}
+ Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
  Supported ✓
- Token /* */
  Example
   /* A comment
   */
+ Token /* */
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
  Supported ✓
- Token print probe
  Example
+ Token print probe
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
  Supported ✓
- Token 
  Example
   my-list: [1 two 3.0 "four"]
+ Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
  Supported ✓
- Token ;
  Example
   ; A comment
+ Token ;
 row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported ✓
- Token 
  Example
   catch [throw 22 print "You'll never see this."]
   
   if error? try [read %does_not_exist] [print "File not found"]
+ Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
  Supported ✓
- Token 
  Example
+ Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
  Supported ✓
- Token 
  Example
   write %helloworld.txt "Hello, world!^/"
+ Token 
 row
  Feature Shebang
  FeatureLink ../features/canDoShebang.html
  Supported ✓
- Token 
  Example
   #!/usr/bin/env boron
+ Token
