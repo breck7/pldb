@@ -514,8 +514,6 @@ within|_$^3|_$^3%|_$^SystemVerilog Eclipse Command Language Q#
 BASE|_$^3|_$^3%|_$^QBasic Microsoft Excel Google Sheets
 limit|_$^3|_$^3%|_$^SPARQL Apex Eclipse Command Language
 fork|_$^3|_$^3%|_$^Verilog SystemVerilog Felix
-RESTORE|_$^3|_$^3%|_$^Redis Transact-SQL Amazon Redshift
-LIST|_$^3|_$^3%|_$^Redis QBasic Apex
 error|_$^3|_$^3%|_$^ABAP Speedie PowerQuery M
 update|_$^3|_$^3%|_$^ABAP Apex Eclipse Command Language
 unique|_$^3|_$^3%|_$^ABAP SystemVerilog Aith
@@ -535,6 +533,8 @@ create|_$^3|_$^3%|_$^ABAP SPARQL Dylan
 copy|_$^3|_$^3%|_$^ABAP SPARQL Aith
 before|_$^3|_$^3%|_$^ABAP SystemVerilog Eclipse Command Language
 exists|_$^3|_$^3%|_$^F* ABAP Slope
+RESTORE|_$^3|_$^3%|_$^Redis Transact-SQL Amazon Redshift
+LIST|_$^3|_$^3%|_$^Redis QBasic Apex
 find|_$^3|_$^3%|_$^MongoDB ABAP Freefem
 service|_$^3|_$^3%|_$^Protocol Buffers SPARQL Eclipse Command Language
 option|_$^3|_$^3%|_$^Protocol Buffers ABAP Sophia
@@ -1166,12 +1166,6 @@ casez|_$^2|_$^2%|_$^Verilog SystemVerilog
 casex|_$^2|_$^2%|_$^Verilog SystemVerilog
 automatic|_$^2|_$^2%|_$^Verilog SystemVerilog
 always|_$^2|_$^2%|_$^Verilog SystemVerilog
-SHUTDOWN|_$^2|_$^2%|_$^Redis Transact-SQL
-READONLY|_$^2|_$^2%|_$^Redis Modula-3
-EVAL|_$^2|_$^2%|_$^Redis Modula-3
-DUMP|_$^2|_$^2%|_$^Redis Transact-SQL
-INFO|_$^2|_$^2%|_$^Redis Microsoft Excel
-APPEND|_$^2|_$^2%|_$^Redis QBasic
 verbatim|_$^2|_$^2%|_$^ABAP Twig
 uuid|_$^2|_$^2%|_$^ABAP Functional PHP Preprocessor
 partition|_$^2|_$^2%|_$^ABAP Eclipse Command Language
@@ -1247,12 +1241,18 @@ total|_$^2|_$^2%|_$^F* ABAP
 opaque|_$^2|_$^2%|_$^F* Aith
 logic|_$^2|_$^2%|_$^F* SystemVerilog
 attributes|_$^2|_$^2%|_$^F* ABAP
-drop|_$^2|_$^2%|_$^MongoDB SPARQL
+SHUTDOWN|_$^2|_$^2%|_$^Redis Transact-SQL
+READONLY|_$^2|_$^2%|_$^Redis Modula-3
+EVAL|_$^2|_$^2%|_$^Redis Modula-3
+DUMP|_$^2|_$^2%|_$^Redis Transact-SQL
+INFO|_$^2|_$^2%|_$^Redis Microsoft Excel
+APPEND|_$^2|_$^2%|_$^Redis QBasic
 RAISE|_$^2|_$^2%|_$^SQLite Modula-3
 QUERY|_$^2|_$^2%|_$^SQLite Google Sheets
 PRAGMA|_$^2|_$^2%|_$^SQLite Apex
 PLAN|_$^2|_$^2%|_$^SQLite Transact-SQL
 DETACH|_$^2|_$^2%|_$^SQLite Cypher Query Language
+drop|_$^2|_$^2%|_$^MongoDB SPARQL
 Visual Basic .NET Angelscript
 Visual Basic .NET Angelscript
 >>=|_$^2|_$^2%|_$^Visual Basic .NET Angelscript
@@ -2962,171 +2962,6 @@ con|_$^1|_$^1%|_$^Koka
 rectype|_$^1|_$^1%|_$^Koka
 cotype|_$^1|_$^1%|_$^Koka
 strength|_$^1|_$^1%|_$^Verilog
-ZSCAN|_$^1|_$^1%|_$^Redis
-HSCAN|_$^1|_$^1%|_$^Redis
-SSCAN|_$^1|_$^1%|_$^Redis
-SCAN|_$^1|_$^1%|_$^Redis
-ZUNIONSTORE|_$^1|_$^1%|_$^Redis
-ZSCORE|_$^1|_$^1%|_$^Redis
-ZREVRANK|_$^1|_$^1%|_$^Redis
-ZREVRANGEBYSCORE|_$^1|_$^1%|_$^Redis
-ZREVRANGE|_$^1|_$^1%|_$^Redis
-ZREMRANGEBYSCORE|_$^1|_$^1%|_$^Redis
-ZREMRANGEBYRANK|_$^1|_$^1%|_$^Redis
-ZREMRANGEBYLEX|_$^1|_$^1%|_$^Redis
-ZREM|_$^1|_$^1%|_$^Redis
-ZRANK|_$^1|_$^1%|_$^Redis
-ZRANGEBYSCORE|_$^1|_$^1%|_$^Redis
-ZREVRANGEBYLEX|_$^1|_$^1%|_$^Redis
-ZRANGEBYLEX|_$^1|_$^1%|_$^Redis
-ZRANGE|_$^1|_$^1%|_$^Redis
-ZLEXCOUNT|_$^1|_$^1%|_$^Redis
-ZINTERSTORE|_$^1|_$^1%|_$^Redis
-ZINCRBY|_$^1|_$^1%|_$^Redis
-ZCOUNT|_$^1|_$^1%|_$^Redis
-ZCARD|_$^1|_$^1%|_$^Redis
-ZADD|_$^1|_$^1%|_$^Redis
-WATCH|_$^1|_$^1%|_$^Redis
-WAIT|_$^1|_$^1%|_$^Redis
-UNWATCH|_$^1|_$^1%|_$^Redis
-UNLINK|_$^1|_$^1%|_$^Redis
-UNSUBSCRIBE|_$^1|_$^1%|_$^Redis
-TTL|_$^1|_$^1%|_$^Redis
-TOUCH|_$^1|_$^1%|_$^Redis
-SWAPDB|_$^1|_$^1%|_$^Redis
-SUNIONSTORE|_$^1|_$^1%|_$^Redis
-SUNION|_$^1|_$^1%|_$^Redis
-SUBSCRIBE|_$^1|_$^1%|_$^Redis
-STRLEN|_$^1|_$^1%|_$^Redis
-SREM|_$^1|_$^1%|_$^Redis
-SRANDMEMBER|_$^1|_$^1%|_$^Redis
-SPOP|_$^1|_$^1%|_$^Redis
-SMOVE|_$^1|_$^1%|_$^Redis
-SMEMBERS|_$^1|_$^1%|_$^Redis
-SLOWLOG|_$^1|_$^1%|_$^Redis
-SLAVEOF|_$^1|_$^1%|_$^Redis
-SISMEMBER|_$^1|_$^1%|_$^Redis
-SINTERSTORE|_$^1|_$^1%|_$^Redis
-SINTER|_$^1|_$^1%|_$^Redis
-SETRANGE|_$^1|_$^1%|_$^Redis
-SETNX|_$^1|_$^1%|_$^Redis
-SETEX|_$^1|_$^1%|_$^Redis
-SETBIT|_$^1|_$^1%|_$^Redis
-SDIFFSTORE|_$^1|_$^1%|_$^Redis
-SDIFF|_$^1|_$^1%|_$^Redis
-FLUSH|_$^1|_$^1%|_$^Redis
-SCRIPT|_$^1|_$^1%|_$^Redis
-SCARD|_$^1|_$^1%|_$^Redis
-SADD|_$^1|_$^1%|_$^Redis
-RPUSHX|_$^1|_$^1%|_$^Redis
-RPUSH|_$^1|_$^1%|_$^Redis
-RPOPLPUSH|_$^1|_$^1%|_$^Redis
-RPOP|_$^1|_$^1%|_$^Redis
-RENAMENX|_$^1|_$^1%|_$^Redis
-RANDOMKEY|_$^1|_$^1%|_$^Redis
-QUIT|_$^1|_$^1%|_$^Redis
-PUNSUBSCRIBE|_$^1|_$^1%|_$^Redis
-PUBLISH|_$^1|_$^1%|_$^Redis
-PTTL|_$^1|_$^1%|_$^Redis
-PUBSUB|_$^1|_$^1%|_$^Redis
-PSUBSCRIBE|_$^1|_$^1%|_$^Redis
-PSETEX|_$^1|_$^1%|_$^Redis
-PING|_$^1|_$^1%|_$^Redis
-PFMERGE|_$^1|_$^1%|_$^Redis
-PFCOUNT|_$^1|_$^1%|_$^Redis
-PFADD|_$^1|_$^1%|_$^Redis
-PEXPIREAT|_$^1|_$^1%|_$^Redis
-PEXPIRE|_$^1|_$^1%|_$^Redis
-PERSIST|_$^1|_$^1%|_$^Redis
-MULTI|_$^1|_$^1%|_$^Redis
-MSETNX|_$^1|_$^1%|_$^Redis
-MSET|_$^1|_$^1%|_$^Redis
-MONITOR|_$^1|_$^1%|_$^Redis
-MIGRATE|_$^1|_$^1%|_$^Redis
-MGET|_$^1|_$^1%|_$^Redis
-LSET|_$^1|_$^1%|_$^Redis
-LREM|_$^1|_$^1%|_$^Redis
-LRANGE|_$^1|_$^1%|_$^Redis
-LPUSHX|_$^1|_$^1%|_$^Redis
-LPUSH|_$^1|_$^1%|_$^Redis
-LPOP|_$^1|_$^1%|_$^Redis
-LLEN|_$^1|_$^1%|_$^Redis
-LINSERT|_$^1|_$^1%|_$^Redis
-LINDEX|_$^1|_$^1%|_$^Redis
-LASTSAVE|_$^1|_$^1%|_$^Redis
-INCRBYFLOAT|_$^1|_$^1%|_$^Redis
-INCRBY|_$^1|_$^1%|_$^Redis
-INCR|_$^1|_$^1%|_$^Redis
-HVALS|_$^1|_$^1%|_$^Redis
-HSTRLEN|_$^1|_$^1%|_$^Redis
-HSETNX|_$^1|_$^1%|_$^Redis
-HSET|_$^1|_$^1%|_$^Redis
-HMSET|_$^1|_$^1%|_$^Redis
-HMGET|_$^1|_$^1%|_$^Redis
-HLEN|_$^1|_$^1%|_$^Redis
-HKEYS|_$^1|_$^1%|_$^Redis
-HINCRBYFLOAT|_$^1|_$^1%|_$^Redis
-HINCRBY|_$^1|_$^1%|_$^Redis
-HGETALL|_$^1|_$^1%|_$^Redis
-HGET|_$^1|_$^1%|_$^Redis
-HEXISTS|_$^1|_$^1%|_$^Redis
-HDEL|_$^1|_$^1%|_$^Redis
-GETSET|_$^1|_$^1%|_$^Redis
-GETRANGE|_$^1|_$^1%|_$^Redis
-GETBIT|_$^1|_$^1%|_$^Redis
-GEORADIUSBYMEMBER|_$^1|_$^1%|_$^Redis
-GEORADIUS|_$^1|_$^1%|_$^Redis
-GEODIST|_$^1|_$^1%|_$^Redis
-GEOPOS|_$^1|_$^1%|_$^Redis
-GEOHASH|_$^1|_$^1%|_$^Redis
-GEOADD|_$^1|_$^1%|_$^Redis
-FLUSHDB|_$^1|_$^1%|_$^Redis
-FLUSHALL|_$^1|_$^1%|_$^Redis
-EXPIREAT|_$^1|_$^1%|_$^Redis
-EXPIRE|_$^1|_$^1%|_$^Redis
-EVALSHA|_$^1|_$^1%|_$^Redis
-ECHO|_$^1|_$^1%|_$^Redis
-DISCARD|_$^1|_$^1%|_$^Redis
-DEL|_$^1|_$^1%|_$^Redis
-DECRBY|_$^1|_$^1%|_$^Redis
-DECR|_$^1|_$^1%|_$^Redis
-SEGFAULT|_$^1|_$^1%|_$^Redis
-DEBUG|_$^1|_$^1%|_$^Redis
-DBSIZE|_$^1|_$^1%|_$^Redis
-RESETSTAT|_$^1|_$^1%|_$^Redis
-CONFIG|_$^1|_$^1%|_$^Redis
-GETKEYS|_$^1|_$^1%|_$^Redis
-COMMAND|_$^1|_$^1%|_$^Redis
-SLOTS|_$^1|_$^1%|_$^Redis
-SLAVES|_$^1|_$^1%|_$^Redis
-SETSLOT|_$^1|_$^1%|_$^Redis
-SET-CONFIG-EPOCH|_$^1|_$^1%|_$^Redis
-SAVECONFIG|_$^1|_$^1%|_$^Redis
-REPLICATE|_$^1|_$^1%|_$^Redis
-NODES|_$^1|_$^1%|_$^Redis
-MEET|_$^1|_$^1%|_$^Redis
-KEYSLOT|_$^1|_$^1%|_$^Redis
-GETKEYSINSLOT|_$^1|_$^1%|_$^Redis
-FORGET|_$^1|_$^1%|_$^Redis
-FAILOVER|_$^1|_$^1%|_$^Redis
-DELSLOTS|_$^1|_$^1%|_$^Redis
-COUNTKEYSINSLOT|_$^1|_$^1%|_$^Redis
-COUNT-FAILURE-REPORTS|_$^1|_$^1%|_$^Redis
-ADDSLOTS|_$^1|_$^1%|_$^Redis
-SETNAME|_$^1|_$^1%|_$^Redis
-REPLY|_$^1|_$^1%|_$^Redis
-GETNAME|_$^1|_$^1%|_$^Redis
-CLIENT|_$^1|_$^1%|_$^Redis
-BRPOPLPUSH|_$^1|_$^1%|_$^Redis
-BRPOP|_$^1|_$^1%|_$^Redis
-BLPOP|_$^1|_$^1%|_$^Redis
-BITPOS|_$^1|_$^1%|_$^Redis
-BITOP|_$^1|_$^1%|_$^Redis
-BITFIELD|_$^1|_$^1%|_$^Redis
-BITCOUNT|_$^1|_$^1%|_$^Redis
-BGSAVE|_$^1|_$^1%|_$^Redis
-BGREWRITEAOF|_$^1|_$^1%|_$^Redis
-AUTH|_$^1|_$^1%|_$^Redis
 utcl_seconds_between|_$^1|_$^1%|_$^ABAP
 utcl_current|_$^1|_$^1%|_$^ABAP
 utcl_add_seconds|_$^1|_$^1%|_$^ABAP
@@ -3865,13 +3700,178 @@ effect|_$^1|_$^1%|_$^F*
 andbegin|_$^1|_$^1%|_$^F*
 unopteq|_$^1|_$^1%|_$^F*
 noeq|_$^1|_$^1%|_$^F*
-createIndex|_$^1|_$^1%|_$^MongoDB
-findOne|_$^1|_$^1%|_$^MongoDB
+ZSCAN|_$^1|_$^1%|_$^Redis
+HSCAN|_$^1|_$^1%|_$^Redis
+SSCAN|_$^1|_$^1%|_$^Redis
+SCAN|_$^1|_$^1%|_$^Redis
+ZUNIONSTORE|_$^1|_$^1%|_$^Redis
+ZSCORE|_$^1|_$^1%|_$^Redis
+ZREVRANK|_$^1|_$^1%|_$^Redis
+ZREVRANGEBYSCORE|_$^1|_$^1%|_$^Redis
+ZREVRANGE|_$^1|_$^1%|_$^Redis
+ZREMRANGEBYSCORE|_$^1|_$^1%|_$^Redis
+ZREMRANGEBYRANK|_$^1|_$^1%|_$^Redis
+ZREMRANGEBYLEX|_$^1|_$^1%|_$^Redis
+ZREM|_$^1|_$^1%|_$^Redis
+ZRANK|_$^1|_$^1%|_$^Redis
+ZRANGEBYSCORE|_$^1|_$^1%|_$^Redis
+ZREVRANGEBYLEX|_$^1|_$^1%|_$^Redis
+ZRANGEBYLEX|_$^1|_$^1%|_$^Redis
+ZRANGE|_$^1|_$^1%|_$^Redis
+ZLEXCOUNT|_$^1|_$^1%|_$^Redis
+ZINTERSTORE|_$^1|_$^1%|_$^Redis
+ZINCRBY|_$^1|_$^1%|_$^Redis
+ZCOUNT|_$^1|_$^1%|_$^Redis
+ZCARD|_$^1|_$^1%|_$^Redis
+ZADD|_$^1|_$^1%|_$^Redis
+WATCH|_$^1|_$^1%|_$^Redis
+WAIT|_$^1|_$^1%|_$^Redis
+UNWATCH|_$^1|_$^1%|_$^Redis
+UNLINK|_$^1|_$^1%|_$^Redis
+UNSUBSCRIBE|_$^1|_$^1%|_$^Redis
+TTL|_$^1|_$^1%|_$^Redis
+TOUCH|_$^1|_$^1%|_$^Redis
+SWAPDB|_$^1|_$^1%|_$^Redis
+SUNIONSTORE|_$^1|_$^1%|_$^Redis
+SUNION|_$^1|_$^1%|_$^Redis
+SUBSCRIBE|_$^1|_$^1%|_$^Redis
+STRLEN|_$^1|_$^1%|_$^Redis
+SREM|_$^1|_$^1%|_$^Redis
+SRANDMEMBER|_$^1|_$^1%|_$^Redis
+SPOP|_$^1|_$^1%|_$^Redis
+SMOVE|_$^1|_$^1%|_$^Redis
+SMEMBERS|_$^1|_$^1%|_$^Redis
+SLOWLOG|_$^1|_$^1%|_$^Redis
+SLAVEOF|_$^1|_$^1%|_$^Redis
+SISMEMBER|_$^1|_$^1%|_$^Redis
+SINTERSTORE|_$^1|_$^1%|_$^Redis
+SINTER|_$^1|_$^1%|_$^Redis
+SETRANGE|_$^1|_$^1%|_$^Redis
+SETNX|_$^1|_$^1%|_$^Redis
+SETEX|_$^1|_$^1%|_$^Redis
+SETBIT|_$^1|_$^1%|_$^Redis
+SDIFFSTORE|_$^1|_$^1%|_$^Redis
+SDIFF|_$^1|_$^1%|_$^Redis
+FLUSH|_$^1|_$^1%|_$^Redis
+SCRIPT|_$^1|_$^1%|_$^Redis
+SCARD|_$^1|_$^1%|_$^Redis
+SADD|_$^1|_$^1%|_$^Redis
+RPUSHX|_$^1|_$^1%|_$^Redis
+RPUSH|_$^1|_$^1%|_$^Redis
+RPOPLPUSH|_$^1|_$^1%|_$^Redis
+RPOP|_$^1|_$^1%|_$^Redis
+RENAMENX|_$^1|_$^1%|_$^Redis
+RANDOMKEY|_$^1|_$^1%|_$^Redis
+QUIT|_$^1|_$^1%|_$^Redis
+PUNSUBSCRIBE|_$^1|_$^1%|_$^Redis
+PUBLISH|_$^1|_$^1%|_$^Redis
+PTTL|_$^1|_$^1%|_$^Redis
+PUBSUB|_$^1|_$^1%|_$^Redis
+PSUBSCRIBE|_$^1|_$^1%|_$^Redis
+PSETEX|_$^1|_$^1%|_$^Redis
+PING|_$^1|_$^1%|_$^Redis
+PFMERGE|_$^1|_$^1%|_$^Redis
+PFCOUNT|_$^1|_$^1%|_$^Redis
+PFADD|_$^1|_$^1%|_$^Redis
+PEXPIREAT|_$^1|_$^1%|_$^Redis
+PEXPIRE|_$^1|_$^1%|_$^Redis
+PERSIST|_$^1|_$^1%|_$^Redis
+MULTI|_$^1|_$^1%|_$^Redis
+MSETNX|_$^1|_$^1%|_$^Redis
+MSET|_$^1|_$^1%|_$^Redis
+MONITOR|_$^1|_$^1%|_$^Redis
+MIGRATE|_$^1|_$^1%|_$^Redis
+MGET|_$^1|_$^1%|_$^Redis
+LSET|_$^1|_$^1%|_$^Redis
+LREM|_$^1|_$^1%|_$^Redis
+LRANGE|_$^1|_$^1%|_$^Redis
+LPUSHX|_$^1|_$^1%|_$^Redis
+LPUSH|_$^1|_$^1%|_$^Redis
+LPOP|_$^1|_$^1%|_$^Redis
+LLEN|_$^1|_$^1%|_$^Redis
+LINSERT|_$^1|_$^1%|_$^Redis
+LINDEX|_$^1|_$^1%|_$^Redis
+LASTSAVE|_$^1|_$^1%|_$^Redis
+INCRBYFLOAT|_$^1|_$^1%|_$^Redis
+INCRBY|_$^1|_$^1%|_$^Redis
+INCR|_$^1|_$^1%|_$^Redis
+HVALS|_$^1|_$^1%|_$^Redis
+HSTRLEN|_$^1|_$^1%|_$^Redis
+HSETNX|_$^1|_$^1%|_$^Redis
+HSET|_$^1|_$^1%|_$^Redis
+HMSET|_$^1|_$^1%|_$^Redis
+HMGET|_$^1|_$^1%|_$^Redis
+HLEN|_$^1|_$^1%|_$^Redis
+HKEYS|_$^1|_$^1%|_$^Redis
+HINCRBYFLOAT|_$^1|_$^1%|_$^Redis
+HINCRBY|_$^1|_$^1%|_$^Redis
+HGETALL|_$^1|_$^1%|_$^Redis
+HGET|_$^1|_$^1%|_$^Redis
+HEXISTS|_$^1|_$^1%|_$^Redis
+HDEL|_$^1|_$^1%|_$^Redis
+GETSET|_$^1|_$^1%|_$^Redis
+GETRANGE|_$^1|_$^1%|_$^Redis
+GETBIT|_$^1|_$^1%|_$^Redis
+GEORADIUSBYMEMBER|_$^1|_$^1%|_$^Redis
+GEORADIUS|_$^1|_$^1%|_$^Redis
+GEODIST|_$^1|_$^1%|_$^Redis
+GEOPOS|_$^1|_$^1%|_$^Redis
+GEOHASH|_$^1|_$^1%|_$^Redis
+GEOADD|_$^1|_$^1%|_$^Redis
+FLUSHDB|_$^1|_$^1%|_$^Redis
+FLUSHALL|_$^1|_$^1%|_$^Redis
+EXPIREAT|_$^1|_$^1%|_$^Redis
+EXPIRE|_$^1|_$^1%|_$^Redis
+EVALSHA|_$^1|_$^1%|_$^Redis
+ECHO|_$^1|_$^1%|_$^Redis
+DISCARD|_$^1|_$^1%|_$^Redis
+DEL|_$^1|_$^1%|_$^Redis
+DECRBY|_$^1|_$^1%|_$^Redis
+DECR|_$^1|_$^1%|_$^Redis
+SEGFAULT|_$^1|_$^1%|_$^Redis
+DEBUG|_$^1|_$^1%|_$^Redis
+DBSIZE|_$^1|_$^1%|_$^Redis
+RESETSTAT|_$^1|_$^1%|_$^Redis
+CONFIG|_$^1|_$^1%|_$^Redis
+GETKEYS|_$^1|_$^1%|_$^Redis
+COMMAND|_$^1|_$^1%|_$^Redis
+SLOTS|_$^1|_$^1%|_$^Redis
+SLAVES|_$^1|_$^1%|_$^Redis
+SETSLOT|_$^1|_$^1%|_$^Redis
+SET-CONFIG-EPOCH|_$^1|_$^1%|_$^Redis
+SAVECONFIG|_$^1|_$^1%|_$^Redis
+REPLICATE|_$^1|_$^1%|_$^Redis
+NODES|_$^1|_$^1%|_$^Redis
+MEET|_$^1|_$^1%|_$^Redis
+KEYSLOT|_$^1|_$^1%|_$^Redis
+GETKEYSINSLOT|_$^1|_$^1%|_$^Redis
+FORGET|_$^1|_$^1%|_$^Redis
+FAILOVER|_$^1|_$^1%|_$^Redis
+DELSLOTS|_$^1|_$^1%|_$^Redis
+COUNTKEYSINSLOT|_$^1|_$^1%|_$^Redis
+COUNT-FAILURE-REPORTS|_$^1|_$^1%|_$^Redis
+ADDSLOTS|_$^1|_$^1%|_$^Redis
+SETNAME|_$^1|_$^1%|_$^Redis
+REPLY|_$^1|_$^1%|_$^Redis
+GETNAME|_$^1|_$^1%|_$^Redis
+CLIENT|_$^1|_$^1%|_$^Redis
+BRPOPLPUSH|_$^1|_$^1%|_$^Redis
+BRPOP|_$^1|_$^1%|_$^Redis
+BLPOP|_$^1|_$^1%|_$^Redis
+BITPOS|_$^1|_$^1%|_$^Redis
+BITOP|_$^1|_$^1%|_$^Redis
+BITFIELD|_$^1|_$^1%|_$^Redis
+BITCOUNT|_$^1|_$^1%|_$^Redis
+BGSAVE|_$^1|_$^1%|_$^Redis
+BGREWRITEAOF|_$^1|_$^1%|_$^Redis
+AUTH|_$^1|_$^1%|_$^Redis
 GLOB|_$^1|_$^1%|_$^SQLite
 FAIL|_$^1|_$^1%|_$^SQLite
 CONFLICT|_$^1|_$^1%|_$^SQLite
 AUTOINCREMENT|_$^1|_$^1%|_$^SQLite
 ATTACH|_$^1|_$^1%|_$^SQLite
+createIndex|_$^1|_$^1%|_$^MongoDB
+findOne|_$^1|_$^1%|_$^MongoDB
 \=|_$^1|_$^1%|_$^Visual Basic .NET
 #If|_$^1|_$^1%|_$^Visual Basic .NET
 #End|_$^1|_$^1%|_$^Visual Basic .NET

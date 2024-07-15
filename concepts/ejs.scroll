@@ -25,6 +25,7 @@ example
  <% if (user) { %>
     <h2><%= user.name %></h2>
  <% } %>
+leetSheet https://cheatsheets.zip/ejs
 
 githubRepo https://github.com/tj/ejs
  firstCommit 2010

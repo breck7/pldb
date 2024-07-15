@@ -13,22 +13,13 @@ class ScrollSetCLI {
   }
 
   importCommand(filename) {
-    // todo: add support for updating as well
-    const processEntry = (node, index) => {
-      const id = node.get("id")
-      node.delete("id")
-      const target = this.makeFilePath(id)
-      Disk.write(target, new TreeNode(Disk.read(target)).patch(node).toString())
-      console.log(`Processed ${filename}`)
-    }
-
     const extension = filename.split(".").pop()
 
-    if (extension === "csv") TreeNode.fromCsv(Disk.read(filename)).forEach(processEntry)
+    if (extension === "csv") TreeNode.fromCsv(Disk.read(filename)).forEach(patch => this.patchAndSave(patch))
 
-    if (extension === "tsv") TreeNode.fromTsv(Disk.read(filename)).forEach(processEntry)
+    if (extension === "tsv") TreeNode.fromTsv(Disk.read(filename)).forEach(patch => this.patchAndSave(patch))
 
-    if (extension === "tree") TreeNode.fromDisk(filename).forEach(processEntry)
+    if (extension === "tree") TreeNode.fromDisk(filename).forEach(patch => this.patchAndSave(patch))
   }
 
   get searchIndex() {
@@ -42,6 +33,18 @@ class ScrollSetCLI {
 
   getTree(file) {
     return new TreeNode(Disk.read(this.makeFilePath(file.id)))
+  }
+
+  patchAndSave(patch) {
+    const id = patch.get("id")
+    patch.delete("id")
+    const target = this.makeFilePath(id)
+    if (!Disk.exists(target)) {
+      console.log(`Now match for ${id}`)
+      return
+    }
+    console.log(`Patching ${id}`)
+    return new ScrollFile(new TreeNode(Disk.read(target)).patch(patch).toString(), target, scrollFs).formatAndSave()
   }
 
   setAndSave(file, measurementPath, measurementValue) {

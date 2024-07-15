@@ -199,7 +199,7 @@
     "Values": 4960,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21320",
+    "Example": "21318",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -1656,7 +1656,7 @@
   },
   {
     "Name": "twitter",
-    "Values": 257,
+    "Values": 256,
     "Coverage": "5%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -1801,8 +1801,8 @@
   },
   {
     "Name": "leetSheet",
-    "Values": 21,
-    "Coverage": "0%",
+    "Values": 73,
+    "Coverage": "1%",
     "Question": "What is a URL to a leet sheet for this language?",
     "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",
     "Type": "string",

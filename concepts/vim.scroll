@@ -1,6 +1,6 @@
 import ../code/conceptPage.scroll
 
-id vim-editor
+id vim
 name Vim
 appeared 1991
 creators Bram Moolenaar
@@ -8,13 +8,14 @@ tags editor
 website https://www.vim.org/
 
 isOpenSource true
-influencedBy vi-editor
+influencedBy vi
 fileType na
 packageRepository https://vimawesome.com/
 
 subreddit https://reddit.com/r/vim
  memberCount
   2022 147766
+leetSheet https://cheatsheets.zip/vim
 
 wikipedia https://en.wikipedia.org/wiki/Vim_(text_editor)
  example
@@ -27,7 +28,7 @@ wikipedia https://en.wikipedia.org/wiki/Vim_(text_editor)
     echo "count is" i
     let i += 1
   endwhile
- related c unix linux ios android vi-editor tcl lua perl python racket ruby regex gzip ftp http unicode
+ related c unix linux ios android vi tcl lua perl python racket ruby regex gzip ftp http unicode
  summary Vim (; a contraction of Vi IMproved) is a clone, with additions, of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface. Vim is free and open-source software and is released under a license that includes some charityware clauses, encouraging users who enjoy the software to consider donating to children in Uganda. The license is compatible with the GNU General Public License through a special clause allowing distribution of modified copies "under the GNU GPL version 2 or any later version".Although it was originally released for the Amiga, Vim has since been developed to be cross-platform, supporting many other platforms. In 2006, it was voted the most popular editor amongst Linux Journal readers; in 2015 the Stack Overflow developer survey found it to be the third most popular text editor; and in 2016 the Stack Overflow developer survey found it to be the fourth most popular development environment.
  pageId 32478
  created 2001

@@ -271,14 +271,28 @@ body {
 
 .trueBaseThemeQuickLinks a {
   display: inline-block;
-  color: black;
+  color: #333;
   text-decoration: none;
+  border: 1px solid #333;
+  opacity: 0.6;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  font-size: 18px;
 }
 .trueBaseThemeQuickLinks a svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 .trueBaseThemeQuickLinks a:hover {
+  background-color: #f0f0f0;
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
+.trueBaseThemeQuickLinks a:active {
+  background-color: #c0c0c0;
   filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
 }
 

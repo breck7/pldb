@@ -3,10 +3,7 @@ date 2017.12.09 12:00:00 -8000
 groups All
 title What is the growth in programming languages over time?
 
-import postHeader.scroll
-printTitle
-mediumColumns 1
-printAuthor
+import standardPostHeader.scroll
 
 * As I build up my database of programming languages I hope to be able to answer questions like:
  dateline

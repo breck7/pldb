@@ -3,10 +3,7 @@ date 2017.11.22 12:00:00 -8000
 groups All
 title How Many Web APIs are there in the World?
 
-import postHeader.scroll
-printTitle
-mediumColumns 1
-printAuthor
+import standardPostHeader.scroll
 
 Last week I explored the question "how many programming languages are there in the world?"
  link how-many-programming-languages-are-there-in-the-world.html question
