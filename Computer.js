@@ -1877,6 +1877,7 @@ class Tables {
       "scrollnotation",
       "scroll",
       "parsers",
+      "git",
       "python",
       "bash",
       "markdown",
