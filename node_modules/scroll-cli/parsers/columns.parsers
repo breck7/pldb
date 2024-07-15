@@ -2,7 +2,7 @@ thinColumnsParser
  extends abstractAftertextParser
  cruxFromId
  catchAllCellType integerCell
- description Start a multicolumn grid.
+ description Thin columns.
  javascript
   compileEmbeddedVersion() {
    return ""
@@ -19,19 +19,20 @@ thinColumnsParser
 
 wideColumnsParser
  extends thinColumnsParser
- description Start a double wide column.
+ description Wide columns.
  javascript
   columnWidth = 90
 
 mediumColumnsParser
  extends thinColumnsParser
+ description Medium width columns.
  javascript
   columnWidth = 65
 
 endColumnsParser
  extends abstractAftertextParser
  cruxFromId
- description End a multicolumn grid.
+ description End columns.
  javascript
   compile() {
    return "</div>"

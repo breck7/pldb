@@ -1,7 +1,7 @@
 // https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#text
 printSiteMapParser
  extends abstractPostLoopParser
- description Prints out a plain text sitemap.
+ description Print text sitemap.
  example
   baseUrl http://test.com
   printSiteMap

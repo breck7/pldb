@@ -12,7 +12,7 @@ abstractPostLoopParser
 loopParser
  extends abstractAftertextParser
  cells commandWordCell
- description Iterate over files, lines or words, evaluating code and joining the resulting HTML.
+ description Iterate over files+ to make HTML.
  cruxFromId
  inScope abstractItemsProviderParser
  joinParser

@@ -1,5 +1,5 @@
 buildCssParser
- description Compile document to CSS and save to disk.
+ description Compile to CSS file.
  extends abstractBuildCommandParser
 
 cssAnyCell
@@ -9,7 +9,7 @@ cssLineParser
  catchAllParser cssLineParser
 cssParser
  extends abstractScrollParser
- description Prints CSS content wrapped in a style tag.
+ description A style tag.
  cruxFromId
  catchAllParser cssLineParser
  catchAllCellType cssAnyCell

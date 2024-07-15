@@ -237,7 +237,7 @@ commentLineParser
  catchAllCellType commentCell
 
 abstractCommentParser
- description Comments do not appear in the compiled HTML.
+ description Prints nothing.
  catchAllCellType commentCell
  cells commentCell
  extends abstractScrollParser
@@ -255,10 +255,13 @@ commentParser
 slashCommentParser
  extends commentParser
  crux //
+ boolean isPopular true
+ description A comment. Prints nothing.
 
 blankLineParser
- description Blank lines compile to nothing in the HTML.
+ description Print nothing. Break section.
  cells blankCell
+ boolean isPopular true
  javascript
   compile() {
    return this.parent.clearSectionStack()
@@ -273,14 +276,14 @@ measureNameCell
 
 buildMeasuresParser
  cruxFromId
- description Compile measure metadata to a data format(s) and save to disk.
+ description Write measures to csv+ files.
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
   cells commandWordCell anyCell
 
 printMeasuresParser
- description Print measures statistics in a page into an HTML table.
+ description Print measure stats to HTML table.
  cruxFromId
  extends abstractScrollParser
  javascript
@@ -404,8 +407,9 @@ abstractBooleanMeasureParser
 
 
 importParser
- description Import one file into another.
+ description Import a file.
  cruxFromId
+ boolean isPopular true
  cells preBuildCommandWordCell
  extends abstractScrollParser
  catchAllCellType filePathCell
@@ -417,7 +421,8 @@ importParser
   import header.scroll
 
 importOnlyParser
- description Mark a file as not one to build. This line will be not be imported into the importing file.
+ // This line will be not be imported into the importing file.
+ description Don't build this file.
  cruxFromId
  cells preBuildCommandWordCell
  extends abstractTopLevelSingleMetaParser
@@ -604,11 +609,11 @@ abstractChatUrlMeasureParser
  // todo remove the need for the below from Parsers
  string sortKey abstractChatUrlMeasureParser
 
-// cheatSheetUrl
-cheatSheetUrlParser
+// leetSheet
+leetSheetParser
  extends abstractUrlMeasureParser
  single false
- description What is a URL to a cheat sheet for this language?
+ description What is a URL to a leet sheet for this language?
  float sortIndex 3.3
 
 // codemirror

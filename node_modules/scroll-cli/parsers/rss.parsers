@@ -1,13 +1,13 @@
 buildRssParser
- description Compile metadata on a group(s) of documents to RSS and save to disk.
+ description Write RSS file.
  extends abstractBuildCommandParser
 
 rssFeedUrlParser
- description URL for RSS feed, if any.
+ description Set RSS feed URL.
  extends abstractUrlSettingParser
 
 printFeedParser
- description Prints out the RSS feed for a group.
+ description Print group to RSS.
  extends abstractPostLoopParser
  example
   printFeed index

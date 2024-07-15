@@ -1,5 +1,5 @@
 belowAsCodeParser
- description Print the Scroll code of the next node.
+ description Print code below.
  extends abstractScrollParser
  catchAllCellType integerCell
  cruxFromId
@@ -31,7 +31,7 @@ belowAsCodeParser
   }
 
 belowAsCodeUntilParser
- description Same as belowAsCode, except you can provide a search string to find the line where printing should stop.
+ description Print code above until match.
  extends belowAsCodeParser
  catchAllCellType anyCell
  javascript
@@ -49,7 +49,7 @@ belowAsCodeUntilParser
   }
 
 aboveAsCodeParser
- description Print the Scroll code for the previous node.
+ description Print code above.
  extends belowAsCodeParser
  javascript
   method = "previous"

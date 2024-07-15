@@ -1,5 +1,5 @@
 keyboardNavParser
- description Makes left go to previous file and right go to next file.
+ description Make left and right navigate files.
  extends abstractScrollParser
  cruxFromId
  catchAllCellType urlCell

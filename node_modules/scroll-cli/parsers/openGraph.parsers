@@ -1,9 +1,11 @@
 openGraphDescriptionParser
  catchAllCellType stringCell
  crux description
- description Description for Open Graph. https://ogp.me/. If not defined, Scroll will try to generate it's own.
+ description Override Open Graph Description.
  extends abstractTopLevelSingleMetaParser
 
 openGraphImageParser
- description URL for Open Graph Image. https://ogp.me/. If not defined, Scroll will try to generate it's own using the first image tag on your page.
+ // https://ogp.me/
+ // If not defined, Scroll will try to generate it's own using the first image tag on your page.
+ description Override Open Graph Image.
  extends abstractUrlSettingParser

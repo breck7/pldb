@@ -1,5 +1,5 @@
 printCsvParser
- description Prints out a group as a CSV.
+ description Print group metadata to CSV.
  extends printFeedParser
  example
   printCsv index

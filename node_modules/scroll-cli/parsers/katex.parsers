@@ -3,7 +3,7 @@ katexParser
  extends abstractScrollWithRequirementsParser
  catchAllCellType codeCell
  catchAllParser lineOfCodeParser
- description Use the KaTex library to typeset math.
+ description KaTex widget for typeset math.
  string copyFromExternal katex.min.css katex.min.js
  string requireOnce
   <link rel="stylesheet" href="katex.min.css">

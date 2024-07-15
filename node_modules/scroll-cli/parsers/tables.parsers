@@ -68,7 +68,7 @@ rowParser
   }
 
 tableParser
- description A table with a custom delimiter.
+ description A table from a custom delimiter.
  extends abstractTableParser
  catchAllCellType anyCell
  javascript
@@ -77,22 +77,22 @@ tableParser
   }
 
 commaTableParser
- description Comma separated values table.
+ description A table from CSV data.
  extends abstractTableParser
  string delimiter ,
 
 pipeTableParser
- description Pipe separated values table.
+ description A table from |SV data.
  extends abstractTableParser
  string delimiter |
 
 spaceTableParser
- description Space separated values table. Last column is a catch all.
+ description A table. Last column is catchall.
  extends abstractTableParser
  string delimiter  
 
 tabTableParser
- description Tab separated values table.
+ description A table from TSV data.
  extends abstractTableParser
  string delimiter \t
 
@@ -105,14 +105,15 @@ tableSearchParser
   <link rel="stylesheet" href="dataTables.dataTables.min.css">
   <script defer src="dataTables.min.js"></script>
   <script defer src="tableSearch.js"></script>
- description Add table search and sort to all tables on the page.
+ // adds to all tables on page
+ description Table search and sort widget.
  javascript
   compileInstance() {
    return ""
   }
 
 printTableParser
- description Print a tabular table in a page into an HTML table.
+ description Print table from tabular data.
  cruxFromId
  catchAllCellType integerCell
  extends abstractScrollParser

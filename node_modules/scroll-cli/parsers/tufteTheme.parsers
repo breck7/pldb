@@ -1,5 +1,6 @@
 tufteCssParser
- description A theme built using Tufte CSS. https://github.com/edwardtufte/tufte-css
+ // https://github.com/edwardtufte/tufte-css
+ description Theme from Tufte CSS.
  extends abstractThemeCssParser
  javascript
   get css() {

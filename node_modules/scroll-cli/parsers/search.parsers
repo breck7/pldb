@@ -1,5 +1,5 @@
 printSearchTableParser
- description Prints out all pages into an HTML table that can be searched.
+ description Prints files to HTML table.
  extends abstractPostLoopParser
  example
   printSearchTable

@@ -133,6 +133,9 @@ code {
 .scrollParagraph {
   text-align: justify;
 }
+center .scrollParagraph {
+  text-align: center;
+}
 .scrollColumns {
   column-count: auto;
   column-fill: balance;

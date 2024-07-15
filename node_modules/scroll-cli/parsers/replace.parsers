@@ -13,14 +13,14 @@ abstractVariableParser
   }
 
 replaceParser
- description Define a variable token and replacement that will be applied to all lines before and after this one.
+ description Replace this with that.
  extends abstractVariableParser
  baseParser blobParser
  example
   replace YEAR 2022
 
 replaceJsParser
- description Define a variable token and replacement that will be applied to all lines before and after this one.
+ description Replace this with evaled JS.
  extends replaceParser
  catchAllCellType javascriptCell
  example
@@ -28,7 +28,7 @@ replaceJsParser
   * 1+1 = SUM
 
 replaceNodejsParser
- description Write nodejs code inside a Scroll file. Sort of like PHP.
+ description Replace this with evaled Node.JS.
  extends abstractVariableParser
  catchAllCellType javascriptCell
  baseParser blobParser

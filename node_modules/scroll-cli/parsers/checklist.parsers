@@ -2,7 +2,7 @@ checklistTodoParser
  extends abstractIndentableParagraphParser
  example
   [] Get milk
- description An incomplete checklist item.
+ description A task todo.
  crux []
  string checked 
  javascript
@@ -14,7 +14,7 @@ checklistTodoParser
   }
 checklistDoneParser
  extends checklistTodoParser
- description A complete checklist list item.
+ description A completed task.
  string checked checked
  crux [x]
  example

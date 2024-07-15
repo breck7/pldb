@@ -2542,6 +2542,11 @@ var autocompleteJs = [
     "url": "/concepts/numba.html"
   },
   {
+    "label": "Scroll",
+    "id": "scroll",
+    "url": "/concepts/scroll.html"
+  },
+  {
     "label": "Shen",
     "id": "shen",
     "url": "/concepts/shen.html"
@@ -2550,11 +2555,6 @@ var autocompleteJs = [
     "label": "commonmark",
     "id": "commonmark",
     "url": "/concepts/commonmark.html"
-  },
-  {
-    "label": "Scroll",
-    "id": "scroll",
-    "url": "/concepts/scroll.html"
   },
   {
     "label": "Scroll Notation",

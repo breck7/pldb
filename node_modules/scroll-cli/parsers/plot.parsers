@@ -1,5 +1,5 @@
 abstractPlotParser
- description Use Plot from observablehq.
+ // Observablehq
  extends abstractScrollWithRequirementsParser
  string iris
   sepal_length,sepal_width,petal_length,petal_width,species
@@ -54,6 +54,7 @@ abstractPlotParser
 
 scatterplotParser
  extends abstractPlotParser
+ description Scatterplot Widget.
  // todo: make copyFromExternal work with inheritance
  string copyFromExternal d3.js plot.js
  javascript

@@ -5,14 +5,14 @@ measureNameCell
 
 buildMeasuresParser
  cruxFromId
- description Compile measure metadata to a data format(s) and save to disk.
+ description Write measures to csv+ files.
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
   cells commandWordCell anyCell
 
 printMeasuresParser
- description Print measures statistics in a page into an HTML table.
+ description Print measure stats to HTML table.
  cruxFromId
  extends abstractScrollParser
  javascript

@@ -1,6 +1,7 @@
 loadConceptsParser
  // todo: clean this up. just add smarter imports with globs?
- description Load all concepts in all scroll files in a folder and remove any "import" statements.
+ // this currently removes any "import" statements.
+ description Import all concepts in a folder.
  extends abstractBuildCommandParser
  cruxFromId
  cells preBuildCommandWordCell filePathCell
@@ -19,7 +20,7 @@ loadConceptsParser
   }
 
 printConceptsParser
- description Print the concepts in a page into an HTML table.
+ description Print concepts to HTML table.
  cruxFromId
  extends abstractScrollParser
  javascript
@@ -33,7 +34,7 @@ printConceptsParser
 
 buildConceptsParser
  cruxFromId
- description Compiles concepts to a data format(s) and save to disk.
+ description Write concepts to csv+ files.
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId

@@ -1,5 +1,5 @@
 printSourceParser
- description Prints out the source code for each file in a group.
+ description Print source for files in group(s).
  extends printFeedParser
  example
   printSource index

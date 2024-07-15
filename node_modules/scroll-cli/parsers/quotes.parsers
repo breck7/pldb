@@ -17,6 +17,7 @@ quoteParser
 
 quickQuoteParser
  crux >
+ boolean isPopular true
  extends abstractIndentableParagraphParser
  description A quote.
  javascript

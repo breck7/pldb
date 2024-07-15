@@ -1186,8 +1186,8 @@ ${creatorsLinks}
 
     if (faqPage.length >= 1) facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
-    const cheatSheetUrl = this.get("cheatSheetUrl")
-    if (cheatSheetUrl) facts.push(`${title} cheat sheet\n ${cheatSheetUrl}`)
+    const leetSheet = this.get("leetSheet")
+    if (leetSheet) facts.push(`${title} leet sheet\n ${leetSheet}`)
 
     const indeedJobs = this.node.getNode("indeedJobs")
     if (indeedJobs) {

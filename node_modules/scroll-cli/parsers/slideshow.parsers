@@ -1,5 +1,6 @@
 slideshowParser
- description Turns a page into a slideshow. A dinkus (***) separates slides. Left and right arrows navigate.
+ // Left and right arrows navigate.
+ description Slideshow widget. *** delimits slides.
  extends abstractScrollWithRequirementsParser
  string copyFromExternal jquery-3.7.1.min.js slideshow.js
  example

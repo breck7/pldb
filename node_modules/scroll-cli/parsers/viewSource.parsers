@@ -1,14 +1,14 @@
 viewSourceBaseUrlParser
- description The base link to be used to generate all of the git "View source" links. If not provided, the scroll filename will be used.
+ description Override source link baseUrl.
  extends abstractUrlSettingParser
 
 viewSourceUrlParser
  catchAllCellType urlCell
- description Use this to override the link to the source code for a scroll file.
+ description Override source link.
  extends abstractTopLevelSingleMetaParser
 
 printViewSourceParser
- description Print a "View source" link.
+ description Print "View source" link.
  extends abstractAftertextParser
  cruxFromId
  javascript
@@ -25,7 +25,7 @@ printViewSourceParser
   }
 
 printViewSourceBadgeParser
- description Print a "View source" badge in top right.
+ description Print badge top right.
  extends abstractAftertextParser
  cruxFromId
  javascript

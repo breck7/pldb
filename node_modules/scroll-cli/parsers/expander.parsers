@@ -1,6 +1,6 @@
 expanderParser
  cruxFromId
- description Prints the section in an expandable html details and summary tag.
+ description An collapsible HTML details tag.
  extends paragraphParser
  javascript
   compile() {

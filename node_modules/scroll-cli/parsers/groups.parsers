@@ -4,7 +4,7 @@ groupNameWithOptionalFolderCell
  description A group name optionally combined with a folder path. Only used when referencing groups, not in posts.
  extends stringCell
 groupsParser
- description Add this file to zero or more groups.
+ description Set groups.
  example
   groups All
  extends abstractTopLevelSingleMetaParser

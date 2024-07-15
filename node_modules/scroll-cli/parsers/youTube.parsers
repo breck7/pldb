@@ -1,6 +1,7 @@
 youTubeParser
  extends abstractCaptionedParser
- description Embed a YouTube video. Include the YouTube embed URL such as https://www.youtube.com/embed/CYPYZnVQoLg
+ // Include the YouTube embed URL such as https://www.youtube.com/embed/CYPYZnVQoLg
+ description A YouTube video widget.
  javascript
   getFigureContent() {
    const url = this.getWord(1).replace("youtube.com/watch?v=", "youtube.com/embed/")

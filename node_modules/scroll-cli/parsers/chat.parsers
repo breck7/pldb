@@ -2,7 +2,7 @@ chatLineParser
  catchAllCellType anyCell
  catchAllParser chatLineParser
 chatParser
- description A dialogue between two people.
+ description A faux text chat conversation.
  catchAllParser chatLineParser
  cruxFromId
  extends abstractScrollParser

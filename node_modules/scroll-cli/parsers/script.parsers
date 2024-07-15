@@ -1,5 +1,5 @@
 buildJsParser
- description Compile document to JS and save to disk.
+ description Compile to JS file.
  extends abstractBuildCommandParser
 
 scriptAnyCell
@@ -9,7 +9,7 @@ scriptLineParser
  catchAllParser scriptLineParser
 scriptParser
  extends abstractScrollParser
- description Prints Javascript content wrapped in script tags.
+ description Print script tag.
  cruxFromId
  catchAllParser scriptLineParser
  catchAllCellType scriptAnyCell

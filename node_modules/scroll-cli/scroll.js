@@ -299,6 +299,10 @@ class ScrollFile {
     return !this.importOnly && (permalink.endsWith(".html") || permalink.endsWith(".htm"))
   }
 
+  get parserIds() {
+    return this.scrollProgram.topDownArray.map(node => node.definition.id)
+  }
+
   _concepts
   get concepts() {
     if (this._concepts) return this._concepts

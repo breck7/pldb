@@ -1,5 +1,5 @@
 siteOwnerEmailParser
- description Email address for the site owner.
+ description Set email address for site contact.
  extends abstractTopLevelSingleMetaParser
  crux email
  cells metaCommandWordCell emailAddressCell

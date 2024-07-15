@@ -1,5 +1,5 @@
 endSnippetParser
- description Insert one of these where you want to cut the file for a snippet.
+ description Cut for snippet here.
  extends abstractScrollParser
  cruxFromId
  javascript
@@ -13,7 +13,7 @@ printSnippetsParser
  cruxFromId
  cells commandWordCell
  catchAllCellType groupNameWithOptionalFolderCell
- description Prints the snippets of all files in the named group(s).
+ description Prints snippets in group(s).
  example
   printSnippets index
  javascript
@@ -53,7 +53,7 @@ printSnippetsParser
 printFullSnippetsParser
  extends printSnippetsParser
  cruxFromId
- description Prints the full contents of files that are in the named group.
+ description Print full pages in group(s).
  javascript
   makeSnippet(file, compileSettings) {
    return file.scrollProgram.compileEmbeddedVersion(compileSettings) + file.viewSourceHtml

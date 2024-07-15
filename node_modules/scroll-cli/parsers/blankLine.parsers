@@ -1,6 +1,7 @@
 blankLineParser
- description Blank lines compile to nothing in the HTML.
+ description Print nothing. Break section.
  cells blankCell
+ boolean isPopular true
  javascript
   compile() {
    return this.parent.clearSectionStack()
