@@ -823,10 +823,15 @@ image ${image}
     return this.nextRanked.permalink
   }
 
+  get primaryLeetSheet() {
+    const leetSheet = this.get("leetSheets")
+    return leetSheet ? leetSheet.split(" ")[0] : ""
+  }
+
   get quickLinks() {
     const links = {
       home: this.website,
-      leetSheet: this.get("leetSheet"),
+      leetSheet: this.primaryLeetSheet,
       terminal: this.repl,
       git: this.parsed.mainRepo,
       newspaper: this.get("blog"),
@@ -1190,7 +1195,7 @@ ${creatorsLinks}
 
     if (faqPage.length >= 1) facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
-    const leetSheet = this.get("leetSheet")
+    const leetSheet = this.primaryLeetSheet
     if (leetSheet) facts.push(`${title} leet sheet\n ${leetSheet}`)
 
     const indeedJobs = this.node.getNode("indeedJobs")

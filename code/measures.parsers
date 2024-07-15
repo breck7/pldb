@@ -174,11 +174,11 @@ abstractChatUrlMeasureParser
  string sortKey abstractChatUrlMeasureParser
 
 // leetSheet
-leetSheetParser
+leetSheetsParser
  extends abstractUrlMeasureParser
- single false
- description What is a URL to a leet sheet for this language?
+ description What is a URL(s) to a leet sheet(s) for this language?
  float sortIndex 3.3
+ catchAllCellType urlCell
 
 // codemirror
 codeMirrorParser
