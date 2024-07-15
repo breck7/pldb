@@ -1,0 +1,78 @@
+Scale
+=====
+
+Scale is a programming language created in 2024.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222024%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+#3566 on PLDB
+0 Years Old
+
+SCALE is a GPGPU programming toolkit that allows CUDA applications to be natively compiled for AMD GPUs.
+
+- Scale website
+ https://scale-lang.com
+- Scale appears in categories: programming language
+- Official Blog page for Scale
+ https://scale-lang.com/posts
+
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+// The kernel we are going to launch
+__global__ void basicSum(const int * a, const int * b, size_t n, int * out) {
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+    if(idx &lt; n)
+    {
+        out[idx] = a[idx] + b[idx];
+    }
+}
+// A generic helper function to simplify error handling.
+void check(cudaError_t error, const char * file, size_t line) {
+    if (error != cudaSuccess)
+    {
+        std::cout &lt;&lt; &quot;cuda error: &quot; &lt;&lt; cudaGetErrorString(error) &lt;&lt; &quot; at &quot; &lt;&lt; file &lt;&lt; &quot;:&quot; &lt;&lt; line &lt;&lt; std::endl;
+        exit(1);
+    }
+}
+// A wrapper for the helper function above to include the filename and line number
+// where the error occurs into the output.
+#define CHECK(error) check(error, __FILE__, __LINE__)
+int main(int argc, char ** argv) {
+    const size_t N = 4096;
+    const size_t BYTES = N * sizeof(int);
+    std::vector&lt;int&gt; a(N);
+    std::vector&lt;int&gt; b(N);
+    std::vector&lt;int&gt; out(N);
+    // Generate input data
+    for (size_t i = 0; i &lt; N; i++) {
+        a[i] = i * 2;
+        b[i] = N - i;
+    }
+    int * devA;
+    int * devB;
+    int * devOut;
+    // Allocate memory for the inputs and the output
+    CHECK(cudaMalloc(&amp;devA, BYTES));
+    CHECK(cudaMalloc(&amp;devB, BYTES));
+    CHECK(cudaMalloc(&amp;devOut, BYTES));
+    // Copy the input data to the device
+    CHECK(cudaMemcpy(devA, a.data(), BYTES, cudaMemcpyHostToDevice));
+    CHECK(cudaMemcpy(devB, b.data(), BYTES, cudaMemcpyHostToDevice));
+    // Launch the kernel
+    basicSum&lt;&lt;&lt;N / 256 + 1, 256&gt;&gt;&gt;(devA, devB, N, devOut);
+    CHECK(cudaDeviceSynchronize());
+    CHECK(cudaGetLastError());
+    // Copy the output data back to host
+    CHECK(cudaMemcpy(out.data(), devOut, BYTES, cudaMemcpyDeviceToHost));
+    // Free up the memory we allocated for the inputs and the output
+    CHECK(cudaFree(devA));
+    CHECK(cudaFree(devB));
+    CHECK(cudaFree(devOut));
+    // Test that the output matches our expectations
+    for (size_t i = 0; i &lt; N; i++) {
+        if (a[i] + b[i] != out[i]) {
+            std::cout &lt;&lt; &quot;Incorrect sum: &quot; &lt;&lt; a[i] &lt;&lt; &quot; + &quot; &lt;&lt; b[i] &lt;&lt; &quot; = &quot; &lt;&lt; out[i] &lt;&lt; &quot; ?\n&quot;;
+        }
+    }
+    std::cout &lt;&lt; &quot;Example finished&quot; &lt;&lt; std::endl;
+    return 0;
+}
