@@ -20,6 +20,7 @@ leachim6 Django
   
   def index(request):
       return HttpResponse("Hello World")
+leetSheet https://cheatsheets.zip/django
 
 wikipedia https://en.wikipedia.org/wiki/Django_(web_framework)
  related python regex html xml json nginx-config postgresql mysql sqlite mongodb jython ruby perl php erlang isbn
