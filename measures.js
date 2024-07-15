@@ -1026,7 +1026,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 1500,
+    "Values": 1499,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",

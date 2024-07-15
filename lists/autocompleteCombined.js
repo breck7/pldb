@@ -612,14 +612,14 @@ var autocompleteJs = [
     "url": "/concepts/cobol.html"
   },
   {
-    "label": "CUDA",
-    "id": "cuda",
-    "url": "/concepts/cuda.html"
-  },
-  {
     "label": "Dart",
     "id": "dart",
     "url": "/concepts/dart.html"
+  },
+  {
+    "label": "CUDA",
+    "id": "cuda",
+    "url": "/concepts/cuda.html"
   },
   {
     "label": "Visual Basic",
@@ -1147,14 +1147,14 @@ var autocompleteJs = [
     "url": "/concepts/hy.html"
   },
   {
-    "label": "Puppet",
-    "id": "puppet",
-    "url": "/concepts/puppet.html"
-  },
-  {
     "label": "Ballerina",
     "id": "ballerina",
     "url": "/concepts/ballerina.html"
+  },
+  {
+    "label": "Puppet",
+    "id": "puppet",
+    "url": "/concepts/puppet.html"
   },
   {
     "label": "Factor",
@@ -2347,14 +2347,14 @@ var autocompleteJs = [
     "url": "/concepts/xojo.html"
   },
   {
-    "label": "datascript",
-    "id": "datascript",
-    "url": "/concepts/datascript.html"
-  },
-  {
     "label": "Oz",
     "id": "oz",
     "url": "/concepts/oz.html"
+  },
+  {
+    "label": "datascript",
+    "id": "datascript",
+    "url": "/concepts/datascript.html"
   },
   {
     "label": "Impala",
