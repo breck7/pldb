@@ -173,11 +173,11 @@ abstractChatUrlMeasureParser
  // todo remove the need for the below from Parsers
  string sortKey abstractChatUrlMeasureParser
 
-// cheatSheetUrl
-cheatSheetUrlParser
+// leetSheet
+leetSheetParser
  extends abstractUrlMeasureParser
  single false
- description What is a URL to a cheat sheet for this language?
+ description What is a URL to a leet sheet for this language?
  float sortIndex 3.3
 
 // codemirror
