@@ -829,6 +829,7 @@ image ${image}
       leetSheet: this.get("leetSheet"),
       terminal: this.repl,
       git: this.parsed.mainRepo,
+      newspaper: this.get("blog"),
       wikipedia: this.get(`wikipedia`),
       reddit: this.get("subreddit"),
       twitter: this.get("twitter"),
