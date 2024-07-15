@@ -669,8 +669,8 @@ pipeTable
           `Feature ${feature.title}
 FeatureLink ${feature.titleLink}
 Supported ${supported ? `<span class="hasFeature">✓</span>` : `<span class="doesNotHaveFeature">X</span>`}
-Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}
-Example`
+Example
+Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
         )
         .touchNode("Example")
         .setChildren(node.childrenToString())
