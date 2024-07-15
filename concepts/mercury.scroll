@@ -66,7 +66,7 @@ wikipedia https://en.wikipedia.org/wiki/Mercury_(programming_language)
           io.write_int(fib(10), !IO),
           io.nl(!IO).
           % Could instead use io.format("fib(10) = %d\n", [i(fib(10))], !IO).
- related autocode mercurial ia-32 arm unix linux solaris freebsd android prolog hope haskell c java csharp erlang assembly-language cil vim-editor emacs-editor eclipse-editor curry alice standard-ml oz visual-prolog
+ related autocode mercurial ia-32 arm unix linux solaris freebsd android prolog hope haskell c java csharp erlang assembly-language cil vim emacs-editor eclipse-editor curry alice standard-ml oz visual-prolog
  summary Mercury is a functional logic programming language made for real-world uses. The first version was developed at the University of Melbourne, Computer Science department, by Fergus Henderson, Thomas Conway, and Zoltan Somogyi, under Somogyi's supervision, and released on April 8, 1995. Mercury is a purely declarative logic programming language. It is related to both Prolog and Haskell. It features a strong, static, polymorphic type system, and a strong mode and determinism system. The official implementation, the Melbourne Mercury Compiler, is available for most Unix and Unix-like platforms, including Linux, macOS, and for Windows (32bits only).
  pageId 19726
  dailyPageViews 74

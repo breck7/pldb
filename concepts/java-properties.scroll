@@ -41,7 +41,7 @@ wikipedia https://en.wikipedia.org/wiki/.properties
   # If you want your property to include a backslash, it should be escaped by another backslash
   path=c:\\wiki\\templates
   # However, some editors will handle this automatically
- related java unicode notepad-editor emacs-editor vim-editor ascii eclipse-editor perl xml yaml
+ related java unicode notepad-editor emacs-editor vim ascii eclipse-editor perl xml yaml
  summary .properties is a file extension for files mainly used in Java related technologies to store the configurable parameters of an application. They can also be used for storing strings for Internationalization and localization; these are known as Property Resource Bundles. Each parameter is stored as a pair of strings, one storing the name of the parameter (called the key), and the other storing the value.
  created 2006
  backlinksCount 33

@@ -131,7 +131,7 @@ wikipedia https://en.wikipedia.org/wiki/D_(programming_language)
   15         if(words.length > 1)
   16             writefln(words.join(" "));
   17 }
- related freebsd linux c csharp eiffel java python minid vala swift genie ruby assembly-language llvmir cil eclipse-editor visual-studio-editor emacs-editor vim-editor textmate-editor visual-studio-code-editor gdb utf-8
+ related freebsd linux c csharp eiffel java python minid vala swift genie ruby assembly-language llvmir cil eclipse-editor visual-studio-editor emacs-editor vim textmate-editor visual-studio-code-editor gdb utf-8
  summary The D programming language is an object-oriented, imperative, multi-paradigm system programming language created by Walter Bright of Digital Mars and released in 2001. Bright was joined in the design and development effort in 2007 by Andrei Alexandrescu. Though it originated as a re-engineering of C++, D is a distinct language, having redesigned some core C++ features while also taking inspiration from other languages, notably Java, Python, Ruby, C#, and Eiffel. D's design goals attempt to combine the performance and safety of compiled languages with the expressive power of modern dynamic languages. Idiomatic D code is commonly as fast as equivalent C++ code, while being shorter and memory-safe. Type inference, automatic memory management and syntactic sugar for common types allow faster development, while bounds checking, design by contract features and a concurrency-aware type system help reduce the occurrence of bugs.
  pageId 243881
  dailyPageViews 1008

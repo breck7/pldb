@@ -49,7 +49,7 @@ wikipedia https://en.wikipedia.org/wiki/SuperCollider
  example
   // Factorial function
   f = { |x| if(x == 0) { 1 } { f.(x-1) * x } };
- related freebsd linux smalltalk c lisp puredata scheme haskell scala clojure android ios emacs-editor vim-editor
+ related freebsd linux smalltalk c lisp puredata scheme haskell scala clojure android ios emacs-editor vim
  summary SuperCollider is an environment and programming language originally released in 1996 by James McCartney for real-time audio synthesis and algorithmic composition. Since then it has been evolving into a system used and further developed by both scientists and artists working with sound. It is an efficient and expressive dynamic programming language providing a framework for acoustic research, algorithmic music, interactive programming and live coding. Released under the terms of the GPLv2 in 2002, SuperCollider is free and open-source software.
  pageId 346978
  dailyPageViews 116
