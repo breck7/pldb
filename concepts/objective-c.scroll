@@ -123,6 +123,10 @@ hasWhileLoops true
 hasConstants true
 hasSwitch true
 hasConditionals true
+hasExplicitStandardLibrary true
+ #include <stdio.h>
+hasStandardLibrary true
+ NSLog(@"Hello, World!");
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
  example

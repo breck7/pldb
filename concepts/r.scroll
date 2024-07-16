@@ -99,6 +99,8 @@ hasBooleans true
 hasWhileLoops true
 hasFunctions true
 hasConditionals true
+hasStandardLibrary true
+ print("Hello, World!")
 
 jupyterKernel http://irkernel.github.io/
 wikipedia https://en.wikipedia.org/wiki/R_(programming_language)

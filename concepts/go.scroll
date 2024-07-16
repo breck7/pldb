@@ -191,6 +191,8 @@ hasHexadecimals true
  // 0[xX][0-9a-fA-F]+
 hasFloats true
  // \d+(\.\d+[eE][+\-]?\d+|\.\d*|[eE][+\-]?\d+)
+hasStandardLibrary true
+ fmt.Println("Hello, World!")
 
 jupyterKernel https://github.com/yunabe/lgo
 jupyterKernel https://github.com/takluyver/igo

@@ -232,6 +232,8 @@ hasThreads true
 hasClasses true
 hasExceptions true
 hasAccessModifiers true
+hasStandardLibrary true
+ #include <iostream>
 
 jupyterKernel https://github.com/root-mirror/cling
 jupyterKernel https://github.com/QuantStack/xeus-cling

@@ -188,6 +188,8 @@ isCaseSensitive true
 hasCaseInsensitiveIdentifiers false
 hasUnicodeIdentifiers true
  δ = 0.00001
+hasStandardLibrary true
+ IO.puts "Hello, World!"
 
 jupyterKernel https://github.com/pprzetacznik/IElixir
 wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)

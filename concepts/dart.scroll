@@ -109,6 +109,8 @@ hasAsyncAwait true
 hasConditionals true
 hasHexadecimals true
  // 0[xX][0-9a-fA-F]+
+hasStandardLibrary true
+ print('Hello, World!');
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example

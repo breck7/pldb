@@ -177,6 +177,8 @@ hasBooleans true
 hasWhileLoops true
 hasConstants true
 hasConditionals true
+hasStandardLibrary true
+ println!("Hello, World!");
 
 jupyterKernel https://github.com/google/evcxr/tree/master/evcxr_jupyter
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)

@@ -128,6 +128,8 @@ hasFloats true
  % [+-]?\d+.\d+
 hasIntegers true
  % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
+hasStandardLibrary true
+ io:format("Hello, World!~n").
 
 jupyterKernel https://github.com/robbielynch/ierlang
 jupyterKernel https://github.com/filmor/ierl

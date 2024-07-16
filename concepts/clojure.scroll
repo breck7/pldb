@@ -146,6 +146,8 @@ hasFloats true
  ; -?\d+\.\d+
 hasIntegers true
  ; -?\d+
+hasStandardLibrary true
+ (println "Hello, World!")
 
 jupyterKernel https://github.com/roryk/clojupyter
 jupyterKernel https://github.com/achesnais/clj-jupyter

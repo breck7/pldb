@@ -224,6 +224,8 @@ isCaseSensitive true
 hasWhileLoops true
 hasFunctions true
 hasConditionals true
+hasStandardLibrary true
+ puts "Hello, World!"
 
 jupyterKernel https://github.com/SciRuby/iruby
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)

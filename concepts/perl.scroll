@@ -135,6 +135,8 @@ hasIntegers true
 hasBinaryNumbers true
  # 0b[01]+(_[01]+)*
 hasScientificNotation true
+hasStandardLibrary true
+ print "Hello, World!\n";
 
 jupyterKernel https://metacpan.org/release/Devel-IPerl
 jupyterKernel https://github.com/gabrielash/p6-net-jupyter

@@ -136,6 +136,8 @@ hasLists true
  myList = {1, 2, 3}
 hasConstants true
  pi <const> = 3.14159
+hasStandardLibrary true
+ print("Hello, World!")
 
 jupyterKernel https://github.com/pakozm/IPyLua
 jupyterKernel https://github.com/neomantra/lua_ipython_kernel

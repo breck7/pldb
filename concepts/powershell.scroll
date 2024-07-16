@@ -80,6 +80,8 @@ hasExceptions true
 hasFunctions true
 hasSwitch true
 hasConditionals true
+hasStandardLibrary true
+ Write-Host "Hello, World!"
 
 jupyterKernel https://github.com/vors/jupyter-powershell
 wikipedia https://en.wikipedia.org/wiki/PowerShell
