@@ -1,5 +1,5 @@
 importOnly
-rssFeedUrl ./blog/feed.xml
+rssFeedUrl BASE_URL/blog/feed.xml
 
 import settings.scroll
 metaTags
