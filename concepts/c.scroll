@@ -117,6 +117,8 @@ hasBitWiseOperators true
 hasSymbolTables true
  // Declare an external function
  extern double bar(double x);
+hasExplicitStandardLibrary true
+ #include <stdio.h>
  
  // Define a public function
  double foo(int count)

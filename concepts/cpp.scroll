@@ -200,6 +200,8 @@ hasNamespaces true
  namespace ns_name::inline(since C++20)(optional) name { declarations }
 hasMultipleInheritance true
 hasOperatorOverloading true
+hasExplicitStandardLibrary true
+ #include <stdio.h>
 hasTemplates true
  template <int length>
  Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
