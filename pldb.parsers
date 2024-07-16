@@ -2727,6 +2727,9 @@ influencedByParser
 successorOfParser
  description Was this language launched as the successor of another?
  extends abstractFilenameRelationshipParser
+dialectOfParser
+ description Is this language a dialect of a broader one?
+ extends abstractFilenameRelationshipParser
 subsetOfParser
  description Is this language a subset of another?
  extends abstractFilenameRelationshipParser
