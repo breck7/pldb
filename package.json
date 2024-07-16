@@ -10,7 +10,7 @@
     "open": "open index.html",
     "up": "npm install scroll-cli@latest",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
-    "checkLinks": "linkinator -r https://pldb.io > ignore/brokenLinks.txt"
+    "checkLinks": "npx linkinator http://localhost -r --silent --format CSV --skip '^(?!http://localhost)' > brokenLinks.txt"
   },
   "prettier": {
     "parser": "babel",

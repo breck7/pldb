@@ -7,14 +7,14 @@ by Breck Yunits
 July 13, 2022
 
 About 85% of the languages in PLDB have line comments.
- https://pldb.io/blog/../features/line-comments.html
+ https://pldb.io/blog/../features/hasLineComments.html
 
 A language supports line comments if it defines a special token (nowadays usually `//` or `#`) where everything after that token until the end of the line becomes a comment. Example:
 
 print "Hello world" # this is a comment
 
 These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
- https://pldb.io/blog/../features/multiline-comments.html
+ https://pldb.io/blog/../features/hasMultilineComments.html
 
 The majority of languages use // or # to start a line comment
 =============================================================
