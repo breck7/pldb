@@ -14,25 +14,6 @@ mediumColumns 1
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  // Declare an external function
  extern double bar(double x);
- 
- // Define a public function
- double foo(int count)
- {
-     double  sum = 0.0;
- 
-     // Sum all the values bar(1) to bar(count)
-     for (int i = 1;  i &lt;= count;  i++)
-         sum += bar((double) i);
-     return sum;
- }
- // Symbol Table:
- // Symbol name|Type|Scope
- // bar|function, double|extern
- // x|double|function parameter
- // foo|function, double|global
- // count|int|function parameter
- // sum|double|block local
- // i|int|for-loop statement
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
  # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1

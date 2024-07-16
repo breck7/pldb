@@ -1,0 +1,127 @@
+import header.scroll
+
+title Standard Library - language feature
+printTitle Standard Library
+
+html
+ <a class="trueBaseThemePreviousItem" href="hasLists.html">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="hasExplicitStandardLibrary.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+
+mediumColumns 1
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/typescript.html">TypeScript</a>
+ console.log(&quot;Hello, World!&quot;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ #include &lt;stdio.h&gt;
+
+codeWithHeader Example from <b>4 languages</b>: <a href="../concepts/python.html">Python</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/lua.html">Lua</a>
+ print(&quot;Hello, World!&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/java.html">Java</a>
+ System.out.println(&quot;Hello, World!&quot;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C++</a>
+ #include &lt;iostream&gt;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/html.html">HTML</a>
+ &lt;h1&gt;Hi&lt;/h1&gt;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/css.html">CSS</a>
+ body { font-family: Arial, sans-serif; }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/perl.html">Perl</a>
+ print &quot;Hello, World!\n&quot;;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">Ruby</a>
+ puts &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/php.html">PHP</a>
+ &lt;?php echo &quot;Hello, World!&quot;; ?&gt;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/go.html">Go</a>
+ fmt.Println(&quot;Hello, World!&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html">C#</a>
+ Console.WriteLine(&quot;Hello, World!&quot;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bash.html">Bash</a>
+ echo &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/powershell.html">PowerShell</a>
+ Write-Host &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rust.html">Rust</a>
+ println!(&quot;Hello, World!&quot;);
+
+codeWithHeader Example from <b>3 languages</b>: <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/julia.html">Julia</a>
+ println(&quot;Hello, World!&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/matlab.html">MATLAB</a>
+ disp(&#39;Hello, World!&#39;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
+ main = putStrLn &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/clojure.html">Clojure</a>
+ (println &quot;Hello, World!&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ IO.puts &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coffeescript.html">CoffeeScript</a>
+ console.log &quot;Hello, World!&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/objective-c.html">Objective-C</a>
+ NSLog(@&quot;Hello, World!&quot;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/erlang.html">Erlang</a>
+ io:format(&quot;Hello, World!~n&quot;).
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/prolog.html">Prolog</a>
+ write(&#39;Hello, World!&#39;), nl.
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/mathematica.html">Mathematica</a>
+ Print[&quot;Hello, World!&quot;]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cobol.html">COBOL</a>
+ DISPLAY &quot;Hello, World!&quot;.
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cuda.html">CUDA</a>
+ printf(&quot;Hello, World!\n&quot;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/dart.html">Dart</a>
+ print(&#39;Hello, World!&#39;);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/markdown.html">Markdown</a>
+ # Hello, World!
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/visual-basic.html">Visual Basic</a>
+ Console.WriteLine(&quot;Hello, World!&quot;)
+
+***
+
+* Languages *with* Standard Library include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/mathematica.html">Mathematica</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/cuda.html">CUDA</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/markdown.html">Markdown</a>, <a href="../concepts/visual-basic.html">Visual Basic</a>, <a href="../concepts/bio.html">bio</a>
+
+***
+
+* Languages *without* Standard Library include <a href="../concepts/xml.html">XML</a>
+
+***
+
+View all concepts with or missing a *hasStandardLibrary* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasStandardLibrary%22%2C%22origData%22%3A%22hasStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasStandardLibrary%22%2C%22origData%22%3A%22hasStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Standard Library on the web: 1.
+ https://en.wikipedia.org/wiki/Standard_library 1.
+
+endColumns
+
+keyboardNav hasLists.html hasExplicitStandardLibrary.html
+
+import ../footer.scroll

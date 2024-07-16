@@ -77,6 +77,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  disp('Hello, World!')
+ Token 
+row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
  Supported ✓

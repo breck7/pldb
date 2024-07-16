@@ -1,0 +1,58 @@
+import header.scroll
+
+title Explicit Standard Library - language feature
+printTitle Explicit Standard Library
+
+html
+ <a class="trueBaseThemePreviousItem" href="hasStandardLibrary.html">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="hasMacros.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+
+mediumColumns 1
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ #include &lt;stdio.h&gt;
+ 
+ // Define a public function
+ double foo(int count)
+ {
+     double  sum = 0.0;
+ 
+     // Sum all the values bar(1) to bar(count)
+     for (int i = 1;  i &lt;= count;  i++)
+         sum += bar((double) i);
+     return sum;
+ }
+ // Symbol Table:
+ // Symbol name|Type|Scope
+ // bar|function, double|extern
+ // x|double|function parameter
+ // foo|function, double|global
+ // count|int|function parameter
+ // sum|double|block local
+ // i|int|for-loop statement
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/objective-c.html">Objective-C</a>
+ #include &lt;stdio.h&gt;
+
+***
+
+* Languages *with* Explicit Standard Library include <a href="../concepts/c.html">C</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/objective-c.html">Objective-C</a>
+
+***
+
+View all concepts with or missing a *hasExplicitStandardLibrary* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExplicitStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasExplicitStandardLibrary%22%2C%22origData%22%3A%22hasExplicitStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExplicitStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasExplicitStandardLibrary%22%2C%22origData%22%3A%22hasExplicitStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Explicit Standard Library on the web: 1.
+ https://en.wikipedia.org/wiki/Standard_library 1.
+
+endColumns
+
+keyboardNav hasStandardLibrary.html hasMacros.html
+
+import ../footer.scroll

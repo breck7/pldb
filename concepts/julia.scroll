@@ -177,6 +177,8 @@ hasFloats true
  # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
 hasBinaryNumbers true
  # 0b[01]+((_[01]+)+)?
+hasStandardLibrary true
+ println("Hello, World!")
 
 jupyterKernel https://github.com/JuliaLang/IJulia.jl
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)

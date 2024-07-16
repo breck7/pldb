@@ -82,6 +82,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  print("Hello, World!")
+ Token 
+row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
  Supported ✓

@@ -1,7 +1,7 @@
 All Features
 ============
 
-A list of 167 features found in programming languages.
+A list of 169 features found in programming languages.
 
 title|_$^titleLink|_$^pseudoExample|_$^yes|_$^no|_$^percentage
 Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^623|_$^4|_$^99%
@@ -21,11 +21,12 @@ While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48
 Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^48|_$^1|_$^98%
 File Imports|_$^../features/hasImports.html|_$^import pldb|_$^45|_$^2|_$^96%
 Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^43|_$^1|_$^98%
+Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
 Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
 Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^30|_$^4|_$^88%
+Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^27|_$^9|_$^75%
 Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^27|_$^1|_$^96%
 Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
-Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^26|_$^9|_$^74%
 Switch Statements|_$^../features/hasSwitch.html|_$^switch animal: case dog-buy; case cat-sell;|_$^24|_$^1|_$^96%
 Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^23|_$^54|_$^30%
 Exceptions|_$^../features/hasExceptions.html|_$^throw new Error("PLDB uh oh")|_$^22|_$^3|_$^88%
@@ -34,17 +35,17 @@ Pointers|_$^../features/hasPointers.html|_$^int *pldb|_$^20|_$^5|_$^80%
 Directives|_$^../features/hasDirectives.html|_$^use strict;|_$^20|_$^2|_$^91%
 Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^19|_$^1|_$^95%
 Case Sensitivity|_$^../features/isCaseSensitive.html|_$^pldb != PLDB|_$^18|_$^8|_$^69%
+Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^18|_$^8|_$^69%
 Access Modifiers|_$^../features/hasAccessModifiers.html|_$^class PLDBFile { public title }|_$^18|_$^3|_$^86%
-Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^17|_$^8|_$^68%
 Lispy|_$^../features/isLisp.html|_$^(+ 1 2)|_$^15|_$^1|_$^-
 Constructors|_$^../features/hasConstructors.html|_$^PLDBFile { constructor() {} }|_$^15|_$^4|_$^-
 Scientific Notation|_$^../features/hasScientificNotation.html|_$^8076686.6e1|_$^14|_$^0|_$^-
 Multiple Inheritance|_$^../features/hasMultipleInheritance.html|_$^extends parentWhichExtendsSomethingElse|_$^14|_$^5|_$^-
 Multiline Strings|_$^../features/hasMultilineStrings.html|_$^hello = """Hello\nPLDB"""|_$^13|_$^1|_$^-
 Message Passing|_$^../features/hasMessagePassing.html|_$^"get pldb"|_$^12|_$^1|_$^-
+Module Pattern|_$^../features/hasModules.html|_$^module PLDB {}|_$^11|_$^0|_$^-
 Bitwise Operators|_$^../features/hasBitWiseOperators.html|_$^3 == (2 &#124; 1)|_$^11|_$^1|_$^-
 Static Typing|_$^../features/hasStaticTyping.html|_$^int pldbRank = 100|_$^10|_$^0|_$^-
-Module Pattern|_$^../features/hasModules.html|_$^module PLDB {}|_$^10|_$^0|_$^-
 Single Dispatch|_$^../features/hasSingleDispatch.html|_$^person.run()|_$^9|_$^1|_$^-
 Regular Expression Syntax Sugar|_$^../features/hasRegularExpressionsSyntaxSugar.html|_$^/pldb/|_$^9|_$^6|_$^-
 Pattern Matching|_$^../features/hasPatternMatching.html|_$^fib 0 = 1; fib 1 = 1|_$^9|_$^2|_$^-
@@ -81,6 +82,7 @@ Pipes|_$^../features/hasPipes.html|_$^ls pldb &#124; wc|_$^5|_$^1|_$^-
 Null|_$^../features/hasNull.html|_$^uhOh = null|_$^5|_$^0|_$^-
 Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^5|_$^0|_$^-
 Doc comments|_$^../features/hasDocComments.html|_$^// param1: A comment about the first param|_$^5|_$^0|_$^-
+Destructuring|_$^../features/hasDestructuring.html|_$^{title, rank} = pldbFile|_$^5|_$^0|_$^-
 Dependent types|_$^../features/hasDependentTypes.html|_$^pldbSortedList // a list where is sorted is true|_$^5|_$^1|_$^-
 Default Parameters Pattern|_$^../features/hasDefaultParameters.html|_$^say(message = "Hello PLDB")|_$^5|_$^0|_$^-
 hasContinue|_$^../features/hasContinue.html|_$^|_$^5|_$^0|_$^-
@@ -102,13 +104,13 @@ Multiple Dispatch|_$^../features/hasMultipleDispatch.html|_$^collide_with(x::Spa
 Gotos|_$^../features/hasGotos.html|_$^goto 10|_$^4|_$^4|_$^-
 Generators|_$^../features/hasGenerators.html|_$^yield 2|_$^4|_$^0|_$^-
 Function Overloading|_$^../features/hasFunctionOverloading.html|_$^add(string: str, string2: str)|_$^4|_$^4|_$^-
-Destructuring|_$^../features/hasDestructuring.html|_$^{title, rank} = pldbFile|_$^4|_$^0|_$^-
 hasSymbols|_$^../features/hasSymbols.html|_$^|_$^3|_$^0|_$^-
 Streams|_$^../features/hasStreams.html|_$^echo 123 &#124; 123.txt|_$^3|_$^0|_$^-
 hasSelfOrThisWord|_$^../features/hasSelfOrThisWord.html|_$^|_$^3|_$^0|_$^-
 hasReservedWords|_$^../features/hasReservedWords.html|_$^|_$^3|_$^2|_$^-
 Methods|_$^../features/hasMethods.html|_$^pldbFile.downloadWebsite()|_$^3|_$^0|_$^-
 Magic Getters and Setters|_$^../features/hasMagicGettersAndSetters.html|_$^get(name) => obj[name]|_$^3|_$^2|_$^-
+Explicit Standard Library|_$^../features/hasExplicitStandardLibrary.html|_$^#include &lt;stdio.h>|_$^3|_$^0|_$^-
 Lazy Evaluation|_$^../features/hasLazyEvaluation.html|_$^print(range(1000000)[2])|_$^3|_$^0|_$^-
 Labels|_$^../features/hasLabels.html|_$^mainFn:|_$^3|_$^1|_$^-
 hasIfs|_$^../features/hasIfs.html|_$^|_$^3|_$^0|_$^-

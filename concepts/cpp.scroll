@@ -200,6 +200,8 @@ hasNamespaces true
  namespace ns_name::inline(since C++20)(optional) name { declarations }
 hasMultipleInheritance true
 hasOperatorOverloading true
+hasExplicitStandardLibrary true
+ #include <stdio.h>
 hasTemplates true
  template <int length>
  Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
@@ -230,6 +232,8 @@ hasThreads true
 hasClasses true
 hasExceptions true
 hasAccessModifiers true
+hasStandardLibrary true
+ #include <iostream>
 
 jupyterKernel https://github.com/root-mirror/cling
 jupyterKernel https://github.com/QuantStack/xeus-cling

@@ -84,6 +84,8 @@ hasLineComments true
 hasPrintDebugging true
 hasSemanticIndentation false
 hasScientificNotation true
+hasStandardLibrary true
+ disp('Hello, World!')
 
 jupyterKernel https://github.com/imatlab/imatlab
 jupyterKernel https://github.com/calysto/matlab_kernel

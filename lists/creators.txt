@@ -23,15 +23,15 @@ Larry Wall|_$^home |_$^1954|_$^Perl - Raku - patch|_$^3|_$^8
 Yukihiro Matsumoto|_$^ |_$^1965|_$^Ruby - Streem|_$^2|_$^9
 Rasmus Lerdorf|_$^home  |_$^1968|_$^PHP|_$^1|_$^10
 Douglas Crockford|_$^ home |_$^1955|_$^JSON - tilton|_$^2|_$^11
-Rob Pike|_$^ home |_$^1956|_$^Go - Limbo - ivy - UTF-8 - Newsqueak|_$^5|_$^12
-Ken Thompson|_$^home |_$^1943|_$^Go - B - ROFF - UTF-8|_$^4|_$^12
-Robert Griesemer|_$^ |_$^1964|_$^Go|_$^1|_$^12
-Tim Bray|_$^home |_$^1955|_$^XML - json->url|_$^2|_$^13
-Jean Paoli|_$^|_$^|_$^XML|_$^1|_$^13
-C. M. Sperberg-McQueen|_$^|_$^|_$^XML|_$^1|_$^13
-Eve Maler|_$^|_$^|_$^XML|_$^1|_$^13
-François Yergeau|_$^|_$^|_$^XML|_$^1|_$^13
-John W. Cowan|_$^home |_$^|_$^XML - Queue|_$^2|_$^13
+Tim Bray|_$^home |_$^1955|_$^XML - json->url|_$^2|_$^12
+Jean Paoli|_$^|_$^|_$^XML|_$^1|_$^12
+C. M. Sperberg-McQueen|_$^|_$^|_$^XML|_$^1|_$^12
+Eve Maler|_$^|_$^|_$^XML|_$^1|_$^12
+François Yergeau|_$^|_$^|_$^XML|_$^1|_$^12
+John W. Cowan|_$^home |_$^|_$^XML - Queue|_$^2|_$^12
+Rob Pike|_$^ home |_$^1956|_$^Go - Limbo - ivy - UTF-8 - Newsqueak|_$^5|_$^13
+Ken Thompson|_$^home |_$^1943|_$^Go - B - ROFF - UTF-8|_$^4|_$^13
+Robert Griesemer|_$^ |_$^1964|_$^Go|_$^1|_$^13
 Anders Hejlsberg|_$^  |_$^1960|_$^TypeScript - C# - Delphi|_$^3|_$^14
 Donald D. Chamberlin|_$^|_$^1944|_$^SQL|_$^1|_$^15
 Raymond F. Boyce|_$^|_$^1947|_$^SQL|_$^1|_$^15
@@ -69,12 +69,12 @@ Jean E. Sammet|_$^|_$^1928|_$^COBOL - FORMAC - Magic Paper|_$^3|_$^37
 William Selden|_$^|_$^|_$^COBOL|_$^1|_$^37
 Gertrude Tierney|_$^|_$^|_$^COBOL|_$^1|_$^37
 Grace Hopper|_$^|_$^1906|_$^COBOL - FLOW-MATIC|_$^2|_$^37
-Lars Bak|_$^ |_$^1965|_$^Dart|_$^1|_$^38
-Clark Evans|_$^home|_$^|_$^YAML|_$^1|_$^41
-Oren Ben-Kiki|_$^ home |_$^1964|_$^YAML|_$^1|_$^41
-Ingy döt Net|_$^ home|_$^|_$^YAML - Jemplate - JSYNC - C'Dent|_$^4|_$^41
-John Gruber|_$^|_$^1973|_$^Markdown|_$^1|_$^42
-Aaron Swartz|_$^|_$^1986|_$^Markdown - atx|_$^2|_$^42
+Lars Bak|_$^ |_$^1965|_$^Dart|_$^1|_$^39
+John Gruber|_$^|_$^1973|_$^Markdown|_$^1|_$^40
+Aaron Swartz|_$^|_$^1986|_$^Markdown - atx|_$^2|_$^40
+Clark Evans|_$^home|_$^|_$^YAML|_$^1|_$^42
+Oren Ben-Kiki|_$^ home |_$^1964|_$^YAML|_$^1|_$^42
+Ingy döt Net|_$^ home|_$^|_$^YAML - Jemplate - JSYNC - C'Dent|_$^4|_$^42
 Jean Ichbiah|_$^|_$^1940|_$^Ada|_$^1|_$^43
 Niklaus Wirth|_$^home  self_improvement|_$^1934|_$^Pascal - Modula-2 - Oberon - EBNF - Oberon-2 - Modula - PL/0 - PL360 - Lola-2|_$^9|_$^44
 Christian Reitwiessner|_$^ |_$^|_$^Solidity|_$^1|_$^45
@@ -128,8 +128,8 @@ Tobias Lütke|_$^|_$^1980|_$^Liquid|_$^1|_$^81
 Ryan Dahl|_$^|_$^1980|_$^Node.js - Deno|_$^2|_$^85
 Stuart Feldman|_$^|_$^|_$^Make|_$^1|_$^86
 Urban Müller|_$^home|_$^|_$^Brainfuck|_$^1|_$^89
-Kenneth E. Iverson|_$^|_$^1920|_$^APL - J|_$^2|_$^91
-Aseem Kishore|_$^ home |_$^|_$^JSON5|_$^1|_$^92
+Aseem Kishore|_$^ home |_$^|_$^JSON5|_$^1|_$^91
+Kenneth E. Iverson|_$^|_$^1920|_$^APL - J|_$^2|_$^92
 Stephen C. Johnson|_$^|_$^1944|_$^Yacc|_$^1|_$^93
 Sophie Wilson|_$^|_$^1957|_$^ARM - BBC BASIC|_$^2|_$^95
 Steve Furber|_$^|_$^1953|_$^ARM|_$^1|_$^95
@@ -156,7 +156,7 @@ John Resig|_$^home  |_$^1984|_$^JQuery|_$^1|_$^113
 Leonardo de Moura|_$^ home|_$^|_$^Lean|_$^1|_$^114
 Lee E. McMahon|_$^|_$^1931|_$^sed|_$^1|_$^115
 David Stern|_$^|_$^|_$^IDL|_$^1|_$^117
-Emily Eisenberg|_$^|_$^|_$^KaTeX|_$^1|_$^121
+Emily Eisenberg|_$^|_$^|_$^KaTeX|_$^1|_$^120
 Thomas S Hatch|_$^ |_$^|_$^SaltStack|_$^1|_$^124
 William Gould|_$^|_$^|_$^Stata|_$^1|_$^127
 Paul Falstad|_$^|_$^|_$^Z shell|_$^1|_$^128
@@ -164,21 +164,21 @@ John Ousterhout|_$^ home   self_improvement|_$^1954|_$^Tcl - Homa|_$^2|_$^130
 Alexander Medvednikov|_$^|_$^1993|_$^V|_$^1|_$^131
 Gary Grossman|_$^|_$^1962|_$^ActionScript|_$^1|_$^132
 Andrey Sitnik|_$^|_$^|_$^PostCSS - SugarSS|_$^2|_$^134
-Phil Moorby|_$^|_$^1953|_$^Verilog|_$^1|_$^136
-Prabhu Goel|_$^|_$^|_$^Verilog|_$^1|_$^136
-Sylvan Clebsch|_$^|_$^|_$^Pony|_$^1|_$^137
+Sylvan Clebsch|_$^|_$^|_$^Pony|_$^1|_$^136
+Phil Moorby|_$^|_$^1953|_$^Verilog|_$^1|_$^137
+Prabhu Goel|_$^|_$^|_$^Verilog|_$^1|_$^137
 Paul O’Shannessy|_$^|_$^|_$^FLUX|_$^1|_$^139
 Laurent Le Brun|_$^|_$^|_$^starlark|_$^1|_$^140
 Calvin Rose|_$^|_$^|_$^Fennel - janet|_$^2|_$^141
 John G. Kemeny|_$^|_$^1926|_$^BASIC - Dartmouth BASIC|_$^2|_$^143
 Thomas E. Kurtz|_$^|_$^1928|_$^BASIC - Dartmouth BASIC|_$^2|_$^143
 Paul Tagliamonte|_$^ home|_$^|_$^Hy|_$^1|_$^144
-Sanjiva Weerawarana|_$^ home |_$^|_$^Ballerina|_$^1|_$^145
-James Clark|_$^|_$^|_$^Ballerina - Trex|_$^2|_$^145
-Sameera Jayasoma|_$^|_$^|_$^Ballerina|_$^1|_$^145
-Hasitha Aravinda|_$^|_$^|_$^Ballerina|_$^1|_$^145
-Srinath Perera|_$^|_$^|_$^Ballerina|_$^1|_$^145
-Frank Leymann|_$^|_$^|_$^Ballerina|_$^1|_$^145
+Sanjiva Weerawarana|_$^ home |_$^|_$^Ballerina|_$^1|_$^146
+James Clark|_$^|_$^|_$^Ballerina - Trex|_$^2|_$^146
+Sameera Jayasoma|_$^|_$^|_$^Ballerina|_$^1|_$^146
+Hasitha Aravinda|_$^|_$^|_$^Ballerina|_$^1|_$^146
+Srinath Perera|_$^|_$^|_$^Ballerina|_$^1|_$^146
+Frank Leymann|_$^|_$^|_$^Ballerina|_$^1|_$^146
 Slava Pestov|_$^ home|_$^|_$^Factor|_$^1|_$^147
 Alberto Demichelis|_$^ |_$^|_$^Squirrel|_$^1|_$^148
 John Warnock|_$^|_$^1940|_$^PostScript|_$^1|_$^150
@@ -277,7 +277,7 @@ Qi Xiao|_$^|_$^|_$^Elvish|_$^1|_$^311
 James Shubin|_$^|_$^|_$^mgmt|_$^1|_$^313
 Jonathan Bennett|_$^|_$^|_$^AutoIt|_$^1|_$^316
 Arthur Whitney|_$^|_$^1957|_$^K - Q - A+|_$^3|_$^317
-Rich Harris|_$^|_$^|_$^Svelte|_$^1|_$^321
+Rich Harris|_$^|_$^|_$^Svelte|_$^1|_$^322
 Bas van den Berg|_$^|_$^|_$^C2|_$^1|_$^324
 Santosh Rajan|_$^|_$^|_$^wisp - lispyscript - cleanlang|_$^3|_$^325
 Irakli Gozalishvili|_$^|_$^|_$^wisp|_$^1|_$^325
@@ -335,7 +335,7 @@ Lucille Glassman|_$^|_$^|_$^Modula-3|_$^1|_$^382
 Mick Jordan|_$^|_$^|_$^Modula-3|_$^1|_$^382
 Bill Kalsow|_$^|_$^|_$^Modula-3|_$^1|_$^382
 Greg Nelson|_$^|_$^|_$^Modula-3|_$^1|_$^382
-Gert Smolka|_$^|_$^|_$^Oz|_$^1|_$^385
+Gert Smolka|_$^|_$^|_$^Oz|_$^1|_$^386
 Brian McKenna|_$^|_$^|_$^roy|_$^1|_$^388
 Carl Sassenrath|_$^|_$^1957|_$^REBOL|_$^1|_$^389
 Breck Yunits|_$^ home |_$^1984|_$^Parsers - Scroll - Scroll Notation - Ohayo - TQL - Note - Space - Explorer|_$^8|_$^391
@@ -362,8 +362,8 @@ Hongwei Xi|_$^|_$^|_$^ATS|_$^1|_$^430
 Max Ogden|_$^|_$^|_$^dat-protocol|_$^1|_$^431
 Vladimir Keleshev|_$^|_$^|_$^docopt|_$^1|_$^433
 Pavel Avgustinov|_$^|_$^|_$^CodeQL|_$^1|_$^437
-Hadley Wickham|_$^ home  |_$^1979|_$^tidyverse - dplyr - ggplot2|_$^3|_$^440
-Ian Keough|_$^|_$^|_$^Dynamo|_$^1|_$^441
+Hadley Wickham|_$^ home  |_$^1979|_$^tidyverse - dplyr - ggplot2|_$^3|_$^439
+Ian Keough|_$^|_$^|_$^Dynamo|_$^1|_$^440
 Naoya Hatta|_$^|_$^|_$^Veryl|_$^1|_$^443
 Sven Efftinge|_$^|_$^|_$^Xtend|_$^1|_$^444
 Sebastian Zarnekow|_$^|_$^|_$^Xtend|_$^1|_$^444
@@ -388,9 +388,9 @@ netcarver|_$^|_$^|_$^Textile|_$^1|_$^477
 Avery Lee|_$^|_$^|_$^vdscript|_$^1|_$^480
 Steve Ward|_$^|_$^|_$^Curl|_$^1|_$^481
 Joe Gibbs Politz|_$^|_$^|_$^pyret - Pyret|_$^2|_$^485
-Alex Russal|_$^|_$^|_$^Dojo|_$^1|_$^487
-Christophe de Dinechin|_$^|_$^|_$^XL - tao3d - ELFE|_$^3|_$^488
-Lutz Mueller|_$^|_$^|_$^NewLisp|_$^1|_$^489
+Christophe de Dinechin|_$^|_$^|_$^XL - tao3d - ELFE|_$^3|_$^487
+Lutz Mueller|_$^|_$^|_$^NewLisp|_$^1|_$^488
+Alex Russal|_$^|_$^|_$^Dojo|_$^1|_$^489
 Kemal Ebcioğlu|_$^|_$^|_$^X10|_$^1|_$^491
 Saravanan Arumugam|_$^|_$^|_$^X10|_$^1|_$^491
 Vijay Saraswat|_$^|_$^|_$^X10|_$^1|_$^491
@@ -400,8 +400,8 @@ Marshall Lochbaum|_$^ home|_$^|_$^BQN - I|_$^2|_$^494
 Graham Nelson|_$^|_$^1968|_$^Inform - prompter|_$^2|_$^495
 Kyle Jessup|_$^|_$^|_$^Lasso|_$^1|_$^496
 Gottfried Leibniz|_$^|_$^|_$^Binary notation|_$^1|_$^501
-Vint Cerf|_$^home  |_$^1943|_$^TCP|_$^1|_$^504
-Bob Kahn|_$^|_$^1938|_$^TCP|_$^1|_$^504
+Vint Cerf|_$^home  |_$^1943|_$^TCP|_$^1|_$^505
+Bob Kahn|_$^|_$^1938|_$^TCP|_$^1|_$^505
 Timothy Canham|_$^|_$^|_$^F Prime|_$^1|_$^506
 Ric Holt|_$^|_$^|_$^Turing - SP/k|_$^2|_$^507
 Jan Wieck|_$^|_$^|_$^PL/pgSQL|_$^1|_$^508
@@ -434,13 +434,13 @@ Ge Wang|_$^|_$^|_$^Ch|_$^1|_$^554
 cpc6128|_$^|_$^|_$^Linotte|_$^1|_$^556
 Simon Peyton Jones|_$^|_$^|_$^C-- - Verse|_$^2|_$^557
 Jacob Vanderplas|_$^|_$^|_$^astroml|_$^1|_$^558
-Samuel Morse|_$^|_$^|_$^Morse code|_$^1|_$^566
+Samuel Morse|_$^|_$^|_$^Morse code|_$^1|_$^567
 Charles Esterbrook|_$^|_$^|_$^Cobra|_$^1|_$^568
 Rob Koch|_$^|_$^|_$^Markwhen|_$^1|_$^574
 Jeremy Pierre|_$^|_$^|_$^Alpaca|_$^1|_$^576
 Alexis King|_$^|_$^|_$^Hackett|_$^1|_$^577
-Philippe Tillet|_$^|_$^|_$^Triton|_$^1|_$^581
-Anthony Diamond|_$^|_$^|_$^Monkey|_$^1|_$^582
+Anthony Diamond|_$^|_$^|_$^Monkey|_$^1|_$^581
+Philippe Tillet|_$^|_$^|_$^Triton|_$^1|_$^582
 Kai Schmidt|_$^|_$^|_$^Uiua|_$^1|_$^585
 Jeremy Cowgar|_$^|_$^|_$^Euphoria|_$^1|_$^587
 Robert Craig|_$^|_$^|_$^Euphoria|_$^1|_$^587
@@ -456,7 +456,7 @@ Cyrus Omar|_$^|_$^|_$^hazel|_$^1|_$^596
 Aubrey Jaffer|_$^|_$^|_$^Guile - SCM|_$^2|_$^597
 Tom Lord|_$^|_$^|_$^Guile|_$^1|_$^597
 Miles Bader|_$^|_$^|_$^Guile|_$^1|_$^597
-Stepan Mitkin|_$^|_$^|_$^DRAKON|_$^1|_$^603
+Stepan Mitkin|_$^|_$^|_$^DRAKON|_$^1|_$^602
 Yoav Lavi|_$^|_$^|_$^Melody|_$^1|_$^606
 David J. Farber|_$^|_$^|_$^SNOBOL - SNOBOL4 - SNOBOL3|_$^3|_$^607
 Ralph E. Griswold|_$^|_$^|_$^SNOBOL - SNOBOL4 - SNOBOL3|_$^3|_$^607
@@ -473,12 +473,12 @@ Rijnard van Tonder|_$^|_$^|_$^comby|_$^1|_$^633
 Olivier Breuleux|_$^|_$^|_$^Earl Grey - Quaint - Liso|_$^3|_$^634
 Satoshi Egi|_$^|_$^|_$^Egison|_$^1|_$^635
 Eli Luberoff|_$^|_$^|_$^Desmos|_$^1|_$^638
-Göran Krampe|_$^|_$^|_$^spry|_$^1|_$^642
+Göran Krampe|_$^|_$^|_$^spry|_$^1|_$^641
 Wouter Van Oortmerssen|_$^ home |_$^|_$^lobster - TreeSheets - Amiga E - False - Bla - Sheep - Aardappel|_$^7|_$^646
 Dan Winkler|_$^|_$^|_$^HyperTalk|_$^1|_$^649
 Jeremy Allaire|_$^|_$^|_$^CFML|_$^1|_$^654
 Alexander Burger|_$^|_$^|_$^PicoLisp|_$^1|_$^659
-Giancarlo Niccolai|_$^|_$^|_$^Falcon|_$^1|_$^664
+Giancarlo Niccolai|_$^|_$^|_$^Falcon|_$^1|_$^663
 Philip Hazel|_$^|_$^|_$^PCRE|_$^1|_$^667
 Charles Loomis|_$^|_$^|_$^Pan|_$^1|_$^668
 Andre Victor|_$^|_$^|_$^FreeBASIC|_$^1|_$^674
@@ -498,14 +498,14 @@ Mark Waddingham|_$^|_$^|_$^Revolution|_$^1|_$^704
 Shunsuke Shibayama|_$^|_$^|_$^erg|_$^1|_$^705
 Doug Moen|_$^|_$^|_$^curv|_$^1|_$^706
 Jamie McCracken|_$^|_$^|_$^Genie|_$^1|_$^707
-Thomas Mertes|_$^|_$^|_$^Seed7|_$^1|_$^712
+Thomas Mertes|_$^|_$^|_$^Seed7|_$^1|_$^711
 Anton Ekblad|_$^|_$^|_$^haste|_$^1|_$^719
 Yehuda Katz|_$^|_$^|_$^Nushell|_$^1|_$^721
 Nurullah Akkaya|_$^|_$^|_$^ferret|_$^1|_$^723
 Dan Onoshko|_$^|_$^|_$^ColaScript|_$^1|_$^725
 Lars Marius Garshol|_$^|_$^|_$^JSLT|_$^1|_$^728
-Eduardo Julián|_$^|_$^|_$^Lux|_$^1|_$^732
-Ben Morris|_$^|_$^|_$^kitlang|_$^1|_$^733
+Ben Morris|_$^|_$^|_$^kitlang|_$^1|_$^730
+Eduardo Julián|_$^|_$^|_$^Lux|_$^1|_$^733
 Amit Kapoor|_$^|_$^|_$^visdown|_$^1|_$^735
 Felix Winkelmann|_$^|_$^|_$^CHICKEN|_$^1|_$^736
 David Christiansen|_$^|_$^|_$^pie-lang|_$^1|_$^737
@@ -514,8 +514,8 @@ David Madore|_$^|_$^|_$^UNLAMBDA|_$^1|_$^742
 官文亮|_$^|_$^|_$^Berry|_$^1|_$^745
 Piotr Fusik|_$^|_$^|_$^Ć|_$^1|_$^750
 Andy Van Den Heuvel|_$^|_$^|_$^koara|_$^1|_$^751
-J Rain De Jager|_$^|_$^|_$^Oxyl|_$^1|_$^754
-Nora Sandler|_$^|_$^|_$^Not Quite C|_$^1|_$^757
+J Rain De Jager|_$^|_$^|_$^Oxyl|_$^1|_$^753
+Nora Sandler|_$^|_$^|_$^Not Quite C|_$^1|_$^756
 Benoit Giannangeli|_$^|_$^|_$^buzz|_$^1|_$^758
 Kalani Thielen|_$^|_$^|_$^hobbes|_$^1|_$^759
 Michael Hanus|_$^|_$^|_$^Curry|_$^1|_$^760
@@ -523,7 +523,7 @@ Sergio Antoy|_$^|_$^|_$^Curry|_$^1|_$^760
 Barbara Liskov|_$^|_$^1939|_$^CLU|_$^1|_$^761
 Maxim Kim|_$^|_$^|_$^Vimwiki|_$^1|_$^762
 Jonathan Goodwin|_$^|_$^|_$^Cone - acorn-lang|_$^2|_$^763
-Marko Grdinić|_$^|_$^|_$^spiral|_$^1|_$^767
+Marko Grdinić|_$^|_$^|_$^spiral|_$^1|_$^766
 Randall Hyde|_$^|_$^|_$^High Level Assembly|_$^1|_$^771
 Tim Burks|_$^|_$^|_$^Nu|_$^1|_$^772
 Richard E. Pattis|_$^|_$^|_$^Karel|_$^1|_$^774
@@ -538,14 +538,14 @@ Paul Mockapetris|_$^|_$^|_$^DNS|_$^1|_$^796
 Roman I. Kuzmin|_$^|_$^|_$^heap.coffee - Caffeine|_$^2|_$^797
 Mertcan Davulcu|_$^|_$^|_$^Jule|_$^1|_$^799
 Ludwig Stecher|_$^|_$^|_$^Pomsky|_$^1|_$^802
-Mike Pall|_$^|_$^|_$^LuaJIT - raptorjit|_$^2|_$^804
-Ken Kundert|_$^|_$^|_$^NestedText|_$^1|_$^805
+Ken Kundert|_$^|_$^|_$^NestedText|_$^1|_$^804
+Mike Pall|_$^|_$^|_$^LuaJIT - raptorjit|_$^2|_$^805
 Viktor Turskyi|_$^|_$^|_$^Livr|_$^1|_$^808
 Zachary Carter|_$^|_$^|_$^Jison Lex|_$^1|_$^812
-Reini Urban|_$^|_$^|_$^cperl|_$^1|_$^814
-lyxal|_$^|_$^|_$^Vyxal|_$^1|_$^815
+lyxal|_$^|_$^|_$^Vyxal|_$^1|_$^813
+Reini Urban|_$^|_$^|_$^cperl|_$^1|_$^815
 Arvid E. Picciani|_$^|_$^|_$^zz|_$^1|_$^819
-Denis Merigoux|_$^|_$^|_$^Catala|_$^1|_$^820
+Denis Merigoux|_$^|_$^|_$^Catala|_$^1|_$^821
 Hanspeter Mössenböck|_$^|_$^|_$^Oberon-2|_$^1|_$^822
 Manuel Odendahl|_$^|_$^|_$^Parenscript|_$^1|_$^823
 Edward Marco Baringer|_$^|_$^|_$^Parenscript|_$^1|_$^823
@@ -556,10 +556,10 @@ Dan Romero|_$^|_$^|_$^Farcaster|_$^1|_$^838
 Varun Srinivasan|_$^|_$^|_$^Farcaster|_$^1|_$^838
 Claudio Guidi|_$^|_$^|_$^Jolie|_$^1|_$^839
 Fabrizio Montesi|_$^|_$^|_$^Jolie|_$^1|_$^839
-Brian Chen|_$^|_$^|_$^noulith|_$^1|_$^840
+Brian Chen|_$^|_$^|_$^noulith|_$^1|_$^841
 Samuel Smith|_$^|_$^|_$^FloScript|_$^1|_$^842
 Jacob T. Schwartz|_$^|_$^|_$^SETL - ISETL|_$^2|_$^845
-Alessandro Nadalin|_$^|_$^|_$^abs|_$^1|_$^848
+Alessandro Nadalin|_$^|_$^|_$^abs|_$^1|_$^847
 Andrey Ershov|_$^|_$^|_$^Rapira|_$^1|_$^851
 Thomas Jaeger|_$^|_$^|_$^MASM|_$^1|_$^853
 Jovansonlee Cesar|_$^|_$^|_$^svgbob|_$^1|_$^854
@@ -589,12 +589,12 @@ Tomoya Matsuura|_$^|_$^|_$^mimium|_$^1|_$^905
 Tom Duff|_$^|_$^|_$^Rc|_$^1|_$^908
 Yorick Peterse|_$^|_$^|_$^inko|_$^1|_$^909
 Victor Nakoryakov|_$^|_$^|_$^xodio|_$^1|_$^911
-Dejan Muhamedagic|_$^|_$^|_$^crmsh|_$^1|_$^913
+Dejan Muhamedagic|_$^|_$^|_$^crmsh|_$^1|_$^912
 Arlen Cuss|_$^|_$^|_$^Rouge|_$^1|_$^920
-Tima Kinsart|_$^|_$^|_$^Metalang99|_$^1|_$^922
+Tima Kinsart|_$^|_$^|_$^Metalang99|_$^1|_$^923
 Steve Omohundro|_$^|_$^1959|_$^Sather|_$^1|_$^925
 Joe Ossanna|_$^|_$^1928|_$^ROFF - nroff|_$^2|_$^926
-Mike Jenkins|_$^|_$^|_$^Nial|_$^1|_$^933
+Mike Jenkins|_$^|_$^|_$^Nial|_$^1|_$^932
 David Weininger|_$^|_$^|_$^Smiles - SMILES arbitrary target specification|_$^2|_$^934
 Magnus Madsen|_$^|_$^|_$^Flix|_$^1|_$^935
 Eyal Lotem|_$^|_$^|_$^Lamdu|_$^1|_$^936
@@ -603,15 +603,15 @@ Leandro T. C. Melo|_$^|_$^|_$^psyche-c|_$^1|_$^949
 Jacob Rothstein|_$^|_$^|_$^Sibilant|_$^1|_$^950
 Michael Fogus|_$^|_$^|_$^baysick|_$^1|_$^951
 Sascha-Oliver Prolic|_$^|_$^|_$^Functional PHP Preprocessor|_$^1|_$^954
-Michael Arntzenius|_$^|_$^|_$^datafun|_$^1|_$^957
+Michael Arntzenius|_$^|_$^|_$^datafun|_$^1|_$^956
 Jakub Martin|_$^|_$^|_$^JSON Query Language|_$^1|_$^958
 Maxime Chevalier-Boisvert|_$^ home |_$^|_$^noisecraft - KavaScript - weebasic - Plush|_$^4|_$^960
 Felix Angell|_$^|_$^|_$^jayfor|_$^1|_$^964
 Brandon Barber|_$^|_$^|_$^Nymph - exkited|_$^2|_$^968
-Rohan Singh|_$^|_$^|_$^Mond|_$^1|_$^972
-Muthu Annamalai|_$^|_$^|_$^Ezhil|_$^1|_$^973
+Rohan Singh|_$^|_$^|_$^Mond|_$^1|_$^971
+Muthu Annamalai|_$^|_$^|_$^Ezhil|_$^1|_$^972
 Matthew Mueller|_$^|_$^|_$^Superjson|_$^1|_$^975
-Jason Steving|_$^|_$^|_$^Claro|_$^1|_$^981
+Jason Steving|_$^|_$^|_$^Claro|_$^1|_$^979
 Chris Hinsley|_$^|_$^|_$^chrysaLisp|_$^1|_$^984
 David Nichols|_$^|_$^|_$^Qore|_$^1|_$^985
 Franziskus Kiefer|_$^|_$^|_$^hacspec|_$^1|_$^987
@@ -624,15 +624,15 @@ pabuhr|_$^|_$^|_$^ΜC++|_$^1|_$^1007
 Avery N. Nortonsmith|_$^|_$^|_$^pointless|_$^1|_$^1008
 David H. Munro|_$^|_$^|_$^Yorick|_$^1|_$^1009
 Alexey Krivonogov|_$^|_$^|_$^gentee|_$^1|_$^1010
-Elucian Moise|_$^|_$^|_$^bee|_$^1|_$^1016
-Martin Büttner|_$^|_$^|_$^hexagony|_$^1|_$^1017
+Martin Büttner|_$^|_$^|_$^hexagony|_$^1|_$^1016
+Elucian Moise|_$^|_$^|_$^bee|_$^1|_$^1017
 Richard Feldman|_$^|_$^|_$^Roc|_$^1|_$^1018
 Deian Stefan|_$^|_$^|_$^FaCT|_$^1|_$^1020
-Cameron Knight|_$^|_$^|_$^GorillaScript|_$^1|_$^1022
+Cameron Knight|_$^|_$^|_$^GorillaScript|_$^1|_$^1023
 Leif Andersen|_$^|_$^|_$^video|_$^1|_$^1024
 Robert S. Boyer|_$^|_$^|_$^ACL2|_$^1|_$^1025
 J Strother Moore|_$^|_$^|_$^ACL2|_$^1|_$^1025
-evancz|_$^|_$^|_$^Gren|_$^1|_$^1030
+evancz|_$^|_$^|_$^Gren|_$^1|_$^1029
 Felix Zumstein|_$^|_$^|_$^xlwings-editor|_$^1|_$^1033
 Alex Rakov|_$^|_$^|_$^elena|_$^1|_$^1034
 Isaac Cayton (slightknack)|_$^|_$^|_$^Passerine|_$^1|_$^1036
@@ -640,9 +640,9 @@ kujirahand|_$^|_$^|_$^Nadesiko|_$^1|_$^1044
 Grégoire Henry|_$^|_$^|_$^michelson|_$^1|_$^1045
 Leandro Ostera|_$^|_$^|_$^Caramel|_$^1|_$^1046
 Pavan Kumar Sunkara|_$^|_$^|_$^semicolon|_$^1|_$^1050
-William Wulf|_$^|_$^|_$^BLISS|_$^1|_$^1054
-Daniel G. Bobrow|_$^|_$^|_$^KRL - Interlisp|_$^2|_$^1055
-Terry Winograd|_$^|_$^|_$^KRL|_$^1|_$^1055
+William Wulf|_$^|_$^|_$^BLISS|_$^1|_$^1053
+Daniel G. Bobrow|_$^|_$^|_$^KRL - Interlisp|_$^2|_$^1054
+Terry Winograd|_$^|_$^|_$^KRL|_$^1|_$^1054
 Ivan Herman|_$^|_$^|_$^CSVw|_$^1|_$^1059
 Jayadev Misra|_$^|_$^|_$^Orc|_$^1|_$^1061
 Andrew Fedoniouk|_$^|_$^|_$^TIScript - c-smile|_$^2|_$^1062
@@ -659,7 +659,7 @@ Konstantin Morshnev|_$^|_$^|_$^Parser 3|_$^1|_$^1088
 Conor McBride|_$^|_$^|_$^Epigram - Frank|_$^2|_$^1090
 Norman Ramsey|_$^|_$^|_$^Noweb|_$^1|_$^1096
 Tianqi Chen|_$^|_$^|_$^XGBoost|_$^1|_$^1098
-Vasiliy Tereshkov|_$^|_$^|_$^Umka|_$^1|_$^1106
+Vasiliy Tereshkov|_$^|_$^|_$^Umka|_$^1|_$^1107
 John Conway|_$^|_$^|_$^FRACTRAN - Conway chained arrow notation|_$^2|_$^1108
 Richard Dimick Jenks|_$^|_$^|_$^Aldor|_$^1|_$^1111
 Barry Trager|_$^|_$^|_$^Aldor|_$^1|_$^1111
@@ -671,7 +671,7 @@ Ben L. Titzer|_$^|_$^|_$^Virgil|_$^1|_$^1113
 Juan Benet|_$^ home |_$^|_$^InterPlanetary File System - multibase|_$^2|_$^1115
 Christopher Goes|_$^|_$^|_$^juvix|_$^1|_$^1118
 Brendan Zabarauskas|_$^|_$^|_$^pikelet|_$^1|_$^1121
-Petar Maymounkov|_$^|_$^|_$^ko|_$^1|_$^1123
+Petar Maymounkov|_$^|_$^|_$^ko|_$^1|_$^1124
 Yosbel Marin|_$^|_$^|_$^cor|_$^1|_$^1125
 Perry Greenfield|_$^|_$^|_$^ASDF|_$^1|_$^1129
 Michael Droettboom|_$^|_$^|_$^ASDF|_$^1|_$^1129
@@ -686,33 +686,33 @@ Zhicheng Wei|_$^|_$^|_$^Lemon|_$^1|_$^1141
 Juan Batiz-Benet|_$^|_$^|_$^multiaddr - multicodec|_$^2|_$^1142
 Johannes J. Bisschop|_$^|_$^|_$^AIMMS|_$^1|_$^1144
 Marcel Roelofs|_$^|_$^|_$^AIMMS|_$^1|_$^1144
-Daniel Bonniot|_$^|_$^|_$^Nice|_$^1|_$^1146
-Ron Morrison|_$^|_$^|_$^S-algol|_$^1|_$^1149
-Tony Davie|_$^|_$^|_$^S-algol|_$^1|_$^1149
-Sam Tobin-Hochstadt|_$^|_$^|_$^Pycket|_$^1|_$^1153
-Simon C. Nash|_$^|_$^|_$^Object Rexx|_$^1|_$^1154
+Daniel Bonniot|_$^|_$^|_$^Nice|_$^1|_$^1145
+Ron Morrison|_$^|_$^|_$^S-algol|_$^1|_$^1148
+Tony Davie|_$^|_$^|_$^S-algol|_$^1|_$^1148
+Simon C. Nash|_$^|_$^|_$^Object Rexx|_$^1|_$^1151
+Sam Tobin-Hochstadt|_$^|_$^|_$^Pycket|_$^1|_$^1154
 Tom MacWright|_$^|_$^|_$^wah|_$^1|_$^1156
 Tamreen Khan|_$^|_$^|_$^Pharen|_$^1|_$^1160
-Walter Smith|_$^|_$^|_$^NewtonScript|_$^1|_$^1173
+Walter Smith|_$^|_$^|_$^NewtonScript|_$^1|_$^1172
 Federico Ramirez|_$^|_$^|_$^pasukon|_$^1|_$^1177
 Alex Browne|_$^|_$^|_$^fo|_$^1|_$^1190
 Takashi Suwa|_$^|_$^|_$^SATySFi|_$^1|_$^1194
 Will McGugan|_$^|_$^|_$^moya|_$^1|_$^1198
-Mark P. McCahill|_$^|_$^|_$^Gopher|_$^1|_$^1203
-Farhad Anklesaria|_$^|_$^|_$^Gopher|_$^1|_$^1203
-Paul Lindner|_$^|_$^|_$^Gopher|_$^1|_$^1203
-Daniel Torrey|_$^|_$^|_$^Gopher|_$^1|_$^1203
-Bob Alberti|_$^|_$^|_$^Gopher|_$^1|_$^1203
-Michael F. King|_$^|_$^|_$^ProvideX|_$^1|_$^1204
-Alex Protasov|_$^|_$^|_$^manool|_$^1|_$^1205
+Michael F. King|_$^|_$^|_$^ProvideX|_$^1|_$^1203
+Alex Protasov|_$^|_$^|_$^manool|_$^1|_$^1204
+Mark P. McCahill|_$^|_$^|_$^Gopher|_$^1|_$^1205
+Farhad Anklesaria|_$^|_$^|_$^Gopher|_$^1|_$^1205
+Paul Lindner|_$^|_$^|_$^Gopher|_$^1|_$^1205
+Daniel Torrey|_$^|_$^|_$^Gopher|_$^1|_$^1205
+Bob Alberti|_$^|_$^|_$^Gopher|_$^1|_$^1205
 Sandro Lovnički|_$^|_$^|_$^plam|_$^1|_$^1207
 Larry McVoy|_$^|_$^|_$^little|_$^1|_$^1208
-Richard Newman|_$^|_$^|_$^Project Mentat|_$^1|_$^1210
+Richard Newman|_$^|_$^|_$^Project Mentat|_$^1|_$^1209
 Mark Summerfield|_$^|_$^|_$^Uniform eXchange Format|_$^1|_$^1216
 Jose E. Marchesi|_$^home|_$^1980|_$^Recfiles - GNU Poke|_$^2|_$^1220
-Maxim Gumin|_$^|_$^|_$^MarkovJunior|_$^1|_$^1221
-Carl Mäsak|_$^|_$^|_$^Alma|_$^1|_$^1222
-Robert Fratto|_$^|_$^|_$^orange|_$^1|_$^1223
+Robert Fratto|_$^|_$^|_$^orange|_$^1|_$^1221
+Maxim Gumin|_$^|_$^|_$^MarkovJunior|_$^1|_$^1222
+Carl Mäsak|_$^|_$^|_$^Alma|_$^1|_$^1223
 James McGraw|_$^|_$^|_$^SISAL|_$^1|_$^1229
 Denis Stebunov|_$^|_$^|_$^djangoql|_$^1|_$^1230
 Caleb Helbling|_$^|_$^|_$^juniper|_$^1|_$^1231
@@ -731,27 +731,27 @@ Marko A. Rodriguez|_$^|_$^|_$^Gremlin|_$^1|_$^1266
 David Gelernter|_$^|_$^|_$^Linda|_$^1|_$^1270
 Olle Fredriksson|_$^|_$^|_$^sixten|_$^1|_$^1273
 Henrique Gogó|_$^|_$^|_$^Kamby|_$^1|_$^1274
-Gilad Bracha|_$^|_$^|_$^Newspeak|_$^1|_$^1276
+Gilad Bracha|_$^|_$^|_$^Newspeak|_$^1|_$^1275
 Konrad Zuse|_$^|_$^1910|_$^Plankalkul|_$^1|_$^1280
 Tim Williams|_$^|_$^|_$^expresso|_$^1|_$^1281
 Elad Ben-Israel|_$^|_$^|_$^Wing|_$^1|_$^1283
 Cliff Shaw|_$^|_$^|_$^JOSS|_$^1|_$^1284
-Joona Piirainen|_$^|_$^|_$^fp|_$^1|_$^1286
+Joona Piirainen|_$^|_$^|_$^fp|_$^1|_$^1285
 J. E. Saltzer|_$^|_$^|_$^RUNOFF|_$^1|_$^1291
 Theodore H Smith|_$^|_$^|_$^Speedie|_$^1|_$^1295
-Lingdong Huang|_$^ home |_$^1997|_$^文言文編程語言 - Wax - PSVG|_$^3|_$^1298
+Lingdong Huang|_$^ home |_$^1997|_$^文言文編程語言 - Wax - PSVG|_$^3|_$^1297
 Michael Coblenz|_$^|_$^|_$^obsidian|_$^1|_$^1300
 Ken Kahn|_$^|_$^|_$^ToonTalk - Janus|_$^2|_$^1301
-Rich Drechsler|_$^|_$^|_$^Yoix|_$^1|_$^1305
-John Mocenigo|_$^|_$^|_$^Yoix|_$^1|_$^1305
+Rich Drechsler|_$^|_$^|_$^Yoix|_$^1|_$^1304
+John Mocenigo|_$^|_$^|_$^Yoix|_$^1|_$^1304
 Stanley Cohen|_$^|_$^|_$^Speakeasy|_$^1|_$^1306
 Alexander Rødseth|_$^|_$^|_$^Battlestar|_$^1|_$^1311
 Seth Tucker Taft|_$^|_$^|_$^parasail|_$^1|_$^1314
 Stan Hebben|_$^|_$^|_$^zenscript|_$^1|_$^1316
 Isaac Grosof|_$^|_$^|_$^Pyth|_$^1|_$^1317
 Jesse Duffield|_$^|_$^|_$^OK|_$^1|_$^1321
-Edward A. Ashcroft|_$^|_$^|_$^LUCID|_$^1|_$^1323
-William W. Wadge|_$^|_$^|_$^LUCID|_$^1|_$^1323
+Edward A. Ashcroft|_$^|_$^|_$^LUCID|_$^1|_$^1324
+William W. Wadge|_$^|_$^|_$^LUCID|_$^1|_$^1324
 Wong Jia Hau|_$^|_$^|_$^keli|_$^1|_$^1325
 Lucio M. Tato|_$^|_$^|_$^LiteScript|_$^1|_$^1329
 James Cordy|_$^|_$^|_$^TXL - SP/k|_$^2|_$^1332
@@ -787,7 +787,7 @@ Benedict Løfstedt|_$^|_$^|_$^COMAL|_$^1|_$^1381
 Jean Yang|_$^|_$^|_$^Jeeves|_$^1|_$^1382
 Marjan Sirjani|_$^|_$^|_$^Rebeca Modeling Language|_$^1|_$^1385
 James Jianbo Huang|_$^|_$^|_$^Judoscript|_$^1|_$^1387
-Marcus Westin|_$^|_$^|_$^Fun|_$^1|_$^1390
+Marcus Westin|_$^|_$^|_$^Fun|_$^1|_$^1391
 Johan Johansson|_$^|_$^|_$^carth|_$^1|_$^1393
 Stephen Cross|_$^|_$^|_$^loci|_$^1|_$^1395
 Vincent Cecil Secades|_$^|_$^|_$^CMS-2|_$^1|_$^1396
@@ -795,47 +795,47 @@ David Clark Rummler|_$^|_$^|_$^CMS-2|_$^1|_$^1396
 David Johnson-Davies|_$^|_$^|_$^ulisp|_$^1|_$^1397
 Mark van Gulik|_$^|_$^|_$^Avail|_$^1|_$^1404
 Todd L. Smith|_$^|_$^|_$^Avail|_$^1|_$^1404
-Ben Lerner|_$^|_$^|_$^Pyret|_$^1|_$^1405
-Dan Adler|_$^|_$^|_$^Language Server Index Format|_$^1|_$^1406
-Warren Teitelman|_$^|_$^|_$^Interlisp|_$^1|_$^1407
-Ronald Kaplan|_$^|_$^|_$^Interlisp|_$^1|_$^1407
-Neeilan Selvalingam|_$^|_$^|_$^neeilang|_$^1|_$^1408
+Dan Adler|_$^|_$^|_$^Language Server Index Format|_$^1|_$^1405
+Ben Lerner|_$^|_$^|_$^Pyret|_$^1|_$^1406
+Neeilan Selvalingam|_$^|_$^|_$^neeilang|_$^1|_$^1407
+Warren Teitelman|_$^|_$^|_$^Interlisp|_$^1|_$^1408
+Ronald Kaplan|_$^|_$^|_$^Interlisp|_$^1|_$^1408
 Chris Gray|_$^|_$^|_$^Draco|_$^1|_$^1411
-Michael Nielsen|_$^|_$^|_$^C/AL|_$^1|_$^1416
-Steven Pemberton|_$^|_$^|_$^Invisible XML|_$^1|_$^1417
+Steven Pemberton|_$^|_$^|_$^Invisible XML|_$^1|_$^1416
+Michael Nielsen|_$^|_$^|_$^C/AL|_$^1|_$^1417
 Manuel Simoni|_$^|_$^|_$^taf - edgelisp|_$^2|_$^1423
 Šarūnas Navickas|_$^|_$^|_$^Rita|_$^1|_$^1426
 Michael Dvorkin|_$^|_$^|_$^Ante|_$^1|_$^1427
 Yutaka Saito|_$^|_$^|_$^gura|_$^1|_$^1429
 John-David Dalton|_$^ |_$^|_$^Lodash|_$^1|_$^1431
-K. Lange|_$^|_$^|_$^Kuroko|_$^1|_$^1437
-Alexandr Zahatski|_$^|_$^|_$^Podlite|_$^1|_$^1438
+Alexandr Zahatski|_$^|_$^|_$^Podlite|_$^1|_$^1437
+K. Lange|_$^|_$^|_$^Kuroko|_$^1|_$^1439
 Thomas Bradford|_$^|_$^|_$^a Lisp Environment|_$^1|_$^1445
 Jonathan Aldrich|_$^|_$^|_$^Plaid|_$^1|_$^1449
 Evgeny Poberezkin|_$^|_$^|_$^JSONScript|_$^1|_$^1452
 Victor Yngve|_$^|_$^|_$^COMIT|_$^1|_$^1457
-Jeffrey Heer|_$^ home  |_$^1979|_$^Vega - Arquero|_$^2|_$^1459
-Daniel X Moore|_$^home |_$^|_$^Civet - Hera|_$^2|_$^1460
+Daniel X Moore|_$^home |_$^|_$^Civet - Hera|_$^2|_$^1459
+Jeffrey Heer|_$^ home  |_$^1979|_$^Vega - Arquero|_$^2|_$^1460
 Dennis Mitchell|_$^|_$^|_$^Jelly|_$^1|_$^1464
 Max Reason|_$^|_$^|_$^Xbasic|_$^1|_$^1466
-Jeremy Wall|_$^|_$^|_$^UCG|_$^1|_$^1468
+Jeremy Wall|_$^|_$^|_$^UCG|_$^1|_$^1467
 Isaac Shelton|_$^|_$^|_$^Adept|_$^1|_$^1469
-John Lloyd|_$^|_$^|_$^Gödel (Goedel)|_$^1|_$^1471
-Patricia Hill|_$^|_$^|_$^Gödel (Goedel)|_$^1|_$^1471
-Janko Metelko|_$^|_$^|_$^Rye|_$^1|_$^1472
-Josh Yudaken|_$^|_$^|_$^SQRL|_$^1|_$^1473
-Pete Hunt|_$^|_$^|_$^SQRL|_$^1|_$^1473
-Julian Tempelsman|_$^|_$^|_$^SQRL|_$^1|_$^1473
-Paul Mou|_$^|_$^|_$^SQRL|_$^1|_$^1473
-Yunjing Xu|_$^|_$^|_$^SQRL|_$^1|_$^1473
-David Newman|_$^|_$^|_$^SQRL|_$^1|_$^1473
+Josh Yudaken|_$^|_$^|_$^SQRL|_$^1|_$^1471
+Pete Hunt|_$^|_$^|_$^SQRL|_$^1|_$^1471
+Julian Tempelsman|_$^|_$^|_$^SQRL|_$^1|_$^1471
+Paul Mou|_$^|_$^|_$^SQRL|_$^1|_$^1471
+Yunjing Xu|_$^|_$^|_$^SQRL|_$^1|_$^1471
+David Newman|_$^|_$^|_$^SQRL|_$^1|_$^1471
+John Lloyd|_$^|_$^|_$^Gödel (Goedel)|_$^1|_$^1472
+Patricia Hill|_$^|_$^|_$^Gödel (Goedel)|_$^1|_$^1472
+Janko Metelko|_$^|_$^|_$^Rye|_$^1|_$^1473
 Fredrik Kjolstad|_$^ home|_$^|_$^Simit|_$^1|_$^1476
-Erik Moqvist|_$^|_$^|_$^mys|_$^1|_$^1481
+Erik Moqvist|_$^|_$^|_$^mys|_$^1|_$^1482
 Yosbel Marín|_$^|_$^|_$^RamdaScript|_$^1|_$^1484
 Kayne Ruse|_$^|_$^|_$^Toy|_$^1|_$^1485
 Karl Robillard|_$^|_$^|_$^Boron - orca-lang|_$^2|_$^1486
 Yves Caseau|_$^|_$^|_$^CLAIRE|_$^1|_$^1490
-Ethan Nicholas|_$^|_$^|_$^Frost|_$^1|_$^1492
+Ethan Nicholas|_$^|_$^|_$^Frost|_$^1|_$^1491
 Mario Montoya|_$^|_$^|_$^tablam|_$^1|_$^1499
 Denso Wave|_$^|_$^|_$^QR code|_$^1|_$^1505
 Calvin Mooers|_$^|_$^|_$^TRAC|_$^1|_$^1509
@@ -846,22 +846,22 @@ DJMcMayhem|_$^|_$^|_$^Brain-Flak - V|_$^2|_$^1515
 Andrew Stein|_$^|_$^|_$^Forml|_$^1|_$^1516
 John George Kemeny|_$^|_$^|_$^True BASIC|_$^1|_$^1521
 Thomas Eugene Kurtz|_$^|_$^|_$^True BASIC|_$^1|_$^1521
-Jean-Christophe Baillie|_$^|_$^|_$^Urbiscript|_$^1|_$^1523
+Jean-Christophe Baillie|_$^|_$^|_$^Urbiscript|_$^1|_$^1522
 Jonah Fox|_$^|_$^|_$^Kaffeine|_$^1|_$^1524
 Radon Rosborough|_$^|_$^|_$^Kalyn|_$^1|_$^1526
 Steve Vickers|_$^|_$^|_$^Sinclair BASIC|_$^1|_$^1531
 Josh Huelsman|_$^|_$^|_$^jiyu|_$^1|_$^1532
 Caspian Prince|_$^|_$^|_$^LWJGL - thjson|_$^2|_$^1536
 Nevil Brownlee|_$^|_$^|_$^Small|_$^1|_$^1538
-Christian Pietsch|_$^|_$^|_$^OpenComal|_$^1|_$^1542
+Christian Pietsch|_$^|_$^|_$^OpenComal|_$^1|_$^1541
 Krishna Subramanian|_$^|_$^|_$^Statsplorer|_$^1|_$^1544
 Chat Wacharamanotham|_$^|_$^|_$^Statsplorer|_$^1|_$^1544
 somebody1234|_$^|_$^|_$^Charcoal|_$^1|_$^1551
 Cameron Purdy|_$^|_$^|_$^Ecstasy|_$^1|_$^1552
-Valentin Heun|_$^|_$^|_$^hrqr|_$^1|_$^1554
-Paw Møller|_$^|_$^|_$^owen-lang|_$^1|_$^1555
+Paw Møller|_$^|_$^|_$^owen-lang|_$^1|_$^1553
+Valentin Heun|_$^|_$^|_$^hrqr|_$^1|_$^1555
 Scott Moore|_$^|_$^|_$^IP Pascal|_$^1|_$^1558
-Dennis Griffith|_$^|_$^|_$^sill|_$^1|_$^1560
+Dennis Griffith|_$^|_$^|_$^sill|_$^1|_$^1559
 Nick Mathewson|_$^|_$^|_$^polyglot-compiler|_$^1|_$^1564
 Mangle Team|_$^|_$^|_$^Mangle|_$^1|_$^1572
 Ricci Adams|_$^|_$^|_$^NilScript|_$^1|_$^1578
@@ -877,9 +877,9 @@ Aurelio Jargas|_$^|_$^|_$^Txt2tags|_$^1|_$^1605
 Florent Gallaire|_$^|_$^|_$^Txt2tags|_$^1|_$^1605
 Jendrik Seipp|_$^|_$^|_$^Txt2tags|_$^1|_$^1605
 Bastian Müller|_$^|_$^|_$^ralph|_$^1|_$^1607
-Superstar64|_$^|_$^|_$^Aith|_$^1|_$^1611
-MUME user|_$^|_$^|_$^Mudlle|_$^1|_$^1612
-Xavier Badosa|_$^|_$^|_$^JSON-stat|_$^1|_$^1613
+Xavier Badosa|_$^|_$^|_$^JSON-stat|_$^1|_$^1611
+Superstar64|_$^|_$^|_$^Aith|_$^1|_$^1612
+MUME user|_$^|_$^|_$^Mudlle|_$^1|_$^1613
 P. J. Plauger|_$^|_$^1944|_$^Little Implementation Language|_$^1|_$^1618
 Laurent Prud'hon|_$^|_$^|_$^typecobol|_$^1|_$^1622
 Michael Stonebraker|_$^|_$^|_$^QUEL|_$^1|_$^1624
@@ -887,7 +887,7 @@ Ramkumar Ramachandra|_$^|_$^|_$^rhine|_$^1|_$^1625
 Francis McCabe|_$^|_$^|_$^Go!|_$^1|_$^1630
 Keith Clark|_$^|_$^|_$^Go!|_$^1|_$^1630
 Caden Haustein|_$^|_$^|_$^mlatu|_$^1|_$^1633
-Alessandro Ghignola|_$^|_$^|_$^Linoleum (L.in.oleum)|_$^1|_$^1649
+Alessandro Ghignola|_$^|_$^|_$^Linoleum (L.in.oleum)|_$^1|_$^1648
 Gustaf Neumann|_$^|_$^|_$^XOTcl|_$^1|_$^1652
 Uwe Zdun|_$^|_$^|_$^XOTcl|_$^1|_$^1652
 Jürg Gutknecht|_$^|_$^|_$^Zonnon|_$^1|_$^1653
@@ -914,7 +914,7 @@ Alexander Ivanov|_$^|_$^|_$^hivemind|_$^1|_$^1685
 Steve Gregory|_$^|_$^|_$^Parlog|_$^1|_$^1687
 Keith L. Clark|_$^|_$^|_$^Parlog|_$^1|_$^1687
 Craig Chambers|_$^|_$^|_$^CECIL|_$^1|_$^1690
-Thiago Silva|_$^|_$^|_$^G-Portugol|_$^1|_$^1694
+Thiago Silva|_$^|_$^|_$^G-Portugol|_$^1|_$^1693
 Reid Tatge|_$^|_$^|_$^mdl|_$^1|_$^1695
 Johan Georg Granström|_$^|_$^|_$^IPL|_$^1|_$^1698
 Tiago Campos|_$^|_$^|_$^kei|_$^1|_$^1699
@@ -927,10 +927,10 @@ Andrzej Gasienica-Samek|_$^|_$^|_$^nianiolang|_$^1|_$^1716
 Poeta Kodu|_$^|_$^|_$^RigC|_$^1|_$^1717
 Atle Solbakken|_$^|_$^|_$^P*|_$^1|_$^1720
 Ellie Kanning-Dawn|_$^home|_$^|_$^Horse64 - Moose64|_$^2|_$^1726
-Lépine Kong|_$^|_$^|_$^Readable|_$^1|_$^1737
+Lépine Kong|_$^|_$^|_$^Readable|_$^1|_$^1736
 Steven Ericsson-Zenith|_$^|_$^|_$^Ease|_$^1|_$^1739
-Juhana Leinonen|_$^|_$^|_$^HUGO|_$^1|_$^1745
-Jon Whitehead|_$^|_$^|_$^maraca-lang|_$^1|_$^1746
+Juhana Leinonen|_$^|_$^|_$^HUGO|_$^1|_$^1746
+Jon Whitehead|_$^|_$^|_$^maraca-lang|_$^1|_$^1747
 John Foderaro|_$^|_$^|_$^Allegro Common Lisp|_$^1|_$^1748
 Sebastian Karlsson|_$^|_$^|_$^GLMS|_$^1|_$^1749
 Gabe|_$^|_$^|_$^Bizubee - Bizubee|_$^2|_$^1754
@@ -966,482 +966,482 @@ PhoenixHimself|_$^ |_$^|_$^Amber|_$^1|_$^1841
 Sean Micklethwaite|_$^|_$^|_$^latte-js|_$^1|_$^1842
 Patrick Bowen|_$^|_$^|_$^Insitux|_$^1|_$^1844
 Palash Bauri|_$^|_$^|_$^MewMew - Mewl|_$^2|_$^1860
-lorentzj|_$^|_$^|_$^Serious|_$^1|_$^1864
-https://en.wikipedia.org/wiki/Eugen_Rochko|_$^|_$^|_$^Mastodon|_$^1|_$^1865
-Nikolas S. Boyd|_$^|_$^|_$^Bistro - hoot-smalltalk|_$^2|_$^1866
-Daniel Lawrence Lu|_$^|_$^|_$^dllup|_$^1|_$^1867
-ThePuzzlemaker|_$^|_$^|_$^Calypso|_$^1|_$^1870
-Paul Gordon|_$^|_$^|_$^Truth - YESS|_$^2|_$^1872
-W. Stanley Brown|_$^|_$^|_$^ALTRAN|_$^1|_$^1874
-Christopher Lutz|_$^|_$^|_$^Janus|_$^1|_$^1875
-Howard Derby|_$^|_$^|_$^Janus|_$^1|_$^1875
-Tetsuo Yokoyama|_$^|_$^|_$^Janus|_$^1|_$^1875
-Robert Glück|_$^|_$^|_$^Janus|_$^1|_$^1875
-Dan Libby|_$^|_$^|_$^RSS|_$^1|_$^1876
-Ramanathan V. Guha|_$^|_$^|_$^RSS|_$^1|_$^1876
-Matthew Steel|_$^|_$^|_$^6gunz|_$^1|_$^1877
+lorentzj|_$^|_$^|_$^Serious|_$^1|_$^1862
+https://en.wikipedia.org/wiki/Eugen_Rochko|_$^|_$^|_$^Mastodon|_$^1|_$^1866
+Nikolas S. Boyd|_$^|_$^|_$^Bistro - hoot-smalltalk|_$^2|_$^1867
+Daniel Lawrence Lu|_$^|_$^|_$^dllup|_$^1|_$^1868
+ThePuzzlemaker|_$^|_$^|_$^Calypso|_$^1|_$^1871
+Paul Gordon|_$^|_$^|_$^Truth - YESS|_$^2|_$^1873
+W. Stanley Brown|_$^|_$^|_$^ALTRAN|_$^1|_$^1875
+Christopher Lutz|_$^|_$^|_$^Janus|_$^1|_$^1876
+Howard Derby|_$^|_$^|_$^Janus|_$^1|_$^1876
+Tetsuo Yokoyama|_$^|_$^|_$^Janus|_$^1|_$^1876
+Robert Glück|_$^|_$^|_$^Janus|_$^1|_$^1876
+Dan Libby|_$^|_$^|_$^RSS|_$^1|_$^1877
+Ramanathan V. Guha|_$^|_$^|_$^RSS|_$^1|_$^1877
 Denis Sureau|_$^|_$^|_$^Scriptol|_$^1|_$^1879
-Andy Gavin|_$^|_$^|_$^Game Oriented Assembly Lisp|_$^1|_$^1880
-Markus Voelter|_$^|_$^|_$^datev|_$^1|_$^1886
-Sergej Koˇsˇcejev|_$^|_$^|_$^datev|_$^1|_$^1886
-Leon Bottou|_$^|_$^|_$^Lush|_$^1|_$^1890
-Yann Le Cun|_$^|_$^|_$^Lush|_$^1|_$^1890
-Neng-Fa Zhou|_$^|_$^|_$^Picat|_$^1|_$^1891
-Jonathan Fruhman|_$^|_$^|_$^Picat|_$^1|_$^1891
-Emina Torlak|_$^|_$^|_$^rosette-lang|_$^1|_$^1893
-Rastislav Bodik|_$^|_$^|_$^rosette-lang|_$^1|_$^1893
-Marc Auberer|_$^|_$^|_$^Spice|_$^1|_$^1895
-Zef Hemel|_$^|_$^|_$^Mobl|_$^1|_$^1897
-Corrado Böhm|_$^|_$^|_$^P′′|_$^1|_$^1898
-Dave Griffiths|_$^|_$^|_$^co2|_$^1|_$^1900
-RoMeAh|_$^|_$^|_$^BlazeX|_$^1|_$^1901
-Arno Gourdol|_$^ home|_$^|_$^MathJSON - Cortex|_$^2|_$^1904
-Aliaksandr Zahatski|_$^|_$^|_$^Pod6|_$^1|_$^1911
-Jonathan Avery|_$^|_$^|_$^juicy|_$^1|_$^1912
-Emil Post|_$^|_$^|_$^Post production|_$^1|_$^1913
-Jan Max Meyer|_$^|_$^|_$^RapidBatch|_$^1|_$^1918
-Per Bothner|_$^|_$^|_$^Kawa|_$^1|_$^1922
-Mark Hahn|_$^|_$^|_$^fjs|_$^1|_$^1925
-Zachary Sakowitz|_$^|_$^|_$^Storymatic|_$^1|_$^1927
-Matheus Dias de Souza|_$^|_$^|_$^Violent ES|_$^1|_$^1928
-Raja Mukherji|_$^|_$^|_$^Minilang|_$^1|_$^1933
-Yoshiki Ohshima|_$^|_$^|_$^shadama|_$^1|_$^1934
-Dan Amelang|_$^|_$^|_$^shadama|_$^1|_$^1934
-Bert Freudenberg|_$^|_$^|_$^shadama|_$^1|_$^1934
-Yuya Watari|_$^|_$^|_$^Ripple - Calc4|_$^2|_$^1936
-Yassen Bantchev|_$^|_$^|_$^U|_$^1|_$^1937
-Victor Maia|_$^|_$^|_$^formality|_$^1|_$^1939
-James Edwards|_$^|_$^|_$^jedlang|_$^1|_$^1940
-Pablo H. Reda|_$^|_$^|_$^r3|_$^1|_$^1941
-Zach Perkitny|_$^|_$^|_$^emerald-lang|_$^1|_$^1946
-Christian Budde Christensen|_$^|_$^|_$^gintonic|_$^1|_$^1947
-Cedric Cellier|_$^|_$^|_$^ramen|_$^1|_$^1949
-Nathan Merrill|_$^|_$^|_$^elegance|_$^1|_$^1954
-Eddie aka. tamamu|_$^|_$^|_$^Macchiato|_$^1|_$^1955
-Terry A. Davis|_$^|_$^|_$^holyc|_$^1|_$^1956
-Roger Corman|_$^|_$^|_$^Corman Common Lisp|_$^1|_$^1957
-Marijn Haverbeke|_$^|_$^|_$^lezer|_$^1|_$^1959
-David Szafranski|_$^|_$^|_$^XBLite|_$^1|_$^1965
-Jeff Walker|_$^|_$^|_$^adamant|_$^1|_$^1966
-BBK|_$^|_$^|_$^BeBasic|_$^1|_$^1967
-S.S. Mikhalkovich|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1968
-Ivan Bondarev|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1968
-A.V. Tkachuk|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1968
-S.O. Ivanov|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1968
-Finn Barber|_$^|_$^|_$^Cognate|_$^1|_$^1970
-Mehmet Hakan Satman|_$^|_$^|_$^Fuzuli|_$^1|_$^1971
+Matthew Steel|_$^|_$^|_$^6gunz|_$^1|_$^1880
+Andy Gavin|_$^|_$^|_$^Game Oriented Assembly Lisp|_$^1|_$^1881
+Markus Voelter|_$^|_$^|_$^datev|_$^1|_$^1887
+Sergej Koˇsˇcejev|_$^|_$^|_$^datev|_$^1|_$^1887
+Leon Bottou|_$^|_$^|_$^Lush|_$^1|_$^1891
+Yann Le Cun|_$^|_$^|_$^Lush|_$^1|_$^1891
+Neng-Fa Zhou|_$^|_$^|_$^Picat|_$^1|_$^1892
+Jonathan Fruhman|_$^|_$^|_$^Picat|_$^1|_$^1892
+Emina Torlak|_$^|_$^|_$^rosette-lang|_$^1|_$^1894
+Rastislav Bodik|_$^|_$^|_$^rosette-lang|_$^1|_$^1894
+Marc Auberer|_$^|_$^|_$^Spice|_$^1|_$^1896
+Zef Hemel|_$^|_$^|_$^Mobl|_$^1|_$^1898
+Corrado Böhm|_$^|_$^|_$^P′′|_$^1|_$^1899
+Dave Griffiths|_$^|_$^|_$^co2|_$^1|_$^1901
+RoMeAh|_$^|_$^|_$^BlazeX|_$^1|_$^1902
+Arno Gourdol|_$^ home|_$^|_$^MathJSON - Cortex|_$^2|_$^1905
+Aliaksandr Zahatski|_$^|_$^|_$^Pod6|_$^1|_$^1912
+Jonathan Avery|_$^|_$^|_$^juicy|_$^1|_$^1913
+Emil Post|_$^|_$^|_$^Post production|_$^1|_$^1914
+Jan Max Meyer|_$^|_$^|_$^RapidBatch|_$^1|_$^1919
+Per Bothner|_$^|_$^|_$^Kawa|_$^1|_$^1923
+Mark Hahn|_$^|_$^|_$^fjs|_$^1|_$^1926
+Zachary Sakowitz|_$^|_$^|_$^Storymatic|_$^1|_$^1928
+Matheus Dias de Souza|_$^|_$^|_$^Violent ES|_$^1|_$^1929
+Raja Mukherji|_$^|_$^|_$^Minilang|_$^1|_$^1934
+Yoshiki Ohshima|_$^|_$^|_$^shadama|_$^1|_$^1935
+Dan Amelang|_$^|_$^|_$^shadama|_$^1|_$^1935
+Bert Freudenberg|_$^|_$^|_$^shadama|_$^1|_$^1935
+Yuya Watari|_$^|_$^|_$^Ripple - Calc4|_$^2|_$^1937
+Yassen Bantchev|_$^|_$^|_$^U|_$^1|_$^1938
+Victor Maia|_$^|_$^|_$^formality|_$^1|_$^1940
+James Edwards|_$^|_$^|_$^jedlang|_$^1|_$^1941
+Pablo H. Reda|_$^|_$^|_$^r3|_$^1|_$^1942
+Zach Perkitny|_$^|_$^|_$^emerald-lang|_$^1|_$^1947
+Christian Budde Christensen|_$^|_$^|_$^gintonic|_$^1|_$^1948
+Cedric Cellier|_$^|_$^|_$^ramen|_$^1|_$^1950
+Terry A. Davis|_$^|_$^|_$^holyc|_$^1|_$^1955
+Nathan Merrill|_$^|_$^|_$^elegance|_$^1|_$^1956
+Eddie aka. tamamu|_$^|_$^|_$^Macchiato|_$^1|_$^1957
+Roger Corman|_$^|_$^|_$^Corman Common Lisp|_$^1|_$^1958
+Marijn Haverbeke|_$^|_$^|_$^lezer|_$^1|_$^1960
+David Szafranski|_$^|_$^|_$^XBLite|_$^1|_$^1966
+Jeff Walker|_$^|_$^|_$^adamant|_$^1|_$^1967
+BBK|_$^|_$^|_$^BeBasic|_$^1|_$^1968
+S.S. Mikhalkovich|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1969
+Ivan Bondarev|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1969
+A.V. Tkachuk|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1969
+S.O. Ivanov|_$^|_$^|_$^PascalABC.NET|_$^1|_$^1969
+Finn Barber|_$^|_$^|_$^Cognate|_$^1|_$^1971
+Mehmet Hakan Satman|_$^|_$^|_$^Fuzuli|_$^1|_$^1972
 monsterkodi|_$^|_$^|_$^noon - kode|_$^2|_$^1974
-Andy Ross|_$^|_$^|_$^Nasal|_$^1|_$^1983
-David A. Wheeler|_$^|_$^|_$^Sweet Expressions|_$^1|_$^1987
-Alan Manuel K. Gloria|_$^|_$^|_$^Sweet Expressions|_$^1|_$^1987
-Nils M Holm|_$^home|_$^|_$^T3X - Kilo LISP - mLite - Klong|_$^4|_$^1988
-Joe Jevnik|_$^|_$^|_$^phorth|_$^1|_$^1993
-Mosha Pasumansky|_$^|_$^|_$^MultiDimensional eXpressions|_$^1|_$^1994
-Vaughan Ronald Pratt|_$^|_$^|_$^CGOL|_$^1|_$^1995
-Carl Gundel|_$^|_$^|_$^Liberty BASIC|_$^1|_$^2005
-Daniel Weinreb|_$^|_$^|_$^Lisp Machine Lisp|_$^1|_$^2007
-Bob Barton|_$^|_$^|_$^BALGOL|_$^1|_$^2010
-Antonio Albano|_$^|_$^|_$^Fibonacci|_$^1|_$^2012
-Giorgio Ghelli|_$^|_$^|_$^Fibonacci|_$^1|_$^2012
-and Renzo Orsini|_$^|_$^|_$^Fibonacci|_$^1|_$^2012
-ISO Technical Committee TC 154|_$^|_$^|_$^ISO 8601|_$^1|_$^2019
-Roger Dannenberg|_$^|_$^|_$^Nyquist|_$^1|_$^2021
-Richard Brodie|_$^|_$^|_$^RTF|_$^1|_$^2022
-Charles Simonyi|_$^|_$^|_$^RTF|_$^1|_$^2022
-David Luebbert|_$^|_$^|_$^RTF|_$^1|_$^2022
-Ondřej Kocián|_$^|_$^|_$^PearScript|_$^1|_$^2026
-Gerald Bauer|_$^|_$^|_$^texti|_$^1|_$^2027
-Ray Stubbs|_$^|_$^|_$^ten|_$^1|_$^2034
-Kevin Atkinson|_$^|_$^|_$^zl|_$^1|_$^2035
-Abdulaziz Ghuloum|_$^|_$^|_$^Ikarus Scheme implementation|_$^1|_$^2038
-D.B. Wortman|_$^|_$^|_$^SP/k|_$^1|_$^2040
-D.T. Barnard|_$^|_$^|_$^SP/k|_$^1|_$^2040
-Arjun Nair|_$^|_$^|_$^ircis|_$^1|_$^2044
-Hannah Ritchie|_$^|_$^|_$^Explorer|_$^1|_$^2054
-Shahid Ahmad|_$^|_$^|_$^Explorer|_$^1|_$^2054
-zplusfour|_$^|_$^|_$^Fardlang|_$^1|_$^2058
-niql|_$^|_$^|_$^Wu|_$^1|_$^2061
-Richard Fobes|_$^|_$^|_$^Dashrep|_$^1|_$^2065
-Kevin Lawler|_$^|_$^|_$^kerf|_$^1|_$^2066
-Joao Marcelo Brito|_$^|_$^|_$^JLang|_$^1|_$^2074
-Michael Allan|_$^|_$^|_$^Breccia|_$^1|_$^2076
-Emanuel Rylke|_$^|_$^|_$^jasper|_$^1|_$^2077
-ALANVF|_$^|_$^|_$^Star|_$^1|_$^2079
-Katie Ampersand|_$^|_$^|_$^Kami|_$^1|_$^2084
-Lance Pollard|_$^|_$^|_$^Link|_$^1|_$^2086
-Ingi Gauti|_$^ |_$^|_$^plang|_$^1|_$^2087
-E. Dean Tribble|_$^|_$^|_$^Joule|_$^1|_$^2089
-jenra|_$^|_$^|_$^Curly|_$^1|_$^2094
-Bishop Zareh|_$^|_$^|_$^Typecast.js|_$^1|_$^2095
-Jack Clarke|_$^|_$^|_$^Cane|_$^1|_$^2097
-Michael Chance|_$^|_$^|_$^Tag Line Commands|_$^1|_$^2099
-Harold Boley|_$^|_$^|_$^RuleML|_$^1|_$^2108
-Benjamin Grosof|_$^|_$^|_$^RuleML|_$^1|_$^2108
-Said Tabet|_$^|_$^|_$^RuleML|_$^1|_$^2108
-Jeffrey Mark Siskind|_$^|_$^|_$^Stalin|_$^1|_$^2109
-John Tromp|_$^|_$^|_$^Binary Lambda Calculus - Lambda Diagrams|_$^2|_$^2119
-Marco Lavoie|_$^|_$^|_$^LARP|_$^1|_$^2125
-Ruslan Lopatin|_$^|_$^|_$^o42a|_$^1|_$^2132
-Alexander Baranovsky|_$^|_$^|_$^paxScript|_$^1|_$^2133
-Diarmuid Pigott|_$^|_$^|_$^protium|_$^1|_$^2137
-Simon Whiteside|_$^|_$^|_$^Simkin|_$^1|_$^2139
-Stevan Apter|_$^home |_$^|_$^SLACK - F - cK - XY|_$^4|_$^2141
-Andrew McKinlay|_$^|_$^|_$^Suneido|_$^1|_$^2145
-Nate Cull|_$^ home|_$^|_$^SUSN|_$^1|_$^2146
-Laurenz Mädje|_$^|_$^|_$^Typst|_$^1|_$^2148
-Magnus Holm|_$^|_$^|_$^glush|_$^1|_$^2150
-Nicholas Bollweg|_$^|_$^|_$^tangledown|_$^1|_$^2152
-Zaven Muradyan|_$^|_$^|_$^awl|_$^1|_$^2154
-Alin Ali Hassan|_$^|_$^|_$^Lesma|_$^1|_$^2155
-Brian Kantor|_$^|_$^1953|_$^NNTP - AMPRNet|_$^2|_$^2167
-Phil Lapsley|_$^home |_$^1965|_$^NNTP|_$^1|_$^2167
-Roy Thomas Fielding|_$^|_$^|_$^URI|_$^1|_$^2169
-Larry Masinter|_$^|_$^|_$^URI|_$^1|_$^2169
-JL|_$^|_$^|_$^polymath|_$^1|_$^2172
-Thomas Hawkins|_$^|_$^|_$^Atom|_$^1|_$^2181
-Zhenzhen Zhan|_$^|_$^|_$^FutureScript|_$^1|_$^2188
-Martin Capodici|_$^|_$^|_$^badlanguage|_$^1|_$^2189
-Gilbert Ohnysty|_$^|_$^|_$^SBASIC|_$^1|_$^2199
-Chris Klimas|_$^ home|_$^|_$^Snowman|_$^1|_$^2212
-Gary Feng|_$^|_$^|_$^Octune|_$^1|_$^2214
-Cerus|_$^|_$^|_$^Edina|_$^1|_$^2215
-Sam Westerman|_$^|_$^|_$^Knight - Squire|_$^2|_$^2216
-Lucas de Sena|_$^|_$^|_$^Incipit|_$^1|_$^2219
-Mark|_$^|_$^|_$^Jammy - Hina|_$^2|_$^2220
-Daniel Garcia|_$^|_$^|_$^nlpl|_$^1|_$^2221
-Anand Rao|_$^|_$^|_$^AgentSpeak|_$^1|_$^2228
-Warren Robinett|_$^|_$^|_$^BASIC Programming|_$^1|_$^2234
-valkarias|_$^|_$^|_$^PCrap|_$^1|_$^2235
-Laurie Cheers|_$^|_$^|_$^Swym|_$^1|_$^2240
-Erik Demaine|_$^ home|_$^|_$^Fold|_$^1|_$^2242
-Jason S. Ku|_$^|_$^|_$^Fold|_$^1|_$^2242
-Robert J. Lang|_$^|_$^|_$^Fold|_$^1|_$^2242
-Patrick|_$^|_$^|_$^Chika|_$^1|_$^2244
-Stephan Bruny|_$^|_$^|_$^corescript|_$^1|_$^2245
-Markus Alexej Persson|_$^ home  |_$^1979|_$^Minecraft|_$^1|_$^2247
-Adam Hutchings|_$^|_$^|_$^Z-flat|_$^1|_$^2249
-m-schm|_$^|_$^|_$^Topaz|_$^1|_$^2252
-Edgar T. Irons|_$^|_$^|_$^IMP|_$^1|_$^2259
-Steven M. Caine|_$^|_$^|_$^TTM|_$^1|_$^2263
-E. Kent Gordon|_$^|_$^|_$^TTM|_$^1|_$^2263
-Scott Ambler|_$^|_$^|_$^DAD|_$^1|_$^2267
-Mark Lines|_$^|_$^|_$^DAD|_$^1|_$^2267
-Pascal Van Hentenryck|_$^|_$^|_$^Optimization Programming Language|_$^1|_$^2271
-Axel Thue|_$^|_$^|_$^Semi-Thue|_$^1|_$^2275
-Mathieu CAROFF|_$^|_$^|_$^Broccoli|_$^1|_$^2276
-Samuel Kelemen|_$^|_$^|_$^Nomad|_$^1|_$^2277
-Matthew Fysh|_$^ |_$^|_$^GETlang|_$^1|_$^2281
-John Earnest|_$^ home|_$^|_$^Decker - Lil - oK|_$^3|_$^2305
-David Broderick|_$^|_$^|_$^kayia|_$^1|_$^2312
-David Piepgrass|_$^|_$^|_$^LES - lllpg|_$^2|_$^2314
-Leonard Ritter|_$^|_$^|_$^none - scopes|_$^2|_$^2319
-David Morgan-Mar|_$^|_$^|_$^Ook|_$^1|_$^2320
-Stephen Leach|_$^|_$^|_$^OpenSpice|_$^1|_$^2321
-Gerry Rzeppa|_$^|_$^|_$^Plain English|_$^1|_$^2326
-Dan Rzeppa|_$^|_$^|_$^Plain English|_$^1|_$^2326
-David Stoutamire|_$^|_$^|_$^Sather-K|_$^1|_$^2333
-Wolf Zimmermann|_$^|_$^|_$^Sather-K|_$^1|_$^2333
-Martin Trapp|_$^|_$^|_$^Sather-K|_$^1|_$^2333
-Bernhard Scholz|_$^|_$^|_$^souffle|_$^1|_$^2335
-Giandomenico Spezzano|_$^|_$^|_$^Carpet|_$^1|_$^2342
-Domenico Talia|_$^|_$^|_$^Carpet|_$^1|_$^2342
-Michael Homer|_$^|_$^|_$^Interleaved Notation|_$^1|_$^2343
-Martijn Koster|_$^|_$^|_$^Robots.txt|_$^1|_$^2348
-Tom Rothamel|_$^|_$^|_$^Ruri|_$^1|_$^2349
-Mary Fernández|_$^|_$^|_$^StruQL|_$^1|_$^2350
-Dan Suciu|_$^|_$^|_$^StruQL - UnQL|_$^2|_$^2350
-and Igor Tatarinov|_$^|_$^|_$^StruQL|_$^1|_$^2350
-Brian Chin|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Daniel von Dincklage|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Vuk Ercegovac|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Peter Hawkins|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Franz Och|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Chris Olston|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Fernando Pereira|_$^|_$^|_$^Yedalog|_$^1|_$^2352
-Arkady D.Zakrevskij|_$^|_$^|_$^LYaPAS|_$^1|_$^2370
-Byron Ruth|_$^|_$^|_$^JSON Graph Spec|_$^1|_$^2378
-Darren Duncan|_$^|_$^|_$^Muldis|_$^1|_$^2379
-David Jobet|_$^|_$^|_$^Nosica|_$^1|_$^2385
-Josh Weinstein|_$^|_$^|_$^RoyalScript|_$^1|_$^2386
-David Olofson|_$^|_$^|_$^Extensible Embeddable Language|_$^1|_$^2388
-John Barnes|_$^|_$^|_$^RTL/2|_$^1|_$^2396
-Compaq|_$^|_$^|_$^USB|_$^1|_$^2398
-Digital Equipment Corporation|_$^|_$^|_$^USB|_$^1|_$^2398
-IBM|_$^|_$^|_$^USB|_$^1|_$^2398
-Intel|_$^|_$^|_$^USB|_$^1|_$^2398
-NEC|_$^|_$^|_$^USB|_$^1|_$^2398
-Nortel|_$^|_$^|_$^USB|_$^1|_$^2398
-Saptak|_$^|_$^|_$^Swallow|_$^1|_$^2399
-Danilo Lekovic|_$^|_$^|_$^Iode|_$^1|_$^2402
-David C. Keenan|_$^|_$^|_$^mockingbird-notation|_$^1|_$^2408
-Huw Pritchard|_$^|_$^|_$^HuwCode|_$^1|_$^2413
-Ian Fitchet|_$^|_$^|_$^Idio|_$^1|_$^2414
-Steve Ruiz|_$^ home |_$^1987|_$^tldraw|_$^1|_$^2426
-Justin Hu|_$^|_$^|_$^stacklang - t-lang|_$^2|_$^2432
-Moshe M. Zloof|_$^|_$^|_$^SBA|_$^1|_$^2456
-S. Peter de Jong|_$^|_$^|_$^SBA|_$^1|_$^2456
-Stephen Richard Bourne|_$^|_$^|_$^sh|_$^1|_$^2458
-Feliks Kluhiak|_$^|_$^|_$^Spill|_$^1|_$^2459
-Mirodawa Milkowska|_$^|_$^|_$^Spill|_$^1|_$^2459
-Kye W. Shi|_$^|_$^|_$^Slick|_$^1|_$^2461
-John Judnich|_$^|_$^|_$^tuplemarkup|_$^1|_$^2462
-Mikail Khan|_$^|_$^|_$^RustScript|_$^1|_$^2473
-CoconutMacaroon|_$^|_$^|_$^Broccoli|_$^1|_$^2484
-Anthony Bonkoski|_$^ home|_$^1990|_$^Forsp|_$^1|_$^2485
-HE Shi-Jun|_$^|_$^|_$^Jedi|_$^1|_$^2486
-Katrina Grace|_$^|_$^|_$^SQHTML|_$^1|_$^2488
-Adam Dullage|_$^|_$^|_$^Workfl|_$^1|_$^2489
-Robert Swierczek|_$^|_$^|_$^swizzle|_$^1|_$^2493
-Nicolas Ojeda Bar|_$^|_$^|_$^mlpolyr|_$^1|_$^2500
-Andrew S. Grimshaw|_$^|_$^|_$^Mentat|_$^1|_$^2504
-Jane W.S. Liu|_$^|_$^|_$^Mentat|_$^1|_$^2504
-Richard Evans|_$^|_$^|_$^praxis-lang|_$^1|_$^2505
-Dilan Nair|_$^|_$^|_$^GamerLanguage|_$^1|_$^2506
-Steven Obua|_$^ |_$^|_$^Recursive teXt|_$^1|_$^2507
-Nick Noble|_$^ home |_$^|_$^Slashdown|_$^1|_$^2508
-Pouya Kary|_$^|_$^|_$^Timpani|_$^1|_$^2510
-Andrey Zholos|_$^ home|_$^|_$^kuc - Yewslip|_$^2|_$^2513
-Daniel Fedorin|_$^ home|_$^1998|_$^Pegasus|_$^1|_$^2514
-Jakob Hain|_$^|_$^|_$^Descript|_$^1|_$^2529
-Daniel Smith|_$^|_$^|_$^D++|_$^1|_$^2531
-Alex Loh|_$^|_$^|_$^enso|_$^1|_$^2535
-Daniel Temkin|_$^|_$^|_$^Entropy|_$^1|_$^2536
-Dan Swirsky|_$^|_$^|_$^Hilltop|_$^1|_$^2545
-Christian Neumanns|_$^|_$^|_$^PML|_$^1|_$^2568
-Makoto Murata|_$^|_$^|_$^relax|_$^1|_$^2573
-Richard Kelsey|_$^home|_$^|_$^Scheme 48 - Pre-Scheme|_$^2|_$^2576
-Jonathan Rees|_$^home|_$^|_$^Scheme 48 - Pre-Scheme|_$^2|_$^2576
-Taylor Troesh|_$^|_$^|_$^Scrapscript|_$^1|_$^2577
-Evan Wallace|_$^|_$^|_$^skew|_$^1|_$^2582
-Herman Venter|_$^|_$^|_$^slim-pl|_$^1|_$^2583
-Eunice Jun|_$^|_$^|_$^Tea|_$^1|_$^2589
-Maureen Daum|_$^|_$^|_$^Tea|_$^1|_$^2589
-Jared Roesch|_$^|_$^|_$^Tea|_$^1|_$^2589
-Sarah E. Chasins|_$^|_$^|_$^Tea|_$^1|_$^2589
-Emery D. Berger|_$^|_$^|_$^Tea|_$^1|_$^2589
-Rene Just|_$^|_$^|_$^Tea|_$^1|_$^2589
-Katharina Reinecke|_$^|_$^|_$^Tea|_$^1|_$^2589
-Kaz Kylheku|_$^|_$^|_$^txr|_$^1|_$^2590
-Russ Cox|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2593
-Tom Bergan†|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2593
-Austin T. Clements|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2593
-Frans Kaashoek|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2593
-Eddie Kohler|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2593
-Yuriy Zamyatin|_$^|_$^|_$^ForthScript|_$^1|_$^2596
-Mado Nanika|_$^|_$^|_$^Cotton|_$^1|_$^2598
-Holger H. Hoos|_$^|_$^|_$^GUIDO music notation|_$^1|_$^2605
-Keith Hamel|_$^|_$^|_$^GUIDO music notation|_$^1|_$^2605
-Paul Tenczar|_$^|_$^|_$^TUTOR|_$^1|_$^2613
-Richard Blomme|_$^|_$^|_$^TUTOR|_$^1|_$^2613
-Phil Karn|_$^|_$^1956|_$^AMPRNet|_$^1|_$^2614
-Mark Sibly|_$^|_$^|_$^MonkeyX|_$^1|_$^2622
-Dennis Allison|_$^|_$^|_$^Tiny BASIC|_$^1|_$^2638
-Jeffrey G. Bonar|_$^|_$^|_$^BridgeTalk|_$^1|_$^2645
-Blaise W. Liffick|_$^|_$^|_$^BridgeTalk|_$^1|_$^2645
-Robbert van Dalen|_$^|_$^|_$^Enchilada|_$^1|_$^2650
-Nikhil Swamy|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Tahina Ramananandro|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Aseem Rastogi|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Irina Spiridonova|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Haobin Ni|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Dmitry Malloy|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Juan Vazquez|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Michael Tang|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Omar Cardona|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Arti Gupta|_$^|_$^|_$^EverParse3D|_$^1|_$^2652
-Ioi K. Lam|_$^|_$^|_$^JACL|_$^1|_$^2655
-Brian Smith|_$^|_$^|_$^JACL|_$^1|_$^2655
-Bill McKeeman|_$^|_$^|_$^mckeeman-form - C flat|_$^2|_$^2659
-Ronen Barzel|_$^|_$^|_$^Patchwork|_$^1|_$^2663
-David Salesin|_$^|_$^|_$^Patchwork|_$^1|_$^2663
-Bart van der Werf|_$^|_$^|_$^Pluk|_$^1|_$^2666
-Steven R Newcomb|_$^|_$^|_$^SMDL|_$^1|_$^2668
-Royi Ronen|_$^|_$^|_$^SoQL|_$^1|_$^2669
-Oded Shmueli|_$^|_$^|_$^SoQL|_$^1|_$^2669
-Stephen Chang|_$^|_$^|_$^turnstile|_$^1|_$^2673
-Alex Knauth|_$^|_$^|_$^turnstile|_$^1|_$^2673
-Ben Greenman|_$^|_$^|_$^turnstile|_$^1|_$^2673
-Milo Turner|_$^|_$^|_$^turnstile|_$^1|_$^2673
-Michael Ballantyne|_$^|_$^|_$^turnstile|_$^1|_$^2673
-Maurice Machado|_$^ |_$^|_$^CoffeeKup|_$^1|_$^2681
-Bill Gates|_$^|_$^|_$^Color BASIC|_$^1|_$^2687
-Egil Möller|_$^|_$^|_$^I-expressions|_$^1|_$^2691
+Andy Ross|_$^|_$^|_$^Nasal|_$^1|_$^1984
+David A. Wheeler|_$^|_$^|_$^Sweet Expressions|_$^1|_$^1988
+Alan Manuel K. Gloria|_$^|_$^|_$^Sweet Expressions|_$^1|_$^1988
+Nils M Holm|_$^home|_$^|_$^T3X - Kilo LISP - mLite - Klong|_$^4|_$^1989
+Joe Jevnik|_$^|_$^|_$^phorth|_$^1|_$^1994
+Mosha Pasumansky|_$^|_$^|_$^MultiDimensional eXpressions|_$^1|_$^1995
+Vaughan Ronald Pratt|_$^|_$^|_$^CGOL|_$^1|_$^1996
+Carl Gundel|_$^|_$^|_$^Liberty BASIC|_$^1|_$^2006
+Daniel Weinreb|_$^|_$^|_$^Lisp Machine Lisp|_$^1|_$^2008
+Bob Barton|_$^|_$^|_$^BALGOL|_$^1|_$^2011
+Antonio Albano|_$^|_$^|_$^Fibonacci|_$^1|_$^2013
+Giorgio Ghelli|_$^|_$^|_$^Fibonacci|_$^1|_$^2013
+and Renzo Orsini|_$^|_$^|_$^Fibonacci|_$^1|_$^2013
+ISO Technical Committee TC 154|_$^|_$^|_$^ISO 8601|_$^1|_$^2020
+Roger Dannenberg|_$^|_$^|_$^Nyquist|_$^1|_$^2022
+Richard Brodie|_$^|_$^|_$^RTF|_$^1|_$^2023
+Charles Simonyi|_$^|_$^|_$^RTF|_$^1|_$^2023
+David Luebbert|_$^|_$^|_$^RTF|_$^1|_$^2023
+Ondřej Kocián|_$^|_$^|_$^PearScript|_$^1|_$^2027
+Gerald Bauer|_$^|_$^|_$^texti|_$^1|_$^2028
+Ray Stubbs|_$^|_$^|_$^ten|_$^1|_$^2035
+Kevin Atkinson|_$^|_$^|_$^zl|_$^1|_$^2036
+Abdulaziz Ghuloum|_$^|_$^|_$^Ikarus Scheme implementation|_$^1|_$^2039
+D.B. Wortman|_$^|_$^|_$^SP/k|_$^1|_$^2041
+D.T. Barnard|_$^|_$^|_$^SP/k|_$^1|_$^2041
+Arjun Nair|_$^|_$^|_$^ircis|_$^1|_$^2045
+Hannah Ritchie|_$^|_$^|_$^Explorer|_$^1|_$^2055
+Shahid Ahmad|_$^|_$^|_$^Explorer|_$^1|_$^2055
+zplusfour|_$^|_$^|_$^Fardlang|_$^1|_$^2059
+niql|_$^|_$^|_$^Wu|_$^1|_$^2062
+Richard Fobes|_$^|_$^|_$^Dashrep|_$^1|_$^2066
+Kevin Lawler|_$^|_$^|_$^kerf|_$^1|_$^2067
+Joao Marcelo Brito|_$^|_$^|_$^JLang|_$^1|_$^2075
+Michael Allan|_$^|_$^|_$^Breccia|_$^1|_$^2077
+Emanuel Rylke|_$^|_$^|_$^jasper|_$^1|_$^2078
+ALANVF|_$^|_$^|_$^Star|_$^1|_$^2080
+Katie Ampersand|_$^|_$^|_$^Kami|_$^1|_$^2085
+Lance Pollard|_$^|_$^|_$^Link|_$^1|_$^2087
+Ingi Gauti|_$^ |_$^|_$^plang|_$^1|_$^2088
+E. Dean Tribble|_$^|_$^|_$^Joule|_$^1|_$^2090
+jenra|_$^|_$^|_$^Curly|_$^1|_$^2095
+Bishop Zareh|_$^|_$^|_$^Typecast.js|_$^1|_$^2096
+Jack Clarke|_$^|_$^|_$^Cane|_$^1|_$^2098
+Michael Chance|_$^|_$^|_$^Tag Line Commands|_$^1|_$^2100
+Harold Boley|_$^|_$^|_$^RuleML|_$^1|_$^2109
+Benjamin Grosof|_$^|_$^|_$^RuleML|_$^1|_$^2109
+Said Tabet|_$^|_$^|_$^RuleML|_$^1|_$^2109
+Jeffrey Mark Siskind|_$^|_$^|_$^Stalin|_$^1|_$^2110
+John Tromp|_$^|_$^|_$^Binary Lambda Calculus - Lambda Diagrams|_$^2|_$^2121
+Marco Lavoie|_$^|_$^|_$^LARP|_$^1|_$^2127
+Ruslan Lopatin|_$^|_$^|_$^o42a|_$^1|_$^2134
+Alexander Baranovsky|_$^|_$^|_$^paxScript|_$^1|_$^2135
+Diarmuid Pigott|_$^|_$^|_$^protium|_$^1|_$^2139
+Simon Whiteside|_$^|_$^|_$^Simkin|_$^1|_$^2141
+Stevan Apter|_$^home |_$^|_$^SLACK - F - cK - XY|_$^4|_$^2143
+Andrew McKinlay|_$^|_$^|_$^Suneido|_$^1|_$^2147
+Nate Cull|_$^ home|_$^|_$^SUSN|_$^1|_$^2148
+Laurenz Mädje|_$^|_$^|_$^Typst|_$^1|_$^2150
+Magnus Holm|_$^|_$^|_$^glush|_$^1|_$^2151
+Nicholas Bollweg|_$^|_$^|_$^tangledown|_$^1|_$^2153
+Zaven Muradyan|_$^|_$^|_$^awl|_$^1|_$^2155
+Alin Ali Hassan|_$^|_$^|_$^Lesma|_$^1|_$^2156
+Brian Kantor|_$^|_$^1953|_$^NNTP - AMPRNet|_$^2|_$^2168
+Phil Lapsley|_$^home |_$^1965|_$^NNTP|_$^1|_$^2168
+Roy Thomas Fielding|_$^|_$^|_$^URI|_$^1|_$^2170
+Larry Masinter|_$^|_$^|_$^URI|_$^1|_$^2170
+JL|_$^|_$^|_$^polymath|_$^1|_$^2173
+Thomas Hawkins|_$^|_$^|_$^Atom|_$^1|_$^2182
+Zhenzhen Zhan|_$^|_$^|_$^FutureScript|_$^1|_$^2189
+Martin Capodici|_$^|_$^|_$^badlanguage|_$^1|_$^2190
+Gilbert Ohnysty|_$^|_$^|_$^SBASIC|_$^1|_$^2200
+Chris Klimas|_$^ home|_$^|_$^Snowman|_$^1|_$^2213
+Gary Feng|_$^|_$^|_$^Octune|_$^1|_$^2215
+Cerus|_$^|_$^|_$^Edina|_$^1|_$^2216
+Sam Westerman|_$^|_$^|_$^Knight - Squire|_$^2|_$^2217
+Lucas de Sena|_$^|_$^|_$^Incipit|_$^1|_$^2220
+Mark|_$^|_$^|_$^Jammy - Hina|_$^2|_$^2221
+Daniel Garcia|_$^|_$^|_$^nlpl|_$^1|_$^2222
+Anand Rao|_$^|_$^|_$^AgentSpeak|_$^1|_$^2229
+Warren Robinett|_$^|_$^|_$^BASIC Programming|_$^1|_$^2235
+valkarias|_$^|_$^|_$^PCrap|_$^1|_$^2236
+Laurie Cheers|_$^|_$^|_$^Swym|_$^1|_$^2241
+Erik Demaine|_$^ home|_$^|_$^Fold|_$^1|_$^2243
+Jason S. Ku|_$^|_$^|_$^Fold|_$^1|_$^2243
+Robert J. Lang|_$^|_$^|_$^Fold|_$^1|_$^2243
+Patrick|_$^|_$^|_$^Chika|_$^1|_$^2245
+Stephan Bruny|_$^|_$^|_$^corescript|_$^1|_$^2246
+Markus Alexej Persson|_$^ home  |_$^1979|_$^Minecraft|_$^1|_$^2248
+Adam Hutchings|_$^|_$^|_$^Z-flat|_$^1|_$^2250
+m-schm|_$^|_$^|_$^Topaz|_$^1|_$^2253
+Edgar T. Irons|_$^|_$^|_$^IMP|_$^1|_$^2260
+Steven M. Caine|_$^|_$^|_$^TTM|_$^1|_$^2264
+E. Kent Gordon|_$^|_$^|_$^TTM|_$^1|_$^2264
+Scott Ambler|_$^|_$^|_$^DAD|_$^1|_$^2268
+Mark Lines|_$^|_$^|_$^DAD|_$^1|_$^2268
+Pascal Van Hentenryck|_$^|_$^|_$^Optimization Programming Language|_$^1|_$^2272
+Axel Thue|_$^|_$^|_$^Semi-Thue|_$^1|_$^2276
+Mathieu CAROFF|_$^|_$^|_$^Broccoli|_$^1|_$^2277
+Samuel Kelemen|_$^|_$^|_$^Nomad|_$^1|_$^2278
+Matthew Fysh|_$^ |_$^|_$^GETlang|_$^1|_$^2282
+John Earnest|_$^ home|_$^|_$^Decker - Lil - oK|_$^3|_$^2306
+David Broderick|_$^|_$^|_$^kayia|_$^1|_$^2313
+David Piepgrass|_$^|_$^|_$^LES - lllpg|_$^2|_$^2315
+Leonard Ritter|_$^|_$^|_$^none - scopes|_$^2|_$^2320
+David Morgan-Mar|_$^|_$^|_$^Ook|_$^1|_$^2321
+Stephen Leach|_$^|_$^|_$^OpenSpice|_$^1|_$^2322
+Gerry Rzeppa|_$^|_$^|_$^Plain English|_$^1|_$^2327
+Dan Rzeppa|_$^|_$^|_$^Plain English|_$^1|_$^2327
+David Stoutamire|_$^|_$^|_$^Sather-K|_$^1|_$^2334
+Wolf Zimmermann|_$^|_$^|_$^Sather-K|_$^1|_$^2334
+Martin Trapp|_$^|_$^|_$^Sather-K|_$^1|_$^2334
+Bernhard Scholz|_$^|_$^|_$^souffle|_$^1|_$^2336
+Giandomenico Spezzano|_$^|_$^|_$^Carpet|_$^1|_$^2344
+Domenico Talia|_$^|_$^|_$^Carpet|_$^1|_$^2344
+Michael Homer|_$^|_$^|_$^Interleaved Notation|_$^1|_$^2345
+Martijn Koster|_$^|_$^|_$^Robots.txt|_$^1|_$^2350
+Tom Rothamel|_$^|_$^|_$^Ruri|_$^1|_$^2351
+Mary Fernández|_$^|_$^|_$^StruQL|_$^1|_$^2352
+Dan Suciu|_$^|_$^|_$^StruQL - UnQL|_$^2|_$^2352
+and Igor Tatarinov|_$^|_$^|_$^StruQL|_$^1|_$^2352
+Brian Chin|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Daniel von Dincklage|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Vuk Ercegovac|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Peter Hawkins|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Franz Och|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Chris Olston|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Fernando Pereira|_$^|_$^|_$^Yedalog|_$^1|_$^2354
+Arkady D.Zakrevskij|_$^|_$^|_$^LYaPAS|_$^1|_$^2371
+Byron Ruth|_$^|_$^|_$^JSON Graph Spec|_$^1|_$^2379
+Darren Duncan|_$^|_$^|_$^Muldis|_$^1|_$^2380
+David Jobet|_$^|_$^|_$^Nosica|_$^1|_$^2386
+Josh Weinstein|_$^|_$^|_$^RoyalScript|_$^1|_$^2387
+David Olofson|_$^|_$^|_$^Extensible Embeddable Language|_$^1|_$^2389
+John Barnes|_$^|_$^|_$^RTL/2|_$^1|_$^2397
+Compaq|_$^|_$^|_$^USB|_$^1|_$^2399
+Digital Equipment Corporation|_$^|_$^|_$^USB|_$^1|_$^2399
+IBM|_$^|_$^|_$^USB|_$^1|_$^2399
+Intel|_$^|_$^|_$^USB|_$^1|_$^2399
+NEC|_$^|_$^|_$^USB|_$^1|_$^2399
+Nortel|_$^|_$^|_$^USB|_$^1|_$^2399
+Saptak|_$^|_$^|_$^Swallow|_$^1|_$^2400
+Danilo Lekovic|_$^|_$^|_$^Iode|_$^1|_$^2403
+David C. Keenan|_$^|_$^|_$^mockingbird-notation|_$^1|_$^2409
+Huw Pritchard|_$^|_$^|_$^HuwCode|_$^1|_$^2414
+Ian Fitchet|_$^|_$^|_$^Idio|_$^1|_$^2415
+Steve Ruiz|_$^ home |_$^1987|_$^tldraw|_$^1|_$^2427
+Justin Hu|_$^|_$^|_$^stacklang - t-lang|_$^2|_$^2433
+Moshe M. Zloof|_$^|_$^|_$^SBA|_$^1|_$^2457
+S. Peter de Jong|_$^|_$^|_$^SBA|_$^1|_$^2457
+Stephen Richard Bourne|_$^|_$^|_$^sh|_$^1|_$^2459
+Feliks Kluhiak|_$^|_$^|_$^Spill|_$^1|_$^2460
+Mirodawa Milkowska|_$^|_$^|_$^Spill|_$^1|_$^2460
+Kye W. Shi|_$^|_$^|_$^Slick|_$^1|_$^2462
+John Judnich|_$^|_$^|_$^tuplemarkup|_$^1|_$^2463
+Mikail Khan|_$^|_$^|_$^RustScript|_$^1|_$^2474
+CoconutMacaroon|_$^|_$^|_$^Broccoli|_$^1|_$^2485
+Anthony Bonkoski|_$^ home|_$^1990|_$^Forsp|_$^1|_$^2486
+HE Shi-Jun|_$^|_$^|_$^Jedi|_$^1|_$^2487
+Katrina Grace|_$^|_$^|_$^SQHTML|_$^1|_$^2489
+Adam Dullage|_$^|_$^|_$^Workfl|_$^1|_$^2490
+Robert Swierczek|_$^|_$^|_$^swizzle|_$^1|_$^2494
+Nicolas Ojeda Bar|_$^|_$^|_$^mlpolyr|_$^1|_$^2501
+Andrew S. Grimshaw|_$^|_$^|_$^Mentat|_$^1|_$^2505
+Jane W.S. Liu|_$^|_$^|_$^Mentat|_$^1|_$^2505
+Richard Evans|_$^|_$^|_$^praxis-lang|_$^1|_$^2506
+Dilan Nair|_$^|_$^|_$^GamerLanguage|_$^1|_$^2507
+Steven Obua|_$^ |_$^|_$^Recursive teXt|_$^1|_$^2508
+Nick Noble|_$^ home |_$^|_$^Slashdown|_$^1|_$^2509
+Pouya Kary|_$^|_$^|_$^Timpani|_$^1|_$^2511
+Andrey Zholos|_$^ home|_$^|_$^kuc - Yewslip|_$^2|_$^2514
+Daniel Fedorin|_$^ home|_$^1998|_$^Pegasus|_$^1|_$^2515
+Jakob Hain|_$^|_$^|_$^Descript|_$^1|_$^2530
+Daniel Smith|_$^|_$^|_$^D++|_$^1|_$^2532
+Alex Loh|_$^|_$^|_$^enso|_$^1|_$^2536
+Daniel Temkin|_$^|_$^|_$^Entropy|_$^1|_$^2537
+Dan Swirsky|_$^|_$^|_$^Hilltop|_$^1|_$^2546
+Christian Neumanns|_$^|_$^|_$^PML|_$^1|_$^2569
+Makoto Murata|_$^|_$^|_$^relax|_$^1|_$^2574
+Richard Kelsey|_$^home|_$^|_$^Scheme 48 - Pre-Scheme|_$^2|_$^2577
+Jonathan Rees|_$^home|_$^|_$^Scheme 48 - Pre-Scheme|_$^2|_$^2577
+Taylor Troesh|_$^|_$^|_$^Scrapscript|_$^1|_$^2578
+Evan Wallace|_$^|_$^|_$^skew|_$^1|_$^2583
+Herman Venter|_$^|_$^|_$^slim-pl|_$^1|_$^2584
+Eunice Jun|_$^|_$^|_$^Tea|_$^1|_$^2590
+Maureen Daum|_$^|_$^|_$^Tea|_$^1|_$^2590
+Jared Roesch|_$^|_$^|_$^Tea|_$^1|_$^2590
+Sarah E. Chasins|_$^|_$^|_$^Tea|_$^1|_$^2590
+Emery D. Berger|_$^|_$^|_$^Tea|_$^1|_$^2590
+Rene Just|_$^|_$^|_$^Tea|_$^1|_$^2590
+Katharina Reinecke|_$^|_$^|_$^Tea|_$^1|_$^2590
+Kaz Kylheku|_$^|_$^|_$^txr|_$^1|_$^2591
+Russ Cox|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2594
+Tom Bergan†|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2594
+Austin T. Clements|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2594
+Frans Kaashoek|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2594
+Eddie Kohler|_$^|_$^|_$^Xoc - Zeta|_$^2|_$^2594
+Yuriy Zamyatin|_$^|_$^|_$^ForthScript|_$^1|_$^2597
+Mado Nanika|_$^|_$^|_$^Cotton|_$^1|_$^2599
+Holger H. Hoos|_$^|_$^|_$^GUIDO music notation|_$^1|_$^2606
+Keith Hamel|_$^|_$^|_$^GUIDO music notation|_$^1|_$^2606
+Paul Tenczar|_$^|_$^|_$^TUTOR|_$^1|_$^2614
+Richard Blomme|_$^|_$^|_$^TUTOR|_$^1|_$^2614
+Phil Karn|_$^|_$^1956|_$^AMPRNet|_$^1|_$^2615
+Mark Sibly|_$^|_$^|_$^MonkeyX|_$^1|_$^2623
+Dennis Allison|_$^|_$^|_$^Tiny BASIC|_$^1|_$^2639
+Jeffrey G. Bonar|_$^|_$^|_$^BridgeTalk|_$^1|_$^2646
+Blaise W. Liffick|_$^|_$^|_$^BridgeTalk|_$^1|_$^2646
+Robbert van Dalen|_$^|_$^|_$^Enchilada|_$^1|_$^2651
+Nikhil Swamy|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Tahina Ramananandro|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Aseem Rastogi|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Irina Spiridonova|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Haobin Ni|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Dmitry Malloy|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Juan Vazquez|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Michael Tang|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Omar Cardona|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Arti Gupta|_$^|_$^|_$^EverParse3D|_$^1|_$^2653
+Ioi K. Lam|_$^|_$^|_$^JACL|_$^1|_$^2656
+Brian Smith|_$^|_$^|_$^JACL|_$^1|_$^2656
+Bill McKeeman|_$^|_$^|_$^mckeeman-form - C flat|_$^2|_$^2660
+Ronen Barzel|_$^|_$^|_$^Patchwork|_$^1|_$^2664
+David Salesin|_$^|_$^|_$^Patchwork|_$^1|_$^2664
+Bart van der Werf|_$^|_$^|_$^Pluk|_$^1|_$^2667
+Steven R Newcomb|_$^|_$^|_$^SMDL|_$^1|_$^2669
+Royi Ronen|_$^|_$^|_$^SoQL|_$^1|_$^2670
+Oded Shmueli|_$^|_$^|_$^SoQL|_$^1|_$^2670
+Stephen Chang|_$^|_$^|_$^turnstile|_$^1|_$^2674
+Alex Knauth|_$^|_$^|_$^turnstile|_$^1|_$^2674
+Ben Greenman|_$^|_$^|_$^turnstile|_$^1|_$^2674
+Milo Turner|_$^|_$^|_$^turnstile|_$^1|_$^2674
+Michael Ballantyne|_$^|_$^|_$^turnstile|_$^1|_$^2674
+Maurice Machado|_$^ |_$^|_$^CoffeeKup|_$^1|_$^2682
+Bill Gates|_$^|_$^|_$^Color BASIC|_$^1|_$^2688
+Egil Möller|_$^|_$^|_$^I-expressions|_$^1|_$^2692
 G. Stewart von Itzstein|_$^|_$^|_$^Join Java|_$^1|_$^2694
-Erel Uziel|_$^|_$^|_$^Basic4ppc|_$^1|_$^2702
-Sander Mertens|_$^|_$^|_$^y-lang|_$^1|_$^2706
-Fogus|_$^|_$^|_$^Broccoli|_$^1|_$^2710
-Onchere Bironga|_$^|_$^|_$^whack|_$^1|_$^2714
-Renzhi Li aka. Belleve Invis|_$^|_$^|_$^Moescript|_$^1|_$^2717
-Kevin Diggins|_$^|_$^|_$^BCX|_$^1|_$^2722
-Robert Wishlaw|_$^|_$^|_$^BCX|_$^1|_$^2722
-Carl Schierig|_$^|_$^|_$^penguor|_$^1|_$^2740
-Dan Motzenbecker|_$^|_$^|_$^taxa|_$^1|_$^2741
-jussehoo|_$^|_$^|_$^MeanscriptCLI|_$^1|_$^2751
-Mike Redko|_$^|_$^|_$^microl|_$^1|_$^2752
-Harold L. Marzan|_$^|_$^|_$^H++|_$^1|_$^2755
-Owez|_$^|_$^|_$^Jingo|_$^1|_$^2756
-Spencer Comin|_$^|_$^|_$^Fern|_$^1|_$^2760
-Robert M. McClure|_$^|_$^|_$^TMG|_$^1|_$^2770
-William Rutherford|_$^|_$^|_$^lambcalc|_$^1|_$^2776
-Stian Veum Møllersen|_$^|_$^|_$^Ait|_$^1|_$^2782
-Jochen L. Leidner|_$^|_$^|_$^Leazy|_$^1|_$^2783
-Ahmed Khaled|_$^|_$^|_$^mai|_$^1|_$^2784
-David A. Wagner|_$^|_$^|_$^Joe-E|_$^1|_$^2790
-Weird Constructor|_$^|_$^|_$^WLambda|_$^1|_$^2792
-Chris Pearson|_$^ home |_$^|_$^Mesh Spreadsheet|_$^1|_$^2796
-Ciprian Niculescu|_$^|_$^|_$^Aime|_$^1|_$^2798
-Konstantin Knizhnik|_$^|_$^|_$^c-talk|_$^1|_$^2808
-Todd Davies|_$^|_$^|_$^Executable JSON|_$^1|_$^2827
-Dmitriy Myshkin|_$^|_$^|_$^Flare|_$^1|_$^2829
-Eliezer Yudkowsky|_$^|_$^|_$^Flare|_$^1|_$^2829
-Mike Li|_$^|_$^|_$^Flare|_$^1|_$^2829
-Michael Baj|_$^|_$^|_$^Flare|_$^1|_$^2829
-Richard Walker|_$^|_$^|_$^Flare|_$^1|_$^2829
-Peter Schaffter|_$^home|_$^|_$^Groff Mom|_$^1|_$^2837
-Luis Cuende|_$^|_$^|_$^Linked Markdown|_$^1|_$^2843
-Tim Carstens|_$^|_$^|_$^potential|_$^1|_$^2867
-John E. Davis|_$^|_$^|_$^s-lang|_$^1|_$^2875
-Kathleen Booth|_$^|_$^|_$^Arc Assembly - Birkbeck Assembly|_$^2|_$^2894
-Bob Brodt|_$^|_$^|_$^bawk|_$^1|_$^2895
-Christian Hochberger|_$^|_$^|_$^CDL++ - CDL|_$^2|_$^2897
-Paul Lansky|_$^|_$^|_$^CMIX|_$^1|_$^2900
-Antoni Kreczmar|_$^|_$^|_$^LOGLAN|_$^1|_$^2939
-Andrzej Salwicki|_$^|_$^|_$^LOGLAN|_$^1|_$^2939
-Serge Abiteboul|_$^|_$^|_$^Lorel|_$^1|_$^2942
-Dallan Quass|_$^|_$^|_$^Lorel|_$^1|_$^2942
-Jason McHugh|_$^|_$^|_$^Lorel|_$^1|_$^2942
-Jennifer Widom|_$^|_$^|_$^Lorel|_$^1|_$^2942
-Janet L. Wiener|_$^|_$^|_$^Lorel|_$^1|_$^2942
-Els Laenens|_$^|_$^|_$^OOPS+ - OOPS|_$^2|_$^2952
-Dirk Vermeir|_$^|_$^|_$^OOPS+ - OOPS|_$^2|_$^2952
-Helcio Bezerra de Mello|_$^|_$^|_$^PopAsm|_$^1|_$^2960
-P.A.C. Bailes|_$^|_$^|_$^Post-X|_$^1|_$^2961
-L.H. Reeker|_$^|_$^|_$^Post-X|_$^1|_$^2961
-Lee Spector|_$^|_$^|_$^Push|_$^1|_$^2966
-Alan Robinson|_$^|_$^|_$^Push|_$^1|_$^2966
-Scott Warren|_$^|_$^|_$^Rosetta SMALLTALK|_$^1|_$^2979
-Niels Houbak|_$^|_$^|_$^SIL|_$^1|_$^2987
-Stephen Travis Pope|_$^|_$^|_$^SMOKE|_$^1|_$^2990
-Fred Swartz|_$^|_$^|_$^Snostorm|_$^1|_$^2992
-Jonathan Moore Liles|_$^|_$^|_$^STOICAL|_$^1|_$^2996
-Robert Lee|_$^|_$^|_$^Nuprl|_$^1|_$^3002
-KyleLin921021|_$^|_$^|_$^Yakou Lang|_$^1|_$^3020
-Carlos Christensen|_$^|_$^|_$^AMBIT|_$^1|_$^3027
-Rickard|_$^|_$^|_$^RicScript|_$^1|_$^3030
-Brooke Boering|_$^|_$^|_$^CEEMAC|_$^1|_$^3041
-Tarik Kerroum|_$^|_$^|_$^Smalltalk MT|_$^1|_$^3049
-Ryan Cumming|_$^|_$^|_$^arret|_$^1|_$^3054
-Claude Roux|_$^|_$^|_$^tamgu|_$^1|_$^3056
-Charles A. Grant|_$^|_$^|_$^NorthStar BASIC|_$^1|_$^3068
-Mark Greenberg|_$^|_$^|_$^NorthStar BASIC|_$^1|_$^3068
-Dave Bayer|_$^|_$^1955|_$^Bayer Expressions|_$^1|_$^3080
-Winston Chang|_$^|_$^|_$^ggplot2|_$^1|_$^3086
-Jonathan Todd Skinner|_$^|_$^|_$^Deadfish|_$^1|_$^3190
-Erann Gat|_$^|_$^|_$^FlowNet|_$^1|_$^3220
-Mike Ciholas|_$^|_$^|_$^FlowNet|_$^1|_$^3220
-Leon Arnott|_$^home|_$^|_$^Harlowe|_$^1|_$^3246
-Alexei Iliasov|_$^|_$^|_$^Lemick|_$^1|_$^3285
-Douglas Frank Palmer|_$^|_$^|_$^NUA-Prolog|_$^1|_$^3326
-Patrick Rogers|_$^|_$^|_$^OpenAda|_$^1|_$^3337
-Andy Wellings|_$^|_$^|_$^OpenAda|_$^1|_$^3337
-Vesa Karvonen|_$^|_$^|_$^order|_$^1|_$^3338
-Malcolm Phillip Atkinson|_$^|_$^|_$^PIXIN|_$^1|_$^3354
-Bruno Blanchet|_$^|_$^|_$^ProVerif|_$^1|_$^3367
-David Cuny|_$^|_$^|_$^Py|_$^1|_$^3369
-Henry G. Dietz|_$^|_$^|_$^Refined C|_$^1|_$^3382
-Peter C. Lockemann|_$^|_$^|_$^REL|_$^1|_$^3384
-Frederick B. Thompson|_$^|_$^|_$^REL|_$^1|_$^3384
-Nate Derbinsky|_$^|_$^|_$^Soar Markup Language|_$^1|_$^3421
-Rico Angell|_$^|_$^|_$^Soar Markup Language|_$^1|_$^3421
-Bernard Smith|_$^|_$^|_$^SPECOL|_$^1|_$^3424
-Barbara H. Liskov|_$^|_$^|_$^SPIL|_$^1|_$^3426
-Leroy A. Smith|_$^|_$^|_$^SPIL|_$^1|_$^3426
-Richard Hipp|_$^|_$^|_$^UnQL|_$^1|_$^3437
-Damien Katz|_$^|_$^|_$^UnQL|_$^1|_$^3437
-Haruo Hosoya|_$^|_$^|_$^xduce|_$^1|_$^3439
-Benjamin C. Pierce|_$^|_$^|_$^xduce|_$^1|_$^3439
-Sturm Mabie|_$^|_$^|_$^xs|_$^1|_$^3440
-Rowan Crowe|_$^|_$^|_$^Moonrock Basic Compiler|_$^1|_$^3469
-Pierre Rossouw|_$^|_$^|_$^wats|_$^1|_$^3478
-Mark Norman Francis|_$^|_$^|_$^TextFrame|_$^1|_$^3484
-Adam Treat|_$^|_$^|_$^Zot|_$^1|_$^3502
-Yanis Zafirópulos|_$^|_$^|_$^Arturo|_$^1|_$^3510
-Robert Kiesling|_$^|_$^|_$^ctalk|_$^1|_$^3522
-Mathias Sirthias|_$^|_$^|_$^pegdown - parboiled - parboiled2|_$^3|_$^3553
-Charles Childers|_$^|_$^|_$^retroforth|_$^1|_$^3563
-Alexander Okhotin|_$^|_$^|_$^whalecalf|_$^1|_$^3576
-tiatomee|_$^|_$^|_$^cytosol|_$^1|_$^3631
-Wayne Davison|_$^|_$^|_$^Unified Diff|_$^1|_$^3646
-Frank Pfenning|_$^|_$^|_$^Twelf|_$^1|_$^3648
-Carsten Schürmann|_$^|_$^|_$^Twelf|_$^1|_$^3648
-Glenn Culler|_$^|_$^|_$^Culler-Fried System|_$^1|_$^3841
-Burton Fried|_$^|_$^|_$^Culler-Fried System|_$^1|_$^3841
-Mariana Marasoiu|_$^|_$^|_$^cuscus|_$^1|_$^3843
-Detlef Nauck|_$^|_$^|_$^cuscus|_$^1|_$^3843
-Alan F. Blackwell|_$^|_$^|_$^cuscus|_$^1|_$^3843
-David Wheeler|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3881
-Maurice Wilkes|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3881
-Stanley Gill|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3881
-Jeanine Adkisson|_$^|_$^|_$^magritte|_$^1|_$^4044
-Mike Welch|_$^|_$^|_$^rbasic|_$^1|_$^4218
-William H. Duquette|_$^|_$^|_$^Snit|_$^1|_$^4280
-John D. Leidel|_$^|_$^|_$^StoneCutter|_$^1|_$^4296
-David Donofrio|_$^|_$^|_$^StoneCutter|_$^1|_$^4296
-Frank Conlon|_$^|_$^|_$^StoneCutter|_$^1|_$^4296
-Peter Buneman|_$^|_$^|_$^UnQL|_$^1|_$^4305
-Mary Fernandez|_$^|_$^|_$^UnQL|_$^1|_$^4305
-Mikhail Auguston|_$^|_$^|_$^V|_$^1|_$^4306
-Alfredo Delgado|_$^|_$^|_$^V|_$^1|_$^4306
-Tim Sweeney|_$^|_$^|_$^Verse|_$^1|_$^4309
-Lennart Augustsson|_$^|_$^|_$^Verse|_$^1|_$^4309
-Koen Claess|_$^|_$^|_$^Verse|_$^1|_$^4309
-Garry Shannon|_$^|_$^|_$^Very Tiny Language|_$^1|_$^4311
-Frank McCoy|_$^|_$^|_$^Very Tiny Language|_$^1|_$^4311
-Hiroshi Ishikawa|_$^|_$^|_$^XQL|_$^1|_$^4316
-Kazumi Kubota|_$^|_$^|_$^XQL|_$^1|_$^4316
-Yasuhiko Kanemasa|_$^|_$^|_$^XQL|_$^1|_$^4316
-Kathryn E. Gray|_$^|_$^|_$^xt3d|_$^1|_$^4317
-Paul T. Graunke|_$^|_$^|_$^xt3d|_$^1|_$^4317
-Anmol Gautam|_$^|_$^|_$^truck|_$^1|_$^4321
-Alex Couch|_$^|_$^|_$^beagle|_$^1|_$^4357
-adam-mcdaniel|_$^|_$^|_$^tsar|_$^1|_$^4358
-Douglas Hofstadter|_$^|_$^|_$^Typographical Number Theory|_$^1|_$^4359
-Jan Blackquill|_$^|_$^|_$^Tawa|_$^1|_$^4381
-Hextanium|_$^|_$^|_$^draconian|_$^1|_$^4392
-Olav Junker Kjær|_$^|_$^|_$^Mascara|_$^1|_$^4423
-Kragen Javier Sitaker|_$^|_$^|_$^paperalgo|_$^1|_$^4426
-Omar Ahmad|_$^|_$^|_$^ra|_$^1|_$^4429
-Rickard Lindberg|_$^|_$^|_$^rlmeta|_$^1|_$^4430
-Kateryna Lohvynivna Yushchenko|_$^|_$^|_$^Address|_$^1|_$^4454
-Bram Cohen|_$^ home  |_$^1975|_$^BitTorrent|_$^1|_$^4460
-Richard Greenblatt|_$^|_$^1944|_$^Maclisp|_$^1|_$^4479
-Jon L. White|_$^|_$^|_$^Maclisp|_$^1|_$^4479
-Paolo Martini|_$^|_$^|_$^Parsec|_$^1|_$^4482
-Antoine Latter|_$^|_$^|_$^Parsec|_$^1|_$^4482
-Satoshi Nakamoto|_$^|_$^|_$^Bitcoin|_$^1|_$^4502
-Vitalik Buterin|_$^ |_$^1994|_$^Ethereum|_$^1|_$^4506
-sugi-lang|_$^|_$^|_$^Sugi|_$^1|_$^4523
-Giovanni Blu Mitolo|_$^|_$^|_$^BIPLAN|_$^1|_$^4525
-ilmu|_$^|_$^|_$^Datalisp|_$^1|_$^4528
-Christopher Lewis|_$^|_$^|_$^Vortex|_$^1|_$^4558
-Paul Walsh|_$^|_$^|_$^Data Package|_$^1|_$^4645
-Rufus Pollock|_$^|_$^|_$^Data Package|_$^1|_$^4645
-Gael de La Croix Vaubois|_$^|_$^|_$^N|_$^1|_$^4681
-Catherine Moulinoux|_$^|_$^|_$^N|_$^1|_$^4681
-BenoIt Derot|_$^|_$^|_$^N|_$^1|_$^4681
-Wayne Citrin|_$^|_$^|_$^VEX|_$^1|_$^4737
-Richard Hall|_$^|_$^|_$^VEX|_$^1|_$^4737
-Benjamin Zorn|_$^|_$^|_$^VEX|_$^1|_$^4737
-Jonathan Robie|_$^|_$^|_$^XQL|_$^1|_$^4747
-Trevor Blackwell|_$^|_$^|_$^yoga|_$^1|_$^4749
-Tony Locke|_$^|_$^|_$^zish|_$^1|_$^4752
-Illia Polosukhin|_$^|_$^|_$^NEAR|_$^1|_$^4774
-Alexander Skidanov|_$^|_$^|_$^NEAR|_$^1|_$^4774
-Gottlob Frege|_$^|_$^|_$^concept-script|_$^1|_$^4806
-Linus Torvalds|_$^|_$^|_$^gitignore|_$^1|_$^4819
-Stefano Ceri|_$^|_$^|_$^XML-GL|_$^1|_$^4931
-Sara Comai|_$^|_$^|_$^XML-GL|_$^1|_$^4931
-Ernesto Damiani|_$^|_$^|_$^XML-GL|_$^1|_$^4931
-Piero Fraternali|_$^|_$^|_$^XML-GL|_$^1|_$^4931
-Stefano Paraboschi|_$^|_$^|_$^XML-GL|_$^1|_$^4931
-Letizia Tanca|_$^|_$^|_$^XML-GL|_$^1|_$^4931
+Erel Uziel|_$^|_$^|_$^Basic4ppc|_$^1|_$^2703
+Sander Mertens|_$^|_$^|_$^y-lang|_$^1|_$^2707
+Fogus|_$^|_$^|_$^Broccoli|_$^1|_$^2711
+Onchere Bironga|_$^|_$^|_$^whack|_$^1|_$^2715
+Renzhi Li aka. Belleve Invis|_$^|_$^|_$^Moescript|_$^1|_$^2718
+Kevin Diggins|_$^|_$^|_$^BCX|_$^1|_$^2723
+Robert Wishlaw|_$^|_$^|_$^BCX|_$^1|_$^2723
+Carl Schierig|_$^|_$^|_$^penguor|_$^1|_$^2741
+Dan Motzenbecker|_$^|_$^|_$^taxa|_$^1|_$^2742
+jussehoo|_$^|_$^|_$^MeanscriptCLI|_$^1|_$^2752
+Mike Redko|_$^|_$^|_$^microl|_$^1|_$^2753
+Harold L. Marzan|_$^|_$^|_$^H++|_$^1|_$^2756
+Owez|_$^|_$^|_$^Jingo|_$^1|_$^2757
+Spencer Comin|_$^|_$^|_$^Fern|_$^1|_$^2761
+Robert M. McClure|_$^|_$^|_$^TMG|_$^1|_$^2771
+William Rutherford|_$^|_$^|_$^lambcalc|_$^1|_$^2777
+David A. Wagner|_$^|_$^|_$^Joe-E|_$^1|_$^2788
+Weird Constructor|_$^|_$^|_$^WLambda|_$^1|_$^2790
+Stian Veum Møllersen|_$^|_$^|_$^Ait|_$^1|_$^2792
+Jochen L. Leidner|_$^|_$^|_$^Leazy|_$^1|_$^2793
+Ahmed Khaled|_$^|_$^|_$^mai|_$^1|_$^2794
+Chris Pearson|_$^ home |_$^|_$^Mesh Spreadsheet|_$^1|_$^2797
+Ciprian Niculescu|_$^|_$^|_$^Aime|_$^1|_$^2801
+Konstantin Knizhnik|_$^|_$^|_$^c-talk|_$^1|_$^2811
+Todd Davies|_$^|_$^|_$^Executable JSON|_$^1|_$^2830
+Dmitriy Myshkin|_$^|_$^|_$^Flare|_$^1|_$^2832
+Eliezer Yudkowsky|_$^|_$^|_$^Flare|_$^1|_$^2832
+Mike Li|_$^|_$^|_$^Flare|_$^1|_$^2832
+Michael Baj|_$^|_$^|_$^Flare|_$^1|_$^2832
+Richard Walker|_$^|_$^|_$^Flare|_$^1|_$^2832
+Peter Schaffter|_$^home|_$^|_$^Groff Mom|_$^1|_$^2840
+Luis Cuende|_$^|_$^|_$^Linked Markdown|_$^1|_$^2846
+Tim Carstens|_$^|_$^|_$^potential|_$^1|_$^2870
+John E. Davis|_$^|_$^|_$^s-lang|_$^1|_$^2878
+Kathleen Booth|_$^|_$^|_$^Arc Assembly - Birkbeck Assembly|_$^2|_$^2895
+Bob Brodt|_$^|_$^|_$^bawk|_$^1|_$^2896
+Christian Hochberger|_$^|_$^|_$^CDL++ - CDL|_$^2|_$^2898
+Paul Lansky|_$^|_$^|_$^CMIX|_$^1|_$^2901
+Antoni Kreczmar|_$^|_$^|_$^LOGLAN|_$^1|_$^2940
+Andrzej Salwicki|_$^|_$^|_$^LOGLAN|_$^1|_$^2940
+Serge Abiteboul|_$^|_$^|_$^Lorel|_$^1|_$^2943
+Dallan Quass|_$^|_$^|_$^Lorel|_$^1|_$^2943
+Jason McHugh|_$^|_$^|_$^Lorel|_$^1|_$^2943
+Jennifer Widom|_$^|_$^|_$^Lorel|_$^1|_$^2943
+Janet L. Wiener|_$^|_$^|_$^Lorel|_$^1|_$^2943
+Els Laenens|_$^|_$^|_$^OOPS+ - OOPS|_$^2|_$^2953
+Dirk Vermeir|_$^|_$^|_$^OOPS+ - OOPS|_$^2|_$^2953
+Helcio Bezerra de Mello|_$^|_$^|_$^PopAsm|_$^1|_$^2961
+P.A.C. Bailes|_$^|_$^|_$^Post-X|_$^1|_$^2962
+L.H. Reeker|_$^|_$^|_$^Post-X|_$^1|_$^2962
+Lee Spector|_$^|_$^|_$^Push|_$^1|_$^2967
+Alan Robinson|_$^|_$^|_$^Push|_$^1|_$^2967
+Scott Warren|_$^|_$^|_$^Rosetta SMALLTALK|_$^1|_$^2980
+Niels Houbak|_$^|_$^|_$^SIL|_$^1|_$^2988
+Stephen Travis Pope|_$^|_$^|_$^SMOKE|_$^1|_$^2991
+Fred Swartz|_$^|_$^|_$^Snostorm|_$^1|_$^2993
+Jonathan Moore Liles|_$^|_$^|_$^STOICAL|_$^1|_$^2997
+Robert Lee|_$^|_$^|_$^Nuprl|_$^1|_$^3003
+KyleLin921021|_$^|_$^|_$^Yakou Lang|_$^1|_$^3021
+Carlos Christensen|_$^|_$^|_$^AMBIT|_$^1|_$^3028
+Rickard|_$^|_$^|_$^RicScript|_$^1|_$^3031
+Brooke Boering|_$^|_$^|_$^CEEMAC|_$^1|_$^3042
+Tarik Kerroum|_$^|_$^|_$^Smalltalk MT|_$^1|_$^3050
+Ryan Cumming|_$^|_$^|_$^arret|_$^1|_$^3055
+Claude Roux|_$^|_$^|_$^tamgu|_$^1|_$^3057
+Charles A. Grant|_$^|_$^|_$^NorthStar BASIC|_$^1|_$^3069
+Mark Greenberg|_$^|_$^|_$^NorthStar BASIC|_$^1|_$^3069
+Dave Bayer|_$^|_$^1955|_$^Bayer Expressions|_$^1|_$^3081
+Winston Chang|_$^|_$^|_$^ggplot2|_$^1|_$^3087
+Jonathan Todd Skinner|_$^|_$^|_$^Deadfish|_$^1|_$^3191
+Erann Gat|_$^|_$^|_$^FlowNet|_$^1|_$^3221
+Mike Ciholas|_$^|_$^|_$^FlowNet|_$^1|_$^3221
+Leon Arnott|_$^home|_$^|_$^Harlowe|_$^1|_$^3247
+Alexei Iliasov|_$^|_$^|_$^Lemick|_$^1|_$^3286
+Douglas Frank Palmer|_$^|_$^|_$^NUA-Prolog|_$^1|_$^3327
+Patrick Rogers|_$^|_$^|_$^OpenAda|_$^1|_$^3338
+Andy Wellings|_$^|_$^|_$^OpenAda|_$^1|_$^3338
+Vesa Karvonen|_$^|_$^|_$^order|_$^1|_$^3339
+Malcolm Phillip Atkinson|_$^|_$^|_$^PIXIN|_$^1|_$^3355
+Bruno Blanchet|_$^|_$^|_$^ProVerif|_$^1|_$^3368
+David Cuny|_$^|_$^|_$^Py|_$^1|_$^3370
+Henry G. Dietz|_$^|_$^|_$^Refined C|_$^1|_$^3383
+Peter C. Lockemann|_$^|_$^|_$^REL|_$^1|_$^3385
+Frederick B. Thompson|_$^|_$^|_$^REL|_$^1|_$^3385
+Nate Derbinsky|_$^|_$^|_$^Soar Markup Language|_$^1|_$^3422
+Rico Angell|_$^|_$^|_$^Soar Markup Language|_$^1|_$^3422
+Bernard Smith|_$^|_$^|_$^SPECOL|_$^1|_$^3425
+Barbara H. Liskov|_$^|_$^|_$^SPIL|_$^1|_$^3427
+Leroy A. Smith|_$^|_$^|_$^SPIL|_$^1|_$^3427
+Richard Hipp|_$^|_$^|_$^UnQL|_$^1|_$^3438
+Damien Katz|_$^|_$^|_$^UnQL|_$^1|_$^3438
+Haruo Hosoya|_$^|_$^|_$^xduce|_$^1|_$^3440
+Benjamin C. Pierce|_$^|_$^|_$^xduce|_$^1|_$^3440
+Sturm Mabie|_$^|_$^|_$^xs|_$^1|_$^3441
+Rowan Crowe|_$^|_$^|_$^Moonrock Basic Compiler|_$^1|_$^3470
+Pierre Rossouw|_$^|_$^|_$^wats|_$^1|_$^3479
+Mark Norman Francis|_$^|_$^|_$^TextFrame|_$^1|_$^3485
+Adam Treat|_$^|_$^|_$^Zot|_$^1|_$^3503
+Yanis Zafirópulos|_$^|_$^|_$^Arturo|_$^1|_$^3511
+Robert Kiesling|_$^|_$^|_$^ctalk|_$^1|_$^3523
+Mathias Sirthias|_$^|_$^|_$^pegdown - parboiled - parboiled2|_$^3|_$^3554
+Charles Childers|_$^|_$^|_$^retroforth|_$^1|_$^3564
+Alexander Okhotin|_$^|_$^|_$^whalecalf|_$^1|_$^3577
+tiatomee|_$^|_$^|_$^cytosol|_$^1|_$^3632
+Wayne Davison|_$^|_$^|_$^Unified Diff|_$^1|_$^3647
+Frank Pfenning|_$^|_$^|_$^Twelf|_$^1|_$^3649
+Carsten Schürmann|_$^|_$^|_$^Twelf|_$^1|_$^3649
+Glenn Culler|_$^|_$^|_$^Culler-Fried System|_$^1|_$^3842
+Burton Fried|_$^|_$^|_$^Culler-Fried System|_$^1|_$^3842
+Mariana Marasoiu|_$^|_$^|_$^cuscus|_$^1|_$^3844
+Detlef Nauck|_$^|_$^|_$^cuscus|_$^1|_$^3844
+Alan F. Blackwell|_$^|_$^|_$^cuscus|_$^1|_$^3844
+David Wheeler|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3882
+Maurice Wilkes|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3882
+Stanley Gill|_$^|_$^|_$^EDSAC Initial Orders|_$^1|_$^3882
+Jeanine Adkisson|_$^|_$^|_$^magritte|_$^1|_$^4045
+Mike Welch|_$^|_$^|_$^rbasic|_$^1|_$^4219
+William H. Duquette|_$^|_$^|_$^Snit|_$^1|_$^4281
+John D. Leidel|_$^|_$^|_$^StoneCutter|_$^1|_$^4297
+David Donofrio|_$^|_$^|_$^StoneCutter|_$^1|_$^4297
+Frank Conlon|_$^|_$^|_$^StoneCutter|_$^1|_$^4297
+Peter Buneman|_$^|_$^|_$^UnQL|_$^1|_$^4306
+Mary Fernandez|_$^|_$^|_$^UnQL|_$^1|_$^4306
+Mikhail Auguston|_$^|_$^|_$^V|_$^1|_$^4307
+Alfredo Delgado|_$^|_$^|_$^V|_$^1|_$^4307
+Tim Sweeney|_$^|_$^|_$^Verse|_$^1|_$^4310
+Lennart Augustsson|_$^|_$^|_$^Verse|_$^1|_$^4310
+Koen Claess|_$^|_$^|_$^Verse|_$^1|_$^4310
+Garry Shannon|_$^|_$^|_$^Very Tiny Language|_$^1|_$^4312
+Frank McCoy|_$^|_$^|_$^Very Tiny Language|_$^1|_$^4312
+Hiroshi Ishikawa|_$^|_$^|_$^XQL|_$^1|_$^4317
+Kazumi Kubota|_$^|_$^|_$^XQL|_$^1|_$^4317
+Yasuhiko Kanemasa|_$^|_$^|_$^XQL|_$^1|_$^4317
+Kathryn E. Gray|_$^|_$^|_$^xt3d|_$^1|_$^4318
+Paul T. Graunke|_$^|_$^|_$^xt3d|_$^1|_$^4318
+Anmol Gautam|_$^|_$^|_$^truck|_$^1|_$^4322
+Alex Couch|_$^|_$^|_$^beagle|_$^1|_$^4358
+adam-mcdaniel|_$^|_$^|_$^tsar|_$^1|_$^4359
+Douglas Hofstadter|_$^|_$^|_$^Typographical Number Theory|_$^1|_$^4360
+Jan Blackquill|_$^|_$^|_$^Tawa|_$^1|_$^4382
+Hextanium|_$^|_$^|_$^draconian|_$^1|_$^4393
+Olav Junker Kjær|_$^|_$^|_$^Mascara|_$^1|_$^4424
+Kragen Javier Sitaker|_$^|_$^|_$^paperalgo|_$^1|_$^4427
+Omar Ahmad|_$^|_$^|_$^ra|_$^1|_$^4430
+Rickard Lindberg|_$^|_$^|_$^rlmeta|_$^1|_$^4431
+Kateryna Lohvynivna Yushchenko|_$^|_$^|_$^Address|_$^1|_$^4455
+Bram Cohen|_$^ home  |_$^1975|_$^BitTorrent|_$^1|_$^4461
+Richard Greenblatt|_$^|_$^1944|_$^Maclisp|_$^1|_$^4480
+Jon L. White|_$^|_$^|_$^Maclisp|_$^1|_$^4480
+Paolo Martini|_$^|_$^|_$^Parsec|_$^1|_$^4483
+Antoine Latter|_$^|_$^|_$^Parsec|_$^1|_$^4483
+Satoshi Nakamoto|_$^|_$^|_$^Bitcoin|_$^1|_$^4503
+Vitalik Buterin|_$^ |_$^1994|_$^Ethereum|_$^1|_$^4507
+sugi-lang|_$^|_$^|_$^Sugi|_$^1|_$^4524
+Giovanni Blu Mitolo|_$^|_$^|_$^BIPLAN|_$^1|_$^4526
+ilmu|_$^|_$^|_$^Datalisp|_$^1|_$^4529
+Christopher Lewis|_$^|_$^|_$^Vortex|_$^1|_$^4559
+Paul Walsh|_$^|_$^|_$^Data Package|_$^1|_$^4646
+Rufus Pollock|_$^|_$^|_$^Data Package|_$^1|_$^4646
+Gael de La Croix Vaubois|_$^|_$^|_$^N|_$^1|_$^4682
+Catherine Moulinoux|_$^|_$^|_$^N|_$^1|_$^4682
+BenoIt Derot|_$^|_$^|_$^N|_$^1|_$^4682
+Wayne Citrin|_$^|_$^|_$^VEX|_$^1|_$^4738
+Richard Hall|_$^|_$^|_$^VEX|_$^1|_$^4738
+Benjamin Zorn|_$^|_$^|_$^VEX|_$^1|_$^4738
+Jonathan Robie|_$^|_$^|_$^XQL|_$^1|_$^4748
+Trevor Blackwell|_$^|_$^|_$^yoga|_$^1|_$^4750
+Tony Locke|_$^|_$^|_$^zish|_$^1|_$^4753
+Illia Polosukhin|_$^|_$^|_$^NEAR|_$^1|_$^4775
+Alexander Skidanov|_$^|_$^|_$^NEAR|_$^1|_$^4775
+Gottlob Frege|_$^|_$^|_$^concept-script|_$^1|_$^4807
+Linus Torvalds|_$^|_$^|_$^gitignore|_$^1|_$^4820
+Stefano Ceri|_$^|_$^|_$^XML-GL|_$^1|_$^4932
+Sara Comai|_$^|_$^|_$^XML-GL|_$^1|_$^4932
+Ernesto Damiani|_$^|_$^|_$^XML-GL|_$^1|_$^4932
+Piero Fraternali|_$^|_$^|_$^XML-GL|_$^1|_$^4932
+Stefano Paraboschi|_$^|_$^|_$^XML-GL|_$^1|_$^4932
+Letizia Tanca|_$^|_$^|_$^XML-GL|_$^1|_$^4932

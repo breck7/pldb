@@ -91,6 +91,8 @@ hasFloats true
  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
 hasIntegers true
  # [0-9]+
+hasStandardLibrary true
+ console.log "Hello, World!"
 
 jupyterKernel https://github.com/n-riesco/jp-coffeescript
 wikipedia https://en.wikipedia.org/wiki/CoffeeScript

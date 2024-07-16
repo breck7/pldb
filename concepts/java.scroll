@@ -220,6 +220,8 @@ hasIntegers true
 hasBinaryNumbers true
  // 0[bB][01][01_]*[lL]?
 hasScientificNotation true
+hasStandardLibrary true
+ System.out.println("Hello, World!");
 
 jupyterKernel https://github.com/SpencerPark/IJava
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)

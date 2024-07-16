@@ -94,6 +94,8 @@ hasComments true
  */
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasStandardLibrary true
+ printf("Hello, World!\n");
 
 wikipedia https://en.wikipedia.org/wiki/CUDA
  example

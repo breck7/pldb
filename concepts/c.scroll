@@ -117,6 +117,8 @@ hasBitWiseOperators true
 hasSymbolTables true
  // Declare an external function
  extern double bar(double x);
+hasExplicitStandardLibrary true
+ #include <stdio.h>
  
  // Define a public function
  double foo(int count)
@@ -249,6 +251,8 @@ hasConstants true
 hasConditionals true
 hasFixedPoint false
 hasScientificNotation true
+hasStandardLibrary true
+ #include <stdio.h>
 
 jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)

@@ -101,6 +101,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  Console.WriteLine("Hello, World!");
+ Token 
+row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓

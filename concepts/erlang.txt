@@ -121,6 +121,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  io:format("Hello, World!~n").
+ Token 
+row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓

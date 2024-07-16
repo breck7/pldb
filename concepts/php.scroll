@@ -194,6 +194,8 @@ hasSwitch true
 hasAccessModifiers true
 hasInheritance true
 hasConditionals true
+hasStandardLibrary true
+ <?php echo "Hello, World!"; ?>
 
 jupyterKernel https://github.com/dawehner/ipython-php
 jupyterKernel https://github.com/Litipk/Jupyter-PHP

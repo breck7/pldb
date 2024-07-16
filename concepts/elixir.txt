@@ -85,6 +85,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  IO.puts "Hello, World!"
+ Token 
+row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
  Supported ✓

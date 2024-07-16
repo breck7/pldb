@@ -100,6 +100,20 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  NSLog(@"Hello, World!");
+ Token 
+row
+ Feature Explicit Standard Library
+ FeatureLink ../features/hasExplicitStandardLibrary.html
+ Supported ✓
+ Example
+  #include 
+ Token 
+row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
  Supported ✓

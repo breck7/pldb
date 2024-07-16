@@ -29,6 +29,7 @@ quickParagraphParser
   * I had a _new_ idea.
 
 scrollCenteredParagraphParser
+ // todo: does not work with gazette.
  crux center
  extends paragraphParser
  description A centered paragraph.

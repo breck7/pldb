@@ -92,6 +92,8 @@ hasImports true
 hasWhileLoops true
 hasFunctions true
 hasConditionals true
+hasStandardLibrary true
+ echo "Hello, World!"
 
 jupyterKernel https://github.com/takluyver/bash_kernel
 wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)

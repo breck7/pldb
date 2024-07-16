@@ -135,6 +135,8 @@ hasExceptions true
 hasFunctions true
 hasAccessModifiers true
 hasConditionals true
+hasStandardLibrary true
+ println("Hello, World!")
 
 jupyterKernel https://github.com/ligee/kotlin-jupyter
 wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)

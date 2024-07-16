@@ -87,6 +87,13 @@ Language features
 ======================================================
 
 row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  console.log("Hello, World!");
+ Token 
+row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
  Supported ✓

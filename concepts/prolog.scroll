@@ -92,6 +92,8 @@ hasIntegers true
  % \d\d?\'[a-zA-Z0-9]+
 hasBinaryNumbers true
  % 0b[01]+
+hasStandardLibrary true
+ write('Hello, World!'), nl.
 
 jupyterKernel https://github.com/Calysto/calysto_prolog
 wikipedia https://en.wikipedia.org/wiki/Prolog

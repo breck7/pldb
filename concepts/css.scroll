@@ -67,6 +67,8 @@ hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers true
 hasStrings true
  "Hello world"
+hasStandardLibrary true
+ body { font-family: Arial, sans-serif; }
 
 wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets
  example

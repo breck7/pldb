@@ -1,0 +1,23 @@
+// Contacts: A Microlanguage for Managing Contacts.
+// version 0.1.0
+
+personParser
+ crux 👤
+ extends abstractIdParser
+ description What is their name?
+ string measureName name
+ cells anyCell
+ example
+  👤 John Doe
+  phone +1 (555) 123-4567
+  email john.doe@example.com
+  birthday 2/23/84
+  notes Daughter - Samantha.
+phoneParser
+ extends abstractStringMeasureParser
+emailParser
+ extends abstractStringMeasureParser
+birthdayParser
+ extends abstractStringMeasureParser
+notesParser
+ extends abstractStringMeasureParser

@@ -147,6 +147,8 @@ hasIntegers true
  -- \d(_*\d)*
 hasBinaryNumbers true
  -- 0[bB]_*[01](_*[01])*
+hasStandardLibrary true
+ main = putStrLn "Hello, World!"
 
 jupyterKernel https://github.com/gibiansky/IHaskell
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)

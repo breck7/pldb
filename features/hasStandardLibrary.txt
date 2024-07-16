@@ -1,0 +1,81 @@
+Standard Library
+================
+
+console.log(&quot;Hello, World!&quot;);
+
+#include &lt;stdio.h&gt;
+
+print(&quot;Hello, World!&quot;)
+
+System.out.println(&quot;Hello, World!&quot;);
+
+#include &lt;iostream&gt;
+
+&lt;h1&gt;Hi&lt;/h1&gt;
+
+body { font-family: Arial, sans-serif; }
+
+print &quot;Hello, World!\n&quot;;
+
+puts &quot;Hello, World!&quot;
+
+&lt;?php echo &quot;Hello, World!&quot;; ?&gt;
+
+fmt.Println(&quot;Hello, World!&quot;)
+
+Console.WriteLine(&quot;Hello, World!&quot;);
+
+echo &quot;Hello, World!&quot;
+
+Write-Host &quot;Hello, World!&quot;
+
+println!(&quot;Hello, World!&quot;);
+
+println(&quot;Hello, World!&quot;)
+
+disp(&#39;Hello, World!&#39;)
+
+main = putStrLn &quot;Hello, World!&quot;
+
+(println &quot;Hello, World!&quot;)
+
+IO.puts &quot;Hello, World!&quot;
+
+console.log &quot;Hello, World!&quot;
+
+NSLog(@&quot;Hello, World!&quot;);
+
+io:format(&quot;Hello, World!~n&quot;).
+
+write(&#39;Hello, World!&#39;), nl.
+
+Print[&quot;Hello, World!&quot;]
+
+DISPLAY &quot;Hello, World!&quot;.
+
+printf(&quot;Hello, World!\n&quot;);
+
+print(&#39;Hello, World!&#39;);
+
+# Hello, World!
+
+Console.WriteLine(&quot;Hello, World!&quot;)
+
+***
+
+Languages *with* Standard Library include JavaScript, C, Python, Java, C++, HTML, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, PowerShell, Rust, Swift, Scala, Lua, MATLAB, Haskell, Kotlin, Clojure, Elixir, CoffeeScript, Objective-C, Julia, Erlang, Prolog, Mathematica, COBOL, CUDA, Dart, Markdown, Visual Basic, bio
+
+***
+
+Languages *without* Standard Library include XML
+
+***
+
+View all concepts with or missing a *hasStandardLibrary* measurement
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasStandardLibrary%22%2C%22origData%22%3A%22hasStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStandardLibrary&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasStandardLibrary%22%2C%22origData%22%3A%22hasStandardLibrary%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+
+***
+
+Read more about Standard Library on the web: 1.
+ https://en.wikipedia.org/wiki/Standard_library

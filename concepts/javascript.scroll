@@ -305,6 +305,8 @@ hasBinaryNumbers true
  // 0[bB][01]+n?
  0b100110100000110011110010010
 hasScientificNotation true
+hasStandardLibrary true
+ console.log("Hello, World!");
 
 jupyterKernel https://github.com/n-riesco/ijavascript
 wikipedia https://en.wikipedia.org/wiki/JavaScript

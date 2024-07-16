@@ -1688,6 +1688,21 @@ hasListsParser
  string pseudoExample [2, 3, 10]
  string reference https://en.wikipedia.org/wiki/List_(abstract_data_type)
 
+// hasStandardLibrary
+hasStandardLibraryParser
+ extends abstractFeatureParser
+ description Does the language have a standard library?
+ string title Standard Library
+ string pseudoExample print("print is part of stdlib")
+ string reference https://en.wikipedia.org/wiki/Standard_library
+
+hasExplicitStandardLibraryParser
+ extends abstractFeatureParser
+ description Do you have to explicitly include the standard library?
+ string title Explicit Standard Library
+ string pseudoExample #include <stdio.h>
+ string reference https://en.wikipedia.org/wiki/Standard_library
+
 // hasMacros
 hasMacrosParser
  extends abstractFeatureParser

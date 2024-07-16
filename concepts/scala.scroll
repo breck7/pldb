@@ -145,6 +145,8 @@ hasExceptions true
 hasFunctions true
 hasInheritance true
 hasConditionals true
+hasStandardLibrary true
+ println("Hello, World!")
 
 jupyterKernel https://github.com/mattpap/IScala
 jupyterKernel https://github.com/alexarchambault/jupyter-scala
