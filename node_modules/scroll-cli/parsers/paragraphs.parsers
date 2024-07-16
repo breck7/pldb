@@ -28,18 +28,28 @@ quickParagraphParser
  example
   * I had a _new_ idea.
 
+scrollCenteredParagraphParser
+ crux center
+ extends paragraphParser
+ description A centered paragraph.
+ example
+  center Hello world
+ javascript
+  compile(compileSettings) {
+   return `<div style="text-align:center;">${super.compile(compileSettings)}</div>`
+  }
 
 abstractIndentableParagraphParser
  extends paragraphParser
  inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser abstractIndentableParagraphParser
  javascript
-  compile() {
-   return (
-    super.compile() +
-    this.map(node => node.compile())
+  compileChildren() {
+    return this.map(node => node.compile())
      .join("\n")
      .trim()
-   )
+  }
+  compile() {
+   return super.compile() + this.compileChildren()
   }
   compileTxt() {
     return this.getWord(0) + " " + super.compileTxt()
