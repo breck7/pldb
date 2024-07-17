@@ -9727,7 +9727,7 @@ var autocompleteJs = [
     "url": "/concepts/mewmew.html"
   },
   {
-    "label": "bio",
+    "label": "Bio",
     "id": "bio",
     "url": "/concepts/bio.html"
   },
