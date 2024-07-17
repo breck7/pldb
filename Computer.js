@@ -248,7 +248,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get repl() {
-    return this.node.getOneOf("webRepl rijuRepl tryItOnline replit".split(" "))
+    return this.node.getOneOf("webRepl tryItOnline replit rijuRepl".split(" "))
   }
 
   get lineCommentToken() {
@@ -732,9 +732,8 @@ title ${title} - ${lodash.upperFirst(primaryTagName)}
 
 printTitle ${title}
 
-html
- <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
- <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
+<a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
 viewSourceUrl ${this.sourceUrl}
 
@@ -748,15 +747,15 @@ ${this.kpiBar}
 
 ${sourceCode}
 
-${this.tryNowRepls}
-
 ${this.monacoEditor}
+
+${this.quickTextLinks}
 
 ${this.image}
 
 ${this.descriptionSection}
 
-${this.factsSection}
+${this.factsArray.map(fact => `- ${fact}\n wrapsOn false`).join("\n")}
 
 <br>
 
@@ -828,6 +827,31 @@ image ${image}
     return leetSheet ? leetSheet.split(" ")[0] : ""
   }
 
+  get quickTextLinks() {
+    const links = {
+      Homepage: this.website,
+      "Leet Sheet": this.primaryLeetSheet,
+      REPL: this.repl,
+      "Try It Online": this.get("tryItOnline"),
+      Download: this.get("download"),
+      "Source Code": this.parsed.mainRepo,
+      Spec: this.getPrimary("spec"),
+      Blog: this.get("blog"),
+      Wikipedia: this.get(`wikipedia`),
+      Subreddit: this.get("subreddit"),
+      Twitter: this.get("twitter"),
+      FAQ: this.getPrimary("faq"),
+      "Release Notes": this.getPrimary("releaseNotes"),
+      "Demo Video": this.get("demoVideo"),
+      Docs: this.getPrimary("documentation"),
+      "Mailing List": this.getPrimary("emailList")
+    }
+    return Object.keys(links)
+      .map(key => (links[key] ? `<a href="${links[key]}">${key}</a>` : ""))
+      .filter(i => i)
+      .join(" · ")
+  }
+
   get quickLinks() {
     const links = {
       home: this.website,
@@ -852,10 +876,6 @@ image ${image}
           : `<a href="${links[key]}" class="material-symbols-outlined">${key}</a>`
       )
       .join(" ")
-  }
-
-  get factsSection() {
-    return this.facts.map(fact => `- ${fact}`).join("\n")
   }
 
   get sourceStatus() {
@@ -891,6 +911,11 @@ ${creatorsLinks}
     return `<a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22tags%22%3A%22string%22%2C%22value%22%3A%5B%22${primaryTag}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">${this.primaryTagName}</a>`
   }
 
+  getPrimary(key) {
+    const hits = this.getAll(key)
+    if (hits.length >= 1) return hits[0]
+  }
+
   get descriptionSection() {
     let description = ""
     const authoredDescription = this.get("description")
@@ -906,15 +931,13 @@ ${creatorsLinks}
     return `* ${description}`
   }
 
-  get facts() {
+  get factsArray() {
     const { title, website } = this
 
     const facts = []
-    if (website) facts.push(`${title} website\n ${website}`)
-
     const tags = this.get(PLDBKeywords.tags).split(" ")
     facts.push(
-      `${title} appears in categories: ` +
+      `Tags: ` +
         tags
           .map(
             tag =>
@@ -925,9 +948,6 @@ ${creatorsLinks}
           .join(", ")
     )
 
-    const download = this.get("download")
-    if (download) facts.push(`${title} downloads page\n ${download}`)
-
     let interviews = this.get("interviews")
     if (interviews) {
       interviews = interviews.split(" ")
@@ -937,10 +957,6 @@ ${creatorsLinks}
         } of ${title}: ${linkManyAftertext(interviews)}`
       )
     }
-
-    const wikipediaLink = this.get("wikipedia")
-    const wikiLink = wikipediaLink ? wikipediaLink : ""
-    if (wikiLink) facts.push(`${title} Wikipedia page\n ${wikiLink}`)
 
     const githubRepo = this.node.getNode("githubRepo")
     if (githubRepo) {
@@ -954,34 +970,6 @@ ${creatorsLinks}
 
     const gitlabRepo = this.get("gitlabRepo")
     if (gitlabRepo) facts.push(`${title} on GitLab\n ${gitlabRepo}`)
-
-    const documentationLinks = this.getAll("documentation")
-    if (documentationLinks.length === 1) facts.push(`${title} docs\n ${documentationLinks[0]}`)
-    else if (documentationLinks.length > 1)
-      facts.push(
-        `PLDB has ${documentationLinks.length} documentation sites for ${title}: ${documentationLinks
-          .map(makePrettyUrlLink)
-          .join(", ")}`
-      )
-
-    const specLinks = this.getAll("spec")
-    if (specLinks.length === 1) facts.push(`${title} specs\n ${specLinks[0]}`)
-    else if (specLinks.length > 1)
-      facts.push(
-        `PLDB has ${specLinks.length} specification sites for ${title}: ${specLinks.map(makePrettyUrlLink).join(", ")}`
-      )
-
-    const emailListLinks = this.getAll("emailList")
-    if (emailListLinks.length === 1) facts.push(`${title} mailing list\n ${emailListLinks[0]}`)
-    else if (emailListLinks.length > 1)
-      facts.push(
-        `PLDB has ${emailListLinks.length} mailing list sites for ${title}: ${emailListLinks
-          .map(makePrettyUrlLink)
-          .join(", ")}`
-      )
-
-    const demoVideo = this.get("demoVideo")
-    if (demoVideo) facts.push(`Video demo of ${title}\n ${demoVideo}`)
 
     const githubRepoCount = this.get("githubLanguage repos")
     if (githubRepoCount) {
@@ -1005,7 +993,7 @@ ${creatorsLinks}
       originCommunityStr = originCommunity
         .map(name => `<a href="../lists/originCommunities.html#q=${name}">${name}</a>`)
         .join(" and ")
-      facts.push(`${title} first developed in ${originCommunityStr}`)
+      facts.push(`Early development of ${title} happened in ${originCommunityStr}`)
     }
 
     const { numberOfJobsEstimate } = this
@@ -1032,9 +1020,6 @@ ${creatorsLinks}
           .map(link => this.makeATag(link))
           .join(", ")}`
       )
-
-    const twitter = this.get("twitter")
-    if (twitter) facts.push(`${title} on Twitter\n ${twitter}`)
 
     const conferences = this.node.getNodesByGlobPath("conference")
     if (conferences.length) {
@@ -1181,30 +1166,19 @@ ${creatorsLinks}
 
     if (annualReport.length >= 1) facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
 
-    const releaseNotes = this.getAll("releaseNotes")
-
-    if (releaseNotes.length >= 1) facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
-    const officialBlog = this.getAll("blog")
-
-    if (officialBlog.length >= 1) facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
     const eventsPage = this.getAll("eventsPageUrl")
 
     if (eventsPage.length >= 1) facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
-    const faqPage = this.getAll("faq")
-
-    if (faqPage.length >= 1) facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
-
-    const leetSheet = this.primaryLeetSheet
-    if (leetSheet) facts.push(`${title} leet sheet\n ${leetSheet}`)
-
     const indeedJobs = this.node.getNode("indeedJobs")
     if (indeedJobs) {
       const query = this.get("indeedJobs")
-      const jobCount = numeral(this.getMostRecentInt("indeedJobs")).format("0,0")
-      facts.push(
-        `Indeed.com has ${jobCount} matches for <a href="https://www.indeed.com/jobs?q=${query}">"${query}"</a>.`
-      )
+      if (query) {
+        const jobCount = numeral(this.getMostRecentInt("indeedJobs")).format("0,0")
+        facts.push(
+          `Indeed.com has ${jobCount} matches for <a href="https://www.indeed.com/jobs?q=${query}">"${query}"</a>.`
+        )
+      }
     }
 
     const domainRegistered = this.get("domainName registered")
@@ -1219,7 +1193,7 @@ ${creatorsLinks}
     if (seeAlsoLinks.length)
       facts.push(
         "See also: " +
-          `(${seeAlsoLinks.length} related languages)` +
+          `(${seeAlsoLinks.length} related languages) ` +
           seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
       )
 
@@ -1236,7 +1210,7 @@ ${creatorsLinks}
     if (this.parsed.inboundLinks) {
       const inboundLinks = lodash.uniq(this.parsed.inboundLinks.split(" "))
       facts.push(
-        `${inboundLinks.length} languages in PLDB linking to ${title}: ` +
+        `${inboundLinks.length} PLDB concepts link to ${title}: ` +
           inboundLinks.map(link => this.makeATag(link)).join(", ")
       )
     }
@@ -1274,26 +1248,6 @@ codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywor
  ${cleanAndRightShift(lodash.escape(example.code))}`
       )
       .join("\n\n")
-  }
-
-  get tryNowRepls() {
-    const repls = []
-
-    const webRepl = this.get("webRepl")
-    if (webRepl) repls.push(`<a href="${webRepl}">Web</a>`)
-
-    const rijuRepl = this.get("rijuRepl")
-    if (rijuRepl) repls.push(`<a href="${rijuRepl}">Riju</a>`)
-
-    const tryItOnline = this.get("tryItOnline")
-    if (tryItOnline) repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
-
-    const replit = this.get("replit")
-    if (replit) repls.push(`<a href="${replit}">Replit</a>`)
-
-    if (!repls.length) return ""
-
-    return `* Try now: ` + repls.join(" · ")
   }
 
   get kpiBar() {
