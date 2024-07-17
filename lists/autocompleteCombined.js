@@ -1522,14 +1522,14 @@ var autocompleteJs = [
     "url": "/concepts/pandas.html"
   },
   {
-    "label": "Imba",
-    "id": "imba",
-    "url": "/concepts/imba.html"
-  },
-  {
     "label": "Literate CoffeeScript",
     "id": "literate-coffeescript",
     "url": "/concepts/literate-coffeescript.html"
+  },
+  {
+    "label": "Imba",
+    "id": "imba",
+    "url": "/concepts/imba.html"
   },
   {
     "label": "Ninja",
@@ -1632,14 +1632,14 @@ var autocompleteJs = [
     "url": "/concepts/mlir.html"
   },
   {
-    "label": "PyTorch",
-    "id": "pytorch",
-    "url": "/concepts/pytorch.html"
-  },
-  {
     "label": "PL/I",
     "id": "pl-i",
     "url": "/concepts/pl-i.html"
+  },
+  {
+    "label": "PyTorch",
+    "id": "pytorch",
+    "url": "/concepts/pytorch.html"
   },
   {
     "label": "Regular Expressions",
@@ -2357,11 +2357,6 @@ var autocompleteJs = [
     "url": "/concepts/oz.html"
   },
   {
-    "label": "Impala",
-    "id": "impala",
-    "url": "/concepts/impala.html"
-  },
-  {
     "label": "roy",
     "id": "roy",
     "url": "/concepts/roy.html"
@@ -2370,6 +2365,11 @@ var autocompleteJs = [
     "label": "REBOL",
     "id": "rebol",
     "url": "/concepts/rebol.html"
+  },
+  {
+    "label": "Impala",
+    "id": "impala",
+    "url": "/concepts/impala.html"
   },
   {
     "label": "jasmine",
@@ -2602,14 +2602,14 @@ var autocompleteJs = [
     "url": "/concepts/clips.html"
   },
   {
-    "label": "OpenRC runscript",
-    "id": "openrc-runscript",
-    "url": "/concepts/openrc-runscript.html"
-  },
-  {
     "label": "CodeQL",
     "id": "codeql",
     "url": "/concepts/codeql.html"
+  },
+  {
+    "label": "OpenRC runscript",
+    "id": "openrc-runscript",
+    "url": "/concepts/openrc-runscript.html"
   },
   {
     "label": "Fancy",
@@ -2662,14 +2662,14 @@ var autocompleteJs = [
     "url": "/concepts/scrollnotation.html"
   },
   {
-    "label": "SRL",
-    "id": "srl",
-    "url": "/concepts/srl.html"
-  },
-  {
     "label": "fay",
     "id": "fay",
     "url": "/concepts/fay.html"
+  },
+  {
+    "label": "SRL",
+    "id": "srl",
+    "url": "/concepts/srl.html"
   },
   {
     "label": "Latte",
@@ -3077,14 +3077,14 @@ var autocompleteJs = [
     "url": "/concepts/activity-pub.html"
   },
   {
-    "label": "FoxPRO",
-    "id": "foxpro",
-    "url": "/concepts/foxpro.html"
-  },
-  {
     "label": "checked-c",
     "id": "checked-c",
     "url": "/concepts/checked-c.html"
+  },
+  {
+    "label": "FoxPRO",
+    "id": "foxpro",
+    "url": "/concepts/foxpro.html"
   },
   {
     "label": "flowchart.fun",
@@ -3112,11 +3112,6 @@ var autocompleteJs = [
     "url": "/concepts/icedcoffeescript.html"
   },
   {
-    "label": "UrWeb",
-    "id": "urweb",
-    "url": "/concepts/urweb.html"
-  },
-  {
     "label": "Objective C++",
     "id": "objective-cpp",
     "url": "/concepts/objective-cpp.html"
@@ -3125,6 +3120,11 @@ var autocompleteJs = [
     "label": "tea",
     "id": "tea-pm",
     "url": "/concepts/tea-pm.html"
+  },
+  {
+    "label": "UrWeb",
+    "id": "urweb",
+    "url": "/concepts/urweb.html"
   },
   {
     "label": "ABC",
@@ -3672,14 +3672,14 @@ var autocompleteJs = [
     "url": "/concepts/hypertalk.html"
   },
   {
-    "label": "Gettext Catalog",
-    "id": "gettext",
-    "url": "/concepts/gettext.html"
-  },
-  {
     "label": "Cypher Query Language",
     "id": "cypher",
     "url": "/concepts/cypher.html"
+  },
+  {
+    "label": "Gettext Catalog",
+    "id": "gettext",
+    "url": "/concepts/gettext.html"
   },
   {
     "label": "Mask",
@@ -3907,14 +3907,14 @@ var autocompleteJs = [
     "url": "/concepts/csv.html"
   },
   {
-    "label": "Squeak",
-    "id": "squeak",
-    "url": "/concepts/squeak.html"
-  },
-  {
     "label": "tldr",
     "id": "tldr",
     "url": "/concepts/tldr.html"
+  },
+  {
+    "label": "Squeak",
+    "id": "squeak",
+    "url": "/concepts/squeak.html"
   },
   {
     "label": "Velocity",
@@ -4117,14 +4117,14 @@ var autocompleteJs = [
     "url": "/concepts/ssharp.html"
   },
   {
-    "label": "Lil",
-    "id": "lil-pl",
-    "url": "/concepts/lil-pl.html"
-  },
-  {
     "label": "Glicol",
     "id": "glicol",
     "url": "/concepts/glicol.html"
+  },
+  {
+    "label": "Lil",
+    "id": "lil-pl",
+    "url": "/concepts/lil-pl.html"
   },
   {
     "label": "Gwion",
@@ -4247,24 +4247,19 @@ var autocompleteJs = [
     "url": "/concepts/oxygene.html"
   },
   {
-    "label": "TAP",
-    "id": "tap",
-    "url": "/concepts/tap.html"
-  },
-  {
     "label": "spiral",
     "id": "spiral",
     "url": "/concepts/spiral.html"
   },
   {
+    "label": "TAP",
+    "id": "tap",
+    "url": "/concepts/tap.html"
+  },
+  {
     "label": "Unity",
     "id": "unity-engine",
     "url": "/concepts/unity-engine.html"
-  },
-  {
-    "label": "Bro",
-    "id": "bro",
-    "url": "/concepts/bro.html"
   },
   {
     "label": "Uno",
@@ -4275,6 +4270,11 @@ var autocompleteJs = [
     "label": "Opal",
     "id": "opal",
     "url": "/concepts/opal.html"
+  },
+  {
+    "label": "Bro",
+    "id": "bro",
+    "url": "/concepts/bro.html"
   },
   {
     "label": "High Level Assembly",
@@ -4827,6 +4827,11 @@ var autocompleteJs = [
     "url": "/concepts/son.html"
   },
   {
+    "label": "PIC",
+    "id": "pic",
+    "url": "/concepts/pic.html"
+  },
+  {
     "label": "FreeMarker",
     "id": "freemarker",
     "url": "/concepts/freemarker.html"
@@ -4967,14 +4972,14 @@ var autocompleteJs = [
     "url": "/concepts/rc.html"
   },
   {
-    "label": "inko",
-    "id": "inko",
-    "url": "/concepts/inko.html"
-  },
-  {
     "label": "LoomScript",
     "id": "loomscript",
     "url": "/concepts/loomscript.html"
+  },
+  {
+    "label": "inko",
+    "id": "inko",
+    "url": "/concepts/inko.html"
   },
   {
     "label": "xodio",
@@ -5030,11 +5035,6 @@ var autocompleteJs = [
     "label": "Homa",
     "id": "homa",
     "url": "/concepts/homa.html"
-  },
-  {
-    "label": "PIC",
-    "id": "pic",
-    "url": "/concepts/pic.html"
   },
   {
     "label": "Metalang99",
@@ -5477,14 +5477,14 @@ var autocompleteJs = [
     "url": "/concepts/gentee.html"
   },
   {
-    "label": "CLISP",
-    "id": "clisp",
-    "url": "/concepts/clisp.html"
-  },
-  {
     "label": "x86-64",
     "id": "x86-64-isa",
     "url": "/concepts/x86-64-isa.html"
+  },
+  {
+    "label": "CLISP",
+    "id": "clisp",
+    "url": "/concepts/clisp.html"
   },
   {
     "label": "UPC",
@@ -5762,14 +5762,14 @@ var autocompleteJs = [
     "url": "/concepts/bython.html"
   },
   {
-    "label": "CLIST",
-    "id": "clist",
-    "url": "/concepts/clist.html"
-  },
-  {
     "label": "Formulating On-Line Calculations in Algebraic Language",
     "id": "focal",
     "url": "/concepts/focal.html"
+  },
+  {
+    "label": "CLIST",
+    "id": "clist",
+    "url": "/concepts/clist.html"
   },
   {
     "label": "eff",
@@ -6417,14 +6417,14 @@ var autocompleteJs = [
     "url": "/concepts/moya.html"
   },
   {
-    "label": "Yacas",
-    "id": "yacas",
-    "url": "/concepts/yacas.html"
-  },
-  {
     "label": "OPL",
     "id": "opl",
     "url": "/concepts/opl.html"
+  },
+  {
+    "label": "Yacas",
+    "id": "yacas",
+    "url": "/concepts/yacas.html"
   },
   {
     "label": "silk",
@@ -6847,14 +6847,14 @@ var autocompleteJs = [
     "url": "/concepts/joss.html"
   },
   {
-    "label": "fp",
-    "id": "fp3",
-    "url": "/concepts/fp3.html"
-  },
-  {
     "label": "ktexteditor-editor",
     "id": "ktexteditor-editor",
     "url": "/concepts/ktexteditor-editor.html"
+  },
+  {
+    "label": "fp",
+    "id": "fp3",
+    "url": "/concepts/fp3.html"
   },
   {
     "label": "DataWeave",
@@ -7447,14 +7447,14 @@ var autocompleteJs = [
     "url": "/concepts/avail.html"
   },
   {
-    "label": "Language Server Index Format",
-    "id": "lsif-format",
-    "url": "/concepts/lsif-format.html"
-  },
-  {
     "label": "Pyret",
     "id": "pyret-lang",
     "url": "/concepts/pyret-lang.html"
+  },
+  {
+    "label": "Language Server Index Format",
+    "id": "lsif-format",
+    "url": "/concepts/lsif-format.html"
   },
   {
     "label": "neeilang",
@@ -7612,14 +7612,14 @@ var autocompleteJs = [
     "url": "/concepts/podlite.html"
   },
   {
-    "label": "Multi-User Forth",
-    "id": "muf",
-    "url": "/concepts/muf.html"
-  },
-  {
     "label": "Kuroko",
     "id": "kuroko",
     "url": "/concepts/kuroko.html"
+  },
+  {
+    "label": "Multi-User Forth",
+    "id": "muf",
+    "url": "/concepts/muf.html"
   },
   {
     "label": "Query by Example",
@@ -7717,14 +7717,14 @@ var autocompleteJs = [
     "url": "/concepts/fe.html"
   },
   {
-    "label": "Civet",
-    "id": "civet",
-    "url": "/concepts/civet.html"
-  },
-  {
     "label": "Vega",
     "id": "vega",
     "url": "/concepts/vega.html"
+  },
+  {
+    "label": "Civet",
+    "id": "civet",
+    "url": "/concepts/civet.html"
   },
   {
     "label": "Pawn",
@@ -7752,14 +7752,14 @@ var autocompleteJs = [
     "url": "/concepts/tads.html"
   },
   {
-    "label": "Xbasic",
-    "id": "xbasic",
-    "url": "/concepts/xbasic.html"
-  },
-  {
     "label": "UCG",
     "id": "ucg",
     "url": "/concepts/ucg.html"
+  },
+  {
+    "label": "Xbasic",
+    "id": "xbasic",
+    "url": "/concepts/xbasic.html"
   },
   {
     "label": "IBM Informix-4GL",
@@ -9057,14 +9057,14 @@ var autocompleteJs = [
     "url": "/concepts/horse64.html"
   },
   {
-    "label": "nimrod",
-    "id": "nimrod",
-    "url": "/concepts/nimrod.html"
-  },
-  {
     "label": "DATABUS",
     "id": "databus",
     "url": "/concepts/databus.html"
+  },
+  {
+    "label": "nimrod",
+    "id": "nimrod",
+    "url": "/concepts/nimrod.html"
   },
   {
     "label": "Kuin",
