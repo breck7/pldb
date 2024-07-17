@@ -12,19 +12,15 @@ HTTP is a protocol created in 1989 by Tim Berners-Lee.
 The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 
-- HTTP appears in categories: protocol
-- HTTP Wikipedia page
- https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-- HTTP docs
- https://www.w3.org/Protocols/rfc2616/rfc2616.html
+- Tags: protocol
 - There are at least 0 HTTP repos on GitHub
-- HTTP first developed in The World Wide Web Consortium
+- Early development of HTTP happened in The World Wide Web Consortium
 - CodeMirror package for syntax highlighting HTTP
 - Pygments supports syntax highlighting for HTTP
 - GitHub supports syntax highlighting for HTTP
 - Indeed.com has 771,996 matches for "http developer".
-- See also: (12 related languages)FTP, SMTP, TLS, TCP, UDP, URL, HTML, CSS, ASCII, Gzip, REST, ISBN
-- 1 languages in PLDB linking to HTTP: NCSA Mosaic
+- See also: (12 related languages) FTP, SMTP, TLS, TCP, UDP, URL, HTML, CSS, ASCII, Gzip, REST, ISBN
+- 1 PLDB concepts link to HTTP: NCSA Mosaic
 
 import http.server
 import socketserver

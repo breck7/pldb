@@ -12,9 +12,9 @@ git clone https://github.com/chrisdone/jl
 
 jl ("JSON lambda") is a tiny functional language for querying and manipulating JSON.
 
-- JSON lambda appears in categories: queryLanguage
+- Tags: queryLanguage
 - JSON lambda is developed on GitHub and has 466 stars
-- JSON lambda first developed in https://chrisdone.com/
+- Early development of JSON lambda happened in https://chrisdone.com/
 - JSON lambda is written in Haskell, YAML, Markdown
 
 map (\o -&gt; { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -&gt; length o.ps &gt; 1)

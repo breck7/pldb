@@ -11,24 +11,14 @@ PowerShell is an open source programming language created in 2006 by Jeffrey Sno
 
 git clone https://github.com/PowerShell/PowerShell
 
-Try now: Riju · TIO
-
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Initially a Windows component only, known as Windows PowerShell, it was made open-source and cross-platform on 18 August 2016 with the introduction of PowerShell Core. The former is built on .NET Framework while the latter on .NET Core. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PowerShell
 
-- PowerShell website
- http://microsoft.com/powershell
-- PowerShell appears in categories: programming language
-- PowerShell Wikipedia page
- https://en.wikipedia.org/wiki/PowerShell
+- Tags: programming language
 - PowerShell is developed on GitHub
-- PowerShell docs
- https://learn.microsoft.com/en-us/powershell/
 - There are at least 161,144 PowerShell repos on GitHub
-- PowerShell first developed in Microsoft
+- Early development of PowerShell happened in Microsoft
 - PowerShell is written in C#, PowerShell, XML, YAML, Markdown, XSD, JSON, XAML, Bourne shell, SVG, CSV, Razor, Dockerfile, XSLT, plantuml, Python
-- PowerShell on Twitter
- https://twitter.com/powershell_team
 - The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using PowerShell in 33k repos on GitHub
 - There are 201,622 members in the PowerShell subreddit
 - There are 159 Project Euler users using PowerShell
@@ -41,11 +31,9 @@ PowerShell is a task automation and configuration management framework from Micr
 - GitHub supports syntax highlighting for PowerShell
 - There is 1 Jupyter Kernel for PowerShell
 - There is a central package repository for PowerShell
-- PowerShell leet sheet
- https://cheatsheets.zip/powershell
 - Indeed.com has 19,576 matches for "powershell developer".
-- See also: (17 related languages)Perl, C#, DIGITAL Command Language, SQL, Tcl, Puppet, JScript, VBScript, Linux, ASCII, awk, grep, sed, XML, Assembly CLI, Office Open XML, Bash
-- 65 languages in PLDB linking to PowerShell: Aardvark, Ace Editor, AL, Argdown, AviSynth, Bazel, Bicep, Blacklight, Boomerang Decompiler, carp, chrysaLisp, clash, ClojureScript, CouchDB, crush, Cryptol, Crystal, curv, Deno, Embedded Crystal, Elixir, Emscripten, Enso, Flow, gleam, huginn, hurl, ink, Kubernetes, latino, lift, Linotte, Luna, mages, mal, MongoDB, Neko, Node.js, Nushell, onnx, P, Pony, POV-Ray SDL, PowerShell, Pygments, Python, PyTorch, Racket, Rakudo, Roslyn compiler, Rust, Scoop, score, Solidity, spiral, Star, Swift, Taichi, tiledb, typecobol, Vale, Vcpkg, Wasp, Xgboost, XGBoost
+- See also: (17 related languages) Perl, C#, DIGITAL Command Language, SQL, Tcl, Puppet, JScript, VBScript, Linux, ASCII, awk, grep, sed, XML, Assembly CLI, Office Open XML, Bash
+- 65 PLDB concepts link to PowerShell: Aardvark, Ace Editor, AL, Argdown, AviSynth, Bazel, Bicep, Blacklight, Boomerang Decompiler, carp, chrysaLisp, clash, ClojureScript, CouchDB, crush, Cryptol, Crystal, curv, Deno, Embedded Crystal, Elixir, Emscripten, Enso, Flow, gleam, huginn, hurl, ink, Kubernetes, latino, lift, Linotte, Luna, mages, mal, MongoDB, Neko, Node.js, Nushell, onnx, P, Pony, POV-Ray SDL, PowerShell, Pygments, Python, PyTorch, Racket, Rakudo, Roslyn compiler, Rust, Scoop, score, Solidity, spiral, Star, Swift, Taichi, tiledb, typecobol, Vale, Vcpkg, Wasp, Xgboost, XGBoost
 
 Write-Host &quot;Hello, world!&quot;
 

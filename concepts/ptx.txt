@@ -10,13 +10,9 @@ PTX is an assembly language created in 2009.
 Parallel Thread Execution (PTX, or NVPTX) is a pseudo-assembly language used in Nvidia's CUDA programming environment.  The nvcc compiler translates code written in CUDA, a C++-like language, into PTX, and the graphics driver contains a compiler which translates the PTX into a binary code which can be run on the processing cores.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parallel_Thread_Execution
 
-- PTX website
- https://llvm.org/docs/NVPTXUsage.html
-- PTX appears in categories: assembly language
-- PTX Wikipedia page
- https://en.wikipedia.org/wiki/Parallel_Thread_Execution
-- PTX first developed in Nvidia
-- See also: (2 related languages)Assembly language, CUDA
+- Tags: assembly language
+- Early development of PTX happened in Nvidia
+- See also: (2 related languages) Assembly language, CUDA
 - Read more about PTX on the web: 1.
  https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf
 

@@ -17,9 +17,9 @@ Yedalog is a query language created in 2015 by Brian Chin and Daniel von Dinckla
 
  We introduce Yedalog, a declarative programming language that allows programmers to mix data-parallel pipelines and computation seamlessly in a single language. By contrast, most existing tools for data-parallel computation embed a sublanguage of data-parallel pipelines in a general-purpose language, or vice versa. Yedalog extends Datalog, incorporating not only computational features from logic programming, but also features for working with data structured as nested records. Yedalog programs can run both on a single machine, and distributed across a cluster in batch and interactive modes, allowing programmers to mix different modes of execution easily.
 
-- Yedalog appears in categories: queryLanguage
-- Yedalog first developed in Google
-- See also: (1 related languages)Datalog
+- Tags: queryLanguage
+- Early development of Yedalog happened in Google
+- See also: (1 related languages) Datalog
 - Read more about Yedalog on the web: 1.
  https://research.google/pubs/pub43462/
 

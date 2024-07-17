@@ -11,15 +11,10 @@ Nice is a programming language created in 2006 by Daniel Bonniot.
 Nice is an object-oriented programming language released under the GNU General Public License. It features a powerful type system which can help eliminate many common bugs, such as null pointer dereferences and invalid casts, by detecting potential runtime errors at compile-time; the goal of the designers was to provide safety features comparable to those found in languages such as ML and Haskell, but using a more conventional syntax. Nice aims to be feature-rich, and as such, in addition to the common features of modern object-oriented programming languages, it implements contracts in the style of Eiffel, class extensibility through multimethods, and many concepts drawn from functional programming such as anonymous functions, tuples, pattern matching (“value dispatch”), and parametric polymorphism. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Nice_(programming_language)
 
-- Nice website
- https://nice.sourceforge.net/
-- Nice appears in categories: programming language
-- Nice Wikipedia page
- https://en.wikipedia.org/wiki/Nice_(programming_language)
-- PLDB has 2 documentation sites for Nice: nice.sourceforge.net, nice.sourceforge.net
-- Nice first developed in Institut national de recherche en sciences et technologies du numérique
+- Tags: programming language
+- Early development of Nice happened in Institut national de recherche en sciences et technologies du numérique
 - Explore Nice snippets on Rosetta Code
-- See also: (4 related languages)Haskell, Eiffel, Java Bytecode, Java
+- See also: (4 related languages) Haskell, Eiffel, Java Bytecode, Java
 - Read more about Nice on the web: 1. 2.
  https://gallium.inria.fr/~remy/poly/mot/10/nice/web/
  https://nice.sourceforge.net/Nice-source.tar.gz

@@ -9,31 +9,19 @@ Sass, aka syntactically awesome stylesheets, is an open source stylesheet langua
 18 Years Old
 9k Repos
 
-Try now: Riju
-
 Sass (syntactically awesome stylesheets) is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum. After its initial versions, Weizenbaum and Chris Eppstein continued to extend Sass with SassScript, a simple scripting language used in Sass files. Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
 
-- Sass website
- http://sass-lang.com/
-- Sass appears in categories: stylesheetLanguage
-- Sass Wikipedia page
- https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
-- Sass docs
- https://sass-lang.com/documentation/
+- Tags: stylesheetLanguage
 - There are at least 8,972 Sass repos on GitHub
-- Sass first developed in https://github.com/sass
-- Sass on Twitter
- https://twitter.com/sasscss
+- Early development of Sass happened in https://github.com/sass
 - The  Google BigQuery Public Dataset GitHub snapshot shows 439 users using Sass in 466 repos on GitHub
 - CodeMirror package for syntax highlighting Sass
 - Pygments supports syntax highlighting for Sass
 - GitHub supports syntax highlighting for Sass
-- Sass leet sheet
- https://cheatsheets.zip/sass
 - sass-lang.com was registered in 2009
-- See also: (15 related languages)Ruby, YAML, HAML, Less, Stylus, CSS, PHP, C, Java, Go, Eclipse, Emacs, Visual Studio, Vim, Visual Studio Code
-- 2 languages in PLDB linking to Sass: Ace Editor, txtzyme
+- See also: (15 related languages) Ruby, YAML, HAML, Less, Stylus, CSS, PHP, C, Java, Go, Eclipse, Emacs, Visual Studio, Vim, Visual Studio Code
+- 2 PLDB concepts link to Sass: Ace Editor, txtzyme
 
 body:before
   content: &quot;Hello, world!&quot;

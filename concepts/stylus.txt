@@ -12,18 +12,14 @@ Stylus is an open source stylesheet language created in 2010 by TJ Holowaychuk.
 Stylus is a dynamic stylesheet language that is compiled into Cascading Style Sheets (CSS). Its design is influenced by Sass and LESS. It's regarded as the fourth most used CSS preprocessor syntax. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
 
-- Stylus website
- http://stylus-lang.com/
-- Stylus appears in categories: stylesheetLanguage
-- Stylus Wikipedia page
- https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
+- Tags: stylesheetLanguage
 - There are at least 5,041 Stylus repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 315 users using Stylus in 344 repos on GitHub
 - CodeMirror package for syntax highlighting Stylus
 - GitHub supports syntax highlighting for Stylus
 - stylus-lang.com was registered in 2015
-- See also: (4 related languages)Sass, CSS, JADE, Python
-- 4 languages in PLDB linking to Stylus: abs, Ace Editor, Argdown, Pug
+- See also: (4 related languages) Sass, CSS, JADE, Python
+- 4 PLDB concepts link to Stylus: abs, Ace Editor, Argdown, Pug
 
 body::before
 	content: &quot;Hello World&quot;

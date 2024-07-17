@@ -10,10 +10,8 @@ XML Binding Language, aka XML Binding Language, is a xml format created in 2000.
 XBL (XML Binding Language) is an XML-based markup language used to declare the behavior and look of XUL-widgets and XML elements. Development of the XBL specification was abandoned by the W3C in 2012. XBL was developed by the Mozilla project for use in the Mozilla Application Suite; the language is not currently described by any formal standard and is thus proprietary to Mozilla, with the only implementation being the Gecko layout engine. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XBL
 
-- XML Binding Language appears in categories: xmlFormat
-- XML Binding Language Wikipedia page
- https://en.wikipedia.org/wiki/XBL
-- See also: (3 related languages)XML, CSS, SVG
+- Tags: xmlFormat
+- See also: (3 related languages) XML, CSS, SVG
 
 scrollbar {
   -moz-binding: url(&#39;somefile.xml#binding1&#39;);

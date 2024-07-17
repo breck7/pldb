@@ -9,25 +9,15 @@ ARM, aka Acorn RISC Machine, is an assembly language created in 1985 by Sophie W
 #95 on PLDB
 39 Years Old
 
-Try now: Riju
-
 ARM, originally Acorn RISC Machine, later Advanced RISC Machine, is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. British company ARM Holdings develops the architecture and licenses it to other companies, who design their own products that implement one of those architectures‍—‌including systems-on-chips (SoC) and systems-on-modules (SoM) that incorporate memory, interfaces, radios, etc. It also designs cores that implement this instruction set and licenses these designs to a number of companies that incorporate those core designs into their own products. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ARM_architecture
 
-- ARM appears in categories: assembly language
-- ARM downloads page
- https://developer.arm.com/downloads/-/arm-compiler-for-embedded
-- ARM Wikipedia page
- https://en.wikipedia.org/wiki/ARM_architecture
-- ARM docs
- https://developer.arm.com/documentation/
-- ARM first developed in Acorn Computers or Arm Ltd
+- Tags: assembly language
+- Early development of ARM happened in Acorn Computers or Arm Ltd
 - There is 1 Jupyter Kernel for ARM
-- Frequently Asked Questions for ARM
- https://developer.arm.com/documentation/102870/latest/
 - Indeed.com has 6,588 matches for "arm architecture developer".
-- See also: (17 related languages)X86, Java Bytecode, BBC BASIC, Verilog, C, Assembly language, Java, C#, Perl, Python, MMX instruction set, JavaScript, Android, Unix, iOS, FreeBSD, Linux
-- 1 languages in PLDB linking to ARM: B3 IR
+- See also: (17 related languages) X86, Java Bytecode, BBC BASIC, Verilog, C, Assembly language, Java, C#, Perl, Python, MMX instruction set, JavaScript, Android, Unix, iOS, FreeBSD, Linux
+- 1 PLDB concepts link to ARM: B3 IR
 
 	.text
 	.globl main

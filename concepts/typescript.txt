@@ -11,27 +11,16 @@ TypeScript is an open source programming language created in 2012 by Anders Hejl
 
 git clone https://github.com/microsoft/TypeScript
 
-Try now: Web · Riju · TIO
-
 TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. Anders Hejlsberg, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/TypeScript
 
-- TypeScript website
- http://www.typescriptlang.org/
-- TypeScript appears in categories: programming language
-- TypeScript downloads page
- https://www.typescriptlang.org/download
-- TypeScript Wikipedia page
- https://en.wikipedia.org/wiki/TypeScript
+- Tags: programming language
 - TypeScript is developed on GitHub and has 88,139 stars
 - Watch the history of the TypeScript repo visualized with Gource
-- PLDB has 2 documentation sites for TypeScript: www.typescriptlang.org, devdocs.io
 - There are at least 3,281,749 TypeScript repos on GitHub
 - TypeScript is a superset of JavaScript
-- TypeScript first developed in Microsoft
+- Early development of TypeScript happened in Microsoft
 - TypeScript is written in TypeScript, JavaScript, JSON, Markdown, YAML, Diff, XML, Bourne shell, Dockerfile
-- TypeScript on Twitter
- https://twitter.com/typescript
 - The  Google BigQuery Public Dataset GitHub snapshot shows 36k users using TypeScript in 48k repos on GitHub
 - There are 87,839 members in the TypeScript subreddit
 - In the 2021 StackOverflow developer survey TypeScript programmers reported a median salary of $59,172. 30% of respondents reported using TypeScript. 24,909 programmers reported using TypeScript, and 26,905 said they wanted to use it
@@ -46,16 +35,10 @@ TypeScript is a free and open-source programming language developed and maintain
 - TypeScript appears in the Quine Relay project
 - There is 1 Jupyter Kernel for TypeScript
 - There is a central package repository for TypeScript
-- Release Notes for TypeScript
- https://www.typescriptlang.org/docs/handbook/release-notes/
-- Official Blog page for TypeScript
- https://devblogs.microsoft.com/typescript/
-- TypeScript leet sheet
- https://cheatsheets.zip/typescript
 - Indeed.com has 1,542 matches for "typescript developer".
 - typescriptlang.org was registered in 2012
-- See also: (18 related languages)JavaScript, Java, C#, Delphi, Turbo Pascal, JQuery, MongoDB, D3.js, Visual Studio, Eclipse, Emacs, Vim, Sublime Text, Visual Studio Code, Apache Maven, Dart, CoffeeScript, Elm
-- 144 languages in PLDB linking to TypeScript: Ace Editor, Argdown, arret, AssemblyScript, Austral, Bicep, Bitsy, blur-markup-language, bosque, Broccoli, Bucklescript, buzz, Candy, Caramel, cat, Chapel, chevrotain, Ć, Civet, Claro, cloc, Closure Templates, codecept, CodeMirror, Cortex, D3.js, Deno, dex, Differential Datalog, TypeScript Type Declarations, Elpi, Elvish, emberjs-framework, Emscripten, Enso, erg, Eve, Fardlang, FlatBuffers, Flow9, flowchart.fun, GETlang, gleam, gridstudio-editor, Hera, Heron, HHVM, highlight.js, htmx, HuwCode, Hyperscript, Imba, Insitux, Jakt, jsil-compiler, json->url, JSON5, Koka, Kotlin, kumir, leo-editor, Lesma, Ligo, Link, lobster, Lodash, Luna, mal, Marko, Markwhen, Marp, Mask, Mastodon, MathJSON, Mathpix Markdown, MDX, Mech, Melody, mermaid, mochajs, Monaco Editor, Mond, neut, NilScript, Node.js, nulan, Observable Framework, Observable Plot, obsidian, Ohayo, ohm, OK, Parsers, PEG.js, penrose, Pod6, Podlite, PostCSS, PROMETHEUS, PRQL, Pug, React Native, Recursive teXt, Rholang, Roc, rpscript, Rust, Savi, Scroll Notation, SDMS, Seq, Serious, Slashdown, spiral, SQRL, Static Typescript, Storymatic, Superjson, Svelte, tao3d, Tawa, tea, Timpani, tldraw, Truth, tsquery, Twine, TypeScript, Uno, V, v8, vega-editor-app, Vega, Veryl, Virgil, Vue, Wasp, Wax, 文言文編程語言, Wing, Wonkey, xlwings-editor, Xtext, YoptaScript
+- See also: (18 related languages) JavaScript, Java, C#, Delphi, Turbo Pascal, JQuery, MongoDB, D3.js, Visual Studio, Eclipse, Emacs, Vim, Sublime Text, Visual Studio Code, Apache Maven, Dart, CoffeeScript, Elm
+- 144 PLDB concepts link to TypeScript: Ace Editor, Argdown, arret, AssemblyScript, Austral, Bicep, Bitsy, blur-markup-language, bosque, Broccoli, Bucklescript, buzz, Candy, Caramel, cat, Chapel, chevrotain, Ć, Civet, Claro, cloc, Closure Templates, codecept, CodeMirror, Cortex, D3.js, Deno, dex, Differential Datalog, TypeScript Type Declarations, Elpi, Elvish, emberjs-framework, Emscripten, Enso, erg, Eve, Fardlang, FlatBuffers, Flow9, flowchart.fun, GETlang, gleam, gridstudio-editor, Hera, Heron, HHVM, highlight.js, htmx, HuwCode, Hyperscript, Imba, Insitux, Jakt, jsil-compiler, json->url, JSON5, Koka, Kotlin, kumir, leo-editor, Lesma, Ligo, Link, lobster, Lodash, Luna, mal, Marko, Markwhen, Marp, Mask, Mastodon, MathJSON, Mathpix Markdown, MDX, Mech, Melody, mermaid, mochajs, Monaco Editor, Mond, neut, NilScript, Node.js, nulan, Observable Framework, Observable Plot, obsidian, Ohayo, ohm, OK, Parsers, PEG.js, penrose, Pod6, Podlite, PostCSS, PROMETHEUS, PRQL, Pug, React Native, Recursive teXt, Rholang, Roc, rpscript, Rust, Savi, Scroll Notation, SDMS, Seq, Serious, Slashdown, spiral, SQRL, Static Typescript, Storymatic, Superjson, Svelte, tao3d, Tawa, tea, Timpani, tldraw, Truth, tsquery, Twine, TypeScript, Uno, V, v8, vega-editor-app, Vega, Veryl, Virgil, Vue, Wasp, Wax, 文言文編程語言, Wing, Wonkey, xlwings-editor, Xtext, YoptaScript
 
 console.log(&quot;Hello, world!&quot;);
 

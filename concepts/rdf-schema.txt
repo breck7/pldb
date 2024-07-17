@@ -10,10 +10,8 @@ RDF Schema is a grammar language created in 1998.
 RDF Schema (Resource Description Framework Schema, variously abbreviated as RDFS, RDF(S), RDF-S, or RDF/S) is a set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies, otherwise called RDF vocabularies, intended to structure RDF resources. These resources can be saved in a triplestore to reach them with the query language SPARQL. The first version was published by the World-Wide Web Consortium (W3C) in April 1998, and the final W3C recommendation was released in February 2004. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/RDF_Schema
 
-- RDF Schema appears in categories: grammarLanguage
-- RDF Schema Wikipedia page
- https://en.wikipedia.org/wiki/RDF_Schema
-- RDF Schema first developed in World Wide Web Consortium
+- Tags: grammarLanguage
+- Early development of RDF Schema happened in World Wide Web Consortium
 
 @prefix rdf:   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs:   &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .

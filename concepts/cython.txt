@@ -11,21 +11,15 @@ Cython is an open source programming language created in 2007.
 Cython is a superset of the Python programming language, designed to give C-like performance with code which is mostly written in Python. Cython is a compiled language that generates CPython extension modules. These extension modules can then be loaded and used by regular Python code using the import statement. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cython
 
-- Cython website
- http://cython.org
-- Cython appears in categories: programming language
-- Cython Wikipedia page
- https://en.wikipedia.org/wiki/Cython
-- Cython docs
- https://cython.readthedocs.io/en/latest/
+- Tags: programming language
 - There are at least 698 Cython repos on GitHub
 - Cython is a superset of Python
-- Cython first developed in https://github.com/sagemath
+- Early development of Cython happened in https://github.com/sagemath
 - The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Cython in 580 repos on GitHub
 - Pygments supports syntax highlighting for Cython
 - GitHub supports syntax highlighting for Cython
-- See also: (9 related languages)Python, C, Linux, Pyrex, Sage, XML, SciPy, Pandas, Scikit-learn
-- 13 languages in PLDB linking to Cython: atomspace, Chapel, edgedb, Fardlang, HHVM, Horse64, Impala, Pandas, Scikit-learn, SciPy, Sqlalchemy, TensorFlow, tornado
+- See also: (9 related languages) Python, C, Linux, Pyrex, Sage, XML, SciPy, Pandas, Scikit-learn
+- 13 PLDB concepts link to Cython: atomspace, Chapel, edgedb, Fardlang, HHVM, Horse64, Impala, Pandas, Scikit-learn, SciPy, Sqlalchemy, TensorFlow, tornado
 
 In [1]: %load_ext Cython
 

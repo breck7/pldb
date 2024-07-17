@@ -9,24 +9,18 @@ ATS, aka Applied Type System, is an open source programming language created in 
 11 Years Old
 217 Repos
 
-Try now: Riju
-
 ATS (Applied Type System) is a programming language designed to unify programming with formal specification. ATS has support for combining theorem proving with practical programming through the use of advanced type systems. A past version of The Computer Language Benchmarks Game has demonstrated that the performance of ATS is comparable to that of the C and C++ programming languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ATS_(programming_language)
 
-- ATS website
- http://www.ats-lang.org/
-- ATS appears in categories: programming language
-- ATS Wikipedia page
- https://en.wikipedia.org/wiki/ATS_(programming_language)
+- Tags: programming language
 - There are at least 217 ATS repos on GitHub
-- ATS first developed in Boston University
+- Early development of ATS happened in Boston University
 - The  Google BigQuery Public Dataset GitHub snapshot shows 26 users using ATS in 46 repos on GitHub
 - Explore ATS snippets on Rosetta Code
 - Monaco package for syntax highlighting ATS
 - GitHub supports syntax highlighting for ATS
 - ats-lang.org was registered in 2007
-- See also: (4 related languages)DML, ML, OCaml, C
+- See also: (4 related languages) DML, ML, OCaml, C
 
 val _ = print (&quot;Hello, world!\n&quot;)
 implement main0 () = ()

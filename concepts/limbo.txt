@@ -9,27 +9,19 @@ Limbo is an open source programming language created in 1995 by Rob Pike.
 29 Years Old
 529 Repos
 
-Try now: Riju
-
 Limbo is a programming language for writing distributed systems and is the language used to write applications for the Inferno operating system. It was designed at Bell Labs by Sean Dorward, Phil Winterbottom, and Rob Pike. The Limbo compiler generates architecture-independent object code which is then interpreted by the Dis virtual machine or compiled just before runtime to improve performance. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Limbo_(programming_language)
 
-- Limbo website
- http://www.vitanuova.com/inferno/limbo.html
-- Limbo appears in categories: programming language
-- Limbo Wikipedia page
- https://en.wikipedia.org/wiki/Limbo_(programming_language)
-- Limbo docs
- http://resibots.eu/limbo/
+- Tags: programming language
 - There are at least 529 Limbo repos on GitHub
-- Limbo first developed in https://groups.google.com/g/inferno-os
+- Early development of Limbo happened in https://groups.google.com/g/inferno-os
 - The  Google BigQuery Public Dataset GitHub snapshot shows 360 users using Limbo in 367 repos on GitHub
 - Explore Limbo snippets on Rosetta Code
 - Limbo on HOPL
  https://hopl.info/showlanguage.prx?exp=2166
 - Limbo appears in the TIOBE Index
 - Pygments supports syntax highlighting for Limbo
-- See also: (10 related languages)C, Pascal, CSP, ALEF, Newsqueak, Stackless Python, Go, Rust, Ada, ISBN
+- See also: (10 related languages) C, Pascal, CSP, ALEF, Newsqueak, Stackless Python, Go, Rust, Ada, ISBN
 
 Lock: module
 {

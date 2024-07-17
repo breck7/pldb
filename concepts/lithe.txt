@@ -10,13 +10,11 @@ Lithe is a programming language created in 1982.
 Lithe is an experimental programming language created in 1982 by David Sandberg at the University of Washington which allows the programmer to freely choose their own syntax. Lithe combines the ideas of syntax-directed translation and classes in a novel manner that results in a remarkably simple yet powerful language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lithe_(programming_language)
 
-- Lithe appears in categories: programming language
-- Lithe Wikipedia page
- https://en.wikipedia.org/wiki/Lithe_(programming_language)
-- Lithe first developed in University of Washington
+- Tags: programming language
+- Early development of Lithe happened in University of Washington
 - Lithe on HOPL
  https://hopl.info/showlanguage.prx?exp=998
-- See also: (1 related languages)Smalltalk
+- See also: (1 related languages) Smalltalk
 
 rule &quot;|&quot; &lt;i:int&gt; &quot;|&quot; return int;
   {if i&lt;0 then return -i else return i end}

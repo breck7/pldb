@@ -11,8 +11,6 @@ git clone https://git.sr.ht/~jprotopopov/kefir
 
 This repository contains implementation of C17 language compiler from scratch. No existing open source compiler infrastructure is being reused. The main priority is self-sufficiency of the project, compatibility with platform ABI and compliance with C17 language standard.
 
-- Kefir website
- https://sr.ht/~jprotopopov/kefir/
-- Kefir appears in categories: compiler
-- Kefir first developed in https://www.protopopov.lv
+- Tags: compiler
+- Early development of Kefir happened in https://www.protopopov.lv
 - Kefir is written in C, Make, Bourne shell, YAML, Bash, SQL, Diff, Assembly language, Markdown, HTML, JavaScript, CSS, M4

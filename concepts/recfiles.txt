@@ -13,18 +13,12 @@ git clone https://git.savannah.gnu.org/git/recutils.git
 recfiles is a file format for human-editable, plain text databases. Databases using this file format can be edited using any text editor. recfiles allow for basic relational database operations, typing, auto-incrementing, as well as a simple join operation. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Recfiles
 
-- Recfiles website
- https://www.gnu.org/software/recutils/
-- Recfiles appears in categories: dataNotation
-- Recfiles Wikipedia page
- https://en.wikipedia.org/wiki/Recfiles
-- Video demo of Recfiles
- https://fscons.org/videos/2011/gnu-recutils-changed-title-and-subject.webm
-- Recfiles first developed in Free Software Foundation
+- Tags: dataNotation
+- Early development of Recfiles happened in Free Software Foundation
 - Recfiles is written in C, Bourne shell, Make, sed, Tex, CSS, Lex, M4, Yacc, Python
 - Read more about Recfiles on the web: 1.
  https://www.gnu.org/software/recutils/
-- 1 languages in PLDB linking to Recfiles: SUSN
+- 1 PLDB concepts link to Recfiles: SUSN
 
 %rec: Book
 %mandatory: Title

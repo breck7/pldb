@@ -9,7 +9,5 @@ AIR, aka Assembly Intermediate Representation, is an intermediate representation
 
 Bare Bones Backend / Assembly Intermediate Representation. The B3 compiler comprises two intermediate representations: a higher-level SSA-based representation called B3 IR and a lower-level representation that focuses of machine details, like registers. This lower-level form is called Air (Assembly Intermediate Representation).
 
-- AIR website
- https://webkit.org/docs/b3/assembly-intermediate-representation.html
-- AIR appears in categories: intermediate representation language
-- AIR first developed in Apple
+- Tags: intermediate representation language
+- Early development of AIR happened in Apple

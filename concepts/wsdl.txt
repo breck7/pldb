@@ -10,12 +10,8 @@ WSDL, aka Web Services Description Language, is a xml format created in 2000.
 The Web Services Description Language (WSDL ) is an XML-based interface definition language that is used for describing the functionality offered by a web service. The acronym is also used for any specific WSDL description of a web service (also referred to as a WSDL file), which provides a machine-readable description of how the service can be called, what parameters it expects, and what data structures it returns. Therefore, its purpose is roughly similar to that of a method signature in a programming language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Web_Services_Description_Language
 
-- WSDL appears in categories: xmlFormat
-- WSDL Wikipedia page
- https://en.wikipedia.org/wiki/Web_Services_Description_Language
-- WSDL docs
- https://www.w3.org/TR/2001/NOTE-wsdl-20010315
-- See also: (3 related languages)XML, SOAP, BPEL
+- Tags: xmlFormat
+- See also: (3 related languages) XML, SOAP, BPEL
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;description xmlns=&quot;http://www.w3.org/ns/wsdl&quot;

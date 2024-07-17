@@ -11,21 +11,16 @@ ML, aka Meta Language, is a programming language created in 1973 by Robin Milner
 ML ('Meta Language') is a general-purpose functional programming language. It has roots in Lisp, and has been characterized as "Lisp with types". It is known for its use of the polymorphic Hindley–Milner type system, which automatically assigns the types of most expressions without requiring explicit type annotations, and ensures type safety – there is a formal proof that a well-typed ML program does not cause runtime type errors. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ML_(programming_language)
 
-- ML appears in categories: programming language
-- ML Wikipedia page
- https://en.wikipedia.org/wiki/ML_(programming_language)
-- PLDB has 2 documentation sites for ML: www.cs.cmu.edu, www.cs.nmsu.edu
-- ML first developed in University of Edinburgh
+- Tags: programming language
+- Early development of ML happened in University of Edinburgh
 - There are 427 Project Euler users using ML
 - Explore ML snippets on Rosetta Code
 - ML on HOPL
  https://hopl.info/showlanguage.prx?exp=620
 - ML appears in the TIOBE Index
-- Frequently Asked Questions for ML
- http://www.faqs.org/faqs/meta-lang-faq/
 - Indeed.com has 6 matches for "ml engineer".
-- See also: (24 related languages)Standard ML, Caml, ISWIM, Clojure, Coq, Cyclone, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala, Lisp, ATS, Alice, DML, Lazy ML, Clean
-- 1 languages in PLDB linking to ML: Nemerle
+- See also: (24 related languages) Standard ML, Caml, ISWIM, Clojure, Coq, Cyclone, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala, Lisp, ATS, Alice, DML, Lazy ML, Clean
+- 1 PLDB concepts link to ML: Nemerle
 
 structure Rational : ARITH =
 struct

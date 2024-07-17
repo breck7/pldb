@@ -14,19 +14,15 @@ git clone https://github.com/digitalbazaar/jsonld.js
 JSON-LD (JavaScript Object Notation for Linked Data), is a method of encoding Linked Data using JSON. It was a goal to require as little effort as possible from developers to transform their existing JSON to JSON-LD. This allows data to be serialized in a way that is similar to traditional JSON. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JSON-LD
 
-- JSON-LD website
- https://json-ld.org/
-- JSON-LD appears in categories: dataValidationLanguage
-- JSON-LD Wikipedia page
- https://en.wikipedia.org/wiki/JSON-LD
+- Tags: dataValidationLanguage
 - JSON-LD is developed on GitHub and has 1,425 stars
 - There are at least 0 JSON-LD repos on GitHub
-- JSON-LD first developed in https://www.w3.org/2018/json-ld-wg/
+- Early development of JSON-LD happened in https://www.w3.org/2018/json-ld-wg/
 - JSON-LD is written in JavaScript, Markdown, JSON, YAML, IDL, Bourne shell
 - Pygments supports syntax highlighting for JSON-LD
 - GitHub supports syntax highlighting for JSON-LD
 - json-ld.org was registered in 2010
-- 3 languages in PLDB linking to JSON-LD: Microdata HTML, RDF, RDFa
+- 3 PLDB concepts link to JSON-LD: Microdata HTML, RDF, RDFa
 
 {
   &quot;@context&quot;: {

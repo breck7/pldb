@@ -10,11 +10,9 @@ JRuby is an open source programming language created in 2001.
 JRuby is an implementation of the Ruby programming language atop the Java Virtual Machine, written largely in Java. It is free software released under a three-way EPL/GPL/LGPL license. JRuby is tightly integrated with Java to allow the embedding of the interpreter into any Java application with full two-way access between the Java and the Ruby code (similar to Jython for the Python language). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JRuby
 
-- JRuby appears in categories: programming language
-- JRuby Wikipedia page
- https://en.wikipedia.org/wiki/JRuby
-- JRuby first developed in https://github.com/jruby
-- See also: (8 related languages)Java, Ruby, Jython, C, Ruby on Rails, Android, Java Bytecode, YARV
+- Tags: programming language
+- Early development of JRuby happened in https://github.com/jruby
+- See also: (8 related languages) Java, Ruby, Jython, C, Ruby on Rails, Android, Java Bytecode, YARV
 
 //Example using JSR 233 Scripting for Java 6
 ScriptEngineManager mgr = new ScriptEngineManager();

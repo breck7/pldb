@@ -13,23 +13,17 @@ git clone https://github.com/FStarLang/FStar
 F* (pronounced F star) is a functional programming language inspired by ML and aimed at program verification. Its type system includes dependent types, monadic effects, and refinement types. This allows expressing precise specifications for programs, including functional correctness and security properties. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/F*_(programming_language)
 
-- F* website
- https://www.fstar-lang.org/
-- F* appears in categories: programming language
-- F* Wikipedia page
- https://en.wikipedia.org/wiki/F*_(programming_language)
+- Tags: programming language
 - F* is developed on GitHub and has 2,263 stars
-- F* docs
- http://www.fstar-lang.org/tutorial/
 - There are at least 250 F* repos on GitHub
-- F* first developed in Microsoft Research
+- Early development of F* happened in Microsoft Research
 - F* is written in OCaml, Make, Bourne shell, Markdown, F#, Python, C, Dockerfile, JSON, XML, Assembly language, Nix, YAML, Bash, Clojure, Coq, SVG, Haskell, CSV, Lisp
 - The  Google BigQuery Public Dataset GitHub snapshot shows 28 users using F* in 31 repos on GitHub
 - Pygments supports syntax highlighting for F*
 - GitHub supports syntax highlighting for F*
 - fstar-lang.org was registered in 2014
-- See also: (7 related languages)Linux, F#, OCaml, Standard ML, ML, C, JavaScript
-- 2 languages in PLDB linking to F*: Low*, Vale
+- See also: (7 related languages) Linux, F#, OCaml, Standard ML, ML, C, JavaScript
+- 2 PLDB concepts link to F*: Low*, Vale
 
 module Hello
 

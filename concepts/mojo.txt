@@ -10,22 +10,14 @@ Mojo is an open source programming language created in 2022 by Chris Lattner.
 
 git clone https://github.com/modularml/mojo
 
-Try now: Web
-
 Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 
-- Mojo website
- https://www.modular.com/mojo
-- Mojo appears in categories: programming language
+- Tags: programming language
 - Mojo is developed on GitHub and has 1,577 stars
-- Mojo docs
- https://docs.modular.com/mojo/
 - Mojo is a superset of Python
-- Mojo first developed in Modular Inc
+- Early development of Mojo happened in Modular Inc
 - Mojo is written in Markdown, Jupyter Notebook, YAML, Python, Bourne shell, CMake, Dockerfile
-- Release Notes for Mojo
- https://docs.modular.com/mojo/changelog.html
-- 1 languages in PLDB linking to Mojo: cloc
+- 1 PLDB concepts link to Mojo: cloc
 
 def softmax(lst):
   norm = np.exp(lst - np.max(lst))

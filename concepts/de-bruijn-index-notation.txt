@@ -11,10 +11,8 @@ De Bruijn index is a notation created in 1972 by Nicolaas Govert de Bruijn.
 In mathematical logic, the de Bruijn index is a tool invented by the Dutch mathematician Nicolaas Govert de Bruijn for representing terms of lambda calculus without naming the bound variables. Terms written using these indices are invariant with respect to α-conversion, so the check for α-equivalence is the same as that for syntactic equality. Each de Bruijn index is a natural number that represents an occurrence of a variable in a λ-term, and denotes the number of binders that are in scope between that occurrence and its corresponding binder. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/De_Bruijn_index
 
-- De Bruijn index appears in categories: notation
-- De Bruijn index Wikipedia page
- https://en.wikipedia.org/wiki/De_Bruijn_index
-- De Bruijn index first developed in Technical University Eindhoven
+- Tags: notation
+- Early development of De Bruijn index happened in Technical University Eindhoven
 - Read more about De Bruijn index on the web: 1.
  http://alexandria.tue.nl/repository/freearticles/597619.pdf
 

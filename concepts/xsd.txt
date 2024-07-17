@@ -10,10 +10,8 @@ XSD, aka XML Schema Definition, is a data validation language created in 2001.
 XSD (XML Schema Definition), a recommendation of the World Wide Web Consortium (W3C), specifies how to formally describe the elements in an Extensible Markup Language (XML) document. It can be used by programmers to verify each piece of item content in a document. They can check if it adheres to the description of the element it is placed in.Like all XML schema languages, XSD can be used to express a set of rules to which an XML document must conform in order to be considered "valid" according to that schema. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XML_Schema_(W3C)
 
-- XSD appears in categories: dataValidationLanguage
-- XSD Wikipedia page
- https://en.wikipedia.org/wiki/XML_Schema_(W3C)
-- 21 languages in PLDB linking to XSD: Apache Hbase, ecsharp, Eiffel, Erlang, FFmpeg, Gradle, HHVM, Java, Linux, Minilang, NeXML format, PHP, Plaid, PowerShell, Rebeca Modeling Language, RobotFramework, Roslyn compiler, Simple Binary Encoding, tibet, typecobol, YAWL
+- Tags: dataValidationLanguage
+- 21 PLDB concepts link to XSD: Apache Hbase, ecsharp, Eiffel, Erlang, FFmpeg, Gradle, HHVM, Java, Linux, Minilang, NeXML format, PHP, Plaid, PowerShell, Rebeca Modeling Language, RobotFramework, Roslyn compiler, Simple Binary Encoding, tibet, typecobol, YAWL
 
 &lt;xs:element name=&quot;PurchaseOrder&quot; type=&quot;PurchaseOrderType&quot;/&gt;
 

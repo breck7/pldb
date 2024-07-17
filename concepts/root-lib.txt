@@ -10,15 +10,11 @@ ROOT is an open source library created in 1994.
 ROOT is an object-oriented program and library developed by CERN. It was originally designed for particle physics data analysis and contains several features specific to this field, but it is also used in other applications such as astronomy and data mining.  Release 6.14.04 as of 2018-08-23. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ROOT
 
-- ROOT website
- https://root.cern.ch/
-- ROOT appears in categories: library
-- ROOT Wikipedia page
- https://en.wikipedia.org/wiki/ROOT
-- ROOT first developed in Conseil européen pour la recherche nucléaire or CERN
+- Tags: library
+- Early development of ROOT happened in Conseil européen pour la recherche nucléaire or CERN
 - ROOT is written in C++
 - There is 1 Jupyter Kernel for ROOT
-- See also: (15 related languages)Linux, Solaris, IA-32, PostScript, SVG, LaTeX, Python, MATLAB, Matplotlib, SciPy, NumPy, Perl Data Language, Perl, R, IGOR Pro
+- See also: (15 related languages) Linux, Solaris, IA-32, PostScript, SVG, LaTeX, Python, MATLAB, Matplotlib, SciPy, NumPy, Perl Data Language, Perl, R, IGOR Pro
 
 #include &quot;Riostream.h&quot;
 void basic() {

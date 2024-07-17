@@ -9,8 +9,8 @@ rise is a programming language created in 2020.
 
 Rise is a functional pattern-based language in the style of Lift. Rise provides a set of data-parallel high-level patterns that are used to describe computations over higher dimensional arrays (aka tensors) in an abstract way. For example, the map pattern applies a given function to every element of the input array. The zip pattern combines two input arrays pairwise to produce an output array of pairs. The reduce pattern is customized with a binary reduction operator (such as addition), a matching neutral element (such as zero), and an input array that is reduced to a single value (such as the sum of all elements).
 
-- rise appears in categories: programming language
-- rise first developed in University of Glasgow
+- Tags: programming language
+- Early development of rise happened in University of Glasgow
 - Read more about rise on the web: 1.
  https://michel.steuwer.info/files/publications/2020/accML.pdf
 

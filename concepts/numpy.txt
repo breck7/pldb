@@ -11,20 +11,12 @@ NumPy is an open source library created in 1995 by Travis Oliphant.
 NumPy (pronounced  (NUM-py) or sometimes  (NUM-pee)) is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NumPy
 
-- NumPy website
- http://www.numpy.org/
-- NumPy appears in categories: library
-- NumPy Wikipedia page
- https://en.wikipedia.org/wiki/NumPy
-- NumPy first developed in https://github.com/numpy
+- Tags: library
+- Early development of NumPy happened in https://github.com/numpy
 - NumPy is written in Python, C
-- NumPy on Twitter
- https://twitter.com/numpy_team
 - Pygments supports syntax highlighting for NumPy
-- NumPy leet sheet
- https://cheatsheets.zip/numpy
 - numpy.org was registered in 2000
-- See also: (8 related languages)Python, C, Jython, SciPy, MATLAB, Simulink, Matplotlib, Cython
+- See also: (8 related languages) Python, C, Jython, SciPy, MATLAB, Simulink, Matplotlib, Cython
 
 &gt;&gt;&gt; # # # Pure iterative Python # # #
 &gt;&gt;&gt; points = [[9,2,8],[4,7,2],[3,4,4],[5,6,9],[5,0,7],[8,2,7],[0,3,2],[7,3,0],[6,1,1],[2,9,6]]

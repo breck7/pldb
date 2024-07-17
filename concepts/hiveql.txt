@@ -10,9 +10,7 @@ HiveQL is a query language created in 2011.
 
 SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
 
-- HiveQL website
- https://hive.apache.org
-- HiveQL appears in categories: queryLanguage
+- Tags: queryLanguage
 - There are at least 502 HiveQL repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 135 users using HiveQL in 143 repos on GitHub
 - GitHub supports syntax highlighting for HiveQL

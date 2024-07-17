@@ -13,18 +13,14 @@ git clone https://github.com/scala-js/scala-js
 Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java.Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Scala provides language interoperability with Java, so that libraries written in both languages may be referenced directly in Scala or Java code. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Scala.js_(programming_language)
 
-- Scala.js website
- https://www.scala-js.org/
-- Scala.js appears in categories: programming language
-- Scala.js Wikipedia page
- https://en.wikipedia.org/wiki/Scala.js_(programming_language)
+- Tags: programming language
 - Scala.js is developed on GitHub and has 4,324 stars
-- Scala.js first developed in https://github.com/scala-js
+- Early development of Scala.js happened in https://github.com/scala-js
 - Scala.js compiles to JavaScript
 - Scala.js is written in Scala, Markdown, JavaScript, HTML, XML, JSON, CSS, Java, Bourne shell, YAML
 - There are 181 members in the Scala.js subreddit
 - scala-js.org was registered in 2013
-- See also: (37 related languages)JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, Swift, Perl, Go, PowerShell, Objective-C, R, Ruby
+- See also: (37 related languages) JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, Swift, Perl, Go, PowerShell, Objective-C, R, Ruby
 
 class Person(val firstName: String, val lastName: String) {
  def fullName(): String =

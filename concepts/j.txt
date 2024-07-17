@@ -12,22 +12,14 @@ J is an open source programming language created in 1990 by Kenneth E. Iverson a
 
 git clone https://github.com/jsoftware/jsource
 
-Try now: Riju · TIO
-
 The J programming language, developed in the early 1990s by Kenneth E. Iverson and Roger Hui, is a synthesis of APL (also by Iverson) and the FP and FL function-level languages created by John Backus. To avoid repeating the APL special-character problem, J uses only the basic ASCII character set, resorting to the use of the dot and colon as inflections to form short words similar to digraphs. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/J_(programming_language)
 
-- J website
- http://www.jsoftware.com
-- J appears in categories: programming language
-- J Wikipedia page
- https://en.wikipedia.org/wiki/J_(programming_language)
+- Tags: programming language
 - J is developed on GitHub and has 536 stars
 - Watch the history of the J repo visualized with Gource
-- J docs
- https://www.jsoftware.com/help/learning/contents.htm
 - There are at least 468 J repos on GitHub
-- J first developed in Jsoftware Inc
+- Early development of J happened in Jsoftware Inc
 - J is written in C, Assembly language, Bourne shell, Make, XML, Markdown, YAML, C++, IDL, HTML
 - The  Google BigQuery Public Dataset GitHub snapshot shows 124 users using J in 151 repos on GitHub
 - There are 2,478 Project Euler users using J
@@ -39,10 +31,10 @@ The J programming language, developed in the early 1990s by Kenneth E. Iverson a
 - GitHub supports syntax highlighting for J
 - There is 1 Jupyter Kernel for J
 - jsoftware.com was registered in 1996
-- See also: (13 related languages)Linux, APL, FP, FL, NumPy, SuperCollider, ASCII, Unix, SQL, C, Unicode, K, Q
+- See also: (13 related languages) Linux, APL, FP, FL, NumPy, SuperCollider, ASCII, Unix, SQL, C, Unicode, K, Q
 - Read more about J on the web: 1.
  https://aplwiki.com/wiki/Jsoftware
-- 4 languages in PLDB linking to J: Goal, Jelly, U, Uiua
+- 4 PLDB concepts link to J: Goal, Jelly, U, Uiua
 
 echo &#39;Hello, world!&#39;
 

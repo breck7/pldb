@@ -8,20 +8,16 @@ Joy is a programming language created in 2001 by Manfred von Thun.
 #787 on PLDB
 23 Years Old
 
-Try now: TIO
-
 The Joy programming language in computer science is a purely functional programming language that was produced by Manfred von Thun of La Trobe University in Melbourne, Australia. Joy is based on composition of functions rather than lambda calculus. It has turned out to have many similarities to Forth, due not to design but to a sort of parallel evolution and convergence. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Joy_(programming_language)
 
-- Joy appears in categories: programming language
-- Joy Wikipedia page
- https://en.wikipedia.org/wiki/Joy_(programming_language)
-- Joy first developed in La Trobe University
+- Tags: programming language
+- Early development of Joy happened in La Trobe University
 - Explore Joy snippets on Rosetta Code
 - Joy on HOPL
  https://hopl.info/showlanguage.prx?exp=2137
-- See also: (7 related languages)Scheme, FP, Factor, Forth, UNLAMBDA, C, SYMBOL
-- 3 languages in PLDB linking to Joy: F, cK, XY
+- See also: (7 related languages) Scheme, FP, Factor, Forth, UNLAMBDA, C, SYMBOL
+- 3 PLDB concepts link to Joy: F, cK, XY
 
 DEFINE qsort ==
    [small]

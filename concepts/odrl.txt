@@ -10,10 +10,8 @@ ODRL is a programming language created in 2000.
 The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services.  An example of ODRL policy follows, which can be intepreted as "John can play mysong.mp3".. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ODRL
 
-- ODRL appears in categories: programming language
-- ODRL Wikipedia page
- https://en.wikipedia.org/wiki/ODRL
-- ODRL first developed in https://odrl.net
+- Tags: programming language
+- Early development of ODRL happened in https://odrl.net
 
 {
  &quot;@context&quot;: &quot;http://www.w3.org/ns/odrl.jsonld&quot;,

@@ -11,15 +11,11 @@ SMTP, aka Simple Mail Transfer Protocol, is a protocol created in 1982 by Jon Po
 Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic mail (email) transmission. First defined by RFC 821 in 1982, it was last updated in 2008 with Extended SMTP additions by RFC 5321, which is the protocol in widespread use today. Although electronic mail servers and other mail transfer agents use SMTP to send and receive mail messages, user-level client mail applications typically use SMTP only for sending messages to a mail server for relaying. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
 
-- SMTP appears in categories: protocol
-- SMTP Wikipedia page
- https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
-- SMTP docs
- https://www.rfc-editor.org/rfc/rfc5321
-- SMTP first developed in USC Viterbi School of Engineering
+- Tags: protocol
+- Early development of SMTP happened in USC Viterbi School of Engineering
 - First announcement of SMTP
-- See also: (10 related languages)FTP, HTTP, TLS, TCP, UDP, ASCII, MIME, UTF-8, EML, DOI
-- 2 languages in PLDB linking to SMTP: NNTP, TMTP
+- See also: (10 related languages) FTP, HTTP, TLS, TCP, UDP, ASCII, MIME, UTF-8, EML, DOI
+- 2 PLDB concepts link to SMTP: NNTP, TMTP
 
 S: 220 smtp2.example.com ESMTP Postfix
 C: EHLO bob.example.com

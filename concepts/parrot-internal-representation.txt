@@ -11,13 +11,11 @@ PIR is a programming language created in 2006.
 The Parrot intermediate representation (PIR), previously called Intermediate code (IMC), is one of the two assembly languages for the Parrot virtual machine. The other is Parrot assembly language or PASM. Compared to PASM, PIR exists at a slightly higher abstraction layer, and provides temporary registers and named registers, simplifying code generation. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parrot_intermediate_representation
 
-- PIR appears in categories: programming language
-- PIR Wikipedia page
- https://en.wikipedia.org/wiki/Parrot_intermediate_representation
+- Tags: programming language
 - There are at least 0 PIR repos on GitHub
-- PIR first developed in https://www.perl.org
+- Early development of PIR happened in https://www.perl.org
 - GitHub supports syntax highlighting for PIR
-- See also: (3 related languages)Assembly language, Parrot, Parrot Assembly
+- See also: (3 related languages) Assembly language, Parrot, Parrot Assembly
 
 #!/usr/bin/env parrot
 

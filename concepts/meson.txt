@@ -11,16 +11,14 @@ Meson is an open source programming language created in 2013.
 Meson (/ˈmɛ.sɒn/) is a software tool for automating the building (compiling) of software. The overall goal for Meson is to promote programmer productivity.Meson is free and open-source software written in Python 3 and subject to the terms of the Apache 2.0 License.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Meson_(software)
 
-- Meson appears in categories: programming language
-- Meson Wikipedia page
- https://en.wikipedia.org/wiki/Meson_(software)
+- Tags: programming language
 - There are at least 880 Meson repos on GitHub
-- Meson first developed in https://github.com/mesonbuild
+- Early development of Meson happened in https://github.com/mesonbuild
 - The  Google BigQuery Public Dataset GitHub snapshot shows 765 users using Meson in 1k repos on GitHub
 - Pygments supports syntax highlighting for Meson
 - GitHub supports syntax highlighting for Meson
-- See also: (10 related languages)Python, Unix, C, D, Java, Rust, Vala, Visual Studio, CMake, Ninja
-- 15 languages in PLDB linking to Meson: cloc, fetlang, janet, Matplotlib, MongoDB, oopsilon, OpenRC runscript, Pandas, PostgreSQL, Pygments, Racket, RicScript, Scikit-learn, SciPy, Swallow
+- See also: (10 related languages) Python, Unix, C, D, Java, Rust, Vala, Visual Studio, CMake, Ninja
+- 15 PLDB concepts link to Meson: cloc, fetlang, janet, Matplotlib, MongoDB, oopsilon, OpenRC runscript, Pandas, PostgreSQL, Pygments, Racket, RicScript, Scikit-learn, SciPy, Swallow
 
 option(&#39;with-something&#39;, type: &#39;boolean&#39;,
   value: true,

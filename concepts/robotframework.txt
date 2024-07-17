@@ -12,20 +12,16 @@ git clone https://github.com/robotframework/robotframework
 
 Generic automation framework for acceptance testing and RPA
 
-- RobotFramework website
- http://robotframework.org/
-- RobotFramework appears in categories: programming language
+- Tags: programming language
 - RobotFramework is developed on GitHub and has 7,076 stars
-- RobotFramework docs
- https://robotframework.org/robotframework/
 - There are at least 7,602 RobotFramework repos on GitHub
-- RobotFramework first developed in Robot Framework ry
+- Early development of RobotFramework happened in Robot Framework ry
 - RobotFramework is written in RobotFramework, Python, reStructuredText, JavaScript, XML, JSON, YAML, HTML, CSS, XSD, SVG, Make
 - The  Google BigQuery Public Dataset GitHub snapshot shows 447 users using RobotFramework in 515 repos on GitHub
 - Pygments supports syntax highlighting for RobotFramework
 - GitHub supports syntax highlighting for RobotFramework
 - robotframework.org was registered in 2007
-- 3 languages in PLDB linking to RobotFramework: Ace Editor, cloc, RobotFramework
+- 3 PLDB concepts link to RobotFramework: Ace Editor, cloc, RobotFramework
 
 *** Settings ***
 Documentation     Example test case using the gherkin syntax.

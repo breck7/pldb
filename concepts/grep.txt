@@ -10,16 +10,11 @@ grep is an open source programming language created in 1974.
 grep is a command-line utility for searching plain-text data sets for lines that match a regular expression. Its name comes from the ed command g/re/p (globally search a regular expression and print), which has the same effect: doing a global search with the regular expression and printing all matching lines. Grep was originally developed for the Unix operating system, but later available for all Unix-like systems.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Grep
 
-- grep appears in categories: programming language
-- grep Wikipedia page
- https://en.wikipedia.org/wiki/Grep
-- PLDB has 2 documentation sites for grep: www.gnu.org, man7.org
-- grep first developed in AT&T Bell Laboratories
+- Tags: programming language
+- Early development of grep happened in AT&T Bell Laboratories
 - grep on HOPL
  https://hopl.info/showlanguage.prx?exp=2295
-- grep leet sheet
- https://cheatsheets.zip/grep
-- See also: (3 related languages)Unix, Regular Expressions, Perl
+- See also: (3 related languages) Unix, Regular Expressions, Perl
 
 $ grep root /etc/passwd
 root:x:0:0:root:/root:/bin/bash

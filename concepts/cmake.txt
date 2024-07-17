@@ -9,29 +9,23 @@ CMake is an open source application created in 2000.
 
 git clone https://gitlab.kitware.com/cmake/cmake
 
-Try now: Riju
-
 CMake is cross-platform free and open-source software for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries. It is used in conjunction with native build environments such as make, Apple's Xcode, and Microsoft Visual Studio. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CMake
 
-- CMake website
- https://cmake.org/
-- CMake appears in categories: application
-- CMake Wikipedia page
- https://en.wikipedia.org/wiki/CMake
+- Tags: application
 - CMake on GitLab
  https://gitlab.kitware.com/cmake/cmake
-- CMake first developed in Kitware, Inc
+- Early development of CMake happened in Kitware, Inc
 - The  Google BigQuery Public Dataset GitHub snapshot shows 39k users using CMake in 56k repos on GitHub
 - Explore CMake snippets on Rosetta Code
 - CodeMirror package for syntax highlighting CMake
 - Pygments supports syntax highlighting for CMake
 - GitHub supports syntax highlighting for CMake
 - cmake.org was registered in 2001
-- See also: (16 related languages)C, Visual Studio, Eclipse, Linux, Ninja, Unix, Falcon, KiCad Legacy Layout, LLVM IR, MySQL, MariaDB, Qt, Advanced Message Queuing Protocol, ROOT, Meson, QMake
+- See also: (16 related languages) C, Visual Studio, Eclipse, Linux, Ninja, Unix, Falcon, KiCad Legacy Layout, LLVM IR, MySQL, MariaDB, Qt, Advanced Message Queuing Protocol, ROOT, Meson, QMake
 - Read more about CMake on the web: 1.
  https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
-- 165 languages in PLDB linking to CMake: acorn-lang, Adept, Apache Hbase, ArkScript, atomspace, AviSynth, Basis Codec, Bazel, beef-lang, Berry, binaryen, bio, BlitzMax, Boomerang Decompiler, Broccoli, C2, C3, Calc4, Cap'n Proto, chaiscript, Chapel, checked-c, clay, cloc, Cone, Croc, curv, Dale, Dern, egel, Eiffel, elena, emerald-lang, Emojicode, Emscripten, F Prime, Fardlang, Fern, fish, FlatBuffers, Flow9, flua, ForthScript, Frost, GAP, Git, GLMS, GraphIt, gravity, gura, Halide, hashlink, Haxe Library Manager, HHVM, hobbes, Homa, Homebrew, Hook, huginn, HuwCode, HyPhy, Ibis, Idris, ImHex, Impala, invokator, ircis, Jakt, Jank, jeebox, jinx, Jsonnet, Koka, Kotlin, ktexteditor-editor, kumir, Ladybird, latino, Lax, ldpl, Lean, Lesma, lift, Lily, Linux, lobster, loci, Metalang99, MewMew, MicroPython, mimium, MiniZinc, Mojo, MongoDB, MonkeyX, mun-lang, neeilang, Neko, never, NGS, Ninja, Node.js, Nuua, ObjectScript, Om, onnx, ooc, oopsilon, Opal, OpenNN, Open Shading Language, P, Pawn, PAWN, PCRE, Pony, POV-Ray SDL, psyche-c, Pygments, Python, PyTorch, Qore, Racket, React Native, Redis, RetDec, rhine, Rholang, RicScript, Roslyn compiler, Rust, score, Seq, sile, Simit, Simple Binary Encoding, skip, Solidity, Sophie, souper, Squirrel, SWI Prolog, Swift, t2b, Taichi, tamgu, TensorFlow, Terra, Textadept, tiledb, TreeSheets, Triton, UCL, Uno, Vale, Vcpkg, verona, VSXu, WebAssembly, whack, Wonkey, Xgboost, XGBoost, Yet Another Scripting Language, Z-flat
+- 165 PLDB concepts link to CMake: acorn-lang, Adept, Apache Hbase, ArkScript, atomspace, AviSynth, Basis Codec, Bazel, beef-lang, Berry, binaryen, bio, BlitzMax, Boomerang Decompiler, Broccoli, C2, C3, Calc4, Cap'n Proto, chaiscript, Chapel, checked-c, clay, cloc, Cone, Croc, curv, Dale, Dern, egel, Eiffel, elena, emerald-lang, Emojicode, Emscripten, F Prime, Fardlang, Fern, fish, FlatBuffers, Flow9, flua, ForthScript, Frost, GAP, Git, GLMS, GraphIt, gravity, gura, Halide, hashlink, Haxe Library Manager, HHVM, hobbes, Homa, Homebrew, Hook, huginn, HuwCode, HyPhy, Ibis, Idris, ImHex, Impala, invokator, ircis, Jakt, Jank, jeebox, jinx, Jsonnet, Koka, Kotlin, ktexteditor-editor, kumir, Ladybird, latino, Lax, ldpl, Lean, Lesma, lift, Lily, Linux, lobster, loci, Metalang99, MewMew, MicroPython, mimium, MiniZinc, Mojo, MongoDB, MonkeyX, mun-lang, neeilang, Neko, never, NGS, Ninja, Node.js, Nuua, ObjectScript, Om, onnx, ooc, oopsilon, Opal, OpenNN, Open Shading Language, P, Pawn, PAWN, PCRE, Pony, POV-Ray SDL, psyche-c, Pygments, Python, PyTorch, Qore, Racket, React Native, Redis, RetDec, rhine, Rholang, RicScript, Roslyn compiler, Rust, score, Seq, sile, Simit, Simple Binary Encoding, skip, Solidity, Sophie, souper, Squirrel, SWI Prolog, Swift, t2b, Taichi, tamgu, TensorFlow, Terra, Textadept, tiledb, TreeSheets, Triton, UCL, Uno, Vale, Vcpkg, verona, VSXu, WebAssembly, whack, Wonkey, Xgboost, XGBoost, Yet Another Scripting Language, Z-flat
 
 project(default)
 

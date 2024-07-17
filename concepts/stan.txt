@@ -11,20 +11,14 @@ Stan is an open source programming language created in 2012.
 Stan is a probabilistic programming language for statistical inference written in C++. The Stan language is used to specify a (Bayesian) statistical model with an imperative program calculating the log probability density function. Stan is licensed under the New BSD License. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Stan_(software)
 
-- Stan website
- http://mc-stan.org/
-- Stan appears in categories: programming language
-- Stan Wikipedia page
- https://en.wikipedia.org/wiki/Stan_(software)
+- Tags: programming language
 - There are at least 774 Stan repos on GitHub
-- Stan first developed in https://github.com/stan-dev
+- Early development of Stan happened in https://github.com/stan-dev
 - Stan is written in C++
-- Stan on Twitter
- https://twitter.com/mcmc_stan
 - The  Google BigQuery Public Dataset GitHub snapshot shows 134 users using Stan in 154 repos on GitHub
 - Pygments supports syntax highlighting for Stan
 - GitHub supports syntax highlighting for Stan
-- See also: (4 related languages)IA-32, R, MATLAB, Stata
+- See also: (4 related languages) IA-32, R, MATLAB, Stata
 
 data {
   int&lt;lower=0&gt; N;

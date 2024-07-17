@@ -10,11 +10,9 @@ LINQ is a query language created in 2007.
 Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages, although ports exist for PHP (PHPLinq), JavaScript (linq.js), TypeScript (linq.ts), and ActionScript (ActionLinq) - but none of these ports are strictly equivalent to LINQ in C# for example (where it is a part of the language, not an external library, and where it often addresses a wider range of needs). LINQ extends the language by the addition of query expressions, which are akin to SQL statements, and can be used to conveniently extract and process data from arrays, enumerable classes, XML documents, relational databases, and third-party data sources. Other uses, which utilize query expressions as a general framework for readably composing arbitrary computations, include the construction of event handlers or monadic parsers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Language_Integrated_Query
 
-- LINQ appears in categories: queryLanguage
-- LINQ Wikipedia page
- https://en.wikipedia.org/wiki/Language_Integrated_Query
-- LINQ first developed in Microsoft
-- See also: (11 related languages)C#, F#, SQL, Haskell, PHP, JavaScript, TypeScript, ActionScript, XML, Oxygene, Nemerle
+- Tags: queryLanguage
+- Early development of LINQ happened in Microsoft
+- See also: (11 related languages) C#, F#, SQL, Haskell, PHP, JavaScript, TypeScript, ActionScript, XML, Oxygene, Nemerle
 
 [Table(Name=&quot;Customers&quot;)]
 public class Customer

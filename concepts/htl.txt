@@ -12,9 +12,7 @@ git clone https://github.com/observablehq/htl
 
 Inspired by lit-html and HTM, and referencing the fantastically precise HTML5 spec, we built hypertext literal: a tagged template literal for HTML which interpolates values based on context, allowing automatic escaping and the interpolation of non-serializable values, such as event listeners, style objects, and other DOM nodes.
 
-- HTL website
- https://observablehq.com/@observablehq/htl
-- HTL appears in categories: template language, library
+- Tags: template language, library
 - HTL is developed on GitHub
 - HTL is written in HTML, JavaScript, JSON, Markdown, YAML
 

@@ -11,24 +11,15 @@ Kotlin is an open source programming language created in 2011 by Andrey Breslav.
 
 git clone https://github.com/JetBrains/kotlin
 
-Try now: Riju · TIO · Replit
-
 Kotlin is a statically-typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains programmers based in Saint Petersburg, Russia. While the syntax is not compatible with Java, Kotlin is designed to interoperate with Java code and is reliant on Java code from the existing Java Class Library, such as the collections framework. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Kotlin_(programming_language)
 
-- Kotlin website
- https://kotlinlang.org
-- Kotlin appears in categories: programming language
-- Kotlin Wikipedia page
- https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+- Tags: programming language
 - Kotlin is developed on GitHub and has 43,795 stars
 - Watch the history of the Kotlin repo visualized with Gource
-- PLDB has 2 documentation sites for Kotlin: kotlinlang.org, devdocs.io
 - There are at least 901,474 Kotlin repos on GitHub
-- Kotlin first developed in JetBrains
+- Early development of Kotlin happened in JetBrains
 - Kotlin is written in Kotlin, Java, Gradle, XML, JavaScript, C++, JSON, Markdown, Swift, TypeScript, C, Objective-C, Bourne shell, IDL, Objective C++, Protocol Buffers, Ruby, Bash, Groovy, HTML, CSS, YAML, Dockerfile, Diff, Python, Reason, CMake, CSV, AsciiDoc, EJS, TOML, Velocity Template Language, Puppet, LLVM IR, Scala
-- Kotlin on Twitter
- https://twitter.com/kotlin
 - The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Kotlin in 8k repos on GitHub
 - Check out the 138 Kotlin meetup groups on Meetup.com.
 - There are 61,654 members in the Kotlin subreddit
@@ -41,21 +32,15 @@ Kotlin is a statically-typed programming language that runs on the Java virtual 
 - Pygments supports syntax highlighting for Kotlin
 - GitHub supports syntax highlighting for Kotlin
 - There is 1 Jupyter Kernel for Kotlin
-- Release Notes for Kotlin
- https://kotlinlang.org/docs/releases.html
 - Events page for Kotlin
  https://kotlinlang.org/community/events/
-- Frequently Asked Questions for Kotlin
- https://kotlinlang.org/docs/faq.html
-- Kotlin leet sheet
- https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf
 - Indeed.com has 5,276 matches for "kotlin developer".
 - kotlinlang.org was registered in 2013
-- See also: (16 related languages)JVM, Java Bytecode, JavaScript, Java, Scala, Groovy, C#, Gosu, Swift, LLVM IR, Android, Pascal, Perl, Eclipse, Apache Maven, Emacs
+- See also: (16 related languages) JVM, Java Bytecode, JavaScript, Java, Scala, Groovy, C#, Gosu, Swift, LLVM IR, Android, Pascal, Perl, Eclipse, Apache Maven, Emacs
 - Read more about Kotlin on the web: 1. 2.
  https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
  https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/
-- 19 languages in PLDB linking to Kotlin: Ace Editor, Avail, Céu, cloc, FlatBuffers, Gradle, Kotlin, Ladybird, LWJGL, mal, Melody, Moirai, partiql, Project Mentat, Pygments, Python, React Native, Ecstasy, Yakou Lang
+- 19 PLDB concepts link to Kotlin: Ace Editor, Avail, Céu, cloc, FlatBuffers, Gradle, Kotlin, Ladybird, LWJGL, mal, Melody, Moirai, partiql, Project Mentat, Pygments, Python, React Native, Ecstasy, Yakou Lang
 
 // Type your code here, or load an example.
 fun square(num: Int): Int = num * num

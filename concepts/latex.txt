@@ -11,22 +11,15 @@ LaTeX is an open source text markup language created in 1985 by Leslie Lamport.
 LaTeX (IPA: , LAH-tekh, also pronounced as , LAY-tekh, a shortening of Lamport TeX) is a document preparation system. When writing, the writer uses plain text as opposed to the formatted text found in WYSIWYG word processors like Microsoft Word, LibreOffice Writer and Apple Pages. The writer uses markup tagging conventions to define the general structure of a document (such as article, book, and letter), to stylise text throughout a document (such as bold and italics), and to add citations and cross-references. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LaTeX
 
-- LaTeX website
- http://latex-project.org/
-- LaTeX appears in categories: text markup language
-- LaTeX Wikipedia page
- https://en.wikipedia.org/wiki/LaTeX
-- PLDB has 2 documentation sites for LaTeX: www.latex-project.org, devdocs.io
-- LaTeX first developed in https://www.latex-project.org/about/team/
+- Tags: text markup language
+- Early development of LaTeX happened in https://www.latex-project.org/about/team/
 - Explore LaTeX snippets on Rosetta Code
 - LaTeX on HOPL
  https://hopl.info/showlanguage.prx?exp=2157
 - LaTeX LSP implementation
-- LaTeX leet sheet
- https://cheatsheets.zip/latex
 - latex-project.org was registered in 1998
-- See also: (14 related languages)Tex, PDF, XML, CSS, HTML, XeTeX, Solaris, FreeBSD, Linux, PostScript, LyX, Perl, Unix, BibTeX
-- 9 languages in PLDB linking to LaTeX: AsciiMath, Desmos, eqn, Frundis, Knitr, MathJax, sile, Sweave, Typst
+- See also: (14 related languages) Tex, PDF, XML, CSS, HTML, XeTeX, Solaris, FreeBSD, Linux, PostScript, LyX, Perl, Unix, BibTeX
+- 9 PLDB concepts link to LaTeX: AsciiMath, Desmos, eqn, Frundis, Knitr, MathJax, sile, Sweave, Typst
 
 \documentclass{article}
 \begin{document}

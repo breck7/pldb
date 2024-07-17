@@ -12,16 +12,9 @@ ANTLR is an open source grammar language created in 1992 by Terence Parr.
 In computer-based language recognition, ANTLR (pronounced Antler), or Another Tool For Language Recognition, is a parser generator that uses LL(*) for parsing. ANTLR is the successor to the Purdue Compiler Construction Tool Set (PCCTS), first developed in 1989, and is under active development. Its maintainer is Professor Terence Parr of the University of San Francisco.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ANTLR
 
-- ANTLR website
- http://www.antlr.org
-- ANTLR appears in categories: grammarLanguage
-- ANTLR Wikipedia page
- https://en.wikipedia.org/wiki/ANTLR
-- PLDB has 3 documentation sites for ANTLR: www.antlr.org, www.antlr2.org, theantlrguy.atlassian.net
+- Tags: grammarLanguage
 - There are at least 1,415 ANTLR repos on GitHub
-- ANTLR first developed in University of San Francisco
-- ANTLR on Twitter
- https://twitter.com/the_antlr_guy
+- Early development of ANTLR happened in University of San Francisco
 - The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using ANTLR in 3k repos on GitHub
 - Explore ANTLR snippets on Rosetta Code
 - ANTLR on HOPL
@@ -31,8 +24,8 @@ In computer-based language recognition, ANTLR (pronounced Antler), or Another To
 - GitHub supports syntax highlighting for ANTLR
 - Indeed.com has 7 matches for "antlr engineer".
 - antlr.org was registered in 1997
-- See also: (18 related languages)Java, ActionScript, C, C#, JavaScript, Objective-C, Perl, Python, Ruby, Standard ML, Swift, Go, Groovy, Jython, Processing, Coco/R, JavaCC, PEG
-- 5 languages in PLDB linking to ANTLR: lllpg, Megaparsec, Parsers, Scroll, Scroll Notation
+- See also: (18 related languages) Java, ActionScript, C, C#, JavaScript, Objective-C, Perl, Python, Ruby, Standard ML, Swift, Go, Groovy, Jython, Processing, Coco/R, JavaCC, PEG
+- 5 PLDB concepts link to ANTLR: lllpg, Megaparsec, Parsers, Scroll, Scroll Notation
 
 /** Taken from &quot;The Definitive ANTLR 4 Reference&quot; by Terence Parr */
 // Derived from http://json.org

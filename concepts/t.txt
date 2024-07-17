@@ -10,12 +10,10 @@ T is a programming language created in 1980.
 The T programming language is a dialect of the Scheme programming language developed in the early 1980s by Jonathan A. Rees, Kent M. Pitman, and Norman I. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/T_(programming_language)
 
-- T appears in categories: programming language
-- T Wikipedia page
- https://en.wikipedia.org/wiki/T_(programming_language)
+- Tags: programming language
 - T on HOPL
  https://hopl.info/showlanguage.prx?exp=1019
-- See also: (5 related languages)Scheme, EuLisp, Joule, C, Common Lisp
+- See also: (5 related languages) Scheme, EuLisp, Joule, C, Common Lisp
 
 (define-predicate pair?)
  (define-settable-operation (car pair))

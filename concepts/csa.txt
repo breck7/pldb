@@ -7,11 +7,11 @@ CodeStudAssembler is an assembly language created in 2017.
 #3082 on PLDB
 7 Years Old
 
-- CodeStudAssembler appears in categories: assembly language
-- CodeStudAssembler first developed in https://github.com/v8
+- Tags: assembly language
+- Early development of CodeStudAssembler happened in https://github.com/v8
 - Read more about CodeStudAssembler on the web: 1.
  https://v8.dev/blog/csa
-- 1 languages in PLDB linking to CodeStudAssembler: v8torque
+- 1 PLDB concepts link to CodeStudAssembler: v8torque
 
   test al,0x1
   jz not_string

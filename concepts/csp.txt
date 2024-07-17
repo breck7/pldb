@@ -10,15 +10,11 @@ CSP, aka Communicating Sequential Processes, is a programming language created i
 In computer science, communicating sequential processes (CSP) is a formal language for describing patterns of interaction in concurrent systems. It is a member of the family of mathematical theories of concurrency known as process algebras, or process calculi, based on message passing via channels. CSP was highly influential in the design of the occam programming language, and also influenced the design of programming languages such as Limbo, RaftLib, Go, Crystal, and Clojure's core.async. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Communicating_sequential_processes
 
-- CSP appears in categories: programming language
-- CSP Wikipedia page
- https://en.wikipedia.org/wiki/Communicating_sequential_processes
-- CSP docs
- https://aiochan.readthedocs.io/en/latest/csp.html
-- CSP first developed in Oxford University
+- Tags: programming language
+- Early development of CSP happened in Oxford University
 - CSP on HOPL
  https://hopl.info/showlanguage.prx?exp=795
 - Monaco package for syntax highlighting CSP
-- See also: (6 related languages)Occam, Limbo, Go, Crystal, Clojure, Ada
+- See also: (6 related languages) Occam, Limbo, Go, Crystal, Clojure, Ada
 
 COPY = *[c:character; west?c → east!c]

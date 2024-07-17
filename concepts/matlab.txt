@@ -12,19 +12,9 @@ MATLAB is a programming language created in 1984 by Cleve Moler.
 MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python. Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the MuPAD symbolic engine, allowing access to symbolic computing abilities. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MATLAB
 
-- MATLAB website
- http://mathworks.com/products/matlab
-- MATLAB appears in categories: programming language
-- MATLAB Wikipedia page
- https://en.wikipedia.org/wiki/MATLAB
-- MATLAB docs
- https://www.mathworks.com/help/matlab/
-- MATLAB mailing list
- https://lists.rothamsted.ac.uk/mailman/listinfo/matlab-users
+- Tags: programming language
 - There are at least 311,901 MATLAB repos on GitHub
-- MATLAB first developed in University of New Mexico
-- MATLAB on Twitter
- https://twitter.com/matlab
+- Early development of MATLAB happened in University of New Mexico
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using MATLAB in 3k repos on GitHub
 - Check out the 25 MATLAB meetup groups on Meetup.com.
 - There are 46,296 members in the MATLAB subreddit
@@ -38,19 +28,11 @@ MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. 
 - GitHub supports syntax highlighting for MATLAB
 - PLDB has 2 Jupyter Kernels for MATLAB: github.com, github.com
 - There is a central package repository for MATLAB
-- Release Notes for MATLAB
- https://www.mathworks.com/help/matlab/release-notes.html
-- Official Blog page for MATLAB
- https://blogs.mathworks.com/matlab/
 - Events page for MATLAB
  https://www.mathworks.com/company/events.html
-- Frequently Asked Questions for MATLAB
- https://www.mathworks.com/matlabcentral/answers/faqs
-- MATLAB leet sheet
- https://cheatsheets.zip/matlab
 - Indeed.com has 6,204 matches for "matlab engineer".
-- See also: (40 related languages)MATHLAB, C, Java, Linux, IA-32, APL, PL/0, Speakeasy, Julia, GNU Octave, Scilab, C#, Fortran, Python, muPad, Simulink, R, Perl, XML, SQL, Maple, Mathematica, IDL, Sage, S, Perl Data Language, NumPy, SciPy, Matplotlib, Lua, Ruby, JavaScript, JVM, Hierarchical Data Format, PowerPC, Solaris, SPARC, Subversion, JSON, ISBN
-- 15 languages in PLDB linking to MATLAB: badlanguage, cloc, eff, Eiffel, Go, invokator, Iterm2, JSL, Linux, mal, mathics, NCAR Command Language, SciPy, Simit, Swift
+- See also: (40 related languages) MATHLAB, C, Java, Linux, IA-32, APL, PL/0, Speakeasy, Julia, GNU Octave, Scilab, C#, Fortran, Python, muPad, Simulink, R, Perl, XML, SQL, Maple, Mathematica, IDL, Sage, S, Perl Data Language, NumPy, SciPy, Matplotlib, Lua, Ruby, JavaScript, JVM, Hierarchical Data Format, PowerPC, Solaris, SPARC, Subversion, JSON, ISBN
+- 15 PLDB concepts link to MATLAB: badlanguage, cloc, eff, Eiffel, Go, invokator, Iterm2, JSL, Linux, mal, mathics, NCAR Command Language, SciPy, Simit, Swift
 
 disp(&#39;Hello World&#39;)
 

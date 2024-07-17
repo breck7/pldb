@@ -11,32 +11,20 @@ PureScript is an open source programming language created in 2013 by Phil Freema
 
 git clone https://github.com/purescript/purescript
 
-Try now: TIO
-
 A strongly-typed language that compiles to JavaScript
 
-- PureScript website
- http://functorial.com/purescript
-- PureScript appears in categories: programming language
-- PureScript Wikipedia page
- https://en.wikipedia.org/wiki/PureScript
+- Tags: programming language
 - PureScript is developed on GitHub and has 7,813 stars
-- PureScript docs
- https://github.com/purescript/documentation
 - There are at least 5,443 PureScript repos on GitHub
 - PureScript compiles to JavaScript
 - PureScript is written in PureScript, Haskell, JavaScript, Markdown, JSON, Bourne shell, YAML, CSS, Less, Yacc, Make, Dhall, XML
-- PureScript on Twitter
- https://twitter.com/purescript
 - The  Google BigQuery Public Dataset GitHub snapshot shows 382 users using PureScript in 826 repos on GitHub
 - There are 4 Project Euler users using PureScript
 - PureScript LSP implementation
 - GitHub supports syntax highlighting for PureScript
 - There is 1 Jupyter Kernel for PureScript
 - There is a central package repository for PureScript
-- Release Notes for PureScript
- https://github.com/purescript/purescript/releases
-- 4 languages in PLDB linking to PureScript: mal, nulan, PureScript, Reason
+- 4 PLDB concepts link to PureScript: mal, nulan, PureScript, Reason
 
 import Prelude
 import Effect.Console (log)

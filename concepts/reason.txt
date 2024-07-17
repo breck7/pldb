@@ -10,18 +10,12 @@ Reason is an open source programming language created in 2016.
 
 git clone https://github.com/facebook/reason
 
-Try now: Riju · TIO
-
 Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
 
-- Reason website
- https://reasonml.github.io/
-- Reason appears in categories: programming language
+- Tags: programming language
 - Reason is developed on GitHub and has 9,670 stars
-- Reason docs
- https://reasonml.github.io/docs/en/what-and-why
 - There are at least 1,924 Reason repos on GitHub
-- Reason first developed in Facebook
+- Early development of Reason happened in Facebook
 - Reason compiles to OCaml
 - Reason is written in OCaml, Reason, Markdown, JSON, Bourne shell, Diff, Make, JavaScript, YAML, Nix, HTML, Bash
 - The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Reason in 24 repos on GitHub
@@ -30,10 +24,8 @@ Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
 - Reason LSP implementation
 - Pygments supports syntax highlighting for Reason
 - GitHub supports syntax highlighting for Reason
-- Official Blog page for Reason
- https://reasonml.github.io/blog/
-- See also: (7 related languages)Rust, Elm, PureScript, Fable, ClojureScript, Swift, Haxe
-- 12 languages in PLDB linking to Reason: Caramel, cloc, hazel, Kotlin, Ligo, MongoDB, PHP, Pygments, Reason, Reia, Sophia, xodio
+- See also: (7 related languages) Rust, Elm, PureScript, Fable, ClojureScript, Swift, Haxe
+- 12 PLDB concepts link to Reason: Caramel, cloc, hazel, Kotlin, Ligo, MongoDB, PHP, Pygments, Reason, Reia, Sophia, xodio
 
 type schoolPerson = Teacher | Director | Student(string);
 

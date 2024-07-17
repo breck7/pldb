@@ -10,14 +10,10 @@ GOLD is a grammar language created in 2012.
 GOLD is a free parsing system that is designed to support multiple programming languages.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GOLD_(parser)
 
-- GOLD website
- http://goldparser.org/
-- GOLD appears in categories: grammarLanguage
-- GOLD Wikipedia page
- https://en.wikipedia.org/wiki/GOLD_(parser)
-- GOLD first developed in California State University, Sacramento
+- Tags: grammarLanguage
+- Early development of GOLD happened in California State University, Sacramento
 - goldparser.org was registered in 2011
-- See also: (10 related languages)ANTLR, Visual Basic, Assembly language, C#, D, Java, Pascal, Python, Visual Basic .NET, Regular Expressions
+- See also: (10 related languages) ANTLR, Visual Basic, Assembly language, C#, D, Java, Pascal, Python, Visual Basic .NET, Regular Expressions
 
 &lt;Statement&gt; ::= if &lt;Expression&gt; then &lt;Statements&gt; end
             |  while &lt;Expression&gt; do &lt;Statements&gt; end

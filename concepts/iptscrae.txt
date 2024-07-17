@@ -10,11 +10,9 @@ IPTSCRAE is a programming language created in 1994.
 Iptscrae is a stack-oriented scripting language used to give additional functionality to The Palace software and servers. Its name comes from the pronunciation of "script" in Pig Latin. [1] The language was created by Jim Bumgardner, who in turn was inspired by Forth, another stack-based language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IPTSCRAE
 
-- IPTSCRAE appears in categories: programming language
-- IPTSCRAE Wikipedia page
- https://en.wikipedia.org/wiki/IPTSCRAE
-- IPTSCRAE first developed in Warner New Media
+- Tags: programming language
+- Early development of IPTSCRAE happened in Warner New Media
 - Explore IPTSCRAE snippets on Rosetta Code
-- See also: (4 related languages)Forth, JavaScript, Java, HTML
+- See also: (4 related languages) Forth, JavaScript, Java, HTML
 
 /&quot;&quot;s={n++{{&quot; &quot;n itoa&amp;}{&quot; buzz&quot;}n 5%ifelse}{&quot; fizz&quot;}n 3%ifelse s+=}{101n&gt;}while s logmsg

@@ -10,16 +10,12 @@ Pizza is a programming language created in 2001.
 Pizza is an open-source superset of Java 1.4, prior to the introduction of generics for the Java programming language.  In addition to its own solution for adding generics to the language, Pizza also added function pointers and algebraic types with case classes and pattern matching. In August 2001, the developers made a compiler capable of working with Java. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Pizza_(programming_language)
 
-- Pizza website
- https://pizzacompiler.sourceforge.net
-- Pizza appears in categories: programming language
-- Pizza Wikipedia page
- https://en.wikipedia.org/wiki/Pizza_(programming_language)
+- Tags: programming language
 - Pizza is a superset of Java
-- Pizza first developed in https://sourceforge.net/p/pizzacompiler/_list/tickets
+- Early development of Pizza happened in https://sourceforge.net/p/pizzacompiler/_list/tickets
 - Pizza on HOPL
  https://hopl.info/showlanguage.prx?exp=2376
-- See also: (1 related languages)Java
+- See also: (1 related languages) Java
 
 class HelloWorld {
   public static void main(String[] args) {

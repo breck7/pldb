@@ -12,11 +12,11 @@ git clone https://github.com/openai/triton
 
 This is the development repository of Triton, a language and compiler for writing highly efficient custom Deep-Learning primitives. The aim of Triton is to provide an open-source environment to write fast code at higher productivity than CUDA, but also with higher flexibility than other existing DSLs.
 
-- Triton appears in categories: programming language
+- Tags: programming language
 - Triton is developed on GitHub and has 3,881 stars
-- Triton first developed in OpenAI
+- Early development of Triton happened in OpenAI
 - Triton is written in C++, Python, CMake, Markdown, YAML, reStructuredText, Bourne shell, C, Dockerfile, SVG, TOML, JSON, HTML, LLVM IR, Make
-- See also: (1 related languages)Numba
+- See also: (1 related languages) Numba
 - Read more about Triton on the web: 1.
  https://openai.com/blog/triton/
 

@@ -11,15 +11,11 @@ C-- is a programming language created in 1997 by Simon Peyton Jones.
 C-- (pronounced cee minus minus) is a C-like programming language. Its creators, functional programming researchers Simon Peyton Jones and Norman Ramsey, designed it to be generated mainly by compilers for very high-level languages rather than written by human programmers. Unlike many other intermediate languages, its representation is plain ASCII text, not bytecode or another binary format.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/C--
 
-- C-- website
- http://www.cs.tufts.edu/~nr/c--/index.html
-- C-- appears in categories: programming language
-- C-- Wikipedia page
- https://en.wikipedia.org/wiki/C--
-- C-- first developed in Tufts University
+- Tags: programming language
+- Early development of C-- happened in Tufts University
 - C-- on HOPL
  https://hopl.info/showlanguage.prx?exp=3733
-- See also: (6 related languages)C, ASCII, Assembly language, Modula-3, BCPL, LLVM IR
+- See also: (6 related languages) C, ASCII, Assembly language, Modula-3, BCPL, LLVM IR
 
 target byteorder little;
 import puts;

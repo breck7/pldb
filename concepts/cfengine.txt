@@ -10,16 +10,10 @@ CFEngine is an open source application created in 1993.
 CFEngine is an open source configuration management system, written by Mark Burgess. Its primary function is to provide automated configuration and maintenance of large-scale computer systems, including the unified management of servers, desktops, consumer and industrial devices, embedded networked devices, mobile smartphones, and tablet computers.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CFEngine
 
-- CFEngine website
- https://cfengine.com
-- CFEngine appears in categories: application
-- CFEngine Wikipedia page
- https://en.wikipedia.org/wiki/CFEngine
-- CFEngine first developed in Oslo University
-- CFEngine on Twitter
- https://twitter.com/cfengine
+- Tags: application
+- Early development of CFEngine happened in Oslo University
 - cfengine.com was registered in 2001
-- See also: (3 related languages)Linux, Solaris, Puppet
+- See also: (3 related languages) Linux, Solaris, Puppet
 
 #!/var/cfengine/bin/cf-agent --no-lock
 body common control

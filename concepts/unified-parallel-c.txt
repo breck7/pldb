@@ -11,14 +11,10 @@ UPC is a programming language created in 2003.
 Unified Parallel C (UPC) is an extension of the C programming language designed for high-performance computing on large-scale parallel machines, including those with a common global address space (SMP and NUMA) and those with distributed memory (e.g. clusters). The programmer is presented with a single shared, partitioned address space, where variables may be directly read and written by any processor, but each variable is physically associated with a single processor. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Unified_Parallel_C
 
-- UPC website
- http://upc.lbl.gov/
-- UPC appears in categories: programming language
-- UPC Wikipedia page
- https://en.wikipedia.org/wiki/Unified_Parallel_C
+- Tags: programming language
 - There are at least 16,668 UPC repos on GitHub
-- UPC first developed in UPC Consortium
+- Early development of UPC happened in UPC Consortium
 - UPC on HOPL
  https://hopl.info/showlanguage.prx?exp=6133
 - GitHub supports syntax highlighting for UPC
-- See also: (5 related languages)C, Split-C, CIL, Chapel, X10
+- See also: (5 related languages) C, Split-C, CIL, Chapel, X10

@@ -9,9 +9,5 @@ root-format is a binary data format created in 1994.
 
 ROOT provides a file format that is a machine-independent compressed binary format, including both the data and its description, and provides an open-source automated tool to generate the data description (or "dictionary") when saving data, and to generate C++ classes corresponding to this description when reading back the data.
 
-- root-format website
- https://root.cern.ch/input-and-output
-- root-format appears in categories: binaryDataFormat
-- root-format Wikipedia page
- https://en.wikipedia.org/wiki/ROOT
-- root-format first developed in Conseil Européen pour la Recherche Nucléaire
+- Tags: binaryDataFormat
+- Early development of root-format happened in Conseil Européen pour la Recherche Nucléaire

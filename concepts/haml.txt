@@ -11,21 +11,13 @@ HAML, aka HTML Abstraction Markup Language, is an open source template language 
 
 git clone https://github.com/haml/haml
 
-Try now: Web
-
 Haml (HTML Abstraction Markup Language) is a templating system that is designed to avoid writing inline code in a web document and make the HTML easy and clean. Haml gives the flexibility to have some dynamic content in HTML. Similar to other web languages like PHP, ASP, JSP and template systems like eRuby, Haml also embeds some code that gets executed during runtime and generates HTML code in order to provide some dynamic content. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Haml
 
-- HAML website
- http://haml.info/
-- HAML appears in categories: template language
-- HAML Wikipedia page
- https://en.wikipedia.org/wiki/Haml
+- Tags: template language
 - HAML is developed on GitHub and has 3,653 stars
-- HAML docs
- https://haml.info/docs.html
 - There are at least 323 HAML repos on GitHub
-- HAML first developed in Unspace Interactive
+- Early development of HAML happened in Unspace Interactive
 - HAML is written in Ruby, HAML, XHTML, ERB, Markdown, YAML, Bash, Logos, Slim
 - The  Google BigQuery Public Dataset GitHub snapshot shows 390 users using HAML in 465 repos on GitHub
 - There are 467 members in the HAML subreddit
@@ -33,8 +25,8 @@ Haml (HTML Abstraction Markup Language) is a templating system that is designed 
 - Pygments supports syntax highlighting for HAML
 - GitHub supports syntax highlighting for HAML
 - haml.info was registered in 2012
-- See also: (14 related languages)Ruby, HTML, PHP, ASP, JSP, ERB, ASCII, UTF-8, Ruby on Rails, CSS, BBCode, YAML, Sass, WML
-- 9 languages in PLDB linking to HAML: Ace Editor, cloc, CSVw, HAML, Mastodon, Scroll, Scroll Notation, Speedie, txtzyme
+- See also: (14 related languages) Ruby, HTML, PHP, ASP, JSP, ERB, ASCII, UTF-8, Ruby on Rails, CSS, BBCode, YAML, Sass, WML
+- 9 PLDB concepts link to HAML: Ace Editor, cloc, CSVw, HAML, Mastodon, Scroll, Scroll Notation, Speedie, txtzyme
 
 %section.container
  %h1= post.title

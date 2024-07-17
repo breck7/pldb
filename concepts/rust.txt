@@ -11,24 +11,15 @@ Rust is an open source programming language created in 2010 by Graydon Hoare.
 
 git clone https://github.com/rust-lang/rust
 
-Try now: Riju · TIO · Replit
-
 Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Rust_(programming_language)
 
-- Rust website
- https://www.rust-lang.org
-- Rust appears in categories: programming language
-- Rust Wikipedia page
- https://en.wikipedia.org/wiki/Rust_(programming_language)
+- Tags: programming language
 - Rust is developed on GitHub and has 77,242 stars
 - Watch the history of the Rust repo visualized with Gource
-- PLDB has 2 documentation sites for Rust: www.rust-lang.org, devdocs.io
 - There are at least 356,891 Rust repos on GitHub
-- Rust first developed in Mozilla
+- Early development of Rust happened in Mozilla
 - Rust is written in Rust, Markdown, Diff, TOML, Make, YAML, JavaScript, Bourne shell, HTML, C, Dockerfile, JSON, Python, TypeScript, Puppet, XML, C++, SVG, CSS, Assembly language, AsciiDoc, PowerShell, XSLT, Z shell, CMake, WebAssembly, Logos, Bash, D
-- Rust on Twitter
- https://twitter.com/rustlang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Rust in 16k repos on GitHub
 - Check out the 122 Rust meetup groups on Meetup.com.
 - There are 186,942 members in the Rust subreddit
@@ -47,18 +38,12 @@ Rust is a systems programming language sponsored by Mozilla Research, which desc
 - Rust appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Rust
 - There is a central package repository for Rust
-- Official Blog page for Rust
- https://blog.rust-lang.org/
-- Frequently Asked Questions for Rust
- https://prev.rust-lang.org/en-US/faq.html
-- Rust leet sheet
- https://cheatsheets.zip/rust
 - Indeed.com has 141 matches for "rust engineer".
 - rust-lang.org was registered in 2010
-- See also: (28 related languages)Linux, FreeBSD, Android, iOS, ALEF, C#, Cyclone, Erlang, Haskell, Haxe, Limbo, Newsqueak, Ruby, Scheme, Standard ML, Swift, Crystal, Elm, Idris, C, ML, Go, Java, OCaml, LLVM IR, D, Nim, Emacs
+- See also: (28 related languages) Linux, FreeBSD, Android, iOS, ALEF, C#, Cyclone, Erlang, Haskell, Haxe, Limbo, Newsqueak, Ruby, Scheme, Standard ML, Swift, Crystal, Elm, Idris, C, ML, Go, Java, OCaml, LLVM IR, D, Nim, Emacs
 - Read more about Rust on the web: 1.
  https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html
-- 95 languages in PLDB linking to Rust: Ace Editor, Alumina, Amber, Ante, Ante, aretext, arret, astro, Bend, BlazeX, Calypso, Candy, carth, Chapel, cosh, Cotton, crush, Curly, Cyber, cytosol, Dafny, datafun, Deno, Differential Datalog, edgedb, Enso, erg, Esoteric Reaction, Factor, fish, FlatBuffers, gleam, Glicol, gluon, hacspec, HHVM, hurl, Hush, inko, invokator, Jazz, Jingo, jsparagus, Jule, Kami, KavaScript, leo-editor, Linux, Luna, mal, Markus, Mech, Melody, Mewl, micro-mitten, mlatu, MongoDB, mun-lang, Node.js, noulith, Nushell, Observable Framework, Passerine, pikelet, Pomsky, Project Mentat, PRQL, Pygments, Reason, rio, Roc, Ron, Ruby, Rust, Serious, Simple Binary Encoding, Snowball, svgbob, tablam, Tao, tsar, UCG, Uiua, unseemly, Uniform eXchange Format, Veryl, wasmer, weebasic, Wing, WLambda, Worst, Wu, xlwings-editor, xsv-app, zz
+- 95 PLDB concepts link to Rust: Ace Editor, Alumina, Amber, Ante, Ante, aretext, arret, astro, Bend, BlazeX, Calypso, Candy, carth, Chapel, cosh, Cotton, crush, Curly, Cyber, cytosol, Dafny, datafun, Deno, Differential Datalog, edgedb, Enso, erg, Esoteric Reaction, Factor, fish, FlatBuffers, gleam, Glicol, gluon, hacspec, HHVM, hurl, Hush, inko, invokator, Jazz, Jingo, jsparagus, Jule, Kami, KavaScript, leo-editor, Linux, Luna, mal, Markus, Mech, Melody, Mewl, micro-mitten, mlatu, MongoDB, mun-lang, Node.js, noulith, Nushell, Observable Framework, Passerine, pikelet, Pomsky, Project Mentat, PRQL, Pygments, Reason, rio, Roc, Ron, Ruby, Rust, Serious, Simple Binary Encoding, Snowball, svgbob, tablam, Tao, tsar, UCG, Uiua, unseemly, Uniform eXchange Format, Veryl, wasmer, weebasic, Wing, WLambda, Worst, Wu, xlwings-editor, xsv-app, zz
 
 // Type your code here, or load an example.
 pub fn square(num: i32) -&gt; i32 {

@@ -10,11 +10,7 @@ General-purpose macro processor is a grammar language created in 1995.
 A general-purpose macro processor or general purpose preprocessor is a macro processor that is not tied to or integrated with a particular language or piece of software. A macro processor is a program that copies a stream of text from one place to another, making a systematic set of replacements as it does so. Macro processors are often embedded in other programs, such as assemblers and compilers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/General-purpose_macro_processor
 
-- General-purpose macro processor website
- http://gema.sourceforge.net/new/index.shtml
-- General-purpose macro processor appears in categories: grammarLanguage
-- General-purpose macro processor Wikipedia page
- https://en.wikipedia.org/wiki/General-purpose_macro_processor
-- General-purpose macro processor first developed in https://sourceforge.net/p/gema/mailman/
+- Tags: grammarLanguage
+- Early development of General-purpose macro processor happened in https://sourceforge.net/p/gema/mailman/
 
 gema -match -p &#39;Title\:*\n=$0@end&#39; foo

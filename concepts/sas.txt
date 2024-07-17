@@ -12,17 +12,9 @@ SAS, aka Statistical Analysis System, is a programming language created in 1976 
 The SAS language is a computer programming language used for statistical analysis, created by Anthony James Barr at North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as RTF, HTML and PDF documents. The SAS language runs under compilers that can be used on Microsoft Windows, Linux, and various other UNIX and  mainframe computers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SAS_language
 
-- SAS website
- https://www.sas.com
-- SAS appears in categories: programming language
-- SAS Wikipedia page
- https://en.wikipedia.org/wiki/SAS_language
-- SAS docs
- https://support.sas.com/en/documentation.html
+- Tags: programming language
 - There are at least 8,407 SAS repos on GitHub
-- SAS first developed in North Carolina State University
-- SAS on Twitter
- https://twitter.com/sassoftware
+- Early development of SAS happened in North Carolina State University
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using SAS in 1k repos on GitHub
 - There are 7,963 members in the SAS subreddit
 - There are 54 Project Euler users using SAS
@@ -33,14 +25,10 @@ The SAS language is a computer programming language used for statistical analysi
 - Pygments supports syntax highlighting for SAS
 - GitHub supports syntax highlighting for SAS
 - There is 1 Jupyter Kernel for SAS
-- Release Notes for SAS
- https://support.sas.com/software/updates/index.html
-- Frequently Asked Questions for SAS
- https://www.sas.com/en_us/certification/faq.html
 - Indeed.com has 1,160 matches for "sas programmer".
 - sas.com was registered in 1990
-- See also: (2 related languages)HTML, Linux
-- 10 languages in PLDB linking to SAS: Bazel, beef-lang, Eiffel, Flow9, GAP, HHVM, JSL, POV-Ray SDL, Racket, Tea
+- See also: (2 related languages) HTML, Linux
+- 10 PLDB concepts link to SAS: Bazel, beef-lang, Eiffel, Flow9, GAP, HHVM, JSL, POV-Ray SDL, Racket, Tea
 
 %macro putit( string= );
      %put &amp;string;

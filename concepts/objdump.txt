@@ -10,13 +10,11 @@ ObjDump is an application created in 1991.
 objdump is a program for displaying various information about object files on Unix-like systems. For instance, it can be used as a disassembler to view an executable in assembly form. It is part of the GNU Binutils for fine-grained control over executables and other binary data. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/objdump
 
-- ObjDump appears in categories: application
-- ObjDump Wikipedia page
- https://en.wikipedia.org/wiki/objdump
-- ObjDump first developed in Cygnus Solutions
+- Tags: application
+- Early development of ObjDump happened in Cygnus Solutions
 - Pygments supports syntax highlighting for ObjDump
 - GitHub supports syntax highlighting for ObjDump
-- See also: (1 related languages)Unix
+- See also: (1 related languages) Unix
 
 4004ed:	55                   	push   rbp
   4004ee:	48 89 e5             	mov    rbp,rsp

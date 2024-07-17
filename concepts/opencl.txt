@@ -11,26 +11,16 @@ OpenCL is an open source programming language created in 2009.
 Open Computing Language (OpenCL) is a framework for writing programs that execute across heterogeneous platforms consisting of central processing units (CPUs), graphics processing units (GPUs), digital signal processors (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware accelerators. OpenCL specifies programming languages (based on C99 and C++11) for programming these devices and application programming interfaces (APIs) to control the platform and execute programs on the compute devices. OpenCL provides a standard interface for parallel computing using task- and data-based parallelism. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/OpenCL
 
-- OpenCL website
- https://www.khronos.org/opencl
-- OpenCL appears in categories: programming language
-- OpenCL Wikipedia page
- https://en.wikipedia.org/wiki/OpenCL
-- OpenCL docs
- https://www.khronos.org/opencl/
+- Tags: programming language
 - There are at least 0 OpenCL repos on GitHub
-- OpenCL first developed in Khronos Group
+- Early development of OpenCL happened in Khronos Group
 - Check out the 37 OpenCL meetup groups on Meetup.com.
 - OpenCL is supported by the GDB
 - OpenCL appears in the TIOBE Index
 - GitHub supports syntax highlighting for OpenCL
-- Release Notes for OpenCL
- https://www.khronos.org/opencl/
-- Official Blog page for OpenCL
- https://opencl.org/blog/
 - Indeed.com has 266 matches for "opencl engineer".
-- See also: (17 related languages)OpenGL, Android, FreeBSD, Linux, IA-32, CUDA, C, Python, Java, LLVM IR, Mathematica, JavaScript, ARM, X86, PTX, Metal, SequenceL
-- 8 languages in PLDB linking to OpenCL: Basis Codec, Charcoal, Emscripten, FFmpeg, Futhark, HHVM, HyPhy, LWJGL
+- See also: (17 related languages) OpenGL, Android, FreeBSD, Linux, IA-32, CUDA, C, Python, Java, LLVM IR, Mathematica, JavaScript, ARM, X86, PTX, Metal, SequenceL
+- 8 PLDB concepts link to OpenCL: Basis Codec, Charcoal, Emscripten, FFmpeg, Futhark, HHVM, HyPhy, LWJGL
 
 /* Old-style comment. */
 

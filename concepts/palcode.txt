@@ -10,10 +10,8 @@ PALcode is an instruction set architecture created in 1996.
 In computing, in the Alpha instruction set architecture, PALcode (Privileged Architecture Library code) is the name used by DEC for a set of functions in the SRM or AlphaBIOS firmware, providing a hardware abstraction layer for system software, covering features such as cache management, translation lookaside buffer (TLB) miss handling, interrupt handling and exception handling. PALcode is Alpha machine code, running in a special mode that also allows access to internal registers specific to the particular Alpha processor implementation. It is thus somewhere between the role of microcode and of a hardware emulator. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PALcode
 
-- PALcode appears in categories: instruction set architecture
-- PALcode Wikipedia page
- https://en.wikipedia.org/wiki/PALcode
-- PALcode first developed in Digital Equipment Corporation
-- See also: (2 related languages)FreeBSD, Linux
+- Tags: instruction set architecture
+- Early development of PALcode happened in Digital Equipment Corporation
+- See also: (2 related languages) FreeBSD, Linux
 - Read more about PALcode on the web: 1.
  http://www.science.unitn.it/~fiorella/guidelinux/tlk/node140.html

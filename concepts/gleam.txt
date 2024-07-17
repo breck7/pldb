@@ -13,15 +13,13 @@ git clone https://github.com/lpil/gleam
 
 Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
 
-- gleam website
- https://gleam.run/
-- gleam appears in categories: programming language
+- Tags: programming language
 - gleam is developed on GitHub and has 3,973 stars
 - There are at least 104 gleam repos on GitHub
-- gleam first developed in https://github.com/gleam-lang
+- Early development of gleam happened in https://github.com/gleam-lang
 - gleam is written in Rust, gleam, TOML, Markdown, JavaScript, Dockerfile, Erlang, Make, YAML, Bourne shell, CSS, HTML, Elixir, PowerShell, JSON, TypeScript
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2 users using gleam in 2 repos on GitHub
 - gleam.run was registered in 2019
 - Read more about gleam on the web: 1.
  https://news.ycombinator.com/item?id=22902462
-- 2 languages in PLDB linking to gleam: cloc, gleam
+- 2 PLDB concepts link to gleam: cloc, gleam

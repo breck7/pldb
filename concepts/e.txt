@@ -12,19 +12,15 @@ E is an open source programming language created in 1997 by Mark S. Miller.
 E is an object-oriented programming language for secure distributed computing, created by Mark S. Miller, Dan Bornstein, and others at Electric Communities in 1997.  E is mainly descended from the concurrent language Joule and from Original-E, a set of extensions to Java for secure distributed programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/E_(programming_language)
 
-- E website
- http://erights.org/
-- E appears in categories: programming language
-- E Wikipedia page
- https://en.wikipedia.org/wiki/E_(programming_language)
+- Tags: programming language
 - There are at least 354 E repos on GitHub
-- E first developed in Combex, Inc.
+- Early development of E happened in Combex, Inc.
 - The  Google BigQuery Public Dataset GitHub snapshot shows 291 users using E in 304 repos on GitHub
 - Explore E snippets on Rosetta Code
 - E on HOPL
  https://hopl.info/showlanguage.prx?exp=1990
 - erights.org was registered in 1998
-- See also: (5 related languages)GNU E, Joule, Java, Python, Pascal
+- See also: (5 related languages) GNU E, Joule, Java, Python, Pascal
 
 def factorial(n :int) :int {
   if (n == 1) {

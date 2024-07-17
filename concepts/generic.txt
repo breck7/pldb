@@ -9,7 +9,7 @@ GCC GENERIC is an intermediate representation language created in 2003.
 
 The purpose of GENERIC is simply to provide a language-independent way of representing an entire function in trees. To this end, it was necessary to add a few new tree codes to the backend, but most everything was already there. If you can say it with the codes in gcc/tree.def, it’s GENERIC.
 
-- GCC GENERIC appears in categories: intermediate representation language
-- GCC GENERIC first developed in Red Hat, Inc
+- Tags: intermediate representation language
+- Early development of GCC GENERIC happened in Red Hat, Inc
 - Read more about GCC GENERIC on the web: 1.
  ftp://gcc.gnu.org/pub/gcc/summit/2003/GENERIC%20and%20GIMPLE.pdf 1.

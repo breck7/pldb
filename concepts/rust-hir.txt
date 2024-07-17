@@ -7,12 +7,10 @@ Rust HIR, aka Rust High-level Intermediate Representation, is an intermediate re
 #2455 on PLDB
 9 Years Old
 
-Try now: Web
-
-- Rust HIR appears in categories: intermediate representation language
-- Rust HIR first developed in https://github.com/rust-lang/rfcs/issues
+- Tags: intermediate representation language
+- Early development of Rust HIR happened in https://github.com/rust-lang/rfcs/issues
 - First announcement of Rust HIR
-- See also: (2 related languages)Rust MIR, SIL
+- See also: (2 related languages) Rust MIR, SIL
 
 #[prelude_import]
 use ::std::prelude::rust_2015::*;

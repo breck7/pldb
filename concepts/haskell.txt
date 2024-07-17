@@ -10,23 +10,12 @@ Haskell is an open source programming language created in 1990 by Paul Hudak and
 34 Years Old
 127k Repos
 
-Try now: Riju · TIO · Replit
-
 Haskell  is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing. It is named after logician Haskell Curry. The latest standard of Haskell is Haskell 2010. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Haskell_(programming_language)
 
-- Haskell website
- https://www.haskell.org
-- Haskell appears in categories: programming language
-- Haskell downloads page
- https://www.haskell.org/downloads/
-- Haskell Wikipedia page
- https://en.wikipedia.org/wiki/Haskell_(programming_language)
-- PLDB has 2 documentation sites for Haskell: www.haskell.org, devdocs.io
-- Haskell mailing list
- https://www.haskell.org/mailing-lists/
+- Tags: programming language
 - There are at least 126,924 Haskell repos on GitHub
-- Haskell first developed in Yale University and Chalmers University and Microsoft Research and University of Edinburgh
+- Early development of Haskell happened in Yale University and Chalmers University and Microsoft Research and University of Edinburgh
 - The  Google BigQuery Public Dataset GitHub snapshot shows 13k users using Haskell in 30k repos on GitHub
 - Check out the 311 Haskell meetup groups on Meetup.com.
 - There are 7,098 Project Euler users using Haskell
@@ -44,12 +33,10 @@ Haskell  is a standardized, general-purpose purely functional programming langua
 - Haskell appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Haskell
 - There is a central package repository for Haskell
-- Frequently Asked Questions for Haskell
- https://wiki.haskell.org/FAQ
 - Indeed.com has 190 matches for "haskell developer".
 - haskell.org was registered in 1996
-- See also: (43 related languages)Clean, FP, HOPE, Irvine Dataflow, ISWIM, KRC, Lisp, Miranda, ML, Standard ML, Scheme, SISAL, Agda, C#, LINQ, Cayenne, Clojure, CoffeeScript, Curry, Elm, Epigram, F#, Frege, Hack, Idris, Java, LiveScript, Mercury, Raku, Python, Rust, Scala, Swift, Visual Basic .NET, C, C--, LLVM IR, OpenGL, JavaScript, Lazy ML, Pandoc, Cryptol, JVM
-- 84 languages in PLDB linking to Haskell: Ace Editor, Aith, Astatine, asterius-compiler, atomspace, attoparsec, badlanguage, Boomerang Decompiler, carp, carth, Chapel, Civet, clash, cloc, Cryptol, Curly, Curry, Darcs Advanced Revision Control System, datafun, dex, Dhall, Differential Datalog, Đ, Egison, Elm, Encore, Enso, expresso, fay, Felix, Flare, forest-lang, fp, Frank, F*, Futhark, GHC, Gren, hakaru, hamler, harlan, haste, helium, Idris, JSON lambda, juvix, Kalyn, kei, keli, kima, kitlang, kitten, Koka, lambcalc, lamdu-editor, Lamdu, Lawvere, Ligo, Lucid, Luna, mal, Megaparsec, monte, neut, Nit, Octune, oden, Pact, Pandoc, Parsec, plam, psyche-c, PureScript, Pygments, reflex-framework, Scrapscript, Scroll Notation, Simplicity, sixten, son, Topaz, UCL, Wasp, Z
+- See also: (43 related languages) Clean, FP, HOPE, Irvine Dataflow, ISWIM, KRC, Lisp, Miranda, ML, Standard ML, Scheme, SISAL, Agda, C#, LINQ, Cayenne, Clojure, CoffeeScript, Curry, Elm, Epigram, F#, Frege, Hack, Idris, Java, LiveScript, Mercury, Raku, Python, Rust, Scala, Swift, Visual Basic .NET, C, C--, LLVM IR, OpenGL, JavaScript, Lazy ML, Pandoc, Cryptol, JVM
+- 84 PLDB concepts link to Haskell: Ace Editor, Aith, Astatine, asterius-compiler, atomspace, attoparsec, badlanguage, Boomerang Decompiler, carp, carth, Chapel, Civet, clash, cloc, Cryptol, Curly, Curry, Darcs Advanced Revision Control System, datafun, dex, Dhall, Differential Datalog, Đ, Egison, Elm, Encore, Enso, expresso, fay, Felix, Flare, forest-lang, fp, Frank, F*, Futhark, GHC, Gren, hakaru, hamler, harlan, haste, helium, Idris, JSON lambda, juvix, Kalyn, kei, keli, kima, kitlang, kitten, Koka, lambcalc, lamdu-editor, Lamdu, Lawvere, Ligo, Lucid, Luna, mal, Megaparsec, monte, neut, Nit, Octune, oden, Pact, Pandoc, Parsec, plam, psyche-c, PureScript, Pygments, reflex-framework, Scrapscript, Scroll Notation, Simplicity, sixten, son, Topaz, UCL, Wasp, Z
 
 module Example where
 

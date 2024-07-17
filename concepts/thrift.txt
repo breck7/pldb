@@ -11,18 +11,14 @@ Thrift is an open source interface design language created in 2007.
 Thrift is an interface definition language and binary communication protocol that is used to define and create services for numerous languages. It is used as a remote procedure call (RPC) framework and was developed at Facebook for "scalable cross-language services development". It combines a software stack with a code generation engine to build cross-platform services that can connect applications written in a variety of languages and frameworks, including ActionScript, C, C++, C#, Cappuccino, Cocoa, Delphi, Erlang, Go, Haskell, Java, Node.js, Objective-C, OCaml, Perl, PHP, Python, Ruby and Smalltalk. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Apache_Thrift
 
-- Thrift website
- http://thrift.apache.org/
-- Thrift appears in categories: interface design language
-- Thrift Wikipedia page
- https://en.wikipedia.org/wiki/Apache_Thrift
+- Tags: interface design language
 - There are at least 447 Thrift repos on GitHub
-- Thrift first developed in Apache
+- Early development of Thrift happened in Apache
 - The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Thrift in 4k repos on GitHub
 - Pygments supports syntax highlighting for Thrift
 - GitHub supports syntax highlighting for Thrift
-- See also: (19 related languages)ActionScript, C, C#, Erlang, Go, Haskell, Java, Objective-C, OCaml, Perl, PHP, Python, Ruby, Smalltalk, JSON, SOAP, XML, ASN.1, Protocol Buffers
-- 7 languages in PLDB linking to Thrift: Apache Hbase, avro, cloc, HHVM, Impala, m3db, Pygments
+- See also: (19 related languages) ActionScript, C, C#, Erlang, Go, Haskell, Java, Objective-C, OCaml, Perl, PHP, Python, Ruby, Smalltalk, JSON, SOAP, XML, ASN.1, Protocol Buffers
+- 7 PLDB concepts link to Thrift: Apache Hbase, avro, cloc, HHVM, Impala, m3db, Pygments
 
 enum PhoneType {
  HOME,

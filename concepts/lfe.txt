@@ -12,25 +12,17 @@ LFE, aka Lisp Flavored Erlang, is an open source programming language created in
 Lisp Flavored Erlang (LFE) is a functional, concurrent, general-purpose programming language and Lisp dialect built on top of Core Erlang and the Erlang Virtual Machine (BEAM). LFE builds on top of Erlang in order to provide a Lisp syntax for writing distributed, fault-tolerant, soft real-time, non-stop applications. LFE also extends Erlang to support meta-programming with Lisp macros and an improved developer experience with a feature-rich REPL. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LFE_(programming_language)
 
-- LFE appears in categories: programming language
-- LFE Wikipedia page
- https://en.wikipedia.org/wiki/LFE_(programming_language)
-- LFE docs
- http://docs.lfe.io/current/index.html
+- Tags: programming language
 - There are at least 51 LFE repos on GitHub
-- LFE first developed in https://github.com/lfe
+- Early development of LFE happened in https://github.com/lfe
 - The  Google BigQuery Public Dataset GitHub snapshot shows 14 users using LFE in 15 repos on GitHub
 - Explore LFE snippets on Rosetta Code
 - GitHub supports syntax highlighting for LFE
-- Release Notes for LFE
- http://docs.lfe.io/v0.7/classic-docs/release-notes.html
-- Official Blog page for LFE
- https://blog.lfe.io/
 - Indeed.com has 0 matches for "lfe developer".
-- See also: (6 related languages)Erlang, Common Lisp, Scheme, Elixir, Hy, Lisp
+- See also: (6 related languages) Erlang, Common Lisp, Scheme, Elixir, Hy, Lisp
 - Read more about LFE on the web: 1.
  https://lfe.io/
-- 1 languages in PLDB linking to LFE: cloc
+- 1 PLDB concepts link to LFE: cloc
 
 ;; Copyright (c) 2013 Duncan McGreggor &lt;oubiwann@cogitat.io&gt;
 ;;

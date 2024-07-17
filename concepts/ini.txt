@@ -11,20 +11,16 @@ Ini is an open source data notation created in 1987.
 The INI file format is an informal standard for configuration files for some platforms or software. INI files are simple text files with a basic structure composed of sections, properties, and values. In MS-DOS and 16-bit Windows platforms up through Windows ME, the INI file served as the primary mechanism to configure operating system and installed applications features, such as device drivers, fonts, startup launchers, and things that needed to be initialized in booting Windows. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/INI_file
 
-- Ini appears in categories: dataNotation
-- Ini Wikipedia page
- https://en.wikipedia.org/wiki/INI_file
+- Tags: dataNotation
 - There are at least 13 Ini repos on GitHub
-- Ini first developed in Microsoft
+- Early development of Ini happened in Microsoft
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Ini in 1 repos on GitHub
 - ANTLR grammar for Ini
 - Monaco package for syntax highlighting Ini
 - Pygments supports syntax highlighting for Ini
 - GitHub supports syntax highlighting for Ini
-- Ini leet sheet
- https://cheatsheets.zip/ini
-- See also: (8 related languages)XML, Linux, Unix, PHP, Unicode, C, JSON, YAML
-- 105 languages in PLDB linking to Ini: Ace Editor, Aheui, ASDF, astroml, atomspace, Bazel, BlitzMax, Ceylon, Chapel, Charcoal, chatterbot, clash, cloc, CWL, Conan, CouchDB, crmsh, Cryptol, Crystal, docopt, duro, Embedded Crystal, Eiffel, Emscripten, Erlang, F Prime, Flow9, flua, GAP, gogs-editor, Gwion, Haxe, HHVM, Homebrew, Hook, Ibis, Impala, infusion-framework, inko, invokator, Java, Jemplate, Jinja, k-framework, kumir, Ladybird, Latte, leo-editor, Linux, mai, Manim, Mask, mathics, Matplotlib, MicroBlocks, Mindsdb, MiniZinc, MongoDB, moya, myia, NCAR Command Language, NestedText, Nim, Nit, Natural Language Toolkit, Node.js, Numba, Nushell, oil, Pan, PgBouncer, PHP, Plaid, polyglot-compiler, Pony, POV-Ray SDL, Pycket, Pygments, Python, PyTorch, r4, Revolution, Rholang, Rita, SciPy, Scroll Notation, SDMS, SourcePawn, Spatial, Speedie, SpiderBasic, Sqlalchemy, Swift, Taichi, tao3d, TensorFlow, TestML, tornado, twtxt, Wonkey, Xgboost, XGBoost, XL, xlwings-editor, Xtext
+- See also: (8 related languages) XML, Linux, Unix, PHP, Unicode, C, JSON, YAML
+- 105 PLDB concepts link to Ini: Ace Editor, Aheui, ASDF, astroml, atomspace, Bazel, BlitzMax, Ceylon, Chapel, Charcoal, chatterbot, clash, cloc, CWL, Conan, CouchDB, crmsh, Cryptol, Crystal, docopt, duro, Embedded Crystal, Eiffel, Emscripten, Erlang, F Prime, Flow9, flua, GAP, gogs-editor, Gwion, Haxe, HHVM, Homebrew, Hook, Ibis, Impala, infusion-framework, inko, invokator, Java, Jemplate, Jinja, k-framework, kumir, Ladybird, Latte, leo-editor, Linux, mai, Manim, Mask, mathics, Matplotlib, MicroBlocks, Mindsdb, MiniZinc, MongoDB, moya, myia, NCAR Command Language, NestedText, Nim, Nit, Natural Language Toolkit, Node.js, Numba, Nushell, oil, Pan, PgBouncer, PHP, Plaid, polyglot-compiler, Pony, POV-Ray SDL, Pycket, Pygments, Python, PyTorch, r4, Revolution, Rholang, Rita, SciPy, Scroll Notation, SDMS, SourcePawn, Spatial, Speedie, SpiderBasic, Sqlalchemy, Swift, Taichi, tao3d, TensorFlow, TestML, tornado, twtxt, Wonkey, Xgboost, XGBoost, XL, xlwings-editor, Xtext
 
 ; last modified 1 April 2001 by John Doe
 [owner]

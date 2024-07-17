@@ -12,11 +12,9 @@ git clone https://github.com/texodus/forml/
 
 A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
 
-- Forml website
- http://texodus.github.io/forml/
-- Forml appears in categories: programming language
+- Tags: programming language
 - Forml is developed on GitHub and has 76 stars
-- Forml first developed in https://github.com/texodus
+- Early development of Forml happened in https://github.com/texodus
 
     hello_world = do
         `console.log(&quot;Hello World&quot;)` -- Calls to Javascript always return type `JS a`

@@ -10,15 +10,13 @@ Query by Example is a programming language created in 1969.
 Query by Example (QBE) is a database query language for relational databases. It was devised by Moshé M. Zloof at IBM Research during the mid-1970s, in parallel to the development of SQL. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Query_by_Example
 
-- Query by Example appears in categories: programming language
-- Query by Example Wikipedia page
- https://en.wikipedia.org/wiki/Query_by_Example
-- Query by Example first developed in IBM
+- Tags: programming language
+- Early development of Query by Example happened in IBM
 - Query by Example on HOPL
  https://hopl.info/showlanguage.prx?exp=3957
-- See also: (2 related languages)SQL, GraphQL
+- See also: (2 related languages) SQL, GraphQL
 - Read more about Query by Example on Semantic Scholar: 1.
  https://semanticscholar.org/paper/f320e453ae65ddf0a3789f4383fa164481c7a8b3
-- 1 languages in PLDB linking to Query by Example: SBA
+- 1 PLDB concepts link to Query by Example: SBA
 
 SELECT * FROM Contacts WHERE City=&#39;Sampleton&#39; AND Zipcode=&#39;12345&#39;;

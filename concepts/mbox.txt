@@ -11,14 +11,12 @@ EML is a text data format created in 1974.
 Mbox is a generic term for a family of related file formats used for holding collections of email messages, first implemented for Fifth Edition Unix. All messages in an mbox mailbox are concatenated and stored as plain text in a single file. Each message starts with the four characters "From" followed by a space (the so named "From_ line") and the sender's email address. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Mbox
 
-- EML appears in categories: textDataFormat
-- EML Wikipedia page
- https://en.wikipedia.org/wiki/Mbox
+- Tags: textDataFormat
 - There are at least 0 EML repos on GitHub
-- EML first developed in Internet Engineering Task Force
+- Early development of EML happened in Internet Engineering Task Force
 - Pygments supports syntax highlighting for EML
 - GitHub supports syntax highlighting for EML
-- See also: (3 related languages)RFC, Unix, MIME
+- See also: (3 related languages) RFC, Unix, MIME
 - Read more about EML on the web: 1.
  https://datatracker.ietf.org/doc/html/rfc822
 

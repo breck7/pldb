@@ -9,26 +9,20 @@ Less is an open source stylesheet language created in 2009 by Alexis Sellier.
 15 Years Old
 12k Repos
 
-Try now: Web · Riju
-
 Less (sometimes stylized as LESS) is a dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less is open source. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Less_(stylesheet_language)
 
-- Less website
- http://lesscss.org
-- Less appears in categories: stylesheetLanguage
-- Less Wikipedia page
- https://en.wikipedia.org/wiki/Less_(stylesheet_language)
+- Tags: stylesheetLanguage
 - There are at least 12,105 Less repos on GitHub
-- Less first developed in https://github.com/less
+- Early development of Less happened in https://github.com/less
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Less in 3k repos on GitHub
 - ANTLR grammar for Less
 - Monaco package for syntax highlighting Less
 - Pygments supports syntax highlighting for Less
 - GitHub supports syntax highlighting for Less
 - lesscss.org was registered in 2009
-- See also: (5 related languages)JavaScript, Sass, CSS, Ruby, Stylus
-- 13 languages in PLDB linking to Less: Ace Editor, Bounce, gogs-editor, gridstudio-editor, KaTeX, Koka, Livr, Mu, NGS, Nit, PROMETHEUS, PureScript, Statsplorer
+- See also: (5 related languages) JavaScript, Sass, CSS, Ruby, Stylus
+- 13 PLDB concepts link to Less: Ace Editor, Bounce, gogs-editor, gridstudio-editor, KaTeX, Koka, Livr, Mu, NGS, Nit, PROMETHEUS, PureScript, Statsplorer
 
 body:before {
   content: &quot;Hello, world!&quot;;

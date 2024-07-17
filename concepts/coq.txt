@@ -11,24 +11,14 @@ Coq is an open source programming language created in 1989 by Thierry Coquand.
 
 git clone https://github.com/coq/coq
 
-Try now: Web
-
 In computer science, Coq is an interactive theorem prover. It allows the expression of mathematical assertions, mechanically checks proofs of these assertions, helps to find formal proofs, and extracts a certified program from the constructive proof of its formal specification. Coq works within the theory of the calculus of inductive constructions, a derivative of the calculus of constructions. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Coq
 
-- Coq website
- https://coq.inria.fr/
-- Coq appears in categories: programming language
-- Coq Wikipedia page
- https://en.wikipedia.org/wiki/Coq
+- Tags: programming language
 - Coq is developed on GitHub and has 4,645 stars
-- Coq docs
- https://coq.inria.fr/documentation
 - There are at least 5,206 Coq repos on GitHub
-- Coq first developed in The Coq development team
+- Early development of Coq happened in The Coq development team
 - Coq is written in Coq, OCaml, Bourne shell, reStructuredText, Markdown, Nix, Python, Tex, CSS, YAML, Make, HTML, C, XML, JavaScript, Bash, Dockerfile, CSV, Lisp, Diff
-- Coq on Twitter
- https://twitter.com/CoqLang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 793 users using Coq in 1k repos on GitHub
 - There are 2,066 members in the Coq subreddit
 - Explore Coq snippets on Rosetta Code
@@ -36,8 +26,8 @@ In computer science, Coq is an interactive theorem prover. It allows the express
  https://hopl.info/showlanguage.prx?exp=6970
 - Pygments supports syntax highlighting for Coq
 - GitHub supports syntax highlighting for Coq
-- See also: (5 related languages)OCaml, Agda, Idris, C, Isabelle
-- 8 languages in PLDB linking to Coq: Coq, F*, hacspec, Ligo, Pygments, Simplicity, UrWeb, V
+- See also: (5 related languages) OCaml, Agda, Idris, C, Isabelle
+- 8 PLDB concepts link to Coq: Coq, F*, hacspec, Ligo, Pygments, Simplicity, UrWeb, V
 
 Require Import FunctionNinjas.All.
 Require Import ListString.All.

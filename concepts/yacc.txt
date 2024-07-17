@@ -12,11 +12,7 @@ Yacc, aka Yet Another Compiler-Compiler, is a grammar language created in 1975 b
 Yacc (Yet Another Compiler-Compiler) is a computer program for the Unix operating system. It is a Look Ahead Left-to-Right (LALR) parser generator, generating a parser, the part of a compiler that tries to make syntactic sense of the source code, specifically a LALR parser, based on an analytic grammar written in a notation similar to Backus–Naur Form (BNF). Yacc itself used to be available as the default parser generator on most Unix systems, though it has since been supplanted as the default by more recent, largely compatible, programs.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Yacc
 
-- Yacc appears in categories: grammarLanguage, compiler
-- Yacc Wikipedia page
- https://en.wikipedia.org/wiki/Yacc
-- Yacc docs
- https://pubs.opengroup.org/onlinepubs/009604599/utilities/yacc.html
+- Tags: grammarLanguage, compiler
 - There are at least 11,041 Yacc repos on GitHub
 - Yacc is written in C
 - The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Yacc in 14k repos on GitHub
@@ -24,10 +20,10 @@ Yacc (Yet Another Compiler-Compiler) is a computer program for the Unix operatin
  https://hopl.info/showlanguage.prx?exp=704
 - Yacc appears in the TIOBE Index
 - GitHub supports syntax highlighting for Yacc
-- See also: (13 related languages)Unix, B, C, Bison, OCaml, RATFOR, Ada, Pascal, Java, Python, Ruby, Go, Common Lisp
+- See also: (13 related languages) Unix, B, C, Bison, OCaml, RATFOR, Ada, Pascal, Java, Python, Ruby, Go, Common Lisp
 - Read more about Yacc on the web: 1.
  https://github.com/babyraging/yash
-- 64 languages in PLDB linking to Yacc: Ad-hoc, ana, aplette, Bash, beef-lang, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Click, Cognate, cor, Crema, Cryptol, duro, eC, Eiffel, Fancy, Filebench WML, FLEX, Frege, Futhark, GAP, haste, HHVM, hobbes, invokator, JFlex, Jison, jq, JSON Query Language, kitlang, Koka, latino, Lemon, Linux, mgmt, Mudlle, NCAR Command Language, nesC, never, Open Shading Language, OpenComal, orca, Parsers, Perl, PHP, GNU Poke, PostgreSQL, Potion, PROMETHEUS, PureScript, RamdaScript, Recfiles, RicScript, Ruby, shill, Slony, solid, Streem, t2b, VSXu, YARA
+- 64 PLDB concepts link to Yacc: Ad-hoc, ana, aplette, Bash, beef-lang, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Click, Cognate, cor, Crema, Cryptol, duro, eC, Eiffel, Fancy, Filebench WML, FLEX, Frege, Futhark, GAP, haste, HHVM, hobbes, invokator, JFlex, Jison, jq, JSON Query Language, kitlang, Koka, latino, Lemon, Linux, mgmt, Mudlle, NCAR Command Language, nesC, never, Open Shading Language, OpenComal, orca, Parsers, Perl, PHP, GNU Poke, PostgreSQL, Potion, PROMETHEUS, PureScript, RamdaScript, Recfiles, RicScript, Ruby, shill, Slony, solid, Streem, t2b, VSXu, YARA
 
 %{
 /*

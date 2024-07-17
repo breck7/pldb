@@ -11,18 +11,14 @@ Alloy is a programming language created in 1997.
 In computer science and software engineering, Alloy is a declarative specification language for expressing complex structural constraints and behavior in a software system. Alloy provides a simple structural modeling tool based on first-order logic. Alloy is targeted at the creation of micro-models that can then be automatically checked for correctness. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Alloy_(specification_language)
 
-- Alloy website
- http://alloytools.org/
-- Alloy appears in categories: programming language
-- Alloy Wikipedia page
- https://en.wikipedia.org/wiki/Alloy_(specification_language)
+- Tags: programming language
 - There are at least 759 Alloy repos on GitHub
-- Alloy first developed in Massachusetts Institute of Technology
+- Early development of Alloy happened in Massachusetts Institute of Technology
 - The  Google BigQuery Public Dataset GitHub snapshot shows 84 users using Alloy in 90 repos on GitHub
 - Pygments supports syntax highlighting for Alloy
 - GitHub supports syntax highlighting for Alloy
 - alloytools.org was registered in 2017
-- See also: (1 related languages)Z notation
+- See also: (1 related languages) Z notation
 
 // A file system object in the file system
 sig FSObject { parent: lone Dir }

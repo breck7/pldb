@@ -10,16 +10,12 @@ Cypher Query Language is a query language created in 2011.
 Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph. Cypher is a relatively simple but still very powerful language. Very complicated database queries can easily be expressed through Cypher. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cypher_Query_Language
 
-- Cypher Query Language website
- https://neo4j.com/developer/cypher-query-language/
-- Cypher Query Language appears in categories: queryLanguage
-- Cypher Query Language Wikipedia page
- https://en.wikipedia.org/wiki/Cypher_Query_Language
-- Cypher Query Language first developed in Neo4j
+- Tags: queryLanguage
+- Early development of Cypher Query Language happened in Neo4j
 - CodeMirror package for syntax highlighting Cypher Query Language
 - Monaco package for syntax highlighting Cypher Query Language
 - Pygments supports syntax highlighting for Cypher Query Language
-- See also: (2 related languages)SQL, SPARQL
+- See also: (2 related languages) SQL, SPARQL
 
 MATCH (start:Content)-[:RELATED_CONTENT]-&gt;(content:Content)
 WHERE content.source = &#39;user&#39;

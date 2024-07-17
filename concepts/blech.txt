@@ -12,14 +12,10 @@ git clone https://github.com/blech-lang/blech
 
 Blech is a synchronous programming language for embedded, reactive, realtime-critical software. It allows writing reactive subprograms and combining them both sequentially and concurrently. Blech compiles to clean C, which may be integrated into existing projects or simulation frameworks. The name Blech ironically describes embedded hardware. It expresses that Blech programs can run directly on the Blech of pretty much any embedded device.
 
-- Blech website
- https://www.blech-lang.org/
-- Blech appears in categories: programming language
+- Tags: programming language
 - Blech is developed on GitHub
 - Blech compiles to C
 - Blech is written in JSON, F#, XML, C, Markdown, YAML, Bourne shell
-- Blech on Twitter
- https://twitter.com/BlechLanguage
 - First announcement of Blech
 
 struct Display

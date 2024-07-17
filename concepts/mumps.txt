@@ -9,18 +9,12 @@ MUMPS is a programming language created in 1966 by Neil Pappalardo.
 58 Years Old
 2k Repos
 
-Try now: Riju · TIO
-
 MUMPS (Massachusetts General Hospital Utility Multi-Programming System), or M, is a general-purpose computer programming language that provides ACID (Atomic, Consistent, Isolated, and Durable) transaction processing. Its differentiating feature is its "built-in" database, enabling high-level access to disk storage using simple symbolic program variables and subscripted arrays, similar to the variables used by most languages to access main memory. The M database is a key-value database engine optimized for high-throughput transaction processing. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MUMPS
 
-- MUMPS appears in categories: programming language
-- MUMPS Wikipedia page
- https://en.wikipedia.org/wiki/MUMPS
-- MUMPS docs
- https://mumps.sourceforge.net/docs.html
+- Tags: programming language
 - There are at least 2,448 MUMPS repos on GitHub
-- MUMPS first developed in MUMPS Development Committee
+- Early development of MUMPS happened in MUMPS Development Committee
 - The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using MUMPS in 5k repos on GitHub
 - There are 38 Project Euler users using MUMPS
 - Explore MUMPS snippets on Rosetta Code
@@ -29,8 +23,8 @@ MUMPS (Massachusetts General Hospital Utility Multi-Programming System), or M, i
 - MUMPS appears in the TIOBE Index
 - ANTLR grammar for MUMPS
 - CodeMirror package for syntax highlighting MUMPS
-- See also: (8 related languages)JOSS, Unix, TELCOMP, Meditech Interpretive Information System, Linux, Tiny BASIC, ASCII, CSV
-- 4 languages in PLDB linking to MUMPS: Caché ObjectScript, cloc, NCAR Command Language, proto-GNOSIS
+- See also: (8 related languages) JOSS, Unix, TELCOMP, Meditech Interpretive Information System, Linux, Tiny BASIC, ASCII, CSV
+- 4 PLDB concepts link to MUMPS: Caché ObjectScript, cloc, NCAR Command Language, proto-GNOSIS
 
 label1 ; This is a label
     write &quot;Hello World !&quot;,!

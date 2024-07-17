@@ -11,29 +11,15 @@ Swift is an open source programming language created in 2014 by Chris Lattner.
 
 git clone https://github.com/apple/swift
 
-Try now: Riju · Replit
-
 Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Swift_(programming_language)
 
-- Swift website
- https://swift.org
-- Swift appears in categories: programming language
-- Swift downloads page
- https://www.swift.org/download/
-- Swift Wikipedia page
- https://en.wikipedia.org/wiki/Swift_(programming_language)
+- Tags: programming language
 - Swift is developed on GitHub and has 60,145 stars
 - Watch the history of the Swift repo visualized with Gource
-- Swift docs
- https://www.swift.org/documentation/
-- Swift mailing list
- https://www.swift.org/blog/forums/
 - There are at least 1,044,892 Swift repos on GitHub
-- Swift first developed in Apple
+- Early development of Swift happened in Apple
 - Swift is written in Swift, C++, CMake, Python, Markdown, JSON, Objective-C, reStructuredText, YAML, Tex, C, Objective C++, Bash, LLVM IR, Bourne shell, XML, Vim script, Make, Lisp, HTML, Pascal, D, CSS, Assembly language, Ini, PowerShell, JavaScript, Ruby, awk, MATLAB
-- Swift on Twitter
- https://twitter.com/swiftlang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using Swift in 43k repos on GitHub
 - Check out the 375 Swift meetup groups on Meetup.com.
 - There are 93,491 members in the Swift subreddit
@@ -47,15 +33,9 @@ Swift is a general-purpose, multi-paradigm, compiled programming language develo
 - Pygments supports syntax highlighting for Swift
 - GitHub supports syntax highlighting for Swift
 - There is a central package repository for Swift
-- Release Notes for Swift
- https://github.com/apple/swift/blob/main/CHANGELOG.md
-- Official Blog page for Swift
- https://www.swift.org/blog/
-- Swift leet sheet
- https://cheatsheets.zip/swift
 - Indeed.com has 2,043 matches for "swift developer".
-- See also: (18 related languages)Linux, FreeBSD, C#, CLU, D, Haskell, Objective-C, Python, Ruby, Rust, iOS, LLVM IR, C, Smalltalk, Java, Unicode, Android, Kotlin
-- 28 languages in PLDB linking to Swift: Ace Editor, Ante, cloc, Dixy, FlatBuffers, Flow9, Gradle, Homebrew, Iterm2, kai, Koka, Kotlin, mal, MongoDB, Plot, Project Mentat, Pygments, React Native, Reason, Roc, Stencil, Swift, TensorFlow, Uno, wasmer, Wax, Wing, zolang
+- See also: (18 related languages) Linux, FreeBSD, C#, CLU, D, Haskell, Objective-C, Python, Ruby, Rust, iOS, LLVM IR, C, Smalltalk, Java, Unicode, Android, Kotlin
+- 28 PLDB concepts link to Swift: Ace Editor, Ante, cloc, Dixy, FlatBuffers, Flow9, Gradle, Homebrew, Iterm2, kai, Koka, Kotlin, mal, MongoDB, Plot, Project Mentat, Pygments, React Native, Reason, Roc, Stencil, Swift, TensorFlow, Uno, wasmer, Wax, Wing, zolang
 
 // Type your code here, or load an example.
 func square(n: Int) -&gt; Int {

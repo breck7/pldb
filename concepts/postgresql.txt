@@ -10,45 +10,23 @@ PostgreSQL is an open source query language created in 1986 by Marc G. Fournier.
 
 git clone https://github.com/postgres/postgres
 
-Try now: Riju
-
 PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users; on macOS Server, PostgreSQL is the default database; and it is also available for Microsoft Windows and Linux (supplied in most distributions). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PostgreSQL
 
-- PostgreSQL website
- https://www.postgresql.org/
-- PostgreSQL appears in categories: queryLanguage
-- PostgreSQL downloads page
- https://www.postgresql.org/download/
-- PostgreSQL Wikipedia page
- https://en.wikipedia.org/wiki/PostgreSQL
+- Tags: queryLanguage
 - PostgreSQL is developed on GitHub and has 10,491 stars
-- PostgreSQL docs
- https://www.postgresql.org/docs/
-- PostgreSQL mailing list
- https://www.postgresql.org/list/
-- PostgreSQL first developed in University of California
+- Early development of PostgreSQL happened in University of California
 - PostgreSQL is written in C, SQL, Make, Perl, Meson, Bourne shell, Lex, M4, Yacc, XSLT, Python, IDL, CSV, XML, C++, SVG, YAML, Assembly language, JSON, CSS, D, Bash, Lisp, Markdown, sed
-- PostgreSQL on Twitter
- https://twitter.com/postgresql
 - There are 0 members in the PostgreSQL subreddit
 - Monaco package for syntax highlighting PostgreSQL
 - Annual Reports for PostgreSQL
  https://www.postgresql.org/about/policies/coc/
-- Release Notes for PostgreSQL
- https://www.postgresql.org/docs/release/
-- Official Blog page for PostgreSQL
- https://www.postgresql.org/about/newsarchive/
 - Events page for PostgreSQL
  https://www.postgresql.org/about/events/
-- Frequently Asked Questions for PostgreSQL
- https://www.postgresql.org/docs/faq/
-- PostgreSQL leet sheet
- https://cheatsheets.zip/postgresql
 - Indeed.com has 9,946 matches for "postgresql developer".
 - postgresql.org was registered in 1996
-- See also: (34 related languages)C, Linux, SQL, Gist, XML, XPath, JSON, Julia, Go, R, D, Erlang, PL/pgSQL, PL/SQL, SQL/PSM, Perl, Python, Tcl, Java, JavaScript, Ruby, Regular Expressions, TLS, FreeBSD, Solaris, X86, PowerPC, IBM System z, SPARC, ARM, MIPS architecture, Visual Basic, MySQL, AWS
-- 3 languages in PLDB linking to PostgreSQL: Bucardo, PgBouncer, Amazon Redshift
+- See also: (34 related languages) C, Linux, SQL, Gist, XML, XPath, JSON, Julia, Go, R, D, Erlang, PL/pgSQL, PL/SQL, SQL/PSM, Perl, Python, Tcl, Java, JavaScript, Ruby, Regular Expressions, TLS, FreeBSD, Solaris, X86, PowerPC, IBM System z, SPARC, ARM, MIPS architecture, Visual Basic, MySQL, AWS
+- 3 PLDB concepts link to PostgreSQL: Bucardo, PgBouncer, Amazon Redshift
 
 SELECT &#39;Hello, world!&#39;;
 
@@ -127,45 +105,23 @@ PostgreSQL is an open source query language created in 1986 by Marc G. Fournier.
 
 git clone https://github.com/postgres/postgres
 
-Try now: Riju
-
 PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users; on macOS Server, PostgreSQL is the default database; and it is also available for Microsoft Windows and Linux (supplied in most distributions). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PostgreSQL
 
-- PostgreSQL website
- https://www.postgresql.org/
-- PostgreSQL appears in categories: queryLanguage
-- PostgreSQL downloads page
- https://www.postgresql.org/download/
-- PostgreSQL Wikipedia page
- https://en.wikipedia.org/wiki/PostgreSQL
+- Tags: queryLanguage
 - PostgreSQL is developed on GitHub and has 10,491 stars
-- PostgreSQL docs
- https://www.postgresql.org/docs/
-- PostgreSQL mailing list
- https://www.postgresql.org/list/
-- PostgreSQL first developed in University of California
+- Early development of PostgreSQL happened in University of California
 - PostgreSQL is written in C, SQL, Make, Perl, Meson, Bourne shell, Lex, M4, Yacc, XSLT, Python, IDL, CSV, XML, C++, SVG, YAML, Assembly language, JSON, CSS, D, Bash, Lisp, Markdown, sed
-- PostgreSQL on Twitter
- https://twitter.com/postgresql
 - There are 0 members in the PostgreSQL subreddit
 - Monaco package for syntax highlighting PostgreSQL
 - Annual Reports for PostgreSQL
  https://www.postgresql.org/about/policies/coc/
-- Release Notes for PostgreSQL
- https://www.postgresql.org/docs/release/
-- Official Blog page for PostgreSQL
- https://www.postgresql.org/about/newsarchive/
 - Events page for PostgreSQL
  https://www.postgresql.org/about/events/
-- Frequently Asked Questions for PostgreSQL
- https://www.postgresql.org/docs/faq/
-- PostgreSQL leet sheet
- https://cheatsheets.zip/postgresql
 - Indeed.com has 9,946 matches for "postgresql developer".
 - postgresql.org was registered in 1996
-- See also: (34 related languages)C, Linux, SQL, Gist, XML, XPath, JSON, Julia, Go, R, D, Erlang, PL/pgSQL, PL/SQL, SQL/PSM, Perl, Python, Tcl, Java, JavaScript, Ruby, Regular Expressions, TLS, FreeBSD, Solaris, X86, PowerPC, IBM System z, SPARC, ARM, MIPS architecture, Visual Basic, MySQL, AWS
-- 3 languages in PLDB linking to PostgreSQL: Bucardo, PgBouncer, Amazon Redshift
+- See also: (34 related languages) C, Linux, SQL, Gist, XML, XPath, JSON, Julia, Go, R, D, Erlang, PL/pgSQL, PL/SQL, SQL/PSM, Perl, Python, Tcl, Java, JavaScript, Ruby, Regular Expressions, TLS, FreeBSD, Solaris, X86, PowerPC, IBM System z, SPARC, ARM, MIPS architecture, Visual Basic, MySQL, AWS
+- 3 PLDB concepts link to PostgreSQL: Bucardo, PgBouncer, Amazon Redshift
 
 SELECT &#39;Hello, world!&#39;;
 

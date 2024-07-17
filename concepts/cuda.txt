@@ -11,30 +11,16 @@ CUDA, aka Compute Unified Device Architecture, is a programming language created
 CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. It allows software developers and software engineers to use a CUDA-enabled graphics processing unit (GPU) for general purpose processing – an approach termed GPGPU (General-Purpose computing on Graphics Processing Units). The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CUDA
 
-- CUDA website
- https://developer.nvidia.com/cuda-zone
-- CUDA appears in categories: programming language
-- CUDA downloads page
- https://developer.nvidia.com/cuda-downloads
-- CUDA Wikipedia page
- https://en.wikipedia.org/wiki/CUDA
-- CUDA docs
- https://docs.nvidia.com/cuda/
+- Tags: programming language
 - There are at least 18,135 CUDA repos on GitHub
-- CUDA first developed in Nvidia
+- Early development of CUDA happened in Nvidia
 - The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using CUDA in 4k repos on GitHub
 - Check out the 32 CUDA meetup groups on Meetup.com.
 - Pygments supports syntax highlighting for CUDA
 - GitHub supports syntax highlighting for CUDA
-- Release Notes for CUDA
- https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
-- Official Blog page for CUDA
- https://developer.nvidia.com/blog/tag/cuda/
-- Frequently Asked Questions for CUDA
- https://developer.nvidia.com/cuda-faq
 - Indeed.com has 483 matches for "cuda engineer".
-- See also: (18 related languages)Linux, C, Fortran, OpenGL, OpenCL, LLVM IR, Python, Perl, Java, Ruby, Lua, Haskell, R, MATLAB, IDL, Mathematica, Common Lisp, F#
-- 14 languages in PLDB linking to CUDA: Chapel, circle-lang, Factor, FFmpeg, Futhark, Numba, OpenNN, Open Shading Language, Pygments, PyTorch, spiral, Taichi, Xgboost, XGBoost
+- See also: (18 related languages) Linux, C, Fortran, OpenGL, OpenCL, LLVM IR, Python, Perl, Java, Ruby, Lua, Haskell, R, MATLAB, IDL, Mathematica, Common Lisp, F#
+- 14 PLDB concepts link to CUDA: Chapel, circle-lang, Factor, FFmpeg, Futhark, Numba, OpenNN, Open Shading Language, Pygments, PyTorch, spiral, Taichi, Xgboost, XGBoost
 
 #include &lt;stdio.h&gt;
 

@@ -9,13 +9,13 @@ Ion is an interface design language created in 2016.
 
 Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
 
-- Ion appears in categories: interface design language
+- Tags: interface design language
 - Ion is a superset of JSON
-- Ion first developed in Amazon.com, Inc
-- See also: (1 related languages)Protocol Buffers
+- Early development of Ion happened in Amazon.com, Inc
+- See also: (1 related languages) Protocol Buffers
 - Read more about Ion on the web: 1.
  https://amzn.github.io/ion-docs/
-- 1 languages in PLDB linking to Ion: Ion Schema Language
+- 1 PLDB concepts link to Ion: Ion Schema Language
 
 /* Ion supports comments. */
 // Here is a struct, which is similar to a JSON object

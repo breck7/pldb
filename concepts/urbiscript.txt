@@ -11,11 +11,9 @@ Urbiscript is an open source programming language created in 2003 by Jean-Christ
 urbiscript is a programming language for robotics.  It features syntactic support for concurrency and event-based programming.  It is a prototype-based object-oriented scripting language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Urbiscript
 
-- Urbiscript appears in categories: programming language
-- Urbiscript Wikipedia page
- https://en.wikipedia.org/wiki/Urbiscript
+- Tags: programming language
 - Pygments supports syntax highlighting for Urbiscript
-- See also: (3 related languages)Self, Io, C
+- See also: (3 related languages) Self, Io, C
 
 at (x + y == z)
     echo(&quot;%s + %s == %s&quot; % [x, y, z]);

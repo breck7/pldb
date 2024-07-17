@@ -11,15 +11,13 @@ Metal is a library created in 2014.
 Metal is a low-level, low-overhead hardware-accelerated 3D graphic and compute shader application programming interface (API) developed by Apple Inc., and which debuted in iOS 8. Metal combines functions similar to OpenGL and OpenCL under one API. It is intended to bring to iOS, macOS, and tvOS apps some of the performance benefits of similar APIs on other platforms, such as Vulkan (which debuted in mid-February 2016) and DirectX 12. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Metal_(API)
 
-- Metal appears in categories: library
-- Metal Wikipedia page
- https://en.wikipedia.org/wiki/Metal_(API)
+- Tags: library
 - There are at least 79 Metal repos on GitHub
-- Metal first developed in Apple
+- Early development of Metal happened in Apple
 - The  Google BigQuery Public Dataset GitHub snapshot shows 232 users using Metal in 256 repos on GitHub
 - GitHub supports syntax highlighting for Metal
-- See also: (7 related languages)iOS, OpenGL, OpenCL, Swift, Objective-C, LLVM IR, Unity
-- 6 languages in PLDB linking to Metal: cloc, FFmpeg, Iterm2, Java, lobster, Wonkey
+- See also: (7 related languages) iOS, OpenGL, OpenCL, Swift, Objective-C, LLVM IR, Unity
+- 6 PLDB concepts link to Metal: cloc, FFmpeg, Iterm2, Java, lobster, Wonkey
 
 // Copyright 2014 Isis Innovation Limited and the authors of InfiniTAM
 

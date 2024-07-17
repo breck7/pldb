@@ -11,13 +11,9 @@ Q is an open source programming language created in 1991 by Albert Gräf.
 Pure, successor to the equational language Q, is a dynamically typed, functional programming language based on term rewriting. It has facilities for user-defined operator syntax, macros, arbitrary-precision arithmetic (multiple-precision numbers), and compiling to native code through the LLVM. Pure is free and open-source software distributed (mostly) under the GNU Lesser General Public License version 3 or later. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Q_(equational_programming_language)
 
-- Q website
- https://q-lang.sourceforge.net
-- Q appears in categories: programming language
-- Q Wikipedia page
- https://en.wikipedia.org/wiki/Q_(equational_programming_language)
-- Q first developed in https://sourceforge.net/p/q-lang/_list/tickets
-- See also: (14 related languages)FreeBSD, Linux, Haskell, Lisp, Alice, MATLAB, LLVM IR, C, Miranda, Pure Data, GNU Octave, OpenGL, FAUST, SuperCollider
+- Tags: programming language
+- Early development of Q happened in https://sourceforge.net/p/q-lang/_list/tickets
+- See also: (14 related languages) FreeBSD, Linux, Haskell, Lisp, Alice, MATLAB, LLVM IR, C, Miranda, Pure Data, GNU Octave, OpenGL, FAUST, SuperCollider
 
 extern int puts(char*);
  hello = puts &quot;Hello, world!&quot;;

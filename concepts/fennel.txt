@@ -13,17 +13,15 @@ git clone https://github.com/bakpakin/fennel
 
 Lua Lisp Language
 
-- Fennel website
- https://fennel-lang.org/
-- Fennel appears in categories: programming language
+- Tags: programming language
 - Fennel is developed on GitHub and has 1,699 stars
 - There are at least 207 Fennel repos on GitHub
-- Fennel first developed in https://lists.sr.ht/%7Etechnomancy/fennel
+- Early development of Fennel happened in https://lists.sr.ht/%7Etechnomancy/fennel
 - Fennel is written in Fennel, Markdown, Lua, YAML, Make, Diff, Bourne shell
 - The  Google BigQuery Public Dataset GitHub snapshot shows 12 users using Fennel in 12 repos on GitHub
 - Pygments supports syntax highlighting for Fennel
 - fennel-lang.org was registered in 2018
-- 5 languages in PLDB linking to Fennel: cloc, Fennel, funl, mal, Pygments
+- 5 PLDB concepts link to Fennel: cloc, Fennel, funl, mal, Pygments
 
 ;; Sample: read the state of the keyboard and move the player accordingly
 (local dirs {:up [0 -1] :down [0 1] :left [-1 0] :right [1 0]})

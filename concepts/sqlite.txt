@@ -8,37 +8,21 @@ SQLite is an open source query language created in 2000 by Dwayne Richard Hipp.
 #107 on PLDB
 24 Years Old
 
-Try now: Web · Riju · TIO
-
 SQLite ( or ) is a relational database management system contained in a C programming library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SQLite
 
-- SQLite website
- https://sqlite.org
-- SQLite appears in categories: queryLanguage
-- SQLite downloads page
- https://sqlite.org/download.html
-- SQLite Wikipedia page
- https://en.wikipedia.org/wiki/SQLite
+- Tags: queryLanguage
 - Watch the history of the SQLite repo visualized with Gource
-- SQLite docs
- https://www.sqlite.org/docs.html
-- SQLite first developed in  Hipp, Wyrick & Company, Inc
+- Early development of SQLite happened in  Hipp, Wyrick & Company, Inc
 - SQLite is written in C
 - There are 2,744 members in the SQLite subreddit
 - ANTLR grammar for SQLite
-- Release Notes for SQLite
- https://www.sqlite.org/changes.html
-- Official Blog page for SQLite
- https://www.sqlite.org/news.html
-- Frequently Asked Questions for SQLite
- https://www.sqlite.org/faq.html
 - Indeed.com has 561 matches for "sqlite developer".
 - sqlite.org was registered in 2002
-- See also: (61 related languages)C, SQL, PostgreSQL, Tcl, JSON, SQL-92, Perl, Unicode, JScript, VBScript, Django, Drupal, Ruby on Rails, Solaris, Android, FreeBSD, iOS, AutoIt, BASIC, FreeBASIC, PureBasic, Visual Basic .NET, Xojo, C#, Clipper, Curl, D, Elixir, Emacs Lisp, F#, Go, Haskell, Haxe, Java, JavaScript, Julia, Lisp, Common Lisp, OpenLisp, LiveCode, LabVIEW G, Lua, MATLAB, Nim, Objective-C, OCaml, Pascal, Free Pascal, Delphi, PHP, Pike, Python, R, Racket, REBOL, Ruby, Scheme, Smalltalk, Swift, ISBN, DOI
+- See also: (61 related languages) C, SQL, PostgreSQL, Tcl, JSON, SQL-92, Perl, Unicode, JScript, VBScript, Django, Drupal, Ruby on Rails, Solaris, Android, FreeBSD, iOS, AutoIt, BASIC, FreeBASIC, PureBasic, Visual Basic .NET, Xojo, C#, Clipper, Curl, D, Elixir, Emacs Lisp, F#, Go, Haskell, Haxe, Java, JavaScript, Julia, Lisp, Common Lisp, OpenLisp, LiveCode, LabVIEW G, Lua, MATLAB, Nim, Objective-C, OCaml, Pascal, Free Pascal, Delphi, PHP, Pike, Python, R, Racket, REBOL, Ruby, Scheme, Smalltalk, Swift, ISBN, DOI
 - Read more about SQLite on the web: 1.
  https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
-- 1 languages in PLDB linking to SQLite: Project Mentat
+- 1 PLDB concepts link to SQLite: Project Mentat
 
 SELECT &#39;Hello, world!&#39;;
 

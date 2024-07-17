@@ -7,12 +7,8 @@ qed-lang is a programming language created in 2015.
 #2874 on PLDB
 9 Years Old
 
-- qed-lang website
- https://qed-lang.org
-- qed-lang appears in categories: programming language
-- qed-lang first developed in University of Washington
-- qed-lang on Twitter
- https://twitter.com/qedlang
+- Tags: programming language
+- Early development of qed-lang happened in University of Washington
 
 void Button(string text) {
     int col = 0xC0C0C0; @out(&quot;  &quot; + text + &quot;  &quot;)

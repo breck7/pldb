@@ -10,11 +10,9 @@ Parrot BASIC is a programming language created in 2009.
 Parrot is a register-based process virtual machine designed to run dynamic languages efficiently. It is possible to compile Parrot assembly language and PIR (an intermediate language) to Parrot bytecode and execute it. Parrot is free and open source software.Parrot was started by the Perl community and is developed with help from the open source and free software communities. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parrot_BASIC
 
-- Parrot BASIC appears in categories: programming language
-- Parrot BASIC Wikipedia page
- https://en.wikipedia.org/wiki/Parrot_BASIC
-- Parrot BASIC first developed in https://www.perl.org
-- See also: (30 related languages)C, Parrot Assembly, PIR, Perl, Raku, Python, JVM, LLVM IR, Java, Java Bytecode, Joy, Lua, PHP, Ruby, Scheme, Tcl, WMLScript, Arc, APL, Common Lisp, Lisp, Forth, QuickBASIC, Smalltalk, CIL, Befunge, Brainfuck, LOLCODE, UNLAMBDA, Unicode
+- Tags: programming language
+- Early development of Parrot BASIC happened in https://www.perl.org
+- See also: (30 related languages) C, Parrot Assembly, PIR, Perl, Raku, Python, JVM, LLVM IR, Java, Java Bytecode, Joy, Lua, PHP, Ruby, Scheme, Tcl, WMLScript, Arc, APL, Common Lisp, Lisp, Forth, QuickBASIC, Smalltalk, CIL, Befunge, Brainfuck, LOLCODE, UNLAMBDA, Unicode
 
 .sub &#39;main&#39; :main
     $I1 = 4

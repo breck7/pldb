@@ -11,15 +11,13 @@ FreeMarker is an open source template language created in 2000.
 FreeMarker is a free Java-based template engine, originally focusing on dynamic web page generation with MVC software architecture. However, it is a general purpose template engine, with no dependency on servlets or HTTP or HTML, and is thus often used for generating source code, configuration files or e-mails.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Apache_FreeMarker
 
-- FreeMarker appears in categories: template language
-- FreeMarker Wikipedia page
- https://en.wikipedia.org/wiki/Apache_FreeMarker
+- Tags: template language
 - There are at least 5,703 FreeMarker repos on GitHub
-- FreeMarker first developed in https://freemarker.apache.org/mailing-lists.html
+- Early development of FreeMarker happened in https://freemarker.apache.org/mailing-lists.html
 - The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using FreeMarker in 4k repos on GitHub
 - Monaco package for syntax highlighting FreeMarker
 - GitHub supports syntax highlighting for FreeMarker
-- See also: (5 related languages)Java, HTML, JSP, Velocity, Thymeleaf
+- See also: (5 related languages) Java, HTML, JSP, Velocity, Thymeleaf
 
 &lt;#ftl strip_text=true /&gt;
 

@@ -13,19 +13,13 @@ Jolie, aka Java Orchestration Language Interpreter Engine, is a programming lang
 Jolie (Java Orchestration Language Interpreter Engine) is an open-source programming language for developing distributed applications based on microservices. In the programming paradigm proposed with Jolie, each program is a service that can communicate with other programs by sending and receiving messages over a network. Jolie supports an abstraction layer that allows services to communicate using different mediums, ranging from TCP/IP sockets to local in-memory communications between processes.Jolie is currently supported by an interpreter implemented in the Java language, which can be run in multiple operating systems including Linux-based operating systems, OS X, and Windows. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Jolie_(programming_language)
 
-- Jolie website
- http://jolie-lang.org/
-- Jolie appears in categories: programming language
-- Jolie Wikipedia page
- https://en.wikipedia.org/wiki/Jolie_(programming_language)
+- Tags: programming language
 - There are at least 129 Jolie repos on GitHub
-- Jolie first developed in University of Bologna
-- Jolie on Twitter
- https://twitter.com/jolielang
+- Early development of Jolie happened in University of Bologna
 - The  Google BigQuery Public Dataset GitHub snapshot shows 15 users using Jolie in 16 repos on GitHub
 - GitHub supports syntax highlighting for Jolie
 - jolie-lang.org was registered in 2008
-- See also: (6 related languages)Java, Linux, BPEL, XML, C, JavaScript
+- See also: (6 related languages) Java, Linux, BPEL, XML, C, JavaScript
 
 include &quot;common.iol&quot;
 include &quot;ui/swing_ui.iol&quot;

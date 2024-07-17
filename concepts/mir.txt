@@ -9,7 +9,5 @@ mir is an intermediate representation language created in 2015.
 
 MIR is a human readable serialization format that is used to represent LLVM’s machine specific intermediate representation. The MIR serialization format uses a YAML container.
 
-- mir website
- http://llvm.org/docs/MIRLangRef.html
-- mir appears in categories: intermediate representation language
-- mir first developed in LLVM Foundation
+- Tags: intermediate representation language
+- Early development of mir happened in LLVM Foundation

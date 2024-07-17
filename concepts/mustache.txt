@@ -13,15 +13,13 @@ git clone https://github.com/mustache/mustache
 
 Logic-less Ruby templates.
 
-- mustache website
- http://mustache.github.io/
-- mustache appears in categories: template language
+- Tags: template language
 - mustache is developed on GitHub and has 2,841 stars
 - There are at least 6,085 mustache repos on GitHub
-- mustache first developed in https://github.com/mustache
+- Early development of mustache happened in https://github.com/mustache
 - mustache is written in Ruby, mustache, YAML, Markdown, HTML
 - The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using mustache in 616 repos on GitHub
-- 8 languages in PLDB linking to mustache: Ballerina, cloc, codecept, HHVM, Ligo, mustache, NetLogo, obsidian
+- 8 PLDB concepts link to mustache: Ballerina, cloc, codecept, HHVM, Ligo, mustache, NetLogo, obsidian
 
 Hello {{name}}
 You have just won {{value}} dollars!

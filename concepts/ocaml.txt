@@ -9,21 +9,12 @@ OCaml is an open source programming language created in 1996 by Xavier Leroy.
 28 Years Old
 27k Repos
 
-Try now: Riju · TIO
-
 OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs. OCaml's toolset includes an interactive top-level interpreter, a bytecode compiler, a reversible debugger, a package manager (OPAM), and an optimizing native code compiler. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/OCaml
 
-- OCaml website
- http://ocaml.org
-- OCaml appears in categories: programming language
-- OCaml Wikipedia page
- https://en.wikipedia.org/wiki/OCaml
-- PLDB has 2 documentation sites for OCaml: ocaml.org, devdocs.io
+- Tags: programming language
 - There are at least 27,376 OCaml repos on GitHub
-- OCaml first developed in Institut national de recherche en sciences et technologies du numérique
-- OCaml on Twitter
- https://twitter.com/ocamllang
+- Early development of OCaml happened in Institut national de recherche en sciences et technologies du numérique
 - The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using OCaml in 6k repos on GitHub
 - Check out the 87 OCaml meetup groups on Meetup.com.
 - There are 219 Project Euler users using OCaml
@@ -38,15 +29,9 @@ OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation
 - OCaml appears in the Quine Relay project
 - PLDB has 2 Jupyter Kernels for OCaml: github.com, github.com
 - There is a central package repository for OCaml
-- Release Notes for OCaml
- https://ocaml.org/releases
-- Official Blog page for OCaml
- https://ocaml.org/blog
-- Frequently Asked Questions for OCaml
- https://opam.ocaml.org/doc/FAQ.html
 - ocaml.org was registered in 2000
-- See also: (36 related languages)Occam, C, IA-32, SPARC, ARM, Unix, F#, Caml, Classroom Object Oriented Language, Standard ML, ATS, Elm, F*, Haxe, Opa, Rust, Scala, ML, Python, Perl, Java, C#, Fortran, JavaScript, JVM, PIC microcontroller, Emacs, Vim, OpenGL, Hack, PHP, iOS, Android, Coq, WebAssembly, Haskell
-- 49 languages in PLDB linking to OCaml: Ace Editor, atomspace, Austral, bamboo, Bucklescript, Caml, Caramel, Catala, Chapel, cloc, comby, Coq, datafun, dedukti, eff, Elpi, FaCT, Felix, Flow, Flow9, F*, gintonic, Haxe, hazel, HHVM, IPL, juvix, Koka, Ligo, LinearML, Links, mal, Neko, Not Quite C, Opa, opam-pm, psyche, Pygments, Ragel, ramen, Reason, SATySFi, silk, sill, skip, Slick, Semantic Patch Language, Umka, Vale
+- See also: (36 related languages) Occam, C, IA-32, SPARC, ARM, Unix, F#, Caml, Classroom Object Oriented Language, Standard ML, ATS, Elm, F*, Haxe, Opa, Rust, Scala, ML, Python, Perl, Java, C#, Fortran, JavaScript, JVM, PIC microcontroller, Emacs, Vim, OpenGL, Hack, PHP, iOS, Android, Coq, WebAssembly, Haskell
+- 49 PLDB concepts link to OCaml: Ace Editor, atomspace, Austral, bamboo, Bucklescript, Caml, Caramel, Catala, Chapel, cloc, comby, Coq, datafun, dedukti, eff, Elpi, FaCT, Felix, Flow, Flow9, F*, gintonic, Haxe, hazel, HHVM, IPL, juvix, Koka, Ligo, LinearML, Links, mal, Neko, Not Quite C, Opa, opam-pm, psyche, Pygments, Ragel, ramen, Reason, SATySFi, silk, sill, skip, Slick, Semantic Patch Language, Umka, Vale
 
 let square x = x * x
 

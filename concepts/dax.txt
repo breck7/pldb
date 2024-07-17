@@ -10,14 +10,10 @@ DAX, aka Data analysis expressions, is a query language created in 2009.
 Data Analysis Expressions (DAX) is the native formula and query language for Microsoft PowerPivot, Power BI Desktop and SQL Server Analysis Services (SSAS) Tabular models. DAX includes some of the functions that are used in Excel formulas with additional functions that are designed to work with relational data and perform dynamic aggregation. It is, in part, an evolution of the Multidimensional Expression (MDX) language developed by Microsoft for Analysis Services multidimensional models (often called cubes) combined with Excel formula functions. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Data_analysis_expressions
 
-- DAX website
- https://docs.microsoft.com/en-us/dax/dax-overview
-- DAX appears in categories: queryLanguage
-- DAX Wikipedia page
- https://en.wikipedia.org/wiki/Data_analysis_expressions
-- DAX first developed in Microsoft
+- Tags: queryLanguage
+- Early development of DAX happened in Microsoft
 - Monaco package for syntax highlighting DAX
-- See also: (1 related languages)Microsoft Excel
+- See also: (1 related languages) Microsoft Excel
 
 EVALUATE
  ( FILTER ( &#39;DimProduct&#39;, [SafetyStockLevel] &lt; 200 ) )

@@ -11,14 +11,12 @@ Genshi is a template language created in 2006.
 Genshi is a template engine for XML-based vocabularies written in  Python.  Genshi is used to easily insert generated output into XML-based languages, usually HTML, and reuse elements between documents.  Genshi's syntax is based on Kid, but its architecture is different. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Genshi_(templating_language)
 
-- Genshi appears in categories: template language
-- Genshi Wikipedia page
- https://en.wikipedia.org/wiki/Genshi_(templating_language)
+- Tags: template language
 - There are at least 30 Genshi repos on GitHub
-- Genshi first developed in https://github.com/edgewall
+- Early development of Genshi happened in https://github.com/edgewall
 - The  Google BigQuery Public Dataset GitHub snapshot shows 101 users using Genshi in 115 repos on GitHub
 - Pygments supports syntax highlighting for Genshi
-- See also: (4 related languages)XML, Python, HTML, Kid templating language
+- See also: (4 related languages) XML, Python, HTML, Kid templating language
 
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:py=&quot;http://genshi.edgewall.org/&quot;&gt;
     &lt;body&gt;

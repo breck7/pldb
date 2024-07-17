@@ -8,15 +8,11 @@ FRACTRAN is an esoteric programming language created in 1996 by John Conway.
 #1108 on PLDB
 28 Years Old
 
-Try now: TIO
-
 FRACTRAN is a Turing-complete esoteric programming language invented by the mathematician John Conway. A FRACTRAN program is an ordered list of positive fractions together with an initial positive integer input n. The program is run by updating the integer n as follows: for the first fraction f in the list for which nf is an integer, replace n by nf repeat this rule until no fraction in the list produces an integer when multiplied by n, then halt. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/FRACTRAN
 
-- FRACTRAN appears in categories: esoteric programming language
-- FRACTRAN Wikipedia page
- https://en.wikipedia.org/wiki/FRACTRAN
-- FRACTRAN first developed in University of Cambridge, Sidney Sussex College
+- Tags: esoteric programming language
+- Early development of FRACTRAN happened in University of Cambridge, Sidney Sussex College
 - FRACTRAN on Esolang
  https://esolangs.org/wiki/Fractran
 - Read more about FRACTRAN on the web: 1.

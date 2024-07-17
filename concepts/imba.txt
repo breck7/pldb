@@ -11,15 +11,13 @@ git clone https://github.com/imba/imba
 
 Imba is a Web programming language that's fast in two ways: Imba's time-saving syntax with built-in tags and styles results in less typing and switching files so you can build things fast. Imba's groundbreaking memoized DOM is an order of magnitude faster than virtual DOM libraries, so you can build fast things.
 
-- Imba website
- https://imba.io/
-- Imba appears in categories: programming language
+- Tags: programming language
 - Imba is developed on GitHub and has 5,674 stars
-- Imba first developed in https://github.com/imba/
+- Early development of Imba happened in https://github.com/imba/
 - Imba compiles to JavaScript
 - Imba is written in Imba, JavaScript, JSON, TypeScript, Markdown, HTML, CSS, YAML, SVG, XML, Bourne shell
 - imba.io was registered in 2013
-- 2 languages in PLDB linking to Imba: cloc, Imba
+- 2 PLDB concepts link to Imba: cloc, Imba
 
 tag app-canvas
 	prop dpr = window.devicePixelRatio

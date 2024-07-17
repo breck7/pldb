@@ -14,17 +14,9 @@ AMPL, aka A Mathematical Programming Language, is an open source programming lan
 A Mathematical Programming Language (AMPL) is an algebraic modeling language to describe and solve high-complexity problems for large-scale mathematical computing (i.e., large-scale optimization and scheduling-type problems). It was developed by Robert Fourer, David Gay, and Brian Kernighan at Bell Laboratories. AMPL supports dozens of solvers, both open source and commercial software, including CBC, CPLEX, FortMP, Gurobi, MINOS, IPOPT, SNOPT, KNITRO, and LGO. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AMPL
 
-- AMPL website
- https://ampl.com/
-- AMPL appears in categories: programming language
-- AMPL Wikipedia page
- https://en.wikipedia.org/wiki/AMPL
-- AMPL docs
- https://ampl.com/learn/docs/
+- Tags: programming language
 - There are at least 5,570 AMPL repos on GitHub
-- AMPL first developed in AMPL Optimization LLC
-- AMPL on Twitter
- https://twitter.com/amplopt
+- Early development of AMPL happened in AMPL Optimization LLC
 - The  Google BigQuery Public Dataset GitHub snapshot shows 806 users using AMPL in 852 repos on GitHub
 - Explore AMPL snippets on Rosetta Code
 - AMPL on HOPL
@@ -33,12 +25,10 @@ A Mathematical Programming Language (AMPL) is an algebraic modeling language to 
 - GitHub supports syntax highlighting for AMPL
 - Events page for AMPL
  https://ampl.com/about/upcoming-events/
-- Frequently Asked Questions for AMPL
- https://ampl.com/learn/docs/faqs/
 - Indeed.com has 3 matches for "ampl developer".
 - ampl.com was registered in 1995
-- See also: (8 related languages)Linux, Unix, awk, C, Algebraic modeling language, NL, XML, Microsoft Excel
-- 2 languages in PLDB linking to AMPL: mpl, rason
+- See also: (8 related languages) Linux, Unix, awk, C, Algebraic modeling language, NL, XML, Microsoft Excel
+- 2 PLDB concepts link to AMPL: mpl, rason
 
 set PROD;  # products
 

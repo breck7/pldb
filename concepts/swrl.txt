@@ -10,9 +10,7 @@ Semantic Web Rule Language, aka Semantic Web Rule Language, is a xml format crea
 The Semantic Web Rule Language (SWRL) is a proposed language for the Semantic Web that can be used to express rules as well as logic, combining OWL DL or OWL Lite with a subset of the Rule Markup Language (itself a subset of Datalog).The specification was submitted in May 2004 to the W3C by the National Research Council of Canada, Network Inference (since acquired by webMethods), and Stanford University in association with the Joint US/EU ad hoc Agent Markup Language Committee. The specification was based on an earlier proposal for an OWL rules language.SWRL has the full power of OWL DL, but at the price of decidability and practical implementations. However, decidability can be regained by restricting the form of admissible rules, typically by imposing a suitable safety condition.Rules are of the form of an implication between an antecedent (body) and consequent (head). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language
 
-- Semantic Web Rule Language appears in categories: xmlFormat
-- Semantic Web Rule Language Wikipedia page
- https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language
+- Tags: xmlFormat
 - Semantic Web Rule Language on HOPL
  https://hopl.info/showlanguage.prx?exp=7647
 

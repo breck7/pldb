@@ -12,9 +12,7 @@ git clone https://github.com/zaphar/ucg
 
 UCG is a universal grammar for configuration. UCG's goal is not to define a configuration format like JSON, YAML, or TOML. It is not intended to replace the other serialization formats. Instead it is intended to provide a common grammar for generating those formats.
 
-- UCG website
- https://ucg.marzhillstudios.com/
-- UCG appears in categories: dataNotation
+- Tags: dataNotation
 - UCG is developed on GitHub and has 27 stars
 - UCG compiles to JSON or YAML or TOML or XML
 - UCG is written in Rust, Markdown, SCSS, TOML, HTML, YAML, Nix, Make, JSON, Bourne shell, JavaScript

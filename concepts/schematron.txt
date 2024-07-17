@@ -10,10 +10,8 @@ Schematron is a xml format created in 1999.
 Schematron is a rule-based validation language for making assertions about the presence or absence of patterns in XML trees.  It is a structural schema language expressed in XML using a small number of elements and XPath. In a typical implementation, the Schematron schema XML is processed into normal XSLT code for deployment anywhere that XSLT can be used. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Schematron
 
-- Schematron appears in categories: xmlFormat
-- Schematron Wikipedia page
- https://en.wikipedia.org/wiki/Schematron
-- Schematron first developed in Academia Sinica
+- Tags: xmlFormat
+- Early development of Schematron happened in Academia Sinica
 
 &lt;schema xmlns=&quot;http://purl.oclc.org/dsdl/schematron&quot;&gt;
   &lt;pattern&gt;

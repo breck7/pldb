@@ -10,19 +10,15 @@ Curry is a programming language created in 1990 by Michael Hanus and Sergio Anto
 34 Years Old
 4 Repos
 
-Try now: Riju
-
 Curry is an experimental functional logic programming language, based on the Haskell language. It merges elements of functional and logic programming, including constraint programming integration. It is nearly a superset of Haskell, lacking support mostly for overloading using type classes, which some implementations provide anyway as a language extension, such as the Münster Curry Compiler.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Curry_(programming_language)
 
-- Curry appears in categories: programming language
-- Curry Wikipedia page
- https://en.wikipedia.org/wiki/Curry_(programming_language)
+- Tags: programming language
 - There are at least 4 Curry repos on GitHub
-- Curry first developed in University of Kiel
+- Early development of Curry happened in University of Kiel
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Curry in 1 repos on GitHub
 - Explore Curry snippets on Rosetta Code
-- See also: (4 related languages)C, Haskell, Prolog, Haskell
+- See also: (4 related languages) C, Haskell, Prolog, Haskell
 
 main :: IO ()
 main = putStrLn &quot;Hello, world!&quot;

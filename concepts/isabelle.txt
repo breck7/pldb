@@ -11,18 +11,14 @@ Isabelle is an open source programming language created in 1986.
 The Isabelle theorem prover is an interactive theorem prover, a Higher Order Logic (HOL) theorem prover. It is an LCF-style theorem prover (written in Standard ML), so it is based on a small logical core to ease logical correctness. Isabelle is generic: it provides a meta-logic (a weak type theory), which is used to encode object logics like first-order logic (FOL), higher-order logic (HOL) or Zermelo–Fraenkel set theory (ZFC). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
 
-- Isabelle website
- http://isabelle.in.tum.de/
-- Isabelle appears in categories: programming language
-- Isabelle Wikipedia page
- https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
+- Tags: programming language
 - There are at least 839 Isabelle repos on GitHub
-- Isabelle first developed in University Of Cambridge and Technische Universität München
+- Early development of Isabelle happened in University Of Cambridge and Technische Universität München
 - The  Google BigQuery Public Dataset GitHub snapshot shows 115 users using Isabelle in 137 repos on GitHub
 - Isabelle LSP implementation
 - Pygments supports syntax highlighting for Isabelle
 - GitHub supports syntax highlighting for Isabelle
-- See also: (2 related languages)Standard ML, Coq
+- See also: (2 related languages) Standard ML, Coq
 - Read more about Isabelle on the web: 1.
  https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
 

@@ -7,19 +7,11 @@ Visual Basic is a programming language created in 1991.
 #41 on PLDB
 33 Years Old
 
-Try now: Riju
-
 Visual Basic is a third-generation event-driven programming language and integrated development environment (IDE) from Microsoft for its Component Object Model (COM) programming model first released in 1991 and declared legacy during 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ActiveX Data Objects, and creation of ActiveX controls and objects. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Visual_Basic
 
-- Visual Basic website
- https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
-- Visual Basic appears in categories: programming language
-- Visual Basic Wikipedia page
- https://en.wikipedia.org/wiki/Visual_Basic
-- Visual Basic docs
- https://learn.microsoft.com/en-us/dotnet/visual-basic/
-- Visual Basic first developed in Microsoft
+- Tags: programming language
+- Early development of Visual Basic happened in Microsoft
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Visual Basic in 11k repos on GitHub
 - Check out the 21 Visual Basic meetup groups on Meetup.com.
 - There are 7,807 members in the Visual Basic subreddit
@@ -33,8 +25,8 @@ Visual Basic is a third-generation event-driven programming language and integra
 - GitHub supports syntax highlighting for Visual Basic
 - Visual Basic appears in the Quine Relay project
 - Indeed.com has 3,294 matches for "visual basic engineer".
-- See also: (18 related languages)Visual Basic .NET, Visual Studio, BASIC, Gambas, Xojo, Basic4ppc, NS Basic, VBA, Perl, Pascal, Fortran, VBScript, Ruby, QuickBASIC, AUTOCAD, ASP, WinWrap Basic, LotusScript
-- 13 languages in PLDB linking to Visual Basic: cloc, Emscripten, Ibis, Iterm2, Linotte, mal, NCAR Command Language, Pygments, Red, SmallBASIC, Speedie, weebasic, xlwings-editor
+- See also: (18 related languages) Visual Basic .NET, Visual Studio, BASIC, Gambas, Xojo, Basic4ppc, NS Basic, VBA, Perl, Pascal, Fortran, VBScript, Ruby, QuickBASIC, AUTOCAD, ASP, WinWrap Basic, LotusScript
+- 13 PLDB concepts link to Visual Basic: cloc, Emscripten, Ibis, Iterm2, Linotte, mal, NCAR Command Language, Pygments, Red, SmallBASIC, Speedie, weebasic, xlwings-editor
 
 Module Program
     Function Square(num As Integer) As Integer

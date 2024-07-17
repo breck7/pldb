@@ -12,10 +12,8 @@ git clone https://foss.heptapod.net/games/harlowe
 
 The default Twine 2 story format.
 
-- Harlowe appears in categories: text markup language
-- Harlowe docs
- http://twine2.neocities.org/
-- See also: (1 related languages)Twine
+- Tags: text markup language
+- See also: (1 related languages) Twine
 
 &lt;tw-storydata startnode=1 options=debug&gt;
 &lt;tw-passagedata pid=1 name=Start&gt;(enchant:?Page,(background:white)+(color:black))[[Next]]&lt;/tw-passagedata&gt;

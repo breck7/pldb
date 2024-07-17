@@ -12,15 +12,11 @@ git clone https://github.com/faylang/fay
 
 A proper subset of Haskell that compiles to JavaScript
 
-- fay website
- https://github.com/faylang/fay/wiki
-- fay appears in categories: programming language
+- Tags: programming language
 - fay is developed on GitHub and has 1,274 stars
-- fay first developed in https://github.com/faylang/
+- Early development of fay happened in https://github.com/faylang/
 - fay compiles to JavaScript
 - fay is written in Haskell, Rescript, HTML, Markdown, YAML, Bourne shell, Bash, JSON, XML
-- fay on Twitter
- https://twitter.com/fayhaskell
 
 {-# LANGUAGE EmptyDataDecls #-}
 module Hello where

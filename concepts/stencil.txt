@@ -10,15 +10,11 @@ Stencil is an open source template language created in 2018 by Kyle Fuller.
 
 git clone https://github.com/stencilproject/Stencil
 
-Try now: TIO
-
 Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
 
-- Stencil website
- https://stencil.fuller.li/en/latest/
-- Stencil appears in categories: template language
+- Tags: template language
 - Stencil is developed on GitHub and has 2,135 stars
-- Stencil first developed in https://github.com/stencilproject
+- Early development of Stencil happened in https://github.com/stencilproject
 - Stencil is written in Swift, HTML, Ruby, YAML, reStructuredText, Markdown, Make, Python, JSON, Bourne shell
 
 There are {{ articles.count }} articles.

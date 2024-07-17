@@ -10,20 +10,10 @@ Sqlalchemy is a query language created in 2006 by Michael Bayer.
 
 git clone https://github.com/sqlalchemy/sqlalchemy
 
-- Sqlalchemy website
- https://www.sqlalchemy.org/
-- Sqlalchemy appears in categories: queryLanguage
-- Sqlalchemy Wikipedia page
- https://en.wikipedia.org/wiki/SQLAlchemy
+- Tags: queryLanguage
 - Sqlalchemy is developed on GitHub and has 62,000 stars
-- Sqlalchemy docs
- https://docs.sqlalchemy.org/en/14/
-- Sqlalchemy mailing list
- https://groups.google.com/g/sqlalchemy
-- Sqlalchemy first developed in https://www.sqlalchemy.org/support.html
+- Early development of Sqlalchemy happened in https://www.sqlalchemy.org/support.html
 - Sqlalchemy is written in Python, reStructuredText, YAML, Markdown, Ini, Make, Tex, TOML, Cython
-- Sqlalchemy on Twitter
- https://twitter.com/sqlalchemy
 
 SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
 FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by

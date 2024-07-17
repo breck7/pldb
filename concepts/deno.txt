@@ -12,23 +12,15 @@ git clone https://github.com/denoland/deno
 
 A modern runtime for JavaScript and TypeScript.
 
-- Deno website
- https://deno.land/
-- Deno appears in categories: compiler
-- Deno Wikipedia page
- https://en.wikipedia.org/wiki/Deno_(software)
+- Tags: compiler
 - Deno is developed on GitHub and has 84,234 stars
 - Watch the history of the Deno repo visualized with Gource
-- Deno docs
- https://deno.land/manual@v1.27.1/introduction
-- Deno first developed in Deno Land Inc
+- Early development of Deno happened in Deno Land Inc
 - Deno is written in TypeScript, JavaScript, Rust, JSON, Markdown, TOML, JSX, YAML, Jupyter Notebook, Lua, CSS, C, IDL, C#, XML, PowerShell, Dockerfile, SVG
-- Deno on Twitter
- https://twitter.com/deno_land
 - There are 8,226 members in the Deno subreddit
 - deno.land was registered in 2018
-- See also: (2 related languages)JavaScript, TypeScript
-- 1 languages in PLDB linking to Deno: Bun
+- See also: (2 related languages) JavaScript, TypeScript
+- 1 PLDB concepts link to Deno: Bun
 
 // Imports `serve` from the remote Deno standard library, using URL.
 import { serve } from &quot;https://deno.land/std@v0.21.0/http/server.ts&quot;;

@@ -13,12 +13,10 @@ git clone https://github.com/jashkenas/coffeescript
 
 Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
 
-- Literate CoffeeScript website
- https://coffeescript.org/#literate
-- Literate CoffeeScript appears in categories: programming language
+- Tags: programming language
 - Literate CoffeeScript is developed on GitHub and has 16,246 stars
 - There are at least 7,938 Literate CoffeeScript repos on GitHub
-- Literate CoffeeScript first developed in https://github.com/jashkenas/coffeescript/issues
+- Early development of Literate CoffeeScript happened in https://github.com/jashkenas/coffeescript/issues
 - Literate CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
 - GitHub supports syntax highlighting for Literate CoffeeScript
 - coffeescript.org was registered in 2009

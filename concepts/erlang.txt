@@ -13,26 +13,14 @@ Erlang is an open source programming language created in 1986 by Joe Armstrong a
 
 git clone https://github.com/erlang/otp
 
-Try now: Riju
-
 Erlang ( ER-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics: Distributed Fault-tolerant Soft real-time, Highly available, non-stop applications Hot swapping, where code can be changed without stopping a system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Erlang_(programming_language)
 
-- Erlang website
- https://www.erlang.org
-- Erlang appears in categories: programming language
-- Erlang downloads page
- https://www.erlang.org/downloads
-- Erlang Wikipedia page
- https://en.wikipedia.org/wiki/Erlang_(programming_language)
+- Tags: programming language
 - Erlang is developed on GitHub
-- Erlang docs
- https://www.erlang.org/docs
 - There are at least 28,645 Erlang repos on GitHub
-- Erlang first developed in Ericsson
+- Early development of Erlang happened in Ericsson
 - Erlang is written in Erlang, C, Markdown, Make, JSON, Bourne shell, C++, XML, Java, Elixir, XSD, Assembly language, Python, HTML, SQL, Perl, Lisp, D, M4, YAML, sed, Bash, Dockerfile, Ini, DTD, CSS, JavaScript, Diff, SVG, XSLT, plantuml
-- Erlang on Twitter
- https://twitter.com/erlang_org
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Erlang in 15k repos on GitHub
 - Check out the 306 Erlang meetup groups on Meetup.com.
 - There are 9,057 members in the Erlang subreddit
@@ -52,16 +40,10 @@ Erlang ( ER-lang) is a general-purpose, concurrent, functional programming langu
 - Erlang appears in the Quine Relay project
 - PLDB has 2 Jupyter Kernels for Erlang: github.com, github.com
 - There is a central package repository for Erlang
-- Release Notes for Erlang
- https://www.erlang.org/news
-- Official Blog page for Erlang
- https://www.erlang.org/blog
-- Frequently Asked Questions for Erlang
- https://www.erlang.org/faq/introduction.html
 - Indeed.com has 183 matches for "erlang engineer".
 - erlang.org was registered in 1998
-- See also: (17 related languages)Prolog, Smalltalk, PLEX, F#, Clojure, Rust, Scala, Opa, Elixir, Dart, Oz, Java, ASCII, Occam, CSP, LFE, Lisp
-- 14 languages in PLDB linking to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, Erlang, gleam, hamler, mal, Pygments, Reia, Sophia
+- See also: (17 related languages) Prolog, Smalltalk, PLEX, F#, Clojure, Rust, Scala, Opa, Elixir, Dart, Oz, Java, ASCII, Occam, CSP, LFE, Lisp
+- 14 PLDB concepts link to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, Erlang, gleam, hamler, mal, Pygments, Reia, Sophia
 
 -module(square).
 -export([square/1]).

@@ -12,17 +12,9 @@ ColdFusion is an open source programming language created in 1995 by Joseph J. A
 Adobe ColdFusion is a commercial rapid web application development platform created by J. J. Allaire in 1995. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ColdFusion
 
-- ColdFusion website
- https://www.adobe.com/products/coldfusion
-- ColdFusion appears in categories: programming language
-- ColdFusion Wikipedia page
- https://en.wikipedia.org/wiki/ColdFusion
-- ColdFusion docs
- https://cfdocs.org/
+- Tags: programming language
 - There are at least 20,756 ColdFusion repos on GitHub
-- ColdFusion first developed in Adobe
-- ColdFusion on Twitter
- https://twitter.com/coldfusion
+- Early development of ColdFusion happened in Adobe
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using ColdFusion in 2k repos on GitHub
 - Check out the 22 ColdFusion meetup groups on Meetup.com.
 - There are 10 Project Euler users using ColdFusion
@@ -30,8 +22,8 @@ Adobe ColdFusion is a commercial rapid web application development platform crea
 - Pygments supports syntax highlighting for ColdFusion
 - GitHub supports syntax highlighting for ColdFusion
 - There is a central package repository for ColdFusion
-- See also: (23 related languages)Java, HTML, CFML, ASP, JSP, PHP, JavaScript, CFScript, SOAP, PDF, SMTP, FTP, XML, XPath, Solaris, Microsoft Excel, Linux, Eclipse, WSDL, JSON, Jython, Groovy, JRuby
-- 4 languages in PLDB linking to ColdFusion: Ace Editor, cloc, ColdFusion Components, Pygments
+- See also: (23 related languages) Java, HTML, CFML, ASP, JSP, PHP, JavaScript, CFScript, SOAP, PDF, SMTP, FTP, XML, XPath, Solaris, Microsoft Excel, Linux, Eclipse, WSDL, JSON, Jython, Groovy, JRuby
+- 4 PLDB concepts link to ColdFusion: Ace Editor, cloc, ColdFusion Components, Pygments
 
 &lt;cfset message = &quot;Hello World&quot;&gt;
 &lt;cfoutput&gt; #message#&lt;/cfoutput&gt;

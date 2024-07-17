@@ -10,13 +10,11 @@ POP-2 is a programming language created in 1967.
 POP-2 (also referred to as POP2) is a programming language developed around 1970 from the earlier language POP-1 (developed by Robin Popplestone in 1968, originally named COWSEL) by Robin Popplestone and Rod Burstall at the University of Edinburgh.  It drew roots from many sources: the languages LISP and ALGOL 60, and theoretical ideas from Peter J. Landin. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/POP-2
 
-- POP-2 appears in categories: programming language
-- POP-2 Wikipedia page
- https://en.wikipedia.org/wiki/POP-2
-- POP-2 first developed in University of Edinburgh
+- Tags: programming language
+- Early development of POP-2 happened in University of Edinburgh
 - POP-2 on HOPL
  https://hopl.info/showlanguage.prx?exp=298
-- See also: (8 related languages)COWSEL, ALGOL 60, Pop-11, Unix, Prolog, POPLOG, Common Lisp, Standard ML
+- See also: (8 related languages) COWSEL, ALGOL 60, Pop-11, Unix, Prolog, POPLOG, Common Lisp, Standard ML
 
 vars operation 3 +*;
     lambda x y; x * x + y * y end -&gt; nonop +*

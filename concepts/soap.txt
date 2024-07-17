@@ -14,14 +14,10 @@ SOAP, aka Simple Object Access Protocol, is a xml format created in 1998 by Dave
 SOAP (originally Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SOAP
 
-- SOAP appears in categories: xmlFormat
-- SOAP Wikipedia page
- https://en.wikipedia.org/wiki/SOAP
-- SOAP docs
- https://knowledge.channeladvisor.com/kc?id=kb_article&sysparm_article=KB0018150&sys_kb_id=b02d13c91bd5d1d42d9eea40604bcb2e&spa=1
-- SOAP first developed in Microsoft
+- Tags: xmlFormat
+- Early development of SOAP happened in Microsoft
 - Indeed.com has 7,493 matches for "soap language".
-- See also: (11 related languages)HTTP, SMTP, Linux, XML, TCP, WDDX, RFC, WSDL, TLS, JSON, REST
+- See also: (11 related languages) HTTP, SMTP, Linux, XML, TCP, WDDX, RFC, WSDL, TLS, JSON, REST
 
 POST /InStock HTTP/1.1
 Host: www.example.org

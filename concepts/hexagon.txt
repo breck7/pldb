@@ -10,11 +10,9 @@ Qualcomm Hexagon is an assembly language created in 2006.
 Hexagon (QDSP6) is the brand for a family of 32-bit multi-threaded microarchitectures implementing the same instruction set for a digital signal processor (DSP) developed by Qualcomm. According to 2012 estimation, Qualcomm shipped 1.2 billion DSP cores inside its system on a chip (SoCs) (average 2.3 DSP core per SoC) in 2011 year, and 1.5 billion cores were planned for 2012, making the QDSP6 the most shipped architecture of DSP (CEVA had around 1 billion of DSP cores shipped in 2011 with 90% of IP-licenseable DSP market). The Hexagon architecture is designed to deliver performance with low power over a variety of applications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Qualcomm_Hexagon
 
-- Qualcomm Hexagon appears in categories: assembly language
-- Qualcomm Hexagon Wikipedia page
- https://en.wikipedia.org/wiki/Qualcomm_Hexagon
-- Qualcomm Hexagon first developed in Qualcomm
-- See also: (2 related languages)Linux, LLVM IR
+- Tags: assembly language
+- Early development of Qualcomm Hexagon happened in Qualcomm
+- See also: (2 related languages) Linux, LLVM IR
 
 { R17:16 = MEMD(R0++M1)
   MEMD(R6++M1) = R25:24

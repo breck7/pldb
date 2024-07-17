@@ -11,19 +11,15 @@ CIL is a programming language created in 1994.
 Cilk, Cilk++ and Cilk Plus are general-purpose programming languages designed for multithreaded parallel computing. They are based on the C and C++ programming languages, which they extend with constructs to express parallel loops and the fork–join idiom. Originally developed in the 1990s at the Massachusetts Institute of Technology (MIT) in the group of Charles E. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cilk
 
-- CIL website
- http://www.cilk.com/
-- CIL appears in categories: programming language
-- CIL Wikipedia page
- https://en.wikipedia.org/wiki/Cilk
+- Tags: programming language
 - There are at least 1 CIL repos on GitHub
-- CIL first developed in Intel
+- Early development of CIL happened in Intel
 - Explore CIL snippets on Rosetta Code
 - CIL on HOPL
  https://hopl.info/showlanguage.prx?exp=1899
 - CIL appears in the TIOBE Index
 - cilk.com was registered in 1999
-- See also: (4 related languages)C, OpenCL, NESL, UPC
+- See also: (4 related languages) C, OpenCL, NESL, UPC
 
 // y ← α x + y
  void axpy(int n, float alpha, const float *x, float *y)

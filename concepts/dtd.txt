@@ -10,13 +10,11 @@ DTD, aka document type definition, is a grammar language created in 1996.
 A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A Document Type Definition (DTD) defines the legal building blocks of an XML document. It defines the document structure with a list of legal elements and attributes. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Document_type_definition
 
-- DTD appears in categories: grammarLanguage
-- DTD Wikipedia page
- https://en.wikipedia.org/wiki/Document_type_definition
-- DTD first developed in International Organization for Standardization
+- Tags: grammarLanguage
+- Early development of DTD happened in International Organization for Standardization
 - Pygments supports syntax highlighting for DTD
-- See also: (2 related languages)XML, HTML
-- 22 languages in PLDB linking to DTD: Ballerina, Ceylon, Chapel, Click, commonmark, Eiffel, Emscripten, Erlang, Factor, Gradle, HHVM, Java, mythryl, NetLogo, OpenNN, PHP, Pygments, Python, relax, SmallBASIC, Trex, xduce
+- See also: (2 related languages) XML, HTML
+- 22 PLDB concepts link to DTD: Ballerina, Ceylon, Chapel, Click, commonmark, Eiffel, Emscripten, Erlang, Factor, Gradle, HHVM, Java, mythryl, NetLogo, OpenNN, PHP, Pygments, Python, relax, SmallBASIC, Trex, xduce
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
 &lt;!DOCTYPE people_list [

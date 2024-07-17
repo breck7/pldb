@@ -10,11 +10,9 @@ GraphML is a xml format created in 2001.
 GraphML is an XML-based file format for graphs. The GraphML file format results from the joint effort of the graph drawing community to define a common format for exchanging graph structure data. It uses an XML-based syntax and supports the entire range of possible graph structure constellations including directed, undirected, mixed graphs, hypergraphs, and application-specific attributes.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GraphML
 
-- GraphML appears in categories: xmlFormat
-- GraphML Wikipedia page
- https://en.wikipedia.org/wiki/GraphML
-- GraphML first developed in https://list.dia.uniroma3.it/mailman/listinfo/gdnet
-- See also: (4 related languages)Graph Modeling Language, XML, DOT, Java
+- Tags: xmlFormat
+- Early development of GraphML happened in https://list.dia.uniroma3.it/mailman/listinfo/gdnet
+- See also: (4 related languages) Graph Modeling Language, XML, DOT, Java
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;graphml xmlns=&quot;http://graphml.graphdrawing.org/xmlns&quot;

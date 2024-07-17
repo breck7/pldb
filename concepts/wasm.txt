@@ -11,29 +11,21 @@ WebAssembly is an open source bytecode format created in 2015 by Alon Zakai.
 
 git clone https://github.com/WebAssembly/wabt
 
-Try now: TIO
-
 WebAssembly (Wasm, WA) is a web standard that defines a binary format and a corresponding assembly-like text format for executable code in Web pages. It is meant to enable executing code nearly as fast as running native machine code. It was envisioned to complement JavaScript to speed up performance-critical parts of web applications and later on to enable web development in languages other than JavaScript. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/WebAssembly
 
-- WebAssembly website
- http://webassembly.org/
-- WebAssembly appears in categories: bytecode format
-- WebAssembly Wikipedia page
- https://en.wikipedia.org/wiki/WebAssembly
+- Tags: bytecode format
 - WebAssembly is developed on GitHub and has 4,534 stars
-- WebAssembly docs
- https://developer.mozilla.org/en-US/docs/WebAssembly
 - There are at least 1,641 WebAssembly repos on GitHub
-- WebAssembly first developed in W3C
+- Early development of WebAssembly happened in W3C
 - WebAssembly is written in C++, HTML, C, JavaScript, Python, WebAssembly, Markdown, YAML, Bourne shell, Make, CMake, CSS, Lua
 - The  Google BigQuery Public Dataset GitHub snapshot shows 148 users using WebAssembly in 160 repos on GitHub
 - Pygments supports syntax highlighting for WebAssembly
 - GitHub supports syntax highlighting for WebAssembly
 - Indeed.com has 5 matches for "webassembly engineer".
 - webassembly.org was registered in 2015
-- See also: (12 related languages)Asm.js, Assembly language, JavaScript, Unity, LLVM IR, C, Rust, Java, C#, Go, S-expressions, DOI
-- 27 languages in PLDB linking to WebAssembly: AssemblyScript, beef-lang, binaryen, BlitzMax, cloc, Cyber, Emscripten, Euphoria, Flow9, invokator, ktye/k, Node.js, POV-Ray SDL, psyche, Pygments, rio, Rust, SpiderMonkey, tridash, v8, Virgil, wah, walt, WebAssembly, wasmer, wats, Wax
+- See also: (12 related languages) Asm.js, Assembly language, JavaScript, Unity, LLVM IR, C, Rust, Java, C#, Go, S-expressions, DOI
+- 27 PLDB concepts link to WebAssembly: AssemblyScript, beef-lang, binaryen, BlitzMax, cloc, Cyber, Emscripten, Euphoria, Flow9, invokator, ktye/k, Node.js, POV-Ray SDL, psyche, Pygments, rio, Rust, SpiderMonkey, tridash, v8, Virgil, wah, walt, WebAssembly, wasmer, wats, Wax
 
 20 00
 50

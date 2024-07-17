@@ -11,8 +11,6 @@ DNS, aka Domain Name System, is a protocol created in 1985 by Paul Mockapetris.
 The Domain Name System (DNS) is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities. Most prominently, it translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Domain_Name_System
 
-- DNS appears in categories: protocol
-- DNS Wikipedia page
- https://en.wikipedia.org/wiki/Domain_Name_System
-- DNS first developed in Stanford Research Institute
-- 2 languages in PLDB linking to DNS: DNS over HTTPS, GNS
+- Tags: protocol
+- Early development of DNS happened in Stanford Research Institute
+- 2 PLDB concepts link to DNS: DNS over HTTPS, GNS

@@ -11,22 +11,14 @@ awk, aka Aho, Weinberger, Kernighan, is a programming language created in 1977 b
 47 Years Old
 3k Repos
 
-Try now: Riju · TIO
-
 AWK is a programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems. The AWK language is a data-driven scripting language consisting of a set of actions to be taken against streams of textual data – either run directly on files or used as part of a pipeline – for purposes of extracting or transforming text, such as producing formatted reports. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AWK
 
-- awk website
- http://www.cs.princeton.edu/~bwk/btl.mirror/
-- awk appears in categories: programming language
+- Tags: programming language
 - Interview with the creators of awk: 1.
  https://pldb.io/blog/brianKernighan.html
-- awk Wikipedia page
- https://en.wikipedia.org/wiki/AWK
-- awk docs
- https://www.gnu.org/software/gawk/manual/gawk.html
 - There are at least 2,552 awk repos on GitHub
-- awk first developed in Bell Labs
+- Early development of awk happened in Bell Labs
 - The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on GitHub
 - There are 1,929 members in the awk subreddit
 - There are 14 Project Euler users using awk
@@ -39,11 +31,9 @@ AWK is a programming language designed for text processing and typically used as
 - Pygments supports syntax highlighting for awk
 - GitHub supports syntax highlighting for awk
 - awk appears in the Quine Relay project
-- awk leet sheet
- https://cheatsheets.zip/awk
 - Indeed.com has 7 matches for "awk engineer".
-- See also: (14 related languages)C, SNOBOL, Bourne shell, Tcl, AMPL, Perl, Lua, Regular Expressions, Unix, sed, FreeBSD, Solaris, Java, ISBN
-- 42 languages in PLDB linking to awk: Armed Bear Common Lisp, Bash, bawk, beef-lang, Chapel, Civet, crmsh, Eiffel, ELFE, FFmpeg, FLEX, Flow9, Go, groff, HHVM, Incipit, Java, kona, ktye/k, latino, Lil, Linux, mal, Manim, MongoDB, NGS, Node.js, Noweb, PHP, GNU Poke, POV-Ray SDL, Prism, Pygments, Ragel, Revolution, Ruby, Slony, Semantic Patch Language, Swift, V, Wonkey, XL
+- See also: (14 related languages) C, SNOBOL, Bourne shell, Tcl, AMPL, Perl, Lua, Regular Expressions, Unix, sed, FreeBSD, Solaris, Java, ISBN
+- 42 PLDB concepts link to awk: Armed Bear Common Lisp, Bash, bawk, beef-lang, Chapel, Civet, crmsh, Eiffel, ELFE, FFmpeg, FLEX, Flow9, Go, groff, HHVM, Incipit, Java, kona, ktye/k, latino, Lil, Linux, mal, Manim, MongoDB, NGS, Node.js, Noweb, PHP, GNU Poke, POV-Ray SDL, Prism, Pygments, Ragel, Revolution, Ruby, Slony, Semantic Patch Language, Swift, V, Wonkey, XL
 
 BEGIN { print &quot;Hello, world!&quot; }
 

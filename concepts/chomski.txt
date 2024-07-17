@@ -10,9 +10,7 @@ Chomski is a programming language created in 2007.
 chomski virtual machine  (named after the noted linguist Noam Chomsky) and pp (the pattern parser) refer to both a command line computer language and utility (interpreter for that language) which can be used to parse and transform text patterns. The utility reads input files character by character (sequentially), applying the operation which has been specified via the command line or a pp script, and then outputs the line. It was developed from 2006 as a Unix and Windows utility, and is available today for Windows and Linux systems. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Chomski
 
-- Chomski appears in categories: programming language
-- Chomski Wikipedia page
- https://en.wikipedia.org/wiki/Chomski
-- See also: (5 related languages)sed, Unix, grep, Unicode, C
+- Tags: programming language
+- See also: (5 related languages) sed, Unix, grep, Unicode, C
 
 cat inputFileName | chomski -s &#39;[-n]{plus;} &lt;&gt;{count;print;}&#39;

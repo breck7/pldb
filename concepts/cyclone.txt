@@ -10,15 +10,11 @@ Cyclone is a programming language created in 2001.
 The Cyclone programming language is intended to be a safe dialect of the C language. Cyclone is designed to avoid buffer overflows and other vulnerabilities that are possible in C programs, without losing the power and convenience of C as a tool for system programming. Cyclone development was started as a joint project of AT&T Labs Research and Greg Morrisett's group at Cornell in 2001. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cyclone_(programming_language)
 
-- Cyclone website
- http://cyclone.thelanguage.org
-- Cyclone appears in categories: programming language
-- Cyclone Wikipedia page
- https://en.wikipedia.org/wiki/Cyclone_(programming_language)
-- Cyclone first developed in AT&T Labs
+- Tags: programming language
+- Early development of Cyclone happened in AT&T Labs
 - Cyclone on HOPL
  https://hopl.info/showlanguage.prx?exp=3312
-- See also: (3 related languages)C, Rust, ML
+- See also: (3 related languages) C, Rust, ML
 
 #include &lt;stdio.h&gt;
 int main() {

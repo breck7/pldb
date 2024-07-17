@@ -10,14 +10,10 @@ Hocon, aka Human-Optimized Config Object Notation, is a data notation created in
 HOCON, or Human-Optimized Config Object Notation is a format for human-readable data, and a superset of JSON and .properties. It is primarily used in conjunction with the Play framework, and is developed by Lightbend. It is also supported as a configuration format for .NET projects via Akka.NET and Puppet.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/HOCON
 
-- Hocon website
- https://github.com/lightbend/config/blob/master/HOCON.md
-- Hocon appears in categories: dataNotation
-- Hocon Wikipedia page
- https://en.wikipedia.org/wiki/HOCON
+- Tags: dataNotation
 - Hocon is a superset of JSON
-- Hocon first developed in https://github.com/lightbend
-- See also: (4 related languages)JSON, Java Properties, Puppet, YAML
+- Early development of Hocon happened in https://github.com/lightbend
+- See also: (4 related languages) JSON, Java Properties, Puppet, YAML
 
 // one array
 a : [ 1, 2, 3, 4 ]

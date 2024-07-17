@@ -12,18 +12,14 @@ CWEB is an open source text markup language created in 1987 by Donald Knuth.
 CWEB is a computer programming system created by Donald Knuth and Silvio Levy as a follow-up to Knuth's WEB literate programming system, using the C programming language (and to a lesser extent the C++ and Java programming languages) instead of Pascal. Like WEB, it consists of two primary programs: CTANGLE, which produces compilable C code from the source texts, and CWEAVE, which produces nicely-formatted printable documentation using TeX.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CWEB
 
-- CWEB website
- http://www-cs-faculty.stanford.edu/~uno/cweb.html
-- CWEB appears in categories: text markup language
-- CWEB Wikipedia page
- https://en.wikipedia.org/wiki/CWEB
+- Tags: text markup language
 - There are at least 425 CWEB repos on GitHub
-- CWEB first developed in Stanford University
+- Early development of CWEB happened in Stanford University
 - The  Google BigQuery Public Dataset GitHub snapshot shows 53 users using CWEB in 53 repos on GitHub
 - CWEB on HOPL
  https://hopl.info/showlanguage.prx?exp=1939
-- See also: (4 related languages)Tex, C, Java, Pascal
-- 1 languages in PLDB linking to CWEB: Noweb
+- See also: (4 related languages) Tex, C, Java, Pascal
+- 1 PLDB concepts link to CWEB: Noweb
 
 \datethis
 @*Intro. This program generates clauses for the transition relation

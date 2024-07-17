@@ -10,12 +10,10 @@ Gist is a programming language created in 1977.
 In computing, GiST or Generalized Search Tree, is a data structure and API that can be used to build a variety of disk-based search trees.  GiST is a generalization of the B+ tree, providing a concurrent and recoverable height-balanced search tree infrastructure without making any assumptions about the type of data being stored, or the queries being serviced.  GiST can be used to easily implement a range of well-known indexes, including B+ trees, R-trees, hB-trees, RD-trees, and many others; it also allows for easy development of specialized indexes for new data types. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GiST
 
-- Gist appears in categories: programming language
-- Gist Wikipedia page
- https://en.wikipedia.org/wiki/GiST
-- Gist first developed in Information Sciences Institute
+- Tags: programming language
+- Early development of Gist happened in Information Sciences Institute
 - Gist on HOPL
  https://hopl.info/showlanguage.prx?exp=3987
-- See also: (1 related languages)PostgreSQL
+- See also: (1 related languages) PostgreSQL
 - Read more about Gist on Semantic Scholar: 1.
  https://semanticscholar.org/paper/51e62e71588bce8b05c4b041561304062d656f38

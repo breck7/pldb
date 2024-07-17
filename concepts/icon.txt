@@ -8,19 +8,11 @@ Icon is a programming language created in 1977 by Ralph Griswold.
 #509 on PLDB
 47 Years Old
 
-Try now: Riju · TIO
-
 Icon is a very high-level programming language featuring goal-directed execution and many facilities for managing strings and textual patterns. It is related to SNOBOL and SL5, string processing languages. Icon is not object-oriented, but an object-oriented extension called Idol was developed in 1996 which eventually became Unicon.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Icon_(programming_language)
 
-- Icon website
- http://www.cs.arizona.edu/icon
-- Icon appears in categories: programming language
-- Icon Wikipedia page
- https://en.wikipedia.org/wiki/Icon_(programming_language)
-- Icon docs
- https://www2.cs.arizona.edu/icon/
-- Icon first developed in The University of Arizona
+- Tags: programming language
+- Early development of Icon happened in The University of Arizona
 - Explore Icon snippets on Rosetta Code
 - Icon on HOPL
  https://hopl.info/showlanguage.prx?exp=510
@@ -29,8 +21,8 @@ Icon is a very high-level programming language featuring goal-directed execution
  https://packages.ubuntu.com/jammy/icont
 - Pygments supports syntax highlighting for Icon
 - Icon appears in the Quine Relay project
-- See also: (9 related languages)SNOBOL, Algol, Python, Unicon, C, Pascal, Java, Smalltalk, CLU
-- 1 languages in PLDB linking to Icon: Unicon
+- See also: (9 related languages) SNOBOL, Algol, Python, Unicon, C, Pascal, Java, Smalltalk, CLU
+- 1 PLDB concepts link to Icon: Unicon
 
 procedure main ()
     write(&quot;Hello, world!&quot;)

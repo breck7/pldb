@@ -12,15 +12,13 @@ git clone https://github.com/edn-format/edn
 
 Extensible Data Notation
 
-- EDN appears in categories: dataNotation
+- Tags: dataNotation
 - EDN is developed on GitHub and has 2,351 stars
-- EDN docs
- https://learnxinyminutes.com/docs/edn/#:~:text=Extensible%20Data%20Notation%20(EDN)%20is,restricted%20to%20data%2C%20no%20code.
 - There are at least 0 EDN repos on GitHub
-- EDN first developed in https://github.com/edn-format
+- Early development of EDN happened in https://github.com/edn-format
 - EDN is written in Markdown
 - GitHub supports syntax highlighting for EDN
-- 1 languages in PLDB linking to EDN: Datomic
+- 1 PLDB concepts link to EDN: Datomic
 
 {:a 1, &quot;foo&quot; :bar, [1 2 3] four}
 

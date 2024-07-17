@@ -11,19 +11,15 @@ Pig Latin is an open source query language created in 2008.
 Apache Pig is a high-level platform for creating programs that run on Apache Hadoop. The language for this platform is called Pig Latin.  Pig can execute its Hadoop jobs in MapReduce, Apache Tez, or Apache Spark. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Apache_Pig
 
-- Pig Latin website
- https://pig.apache.org/
-- Pig Latin appears in categories: queryLanguage
-- Pig Latin Wikipedia page
- https://en.wikipedia.org/wiki/Apache_Pig
+- Tags: queryLanguage
 - There are at least 1,347 Pig Latin repos on GitHub
-- Pig Latin first developed in Apache
+- Early development of Pig Latin happened in Apache
 - The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using Pig Latin in 606 repos on GitHub
 - CodeMirror package for syntax highlighting Pig Latin
 - Pygments supports syntax highlighting for Pig Latin
 - GitHub supports syntax highlighting for Pig Latin
-- See also: (8 related languages)Linux, Java, SQL, Python, JavaScript, Ruby, Groovy, Sawzall
-- 3 languages in PLDB linking to Pig Latin: Ace Editor, cloc, Pygments
+- See also: (8 related languages) Linux, Java, SQL, Python, JavaScript, Ruby, Groovy, Sawzall
+- 3 PLDB concepts link to Pig Latin: Ace Editor, cloc, Pygments
 
 input_lines = LOAD &#39;/tmp/word.txt&#39; AS (line:chararray);
 words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;

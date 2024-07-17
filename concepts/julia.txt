@@ -14,27 +14,15 @@ Julia is an open source programming language created in 2012 by Jeff Bezanson an
 
 git clone https://github.com/JuliaLang/julia
 
-Try now: Riju · TIO
-
 Julia is a high-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science, without the typical need of separate compilation to be fast, while also being effective for general-purpose programming, web use or as a specification language. Distinctive aspects of Julia's design include a type system with parametric polymorphism and types in a fully dynamic programming language and multiple dispatch as its core programming paradigm. It allows concurrent, parallel and distributed computing, and direct calling of C and Fortran libraries without glue code. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Julia_(programming_language)
 
-- Julia website
- http://julialang.org/
-- Julia appears in categories: programming language
-- Julia downloads page
- https://julialang.org/downloads/
-- Julia Wikipedia page
- https://en.wikipedia.org/wiki/Julia_(programming_language)
+- Tags: programming language
 - Julia is developed on GitHub and has 41,515 stars
 - Watch the history of the Julia repo visualized with Gource
-- Julia docs
- https://docs.julialang.org/en/v1/
 - There are at least 53,507 Julia repos on GitHub
-- Julia first developed in https://github.com/JuliaLang
+- Early development of Julia happened in https://github.com/JuliaLang
 - Julia is written in Julia, Markdown, TOML, C, Make, C++, LLVM IR, Bourne shell, Diff, XML, Scheme, Lisp, Assembly language, Tex, YAML, JSON, Objective-C, Python, SVG, Pascal, Clojure, D, CSS, Dockerfile
-- Julia on Twitter
- https://twitter.com/julialanguage
 - The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Julia in 6k repos on GitHub
 - Check out the 36 Julia meetup groups on Meetup.com.
 - There are 20,624 members in the Julia subreddit
@@ -52,17 +40,11 @@ Julia is a high-level dynamic programming language designed to address the needs
 - Julia appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Julia
 - There is a central package repository for Julia
-- Release Notes for Julia
- https://docs.julialang.org/en/v1/NEWS/
-- Official Blog page for Julia
- https://julialang.org/blog/
 - Events page for Julia
  https://discourse.julialang.org/c/community/events/56
-- Frequently Asked Questions for Julia
- https://discourse.julialang.org/faq
 - Indeed.com has 85 matches for "julia engineer".
-- See also: (28 related languages)C, Scheme, LLVM IR, Fortran, IA-32, Linux, FreeBSD, Lisp, Lua, Mathematica, Wolfram Language, MATLAB, Perl, Python, R, Ruby, Regular Expressions, Unicode, UTF-8, Common Lisp, Dylan, Algol, Fortress, HTML, XML, JSON, ARM, PowerPC
-- 10 languages in PLDB linking to Julia: Ace Editor, Chapel, cloc, dex, invokator, Julia, Links, mal, polyglot-compiler, Pygments
+- See also: (28 related languages) C, Scheme, LLVM IR, Fortran, IA-32, Linux, FreeBSD, Lisp, Lua, Mathematica, Wolfram Language, MATLAB, Perl, Python, R, Ruby, Regular Expressions, Unicode, UTF-8, Common Lisp, Dylan, Algol, Fortress, HTML, XML, JSON, ARM, PowerPC
+- 10 PLDB concepts link to Julia: Ace Editor, Chapel, cloc, dex, invokator, Julia, Links, mal, polyglot-compiler, Pygments
 
 println(&quot;Hello, world!&quot;)
 

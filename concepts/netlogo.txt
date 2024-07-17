@@ -14,24 +14,18 @@ git clone https://github.com/NetLogo/NetLogo
 NetLogo is an agent-based programming language and integrated modeling environment.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NetLogo
 
-- NetLogo website
- http://ccl.northwestern.edu/netlogo/
-- NetLogo appears in categories: programming language
-- NetLogo Wikipedia page
- https://en.wikipedia.org/wiki/NetLogo
+- Tags: programming language
 - NetLogo is developed on GitHub and has 890 stars
 - There are at least 3,859 NetLogo repos on GitHub
-- NetLogo first developed in Northwestern University
+- Early development of NetLogo happened in Northwestern University
 - NetLogo is written in Scala, Java, CSV, mustache, XML, Bourne shell, Markdown, YAML, HTML, XSLT, CSS, Bash, DTD
-- NetLogo on Twitter
- https://twitter.com/netlogo
 - The  Google BigQuery Public Dataset GitHub snapshot shows 138 users using NetLogo in 154 repos on GitHub
 - Explore NetLogo snippets on Rosetta Code
 - NetLogo on HOPL
  https://hopl.info/showlanguage.prx?exp=7674
 - GitHub supports syntax highlighting for NetLogo
-- See also: (5 related languages)StarLogo, Logo, ISBN, Scala, Java
-- 1 languages in PLDB linking to NetLogo: xTAO Modeling Language
+- See also: (5 related languages) StarLogo, Logo, ISBN, Scala, Java
+- 1 PLDB concepts link to NetLogo: xTAO Modeling Language
 
 patches-own [
   living?         ;; indicates if the cell is living

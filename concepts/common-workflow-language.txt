@@ -13,15 +13,11 @@ git clone https://github.com/common-workflow-language/cwltool
 
 The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
 
-- CWL website
- https://www.commonwl.org/
-- CWL appears in categories: programming language
+- Tags: programming language
 - CWL is developed on GitHub and has 284 stars
 - There are at least 464 CWL repos on GitHub
-- CWL first developed in https://w3id.org/cwl/meeting_minutes
+- Early development of CWL happened in https://w3id.org/cwl/meeting_minutes
 - CWL is written in Python, YAML, Markdown, JSON, reStructuredText, Bourne shell, JavaScript, Make, Ini, Dockerfile, TOML
-- CWL on Twitter
- https://twitter.com/commonwl
 - The  Google BigQuery Public Dataset GitHub snapshot shows 57 users using CWL in 75 repos on GitHub
 - GitHub supports syntax highlighting for CWL
 - commonwl.org was registered in 2015

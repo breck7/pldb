@@ -9,10 +9,8 @@ Copilot is a programming language created in 2021.
 
 Copilot is a realtime programming language and Runtime Verification framework. It allows users to write concise programs in a simple but powerful way using a stream-based approach. Programs can be interpreted for testing, or translated C99 code to be incorporated in a project, or as a standalone application. The C99 backend ensures us that the output is constant in memory and time, making it suitable for systems with hard realtime requirements.
 
-- Copilot website
- https://copilot-language.github.io/
-- Copilot appears in categories: programming language
-- Copilot first developed in NASA and https://github.com/Copilot-Language
+- Tags: programming language
+- Early development of Copilot happened in NASA and https://github.com/Copilot-Language
 
 -- Raw temperature from sensor, range -50.0C to 100.0C.
 temp :: Stream Word8

@@ -11,13 +11,9 @@ PL/SQL is a programming language created in 1991.
 PL/SQL (Procedural Language/Structured Query Language) is Oracle Corporation's procedural extension for SQL and the Oracle relational database. PL/SQL is available in Oracle Database (since version 6 - stored pl/sql procedures/functions/packages/triggers since version 7), TimesTen in-memory database (since version 11.2.1), and IBM DB2 (since version 9.7). Oracle Corporation usually extends PL/SQL functionality with each successive release of the Oracle Database. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PL/SQL
 
-- PL/SQL appears in categories: programming language
-- PL/SQL Wikipedia page
- https://en.wikipedia.org/wiki/PL/SQL
-- PL/SQL docs
- https://docs.oracle.com/database/121/LNPLS/toc.htm
+- Tags: programming language
 - There are at least 20,365 PL/SQL repos on GitHub
-- PL/SQL first developed in Oracle
+- Early development of PL/SQL happened in Oracle
 - The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using PL/SQL in 7k repos on GitHub
 - Check out the 276 PL/SQL meetup groups on Meetup.com.
 - PL/SQL on HOPL
@@ -26,7 +22,7 @@ PL/SQL (Procedural Language/Structured Query Language) is Oracle Corporation's p
 - ANTLR grammar for PL/SQL
 - GitHub supports syntax highlighting for PL/SQL
 - Indeed.com has 2,972 matches for "pl/sql developer".
-- See also: (10 related languages)SQL, Transact-SQL, PostgreSQL, PL/pgSQL, SQL/PSM, Object Pascal, Free Pascal, Java, SQLite, SQLPL
+- See also: (10 related languages) SQL, Transact-SQL, PostgreSQL, PL/pgSQL, SQL/PSM, Object Pascal, Free Pascal, Java, SQLite, SQLPL
 
 BEGIN
   dbms_output.put_line(&#39;Hello World&#39;);

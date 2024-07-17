@@ -12,17 +12,9 @@ Stata is an open source programming language created in 1985 by William Gould.
 Stata is a general-purpose statistical software package created in 1985 by StataCorp. Most of its users work in research, especially in the fields of economics, sociology, political science, biomedicine and epidemiology. Stata's capabilities include data management, statistical analysis, graphics, simulations, regression, and custom programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Stata
 
-- Stata website
- https://www.stata.com/
-- Stata appears in categories: programming language
-- Stata Wikipedia page
- https://en.wikipedia.org/wiki/Stata
-- Stata docs
- https://www.stata.com/features/documentation/
+- Tags: programming language
 - There are at least 8,344 Stata repos on GitHub
-- Stata first developed in StataCorp
-- Stata on Twitter
- https://twitter.com/stata
+- Early development of Stata happened in StataCorp
 - The  Google BigQuery Public Dataset GitHub snapshot shows 867 users using Stata in 1k repos on GitHub
 - There are 16 Project Euler users using Stata
 - Explore Stata snippets on Rosetta Code
@@ -32,10 +24,10 @@ Stata is a general-purpose statistical software package created in 1985 by Stata
 - PLDB has 2 Jupyter Kernels for Stata: github.com, github.com
 - There is a central package repository for Stata
 - stata.com was registered in 1994
-- See also: (4 related languages)C, Linux, ASCII, Microsoft Excel
+- See also: (4 related languages) C, Linux, ASCII, Microsoft Excel
 - Read more about Stata on the web: 1.
  http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
-- 3 languages in PLDB linking to Stata: cloc, JAL compiler, JSL
+- 3 PLDB concepts link to Stata: cloc, JAL compiler, JSL
 
 /* Hello world in Stata */
 

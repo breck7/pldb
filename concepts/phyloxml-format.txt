@@ -10,14 +10,10 @@ PhyloXML is a xml format created in 2009.
 PhyloXML is an XML language for the analysis, exchange, and storage of phylogenetic trees (or networks) and associated data. The structure of phyloXML is described by XML Schema Definition (XSD) language. A shortcoming of current formats for describing phylogenetic trees (such as Nexus and Newick/New Hampshire) is a lack of a standardized means to annotate tree nodes and branches with distinct data fields (which in the case of a basic species tree might be: species names, branch lengths, and possibly multiple support values). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PhyloXML
 
-- PhyloXML website
- http://www.phyloxml.org/
-- PhyloXML appears in categories: xmlFormat
-- PhyloXML Wikipedia page
- https://en.wikipedia.org/wiki/PhyloXML
-- PhyloXML first developed in World Wide Web Consortium
+- Tags: xmlFormat
+- Early development of PhyloXML happened in World Wide Web Consortium
 - phyloxml.org was registered in 2005
-- See also: (3 related languages)XML, Nexus file, Newick format
+- See also: (3 related languages) XML, Nexus file, Newick format
 
  &lt;phyloxml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
   xsi:schemaLocation=&quot;http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd&quot;

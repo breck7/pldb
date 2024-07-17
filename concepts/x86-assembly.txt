@@ -8,21 +8,15 @@ x86 Assembly is an assembly language created in 1972.
 52 Years Old
 61k Repos
 
-Try now: Riju
-
 x86 assembly language is a family of backward-compatible assembly languages, which provide some level of compatibility all the way back to the Intel 8008 introduced in April 1972. x86 assembly languages are used to produce object code for the x86 class of processors. Like all assembly languages, it uses short mnemonics to represent the fundamental instructions that the CPU in a computer can understand and follow. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/X86_assembly_language
 
-- x86 Assembly appears in categories: assembly language
-- x86 Assembly Wikipedia page
- https://en.wikipedia.org/wiki/X86_assembly_language
-- x86 Assembly docs
- https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+- Tags: assembly language
 - There are at least 61,156 x86 Assembly repos on GitHub
 - x86 Assembly is supported by the GDB
 - GitHub supports syntax highlighting for x86 Assembly
-- See also: (6 related languages)Assembly language, X86, MMX instruction set, Unix, Netwide Assembler, GNU Assembler
-- 1 languages in PLDB linking to x86 Assembly: SectorC
+- See also: (6 related languages) Assembly language, X86, MMX instruction set, Unix, Netwide Assembler, GNU Assembler
+- 1 PLDB concepts link to x86 Assembly: SectorC
 
 	.text
 	.globl main

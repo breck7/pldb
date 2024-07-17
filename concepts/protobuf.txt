@@ -11,23 +11,17 @@ Protocol Buffers is an open source interface design language created in 2008.
 Protocol Buffers is a method of serializing structured data. It is useful in developing programs to communicate with each other over a wire or for storing data. The method involves an interface description language that describes the structure of some data and a program that generates source code from that description for generating or parsing a stream of bytes that represents the structured data. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Protocol_Buffers
 
-- Protocol Buffers website
- https://developers.google.com/protocol-buffers/
-- Protocol Buffers appears in categories: interface design language
-- Protocol Buffers Wikipedia page
- https://en.wikipedia.org/wiki/Protocol_Buffers
-- Protocol Buffers docs
- https://developers.google.com/protocol-buffers/docs/overview
+- Tags: interface design language
 - There are at least 23,747 Protocol Buffers repos on GitHub
-- Protocol Buffers first developed in Google
+- Early development of Protocol Buffers happened in Google
 - The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Protocol Buffers in 12k repos on GitHub
 - ANTLR grammar for Protocol Buffers
 - Monaco package for syntax highlighting Protocol Buffers
 - Pygments supports syntax highlighting for Protocol Buffers
 - GitHub supports syntax highlighting for Protocol Buffers
 - Indeed.com has 94 matches for "protocol buffers developer".
-- See also: (12 related languages)XML, Thrift, Java, C#, Python, Go, Ruby, Objective-C, Perl, PHP, Scala, Julia
-- 43 languages in PLDB linking to Protocol Buffers: Ace Editor, Apache Hbase, avro, Bazel, Cap'n Proto, Carbon, Chapel, Claro, Closure Templates, crush, Cue, dgraph, egel, EverParse3D, firrtl, FlatBuffers, groff, HHVM, Impala, Ion, Iterm2, kaitai, ko, Kotlin, Kubernetes, Logica, m3db, MicroPython, MongoDB, obsidian, onnx, Please Build, PROMETHEUS, Pygments, PyTorch, Rholang, Solidity, tao3d, TensorFlow, Wyvern, Xgboost, XGBoost, YARA
+- See also: (12 related languages) XML, Thrift, Java, C#, Python, Go, Ruby, Objective-C, Perl, PHP, Scala, Julia
+- 43 PLDB concepts link to Protocol Buffers: Ace Editor, Apache Hbase, avro, Bazel, Cap'n Proto, Carbon, Chapel, Claro, Closure Templates, crush, Cue, dgraph, egel, EverParse3D, firrtl, FlatBuffers, groff, HHVM, Impala, Ion, Iterm2, kaitai, ko, Kotlin, Kubernetes, Logica, m3db, MicroPython, MongoDB, obsidian, onnx, Please Build, PROMETHEUS, Pygments, PyTorch, Rholang, Solidity, tao3d, TensorFlow, Wyvern, Xgboost, XGBoost, YARA
 
 message Person {
   required string name = 1;

@@ -10,16 +10,12 @@ Troff is a text markup language created in 1973.
 troff  is the major component of a document processing system developed by AT&T Corporation for the Unix operating system. troff features commands to designate fonts, spacing, paragraphs, margins, footnotes and more. Unlike many other text formatters, troff can position characters arbitrarily on a page, even overlapping them, and has a fully programmable input language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Troff
 
-- Troff website
- https://www.troff.org/
-- Troff appears in categories: text markup language
-- Troff Wikipedia page
- https://en.wikipedia.org/wiki/Troff
+- Tags: text markup language
 - Troff on HOPL
  https://hopl.info/showlanguage.prx?exp=2589
 - CodeMirror package for syntax highlighting Troff
-- See also: (9 related languages)Unix, BCPL, Assembly language, C, LaTeX, Scheme, Unicode, Tex, Scribe
-- 5 languages in PLDB linking to Troff: eqn, groff, nroff, ROFF, SCROLL
+- See also: (9 related languages) Unix, BCPL, Assembly language, C, LaTeX, Scheme, Unicode, Tex, Scribe
+- 5 PLDB concepts link to Troff: eqn, groff, nroff, ROFF, SCROLL
 
 \&quot;	&quot;Hello, world!&quot; in troff
 

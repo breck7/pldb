@@ -9,7 +9,5 @@ Multihash is a hash function created in 2017.
 
 Multihash is a protocol for differentiating outputs from various well-established hash functions, addressing size + encoding considerations. It is useful to write applications that future-proof their use of hashes, and allow multiple hash functions to coexist.
 
-- Multihash website
- http://multiformats.io/multihash/
-- Multihash appears in categories: hashFunction
-- Multihash first developed in https://github.com/multiformats
+- Tags: hashFunction
+- Early development of Multihash happened in https://github.com/multiformats

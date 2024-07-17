@@ -11,20 +11,16 @@ DOT is a text markup language created in 2007.
 DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/DOT_(graph_description_language)
 
-- DOT appears in categories: text markup language
-- DOT Wikipedia page
- https://en.wikipedia.org/wiki/DOT_(graph_description_language)
-- DOT docs
- https://graphviz.org/doc/info/lang.html
+- Tags: text markup language
 - There are at least 27,831 DOT repos on GitHub
-- DOT first developed in AT&T Labs Research
+- Early development of DOT happened in AT&T Labs Research
 - The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on GitHub
 - ANTLR grammar for DOT
 - Pygments supports syntax highlighting for DOT
 - GitHub supports syntax highlighting for DOT
 - There is 1 Jupyter Kernel for DOT
-- See also: (6 related languages)JavaScript, Java, Python, Google Cloud Platform, ActionScript, SVG
-- 7 languages in PLDB linking to DOT: D2, FCL, flowchart.fun, Flowgorithm, Finite State Language, Mscgen, Workfl
+- See also: (6 related languages) JavaScript, Java, Python, Google Cloud Platform, ActionScript, SVG
+- 7 PLDB concepts link to DOT: D2, FCL, flowchart.fun, Flowgorithm, Finite State Language, Mscgen, Workfl
 
  // The graph name and the semicolons are optional
 graph graphname {

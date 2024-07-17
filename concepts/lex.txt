@@ -13,19 +13,17 @@ Lex is a grammar language created in 1975 by Mike Lesk and Eric Schmidt.
 Lex is a computer program that generates lexical analyzers ("scanners" or "lexers"). Lex is commonly used with the yacc parser generator. Lex, originally written by Mike Lesk and Eric Schmidt and described in 1975, is the standard lexical analyzer generator on many Unix systems, and an equivalent tool is specified as part of the POSIX standard. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lex_(software)
 
-- Lex appears in categories: grammarLanguage
-- Lex Wikipedia page
- https://en.wikipedia.org/wiki/Lex_(software)
+- Tags: grammarLanguage
 - There are at least 2,902 Lex repos on GitHub
-- Lex first developed in https://github.com/babyraging/yash/issues
+- Early development of Lex happened in https://github.com/babyraging/yash/issues
 - The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Lex in 12k repos on GitHub
 - Lex on HOPL
  https://hopl.info/showlanguage.prx?exp=680
 - GitHub supports syntax highlighting for Lex
-- See also: (6 related languages)Yacc, Unix, C, Regular Expressions, Bison, Ragel
+- See also: (6 related languages) Yacc, Unix, C, Regular Expressions, Bison, Ragel
 - Read more about Lex on the web: 1.
  https://github.com/babyraging/yash
-- 60 languages in PLDB linking to Lex: Ad-hoc, ana, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Cognate, cor, Crema, duro, eC, Eiffel, elena, Em, Euphoria, Fancy, Filebench WML, FLEX, GAP, HHVM, hobbes, invokator, Jison Lex, jq, Koka, latino, Lean, Linux, little, Logica, mal, mimium, mlpolyr, Mudlle, mythryl, NCAR Command Language, nesC, never, Opal, Open Shading Language, OpenComal, orca, PHP, GNU Poke, PostgreSQL, PROMETHEUS, Ragel, RamdaScript, Recfiles, redprl, RicScript, shill, Slony, solid, Streem, t2b, UrWeb, VSXu, YARA
+- 60 PLDB concepts link to Lex: Ad-hoc, ana, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Cognate, cor, Crema, duro, eC, Eiffel, elena, Em, Euphoria, Fancy, Filebench WML, FLEX, GAP, HHVM, hobbes, invokator, Jison Lex, jq, Koka, latino, Lean, Linux, little, Logica, mal, mimium, mlpolyr, Mudlle, mythryl, NCAR Command Language, nesC, never, Opal, Open Shading Language, OpenComal, orca, PHP, GNU Poke, PostgreSQL, PROMETHEUS, Ragel, RamdaScript, Recfiles, redprl, RicScript, shill, Slony, solid, Streem, t2b, UrWeb, VSXu, YARA
 
 /*** Definition section ***/
 

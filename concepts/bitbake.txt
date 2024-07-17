@@ -11,15 +11,11 @@ BitBake is an open source programming language created in 2004.
 BitBake is a make-like  build tool with the special focus of distributions and packages for embedded Linux cross compilation, although it is not limited to that. It is inspired by Portage, which is the package management system used by the Gentoo Linux distribution. BitBake existed for some time in the OpenEmbedded project until it was separated out into a standalone, maintained, distribution-independent tool. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/BitBake
 
-- BitBake website
- https://yoctoproject.org/tools-resources/projects/bitbake
-- BitBake appears in categories: programming language
-- BitBake Wikipedia page
- https://en.wikipedia.org/wiki/BitBake
+- Tags: programming language
 - There are at least 3,285 BitBake repos on GitHub
-- BitBake first developed in Yocto Project
+- Early development of BitBake happened in Yocto Project
 - The  Google BigQuery Public Dataset GitHub snapshot shows 667 users using BitBake in 1k repos on GitHub
-- See also: (3 related languages)Python, Linux, Subversion
+- See also: (3 related languages) Python, Linux, Subversion
 
 require qt5-git.inc
 require ${PN}.inc

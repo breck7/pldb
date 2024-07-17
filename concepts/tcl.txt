@@ -9,19 +9,12 @@ Tcl, aka Tool Command Language, is an open source programming language created i
 36 Years Old
 14k Repos
 
-Try now: Riju · TIO
-
 Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Tcl
 
-- Tcl website
- http://www.tcl.tk
-- Tcl appears in categories: programming language
+- Tags: programming language
 - Interview with the creator of Tcl: 1.
  https://pldb.io/blog/JohnOusterhout.html
-- Tcl Wikipedia page
- https://en.wikipedia.org/wiki/Tcl
-- PLDB has 2 documentation sites for Tcl: www.tcl.tk, devdocs.io
 - There are at least 13,969 Tcl repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using Tcl in 8k repos on GitHub
 - There are 71 Project Euler users using Tcl
@@ -35,12 +28,8 @@ Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, int
 - GitHub supports syntax highlighting for Tcl
 - Tcl appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Tcl
-- Release Notes for Tcl
- http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
-- Official Blog page for Tcl
- https://www.tcl.tk/software/tcltk/whatsnew.tml
-- See also: (22 related languages)awk, Lisp, PHP, Tea, PowerShell, C, Python, Expect, Unicode, Regular Expressions, Java, Unix, Linux, Bourne shell, XOTcl, Snit, Verilog, VHDL, UDP, MySQL, PostgreSQL, SQLite
-- 1 languages in PLDB linking to Tcl: hecl
+- See also: (22 related languages) awk, Lisp, PHP, Tea, PowerShell, C, Python, Expect, Unicode, Regular Expressions, Java, Unix, Linux, Bourne shell, XOTcl, Snit, Verilog, VHDL, UDP, MySQL, PostgreSQL, SQLite
+- 1 PLDB concepts link to Tcl: hecl
 
 puts {Hello, world!}
 

@@ -10,11 +10,9 @@ Just Another Scripting Syntax, aka Just Another Scripting Syntax, is a programmi
 JASS and JASS2 (sometimes said to stand for Just Another Scripting Syntax) is a scripting language provided with an event-driven API created by Blizzard Entertainment. It is used extensively by their games Warcraft III (JASS2) and StarCraft (JASS) for scripting events in the game world. Map creators can use it in the Warcraft III World Editor and the Starcraft Editor to create scripts for triggers and AI (artificial intelligence) in custom maps and campaigns. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JASS
 
-- Just Another Scripting Syntax appears in categories: programming language
-- Just Another Scripting Syntax Wikipedia page
- https://en.wikipedia.org/wiki/JASS
-- Just Another Scripting Syntax first developed in Blizzard Entertainment, Inc
-- See also: (1 related languages)Java
+- Tags: programming language
+- Early development of Just Another Scripting Syntax happened in Blizzard Entertainment, Inc
+- See also: (1 related languages) Java
 
 function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
  call PreloadGenEnd(&quot;.\\redist\\miles\\Mp3enc.asi&quot;)

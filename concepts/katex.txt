@@ -12,13 +12,11 @@ git clone https://github.com/Khan/KaTeX
 
 The fastest math typesetting library for the web.
 
-- KaTeX website
- https://katex.org
-- KaTeX appears in categories: text markup language
+- Tags: text markup language
 - KaTeX is developed on GitHub and has 15,539 stars
-- KaTeX first developed in https://github.com/KaTeX
+- Early development of KaTeX happened in https://github.com/KaTeX
 - KaTeX is written in JavaScript, Markdown, YAML, JSON, SVG, HTML, Python, CSS, Bourne shell, Perl, Less, Dockerfile, XML, Make, Tex
-- 1 languages in PLDB linking to KaTeX: MathJax
+- 1 PLDB concepts link to KaTeX: MathJax
 
 % \f is defined as #1f(#2) using the macro
 \f\relax{x} = \int_{-\infty}^\infty

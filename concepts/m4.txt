@@ -10,16 +10,12 @@ M4 is a programming language created in 1977 by Brian Kernighan and Dennis Ritch
 47 Years Old
 2k Repos
 
-Try now: Riju · TIO
-
 m4 is a general-purpose macro processor included in all UNIX-like operating systems, and is a component of the POSIX standard. The language was designed by Brian Kernighan and Dennis Ritchie for the original versions of UNIX. It is an extension of an earlier macro processor m3, written by Ritchie for the AP-3 minicomputer. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/M4_(computer_language)
 
-- M4 appears in categories: programming language
-- M4 Wikipedia page
- https://en.wikipedia.org/wiki/M4_(computer_language)
+- Tags: programming language
 - There are at least 2,405 M4 repos on GitHub
-- M4 first developed in AT&T Bell Laboratories
+- Early development of M4 happened in AT&T Bell Laboratories
 - The  Google BigQuery Public Dataset GitHub snapshot shows 12k users using M4 in 16k repos on GitHub
 - Explore M4 snippets on Rosetta Code
 - M4 on HOPL
@@ -29,8 +25,8 @@ m4 is a general-purpose macro processor included in all UNIX-like operating syst
  https://packages.ubuntu.com/jammy/m4
 - GitHub supports syntax highlighting for M4
 - M4 appears in the Quine Relay project
-- See also: (6 related languages)Assembly language, RATFOR, Unix, Fortran, HTML, FreeBSD
-- 71 languages in PLDB linking to M4: Ad-hoc, Bash, Bazel, beef-lang, bio, Cap'n Proto, Chapel, cityhash-hash-function, Click, crmsh, curv, eC, egel, Eiffel, Emscripten, Erlang, Felix, Filebench WML, FLEX, Flow9, G-Portugol, GAP, Git, groff, HHVM, huginn, Java, jq, Kefir, latino, Linux, lobster, MongoDB, nesC, Node.js, oil, ooc, opam-pm, orca, P*, PCRE, PgBouncer, PHP, GNU Poke, PostgreSQL, POV-Ray SDL, Python, Qore, Racket, Ragel, ramen, Recfiles, Redis, RicScript, Ruby, sile, skip, Slony, SmallBASIC, Semantic Patch Language, SWI Prolog, tridash, UCL, UrWeb, VSXu, Wonkey, Xgboost, XGBoost, YARA, Zephir, zl
+- See also: (6 related languages) Assembly language, RATFOR, Unix, Fortran, HTML, FreeBSD
+- 71 PLDB concepts link to M4: Ad-hoc, Bash, Bazel, beef-lang, bio, Cap'n Proto, Chapel, cityhash-hash-function, Click, crmsh, curv, eC, egel, Eiffel, Emscripten, Erlang, Felix, Filebench WML, FLEX, Flow9, G-Portugol, GAP, Git, groff, HHVM, huginn, Java, jq, Kefir, latino, Linux, lobster, MongoDB, nesC, Node.js, oil, ooc, opam-pm, orca, P*, PCRE, PgBouncer, PHP, GNU Poke, PostgreSQL, POV-Ray SDL, Python, Qore, Racket, Ragel, ramen, Recfiles, Redis, RicScript, Ruby, sile, skip, Slony, SmallBASIC, Semantic Patch Language, SWI Prolog, tridash, UCL, UrWeb, VSXu, Wonkey, Xgboost, XGBoost, YARA, Zephir, zl
 
 errprint(`Hello, world!&#39;)
 

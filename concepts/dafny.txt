@@ -11,26 +11,20 @@ Dafny is an open source programming language created in 2009 by K. Rustan M. Lei
 
 git clone https://github.com/Microsoft/dafny
 
-Try now: Riju · TIO
-
 Dafny is an imperative compiled language that targets C# and supports formal specification through preconditions, postconditions, loop invariants and loop variants.  The language combines ideas primarily from the Functional and Imperative paradigms, and includes limited support for Object-Oriented Programming.  Features include generic classes, dynamic allocation, inductive datatypes and a variation of separation logic known as implicit dynamic frames for reasoning about side effects. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Dafny_(programming_language)
 
-- Dafny website
- https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/
-- Dafny appears in categories: programming language
-- Dafny Wikipedia page
- https://en.wikipedia.org/wiki/Dafny_(programming_language)
+- Tags: programming language
 - Dafny is developed on GitHub and has 1,714 stars
 - There are at least 157 Dafny repos on GitHub
-- Dafny first developed in Microsoft
+- Early development of Dafny happened in Microsoft
 - Dafny is written in C#, Markdown, Java, YAML, F#, TOML, Python, Go, XML, HTML, Make, Bash, JavaScript, Tex, Bourne shell, Gradle, CSS, JSON, Rust, Diff, SVG
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Dafny in 1 repos on GitHub
 - Explore Dafny snippets on Rosetta Code
 - Dafny Ubuntu package
  https://packages.ubuntu.com/jammy/dafny
 - Dafny appears in the Quine Relay project
-- See also: (5 related languages)C#, Spec Sharp, Apache Spark, Idris, Agda
+- See also: (5 related languages) C#, Spec Sharp, Apache Spark, Idris, Agda
 
 method Main() {
   print &quot;Hello, world!\n&quot;;

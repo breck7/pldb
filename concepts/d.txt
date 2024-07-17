@@ -10,24 +10,12 @@ D is a programming language created in 2001 by Walter Bright and Andrei Alexandr
 23 Years Old
 13k Repos
 
-Try now: Riju · TIO
-
 The D programming language is an object-oriented, imperative, multi-paradigm system programming language created by Walter Bright of Digital Mars and released in 2001. Bright was joined in the design and development effort in 2007 by Andrei Alexandrescu. Though it originated as a re-engineering of C++, D is a distinct language, having redesigned some core C++ features while also taking inspiration from other languages, notably Java, Python, Ruby, C#, and Eiffel. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/D_(programming_language)
 
-- D website
- https://dlang.org
-- D appears in categories: programming language
-- D downloads page
- https://dlang.org/download.html
-- D Wikipedia page
- https://en.wikipedia.org/wiki/D_(programming_language)
-- D docs
- https://dlang.org/documentation.html
+- Tags: programming language
 - There are at least 13,224 D repos on GitHub
-- D first developed in Digital Mars
-- D on Twitter
- https://twitter.com/d_programming
+- Early development of D happened in Digital Mars
 - The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using D in 7k repos on GitHub
 - Check out the 7 D meetup groups on Meetup.com.
 - There are 243 Project Euler users using D
@@ -44,15 +32,9 @@ The D programming language is an object-oriented, imperative, multi-paradigm sys
 - GitHub supports syntax highlighting for D
 - D appears in the Quine Relay project
 - There is a central package repository for D
-- Release Notes for D
- https://dlang.org/changelog/
-- Official Blog page for D
- https://dlang.org/blog/
-- Frequently Asked Questions for D
- https://dlang.org/articles/faq.html
 - dlang.org was registered in 2010
-- See also: (23 related languages)FreeBSD, Linux, C, C#, Eiffel, Java, Python, MiniD, Vala, Swift, Genie, Ruby, Assembly language, LLVM IR, CIL, Eclipse, Visual Studio, Emacs, Vim, TextMate, Visual Studio Code, GDB, UTF-8
-- 26 languages in PLDB linking to D: Alma, Chapel, DRAKON, dub-pm, Encore, Erlang, Flow9, GCC, invokator, Iode, Java, Julia, mal, MongoDB, MonkeyX, Open Shading Language, Perl, PHP, Pony, PostgreSQL, Pygments, Python, Ruby, Rust, Swift, Volt
+- See also: (23 related languages) FreeBSD, Linux, C, C#, Eiffel, Java, Python, MiniD, Vala, Swift, Genie, Ruby, Assembly language, LLVM IR, CIL, Eclipse, Visual Studio, Emacs, Vim, TextMate, Visual Studio Code, GDB, UTF-8
+- 26 PLDB concepts link to D: Alma, Chapel, DRAKON, dub-pm, Encore, Erlang, Flow9, GCC, invokator, Iode, Java, Julia, mal, MongoDB, MonkeyX, Open Shading Language, Perl, PHP, Pony, PostgreSQL, Pygments, Python, Ruby, Rust, Swift, Volt
 
 // Type your code here, or load an example.
 int square(int num) {

@@ -12,36 +12,24 @@ Solidity is an open source contract language created in 2014 by Christian Reitwi
 
 git clone https://github.com/ethereum/solidity
 
-Try now: Web
-
 Solidity is a contract-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms. It was developed by Gavin Wood, Christian Reitwiessner, Alex Beregszaszi, Liana Husikyan, Yoichi Hirai and several former Ethereum core contributors to enable writing smart contracts on blockchain platforms such as Ethereum.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Solidity
 
-- Solidity website
- http://github.com/ethereum/solidity
-- Solidity appears in categories: contractLanguage
-- Solidity Wikipedia page
- https://en.wikipedia.org/wiki/Solidity
+- Tags: contractLanguage
 - Solidity is developed on GitHub and has 17,321 stars
 - Watch the history of the Solidity repo visualized with Gource
 - There are at least 87,183 Solidity repos on GitHub
-- Solidity first developed in Ethereum Foundation
+- Early development of Solidity happened in Ethereum Foundation
 - Solidity is written in Solidity, JSON, C++, Bourne shell, Python, reStructuredText, CMake, Markdown, YAML, JavaScript, SVG, Dockerfile, CSS, PowerShell, Protocol Buffers, HTML, C, Make
-- Solidity on Twitter
- https://twitter.com/solidity_lang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 76 users using Solidity in 78 repos on GitHub
 - Solidity appears in the TIOBE Index
 - Solidity LSP implementation
 - Monaco package for syntax highlighting Solidity
 - Pygments supports syntax highlighting for Solidity
 - GitHub supports syntax highlighting for Solidity
-- Release Notes for Solidity
- https://blog.soliditylang.org/category/releases/
-- Official Blog page for Solidity
- https://blog.soliditylang.org/
 - Indeed.com has 937 matches for "solidity developer".
-- See also: (4 related languages)JavaScript, Visual Studio, Microsoft Azure, AWS
-- 8 languages in PLDB linking to Solidity: cloc, Lexon, Ligo, obsidian, Pygments, solid, Solidity, Sophia
+- See also: (4 related languages) JavaScript, Visual Studio, Microsoft Azure, AWS
+- 8 PLDB concepts link to Solidity: cloc, Lexon, Ligo, obsidian, Pygments, solid, Solidity, Sophia
 
 // SPDX-License-Identifier: MIT
 pragma solidity &gt;=0.6.0 &lt;0.9.0;

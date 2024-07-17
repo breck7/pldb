@@ -13,17 +13,13 @@ git clone https://github.com/JarrettBillingsley/Croc
 The MiniD (has been renamed Croc) programming language is a small, lightweight, extension language in the vein of Lua or Squirrel, but designed to be used mainly with the D programming language.  It supports both object-oriented and imperative programming paradigms, as well as some simple functional aspects. Distributed under the licence of zlib/libpng, MiniD is free software.. Read more on Wikipedia...
  https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
 
-- Croc website
- https://web.archive.org/web/20120625151120/http://jfbillingsley.com/croc/
-- Croc appears in categories: programming language
-- Croc Wikipedia page
- https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
+- Tags: programming language
 - Croc is developed on GitHub and has 74 stars
-- Croc first developed in http://www.dsource.org/projects/minid
+- Early development of Croc happened in http://www.dsource.org/projects/minid
 - Croc is written in C++, XML, CMake, Markdown, HTML, CSS, Python, Vim script
 - Pygments supports syntax highlighting for Croc
-- See also: (8 related languages)D, Lua, Squirrel, Python, Io, JavaScript, C, MiniD
-- 1 languages in PLDB linking to Croc: MiniD
+- See also: (8 related languages) D, Lua, Squirrel, Python, Io, JavaScript, C, MiniD
+- 1 PLDB concepts link to Croc: MiniD
 
 module samples.interfaces
 

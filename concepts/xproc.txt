@@ -11,14 +11,12 @@ XProc is a programming language created in 1990.
 XProc is a W3C Recommendation to define an XML transformation language to define XML Pipelines. Below is an example abbreviated XProc file:  This is a pipeline that consists of two atomic steps, XInclude and Validate. The pipeline itself has three inputs, “source” (a source document), “schemas” (a list of W3C XML Schemas) and  “parameters” (for passing parameters). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XProc
 
-- XProc appears in categories: programming language
-- XProc Wikipedia page
- https://en.wikipedia.org/wiki/XProc
+- Tags: programming language
 - There are at least 93 XProc repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 174 users using XProc in 223 repos on GitHub
 - Explore XProc snippets on Rosetta Code
 - GitHub supports syntax highlighting for XProc
-- See also: (4 related languages)XML, Java, XQuery, XPath
+- See also: (4 related languages) XML, Java, XQuery, XPath
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;p:declare-step xmlns:p=&quot;http://www.w3.org/ns/xproc&quot;

@@ -9,21 +9,15 @@ Rust MIR, aka Rust Mid-level Intermediate Representation, is an open source inte
 
 git clone https://github.com/rust-lang/rust/tree/master/src/librustc_mir
 
-Try now: Web
-
-- Rust MIR website
- https://www.rust-lang.org
-- Rust MIR appears in categories: intermediate representation language
-- Rust MIR docs
- https://blog.rust-lang.org/2016/04/19/MIR.html
-- Rust MIR first developed in https://github.com/rust-lang
+- Tags: intermediate representation language
+- Early development of Rust MIR happened in https://github.com/rust-lang
 - Rust MIR compiles to LLVM IR
 - rust-lang.org was registered in 2010
-- See also: (1 related languages)SIL
+- See also: (1 related languages) SIL
 - Read more about Rust MIR on the web: 1. 2.
  https://rustc-dev-guide.rust-lang.org/hir.html
  https://blog.rust-lang.org/2016/04/19/MIR.html
-- 1 languages in PLDB linking to Rust MIR: Rust HIR
+- 1 PLDB concepts link to Rust MIR: Rust HIR
 
 // WARNING: This output format is intended for human consumers only
 // and is subject to change without notice. Knock yourself out.

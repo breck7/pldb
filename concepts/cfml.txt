@@ -11,17 +11,13 @@ CFML, aka ColdFusion Markup Language, is a programming language created in 1995 
 ColdFusion Markup Language, more commonly known as CFML, is a scripting language for web development that runs on the JVM, the .NET framework, and Google App Engine. Multiple commercial and open source implementations of CFML engines are available, including Adobe ColdFusion, Lucee, New Atlanta BlueDragon (who makes both a Java-based and a .NET-based version), Railo, and Open BlueDragon as well as other CFML server engines.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ColdFusion_Markup_Language
 
-- CFML website
- http://www.adobe.com/products/coldfusion
-- CFML appears in categories: programming language
-- CFML Wikipedia page
- https://en.wikipedia.org/wiki/ColdFusion_Markup_Language
-- CFML first developed in Adobe Systems and Lucee Association and New Atlanta and openBD and The Railo Company
+- Tags: programming language
+- Early development of CFML happened in Adobe Systems and Lucee Association and New Atlanta and openBD and The Railo Company
 - CFML on HOPL
  https://hopl.info/showlanguage.prx?exp=5234
 - CFML appears in the TIOBE Index
-- See also: (7 related languages)ColdFusion, Java, CFScript, JavaScript, XML, JSP, SOAP
-- 1 languages in PLDB linking to CFML: ColdFusion Components
+- See also: (7 related languages) ColdFusion, Java, CFScript, JavaScript, XML, JSP, SOAP
+- 1 PLDB concepts link to CFML: ColdFusion Components
 
 &lt;cfset person = CreateObject(&quot;component&quot;, &quot;Person&quot;) /&gt;
 

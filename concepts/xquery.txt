@@ -11,26 +11,18 @@ XQuery is a programming language created in 2007.
 XQuery (XML Query) is a query and functional programming language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query working group of the W3C. The work is closely coordinated with the development of XSLT by the XSL Working Group; the two groups share responsibility for XPath, which is a subset of XQuery. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XQuery
 
-- XQuery website
- http://www.w3.org/XML/Query/
-- XQuery appears in categories: programming language
-- XQuery Wikipedia page
- https://en.wikipedia.org/wiki/XQuery
-- XQuery docs
- https://www.w3.org/TR/xquery-31/
+- Tags: programming language
 - There are at least 1,753 XQuery repos on GitHub
-- XQuery first developed in W3C
+- Early development of XQuery happened in W3C
 - The  Google BigQuery Public Dataset GitHub snapshot shows 983 users using XQuery in 1k repos on GitHub
 - Explore XQuery snippets on Rosetta Code
 - XQuery appears in the TIOBE Index
 - CodeMirror package for syntax highlighting XQuery
 - Pygments supports syntax highlighting for XQuery
 - GitHub supports syntax highlighting for XQuery
-- Official Blog page for XQuery
- https://www.w3.org/blog/tags/xquery/
 - Indeed.com has 125 matches for "XQuery developer".
-- See also: (10 related languages)XPath, SQL, Lisp, Prolog, XML, Java, C#, JSONiq, JSON, ISBN
-- 4 languages in PLDB linking to XQuery: Ace Editor, cloc, Invisible XML, Pygments
+- See also: (10 related languages) XPath, SQL, Lisp, Prolog, XML, Java, C#, JSONiq, JSON, ISBN
+- 4 PLDB concepts link to XQuery: Ace Editor, cloc, Invisible XML, Pygments
 
 let $hello := &quot;Hello World&quot;
 return $hello

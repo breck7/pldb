@@ -10,11 +10,11 @@ Bayer Expressions is a data notation created in 2018 by Dave Bayer.
 
 An alternative notation for S-Expressions that uses fewer parentheses. As described by the creator: Indentation implies parentheses. A pipe "|" opens a parenthesis that auto-closes at the end of that line or at the next ")". A dollar "$" opens a parenthesis that auto-closes when the indentation recovers. The result has a lighter, more poetic look than any language I know, and the parentheses that are left actually matter, so I pay attention to them.
 
-- Bayer Expressions appears in categories: dataNotation
-- See also: (2 related languages)S-expressions, I-expressions
+- Tags: dataNotation
+- See also: (2 related languages) S-expressions, I-expressions
 - Read more about Bayer Expressions on the web: 1.
  https://news.ycombinator.com/item?id=19431720
-- 1 languages in PLDB linking to Bayer Expressions: S-expressions
+- 1 PLDB concepts link to Bayer Expressions: S-expressions
 
 define | edge? g e
   let

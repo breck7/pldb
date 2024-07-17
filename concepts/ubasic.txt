@@ -7,17 +7,13 @@ UBASIC is an open source programming language created in 1991.
 #2729 on PLDB
 33 Years Old
 
-Try now: TIO
-
 UBASIC is a freeware (public domain software without source code) BASIC interpreter written by Yuji Kida at Rikkyo University in Japan, specialized for mathematical computing.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/UBASIC
 
-- UBASIC appears in categories: programming language
-- UBASIC Wikipedia page
- https://en.wikipedia.org/wiki/UBASIC
+- Tags: programming language
 - UBASIC on HOPL
  https://hopl.info/showlanguage.prx?exp=1666
-- See also: (1 related languages)BASIC
+- See also: (1 related languages) BASIC
 
 10   CONSOLE:CONSOLE 1,24,0:LOCATE 1,0
   20   PRINT CHR(2);&quot;N&quot;,&quot;P(N)&quot;,&quot;PARTITION COUNT&quot;

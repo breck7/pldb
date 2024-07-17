@@ -12,17 +12,9 @@ GraphQL is a query language created in 2012 by Lee Byron.
 GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc webservice architectures.. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GraphQL
 
-- GraphQL website
- http://graphql.org/
-- GraphQL appears in categories: queryLanguage
-- GraphQL Wikipedia page
- https://en.wikipedia.org/wiki/GraphQL
-- GraphQL docs
- https://graphql.org/learn/
+- Tags: queryLanguage
 - There are at least 1 GraphQL repos on GitHub
-- GraphQL first developed in Facebook
-- GraphQL on Twitter
- https://twitter.com/graphql
+- Early development of GraphQL happened in Facebook
 - There are 17,480 members in the GraphQL subreddit
 - ANTLR grammar for GraphQL
 - GraphQL LSP implementation
@@ -30,19 +22,11 @@ GraphQL is a data query language developed internally by Facebook in 2012 before
 - GitHub supports syntax highlighting for GraphQL
 - Annual Reports for GraphQL
  https://graphql.org/foundation/annual-reports/
-- Release Notes for GraphQL
- https://github.com/graphql/graphql-js/releases
-- Official Blog page for GraphQL
- https://graphql.org/blog/
 - Events page for GraphQL
  https://graphql.org/community/upcoming-events/
-- Frequently Asked Questions for GraphQL
- https://graphql.org/faq/
-- GraphQL leet sheet
- https://cheatsheets.zip/graphql
 - graphql.org was registered in 2015
-- See also: (3 related languages)JavaScript, Ruby, Scala
-- 7 languages in PLDB linking to GraphQL: Ace Editor, cloc, dgraph, gintonic, Noms GraphQL, Pygments, wasmer
+- See also: (3 related languages) JavaScript, Ruby, Scala
+- 7 PLDB concepts link to GraphQL: Ace Editor, cloc, dgraph, gintonic, Noms GraphQL, Pygments, wasmer
 
 {
     &quot;Hello World&quot;

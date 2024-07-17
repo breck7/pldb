@@ -9,26 +9,12 @@ Scala is an open source programming language created in 2004 by Martin Odersky.
 20 Years Old
 219k Repos
 
-Try now: Web · Riju · TIO
-
 Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Scala_(programming_language)
 
-- Scala website
- http://www.scala-lang.org
-- Scala appears in categories: programming language
-- Scala downloads page
- https://scala-lang.org/download/
-- Scala Wikipedia page
- https://en.wikipedia.org/wiki/Scala_(programming_language)
-- Scala docs
- https://docs.scala-lang.org/
-- Scala mailing list
- https://www.scala-lang.org/community/
+- Tags: programming language
 - There are at least 219,084 Scala repos on GitHub
-- Scala first developed in École Polytechnique Fédérale de Lausanne
-- Scala on Twitter
- https://twitter.com/scala_lang
+- Early development of Scala happened in École Polytechnique Fédérale de Lausanne
 - The  Google BigQuery Public Dataset GitHub snapshot shows 21k users using Scala in 35k repos on GitHub
 - Check out the 624 Scala meetup groups on Meetup.com.
 - There are 46,218 members in the Scala subreddit
@@ -48,18 +34,12 @@ Scala ( SKAH-lah) is a general-purpose programming language providing support fo
 - Scala appears in the Quine Relay project
 - PLDB has 2 Jupyter Kernels for Scala: github.com, github.com
 - There is a central package repository for Scala
-- Release Notes for Scala
- https://www.scala-lang.org/download/all.html
-- Official Blog page for Scala
- https://www.scala-lang.org/blog/
 - Events page for Scala
  https://scala-lang.org/events/
-- Frequently Asked Questions for Scala
- https://docs.scala-lang.org/tutorials/FAQ/index.html
 - Indeed.com has 3,679 matches for "scala engineer".
 - scala-lang.org was registered in 2007
-- See also: (32 related languages)JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, PHP, Ruby
-- 27 languages in PLDB linking to Scala: Ace Editor, baysick, chisel, cloc, Enso, Felix, firrtl, Flix, Gradle, k-framework, Kotlin, lift, Luna, mal, NetLogo, obsidian, parboiled2, Pygments, Rholang, Scala.js, Apache Spark, Spatial, topshell, Vale, Vyxal, Xgboost, XGBoost
+- See also: (32 related languages) JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, PHP, Ruby
+- 27 PLDB concepts link to Scala: Ace Editor, baysick, chisel, cloc, Enso, Felix, firrtl, Flix, Gradle, k-framework, Kotlin, lift, Luna, mal, NetLogo, obsidian, parboiled2, Pygments, Rholang, Scala.js, Apache Spark, Spatial, topshell, Vale, Vyxal, Xgboost, XGBoost
 
 // Type your code here, or load an example.
 object Square {

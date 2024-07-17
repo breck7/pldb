@@ -10,16 +10,10 @@ RDF, aka Resource Description Framework, is a data notation created in 1997.
 The Resource Description Framework (RDF) is a family of World Wide Web Consortium (W3C) specifications originally designed as a metadata data model. It has come to be used as a general method for conceptual description or modeling of information that is implemented in web resources, using a variety of syntax notations and data serialization formats. It is also used in knowledge management applications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Resource_Description_Framework
 
-- RDF website
- https://www.w3.org/RDF/
-- RDF appears in categories: dataNotation
-- RDF Wikipedia page
- https://en.wikipedia.org/wiki/Resource_Description_Framework
-- RDF docs
- https://www.w3.org/TR/rdf-concepts/
-- RDF first developed in World Wide Web Consortium
-- See also: (9 related languages)OWL, XML, Turtle, JSON, Unicode, SPARQL, SQL, Python, JSON-LD
-- 8 languages in PLDB linking to RDF: Bossam Rule Language, Microdata HTML, Notation3, OEM, SHACL, SUSN, TriG syntax, underlay
+- Tags: dataNotation
+- Early development of RDF happened in World Wide Web Consortium
+- See also: (9 related languages) OWL, XML, Turtle, JSON, Unicode, SPARQL, SQL, Python, JSON-LD
+- 8 PLDB concepts link to RDF: Bossam Rule Language, Microdata HTML, Notation3, OEM, SHACL, SUSN, TriG syntax, underlay
 
 @prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .

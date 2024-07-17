@@ -11,12 +11,10 @@ Parrot Assembly is an assembly language created in 2003.
 The Parrot assembly language (PASM) is the basic assembly language used by the Parrot virtual machine. PASM is the lowest level assembly language in the Parrot stack. The Parrot intermediate representation (PIR) is PASM extended to simplify development of compilers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parrot_assembly_language
 
-- Parrot Assembly appears in categories: assembly language
-- Parrot Assembly Wikipedia page
- https://en.wikipedia.org/wiki/Parrot_assembly_language
+- Tags: assembly language
 - There are at least 1 Parrot Assembly repos on GitHub
-- Parrot Assembly first developed in https://www.perl.org
-- See also: (3 related languages)Assembly language, Parrot, PIR
+- Early development of Parrot Assembly happened in https://www.perl.org
+- See also: (3 related languages) Assembly language, Parrot, PIR
 
 #!/usr/bin/env parrot
 

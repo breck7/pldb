@@ -11,10 +11,8 @@ Tiny BASIC is a programming language created in 1975 by Dennis Allison.
 Tiny BASIC is a dialect of the BASIC programming language that can fit into as little as 2 or 3 KB of memory. This small size made it invaluable in the early days of microcomputers in the mid-1970s, when typical memory size was only 4 to 8 KB. To meet these strict size limits, math was purely integer based and it lacked arrays. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Tiny_BASIC
 
-- Tiny BASIC appears in categories: programming language
-- Tiny BASIC Wikipedia page
- https://en.wikipedia.org/wiki/Tiny_BASIC
-- See also: (3 related languages)Dartmouth BASIC, Microsoft BASIC, Li-Chen Wang
+- Tags: programming language
+- See also: (3 related languages) Dartmouth BASIC, Microsoft BASIC, Li-Chen Wang
 
 line ::= number statement CR | statement CR
  

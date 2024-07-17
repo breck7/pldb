@@ -10,12 +10,10 @@ MDL is a programming language created in 1971.
 MDL (the MIT Design Language) is a descendant of the Lisp programming language. Its initial purpose was to provide high level language support for the Dynamic Modeling Group at MIT's Project MAC. It was initially developed in 1971 on the  PDP-10 computer under the Incompatible Timesharing System. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MDL_(programming_language)
 
-- MDL appears in categories: programming language
-- MDL Wikipedia page
- https://en.wikipedia.org/wiki/MDL_(programming_language)
-- MDL first developed in Massachusetts Institute of Technology
+- Tags: programming language
+- Early development of MDL happened in Massachusetts Institute of Technology
 - Explore MDL snippets on Rosetta Code
-- See also: (6 related languages)Scheme, Common Lisp, Java, Prolog, Smalltalk, Simula
+- See also: (6 related languages) Scheme, Common Lisp, Java, Prolog, Smalltalk, Simula
 
 &lt;DEFINE EXIT-TO (EXITS RMS)
         #DECL ((EXITS) EXIT (RMS) &lt;UVECTOR [REST ROOM]&gt;)

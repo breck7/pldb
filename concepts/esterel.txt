@@ -10,14 +10,12 @@ Esterel is a programming language created in 1980.
 Esterel is a synchronous programming language for the development of complex reactive systems. The imperative programming style of Esterel allows the simple expression of parallelism and preemption. As a consequence, it is well suited for control-dominated model designs. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Esterel
 
-- Esterel appears in categories: programming language
-- Esterel Wikipedia page
- https://en.wikipedia.org/wiki/Esterel
-- Esterel first developed in Ecole des Mines de Paris and INRIA
+- Tags: programming language
+- Early development of Esterel happened in Ecole des Mines de Paris and INRIA
 - Esterel on HOPL
  https://hopl.info/showlanguage.prx?exp=1081
 - There is 1 Jupyter Kernel for Esterel
-- See also: (3 related languages)C, VHDL, Verilog
+- See also: (3 related languages) C, VHDL, Verilog
 
 module ABRO:
 input A, B, R;

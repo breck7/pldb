@@ -9,10 +9,8 @@ lain is a programming language created in 2017.
 
 Lain is both an inline scripting library that allows for complex templating of the wiki pages, and a programming language that exists at the core of the engine to load and parse content for each article.
 
-- lain website
- https://wiki.xxiivv.com/#lain
-- lain appears in categories: programming language
-- lain first developed in https://github.com/XXIIVV
+- Tags: programming language
+- Early development of lain happened in https://github.com/XXIIVV
 
 (add (sub 5 3) 2)                         ; Basic Math
 (λ (a b c) (concat a b c))                ; Lambda

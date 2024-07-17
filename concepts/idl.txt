@@ -12,15 +12,9 @@ IDL, aka Interactive Data Language, is a programming language created in 1977 by
 IDL, short for Interactive Data Language, is a programming language used for data analysis. It is popular in particular areas of science, such as astronomy, atmospheric physics and medical imaging. IDL shares a common syntax with PV-Wave and originated from the same codebase, though the languages have subsequently diverged in detail. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IDL_(programming_language)
 
-- IDL website
- http://www.exelisvis.com/ProductsServices/IDL.aspx
-- IDL appears in categories: programming language
-- IDL Wikipedia page
- https://en.wikipedia.org/wiki/IDL_(programming_language)
-- IDL docs
- https://www.l3harrisgeospatial.com/docs/using_idl_home.html
+- Tags: programming language
 - There are at least 2,337 IDL repos on GitHub
-- IDL first developed in L3Harris Geospatial Solutions, Inc
+- Early development of IDL happened in L3Harris Geospatial Solutions, Inc
 - The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using IDL in 5k repos on GitHub
 - Explore IDL snippets on Rosetta Code
 - IDL on HOPL
@@ -31,10 +25,10 @@ IDL, short for Interactive Data Language, is a programming language used for dat
 - Pygments supports syntax highlighting for IDL
 - GitHub supports syntax highlighting for IDL
 - There is 1 Jupyter Kernel for IDL
-- See also: (11 related languages)GNU Data Language, PV-Wave, Fortran, C, Unix, Smalltalk, MATLAB, NumPy, Python, Perl Data Language, Perl
+- See also: (11 related languages) GNU Data Language, PV-Wave, Fortran, C, Unix, Smalltalk, MATLAB, NumPy, Python, Perl Data Language, Perl
 - Read more about IDL on the web: 1.
  https://www.harrisgeospatial.com/Software-Technology/IDL
-- 20 languages in PLDB linking to IDL: cloc, Deno, Eiffel, Emscripten, FLEX, Gradle, Halide, HHVM, idyll, J, JSON-LD, Kotlin, Ladybird, MongoDB, Node.js, PostgreSQL, Pygments, Python, Racket, Ruby
+- 20 PLDB concepts link to IDL: cloc, Deno, Eiffel, Emscripten, FLEX, Gradle, Halide, HHVM, idyll, J, JSON-LD, Kotlin, Ladybird, MongoDB, Node.js, PostgreSQL, Pygments, Python, Racket, Ruby
 
 print, &quot;Hello World&quot;
 end

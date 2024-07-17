@@ -13,20 +13,14 @@ git clone https://code.call-cc.org/git/chicken-core.git
 Chicken (stylized as CHICKEN) is a programming language, specifically a compiler and interpreter which implement a dialect of the programming language Scheme, and which compiles Scheme source code to standard C. It is mostly R5RS compliant and offers many extensions to the standard. The newer R7RS standard is supported through an extension library. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CHICKEN_(Scheme_implementation)
 
-- CHICKEN website
- https://www.call-cc.org/
-- CHICKEN appears in categories: programming language, compiler
-- CHICKEN Wikipedia page
- https://en.wikipedia.org/wiki/CHICKEN_(Scheme_implementation)
-- CHICKEN docs
- https://wiki.call-cc.org/man/5/The%20User%27s%20Manual
+- Tags: programming language, compiler
 - CHICKEN is an implementation of Scheme
-- CHICKEN first developed in The Chicken Team
+- Early development of CHICKEN happened in The Chicken Team
 - CHICKEN is written in Scheme, Bourne shell, C, Lisp, Tex, Make, CSS, HTML
 - CHICKEN on HOPL
  https://hopl.info/showlanguage.prx?exp=8676
-- See also: (5 related languages)Scheme, Linux, iOS, Android, Stalin
-- 1 languages in PLDB linking to CHICKEN: Queue
+- See also: (5 related languages) Scheme, Linux, iOS, Android, Stalin
+- 1 PLDB concepts link to CHICKEN: Queue
 
 A glimpse of CHICKEN
 ;;; hello-world.scm

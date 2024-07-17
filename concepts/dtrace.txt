@@ -11,18 +11,14 @@ DTrace is a programming language created in 2005.
 DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time. Originally developed for Solaris, it has since been released under the free Common Development and Distribution License (CDDL) and has been ported to several other Unix-like systems. DTrace can be used to get a global overview of a running system, such as the amount of memory, CPU time, filesystem and network resources used by the active processes. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/DTrace
 
-- DTrace website
- http://dtrace.org/
-- DTrace appears in categories: programming language
-- DTrace Wikipedia page
- https://en.wikipedia.org/wiki/DTrace
+- Tags: programming language
 - There are at least 534 DTrace repos on GitHub
-- DTrace first developed in Sun Microsystems
+- Early development of DTrace happened in Sun Microsystems
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using DTrace in 2k repos on GitHub
 - GitHub supports syntax highlighting for DTrace
 - dtrace.org was registered in 2010
-- See also: (15 related languages)Solaris, FreeBSD, Linux, C, Assembly language, Java, Erlang, JavaScript, Perl, PHP, Python, Ruby, Tcl, MySQL, PostgreSQL
-- 2 languages in PLDB linking to DTrace: Iterm2, Pony
+- See also: (15 related languages) Solaris, FreeBSD, Linux, C, Assembly language, Java, Erlang, JavaScript, Perl, PHP, Python, Ruby, Tcl, MySQL, PostgreSQL
+- 2 PLDB concepts link to DTrace: Iterm2, Pony
 
 # Syscall count by syscall
 dtrace -n &#39;syscall:::entry { @num[probefunc] = count(); }&#39;

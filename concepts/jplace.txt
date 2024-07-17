@@ -9,8 +9,8 @@ jplace is a json format created in 2012.
 
 We have developed a unified format for phylogenetic placements, that is, mappings of environmental sequence data (e.g., short reads) into a phylogenetic tree. We are motivated to do so by the growing number of tools for computing and post-processing phylogenetic placements, and the lack of an established standard for storing them. The format is lightweight, versatile, extensible, and is based on the JSON format, which can be parsed by most modern programming languages.
 
-- jplace appears in categories: jsonFormat
-- jplace first developed in Fred Hutchinson Cancer Research Center and University of Washington and Heidelberg Institute for Theoretical Studies
+- Tags: jsonFormat
+- Early development of jplace happened in Fred Hutchinson Cancer Research Center and University of Washington and Heidelberg Institute for Theoretical Studies
 - Read more about jplace on the web: 1.
  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031009
 

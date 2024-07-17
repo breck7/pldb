@@ -10,13 +10,9 @@ Simple Actor Language System and Architecture, aka Simple Actor Language System 
 The SALSA programming language (Simple Actor Language System and Architecture) is an actor-oriented programming language that uses concurrency primitives beyond asynchronous message passing, including token-passing, join, and first-class continuations. It also supports distributed computing over the Internet with universal naming, remote communication, and migration linguistic abstractions and associated middleware. For portability, it produces Java code.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SALSA_(programming_language)
 
-- Simple Actor Language System and Architecture website
- http://wcl.cs.rpi.edu/salsa/
-- Simple Actor Language System and Architecture appears in categories: programming language
-- Simple Actor Language System and Architecture Wikipedia page
- https://en.wikipedia.org/wiki/SALSA_(programming_language)
-- Simple Actor Language System and Architecture first developed in Rensselaer Polytechnic Institute and University of Illinois at Urbana-Champaign
-- See also: (1 related languages)Java
+- Tags: programming language
+- Early development of Simple Actor Language System and Architecture happened in Rensselaer Polytechnic Institute and University of Illinois at Urbana-Champaign
+- See also: (1 related languages) Java
 
 module demo;
 

@@ -10,13 +10,11 @@ Pop-11 is a programming language created in 1999.
 POP-11 is a reflective, incrementally compiled programming language with many of the features of an interpreted language. It is the core language of the Poplog programming environment developed originally by the University of Sussex, and recently in the School of Computer Science at the University of Birmingham which hosts the Poplog website. POP-11 is an evolution of the language POP-2, developed in Edinburgh University and features an open stack model (like Forth, among others). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/POP-11
 
-- Pop-11 appears in categories: programming language
-- Pop-11 Wikipedia page
- https://en.wikipedia.org/wiki/POP-11
-- Pop-11 first developed in University of Sussex
+- Tags: programming language
+- Early development of Pop-11 happened in University of Sussex
 - Pop-11 on HOPL
  https://hopl.info/showlanguage.prx?exp=689
-- See also: (7 related languages)POPLOG, POP-2, Forth, Prolog, Common Lisp, Standard ML, COWSEL
+- See also: (7 related languages) POPLOG, POP-2, Forth, Prolog, Common Lisp, Standard ML, COWSEL
 
 define RemoveElementsMatching(Element, Source) -&gt; Result;
      lvars Index;

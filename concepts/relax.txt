@@ -10,11 +10,9 @@ relax is a grammar language created in 2000 by Makoto Murata.
 
 RELAX (REgular LAnguage description for XML) is a specification for describing XML-based languages. XHTML 1.0, for example, can be described in RELAX. A description written in RELAX is called a RELAX grammar. An XML document can be verified against a RELAX grammar. Compared with DTD(Document Type Definition), RELAX has new features: RELAX grammars are represented in the XML instance syntax. RELAX borrows rich datatypes of XML Schema Part 2. RELAX is namespace-aware
 
-- relax website
- http://www.xml.gr.jp/relax/
-- relax appears in categories: grammarLanguage
-- relax first developed in https://www.gr.jp
-- See also: (1 related languages)DTD
+- Tags: grammarLanguage
+- Early development of relax happened in https://www.gr.jp
+- See also: (1 related languages) DTD
 
 &lt;module
       moduleVersion=&quot;1.2&quot;

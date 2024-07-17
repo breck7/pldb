@@ -10,23 +10,16 @@ FLEX is an open source grammar language created in 1987 by Vern Paxson.
 
 git clone https://github.com/westes/flex
 
-Try now: Riju
-
 Flex (fast lexical analyzer generator) is a free and open-source software alternative to lex. It is a computer program that generates lexical analyzers (also known as "scanners" or "lexers"). It is frequently used as the lex implementation together with Berkeley Yacc parser generator on BSD-derived operating systems (as both lex and yacc are part of POSIX), or together with GNU bison (a version of yacc) in *BSD ports and in Linux distributions. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
 
-- FLEX website
- https://github.com/westes/flex
-- FLEX appears in categories: grammarLanguage
-- FLEX Wikipedia page
- https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
+- Tags: grammarLanguage
 - FLEX is developed on GitHub and has 2,618 stars
-- PLDB has 2 documentation sites for FLEX: www.di.uminho.pt, www.geeksforgeeks.org
-- FLEX first developed in University of California, Berkeley
+- Early development of FLEX happened in University of California, Berkeley
 - FLEX is written in Lex, C, Bourne shell, Make, Yacc, LLVM IR, M4, Markdown, YAML, Perl, awk, C++, IDL
 - FLEX on HOPL
  https://hopl.info/showlanguage.prx?exp=2033
-- See also: (5 related languages)Bison, Yacc, C, RATFOR, PL/0
+- See also: (5 related languages) Bison, Yacc, C, RATFOR, PL/0
 - Read more about FLEX on the web: 1.
  https://github.com/babyraging/yash
 

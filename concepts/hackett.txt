@@ -12,11 +12,9 @@ git clone https://github.com/lexi-lambda/hackett
 
 Hackett is an attempt to implement a Haskell-like language with support for Racket’s macro system, built using the techniques described in the paper Type Systems as Macros.
 
-- Hackett website
- https://lexi-lambda.github.io/hackett/
-- Hackett appears in categories: programming language
+- Tags: programming language
 - Hackett is developed on GitHub and has 1,094 stars
-- Hackett first developed in https://github.com/lexi-lambda/hackett/issues
+- Early development of Hackett happened in https://github.com/lexi-lambda/hackett/issues
 - Hackett is written in Racket, Markdown, YAML, CSS, Bourne shell
 
 #lang hackett

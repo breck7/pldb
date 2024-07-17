@@ -10,15 +10,11 @@ GLBasic is an open source programming language created in 2003.
 GLBasic is a commercial BASIC programming language that can compile to various platforms including Windows, Linux, Mac OS X, as well as some handheld devices. The language is designed to be simple and intuitive.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GLBasic
 
-- GLBasic website
- http://www.glbasic.com/
-- GLBasic appears in categories: programming language
-- GLBasic Wikipedia page
- https://en.wikipedia.org/wiki/GLBasic
-- GLBasic first developed in Dream Design Entertainment Software
+- Tags: programming language
+- Early development of GLBasic happened in Dream Design Entertainment Software
 - Explore GLBasic snippets on Rosetta Code
 - glbasic.com was registered in 2003
-- See also: (8 related languages)BASIC, Linux, C, OpenGL, iOS, Android, SdlBasic, Fenix Project
+- See also: (8 related languages) BASIC, Linux, C, OpenGL, iOS, Android, SdlBasic, Fenix Project
 
 FUNCTION add: v AS Tvec
    INC self.x, v.x

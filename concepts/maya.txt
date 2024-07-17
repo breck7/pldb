@@ -10,11 +10,9 @@ Maya Embedded Language is a programming language created in 2013.
 The Maya Embedded Language (MEL) is a scripting language used to simplify tasks in Autodesk's 3D Graphics Software Maya. Most tasks that can be achieved through Maya's GUI can be achieved with MEL, as well as certain tasks that are not available from the GUI. MEL offers a method of speeding up complicated or repetitive tasks, as well as allowing users to redistribute a specific set of commands to others that may find it useful.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Maya_Embedded_Language
 
-- Maya Embedded Language appears in categories: programming language
-- Maya Embedded Language Wikipedia page
- https://en.wikipedia.org/wiki/Maya_Embedded_Language
-- Maya Embedded Language first developed in Autodesk, Inc
-- See also: (3 related languages)Perl, Tcl, Python
+- Tags: programming language
+- Early development of Maya Embedded Language happened in Autodesk, Inc
+- See also: (3 related languages) Perl, Tcl, Python
 
 // animated duplicates/instances script
 proc animatedDuplication (int $rangeStart, int $rangeEnd, int $numOfDuplicates, int $duplicateOrInstance)

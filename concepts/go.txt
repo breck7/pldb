@@ -13,29 +13,15 @@ Go is an open source programming language created in 2009 by Rob Pike and Ken Th
 
 git clone https://github.com/golang/go
 
-Try now: Web · Riju · TIO · Replit
-
 Go (often referred to as golang) is a programming language created at Google in 2009 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added. The compiler and other language tools originally developed by Google are all free and open source.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Go_(programming_language)
 
-- Go website
- https://go.dev/
-- Go appears in categories: programming language
-- Go downloads page
- https://go.dev/dl/
-- Go Wikipedia page
- https://en.wikipedia.org/wiki/Go_(programming_language)
+- Tags: programming language
 - Go is developed on GitHub and has 110,413 stars
 - Watch the history of the Go repo visualized with Gource
-- Go docs
- https://devdocs.io/go/
-- Go mailing list
- https://groups.google.com/g/golang-nuts
 - There are at least 1,083,789 Go repos on GitHub
-- Go first developed in Google
+- Early development of Go happened in Google
 - Go is written in Go, Assembly language, C, Markdown, JSON, Bash, HTML, Bourne shell, JavaScript, Perl, YAML, Make, CSS, Logos, Dockerfile, C++, Fortran 90, CSV, Python, Objective-C, awk, MATLAB
-- Go on Twitter
- https://twitter.com/golang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 45k users using Go in 91k repos on GitHub
 - Check out the 315 Go meetup groups on Meetup.com.
 - There are 1,768 Project Euler users using Go
@@ -53,17 +39,9 @@ Go (often referred to as golang) is a programming language created at Google in 
 - GitHub supports syntax highlighting for Go
 - Go appears in the Quine Relay project
 - PLDB has 4 Jupyter Kernels for Go: github.com, github.com, github.com, github.com
-- Release Notes for Go
- https://go.dev/doc/devel/release
-- Official Blog page for Go
- https://go.dev/blog/
-- Frequently Asked Questions for Go
- https://go.dev/doc/faq
-- Go leet sheet
- https://cheatsheets.zip/go
 - Indeed.com has 1,284 matches for "go engineer".
-- See also: (33 related languages)Assembly language, Linux, FreeBSD, Solaris, ALEF, APL, BCPL, C, CSP, Limbo, Modula, Newsqueak, Oberon, Occam, Pascal, Python, Smalltalk, Crystal, Algol, Unix, Java, UTF-8, C#, Rust, Erlang, Chapel, CIL, MongoDB, Standard ML, COBOL, Fortran, Scala, Dart
-- 78 languages in PLDB linking to Go: abs, Ace Editor, a Lisp Environment, Ante, aretext, Ark, Battlestar, BeBasic, Blacklight, Chapel, clay, cloc, comby, Cue, Cyber, Dafny, DDP, dgraph, Differential Datalog, DRAKON, Elvish, FlatBuffers, fo, Frundis, funl, g-fu, GCC, gentee, gfoo, Git, Go, Goal, gogs-editor, gridstudio-editor, h, HCL, Hera, HHVM, HuJSON, ink-lang, ivy, jayfor, JSON Query Language, JSON with Comments, Jule, ko, ktye/k, Kubernetes, m3db, mal, Mangle, mgmt, micro-editor, multiaddr, Nit, Nomad, noms-db, Observable Framework, oden, OK, orange, Pipefish, Please Build, PROMETHEUS, Pygments, QOIR, Rye, Simple Binary Encoding, Slope, Snowball, Tawa, TensorFlow, TestML, TMTP, Touch, V, VSXu, Wing
+- See also: (33 related languages) Assembly language, Linux, FreeBSD, Solaris, ALEF, APL, BCPL, C, CSP, Limbo, Modula, Newsqueak, Oberon, Occam, Pascal, Python, Smalltalk, Crystal, Algol, Unix, Java, UTF-8, C#, Rust, Erlang, Chapel, CIL, MongoDB, Standard ML, COBOL, Fortran, Scala, Dart
+- 78 PLDB concepts link to Go: abs, Ace Editor, a Lisp Environment, Ante, aretext, Ark, Battlestar, BeBasic, Blacklight, Chapel, clay, cloc, comby, Cue, Cyber, Dafny, DDP, dgraph, Differential Datalog, DRAKON, Elvish, FlatBuffers, fo, Frundis, funl, g-fu, GCC, gentee, gfoo, Git, Go, Goal, gogs-editor, gridstudio-editor, h, HCL, Hera, HHVM, HuJSON, ink-lang, ivy, jayfor, JSON Query Language, JSON with Comments, Jule, ko, ktye/k, Kubernetes, m3db, mal, Mangle, mgmt, micro-editor, multiaddr, Nit, Nomad, noms-db, Observable Framework, oden, OK, orange, Pipefish, Please Build, PROMETHEUS, Pygments, QOIR, Rye, Simple Binary Encoding, Slope, Snowball, Tawa, TensorFlow, TestML, TMTP, Touch, V, VSXu, Wing
 
 // Type your code here, or load an example.
 // Your function name should start with a capital letter.

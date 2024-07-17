@@ -10,13 +10,9 @@
 .QL (pronounced "dot-cue-el") is an object-oriented query language used to retrieve data from relational database management systems. It is reminiscent of the standard query language SQL and the object-oriented programming language Java. .QL is an object-oriented variant of a logical query language called Datalog. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/.QL
 
-- .QL website
- https://www.semmle.com
-- .QL appears in categories: programming language
-- .QL Wikipedia page
- https://en.wikipedia.org/wiki/.QL
-- .QL first developed in Semmle Inc
-- See also: (3 related languages)Datalog, SQL, Java
+- Tags: programming language
+- Early development of .QL happened in Semmle Inc
+- See also: (3 related languages) Datalog, SQL, Java
 
 1  from Class c, int numOfMethods
 2  where numOfMethods = count(Method m| m.getDeclaringType()=c

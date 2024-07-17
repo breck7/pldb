@@ -8,37 +8,21 @@ LLVM IR is an open source intermediate representation language created in 2003.
 21 Years Old
 1k Repos
 
-Try now: Riju · TIO
-
 The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends. LLVM is written in C++ and is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C and C++, the language-agnostic design of LLVM has since spawned a wide variety of front ends: languages with compilers that use LLVM include ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, OpenGL Shading Language, Halide, Haskell, Java bytecode, Julia, Lua, Objective-C, Pony, Python, R, Ruby, Rust, CUDA, Scala, Swift, and Xojo. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LLVM
 
-- LLVM IR website
- http://llvm.org/docs/LangRef.html
-- LLVM IR appears in categories: intermediate representation language
-- LLVM IR downloads page
- https://releases.llvm.org/download.html
-- LLVM IR Wikipedia page
- https://en.wikipedia.org/wiki/LLVM
-- LLVM IR docs
- https://llvm.org/docs/LangRef.html
+- Tags: intermediate representation language
 - There are at least 1,351 LLVM IR repos on GitHub
-- LLVM IR first developed in https://github.com/llvm
+- Early development of LLVM IR happened in https://github.com/llvm
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using LLVM IR in 1k repos on GitHub
 - LLVM IR Ubuntu package
  https://packages.ubuntu.com/jammy/llvm
 - Pygments supports syntax highlighting for LLVM IR
 - LLVM IR appears in the Quine Relay project
-- Release Notes for LLVM IR
- https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
-- Official Blog page for LLVM IR
- https://blog.llvm.org/tags/llvm-ir/
 - Events page for LLVM IR
  https://discourse.llvm.org/t/llvm-community-events-calendar/63237
-- Frequently Asked Questions for LLVM IR
- https://llvm.org/docs/FAQ.html
-- See also: (41 related languages)C, ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, GLSL, Haskell, Java Bytecode, Julia, Lua, Objective-C, Python, R, Ruby, Rust, CUDA, Scala, Swift, Xojo, iOS, Assembly language, Java, OpenGL, CIL, Standard ML, ARM, Qualcomm Hexagon, MIPS architecture, PTX, PowerPC, SPARC, X86, Extensible Linking Format, C--, Pure, OpenCL, ISBN
-- 23 languages in PLDB linking to LLVM IR: Chapel, CIR, cloc, Emscripten, firrtl, FLEX, Halide, HHVM, invokator, Julia, Kotlin, neeilang, oopsilon, Pony, rhine, Rust MIR, Simit, sixten, souper, SIL, Swift, TensorFlow, Triton
+- See also: (41 related languages) C, ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, GLSL, Haskell, Java Bytecode, Julia, Lua, Objective-C, Python, R, Ruby, Rust, CUDA, Scala, Swift, Xojo, iOS, Assembly language, Java, OpenGL, CIL, Standard ML, ARM, Qualcomm Hexagon, MIPS architecture, PTX, PowerPC, SPARC, X86, Extensible Linking Format, C--, Pure, OpenCL, ISBN
+- 23 PLDB concepts link to LLVM IR: Chapel, CIR, cloc, Emscripten, firrtl, FLEX, Halide, HHVM, invokator, Julia, Kotlin, neeilang, oopsilon, Pony, rhine, Rust MIR, Simit, sixten, souper, SIL, Swift, TensorFlow, Triton
 
 define i32 @square(i32) local_unnamed_addr #0 {
     %2 = mul nsw i32 %0, %0

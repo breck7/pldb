@@ -13,15 +13,13 @@ git clone https://github.com/saltstack/salt
 
 Software to automate the management and configuration of any infrastructure or application at scale. Get access to the Salt software package repository here:
 
-- SaltStack website
- https://repo.saltstack.com/
-- SaltStack appears in categories: programming language
+- Tags: programming language
 - SaltStack is developed on GitHub and has 12,572 stars
 - There are at least 4,398 SaltStack repos on GitHub
-- SaltStack first developed in https://github.com/saltstack
+- Early development of SaltStack happened in https://github.com/saltstack
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using SaltStack in 2k repos on GitHub
 - GitHub supports syntax highlighting for SaltStack
-- 3 languages in PLDB linking to SaltStack: cloc, Pygments, Racket
+- 3 PLDB concepts link to SaltStack: cloc, Pygments, Racket
 
 base:
   &#39;*&#39;:

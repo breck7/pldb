@@ -10,18 +10,12 @@ Elvish is a programming language created in 2013 by Qi Xiao.
 
 git clone https://github.com/elves/elvish
 
-Try now: Web · Riju
-
 Elvish is an expressive programming language and a versatile interactive shell, combined into one seamless package. It runs on Linux, BSDs, macOS and Windows.
 
-- Elvish website
- https://elv.sh/
-- Elvish appears in categories: programming language
+- Tags: programming language
 - Elvish is developed on GitHub and has 4,768 stars
-- Elvish first developed in https://github.com/elves
+- Early development of Elvish happened in https://github.com/elves
 - Elvish is written in Go, Markdown, HTML, JSON, YAML, Bourne shell, CSS, TOML, JavaScript, Python, Make, XML, TypeScript, SVG, Dockerfile
-- Elvish on Twitter
- https://twitter.com/elvishshell
 - elv.sh was registered in 2018
 
 if $true { echo good } else { echo bad }

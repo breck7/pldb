@@ -9,12 +9,10 @@ SIL, aka Swift Intermediate Language, is an intermediate representation language
 
 SIL is an SSA-form IR with high-level semantic information designed to implement the Swift programming language. In contrast to LLVM IR, SIL is a generally target-independent format representation that can be used for code distribution, but it can also express target-specific concepts as well as LLVM can.
 
-- SIL website
- https://github.com/apple/swift/blob/master/docs/SIL.rst
-- SIL appears in categories: intermediate representation language
-- SIL first developed in Apple
-- See also: (2 related languages)CIR, LLVM IR
-- 2 languages in PLDB linking to SIL: Rust HIR, Rust MIR
+- Tags: intermediate representation language
+- Early development of SIL happened in Apple
+- See also: (2 related languages) CIR, LLVM IR
+- 2 PLDB concepts link to SIL: Rust HIR, Rust MIR
 
 // SIL is reliant on Swift&#39;s type system and declarations, so SIL syntax is an extension of Swift&#39;s. A .sil file is a Swift source file with added SIL definitions. The Swift source is parsed only for its declarations; Swift func bodies (except for nested declarations) and top-level code are ignored by the SIL parser. In a .sil file, there are no implicit imports; the swift and/or Builtin standard modules must be imported explicitly if used.
 sil_stage canonical

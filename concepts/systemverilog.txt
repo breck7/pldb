@@ -11,19 +11,15 @@ SystemVerilog is a programming language created in 2002.
 SystemVerilog, standardized as IEEE 1800, is a hardware description and hardware verification language used to model, design, simulate, test and implement electronic systems. SystemVerilog is based on Verilog and some extensions, and since 2008 Verilog is now part of the same IEEE standard. It is commonly used in the semiconductor and electronic design industry as an evolution of Verilog.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SystemVerilog
 
-- SystemVerilog appears in categories: programming language
-- SystemVerilog Wikipedia page
- https://en.wikipedia.org/wiki/SystemVerilog
-- SystemVerilog docs
- http://courses.eees.dei.unibo.it/LABMPHSENG/wp-content/uploads/2016/02/SystemVerilog_3.1a.pdf
+- Tags: programming language
 - There are at least 9,972 SystemVerilog repos on GitHub
-- SystemVerilog first developed in Synopsys
+- Early development of SystemVerilog happened in Synopsys
 - The  Google BigQuery Public Dataset GitHub snapshot shows 872 users using SystemVerilog in 1k repos on GitHub
 - Explore SystemVerilog snippets on Rosetta Code
 - Monaco package for syntax highlighting SystemVerilog
 - Pygments supports syntax highlighting for SystemVerilog
 - GitHub supports syntax highlighting for SystemVerilog
-- See also: (7 related languages)Verilog, VHDL, OpenVera, Java, C, Property Specification Language, AXIOM
+- See also: (7 related languages) Verilog, VHDL, OpenVera, Java, C, Property Specification Language, AXIOM
 
 function integer log2;
   input integer x;

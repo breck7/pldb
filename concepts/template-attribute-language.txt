@@ -10,10 +10,8 @@ Template Attribute Language is a template language created in 2007.
 The Template Attribute Language (TAL) is a templating language used to generate dynamic HTML and XML pages. Its main goal is to simplify the collaboration between programmers and designers. This is achieved by embedding TAL statements inside valid HTML (or XML) tags which can then be worked on using common design tools. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Template_Attribute_Language
 
-- Template Attribute Language appears in categories: template language
-- Template Attribute Language Wikipedia page
- https://en.wikipedia.org/wiki/Template_Attribute_Language
-- See also: (8 related languages)HTML, XML, Python, Java, Perl, Raku, Common Lisp, Thymeleaf
+- Tags: template language
+- See also: (8 related languages) HTML, XML, Python, Java, Perl, Raku, Common Lisp, Thymeleaf
 
 &lt;tal:if condition=&quot;context/itemlist&quot;&gt;
 &lt;/tal&gt;

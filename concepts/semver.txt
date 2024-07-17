@@ -12,11 +12,9 @@ git clone https://github.com/semver/semver
 
 Semantic versioning (aka SemVer)[1], currently the best known and most widely adopted version scheme in this category, uses a sequence of three digits (Major.Minor.Patch), an optional prerelease tag and optional build meta tag. In this scheme, risk and functionality are the measures of significance. Breaking changes are indicated by increasing the major number (high risk), new non-breaking features increment the minor number (medium risk) and all other non-breaking changes increment the patch number (lowest risk). The presence of a prerelease tag (-alpha, -beta) indicates substantial risk, as does a major number of zero (0.y.z), which is used to indicate a work-in-progress that may contain any level of potentially breaking changes (highest risk).
 
-- Semantic Versioning website
- https://semver.org/
-- Semantic Versioning appears in categories: schema
+- Tags: schema
 - Semantic Versioning is developed on GitHub and has 6,140 stars
-- Semantic Versioning first developed in https://github.com/semver
+- Early development of Semantic Versioning happened in https://github.com/semver
 - Semantic Versioning is written in Markdown, JSON, SVG, YAML
 - semver.org was registered in 2009
 

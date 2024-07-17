@@ -10,11 +10,9 @@ Pnuts is an open source programming language created in 1997.
 Pnuts is a dynamic scripting language for the Java platform. It is designed to be used in a dual language system with the Java programming language. The goals of the Pnuts project are to provide a small, fast scripting language that has tight integration with the Java language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Pnuts
 
-- Pnuts appears in categories: programming language
-- Pnuts Wikipedia page
- https://en.wikipedia.org/wiki/Pnuts
-- Pnuts first developed in Sun Japan
-- See also: (1 related languages)Java
+- Tags: programming language
+- Early development of Pnuts happened in Sun Japan
+- See also: (1 related languages) Java
 
 use(&quot;pnuts.lib&quot;) // Standard module that makes sort, println and other functions available.
 countries = [&quot;Canada&quot;, &quot;Austria&quot;, &quot;Brazil&quot;]

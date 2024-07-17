@@ -11,11 +11,9 @@ Joule is a programming language created in 1996 by E. Dean Tribble.
 Joule is a concurrent dataflow programming language, designed for building distributed applications. It is so concurrent that the order of statements within a block is irrelevant to the operation of the block. Statements are executed whenever possible, based on their inputs. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Joule_(programming_language)
 
-- Joule appears in categories: programming language
-- Joule Wikipedia page
- https://en.wikipedia.org/wiki/Joule_(programming_language)
-- Joule first developed in Agorics
-- See also: (3 related languages)E, ASCII, Unicode
+- Tags: programming language
+- Early development of Joule happened in Agorics
+- See also: (3 related languages) E, ASCII, Unicode
 
 If amount &lt;= balance
        • account withdraw: amount

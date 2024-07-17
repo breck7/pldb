@@ -13,11 +13,7 @@ git clone https://github.com/mitsuhiko/twig
 Twig is a template engine for the PHP programming language. Its syntax originates from Jinja and Django templates. It's an open source product licensed under a BSD License and maintained by Fabien Potencier. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Twig_(template_engine)
 
-- Twig website
- https://twig.symfony.com/
-- Twig appears in categories: template language
-- Twig Wikipedia page
- https://en.wikipedia.org/wiki/Twig_(template_engine)
+- Tags: template language
 - Twig is developed on GitHub and has 35 stars
 - There are at least 5,791 Twig repos on GitHub
 - Twig is written in PHP, HTML
@@ -26,8 +22,8 @@ Twig is a template engine for the PHP programming language. Its syntax originate
 - Monaco package for syntax highlighting Twig
 - Pygments supports syntax highlighting for Twig
 - GitHub supports syntax highlighting for Twig
-- See also: (9 related languages)PHP, Jinja, Django, Eclipse, Emacs, Sublime Text, TextMate, Vim, Smarty
-- 2 languages in PLDB linking to Twig: Ace Editor, packagist-pm
+- See also: (9 related languages) PHP, Jinja, Django, Eclipse, Emacs, Sublime Text, TextMate, Vim, Smarty
+- 2 PLDB concepts link to Twig: Ace Editor, packagist-pm
 
 {% extends &quot;base.html&quot; %}
 {% block navigation %}

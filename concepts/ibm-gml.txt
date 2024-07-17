@@ -13,14 +13,12 @@ GML, aka IBM Generalised Markup Language, is a xml format created in 1969 by Cha
 Generalized Markup Language (GML) is a set of macros that implement intent-based (procedural) markup tags for the IBM text formatter, SCRIPT.  SCRIPT/VS is the main component of IBM's Document Composition Facility (DCF). A starter set of tags in GML is provided with the DCF product.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language
 
-- GML appears in categories: xmlFormat
-- GML Wikipedia page
- https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language
-- GML first developed in IBM
+- Tags: xmlFormat
+- Early development of GML happened in IBM
 - GML on HOPL
  https://hopl.info/showlanguage.prx?exp=6352
 - ANTLR grammar for GML
-- See also: (4 related languages)SCRIPT markup, SGML, XML, Information Presentation Facility
+- See also: (4 related languages) SCRIPT markup, SGML, XML, Information Presentation Facility
 
 draw_text(1, 1, &quot;Hello World&quot;);
 

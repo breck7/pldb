@@ -11,11 +11,11 @@ git clone https://github.com/tonsky/DataScript
 
 Immutable database and Datalog query engine for Clojure, ClojureScript and JS
 
-- datascript appears in categories: queryLanguage
+- Tags: queryLanguage
 - datascript is developed on GitHub and has 4,793 stars
-- datascript first developed in https://www.patreon.com/tonsky
+- Early development of datascript happened in https://www.patreon.com/tonsky
 - datascript is written in Bourne shell, Clojure, JavaScript, Markdown, ClojureScript, HTML, YAML, SVG, JSON
-- 1 languages in PLDB linking to datascript: Project Mentat
+- 1 PLDB concepts link to datascript: Project Mentat
 
 (require &#39;[datascript.core :as d])
 

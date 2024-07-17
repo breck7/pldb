@@ -11,16 +11,14 @@ git clone https://github.com/facebookincubator/clangir
 
 Clang IR (CIR) is a new IR for Clang.
 
-- CIR website
- https://facebookincubator.github.io/clangir/
-- CIR appears in categories: intermediate representation language
+- Tags: intermediate representation language
 - CIR is developed on GitHub and has 150 stars
-- CIR first developed in Engineering at Meta
-- See also: (1 related languages)LLVM IR
+- Early development of CIR happened in Engineering at Meta
+- See also: (1 related languages) LLVM IR
 - Read more about CIR on the web: 1. 2.
  https://news.ycombinator.com/item?id=31904624
  https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
-- 1 languages in PLDB linking to CIR: SIL
+- 1 PLDB concepts link to CIR: SIL
 
 // Read from local variable, address in %0.
 %1 = cir.load %0 : !cir.ptr&lt;i32&gt;, i32

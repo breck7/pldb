@@ -11,13 +11,11 @@ XC, aka XMOS community, is a programming language created in 2005.
 In computers, XC is a programming language for real-time embedded parallel processors, targeted at the XMOS XCore processor architecture.XC is an imperative language, based on the features for parallelism and communication in occam, and the syntax and sequential features of C. It provides primitive features that correspond to the various architectural resources provided, namely: channel ends, locks, ports and timers. In combination with XCore processors, XC is used to build embedded systems with levels of I/O, real-time performance and computational ability usually attributed to field-programmable gate arrays (FPGAs) or application-specific integrated circuit (ASIC) devices.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XC_(programming_language)
 
-- XC appears in categories: programming language
-- XC Wikipedia page
- https://en.wikipedia.org/wiki/XC_(programming_language)
+- Tags: programming language
 - There are at least 342 XC repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 301 users using XC in 444 repos on GitHub
 - GitHub supports syntax highlighting for XC
-- See also: (2 related languages)C, Occam
+- See also: (2 related languages) C, Occam
 
 int main()
 {

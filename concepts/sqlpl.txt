@@ -11,14 +11,12 @@ SQLPL is a programming language created in 2009.
 SQL PL stands for Structured Query Language Procedural Language and was developed by IBM as a set of commands that extend the use of SQL in the IBM DB2 (DB2 UDB Version 7) database system. It provides procedural programmability in addition to the querying commands of SQL. It is a subset of the SQL Persistent Stored Modules (SQL/PSM) language standard. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SQL_PL
 
-- SQLPL appears in categories: programming language
-- SQLPL Wikipedia page
- https://en.wikipedia.org/wiki/SQL_PL
+- Tags: programming language
 - There are at least 7,609 SQLPL repos on GitHub
-- SQLPL first developed in IBM
+- Early development of SQLPL happened in IBM
 - The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using SQLPL in 5k repos on GitHub
 - GitHub supports syntax highlighting for SQLPL
-- See also: (3 related languages)SQL, SQL/PSM, PL/SQL
+- See also: (3 related languages) SQL, SQL/PSM, PL/SQL
 
 create procedure sleep (in sleeptime integer)
 begin

@@ -10,14 +10,10 @@ KiXtart is a programming language created in 1991.
 KiXtart is a closed source free-format scripting language for Windows. It is described as a logon script processor and enhanced batch scripting language by the official website. Its name is a portmanteau of "kick start".. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/KiXtart
 
-- KiXtart website
- http://www.kixtart.org/
-- KiXtart appears in categories: programming language
-- KiXtart Wikipedia page
- https://en.wikipedia.org/wiki/KiXtart
-- KiXtart first developed in https://github.com/kivy
+- Tags: programming language
+- Early development of KiXtart happened in https://github.com/kivy
 - kixtart.org was registered in 1999
-- See also: (3 related languages)ISBN, FastTrack Scripting Host, AutoIt
+- See also: (3 related languages) ISBN, FastTrack Scripting Host, AutoIt
 
 ; Read value from registry
 $ProductID = ReadValue(&quot;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion&quot;,&quot;ProductId&quot;)

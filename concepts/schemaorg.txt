@@ -10,14 +10,10 @@ Schema.org is a data validation language created in 2011.
 Schema.org is an initiative launched on 2 June 2011 by Bing, Google and Yahoo! (then operators of the world's largest search engines) to “create and support a common set of schemas for structured data markup on web pages.” In November 2011 Yandex (whose search engine is the largest one in Russia) joined the initiative. They propose using the schema.org vocabulary along with the Microdata, RDFa, or JSON-LD formats to mark up website content with metadata about itself. Such markup can be recognized by search engine spiders and other parsers, thus gaining access to the meaning of the sites (see Semantic Web). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Schema.org
 
-- Schema.org website
- http://schema.org
-- Schema.org appears in categories: dataValidationLanguage
-- Schema.org Wikipedia page
- https://en.wikipedia.org/wiki/Schema.org
-- Schema.org first developed in https://groups.google.com/g/schema-org-sg
+- Tags: dataValidationLanguage
+- Early development of Schema.org happened in https://groups.google.com/g/schema-org-sg
 - schema.org was registered in 2005
-- See also: (6 related languages)RDF, OWL, Turtle, JSON, CSV, URL
+- See also: (6 related languages) RDF, OWL, Turtle, JSON, CSV, URL
 
 &lt;script type=&quot;application/ld+json&quot;&gt;
 {

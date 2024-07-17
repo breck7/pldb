@@ -10,11 +10,9 @@ Assembly CLI is a library created in 2005.
 Defined by Microsoft for use in recent versions of Windows, an assembly in the Common Language Infrastructure (CLI) is a compiled code library used for deployment, versioning, and security. There are two types: process assemblies (EXE) and library assemblies (DLL). A process assembly represents a process that will use classes defined in library assemblies. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Assembly_(CLI)
 
-- Assembly CLI appears in categories: library
-- Assembly CLI Wikipedia page
- https://en.wikipedia.org/wiki/Assembly_(CLI)
-- Assembly CLI first developed in Microsoft
-- See also: (4 related languages)CIL, Visual Studio, FAT, New Technology File System
+- Tags: library
+- Early development of Assembly CLI happened in Microsoft
+- See also: (4 related languages) CIL, Visual Studio, FAT, New Technology File System
 
 .method private hidebysig static void  Main(string[] args) cil managed {
   .entrypoint

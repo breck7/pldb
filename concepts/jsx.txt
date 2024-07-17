@@ -7,17 +7,13 @@ JSX is a template language created in 2013.
 #724 on PLDB
 11 Years Old
 
-- JSX website
- http://reactjs.org
-- JSX appears in categories: template language
-- JSX first developed in Facebook
-- JSX on Twitter
- https://twitter.com/reactjs
+- Tags: template language
+- Early development of JSX happened in Facebook
 - GitHub supports syntax highlighting for JSX
 - reactjs.org was registered in 2013
 - Read more about JSX on the web: 1.
  https://en.wikipedia.org/wiki/React_(JavaScript_library)#JSX
-- 18 languages in PLDB linking to JSX: Ace Editor, Deno, Flow, Mastodon, Mathpix Markdown, MDX, Nadesiko, Node.js, packagist-pm, PRQL, Pygments, React Native, SmallBASIC, SQRL, tibet, Wasp, Wing, xodio
+- 18 PLDB concepts link to JSX: Ace Editor, Deno, Flow, Mastodon, Mathpix Markdown, MDX, Nadesiko, Node.js, packagist-pm, PRQL, Pygments, React Native, SmallBASIC, SQRL, tibet, Wasp, Wing, xodio
 
 class App extends React.Component {
   render() {

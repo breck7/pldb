@@ -10,16 +10,14 @@ Diff is an open source unix application created in 1974.
 In computing, the diff utility is a data comparison tool that calculates and displays the differences between two files. Unlike edit distance notions used for other purposes, diff is line-oriented rather than character-oriented, but it is like Levenshtein distance in that it tries to determine the smallest set of deletions and insertions to create one file from the other. The diff command displays the changes made in a standard format, such that both humans and machines can understand the changes and apply them: given one file and the changes, the other file can be created. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Diff_utility
 
-- Diff appears in categories: unixApplication
-- Diff Wikipedia page
- https://en.wikipedia.org/wiki/Diff_utility
-- Diff first developed in AT&T Bell Laboratories
+- Tags: unixApplication
+- Early development of Diff happened in AT&T Bell Laboratories
 - The  Google BigQuery Public Dataset GitHub snapshot shows 477 users using Diff in 561 repos on GitHub
 - CodeMirror package for syntax highlighting Diff
 - Pygments supports syntax highlighting for Diff
 - GitHub supports syntax highlighting for Diff
-- See also: (15 related languages)Unix, grep, Emacs, Regular Expressions, C, Bourne shell, Fortran, Modula-2, Lisp, ISBN, DOI, ed script, patch, Context Diff, Unified Diff
-- 82 languages in PLDB linking to Diff: Armed Bear Common Lisp, Ace Editor, ASDF, asterius-compiler, Bazel, Bucardo, Caramel, Carbon, Chapel, Claro, Click, comby, Coq, CouchDB, Cryptol, Dafny, Dhall, Eiffel, Erlang, Fardlang, Fennel, FlatBuffers, Flow, Flow9, Git, groff, haste, Haxe, HHVM, hobbes, Homebrew, ImHex, Impala, Java, Julia, Kefir, Kotlin, Ladybird, lobster, mal, Mastodon, mermaid, MicroPython, Minilang, MongoDB, NCAR Command Language, Nit, Node.js, oil, Opa, Perl, PHP, Please Build, PogoScript, polyglot-compiler, POV-Ray SDL, Python, PyTorch, Racket, Reason, Revolution, Roslyn compiler, Ruby, Rust, SciPy, sile, Simplicity, Slony, Semantic Patch Language, Snowball, Spatial, TensorFlow, Terra, Textadept, tiledb, tldraw, TypeScript, Vcpkg, vega-editor-app, wasmer, Wing, yeti
+- See also: (15 related languages) Unix, grep, Emacs, Regular Expressions, C, Bourne shell, Fortran, Modula-2, Lisp, ISBN, DOI, ed script, patch, Context Diff, Unified Diff
+- 82 PLDB concepts link to Diff: Armed Bear Common Lisp, Ace Editor, ASDF, asterius-compiler, Bazel, Bucardo, Caramel, Carbon, Chapel, Claro, Click, comby, Coq, CouchDB, Cryptol, Dafny, Dhall, Eiffel, Erlang, Fardlang, Fennel, FlatBuffers, Flow, Flow9, Git, groff, haste, Haxe, HHVM, hobbes, Homebrew, ImHex, Impala, Java, Julia, Kefir, Kotlin, Ladybird, lobster, mal, Mastodon, mermaid, MicroPython, Minilang, MongoDB, NCAR Command Language, Nit, Node.js, oil, Opa, Perl, PHP, Please Build, PogoScript, polyglot-compiler, POV-Ray SDL, Python, PyTorch, Racket, Reason, Revolution, Roslyn compiler, Ruby, Rust, SciPy, sile, Simplicity, Slony, Semantic Patch Language, Snowball, Spatial, TensorFlow, Terra, Textadept, tiledb, tldraw, TypeScript, Vcpkg, vega-editor-app, wasmer, Wing, yeti
 
 diff --git a/lib/linguist.rb b/lib/linguist.rb
 index d472341..8ad9ffb 100644

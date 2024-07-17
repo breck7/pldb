@@ -10,11 +10,9 @@ Apex is a programming language created in 2007.
 
 Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
 
-- Apex website
- https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
-- Apex appears in categories: programming language
+- Tags: programming language
 - There are at least 22,719 Apex repos on GitHub
-- Apex first developed in Salesforce
+- Early development of Apex happened in Salesforce
 - The  Google BigQuery Public Dataset GitHub snapshot shows 537 users using Apex in 778 repos on GitHub
 - First announcement of Apex
 - Explore Apex snippets on Rosetta Code

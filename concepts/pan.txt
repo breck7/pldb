@@ -14,20 +14,16 @@ git clone https://github.com/quattor/pan
 The pan configuration language allows the definition of machine configuration information and an associated schema with a simple, human-accessible syntax. A pan language compiler transforms the configuration information contained within a set of pan templates to a machine-friendly XML or JSON format. The pan language is used within the Quattor toolkit to define the desired configuration for one or more machines. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Pan_(programming_language)
 
-- Pan website
- http://www.quattor.org/
-- Pan appears in categories: programming language
-- Pan Wikipedia page
- https://en.wikipedia.org/wiki/Pan_(programming_language)
+- Tags: programming language
 - Pan is developed on GitHub and has 10 stars
 - There are at least 41 Pan repos on GitHub
-- Pan first developed in https://github.com/quattor
+- Early development of Pan happened in https://github.com/quattor
 - Pan is written in Java, XML, HTML, reStructuredText, Ini, Clojure, Perl, Vim script, YAML, SVG, Python, Markdown, Bash
 - The  Google BigQuery Public Dataset GitHub snapshot shows 119 users using Pan in 150 repos on GitHub
 - Pygments supports syntax highlighting for Pan
 - GitHub supports syntax highlighting for Pan
 - quattor.org was registered in 2003
-- See also: (1 related languages)Java
+- See also: (1 related languages) Java
 
 unique template site/one/onevm;
 

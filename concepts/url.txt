@@ -11,14 +11,8 @@ URL, aka Uniform Resource Locator, is a standard created in 1994 by Tim Berners-
 A Uniform Resource Locator (URL), colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI), although many people use the two terms interchangeably. URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/URL
 
-- URL appears in categories: standard, schema
-- URL Wikipedia page
- https://en.wikipedia.org/wiki/URL
-- URL docs
- https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app
-- URL specs
- https://url.spec.whatwg.org/
-- See also: (4 related languages)FTP, HTTP, HTML, UTF-8
-- 2 languages in PLDB linking to URL: multiaddr, URI
+- Tags: standard, schema
+- See also: (4 related languages) FTP, HTTP, HTML, UTF-8
+- 2 PLDB concepts link to URL: multiaddr, URI
 
 scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]

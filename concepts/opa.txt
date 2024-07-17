@@ -13,25 +13,17 @@ git clone https://github.com/MLstate/opalang
 Opa is an open-source programming language for developing scalable web applications. It can be used for both client-side and server-side scripting, where complete programs are written in Opa and subsequently compiled to Nodejs on the server and JavaScript on the client, with the compiler automating all communication between the two. Opa implements strong, static typing, which can be helpful in protecting against security issues such as SQL injections and cross-site scripting attacks. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Opa_(programming_language)
 
-- Opa website
- http://opalang.org
-- Opa appears in categories: programming language
-- Opa Wikipedia page
- https://en.wikipedia.org/wiki/Opa_(programming_language)
+- Tags: programming language
 - Opa is developed on GitHub and has 1,227 stars
-- Opa docs
- https://github.com/MLstate/opalang/wiki/A-tour-of-Opa
 - There are at least 76 Opa repos on GitHub
-- Opa first developed in https://github.com/MLstate
+- Early development of Opa happened in https://github.com/MLstate
 - Opa is written in OCaml, JavaScript, CSS, Bourne shell, C, Diff, Lisp, Make, Bash, XML, HTML, SVG, Vim script, Markdown, Perl, QML, Java, Python, Z shell, Dockerfile
-- Opa on Twitter
- https://twitter.com/opalang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Opa in 58 repos on GitHub
 - Explore Opa snippets on Rosetta Code
 - Pygments supports syntax highlighting for Opa
 - GitHub supports syntax highlighting for Opa
 - opalang.org was registered in 2010
-- See also: (12 related languages)Linux, OCaml, Erlang, JavaScript, JQuery, HTML, MongoDB, PostgreSQL, SQL, Dart, Haxe, CoffeeScript
+- See also: (12 related languages) Linux, OCaml, Erlang, JavaScript, JQuery, HTML, MongoDB, PostgreSQL, SQL, Dart, Haxe, CoffeeScript
 
 jlog(&quot;Hello World&quot;)
 

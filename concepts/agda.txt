@@ -10,28 +10,20 @@ Agda is an open source programming language created in 2007 by Ulf Norell and Ca
 17 Years Old
 2k Repos
 
-Try now: TIO
-
 Agda is a dependently typed functional programming language originally developed by Ulf Norell at Chalmers University of Technology with implementation described in his PhD thesis. The current version of Agda was originally known as Agda 2. The original Agda system was developed at Chalmers by Catarina Coquand in 1999. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Agda_(programming_language)
 
-- Agda website
- http://wiki.portal.chalmers.se/agda
-- Agda appears in categories: programming language
-- Agda Wikipedia page
- https://en.wikipedia.org/wiki/Agda_(programming_language)
-- Agda docs
- https://agda.readthedocs.io/en/v2.6.2.2/
+- Tags: programming language
 - There are at least 2,120 Agda repos on GitHub
-- Agda first developed in Chalmers University of Technology
+- Early development of Agda happened in Chalmers University of Technology
 - The  Google BigQuery Public Dataset GitHub snapshot shows 143 users using Agda in 207 repos on GitHub
 - Explore Agda snippets on Rosetta Code
 - Agda on HOPL
  https://hopl.info/showlanguage.prx?exp=7860
 - Pygments supports syntax highlighting for Agda
 - GitHub supports syntax highlighting for Agda
-- See also: (7 related languages)Coq, Epigram, Haskell, Idris, Emacs, Unicode, JavaScript
-- 4 languages in PLDB linking to Agda: cloc, datafun, obsidian, Pygments
+- See also: (7 related languages) Coq, Epigram, Haskell, Idris, Emacs, Unicode, JavaScript
+- 4 PLDB concepts link to Agda: cloc, datafun, obsidian, Pygments
 
 module agda where
 open import IO

@@ -13,17 +13,11 @@ git clone https://github.com/matplotlib/matplotlib
 matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB, though its use is discouraged. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Matplotlib
 
-- Matplotlib website
- http://matplotlib.org/
-- Matplotlib appears in categories: data visualization grammar, library
-- Matplotlib Wikipedia page
- https://en.wikipedia.org/wiki/Matplotlib
+- Tags: data visualization grammar, library
 - Matplotlib is developed on GitHub and has 15,728 stars
-- Matplotlib first developed in https://github.com/matplotlib
+- Early development of Matplotlib happened in https://github.com/matplotlib
 - Matplotlib is written in Python, SVG, reStructuredText, C++, YAML, Meson, JSON, HTML, Markdown, CSS, JavaScript, CSV, Jupyter Notebook, Bourne shell, Tex, Objective-C, TOML, XML, Ini, Make, C, Lua
-- Matplotlib on Twitter
- https://twitter.com/matplotlib
-- See also: (13 related languages)Python, NumPy, Qt, OpenGL, MATLAB, SciPy, Gnuplot, Julia, GNU Octave, Maxima, Microsoft Excel, Jython, Sage
+- See also: (13 related languages) Python, NumPy, Qt, OpenGL, MATLAB, SciPy, Gnuplot, Julia, GNU Octave, Maxima, Microsoft Excel, Jython, Sage
 
 &gt;&gt;&gt; from matplotlib import cm
 &gt;&gt;&gt; from mpl_toolkits.mplot3d import Axes3D

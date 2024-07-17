@@ -11,18 +11,15 @@ Nginx is an open source config format created in 2004.
 Nginx (  EN-jin-EKS) (stylized as NGINX, NGiИX or nginx) is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.  The software was created by Igor Sysoev and first publicly released in 2004. A company of the same name was founded in 2011 to provide support and Nginx plus paid software.Nginx is free and open-source software, released under the terms of a BSD-like license. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Nginx
 
-- Nginx appears in categories: configFormat
-- Nginx Wikipedia page
- https://en.wikipedia.org/wiki/Nginx
-- PLDB has 2 documentation sites for Nginx: nginx.org, devdocs.io
+- Tags: configFormat
 - There are at least 5,905 Nginx repos on GitHub
-- Nginx first developed in F5, Inc
+- Early development of Nginx happened in F5, Inc
 - The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Nginx in 9k repos on GitHub
 - CodeMirror package for syntax highlighting Nginx
 - Pygments supports syntax highlighting for Nginx
 - GitHub supports syntax highlighting for Nginx
 - Indeed.com has 2,884 matches for "nginx engineer".
-- See also: (5 related languages)C, Linux, Solaris, TLS, WordPress
+- See also: (5 related languages) C, Linux, Solaris, TLS, WordPress
 
 #user  nobody;
 worker_processes  1;

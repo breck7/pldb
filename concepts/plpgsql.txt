@@ -12,18 +12,14 @@ PL/pgSQL is a programming language created in 1998 by Jan Wieck.
 PL/pgSQL (Procedural Language/PostgreSQL) is a procedural programming language supported by the PostgreSQL ORDBMS.  It closely resembles Oracle's PL/SQL language. Implemented by Jan Wieck, PL/pgSQL first appeared with PostgreSQL 6.4, released on October 30, 1998. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PL/pgSQL
 
-- PL/pgSQL appears in categories: programming language
-- PL/pgSQL Wikipedia page
- https://en.wikipedia.org/wiki/PL/pgSQL
-- PL/pgSQL docs
- https://www.postgresql.org/docs/current/plpgsql.html
+- Tags: programming language
 - There are at least 24,919 PL/pgSQL repos on GitHub
-- PL/pgSQL first developed in The PostgreSQL Global Development Group
+- Early development of PL/pgSQL happened in The PostgreSQL Global Development Group
 - The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using PL/pgSQL in 9k repos on GitHub
 - Pygments supports syntax highlighting for PL/pgSQL
 - GitHub supports syntax highlighting for PL/pgSQL
-- See also: (6 related languages)PL/SQL, Ada, PostgreSQL, SQL/PSM, SQL, Bison
-- 2 languages in PLDB linking to PL/pgSQL: Bucardo, PgBouncer
+- See also: (6 related languages) PL/SQL, Ada, PostgreSQL, SQL/PSM, SQL, Bison
+- 2 PLDB concepts link to PL/pgSQL: Bucardo, PgBouncer
 
 load &#39;plpgsql&#39;;
 load &#39;plpgsql_lint&#39;;

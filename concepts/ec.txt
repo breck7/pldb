@@ -11,26 +11,20 @@ eC, aka Ecere C, is an open source programming language created in 2004 by Jér�
 
 git clone https://github.com/ecere/ecere-sdk/
 
-Try now: Riju · TIO
-
 eC (Ecere C) is an object-oriented programming language, defined as a super-set of the C language. eC was initially developed as part of the Ecere Cross-platform Software Development Kit project. The goals of the language are to provide object-oriented constructs, reflection, properties and dynamic modules on top of the C language while maintaining C compatibility and optimal native performance.eC currently relies on GCC or Clang to perform the final steps of compilation, using C as an intermediate language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/EC_(programming_language)
 
-- eC website
- http://ec-lang.org/
-- eC appears in categories: programming language
-- eC Wikipedia page
- https://en.wikipedia.org/wiki/EC_(programming_language)
+- Tags: programming language
 - eC is developed on GitHub and has 298 stars
 - There are at least 139 eC repos on GitHub
-- eC first developed in Ecere Corporation
+- Early development of eC happened in Ecere Corporation
 - eC is written in C, Make, SVG, Assembly language, Python, M4, C++, XML, Bourne shell, Expect, GLSL, Yacc, Markdown, YAML, Objective-C, Java, Tex, Lex, Perl, HTML
 - The  Google BigQuery Public Dataset GitHub snapshot shows 894 users using eC in 920 repos on GitHub
 - Explore eC snippets on Rosetta Code
 - Pygments supports syntax highlighting for eC
 - GitHub supports syntax highlighting for eC
 - ec-lang.org was registered in 2014
-- See also: (8 related languages)C, Python, LLVM IR, Linux, FreeBSD, Android, JavaScript, WebAssembly
+- See also: (8 related languages) C, Python, LLVM IR, Linux, FreeBSD, Android, JavaScript, WebAssembly
 
 class Main : Application
 {

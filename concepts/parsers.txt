@@ -10,20 +10,14 @@ Parsers is an open source grammar language created in 2017 by Breck Yunits.
 
 git clone https://github.com/breck7/scrollsdk
 
-Try now: Web
-
 Parsers is a language for building on top of Scroll Notation. A compiler compiler. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Parsers uses both postfix and prefix language features.
 
-- Parsers website
- https://sdk.scroll.pub/langs/parsers/
-- Parsers appears in categories: grammarLanguage, compiler
+- Tags: grammarLanguage, compiler
 - Parsers is developed on GitHub and has 365 stars
-- Parsers first developed in https://github.com/breck7/scrollsdk/issues
+- Early development of Parsers happened in https://github.com/breck7/scrollsdk/issues
 - Parsers is written in Scroll Notation, JavaScript, TypeScript, HTML, JSON, SVG, CSS, YAML, Markdown
-- Release Notes for Parsers
- https://sdk.scroll.pub/langs/parsers/
-- See also: (2 related languages)Scroll Notation, ANTLR
-- 4 languages in PLDB linking to Parsers: Scroll, Scroll Notation, Speedie, TQL
+- See also: (2 related languages) Scroll Notation, ANTLR
+- 4 PLDB concepts link to Parsers: Scroll, Scroll Notation, Speedie, TQL
 
 latinNode
  root

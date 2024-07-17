@@ -11,38 +11,24 @@ Idris is an open source programming language created in 2014 by Edwin Brady.
 
 git clone https://github.com/idris-lang/Idris-dev
 
-Try now: Riju · TIO
-
 Idris is a general-purpose purely functional programming language with dependent types, strict or optional lazy evaluation and features such as a totality checker. Even before its possible usage for interactive theorem-proving, the focus of Idris is on general-purpose programming, like the purely functional Haskell, and with sufficient performance. The type system of Idris is similar to the one used by Agda and theorem-proving in it is similar to Coq, including tactics. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Idris_(programming_language)
 
-- Idris website
- http://idris-lang.org
-- Idris appears in categories: programming language
-- Idris Wikipedia page
- https://en.wikipedia.org/wiki/Idris_(programming_language)
+- Tags: programming language
 - Idris is developed on GitHub and has 3,342 stars
-- Idris docs
- http://docs.idris-lang.org/en/latest/
 - There are at least 1,895 Idris repos on GitHub
-- Idris first developed in University of St Andrews
+- Early development of Idris happened in University of St Andrews
 - Idris is written in Idris, Bourne shell, Haskell, reStructuredText, SVG, C, Make, Markdown, YAML, JavaScript, Perl, XML, CSS, Nix, Python, CMake, Scheme, Bash, Java
-- Idris on Twitter
- https://twitter.com/idrislang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 219 users using Idris in 301 repos on GitHub
 - There are 11 Project Euler users using Idris
 - Explore Idris snippets on Rosetta Code
 - Idris appears in the TIOBE Index
 - Pygments supports syntax highlighting for Idris
 - GitHub supports syntax highlighting for Idris
-- Official Blog page for Idris
- https://www.idris-lang.org/category/news.html
-- Frequently Asked Questions for Idris
- https://docs.idris-lang.org/en/latest/faq/faq.html]
 - Indeed.com has 1 matches for "idris developer".
 - idris-lang.org was registered in 2010
-- See also: (14 related languages)Agda, Coq, Epigram, Haskell, ML, Rust, Perl, C, JavaScript, Java, JVM, CIL, OCaml, LLVM IR
-- 3 languages in PLDB linking to Idris: cloc, Idris, Pygments
+- See also: (14 related languages) Agda, Coq, Epigram, Haskell, ML, Rust, Perl, C, JavaScript, Java, JVM, CIL, OCaml, LLVM IR
+- 3 PLDB concepts link to Idris: cloc, Idris, Pygments
 
 module Main
 

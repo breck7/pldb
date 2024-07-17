@@ -11,16 +11,12 @@ Unicon is an open source programming language created in 2008 by Clint Jeffery.
 Unicon is a programming language designed by American computer scientist Clint Jeffery with collaborators including Shamim Mohamed, Jafar Al Gharaibeh, Robert Parlett and others. Unicon descended from Icon and a preprocessor for Icon called IDOL. Compared with Icon, Unicon offers better access to the operating system as well as support for object-oriented programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Unicon_(programming_language)
 
-- Unicon website
- http://www.unicon.org/
-- Unicon appears in categories: programming language
-- Unicon Wikipedia page
- https://en.wikipedia.org/wiki/Unicon_(programming_language)
+- Tags: programming language
 - There are 20 Project Euler users using Unicon
 - Explore Unicon snippets on Rosetta Code
 - Pygments supports syntax highlighting for Unicon
 - unicon.org was registered in 2004
-- See also: (6 related languages)Unix, UML, Unicode, REBOL, Curl, Icon
+- See also: (6 related languages) Unix, UML, Unicode, REBOL, Curl, Icon
 
 procedure main()
  w := open(&quot;test UNICON window&quot;, &quot;g&quot;)

@@ -8,31 +8,21 @@ Vala is an open source programming language created in 2006.
 18 Years Old
 3k Repos
 
-Try now: Riju · TIO
-
 Vala is an object-oriented programming language with a self-hosting compiler that generates C code and uses the GObject system. Vala is syntactically similar to C# and includes several features such as: anonymous functions, signals, properties, generics, assisted memory management, exception handling, type inference, and foreach statements. Its developers Jürg Billeter and Raffaele Sandrini aim to bring these features to the plain C runtime with little overhead and no special runtime support by targeting the GObject object system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Vala_(programming_language)
 
-- Vala website
- https://wiki.gnome.org/Projects/Vala
-- Vala appears in categories: programming language
-- Vala Wikipedia page
- https://en.wikipedia.org/wiki/Vala_(programming_language)
-- Vala docs
- https://wiki.gnome.org/Projects/Vala/Documentation
+- Tags: programming language
 - There are at least 3,465 Vala repos on GitHub
 - Vala compiles to C
-- Vala on Twitter
- https://twitter.com/vala_lang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Vala in 2k repos on GitHub
 - Explore Vala snippets on Rosetta Code
 - Pygments supports syntax highlighting for Vala
 - GitHub supports syntax highlighting for Vala
-- See also: (13 related languages)C, C#, D, Java, Boo, Emacs, Sublime Text, TextMate, Eclipse, Vim, Visual Studio Code, Genie, Python
+- See also: (13 related languages) C, C#, D, Java, Boo, Emacs, Sublime Text, TextMate, Eclipse, Vim, Visual Studio Code, Genie, Python
 - Read more about Vala on the web: 1. 2.
  https://vala.dev/
  https://news.ycombinator.com/item?id=32113825
-- 3 languages in PLDB linking to Vala: Ace Editor, cloc, mal
+- 3 PLDB concepts link to Vala: Ace Editor, cloc, mal
 
 int main (string[] args) {
    var app = new Gtk.Application(

@@ -11,10 +11,6 @@ RubyGems is a package manager created in 2018 by Nick Quaranto.
 RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems, and a server for distributing them. It was created by Chad Fowler and Richard Kilmer during RubyConf 2004.The interface for RubyGems is a command-line tool called gem which can install and manage libraries (the gems). RubyGems integrates with Ruby run-time loader to help find and load installed gems from standardized library folders. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/RubyGems
 
-- RubyGems website
- https://rubygems.org
-- RubyGems appears in categories: packageManager
-- RubyGems Wikipedia page
- https://en.wikipedia.org/wiki/RubyGems
-- RubyGems first developed in https://github.com/rubygems
+- Tags: packageManager
+- Early development of RubyGems happened in https://github.com/rubygems
 - rubygems.org was registered in 2004

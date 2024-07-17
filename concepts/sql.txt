@@ -13,15 +13,9 @@ SQL, aka Structured Query Language, is a query language created in 1974 by Donal
 SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, SQL offers two main advantages: first, it introduced the concept of accessing many records with one single command; and second, it eliminates the need to specify how to reach a record, e.g. with or without an index. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SQL
 
-- SQL appears in categories: queryLanguage
-- SQL Wikipedia page
- https://en.wikipedia.org/wiki/SQL
-- SQL docs
- https://docs.data.world/documentation/sql/concepts/basic/intro.html
-- SQL specs
- https://modern-sql.com/standard
+- Tags: queryLanguage
 - There are at least 1,222 SQL repos on GitHub
-- SQL first developed in IBM
+- Early development of SQL happened in IBM
 - The  Google BigQuery Public Dataset GitHub snapshot shows 602 users using SQL in 641 repos on GitHub
 - There are 124 Project Euler users using SQL
 - In the 2021 StackOverflow developer survey SQL programmers reported a median salary of $56,228. 47% of respondents reported using SQL. 38,835 programmers reported using SQL, and 26,631 said they wanted to use it
@@ -35,8 +29,8 @@ SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query 
 - GitHub supports syntax highlighting for SQL
 - There is 1 Jupyter Kernel for SQL
 - Indeed.com has 147,983 matches for "sql developer".
-- See also: (26 related languages)SQL-92, Datalog, LINQ, PowerShell, C, SQL/PSM, SQLPL, Transact-SQL, MySQL, PL/SQL, Ada, PostgreSQL, PL/pgSQL, Java, Perl, Python, Tcl, JavaScript, XML, XQuery, .QL, ISBL, QUEL, MUMPS, ISBN, DOI
-- 51 languages in PLDB linking to SQL: Ace Editor, atomspace, Ballerina, Bucardo, categorical-query-language, cloc, dexvis, Differential Datalog, DRAKON, Lil, Eiffel, Erlang, Factor, gogs-editor, Haxe Library Manager, HHVM, Ibis, Impala, Java, Kefir, Lil, Links, Logica, mal, Mastodon, Mindsdb, nesC, Nim, Node.js, partiql, Perl, PgBouncer, PostgreSQL, PRQL, Pygments, Amazon Redshift, Revolution, Scroll Notation, SDMS, Slony, SourcePawn, SQHTML, tornado, TQL, ultralisp-pm, UrWeb, V, wasmer, Wasp, YAWL, Yes It Is
+- See also: (26 related languages) SQL-92, Datalog, LINQ, PowerShell, C, SQL/PSM, SQLPL, Transact-SQL, MySQL, PL/SQL, Ada, PostgreSQL, PL/pgSQL, Java, Perl, Python, Tcl, JavaScript, XML, XQuery, .QL, ISBL, QUEL, MUMPS, ISBN, DOI
+- 51 PLDB concepts link to SQL: Ace Editor, atomspace, Ballerina, Bucardo, categorical-query-language, cloc, dexvis, Differential Datalog, DRAKON, Lil, Eiffel, Erlang, Factor, gogs-editor, Haxe Library Manager, HHVM, Ibis, Impala, Java, Kefir, Lil, Links, Logica, mal, Mastodon, Mindsdb, nesC, Nim, Node.js, partiql, Perl, PgBouncer, PostgreSQL, PRQL, Pygments, Amazon Redshift, Revolution, Scroll Notation, SDMS, Slony, SourcePawn, SQHTML, tornado, TQL, ultralisp-pm, UrWeb, V, wasmer, Wasp, YAWL, Yes It Is
 
 SELECT &#39;Hello World&#39;;
 

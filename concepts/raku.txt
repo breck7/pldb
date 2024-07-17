@@ -9,24 +9,16 @@ Raku is a programming language created in 2015 by Larry Wall.
 9 Years Old
 3k Repos
 
-Try now: TIO
-
 Raku is a member of the Perl family of programming languages. Formerly known as Perl 6, it was renamed in October 2019.While historically several interpreter and compiler implementations were being written, today only the Rakudo implementation is in active development. Raku introduces elements of many modern and historical languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Raku_(programming_language)
 
-- Raku website
- https://www.raku.org/
-- Raku appears in categories: programming language
-- Raku downloads page
- https://raku.org/downloads/
-- Raku Wikipedia page
- https://en.wikipedia.org/wiki/Raku_(programming_language)
+- Tags: programming language
 - There are at least 2,521 Raku repos on GitHub
-- Raku first developed in https://www.raku.org/community
+- Early development of Raku happened in https://www.raku.org/community
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Raku in 2k repos on GitHub
 - GitHub supports syntax highlighting for Raku
 - raku.org was registered in 1999
-- 8 languages in PLDB linking to Raku: Ace Editor, Alma, cloc, Muldis, Pygments, Rakudo, Star, TestML
+- 8 PLDB concepts link to Raku: Ace Editor, Alma, cloc, Muldis, Pygments, Rakudo, Star, TestML
 
 grammar Parser {
     rule  TOP  { I &lt;love&gt; &lt;lang&gt; }

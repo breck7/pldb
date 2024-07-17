@@ -10,15 +10,13 @@ Transact-SQL is a query language created in 1984.
 Transact-SQL (T-SQL) is Microsoft's and Sybase's proprietary extension to the SQL (Structured Query Language) used to interact with relational databases. T-SQL expands on the SQL standard to include procedural programming, local variables, various support functions for string processing, date processing, mathematics, etc. and changes to the DELETE and UPDATE statements. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Transact-SQL
 
-- Transact-SQL appears in categories: queryLanguage
-- Transact-SQL Wikipedia page
- https://en.wikipedia.org/wiki/Transact-SQL
+- Tags: queryLanguage
 - Explore Transact-SQL snippets on Rosetta Code
 - Transact-SQL ranks #23 in the TIOBE Index
 - ANTLR grammar for Transact-SQL
 - Transact-SQL LSP implementation
 - Pygments supports syntax highlighting for Transact-SQL
-- See also: (4 related languages)SQL, PL/SQL, PL/pgSQL, SQL/PSM
+- See also: (4 related languages) SQL, PL/SQL, PL/pgSQL, SQL/PSM
 
 -- begin transaction
 BEGIN TRAN

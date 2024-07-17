@@ -12,10 +12,6 @@ git clone https://codeberg.org/anaseto/gofrundis
 
 The frundis language is a semantic markup language with a simplified roff-like syntax, originally intended for supporting authoring of novels, but it can be used for more varied stuff. It relies on the exporting capabilities of the tool frundis to LaTeX, XHTML, EPUB (2 and 3), markdown and groff mom. Only LaTeX, XHTML and EPUB output formats are considered complete and mature.
 
-- Frundis website
- https://bardinflor.perso.aquilenet.fr/frundis/intro-en
-- Frundis appears in categories: text markup language
-- Video demo of Frundis
- https://www.youtube.com/watch?v=QqDOkcrh1eU
+- Tags: text markup language
 - Frundis compiles to LaTeX or XHTML or EPUB or Markdown or groff
 - Frundis is written in HTML, Go, Tex, Markdown, XHTML, XML, Vim script, Perl, CSS

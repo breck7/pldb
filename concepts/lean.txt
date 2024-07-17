@@ -11,23 +11,17 @@ Lean is an open source programming language created in 2015 by Leonardo de Moura
 
 git clone https://github.com/leanprover/lean
 
-Try now: TIO
-
 Lean Theorem Prover
 
-- Lean website
- http://leanprover.github.io/
-- Lean appears in categories: programming language
+- Tags: programming language
 - Lean is developed on GitHub and has 2,045 stars
-- Lean docs
- https://leanprover.github.io/documentation/
 - There are at least 1,807 Lean repos on GitHub
-- Lean first developed in Microsoft Research
+- Early development of Lean happened in Microsoft Research
 - Lean is written in Lean, C++, CMake, Bourne shell, Markdown, Python, C, YAML, TOML, Tex, Perl, HTML, Bash, Lua, Lex
 - The  Google BigQuery Public Dataset GitHub snapshot shows 233 users using Lean in 265 repos on GitHub
 - Pygments supports syntax highlighting for Lean
 - GitHub supports syntax highlighting for Lean
-- 4 languages in PLDB linking to Lean: cloc, Koka, Lean, Pygments
+- 4 PLDB concepts link to Lean: cloc, Koka, Lean, Pygments
 
 #print &quot;Hello World&quot;
 

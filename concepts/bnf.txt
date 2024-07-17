@@ -12,16 +12,14 @@ BNF, aka Backus–Naur Form, is a grammar language created in 1956 by John Backu
 In computer science, Backus–Naur form or Backus normal form (BNF) is a notation technique for context-free grammars, often used to describe the syntax of languages used in computing, such as computer programming languages, document formats, instruction sets and communication protocols. They are applied wherever exact descriptions of languages are needed: for instance, in official language specifications, in manuals, and in textbooks on programming language theory. Many extensions and variants of the original Backus–Naur notation are used; some are exactly defined, including extended Backus–Naur form (EBNF) and augmented Backus–Naur form (ABNF).. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Backus–Naur_form
 
-- BNF appears in categories: grammarLanguage
-- BNF Wikipedia page
- https://en.wikipedia.org/wiki/Backus–Naur_form
-- BNF first developed in IBM
+- Tags: grammarLanguage
+- Early development of BNF happened in IBM
 - BNF on HOPL
  https://hopl.info/showlanguage.prx?exp=1865
 - ANTLR grammar for BNF
 - Pygments supports syntax highlighting for BNF
-- See also: (18 related languages)ALGOL 58, Algol, ALGOL 60, Compiler-Compiler, Yacc, SYMBOL, ASCII, Regular Expressions, PL/I, PEG, ANTLR, Java, Haskell, Coco/R, GOLD, Bison, XPL, ISBN
-- 1 languages in PLDB linking to BNF: Parsers
+- See also: (18 related languages) ALGOL 58, Algol, ALGOL 60, Compiler-Compiler, Yacc, SYMBOL, ASCII, Regular Expressions, PL/I, PEG, ANTLR, Java, Haskell, Coco/R, GOLD, Bison, XPL, ISBN
+- 1 PLDB concepts link to BNF: Parsers
 
 &lt;syntax&gt;         ::= &lt;rule&gt; | &lt;rule&gt; &lt;syntax&gt;
  &lt;rule&gt;           ::= &lt;opt-whitespace&gt; &quot;&lt;&quot; &lt;rule-name&gt; &quot;&gt;&quot; &lt;opt-whitespace&gt; &quot;::=&quot; &lt;opt-whitespace&gt; &lt;expression&gt; &lt;line-end&gt;

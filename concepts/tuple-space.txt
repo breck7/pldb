@@ -10,12 +10,10 @@ Tuple space is a programming language created in 1988.
 A tuple space is an implementation of the  associative memory paradigm for parallel/distributed computing. It provides a repository of tuples that can be accessed concurrently. As an illustrative example, consider that there are a group of processors that produce pieces of data and a group of processors that use the data. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Tuple_space
 
-- Tuple space appears in categories: programming language
-- Tuple space Wikipedia page
- https://en.wikipedia.org/wiki/Tuple_space
+- Tags: programming language
 - Tuple space on HOPL
  https://hopl.info/showlanguage.prx?exp=1443
-- See also: (10 related languages)Linda, Java, Lisp, Lua, Prolog, Python, Ruby, Smalltalk, Tcl, ISBN
+- See also: (10 related languages) Linda, Java, Lisp, Lua, Prolog, Python, Ruby, Smalltalk, Tcl, ISBN
 
 // Client
 public class Client {

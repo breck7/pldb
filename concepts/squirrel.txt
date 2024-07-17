@@ -11,24 +11,14 @@ Squirrel is an open source programming language created in 2003 by Alberto Demic
 
 git clone https://github.com/albertodemichelis/squirrel
 
-Try now: Riju · TIO
-
 Squirrel is a high level imperative, object-oriented programming language, designed to be a light-weight scripting language that fits in the size, memory bandwidth, and real-time requirements of applications like video games and hardware such as Electric Imp. MirthKit, a simple toolkit for making and distributing open source, cross-platform 2D games, uses Squirrel for its platform. It is used extensively by Code::Blocks for scripting and was also used in Final Fantasy Crystal Chronicles: My Life as a King. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Squirrel_(programming_language)
 
-- Squirrel website
- http://squirrel-lang.org/
-- Squirrel appears in categories: programming language
-- Squirrel Wikipedia page
- https://en.wikipedia.org/wiki/Squirrel_(programming_language)
+- Tags: programming language
 - Squirrel is developed on GitHub and has 706 stars
-- Squirrel docs
- http://squirrel-lang.org/squirreldoc/
 - There are at least 1,513 Squirrel repos on GitHub
-- Squirrel first developed in https://sourceforge.net/p/squirrel/bugs
+- Early development of Squirrel happened in https://sourceforge.net/p/squirrel/bugs
 - Squirrel is written in reStructuredText, C++, Squirrel, Make, CMake, C, YAML, Python
-- Squirrel on Twitter
- https://twitter.com/squirrellang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 284 users using Squirrel in 433 repos on GitHub
 - There are 42 Project Euler users using Squirrel
 - Explore Squirrel snippets on Rosetta Code
@@ -38,8 +28,8 @@ Squirrel is a high level imperative, object-oriented programming language, desig
 - GitHub supports syntax highlighting for Squirrel
 - Squirrel appears in the Quine Relay project
 - squirrel-lang.org was registered in 2005
-- See also: (5 related languages)JavaScript, Lua, Python, MiniD, Ruby
-- 2 languages in PLDB linking to Squirrel: cloc, Squirrel
+- See also: (5 related languages) JavaScript, Lua, Python, MiniD, Ruby
+- 2 PLDB concepts link to Squirrel: cloc, Squirrel
 
 print(&quot;Hello, world!\n&quot;)
 

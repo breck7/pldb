@@ -10,7 +10,5 @@ BLAKE is a hash function created in 2012.
 BLAKE is a cryptographic hash function based on Dan Bernstein's ChaCha stream cipher, but a permuted copy of the input block, XORed with round constants, is added before each ChaCha round. Like SHA-2, there are two variants differing in the word size. ChaCha operates on a 4×4 array of words. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/BLAKE_(hash_function)
 
-- BLAKE appears in categories: hashFunction
-- BLAKE Wikipedia page
- https://en.wikipedia.org/wiki/BLAKE_(hash_function)
-- BLAKE first developed in UBS AG and Cyberjaya and Stuttgart Technology University of Applied Sciences and Kudelski Security
+- Tags: hashFunction
+- Early development of BLAKE happened in UBS AG and Cyberjaya and Stuttgart Technology University of Applied Sciences and Kudelski Security

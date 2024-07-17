@@ -10,11 +10,9 @@ PEG, aka parsing expression grammar, is a grammar language created in 2002.
 In computer science, a parsing expression grammar, or PEG, is a type of analytic formal grammar, i.e. it describes a formal language in terms of a set of rules for recognizing strings in the language. The formalism was introduced by Bryan Ford in 2004 and is closely related to the family of top-down parsing languages introduced in the early 1970s. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parsing_expression_grammar
 
-- PEG appears in categories: grammarLanguage
-- PEG Wikipedia page
- https://en.wikipedia.org/wiki/Parsing_expression_grammar
+- Tags: grammarLanguage
 - Pygments supports syntax highlighting for PEG
-- See also: (1 related languages)Regular Expressions
+- See also: (1 related languages) Regular Expressions
 
 Expr    ← Sum
 Sum     ← Product ((&#39;+&#39; / &#39;-&#39;) Product)*

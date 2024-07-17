@@ -12,17 +12,13 @@ git clone https://github.com/TestAnything/test-anything-protocol
 The Test Anything Protocol (TAP) is a protocol to allow communication between unit tests and a test harness. It allows individual tests (TAP producers) to communicate test results to the testing harness in a language-agnostic way. Originally developed for unit testing of the Perl interpreter in 1987, producers and parsers are now available for many development platforms.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Test_Anything_Protocol
 
-- TAP website
- https://testanything.org/
-- TAP appears in categories: protocol
-- TAP Wikipedia page
- https://en.wikipedia.org/wiki/Test_Anything_Protocol
+- Tags: protocol
 - TAP is developed on GitHub and has 37 stars
 - TAP is written in XML
 - There are 81 members in the TAP subreddit
 - Pygments supports syntax highlighting for TAP
 - testanything.org was registered in 2007
-- See also: (1 related languages)Perl
+- See also: (1 related languages) Perl
 
 1..4
 ok 1 - Input file opened

@@ -13,17 +13,13 @@ git clone https://github.com/c3d/xl
 XL ("eXtensible Language") is the first and so far the only computer programming language designed to support concept programming.XL features programmer-reconfigurable syntax and semantics. Compiler plug-ins can be used to add new features to the language. A base set of plug-ins implements a relatively standard imperative language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XL_(programming_language)
 
-- XL website
- http://xlr.sourceforge.net/
-- XL appears in categories: programming language
-- XL Wikipedia page
- https://en.wikipedia.org/wiki/XL_(programming_language)
+- Tags: programming language
 - XL is developed on GitHub and has 202 stars
 - XL is written in CSS, C++, Make, YAML, Bash, Markdown, Lisp, awk, HTML, AsciiDoc, Python, Ini, JavaScript
-- See also: (10 related languages)Ada, BASIC, C, Fortran, Java, Lisp, Prolog, Visual Basic, Smalltalk, Forth
+- See also: (10 related languages) Ada, BASIC, C, Fortran, Java, Lisp, Prolog, Visual Basic, Smalltalk, Forth
 - Read more about XL on the web: 1.
  https://fosdem.org/2020/schedule/event/xllang/
-- 1 languages in PLDB linking to XL: tao3d
+- 1 PLDB concepts link to XL: tao3d
 
 0! is 1
 N! is N * (N-1)!

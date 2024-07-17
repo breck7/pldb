@@ -16,30 +16,20 @@ Ballerina is an open source programming language created in 2015 by Sanjiva Weer
 
 git clone https://github.com/ballerina-platform/ballerina-lang
 
-Try now: Web
-
 Ballerina is a compiled, type-safe, concurrent programming language targeting microservice development and integration.It is an open source project started in 2015 by architects from WSO2 as code-based alternative to the configuration-based integration tools such as EAI, ESB, and workflow products.Ballerina has various constructs geared toward cloud-native development including support for modern data formats and protocols, reliability, distributed transactions, APIs, and event streams.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ballerina_(programming_language)
 
-- Ballerina website
- http://ballerina.io/
-- Ballerina appears in categories: programming language
-- Ballerina Wikipedia page
- https://en.wikipedia.org/wiki/Ballerina_(programming_language)
+- Tags: programming language
 - Ballerina is developed on GitHub and has 3,093 stars
-- Ballerina docs
- https://ballerina.io/learn/
 - There are at least 1,483 Ballerina repos on GitHub
-- Ballerina first developed in WSO2
+- Early development of Ballerina happened in WSO2
 - Ballerina is written in Java, JSON, TOML, Markdown, Gradle, XML, YAML, mustache, HTML, SQL, CSV, JavaScript, SVG, Bash, Bourne shell, CSS, Groovy, DTD, Handlebars
-- Ballerina on Twitter
- https://twitter.com/ballerinalang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 21 users using Ballerina in 22 repos on GitHub
 - Ballerina LSP implementation
 - GitHub supports syntax highlighting for Ballerina
 - There is a central package repository for Ballerina
 - ballerina.io was registered in 2017
-- See also: (3 related languages)Java, Go, Rust
+- See also: (3 related languages) Java, Go, Rust
 
 import ballerina/io;
 

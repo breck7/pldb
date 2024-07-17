@@ -11,31 +11,17 @@ Zig is an open source programming language created in 2015 by Andrew Kelley.
 
 git clone https://github.com/ziglang/zig
 
-Try now: Riju · TIO
-
 A programming language designed for robustness, optimality, and clarity.
 
-- Zig website
- https://ziglang.org/
-- Zig appears in categories: programming language
-- Zig Wikipedia page
- https://en.wikipedia.org/wiki/Zig_(programming_language)
+- Tags: programming language
 - Zig is developed on GitHub and has 14,344 stars
 - Watch the history of the Zig repo visualized with Gource
-- Zig docs
- https://ziglang.org/documentation/master/
 - There are at least 3,909 Zig repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 20 users using Zig in 21 repos on GitHub
 - There are 5,511 members in the Zig subreddit
 - Explore Zig snippets on Rosetta Code
 - Pygments supports syntax highlighting for Zig
-- Release Notes for Zig
- https://ziglang.org/download/0.10.0/release-notes.html
-- Official Blog page for Zig
- https://ziglang.org/news/
-- Frequently Asked Questions for Zig
- https://github.com/ziglang/zig/wiki/FAQ
-- 11 languages in PLDB linking to Zig: Ace Editor, bio, bog, buzz, cloc, Cyber, mal, PCRE, PRQL, Pygments, Roc
+- 11 PLDB concepts link to Zig: Ace Editor, bio, bog, buzz, cloc, Cyber, mal, PCRE, PRQL, Pygments, Roc
 
 // Type your code here, or load an example.
 export fn square(num: i32) i32 {

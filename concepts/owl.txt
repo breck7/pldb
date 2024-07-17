@@ -11,19 +11,15 @@ OWL, aka One World Language, is a xml format created in 2004.
 The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Web_Ontology_Language
 
-- OWL appears in categories: xmlFormat
-- OWL Wikipedia page
- https://en.wikipedia.org/wiki/Web_Ontology_Language
-- OWL docs
- https://www.w3.org/TR/owl-guide/
+- Tags: xmlFormat
 - There are at least 199 OWL repos on GitHub
-- OWL first developed in World Wide Web Consortium
+- Early development of OWL happened in World Wide Web Consortium
 - The  Google BigQuery Public Dataset GitHub snapshot shows 524 users using OWL in 642 repos on GitHub
 - OWL on HOPL
  https://hopl.info/showlanguage.prx?exp=4934
 - GitHub supports syntax highlighting for OWL
-- See also: (8 related languages)RDF, XML, HTML, AXIOM, Turtle, SQL, Prolog, UML
-- 2 languages in PLDB linking to OWL: Bossam Rule Language, OWL DL
+- See also: (8 related languages) RDF, XML, HTML, AXIOM, Turtle, SQL, Prolog, UML
+- 2 PLDB concepts link to OWL: Bossam Rule Language, OWL DL
 
 &lt;?xml version=&quot;1.0&quot;?&gt;
 

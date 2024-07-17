@@ -13,15 +13,15 @@ git clone https://github.com/bazelbuild/starlark
 
 The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
 
-- starlark appears in categories: programming language
+- Tags: programming language
 - starlark is developed on GitHub and has 1,416 stars
 - There are at least 3,423 starlark repos on GitHub
-- starlark first developed in https://github.com/bazelbuild
+- Early development of starlark happened in https://github.com/bazelbuild
 - starlark is written in Markdown, Python, Bazel, YAML, Bourne shell
 - The  Google BigQuery Public Dataset GitHub snapshot shows 562 users using starlark in 1k repos on GitHub
 - Read more about starlark on the web: 1.
  https://bazel.build/contribute/policy
-- 18 languages in PLDB linking to starlark: asterius-compiler, Bazel, Cap'n Proto, Carbon, Claro, cloc, Closure Templates, FlatBuffers, JFlex, Jsonnet, Kubernetes, MongoDB, Node.js, PCRE, PyTorch, TensorFlow, v8, YARA
+- 18 PLDB concepts link to starlark: asterius-compiler, Bazel, Cap'n Proto, Carbon, Claro, cloc, Closure Templates, FlatBuffers, JFlex, Jsonnet, Kubernetes, MongoDB, Node.js, PCRE, PyTorch, TensorFlow, v8, YARA
 
 # Define a number
 number = 18

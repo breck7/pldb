@@ -10,12 +10,10 @@ Spec Sharp is a programming language created in 2004.
 Spec# is a programming language with specification language features that extends the capabilities of the C# programming language with Eiffel-like contracts, including object invariants, preconditions and postconditions. Like ESC/Java, it includes a static checking tool based on a theorem prover that is able to statically verify many of these invariants. It also includes a variety of other minor extensions to the language, such as non-null reference types. Read more on Wikipedia...
  https://web.archive.org/web/20190321010218/https://en.wikipedia.org/wiki/Spec_Sharp
 
-- Spec Sharp appears in categories: programming language
-- Spec Sharp Wikipedia page
- https://web.archive.org/web/20190321010218/https://en.wikipedia.org/wiki/Spec_Sharp
-- Spec Sharp first developed in Microsoft Research
-- See also: (3 related languages)C#, Eiffel, Java
-- 1 languages in PLDB linking to Spec Sharp: Sing Sharp
+- Tags: programming language
+- Early development of Spec Sharp happened in Microsoft Research
+- See also: (3 related languages) C#, Eiffel, Java
+- 1 PLDB concepts link to Spec Sharp: Sing Sharp
 
 static int Main(string![] args)
         requires args.Length &gt; 0;

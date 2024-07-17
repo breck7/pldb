@@ -10,8 +10,6 @@ ExFAT is a filesystem created in 2006.
 exFAT (Extended File Allocation Table) is a Microsoft file system introduced in 2006 and optimized for flash memory such as USB flash drives and SD cards. It is proprietary and Microsoft owns patents on several elements of its design.exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ExFAT
 
-- ExFAT appears in categories: filesystem
-- ExFAT Wikipedia page
- https://en.wikipedia.org/wiki/ExFAT
-- ExFAT first developed in Microsoft
-- See also: (5 related languages)New Technology File System, Linux, FAT, FreeBSD, Android
+- Tags: filesystem
+- Early development of ExFAT happened in Microsoft
+- See also: (5 related languages) New Technology File System, Linux, FAT, FreeBSD, Android

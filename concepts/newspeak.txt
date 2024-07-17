@@ -11,15 +11,11 @@ Newspeak is an open source programming language created in 2006 by Gilad Bracha.
 Newspeak is a programming language and platform in the tradition of Smalltalk and Self being developed by a team led by Gilad Bracha. The platform includes an IDE, a GUI library, and standard libraries. Starting in 2006, Cadence Design Systems funded its development and employed the main contributors, but ceased funding in January 2009. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Newspeak_(programming_language)
 
-- Newspeak website
- http://newspeaklanguage.org/
-- Newspeak appears in categories: programming language
-- Newspeak Wikipedia page
- https://en.wikipedia.org/wiki/Newspeak_(programming_language)
-- Newspeak first developed in Cadence Design Systems, Inc
+- Tags: programming language
+- Early development of Newspeak happened in Cadence Design Systems, Inc
 - Pygments supports syntax highlighting for Newspeak
 - newspeaklanguage.org was registered in 2008
-- See also: (3 related languages)Smalltalk, Self, BETA
+- See also: (3 related languages) Smalltalk, Self, BETA
 
 HelloBraveNewWorld usingPlatform: platform = (
  platform Transcript open show: &#39;Hello, Oh Brave new world&#39;.

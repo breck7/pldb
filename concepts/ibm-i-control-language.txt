@@ -10,11 +10,9 @@ IBM i Control Language is a programming language created in 1993.
 The IBM i Control Language (CL) is a scripting language for the IBM's IBM i platform (previously called OS/400 when running on AS/400 systems) bearing a resemblance to the IBM Job Control Language and consisting of an ever-expanding set of command objects (*CMD) used to invoke traditional AS/400 programs and/or get help on what those programs do. CL can also be used to create CL programs (congruent to shell scripts) where there are additional commands that provide program-like functionality (IF/ELSE, variable declaration, file input, etc.) Although CL is a scripting language for system administration, it is used mainly to create compiled programs. The use of interpreted CL scripts through the SBMDBJOB command  is in fact extremely limited. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IBM_i_Control_Language
 
-- IBM i Control Language appears in categories: programming language
-- IBM i Control Language Wikipedia page
- https://en.wikipedia.org/wiki/IBM_i_Control_Language
-- IBM i Control Language first developed in IBM
-- See also: (5 related languages)JCL, PL/I, PowerShell, Unix, C
+- Tags: programming language
+- Early development of IBM i Control Language happened in IBM
+- See also: (5 related languages) JCL, PL/I, PowerShell, Unix, C
 
 PGM (&amp;IN &amp;TYP)
 

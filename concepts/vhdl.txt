@@ -11,11 +11,7 @@ VHDL, aka VHSIC Hardware Description Language, is a hardware description languag
 VHDL (VHSIC Hardware Description Language) is a hardware description language used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits. VHDL can also be used as a general purpose parallel programming language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/VHDL
 
-- VHDL appears in categories: hardwareDescriptionLanguage
-- VHDL Wikipedia page
- https://en.wikipedia.org/wiki/VHDL
-- VHDL docs
- https://vhdlguide.readthedocs.io/en/latest/
+- Tags: hardwareDescriptionLanguage
 - There are at least 34,211 VHDL repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using VHDL in 2k repos on GitHub
 - There are 2,320 members in the VHDL subreddit
@@ -28,8 +24,8 @@ VHDL (VHSIC Hardware Description Language) is a hardware description language us
 - CodeMirror package for syntax highlighting VHDL
 - Pygments supports syntax highlighting for VHDL
 - GitHub supports syntax highlighting for VHDL
-- See also: (6 related languages)Verilog, Ada, Pascal, VHDL-AMS, Property Specification Language, ISBN
-- 5 languages in PLDB linking to VHDL: Ace Editor, invokator, mal, Pygments, Spatial
+- See also: (6 related languages) Verilog, Ada, Pascal, VHDL-AMS, Property Specification Language, ISBN
+- 5 PLDB concepts link to VHDL: Ace Editor, invokator, mal, Pygments, Spatial
 
 use std.textio.all;
 

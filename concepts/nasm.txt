@@ -10,15 +10,11 @@ Netwide Assembler is an open source assembly language created in 1996.
 The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture. It can be used to write 16-bit, 32-bit (IA-32) and 64-bit (x86-64) programs. NASM is considered to be one of the most popular assemblers for Linux. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Netwide_Assembler
 
-- Netwide Assembler website
- http://www.nasm.us
-- Netwide Assembler appears in categories: assembly language
-- Netwide Assembler Wikipedia page
- https://en.wikipedia.org/wiki/Netwide_Assembler
-- Netwide Assembler first developed in https://github.com/netwide-assembler
+- Tags: assembly language
+- Early development of Netwide Assembler happened in https://github.com/netwide-assembler
 - Pygments supports syntax highlighting for Netwide Assembler
 - nasm.us was registered in 2007
-- See also: (9 related languages)x86 Assembly, Assembly language, X86, IA-32, Linux, Common Object File Format, Extensible Linking Format, PowerPC, SPARC
+- See also: (9 related languages) x86 Assembly, Assembly language, X86, IA-32, Linux, Common Object File Format, Extensible Linking Format, PowerPC, SPARC
 
 global _start
 

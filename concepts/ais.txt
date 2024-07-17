@@ -10,10 +10,8 @@ Alternate Instruction Set is an instruction set architecture created in 2001.
 The Alternate Instruction Set (AIS) is a second 32-bit instruction set architecture found in some x86 CPUs made by VIA Technologies.  On these VIA C3 processors, the second hidden processor mode is accessed by executing the x86 instruction ALTINST (0F 3F).  If AIS mode has been enabled, the processor will perform a JMP EAX and begin executing AIS instructions at the address of the EAX register. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Alternate_Instruction_Set
 
-- Alternate Instruction Set appears in categories: instruction set architecture
-- Alternate Instruction Set Wikipedia page
- https://en.wikipedia.org/wiki/Alternate_Instruction_Set
-- Alternate Instruction Set first developed in VIA Technologies, Inc
-- See also: (2 related languages)MMX instruction set, Netwide Assembler
+- Tags: instruction set architecture
+- Early development of Alternate Instruction Set happened in VIA Technologies, Inc
+- See also: (2 related languages) MMX instruction set, Netwide Assembler
 - Read more about Alternate Instruction Set on the web: 1.
  http://datasheets.chipdb.org/VIA/Eden-ESP/Eden%20v1.4.pdf

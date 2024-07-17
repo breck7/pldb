@@ -13,15 +13,11 @@ git clone https://github.com/snowballstem/snowball
 Snowball is a small string processing programming language designed for creating stemming algorithms for use in information retrieval.The Snowball compiler translates a Snowball script (a  .sbl file) into either a thread-safe ANSI C program or a Java program. For ANSI C, each Snowball script produces a program file and corresponding header file (with  .c  and  .h  extensions). The Snowball compiler checks the consistency of its script, and this check was used to discover a typo in a seminal academic paper by Lovins which had remained undetected for 30 years.The basic datatypes handled by Snowball are strings of characters, signed integers, and boolean truth values, or more simply strings, integers and booleans. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
 
-- Snowball website
- https://snowballstem.org
-- Snowball appears in categories: programming language
-- Snowball Wikipedia page
- https://en.wikipedia.org/wiki/Snowball_%28programming_language%29
+- Tags: programming language
 - Snowball is developed on GitHub and has 721 stars
-- Snowball first developed in https://lists.tartarus.org/pipermail/snowball-discuss
+- Early development of Snowball happened in https://lists.tartarus.org/pipermail/snowball-discuss
 - Snowball is written in C, Python, Rust, Go, Ada, C#, Java, Perl, Pascal, JavaScript, reStructuredText, Markdown, Make, YAML, Diff, XML, TOML
 - Pygments supports syntax highlighting for Snowball
-- See also: (4 related languages)SNOBOL, Java, ASCII, C
+- See also: (4 related languages) SNOBOL, Java, ASCII, C
 - Read more about Snowball on the web: 1.
  http://snowball.tartarus.org

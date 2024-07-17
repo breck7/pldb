@@ -11,25 +11,15 @@ Elm is an open source programming language created in 2012 by Evan Czaplicki.
 
 git clone https://github.com/elm-lang/elm-compiler
 
-Try now: Web · Riju
-
 Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces. Elm is purely functional, and is developed with emphasis on usability, performance, and robustness. It advertises "no runtime exceptions in practice," made possible by the Elm compiler's static type checking.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Elm_(programming_language)
 
-- Elm website
- http://elm-lang.org
-- Elm appears in categories: programming language
-- Elm Wikipedia page
- https://en.wikipedia.org/wiki/Elm_(programming_language)
+- Tags: programming language
 - Elm is developed on GitHub and has 6,875 stars
-- Elm docs
- https://elm-lang.org/docs
 - There are at least 19,905 Elm repos on GitHub
-- Elm first developed in https://github.com/elm
+- Early development of Elm happened in https://github.com/elm
 - Elm compiles to JavaScript
 - Elm is written in Haskell, Markdown, JSON, Elm, Bourne shell, YAML, JavaScript, CSS, XML, Python, Dockerfile
-- Elm on Twitter
- https://twitter.com/elmlang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Elm in 3k repos on GitHub
 - There are 4 Project Euler users using Elm
 - Explore Elm snippets on Rosetta Code
@@ -39,14 +29,10 @@ Elm is a domain-specific programming language for declaratively creating web bro
 - Pygments supports syntax highlighting for Elm
 - GitHub supports syntax highlighting for Elm
 - There is a central package repository for Elm
-- Official Blog page for Elm
- https://elm-lang.org/news
-- Frequently Asked Questions for Elm
- https://faq.elm-community.org/
 - Indeed.com has 127 matches for "elm engineer".
 - elm-lang.org was registered in 2011
-- See also: (7 related languages)Haskell, Standard ML, OCaml, F#, Vue, JavaScript, TypeScript
-- 9 languages in PLDB linking to Elm: Ace Editor, bosque, Civet, cloc, Elm, mal, Pygments, Reason, Scrapscript
+- See also: (7 related languages) Haskell, Standard ML, OCaml, F#, Vue, JavaScript, TypeScript
+- 9 PLDB concepts link to Elm: Ace Editor, bosque, Civet, cloc, Elm, mal, Pygments, Reason, Scrapscript
 
 module Main exposing (..)
 

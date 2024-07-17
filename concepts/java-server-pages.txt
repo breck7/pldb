@@ -11,16 +11,12 @@ JSP is a template language created in 1999.
 JavaServer Pages (JSP) is a technology that helps software developers create dynamically generated web pages based on HTML, XML, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but it uses the Java programming language. To deploy and run JavaServer Pages, a compatible web server with a servlet container, such as Apache Tomcat or Jetty, is required.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JavaServer_Pages
 
-- JSP appears in categories: template language
-- JSP Wikipedia page
- https://en.wikipedia.org/wiki/JavaServer_Pages
-- JSP docs
- https://docs.oracle.com/javaee/5/tutorial/doc/bnajo.html
+- Tags: template language
 - There are at least 729 JSP repos on GitHub
-- JSP first developed in Oracle Corporation
+- Early development of JSP happened in Oracle Corporation
 - Pygments supports syntax highlighting for JSP
 - GitHub supports syntax highlighting for JSP
-- See also: (9 related languages)HTML, XML, PHP, ASP, Java, JVM, Velocity, Java EE version history, Thymeleaf
-- 7 languages in PLDB linking to JSP: Ace Editor, Apache Hbase, Gradle, Java, Pygments, SmallBASIC, YAWL
+- See also: (9 related languages) HTML, XML, PHP, ASP, Java, JVM, Velocity, Java EE version history, Thymeleaf
+- 7 PLDB concepts link to JSP: Ace Editor, Apache Hbase, Gradle, Java, Pygments, SmallBASIC, YAWL
 
 The value of &quot;variable&quot; in the object &quot;javabean&quot; is ${javabean.variable}.

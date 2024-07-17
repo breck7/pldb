@@ -11,23 +11,14 @@ Clojure is an open source programming language created in 2007 by Rich Hickey.
 
 git clone https://github.com/clojure/clojure
 
-Try now: Riju · TIO · Replit
-
 Clojure ( , like "closure") is a dialect of the Lisp programming language. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java virtual machine and the Common Language Runtime. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Clojure
 
-- Clojure website
- https://clojure.org
-- Clojure appears in categories: programming language
-- Clojure downloads page
- https://clojure.org/releases/downloads
-- Clojure Wikipedia page
- https://en.wikipedia.org/wiki/Clojure
+- Tags: programming language
 - Clojure is developed on GitHub and has 9,941 stars
 - Watch the history of the Clojure repo visualized with Gource
-- PLDB has 2 documentation sites for Clojure: clojuredocs.org, clojure-doc.org
 - There are at least 82,125 Clojure repos on GitHub
-- Clojure first developed in Cognitect, Inc
+- Early development of Clojure happened in Cognitect, Inc
 - Clojure is written in Java, Clojure, Markdown, YAML, HTML, XML, Bourne shell
 - The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Clojure in 26k repos on GitHub
 - Check out the 378 Clojure meetup groups on Meetup.com.
@@ -47,22 +38,14 @@ Clojure ( , like "closure") is a dialect of the Lisp programming language. Cloju
 - Clojure appears in the Quine Relay project
 - PLDB has 2 Jupyter Kernels for Clojure: github.com, github.com
 - There is a central package repository for Clojure
-- Release Notes for Clojure
- https://clojure.org/releases/devchangelog
-- Official Blog page for Clojure
- https://clojure.org/news/news
 - Events page for Clojure
  https://clojure.org/events/2022/reclojure
-- Frequently Asked Questions for Clojure
- https://clojure.org/guides/faq
-- Clojure leet sheet
- http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
 - Indeed.com has 355 matches for "clojure engineer".
 - clojure.org was registered in 2005
-- See also: (20 related languages)JVM, C#, Common Lisp, Erlang, Haskell, Mathematica, ML, Prolog, Scheme, Java, Racket, Ruby, Elixir, Lisp, Apache Maven, S-expressions, CSP, ActionScript, Python, Unicode
+- See also: (20 related languages) JVM, C#, Common Lisp, Erlang, Haskell, Mathematica, ML, Prolog, Scheme, Java, Racket, Ruby, Elixir, Lisp, Apache Maven, S-expressions, CSP, ActionScript, Python, Unicode
 - Read more about Clojure on the web: 1.
  https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
-- 21 languages in PLDB linking to Clojure: Ace Editor, Clojure, ClojureScript, datascript, Felix, femtolisp, fleck, Flow9, F*, hasklig, Insitux, Jank, Julia, Linux, Lux, mal, multiaddr, Opal, Pan, Pygments, wah
+- 21 PLDB concepts link to Clojure: Ace Editor, Clojure, ClojureScript, datascript, Felix, femtolisp, fleck, Flow9, F*, hasklig, Insitux, Jank, Julia, Linux, Lux, mal, multiaddr, Opal, Pan, Pygments, wah
 
 (println &quot;Hello, world!&quot;)
 

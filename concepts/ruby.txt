@@ -11,28 +11,14 @@ Ruby is an open source programming language created in 1995 by Yukihiro Matsumot
 
 git clone https://github.com/ruby/ruby
 
-Try now: Riju · TIO · Replit
-
 Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. According to its creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ruby_(programming_language)
 
-- Ruby website
- https://www.ruby-lang.org
-- Ruby appears in categories: programming language
-- Ruby downloads page
- https://www.ruby-lang.org/en/downloads/
-- Ruby Wikipedia page
- https://en.wikipedia.org/wiki/Ruby_(programming_language)
+- Tags: programming language
 - Ruby is developed on GitHub and has 20,194 stars
 - Watch the history of the Ruby repo visualized with Gource
-- Ruby docs
- https://www.ruby-lang.org/en/documentation/
-- Ruby specs
- https://www.iso.org/standard/59579.html
-- Ruby mailing list
- https://www.ruby-lang.org/en/community/mailing-lists/
 - There are at least 2,659,551 Ruby repos on GitHub
-- Ruby first developed in https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org/
+- Early development of Ruby happened in https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org/
 - Ruby is written in Ruby, C, YAML, Markdown, Rust, ERB, M4, JSON, Python, Bourne shell, Assembly language, Make, Perl, Bash, Scheme, C++, JavaScript, TOML, Yacc, CSS, Lisp, awk, XML, CSV, Diff, D, IDL, sed, Z shell, HTML, Dockerfile
 - Recurring conference about Ruby: RubyConf
 - The  Google BigQuery Public Dataset GitHub snapshot shows 186k users using Ruby in 374k repos on GitHub
@@ -55,19 +41,11 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose programming lang
 - Ruby appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Ruby
 - There is a central package repository for Ruby
-- Release Notes for Ruby
- https://www.ruby-lang.org/en/downloads/releases/
-- Official Blog page for Ruby
- https://www.ruby-lang.org/en/community/weblogs/
-- Frequently Asked Questions for Ruby
- https://www.ruby-lang.org/en/documentation/faq/
-- Ruby leet sheet
- https://cheatsheets.zip/ruby
 - Indeed.com has 8,719 matches for "ruby engineer".
-- See also: (40 related languages)Ruby on Rails, C, YARV, JRuby, Ada, CLU, Dylan, Eiffel, Lisp, Lua, Perl, Python, Smalltalk, Clojure, CoffeeScript, Crystal, D, Elixir, Falcon, Groovy, Ioke, Julia, Mirah, Nu, Rust, Swift, Unicode, Regular Expressions, YAML, JSON, XML, Java, C#, JVM, LLVM IR, JavaScript, Objective-C, Parrot, Linux, Solaris
+- See also: (40 related languages) Ruby on Rails, C, YARV, JRuby, Ada, CLU, Dylan, Eiffel, Lisp, Lua, Perl, Python, Smalltalk, Clojure, CoffeeScript, Crystal, D, Elixir, Falcon, Groovy, Ioke, Julia, Mirah, Nu, Rust, Swift, Unicode, Regular Expressions, YAML, JSON, XML, Java, C#, JVM, LLVM IR, JavaScript, Objective-C, Parrot, Linux, Solaris
 - Read more about Ruby on the web: 1.
  https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
-- 92 languages in PLDB linking to Ruby: Ace Editor, Ante, Apache Hbase, bloom, Brain-Flak, capybara, chaiscript, Chapel, Civet, cloc, contracts.coffee, CouchDB, CSVw, Cyber, dexvis, dgraph, EmberScript, Factor, Fancy, FFmpeg, FlatBuffers, Flow9, forest-lang, GamerLanguage, GAP, Git, glush, Golo, Gradle, groff, hamdown, HAML, HCL, hexagony, HHVM, hivemind, Homebrew, Hook, htmx, inko, invokator, Ioke, Iterm2, Jekyll, Jison, Kakoune, Knight, Kotlin, Ligo, Lily, Linux, Liquid, Lux, mal, Markaby, Mastodon, Mirah, MongoDB, mustache, Nit, Node.js, nydp, Plaid, PogoScript, Potion, Pygments, PyTorch, Qalb, Ragel, ramen, RapidBatch, rbs, React Native, Redis, Reia, Roc, Rouge, Ruby, Savi, Slash, Slim, squiggle, Statsplorer, Stencil, Swift, TensorFlow, TestML, ToffeeScript, txtzyme, V, 文言文編程語言, Wren
+- 92 PLDB concepts link to Ruby: Ace Editor, Ante, Apache Hbase, bloom, Brain-Flak, capybara, chaiscript, Chapel, Civet, cloc, contracts.coffee, CouchDB, CSVw, Cyber, dexvis, dgraph, EmberScript, Factor, Fancy, FFmpeg, FlatBuffers, Flow9, forest-lang, GamerLanguage, GAP, Git, glush, Golo, Gradle, groff, hamdown, HAML, HCL, hexagony, HHVM, hivemind, Homebrew, Hook, htmx, inko, invokator, Ioke, Iterm2, Jekyll, Jison, Kakoune, Knight, Kotlin, Ligo, Lily, Linux, Liquid, Lux, mal, Markaby, Mastodon, Mirah, MongoDB, mustache, Nit, Node.js, nydp, Plaid, PogoScript, Potion, Pygments, PyTorch, Qalb, Ragel, ramen, RapidBatch, rbs, React Native, Redis, Reia, Roc, Rouge, Ruby, Savi, Slash, Slim, squiggle, Statsplorer, Stencil, Swift, TensorFlow, TestML, ToffeeScript, txtzyme, V, 文言文編程語言, Wren
 
 # Type your code here, or load an example.
 def square(num)

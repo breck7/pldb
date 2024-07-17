@@ -10,9 +10,7 @@ C'Dent is an intermediate representation language created in 2010 by Ingy döt N
 
 When you write a module in C'Dent, you can use it in a dozen different programming languages. For instance, you could write a module in Python and use it in JavaScript, or you could write a module in JavaScript and use it in Perl 6, Ruby or Java. C'Dent has multiple input syntaxes. These syntaxes are strict subsets of common and popular object-oriented programming languages. The current implementation of C'Dent supports Python, JavaScript and Perl 6 inputs. Perl and Ruby will be added soon. C'Dent parses and analyzes the input into a well defined tree structure that is is known as C'Dent. The C'Dent format can be trivially serialized to disk as YAML or XML.
 
-- C'Dent website
- http://cdent.org/
-- C'Dent appears in categories: intermediate representation language
+- Tags: intermediate representation language
 
 %TAG ! tag:cdent.org,2010:
 --- !AST

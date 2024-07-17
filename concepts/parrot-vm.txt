@@ -10,13 +10,11 @@ Parrot is a virtual machine created in 2002.
 Parrot is a register-based process virtual machine designed to run dynamic languages efficiently. It is possible to compile Parrot assembly language and PIR (an intermediate language) to Parrot bytecode and execute it. Parrot is free and open source software.Parrot was started by the Perl community and is developed with help from the open source and free software communities. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parrot_virtual_machine
 
-- Parrot appears in categories: virtual machine
-- Parrot Wikipedia page
- https://en.wikipedia.org/wiki/Parrot_virtual_machine
-- Parrot first developed in https://www.perl.org
+- Tags: virtual machine
+- Early development of Parrot happened in https://www.perl.org
 - The  Google BigQuery Public Dataset GitHub snapshot shows 88 users using Parrot in 121 repos on GitHub
 - GitHub supports syntax highlighting for Parrot
-- See also: (30 related languages)C, Parrot Assembly, PIR, Perl, Raku, Python, JVM, LLVM IR, Java, Java Bytecode, Joy, Lua, PHP, Ruby, Scheme, Tcl, WMLScript, Arc, APL, Common Lisp, Lisp, Forth, QuickBASIC, Smalltalk, CIL, Befunge, Brainfuck, LOLCODE, UNLAMBDA, Unicode
+- See also: (30 related languages) C, Parrot Assembly, PIR, Perl, Raku, Python, JVM, LLVM IR, Java, Java Bytecode, Joy, Lua, PHP, Ruby, Scheme, Tcl, WMLScript, Arc, APL, Common Lisp, Lisp, Forth, QuickBASIC, Smalltalk, CIL, Befunge, Brainfuck, LOLCODE, UNLAMBDA, Unicode
 
 .sub &#39;main&#39; :main
     $I1 = 4

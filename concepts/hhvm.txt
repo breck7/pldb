@@ -12,13 +12,9 @@ git clone https://github.com/facebook/hhvm
 HipHop Virtual Machine (HHVM) is an open-source virtual machine based on just-in-time (JIT) compilation that serves as an execution engine for the PHP and Hack programming languages.  By using the principle of JIT compilation, executed PHP or Hack code is first transformed into intermediate HipHop bytecode (HHBC), which is then dynamically translated into x86-64 machine code, optimized, and natively executed.  This contrasts with PHP's usual interpreted execution, in which the Zend Engine transforms PHP source code into opcodes that serve as a form of bytecode, and executes the opcodes directly on the Zend Engine's virtual CPU.HHVM is developed by Facebook, with the project's source code hosted on GitHub; it is licensed under the terms of the PHP License and Zend License.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/HHVM
 
-- HHVM website
- https://hhvm.com
-- HHVM appears in categories: virtual machine
-- HHVM Wikipedia page
- https://en.wikipedia.org/wiki/HHVM
+- Tags: virtual machine
 - HHVM is developed on GitHub and has 17,294 stars
-- HHVM first developed in Facebook
+- Early development of HHVM happened in Facebook
 - HHVM is written in PHP, C++, Expect, Markdown, JSON, Java, OCaml, Rust, Python, Cython, mustache, Thrift, CMake, HTML, YAML, Pascal, C, TOML, XML, Go, SQL, Bourne shell, Ini, Make, Protocol Buffers, JavaScript, Diff, reStructuredText, C#, Assembly language, Puppet, M4, CSS, Bash, XSLT, Objective-C, Ruby, Perl, SVG, IDL, Dockerfile, CSV, Nix, awk, XSD, CoffeeScript, XAML, Bazel, Gradle, LLVM IR, TypeScript, Lisp, Yacc, OpenCL, DTD, Vim script, SAS, sed, Lex, Cadence SKILL
 - hhvm.com was registered in 2006
-- See also: (7 related languages)OCaml, PHP, Hack, C#, JVM, Java, Parrot
+- See also: (7 related languages) OCaml, PHP, Hack, C#, JVM, Java, Parrot

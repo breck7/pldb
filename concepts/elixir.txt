@@ -11,26 +11,15 @@ Elixir is an open source programming language created in 2011 by José Valim.
 
 git clone https://github.com/elixir-lang/elixir
 
-Try now: Riju · TIO
-
 Elixir is a functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine (BEAM). Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications. Elixir also provides a productive tooling and an extensible design. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Elixir_(programming_language)
 
-- Elixir website
- https://elixir-lang.org
-- Elixir appears in categories: programming language
-- Elixir downloads page
- https://elixir-lang.org/install.html
-- Elixir Wikipedia page
- https://en.wikipedia.org/wiki/Elixir_(programming_language)
+- Tags: programming language
 - Elixir is developed on GitHub and has 20,394 stars
 - Watch the history of the Elixir repo visualized with Gource
-- PLDB has 2 documentation sites for Elixir: elixir-lang.org, devdocs.io
 - There are at least 89,242 Elixir repos on GitHub
-- Elixir first developed in The Elixir Team
+- Early development of Elixir happened in The Elixir Team
 - Elixir is written in Elixir, Markdown, Erlang, YAML, Bourne shell, EEX, Make, PowerShell
-- Elixir on Twitter
- https://twitter.com/elixirlang
 - The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using Elixir in 7k repos on GitHub
 - Check out the 211 Elixir meetup groups on Meetup.com.
 - There are 23,468 members in the Elixir subreddit
@@ -47,11 +36,9 @@ Elixir is a functional, concurrent, general-purpose programming language that ru
 - Elixir appears in the Quine Relay project
 - There is 1 Jupyter Kernel for Elixir
 - There is a central package repository for Elixir
-- Official Blog page for Elixir
- https://elixir-lang.org/blog/
 - Indeed.com has 214 matches for "elixir developer".
-- See also: (6 related languages)Erlang, Ruby, Clojure, LFE, Unicode, UTF-8
-- 13 languages in PLDB linking to Elixir: 05AB1E, Ace Editor, cloc, CouchDB, Elixir, Erlang, Euphoria, Felix, gleam, Macchiato, mal, PRQL, Pygments
+- See also: (6 related languages) Erlang, Ruby, Clojure, LFE, Unicode, UTF-8
+- 13 PLDB concepts link to Elixir: 05AB1E, Ace Editor, cloc, CouchDB, Elixir, Erlang, Euphoria, Felix, gleam, Macchiato, mal, PRQL, Pygments
 
 IO.puts(&quot;Hello, world!&quot;)
 
