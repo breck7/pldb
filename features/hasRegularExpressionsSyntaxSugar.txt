@@ -3,7 +3,7 @@ Regular Expression Syntax Sugar
 
 console.log(&quot;Hello World&quot;.match(/\w/))
 
-print &quot;Hello World&quot;.match(/\w/)
+print &quot;Hello World&quot; =~ /(\w)/;
 
 puts &quot;Hello World&quot;.match(/\w/)
 

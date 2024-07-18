@@ -68,7 +68,6 @@ Type Casting|_$^../features/hasExplicitTypeCasting.html|_$^(float)pldbRank;|_$^7
 Disk Output|_$^../features/canWriteToDisk.html|_$^write("pldb.csv", "...")|_$^7|_$^4|_$^-
 Variadic Functions|_$^../features/hasVariadicFunctions.html|_$^args.map(doSomething)|_$^6|_$^0|_$^-
 Units of Measure|_$^../features/hasUnitsOfMeasure.html|_$^42cm|_$^6|_$^4|_$^-
-Partial Application|_$^../features/hasPartialApplication.html|_$^add5 = num => addNumbers(10, num)|_$^6|_$^0|_$^-
 Manual Memory Management|_$^../features/hasManualMemoryManagement.html|_$^malloc(4);|_$^6|_$^1|_$^-
 Interfaces|_$^../features/hasInterfaces.html|_$^interface PLDBFile|_$^6|_$^1|_$^-
 Generics|_$^../features/hasGenerics.html|_$^function identity&lt;T>(arg: T): T|_$^6|_$^1|_$^-
@@ -79,6 +78,7 @@ Shebang|_$^../features/canDoShebang.html|_$^#! /run|_$^6|_$^0|_$^-
 Prefix Notation|_$^../features/hasPrefixNotation.html|_$^+ 1 2|_$^5|_$^0|_$^-
 Polymorphism|_$^../features/hasPolymorphism.html|_$^a + "b"; 1 + 2|_$^5|_$^1|_$^-
 Pipes|_$^../features/hasPipes.html|_$^ls pldb &#124; wc|_$^5|_$^1|_$^-
+Partial Application|_$^../features/hasPartialApplication.html|_$^add5 = num => addNumbers(10, num)|_$^5|_$^0|_$^-
 Null|_$^../features/hasNull.html|_$^uhOh = null|_$^5|_$^0|_$^-
 Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^5|_$^0|_$^-
 Doc comments|_$^../features/hasDocComments.html|_$^// param1: A comment about the first param|_$^5|_$^0|_$^-

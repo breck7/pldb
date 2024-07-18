@@ -608,18 +608,9 @@ compiler until the next =cut is encountered.
 <td><pre># A comment</pre></td>
 <td></td>
 </tr>
-<tr><td><a href="../features/hasPartialApplication.html">Partial Application</a></td>
-<td><span class="hasFeature">✓</span></td>
-<td><pre>sub first-and-last ( $first, $last ) {
-   say "Name is $first $last";
-}
-my &surname-smith = &first-and-last.assuming( *, 'Smith' );
-&surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤»</pre></td>
-<td></td>
-</tr>
 <tr><td><a href="../features/hasRegularExpressionsSyntaxSugar.html">Regular Expression Syntax Sugar</a></td>
 <td><span class="hasFeature">✓</span></td>
-<td><pre>print "Hello World".match(/\w/)</pre></td>
+<td><pre>print "Hello World" =~ /(\w)/;</pre></td>
 <td></td>
 </tr>
 <tr><td><a href="../features/hasStrings.html">Strings</a></td>

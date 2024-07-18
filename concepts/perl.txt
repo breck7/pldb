@@ -212,22 +212,11 @@ row
   # A comment
  Token 
 row
- Feature Partial Application
- FeatureLink ../features/hasPartialApplication.html
- Supported ✓
- Example
-  sub first-and-last ( $first, $last ) {
-     say "Name is $first $last";
-  }
-  my &surname-smith = &first-and-last.assuming( *, 'Smith' );
-  &surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤»
- Token 
-row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
  Supported ✓
  Example
-  print "Hello World".match(/\w/)
+  print "Hello World" =~ /(\w)/;
  Token 
 row
  Feature Strings

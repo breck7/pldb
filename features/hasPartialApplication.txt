@@ -45,12 +45,6 @@ int main () {
   return 0;
 }
 
-sub first-and-last ( $first, $last ) {
-   say &quot;Name is $first $last&quot;;
-}
-my &amp;surname-smith = &amp;first-and-last.assuming( *, &#39;Smith&#39; );
-&amp;surname-smith.( &#39;Joe&#39; ); # OUTPUT: «Name is Joe Smith␤»
-
 def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
 
 (defn fun-full [x y] (+ x y))
@@ -63,7 +57,7 @@ main
 
 ***
 
-Languages *with* Partial Application include JavaScript, C++, Perl, Scala, Clojure, Speedie
+Languages *with* Partial Application include JavaScript, C++, Scala, Clojure, Speedie
 
 ***
 

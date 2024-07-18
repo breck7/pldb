@@ -15,7 +15,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.
  console.log(&quot;Hello World&quot;.match(/\w/))
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/perl.html">Perl</a>
- print &quot;Hello World&quot;.match(/\w/)
+ print &quot;Hello World&quot; =~ /(\w)/;
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">Ruby</a>
  puts &quot;Hello World&quot;.match(/\w/)

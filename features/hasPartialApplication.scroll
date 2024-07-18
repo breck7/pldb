@@ -57,13 +57,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C
    return 0;
  }
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/perl.html">Perl</a>
- sub first-and-last ( $first, $last ) {
-    say &quot;Name is $first $last&quot;;
- }
- my &amp;surname-smith = &amp;first-and-last.assuming( *, &#39;Smith&#39; );
- &amp;surname-smith.( &#39;Joe&#39; ); # OUTPUT: «Name is Joe Smith␤»
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scala.html">Scala</a>
  def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
 
@@ -81,7 +74,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Partial Application include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Partial Application include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 
