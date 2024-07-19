@@ -1,11 +1,12 @@
-author https://github.com/breck7 Breck Yunits
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
 date 2022.07.14
 groups All
 title A Language Without Comments
 
 import postHeader.scroll
 printTitle
-printAuthor
+printAuthors
 mediumColumns 1
 
 image a-language-without-comments.png

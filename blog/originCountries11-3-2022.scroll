@@ -1,4 +1,5 @@
-author https://github.com/breck7 Breck Yunits
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
 date 11/3/2022
 groups All
 openGraphImage https://pldb.io/blog/images/originCountries11-3-2022.png
@@ -7,7 +8,7 @@ title Where are the most programming languages created?
 import postHeader.scroll
 printTitle
 wideColumns 1
-printAuthor
+printAuthors
 printDate
 
 image images/originCountries11-3-2022.svg

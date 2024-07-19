@@ -1,4 +1,5 @@
-author https://github.com/hassamalhajaji Hassam Alhajaji
+authors Hassam Alhajaji
+ https://github.com/hassamalhajaji Hassam Alhajaji
 date 11/22/2022
 groups interviews frontpage All
 openGraphImage https://pldb.io/blog/images/kartikAgaram.png
@@ -7,7 +8,7 @@ title A brief interview with Mu creator Dr. Kartik Agaram
 import postHeader.scroll
 printTitle
 thinColumns 2
-printAuthor
+printAuthors
 
 ## Introduction
 

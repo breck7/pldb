@@ -1,4 +1,5 @@
-author https://twitter.com/breckyunits Breck Yunits
+authors Breck Yunits
+ https://twitter.com/breckyunits Breck Yunits
 date 6/22/2024
 groups All frontpage pldbBehindTheScenes
 openGraphImage pairProgramming.jpg
@@ -6,7 +7,7 @@ title Pair Programming Session: Adding two languages to PLDB
 
 import postHeader.scroll
 printTitle
-printAuthor
+printAuthors
 thinColumns 2
 
 How often do you pair program?

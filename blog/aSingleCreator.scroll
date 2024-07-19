@@ -1,4 +1,5 @@
-author https://breckyunits.com/ Breck Yunits
+authors Breck Yunits
+ https://breckyunits.com/ Breck Yunits
 date 5/29/2024
 groups All frontpage
 title Every top 10 programming language has a single creator
@@ -7,7 +8,7 @@ import postHeader.scroll
 
 mediumColumns 1
 printTitle
-printAuthor
+printAuthors
 
 Janet's Swift post sparked me to add a computed measure to PLDB calculating the number of creators a language has. The results are below. You can also explore the data yourself.
  dateline

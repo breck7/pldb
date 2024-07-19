@@ -1,4 +1,5 @@
-author https://github.com/hassamalhajaji Hassam Alhajaji
+authors Hassam Alhajaji
+ https://github.com/hassamalhajaji Hassam Alhajaji
 date 02/27/2023
 groups interviews frontpage All
 title A brief interview with Rexx creator Mike Cowlishaw
@@ -6,7 +7,7 @@ title A brief interview with Rexx creator Mike Cowlishaw
 import postHeader.scroll
 printTitle
 thinColumns 2
-printAuthor
+printAuthors
 
 ## Introduction
 * Mike Cowlishaw is a distinguished computer scientist and creator of Rexx and NetRexx. He has worked on many other programming languages, including PL/I, C and Java.  Mike Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick.  He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow.  His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)

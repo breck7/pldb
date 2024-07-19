@@ -1,4 +1,5 @@
-author https://github.com/breck7 Breck Yunits
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
 date 2022.07.15
 groups All
 title "print() debugging" in over 300 languages
@@ -6,7 +7,7 @@ title "print() debugging" in over 300 languages
 import postHeader.scroll
 printTitle
 wideColumns 1
-printAuthor
+printAuthors
 
 image print-debugging.png
 
