@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1435,
+    "Values": 1436,
     "Coverage": "28%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -1106,10 +1106,10 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 75,
+    "Values": 79,
     "Coverage": "1%",
     "Question": "What languages influenced this one?",
-    "Example": "rust",
+    "Example": "algol-60",
     "Type": "string",
     "SortIndex": 2.2,
     "IsComputed": false
@@ -1236,7 +1236,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1435,
+    "Values": 1436,
     "Coverage": "28%",
     "Question": "How many creators?",
     "Example": "1",

@@ -1,4 +1,5 @@
-author https://github.com/breck7 Breck Yunits
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
 date 2019.02.04 12:00:00 -8000
 groups All
 title Does every programming language have a central package repository?
@@ -6,7 +7,7 @@ title Does every programming language have a central package repository?
 import postHeader.scroll
 mediumColumns 1
 printTitle
-printAuthor
+printAuthors
 
 Like millions of other programmers, every day I depend on central package repositories (CR) like npm, PyPI and CRAN.
  https://npmjs.org npm

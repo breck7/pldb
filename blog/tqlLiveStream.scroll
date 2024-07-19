@@ -1,11 +1,12 @@
-author https://twitter.com/breckyunits Breck Yunits
+authors Breck Yunits
+ https://twitter.com/breckyunits Breck Yunits
 date 02/4/2023
 groups pldbBehindTheScenes
 title TQL livestream
 
 import postHeader.scroll
 printTitle
-printAuthor
+printAuthors
 
 wideColumns 1
 
