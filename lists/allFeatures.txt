@@ -23,7 +23,7 @@ File Imports|_$^../features/hasImports.html|_$^import pldb|_$^45|_$^2|_$^96%
 Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^43|_$^1|_$^98%
 Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
 Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
-Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^30|_$^5|_$^86%
+Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^31|_$^5|_$^86%
 Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^27|_$^9|_$^75%
 Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^27|_$^1|_$^96%
 Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
@@ -32,10 +32,10 @@ Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_
 Exceptions|_$^../features/hasExceptions.html|_$^throw new Error("PLDB uh oh")|_$^22|_$^3|_$^88%
 Lists|_$^../features/hasLists.html|_$^[2, 3, 10]|_$^21|_$^1|_$^95%
 Pointers|_$^../features/hasPointers.html|_$^int *pldb|_$^20|_$^5|_$^80%
+Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^20|_$^1|_$^95%
 Directives|_$^../features/hasDirectives.html|_$^use strict;|_$^20|_$^2|_$^91%
-Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^19|_$^1|_$^95%
+Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^19|_$^8|_$^70%
 Case Sensitivity|_$^../features/isCaseSensitive.html|_$^pldb != PLDB|_$^18|_$^9|_$^67%
-Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^18|_$^8|_$^69%
 Access Modifiers|_$^../features/hasAccessModifiers.html|_$^class PLDBFile { public title }|_$^18|_$^3|_$^86%
 Lispy|_$^../features/isLisp.html|_$^(+ 1 2)|_$^15|_$^1|_$^-
 Scientific Notation|_$^../features/hasScientificNotation.html|_$^8076686.6e1|_$^15|_$^0|_$^-

@@ -2,7 +2,7 @@ Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequire
 id	4965	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
 name	4965	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
 appeared	4965	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
-creators	1436	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
+creators	1437	28%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
 measurements	4965	100%	How many measurements do we have about this thing?	11	number		1.11	true			
 tags	4965	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
@@ -18,7 +18,7 @@ exampleCount	4965	100%	How many examples do we have written in this language?	2	
 rank	4965	100%	How does this concept rank amongst all other concepts?	1272	number		1.5	true			
 lastActivity	4965	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
 writtenInCount	1133	22%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	4965	100%	What is the combined score of this language across all the categories of rankings?	21341	number		1.6	true			
+pldbScore	4965	100%	What is the combined score of this language across all the categories of rankings?	21340	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
@@ -96,10 +96,10 @@ repoStats_commits	1125	22%	How many commits to the repo?	871	number		1.9	false
 repoStats_committers	1125	22%	How many committers to the repo?	28	number		1.9	false			
 repoStats_files	1122	22%	How many files in the repo?	49	number		1.9	false			
 equation	15	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false			
-description	1035	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
-githubRepo_description	1035	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+description	1036	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+githubRepo_description	1036	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
 paper	26	0%	What is a URL to a paper(s) by the creator(s) introducing this language?	https://functional-art.org/2017/ait	string		1.99	false			
-rijuRepl_description	1035	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
+rijuRepl_description	1036	20%	How is this language described here?	The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language	string		1.99	false			description
 interviews	10	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 isPublicDomain	21	0%	Is this public domain?	true	boolean		2	false			
 isOpenSource	1501	30%	Is this an open source project?	true	boolean		2.01	true			
@@ -123,7 +123,7 @@ compilesTo	79	1%	Which language(s) does this language primarily compile to?	beam
 inputLanguages	9	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	c	string		2.2	false			
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
-numberOfCreators	1436	28%	How many creators?	1	number		2.33	true			
+numberOfCreators	1437	28%	How many creators?	1	number		2.33	true			
 isSelfHosted	1133	22%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	639	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	639	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
@@ -156,14 +156,14 @@ monaco	74	1%	What is a URL to a Monaco syntax highlighting package for this lang
 quineRelay	70	1%	What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?	Ada	string	github.com/mame/quine-relay	2.8	false			
 packageRepository	60	1%	What is a URL to the package repository for this language?	https://www.npmjs.com/package/avisynth	string		2.9	false			
 ubuntuPackage	65	1%	What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?	gnat	string	ubuntu.com	2.9	false			
-centralPackageRepositoryCount	3011	60%	How many central package repositories does this language have?	0	number		2.9	false			
+centralPackageRepositoryCount	3010	60%	How many central package repositories does this language have?	0	number		2.9	false			
 repoStats	0	0%	What are basic stats on this repo?				2.9	false			
 proposals	11	0%	What is the URL to a the place where language proposals are made, if one exists?	https://github.com/golang/proposal	string		2.99	false			
-originCommunity	3971	79%	In what community(ies) did the language first originate?	Department of Computer Science, University of Toronto	string		2.99	false			
-country	3741	75%	What country was this language first developed in?	Russia	string		2.99	false			
+originCommunity	3970	79%	In what community(ies) did the language first originate?	Department of Computer Science, University of Toronto	string		2.99	false			
+country	3740	75%	What country was this language first developed in?	Russia	string		2.99	false			
 funFact	3	0%	What is a code block or some text containing a fun or unusual fact about the language?	 C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++	string		2.99	false			
 projectEuler	104	2%	Is this language one of the ones listed on https://projecteuler.net/?	ABAP	string	projecteuler.net	2.999	false			
-reference	2155	43%	What is a URL to more info about this thing?	https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998	string		2.9999	false			
+reference	2156	43%	What is a URL to more info about this thing?	https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998	string		2.9999	false			
 subreddit	94	1%	What is a URL of a subreddit(s) for this language?	https://reddit.com/r/ada	string	reddit.com	3	false			
 twitter	256	5%	What is a URL to the official Twitter account of this thing, if any?	https://twitter.com/3mfconsortium	string	twitter.com	3	false			
 discord	10	0%	What is a URL to an official (or popular unofficial) Discord for this language?	https://discord.gg/MM3HmfzRfS	string		3	false			
@@ -221,7 +221,7 @@ hasBreak	5	0%	Does the language have a keyword for breaking out of a loop?	true	
 hasBuiltInRegex	4	0%	Does the language include/import a regular expression language?	false	boolean		7	false			
 hasCaseInsensitiveIdentifiers	77	1%	Are identifiers in this language case insensitive?	false	boolean		7	false			
 hasCharacters	3	0%	Does this language have a syntax and type for a "character"?	true	boolean		7	false			
-hasClasses	35	0%	Does the language have a concept of classes?	true	boolean		7	false			
+hasClasses	36	0%	Does the language have a concept of classes?	true	boolean		7	false			
 hasClobs	1	0%	Does the language have a specific type for character large object?	true	boolean		7	false			
 hasComments	628	12%	Does the language have a syntax and support for comments?	true	boolean		7	false			
 hasConditionals	77	1%	Does the language have conditional statements and/or conditional expressions?	true	boolean		7	false			
@@ -254,7 +254,7 @@ hasForLoops	6	0%	Does the language have a concept of and syntax for for-loops?	t
 hasFunctionComposition	8	0%	Can you pass functions into other functions and get new combined functions?	true	boolean		7	false			
 hasFunctionOverloading	8	0%	Can you have multiple functions with the same name but different parameters?	false	boolean		7	false			
 hasFunctions	44	0%	Does the language have a concept of and syntax for functions?	true	boolean		7	false			
-hasGarbageCollection	26	0%	Does the language have a garbage collector or must memory of constructs be managed manually?	true	boolean		7	false			
+hasGarbageCollection	27	0%	Does the language have a garbage collector or must memory of constructs be managed manually?	true	boolean		7	false			
 hasGradualTypes	3	0%	Does the language support gradual types?	true	boolean		7	false			
 hasGenerators	4	0%	Does the language have a concept of loops that yield?	true	boolean		7	false			
 hasGenerics	7	0%	Does the language have generics?	true	boolean		7	false			
@@ -271,7 +271,7 @@ hasImplicitTypeConversions	2	0%	Does the language automatically convert types as
 hasImports	47	0%	Does this language have a syntax for importing other files?	true	boolean		7	false			
 hasIncrementAndDecrementOperators	11	0%	Does this language have increment and decrement operators?	true	boolean		7	false			
 hasInfixNotation	7	0%	Does this language use operators between operands?	true	boolean		7	false			
-hasInheritance	20	0%	Does this language have class inheritance?	true	boolean		7	false			
+hasInheritance	21	0%	Does this language have class inheritance?	true	boolean		7	false			
 hasIntegers	160	3%	Does this language have a syntax and type for integers?	true	boolean		7	false			
 hasInterfaces	7	0%	Does this language have a concept of interfaces?	true	boolean		7	false			
 hasIterators	8	0%	Does this language have iterators?	true	boolean		7	false			

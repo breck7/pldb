@@ -35,7 +35,7 @@
   },
   {
     "Name": "creators",
-    "Values": 1436,
+    "Values": 1437,
     "Coverage": "28%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -199,7 +199,7 @@
     "Values": 4965,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21341",
+    "Example": "21340",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -963,7 +963,7 @@
   },
   {
     "Name": "description",
-    "Values": 1035,
+    "Values": 1036,
     "Coverage": "20%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -974,7 +974,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1035,
+    "Values": 1036,
     "Coverage": "20%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -995,7 +995,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1035,
+    "Values": 1036,
     "Coverage": "20%",
     "Question": "How is this language described here?",
     "Example": "The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language",
@@ -1236,7 +1236,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1436,
+    "Values": 1437,
     "Coverage": "28%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1576,7 +1576,7 @@
   },
   {
     "Name": "centralPackageRepositoryCount",
-    "Values": 3011,
+    "Values": 3010,
     "Coverage": "60%",
     "Question": "How many central package repositories does this language have?",
     "Example": "0",
@@ -1604,7 +1604,7 @@
   },
   {
     "Name": "originCommunity",
-    "Values": 3971,
+    "Values": 3970,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
@@ -1614,7 +1614,7 @@
   },
   {
     "Name": "country",
-    "Values": 3741,
+    "Values": 3740,
     "Coverage": "75%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1645,7 +1645,7 @@
   },
   {
     "Name": "reference",
-    "Values": 2155,
+    "Values": 2156,
     "Coverage": "43%",
     "Question": "What is a URL to more info about this thing?",
     "Example": "https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998",
@@ -2238,7 +2238,7 @@
   },
   {
     "Name": "hasClasses",
-    "Values": 35,
+    "Values": 36,
     "Coverage": "0%",
     "Question": "Does the language have a concept of classes?",
     "Example": "true",
@@ -2568,7 +2568,7 @@
   },
   {
     "Name": "hasGarbageCollection",
-    "Values": 26,
+    "Values": 27,
     "Coverage": "0%",
     "Question": "Does the language have a garbage collector or must memory of constructs be managed manually?",
     "Example": "true",
@@ -2738,7 +2738,7 @@
   },
   {
     "Name": "hasInheritance",
-    "Values": 20,
+    "Values": 21,
     "Coverage": "0%",
     "Question": "Does this language have class inheritance?",
     "Example": "true",

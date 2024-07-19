@@ -1,15 +1,41 @@
-SIMULA 67
+Simula 67
 =========
 
-SIMULA 67 is a programming language created in 1967.
+Simula 67 is a programming language created in 1967 by Ole-Johan Dahl and Kristen Nygaard.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221967%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/creators.html#q=Ole-Johan%20Dahl
+ https://pldb.io/concepts/../lists/creators.html#q=Kristen%20Nygaard
 
-#4270 on PLDB
+#2670 on PLDB
 57 Years Old
 
+First programming language to introduce OO?
+
 - Tags: programming language
-- Early development of SIMULA 67 happened in Compagnie internationale pour l'informatique
-- SIMULA 67 on HOPL
+- Simula 67 on HOPL
  https://hopl.info/showlanguage.prx?exp=301
-- Read more about SIMULA 67 on Semantic Scholar: 1.
- https://semanticscholar.org/paper/15a48af9713fbd02ed8fd5837e979d42e32db58e
+- Read more about Simula 67 on the web: 1. 2.
+ https://www.mn.uio.no/ifi/english/about/ole-johan-dahl/bibliography/the-birth-of-object-orientation-the-simula-languages.pdf
+ https://www.softwarepreservation.org/projects/ALGOL/manual/Simula-CommonBaseLanguage.pdf
+
+Language features
+======================================================
+
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported ✓
+ Example
+ Token

@@ -4,7 +4,7 @@ Molfile
 Molfile is a text data format created in 1979.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221979%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
 
-#3317 on PLDB
+#3319 on PLDB
 45 Years Old
 
 An MDL Molfile is a file format for holding information about the atoms, bonds, connectivity and coordinates of a molecule. The molfile consists of some header information, the Connection Table (CT) containing atom info, then bond connections and types, followed by sections for more complex information. The molfile is sufficiently common that most, if not all, cheminformatics software systems/applications are able to read the format, though not always to the same degree. It is also supported by some computational software such as Mathematica. The current de facto standard version is molfile V2000; although, more recently, the V3000 format has been circulating widely enough to present a potential compatibility issue for those applications that are not yet V3000-capable.
