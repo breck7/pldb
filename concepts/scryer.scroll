@@ -1,0 +1,21 @@
+import ../code/conceptPage.scroll
+
+id scryer
+name Scryer Prolog
+appeared 2016
+tags pl
+creators Mark Thom
+website https://www.scryer.pl/
+description Scryer Prolog aims to become to ISO Prolog what GHC is to Haskell: an open source industrial strength production environment that is also a testbed for bleeding edge research in logic and constraint programming, which is itself written in a high-level language.
+webRepl https://play.scryer.pl
+
+writtenIn prolog rust toml json markdown yaml svg lisp dockerfile bourne-shell
+implementationOf prolog
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 3795
+ committers 49
+ files 288
+
+githubRepo https://github.com/mthom/scryer-prolog
