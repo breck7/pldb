@@ -1,10 +1,10 @@
 import ../code/conceptPage.scroll
 
 id sako
-name System Automatycznego Kodowania Operacji
+name System Automatycznego Kodowania
 appeared 1960
 tags pl
-standsFor System Automatycznego Kodowania Operacji
+standsFor System Automatycznego Kodowania
 nativeLanguage Polish
 
 fileType text
@@ -13,20 +13,31 @@ country Poland
 originCommunity Polish Academy of Sciences
 reference https://historiainformatyki.pl/skan.php?doc_id=1489&type=pdf&for_download=1
 
+assignmentToken =
+
+isCaseSensitive false
+hasWhileLoops false
+hasClasses false
+hasComments true
+ K) A comment
+hasGotos true
+hasBitWiseOperators true
+hasScientificNotation true
+
 wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  example
-  K) PROGRAM DRUKUJE NAPIS HELLO WORLD
-     LINIA
      TEKST:
      HELLO WORLD
+     LINIA
+     STOP NASTEPNY
      KONIEC
- summary SAKO (PL: System Automatycznego Kodowania Operacji - EN: Automatic Operation Encoding System) is a non-English-based programming language written for Polish computers XYZ, ZAM-2, ZAM-21 and ZAM-41.
+ summary SAKO (PL: System Automatycznego Kodowania - EN: An Automatic Coding System) is a non-English-based programming language written for Polish computers XYZ, ZAM-2, ZAM-21 and ZAM-41.
  dailyPageViews 4
  pageId 38814216
  created 2013
  backlinksCount 4
  revisionCount 12
- appeared 1961
+ appeared 1960
 
 hopl https://hopl.info/showlanguage.prx?exp=2178
 
