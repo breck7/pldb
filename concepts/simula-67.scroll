@@ -1,13 +1,17 @@
 import ../code/conceptPage.scroll
 
 id simula-67
-name SIMULA 67
+name Simula 67
 appeared 1967
+creators Ole-Johan Dahl and Kristen Nygaard
 tags pl
+description First programming language to introduce OO?
 
-centralPackageRepositoryCount 0
-country France
-originCommunity Compagnie internationale pour l'informatique
-reference https://semanticscholar.org/paper/15a48af9713fbd02ed8fd5837e979d42e32db58e
+reference https://www.mn.uio.no/ifi/english/about/ole-johan-dahl/bibliography/the-birth-of-object-orientation-the-simula-languages.pdf
+reference https://www.softwarepreservation.org/projects/ALGOL/manual/Simula-CommonBaseLanguage.pdf
+
+hasClasses true
+hasInheritance true
+hasGarbageCollection true
 
 hopl https://hopl.info/showlanguage.prx?exp=301
