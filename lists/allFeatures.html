@@ -402,7 +402,7 @@ h4.scrollQuestion {
 </div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p class="scrollParagraph">A list of 169 features found in programming languages.</p>
-<table id="table1125" class="scrollTable">
+<table id="table1126" class="scrollTable">
  <thead><tr><th>title</th>
 
 <th>pseudoExample</th>
@@ -415,7 +415,7 @@ h4.scrollQuestion {
 </tr></thead>
  <tbody><tr><td><a href="../features/hasComments.html">Comments</a></td>
 <td># Hello PLDB</td>
-<td>623</td>
+<td>624</td>
 <td>4</td>
 <td>99%</td>
 </tr>
@@ -494,8 +494,8 @@ h4.scrollQuestion {
 <tr><td><a href="../features/hasWhileLoops.html">While Loops</a></td>
 <td>while (pldb.pop()) loop()</td>
 <td>48</td>
-<td>3</td>
-<td>94%</td>
+<td>4</td>
+<td>92%</td>
 </tr>
 <tr><td><a href="../features/hasBinaryNumbers.html">Binary Literals</a></td>
 <td>0b100110100000110011110010010</td>
@@ -530,8 +530,8 @@ h4.scrollQuestion {
 <tr><td><a href="../features/hasClasses.html">Classes</a></td>
 <td>class PLDBFile {}</td>
 <td>30</td>
-<td>4</td>
-<td>88%</td>
+<td>5</td>
+<td>86%</td>
 </tr>
 <tr><td><a href="../features/hasMacros.html">Macros</a></td>
 <td>#define pldbItems 4000</td>
@@ -596,8 +596,8 @@ h4.scrollQuestion {
 <tr><td><a href="../features/isCaseSensitive.html">Case Sensitivity</a></td>
 <td>pldb != PLDB</td>
 <td>18</td>
-<td>8</td>
-<td>69%</td>
+<td>9</td>
+<td>67%</td>
 </tr>
 <tr><td><a href="../features/hasGarbageCollection.html">Garbage Collection</a></td>
 <td>var iDontNeedToFreeThis</td>
@@ -617,16 +617,16 @@ h4.scrollQuestion {
 <td>1</td>
 <td>-</td>
 </tr>
+<tr><td><a href="../features/hasScientificNotation.html">Scientific Notation</a></td>
+<td>8076686.6e1</td>
+<td>15</td>
+<td>0</td>
+<td>-</td>
+</tr>
 <tr><td><a href="../features/hasConstructors.html">Constructors</a></td>
 <td>PLDBFile { constructor() {} }</td>
 <td>15</td>
 <td>4</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/hasScientificNotation.html">Scientific Notation</a></td>
-<td>8076686.6e1</td>
-<td>14</td>
-<td>0</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasMultipleInheritance.html">Multiple Inheritance</a></td>
@@ -647,16 +647,16 @@ h4.scrollQuestion {
 <td>1</td>
 <td>-</td>
 </tr>
+<tr><td><a href="../features/hasBitWiseOperators.html">Bitwise Operators</a></td>
+<td>3 == (2 &#124; 1)</td>
+<td>12</td>
+<td>1</td>
+<td>-</td>
+</tr>
 <tr><td><a href="../features/hasModules.html">Module Pattern</a></td>
 <td>module PLDB {}</td>
 <td>11</td>
 <td>0</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/hasBitWiseOperators.html">Bitwise Operators</a></td>
-<td>3 == (2 &#124; 1)</td>
-<td>11</td>
-<td>1</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasStaticTyping.html">Static Typing</a></td>
@@ -869,6 +869,12 @@ h4.scrollQuestion {
 <td>0</td>
 <td>-</td>
 </tr>
+<tr><td><a href="../features/hasGotos.html">Gotos</a></td>
+<td>goto 10</td>
+<td>5</td>
+<td>4</td>
+<td>-</td>
+</tr>
 <tr><td><a href="../features/hasExpressions.html">Expressions</a></td>
 <td>(1 + 2)</td>
 <td>5</td>
@@ -993,12 +999,6 @@ h4.scrollQuestion {
 <td>collide_with(x::Spaceship, y::Spaceship)</td>
 <td>4</td>
 <td>3</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/hasGotos.html">Gotos</a></td>
-<td>goto 10</td>
-<td>4</td>
-<td>4</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasGenerators.html">Generators</a></td>
@@ -1429,7 +1429,7 @@ h4.scrollQuestion {
 </tr></tbody>
  </table>
  <script>
- document.querySelector('#table1125').addEventListener('click', e => {
+ document.querySelector('#table1126').addEventListener('click', e => {
   if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
   e.currentTarget.classList.toggle('expandedTable');
  });

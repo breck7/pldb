@@ -191,17 +191,17 @@ import &quot;http://www.xtext.org/example/Domainmodel&quot; as dmodel
 
 import m &#39;math&#39;
 
-let {print} = import &quot;std.io&quot;
-
 use std::fs
 use std::sys::{self, open, O_RDWR}
 use std::math::*
+
+let {print} = import &quot;std.io&quot;
 
 import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, bog, Jule, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, Jule, bog, Speedie, Aardvark
 
 ***
 
