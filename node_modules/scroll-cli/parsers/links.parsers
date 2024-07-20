@@ -65,13 +65,7 @@ linkParser
    })
    return attrs
   }
-  get matchWholeLine() {
-    return this.getWordsFrom(this.patternStartsAtWord).length === 0
-  }
   patternStartsAtWord = 2
-  get pattern() {
-   return this.matchWholeLine ? this.parent.originalText : this.getWordsFrom(this.patternStartsAtWord).join(" ")
-  }
 
 emailLinkParser
  description A mailto link

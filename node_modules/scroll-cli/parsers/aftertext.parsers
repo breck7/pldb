@@ -165,6 +165,14 @@ abstractAftertextDirectiveParser
 abstractMarkupParser
  extends abstractAftertextDirectiveParser
  inScope abstractMarkupParameterParser
+ javascript
+  get matchWholeLine() {
+    return this.getWordsFrom(this.patternStartsAtWord).length === 0
+  }
+  get pattern() {
+   return this.matchWholeLine ? this.parent.originalText : this.getWordsFrom(this.patternStartsAtWord).join(" ")
+  }
+  patternStartsAtWord = 1
 
 abstractMarkupParameterParser
  cells commandWordCell
@@ -264,31 +272,38 @@ wrapParser
 
 boldParser
  cruxFromId
- description Bold the matching text.
+ description Bold matching text.
  extends abstractMarkupParser
  javascript
   tag = "b"
 
 italicsParser
  cruxFromId
- description Italicize the matching text.
+ description Italicize matching text.
  extends abstractMarkupParser
  javascript
   tag = "i"
 
 underlineParser
- description Underline the matching text.
+ description Underline matching text.
  cruxFromId
  extends abstractMarkupParser
  javascript
   tag = "u"
 
 aftertextCodeParser
- description Wrap the matching text in a <code> span.
+ description Wrap matching text in code span.
  crux code
  extends abstractMarkupParser
  javascript
   tag = "code"
+
+aftertextStrikeParser
+ description Wrap matching text in s span.
+ crux strike
+ extends abstractMarkupParser
+ javascript
+  tag = "s"
 
 abstractHtmlAttributeParser
  javascript
@@ -332,12 +347,6 @@ classesMarkupParser
   get className() {
    return this.content
   }
-
-aftertextStrikeParser
- crux strike
- extends abstractMarkupParser
- javascript
-  tag = "s"
 
 aftertextIdParser
  crux id
