@@ -169,7 +169,7 @@ const measures = [
     "Values": 4966,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1272",
+    "Example": "1273",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -443,7 +443,7 @@ const measures = [
   },
   {
     "Name": "wikipedia_appeared",
-    "Values": 1536,
+    "Values": 1535,
     "Coverage": "30%",
     "Question": "When does Wikipedia claim this entity first appeared?",
     "Example": "1962",
@@ -1948,7 +1948,7 @@ const measures = [
   },
   {
     "Name": "lineCommentToken",
-    "Values": 477,
+    "Values": 478,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2048,7 +2048,7 @@ const measures = [
   },
   {
     "Name": "canWriteToDisk",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "Does this language have methods or standard libraries for writing to disk?",
     "Example": "true",
@@ -2118,7 +2118,7 @@ const measures = [
   },
   {
     "Name": "hasAssignment",
-    "Values": 53,
+    "Values": 54,
     "Coverage": "1%",
     "Question": "Does the language allow assigning values to variables?",
     "Example": "true",
@@ -2218,7 +2218,7 @@ const measures = [
   },
   {
     "Name": "hasCaseInsensitiveIdentifiers",
-    "Values": 77,
+    "Values": 78,
     "Coverage": "1%",
     "Question": "Are identifiers in this language case insensitive?",
     "Example": "false",
@@ -2498,7 +2498,7 @@ const measures = [
   },
   {
     "Name": "hasFloats",
-    "Values": 137,
+    "Values": 138,
     "Coverage": "2%",
     "Question": "Does the language have a syntax and type for floating points?",
     "Example": "true",
@@ -2708,7 +2708,7 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 47,
+    "Values": 48,
     "Coverage": "0%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",
@@ -2718,7 +2718,7 @@ const measures = [
   },
   {
     "Name": "hasIncrementAndDecrementOperators",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "Does this language have increment and decrement operators?",
     "Example": "true",
@@ -2728,7 +2728,7 @@ const measures = [
   },
   {
     "Name": "hasInfixNotation",
-    "Values": 7,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "Does this language use operators between operands?",
     "Example": "true",
@@ -2748,7 +2748,7 @@ const measures = [
   },
   {
     "Name": "hasIntegers",
-    "Values": 160,
+    "Values": 161,
     "Coverage": "3%",
     "Question": "Does this language have a syntax and type for integers?",
     "Example": "true",
@@ -2798,7 +2798,7 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 548,
+    "Values": 549,
     "Coverage": "11%",
     "Question": "Does the language have line comments?",
     "Example": "true",
@@ -2808,7 +2808,7 @@ const measures = [
   },
   {
     "Name": "hasLists",
-    "Values": 22,
+    "Values": 23,
     "Coverage": "0%",
     "Question": "Does the language have lists?",
     "Example": "true",
@@ -2968,7 +2968,7 @@ const measures = [
   },
   {
     "Name": "hasMultiLineComments",
-    "Values": 243,
+    "Values": 244,
     "Coverage": "4%",
     "Question": "Does the language have multi-line comments?",
     "Example": "true",
@@ -3048,7 +3048,7 @@ const measures = [
   },
   {
     "Name": "hasOperators",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have operators?",
     "Example": "true",
@@ -3138,7 +3138,7 @@ const measures = [
   },
   {
     "Name": "hasPrintDebugging",
-    "Values": 319,
+    "Values": 320,
     "Coverage": "6%",
     "Question": "Does the language have a built in function that allows one to print debug?",
     "Example": "true",
@@ -3638,7 +3638,7 @@ const measures = [
   },
   {
     "Name": "hasZeroBasedNumbering",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "Does the language start counting from 0, rather than 1?",
     "Example": "true",

@@ -421,7 +421,7 @@ h4.scrollQuestion {
 </tr>
 <tr><td><a href="../features/hasLineComments.html">Line Comments</a></td>
 <td># Hello PLDB</td>
-<td>527</td>
+<td>528</td>
 <td>21</td>
 <td>96%</td>
 </tr>
@@ -433,25 +433,25 @@ h4.scrollQuestion {
 </tr>
 <tr><td><a href="../features/hasPrintDebugging.html">Print() Debugging</a></td>
 <td>print "Hello PLDB"</td>
-<td>318</td>
+<td>319</td>
 <td>1</td>
 <td>100%</td>
 </tr>
 <tr><td><a href="../features/hasMultiLineComments.html">MultiLine Comments</a></td>
 <td>/* Hello PLDB */</td>
 <td>224</td>
-<td>19</td>
+<td>20</td>
 <td>92%</td>
 </tr>
 <tr><td><a href="../features/hasIntegers.html">Integers</a></td>
 <td>80766866</td>
-<td>159</td>
+<td>160</td>
 <td>1</td>
 <td>99%</td>
 </tr>
 <tr><td><a href="../features/hasFloats.html">Floats</a></td>
 <td>80766866.0</td>
-<td>137</td>
+<td>138</td>
 <td>0</td>
 <td>100%</td>
 </tr>
@@ -479,17 +479,17 @@ h4.scrollQuestion {
 <td>517</td>
 <td>11%</td>
 </tr>
+<tr><td><a href="../features/hasAssignment.html">Assignment</a></td>
+<td>name = "PLDB"</td>
+<td>53</td>
+<td>1</td>
+<td>98%</td>
+</tr>
 <tr><td><a href="../features/hasOctals.html">Octals</a></td>
 <td>0o464063622</td>
 <td>52</td>
 <td>3</td>
 <td>95%</td>
-</tr>
-<tr><td><a href="../features/hasAssignment.html">Assignment</a></td>
-<td>name = "PLDB"</td>
-<td>52</td>
-<td>1</td>
-<td>98%</td>
 </tr>
 <tr><td><a href="../features/hasWhileLoops.html">While Loops</a></td>
 <td>while (pldb.pop()) loop()</td>
@@ -505,7 +505,7 @@ h4.scrollQuestion {
 </tr>
 <tr><td><a href="../features/hasImports.html">File Imports</a></td>
 <td>import pldb</td>
-<td>45</td>
+<td>46</td>
 <td>2</td>
 <td>96%</td>
 </tr>
@@ -559,21 +559,21 @@ h4.scrollQuestion {
 </tr>
 <tr><td><a href="../features/hasCaseInsensitiveIdentifiers.html">Case Insensitive Identifiers</a></td>
 <td>pLdB = "PLDB"</td>
-<td>23</td>
+<td>24</td>
 <td>54</td>
-<td>30%</td>
+<td>31%</td>
+</tr>
+<tr><td><a href="../features/hasLists.html">Lists</a></td>
+<td>[2, 3, 10]</td>
+<td>22</td>
+<td>1</td>
+<td>96%</td>
 </tr>
 <tr><td><a href="../features/hasExceptions.html">Exceptions</a></td>
 <td>throw new Error("PLDB uh oh")</td>
 <td>22</td>
 <td>3</td>
 <td>88%</td>
-</tr>
-<tr><td><a href="../features/hasLists.html">Lists</a></td>
-<td>[2, 3, 10]</td>
-<td>21</td>
-<td>1</td>
-<td>95%</td>
 </tr>
 <tr><td><a href="../features/hasPointers.html">Pointers</a></td>
 <td>int *pldb</td>
@@ -665,6 +665,12 @@ h4.scrollQuestion {
 <td>0</td>
 <td>-</td>
 </tr>
+<tr><td><a href="../features/hasZeroBasedNumbering.html">Zero-based numbering</a></td>
+<td>firstItem = pldb[0]</td>
+<td>9</td>
+<td>3</td>
+<td>-</td>
+</tr>
 <tr><td><a href="../features/hasSingleDispatch.html">Single Dispatch</a></td>
 <td>person.run()</td>
 <td>9</td>
@@ -686,19 +692,13 @@ h4.scrollQuestion {
 <tr><td><a href="../features/hasIncrementAndDecrementOperators.html">Increment and decrement operators</a></td>
 <td>i++</td>
 <td>9</td>
-<td>2</td>
+<td>3</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasHereDocs.html">Here Document</a></td>
 <td>`A big multliline text block`</td>
 <td>9</td>
 <td>1</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/hasZeroBasedNumbering.html">Zero-based numbering</a></td>
-<td>firstItem = pldb[0]</td>
-<td>8</td>
-<td>3</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasThreads.html">Threads</a></td>
@@ -725,6 +725,12 @@ h4.scrollQuestion {
 <td>1</td>
 <td>-</td>
 </tr>
+<tr><td><a href="../features/hasInfixNotation.html">Infix Notation</a></td>
+<td>1 + 2</td>
+<td>8</td>
+<td>0</td>
+<td>-</td>
+</tr>
 <tr><td><a href="../features/hasHomoiconicity.html">Homoiconicity</a></td>
 <td>(list ())</td>
 <td>8</td>
@@ -735,6 +741,12 @@ h4.scrollQuestion {
 <td>colorsEnum { "red", "white", "blue"}</td>
 <td>8</td>
 <td>5</td>
+<td>-</td>
+</tr>
+<tr><td><a href="../features/canWriteToDisk.html">Disk Output</a></td>
+<td>write("pldb.csv", "...")</td>
+<td>8</td>
+<td>4</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasNamespaces.html">Namespaces</a></td>
@@ -755,12 +767,6 @@ h4.scrollQuestion {
 <td>1</td>
 <td>-</td>
 </tr>
-<tr><td><a href="../features/hasInfixNotation.html">Infix Notation</a></td>
-<td>1 + 2</td>
-<td>7</td>
-<td>0</td>
-<td>-</td>
-</tr>
 <tr><td><a href="../features/hasFunctionComposition.html">Function Composition</a></td>
 <td>o = (f, g) => x => f(g(x))</td>
 <td>7</td>
@@ -777,12 +783,6 @@ h4.scrollQuestion {
 <td>(float)pldbRank;</td>
 <td>7</td>
 <td>0</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/canWriteToDisk.html">Disk Output</a></td>
-<td>write("pldb.csv", "...")</td>
-<td>7</td>
-<td>4</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasVariadicFunctions.html">Variadic Functions</a></td>
@@ -861,6 +861,12 @@ h4.scrollQuestion {
 <td>add5 = num => addNumbers(10, num)</td>
 <td>5</td>
 <td>0</td>
+<td>-</td>
+</tr>
+<tr><td><a href="../features/hasOperators.html">Operators</a></td>
+<td>1 + 1</td>
+<td>5</td>
+<td>1</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasNull.html">Null</a></td>
@@ -987,12 +993,6 @@ h4.scrollQuestion {
 <td>2 3 4 + 2 -</td>
 <td>4</td>
 <td>0</td>
-<td>-</td>
-</tr>
-<tr><td><a href="../features/hasOperators.html">Operators</a></td>
-<td>1 + 1</td>
-<td>4</td>
-<td>1</td>
 <td>-</td>
 </tr>
 <tr><td><a href="../features/hasMultipleDispatch.html">Multiple Dispatch</a></td>

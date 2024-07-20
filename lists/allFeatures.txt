@@ -5,21 +5,21 @@ A list of 169 features found in programming languages.
 
 title|_$^titleLink|_$^pseudoExample|_$^yes|_$^no|_$^percentage
 Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^624|_$^4|_$^99%
-Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^527|_$^21|_$^96%
+Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^528|_$^21|_$^96%
 Strings|_$^../features/hasStrings.html|_$^"Hello PLDB"|_$^365|_$^0|_$^100%
-Print() Debugging|_$^../features/hasPrintDebugging.html|_$^print "Hello PLDB"|_$^318|_$^1|_$^100%
-MultiLine Comments|_$^../features/hasMultiLineComments.html|_$^/* Hello PLDB */|_$^224|_$^19|_$^92%
-Integers|_$^../features/hasIntegers.html|_$^80766866|_$^159|_$^1|_$^99%
-Floats|_$^../features/hasFloats.html|_$^80766866.0|_$^137|_$^0|_$^100%
+Print() Debugging|_$^../features/hasPrintDebugging.html|_$^print "Hello PLDB"|_$^319|_$^1|_$^100%
+MultiLine Comments|_$^../features/hasMultiLineComments.html|_$^/* Hello PLDB */|_$^224|_$^20|_$^92%
+Integers|_$^../features/hasIntegers.html|_$^80766866|_$^160|_$^1|_$^99%
+Floats|_$^../features/hasFloats.html|_$^80766866.0|_$^138|_$^0|_$^100%
 Booleans|_$^../features/hasBooleans.html|_$^pldb = true|_$^116|_$^4|_$^97%
 Hexadecimals|_$^../features/hasHexadecimals.html|_$^0x4D06792|_$^107|_$^1|_$^99%
 Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^74|_$^3|_$^96%
 Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true line1  print "Hello PLDB"|_$^66|_$^517|_$^11%
+Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^53|_$^1|_$^98%
 Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
-Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^52|_$^1|_$^98%
 While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48|_$^4|_$^92%
 Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^48|_$^1|_$^98%
-File Imports|_$^../features/hasImports.html|_$^import pldb|_$^45|_$^2|_$^96%
+File Imports|_$^../features/hasImports.html|_$^import pldb|_$^46|_$^2|_$^96%
 Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^43|_$^1|_$^98%
 Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
 Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
@@ -28,9 +28,9 @@ Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^27|_$^9|_$^75%
 Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^27|_$^1|_$^96%
 Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
 Switch Statements|_$^../features/hasSwitch.html|_$^switch animal: case dog-buy; case cat-sell;|_$^24|_$^1|_$^96%
-Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^23|_$^54|_$^30%
+Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^24|_$^54|_$^31%
+Lists|_$^../features/hasLists.html|_$^[2, 3, 10]|_$^22|_$^1|_$^96%
 Exceptions|_$^../features/hasExceptions.html|_$^throw new Error("PLDB uh oh")|_$^22|_$^3|_$^88%
-Lists|_$^../features/hasLists.html|_$^[2, 3, 10]|_$^21|_$^1|_$^95%
 Pointers|_$^../features/hasPointers.html|_$^int *pldb|_$^20|_$^5|_$^80%
 Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^20|_$^1|_$^95%
 Directives|_$^../features/hasDirectives.html|_$^use strict;|_$^20|_$^2|_$^91%
@@ -46,26 +46,26 @@ Message Passing|_$^../features/hasMessagePassing.html|_$^"get pldb"|_$^12|_$^1|_
 Bitwise Operators|_$^../features/hasBitWiseOperators.html|_$^3 == (2 &#124; 1)|_$^12|_$^1|_$^-
 Module Pattern|_$^../features/hasModules.html|_$^module PLDB {}|_$^11|_$^0|_$^-
 Static Typing|_$^../features/hasStaticTyping.html|_$^int pldbRank = 100|_$^10|_$^0|_$^-
+Zero-based numbering|_$^../features/hasZeroBasedNumbering.html|_$^firstItem = pldb[0]|_$^9|_$^3|_$^-
 Single Dispatch|_$^../features/hasSingleDispatch.html|_$^person.run()|_$^9|_$^1|_$^-
 Regular Expression Syntax Sugar|_$^../features/hasRegularExpressionsSyntaxSugar.html|_$^/pldb/|_$^9|_$^6|_$^-
 Pattern Matching|_$^../features/hasPatternMatching.html|_$^fib 0 = 1; fib 1 = 1|_$^9|_$^2|_$^-
-Increment and decrement operators|_$^../features/hasIncrementAndDecrementOperators.html|_$^i++|_$^9|_$^2|_$^-
+Increment and decrement operators|_$^../features/hasIncrementAndDecrementOperators.html|_$^i++|_$^9|_$^3|_$^-
 Here Document|_$^../features/hasHereDocs.html|_$^`A big multliline text block`|_$^9|_$^1|_$^-
-Zero-based numbering|_$^../features/hasZeroBasedNumbering.html|_$^firstItem = pldb[0]|_$^8|_$^3|_$^-
 Threads|_$^../features/hasThreads.html|_$^thread1(); thread2();|_$^8|_$^1|_$^-
 Ternary operators|_$^../features/hasTernaryOperators.html|_$^true ? 1 : 0|_$^8|_$^7|_$^-
 Structs|_$^../features/hasStructs.html|_$^struct pldbFile { int rank; char *title; };|_$^8|_$^0|_$^-
 Mixins|_$^../features/hasMixins.html|_$^extends pldbFile, diskFile|_$^8|_$^1|_$^-
+Infix Notation|_$^../features/hasInfixNotation.html|_$^1 + 2|_$^8|_$^0|_$^-
 Homoiconicity|_$^../features/hasHomoiconicity.html|_$^(list ())|_$^8|_$^1|_$^-
 Enums|_$^../features/hasEnums.html|_$^colorsEnum { "red", "white", "blue"}|_$^8|_$^5|_$^-
+Disk Output|_$^../features/canWriteToDisk.html|_$^write("pldb.csv", "...")|_$^8|_$^4|_$^-
 Namespaces|_$^../features/hasNamespaces.html|_$^namespace PLDB {}|_$^7|_$^2|_$^-
 Maps|_$^../features/hasMaps.html|_$^{name: "PLDB"}|_$^7|_$^0|_$^-
 Iterators|_$^../features/hasIterators.html|_$^for lang in pldb()|_$^7|_$^1|_$^-
-Infix Notation|_$^../features/hasInfixNotation.html|_$^1 + 2|_$^7|_$^0|_$^-
 Function Composition|_$^../features/hasFunctionComposition.html|_$^o = (f, g) => x => f(g(x))|_$^7|_$^1|_$^-
 Fixed Point Numbers|_$^../features/hasFixedPoint.html|_$^80766866.00|_$^7|_$^2|_$^-
 Type Casting|_$^../features/hasExplicitTypeCasting.html|_$^(float)pldbRank;|_$^7|_$^0|_$^-
-Disk Output|_$^../features/canWriteToDisk.html|_$^write("pldb.csv", "...")|_$^7|_$^4|_$^-
 Variadic Functions|_$^../features/hasVariadicFunctions.html|_$^args.map(doSomething)|_$^6|_$^0|_$^-
 Units of Measure|_$^../features/hasUnitsOfMeasure.html|_$^42cm|_$^6|_$^4|_$^-
 Manual Memory Management|_$^../features/hasManualMemoryManagement.html|_$^malloc(4);|_$^6|_$^1|_$^-
@@ -79,6 +79,7 @@ Prefix Notation|_$^../features/hasPrefixNotation.html|_$^+ 1 2|_$^5|_$^0|_$^-
 Polymorphism|_$^../features/hasPolymorphism.html|_$^a + "b"; 1 + 2|_$^5|_$^1|_$^-
 Pipes|_$^../features/hasPipes.html|_$^ls pldb &#124; wc|_$^5|_$^1|_$^-
 Partial Application|_$^../features/hasPartialApplication.html|_$^add5 = num => addNumbers(10, num)|_$^5|_$^0|_$^-
+Operators|_$^../features/hasOperators.html|_$^1 + 1|_$^5|_$^1|_$^-
 Null|_$^../features/hasNull.html|_$^uhOh = null|_$^5|_$^0|_$^-
 Gotos|_$^../features/hasGotos.html|_$^goto 10|_$^5|_$^4|_$^-
 Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^5|_$^0|_$^-
@@ -100,7 +101,6 @@ Single-Type Arrays|_$^../features/hasSingleTypeArrays.html|_$^const pldbRanks: i
 Sets|_$^../features/hasSets.html|_$^{"pldb", "PLDB"}|_$^4|_$^1|_$^-
 Range Operator|_$^../features/hasRangeOperators.html|_$^1 ... 10|_$^4|_$^0|_$^-
 Postfix Notation|_$^../features/hasPostfixNotation.html|_$^2 3 4 + 2 -|_$^4|_$^0|_$^-
-Operators|_$^../features/hasOperators.html|_$^1 + 1|_$^4|_$^1|_$^-
 Multiple Dispatch|_$^../features/hasMultipleDispatch.html|_$^collide_with(x::Spaceship, y::Spaceship)|_$^4|_$^3|_$^-
 Generators|_$^../features/hasGenerators.html|_$^yield 2|_$^4|_$^0|_$^-
 Function Overloading|_$^../features/hasFunctionOverloading.html|_$^add(string: str, string2: str)|_$^4|_$^4|_$^-

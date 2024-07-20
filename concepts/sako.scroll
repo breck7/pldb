@@ -1,7 +1,7 @@
 import ../code/conceptPage.scroll
 
 id sako
-name System Automatycznego Kodowania
+name SAKO
 appeared 1960
 tags pl
 standsFor System Automatycznego Kodowania
@@ -14,15 +14,46 @@ originCommunity Polish Academy of Sciences
 reference https://historiainformatyki.pl/skan.php?doc_id=1489&type=pdf&for_download=1
 
 assignmentToken =
+lineCommentToken K)
 
+canWriteToDisk true
+ PISZ NA BEBEN OD 10: A 
 isCaseSensitive false
 hasWhileLoops false
 hasClasses false
+hasLineComments true
 hasComments true
  K) A comment
+ : Also a comment (although, rarer and newer)
+ K) Comments must start at the beginning of a line
 hasGotos true
-hasBitWiseOperators true
 hasScientificNotation true
+hasFloats true
+ A = 2.3
+hasImports true
+hasIntegers true
+ CALKOWITE: I
+ I = 80766866
+hasZeroBasedNumbering true
+hasIncrementAndDecrementOperators false
+hasLineComments true
+ K) A comment
+hasMultiLineComments false
+hasCaseInsensitiveIdentifiers true
+hasAssignment true
+hasBitWiseOperators true
+hasOperators true
+ 1 + 1 - 1 × 1 * 1 / 1
+hasPrintDebugging true
+ TEKST:
+ HI
+hasLists true
+ TABLICA(4): B
+ 1 2.0 3.4
+ 4.1 5.6
+ *
+hasInfixNotation true
+ I = 3 + 4
 
 wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  example
@@ -37,7 +68,6 @@ wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  created 2013
  backlinksCount 4
  revisionCount 12
- appeared 1960
 
 hopl https://hopl.info/showlanguage.prx?exp=2178
 
