@@ -68,7 +68,8 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Mitchel_Resnick"
   },
   {
-    "id": "John Maloney"
+    "id": "John Maloney",
+    "homepage": "https://faberllull.cat/en/resident.cfm?id=38257&url=john-maloney.htm"
   },
   {
     "id": "Jens Mönig",
@@ -178,7 +179,7 @@
   {
     "id": "Brian Kernighan",
     "homepage": "https://www.cs.princeton.edu/~bwk/",
-    "interview": "https://pldb.io/blog/brianKernighan.html",
+    "pldbInterview": "https://pldb.io/blog/brianKernighan.html",
     "born": 1942,
     "wikipedia": "https://en.wikipedia.org/wiki/Brian_Kernighan"
   },
@@ -625,7 +626,7 @@
     "id": "John Ousterhout",
     "homepage": "https://web.stanford.edu/~ouster/cgi-bin/home.php",
     "gits": "https://github.com/johnousterhout",
-    "interview": "https://pldb.io/blog/mikecowlishaw-interview.html",
+    "pldbInterview": "https://pldb.io/blog/JohnOusterhout.html",
     "twitter": "https://x.com/johnousterhout",
     "born": 1954,
     "wikipedia": "https://en.wikipedia.org/wiki/John_Ousterhout"
@@ -779,7 +780,7 @@
     "id": "Kartik K. Agaram",
     "homepage": "https://akkartik.name/",
     "gits": "https://github.com/akkartik",
-    "interview": "https://pldb.io/blog/scottFalhmanInterview.html"
+    "pldbInterview": "https://pldb.io/blog/kartik.html"
   },
   {
     "id": "Oren Ben-Kiki",
@@ -916,6 +917,7 @@
   },
   {
     "id": "Mike Cowlishaw",
+    "pldbInterview": "https://pldb.io/blog/mikecowlishaw-interview.html",
     "born": 1948,
     "wikipedia": "https://en.wikipedia.org/wiki/Mike_Cowlishaw"
   },
@@ -932,7 +934,7 @@
   {
     "id": "Niklaus Wirth",
     "homepage": "https://people.inf.ethz.ch/wirth/",
-    "interview": "https://pldb.io/blog/niklausWirth.html",
+    "pldbInterview": "https://pldb.io/blog/niklausWirth.html",
     "born": 1934,
     "died": 2024,
     "wikipedia": "https://en.wikipedia.org/wiki/Niklaus_Wirth"
@@ -1065,7 +1067,7 @@
   {
     "id": "Scott Fahlman",
     "homepage": "https://www.cs.cmu.edu/~sef/",
-    "interview": "https://pldb.io/blog/scottFalhmanInterview.html",
+    "pldbInterview": "https://pldb.io/blog/scottFalhmanInterview.html",
     "born": 1948,
     "wikipedia": "https://en.wikipedia.org/wiki/Scott_Fahlman"
   },

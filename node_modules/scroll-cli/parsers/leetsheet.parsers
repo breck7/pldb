@@ -25,7 +25,7 @@ printLeetSheetParser
  extends abstractScrollParser
  cruxFromId
  javascript
-  get parserDocs() {
+  get parsersToDocument() {
     const clone = this.root.clone()
     clone.setChildren("")
     const words = clone.getAutocompleteResultsAt(0,0).matches.map(a => a.text)
@@ -34,12 +34,14 @@ printLeetSheetParser
     words.push("<h></h>") // manually add html
     words.sort()
     clone.setChildren(words.join("\n").replace(/blankline/, "")) // insert blank line in right spot
-    const docs = clone.map(node => {
+    return clone
+  }
+  get parserDocs() {
+    return this.parsersToDocument.map(node => {
       const {definition} = node
       const {id, description, isPopular} = definition
       return {id: definition.cruxIfAny || id, description, isPopular}
      }).sort((a, b) => a.id.localeCompare(b.id))
-    return docs
   }
   compile() {
    const css = `#scrollLeetSheet {color: grey;} #scrollLeetSheet a {color: #3498db; }`
@@ -48,3 +50,18 @@ printLeetSheetParser
   compileTxt() {
    return this.parserDocs.map(obj => `${obj.id} - ${obj.description}`).join("\n")
   }
+
+printAdvancedLeetSheetParser
+ extends printLeetSheetParser
+ description Print Parsers leet sheet.
+ javascript
+  get parsersToDocument() {
+    const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
+    const clone = new parsersParser("latinParser\n ").clone()
+    const parserNode = clone.getNode("latinParser")
+    const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
+    words.sort()
+    parserNode.setChildren(words.join("\n"))
+    return parserNode
+  }
+

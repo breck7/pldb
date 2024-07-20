@@ -13,7 +13,9 @@ abstractCaptionedParser
   compile(compileSettings) {
    const caption = this.getNode("caption")
    const captionFig = caption ? `<figcaption>${caption.compile()}</figcaption>` : ""
-   return `<figure class="scrollCaptionedFigure">${this.getFigureContent(compileSettings)}${captionFig}</figure>`
+   const width = this.has("width") ? `width:${this.get("width")}px; margin: auto;` : ""
+   const float = this.has("float") ? `margin: 20px; float: ${this.get("float")};` : ""
+   return `<figure class="scrollCaptionedFigure" style="${width + float}">${this.getFigureContent(compileSettings)}${captionFig}</figure>`
   }
 
 imageParser
@@ -26,26 +28,33 @@ imageParser
   cruxFromId
   cells commandWordCell
  javascript
-  getFigureContent(compileSettings) {
+  get dimensions() {
+    const width = this.get("width")
+    const height = this.get("height")
+    if (width || height)
+      return {width, height}
+    if (!this.isNodeJs())
+      return {}
+    const src = this.getWord(1)
+    // If its a local image, get the dimensions and put them in the HTML
+    // to avoid flicker
+   if (src.startsWith("http:") || src.startsWith("https:")) return {}
    const file = this.root.file
-   const src = this.getWord(1)
-   const linkRelativeToCompileTarget = (compileSettings ? (compileSettings.relativePath ?? "") : "") + src
-   let dimensionAttributes = ""
-   // If its a local image, get the dimensions and put them in the HTML
-   // to avoid flicker
-   if (!src.startsWith("http:") && !src.startsWith("https:")) {
     try {
      const sizeOf = require("image-size")
      const path = require("path")
      const fullImagePath = path.join(file.folderPath, src)
-     const dimensions = sizeOf(fullImagePath)
-     const width = dimensions.width
-     const height = dimensions.height
-     dimensionAttributes = `width="${width}" height="${height}" `
+     return sizeOf(fullImagePath)
     } catch (err) {
      console.error(err)
     }
-   }
+    return {}
+  }
+  getFigureContent(compileSettings) {
+   const file = this.root.file
+   const linkRelativeToCompileTarget = (compileSettings ? (compileSettings.relativePath ?? "") : "") + this.getWord(1)
+   const {width, height} = this.dimensions
+   let dimensionAttributes = width || height  ? `width="${width}" height="${height}" ` : ""
    // Todo: can we reuse more code from aftertext?
    const className = this.has("class") ? ` class="${this.get("class")}" ` : ""
    const id = this.has("id") ? ` id="${this.get("id")}" ` : ""

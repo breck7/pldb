@@ -11,7 +11,7 @@ gitsParser
  description A link to their GitHub or GitLab or other Git portfolio.
  extends abstractUrlMeasureParser
  float sortIndex 1.2
-interviewParser
+pldbInterviewParser
  description A link to their PLDB interview.
  extends abstractUrlMeasureParser
  float sortIndex 1.21
@@ -87,7 +87,7 @@ born 1956
 wikipedia https://en.wikipedia.org/wiki/Mitchel_Resnick
 
 id John Maloney
-interviews https://faberllull.cat/en/resident.cfm?id=38257&url=john-maloney.htm
+homepage https://faberllull.cat/en/resident.cfm?id=38257&url=john-maloney.htm
 
 id Jens Mönig
 gits https://github.com/jmoenig
@@ -177,7 +177,7 @@ wikipedia https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
 
 id Brian Kernighan
 homepage https://www.cs.princeton.edu/~bwk/
-interview https://pldb.io/blog/brianKernighan.html
+pldbInterview https://pldb.io/blog/brianKernighan.html
 born 1942
 wikipedia https://en.wikipedia.org/wiki/Brian_Kernighan
 
@@ -540,7 +540,7 @@ wikipedia https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
 id John Ousterhout
 homepage https://web.stanford.edu/~ouster/cgi-bin/home.php
 gits https://github.com/johnousterhout
-interview https://pldb.io/blog/mikecowlishaw-interview.html
+pldbInterview https://pldb.io/blog/JohnOusterhout.html
 twitter https://x.com/johnousterhout
 born 1954
 wikipedia https://en.wikipedia.org/wiki/John_Ousterhout
@@ -666,7 +666,7 @@ gits https://github.com/sirthias
 id Kartik K. Agaram
 homepage https://akkartik.name/
 gits https://github.com/akkartik
-interview https://pldb.io/blog/scottFalhmanInterview.html
+pldbInterview https://pldb.io/blog/kartik.html
 
 id Oren Ben-Kiki
 homepage http://www.ben-kiki.org/oren/
@@ -782,6 +782,7 @@ wikipedia https://en.wikipedia.org/wiki/Michael_Widenius
 id Mike Cowlishaw
 born 1948
 wikipedia https://en.wikipedia.org/wiki/Mike_Cowlishaw
+pldbInterview https://pldb.io/blog/mikecowlishaw-interview.html
 
 id Nathaniel Borenstein
 born 1957
@@ -793,7 +794,7 @@ wikipedia https://en.wikipedia.org/wiki/Ned_Freed
 
 id Niklaus Wirth
 homepage https://people.inf.ethz.ch/wirth/
-interview https://pldb.io/blog/niklausWirth.html
+pldbInterview https://pldb.io/blog/niklausWirth.html
 born 1934
 died 2024
 wikipedia https://en.wikipedia.org/wiki/Niklaus_Wirth
@@ -902,7 +903,7 @@ wikipedia https://en.wikipedia.org/wiki/Ryan_Dahl
 
 id Scott Fahlman
 homepage https://www.cs.cmu.edu/~sef/
-interview https://pldb.io/blog/scottFalhmanInterview.html
+pldbInterview https://pldb.io/blog/scottFalhmanInterview.html
 born 1948
 wikipedia https://en.wikipedia.org/wiki/Scott_Fahlman
 
