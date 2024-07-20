@@ -11,7 +11,7 @@
  <meta name="generator" content="Scroll v109.2.0">
  <meta property="og:title" content="A brief interview with Mu creator Dr. Kartik Agaram">
  <meta property="og:description" content="PLDB: a Programming Language Database. Build the next great programming language.">
- <meta property="og:image" content="https://pldb.io/blog/images/kartikAgaram.png">
+ <meta property="og:image" content="https://pldb.io/blog/images/kartikAgaram.jpg">
  <link rel="alternate" type="application/rss+xml" title="A brief interview with Mu creator Dr. Kartik Agaram" href="feed.xml">
  <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -400,14 +400,13 @@ h4.scrollQuestion {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollSection"><h1 class="scrollTitle"><a href="kartik.html">A brief interview with Mu creator Dr. Kartik Agaram</a></h1>
-</div><div class="scrollColumns" style="column-width:35ch;column-count:2;max-width:90ch;">
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
-<div class="scrollSection"><h2 class="scrollParagraph">Introduction</h2>
 </div>
+<div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p class="scrollParagraph"><span class="scrollDateline">November 22, 2022 — </span><a href="http://akkartik.name/">Dr. Kartik Agaram</a> is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.</p>
-<div class="scrollSection"><h2 class="scrollParagraph">Interview</h2>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What problem is <a href="https://github.com/akkartik/mu">Mu</a> attempting to solve?</h4>
 </div>
-<p class="scrollParagraph"><strong>Hassam:</strong> What problem is <a href="https://github.com/akkartik/mu">Mu</a> attempting to solve?</p>
 <p class="scrollParagraph"><strong>Dr. Agaram:</strong> Can we encourage people to modify the programs on their computers without impeding their ability to work with others?</p>
 <p class="scrollParagraph">The world currently creates software with certain unquestioned assumptions:</p>
 <ul ><li >A few people build the program, a lot of people use it.</li>
@@ -424,15 +423,20 @@ h4.scrollQuestion {
 <ul ><li >Keep programs really small to minimize vectors for catastrophe.</li>
 <li >Use this knowledge to allow anyone to modify their own programs. The more people change programs on their own computers, the more natural barriers we will have to keep mistakes and malicious changes from infecting everyone all at once.</li>
 <li >Spread the knowledge and understanding of what's inside a computer to lots of people so that we can police each other on the programs that enter our computers.</li></ul>
-<p class="scrollParagraph"><strong>Hassam:</strong> Doesn't this approach risk destabilizing people's computers?</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">Doesn't this approach risk destabilizing people's computers?</h4>
+</div>
 <p class="scrollParagraph"><strong>Dr. Agaram:</strong> You're absolutely right. I'm asking people to make changes to programs they're not very familiar with, and that increases the odds of breaking something. I have 3 defenses.</p>
 <ol  start="1."><li >Mistakes can be protected against. We can detect them quickly, and we can support undoing them quickly. Guardrails like formal analysis (types and so on) and tests help with the former. Version control helps with the latter. Both are fairly mature and reliable. We should all lean on them more to avoid bigger problems elsewhere.</li>
 <li >Philosophically I think mistakes can often be very desirable. If you make lots of small mistakes, that can help you avoid big mistakes. This is the idea of hormesis that Nassim Taleb popularized. Avoiding large forest fires by having annual controlled burns, for example. In software I think mistakes can be very desirable because they allow the design rationale for programs to spread through a wider audience of programmers, and to not be forgotten over time.</li>
 <li >I'd argue software today is already fairly unstable. We find vulnerabilities constantly. We find apps exfiltrating behavioral data on a regular basis. And even our cheese gets moved fairly often when we upgrade. So it's not clear to me how much we're giving up.</li></ol>
 <p class="scrollParagraph">So yes, breakage will be a little more visible where it's normally happening in areas that are easy to ignore. Perhaps this is a good thing? Software is in the stone ages. I think we all would benefit from reminders of this fact. We might be annoyed more but suffer fewer catastrophes.</p>
-<p class="scrollParagraph"><strong>Hassam:</strong> This is a big, ambitious project. How did you get motivated to start working on it?</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">This is a big, ambitious project. How did you get motivated to start working on it?</h4>
+</div>
 <p class="scrollParagraph"><strong>Dr. Agaram:</strong> When I started Mu I'd been working in tech companies for a while, and I was disillusioned. Large companies are slow, bureaucratic and permit all kinds of shoddy work and weighty-seeming over-engineering. It seemed to me that they should be getting at least technically out-competed by smaller companies, even if they still often win from a business perspective. (I was very influenced early on by <a href="https://en.wikipedia.org/wiki/Tracy_Kidder">Tracy Kidder's</a> book, <em>"The soul of a new machine"</em> about how Data General went out of business in spite of building a technically superior computer.) But when I looked around, the smaller companies didn't seem that much better. They were all trying furiously to grow, not just in adoption but also in the population of their programmers. They didn't seem more capital-efficient. Software is supposed to be scalable. Why are we having such trouble keeping our programs running without constant attention? I think there's a rot in the foundations that we keep trying to paper over and forget about. We should instead keep exposing it, reminding ourselves of it, trying new ways to rid ourselves of it.</p>
-<figure class="scrollCaptionedFigure" style=""><a href="images/kartikAgaram.png" target="_blank"  ><img src="images/kartikAgaram.png" width="1114" height="1115" loading="lazy"></a><figcaption><p class="scrollParagraph">You have my heartfelt gratitude Dr. Agaram!</p></figcaption></figure>
+<div class="dinkus"><span>⁂</span></div>
+<figure class="scrollCaptionedFigure" style=""><a href="images/kartikAgaram.jpg" target="_blank"  ><img src="images/kartikAgaram.jpg" width="1114" height="1115" loading="lazy"></a><figcaption><p class="scrollParagraph">You have my heartfelt gratitude Dr. Agaram!</p></figcaption></figure>
 </div>
 <p class="scrollViewSource doNotPrint">
  <a href="https://github.com/breck7/pldb/blob/main/blog/kartik.scroll">View source</a>
