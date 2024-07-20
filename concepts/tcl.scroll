@@ -8,10 +8,12 @@ tags pl
 website http://www.tcl.tk
 blog https://www.tcl.tk/software/tcltk/whatsnew.tml
 releaseNotes http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+aka Tcl/Tk
 standsFor Tool Command Language
 interviews https://pldb.io/blog/JohnOusterhout.html
 
 isOpenSource true
+related tk
 tryItOnline tcl
 fileExtensions tcl tbc
 visualParadigm false
@@ -29,6 +31,7 @@ projectEuler Tcl
   2019 75
   2022 71
 
+subreddit https://www.reddit.com/r/Tcl/
 helloWorldCollection Tool Command Language
  #!/usr/local/bin/tclsh
  # Hello World in Tcl
