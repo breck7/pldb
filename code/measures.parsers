@@ -133,6 +133,11 @@ annualReportsUrlParser
  single false
  float sortIndex 2.7
 
+abstractUrlsMeasureParser
+ extends abstractUrlMeasureParser
+ cells measureNameCell
+ catchAllCellType urlCell
+
 // antlr
 antlrParser
  extends abstractUniqueUrlMeasureParser
@@ -329,6 +334,16 @@ subDescriptionParser
  extends descriptionParser
  description How is this language described here?
  crux description
+
+tiktoksParser
+ extends abstractUrlsMeasureParser
+ description What is a URL to an official (or popular unofficial) TikTok(s) for this language?
+ float sortIndex 3
+
+youtubesParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?
+ float sortIndex 3
 
 // discord
 discordParser
