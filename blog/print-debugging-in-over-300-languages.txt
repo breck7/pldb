@@ -1,16 +1,16 @@
 "print() debugging" in over 300 languages
 =========================================
 by Breck Yunits
- https://github.com/breck7
+ https://github.com/breck7 Breck Yunits
 
 [Image Omitted]
 
 July 15, 2022
 
 Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
- https://twitter.com/paulg/status/1532448988766650385
- https://pldb.io/blog/../concepts/arc.html
- https://pldb.io/blog/../concepts/bel.html
+ https://twitter.com/paulg/status/1532448988766650385 interesting thread
+ https://pldb.io/blog/../concepts/arc.html Arc
+ https://pldb.io/blog/../concepts/bel.html Bel
 
 Both experts and beginners frequently use "print() debugging".
 
@@ -19,7 +19,7 @@ Support for "print() debugging" is near-universal in high level programming lang
 Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
 
 There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
- https://pldb.io/blog/../concepts/05AB1E.html
+ https://pldb.io/blog/../concepts/05AB1E.html 05AB1E
 
 Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
 

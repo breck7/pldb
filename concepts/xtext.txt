@@ -2,7 +2,7 @@ Xtext
 =====
 
 Xtext is a grammar language created in 2006.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
 #494 on PLDB
 18 Years Old
@@ -10,13 +10,13 @@ Xtext is a grammar language created in 2006.
 git clone https://github.com/eclipse/xtext
 
 Xtext is an open-source software framework for developing programming languages and domain-specific languages (DSLs). Unlike standard parser generators, Xtext generates not only a parser, but also a class model for the abstract syntax tree, as well as providing a fully featured, customizable Eclipse-based IDE.Xtext is being developed in the Eclipse Project as part of the Eclipse Modeling Framework Project and is licensed under the Eclipse Public License.. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Xtext
+ https://en.wikipedia.org/wiki/Xtext Read more on Wikipedia...
 
 - Tags: grammarLanguage
 - Xtext is developed on GitHub and has 645 stars
 - Xtext is written in Java, XML, Xtend, Ini, HTML, JavaScript, Gradle, Bourne shell, CSS, Markdown, JSON, TypeScript, YAML, Dockerfile, CSV, Objective C++, SVG
 - Read more about Xtext on the web: 1.
- https://dl.acm.org/citation.cfm?id=1869625
+ https://dl.acm.org/citation.cfm?id=1869625 1.
 
 grammar org.eclipse.xtext.common.Terminals
     hidden(WS, ML_COMMENT, SL_COMMENT)

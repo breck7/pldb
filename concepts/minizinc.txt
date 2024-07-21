@@ -2,7 +2,7 @@ MiniZinc
 ========
 
 MiniZinc is an open source programming language created in 2012.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
 #571 on PLDB
 12 Years Old
@@ -17,7 +17,7 @@ The MiniZinc compiler
 - MiniZinc is written in C++, reStructuredText, Python, CMake, JSON, SVG, HTML, Markdown, YAML, XML, C, CSS, Nix, JavaScript, Make, Tex, Bash, Ini
 - Explore MiniZinc snippets on Rosetta Code
 - MiniZinc Ubuntu package
- https://packages.ubuntu.com/jammy/minizinc
+ https://packages.ubuntu.com/jammy/minizinc MiniZinc Ubuntu package
 - MiniZinc appears in the Quine Relay project
 
 solve satisfy;

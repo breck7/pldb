@@ -2,8 +2,8 @@ Koka
 ====
 
 Koka is an open source programming language created in 2012 by Daan Leijen.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Daan%20Leijen
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
+ https://pldb.io/concepts/../lists/creators.html#q=Daan%20Leijen Daan Leijen
 
 #199 on PLDB
 12 Years Old
@@ -19,7 +19,7 @@ A strongly typed functional-style language with effect types and handlers.
 - Koka is written in Haskell, C, XML, JavaScript, Markdown, JSON, Bourne shell, C++, C#, OCaml, CMake, Dockerfile, Swift, SVG, Java, TypeScript, Lean, Vim script, CSS, YAML, Lex, Yacc, Logos, Tex, Python, Lisp, HTML, sed, Less, CSON
 - Pygments supports syntax highlighting for Koka
 - Read more about Koka on the web: 1.
- https://koka-lang.github.io/koka/doc/book.html
+ https://koka-lang.github.io/koka/doc/book.html 1.
 
 fun hello-ten()
   var i := 0

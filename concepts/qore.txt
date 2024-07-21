@@ -2,8 +2,8 @@ Qore
 ====
 
 Qore is a programming language created in 2006 by David Nichols.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=David%20Nichols
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Nichols David Nichols
 
 #985 on PLDB
 18 Years Old
@@ -11,7 +11,7 @@ Qore is a programming language created in 2006 by David Nichols.
 git clone https://github.com/qorelanguage/qore
 
 Qore is an interpreted, high-level, general-purpose, garbage collected  dynamic programming language, featuring support for code embedding and sandboxing with optional strong typing and a focus on fundamental support for multithreading and SMP scalability. Qore is unique because it is an interpreted scripting language with fundamental support for multithreading (meaning more than one part of the same code can run at the same time), and additionally because it features automatic memory management (meaning programmers do not have to allocate and free memory explicitly) while also supporting the RAII idiom with destructors for scope-based resource management and exception-safe programming.  This is due to Qore's unique prompt collection implementation for garbage collection.. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Qore_(programming_language)
+ https://en.wikipedia.org/wiki/Qore_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
 - Qore is developed on GitHub and has 41 stars

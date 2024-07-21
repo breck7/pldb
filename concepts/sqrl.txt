@@ -2,13 +2,13 @@ SQRL
 ====
 
 SQRL, aka Smyte Query and Rules Language, is a query language created in 2018 by Josh Yudaken and Pete Hunt and Julian Tempelsman and Paul Mou and Yunjing Xu and David Newman.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Josh%20Yudaken
- https://pldb.io/concepts/../lists/creators.html#q=Pete%20Hunt
- https://pldb.io/concepts/../lists/creators.html#q=Julian%20Tempelsman
- https://pldb.io/concepts/../lists/creators.html#q=Paul%20Mou
- https://pldb.io/concepts/../lists/creators.html#q=Yunjing%20Xu
- https://pldb.io/concepts/../lists/creators.html#q=David%20Newman
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
+ https://pldb.io/concepts/../lists/creators.html#q=Josh%20Yudaken Josh Yudaken
+ https://pldb.io/concepts/../lists/creators.html#q=Pete%20Hunt Pete Hunt
+ https://pldb.io/concepts/../lists/creators.html#q=Julian%20Tempelsman Julian Tempelsman
+ https://pldb.io/concepts/../lists/creators.html#q=Paul%20Mou Paul Mou
+ https://pldb.io/concepts/../lists/creators.html#q=Yunjing%20Xu Yunjing Xu
+ https://pldb.io/concepts/../lists/creators.html#q=David%20Newman David Newman
 
 #1475 on PLDB
 6 Years Old
@@ -22,8 +22,8 @@ SQRL was the language designed by Smyte, and later acquired by Twitter in 2018. 
 - Early development of SQRL happened in Smyte
 - SQRL is written in TypeScript, JavaScript, Markdown, JSON, EJS, SCSS, YAML, JSX, Bash, SVG, CSS, Python, Dockerfile
 - Read more about SQRL on the web: 1. 2.
- https://websqrl.vercel.app/twitter
- https://news.ycombinator.com/item?id=34680269
+ https://websqrl.vercel.app/twitter 1.
+ https://news.ycombinator.com/item?id=34680269 2.
 
 LET Username := input();
 LET Message := concat(&quot;Hello, &quot;, Username, &quot;!&quot;);

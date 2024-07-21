@@ -2,7 +2,7 @@ Combined Log Format
 ===================
 
 Combined Log Format is a text data format created in 2002.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
 #2906 on PLDB
 22 Years Old
@@ -12,7 +12,7 @@ Common Log Format plus referrer and user agent columns.
 - Tags: textDataFormat
 - Early development of Combined Log Format happened in University of Illinois at Urbana–Champaign
 - Read more about Combined Log Format on the web: 1. 2.
- https://documentation.softwareag.com/webmethods/microservices_container/msc10-11/10-11_MSC_PIE_webhelp/index.html#page/integration-server-integrated-webhelp/to-http_log_4.html
- http://justsolve.archiveteam.org/wiki/Combined_Log_Format
+ https://documentation.softwareag.com/webmethods/microservices_container/msc10-11/10-11_MSC_PIE_webhelp/index.html#page/integration-server-integrated-webhelp/to-http_log_4.html 1.
+ http://justsolve.archiveteam.org/wiki/Combined_Log_Format 2.
 
 0:0:0:0:0:0:0:1 - Administrator [17/Sep/2021:13:51:27 -0400] &quot;GET /invoke/pub.flow/getTransportInfo&quot; 200 2502 https://mycompany.com/test/webapp &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36&quot;

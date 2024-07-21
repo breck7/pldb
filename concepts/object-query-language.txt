@@ -2,20 +2,20 @@ OQL
 ===
 
 OQL is a query language created in 1986.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
 #1527 on PLDB
 38 Years Old
 
 Object Query Language (OQL) is a query language standard for object-oriented databases modeled after SQL.  OQL was developed by the Object Data Management Group (ODMG). Because of its overall complexity nobody has ever fully implemented the complete OQL. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Object_Query_Language
+ https://en.wikipedia.org/wiki/Object_Query_Language Read more on Wikipedia...
 
 - Tags: queryLanguage
 - Early development of OQL happened in http://www.odbms.org/odmg-standard
 - OQL on HOPL
- https://hopl.info/showlanguage.prx?exp=4549
+ https://hopl.info/showlanguage.prx?exp=4549 OQL on HOPL
 - Read more about OQL on the web: 1.
- http://tech.novosoft-us.com/products/oql_book.htm
+ http://tech.novosoft-us.com/products/oql_book.htm 1.
 
 select c.address
 from Persons p, p.children c

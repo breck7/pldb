@@ -2,14 +2,14 @@ Isabelle
 ========
 
 Isabelle is an open source programming language created in 1986.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
 #451 on PLDB
 38 Years Old
 839 Repos
 
 The Isabelle theorem prover is an interactive theorem prover, a Higher Order Logic (HOL) theorem prover. It is an LCF-style theorem prover (written in Standard ML), so it is based on a small logical core to ease logical correctness. Isabelle is generic: it provides a meta-logic (a weak type theory), which is used to encode object logics like first-order logic (FOL), higher-order logic (HOL) or Zermelo–Fraenkel set theory (ZFC). Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
+ https://en.wikipedia.org/wiki/Isabelle_(proof_assistant) Read more on Wikipedia...
 
 - Tags: programming language
 - There are at least 839 Isabelle repos on GitHub
@@ -20,7 +20,7 @@ The Isabelle theorem prover is an interactive theorem prover, a Higher Order Log
 - GitHub supports syntax highlighting for Isabelle
 - See also: (2 related languages) Standard ML, Coq
 - Read more about Isabelle on the web: 1.
- https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+ https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr= 1.
 
 theory HelloWorld
 imports Main

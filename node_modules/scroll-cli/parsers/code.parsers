@@ -16,6 +16,15 @@ codeParser
   }
  cruxFromId
 
+codeWithHeaderParser
+ cruxFromId
+ catchAllCellType stringCell
+ extends codeParser
+ javascript
+  compile() {
+   return `<div class="codeWithHeader"><div class="codeHeader">${this.content}</div>${super.compile()}</div>`
+  }
+
 codeWithLanguageParser
  description Use this to specify the language of the code block, such as csvCode or rustCode.
  extends codeParser

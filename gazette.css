@@ -52,6 +52,21 @@ summary {
   border-radius: 0;
   position: relative;
 }
+.codeWithHeader {
+  break-inside: avoid-column;
+  margin: 10px 0;
+}
+.codeHeader {
+  font-size: 80%;
+  text-align: center;
+  background: rgba(224, 224, 224, 0.4);
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  border-bottom: 0;
+  margin-bottom: -7px;
+  padding: 4px 2px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
 .scrollCodeBlock:hover .scrollCopyButton {
   opacity: .5;
 }

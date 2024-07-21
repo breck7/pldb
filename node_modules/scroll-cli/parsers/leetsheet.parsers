@@ -36,25 +36,40 @@ printLeetSheetParser
     clone.setChildren(words.join("\n").replace(/blankline/, "")) // insert blank line in right spot
     return clone
   }
-  get parserDocs() {
-    return this.parsersToDocument.map(node => {
+  sortDocs(docs) {
+    return docs.map(node => {
       const {definition} = node
       const {id, description, isPopular} = definition
       return {id: definition.cruxIfAny || id, description, isPopular}
      }).sort((a, b) => a.id.localeCompare(b.id))
   }
-  compile() {
+  docToHtml(doc) {
    const css = `#scrollLeetSheet {color: grey;} #scrollLeetSheet a {color: #3498db; }`
-   return `<style>${css}</style><div id="scrollLeetSheet">` + this.parserDocs.map(obj => `<div><a>${obj.isPopular ? "<b>" : ""}${obj.id}</a> ${obj.description}${obj.isPopular ? "</b>" : ""}</div>`).join("\n") + "</div>"
+   return `<style>${css}</style><div id="scrollLeetSheet">` + doc.map(obj => `<div><a>${obj.isPopular ? "<b>" : ""}${obj.id}</a> ${obj.description}${obj.isPopular ? "</b>" : ""}</div>`).join("\n") + "</div>"
+  }
+  compile() {
+    return this.docToHtml(this.sortDocs(this.parsersToDocument))
   }
   compileTxt() {
-   return this.parserDocs.map(obj => `${obj.id} - ${obj.description}`).join("\n")
+   return this.sortDocs(this.parsersToDocument).map(obj => `${obj.id} - ${obj.description}`).join("\n")
   }
 
 printAdvancedLeetSheetParser
  extends printLeetSheetParser
  description Print Parsers leet sheet.
  javascript
+  compile() {
+    return "<p><b>Line Parsers</b> match lines and parse them.</p><br>" + this.docToHtml(this.sortDocs(this.parsersToDocument)) + "<p><b>Cell Parsers</b> parse words in a line.</p><br>" + this.docToHtml(this.sortDocs(this.cellParsersToDocument))
+  }
+  get cellParsersToDocument() {
+    const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
+    const clone = new parsersParser("anyCell\n ").clone()
+    const parserNode = clone.getNode("anyCell")
+    const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
+    words.sort()
+    parserNode.setChildren(words.join("\n"))
+    return parserNode
+  }
   get parsersToDocument() {
     const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
     const clone = new parsersParser("latinParser\n ").clone()

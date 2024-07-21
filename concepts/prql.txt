@@ -2,8 +2,8 @@ PRQL
 ====
 
 PRQL, aka Pipelined Relational Query Language, is a query language created in 2022 by Maximilian Roos.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Maximilian%20Roos
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Maximilian%20Roos Maximilian Roos
 
 #215 on PLDB
 2 Years Old
@@ -19,8 +19,8 @@ PRQL is a modern language for transforming data — a simple, powerful, pipeline
 - PRQL is written in Rust, Markdown, YAML, TOML, HTML, JavaScript, JSON, CSS, CSV, C#, PHP, Elixir, TypeScript, JSX, Bourne shell, Python, Java, Zig, Make, Dockerfile, XML, SQL, Nix, C, C++, Handlebars, SVG
 - prql-lang.org was registered in 2022
 - Read more about PRQL on the web: 1. 2.
- https://news.ycombinator.com/item?id=31897430
- https://news.ycombinator.com/item?id=30060784
+ https://news.ycombinator.com/item?id=31897430 1.
+ https://news.ycombinator.com/item?id=30060784 2.
 
 from employees
 filter country == &quot;USA&quot;                       # Each line transforms the previous result.

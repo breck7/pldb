@@ -2,19 +2,19 @@ Tcl
 ===
 
 Tcl, aka Tool Command Language, is an open source programming language created in 1988 by John Ousterhout.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=John%20Ousterhout
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Ousterhout John Ousterhout
 
 #116 on PLDB
 36 Years Old
 14k Repos
 
 Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Tcl
+ https://en.wikipedia.org/wiki/Tcl Read more on Wikipedia...
 
 - Tags: programming language
 - Interview with the creator of Tcl: 1.
- https://pldb.io/blog/JohnOusterhout.html
+ https://pldb.io/blog/JohnOusterhout.html 1.
 - There are at least 13,969 Tcl repos on GitHub
 - The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using Tcl in 8k repos on GitHub
 - There are 0 members in the Tcl subreddit
@@ -22,7 +22,7 @@ Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, int
 - Explore Tcl snippets on Rosetta Code
 - Tcl appears in the TIOBE Index
 - Tcl Ubuntu package
- https://packages.ubuntu.com/jammy/tcl
+ https://packages.ubuntu.com/jammy/tcl Tcl Ubuntu package
 - CodeMirror package for syntax highlighting Tcl
 - Monaco package for syntax highlighting Tcl
 - Pygments supports syntax highlighting for Tcl
@@ -31,7 +31,7 @@ Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, int
 - There is 1 Jupyter Kernel for Tcl
 - See also: (23 related languages) awk, Lisp, PHP, Tea, PowerShell, C, Python, Expect, Unicode, Regular Expressions, Java, Unix, Linux, Bourne shell, XOTcl, Snit, Verilog, VHDL, UDP, MySQL, PostgreSQL, SQLite, Tk
 - Read more about Tcl on the web: 1.
- https://www.tcl.tk/about/history.html
+ https://www.tcl.tk/about/history.html 1.
 - 2 PLDB concepts link to Tcl: hecl, Tk
 
 puts {Hello, world!}

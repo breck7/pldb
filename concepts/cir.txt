@@ -2,7 +2,7 @@ CIR
 ===
 
 CIR, aka Clang IR, is an intermediate representation language created in 2020.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
 
 #894 on PLDB
 4 Years Old
@@ -16,8 +16,8 @@ Clang IR (CIR) is a new IR for Clang.
 - Early development of CIR happened in Engineering at Meta
 - See also: (1 related languages) LLVM IR
 - Read more about CIR on the web: 1. 2.
- https://news.ycombinator.com/item?id=31904624
- https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
+ https://news.ycombinator.com/item?id=31904624 1.
+ https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319 2.
 - 1 PLDB concepts link to CIR: SIL
 
 // Read from local variable, address in %0.

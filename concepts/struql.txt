@@ -2,10 +2,10 @@ StruQL
 ======
 
 StruQL is a query language created in 1999 by Mary Fernández and Dan Suciu and and Igor Tatarinov.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Mary%20Fern%C3%A1ndez
- https://pldb.io/concepts/../lists/creators.html#q=Dan%20Suciu
- https://pldb.io/concepts/../lists/creators.html#q=and%20Igor%20Tatarinov
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
+ https://pldb.io/concepts/../lists/creators.html#q=Mary%20Fern%C3%A1ndez Mary Fernández
+ https://pldb.io/concepts/../lists/creators.html#q=Dan%20Suciu Dan Suciu
+ https://pldb.io/concepts/../lists/creators.html#q=and%20Igor%20Tatarinov and Igor Tatarinov
 
 #2353 on PLDB
 25 Years Old
@@ -15,7 +15,7 @@ A StruQL query is a function from a set of input graphs to an output graph.
 - Tags: queryLanguage
 - Early development of StruQL happened in AT&T Labs and North Dakota State University
 - Read more about StruQL on the web: 1.
- https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
+ https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf 1.
 
  // Link root page to page of all accounts
  link Root() -&gt; &quot;Accounts&quot; -&gt; AccountsPage()

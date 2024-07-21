@@ -2,10 +2,10 @@ Erlang
 ======
 
 Erlang is an open source programming language created in 1986 by Joe Armstrong and Robert Virding and Mike Williams.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Joe%20Armstrong
- https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding
- https://pldb.io/concepts/../lists/creators.html#q=Mike%20Williams
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
+ https://pldb.io/concepts/../lists/creators.html#q=Joe%20Armstrong Joe Armstrong
+ https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding Robert Virding
+ https://pldb.io/concepts/../lists/creators.html#q=Mike%20Williams Mike Williams
 
 #34 on PLDB
 38 Years Old
@@ -14,7 +14,7 @@ Erlang is an open source programming language created in 1986 by Joe Armstrong a
 git clone https://github.com/erlang/otp
 
 Erlang ( ER-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics: Distributed Fault-tolerant Soft real-time, Highly available, non-stop applications Hot swapping, where code can be changed without stopping a system. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Erlang_(programming_language)
+ https://en.wikipedia.org/wiki/Erlang_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
 - Erlang is developed on GitHub
@@ -28,10 +28,10 @@ Erlang ( ER-lang) is a general-purpose, concurrent, functional programming langu
 - In the 2021 StackOverflow developer survey Erlang programmers reported a median salary of $80,077. 1% of respondents reported using Erlang. 651 programmers reported using Erlang, and 1,379 said they wanted to use it
 - Explore Erlang snippets on Rosetta Code
 - Erlang on HOPL
- https://hopl.info/showlanguage.prx?exp=1728
+ https://hopl.info/showlanguage.prx?exp=1728 Erlang on HOPL
 - Erlang ranks #49 in the TIOBE Index
 - Erlang Ubuntu package
- https://packages.ubuntu.com/jammy/erlang
+ https://packages.ubuntu.com/jammy/erlang Erlang Ubuntu package
 - ANTLR grammar for Erlang
 - Erlang LSP implementation
 - CodeMirror package for syntax highlighting Erlang

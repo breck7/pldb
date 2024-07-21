@@ -2,8 +2,8 @@ YARA
 ====
 
 YARA, aka Yet Another Recursive Acronym, is an open source programming language created in 2008 by Victor M. Alvarez.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Victor%20M.%20Alvarez
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
+ https://pldb.io/concepts/../lists/creators.html#q=Victor%20M.%20Alvarez Victor M. Alvarez
 
 #214 on PLDB
 16 Years Old
@@ -12,7 +12,7 @@ YARA, aka Yet Another Recursive Acronym, is an open source programming language 
 git clone https://github.com/VirusTotal/yara
 
 YARA is the name of a tool primarily used in malware research and detection. It provides a rule-based approach to create descriptions of malware families based on textual or binary patterns. A description is essentially a Yara rule name, where these rules consist of sets of strings and a boolean expression. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/YARA
+ https://en.wikipedia.org/wiki/YARA Read more on Wikipedia...
 
 - Tags: programming language
 - YARA is developed on GitHub and has 5,770 stars

@@ -2,27 +2,27 @@ Yacc
 ====
 
 Yacc, aka Yet Another Compiler-Compiler, is a grammar language created in 1975 by Stephen C. Johnson.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=Stephen%20C.%20Johnson
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1975
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20C.%20Johnson Stephen C. Johnson
 
 #93 on PLDB
 49 Years Old
 11k Repos
 
 Yacc (Yet Another Compiler-Compiler) is a computer program for the Unix operating system. It is a Look Ahead Left-to-Right (LALR) parser generator, generating a parser, the part of a compiler that tries to make syntactic sense of the source code, specifically a LALR parser, based on an analytic grammar written in a notation similar to Backus–Naur Form (BNF). Yacc itself used to be available as the default parser generator on most Unix systems, though it has since been supplanted as the default by more recent, largely compatible, programs.. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Yacc
+ https://en.wikipedia.org/wiki/Yacc Read more on Wikipedia...
 
 - Tags: grammarLanguage, compiler
 - There are at least 11,041 Yacc repos on GitHub
 - Yacc is written in C
 - The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Yacc in 14k repos on GitHub
 - Yacc on HOPL
- https://hopl.info/showlanguage.prx?exp=704
+ https://hopl.info/showlanguage.prx?exp=704 Yacc on HOPL
 - Yacc appears in the TIOBE Index
 - GitHub supports syntax highlighting for Yacc
 - See also: (13 related languages) Unix, B, C, Bison, OCaml, RATFOR, Ada, Pascal, Java, Python, Ruby, Go, Common Lisp
 - Read more about Yacc on the web: 1.
- https://github.com/babyraging/yash
+ https://github.com/babyraging/yash 1.
 - 64 PLDB concepts link to Yacc: Ad-hoc, ana, aplette, Bash, beef-lang, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Click, Cognate, cor, Crema, Cryptol, duro, eC, Eiffel, Fancy, Filebench WML, FLEX, Frege, Futhark, GAP, haste, HHVM, hobbes, invokator, JFlex, Jison, jq, JSON Query Language, kitlang, Koka, latino, Lemon, Linux, mgmt, Mudlle, NCAR Command Language, nesC, never, Open Shading Language, OpenComal, orca, Parsers, Perl, PHP, GNU Poke, PostgreSQL, Potion, PROMETHEUS, PureScript, RamdaScript, Recfiles, RicScript, Ruby, shill, Slony, solid, Streem, t2b, VSXu, YARA
 
 %{

@@ -2,25 +2,25 @@ LLVM IR
 =======
 
 LLVM IR is an open source intermediate representation language created in 2003.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
 #69 on PLDB
 21 Years Old
 1k Repos
 
 The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends. LLVM is written in C++ and is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C and C++, the language-agnostic design of LLVM has since spawned a wide variety of front ends: languages with compilers that use LLVM include ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, OpenGL Shading Language, Halide, Haskell, Java bytecode, Julia, Lua, Objective-C, Pony, Python, R, Ruby, Rust, CUDA, Scala, Swift, and Xojo. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/LLVM
+ https://en.wikipedia.org/wiki/LLVM Read more on Wikipedia...
 
 - Tags: intermediate representation language
 - There are at least 1,351 LLVM IR repos on GitHub
 - Early development of LLVM IR happened in https://github.com/llvm
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using LLVM IR in 1k repos on GitHub
 - LLVM IR Ubuntu package
- https://packages.ubuntu.com/jammy/llvm
+ https://packages.ubuntu.com/jammy/llvm LLVM IR Ubuntu package
 - Pygments supports syntax highlighting for LLVM IR
 - LLVM IR appears in the Quine Relay project
 - Events page for LLVM IR
- https://discourse.llvm.org/t/llvm-community-events-calendar/63237
+ https://discourse.llvm.org/t/llvm-community-events-calendar/63237 Events page for LLVM IR
 - See also: (41 related languages) C, ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, GLSL, Haskell, Java Bytecode, Julia, Lua, Objective-C, Python, R, Ruby, Rust, CUDA, Scala, Swift, Xojo, iOS, Assembly language, Java, OpenGL, CIL, Standard ML, ARM, Qualcomm Hexagon, MIPS architecture, PTX, PowerPC, SPARC, X86, Extensible Linking Format, C--, Pure, OpenCL, ISBN
 - 23 PLDB concepts link to LLVM IR: Chapel, CIR, cloc, Emscripten, firrtl, FLEX, Halide, HHVM, invokator, Julia, Kotlin, neeilang, oopsilon, Pony, rhine, Rust MIR, Simit, sixten, souper, SIL, Swift, TensorFlow, Triton
 

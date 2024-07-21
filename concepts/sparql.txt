@@ -2,14 +2,14 @@ SPARQL
 ======
 
 SPARQL, aka SPARQL Protocol and RDF Query Language, is a query language created in 2008.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
 #227 on PLDB
 16 Years Old
 0 Repos
 
 SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web. On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation, and SPARQL 1.1 in March, 2013. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/SPARQL
+ https://en.wikipedia.org/wiki/SPARQL Read more on Wikipedia...
 
 - Tags: queryLanguage
 - There are at least 0 SPARQL repos on GitHub
@@ -23,7 +23,7 @@ SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Qu
 - There is 1 Jupyter Kernel for SPARQL
 - See also: (5 related languages) RDF, SQL, XQuery, Turtle, Geography Markup Language
 - Read more about SPARQL on the web: 1.
- https://www.w3.org/TR/rdf-sparql-query/
+ https://www.w3.org/TR/rdf-sparql-query/ 1.
 
 SELECT ?h WHERE {
   VALUES ?h { &quot;Hello World&quot; }

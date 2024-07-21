@@ -291,6 +291,13 @@ underlineParser
  javascript
   tag = "u"
 
+afterTextCenterParser
+ description Center paragraph.
+ crux center
+ extends abstractMarkupParser
+ javascript
+  tag = "center"
+
 aftertextCodeParser
  description Wrap matching text in code span.
  crux code

@@ -2,20 +2,20 @@ GeoJSON
 =======
 
 GeoJSON is a json format created in 2008.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
 #970 on PLDB
 16 Years Old
 
 GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on JSON, the JavaScript Object Notation. The features include points (therefore addresses and locations), line strings (therefore streets, highways and boundaries), polygons (countries, provinces, tracts of land), and multi-part collections of these types. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/GeoJSON
+ https://en.wikipedia.org/wiki/GeoJSON Read more on Wikipedia...
 
 - Tags: jsonFormat
 - Early development of GeoJSON happened in Planet Labs and Mapbox and Hobu Inc and Cadcorp
 - geojson.org was registered in 2007
 - See also: (2 related languages) JSON, Julia
 - Read more about GeoJSON on the web: 1.
- https://tools.ietf.org/html/rfc7946
+ https://tools.ietf.org/html/rfc7946 1.
 
 {
   &quot;type&quot;:&quot;Topology&quot;,

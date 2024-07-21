@@ -1,34 +1,34 @@
 Does every programming language have line comments?
 ===================================================
 by Breck Yunits
- https://github.com/breck7
+ https://github.com/breck7 Breck Yunits
 
 [Image Omitted]
 
 July 13, 2022
 
 About 85% of the languages in PLDB have line comments.
- https://pldb.io/blog/../features/hasLineComments.html
+ https://pldb.io/blog/../features/hasLineComments.html line comments
 
 A language supports line comments if it defines a special token (nowadays usually `//` or `#`) where everything after that token until the end of the line becomes a comment. Example:
 
 print "Hello world" # this is a comment
 
 These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
- https://pldb.io/blog/../features/hasMultilineComments.html
+ https://pldb.io/blog/../features/hasMultilineComments.html multiline comments
 
 The majority of languages use // or # to start a line comment
 =============================================================
 
 *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
- https://pldb.io/blog/../concepts/c.html
- https://pldb.io/blog/../concepts/b.html
- https://pldb.io/blog/../concepts/bcpl.html
+ https://pldb.io/blog/../concepts/c.html C
+ https://pldb.io/blog/../concepts/b.html B
+ https://pldb.io/blog/../concepts/bcpl.html BCPL
 
 *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
- https://pldb.io/blog/../concepts/python.html
- https://pldb.io/blog/../concepts/perl.html
- https://pldb.io/blog/../concepts/ruby.html
+ https://pldb.io/blog/../concepts/python.html Python
+ https://pldb.io/blog/../concepts/perl.html Perl
+ https://pldb.io/blog/../concepts/ruby.html Ruby
 
 The SQL languages all generally use `--`.
 
@@ -38,26 +38,26 @@ The era of experimentation with line comment tokens appears to be over: the last
 =========================================
 
 About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
- https://pldb.io/blog/../concepts/html.html
- https://pldb.io/blog/../concepts/css.html
- https://pldb.io/blog/../concepts/svg.html
+ https://pldb.io/blog/../concepts/html.html HTML
+ https://pldb.io/blog/../concepts/css.html CSS
+ https://pldb.io/blog/../concepts/svg.html SVG
 
 JSON famously does not support comments. But a number of its derivatives do, such as JSON with Comments.
- https://pldb.io/blog/../concepts/json.html
- https://pldb.io/blog/../concepts/json-with-comments.html
+ https://pldb.io/blog/../concepts/json.html JSON
+ https://pldb.io/blog/../concepts/json-with-comments.html JSON with Comments
 
 A few general purpose languages don't support line comments including Mathematica and OCaml.
- https://pldb.io/blog/../concepts/mathematica.html
- https://pldb.io/blog/../concepts/ocaml.html
+ https://pldb.io/blog/../concepts/mathematica.html Mathematica
+ https://pldb.io/blog/../concepts/ocaml.html OCaml
 
 A few exceptions
 ================
 
 Like everything, there are exceptions to the common cases. A few languages, such as SPSS, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
- https://pldb.io/blog/../concepts/spss.html
+ https://pldb.io/blog/../concepts/spss.html SPSS
 
 A few languages also support multiple line comment tokens. The Ini config format supports both `;` and `#`.
- https://pldb.io/blog/../concepts/ini.html
+ https://pldb.io/blog/../concepts/ini.html Ini config format
 
 html.h1 Line comments
 web.get https://pldb.io/languages.csv

@@ -2,8 +2,8 @@ Dafny
 =====
 
 Dafny is an open source programming language created in 2009 by K. Rustan M. Leino.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
- https://pldb.io/concepts/../lists/creators.html#q=K.%20Rustan%20M.%20Leino
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
+ https://pldb.io/concepts/../lists/creators.html#q=K.%20Rustan%20M.%20Leino K. Rustan M. Leino
 
 #228 on PLDB
 15 Years Old
@@ -12,7 +12,7 @@ Dafny is an open source programming language created in 2009 by K. Rustan M. Lei
 git clone https://github.com/Microsoft/dafny
 
 Dafny is an imperative compiled language that targets C# and supports formal specification through preconditions, postconditions, loop invariants and loop variants.  The language combines ideas primarily from the Functional and Imperative paradigms, and includes limited support for Object-Oriented Programming.  Features include generic classes, dynamic allocation, inductive datatypes and a variation of separation logic known as implicit dynamic frames for reasoning about side effects. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Dafny_(programming_language)
+ https://en.wikipedia.org/wiki/Dafny_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
 - Dafny is developed on GitHub and has 1,714 stars
@@ -22,7 +22,7 @@ Dafny is an imperative compiled language that targets C# and supports formal spe
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Dafny in 1 repos on GitHub
 - Explore Dafny snippets on Rosetta Code
 - Dafny Ubuntu package
- https://packages.ubuntu.com/jammy/dafny
+ https://packages.ubuntu.com/jammy/dafny Dafny Ubuntu package
 - Dafny appears in the Quine Relay project
 - See also: (5 related languages) C#, Spec Sharp, Apache Spark, Idris, Agda
 

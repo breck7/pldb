@@ -2,7 +2,7 @@ EEX
 ===
 
 EEX is a template language created in 2012.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
 #965 on PLDB
 12 Years Old
@@ -15,7 +15,7 @@ EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a stri
 - Early development of EEX happened in Elixir Team
 - GitHub supports syntax highlighting for EEX
 - Read more about EEX on the web: 1.
- https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+ https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex 1.
 - 2 PLDB concepts link to EEX: Ace Editor, Elixir
 
 &lt;%= if true do %&gt;

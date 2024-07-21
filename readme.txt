@@ -5,8 +5,8 @@ A Programming Language Database
 ===============================
 
 View this readme as HTML
- https://pldb.io/readme.html
-=====================================================
+ https://pldb.io/readme.html View this readme as HTML
+==============================================================================
 
 PLDB is a public domain ScrollSet and website containing over 135,000 facts about over 4,000 programming languages.
 
@@ -27,7 +27,7 @@ Local Method:
 - Clone the repo locally.
 - Create a new Scroll file `concepts/[newId].scroll`.
 - Use the Designer if you need autocomplete help (recommended):
- https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io%2Fconcepts%2Ftxt.scroll
+ https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io%2Fconcepts%2Ftxt.scroll Designer
 - Send a Pull Request
 
 Web Method:
@@ -35,7 +35,7 @@ Web Method:
 - Fork this repo
 - Visit https://github.com/[yourGithubUserName]/pldb/new/main/concepts
 - Use the Designer if you need autocomplete help (recommended):
- https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io
+ https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io Use the Designer if you need autocomplete help (recommended):
 - Send a Pull Request
 
 To update a language
