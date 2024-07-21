@@ -165,12 +165,12 @@ import std::io;
 (load-mod my-module)
 (load &quot;examples/test.slo&quot;)
 
+import settings.scroll
+
 import runtime;
 
 (import std.List)
 (import std.Math :max)
-
-import settings.scroll
 
 // file scope import
 import $sv::SvPackage::*;
@@ -201,7 +201,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Flow9, ArkScript, Scroll, Veryl, Dale, X10, Xtext, Cyber, Jule, bog, SAKO, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Scroll, Flow9, ArkScript, Veryl, Dale, X10, Xtext, Cyber, Jule, bog, SAKO, Speedie, Aardvark
 
 ***
 

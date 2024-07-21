@@ -413,7 +413,7 @@
   },
   {
     "Name": "roadmap",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "What is the URL to a public roadmap page for this language, if one exists?",
     "Example": "https://dynamobim.org/roadmap/",
@@ -1676,6 +1676,16 @@
     "IsComputed": false
   },
   {
+    "Name": "tiktoks",
+    "Values": 3,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) TikTok(s) for this language?",
+    "Example": "https://www.tiktok.com/@scrollhits",
+    "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
     "Name": "discord",
     "Values": 10,
     "Coverage": "0%",
@@ -1691,6 +1701,16 @@
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discourse for this language?",
     "Example": "https://coq.discourse.group/",
+    "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "youtubes",
+    "Values": 3,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?",
+    "Example": "https://www.youtube.com/@breckyunits",
     "Type": "string",
     "SortIndex": 3,
     "IsComputed": false
@@ -1811,7 +1831,7 @@
   },
   {
     "Name": "leetSheets",
-    "Values": 77,
+    "Values": 78,
     "Coverage": "1%",
     "Question": "What is a URL(s) to a leet sheet(s) for this language?",
     "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",
