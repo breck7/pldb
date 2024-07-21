@@ -1,0 +1,34 @@
+Glisp
+=====
+
+Glisp is a visual programming language created in 2020 by Baku Hashiomoto.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Baku%20Hashiomoto Baku Hashiomoto
+
+#2058 on PLDB
+4 Years Old
+
+git clone https://github.com/baku89/glisp
+
+[Image Omitted]
+ A screenshot of the visual programming language Glisp.
+
+Glisp is a Lisp-based design tool that combines generative approaches with traditional design methods, empowering artists to discover new forms of expression.
+
+- Tags: visual programming language
+- Glisp is developed on GitHub
+- Glisp is written in TypeScript, Markdown, JavaScript, Stylus, HTML, JSON, YAML
+
+(style
+ (fill   &quot;blue&quot;)
+ (circle [6 -152.1659] 140.0047))
+
+Language features
+======================================================
+
+row
+ Feature Lispy
+ FeatureLink ../features/isLisp.html
+ Supported ✓
+ Example
+ Token
