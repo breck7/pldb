@@ -827,7 +827,7 @@ image ${image}
   get quickTextLinks() {
     const links = {
       Homepage: this.website,
-      "Leet Sheet": this.getPrimary("leetSheet"),
+      "Leet Sheet": this.getPrimary("leetSheets"),
       REPL: this.repl,
       "Try It Online": this.get("tryItOnline"),
       Download: this.get("download"),
@@ -852,7 +852,7 @@ image ${image}
   get quickLinks() {
     const links = {
       home: this.website,
-      leetSheet: this.getPrimary("leetSheet"),
+      leetSheet: this.getPrimary("leetSheets"),
       terminal: this.repl,
       git: this.parsed.mainRepo,
       newspaper: this.get("blog"),
