@@ -16,14 +16,6 @@ observableParser
   compile() {
    return `<div class="scrollQuote">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
-codeWithHeaderParser
- cruxFromId
- catchAllCellType stringCell
- extends codeParser
- javascript
-  compile() {
-   return `<div class="codeWithHeader"><div class="codeHeader">${this.content}</div>${super.compile()}</div>`
-  }
 bashParser
  cruxFromId
  description Run a bash oneliner via nodejs and dumps stdout to pre tag.
