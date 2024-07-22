@@ -9,14 +9,15 @@ website https://www.nomnoml.com/
 webRepl https://www.nomnoml.com/
 description The sassy UML diagram renderer.
 fileExtensions nomnoml
-
 writtenIn typescript javascript json css html markdown svg
+
 repoStats
  firstCommit 2014
  newestCommit 2024
  commits 388
  committers 19
  files 80
+country Sweden
 
 example
  [<frame>Decorator pattern|
@@ -28,13 +29,13 @@ example
    [Component] <:- [ConcreteComponent]
  ]
 
+githubRepo https://github.com/skanaar/nomnoml
+ firstCommit 2014
+ stars 2700
+
 hasDirectives true
  #title: filename
  #zoom: 1
  #acyclicer: greedy
 hasImports true
  #import: filename
-
-githubRepo https://github.com/skanaar/nomnoml
- firstCommit 2014
- stars 2700

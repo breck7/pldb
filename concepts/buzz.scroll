@@ -9,11 +9,11 @@ latestVersion 0.1.0-rc.1
 releaseNotes https://github.com/buzz-language/buzz/releases
 screenshot buzz.png
 description A small/lightweight typed scripting language (in development)
+fileExtensions buzz
+writtenIn zig lua markdown json yaml dart typescript html
 
 isOpenSource true
-writtenIn zig lua markdown json yaml dart typescript html
 influencedBy lua
-fileExtensions buzz
 docs https://github.com/buzz-language/buzz/blob/main/README.md
 repoStats
  firstCommit 2021

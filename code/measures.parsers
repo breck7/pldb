@@ -2330,7 +2330,7 @@ supersetOfParser
 writtenInParser
  description What language(s) is the main implementation written in?
  extends abstractFilenameRelationshipParser
- float sortIndex 2.1
+ float sortIndex 1.999
 extensionOfParser
  description What language is this language an extension of?
  extends abstractFilenameRelationshipParser

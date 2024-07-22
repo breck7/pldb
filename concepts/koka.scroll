@@ -9,9 +9,9 @@ website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2
 latestVersion v3.1.1
 webRepl https://rise4fun.com/koka/
 description A strongly typed functional-style language with effect types and handlers.
+writtenIn haskell c xml javascript markdown json bourne-shell cpp csharp ocaml cmake dockerfile swift svg java typescript lean vim-script css yaml lex yacc logos tex python lisp html sed less cson
 
 isOpenSource true
-writtenIn haskell c xml javascript markdown json bourne-shell cpp csharp ocaml cmake dockerfile swift svg java typescript lean vim-script css yaml lex yacc logos tex python lisp html sed less cson
 compilesTo c
 tryItOnline koka
 fileType text

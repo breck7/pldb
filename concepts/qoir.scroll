@@ -7,10 +7,10 @@ creators Nigel Tao
 tags binaryDataFormat
 website https://nigeltao.github.io
 description A Fast, Simple, Lossless Image File Format based on QOI ( http://qoiformat.org )
+fileExtensions qoir
+writtenIn c cpp bourne-shell go markdown yaml
 
 isOpenSource true
-writtenIn c cpp bourne-shell go markdown yaml
-fileExtensions qoir
 docs https://github.com/nigeltao/qoir#readme
 repoStats
  firstCommit 2022

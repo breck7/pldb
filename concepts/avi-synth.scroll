@@ -8,10 +8,10 @@ tags editor
 website http://avisynth.nl
 latestVersion 3.7.2
 description Avisynth is a scripting language and a collection of filters for simple (and not so simple!) non-linear video editing tasks. It frameserves video to applications
+fileExtensions .avs
+writtenIn restructuredtext cpp html cmake svg make yaml c markdown python powershell
 
 isOpenSource true
-writtenIn restructuredtext cpp html cmake svg make yaml c markdown python powershell
-fileExtensions .avs
 docs http://avisynth.nl/index.php/Main_Page
 packageRepository https://www.npmjs.com/package/avisynth
 repoStats

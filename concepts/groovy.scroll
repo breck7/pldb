@@ -9,11 +9,11 @@ website http://groovy-lang.org/
 blog https://blogs.apache.org/groovy/
 releaseNotes http://groovy-lang.org/releases.html
 download https://groovy.apache.org/download.html
+fileExtensions groovy
 
 isOpenSource true
 runsOnVm jvm
 tryItOnline groovy
-fileExtensions groovy
 clocExtensions gant groovy grt gtpl gvy jenkinsfile
 fileType text
 docs https://groovy-lang.org/documentation.html https://devdocs.io/groovy~3.0/

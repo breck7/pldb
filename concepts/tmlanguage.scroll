@@ -5,9 +5,9 @@ name TextMate Language
 appeared 2004
 tags grammarLanguage
 website https://macromates.com/manual/en/language_grammars
+fileExtensions tmLanguage
 
 related sublime-syntax
-fileExtensions tmLanguage
 
 example
  scopeName = 'source.untitled';
