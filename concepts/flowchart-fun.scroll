@@ -1,12 +1,13 @@
 import ../code/conceptPage.scroll
 
 id flowchart-fun
-name flowchart.fun
+name FlowchartFun
 appeared 2021
 creators Rob Gordon
-tags textMarkup
+tags diagramLang
 website https://flowchart.fun/
 latestVersion 1.49.3
+webRepl https://flowchart.fun/
 description flowchart.fun is a lightweight application to generate flowcharts and diagrams from text.
 
 writtenIn typescript css svg json javascript yaml markdown html xml csv bourne-shell
@@ -20,6 +21,14 @@ repoStats
 country Cananda
 originCommunity https://github.com/tone-row
 
+discord https://discord.com/invite/wPASTQHQBf
+twitter https://x.com/tone_row_
+example
+ Node A
+   goes to: Node B
+   and: Node C
+     goes back to: (Node A)
+
 githubRepo https://github.com/tone-row/flowchart-fun
  firstCommit 2021
  stars 2536
@@ -29,3 +38,7 @@ githubRepo https://github.com/tone-row/flowchart-fun
  updated 2022
  description Easily generate flowcharts and diagrams from text ⿻
  issues 6
+
+hasSemanticIndentation true
+ Node A
+  goes to: Node B
