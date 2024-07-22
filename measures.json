@@ -169,7 +169,7 @@
     "Values": 4968,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1273",
+    "Example": "1272",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4968,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21352",
+    "Example": "21353",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -1387,17 +1387,17 @@
     "IsComputed": false
   },
   {
-    "Name": "documentation",
+    "Name": "docs",
     "Values": 372,
     "Coverage": "7%",
-    "Question": "What is a URL to the official documentation for this language?",
+    "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://aardvark-docs.programit.repl.co/",
     "Type": "string",
     "SortIndex": 2.5,
     "IsComputed": false
   },
   {
-    "Name": "devDocumentation",
+    "Name": "devDocs",
     "Values": 2,
     "Coverage": "0%",
     "Question": "What is a URL to the official documentation for developers who want to contribute to the language project?",

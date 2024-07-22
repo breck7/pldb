@@ -4,48 +4,48 @@ List of all keywords used in all programming languages
 Here is the list of 5,751 keywords for the 117 languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.
 
 keyword|_$^count|_$^frequency|_$^langs
-if|_$^78|_$^67%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Haskell Kotlin CoffeeScript Objective-C Julia Erlang Dart Ada Pascal Solidity Crystal Reason Scheme Groovy Pug OCaml F# Chapel HCL VHDL F* ABAP Verilog Koka Opa Bicep SystemVerilog Slope AutoIt Twig Clean Felix Dylan Flow9 Maxima ATS X10 Nix Angelscript Streem Ligo Apex Jule HOPE Sophia Sibilant Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Q# Aith Ham RigC nimrod Violent ES D++
-else|_$^74|_$^63%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Haskell Kotlin Elixir CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Solidity Crystal Reason Scheme Groovy Pug OCaml F# Chapel HCL VHDL F* ABAP Verilog Koka Opa SystemVerilog AutoIt Felix Dylan Flow9 Maxima ATS X10 Nix Angelscript Streem Ligo Apex Jule HOPE Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Q# Aith Ham RigC nimrod Violent ES D++
-for|_$^58|_$^50%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Kotlin CoffeeScript Objective-C Julia Dart Ada Solidity Solidity Crystal Reason Groovy Pug OCaml F# Chapel HCL VHDL ABAP Verilog Bicep SystemVerilog Slope AutoIt Twig Felix Dylan Maxima X10 Angelscript Ligo Apex Jule Mond TIScript JS++ Speedie Q# RigC nimrod Violent ES D++
-in|_$^51|_$^44%|_$^JavaScript Python Ruby C# R Bash PowerShell Rust Swift Lua Haskell Kotlin Elixir CoffeeScript Objective-C Dart Ada Crystal Reason Groovy Pug OCaml F# Chapel HCL VHDL F* ABAP Bicep SPARQL Clean Dylan ATS X10 Nix Angelscript Ligo Apex Jule Eclipse Command Language HOPE Mond GorillaScript TIScript JS++ Speedie PowerQuery M Q# Aith nimrod Violent ES
-do|_$^50|_$^43%|_$^JavaScript C Java C++ Perl Ruby PHP C# Bash PowerShell Rust Swift Scala Lua Haskell Kotlin Elixir CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Crystal Reason Scheme Groovy OCaml F# Chapel ABAP Opa SystemVerilog AutoIt Twig Felix Maxima ATS X10 Angelscript Apex Sibilant Mond orange JS++ RigC nimrod Violent ES D++
-while|_$^49|_$^42%|_$^JavaScript C Python Java C++ Perl Ruby PHP C# R Bash PowerShell Rust Swift Scala Lua Kotlin CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Crystal Reason Groovy OCaml F# Chapel VHDL ABAP Verilog SystemVerilog AutoIt Dylan Maxima X10 Angelscript Apex Mond orange JS++ Speedie Q# RigC nimrod Violent ES D++
+if|_$^78|_$^67%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Haskell Kotlin CoffeeScript Objective-C Julia Erlang Dart Ada Pascal Solidity Crystal Reason Scheme Groovy Pug F# OCaml Chapel HCL VHDL F* ABAP Verilog Koka Opa Bicep SystemVerilog Slope AutoIt Twig Clean Felix Dylan Flow9 Maxima ATS X10 Nix Angelscript Streem Ligo Apex Jule HOPE Sophia Sibilant Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Q# Aith Ham RigC nimrod Violent ES D++
+else|_$^74|_$^63%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Haskell Kotlin Elixir CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Solidity Crystal Reason Scheme Groovy Pug F# OCaml Chapel HCL VHDL F* ABAP Verilog Koka Opa SystemVerilog AutoIt Felix Dylan Flow9 Maxima ATS X10 Nix Angelscript Streem Ligo Apex Jule HOPE Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Q# Aith Ham RigC nimrod Violent ES D++
+for|_$^58|_$^50%|_$^JavaScript C Python Java C++ Perl Ruby PHP Go C# R Bash PowerShell Rust Swift Scala Lua Kotlin CoffeeScript Objective-C Julia Dart Ada Solidity Solidity Crystal Reason Groovy Pug F# OCaml Chapel HCL VHDL ABAP Verilog Bicep SystemVerilog Slope AutoIt Twig Felix Dylan Maxima X10 Angelscript Ligo Apex Jule Mond TIScript JS++ Speedie Q# RigC nimrod Violent ES D++
+in|_$^51|_$^44%|_$^JavaScript Python Ruby C# R Bash PowerShell Rust Swift Lua Haskell Kotlin Elixir CoffeeScript Objective-C Dart Ada Crystal Reason Groovy Pug F# OCaml Chapel HCL VHDL F* ABAP Bicep SPARQL Clean Dylan ATS X10 Nix Angelscript Ligo Apex Jule Eclipse Command Language HOPE Mond GorillaScript TIScript JS++ Speedie PowerQuery M Q# Aith nimrod Violent ES
+do|_$^50|_$^43%|_$^JavaScript C Java C++ Perl Ruby PHP C# Bash PowerShell Rust Swift Scala Lua Haskell Kotlin Elixir CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Crystal Reason Scheme Groovy F# OCaml Chapel ABAP Opa SystemVerilog AutoIt Twig Felix Maxima ATS X10 Angelscript Apex Sibilant Mond orange JS++ RigC nimrod Violent ES D++
+while|_$^49|_$^42%|_$^JavaScript C Python Java C++ Perl Ruby PHP C# R Bash PowerShell Rust Swift Scala Lua Kotlin CoffeeScript Objective-C Julia Dart Ada Pascal Solidity Crystal Reason Groovy F# OCaml Chapel VHDL ABAP Verilog SystemVerilog AutoIt Dylan Maxima X10 Angelscript Apex Mond orange JS++ Speedie Q# RigC nimrod Violent ES D++
 return|_$^48|_$^41%|_$^JavaScript C Python Java C++ Ruby PHP Go C# PowerShell Rust Swift Scala Lua Kotlin CoffeeScript Objective-C Julia Dart Ada Solidity Crystal Groovy F# Chapel VHDL ABAP Koka SystemVerilog AutoIt Felix X10 Angelscript Streem Apex Eclipse Command Language Mond GorillaScript TIScript orange JS++ Speedie Crema Q# Ham nimrod Violent ES D++
-true|_$^45|_$^38%|_$^JavaScript C++ Ruby C# Rust Swift Scala Lua Kotlin Elixir CoffeeScript Julia Dart Pascal Solidity Crystal Reason GraphQL Groovy OCaml F# HCL Protocol Buffers F* SPARQL Twig Angelscript Streem Ligo Apex Jule Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Aith Ham RigC Violent ES Freefem
-false|_$^45|_$^38%|_$^JavaScript C++ Ruby C# Rust Swift Scala Lua Kotlin Elixir CoffeeScript Julia Dart Pascal Solidity Crystal Reason GraphQL Groovy OCaml F# HCL Protocol Buffers F* SPARQL Twig Angelscript Streem Ligo Apex Jule Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Aith Ham RigC Violent ES Freefem
+true|_$^45|_$^38%|_$^JavaScript C++ Ruby C# Rust Swift Scala Lua Kotlin Elixir CoffeeScript Julia Dart Pascal Solidity Crystal Reason GraphQL Groovy F# OCaml HCL Protocol Buffers F* SPARQL Twig Angelscript Streem Ligo Apex Jule Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Aith Ham RigC Violent ES Freefem
+false|_$^45|_$^38%|_$^JavaScript C++ Ruby C# Rust Swift Scala Lua Kotlin Elixir CoffeeScript Julia Dart Pascal Solidity Crystal Reason GraphQL Groovy F# OCaml HCL Protocol Buffers F* SPARQL Twig Angelscript Streem Ligo Apex Jule Sophia Mond GorillaScript TIScript orange JS++ Speedie Crema PowerQuery M Aith Ham RigC Violent ES Freefem
 break|_$^39|_$^33%|_$^JavaScript C Python Java C++ Ruby PHP Go C# R PowerShell Rust Swift Lua Kotlin CoffeeScript Objective-C Julia Dart Pascal Solidity Crystal Groovy F# Chapel SystemVerilog X10 Angelscript Apex Jule Mond orange JS++ Speedie Crema Aith RigC nimrod Violent ES
 case|_$^38|_$^32%|_$^JavaScript C Java C++ Ruby PHP Go C# Swift Scala Haskell Objective-C Erlang Dart Ada Crystal Scheme Groovy Pug VHDL ABAP Verilog Opa SystemVerilog Slope AutoIt Clean Felix Dylan X10 Angelscript Streem Ligo Apex Eclipse Command Language Mond nimrod Violent ES
 continue|_$^37|_$^32%|_$^JavaScript C Python Java C++ Perl PHP Go C# PowerShell Rust Swift Kotlin CoffeeScript Objective-C Julia Dart Pascal Solidity Groovy F# Chapel ABAP SystemVerilog X10 Angelscript Apex Jule Mond orange JS++ Speedie Aith RigC nimrod Violent ES D++
-class|_$^34|_$^29%|_$^JavaScript Python Java C++ Ruby PHP C# PowerShell Swift Scala Haskell Kotlin CoffeeScript Dart Crystal Reason Groovy OCaml F# Chapel ABAP SystemVerilog Clean X10 Angelscript Streem Apex TIScript orange JS++ Speedie Ham RigC Violent ES
+class|_$^34|_$^29%|_$^JavaScript Python Java C++ Ruby PHP C# PowerShell Swift Scala Haskell Kotlin CoffeeScript Dart Crystal Reason Groovy F# OCaml Chapel ABAP SystemVerilog Clean X10 Angelscript Streem Apex TIScript orange JS++ Speedie Ham RigC Violent ES
 import|_$^32|_$^27%|_$^JavaScript Python Java C++ Go Swift Scala Haskell Kotlin Julia Dart Solidity Groovy Protocol Buffers ABAP Koka Opa SystemVerilog Twig Flow9 ATS X10 Angelscript Streem Apex Eclipse Command Language orange JS++ Speedie Ham RigC Violent ES
-new|_$^31|_$^26%|_$^JavaScript Java C++ PHP C# Scala CoffeeScript Dart Ada Solidity Reason Groovy OCaml F# Chapel VHDL F* ABAP SystemVerilog Felix X10 Streem Apex heap.coffee GorillaScript TIScript orange JS++ Q# Ham Violent ES
+new|_$^31|_$^26%|_$^JavaScript Java C++ PHP C# Scala CoffeeScript Dart Ada Solidity Reason Groovy F# OCaml Chapel VHDL F* ABAP SystemVerilog Felix X10 Streem Apex heap.coffee GorillaScript TIScript orange JS++ Q# Ham Violent ES
 enum|_$^31|_$^26%|_$^JavaScript C Java C++ C# Rust Swift Kotlin Objective-C Dart Solidity Crystal GraphQL Groovy Chapel Protocol Buffers ABAP Koka SystemVerilog Felix Angelscript Apex Jule Eclipse Command Language Functional PHP Preprocessor orange JS++ RigC nimrod Violent ES BARE
-type|_$^30|_$^26%|_$^Go Rust Scala Haskell Julia Ada Crystal Reason GraphQL OCaml F# Chapel VHDL F* ABAP Koka Opa SystemVerilog Felix X10 Ligo Apex Jule Eclipse Command Language Sophia PowerQuery M Aith nimrod Violent ES BARE
-as|_$^30|_$^26%|_$^Python PHP C# Rust Swift Haskell Kotlin Dart Crystal Reason Groovy OCaml F# ABAP Koka Opa SPARQL Felix ATS X10 Egison Apex Eclipse Command Language Crema PowerQuery M Q# Aith RigC nimrod Violent ES
+type|_$^30|_$^26%|_$^Go Rust Scala Haskell Julia Ada Crystal Reason GraphQL F# OCaml Chapel VHDL F* ABAP Koka Opa SystemVerilog Felix X10 Ligo Apex Jule Eclipse Command Language Sophia PowerQuery M Aith nimrod Violent ES BARE
+as|_$^30|_$^26%|_$^Python PHP C# Rust Swift Haskell Kotlin Dart Crystal Reason Groovy F# OCaml ABAP Koka Opa SPARQL Felix ATS X10 Egison Apex Eclipse Command Language Crema PowerQuery M Q# Aith RigC nimrod Violent ES
 var|_$^30|_$^26%|_$^JavaScript PHP Go C# PowerShell Swift Scala Kotlin Dart Solidity Pug Chapel HCL ABAP Koka Bicep SystemVerilog ATS X10 Sophia Sibilant Mond GorillaScript TIScript orange JS++ Ham RigC Violent ES D++
-try|_$^30|_$^26%|_$^JavaScript Python Java C++ PHP C# PowerShell Swift Scala Kotlin CoffeeScript Julia Erlang Dart Reason Groovy OCaml F# F* ABAP Koka ATS X10 Apex TIScript orange JS++ PowerQuery M nimrod Violent ES
-then|_$^29|_$^25%|_$^Ruby Bash Lua Haskell CoffeeScript Ada Pascal Crystal Reason OCaml F# Chapel VHDL F* ABAP Koka Opa AutoIt Felix Dylan Maxima ATS Nix Ligo Apex HOPE GorillaScript PowerQuery M D++
-function|_$^29|_$^25%|_$^JavaScript PHP R Bash PowerShell Lua Julia Ada Solidity Reason OCaml F# VHDL F* ABAP Verilog Koka Opa SystemVerilog IGOR Pro Eclipse Command Language Sophia TIScript JS++ Speedie Q# Aith Violent ES D++
+try|_$^30|_$^26%|_$^JavaScript Python Java C++ PHP C# PowerShell Swift Scala Kotlin CoffeeScript Julia Erlang Dart Reason Groovy F# OCaml F* ABAP Koka ATS X10 Apex TIScript orange JS++ PowerQuery M nimrod Violent ES
+then|_$^29|_$^25%|_$^Ruby Bash Lua Haskell CoffeeScript Ada Pascal Crystal Reason F# OCaml Chapel VHDL F* ABAP Koka Opa AutoIt Felix Dylan Maxima ATS Nix Ligo Apex HOPE GorillaScript PowerQuery M D++
+function|_$^29|_$^25%|_$^JavaScript PHP R Bash PowerShell Lua Julia Ada Solidity Reason F# OCaml VHDL F* ABAP Verilog Koka Opa SystemVerilog IGOR Pro Eclipse Command Language Sophia TIScript JS++ Speedie Q# Aith Violent ES D++
 or|_$^28|_$^24%|_$^Python C++ Perl Ruby PHP Lua Elixir CoffeeScript Erlang Ada Pascal F# VHDL ABAP Opa MIPS architecture SystemVerilog Slope AutoIt Angelscript Apex Eclipse Command Language HOPE GorillaScript Speedie Q# Ham nimrod
 and|_$^28|_$^24%|_$^Python C++ Perl Ruby PHP Lua Elixir CoffeeScript Erlang Ada Pascal F# VHDL ABAP Opa MIPS architecture SystemVerilog Slope AutoIt ATS Angelscript Apex Eclipse Command Language HOPE GorillaScript Speedie Q# nimrod
-let|_$^27|_$^23%|_$^JavaScript C# Rust Swift Haskell Julia Erlang Solidity Reason Scheme OCaml F# Chapel ABAP SystemVerilog Clean Dylan ATS Nix Ligo Jule Sophia Jisp PowerQuery M Q# Aith nimrod
+let|_$^27|_$^23%|_$^JavaScript C# Rust Swift Haskell Julia Erlang Solidity Reason Scheme F# OCaml Chapel ABAP SystemVerilog Clean Dylan ATS Nix Ligo Jule Sophia Jisp PowerQuery M Q# Aith nimrod
 const|_$^27|_$^23%|_$^JavaScript C Java C++ PHP Go C# Rust Kotlin Objective-C Julia Dart Groovy F# Chapel SystemVerilog Angelscript Apex Jule Eclipse Command Language Mond GorillaScript TIScript orange RigC nimrod Violent ES
 default|_$^26|_$^22%|_$^JavaScript C Java C++ PHP Go C# Swift Haskell Objective-C Dart Groovy Pug F# F* ABAP Verilog SystemVerilog Flow9 X10 Angelscript Apex Eclipse Command Language Mond Violent ES Freefem
-with|_$^25|_$^21%|_$^JavaScript Python Scala Dart Ada Crystal Reason OCaml F# VHDL F* ABAP Opa SPARQL SystemVerilog Twig Clean Felix ATS Nix Egison Ligo JS++ Speedie Violent ES
-end|_$^24|_$^21%|_$^Ruby PowerShell Lua Elixir Julia Erlang Ada Pascal Crystal Reason OCaml F# VHDL F* ABAP Verilog Opa SystemVerilog Dylan ATS IGOR Pro Apex Eclipse Command Language nimrod
+with|_$^25|_$^21%|_$^JavaScript Python Scala Dart Ada Crystal Reason F# OCaml VHDL F* ABAP Opa SPARQL SystemVerilog Twig Clean Felix ATS Nix Egison Ligo JS++ Speedie Violent ES
+end|_$^24|_$^21%|_$^Ruby PowerShell Lua Elixir Julia Erlang Ada Pascal Crystal Reason F# OCaml VHDL F* ABAP Verilog Opa SystemVerilog Dylan ATS IGOR Pro Apex Eclipse Command Language nimrod
 not|_$^24|_$^21%|_$^Python C++ Ruby Lua Elixir CoffeeScript Erlang Ada Pascal F# VHDL F* ABAP SPARQL SystemVerilog AutoIt Angelscript Ligo Apex Eclipse Command Language HOPE GorillaScript Q# nimrod
-when|_$^23|_$^20%|_$^Ruby Kotlin Elixir CoffeeScript Erlang Ada Crystal Reason Scheme Pug OCaml F# Chapel VHDL F* ABAP Felix Dylan ATS X10 Apex Sibilant nimrod
-private|_$^23|_$^20%|_$^JavaScript Java C++ PHP C# Swift Scala Kotlin Ada Solidity Crystal OCaml F# F* ABAP Koka Koka Angelscript Apex Sophia orange JS++ Violent ES
+when|_$^23|_$^20%|_$^Ruby Kotlin Elixir CoffeeScript Erlang Ada Crystal Reason Scheme Pug F# OCaml Chapel VHDL F* ABAP Felix Dylan ATS X10 Apex Sibilant nimrod
+private|_$^23|_$^20%|_$^JavaScript Java C++ PHP C# Swift Scala Kotlin Ada Solidity Crystal F# OCaml F* ABAP Koka Koka Angelscript Apex Sophia orange JS++ Violent ES
 switch|_$^22|_$^19%|_$^JavaScript C Java C++ PHP Go C# PowerShell Swift CoffeeScript Objective-C Dart Reason Groovy ABAP Flow9 X10 Angelscript Apex Mond JS++ Violent ES
 null|_$^22|_$^19%|_$^JavaScript C# Scala Kotlin CoffeeScript Dart Ada GraphQL Groovy F# HCL VHDL ABAP SystemVerilog Angelscript Apex Mond GorillaScript TIScript JS++ Ham Violent ES
 interface|_$^22|_$^19%|_$^JavaScript Java PHP Go C# Kotlin Ada GraphQL Groovy F# ABAP Koka SystemVerilog Felix X10 Angelscript Apex Eclipse Command Language orange JS++ nimrod Violent ES
 finally|_$^22|_$^19%|_$^JavaScript Python Java PHP C# PowerShell Scala Kotlin CoffeeScript Julia Dart Groovy F# Felix Dylan X10 Apex TIScript orange JS++ nimrod Violent ES
 catch|_$^22|_$^19%|_$^JavaScript Java C++ PHP C# PowerShell Swift Scala Kotlin Elixir CoffeeScript Julia Erlang Dart Groovy ABAP X10 Apex TIScript orange JS++ Violent ES
-module|_$^21|_$^18%|_$^C++ Ruby Haskell Julia Crystal Reason OCaml F# Chapel F* ABAP Verilog Koka Opa Bicep SystemVerilog Felix Eclipse Command Language JS++ Speedie Aith
+module|_$^21|_$^18%|_$^C++ Ruby Haskell Julia Crystal Reason F# OCaml Chapel F* ABAP Verilog Koka Opa Bicep SystemVerilog Felix Eclipse Command Language JS++ Speedie Aith
 throw|_$^21|_$^18%|_$^JavaScript Java C++ PHP C# PowerShell Swift Scala Kotlin CoffeeScript Dart Solidity Groovy ABAP X10 Apex Sophia GorillaScript TIScript orange Violent ES
-of|_$^20|_$^17%|_$^Haskell CoffeeScript Erlang Ada Crystal Reason OCaml F# VHDL F* ABAP Clean Felix ATS Ligo Apex Eclipse Command Language orange RigC nimrod
-begin|_$^20|_$^17%|_$^Ruby PowerShell Julia Erlang Ada Pascal Crystal Reason OCaml F# Chapel VHDL ABAP Verilog Opa SystemVerilog Slope Dylan ATS Apex
-struct|_$^20|_$^17%|_$^C C++ Go C# Rust Swift Objective-C Julia Solidity Crystal Reason OCaml F# Koka SystemVerilog X10 heap.coffee Jule Crema Aith
+of|_$^20|_$^17%|_$^Haskell CoffeeScript Erlang Ada Crystal Reason F# OCaml VHDL F* ABAP Clean Felix ATS Ligo Apex Eclipse Command Language orange RigC nimrod
+begin|_$^20|_$^17%|_$^Ruby PowerShell Julia Erlang Ada Pascal Crystal Reason F# OCaml Chapel VHDL ABAP Verilog Opa SystemVerilog Slope Dylan ATS Apex
+struct|_$^20|_$^17%|_$^C C++ Go C# Rust Swift Objective-C Julia Solidity Crystal Reason F# OCaml Koka SystemVerilog X10 heap.coffee Jule Crema Aith
 static|_$^20|_$^17%|_$^JavaScript C Java C++ PHP C# Rust Swift Objective-C Dart F# ABAP SystemVerilog ATS IGOR Pro Apex orange JS++ nimrod Violent ES
 is|_$^18|_$^15%|_$^Python C# Swift Kotlin CoffeeScript Dart Ada Solidity VHDL ABAP Angelscript GorillaScript Speedie PowerQuery M Q# Ham nimrod Violent ES
 yield|_$^18|_$^15%|_$^JavaScript Python Ruby PHP C# Rust Scala Dart Crystal F# Chapel Koka Felix Mond JS++ Speedie nimrod Violent ES
@@ -56,11 +56,11 @@ this|_$^17|_$^15%|_$^JavaScript Java C++ C# Scala Kotlin CoffeeScript Dart Solid
 super|_$^17|_$^15%|_$^JavaScript Java Ruby Rust Swift Scala Kotlin CoffeeScript Dart Solidity Crystal Groovy SystemVerilog Apex TIScript orange JS++
 public|_$^17|_$^15%|_$^JavaScript Java C++ PHP C# Swift Kotlin Solidity F# Protocol Buffers ABAP Koka Apex Sophia orange JS++ Violent ES
 protected|_$^17|_$^15%|_$^JavaScript Java C++ PHP C# Scala Kotlin Ada Crystal F# ABAP SystemVerilog Angelscript Apex orange JS++ Violent ES
-assert|_$^16|_$^14%|_$^Python Java Dart Reason Groovy OCaml F# VHDL ABAP SystemVerilog Felix X10 Nix Ligo Apex GorillaScript
+assert|_$^16|_$^14%|_$^Python Java Dart Reason Groovy F# OCaml VHDL ABAP SystemVerilog Felix X10 Nix Ligo Apex GorillaScript
 void|_$^16|_$^14%|_$^JavaScript C Java C++ C# Objective-C Dart F# SystemVerilog Angelscript Apex orange JS++ Crema Violent ES BARE
 final|_$^16|_$^14%|_$^JavaScript Java C++ PHP Rust Swift Scala Kotlin Dart ABAP SystemVerilog X10 Apex orange JS++ Violent ES
 abstract|_$^16|_$^14%|_$^JavaScript Java PHP C# Rust Scala Kotlin Julia Dart Ada Crystal F# F* ABAP Apex JS++
-to|_$^15|_$^13%|_$^Reason OCaml F# VHDL Protocol Buffers ABAP SPARQL AutoIt Felix Dylan Maxima Ligo GorillaScript Lexon D++
+to|_$^15|_$^13%|_$^Reason F# OCaml VHDL Protocol Buffers ABAP SPARQL AutoIt Felix Dylan Maxima Ligo GorillaScript Lexon D++
 set|_$^15|_$^13%|_$^C# Bash Swift Kotlin Dart ABAP Twig Egison Ligo Apex Sibilant TIScript orange Q# Violent ES
 goto|_$^15|_$^13%|_$^JavaScript C Java C++ PHP Go C# Lua Objective-C Ada Groovy Felix X10 Apex Jule
 export|_$^15|_$^13%|_$^JavaScript C++ Bash Julia Dart Chapel ABAP SystemVerilog Clean Dylan Flow9 Apex Eclipse Command Language RigC nimrod
@@ -71,7 +71,7 @@ OR|_$^13|_$^11%|_$^SQL COBOL PostgreSQL MySQL SQLite Transact-SQL Modula-3 Maria
 IN|_$^13|_$^11%|_$^SQL COBOL Fortran PostgreSQL MySQL SQLite Transact-SQL Modula-3 MariaDB Cypher Query Language Apex DAX Amazon Redshift
 ELSE|_$^13|_$^11%|_$^SQL COBOL Fortran PostgreSQL MySQL SQLite QBasic Transact-SQL Modula-3 MariaDB Cypher Query Language Apex Amazon Redshift
 AND|_$^13|_$^11%|_$^SQL COBOL PostgreSQL MySQL SQLite Transact-SQL Modula-3 MariaDB Cypher Query Language Apex Microsoft Excel Google Sheets Amazon Redshift
-include|_$^13|_$^11%|_$^PHP Crystal Reason Pug OCaml F# F* ABAP Verilog Koka SystemVerilog Twig Violent ES
+include|_$^13|_$^11%|_$^PHP Crystal Reason Pug F# OCaml F* ABAP Verilog Koka SystemVerilog Twig Violent ES
 xor|_$^13|_$^11%|_$^C++ Perl PHP Erlang Ada Pascal VHDL MIPS architecture SystemVerilog Angelscript GorillaScript Speedie nimrod
 bool|_$^13|_$^11%|_$^C++ C# Solidity HCL Angelscript Jule Sophia Functional PHP Preprocessor orange JS++ Crema Aith BARE
 from|_$^13|_$^11%|_$^Python C# PowerShell ABAP SPARQL Twig Dylan Maxima Apex Eclipse Command Language Ham RigC Violent ES
@@ -80,14 +80,14 @@ THEN|_$^12|_$^10%|_$^COBOL Fortran PostgreSQL MySQL SQLite QBasic Transact-SQL M
 ON|_$^12|_$^10%|_$^SQL COBOL PostgreSQL MySQL SQLite QBasic Transact-SQL MariaDB Cypher Query Language Cypher Query Language Apex Amazon Redshift
 CASE|_$^12|_$^10%|_$^SQL Fortran PostgreSQL MySQL SQLite QBasic Transact-SQL Modula-3 MariaDB Cypher Query Language Apex Amazon Redshift
 ASC|_$^12|_$^10%|_$^SQL PostgreSQL MySQL SQLite Transact-SQL MariaDB Cypher Query Language Apex DAX Microsoft Excel Google Sheets Amazon Redshift
-virtual|_$^12|_$^10%|_$^C++ C# Rust Reason OCaml F# SystemVerilog Apex Eclipse Command Language orange JS++ Speedie
+virtual|_$^12|_$^10%|_$^C++ C# Rust Reason F# OCaml SystemVerilog Apex Eclipse Command Language orange JS++ Speedie
 override|_$^12|_$^10%|_$^C++ C# Rust Swift Scala Kotlin F# IGOR Pro Apex JS++ RigC Violent ES
 namespace|_$^12|_$^10%|_$^C++ PHP C# F# Felix Angelscript Streem Eclipse Command Language Functional PHP Preprocessor TIScript Q# Violent ES
 extern|_$^12|_$^10%|_$^C C++ C# Rust Objective-C F# Chapel SystemVerilog ATS orange Crema Aith
 double|_$^12|_$^10%|_$^JavaScript C Java C++ C# Objective-C Pascal Angelscript Apex orange JS++ Crema
 delete|_$^12|_$^10%|_$^JavaScript C++ CoffeeScript Chapel ABAP SPARQL Apex heap.coffee GorillaScript orange JS++ Violent ES
-fun|_$^11|_$^9%|_$^Kotlin Erlang Crystal Reason OCaml F# F* Koka ATS Ligo Mond
-match|_$^11|_$^9%|_$^Rust Scala OCaml F# F* ABAP Koka Opa Felix Ligo Jule
+fun|_$^11|_$^9%|_$^Kotlin Erlang Crystal Reason F# OCaml F* Koka ATS Ligo Mond
+match|_$^11|_$^9%|_$^Rust Scala F# OCaml F* ABAP Koka Opa Felix Ligo Jule
 string|_$^11|_$^9%|_$^C# Solidity HCL SystemVerilog Sophia Functional PHP Preprocessor orange JS++ Crema Ham BARE
 TRUE|_$^11|_$^9%|_$^SQL R COBOL PostgreSQL MySQL Transact-SQL MariaDB Apex Microsoft Excel Google Sheets Amazon Redshift
 TO|_$^11|_$^9%|_$^SQL COBOL Fortran PostgreSQL MySQL SQLite QBasic Transact-SQL Modula-3 MariaDB Amazon Redshift
@@ -128,13 +128,13 @@ long|_$^10|_$^9%|_$^JavaScript C Java C++ C# Objective-C ABAP Apex JS++ Aith
 instanceof|_$^10|_$^9%|_$^JavaScript Java PHP CoffeeScript Groovy X10 Apex GorillaScript TIScript JS++
 WHEN|_$^9|_$^8%|_$^COBOL PostgreSQL MySQL SQLite Transact-SQL MariaDB Cypher Query Language Apex Amazon Redshift
 LIMIT|_$^9|_$^8%|_$^COBOL PostgreSQL MySQL SQLite Transact-SQL MariaDB Cypher Query Language Apex Amazon Redshift
-open|_$^9|_$^8%|_$^Kotlin Reason OCaml F# VHDL F* ABAP Felix Q#
-external|_$^9|_$^8%|_$^Kotlin Dart Solidity Reason OCaml F# Koka Opa JS++
+open|_$^9|_$^8%|_$^Kotlin Reason F# OCaml VHDL F* ABAP Felix Q#
+external|_$^9|_$^8%|_$^Kotlin Dart Solidity Reason F# OCaml Koka Opa JS++
 by|_$^9|_$^8%|_$^Kotlin CoffeeScript Chapel F* ABAP SPARQL Dylan Apex GorillaScript
-val|_$^9|_$^8%|_$^Scala Kotlin Reason OCaml F# F* Koka Opa X10
+val|_$^9|_$^8%|_$^Scala Kotlin Reason F# OCaml F* Koka Opa X10
 data|_$^9|_$^8%|_$^PowerShell Haskell Kotlin ABAP SPARQL HOPE Functional PHP Preprocessor orange BARE
 repeat|_$^9|_$^8%|_$^R Swift Lua Pascal Verilog SystemVerilog Maxima Eclipse Command Language Q#
-object|_$^9|_$^8%|_$^C# Scala Kotlin Reason OCaml F# ABAP Apex nimrod
+object|_$^9|_$^8%|_$^C# Scala Kotlin Reason F# OCaml ABAP Apex nimrod
 get|_$^9|_$^8%|_$^C# Swift Kotlin Dart ABAP Apex TIScript orange Violent ES
 UNIQUE|_$^9|_$^8%|_$^SQL PostgreSQL MySQL SQLite Transact-SQL MariaDB Microsoft Excel Google Sheets Amazon Redshift
 RIGHT|_$^9|_$^8%|_$^SQL COBOL PostgreSQL MySQL SQLite Transact-SQL MariaDB Google Sheets Amazon Redshift
@@ -152,10 +152,10 @@ implements|_$^9|_$^8%|_$^JavaScript Java PHP Dart GraphQL Groovy SystemVerilog A
 byte|_$^9|_$^8%|_$^JavaScript Java C# Pascal Solidity ABAP SystemVerilog JS++ Aith
 MOD|_$^8|_$^7%|_$^PostgreSQL MySQL QBasic Transact-SQL Modula-3 MariaDB Microsoft Excel Google Sheets
 DEFAULT|_$^8|_$^7%|_$^Fortran PostgreSQL MySQL SQLite Transact-SQL MariaDB Apex Amazon Redshift
-exception|_$^8|_$^7%|_$^Ada Reason OCaml F# F* ABAP ATS Apex
+exception|_$^8|_$^7%|_$^Ada Reason F# OCaml F* ABAP ATS Apex
 TYPE|_$^8|_$^7%|_$^COBOL Fortran PostgreSQL Redis Modula-3 Apex Microsoft Excel Google Sheets
 INDEX|_$^8|_$^7%|_$^COBOL PostgreSQL MySQL SQLite Transact-SQL MariaDB Microsoft Excel Google Sheets
-rec|_$^8|_$^7%|_$^Haskell Reason OCaml F# Koka Opa ATS Nix
+rec|_$^8|_$^7%|_$^Haskell Reason F# OCaml Koka Opa ATS Nix
 inout|_$^8|_$^7%|_$^Swift Objective-C Chapel VHDL ABAP Verilog SystemVerilog Angelscript
 mod|_$^8|_$^7%|_$^Rust Ada Pascal F# VHDL Ligo HOPE nimrod
 exit|_$^8|_$^7%|_$^Bash PowerShell Ada VHDL ABAP AutoIt AutoIt Apex
@@ -227,7 +227,7 @@ signed|_$^7|_$^6%|_$^C C++ Objective-C Verilog SystemVerilog JS++ Aith
 native|_$^7|_$^6%|_$^JavaScript Java ABAP Flow9 Apex Aith Violent ES
 block|_$^6|_$^5%|_$^Pug VHDL ABAP Twig Ligo nimrod
 list|_$^6|_$^5%|_$^Scheme ABAP Egison Ligo Apex Sophia
-downto|_$^6|_$^5%|_$^Reason OCaml F# VHDL Felix Maxima
+downto|_$^6|_$^5%|_$^Reason F# OCaml VHDL Felix Maxima
 TRIGGER|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL MariaDB Apex
 ROW|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL Microsoft Excel Google Sheets
 IGNORE|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL MariaDB Amazon Redshift
@@ -265,7 +265,7 @@ CASCADE|_$^6|_$^5%|_$^SQL PostgreSQL MySQL SQLite Transact-SQL MariaDB
 BOTH|_$^6|_$^5%|_$^SQL PostgreSQL MySQL Transact-SQL MariaDB Amazon Redshift
 trait|_$^6|_$^5%|_$^PHP Rust Scala Groovy F# Jule
 unless|_$^6|_$^5%|_$^Perl Ruby CoffeeScript Crystal Pug Dylan
-mutable|_$^6|_$^5%|_$^C++ Reason OCaml F# F* Q#
+mutable|_$^6|_$^5%|_$^C++ Reason F# OCaml F* Q#
 raise|_$^6|_$^5%|_$^Python Ada OCaml ABAP Felix nimrod
 lambda|_$^6|_$^5%|_$^Python Scheme Slope Felix HOPE Sibilant
 sizeof|_$^6|_$^5%|_$^C C++ C# Rust Objective-C Crystal
@@ -273,11 +273,11 @@ auto|_$^6|_$^5%|_$^C C++ Objective-C Angelscript JS++ Q#
 throws|_$^6|_$^5%|_$^JavaScript Java Swift Groovy Apex Violent ES
 cast|_$^5|_$^4%|_$^ABAP Flow9 Angelscript Apex nimrod
 any|_$^5|_$^4%|_$^HCL Apex Jule Eclipse Command Language Jisp
-method|_$^5|_$^4%|_$^OCaml F# ABAP Streem nimrod
+method|_$^5|_$^4%|_$^F# OCaml ABAP Streem nimrod
 load|_$^5|_$^4%|_$^Scheme ABAP SPARQL Slope Eclipse Command Language
 XOR|_$^5|_$^4%|_$^MySQL MariaDB Cypher Query Language Microsoft Excel Google Sheets
 LOOP|_$^5|_$^4%|_$^MySQL QBasic Modula-3 MariaDB Apex
-inherit|_$^5|_$^4%|_$^Reason OCaml F# Felix Nix
+inherit|_$^5|_$^4%|_$^Reason F# OCaml Felix Nix
 SYSTEM|_$^5|_$^4%|_$^PostgreSQL MySQL Transact-SQL Apex Amazon Redshift
 RENAME|_$^5|_$^4%|_$^PostgreSQL MySQL SQLite Redis MariaDB
 OFFSET|_$^5|_$^4%|_$^PostgreSQL SQLite Microsoft Excel Google Sheets Amazon Redshift
@@ -319,8 +319,8 @@ forall|_$^5|_$^4%|_$^Haskell Chapel F* Opa Felix
 >|_$^5|_$^4%|_$^Haskell Kotlin Pascal Angelscript HOPE
 =|_$^5|_$^4%|_$^Haskell Kotlin Pascal Visual Basic .NET Angelscript
 optional|_$^5|_$^4%|_$^Swift Protocol Buffers ABAP SPARQL BARE
-lazy|_$^5|_$^4%|_$^Swift Scala Reason OCaml F#
-done|_$^5|_$^4%|_$^Bash Reason OCaml F# Felix
+lazy|_$^5|_$^4%|_$^Swift Scala Reason F# OCaml
+done|_$^5|_$^4%|_$^Bash Reason F# OCaml Felix
 join|_$^5|_$^4%|_$^C# ABAP Verilog SystemVerilog Apex
 dynamic|_$^5|_$^4%|_$^C# Swift Kotlin Dart ABAP
 YEAR|_$^5|_$^4%|_$^SQL PostgreSQL Transact-SQL Microsoft Excel Google Sheets
@@ -388,8 +388,8 @@ append|_$^4|_$^3%|_$^Scheme Pug ABAP Freefem
 PARTITION|_$^4|_$^3%|_$^MySQL Transact-SQL MariaDB Amazon Redshift
 LONG|_$^4|_$^3%|_$^MySQL QBasic MariaDB Apex
 KILL|_$^4|_$^3%|_$^MySQL Redis Transact-SQL MariaDB
-functor|_$^4|_$^3%|_$^Reason OCaml F# Felix
-constraint|_$^4|_$^3%|_$^Reason OCaml F# SystemVerilog
+functor|_$^4|_$^3%|_$^Reason F# OCaml Felix
+constraint|_$^4|_$^3%|_$^Reason F# OCaml SystemVerilog
 WITHOUT|_$^4|_$^3%|_$^PostgreSQL SQLite Transact-SQL Amazon Redshift
 TRIM|_$^4|_$^3%|_$^PostgreSQL Transact-SQL Microsoft Excel Google Sheets
 TIMESTAMP|_$^4|_$^3%|_$^PostgreSQL Transact-SQL MariaDB Amazon Redshift
@@ -454,7 +454,7 @@ infixl|_$^4|_$^3%|_$^Haskell Koka Clean ATS
 init|_$^4|_$^3%|_$^Swift Kotlin ABAP Jisp
 pure|_$^4|_$^3%|_$^Rust F# VHDL SystemVerilog
 proc|_$^4|_$^3%|_$^Rust Haskell Chapel nimrod
-move|_$^4|_$^3%|_$^Rust ABAP SPARQL MIPS architecture
+move|_$^4|_$^3%|_$^Rust ABAP MIPS architecture SPARQL
 fn|_$^4|_$^3%|_$^Rust Elixir ATS Jule
 process|_$^4|_$^3%|_$^PowerShell F# VHDL ABAP
 param|_$^4|_$^3%|_$^PowerShell Kotlin Chapel Bicep
@@ -464,7 +464,7 @@ sealed|_$^4|_$^3%|_$^C# Scala Kotlin F#
 into|_$^4|_$^3%|_$^C# ABAP Apex Lexon
 fixed|_$^4|_$^3%|_$^C# Solidity F# Freefem
 base|_$^4|_$^3%|_$^C# F# ABAP SPARQL
-add|_$^4|_$^3%|_$^C# ABAP SPARQL MIPS architecture
+add|_$^4|_$^3%|_$^C# ABAP MIPS architecture SPARQL
 VIEW|_$^4|_$^3%|_$^SQL PostgreSQL SQLite Transact-SQL
 USER|_$^4|_$^3%|_$^SQL PostgreSQL Transact-SQL Amazon Redshift
 TEMPORARY|_$^4|_$^3%|_$^SQL PostgreSQL SQLite Transact-SQL
@@ -554,7 +554,7 @@ KEYS|_$^3|_$^3%|_$^MySQL Redis MariaDB
 ELSEIF|_$^3|_$^3%|_$^MySQL QBasic MariaDB
 DIV|_$^3|_$^3%|_$^MySQL Modula-3 MariaDB
 CONDITION|_$^3|_$^3%|_$^MySQL Transact-SQL MariaDB
-sig|_$^3|_$^3%|_$^Reason OCaml F#
+sig|_$^3|_$^3%|_$^Reason F# OCaml
 STATIC|_$^3|_$^3%|_$^PostgreSQL Transact-SQL Apex
 SIMILAR|_$^3|_$^3%|_$^PostgreSQL Transact-SQL Amazon Redshift
 SHOW|_$^3|_$^3%|_$^PostgreSQL MySQL MariaDB
@@ -1115,10 +1115,10 @@ packed|_$^2|_$^2%|_$^SystemVerilog Eclipse Command Language
 bind|_$^2|_$^2%|_$^SystemVerilog nimrod
 assume|_$^2|_$^2%|_$^SystemVerilog ATS
 SINGLE|_$^2|_$^2%|_$^QBasic Microsoft Excel
-lhi|_$^2|_$^2%|_$^MIPS architecture MIPS architecture
 named|_$^2|_$^2%|_$^SPARQL Eclipse Command Language
 desc|_$^2|_$^2%|_$^SPARQL Apex
 asc|_$^2|_$^2%|_$^SPARQL Apex
+lhi|_$^2|_$^2%|_$^MIPS architecture MIPS architecture
 resource|_$^2|_$^2%|_$^Bicep Violent ES
 wire|_$^2|_$^2%|_$^Verilog SystemVerilog
 vectored|_$^2|_$^2%|_$^Verilog SystemVerilog
@@ -2903,6 +2903,10 @@ STEP|_$^1|_$^1%|_$^QBasic
 ENDIF|_$^1|_$^1%|_$^QBasic
 CDECL|_$^1|_$^1%|_$^QBasic
 BYVAL|_$^1|_$^1%|_$^QBasic
+silent|_$^1|_$^1%|_$^SPARQL
+minus|_$^1|_$^1%|_$^SPARQL
+construct|_$^1|_$^1%|_$^SPARQL
+ask|_$^1|_$^1%|_$^SPARQL
 mtlo|_$^1|_$^1%|_$^MIPS architecture
 mthi|_$^1|_$^1%|_$^MIPS architecture
 mflo|_$^1|_$^1%|_$^MIPS architecture
@@ -2947,10 +2951,6 @@ addu|_$^1|_$^1%|_$^MIPS architecture
 syscall|_$^1|_$^1%|_$^MIPS architecture
 .text|_$^1|_$^1%|_$^MIPS architecture
 .data|_$^1|_$^1%|_$^MIPS architecture
-silent|_$^1|_$^1%|_$^SPARQL
-minus|_$^1|_$^1%|_$^SPARQL
-construct|_$^1|_$^1%|_$^SPARQL
-ask|_$^1|_$^1%|_$^SPARQL
 existing|_$^1|_$^1%|_$^Bicep
 targetScope|_$^1|_$^1%|_$^Bicep
 xml_parser|_$^1|_$^1%|_$^Opa

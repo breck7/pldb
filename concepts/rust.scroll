@@ -19,8 +19,7 @@ fileExtensions rs rlib
 visualParadigm false
 clocExtensions rs rs.in
 fileType text
-documentation https://www.rust-lang.org/learn
-documentation https://devdocs.io/rust/
+docs https://www.rust-lang.org/learn https://devdocs.io/rust/
 faq https://prev.rust-lang.org/en-US/faq.html
 monaco rust
 codeMirror rust
