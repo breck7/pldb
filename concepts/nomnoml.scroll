@@ -8,6 +8,7 @@ tags diagramLang
 website https://www.nomnoml.com/
 webRepl https://www.nomnoml.com/
 description The sassy UML diagram renderer.
+fileExtensions nomnoml
 
 writtenIn typescript javascript json css html markdown svg
 repoStats
@@ -26,6 +27,13 @@ example
    [Component] <:- [Decorator]
    [Component] <:- [ConcreteComponent]
  ]
+
+hasDirectives true
+ #title: filename
+ #zoom: 1
+ #acyclicer: greedy
+hasImports true
+ #import: filename
 
 githubRepo https://github.com/skanaar/nomnoml
  firstCommit 2014

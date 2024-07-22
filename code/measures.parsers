@@ -494,7 +494,7 @@ fileExtensionsParser
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
  description What are the file extensions for this language?
- float sortIndex 2.4
+ float sortIndex 1.991
 
 clocExtensionsParser
  extends abstractStringListMeasureParser
