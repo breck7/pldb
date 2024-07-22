@@ -357,14 +357,12 @@ discourseParser
  description What is a URL to an official (or popular unofficial) Discourse for this language?
  float sortIndex 3
 
-// documentation
-documentationParser
- extends abstractUrlMeasureParser
- description What is a URL to the official documentation for this language?
- single false
+docsParser
+ extends abstractUrlsMeasureParser
+ description What is a URL(s) to the official documentation for this language?
  float sortIndex 2.5
 
-devDocumentationParser
+devDocsParser
  extends abstractUrlMeasureParser
  description What is a URL to the official documentation for developers who want to contribute to the language project?
  single false

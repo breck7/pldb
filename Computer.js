@@ -840,7 +840,7 @@ image ${image}
       FAQ: this.getPrimary("faq"),
       "Release Notes": this.getPrimary("releaseNotes"),
       "Demo Video": this.get("demoVideo"),
-      Docs: this.getPrimary("documentation"),
+      Docs: this.getPrimary("docs"),
       "Mailing List": this.getPrimary("emailList")
     }
     return Object.keys(links)
