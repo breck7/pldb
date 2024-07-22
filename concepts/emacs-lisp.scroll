@@ -4,7 +4,7 @@ id emacs-lisp
 name Emacs Lisp
 appeared 1985
 creators Richard Stallman
-tags pl
+tags pl lisp
 aka emacslisp
 
 isOpenSource true
@@ -32,7 +32,6 @@ lineCommentToken ;
 printToken print
 stringToken "
 
-isLisp true
 hasLineComments true
  ; A comment
 hasComments true

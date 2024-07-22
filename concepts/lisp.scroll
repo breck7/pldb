@@ -4,7 +4,7 @@ id lisp
 name Lisp
 appeared 1958
 creators John McCarthy
-tags pl
+tags pl lisp
 conference https://www.european-lisp-symposium.org The European Lisp Symposium
 
 isOpenSource true
@@ -42,7 +42,6 @@ meetup https://www.meetup.com/topics/lisp
 
 printToken PRINT
 
-isLisp true
 hasGarbageCollection true
 hasCaseInsensitiveIdentifiers false
 hasHomoiconicity true

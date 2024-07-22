@@ -2436,14 +2436,6 @@ isCaseSensitiveParser
  string reference https://en.wikipedia.org/wiki/Case_sensitivity
  string pseudoExample pldb != PLDB
 
-// isLisp
-isLispParser
- extends abstractFeatureParser
- string title Lispy
- description Is this in the Lisp family of languages?
- string reference https://en.wikipedia.org/wiki/Lisp_(programming_language)
- string pseudoExample (+ 1 2)
-
 // isbndb
 isbndbParser
  boolean fromCrawler true
@@ -2941,7 +2933,7 @@ twitterParser
 
 // type
 tagCell
- enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging
+ enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang
  highlightScope constant.language
 tagsParser
  float sortIndex 1.2

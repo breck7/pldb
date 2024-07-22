@@ -8,7 +8,7 @@ Racket is an open source programming language created in 1994 by Matthias Fellei
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Bruce%20Findler Robert Bruce Findler
  https://pldb.io/concepts/../lists/creators.html#q=Shriram%20Krishnamurthi Shriram Krishnamurthi
 
-#48 on PLDB
+#49 on PLDB
 30 Years Old
 18k Repos
 
@@ -17,7 +17,7 @@ git clone https://github.com/racket/racket
 Racket is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Racket_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
+- Tags: programming language, lisp
 - Racket is developed on GitHub
 - There are at least 17,790 Racket repos on GitHub
 - Early development of Racket happened in PLT Inc.
@@ -153,12 +153,6 @@ row
  Supported ✓
  Example
   ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
- Token 
-row
- Feature Lispy
- FeatureLink ../features/isLisp.html
- Supported ✓
- Example
  Token 
 row
  Feature Strings

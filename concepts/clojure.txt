@@ -14,7 +14,7 @@ git clone https://github.com/clojure/clojure
 Clojure ( , like "closure") is a dialect of the Lisp programming language. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java virtual machine and the Common Language Runtime. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Clojure Read more on Wikipedia...
 
-- Tags: programming language
+- Tags: programming language, lisp
 - Clojure is developed on GitHub and has 9,941 stars
 - Watch the history of the Clojure repo visualized with Gource
 - There are at least 82,125 Clojure repos on GitHub
@@ -194,12 +194,6 @@ row
  Example
   "hello world"
  Token "
-row
- Feature Lispy
- FeatureLink ../features/isLisp.html
- Supported ✓
- Example
- Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html

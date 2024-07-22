@@ -3,7 +3,7 @@ import ../code/conceptPage.scroll
 id gerbil
 name Gerbil Scheme
 appeared 2016
-tags pl
+tags pl lisp
 website https://cons.io/
 
 repoStats
@@ -26,7 +26,6 @@ githubRepo https://github.com/vyzo/gerbil
 
 lineCommentToken ;
 
-isLisp true
 hasComments true
 hasLineComments true
  ; A comment

@@ -4,7 +4,7 @@ id common-lisp
 name Common Lisp
 appeared 1984
 creators Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb
-tags pl
+tags pl lisp
 website http://common-lisp.net/
 blog https://common-lisp.net/news
 download https://common-lisp.net/downloads
@@ -45,7 +45,6 @@ leachim6 Common Lisp
 lineCommentToken ;
 printToken PRINT
 
-isLisp true
 hasSingleDispatch true
  ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
  (defclass Person () ())

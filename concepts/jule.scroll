@@ -4,7 +4,7 @@ id jule
 name Jule
 appeared 2021
 creators Mertcan Davulcu
-tags pl
+tags pl lisp
 website https://jule.dev
 description Jule is the simple, efficient, statically typed and compiled system programming language.
 
@@ -326,7 +326,6 @@ hasDuckTyping true
  fn lock_object[T](obj: T) {
      obj.lock()
  }
-isLisp false
 hasArraySlicingSyntax true
  sliceable_expression[start_index:to_index]
 hasExplicitTypeCasting true

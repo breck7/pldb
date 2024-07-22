@@ -4,7 +4,7 @@ Extended file system
 Extended file system is a filesystem created in 1992.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1992
 
-#1643 on PLDB
+#1644 on PLDB
 32 Years Old
 
 The extended file system, or ext, was implemented in April 1992 as the first file system created specifically for the Linux kernel. It has metadata structure inspired by the traditional Unix File System (UFS) and was designed by Rémy Card to overcome certain limitations of the MINIX file system. It was the first implementation that used the virtual file system (VFS), for which support was added in the Linux kernel in version 0.96c, and it could handle file systems up to 2 gigabytes (GB) in size.ext was the first in the series of extended file systems. Read more on Wikipedia...

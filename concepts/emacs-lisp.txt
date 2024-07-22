@@ -5,14 +5,14 @@ Emacs Lisp is an open source programming language created in 1985 by Richard Sta
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
  https://pldb.io/concepts/../lists/creators.html#q=Richard%20Stallman Richard Stallman
 
-#254 on PLDB
+#256 on PLDB
 39 Years Old
 1k Repos
 
 Emacs Lisp is a dialect of the Lisp programming language used as a scripting language by Emacs (a text editor family most commonly associated with GNU Emacs and XEmacs). It is used for implementing most of the editing functionality built into Emacs, the remainder being written in C (as is the Lisp interpreter itself). Emacs Lisp is also referred to as Elisp, although there is also an older, unrelated Lisp dialect with that name. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Emacs_Lisp Read more on Wikipedia...
 
-- Tags: programming language
+- Tags: programming language, lisp
 - There are at least 1,305 Emacs Lisp repos on GitHub
 - Early development of Emacs Lisp happened in GNU Project
 - The  Google BigQuery Public Dataset GitHub snapshot shows 13k users using Emacs Lisp in 17k repos on GitHub
@@ -66,12 +66,6 @@ row
  Example
   ; A comment
  Token ;
-row
- Feature Lispy
- FeatureLink ../features/isLisp.html
- Supported ✓
- Example
- Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html

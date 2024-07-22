@@ -4,7 +4,7 @@ id arc
 name Arc
 appeared 2001
 creators Paul Graham and Robert Morris
-tags pl
+tags pl lisp
 website https://www.arclanguage.org
 webRepl http://tryarc.org/
 
@@ -26,7 +26,6 @@ leachim6 ARC
 printToken prn
 stringToken "
 
-isLisp true
 hasPrintDebugging true
 hasMacros true
  ; http://www.arclanguage.org/tut.txt

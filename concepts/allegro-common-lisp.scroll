@@ -4,7 +4,7 @@ id allegro-common-lisp
 name Allegro Common Lisp
 appeared 1986
 creators John Foderaro
-tags pl
+tags pl lisp
 website https://franz.com/products/allegrocl/
 releaseNotes https://franz.com/support/documentation/current/doc/release-notes.htm
 aka Allegro CL
@@ -17,7 +17,5 @@ example
   (loop for y in-sequence x collect (1+ y)))
  (foo '(1 2 3)) => (2 3 4)
  (foo #(1 2 3)) => (2 3 4)
-
-isLisp true
 
 wikipedia https://en.wikipedia.org/wiki/Allegro_Common_Lisp

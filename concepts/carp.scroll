@@ -4,7 +4,7 @@ id carp
 name carp
 appeared 2016
 creators Erik Svedäng
-tags pl
+tags pl lisp
 latestVersion v0.5.5
 
 isOpenSource true
@@ -39,7 +39,6 @@ lineCommentToken ;
 printToken println
 stringToken "
 
-isLisp true
 hasGarbageCollection false
 hasStaticTyping true
 hasLineComments true

@@ -4,7 +4,7 @@ id scheme
 name Scheme
 appeared 1975
 creators Guy Steele and Gerald Jay Sussman
-tags pl
+tags pl lisp
 website http://www.scheme-reports.org/
 blog https://planet.scheme.org/
 releaseNotes https://www.scheme.com/csv6.9c/6.9c.html
@@ -58,7 +58,6 @@ multiLineCommentTokens #| |#
 printToken display
 stringToken "
 
-isLisp true
 hasComments true
 hasLineComments true
  ; A comment
