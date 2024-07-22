@@ -9,9 +9,9 @@ website http://fsharp.org
 releaseNotes https://github.com/dotnet/fsharp/blob/main/release-notes.md
 aka f#
 aka fsharp
+fileExtensions fs fsi fsx fsscript
 
 isOpenSource true
-fileExtensions fs fsi fsx fsscript
 visualParadigm false
 clocExtensions fsi fs fs
 fileType text

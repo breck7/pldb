@@ -9,9 +9,9 @@ website http://virustotal.github.io/yara/
 latestVersion v4.5.1
 standsFor Yet Another Recursive Acronym
 description YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a rule, consists of a set of strings and a boolean expression which determine its logic.
+writtenIn c restructuredtext xml cpp starlark yaml markdown bourne-shell yacc lex bazel protobuf m4 make javascript svg html python
 
 isOpenSource true
-writtenIn c restructuredtext xml cpp starlark yaml markdown bourne-shell yacc lex bazel protobuf m4 make javascript svg html python
 fileType text
 centralPackageRepositoryCount 0
 repoStats

@@ -10,12 +10,12 @@ blog https://clojure.org/news/news
 releaseNotes https://clojure.org/releases/devchangelog
 download https://clojure.org/releases/downloads
 latestVersion 1.12.0
+fileExtensions clj cljs cljc edn
+writtenIn java clojure markdown yaml html xml bourne-shell
 
 isOpenSource true
-writtenIn java clojure markdown yaml html xml bourne-shell
 runsOnVm jvm
 tryItOnline clojure
-fileExtensions clj cljs cljc edn
 clocExtensions boot cl2 clj cljs.hl cljscm cljx hic riemann.config
 fileType text
 docs https://clojuredocs.org/ https://clojure-doc.org/

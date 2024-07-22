@@ -7,11 +7,11 @@ creators Mertcan Davulcu
 tags pl lisp
 website https://jule.dev
 description Jule is the simple, efficient, statically typed and compiled system programming language.
+fileExtensions .jule
+writtenIn yaml markdown bourne-shell dockerfile
 
 isOpenSource true
-writtenIn yaml markdown bourne-shell dockerfile
 influencedBy c cpp rust go
-fileExtensions .jule
 visualParadigm false
 fileType text
 docs https://jule.dev/pages/manual.html?page=jule-lang

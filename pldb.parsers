@@ -930,7 +930,7 @@ fileExtensionsParser
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
  description What are the file extensions for this language?
- float sortIndex 2.4
+ float sortIndex 1.991
 
 clocExtensionsParser
  extends abstractStringListMeasureParser
@@ -2766,7 +2766,7 @@ supersetOfParser
 writtenInParser
  description What language(s) is the main implementation written in?
  extends abstractFilenameRelationshipParser
- float sortIndex 2.1
+ float sortIndex 1.999
 extensionOfParser
  description What language is this language an extension of?
  extends abstractFilenameRelationshipParser

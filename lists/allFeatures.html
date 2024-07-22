@@ -417,7 +417,7 @@ h4.scrollQuestion {
 </div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p class="scrollParagraph">A list of 168 features found in programming languages.</p>
-<table id="table1125" class="scrollTable">
+<table id="table1126" class="scrollTable">
  <thead><tr><th>title</th>
 
 <th>pseudoExample</th>
@@ -520,7 +520,7 @@ h4.scrollQuestion {
 </tr>
 <tr><td><a href="../features/hasImports.html">File Imports</a></td>
 <td>import pldb</td>
-<td>46</td>
+<td>47</td>
 <td>2</td>
 <td>96%</td>
 </tr>
@@ -590,6 +590,12 @@ h4.scrollQuestion {
 <td>3</td>
 <td>88%</td>
 </tr>
+<tr><td><a href="../features/hasDirectives.html">Directives</a></td>
+<td>use strict;</td>
+<td>21</td>
+<td>2</td>
+<td>91%</td>
+</tr>
 <tr><td><a href="../features/hasPointers.html">Pointers</a></td>
 <td>int *pldb</td>
 <td>20</td>
@@ -601,12 +607,6 @@ h4.scrollQuestion {
 <td>20</td>
 <td>1</td>
 <td>95%</td>
-</tr>
-<tr><td><a href="../features/hasDirectives.html">Directives</a></td>
-<td>use strict;</td>
-<td>20</td>
-<td>2</td>
-<td>91%</td>
 </tr>
 <tr><td><a href="../features/hasGarbageCollection.html">Garbage Collection</a></td>
 <td>var iDontNeedToFreeThis</td>
@@ -1438,7 +1438,7 @@ h4.scrollQuestion {
 </tr></tbody>
  </table>
  <script>
- document.querySelector('#table1125').addEventListener('click', e => {
+ document.querySelector('#table1126').addEventListener('click', e => {
   if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
   e.currentTarget.classList.toggle('expandedTable');
  });

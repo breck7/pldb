@@ -10,9 +10,9 @@ latestVersion 2.0.1
 screenshot hurl.png
 standsFor The name Hurl is a tribute to the awesome curl, with a focus on the HTTP protocol.
 description Hurl is a command line tool that runs HTTP requests defined in a simple plain text format. It can perform requests, capture values and evaluate queries on headers and body response. Hurl is very versatile: it can be used for both fetching data and testing HTTP sessions
+writtenIn bourne-shell powershell rust python markdown json html yaml css svg toml javascript xml bash vim-script lisp dockerfile c
 
 isOpenSource true
-writtenIn bourne-shell powershell rust python markdown json html yaml css svg toml javascript xml bash vim-script lisp dockerfile c
 supersetOf curl
 related curl
 influencedBy curl

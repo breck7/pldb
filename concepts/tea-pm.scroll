@@ -8,9 +8,9 @@ tags packageManager
 website https://tea.xyz/
 latestVersion v1.1.6
 description From the creator of brew, tea is a standalone, binary download for all platforms that puts the entire open source ecosystem at your fingertips. Casually and effortlessly use the latest and greatest or the oldest and most mature from any layer of any stack. Break down the silos between programming communities, throw together scripts that use entirely separate tools and languages and share them with the world with a simple one-liner.All you need is tea.
+writtenIn typescript yaml markdown json toml bourne-shell dockerfile
 
 isOpenSource true
-writtenIn typescript yaml markdown json toml bourne-shell dockerfile
 influencedBy homebrew-pm
 repoStats
  firstCommit 2021

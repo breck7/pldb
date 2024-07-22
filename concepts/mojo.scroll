@@ -9,12 +9,12 @@ website https://www.modular.com/mojo
 releaseNotes https://docs.modular.com/mojo/changelog.html
 webRepl https://docs.modular.com/mojo/playground
 description Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
+fileExtensions mojo
+writtenIn markdown jupyter-notebook yaml python bourne-shell cmake dockerfile
 
 isOpenSource false
-writtenIn markdown jupyter-notebook yaml python bourne-shell cmake dockerfile
 supersetOf python
 influencedBy python c mlir
-fileExtensions mojo
 clocExtensions mojom
 docs https://docs.modular.com/mojo/
 repoStats

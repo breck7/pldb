@@ -90,6 +90,10 @@ embed (inline) sv{{{
     endmodule
 }}}
 
+#title: filename
+#zoom: 1
+#acyclicer: greedy
+
 .PR POINT .PR
 .PR UPPER .PR
 .PR RES .PR
@@ -109,7 +113,7 @@ polar = a * [E ^ [b * 0+j1]]
 
 ***
 
-Languages *with* Directives include JavaScript, C, Python, Perl, Ruby, C#, Rust, Haskell, Erlang, Visual Basic, Ada, F#, Common Lisp, C2, Veryl, ALGOL 68, Jule, Turbo Pascal, FML, ScriptEase
+Languages *with* Directives include JavaScript, C, Python, Perl, Ruby, C#, Rust, Haskell, Erlang, Visual Basic, Ada, F#, Common Lisp, C2, Veryl, nomnoml, ALGOL 68, Jule, Turbo Pascal, FML, ScriptEase
 
 ***
 

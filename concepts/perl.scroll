@@ -10,9 +10,10 @@ spec https://perldoc.perl.org/File::Spec
 latestVersion 5.38.2
 releaseNotes https://dev.perl.org/perl5/news/
 download https://www.perl.org/get.html
+fileExtensions pl pm t pod
+writtenIn perl c bourne-shell xml yaml json markdown tex pascal make diff lisp prolog sql yacc d
 
 isOpenSource true
-writtenIn perl c bourne-shell xml yaml json markdown tex pascal make diff lisp prolog sql yacc d
 usesSemanticVersioning false
  Run: `perldoc hist`. It might use semantic versioning if you drop the 5?
  Perl 0 introduced Perl to my officemates.
@@ -25,7 +26,6 @@ usesSemanticVersioning false
  Perl 5 introduced everything else, including the ability to
      introduce everything else.
 tryItOnline perl6
-fileExtensions pl pm t pod
 visualParadigm false
 clocExtensions ack al cpanfile makefile.pl perl ph plh plx pm psgi rexfile pl p6
 fileType text

@@ -9,13 +9,13 @@ website https://djot.net
 latestVersion 0.2.0
 webRepl https://djot.net/playground/
 description  A light markup language
+fileExtensions dj
+writtenIn markdown html vim-script make css lua yaml
 
 isOpenSource true
-writtenIn markdown html vim-script make css lua yaml
 influencedBy commonmark
 successorOf commonmark
 usesSemanticVersioning true
-fileExtensions dj
 docs https://github.com/jgm/djot/blob/main/README.md
 repoStats
  firstCommit 2022

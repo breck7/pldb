@@ -13,12 +13,12 @@ latestVersion 5.4
 webRepl https://www.typescriptlang.org/play/
 webRepl https://playcode.io/typescript/
 roadmap https://github.com/microsoft/TypeScript/wiki/Roadmap
+fileExtensions ts tsx
+writtenIn typescript javascript json markdown yaml diff xml bourne-shell dockerfile
 
 isOpenSource true
-writtenIn typescript javascript json markdown yaml diff xml bourne-shell dockerfile
 supersetOf javascript
 tryItOnline typescript
-fileExtensions ts tsx
 clocExtensions mts tsx ts
 fileType text
 docs https://www.typescriptlang.org/docs/ https://devdocs.io/typescript/

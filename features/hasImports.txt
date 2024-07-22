@@ -186,6 +186,8 @@ package PackageA {
 
 import x10.io.Console;
 
+#import: filename
+
 import &quot;http://www.xtext.org/example/Domainmodel&quot;
 import &quot;http://www.xtext.org/example/Domainmodel&quot; as dmodel
 
@@ -201,7 +203,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Scroll, Flow9, ArkScript, Veryl, Dale, X10, Xtext, Cyber, Jule, bog, SAKO, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Scroll, Flow9, ArkScript, Veryl, Dale, X10, nomnoml, Xtext, Cyber, Jule, bog, SAKO, Speedie, Aardvark
 
 ***
 

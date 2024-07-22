@@ -4,7 +4,7 @@ LINQ
 LINQ is a query language created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#1483 on PLDB
+#1482 on PLDB
 17 Years Old
 
 Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages, although ports exist for PHP (PHPLinq), JavaScript (linq.js), TypeScript (linq.ts), and ActionScript (ActionLinq) - but none of these ports are strictly equivalent to LINQ in C# for example (where it is a part of the language, not an external library, and where it often addresses a wider range of needs). LINQ extends the language by the addition of query expressions, which are akin to SQL statements, and can be used to conveniently extract and process data from arrays, enumerable classes, XML documents, relational databases, and third-party data sources. Other uses, which utilize query expressions as a general framework for readably composing arbitrary computations, include the construction of event handlers or monadic parsers. Read more on Wikipedia...

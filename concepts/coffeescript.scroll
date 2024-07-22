@@ -8,12 +8,12 @@ tags pl
 website http://coffeescript.org
 latestVersion 2.7.0
 aka coffee
+fileExtensions coffee litcoffee
+writtenIn markdown coffeescript html javascript css json svg yaml xml
 
 isOpenSource true
-writtenIn markdown coffeescript html javascript css json svg yaml xml
 compilesTo javascript
 tryItOnline coffeescript
-fileExtensions coffee litcoffee
 clocExtensions _coffee cakefile cjsx coffee iced
 fileType text
 docs https://coffeescript.org/#introduction https://devdocs.io/coffeescript~1/

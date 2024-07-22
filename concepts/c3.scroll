@@ -8,11 +8,11 @@ tags pl
 website http://www.c3-lang.org/
 blog https://c3.handmade.network/blog
 description C3 is a programming language that builds on the syntax and semantics of the C language, with the goal of evolving it while still retaining familiarity for C programmers.
+fileExtensions c3 c3i
+writtenIn c markdown json yaml python yacc cmake cpp lex bourne-shell dockerfile make
 
 isOpenSource true
-writtenIn c markdown json yaml python yacc cmake cpp lex bourne-shell dockerfile make
 influencedBy c2 c
-fileExtensions c3 c3i
 rosettaCode https://rosettacode.org/wiki/Category:C3
 repoStats
  firstCommit 2019

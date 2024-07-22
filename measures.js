@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1442,
+    "Values": 1443,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -1005,11 +1005,91 @@ const measures = [
     "Crux": "description"
   },
   {
+    "Name": "rijuRepl_fileExtensions",
+    "Values": 38,
+    "Coverage": "0%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "adb ads",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_fileExtensions",
+    "Values": 106,
+    "Coverage": "2%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "adb ads",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubLanguage_fileExtensions",
+    "Values": 519,
+    "Coverage": "10%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "bsl os",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "leachim6_fileExtensions",
+    "Values": 368,
+    "Coverage": "7%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "abap",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "pygmentsHighlighter_fileExtensions",
+    "Values": 325,
+    "Coverage": "6%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "abap ABAP",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "fileExtensions",
+    "Values": 227,
+    "Coverage": "4%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "a51",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
     "Name": "interviews",
     "Values": 11,
     "Coverage": "0%",
     "Question": "What is a URL(s) to an interview with the creator(s) about this language?",
     "Example": "https://pldb.io/blog/brianKernighan.html",
+    "Type": "string",
+    "SortIndex": 1.999,
+    "IsComputed": false
+  },
+  {
+    "Name": "languageServerProtocolProject_writtenIn",
+    "Values": 53,
+    "Coverage": "1%",
+    "Question": "What language(s) is the main implementation written in?",
+    "Example": "typescript",
+    "Type": "string",
+    "SortIndex": 1.999,
+    "IsComputed": false
+  },
+  {
+    "Name": "writtenIn",
+    "Values": 1135,
+    "Coverage": "22%",
+    "Question": "What language(s) is the main implementation written in?",
+    "Example": "elixir markdown yaml",
     "Type": "string",
     "SortIndex": 1.999,
     "IsComputed": false
@@ -1033,26 +1113,6 @@ const measures = [
     "Type": "boolean",
     "SortIndex": 2.01,
     "IsComputed": true
-  },
-  {
-    "Name": "languageServerProtocolProject_writtenIn",
-    "Values": 53,
-    "Coverage": "1%",
-    "Question": "What language(s) is the main implementation written in?",
-    "Example": "typescript",
-    "Type": "string",
-    "SortIndex": 2.1,
-    "IsComputed": false
-  },
-  {
-    "Name": "writtenIn",
-    "Values": 1135,
-    "Coverage": "22%",
-    "Question": "What language(s) is the main implementation written in?",
-    "Example": "elixir markdown yaml",
-    "Type": "string",
-    "SortIndex": 2.1,
-    "IsComputed": false
   },
   {
     "Name": "numberOfUsersEstimate",
@@ -1236,7 +1296,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1442,
+    "Values": 1443,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1285,26 +1345,6 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "rijuRepl_fileExtensions",
-    "Values": 38,
-    "Coverage": "0%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "adb ads",
-    "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_fileExtensions",
-    "Values": 106,
-    "Coverage": "2%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "adb ads",
-    "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
     "Name": "tryItOnline",
     "Values": 133,
     "Coverage": "2%",
@@ -1312,46 +1352,6 @@ const measures = [
     "Example": "abc",
     "Type": "string",
     "Source": "tio.run",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubLanguage_fileExtensions",
-    "Values": 519,
-    "Coverage": "10%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "bsl os",
-    "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "leachim6_fileExtensions",
-    "Values": 368,
-    "Coverage": "7%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "abap",
-    "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "pygmentsHighlighter_fileExtensions",
-    "Values": 325,
-    "Coverage": "6%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "abap ABAP",
-    "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "fileExtensions",
-    "Values": 226,
-    "Coverage": "4%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "a51",
-    "Type": "string",
     "SortIndex": 2.4,
     "IsComputed": false
   },
@@ -1614,7 +1614,7 @@ const measures = [
   },
   {
     "Name": "country",
-    "Values": 3741,
+    "Values": 3742,
     "Coverage": "75%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -2368,7 +2368,7 @@ const measures = [
   },
   {
     "Name": "hasDirectives",
-    "Values": 22,
+    "Values": 23,
     "Coverage": "0%",
     "Question": "Is the language embedded in a tiny compile-time directive language?",
     "Example": "true",
@@ -2728,7 +2728,7 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 48,
+    "Values": 49,
     "Coverage": "0%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",

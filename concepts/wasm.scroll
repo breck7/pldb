@@ -7,11 +7,11 @@ creators Alon Zakai
 tags bytecode
 website http://webassembly.org/
 latestVersion 1.0.35
+fileExtensions wasm
+writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
 
 isOpenSource true
-writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
 tryItOnline wasm
-fileExtensions wasm
 clocExtensions wast wat
 fileType text
 docs https://developer.mozilla.org/en-US/docs/WebAssembly

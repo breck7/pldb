@@ -9,10 +9,10 @@ website https://virtualdub.org
 latestVersion v1.10.4
 screenshot vdscript.png
 description  A video capture utility for 32-bit and 64-bit Windows platforms
+fileExtensions VirtualDub.jobs
+writtenIn cpp
 
 isOpenSource true
-writtenIn cpp
-fileExtensions VirtualDub.jobs
 docs https://virtualdub.org/docs/vdscript.txt
 packageRepository https://sourceforge.net/projects/virtualdub/files/virtualdub-win
 country United States
