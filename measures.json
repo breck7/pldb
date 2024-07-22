@@ -169,7 +169,7 @@
     "Values": 4968,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1272",
+    "Example": "1273",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4968,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21353",
+    "Example": "21352",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -282,7 +282,7 @@
   },
   {
     "Name": "githubRepo_firstCommit",
-    "Values": 842,
+    "Values": 843,
     "Coverage": "16%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -312,7 +312,7 @@
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1059,
+    "Values": 1060,
     "Coverage": "21%",
     "Question": "How many stars of the repo?",
     "Example": "672",
