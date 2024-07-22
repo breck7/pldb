@@ -35,7 +35,7 @@
   },
   {
     "Name": "creators",
-    "Values": 1441,
+    "Values": 1442,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -423,7 +423,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 112,
+    "Values": 113,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -1236,7 +1236,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1441,
+    "Values": 1442,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1645,7 +1645,7 @@
   },
   {
     "Name": "reference",
-    "Values": 2157,
+    "Values": 2158,
     "Coverage": "43%",
     "Question": "What is a URL to more info about this thing?",
     "Example": "https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998",
@@ -1666,7 +1666,7 @@
   },
   {
     "Name": "twitter",
-    "Values": 256,
+    "Values": 257,
     "Coverage": "5%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -1687,7 +1687,7 @@
   },
   {
     "Name": "discord",
-    "Values": 10,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://discord.gg/MM3HmfzRfS",
@@ -1789,7 +1789,7 @@
   },
   {
     "Name": "example",
-    "Values": 877,
+    "Values": 878,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -3278,7 +3278,7 @@
   },
   {
     "Name": "hasSemanticIndentation",
-    "Values": 583,
+    "Values": 584,
     "Coverage": "11%",
     "Question": "Does the language use semantic indentation?",
     "Example": "false",

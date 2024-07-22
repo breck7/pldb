@@ -3,7 +3,8 @@ import ../code/conceptPage.scroll
 id dot
 name DOT
 appeared 2007
-tags textMarkup
+creators Emden R. Gansner and Eleftherios Koutsofios and Stephen North
+tags diagramLang
 aka Graphviz DOT
 
 fileType text
@@ -13,6 +14,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/dot
 centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Labs Research
+reference https://www.graphviz.org/pdf/dotguide.pdf
 
 pygmentsHighlighter Graphviz
  filename graphviz.py

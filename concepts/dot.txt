@@ -1,17 +1,20 @@
 DOT
 ===
 
-DOT is a text markup language created in 2007.
+DOT is a diagram lang created in 2007 by Emden R. Gansner and Eleftherios Koutsofios and Stephen North.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
+ https://pldb.io/concepts/../lists/creators.html#q=Emden%20R.%20Gansner Emden R. Gansner
+ https://pldb.io/concepts/../lists/creators.html#q=Eleftherios%20Koutsofios Eleftherios Koutsofios
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20North Stephen North
 
-#179 on PLDB
+#170 on PLDB
 17 Years Old
 28k Repos
 
 DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/DOT_(graph_description_language) Read more on Wikipedia...
 
-- Tags: text markup language
+- Tags: diagramLang
 - There are at least 27,831 DOT repos on GitHub
 - Early development of DOT happened in AT&T Labs Research
 - The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on GitHub
@@ -20,7 +23,9 @@ DOT is a plain text graph description language. DOT graphs are typically files w
 - GitHub supports syntax highlighting for DOT
 - There is 1 Jupyter Kernel for DOT
 - See also: (6 related languages) JavaScript, Java, Python, Google Cloud Platform, ActionScript, SVG
-- 7 PLDB concepts link to DOT: D2, FCL, flowchart.fun, Flowgorithm, Finite State Language, Mscgen, Workfl
+- Read more about DOT on the web: 1.
+ https://www.graphviz.org/pdf/dotguide.pdf 1.
+- 7 PLDB concepts link to DOT: D2, FCL, FlowchartFun, Flowgorithm, Finite State Language, Mscgen, Workfl
 
  // The graph name and the semicolons are optional
 graph graphname {

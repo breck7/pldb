@@ -6,7 +6,7 @@ Carpet is a programming language created in 1997 by Giandomenico Spezzano and Do
  https://pldb.io/concepts/../lists/creators.html#q=Giandomenico%20Spezzano Giandomenico Spezzano
  https://pldb.io/concepts/../lists/creators.html#q=Domenico%20Talia Domenico Talia
 
-#2346 on PLDB
+#2347 on PLDB
 27 Years Old
 
 This paper describes CARPET, a high-level programming language based on the cellular automata model. CARPET is a programming language designed to support the development of parallel high performance software. It exploits the computing power of a highly parallel computer releasing a user from using explicit parallel constructs. A CARPET implementation has been used for programming cellular algorithms in the CAMEL parallel environment. By CARPET a user might write programs to describe the actions of thousands of simple active agents interacting locally, then the CAMEL environment allows a user to observe the global complex evolution that arises from their parallel execution and their local interactions.
