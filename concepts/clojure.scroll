@@ -4,7 +4,7 @@ id clojure
 name Clojure
 appeared 2007
 creators Rich Hickey
-tags pl
+tags pl lisp
 website https://clojure.org
 blog https://clojure.org/news/news
 releaseNotes https://clojure.org/releases/devchangelog
@@ -94,7 +94,6 @@ multiLineCommentTokens (comment )
 printToken println
 stringToken "
 
-isLisp true
 hasStrings true
  "hello world"
 hasPartialApplication true

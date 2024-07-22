@@ -4,7 +4,7 @@ id slope
 name Slope
 appeared 2021
 creators Sloum
-tags pl
+tags pl lisp
 website https://slope.colorfield.space
 standsFor SLOum's Programming Environment
 description A small s-expression based programming language
@@ -31,7 +31,6 @@ printToken display
 stringToken "
 booleanTokens #t #f
 
-isLisp true
 hasMacros true
 hasPrefixNotation true
  (+ 1 2)

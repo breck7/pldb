@@ -4,7 +4,7 @@ id racket
 name Racket
 appeared 1994
 creators Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi
-tags pl
+tags pl lisp
 website http://racket-lang.org
 blog https://blog.racket-lang.org/
 latestVersion v8.13
@@ -68,7 +68,6 @@ stringToken "
 
 hasStrings true
  "hello world"
-isLisp true
 hasSymbolTables true
  ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
 hasComments true
