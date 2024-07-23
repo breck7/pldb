@@ -1092,14 +1092,14 @@ var autocompleteJs = [
     "url": "/concepts/sass.html"
   },
   {
-    "label": "PostCSS",
-    "id": "postcss",
-    "url": "/concepts/postcss.html"
-  },
-  {
     "label": "Dhall",
     "id": "dhall",
     "url": "/concepts/dhall.html"
+  },
+  {
+    "label": "PostCSS",
+    "id": "postcss",
+    "url": "/concepts/postcss.html"
   },
   {
     "label": "Pony",
@@ -1392,6 +1392,11 @@ var autocompleteJs = [
     "url": "/concepts/npm-pm.html"
   },
   {
+    "label": "Janet",
+    "id": "janet",
+    "url": "/concepts/janet.html"
+  },
+  {
     "label": "Luna",
     "id": "luna",
     "url": "/concepts/luna.html"
@@ -1422,19 +1427,14 @@ var autocompleteJs = [
     "url": "/concepts/c3.html"
   },
   {
-    "label": "Janet",
-    "id": "janet",
-    "url": "/concepts/janet.html"
+    "label": "PL/SQL",
+    "id": "pl-sql",
+    "url": "/concepts/pl-sql.html"
   },
   {
     "label": "Batchfile",
     "id": "batch",
     "url": "/concepts/batch.html"
-  },
-  {
-    "label": "PL/SQL",
-    "id": "pl-sql",
-    "url": "/concepts/pl-sql.html"
   },
   {
     "label": "Jsonnet",
@@ -1957,14 +1957,14 @@ var autocompleteJs = [
     "url": "/concepts/jai.html"
   },
   {
-    "label": "Cryptol",
-    "id": "cryptol",
-    "url": "/concepts/cryptol.html"
-  },
-  {
     "label": "Keras",
     "id": "keras",
     "url": "/concepts/keras.html"
+  },
+  {
+    "label": "Cryptol",
+    "id": "cryptol",
+    "url": "/concepts/cryptol.html"
   },
   {
     "label": "Elvish",
@@ -2012,14 +2012,14 @@ var autocompleteJs = [
     "url": "/concepts/autoit.html"
   },
   {
-    "label": "K",
-    "id": "k",
-    "url": "/concepts/k.html"
-  },
-  {
     "label": "GLSL",
     "id": "glsl",
     "url": "/concepts/glsl.html"
+  },
+  {
+    "label": "K",
+    "id": "k",
+    "url": "/concepts/k.html"
   },
   {
     "label": "iOS",
@@ -2662,14 +2662,14 @@ var autocompleteJs = [
     "url": "/concepts/livescript.html"
   },
   {
-    "label": "Xtend",
-    "id": "xtend",
-    "url": "/concepts/xtend.html"
-  },
-  {
     "label": "Io",
     "id": "io",
     "url": "/concepts/io.html"
+  },
+  {
+    "label": "Xtend",
+    "id": "xtend",
+    "url": "/concepts/xtend.html"
   },
   {
     "label": "fay",

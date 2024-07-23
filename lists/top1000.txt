@@ -139,8 +139,8 @@ ABAP	130	1983	pl		1	2416	283	1	47	../concepts/abap.html
 V	131	2019	pl	Alexander Medvednikov	0	37480	0	0	29	../concepts/v.html
 ActionScript	132	1998	pl	Gary Grossman	6	1630	88	6	35	../concepts/actionscript.html
 Sass	133	2006	stylesheetLanguage	Hampton Lintorn-Catlin	2	3241	0	2	31	../concepts/sass.html
-PostCSS	134	2013	textMarkup	Andrey Sitnik	0	31566	0	0	29	../concepts/postcss.html
-Dhall	135	2017	dataNotation		6	4162	0	6	24	../concepts/dhall.html
+Dhall	134	2017	dataNotation		6	4162	0	6	24	../concepts/dhall.html
+PostCSS	135	2013	textMarkup	Andrey Sitnik	0	31566	0	0	29	../concepts/postcss.html
 Pony	136	2012	pl	Sylvan Clebsch	0	7684	0	0	40	../concepts/pony.html
 Verilog	137	1984	hardwareDescriptionLanguage	Phil Moorby and Prabhu Goel	0	5176	246	0	50	../concepts/verilog.html
 Flow	138	2014	pl		0	28333	0	1	23	../concepts/flow.html
@@ -199,15 +199,15 @@ ML	190	1973	pl	Robin Milner	0	2725	6	1	26	../concepts/ml.html
 M4	191	1977	pl	Brian Kernighan and Dennis Ritchie	71	715	0	71	29	../concepts/m4.html
 Vala	192	2006	pl		3	1171	0	3	34	../concepts/vala.html
 npm	193	2010	packageManager	Isaac Z. Schlueter	0	30173	0	0	21	../concepts/npm-pm.html
-Luna	194	2015	pl	Wojciech Danilo	0	6171	0	1	21	../concepts/luna.html
-GNU Octave	195	1988	pl	John W. Eaton	0	2406	0	0	40	../concepts/octave.html
-carp	196	2016	pl lisp	Erik Svedäng	0	5123	0	0	27	../concepts/carp.html
-QML	197	2009	pl		6	1131	0	6	28	../concepts/qml.html
-Koka	198	2012	pl	Daan Leijen	0	2579	0	0	37	../concepts/koka.html
-C3	199	2019	pl	Christoffer Lernö	0	1092	0	1	109	../concepts/c3.html
-Janet	200	2018	pl	Calvin Rose	0	4076	0	0	29	../concepts/janet.html
-Batchfile	201	1985	pl		0	4005	0	0	29	../concepts/batch.html
-PL/SQL	202	1991	pl		0	2355	2972	0	33	../concepts/pl-sql.html
+Janet	194	2018	pl	Calvin Rose	0	4076	0	0	30	../concepts/janet.html
+Luna	195	2015	pl	Wojciech Danilo	0	6171	0	1	21	../concepts/luna.html
+GNU Octave	196	1988	pl	John W. Eaton	0	2406	0	0	40	../concepts/octave.html
+carp	197	2016	pl lisp	Erik Svedäng	0	5123	0	0	27	../concepts/carp.html
+QML	198	2009	pl		6	1131	0	6	28	../concepts/qml.html
+Koka	199	2012	pl	Daan Leijen	0	2579	0	0	37	../concepts/koka.html
+C3	200	2019	pl	Christoffer Lernö	0	1092	0	1	109	../concepts/c3.html
+PL/SQL	201	1991	pl		0	2355	2972	0	33	../concepts/pl-sql.html
+Batchfile	202	1985	pl		0	4005	0	0	29	../concepts/batch.html
 Jsonnet	203	2014	dataNotation	Dave Cunningham	0	8244	0	0	24	../concepts/jsonnet.html
 Bourne shell	204	1977	pl	Stephen Bourne	562	1370	0	562	19	../concepts/bourne-shell.html
 Qt	205	1995	framework		12	4171	0	12	17	../concepts/qt.html
@@ -312,8 +312,8 @@ PgBouncer	303	2007	application	Frank McGeough	0	19139	0	0	17	../concepts/pgbounc
 Scikit-learn	304	2007	library	David Cournapeau	0	125147	0	0	16	../concepts/scikit-learn.html
 Scilab	305	1990	pl		0	1290	0	0	33	../concepts/scilab.html
 JAI	306	2014	pl	Jonathan Blow	0	1562	0	0	28	../concepts/jai.html
-Cryptol	307	2014	pl	Adam C. Foltzer	0	1509	0	0	29	../concepts/cryptol.html
-Keras	308	2015	library	François Chollet	0	116767	0	0	16	../concepts/keras.html
+Keras	307	2015	library	François Chollet	0	116767	0	0	16	../concepts/keras.html
+Cryptol	308	2014	pl	Adam C. Foltzer	0	1509	0	0	29	../concepts/cryptol.html
 Elvish	309	2013	pl	Qi Xiao	0	5698	0	0	19	../concepts/elvish.html
 PROMETHEUS	310	2012	pl	Matt T. Proud	0	70641	0	0	16	../concepts/prometheus.html
 hurl	311	2020	application	Orange S.A	0	2226	0	0	24	../concepts/hurl.html
@@ -323,8 +323,8 @@ mgmt	314	2015	pl	James Shubin	0	3878	0	0	20	../concepts/mgmt.html
 idyll	315	2017	pl		0	2218	0	0	24	../concepts/idyll.html
 mathics	316	2012	pl		0	2805	0	0	22	../concepts/mathics.html
 AutoIt	317	1999	pl	Jonathan Bennett	0	1011	0	0	40	../concepts/autoit.html
-K	318	1993	pl	Arthur Whitney	0	585	0	11	29	../concepts/k.html
-GLSL	319	1992	pl		28	450	0	28	25	../concepts/glsl.html
+GLSL	318	1992	pl		28	450	0	28	25	../concepts/glsl.html
+K	319	1993	pl	Arthur Whitney	0	585	0	11	29	../concepts/k.html
 iOS	320	2007	os		0	535588	5010	0	15	../concepts/ios.html
 Twig	321	2009	template		2	614	0	2	31	../concepts/twig.html
 Svelte	322	2019	pl	Rich Harris	2	71482	0	2	14	../concepts/svelte.html
@@ -453,8 +453,8 @@ tidyverse	444	2016	dataFlow library	Hadley Wickham	0	2071	0	1	16	../concepts/tid
 Veryl	445	2022	pl	Naoya Hatta	0	482	0	0	38	../concepts/veryl.html
 MariaDB	446	2009	queryLanguage		0	2710	0	0	17	../concepts/mariadb.html
 LiveScript	447	2011	pl	Jeremy Ashkenas and Satoshi Murakami and George Zahariev	0	395	0	1	32	../concepts/livescript.html
-Xtend	448	2011	pl	Sven Efftinge and Sebastian Zarnekow	3	321	0	3	29	../concepts/xtend.html
-Io	449	2002	pl	Steve Dekorte	0	461	0	0	40	../concepts/io.html
+Io	448	2002	pl	Steve Dekorte	0	461	0	0	40	../concepts/io.html
+Xtend	449	2011	pl	Sven Efftinge and Sebastian Zarnekow	3	321	0	3	29	../concepts/xtend.html
 fay	450	2012	pl	Chris Done	0	1594	0	0	19	../concepts/fay.html
 Latte	451	2008	template	David Grudl	0	1370	0	0	20	../concepts/latte.html
 SRL	452	2016	queryLanguage	Karim Geiger	0	2031	0	0	18	../concepts/srl.html
