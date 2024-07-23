@@ -1,15 +1,10 @@
 authors Hassam Alhajaji
  https://github.com/hassamalhajaji Hassam Alhajaji
 date 01/24/2023
-groups interviews frontpage All
 title A brief interview with Janet contributor Josef Pospíšil
 
-import postHeader.scroll
-printTitle
-thinColumns 2
-printAuthors
+import interviewHeader.scroll
 
-## Introduction
 Josef Pospíšil (Pepe) is a programming enthusiast, first with Basic in 1986, then the first Rubyist in the Czech Republic, and now a contributor to the language Janet.
  dateline
  https://github.com/pepe Josef Pospíšil
@@ -17,28 +12,34 @@ Josef Pospíšil (Pepe) is a programming enthusiast, first with Basic in 1986, t
  link ../concepts/ruby.html Rubyist
  link ../concepts/janet.html Janet
 
-endSnippet
+***
 
-## Interview
-*Hassam:* What language features do you think are underrated and why?
+? What language features do you think are underrated and why?
 *Pepe:* For me, as a former Rubyist and current Janet, it is the joy and comfort of the programmer. And not only for the seasoned professional but mainly for those new to the language or programming.
 
-*Hassam:* What can you tell us about the inception and evolution of Janet so far?
+***
+
+? What can you tell us about the inception and evolution of Janet so far?
 *Pepe:* I was not at the inception, but I know the story well enough to convey it. Bakpakin (Calvin Rose) created the Fennel language as the test bed for the ideas of the new LISP-like language on top of Lua. It was brilliant as it enabled a fast feedback cycle on top of the proven language and its virtual machine. As proof, it is still alive in excellent hands and evolving in its regard. When this prototype cleared the picture enough, Janet was started as a fresh take on the language design, wholly written in the C with custom code for every aspect of it. From parsing thru the bytecode and virtual machine to the mutable and immutable data types. This meant that the first couple of cycles of life, it was mostly making sure it did not segfault. Yet the approach brought sweet fruits:
  https://github.com/bakpakin Bakpakin
  link ../concepts/fennel.html Fennel
  link ../concepts/lua.html Lua
  link ../concepts/c.html C
+  match 1
 - 1. the code is compact and consistent. One can read and understand it broadly in one day if one knows the C programming language.
 - 2. the code is optimized yet hackable.
 - 3. all the products compiled or interpreted are performant in boot time and processing the data. I came to the language in the endless search for my last language. I was in the ClojureScript world at the time, but not happy. And here was the language which combined all the best I always valued in programming language design. From that point, the core stays mostly static, but the inner and outer circles spread outside. We added an event loop and ffi inside the language and a spork utility library outside it. And so much more. We are at the point of releasing the mythical 2.0 version in the coming time.
  link ../concepts/clojurescript.html ClojureScript
 
-*Hassam:* What are the underlying mechanisms in the future of programming language creation? What does that future look like?
+***
+
+? What are the underlying mechanisms in the future of programming language creation? What does that future look like?
 *Pepe:* This is very similar to the mystery of the evolution of the human race. This is one of the reasons I am so into programming language design. Mechanisms are mixed and hidden even for the creators at the inception. The future of the programming language landscape will stay the same: evolving all the time.
 
+****
+
 image images/pospisil.jpeg
- caption Thank you for your time Pepe and best of luck on the upcoming release! Image source
+ caption Image source. Thank you for your time Pepe and best of luck on the upcoming release!
   https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fpepe&psig=AOvVaw0skSHUmj_9LygxekcXJiuQ&ust=1674669821093000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCODGqbDl4PwCFQAAAAAdAAAAABAE Image source
 
 import footer.scroll
