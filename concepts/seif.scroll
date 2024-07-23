@@ -1,0 +1,13 @@
+import ../code/conceptPage.scroll
+
+id seif
+name Seif
+appeared 2017
+creators Aashish Sheshadri and Rohit Harchandani and Douglas Crockford
+tags protocol
+website https://www.crockford.com/seif.html
+paper https://github.com/paypal/seif-protocol/blob/master/seif-protocol-specification.pdf
+description The Seif Protocol is a message delivery system using secure JSON over TCP/IP. The Seif Handshake is the part of the protocol that establishes a secure session between two parties.
+originCommunity PayPal
+
+githubRepo https://github.com/paypal/seif-protocol
