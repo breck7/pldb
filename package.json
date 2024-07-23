@@ -45,5 +45,8 @@
     "scroll-cli": "^109.5.0",
     "scrollsdk": "^80.0.0",
     "semver": "^7.6.2"
+  },
+  "dependencies": {
+    "ky": "^1.4.0"
   }
 }
