@@ -1,0 +1,31 @@
+import ../code/conceptPage.scroll
+
+id smc
+name SMC
+appeared 2014
+creators Robert C. Martin
+tags pl
+standsFor State Machine Compiler
+description State Machine Compiler for Clean Code video series.
+fileExtensions sm
+writtenIn java make xml go dart yaml markdown c cpp
+
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 65
+ committers 3
+ files 79
+
+example
+ Initial: Locked
+ FSM: Turnstile
+ {
+   Locked    Coin    Unlocked    unlock
+   Locked    Pass    Locked      alarm
+   Unlocked  Coin    Unlocked    thankyou
+   Unlocked  Pass    Locked      lock
+ }
+
+githubRepo https://github.com/unclebob/CC_SMC
+ stars 291

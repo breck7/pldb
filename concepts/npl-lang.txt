@@ -4,7 +4,7 @@ NPL
 NPL is a programming language created in 1977.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
 
-#3593 on PLDB
+#3594 on PLDB
 47 Years Old
 
 NPL is a functional programming language with pattern matching designed by Rod Burstall and John Darlington in 1977. The language allows certain sets and logic constructs to appear on the right hand side of definitions, e.g.  setofeven(X) The NPL interpreter evaluates the list of generators from left to right so conditions can mention any bound variables that occur to their left. Read more on Wikipedia...

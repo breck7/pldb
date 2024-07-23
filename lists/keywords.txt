@@ -233,13 +233,13 @@ ROW|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL Microsoft Excel Google Sh
 IGNORE|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL MariaDB Amazon Redshift
 CROSS|_$^6|_$^5%|_$^PostgreSQL MySQL SQLite Transact-SQL MariaDB Amazon Redshift
 WHILE|_$^6|_$^5%|_$^Fortran MySQL Transact-SQL Modula-3 MariaDB Apex
-library|_$^6|_$^5%|_$^Dart Solidity VHDL Verilog SystemVerilog Sophia
 VALUE|_$^6|_$^5%|_$^COBOL PostgreSQL Transact-SQL Modula-3 Microsoft Excel Google Sheets
 REPLACE|_$^6|_$^5%|_$^COBOL PostgreSQL MySQL SQLite MariaDB Google Sheets
 RECURSIVE|_$^6|_$^5%|_$^COBOL Fortran PostgreSQL MySQL SQLite Transact-SQL
 OBJECT|_$^6|_$^5%|_$^COBOL PostgreSQL Redis Transact-SQL Modula-3 Apex
 LEADING|_$^6|_$^5%|_$^COBOL PostgreSQL MySQL Transact-SQL MariaDB Amazon Redshift
 BEFORE|_$^6|_$^5%|_$^COBOL PostgreSQL MySQL SQLite Transact-SQL MariaDB
+library|_$^6|_$^5%|_$^Dart Solidity VHDL Verilog SystemVerilog Sophia
 on|_$^6|_$^5%|_$^CoffeeScript GraphQL Chapel VHDL ABAP Apex
 property|_$^6|_$^5%|_$^Kotlin ABAP SystemVerilog TIScript orange JS++
 ref|_$^6|_$^5%|_$^C# Rust Chapel ABAP SystemVerilog nimrod
@@ -1550,9 +1550,6 @@ AndAlso|_$^2|_$^2%|_$^Visual Basic Visual Basic .NET
 Alias|_$^2|_$^2%|_$^Visual Basic Visual Basic .NET
 AddressOf|_$^2|_$^2%|_$^Visual Basic Visual Basic .NET
 AddHandler|_$^2|_$^2%|_$^Visual Basic Visual Basic .NET
-sync|_$^2|_$^2%|_$^Dart Chapel
-part|_$^2|_$^2%|_$^Dart ABAP
-deferred|_$^2|_$^2%|_$^Dart ABAP
 UNIT|_$^2|_$^2%|_$^COBOL Fortran
 SYNCHRONIZED|_$^2|_$^2%|_$^COBOL Apex
 SYNC|_$^2|_$^2%|_$^COBOL Redis
@@ -1596,6 +1593,9 @@ BLANK|_$^2|_$^2%|_$^COBOL Fortran
 ASSIGN|_$^2|_$^2%|_$^COBOL Fortran
 ASCENDING|_$^2|_$^2%|_$^COBOL Cypher Query Language
 AREAS|_$^2|_$^2%|_$^COBOL Microsoft Excel
+sync|_$^2|_$^2%|_$^Dart Chapel
+part|_$^2|_$^2%|_$^Dart ABAP
+deferred|_$^2|_$^2%|_$^Dart ABAP
 receive|_$^2|_$^2%|_$^Erlang ABAP
 Super|_$^2|_$^2%|_$^Objective-C Apex
 id|_$^2|_$^2%|_$^Objective-C ABAP
@@ -5288,9 +5288,6 @@ reverse|_$^1|_$^1%|_$^Ada
 abort|_$^1|_$^1%|_$^Ada
 NameOf|_$^1|_$^1%|_$^Visual Basic
 Async|_$^1|_$^1%|_$^Visual Basic
-rethrow|_$^1|_$^1%|_$^Dart
-factory|_$^1|_$^1%|_$^Dart
-covariant|_$^1|_$^1%|_$^Dart
 ZEROS|_$^1|_$^1%|_$^COBOL
 ZEROES|_$^1|_$^1%|_$^COBOL
 ZERO|_$^1|_$^1%|_$^COBOL
@@ -5541,6 +5538,9 @@ ALPHABETIC|_$^1|_$^1%|_$^COBOL
 ALPHABET|_$^1|_$^1%|_$^COBOL
 ADVANCING|_$^1|_$^1%|_$^COBOL
 ACCEPT|_$^1|_$^1%|_$^COBOL
+rethrow|_$^1|_$^1%|_$^Dart
+factory|_$^1|_$^1%|_$^Dart
+covariant|_$^1|_$^1%|_$^Dart
 orelse|_$^1|_$^1%|_$^Erlang
 bxor|_$^1|_$^1%|_$^Erlang
 bsr|_$^1|_$^1%|_$^Erlang
