@@ -227,8 +227,8 @@ YASnippet|_$^../concepts/yasnippet.html|_$^yasnippet|_$^1
 x86 Assembly|_$^../concepts/x86-assembly.html|_$^s ms|_$^2
 beef-lang|_$^../concepts/beef.html|_$^bf|_$^1
 OWL|_$^../concepts/owl.html|_$^owl|_$^1
-JSP|_$^../concepts/java-server-pages.html|_$^jsp jspf|_$^2
 GAP|_$^../concepts/gap.html|_$^g gap gd gi tst|_$^5
+JSP|_$^../concepts/java-server-pages.html|_$^jsp jspf|_$^2
 Click|_$^../concepts/click.html|_$^click|_$^1
 ECL|_$^../concepts/ecl.html|_$^ecl eclxml|_$^2
 kaitai|_$^../concepts/kaitai.html|_$^ksy|_$^1
@@ -282,6 +282,7 @@ SugarSS|_$^../concepts/sugarss.html|_$^sss|_$^1
 Closure Templates|_$^../concepts/closure-templates.html|_$^soy|_$^1
 TLA|_$^../concepts/tla.html|_$^tla|_$^1
 Nit|_$^../concepts/nit.html|_$^nit|_$^1
+nomnoml|_$^../concepts/nomnoml.html|_$^nomnoml|_$^1
 B|_$^../concepts/b.html|_$^b|_$^1
 chaiscript|_$^../concepts/chaiscript.html|_$^chai|_$^1
 Raku|_$^../concepts/raku.html|_$^pm6 raku rakumod 6pl 6pm nqp p6 p6l p6m pl pl6 pm t|_$^13
@@ -329,7 +330,6 @@ NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 BNF|_$^../concepts/bnf.html|_$^bnf|_$^1
 NewLisp|_$^../concepts/newlisp.html|_$^nl lisp lsp kif|_$^4
 X10|_$^../concepts/x10.html|_$^x10|_$^1
-nomnoml|_$^../concepts/nomnoml.html|_$^nomnoml|_$^1
 Logtalk|_$^../concepts/logtalk.html|_$^lgt logtalk|_$^2
 Inform|_$^../concepts/inform.html|_$^ni i7x|_$^2
 Xtext|_$^../concepts/xtext.html|_$^xtext|_$^1
@@ -387,8 +387,8 @@ SNOBOL|_$^../concepts/snobol.html|_$^snobol|_$^1
 BibTeX|_$^../concepts/bibtex.html|_$^bib bibtex|_$^2
 Objective-J|_$^../concepts/objective-j.html|_$^j sj|_$^2
 ASN.1|_$^../concepts/asn-1.html|_$^asn asn1|_$^2
-Snowball|_$^../concepts/snowball-programming-language.html|_$^sbl|_$^1
 Handlebars|_$^../concepts/handlebars.html|_$^handlebars hbs|_$^2
+Snowball|_$^../concepts/snowball-programming-language.html|_$^sbl|_$^1
 Pure Data|_$^../concepts/puredata.html|_$^pd|_$^1
 Classroom Object Oriented Language|_$^../concepts/cool.html|_$^cl|_$^1
 BlitzBasic|_$^../concepts/blitzbasic.html|_$^bb decls|_$^2
@@ -480,17 +480,17 @@ Carbon|_$^../concepts/carbon.html|_$^carbon|_$^1
 Unicon|_$^../concepts/unicon.html|_$^icn|_$^1
 PIC|_$^../concepts/pic.html|_$^pic chem|_$^2
 FreeMarker|_$^../concepts/freemarker.html|_$^ftl|_$^1
-Z|_$^../concepts/z-expressions.html|_$^zz|_$^1
 monte|_$^../concepts/monte.html|_$^mt|_$^1
-Blade|_$^../concepts/blade.html|_$^blade blade.php bladephp|_$^3
+Z|_$^../concepts/z-expressions.html|_$^zz|_$^1
 Basis Codec|_$^../concepts/basis-universal-format.html|_$^basis|_$^1
+Blade|_$^../concepts/blade.html|_$^blade blade.php bladephp|_$^3
 Slice|_$^../concepts/slice.html|_$^ice|_$^1
 JSONiq|_$^../concepts/jsoniq.html|_$^jq|_$^1
 JSON Lines|_$^../concepts/ld-json.html|_$^ldj jsonl|_$^2
 GAMS|_$^../concepts/general-algebraic-modeling-system.html|_$^gms|_$^1
-XS|_$^../concepts/xs.html|_$^xs|_$^1
 Coco|_$^../concepts/coco.html|_$^co|_$^1
 Sieve mail filtering language|_$^../concepts/sieve.html|_$^sieve siv|_$^2
+XS|_$^../concepts/xs.html|_$^xs|_$^1
 Asymptote|_$^../concepts/asymptote.html|_$^asy|_$^1
 LoomScript|_$^../concepts/loomscript.html|_$^ls|_$^1
 crmsh|_$^../concepts/crmsh.html|_$^crmsh pcmk|_$^2
@@ -531,10 +531,10 @@ Brightscript|_$^../concepts/roku-brightscript.html|_$^brs|_$^1
 GorillaScript|_$^../concepts/gorillascript.html|_$^gs|_$^1
 video|_$^../concepts/video.html|_$^.rkt|_$^1
 Hare|_$^../concepts/hare.html|_$^ha|_$^1
-Adventure Game Studio Script|_$^../concepts/ags-script.html|_$^asc ash|_$^2
-Kit|_$^../concepts/kit.html|_$^kit|_$^1
 Jupyter Notebook|_$^../concepts/jupyter-notebook.html|_$^ipynb|_$^1
 Gren|_$^../concepts/gren.html|_$^gren|_$^1
+Adventure Game Studio Script|_$^../concepts/ags-script.html|_$^asc ash|_$^2
+Kit|_$^../concepts/kit.html|_$^kit|_$^1
 GNU Assembler|_$^../concepts/gas.html|_$^s S|_$^2
 Edje Data Collection|_$^../concepts/edje-data-collection.html|_$^edc|_$^1
 GCC Machine Description|_$^../concepts/gcc-machine-description.html|_$^md|_$^1

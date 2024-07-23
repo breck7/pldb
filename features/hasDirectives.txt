@@ -81,6 +81,10 @@ let function1 x y =
 // Line directives as source maps can be used when compiling to F#:
 #line 25 &quot;C:\\Projects\\MyProject\\MyProject\\Script1&quot;
 
+#title: filename
+#zoom: 1
+#acyclicer: greedy
+
 #[test(test1)]
 embed (inline) sv{{{
     module test1;
@@ -89,10 +93,6 @@ embed (inline) sv{{{
         end
     endmodule
 }}}
-
-#title: filename
-#zoom: 1
-#acyclicer: greedy
 
 .PR POINT .PR
 .PR UPPER .PR
@@ -113,7 +113,7 @@ polar = a * [E ^ [b * 0+j1]]
 
 ***
 
-Languages *with* Directives include JavaScript, C, Python, Perl, Ruby, C#, Rust, Haskell, Erlang, Visual Basic, Ada, F#, Common Lisp, C2, Veryl, nomnoml, ALGOL 68, Jule, Turbo Pascal, FML, ScriptEase
+Languages *with* Directives include JavaScript, C, Python, Perl, Ruby, C#, Rust, Haskell, Erlang, Visual Basic, Ada, F#, Common Lisp, C2, nomnoml, Veryl, ALGOL 68, Jule, Turbo Pascal, FML, ScriptEase
 
 ***
 
