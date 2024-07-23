@@ -52,6 +52,7 @@ dataNotation
 dataVis
 dataFlow
 dataValidationLanguage
+diagramLang
 diffFormat
 esolang
 grammarLanguage
