@@ -42,14 +42,22 @@ episodesParser
  description The number of episodes so far.
  extends abstractIntegerMeasureParser
  float sortIndex 1.5
-appleRatingsParser
+appleParser
  description The number of ratings on Apple podcasts.
  extends abstractIntegerMeasureParser
  float sortIndex 1.7
-appleRatingsLinkParser
+appleLinkParser
  description A link to the podcast on Apple Podcasts.
  extends abstractUrlMeasureParser
  float sortIndex 1.8
+youtubeParser
+ description The number of subscribers on YouTube.
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.9
+youtubeLinkParser
+ description Link to YouTube channel.
+ extends abstractUrlMeasureParser
+ float sortIndex 1.91
 
 id CoRecursive
 website https://corecursive.com
@@ -57,8 +65,17 @@ description The stories and people behind the code. Hear stories of software dev
 creators Adam Gordon Bell
 started 2018
 episodes 93
-appleRatings 182
-appleRatingsLink https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512
+apple 182
+appleLink https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512
+
+id Code Report
+website https://x.com/code_report
+description Focused on programming languages and showing how to solve problems in different languages.
+creators Conor Hoekstra
+started 2018
+episodes 348
+youtube 60500
+youtubeLink https://www.youtube.com/@code_report
 
 id ADSP
 website https://adspthepodcast.com/
@@ -66,8 +83,8 @@ description The Algorithms + Data Structures = Programs Podcast (aka ADSP: The P
 creators Conor Hoekstra and Bryce Adelstein Lelbach
 started 2020
 episodes 190
-appleRatings 11
-appleRatingsLink https://podcasts.apple.com/ca/podcast/algorithms-data-structures-programs/id1541407369
+apple 11
+appleLink https://podcasts.apple.com/ca/podcast/algorithms-data-structures-programs/id1541407369
 
 id Two's Complement
 website https://www.twoscomplement.org/
@@ -75,8 +92,8 @@ description Two’s Complement is a programming podcast, hosted by Matt Godbolt 
 creators Ben Rady and Matt Godbolt
 started 2020
 episodes 48
-appleRatings 21
-appleRatingsLink https://podcasts.apple.com/us/podcast/twos-complement/id1546393988
+apple 21
+appleLink https://podcasts.apple.com/us/podcast/twos-complement/id1546393988
 
 id Darknet Diaries
 website https://darknetdiaries.com
@@ -84,8 +101,10 @@ description True stories from the dark side of the Internet. A podcast about hac
 creators Jack Rhysider
 started 2017
 episodes 157
-appleRatings 7200
-appleRatingsLink https://podcasts.apple.com/us/podcast/darknet-diaries/id1296350485
+apple 7200
+appleLink https://podcasts.apple.com/us/podcast/darknet-diaries/id1296350485
+youtube 362000
+youtubeLink https://www.youtube.com/@JackRhysider
 
 id Lex Fridman
 website https://lexfridman.com/podcast
@@ -93,8 +112,10 @@ description Conversations about science, technology, history, philosophy, and th
 creators Lex Fridman
 started 2018
 episodes 437
-appleRatings 10900
-appleRatingsLink https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584
+apple 10900
+appleLink https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584
+youtube 4000000
+youtubeLink https://www.youtube.com/@lexfridman
 
 id CppCast
 website https://cppcast.com
@@ -102,8 +123,10 @@ description The first podcast by C++ developers for C++ developers.
 creators Timur Doumler and Phil Nash
 started 2015
 episodes 384
-appleRatings 105
-appleRatingsLink https://podcasts.apple.com/us/podcast/cppcast/id968703120
+apple 105
+appleLink https://podcasts.apple.com/us/podcast/cppcast/id968703120
+youtube 7200
+youtubeLink https://www.youtube.com/@cppcast9168
 
 id The Future of Coding
 website https://futureofcoding.org/episodes
@@ -111,8 +134,8 @@ description Exploring the future of programming and computing.
 creators Steve Krouse
 started 2017
 episodes 72
-appleRatings 25
-appleRatingsLink https://podcasts.apple.com/us/podcast/future-of-coding/id1265527976
+apple 25
+appleLink https://podcasts.apple.com/us/podcast/future-of-coding/id1265527976
 
 id Oxide and Friends
 website https://oxide.computer/podcasts/oxide-and-friends
@@ -120,8 +143,10 @@ description Oxide hosts a weekly Discord show where we discuss a wide range of t
 creators Bryan Cantrill and Adam Leventhal
 started 2021
 episodes 115
-appleRatings 34
-appleRatingsLink https://podcasts.apple.com/us/podcast/oxide-and-friends/id1625932222
+apple 34
+appleLink https://podcasts.apple.com/us/podcast/oxide-and-friends/id1625932222
+youtube 3600
+youtubeLink https://www.youtube.com/watch?v=7hF9AM8LM4c&list=PLaakI37KgzsGz-Dj2hCHhzIR2nwC7vfdu
 
 id The Array Cast
 website https://www.arraycast.com
@@ -129,8 +154,10 @@ description We explore the Array Languages of APL, J, k, q and offshoots. If you
 creators Conor Hoekstra
 started 2019
 episodes 83
-appleRatings 30
-appleRatingsLink https://podcasts.apple.com/us/podcast/the-array-cast/id1568833451
+apple 30
+appleLink https://podcasts.apple.com/us/podcast/the-array-cast/id1568833451
+youtube 16
+youtubeLink https://www.youtube.com/@arraycast
 
 id Soft Skills Engineering
 website https://softskills.audio
@@ -138,8 +165,10 @@ description A humorous take on the human side of software engineering.
 creators Jamison Dance and Dave Smith
 started 2015
 episodes 416
-appleRatings 255
-appleRatingsLink https://podcasts.apple.com/us/podcast/soft-skills-engineering/id1091341048
+apple 255
+appleLink https://podcasts.apple.com/us/podcast/soft-skills-engineering/id1091341048
+youtube 680
+youtubeLink https://www.youtube.com/@softskillsengineering
 
 id StaffEng
 website https://podcast.staffeng.com
@@ -147,8 +176,8 @@ description Conversations with software engineers who have progressed beyond the
 creators David Noël-Romas and Alex Kessinger
 started 2020
 episodes 22
-appleRatings 24
-appleRatingsLink https://podcasts.apple.com/us/podcast/staffeng/id1559261829
+apple 24
+appleLink https://podcasts.apple.com/us/podcast/staffeng/id1559261829
 
 id 2.5 Admins
 website https://2.5admins.com
@@ -156,8 +185,10 @@ description 2.5 Admins is a podcast featuring two sysadmins called Allan Jude an
 creators Jim Salter and Allan Jude and Joe Ressington
 started 2020
 episodes 202
-appleRatings 10
-appleRatingsLink https://podcasts.apple.com/gb/podcast/2-5-admins/id1509561572
+apple 10
+appleLink https://podcasts.apple.com/gb/podcast/2-5-admins/id1509561572
+youtube 580
+youtubeLink https://www.youtube.com/@25Admins
 
 id Software Engineering Radio
 website https://se-radio.net
@@ -165,8 +196,10 @@ description From the IEEE. Targeted at the professional software developer.
 creators Markus Völter
 started 2006
 episodes 624
-appleRatings 255
-appleRatingsLink https://podcasts.apple.com/us/podcast/software-engineering-radio-the-podcast-for/id120906714
+apple 255
+appleLink https://podcasts.apple.com/us/podcast/software-engineering-radio-the-podcast-for/id120906714
+youtube 21000
+youtubeLink https://www.youtube.com/watch?v=_bOjMEnxyaI&list=PLHJB2bhmgB7esz0BxMCt1jJwsoaqWtFff
 
 id The Engineering Room with Dave Farley
 website https://www.youtube.com/playlist?list=PLwLLcwQlnXByuoAE-jYYg8MSNrzodVtJX
@@ -174,8 +207,10 @@ description Interviews and discussions about engineering practices.
 creators Dave Farley
 started 2020
 episodes 30
-appleRatings 4
-appleRatingsLink https://podcasts.apple.com/gb/podcast/the-engineering-room-with-dave-farley/id1728703568
+apple 4
+appleLink https://podcasts.apple.com/gb/podcast/the-engineering-room-with-dave-farley/id1728703568
+youtube 205000
+youtubeLink https://www.youtube.com/@ContinuousDelivery
 
 id ThoughtWorks Technology Podcast
 website https://www.thoughtworks.com/en-us/insights/podcasts/technology-podcasts
@@ -183,8 +218,10 @@ description Discussions on the latest in technology and software development.
 creators Rebecca Parsons and Alexey Boas
 started 2018
 episodes 100
-appleRatings 13
-appleRatingsLink https://podcasts.apple.com/gb/podcast/thoughtworks-technology-podcast/id881136697
+apple 13
+appleLink https://podcasts.apple.com/gb/podcast/thoughtworks-technology-podcast/id881136697
+youtube 39800
+youtubeLink https://www.youtube.com/playlist?list=PL8f-F_Zx8XA-4Em_iFP-Rx5LIUV9O6HdH
 
 id Software Unscripted
 website https://x.com/rtfeldman
@@ -192,8 +229,8 @@ description Richard Feldman talks about programming and related topics.
 creators Richard Feldman
 started 2019
 episodes 94
-appleRatings 20
-appleRatingsLink https://podcasts.apple.com/us/podcast/software-unscripted/id1602572955
+apple 20
+appleLink https://podcasts.apple.com/us/podcast/software-unscripted/id1602572955
 
 id The Data Engineering Show
 website https://www.dataengineeringshow.com
@@ -201,8 +238,10 @@ description The Data Engineering Show is a podcast for data engineering and BI p
 creators Eldad Farkash and Boaz Farkash
 started 2021
 episodes 37
-appleRatings 7
-appleRatingsLink https://podcasts.apple.com/us/podcast/the-data-engineering-show/id1561927688
+apple 7
+appleLink https://podcasts.apple.com/us/podcast/the-data-engineering-show/id1561927688
+youtube 3600
+youtubeLink https://www.youtube.com/@thedataengineeringshow
 
 id CS Primer Show
 website https://show.csprimer.com
@@ -210,8 +249,10 @@ description A show about computer science and computer science education by Char
 creators Charlie Harrington
 started 2023
 episodes 18
-appleRatings 6
-appleRatingsLink https://podcasts.apple.com/us/podcast/the-cs-primer-show/id1680382257
+apple 6
+appleLink https://podcasts.apple.com/us/podcast/the-cs-primer-show/id1680382257
+youtube 1200
+youtubeLink https://www.youtube.com/@cs_primer
 
 id Book Overflow
 website https://bookoverflow.io
@@ -219,8 +260,10 @@ description Book Overflow is a podcast created for software engineers by softwar
 creators Carter Morgan and Nathan Toups
 started 2024
 episodes 7
-appleRatings 3
-appleRatingsLink https://podcasts.apple.com/us/podcast/book-overflow/id1745257325
+apple 3
+appleLink https://podcasts.apple.com/us/podcast/book-overflow/id1745257325
+youtube 1500
+youtubeLink https://www.youtube.com/@BookOverflowPod
 
 id Syntax
  // via stolinksi https://www.reddit.com/r/programming/comments/1dwvezp/comment/lbxg1fu/
@@ -229,8 +272,10 @@ description Tasty Treats for Web Developers. They cover from JavaScript framewor
 creators Wes Bos and Scott Tolinski and CJ Reynolds
 started 2017
 episodes 794
-appleRatings 132
-appleRatingsLink https://podcasts.apple.com/ca/podcast/syntax-tasty-web-development-treats/id1253186678
+apple 132
+appleLink https://podcasts.apple.com/ca/podcast/syntax-tasty-web-development-treats/id1253186678
+youtube 359000
+youtubeLink https://www.youtube.com/@syntaxfm
 
 id Signals & Threads
  // via cmanikan17 https://www.reddit.com/r/programming/comments/1dwvezp/comment/lby6g45/
@@ -239,8 +284,10 @@ description Listen in on Jane Street’s Ron Minsky as he has conversations with
 creators Ron Minsky
 started 2020
 episodes 20
-appleRatings 67
-appleRatingsLink https://podcasts.apple.com/us/podcast/signals-and-threads/id1528917129
+apple 67
+appleLink https://podcasts.apple.com/us/podcast/signals-and-threads/id1528917129
+youtube 26000
+youtubeLink https://www.youtube.com/watch?v=GJX5VbKvh90&list=PLCiAikFFaMJouorRXDSfS2UoKV4BfKyQm
 
 id Programming Throwdown
  // via ck108860 https://www.reddit.com/r/programming/comments/1dwvezp/comment/lbynumj/
@@ -249,8 +296,10 @@ description Programming Throwdown educates Computer Scientists and Software Engi
 creators Patrick Wheeler and Jason Gauci
 started 2018
 episodes 175
-appleRatings 548
-appleRatingsLink https://podcasts.apple.com/us/podcast/programming-throwdown/id427166321
+apple 548
+appleLink https://podcasts.apple.com/us/podcast/programming-throwdown/id427166321
+youtube 260
+youtubeLink https://www.youtube.com/@programmingthrowdown4793
 
 id Coding Blocks
 website https://www.codingblocks.net
@@ -258,8 +307,10 @@ description Pragmatic talk about software design best practices: design patterns
 creators Allen Underwood and Joe Zack and Michael Outlaw
 started 2013
 episodes 238
-appleRatings 926
-appleRatingsLink https://podcasts.apple.com/us/podcast/coding-blocks/id769189585
+apple 926
+appleLink https://podcasts.apple.com/us/podcast/coding-blocks/id769189585
+youtube 7100
+youtubeLink https://www.youtube.com/codingblocks
 
 id Hanselminutes
 website https://hanselminutes.com
@@ -267,8 +318,10 @@ description Hanselminutes is Fresh Air for Developers. A weekly commute-time pod
 creators Scott Hanselman
 started 2006
 episodes 950
-appleRatings 372
-appleRatingsLink https://itunes.apple.com/us/podcast/hanselminutes/id117488860
+apple 372
+appleLink https://itunes.apple.com/us/podcast/hanselminutes/id117488860
+youtube 177000
+youtubeLink https://www.youtube.com/@shanselman
 
 id .NET Rocks!
 website https://www.dotnetrocks.com
@@ -276,8 +329,10 @@ description .NET Rocks! is a weekly talk show for anyone interested in programmi
 creators Richard Campbell and Carl Franklin
 started 2002
 episodes 1905
-appleRatings 233
-appleRatingsLink https://podcasts.apple.com/us/podcast/net-rocks/id130068596
+apple 233
+appleLink https://podcasts.apple.com/us/podcast/net-rocks/id130068596
+youtube 1400
+youtubeLink https://www.youtube.com/@NETRocks-pr4iv
 
 This ScrollSet was inpsired by this post on HackerNews.
  https://scroll.pub/blog/scrollsets.html ScrollSet
