@@ -1,15 +1,17 @@
 import ../code/conceptPage.scroll
 
 id janet
-name janet
+name Janet
 appeared 2018
 creators Calvin Rose
 tags pl
 website https://janet-lang.org
 latestVersion v1.34.0
+webRepl https://janet-lang.org/
 writtenIn c yaml bourne-shell markdown make meson svg assembly-language
 
 clocExtensions janet
+docs https://janet-lang.org/docs/index.html https://janet.guide/all/
 repoStats
  firstCommit 2017
  commits 4325
@@ -32,7 +34,7 @@ example
  (joy/server app 8000)
 
 githubRepo https://github.com/janet-lang/janet
- stars 2667
+ stars 3400
  forks 185
  subscribers 57
  created 2017

@@ -423,7 +423,7 @@ const measures = [
   },
   {
     "Name": "webRepl",
-    "Values": 114,
+    "Values": 115,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -1388,7 +1388,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 372,
+    "Values": 373,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://aardvark-docs.programit.repl.co/",
