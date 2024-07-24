@@ -8,9 +8,9 @@ tags pl
 website http://hazel.org/
 description Hazel is a live functional programming environment rooted in the principles of type theory.
 writtenIn reason markdown ocaml css tex yaml make html svg
+compilesTo javascript
 
 isOpenSource true
-compilesTo javascript
 fileType text
 centralPackageRepositoryCount 0
 repoStats

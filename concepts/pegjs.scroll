@@ -10,9 +10,9 @@ latestVersion v0.10.0
 webRepl https://pegjs.org/online
 description PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
 writtenIn javascript markdown css json typescript html yaml
+compilesTo javascript
 
 isOpenSource true
-compilesTo javascript
 clocExtensions pegjs
 fileType text
 centralPackageRepositoryCount 0

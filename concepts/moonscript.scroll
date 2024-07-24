@@ -8,9 +8,9 @@ website http://moonscript.org/
 latestVersion v0.5.0
 webRepl http://moonscript.org/compiler/
 writtenIn lua markdown yaml make bourne-shell c
+compilesTo lua
 
 isOpenSource true
-compilesTo lua
 tryItOnline moonscript
 fileType text
 docs https://moonscript.org/reference/

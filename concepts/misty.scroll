@@ -4,15 +4,11 @@ id misty
 name Misty
 creators Douglas Crockford
 tags pl
-
 website https://www.crockford.com/misty/
-isPublicDomain true
-
 description The Misty Programming Language is a dynamic, general-purpose, transitional, secure, distributed process language. It has a gentle syntax that is intended to benefit students, as well as advanced features such as capability security and lambdas with lexical scoping.
-
 writtenIn mckeeman-form
 
-hasSemanticIndentation true
+isPublicDomain true
 
 example
  {
@@ -39,6 +35,8 @@ example
      + (radicand / result)
  ) / 2
 
+lineCommentToken #
+
+hasSemanticIndentation true
 hasComments true
  # A comment
-lineCommentToken #

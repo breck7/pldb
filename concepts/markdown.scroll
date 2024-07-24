@@ -11,10 +11,10 @@ webRepl https://daringfireball.net/projects/markdown/dingus
 webRepl https://dillinger.io/
 webRepl https://stackedit.io/app#
 writtenIn perl
+compilesTo html
 
 isOpenSource true
 influencedBy atx
-compilesTo html
 clocExtensions contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook
 fileType text
 docs https://www.markdownguide.org/basic-syntax/

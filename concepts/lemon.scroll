@@ -12,9 +12,9 @@ tags grammarLanguage
 website https://www.hwaci.com/sw/lemon/
 description The Lemon program is an LALR(1) parser generator. It takes a context free grammar and converts it into a subroutine that will parse a file using that grammar.
 writtenIn c
+compilesTo c
 
 isPublicDomain true
-compilesTo c
 influencedBy bison yacc
 docs https://sqlite.org/src/doc/trunk/doc/lemon.html
 

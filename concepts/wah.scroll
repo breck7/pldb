@@ -7,9 +7,9 @@ creators Tom MacWright
 tags pl
 description a slightly higher-level language superset of webassembly
 writtenIn markdown wasm clojure
+compilesTo wasm
 
 isOpenSource true
-compilesTo wasm
 supersetOf wasm
 fileType text
 centralPackageRepositoryCount 0
