@@ -3,25 +3,27 @@ authors Breck Yunits
 date 6/22/2024
 groups All frontpage pldbBehindTheScenes
 openGraphImage pairProgramming.jpg
-title Pair Programming Session: Adding two languages to PLDB
+title Video: Adding a language to PLDB
 
 import postHeader.scroll
 printTitle
 printAuthors
-thinColumns 2
+mediumColumns 1
 
 How often do you pair program?
  dateline
 
 For me the answer is *not enough*.
 
-endSnippet
+***
 
 Much of my programming knowledge I got sitting behind coders at work in Redmond, San Francisco, Mountain View, et cetera.
 
-I learned from programmers older than me, younger than me, and my contemporaries.
+I learned from programmers older than me, younger than me, and the same age.
 
 All groups used brilliant tools, commands, and DSLs I had never seen before.
+
+***
 
 PLDB is a remote, decentralized open source project, so it is very rare that any of us contributors get to "pair program" with each other.
 
@@ -29,10 +31,12 @@ Luckily, screencasts with video overlays turn out to be a good substitute for in
 
 With that introduction, I present the video below.
 
+***
+
 endColumns
 wideColumns 1
 
-youTube https://www.youtube.com/embed/Wc5hYEzvz-k
+youTube https://www.youtube.com/embed/az7T-GgxiKU
 
 ****
 
