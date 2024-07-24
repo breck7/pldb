@@ -9,7 +9,7 @@ Flare is a programming language created in 2001 by Dmitriy Myshkin and Eliezer Y
  https://pldb.io/concepts/../lists/creators.html#q=Michael%20Baj Michael Baj
  https://pldb.io/concepts/../lists/creators.html#q=Richard%20Walker Richard Walker
 
-#2841 on PLDB
+#2842 on PLDB
 23 Years Old
 
 Flare is a proposal for the first "annotative" programming language.  In dialects of LISP, both the program and the program data are represented as lists.  In Flare, the program, program data, and ideally the program state, are all represented as well-formed XML.  Because XML is annotative (additional sub-elements can be easily added to any parent element without destroying the structural integrity of existing data) and extensible (new sub-element types can be easily created), these properties are shared by Flare objects and Flare programs.  This fundamental idiom enables a wide variety of new patterns, and should enable significantly greater modularity, cleanness, ease of adaptation, and so on.

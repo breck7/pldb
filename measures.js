@@ -186,7 +186,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1138,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -903,7 +903,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1129,
+    "Values": 1130,
     "Coverage": "22%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -913,7 +913,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1090,
+    "Values": 1091,
     "Coverage": "21%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -923,7 +923,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1129,
+    "Values": 1130,
     "Coverage": "22%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -933,7 +933,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1129,
+    "Values": 1130,
     "Coverage": "22%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -943,7 +943,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 1126,
+    "Values": 1127,
     "Coverage": "22%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1086,12 +1086,22 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1138,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
     "Type": "string",
     "SortIndex": 1.999,
+    "IsComputed": false
+  },
+  {
+    "Name": "compilesTo",
+    "Values": 80,
+    "Coverage": "1%",
+    "Question": "Which language(s) does this language primarily compile to?",
+    "Example": "beam-bytecode",
+    "Type": "string",
+    "SortIndex": 1.9991,
     "IsComputed": false
   },
   {
@@ -1255,16 +1265,6 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "compilesTo",
-    "Values": 79,
-    "Coverage": "1%",
-    "Question": "Which language(s) does this language primarily compile to?",
-    "Example": "beam-bytecode",
-    "Type": "string",
-    "SortIndex": 2.2,
-    "IsComputed": false
-  },
-  {
     "Name": "inputLanguages",
     "Values": 9,
     "Coverage": "0%",
@@ -1306,7 +1306,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1138,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",

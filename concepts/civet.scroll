@@ -9,9 +9,9 @@ website https://civet.dev/
 webRepl https://civet.dev/playground
 description A TypeScript superset that favors more types and less typing
 writtenIn json typescript markdown javascript svg coffeescript bourne-shell yaml css html awk bash toml
+compilesTo typescript javascript
 
 supersetOf typescript
-compilesTo typescript javascript
 influencedBy coffeescript elm livescript flow haskell perl python ruby crystal bash
 docs https://civet.dev/reference
 repoStats

@@ -14,10 +14,10 @@ webRepl https://try.scroll.pub/
 description Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
 fileExtensions scroll
 writtenIn parsers scrollnotation javascript yaml css json
+compilesTo html csv tsv json rss txt
 
 isPublicDomain true
 isOpenSource true
-compilesTo html csv tsv json rss txt
 influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordpress tex mathematica dplyr antlr reactjs
 subsetOf scrollnotation
 related markdown scrollnotation parsers

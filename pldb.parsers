@@ -2776,6 +2776,7 @@ forkOfParser
 compilesToParser
  description Which language(s) does this language primarily compile to?
  extends abstractFilenameRelationshipParser
+ float sortIndex 1.9991
 inputLanguagesParser
  description Which language(s) does this take as input? For compilers, what languages does this compile compile?
  extends abstractFilenameRelationshipParser

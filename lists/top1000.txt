@@ -11,13 +11,13 @@ C	2	1972	pl	Dennis Ritchie	382	3793768	59919	417	99	../concepts/c.html
 Python	3	1991	pl	Guido van Rossum	375	2952597	46976	392	119	../concepts/python.html
 Java	4	1995	pl	James Gosling	132	5581347	85206	141	108	../concepts/java.html
 C++	5	1985	pl	Bjarne Stroustrup	275	4128238	61098	288	80	../concepts/cpp.html
-HTML	6	1991	textMarkup	Tim Berners-Lee	469	5570873	69531	474	54	../concepts/html.html
-CSS	7	1996	stylesheetLanguage	Håkon Wium Lie	384	2881847	45617	386	51	../concepts/css.html
+HTML	6	1991	textMarkup	Tim Berners-Lee	470	5570873	69531	476	54	../concepts/html.html
+CSS	7	1996	stylesheetLanguage	Håkon Wium Lie	385	2881847	45617	387	51	../concepts/css.html
 Perl	8	1987	pl	Larry Wall	107	493239	13482	110	85	../concepts/perl.html
 Ruby	9	1995	pl	Yukihiro Matsumoto	88	394798	11438	92	107	../concepts/ruby.html
 PHP	10	1995	pl	Rasmus Lerdorf	56	2357682	30349	59	100	../concepts/php.html
 XML	11	1996	dataNotation	Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John W. Cowan	373	1917452	42277	382	43	../concepts/xml.html
-JSON	12	2001	dataNotation	Douglas Crockford	554	355741	9228	575	48	../concepts/json.html
+JSON	12	2001	dataNotation	Douglas Crockford	555	355741	9228	576	48	../concepts/json.html
 Go	13	2009	pl	Rob Pike and Ken Thompson and Robert Griesemer	77	687156	6403	79	97	../concepts/go.html
 TypeScript	14	2012	pl	Anders Hejlsberg	145	217940	1542	155	85	../concepts/typescript.html
 SQL	15	1974	queryLanguage	Donald D. Chamberlin and Raymond F. Boyce	43	7179119	219617	53	51	../concepts/sql.html
@@ -30,7 +30,7 @@ Swift	21	2014	pl	Chris Lattner	27	364099	3754	29	86	../concepts/swift.html
 Scala	22	2004	pl	Martin Odersky	27	139471	4525	27	86	../concepts/scala.html
 Lua	23	1993	pl	Roberto Ierusalimschy	59	64497	1106	67	82	../concepts/lua.html
 MATLAB	24	1984	pl	Cleve Moler	13	2661579	32228	15	60	../concepts/matlab.html
-Haskell	25	1990	pl	Paul Hudak and John Hughes	77	37628	495	85	82	../concepts/haskell.html
+Haskell	25	1990	pl	Paul Hudak and John Hughes	78	37628	495	86	82	../concepts/haskell.html
 Kotlin	26	2011	pl	Andrey Breslav	19	131287	5276	19	84	../concepts/kotlin.html
 Clojure	27	2007	pl lisp	Rich Hickey	21	59464	469	21	77	../concepts/clojure.html
 Elixir	28	2011	pl	José Valim	13	57449	214	13	95	../concepts/elixir.html
@@ -45,9 +45,9 @@ Dart	36	2011	pl	Lars Bak	9	38325	208	9	71	../concepts/dart.html
 Mathematica	37	1988	pl	Stephen Wolfram	6	148741	1553	8	47	../concepts/mathematica.html
 COBOL	38	1959	pl	Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper	4	187188	2616	5	54	../concepts/cobol.html
 CUDA	39	2007	pl		14	38623	769	14	37	../concepts/cuda.html
-Markdown	40	2004	textMarkup	John Gruber and Aaron Swartz	1020	12504	0	1033	37	../concepts/markdown.html
+Markdown	40	2004	textMarkup	John Gruber and Aaron Swartz	1021	12504	0	1034	37	../concepts/markdown.html
 Visual Basic	41	1991	pl		12	15898	3294	13	48	../concepts/visual-basic.html
-YAML	42	2001	dataNotation	Clark Evans and Oren Ben-Kiki and Ingy döt Net	715	13981	61	724	33	../concepts/yaml.html
+YAML	42	2001	dataNotation	Clark Evans and Oren Ben-Kiki and Ingy döt Net	716	13981	61	725	33	../concepts/yaml.html
 Ada	43	1980	pl	Jean Ichbiah	10	12116	2184	13	66	../concepts/ada.html
 Pascal	44	1970	pl	Niklaus Wirth	48	7708	102	54	63	../concepts/pascal.html
 Solidity	45	2014	contractLanguage	Christian Reitwiessner and Alex Beregszaszi	5	32733	937	8	52	../concepts/solidity.html
@@ -208,7 +208,7 @@ Koka	199	2012	pl	Daan Leijen	0	2579	0	0	37	../concepts/koka.html
 C3	200	2019	pl	Christoffer Lernö	0	1092	0	1	109	../concepts/c3.html
 PL/SQL	201	1991	pl		0	2355	2972	0	33	../concepts/pl-sql.html
 Batchfile	202	1985	pl		0	4005	0	0	29	../concepts/batch.html
-Bourne shell	203	1977	pl	Stephen Bourne	562	1370	0	562	19	../concepts/bourne-shell.html
+Bourne shell	203	1977	pl	Stephen Bourne	563	1370	0	563	19	../concepts/bourne-shell.html
 Jsonnet	204	2014	dataNotation	Dave Cunningham	0	8244	0	0	24	../concepts/jsonnet.html
 Qt	205	1995	framework		12	4171	0	12	17	../concepts/qt.html
 Eve	206	2016	pl		0	7875	0	0	24	../concepts/eve.html
@@ -523,7 +523,7 @@ P4	514	2014	pl		0	666	0	0	24	../concepts/p4.html
 BlitzMax	515	2014	pl		0	498	0	0	27	../concepts/blitzmax.html
 Whitespace	516	2003	esolang		0	1650	0	0	17	../concepts/whitespace.html
 Whiley	517	2009	pl	David J. Pearce	0	396	0	0	34	../concepts/whiley.html
-Dockerfile	518	2013	pl		197	201	0	198	21	../concepts/dockerfile.html
+Dockerfile	518	2013	pl		198	201	0	199	21	../concepts/dockerfile.html
 Csound	519	1985	pl		0	521	0	0	26	../concepts/csound.html
 E	520	1997	pl	Mark S. Miller	0	406	0	0	33	../concepts/e.html
 opam-pm	521	2012	packageManager	Fabrice Le Fessant	0	2222	0	0	16	../concepts/opam-pm.html
@@ -534,7 +534,7 @@ htmx	525	2020	template		0	8226	0	0	14	../concepts/htmx.html
 clay	526	2010	pl	KS Sreeram and Joe Groff	0	548	0	0	25	../concepts/clay.html
 Reia	527	2008	pl		0	913	0	0	20	../concepts/reia.html
 RFC	528	1969	notation	Steve Crocker	0	3520	0	0	15	../concepts/rfc.html
-Nix	529	2003	packageManager		71	200	0	71	22	../concepts/nix.html
+Nix	529	2003	packageManager		72	200	0	72	22	../concepts/nix.html
 Differential Datalog	530	2018	pl	Leonid Ryzhyk	0	1540	0	0	17	../concepts/differential-datalog.html
 PureBasic	531	1998	pl		0	426	0	0	30	../concepts/purebasic.html
 checked-c	532	2015	pl	David Tarditi	0	3328	0	0	15	../concepts/checked-c.html
