@@ -1,0 +1,24 @@
+import ../code/conceptPage.scroll
+
+id slab
+name Slab
+appeared 2024
+tags textMarkup
+description Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
+example
+ frag page(titl)
+   doctype html
+   html
+     head
+       title= titl
+     body
+       h1= titl
+       content
+ 
+ let t = "My first Slab page"
+ page(t)
+   .main-content
+     p Welcome to Slab! This is a simple example of how Slab works.
+
+githubRepo https://github.com/hypered/slab
+website https://slab-lang.org/
