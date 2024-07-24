@@ -450,7 +450,7 @@ h4.scrollQuestion {
 <td>Scott Hanselman</td>
 <td>2006</td>
 <td>950</td>
-<td><a href="https://itunes.apple.com/us/podcast/hanselminutes/id117488860">372</a></td>
+<td><a href="https://podcasts.apple.com/us/podcast/hanselminutes/id117488860">372</a></td>
 <td><a href="https://www.youtube.com/@shanselman">177000</a></td>
 </tr>
 <tr><td>Syntax</td>
@@ -676,7 +676,169 @@ h4.scrollQuestion {
   e.currentTarget.classList.toggle('expandedTable');
  });
  </script>
-<p class="scrollParagraph">This <a href="https://scroll.pub/blog/scrollsets.html">ScrollSet</a> was inpsired by <a href="https://news.ycombinator.com/item?id=40889280">this post</a> on HackerNews.</p>
+<table id="table1119" class="scrollTable">
+ <thead><tr><th>Name</th>
+
+<th>Values</th>
+
+<th>Coverage</th>
+
+<th>Question</th>
+
+<th>Example</th>
+
+<th>Type</th>
+
+<th>Source</th>
+
+<th>SortIndex</th>
+
+<th>IsComputed</th>
+
+<th>IsRequired</th>
+
+<th>IsConceptDelimiter</th>
+
+<th>Crux</th>
+</tr></thead>
+ <tbody><tr><td>id</td>
+<td>26</td>
+<td>100%</td>
+<td>What is the ID of this concept?</td>
+<td>CoRecursive</td>
+<td>string</td>
+<td></td>
+<td>1</td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr><td>website</td>
+<td>26</td>
+<td>100%</td>
+<td>A measure that contains a single word.</td>
+<td><a href="https://corecursive.com">https://corecursive.com</a></td>
+<td>string</td>
+<td></td>
+<td>1.1</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>description</td>
+<td>26</td>
+<td>100%</td>
+<td>A brief description of the podcast.</td>
+<td>The stories and people behind the code. Hear stories of software development from interesting people.</td>
+<td>string</td>
+<td></td>
+<td>1.2</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>creators</td>
+<td>26</td>
+<td>100%</td>
+<td>The creators of the podcast.</td>
+<td>Adam Gordon Bell</td>
+<td>string</td>
+<td></td>
+<td>1.3</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>started</td>
+<td>26</td>
+<td>100%</td>
+<td>Year podcast began.</td>
+<td>2018</td>
+<td>number</td>
+<td></td>
+<td>1.4</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>episodes</td>
+<td>26</td>
+<td>100%</td>
+<td>The number of episodes so far.</td>
+<td>93</td>
+<td>number</td>
+<td></td>
+<td>1.5</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>appleLink</td>
+<td>25</td>
+<td>96%</td>
+<td>Apple link and number of ratings.</td>
+<td><a href="https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512">https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512</a></td>
+<td>string</td>
+<td></td>
+<td>1.7</td>
+<td>true</td>
+<td></td>
+<td></td>
+<td>appleLink</td>
+</tr>
+<tr><td>apple</td>
+<td>25</td>
+<td>96%</td>
+<td>Number of ratings.</td>
+<td>182</td>
+<td>number</td>
+<td></td>
+<td>1.71</td>
+<td>true</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>youtubeLink</td>
+<td>20</td>
+<td>76%</td>
+<td>YouTube link and number of subscribers.</td>
+<td><a href="https://www.youtube.com/@code_report">https://www.youtube.com/@code_report</a></td>
+<td>string</td>
+<td></td>
+<td>1.8</td>
+<td>true</td>
+<td></td>
+<td></td>
+<td>youtubeLink</td>
+</tr>
+<tr><td>youtube</td>
+<td>20</td>
+<td>76%</td>
+<td>Number of subscribers.</td>
+<td>60500</td>
+<td>number</td>
+<td></td>
+<td>1.81</td>
+<td>true</td>
+<td></td>
+<td></td>
+<td></td>
+</tr></tbody>
+ </table>
+ <script>
+ document.querySelector('#table1119').addEventListener('click', e => {
+  if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
+  e.currentTarget.classList.toggle('expandedTable');
+ });
+ </script>
+<p class="scrollParagraph">This <a href="https://scroll.pub/blog/scrollsets.html">ScrollSet</a> was inspired by <a href="https://news.ycombinator.com/item?id=40889280">this post</a> on HackerNews.</p>
 <p class="scrollViewSource doNotPrint">
  <a href="https://github.com/breck7/pldb/blob/main/lists/podcasts.scroll">View source</a>
 </p>
