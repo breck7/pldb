@@ -1,0 +1,29 @@
+Slab
+====
+
+Slab is a text markup language created in 2024.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222024%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2024
+
+#4402 on PLDB
+0 Years Old
+
+git clone https://github.com/hypered/slab
+
+Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
+
+- Tags: text markup language
+- Slab is developed on GitHub
+
+frag page(titl)
+  doctype html
+  html
+    head
+      title= titl
+    body
+      h1= titl
+      content
+
+let t = &quot;My first Slab page&quot;
+page(t)
+  .main-content
+    p Welcome to Slab! This is a simple example of how Slab works.
