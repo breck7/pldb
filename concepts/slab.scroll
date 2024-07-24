@@ -4,7 +4,18 @@ id slab
 name Slab
 appeared 2024
 tags textMarkup
+website https://slab-lang.org/
 description Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
+writtenIn html haskell nix bourne-shell json yaml css markdown dockerfile
+compilesTo html
+
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 335
+ committers 1
+ files 216
+
 example
  frag page(titl)
    doctype html
@@ -21,4 +32,3 @@ example
      p Welcome to Slab! This is a simple example of how Slab works.
 
 githubRepo https://github.com/hypered/slab
-website https://slab-lang.org/

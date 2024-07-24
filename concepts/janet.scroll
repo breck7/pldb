@@ -32,7 +32,6 @@ example
  (def app (joy/handler routes))
  
  (joy/server app 8000)
-
 subreddit https://www.reddit.com/r/janetlang/
 
 githubRepo https://github.com/janet-lang/janet
