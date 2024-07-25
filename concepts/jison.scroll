@@ -12,7 +12,6 @@ writtenIn javascript csharp html json css xml ruby markdown yaml php yacc make
 isOpenSource true
 fileType text
 docs https://gerhobbelt.github.io/jison/docs/
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2009
  commits 709
@@ -132,8 +131,6 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
       | e DOT id LPAREN e RPAREN
       | LPAREN e RPAREN
       ;
-
-isbndb 0
 
 githubLanguage Jison
  fileExtensions jison

@@ -13,7 +13,6 @@ isOpenSource true
 fileType text
 docs https://docs.terra.money/
 rosettaCode http://www.rosettacode.org/wiki/Category:Terra
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2012
  commits 1603
@@ -180,8 +179,6 @@ linguistGrammarRepo https://github.com/pyk/sublime-terra
   	assert(r.data[i].imag == 2*(i+1))
   end
   assert(tostring(Array(int)) == "Array(int32)")
-
-isbndb 0
 
 githubLanguage Terra
  fileExtensions t

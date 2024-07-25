@@ -14,7 +14,6 @@ tryItOnline pony
 clocExtensions pony
 fileType text
 rosettaCode http://www.rosettacode.org/wiki/Category:Pony
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2012
  commits 7370
@@ -97,8 +96,6 @@ linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
     new create(env: Env) =>
       env.out.print("Hello, world.")
   
-
-isbndb 0
 
 githubLanguage Pony
  fileExtensions pony

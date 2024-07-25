@@ -8,7 +8,6 @@ description eRuby (Embedded Ruby) is a templating system that embeds Ruby into a
 
 clocExtensions ERB erb
 fileType text
-centralPackageRepositoryCount 0
 country Various
 originCommunity https://github.com/ruby
 
@@ -101,8 +100,6 @@ linguistGrammarRepo https://github.com/atom/language-ruby
   		</div>
   	</div>
   <% end %>
-
-isbndb 0
 
 githubLanguage HTML+ERB
  fileExtensions erb erbdeface rhtml

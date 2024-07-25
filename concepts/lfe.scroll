@@ -14,7 +14,6 @@ clocExtensions lfe
 fileType text
 docs http://docs.lfe.io/current/index.html
 rosettaCode http://www.rosettacode.org/wiki/Category:LFE
-centralPackageRepositoryCount 0
 country United States
 originCommunity https://github.com/lfe
 reference https://lfe.io/
@@ -204,8 +203,6 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   (defun get-church (integer)
     (get-church (zero) 0 integer))
   
-
-isbndb 0
 
 githubLanguage LFE
  fileExtensions lfe

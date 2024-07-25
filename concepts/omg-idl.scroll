@@ -27,5 +27,3 @@ example
      typedef A::L1 L3; // A::L1 is OK
      B::L1 opC (in L3 l_3); // All OK no ambiguities
  };
-
-isbndb 0

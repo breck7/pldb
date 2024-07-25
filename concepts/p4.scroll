@@ -9,7 +9,6 @@ website http://p4.org
 isOpenSource true
 clocExtensions p4
 fileType text
-centralPackageRepositoryCount 0
 country United States
 originCommunity Barefoot Networks && Intel && Stanford University && Princeton University && Google && Microsoft Research
 
@@ -94,8 +93,6 @@ linguistGrammarRepo https://github.com/TakeshiTseng/atom-language-p4
       size : INGRESS_MIRROR_ACL_TABLE_SIZE;
   }
   
-
-isbndb 0
 
 githubLanguage P4
  fileExtensions p4

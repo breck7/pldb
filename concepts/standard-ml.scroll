@@ -13,7 +13,6 @@ clocExtensions fun sig sml
 fileType text
 docs http://www.cs.cmu.edu/~rwh/isml/book.pdf
 quineRelay Standard ML
-centralPackageRepositoryCount 0
 ubuntuPackage mlton
 country United States
 originCommunity Bell Laboratories and Princeton University
@@ -102,8 +101,6 @@ linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
                      end
      end
   
-
-isbndb 0
 
 githubLanguage Standard ML
  fileExtensions ml fun sig sml

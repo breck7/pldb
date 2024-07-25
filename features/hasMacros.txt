@@ -131,6 +131,11 @@ end macro table
 
 #define CYCLES 20
 
+.de P
+.  br
+.  sp .8v
+..
+
 ; http://www.arclanguage.org/tut.txt
 ; We know enough now to start writing macros.  Macros are basically
 ; functions that generate code.  Of course, generating code is easy;
@@ -155,11 +160,6 @@ end macro table
 ; function call.  Instead it should be replaced by the result of
 ; evaluating the body of the macro definition, (list &#39;+ 1 2).
 ; This is called the &quot;expansion&quot; of the macro call.
-
-.de P
-.  br
-.  sp .8v
-..
 
 // _SortCases_
 //
@@ -225,7 +225,7 @@ endmacro;
 
 ***
 
-Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Julia, Erlang, Prolog, Nim, Racket, Scheme, Factor, C3, Slope, Nemerle, Dylan, Pike, Arc, groff, High Level Assembly, Gerbil Scheme, Speedie, Bel, Wax, Bio, YAMP, honu
+Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Julia, Erlang, Prolog, Nim, Racket, Scheme, Factor, C3, Slope, Nemerle, Dylan, Pike, groff, Arc, High Level Assembly, Gerbil Scheme, Speedie, Bel, Wax, Bio, YAMP, honu
 
 ***
 

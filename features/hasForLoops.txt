@@ -1,12 +1,6 @@
 hasForLoops
 ===========
 
-// Jule has for loops with while-next iterations
-let mut i = 0
-for i &lt; 10; i++ {
-    // ...
-}
-
 let mut sum = 0
 for let c in &quot;hellö wörld&quot;
   match c
@@ -17,12 +11,18 @@ for let c in &quot;hellö wörld&quot;
       &quot;w&quot; =&gt; sum += 5
       &quot;d&quot; =&gt; sum += 6
 
+// Jule has for loops with while-next iterations
+let mut i = 0
+for i &lt; 10; i++ {
+    // ...
+}
+
 while i in 10
   &quot;hello: $i&quot;
 
 ***
 
-Languages *with* hasForLoops include C3, Jule, bog, Speedie, Aardvark, hecl
+Languages *with* hasForLoops include C3, bog, Jule, Speedie, Aardvark, hecl
 
 ***
 

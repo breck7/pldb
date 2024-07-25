@@ -11,7 +11,6 @@ fileType text
 wordRank 2930
 docs https://graphviz.org/doc/info/lang.html
 antlr https://github.com/antlr/grammars-v4/tree/master/dot
-centralPackageRepositoryCount 0
 country United States
 originCommunity AT&T Labs Research
 reference https://www.graphviz.org/pdf/dotguide.pdf
@@ -125,8 +124,6 @@ linguistGrammarRepo https://github.com/textmate/graphviz.tmbundle
       2 -> Y [label=1];
       47 -> 29 -> 16 -> GFWYBD -> WYBD -> BD -> D [label=1];
   }
-
-isbndb 0
 
 githubLanguage Graphviz (DOT)
  fileExtensions dot gv

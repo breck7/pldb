@@ -14,7 +14,6 @@ fileType text
 wordRank 4418
 docs https://mercurylang.org/documentation/documentation.html
 rosettaCode http://www.rosettacode.org/wiki/Category:Mercury
-centralPackageRepositoryCount 0
 country Australia
 originCommunity University of Melbourne
 
@@ -110,8 +109,6 @@ linguistGrammarRepo https://github.com/sebgod/mercury-tmlanguage
   main(!IO) :-
   	io.write_string("Hello, world\n", !IO).
   
-
-isbndb 0
 
 githubLanguage Mercury
  fileExtensions m moo

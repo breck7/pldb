@@ -10,7 +10,6 @@ standsFor Nullsoft Software Install Script
 fileType text
 codeMirror nsis
 rosettaCode http://www.rosettacode.org/wiki/Category:NSIS
-centralPackageRepositoryCount 0
 country United States
 originCommunity Nullsoft, Inc
 
@@ -135,8 +134,6 @@ linguistGrammarRepo https://github.com/github-linguist/NSIS
   
   !endif # !___X64__NSH___
   
-
-isbndb 0
 
 githubLanguage NSIS
  fileExtensions nsi nsh

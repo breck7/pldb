@@ -165,9 +165,9 @@ import std::io;
 (load-mod my-module)
 (load &quot;examples/test.slo&quot;)
 
-import settings.scroll
-
 #import: filename
+
+import settings.scroll
 
 import runtime;
 
@@ -186,18 +186,18 @@ package PackageA {
     local paramA: u32 = 1;
 }
 
-import x10.io.Console;
-
 import &quot;http://www.xtext.org/example/Domainmodel&quot;
 import &quot;http://www.xtext.org/example/Domainmodel&quot; as dmodel
 
+import x10.io.Console;
+
 import m &#39;math&#39;
+
+let {print} = import &quot;std.io&quot;
 
 use std::fs
 use std::sys::{self, open, O_RDWR}
 use std::math::*
-
-let {print} = import &quot;std.io&quot;
 
 import fmt
 
@@ -205,7 +205,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, Scroll, nomnoml, Flow9, ArkScript, Veryl, Dale, X10, Xtext, Cyber, Jule, bog, Cwerg, SAKO, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, nomnoml, Scroll, Flow9, ArkScript, Dale, Veryl, Xtext, X10, Cyber, bog, Jule, Cwerg, SAKO, Speedie, Aardvark
 
 ***
 

@@ -15,7 +15,6 @@ isOpenSource true
 clocExtensions toml
 fileType text
 docs https://toml.io/en/
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2013
  commits 856
@@ -93,8 +92,6 @@ linguistGrammarRepo https://github.com/textmate/toml.tmbundle
     inputs-digest = "841a246fc6ac2a2ccb2ae3907a0ff3432f13e3fc44bb3c09388b0c931ef7d641"
     solver-name = "gps-cdcl"
     solver-version = 1
-
-isbndb 0
 
 githubLanguage TOML
  fileExtensions toml

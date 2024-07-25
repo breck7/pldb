@@ -5,8 +5,6 @@ name Chomski
 appeared 2007
 tags pl
 
-centralPackageRepositoryCount 0
-
 wikipedia https://en.wikipedia.org/wiki/Chomski
  example
   cat inputFileName | chomski -s '[-n]{plus;} <>{count;print;}'

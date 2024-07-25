@@ -31,10 +31,10 @@ a = b;
 
 count = 0
 
+let pldb = &quot;pldb&quot;
+
 let mut x = 0
 x = 20
-
-let pldb = &quot;pldb&quot;
 
 (set x 42)
 
@@ -44,7 +44,7 @@ ALPHA = BETA = GAMMA = 2DELTA + 1$
 
 ***
 
-Languages *with* Assignment include JavaScript, C, Python, Ruby, PHP, Go, C#, R, Bash, PowerShell, Swift, Lua, Kotlin, Elixir, Ada, Pascal, Nim, Fortran, Pug, Smalltalk, Ini, Make, AutoHotkey, Eiffel, ML, Janet, C3, PL/I, AMPL, progsbase, Oberon, C2, Simula, BCPL, Dylan, Io, Algol, Reia, Seed7, PL/M, Cyber, Jule, bog, CPL, Modula, SAKO, Mary, Speedie, Aardvark, Wax, Ion, BALGOL, Superplan
+Languages *with* Assignment include JavaScript, C, Python, Ruby, PHP, Go, C#, R, Bash, PowerShell, Swift, Lua, Kotlin, Elixir, Ada, Pascal, Nim, Fortran, Pug, Smalltalk, Ini, Make, AutoHotkey, Eiffel, ML, Janet, C3, PL/I, AMPL, progsbase, Oberon, C2, Simula, BCPL, Dylan, Io, Algol, Reia, PL/M, Seed7, Cyber, bog, Jule, CPL, Modula, SAKO, Speedie, Mary, Aardvark, Wax, Ion, BALGOL, Superplan
 
 ***
 
