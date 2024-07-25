@@ -1,0 +1,12 @@
+tagCell
+ extends permalinkCell
+tagWithOptionalFolderCell
+ description A group name optionally combined with a folder path. Only used when referencing tags, not in posts.
+ extends stringCell
+scrollTagsParser
+ crux tags
+ description Set tags.
+ example
+  tags All
+ extends abstractTopLevelSingleMetaParser
+ catchAllCellType tagCell

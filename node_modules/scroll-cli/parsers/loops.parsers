@@ -3,10 +3,10 @@ abstractPostLoopParser
  extends abstractScrollParser
  cruxFromId
  cells commandWordCell
- catchAllCellType groupNameWithOptionalFolderCell
+ catchAllCellType tagWithOptionalFolderCell
  javascript
   get files() {
-   return this.root.file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+   return this.root.file.getFilesWithTagsForEmbedding(this.getWordsFrom(1))
   }
 
 loopParser
@@ -78,12 +78,12 @@ loopWordsParser
    return this.getWordsFrom(1)
   }
 
-loopGroupsParser
- crux groups
+loopTagsParser
+ crux tags
  extends abstractItemsProviderParser
- catchAllCellType groupNameWithOptionalFolderCell
- description Set this to iterate over scroll files in a folder. Provide both the folder and group name like this: [folder]/[groupName]
+ catchAllCellType tagWithOptionalFolderCell
+ description Set this to iterate over scroll files in a folder. Provide both the folder and group name like this: [folder]/[tag]
  javascript
   get items() {
-   return this.root.file.getFilesInGroupsForEmbedding(this.getWordsFrom(1))
+   return this.root.file.getFilesWithTagsForEmbedding(this.getWordsFrom(1))
   }

@@ -1,7 +1,7 @@
-groups All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.keywordsImports
+tags All
 title List of all keywords used in all programming languages
 
 import header.scroll

@@ -1,7 +1,7 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
 id	4975	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
 name	4975	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
-appeared	4974	99%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
+appeared	4975	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
 creators	1449	29%	What are the name(s) of the original creators of the language delimited by " and "?	Matthew Steel	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
 measurements	4975	100%	How many measurements do we have about this thing?	11	number		1.11	true			
@@ -16,7 +16,7 @@ download	41	0%	What is a URL to the download page for this language?	https://dev
 latestVersion	639	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
 exampleCount	4975	100%	How many examples do we have written in this language?	2	number		1.5	true			
 rank	4975	100%	How does this concept rank amongst all other concepts?	1274	number		1.5	true			
-lastActivity	4974	99%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
+lastActivity	4975	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
 writtenInCount	1139	22%	How many languages is this implementation written in?	3	number		1.6	true			
 pldbScore	4975	100%	What is the combined score of this language across all the categories of rankings?	21382	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			

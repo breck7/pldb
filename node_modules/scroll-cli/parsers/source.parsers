@@ -7,6 +7,6 @@ printSourceParser
  javascript
   compile() {
    const file = this.root.file
-   const files = file.getFilesInGroupsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
+   const files = file.getFilesWithTagsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
    return `${files.map(file => file.filePath + "\n " + file.originalScrollCode.replace(/\n/g, "\n ") ).join("\n")}`
   }

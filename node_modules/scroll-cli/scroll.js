@@ -30,7 +30,7 @@ const scrollKeywords = {
   image: "image",
   date: "date",
   endSnippet: "endSnippet",
-  groups: "groups",
+  tags: "tags",
   keyboardNav: "keyboardNav",
   replace: "replace",
   replaceJs: "replaceJs",
@@ -55,7 +55,7 @@ const SVGS = {
   email: `<svg viewBox="3 5 24 20" width="24" height="20" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 0, -289.0625)"><path style="opacity:1;stroke:none;stroke-width:0.49999997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 5 5 C 4.2955948 5 3.6803238 5.3628126 3.3242188 5.9101562 L 14.292969 16.878906 C 14.696939 17.282876 15.303061 17.282876 15.707031 16.878906 L 26.675781 5.9101562 C 26.319676 5.3628126 25.704405 5 25 5 L 5 5 z M 3 8.4140625 L 3 23 C 3 24.108 3.892 25 5 25 L 25 25 C 26.108 25 27 24.108 27 23 L 27 8.4140625 L 17.121094 18.292969 C 15.958108 19.455959 14.041892 19.455959 12.878906 18.292969 L 3 8.4140625 z " transform="translate(0,289.0625)" id="rect4592"/></g></svg>`,
   home: `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg>`
 }
-const CSV_FIELDS = ["date", "title", "permalink", "authors", "groups", "wordCount", "minutes"]
+const CSV_FIELDS = ["date", "title", "permalink", "authors", "tags", "wordCount", "minutes"]
 const unCamelCase = str => str.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, match => match.toUpperCase())
 
 class ScrollFileSystem extends TreeFileSystem {
@@ -96,8 +96,8 @@ const escapeCommas = str => (typeof str === "string" && str.includes(",") ? `"${
 const defaultScrollParser = new TreeFileSystem().getParser(Disk.getFiles(path.join(__dirname, "parsers")).filter(file => file.endsWith(PARSERS_FILE_EXTENSION)))
 const DefaultScrollParser = defaultScrollParser.parser // todo: remove?
 
-// todo: groups is currently matching partial substrings
-const getGroup = (groupName, files) => files.filter(file => file.buildsHtml && file.groups.includes(groupName))
+// todo: tags is currently matching partial substrings
+const getFilesWithTag = (tag, files) => files.filter(file => file.buildsHtml && file.tags.includes(tag))
 
 const measureCache = new Map()
 const parseMeasures = parser => {
@@ -526,8 +526,8 @@ class ScrollFile {
   }
 
   // keyboard nav is always in the same folder. does not currently support cross folder
-  isInKeyboardNavGroup(file) {
-    return file.buildsHtml && file.hasKeyboardNav && file.groups.includes(this.primaryGroupName)
+  includeFileInKeyboardNav(file) {
+    return file.buildsHtml && file.hasKeyboardNav && file.tags.includes(this.primaryTag)
   }
 
   get linkToPrevious() {
@@ -535,7 +535,7 @@ class ScrollFile {
       // Dont provide link to next unless keyboard nav is on
       return undefined
     let file = this._nextAndPrevious(this.allScrollFiles, this.timeIndex).previous
-    while (!this.isInKeyboardNavGroup(file)) {
+    while (!this.includeFileInKeyboardNav(file)) {
       file = this._nextAndPrevious(this.allScrollFiles, file.timeIndex).previous
     }
     return file.permalink
@@ -546,7 +546,7 @@ class ScrollFile {
       // Dont provide link to next unless keyboard nav is on
       return undefined
     let file = this._nextAndPrevious(this.allScrollFiles, this.timeIndex).next
-    while (!this.isInKeyboardNavGroup(file)) {
+    while (!this.includeFileInKeyboardNav(file)) {
       file = this._nextAndPrevious(this.allScrollFiles, file.timeIndex).next
     }
     return file.permalink
@@ -612,20 +612,16 @@ class ScrollFile {
     return (viewSourceBaseUrl ? viewSourceBaseUrl.replace(/\/$/, "") + "/" : "") + this.filename
   }
 
-  get groups() {
-    return this.scrollProgram.get(scrollKeywords.groups) || ""
+  get tags() {
+    return this.scrollProgram.get(scrollKeywords.tags) || ""
   }
 
-  get primaryGroupName() {
-    return this.groups.split(" ")[0]
+  get primaryTag() {
+    return this.tags.split(" ")[0]
   }
 
-  get primaryGroup() {
-    return getGroup(this.primaryGroupName, this.allScrollFiles)
-  }
-
-  getFilesInGroupsForEmbedding(groupNames, limit) {
-    if (!groupNames || !groupNames.length)
+  getFilesWithTagsForEmbedding(tags, limit) {
+    if (!tags || !tags.length)
       return this.allHtmlFiles
         .filter(file => file !== this) // avoid infinite loops. todo: think this through better.
         .map(file => {
@@ -633,10 +629,10 @@ class ScrollFile {
         })
         .slice(0, limit)
     let arr = []
-    groupNames.forEach(name => {
+    tags.forEach(name => {
       if (!name.includes("/"))
         return (arr = arr.concat(
-          getGroup(name, this.allScrollFiles)
+          getFilesWithTag(name, this.allScrollFiles)
             .map(file => {
               return { file, relativePath: "" }
             })
@@ -647,7 +643,7 @@ class ScrollFile {
       const relativePath = parts.join("/")
       const folderPath = path.join(this.folderPath, path.normalize(relativePath))
       const files = this.fileSystem.getScrollFilesInFolder(folderPath)
-      const filtered = getGroup(group, files).map(file => {
+      const filtered = getFilesWithTag(group, files).map(file => {
         return { file, relativePath: relativePath + "/" }
       })
 
@@ -830,7 +826,7 @@ printTitle`,
 printFeed All`,
       "footer.scroll": `importOnly
 pageFooter`,
-      "helloWorld.scroll": `groups All
+      "helloWorld.scroll": `tags All
 import header.scroll
 
 thinColumns
