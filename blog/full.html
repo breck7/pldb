@@ -405,7 +405,7 @@ h4.scrollQuestion {
  <a href="https://github.com/breck7/pldb/blob/main/blog/full.scroll"><svg xmlns="http://www.w3.org/2000/svg" width="92pt" height="92pt" viewBox="0 0 92 92"><path d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371"/></svg></a>
 </div>
 
-<div class="scrollKeyboardNav" style="display:none;"><a href="hello-world.html">hello-world.html</a> · full.html · <a href="leetSheets.html">leetSheets.html</a><script>document.addEventListener('keydown', function(event) {
+<div class="scrollKeyboardNav" style="display:none;"><a href="hello-world.html">hello-world.html</a> · full.html · <a href="danielKallin.html">danielKallin.html</a><script>document.addEventListener('keydown', function(event) {
   if (document.activeElement !== document.body) return
   const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
   if (event.key === "ArrowLeft")
@@ -415,7 +415,50 @@ h4.scrollQuestion {
  });</script></div>
 <div class="scrollSection"><h1 class="scrollTitle"><a href="full.html">PLDB.io - a Programming Language DataBase</a></h1>
 </div>
-<div class="scrollColumns" style="column-width:35ch;"><div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="leetSheets.html">Introducing a new term: Leet Sheets</a></h1>
+<div class="scrollColumns" style="column-width:35ch;"><div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="danielKallin.html">A brief interview with nomnoml creator Daniel Kallin</a></h1>
+<p class="scrollByLine">by <a href="https://x.com/breckyunits">Breck Yunits</a></p>
+</div>
+<p class="scrollParagraph"><span class="scrollDateline">July 25, 2024 — </span>Daniel Kallin's <a href="https://skanaar.github.io/">brilliant homepage</a> shows technical chops and design passion. Therefore it's not surprising that Daniel created <a href="https://www.nomnoml.com/">nomnoml</a>: a fast language and tool for generating beautiful diagrams. Daniel sat down with us to talk about nomnoml, which he designed for users to "feel like you're drawing with Ascii". Thank you for your time Daniel!</p>
+<figure class="scrollCaptionedFigure" style="width:300px; margin: auto;"><a href="images/nomnoml.png" target="_blank"  ><img src="images/nomnoml.png" width="300" height="undefined" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://www.nomnoml.com/#view/%5B%3Cframe%3E%20A%20brief%20interview%20with%20Daniel%20Kallin%7C%0A%5Bnomnoml.com%5D%20-%3E%20%5Bnomnoml%20pldb%20interview%5D%0A%5Bpldb.io%5D%20-%3E%20%5Bnomnoml%20pldb%20interview%5D%0A%5D">Diagram made with nomnoml.</a></p></figcaption></figure>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What motivated you to make your own diagramming language?</h4>
+<p class="scrollParagraph"><strong>Daniel</strong>: I was motivated by my own needs and my curiosity. Existing diagramming tools were labor intensive to use and generated diagrams that weren’t very visually pleasing. I felt I could do better.</p>
+</div>
+<p class="scrollParagraph">A domain specific language was a natural choice. Less work than building a full WYSIWYG editor. A huge benefit is that you can generate the code externally, work on it with your favourite editor and save the code locally.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What have you enjoyed most about running an open source project for ten years?</h4>
+</div>
+<p class="scrollParagraph"><strong>Daniel:</strong> Hearing that people like the tool is a big driving force for me. Most people say really nice things and that is great. The occasional code contribution is also nice.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What would be your advice for someone just getting into language design?</h4>
+</div>
+<p class="scrollParagraph"><strong>Daniel:</strong> Just dive straight in. Create lots of examples and see what it takes to parse them. Then both the language and the parser will evolve in tandem.</p>
+<p class="scrollParagraph">And please do consider other human languages than just English that your parser should support. There is plenty of Nomnoml diagrams with labels in Chinese or Korean, and those characters have to be supported in a good way.</p>
+<div class="dinkus"><span>⁂</span></div>
+<figure class="scrollCaptionedFigure" style=""><a href="images/danielKallin.jpg" target="_blank"  ><img src="images/danielKallin.jpg" width="600" height="600" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://skanaar.github.io/daniel/cv.html">Image source</a>. Thank you for your time Daniel!</p></figcaption></figure>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<script src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><p class="scrollViewSource">
+ <a href="https://github.com/breck7/pldb/blob/main/blog/danielKallin.scroll">View source</a>
+</p>
+</div>
+
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="leetSheets.html">Introducing a new term: Leet Sheets</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">July 15, 2024 — </span>Today PLDB introduces a new term to the English Language: "Leet Sheet".</p>
@@ -450,22 +493,6 @@ h4.scrollQuestion {
 <p class="scrollParagraph">Yes. <a href="../concepts/scroll.html">Scroll</a> is the language PLDB is written in and the Leet Sheet for Scroll currently is below and is <a href="https://github.com/breck7/scroll/blob/main/leetsheet.scroll">autogenerated from the Scroll source code</a>:</p>
 <embed src="scrollLeetSheet.pdf" width="500" height="375" type="application/pdf">
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
- {
-  if (!navigator.clipboard) return
-  const button = document.createElement("span")
-  button.classList.add("scrollCopyButton")
-  block.appendChild(button)
-  button.addEventListener("click", async () => {
-    await navigator.clipboard.writeText(block.innerText)
-    button.classList.add("scrollCopiedButton")
-  })
- }
-))
-</script>
-
-
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><p class="scrollViewSource">
  <a href="https://github.com/breck7/pldb/blob/main/blog/leetSheets.scroll">View source</a>

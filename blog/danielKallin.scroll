@@ -1,0 +1,46 @@
+authors Breck Yunits
+ https://x.com/breckyunits Breck Yunits
+date 7/25/2024
+title A brief interview with nomnoml creator Daniel Kallin
+
+import interviewHeader.scroll
+
+Daniel Kallin's brilliant homepage shows technical chops and design passion. Therefore it's not surprising that Daniel created nomnoml: a fast language and tool for generating beautiful diagrams. Daniel sat down with us to talk about nomnoml, which he designed for users to "feel like you're drawing with Ascii". Thank you for your time Daniel!
+ dateline
+ https://www.nomnoml.com/ nomnoml
+ https://skanaar.github.io/ brilliant homepage
+ link nomnoml ../concepts/nomnoml.html
+
+image images/nomnoml.png
+ width 300
+ caption Diagram made with nomnoml.
+  https://www.nomnoml.com/#view/%5B%3Cframe%3E%20A%20brief%20interview%20with%20Daniel%20Kallin%7C%0A%5Bnomnoml.com%5D%20-%3E%20%5Bnomnoml%20pldb%20interview%5D%0A%5Bpldb.io%5D%20-%3E%20%5Bnomnoml%20pldb%20interview%5D%0A%5D
+
+***
+
+? What motivated you to make your own diagramming language?
+*Daniel*: I was motivated by my own needs and my curiosity. Existing diagramming tools were labor intensive to use and generated diagrams that weren’t very visually pleasing. I felt I could do better.
+
+A domain specific language was a natural choice. Less work than building a full WYSIWYG editor. A huge benefit is that you can generate the code externally, work on it with your favourite editor and save the code locally.
+
+***
+
+? What have you enjoyed most about running an open source project for ten years?
+
+*Daniel:* Hearing that people like the tool is a big driving force for me. Most people say really nice things and that is great. The occasional code contribution is also nice.
+
+***
+
+? What would be your advice for someone just getting into language design?
+
+*Daniel:* Just dive straight in. Create lots of examples and see what it takes to parse them. Then both the language and the parser will evolve in tandem.
+
+And please do consider other human languages than just English that your parser should support. There is plenty of Nomnoml diagrams with labels in Chinese or Korean, and those characters have to be supported in a good way.
+
+****
+
+image images/danielKallin.jpg
+ caption Image source. Thank you for your time Daniel!
+  https://skanaar.github.io/daniel/cv.html Image source
+
+import footer.scroll
