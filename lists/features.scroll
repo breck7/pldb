@@ -1,7 +1,7 @@
-tags All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.topFeaturesImports
+tags All
 title Features
 
 import header.scroll

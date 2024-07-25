@@ -1,5 +1,4 @@
 importOnly
-tags All
 replace BASE_URL ..
 replaceJs TEMPLATE
  {
@@ -7,6 +6,8 @@ replaceJs TEMPLATE
   const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
   Tables.getLanguageTemplate(absolutePath);
  }
+
+tags All
 
 import measures.parsers
 

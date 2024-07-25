@@ -1,7 +1,7 @@
-tags All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.acknowledgements
+tags All
 title Acknowledgements
 
 // Currently fetched manually because of pagination.

@@ -1,7 +1,7 @@
-tags All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.extensions
+tags All
 title List of File Extensions
 
 import header.scroll

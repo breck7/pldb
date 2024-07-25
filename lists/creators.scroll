@@ -1,7 +1,7 @@
-tags All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.creatorsTable
+tags All
 title List of people who created a programming language
 
 import header.scroll
