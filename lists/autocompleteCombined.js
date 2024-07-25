@@ -7702,7 +7702,7 @@ var autocompleteJs = [
     "url": "/concepts/xtclang.html"
   },
   {
-    "label": "crap",
+    "label": "Crap",
     "id": "crap",
     "url": "/concepts/crap.html"
   },
