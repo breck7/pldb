@@ -1,4 +1,4 @@
-groups All
+tags All
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.topFeaturesImports

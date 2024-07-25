@@ -1,6 +1,6 @@
 buildConcepts podcasts.json podcasts.tsv podcasts.csv
  sortBy -episodes
-groups All
+tags All
 title Podcasts about Programming
 
 // todo: add youtube links and subscriber counts?

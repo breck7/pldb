@@ -17,7 +17,7 @@ New Posts
  link ./blog/index.html
  class pldbHomepageLink
 loop
- groups blog/frontpage
+ tags blog/frontpage
  limit 5
  javascript `<a class="newPostLink" href="${item.relativePath}${item.file.permalink}">${item.file.title}</a><br>`
 
