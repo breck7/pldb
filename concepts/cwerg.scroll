@@ -24,3 +24,21 @@ example
      return 0
 
 githubRepo https://github.com/robertmuth/Cwerg
+ stars 430
+
+lineCommentToken --
+
+hasComments true
+ -- A comment
+hasLineComments true
+hasConstants true
+ global N uint = 1000 * 1000 * 1000
+hasImports true
+ import fmt
+hasFunctions true
+ fun main(argc s32, argv ^^u8) s32:
+  -- initialized to false
+  let! board = [DIM][DIM]bool{}
+  let n = Solve(&!board, 0)
+  fmt::print#(n, "\n")
+  return 0
