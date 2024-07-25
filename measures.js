@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1449,
+    "Values": 1450,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Matthew Steel",
@@ -169,7 +169,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1162",
+    "Example": "1163",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21566",
+    "Example": "21565",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -312,7 +312,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1062,
+    "Values": 1063,
     "Coverage": "21%",
     "Question": "How many stars of the repo?",
     "Example": "672",
@@ -1296,7 +1296,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1449,
+    "Values": 1450,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1388,7 +1388,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 373,
+    "Values": 374,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://aardvark-docs.programit.repl.co/",
@@ -1612,7 +1612,7 @@ const measures = [
   },
   {
     "Name": "country",
-    "Values": 3742,
+    "Values": 3743,
     "Coverage": "75%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -2286,7 +2286,7 @@ const measures = [
   },
   {
     "Name": "hasConditionals",
-    "Values": 77,
+    "Values": 78,
     "Coverage": "1%",
     "Question": "Does the language have conditional statements and/or conditional expressions?",
     "Example": "true",
@@ -2486,7 +2486,7 @@ const measures = [
   },
   {
     "Name": "hasExpressions",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have a concept of expressions?",
     "Example": "true",

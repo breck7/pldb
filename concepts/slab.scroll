@@ -3,18 +3,21 @@ import ../code/conceptPage.scroll
 id slab
 name Slab
 appeared 2024
+creators Võ Minh Thu
 tags textMarkup
 website https://slab-lang.org/
 description Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
 writtenIn html haskell nix bourne-shell json yaml css markdown dockerfile
 compilesTo html
 
+docs https://slab-lang.org/reference.html
 repoStats
  firstCommit 2023
  newestCommit 2024
  commits 335
  committers 1
  files 216
+country Belgium
 
 example
  frag page(titl)
@@ -32,3 +35,19 @@ example
      p Welcome to Slab! This is a simple example of how Slab works.
 
 githubRepo https://github.com/hypered/slab
+ stars 19
+
+hasExpressions true
+ let a = 1
+ p= a + 2 * 3
+hasConditionals true
+ if true
+   p A.
+ else
+   p B.
+tutorial https://slab-lang.org/tutorial.html
+
+hasLoops true
+ ul
+  for val, index in [1, 2]
+    li val: #(val), index: #(index)

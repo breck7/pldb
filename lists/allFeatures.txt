@@ -13,7 +13,7 @@ Integers|_$^../features/hasIntegers.html|_$^80766866|_$^160|_$^1|_$^99%
 Floats|_$^../features/hasFloats.html|_$^80766866.0|_$^138|_$^0|_$^100%
 Booleans|_$^../features/hasBooleans.html|_$^pldb = true|_$^116|_$^4|_$^97%
 Hexadecimals|_$^../features/hasHexadecimals.html|_$^0x4D06792|_$^107|_$^1|_$^99%
-Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^74|_$^3|_$^96%
+Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^75|_$^3|_$^96%
 Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true line1  print "Hello PLDB"|_$^68|_$^517|_$^12%
 Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^53|_$^1|_$^98%
 Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
@@ -72,6 +72,7 @@ Interfaces|_$^../features/hasInterfaces.html|_$^interface PLDBFile|_$^6|_$^1|_$^
 Generics|_$^../features/hasGenerics.html|_$^function identity&lt;T>(arg: T): T|_$^6|_$^1|_$^-
 hasForLoops|_$^../features/hasForLoops.html|_$^|_$^6|_$^0|_$^-
 hasForEachLoops|_$^../features/hasForEachLoops.html|_$^|_$^6|_$^0|_$^-
+Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^6|_$^0|_$^-
 Anonymous Functions|_$^../features/hasAnonymousFunctions.html|_$^() => printPldb()|_$^6|_$^0|_$^-
 Shebang|_$^../features/canDoShebang.html|_$^#! /run|_$^6|_$^0|_$^-
 Prefix Notation|_$^../features/hasPrefixNotation.html|_$^+ 1 2|_$^5|_$^0|_$^-
@@ -81,7 +82,6 @@ Partial Application|_$^../features/hasPartialApplication.html|_$^add5 = num => a
 Operators|_$^../features/hasOperators.html|_$^1 + 1|_$^5|_$^1|_$^-
 Null|_$^../features/hasNull.html|_$^uhOh = null|_$^5|_$^0|_$^-
 Gotos|_$^../features/hasGotos.html|_$^goto 10|_$^5|_$^4|_$^-
-Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^5|_$^0|_$^-
 Doc comments|_$^../features/hasDocComments.html|_$^// param1: A comment about the first param|_$^5|_$^0|_$^-
 Destructuring|_$^../features/hasDestructuring.html|_$^{title, rank} = pldbFile|_$^5|_$^0|_$^-
 Dependent types|_$^../features/hasDependentTypes.html|_$^pldbSortedList // a list where is sorted is true|_$^5|_$^1|_$^-

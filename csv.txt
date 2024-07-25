@@ -25,3 +25,10 @@ github https://github.com/sirthias/pegdown
 
 hasVariables true
  - set %name% as "Dwight Shrewd"
+
+tutorial https://slab-lang.org/tutorial.html
+
+hasLoops true
+ ul
+  for val, index in [1, 2]
+    li val: #(val), index: #(index)
