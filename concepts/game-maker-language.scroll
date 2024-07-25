@@ -7,7 +7,6 @@ tags pl
 description The language historically tries to accommodate different programming backgrounds and styles - BASIC/Lua style "and" / "or" keywords can be used interchangeably with C-style "&&" / "||" operators; parentheses around conditions in if-statements and loops can be omitted; semicolons are largely optional[26] (insertion happens at the end of statement; compile error is raised in case of ambiguity). The language's default mode of operation on native platforms is via a stack machine; it can also be source-to-source compiled to C++ via LLVM for higher performance.[27] On HTML5, GML is source-to-source compiled to JavaScript with optimizations and minification applied in non-debug builds.
 
 fileType text
-centralPackageRepositoryCount 0
 country Scotland, United Kingdom
 originCommunity YoYo Games Ltd
 projectEuler Game Maker Language
@@ -104,8 +103,6 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   
   //Append query string to ds_list of requests to be sent at End Step.
   ds_list_add(_PIWIK_REQS, "?" + argstring);
-
-isbndb 0
 
 githubLanguage Game Maker Language
  fileExtensions gml

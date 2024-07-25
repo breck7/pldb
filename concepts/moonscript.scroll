@@ -15,7 +15,6 @@ tryItOnline moonscript
 fileType text
 docs https://moonscript.org/reference/
 rosettaCode http://www.rosettacode.org/wiki/Category:MoonScript
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2011
  commits 851
@@ -177,8 +176,6 @@ linguistGrammarRepo https://github.com/leafo/moonscript-tmbundle
       Run =>
         @listen "continue", ->
           unless continue_name
-
-isbndb 0
 
 githubLanguage MoonScript
  fileExtensions moon

@@ -13,7 +13,6 @@ isOpenSource true
 clocExtensions j2 jinja jinja2
 fileType text
 docs https://jinja.palletsprojects.com/en/3.1.x/
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2007
  commits 2973
@@ -109,8 +108,6 @@ linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
   {% endfor %}
   </table>
   
-
-isbndb 0
 
 githubLanguage HTML+Django
  fileExtensions jinja j2 jinja2

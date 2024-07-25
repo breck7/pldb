@@ -10,7 +10,6 @@ description Rascal solves this problem by integrating source code analysis, tran
 isOpenSource true
 fileType text
 rosettaCode http://www.rosettacode.org/wiki/Category:Rascal
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2008
  commits 20580
@@ -64,8 +63,6 @@ linguistGrammarRepo https://github.com/usethesource/rascal-syntax-highlighting
   syntax State = @Foldable state: "state" Id name Trans* out;
   syntax Trans = trans: Id event ":" Id to;
   
-
-isbndb 0
 
 githubLanguage Rascal
  fileExtensions rsc

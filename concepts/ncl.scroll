@@ -12,7 +12,6 @@ writtenIn fortran-77 c objective-c matlab mumps c-shell rescript sed mathematica
 
 isOpenSource true
 fileType text
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 1990
  commits 14347
@@ -101,8 +100,6 @@ linguistGrammarRepo https://github.com/rpavlick/language-ncl.git
   val=102
   a=val/4.
   print(a)
-
-isbndb 0
 
 githubLanguage NCL
  fileExtensions ncl

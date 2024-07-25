@@ -13,7 +13,6 @@ writtenIn python yaml markdown json restructuredtext bourne-shell javascript mak
 
 isOpenSource true
 fileType text
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2014
  commits 5059
@@ -97,8 +96,6 @@ linguistGrammarRepo https://github.com/manabuishii/language-cwl
   
   stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
   
-
-isbndb 0
 
 githubLanguage Common Workflow Language
  fileExtensions cwl

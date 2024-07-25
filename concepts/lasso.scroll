@@ -13,7 +13,6 @@ isOpenSource false
 fileType text
 docs https://docs.lassox.com/
 rosettaCode http://www.rosettacode.org/wiki/Category:Lasso
-centralPackageRepositoryCount 0
 country Canada
 originCommunity LassoSoft Inc
 
@@ -315,8 +314,6 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   	Return(Decode_JSON(Include_URL(#host, -PostParams=Encode_JSON(Map('method' = #method, 'params' = #params, 'id' = #id)))));
   }
   
-
-isbndb 0
 
 githubLanguage Lasso
  fileExtensions lasso las lasso8 lasso9

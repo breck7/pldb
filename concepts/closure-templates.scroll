@@ -8,7 +8,6 @@ writtenIn java starlark markdown html javascript protobuf python xml typescript 
 
 isOpenSource true
 fileType text
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2009
  commits 5978
@@ -81,8 +80,6 @@ linguistGrammarRepo https://github.com/mthadley/language-closure-templates
       {/switch}
     </div>
   {/template}
-
-isbndb 0
 
 githubLanguage Closure Templates
  fileExtensions soy

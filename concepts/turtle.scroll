@@ -8,7 +8,6 @@ tags dataNotation
 fileType text
 wordRank 9688
 docs https://www.w3.org/TR/turtle/
-centralPackageRepositoryCount 0
 
 pygmentsHighlighter Turtle
  filename rdf.py
@@ -62,8 +61,6 @@ linguistGrammarRepo https://github.com/peta/turtle.tmbundle
       ex:fullname "Dave Beckett";
       ex:homePage <http://purl.org/net/dajobe/>
     ] .
-
-isbndb 0
 
 githubLanguage Turtle
  fileExtensions ttl

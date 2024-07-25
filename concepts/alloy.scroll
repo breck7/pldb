@@ -8,7 +8,6 @@ website http://alloytools.org/
 
 fileType text
 wordRank 9510
-centralPackageRepositoryCount 0
 originCommunity Massachusetts Institute of Technology
 
 pygmentsHighlighter Alloy
@@ -154,8 +153,6 @@ linguistGrammarRepo https://github.com/macekond/Alloy.tmbundle
   
   check { OneParent_correctVersion => NoDirAliases } for 5 expect 0
   
-
-isbndb 0
 
 githubLanguage Alloy
  fileExtensions als

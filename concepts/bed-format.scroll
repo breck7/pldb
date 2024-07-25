@@ -8,7 +8,6 @@ standsFor Browser Extensible Data
 description BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track. BED lines have three required fields and nine additional optional fields. The number of fields per line must be consistent throughout any single set of data in an annotation track. The order of the optional fields is binding: lower-numbered fields must always be populated if higher-numbered fields are used.
 
 fileType text
-centralPackageRepositoryCount 0
 country United States
 originCommunity University of California Santa Cruz
 reference https://doi.org/10.1093/nar/gkh103

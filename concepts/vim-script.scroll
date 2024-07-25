@@ -12,7 +12,6 @@ description Vim script (also called vimscript or VimL) is the scripting language
 isOpenSource true
 clocExtensions vim
 fileType text
-centralPackageRepositoryCount 0
 
 pygmentsHighlighter VimL
  filename textedit.py
@@ -111,8 +110,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-viml
   " ---------------------------------------------------------------------
   "
   " 1.  Download and install Tim Pope's
-
-isbndb 0
 
 githubLanguage Vim script
  fileExtensions vim vba vimrc vmb

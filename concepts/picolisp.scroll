@@ -12,7 +12,6 @@ tryItOnline picolisp
 fileType text
 docs https://picolisp.com/wiki/?Documentation
 rosettaCode http://www.rosettacode.org/wiki/Category:PicoLisp
-centralPackageRepositoryCount 0
 country Germany
 originCommunity https://www.mail-archive.com/picolisp@software-lab.de
 
@@ -217,8 +216,6 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
            (prin (if (and (nT "How") (Dir (car L))) "   +" "---+")) )
         (prinl) ) )
   
-
-isbndb 0
 
 githubLanguage PicoLisp
  fileExtensions l

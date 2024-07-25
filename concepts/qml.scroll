@@ -10,7 +10,6 @@ standsFor Qt Modeling Language
 clocExtensions qbs qml
 fileType text
 docs https://doc.qt.io/qt-6/qtqml-documents-topic.html
-centralPackageRepositoryCount 0
 country Finland
 originCommunity Qt Group plc
 
@@ -229,8 +228,6 @@ linguistGrammarRepo https://github.com/skozlovf/Sublime-QML
       readonly property int versionPatch: undefined // set internally
   }
   
-
-isbndb 0
 
 githubLanguage QML
  fileExtensions qml qbs

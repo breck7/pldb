@@ -17,7 +17,6 @@ fileType text
 docs https://common-lisp.net/documentation
 faq https://common-lisp.net/faq
 quineRelay Common Lisp
-centralPackageRepositoryCount 0
 ubuntuPackage clisp
 country United States
 originCommunity American National Standards Institute
@@ -116,8 +115,6 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   (DEFUN HELLO ()
     (PRINT 'HELLO))
   
-
-isbndb 0
 
 githubLanguage Common Lisp
  fileExtensions lisp asd cl l lsp ny podsl sexp

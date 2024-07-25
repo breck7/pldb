@@ -18,7 +18,6 @@ wordRank 554
 docs https://www.red-lang.org/p/documentation.html
 faq https://www.red-lang.org/2015/12/answers-to-community-questions.html
 rosettaCode http://www.rosettacode.org/wiki/Category:Red
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2011
  commits 15634
@@ -230,8 +229,6 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-Red
   ]
   push CATCH_ALL                              ;-- exceptions root barrier
   push 0                                      ;-- keep stack aligned on 64-bit
-
-isbndb 0
 
 githubLanguage Red
  fileExtensions red reds

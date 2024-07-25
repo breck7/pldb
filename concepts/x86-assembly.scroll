@@ -9,7 +9,6 @@ aka x86
 gdbSupport true
 fileType text
 docs https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
-centralPackageRepositoryCount 0
 
 rijuRepl https://riju.codes/x86
  example
@@ -124,8 +123,6 @@ linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
    .align 3
   LEFDE1:
    .subsections_via_symbols
-
-isbndb 0
 
 githubLanguage Unix Assembly
  fileExtensions s ms

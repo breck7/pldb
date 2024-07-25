@@ -15,7 +15,6 @@ tryItOnline hy
 fileType text
 docs https://docs.hylang.org/en/stable/
 rosettaCode http://www.rosettacode.org/wiki/Category:Hy
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2012
  commits 4329
@@ -118,8 +117,6 @@ linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
     (for [x [1 2 3 4 5 6 7 8]]
       (print (fib x))))
   
-
-isbndb 0
 
 githubLanguage Hy
  fileExtensions hy

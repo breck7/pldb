@@ -7,8 +7,6 @@ creators Bram Moolenaar
 tags pl
 website http://www.zimbu.org/
 
-centralPackageRepositoryCount 0
-
 example
  FUNC Main() int
    IO.write("Hello, World!\n")

@@ -13,7 +13,6 @@ writtenIn c restructuredtext xml cpp starlark yaml markdown bourne-shell yacc le
 
 isOpenSource true
 fileType text
-centralPackageRepositoryCount 0
 repoStats
  firstCommit 2008
  commits 3358
@@ -70,8 +69,6 @@ linguistGrammarRepo https://github.com/blacktop/language-yara
  example
   rule test { condition: true }
   
-
-isbndb 0
 
 githubLanguage YARA
  fileExtensions yar yara

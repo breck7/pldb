@@ -9,7 +9,6 @@ standsFor extended Backus-Naur form
 
 fileType text
 codeMirror ebnf
-centralPackageRepositoryCount 0
 
 pygmentsHighlighter EBNF
  filename parsers.py
@@ -65,8 +64,6 @@ linguistGrammarRepo https://github.com/sanssecours/EBNF.tmbundle
     [ "-" ] , digit , [ "." , { digit } ] ;
   
   
-
-isbndb 0
 
 githubLanguage EBNF
  fileExtensions ebnf

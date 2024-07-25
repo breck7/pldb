@@ -8,7 +8,6 @@ website http://www2.pdmfc.com/tea
 
 fileType text
 wordRank 2862
-centralPackageRepositoryCount 0
 
 pygmentsHighlighter Tea
  filename templates.py
@@ -63,8 +62,6 @@ linguistGrammarRepo https://github.com/pferruggiaro/sublime-tea
  sampleCount 1
  example
   <% template foo() %>
-
-isbndb 0
 
 githubLanguage Tea
  fileExtensions tea
