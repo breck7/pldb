@@ -6,7 +6,8 @@ appeared 2016
 creators Cyrus Omar
 tags pl
 website http://hazel.org/
-description Hazel is a live functional programming environment rooted in the principles of type theory.
+webRepl https://hazel.org/build/dev/
+description Hazel is a live functional programming environment organized around typed holes. Hazel is a live functional programming environment that is able to typecheck, manipulate, and even run incomplete programs, i.e. programs with holes. There are no meaningless editor states.
 writtenIn reason markdown ocaml css tex yaml make html svg
 compilesTo javascript
 
@@ -27,7 +28,7 @@ example
 
 githubRepo https://github.com/hazelgrove/hazel
  firstCommit 2017
- stars 474
+ stars 712
  forks 34
  subscribers 14
  created 2017

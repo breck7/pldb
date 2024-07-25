@@ -169,7 +169,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1162",
+    "Example": "1163",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21565",
+    "Example": "21564",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -423,7 +423,7 @@ const measures = [
   },
   {
     "Name": "webRepl",
-    "Values": 115,
+    "Values": 116,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
