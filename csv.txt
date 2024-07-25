@@ -11,8 +11,6 @@ Statistics on the measures (columns) are below and can be downloaded as: CSV | T
  https://pldb.io/measures.tsv TSV
  https://pldb.io/measures.json JSON
 
-written in c
-
 Example
   #if 0
   crap $0 | tcc -run -; exit 0

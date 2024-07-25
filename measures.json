@@ -186,7 +186,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1139,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -783,7 +783,7 @@
   },
   {
     "Name": "standsFor",
-    "Values": 354,
+    "Values": 355,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -1086,7 +1086,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1139,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1306,7 +1306,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1139,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1966,7 +1966,7 @@
   },
   {
     "Name": "lineCommentToken",
-    "Values": 481,
+    "Values": 482,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",

@@ -113,9 +113,9 @@ count = 0
 CALKOWITE: I
 I = 80766866
 
-(let x int 42)
-
  // The same as c
+
+(let x int 42)
 
 // http://amzn.github.io/ion-docs/docs/spec.html
 null.int   // A null int value
@@ -131,7 +131,7 @@ null.int   // A null int value
 
 ***
 
-Languages *with* Integers include JavaScript, C, Python, Java, Perl, Ruby, JSON, Go, SQL, C#, Bash, Swift, Lua, Haskell, Clojure, Elixir, CoffeeScript, Julia, Erlang, Prolog, Mathematica, Ada, TOML, Zig, D, Reason, Elm, MySQL, WebAssembly, GraphQL, awk, Coq, OCaml, F#, Chapel, ClojureScript, VHDL, Idris, Forth, Protocol Buffers, J, Lean, sed, IDL, F*, ABAP, ActionScript, Verilog, Pony, Fennel, AutoHotkey, Puppet, Hy, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Janet, Pig Latin, C3, Koka, GNU Octave, QML, Opa, Pandas, Thrift, SPARQL, Agda, Futhark, AMPL, POV-Ray SDL, Ceylon, Applescript, QBasic, SystemVerilog, NumPy, Scilab, Cryptol, GLSL, HLSL, AutoIt, K, Turtle, Golo, YANG, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, Meson, Nit, Ioke, Gosu, Maxima, Modelica, Shen, Fancy, LiveScript, Xtend, Io, SourcePawn, PL/pgSQL, Icon, BlitzMax, Whiley, clay, Nix, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, Ragel, Alloy, Croc, JSLT, Kal, Linden Scripting Language, Cyber, Jule, FloScript, HOPE, Unicon, Redcode, monte, MiniD, SAKO, Uniform eXchange Format, JS++, Flatline, Speedie, parasail, Aardvark, Easytrieve, Pawn, Wax, crap, Urbiscript, Ion, hecl, nimrod, AmbientTalk, Boogie, PromQL, Spice, boa, RQL, SARL, BALGOL, bag-format, CBOR data definition language, Procfile, Friendly Enough Expression Language, RAISE Specification Language, juttle
+Languages *with* Integers include JavaScript, C, Python, Java, Perl, Ruby, JSON, Go, SQL, C#, Bash, Swift, Lua, Haskell, Clojure, Elixir, CoffeeScript, Julia, Erlang, Prolog, Mathematica, Ada, TOML, Zig, D, Reason, Elm, MySQL, WebAssembly, GraphQL, awk, Coq, OCaml, F#, Chapel, ClojureScript, VHDL, Idris, Forth, Protocol Buffers, J, Lean, sed, IDL, F*, ABAP, ActionScript, Verilog, Pony, Fennel, AutoHotkey, Puppet, Hy, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Janet, Pig Latin, C3, Koka, GNU Octave, QML, Opa, Pandas, Thrift, SPARQL, Agda, Futhark, AMPL, POV-Ray SDL, Ceylon, Applescript, QBasic, SystemVerilog, NumPy, Scilab, Cryptol, GLSL, HLSL, AutoIt, K, Turtle, Golo, YANG, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, Meson, Nit, Ioke, Gosu, Maxima, Modelica, Shen, Fancy, LiveScript, Xtend, Io, SourcePawn, PL/pgSQL, Icon, BlitzMax, Whiley, clay, Nix, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, Ragel, Alloy, Croc, JSLT, Kal, Linden Scripting Language, Cyber, Jule, FloScript, HOPE, Unicon, Redcode, monte, MiniD, SAKO, Uniform eXchange Format, JS++, Flatline, Speedie, parasail, Aardvark, Easytrieve, Pawn, crap, Wax, Urbiscript, Ion, hecl, nimrod, AmbientTalk, Boogie, PromQL, Spice, boa, RQL, SARL, BALGOL, bag-format, CBOR data definition language, Procfile, Friendly Enough Expression Language, RAISE Specification Language, juttle
 
 ***
 
