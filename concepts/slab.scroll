@@ -45,9 +45,9 @@ hasConditionals true
    p A.
  else
    p B.
-tutorial https://slab-lang.org/tutorial.html
-
-hasLoops true
+hasForLoops true
  ul
   for val, index in [1, 2]
     li val: #(val), index: #(index)
+
+tutorial https://slab-lang.org/tutorial.html
