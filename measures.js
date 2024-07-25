@@ -332,7 +332,7 @@ const measures = [
   },
   {
     "Name": "screenshot",
-    "Values": 18,
+    "Values": 19,
     "Coverage": "0%",
     "Question": "What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?",
     "Example": "activity-pub.png",

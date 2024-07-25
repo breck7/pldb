@@ -867,14 +867,14 @@ var autocompleteJs = [
     "url": "/concepts/json5.html"
   },
   {
-    "label": "Gradle",
-    "id": "gradle",
-    "url": "/concepts/gradle.html"
-  },
-  {
     "label": "APL",
     "id": "apl",
     "url": "/concepts/apl.html"
+  },
+  {
+    "label": "Gradle",
+    "id": "gradle",
+    "url": "/concepts/gradle.html"
   },
   {
     "label": "Brainfuck",
@@ -1042,14 +1042,14 @@ var autocompleteJs = [
     "url": "/concepts/stata.html"
   },
   {
-    "label": "SaltStack",
-    "id": "saltstack",
-    "url": "/concepts/saltstack.html"
-  },
-  {
     "label": "F*",
     "id": "fstar",
     "url": "/concepts/fstar.html"
+  },
+  {
+    "label": "SaltStack",
+    "id": "saltstack",
+    "url": "/concepts/saltstack.html"
   },
   {
     "label": "Flow",
@@ -1257,14 +1257,14 @@ var autocompleteJs = [
     "url": "/concepts/korn-shell.html"
   },
   {
-    "label": "MDX",
-    "id": "mdx",
-    "url": "/concepts/mdx.html"
-  },
-  {
     "label": "PEG.js",
     "id": "pegjs",
     "url": "/concepts/pegjs.html"
+  },
+  {
+    "label": "MDX",
+    "id": "mdx",
+    "url": "/concepts/mdx.html"
   },
   {
     "label": "Cap'n Proto",
@@ -1762,14 +1762,14 @@ var autocompleteJs = [
     "url": "/concepts/svelte.html"
   },
   {
-    "label": "Zuo",
-    "id": "zuo",
-    "url": "/concepts/zuo.html"
-  },
-  {
     "label": "Ceylon",
     "id": "ceylon",
     "url": "/concepts/ceylon.html"
+  },
+  {
+    "label": "Zuo",
+    "id": "zuo",
+    "url": "/concepts/zuo.html"
   },
   {
     "label": "Applescript",
@@ -2117,14 +2117,14 @@ var autocompleteJs = [
     "url": "/concepts/jsf.html"
   },
   {
-    "label": "AGC",
-    "id": "apollo-guidance-computer",
-    "url": "/concepts/apollo-guidance-computer.html"
-  },
-  {
     "label": "emberjs-framework",
     "id": "emberjs-framework",
     "url": "/concepts/emberjs-framework.html"
+  },
+  {
+    "label": "AGC",
+    "id": "apollo-guidance-computer",
+    "url": "/concepts/apollo-guidance-computer.html"
   },
   {
     "label": "sizzle",
@@ -2247,14 +2247,14 @@ var autocompleteJs = [
     "url": "/concepts/q.html"
   },
   {
-    "label": "Jakt",
-    "id": "jakt",
-    "url": "/concepts/jakt.html"
-  },
-  {
     "label": "MPS",
     "id": "mps",
     "url": "/concepts/mps.html"
+  },
+  {
+    "label": "Jakt",
+    "id": "jakt",
+    "url": "/concepts/jakt.html"
   },
   {
     "label": "Prism",
@@ -2292,11 +2292,6 @@ var autocompleteJs = [
     "url": "/concepts/datalog.html"
   },
   {
-    "label": "skip",
-    "id": "skip",
-    "url": "/concepts/skip.html"
-  },
-  {
     "label": "commonmark",
     "id": "commonmark",
     "url": "/concepts/commonmark.html"
@@ -2305,6 +2300,11 @@ var autocompleteJs = [
     "label": "nomnoml",
     "id": "nomnoml",
     "url": "/concepts/nomnoml.html"
+  },
+  {
+    "label": "skip",
+    "id": "skip",
+    "url": "/concepts/skip.html"
   },
   {
     "label": "chaiscript",
@@ -2342,11 +2342,6 @@ var autocompleteJs = [
     "url": "/concepts/smarty.html"
   },
   {
-    "label": "YoptaScript",
-    "id": "yoptascript",
-    "url": "/concepts/yoptascript.html"
-  },
-  {
     "label": "docopt",
     "id": "docopt",
     "url": "/concepts/docopt.html"
@@ -2355,6 +2350,11 @@ var autocompleteJs = [
     "label": "walt",
     "id": "walt",
     "url": "/concepts/walt.html"
+  },
+  {
+    "label": "YoptaScript",
+    "id": "yoptascript",
+    "url": "/concepts/yoptascript.html"
   },
   {
     "label": "mermaid",
@@ -2687,14 +2687,14 @@ var autocompleteJs = [
     "url": "/concepts/f-prime.html"
   },
   {
-    "label": "Latte",
-    "id": "latte",
-    "url": "/concepts/latte.html"
-  },
-  {
     "label": "Please Build",
     "id": "please-build",
     "url": "/concepts/please-build.html"
+  },
+  {
+    "label": "Latte",
+    "id": "latte",
+    "url": "/concepts/latte.html"
   },
   {
     "label": "JFlex",
@@ -2757,14 +2757,14 @@ var autocompleteJs = [
     "url": "/concepts/dynamo-visual-language.html"
   },
   {
-    "label": "BQN",
-    "id": "bqn",
-    "url": "/concepts/bqn.html"
-  },
-  {
     "label": "LFE",
     "id": "lfe",
     "url": "/concepts/lfe.html"
+  },
+  {
+    "label": "BQN",
+    "id": "bqn",
+    "url": "/concepts/bqn.html"
   },
   {
     "label": "mun-lang",
@@ -2832,11 +2832,6 @@ var autocompleteJs = [
     "url": "/concepts/befunge.html"
   },
   {
-    "label": "Curl",
-    "id": "curl",
-    "url": "/concepts/curl.html"
-  },
-  {
     "label": "Metal",
     "id": "metal",
     "url": "/concepts/metal.html"
@@ -2845,6 +2840,11 @@ var autocompleteJs = [
     "label": "IcedCoffeeScript",
     "id": "icedcoffeescript",
     "url": "/concepts/icedcoffeescript.html"
+  },
+  {
+    "label": "Curl",
+    "id": "curl",
+    "url": "/concepts/curl.html"
   },
   {
     "label": "XL",
@@ -2967,6 +2967,11 @@ var autocompleteJs = [
     "url": "/concepts/activity-pub.html"
   },
   {
+    "label": "Hazel",
+    "id": "hazel",
+    "url": "/concepts/hazel.html"
+  },
+  {
     "label": "FlatBuffers",
     "id": "flatbuffers",
     "url": "/concepts/flatbuffers.html"
@@ -3075,11 +3080,6 @@ var autocompleteJs = [
     "label": "PureBasic",
     "id": "purebasic",
     "url": "/concepts/purebasic.html"
-  },
-  {
-    "label": "hazel",
-    "id": "hazel",
-    "url": "/concepts/hazel.html"
   },
   {
     "label": "Alpaca",
@@ -3347,14 +3347,14 @@ var autocompleteJs = [
     "url": "/concepts/monkey.html"
   },
   {
-    "label": "basic calculator",
-    "id": "bc",
-    "url": "/concepts/bc.html"
-  },
-  {
     "label": "Caml",
     "id": "caml",
     "url": "/concepts/caml.html"
+  },
+  {
+    "label": "basic calculator",
+    "id": "bc",
+    "url": "/concepts/bc.html"
   },
   {
     "label": "Gherkin",
@@ -3367,14 +3367,14 @@ var autocompleteJs = [
     "url": "/concepts/logos.html"
   },
   {
-    "label": "INTERCAL",
-    "id": "intercal",
-    "url": "/concepts/intercal.html"
-  },
-  {
     "label": "ALGOL 68",
     "id": "algol-68",
     "url": "/concepts/algol-68.html"
+  },
+  {
+    "label": "INTERCAL",
+    "id": "intercal",
+    "url": "/concepts/intercal.html"
   },
   {
     "label": "Bucklescript",
@@ -3412,14 +3412,14 @@ var autocompleteJs = [
     "url": "/concepts/whitespace.html"
   },
   {
-    "label": "XSLT",
-    "id": "xslt",
-    "url": "/concepts/xslt.html"
-  },
-  {
     "label": "GDB",
     "id": "gdb",
     "url": "/concepts/gdb.html"
+  },
+  {
+    "label": "XSLT",
+    "id": "xslt",
+    "url": "/concepts/xslt.html"
   },
   {
     "label": "bosque",
@@ -4077,14 +4077,14 @@ var autocompleteJs = [
     "url": "/concepts/xaml.html"
   },
   {
-    "label": "Script.NET",
-    "id": "ssharp",
-    "url": "/concepts/ssharp.html"
-  },
-  {
     "label": "UNLAMBDA",
     "id": "unlambda",
     "url": "/concepts/unlambda.html"
+  },
+  {
+    "label": "Script.NET",
+    "id": "ssharp",
+    "url": "/concepts/ssharp.html"
   },
   {
     "label": "RISC-V",
@@ -4227,11 +4227,6 @@ var autocompleteJs = [
     "url": "/concepts/cperl.html"
   },
   {
-    "label": "CLU",
-    "id": "clu",
-    "url": "/concepts/clu.html"
-  },
-  {
     "label": "Oxygene",
     "id": "oxygene",
     "url": "/concepts/oxygene.html"
@@ -4240,6 +4235,11 @@ var autocompleteJs = [
     "label": "BPMN",
     "id": "bpmn",
     "url": "/concepts/bpmn.html"
+  },
+  {
+    "label": "CLU",
+    "id": "clu",
+    "url": "/concepts/clu.html"
   },
   {
     "label": "DBase",
@@ -4402,6 +4402,11 @@ var autocompleteJs = [
     "url": "/concepts/simulink.html"
   },
   {
+    "label": "gluon",
+    "id": "gluon",
+    "url": "/concepts/gluon.html"
+  },
+  {
     "label": "NetLinx",
     "id": "netlinx",
     "url": "/concepts/netlinx.html"
@@ -4410,11 +4415,6 @@ var autocompleteJs = [
     "label": "Nu",
     "id": "nu",
     "url": "/concepts/nu.html"
-  },
-  {
-    "label": "gluon",
-    "id": "gluon",
-    "url": "/concepts/gluon.html"
   },
   {
     "label": "Morse code",
@@ -4802,6 +4802,11 @@ var autocompleteJs = [
     "url": "/concepts/sqr.html"
   },
   {
+    "label": "kona",
+    "id": "kona",
+    "url": "/concepts/kona.html"
+  },
+  {
     "label": "Cirru",
     "id": "cirru",
     "url": "/concepts/cirru.html"
@@ -4815,11 +4820,6 @@ var autocompleteJs = [
     "label": "SMT",
     "id": "smt",
     "url": "/concepts/smt.html"
-  },
-  {
-    "label": "kona",
-    "id": "kona",
-    "url": "/concepts/kona.html"
   },
   {
     "label": "Unicon",
@@ -4897,14 +4897,14 @@ var autocompleteJs = [
     "url": "/concepts/jolie.html"
   },
   {
-    "label": "Slice",
-    "id": "slice",
-    "url": "/concepts/slice.html"
-  },
-  {
     "label": "chrysaLisp",
     "id": "chrysalisp",
     "url": "/concepts/chrysalisp.html"
+  },
+  {
+    "label": "Slice",
+    "id": "slice",
+    "url": "/concepts/slice.html"
   },
   {
     "label": "baysick",
@@ -5187,11 +5187,6 @@ var autocompleteJs = [
     "url": "/concepts/haxelibs-pm.html"
   },
   {
-    "label": "Qore",
-    "id": "qore",
-    "url": "/concepts/qore.html"
-  },
-  {
     "label": "hakaru",
     "id": "hakaru",
     "url": "/concepts/hakaru.html"
@@ -5205,6 +5200,11 @@ var autocompleteJs = [
     "label": "Grace",
     "id": "grace",
     "url": "/concepts/grace.html"
+  },
+  {
+    "label": "Qore",
+    "id": "qore",
+    "url": "/concepts/qore.html"
   },
   {
     "label": "Pep8",
@@ -5547,14 +5547,14 @@ var autocompleteJs = [
     "url": "/concepts/tiledb.html"
   },
   {
-    "label": "Ohayo",
-    "id": "ohayo",
-    "url": "/concepts/ohayo.html"
-  },
-  {
     "label": "JavaCC",
     "id": "javacc",
     "url": "/concepts/javacc.html"
+  },
+  {
+    "label": "Ohayo",
+    "id": "ohayo",
+    "url": "/concepts/ohayo.html"
   },
   {
     "label": "A+",
@@ -7462,14 +7462,14 @@ var autocompleteJs = [
     "url": "/concepts/myia.html"
   },
   {
-    "label": "Darcs Advanced Revision Control System",
-    "id": "darcs",
-    "url": "/concepts/darcs.html"
-  },
-  {
     "label": "FASTQ",
     "id": "fastq-format",
     "url": "/concepts/fastq-format.html"
+  },
+  {
+    "label": "Darcs Advanced Revision Control System",
+    "id": "darcs",
+    "url": "/concepts/darcs.html"
   },
   {
     "label": "Geany",
@@ -7962,14 +7962,14 @@ var autocompleteJs = [
     "url": "/concepts/rosie.html"
   },
   {
-    "label": "SIL",
-    "id": "swift-il",
-    "url": "/concepts/swift-il.html"
-  },
-  {
     "label": "Coco/R",
     "id": "coco-r",
     "url": "/concepts/coco-r.html"
+  },
+  {
+    "label": "SIL",
+    "id": "swift-il",
+    "url": "/concepts/swift-il.html"
   },
   {
     "label": "PowerQuery M",

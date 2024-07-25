@@ -1,22 +1,25 @@
-hazel
+Hazel
 =====
 
-hazel is an open source programming language created in 2016 by Cyrus Omar.
+Hazel is an open source programming language created in 2016 by Cyrus Omar.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Cyrus%20Omar Cyrus Omar
 
-#531 on PLDB
+#509 on PLDB
 8 Years Old
 
 git clone https://github.com/hazelgrove/hazel
 
+[Image Omitted]
+ A screenshot of the programming language Hazel.
+
 Hazel is a live functional programming environment organized around typed holes. Hazel is a live functional programming environment that is able to typecheck, manipulate, and even run incomplete programs, i.e. programs with holes. There are no meaningless editor states.
 
-- Tags: programming language
-- hazel is developed on GitHub and has 712 stars
-- Early development of hazel happened in University of Michigan
-- hazel compiles to JavaScript
-- hazel is written in Reason, Markdown, OCaml, CSS, Tex, YAML, Make, HTML, SVG
+- Tags: programming language, visual programming language
+- Hazel is developed on GitHub and has 712 stars
+- Early development of Hazel happened in University of Michigan
+- Hazel compiles to JavaScript
+- Hazel is written in Reason, Markdown, OCaml, CSS, Tex, YAML, Make, HTML, SVG
 - hazel.org was registered in 1997
 
 let v = {} in
