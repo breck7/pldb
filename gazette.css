@@ -26,6 +26,7 @@ summary {
 .scrollCaptionedFigure {
   display: block;
   break-inside: avoid;
+  max-width: 100%;
   text-align: center;
 }
 .scrollCaptionedFigure img {

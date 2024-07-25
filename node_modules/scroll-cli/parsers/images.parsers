@@ -13,9 +13,13 @@ abstractCaptionedParser
   compile(compileSettings) {
    const caption = this.getNode("caption")
    const captionFig = caption ? `<figcaption>${caption.compile()}</figcaption>` : ""
-   const width = this.has("width") ? `width:${this.get("width")}px; margin: auto;` : ""
+   const {figureWidth} = this
+   const widthStyle = figureWidth ? `width:${figureWidth}px; margin: auto;` : ""
    const float = this.has("float") ? `margin: 20px; float: ${this.get("float")};` : ""
-   return `<figure class="scrollCaptionedFigure" style="${width + float}">${this.getFigureContent(compileSettings)}${captionFig}</figure>`
+   return `<figure class="scrollCaptionedFigure" style="${widthStyle + float}">${this.getFigureContent(compileSettings)}${captionFig}</figure>`
+  }
+  get figureWidth() {
+    return this.get("width")
   }
 
 imageParser
@@ -40,15 +44,21 @@ imageParser
     // to avoid flicker
    if (src.startsWith("http:") || src.startsWith("https:")) return {}
    const file = this.root.file
+    if (this._dimensions)
+      return this._dimensions
     try {
      const sizeOf = require("image-size")
      const path = require("path")
      const fullImagePath = path.join(file.folderPath, src)
-     return sizeOf(fullImagePath)
+     this._dimensions = sizeOf(fullImagePath)
+     return this._dimensions
     } catch (err) {
      console.error(err)
     }
     return {}
+  }
+  get figureWidth() {
+    return this.dimensions.width
   }
   getFigureContent(compileSettings) {
    const file = this.root.file

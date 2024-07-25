@@ -27,6 +27,7 @@ abstractThemeCssParser
   .scrollCaptionedFigure
    display block
    break-inside avoid
+   max-width 100%
    text-align center
    img
     max-width 100%
