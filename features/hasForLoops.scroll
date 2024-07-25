@@ -33,9 +33,14 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
  while i in 10
    &quot;hello: $i&quot;
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slab.html">Slab</a>
+ ul
+  for val, index in [1, 2]
+    li val: #(val), index: #(index)
+
 ***
 
-* Languages *with* hasForLoops include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/hecl.html">hecl</a>
+* Languages *with* hasForLoops include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/slab.html">Slab</a>, <a href="../concepts/hecl.html">hecl</a>
 
 ***
 

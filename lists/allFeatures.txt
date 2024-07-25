@@ -63,6 +63,7 @@ Namespaces|_$^../features/hasNamespaces.html|_$^namespace PLDB {}|_$^7|_$^2|_$^-
 Maps|_$^../features/hasMaps.html|_$^{name: "PLDB"}|_$^7|_$^0|_$^-
 Iterators|_$^../features/hasIterators.html|_$^for lang in pldb()|_$^7|_$^1|_$^-
 Function Composition|_$^../features/hasFunctionComposition.html|_$^o = (f, g) => x => f(g(x))|_$^7|_$^1|_$^-
+hasForLoops|_$^../features/hasForLoops.html|_$^|_$^7|_$^0|_$^-
 Fixed Point Numbers|_$^../features/hasFixedPoint.html|_$^80766866.00|_$^7|_$^2|_$^-
 Type Casting|_$^../features/hasExplicitTypeCasting.html|_$^(float)pldbRank;|_$^7|_$^0|_$^-
 Variadic Functions|_$^../features/hasVariadicFunctions.html|_$^args.map(doSomething)|_$^6|_$^0|_$^-
@@ -70,7 +71,6 @@ Units of Measure|_$^../features/hasUnitsOfMeasure.html|_$^42cm|_$^6|_$^4|_$^-
 Manual Memory Management|_$^../features/hasManualMemoryManagement.html|_$^malloc(4);|_$^6|_$^1|_$^-
 Interfaces|_$^../features/hasInterfaces.html|_$^interface PLDBFile|_$^6|_$^1|_$^-
 Generics|_$^../features/hasGenerics.html|_$^function identity&lt;T>(arg: T): T|_$^6|_$^1|_$^-
-hasForLoops|_$^../features/hasForLoops.html|_$^|_$^6|_$^0|_$^-
 hasForEachLoops|_$^../features/hasForEachLoops.html|_$^|_$^6|_$^0|_$^-
 Expressions|_$^../features/hasExpressions.html|_$^(1 + 2)|_$^6|_$^0|_$^-
 Anonymous Functions|_$^../features/hasAnonymousFunctions.html|_$^() => printPldb()|_$^6|_$^0|_$^-

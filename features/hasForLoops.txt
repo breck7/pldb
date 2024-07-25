@@ -20,9 +20,13 @@ for i &lt; 10; i++ {
 while i in 10
   &quot;hello: $i&quot;
 
+ul
+ for val, index in [1, 2]
+   li val: #(val), index: #(index)
+
 ***
 
-Languages *with* hasForLoops include C3, bog, Jule, Speedie, Aardvark, hecl
+Languages *with* hasForLoops include C3, bog, Jule, Speedie, Aardvark, Slab, hecl
 
 ***
 

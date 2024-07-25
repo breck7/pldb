@@ -169,7 +169,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1163",
+    "Example": "1162",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -2546,7 +2546,7 @@ const measures = [
   },
   {
     "Name": "hasForLoops",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a concept of and syntax for for-loops?",
     "Example": "true",

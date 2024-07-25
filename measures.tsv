@@ -15,7 +15,7 @@ releaseNotes	67	1%	What is the URL to the release notes or changelog for this la
 download	41	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	639	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
 exampleCount	4975	100%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	4975	100%	How does this concept rank amongst all other concepts?	1163	number		1.5	true			
+rank	4975	100%	How does this concept rank amongst all other concepts?	1162	number		1.5	true			
 lastActivity	4975	100%	In our data on this entity, what year is the most recent activity?	2022	number		1.55	true			
 writtenInCount	1139	22%	How many languages is this implementation written in?	3	number		1.6	true			
 pldbScore	4975	100%	What is the combined score of this language across all the categories of rankings?	21565	number		1.6	true			
@@ -252,7 +252,7 @@ hasFixedPoint	9	0%	Does the language have a type and syntax for fixed point numb
 hasFloats	138	2%	Does the language have a syntax and type for floating points?	true	boolean		7	false			
 hasFnArguments	3	0%	Do functions accept arguments?	true	boolean		7	false			
 hasForEachLoops	6	0%	Does the language have a concept and syntax for for-each loops?	true	boolean		7	false			
-hasForLoops	6	0%	Does the language have a concept of and syntax for for-loops?	true	boolean		7	false			
+hasForLoops	7	0%	Does the language have a concept of and syntax for for-loops?	true	boolean		7	false			
 hasFunctionComposition	8	0%	Can you pass functions into other functions and get new combined functions?	true	boolean		7	false			
 hasFunctionOverloading	8	0%	Can you have multiple functions with the same name but different parameters?	false	boolean		7	false			
 hasFunctions	45	0%	Does the language have a concept of and syntax for functions?	true	boolean		7	false			
