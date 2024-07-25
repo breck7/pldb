@@ -11,7 +11,7 @@ fileExtensions wasm
 writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
 
 isOpenSource true
-tryItOnline wasm
+tryItOnline https://tio.run/#wasm
 clocExtensions wast wat
 fileType text
 docs https://developer.mozilla.org/en-US/docs/WebAssembly
