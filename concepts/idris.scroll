@@ -12,7 +12,7 @@ fileExtensions idr lidr
 writtenIn idris bourne-shell haskell restructuredtext svg c make markdown yaml javascript perl xml css nix python cmake scheme bash java
 
 isOpenSource true
-tryItOnline idris
+tryItOnline https://tio.run/#idris
 clocExtensions idr
 fileType text
 docs http://docs.idris-lang.org/en/latest/

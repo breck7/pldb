@@ -1335,23 +1335,23 @@ const measures = [
     "IsComputed": true
   },
   {
+    "Name": "tryItOnline",
+    "Values": 133,
+    "Coverage": "2%",
+    "Question": "What is a link to try this language on https://tio.run?",
+    "Example": "https://tio.run/#abc",
+    "Type": "string",
+    "Source": "tio.run",
+    "SortIndex": 2.4,
+    "IsComputed": false
+  },
+  {
     "Name": "demoVideo",
     "Values": 16,
     "Coverage": "0%",
     "Question": "What is a URL of a demo video of this language?",
     "Example": "https://www.youtube.com/watch?v=qGOIt0xh0dw",
     "Type": "string",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
-    "Name": "tryItOnline",
-    "Values": 133,
-    "Coverage": "2%",
-    "Question": "What is a link to try this language on https://tio.run?",
-    "Example": "abc",
-    "Type": "string",
-    "Source": "tio.run",
     "SortIndex": 2.4,
     "IsComputed": false
   },

@@ -133,8 +133,8 @@ numberOfCreators	1451	29%	How many creators?	1	number		2.33	true
 isSelfHosted	1140	22%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	640	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	640	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
+tryItOnline	133	2%	What is a link to try this language on https://tio.run?	https://tio.run/#abc	string	tio.run	2.4	false			
 demoVideo	16	0%	What is a URL of a demo video of this language?	https://www.youtube.com/watch?v=qGOIt0xh0dw	string		2.4	false			
-tryItOnline	133	2%	What is a link to try this language on https://tio.run?	abc	string	tio.run	2.4	false			
 clocExtensions	234	4%	What are the file extensions for this language recognized by Al Danial's cloc?	abap	string		2.4	false			
 gdbSupport	13	0%	Is the language supported by the GNU Debugger?	true	boolean	sourceware.org	2.4	false			
 visualParadigm	95	1%	Is this a visual programming thing? Sometimes called "no code" or "low code"?	true	boolean		2.4	false			

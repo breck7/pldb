@@ -2915,7 +2915,7 @@ tiobeParser
 
 // tryItOnline
 tryItOnlineParser
- extends abstractUniqueWordMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is a link to try this language on https://tio.run?
  string sourceDomain tio.run
  float sortIndex 2.4
