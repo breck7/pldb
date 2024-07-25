@@ -5,7 +5,7 @@ Bayer Expressions is a data notation created in 2018 by Dave Bayer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Dave%20Bayer Dave Bayer
 
-#3097 on PLDB
+#3098 on PLDB
 6 Years Old
 
 An alternative notation for S-Expressions that uses fewer parentheses. As described by the creator: Indentation implies parentheses. A pipe "|" opens a parenthesis that auto-closes at the end of that line or at the next ")". A dollar "$" opens a parenthesis that auto-closes when the indentation recovers. The result has a lighter, more poetic look than any language I know, and the parentheses that are left actually matter, so I pay attention to them.

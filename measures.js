@@ -169,7 +169,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1273",
+    "Example": "1274",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 4975,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21383",
+    "Example": "21382",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -312,7 +312,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1061,
+    "Values": 1062,
     "Coverage": "21%",
     "Question": "How many stars of the repo?",
     "Example": "672",
@@ -1968,7 +1968,7 @@ const measures = [
   },
   {
     "Name": "lineCommentToken",
-    "Values": 480,
+    "Values": 481,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2278,7 +2278,7 @@ const measures = [
   },
   {
     "Name": "hasComments",
-    "Values": 629,
+    "Values": 630,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2298,7 +2298,7 @@ const measures = [
   },
   {
     "Name": "hasConstants",
-    "Values": 28,
+    "Values": 29,
     "Coverage": "0%",
     "Question": "Does the language have a way to declare constant compile time variables?",
     "Example": "true",
@@ -2578,7 +2578,7 @@ const measures = [
   },
   {
     "Name": "hasFunctions",
-    "Values": 44,
+    "Values": 45,
     "Coverage": "0%",
     "Question": "Does the language have a concept of and syntax for functions?",
     "Example": "true",
@@ -2728,8 +2728,8 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 49,
-    "Coverage": "0%",
+    "Values": 50,
+    "Coverage": "1%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",
     "Type": "boolean",
@@ -2818,7 +2818,7 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 550,
+    "Values": 551,
     "Coverage": "11%",
     "Question": "Does the language have line comments?",
     "Example": "true",

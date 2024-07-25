@@ -32,6 +32,13 @@ fn a_function() {
     // ...
 }
 
+fun main(argc s32, argv ^^u8) s32:
+ -- initialized to false
+ let! board = [DIM][DIM]bool{}
+ let n = Solve(&amp;!board, 0)
+ fmt::print#(n, &quot;\n&quot;)
+ return 0
+
 function Example (|string| data)
  file &lt;~ data
 
@@ -43,7 +50,7 @@ FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
 
 ***
 
-Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, Bash, PowerShell, Scala, Lua, Kotlin, Julia, Erlang, Ada, Solidity, Crystal, Reason, Groovy, Pug, F#, OCaml, VHDL, F*, ABAP, Verilog, Janet, Koka, C3, Opa, SystemVerilog, progsbase, ATS, X10, IGOR Pro, Ligo, Cyber, Jule, Eclipse Command Language, Sophia, Speedie, Bel, Q#, BALGOL, plang
+Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, Bash, PowerShell, Scala, Lua, Kotlin, Julia, Erlang, Ada, Solidity, Crystal, Reason, Groovy, Pug, F#, OCaml, VHDL, F*, ABAP, Verilog, Janet, Koka, C3, Opa, SystemVerilog, progsbase, ATS, X10, IGOR Pro, Ligo, Cyber, Jule, Eclipse Command Language, Sophia, Cwerg, Speedie, Bel, Q#, BALGOL, plang
 
 ***
 

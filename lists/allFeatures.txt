@@ -4,8 +4,8 @@ All Features
 A list of 168 features found in programming languages.
 
 title|_$^titleLink|_$^pseudoExample|_$^yes|_$^no|_$^percentage
-Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^625|_$^4|_$^99%
-Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^529|_$^21|_$^96%
+Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^626|_$^4|_$^99%
+Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^530|_$^21|_$^96%
 Strings|_$^../features/hasStrings.html|_$^"Hello PLDB"|_$^365|_$^0|_$^100%
 Print() Debugging|_$^../features/hasPrintDebugging.html|_$^print "Hello PLDB"|_$^319|_$^1|_$^100%
 MultiLine Comments|_$^../features/hasMultiLineComments.html|_$^/* Hello PLDB */|_$^224|_$^20|_$^92%
@@ -18,14 +18,14 @@ Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true
 Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^53|_$^1|_$^98%
 Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
 While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48|_$^4|_$^92%
+File Imports|_$^../features/hasImports.html|_$^import pldb|_$^48|_$^2|_$^96%
 Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^48|_$^1|_$^98%
-File Imports|_$^../features/hasImports.html|_$^import pldb|_$^47|_$^2|_$^96%
-Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^43|_$^1|_$^98%
+Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^44|_$^1|_$^98%
 Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
 Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
 Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^31|_$^5|_$^86%
+Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^28|_$^1|_$^97%
 Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^27|_$^9|_$^75%
-Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^27|_$^1|_$^96%
 Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
 Switch Statements|_$^../features/hasSwitch.html|_$^switch animal: case dog-buy; case cat-sell;|_$^24|_$^1|_$^96%
 Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^24|_$^54|_$^31%
