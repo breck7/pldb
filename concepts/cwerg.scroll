@@ -1,0 +1,26 @@
+import ../code/conceptPage.scroll
+
+id cwerg
+name Cwerg
+appeared 2019
+creators Robert Muth
+tags pl
+description The best C-like language that can be implemented in 10kLOC.
+
+repoStats
+ firstCommit 2019
+ newestCommit 2024
+ commits 2228
+ committers 3
+ files 737
+
+example
+ module:
+ 
+ import fmt
+ 
+ fun main(argc s32, argv ^^u8) s32:
+     fmt::print#("hello world\n")
+     return 0
+
+githubRepo https://github.com/robertmuth/Cwerg
