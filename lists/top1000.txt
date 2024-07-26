@@ -6,18 +6,18 @@ Here are the top 1,000 computer languages in PLDB. You can also explore all the 
  https://pldb.io/lists/../pages/the-rankings-algorithm.html explained here
 
 name	rank	appeared	tags	creators	foundationScore	numberOfUsersEstimate	numberOfJobsEstimate	inboundLinksCount	measurements	nameLink
-JavaScript	1	1995	pl	Brendan Eich	486	5962666	63993	532	143	../concepts/javascript.html
-C	2	1972	pl	Dennis Ritchie	384	3793768	59919	419	98	../concepts/c.html
-Python	3	1991	pl	Guido van Rossum	375	2952597	46976	392	119	../concepts/python.html
+JavaScript	1	1995	pl	Brendan Eich	488	5962666	63993	534	143	../concepts/javascript.html
+C	2	1972	pl	Dennis Ritchie	385	3793768	59919	420	98	../concepts/c.html
+Python	3	1991	pl	Guido van Rossum	376	2952597	46976	393	119	../concepts/python.html
 Java	4	1995	pl	James Gosling	132	5581347	85206	141	108	../concepts/java.html
-C++	5	1985	pl	Bjarne Stroustrup	275	4128238	61098	288	79	../concepts/cpp.html
-HTML	6	1991	textMarkup	Tim Berners-Lee	470	5570873	69531	476	53	../concepts/html.html
-CSS	7	1996	stylesheetLanguage	Håkon Wium Lie	385	2881847	45617	387	50	../concepts/css.html
+C++	5	1985	pl	Bjarne Stroustrup	276	4128238	61098	289	79	../concepts/cpp.html
+HTML	6	1991	textMarkup	Tim Berners-Lee	471	5570873	69531	477	53	../concepts/html.html
+CSS	7	1996	stylesheetLanguage	Håkon Wium Lie	386	2881847	45617	388	50	../concepts/css.html
 Perl	8	1987	pl	Larry Wall	107	493239	13482	110	85	../concepts/perl.html
 Ruby	9	1995	pl	Yukihiro Matsumoto	88	394798	11438	92	107	../concepts/ruby.html
 PHP	10	1995	pl	Rasmus Lerdorf	56	2357682	30349	59	100	../concepts/php.html
 XML	11	1996	dataNotation	Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John W. Cowan	373	1917452	42277	382	42	../concepts/xml.html
-JSON	12	2001	dataNotation	Douglas Crockford	555	355741	9228	576	47	../concepts/json.html
+JSON	12	2001	dataNotation	Douglas Crockford	556	355741	9228	577	47	../concepts/json.html
 Go	13	2009	pl	Rob Pike and Ken Thompson and Robert Griesemer	77	687156	6403	79	96	../concepts/go.html
 TypeScript	14	2012	pl	Anders Hejlsberg	145	217940	1542	155	85	../concepts/typescript.html
 SQL	15	1974	queryLanguage	Donald D. Chamberlin and Raymond F. Boyce	43	7179119	219617	53	50	../concepts/sql.html
@@ -45,11 +45,11 @@ Mathematica	36	1988	pl mathematics physics chemistry biology	Stephen Wolfram	6	1
 Dart	37	2011	pl	Lars Bak	9	38325	208	9	71	../concepts/dart.html
 CUDA	38	2007	pl		14	38623	769	14	36	../concepts/cuda.html
 COBOL	39	1959	pl	Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper	4	187188	2616	5	53	../concepts/cobol.html
-Markdown	40	2004	textMarkup	John Gruber and Aaron Swartz	1021	12504	0	1034	36	../concepts/markdown.html
+Markdown	40	2004	textMarkup	John Gruber and Aaron Swartz	1022	12504	0	1035	36	../concepts/markdown.html
 Visual Basic	41	1991	pl		12	15898	3294	13	46	../concepts/visual-basic.html
 Ada	42	1980	pl	Jean Ichbiah	10	12116	2184	13	65	../concepts/ada.html
 Pascal	43	1970	pl	Niklaus Wirth	48	7708	102	54	62	../concepts/pascal.html
-YAML	44	2001	dataNotation	Clark Evans and Oren Ben-Kiki and Ingy döt Net	716	13981	61	725	31	../concepts/yaml.html
+YAML	44	2001	dataNotation	Clark Evans and Oren Ben-Kiki and Ingy döt Net	717	13981	61	726	31	../concepts/yaml.html
 Solidity	45	2014	contractLanguage	Christian Reitwiessner and Alex Beregszaszi	5	32733	937	8	51	../concepts/solidity.html
 Nim	46	2008	pl	Andreas Rumpf	12	20150	0	13	64	../concepts/nim.html
 TOML	47	2013	dataNotation	Tom Preston-Werner	181	20055	0	185	30	../concepts/toml.html
@@ -63,24 +63,24 @@ Reason	54	2016	pl		11	11376	0	12	58	../concepts/reason.html
 Elm	55	2012	pl	Evan Czaplicki	6	11497	127	9	54	../concepts/elm.html
 MySQL	56	1995	queryLanguage	David Axmark and Michael Widenius	0	2608362	47466	1	49	../concepts/mysql.html
 Scheme	57	1975	pl lisp	Guy Steele and Gerald Jay Sussman	32	3796	1174	42	56	../concepts/scheme.html
-Haxe	58	2005	pl	Nicolas Cannasse	10	9105	1	11	50	../concepts/haxe.html
-WebAssembly	59	2015	bytecode	Alon Zakai	24	8440	5	31	35	../concepts/wasm.html
+WebAssembly	58	2015	bytecode	Alon Zakai	25	8440	5	32	35	../concepts/wasm.html
+Haxe	59	2005	pl	Nicolas Cannasse	10	9105	1	11	50	../concepts/haxe.html
 GraphQL	60	2012	queryLanguage	Lee Byron	6	18676	0	7	46	../concepts/graphql.html
 Groovy	61	2003	pl	James Strachan	13	6056	0	13	65	../concepts/groovy.html
 awk	62	1977	pl	Alfred Aho and Peter J. Weinberger and Brian Kernighan	41	4680	7	42	45	../concepts/awk.html
 Tex	63	1978	pl	Donald Knuth	108	4276	3	114	38	../concepts/tex.html
 Pug	64	2010	template	Tj Holowaychuk	4	27204	0	4	40	../concepts/pug.html
-Coq	65	1989	pl	Thierry Coquand	8	10452	0	8	39	../concepts/coq.html
-OCaml	66	1996	pl	Xavier Leroy	48	3341	0	51	65	../concepts/ocaml.html
+OCaml	65	1996	pl	Xavier Leroy	48	3341	0	51	65	../concepts/ocaml.html
+Coq	66	1989	pl	Thierry Coquand	8	10452	0	8	39	../concepts/coq.html
 F#	67	2005	pl	Don Syme	18	4316	0	18	73	../concepts/f-sharp.html
 Chapel	68	2004	pl	David Callahan and Hans Zima and Brad Chamberlain and John Plevyak	3	16521	1	3	59	../concepts/chapel.html
 SPSS	69	1968	pl	Norman H. Nie and C. Hadlai Hull and Dale H. Bent	0	965674	9587	2	29	../concepts/spss.html
 LLVM IR	70	2003	ir		20	5812	23	23	33	../concepts/llvmir.html
 Smalltalk	71	1972	pl	Alan Kay and Dan Ingalls and Adele Goldberg	10	5400	0	10	46	../concepts/smalltalk.html
-ClojureScript	72	2011	pl	Rich Hickey	4	14472	0	5	33	../concepts/clojurescript.html
-HCL	73	2014	dataNotation		13	5845	0	13	34	../concepts/hcl.html
-HAML	74	2006	template	Hampton Lintorn-Catlin	6	6547	0	10	36	../concepts/haml.html
-SVG	75	2001	textMarkup		305	6405	0	307	24	../concepts/svg.html
+HCL	72	2014	dataNotation		13	5845	0	13	34	../concepts/hcl.html
+HAML	73	2006	template	Hampton Lintorn-Catlin	6	6547	0	10	36	../concepts/haml.html
+SVG	74	2001	textMarkup		307	6405	0	309	24	../concepts/svg.html
+ClojureScript	75	2011	pl	Rich Hickey	4	14472	0	5	33	../concepts/clojurescript.html
 PureScript	76	2013	pl	Phil Freeman	3	10944	0	4	39	../concepts/purescript.html
 VHDL	77	1983	hardwareDescriptionLanguage		5	6245	0	5	45	../concepts/vhdl.html
 Git	78	2005	versionControlApplication	Linus Torvalds	0	837194	7032	1	27	../concepts/git.html
@@ -90,16 +90,16 @@ Liquid	81	2008	template	Tobias Lütke	4	13801	325	4	27	../concepts/liquid.html
 Protocol Buffers	82	2008	idl		39	2416	94	44	35	../concepts/protobuf.html
 Node.js	83	2009	pl	Ryan Dahl	0	378129	6864	0	39	../concepts/nodejs.html
 Ini	84	1987	dataNotation		103	2950	0	105	29	../concepts/ini.html
-CMake	85	2000	application		165	3423	0	165	26	../concepts/cmake.html
+CMake	85	2000	application		166	3423	0	166	26	../concepts/cmake.html
 Visual Basic .NET	86	2001	pl		4	5691	3447	4	32	../concepts/visual-basic.net.html
-Make	87	1976	pl application	Stuart Feldman	449	1860	0	451	35	../concepts/make.html
+Make	87	1976	pl application	Stuart Feldman	450	1860	0	452	35	../concepts/make.html
 JSON5	88	2012	dataNotation	Aseem Kishore	9	5967	0	9	29	../concepts/json5.html
 APL	89	1964	pl	Kenneth E. Iverson	4	3670	0	10	39	../concepts/apl.html
 Gradle	90	2008	application	Hans Dockter	49	26502	0	49	19	../concepts/gradle.html
 Brainfuck	91	1993	esolang	Urban Müller	7	6460	0	9	28	../concepts/brainfuck.html
 Yacc	92	1975	grammarLanguage compiler	Stephen C. Johnson	62	3087	17	64	27	../concepts/yacc.html
 Deno	93	2018	compiler	Ryan Dahl	0	107126	0	1	31	../concepts/deno.html
-Assembly language	94	1960	assembly		86	26543	1329	86	17	../concepts/assembly-language.html
+Assembly language	94	1960	assembly		87	26543	1329	87	17	../concepts/assembly-language.html
 ARM	95	1985	assembly	Sophie Wilson and Steve Furber	0	123423	7695	1	24	../concepts/arm.html
 Embedded Crystal	96	2016	template		4	22850	0	4	23	../concepts/ecr.html
 OpenCL	97	2009	pl		8	3731	266	8	28	../concepts/opencl.html
@@ -128,8 +128,8 @@ Redis	119	2009	application	Salvatore Sanfilippo	0	183652	591	0	25	../concepts/re
 IDL	120	1977	pl	David Stern	20	1281	0	20	39	../concepts/idl.html
 Delphi	121	1995	pl	Anders Hejlsberg	0	7084	181	0	45	../concepts/delphi.html
 RobotFramework	122	2013	pl		3	13440	0	3	21	../concepts/robotframework.html
-Stata	123	1985	pl	William Gould	2	2816	0	3	34	../concepts/stata.html
-F*	124	2014	pl		0	3616	0	2	35	../concepts/fstar.html
+F*	123	2014	pl		0	3616	0	2	35	../concepts/fstar.html
+Stata	124	1985	pl	William Gould	2	2816	0	3	34	../concepts/stata.html
 SaltStack	125	2011	pl	Thomas S Hatch	3	32744	0	3	19	../concepts/saltstack.html
 Flow	126	2014	pl		0	28333	0	1	23	../concepts/flow.html
 Standard ML	127	1990	pl		10	1726	0	10	32	../concepts/standard-ml.html
@@ -227,8 +227,8 @@ Pandas	218	2008	library	Wes McKinney	0	5153	341	0	23	../concepts/pandas.html
 Bicep	219	2020	jsonFormat	Anthony Martin	0	4461	0	0	25	../concepts/bicep.html
 Eve	220	2016	pl		0	7875	0	0	22	../concepts/eve.html
 Ninja	221	2012	template	Evan Martin	0	13051	0	0	20	../concepts/ninja.html
-Imba	222	2014	pl		2	6233	0	2	17	../concepts/imba.html
-Literate CoffeeScript	223	2013	pl	Jeremy Ashkenas	0	22814	0	0	19	../concepts/literate-coffeescript.html
+Literate CoffeeScript	222	2013	pl	Jeremy Ashkenas	0	22814	0	0	19	../concepts/literate-coffeescript.html
+Imba	223	2014	pl		2	6233	0	2	17	../concepts/imba.html
 Thrift	224	2007	idl		6	1626	0	7	20	../concepts/thrift.html
 YARA	225	2008	pl	Victor M. Alvarez	0	10350	0	0	20	../concepts/yara.html
 Halide	226	2010	pl		0	8230	0	0	21	../concepts/halide.html
@@ -238,12 +238,12 @@ Processing	229	2001	pl		0	2366	0	0	32	../concepts/processing.html
 Dafny	230	2009	pl	K. Rustan M. Leino	0	2503	0	0	30	../concepts/dafny.html
 SPARQL	231	2008	queryLanguage		0	2165	0	0	33	../concepts/sparql.html
 Agda	232	2007	pl	Ulf Norell and Catarina Coquand	4	731	0	4	37	../concepts/agda.html
-Bourne shell	233	1977	pl	Stephen Bourne	563	1370	0	563	17	../concepts/bourne-shell.html
+Bourne shell	233	1977	pl	Stephen Bourne	564	1370	0	564	17	../concepts/bourne-shell.html
 CodeMirror	234	2007	editor	Marijn Haverbeke	0	3562	0	5	18	../concepts/codemirror.html
 Mojo	235	2022	pl	Chris Lattner	1	1767	0	1	24	../concepts/mojo.html
 mlir	236	2019	ir	Chris Lattner	0	2551	0	1	22	../concepts/mlir.html
-RDF	237	1997	dataNotation		0	4096	0	8	17	../concepts/rdf.html
-Scala.js	238	2013	pl	Martin Odersky	0	5785	0	0	22	../concepts/scala-js.html
+Scala.js	237	2013	pl	Martin Odersky	0	5785	0	0	22	../concepts/scala-js.html
+RDF	238	1997	dataNotation		0	4096	0	8	17	../concepts/rdf.html
 Ace Editor	239	2010	editor	Fabian Jakobs	0	40802	0	2	15	../concepts/ace.html
 FLEX	240	1987	grammarLanguage	Vern Paxson	0	4484	0	0	23	../concepts/flex.html
 PyTorch	241	2016	library	Ronan Collobert	0	112747	0	0	17	../concepts/pytorch.html
@@ -269,8 +269,8 @@ Taichi	260	2019	pl	Yuanming Hu	0	26504	0	0	17	../concepts/taichi.html
 Kubernetes	261	2014	application		0	225097	0	0	16	../concepts/kubernetes.html
 AMPL	262	1985	pl	Robert Fourer and David Gay and Brian Kernighan	0	766	3	2	37	../concepts/ampl.html
 POV-Ray SDL	263	1991	pl	Chris Cason	0	2190	0	0	26	../concepts/pov-ray-sdl.html
-v8	264	2008	vm	Lars Bak	0	31973	0	1	15	../concepts/v8.html
-Hjson	265	2014	dataNotation	Christian Zangl	0	2615	0	0	24	../concepts/hjson.html
+Hjson	264	2014	dataNotation	Christian Zangl	0	2615	0	0	24	../concepts/hjson.html
+v8	265	2008	vm	Lars Bak	0	31973	0	1	15	../concepts/v8.html
 Regular Expressions	266	1951	queryLanguage	Stephen Kleene	0	23343	0	0	17	../concepts/regex.html
 Svelte	267	2019	pl	Rich Harris	2	71482	0	2	14	../concepts/svelte.html
 Ceylon	268	2011	pl	Gavin King	0	1173	0	0	48	../concepts/ceylon.html
@@ -281,11 +281,11 @@ Expect	272	1990	pl		16	1011	0	16	19	../concepts/expect.html
 QBasic	273	1991	pl		0	1910	0	0	27	../concepts/qbasic.html
 Sqlalchemy	274	2006	queryLanguage	Michael Bayer	0	65775	0	0	16	../concepts/sqlalchemy.html
 ink	275	2015	esolang	Joseph Humfrey	0	4527	0	0	20	../concepts/ink.html
-SMTP	276	1982	protocol	Jon Postel	0	13330	0	2	15	../concepts/smtp.html
-SystemVerilog	277	2002	pl		0	1345	0	0	36	../concepts/systemverilog.html
-DTrace	278	2005	pl		2	926	0	2	26	../concepts/dtrace.html
-NumPy	279	1995	library	Travis Oliphant	0	2156	0	0	25	../concepts/numpy.html
-beef-lang	280	2019	pl	Brian Fiete	0	2410	0	0	24	../concepts/beef.html
+SystemVerilog	276	2002	pl		0	1345	0	0	36	../concepts/systemverilog.html
+SMTP	277	1982	protocol	Jon Postel	0	13330	0	2	15	../concepts/smtp.html
+NumPy	278	1995	library	Travis Oliphant	0	2156	0	0	25	../concepts/numpy.html
+beef-lang	279	2019	pl	Brian Fiete	0	2410	0	0	24	../concepts/beef.html
+DTrace	280	2005	pl		2	926	0	2	26	../concepts/dtrace.html
 Modula-2	281	1978	pl	Niklaus Wirth	0	655	0	2	40	../concepts/modula-2.html
 Emojicode	282	2016	pl	Theo Weidmann	0	3274	0	0	22	../concepts/emojicode.html
 Rexx	283	1979	pl	Mike Cowlishaw	5	435	40	5	39	../concepts/rexx.html
@@ -314,8 +314,8 @@ GLSL	305	1992	pl		28	450	0	28	24	../concepts/glsl.html
 onnx	306	2017	binaryDataFormat	Junjie Bai	0	21638	0	0	16	../concepts/onnx.html
 C2	307	2012	pl	Bas van den Berg	0	773	0	1	33	../concepts/c2.html
 idyll	308	2017	pl		0	2218	0	0	23	../concepts/idyll.html
-JSP	309	1999	template		7	2965	0	7	15	../concepts/java-server-pages.html
-Slope	310	2021	pl lisp	Sloum	0	1001	0	0	42	../concepts/slope.html
+Slope	309	2021	pl lisp	Sloum	0	1001	0	0	42	../concepts/slope.html
+JSP	310	1999	template		7	2965	0	7	15	../concepts/java-server-pages.html
 HLSL	311	2002	pl		6	640	0	6	24	../concepts/hlsl.html
 Natural Language Toolkit	312	2001	library		0	19785	0	0	16	../concepts/nltk.html
 x86 Assembly	313	1972	assembly		1	2350	0	1	18	../concepts/x86-assembly.html
@@ -324,15 +324,15 @@ AutoIt	315	1999	pl	Jonathan Bennett	0	1011	0	0	39	../concepts/autoit.html
 Elvish	316	2013	pl	Qi Xiao	0	5698	0	0	18	../concepts/elvish.html
 K	317	1993	pl	Arthur Whitney	0	585	0	11	27	../concepts/k.html
 Simula	318	1965	pl	Ole-Johan Dahl and Kristen Nygaard	0	1110	0	0	34	../concepts/simula.html
-Twig	319	2009	template		2	614	0	2	29	../concepts/twig.html
-Pygments	320	2006	library	Georg Brandl	0	3171	0	3	16	../concepts/pygments.html
-unison	321	2015	pl		0	5287	0	0	18	../concepts/unison.html
-Turtle	322	2011	dataNotation		0	2930	0	4	16	../concepts/turtle.html
+Pygments	319	2006	library	Georg Brandl	0	3171	0	3	16	../concepts/pygments.html
+unison	320	2015	pl		0	5287	0	0	18	../concepts/unison.html
+Turtle	321	2011	dataNotation		0	2930	0	4	16	../concepts/turtle.html
+Twig	322	2009	template		2	614	0	2	29	../concepts/twig.html
 Clean	323	1987	pl		2	481	0	2	37	../concepts/clean.html
 Homebrew	324	2009	packageManager	Max Howell	0	57375	0	1	14	../concepts/homebrew-pm.html
 Golo	325	2012	pl	Webmaster	0	1044	0	0	35	../concepts/golo.html
-Scikit-learn	326	2007	library	David Cournapeau	0	125147	0	0	15	../concepts/scikit-learn.html
-wisp	327	2012	pl	Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick	0	1402	0	0	27	../concepts/wisp.html
+wisp	326	2012	pl	Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick	0	1402	0	0	27	../concepts/wisp.html
+Scikit-learn	327	2007	library	David Cournapeau	0	125147	0	0	15	../concepts/scikit-learn.html
 mathics	328	2012	pl		0	2805	0	0	20	../concepts/mathics.html
 Keras	329	2015	library	François Chollet	0	116767	0	0	15	../concepts/keras.html
 YANG	330	2014	application	Tom Nadeau	0	4762	0	0	18	../concepts/yang.html
@@ -344,17 +344,17 @@ WDL	335	2012	pl		0	1576	0	0	24	../concepts/wdl.html
 LOLCODE	336	2007	esolang	Adam Lindsay	0	1486	0	0	25	../concepts/lolcode.html
 iOS	337	2007	os		0	535588	5010	0	14	../concepts/ios.html
 JSFuck	338	2012	esolang	Martin Kleppe	0	10006	0	0	16	../concepts/jsf.html
-emberjs-framework	339	2011	framework	Yehuda Katz	0	36302	0	0	15	../concepts/emberjs-framework.html
-AGC	340	1966	assembly		0	3025	0	0	19	../concepts/apollo-guidance-computer.html
-Bison	341	1985	grammarLanguage	Robert Corbett	0	846	0	1	26	../concepts/bison.html
+AGC	339	1966	assembly		0	3025	0	0	19	../concepts/apollo-guidance-computer.html
+Bison	340	1985	grammarLanguage	Robert Corbett	0	846	0	1	26	../concepts/bison.html
+emberjs-framework	341	2011	framework	Yehuda Katz	0	36302	0	0	15	../concepts/emberjs-framework.html
 sizzle	342	2008	queryLanguage		0	9161	0	0	16	../concepts/sizzle.html
 Ron	343	2015	dataNotation	Juniper Tyree	0	2412	0	0	20	../concepts/ron.html
 AviSynth	344	2000	editor	Ben Rudiak-Gould and Edwin van Eggelen and Klaus Post and Richard Berg and Ian Brabham	0	1954	0	0	22	../concepts/avi-synth.html
 Sage	345	2005	pl		0	1116	0	0	29	../concepts/sagemath.html
 Nemerle	346	2003	pl	Krzysztof Czarnecki	3	406	0	3	36	../concepts/nemerle.html
 mochajs	347	2011	library	TJ Holowaychuk and Guillermo Rauch	0	30892	0	0	15	../concepts/mochajs.html
-HHVM	348	2011	vm		0	29420	0	0	15	../concepts/hhvm.html
-Boo	349	2003	pl	Rodrigo B. De Oliveira	0	861	0	0	38	../concepts/boo.html
+Boo	348	2003	pl	Rodrigo B. De Oliveira	0	861	0	0	38	../concepts/boo.html
+HHVM	349	2011	vm		0	29420	0	0	15	../concepts/hhvm.html
 SOAP	350	1998	xmlFormat	Dave Winer and Don Box and Bob Atkinson and Mohsen Al-Ghosein	0	10535	7493	0	15	../concepts/soap.html
 Felix	351	2001	pl	John Skaller	0	879	0	0	36	../concepts/felix.html
 Mercury	352	1995	pl	Zoltan Somogyi	0	939	0	0	33	../concepts/mercury.html
@@ -363,18 +363,18 @@ Ring	354	2016	pl	Mahmoud Fayed	4	431	0	4	29	../concepts/ring.html
 Observable	355	2017	pl	Mike Bostock	0	1001	0	1	23	../concepts/observable-lang.html
 Drupal	356	2000	application	Dries Buytaert	0	168605	1642	0	14	../concepts/drupal.html
 datascript	357	2014	queryLanguage		0	5708	0	1	15	../concepts/datascript.html
-Mirah	358	2009	pl	Charles Oliver Nutter	0	1395	0	0	24	../concepts/mirah.html
-DOI	359	2000	schema		0	21001	0	0	15	../concepts/doi.html
-MIME	360	1991	textDataFormat	Nathaniel Borenstein and Ned Freed	0	4380	1	0	17	../concepts/mime.html
-Parsers	361	2017	grammarLanguage compiler	Breck Yunits	2	420	0	5	29	../concepts/parsers.html
+Parsers	358	2017	grammarLanguage compiler	Breck Yunits	3	420	0	6	29	../concepts/parsers.html
+Mirah	359	2009	pl	Charles Oliver Nutter	0	1395	0	0	24	../concepts/mirah.html
+DOI	360	2000	schema		0	21001	0	0	15	../concepts/doi.html
+MIME	361	1991	textDataFormat	Nathaniel Borenstein and Ned Freed	0	4380	1	0	17	../concepts/mime.html
 BCPL	362	1966	pl	Martin Richards	0	1050	0	0	27	../concepts/bcpl.html
-AssemblyScript	363	2017	pl		0	16050	0	0	15	../concepts/assemblyscript.html
-Q	364	2003	pl	Arthur Whitney	0	765	0	1	25	../concepts/q.html
+Q	363	2003	pl	Arthur Whitney	0	765	0	1	25	../concepts/q.html
+AssemblyScript	364	2017	pl		0	16050	0	0	15	../concepts/assemblyscript.html
 MPS	365	2010	grammarLanguage		1	2427	0	1	16	../concepts/mps.html
 Jakt	366	2022	pl	Andreas Kling	0	2313	0	0	19	../concepts/jakt.html
 CIL	367	2000	pl		0	1080	0	0	26	../concepts/cil.html
-Prism	368	2012	library	Lea Verou	0	14504	0	0	15	../concepts/prismjs.html
-REST	369	1996	protocol	Roy Fielding	0	24190	26215	0	14	../concepts/rest.html
+REST	368	1996	protocol	Roy Fielding	0	24190	26215	0	14	../concepts/rest.html
+Prism	369	2012	library	Lea Verou	0	14504	0	0	15	../concepts/prismjs.html
 Numba	370	2012	compiler	Travis E. Oliphant	0	11005	0	1	14	../concepts/numba.html
 AspectJ	371	2001	pl	Eric Bodden	0	661	0	0	43	../concepts/aspectj.html
 SuperCollider	372	1996	pl		0	801	0	0	33	../concepts/supercollider.html
@@ -382,18 +382,18 @@ Datalog	373	1977	pl		0	820	0	2	22	../concepts/datalog.html
 commonmark	374	2014	textMarkup	John MacFarlane	0	6381	0	2	14	../concepts/commonmark.html
 nomnoml	375	2014	diagramLang	Daniel Kallin	0	2721	0	0	18	../concepts/nomnoml.html
 skip	376	2018	pl		0	2150	0	0	19	../concepts/skip.html
-chaiscript	377	2009	pl		0	3566	0	0	17	../concepts/chaiscript.html
-Rholang	378	2016	contractLanguage		0	2461	13	0	18	../concepts/rholang.html
-Logica	379	2020	queryLanguage	Evgeny Skvortsov	0	1718	0	0	20	../concepts/logica.html
-Dylan	380	1992	pl		0	636	0	0	41	../concepts/dylan.html
-Vim	381	1991	editor	Bram Moolenaar	0	152267	0	0	14	../concepts/vim.html
-ISBN	382	1970	schema		0	49430	53	0	14	../concepts/isbn.html
-Smarty	383	2006	template	Monte Ohrt and Messju Mohr and Uwe Tews	4	586	0	4	21	../concepts/smarty.html
-docopt	384	2012	pl	Vladimir Keleshev	0	9360	0	0	15	../concepts/docopt.html
+Scroll Notation	377	2017	dataNotation	Breck Yunits	3	420	0	9	25	../concepts/scrollnotation.html
+chaiscript	378	2009	pl		0	3566	0	0	17	../concepts/chaiscript.html
+Rholang	379	2016	contractLanguage		0	2461	13	0	18	../concepts/rholang.html
+Logica	380	2020	queryLanguage	Evgeny Skvortsov	0	1718	0	0	20	../concepts/logica.html
+Dylan	381	1992	pl		0	636	0	0	41	../concepts/dylan.html
+Vim	382	1991	editor	Bram Moolenaar	0	152267	0	0	14	../concepts/vim.html
+ISBN	383	1970	schema		0	49430	53	0	14	../concepts/isbn.html
+Smarty	384	2006	template	Monte Ohrt and Messju Mohr and Uwe Tews	4	586	0	4	21	../concepts/smarty.html
 walt	385	2017	pl		0	5059	0	0	16	../concepts/walt.html
 YoptaScript	386	2016	pl	Sam Gozman	0	2011	0	0	19	../concepts/yoptascript.html
-Scroll Notation	387	2017	dataNotation	Breck Yunits	2	420	0	8	25	../concepts/scrollnotation.html
-mermaid	388	2014	diagramLang	Knut Sveidqvist	0	80912	0	0	14	../concepts/mermaid.html
+mermaid	387	2014	diagramLang	Knut Sveidqvist	0	80912	0	0	14	../concepts/mermaid.html
+docopt	388	2012	pl	Vladimir Keleshev	0	9360	0	0	15	../concepts/docopt.html
 Xojo	389	1996	pl		0	596	0	1	26	../concepts/xojo.html
 Scroll	390	2019	staticSiteGenerator textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup	Breck Yunits	0	380	0	2	37	../concepts/scroll.html
 Ante	391	2015	pl	Jake Fecher	0	1588	0	0	20	../concepts/ante.html
@@ -411,8 +411,8 @@ Impala	402	2012	queryLanguage		0	2935	0	0	17	../concepts/impala.html
 Flow9	403	2010	pl	Dmitry Solomennikov	0	837	0	0	28	../concepts/flow9.html
 Emacs	404	1976	editor	Guy Steele and Dave Moon	0	64338	0	1	13	../concepts/emacs-editor.html
 Stencil	405	2018	template	Kyle Fuller	0	2840	0	0	17	../concepts/stencil.html
-SugarSS	406	2016	textMarkup	Andrey Sitnik	2	996	0	2	18	../concepts/sugarss.html
-Oz	407	1991	pl	Gert Smolka	0	661	0	0	33	../concepts/oz.html
+Oz	406	1991	pl	Gert Smolka	0	661	0	0	33	../concepts/oz.html
+SugarSS	407	2016	textMarkup	Andrey Sitnik	2	996	0	2	18	../concepts/sugarss.html
 ArkScript	408	2019	pl	Alexandre Plateau and Pierre Pharel and Natendrtfm	0	726	0	0	31	../concepts/arkscript.html
 Meson	409	2013	pl		15	535	0	15	18	../concepts/meson.html
 Raku	410	2015	pl	Larry Wall	8	216	0	9	40	../concepts/raku.html
@@ -420,9 +420,9 @@ Nit	411	2008	pl	Jean Privat	0	673	0	0	32	../concepts/nit.html
 Ioke	412	2008	pl	Ola Bini	0	584	0	0	36	../concepts/ioke.html
 Lily	413	2011	pl		0	1226	0	0	22	../concepts/lily.html
 Gosu	414	2002	pl		0	726	0	0	30	../concepts/gosu.html
-JCL	415	1964	pl		2	795	0	2	19	../concepts/jcl.html
-xBase	416	1986	pl		2	425	0	2	26	../concepts/xbase.html
-Maxima	417	1982	pl		0	691	0	0	31	../concepts/maxima.html
+Maxima	415	1982	pl		0	691	0	0	31	../concepts/maxima.html
+JCL	416	1964	pl		2	795	0	2	19	../concepts/jcl.html
+xBase	417	1986	pl		2	425	0	2	26	../concepts/xbase.html
 Self	418	1987	pl	David Ungar	0	461	0	1	29	../concepts/self.html
 EBNF	419	1977	grammarLanguage	Niklaus Wirth	0	1490	0	1	17	../concepts/ebnf.html
 Modelica	420	1997	pl		0	736	0	0	29	../concepts/modelica.html
@@ -499,8 +499,8 @@ Object Pascal	490	1986	pl		0	765	0	0	23	../concepts/object-pascal.html
 Org	491	2003	textMarkup	Carsten Dominik	0	656	0	0	24	../concepts/org.html
 pyret	492	2011	pl	Joe Gibbs Politz	0	1326	0	0	18	../concepts/pyret.html
 X10	493	2004	pl	Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar	0	376	0	0	44	../concepts/x10.html
-mavo	494	2015	template	Lea Verou	0	3182	0	0	15	../concepts/mavo.html
-contracts.coffee	495	2011	pl	Tim Disney	0	6313	0	0	14	../concepts/contracts.coffee.html
+contracts.coffee	494	2011	pl	Tim Disney	0	6313	0	0	14	../concepts/contracts.coffee.html
+mavo	495	2015	template	Lea Verou	0	3182	0	0	15	../concepts/mavo.html
 SourcePawn	496	2014	pl		0	644	0	0	24	../concepts/sourcepawn.html
 Inform	497	1993	pl	Graham Nelson	0	586	0	0	25	../concepts/inform.html
 BlackCoffee	498	2014	pl	Frank van Viegen	0	6302	0	0	14	../concepts/blackcoffee.html
@@ -511,8 +511,8 @@ PAWN	502	2006	pl		0	800	0	0	22	../concepts/pawn.html
 penrose	503	2016	pl		0	6234	0	0	14	../concepts/penrose.html
 PL/pgSQL	504	1998	pl	Jan Wieck	0	490	0	2	20	../concepts/plpgsql.html
 OpenSCAD	505	2010	pl		0	720	0	0	23	../concepts/openscad.html
-invokator	506	2004	pl	Yann Orlarey	0	3016	0	0	15	../concepts/invokator.html
-Logtalk	507	1998	pl	Paulo Moura	3	231	0	3	31	../concepts/logtalk.html
+Logtalk	506	1998	pl	Paulo Moura	3	231	0	3	31	../concepts/logtalk.html
+invokator	507	2004	pl	Yann Orlarey	0	3016	0	0	15	../concepts/invokator.html
 ActivityPub	508	2018	protocol	Christine Lemmer-Webber and Jessica Tallon and Erin Shepherd and Amy Guy and Evan Prodromou	0	963	0	1	17	../concepts/activity-pub.html
 Hazel	509	2016	pl visual	Cyrus Omar	0	921	0	0	20	../concepts/hazel.html
 FlatBuffers	510	2014	idl		0	27301	0	2	12	../concepts/flatbuffers.html
@@ -559,8 +559,8 @@ Bucardo	550	2009	application	Jon Jensen	0	966	0	0	18	../concepts/bucardo.html
 Cg	551	2003	pl		0	965	0	0	18	../concepts/cg.html
 hamler	552	2019	pl	Feng Lee	0	1125	0	0	17	../concepts/hamler.html
 ABC	553	1980	pl		0	625	0	0	21	../concepts/abc.html
-lamdu-editor	554	2011	editor	Eyal Lotem and Yair Chuchem	0	2032	0	0	15	../concepts/lamdu-editor.html
-JScript	555	1996	pl		0	956	0	0	18	../concepts/jscript.html
+JScript	554	1996	pl		0	956	0	0	18	../concepts/jscript.html
+lamdu-editor	555	2011	editor	Eyal Lotem and Yair Chuchem	0	2032	0	0	15	../concepts/lamdu-editor.html
 DTD	556	1996	grammarLanguage		19	1195	0	22	13	../concepts/dtd.html
 Clipper	557	1985	pl		0	516	0	0	23	../concepts/clipper.html
 Angelscript	558	2003	pl	Andreas Jönsson	0	366	0	0	31	../concepts/angelscript.html
@@ -587,9 +587,9 @@ Limbo	578	1995	pl	Rob Pike	0	386	0	0	27	../concepts/limbo.html
 Jython	579	2001	pl		0	885	0	0	18	../concepts/jython.html
 Ch	580	2003	pl	Ge Wang	0	536	0	0	22	../concepts/chuck.html
 Pact	581	2016	contractLanguage	Stuart Popejoy	0	879	0	0	18	../concepts/pact.html
-GDScript	582	2008	pl		2	201	0	2	28	../concepts/gdscript.html
-Rascal	583	2013	grammarLanguage		0	873	0	0	18	../concepts/rascal.html
-Monkey	584	2011	pl	Anthony Diamond	0	297	0	0	36	../concepts/monkey.html
+Rascal	582	2013	grammarLanguage		0	873	0	0	18	../concepts/rascal.html
+Monkey	583	2011	pl	Anthony Diamond	0	297	0	0	36	../concepts/monkey.html
+GDScript	584	2008	pl		2	201	0	2	28	../concepts/gdscript.html
 Caml	585	1985	pl	Gérard Huet and Guy Cousineau and Ascánder Suárez and Pierre Weis and Michel Mauny	0	441	0	0	24	../concepts/caml.html
 basic calculator	586	1975	pl		1	440	0	1	19	../concepts/bc.html
 Gherkin	587	2008	pl		12	201	0	12	21	../concepts/gherkin.html
@@ -608,8 +608,8 @@ XSLT	599	1998	xmlFormat		41	200	0	42	19	../concepts/xslt.html
 bosque	600	2019	pl		0	6284	0	0	13	../concepts/bosque.html
 chevrotain	601	2015	library		0	2565	0	0	14	../concepts/chevrotain.html
 Earl Grey	602	2014	pl	Olivier Breuleux	0	511	0	0	21	../concepts/earl-grey.html
-fetlang	603	2017	esolang		0	1566	0	0	15	../concepts/fetlang.html
-SNOBOL	604	1962	pl	David J. Farber and Ralph E. Griswold	0	340	0	0	28	../concepts/snobol.html
+SNOBOL	603	1962	pl	David J. Farber and Ralph E. Griswold	0	340	0	0	28	../concepts/snobol.html
+fetlang	604	2017	esolang		0	1566	0	0	15	../concepts/fetlang.html
 Guile	605	1993	pl	Aubrey Jaffer and Tom Lord and Miles Bader	0	376	0	1	20	../concepts/guile.html
 Hyperscript	606	2020	pl		0	1111	0	0	16	../concepts/hyperscript-lang.html
 tldr	607	2013	application	Romain Prieto	0	51563	0	0	12	../concepts/tldr.html
@@ -619,8 +619,8 @@ Pharo	610	2008	pl		0	381	0	0	24	../concepts/pharo.html
 BlitzBasic	611	2000	pl		0	475	0	0	21	../concepts/blitzbasic.html
 BNF	612	1956	grammarLanguage	John Backus and Peter Naur	0	2460	0	1	13	../concepts/bnf.html
 Objective-J	613	2008	pl		0	376	0	0	24	../concepts/objective-j.html
-spider	614	2014	pl	Alon Gubkin	0	1450	0	0	15	../concepts/spider.html
-nesC	615	2002	pl		0	699	0	0	18	../concepts/nesc.html
+nesC	614	2002	pl		0	699	0	0	18	../concepts/nesc.html
+spider	615	2014	pl	Alon Gubkin	0	1450	0	0	15	../concepts/spider.html
 dexvis	616	2012	application	Patrick Martin	0	2227	0	0	14	../concepts/dexvis.html
 EmberScript	617	2012	pl	Michael Ficarra and Gordon L. Hempton	0	679	0	0	18	../concepts/emberscript.html
 Roslyn compiler	618	2009	compiler		0	27998	0	0	12	../concepts/roslyn-compiler.html
@@ -631,12 +631,12 @@ Secure Scuttlebutt	622	2014	protocol		0	2287	0	1	13	../concepts/ssb.html
 ohm	623	2014	grammarLanguage		0	4856	0	0	13	../concepts/ohm.html
 Nushell	624	2019	pl	Yehuda Katz	0	24929	0	0	12	../concepts/nushell.html
 BibTeX	625	1985	application		0	2106	0	0	14	../concepts/bibtex.html
-Snowball	626	2001	pl	Martin Porter	0	1348	0	0	15	../concepts/snowball-programming-language.html
-S-expressions	627	1960	dataNotation		0	1575	0	4	13	../concepts/s-expressions.html
+S-expressions	626	1960	dataNotation		0	1575	0	4	13	../concepts/s-expressions.html
+Snowball	627	2001	pl	Martin Porter	0	1348	0	0	15	../concepts/snowball-programming-language.html
 Harbour	628	1999	pl	Antonio Linares	1	231	0	1	24	../concepts/harbour.html
 micro-editor	629	2016	editor		0	23161	0	0	12	../concepts/micro-editor.html
-ERB	630	2004	template		12	400	0	12	15	../concepts/erb.html
-HyperTalk	631	1987	pl	Dan Winkler	0	275	0	3	20	../concepts/hypertalk.html
+HyperTalk	630	1987	pl	Dan Winkler	0	275	0	3	20	../concepts/hypertalk.html
+ERB	631	2004	template		12	400	0	12	15	../concepts/erb.html
 RStudio	632	2011	editor	Joseph J. Allaire	0	2056	0	0	14	../concepts/rstudio.html
 Ragel	633	2007	pl		0	381	0	0	23	../concepts/ragel.html
 Ligo	634	2019	contractLanguage		0	254	0	0	32	../concepts/ligo.html
@@ -661,15 +661,15 @@ Troff	652	1973	textMarkup		0	541	0	5	15	../concepts/troff.html
 Ren'Py	653	2004	pl		0	870	0	0	16	../concepts/renpy.html
 MQL5	654	2005	pl		0	480	0	0	19	../concepts/mql.html
 Mask	655	2012	template		0	324	0	0	24	../concepts/maskjs.html
-ferret	656	2017	pl	Nurullah Akkaya	0	1149	0	0	15	../concepts/ferret.html
-Croc	657	2006	pl	Jarrett Billingsley	0	196	0	2	26	../concepts/croc.html
+Croc	656	2006	pl	Jarrett Billingsley	0	196	0	2	26	../concepts/croc.html
+ferret	657	2017	pl	Nurullah Akkaya	0	1149	0	0	15	../concepts/ferret.html
 gridstudio-editor	658	2018	editor	Rick Lamers	0	13310	0	0	12	../concepts/gridstudio-editor.html
 DAX	659	2009	queryLanguage		0	401	0	0	21	../concepts/dax.html
 Slash	660	2012	pl		0	666	0	0	17	../concepts/slash.html
 PowerPC	661	1992	isa		0	9126	59	0	12	../concepts/powerpc.html
 Clarion	662	1986	pl		0	546	0	0	18	../concepts/clarion.html
-DRAKON	663	1996	pl	Stepan Mitkin	0	1121	0	0	15	../concepts/drakon.html
-muon	664	2019	pl		0	831	0	0	16	../concepts/muon.html
+muon	663	2019	pl		0	831	0	0	16	../concepts/muon.html
+DRAKON	664	1996	pl	Stepan Mitkin	0	1121	0	0	15	../concepts/drakon.html
 Cypher Query Language	665	2011	queryLanguage		0	466	0	0	19	../concepts/cypher.html
 Concise Encoding	666	2018	dataNotation	Karl Stenerud	0	246	0	0	29	../concepts/concise-encoding.html
 lobster	667	2011	pl	Wouter Van Oortmerssen	0	1681	0	0	14	../concepts/lobster.html
@@ -681,10 +681,10 @@ PDF	672	1993	binaryDataFormat		0	10480	0	0	12	../concepts/pdf.html
 kitlang	673	2018	pl	Ben Morris	0	1095	0	0	15	../concepts/kitlang.html
 Spatial	674	2018	pl	David Koeplinger	0	339	0	0	23	../concepts/spatial.html
 Vimwiki	675	2008	wikiMarkup	Maxim Kim	0	9375	0	0	12	../concepts/vimwiki.html
-Glicol	676	2020	musicalNotation	Qichao Lan	0	1068	0	0	15	../concepts/glicol.html
-J#	677	2002	pl		0	791	0	0	16	../concepts/jsharp.html
-PCRE	678	1997	queryLanguage	Philip Hazel	0	1050	0	0	15	../concepts/pcre.html
-JSLT	679	2017	pl	Lars Marius Garshol	0	788	0	0	16	../concepts/jslt.html
+J#	676	2002	pl		0	791	0	0	16	../concepts/jsharp.html
+Glicol	677	2020	musicalNotation	Qichao Lan	0	1068	0	0	15	../concepts/glicol.html
+JSLT	678	2017	pl	Lars Marius Garshol	0	788	0	0	16	../concepts/jslt.html
+PCRE	679	1997	queryLanguage	Philip Hazel	0	1050	0	0	15	../concepts/pcre.html
 Occam	680	1983	pl	David May	0	325	0	0	23	../concepts/occam.html
 Berry	681	2018	pl	官文亮	0	1558	0	0	14	../concepts/berry.html
 dex	682	2018	pl		0	1540	0	0	14	../concepts/dex.html
@@ -692,9 +692,9 @@ GAME	683	1977	pl		0	8550	0	0	12	../concepts/game.html
 Ć	684	2011	pl	Piotr Fusik	0	1534	0	0	14	../concepts/cito.html
 Java Bytecode	685	1995	bytecode		0	1530	0	0	14	../concepts/java-bytecode.html
 noms-db	686	2015	database	Aaron Boodman and Erik Arvidsson	0	8378	0	0	12	../concepts/noms-db.html
-mochi	687	2014	pl		0	1020	0	0	15	../concepts/mochi.html
-PicoLisp	688	1988	pl lisp	Alexander Burger	0	316	0	0	23	../concepts/picolisp.html
-Luna	689	2011	pl	TJ Holowaychuk	0	2898	0	0	13	../concepts/luna-1.html
+PicoLisp	687	1988	pl lisp	Alexander Burger	0	316	0	0	23	../concepts/picolisp.html
+Luna	688	2011	pl	TJ Holowaychuk	0	2898	0	0	13	../concepts/luna-1.html
+mochi	689	2014	pl		0	1020	0	0	15	../concepts/mochi.html
 Open Shading Language	690	2008	pl		0	2893	0	0	13	../concepts/open-shading-language.html
 C--	691	1997	pl	Simon Peyton Jones	0	2861	0	0	13	../concepts/c--.html
 OX	692	1996	pl	Jurgen A. Doornik	0	251	0	0	26	../concepts/ox.html
@@ -711,33 +711,33 @@ URL	702	1994	standard schema	Tim Berners-Lee	0	17850	0	2	11	../concepts/url.html
 DNS	703	1985	protocol	Paul Mockapetris	0	15790	0	2	11	../concepts/dns.html
 chibicc	704	2019	compiler	Rui Ueyama	0	6913	0	0	12	../concepts/chibicc.html
 Tiny C Compiler	705	2001	compiler		0	2500	0	0	13	../concepts/tinyc-compiler.html
-OCL	706	1997	pl		0	950	0	0	15	../concepts/ocl.html
-muPad	707	1997	pl		0	366	0	0	20	../concepts/mupad.html
-circle-lang	708	2019	pl	Sean Baxter	0	1395	0	0	14	../concepts/circle-lang.html
+muPad	706	1997	pl		0	366	0	0	20	../concepts/mupad.html
+circle-lang	707	2019	pl	Sean Baxter	0	1395	0	0	14	../concepts/circle-lang.html
+OCL	708	1997	pl		0	950	0	0	15	../concepts/ocl.html
 Potion	709	2007	pl	Jonathan Gillette	0	949	0	0	15	../concepts/potion.html
 PL/M	710	1973	pl		1	360	0	1	17	../concepts/pl-m.html
 Tea	711	1997	pl		0	291	0	0	23	../concepts/tea.html
 Seed7	712	2005	pl	Thomas Mertes	0	206	0	0	29	../concepts/seed7.html
-spiral	713	2017	pl	Marko Grdinić	0	930	0	0	15	../concepts/spiral.html
-Kal	714	2012	pl		0	453	0	0	18	../concepts/kal.html
+Kal	713	2012	pl		0	453	0	0	18	../concepts/kal.html
+spiral	714	2017	pl	Marko Grdinić	0	930	0	0	15	../concepts/spiral.html
 ToffeeScript	715	2013	pl	Miao Jiang	0	6272	0	0	12	../concepts/toffeescript.html
 Gzip	716	1992	binaryDataFormat		0	2796	0	1	12	../concepts/gzip.html
 GraphIt	717	2017	pl		0	446	0	0	18	../concepts/graph-it.html
 heap.coffee	718	2012	pl	Roman I. Kuzmin	0	6185	0	0	12	../concepts/heap.coffee.html
-ASCII	719	1963	characterEncoding		0	20715	0	1	11	../concepts/ascii.html
-buzz	720	2021	pl	Benoit Giannangeli	0	436	0	0	18	../concepts/buzz.html
-CHICKEN	721	2000	pl compiler	Felix Winkelmann	1	220	0	1	20	../concepts/chicken.html
+buzz	719	2021	pl	Benoit Giannangeli	0	436	0	0	18	../concepts/buzz.html
+CHICKEN	720	2000	pl compiler	Felix Winkelmann	1	220	0	1	20	../concepts/chicken.html
+ASCII	721	1963	characterEncoding		0	20715	0	1	11	../concepts/ascii.html
 LuaJIT	722	2005	compiler	Mike Pall	0	5902	0	0	12	../concepts/luajit.html
 Revolution	723	1993	pl	Mark Waddingham	0	1273	0	0	14	../concepts/revolution-programming-language.html
-Wyvern	724	2012	pl		0	864	0	0	15	../concepts/wyvern.html
-JSX	725	2013	template		18	201	0	18	16	../concepts/jsx.html
-hasklig	726	2012	font	Ryan Stewart	0	5806	0	0	12	../concepts/hasklig.html
-curv	727	2016	pl	Doug Moen	0	1264	0	0	14	../concepts/curv.html
+JSX	724	2013	template		18	201	0	18	16	../concepts/jsx.html
+hasklig	725	2012	font	Ryan Stewart	0	5806	0	0	12	../concepts/hasklig.html
+curv	726	2016	pl	Doug Moen	0	1264	0	0	14	../concepts/curv.html
+Wyvern	727	2012	pl		0	864	0	0	15	../concepts/wyvern.html
 Netwide Assembler	728	1996	assembly		0	606	0	0	16	../concepts/nasm.html
 AutoLISP	729	1986	pl lisp	David Betz	0	430	0	0	18	../concepts/autolisp.html
 UNLAMBDA	730	1999	esolang	David Madore	0	226	0	0	25	../concepts/unlambda.html
-XAML	731	2008	xmlFormat		8	202885	0	8	10	../concepts/xaml.html
-Script.NET	732	2007	pl		0	372	0	0	19	../concepts/ssharp.html
+Script.NET	731	2007	pl		0	372	0	0	19	../concepts/ssharp.html
+XAML	732	2008	xmlFormat		8	202885	0	8	10	../concepts/xaml.html
 RISC-V	733	2010	isa		0	2140	0	0	13	../concepts/risc-v.html
 Augmented Backus-Naur Form	734	2008	grammarLanguage		0	475	0	0	17	../concepts/abnf.html
 Sweet.js	735	2012	pl	Tim Disney	0	5260	0	0	12	../concepts/sweetjs.html
@@ -804,9 +804,9 @@ Simulink	795	1984	pl		0	1516	0	0	13	../concepts/simulink.html
 gluon	796	2014	pl		0	3063	0	0	12	../concepts/gluon.html
 NetLinx	797	2007	pl		0	290	0	0	19	../concepts/netlinx.html
 Nu	798	2007	pl	Tim Burks	0	290	0	0	19	../concepts/nu.html
-Morse code	799	1837	notation	Samuel Morse	0	29235	0	0	11	../concepts/morse-code.html
-P	800	2013	pl		0	2967	0	0	12	../concepts/p.html
-MAXScript	801	1996	pl		0	201	0	0	23	../concepts/maxscript.html
+P	799	2013	pl		0	2967	0	0	12	../concepts/p.html
+MAXScript	800	1996	pl		0	201	0	0	23	../concepts/maxscript.html
+Morse code	801	1837	notation	Samuel Morse	0	29235	0	0	11	../concepts/morse-code.html
 Marp	802	2018	textMarkup		0	894	0	0	14	../concepts/marp.html
 Joy	803	2001	pl	Manfred von Thun	0	260	0	3	16	../concepts/joy.html
 Jule	804	2021	pl lisp	Mertcan Davulcu	0	109	0	0	112	../concepts/jule.html
@@ -815,62 +815,62 @@ Mathpix Markdown	806	2019	textMarkup		0	580	0	0	15	../concepts/mathpix-markdown.
 AsciiMath	807	2014	textMarkup	Peter Krautzberger	0	1463	0	0	13	../concepts/asciimath.html
 Seq	808	2019	pl		0	864	0	0	14	../concepts/seq.html
 hobbes	809	2017	pl	Kalani Thielen	0	1443	0	0	13	../concepts/hobbes.html
-Basis Codec	810	2019	binaryDataFormat		0	2774	0	0	12	../concepts/basis-universal-format.html
-Hyperscript	811	2012	template	Dominic Tarr	0	2749	0	0	12	../concepts/hyperscript.html
-Rockstar	812	2018	esolang	Dylan Beattie	0	125	0	1	25	../concepts/rockstar.html
-Eclipse Command Language	813	2008	pl		0	200	0	0	23	../concepts/eclipse-command-language.html
-Vale	814	2020	pl		0	830	0	0	14	../concepts/vale.html
-Bro	815	1994	pl		0	426	0	0	16	../concepts/bro.html
-OpenGL	816	1992	library		0	5291	0	1	11	../concepts/opengl.html
-FloScript	817	2013	pl	Samuel Smith	0	263	0	0	19	../concepts/floscript.html
-Jasmin	818	1997	pl		0	201	0	0	22	../concepts/jasmin.html
-oden	819	2016	pl	Oskar Wickström	0	806	0	0	14	../concepts/oden.html
-CSV	820	1972	dataNotation		111	300	0	114	13	../concepts/csv.html
-Jison Lex	821	2013	pl	Zachary Carter	0	347	0	0	17	../concepts/jison-lex.html
-Bluespec	822	2000	pl		0	345	0	0	17	../concepts/bluespec.html
-SmallBASIC	823	2001	pl		0	345	0	0	17	../concepts/smallbasic.html
-Carbon	824	2020	pl		0	1319	0	0	13	../concepts/carbon.html
-ink-lang	825	2019	pl	Linus Lee	0	513	0	0	15	../concepts/ink-lang.html
+Cwerg	810	2019	pl	Robert Muth	0	434	0	0	16	../concepts/cwerg.html
+Basis Codec	811	2019	binaryDataFormat		0	2774	0	0	12	../concepts/basis-universal-format.html
+Hyperscript	812	2012	template	Dominic Tarr	0	2749	0	0	12	../concepts/hyperscript.html
+Rockstar	813	2018	esolang	Dylan Beattie	0	125	0	1	25	../concepts/rockstar.html
+Eclipse Command Language	814	2008	pl		0	200	0	0	23	../concepts/eclipse-command-language.html
+Vale	815	2020	pl		0	830	0	0	14	../concepts/vale.html
+Bro	816	1994	pl		0	426	0	0	16	../concepts/bro.html
+OpenGL	817	1992	library		0	5291	0	1	11	../concepts/opengl.html
+FloScript	818	2013	pl	Samuel Smith	0	263	0	0	19	../concepts/floscript.html
+Jasmin	819	1997	pl		0	201	0	0	22	../concepts/jasmin.html
+oden	820	2016	pl	Oskar Wickström	0	806	0	0	14	../concepts/oden.html
+CSV	821	1972	dataNotation		111	300	0	114	13	../concepts/csv.html
+Jison Lex	822	2013	pl	Zachary Carter	0	347	0	0	17	../concepts/jison-lex.html
+Bluespec	823	2000	pl		0	345	0	0	17	../concepts/bluespec.html
+SmallBASIC	824	2001	pl		0	345	0	0	17	../concepts/smallbasic.html
+Carbon	825	2020	pl		0	1319	0	0	13	../concepts/carbon.html
 HyPhy	826	2008	pl		0	404	0	0	16	../concepts/hyphy.html
 RELAX NG	827	2001	grammarLanguage		0	781	0	0	14	../concepts/relaxng.html
-SI	828	1960	notation		0	14430	0	0	11	../concepts/si.html
+ink-lang	828	2019	pl	Linus Lee	0	513	0	0	15	../concepts/ink-lang.html
 XPath	829	1999	queryLanguage		0	2395	0	0	12	../concepts/xpath.html
-pie-lang	830	2018	pl	David Christiansen	0	765	0	0	14	../concepts/pie-lang.html
-S-PLUS	831	1988	pl		0	390	0	0	16	../concepts/s-plus.html
-Game Maker Language	832	1999	pl		0	200	0	0	22	../concepts/game-maker-language.html
-Gerbil Scheme	833	2016	pl lisp		0	1240	0	0	13	../concepts/gerbil.html
-BitBake	834	2004	pl		0	326	0	0	17	../concepts/bitbake.html
-Phel	835	2020	pl	Jens Haase	0	325	0	0	17	../concepts/phel.html
-Oberon-2	836	1991	pl	Niklaus Wirth and Hanspeter Mössenböck	0	165	0	1	20	../concepts/oberon-2.html
-Plot	837	2019	template	John Sundell	0	2176	0	0	12	../concepts/plot.html
-partiql	838	2019	queryLanguage	James Siri	0	723	0	0	14	../concepts/partiql.html
-ldpl	839	2019	pl	Martín del Río	0	237	0	0	19	../concepts/ldpl.html
-UDP	840	1980	protocol		0	8860	35	0	11	../concepts/udp.html
-Kakoune	841	2011	editor		0	10938	0	0	11	../concepts/kakoune-editor.html
-SETL	842	1969	pl	Jacob T. Schwartz	0	191	0	0	23	../concepts/setl.html
-HOPE	843	1978	pl		0	145	0	0	27	../concepts/hope.html
-Coco	844	2010	pl	Satoshi Murakami	0	689	0	0	14	../concepts/coco.html
-Austral	845	2018	pl	Fernando Borretti	0	461	0	0	15	../concepts/austral.html
-Z	846	2012	pl	Chris Done	0	305	0	0	17	../concepts/z-expressions.html
-Flix	847	2016	pl	Magnus Madsen	0	2063	0	0	12	../concepts/flix.html
-xodio	848	2015	visual	Victor Nakoryakov	0	1111	0	0	13	../concepts/xodio.html
-RetDec	849	2017	decompiler		0	9147	0	0	11	../concepts/retdec.html
-Vale	850	2017	assembly	Chris Hawblitzel	0	303	0	0	17	../concepts/vale-assembly.html
-Unity	851	2005	library		0	9036	0	0	11	../concepts/unity-engine.html
+SI	830	1960	notation		0	14430	0	0	11	../concepts/si.html
+pie-lang	831	2018	pl	David Christiansen	0	765	0	0	14	../concepts/pie-lang.html
+S-PLUS	832	1988	pl		0	390	0	0	16	../concepts/s-plus.html
+Game Maker Language	833	1999	pl		0	200	0	0	22	../concepts/game-maker-language.html
+Gerbil Scheme	834	2016	pl lisp		0	1240	0	0	13	../concepts/gerbil.html
+BitBake	835	2004	pl		0	326	0	0	17	../concepts/bitbake.html
+Phel	836	2020	pl	Jens Haase	0	325	0	0	17	../concepts/phel.html
+Oberon-2	837	1991	pl	Niklaus Wirth and Hanspeter Mössenböck	0	165	0	1	20	../concepts/oberon-2.html
+Plot	838	2019	template	John Sundell	0	2176	0	0	12	../concepts/plot.html
+partiql	839	2019	queryLanguage	James Siri	0	723	0	0	14	../concepts/partiql.html
+ldpl	840	2019	pl	Martín del Río	0	237	0	0	19	../concepts/ldpl.html
+UDP	841	1980	protocol		0	8860	35	0	11	../concepts/udp.html
+Kakoune	842	2011	editor		0	10938	0	0	11	../concepts/kakoune-editor.html
+SETL	843	1969	pl	Jacob T. Schwartz	0	191	0	0	23	../concepts/setl.html
+HOPE	844	1978	pl		0	145	0	0	27	../concepts/hope.html
+Coco	845	2010	pl	Satoshi Murakami	0	689	0	0	14	../concepts/coco.html
+Austral	846	2018	pl	Fernando Borretti	0	461	0	0	15	../concepts/austral.html
+Z	847	2012	pl	Chris Done	0	305	0	0	17	../concepts/z-expressions.html
+Flix	848	2016	pl	Magnus Madsen	0	2063	0	0	12	../concepts/flix.html
+xodio	849	2015	visual	Victor Nakoryakov	0	1111	0	0	13	../concepts/xodio.html
+RetDec	850	2017	decompiler		0	9147	0	0	11	../concepts/retdec.html
+Vale	851	2017	assembly	Chris Hawblitzel	0	303	0	0	17	../concepts/vale-assembly.html
 Lamdu	852	2011	pl	Eyal Lotem and Yair Chuchem	0	2032	0	0	12	../concepts/lamdu.html
-edgedb	853	2017	database		0	8810	0	0	11	../concepts/edgedb.html
-crmsh	854	2008	pl	Dejan Muhamedagic	0	449	0	0	15	../concepts/crmsh.html
-Links	855	2006	pl		0	445	0	0	15	../concepts/links-programming-language.html
-Megaparsec	856	2015	library		0	1159	0	1	12	../concepts/megaparsec.html
-Dc	857	1978	pl		0	200	0	0	20	../concepts/dc.html
-Spin	858	2006	pl		0	200	0	0	20	../concepts/spin.html
-UCL	859	2013	dataNotation		0	1918	0	0	12	../concepts/ucl.html
-FAT	860	1977	filesystem		0	7860	0	0	11	../concepts/fat.html
-Metalang99	861	2021	pl	Tima Kinsart	0	622	0	0	14	../concepts/metalang99.html
-BETA	862	1983	pl	Bent Bruun Kristensen and Ole Lehrmann Madsen and Birger Møller-Pedersen and Kristen Nygaard	0	156	0	0	24	../concepts/beta.html
-binaryen	863	2015	compiler	Alon Zakai	0	7632	0	0	11	../concepts/binaryen.html
+Unity	853	2005	library		0	9036	0	0	11	../concepts/unity-engine.html
+edgedb	854	2017	database		0	8810	0	0	11	../concepts/edgedb.html
+crmsh	855	2008	pl	Dejan Muhamedagic	0	449	0	0	15	../concepts/crmsh.html
+Links	856	2006	pl		0	445	0	0	15	../concepts/links-programming-language.html
+Megaparsec	857	2015	library		0	1159	0	1	12	../concepts/megaparsec.html
+Dc	858	1978	pl		0	200	0	0	20	../concepts/dc.html
+Spin	859	2006	pl		0	200	0	0	20	../concepts/spin.html
+UCL	860	2013	dataNotation		0	1918	0	0	12	../concepts/ucl.html
+FAT	861	1977	filesystem		0	7860	0	0	11	../concepts/fat.html
+Metalang99	862	2021	pl	Tima Kinsart	0	622	0	0	14	../concepts/metalang99.html
+BETA	863	1983	pl	Bent Bruun Kristensen and Ole Lehrmann Madsen and Birger Møller-Pedersen and Kristen Nygaard	0	156	0	0	24	../concepts/beta.html
 Strips	864	1969	pl		0	615	0	0	14	../concepts/strips.html
-Cwerg	865	2019	pl	Robert Muth	0	434	0	0	15	../concepts/cwerg.html
+binaryen	865	2015	compiler	Alon Zakai	0	7632	0	0	11	../concepts/binaryen.html
 Rapira	866	1987	pl	Andrey Ershov	0	155	0	0	24	../concepts/rapira.html
 Sophia	867	2018	contractLanguage	Robert Virding	0	133	0	0	27	../concepts/sophia.html
 mimium	868	2019	pl	Tomoya Matsuura	0	283	0	0	17	../concepts/mimium.html
@@ -897,16 +897,16 @@ storyscript	888	2017	pl		0	404	0	0	15	../concepts/storyscript.html
 PIC	889	1988	textMarkup	Brian Kernighan	0	225	0	0	18	../concepts/pic.html
 Sibilant	890	2010	pl	Jacob Rothstein	0	553	0	0	14	../concepts/sibilant.html
 vyper	891	2016	pl		0	6165	0	0	11	../concepts/vyper.html
-Caffeine	892	2012	pl	Roman I. Kuzmin	0	6128	0	0	11	../concepts/caffeine.html
-YAWL	893	2006	pl	Dean Mao	0	312	0	0	16	../concepts/yawl.html
+YAWL	892	2006	pl	Dean Mao	0	312	0	0	16	../concepts/yawl.html
+Caffeine	893	2012	pl	Roman I. Kuzmin	0	6128	0	0	11	../concepts/caffeine.html
 Jolie	894	2006	pl	Claudio Guidi and Fabrizio Montesi	0	311	0	0	16	../concepts/jolie.html
 chrysaLisp	895	2015	pl	Chris Hinsley	0	1586	0	0	12	../concepts/chrysalisp.html
 Slice	896	2011	pl		0	200	0	0	19	../concepts/slice.html
-baysick	897	2009	esolang	Michael Fogus	0	390	0	0	15	../concepts/baysick.html
-Mathcad	898	1986	pl		0	926	0	0	13	../concepts/mathcad.html
-Functional PHP Preprocessor	899	2018	pl	Sascha-Oliver Prolic	0	386	0	0	15	../concepts/fpp.html
-Parenscript	900	2009	pl lisp	Manuel Odendahl and Edward Marco Baringer	0	386	0	0	15	../concepts/parenscript.html
-JSON lambda	901	2017	queryLanguage	Chris Done	0	534	0	0	14	../concepts/json-lambda.html
+Mathcad	897	1986	pl		0	926	0	0	13	../concepts/mathcad.html
+baysick	898	2009	esolang	Michael Fogus	0	390	0	0	15	../concepts/baysick.html
+JSON lambda	899	2017	queryLanguage	Chris Done	0	534	0	0	14	../concepts/json-lambda.html
+Functional PHP Preprocessor	900	2018	pl	Sascha-Oliver Prolic	0	386	0	0	15	../concepts/fpp.html
+Parenscript	901	2009	pl lisp	Manuel Odendahl and Edward Marco Baringer	0	386	0	0	15	../concepts/parenscript.html
 Homa	902	2018	protocol	John Ousterhout	0	176	0	0	21	../concepts/homa.html
 noisecraft	903	2021	pl	Maxime Chevalier-Boisvert	0	909	0	0	13	../concepts/noisecraft.html
 JSONiq	904	2011	queryLanguage		0	251	0	0	17	../concepts/jsoniq.html
@@ -914,11 +914,11 @@ CIR	905	2020	ir		0	167	0	1	18	../concepts/cir.html
 F-Script	906	2009	pl	Philippe Mougin	0	381	0	0	15	../concepts/f-script.html
 jayfor	907	2014	pl	Felix Angell	0	879	0	0	13	../concepts/jayfor.html
 reflex-framework	908	2015	framework		0	1516	0	0	12	../concepts/reflex-framework.html
-son	909	2017	textMarkup	Ian Grant Jeffries	0	377	0	0	15	../concepts/son.html
-json-graph-format	910	2014	jsonFormat		0	506	0	0	14	../concepts/json-graph-format.html
+json-graph-format	909	2014	jsonFormat		0	506	0	0	14	../concepts/json-graph-format.html
+son	910	2017	textMarkup	Ian Grant Jeffries	0	377	0	0	15	../concepts/son.html
 Asterisk	911	1999	application		0	1506	0	0	12	../concepts/asterisk.html
-FreeMarker	912	2000	template		0	375	0	0	15	../concepts/freemarker.html
-Asymptote	913	2004	application	Andy Hammerlindl and John C. Bowman and Tom Prince	0	205	0	0	18	../concepts/asymptote.html
+Asymptote	912	2004	application	Andy Hammerlindl and John C. Bowman and Tom Prince	0	205	0	0	18	../concepts/asymptote.html
+FreeMarker	913	2000	template		0	375	0	0	15	../concepts/freemarker.html
 Blade	914	2011	template		2	201	0	2	15	../concepts/blade.html
 kasaya	915	2018	application		0	1486	0	0	12	../concepts/kasaya.html
 JSON Lines	916	2013	dataNotation	Ian Ward	0	177	0	0	20	../concepts/ld-json.html
@@ -942,18 +942,18 @@ Hocon	933	2011	dataNotation		0	266	0	0	16	../concepts/hocon.html
 Rouge	934	2012	pl	Arlen Cuss	0	266	0	0	16	../concepts/rouge.html
 Lingo	935	1988	pl		0	220	0	0	17	../concepts/lingo.html
 LotusScript	936	1996	pl		0	165	0	0	20	../concepts/lotusscript.html
-Rc	937	1989	pl	Tom Duff	0	345	0	0	15	../concepts/rc.html
-MiniD	938	2006	pl	Jarrett Billingsley	0	86	0	1	24	../concepts/minid.html
+MiniD	937	2006	pl	Jarrett Billingsley	0	86	0	1	24	../concepts/minid.html
+Rc	938	1989	pl	Tom Duff	0	345	0	0	15	../concepts/rc.html
 Sieve mail filtering language	939	2008	application		0	460	0	0	14	../concepts/sieve.html
 Nial	940	1981	pl	Mike Jenkins	0	125	0	1	19	../concepts/nial.html
 cuneiform	941	2015	pl		0	261	0	0	16	../concepts/cuneiform.html
-BBC BASIC	942	1981	pl	Sophie Wilson	0	335	0	0	15	../concepts/bbc-basic.html
-bee	943	2019	pl	Elucian Moise	0	1280	0	0	12	../concepts/bee.html
+bee	942	2019	pl	Elucian Moise	0	1280	0	0	12	../concepts/bee.html
+BBC BASIC	943	1981	pl	Sophie Wilson	0	335	0	0	15	../concepts/bbc-basic.html
 MIRC scripting language	944	1995	pl	Khaled Mardam-Bey	0	256	0	0	16	../concepts/mirc.html
 WebIDL	945	2012	idl		0	445	0	0	14	../concepts/web-idl.html
 Sublime Text	946	2008	editor	Jon Skinner	0	3691	0	0	11	../concepts/sublime-editor.html
-xlwings-editor	947	2013	library	Felix Zumstein	0	3684	0	0	11	../concepts/xlwings-editor.html
-Claro	948	2021	pl	Jason Steving	0	177	0	0	19	../concepts/claro.html
+Claro	947	2021	pl	Jason Steving	0	177	0	0	19	../concepts/claro.html
+xlwings-editor	948	2013	library	Felix Zumstein	0	3684	0	0	11	../concepts/xlwings-editor.html
 hacspec	949	2018	pl	Franziskus Kiefer	0	253	0	0	16	../concepts/hacspec.html
 ROFF	950	1971	textMarkup	Joe Ossanna and Ken Thompson	0	220	0	1	15	../concepts/roff.html
 Cell	951	2017	pl		0	108	0	0	25	../concepts/cell.html
@@ -977,11 +977,11 @@ Nimskull	968	2021	pl	Andreas Rumpf	0	1083	0	0	12	../concepts/nimskull.html
 GorillaScript	969	2013	pl	Cameron Knight	0	393	0	0	14	../concepts/gorillascript.html
 Caramel	970	2020	pl	Leandro Ostera	0	1054	0	0	12	../concepts/caramel.html
 XS	971	2002	pl		0	285	0	0	15	../concepts/xs.html
-XGBoost	972	2014	library	Tianqi Chen	0	52360	0	0	10	../concepts/xgboost.html
-bloom	973	2010	pl		0	1039	0	0	12	../concepts/bloom.html
+bloom	972	2010	pl		0	1039	0	0	12	../concepts/bloom.html
+XGBoost	973	2014	library	Tianqi Chen	0	52360	0	0	10	../concepts/xgboost.html
 RubyGems	974	2018	packageManager	Nick Quaranto	0	591	0	0	13	../concepts/rubygems-pm.html
-RPL	975	1984	pl		0	280	0	0	15	../concepts/rpl.html
-datafun	976	2015	pl	Michael Arntzenius	0	382	0	0	14	../concepts/datafun.html
+datafun	975	2015	pl	Michael Arntzenius	0	382	0	0	14	../concepts/datafun.html
+RPL	976	1984	pl		0	280	0	0	15	../concepts/rpl.html
 pointless	977	2020	pl	Avery N. Nortonsmith	0	153	0	0	19	../concepts/pointless.html
 Gren	978	2012	pl	evancz	0	272	0	0	15	../concepts/gren.html
 QMake	979	2002	pl		0	375	0	0	14	../concepts/qmake.html
@@ -997,10 +997,10 @@ PEG	988	2002	grammarLanguage		0	955	0	0	12	../concepts/peg.html
 michelson	989	2017	pl	Grégoire Henry	0	362	0	0	14	../concepts/michelson.html
 TLS	990	1999	protocol		0	24595	0	0	10	../concepts/tls.html
 WSDL	991	2000	xmlFormat		0	2375	0	0	11	../concepts/wsdl.html
-Nadesiko	992	2008	pl	kujirahand	0	254	0	0	15	../concepts/nadesiko.html
-BlooP	993	1979	esolang		0	185	0	0	17	../concepts/bloop.html
-Ladder Logic	994	1994	pl		0	2360	0	0	11	../concepts/ladder-logic.html
-Refal	995	1968	pl	Valentin Turchin	0	101	0	0	23	../concepts/refal.html
+BlooP	992	1979	esolang		0	185	0	0	17	../concepts/bloop.html
+Nadesiko	993	2008	pl	kujirahand	0	254	0	0	15	../concepts/nadesiko.html
+Refal	994	1968	pl	Valentin Turchin	0	101	0	0	23	../concepts/refal.html
+Ladder Logic	995	1994	pl		0	2360	0	0	11	../concepts/ladder-logic.html
 Yorick	996	1996	pl	David H. Munro	0	91	0	0	24	../concepts/yorick.html
 JSON Query Language	997	2019	queryLanguage	Jakub Martin	0	927	0	0	12	../concepts/jql.html
 GML	998	1969	xmlFormat	Charles Goldfarb and Edward Mosher and Raymond Lorie	0	135	0	0	19	../concepts/ibm-gml.html
