@@ -57,8 +57,8 @@ class PLDBCli extends ScrollSetCLI {
 
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have measurementscrawlers project installed separateely.
-    const { GitHubImporter } = require("../measurementscrawlers/github.com/GitHub.js")
+    // Note: this currently assumes you have crawlers project installed separateely.
+    const { GitHubImporter } = require("../crawlers/github.com/GitHub.js")
     const importer = new GitHubImporter(this.concepts, this.conceptsFolder)
     await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
@@ -66,8 +66,8 @@ class PLDBCli extends ScrollSetCLI {
 
   async crawlRedditPLCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have measurementscrawlers project installed separateely.
-    const { RedditImporter } = require("../measurementscrawlers/reddit.com/Reddit.js")
+    // Note: this currently assumes you have crawlers project installed separateely.
+    const { RedditImporter } = require("../crawlers/reddit.com/Reddit.js")
 
     const importer = new RedditImporter(this.concepts, this.conceptsFolder)
     await importer.createFromAnnouncementsCommand()
@@ -76,7 +76,7 @@ class PLDBCli extends ScrollSetCLI {
   async crawlGitsCommand(lang) {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have measurementscrawlers project installed separateely.
+    // Note: this currently assumes you have crawlers project installed separateely.
     this.concepts.forEach(async file => {
       if (lang && lang !== file.id) return
       if (lang) console.log(`processing ${lang}`)
@@ -102,7 +102,7 @@ class PLDBCli extends ScrollSetCLI {
 
   async formatCommand(lang) {
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have measurementscrawlers project installed separateely.
+    // Note: this currently assumes you have crawlers project installed separateely.
     if (!lang) return
     const file = this.concepts.filter(file => lang === file.id)[0]
     if (file) this.formatAndSave(file)
