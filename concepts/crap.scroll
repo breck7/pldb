@@ -4,10 +4,10 @@ id crap
 name Crap
 appeared 2018
 creators Henry Kroll III
-standsFor Concise RegEx-Aware Preprocessor
 tags pl
 website https://themanyone.github.io/crap/
 latestVersion 0.24.2
+standsFor Concise RegEx-Aware Preprocessor
 description crap stands for concise, regex-aware preprocessor, it turns simplified crap code, python or lua-like pseudocode into c11
 writtenIn c
 
@@ -23,27 +23,6 @@ originCommunity https://github.com/themanyone/
 pygmentsHighlighter Crap
  filename crap
  fileExtensions crap c hh so
-
-Example
-  #if 0
-  crap $0 | tcc -run -; exit 0
-  #endif
-  #include <stdio.h>
-  
-  #define M 3
-  #define N 4
-  main
-      // defined length [M][N] is computable
-      int test_image[M][N]=
-       {{1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12}},
-      // undefined length *i is not
-      *i, j
-  
-      for i in test_image // computable length
-          for j in i[:N] // undefined length, add [:N]
-              printf  "%i%s", j, j_index==N-1?"\n":", "
 
 githubRepo https://github.com/themanyone/crap
  firstCommit 2018
@@ -72,3 +51,24 @@ hasIntegers true
 hasBinaryNumbers true
  // The same as c
 hasMultiLineComments true
+
+Example
+  #if 0
+  crap $0 | tcc -run -; exit 0
+  #endif
+  #include <stdio.h>
+  
+  #define M 3
+  #define N 4
+  main
+      // defined length [M][N] is computable
+      int test_image[M][N]=
+       {{1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12}},
+      // undefined length *i is not
+      *i, j
+  
+      for i in test_image // computable length
+          for j in i[:N] // undefined length, add [:N]
+              printf  "%i%s", j, j_index==N-1?"\n":", "
