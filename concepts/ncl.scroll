@@ -3,13 +3,15 @@ import ../code/conceptPage.scroll
 id ncl
 name NCAR Command Language
 appeared 1994
-tags pl
+tags pl weather
 website https://www.ncl.ucar.edu/index.shtml
 latestVersion 6.6.2
 standsFor NCAR Command Language
 description (The NCAR Command Language (NCL), a product of the Computational & Information Systems Laboratory at the National Center for Atmospheric Research (NCAR) and sponsored by the National Science Foundation, is a free interpreted language designed specifically for scientific data processing and visualization.
 writtenIn fortran-77 c objective-c matlab mumps c-shell rescript sed mathematica bourne-shell fortran-90 python xml perl make markdown lex java yaml korn-shell yacc csv xslt ini diff visual-basic
 
+isFinished true
+ // https://www.ncl.ucar.edu/Document/Pivot_to_Python/september_2019_update.shtml
 isOpenSource true
 fileType text
 repoStats
