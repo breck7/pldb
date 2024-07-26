@@ -72,10 +72,10 @@ F#|_$^../concepts/f-sharp.html|_$^fs fsi fsx fsscript|_$^4
 Chapel|_$^../concepts/chapel.html|_$^chpl|_$^1
 LLVM IR|_$^../concepts/llvmir.html|_$^ll|_$^1
 Smalltalk|_$^../concepts/smalltalk.html|_$^st cs|_$^2
-SVG|_$^../concepts/svg.html|_$^SVG svg|_$^2
 ClojureScript|_$^../concepts/clojurescript.html|_$^cljs|_$^1
 HCL|_$^../concepts/hcl.html|_$^hcl nomad tf tfvars workflow|_$^5
 HAML|_$^../concepts/haml.html|_$^haml haml.deface hamldeface|_$^3
+SVG|_$^../concepts/svg.html|_$^SVG svg|_$^2
 PureScript|_$^../concepts/purescript.html|_$^purs|_$^1
 VHDL|_$^../concepts/vhdl.html|_$^VHD vhd VHDL vhdl vhf vhi vho vhs vht vhw|_$^10
 Idris|_$^../concepts/idris.html|_$^idr lidr|_$^2
@@ -162,8 +162,8 @@ NetLogo|_$^../concepts/netlogo.html|_$^nlogo nls nlogo3d|_$^3
 Lex|_$^../concepts/lex.html|_$^l lex|_$^2
 Zephir|_$^../concepts/zephir.html|_$^zep|_$^1
 JSON-LD|_$^../concepts/json-ld.html|_$^jsonld|_$^1
-Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
 VBScript|_$^../concepts/vbscript.html|_$^vbs vbe wsf wsc VBS|_$^5
+Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
 Frege|_$^../concepts/frege.html|_$^fr|_$^1
 Janet|_$^../concepts/janet.html|_$^janet|_$^1
 Vala|_$^../concepts/vala.html|_$^vala vapi|_$^2
@@ -220,8 +220,8 @@ Expect|_$^../concepts/expect.html|_$^exp|_$^1
 QBasic|_$^../concepts/qbasic.html|_$^BAS bas|_$^2
 SystemVerilog|_$^../concepts/systemverilog.html|_$^sv svh vh header file|_$^5
 DTrace|_$^../concepts/dtrace.html|_$^d|_$^1
-beef-lang|_$^../concepts/beef.html|_$^bf|_$^1
 NumPy|_$^../concepts/numpy.html|_$^numpy numpyw numsc|_$^3
+beef-lang|_$^../concepts/beef.html|_$^bf|_$^1
 Modula-2|_$^../concepts/modula-2.html|_$^mod m2 def MOD DEF mi md|_$^7
 Rexx|_$^../concepts/rexx.html|_$^cmd exec rexx rex pprx rx arexx|_$^7
 YASnippet|_$^../concepts/yasnippet.html|_$^yasnippet|_$^1
@@ -235,8 +235,8 @@ Click|_$^../concepts/click.html|_$^click|_$^1
 Cryptol|_$^../concepts/cryptol.html|_$^cry|_$^1
 GLSL|_$^../concepts/glsl.html|_$^comp fp frag frg fsh fshader geo geom glsl glslv gshader tesc tese vert vrx vsh vshader fs glslf gs rchit rmiss shader|_$^23
 JSP|_$^../concepts/java-server-pages.html|_$^jsp jspf|_$^2
-HLSL|_$^../concepts/hlsl.html|_$^cg cginc fxh hlsl hlsli shader fx|_$^7
 Slope|_$^../concepts/slope.html|_$^slo|_$^1
+HLSL|_$^../concepts/hlsl.html|_$^cg cginc fxh hlsl hlsli shader fx|_$^7
 x86 Assembly|_$^../concepts/x86-assembly.html|_$^s ms|_$^2
 JAI|_$^../concepts/jai.html|_$^jai|_$^1
 AutoIt|_$^../concepts/autoit.html|_$^au3|_$^1
@@ -318,6 +318,7 @@ NSIS|_$^../concepts/nsis.html|_$^nsi nsh|_$^2
 groff|_$^../concepts/groff.html|_$^[1-9] man 1p 3pm|_$^4
 Arc|_$^../concepts/arc.html|_$^arc|_$^1
 Stylus|_$^../concepts/stylus.html|_$^styl|_$^1
+NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
 Metal|_$^../concepts/metal.html|_$^metal|_$^1
 IcedCoffeeScript|_$^../concepts/icedcoffeescript.html|_$^coffee|_$^1
@@ -333,7 +334,6 @@ BlackCoffee|_$^../concepts/blackcoffee.html|_$^coffee|_$^1
 PAWN|_$^../concepts/pawn.html|_$^pwn inc|_$^2
 PL/pgSQL|_$^../concepts/plpgsql.html|_$^pgsql sql|_$^2
 OpenSCAD|_$^../concepts/openscad.html|_$^scad|_$^1
-NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 Logtalk|_$^../concepts/logtalk.html|_$^lgt logtalk|_$^2
 FlatBuffers|_$^../concepts/flatbuffers.html|_$^fbs|_$^1
 Turing|_$^../concepts/turing.html|_$^t tu|_$^2
@@ -407,8 +407,8 @@ Apex|_$^../concepts/apex.html|_$^cls|_$^1
 CFML|_$^../concepts/cfml.html|_$^cfm cfc|_$^2
 Pure Data|_$^../concepts/puredata.html|_$^pd|_$^1
 Ren'Py|_$^../concepts/renpy.html|_$^rpy|_$^1
-Mask|_$^../concepts/maskjs.html|_$^mask|_$^1
 MQL5|_$^../concepts/mql.html|_$^mq5 mqh mq4|_$^3
+Mask|_$^../concepts/maskjs.html|_$^mask|_$^1
 Croc|_$^../concepts/croc.html|_$^croc|_$^1
 Slash|_$^../concepts/slash.html|_$^sl sla|_$^2
 Clarion|_$^../concepts/clarion.html|_$^clw|_$^1
@@ -418,9 +418,9 @@ Falcon|_$^../concepts/falcon.html|_$^ftd fal fam|_$^3
 JSLT|_$^../concepts/jslt.html|_$^jslt|_$^1
 PicoLisp|_$^../concepts/picolisp.html|_$^l|_$^1
 OX|_$^../concepts/ox.html|_$^ox oxh oxo|_$^3
-Genie|_$^../concepts/genie.html|_$^gs|_$^1
 Gettext Catalog|_$^../concepts/gettext.html|_$^po pot|_$^2
 Velocity|_$^../concepts/apache-velocity.html|_$^vm fhtml|_$^2
+Genie|_$^../concepts/genie.html|_$^gs|_$^1
 C shell|_$^../concepts/c-shell.html|_$^csh tcsh|_$^2
 muPad|_$^../concepts/mupad.html|_$^mu|_$^1
 PL/M|_$^../concepts/pl-m.html|_$^lit plm|_$^2
@@ -637,8 +637,8 @@ Q#|_$^../concepts/q-sharp.html|_$^qs|_$^1
 XSD|_$^../concepts/xsd.html|_$^XSD xsd|_$^2
 UnrealScript|_$^../concepts/unrealscript.html|_$^uc|_$^1
 GIF|_$^../concepts/gif.html|_$^gif|_$^1
-NWScript|_$^../concepts/nwscript.html|_$^nss|_$^1
 Ham|_$^../concepts/ham.html|_$^ham|_$^1
+NWScript|_$^../concepts/nwscript.html|_$^nss|_$^1
 PIR|_$^../concepts/parrot-internal-representation.html|_$^pir|_$^1
 Subleq|_$^../concepts/subleq.html|_$^sq|_$^1
 Promela|_$^../concepts/promela.html|_$^pml|_$^1
@@ -671,8 +671,8 @@ Programming Language for Business|_$^../concepts/plb.html|_$^rl ps cb|_$^3
 Genshi|_$^../concepts/genshi.html|_$^kid|_$^1
 XML Metadata Interchange|_$^../concepts/xmi.html|_$^XMI xmi|_$^2
 Storymatic|_$^../concepts/storymatic.html|_$^coffee|_$^1
-Tree and Tabular Combined Notation|_$^../concepts/ttcn.html|_$^ttcn ttcn2 ttcn3 ttcnpp|_$^4
 Macchiato|_$^../concepts/macchiato.html|_$^at|_$^1
+Tree and Tabular Combined Notation|_$^../concepts/ttcn.html|_$^ttcn ttcn2 ttcn3 ttcnpp|_$^4
 ten|_$^../concepts/ten.html|_$^ten|_$^1
 hoon|_$^../concepts/hoon.html|_$^hoon|_$^1
 boa|_$^../concepts/boa.html|_$^boa|_$^1

@@ -4,7 +4,7 @@ B3 IR
 B3 IR is an intermediate representation language created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#2960 on PLDB
+#2961 on PLDB
 8 Years Old
 
 B3 IR is a C-like SSA representation of a procedure. A procedure has a root block at which it starts execution when it is invoked. A procedure does not have to terminate, but if it does, then it can be either due to a Return, which gracefully returns some value, or by a side-exit at designated instructions. B3 gives the client a lot of flexibility to implement many different kinds of side-exits. B3 is designed to represent procedures for the purpose of transforming them. Knowing what transformations are legal requires knowing what a procedure does. A transformation is valid if it does not change the observable behavior of a procedure. This document tells you what B3 procedures do by telling you what each construct in B3 IR does.
