@@ -2,7 +2,8 @@ openGraphImage explorer.png
 tags All
 title PLDB Explorer
 
-import header.scroll
+import ../header.scroll
+import settings.scroll
 printTitle
 
 endSnippet
