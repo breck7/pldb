@@ -6,7 +6,7 @@ xduce is a programming language created in 2003 by Haruo Hosoya and Benjamin C. 
  https://pldb.io/concepts/../lists/creators.html#q=Haruo%20Hosoya Haruo Hosoya
  https://pldb.io/concepts/../lists/creators.html#q=Benjamin%20C.%20Pierce Benjamin C. Pierce
 
-#3584 on PLDB
+#3585 on PLDB
 21 Years Old
 
 XDuce is a statically typed programming language for XML processing. Its basic data values are XML documents, and its types (so-called regular expression types) directly correspond to document schemas. XDuce also provides a flexible form of regular expression pattern matching, integrating conditional branching, tag checking, and subtree extraction, as well as dynamic typechecking. We survey the principles of XDuce’s design, develop examples illustrating its key features, describe its foundations in the theory of regular tree automata, and present a complete formal definition of its core, along with a proof of type safety.

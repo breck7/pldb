@@ -34,6 +34,7 @@ rijuRepl https://riju.codes/forth
  example
   ." Hello, world!" CR
   
+subreddit https://www.reddit.com/r/Forth/
 leachim6 Forth
  filepath f/Forth.fth
  fileExtensions fth
@@ -58,8 +59,6 @@ hasHexadecimals true
  \ (\$[0-9A-F]+)
 hasIntegers true
  \ (\#|%|&|\-|\+)?[0-9]+
-
-subreddit https://www.reddit.com/r/Forth/
 
 jupyterKernel https://github.com/jdfreder/iforth
 jupyterKernel https://github.com/hcchengithub/peforth

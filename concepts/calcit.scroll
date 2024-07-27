@@ -1,0 +1,27 @@
+import ../code/conceptPage.scroll
+
+id calcit
+name Calcit
+appeared 2021
+creators tí yè
+tags pl lisp
+website https://calcit-lang.org/
+writtenIn rust toml markdown yaml json bourne-shell javascript
+compilesTo javascript
+
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 989
+ committers 10
+ files 104
+
+example
+ tag-match shape
+   (:circle base radius) $ println "Circle with radius:" radius
+   (:rect base width height) $ println "Rect with height:" height
+   _ $ println "Unknown shape"
+
+githubRepo https://github.com/calcit-lang/calcit/
+
+hasSemanticIndentation true
