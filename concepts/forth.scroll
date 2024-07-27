@@ -59,6 +59,8 @@ hasHexadecimals true
 hasIntegers true
  \ (\#|%|&|\-|\+)?[0-9]+
 
+subreddit https://www.reddit.com/r/Forth/
+
 jupyterKernel https://github.com/jdfreder/iforth
 jupyterKernel https://github.com/hcchengithub/peforth
 wikipedia https://en.wikipedia.org/wiki/Forth_(programming_language)

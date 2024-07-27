@@ -5,9 +5,20 @@ name Gforth
 appeared 1992
 tags pl
 website https://www.gnu.org/software/gforth/
+writtenIn forth f-sharp c bourne-shell make bash tex assembly-language yaml markdown python sed dockerfile java scheme xml awk m4 vim-script yacc lex lisp pascal diff css javascript powerbuilder
 
+implementationOf forth
+tryItOnline https://tio.run/#forth-gforth
+repoStats
+ firstCommit 1994
+ newestCommit 2024
+ commits 9540
+ committers 22
+ files 1411
 country Various
 originCommunity https://www.gnu.org/software/gforth/gforth.html#MAILLIST
+
+gitRepo https://git.savannah.gnu.org/git/gforth.git
 
 hasCaseInsensitiveIdentifiers true
 hasPostfixNotation true

@@ -169,7 +169,7 @@
     "Values": 4978,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1164",
+    "Example": "1166",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -186,7 +186,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1143,
+    "Values": 1144,
     "Coverage": "22%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -199,7 +199,7 @@
     "Values": 4978,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21576",
+    "Example": "21575",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -773,7 +773,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 1182,
+    "Values": 1183,
     "Coverage": "23%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -903,7 +903,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1133,
+    "Values": 1134,
     "Coverage": "22%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -913,7 +913,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1094,
+    "Values": 1095,
     "Coverage": "21%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -923,7 +923,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1133,
+    "Values": 1134,
     "Coverage": "22%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -933,7 +933,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1133,
+    "Values": 1134,
     "Coverage": "22%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -943,7 +943,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1130,
+    "Values": 1131,
     "Coverage": "22%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1086,7 +1086,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1143,
+    "Values": 1144,
     "Coverage": "22%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1116,7 +1116,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 1512,
+    "Values": 1513,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1216,7 +1216,7 @@
   },
   {
     "Name": "implementationOf",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Is this language an implementation of another?",
     "Example": "scheme",
@@ -1306,7 +1306,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1143,
+    "Values": 1144,
     "Coverage": "22%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1336,7 +1336,7 @@
   },
   {
     "Name": "tryItOnline",
-    "Values": 133,
+    "Values": 134,
     "Coverage": "2%",
     "Question": "What is a link to try this language on https://tio.run?",
     "Example": "https://tio.run/#abc",
@@ -1653,8 +1653,8 @@
   },
   {
     "Name": "subreddit",
-    "Values": 99,
-    "Coverage": "1%",
+    "Values": 100,
+    "Coverage": "2%",
     "Question": "What is a URL of a subreddit(s) for this language?",
     "Example": "https://reddit.com/r/ada",
     "Type": "string",
@@ -1893,7 +1893,7 @@
   },
   {
     "Name": "gitRepo",
-    "Values": 26,
+    "Values": 27,
     "Coverage": "0%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://git.savannah.gnu.org/git/bash.git",
