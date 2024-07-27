@@ -225,6 +225,9 @@ class ExploreApp {
       .map(measureMeta => {
         const measure = measureMeta.Name
         const col = { data: measure, title: measure, defaultContent: "", type: measureMeta.Type }
+        // number type in datatables is called num
+        // see: https://datatables.net/extensions/searchbuilder/customConditions
+        if (col.type === "number") col.type = "num"
 
         if (measure === "name")
           col.render = (data, type, row, meta) => `<a href="../concepts/${row.id}.html">${row.name}</a>`
@@ -240,6 +243,4 @@ class ExploreApp {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  window.exploreApp = new ExploreApp()
-})
+document.addEventListener("DOMContentLoaded", () => (window.exploreApp = new ExploreApp()))
