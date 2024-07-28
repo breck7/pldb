@@ -4,7 +4,7 @@ net-format
 net-format is a text data format created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#2826 on PLDB
+#2828 on PLDB
 18 Years Old
 
 The net file format is used to describe the axtNet data that underlie the net alignment annotations in the Genome Browser. In 2016 it was revised so that line indentation level represents the parent/child relationship between records and is a necessary part of the net file format. Child records are indented one space from the parent, as shown in the example net file below.
