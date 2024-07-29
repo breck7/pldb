@@ -34,6 +34,5 @@ hasFunctions true
 hasConditionals true
  - if %products.Count% > 0 then
   - go through %products% call !ProcessProduct
-
-hasVariables true
+hasAssignment true
  - set %name% as "Dwight Shrewd"

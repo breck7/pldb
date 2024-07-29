@@ -10,7 +10,7 @@ description Slab is a programmable markup language that simplifies the creation 
 writtenIn html haskell nix bourne-shell json yaml css markdown dockerfile
 compilesTo html
 
-docs https://slab-lang.org/reference.html
+docs https://slab-lang.org/reference.html https://slab-lang.org/tutorial.html
 repoStats
  firstCommit 2023
  newestCommit 2024
@@ -55,5 +55,3 @@ hasForLoops true
  ul
   for val, index in [1, 2]
     li val: #(val), index: #(index)
-
-tutorial https://slab-lang.org/tutorial.html
