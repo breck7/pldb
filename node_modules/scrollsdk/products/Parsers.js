@@ -138,6 +138,9 @@ class ParserBackedNode extends TreeNode {
   getAutocompleteResults(partialWord, cellIndex) {
     return cellIndex === 0 ? this._getAutocompleteResultsForFirstWord(partialWord) : this._getAutocompleteResultsForCell(partialWord, cellIndex)
   }
+  makeError(message) {
+    return new ParserDefinedError(this, message)
+  }
   get nodeIndex() {
     // StringMap<int> {firstWord: index}
     // When there are multiple tails with the same firstWord, _index stores the last content.
@@ -1032,6 +1035,16 @@ class UnknownParserError extends AbstractTreeError {
     const suggestion = this.wordSuggestion
     if (suggestion) this.getNode().setWord(this.cellIndex, suggestion)
     return this
+  }
+}
+class ParserDefinedError extends AbstractTreeError {
+  constructor(node, message) {
+    super()
+    this._node = node
+    this._message = message
+  }
+  get message() {
+    return this._message
   }
 }
 class BlankLineError extends UnknownParserError {

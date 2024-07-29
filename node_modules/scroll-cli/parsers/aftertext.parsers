@@ -115,7 +115,7 @@ abstractAftertextDirectiveParser
     // todo: make AbstractTreeError class exported by sdk to allow Parsers to define their own error types.
     // todo: also need to be able to map lines back to their line in source (pre-imports)
     if (!inserts.length)
-      errors.push({toObject: () => {return { message: `No match found for "${this.getLine()}".`}}})
+     errors.push(this.makeError(`No match found for "${this.getLine()}".`))
     return errors
   }
   get pattern() {

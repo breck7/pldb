@@ -11,40 +11,6 @@ Statistics on the measures (columns) are below and can be downloaded as: CSV | T
  https://pldb.io/measures.tsv TSV
  https://pldb.io/measures.json JSON
 
-Example
-  #if 0
-  crap $0 | tcc -run -; exit 0
-  #endif
-  #include 
-  #define M 3
-  #define N 4
-  main
-      // defined length [M][N] is computable
-      int test_image[M][N]=
-       {{1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12}},
-      *i, j
-  
-      for i in test_image // computable length
-          for j in i[:N] // undefined length, add [:N]
-              printf  "%i%s", j, j_index==N-1?"\n":", "
-
 fileNames horp.conf
 
-extensions mkv mk3d mka mks
-
 fileNames horp.conf
-
-github https://github.com/sirthias/parboiled
-
-github https://github.com/sirthias/parboiled2
-
-github https://github.com/sirthias/pegdown
-
-hasVariables true
- - set %name% as "Dwight Shrewd"
-
-leetSheet https://simoji.treenotation.org/cheatSheet.html
-
-tutorial https://slab-lang.org/tutorial.html

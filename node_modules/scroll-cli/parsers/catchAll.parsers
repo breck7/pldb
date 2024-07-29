@@ -7,8 +7,7 @@ catchAllParagraphParser
  javascript
   getErrors() {
     const errors = super.getErrors() || []
-    return this.parent.has("testStrict") ? errors.concat({toObject: () => {return { message: `catchAllParagraphParser should not have any matches when testing with testStrict.`}}}
-    ) : errors
+    return this.parent.has("testStrict") ? errors.concat(this.makeError(`catchAllParagraphParser should not have any matches when testing with testStrict.`)) : errors
   }
   get originalText() {
    return this.getLine() || ""

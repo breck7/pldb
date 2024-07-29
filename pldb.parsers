@@ -354,9 +354,9 @@ abstractIdParser
       requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstWord)
       next = next.next
     }
-    requiredMeasureNames.forEach(name => {
-      errors.push({toObject: () => {return { message: `Concept "${this.content}" is missing required measure "${name}".`}}})
-    })
+    requiredMeasureNames.forEach(name =>
+      errors.push(this.makeError(`Concept "${this.content}" is missing required measure "${name}".`))
+    )
     return errors
   }
 
