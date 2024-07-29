@@ -86,7 +86,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 1726,
+    "Values": 1741,
     "Coverage": "34%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -169,7 +169,7 @@ const measures = [
     "Values": 4982,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1169",
+    "Example": "1171",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 4982,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21591",
+    "Example": "21588",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
