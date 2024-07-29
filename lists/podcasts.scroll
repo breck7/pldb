@@ -54,7 +54,8 @@ abstractCountParser
 abstractQuickLinkParser
  boolean isComputed true
  extends abstractUrlMeasureParser
- cells urlCell integerCell
+ cells urlCell
+ catchAllCellType integerCell
 
 appleLinkParser
  pattern ^(https\:\/\/podcasts\.apple\.com|appleLink)
