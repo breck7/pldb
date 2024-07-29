@@ -511,7 +511,6 @@ abstractDelimitedValuesBlobMeasureParser
  extends abstractStringBlobMeasureParser
 abstractCodeMeasureParser
  extends abstractStringBlobMeasureParser
- baseParser blobParser
  javascript
   get measureValue() {
     return this.childrenToString().replace(/[\n\t]/g, " ")

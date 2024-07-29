@@ -169,7 +169,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1189",
+    "Example": "1191",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21582",
+    "Example": "21581",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -720,9 +720,11 @@
   },
   {
     "Name": "filenames",
-    "Values": 0,
+    "Values": 2,
     "Coverage": "0%",
     "Question": "What are the filenames commonly associated with this language?",
+    "Example": "horp.conf",
+    "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
   },
