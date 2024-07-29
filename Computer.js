@@ -861,7 +861,7 @@ image ${image}
       reddit: this.get("subreddit"),
       youtube: this.getPrimary("youtubes"),
       tiktok: this.getPrimary("tiktoks"),
-      festival: this.getPrimary("conference"),
+      festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
       edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
         new TreeNode(
@@ -909,7 +909,7 @@ ${creatorsLinks}
 
   get primaryTagLink() {
     const { primaryTag } = this
-    return `<a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22tags%22%3A%22string%22%2C%22value%22%3A%5B%22${primaryTag}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">${this.primaryTagName}</a>`
+    return `<a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22${primaryTag}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">${this.primaryTagName}</a>`
   }
 
   getPrimary(key) {

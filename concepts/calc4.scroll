@@ -22,9 +22,10 @@ example
  [fib2|x, a, b|x ? ((x-1) ? ((x-1) {fib2} (a+b) {fib2}a) ? a) ? b] 38{fib2}1{fib2}0
 
 githubRepo https://github.com/proprowataya/calc4
- stars 3
+ stars 5
  forks 0
- subscribers 2
+ subscribers 3
  created 2018
- updated 2022
+ updated 2024
  description The Calc4 Programming Language - Every code element is an operator, allowing programming in the style of a calculator
+ issues 0

@@ -11,7 +11,7 @@ blog https://www.ruby-lang.org/en/community/weblogs/
 releaseNotes https://www.ruby-lang.org/en/downloads/releases/
 download https://www.ruby-lang.org/en/downloads/
 latestVersion 3.3.1
-conference https://rubyconf.org RubyConf
+conferences https://rubyconf.org
 fileExtensions rb
 writtenIn ruby c yaml markdown rust erb m4 json python bourne-shell assembly-language make perl bash scheme cpp javascript toml yacc css lisp awk xml csv diff d idl sed z-shell html dockerfile
 
@@ -92,13 +92,13 @@ meetup https://www.meetup.com/topics/ruby
  groupCount 932
 keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
 githubRepo https://github.com/ruby/ruby
- stars 20194
- forks 5296
- subscribers 1140
+ stars 21790
+ forks 5297
+ subscribers 1098
  created 2010
- updated 2023
+ updated 2024
  description The Ruby Programming Language
- issues 374
+ issues 432
 
 lineCommentToken #
 multiLineCommentTokens =begin =end
