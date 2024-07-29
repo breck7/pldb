@@ -35,11 +35,11 @@ Hexadecimals
 
 -- [0-9_]+#[0-9a-f_\.]+#
 
-// 0[xX][0-9a-fA-F_]+
-
 -- x&#39;([0-9a-f]{2})+&#39;
 
 // 0[xX][\da-fA-F][\da-fA-F_]*
+
+// 0[xX][0-9a-fA-F_]+
 
 // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
 
@@ -73,17 +73,17 @@ Hexadecimals
 
 # 0[xX][a-fA-F0-9]+
 
-# 0x[a-fA-F0-9]+
-
 // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+
+# 0x[a-fA-F0-9]+
 
 # \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
 
 &#39; \$[0-9a-fA-Z]+
 
-# 0x[0-9A-Fa-f]+
-
 // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
+
+# 0x[0-9A-Fa-f]+
 
 0xDFF90
 
@@ -95,7 +95,7 @@ Hexadecimals
 
 ***
 
-Languages *with* Hexadecimals include JavaScript, Python, Java, Perl, Go, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Julia, Prolog, Dart, Ada, Zig, D, MySQL, Reason, WebAssembly, awk, F#, OCaml, Coq, Chapel, ClojureScript, VHDL, Forth, Idris, Protocol Buffers, IDL, F*, ActionScript, Verilog, Pony, Puppet, Hy, AutoHotkey, PostScript, Cython, Eiffel, Zephir, VBScript, Pig Latin, Koka, C3, Opa, QML, Thrift, Agda, Futhark, Ceylon, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, K, Golo, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, ooc, Meson, Nit, Ioke, Vim script, Xtend, Isabelle, SourcePawn, Logtalk, Icon, BlitzMax, Whiley, clay, S, Monkey, GDScript, OpenEdge ABL, Earl Grey, BlitzBasic, Ragel, Croc, Kal, Linden Scripting Language, Jule, FloScript, Unicon, monte, MiniD, Savi, JS++, Flatline, Speedie, parasail, Aardvark, TAL, Pawn, Crap, Urbiscript, nimrod, SARL, CBOR data definition language, RAISE Specification Language
+Languages *with* Hexadecimals include JavaScript, Python, Java, Perl, Go, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Julia, Prolog, Dart, Ada, Zig, MySQL, Reason, D, WebAssembly, awk, Chapel, F#, Coq, OCaml, ClojureScript, VHDL, Forth, Idris, Protocol Buffers, F*, IDL, Verilog, ActionScript, Pony, Hy, Puppet, AutoHotkey, C3, PostScript, Cython, Eiffel, Koka, Zephir, VBScript, Pig Latin, Opa, QML, Futhark, Thrift, Agda, Ceylon, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, K, Golo, Felix, Transact-SQL, Boo, chaiscript, SuperCollider, AspectJ, ooc, Nit, Meson, Ioke, Vim script, Xtend, SourcePawn, Isabelle, Logtalk, BlitzMax, Whiley, Icon, clay, S, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, Croc, Ragel, Jule, Kal, Linden Scripting Language, FloScript, Unicon, monte, MiniD, Savi, JS++, Speedie, Flatline, Aardvark, parasail, TAL, Pawn, Crap, Urbiscript, nimrod, SARL, CBOR data definition language, RAISE Specification Language
 
 ***
 

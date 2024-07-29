@@ -5,7 +5,7 @@ lmdb is a library created in 2011 by Howard Chu.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Howard%20Chu Howard Chu
 
-#555 on PLDB
+#551 on PLDB
 13 Years Old
 
 git clone https://github.com/LMDB/lmdb
@@ -13,7 +13,7 @@ git clone https://github.com/LMDB/lmdb
 LMDB is a Btree-based database management library modeled loosely on the BerkeleyDB API, but much simplified. The entire database is exposed in a memory map, and all data fetches return data directly from the mapped memory, so no malloc's or memcpy's occur during data fetches. As such, the library is extremely simple because it requires no page caching layer of its own, and it is extremely high performance and memory-efficient. It is also fully transactional with full ACID semantics, and when the memory map is read-only, the database integrity cannot be corrupted by stray pointer writes from application code.
 
 - Tags: library
-- lmdb is developed on GitHub and has 2,100 stars
+- lmdb is developed on GitHub and has 2,512 stars
 - Early development of lmdb happened in https://github.com/LMDB
 - lmdb is written in C, Make
 - Read more about lmdb on the web: 1.

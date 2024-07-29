@@ -4,15 +4,15 @@ neut
 neut is a programming language created in 2018.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
 
-#680 on PLDB
+#685 on PLDB
 6 Years Old
 
 git clone https://github.com/u2zv1wx/neut
 
-A dependently-typed programming language with compile-time malloc/free determination
+A dependently-typed programming language with static memory management
 
 - Tags: programming language
-- neut is developed on GitHub and has 797 stars
+- neut is developed on GitHub and has 831 stars
 - Early development of neut happened in https://github.com/vekatze/neut/issues
 - neut is written in Haskell, Markdown, JSON, YAML, Bourne shell, JavaScript, CSS, TypeScript, Handlebars, Dockerfile, SVG, TOML, C
 - Read more about neut on the web: 1.

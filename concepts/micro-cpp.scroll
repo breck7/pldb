@@ -19,13 +19,13 @@ originCommunity University of Waterloo
 
 githubRepo https://github.com/pabuhr/uCPP
  firstCommit 2013
- stars 133
- forks 26
- subscribers 13
+ stars 148
+ forks 28
+ subscribers 12
  created 2013
- updated 2022
+ updated 2024
  description concurrency for C++
- issues 2
+ issues 1
 
 wikipedia https://en.wikipedia-on-ipfs.org/wiki/%CE%9CC%2B%2B
  summary μC++, also called uC++, is a programming language, an extension of C++ designed for concurrent programming. Among other features, it adds coroutines, tasks, and monitors, and extends existing language constructs to integrate with them. Its compiler, named u++, operates as a source-to-source translator targeting C++. μC++ is part of the μSystem project, of the University of Waterloo, Ontario, Canada, a large-scale project led by professor Peter Buhr with the goal to create a "highly-concurrent shared-memory programming system".It is used in course CS 343 in University of Waterloo.Every μC++ program should include the uC++.h header file before any other header, although this is not necessary for more recent versions. uC++ is now open source, available on GitHub.

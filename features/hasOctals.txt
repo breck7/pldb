@@ -22,13 +22,13 @@ Octals
 
 % 0o[0-7]+
 
-// 0[0-7_]+
-
 // 0[oO][0-7][0-7_]*
 
-// 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+// 0[0-7_]+
 
 // 0[oO][0-7]+
+
+// 0[oO][0-7][0-7_]*[uU]?[yslLn]?
 
 -- O&quot;[0-7_]+&quot;
 
@@ -40,25 +40,25 @@ Octals
 
 ; 0\d+
 
+0o177
+
 % [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()&lt;&gt;\[\]{}/%\s])
 
 -- 0[cC][0-7]+
-
-0o177
 
 // ([1-9][_0-9]*)?\s*\&#39;[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
 
 # 0[0-7]+j?
 
-# 0\d+
-
 // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+
+# 0\d+
 
 0455
 
 ***
 
-Languages *with* Octals include JavaScript, Python, Java, Perl, Go, Swift, Haskell, Elixir, Julia, Prolog, Zig, D, Reason, F#, OCaml, Coq, Chapel, VHDL, Protocol Buffers, IDL, F*, Verilog, Puppet, Hy, AutoHotkey, PostScript, Cython, Eiffel, C3, Opa, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, Golo, Boo, Felix, AspectJ, ooc, Meson, Isabelle, SourcePawn, Logtalk, Earl Grey, Jule, FloScript, Aardvark, Pawn, nimrod, CBOR data definition language
+Languages *with* Octals include JavaScript, Python, Java, Perl, Go, Swift, Haskell, Elixir, Julia, Prolog, Zig, Reason, D, Chapel, F#, Coq, OCaml, VHDL, Protocol Buffers, F*, IDL, Verilog, Hy, Puppet, AutoHotkey, C3, PostScript, Cython, Eiffel, Opa, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, Golo, Felix, Boo, AspectJ, ooc, Meson, SourcePawn, Isabelle, Logtalk, Earl Grey, Jule, FloScript, Aardvark, Pawn, nimrod, CBOR data definition language
 
 ***
 

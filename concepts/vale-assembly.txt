@@ -5,7 +5,7 @@ Vale, aka Verified Assembly Language for Everest, is an assembly language create
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Hawblitzel Chris Hawblitzel
 
-#875 on PLDB
+#854 on PLDB
 7 Years Old
 
 git clone https://github.com/project-everest/vale
@@ -13,7 +13,7 @@ git clone https://github.com/project-everest/vale
 Vale is a tool for constructing formally verified high-performance assembly language code, with an emphasis on cryptographic code. It uses existing verification frameworks, such as Dafny and F*, for formal verification. It supports multiple architectures, such as x86, x64, and ARM, and multiple platforms, such as Windows, Mac, and Linux. Additional architectures and platforms can be supported with no changes to the Vale tool.
 
 - Tags: assembly language
-- Vale is developed on GitHub and has 217 stars
+- Vale is developed on GitHub and has 261 stars
 - Vale is written in reStructuredText, F#, XML, Python, Bourne shell, Markdown, C#, Dockerfile, C, Bash, PowerShell, JSON, OCaml, Make
 - See also: (1 related languages) F*
 

@@ -39,20 +39,20 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/julia.html"
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/prolog.html">Prolog</a>
  % 0b[01]+
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/d.html">D</a>
- // 0[Bb][01_]+
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/mysql.html">MySQL</a>
  -- b&#39;[01]+&#39;
 
 codeWithHeader Example from <b>3 languages</b>: <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/croc.html">Croc</a>, <a href="../concepts/minid.html">MiniD</a>
  // 0[bB][01][01_]*
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/f-sharp.html">F#</a>
- // 0[bB][01][01_]*[uU]?[yslLn]?
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/d.html">D</a>
+ // 0[Bb][01_]+
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
  // 0[bB][01]+
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/f-sharp.html">F#</a>
+ // 0[bB][01][01_]*[uU]?[yslLn]?
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/vhdl.html">VHDL</a>
  -- B&quot;[01_]+&quot;
@@ -60,11 +60,11 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/vhdl.html">
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/verilog.html">Verilog</a>
  // ([0-9]+)|(\&#39;b)[01]+
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/eiffel.html">Eiffel</a>
- -- 0[bB][01]+
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  0b110011
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/eiffel.html">Eiffel</a>
+ -- 0[bB][01]+
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ceylon.html">Ceylon</a>
  // \$([01]{4})(_[01]{4})+
@@ -98,7 +98,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/crap.html">
 
 ***
 
-* Languages *with* Binary Literals include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/zig.html">Zig</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/mysql.html">MySQL</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/coq.html">Coq</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/vhdl.html">VHDL</a>, <a href="../concepts/fstar.html">F*</a>, <a href="../concepts/verilog.html">Verilog</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/opa.html">Opa</a>, <a href="../concepts/futhark.html">Futhark</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/systemverilog.html">SystemVerilog</a>, <a href="../concepts/numpy.html">NumPy</a>, <a href="../concepts/k.html">K</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/aspectj.html">AspectJ</a>, <a href="../concepts/ooc.html">ooc</a>, <a href="../concepts/isabelle.html">Isabelle</a>, <a href="../concepts/logtalk.html">Logtalk</a>, <a href="../concepts/blitzmax.html">BlitzMax</a>, <a href="../concepts/whiley.html">Whiley</a>, <a href="../concepts/monkey.html">Monkey</a>, <a href="../concepts/earl-grey.html">Earl Grey</a>, <a href="../concepts/blitzbasic.html">BlitzBasic</a>, <a href="../concepts/croc.html">Croc</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/floscript.html">FloScript</a>, <a href="../concepts/minid.html">MiniD</a>, <a href="../concepts/savi.html">Savi</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/parasail.html">parasail</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/crap.html">Crap</a>, <a href="../concepts/nimrod.html">nimrod</a>, <a href="../concepts/cddl.html">CBOR data definition language</a>
+* Languages *with* Binary Literals include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/zig.html">Zig</a>, <a href="../concepts/mysql.html">MySQL</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/coq.html">Coq</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/vhdl.html">VHDL</a>, <a href="../concepts/fstar.html">F*</a>, <a href="../concepts/verilog.html">Verilog</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/opa.html">Opa</a>, <a href="../concepts/futhark.html">Futhark</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/systemverilog.html">SystemVerilog</a>, <a href="../concepts/numpy.html">NumPy</a>, <a href="../concepts/k.html">K</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/aspectj.html">AspectJ</a>, <a href="../concepts/ooc.html">ooc</a>, <a href="../concepts/isabelle.html">Isabelle</a>, <a href="../concepts/logtalk.html">Logtalk</a>, <a href="../concepts/blitzmax.html">BlitzMax</a>, <a href="../concepts/whiley.html">Whiley</a>, <a href="../concepts/monkey.html">Monkey</a>, <a href="../concepts/earl-grey.html">Earl Grey</a>, <a href="../concepts/blitzbasic.html">BlitzBasic</a>, <a href="../concepts/croc.html">Croc</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/floscript.html">FloScript</a>, <a href="../concepts/minid.html">MiniD</a>, <a href="../concepts/savi.html">Savi</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/parasail.html">parasail</a>, <a href="../concepts/crap.html">Crap</a>, <a href="../concepts/nimrod.html">nimrod</a>, <a href="../concepts/cddl.html">CBOR data definition language</a>
 
 ***
 

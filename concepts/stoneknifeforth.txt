@@ -4,7 +4,7 @@ stoneknifeforth
 stoneknifeforth is a programming language created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1507 on PLDB
+#1497 on PLDB
 16 Years Old
 
 git clone https://github.com/kragen/stoneknifeforth
@@ -12,6 +12,6 @@ git clone https://github.com/kragen/stoneknifeforth
 This is StoneKnifeForth, a very simple language inspired by Forth. It is not expected to be useful; instead, its purpose is to show how simple a compiler can be. The compiler is a bit under two pages of code when the comments are removed. This package includes a “metacircular compiler” which is written in StoneKnifeForth and compiles StoneKnifeForth to an x86 Linux ELF executable.
 
 - Tags: programming language
-- stoneknifeforth is developed on GitHub and has 369 stars
+- stoneknifeforth is developed on GitHub and has 410 stars
 - Early development of stoneknifeforth happened in https://github.com/kragen/stoneknifeforth/issues
 - stoneknifeforth is written in Python, Markdown, Assembly language, C, Bourne shell, Bash, Make

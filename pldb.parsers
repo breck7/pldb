@@ -721,12 +721,9 @@ lastActivityParser
  extends abstractComputedIntMeasureParser
  description In our data on this entity, what year is the most recent activity?
 
-// conference
-conferenceParser
- description What is a URL to a recurring conference(s) focused on this language?
- catchAllCellType stringCell
- extends abstractUrlMeasureParser
- single false
+conferencesParser
+ description What is a URL(s) to a recurring conference(s) focused on this language?
+ extends abstractUrlsMeasureParser
 
 // country
 countryParser

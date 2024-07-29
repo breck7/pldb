@@ -5,7 +5,7 @@ crush is a programming language created in 2020 by Axel Liljencrantz.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Axel%20Liljencrantz Axel Liljencrantz
 
-#648 on PLDB
+#664 on PLDB
 4 Years Old
 
 git clone https://github.com/liljencrantz/crush
@@ -13,7 +13,7 @@ git clone https://github.com/liljencrantz/crush
 Crush is an attempt to make a traditional command line shell that is also a modern programming language. It has the features one would expect from a modern programming language like a type system, closures and lexical scoping, but with a syntax geared toward both batch and interactive shell usage.
 
 - Tags: programming language
-- crush is developed on GitHub and has 1,804 stars
+- crush is developed on GitHub and has 1,832 stars
 - Early development of crush happened in https://github.com/liljencrantz/
 - crush is written in Rust, Markdown, TOML, JSON, CSV, Protocol Buffers
 - See also: (1 related languages) PowerShell

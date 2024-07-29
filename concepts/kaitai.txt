@@ -5,7 +5,7 @@ kaitai is an interface design language created in 2016 by Mikhail Yakshin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Mikhail%20Yakshin Mikhail Yakshin
 
-#299 on PLDB
+#280 on PLDB
 8 Years Old
 
 git clone https://github.com/kaitai-io/kaitai_struct
@@ -13,7 +13,7 @@ git clone https://github.com/kaitai-io/kaitai_struct
 Kaitai Struct is a YAML-based declarative language used to describe various binary data structures, laid out in files or in memory: i.e. binary file formats, network stream packet formats, etc. The main idea is that a particular format is described in Kaitai Struct language (.ksy file) and then can be compiled with ksc into source files in one of the supported programming languages. These modules will include a generated code for a parser that can read described data structure from a file / stream and give access to it in a nice, easy-to-comprehend API.
 
 - Tags: interface design language
-- kaitai is developed on GitHub and has 3,040 stars
+- kaitai is developed on GitHub and has 3,922 stars
 - Early development of kaitai happened in http://kaitai.io/
 - kaitai is written in Markdown, Bourne shell, YAML
 - kaitai.io was registered in 2016

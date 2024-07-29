@@ -5,14 +5,14 @@ asterius-compiler is a compiler created in 2017 by Shao Cheng.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Shao%20Cheng Shao Cheng
 
-#1207 on PLDB
+#1222 on PLDB
 7 Years Old
 
 git clone https://github.com/tweag/asterius
 
-A Haskell to WebAssembly compiler
+DEPRECATED in favor of ghc wasm backend, see https://www.tweag.io/blog/2022-11-22-wasm-backend-merged-in-ghc
 
 - Tags: compiler
-- asterius-compiler is developed on GitHub and has 1,917 stars
+- asterius-compiler is developed on GitHub and has 1,978 stars
 - Early development of asterius-compiler happened in Tweag I/O
 - asterius-compiler is written in Haskell, JavaScript, Markdown, C, Nix, JSON, YAML, starlark, SVG, HTML, Python, XML, TOML, Bazel, Bourne shell, Diff

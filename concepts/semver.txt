@@ -5,7 +5,7 @@ Semantic Versioning is an open source schema created in 2011 by Tom Preston-Wern
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Tom%20Preston-Werner Tom Preston-Werner
 
-#253 on PLDB
+#251 on PLDB
 13 Years Old
 
 git clone https://github.com/semver/semver
@@ -13,7 +13,7 @@ git clone https://github.com/semver/semver
 Semantic versioning (aka SemVer)[1], currently the best known and most widely adopted version scheme in this category, uses a sequence of three digits (Major.Minor.Patch), an optional prerelease tag and optional build meta tag. In this scheme, risk and functionality are the measures of significance. Breaking changes are indicated by increasing the major number (high risk), new non-breaking features increment the minor number (medium risk) and all other non-breaking changes increment the patch number (lowest risk). The presence of a prerelease tag (-alpha, -beta) indicates substantial risk, as does a major number of zero (0.y.z), which is used to indicate a work-in-progress that may contain any level of potentially breaking changes (highest risk).
 
 - Tags: schema
-- Semantic Versioning is developed on GitHub and has 6,140 stars
+- Semantic Versioning is developed on GitHub and has 7,126 stars
 - Early development of Semantic Versioning happened in https://github.com/semver
 - Semantic Versioning is written in Markdown, JSON, SVG, YAML
 - semver.org was registered in 2009

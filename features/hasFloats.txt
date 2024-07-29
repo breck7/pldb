@@ -37,17 +37,17 @@ Floats
 
 # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
 
-// 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
-
 -- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
 
 // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
 
+// 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
+
 -- _?\d+\.(?=\d+)
 
-// -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
-
 // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
+
+// -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
 
 -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
 
@@ -65,13 +65,13 @@ NB. _?\d+\.(?=\d+)
 
 -- ([0-9]+\.[0-9]*)|([0-9]*\.[0-9]+)
 
+// [0-9]+\.[0-9]+([eE][\-+]?[0-9]+)?
+
 // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
 
 &#39; [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
 
 -- [0-9]*\.[0-9]+(e[0-9]+)?[fd]?
-
-// [0-9]+\.[0-9]+([eE][\-+]?[0-9]+)?
 
 % (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
 
@@ -81,9 +81,9 @@ NB. _?\d+\.(?=\d+)
 
 # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
 
-// \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
-
 -- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
+
+// \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
 
 // (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
 
@@ -91,9 +91,9 @@ NB. _?\d+\.(?=\d+)
 
 # -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
 
-# (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
-
 // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
+
+# (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
 
 // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
 
@@ -101,15 +101,13 @@ NB. _?\d+\.(?=\d+)
 
 // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
 
-# [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
-
 // [0-9]+\.[0-9]+
+
+# [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
 
 &#39; [0-9]+\.[0-9]*(?!\.)
 
 // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
-
-// (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
 
 3.14
 32.60
@@ -126,6 +124,8 @@ NB. _?\d+\.(?=\d+)
 0x1fffp-16
 0x15e-2
 
+// (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
+
 A = 2.3
 
 || num = 0.0
@@ -137,7 +137,7 @@ A = 2.3
 
 ***
 
-Languages *with* Floats include JavaScript, Python, Java, Perl, JSON, Go, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Prolog, Mathematica, Ada, TOML, Zig, D, MySQL, Reason, Elm, WebAssembly, GraphQL, awk, F#, OCaml, Coq, Chapel, ClojureScript, VHDL, Idris, Protocol Buffers, J, IDL, F*, ActionScript, Verilog, Pony, Pandas, Fennel, Puppet, Hy, AutoHotkey, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Janet, Pig Latin, Koka, GNU Octave, Opa, QML, Thrift, SPARQL, Agda, Futhark, POV-Ray SDL, AMPL, Ceylon, Applescript, QBasic, SystemVerilog, NumPy, progsbase, Scilab, Cryptol, HLSL, GLSL, AutoIt, Turtle, K, YANG, Golo, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, ooc, Wax, Nit, Ioke, Gosu, Maxima, Modelica, Shen, Fancy, LiveScript, Io, Xtend, SourcePawn, PL/pgSQL, Icon, BlitzMax, LilyPond, Whiley, Stan, Monkey, GDScript, OpenEdge ABL, Earl Grey, BlitzBasic, Croc, JSLT, Kal, Linden Scripting Language, Jule, FloScript, Unicon, monte, MiniD, SAKO, JS++, Flatline, Speedie, parasail, Aardvark, Easytrieve, Pawn, Crap, Urbiscript, Ion, nimrod, AmbientTalk, PromQL, SARL, BALGOL, bag-format, CBOR data definition language, RAISE Specification Language, SquidConf, juttle
+Languages *with* Floats include JavaScript, Python, Java, Perl, JSON, Go, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Prolog, Mathematica, Ada, Zig, TOML, MySQL, Reason, D, WebAssembly, Elm, GraphQL, awk, Chapel, F#, Coq, OCaml, ClojureScript, VHDL, Idris, Protocol Buffers, J, F*, IDL, Fennel, Verilog, Pandas, ActionScript, Pony, Hy, Puppet, AutoHotkey, PostScript, Cython, XQuery, Eiffel, EDN, Koka, Zephir, VBScript, Janet, Pig Latin, GNU Octave, Opa, QML, Futhark, Thrift, Agda, SPARQL, POV-Ray SDL, AMPL, Applescript, Ceylon, SystemVerilog, QBasic, NumPy, progsbase, Cryptol, Scilab, HLSL, YANG, GLSL, AutoIt, Turtle, K, Golo, Felix, Transact-SQL, Boo, chaiscript, SuperCollider, AspectJ, ooc, Wax, Nit, Gosu, Ioke, Modelica, Maxima, Shen, Fancy, LiveScript, Xtend, SourcePawn, Io, PL/pgSQL, BlitzMax, Whiley, Icon, LilyPond, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, JSLT, Croc, Jule, Kal, Linden Scripting Language, FloScript, Unicon, monte, MiniD, SAKO, JS++, Speedie, Flatline, Aardvark, parasail, Easytrieve, Pawn, Crap, Urbiscript, Ion, nimrod, AmbientTalk, PromQL, SARL, BALGOL, bag-format, CBOR data definition language, RAISE Specification Language, SquidConf, juttle
 
 ***
 

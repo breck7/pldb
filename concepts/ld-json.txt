@@ -5,7 +5,7 @@ JSON Lines is a data notation created in 2013 by Ian Ward.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=Ian%20Ward Ian Ward
 
-#938 on PLDB
+#832 on PLDB
 11 Years Old
 
 git clone https://github.com/wardi/jsonlines
@@ -13,7 +13,7 @@ git clone https://github.com/wardi/jsonlines
 JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
 
 - Tags: dataNotation
-- JSON Lines is developed on GitHub and has 72 stars
+- JSON Lines is developed on GitHub and has 127 stars
 - Early development of JSON Lines happened in https://github.com/wardi/jsonlines/issues
 - JSON Lines is written in CSS, HTML, JavaScript, Markdown, JSON
 - jsonlines.org was registered in 2013

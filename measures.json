@@ -169,7 +169,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1195",
+    "Example": "1190",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -179,7 +179,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "In our data on this entity, what year is the most recent activity?",
-    "Example": "2022",
+    "Example": "2024",
     "Type": "number",
     "SortIndex": 1.55,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21561",
+    "Example": "21583",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -241,6 +241,16 @@
     "IsComputed": false
   },
   {
+    "Name": "conferences",
+    "Values": 6,
+    "Coverage": "0%",
+    "Question": "What is a URL(s) to a recurring conference(s) focused on this language?",
+    "Example": "https://conf.11ty.dev/",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
     "Name": "zulip",
     "Values": 2,
     "Coverage": "0%",
@@ -251,18 +261,8 @@
     "IsComputed": false
   },
   {
-    "Name": "conference",
-    "Values": 6,
-    "Coverage": "0%",
-    "Question": "What is a URL to a recurring conference(s) focused on this language?",
-    "Example": "https://conf.11ty.dev/",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
     "Name": "githubRepo_created",
-    "Values": 1118,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -272,10 +272,10 @@
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 1132,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "What year was the last commit made?",
-    "Example": "2022",
+    "Example": "2024",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -292,20 +292,20 @@
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 1125,
+    "Values": 1140,
     "Coverage": "22%",
     "Question": "How many subscribers to the repo?",
-    "Example": "20",
+    "Example": "24",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 1133,
+    "Values": 1138,
     "Coverage": "22%",
     "Question": "How many forks of the repo?",
-    "Example": "39",
+    "Example": "48",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -315,17 +315,17 @@
     "Values": 1140,
     "Coverage": "22%",
     "Question": "How many stars of the repo?",
-    "Example": "672",
+    "Example": "755",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 1033,
-    "Coverage": "20%",
+    "Values": 1137,
+    "Coverage": "22%",
     "Question": "How many isses on the repo?",
-    "Example": "29",
+    "Example": "40",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -1129,7 +1129,7 @@
     "Values": 4982,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
-    "Example": "818",
+    "Example": "928",
     "Type": "number",
     "SortIndex": 2.1,
     "IsComputed": true

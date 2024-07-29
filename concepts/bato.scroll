@@ -3,18 +3,36 @@ import ../code/conceptPage.scroll
 id bato
 name Bato
 appeared 2016
+creators Joel Bryan Juliano
 tags pl
 website https://jjuliano.github.io/bato/
-creators Joel Bryan Juliano
 description A general-purpose scripting language in Filipino dialect
-country Philippines
 writtenIn ruby
+
+repoStats
+ firstCommit 2016
+ commits 54
+ committers 8
+ files 48
+ newestCommit 2024
+country Philippines
+reference https://www.theregister.com/2018/03/21/philippines_ruby_bato
+
 example
   ang gumawaNgID
     mag_print "------------------------------------------"
     magbigay_daan
     mag_print "------------------------------------------"
   wakas
+
+githubRepo https://github.com/jjuliano/bato
+ stars 329
+ forks 26
+ subscribers 28
+ created 2016
+ updated 2024
+ description Ang Bato ay isang programming language sa wikang Filipino
+ issues 2
 
   ang ID(impormasyon = {})
     gumawaNgID na_ganito
@@ -35,19 +53,3 @@ example
     baitang: "6",
     seksiyon: "Masisipag"
   })
-reference https://www.theregister.com/2018/03/21/philippines_ruby_bato
-
-repoStats
- firstCommit 2016
- commits 54
- committers 8
- files 48
- newestCommit 2024
-
-githubRepo https://github.com/jjuliano/bato
- stars 329
- forks 26
- subscribers 28
- created 2016
- updated 2024
- description Ang Bato ay isang programming language sa wikang Filipino

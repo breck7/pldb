@@ -6,7 +6,7 @@ rosette-lang is a programming language created in 2013 by Emina Torlak and Rasti
  https://pldb.io/concepts/../lists/creators.html#q=Emina%20Torlak Emina Torlak
  https://pldb.io/concepts/../lists/creators.html#q=Rastislav%20Bodik Rastislav Bodik
 
-#1856 on PLDB
+#1862 on PLDB
 11 Years Old
 
 Rosette is a solver-aided programming language that extends Racket with language constructs for program synthesis, verification, and more. To verify or synthesize code, Rosette compiles it to logical constraints solved with off-the-shelf SMT solvers. By combining virtualized access to solvers with Racket’s metaprogramming, Rosette makes it easy to develop synthesis and verification tools for new languages.

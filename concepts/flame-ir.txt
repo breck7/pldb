@@ -4,7 +4,7 @@ flame-ir
 flame-ir is an intermediate representation language created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#1700 on PLDB
+#1687 on PLDB
 9 Years Old
 
 git clone https://github.com/jonathanvdc/flame
@@ -12,6 +12,6 @@ git clone https://github.com/jonathanvdc/flame
 An intermediate representation (IR) in static single assignment (SSA) form. This type of IR is favored by state-of-the-art optimizing compilers such as LLVM and GCC. Flame IR is designed from the ground up with the express intent of making it as suitable as possible for a wide range of optimizations and analyses. Flame is a collection of C# libraries for building tools that read, analyze, optimize and write managed languages.
 
 - Tags: intermediate representation language
-- flame-ir is developed on GitHub and has 45 stars
+- flame-ir is developed on GitHub and has 52 stars
 - Early development of flame-ir happened in McGill University
 - flame-ir is written in C#, XML, Markdown, YAML, Make, JSON, Python, Bourne shell

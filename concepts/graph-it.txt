@@ -4,7 +4,7 @@ GraphIt
 GraphIt is an open source programming language created in 2017.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
 
-#733 on PLDB
+#691 on PLDB
 7 Years Old
 
 git clone https://github.com/GraphIt-DSL/graphit
@@ -12,7 +12,7 @@ git clone https://github.com/GraphIt-DSL/graphit
 GraphIt is a new DSL for graph computations that generates fast implementations for algorithms with different performance characteristics running on graphs with different sizes and structures. GraphIt separates what is computed (algorithm) from how it is computed (schedule). Programmers specify the algorithm using an algorithm language, and performance optimizations are specified using a separate scheduling language. The scheduling language enables programmers to easily search through this complicated tradeoff space by composing together a large set of edge traversal and vertex data layout optimizations.
 
 - Tags: programming language
-- GraphIt is developed on GitHub and has 308 stars
+- GraphIt is developed on GitHub and has 366 stars
 - Early development of GraphIt happened in https://github.com/GraphIt-DSL
 - GraphIt is written in C++, Python, Markdown, Lisp, Make, CMake, YAML, CSV
 - graphit-lang.org was registered in 2018

@@ -1,7 +1,8 @@
 Case Insensitive Identifiers
 ============================
 
-s := (A + a + A);
+# Though they may be phased out:
+# https://github.com/nim-lang/RFCs/issues/456
 
 with Gnat.Io; use Gnat.Io;
 procedure Numbers is
@@ -16,8 +17,7 @@ begin
    New_Line;
 end Numbers;
 
-# Though they may be phased out:
-# https://github.com/nim-lang/RFCs/issues/456
+s := (A + a + A);
 
 x = 2.0
 y = x + X
@@ -32,11 +32,11 @@ if &quot;abc&quot;.LeNgTh == 3
 
 ***
 
-Languages *with* Case Insensitive Identifiers include HTML, CSS, SQL, SAS, COBOL, Visual Basic, Pascal, Ada, Nim, Fortran, PostgreSQL, MySQL, SPSS, VHDL, Forth, Visual Basic .NET, Delphi, BASIC, AutoHotkey, Eiffel, Batchfile, Gforth, SAKO, Speedie
+Languages *with* Case Insensitive Identifiers include HTML, CSS, SQL, SAS, COBOL, Visual Basic, Nim, Ada, Pascal, Fortran, PostgreSQL, MySQL, SPSS, VHDL, Forth, Visual Basic .NET, Delphi, BASIC, AutoHotkey, Eiffel, Batchfile, Gforth, SAKO, Speedie
 
 ***
 
-Languages *without* Case Insensitive Identifiers include JavaScript, C, Python, Java, Perl, Ruby, PHP, XML, JSON, Go, TypeScript, R, Swift, Rust, Scala, Lua, Haskell, Kotlin, Clojure, CoffeeScript, Elixir, Erlang, Objective-C, Julia, Lisp, Prolog, Dart, CUDA, Racket, D, Reason, Elm, Scheme, GraphQL, F#, OCaml, Chapel, Smalltalk, Node.js, LaTeX, Arduino Programming Language, Maple, SQLite, Tcl, ActionScript, XQuery, C3, Modula-2, progsbase, C2, Sage, Modula-3, Veryl, Bel
+Languages *without* Case Insensitive Identifiers include JavaScript, C, Python, Java, Perl, Ruby, PHP, XML, JSON, Go, TypeScript, R, Rust, Swift, Scala, Lua, Kotlin, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Objective-C, Prolog, Lisp, Dart, CUDA, Racket, Reason, D, Elm, GraphQL, Scheme, Chapel, F#, OCaml, Smalltalk, Node.js, LaTeX, Arduino Programming Language, Maple, SQLite, Tcl, ActionScript, C3, XQuery, Modula-2, progsbase, C2, Sage, Modula-3, Veryl, Bel
 
 ***
 

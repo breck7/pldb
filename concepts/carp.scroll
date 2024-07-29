@@ -25,14 +25,14 @@ helloWorldCollection carp
  (println "hello world")
 
 githubRepo https://github.com/carp-lang/carp
- stars 4571
- forks 158
- subscribers 101
+ stars 5489
+ forks 173
+ subscribers 110
  created 2016
- updated 2022
+ updated 2024
  firstCommit 2016
  description A statically typed lisp, without a GC, for real-time applications.
- issues 129
+ issues 144
 
 lineCommentToken ;
 printToken println
