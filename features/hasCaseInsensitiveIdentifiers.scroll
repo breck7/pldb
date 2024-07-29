@@ -11,6 +11,9 @@ viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
 mediumColumns 1
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pascal.html">Pascal</a>
+ s := (A + a + A);
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ada.html">Ada</a>
  with Gnat.Io; use Gnat.Io;
  procedure Numbers is
@@ -24,9 +27,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ada.html">A
     Put(Score);
     New_Line;
  end Numbers;
-
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pascal.html">Pascal</a>
- s := (A + a + A);
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nim.html">Nim</a>
  # Though they may be phased out:
@@ -48,7 +48,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Case Insensitive Identifiers include <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/sql.html">SQL</a>, <a href="../concepts/sas.html">SAS</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/visual-basic.html">Visual Basic</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/pascal.html">Pascal</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/postgresql.html">PostgreSQL</a>, <a href="../concepts/mysql.html">MySQL</a>, <a href="../concepts/spss.html">SPSS</a>, <a href="../concepts/vhdl.html">VHDL</a>, <a href="../concepts/forth.html">Forth</a>, <a href="../concepts/visual-basic.net.html">Visual Basic .NET</a>, <a href="../concepts/delphi.html">Delphi</a>, <a href="../concepts/basic.html">BASIC</a>, <a href="../concepts/autohotkey.html">AutoHotkey</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/batch.html">Batchfile</a>, <a href="../concepts/gforth.html">Gforth</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Case Insensitive Identifiers include <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/sql.html">SQL</a>, <a href="../concepts/sas.html">SAS</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/visual-basic.html">Visual Basic</a>, <a href="../concepts/pascal.html">Pascal</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/postgresql.html">PostgreSQL</a>, <a href="../concepts/mysql.html">MySQL</a>, <a href="../concepts/spss.html">SPSS</a>, <a href="../concepts/vhdl.html">VHDL</a>, <a href="../concepts/forth.html">Forth</a>, <a href="../concepts/visual-basic.net.html">Visual Basic .NET</a>, <a href="../concepts/delphi.html">Delphi</a>, <a href="../concepts/basic.html">BASIC</a>, <a href="../concepts/autohotkey.html">AutoHotkey</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/batch.html">Batchfile</a>, <a href="../concepts/gforth.html">Gforth</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 
