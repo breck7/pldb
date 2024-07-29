@@ -861,6 +861,7 @@ image ${image}
       reddit: this.get("subreddit"),
       youtube: this.getPrimary("youtubes"),
       tiktok: this.getPrimary("tiktoks"),
+      festival: this.getPrimary("conference"),
       twitter: this.get("twitter"),
       edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
         new TreeNode(

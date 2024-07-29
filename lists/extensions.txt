@@ -32,8 +32,8 @@ Haskell|_$^../concepts/haskell.html|_$^hs lhs hsc hs-boot|_$^4
 Kotlin|_$^../concepts/kotlin.html|_$^kt kts ktm|_$^3
 Clojure|_$^../concepts/clojure.html|_$^clj cljs cljc edn boot cl2 cljs.hl cljscm cljx hic riemann.config bb cljshl|_$^13
 Elixir|_$^../concepts/elixir.html|_$^ex exs eex|_$^3
-CoffeeScript|_$^../concepts/coffeescript.html|_$^coffee litcoffee _coffee cakefile cjsx iced cake|_$^7
 Objective-C|_$^../concepts/objective-c.html|_$^h m mm C|_$^4
+CoffeeScript|_$^../concepts/coffeescript.html|_$^coffee litcoffee _coffee cakefile cjsx iced cake|_$^7
 SAS|_$^../concepts/sas.html|_$^sas SAS|_$^2
 Julia|_$^../concepts/julia.html|_$^jl|_$^1
 Lisp|_$^../concepts/lisp.html|_$^asd el lisp lsp cl jl|_$^6
@@ -72,15 +72,15 @@ Coq|_$^../concepts/coq.html|_$^v coq|_$^2
 Chapel|_$^../concepts/chapel.html|_$^chpl|_$^1
 LLVM IR|_$^../concepts/llvmir.html|_$^ll|_$^1
 Smalltalk|_$^../concepts/smalltalk.html|_$^st cs|_$^2
-ClojureScript|_$^../concepts/clojurescript.html|_$^cljs|_$^1
 SVG|_$^../concepts/svg.html|_$^SVG svg|_$^2
+ClojureScript|_$^../concepts/clojurescript.html|_$^cljs|_$^1
 HCL|_$^../concepts/hcl.html|_$^hcl nomad tf tfvars workflow|_$^5
 HAML|_$^../concepts/haml.html|_$^haml haml.deface hamldeface|_$^3
 PureScript|_$^../concepts/purescript.html|_$^purs|_$^1
 VHDL|_$^../concepts/vhdl.html|_$^VHD vhd VHDL vhdl vhf vhi vho vhs vht vhw|_$^10
+Liquid|_$^../concepts/liquid.html|_$^liquid|_$^1
 Forth|_$^../concepts/forth.html|_$^4th e4 f83 fb forth fpm fr frt ft fth rx fs f for|_$^14
 Idris|_$^../concepts/idris.html|_$^idr lidr|_$^2
-Liquid|_$^../concepts/liquid.html|_$^liquid|_$^1
 Protocol Buffers|_$^../concepts/protobuf.html|_$^proto|_$^1
 Ini|_$^../concepts/ini.html|_$^buildozer.spec editorconfig ini lektorproject prefs cfg dof pro properties url inf .editorconfig service socket device mount automount swap target path timer slice scope|_$^23
 CMake|_$^../concepts/cmake.html|_$^cmake cmake.in CMakeLists.txt cmakein|_$^4
@@ -104,8 +104,8 @@ odin|_$^../concepts/odin.html|_$^odin|_$^1
 Bazel|_$^../concepts/bazel.html|_$^BUILD|_$^1
 HTTP|_$^../concepts/http.html|_$^http|_$^1
 MediaWiki|_$^../concepts/mediawiki.html|_$^mediawiki wiki|_$^2
-Lean|_$^../concepts/lean.html|_$^hlean lean|_$^2
 sed|_$^../concepts/sed.html|_$^sed [gs]sed|_$^2
+Lean|_$^../concepts/lean.html|_$^hlean lean|_$^2
 ANTLR|_$^../concepts/antlr.html|_$^g g4|_$^2
 Tcl|_$^../concepts/tcl.html|_$^tcl tbc adp tclin tm rvt|_$^6
 IDL|_$^../concepts/idl.html|_$^dlm idl pro|_$^3
@@ -130,8 +130,8 @@ starlark|_$^../concepts/starlark.html|_$^bazel bzl star|_$^3
 Ballerina|_$^../concepts/ballerina.html|_$^bal|_$^1
 BASIC|_$^../concepts/basic.html|_$^bas|_$^1
 FLUX|_$^../concepts/flux.html|_$^fx flux|_$^2
-AutoHotkey|_$^../concepts/autohotkey.html|_$^ahk ahkl|_$^2
 Puppet|_$^../concepts/puppet.html|_$^pp|_$^1
+AutoHotkey|_$^../concepts/autohotkey.html|_$^ahk ahkl|_$^2
 Hy|_$^../concepts/hy.html|_$^hy|_$^1
 Squirrel|_$^../concepts/squirrel.html|_$^nut|_$^1
 PostScript|_$^../concepts/postscript.html|_$^ps eps epsi pfa|_$^4
@@ -195,8 +195,8 @@ Processing|_$^../concepts/processing.html|_$^pde|_$^1
 Dafny|_$^../concepts/dafny.html|_$^dfy|_$^1
 CSON|_$^../concepts/cson.html|_$^cson|_$^1
 SPARQL|_$^../concepts/sparql.html|_$^sparql rq|_$^2
-Agda|_$^../concepts/agda.html|_$^agda lagda|_$^2
 Bourne shell|_$^../concepts/bourne-shell.html|_$^sh|_$^1
+Agda|_$^../concepts/agda.html|_$^agda lagda|_$^2
 mlir|_$^../concepts/mlir.html|_$^mlir|_$^1
 Mojo|_$^../concepts/mojo.html|_$^mojo mojom|_$^2
 Nextflow|_$^../concepts/nextflow.html|_$^nf|_$^1
@@ -322,9 +322,9 @@ NCAR Command Language|_$^../concepts/ncl.html|_$^ncl|_$^1
 Befunge|_$^../concepts/befunge.html|_$^befunge|_$^1
 IcedCoffeeScript|_$^../concepts/icedcoffeescript.html|_$^coffee|_$^1
 NewLisp|_$^../concepts/newlisp.html|_$^nl lisp lsp kif|_$^4
+Object Pascal|_$^../concepts/object-pascal.html|_$^p pp pas|_$^3
 Metal|_$^../concepts/metal.html|_$^metal|_$^1
 G-code|_$^../concepts/g-code.html|_$^g cnc gco gcode mpt mpf nc|_$^7
-Object Pascal|_$^../concepts/object-pascal.html|_$^p pp pas|_$^3
 Org|_$^../concepts/org.html|_$^org|_$^1
 X10|_$^../concepts/x10.html|_$^x10|_$^1
 contracts.coffee|_$^../concepts/contracts.coffee.html|_$^coffee|_$^1
@@ -348,8 +348,8 @@ Csound|_$^../concepts/csound.html|_$^csd sco orc udo|_$^4
 clay|_$^../concepts/clay.html|_$^clay|_$^1
 E|_$^../concepts/e.html|_$^e|_$^1
 P4|_$^../concepts/p4.html|_$^p4|_$^1
-Papyrus|_$^../concepts/papyrus.html|_$^psc|_$^1
 PureBasic|_$^../concepts/purebasic.html|_$^pb pbi|_$^2
+Papyrus|_$^../concepts/papyrus.html|_$^psc|_$^1
 Nix|_$^../concepts/nix.html|_$^nix|_$^1
 Java Properties|_$^../concepts/java-properties.html|_$^properties|_$^1
 Objective C++|_$^../concepts/objective-cpp.html|_$^mm hh|_$^2
@@ -364,8 +364,8 @@ Angelscript|_$^../concepts/angelscript.html|_$^as angelscript|_$^2
 DTD|_$^../concepts/dtd.html|_$^dtd|_$^1
 Stan|_$^../concepts/stan.html|_$^stan|_$^1
 IGOR Pro|_$^../concepts/igor-pro.html|_$^ipf|_$^1
-AsciiDoc|_$^../concepts/asciidoc.html|_$^adoc asciidoc asc|_$^3
 Cobra|_$^../concepts/cobra.html|_$^cobra|_$^1
+AsciiDoc|_$^../concepts/asciidoc.html|_$^adoc asciidoc asc|_$^3
 Easybuild|_$^../concepts/easybuild.html|_$^eb|_$^1
 Limbo|_$^../concepts/limbo.html|_$^b m|_$^2
 Ch|_$^../concepts/chuck.html|_$^ck|_$^1
@@ -399,8 +399,8 @@ Ligo|_$^../concepts/ligo.html|_$^religo|_$^1
 Alloy|_$^../concepts/alloy.html|_$^als|_$^1
 KiCad Legacy Layout|_$^../concepts/kicad.html|_$^sch lib brd kicad_pcb kicad_wks kicad_mod|_$^6
 Volt|_$^../concepts/volt.html|_$^volt|_$^1
-Max|_$^../concepts/max.html|_$^maxpat maxhelp maxproj mxt pat|_$^5
 CIL|_$^../concepts/cilk.html|_$^cil|_$^1
+Max|_$^../concepts/max.html|_$^maxpat maxhelp maxproj mxt pat|_$^5
 Handlebars|_$^../concepts/handlebars.html|_$^handlebars hbs|_$^2
 Pan|_$^../concepts/pan.html|_$^pan tpl|_$^2
 Apex|_$^../concepts/apex.html|_$^cls|_$^1
@@ -459,8 +459,8 @@ Eclipse Command Language|_$^../concepts/eclipse-command-language.html|_$^ecl|_$^
 Bro|_$^../concepts/bro.html|_$^bro|_$^1
 FloScript|_$^../concepts/floscript.html|_$^flo|_$^1
 Jasmin|_$^../concepts/jasmin.html|_$^j|_$^1
-CSV|_$^../concepts/csv.html|_$^csv|_$^1
 Jison Lex|_$^../concepts/jison-lex.html|_$^jisonlex|_$^1
+CSV|_$^../concepts/csv.html|_$^csv|_$^1
 Bluespec|_$^../concepts/bluespec.html|_$^bsv|_$^1
 Carbon|_$^../concepts/carbon.html|_$^carbon|_$^1
 HyPhy|_$^../concepts/hyphy.html|_$^bf|_$^1
@@ -480,12 +480,12 @@ Redcode|_$^../concepts/redcode.html|_$^cw|_$^1
 monte|_$^../concepts/monte.html|_$^mt|_$^1
 PIC|_$^../concepts/pic.html|_$^pic chem|_$^2
 Sibilant|_$^../concepts/sibilant.html|_$^sibilant|_$^1
-vyper|_$^../concepts/vyper.html|_$^vy|_$^1
 Jolie|_$^../concepts/jolie.html|_$^ol iol|_$^2
+vyper|_$^../concepts/vyper.html|_$^vy|_$^1
 Caffeine|_$^../concepts/caffeine.html|_$^coffee|_$^1
 Slice|_$^../concepts/slice.html|_$^ice|_$^1
-Functional PHP Preprocessor|_$^../concepts/fpp.html|_$^fpp|_$^1
 JSONiq|_$^../concepts/jsoniq.html|_$^jq|_$^1
+Functional PHP Preprocessor|_$^../concepts/fpp.html|_$^fpp|_$^1
 Asymptote|_$^../concepts/asymptote.html|_$^asy|_$^1
 FreeMarker|_$^../concepts/freemarker.html|_$^ftl|_$^1
 Blade|_$^../concepts/blade.html|_$^blade blade.php bladephp|_$^3
@@ -495,15 +495,15 @@ LoomScript|_$^../concepts/loomscript.html|_$^ls|_$^1
 COMPONENT PASCAL|_$^../concepts/component-pascal.html|_$^cp cps|_$^2
 Nymph|_$^../concepts/nymph.html|_$^n|_$^1
 tcsh|_$^../concepts/tcsh.html|_$^tcsh csh|_$^2
-GAMS|_$^../concepts/general-algebraic-modeling-system.html|_$^gms|_$^1
 Rouge|_$^../concepts/rouge.html|_$^rg|_$^1
+GAMS|_$^../concepts/general-algebraic-modeling-system.html|_$^gms|_$^1
 MiniD|_$^../concepts/minid.html|_$^minid|_$^1
 Sieve mail filtering language|_$^../concepts/sieve.html|_$^sieve siv|_$^2
 BBC BASIC|_$^../concepts/bbc-basic.html|_$^bbc|_$^1
 WebIDL|_$^../concepts/web-idl.html|_$^webidl|_$^1
 ROFF|_$^../concepts/roff.html|_$^roff 1 1in 1m 1x 2 3 3in 3m 3p 3pm 3qt 3x 4 5 6 7 8 9 l man mdoc me ms n nr rno tmac|_$^28
-STON|_$^../concepts/ston.html|_$^ston|_$^1
 Grace|_$^../concepts/grace.html|_$^grace|_$^1
+STON|_$^../concepts/ston.html|_$^ston|_$^1
 Qore|_$^../concepts/qore.html|_$^q qm qtest|_$^3
 Pep8|_$^../concepts/pep8.html|_$^pep|_$^1
 Ezhil|_$^../concepts/ezhil.html|_$^n|_$^1
@@ -597,8 +597,8 @@ desktop|_$^../concepts/desktop.html|_$^desktop desktopin service|_$^3
 Literate Haskell|_$^../concepts/literate-haskell.html|_$^lhs|_$^1
 OpenType Feature File|_$^../concepts/opentype-feature-file.html|_$^fea|_$^1
 RUNOFF|_$^../concepts/runoff.html|_$^rnh rno|_$^2
-Simple Actor Language System and Architecture|_$^../concepts/salsa.html|_$^salsa|_$^1
 Rescript|_$^../concepts/rescript.html|_$^res resi|_$^2
+Simple Actor Language System and Architecture|_$^../concepts/salsa.html|_$^salsa|_$^1
 Umple|_$^../concepts/umple.html|_$^ump|_$^1
 SQLPL|_$^../concepts/sqlpl.html|_$^sql db2|_$^2
 Easytrieve|_$^../concepts/easytrieve.html|_$^ezt mac|_$^2
@@ -614,8 +614,8 @@ Darcs Advanced Revision Control System|_$^../concepts/darcs.html|_$^darcspatch d
 UCG|_$^../concepts/ucg.html|_$^ucg|_$^1
 Kaffeine|_$^../concepts/kaffeine.html|_$^k|_$^1
 DNS Zone|_$^../concepts/zone.html|_$^zone arpa|_$^2
-Miva|_$^../concepts/miva.html|_$^mv mvc mvt|_$^3
 Pawn|_$^../concepts/pawn-scripting-language.html|_$^pwn inc sma p|_$^4
+Miva|_$^../concepts/miva.html|_$^mv mvc mvt|_$^3
 ObjDump|_$^../concepts/objdump.html|_$^objdump|_$^1
 Crap|_$^../concepts/crap.html|_$^crap c hh so|_$^4
 Boron|_$^../concepts/boron.html|_$^b sb|_$^2
