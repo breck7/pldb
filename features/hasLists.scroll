@@ -32,6 +32,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html
 codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/boron.html">Boron</a>
  my-list: [1 two 3.0 &quot;four&quot;]
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
+ (let x (arr (vec 3 float)))
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lil-pl.html">Lil</a>
  emptyList = ()
 
@@ -50,9 +53,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bel.html">B
  ; can be written as
  (a b c)
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
- (let x (arr (vec 3 float)))
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
  null.list         // A null list value
  []                // An empty list value
@@ -67,7 +67,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/balgol.html
 
 ***
 
-* Languages *with* Lists include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/janet.html">Janet</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/lil-pl.html">Lil</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/uxf.html">Uniform eXchange Format</a>, <a href="../concepts/fp3.html">fp</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/bel.html">Bel</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/boron.html">Boron</a>, <a href="../concepts/ion.html">Ion</a>, <a href="../concepts/hecl.html">hecl</a>, <a href="../concepts/balgol.html">BALGOL</a>
+* Languages *with* Lists include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/janet.html">Janet</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/lil-pl.html">Lil</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/uxf.html">Uniform eXchange Format</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/fp3.html">fp</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/bel.html">Bel</a>, <a href="../concepts/boron.html">Boron</a>, <a href="../concepts/ion.html">Ion</a>, <a href="../concepts/hecl.html">hecl</a>, <a href="../concepts/balgol.html">BALGOL</a>
 
 ***
 

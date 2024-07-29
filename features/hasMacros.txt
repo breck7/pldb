@@ -55,6 +55,9 @@ defmodule Example do
   end
 end
 
+-define(Const, Replacement).
+-define(Func(Var1,...,VarN), Replacement).
+
 # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
 macro show_value(variable)
     quote
@@ -72,19 +75,16 @@ parent_child(trevor, simon).
 ?- child_parent(Child, Parent).
  Child = simon, Parent = trevor.
 
--define(Const, Replacement).
--define(Func(Var1,...,VarN), Replacement).
-
-# https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
-import macros
-dumpTree:
- result = 10
-
 ; https://docs.racket-lang.org/guide/macros.html
 (define-syntax-rule (swap x y)
 (let ([tmp x])
   (set! x y)
   (set! y tmp)))
+
+# https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+import macros
+dumpTree:
+ result = 10
 
 (define-syntax backwards
  (syntax-rules ()
@@ -128,6 +128,12 @@ define macro table
   { ?key:expression =&gt; ?value:expression, ... }
     =&gt; { ht[?key] := ?value; ... }
 end macro table
+
+(@define MY_CONSTANT 5)
+(@if MY_CONSTANT 5
+    (print &quot;yes, it&#39;s&quot;)
+    (print @MY_CONSTANT)
+)
 
 #define CYCLES 20
 
@@ -209,12 +215,6 @@ endmacro;
 (mac nilwith (x)
   (list &#39;cons nil x))
 
-(@define MY_CONSTANT 5)
-(@if MY_CONSTANT 5
-    (print &quot;yes, it&#39;s&quot;)
-    (print @MY_CONSTANT)
-)
-
 - defmacro:
   name: foo
   args: [who]
@@ -225,7 +225,7 @@ endmacro;
 
 ***
 
-Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Julia, Prolog, Erlang, Nim, Racket, Scheme, Factor, C3, Slope, Nemerle, Dylan, Pike, groff, Arc, High Level Assembly, Gerbil Scheme, Speedie, Bel, Wax, Bio, YAMP, honu
+Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Erlang, Julia, Prolog, Racket, Nim, Scheme, Factor, C3, Slope, Nemerle, Dylan, Wax, Pike, groff, Arc, High Level Assembly, Gerbil Scheme, Bio, Speedie, Bel, YAMP, honu
 
 ***
 

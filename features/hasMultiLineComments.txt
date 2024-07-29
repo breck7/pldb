@@ -24,13 +24,13 @@ A comment.
 &lt;# A comment
 #&gt;
 
---[[
-A comment.
---]]
-
 %{
 A comment.
 %}
+
+--[[
+A comment.
+--]]
 
 (comment A comment
 )
@@ -96,13 +96,13 @@ end of the block.
 &#39;&#39;&#39; A comment
 &#39;&#39;&#39;
 
-#!/usr/bin/poke -L
-!#
-
 /*
 multiline
 comments
 */
+
+#!/usr/bin/poke -L
+!#
 
 ###
 A comment
@@ -110,11 +110,11 @@ A comment
 
 ***
 
-Languages *with* MultiLine Comments include JavaScript, C, Python, Java, HTML, CSS, Perl, Ruby, PHP, XML, Go, TypeScript, SQL, C#, PowerShell, Rust, Swift, Scala, Lua, MATLAB, Haskell, Kotlin, Clojure, Objective-C, CoffeeScript, SAS, Julia, Prolog, Dart, Mathematica, CUDA, Pascal, Solidity, Nim, PostgreSQL, D, Reason, Elm, MySQL, Scheme, WebAssembly, Haxe, Groovy, F#, OCaml, Coq, Chapel, Smalltalk, SVG, HCL, PureScript, Protocol Buffers, JSON5, Yacc, OpenCL, ANTLR, Delphi, Stata, ActionScript, Verilog, PostCSS, Pony, Hy, PostScript, Less, PEG.js, DOT, Lex, Zephir, Jsonnet, Frege, Pig Latin, C3, GNU Octave, QML, Opa, Bicep, Processing, Agda, MIPS architecture, Nextflow, Jison, PL/I, Wolfram Language, Hack, AMPL, POV-Ray SDL, Hjson, Ceylon, Applescript, SystemVerilog, DTrace, Modula-2, Rexx, progsbase, Oberon, ECL, HLSL, Cryptol, GLSL, JAI, AutoIt, Twig, Transact-SQL, eC, Ron, Bison, Boo, AspectJ, Scroll, Modula-3, SCSS, ooc, TLA, Flow9, Gosu, xBase, Maxima, EBNF, Closure Templates, B, Shen, ATS, Veryl, LiveScript, Xtend, Io, JFlex, Isabelle, Fantom, groff, Object Pascal, X10, SourcePawn, PL/pgSQL, Lasso, BlitzMax, LilyPond, Whiley, Csound, clay, P4, Nix, Objective C++, UrWeb, JSON with Comments, Angelscript, Argdown, Monkey, basic calculator, OpenEdge ABL, XSLT, Classroom Object Oriented Language, Ligo, Alloy, Apex, Mask, Croc, DAX, Cypher Query Language, muPad, PL/M, Mako, Linden Scripting Language, Fortress, PARI/GP, DM, HuJSON, NetLinx, Jule, Eclipse Command Language, Bluespec, Game Maker Language, Sophia, dedukti, Cycript, Slice, LoomScript, COMPONENT PASCAL, MiniD, Sieve mail filtering language, WebIDL, CartoCSS, XS, RenderScript, Type Language, Edje Data Collection, Orc, CLIST, kai, HAGGIS, JS++, ARexx, GNU Poke, Speedie, Augeas, Plus, winxed, Simple Actor Language System and Architecture, Aardvark, TAL, Pawn, Crap, Amazon Redshift, Boron, Handel-C, PowerQuery M, Urbiscript, blockml, Ion, omega, Arden syntax, ProbeVue, AmbientTalk, JSL, Boogie, Spice, boa, SARL, FML, Fibonacci, Soy, bioscript, Manchester syntax, Smithy
+Languages *with* MultiLine Comments include JavaScript, C, Python, Java, HTML, CSS, Perl, Ruby, PHP, XML, Go, TypeScript, SQL, C#, PowerShell, Swift, Rust, Scala, MATLAB, Lua, Haskell, Kotlin, Clojure, CoffeeScript, Objective-C, SAS, Julia, Prolog, Mathematica, Dart, CUDA, Pascal, Solidity, Nim, PostgreSQL, D, MySQL, Reason, Elm, Scheme, WebAssembly, Haxe, Groovy, F#, OCaml, Coq, Chapel, Smalltalk, HCL, PureScript, SVG, Protocol Buffers, JSON5, Yacc, OpenCL, ANTLR, Delphi, Stata, ActionScript, PostCSS, Verilog, Pony, Hy, PostScript, Less, PEG.js, DOT, Zephir, Lex, Jsonnet, Frege, Pig Latin, GNU Octave, C3, Opa, QML, Bicep, Processing, Agda, MIPS architecture, Nextflow, Jison, PL/I, Wolfram Language, Hack, Hjson, POV-Ray SDL, AMPL, Ceylon, Applescript, SystemVerilog, DTrace, Modula-2, Rexx, progsbase, Oberon, ECL, Cryptol, HLSL, GLSL, JAI, AutoIt, Twig, Transact-SQL, eC, Ron, Bison, Boo, AspectJ, Scroll, Modula-3, ooc, TLA, SCSS, Flow9, Gosu, Maxima, EBNF, Closure Templates, xBase, B, Shen, ATS, Veryl, LiveScript, Io, Xtend, JFlex, Isabelle, Fantom, groff, Object Pascal, SourcePawn, X10, PL/pgSQL, Lasso, BlitzMax, LilyPond, Csound, Whiley, clay, P4, Nix, Objective C++, UrWeb, JSON with Comments, Angelscript, Argdown, Monkey, basic calculator, OpenEdge ABL, XSLT, Classroom Object Oriented Language, Ligo, Alloy, Apex, Mask, DAX, Croc, Cypher Query Language, muPad, PL/M, Mako, Linden Scripting Language, Fortress, PARI/GP, DM, HuJSON, NetLinx, Jule, Eclipse Command Language, Bluespec, Game Maker Language, Sophia, dedukti, Cycript, Slice, LoomScript, COMPONENT PASCAL, Sieve mail filtering language, MiniD, WebIDL, CartoCSS, XS, RenderScript, Type Language, Edje Data Collection, Orc, CLIST, kai, HAGGIS, JS++, ARexx, Speedie, GNU Poke, Augeas, Plus, winxed, Simple Actor Language System and Architecture, Aardvark, TAL, Pawn, Boron, Crap, Amazon Redshift, Handel-C, PowerQuery M, blockml, Urbiscript, Ion, omega, Arden syntax, ProbeVue, AmbientTalk, JSL, Boogie, Spice, boa, SARL, FML, Fibonacci, Soy, bioscript, Manchester syntax, Smithy
 
 ***
 
-Languages *without* MultiLine Comments include JSON, R, Bash, Elixir, Erlang, COBOL, Visual Basic, Ada, Crystal, Fortran, Tex, VHDL, LaTeX, Tcl, Eiffel, Janet, Nginx, Emacs Lisp, SAKO, GraphQL Schema Definition Language
+Languages *without* MultiLine Comments include JSON, R, Bash, Elixir, Erlang, COBOL, Visual Basic, Ada, Fortran, Crystal, Tex, VHDL, LaTeX, Tcl, Eiffel, Janet, Nginx, Emacs Lisp, SAKO, GraphQL Schema Definition Language
 
 ***
 

@@ -41,14 +41,14 @@ if true
 else
   p B.
 
-EITHER IF A &gt; B$ FWD = 1$ OTHERWISE$ FWD = 0$
-
 - if %products.Count% &gt; 0 then
  - go through %products% call !ProcessProduct
 
+EITHER IF A &gt; B$ FWD = 1$ OTHERWISE$ FWD = 0$
+
 ***
 
-Languages *with* Conditionals include JavaScript, C, Python, Java, Perl, Ruby, PHP, Go, C#, R, Bash, PowerShell, Rust, Swift, Scala, Lua, Haskell, Kotlin, Elixir, Objective-C, CoffeeScript, Julia, Erlang, Dart, Pascal, Ada, Solidity, Crystal, Reason, Scheme, Groovy, Pug, F#, OCaml, Chapel, HCL, VHDL, F*, ABAP, Verilog, Janet, C3, Koka, Opa, Bicep, SystemVerilog, progsbase, C2, Slope, AutoIt, Twig, Clean, Felix, Dylan, Flow9, Maxima, ATS, Veryl, X10, Angelscript, Ligo, Apex, Jule, HOPE, Sophia, JS++, fp, Speedie, Aardvark, Slab, PowerQuery M, Q#, nimrod, BALGOL, plang
+Languages *with* Conditionals include JavaScript, C, Python, Java, Perl, Ruby, PHP, Go, C#, R, PowerShell, Bash, Swift, Rust, Scala, Lua, Haskell, Kotlin, CoffeeScript, Elixir, Erlang, Objective-C, Julia, Dart, Pascal, Ada, Solidity, Crystal, Reason, Scheme, Groovy, Pug, F#, OCaml, Chapel, HCL, VHDL, F*, ABAP, Verilog, Janet, Koka, C3, Opa, Bicep, SystemVerilog, progsbase, C2, Slope, AutoIt, Twig, Clean, Felix, Dylan, Flow9, Maxima, ATS, Veryl, X10, Angelscript, Ligo, Apex, Jule, HOPE, Sophia, JS++, Speedie, fp, Aardvark, Slab, PowerQuery M, Q#, plang, nimrod, BALGOL
 
 ***
 

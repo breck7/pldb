@@ -54,7 +54,9 @@ class ScrollSetCLI {
   }
 
   formatAndSave(file, tree = this.getTree(file)) {
-    return new ScrollFile(tree.toString(), this.makeFilePath(file.id), scrollFs).formatAndSave()
+    const formatted = new ScrollFile(tree.toString(), this.makeFilePath(file.id), scrollFs).formatted
+    // force a write
+    return scrollFs.write(this.makeFilePath(file.id), formatted)
   }
 
   makeNameSearchIndex(files = this.concepts.slice(0).reverse()) {

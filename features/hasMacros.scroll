@@ -70,6 +70,10 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html
    end
  end
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/erlang.html">Erlang</a>
+ -define(Const, Replacement).
+ -define(Func(Var1,...,VarN), Replacement).
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/julia.html">Julia</a>
  # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
  macro show_value(variable)
@@ -89,22 +93,18 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/prolog.html
  ?- child_parent(Child, Parent).
   Child = simon, Parent = trevor.
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/erlang.html">Erlang</a>
- -define(Const, Replacement).
- -define(Func(Var1,...,VarN), Replacement).
-
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nim.html">Nim</a>
- # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
- import macros
- dumpTree:
-  result = 10
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a>
  ; https://docs.racket-lang.org/guide/macros.html
  (define-syntax-rule (swap x y)
  (let ([tmp x])
    (set! x y)
    (set! y tmp)))
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nim.html">Nim</a>
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+ import macros
+ dumpTree:
+  result = 10
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scheme.html">Scheme</a>
  (define-syntax backwards
@@ -153,6 +153,13 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/dylan.html"
      =&gt; { ht[?key] := ?value; ... }
  end macro table
  
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
+ (@define MY_CONSTANT 5)
+ (@if MY_CONSTANT 5
+     (print &quot;yes, it&#39;s&quot;)
+     (print @MY_CONSTANT)
+ )
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pike.html">Pike</a>
  #define CYCLES 20
@@ -239,13 +246,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bel.html">B
  (mac nilwith (x)
    (list &#39;cons nil x))
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
- (@define MY_CONSTANT 5)
- (@if MY_CONSTANT 5
-     (print &quot;yes, it&#39;s&quot;)
-     (print @MY_CONSTANT)
- )
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/yamp.html">YAMP</a>
  - defmacro:
    name: foo
@@ -257,7 +257,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/yamp.html">
 
 ***
 
-* Languages *with* Macros include <a href="../concepts/c.html">C</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/scheme.html">Scheme</a>, <a href="../concepts/factor.html">Factor</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/nemerle.html">Nemerle</a>, <a href="../concepts/dylan.html">Dylan</a>, <a href="../concepts/pike.html">Pike</a>, <a href="../concepts/groff.html">groff</a>, <a href="../concepts/arc.html">Arc</a>, <a href="../concepts/hla.html">High Level Assembly</a>, <a href="../concepts/gerbil.html">Gerbil Scheme</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/bel.html">Bel</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/bio.html">Bio</a>, <a href="../concepts/yamp.html">YAMP</a>, <a href="../concepts/honu.html">honu</a>
+* Languages *with* Macros include <a href="../concepts/c.html">C</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/scheme.html">Scheme</a>, <a href="../concepts/factor.html">Factor</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/nemerle.html">Nemerle</a>, <a href="../concepts/dylan.html">Dylan</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/pike.html">Pike</a>, <a href="../concepts/groff.html">groff</a>, <a href="../concepts/arc.html">Arc</a>, <a href="../concepts/hla.html">High Level Assembly</a>, <a href="../concepts/gerbil.html">Gerbil Scheme</a>, <a href="../concepts/bio.html">Bio</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/bel.html">Bel</a>, <a href="../concepts/yamp.html">YAMP</a>, <a href="../concepts/honu.html">honu</a>
 
 ***
 

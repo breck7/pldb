@@ -59,18 +59,18 @@ source(&quot;filename.r&quot;)
 
 source ./bash.sh
 
+import UIKit
+import UIKit.UITableViewController
+let tvc = UITableViewController()
+let vc = UIViewController()
+let label = UILabel()
+
 use ::std::fs;  // Imports from the `std` crate, not the module below.
 use self::std::fs as self_fs;  // Imports the module below.
 mod my;
 use self::foo::Zoo as _;
 #[path = &quot;foo.rs&quot;]
 mod c;
-
-import UIKit
-import UIKit.UITableViewController
-let tvc = UITableViewController()
-let vc = UIViewController()
-let label = UILabel()
 
 import pkg.cls1
 import pkg.pkfcn
@@ -111,6 +111,12 @@ import Foo
 # Invokes the custom code defined in Foo as an extension point
 use Foo
 
+-include(&quot;my_records.hrl&quot;).
+-include(&quot;incdir/my_records.hrl&quot;).
+-include(&quot;/home/user/proj/my_records.hrl&quot;).
+-include(&quot;$PROJ_ROOT/my_records.hrl&quot;).
+-include_lib(&quot;kernel/include/file.hrl&quot;).
+
 // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
 #import &lt;Foundation/Foundation.h&gt;
 #include &lt;asl.h&gt;
@@ -127,12 +133,6 @@ module Foo
 include(&quot;file1.jl&quot;)
 include(&quot;file2.jl&quot;)
 end
-
--include(&quot;my_records.hrl&quot;).
--include(&quot;incdir/my_records.hrl&quot;).
--include(&quot;/home/user/proj/my_records.hrl&quot;).
--include(&quot;$PROJ_ROOT/my_records.hrl&quot;).
--include_lib(&quot;kernel/include/file.hrl&quot;).
 
 import &#39;file-system.dart&#39;;
 import &#39;dart:math&#39; as math;
@@ -205,7 +205,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Haskell, Kotlin, Clojure, Elixir, Objective-C, Julia, Erlang, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, nomnoml, Scroll, Flow9, ArkScript, Dale, Veryl, Xtext, X10, Cyber, bog, Jule, Cwerg, SAKO, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Swift, Rust, MATLAB, Haskell, Kotlin, Clojure, Elixir, Erlang, Objective-C, Julia, Dart, Racket, Crystal, Pug, F#, Node.js, Ballerina, C3, progsbase, Slope, nomnoml, Scroll, Flow9, ArkScript, Dale, Veryl, Xtext, X10, Cyber, bog, Jule, Cwerg, SAKO, Speedie, Aardvark
 
 ***
 

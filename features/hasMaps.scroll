@@ -23,17 +23,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">L
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
  %{key: &quot;value&quot;}
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
- let my_map: [int:str] = {
-     0: &quot;Key 0&quot;,
-     1: &quot;Key 1&quot;,
-     2: &quot;Key 2&quot;,
- }
-
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
- || x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
- printline x[&quot;b&quot;] // Bird
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
  (let m (map str int) (alloc (map str int)))
  
@@ -50,9 +39,20 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">W
  ; for numbers, 0; for compound types, null.
  
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let my_map: [int:str] = {
+     0: &quot;Key 0&quot;,
+     1: &quot;Key 1&quot;,
+     2: &quot;Key 2&quot;,
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
+ printline x[&quot;b&quot;] // Bird
+
 ***
 
-* Languages *with* Maps include <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/wax.html">Wax</a>
+* Languages *with* Maps include <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

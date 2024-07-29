@@ -10,15 +10,6 @@ myMap = {
 
 %{key: &quot;value&quot;}
 
-let my_map: [int:str] = {
-    0: &quot;Key 0&quot;,
-    1: &quot;Key 1&quot;,
-    2: &quot;Key 2&quot;,
-}
-
-|| x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
-printline x[&quot;b&quot;] // Bird
-
 (let m (map str int) (alloc (map str int)))
 
 (set m &quot;xyz&quot; 123)
@@ -33,9 +24,18 @@ printline x[&quot;b&quot;] // Bird
 ;^ if a value is not there, the &quot;zero&quot; value of the element type is returned
 ; for numbers, 0; for compound types, null.
 
+let my_map: [int:str] = {
+    0: &quot;Key 0&quot;,
+    1: &quot;Key 1&quot;,
+    2: &quot;Key 2&quot;,
+}
+
+|| x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
+printline x[&quot;b&quot;] // Bird
+
 ***
 
-Languages *with* Maps include JSON, Lua, Elixir, EDN, Jule, Speedie, Wax
+Languages *with* Maps include JSON, Lua, Elixir, EDN, Wax, Jule, Speedie
 
 ***
 

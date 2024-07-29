@@ -60,7 +60,7 @@ class PLDBCli extends ScrollSetCLI {
     // Note: this currently assumes you have crawlers project installed separateely.
     const { GitHubImporter } = require("../crawlers/github.com/GitHub.js")
     const importer = new GitHubImporter(this)
-    await importer.fetchAllRepoDataCommand()
+    //await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
   }
 

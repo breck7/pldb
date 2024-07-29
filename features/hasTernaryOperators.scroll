@@ -31,16 +31,16 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/kotlin.html
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  int foo = x ? 1 : 0;
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
+ (set y (? (= x 0) 1 2))
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  while
   printline (1,0)(random[]&gt;0.5)
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
- (set y (? (= x 0) 1 2))
-
 ***
 
-* Languages *with* Ternary operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/wax.html">Wax</a>
+* Languages *with* Ternary operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

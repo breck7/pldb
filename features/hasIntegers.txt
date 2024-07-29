@@ -23,13 +23,13 @@ PLDB=80766866
 
 ; -?\d+
 
-# \d(_?\d)*
-
 # [0-9]+
 
-% \d\d?\&#39;[a-zA-Z0-9]+
+# \d(_?\d)*
 
 % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
+
+% \d\d?\&#39;[a-zA-Z0-9]+
 
 -- [0-9_]+
 
@@ -37,11 +37,11 @@ PLDB=80766866
 
 // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
 
+-- [0-9]+(?=[^0-9a-z$_\u0080-\uffff])
+
 // \d[\d_]*
 
 -- _?\d+
-
--- [0-9]+(?=[^0-9a-z$_\u0080-\uffff])
 
 // \d[\d_]*[uU]?[yslLnQRZINGmM]?
 
@@ -69,9 +69,9 @@ NB. _?\d+
 
 -- [0-9]+L?
 
-int x = 314159;
-
 % \d+
+
+int x = 314159;
 
 # [+\-]?\d+
 
@@ -93,6 +93,8 @@ int x = 314159;
 
 // (0|[1-9][0-9_]*)([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
 
+(let x int 42)
+
 # [0-9]+(~[0-9a-z]+)?(?:[a-zA-Z_]+)?
 
 # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
@@ -113,8 +115,6 @@ count = 0
 CALKOWITE: I
 I = 80766866
 
-(let x int 42)
-
  // The same as c
 
 // http://amzn.github.io/ion-docs/docs/spec.html
@@ -131,7 +131,7 @@ null.int   // A null int value
 
 ***
 
-Languages *with* Integers include JavaScript, C, Python, Java, Perl, Ruby, JSON, Go, SQL, C#, Bash, Swift, Lua, Haskell, Clojure, Elixir, CoffeeScript, Julia, Prolog, Erlang, Mathematica, Ada, TOML, Zig, D, Reason, Elm, MySQL, WebAssembly, GraphQL, awk, F#, OCaml, Coq, Chapel, ClojureScript, VHDL, Forth, Idris, Protocol Buffers, J, sed, Lean, IDL, F*, ABAP, ActionScript, Verilog, Pony, Fennel, Puppet, AutoHotkey, Hy, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Janet, Pig Latin, C3, Koka, GNU Octave, QML, Opa, Pandas, Thrift, SPARQL, Agda, Futhark, AMPL, POV-Ray SDL, Ceylon, Applescript, QBasic, SystemVerilog, NumPy, Scilab, HLSL, Cryptol, GLSL, AutoIt, K, Turtle, Golo, YANG, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, Meson, Nit, Ioke, Gosu, Maxima, Modelica, Shen, Fancy, LiveScript, Xtend, Io, SourcePawn, PL/pgSQL, Icon, BlitzMax, Whiley, clay, Nix, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, Ragel, Alloy, Croc, JSLT, Kal, Linden Scripting Language, Cyber, Jule, FloScript, HOPE, Unicon, Redcode, monte, MiniD, SAKO, Uniform eXchange Format, JS++, Flatline, Speedie, parasail, Aardvark, Easytrieve, Wax, Pawn, Crap, Urbiscript, Ion, hecl, nimrod, AmbientTalk, Boogie, PromQL, Spice, boa, RQL, SARL, BALGOL, bag-format, CBOR data definition language, Procfile, Friendly Enough Expression Language, RAISE Specification Language, juttle
+Languages *with* Integers include JavaScript, C, Python, Java, Perl, Ruby, JSON, Go, SQL, C#, Bash, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Prolog, Mathematica, Ada, TOML, Zig, D, MySQL, Reason, Elm, WebAssembly, GraphQL, awk, F#, OCaml, Coq, Chapel, ClojureScript, VHDL, Forth, Idris, Protocol Buffers, J, Lean, sed, IDL, F*, ABAP, ActionScript, Verilog, Pony, Pandas, Fennel, Puppet, Hy, AutoHotkey, PostScript, Cython, XQuery, Eiffel, EDN, Zephir, VBScript, Janet, Pig Latin, Koka, GNU Octave, C3, Opa, QML, Thrift, SPARQL, Agda, Futhark, POV-Ray SDL, AMPL, Ceylon, Applescript, QBasic, SystemVerilog, NumPy, Scilab, Cryptol, HLSL, GLSL, AutoIt, Turtle, K, YANG, Golo, Transact-SQL, Boo, Felix, AspectJ, SuperCollider, chaiscript, Wax, Meson, Nit, Ioke, Gosu, Maxima, Modelica, Shen, Fancy, LiveScript, Io, Xtend, SourcePawn, PL/pgSQL, Icon, BlitzMax, Whiley, clay, Nix, Stan, Monkey, GDScript, OpenEdge ABL, Earl Grey, BlitzBasic, Ragel, Alloy, Croc, JSLT, Kal, Cyber, Linden Scripting Language, Jule, FloScript, HOPE, Redcode, Unicon, monte, MiniD, SAKO, Uniform eXchange Format, JS++, Flatline, Speedie, parasail, Aardvark, Easytrieve, Pawn, Crap, Urbiscript, Ion, hecl, nimrod, AmbientTalk, Boogie, PromQL, Spice, boa, RQL, SARL, BALGOL, bag-format, CBOR data definition language, Procfile, Friendly Enough Expression Language, RAISE Specification Language, juttle
 
 ***
 

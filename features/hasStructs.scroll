@@ -27,6 +27,12 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3
     String z;
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
+ (struct point
+     (let x float)
+     (let y float)
+ )
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  struct Employee {
      first_name: str
@@ -39,12 +45,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
   |int| A
   |byte| B
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
- (struct point
-     (let x float)
-     (let y float)
- )
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
  { first : &quot;Tom&quot; , last: &quot;Riddle&quot; }  // Structure with two fields
  {&quot;first&quot;:&quot;Tom&quot;,&quot;last&quot;:&quot;Riddle&quot;}     // The same value with confusing style
@@ -52,7 +52,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">I
 
 ***
 
-* Languages *with* Structs include <a href="../concepts/c.html">C</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/ion.html">Ion</a>
+* Languages *with* Structs include <a href="../concepts/c.html">C</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/ion.html">Ion</a>
 
 ***
 

@@ -15,6 +15,11 @@ struct Test
    String z;
 }
 
+(struct point
+    (let x float)
+    (let y float)
+)
+
 struct Employee {
     first_name: str
     last_name: str
@@ -25,18 +30,13 @@ struct Fuel
  |int| A
  |byte| B
 
-(struct point
-    (let x float)
-    (let y float)
-)
-
 { first : &quot;Tom&quot; , last: &quot;Riddle&quot; }  // Structure with two fields
 {&quot;first&quot;:&quot;Tom&quot;,&quot;last&quot;:&quot;Riddle&quot;}     // The same value with confusing style
 {center:{x:1.0, y:12.5}, radius:3}  // Nested struct
 
 ***
 
-Languages *with* Structs include C, C3, progsbase, C2, Jule, Speedie, Wax, Ion
+Languages *with* Structs include C, C3, progsbase, C2, Wax, Jule, Speedie, Ion
 
 ***
 

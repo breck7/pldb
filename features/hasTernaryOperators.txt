@@ -15,14 +15,14 @@ println(if (true) true else false)
 
 int foo = x ? 1 : 0;
 
+(set y (? (= x 0) 1 2))
+
 while
  printline (1,0)(random[]&gt;0.5)
 
-(set y (? (= x 0) 1 2))
-
 ***
 
-Languages *with* Ternary operators include JavaScript, C, Python, PHP, Kotlin, C3, Speedie, Wax
+Languages *with* Ternary operators include JavaScript, C, Python, PHP, Kotlin, C3, Wax, Speedie
 
 ***
 

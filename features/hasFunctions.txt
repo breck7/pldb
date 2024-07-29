@@ -44,13 +44,13 @@ function Example (|string| data)
 
 (fn (x) (+ x 1))
 
-FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
-
 - call !FooBar %name%
+
+FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
 
 ***
 
-Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, Bash, PowerShell, Scala, Lua, Kotlin, Julia, Erlang, Ada, Solidity, Crystal, Reason, Groovy, Pug, F#, OCaml, VHDL, F*, ABAP, Verilog, Janet, C3, Koka, Opa, SystemVerilog, progsbase, ATS, X10, IGOR Pro, Ligo, Cyber, Jule, Cwerg, Eclipse Command Language, Sophia, Speedie, Bel, Q#, BALGOL, plang
+Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, PowerShell, Bash, Scala, Lua, Kotlin, Erlang, Julia, Ada, Solidity, Crystal, Reason, Groovy, Pug, F#, OCaml, VHDL, F*, ABAP, Verilog, Janet, Koka, C3, Opa, SystemVerilog, progsbase, ATS, X10, IGOR Pro, Ligo, Cyber, Jule, Cwerg, Eclipse Command Language, Sophia, Speedie, Bel, Q#, plang, BALGOL
 
 ***
 

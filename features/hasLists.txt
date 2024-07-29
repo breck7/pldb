@@ -15,6 +15,8 @@ my_list = [1, 2, 3, 4, 5]
 
 my-list: [1 two 3.0 &quot;four&quot;]
 
+(let x (arr (vec 3 float)))
+
 emptyList = ()
 
 TABLICA(4): B
@@ -29,8 +31,6 @@ TABLICA(4): B
 ; can be written as
 (a b c)
 
-(let x (arr (vec 3 float)))
-
 null.list         // A null list value
 []                // An empty list value
 [1, 2, 3]         // List of three ints
@@ -43,7 +43,7 @@ ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
 
 ***
 
-Languages *with* Lists include JavaScript, Python, JSON, Go, Lua, Elixir, GraphQL, EDN, Janet, REBOL, Lil, SAKO, Uniform eXchange Format, fp, Speedie, Aardvark, Bel, Wax, Boron, Ion, hecl, BALGOL
+Languages *with* Lists include JavaScript, Python, JSON, Go, Lua, Elixir, GraphQL, EDN, Janet, REBOL, Wax, Lil, SAKO, Uniform eXchange Format, Speedie, fp, Aardvark, Bel, Boron, Ion, hecl, BALGOL
 
 ***
 
