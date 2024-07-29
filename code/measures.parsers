@@ -345,10 +345,14 @@ youtubesParser
  description What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?
  float sortIndex 3
 
-// discord
 discordParser
  extends abstractChatUrlMeasureParser
  description What is a URL to an official (or popular unofficial) Discord for this language?
+ float sortIndex 3
+
+mastodonParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Mastodon for this language?
  float sortIndex 3
 
 // discourse
