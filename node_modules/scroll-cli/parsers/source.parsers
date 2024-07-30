@@ -10,3 +10,31 @@ printSourceParser
    const files = file.getFilesWithTagsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
    return `${files.map(file => file.filePath + "\n " + file.originalScrollCode.replace(/\n/g, "\n ") ).join("\n")}`
   }
+printOriginalSourceParser
+ // useful for debugging
+ description Print source before imports and variable expansion.
+ extends abstractAftertextParser
+ cruxFromId
+ example
+  printOriginalSource
+ javascript
+  compile() {
+   return `<code class="scrollCodeBlock">${this.compileTxt().replace(/\</g, "&lt;")}</code>`
+  }
+  compileTxt() {
+   return this.root.file.originalScrollCode 
+  }
+printExpandedSourceParser
+ // useful for debugging
+ description Print source after imports and variable expansion.
+ extends abstractAftertextParser
+ cruxFromId
+ example
+  printExpandedSource
+ javascript
+  compile() {
+   return `<code class="scrollCodeBlock">${this.compileTxt().replace(/\</g, "&lt;")}</code>`
+  }
+  compileTxt() {
+   return this.root.file.afterVariablePass 
+  }

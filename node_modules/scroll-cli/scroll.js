@@ -974,11 +974,8 @@ import footer.scroll`
     })
   }
 
-  buildFilesInFolder(fileSystem, folder = "/") {
-    folder = Utils.ensureFolderEndsInSlash(folder)
+  buildFiles(fileSystem, files, folder) {
     const start = Date.now()
-    const files = fileSystem.getScrollFilesInFolder(folder)
-    this.log(`Found ${files.length} scroll files in '${folder}'\n`)
     this.logIndent++
     // Run the build loop twice. The first time we build ScrollSets, in case some of the HTML files
     // will depend on csv/tsv/json/etc
@@ -1010,6 +1007,13 @@ import footer.scroll`
     )
 
     return fileSystem.productCache
+  }
+
+  buildFilesInFolder(fileSystem, folder = "/") {
+    folder = Utils.ensureFolderEndsInSlash(folder)
+    const files = fileSystem.getScrollFilesInFolder(folder)
+    this.log(`Found ${files.length} scroll files in '${folder}'\n`)
+    return this.buildFiles(fileSystem, files, folder)
   }
 
   listCommand(cwd) {
