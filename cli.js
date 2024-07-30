@@ -6,7 +6,7 @@ const { TreeNode } = require("scrollsdk/products/TreeNode.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { ScrollSetCLI } = require("./ScrollSet.js")
-const { ScrollFile, ScrollFileSystem } = require("scroll-cli")
+const { ScrollFile, ScrollFileSystem, ScrollCli } = require("scroll-cli")
 const { execSync } = require("child_process")
 const semver = require("semver")
 
@@ -114,6 +114,13 @@ class PLDBCli extends ScrollSetCLI {
     const errors = file.scrollProgram.getAllErrors().map(obj => obj.toObject())
     console.log(errors.length + " errors")
     if (errors.length) console.log(errors)
+  }
+
+  async buildCommand(lang) {
+    if (!lang) return ""
+    const sfs = new ScrollFileSystem()
+    const file = new ScrollFile(undefined, path.join(this.conceptsFolder, lang + ".scroll"), sfs)
+    new ScrollCli().buildFiles(sfs, [file], this.conceptsFolder)
   }
 
   gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
