@@ -8,33 +8,28 @@ printSourceParser
   compile() {
    const file = this.root.file
    const files = file.getFilesWithTagsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
-   return `${files.map(file => file.filePath + "\n " + file.originalScrollCode.replace(/\n/g, "\n ") ).join("\n")}`
+   return `${files.map(file => file.filePath + "\n " + file.codeAtStart.replace(/\n/g, "\n ") ).join("\n")}`
   }
-printOriginalSourceParser
+
+printSourceStackParser
  // useful for debugging
- description Print source before imports and variable expansion.
+ description Print source from each step of compilation.
  extends abstractAftertextParser
  cruxFromId
  example
   printOriginalSource
  javascript
+  get sources() {
+    const {file} = this.root
+    const passNames = ["codeAtStart", "codeAfterImportPass", "codeAfterMacroPass"]
+    return passNames.map(name => { return {
+      name,
+      code: file[name]
+    }})
+  }
   compile() {
    return `<code class="scrollCodeBlock">${this.compileTxt().replace(/\</g, "&lt;")}</code>`
   }
   compileTxt() {
-   return this.root.file.originalScrollCode 
-  }
-printExpandedSourceParser
- // useful for debugging
- description Print source after imports and variable expansion.
- extends abstractAftertextParser
- cruxFromId
- example
-  printExpandedSource
- javascript
-  compile() {
-   return `<code class="scrollCodeBlock">${this.compileTxt().replace(/\</g, "&lt;")}</code>`
-  }
-  compileTxt() {
-   return this.root.file.afterVariablePass 
+   return this.sources.map((pass, index) => `Pass ${index + 1} - ${pass.name}\n========\n${pass.code}`).join("\n\n\n")
   }

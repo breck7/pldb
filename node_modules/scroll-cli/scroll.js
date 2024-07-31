@@ -230,34 +230,35 @@ const arrayToCSV = (data, delimiter = ",") => {
 }
 
 class ScrollFile {
-  constructor(originalScrollCode, absoluteFilePath = "", fileSystem = new ScrollFileSystem({})) {
+  constructor(codeAtStart, absoluteFilePath = "", fileSystem = new ScrollFileSystem({})) {
     this.fileSystem = fileSystem
-    if (originalScrollCode === undefined) originalScrollCode = absoluteFilePath ? fileSystem.read(absoluteFilePath) : ""
+    if (codeAtStart === undefined) codeAtStart = absoluteFilePath ? fileSystem.read(absoluteFilePath) : ""
 
     this.filePath = absoluteFilePath
     this.filename = path.basename(this.filePath)
     this.folderPath = path.dirname(absoluteFilePath) + "/"
 
     // PASS 1: READ FULL FILE
-    this.originalScrollCode = originalScrollCode
+    this.codeAtStart = codeAtStart
 
     // PASS 2: READ AND REPLACE IMPORTs
-    let afterImportPass = originalScrollCode
+    let codeAfterImportPass = codeAtStart
     let parser = DefaultScrollParser
     if (absoluteFilePath) {
       const assembledFile = fileSystem.assembleFile(absoluteFilePath, defaultScrollParser.parsersCode)
       this.importOnly = assembledFile.isImportOnly
-      afterImportPass = assembledFile.afterImportPass
+      codeAfterImportPass = assembledFile.afterImportPass
       if (assembledFile.parser) parser = assembledFile.parser
     }
+    this.codeAfterImportPass = codeAfterImportPass
 
-    // PASS 3: READ AND REPLACE VARIABLES. PARSE AND REMOVE VARIABLE DEFINITIONS THEN REPLACE REFERENCES.
-    const afterVariablePass = this.evalVariables(afterImportPass, originalScrollCode, this.filePath)
+    // PASS 3: READ AND REPLACE MACROS. PARSE AND REMOVE MACROS DEFINITIONS THEN REPLACE REFERENCES.
+    const codeAfterMacroPass = this.evalMacros(codeAfterImportPass, codeAtStart, this.filePath)
 
     // PASS 4: READ WITH STD COMPILER OR CUSTOM COMPILER.
-    this.afterVariablePass = afterVariablePass
+    this.codeAfterMacroPass = codeAfterMacroPass
     this.parser = parser
-    this.scrollProgram = new parser(afterVariablePass)
+    this.scrollProgram = new parser(codeAfterMacroPass)
 
     this.scrollProgram.setFile(this)
     this.timestamp = dayjs(this.scrollProgram.get(scrollKeywords.date) ?? fileSystem.getCTime(absoluteFilePath) ?? 0).unix()
@@ -265,9 +266,9 @@ class ScrollFile {
   }
 
   formatAndSave() {
-    const { originalScrollCode, formatted } = this
+    const { codeAtStart, formatted } = this
 
-    if (originalScrollCode === formatted) return false
+    if (codeAtStart === formatted) return false
     this.fileSystem.write(this.filePath, formatted)
     return true
   }
@@ -355,7 +356,7 @@ class ScrollFile {
 [measurements*]
 [content*] */
 
-    let formatted = this.originalScrollCode
+    let formatted = this.codeAtStart
     const parsed = new this.parser(formatted)
     let topMatter = []
     let importOnly = ""
@@ -418,13 +419,13 @@ class ScrollFile {
     return this._compileArray(filename, lodash.orderBy(withStats, orderBy[0], orderBy[1]))
   }
 
-  evalVariables(code, originalScrollCode, absolutePath) {
-    // note: the 2 variables above are not used in this method, but may be used in user eval code. (todo: cleanup)
+  evalMacros(code, codeAtStart, absolutePath) {
+    // note: the 2 params above are not used in this method, but may be used in user eval code. (todo: cleanup)
     const regex = /^replace/gm
     if (!regex.test(code)) return code
     const tree = new TreeNode(code) // todo: this can be faster. a more lightweight tree class?
-    // Process variables
-    const varMap = {}
+    // Process macros
+    const macroMap = {}
     tree
       .filter(node => {
         const parserWord = node.firstWord
@@ -440,24 +441,24 @@ class ScrollFile {
           try {
             Disk.write(tempPath, value)
             const results = require(tempPath)
-            Object.keys(results).forEach(key => (varMap[key] = results[key]))
+            Object.keys(results).forEach(key => (macroMap[key] = results[key]))
           } catch (err) {
             console.error(err)
           } finally {
             Disk.rm(tempPath)
           }
-        } else varMap[node.getWord(1)] = value
+        } else macroMap[node.getWord(1)] = value
         node.destroy() // Destroy definitions after eval
       })
 
-    const keys = Object.keys(varMap)
+    const keys = Object.keys(macroMap)
     if (!keys.length) return code
 
-    let codeAfterVariableSubstitution = tree.asString
+    let codeAfterMacroSubstitution = tree.asString
     // Todo: speed up. build a template?
-    Object.keys(varMap).forEach(key => (codeAfterVariableSubstitution = codeAfterVariableSubstitution.replace(new RegExp(key, "g"), varMap[key])))
+    Object.keys(macroMap).forEach(key => (codeAfterMacroSubstitution = codeAfterMacroSubstitution.replace(new RegExp(key, "g"), macroMap[key])))
 
-    return codeAfterVariableSubstitution
+    return codeAfterMacroSubstitution
   }
 
   get mtimeMs() {
