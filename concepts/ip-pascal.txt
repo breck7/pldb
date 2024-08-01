@@ -12,10 +12,14 @@ IP Pascal is an implementation of the Pascal programming language using the IP p
  https://en.wikipedia.org/wiki/IP_Pascal Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of IP Pascal happened in https://scottmoore.consulting
+ wrapsOn none
 - IP Pascal on HOPL
  https://hopl.info/showlanguage.prx?exp=6942 IP Pascal on HOPL
+ wrapsOn none
 - See also: (10 related languages) Pascal, C#, Unicode, UTF-8, Java, UCSD Pascal, Visual Basic, Turbo Pascal, Linux, ISBN
+ wrapsOn none
 
 program hello(input, output);
  uses gralib;

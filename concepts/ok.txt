@@ -13,11 +13,16 @@ git clone https://github.com/jesseduffield/OK
 Welcome to the future of programming languages: OK?
 
 - Tags: programming language
+ wrapsOn none
 - OK is developed on GitHub and has 519 stars
+ wrapsOn none
 - Early development of OK happened in https://github.com/jesseduffield/OK/issues
+ wrapsOn none
 - OK is written in Go, JSON, TypeScript, YAML, CSS, Bourne shell, Markdown, JavaScript, HTML
+ wrapsOn none
 - Read more about OK on the web: 1.
  https://news.ycombinator.com/item?id=32640918 1.
+ wrapsOn none
 
 let divide = fn(a, b) {
   return switch b {

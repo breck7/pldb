@@ -11,10 +11,15 @@ GLBasic is a commercial BASIC programming language that can compile to various p
  https://en.wikipedia.org/wiki/GLBasic Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of GLBasic happened in Dream Design Entertainment Software
+ wrapsOn none
 - Explore GLBasic snippets on Rosetta Code
+ wrapsOn none
 - glbasic.com was registered in 2003
+ wrapsOn none
 - See also: (8 related languages) BASIC, Linux, C, OpenGL, iOS, Android, SdlBasic, Fenix Project
+ wrapsOn none
 
 FUNCTION add: v AS Tvec
    INC self.x, v.x

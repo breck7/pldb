@@ -22,9 +22,15 @@ printSourceStackParser
   get sources() {
     const {file} = this.root
     const passNames = ["codeAtStart", "codeAfterImportPass", "codeAfterMacroPass"]
-    return passNames.map(name => { return {
+    let lastCode = ""
+    return passNames.map(name => {
+      let code = file[name]
+      if (lastCode === code)
+        code = "[Unchanged]"
+      lastCode = file[name]
+      return {
       name,
-      code: file[name]
+      code
     }})
   }
   compile() {

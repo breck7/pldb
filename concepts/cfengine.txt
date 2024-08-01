@@ -11,9 +11,13 @@ CFEngine is an open source configuration management system, written by Mark Burg
  https://en.wikipedia.org/wiki/CFEngine Read more on Wikipedia...
 
 - Tags: application
+ wrapsOn none
 - Early development of CFEngine happened in Oslo University
+ wrapsOn none
 - cfengine.com was registered in 2001
+ wrapsOn none
 - See also: (3 related languages) Linux, Solaris, Puppet
+ wrapsOn none
 
 #!/var/cfengine/bin/cf-agent --no-lock
 body common control

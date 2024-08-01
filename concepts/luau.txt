@@ -10,7 +10,9 @@ luau is a programming language created in 2020.
 Luau is a fast, small, safe, gradually typed embeddable scripting language derived from Lua. It is used by Roblox game developers to write game code, as well as by Roblox engineers to implement large parts of the user-facing application code as well as portions of the editor (Roblox Studio) as plugins.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of luau happened in https://github.com/Roblox/luau/issues
+ wrapsOn none
 
 type Point = { x: number, y: number }
 

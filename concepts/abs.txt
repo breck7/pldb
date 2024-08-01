@@ -13,9 +13,13 @@ git clone https://github.com/abs-lang/abs
 ABS is a programming language that works best when you're scripting on your terminal. It tries to combine the elegance of languages such as Python, or Ruby with the convenience of Bash.
 
 - Tags: programming language
+ wrapsOn none
 - abs is developed on GitHub and has 512 stars
+ wrapsOn none
 - abs is written in JavaScript, Markdown, HTML, Go, Bourne shell, JSON, YAML, Stylus, Make, Dockerfile, SVG, CSS
+ wrapsOn none
 - abs-lang.org was registered in 2018
+ wrapsOn none
 
 r = $(curl &quot;http://data.nba.net/prod/v1/20170201/0021600732_boxscore.json&quot; -H &#39;DNT: 1&#39; -H &#39;Accept-Encoding: gzip, deflate, sdch&#39; -H &#39;Accept-Language: en&#39; -H &#39;User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36&#39; -H &#39;Accept: */*&#39; -H &#39;Referer: http://stats.nba.com/&#39; -H &#39;Connection: keep-alive&#39; --compressed);
 if !r.ok {

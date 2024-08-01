@@ -8,10 +8,14 @@ CodeStudAssembler is an assembly language created in 2017.
 7 Years Old
 
 - Tags: assembly language
+ wrapsOn none
 - Early development of CodeStudAssembler happened in https://github.com/v8
+ wrapsOn none
 - Read more about CodeStudAssembler on the web: 1.
  https://v8.dev/blog/csa 1.
+ wrapsOn none
 - 1 PLDB concepts link to CodeStudAssembler: v8torque
+ wrapsOn none
 
   test al,0x1
   jz not_string

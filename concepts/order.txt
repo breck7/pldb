@@ -11,9 +11,12 @@ order is a programming language created in 2003 by Vesa Karvonen.
 Metalanguage for C Preprocessor Metaprogramming
 
 - Tags: programming language
+ wrapsOn none
 - Early development of order happened in https://www.devever.net/~hl
+ wrapsOn none
 - Read more about order on the web: 1.
  https://github.com/polytypic/order-pp 1.
+ wrapsOn none
 
 #define ORDER_PP_DEF_8fib                       \
 ORDER_PP_FN(8fn(8N,                             \

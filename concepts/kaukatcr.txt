@@ -10,6 +10,9 @@ kaukatcr is a programming language created in 2018.
 Kaukatcr (pronounced “cowcatcher”[3]) is a stack-based language modeled loosely on Forth. It avoids tokenization by treating cell boundaries as word boundaries. Like Forth, any word that is neither a built-in nor found in the dictionary of defined functions will be treated as data and pushed onto the stack.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of kaukatcr happened in https://www.lord-enki.net/
+ wrapsOn none
 - Read more about kaukatcr on the web: 1.
  https://github.com/enkiv2/misc/blob/master/ds-lib/kaukatcr.py 1.
+ wrapsOn none

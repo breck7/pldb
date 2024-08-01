@@ -13,10 +13,15 @@ git clone https://github.com/elves/elvish
 Elvish is an expressive programming language and a versatile interactive shell, combined into one seamless package. It runs on Linux, BSDs, macOS and Windows.
 
 - Tags: programming language
+ wrapsOn none
 - Elvish is developed on GitHub and has 5,542 stars
+ wrapsOn none
 - Early development of Elvish happened in https://github.com/elves
+ wrapsOn none
 - Elvish is written in Go, Markdown, HTML, JSON, YAML, Bourne shell, CSS, TOML, JavaScript, Python, Make, XML, TypeScript, SVG, Dockerfile
+ wrapsOn none
 - elv.sh was registered in 2018
+ wrapsOn none
 
 if $true { echo good } else { echo bad }
 

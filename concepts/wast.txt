@@ -10,8 +10,10 @@ WebAssembly Text Format is a programming language created in 2015.
 WebAssembly has an S-expression-based textual representation, an intermediate form designed to be exposed in text editors, browser developer tools, etc.
 
 - Tags: programming language
+ wrapsOn none
 - Read more about WebAssembly Text Format on the web: 1.
  https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm 1.
+ wrapsOn none
 
  (module
   (import &quot;math&quot; &quot;exp&quot; (func $exp (param f64) (result f64)))

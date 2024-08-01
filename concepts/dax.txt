@@ -11,9 +11,13 @@ Data Analysis Expressions (DAX) is the native formula and query language for Mic
  https://en.wikipedia.org/wiki/Data_analysis_expressions Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of DAX happened in Microsoft
+ wrapsOn none
 - Monaco package for syntax highlighting DAX
+ wrapsOn none
 - See also: (1 related languages) Microsoft Excel
+ wrapsOn none
 
 EVALUATE
  ( FILTER ( &#39;DimProduct&#39;, [SafetyStockLevel] &lt; 200 ) )

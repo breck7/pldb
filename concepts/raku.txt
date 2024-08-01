@@ -13,12 +13,19 @@ Raku is a member of the Perl family of programming languages. Formerly known as 
  https://en.wikipedia.org/wiki/Raku_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 2,521 Raku repos on GitHub
+ wrapsOn none
 - Early development of Raku happened in https://www.raku.org/community
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Raku in 2k repos on GitHub
+ wrapsOn none
 - GitHub supports syntax highlighting for Raku
+ wrapsOn none
 - raku.org was registered in 1999
+ wrapsOn none
 - 8 PLDB concepts link to Raku: Ace Editor, Alma, cloc, Muldis, Pygments, Rakudo, Star, TestML
+ wrapsOn none
 
 grammar Parser {
     rule  TOP  { I &lt;love&gt; &lt;lang&gt; }

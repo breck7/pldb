@@ -15,13 +15,21 @@ git clone https://github.com/ghempton/ember-script
 Ember-infused CoffeeScript
 
 - Tags: programming language
+ wrapsOn none
 - EmberScript is developed on GitHub and has 357 stars
+ wrapsOn none
 - There are at least 206 EmberScript repos on GitHub
+ wrapsOn none
 - Early development of EmberScript happened in https://github.com/ghempton/ember-script/issues
+ wrapsOn none
 - EmberScript is written in JavaScript, CoffeeScript, Ruby, Make, JSON, Markdown, YAML
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 417 users using EmberScript in 459 repos on GitHub
+ wrapsOn none
 - GitHub supports syntax highlighting for EmberScript
+ wrapsOn none
 - emberscript.com was registered in 2012
+ wrapsOn none
 
 class App.FromNowView extends Ember.View
     tagName: &#39;time&#39;

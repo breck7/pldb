@@ -11,7 +11,9 @@ XBL (XML Binding Language) is an XML-based markup language used to declare the b
  https://en.wikipedia.org/wiki/XBL Read more on Wikipedia...
 
 - Tags: xmlFormat
+ wrapsOn none
 - See also: (3 related languages) XML, CSS, SVG
+ wrapsOn none
 
 scrollbar {
   -moz-binding: url(&#39;somefile.xml#binding1&#39;);

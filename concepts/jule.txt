@@ -13,10 +13,15 @@ git clone https://github.com/julelang/jule
 Jule is the simple, efficient, statically typed and compiled system programming language.
 
 - Tags: programming language, lisp
+ wrapsOn none
 - Jule is developed on GitHub and has 127 stars
+ wrapsOn none
 - Early development of Jule happened in https://github.com/julelang
+ wrapsOn none
 - Jule is written in YAML, Markdown, Bourne shell, Dockerfile
+ wrapsOn none
 - jule.dev was registered in 2022
+ wrapsOn none
 
  fn quicksort(mut s: []int) {
      if s.len &lt;= 1 {

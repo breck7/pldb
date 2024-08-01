@@ -14,14 +14,22 @@ git clone https://github.com/jashkenas/coffeescript
 Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
 
 - Tags: programming language
+ wrapsOn none
 - Literate CoffeeScript is developed on GitHub and has 16,466 stars
+ wrapsOn none
 - There are at least 7,938 Literate CoffeeScript repos on GitHub
+ wrapsOn none
 - Early development of Literate CoffeeScript happened in https://github.com/jashkenas/coffeescript/issues
+ wrapsOn none
 - Literate CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
+ wrapsOn none
 - GitHub supports syntax highlighting for Literate CoffeeScript
+ wrapsOn none
 - coffeescript.org was registered in 2009
+ wrapsOn none
 - Read more about Literate CoffeeScript on the web: 1.
  https://news.ycombinator.com/item?id=5277916 1.
+ wrapsOn none
 
 The **Scope** class regulates lexical scoping within CoffeeScript. As you
 generate code, you create a tree of scopes in the same shape as the nested

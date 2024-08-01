@@ -12,9 +12,13 @@ git clone https://github.com/google-research/dex-lang
 Research language for array processing in the Haskell/ML family
 
 - Tags: programming language
+ wrapsOn none
 - dex is developed on GitHub and has 1,565 stars
+ wrapsOn none
 - Early development of dex happened in Google
+ wrapsOn none
 - dex is written in Haskell, Python, Julia, YAML, Markdown, Bash, C++, Nix, C, Lisp, TypeScript, Make, CSS, HTML, TOML, XML
+ wrapsOn none
 
 :p x = 1.                -- let binding
   y = (z = 2.; z + 1.)  -- let binding of a nested let expression

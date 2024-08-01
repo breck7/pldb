@@ -10,8 +10,10 @@ Water is a template language created in 2002.
 Water is a new native Web service programming language with a ConciseXML syntax. Data, logic, and presentation have a uniform XML representation in Water. Read how Water simplifies the creation of new Web services and programs.
 
 - Tags: template language
+ wrapsOn none
 - Read more about Water on the web: 1.
  http://www.informit.com/articles/article.aspx?p=27567 1.
+ wrapsOn none
 
 &lt;set the_date=
      &lt;HTML&gt; Today is &lt;datetime.today/&gt; &lt;/HTML&gt;

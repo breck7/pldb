@@ -13,7 +13,9 @@ git clone https://foss.heptapod.net/games/harlowe
 The default Twine 2 story format.
 
 - Tags: text markup language
+ wrapsOn none
 - See also: (1 related languages) Twine
+ wrapsOn none
 
 &lt;tw-storydata startnode=1 options=debug&gt;
 &lt;tw-passagedata pid=1 name=Start&gt;(enchant:?Page,(background:white)+(color:black))[[Next]]&lt;/tw-passagedata&gt;

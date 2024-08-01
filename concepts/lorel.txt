@@ -15,9 +15,12 @@ Lorel is a query language created in 1996 by Serge Abiteboul and Dallan Quass an
 Lorel Query Language for Semistructured Data
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of Lorel happened in Stanford University
+ wrapsOn none
 - Read more about Lorel on the web: 1.
  http://infolab.stanford.edu/lore/pubs/lorel96.pdf 1.
+ wrapsOn none
 
 select Guide.restaurant.name,
    Guide.restaurant(.address)?.zipcode

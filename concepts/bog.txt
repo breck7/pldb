@@ -12,9 +12,13 @@ git clone https://github.com/Vexu/bog
 Small, strongly typed, embeddable language.
 
 - Tags: programming language
+ wrapsOn none
 - bog is developed on GitHub and has 531 stars
+ wrapsOn none
 - Early development of bog happened in https://github.com/Vexu/bog/issues
+ wrapsOn none
 - bog is written in Zig, Markdown, C, YAML
+ wrapsOn none
 
 let {print} = import &quot;std.io&quot;
 let world = &quot;world&quot;

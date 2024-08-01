@@ -9,8 +9,11 @@ Allegro Common Lisp is a programming language created in 1986 by John Foderaro.
 38 Years Old
 
 - Tags: programming language, lisp
+ wrapsOn none
 - Early development of Allegro Common Lisp happened in Franz Inc
+ wrapsOn none
 - 1 PLDB concepts link to Allegro Common Lisp: SubL
+ wrapsOn none
 
 (defun foo (x)
  (loop for y in-sequence x collect (1+ y)))

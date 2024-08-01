@@ -11,6 +11,8 @@ A general-purpose macro processor or general purpose preprocessor is a macro pro
  https://en.wikipedia.org/wiki/General-purpose_macro_processor Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Early development of General-purpose macro processor happened in https://sourceforge.net/p/gema/mailman/
+ wrapsOn none
 
 gema -match -p &#39;Title\:*\n=$0@end&#39; foo

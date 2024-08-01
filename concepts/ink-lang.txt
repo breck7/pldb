@@ -13,10 +13,15 @@ git clone https://github.com/thesephist/ink
 Ink is a minimal programming language inspired by modern JavaScript and Go, with functional style.
 
 - Tags: programming language
+ wrapsOn none
 - ink-lang is developed on GitHub and has 557 stars
+ wrapsOn none
 - Early development of ink-lang happened in https://github.com/thesephist/ink/issues
+ wrapsOn none
 - ink-lang is written in Go, Markdown, Vim script, Make, YAML
+ wrapsOn none
 - dotink.co was registered in 2019
+ wrapsOn none
 
 std := load(&#39;std&#39;)
 

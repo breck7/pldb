@@ -13,6 +13,10 @@ git clone https://github.com/ocaml/opam
 opam is a source-based package manager. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow.
 
 - Tags: packageManager
+ wrapsOn none
 - opam-pm is developed on GitHub and has 1,218 stars
+ wrapsOn none
 - Early development of opam-pm happened in https://github.com/ocaml
+ wrapsOn none
 - opam-pm is written in OCaml, Bourne shell, Markdown, Make, C, M4, YAML, Bash, Z shell, XML, HTML, Dockerfile, sed, C shell
+ wrapsOn none

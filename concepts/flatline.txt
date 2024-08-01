@@ -12,10 +12,15 @@ git clone https://github.com/bigmlcom/flatline
 Flatline is a lispy language for the specification of values to be extracted or generated from an input dataset, using a finite sliding window of input rows.
 
 - Tags: programming language
+ wrapsOn none
 - Flatline is developed on GitHub and has 26 stars
+ wrapsOn none
 - Early development of Flatline happened in BigML Inc
+ wrapsOn none
 - Flatline is written in Python, reStructuredText, JavaScript, Markdown, HTML, Make, Jupyter Notebook, CSS
+ wrapsOn none
 - Pygments supports syntax highlighting for Flatline
+ wrapsOn none
 
 (if (missing? &quot;00000&quot;) (random-value &quot;000000&quot;) (f &quot;000000&quot;))
 

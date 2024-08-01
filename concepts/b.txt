@@ -13,11 +13,16 @@ B is a programming language developed at Bell Labs circa 1969. It is the work of
  https://en.wikipedia.org/wiki/B_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of B happened in Bell Labs
+ wrapsOn none
 - Explore B snippets on Rosetta Code
+ wrapsOn none
 - B on HOPL
  https://hopl.info/showlanguage.prx?exp=492 B on HOPL
+ wrapsOn none
 - See also: (9 related languages) ABC, BCPL, PL/I, C, Multics, ALGOL 58, Unix, TMG, Yacc
+ wrapsOn none
 
 main() {
     putchar (&#39;Hell&#39;); putchar (&#39;o Wo&#39;); putchar (&#39;rld&#39;); putchar (&#39;*n&#39;);

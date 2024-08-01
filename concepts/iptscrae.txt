@@ -11,8 +11,12 @@ Iptscrae is a stack-oriented scripting language used to give additional function
  https://en.wikipedia.org/wiki/IPTSCRAE Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of IPTSCRAE happened in Warner New Media
+ wrapsOn none
 - Explore IPTSCRAE snippets on Rosetta Code
+ wrapsOn none
 - See also: (4 related languages) Forth, JavaScript, Java, HTML
+ wrapsOn none
 
 /&quot;&quot;s={n++{{&quot; &quot;n itoa&amp;}{&quot; buzz&quot;}n 5%ifelse}{&quot; fizz&quot;}n 3%ifelse s+=}{101n&gt;}while s logmsg

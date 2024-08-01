@@ -13,10 +13,14 @@ git clone https://github.com/manuel/taf
 A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
 
 - Tags: programming language
+ wrapsOn none
 - taf is developed on GitHub and has 56 stars
+ wrapsOn none
 - taf is written in HTML, JavaScript, CSS
+ wrapsOn none
 - Read more about taf on the web: 1.
  http://www.manuelsimoni.net/taf/doc/plan.html 1.
+ wrapsOn none
 
 (define (make-person name email)
   #(person :name name :email email)) ; creates a person record with name and email fields

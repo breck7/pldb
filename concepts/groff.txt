@@ -12,13 +12,21 @@ git clone https://git.savannah.gnu.org/git/groff.git/
 Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
 
 - Tags: text markup language
+ wrapsOn none
 - Early development of groff happened in GNU Project
+ wrapsOn none
 - groff is written in Bourne shell, C++, Make, C, HTML, M4, Perl, Protocol Buffers, sed, Objective C++, C#, CSS, awk, Tex, Ruby, Forth, Vim script, Diff
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using groff in 26k repos on GitHub
+ wrapsOn none
 - There are 357 members in the groff subreddit
+ wrapsOn none
 - Pygments supports syntax highlighting for groff
+ wrapsOn none
 - See also: (1 related languages) Troff
+ wrapsOn none
 - 2 PLDB concepts link to groff: Frundis, nroff
+ wrapsOn none
 
 .sp 1.5i
 My thoughts on the subject

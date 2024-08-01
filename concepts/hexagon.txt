@@ -11,8 +11,11 @@ Hexagon (QDSP6) is the brand for a family of 32-bit multi-threaded microarchitec
  https://en.wikipedia.org/wiki/Qualcomm_Hexagon Read more on Wikipedia...
 
 - Tags: assembly language
+ wrapsOn none
 - Early development of Qualcomm Hexagon happened in Qualcomm
+ wrapsOn none
 - See also: (2 related languages) Linux, LLVM IR
+ wrapsOn none
 
 { R17:16 = MEMD(R0++M1)
   MEMD(R6++M1) = R25:24

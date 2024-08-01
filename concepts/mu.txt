@@ -13,13 +13,19 @@ git clone https://github.com/akkartik/mu
 Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
 
 - Tags: programming language
+ wrapsOn none
 - Interview with the creator of Mu: 1.
  https://pldb.io/blog/kartik.html 1.
+ wrapsOn none
 - Mu is developed on GitHub and has 1,355 stars
+ wrapsOn none
 - Early development of Mu happened in https://github.com/akkartik/mu/issues
+ wrapsOn none
 - Mu is written in HTML, C++, Bourne shell, Markdown, Vim script, Racket, Bash, JSON, C, XML, CSS, Z shell, JavaScript, Python, Less, Lisp
+ wrapsOn none
 - Read more about Mu on the web: 1.
  http://akkartik.name/akkartik-convivial-20200607.pdf 1.
+ wrapsOn none
 
 # dump stack from bottom to top
 fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {

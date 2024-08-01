@@ -13,8 +13,11 @@ git clone https://github.com/munificent/vigil
 Vigil, the eternal morally vigilant programming language
 
 - Tags: esoteric programming language
+ wrapsOn none
 - Vigil is developed on GitHub and has 2,861 stars
+ wrapsOn none
 - Vigil is written in Python, Markdown
+ wrapsOn none
 
 def fib(n):
  if n &lt; 2:

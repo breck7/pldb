@@ -12,11 +12,17 @@ SQL PL stands for Structured Query Language Procedural Language and was develope
  https://en.wikipedia.org/wiki/SQL_PL Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 7,609 SQLPL repos on GitHub
+ wrapsOn none
 - Early development of SQLPL happened in IBM
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using SQLPL in 5k repos on GitHub
+ wrapsOn none
 - GitHub supports syntax highlighting for SQLPL
+ wrapsOn none
 - See also: (3 related languages) SQL, SQL/PSM, PL/SQL
+ wrapsOn none
 
 create procedure sleep (in sleeptime integer)
 begin

@@ -10,8 +10,10 @@ goose is a programming language created in 2018.
 Goose is a programming language in development that aims at being (yet another) c++ alternative.
 
 - Tags: programming language
+ wrapsOn none
 - Read more about goose on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdshb4/ 1.
+ wrapsOn none
 
 uint(32) lomarf( uint(32) a, uint(32) b )
     requires [ a&gt;b ]

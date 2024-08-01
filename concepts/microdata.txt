@@ -11,10 +11,14 @@ Microdata is a WHATWG HTML specification used to nest metadata within existing c
  https://en.wikipedia.org/wiki/Microdata_(HTML) Read more on Wikipedia...
 
 - Tags: schema
+ wrapsOn none
 - Early development of Microdata HTML happened in World Wide Web Consortium
+ wrapsOn none
 - See also: (2 related languages) RDF, JSON-LD
+ wrapsOn none
 - Read more about Microdata HTML on the web: 1.
  https://www.w3.org/TR/microdata/ 1.
+ wrapsOn none
 
 &lt;div itemscope itemtype=&quot;http://schema.org/RentalCarReservation&quot;&gt;
   &lt;meta itemprop=&quot;reservationNumber&quot; content=&quot;546323&quot;/&gt;

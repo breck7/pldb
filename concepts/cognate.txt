@@ -13,10 +13,15 @@ git clone https://github.com/cognate-lang/cognate
 A human readable quasi-concatenative programming language. Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
 
 - Tags: programming language
+ wrapsOn none
 - Cognate is developed on GitHub and has 233 stars
+ wrapsOn none
 - Cognate compiles to C
+ wrapsOn none
 - Cognate is written in YAML, C, Lex, Yacc, Markdown, Make
+ wrapsOn none
 - First announcement of Cognate
+ wrapsOn none
 
 ~~ Prime numbers in Cognate
 Def Factor (Zero? Modulo Swap);

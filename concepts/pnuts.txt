@@ -11,8 +11,11 @@ Pnuts is a dynamic scripting language for the Java platform. It is designed to b
  https://en.wikipedia.org/wiki/Pnuts Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Pnuts happened in Sun Japan
+ wrapsOn none
 - See also: (1 related languages) Java
+ wrapsOn none
 
 use(&quot;pnuts.lib&quot;) // Standard module that makes sort, println and other functions available.
 countries = [&quot;Canada&quot;, &quot;Austria&quot;, &quot;Brazil&quot;]

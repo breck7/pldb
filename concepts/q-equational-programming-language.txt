@@ -12,8 +12,11 @@ Pure, successor to the equational language Q, is a dynamically typed, functional
  https://en.wikipedia.org/wiki/Q_(equational_programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Q happened in https://sourceforge.net/p/q-lang/_list/tickets
+ wrapsOn none
 - See also: (14 related languages) FreeBSD, Linux, Haskell, Lisp, Alice, MATLAB, LLVM IR, C, Miranda, Pure Data, GNU Octave, OpenGL, FAUST, SuperCollider
+ wrapsOn none
 
 extern int puts(char*);
  hello = puts &quot;Hello, world!&quot;;

@@ -561,22 +561,22 @@
     "IsComputed": false
   },
   {
-    "Name": "githubLanguage_wrap",
-    "Values": 14,
-    "Coverage": "0%",
-    "Question": "Does GitHub override it's default of not wrapping lines when displaying this language?",
-    "Example": "true",
-    "Type": "boolean",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
     "Name": "githubLanguage_repos",
     "Values": 490,
     "Coverage": "9%",
     "Question": "How many repos for this language does GitHub report?",
     "Example": "38669",
     "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubLanguage_wrap",
+    "Values": 14,
+    "Coverage": "0%",
+    "Question": "Does GitHub override it's default of not wrapping lines when displaying this language?",
+    "Example": "true",
+    "Type": "boolean",
     "SortIndex": 1.9,
     "IsComputed": false
   },

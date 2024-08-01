@@ -11,9 +11,12 @@ The T programming language is a dialect of the Scheme programming language devel
  https://en.wikipedia.org/wiki/T_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - T on HOPL
  https://hopl.info/showlanguage.prx?exp=1019 T on HOPL
+ wrapsOn none
 - See also: (5 related languages) Scheme, EuLisp, Joule, C, Common Lisp
+ wrapsOn none
 
 (define-predicate pair?)
  (define-settable-operation (car pair))

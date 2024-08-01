@@ -13,8 +13,11 @@ git clone https://codeberg.org/Horse64/core.horse64.org
 Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
 
 - Tags: programming language
+ wrapsOn none
 - Horse64 is written in Horse64, Moose64, Python, Markdown, Cython, YAML, SVG, XML, Make, Bash
+ wrapsOn none
 - 2 PLDB concepts link to Horse64: Horse64, Moose64
+ wrapsOn none
 
 func main {
     print(&quot;Hello World&quot;)

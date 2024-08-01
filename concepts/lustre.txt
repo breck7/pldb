@@ -11,11 +11,16 @@ Lustre is a formally defined, declarative, and synchronous dataflow programming 
  https://en.wikipedia.org/wiki/Lustre_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Lustre happened in Esterel Technologies
+ wrapsOn none
 - Lustre on HOPL
  https://hopl.info/showlanguage.prx?exp=1161 Lustre on HOPL
+ wrapsOn none
 - Lustre appears in the TIOBE Index
+ wrapsOn none
 - See also: (2 related languages) Esterel, SIGNAL
+ wrapsOn none
 
 node Edge (X : bool) returns (E : bool);
 let

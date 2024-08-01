@@ -18,23 +18,41 @@ Racket is a general purpose, multi-paradigm programming language in the Lisp-Sch
  https://en.wikipedia.org/wiki/Racket_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language, lisp
+ wrapsOn none
 - Racket is developed on GitHub and has 4,741 stars
+ wrapsOn none
 - There are at least 17,790 Racket repos on GitHub
+ wrapsOn none
 - Early development of Racket happened in PLT Inc.
+ wrapsOn none
 - Racket is written in Racket, C, Scheme, M4, Assembly language, Bourne shell, JSON, Tex, XML, Make, Markdown, Diff, YAML, Pascal, C++, Expect, Ada, HTML, C#, Meson, Python, CSS, JavaScript, C shell, Perl, SaltStack, Bash, IDL, R, CMake, SAS, Dockerfile, PowerShell
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Racket in 4k repos on GitHub
+ wrapsOn none
 - Check out the 6 Racket meetup groups on Meetup.com.
+ wrapsOn none
 - There are 316 Project Euler users using Racket
+ wrapsOn none
 - Explore Racket snippets on Rosetta Code
+ wrapsOn none
 - Racket appears in the TIOBE Index
+ wrapsOn none
 - Pygments supports syntax highlighting for Racket
+ wrapsOn none
 - GitHub supports syntax highlighting for Racket
+ wrapsOn none
 - There is 1 Jupyter Kernel for Racket
+ wrapsOn none
 - There is a central package repository for Racket
+ wrapsOn none
 - Indeed.com has 1 matches for "racket engineer".
+ wrapsOn none
 - racket-lang.org was registered in 2010
+ wrapsOn none
 - See also: (16 related languages) X86, PowerPC, SPARC, MIPS architecture, ARM, Scheme, Eiffel, Rust, Clojure, Lisp, Java, Unicode, JSON, Unix, Linux, Arc
+ wrapsOn none
 - 24 PLDB concepts link to Racket: cloc, datafun, eskew, fructure-editor, Hackett, Liso, mal, Mu, p4p, pie-lang, Pycket, Pygments, Racket, remix, rockstar-rkt, scribble, Scroll Notation, sham, shill, Slideshow, t-lang, turnstile-plus, video, Zuo
+ wrapsOn none
 
 #lang racket/base
 (display &quot;Hello, world!\n&quot;)

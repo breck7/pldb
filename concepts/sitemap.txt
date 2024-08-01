@@ -10,10 +10,14 @@ Sitemap is a xml format created in 2001.
 Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.
 
 - Tags: xmlFormat
+ wrapsOn none
 - Early development of Sitemap happened in Google Inc
+ wrapsOn none
 - sitemaps.org was registered in 2001
+ wrapsOn none
 - Read more about Sitemap on the web: 1.
  https://en.wikipedia.org/wiki/Site_map 1.
+ wrapsOn none
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 

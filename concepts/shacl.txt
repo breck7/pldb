@@ -10,10 +10,14 @@ SHACL, aka Shapes Constraint Language, is a programming language created in 2015
 A standard language for describing Resource Description Framework (RDF) graphs.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of SHACL happened in World Wide Web Consortium
+ wrapsOn none
 - See also: (1 related languages) RDF
+ wrapsOn none
 - Read more about SHACL on the web: 1.
  https://www.w3.org/TR/shacl/ 1.
+ wrapsOn none
 
 ex:PersonShape
 a sh:NodeShape ;

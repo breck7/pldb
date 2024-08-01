@@ -13,9 +13,13 @@ git clone https://github.com/ema-fox/jasper
 compile to js lisp inspired by arc
 
 - Tags: programming language
+ wrapsOn none
 - jasper is developed on GitHub and has 2 stars
+ wrapsOn none
 - Early development of jasper happened in https://github.com/ema-fox/jasper/issues
+ wrapsOn none
 - jasper is written in Markdown
+ wrapsOn none
 
 (+ 2 3)
 (map [+ 1 _] &#39;(1 2 3))

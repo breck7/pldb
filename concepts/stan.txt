@@ -12,13 +12,21 @@ Stan is a probabilistic programming language for statistical inference written i
  https://en.wikipedia.org/wiki/Stan_(software) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 774 Stan repos on GitHub
+ wrapsOn none
 - Early development of Stan happened in https://github.com/stan-dev
+ wrapsOn none
 - Stan is written in C++
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 134 users using Stan in 154 repos on GitHub
+ wrapsOn none
 - Pygments supports syntax highlighting for Stan
+ wrapsOn none
 - GitHub supports syntax highlighting for Stan
+ wrapsOn none
 - See also: (4 related languages) IA-32, R, MATLAB, Stata
+ wrapsOn none
 
 data {
   int&lt;lower=0&gt; N;

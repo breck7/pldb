@@ -9,7 +9,7 @@ paragraphParser
   compile(compileSettings) {
    if (this.isHidden) return ""
    // Hacky, I know.
-   const newLine = this.has("wrapsOn") ? undefined : this.appendLine("wrapsOn")
+   const newLine = this.has("inlineMarkupsOn") ? undefined : this.appendLine("inlineMarkupsOn")
    const compiled = super.compile(compileSettings)
    if (newLine)
     newLine.destroy()

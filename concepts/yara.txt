@@ -15,12 +15,19 @@ YARA is the name of a tool primarily used in malware research and detection. It 
  https://en.wikipedia.org/wiki/YARA Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - YARA is developed on GitHub and has 7,981 stars
+ wrapsOn none
 - There are at least 812 YARA repos on GitHub
+ wrapsOn none
 - YARA is written in C, reStructuredText, XML, C++, starlark, YAML, Markdown, Bourne shell, Yacc, Lex, Bazel, Protocol Buffers, M4, Make, JavaScript, SVG, HTML, Python
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 43 users using YARA in 46 repos on GitHub
+ wrapsOn none
 - GitHub supports syntax highlighting for YARA
+ wrapsOn none
 - See also: (3 related languages) Perl, Regular Expressions, Extensible Linking Format
+ wrapsOn none
 
 rule silent_banker : banker
 {

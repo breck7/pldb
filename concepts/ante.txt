@@ -13,9 +13,13 @@ git clone https://github.com/jfecher/ante
 Ante is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
 
 - Tags: programming language
+ wrapsOn none
 - Ante is developed on GitHub and has 1,881 stars
+ wrapsOn none
 - Ante is written in Rust, Nix, TOML, Markdown, YAML, JSON, Dockerfile
+ wrapsOn none
 - antelang.org was registered in 2018
+ wrapsOn none
 
 print &quot;Hello, world!&quot;
 

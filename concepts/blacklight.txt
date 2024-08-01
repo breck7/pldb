@@ -13,9 +13,13 @@ git clone https://github.com/acook/blacklight
 blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
 
 - Tags: programming language
+ wrapsOn none
 - Blacklight is developed on GitHub and has 45 stars
+ wrapsOn none
 - Early development of Blacklight happened in http://anthonymcook.com/
+ wrapsOn none
 - Blacklight is written in Go, Bash, Markdown, YAML, JSON, PowerShell
+ wrapsOn none
 
 newq newq                ;; create send and receive queues
 [

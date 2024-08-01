@@ -13,9 +13,13 @@ git clone https://github.com/project-everest/vale
 Vale is a tool for constructing formally verified high-performance assembly language code, with an emphasis on cryptographic code. It uses existing verification frameworks, such as Dafny and F*, for formal verification. It supports multiple architectures, such as x86, x64, and ARM, and multiple platforms, such as Windows, Mac, and Linux. Additional architectures and platforms can be supported with no changes to the Vale tool.
 
 - Tags: assembly language
+ wrapsOn none
 - Vale is developed on GitHub and has 261 stars
+ wrapsOn none
 - Vale is written in reStructuredText, F#, XML, Python, Bourne shell, Markdown, C#, Dockerfile, C, Bash, PowerShell, JSON, OCaml, Make
+ wrapsOn none
 - See also: (1 related languages) F*
+ wrapsOn none
 
 procedure ReadA(ghost a:seq(uint32),inline b:bool)
  reads r0; mem;

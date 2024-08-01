@@ -12,10 +12,15 @@ git clone https://github.com/JohnEarnest/Decker
 Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
 
 - Tags: programming language
+ wrapsOn none
 - Lil is developed on GitHub and has 949 stars
+ wrapsOn none
 - Early development of Lil happened in https://github.com/JohnEarnest/Decker/issues
+ wrapsOn none
 - Lil is written in Markdown, Bourne shell, JavaScript, C, XML, HTML, Vim script, awk, Make, YAML, Lisp, Nix
+ wrapsOn none
 - See also: (2 related languages) SQL, Lua
+ wrapsOn none
 
 on mode a do   # line comment
     r:()

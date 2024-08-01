@@ -12,11 +12,17 @@ git clone https://github.com/ChaiScript/ChaiScript
 Embedded Scripting Language Designed for C++
 
 - Tags: programming language
+ wrapsOn none
 - chaiscript is developed on GitHub and has 2,912 stars
+ wrapsOn none
 - Early development of chaiscript happened in https://github.com/ChaiScript
+ wrapsOn none
 - chaiscript is written in C++, Markdown, YAML, CMake, Bourne shell, Ruby, SVG, PHP, Pascal, JSON
+ wrapsOn none
 - Pygments supports syntax highlighting for chaiscript
+ wrapsOn none
 - chaiscript.com was registered in 2009
+ wrapsOn none
 
 #include &lt;chaiscript/chaiscript.hpp&gt;
 std::string helloWorld(const std::string &amp;t_name) {

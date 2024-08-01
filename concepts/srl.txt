@@ -13,10 +13,15 @@ git clone https://github.com/SimpleRegex/SRL-PHP
 Simple Regex Language
 
 - Tags: queryLanguage
+ wrapsOn none
 - SRL is developed on GitHub and has 1,800 stars
+ wrapsOn none
 - Early development of SRL happened in https://github.com/SimpleRegex
+ wrapsOn none
 - SRL is written in PHP, Markdown, JSON, XML, YAML
+ wrapsOn none
 - simple-regex.com was registered in 2016
+ wrapsOn none
 
 begin with any of (digit, letter, one of &quot;._%+-&quot;) once or more,
 literally &quot;@&quot;,

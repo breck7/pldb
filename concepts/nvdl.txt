@@ -11,7 +11,9 @@ Namespace-based Validation Dispatching Language (NVDL) is an XML schema language
  https://en.wikipedia.org/wiki/Namespace-based_Validation_Dispatching_Language Read more on Wikipedia...
 
 - Tags: xmlFormat
+ wrapsOn none
 - Early development of Namespace-based Validation Dispatching Language happened in National Security Complex and Crane Softwrights Ltd
+ wrapsOn none
 
 &lt;rules xmlns=&quot;http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0&quot;&gt;
  &lt;namespace ns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;

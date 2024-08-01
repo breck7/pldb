@@ -20,6 +20,8 @@ printUsageStatsParser
     return this.stats
   }
 
+// todo: these should not be keywords in stdlib, but should be made through componsition of more reusable parsers in a dataflow style.
+
 printLeetSheetParser
  description Print Scroll parser leet sheet.
  extends abstractScrollParser

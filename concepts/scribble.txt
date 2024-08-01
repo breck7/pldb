@@ -11,9 +11,13 @@ scribble is a programming language created in 1997 by Matthew Flatt.
 git clone https://github.com/racket/scribble
 
 - Tags: programming language
+ wrapsOn none
 - scribble is developed on GitHub and has 196 stars
+ wrapsOn none
 - Early development of scribble happened in https://github.com/racket
+ wrapsOn none
 - scribble is written in Racket, Tex, CSS, YAML, JavaScript, Markdown, HTML
+ wrapsOn none
 
 #lang scribble/doc
 @(require scribble/manual &quot;utils.rkt&quot;

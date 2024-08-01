@@ -12,10 +12,15 @@ git clone https://github.com/AssemblyScript/assemblyscript
 A TypeScript-like language for WebAssembly.
 
 - Tags: programming language
+ wrapsOn none
 - AssemblyScript is developed on GitHub and has 16,642 stars
+ wrapsOn none
 - Early development of AssemblyScript happened in The AssemblyScript Project
+ wrapsOn none
 - AssemblyScript is written in TypeScript, WebAssembly, JSON, JavaScript, Markdown, YAML, HTML, SVG, XML
+ wrapsOn none
 - assemblyscript.org was registered in 2017
+ wrapsOn none
 
 /** Calculates the n-th Fibonacci number. */
 export function fib(n: i32): i32 {

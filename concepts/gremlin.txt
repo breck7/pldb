@@ -12,8 +12,11 @@ Gremlin is a graph traversal language and virtual machine developed by Apache Ti
  https://en.wikipedia.org/wiki/Gremlin_(programming_language) Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of Gremlin happened in https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
+ wrapsOn none
 - See also: (8 related languages) Regular Expressions, XPath, SPARQL, SQL, Java, JVM, Groovy, Scala
+ wrapsOn none
 
 g.V().hasLabel(&#39;movie&#39;).values(&#39;year&#39;).min()
 

@@ -13,10 +13,15 @@ git clone https://github.com/SerenityOS/jakt
 Jakt is a memory-safe systems programming language. It currently transpiles to C++.
 
 - Tags: programming language
+ wrapsOn none
 - Jakt is developed on GitHub and has 2,795 stars
+ wrapsOn none
 - Early development of Jakt happened in https://github.com/SerenityOS/
+ wrapsOn none
 - Jakt compiles to C++
+ wrapsOn none
 - Jakt is written in C++, JSON, Markdown, YAML, TypeScript, CMake, Python, Bourne shell, Vim script, JavaScript, XML, Nix, Lisp, Lua, Dockerfile
+ wrapsOn none
 
 function main() {
    let x = (&quot;a&quot;, 2, true)

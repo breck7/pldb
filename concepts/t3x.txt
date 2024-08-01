@@ -11,11 +11,15 @@ T3X is a programming language created in 1995 by Nils M Holm.
 T3X is a small, portable, procedural, block-structured, recursive, almost typeless, and to some degree object-oriented programming language. Its syntax is similar to Pascal, its semantics resembles BCPL's.
 
 - Tags: programming language
+ wrapsOn none
 - T3X on HOPL
  https://hopl.info/showlanguage.prx?exp=2549 T3X on HOPL
+ wrapsOn none
 - t3x.org was registered in 2000
+ wrapsOn none
 - Read more about T3X on the web: 1.
  https://news.ycombinator.com/item?id=14273177 1.
+ wrapsOn none
 
 USE t3x: t;
 DO t.write(T3X.SYSOUT, &quot;Hello, World!\n&quot;, 14); END

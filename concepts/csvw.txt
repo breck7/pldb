@@ -13,11 +13,16 @@ git clone https://github.com/w3c/csvw
 The CSV on the Web Working Group has developed standard ways to express useful metadata about CSV files and other kinds of tabular data.
 
 - Tags: dataValidationLanguage
+ wrapsOn none
 - CSVw is developed on GitHub and has 162 stars
+ wrapsOn none
 - Early development of CSVw happened in CSV on the Web Working Group and CSV on the Web Community Group
+ wrapsOn none
 - CSVw is written in JSON, CSV, HTML, Markdown, JavaScript, Bourne shell, SVG, XML, Ruby, HAML, CSS, Python, YAML
+ wrapsOn none
 - Read more about CSVw on the web: 1.
  https://www.w3.org/TR/tabular-data-primer/ 1.
+ wrapsOn none
 
 {
   &quot;@context&quot;: &quot;http://www.w3.org/ns/csvw&quot;,

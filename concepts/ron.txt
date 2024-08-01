@@ -13,9 +13,13 @@ git clone https://github.com/ron-rs/ron
 RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
 
 - Tags: dataNotation
+ wrapsOn none
 - Ron is developed on GitHub and has 3,238 stars
+ wrapsOn none
 - Early development of Ron happened in https://github.com/ron-rs
+ wrapsOn none
 - Ron is written in Rust, Markdown, YAML, TOML
+ wrapsOn none
 
 GameConfig( // optional struct name
     window_size: (800, 600),

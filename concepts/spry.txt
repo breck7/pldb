@@ -13,9 +13,13 @@ git clone https://github.com/gokr/spry
 Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
 
 - Tags: programming language
+ wrapsOn none
 - spry is developed on GitHub and has 389 stars
+ wrapsOn none
 - Early development of spry happened in https://sprylang.se/about.html
+ wrapsOn none
 - spry is written in Bourne shell, Nim, JavaScript, Markdown, Python, HTML, R, YAML, JSON
+ wrapsOn none
 
 # Let&#39;s add a method to:do: that works as in Smalltalk.
 # Methods take the first argument, the &quot;receiver&quot;, from the left

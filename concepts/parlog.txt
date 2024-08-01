@@ -13,9 +13,12 @@ Parlog is a logic programming language designed for efficient utilization of par
  https://en.wikipedia.org/wiki/Parlog Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Parlog happened in Imperial College, London
+ wrapsOn none
 - Parlog on HOPL
  https://hopl.info/showlanguage.prx?exp=1049 Parlog on HOPL
+ wrapsOn none
 
 mode qsort(list?,sorted_list^).
 qsort([N|Rest],Sorted) &lt;-

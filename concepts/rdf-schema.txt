@@ -11,7 +11,9 @@ RDF Schema (Resource Description Framework Schema, variously abbreviated as RDFS
  https://en.wikipedia.org/wiki/RDF_Schema Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Early development of RDF Schema happened in World Wide Web Consortium
+ wrapsOn none
 
 @prefix rdf:   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs:   &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .

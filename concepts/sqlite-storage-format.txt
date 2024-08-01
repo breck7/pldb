@@ -10,6 +10,9 @@ sqlite-storage-format is a binary data format created in 2000.
 The complete state of an SQLite database is usually contained in a single file on disk called the "main database file". During a transaction, SQLite stores additional information in a second file called the "rollback journal", or if SQLite is in WAL mode, a write-ahead log file.
 
 - Tags: binaryDataFormat
+ wrapsOn none
 - Early development of sqlite-storage-format happened in  Hipp, Wyrick & Company, Inc
+ wrapsOn none
 - Read more about sqlite-storage-format on the web: 1.
  https://www.sqlite.org/fileformat.html#:~:text=The%20complete%20state%20of%20an,a%20write%2Dahead%20log%20file. 1.
+ wrapsOn none

@@ -12,7 +12,9 @@ Multidimensional Expressions (MDX) is a query language for online analytical pro
  https://en.wikipedia.org/wiki/MultiDimensional_eXpressions Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of MultiDimensional eXpressions happened in Microsoft
+ wrapsOn none
 
 SELECT
    { [Measures].[Store Sales] } ON COLUMNS,

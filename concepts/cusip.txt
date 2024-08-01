@@ -11,7 +11,9 @@ A CUSIP is a nine-character alphanumeric code that identifies a North American f
  https://en.wikipedia.org/wiki/CUSIP Read more on Wikipedia...
 
 - Tags: schema
+ wrapsOn none
 - Early development of Committee on Uniform Security Identification Procedures happened in Committee on Uniform Security Identification Procedures
+ wrapsOn none
 
 algorithm Cusip-Check-Digit(cusip) is
    Input: an 8-character CUSIP

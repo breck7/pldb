@@ -13,12 +13,18 @@ git clone https://github.com/qpdb/mentat
 Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
 
 - Tags: queryLanguage
+ wrapsOn none
 - Project Mentat is developed on GitHub and has 52 stars
+ wrapsOn none
 - Early development of Project Mentat happened in Mozilla Foundation
+ wrapsOn none
 - Project Mentat is written in HTML, Rust, JavaScript, Java, TOML, XML, Swift, Markdown, YAML, CSS, JSON, Gradle, Bourne shell, Python, Dockerfile, SVG, Kotlin, Make
+ wrapsOn none
 - See also: (3 related languages) datascript, Datomic, SQLite
+ wrapsOn none
 - Read more about Project Mentat on the web: 1.
  https://mozilla.github.io/mentat 1.
+ wrapsOn none
 
 {:db/id          :person/email
  :db/valueType   :db.type/string

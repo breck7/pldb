@@ -13,15 +13,23 @@ git clone https://github.com/c3lang/c3c
 C3 is a programming language that builds on the syntax and semantics of the C language, with the goal of evolving it while still retaining familiarity for C programmers.
 
 - Tags: programming language
+ wrapsOn none
 - C3 is developed on GitHub and has 1,665 stars
+ wrapsOn none
 - Early development of C3 happened in The C3 Language Project
+ wrapsOn none
 - C3 is written in C, Markdown, JSON, YAML, Python, Yacc, CMake, C++, Lex, Bourne shell, Dockerfile, Make
+ wrapsOn none
 - Explore C3 snippets on Rosetta Code
+ wrapsOn none
 - c3-lang.org was registered in 2019
+ wrapsOn none
 - Read more about C3 on the web: 1. 2.
  https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdpuki/ 1.
  https://news.ycombinator.com/item?id=32005678 2.
+ wrapsOn none
 - 1 PLDB concepts link to C3: C2
+ wrapsOn none
 
 module stack &lt;Type&gt;;
 // Above: the parameterized type is applied to the entire module.

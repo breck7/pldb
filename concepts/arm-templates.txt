@@ -10,10 +10,14 @@ ARM Templates is a json format created in 2017.
 Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your project.
 
 - Tags: jsonFormat
+ wrapsOn none
 - Early development of ARM Templates happened in Microsoft
+ wrapsOn none
 - Read more about ARM Templates on the web: 1.
  https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/ 1.
+ wrapsOn none
 - 1 PLDB concepts link to ARM Templates: Bicep
+ wrapsOn none
 
 &quot;properties&quot;: {
   &quot;publisher&quot;: &quot;Microsoft.Azure.Extensions&quot;,

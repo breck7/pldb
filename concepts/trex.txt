@@ -11,7 +11,9 @@ Trex, aka Tree Regular Expressions for XML, is a grammar language created in 200
 TREX is a new language for validating XML documents. A TREX pattern specifies a pattern for the structure and content of an XML document. A TREX pattern thus identifies a class of XML documents consisting of those documents that match the pattern. A TREX pattern is itself an XML document.
 
 - Tags: grammarLanguage
+ wrapsOn none
 - See also: (1 related languages) DTD
+ wrapsOn none
 
 &lt;element name=&quot;addressBook&quot;&gt;
   &lt;zeroOrMore&gt;

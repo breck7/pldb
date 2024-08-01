@@ -10,9 +10,12 @@ webql is a query language created in 2001.
 WebQL was developed by QL2 Softaware in 2006. It is used for data integration and collection of unstructured and structured sources including the Web, PDF and Word documents, spreadsheets, email repositories, corporate data stores and more. It is also capable of Optical Character Recognition that enables it to retrive text within images. WebQL also support XML data of arbitrary size, and APIs for embedding WebQL in C, Java or .NET programs.
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of webql happened in QL2 Software
+ wrapsOn none
 - Read more about webql on the web: 1.
  https://wikivisually.com/wiki/WebQL 1.
+ wrapsOn none
 
 select
   URL,

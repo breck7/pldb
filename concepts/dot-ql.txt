@@ -11,8 +11,11 @@
  https://en.wikipedia.org/wiki/.QL Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of .QL happened in Semmle Inc
+ wrapsOn none
 - See also: (3 related languages) Datalog, SQL, Java
+ wrapsOn none
 
 1  from Class c, int numOfMethods
 2  where numOfMethods = count(Method m| m.getDeclaringType()=c

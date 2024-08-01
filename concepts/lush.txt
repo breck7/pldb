@@ -14,11 +14,15 @@ git clone https://sourceforge.net/projects/lush/
 Lush is an object-oriented programming language designed for researchers, experimenters, and engineers interested in large-scale numerical and graphic applications. Lush is designed to be used in situations where one would want to combine the flexibility of a high-level, weakly-typed interpreted language, with the efficiency of a strongly-typed, natively-compiled language
 
 - Tags: programming language
+ wrapsOn none
 - Explore Lush snippets on Rosetta Code
+ wrapsOn none
 - Lush on HOPL
  https://hopl.info/showlanguage.prx?exp=8596 Lush on HOPL
+ wrapsOn none
 - Read more about Lush on the web: 1.
  http://wiki.c2.com/?LushLanguage 1.
+ wrapsOn none
 
 (for (i 1 100)
      (for (j 1 100)

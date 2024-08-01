@@ -14,15 +14,24 @@ git clone https://github.com/Azure/bicep
 Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
 
 - Tags: jsonFormat
+ wrapsOn none
 - Bicep is developed on GitHub and has 3,181 stars
+ wrapsOn none
 - There are at least 2,562 Bicep repos on GitHub
+ wrapsOn none
 - Early development of Bicep happened in Microsoft
+ wrapsOn none
 - Bicep compiles to ARM Templates
+ wrapsOn none
 - Bicep is written in C#, JSON, TypeScript, SVG, XML, HTML, Markdown, YAML, JavaScript, PowerShell, Bourne shell, CSS
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 13 users using Bicep in 17 repos on GitHub
+ wrapsOn none
 - Monaco package for syntax highlighting Bicep
+ wrapsOn none
 - Read more about Bicep on the web: 1.
  https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/ 1.
+ wrapsOn none
 
 @minLength(3)
 @maxLength(11)

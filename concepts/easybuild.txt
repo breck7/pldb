@@ -13,10 +13,15 @@ git clone https://github.com/easybuilders/easybuild
 EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
 
 - Tags: application
+ wrapsOn none
 - Easybuild is developed on GitHub and has 457 stars
+ wrapsOn none
 - Early development of Easybuild happened in https://github.com/easybuilders/
+ wrapsOn none
 - Easybuild is written in YAML, Bourne shell, Python, reStructuredText, Markdown
+ wrapsOn none
 - GitHub supports syntax highlighting for Easybuild
+ wrapsOn none
 
 # not really (there&#39;s an EB_bzip2 easyblock), but fine for use in unit tests
 easyblock = &#39;ConfigureMake&#39;

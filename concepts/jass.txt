@@ -11,8 +11,11 @@ JASS and JASS2 (sometimes said to stand for Just Another Scripting Syntax) is a 
  https://en.wikipedia.org/wiki/JASS Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Just Another Scripting Syntax happened in Blizzard Entertainment, Inc
+ wrapsOn none
 - See also: (1 related languages) Java
+ wrapsOn none
 
 function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
  call PreloadGenEnd(&quot;.\\redist\\miles\\Mp3enc.asi&quot;)

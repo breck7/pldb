@@ -11,7 +11,10 @@ Property Specification Language (PSL) is a temporal logic extending Linear tempo
  https://en.wikipedia.org/wiki/Property_Specification_Language Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Property Specification Language happened in Accellera Systems Initiative
+ wrapsOn none
 - See also: (3 related languages) VHDL, Verilog, SystemVerilog
+ wrapsOn none
 
 ((true[*]; req; ack)  |=&gt; (start; data[*3]; end) @ clk

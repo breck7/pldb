@@ -13,10 +13,15 @@ git clone https://github.com/tamamu/macchiato
 An AltJS of a dialect of Lisp
 
 - Tags: programming language
+ wrapsOn none
 - Macchiato is developed on GitHub and has 0 stars
+ wrapsOn none
 - Early development of Macchiato happened in https://github.com/tamamu/macchiato/issues
+ wrapsOn none
 - Macchiato compiles to JavaScript
+ wrapsOn none
 - Macchiato is written in Elixir, Markdown
+ wrapsOn none
 
 (defn inc (x) (+ 1 x))
 (defn fizzbuzz (n)

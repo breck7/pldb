@@ -13,9 +13,13 @@ git clone https://github.com/matz/streem
 Streem is a stream based concurrent scripting language. It is based on a programming model similar to the shell, with influences from Ruby, Erlang, and other functional programming languages.
 
 - Tags: programming language
+ wrapsOn none
 - Streem is developed on GitHub and has 4,601 stars
+ wrapsOn none
 - Early development of Streem happened in Ruby Association,NaCl
+ wrapsOn none
 - Streem is written in C, Markdown, YAML, Make, Bourne shell, Yacc, Lex, Dockerfile
+ wrapsOn none
 
 # channel to broadcast to all clients
 broadcast = chan()

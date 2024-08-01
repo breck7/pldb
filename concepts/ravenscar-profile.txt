@@ -11,8 +11,11 @@ The Ravenscar profile is a subset of the Ada tasking features designed for safet
  https://en.wikipedia.org/wiki/Ravenscar_profile Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Ravenscar profile happened in University of York
+ wrapsOn none
 - See also: (2 related languages) Ada, Apache Spark
+ wrapsOn none
 
 pragma Task_Dispatching_Policy (FIFO_Within_Priorities);
 pragma Locking_Policy (Ceiling_Locking);

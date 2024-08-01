@@ -13,9 +13,13 @@ git clone https://github.com/hypered/slab
 Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
 
 - Tags: text markup language
+ wrapsOn none
 - Slab is developed on GitHub and has 38 stars
+ wrapsOn none
 - Slab compiles to HTML
+ wrapsOn none
 - Slab is written in HTML, Haskell, Nix, Bourne shell, JSON, YAML, CSS, Markdown, Dockerfile
+ wrapsOn none
 
 frag page(titl)
   doctype html

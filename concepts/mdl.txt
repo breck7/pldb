@@ -11,9 +11,13 @@ MDL (the MIT Design Language) is a descendant of the Lisp programming language. 
  https://en.wikipedia.org/wiki/MDL_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of MDL happened in Massachusetts Institute of Technology
+ wrapsOn none
 - Explore MDL snippets on Rosetta Code
+ wrapsOn none
 - See also: (6 related languages) Scheme, Common Lisp, Java, Prolog, Smalltalk, Simula
+ wrapsOn none
 
 &lt;DEFINE EXIT-TO (EXITS RMS)
         #DECL ((EXITS) EXIT (RMS) &lt;UVECTOR [REST ROOM]&gt;)

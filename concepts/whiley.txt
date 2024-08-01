@@ -15,12 +15,19 @@ Whiley is an experimental programming language that combines features from the f
  https://en.wikipedia.org/wiki/Whiley_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Whiley is developed on GitHub and has 216 stars
+ wrapsOn none
 - There are at least 2 Whiley repos on GitHub
+ wrapsOn none
 - Whiley is written in Java, Markdown, YAML
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Whiley in 1 repos on GitHub
+ wrapsOn none
 - Pygments supports syntax highlighting for Whiley
+ wrapsOn none
 - whiley.org was registered in 2009
+ wrapsOn none
 
 // Define the type of natural numbers
 type nat is (int x) where x &gt;= 0

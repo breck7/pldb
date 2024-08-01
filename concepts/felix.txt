@@ -13,12 +13,18 @@ git clone https://github.com/felix-lang/felix
 The Felix Programming Language
 
 - Tags: programming language
+ wrapsOn none
 - Felix is developed on GitHub and has 799 stars
+ wrapsOn none
 - Early development of Felix happened in felix-language@googlegroups.com
+ wrapsOn none
 - Felix is written in OCaml, reStructuredText, Python, C, C++, Make, HTML, Tex, Bourne shell, Elixir, SVG, Markdown, Haskell, YAML, Vim script, XML, Scala, Java, Perl, Ada, CSS, Pascal, Lisp, M4, XHTML, Clojure, Objective-C, Bash, Nix
+ wrapsOn none
 - Pygments supports syntax highlighting for Felix
+ wrapsOn none
 - Read more about Felix on the web: 1.
  http://web.archive.org/web/20080415185225/http://felix-lang.org/ 1.
+ wrapsOn none
 
 #import &lt;flx.flxh&gt;
 fun abs_div(a:int, b:int when b!=0)

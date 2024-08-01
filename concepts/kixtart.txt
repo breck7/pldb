@@ -11,9 +11,13 @@ KiXtart is a closed source free-format scripting language for Windows. It is des
  https://en.wikipedia.org/wiki/KiXtart Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of KiXtart happened in https://github.com/kivy
+ wrapsOn none
 - kixtart.org was registered in 1999
+ wrapsOn none
 - See also: (3 related languages) ISBN, FastTrack Scripting Host, AutoIt
+ wrapsOn none
 
 ; Read value from registry
 $ProductID = ReadValue(&quot;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion&quot;,&quot;ProductId&quot;)

@@ -13,8 +13,11 @@ git clone https://github.com/texodus/forml/
 A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
 
 - Tags: programming language
+ wrapsOn none
 - Forml is developed on GitHub and has 76 stars
+ wrapsOn none
 - Early development of Forml happened in https://github.com/texodus
+ wrapsOn none
 
     hello_world = do
         `console.log(&quot;Hello World&quot;)` -- Calls to Javascript always return type `JS a`

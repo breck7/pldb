@@ -12,8 +12,11 @@ vi is a screen-oriented text editor originally created for the Unix operating sy
  https://en.wikipedia.org/wiki/Vi Read more on Wikipedia...
 
 - Tags: editor
+ wrapsOn none
 - See also: (8 related languages) C, Unix, Emacs, Ruby, Solaris, FreeBSD, Vim, UTF-8
+ wrapsOn none
 - 1 PLDB concepts link to vi: Vim
+ wrapsOn none
 
 The following tab indented lines will cause a true vi with modelines
 activated to infinitely loop putting &quot;Hello World&quot; in the buffer. Hit

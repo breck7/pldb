@@ -11,8 +11,11 @@ OptimJ is an extension of the Java with language support for writing optimizatio
  https://en.wikipedia.org/wiki/OptimJ Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of OptimJ happened in Ateji
+ wrapsOn none
 - See also: (2 related languages) Java, Algebraic modeling language
+ wrapsOn none
 
 // select name from persons where age &gt; 18
   `multiSet(){ p.name | Person p : persons, :p.age &gt; 18 }

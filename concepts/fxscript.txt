@@ -11,7 +11,9 @@ FXScript is a scripting language for Final Cut Pro and Final Cut Express.  FXBui
  https://en.wikipedia.org/wiki/FXScript Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of FXScript happened in Apple
+ wrapsOn none
 
 scale(Region, CenterOfScale, 0.5, 0.5);
 blitrect(ImageBuffer, OrigRegion, Destination-Buffer, Region);

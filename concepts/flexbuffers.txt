@@ -10,7 +10,11 @@ flexbuffers is an interface design language created in 2014.
 A schemaless binary encoding. This is a binary format that can be used in conjunction with FlatBuffers (by storing a part of a buffer in FlexBuffers format), or also as its own independent serialization format.
 
 - Tags: interface design language
+ wrapsOn none
 - Early development of flexbuffers happened in Google
+ wrapsOn none
 - See also: (1 related languages) FlatBuffers
+ wrapsOn none
 - Read more about flexbuffers on the web: 1.
  https://google.github.io/flatbuffers/flatbuffers_internals.html 1.
+ wrapsOn none

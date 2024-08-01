@@ -13,9 +13,13 @@ git clone https://github.com/sqlalchemy/sqlalchemy
 The Database Toolkit for Python
 
 - Tags: queryLanguage
+ wrapsOn none
 - Sqlalchemy is developed on GitHub and has 9,224 stars
+ wrapsOn none
 - Early development of Sqlalchemy happened in https://www.sqlalchemy.org/support.html
+ wrapsOn none
 - Sqlalchemy is written in Python, reStructuredText, YAML, Markdown, Ini, Make, Tex, TOML, Cython
+ wrapsOn none
 
 SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
 FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by

@@ -13,8 +13,10 @@ XQL is a query language created in 1998 by Hiroshi Ishikawa and Kazumi Kubota an
 XQL: A Query Language for XML Data
 
 - Tags: queryLanguage
+ wrapsOn none
 - Read more about XQL on the web: 1.
  https://www.w3.org/TandS/QL/QL98/pp/flab.txt 1.
+ wrapsOn none
 
 select result:&lt;$book.title, $book.author&gt;
 from bib:URL &quot;www.a.b.c/bib.xml&quot;, book:$bib.book

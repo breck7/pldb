@@ -12,12 +12,19 @@ Terse RDF Triple Language (Turtle) is a syntax and file format for expressing da
  https://en.wikipedia.org/wiki/Turtle_(syntax) Read more on Wikipedia...
 
 - Tags: dataNotation
+ wrapsOn none
 - There are at least 137 Turtle repos on GitHub
+ wrapsOn none
 - Turtle LSP implementation
+ wrapsOn none
 - Pygments supports syntax highlighting for Turtle
+ wrapsOn none
 - GitHub supports syntax highlighting for Turtle
+ wrapsOn none
 - See also: (4 related languages) RDF, SPARQL, XML, UTF-8
+ wrapsOn none
 - 3 PLDB concepts link to Turtle: N-Triples, Notation3, TriG syntax
+ wrapsOn none
 
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .

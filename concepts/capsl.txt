@@ -10,6 +10,9 @@ Common Authentication Protocol Specification Language is a programming language 
 a high-level language to support security analysis of cryptographic authentication and key distribution protocols. It is translated to CIL, an intermediate language expressing state transitions with term-rewriting rules. Connectors are being written to adapt CIL to supply input to different security analysis tools, including PVS for inductive verification and Maude for model-checking.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Common Authentication Protocol Specification Language happened in SRI International
+ wrapsOn none
 - Read more about Common Authentication Protocol Specification Language on Semantic Scholar: 1.
  https://pdfs.semanticscholar.org/696d/b0556e653f96d0de57c5e6d1ca1634de08fb.pdf 1.
+ wrapsOn none

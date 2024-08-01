@@ -13,11 +13,17 @@ git clone https://github.com/phel-lang/phel-lang
 Phel is a functional programming language that transpiles to PHP. A Lisp dialect inspired by Clojure and Janet.
 
 - Tags: programming language
+ wrapsOn none
 - Phel is developed on GitHub and has 413 stars
+ wrapsOn none
 - Early development of Phel happened in https://github.com/phel-lang
+ wrapsOn none
 - Phel compiles to PHP
+ wrapsOn none
 - Phel is written in PHP, Markdown, JSON, YAML, SVG, XML, Bourne shell, Dockerfile
+ wrapsOn none
 - phel-lang.org was registered in 2020
+ wrapsOn none
 
  (ns hello-world\boot)
 

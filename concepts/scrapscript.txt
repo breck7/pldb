@@ -11,8 +11,10 @@ Scrapscript is a programming language created in 2023 by Taylor Troesh.
 All programs are data, expressions are content-addressable "scraps".Scrapscript rejects traditional package-management. Instead, “scrapyards” combine features from Smalltalk, Hackage, IPFS, GitHub, and StackOverflow.
 
 - Tags: programming language
+ wrapsOn none
 - Read more about Scrapscript on the web: 1.
  https://news.ycombinator.com/item?id=35712163 1.
+ wrapsOn none
 
 greet &lt;| person:ron 3
 

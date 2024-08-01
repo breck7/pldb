@@ -10,11 +10,15 @@ Loom is a knowledge base created in 1987.
 Loom is a language and environment for constructing intelligent applications. The heart of Loom is a knowledge representation system that is used to provide deductive support for the declarative portion of the Loom language. Declarative knowledge in Loom consists of definitions, rules, facts, and default rules. A deductive engine called a classifier utilizes forward-chaining, semantic unification and object-oriented truth maintainance technologies in order to compile the declarative knowledge into a network designed to efficiently support on-line deductive query processing.
 
 - Tags: knowledgeBase
+ wrapsOn none
 - Early development of Loom happened in Information Sciences Institute
+ wrapsOn none
 - Loom on HOPL
  https://hopl.info/showlanguage.prx?exp=3991 Loom on HOPL
+ wrapsOn none
 - Read more about Loom on Semantic Scholar: 1.
  https://semanticscholar.org/paper/6031b724f174da0069ea61ffa9da928adb090b24 1.
+ wrapsOn none
 
 (defconcept air-base
              :is-primitive

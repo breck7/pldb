@@ -11,6 +11,8 @@ chomski virtual machine  (named after the noted linguist Noam Chomsky) and pp (t
  https://en.wikipedia.org/wiki/Chomski Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - See also: (5 related languages) sed, Unix, grep, Unicode, C
+ wrapsOn none
 
 cat inputFileName | chomski -s &#39;[-n]{plus;} &lt;&gt;{count;print;}&#39;

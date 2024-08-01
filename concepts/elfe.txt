@@ -13,9 +13,13 @@ git clone https://github.com/c3d/elfe
 ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
 
 - Tags: programming language
+ wrapsOn none
 - ELFE is developed on GitHub and has 92 stars
+ wrapsOn none
 - Early development of ELFE happened in https://dinechin.org
+ wrapsOn none
 - ELFE is written in C++, Bash, YAML, Make, Markdown, awk
+ wrapsOn none
 
 invoke &quot;sensor.corp.net&quot;,
     last_temperature := temperature

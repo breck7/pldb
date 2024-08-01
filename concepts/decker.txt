@@ -11,7 +11,9 @@ Decker is a programming language created in 2022 by John Earnest.
 Decker is a multimedia platform for creating and sharing interactive documents, with sound, images, hypertext, and scripted behavior.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Decker happened in https://beyondloom.com/decker/
+ wrapsOn none
 
 on click do
  display.text: 3*display.text

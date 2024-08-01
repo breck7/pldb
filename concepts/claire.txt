@@ -12,10 +12,14 @@ Claire is a high-level functional and object-oriented programming language with 
  https://en.wikipedia.org/wiki/Claire_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of CLAIRE happened in Bouygues' e-Lab research laboratory
+ wrapsOn none
 - CLAIRE on HOPL
  https://hopl.info/showlanguage.prx?exp=1902 CLAIRE on HOPL
+ wrapsOn none
 - See also: (10 related languages) Smalltalk, SETL, OPS5, Lisp, ML, C, Java, OCaml, Scala, F#
+ wrapsOn none
 
 fib(n:integer) : integer
 -&gt; (if (n &lt; 2) 1

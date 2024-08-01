@@ -13,9 +13,12 @@ StruQL is a query language created in 1999 by Mary Fernández and Dan Suciu and 
 A StruQL query is a function from a set of input graphs to an output graph.
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of StruQL happened in AT&T Labs and North Dakota State University
+ wrapsOn none
 - Read more about StruQL on the web: 1.
  https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf 1.
+ wrapsOn none
 
  // Link root page to page of all accounts
  link Root() -&gt; &quot;Accounts&quot; -&gt; AccountsPage()

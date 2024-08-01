@@ -13,10 +13,15 @@ git clone https://github.com/stanford-ppl/spatial
 Spatial: A High Level Programming Language for FPGAs
 
 - Tags: programming language
+ wrapsOn none
 - Spatial is developed on GitHub and has 271 stars
+ wrapsOn none
 - Early development of Spatial happened in Stanford University
+ wrapsOn none
 - Spatial is written in Scala, XML, Tcl, VHDL, HTML, Make, Bourne shell, C++, Scheme, Python, Ini, C, CSV, Bash, Markdown, Tex, Diff, YAML
+ wrapsOn none
 - spatial-lang.org was registered in 2018
+ wrapsOn none
 
 import spatial.dsl._
 

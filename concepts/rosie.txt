@@ -12,10 +12,15 @@ git clone https://gitlab.com/rosie-pattern-language/rosie
 RPL is a variant of modern Regular Expressions (regex) that is designed to scale to big data, many developers, and large collections of patterns.  If you use regex, you already know a lot of RPL.
 
 - Tags: queryLanguage
+ wrapsOn none
 - rosie on GitLab
  https://gitlab.com/rosie-pattern-language/rosie rosie on GitLab
+ wrapsOn none
 - Early development of rosie happened in https://gitlab.com/rosie-pattern-language
+ wrapsOn none
 - rosie is written in Lua, C, Markdown, Bourne shell, Make, HTML, Bash, CSV, Vim script, Python, Lisp, CSS, YAML
+ wrapsOn none
 - rosie-lang.org was registered in 2016
+ wrapsOn none
 
 rosie --rpl &#39;d = [:digit:]&#39; -o json match d

@@ -14,13 +14,21 @@ git clone https://github.com/google/jsonnet
 Jsonnet - The data templating language
 
 - Tags: dataNotation
+ wrapsOn none
 - Jsonnet is developed on GitHub and has 6,861 stars
+ wrapsOn none
 - There are at least 1,430 Jsonnet repos on GitHub
+ wrapsOn none
 - Jsonnet is a superset of JSON
+ wrapsOn none
 - Early development of Jsonnet happened in Google
+ wrapsOn none
 - Jsonnet is written in JavaScript, HTML, C++, SVG, Bourne shell, Python, Markdown, Bazel, YAML, CMake, JSON, CSS, Java, C, Bash, starlark, XML, Make, Dockerfile
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 104 users using Jsonnet in 190 repos on GitHub
+ wrapsOn none
 - jsonnet.org was registered in 2015
+ wrapsOn none
 
 // A function that returns an object.
 local Person(name=&#39;Alice&#39;) = {

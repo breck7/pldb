@@ -13,9 +13,13 @@ git clone https://github.com/amitkaps/visdown
 Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
 
 - Tags: text markup language
+ wrapsOn none
 - visdown is developed on GitHub and has 663 stars
+ wrapsOn none
 - visdown is written in JavaScript, Markdown, SVG, CSV, JSON, CSS, HTML
+ wrapsOn none
 - visdown.com was registered in 2017
+ wrapsOn none
 
 ```vis
 data:

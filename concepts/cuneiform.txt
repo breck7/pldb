@@ -12,10 +12,15 @@ git clone https://github.com/joergen7/cuneiform/
 Cuneiform distributed programming language
 
 - Tags: programming language
+ wrapsOn none
 - cuneiform is developed on GitHub and has 230 stars
+ wrapsOn none
 - Early development of cuneiform happened in BiobankCloud
+ wrapsOn none
 - cuneiform is written in Erlang, YAML, Markdown, Dockerfile, Bash
+ wrapsOn none
 - cuneiform-lang.org was registered in 2015
+ wrapsOn none
 
 def greet() -&gt; &lt;out : Str&gt;
 in Bash *{

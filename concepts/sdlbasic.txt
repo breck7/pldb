@@ -11,8 +11,11 @@ SdlBasic is a multiplatform interpreter for BASIC, using the SDL libraries.  Its
  https://en.wikipedia.org/wiki/SdlBasic Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of SdlBasic happened in https://sourceforge.net/p/sdlbasic/mailman/sdlbasic-developers
+ wrapsOn none
 - See also: (2 related languages) BASIC, WxBasic
+ wrapsOn none
 
 Function swap( a, b )
     tmp = a

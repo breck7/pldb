@@ -11,8 +11,11 @@ In computer science, a parsing expression grammar, or PEG, is a type of analytic
  https://en.wikipedia.org/wiki/Parsing_expression_grammar Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Pygments supports syntax highlighting for PEG
+ wrapsOn none
 - See also: (1 related languages) Regular Expressions
+ wrapsOn none
 
 Expr    ← Sum
 Sum     ← Product ((&#39;+&#39; / &#39;-&#39;) Product)*

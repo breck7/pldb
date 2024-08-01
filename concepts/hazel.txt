@@ -16,11 +16,17 @@ git clone https://github.com/hazelgrove/hazel
 Hazel is a live functional programming environment organized around typed holes. Hazel is a live functional programming environment that is able to typecheck, manipulate, and even run incomplete programs, i.e. programs with holes. There are no meaningless editor states.
 
 - Tags: programming language, visual programming language
+ wrapsOn none
 - Hazel is developed on GitHub and has 724 stars
+ wrapsOn none
 - Early development of Hazel happened in University of Michigan
+ wrapsOn none
 - Hazel compiles to JavaScript
+ wrapsOn none
 - Hazel is written in Reason, Markdown, OCaml, CSS, Tex, YAML, Make, HTML, SVG
+ wrapsOn none
 - hazel.org was registered in 1997
+ wrapsOn none
 
 let v = {} in
 v : num

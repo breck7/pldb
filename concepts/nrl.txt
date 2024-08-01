@@ -8,9 +8,12 @@ Namespace Routing Language is a xml format created in 2003.
 21 Years Old
 
 - Tags: xmlFormat
+ wrapsOn none
 - Early development of Namespace Routing Language happened in Thai Open Source Software Center Ltd
+ wrapsOn none
 - Read more about Namespace Routing Language on the web: 1.
  https://relaxng.org/jclark/nrl.html 1.
+ wrapsOn none
 
 &lt;rules xmlns=&quot;http://www.thaiopensource.com/validate/nrl&quot;&gt;
  &lt;namespace ns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;

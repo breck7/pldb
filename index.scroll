@@ -5,8 +5,8 @@ import rootHeader.scroll
 
 <center>
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
- wrap ~ span style="color:black;"
- wrap % span style="color:#828282;"
+ inlineMarkup ~ span style="color:black;"
+ inlineMarkup % span style="color:#828282;"
 
 import searchForm.scroll
 import topLangs.scroll

@@ -12,14 +12,22 @@ Cilk, Cilk++ and Cilk Plus are general-purpose programming languages designed fo
  https://en.wikipedia.org/wiki/Cilk Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 1 CIL repos on GitHub
+ wrapsOn none
 - Early development of CIL happened in Intel
+ wrapsOn none
 - Explore CIL snippets on Rosetta Code
+ wrapsOn none
 - CIL on HOPL
  https://hopl.info/showlanguage.prx?exp=1899 CIL on HOPL
+ wrapsOn none
 - CIL appears in the TIOBE Index
+ wrapsOn none
 - cilk.com was registered in 1999
+ wrapsOn none
 - See also: (4 related languages) C, OpenCL, NESL, UPC
+ wrapsOn none
 
 // y ← α x + y
  void axpy(int n, float alpha, const float *x, float *y)

@@ -14,10 +14,15 @@ Qore is an interpreted, high-level, general-purpose, garbage collected  dynamic 
  https://en.wikipedia.org/wiki/Qore_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Qore is developed on GitHub and has 58 stars
+ wrapsOn none
 - Early development of Qore happened in https://github.com/qorelanguage
+ wrapsOn none
 - Qore is written in C++, CMake, Bourne shell, Make, M4, YAML, Vim script, SVG, Assembly language, XML, HTML, Markdown, JSON, Lisp, CSS
+ wrapsOn none
 - qore.org was registered in 2008
+ wrapsOn none
 
 #!/usr/bin/env qore
 %exec-class HelloWorld

@@ -11,11 +11,16 @@ M4Sugar is a programming language created in 2003.
 M4 by itself provides only a small, but sufficient, set of all-purpose macros. M4sugar introduces additional generic macros. Its name was coined by Lars J. Aas: “Readability And Greater Understanding Stands 4 M4sugar”
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 0 M4Sugar repos on GitHub
+ wrapsOn none
 - Early development of M4Sugar happened in Free Software Foundation, Inc.
+ wrapsOn none
 - GitHub supports syntax highlighting for M4Sugar
+ wrapsOn none
 - Read more about M4Sugar on the web: 1.
  http://www6.gnu.org/software/autoconf/manual/autoconf.pdf 1.
+ wrapsOn none
 
 m4_define([m4_list_declare], [m4_do(
 	[m4_define([$1_GET], [m4_expand([m4_list_nth([$1], $][1)])])],

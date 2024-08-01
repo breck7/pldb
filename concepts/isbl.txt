@@ -11,7 +11,9 @@ ISBL (Information Systems Base Language) is the relational algebra notation that
  https://en.wikipedia.org/wiki/ISBL Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of ISBL happened in IBM
+ wrapsOn none
 
 OS = ORDERS * SUPPLIERS
 LIST OS: NAME=&quot;Brooks&quot; % SNAME, ITEM, PRICE

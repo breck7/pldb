@@ -15,26 +15,45 @@ Nim (formerly named Nimrod) is an imperative, multi-paradigm, compiled programmi
  https://en.wikipedia.org/wiki/Nim_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Nim is developed on GitHub and has 16,308 stars
+ wrapsOn none
 - There are at least 8,018 Nim repos on GitHub
+ wrapsOn none
 - Early development of Nim happened in https://github.com/nim-lang
+ wrapsOn none
 - Nim compiles to C or C++ or Objective-C or JavaScript
+ wrapsOn none
 - Nim is written in Nim, Markdown, HTML, YAML, C, Bourne shell, JSON, reStructuredText, Python, CSS, Assembly language, CSV, SQL, Tex, Ini, XML, Bash
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 299 users using Nim in 472 repos on GitHub
+ wrapsOn none
 - There are 36 Project Euler users using Nim
+ wrapsOn none
 - Explore Nim snippets on Rosetta Code
+ wrapsOn none
 - Nim appears in the TIOBE Index
+ wrapsOn none
 - Nim Ubuntu package
  https://packages.ubuntu.com/jammy/nim Nim Ubuntu package
+ wrapsOn none
 - Nim LSP implementation
+ wrapsOn none
 - GitHub supports syntax highlighting for Nim
+ wrapsOn none
 - Nim appears in the Quine Relay project
+ wrapsOn none
 - There is a central package repository for Nim
+ wrapsOn none
 - nim-lang.org was registered in 2014
+ wrapsOn none
 - See also: (25 related languages) Ada, Modula-3, Lisp, Object Pascal, Python, Oberon, C, JavaScript, Pascal, Delphi, C#, Go, Objective-C, iOS, Android, Git, JSON, OpenGL, PostgreSQL, MySQL, SQLite, Lua, Scala, D, Rust
+ wrapsOn none
 - Read more about Nim on the web: 1.
  https://irclogs.nim-lang.org/01-07-2012.html 1.
+ wrapsOn none
 - 13 PLDB concepts link to Nim: Ace Editor, cloc, FlatBuffers, Flow9, mal, Nim, Nimskull, pipelines, Pygments, shiv, spry, Star, Xidoc
+ wrapsOn none
 
 # Type your code here, or load an example.
 proc square(num: int): int {.exportc.} =

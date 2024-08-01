@@ -13,10 +13,14 @@ git clone https://codeberg.org/anaseto/goal
 Goal is a K-like language that brings in ideas from Perl and BQN and is written in Go.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Goal happened in https://bardinflor.perso.aquilenet.fr/index-en
+ wrapsOn none
 - Goal is written in Go, Markdown, CSV, HTML, CSS
+ wrapsOn none
 - Read more about Goal on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/zycdaq/goal_an_array_programming_language_written_in_go/ 1.
+ wrapsOn none
 
 / Handle command-line arguments: script name + optional file.
 (2&lt;#ARGS)and:error&quot;USAGE: goal wordstats.goal [file]&quot;

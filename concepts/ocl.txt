@@ -11,10 +11,13 @@ The Object Constraint Language (OCL) is a declarative language describing rules 
  https://en.wikipedia.org/wiki/Object_Constraint_Language Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of OCL happened in IBM
+ wrapsOn none
 - Read more about OCL on the web: 1. 2.
  http://www-st.inf.tu-dresden.de/ocl/ 1.
  https://www.omg.org/spec/OCL/2.2/PDF 2.
+ wrapsOn none
 
 context Person inv: self.age &gt;=0
 context Person inv: self.age&lt;18 implies self.cars-&gt;isEmpty()

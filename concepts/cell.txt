@@ -12,10 +12,15 @@ git clone https://github.com/cell-lang/compiler
 Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
 
 - Tags: programming language
+ wrapsOn none
 - Cell is developed on GitHub and has 113 stars
+ wrapsOn none
 - Early development of Cell happened in https://github.com/cell-lang
+ wrapsOn none
 - Cell is written in Markdown
+ wrapsOn none
 - cell-lang.net was registered in 2017
+ wrapsOn none
 
 type AddUser = add_user(
  id:            UserId,

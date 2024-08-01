@@ -13,9 +13,13 @@ git clone https://github.com/e-wrks/edh
 Edh is a dynamically & strongly typed, procedural (thus imperative), value-oriented (i.e. immutable first, yet with non-traditional Object constructs), interpreted programming language, that parasitic on GHC and heavily relying on the Haskell implementation of Software Transactional Memory for unified intuition of concurrency and data-consistency.
 
 - Tags: programming language
+ wrapsOn none
 - Đ is developed on GitHub and has 28 stars
+ wrapsOn none
 - Early development of Đ happened in https://github.com/e-wrks
+ wrapsOn none
 - Đ is written in Haskell, Markdown, Python, JSON, JavaScript, YAML
+ wrapsOn none
 
 method satExample() or ({generator _ ()
   for x1 from [true, false] do

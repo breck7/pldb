@@ -10,9 +10,12 @@ CCS is a programming language created in 1999.
 CCS is a proprietary scripting language for executing sequences of command-line interface (CLI) commands on NetMRI-supported network devices, to perform job automation tasks. If you know Cisco IOS, writing CCS scripts is relatively straightforward.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of CCS happened in Infoblox Inc
+ wrapsOn none
 - Read more about CCS on the web: 1.
  https://www.infoblox.com/wp-content/uploads/infoblox-eval-download-netmri-NetMRI_CCS_Scripting_Guide.pdf 1.
+ wrapsOn none
 
 Script-Filter:
 $Vendor eq &quot;Cisco&quot; and

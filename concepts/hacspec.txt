@@ -13,12 +13,19 @@ git clone https://github.com/hacspec/hacspec
 A specification language for crypto primitives and more in Rust.
 
 - Tags: programming language
+ wrapsOn none
 - hacspec is developed on GitHub and has 242 stars
+ wrapsOn none
 - Early development of hacspec happened in https://github.com/hacspec/hacspec/discussions
+ wrapsOn none
 - hacspec is written in Rust, Coq, TOML, Markdown, JSON, YAML, C, Make, Tex, Bourne shell, Dockerfile, Python, SVG, Logos
+ wrapsOn none
 - First announcement of hacspec
+ wrapsOn none
 - hacspec.org was registered in 2020
+ wrapsOn none
 - See also: (1 related languages) Rust
+ wrapsOn none
 
 pub type Res = (usize, usize);
 pub enum ResTyp {

@@ -11,7 +11,9 @@ Blender is a free and open-source 3D computer graphics software toolset used for
  https://en.wikipedia.org/wiki/Blender_(software) Read more on Wikipedia...
 
 - Tags: application
+ wrapsOn none
 - Early development of Blender happened in Blender Foundation
+ wrapsOn none
 
 import Blender
 from Blender import Scene, Text3d

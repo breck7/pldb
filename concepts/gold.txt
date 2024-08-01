@@ -11,9 +11,13 @@ GOLD is a free parsing system that is designed to support multiple programming l
  https://en.wikipedia.org/wiki/GOLD_(parser) Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Early development of GOLD happened in California State University, Sacramento
+ wrapsOn none
 - goldparser.org was registered in 2011
+ wrapsOn none
 - See also: (10 related languages) ANTLR, Visual Basic, Assembly language, C#, D, Java, Pascal, Python, Visual Basic .NET, Regular Expressions
+ wrapsOn none
 
 &lt;Statement&gt; ::= if &lt;Expression&gt; then &lt;Statements&gt; end
             |  while &lt;Expression&gt; do &lt;Statements&gt; end

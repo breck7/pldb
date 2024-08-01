@@ -13,11 +13,16 @@ git clone https://github.com/austral/austral/
 Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
 
 - Tags: programming language
+ wrapsOn none
 - Austral is developed on GitHub and has 1,101 stars
+ wrapsOn none
 - Early development of Austral happened in https://github.com/austral/
+ wrapsOn none
 - Austral is written in Markdown, OCaml, Make, JSON, TypeScript, Python, Vim script, Nix, YAML, Bourne shell, C, Lisp
+ wrapsOn none
 - Read more about Austral on the web: 1.
  https://borretti.me/article/introducing-austral 1.
+ wrapsOn none
 
 let db: Db := connect(&quot;localhost&quot;);
 close(db);

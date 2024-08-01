@@ -14,16 +14,26 @@ Agda is a dependently typed functional programming language originally developed
  https://en.wikipedia.org/wiki/Agda_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 2,120 Agda repos on GitHub
+ wrapsOn none
 - Early development of Agda happened in Chalmers University of Technology
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 143 users using Agda in 207 repos on GitHub
+ wrapsOn none
 - Explore Agda snippets on Rosetta Code
+ wrapsOn none
 - Agda on HOPL
  https://hopl.info/showlanguage.prx?exp=7860 Agda on HOPL
+ wrapsOn none
 - Pygments supports syntax highlighting for Agda
+ wrapsOn none
 - GitHub supports syntax highlighting for Agda
+ wrapsOn none
 - See also: (7 related languages) Coq, Epigram, Haskell, Idris, Emacs, Unicode, JavaScript
+ wrapsOn none
 - 4 PLDB concepts link to Agda: cloc, datafun, obsidian, Pygments
+ wrapsOn none
 
 module agda where
 open import IO

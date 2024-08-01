@@ -11,10 +11,14 @@ Informix-4GL is a 4GL programming language developed by Informix during the mid-
  https://en.wikipedia.org/wiki/IBM_Informix-4GL Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of IBM Informix-4GL happened in IBM
+ wrapsOn none
 - IBM Informix-4GL on HOPL
  https://hopl.info/showlanguage.prx?exp=3472 IBM Informix-4GL on HOPL
+ wrapsOn none
 - See also: (1 related languages) Java
+ wrapsOn none
 
 SELECT UNIQUE city, state, zipcode, sname
 FROM customer, state

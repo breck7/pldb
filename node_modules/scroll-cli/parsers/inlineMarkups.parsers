@@ -1,0 +1,97 @@
+inlineMarkupNameCell
+ description Options to turn on some inline markups.
+ enum bold italics code katex none
+
+inlineMarkupsParser
+ description Set global inline markups.
+ extends abstractTopLevelSingleMetaParser
+ cruxFromId
+ example
+  inlineMarkups
+   * 
+    // Disable * for bold
+   _ u
+    // Make _ underline
+
+inlineMarkupsOnParser
+ cruxFromId
+ description Enable these inline markups only.
+ example
+  Hello *world*!
+   inlineMarkupsOn bold
+ extends abstractAftertextDirectiveParser
+ catchAllCellType inlineMarkupNameCell
+ javascript
+  get shouldMatchAll() {
+   return true
+  }
+  get markups() {
+    const {root} = this
+    let markups = [{delimiter: "`", tag: "code", exclusive: true, name: "code"},{delimiter: "*", tag: "strong", name: "bold"}, {delimiter: "_", tag: "em", name: "italics"}]
+    // only add katex markup if the root doc has katex.
+    if (root.has("katex"))
+      markups.unshift({delimiter: "$", tag: "span", attributes: ' class="scrollKatex"', exclusive: true, name: "katex"})
+    if (this.content)
+      return markups.filter(markup => this.content.includes(markup.name))
+    if (root.has("inlineMarkups")) {
+      root.getNode("inlineMarkups").forEach(markup => {
+        const delimiter = markup.getWord(0)
+        const tag = markup.getWord(1)
+        markups = markups.filter(mu => mu.delimiter !== delimiter) // Remove any overridden markups
+        if (tag)
+          markups.push({delimiter, tag})
+      })
+    }
+    return markups
+  }
+  matchWholeLine = true
+  getMatches(text) {
+   const exclusives = []
+   return this.markups.map(markup => this.applyMarkup(text, markup, exclusives)).filter(i => i).flat()
+  }
+  applyMarkup(text, markup, exclusives = []) {
+   const {delimiter, tag, attributes} = markup
+   const escapedDelimiter = delimiter.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")
+   const pattern = new RegExp(`${escapedDelimiter}[^${escapedDelimiter}]+${escapedDelimiter}`, "g")
+   const delimiterLength = delimiter.length
+   return [...text.matchAll(pattern)].map(match => {
+    const { index } = match
+    const endIndex = index + match[0].length
+    // I'm too lazy to clean up sdk to write a proper inline markup parser so doing this for now.
+    // The exclusive idea is to not try and apply bold or italic styles inside a TeX or code inline style.
+    // Note that the way this is currently implemented any TeX in an inline code will get rendered, but code
+    // inline of TeX will not. Seems like an okay tradeoff until a proper refactor and cleanup can be done.
+    if (exclusives.some(exclusive => index >= exclusive[0] && index <= exclusive[1]))
+      return undefined
+    if (markup.exclusive)
+      exclusives.push([index, endIndex])
+    return [
+     { index, string: `<${tag + (attributes ? " " + attributes : "")}>`, endIndex, consumeStartCharacters: delimiterLength },
+     { index: endIndex, endIndex, string: `</${tag}>`, consumeEndCharacters: delimiterLength }
+    ]
+   }).filter(i => i)
+  }
+
+inlineMarkupParser
+ cruxFromId
+ cells commandWordCell delimiterCell tagOrUrlCell
+ catchAllCellType htmlAttributesCell
+ extends inlineMarkupsOnParser
+ description Custom inline markup. for
+ example
+  @This@ will be in italics.
+   inlineMarkup @ em
+ javascript
+  getMatches(text) {
+   try {
+    const delimiter = this.getWord(1)
+    const tag = this.getWord(2)
+    const attributes = this.getWordsFrom(3).join(" ")
+    if (tag.startsWith("https:")) return this.applyMarkup(text, {delimiter, tag: "a", attributes: `href="${tag}"` + attributes})
+    return this.applyMarkup(text, {delimiter, tag, attributes})
+   } catch (err) {
+    console.error(err)
+    return []
+   }
+   // Note: doubling up doesn't work because of the consumption characters.
+  }

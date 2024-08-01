@@ -11,8 +11,11 @@ Keyhole Markup Language (KML) is an XML notation for expressing geographic annot
  https://en.wikipedia.org/wiki/Keyhole_Markup_Language Read more on Wikipedia...
 
 - Tags: xmlFormat
+ wrapsOn none
 - Early development of KML happened in Keyhole, Inc and Google
+ wrapsOn none
 - See also: (3 related languages) XML, Geography Markup Language, COLLADA
+ wrapsOn none
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;kml xmlns=&quot;http://www.opengis.net/kml/2.2&quot;&gt;

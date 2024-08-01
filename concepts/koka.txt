@@ -13,13 +13,20 @@ git clone https://github.com/koka-lang/koka
 A strongly typed functional-style language with effect types and handlers.
 
 - Tags: programming language
+ wrapsOn none
 - Koka is developed on GitHub and has 3,178 stars
+ wrapsOn none
 - Early development of Koka happened in Microsoft Research
+ wrapsOn none
 - Koka compiles to C
+ wrapsOn none
 - Koka is written in Haskell, C, XML, JavaScript, Markdown, JSON, Bourne shell, C++, C#, OCaml, CMake, Dockerfile, Swift, SVG, Java, TypeScript, Lean, Vim script, CSS, YAML, Lex, Yacc, Logos, Tex, Python, Lisp, HTML, sed, Less, CSON
+ wrapsOn none
 - Pygments supports syntax highlighting for Koka
+ wrapsOn none
 - Read more about Koka on the web: 1.
  https://koka-lang.github.io/koka/doc/book.html 1.
+ wrapsOn none
 
 fun hello-ten()
   var i := 0

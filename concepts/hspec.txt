@@ -10,8 +10,11 @@ Hspec is a programming language created in 1990.
 Hspec is a testing framework for Haskell.
 
 - Tags: programming language
+ wrapsOn none
 - Early development of Hspec happened in https://github.com/hspec
+ wrapsOn none
 - Pygments supports syntax highlighting for Hspec
+ wrapsOn none
 
 -- file Spec.hs
 import Test.Hspec

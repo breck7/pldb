@@ -12,7 +12,9 @@ Bram Moolenaar (born 1961, in Lisse) is a Dutch computer programmer and an activ
  https://en.wikipedia.org/wiki/Zimbu Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - See also: (3 related languages) Vim, vi, Python
+ wrapsOn none
 
 FUNC Main() int
   IO.write(&quot;Hello, World!\n&quot;)

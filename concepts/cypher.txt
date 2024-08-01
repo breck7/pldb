@@ -11,11 +11,17 @@ Cypher is a declarative graph query language that allows for expressive and effi
  https://en.wikipedia.org/wiki/Cypher_Query_Language Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - Early development of Cypher Query Language happened in Neo4j
+ wrapsOn none
 - CodeMirror package for syntax highlighting Cypher Query Language
+ wrapsOn none
 - Monaco package for syntax highlighting Cypher Query Language
+ wrapsOn none
 - Pygments supports syntax highlighting for Cypher Query Language
+ wrapsOn none
 - See also: (2 related languages) SQL, SPARQL
+ wrapsOn none
 
 MATCH (start:Content)-[:RELATED_CONTENT]-&gt;(content:Content)
 WHERE content.source = &#39;user&#39;

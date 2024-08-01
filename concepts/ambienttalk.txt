@@ -8,8 +8,11 @@ AmbientTalk is a programming language created in 2006.
 18 Years Old
 
 - Tags: programming language
+ wrapsOn none
 - Early development of AmbientTalk happened in Vrije Universiteit
+ wrapsOn none
 - Pygments supports syntax highlighting for AmbientTalk
+ wrapsOn none
 
 when: ChatService discovered: { |chatService| when: chatService&lt;-login(roomID, username) becomes: { |chatRoom| chatRoom&lt;-chat(&quot;hello world&quot;); // async message send whenever: chatRoom disconnected: { system.println(&quot;you&#39;re offline&quot;); }; whenever: chatRoom reconnected: { system.println(&quot;you&#39;re online again&quot;); }; }; };
 

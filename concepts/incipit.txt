@@ -13,9 +13,13 @@ git clone https://github.com/phillbush/incipit
 The ‘Incipit Markup Language’ (or ‘Incipit’, for short) is a plain text markup language that uses Unicode characters and the structure of the text itself to format documents.
 
 - Tags: text markup language
+ wrapsOn none
 - Incipit is developed on GitHub and has 9 stars
+ wrapsOn none
 - Early development of Incipit happened in https://github.com/phillbush/incipit/issues
+ wrapsOn none
 - Incipit is written in awk, Make
+ wrapsOn none
 
 .Enumeration incipit.
 Each enumeration item can have a incipit colon, which will be explained

@@ -13,8 +13,11 @@ git clone https://github.com/cortex-js/compute-engine
 Cortex is a programming language for scientific computing built on the Cortex Compute Engine.
 
 - Tags: programming language
+ wrapsOn none
 - Cortex is developed on GitHub and has 346 stars
+ wrapsOn none
 - Cortex is written in TypeScript, Markdown, JSON, JavaScript, Bourne shell, HTML, CSS, Bash, YAML
+ wrapsOn none
 
 Simplify(2 + 3x^3 + 2x^2 + x^3 + 1)
 // ➔ 4x^3 + 2x^2 + 3

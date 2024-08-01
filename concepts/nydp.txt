@@ -12,9 +12,13 @@ git clone https://github.com/conanite/nydp
 nydp - a modern, more dangerous kind of lisp
 
 - Tags: programming language
+ wrapsOn none
 - nydp is developed on GitHub and has 8 stars
+ wrapsOn none
 - Early development of nydp happened in https://github.com/conanite/nydp/issues
+ wrapsOn none
 - nydp is written in Ruby, Markdown, YAML
+ wrapsOn none
 
 (def pre-compile (expr)
   (map pre-compile

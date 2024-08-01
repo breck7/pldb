@@ -8,8 +8,10 @@ WebGPU Shading Language is a programming language created in 2020.
 4 Years Old
 
 - Tags: programming language
+ wrapsOn none
 - Read more about WebGPU Shading Language on the web: 1.
  https://gpuweb.github.io/gpuweb/wgsl.html 1.
+ wrapsOn none
 
 [[location 0]] var&lt;out&gt; gl_FragColor : vec4&lt;f32&gt;;
 fn main() -&gt; void {

@@ -11,5 +11,8 @@ Lemon is a grammar language created in 1989 by Dwayne Richard Hipp.
 The Lemon program is an LALR(1) parser generator. It takes a context free grammar and converts it into a subroutine that will parse a file using that grammar.
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Lemon compiles to C
+ wrapsOn none
 - Lemon is written in C
+ wrapsOn none

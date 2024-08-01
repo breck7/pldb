@@ -11,9 +11,13 @@ The Resource Description Framework (RDF) is a family of World Wide Web Consortiu
  https://en.wikipedia.org/wiki/Resource_Description_Framework Read more on Wikipedia...
 
 - Tags: dataNotation
+ wrapsOn none
 - Early development of RDF happened in World Wide Web Consortium
+ wrapsOn none
 - See also: (9 related languages) OWL, XML, Turtle, JSON, Unicode, SPARQL, SQL, Python, JSON-LD
+ wrapsOn none
 - 8 PLDB concepts link to RDF: Bossam Rule Language, Microdata HTML, Notation3, OEM, SHACL, SUSN, TriG syntax, underlay
+ wrapsOn none
 
 @prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .

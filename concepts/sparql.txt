@@ -12,18 +12,30 @@ SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Qu
  https://en.wikipedia.org/wiki/SPARQL Read more on Wikipedia...
 
 - Tags: queryLanguage
+ wrapsOn none
 - There are at least 0 SPARQL repos on GitHub
+ wrapsOn none
 - Early development of SPARQL happened in W3C
+ wrapsOn none
 - ANTLR grammar for SPARQL
+ wrapsOn none
 - SPARQL LSP implementation
+ wrapsOn none
 - CodeMirror package for syntax highlighting SPARQL
+ wrapsOn none
 - Monaco package for syntax highlighting SPARQL
+ wrapsOn none
 - Pygments supports syntax highlighting for SPARQL
+ wrapsOn none
 - GitHub supports syntax highlighting for SPARQL
+ wrapsOn none
 - There is 1 Jupyter Kernel for SPARQL
+ wrapsOn none
 - See also: (5 related languages) RDF, SQL, XQuery, Turtle, Geography Markup Language
+ wrapsOn none
 - Read more about SPARQL on the web: 1.
  https://www.w3.org/TR/rdf-sparql-query/ 1.
+ wrapsOn none
 
 SELECT ?h WHERE {
   VALUES ?h { &quot;Hello World&quot; }

@@ -13,11 +13,17 @@ git clone https://github.com/evgskv/logica
 Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
 
 - Tags: queryLanguage
+ wrapsOn none
 - Logica is developed on GitHub and has 1,710 stars
+ wrapsOn none
 - Early development of Logica happened in https://github.com/EvgSkv/logica/issues
+ wrapsOn none
 - Logica compiles to SQL
+ wrapsOn none
 - Logica is written in Lex, Python, Jupyter Notebook, Markdown, JSON, HTML, YAML, JavaScript, Vim script, Protocol Buffers, CSS, CSV
+ wrapsOn none
 - logica.dev was registered in 2020
+ wrapsOn none
 
 # Define natural numbers from 1 to 29.
 N(x) :- x in Range(30);

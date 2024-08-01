@@ -11,7 +11,9 @@ txr is a programming language created in 2009 by Kaz Kylheku.
 Programming Language for Convenient Data Munging
 
 - Tags: programming language
+ wrapsOn none
 - Explore txr snippets on Rosetta Code
+ wrapsOn none
 
 @(bind special-words (&quot;arch.&quot; &quot;var.&quot; &quot;ver.&quot; &quot;anci.&quot; &quot;fam.&quot;))
 @(bind ahash @(hash :equal-based))

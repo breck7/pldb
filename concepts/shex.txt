@@ -11,7 +11,9 @@ Shape Expressions (ShEx)  is a language for validating and describing RDF.  It w
  https://en.wikipedia.org/wiki/ShEx Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Early development of ShEx happened in World Wide Web Consortium
+ wrapsOn none
 
 PREFIX :       &lt;http://example.org/&gt;
 PREFIX schema: &lt;http://schema.org/&gt;

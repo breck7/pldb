@@ -11,8 +11,11 @@ In computing, Open Data Protocol (OData) is an open  protocol which allows the c
  https://en.wikipedia.org/wiki/Open_Data_Protocol Read more on Wikipedia...
 
 - Tags: protocol
+ wrapsOn none
 - Early development of Open Data Protcol happened in Microsoft
+ wrapsOn none
 - odata.org was registered in 2009
+ wrapsOn none
 
 {
   &quot;@odata.context&quot;: &quot;http://services.odata.org/V4/OData/OData.svc/$metadata#Products&quot;,

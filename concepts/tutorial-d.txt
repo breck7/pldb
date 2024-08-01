@@ -8,8 +8,10 @@ Tutorial D is a query language created in 1994.
 30 Years Old
 
 - Tags: queryLanguage
+ wrapsOn none
 - Read more about Tutorial D on the web: 1.
  https://reldb.org/c/wp-content/uploads/2017/12/Rel-and-Tutorial-D-Quickstart.pdf 1.
+ wrapsOn none
 
 INSERT myVariable RELATION {
     TUPLE {x 1, y 2.3, z &#39;zap&#39;},

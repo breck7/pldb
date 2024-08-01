@@ -13,9 +13,13 @@ git clone https://github.com/stencilproject/Stencil
 Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
 
 - Tags: template language
+ wrapsOn none
 - Stencil is developed on GitHub and has 2,336 stars
+ wrapsOn none
 - Early development of Stencil happened in https://github.com/stencilproject
+ wrapsOn none
 - Stencil is written in Swift, HTML, Ruby, YAML, reStructuredText, Markdown, Make, Python, JSON, Bourne shell
+ wrapsOn none
 
 There are {{ articles.count }} articles.
 

@@ -12,8 +12,11 @@ git clone https://github.com/ark-lang/ark
 A compiled systems programming language written in Go using the LLVM framework
 
 - Tags: programming language
+ wrapsOn none
 - Ark is developed on GitHub and has 676 stars
+ wrapsOn none
 - Ark is written in TOML, Go, Markdown, Make, YAML, Bourne shell
+ wrapsOn none
 
 // binding to printf
 [c] func printf(fmt: ^u8, ...);

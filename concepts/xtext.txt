@@ -13,10 +13,14 @@ Xtext is an open-source software framework for developing programming languages 
  https://en.wikipedia.org/wiki/Xtext Read more on Wikipedia...
 
 - Tags: grammarLanguage
+ wrapsOn none
 - Xtext is developed on GitHub and has 758 stars
+ wrapsOn none
 - Xtext is written in Java, XML, Xtend, Ini, HTML, JavaScript, Gradle, Bourne shell, CSS, Markdown, JSON, TypeScript, YAML, Dockerfile, CSV, Objective C++, SVG
+ wrapsOn none
 - Read more about Xtext on the web: 1.
  https://dl.acm.org/citation.cfm?id=1869625 1.
+ wrapsOn none
 
 grammar org.eclipse.xtext.common.Terminals
     hidden(WS, ML_COMMENT, SL_COMMENT)

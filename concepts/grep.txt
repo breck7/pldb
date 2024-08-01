@@ -11,10 +11,14 @@ grep is a command-line utility for searching plain-text data sets for lines that
  https://en.wikipedia.org/wiki/Grep Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of grep happened in AT&T Bell Laboratories
+ wrapsOn none
 - grep on HOPL
  https://hopl.info/showlanguage.prx?exp=2295 grep on HOPL
+ wrapsOn none
 - See also: (3 related languages) Unix, Regular Expressions, Perl
+ wrapsOn none
 
 $ grep root /etc/passwd
 root:x:0:0:root:/root:/bin/bash

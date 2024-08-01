@@ -12,17 +12,27 @@ Vala is an object-oriented programming language with a self-hosting compiler tha
  https://en.wikipedia.org/wiki/Vala_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - There are at least 3,465 Vala repos on GitHub
+ wrapsOn none
 - Vala compiles to C
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Vala in 2k repos on GitHub
+ wrapsOn none
 - Explore Vala snippets on Rosetta Code
+ wrapsOn none
 - Pygments supports syntax highlighting for Vala
+ wrapsOn none
 - GitHub supports syntax highlighting for Vala
+ wrapsOn none
 - See also: (13 related languages) C, C#, D, Java, Boo, Emacs, Sublime Text, TextMate, Eclipse, Vim, Visual Studio Code, Genie, Python
+ wrapsOn none
 - Read more about Vala on the web: 1. 2.
  https://vala.dev/ 1.
  https://news.ycombinator.com/item?id=32113825 2.
+ wrapsOn none
 - 3 PLDB concepts link to Vala: Ace Editor, cloc, mal
+ wrapsOn none
 
 int main (string[] args) {
    var app = new Gtk.Application(

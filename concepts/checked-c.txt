@@ -13,8 +13,13 @@ git clone https://github.com/Microsoft/checkedc
 Checked C is an extension to C that lets programmers write C code that is guaranteed by the compiler to be type-safe.  The goal is to let people easily make their existing C code type-safe and eliminate entire classes of errors. Checked C does not address use-after-free errors. This repo has a wiki for Checked C, sample code, the specification, and test code.
 
 - Tags: programming language
+ wrapsOn none
 - checked-c is developed on GitHub and has 3,196 stars
+ wrapsOn none
 - Early development of checked-c happened in Microsoft Research
+ wrapsOn none
 - checked-c is written in C, Tex, Markdown, Make, R, CMake, CSV
+ wrapsOn none
 - Read more about checked-c on the web: 1.
  https://www.microsoft.com/en-us/research/project/checked-c/ 1.
+ wrapsOn none

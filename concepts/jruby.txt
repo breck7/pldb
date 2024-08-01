@@ -11,8 +11,11 @@ JRuby is an implementation of the Ruby programming language atop the Java Virtua
  https://en.wikipedia.org/wiki/JRuby Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Early development of JRuby happened in https://github.com/jruby
+ wrapsOn none
 - See also: (8 related languages) Java, Ruby, Jython, C, Ruby on Rails, Android, Java Bytecode, YARV
+ wrapsOn none
 
 //Example using JSR 233 Scripting for Java 6
 ScriptEngineManager mgr = new ScriptEngineManager();

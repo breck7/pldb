@@ -18,12 +18,17 @@ git clone https://github.com/sqrl-lang/sqrl
 SQRL was the language designed by Smyte, and later acquired by Twitter in 2018. It is a safe, stateful language for event streams, designed to make it easy to enforce anti-abuse rules.
 
 - Tags: queryLanguage
+ wrapsOn none
 - SQRL is developed on GitHub and has 113 stars
+ wrapsOn none
 - Early development of SQRL happened in Smyte
+ wrapsOn none
 - SQRL is written in TypeScript, JavaScript, Markdown, JSON, EJS, SCSS, YAML, JSX, Bash, SVG, CSS, Python, Dockerfile
+ wrapsOn none
 - Read more about SQRL on the web: 1. 2.
  https://websqrl.vercel.app/twitter 1.
  https://news.ycombinator.com/item?id=34680269 2.
+ wrapsOn none
 
 LET Username := input();
 LET Message := concat(&quot;Hello, &quot;, Username, &quot;!&quot;);

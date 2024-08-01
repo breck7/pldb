@@ -13,10 +13,15 @@ git clone https://github.com/mavoweb/mavo
 Create web applications entirely by writing HTML and CSS!
 
 - Tags: template language
+ wrapsOn none
 - mavo is developed on GitHub and has 2,825 stars
+ wrapsOn none
 - Early development of mavo happened in https://github.com/mavoweb
+ wrapsOn none
 - mavo is written in JavaScript, CSS, JSON, SCSS, Markdown, HTML, TOML
+ wrapsOn none
 - mavo.io was registered in 2016
+ wrapsOn none
 
 &lt;main mv-app=&quot;todo&quot; mv-storage=&quot;local&quot; mv-mode=&quot;edit&quot;&gt;
  &lt;header&gt;

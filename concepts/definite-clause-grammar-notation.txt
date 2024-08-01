@@ -8,6 +8,7 @@ Definite clause grammar is a grammar language created in 1980.
 44 Years Old
 
 - Tags: grammarLanguage
+ wrapsOn none
 
 sentence --&gt; noun_phrase, verb_phrase.
 noun_phrase --&gt; det, noun.

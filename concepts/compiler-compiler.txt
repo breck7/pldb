@@ -11,11 +11,15 @@ In computer science, a compiler-compiler or compiler generator is a programming 
  https://en.wikipedia.org/wiki/Compiler-compiler Read more on Wikipedia...
 
 - Tags: programming language
+ wrapsOn none
 - Compiler-Compiler on HOPL
  https://hopl.info/showlanguage.prx?exp=179 Compiler-Compiler on HOPL
+ wrapsOn none
 - See also: (14 related languages) ANTLR, BASIC, ALGOL 60, Atlas Autocode, Coco/R, Bison, JavaCC, LISP 2, Lisp, Yacc, XPL, PEG, DOI, ISBN
+ wrapsOn none
 - Read more about Compiler-Compiler on Semantic Scholar: 1.
  https://semanticscholar.org/paper/b1f4f9e12792a745e2229eca84cfe886496bb4dd 1.
+ wrapsOn none
 
 expr_gen(ADD[expr_gen(x),expr_gen(y)]) =&gt;
                                 &lt;AR + (x*16)+y;&gt;

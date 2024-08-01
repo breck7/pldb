@@ -12,16 +12,27 @@ Protocol Buffers is a method of serializing structured data. It is useful in dev
  https://en.wikipedia.org/wiki/Protocol_Buffers Read more on Wikipedia...
 
 - Tags: interface design language
+ wrapsOn none
 - There are at least 23,747 Protocol Buffers repos on GitHub
+ wrapsOn none
 - Early development of Protocol Buffers happened in Google
+ wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Protocol Buffers in 12k repos on GitHub
+ wrapsOn none
 - ANTLR grammar for Protocol Buffers
+ wrapsOn none
 - Monaco package for syntax highlighting Protocol Buffers
+ wrapsOn none
 - Pygments supports syntax highlighting for Protocol Buffers
+ wrapsOn none
 - GitHub supports syntax highlighting for Protocol Buffers
+ wrapsOn none
 - Indeed.com has 94 matches for "protocol buffers developer".
+ wrapsOn none
 - See also: (12 related languages) XML, Thrift, Java, C#, Python, Go, Ruby, Objective-C, Perl, PHP, Scala, Julia
+ wrapsOn none
 - 44 PLDB concepts link to Protocol Buffers: Ace Editor, Apache Hbase, avro, Bazel, Cap'n Proto, Carbon, Chapel, Claro, Closure Templates, crush, Cue, dgraph, egel, EverParse3D, firrtl, FlatBuffers, groff, HHVM, Impala, Ion, Iterm2, kaitai, ko, Kotlin, Kubernetes, Logica, m3db, MicroPython, MongoDB, obsidian, onnx, OpenCV, Please Build, PROMETHEUS, Pygments, PyTorch, Rholang, Solidity, tao3d, TensorFlow, Wyvern, Xgboost, XGBoost, YARA
+ wrapsOn none
 
 message Person {
   required string name = 1;

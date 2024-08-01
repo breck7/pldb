@@ -13,10 +13,14 @@ git clone https://github.com/taichi-dev/taichi
 Taichi Lang is an open-source, imperative, parallel programming language for high-performance numerical computation. It is embedded in Python and uses just-in-time (JIT) compiler frameworks, for example LLVM, to offload the compute-intensive Python code to the native GPU or CPU instructions.
 
 - Tags: programming language
+ wrapsOn none
 - Taichi is developed on GitHub and has 25,152 stars
+ wrapsOn none
 - Taichi is written in Python, C++, Markdown, CMake, JSON, GLSL, YAML, CUDA, Bourne shell, Objective C++, PowerShell, TOML, C, Jupyter Notebook, Make, Ini
+ wrapsOn none
 - Read more about Taichi on the web: 1.
  http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf 1.
+ wrapsOn none
 
 // For CPU
 Parallelize(int num_threads) // Multi-threading
