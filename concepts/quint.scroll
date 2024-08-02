@@ -1,0 +1,39 @@
+import ../code/conceptPage.scroll
+
+id quint
+name Quint
+appeared 2021
+tags pl
+website https://quint-lang.org/
+description A modern and executable specification language.
+fileExtensions qnt
+
+influencedBy tla
+docs https://quint-lang.org/docs
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 3390
+ committers 29
+ files 549
+
+example
+ /// A state variable to store the balance of each account
+ var balances: str -> int
+  
+ pure val ADDRESSES = Set("alice", "bob", "charlie")
+  
+ action withdraw(account, amount) = {
+   // Decrement balance of account by amount
+   // Whoops, we forgot to check for enough balance
+   balances' = balances.setBy(account, curr => curr - amount)
+ }
+  
+ // ...
+  
+ /// Invariant: Account balances should never be negative
+ val no_negatives = ADDRESSES.forall(addr =>
+   balances.get(addr) >= 0
+ )
+
+githubRepo https://github.com/informalsystems/quint

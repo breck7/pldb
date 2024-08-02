@@ -548,6 +548,7 @@ abstractFeatureParser
 
 abstractComputedIntMeasureParser
  boolean isComputed true
+ boolean suggestInAutocomplete false
  extends abstractIntegerMeasureParser
  javascript
   computeValue(concept, measureName, parsedProgram, concepts) {
