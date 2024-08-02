@@ -22,9 +22,9 @@ Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^7
 Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true line1  print "Hello PLDB"|_$^70|_$^517|_$^12%
 Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^54|_$^1|_$^98%
 Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
+File Imports|_$^../features/hasImports.html|_$^import pldb|_$^49|_$^2|_$^96%
 Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^49|_$^1|_$^98%
 While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48|_$^4|_$^92%
-File Imports|_$^../features/hasImports.html|_$^import pldb|_$^48|_$^2|_$^96%
 Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^44|_$^1|_$^98%
 Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
 Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%

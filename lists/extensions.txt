@@ -100,6 +100,7 @@ Scratch|_$^../concepts/scratch.html|_$^scratch sb sprite sb2 sprite2|_$^5
 Slim|_$^../concepts/slim.html|_$^slim|_$^1
 J|_$^../concepts/j.html|_$^ijs|_$^1
 fish|_$^../concepts/fish.html|_$^fish load|_$^2
+Gleam|_$^../concepts/gleam.html|_$^gleam|_$^1
 Red|_$^../concepts/red.html|_$^red reds|_$^2
 Arduino Programming Language|_$^../concepts/arduino.html|_$^ino|_$^1
 Bazel|_$^../concepts/bazel.html|_$^BUILD|_$^1
@@ -138,11 +139,10 @@ Squirrel|_$^../concepts/squirrel.html|_$^nut|_$^1
 Puppet|_$^../concepts/puppet.html|_$^pp|_$^1
 C3|_$^../concepts/c3.html|_$^c3 c3i|_$^2
 AutoHotkey|_$^../concepts/autohotkey.html|_$^ahk ahkl|_$^2
-Vue|_$^../concepts/vuejs.html|_$^vue|_$^1
 LabVIEW G|_$^../concepts/labview.html|_$^lvproj lvclass lvlib|_$^3
+Vue|_$^../concepts/vuejs.html|_$^vue|_$^1
 Wren|_$^../concepts/wren.html|_$^wren|_$^1
 PostScript|_$^../concepts/postscript.html|_$^ps eps epsi pfa|_$^4
-gleam|_$^../concepts/gleam.html|_$^gleam|_$^1
 Cython|_$^../concepts/cython.html|_$^pxd pxi pyx|_$^3
 Less|_$^../concepts/less.html|_$^less|_$^1
 ColdFusion|_$^../concepts/coldfusion.html|_$^cfm cfml|_$^2
@@ -159,8 +159,8 @@ RAML|_$^../concepts/raml.html|_$^raml|_$^1
 MUMPS|_$^../concepts/mumps.html|_$^mps m mumps|_$^3
 EDN|_$^../concepts/edn.html|_$^edn|_$^1
 Korn shell|_$^../concepts/korn-shell.html|_$^ksh|_$^1
-API Blueprint|_$^../concepts/api-blueprint.html|_$^apib|_$^1
 Koka|_$^../concepts/koka.html|_$^kk kki|_$^2
+API Blueprint|_$^../concepts/api-blueprint.html|_$^apib|_$^1
 NetLogo|_$^../concepts/netlogo.html|_$^nlogo nls nlogo3d|_$^3
 Zephir|_$^../concepts/zephir.html|_$^zep|_$^1
 DOT|_$^../concepts/dot.html|_$^dot gv|_$^2
@@ -169,8 +169,8 @@ ASP|_$^../concepts/asp.html|_$^asa ashx asp axd asax ascx asmx aspx|_$^8
 JSON-LD|_$^../concepts/json-ld.html|_$^jsonld|_$^1
 Jsonnet|_$^../concepts/jsonnet.html|_$^jsonnet libsonnet|_$^2
 Jinja|_$^../concepts/jinja.html|_$^j2 jinja jinja2|_$^3
-Lex|_$^../concepts/lex.html|_$^l lex|_$^2
 VBScript|_$^../concepts/vbscript.html|_$^vbs vbe wsf wsc VBS|_$^5
+Lex|_$^../concepts/lex.html|_$^l lex|_$^2
 Frege|_$^../concepts/frege.html|_$^fr|_$^1
 Janet|_$^../concepts/janet.html|_$^janet|_$^1
 M4|_$^../concepts/m4.html|_$^ac m4 mc|_$^3
@@ -236,8 +236,8 @@ Scilab|_$^../concepts/scilab.html|_$^sci sce tst|_$^3
 Dogescript|_$^../concepts/dogescript.html|_$^djs|_$^1
 HLSL|_$^../concepts/hlsl.html|_$^cg cginc fxh hlsl hlsli shader fx|_$^7
 WDL|_$^../concepts/wdl.html|_$^wdl|_$^1
-YANG|_$^../concepts/yang.html|_$^yang|_$^1
 JSP|_$^../concepts/java-server-pages.html|_$^jsp jspf|_$^2
+YANG|_$^../concepts/yang.html|_$^yang|_$^1
 Slope|_$^../concepts/slope.html|_$^slo|_$^1
 GLSL|_$^../concepts/glsl.html|_$^comp fp frag frg fsh fshader geo geom glsl glslv gshader tesc tese vert vrx vsh vshader fs glslf gs rchit rmiss shader|_$^23
 JAI|_$^../concepts/jai.html|_$^jai|_$^1
@@ -261,8 +261,8 @@ Bison|_$^../concepts/bison.html|_$^bison|_$^1
 Sage|_$^../concepts/sagemath.html|_$^sage sagews|_$^2
 Boo|_$^../concepts/boo.html|_$^boo|_$^1
 Nemerle|_$^../concepts/nemerle.html|_$^n|_$^1
-nomnoml|_$^../concepts/nomnoml.html|_$^nomnoml|_$^1
 Scroll|_$^../concepts/scroll.html|_$^scroll|_$^1
+nomnoml|_$^../concepts/nomnoml.html|_$^nomnoml|_$^1
 Mercury|_$^../concepts/mercury.html|_$^m moo|_$^2
 Mirah|_$^../concepts/mirah.html|_$^druby duby mirah|_$^3
 Ring|_$^../concepts/ring.html|_$^ring rh rform|_$^3
@@ -276,20 +276,20 @@ Dylan|_$^../concepts/dylan.html|_$^dylan dyl intr lid|_$^4
 Smarty|_$^../concepts/smarty.html|_$^smarty tpl|_$^2
 Xojo|_$^../concepts/xojo.html|_$^xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window|_$^6
 ooc|_$^../concepts/ooc.html|_$^ooc|_$^1
-SugarSS|_$^../concepts/sugarss.html|_$^sss|_$^1
 Modula-3|_$^../concepts/modula-3.html|_$^i3 ig m3 mg|_$^4
+SugarSS|_$^../concepts/sugarss.html|_$^sss|_$^1
 SCSS|_$^../concepts/scss.html|_$^sass scss|_$^2
 TLA|_$^../concepts/tla.html|_$^tla|_$^1
 REBOL|_$^../concepts/rebol.html|_$^r reb r2 r3 rebol|_$^5
-Closure Templates|_$^../concepts/closure-templates.html|_$^soy|_$^1
 Oz|_$^../concepts/oz.html|_$^oz|_$^1
+Closure Templates|_$^../concepts/closure-templates.html|_$^soy|_$^1
 Nit|_$^../concepts/nit.html|_$^nit|_$^1
 Gosu|_$^../concepts/gosu.html|_$^gs gsp gst gsx vark|_$^5
 Meson|_$^../concepts/meson.html|_$^meson.build meson_options.txt|_$^2
 Ioke|_$^../concepts/ioke.html|_$^ik|_$^1
 Raku|_$^../concepts/raku.html|_$^pm6 raku rakumod 6pl 6pm nqp p6 p6l p6m pl pl6 pm t|_$^13
-JCL|_$^../concepts/jcl.html|_$^jcl|_$^1
 Modelica|_$^../concepts/modelica.html|_$^mo|_$^1
+JCL|_$^../concepts/jcl.html|_$^jcl|_$^1
 Latte|_$^../concepts/latte.html|_$^latte|_$^1
 Maxima|_$^../concepts/maxima.html|_$^mac max|_$^2
 EBNF|_$^../concepts/ebnf.html|_$^ebnf|_$^1
@@ -332,10 +332,10 @@ Org|_$^../concepts/org.html|_$^org|_$^1
 buzz|_$^../concepts/buzz.html|_$^buzz|_$^1
 Inform|_$^../concepts/inform.html|_$^ni i7x|_$^2
 Filebench WML|_$^../concepts/filebench-wml.html|_$^f|_$^1
-OpenSCAD|_$^../concepts/openscad.html|_$^scad|_$^1
 X10|_$^../concepts/x10.html|_$^x10|_$^1
-PL/pgSQL|_$^../concepts/plpgsql.html|_$^pgsql sql|_$^2
+OpenSCAD|_$^../concepts/openscad.html|_$^scad|_$^1
 Logtalk|_$^../concepts/logtalk.html|_$^lgt logtalk|_$^2
+PL/pgSQL|_$^../concepts/plpgsql.html|_$^pgsql sql|_$^2
 BlitzMax|_$^../concepts/blitzmax.html|_$^bmx|_$^1
 Turing|_$^../concepts/turing.html|_$^t tu|_$^2
 Uiua|_$^../concepts/uiua.html|_$^ua|_$^1
@@ -373,8 +373,8 @@ Ch|_$^../concepts/chuck.html|_$^ck|_$^1
 GDScript|_$^../concepts/gdscript.html|_$^gd|_$^1
 Egison|_$^../concepts/egison.html|_$^egi|_$^1
 Limbo|_$^../concepts/limbo.html|_$^b m|_$^2
-Gherkin|_$^../concepts/gherkin.html|_$^feature story|_$^2
 Monkey|_$^../concepts/monkey.html|_$^monkey monkey2|_$^2
+Gherkin|_$^../concepts/gherkin.html|_$^feature story|_$^2
 OpenEdge ABL|_$^../concepts/openedge-advanced-business-language.html|_$^p cls w|_$^3
 Logos|_$^../concepts/logos.html|_$^x xm xi xmi|_$^4
 basic calculator|_$^../concepts/bc.html|_$^bc|_$^1
@@ -478,17 +478,17 @@ Unicon|_$^../concepts/unicon.html|_$^icn|_$^1
 EML|_$^../concepts/mbox.html|_$^eml mbox|_$^2
 monte|_$^../concepts/monte.html|_$^mt|_$^1
 PIC|_$^../concepts/pic.html|_$^pic chem|_$^2
-Slice|_$^../concepts/slice.html|_$^ice|_$^1
 Jolie|_$^../concepts/jolie.html|_$^ol iol|_$^2
+Slice|_$^../concepts/slice.html|_$^ice|_$^1
 Sibilant|_$^../concepts/sibilant.html|_$^sibilant|_$^1
 JSONiq|_$^../concepts/jsoniq.html|_$^jq|_$^1
 Functional PHP Preprocessor|_$^../concepts/fpp.html|_$^fpp|_$^1
 Nymph|_$^../concepts/nymph.html|_$^n|_$^1
 Asymptote|_$^../concepts/asymptote.html|_$^asy|_$^1
 Blade|_$^../concepts/blade.html|_$^blade blade.php bladephp|_$^3
+FreeMarker|_$^../concepts/freemarker.html|_$^ftl|_$^1
 HiveQL|_$^../concepts/hiveql.html|_$^q hql|_$^2
 LoomScript|_$^../concepts/loomscript.html|_$^ls|_$^1
-FreeMarker|_$^../concepts/freemarker.html|_$^ftl|_$^1
 COMPONENT PASCAL|_$^../concepts/component-pascal.html|_$^cp cps|_$^2
 tcsh|_$^../concepts/tcsh.html|_$^tcsh csh|_$^2
 Rouge|_$^../concepts/rouge.html|_$^rg|_$^1
@@ -537,8 +537,8 @@ UPC|_$^../concepts/unified-parallel-c.html|_$^upc|_$^1
 Edje Data Collection|_$^../concepts/edje-data-collection.html|_$^edc|_$^1
 GCC Machine Description|_$^../concepts/gcc-machine-description.html|_$^md|_$^1
 ShaderLab|_$^../concepts/shaderlab.html|_$^shader|_$^1
-KRL|_$^../concepts/krl.html|_$^krl|_$^1
 Hierarchical Data Format|_$^../concepts/hdf.html|_$^hdf h4 hdf4 he2 h5 hdf5 he5|_$^7
+KRL|_$^../concepts/krl.html|_$^krl|_$^1
 Jupyter Notebook|_$^../concepts/jupyter-notebook.html|_$^ipynb|_$^1
 Charity|_$^../concepts/charity.html|_$^ch|_$^1
 MOO|_$^../concepts/moo.html|_$^moo|_$^1
@@ -630,8 +630,8 @@ Glyph Bitmap Distribution Format|_$^../concepts/glyph-bitmap-distribution-format
 XC|_$^../concepts/xc.html|_$^xc|_$^1
 CLAIRE|_$^../concepts/claire.html|_$^cl|_$^1
 Sugar|_$^../concepts/sugar.html|_$^sjs|_$^1
-Q#|_$^../concepts/q-sharp.html|_$^qs|_$^1
 Cadence SKILL|_$^../concepts/cadence-skill.html|_$^il|_$^1
+Q#|_$^../concepts/q-sharp.html|_$^qs|_$^1
 Urbiscript|_$^../concepts/urbiscript.html|_$^u|_$^1
 Graph Modeling Language|_$^../concepts/graph-modeling-language.html|_$^gml|_$^1
 Kuin|_$^../concepts/kuin.html|_$^kn|_$^1

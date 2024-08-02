@@ -423,7 +423,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 118,
+    "Values": 119,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -1390,7 +1390,7 @@
   },
   {
     "Name": "docs",
-    "Values": 376,
+    "Values": 377,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
@@ -1655,7 +1655,7 @@
   },
   {
     "Name": "subreddit",
-    "Values": 100,
+    "Values": 101,
     "Coverage": "2%",
     "Question": "What is a URL of a subreddit(s) for this language?",
     "Example": "https://reddit.com/r/ada",
@@ -1687,7 +1687,7 @@
   },
   {
     "Name": "discord",
-    "Values": 12,
+    "Values": 13,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://www.11ty.dev/blog/discord/",
@@ -1799,7 +1799,7 @@
   },
   {
     "Name": "example",
-    "Values": 885,
+    "Values": 886,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -2738,7 +2738,7 @@
   },
   {
     "Name": "hasImports",
-    "Values": 50,
+    "Values": 51,
     "Coverage": "1%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",

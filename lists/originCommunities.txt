@@ -420,6 +420,7 @@ count|_$^name|_$^languages
 1|_$^https://github.com/slim-template|_$^Slim
 1|_$^Jsoftware Inc|_$^J
 1|_$^https://github.com/fish-shell|_$^fish
+1|_$^https://github.com/gleam-lang|_$^Gleam
 1|_$^https://github.com/red|_$^Red
 1|_$^Arduino|_$^Arduino Programming Language
 1|_$^Cybernet Systems Co. Ltd|_$^Maple
@@ -453,7 +454,6 @@ count|_$^name|_$^languages
 1|_$^The C3 Language Project|_$^C3
 1|_$^AutoHotkey Foundation LLC|_$^AutoHotkey
 1|_$^National Instruments Corporation|_$^LabVIEW G
-1|_$^https://github.com/gleam-lang|_$^gleam
 1|_$^https://github.com/sagemath|_$^Cython
 1|_$^https://github.com/less|_$^Less
 1|_$^https://github.com/PRQL|_$^PRQL
@@ -468,8 +468,8 @@ count|_$^name|_$^languages
 1|_$^MUMPS Development Committee|_$^MUMPS
 1|_$^https://github.com/edn-format|_$^EDN
 1|_$^https://github.com/att|_$^Korn shell
-1|_$^API Blueprint|_$^API Blueprint
 1|_$^http://coconut-lang.org|_$^Coconut
+1|_$^API Blueprint|_$^API Blueprint
 1|_$^https://github.com/stedolan/jq/issues|_$^jq
 1|_$^https://www.w3.org/2018/json-ld-wg/|_$^JSON-LD
 1|_$^https://github.com/pallets/jinja/issues/|_$^Jinja
@@ -522,8 +522,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/cue-lang|_$^Cue
 1|_$^Galois,Inc|_$^Cryptol
 1|_$^https://github.com/ron-rs|_$^Ron
-1|_$^https://github.com/elves|_$^Elvish
 1|_$^https://www.nltk.org/team.html|_$^Natural Language Toolkit
+1|_$^https://github.com/elves|_$^Elvish
 1|_$^LexisNexis Risk Solutions Group|_$^ECL
 1|_$^https://gitlab.com/groups/scilab/-/issues|_$^Scilab
 1|_$^https://github.com/dogescript|_$^Dogescript
@@ -541,18 +541,18 @@ count|_$^name|_$^languages
 1|_$^Ecere Corporation|_$^eC
 1|_$^Norwegian Computing Center|_$^Simula
 1|_$^https://dev.eclipse.org/mailman/listinfo/golo-dev|_$^Golo
-1|_$^Observable|_$^Observable
 1|_$^Radboud University Nijmegen|_$^Clean
+1|_$^Observable|_$^Observable
 1|_$^https://github.com/Mathics3|_$^mathics
 1|_$^felix-language@googlegroups.com|_$^Felix
 1|_$^https://github.com/aemkei/jsfuck/issues|_$^JSFuck
 1|_$^https://w3id.org/cwl/meeting_minutes|_$^CWL
 1|_$^https://github.com/mochajs|_$^mochajs
 1|_$^https://github.com/jquery|_$^sizzle
+1|_$^https://www.patreon.com/tonsky|_$^datascript
 1|_$^Raytheon|_$^AGC
 1|_$^Charles Stark Draper Laboratory|_$^AGC
 1|_$^MIT Instrumentation Laboratory|_$^AGC
-1|_$^https://www.patreon.com/tonsky|_$^datascript
 1|_$^The Boo Programming Language|_$^Boo
 1|_$^https://github.com/FIXTradingCommunity/fix-simple-binary-encoding|_$^Simple Binary Encoding
 1|_$^The AssemblyScript Project|_$^AssemblyScript
@@ -590,9 +590,9 @@ count|_$^name|_$^languages
 1|_$^Guidewire Software, Inc|_$^Gosu
 1|_$^https://github.com/mesonbuild|_$^Meson
 1|_$^https://github.com/jasmine/jasmine|_$^jasmine
-1|_$^https://gitlab.com/FascinatedBox/lily/-/issues|_$^Lily
 1|_$^https://github.com/olabini/ioke/issues/|_$^Ioke
 1|_$^https://www.raku.org/community|_$^Raku
+1|_$^https://gitlab.com/FascinatedBox/lily/-/issues|_$^Lily
 1|_$^Modelica Association|_$^Modelica
 1|_$^https://github.com/nette|_$^Latte
 1|_$^https://github.com/mun-lang|_$^mun-lang
@@ -613,8 +613,8 @@ count|_$^name|_$^languages
 1|_$^AlliedModders LLC|_$^SourcePawn
 1|_$^https://github.com/IoLanguage|_$^Io
 1|_$^https://github.com/dat-ecosystem|_$^dat-protocol
-1|_$^https://github.com/ngs-lang|_$^NGS
 1|_$^University Of Cambridge|_$^Isabelle
+1|_$^https://github.com/ngs-lang|_$^NGS
 1|_$^https://github.com/nasser/---/issues|_$^Qalb
 1|_$^https://github.com/fantom-lang|_$^Fantom
 1|_$^https://github.com/sq|_$^jsil-compiler
@@ -640,8 +640,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/filebench|_$^Filebench WML
 1|_$^https://opencollective.com/openscad|_$^OpenSCAD
 1|_$^Worldview Center for Intercultural Studies|_$^sile
-1|_$^The PostgreSQL Global Development Group|_$^PL/pgSQL
 1|_$^https://github.com/LogtalkDotOrg|_$^Logtalk
+1|_$^The PostgreSQL Global Development Group|_$^PL/pgSQL
 1|_$^https://github.com/tarcieri/reia/issues|_$^Reia
 1|_$^Ruby Association,NaCl|_$^Streem
 1|_$^LassoSoft Inc|_$^Lasso
@@ -649,8 +649,8 @@ count|_$^name|_$^languages
 1|_$^Docker, Inc.|_$^Dockerfile
 1|_$^https://github.com/yoav-lavi/melody/issues|_$^Melody
 1|_$^https://github.com/comby-tools|_$^comby
-1|_$^https://github.com/JohnEarnest/Decker/issues|_$^Lil
 1|_$^Bethesda Softworks LLC|_$^Papyrus
+1|_$^https://github.com/JohnEarnest/Decker/issues|_$^Lil
 1|_$^https://claylabs.com/|_$^clay
 1|_$^https://github.com/LMDB|_$^lmdb
 1|_$^Combex, Inc.|_$^E
@@ -678,8 +678,8 @@ count|_$^name|_$^languages
 1|_$^chuck team|_$^Ch
 1|_$^https://github.com/OSSIA|_$^score
 1|_$^https://groups.google.com/g/inferno-os|_$^Limbo
-1|_$^SmartBear Software|_$^Gherkin
 1|_$^https://github.com/Regal-Internet-Brothers|_$^Monkey
+1|_$^SmartBear Software|_$^Gherkin
 1|_$^Progress Software Corporation|_$^OpenEdge ABL
 1|_$^https://github.com/DHowett/theos-logos-examples/issues|_$^Logos
 1|_$^https://github.com/Vexu/bog/issues|_$^bog
@@ -705,8 +705,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/schibsted|_$^JSLT
 1|_$^https://github.com/lexi-lambda/hackett/issues|_$^Hackett
 1|_$^https://github.com/harbour|_$^Harbour
-1|_$^https://github.com/bnoordhuis/ragel/issues|_$^Ragel
 1|_$^https://github.com/kstenerud/concise-encoding|_$^Concise Encoding
+1|_$^https://github.com/bnoordhuis/ragel/issues|_$^Ragel
 1|_$^https://www.marigold.dev/projects|_$^Ligo
 1|_$^https://github.com/liljencrantz/|_$^crush
 1|_$^https://github.com/austral/|_$^Austral
@@ -741,8 +741,8 @@ count|_$^name|_$^languages
 1|_$^Neo4j|_$^Cypher Query Language
 1|_$^https://github.com/julelang|_$^Jule
 1|_$^https://github.com/falconpl|_$^Falcon
-1|_$^Inmos International plc|_$^Occam
 1|_$^https://github.com/tj/luna/issues|_$^Luna
+1|_$^Inmos International plc|_$^Occam
 1|_$^https://github.com/i2y/mochi/issues|_$^mochi
 1|_$^https://github.com/LuaJIT|_$^LuaJIT
 1|_$^Apple Inc and Walt Disney Imagineering Research & Development, Inc.|_$^Squeak
@@ -750,8 +750,8 @@ count|_$^name|_$^languages
 1|_$^OxMetrics Technologies|_$^OX
 1|_$^https://github.com/mrakgr/The-Spiral-Language/issues|_$^spiral
 1|_$^https://github.com/koara|_$^koara
-1|_$^Code Golf|_$^Vyxal
 1|_$^https://gitlab.com/selfReferentialName/oxylc/-/issues|_$^Oxyl
+1|_$^Code Golf|_$^Vyxal
 1|_$^https://github.com/farcasterxyz|_$^Farcaster
 1|_$^https://github.com/HackerFoo/poprc/issues|_$^popr
 1|_$^https://github.com/perl11|_$^Potion
@@ -762,8 +762,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/tailscale|_$^HuJSON
 1|_$^Microcomputer Applications Associates|_$^PL/M
 1|_$^https://github.com/rulex-rs|_$^Pomsky
-1|_$^https://github.com/rzimmerman/kal/issues|_$^Kal
 1|_$^https://github.com/HaxeFoundation|_$^hashlink
+1|_$^https://github.com/rzimmerman/kal/issues|_$^Kal
 1|_$^https://github.com/nlsandler/nqcc/issues|_$^Not Quite C
 1|_$^https://github.com/Artelnics/opennn|_$^OpenNN
 1|_$^https://nurdletech.com|_$^NestedText
@@ -772,13 +772,13 @@ count|_$^name|_$^languages
 1|_$^https://github.com/netwide-assembler|_$^Netwide Assembler
 1|_$^Basis Software|_$^AutoLISP
 1|_$^Autodesk|_$^AutoLISP
-1|_$^https://github.com/PetroProtsyk/SSharp/issues|_$^Script.NET
 1|_$^https://github.com/betaveros/noulith/issues|_$^noulith
+1|_$^https://github.com/PetroProtsyk/SSharp/issues|_$^Script.NET
 1|_$^https://github.com/Co-dfns/|_$^co-dfns
 1|_$^https://github.com/jondgoodwin/cone|_$^Cone
 1|_$^The FreeBASIC Development Team|_$^FreeBASIC
-1|_$^ELENA Language Project|_$^elena
 1|_$^International Telecommunication Union|_$^ASN.1
+1|_$^ELENA Language Project|_$^elena
 1|_$^https://www.makotemplates.org/community.html|_$^Mako
 1|_$^https://web.archive.org/web/20040404144205/http://www.mines.edu/students/b/bolmstea/randlang/index.html|_$^Malbolge
 1|_$^https://github.com/marp-team|_$^Marp
@@ -791,18 +791,18 @@ count|_$^name|_$^languages
 1|_$^Sun Labs|_$^Fortress
 1|_$^Plantation Productions, Inc|_$^High Level Assembly
 1|_$^https://github.com/perl11/|_$^cperl
-1|_$^Gentoo Foundation|_$^Gentoo Ebuild
 1|_$^https://sourceforge.net/p/smallbasic/_list/tickets|_$^SmallBASIC
-1|_$^Université Bordeaux|_$^PARI/GP
+1|_$^Gentoo Foundation|_$^Gentoo Ebuild
 1|_$^https://github.com/gluon-lang/|_$^gluon
+1|_$^Université Bordeaux|_$^PARI/GP
 1|_$^https://github.com/p-org|_$^P
 1|_$^BYOND Software|_$^DM
 1|_$^https://github.com/featurist|_$^PogoScript
 1|_$^https://github.com/TheBerkin/rant3/pulls|_$^rant
 1|_$^https://github.com/CraneStation/|_$^Cranelift
 1|_$^https://github.com/RockstarLang|_$^Rockstar
-1|_$^Research Software Ltd|_$^Miranda
 1|_$^https://github.com/vyzo/gerbil/issues|_$^Gerbil Scheme
+1|_$^Research Software Ltd|_$^Miranda
 1|_$^https://github.com/Mathpix|_$^Mathpix Markdown
 1|_$^MathWorks|_$^Simulink
 1|_$^Java Community Process|_$^BeanShell
@@ -817,8 +817,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/the-little-typer|_$^pie-lang
 1|_$^ProSapien LLC|_$^FloScript
 1|_$^https://github.com/flix|_$^Flix
-1|_$^https://github.com/Lartu/ldpl/issues|_$^ldpl
 1|_$^https://github.com/roc-lang|_$^Roc
+1|_$^https://github.com/Lartu/ldpl/issues|_$^ldpl
 1|_$^https://github.com/zaach/jison-lex/issues|_$^Jison Lex
 1|_$^Lawrence Berkeley National Lab|_$^Bro
 1|_$^https://jasmin.sourceforge.net/|_$^Jasmin
@@ -851,8 +851,8 @@ count|_$^name|_$^languages
 1|_$^https://sourceforge.net/p/pizzacompiler/_list/tickets|_$^Pizza
 1|_$^https://github.com/m-ender/hexagony/issues|_$^hexagony
 1|_$^https://github.com/kevinlawler/kona/issues|_$^kona
-1|_$^SaurikIT, LLC|_$^Cycript
 1|_$^Gupta Technologies, LLC|_$^Structured Query Reporter
+1|_$^SaurikIT, LLC|_$^Cycript
 1|_$^https://github.com/jsongraph|_$^json-graph-format
 1|_$^https://github.com/monte-language|_$^monte
 1|_$^Engineering at Meta|_$^CIR
@@ -874,8 +874,8 @@ count|_$^name|_$^languages
 1|_$^https://gitlab.common-lisp.net/parenscript/parenscript/-/issues|_$^Parenscript
 1|_$^BiobankCloud|_$^cuneiform
 1|_$^Laravel|_$^Blade
-1|_$^https://theengine.co/|_$^LoomScript
 1|_$^https://freemarker.apache.org/mailing-lists.html|_$^FreeMarker
+1|_$^https://theengine.co/|_$^LoomScript
 1|_$^https://github.com/bos/attoparsec/issues|_$^attoparsec
 1|_$^https://github.com/cell-lang|_$^Cell
 1|_$^The Fortran Company|_$^F
@@ -885,8 +885,8 @@ count|_$^name|_$^languages
 1|_$^MacroMind|_$^Lingo
 1|_$^https://github.com/lightbend|_$^Hocon
 1|_$^https://github.com/qorelanguage|_$^Qore
-1|_$^Lotus Development Corporation|_$^LotusScript
 1|_$^GAMS Development Corporation|_$^GAMS
+1|_$^Lotus Development Corporation|_$^LotusScript
 1|_$^https://github.com/never-lang|_$^never
 1|_$^Sage-Code|_$^bee
 1|_$^https://github.com/gentee|_$^gentee
@@ -989,8 +989,8 @@ count|_$^name|_$^languages
 1|_$^https://www.little-lang.org/community.html|_$^little
 1|_$^InterSystems|_$^Caché ObjectScript
 1|_$^https://github.com/chrisdone/lucid/issues|_$^Lucid
-1|_$^https://github.com/yosbelms/cor|_$^cor
 1|_$^https://github.com/raptorjit|_$^raptorjit
+1|_$^https://github.com/yosbelms/cor|_$^cor
 1|_$^https://github.com/rusini/manool/pulls|_$^manool
 1|_$^iCanProgram Inc|_$^SIMPL
 1|_$^https://github.com/LPCIC|_$^Elpi
@@ -1078,8 +1078,8 @@ count|_$^name|_$^languages
 1|_$^https://www.categoricaldata.net/|_$^categorical-query-language
 1|_$^https://github.com/CategoricalData|_$^categorical-query-language
 1|_$^https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues|_$^Gremlin
-1|_$^Sourcegraph|_$^Language Server Index Format
 1|_$^Scientific Computing Associates|_$^Linda
+1|_$^Sourcegraph|_$^Language Server Index Format
 1|_$^Conitec Datensysteme GmbH|_$^Lite-C
 1|_$^Adam Blažek|_$^Xidoc
 1|_$^UNIVAC EMCC|_$^MACRO
@@ -1168,9 +1168,9 @@ count|_$^name|_$^languages
 1|_$^https://github.com/herrmanntom/setlX/issues|_$^setlx
 1|_$^https://github.com/e-wrks|_$^Đ
 1|_$^DENSO Corporation|_$^QR code
-1|_$^Aww Apps|_$^blockml
 1|_$^Artifex Software|_$^Ghostscript
 1|_$^California State University, Sacramento|_$^GOLD
+1|_$^Aww Apps|_$^blockml
 1|_$^Disney|_$^Etoys
 1|_$^https://github.com/jsonstat|_$^JSON-stat
 1|_$^Uppsala universitet|_$^Encore
@@ -1290,8 +1290,8 @@ count|_$^name|_$^languages
 1|_$^https://github.com/murisi/L2/issues|_$^l2
 1|_$^Smallworld Systems Ltd|_$^Magik
 1|_$^https://github.com/akyoto/flua/issues|_$^flua
-1|_$^JMP Statistical Discovery LLC|_$^JSL
 1|_$^https://github.com/kevinlawler/kerf/issues|_$^kerf
+1|_$^JMP Statistical Discovery LLC|_$^JSL
 1|_$^Atmel|_$^Atmel AVR instruction set
 1|_$^Kyung Hee University|_$^plink-ped-format
 1|_$^Eggplant Software, Inc|_$^SenseTalk

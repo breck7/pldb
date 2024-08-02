@@ -418,7 +418,7 @@ h4.scrollQuestion {
 </div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p class="scrollParagraph">A list of 168 features found in programming languages.</p>
-<table id="table1132" class="scrollTable">
+<table id="table1133" class="scrollTable">
  <thead><tr><th>title</th>
 
 <th>pseudoExample</th>
@@ -507,6 +507,12 @@ h4.scrollQuestion {
 <td>3</td>
 <td>95%</td>
 </tr>
+<tr><td><a href="../features/hasImports.html">File Imports</a></td>
+<td>import pldb</td>
+<td>49</td>
+<td>2</td>
+<td>96%</td>
+</tr>
 <tr><td><a href="../features/hasBinaryNumbers.html">Binary Literals</a></td>
 <td>0b100110100000110011110010010</td>
 <td>49</td>
@@ -518,12 +524,6 @@ h4.scrollQuestion {
 <td>48</td>
 <td>4</td>
 <td>92%</td>
-</tr>
-<tr><td><a href="../features/hasImports.html">File Imports</a></td>
-<td>import pldb</td>
-<td>48</td>
-<td>2</td>
-<td>96%</td>
 </tr>
 <tr><td><a href="../features/hasFunctions.html">Functions</a></td>
 <td>function computePLDBRanks() {}</td>
@@ -1439,7 +1439,7 @@ h4.scrollQuestion {
 </tr></tbody>
  </table>
  <script>
- document.querySelector('#table1132').addEventListener('click', e => {
+ document.querySelector('#table1133').addEventListener('click', e => {
   if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
   e.currentTarget.classList.toggle('expandedTable');
  });
