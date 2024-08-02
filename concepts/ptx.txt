@@ -11,13 +11,9 @@ Parallel Thread Execution (PTX, or NVPTX) is a pseudo-assembly language used in 
  https://en.wikipedia.org/wiki/Parallel_Thread_Execution Read more on Wikipedia...
 
 - Tags: assembly language
- wrapsOn none
 - Early development of PTX happened in Nvidia
- wrapsOn none
 - See also: (2 related languages) Assembly language, CUDA
- wrapsOn none
 - Read more about PTX on the web: 1.
  https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf 1.
- wrapsOn none
 
 .shared .align 8 .b8 pbatch_cache[15744]; // define 15744 bytes, aligned to an 8-byte boundary

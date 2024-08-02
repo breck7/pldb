@@ -13,13 +13,9 @@ git clone https://github.com/fogus/baysick
 An embedded Insane-specific Language for Scala implementing the BASIC programming language
 
 - Tags: esoteric programming language
- wrapsOn none
 - baysick is developed on GitHub and has 246 stars
- wrapsOn none
 - Early development of baysick happened in Cognitect, Inc
- wrapsOn none
 - baysick is written in Scala, Markdown
- wrapsOn none
 
 object SquareRoot extends Baysick {
   def main(args:Array[String]) = {

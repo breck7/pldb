@@ -13,19 +13,12 @@ git clone https://github.com/zdevito/terra
 Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:
 
 - Tags: programming language
- wrapsOn none
 - Terra is developed on GitHub and has 2,692 stars
- wrapsOn none
 - There are at least 410 Terra repos on GitHub
- wrapsOn none
 - Terra is written in C++, Lua, Markdown, C, CMake, Bourne shell, YAML, JavaScript, HTML, CSS, Dockerfile, Make, Nix, Diff
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Terra in 206 repos on GitHub
- wrapsOn none
 - Explore Terra snippets on Rosetta Code
- wrapsOn none
 - GitHub supports syntax highlighting for Terra
- wrapsOn none
 
 -- This top-level code is plain Lua code.
 function printhello()

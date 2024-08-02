@@ -14,24 +14,15 @@ git clone https://github.com/tensorflow/mlir
 "Multi-Level Intermediate Representation" Compiler Infrastructure
 
 - Tags: intermediate representation language
- wrapsOn none
 - mlir is developed on GitHub and has 1,728 stars
- wrapsOn none
 - There are at least 84 mlir repos on GitHub
- wrapsOn none
 - Early development of mlir happened in https://github.com/tensorflow
- wrapsOn none
 - mlir is written in Markdown
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 27 users using mlir in 30 repos on GitHub
- wrapsOn none
 - First announcement of mlir
- wrapsOn none
 - Read more about mlir on the web: 1.
  https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html 1.
- wrapsOn none
 - 1 PLDB concepts link to mlir: Mojo
- wrapsOn none
 
 // Syntactically similar to LLVM:
 func @testFunction(%arg0: i32) {

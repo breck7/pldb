@@ -11,14 +11,10 @@ EuLisp is a statically and dynamically scoped Lisp dialect developed by a loose 
  https://en.wikipedia.org/wiki/EuLisp Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of EuLisp happened in https://henry.github.io
- wrapsOn none
 - EuLisp on HOPL
  https://hopl.info/showlanguage.prx?exp=1139 EuLisp on HOPL
- wrapsOn none
 - See also: (22 related languages) Lisp, Linux, Common Lisp, Scheme, T, Standard ML, Haskell, Dylan, ISLISP, Interlisp, Lisp Machine Lisp, Le-Lisp, Emacs Lisp, AutoLISP, OpenLisp, PicoLisp, NewLisp, Racket, Guile, Clojure, Arc, LFE
- wrapsOn none
 
 (defmodule hanoi
   (syntax (syntax-0)

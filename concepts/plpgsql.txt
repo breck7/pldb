@@ -13,21 +13,13 @@ PL/pgSQL (Procedural Language/PostgreSQL) is a procedural programming language s
  https://en.wikipedia.org/wiki/PL/pgSQL Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - There are at least 24,919 PL/pgSQL repos on GitHub
- wrapsOn none
 - Early development of PL/pgSQL happened in The PostgreSQL Global Development Group
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using PL/pgSQL in 9k repos on GitHub
- wrapsOn none
 - Pygments supports syntax highlighting for PL/pgSQL
- wrapsOn none
 - GitHub supports syntax highlighting for PL/pgSQL
- wrapsOn none
 - See also: (6 related languages) PL/SQL, Ada, PostgreSQL, SQL/PSM, SQL, Bison
- wrapsOn none
 - 2 PLDB concepts link to PL/pgSQL: Bucardo, PgBouncer
- wrapsOn none
 
 load &#39;plpgsql&#39;;
 load &#39;plpgsql_lint&#39;;

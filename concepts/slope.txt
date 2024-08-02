@@ -13,13 +13,9 @@ git clone https://git.rawtext.club/slope-lang/slope
 A small s-expression based programming language
 
 - Tags: programming language, lisp
- wrapsOn none
 - Early development of Slope happened in https://git.rawtext.club/slope-lang
- wrapsOn none
 - Slope is written in Go
- wrapsOn none
 - There is a central package repository for Slope
- wrapsOn none
 
 ; hello world
 (define greeting &quot;Hello&quot;)

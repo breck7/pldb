@@ -12,15 +12,11 @@ Post-X is a grammar language created in 1980 by P.A.C. Bailes and L.H. Reeker.
 The Post-X language is designed to provide facilities for pattern-directed processing of strings, sequences and trees in an integrated applicative format.
 
 - Tags: grammarLanguage
- wrapsOn none
 - Early development of Post-X happened in University of Queensland
- wrapsOn none
 - Post-X on HOPL
  https://hopl.info/showlanguage.prx?exp=5734 Post-X on HOPL
- wrapsOn none
 - Read more about Post-X on Semantic Scholar: 1.
  https://pdfs.semanticscholar.org/4949/e6dbe9967617534a3e9e5d66e1694a541d74.pdf 1.
- wrapsOn none
 
 REPLACE GRAM := &quot;&lt;&quot;^BREAK&quot;&gt;&quot;^&quot;&gt; &#39;&#39;
                 {TEMPLATElt;^((REPLACE GRAM)&lt;

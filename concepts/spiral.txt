@@ -13,13 +13,9 @@ git clone https://github.com/mrakgr/The-Spiral-Language
 Functional language with intensional polymorphism and first-class staging.
 
 - Tags: programming language
- wrapsOn none
 - spiral is developed on GitHub and has 916 stars
- wrapsOn none
 - Early development of spiral happened in https://github.com/mrakgr/The-Spiral-Language/issues
- wrapsOn none
 - spiral is written in Python, C, F#, JSON, C++, TypeScript, HTML, CUDA, Markdown, XML, PowerShell, TOML
- wrapsOn none
 
 inl x = 2 // Define a 64-bit integer in Spiral.
 inl mult a b = a * b

@@ -11,20 +11,13 @@ Game Maker Language is a programming language created in 1999.
 The language historically tries to accommodate different programming backgrounds and styles - BASIC/Lua style "and" / "or" keywords can be used interchangeably with C-style "&&" / "||" operators; parentheses around conditions in if-statements and loops can be omitted; semicolons are largely optional[26] (insertion happens at the end of statement; compile error is raised in case of ambiguity). The language's default mode of operation on native platforms is via a stack machine; it can also be source-to-source compiled to C++ via LLVM for higher performance.[27] On HTML5, GML is source-to-source compiled to JavaScript with optimizations and minification applied in non-debug builds.
 
 - Tags: programming language
- wrapsOn none
 - There are at least 278 Game Maker Language repos on GitHub
- wrapsOn none
 - Early development of Game Maker Language happened in YoYo Games Ltd
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 394 users using Game Maker Language in 430 repos on GitHub
- wrapsOn none
 - There are 2 Project Euler users using Game Maker Language
- wrapsOn none
 - GitHub supports syntax highlighting for Game Maker Language
- wrapsOn none
 - Read more about Game Maker Language on the web: 1.
  https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/index.html 1.
- wrapsOn none
 
 // Hello World in GML (Game Maker Language)
 draw_text(10,10,&quot;Hello World&quot;)

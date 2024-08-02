@@ -11,21 +11,13 @@ In computing, the diff utility is a data comparison tool that calculates and dis
  https://en.wikipedia.org/wiki/Diff_utility Read more on Wikipedia...
 
 - Tags: unixApplication
- wrapsOn none
 - Early development of Diff happened in AT&T Bell Laboratories
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 477 users using Diff in 561 repos on GitHub
- wrapsOn none
 - CodeMirror package for syntax highlighting Diff
- wrapsOn none
 - Pygments supports syntax highlighting for Diff
- wrapsOn none
 - GitHub supports syntax highlighting for Diff
- wrapsOn none
 - See also: (15 related languages) Unix, grep, Emacs, Regular Expressions, C, Bourne shell, Fortran, Modula-2, Lisp, ISBN, DOI, ed script, patch, Context Diff, Unified Diff
- wrapsOn none
 - 84 PLDB concepts link to Diff: Armed Bear Common Lisp, Ace Editor, ASDF, asterius-compiler, Bazel, Bucardo, Caramel, Carbon, Chapel, Claro, Click, comby, Coq, CouchDB, Cryptol, Dafny, Dhall, Eiffel, Erlang, Fardlang, Fennel, FlatBuffers, Flow, Flow9, Gforth, Git, groff, haste, Haxe, HHVM, hobbes, Homebrew, ImHex, Impala, Java, Julia, Kefir, Kotlin, Ladybird, lobster, mal, Mastodon, mermaid, MicroPython, Minilang, MongoDB, NCAR Command Language, Nit, Node.js, oil, Opa, OpenCV, Perl, PHP, Please Build, PogoScript, polyglot-compiler, POV-Ray SDL, Python, PyTorch, Racket, Reason, Revolution, Roslyn compiler, Ruby, Rust, SciPy, sile, Simplicity, Slony, Semantic Patch Language, Snowball, Spatial, TensorFlow, Terra, Textadept, tiledb, tldraw, TypeScript, Vcpkg, vega-editor-app, wasmer, Wing, yeti
- wrapsOn none
 
 diff --git a/lib/linguist.rb b/lib/linguist.rb
 index d472341..8ad9ffb 100644

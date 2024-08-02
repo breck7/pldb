@@ -758,7 +758,7 @@ ${this.image}
 
 ${this.descriptionSection}
 
-${this.factsArray.map(fact => `- ${fact}\n wrapsOn none`).join("\n")}
+${this.factsArray.map(fact => `- ${fact}\n inlineMarkupsOn none`).join("\n")}
 
 <br>
 

@@ -10,12 +10,8 @@ Generic Haskell is a programming language created in 2000.
 Since datatypes often change and new datatypes are introduced, we have developed Generic HASKELL which supports generic definitions to save the programmer from (re)writing instances of generic functions. Generic HASKELL extends the functional programming language Haskell [5] with, among other things, a construct for defining type-indexed values with kind-indexed types, based on recent work by Hinze [2]. These values can be specialised to all Haskell datatypes, facilitating wider application of generic programming than provided by earlier systems such as PolyP
 
 - Tags: programming language
- wrapsOn none
 - Early development of Generic Haskell happened in Uppsala University and Utrecht University and University of Oxford
- wrapsOn none
 - Generic Haskell on HOPL
  https://hopl.info/showlanguage.prx?exp=4935 Generic Haskell on HOPL
- wrapsOn none
 - Read more about Generic Haskell on the web: 1.
  https://www.researchgate.net/publication/27685179_The_generic_HASKELL_user's_guide_version_099_-_Amber_release 1.
- wrapsOn none

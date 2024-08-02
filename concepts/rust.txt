@@ -15,63 +15,35 @@ Rust is a systems programming language sponsored by Mozilla Research, which desc
  https://en.wikipedia.org/wiki/Rust_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Rust is developed on GitHub and has 95,455 stars
- wrapsOn none
 - Watch the history of the Rust repo visualized with Gource
- wrapsOn none
 - There are at least 356,891 Rust repos on GitHub
- wrapsOn none
 - Early development of Rust happened in Mozilla
- wrapsOn none
 - Rust is written in Rust, Markdown, Diff, TOML, Make, YAML, JavaScript, Bourne shell, HTML, C, Dockerfile, JSON, Python, TypeScript, Puppet, XML, C++, SVG, CSS, Assembly language, AsciiDoc, PowerShell, XSLT, Z shell, CMake, WebAssembly, Logos, Bash, D
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Rust in 16k repos on GitHub
- wrapsOn none
 - Check out the 122 Rust meetup groups on Meetup.com.
- wrapsOn none
 - There are 186,942 members in the Rust subreddit
- wrapsOn none
 - There are 1,227 Project Euler users using Rust
- wrapsOn none
 - In the 2021 StackOverflow developer survey Rust programmers reported a median salary of $77,530. 7% of respondents reported using Rust. 5,799 programmers reported using Rust, and 15,865 said they wanted to use it
- wrapsOn none
 - Explore Rust snippets on Rosetta Code
- wrapsOn none
 - Rust is supported by the GDB
- wrapsOn none
 - Rust ranks #31 in the TIOBE Index
- wrapsOn none
 - Rust Ubuntu package
  https://packages.ubuntu.com/jammy/rustc Rust Ubuntu package
- wrapsOn none
 - Rust LSP implementation
- wrapsOn none
 - CodeMirror package for syntax highlighting Rust
- wrapsOn none
 - Monaco package for syntax highlighting Rust
- wrapsOn none
 - Pygments supports syntax highlighting for Rust
- wrapsOn none
 - GitHub supports syntax highlighting for Rust
- wrapsOn none
 - Rust appears in the Quine Relay project
- wrapsOn none
 - There is 1 Jupyter Kernel for Rust
- wrapsOn none
 - There is a central package repository for Rust
- wrapsOn none
 - Indeed.com has 141 matches for "rust engineer".
- wrapsOn none
 - rust-lang.org was registered in 2010
- wrapsOn none
 - See also: (28 related languages) Linux, FreeBSD, Android, iOS, ALEF, C#, Cyclone, Erlang, Haskell, Haxe, Limbo, Newsqueak, Ruby, Scheme, Standard ML, Swift, Crystal, Elm, Idris, C, ML, Go, Java, OCaml, LLVM IR, D, Nim, Emacs
- wrapsOn none
 - Read more about Rust on the web: 1.
  https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html 1.
- wrapsOn none
 - 97 PLDB concepts link to Rust: Ace Editor, Alumina, Amber, Ante, Ante, aretext, arret, astro, Bend, BlazeX, Calcit, Calypso, Candy, carth, Chapel, cosh, Cotton, crush, Curly, Cyber, cytosol, Dafny, datafun, Deno, Differential Datalog, edgedb, Enso, erg, Esoteric Reaction, Factor, fish, FlatBuffers, gleam, Glicol, gluon, hacspec, HHVM, hurl, Hush, inko, invokator, Jazz, Jingo, jsparagus, Jule, Kami, KavaScript, leo-editor, Linux, Luna, mal, Markus, Mech, Melody, Mewl, micro-mitten, mlatu, MongoDB, mun-lang, Node.js, noulith, Nushell, Observable Framework, Passerine, pikelet, Pomsky, Project Mentat, PRQL, Pygments, Reason, rio, Roc, Ron, Ruby, Rust, Scryer Prolog, Serious, Simple Binary Encoding, Snowball, svgbob, tablam, Tao, tsar, UCG, Uiua, unseemly, Uniform eXchange Format, Veryl, wasmer, weebasic, Wing, WLambda, Worst, Wu, xlwings-editor, xsv-app, zz
- wrapsOn none
 
 // Type your code here, or load an example.
 pub fn square(num: i32) -&gt; i32 {

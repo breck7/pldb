@@ -11,12 +11,9 @@ ELLA is a Hardware description language and support toolset. Developed by the Ro
  https://en.wikipedia.org/wiki/ELLA_%28programming_language%29 Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of ELLA happened in Royal Signals and Radar Establishment
- wrapsOn none
 - ELLA on HOPL
  https://hopl.info/showlanguage.prx?exp=847 ELLA on HOPL
- wrapsOn none
 
 MAC ZIP = ([INT n]TYPE t: vector1 vector2) -&gt; [n][2]t:
   [INT k = 1..n](vector1[k], vector2[k]).

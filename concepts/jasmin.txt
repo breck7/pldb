@@ -11,17 +11,11 @@ Jasmin is a programming language created in 1997.
 Jasmin is an assembler for the Java Virtual Machine. It takes ASCII descriptions of Java classes, written in a simple assembler-like syntax using the Java Virtual Machine instruction set. It converts them into binary Java class files, suitable for loading by a Java runtime system.
 
 - Tags: programming language
- wrapsOn none
 - There are at least 74 Jasmin repos on GitHub
- wrapsOn none
 - Early development of Jasmin happened in https://jasmin.sourceforge.net/
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using Jasmin in 204 repos on GitHub
- wrapsOn none
 - Pygments supports syntax highlighting for Jasmin
- wrapsOn none
 - GitHub supports syntax highlighting for Jasmin
- wrapsOn none
 
 .class public Main
 .super java/lang/Object

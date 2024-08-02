@@ -24,16 +24,11 @@ ALGOL 60 (short for Algorithmic Language 1960) is a member of the ALGOL family o
  https://en.wikipedia.org/wiki/ALGOL_60 Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of ALGOL 60 happened in International Federation for Information Processing
- wrapsOn none
 - ALGOL 60 on HOPL
  https://hopl.info/showlanguage.prx?exp=1807 ALGOL 60 on HOPL
- wrapsOn none
 - See also: (28 related languages) ALGOL 58, Simula, CPL, Pascal, Ada, C, Algol, CPL, BCPL, B, ALGOL W, ALGOL 68, COBOL, Scheme, Lisp, SMIL, ACT-III, Elliott ALGOL, Executive Systems Problem Oriented Language, NEWP, ALGOL N, Atlas Autocode, CORAL, Edinburgh IMP, ISWIM, JOVIAL, NELIAC, S-algol
- wrapsOn none
 - 6 PLDB concepts link to ALGOL 60: ALGOL W, Executive Systems Problem Oriented Language, Modula, Oberon, Pascal, Simula
- wrapsOn none
 
 procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
    value n, m; array a; integer n, m, i, k; real y;

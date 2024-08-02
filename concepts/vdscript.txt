@@ -15,16 +15,11 @@ VirtualDub is a free and open-source video capture and video processing utility 
  https://en.wikipedia.org/wiki/VirtualDub Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of vdscript happened in https://virtualdub.org/virtualdub_history.html
- wrapsOn none
 - vdscript is written in C++
- wrapsOn none
 - There is a central package repository for vdscript
- wrapsOn none
 - Read more about vdscript on the web: 1.
  https://sourceforge.net/projects/virtualdub 1.
- wrapsOn none
 
 declare foo;
 foo = VirtualDub.video.filters;

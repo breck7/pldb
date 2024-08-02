@@ -14,21 +14,14 @@ Flex (fast lexical analyzer generator) is a free and open-source software altern
  https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator) Read more on Wikipedia...
 
 - Tags: grammarLanguage
- wrapsOn none
 - FLEX is developed on GitHub and has 3,518 stars
- wrapsOn none
 - Early development of FLEX happened in University of California, Berkeley
- wrapsOn none
 - FLEX is written in Lex, C, Bourne shell, Make, Yacc, LLVM IR, M4, Markdown, YAML, Perl, awk, C++, IDL
- wrapsOn none
 - FLEX on HOPL
  https://hopl.info/showlanguage.prx?exp=2033 FLEX on HOPL
- wrapsOn none
 - See also: (5 related languages) Bison, Yacc, C, RATFOR, PL/0
- wrapsOn none
 - Read more about FLEX on the web: 1.
  https://github.com/babyraging/yash 1.
- wrapsOn none
 
 %{
 #include &lt;stdio.h&gt;

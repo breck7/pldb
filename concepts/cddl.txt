@@ -10,14 +10,10 @@ CBOR data definition language, aka CBOR data definition language, is an interfac
 Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures
 
 - Tags: interface design language
- wrapsOn none
 - Early development of CBOR data definition language happened in Fraunhofer-Institut für Sichere Informationstechnologie SIT and Technologie-Zentrum Informatik und Informationstechnik
- wrapsOn none
 - Pygments supports syntax highlighting for CBOR data definition language
- wrapsOn none
 - Read more about CBOR data definition language on the web: 1.
  https://tools.ietf.org/html/draft-ietf-cbor-cddl-00 1.
- wrapsOn none
 
 pii = (
   age: int,

@@ -13,13 +13,8 @@ git clone https://github.com/MPACT-ORG/llvm-project/
 We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
 
 - Tags: instruction set architecture
- wrapsOn none
 - mdl is developed on GitHub and has 31 stars
- wrapsOn none
 - Early development of mdl happened in https://github.com/MPACT-ORG
- wrapsOn none
 - mdl is written in C++
- wrapsOn none
 - Read more about mdl on the web: 1.
  https://discourse.llvm.org/t/rfc-mdl-a-micro-architecture-description-language-for-llvm/66409/4 1.
- wrapsOn none

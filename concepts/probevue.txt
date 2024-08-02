@@ -11,9 +11,7 @@ ProbeVue is IBM's implementation of a lightweight dynamic tracing environment in
  https://en.wikipedia.org/wiki/undefined Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of ProbeVue happened in http://www.tablespace.net
- wrapsOn none
 
 @@syscall:*:read:entry
 when ( __pid == 123456)

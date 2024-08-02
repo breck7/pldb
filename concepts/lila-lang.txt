@@ -12,13 +12,9 @@ git clone https://github.com/codr7/lila
 a cleaner language based on Common Lisp
 
 - Tags: programming language
- wrapsOn none
 - lila-lang is developed on GitHub and has 4 stars
- wrapsOn none
 - Early development of lila-lang happened in https://github.com/codr7/lila/issues
- wrapsOn none
 - lila-lang is written in Lisp, Python, Markdown, SVG, YAML
- wrapsOn none
 
 fun fib(n:Int) (Int) {
   if {n.&lt; 2} n {

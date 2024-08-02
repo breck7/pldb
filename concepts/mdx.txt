@@ -13,17 +13,11 @@ git clone https://github.com/mdx-js/mdx
 MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
 
 - Tags: text markup language
- wrapsOn none
 - MDX is developed on GitHub and has 17,208 stars
- wrapsOn none
 - Early development of MDX happened in https://github.com/mdx-js
- wrapsOn none
 - MDX is written in JavaScript, Markdown, JSX, JSON, YAML, TypeScript, CSS, SVG, JSON5
- wrapsOn none
 - mdxjs.com was registered in 2018
- wrapsOn none
 - 1 PLDB concepts link to MDX: Slashdown
- wrapsOn none
 
 import { Chart } from &#39;../components/chart&#39;
 

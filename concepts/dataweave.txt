@@ -11,18 +11,12 @@ DataWeave is a programming language created in 2014.
 DataWeave is the MuleSoft expression language for accessing and transforming data received through a Mule app. DataWeave is tightly integrated with Mule runtime, which runs the scripts and expressions in your Mule app.
 
 - Tags: programming language
- wrapsOn none
 - There are at least 1,326 DataWeave repos on GitHub
- wrapsOn none
 - Early development of DataWeave happened in https://github.com/mulesoft-labs/
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 9 users using DataWeave in 9 repos on GitHub
- wrapsOn none
 - GitHub supports syntax highlighting for DataWeave
- wrapsOn none
 - Read more about DataWeave on the web: 1.
  https://docs.mulesoft.com/mule-runtime/4.1/dataweave 1.
- wrapsOn none
 
 %dw 2.0
 var number = 1234

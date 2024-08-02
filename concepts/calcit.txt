@@ -13,13 +13,9 @@ git clone https://github.com/calcit-lang/calcit/
 Indentation-based ClojureScript dialect in Rust and compiling to JavaScript ES Modules
 
 - Tags: programming language, lisp
- wrapsOn none
 - Calcit is developed on GitHub and has 109 stars
- wrapsOn none
 - Calcit compiles to JavaScript
- wrapsOn none
 - Calcit is written in Rust, TOML, Markdown, YAML, JSON, Bourne shell, JavaScript
- wrapsOn none
 
 tag-match shape
   (:circle base radius) $ println &quot;Circle with radius:&quot; radius

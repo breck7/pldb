@@ -12,23 +12,14 @@ Apache Pig is a high-level platform for creating programs that run on Apache Had
  https://en.wikipedia.org/wiki/Apache_Pig Read more on Wikipedia...
 
 - Tags: queryLanguage
- wrapsOn none
 - There are at least 1,347 Pig Latin repos on GitHub
- wrapsOn none
 - Early development of Pig Latin happened in Apache
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using Pig Latin in 606 repos on GitHub
- wrapsOn none
 - CodeMirror package for syntax highlighting Pig Latin
- wrapsOn none
 - Pygments supports syntax highlighting for Pig Latin
- wrapsOn none
 - GitHub supports syntax highlighting for Pig Latin
- wrapsOn none
 - See also: (8 related languages) Linux, Java, SQL, Python, JavaScript, Ruby, Groovy, Sawzall
- wrapsOn none
 - 3 PLDB concepts link to Pig Latin: Ace Editor, cloc, Pygments
- wrapsOn none
 
 input_lines = LOAD &#39;/tmp/word.txt&#39; AS (line:chararray);
 words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;

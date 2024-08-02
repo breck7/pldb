@@ -12,17 +12,11 @@ git clone https://github.com/facebook/flow
 Javascript with static type checking.
 
 - Tags: programming language
- wrapsOn none
 - Flow is developed on GitHub and has 22,082 stars
- wrapsOn none
 - Early development of Flow happened in Facebook
- wrapsOn none
 - Flow is written in JavaScript, JSON, OCaml, Expect, Bourne shell, Diff, Markdown, C, CSS, Make, C++, Dockerfile, SVG, JSX, YAML, Bash, PowerShell, Python
- wrapsOn none
 - flow.org was registered in 2002
- wrapsOn none
 - 1 PLDB concepts link to Flow: Civet
- wrapsOn none
 
 // @flow
 function square(n: number): number {

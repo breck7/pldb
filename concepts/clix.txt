@@ -11,12 +11,9 @@ Constraint Language in XML (CLiX) used to constrain the content of XML documents
  https://en.wikipedia.org/wiki/CLiX_(markup) Read more on Wikipedia...
 
 - Tags: xmlFormat
- wrapsOn none
 - Early development of CLiX markup happened in University College London
- wrapsOn none
 - Read more about CLiX markup on the web: 1.
  https://www.w3.org/2004/12/rules-ws/paper/24/ 1.
- wrapsOn none
 
 &lt;forall var=&quot;dates&quot; in=&quot;//fpml:calculationPeriodDates&gt;
   &lt;less op1=&quot;$dates/fpml:effectiveDate/fpml:unadjustedDate&quot;

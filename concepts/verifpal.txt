@@ -10,9 +10,7 @@ verifpal is a programming language created in 2019.
 Verifpal is new software for verifying the security of cryptographic protocols. The Verifpal language is meant to illustrate protocols close to how one may describe them in an informal conversation, while still being precise and expressive enough for formal modeling. Verifpal reasons about the protocol model with explicit principals: Alice and Bob exist and have independent states.
 
 - Tags: programming language
- wrapsOn none
 - verifpal.com was registered in 2019
- wrapsOn none
 
 // All lines that start with &quot;//&quot; are treated as comments and ignored by Verifpal
 // A principal block looks like the following

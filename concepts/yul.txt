@@ -10,12 +10,9 @@ Yul is a programming language created in 2016.
 JULIA is an intermediate language that can compile to various different backends (EVM 1.0, EVM 1.5 and eWASM are planned). Because of that, it is designed to be a usable common denominator of all three platforms. It can already be used for “inline assembly” inside Solidity and future versions of the Solidity compiler will even use JULIA as intermediate language. It should also be easy to build high-level optimizer stages for JULIA.
 
 - Tags: programming language
- wrapsOn none
 - Early development of Yul happened in https://github.com/ethereum
- wrapsOn none
 - Read more about Yul on the web: 1.
  https://solidity.readthedocs.io/en/v0.4.21/julia.html 1.
- wrapsOn none
 
 {
     function power(base:u256, exponent:u256) -&gt; result:u256

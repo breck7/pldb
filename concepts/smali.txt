@@ -13,21 +13,13 @@ git clone https://github.com/JesusFreke/smali
 smali/baksmali
 
 - Tags: assembly language
- wrapsOn none
 - Smali is developed on GitHub and has 6,269 stars
- wrapsOn none
 - There are at least 2,479 Smali repos on GitHub
- wrapsOn none
 - Early development of Smali happened in https://github.com/JesusFreke/smali/issues
- wrapsOn none
 - Smali is written in Java, Gradle, XML, Bash, Markdown, Bourne shell, C, Make
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Smali in 212 repos on GitHub
- wrapsOn none
 - Pygments supports syntax highlighting for Smali
- wrapsOn none
 - GitHub supports syntax highlighting for Smali
- wrapsOn none
 
 .method public getTokens(I)I
  .locals 2

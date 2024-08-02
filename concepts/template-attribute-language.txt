@@ -11,9 +11,7 @@ The Template Attribute Language (TAL) is a templating language used to generate 
  https://en.wikipedia.org/wiki/Template_Attribute_Language Read more on Wikipedia...
 
 - Tags: template language
- wrapsOn none
 - See also: (8 related languages) HTML, XML, Python, Java, Perl, Raku, Common Lisp, Thymeleaf
- wrapsOn none
 
 &lt;tal:if condition=&quot;context/itemlist&quot;&gt;
 &lt;/tal&gt;

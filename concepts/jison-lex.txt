@@ -14,17 +14,11 @@ git clone https://github.com/zaach/jison-lex
 generates lexical analyzers. used by jison.
 
 - Tags: programming language
- wrapsOn none
 - Jison Lex is developed on GitHub and has 57 stars
- wrapsOn none
 - There are at least 0 Jison Lex repos on GitHub
- wrapsOn none
 - Early development of Jison Lex happened in https://github.com/zaach/jison-lex/issues
- wrapsOn none
 - Jison Lex is written in JavaScript, Lex, JSON, Markdown
- wrapsOn none
 - GitHub supports syntax highlighting for Jison Lex
- wrapsOn none
 
 %%
 \n+                         {yy.freshLine = true;}

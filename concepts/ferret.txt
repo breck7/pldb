@@ -13,15 +13,10 @@ git clone https://github.com/nakkaya/ferret
 Ferret is a free software lisp implementation for real time embedded control systems.
 
 - Tags: programming language
- wrapsOn none
 - ferret is developed on GitHub and has 1,068 stars
- wrapsOn none
 - Early development of ferret happened in Near East University
- wrapsOn none
 - ferret is written in YAML, Make, Markdown
- wrapsOn none
 - ferret-lang.org was registered in 2017
- wrapsOn none
 
 ;;; lazy-sum.clj
 (defn positive-numbers

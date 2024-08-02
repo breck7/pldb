@@ -12,18 +12,13 @@ Carpet is a programming language created in 1997 by Giandomenico Spezzano and Do
 This paper describes CARPET, a high-level programming language based on the cellular automata model. CARPET is a programming language designed to support the development of parallel high performance software. It exploits the computing power of a highly parallel computer releasing a user from using explicit parallel constructs. A CARPET implementation has been used for programming cellular algorithms in the CAMEL parallel environment. By CARPET a user might write programs to describe the actions of thousands of simple active agents interacting locally, then the CAMEL environment allows a user to observe the global complex evolution that arises from their parallel execution and their local interactions.
 
 - Tags: programming language
- wrapsOn none
 - Early development of Carpet happened in University of Calabria
- wrapsOn none
 - Carpet on HOPL
  https://hopl.info/showlanguage.prx?exp=6227 Carpet on HOPL
- wrapsOn none
 - Read more about Carpet on Semantic Scholar: 1.
  https://semanticscholar.org/paper/ca5c3e6a3f7e5223052fef1d626c6f29e4b6bc8a 1.
- wrapsOn none
 - Read more about Carpet on the web: 1.
  https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=ec6ea12f096627857637678555a968f40a94a6d1 1.
- wrapsOn none
 
 cadef
 {

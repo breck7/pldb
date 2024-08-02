@@ -12,17 +12,11 @@ git clone https://github.com/rzimmerman/kal
 Kal is a highly readable, easy-to-use language that compiles to JavaScript.
 
 - Tags: programming language
- wrapsOn none
 - Kal is developed on GitHub and has 395 stars
- wrapsOn none
 - Early development of Kal happened in https://github.com/rzimmerman/kal/issues
- wrapsOn none
 - Kal compiles to JavaScript
- wrapsOn none
 - Kal is written in Markdown, JSON, YAML
- wrapsOn none
 - Pygments supports syntax highlighting for Kal
- wrapsOn none
 
 task getUserFriends (userName)
  wait for user from db.users.findOne {name:userName}

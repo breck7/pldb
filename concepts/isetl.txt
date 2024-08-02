@@ -12,17 +12,12 @@ SETL (SET Language) is a very high-level programming language based on the mathe
  https://en.wikipedia.org/wiki/ISETL_%28programming_language%29 Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of ISETL happened in Clarkson University
- wrapsOn none
 - ISETL on HOPL
  https://hopl.info/showlanguage.prx?exp=2123 ISETL on HOPL
- wrapsOn none
 - See also: (4 related languages) ALGOL 60, ABC, Ada, Python
- wrapsOn none
 - Read more about ISETL on Semantic Scholar: 1.
  https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe916e 1.
- wrapsOn none
 
 procedure factorial(n); -- calculates the factorial n!
   return if n = 1 then 1 else n * factorial(n - 1) end if;

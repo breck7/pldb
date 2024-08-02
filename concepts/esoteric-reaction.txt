@@ -12,13 +12,9 @@ git clone https://github.com/bigyihsuan/EsotericReaction
 Esolang using chemical "formulas" as code
 
 - Tags: esoteric programming language
- wrapsOn none
 - Esoteric Reaction is developed on GitHub and has 4 stars
- wrapsOn none
 - Early development of Esoteric Reaction happened in https://bigyihsuan.github.io
- wrapsOn none
 - Esoteric Reaction is written in Rust, Markdown, CSV, JSON, Python, TOML
- wrapsOn none
 
  &lt;code&gt;	   ::= &lt;equation&gt; | &lt;equation&gt; &lt;code&gt;
  &lt;equation&gt; ::= &lt;reagent&gt; &lt;rhs&gt; | &lt;COMMENT&gt; | &lt;reagent&gt; &lt;rhs&gt; &lt;COMMENT&gt;

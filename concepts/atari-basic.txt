@@ -11,13 +11,9 @@ Atari BASIC is an interpreter for the BASIC programming language that shipped wi
  https://en.wikipedia.org/wiki/Atari_BASIC Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Atari BASIC happened in Shepardson Microsystems
- wrapsOn none
 - See also: (10 related languages) Atari Microsoft BASIC, Atari ST BASIC, BASIC Programming, Microsoft BASIC, BASIC, Applesoft BASIC, BASIC-PLUS, HP Time-Shared BASIC, Optimized Systems Software, Turbo-Basic XL
- wrapsOn none
 - 1 PLDB concepts link to Atari BASIC: Turbo-Basic XL
- wrapsOn none
 
 10 REM Opens the cassette device on channel 1 for reading in BASIC
 20 OPEN #1,4,0,&quot;C:MYPROG.DAT&quot;

@@ -13,20 +13,13 @@ In computer science, Backus–Naur form or Backus normal form (BNF) is a notatio
  https://en.wikipedia.org/wiki/Backus–Naur_form Read more on Wikipedia...
 
 - Tags: grammarLanguage
- wrapsOn none
 - Early development of BNF happened in IBM
- wrapsOn none
 - BNF on HOPL
  https://hopl.info/showlanguage.prx?exp=1865 BNF on HOPL
- wrapsOn none
 - ANTLR grammar for BNF
- wrapsOn none
 - Pygments supports syntax highlighting for BNF
- wrapsOn none
 - See also: (18 related languages) ALGOL 58, Algol, ALGOL 60, Compiler-Compiler, Yacc, SYMBOL, ASCII, Regular Expressions, PL/I, PEG, ANTLR, Java, Haskell, Coco/R, GOLD, Bison, XPL, ISBN
- wrapsOn none
 - 1 PLDB concepts link to BNF: Parsers
- wrapsOn none
 
 &lt;syntax&gt;         ::= &lt;rule&gt; | &lt;rule&gt; &lt;syntax&gt;
  &lt;rule&gt;           ::= &lt;opt-whitespace&gt; &quot;&lt;&quot; &lt;rule-name&gt; &quot;&gt;&quot; &lt;opt-whitespace&gt; &quot;::=&quot; &lt;opt-whitespace&gt; &lt;expression&gt; &lt;line-end&gt;

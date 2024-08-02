@@ -13,12 +13,8 @@ git clone https://github.com/proprowataya/calc4
 Calc4 is a programming language where everything in its code is an operator.
 
 - Tags: programming language
- wrapsOn none
 - Calc4 is developed on GitHub and has 5 stars
- wrapsOn none
 - Early development of Calc4 happened in https://github.com/proprowataya
- wrapsOn none
 - Calc4 is written in C++, CMake, Markdown, YAML, Bourne shell
- wrapsOn none
 
 [fib2|x, a, b|x ? ((x-1) ? ((x-1) {fib2} (a+b) {fib2}a) ? a) ? b] 38{fib2}1{fib2}0

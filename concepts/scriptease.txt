@@ -10,15 +10,11 @@ ScriptEase is a programming language created in 2001.
 ScriptEase provides the most powerful and advanced form of JavaScript available today. Whereas other flavors of JavaScipt are embedded in web browsers and restricted to scripts that have been transmitted along with HTML documents, the ScriptEase processor allows you to run scripts locally, so you can use ScriptEase to write full fledged programs. In addition, ScriptEase has added commands and directives that increase and extend its power without interfering with the operation of standard JavaScript. These enhancements include preprocessor directives such as #include and #define, the switch/case statement, and the built-in Buffer object.
 
 - Tags: programming language
- wrapsOn none
 - Early development of ScriptEase happened in Nombas, Inc
- wrapsOn none
 - ScriptEase on HOPL
  https://hopl.info/showlanguage.prx?exp=3619 ScriptEase on HOPL
- wrapsOn none
 - Read more about ScriptEase on the web: 1.
  https://web.archive.org/web/20030417161951/http://www.nombas.com/us/company/company.htm 1.
- wrapsOn none
 
 while( ThereAreUncalledNamesOnTheList() == true){
   name=GetNameFromTheList();

@@ -12,11 +12,7 @@ FlowNet is a protocol created in 1993 by Erann Gat and Mike Ciholas.
 Ethernet alternative. Like ATM, FlowNet is a switched network based on fixed-size cells. Unlike ATM, FlowNet cells are large--800 bytes instead of 53. This allows room for a 14-byte Ethernet header plus an additional QoS extension. The QoS extension header is 18 bytes, making the full FlowNet header 32 bytes long. The remaining 768 bytes (=256+512) are data payload. FlowNet interoperates with Ethernet through a simple bridge device.
 
 - Tags: protocol
- wrapsOn none
 - Early development of FlowNet happened in https://rongarret.info
- wrapsOn none
 - See also: (1 related languages) Ethernet
- wrapsOn none
 - Read more about FlowNet on the web: 1.
  https://flownet.com/gat/fnlj.html 1.
- wrapsOn none

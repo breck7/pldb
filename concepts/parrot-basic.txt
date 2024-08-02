@@ -11,11 +11,8 @@ Parrot is a register-based process virtual machine designed to run dynamic langu
  https://en.wikipedia.org/wiki/Parrot_BASIC Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Parrot BASIC happened in https://www.perl.org
- wrapsOn none
 - See also: (30 related languages) C, Parrot Assembly, PIR, Perl, Raku, Python, JVM, LLVM IR, Java, Java Bytecode, Joy, Lua, PHP, Ruby, Scheme, Tcl, WMLScript, Arc, APL, Common Lisp, Lisp, Forth, QuickBASIC, Smalltalk, CIL, Befunge, Brainfuck, LOLCODE, UNLAMBDA, Unicode
- wrapsOn none
 
 .sub &#39;main&#39; :main
     $I1 = 4

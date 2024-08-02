@@ -13,11 +13,8 @@ git clone https://github.com/Puppygames/thjson
 THJSON looks almost exactly like HJSON - it is in fact a superset of HJSON, which itself is a superset of JSON. The extra bit is the addition of a class name in round brackets before a map (maps are objects that are enclosed in {} parentheses).
 
 - Tags: dataNotation
- wrapsOn none
 - thjson is developed on GitHub and has 15 stars
- wrapsOn none
 - thjson is written in Java, Markdown, XML
- wrapsOn none
 
 left_hand: (sword) {
     damage: 3

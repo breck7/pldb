@@ -11,18 +11,12 @@ HXML is an application created in 2009.
 Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe . In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
 
 - Tags: application
- wrapsOn none
 - There are at least 0 HXML repos on GitHub
- wrapsOn none
 - Early development of HXML happened in Haxe Foundation
- wrapsOn none
 - Pygments supports syntax highlighting for HXML
- wrapsOn none
 - GitHub supports syntax highlighting for HXML
- wrapsOn none
 - Read more about HXML on the web: 1.
  https://haxe.org/manual/compiler-usage-hxml.html 1.
- wrapsOn none
 
 -cp src
 -dce full

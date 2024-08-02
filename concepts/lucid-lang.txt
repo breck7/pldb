@@ -13,13 +13,9 @@ git clone https://github.com/chrisdone/lucid
 Clear to write, read and edit DSL for writing HTML
 
 - Tags: template language
- wrapsOn none
 - Lucid is developed on GitHub and has 279 stars
- wrapsOn none
 - Early development of Lucid happened in https://github.com/chrisdone/lucid/issues
- wrapsOn none
 - Lucid is written in Haskell, Markdown, YAML, CSS, JavaScript, Dockerfile
- wrapsOn none
 
 table_ [rows_ &quot;2&quot;]
        (tr_ (do td_ [class_ &quot;top&quot;,colspan_ &quot;2&quot;,style_ &quot;color:red&quot;]

@@ -8,13 +8,9 @@ Low* is a programming language created in 2008.
 16 Years Old
 
 - Tags: programming language
- wrapsOn none
 - Early development of Low* happened in Microsoft Research and Institut national de recherche en sciences et technologies du numérique
- wrapsOn none
 - Low* compiles to C
- wrapsOn none
 - First announcement of Low*
- wrapsOn none
 
 let chacha20
  (len: uint32{len ≤ blocklen})

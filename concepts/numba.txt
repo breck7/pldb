@@ -13,15 +13,10 @@ git clone https://github.com/numba/numba
 Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
 
 - Tags: compiler
- wrapsOn none
 - Numba is developed on GitHub and has 9,676 stars
- wrapsOn none
 - Early development of Numba happened in https://github.com/numba
- wrapsOn none
 - Numba is written in Python, reStructuredText, C, YAML, C++, Bourne shell, Markdown, CUDA, SVG, JavaScript, HTML, Make, TOML, Ini, CSS
- wrapsOn none
 - 1 PLDB concepts link to Numba: Triton
- wrapsOn none
 
 from numba import njit
 import random

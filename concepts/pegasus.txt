@@ -13,13 +13,9 @@ git clone https://github.com/DanilaFe/pegasus
 A parser generator for C and Crystal.
 
 - Tags: grammarLanguage
- wrapsOn none
 - Pegasus is developed on GitHub and has 61 stars
- wrapsOn none
 - Pegasus compiles to C or Crystal
- wrapsOn none
 - Pegasus is written in Crystal, Embedded Crystal, C, YAML, Markdown
- wrapsOn none
 
 token space = / +/ [ skip ];
 token digit = /[0-9]/;

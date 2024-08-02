@@ -10,11 +10,8 @@ plink-bed-format is a binary data format created in 2007.
 Primary representation of genotype calls at biallelic variants. Do not confuse this with the UCSC Genome Browser's BED format, which is totally different. Used in plink.
 
 - Tags: binaryDataFormat
- wrapsOn none
 - Early development of plink-bed-format happened in https://github.com/samtools
- wrapsOn none
 - Read more about plink-bed-format on the web: 1.
  https://www.sciencedirect.com/science/article/pii/S0002929707613524 1.
- wrapsOn none
 
 0x6c 0x1b 0x01 0xdc 0x0f 0xe7 0x0f 0x6b 0x01

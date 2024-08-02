@@ -15,42 +15,25 @@ AWK is a programming language designed for text processing and typically used as
  https://en.wikipedia.org/wiki/AWK Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Interview with the creators of awk: 1.
  https://pldb.io/blog/brianKernighan.html 1.
- wrapsOn none
 - There are at least 2,552 awk repos on GitHub
- wrapsOn none
 - Early development of awk happened in Bell Labs
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on GitHub
- wrapsOn none
 - There are 1,929 members in the awk subreddit
- wrapsOn none
 - There are 14 Project Euler users using awk
- wrapsOn none
 - Explore awk snippets on Rosetta Code
- wrapsOn none
 - awk on HOPL
  https://hopl.info/showlanguage.prx?exp=1844 awk on HOPL
- wrapsOn none
 - awk ranks #37 in the TIOBE Index
- wrapsOn none
 - awk Ubuntu package
  https://packages.ubuntu.com/jammy/gawk awk Ubuntu package
- wrapsOn none
 - Pygments supports syntax highlighting for awk
- wrapsOn none
 - GitHub supports syntax highlighting for awk
- wrapsOn none
 - awk appears in the Quine Relay project
- wrapsOn none
 - Indeed.com has 7 matches for "awk engineer".
- wrapsOn none
 - See also: (14 related languages) C, SNOBOL, Bourne shell, Tcl, AMPL, Perl, Lua, Regular Expressions, Unix, sed, FreeBSD, Solaris, Java, ISBN
- wrapsOn none
 - 43 PLDB concepts link to awk: Armed Bear Common Lisp, Bash, bawk, beef-lang, Chapel, Civet, crmsh, Eiffel, ELFE, FFmpeg, FLEX, Flow9, Gforth, Go, groff, HHVM, Incipit, Java, kona, ktye/k, latino, Lil, Linux, mal, Manim, MongoDB, NGS, Node.js, Noweb, PHP, GNU Poke, POV-Ray SDL, Prism, Pygments, Ragel, Revolution, Ruby, Slony, Semantic Patch Language, Swift, V, Wonkey, XL
- wrapsOn none
 
 BEGIN { print &quot;Hello, world!&quot; }
 

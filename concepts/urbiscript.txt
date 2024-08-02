@@ -12,11 +12,8 @@ urbiscript is a programming language for robotics.  It features syntactic suppor
  https://en.wikipedia.org/wiki/Urbiscript Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Pygments supports syntax highlighting for Urbiscript
- wrapsOn none
 - See also: (3 related languages) Self, Io, C
- wrapsOn none
 
 at (x + y == z)
     echo(&quot;%s + %s == %s&quot; % [x, y, z]);

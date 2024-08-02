@@ -13,16 +13,11 @@ git clone https://github.com/purpleidea/mgmt
 Next generation distributed, event-driven, parallel config management!
 
 - Tags: programming language
- wrapsOn none
 - mgmt is developed on GitHub and has 3,473 stars
- wrapsOn none
 - Early development of mgmt happened in https://github.com/purpleidea/mgmt/issues
- wrapsOn none
 - mgmt is written in Go, YAML, Bourne shell, Markdown, SVG, Make, Python, Bash, Dockerfile, Yacc, Lisp, Smarty, Puppet, reStructuredText
- wrapsOn none
 - Read more about mgmt on the web: 1.
  https://fosdem.org/2020/schedule/event/mgmtconfigmore/ 1.
- wrapsOn none
 
 import &quot;datetime&quot;
 $is_friday = datetime.weekday(datetime.now()) == &quot;friday&quot;

@@ -10,12 +10,9 @@ net-format is a text data format created in 2006.
 The net file format is used to describe the axtNet data that underlie the net alignment annotations in the Genome Browser. In 2016 it was revised so that line indentation level represents the parent/child relationship between records and is a necessary part of the net file format. Child records are indented one space from the parent, as shown in the example net file below.
 
 - Tags: textDataFormat
- wrapsOn none
 - Early development of net-format happened in University of California, Santa Cruz
- wrapsOn none
 - Read more about net-format on the web: 1.
  https://genome.ucsc.edu/goldenPath/help/net.html 1.
- wrapsOn none
 
 net chr2L 23011544
  fill 6004 3278 chrXR_group3a - 1396397 2164 id 25606 score 23114 ali 782 qDup 576 type top tN 0 qN 0 tR 36 qR 0 tTrf 0 qTrf 0

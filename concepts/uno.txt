@@ -13,22 +13,14 @@ git clone https://github.com/fuse-open/uno
 The Uno langauge is a dialect of C#, designed for cross-compilation to C++ and other languages. Uno does not require the .NET Framework, but has instead a more lightweight library called UnoCore. The syntax of Uno is more or less identical to C#, with deviations documented here.
 
 - Tags: programming language
- wrapsOn none
 - Uno is developed on GitHub and has 89 stars
- wrapsOn none
 - There are at least 232 Uno repos on GitHub
- wrapsOn none
 - Uno is written in C#, XML, Java, C++, Bourne shell, Objective C++, Markdown, JSON, JavaScript, Python, Gradle, CMake, XAML, Bash, YAML, Make, Swift, TypeScript
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Uno in 37 repos on GitHub
- wrapsOn none
 - GitHub supports syntax highlighting for Uno
- wrapsOn none
 - fuseopen.com was registered in 2017
- wrapsOn none
 - Read more about Uno on the web: 1.
  https://fuseopen.com/docs/uno/uno-lang.html 1.
- wrapsOn none
 
 using Uno;
 using Uno.Collections;

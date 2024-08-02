@@ -14,21 +14,13 @@ git clone https://github.com/tj/ejs
 Embedded JavaScript templates for node
 
 - Tags: template language
- wrapsOn none
 - EJS is developed on GitHub and has 4,469 stars
- wrapsOn none
 - There are at least 92,857 EJS repos on GitHub
- wrapsOn none
 - Early development of EJS happened in https://apex.sh
- wrapsOn none
 - EJS is written in EJS, JavaScript, HTML, Markdown, Make, JSON, YAML, CSS
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 560 users using EJS in 614 repos on GitHub
- wrapsOn none
 - GitHub supports syntax highlighting for EJS
- wrapsOn none
 - 10 PLDB concepts link to EJS: Ace Editor, cloc, EJS, exkited, Kotlin, Mathpix Markdown, skulpt, Snowman, SQRL, Wyvern
- wrapsOn none
 
 &lt;% if (user) { %&gt;
    &lt;h2&gt;&lt;%= user.name %&gt;&lt;/h2&gt;

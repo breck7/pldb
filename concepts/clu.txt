@@ -12,16 +12,11 @@ CLU is a programming language created at the Massachusetts Institute of Technolo
  https://en.wikipedia.org/wiki/CLU_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of CLU happened in Massachusetts Institute of Technology
- wrapsOn none
 - CLU on HOPL
  https://hopl.info/showlanguage.prx?exp=637 CLU on HOPL
- wrapsOn none
 - CLU appears in the TIOBE Index
- wrapsOn none
 - See also: (17 related languages) SPARC, ALGOL 60, Lisp, Simula, Ada, Argus, Lua, Ruby, Sather, Swift, Algol, ML, CPL, Java, Python, C#, Perl
- wrapsOn none
 
 start_up = proc ()
     po: stream := stream$primary_output ()

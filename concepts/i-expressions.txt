@@ -11,14 +11,10 @@ I-expressions is a data notation created in 2003 by Egil Möller.
 This SRFI descibes a new syntax for Scheme, called I-expressions, whith equal descriptive power as S-expressions. The syntax uses indentation to group expressions, and has no special cases for semantic constructs of the language. It can be used both for program and data input.
 
 - Tags: dataNotation
- wrapsOn none
 - Early development of I-expressions happened in https://srfi.schemers.org
- wrapsOn none
 - Read more about I-expressions on the web: 1.
  https://srfi.schemers.org/srfi-49/srfi-49.html 1.
- wrapsOn none
 - 5 PLDB concepts link to I-expressions: Bayer Expressions, S-expressions, Scroll Notation, Speedie, Sweet Expressions
- wrapsOn none
 
 define
   fac x

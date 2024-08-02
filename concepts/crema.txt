@@ -14,13 +14,9 @@ git clone https://github.com/ainfosec/crema
 Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
 
 - Tags: programming language
- wrapsOn none
 - Crema is developed on GitHub and has 64 stars
- wrapsOn none
 - Early development of Crema happened in Assured Information Security, Inc.
- wrapsOn none
 - Crema is written in C++, Bourne shell, C, Yacc, Lex, Make, Markdown
- wrapsOn none
 
 def int binarySearch(int values[], int searchTarget){
     int upperBound = list_length(values) - 1    # Upper index of seach region

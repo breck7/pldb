@@ -11,8 +11,6 @@ F is a programming language created in 2006 by Stevan Apter.
 F is a pure functional concatenative language originally designed as an extension of False. F contains the list-operations of K3 and the dip combinator of Joy. Floating-point and symbolic datatypes are supported. One-time assignment is enforced in syntax. A theory of function-valence and -charge is outlined. F also contains a general continuation primitive $, and the pattern sublanguage of XY. G is a variant of F in which the K3 adverbs are implemented as primitives.
 
 - Tags: programming language
- wrapsOn none
 - Early development of F happened in https://nsl.com/
- wrapsOn none
 
 [1 2 3][[4 5 6] 7 8]+

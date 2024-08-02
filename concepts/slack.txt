@@ -11,8 +11,6 @@ SLACK is a programming language created in 2006 by Stevan Apter.
 SLACK is a compiler for a lazy functional K, modelled on David Turner's SASL language, the precursor of Haskell and Miranda.
 
 - Tags: programming language
- wrapsOn none
 - Early development of SLACK happened in https://nsl.com/
- wrapsOn none
 
 gcd a b is if b=0 then a else gcd b(a!b)

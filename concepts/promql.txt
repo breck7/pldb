@@ -8,14 +8,10 @@ PromQL is a query language created in 2014.
 10 Years Old
 
 - Tags: queryLanguage
- wrapsOn none
 - Early development of PromQL happened in https://github.com/prometheus
- wrapsOn none
 - Pygments supports syntax highlighting for PromQL
- wrapsOn none
 - Read more about PromQL on the web: 1.
  https://timber.io/blog/promql-for-humans/ 1.
- wrapsOn none
 
 topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))
 

@@ -13,13 +13,9 @@ git clone https://github.com/berry-lang/berry
 Berry is a ultra-lightweight dynamically typed embedded scripting language. It is designed for lower-performance embedded devices. The Berry interpreter-core's code size is less than 40KiB and can run on less than 4KiB heap (on ARM Cortex M4 CPU, Thumb ISA and ARMCC compiler).
 
 - Tags: programming language
- wrapsOn none
 - Berry is developed on GitHub and has 790 stars
- wrapsOn none
 - Early development of Berry happened in https://github.com/berry-lang/
- wrapsOn none
 - Berry is written in C, reStructuredText, Python, JSON, Markdown, Make, YAML, CMake, XML, Bourne shell
- wrapsOn none
 
 def fib(x)
     if (x &lt;= 1)

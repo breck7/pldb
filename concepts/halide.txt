@@ -12,18 +12,12 @@ git clone https://github.com/halide/Halide
 a language for fast, portable computation on images and tensors
 
 - Tags: programming language
- wrapsOn none
 - Halide is developed on GitHub and has 5,798 stars
- wrapsOn none
 - Early development of Halide happened in https://github.com/halide
- wrapsOn none
 - Halide is written in C++, CMake, Python, Make, Bourne shell, Markdown, Java, LLVM IR, XML, YAML, C, JSON, Objective C++, JavaScript, Gradle, Bash, HTML, CSS, Jupyter Notebook, Pascal, IDL, TOML, Assembly language
- wrapsOn none
 - halide-lang.org was registered in 2012
- wrapsOn none
 - Read more about Halide on the web: 1.
  https://news.ycombinator.com/item?id=7544855 1.
- wrapsOn none
 
 Func blur_3x3(Func input) {
  Func blur_x, blur_y;

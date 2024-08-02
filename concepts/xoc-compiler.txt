@@ -15,11 +15,7 @@ Xoc is a compiler created in 2008 by Russ Cox and Tom Bergan† and Austin T. Cl
 Today’s system programmers go to great lengths to extend the languages in which they program. For instance, system-specific compilers find errors in Linux and other systems, and add support for specialized control flow to Qt and event-based programs. These compilers are difficult to build and cannot always understand each other’s language changes. However, they can greatly improve code understandability and correctness, advantages that should be accessible to all programmers. We describe an extension-oriented compiler for C called xoc. An extension-oriented compiler, unlike a conventional extensible compiler, implements new features via many small extensions that are loaded together as needed. Xoc gives extension writers full control over program syntax and semantics while hiding many compiler internals. Xoc programmers concisely define powerful compiler extensions that, by construction, can be combined; even some parts of the base compiler, such as GNU C compatibility, are structured as extensions.
 
 - Tags: compiler
- wrapsOn none
 - Early development of Xoc happened in MIT CSAIL and UCLA
- wrapsOn none
 - Xoc is written in Zeta
- wrapsOn none
 - Read more about Xoc on the web: 1.
  https://swtch.com/~rsc/papers/xoc-asplos2008.pdf 1.
- wrapsOn none

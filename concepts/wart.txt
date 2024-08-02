@@ -13,11 +13,8 @@ git clone https://github.com/akkartik/wart
 An experimental, small, readable Lisp with thorough unit tests and extensible functions/macros.
 
 - Tags: programming language
- wrapsOn none
 - Wart is developed on GitHub and has 139 stars
- wrapsOn none
 - Wart is written in C++, Make, Vim script, Bash, Z shell
- wrapsOn none
 
 def (foo (a | (b c)))     # &#39;b&#39; and &#39;c&#39; name parts of list &#39;a&#39;
   (list a b c)

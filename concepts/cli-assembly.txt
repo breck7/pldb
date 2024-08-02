@@ -11,11 +11,8 @@ Defined by Microsoft for use in recent versions of Windows, an assembly in the C
  https://en.wikipedia.org/wiki/Assembly_(CLI) Read more on Wikipedia...
 
 - Tags: library
- wrapsOn none
 - Early development of Assembly CLI happened in Microsoft
- wrapsOn none
 - See also: (4 related languages) CIL, Visual Studio, FAT, New Technology File System
- wrapsOn none
 
 .method private hidebysig static void  Main(string[] args) cil managed {
   .entrypoint

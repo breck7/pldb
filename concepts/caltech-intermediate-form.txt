@@ -11,12 +11,9 @@ Caltech Intermediate Form (CIF) is a file format for describing integrated circu
  https://en.wikipedia.org/wiki/Caltech_Intermediate_Form Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Caltech Intermediate Form happened in California Institute of Technology
- wrapsOn none
 - Caltech Intermediate Form on HOPL
  https://hopl.info/showlanguage.prx?exp=890 Caltech Intermediate Form on HOPL
- wrapsOn none
 
 cifFile ::= (blank* command? semi)* endCommand blank*
 command ::= primCommand | defDeleteCommand | defStartCommand semi (blank* primCommand? semi)* defFinishCommand

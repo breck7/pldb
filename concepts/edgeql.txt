@@ -10,11 +10,8 @@ edgeql is a query language created in 2017.
 EdgeQL is the primary language of EdgeDB. It is used to define, mutate, and query data.
 
 - Tags: queryLanguage
- wrapsOn none
 - Early development of edgeql happened in EdgeDB Inc
- wrapsOn none
 - Read more about edgeql on the web: 1.
  https://www.edgedb.com/showcase/edgeql 1.
- wrapsOn none
 
 SELECT User FILTER User.name = &#39;John&#39;;

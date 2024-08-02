@@ -11,23 +11,16 @@ Datalog is a declarative logic programming language that syntactically is a subs
  https://en.wikipedia.org/wiki/Datalog Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Datalog happened in University of Maryland
- wrapsOn none
 - Explore Datalog snippets on Rosetta Code
- wrapsOn none
 - Datalog on HOPL
  https://hopl.info/showlanguage.prx?exp=3793 Datalog on HOPL
- wrapsOn none
 - See also: (15 related languages) Prolog, Java, OWL, C, Python, Ruby, Lua, Clojure, Racket, Tcl, Haskell, .QL, RDF, SPARQL, Datomic
- wrapsOn none
 - Read more about Datalog on the web: 1. 2. 3.
  http://www.learndatalogtoday.org/ 1.
  http://datalog.sourceforge.net/datalog.html 2.
  https://percival.jake.tl/ 3.
- wrapsOn none
 - 2 PLDB concepts link to Datalog: Datomic, Yedalog
- wrapsOn none
 
 parent(john, douglas). % store some data
 parent(john, douglas)? % run a query

@@ -13,13 +13,9 @@ git clone https://github.com/hyperhype/hyperscript
 Create HyperText with JavaScript.
 
 - Tags: template language
- wrapsOn none
 - Hyperscript is developed on GitHub and has 2,622 stars
- wrapsOn none
 - Early development of Hyperscript happened in https://github.com/hyperhype
- wrapsOn none
 - Hyperscript is written in HTML, JavaScript, YAML, Markdown, JSON
- wrapsOn none
 
 var h = require(&#39;hyperscript&#39;)
 h(&#39;div#page&#39;,

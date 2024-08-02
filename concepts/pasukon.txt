@@ -13,16 +13,11 @@ git clone https://github.com/gosukiwi/Pasukon
 JavaScript practical parser generator library using combinators
 
 - Tags: grammarLanguage
- wrapsOn none
 - pasukon is developed on GitHub and has 110 stars
- wrapsOn none
 - Early development of pasukon happened in https://github.com/gosukiwi/Pasukon/issues
- wrapsOn none
 - pasukon is written in JavaScript, JSON, Markdown
- wrapsOn none
 - Read more about pasukon on the web: 1.
  https://news.ycombinator.com/item?id=24347956 1.
- wrapsOn none
 
 lex
   match  NUMBER     /[0-9]+(?:\.[0-9]+)?/

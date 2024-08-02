@@ -13,13 +13,9 @@ git clone https://github.com/orange-lang/orange
 Orange is a systems programming language made to be as powerful as C++ with none of the headache. It aims to be very productive by baking the most important low- and high-level features directly into the language, instead of dealing with them through obtuse function calls.
 
 - Tags: programming language
- wrapsOn none
 - orange is developed on GitHub and has 74 stars
- wrapsOn none
 - Early development of orange happened in https://github.com/orange-lang
- wrapsOn none
 - orange is written in Go, YAML, Markdown, Dockerfile
- wrapsOn none
 
 extern printf(char* s, ...) -&gt; int32
 

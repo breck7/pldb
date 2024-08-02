@@ -11,18 +11,12 @@ Pharo is an open source dynamic and reflective language inspired from the progra
  https://en.wikipedia.org/wiki/Pharo Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Pharo happened in https://consortium.pharo.org
- wrapsOn none
 - There is 1 Jupyter Kernel for Pharo
- wrapsOn none
 - pharo.org was registered in 2008
- wrapsOn none
 - See also: (5 related languages) Smalltalk, Linux, Squeak, Newspeak, VisualWorks
- wrapsOn none
 - Read more about Pharo on the web: 1.
  https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/ 1.
- wrapsOn none
 
 Object subclass: #Counter
  instanceVariableNames: ’count initialValue’

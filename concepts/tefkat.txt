@@ -11,7 +11,6 @@ Tefkat is a Model Transformation Language and a model transformation engine.  Th
  https://en.wikipedia.org/wiki/Tefkat Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 
 RULE ClassToTable
 FORALL  Class c { name: n; }

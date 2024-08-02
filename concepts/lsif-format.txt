@@ -13,13 +13,9 @@ git clone https://github.com/lsif/lsif.github.io
 https://lsif.dev
 
 - Tags: jsonFormat
- wrapsOn none
 - Language Server Index Format is developed on GitHub and has 17 stars
- wrapsOn none
 - Early development of Language Server Index Format happened in Sourcegraph
- wrapsOn none
 - Language Server Index Format is written in HTML, CSS, Markdown
- wrapsOn none
 
 // a vertex representing the document
 { id: 1, type: &quot;vertex&quot;, label: &quot;document&quot;, uri: &quot;file:///Users/username/sample.ts&quot;, languageId: &quot;typescript&quot; }

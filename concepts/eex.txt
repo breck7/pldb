@@ -11,18 +11,12 @@ EEX is a template language created in 2012.
 EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
 
 - Tags: template language
- wrapsOn none
 - There are at least 34 EEX repos on GitHub
- wrapsOn none
 - Early development of EEX happened in Elixir Team
- wrapsOn none
 - GitHub supports syntax highlighting for EEX
- wrapsOn none
 - Read more about EEX on the web: 1.
  https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex 1.
- wrapsOn none
 - 2 PLDB concepts link to EEX: Ace Editor, Elixir
- wrapsOn none
 
 &lt;%= if true do %&gt;
   It is obviously true

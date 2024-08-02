@@ -10,13 +10,9 @@ BARE is an interface design language created in 2020.
 BARE is a simple binary representation for structured application data.
 
 - Tags: interface design language
- wrapsOn none
 - Early development of BARE happened in Internet Engineering Task Force
- wrapsOn none
 - Pygments supports syntax highlighting for BARE
- wrapsOn none
 - baremessages.org was registered in 2020
- wrapsOn none
 
 type PublicKey data[128]
 type Time str # ISO 8601

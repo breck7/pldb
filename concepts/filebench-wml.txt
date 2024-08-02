@@ -14,20 +14,13 @@ git clone https://github.com/filebench/filebench
 Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
 
 - Tags: programming language
- wrapsOn none
 - Filebench WML is developed on GitHub and has 339 stars
- wrapsOn none
 - There are at least 566 Filebench WML repos on GitHub
- wrapsOn none
 - Early development of Filebench WML happened in https://github.com/filebench
- wrapsOn none
 - Filebench WML is written in FORTRAN 77, C, Make, C++, Yacc, M4, Lex
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 16 users using Filebench WML in 19 repos on GitHub
- wrapsOn none
 - Read more about Filebench WML on the web: 1.
  https://github.com/filebench/filebench/wiki/Workload-model-language 1.
- wrapsOn none
 
 #
 # CDDL HEADER START

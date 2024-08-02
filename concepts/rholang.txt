@@ -12,17 +12,11 @@ git clone https://github.com/rchain/rchain
 Rholang is an open and scalable blockchain language designed for speed, reliability and formal process orchestration build on latest research in the reflective high order process calculus.
 
 - Tags: contractLanguage
- wrapsOn none
 - Rholang is developed on GitHub and has 691 stars
- wrapsOn none
 - Early development of Rholang happened in https://rchain-community.github.io/
- wrapsOn none
 - Rholang is written in Scala, C++, Markdown, C, Python, Make, Bourne shell, XML, Protocol Buffers, YAML, Bash, JSON, CMake, Nix, Perl, Ini, Dockerfile, TypeScript, TOML, sed
- wrapsOn none
 - There are 1,000 members in the Rholang subreddit
- wrapsOn none
 - Indeed.com has 13 matches for "couchdb developer".
- wrapsOn none
 
 new helloworld, stdout(`rho:io:stdout`) in {
    contract helloworld( world ) = {

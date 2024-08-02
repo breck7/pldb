@@ -12,14 +12,9 @@ git clone https://github.com/mythryl/mythryl
 The Mythryl programming language
 
 - Tags: programming language
- wrapsOn none
 - mythryl is developed on GitHub and has 116 stars
- wrapsOn none
 - Early development of mythryl happened in https://github.com/mythryl/mythryl/issues
- wrapsOn none
 - mythryl is written in Tex, C, Bourne shell, Perl, Standard ML, Lex, Pascal, HTML, Make, CSS, Vim script, DTD
- wrapsOn none
 - mythryl.org was registered in 2006
- wrapsOn none
 
 fun qsort [] =&gt; [];  qsort (x!xs) =&gt; qsort (filter {. #a &lt; x; } xs) @ [x] @ qsort (filter {. #a &gt;= x; } xs);  end;

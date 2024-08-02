@@ -11,13 +11,9 @@ asm.js is an intermediate programming language designed to allow computer softwa
  https://en.wikipedia.org/wiki/Asm.js Read more on Wikipedia...
 
 - Tags: intermediate representation language
- wrapsOn none
 - Early development of Asm.js happened in Mozilla
- wrapsOn none
 - asmjs.org was registered in 2012
- wrapsOn none
 - See also: (13 related languages) JavaScript, LLVM IR, Lua, Perl, Python, Ruby, OpenGL, Vim, SQLite, Gnuplot, Unity, Godot, WebAssembly
- wrapsOn none
 
 function strlen(ptr) {
   ptr = ptr|0;

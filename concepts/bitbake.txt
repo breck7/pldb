@@ -12,15 +12,10 @@ BitBake is a make-like  build tool with the special focus of distributions and p
  https://en.wikipedia.org/wiki/BitBake Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - There are at least 3,285 BitBake repos on GitHub
- wrapsOn none
 - Early development of BitBake happened in Yocto Project
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 667 users using BitBake in 1k repos on GitHub
- wrapsOn none
 - See also: (3 related languages) Python, Linux, Subversion
- wrapsOn none
 
 require qt5-git.inc
 require ${PN}.inc

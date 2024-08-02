@@ -11,22 +11,14 @@ Logos is a programming language created in 2010.
 Logos is a component of the Theos development suite that allows method hooking code to be written easily and clearly, using a set of special preprocessor directives. Theos is a cross-platform suite of development tools for managing, developing, and deploying iOS software without the use of Xcode. It is an important tool for people building extensions (tweaks) for jailbroken iOS; most extension developers use Theos.
 
 - Tags: programming language
- wrapsOn none
 - There are at least 6,281 Logos repos on GitHub
- wrapsOn none
 - Early development of Logos happened in https://github.com/DHowett/theos-logos-examples/issues
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Logos in 4k repos on GitHub
- wrapsOn none
 - Pygments supports syntax highlighting for Logos
- wrapsOn none
 - GitHub supports syntax highlighting for Logos
- wrapsOn none
 - Read more about Logos on the web: 1.
  https://github.com/DHowett/theos-logos-examples 1.
- wrapsOn none
 - 21 PLDB concepts link to Logos: cloc, Cryptol, Eiffel, expresso, fo, Futhark, Go, hacspec, HAML, haste, JAL compiler, kitlang, Koka, nesC, Opal, Pygments, Rust, Wasp, Wyvern, Ecstasy, Yet Another Scripting Language
- wrapsOn none
 
 %group iOS8
 %hook IOS8_SPECIFIC_CLASS

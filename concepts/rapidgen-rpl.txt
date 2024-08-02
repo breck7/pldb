@@ -10,9 +10,7 @@ rapidgen-rpl is a programming language created in 1983.
 RapidGen translates the XML into a concise and transparent format of decision tables for decision logic programming —RPL— a rich, purpose-built language developed by the company. Supports high speed execution of decision models. Is capable of processing large data volumes. Preserves traceability to the original DMN model.
 
 - Tags: programming language
- wrapsOn none
 - Early development of rapidgen-rpl happened in RapidGen Software Ltd
- wrapsOn none
 
 Days_leave &lt;- 22
 AGE &lt; 18         Y N N N N ELSE

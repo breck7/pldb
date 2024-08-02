@@ -14,10 +14,8 @@ git clone https://codeberg.org/prescheme/prescheme.git
 Pre-Scheme is a statically typed dialect of the Scheme programming language, combining the flexibility of Scheme with the efficiency and low-level machine access of C.
 
 - Tags: programming language
- wrapsOn none
 - Read more about Pre-Scheme on the web: 1.
  https://prescheme.org/references.html 1.
- wrapsOn none
 
    ;;; hello: an example Pre-Scheme program
    (define (main argc argv)

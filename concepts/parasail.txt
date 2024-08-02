@@ -12,13 +12,9 @@ Parallel Specification and Implementation Language (ParaSail) is an object-orien
  https://en.wikipedia.org/wiki/ParaSail_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of parasail happened in Ada Core Technologies
- wrapsOn none
 - Pygments supports syntax highlighting for parasail
- wrapsOn none
 - parasail-lang.org was registered in 2012
- wrapsOn none
 
 func Hello_World(var IO) is
     IO.Println(&quot;Hello World&quot;);

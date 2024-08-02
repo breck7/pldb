@@ -12,10 +12,6 @@ git clone https://github.com/jonathanvdc/flame
 An intermediate representation (IR) in static single assignment (SSA) form. This type of IR is favored by state-of-the-art optimizing compilers such as LLVM and GCC. Flame IR is designed from the ground up with the express intent of making it as suitable as possible for a wide range of optimizations and analyses. Flame is a collection of C# libraries for building tools that read, analyze, optimize and write managed languages.
 
 - Tags: intermediate representation language
- wrapsOn none
 - flame-ir is developed on GitHub and has 52 stars
- wrapsOn none
 - Early development of flame-ir happened in McGill University
- wrapsOn none
 - flame-ir is written in C#, XML, Markdown, YAML, Make, JSON, Python, Bourne shell
- wrapsOn none

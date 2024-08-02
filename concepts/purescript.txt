@@ -14,29 +14,17 @@ git clone https://github.com/purescript/purescript
 A strongly-typed language that compiles to JavaScript
 
 - Tags: programming language
- wrapsOn none
 - PureScript is developed on GitHub and has 8,515 stars
- wrapsOn none
 - There are at least 5,443 PureScript repos on GitHub
- wrapsOn none
 - PureScript compiles to JavaScript
- wrapsOn none
 - PureScript is written in PureScript, Haskell, JavaScript, Markdown, JSON, Bourne shell, YAML, CSS, Less, Yacc, Make, Dhall, XML
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 382 users using PureScript in 826 repos on GitHub
- wrapsOn none
 - There are 4 Project Euler users using PureScript
- wrapsOn none
 - PureScript LSP implementation
- wrapsOn none
 - GitHub supports syntax highlighting for PureScript
- wrapsOn none
 - There is 1 Jupyter Kernel for PureScript
- wrapsOn none
 - There is a central package repository for PureScript
- wrapsOn none
 - 4 PLDB concepts link to PureScript: mal, nulan, PureScript, Reason
- wrapsOn none
 
 import Prelude
 import Effect.Console (log)

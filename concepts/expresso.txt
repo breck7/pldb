@@ -13,12 +13,8 @@ git clone https://github.com/willtim/Expresso
 A simple expressions language with polymorphic extensible row types.
 
 - Tags: programming language
- wrapsOn none
 - expresso is developed on GitHub and has 301 stars
- wrapsOn none
 - Early development of expresso happened in https://github.com/willtim/Expresso
- wrapsOn none
 - expresso is written in Haskell, Logos, Markdown, Nix, YAML
- wrapsOn none
 
 let sqmag = {x, y} -&gt; x*x + y*y

@@ -11,13 +11,9 @@ Spec# is a programming language with specification language features that extend
  https://web.archive.org/web/20180103002408/https://en.wikipedia.org/wiki/Sing_Sharp Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Sing Sharp is a superset of Spec Sharp
- wrapsOn none
 - Early development of Sing Sharp happened in Microsoft Research
- wrapsOn none
 - See also: (3 related languages) C#, Eiffel, Java
- wrapsOn none
 
 static int Main(string![] args)
         requires args.Length &gt; 0;

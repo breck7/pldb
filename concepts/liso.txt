@@ -11,16 +11,11 @@ Liso is a data notation created in 2014 by Olivier Breuleux.
 Implemention of O-Expressions idea in Racket.
 
 - Tags: dataNotation
- wrapsOn none
 - Early development of Liso happened in https://github.com/breuleux/liso/issues
- wrapsOn none
 - Liso compiles to S-expressions
- wrapsOn none
 - Liso is written in Racket
- wrapsOn none
 - Read more about Liso on the web: 1.
  http://breuleux.net/blog/oexprs.html 1.
- wrapsOn none
 
 @varsrec
       odd?[n] =

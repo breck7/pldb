@@ -13,18 +13,12 @@ git clone https://github.com/OpenRC/openrc
 OpenRC is basically an interpreter for shell scripts which provides an easy interface to the often complex system commands and daemons. When a service runs a command it first loads its multiplexed configuration file, then its master configuration file, then /etc/rc.conf and finally the script itself. At this point then runs the command given.
 
 - Tags: application
- wrapsOn none
 - OpenRC runscript is developed on GitHub and has 1,416 stars
- wrapsOn none
 - Early development of OpenRC runscript happened in https://roy.marples.name/projects
- wrapsOn none
 - OpenRC runscript is written in Meson, C, Bourne shell, Markdown, YAML, Perl
- wrapsOn none
 - GitHub supports syntax highlighting for OpenRC runscript
- wrapsOn none
 - Read more about OpenRC runscript on the web: 1.
  http://www.linuxhowtos.org/manpages/8/openrc-run.htm 1.
- wrapsOn none
 
 #!/sbin/openrc-run
 command=/usr/bin/foo

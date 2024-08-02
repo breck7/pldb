@@ -10,13 +10,10 @@ HMMM, aka Harvey Mudd Miniature Machine, is an assembly language created in 2006
 Hmmm (Harvey Mudd Miniature Machine) is a 16-bit, 23-instruction simulated assembly language with 28=256 16-bit words of memory.
 
 - Tags: assembly language
- wrapsOn none
 - Early development of HMMM happened in Harvey Mudd College
- wrapsOn none
 - Read more about HMMM on the web: 1. 2.
  https://www.cs.hmc.edu/~cs5grad/cs5/hmmm/documentation/documentation.html 1.
  https://web.cs.hacettepe.edu.tr/~bbm101/fall17/files/Hmmm.pdf 2.
- wrapsOn none
 
  0 setn r1, 72
  1 write r1

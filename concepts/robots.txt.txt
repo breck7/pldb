@@ -11,13 +11,10 @@ Robots.txt is a config format created in 1994 by Martijn Koster.
 A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
 
 - Tags: configFormat
- wrapsOn none
 - Early development of Robots.txt happened in https://web.archive.org/web/20131029200350/http://inkdroid.org/tmp/www-talk/4113.html
- wrapsOn none
 - Read more about Robots.txt on the web: 1. 2.
  https://developers.google.com/search/docs/advanced/robots/intro 1.
  https://en.wikipedia.org/wiki/Robots_exclusion_standard 2.
- wrapsOn none
 
 User-agent: googlebot        # all Google services
 Disallow: /private/          # disallow this directory

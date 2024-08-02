@@ -13,22 +13,14 @@ git clone https://github.com/crystal-lang/crystal/
 Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
 
 - Tags: template language
- wrapsOn none
 - Embedded Crystal is developed on GitHub and has 19,260 stars
- wrapsOn none
 - There are at least 287 Embedded Crystal repos on GitHub
- wrapsOn none
 - Early development of Embedded Crystal happened in Manas Technology Solutions
- wrapsOn none
 - Embedded Crystal is written in Crystal, Embedded Crystal, YAML, Markdown, HTML, JavaScript, PowerShell, Bourne shell, CSS, C, SVG, Make, XML, Python, JSON, Z shell, Bash, C++, Nix, Ini
- wrapsOn none
 - GitHub supports syntax highlighting for Embedded Crystal
- wrapsOn none
 - Read more about Embedded Crystal on the web: 1.
  https://crystal-lang.org/api/0.22.0/ECR.html 1.
- wrapsOn none
 - 4 PLDB concepts link to Embedded Crystal: cloc, Crystal, Embedded Crystal, Pegasus
- wrapsOn none
 
 # greeting.ecr
 &lt;%- if @name -%&gt;

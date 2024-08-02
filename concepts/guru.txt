@@ -10,12 +10,9 @@ guru is a programming language created in 2009.
  OpTT has been implemented in the GURU verified programming language, which includes a type- and proof-checker, and a compiler to efficient C code. In addition to the core OpTT, GURU implements a number of extensions, including ones for verification of programs using mutable state and input/output. This paper gives an introduction to verified programming in GURU.
 
 - Tags: programming language
- wrapsOn none
 - Early development of guru happened in The University of Iowa and Washington University and Universitat Polit`ecnica de Catalunya
- wrapsOn none
 - Read more about guru on the web: 1.
  http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf 1.
- wrapsOn none
 
 Inductive trie : Fun(A:type).type :=
 trie_none : Fun(A:type).&lt;trie A&gt;

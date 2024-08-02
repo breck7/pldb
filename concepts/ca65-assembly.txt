@@ -8,14 +8,10 @@ ca65 Assembly is an assembly language created in 1998.
 26 Years Old
 
 - Tags: assembly language
- wrapsOn none
 - Early development of ca65 Assembly happened in MU software development
- wrapsOn none
 - Pygments supports syntax highlighting for ca65 Assembly
- wrapsOn none
 - Read more about ca65 Assembly on the web: 1.
  https://cc65.github.io/doc/ca65.html 1.
- wrapsOn none
 
        Label:                          ; A label and a comment
                lda     #$20            ; A 6502 instruction plus comment

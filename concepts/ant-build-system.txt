@@ -10,14 +10,10 @@ Ant Build System is an application created in 2000.
 Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
 
 - Tags: application
- wrapsOn none
 - Early development of Ant Build System happened in Apache Software Foundation
- wrapsOn none
 - GitHub supports syntax highlighting for Ant Build System
- wrapsOn none
 - Read more about Ant Build System on the web: 1.
  https://en.wikipedia.org/wiki/Apache_Ant 1.
- wrapsOn none
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt;
 &lt;project name=&quot;WebBuild&quot;&gt;

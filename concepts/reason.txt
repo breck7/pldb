@@ -13,33 +13,19 @@ git clone https://github.com/facebook/reason
 Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
 
 - Tags: programming language
- wrapsOn none
 - Reason is developed on GitHub and has 10,087 stars
- wrapsOn none
 - There are at least 1,924 Reason repos on GitHub
- wrapsOn none
 - Early development of Reason happened in Facebook
- wrapsOn none
 - Reason compiles to OCaml
- wrapsOn none
 - Reason is written in OCaml, Reason, Markdown, JSON, Bourne shell, Diff, Make, JavaScript, YAML, Nix, HTML, Bash
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Reason in 24 repos on GitHub
- wrapsOn none
 - Check out the 11 Reason meetup groups on Meetup.com.
- wrapsOn none
 - Explore Reason snippets on Rosetta Code
- wrapsOn none
 - Reason LSP implementation
- wrapsOn none
 - Pygments supports syntax highlighting for Reason
- wrapsOn none
 - GitHub supports syntax highlighting for Reason
- wrapsOn none
 - See also: (7 related languages) Rust, Elm, PureScript, Fable, ClojureScript, Swift, Haxe
- wrapsOn none
 - 12 PLDB concepts link to Reason: Caramel, cloc, Hazel, Kotlin, Ligo, MongoDB, PHP, Pygments, Reason, Reia, Sophia, xodio
- wrapsOn none
 
 type schoolPerson = Teacher | Director | Student(string);
 

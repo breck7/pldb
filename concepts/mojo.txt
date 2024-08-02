@@ -13,17 +13,11 @@ git clone https://github.com/modularml/mojo
 Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 
 - Tags: programming language
- wrapsOn none
 - Mojo is developed on GitHub and has 22,444 stars
- wrapsOn none
 - Mojo is a superset of Python
- wrapsOn none
 - Early development of Mojo happened in Modular Inc
- wrapsOn none
 - Mojo is written in Markdown, Jupyter Notebook, YAML, Python, Bourne shell, CMake, Dockerfile
- wrapsOn none
 - 1 PLDB concepts link to Mojo: cloc
- wrapsOn none
 
 def softmax(lst):
   norm = np.exp(lst - np.max(lst))

@@ -12,15 +12,10 @@ git clone https://github.com/bigskysoftware/htmx
 htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
 
 - Tags: template language
- wrapsOn none
 - htmx is developed on GitHub and has 35,764 stars
- wrapsOn none
 - Early development of htmx happened in https://github.com/bigskysoftware/
- wrapsOn none
 - htmx is written in Markdown, JavaScript, HTML, SVG, JSON, CSS, TOML, TypeScript, Bourne shell, YAML, XML, Ruby, CSV
- wrapsOn none
 - htmx.org was registered in 2020
- wrapsOn none
 
 &lt;script src=&quot;https://unpkg.com/htmx.org@1.7.0&quot;&gt;&lt;/script&gt;
 &lt;!-- have a button POST a click via AJAX --&gt;

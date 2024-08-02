@@ -11,14 +11,10 @@ POP-11 is a reflective, incrementally compiled programming language with many of
  https://en.wikipedia.org/wiki/POP-11 Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Pop-11 happened in University of Sussex
- wrapsOn none
 - Pop-11 on HOPL
  https://hopl.info/showlanguage.prx?exp=689 Pop-11 on HOPL
- wrapsOn none
 - See also: (7 related languages) POPLOG, POP-2, Forth, Prolog, Common Lisp, Standard ML, COWSEL
- wrapsOn none
 
 define RemoveElementsMatching(Element, Source) -&gt; Result;
      lvars Index;

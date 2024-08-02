@@ -13,17 +13,11 @@ git clone https://github.com/breuleux/earl-grey
 Programming language compiling to JavaScript
 
 - Tags: programming language
- wrapsOn none
 - Earl Grey is developed on GitHub and has 467 stars
- wrapsOn none
 - Early development of Earl Grey happened in https://github.com/breuleux/earl-grey/issues
- wrapsOn none
 - Earl Grey compiles to JavaScript
- wrapsOn none
 - Earl Grey is written in JavaScript, Markdown, JSON
- wrapsOn none
 - Pygments supports syntax highlighting for Earl Grey
- wrapsOn none
 
 count-words(text) =
    counts = new Map()

@@ -11,18 +11,12 @@ RHTML is a template language created in 2004.
 RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
 
 - Tags: template language
- wrapsOn none
 - There are at least 0 RHTML repos on GitHub
- wrapsOn none
 - Early development of RHTML happened in https://github.com/rails
- wrapsOn none
 - Pygments supports syntax highlighting for RHTML
- wrapsOn none
 - GitHub supports syntax highlighting for RHTML
- wrapsOn none
 - Read more about RHTML on the web: 1.
  https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm 1.
- wrapsOn none
 
 &lt;ul&gt;
   &lt;% @products.each do |p| %&gt;

@@ -13,16 +13,11 @@ git clone https://github.com/neeilan/neeilang
 Fast, type-safe, object-oriented language by yours truly
 
 - Tags: programming language
- wrapsOn none
 - neeilang is developed on GitHub and has 47 stars
- wrapsOn none
 - Early development of neeilang happened in https://github.com/neeilan/neeilang/issues
- wrapsOn none
 - neeilang is written in C++, LLVM IR, CMake, Bourne shell, Markdown
- wrapsOn none
 - Read more about neeilang on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/ 1.
- wrapsOn none
 
 fn main() : Int {
   var a : Int = 5;

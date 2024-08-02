@@ -12,18 +12,12 @@ git clone https://github.com/thought-machine/please
 Language for the please.build cross-language build system. The Please build language is a full programming language.
 
 - Tags: programming language
- wrapsOn none
 - Please Build is developed on GitHub and has 2,436 stars
- wrapsOn none
 - Early development of Please Build happened in Thought Machine Group
- wrapsOn none
 - Please Build is written in Go, Bazel, Bourne shell, Markdown, HTML, Python, XML, YAML, Dockerfile, JSON, CSS, C, JavaScript, Diff, C++, SVG, Lisp, Protocol Buffers
- wrapsOn none
 - See also: (1 related languages) Make
- wrapsOn none
 - Read more about Please Build on the web: 1.
  https://please.build/language.html 1.
- wrapsOn none
 
 # Taken from //src/core/BUILD in the Please repo
 go_library(

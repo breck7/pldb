@@ -12,15 +12,10 @@ git clone https://github.com/GraphIt-DSL/graphit
 GraphIt is a new DSL for graph computations that generates fast implementations for algorithms with different performance characteristics running on graphs with different sizes and structures. GraphIt separates what is computed (algorithm) from how it is computed (schedule). Programmers specify the algorithm using an algorithm language, and performance optimizations are specified using a separate scheduling language. The scheduling language enables programmers to easily search through this complicated tradeoff space by composing together a large set of edge traversal and vertex data layout optimizations.
 
 - Tags: programming language
- wrapsOn none
 - GraphIt is developed on GitHub and has 366 stars
- wrapsOn none
 - Early development of GraphIt happened in https://github.com/GraphIt-DSL
- wrapsOn none
 - GraphIt is written in C++, Python, Markdown, Lisp, Make, CMake, YAML, CSV
- wrapsOn none
 - graphit-lang.org was registered in 2018
- wrapsOn none
 
 element Vertex end
 element Edge end

@@ -10,9 +10,7 @@ imp-lang is a programming language created in 2019.
 The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.
 
 - Tags: programming language
- wrapsOn none
 - Early development of imp-lang happened in https://github.com/jamii/imp/issues
- wrapsOn none
 
 let colors = &quot;apples&quot; x &quot;red&quot; | &quot;apples&quot; x &quot;green&quot; | &quot;oranges&quot; x &quot;orange&quot; in
 let fancy = &quot;red&quot; x &quot;scarlet&quot; | &quot;red&quot; x &quot;crimson&quot; | &quot;green&quot; x &quot;emerald&quot; in

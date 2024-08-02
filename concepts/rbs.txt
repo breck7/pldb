@@ -10,14 +10,10 @@ rbs is a header lang created in 2020.
 We defined a new language called RBS for type signatures for Ruby 3. The signatures are written in .rbs files which is different from Ruby code. You can consider the .rbs files are similar to .d.ts files in TypeScript or .h files in C/C++/ObjC. The benefit of having different files is it doesn't require changing Ruby code to start type checking. You can opt-in type checking safely without changing any part of your workflow.
 
 - Tags: headerLang
- wrapsOn none
 - Early development of rbs happened in Square Capital, LLC
- wrapsOn none
 - See also: (1 related languages) Ruby
- wrapsOn none
 - Read more about rbs on the web: 1.
  https://developer.squareup.com/blog/the-state-of-ruby-3-typing/ 1.
- wrapsOn none
 
 # sig/merchant.rbs
 

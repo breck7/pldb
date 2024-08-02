@@ -12,12 +12,10 @@ Verse is a programming language created in 2022 by Simon Peyton Jones and Tim Sw
 2 Years Old
 
 - Tags: programming language
- wrapsOn none
 - Read more about Verse on the web: 1. 2. 3.
  https://simon.peytonjones.org/assets/pdfs/haskell-exchange-22.pdf 1.
  https://conf.researchr.org/details/flops-2024/flops-2024-papers/4/Verse-A-New-Functional-Logic-Language 2.
  https://www.reddit.com/r/ProgrammingLanguages/comments/1c4gn39/verse_a_new_functional_logic_language_lennart/ 3.
- wrapsOn none
 
 f(p:int,q:int):int :=
 if (x=0) then { p=3; q=4 }

@@ -11,6 +11,4 @@ Tierra is an open source simulation created in 1991 by Thomas S. Ray.
 The Tierra C source code creates a virtual computer and its Darwinian operating system, whose architecture has been designed in such a way that the executable machine codes are evolvable. This means that the machine code can be mutated (by flipping bits at random) or recombined (by swapping segments of code between algorithms), and the resulting code remains functional enough of the time for natural (or presumably artificial) selection to be able to improve the code over time.
 
 - Tags: simulation, application
- wrapsOn none
 - Tierra is written in C
- wrapsOn none

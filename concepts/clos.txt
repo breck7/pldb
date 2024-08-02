@@ -11,12 +11,9 @@ The Common Lisp Object System (CLOS) is the facility for object-oriented program
  https://en.wikipedia.org/wiki/CLOS Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - CLOS on HOPL
  https://hopl.info/showlanguage.prx?exp=1389 CLOS on HOPL
- wrapsOn none
 - See also: (11 related languages) Common Lisp, Java, CommonLoops, EuLisp, Emacs Lisp, Flavors, Interlisp, Dylan, Guile, ISLISP, Cadence SKILL
- wrapsOn none
 
 ; declare the common argument structure prototype
 (defgeneric f (x y))

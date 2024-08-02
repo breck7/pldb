@@ -12,15 +12,10 @@ Newspeak is a programming language and platform in the tradition of Smalltalk an
  https://en.wikipedia.org/wiki/Newspeak_(programming_language) Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - Early development of Newspeak happened in Cadence Design Systems, Inc
- wrapsOn none
 - Pygments supports syntax highlighting for Newspeak
- wrapsOn none
 - newspeaklanguage.org was registered in 2008
- wrapsOn none
 - See also: (3 related languages) Smalltalk, Self, BETA
- wrapsOn none
 
 HelloBraveNewWorld usingPlatform: platform = (
  platform Transcript open show: &#39;Hello, Oh Brave new world&#39;.

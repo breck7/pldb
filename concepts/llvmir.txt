@@ -12,27 +12,17 @@ The LLVM compiler infrastructure project is a "collection of modular and reusabl
  https://en.wikipedia.org/wiki/LLVM Read more on Wikipedia...
 
 - Tags: intermediate representation language
- wrapsOn none
 - There are at least 1,351 LLVM IR repos on GitHub
- wrapsOn none
 - Early development of LLVM IR happened in https://github.com/llvm
- wrapsOn none
 - The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using LLVM IR in 1k repos on GitHub
- wrapsOn none
 - LLVM IR Ubuntu package
  https://packages.ubuntu.com/jammy/llvm LLVM IR Ubuntu package
- wrapsOn none
 - Pygments supports syntax highlighting for LLVM IR
- wrapsOn none
 - LLVM IR appears in the Quine Relay project
- wrapsOn none
 - Events page for LLVM IR
  https://discourse.llvm.org/t/llvm-community-events-calendar/63237 Events page for LLVM IR
- wrapsOn none
 - See also: (41 related languages) C, ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, GLSL, Haskell, Java Bytecode, Julia, Lua, Objective-C, Python, R, Ruby, Rust, CUDA, Scala, Swift, Xojo, iOS, Assembly language, Java, OpenGL, CIL, Standard ML, ARM, Qualcomm Hexagon, MIPS architecture, PTX, PowerPC, SPARC, X86, Extensible Linking Format, C--, Pure, OpenCL, ISBN
- wrapsOn none
 - 23 PLDB concepts link to LLVM IR: Chapel, CIR, cloc, Emscripten, firrtl, FLEX, Halide, HHVM, invokator, Julia, Kotlin, neeilang, oopsilon, Pony, rhine, Rust MIR, Simit, sixten, souper, SIL, Swift, TensorFlow, Triton
- wrapsOn none
 
 define i32 @square(i32) local_unnamed_addr #0 {
     %2 = mul nsw i32 %0, %0

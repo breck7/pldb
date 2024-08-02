@@ -11,15 +11,11 @@ Object Query Language (OQL) is a query language standard for object-oriented dat
  https://en.wikipedia.org/wiki/Object_Query_Language Read more on Wikipedia...
 
 - Tags: queryLanguage
- wrapsOn none
 - Early development of OQL happened in http://www.odbms.org/odmg-standard
- wrapsOn none
 - OQL on HOPL
  https://hopl.info/showlanguage.prx?exp=4549 OQL on HOPL
- wrapsOn none
 - Read more about OQL on the web: 1.
  http://tech.novosoft-us.com/products/oql_book.htm 1.
- wrapsOn none
 
 select c.address
 from Persons p, p.children c

@@ -13,13 +13,9 @@ git clone https://github.com/masak/alma
 Alma is a small language created as a testbed for Raku macros.
 
 - Tags: programming language
- wrapsOn none
 - Alma is developed on GitHub and has 137 stars
- wrapsOn none
 - Early development of Alma happened in http://strangelyconsistent.org/
- wrapsOn none
 - Alma is written in Raku, Markdown, Bourne shell, JSON, HTML, D, YAML
- wrapsOn none
 
 macro swap(a, b) {
     return quasi {

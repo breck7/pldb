@@ -11,12 +11,9 @@ UBASIC is a freeware (public domain software without source code) BASIC interpre
  https://en.wikipedia.org/wiki/UBASIC Read more on Wikipedia...
 
 - Tags: programming language
- wrapsOn none
 - UBASIC on HOPL
  https://hopl.info/showlanguage.prx?exp=1666 UBASIC on HOPL
- wrapsOn none
 - See also: (1 related languages) BASIC
- wrapsOn none
 
 10   CONSOLE:CONSOLE 1,24,0:LOCATE 1,0
   20   PRINT CHR(2);&quot;N&quot;,&quot;P(N)&quot;,&quot;PARTITION COUNT&quot;

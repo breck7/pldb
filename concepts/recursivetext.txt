@@ -13,11 +13,8 @@ git clone https://github.com/practal/recursivetext
 A general-purpose text format.
 
 - Tags: dataNotation
- wrapsOn none
 - Recursive teXt is developed on GitHub and has 0 stars
- wrapsOn none
 - Recursive teXt is written in JSON, TypeScript, Markdown
- wrapsOn none
 
 RX    = Block+
 Block = Line (Line | Block)*

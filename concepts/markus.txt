@@ -12,13 +12,9 @@ git clone https://github.com/Markus-Studio/Markus
 A declarative (database) query language!
 
 - Tags: queryLanguage
- wrapsOn none
 - Markus is developed on GitHub and has 2 stars
- wrapsOn none
 - Early development of Markus happened in https://github.com/Markus-Studio
- wrapsOn none
 - Markus is written in Rust, JSON, TOML, Markdown, JavaScript, Python, C, C++, Bourne shell, YAML
- wrapsOn none
 
 type User: user {
   name: string;

@@ -11,10 +11,8 @@ Wirth syntax notation (WSN) is a metasyntax, that is, a formal way to describe f
  https://en.wikipedia.org/wiki/Wirth_syntax_notation Read more on Wikipedia...
 
 - Tags: grammarLanguage
- wrapsOn none
 - Read more about Wirth syntax notation on the web: 1.
  https://dl.acm.org/doi/10.1145/359863.359883 1.
- wrapsOn none
 
 SYNTAX     = { PRODUCTION } .
 PRODUCTION = IDENTIFIER &quot;=&quot; EXPRESSION &quot;.&quot; .

@@ -13,13 +13,9 @@ git clone https://github.com/JohnSundell/Plot
 A DSL for writing type-safe HTML, XML and RSS in Swift.
 
 - Tags: template language
- wrapsOn none
 - Plot is developed on GitHub and has 1,972 stars
- wrapsOn none
 - Early development of Plot happened in https://github.com/JohnSundell/Plot/pulls
- wrapsOn none
 - Plot is written in Swift, Markdown
- wrapsOn none
 
 let html = HTML(
     .head(

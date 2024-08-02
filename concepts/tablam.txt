@@ -13,13 +13,9 @@ git clone https://github.com/Tablam/TablaM
 The practical relational programing language for data-oriented applications
 
 - Tags: queryLanguage
- wrapsOn none
 - tablam is developed on GitHub and has 185 stars
- wrapsOn none
 - tablam is written in Rust, Markdown, TOML, Bourne shell, JSON, YAML, HTML, SVG, CSS, JavaScript, XML
- wrapsOn none
 - tablam.org was registered in 2014
- wrapsOn none
 
 city ?where .population &gt; 100_000 ?select .name, .country
 points ?sort .x
