@@ -37,9 +37,12 @@ inlineMarkupsOnParser
       root.getNode("inlineMarkups").forEach(markup => {
         const delimiter = markup.getWord(0)
         const tag = markup.getWord(1)
+        // todo: add support for providing custom functions for inline markups?
+        // for example, !2+2! could run eval, or :about: could search a link map.
+        const attributes = markup.getWordsFrom(2).join(" ")
         markups = markups.filter(mu => mu.delimiter !== delimiter) // Remove any overridden markups
         if (tag)
-          markups.push({delimiter, tag})
+          markups.push({delimiter, tag, attributes})
       })
     }
     return markups
@@ -87,7 +90,6 @@ inlineMarkupParser
     const delimiter = this.getWord(1)
     const tag = this.getWord(2)
     const attributes = this.getWordsFrom(3).join(" ")
-    if (tag.startsWith("https:")) return this.applyMarkup(text, {delimiter, tag: "a", attributes: `href="${tag}"` + attributes})
     return this.applyMarkup(text, {delimiter, tag, attributes})
    } catch (err) {
     console.error(err)
