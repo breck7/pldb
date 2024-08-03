@@ -126,7 +126,7 @@
   },
   {
     "Name": "releaseNotes",
-    "Values": 67,
+    "Values": 68,
     "Coverage": "1%",
     "Question": "What is the URL to the release notes or changelog for this language?",
     "Example": "https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html",
@@ -199,7 +199,7 @@
     "Values": 4983,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21584",
+    "Example": "21583",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
