@@ -27,17 +27,14 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rust.html">
  // https://doc.rust-lang.org/reference/comments.html
  // a comment
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/matlab.html">MATLAB</a>
- % This is a comment
+codeWithHeader Example from <b>10 languages</b>: <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/tex.html">Tex</a>, <a href="../concepts/katex.html">KaTeX</a>, <a href="../concepts/mercury.html">Mercury</a>, <a href="../concepts/datalog.html">Datalog</a>, <a href="../concepts/turing.html">Turing</a>, <a href="../concepts/eclipse-command-language.html">Eclipse Command Language</a>, <a href="../concepts/charity.html">Charity</a>, <a href="../concepts/mary.html">Mary</a>
+ % A comment
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
   -- a single line comment
   {- A multiline comment
      which can continue for many lines
   -}
-
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/erlang.html">Erlang</a>
- % hello world program
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/dart.html">Dart</a>
  // Hi
@@ -57,9 +54,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran.htm
  C
  C Lines that begin with &#39;C&#39; (in the first or &#39;comment&#39; column) are comments
  C
-
-codeWithHeader Example from <b>8 languages</b>: <a href="../concepts/tex.html">Tex</a>, <a href="../concepts/katex.html">KaTeX</a>, <a href="../concepts/mercury.html">Mercury</a>, <a href="../concepts/datalog.html">Datalog</a>, <a href="../concepts/turing.html">Turing</a>, <a href="../concepts/eclipse-command-language.html">Eclipse Command Language</a>, <a href="../concepts/charity.html">Charity</a>, <a href="../concepts/mary.html">Mary</a>
- % A comment
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/spss.html">SPSS</a>
  * A comment where first character must be *.
@@ -152,7 +146,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/relaxng.htm
  # Comments start with a # and continue to the end of the line:
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/dedukti.html">dedukti</a>
- (; This is a comment ;)
+ (; A comment ;)
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/z-expressions.html">Z</a>
  -- A simple function, that is used inside the macro below.
@@ -188,7 +182,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/sako.html">
  K) Comments must start at the beginning of a line
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/uxf.html">Uniform eXchange Format</a>
- # &lt;This is a comment&gt;
+ # &lt;A comment&gt;
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/recfiles.html">Recfiles</a>
  # Blah blah…

@@ -10,22 +10,26 @@ heatrixParser
    4 11 23 37 3 14 12 0 0 0 5 1 2 11 15 10 12 56
  description A heatmap matrix data visualization.
  catchAllParser heatrixCatchAllParser
- extends abstractScrollParser
+ extends abstractTableVisualizationParser
  javascript
   compile() {
    // A hacky but simple way to do this for now.
    const advanced = new TreeNode("heatrixAdvanced")
-   advanced.appendLineAndChildren("table", "\n " + this.childrenToString().replace(/\n/g, "\n "))
+   advanced.appendLineAndChildren("table", "\n " + this.tableData.replace(/\n/g, "\n "))
    const node = this.appendSibling("heatrixAdvanced", advanced.childrenToString())
    const html = node.compile()
    node.destroy()
    return html
   }
+  get tableData() {
+    const {coreTable} = this.parent
+    return coreTable ? new TreeNode(coreTable).asSsv : this.childrenToString()
+  }
 
 heatrixAdvancedParser
  cruxFromId
  catchAllParser heatrixCatchAllParser
- extends abstractScrollParser
+ extends abstractTableVisualizationParser
  description Advanced heatrix.
  example
   heatrix

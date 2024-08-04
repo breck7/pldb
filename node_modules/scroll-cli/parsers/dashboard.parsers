@@ -1,7 +1,7 @@
-dashboardParser
+scrollDashboardParser
  description Key stats in large font.
- catchAllParser rowParser
- cruxFromId
+ catchAllParser lineOfCodeParser
+ crux dashboard
  extends abstractScrollParser
  example
   dashboard

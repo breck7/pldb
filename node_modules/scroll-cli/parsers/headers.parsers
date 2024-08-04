@@ -3,13 +3,15 @@ abstractHeaderParser
  javascript
   compile(compileSettings) {
    if (this.isHidden) return ""
-   this.parent.sectionStack.push("</div>")
+   if (this.parent.sectionStack)
+    this.parent.sectionStack.push("</div>")
    return `<div class="scrollSection">` + super.compile(compileSettings)
   }
   compileTxt() {
     const line = super.compileTxt()
     return line + "\n" + "=".repeat(line.length)
   }
+  isHeader = true
 
 h1Parser
  description An html h1 tag.

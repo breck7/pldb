@@ -1,18 +1,27 @@
 sparklineParser
  description Sparkline widget.
- extends abstractScrollWithRequirementsParser
+ extends abstractTableVisualizationParser
  example
   sparkline 1 2 3 4 5
  string copyFromExternal sparkline.js
  string requireOnce <script src="sparkline.js"></script>
- catchAllCellType numberCell
+ catchAllCellType stringCell
+ // todo: need pattern matching here in Parsers
  javascript
   compileInstance() {
    const id = "spark" + this._getUid()
-   const data = this.content.split(" ").map(str => parseFloat(str))
+   const {columnValues} = this
    const start = this.has("start") ? parseInt(this.get("start")) : 0
    const width = this.get("width") || 100
    const height = this.get("height") || 30
    const lineColor = this.get("color") || "black"
-   return `<span id="${id}"></span><script>new Sparkline(document.getElementById("${id}"), {dotRadius: 0, width: ${width}, height: ${height}, lineColor: "${lineColor}", tooltip: (value,index) => ${start} + index + ": " + value}).draw(${JSON.stringify(data)})</script>`
+   return `<span id="${id}"></span><script>new Sparkline(document.getElementById("${id}"), {dotRadius: 0, width: ${width}, height: ${height}, lineColor: "${lineColor}", tooltip: (value,index) => ${start} + index + ": " + value}).draw(${JSON.stringify(columnValues)})</script>`
+  }
+  get columnValues() {
+    const {coreTable} = this.parent
+    if (coreTable) {
+      const columnName = this.content || Object.keys(coreTable[0]).find(key => typeof coreTable[0][key] === 'number')
+      return coreTable.map(row => row[columnName])
+    }
+    return this.content.split(" ").map(str => parseFloat(str))
   }

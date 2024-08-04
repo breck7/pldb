@@ -18,7 +18,7 @@ repoStats
 country Unknown
 
 example
- ;; This is a comment
+ ;; A comment
  ;; `Ven n a` represents lists that are `n` long, that contain `a`s
  ;; A Vec is either:
  type Vec (n: Uint) (a: Type) =

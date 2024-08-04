@@ -8,56 +8,56 @@ We also have a page of all keywords and all file extensions.
  https://pldb.io/lists/keywords.html keywords
  https://pldb.io/lists/extensions.html file extensions
 
-title|_$^titleLink|_$^pseudoExample|_$^yes|_$^no|_$^percentage
-Comments|_$^../features/hasComments.html|_$^# Hello PLDB|_$^627|_$^4|_$^99%
-Line Comments|_$^../features/hasLineComments.html|_$^# Hello PLDB|_$^531|_$^21|_$^96%
-Strings|_$^../features/hasStrings.html|_$^"Hello PLDB"|_$^365|_$^0|_$^100%
-Print() Debugging|_$^../features/hasPrintDebugging.html|_$^print "Hello PLDB"|_$^319|_$^1|_$^100%
-MultiLine Comments|_$^../features/hasMultiLineComments.html|_$^/* Hello PLDB */|_$^225|_$^20|_$^92%
-Integers|_$^../features/hasIntegers.html|_$^80766866|_$^161|_$^1|_$^99%
-Floats|_$^../features/hasFloats.html|_$^80766866.0|_$^139|_$^0|_$^100%
-Booleans|_$^../features/hasBooleans.html|_$^pldb = true|_$^116|_$^4|_$^97%
-Hexadecimals|_$^../features/hasHexadecimals.html|_$^0x4D06792|_$^108|_$^1|_$^99%
-Conditionals|_$^../features/hasConditionals.html|_$^if (isTrue) printPldb()|_$^75|_$^3|_$^96%
-Semantic Indentation|_$^../features/hasSemanticIndentation.html|_$^line0 if true line1  print "Hello PLDB"|_$^70|_$^517|_$^12%
-Assignment|_$^../features/hasAssignment.html|_$^name = "PLDB"|_$^54|_$^1|_$^98%
-Octals|_$^../features/hasOctals.html|_$^0o464063622|_$^52|_$^3|_$^95%
-File Imports|_$^../features/hasImports.html|_$^import pldb|_$^49|_$^2|_$^96%
-Binary Literals|_$^../features/hasBinaryNumbers.html|_$^0b100110100000110011110010010|_$^49|_$^1|_$^98%
-While Loops|_$^../features/hasWhileLoops.html|_$^while (pldb.pop()) loop()|_$^48|_$^4|_$^92%
-Functions|_$^../features/hasFunctions.html|_$^function computePLDBRanks() {}|_$^44|_$^1|_$^98%
-Standard Library|_$^../features/hasStandardLibrary.html|_$^print("print is part of stdlib")|_$^37|_$^1|_$^97%
-Operator Overloading|_$^../features/hasOperatorOverloading.html|_$^def __add__(): doSomethingDifferent()|_$^33|_$^13|_$^72%
-Classes|_$^../features/hasClasses.html|_$^class PLDBFile {}|_$^31|_$^5|_$^86%
-Constants|_$^../features/hasConstants.html|_$^const name = "PLDB"|_$^28|_$^1|_$^97%
-Macros|_$^../features/hasMacros.html|_$^#define pldbItems 4000|_$^27|_$^9|_$^75%
-Type Inference|_$^../features/hasTypeInference.html|_$^imAString = "pldb"|_$^26|_$^1|_$^96%
-Switch Statements|_$^../features/hasSwitch.html|_$^switch animal: case dog-buy; case cat-sell;|_$^24|_$^1|_$^96%
-Case Insensitive Identifiers|_$^../features/hasCaseInsensitiveIdentifiers.html|_$^pLdB = "PLDB"|_$^24|_$^54|_$^31%
-Lists|_$^../features/hasLists.html|_$^[2, 3, 10]|_$^22|_$^1|_$^96%
-Exceptions|_$^../features/hasExceptions.html|_$^throw new Error("PLDB uh oh")|_$^22|_$^3|_$^88%
-Directives|_$^../features/hasDirectives.html|_$^use strict;|_$^21|_$^2|_$^91%
-Pointers|_$^../features/hasPointers.html|_$^int *pldb|_$^20|_$^5|_$^80%
-Inheritance|_$^../features/hasInheritance.html|_$^class PLDBFile extends File|_$^20|_$^1|_$^95%
-Garbage Collection|_$^../features/hasGarbageCollection.html|_$^var iDontNeedToFreeThis|_$^19|_$^8|_$^70%
-Case Sensitivity|_$^../features/isCaseSensitive.html|_$^pldb != PLDB|_$^18|_$^9|_$^67%
-Access Modifiers|_$^../features/hasAccessModifiers.html|_$^class PLDBFile { public title }|_$^18|_$^3|_$^86%
-Scientific Notation|_$^../features/hasScientificNotation.html|_$^8076686.6e1|_$^15|_$^0|_$^-
-Constructors|_$^../features/hasConstructors.html|_$^PLDBFile { constructor() {} }|_$^15|_$^4|_$^-
-Multiple Inheritance|_$^../features/hasMultipleInheritance.html|_$^extends parentWhichExtendsSomethingElse|_$^14|_$^5|_$^-
-Multiline Strings|_$^../features/hasMultilineStrings.html|_$^hello = """Hello\nPLDB"""|_$^13|_$^1|_$^-
-Message Passing|_$^../features/hasMessagePassing.html|_$^"get pldb"|_$^12|_$^1|_$^-
-Bitwise Operators|_$^../features/hasBitWiseOperators.html|_$^3 == (2 &#124; 1)|_$^12|_$^1|_$^-
-Module Pattern|_$^../features/hasModules.html|_$^module PLDB {}|_$^11|_$^0|_$^-
-Static Typing|_$^../features/hasStaticTyping.html|_$^int pldbRank = 100|_$^10|_$^0|_$^-
-Zero-based numbering|_$^../features/hasZeroBasedNumbering.html|_$^firstItem = pldb[0]|_$^9|_$^3|_$^-
-Single Dispatch|_$^../features/hasSingleDispatch.html|_$^person.run()|_$^9|_$^1|_$^-
-Regular Expression Syntax Sugar|_$^../features/hasRegularExpressionsSyntaxSugar.html|_$^/pldb/|_$^9|_$^6|_$^-
-Pattern Matching|_$^../features/hasPatternMatching.html|_$^fib 0 = 1; fib 1 = 1|_$^9|_$^2|_$^-
-Increment and decrement operators|_$^../features/hasIncrementAndDecrementOperators.html|_$^i++|_$^9|_$^3|_$^-
-Here Document|_$^../features/hasHereDocs.html|_$^`A big multliline text block`|_$^9|_$^1|_$^-
-Ternary operators|_$^../features/hasTernaryOperators.html|_$^true ? 1 : 0|_$^8|_$^7|_$^-
-Enums|_$^../features/hasEnums.html|_$^colorsEnum { "red", "white", "blue"}|_$^8|_$^5|_$^-
-Disk Output|_$^../features/canWriteToDisk.html|_$^write("pldb.csv", "...")|_$^8|_$^4|_$^-
-Units of Measure|_$^../features/hasUnitsOfMeasure.html|_$^42cm|_$^6|_$^4|_$^-
-Variable Substitution Syntax|_$^../features/hasVariableSubstitutionSyntax.html|_$^name = "PLDB"; print $name|_$^2|_$^10|_$^-
+title¶titleLink¶pseudoExample¶yes¶no¶percentage
+Comments¶../features/hasComments.html¶# Hello PLDB¶627¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶531¶21¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶365¶0¶100%
+Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶319¶1¶100%
+MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶225¶20¶92%
+Integers¶../features/hasIntegers.html¶80766866¶161¶1¶99%
+Floats¶../features/hasFloats.html¶80766866.0¶139¶0¶100%
+Booleans¶../features/hasBooleans.html¶pldb = true¶116¶4¶97%
+Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶108¶1¶99%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶75¶3¶96%
+Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶70¶517¶12%
+Assignment¶../features/hasAssignment.html¶name = "PLDB"¶54¶1¶98%
+Octals¶../features/hasOctals.html¶0o464063622¶52¶3¶95%
+File Imports¶../features/hasImports.html¶import pldb¶49¶2¶96%
+Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶49¶1¶98%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶48¶4¶92%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶44¶1¶98%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶37¶1¶97%
+Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶33¶13¶72%
+Classes¶../features/hasClasses.html¶class PLDBFile {}¶31¶5¶86%
+Constants¶../features/hasConstants.html¶const name = "PLDB"¶28¶1¶97%
+Macros¶../features/hasMacros.html¶#define pldbItems 4000¶27¶9¶75%
+Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶26¶1¶96%
+Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶24¶1¶96%
+Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶54¶31%
+Lists¶../features/hasLists.html¶[2, 3, 10]¶22¶1¶96%
+Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶22¶3¶88%
+Directives¶../features/hasDirectives.html¶use strict;¶21¶2¶91%
+Pointers¶../features/hasPointers.html¶int *pldb¶20¶5¶80%
+Inheritance¶../features/hasInheritance.html¶class PLDBFile extends File¶20¶1¶95%
+Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶19¶8¶70%
+Case Sensitivity¶../features/isCaseSensitive.html¶pldb != PLDB¶18¶9¶67%
+Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶18¶3¶86%
+Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶15¶0¶-
+Constructors¶../features/hasConstructors.html¶PLDBFile { constructor() {} }¶15¶4¶-
+Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶5¶-
+Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶13¶1¶-
+Message Passing¶../features/hasMessagePassing.html¶"get pldb"¶12¶1¶-
+Bitwise Operators¶../features/hasBitWiseOperators.html¶3 == (2 &#124; 1)¶12¶1¶-
+Module Pattern¶../features/hasModules.html¶module PLDB {}¶11¶0¶-
+Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶10¶0¶-
+Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶9¶3¶-
+Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
+Regular Expression Syntax Sugar¶../features/hasRegularExpressionsSyntaxSugar.html¶/pldb/¶9¶6¶-
+Pattern Matching¶../features/hasPatternMatching.html¶fib 0 = 1; fib 1 = 1¶9¶2¶-
+Increment and decrement operators¶../features/hasIncrementAndDecrementOperators.html¶i++¶9¶3¶-
+Here Document¶../features/hasHereDocs.html¶`A big multliline text block`¶9¶1¶-
+Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶8¶7¶-
+Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶8¶5¶-
+Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶8¶4¶-
+Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶4¶-
+Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶name = "PLDB"; print $name¶2¶10¶-

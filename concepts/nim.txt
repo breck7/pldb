@@ -162,12 +162,12 @@ row
   template debug*(args: varargs[string, `importOnly
 
 ]) =
-   if logLevel ✓
-  Example
-  Token 
- row
-  Feature Gotos
-  FeatureLink ../features/hasGotos.html
-  Supported X
-  Example
-  Token
+    if logLevel ✓
+   Example
+   Token 
+  row
+   Feature Gotos
+   FeatureLink ../features/hasGotos.html
+   Supported X
+   Example
+   Token

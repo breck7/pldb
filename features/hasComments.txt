@@ -12,14 +12,12 @@ Comments
 // https://doc.rust-lang.org/reference/comments.html
 // a comment
 
-% This is a comment
+% A comment
 
  -- a single line comment
  {- A multiline comment
     which can continue for many lines
  -}
-
-% hello world program
 
 // Hi
 /* Assume address is not null. */
@@ -34,8 +32,6 @@ Comments
 C
 C Lines that begin with &#39;C&#39; (in the first or &#39;comment&#39; column) are comments
 C
-
-% A comment
 
 * A comment where first character must be *.
 
@@ -103,7 +99,7 @@ __ A comment
 
 # Comments start with a # and continue to the end of the line:
 
-(; This is a comment ;)
+(; A comment ;)
 
 -- A simple function, that is used inside the macro below.
 defun ap x y
@@ -131,7 +127,7 @@ K) A comment
 : Also a comment (although, rarer and newer)
 K) Comments must start at the beginning of a line
 
-# &lt;This is a comment&gt;
+# &lt;A comment&gt;
 
 # Blah blah…
 # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.

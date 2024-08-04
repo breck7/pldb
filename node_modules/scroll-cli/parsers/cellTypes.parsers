@@ -18,6 +18,9 @@ wordCell
  description A non-empty single word string.
  regex .+
 
+columnNameCell
+ extends stringCell
+
 semanticVersionCell
  highlightScope string
  description A 3 part sem version string like 1.2.1
@@ -67,6 +70,10 @@ codeCell
 bulletPointCell
  description Any token used as a bullet point such as "-" or "1." or ">"
  highlightScope keyword
+
+comparisonCell
+ enum < > <= >= = != includes doesNotInclude empty notEmpty
+ highlightScope constant
 
 personNameCell
  extends stringCell
