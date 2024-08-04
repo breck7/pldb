@@ -70,12 +70,15 @@ printRelatedParser
  extends printSnippetsParser
  cruxFromId
  javascript
-  makeSnippet(file, compileSettings) {
-    // get title, permalink, and year
+  compile() {
+   const alreadyRequired = this.root.alreadyRequired
+   const list = this.files.map(fileWrapper => {
+    const {relativePath, file} = fileWrapper
     const {title, permalink, year} = file
-    const node = this.appendSibling(`- ${title}${year ? " (" + year + ")" : ""}`, `link ${permalink}`)
-    // A hacky but simple way to do this for now.
-    const html = node.compile()
-    node.destroy()
-    return html
+    return `- ${title}${year ? " (" + year + ")" : ""}\n link ${relativePath + permalink}`
+    }).join("\n")
+    const items = this.parent.concat(list)
+    const html = items.map(item => item.compile()).join("\n")
+    items.forEach(item => item.destroy())
+   return `<div class="scrollColumns" style="column-width:35ch;">${html}</div>`
   }

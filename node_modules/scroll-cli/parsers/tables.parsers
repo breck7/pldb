@@ -111,7 +111,7 @@ scrollTableParser
   }
   get delimiter() {
     const {filename} = this
-    let delimiter = " "
+    let delimiter = " " // space is default delimiter if not specified
     if (filename) {
       const extension = filename.split(".").pop()
       if (extension === "json") delimiter = "json"

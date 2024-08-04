@@ -1,0 +1,22 @@
+import ../code/conceptPage.scroll
+
+id atprotocol
+name AT Protocol
+appeared 2022
+tags protocol microblogging
+website https://atproto.com/
+spec https://atproto.com/specs/atp
+standsFor Authenticated Transfer Protocol
+description A generic federated protocol for building open social media applications.
+writtenIn typescript json markdown javascript yaml handlebars dockerfile protobuf bourne-shell css make
+
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 4419
+ committers 78
+ files 2562
+
+githubRepo https://github.com/bluesky-social/atproto
+
+wikipedia https://en.wikipedia.org/wiki/Bluesky_(social_network)#AT_Protocol
