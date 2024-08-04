@@ -62,42 +62,45 @@ image images/packages-repos.png
 Here's my list of the main central package repositories for languages that have them. I cut the list a bit to only include CRs with more than 100 packages available. If you spot any omissions or mistakes, let me know on Twitter.
  https://x.com/breckyunits Twitter
 
-pipeTable
- id|idLink|website|websiteLink|packages|appeared
- javascript|/concepts/javascript.html|http://npmjs.org|http://npmjs.org|901,025|1995
- java|/concepts/java.html|https://search.maven.org/|https://search.maven.org/|266,776|1995
- php|/concepts/php.html|https://packagist.org/|https://packagist.org/|211,636|1995
- perl|/concepts/perl.html|https://www.cpan.org/|https://www.cpan.org/|176,876|1987
- python|/concepts/python.html|https://pypi.python.org/pypi|https://pypi.python.org/pypi|167,097|1991
- ruby|/concepts/ruby.html|https://rubygems.org/|https://rubygems.org/|154,445|1995
- csharp|/concepts/csharp.html|https://www.nuget.org/|https://www.nuget.org/|141,524|2000
- swift|/concepts/swift.html|https://cocoapods.org/|https://cocoapods.org/|57,000|2014
- clojure|/concepts/clojure.html|https://clojars.org/|https://clojars.org/|23,459|2007
- rust|/concepts/rust.html|https://crates.io/|https://crates.io/|22,486|2010
- r|/concepts/r.html|https://cran.r-project.org/|https://cran.r-project.org/|13,674|1993
- haskell|/concepts/haskell.html|https://hackage.haskell.org/|https://hackage.haskell.org/|13,487|1990
- matlab|/concepts/matlab.html|https://www.mathworks.com/matlabcentral/fileexchange/|https://www.mathworks.com/matlabcentral/fileexchange/|9,718|1984
- erlang|/concepts/erlang.html|https://hex.pm/|https://hex.pm/|8,069|1986
- julia|/concepts/julia.html|https://juliahub.com/ui/Packages|https://juliahub.com/ui/Packages|7,820|2012
- tex|/concepts/tex.html|https://ctan.org/|https://ctan.org/|5,649|1978
- stata|/concepts/stata.html|https://www.stata.com/manuals/rssc.pdf|https://www.stata.com/manuals/rssc.pdf|4,608|1985
- smalltalk|/concepts/smalltalk.html|http://smalltalkhub.com/|http://smalltalkhub.com/|4,534|1972
- powershell|/concepts/powershell.html|https://www.powershellgallery.com/|https://www.powershellgallery.com/|4,382|2006
- emacs-editor|/concepts/emacs-editor.html|https://melpa.org/|https://melpa.org/|4,079|1976
- dart|/concepts/dart.html|https://pub.dartlang.org/|https://pub.dartlang.org/|2,751|2011
- maple|/concepts/maple.html|https://www.maplesoft.com/applications/|https://www.maplesoft.com/applications/|2,650|1982
- ocaml|/concepts/ocaml.html|https://opam.ocaml.org/|https://opam.ocaml.org/|2,224|1996
- lua|/concepts/lua.html|https://luarocks.org/|https://luarocks.org/|2,047|1993
- d|/concepts/d.html|https://code.dlang.org/|https://code.dlang.org/|1,498|2001
- dynamo-visual-language|/concepts/dynamo-visual-language.html|https://dynamopackages.com/|https://dynamopackages.com/|1,494|2011
- haxe|/concepts/haxe.html|https://lib.haxe.org/|https://lib.haxe.org/|1,303|2005
- racket|/concepts/racket.html|https://pkgs.racket-lang.org/|https://pkgs.racket-lang.org/|1,122|1994
- elm|/concepts/elm.html|https://package.elm-lang.org/|https://package.elm-lang.org/|594|2012
- coldfusion|/concepts/coldfusion.html|https://www.forgebox.io|https://www.forgebox.io|519|1995
- nim|/concepts/nim.html|https://nimble.directory/|https://nimble.directory/|499|2008
- spark|/concepts/spark.html|https://spark-packages.org/|https://spark-packages.org/|441|1988
- prolog|/concepts/prolog.html|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|275|1972
- mathematica|/concepts/mathematica.html|http://packagedata.net/|http://packagedata.net/|210|1988
+table
+ delimiter |
+ printTable
+ data
+  id|idLink|website|websiteLink|packages|appeared
+  javascript|/concepts/javascript.html|http://npmjs.org|http://npmjs.org|901,025|1995
+  java|/concepts/java.html|https://search.maven.org/|https://search.maven.org/|266,776|1995
+  php|/concepts/php.html|https://packagist.org/|https://packagist.org/|211,636|1995
+  perl|/concepts/perl.html|https://www.cpan.org/|https://www.cpan.org/|176,876|1987
+  python|/concepts/python.html|https://pypi.python.org/pypi|https://pypi.python.org/pypi|167,097|1991
+  ruby|/concepts/ruby.html|https://rubygems.org/|https://rubygems.org/|154,445|1995
+  csharp|/concepts/csharp.html|https://www.nuget.org/|https://www.nuget.org/|141,524|2000
+  swift|/concepts/swift.html|https://cocoapods.org/|https://cocoapods.org/|57,000|2014
+  clojure|/concepts/clojure.html|https://clojars.org/|https://clojars.org/|23,459|2007
+  rust|/concepts/rust.html|https://crates.io/|https://crates.io/|22,486|2010
+  r|/concepts/r.html|https://cran.r-project.org/|https://cran.r-project.org/|13,674|1993
+  haskell|/concepts/haskell.html|https://hackage.haskell.org/|https://hackage.haskell.org/|13,487|1990
+  matlab|/concepts/matlab.html|https://www.mathworks.com/matlabcentral/fileexchange/|https://www.mathworks.com/matlabcentral/fileexchange/|9,718|1984
+  erlang|/concepts/erlang.html|https://hex.pm/|https://hex.pm/|8,069|1986
+  julia|/concepts/julia.html|https://juliahub.com/ui/Packages|https://juliahub.com/ui/Packages|7,820|2012
+  tex|/concepts/tex.html|https://ctan.org/|https://ctan.org/|5,649|1978
+  stata|/concepts/stata.html|https://www.stata.com/manuals/rssc.pdf|https://www.stata.com/manuals/rssc.pdf|4,608|1985
+  smalltalk|/concepts/smalltalk.html|http://smalltalkhub.com/|http://smalltalkhub.com/|4,534|1972
+  powershell|/concepts/powershell.html|https://www.powershellgallery.com/|https://www.powershellgallery.com/|4,382|2006
+  emacs-editor|/concepts/emacs-editor.html|https://melpa.org/|https://melpa.org/|4,079|1976
+  dart|/concepts/dart.html|https://pub.dartlang.org/|https://pub.dartlang.org/|2,751|2011
+  maple|/concepts/maple.html|https://www.maplesoft.com/applications/|https://www.maplesoft.com/applications/|2,650|1982
+  ocaml|/concepts/ocaml.html|https://opam.ocaml.org/|https://opam.ocaml.org/|2,224|1996
+  lua|/concepts/lua.html|https://luarocks.org/|https://luarocks.org/|2,047|1993
+  d|/concepts/d.html|https://code.dlang.org/|https://code.dlang.org/|1,498|2001
+  dynamo-visual-language|/concepts/dynamo-visual-language.html|https://dynamopackages.com/|https://dynamopackages.com/|1,494|2011
+  haxe|/concepts/haxe.html|https://lib.haxe.org/|https://lib.haxe.org/|1,303|2005
+  racket|/concepts/racket.html|https://pkgs.racket-lang.org/|https://pkgs.racket-lang.org/|1,122|1994
+  elm|/concepts/elm.html|https://package.elm-lang.org/|https://package.elm-lang.org/|594|2012
+  coldfusion|/concepts/coldfusion.html|https://www.forgebox.io|https://www.forgebox.io|519|1995
+  nim|/concepts/nim.html|https://nimble.directory/|https://nimble.directory/|499|2008
+  spark|/concepts/spark.html|https://spark-packages.org/|https://spark-packages.org/|441|1988
+  prolog|/concepts/prolog.html|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|275|1972
+  mathematica|/concepts/mathematica.html|http://packagedata.net/|http://packagedata.net/|210|1988
 
 ***
 

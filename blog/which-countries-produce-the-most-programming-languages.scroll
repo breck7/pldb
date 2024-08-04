@@ -26,29 +26,32 @@ endSnippet
 
 * Data used for this chart:
 
-commaTable
- country,count
- AU,2
- BE,1
- BR,1
- CA,12
- CH,9
- DE,6
- DK,1
- FR,11
- GB,23
- IS,1
- IT,2
- JP,4
- KR,1
- NG,1
- NL,4
- NO,4
- PL,1
- PT,1
- RU,4
- SE,4
- US,167
+table
+ delimiter ,
+ printTable
+ data
+  country,count
+  AU,2
+  BE,1
+  BR,1
+  CA,12
+  CH,9
+  DE,6
+  DK,1
+  FR,11
+  GB,23
+  IS,1
+  IT,2
+  JP,4
+  KR,1
+  NG,1
+  NL,4
+  NO,4
+  PL,1
+  PT,1
+  RU,4
+  SE,4
+  US,167
 
 ohayoCode
  html.h1 Which countries produce the most programming languages?

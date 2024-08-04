@@ -104,7 +104,7 @@ hasStrings true
 canDoShebang true
  #!/usr/bin/env escript
 hasComments true
- % hello world program
+ % A comment
 hasMultiLineComments false
 hasDirectives true
  -define(TIMEOUT, 200).

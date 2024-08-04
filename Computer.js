@@ -11,7 +11,7 @@ const numeral = require("numeral")
 const dayjs = require("dayjs")
 
 const currentYear = new Date().getFullYear()
-const cleanAndRightShift = str => Utils.shiftRight(Utils.removeReturnChars(str), 1)
+const cleanAndRightShift = (str, count = 1) => Utils.shiftRight(Utils.removeReturnChars(str), count)
 
 const linkManyAftertext = links =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
@@ -35,9 +35,11 @@ const SVGS = {
   tiktok: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>`
 }
 
-const delimiter = `|_$^`
-const quickTree = (rows, header) => `table ${delimiter}
- ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
+const delimiter = `¶`
+const quickTree = (rows, header) =>
+  `table\n delimiter ${delimiter}\n printTable\n data\n  ${new TreeNode(rows)
+    .toDelimited(delimiter, header, false)
+    .replace(/\n/g, "\n  ")}`
 
 // todo: move to Parsers
 const languageTags = new Set(
@@ -576,8 +578,11 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
         child.set("repoLink", child.get("url"))
       })
       return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
-commaTable
- ${cleanAndRightShift(tree.toDelimited(",", ["repo", "repoLink", "stars", "description"]))}
+table
+ delimiter ,
+ printTable
+ data
+  ${cleanAndRightShift(tree.toDelimited(",", ["repo", "repoLink", "stars", "description"]), 2)}
 `
     }
     return ""
@@ -595,10 +600,16 @@ commaTable
       child.set("titleLink", `https://www.semanticscholar.org/paper/${child.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
-pipeTable
- ${cleanAndRightShift(
-   tree.toDelimited("|", ["title", "titleLink", "authors", "year", "citations", "influentialCitations"])
- )}
+table
+ delimiter |
+ printTable
+ data
+  ${
+    (cleanAndRightShift(
+      tree.toDelimited("|", ["title", "titleLink", "authors", "year", "citations", "influentialCitations"])
+    ),
+    2)
+  }
 `
   }
 
@@ -614,8 +625,11 @@ pipeTable
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
     })
     return `## Books about ${title} from ISBNdb
-pipeTable
- ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"]))}
+table
+ delimiter |
+ printTable
+ data
+  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"]), 2)}
 `
   }
 
@@ -629,8 +643,14 @@ pipeTable
       child.set("titleLink", `https://www.goodreads.com/search?q=${child.get("title") + " " + child.get("author")}`)
     })
     return `## Books about ${title} on goodreads
-pipeTable
- ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "author", "year", "reviews", "ratings", "rating"]))}
+table
+ delimiter |
+ printTable
+ data
+  ${cleanAndRightShift(
+    tree.toDelimited("|", ["title", "titleLink", "author", "year", "reviews", "ratings", "rating"]),
+    2
+  )}
 `
   }
 
@@ -643,8 +663,11 @@ pipeTable
         child.set("titleLink", child.get("doi") ? `https://doi.org/` + child.get("doi") : child.get("url"))
       })
       return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
-pipeTable
- ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
+table
+ delimiter |
+ printTable
+ data
+  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]), 2)}
 `
     }
     return ""
@@ -681,8 +704,11 @@ Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
 
     return `## Language <a href="../lists/features.html">features</a>
 
-treeTable
- ${table.sortBy(["Supported", "Example"]).reverse().toString().replace(/\n/g, "\n ")}`
+table
+ delimiter tree
+ printTable
+ data
+  ${table.sortBy(["Supported", "Example"]).reverse().toString().replace(/\n/g, "\n  ")}`
   }
 
   get hackerNewsTable() {
@@ -697,12 +723,15 @@ treeTable
 
     const delimited = table
       .toDelimited("|", ["title", "titleLink", "date", "score", "comments"])
-      .replace(/\n/g, "\n ")
+      .replace(/\n/g, "\n  ")
       .trim()
     return `## HackerNews discussions of ${this.name}
 
-pipeTable
- ${delimited}`
+table
+ delimiter |
+ printTable
+ data
+  ${delimited}`
   }
 
   get sourceUrl() {
@@ -1495,9 +1524,9 @@ class Tables {
 
   toTable(data) {
     const cols = lodash.keys(data[0])
-    const rows = lodash.map(data, row => cols.map(col => row[col]).join("\t"))
-    const tsv = [cols.join("\t"), ...rows].join("\n ")
-    return "tabTable\n " + tsv
+    const rows = lodash.map(data, row => cols.map(col => row[col]).join(","))
+    const tsv = [cols.join(","), ...rows].join("\n  ")
+    return "table\n delimiter ,\n printTable\n data\n  " + tsv
   }
 
   _top

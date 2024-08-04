@@ -17,19 +17,22 @@ endColumns
 printConcepts
 
 # Other Event Pages
-pipeTable
- name|nameLink
- SIGPLAN Conferences|https://sigplan.org/Conferences
- PRL Seminars|https://prl.ccs.neu.edu/seminars.html
- Wikipedia list of PL Conferences|https://en.wikipedia.org/wiki/Category:Programming_languages_conferences
- Compilers Calls For Papers|https://www.wikicfp.com/cfp/call?conference=compilers
- Programming Languages Calls For Papers|https://www.wikicfp.com/cfp/call?conference=programming%20languages
- CPP Links: Conferences|https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences
- World Academy of Science, Engineering and Technology|https://waset.org/software-engineering-conferences-in-2023
- Dev events|https://dev.events/
- Conference Index|https://conferenceindex.org/conferences/software-programming
- Women Who Code Index|https://www.womenwhocode.com/events
- Clocate - Conferences|https://www.clocate.com/conferences-on+software-engineering/c3UtMjMz/
+table
+ delimiter |
+ printTable
+ data
+  name|nameLink
+  SIGPLAN Conferences|https://sigplan.org/Conferences
+  PRL Seminars|https://prl.ccs.neu.edu/seminars.html
+  Wikipedia list of PL Conferences|https://en.wikipedia.org/wiki/Category:Programming_languages_conferences
+  Compilers Calls For Papers|https://www.wikicfp.com/cfp/call?conference=compilers
+  Programming Languages Calls For Papers|https://www.wikicfp.com/cfp/call?conference=programming%20languages
+  CPP Links: Conferences|https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences
+  World Academy of Science, Engineering and Technology|https://waset.org/software-engineering-conferences-in-2023
+  Dev events|https://dev.events/
+  Conference Index|https://conferenceindex.org/conferences/software-programming
+  Women Who Code Index|https://www.womenwhocode.com/events
+  Clocate - Conferences|https://www.clocate.com/conferences-on+software-engineering/c3UtMjMz/
 
 tableSearch
 
