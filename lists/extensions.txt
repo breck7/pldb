@@ -46,18 +46,18 @@ CUDA¶../concepts/cuda.html¶cu cuh¶2
 Markdown¶../concepts/markdown.html¶contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook livemd scd¶13
 Racket¶../concepts/racket.html¶rkt rktl rktd scrbl plt ss scm¶7
 Solidity¶../concepts/solidity.html¶sol¶1
+WebAssembly¶../concepts/wasm.html¶wasm wast wat¶3
 Visual Basic¶../concepts/visual-basic.html¶BAS bas ctl dsr frm FRX frx VBHTML vbhtml vbp vbw cls¶12
 YAML¶../concepts/yaml.html¶clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql yamlsed ymlmysql¶15
 Nim¶../concepts/nim.html¶nim nim.cfg nimble nimrod nims nimcfg¶6
-Ada¶../concepts/ada.html¶adb ads ada pad¶4
 Pascal¶../concepts/pascal.html¶pp pas inc dpr lpr p pascal dfm¶8
+Ada¶../concepts/ada.html¶adb ads ada pad¶4
 Zig¶../concepts/zig.html¶zig¶1
 TOML¶../concepts/toml.html¶toml Pipfile poetry.lock¶3
 Fortran¶../concepts/fortran.html¶f for f90 f95 f03 f08 f15 f77 fpp F03 F90¶11
 Crystal¶../concepts/crystal.html¶cr¶1
 Reason¶../concepts/reason.html¶re rei¶2
 D¶../concepts/d.html¶d di¶2
-WebAssembly¶../concepts/wasm.html¶wasm wast wat¶3
 Elm¶../concepts/elm.html¶elm¶1
 Haxe¶../concepts/haxe.html¶hx hxml hxsl¶3
 GraphQL¶../concepts/graphql.html¶gql graphql graphqls¶3
@@ -88,10 +88,10 @@ Gradle¶../concepts/gradle.html¶gradle gradle.kts¶2
 Protocol Buffers¶../concepts/protobuf.html¶proto¶1
 CMake¶../concepts/cmake.html¶cmake cmake.in CMakeLists.txt cmakein¶4
 Ini¶../concepts/ini.html¶buildozer.spec editorconfig ini lektorproject prefs cfg dof pro properties url inf .editorconfig service socket device mount automount swap target path timer slice scope¶23
-Yacc¶../concepts/yacc.html¶y yacc yy¶3
-Make¶../concepts/make.html¶am Gnumakefile gnumakefile Makefile makefile mk mak d make mkfile Makefile.* GNUmakefile¶12
-APL¶../concepts/apl.html¶apl apla aplc aplf apli apln aplo dyalog dyapp mipage¶10
 Brainfuck¶../concepts/brainfuck.html¶b bf¶2
+Yacc¶../concepts/yacc.html¶y yacc yy¶3
+APL¶../concepts/apl.html¶apl apla aplc aplf apli apln aplo dyalog dyapp mipage¶10
+Make¶../concepts/make.html¶am Gnumakefile gnumakefile Makefile makefile mk mak d make mkfile Makefile.* GNUmakefile¶12
 odin¶../concepts/odin.html¶odin¶1
 Assembly language¶../concepts/assembly-language.html¶a51 asm nasm S s i inc nas¶8
 Embedded Crystal¶../concepts/ecr.html¶ecr¶1
@@ -112,8 +112,8 @@ Lean¶../concepts/lean.html¶hlean lean¶2
 ANTLR¶../concepts/antlr.html¶g g4¶2
 sed¶../concepts/sed.html¶sed [gs]sed¶2
 RobotFramework¶../concepts/robotframework.html¶robot resource¶2
-F*¶../concepts/fstar.html¶fst fsti¶2
 V¶../concepts/v.html¶v¶1
+F*¶../concepts/fstar.html¶fst fsti¶2
 IDL¶../concepts/idl.html¶dlm idl pro¶3
 SaltStack¶../concepts/saltstack.html¶sls¶1
 Fennel¶../concepts/fennel.html¶fnl¶1
@@ -129,12 +129,12 @@ Verilog¶../concepts/verilog.html¶v veo¶2
 ActionScript¶../concepts/actionscript.html¶as¶1
 Pony¶../concepts/pony.html¶pony¶1
 EJS¶../concepts/ejs.html¶ejs ect ejst jst¶4
-Ballerina¶../concepts/ballerina.html¶bal¶1
 Hy¶../concepts/hy.html¶hy¶1
+Ballerina¶../concepts/ballerina.html¶bal¶1
 FLUX¶../concepts/flux.html¶fx flux¶2
+Manim¶../concepts/manim.html¶.py¶1
 BASIC¶../concepts/basic.html¶bas¶1
 Factor¶../concepts/factor.html¶factor¶1
-Manim¶../concepts/manim.html¶.py¶1
 Squirrel¶../concepts/squirrel.html¶nut¶1
 Puppet¶../concepts/puppet.html¶pp¶1
 C3¶../concepts/c3.html¶c3 c3i¶2
@@ -168,9 +168,9 @@ ASP¶../concepts/asp.html¶asa ashx asp axd asax ascx asmx aspx¶8
 jq¶../concepts/jq.html¶jq¶1
 JSON-LD¶../concepts/json-ld.html¶jsonld¶1
 Jsonnet¶../concepts/jsonnet.html¶jsonnet libsonnet¶2
-Jinja¶../concepts/jinja.html¶j2 jinja jinja2¶3
 Lex¶../concepts/lex.html¶l lex¶2
 VBScript¶../concepts/vbscript.html¶vbs vbe wsf wsc VBS¶5
+Jinja¶../concepts/jinja.html¶j2 jinja jinja2¶3
 Frege¶../concepts/frege.html¶fr¶1
 Janet¶../concepts/janet.html¶janet¶1
 M4¶../concepts/m4.html¶ac m4 mc¶3
@@ -182,8 +182,8 @@ Bicep¶../concepts/bicep.html¶bicep¶1
 Nginx¶../concepts/nginx-config.html¶nginx nginxconf vhost nginx.conf¶4
 Batchfile¶../concepts/batch.html¶bat cmd¶2
 Nearley¶../concepts/nearley.html¶ne nearley¶2
-Ninja¶../concepts/ninja.html¶ninja¶1
 Terra¶../concepts/terra.html¶t¶1
+Ninja¶../concepts/ninja.html¶ninja¶1
 PL/SQL¶../concepts/pl-sql.html¶pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw¶16
 GNU Octave¶../concepts/octave.html¶m¶1
 Opa¶../concepts/opa.html¶opa¶1
@@ -253,8 +253,8 @@ wisp¶../concepts/wisp.html¶wisp¶1
 Golo¶../concepts/golo.html¶golo¶1
 Clean¶../concepts/clean.html¶icl dcl abc sapl¶4
 AviSynth¶../concepts/avi-synth.html¶.avs¶1
-Felix¶../concepts/felix.html¶flx flxh¶2
 Transact-SQL¶../concepts/transact-sql.html¶sql¶1
+Felix¶../concepts/felix.html¶flx flxh¶2
 CWL¶../concepts/common-workflow-language.html¶cwl¶1
 LOLCODE¶../concepts/lolcode.html¶lol¶1
 AGC¶../concepts/apollo-guidance-computer.html¶agc¶1
@@ -269,8 +269,8 @@ Mirah¶../concepts/mirah.html¶druby duby mirah¶3
 Ring¶../concepts/ring.html¶ring rh rform¶3
 chaiscript¶../concepts/chaiscript.html¶chai¶1
 Q¶../concepts/q.html¶q¶1
-CodeQL¶../concepts/codeql.html¶ql qll¶2
 SuperCollider¶../concepts/supercollider.html¶sc scd¶2
+CodeQL¶../concepts/codeql.html¶ql qll¶2
 AspectJ¶../concepts/aspectj.html¶aj¶1
 Mu¶../concepts/mu.html¶mu¶1
 Dylan¶../concepts/dylan.html¶dylan dyl intr lid¶4
@@ -278,8 +278,8 @@ Smarty¶../concepts/smarty.html¶smarty tpl¶2
 Xojo¶../concepts/xojo.html¶xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window¶6
 ooc¶../concepts/ooc.html¶ooc¶1
 SugarSS¶../concepts/sugarss.html¶sss¶1
-Modula-3¶../concepts/modula-3.html¶i3 ig m3 mg¶4
 SCSS¶../concepts/scss.html¶sass scss¶2
+Modula-3¶../concepts/modula-3.html¶i3 ig m3 mg¶4
 REBOL¶../concepts/rebol.html¶r reb r2 r3 rebol¶5
 Oz¶../concepts/oz.html¶oz¶1
 Closure Templates¶../concepts/closure-templates.html¶soy¶1
@@ -424,8 +424,8 @@ Vyxal¶../concepts/vyxal.html¶vy vyxal¶2
 Genie¶../concepts/genie.html¶gs¶1
 Velocity¶../concepts/apache-velocity.html¶vm fhtml¶2
 C shell¶../concepts/c-shell.html¶csh tcsh¶2
-XAML¶../concepts/xaml.html¶xaml¶1
 Seed7¶../concepts/seed7.html¶sd7 s7i¶2
+XAML¶../concepts/xaml.html¶xaml¶1
 muPad¶../concepts/mupad.html¶mu¶1
 Tea¶../concepts/tea.html¶tea¶1
 PL/M¶../concepts/pl-m.html¶lit plm¶2
@@ -441,8 +441,8 @@ Mako¶../concepts/mako.html¶mako mao¶2
 Linden Scripting Language¶../concepts/lsl.html¶lsl lslp¶2
 Opal¶../concepts/opal.html¶opal¶1
 Uno¶../concepts/uno.html¶uno¶1
-IcedCoffeeScript¶../concepts/icedcoffeescript.html¶coffee¶1
 TAP¶../concepts/tap.html¶tap¶1
+IcedCoffeeScript¶../concepts/icedcoffeescript.html¶coffee¶1
 Curry¶../concepts/curry.html¶curry¶1
 Oxygene¶../concepts/oxygene.html¶oxygene¶1
 Gentoo Ebuild¶../concepts/gentoo-ebuild.html¶ebuild¶1
@@ -557,8 +557,8 @@ juniper¶../concepts/juniper.html¶junos¶1
 HXML¶../concepts/hxml.html¶hxml¶1
 RHTML¶../concepts/rhtml.html¶rhtml¶1
 Elpi¶../concepts/elpi.html¶elpi¶1
-FOCUS¶../concepts/focus.html¶focexec¶1
 ObjectScript¶../concepts/objectscript.html¶cls¶1
+FOCUS¶../concepts/focus.html¶focexec¶1
 Pod¶../concepts/pod.html¶pod¶1
 FAUST¶../concepts/faust.html¶dsp¶1
 Uniform eXchange Format¶../concepts/uxf.html¶uxf, ux*¶2
@@ -586,8 +586,8 @@ XProc¶../concepts/xproc.html¶xpl xproc¶2
 parasail¶../concepts/parasail.html¶.psi .psl psi psl¶4
 Augeas¶../concepts/augeas.html¶aug¶1
 Blender¶../concepts/blender-app.html¶blend¶1
-Rescript¶../concepts/rescript.html¶res resi¶2
 winxed¶../concepts/winxed.html¶winxed¶1
+Rescript¶../concepts/rescript.html¶res resi¶2
 heap.coffee¶../concepts/heap.coffee.html¶coffee¶1
 Scala Markup Language¶../concepts/scaml.html¶scaml¶1
 Snap!¶../concepts/snap.html¶ypr ysp xml¶3
@@ -669,8 +669,8 @@ Spice¶../concepts/spice.html¶spice¶1
 Zimpl¶../concepts/zimpl.html¶zimpl zmpl zpl¶3
 ATLAS Transformation Language¶../concepts/atlas.html¶atl¶1
 formality¶../concepts/formality.html¶fm¶1
-Programming Language for Business¶../concepts/plb.html¶rl ps cb¶3
 Quint¶../concepts/quint.html¶qnt¶1
+Programming Language for Business¶../concepts/plb.html¶rl ps cb¶3
 XML Metadata Interchange¶../concepts/xmi.html¶XMI xmi¶2
 Genshi¶../concepts/genshi.html¶kid¶1
 Macchiato¶../concepts/macchiato.html¶at¶1

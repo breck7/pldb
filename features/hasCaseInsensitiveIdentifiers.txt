@@ -4,6 +4,8 @@ Case Insensitive Identifiers
 # Though they may be phased out:
 # https://github.com/nim-lang/RFCs/issues/456
 
+s := (A + a + A);
+
 with Gnat.Io; use Gnat.Io;
 procedure Numbers is
    Score: Integer;
@@ -16,8 +18,6 @@ begin
    Put(Score);
    New_Line;
 end Numbers;
-
-s := (A + a + A);
 
 x = 2.0
 y = x + X
@@ -32,7 +32,7 @@ if &quot;abc&quot;.LeNgTh == 3
 
 ***
 
-Languages *with* Case Insensitive Identifiers include HTML, CSS, SQL, SAS, COBOL, Visual Basic, Nim, Ada, Pascal, Fortran, PostgreSQL, MySQL, SPSS, VHDL, Forth, Visual Basic .NET, Delphi, BASIC, AutoHotkey, Eiffel, Batchfile, Gforth, SAKO, Speedie
+Languages *with* Case Insensitive Identifiers include HTML, CSS, SQL, SAS, COBOL, Visual Basic, Nim, Pascal, Ada, Fortran, PostgreSQL, MySQL, SPSS, VHDL, Forth, Visual Basic .NET, Delphi, BASIC, AutoHotkey, Eiffel, Batchfile, Gforth, SAKO, Speedie
 
 ***
 

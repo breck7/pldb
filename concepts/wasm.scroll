@@ -6,6 +6,7 @@ appeared 2015
 creators Alon Zakai
 tags bytecode
 website http://webassembly.org/
+spec https://webassembly.org/specs/
 latestVersion 1.0.35
 fileExtensions wasm
 writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmake css lua
@@ -13,6 +14,7 @@ writtenIn cpp html c javascript python wasm markdown yaml bourne-shell make cmak
 isOpenSource true
 tryItOnline https://tio.run/#wasm
 clocExtensions wast wat
+faq https://webassembly.org/docs/faq/
 fileType text
 docs https://developer.mozilla.org/en-US/docs/WebAssembly
 repoStats
@@ -24,6 +26,10 @@ repoStats
 originCommunity W3C
 proposals https://github.com/WebAssembly/proposals
 
+discord https://discord.gg/jwCC7jS
+subreddit https://www.reddit.com/r/WebAssembly/
+ memberCount
+  2024 12000
 pygmentsHighlighter WebAssembly
  filename webassembly.py
  fileExtensions wat wast
