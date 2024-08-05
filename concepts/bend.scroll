@@ -3,9 +3,11 @@ import ../code/conceptPage.scroll
 id bend
 name Bend
 appeared 2023
+creators Victor Taelin
 tags pl
 website https://higherorderco.com
 latestVersion 0.2.18
+fileExtensions bend
 writtenIn rust markdown toml yaml json
 
 repoStats
@@ -14,6 +16,22 @@ repoStats
  committers 27
  files 833
  newestCommit 2024
+
+example
+ # Defines the function Sum with two parameters: start and target
+ def Sum(start, target):
+   if start == target:
+     # If the value of start is the same as target, returns start.
+     return start
+   else:
+     # If start is not equal to target, recursively call Sum with
+     # start incremented by 1, and add the result to start.
+     return start + Sum(start + 1, target)
+ 
+ def main():
+   # This translates to (1 + (2 + (3 + (...... + (999999 + 1000000)))))
+   # Note that this will overflow the maximum value of a number in Bend
+   return Sum(1, 1_000_000)
 
 githubRepo https://github.com/HigherOrderCO/Bend
  stars 16930

@@ -3,7 +3,9 @@ import ../code/conceptPage.scroll
 id carbon
 name Carbon
 appeared 2020
+creators Chandler Carruth and Jon Ross-Perkins
 tags pl
+fileExtensions carbon
 writtenIn markdown cpp bazel python yaml starlark bourne-shell json svg diff javascript vim-script dockerfile xml protobuf c scheme html yacc lua lex make toml
 
 clocExtensions carbon
@@ -14,7 +16,7 @@ repoStats
  files 5507
  newestCommit 2024
 country United States
-originCommunity https://github.com/carbon-language
+originCommunity Google
 reference https://news.ycombinator.com/item?id=32151609
 
 example
@@ -62,3 +64,5 @@ githubRepo https://github.com/carbon-language/carbon-lang
  updated 2024
  description Carbon Language's main repository: documents, design, implementation, and related tools. (NOTE: Carbon Language is experimental; see README)
  issues 112
+
+wikipedia https://en.wikipedia.org/wiki/Carbon_(programming_language)
