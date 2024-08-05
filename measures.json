@@ -169,7 +169,7 @@
     "Values": 4991,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1193",
+    "Example": "1192",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -186,7 +186,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -905,7 +905,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1146,
+    "Values": 1147,
     "Coverage": "22%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -915,7 +915,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1108,
+    "Values": 1109,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -925,7 +925,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1146,
+    "Values": 1147,
     "Coverage": "22%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -935,7 +935,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1146,
+    "Values": 1147,
     "Coverage": "22%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -945,7 +945,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1143,
+    "Values": 1144,
     "Coverage": "22%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1088,7 +1088,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1308,7 +1308,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
