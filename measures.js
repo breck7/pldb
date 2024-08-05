@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1465,
+    "Values": 1466,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -116,7 +116,7 @@ const measures = [
   },
   {
     "Name": "blog",
-    "Values": 64,
+    "Values": 65,
     "Coverage": "1%",
     "Question": "What is the URL to the official blog for this language?",
     "Example": "https://www.11ty.dev/blog/",
@@ -169,7 +169,7 @@ const measures = [
     "Values": 4990,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1194",
+    "Example": "1193",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -1298,7 +1298,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1465,
+    "Values": 1466,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1390,7 +1390,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 379,
+    "Values": 380,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
@@ -1655,7 +1655,7 @@ const measures = [
   },
   {
     "Name": "subreddit",
-    "Values": 102,
+    "Values": 103,
     "Coverage": "2%",
     "Question": "What is a URL of a subreddit(s) for this language?",
     "Example": "https://reddit.com/r/ada",
@@ -1666,7 +1666,7 @@ const measures = [
   },
   {
     "Name": "twitter",
-    "Values": 258,
+    "Values": 259,
     "Coverage": "5%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -1687,7 +1687,7 @@ const measures = [
   },
   {
     "Name": "discord",
-    "Values": 15,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://www.11ty.dev/blog/discord/",
@@ -1841,7 +1841,7 @@ const measures = [
   },
   {
     "Name": "leetSheets",
-    "Values": 79,
+    "Values": 80,
     "Coverage": "1%",
     "Question": "What is a URL(s) to a leet sheet(s) for this language?",
     "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",

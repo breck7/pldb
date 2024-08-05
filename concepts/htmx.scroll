@@ -3,12 +3,15 @@ import ../code/conceptPage.scroll
 id htmx
 name htmx
 appeared 2020
+creators Carson Gross
 tags template
 website https://htmx.org/
+blog https://htmx.org/essays/
 latestVersion 1.9.12
 description htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
 writtenIn markdown javascript html svg json css toml typescript bourne-shell yaml xml ruby csv
 
+docs https://htmx.org/docs/
 repoStats
  firstCommit 2020
  commits 3044
@@ -18,12 +21,18 @@ repoStats
 country United States
 originCommunity https://github.com/bigskysoftware/
 
+discord https://htmx.org/discord
+twitter https://twitter.com/htmx_org
+subreddit https://www.reddit.com/r/htmx/
+ memberCount
+  2024 12000
 example
  <script src="https://unpkg.com/htmx.org@1.7.0"></script>
  <!-- have a button POST a click via AJAX -->
  <button hx-post="/clicked" hx-swap="outerHTML">
    Click Me
  </button>
+leetSheets https://htmx.org/reference/
 
 githubRepo https://github.com/bigskysoftware/htmx
  firstCommit 2020
