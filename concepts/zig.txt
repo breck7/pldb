@@ -5,7 +5,7 @@ Zig is an open source programming language created in 2015 by Andrew Kelley.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Andrew%20Kelley Andrew Kelley
 
-#49 on PLDB
+#45 on PLDB
 9 Years Old
 4k Repos
 
@@ -17,11 +17,12 @@ A programming language designed for robustness, optimality, and clarity.
 - Zig is developed on GitHub and has 32,864 stars
 - Watch the history of the Zig repo visualized with Gource
 - There are at least 3,909 Zig repos on GitHub
+- Zig is written in Zig, C, Assembly language, C++, Pascal, Bourne shell, Markdown, CMake, Python, YAML, Ring, PowerShell, JSON, JavaScript, HTML, Objective-C
 - The  Google BigQuery Public Dataset GitHub snapshot shows 20 users using Zig in 21 repos on GitHub
 - There are 5,511 members in the Zig subreddit
 - Explore Zig snippets on Rosetta Code
 - Pygments supports syntax highlighting for Zig
-- 11 PLDB concepts link to Zig: Ace Editor, Bio, bog, buzz, cloc, Cyber, mal, PCRE, PRQL, Pygments, Roc
+- 12 PLDB concepts link to Zig: Ace Editor, Bio, bog, buzz, cloc, Cyber, mal, PCRE, PRQL, Pygments, Roc, Zig
 
 // Type your code here, or load an example.
 export fn square(num: i32) i32 {

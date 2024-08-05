@@ -15,7 +15,7 @@ Nix is an open source package manager created in 2003.
 - GitHub supports syntax highlighting for Nix
 - Read more about Nix on the web: 1.
  https://nixos.org/ 1.
-- 72 PLDB concepts link to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, Ladybird, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slab, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
+- 74 PLDB concepts link to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, GHC, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, Ladybird, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, Quint, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slab, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
 
 {
  boot.loader.grub.device = &quot;/dev/sda&quot;;

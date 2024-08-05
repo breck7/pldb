@@ -72,7 +72,7 @@ class ScrollSetCLI {
   }
 
   searchForConcept(query) {
-    if (query === undefined || query === "") return
+    if (query === undefined || query === "" || !query.toLowerCase) return
     const { searchIndex } = this
     return (
       searchIndex.get(query) || searchIndex.get(query.toLowerCase()) || searchIndex.get(Utils.titleToPermalink(query))
