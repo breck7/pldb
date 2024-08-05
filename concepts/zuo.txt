@@ -5,17 +5,32 @@ Zuo, aka derived from the Chinese word for “make.”, is an open source progra
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
  https://pldb.io/concepts/../lists/creators.html#q=Matthew%20Flatt Matthew Flatt
 
-#274 on PLDB
+#2099 on PLDB
 2 Years Old
-
-git clone https://github.com/racket/racket/tree/master/racket/src/zuo
 
 A Tiny Racket for Scripting
 
 - Tags: programming language
-- Zuo is developed on GitHub and has 4,741 stars
-- Early development of Zuo happened in https://github.com/racket
 - Zuo is written in C
-- Events page for Zuo
- https://github.com/racket/racket/wiki/Meetups Events page for Zuo
 - See also: (1 related languages) Racket
+- Read more about Zuo on the web: 1.
+ https://github.com/racket/racket/tree/master/racket/src/zuo 1.
+
+#lang zuo/datum
+
+;; The classic toy benchmark
+(provide fib)
+
+(define input
+  (let ([args (hash-ref (runtime-env) &#39;args)])
+    (if (null? args)
+        30
+        (string-&gt;integer (car args)))))
+
+(define (fib n)
+  (cond
+    [(= n 0) 1]
+    [(= n 1) 1]
+    [else (+ (fib (- n 1)) (fib (- n 2)))]))
+
+(fib input)

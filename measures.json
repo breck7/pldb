@@ -116,7 +116,7 @@
   },
   {
     "Name": "blog",
-    "Values": 66,
+    "Values": 67,
     "Coverage": "1%",
     "Question": "What is the URL to the official blog for this language?",
     "Example": "https://www.11ty.dev/blog/",
@@ -169,7 +169,7 @@
     "Values": 4990,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1193",
+    "Example": "1192",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4990,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21612",
+    "Example": "21613",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -262,7 +262,7 @@
   },
   {
     "Name": "githubRepo_created",
-    "Values": 1140,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -272,7 +272,7 @@
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 1140,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "What year was the last commit made?",
     "Example": "2024",
@@ -292,7 +292,7 @@
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 1140,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "How many subscribers to the repo?",
     "Example": "24",
@@ -302,7 +302,7 @@
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 1138,
+    "Values": 1137,
     "Coverage": "22%",
     "Question": "How many forks of the repo?",
     "Example": "48",
@@ -312,7 +312,7 @@
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1140,
+    "Values": 1139,
     "Coverage": "22%",
     "Question": "How many stars of the repo?",
     "Example": "755",
@@ -322,7 +322,7 @@
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 1137,
+    "Values": 1136,
     "Coverage": "22%",
     "Question": "How many isses on the repo?",
     "Example": "40",
@@ -423,7 +423,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 120,
+    "Values": 121,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -775,7 +775,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 1195,
+    "Values": 1194,
     "Coverage": "23%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -1058,7 +1058,7 @@
   },
   {
     "Name": "fileExtensions",
-    "Values": 232,
+    "Values": 233,
     "Coverage": "4%",
     "Question": "What are the file extensions for this language?",
     "Example": "a51",
@@ -1441,7 +1441,7 @@
   },
   {
     "Name": "eventsPageUrl",
-    "Values": 20,
+    "Values": 19,
     "Coverage": "0%",
     "Question": "What is a URL to an events pages for this language?",
     "Example": "https://blogs.sap.com/2020/04/21/abap-community-online-events/",
@@ -1604,7 +1604,7 @@
   },
   {
     "Name": "originCommunity",
-    "Values": 3971,
+    "Values": 3970,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
@@ -1614,7 +1614,7 @@
   },
   {
     "Name": "country",
-    "Values": 3744,
+    "Values": 3743,
     "Coverage": "75%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1645,7 +1645,7 @@
   },
   {
     "Name": "reference",
-    "Values": 2161,
+    "Values": 2162,
     "Coverage": "43%",
     "Question": "What is a URL to more info about this thing?",
     "Example": "https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998",
@@ -1687,7 +1687,7 @@
   },
   {
     "Name": "discord",
-    "Values": 17,
+    "Values": 18,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://www.11ty.dev/blog/discord/",
@@ -1799,7 +1799,7 @@
   },
   {
     "Name": "example",
-    "Values": 889,
+    "Values": 890,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -1925,7 +1925,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 1152,
+    "Values": 1151,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -3803,7 +3803,7 @@
   },
   {
     "Name": "domainName",
-    "Values": 891,
+    "Values": 890,
     "Coverage": "17%",
     "Question": "What is the domain for this language's website if it has its own?",
     "Example": "6gu.nz",

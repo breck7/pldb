@@ -5,27 +5,34 @@ name Zuo
 appeared 2022
 creators Matthew Flatt
 tags pl
-website https://racket-lang.org/
 spec https://docs.racket-lang.org/zuo/zuo-base.html
 standsFor derived from the Chinese word for “make.”
 description A Tiny Racket for Scripting
+fileExtensions zuo
 writtenIn c
 
 isOpenSource true
 related racket
 influencedBy racket
 docs https://docs.racket-lang.org/zuo/index.html
-eventsPageUrl https://github.com/racket/racket/wiki/Meetups
-country Various
-originCommunity https://github.com/racket
+reference https://github.com/racket/racket/tree/master/racket/src/zuo
 
-githubRepo https://github.com/racket/racket/tree/master/racket/src/zuo
- stars 4741
- forks 651
- subscribers 147
- created 2010
- updated 2024
- description The Racket repository
- issues 530
-
-domainName racket-lang.org
+example
+ #lang zuo/datum
+ 
+ ;; The classic toy benchmark
+ (provide fib)
+ 
+ (define input
+   (let ([args (hash-ref (runtime-env) 'args)])
+     (if (null? args)
+         30
+         (string->integer (car args)))))
+ 
+ (define (fib n)
+   (cond
+     [(= n 0) 1]
+     [(= n 1) 1]
+     [else (+ (fib (- n 1)) (fib (- n 2)))]))
+ 
+ (fib input)
