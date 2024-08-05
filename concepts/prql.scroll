@@ -6,13 +6,18 @@ appeared 2022
 creators Maximilian Roos
 tags queryLanguage
 website https://prql-lang.org/
+blog https://prql-lang.org/posts/
 latestVersion 0.11.4
+webRepl https://prql-lang.org/playground/
+roadmap https://prql-lang.org/roadmap/
 standsFor Pipelined Relational Query Language
 description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
 writtenIn rust markdown yaml toml html javascript json css csv csharp php elixir typescript jsx bourne-shell python java zig make dockerfile xml sql nix c cpp handlebars svg
 compilesTo sql
 
 clocExtensions prql
+faq https://prql-lang.org/faq/
+docs https://prql-lang.org/book/
 repoStats
  firstCommit 2022
  commits 3263
@@ -24,6 +29,8 @@ originCommunity https://github.com/PRQL
 reference https://news.ycombinator.com/item?id=31897430
 reference https://news.ycombinator.com/item?id=30060784
 
+discord https://discord.com/invite/eQcfaCmsNc
+twitter https://twitter.com/prql_lang
 example
  from employees
  filter country == "USA"                       # Each line transforms the previous result.

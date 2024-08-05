@@ -55,6 +55,11 @@ class PLDBCli extends ScrollSetCLI {
     return rows
   }
 
+  async addWrittenInCommand() {
+    const { addWrittenIn } = require("./code/addWrittenIn.js")
+    addWrittenIn(this)
+  }
+
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
