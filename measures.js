@@ -116,7 +116,7 @@ const measures = [
   },
   {
     "Name": "blog",
-    "Values": 65,
+    "Values": 66,
     "Coverage": "1%",
     "Question": "What is the URL to the official blog for this language?",
     "Example": "https://www.11ty.dev/blog/",
@@ -413,10 +413,10 @@ const measures = [
   },
   {
     "Name": "roadmap",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "What is the URL to a public roadmap page for this language, if one exists?",
-    "Example": "https://dynamobim.org/roadmap/",
+    "Example": "https://github.com/oven-sh/bun/issues/159",
     "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -1268,10 +1268,10 @@ const measures = [
   },
   {
     "Name": "inputLanguages",
-    "Values": 10,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "Which language(s) does this take as input? For compilers, what languages does this compile compile?",
-    "Example": "c",
+    "Example": "javascript typescript jsx",
     "Type": "string",
     "SortIndex": 2.2,
     "IsComputed": false
@@ -1390,7 +1390,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 380,
+    "Values": 381,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
@@ -1604,7 +1604,7 @@ const measures = [
   },
   {
     "Name": "originCommunity",
-    "Values": 3972,
+    "Values": 3971,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
@@ -1614,7 +1614,7 @@ const measures = [
   },
   {
     "Name": "country",
-    "Values": 3745,
+    "Values": 3744,
     "Coverage": "75%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1687,7 +1687,7 @@ const measures = [
   },
   {
     "Name": "discord",
-    "Values": 16,
+    "Values": 17,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://www.11ty.dev/blog/discord/",
