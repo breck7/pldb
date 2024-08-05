@@ -55,11 +55,6 @@ class PLDBCli extends ScrollSetCLI {
     return rows
   }
 
-  async addWrittenInCommand() {
-    const { addWrittenIn } = require("./code/addWrittenIn.js")
-    addWrittenIn(this)
-  }
-
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
@@ -102,6 +97,14 @@ class PLDBCli extends ScrollSetCLI {
       } catch (err) {
         console.error(err, file.id)
       }
+    })
+  }
+
+  async addWrittenInCommand(lang) {
+    const files = lang ? this.concepts.filter(file => lang === file.id) : this.concepts
+    const { addWrittenIn } = require("./code/addWrittenIn.js")
+    files.forEach(file => {
+      if (file.mainRepo && !file.writtenIn) addWrittenIn(file.id, this)
     })
   }
 
