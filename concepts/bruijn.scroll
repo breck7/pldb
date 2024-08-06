@@ -1,0 +1,30 @@
+import ../code/conceptPage.scroll
+
+id bruijn
+name Bruijn
+appeared 2022
+creators Marvin Borner
+tags pl lisp
+website https://bruijn.marvinborner.de/
+paper https://text.marvinborner.de/2023-04-06-01.html
+description Functional programming language based on pure de Bruijn indexed lambda calculus. Lambdas all the way down. No primitive functions.
+fileExtensions bruijn
+writtenIn markdown haskell bourne-shell css yaml javascript vim-script python html xml
+compilesTo blc
+
+docs https://bruijn.marvinborner.de/wiki/
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 277
+ committers 2
+ files 228
+
+example
+ pow [index (iterate (mul 0) (+1))]
+ …**… pow
+ :test ((+2) ** (+3) =? (+8)) (true)
+
+gitRepo https://github.com/marvinborner/bruijn
+
+hasStandardLibrary true
