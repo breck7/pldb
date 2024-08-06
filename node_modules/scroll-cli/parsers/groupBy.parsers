@@ -1,0 +1,104 @@
+scrollGroupByParser
+ catchAllCellType columnNameCell
+ extends abstractTableTransformParser
+ description Combine rows with matching values into groups.
+ example
+  tables posts.csv
+   groupBy year
+    printTable
+ crux groupBy
+ javascript
+  get coreTable() {
+    if (this._coreTable) return this._coreTable
+   const groupByColNames = this.getWordsFrom(1)
+   const {coreTable} = this.parent
+   if (!groupByColNames.length) return coreTable
+   const newCols = [].map(reduceNode => {
+    return {
+     source: reduceNode.getWord(1),
+     reduction: reduceNode.getWord(2),
+     name: reduceNode.getWord(3) || reduceNode.getWordsFrom(1).join("_")
+    }
+   })
+   // Pivot is shorthand for group and reduce?
+   const makePivotTable = (rows, groupByColumnNames, inputColumnNames, newCols) => {
+     const colMap = {}
+     inputColumnNames.forEach((col) => (colMap[col] = true))
+     const groupByCols = groupByColumnNames.filter((col) => colMap[col])
+     return new PivotTable(rows, inputColumnNames.map(c => {return {name: c}}), newCols).getNewRows(groupByCols)
+   }
+   class PivotTable {
+     constructor(rows, inputColumns, outputColumns) {
+       this._columns = {}
+       this._rows = rows
+       inputColumns.forEach((col) => (this._columns[col.name] = col))
+       outputColumns.forEach((col) => (this._columns[col.name] = col))
+     }
+     _getGroups(allRows, groupByColNames) {
+       const rowsInGroups = new Map()
+       allRows.forEach((row) => {
+         const groupKey = groupByColNames.map((col) => row[col].toString().replace(/ /g, "")).join(" ")
+         if (!rowsInGroups.has(groupKey)) rowsInGroups.set(groupKey, [])
+         rowsInGroups.get(groupKey).push(row)
+       })
+       return rowsInGroups
+     }
+     getNewRows(groupByCols) {
+       // make new trees
+       const rowsInGroups = this._getGroups(this._rows, groupByCols)
+       // Any column in the group should be reused by the children
+       const columns = [
+         {
+           name: "count",
+           type: "number",
+           min: 0,
+         },
+       ]
+       groupByCols.forEach((colName) => columns.push(this._columns[colName]))
+       const colsToReduce = Object.values(this._columns).filter((col) => !!col.reduction)
+       colsToReduce.forEach((col) => columns.push(col))
+       // for each group
+       const rows = []
+       const totalGroups = rowsInGroups.size
+       for (let [groupId, group] of rowsInGroups) {
+         const firstRow = group[0]
+         const newRow = {}
+         groupByCols.forEach((col) =>
+           newRow[col] = firstRow ? firstRow[col] : 0
+         )
+         newRow.count = group.length
+         // todo: add more reductions? count, stddev, median, variance.
+         colsToReduce.forEach((col) => {
+           const sourceColName = col.source
+           const values = group.map((row) => row[sourceColName]).filter((val) => typeof val === "number" && !isNaN(val))
+           const reduction = col.reduction
+           let reducedValue = firstRow[sourceColName]
+           if (reduction === "sum") reducedValue = values.reduce((prev, current) => prev + current, 0)
+           if (reduction === "max") reducedValue = Math.max(...values)
+           if (reduction === "min") reducedValue = Math.min(...values)
+           if (reduction === "mean") reducedValue = values.reduce((prev, current) => prev + current, 0) / values.length
+           newRow[col.name] = reducedValue
+         })
+         rows.push(newRow)
+       }
+       // todo: add tests. figure out this api better.
+       Object.values(columns).forEach((col) => {
+         // For pivot columns, remove the source and reduction info for now. Treat things as immutable.
+         delete col.source
+         delete col.reduction
+       })
+       return {
+         rows,
+         columns,
+       }
+     }
+   }
+   const pivotTable = makePivotTable(coreTable, groupByColNames, this.parent.columnNames, newCols)
+   this._coreTable = pivotTable.rows
+   this._columnNames = pivotTable.columns.map(col => col.name)
+   return pivotTable.rows
+  }
+  get columnNames() {
+    const {coreTable} = this
+    return this._columnNames || this.parent.columnNames
+  }

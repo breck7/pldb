@@ -115,6 +115,16 @@ class TableSearchApp {
 
         this.setObjectOnHash(patch)
       },
+      layout: {
+        topStart: {
+          buttons: ["copy", "csv"]
+        },
+        topEnd: {
+          search: {
+            placeholder: "Search"
+          }
+        }
+      },
       // Set the search input to the initial value extracted from the URL
       search: { search: this.searchFromHash },
       order: this.orderFromHash,

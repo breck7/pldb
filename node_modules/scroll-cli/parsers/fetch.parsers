@@ -1,0 +1,28 @@
+fetchParser
+ description Download URL to disk.
+ extends abstractBuildCommandParser
+ cruxFromId
+ cells preBuildCommandWordCell urlCell
+ example
+  fetch https://breckyunits.com/posts.csv
+  fetch https://breckyunits.com/posts.csv renamed.csv
+ javascript
+  async build() {
+   const { Disk } = require("scrollsdk/products/Disk.node.js")
+   const path = require("path")
+   const url = this.getWord(1)
+   const {file} = this.parent
+   const filename = this.getWord(2) || new URL(url).pathname.split('/').pop()
+   const fullPath = path.join(file.folderPath, filename)
+   if (Disk.exists(fullPath)) return "" // do not fetch if already have a copy
+    const downloadFile = async (url, path) => {
+    const { writeFile } = require('fs').promises;
+    const response = await fetch(url);
+    const fileBuffer = await response.arrayBuffer();
+    await writeFile(path, Buffer.from(fileBuffer));
+    };
+    await downloadFile(url, fullPath)
+  }
+  compile() {
+    return ""
+  }

@@ -58,6 +58,12 @@ const SVGS = {
 const CSV_FIELDS = ["date", "year", "title", "permalink", "authors", "tags", "wordCount", "minutes"]
 const unCamelCase = str => str.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, match => match.toUpperCase())
 
+const makeLodashOrderByParams = str => {
+  const part1 = str.split(" ")
+  const part2 = part1.map(col => (col.startsWith("-") ? "desc" : "asc"))
+  return [part1.map(col => col.replace(/^\-/, "")), part2]
+}
+
 class ScrollFileSystem extends TreeFileSystem {
   getScrollFile(filePath) {
     return this._getParsedFile(filePath, ScrollFile)
@@ -406,15 +412,9 @@ class ScrollFile {
     return tree.toString()
   }
 
-  makeOrderByArr(str) {
-    const part1 = str.split(" ")
-    const part2 = part1.map(col => (col.startsWith("-") ? "desc" : "asc"))
-    return [part1.map(col => col.replace(/^\-/, "")), part2]
-  }
-
   compileConcepts(filename = "csv", sortBy = "") {
     if (!sortBy) return this._compileArray(filename, this.concepts)
-    const orderBy = this.makeOrderByArr(sortBy)
+    const orderBy = makeLodashOrderByParams(sortBy)
     return this._compileArray(filename, lodash.orderBy(this.concepts, orderBy[0], orderBy[1]))
   }
 
@@ -427,7 +427,7 @@ class ScrollFile {
   compileMeasures(filename = "csv", sortBy = "") {
     const withStats = this.measuresWithStats
     if (!sortBy) return this._compileArray(filename, withStats)
-    const orderBy = this.makeOrderByArr(sortBy)
+    const orderBy = makeLodashOrderByParams(sortBy)
     return this._compileArray(filename, lodash.orderBy(withStats, orderBy[0], orderBy[1]))
   }
 
@@ -727,8 +727,8 @@ class ScrollFile {
       .trim()
   }
 
-  build() {
-    this.scrollProgram.forEach(node => (node.build ? node.build() : undefined))
+  async build() {
+    await Promise.all(this.scrollProgram.filter(node => node.build).map(async node => node.build()))
   }
 
   // Without specifying the language hyphenation will not work.
