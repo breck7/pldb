@@ -1,0 +1,28 @@
+Effekt
+======
+
+Effekt is a programming language created in 2020 by Jonathan Immanuel Brachthäuser.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Jonathan%20Immanuel%20Brachth%C3%A4user Jonathan Immanuel Brachthäuser
+
+#1235 on PLDB
+4 Years Old
+
+git clone https://github.com/effekt-lang/effekt
+
+A research language with effect handlers and lightweight effect polymorphism.
+
+- Tags: programming language
+- Effekt is developed on GitHub and has 310 stars
+- Effekt is written in Scala, Markdown, Scheme, C, JavaScript, JSON, LLVM IR, YAML, XML, Standard ML, Bourne shell
+
+def eager[R] { p: R / { Flip, Fail, Error } } = try {
+  Success(p())
+} with Flip { () =&gt;
+  resume(true) match {
+    case Failure(msg) =&gt; resume(false)
+    case Success(res) =&gt; Success(res)
+    case ParseError(msg) =&gt; ParseError(msg)
+  }
+} with Fail { (msg) =&gt; Failure(msg)
+} with Error { (msg) =&gt; ParseError(msg) }

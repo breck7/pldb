@@ -1,0 +1,32 @@
+Bruijn
+======
+
+Bruijn is a programming language created in 2022 by Marvin Borner.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Marvin%20Borner Marvin Borner
+
+#1777 on PLDB
+2 Years Old
+
+git clone https://github.com/marvinborner/bruijn
+
+Functional programming language based on pure de Bruijn indexed lambda calculus. Lambdas all the way down. No primitive functions.
+
+- Tags: programming language, lisp
+- Bruijn compiles to Binary Lambda Calculus
+- Bruijn is written in Markdown, Haskell, Bourne shell, CSS, YAML, JavaScript, Vim script, Python, HTML, XML
+- First announcement of Bruijn
+
+pow [index (iterate (mul 0) (+1))]
+…**… pow
+:test ((+2) ** (+3) =? (+8)) (true)
+
+Language features
+======================================================
+
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+ Token

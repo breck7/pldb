@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id effekt
+name Effekt
+appeared 2020
+creators Jonathan Immanuel Brachthäuser
+tags pl
+website https://effekt-lang.org/
+webRepl https://effekt-lang.org/quickstart.html
+description A research language with effect handlers and lightweight effect polymorphism.
+writtenIn scala markdown scheme c javascript json llvmir yaml xml standard-ml bourne-shell
+
+repoStats
+ firstCommit 2020
+ newestCommit 2024
+ commits 3869
+ committers 27
+ files 974
+
+example
+ def eager[R] { p: R / { Flip, Fail, Error } } = try {
+   Success(p())
+ } with Flip { () =>
+   resume(true) match {
+     case Failure(msg) => resume(false)
+     case Success(res) => Success(res)
+     case ParseError(msg) => ParseError(msg)
+   }
+ } with Fail { (msg) => Failure(msg)
+ } with Error { (msg) => ParseError(msg) }
+ 
+
+githubRepo https://github.com/effekt-lang/effekt
+ stars 310
