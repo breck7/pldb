@@ -7,21 +7,32 @@ fetchParser
   fetch https://breckyunits.com/posts.csv
   fetch https://breckyunits.com/posts.csv renamed.csv
  javascript
+  get url() {
+    return this.getWord(1)
+  }
+  get filename() {
+    return this.getWord(2) || new URL(this.url).pathname.split('/').pop()
+  }
+  get fullDiskPath() {
+    return require("path").join(this.parent.file.folderPath, this.filename)
+  }
+  get exists() {
+    return this.isNodeJs() ? require("fs").existsSync(this.fullDiskPath) : localStorage.getItem(this.filename)
+  }
+  async downloadToDisk() {
+    const { writeFile } = require('fs').promises
+    const response = await fetch(this.url)
+    const fileBuffer = await response.arrayBuffer()
+    await writeFile(this.fullDiskPath, Buffer.from(fileBuffer))
+  }
+  async downloadToLocalStorage() {
+    const response = await fetch(this.url)
+    const blob = await response.blob()
+    localStorage.setItem(this.filename, await blob.text())
+  }
   async build() {
-   const { Disk } = require("scrollsdk/products/Disk.node.js")
-   const path = require("path")
-   const url = this.getWord(1)
-   const {file} = this.parent
-   const filename = this.getWord(2) || new URL(url).pathname.split('/').pop()
-   const fullPath = path.join(file.folderPath, filename)
-   if (Disk.exists(fullPath)) return "" // do not fetch if already have a copy
-    const downloadFile = async (url, path) => {
-    const { writeFile } = require('fs').promises;
-    const response = await fetch(url);
-    const fileBuffer = await response.arrayBuffer();
-    await writeFile(path, Buffer.from(fileBuffer));
-    };
-    await downloadFile(url, fullPath)
+   if (this.exists) return "" // do not fetch if already have a copy
+    await this.isNodeJs() ? this.downloadToDisk() : this.downloadToLocalStorage()
   }
   compile() {
     return ""

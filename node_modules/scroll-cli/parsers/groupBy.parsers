@@ -37,7 +37,7 @@ scrollGroupByParser
      _getGroups(allRows, groupByColNames) {
        const rowsInGroups = new Map()
        allRows.forEach((row) => {
-         const groupKey = groupByColNames.map((col) => row[col].toString().replace(/ /g, "")).join(" ")
+         const groupKey = groupByColNames.map((col) => row[col]?.toString().replace(/ /g, "") || "").join(" ")
          if (!rowsInGroups.has(groupKey)) rowsInGroups.set(groupKey, [])
          rowsInGroups.get(groupKey).push(row)
        })
