@@ -167,9 +167,9 @@ import std::io;
 (load-mod my-module)
 (load &quot;examples/test.slo&quot;)
 
-import settings.scroll
-
 #import: filename
+
+import settings.scroll
 
 import runtime;
 
@@ -207,7 +207,7 @@ import Proj
 
 ***
 
-Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Kotlin, Haskell, Clojure, Elixir, Erlang, Objective-C, Julia, Dart, Racket, Crystal, Pug, F#, Node.js, Gleam, Ballerina, C3, progsbase, Slope, Scroll, nomnoml, Flow9, ArkScript, Veryl, Cyber, Dale, Xtext, X10, bog, Jule, Cwerg, SAKO, Speedie, Aardvark
+Languages *with* File Imports include JavaScript, C, Python, Java, CSS, Perl, Ruby, PHP, Go, TypeScript, C#, R, Bash, Rust, Swift, MATLAB, Kotlin, Haskell, Clojure, Elixir, Erlang, Objective-C, Julia, Dart, Racket, Crystal, Pug, F#, Node.js, Gleam, Ballerina, C3, progsbase, Slope, nomnoml, Scroll, Flow9, ArkScript, Veryl, Cyber, Dale, Xtext, X10, bog, Jule, Cwerg, SAKO, Speedie, Aardvark
 
 ***
 
