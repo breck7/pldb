@@ -5,7 +5,7 @@ yoga is a programming language created in 2020 by Trevor Blackwell.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Trevor%20Blackwell Trevor Blackwell
 
-#4848 on PLDB
+#4849 on PLDB
 4 Years Old
 
 Yoga is purely functional, meaning that every function takes inputs and returns outputs, without any side effects. Yoga programs have an implicit main loop, which is run every time a hardware sensor reports new values. It then propagates updates through the program like a spreadsheet. Yoga’s lexical syntax is close enough to JavaScript that you can use JavaScript syntax highlighting in your editor.

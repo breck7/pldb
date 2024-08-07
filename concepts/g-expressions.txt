@@ -4,7 +4,7 @@ g-expressions
 g-expressions is a programming language created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#2825 on PLDB
+#2826 on PLDB
 12 Years Old
 
 The GNU Guix project invented G-Expressions to make it easier to "stage" data or code, in the form of S-Expressions, for later manipulation or evaluation. They are similar to S-Expressions, hence the name, but they provide useful code staging features beyond what can be easily accomplished with just "quasiquote" and "unquote". A high-level object (such as a Guix package) can be included in a G-Expression; the transitive dependencies of that high-level object will then be automatically carried along with the G-Expression. When the G-Expression is converted to an S-Expression and stored on disk for later manipulation or evaluation, the high-level object will be automatically "lowered" to an appropriate representation (such as the package's output path) via a "compiler". Compared to direct manipulation of S-Expressions, G-Expressions can provide a simpler and more intuitive way to stage data or code.
