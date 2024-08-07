@@ -17,7 +17,7 @@ count¶name¶languages
 17¶Xerox PARC¶Smalltalk - CLISP - KRL - Euclid - Interpress - Lisp Object-Oriented Programming System - Janus - ILU - Smalltalk/V - ByteLisp - Cedar - Juno - KRL-0 - Scrimshaw - Smalltalk-76 - Ethernet - 3-LISP
 16¶Bell Labs¶C - C++ - awk - Make - B - basic calculator - Rc - ALEF - Promela - Little Implementation Language - Newsqueak - New AWK - Bon - BEFLIX - Moby - R++
 15¶University of Edinburgh¶Haskell - Prolog - ML - PICT - POP-2 - COWSEL - Extended ML - NPL - Edinburgh IMP - PS-algol - CLEAR - CIRCAL - LCF - Pebble - AlphaPop
-15¶Microsoft Research¶Haskell - F# - Lean - F* - Koka - P4 - checked-c - bosque - SandDance - Low* - Sing Sharp - Marmot - Spec Sharp - domino - ILX
+15¶Microsoft Research¶Haskell - F# - Lean - F* - Koka - P4 - checked-c - SandDance - bosque - Low* - Sing Sharp - Marmot - Spec Sharp - domino - ILX
 15¶World Wide Web Consortium¶RDF - OWL - ActivityPub - RDFa - Notation3 - Microdata HTML - N-Triples - PhyloXML - SHACL - RDF Schema - MusicXML - MathML - Speech Synthesis Markup Language - ShEx - Service Modeling Language
 15¶Purdue University¶dlvm - Stalin - Descript - IT - PUFFT - BLAZE 2 - BLAZE - ELLPACK - GASP II - IVTRAN - MOUSE4 - Moxie - NAPSS - Parallel ELLPACK - PLANIT
 14¶AT&T Bell Laboratories¶M4 - Diff - grep - Dc - ROFF - cql - eqn - Amber - nroff - O++ - PAISley - CQL++ - DAG - Noodle
@@ -707,10 +707,10 @@ count¶name¶languages
 1¶https://github.com/kstenerud/concise-encoding¶Concise Encoding
 1¶https://www.marigold.dev/projects¶Ligo
 1¶https://github.com/liljencrantz/¶crush
+1¶https://github.com/handlebars-lang¶Handlebars
 1¶https://github.com/austral/¶Austral
 1¶Cycling '74¶Max
 1¶http://fusik.info/piotr/¶Ć
-1¶https://github.com/handlebars-lang¶Handlebars
 1¶Near East University¶ferret
 1¶The Railo Company¶CFML
 1¶openBD¶CFML
@@ -721,8 +721,8 @@ count¶name¶languages
 1¶https://github.com/quattor¶Pan
 1¶https://github.com/valderman/haste-compiler/issues¶haste
 1¶https://github.com/renpy¶Ren'Py
-1¶https://github.com/rui314¶chibicc
 1¶https://github.com/LuxLang¶Lux
+1¶https://github.com/rui314¶chibicc
 1¶Soviet space program¶DRAKON
 1¶https://github.com/vekatze/neut/issues¶neut
 1¶https://github.com/slash-lang/slash¶Slash
@@ -797,8 +797,8 @@ count¶name¶languages
 1¶BYOND Software¶DM
 1¶https://github.com/featurist¶PogoScript
 1¶https://github.com/TheBerkin/rant3/pulls¶rant
-1¶https://github.com/CraneStation/¶Cranelift
 1¶https://github.com/RockstarLang¶Rockstar
+1¶https://github.com/CraneStation/¶Cranelift
 1¶https://github.com/vyzo/gerbil/issues¶Gerbil Scheme
 1¶Research Software Ltd¶Miranda
 1¶https://github.com/Mathpix¶Mathpix Markdown
@@ -813,8 +813,8 @@ count¶name¶languages
 1¶https://github.com/thesephist/ink/issues¶ink-lang
 1¶La Trobe University¶Joy
 1¶https://github.com/the-little-typer¶pie-lang
-1¶https://github.com/flix¶Flix
 1¶ProSapien LLC¶FloScript
+1¶https://github.com/flix¶Flix
 1¶https://github.com/roc-lang¶Roc
 1¶https://github.com/Lartu/ldpl/issues¶ldpl
 1¶Lawrence Berkeley National Lab¶Bro
@@ -836,8 +836,8 @@ count¶name¶languages
 1¶WebAssembly¶binaryen
 1¶https://github.com/Cirru¶Cirru
 1¶https://github.com/lamdu¶Lamdu
-1¶https://github.com/mrkkrp/megaparsec/issues¶Megaparsec
 1¶https://github.com/satyr/¶Coco
+1¶https://github.com/mrkkrp/megaparsec/issues¶Megaparsec
 1¶https://github.com/dmbaturin/hope/issues¶HOPE
 1¶Kyushu University¶mimium
 1¶https://github.com/aeternity¶Sophia
@@ -893,8 +893,8 @@ count¶name¶languages
 1¶BBC Micro¶BBC BASIC
 1¶https://github.com/JasonSteving99¶Claro
 1¶Pepperdine University¶Pep8
-1¶https://github.com/vrtbl¶Passerine
 1¶https://kujirahand.com¶Nadesiko
+1¶https://github.com/vrtbl¶Passerine
 1¶https://github.com/ltcmelo/psychec/issues¶psyche-c
 1¶https://abstractmachines.dev¶Caramel
 1¶1C Company¶1C Enterprise Script
@@ -922,9 +922,9 @@ count¶name¶languages
 1¶https://github.com/candy-lang/¶Candy
 1¶https://github.com/JamesBoer/Jinx/issues¶jinx
 1¶https://lists.gambas-basic.org/listinfo¶Gambas
-1¶United States Environmental Protection Agency¶Smiles
 1¶Paiq BV¶BlackCoffee
 1¶https://www.disnetdev.com/¶contracts.coffee
+1¶United States Environmental Protection Agency¶Smiles
 1¶https://github.com/pksunkara/semicolon/pulls¶semicolon
 1¶https://github.com/refaktor/rye/¶Rye
 1¶Julia Computing Inc¶femtolisp
@@ -938,9 +938,9 @@ count¶name¶languages
 1¶Cadcorp¶GeoJSON
 1¶Hobu Inc¶GeoJSON
 1¶Planet Labs¶GeoJSON
-1¶https://github.com/pikelet-lang¶pikelet
 1¶Adventure Game Studio¶Adventure Game Studio Script
 1¶https://codekitapp.com/about/¶Kit
+1¶https://github.com/pikelet-lang¶pikelet
 1¶Advanced Micro Devices¶X86
 1¶https://sourceforge.net/p/bricxcc/_list/tickets¶Not eXactly C
 1¶UPC Consortium¶UPC
@@ -950,13 +950,13 @@ count¶name¶languages
 1¶Textuality Services, Inc.¶json->url
 1¶https://github.com/hundredrabbits/Orca-c/issues¶orca-pl
 1¶https://github.com/lemon-lang¶Lemon
-1¶https://github.com/gfngfn/SATySFi/issues¶SATySFi
 1¶Smyte¶SQRL
+1¶https://github.com/gfngfn/SATySFi/issues¶SATySFi
 1¶http://robatz.altervista.org¶Flowgorithm
 1¶https://github.com/racket¶scribble
 1¶https://github.com/freechipsproject¶firrtl
-1¶https://github.com/albrow/fo/issues¶fo
 1¶https://github.com/kai-language¶kai
+1¶https://github.com/albrow/fo/issues¶fo
 1¶https://mccormick.cx¶fleck
 1¶https://darksi.de/¶candor
 1¶https://github.com/dasm-assembler/¶Dasm
@@ -969,8 +969,8 @@ count¶name¶languages
 1¶https://github.com/slovnicki/pLam/issues¶plam
 1¶http://github.com/scriptor/pharen/issues¶Pharen
 1¶https://github.com/odb¶shml
-1¶https://jrsoftware.org/¶Inno Setup
 1¶https://github.com/cheery/lever/issues¶lever
+1¶https://jrsoftware.org/¶Inno Setup
 1¶https://japiirainen.com/¶fp
 1¶https://github.com/egel-lang¶egel
 1¶https://github.com/pyrustic¶Jesth
@@ -999,8 +999,8 @@ count¶name¶languages
 1¶https://github.com/unitpoint/objectscript/issues¶ObjectScript
 1¶https://github.com/sparist/Om/issues¶Om
 1¶University of Cambridge, Sidney Sussex College¶FRACTRAN
-1¶https://github.com/ollef/sixten/issues¶sixten
 1¶https://github.com/cdiggins/heron-language/issues¶Heron
+1¶https://github.com/ollef/sixten/issues¶sixten
 1¶https://github.com/kocircuit/kocircuit¶ko
 1¶https://github.com/orange-lang¶orange
 1¶Centre national de création musicale¶FAUST
@@ -1104,11 +1104,11 @@ count¶name¶languages
 1¶https://www.delorie.com/bin/cvsweb.cgi/djgpp/¶Free Pascal
 1¶https://github.com/kifuan/helang/issues¶HeLang
 1¶https://github.com/JSONScript¶JSONScript
-1¶Quebec Artificial Intelligence Institute¶myia
 1¶https://github.com/spydr06/¶CSpydr
+1¶Quebec Artificial Intelligence Institute¶myia
 1¶National Center for Biotechnology Information¶FASTA
-1¶https://github.com/codr7/g-fu/issues¶g-fu
 1¶https://github.com/pawwkm/owen/issues¶owen-lang
+1¶https://github.com/codr7/g-fu/issues¶g-fu
 1¶https://github.com/mythryl/mythryl/issues¶mythryl
 1¶https://keithp.com/pipermail/nickle/¶Nickle
 1¶Ecole des Mines de Paris¶Esterel
@@ -1127,8 +1127,8 @@ count¶name¶languages
 1¶Studio Amplify¶Kaffeine
 1¶https://web.archive.org/web/20090221030835/http://www.graysage.com/¶Draco
 1¶https://github.com/themanyone/¶Crap
-1¶Microsoft's Future Social Experiences Labs¶Kodu Game Lab
 1¶Coalson LLC¶BBCode
+1¶Microsoft's Future Social Experiences Labs¶Kodu Game Lab
 1¶https://github.com/disconcision/fructure/graphs/contributors¶fructure-editor
 1¶United States Air Force Academy¶A#
 1¶AdaCore¶A#
@@ -1143,8 +1143,8 @@ count¶name¶languages
 1¶Librascope company¶ACT-III
 1¶https://sourceforge.net/p/reduce-algebra/_members¶REDUCE
 1¶Fujitsu Labs of America¶Go!
-1¶https://github.com/fabiosvm/hook-lang/issues¶Hook
 1¶TrigenSoftware¶ColaScript
+1¶https://github.com/fabiosvm/hook-lang/issues¶Hook
 1¶https://handmade.network/p/114/jiyu/forums¶jiyu
 1¶Brilor Software¶FutureBASIC
 1¶Systems Management Associates¶PROMAL
@@ -1163,9 +1163,9 @@ count¶name¶languages
 1¶Shawnee State University¶Basic-256
 1¶Bouygues' e-Lab research laboratory¶CLAIRE
 1¶https://github.com/cammckinnon/Parenthetic/issues¶parenthetic
+1¶DENSO Corporation¶QR code
 1¶https://github.com/turbolent/ralph/issues¶ralph
 1¶https://github.com/herrmanntom/setlX/issues¶setlx
-1¶DENSO Corporation¶QR code
 1¶Aww Apps¶blockml
 1¶https://github.com/e-wrks¶Đ
 1¶California State University, Sacramento¶GOLD
@@ -1191,9 +1191,9 @@ count¶name¶languages
 1¶https://mindsdb.com/community¶AIML
 1¶Esterel Technologies¶Lustre
 1¶https://github.com/squiggle-lang¶squiggle
+1¶Wellcome Trust Sanger Institute and Broad Institute of MIT and Harvard and University of California Los Angeles and Boston College and University of Michigan and Chinese Academy of Science¶SAM file format
 1¶https://github.com/uli/¶DragonBASIC
 1¶https://github.com/mattbierner/khepri/issues¶Khepri
-1¶Wellcome Trust Sanger Institute and Broad Institute of MIT and Harvard and University of California Los Angeles and Boston College and University of Michigan and Chinese Academy of Science¶SAM file format
 1¶https://github.com/fable-compiler¶Fable
 1¶https://github.com/jameskeane/ham-script/issues¶Ham
 1¶https://github.com/elucent/scheme2d/issues¶Scheme 2-D
@@ -1213,15 +1213,15 @@ count¶name¶languages
 1¶https://github.com/hantuzun/hr-code/issues¶hr-code
 1¶https://github.com/RigCLang¶RigC
 1¶University of Delaware¶Network Time Protocol
-1¶Technical University Eindhoven¶De Bruijn index
 1¶RCA Corporation¶CHIP-8
+1¶Technical University Eindhoven¶De Bruijn index
 1¶Performance Systems International¶Lightweight Directory Access Protocol
 1¶Isode Limited¶Lightweight Directory Access Protocol
 1¶https://github.com/lepinekong/readablehumanformat/issues¶Readable
-1¶quuxLogic Solutions GmbH¶elymas
-1¶ITU Telecommunication Standardization Sector¶CHILL
 1¶https://github.com/sebbekarlsson/glms/issues¶GLMS
 1¶http://strlen.com¶False
+1¶quuxLogic Solutions GmbH¶elymas
+1¶ITU Telecommunication Standardization Sector¶CHILL
 1¶https://github.com/forest-lang¶forest-lang
 1¶https://github.com/jcouyang/ru/issues¶ru
 1¶https://github.com/nuua-io¶Nuua
@@ -1230,8 +1230,8 @@ count¶name¶languages
 1¶https://github.com/nianiolang¶nianiolang
 1¶Clarkson University¶ISETL
 1¶https://github.com/mlochbaum/ILanguage/issues¶I
-1¶Université Pierre-et-Marie-Curie¶GRAAL
 1¶https://github.com/P-star¶P*
+1¶Université Pierre-et-Marie-Curie¶GRAAL
 1¶https://batiste.github.io/¶CokeScript
 1¶https://github.com/phreda4/r3/issues¶r3
 1¶AnyNowhere¶Linoleum (L.in.oleum)
@@ -1252,8 +1252,8 @@ count¶name¶languages
 1¶http://www.tablespace.net¶ProbeVue
 1¶Dream Design Entertainment Software¶GLBasic
 1¶https://github.com/jazz-lang¶Jazz
-1¶https://github.com/phunanon/Insitux/issues¶Insitux
 1¶https://github.com/punkbrwstr/pinto/issues¶pinto
+1¶https://github.com/phunanon/Insitux/issues¶Insitux
 1¶https://github.com/mirth-lang¶mirth
 1¶https://github.com/zizisoft¶FutureScript
 1¶Microelectronics and Technology Corporation¶Ciao
@@ -1263,8 +1263,8 @@ count¶name¶languages
 1¶Hopson Community¶Cane
 1¶https://github.com/mcilloni¶fork-lang
 1¶http://www.lord-enki.net¶mycroft
-1¶Keysight Technologies¶Agilent VEE
 1¶https://github.com/hugoif¶HUGO
+1¶Keysight Technologies¶Agilent VEE
 1¶https://github.com/clark800/lambda-zero/issues¶lambda-zero
 1¶Open Software Foundation¶Motif
 1¶polymer-china¶BeBasic
@@ -1341,9 +1341,9 @@ count¶name¶languages
 1¶https://github.com/orionrobots¶Bounce
 1¶https://github.com/rixed/ramen/issues¶ramen
 1¶https://github.com/incrediblesound/JedLang/issues¶jedlang
-1¶https://github.com/colorforth¶ColorForth
 1¶https://github.com/ColonelJ/Starpial/issues¶starpial
 1¶https://github.com/violent-es/violent-es¶Violent ES
+1¶https://github.com/colorforth¶ColorForth
 1¶https://github.com/emeraldlang¶emerald-lang
 1¶https://github.com/matthewtoast/runiq/issues¶runiq
 1¶GAMS Development Corp¶GAMS
@@ -1359,15 +1359,15 @@ count¶name¶languages
 1¶https://github.com/cgyarvin/urbit/issues¶hoon
 1¶https://github.com/mybb¶MyBB
 1¶https://github.com/cia-foundation/TempleOS/issues¶holyc
-1¶Harvard Medical School¶Little b
 1¶https://tromp.github.io/¶Lazy K
 1¶https://github.com/mint-lang¶mint
 1¶logilab.fr¶RQL
 1¶https://github.com/sarl¶SARL
 1¶University of Southern California Information Sciences Institute¶stella
+1¶Harvard Medical School¶Little b
 1¶TexasInstruments¶TI MSP430
-1¶gaborsoftware.nl¶Citrine
 1¶Sausage Software¶Hotdog
+1¶gaborsoftware.nl¶Citrine
 1¶https://github.com/judofyr/glush/issues¶glush
 1¶Istanbul University¶Fuzuli
 1¶Phorward Software Technologies¶RapidBatch
@@ -1426,14 +1426,14 @@ count¶name¶languages
 1¶Centre de Mathmatiques Appliques¶Le-Lisp
 1¶Groupe Bull¶Langage Implementation Systeme
 1¶Ateji¶OptimJ
-1¶Zaven Muradyan¶awl
 1¶Technologie-Zentrum Informatik und Informationstechnik¶CBOR data definition language
 1¶Fraunhofer-Institut für Sichere Informationstechnologie SIT¶CBOR data definition language
 1¶https://github.com/StoneCypher/jssm/issues¶Finite State Language
 1¶https://github.com/endlesssoftware¶Module Management System
-1¶NumFOCUS Foundation¶MathJax
+1¶Zaven Muradyan¶awl
 1¶Information Sciences Institute¶Gist
 1¶Blizzard Entertainment, Inc¶Just Another Scripting Syntax
+1¶NumFOCUS Foundation¶MathJax
 1¶https://cerus.dev¶Edina
 1¶https://github.com/jwmza/polymath/issues¶polymath
 1¶Open Geospatial Consortium¶Geography Markup Language
@@ -1455,8 +1455,8 @@ count¶name¶languages
 1¶QinetiQ Ltd¶Document Structure Description
 1¶https://sourceforge.net/p/gauche/mailman/gauche-devel/¶Gauche Scheme implementation
 1¶https://github.com/valkarias/Pa/issues¶PCrap
-1¶https://github.com/phillbush/incipit/issues¶Incipit
 1¶EMCC UNIVAC¶MAPPER
+1¶https://github.com/phillbush/incipit/issues¶Incipit
 1¶Knowledge Network for Biocomplexity¶Ecological Metadata Language
 1¶Ecological Society of America¶Ecological Metadata Language
 1¶Istituto di Electtrotecnica ed Elettronica and University of North Carolina¶SIMPLE
@@ -1689,8 +1689,8 @@ count¶name¶languages
 1¶https://github.com/camullen/Rocket/issues¶rocket
 1¶https://github.com/PDLPorters¶Perl Data Language
 1¶The GNU Project¶Autoconf
-1¶https://github.com/markpwns1/hina/issues¶Hina
 1¶Ludwig-Maximilians-Universität¶R2ML
+1¶https://github.com/markpwns1/hina/issues¶Hina
 1¶Warner New Media¶IPTSCRAE
 1¶Software AG¶NATURAL
 1¶Norsk Data¶Nord Programming Language

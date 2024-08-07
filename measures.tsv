@@ -1,7 +1,7 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
 id	4995	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
 name	4995	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
-appeared	4993	99%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
+appeared	4994	99%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
 creators	1471	29%	What are the name(s) of the original creators of the language delimited by " and "?	Zach Leatherman	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
 measurements	4995	100%	How many measurements do we have about this thing?	11	number		1.11	true			
@@ -17,8 +17,8 @@ latestVersion	640	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1
 exampleCount	4995	100%	How many examples do we have written in this language?	2	number		1.5	true			
 rank	4995	100%	How does this concept rank amongst all other concepts?	1202	number		1.5	true			
 lastActivity	4995	100%	In our data on this entity, what year is the most recent activity?	2024	number		1.55	true			
-writtenInCount	1159	23%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	4995	100%	What is the combined score of this language across all the categories of rankings?	21625	number		1.6	true			
+writtenInCount	1160	23%	How many languages is this implementation written in?	3	number		1.6	true			
+pldbScore	4995	100%	What is the combined score of this language across all the categories of rankings?	21624	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
@@ -90,11 +90,11 @@ inboundLinksCount	4995	100%	How many other concepts link to this one?	0	number		
 inboundLinks	431	8%	Which other concepts link to this one?	explorer	string		1.9	true			
 isFinished	4995	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	17	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
-repoStats_firstCommit	1149	23%	What year the first commit made in this git repo?	2015	number		1.9	false			
-repoStats_newestCommit	1111	22%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
-repoStats_commits	1149	23%	How many commits to the repo?	871	number		1.9	false			
-repoStats_committers	1149	23%	How many committers to the repo?	28	number		1.9	false			
-repoStats_files	1146	22%	How many files in the repo?	49	number		1.9	false			
+repoStats_firstCommit	1150	23%	What year the first commit made in this git repo?	2015	number		1.9	false			
+repoStats_newestCommit	1112	22%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
+repoStats_commits	1150	23%	How many commits to the repo?	871	number		1.9	false			
+repoStats_committers	1150	23%	How many committers to the repo?	28	number		1.9	false			
+repoStats_files	1147	22%	How many files in the repo?	49	number		1.9	false			
 equation	15	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false			
 description	1063	21%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
 githubRepo_description	1063	21%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
@@ -108,7 +108,7 @@ pygmentsHighlighter_fileExtensions	326	6%	What are the file extensions for this 
 fileExtensions	234	4%	What are the file extensions for this language?	a51	string		1.991	false			
 interviews	11	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		1.999	false			
-writtenIn	1159	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
+writtenIn	1160	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
 compilesTo	83	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
 isPublicDomain	23	0%	Is this public domain?	true	boolean		2	false			
 isOpenSource	1529	30%	Is this an open source project?	true	boolean		2.01	true			
@@ -130,7 +130,7 @@ inputLanguages	11	0%	Which language(s) does this take as input? For compilers, w
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
 numberOfCreators	1471	29%	How many creators?	1	number		2.33	true			
-isSelfHosted	1159	23%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
+isSelfHosted	1160	23%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	640	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	640	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
 tryItOnline	134	2%	What is a link to try this language on https://tio.run?	https://tio.run/#abc	string	tio.run	2.4	false			

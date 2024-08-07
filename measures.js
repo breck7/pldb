@@ -24,7 +24,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 4993,
+    "Values": 4994,
     "Coverage": "99%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -186,7 +186,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1159,
+    "Values": 1160,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -199,7 +199,7 @@ const measures = [
     "Values": 4995,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21625",
+    "Example": "21624",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -905,7 +905,7 @@ const measures = [
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1149,
+    "Values": 1150,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -915,7 +915,7 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1111,
+    "Values": 1112,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -925,7 +925,7 @@ const measures = [
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1149,
+    "Values": 1150,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -935,7 +935,7 @@ const measures = [
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1149,
+    "Values": 1150,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -945,7 +945,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 1146,
+    "Values": 1147,
     "Coverage": "22%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1088,7 +1088,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1159,
+    "Values": 1160,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1308,7 +1308,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1159,
+    "Values": 1160,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
