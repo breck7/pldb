@@ -86,7 +86,7 @@
   },
   {
     "Name": "website",
-    "Values": 1751,
+    "Values": 1752,
     "Coverage": "35%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -169,7 +169,7 @@
     "Values": 4996,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1202",
+    "Example": "1203",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 4996,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21628",
+    "Example": "21627",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -423,7 +423,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 126,
+    "Values": 127,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -730,7 +730,7 @@
   },
   {
     "Name": "maintainerOrganization",
-    "Values": 10,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "What organization maintains this language?",
     "Example": "Software Freedom Conservancy",
@@ -965,7 +965,7 @@
   },
   {
     "Name": "description",
-    "Values": 1064,
+    "Values": 1065,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -976,7 +976,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1064,
+    "Values": 1065,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -997,7 +997,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1064,
+    "Values": 1065,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1390,7 +1390,7 @@
   },
   {
     "Name": "docs",
-    "Values": 387,
+    "Values": 388,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
