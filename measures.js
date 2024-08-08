@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1472,
+    "Values": 1473,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -169,7 +169,7 @@ const measures = [
     "Values": 4996,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1203",
+    "Example": "1202",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -1298,7 +1298,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1472,
+    "Values": 1473,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1390,7 +1390,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 386,
+    "Values": 387,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",

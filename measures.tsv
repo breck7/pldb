@@ -2,7 +2,7 @@ Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequire
 id	4996	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
 name	4996	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
 appeared	4995	99%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
-creators	1472	29%	What are the name(s) of the original creators of the language delimited by " and "?	Zach Leatherman	string		1.102	false			
+creators	1473	29%	What are the name(s) of the original creators of the language delimited by " and "?	Zach Leatherman	string		1.102	false			
 maintainers	2	0%	What are the name(s) of the maintainer(s) of the language delimited by " and "?	Junio Hamano	string		1.1021	false			
 measurements	4996	100%	How many measurements do we have about this thing?	11	number		1.11	true			
 tags	4996	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
@@ -15,7 +15,7 @@ releaseNotes	68	1%	What is the URL to the release notes or changelog for this la
 download	42	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	640	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
 exampleCount	4996	100%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	4996	100%	How does this concept rank amongst all other concepts?	1203	number		1.5	true			
+rank	4996	100%	How does this concept rank amongst all other concepts?	1202	number		1.5	true			
 lastActivity	4996	100%	In our data on this entity, what year is the most recent activity?	2024	number		1.55	true			
 writtenInCount	1161	23%	How many languages is this implementation written in?	3	number		1.6	true			
 pldbScore	4996	100%	What is the combined score of this language across all the categories of rankings?	21628	number		1.6	true			
@@ -129,7 +129,7 @@ forkOf	3	0%	What language is this language a fork of?	common-log-format	string		
 inputLanguages	11	0%	Which language(s) does this take as input? For compilers, what languages does this compile compile?	javascript typescript jsx	string		2.2	false			
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
-numberOfCreators	1472	29%	How many creators?	1	number		2.33	true			
+numberOfCreators	1473	29%	How many creators?	1	number		2.33	true			
 isSelfHosted	1161	23%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	640	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	640	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
@@ -138,7 +138,7 @@ demoVideo	16	0%	What is a URL of a demo video of this language?	https://www.yout
 clocExtensions	234	4%	What are the file extensions for this language recognized by Al Danial's cloc?	abap	string		2.4	false			
 gdbSupport	13	0%	Is the language supported by the GNU Debugger?	true	boolean	sourceware.org	2.4	false			
 visualParadigm	95	1%	Is this a visual programming thing? Sometimes called "no code" or "low code"?	true	boolean		2.4	false			
-docs	386	7%	What is a URL(s) to the official documentation for this language?	https://www.11ty.dev/docs/	string		2.5	false			
+docs	387	7%	What is a URL(s) to the official documentation for this language?	https://www.11ty.dev/docs/	string		2.5	false			
 devDocs	2	0%	What is a URL to the official documentation for developers who want to contribute to the language project?	https://github.com/coq/coq/blob/master/CONTRIBUTING.md	string		2.5	false			
 ebook	4	0%	What is a link to a free public domain high quality eBook about this language?	https://git-scm.com/book/en/v2	string		2.5	false			
 emailList	28	0%	What is a link to the mailing list for this language?	http://www.ada-auth.org/comment.html	string		2.5	false			
