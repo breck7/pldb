@@ -39,7 +39,7 @@ imageParser
       return {width, height}
     if (!this.isNodeJs())
       return {}
-    const src = this.getWord(1)
+    const src = this.filename
     // If its a local image, get the dimensions and put them in the HTML
     // to avoid flicker
    if (src.startsWith("http:") || src.startsWith("https:")) return {}
@@ -60,9 +60,12 @@ imageParser
   get figureWidth() {
     return this.dimensions.width
   }
+  get filename() {
+    return this.getWord(1)
+  }
   getFigureContent(compileSettings) {
    const file = this.root.file
-   const linkRelativeToCompileTarget = (compileSettings ? (compileSettings.relativePath ?? "") : "") + this.getWord(1)
+   const linkRelativeToCompileTarget = (compileSettings ? (compileSettings.relativePath ?? "") : "") + this.filename
    const {width, height} = this.dimensions
    let dimensionAttributes = width || height  ? `width="${width}" height="${height}" ` : ""
    // Todo: can we reuse more code from aftertext?
