@@ -11,7 +11,7 @@ Dr. John Ousterhout is a computer science luminary who has made significant cont
  https://pldb.io/blog/../concepts/sprite-os.html Sprite operating system
  https://en.wikipedia.org/wiki/Log-structured_file_system Log-Structured file system
 
-***
+*
 
 What is unique about Tcl?
 =========================
@@ -22,7 +22,7 @@ The first thing is its embeddable nature: I designed Tcl so that the library cou
 The second thing is Tcl's "everything is a string" philosophy. This played a big role in Tcl's embeddability and made it easy to extend Tcl in a variety of ways. But, it also carried a performance penalty; even with a lot of work, Tcl has never become as efficient as other languages with more traditional types, such as Python. The string focus is also responsible for Tcl's unusual command syntax, which some people love and some people hate.
  https://pldb.io/blog/../concepts/python.html Python
 
-***
+*
 
 How different would Tcl be had you stayed on with the development team? :)
 ==========================================================================
@@ -33,7 +33,7 @@ How different would Tcl be had you stayed on with the development team? :)
 Interesting footnote: the founding of Netscape occurred at the same time I was deciding where to go in industry when I left Berkeley in 1994. Jim Clarke and Marc Andreessen approached me about the possibility of my joining Netscape as a founder, but I eventually decided against it (they hadn't yet decided to do Web stuff when I talked with them). This is one of the biggest "what if" moments of my career. If I had gone to Netscape, I think there's a good chance that Tcl would have become the browser language instead of JavaScript and the world would be a different place! However, in retrospect I'm not sure that Tcl would actually be a better language for the Web than JavaScript, so maybe the right thing happened.
  https://pldb.io/blog/../concepts/javascript.html JavaScript
 
-***
+*
 
 As a long time educator, what do you predict the next paradigm shift in programming languages will be?
 ======================================================================================================
@@ -52,7 +52,7 @@ One interesting note on this. Historically, I think the most widely used program
  https://pldb.io/blog/../concepts/go.html Go
  https://pldb.io/blog/../concepts/python.html Python
 
-****
+⁂
 
 [Image Omitted]
  Image source. Thank you for your time Dr. Ousterhout!

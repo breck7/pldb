@@ -13,11 +13,11 @@ bool :: null.int                         // A very misleading annotation on the 
 &#39;&#39; :: 1                                  // An empty annotation
 null.symbol :: 1                         // ERROR: type annotation cannot be null
 
-***
+*
 
 Languages *with* Type Annotations include Jule, Ion
 
-***
+*
 
 View all concepts with or missing a *hasTypeAnnotations* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeAnnotations&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeAnnotations%22%2C%22origData%22%3A%22hasTypeAnnotations%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing

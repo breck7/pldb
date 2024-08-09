@@ -9,7 +9,7 @@ Dr. Scott Fahlman is a Professor Emeritus in the Carnegie Mellon’s School of C
  https://www.cs.cmu.edu/~sef/ Dr. Scott Fahlman
  https://pldb.io/blog/../concepts/common-lisp.html Common Lisp Language
 
-***
+*
 
 Are there any neat ideas from Lisp that have yet to go mainstream?
 ==================================================================
@@ -25,7 +25,7 @@ This makes it possible for Lisp to have a very powerful and flexible macro syste
  https://pldb.io/blog/../features/hasMacros.html macro
  https://pldb.io/blog/../concepts/clos.html Common Lisp Object System
 
-***
+*
 
 When you were making programming languages what references did you use?
 =======================================================================
@@ -47,7 +47,7 @@ But neither of those documents were meant to be a tutorial or to be very user-fr
 In designing Common Lisp, it was all politics.  A lot of fairly ugly compromises were required to keep one group or another from walking away.  So, while I am overall proud of the result, and it is still the language I use when I have a choice, it lacks the elegance of a language designed by a single person with a single vision.  We teamed with a group from Apple to design Dylan as a worthy Common Lisp successor, but that was during the time in the 1990's when Jobs was gone and Apple was struggling to survive.  So first they ruined the initially-beautiful design, and then they shut down the project and the Apple lab in Cambridge MA that was working on this.
  https://pldb.io/blog/../concepts/dylan.html Dylan
 
-***
+*
 
 What would be your advice to young people today who want to get into the field of designing programming languages?
 ==================================================================================================================
@@ -61,7 +61,7 @@ So the best languages very rarely take over, if ever.  Some language starts bein
 So, in the mid-1990s, I decided that I was not longer going to put effort into building programming languages and tools, when the choice of which languages became popular was essentially a lottery.  Since then, my focus has been on AI research, and part of that involves the design of planning systems that (maybe) can eliminate the need for most programming.  You tell them what you want, as you might describe it to a smart grad student, they maybe ask some clarification questions, and then they go do it.  That only works if they know enough about the world and have enough "common sense" to avoid blunders.  I still use Common Lisp for developing my AI implementations, but if there is commercial interest I can translate the code into Python or whatever, or hire someone to do this.
  https://pldb.io/blog/../concepts/python.html Python
 
-****
+⁂
 
 [Image Omitted]
  Image source. Thank you for your time Dr. Fahlman! :-)

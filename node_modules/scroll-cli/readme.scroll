@@ -8,88 +8,32 @@ printTitle
 # Evolve and publish your most intelligent ideas
 
 <br>
-thinColumns 2
+mediumColumns 1
 
-? Where can I try without installing?
-ScrollHub or try.scroll.pub.
+try.scroll.pub &nbsp;&nbsp; ScrollHub
+ center
  http://hub.scroll.pub/ ScrollHub
+ class scrollButton ScrollHub
  https://try.scroll.pub/ try.scroll.pub
+ class scrollButton try.scroll.pub
 
-? Where are the docs?
-- Leet sheet
- link leetsheet.html
-- Official Blog
- link blog/index.html
-- Release Notes
- link releaseNotes.html
-
-? What can I build with Scroll?
-
-### Blogs
-image blog/screenshot.png
- link https://breckyunits.com/
- caption This screenshot is from a blog powered by Scroll.
-  https://breckyunits.com/ a blog powered by Scroll
-
-### Knowledge Bases
-Scroll powers PLDB, a knowledge base with over 100 contributors who have added over 100,000 cells of structured data and thousands of pages.
- https://pldb.io PLDB
-
-### Static Sites
-This site you are reading is powered by Scroll.
- link index.html This site
-
-? What makes Scroll different?
-Scroll has an unusually simple syntax called Scroll Notation, an extensive set of parsers and commands needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
-
-? What is the Scroll command line app?
-The command line app builds static blogs, websites, CSVs, text files, and more.
- link blog/textFiles.html text files
- link blog/scrollsets.html CSVs
- link blog/index.html static blogs
- link index.html websites
-
-? How do I install the command line app?
-Scroll currently requires Node.js.
- https://nodejs.org/ Node.js
-After Node.js is installed, install the npm package with:
- https://www.npmjs.com/package/scroll-cli npm package
-code
- npm install -g scroll-cli
-
-? How do I install the developer version?
-code
- git clone https://github.com/breck7/scroll.git
- cd scroll
- npm install -g .
- npm test
-
-? How do I run the CLI?
-code
- scroll help
-
-? Is Scroll open source?
-Yes. Breck's Lab publishes Scroll to the public domain.
- https://breckyunits.com/lab.html Breck's Lab
-
-The source code is hosted on GitHub.
- https://github.com/breck7/scroll source code
-
-? Can I write Parsers in my browser?
-Yes. You can use Scroll Designer to write Parsers in your browser.
- https://sdk.scroll.pub/designer#url%20https%3A%2F%2Ftry.scroll.pub%2Fscroll.parsers Scroll Designer
-
-? Any more docs?
-- FAQ
- link faq.html
-- Tutorial
- link tutorial.html
-- Roadmap
- link roadmap.html
-
-? Did the latest version of Scroll pass the automated tests?
 <br>
-import ciBadges.scroll
+Leet sheet · Blog · FAQ
+ center
+ link leetsheet.html Leet sheet
+ link blog/index.html Blog
+ link faq.html FAQ
+
+Videos · Subreddit
+ center
+ https://www.youtube.com/@breckyunits Videos
+ https://www.reddit.com/r/WorldWideScroll/ Subreddit
+
+NPM Package · Release Notes · Parser Designer
+ center
+ https://www.npmjs.com/package/scroll-cli NPM Package
+ link releaseNotes.html Release Notes
+ https://sdk.scroll.pub/designer#url%20https%3A%2F%2Ftry.scroll.pub%2Fscroll.parsers Parser Designer
 
 endColumns
 

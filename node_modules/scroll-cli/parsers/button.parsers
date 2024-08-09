@@ -1,0 +1,7 @@
+scrollButtonParser
+ extends paragraphParser
+ crux button
+ description A button.
+ javascript
+  defaultClassName = "scrollButton"
+  tag = "button"

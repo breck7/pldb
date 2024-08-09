@@ -43,21 +43,21 @@ console.log(`proxy.foo = ${proxy.foo}`);       // &quot;proxy.foo = BAR&quot;
        return null;
    }
 
-***
+*
 
 Languages *with* Magic Getters and Setters include JavaScript, PHP, Speedie
 
-***
+*
 
 Languages *without* Magic Getters and Setters include C++, C3
 
-***
+*
 
 View all concepts with or missing a *hasMagicGettersAndSetters* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMagicGettersAndSetters&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMagicGettersAndSetters%22%2C%22origData%22%3A%22hasMagicGettersAndSetters%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMagicGettersAndSetters&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMagicGettersAndSetters%22%2C%22origData%22%3A%22hasMagicGettersAndSetters%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-***
+*
 
 Read more about Magic Getters and Setters on the web: 1.
  https://www.php.net/manual/en/language.oop5.overloading.php#object.get 1.

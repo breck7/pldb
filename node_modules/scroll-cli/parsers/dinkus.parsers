@@ -1,13 +1,15 @@
 abstractDinkusParser
  extends abstractAftertextParser
- string dinkus *
  boolean isDinkus true
  javascript
   compile() {
    return `<div class="dinkus"><span>${this.dinkus}</span></div>`
   }
   compileTxt() {
-    return this.getLine()
+    return this.dinkus
+  }
+  get dinkus() {
+    return this.content || this.getLine()
   }
 
 horizontalRuleParser
@@ -19,10 +21,17 @@ horizontalRuleParser
    return `<hr>`
   }
 
-dinkusParser
+scrollDinkusParser
  crux ***
  description A dinkus. Breaks section.
  boolean isPopular true
+ extends abstractDinkusParser
+ javascript
+  dinkus = "*"
+
+customDinkusParser
+ crux dinkus
+ description A custom dinkus.
  extends abstractDinkusParser
 
 endOfPostDinkusParser
@@ -30,4 +39,5 @@ endOfPostDinkusParser
  description End of post dinkus.
  boolean isPopular true
  crux ****
- string dinkus ⁂
+ javascript
+  dinkus = "⁂"

@@ -51,21 +51,21 @@ do
   real_list_temp =&gt; real_list_temp%next
 end do
 
-***
+*
 
 Languages *with* Pointers include C, Go, C#, Objective-C, COBOL, Ada, D, C3, Eiffel, PL/I, Modula-2, Oberon, Felix, Dale, BlitzMax, Jule, FreeBASIC, Speedie, Aardvark, Fortran 90
 
-***
+*
 
 Languages *without* Pointers include JavaScript, Python, Java, Elixir, progsbase
 
-***
+*
 
 View all concepts with or missing a *hasPointers* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-***
+*
 
 Read more about Pointers on the web: 1.
  https://en.wikipedia.org/wiki/Pointer_(computer_programming) 1.

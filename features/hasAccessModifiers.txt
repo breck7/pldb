@@ -21,21 +21,21 @@ main
  p.age = -1     // calls a function rather than the property
  || n = p.age   // reads the property directly!
 
-***
+*
 
 Languages *with* Access Modifiers include Java, C++, PHP, TypeScript, C#, Swift, Kotlin, Solidity, F#, Protocol Buffers, ABAP, C3, Koka, C2, Apex, Jule, Sophia, Speedie
 
-***
+*
 
 Languages *without* Access Modifiers include JavaScript, C, progsbase
 
-***
+*
 
 View all concepts with or missing a *hasAccessModifiers* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAccessModifiers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasAccessModifiers%22%2C%22origData%22%3A%22hasAccessModifiers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAccessModifiers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasAccessModifiers%22%2C%22origData%22%3A%22hasAccessModifiers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-***
+*
 
 Read more about Access Modifiers on the web: 1.
  https://en.wikipedia.org/wiki/Access_modifiers 1.

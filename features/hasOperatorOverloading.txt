@@ -34,21 +34,21 @@ f[x_Symbol] := x^2;
 str = &quot;a&quot; + &quot;b&quot;
 array &lt;~ str
 
-***
+*
 
 Languages *with* Operator Overloading include Python, C++, Perl, Ruby, PHP, C#, R, Rust, Swift, Scala, MATLAB, Lua, Kotlin, Haskell, Clojure, Dart, Ada, D, Groovy, F#, Smalltalk, Visual Basic .NET, C3, Eiffel, Wolfram Language, Ceylon, Raku, Io, Object Pascal, Seed7, FreeBASIC, Speedie, Free Pascal
 
-***
+*
 
 Languages *without* Operator Overloading include JavaScript, C, Java, Go, TypeScript, Objective-C, Visual Basic, Pascal, BASIC, Modula-2, progsbase, Veryl, Jule
 
-***
+*
 
 View all concepts with or missing a *hasOperatorOverloading* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOperatorOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasOperatorOverloading%22%2C%22origData%22%3A%22hasOperatorOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasOperatorOverloading&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasOperatorOverloading%22%2C%22origData%22%3A%22hasOperatorOverloading%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-***
+*
 
 Read more about Operator Overloading on the web: 1. 2.
  https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading 1.

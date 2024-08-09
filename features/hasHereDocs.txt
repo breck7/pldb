@@ -5,21 +5,21 @@ cat &lt;&lt;Message
  Hello world
 Message
 
-***
+*
 
 Languages *with* Here Document include Perl, Ruby, PHP, Bash, Z shell, Korn shell, Bourne shell, C shell, Aardvark
 
-***
+*
 
 Languages *without* Here Document include C3
 
-***
+*
 
 View all concepts with or missing a *hasHereDocs* measurement
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasHereDocs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasHereDocs%22%2C%22origData%22%3A%22hasHereDocs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  https://pldb.io/../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasHereDocs&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasHereDocs%22%2C%22origData%22%3A%22hasHereDocs%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-***
+*
 
 Read more about Here Document on the web: 1.
  https://en.wikipedia.org/wiki/Here_document 1.
