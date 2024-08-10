@@ -10,6 +10,10 @@ scrollFillParser
  crux fill
  extends abstractColumnNameParser
 
+scrollLabelParser
+ crux label
+ extends abstractColumnNameParser
+
 abstractPlotParser
  // Observablehq
  extends abstractTableVisualizationParser
@@ -19,7 +23,7 @@ abstractPlotParser
   <script src="plot.js"></script>
  example
   plot
- inScope scrollXParser scrollYParser scrollFillParser scrollRadiusParser scrollSymbolParser
+ inScope abstractColumnNameParser
  javascript
   compileInstance() {
    const id = "plot" + this._getUid()
