@@ -1655,7 +1655,7 @@ const measures = [
   },
   {
     "Name": "subreddit",
-    "Values": 103,
+    "Values": 105,
     "Coverage": "2%",
     "Question": "What is a URL of a subreddit(s) for this language?",
     "Example": "https://reddit.com/r/ada",
