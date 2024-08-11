@@ -4,7 +4,15 @@ loremIpsumParser
  description Generate dummy text.
  catchAllCellType integerCell
  javascript
+  text = `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
   compile() {
-   const text = `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
-   return text.repeat(this.getWord(1) ? parseInt(this.getWord(1)) : 1)
+   return this.text.repeat(this.howMany)
   }
+  get howMany() {
+    return this.getWord(1) ? parseInt(this.getWord(1)) : 1
+  }
+
+nickelbackIpsumParser
+ extends loremIpsumParser
+ javascript
+  text = `And one day, I’ll be at the door. And lose your wings to fall in love? To the bottom of every bottle. I’m on the ledge of the eighteenth story. Why must the blind always lead the blind?`

@@ -301,6 +301,10 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.get("creators")?.split(" and ") ?? []
   }
 
+  get maintainers() {
+    return this.get("maintainers")?.split(" and ") ?? []
+  }
+
   get hasBooleansPrediction() {
     const { keywords } = this
 
@@ -915,7 +919,7 @@ image ${image}
   }
 
   get oneLiner() {
-    const { primaryTagName, title, creators, appeared, sourceStatus } = this
+    const { primaryTagName, title, creators, appeared, sourceStatus, maintainers } = this
     const standsFor = this.get("standsFor")
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
@@ -928,11 +932,21 @@ image ${image}
         .join("\n")
     }
 
+    let maintainersStr = ""
+    let maintainersLinks = ""
+    if (maintainers.length) {
+      maintainersStr = ` and led by ` + maintainers.join(" and ")
+      maintainersLinks = maintainers
+        .map(name => ` link ../lists/creators.html#q=${encodeURIComponent(name)} ${name}`)
+        .join("\n")
+    }
+
     return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || primaryTagName)}${sourceStatus} ${
       this.primaryTagLink
-    }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
+    }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}${maintainersStr}.
  link ../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%22${appeared}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D ${appeared}
 ${creatorsLinks}
+${maintainersLinks}
 `
   }
 
