@@ -1,0 +1,12 @@
+scrollVideoParser
+ extends abstractMediaParser
+ crux video
+ description Play video files.
+ widthParser
+  cruxFromId
+  cells commandWordCell
+ heightParser
+  cruxFromId
+  cells commandWordCell
+ javascript
+  tag = "video"

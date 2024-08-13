@@ -1,0 +1,27 @@
+scrollMediaLoopParser
+ crux loop
+ cells commandWordCell
+scrollAutoplayParser
+ crux autoplay
+ cells commandWordCell
+abstractMediaParser
+ extends paragraphParser
+ inScope scrollMediaLoopParser scrollAutoplayParser
+ javascript
+  compileTxt() {
+    return ""
+  }
+  get filename() {
+    return this.getWord(1)
+  }
+  getAsHtmlAttribute(attr) {
+    if (!this.has(attr)) return ""
+    const value = this.get(attr)
+    return value ? `${attr}="${value}"` : attr
+  }
+  getAsHtmlAttributes(list) {
+    return list.map(word => this.getAsHtmlAttribute(word)).filter(i => i).join(" ")
+  }
+  compile() {
+    return `<${this.tag} src="${this.filename}" controls ${this.getAsHtmlAttributes("width height loop autoplay".split(" "))}></${this.tag}>`
+  }
