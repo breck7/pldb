@@ -1,39 +1,26 @@
 import ../code/conceptPage.scroll
 
 id obsidian
-name obsidian
-appeared 2018
-creators Michael Coblenz
-tags pl
-website http://obsidian-lang.com
-writtenIn solidity java scala bourne-shell html restructuredtext tex json yaml xml agda markdown bash python gradle csv typescript css mustache make javascript svg perl protobuf
+name Obsidian
+appeared 2020
+creators Shida Li and Erica Xu
+tags editor
+website https://obsidian.md/
+roadmap https://obsidian.md/roadmap
 
+forums https://forum.obsidian.md/
 repoStats
- firstCommit 2017
- commits 2056
- committers 29
- files 906
- newestCommit 2023
-country United States
-originCommunity University of California San Diego
+ firstCommit 2020
+ newestCommit 2024
+ commits 4486
+ committers 1734
+ files 23
 
-leetSheets https://cheatsheets.zip/obsidian
+youtubes https://www.youtube.com/@obsdmd
+twitter https://twitter.com/obsdmd
+mastodon https://mas.to/@obsidian
+discord https://discord.gg/obsidianmd
 
-githubRepo https://github.com/mcoblenz/Obsidian
- firstCommit 2017
- stars 76
- forks 10
- subscribers 16
- created 2017
- updated 2024
- description Obsidian language development
- issues 79
+githubRepo https://github.com/obsidianmd/obsidian-releases
 
-domainName obsidian-lang.com
- registered 2018
- awisRank
-  2022 10603534
-
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 20061546|Obsidian: A safer blockchain programming language|http://obsidian-lang.com/|2019-05-31 15:05:29 UTC|1559315129|azhenley|31|67
+wikipedia https://en.wikipedia.org/wiki/Obsidian_(software)

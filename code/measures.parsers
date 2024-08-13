@@ -382,6 +382,13 @@ emailListParser
  single false
  float sortIndex 2.5
 
+// emailList
+forumsParser
+ extends abstractUrlsMeasureParser
+ description What is a link to a web forum(s) for this language?
+ single false
+ float sortIndex 2.5
+
 // equation
 equationParser
  description What is a LaTeX encoding of this equation?
