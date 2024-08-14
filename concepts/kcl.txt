@@ -1,0 +1,38 @@
+KCL
+===
+
+KCL, aka KittyCAD Language, is a cad created in 2021.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
+
+#3102 on PLDB
+3 Years Old
+
+- Tags: cad, programming language
+- First announcement of KCL
+- Read more about KCL on the web: 1.
+ https://github.com/KittyCAD/kcl-samples 1.
+
+const block = startSketchOn(&#39;XY&#39;)
+  |&gt; startProfileAt([-width / 2, -length / 2], %)
+  |&gt; lineTo([width / 2, -length / 2], %)
+  |&gt; lineTo([width / 2, length / 2], %)
+  |&gt; lineTo([-width / 2, length / 2], %)
+  |&gt; close(%)
+  |&gt; hole(circle([
+       -(width / 2 - (padding / 2)),
+       -(length / 2 - (padding / 2))
+     ], holeDia / 2, %), %)
+  |&gt; hole(circle([
+       -(width / 2 - (padding / 2)),
+       length / 2 - (padding / 2)
+     ], holeDia / 2, %), %)
+  |&gt; hole(circle([
+       width / 2 - (padding / 2),
+       length / 2 - (padding / 2)
+     ], holeDia / 2, %), %)
+  |&gt; hole(circle([
+       width / 2 - (padding / 2),
+       -(length / 2 - (padding / 2))
+     ], holeDia / 2, %), %)
+  |&gt; hole(circle([0, 0], bearingDia / 2, %), %)
+  |&gt; extrude(height - cbDepth, %)

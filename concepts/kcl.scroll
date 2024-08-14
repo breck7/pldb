@@ -1,0 +1,38 @@
+import ../code/conceptPage.scroll
+
+id kcl
+name KCL
+appeared 2021
+tags cad pl
+standsFor KittyCAD Language
+paper https://zoo.dev/blog/introducing-kittycad
+fileExtensions kcl
+
+docs https://zoo.dev/docs/kcl
+reference https://github.com/KittyCAD/kcl-samples
+
+example
+ const block = startSketchOn('XY')
+   |> startProfileAt([-width / 2, -length / 2], %)
+   |> lineTo([width / 2, -length / 2], %)
+   |> lineTo([width / 2, length / 2], %)
+   |> lineTo([-width / 2, length / 2], %)
+   |> close(%)
+   |> hole(circle([
+        -(width / 2 - (padding / 2)),
+        -(length / 2 - (padding / 2))
+      ], holeDia / 2, %), %)
+   |> hole(circle([
+        -(width / 2 - (padding / 2)),
+        length / 2 - (padding / 2)
+      ], holeDia / 2, %), %)
+   |> hole(circle([
+        width / 2 - (padding / 2),
+        length / 2 - (padding / 2)
+      ], holeDia / 2, %), %)
+   |> hole(circle([
+        width / 2 - (padding / 2),
+        -(length / 2 - (padding / 2))
+      ], holeDia / 2, %), %)
+   |> hole(circle([0, 0], bearingDia / 2, %), %)
+   |> extrude(height - cbDepth, %)
