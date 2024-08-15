@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Query by Example
 ================
 
@@ -20,3 +22,5 @@ Query by Example (QBE) is a database query language for relational databases. It
 - 1 PLDB concepts link to Query by Example: SBA
 
 SELECT * FROM Contacts WHERE City=&#39;Sampleton&#39; AND Zipcode=&#39;12345&#39;;
+
+printViewSource

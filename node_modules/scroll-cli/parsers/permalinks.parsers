@@ -6,11 +6,6 @@ downloadUrlParser
  description Set link to Download Page.
  extends abstractUrlSettingParser
 
-homeUrlParser
- // default homelink is "index.html"
- description Override home link.
- extends abstractUrlSettingParser
-
 permalinkParser
  description Override output filename.
  extends abstractTopLevelSingleMetaParser

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 qed-lang
 ========
 
@@ -19,3 +21,5 @@ Button(&quot;Form 2&quot;);
 println(&quot;Form 2 clicked&quot;);
 Button(&quot;Quit&quot;);
 return(0);
+
+printViewSource

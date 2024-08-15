@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Features
 ========
 
@@ -61,3 +63,5 @@ Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶8¶5¶-
 Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶8¶4¶-
 Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶4¶-
 Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶name = "PLDB"; print $name¶2¶10¶-
+
+printViewSource

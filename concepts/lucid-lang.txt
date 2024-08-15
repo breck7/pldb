@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Lucid
 =====
 
@@ -21,3 +23,5 @@ table_ [rows_ &quot;2&quot;]
        (tr_ (do td_ [class_ &quot;top&quot;,colspan_ &quot;2&quot;,style_ &quot;color:red&quot;]
                     (p_ &quot;Hello, attributes!&quot;)
                 td_ &quot;yay!&quot;))
+
+printViewSource

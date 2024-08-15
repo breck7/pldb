@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CGOL
 ====
 
@@ -24,3 +26,5 @@ for i in 1 to n do
      for j in 1 to n do
         ac := ac + a(i,j)*b(j,k);
      c(i,k) := ac)
+
+printViewSource

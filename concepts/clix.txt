@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CLiX markup
 ===========
 
@@ -19,3 +21,5 @@ Constraint Language in XML (CLiX) used to constrain the content of XML documents
   &lt;less op1=&quot;$dates/fpml:effectiveDate/fpml:unadjustedDate&quot;
         op2=&quot;$dates/fpml:terminationDate/fpml:unadjustedDate&quot;/&gt;
 &lt;/forall&gt;
+
+printViewSource

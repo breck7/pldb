@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Rholang
 =======
 
@@ -31,3 +33,5 @@ new helloworld, stdout(`rho:io:stdout`) in {
          world2!(&quot;Hello World again&quot;)
    }
 }
+
+printViewSource

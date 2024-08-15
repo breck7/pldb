@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Macchiato
 =========
 
@@ -27,3 +29,5 @@ An AltJS of a dialect of Lisp
                 (_ 0) (console:log &quot;Buzz&quot;)
                 _     (console:log i))))
 (fizzbuzz 20)
+
+printViewSource

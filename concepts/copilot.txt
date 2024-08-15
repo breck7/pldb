@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Copilot
 =======
 
@@ -24,3 +26,5 @@ ctemp = (unsafeCast temp) * (150.0 / 255.0) - 50.0
 spec = do
   trigger &quot;heaton&quot;  (ctemp &lt; 18.0) [arg ctemp]
   trigger &quot;heatoff&quot; (ctemp &gt; 21.0) [arg ctemp]
+
+printViewSource

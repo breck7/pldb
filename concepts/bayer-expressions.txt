@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Bayer Expressions
 =================
 
@@ -21,3 +23,5 @@ define | edge? g e
     $ es | edges g
       e2 | reverse e
     or (member e es) (member e2 es)
+
+printViewSource

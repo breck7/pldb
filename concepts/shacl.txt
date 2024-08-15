@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SHACL
 =====
 
@@ -31,3 +33,5 @@ sh:property [                 # _:b2
 ] ;
 sh:closed true ;
 sh:ignoredProperties ( rdf:type ) .
+
+printViewSource

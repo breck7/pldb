@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Luna
 ====
 
@@ -20,3 +22,5 @@ Luna is an expressive, minimalistic, elegant programming language implemented in
 def greet(name:string)
   return &quot;Hello &quot; + name
 end
+
+printViewSource

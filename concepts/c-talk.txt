@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 c-talk
 ======
 
@@ -21,3 +23,5 @@ CtkObject myPrimitive(int nArgs, CtkObject* args) {
     ctkParseArguments(nArgs, args, &quot;siro&quot;, &amp;s, &amp;i, &amp;r, &amp;o);
     ...
 }
+
+printViewSource

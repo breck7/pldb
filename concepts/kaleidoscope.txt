@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Kaleidoscope
 ============
 
@@ -22,3 +24,5 @@ always: display number( temperature );
 while mouse.button = down do
  mercury.top = mouse.location.y;
 end while;
+
+printViewSource

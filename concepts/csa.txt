@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CodeStudAssembler
 =================
 
@@ -23,3 +25,5 @@ CodeStudAssembler is an assembly language created in 2017.
 not_string:
   movq rax,[r13-0x60]
   retl
+
+printViewSource

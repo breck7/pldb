@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Gödel (Goedel)
 ==============
 
@@ -36,3 +38,5 @@ CommonDivisor(i,j,d) &lt;-
              1 =&lt; d =&lt; Min(Abs(i),Abs(j)) &amp;
              i Mod d = 0 &amp;
              j Mod d = 0.
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ink-lang
 ========
 
@@ -32,3 +34,5 @@ listen(&#39;0.0.0.0:8080&#39;, evt =&gt; (
     })
   }
 ))
+
+printViewSource

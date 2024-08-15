@@ -2,6 +2,8 @@ scrollButtonParser
  extends paragraphParser
  crux button
  description A button.
+ example
+  button Click me
  javascript
   defaultClassName = "scrollButton"
   tag = "button"

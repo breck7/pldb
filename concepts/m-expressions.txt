@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Meta Expressions
 ================
 
@@ -17,3 +19,5 @@ In computer programming, M-expressions (or meta-expressions) were an early propo
  f[x;y]
  label[square;λ[[x];product[x;x]]]
  [lessthan[x;0] → negative[x]; T → x]
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 manticore
 =========
 
@@ -21,3 +23,5 @@ fun forever (init : ’a) (f: ’a -&gt; ’a) : unit =
  in
    ()
  end
+
+printViewSource

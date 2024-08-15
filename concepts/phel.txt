@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Phel
 ====
 
@@ -22,3 +24,5 @@ Phel is a functional programming language that transpiles to PHP. A Lisp dialect
  (ns hello-world\boot)
 
  (println &quot;Hello, World!&quot;)
+
+printViewSource

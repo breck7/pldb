@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 JAL compiler
 ============
 
@@ -47,3 +49,5 @@ forever loop--convert analog on a0 to digital
    PWM_Set_DutyCycle (resist, resist)
 
 end loop
+
+printViewSource

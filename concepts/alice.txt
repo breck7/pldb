@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Alice
 =====
 
@@ -19,3 +21,5 @@ Alice ML is a programming language designed by the Programming Systems Laborator
 fun fib 0 = 0
    | fib 1 = 1
    | fib n = spawn fib(n-1) + fib(n-2);
+
+printViewSource

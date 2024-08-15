@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Ravenscar profile
 =================
 
@@ -41,3 +43,5 @@ pragma Restrictions (
                  No_Dependence =&gt; Ada.Execution_Time.Group_Budget,
                  No_Dependence =&gt; Ada.Execution_Time.Timers,
                  No_Dependence =&gt; Ada.Task_Attributes);
+
+printViewSource

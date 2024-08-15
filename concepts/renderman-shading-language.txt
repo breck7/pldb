@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RenderMan Shading Language
 ==========================
 
@@ -19,3 +21,5 @@ Renderman Shading Language (abbreviated RSL) is a component of the RenderMan Int
 float length(vector v) {
   return sqrt(v . v); /* . is a dot product */
 }
+
+printViewSource

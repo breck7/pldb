@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Definite clause grammar
 =======================
 
@@ -17,3 +19,5 @@ det --&gt; [a].
 noun --&gt; [cat].
 noun --&gt; [bat].
 verb --&gt; [eats].
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Smarty
 ======
 
@@ -49,3 +51,5 @@ $smarty-&gt;assign(&#39;title_text&#39;, &#39;TITLE: This is the Smarty basic ex
 $smarty-&gt;assign(&#39;body_html&#39;, &#39;&lt;p&gt;BODY: This is the message set using assign()&lt;/p&gt;&#39;);
 
 $smarty-&gt;display(&#39;index.tpl&#39;);
+
+printViewSource

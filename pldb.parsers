@@ -205,6 +205,9 @@ scrollParser
    return this._footnotes
   }
   file = {}
+  get title() {
+    return this.file.title || this.get("title")
+  }
   get permalink() {
    return this.get("permalink") || this.file.permalink || ""
   }
@@ -290,7 +293,7 @@ buildMeasuresParser
   cells commandWordCell anyCell
 
 printMeasuresParser
- description Print measure stats to HTML table.
+ description Print measure stats.
  cruxFromId
  extends abstractScrollParser
  javascript

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Stencil
 =======
 
@@ -24,3 +26,5 @@ There are {{ articles.count }} articles.
     &lt;li&gt;{{ article.title }} by {{ article.author }}&lt;/li&gt;
   {% endfor %}
 &lt;/ul&gt;
+
+printViewSource

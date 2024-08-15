@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 General-purpose macro processor
 ===============================
 
@@ -14,3 +16,5 @@ A general-purpose macro processor or general purpose preprocessor is a macro pro
 - Early development of General-purpose macro processor happened in https://sourceforge.net/p/gema/mailman/
 
 gema -match -p &#39;Title\:*\n=$0@end&#39; foo
+
+printViewSource

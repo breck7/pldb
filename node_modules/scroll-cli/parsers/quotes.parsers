@@ -17,6 +17,8 @@ quoteParser
 
 quickQuoteParser
  crux >
+ example
+  > The only thing we have to fear is fear itself. - FDR
  boolean isPopular true
  extends abstractIndentableParagraphParser
  description A quote.

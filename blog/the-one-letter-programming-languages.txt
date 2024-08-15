@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 The One Letter Programming Languages
 ====================================
 by Breck Yunits
@@ -58,3 +60,5 @@ web.get https://pldb.io/pldb.csv
     columns.setType titleLength number
      filter.where titleLength < 2
       tables.basic
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 flowlog
 =======
 
@@ -16,3 +18,5 @@ We present Flowlog, a tierless language for programming SDN controllers. In cont
 
 TABLE stolen(switchid );
 REMOTE TABLE get_time(int );
+
+printViewSource

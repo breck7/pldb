@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 FXScript
 ========
 
@@ -15,3 +17,5 @@ FXScript is a scripting language for Final Cut Pro and Final Cut Express.  FXBui
 
 scale(Region, CenterOfScale, 0.5, 0.5);
 blitrect(ImageBuffer, OrigRegion, Destination-Buffer, Region);
+
+printViewSource

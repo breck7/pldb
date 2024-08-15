@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Nexus file
 ==========
 
@@ -33,3 +35,5 @@ END;
 BEGIN TREES;
   TREE tree1 = ((A,B),C);
 END;
+
+printViewSource

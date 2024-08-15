@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Candy
 =====
 
@@ -30,3 +32,5 @@ getUnwrap struct key :=
 getKeys struct :=
   needs (is struct)
   ✨.structGetKeys struct
+
+printViewSource

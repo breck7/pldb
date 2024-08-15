@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Markaby
 =======
 
@@ -30,3 +32,5 @@ mab.html do
   end
 end
 puts mab.to_s
+
+printViewSource

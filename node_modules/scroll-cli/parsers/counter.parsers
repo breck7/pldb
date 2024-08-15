@@ -2,6 +2,8 @@ scrollCounterParser
  description Just for fun.
  extends paragraphParser
  crux counter
+ example
+  counter 4.5 Babies Born
  cells commandWordCell numberCell
  javascript
   compile() {

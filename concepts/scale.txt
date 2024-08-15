@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Scale
 =====
 
@@ -72,3 +74,5 @@ int main(int argc, char ** argv) {
     std::cout &lt;&lt; &quot;Example finished&quot; &lt;&lt; std::endl;
     return 0;
 }
+
+printViewSource

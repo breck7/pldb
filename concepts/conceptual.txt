@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Conceptual
 ==========
 
@@ -36,3 +38,5 @@ call	(_jsEval &quot;function(f) {
   } else
     return _checkOverride(f, examples, f)
 }&quot;
+
+printViewSource

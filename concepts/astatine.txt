@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Astatine
 ========
 
@@ -25,3 +27,5 @@ main :: (args [String]) -&gt; Int32
         IO::puts(&quot;Hello, World&quot;)
         0
     end
+
+printViewSource

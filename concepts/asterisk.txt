@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Asterisk
 ========
 
@@ -18,3 +20,5 @@ Asterisk is a software implementation of a telephone private branch exchange (PB
 ;; Hello world in Asterisk
 
 exten =&gt; s,1,NoOp(Hello World)
+
+printViewSource

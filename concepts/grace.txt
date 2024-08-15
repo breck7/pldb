@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Grace
 =====
 
@@ -32,3 +34,5 @@ method ack (m : Number, n : Number) -&gt; Number {
    elseif {n &lt;= 0} then {ack((m -1), 1)}
    else {ack(m -1, ack(m, n-1))}
 }
+
+printViewSource

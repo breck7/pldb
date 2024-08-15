@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RobotFramework
 ==============
 
@@ -56,3 +58,5 @@ User pushes equals
 
 Result is &quot;${result}&quot;
     Result should be    ${result}
+
+printViewSource

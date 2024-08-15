@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 PL360
 =====
 
@@ -27,3 +29,5 @@ BEGIN INTEGER BUCKET;
          END
          RESET(FLAG);
     END
+
+printViewSource

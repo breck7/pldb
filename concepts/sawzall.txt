@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Sawzall
 =======
 
@@ -21,3 +23,5 @@ x: float = input;
 emit count &lt;- 1;
 emit total &lt;- x;
 emit sum_of_squares &lt;- x * x;
+
+printViewSource

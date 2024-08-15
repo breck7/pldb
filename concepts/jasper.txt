@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 jasper
 ======
 
@@ -22,3 +24,5 @@ compile to js lisp inspired by arc
 (let a 4 (map [+ 3 a _] &#39;(1 2 3)))
 (alert &quot;Hello world!&quot;)
 (map str &#39;(1 2 3) &#39;(foo bar baz))
+
+printViewSource

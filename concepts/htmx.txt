@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 htmx
 ====
 
@@ -24,3 +26,5 @@ htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Event
 &lt;button hx-post=&quot;/clicked&quot; hx-swap=&quot;outerHTML&quot;&gt;
   Click Me
 &lt;/button&gt;
+
+printViewSource

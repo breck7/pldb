@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Hspec
 =====
 
@@ -29,3 +31,5 @@ main = hspec $ do
 
     it &quot;throws an exception if used with an empty list&quot; $ do
       evaluate (head []) `shouldThrow` anyException
+
+printViewSource

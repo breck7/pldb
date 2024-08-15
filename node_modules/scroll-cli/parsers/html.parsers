@@ -18,6 +18,16 @@ abstractHtmlParser
     return ""
   }
 
+scrollBrParser
+ crux br
+ description A break.
+ extends abstractScrollParser
+ catchAllCellType integerCell
+ javascript
+  compile() {
+   return `<br>`.repeat(parseInt(this.getWord(1) || 1))
+  }
+
 htmlParser
  extends abstractHtmlParser
  description HTML one liners or blocks.

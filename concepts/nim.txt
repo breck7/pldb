@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Nim
 ===
 
@@ -161,6 +163,8 @@ row
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
   template debug*(args: varargs[string, `importOnly
 
+printViewSourceBadge
+
 ]) =
     if logLevel ✓
    Example
@@ -170,4 +174,6 @@ row
    FeatureLink ../features/hasGotos.html
    Supported X
    Example
-   Token
+   Token 
+
+printViewSource

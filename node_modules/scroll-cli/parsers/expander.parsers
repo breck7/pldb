@@ -2,6 +2,9 @@ expanderParser
  cruxFromId
  description An collapsible HTML details tag.
  extends paragraphParser
+ example
+  expander Knock Knock
+  Who's there?
  javascript
   compile() {
    this.parent.sectionStack.push("</details>")

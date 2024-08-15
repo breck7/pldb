@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Patient-Oriented Prescription Programming Language
 ==================================================
 
@@ -22,3 +24,5 @@ initially
 infusion:
  whenever new aPTTResult
   aPTT &lt; 45 | giveBolus 80 units/kg of: HEParin by: iv
+
+printViewSource

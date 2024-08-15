@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 UNITY
 =====
 
@@ -40,3 +42,5 @@ assign
     &lt;|| i,j : 0 &lt;= i &lt; n and 0 &lt;= j &lt; n ::
         D[i,j] := min(D[i,j], &lt;min k : 0 &lt;= k &lt; n :: D[i,k] + D[k,j] &gt;) &gt;
 end
+
+printViewSource

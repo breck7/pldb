@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 TI-BASIC
 ========
 
@@ -22,3 +24,5 @@ fact(x)
 :    Return undef
 :  x*fact(x-1)
 :End Func
+
+printViewSource

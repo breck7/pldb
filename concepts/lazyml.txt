@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Lazy ML
 =======
 
@@ -16,3 +18,5 @@ Lazy ML (LML) is a functional programming language developed in the early 1980s 
 
 let rec fact 0 = 1  ||
             fact n = n*fact(n-1)
+
+printViewSource

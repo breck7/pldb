@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Property Specification Language
 ===============================
 
@@ -15,3 +17,5 @@ Property Specification Language (PSL) is a temporal logic extending Linear tempo
 - See also: (3 related languages) VHDL, Verilog, SystemVerilog
 
 ((true[*]; req; ack)  |=&gt; (start; data[*3]; end) @ clk
+
+printViewSource

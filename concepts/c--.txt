@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 C--
 ===
 
@@ -29,3 +31,5 @@ foreign &quot;C&quot; main(){
     foreign &quot;C&quot; puts(&quot;address&quot;s);
     foreign &quot;C&quot; return(0);
 }
+
+printViewSource

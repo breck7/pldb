@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Verse
 =====
 
@@ -21,3 +23,5 @@ f(p:int,q:int):int :=
 if (x=0) then { p=3; q=4 }
 else { p=232; q=913 }; y:int; z:int;
 f(y,z); y+z
+
+printViewSource

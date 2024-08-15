@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 X BitMap
 ========
 
@@ -17,3 +19,5 @@ In computer graphics, the X Window System used X BitMap (XBM), a plain text bina
 static char test_bits[] = {
 0x13, 0x00, 0x15, 0x00, 0x93, 0xcd, 0x55, 0xa5, 0x93, 0xc5, 0x00, 0x80,
 0x00, 0x60 };
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 fay
 ===
 
@@ -44,3 +46,5 @@ main = do
   putStrLn &quot;Hello Console!&quot;
   alert &quot;Hello Alert!&quot;
   addWindowEvent &quot;load&quot; greet
+
+printViewSource

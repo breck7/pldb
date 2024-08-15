@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Post production
 ===============
 
@@ -22,3 +24,5 @@ Production rules:
 (1)       $ → [$]
 (2)       $ → $
 (3)       $1$2 → $1[]$2
+
+printViewSource

@@ -3,6 +3,11 @@ dateParser
  description Set published date.
  extends abstractTopLevelSingleMetaParser
  boolean isPopular true
+ example
+  date 1/11/2019
+  printDate
+  Hello world
+   dateline
 
 datelineParser
  cruxFromId

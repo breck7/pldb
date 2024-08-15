@@ -1,3 +1,19 @@
+scrollLeftRightButtonsParser
+ crux leftRightButtons
+ description Previous and next nav buttons.
+ extends abstractScrollParser
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compile() {
+    const file = this.parent.file
+    const { linkToPrevious, linkToNext } = file
+    if (!linkToPrevious) return ""
+    const style = `a.keyboardNav {display:block;position:absolute;top:0.25rem; color: rgba(204,204,204,.8); font-size: 1.875rem; line-height: 1.7rem;}a.keyboardNav:hover{color: #333;text-decoration: none;}`
+    return `<style>${style}</style><a class="keyboardNav doNotPrint" style="left:.5rem;" href="${linkToPrevious}">&lt;</a><a class="keyboardNav doNotPrint" style="right:.5rem;" href="${linkToPrevious}">&gt;</a>`
+  }
+
 keyboardNavParser
  description Make left and right navigate files.
  extends abstractScrollParser

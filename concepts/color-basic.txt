@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Color BASIC
 ===========
 
@@ -18,3 +20,5 @@ Color BASIC is the implementation of Microsoft BASIC that is included in the ROM
 FOR {num} = {number} TO {number} [STEP {number}]
 ...
 NEXT (num)
+
+printViewSource

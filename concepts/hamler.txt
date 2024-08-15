@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 hamler
 ======
 
@@ -25,3 +27,5 @@ module Main where
 import System.IO
 
 main = print &quot;Hello, World!&quot;
+
+printViewSource

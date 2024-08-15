@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Does every programming language have line comments?
 ===================================================
 by Breck Yunits
@@ -78,3 +80,5 @@ web.get https://pldb.io/languages.csv
          value count
         rows.sortByReverse count
          tables.basic
+
+printViewSource

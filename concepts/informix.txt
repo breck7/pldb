@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 IBM Informix-4GL
 ================
 
@@ -19,3 +21,5 @@ Informix-4GL is a 4GL programming language developed by Informix during the mid-
 SELECT UNIQUE city, state, zipcode, sname
 FROM customer, state
 WHERE customer.state = state.code
+
+printViewSource

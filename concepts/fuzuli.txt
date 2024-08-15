@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Fuzuli
 ======
 
@@ -34,3 +36,5 @@ Fuzuli has a syntax similar to Lisp but it is not intended to be an other Lisp c
 (let y (list 1 2 3 4 5 6 7 8 9 11))
 (let dist (euclidean x y))
 (print dist &quot;\n&quot;)
+
+printViewSource

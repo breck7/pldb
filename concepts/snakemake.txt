@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 snakemake
 =========
 
@@ -67,3 +69,5 @@ rule plot_coverage_histogram:
       iterable = True))))
 
     savefig(output.hist)
+
+printViewSource

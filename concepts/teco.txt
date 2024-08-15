@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 TECO
 ====
 
@@ -32,3 +34,5 @@ qa-qb&quot;g xa k -l ga -1uz &#39;       ! if A&gt;B, switch lines and set flag
 qbua                            ! load B into A !
 l .-z;&gt;                         ! loop back if another line in buffer !
 qz;&gt;                            ! repeat if a switch was made last pass !
+
+printViewSource

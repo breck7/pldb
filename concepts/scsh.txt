@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Scsh
 ====
 
@@ -28,3 +30,5 @@ Scsh (a Scheme shell) is computer software, a type of shell for an operating sys
 
 (for-each writeln
   (append-map executables ((infix-splitter &quot;:&quot;) (getenv &quot;PATH&quot;))))
+
+printViewSource

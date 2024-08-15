@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 mLite
 =====
 
@@ -20,3 +22,5 @@ fun iota (a, b) where (a = b)
                 = [a]
        | (a, b) = a :: iota (a + 1, b)
        | a      = iota (1, a)
+
+printViewSource

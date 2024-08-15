@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Magik
 =====
 
@@ -22,3 +24,5 @@ my_procedure &lt;&lt; _proc @my_procedure(a, b, c)
   _endproc
 
   x &lt;&lt; my_procedure(1, 2, 3) # x = 6
+
+printViewSource

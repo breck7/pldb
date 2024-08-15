@@ -34,6 +34,9 @@ belowAsCodeUntilParser
  description Print code above until match.
  extends belowAsCodeParser
  catchAllCellType anyCell
+ example
+  belowAsCode
+  counter 1 second
  javascript
   get howMany() {
     let howMany = 1
@@ -50,6 +53,9 @@ belowAsCodeUntilParser
 
 aboveAsCodeParser
  description Print code above.
+ example
+  counter 1 second
+  aboveAsCode
  extends belowAsCodeParser
  javascript
   method = "previous"

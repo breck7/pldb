@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 IP Pascal
 =========
 
@@ -46,3 +48,5 @@ program hello(input, output);
     writeln(&#39;hello, world&#39;);
     repeat event(input, er) until er.etype = etterm
   end.
+
+printViewSource

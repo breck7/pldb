@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 DOML
 ====
 
@@ -81,3 +83,5 @@ MyDictionary = [String : Color] {
 }
 // No need to keep classes around in this example
 # Deinit all
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 HScript
 =======
 
@@ -19,3 +21,5 @@ if ( $F == 1 ) then
 else
     echo Not Frame One
 endif
+
+printViewSource

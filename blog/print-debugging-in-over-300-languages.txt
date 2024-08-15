@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 "print() debugging" in over 300 languages
 =========================================
 by Breck Yunits
@@ -152,3 +154,5 @@ web.get https://pldb.io/pldb.csv
   group.by printToken
    rows.sortByReverse count
     tables.basic
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Tiny BASIC
 ==========
 
@@ -47,3 +49,5 @@ line ::= number statement CR | statement CR
     relop ::= &lt; (&gt;|=|ε) | &gt; (&lt;|=|ε) | =
 
     string ::= &quot; (a|b|c ... |x|y|z|A|B|C ... |X|Y|Z|digit)* &quot;
+
+printViewSource

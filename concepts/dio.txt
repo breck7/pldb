@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 dio
 ===
 
@@ -17,3 +19,5 @@ for v in [5, 8, 32, 9, 14]
     //itoa is defined as itoa(u64 val) u8[23]
     puts(itoa(v))
 }
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 JavaFX Script
 =============
 
@@ -26,3 +28,5 @@ import javafx.ext.swing.*;
  myFrame.height = 50;
  myFrame.visible = true;
  myFrame.content = myLabel;
+
+printViewSource

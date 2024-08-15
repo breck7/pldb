@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 chrysaLisp
 ==========
 
@@ -89,3 +91,5 @@ Parallel OS, with GUI, Terminal, OO Assembler, Class libraries, C-Script compile
     (t (view-event window msg))))
 
 (view-hide window)
+
+printViewSource

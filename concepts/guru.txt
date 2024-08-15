@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 guru
 ====
 
@@ -20,3 +22,5 @@ trie_none : Fun(A:type).&lt;trie A&gt;
 | trie_next : Fun(A:type)(o:&lt;option A&gt;)
 (unique l:&lt;charvec &lt;trie A&gt;&gt;).
 &lt;trie A&gt;.
+
+printViewSource

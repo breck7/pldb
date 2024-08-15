@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 JSX
 ===
 
@@ -50,3 +52,5 @@ module.exports = React.createClass({
     &lt;/div&gt;;
   }
 });
+
+printViewSource

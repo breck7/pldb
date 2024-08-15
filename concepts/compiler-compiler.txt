@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Compiler-Compiler
 =================
 
@@ -33,3 +35,5 @@ expr_gen(ADD[expr_gen(x),expr_gen(y)]) =&gt;
                             load(r1, x);
                             return r1;
 ...
+
+printViewSource

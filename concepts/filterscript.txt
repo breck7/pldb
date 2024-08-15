@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Filterscript
 ============
 
@@ -30,3 +32,5 @@ int __attribute__((kernel)) out_only() {
 int __attribute__((kernel)) everything(uint32_t ain, uint32_t x, uint32_t y) {
   return 0;
 }
+
+printViewSource

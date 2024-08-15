@@ -13,5 +13,5 @@ slideshowParser
   ****
  javascript
   compile() {
-   return `<style>html {font-size: var(--base-font-size, 28px);} body {margin: auto; width: 500px;}.slideshowNav{text-align: center; margin-bottom:20px; font-size: 14px;} a{text-decoration: none;</style><script defer src="jquery-3.7.1.min.js"></script><div class="slideshowNav"></div><script defer src="slideshow.js"></script>`
+   return `<style>html {font-size: var(--base-font-size, 28px);} body {margin: auto; width: 500px;}.slideshowNav{text-align: center; margin-bottom:20px; font-size: 24px;color: rgba(204,204,204,.8);} a{text-decoration: none; color: rgba(204,204,204,.8);}</style><script defer src="jquery-3.7.1.min.js"></script><div class="slideshowNav"></div><script defer src="slideshow.js"></script>`
   }

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Extensible Embeddable Language
 ==============================
 
@@ -65,3 +67,5 @@ export function main&lt;args&gt;
     print(Recursion tests done.\n);
     return 0;
 }
+
+printViewSource

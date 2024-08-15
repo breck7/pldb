@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 jiyu
 ====
 
@@ -30,3 +32,5 @@ func @metaprogram main(argc: int32, argv: **uint8) {
     fwrite(&quot;Hello, Pilot!\n&quot;.data, 1, 14, file);
     fclose(file);
 }
+
+printViewSource

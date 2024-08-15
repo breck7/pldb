@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 myrddin
 =======
 
@@ -19,3 +21,5 @@ use std
 const main = {
     std.put(&quot;Hello World\n&quot;)
 }
+
+printViewSource

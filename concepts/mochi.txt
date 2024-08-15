@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 mochi
 =====
 
@@ -22,3 +24,5 @@ def factorial(n, m):
        m
    else:
        factorial(n - 1, n * m)
+
+printViewSource

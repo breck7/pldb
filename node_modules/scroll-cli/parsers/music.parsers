@@ -2,6 +2,8 @@ scrollSoundParser
  extends abstractMediaParser
  crux music
  description Play sound files.
+ example
+  music sipOfCoffee.m4a
  javascript
   compile() {
     return `<audio controls ${this.getAsHtmlAttributes("loop autoplay".split(" "))}><source src="${this.filename}" type="audio/mpeg"></audio>`

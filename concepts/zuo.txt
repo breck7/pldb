@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Zuo
 ===
 
@@ -34,3 +36,5 @@ A Tiny Racket for Scripting
     [else (+ (fib (- n 1)) (fib (- n 2)))]))
 
 (fib input)
+
+printViewSource

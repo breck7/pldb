@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 vi
 ==
 
@@ -30,3 +32,5 @@ Set the environment variable EXINIT to &quot;set ml&quot; to activate modelines.
 Whitespace is largely insignificant, but these must be the last five
 lines in the file to work properly. Unless it is in &quot;vi: ... :&quot; or
 &quot;ex: ... :&quot; format, any preceding text will be ignored.
+
+printViewSource

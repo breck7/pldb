@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Visual FoxPro
 =============
 
@@ -52,3 +54,5 @@ PRIVATE cAuthorID, cAuthorName      &amp;&amp; Private variables supplant any pr
 
  * Close the connection
  SQLDISCONNECT(nHnd)
+
+printViewSource

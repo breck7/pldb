@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Pep8
 ====
 
@@ -61,3 +63,5 @@ s3:	CPX	-27746, d
 	SUBA	-12337, sxf
 	LDX	-12289, sx
 	.END
+
+printViewSource

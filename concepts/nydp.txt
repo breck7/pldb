@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 nydp
 ====
 
@@ -22,3 +24,5 @@ nydp - a modern, more dangerous kind of lisp
         (pre-compile (mac-expand (car expr) (cdr expr)))
         expr)))
 (mac yoyo (thing) `(do-yoyo ,thing))
+
+printViewSource

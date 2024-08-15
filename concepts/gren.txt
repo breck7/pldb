@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Gren
 ====
 
@@ -24,3 +26,5 @@ import Html exposing (Html)
 main : Html a
 main =
   Html.text &quot;Hello, world!&quot;
+
+printViewSource

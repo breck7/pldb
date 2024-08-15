@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Parrot Assembly
 ===============
 
@@ -21,3 +23,5 @@ The Parrot assembly language (PASM) is the basic assembly language used by the P
 .pcc_sub :main main:
     say &quot;Hello!&quot;
     end
+
+printViewSource

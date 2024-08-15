@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Django
 ======
 
@@ -20,3 +22,5 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse(&quot;Hello World&quot;)
+
+printViewSource

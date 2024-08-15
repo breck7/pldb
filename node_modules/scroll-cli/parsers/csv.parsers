@@ -1,3 +1,7 @@
+buildCsvParser
+ description Compile to CSV file.
+ extends abstractBuildCommandParser
+
 printCsvParser
  description Print group metadata to CSV.
  extends printFeedParser

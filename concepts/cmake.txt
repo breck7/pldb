@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CMake
 =====
 
@@ -56,3 +58,5 @@ add_custom_command(OUTPUT &quot;ver.c&quot; &quot;ver.h&quot; COMMAND ./ver.sh)
 add_executable(foo foo.c bar.c baz.c ver.c)
 
 target_link_libraries(foo ${ssl_LIBRARY})
+
+printViewSource

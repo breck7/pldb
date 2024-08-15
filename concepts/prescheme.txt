@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Pre-Scheme
 ==========
 
@@ -34,3 +36,5 @@ Pre-Scheme is a statically typed dialect of the Scheme programming language, com
            (write-string &quot;  Greets the world &amp; &lt;user&gt;.&quot; out)
            (newline out)
            1)))
+
+printViewSource

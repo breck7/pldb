@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 JSON lambda
 ===========
 
@@ -18,3 +20,5 @@ jl ("JSON lambda") is a tiny functional language for querying and manipulating J
 - JSON lambda is written in Haskell, YAML, Markdown
 
 map (\o -&gt; { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -&gt; length o.ps &gt; 1)
+
+printViewSource

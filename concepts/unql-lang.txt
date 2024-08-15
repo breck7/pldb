@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 UnQL
 ====
 
@@ -16,3 +18,5 @@ UnQL is a database query language, akin to SQL, but designed for modern document
  http://unql.sqlite.org/index.html/timeline?y=w 1.
 
 SELECT {articleout:cool_nosql_collection.docNumber} FROM cool_nosql_collection
+
+printViewSource

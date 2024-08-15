@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 OQL
 ===
 
@@ -20,3 +22,5 @@ Object Query Language (OQL) is a query language standard for object-oriented dat
 select c.address
 from Persons p, p.children c
 where p.address.street = &quot;Main Street&quot; and count(p.children) &gt;= 2 and c.address.city != p.address.city
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 QUEL
 ====
 
@@ -21,3 +23,5 @@ retrieve into W
 where E.Name = &quot;Jones&quot;
 
 retrieve (a=count(y.i by y.d where y.str = &quot;ii*&quot; or y.str = &quot;foo&quot;),b=max(count(y.i by y.d)))
+
+printViewSource

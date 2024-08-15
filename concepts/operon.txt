@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 operon
 ======
 
@@ -17,3 +19,5 @@ Function mySum($a, $b):
     $a + $b
 End
 Select [1 ... 5] =&gt; array:Reduce(mySum($a, $b))
+
+printViewSource

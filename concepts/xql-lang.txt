@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 XQL
 ===
 
@@ -20,3 +22,5 @@ select result:&lt;$book.title, $book.author&gt;
 from bib:URL &quot;www.a.b.c/bib.xml&quot;, book:$bib.book
 where $book.publisher.name =&quot;Addison-Wesley&quot;
 groupby $book.title
+
+printViewSource

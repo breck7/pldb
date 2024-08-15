@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RDF Schema
 ==========
 
@@ -22,3 +24,5 @@ ex:cat1     rdf:type     ex:cat .
 ex:cat    rdfs:subClassOf  ex:animal .
 zoo:host   rdfs:range      ex:animal .
 ex:zoo1     zoo:host     ex:cat2 .
+
+printViewSource

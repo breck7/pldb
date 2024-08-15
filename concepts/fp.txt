@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 FP
 ==
 
@@ -21,3 +23,5 @@ FP (short for function programming) is a programming language created by John Ba
 insert-left  \f       where   \f:〈x〉             =  x
                       and     \f:〈x1,x2,...,xn〉  =  f:〈\f:〈x1,...,xn-1〉,xn〉
                       and     \f:〈 〉             =  unit f
+
+printViewSource

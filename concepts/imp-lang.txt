@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 imp-lang
 ========
 
@@ -15,3 +17,5 @@ The vision is of an emacs-y live self-modifying environment for working with str
 let colors = &quot;apples&quot; x &quot;red&quot; | &quot;apples&quot; x &quot;green&quot; | &quot;oranges&quot; x &quot;orange&quot; in
 let fancy = &quot;red&quot; x &quot;scarlet&quot; | &quot;red&quot; x &quot;crimson&quot; | &quot;green&quot; x &quot;emerald&quot; in
 &quot;apples&quot; colors fancy
+
+printViewSource

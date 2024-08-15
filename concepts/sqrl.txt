@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SQRL
 ====
 
@@ -28,3 +30,5 @@ SQRL was the language designed by Smyte, and later acquired by Twitter in 2018. 
 LET Username := input();
 LET Message := concat(&quot;Hello, &quot;, Username, &quot;!&quot;);
 EOF
+
+printViewSource

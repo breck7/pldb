@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Tao
 ===
 
@@ -19,3 +21,5 @@ A statically-typed functional language with polymorphism, typeclasses, sum types
 fn factorial =
    | 0 =&gt; 1
    \ y ~ x + 1 =&gt; y * factorial(x)
+
+printViewSource

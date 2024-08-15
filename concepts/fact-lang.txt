@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 FaCT
 ====
 
@@ -29,3 +31,5 @@ swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 s
     }
   }
 }
+
+printViewSource

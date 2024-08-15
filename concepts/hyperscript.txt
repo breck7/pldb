@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Hyperscript
 ===========
 
@@ -33,3 +35,5 @@ h(&#39;div#page&#39;,
     h(&#39;p&#39;,
       &quot;the intention is for this to be used to create\n&quot;,
       &quot;reusable, interactive html widgets. &quot;))
+
+printViewSource

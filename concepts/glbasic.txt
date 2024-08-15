@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 GLBasic
 =======
 
@@ -22,3 +24,5 @@ FUNCTION add: v AS Tvec
    INC self.z, v.z
   END FUNCTION
  END TYPE
+
+printViewSource

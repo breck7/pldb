@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 The Ages of Programming Language Creators
 =========================================
 by Breck Yunits
@@ -72,3 +74,5 @@ web.get https://pldb.io/blog/age.tsv
  vega.scatter
   xColumn ageAtCreation
   yColumn pldbScore
+
+printViewSource

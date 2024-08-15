@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Caltech Intermediate Form
 =========================
 
@@ -47,3 +49,5 @@ upperChar ::= &quot;A&quot; | &quot;B&quot; | ... | &quot;Z&quot;
 blank ::= any ASCII character except digit, upperChar, &quot;-&quot;, &quot;(&quot;, &quot;)&quot;, or &quot;;&quot;
 userChar ::= any ASCII character except &quot;;&quot;
 commentChar ::= any ASCII character except &quot;(&quot; or &quot;)&quot;
+
+printViewSource

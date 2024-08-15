@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Blender
 =======
 
@@ -20,3 +22,5 @@ text = Text3d.New(&quot;Text&quot;)
 text.setText(&quot;Hello World&quot;)
 Scene.GetCurrent().objects.new(text)
 Blender.Redraw()
+
+printViewSource

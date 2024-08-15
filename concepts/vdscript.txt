@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 vdscript
 ========
 
@@ -26,3 +28,5 @@ foo = VirtualDub.video.filters;
 foo.Add(&quot;bar&quot;);
 
 declare
+
+printViewSource

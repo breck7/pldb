@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Pegasus
 =======
 
@@ -25,3 +27,5 @@ token comma = /,/;
 
 rule list = list_start list_recursive list_end;
 rule list_recursive = digit | digit comma list_recursive;
+
+printViewSource

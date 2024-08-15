@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ShEx
 ====
 
@@ -20,3 +22,5 @@ PREFIX schema: &lt;http://schema.org/&gt;
  schema:name  xsd:string   ;
  schema:knows @:Person   * ;
 }
+
+printViewSource

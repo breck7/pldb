@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Genero Business Development Language
 ====================================
 
@@ -46,3 +48,5 @@ END FUNCTION
 REPORT cust_rep(row)
    ...
 END REPORT
+
+printViewSource

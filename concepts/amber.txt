@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Amber
 =====
 
@@ -37,3 +39,5 @@ echo &quot;My favorite fruits are:&quot;
 loop fruit in fruits {
     echo fruit
 }
+
+printViewSource

@@ -26,6 +26,9 @@ imageParser
  description An img tag.
  boolean isPopular true
  extends abstractCaptionedParser
+ example
+  image screenshot.png
+   caption A caption.
  inScope classMarkupParser aftertextIdParser linkParser linkTargetParser
  openGraphParser
   description Add this line to make this the open graph image.

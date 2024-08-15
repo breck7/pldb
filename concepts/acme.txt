@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Acme
 ====
 
@@ -23,3 +25,5 @@ System simple_cs = {
        server.receive-request to rpc.callee;
    }
 }
+
+printViewSource

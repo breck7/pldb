@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 UCG
 ===
 
@@ -32,3 +34,5 @@ let conf = {
 };
 
 out json conf;
+
+printViewSource

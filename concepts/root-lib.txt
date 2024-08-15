@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ROOT
 ====
 
@@ -42,3 +44,5 @@ void basic() {
    in.close();
    f-&gt;Write();
 }
+
+printViewSource

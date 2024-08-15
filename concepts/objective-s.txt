@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Objective-S
 ===========
 
@@ -28,3 +30,5 @@ Objective-S is a programming language created in 1980.
    NSFileManager defaultManager removeItemAtURL:url  error:nil.
    self thumbsView afterDelay:0.4 | setNeedsLayout.
 }
+
+printViewSource

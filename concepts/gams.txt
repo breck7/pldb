@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 GAMS
 ====
 
@@ -50,3 +52,5 @@ supply(i) ..   sum(j, x(i,j))  =l=  a(i) ;
 demand(j) ..   sum(i, x(i,j))  =g=  b(j) ;
 Model transport /all/ ;
 Solve transport using LP minimizing z ;
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 S-expressions
 =============
 
@@ -47,3 +49,5 @@ def parse_sexp(string):
         else:
             word += char
     return sexp[0]
+
+printViewSource

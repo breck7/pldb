@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SLACK
 =====
 
@@ -14,3 +16,5 @@ SLACK is a compiler for a lazy functional K, modelled on David Turner's SASL lan
 - Early development of SLACK happened in https://nsl.com/
 
 gcd a b is if b=0 then a else gcd b(a!b)
+
+printViewSource

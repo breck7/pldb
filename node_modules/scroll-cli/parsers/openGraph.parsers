@@ -1,7 +1,7 @@
 openGraphDescriptionParser
  catchAllCellType stringCell
  crux description
- description Override Open Graph Description.
+ description Meta tag description.
  extends abstractTopLevelSingleMetaParser
 
 openGraphImageParser

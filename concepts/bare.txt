@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 BARE
 ====
 
@@ -55,3 +57,5 @@ type TerminatedEmployee void
 type Person union {Customer | Employee | TerminatedEmployee}
 
 type enum u8 u16 u32 u64 uint i8 i16 i32 i64 int f32 f64 bool void data string optional map
+
+printViewSource

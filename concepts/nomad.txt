@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Nomad
 =====
 
@@ -32,3 +34,5 @@ sum: (numbers :List[Int]) -&gt; Int =
      numbers ?
              | [] =&gt; 0
              | head :: tail =&gt; head + sum tail
+
+printViewSource

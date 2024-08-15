@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Qualcomm Hexagon
 ================
 
@@ -19,3 +21,5 @@ Hexagon (QDSP6) is the brand for a family of 32-bit multi-threaded microarchitec
   R20 = CMPY(R20, R8):&lt;&lt;1:rnd:sat
   R11:10 = VADDH(R11:10, R13:12)
 }:endloop0
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CodeQL
 ======
 
@@ -27,3 +29,5 @@ from DataFlow::PathNode source, DataFlow::PathNode sink, UnsafeDeserializationCo
   
           select sink.getNode().(UnsafeDeserializationSink).getMethodAccess(), source, sink,
       &quot;Unsafe deserialization of $@.&quot;, source.getNode(), &quot;user input&quot;
+
+printViewSource

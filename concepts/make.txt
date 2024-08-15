@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Make
 ====
 
@@ -118,3 +120,5 @@ row
   objects = program.o foo.o utils.o
   $(objects)
  Token
+
+printViewSource

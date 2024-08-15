@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 LINQ
 ====
 
@@ -23,3 +25,5 @@ public class Customer
      [Column]
      public string CustName;
 }
+
+printViewSource

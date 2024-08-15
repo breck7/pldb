@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 JRuby
 =====
 
@@ -22,3 +24,5 @@ try {
 } catch (ScriptException ex) {
   ex.printStackTrace();
 }
+
+printViewSource

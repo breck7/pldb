@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Effekt
 ======
 
@@ -26,3 +28,5 @@ def eager[R] { p: R / { Flip, Fail, Error } } = try {
   }
 } with Fail { (msg) =&gt; Failure(msg)
 } with Error { (msg) =&gt; ParseError(msg) }
+
+printViewSource

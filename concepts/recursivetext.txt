@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Recursive teXt
 ==============
 
@@ -19,3 +21,5 @@ A general-purpose text format.
 RX    = Block+
 Block = Line (Line | Block)*
 Line  = Character*
+
+printViewSource

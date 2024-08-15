@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Lorel
 =====
 
@@ -22,3 +24,5 @@ Lorel Query Language for Semistructured Data
 select Guide.restaurant.name,
    Guide.restaurant(.address)?.zipcode
  where Guide.restaurant.% grep &quot;cheap&quot;
+
+printViewSource

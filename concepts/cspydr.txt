@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CSpydr
 ======
 
@@ -32,3 +34,5 @@ fn main(): i32 {
     std::io::printf(&quot;fib(%i) = %i\n&quot;, n, fib(n));
     &lt;- 0;
 }
+
+printViewSource

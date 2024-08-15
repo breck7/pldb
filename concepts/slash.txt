@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Slash
 =====
 
@@ -148,3 +150,5 @@ class Parser {
 src = File.read(ARGV.first);
 ast = Parser.new(src).parse;
 ast.eval(Env.new);
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Which countries produce the most programming languages?
 =======================================================
 by Breck Yunits
@@ -49,3 +51,5 @@ web.get https://pldb.io/pldb.csv
   group.by country
    hidden
    vega.bar
+
+printViewSource

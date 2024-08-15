@@ -2,7 +2,7 @@ permalink index.html
 title 📜 Scroll is a language for scientists of all ages
 
 import header.scroll
-css html {font-size: var(--base-font-size, 16px);}
+css html {font-size: var(--base-font-size, 18px);}
 
 printTitle
 # Evolve and publish your most intelligent ideas
@@ -17,24 +17,26 @@ try.scroll.pub &nbsp;&nbsp; ScrollHub
  https://try.scroll.pub/ try.scroll.pub
  class scrollButton try.scroll.pub
 
-<br>
 Leet sheet · Blog · FAQ · Tutorial
  center
  link leetsheet.html Leet sheet
  link blog/index.html Blog
  link faq.html FAQ
  link tutorial.html Tutorial
+ style margin:15px; margin-top: 40px;
 
 Videos · Subreddit
  center
  https://www.youtube.com/@breckyunits Videos
  https://www.reddit.com/r/WorldWideScroll/ Subreddit
+ style margin:15px;
 
 npm package · Release Notes · Parser Designer
  center
  https://www.npmjs.com/package/scroll-cli npm package
  link releaseNotes.html Release Notes
  https://sdk.scroll.pub/designer#url%20https%3A%2F%2Ftry.scroll.pub%2Fscroll.parsers Parser Designer
+ style margin:15px;
 
 endColumns
 

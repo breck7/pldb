@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 VlibTemplate
 ============
 
@@ -21,3 +23,5 @@ $tmpl-&gt;setvar(&#39;title_text&#39;, &#39;TITLE: This is the vLIB basic exampl
 $tmpl-&gt;setvar(&#39;body_text&#39;, &#39;BODY: This is the message set using setvar()&#39;);
 $tmpl-&gt;setvar(&#39;div_cont&#39; , &#39;DIV : This is div paragraph&#39;);
 $tmpl-&gt;pparse();
+
+printViewSource

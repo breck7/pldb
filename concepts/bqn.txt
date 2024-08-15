@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 BQN
 ===
 
@@ -47,3 +49,5 @@ Split ← {
   (∾¨ GV ⊔˜ ·+`GS) r
 }
 •Show Split hw  # ⟨ &quot;Hel&quot; &quot;lo,&quot; &quot;World!&quot; ⟩
+
+printViewSource

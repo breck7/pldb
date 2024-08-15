@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Lustre
 ======
 
@@ -21,3 +23,5 @@ node Edge (X : bool) returns (E : bool);
 let
   E = false -&gt; X and not pre X;
 tel
+
+printViewSource

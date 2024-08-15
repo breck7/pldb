@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 rosie
 =====
 
@@ -19,3 +21,5 @@ RPL is a variant of modern Regular Expressions (regex) that is designed to scale
 - rosie-lang.org was registered in 2016
 
 rosie --rpl &#39;d = [:digit:]&#39; -o json match d
+
+printViewSource

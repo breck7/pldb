@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Vim
 ===
 
@@ -26,3 +28,5 @@ while i &lt; 5
   echo &quot;count is&quot; i
   let i += 1
 endwhile
+
+printViewSource

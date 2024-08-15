@@ -13,7 +13,7 @@ printSourceParser
 
 printSourceStackParser
  // useful for debugging
- description Print source from each step of compilation.
+ description Print compilation steps.
  extends abstractAftertextParser
  cruxFromId
  example

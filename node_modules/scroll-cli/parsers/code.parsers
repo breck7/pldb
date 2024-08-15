@@ -7,6 +7,9 @@ codeParser
  catchAllParser lineOfCodeParser
  extends abstractScrollParser
  boolean isPopular true
+ example
+  code
+   two = 1 + 1
  javascript
   compile() {
    return `<code class="scrollCodeBlock">${this.childrenToString().replace(/\</g, "&lt;")}</code>`
@@ -20,6 +23,9 @@ codeWithHeaderParser
  cruxFromId
  catchAllCellType stringCell
  extends codeParser
+ example
+  codeWithHeader math.py
+   two = 1 + 1
  javascript
   compile() {
    return `<div class="codeWithHeader"><div class="codeHeader">${this.content}</div>${super.compile()}</div>`

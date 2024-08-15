@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 AssemblyScript
 ==============
 
@@ -30,3 +32,5 @@ export function fib(n: i32): i32 {
   }
   return a
 }
+
+printViewSource

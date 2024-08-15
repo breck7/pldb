@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Ion Schema Language
 ===================
 
@@ -27,3 +29,5 @@ type::{
     age: { type: int, valid_values: range::[0, 130] },
   },
 }
+
+printViewSource

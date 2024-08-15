@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Linux Kernel Module
 ===================
 
@@ -34,3 +36,5 @@ void cleanup_module(void)
 
 fs/mbcache.ko
 fs/mbcache.o
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 POP-2
 =====
 
@@ -18,3 +20,5 @@ POP-2 (also referred to as POP2) is a programming language developed around 1970
 
 vars operation 3 +*;
     lambda x y; x * x + y * y end -&gt; nonop +*
+
+printViewSource

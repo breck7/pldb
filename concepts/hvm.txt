@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 hvm
 ===
 
@@ -23,3 +25,5 @@ HVM is a low-level compile target for high-level languages. It provides a raw sy
 @sum__C0 = ({c a} ({$([*2] $([+1] d)) $([*2] $([+0] b))} f))
   &amp;! @sum ~ (a (b $([+] $(e f))))
   &amp;! @sum ~ (c (d e))
+
+printViewSource

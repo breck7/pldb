@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Gremlin
 =======
 
@@ -25,3 +27,5 @@ g.V().match(
   as(&quot;b&quot;).values(&quot;age&quot;).as(&quot;d&quot;),
   as(&quot;d&quot;).is(gt(30))).
     select(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;)
+
+printViewSource

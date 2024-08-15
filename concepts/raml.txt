@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RAML
 ====
 
@@ -61,3 +63,5 @@ traits:
     delete:
       description: |
         This method will *delete* an **individual song**
+
+printViewSource

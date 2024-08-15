@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Visual Prolog
 =============
 
@@ -40,3 +42,5 @@ end implement hanoi
 goal
    console::init(),
    hanoi::hanoi(4).
+
+printViewSource

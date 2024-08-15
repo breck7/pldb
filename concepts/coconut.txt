@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Coconut
 =======
 
@@ -92,3 +94,5 @@ row
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)
  Token
+
+printViewSource

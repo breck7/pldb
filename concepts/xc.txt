@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 XC
 ==
 
@@ -43,3 +45,5 @@ int main(void) {
     on tile[i] : hello(i, c[i], c[(i+1)%4]);
   return 0;
 }
+
+printViewSource

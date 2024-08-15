@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 mmix
 ====
 
@@ -24,3 +26,5 @@ Text  BYTE  &quot;Hello world!&quot;,10,0
 Main  LDA $255,Text
  TRAP  0,Fputs,StdOut
  TRAP  0,Halt,0
+
+printViewSource

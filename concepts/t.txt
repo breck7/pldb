@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 T
 =
 
@@ -25,3 +27,5 @@ The T programming language is a dialect of the Scheme programming language devel
                  ((cdr self) the-cdr)
                  (((setter car) self new-car) (set the-car new-car))
                  (((setter cdr) self new-cdr) (set the-cdr new-cdr))))
+
+printViewSource

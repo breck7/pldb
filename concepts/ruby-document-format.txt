@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Ruby Document format
 ====================
 
@@ -19,3 +21,5 @@ print &lt;&lt;&quot;END&quot;
 This indented block will not be scanned for formatting
 codes or directives, and spacing will be preserved.
 END
+
+printViewSource

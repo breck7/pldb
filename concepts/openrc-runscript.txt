@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 OpenRC runscript
 ================
 
@@ -151,3 +153,5 @@ reload() {
 	start-stop-daemon --exec $command --signal HUP
 	eend $?
 }
+
+printViewSource

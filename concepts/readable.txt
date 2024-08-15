@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Readable
 ========
 
@@ -205,3 +207,5 @@ try [
     .copy-file %howtowritegoodarticle.red
     .copy-file %howtowritegoodarticle.md
 ]
+
+printViewSource

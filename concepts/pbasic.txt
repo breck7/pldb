@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 PBASIC
 ======
 
@@ -20,3 +22,5 @@ HIGH 1                 &#39;turn on LED on pin 1
  PAUSE 1000             &#39;pause for one second
  LOW 1                  &#39;turn off LED on pin 1
  END                    &#39;end program
+
+printViewSource

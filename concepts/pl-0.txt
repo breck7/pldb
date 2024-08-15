@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 PL/0
 ====
 
@@ -83,3 +85,5 @@ BEGIN
   ?x; ?y; CALL gcd; !z;
   ?n; f := 1; CALL fact; !f
 END.
+
+printViewSource

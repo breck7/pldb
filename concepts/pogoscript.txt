@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 PogoScript
 ==========
 
@@ -65,3 +67,5 @@ elements in (html) matching (reg) as (tag) =
         elements.push { tag = tag, index = m.index, length = m.0.length, href = m.1 }
     
     elements
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Numba
 =====
 
@@ -30,3 +32,5 @@ def monte_carlo_pi(nsamples):
         if (x ** 2 + y ** 2) &lt; 1.0:
             acc += 1
     return 4.0 * acc / nsamples
+
+printViewSource

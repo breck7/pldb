@@ -2,5 +2,7 @@ scrollQuestionParser
  description A question.
  extends h4Parser
  crux ?
+ example
+  ? Why is the sky blue?
  javascript
   defaultClassName = "scrollQuestion"

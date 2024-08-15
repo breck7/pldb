@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Revolution
 ==========
 
@@ -20,3 +22,5 @@ LiveCode (formerly Revolution and MetaCard) is a cross-platform rapid applicatio
 - See also: (7 related languages) Linux, Unix, Android, iOS, HyperTalk, HyperCard, SQL
 
 put url &quot;binfile:picture.jpg&quot; into url &quot;ftp://john:passwd@ftp.example.net:2121/picture.jpg&quot;
+
+printViewSource

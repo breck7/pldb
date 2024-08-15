@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Assembly CLI
 ============
 
@@ -22,3 +24,5 @@ Defined by Microsoft for use in recent versions of Windows, an assembly in the C
   IL_0000:  ldstr      &quot;Hello World&quot;
   IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
   IL_000a:  ret } // end of method Class1::Main
+
+printViewSource

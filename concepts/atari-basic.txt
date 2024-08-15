@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Atari BASIC
 ===========
 
@@ -17,3 +19,5 @@ Atari BASIC is an interpreter for the BASIC programming language that shipped wi
 
 10 REM Opens the cassette device on channel 1 for reading in BASIC
 20 OPEN #1,4,0,&quot;C:MYPROG.DAT&quot;
+
+printViewSource

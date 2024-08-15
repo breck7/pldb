@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 COWSEL
 ======
 
@@ -22,3 +24,5 @@ comment Is x a member of list y;
 define      y atom then *0 end
             y hd x equal then *1 end
             y tl -&gt; y repeat up
+
+printViewSource

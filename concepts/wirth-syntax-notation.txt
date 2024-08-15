@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Wirth syntax notation
 =====================
 
@@ -25,3 +27,5 @@ FACTOR     = IDENTIFIER
            | &quot;{&quot; EXPRESSION &quot;}&quot; .
 IDENTIFIER = letter { letter } .
 LITERAL    = &quot;&quot;&quot;&quot; character { character } &quot;&quot;&quot;&quot; .
+
+printViewSource

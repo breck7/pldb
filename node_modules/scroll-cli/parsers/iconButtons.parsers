@@ -1,0 +1,10 @@
+abstractIconButtonParser
+ extends abstractAftertextParser
+ cruxFromId
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compile() {
+    return `<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="${this.link}" class="doNotPrint abstractIconButtonParser" style="${this.style}">${this.svg}</a>`
+  }

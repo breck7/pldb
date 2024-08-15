@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 chevrotain
 ==========
 
@@ -101,3 +103,5 @@ module.exports = function(text) {
         parseErrors: parser.errors
     }
 }
+
+printViewSource

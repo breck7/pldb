@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Kalyn
 =====
 
@@ -21,3 +23,5 @@ git clone https://github.com/radian-software/kalyn
 
 (public def main (IO Empty)
   (print &quot;Hello, world!\n&quot;))
+
+printViewSource

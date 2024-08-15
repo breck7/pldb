@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Slope
 =====
 
@@ -111,3 +113,7 @@ row
  Example
   (regex-match? `[0-9]+` "Hello 12345")
   (regex-replace `Hello, (\w+)!importOnly
+
+printViewSourceBadge
+
+printViewSource

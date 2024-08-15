@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SQF
 ===
 
@@ -38,3 +40,5 @@ _num = _num + 20; systemChat str _num;
   &quot;HitAvionics&quot;, &quot;HitHRotor&quot;, &quot;HitVRotor&quot;, \
   &quot;HitRGlass&quot;, &quot;HitLGlass&quot;, &quot;HitGlass1&quot;, &quot;HitGlass2&quot;, &quot;HitGlass3&quot;, &quot;HitGlass4&quot;, &quot;HitGlass5&quot;, &quot;HitGlass6&quot; \
 ]
+
+printViewSource

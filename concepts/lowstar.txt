@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Low*
 ====
 
@@ -28,3 +30,5 @@ let chacha20
   chacha20_init block key nonce counter;
   chacha20_update output state len;
   pop_frame ()
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RHTML
 =====
 
@@ -23,3 +25,5 @@ RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for pro
      &lt;li&gt;&lt;%=  @p.name %&gt;&lt;/li&gt;
   &lt;% end %&gt;
 &lt;/ul&gt;
+
+printViewSource

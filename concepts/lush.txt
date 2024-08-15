@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Lush
 ====
 
@@ -23,3 +25,5 @@ Lush is an object-oriented programming language designed for researchers, experi
 (for (i 1 100)
      (for (j 1 100)
         (if (= i j) (print (* i j))))))
+
+printViewSource

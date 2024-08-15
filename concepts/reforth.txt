@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 reforth
 =======
 
@@ -32,3 +34,5 @@ end
         leave
     end
 end
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Austral
 =======
 
@@ -25,3 +27,5 @@ close(db);
 let { first as db1: Db, second: Rows } := query(db, &quot;SELECT ...&quot;);
 close(db); -- error: `db` consumed again.
 -- another error: `db1` never consumed.
+
+printViewSource

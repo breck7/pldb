@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 BlitzPlus
 =========
 
@@ -76,3 +78,5 @@ AppTitle = &quot;Binary Clock&quot;
          WaitTimer(secondTimer)
  	 If KeyHit(KEY_ESCAPE) Then Exit
  Forever
+
+printViewSource

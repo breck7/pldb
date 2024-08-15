@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 EEX
 ===
 
@@ -50,3 +52,5 @@ EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a stri
 &lt;br /&gt;
  
 &lt;%= link &quot;New book&quot;, to: book_path(@conn, :new) %&gt;
+
+printViewSource

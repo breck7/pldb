@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Pure
 ====
 
@@ -19,3 +21,5 @@ Pure, successor to the equational language Q, is a dynamically typed, functional
 extern int puts(char*);
  hello = puts &quot;Hello, world!&quot;;
  hello;
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 whalecalf
 =========
 
@@ -22,3 +24,5 @@ D -&gt; a A &amp; a D | b B &amp; b D | c E;
 A -&gt; a A a | a A b | b A a | b A b | c E a;
 B -&gt; a B a | a B b | b B a | b B b | c E b;
 E -&gt; a E | b E | e;
+
+printViewSource

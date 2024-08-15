@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 order
 =====
 
@@ -18,3 +20,5 @@ Metalanguage for C Preprocessor Metaprogramming
 #define ORDER_PP_DEF_8fib                       \
 ORDER_PP_FN(8fn(8N,                             \
                 8fib_iter(8N, 0, 1)))
+
+printViewSource

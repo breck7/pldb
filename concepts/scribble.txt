@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 scribble
 ========
 
@@ -39,3 +41,5 @@ The @racketmodname[scribble/manual] name can also be used as a library
 with @racket[require], in which case it provides all of the same
 bindings, but without setting the reader or setting the default
 rendering format to the Racket manual format.}
+
+printViewSource

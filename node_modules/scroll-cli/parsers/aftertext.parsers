@@ -5,13 +5,6 @@ abstractAftertextParser
  description Text followed by markup commands.
  extends abstractScrollParser
  inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser aftertextTagParser commentParser
- example
-  aftertext
-   Hello brave new world
-   link home.com new
-   bold brave new
-   underline new world
-   strike wor
  javascript
   get markupInserts() {
    const { originalTextPostLinkify } = this

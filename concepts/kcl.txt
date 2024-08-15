@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 KCL
 ===
 
@@ -36,3 +38,5 @@ const block = startSketchOn(&#39;XY&#39;)
      ], holeDia / 2, %), %)
   |&gt; hole(circle([0, 0], bearingDia / 2, %), %)
   |&gt; extrude(height - cbDepth, %)
+
+printViewSource

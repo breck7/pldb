@@ -88,6 +88,9 @@ scrollParser
    return this._footnotes
   }
   file = {}
+  get title() {
+    return this.file.title || this.get("title")
+  }
   get permalink() {
    return this.get("permalink") || this.file.permalink || ""
   }

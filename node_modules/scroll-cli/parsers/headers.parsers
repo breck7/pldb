@@ -1,5 +1,7 @@
 abstractHeaderParser
  extends paragraphParser
+ example
+  # Hello world
  javascript
   compile(compileSettings) {
    if (this.isHidden) return ""

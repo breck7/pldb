@@ -5,9 +5,9 @@ printAuthorsParser
  // todo: we need pattern matching added to sdk to support having no params or a url and personNameCell
  catchAllCellType anyCell
  example
-  // With Link:
-  printAuthors Breck Yunits
+  authors Breck Yunits
    https://breckyunits.com
+  printAuthors
  javascript
   compile() {
    return this.parent.getNode("authors")?.compileHtmlForPrint()

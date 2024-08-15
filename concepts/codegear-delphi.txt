@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CodeGear Delphi
 ===============
 
@@ -18,3 +20,5 @@ procedure TForm1.ShowSomethingOnCreate;
 begin
   Label1.Text := &#39;Hello World!&#39;;
 end;
+
+printViewSource

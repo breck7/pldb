@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Gradle
 ======
 
@@ -42,3 +44,5 @@ class GreetingPluginExtension {
     String message
     String greeter
 }
+
+printViewSource

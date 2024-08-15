@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 mimium
 ======
 
@@ -28,3 +30,5 @@ fn dsp(){
     out = sin(now * 440 * twopi / sr)
     return (out,out)
 }
+
+printViewSource

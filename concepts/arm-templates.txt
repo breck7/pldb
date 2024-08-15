@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ARM Templates
 =============
 
@@ -29,3 +31,5 @@ Azure Resource Manager templates are JavaScript Object Notation (JSON) files tha
     &quot;commandToExecute&quot;: &quot;[concat(&#39;sh install_lamp.sh &#39;, parameters(&#39;mySqlPassword&#39;))]&quot;
   }
 }
+
+printViewSource

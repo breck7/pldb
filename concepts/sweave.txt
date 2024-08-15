@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Sweave
 ======
 
@@ -28,3 +30,5 @@ print(&quot;hello&quot;)
 @
 
 We can call R commands from the text. For example a+b= \Sexpr{a+b}
+
+printViewSource

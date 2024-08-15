@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 RPM Spec
 ========
 
@@ -58,3 +60,5 @@ make install
 rm -rf %{buildroot}
 
 %changelog
+
+printViewSource

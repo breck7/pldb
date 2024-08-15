@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 UnQL
 ====
 
@@ -19,3 +21,5 @@ A Query Language and Algebra for Semistructured Data Based on Structural Recursi
 query Q1 :=
  select {result: E}
  where {country: {name: &quot;France&quot;, people: {ethnicGroup: E}}} in db
+
+printViewSource

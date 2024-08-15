@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Abbreviated Test Language for All Systems
 =========================================
 
@@ -20,3 +22,5 @@ Abbreviated Test Language for All Systems (ATLAS) is a MILSPEC language for auto
           SYNC-VOLTAGE 2 MAX 5, SYNC-NEG-SLOPE, MAX-TIME 0.5, GO-TO-STEP 400 IF GO, LL 0.5 UL 50,
           CNX HI=P2-4 LO=P2-5, SYNC HI=P2-8 LO=P2-5 $
 ...
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 P*
 ==
 
@@ -29,3 +31,5 @@ SCENE main {
     /* Put the variable &#39;path&#39; into a text string and then print it out */
     echo &quot;My shell looks for programs in these directories: $path\n&quot;;
 }
+
+printViewSource

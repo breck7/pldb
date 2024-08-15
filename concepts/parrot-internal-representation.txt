@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 PIR
 ===
 
@@ -30,3 +32,5 @@ The Parrot intermediate representation (PIR), previously called Intermediate cod
   tmp = a + b
   .return (tmp)
  .end
+
+printViewSource

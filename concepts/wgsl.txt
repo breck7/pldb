@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 WebGPU Shading Language
 =======================
 
@@ -19,3 +21,5 @@ fn main() -&gt; void {
     return;
 }
 entry_point fragment = main;
+
+printViewSource

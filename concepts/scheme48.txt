@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Scheme 48
 =========
 
@@ -23,3 +25,5 @@ Scheme 48 is an implementation of Scheme written by Richard Kelsey and Jonathan 
                       1)))
             (provisional-cell-set! value v)
             v))))))
+
+printViewSource

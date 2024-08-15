@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Tefkat
 ======
 
@@ -16,3 +18,5 @@ RULE ClassToTable
 FORALL  Class c { name: n; }
 MAKE    Table t { name: n; }
 ;
+
+printViewSource

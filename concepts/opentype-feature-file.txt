@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 OpenType Feature File
 =====================
 
@@ -31,3 +33,5 @@ feature kern {
      position a y -80;
      position s f&#39; &lt;0 0 10 0&gt; t;
 } kern;
+
+printViewSource

@@ -2,6 +2,9 @@ pageTitleParser
  catchAllCellType personNameCell
  crux title
  description Set title.
+ example
+  title Eureka
+  printTitle
  extends abstractTopLevelSingleMetaParser
  boolean isPopular true
 
@@ -9,14 +12,17 @@ printTitleParser
  description Print title.
  extends abstractHeaderParser
  boolean isPopular true
+ example
+  title Eureka
+  printTitle
  cruxFromId
  javascript
   compile(compileSettings) {
    // Hacky, I know.
    const {content} = this
    if (content === undefined)
-    this.setContent(this.parent.file.title)
-   const { permalink } = this.parent.file
+    this.setContent(this.root.title)
+   const { permalink } = this.root
    if (!permalink) {
     this.setContent(content) // Restore it as it was.
     return super.compile(compileSettings)

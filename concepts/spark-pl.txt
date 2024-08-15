@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Spark
 =====
 
@@ -19,3 +21,5 @@ procedure Increment (X : in out Counter_Type)
        Depends =&gt; (X =&gt; X),
        Pre     =&gt; X &lt; Counter_Type&#39;Last,
        Post    =&gt; X = X&#39;Old + 1;
+
+printViewSource

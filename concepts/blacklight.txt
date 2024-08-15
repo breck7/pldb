@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Blacklight
 ==========
 
@@ -33,3 +35,5 @@ swap                     ;; bring send queue to top
 until drop               ;; give the main thread busywork
 swap q-to-v              ;; get contents of receive Q as V
 print                    ;; display contents of V
+
+printViewSource

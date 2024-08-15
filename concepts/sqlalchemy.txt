@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Sqlalchemy
 ==========
 
@@ -19,3 +21,5 @@ The Database Toolkit for Python
 
 SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
 FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by
+
+printViewSource

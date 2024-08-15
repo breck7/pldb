@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ERB
 ===
 
@@ -88,3 +90,5 @@ end
 example = ERBExample.new(variable1)
 renderer = ERB.new(template)
 puts output = renderer.result(example.get_binding)
+
+printViewSource

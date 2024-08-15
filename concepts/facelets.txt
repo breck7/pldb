@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Facelets
 ========
 
@@ -24,3 +26,5 @@ In computing, Facelets is an open-source Web template system under the Apache li
         &lt;h:outputText value=&quot;&amp;amp;nbsp;&quot; escape=&quot;false&quot;/&gt;
     &lt;/cc:implementation&gt;
 &lt;/ui:composition&gt;
+
+printViewSource

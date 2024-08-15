@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 N-Triples
 =========
 
@@ -22,3 +24,5 @@ _:art &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.c
 _:art &lt;http://xmlns.com/foaf/0.1/name&gt; &quot;Art Barstow&quot;.
 _:dave &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.com/foaf/0.1/Person&gt; .
 _:dave &lt;http://xmlns.com/foaf/0.1/name&gt; &quot;Dave Beckett&quot;.
+
+printViewSource

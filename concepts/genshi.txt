@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Genshi
 ======
 
@@ -23,3 +25,5 @@ Genshi is a template engine for XML-based vocabularies written in  Python.  Gens
         &lt;p py:content=&quot;2 + 2&quot;&gt;This will be replaced with 4&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
+
+printViewSource

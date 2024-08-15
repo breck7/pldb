@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 CCS
 ===
 
@@ -19,3 +21,5 @@ $Vendor eq &quot;Cisco&quot; and
 $sysDescr like /IOS/ and
 $Version like /^1[2-9]/ and
 $Type in [&#39;Router&#39;, &#39;Switch-Router&#39;]]
+
+printViewSource

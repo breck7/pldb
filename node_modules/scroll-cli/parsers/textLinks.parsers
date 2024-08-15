@@ -1,0 +1,13 @@
+abstractTextLinkParser
+ extends abstractAftertextParser
+ cruxFromId
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compileTxt() {
+    return this.text
+  }
+  compile() {
+   return `<a class="abstractTextLinkParser" href="${this.link}">${this.text}</a>`
+  }

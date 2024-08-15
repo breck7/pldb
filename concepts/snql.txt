@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SNQL: A Social Network Query and Transformation Language
 ========================================================
 
@@ -18,3 +20,5 @@ CONSTRUCT CP1
  AND (TC(A1, A2, EP1) WITH L1=’John’)
  AND (TC(A1, A5, EP3) WITH L1=’John’)
 FROM FriendshipNetwork
+
+printViewSource

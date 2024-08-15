@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Nuua
 ====
 
@@ -26,3 +28,5 @@ fun main(argv: [string]) {
     t := Triangle!{b: 10.0, h: 5.0}
     print &quot;The area is: &quot; + t.area() as string
 }
+
+printViewSource

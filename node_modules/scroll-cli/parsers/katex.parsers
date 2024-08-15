@@ -3,6 +3,9 @@ katexParser
  extends abstractScrollWithRequirementsParser
  catchAllCellType codeCell
  catchAllParser lineOfCodeParser
+ example
+  katex
+   \text{E} = \text{T} / \text{A}!
  description KaTex widget for typeset math.
  string copyFromExternal katex.min.css katex.min.js
  string requireOnce

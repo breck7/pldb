@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Please Build
 ============
 
@@ -30,3 +32,5 @@ go_library(
         &quot;//third_party/go:queue&quot;,
     ]
 )
+
+printViewSource

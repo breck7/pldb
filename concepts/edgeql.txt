@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 edgeql
 ======
 
@@ -15,3 +17,5 @@ EdgeQL is the primary language of EdgeDB. It is used to define, mutate, and quer
  https://www.edgedb.com/showcase/edgeql 1.
 
 SELECT User FILTER User.name = &#39;John&#39;;
+
+printViewSource

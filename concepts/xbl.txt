@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 XML Binding Language
 ====================
 
@@ -16,3 +18,5 @@ XBL (XML Binding Language) is an XML-based markup language used to declare the b
 scrollbar {
   -moz-binding: url(&#39;somefile.xml#binding1&#39;);
 }
+
+printViewSource

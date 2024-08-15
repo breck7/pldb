@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 MultiDimensional eXpressions
 ============================
 
@@ -19,3 +21,5 @@ SELECT
    { [Date].[2002], [Date].[2003] } ON ROWS
 FROM Sales
 WHERE ( [Store].[USA].[CA] )
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 WCPS
 ====
 
@@ -18,3 +20,5 @@ where
     some( $c.nir &gt; 127 and $r )
 return
     encode( abs( $c.red - $c.nir ), &quot;hdf5&quot; )
+
+printViewSource

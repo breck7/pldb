@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 MiniZinc
 ========
 
@@ -23,3 +25,5 @@ The MiniZinc compiler
 solve satisfy;
 
 output [&quot;Hello, world!\n&quot;];
+
+printViewSource

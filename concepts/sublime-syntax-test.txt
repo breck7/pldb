@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Sublime Syntax Test Lang
 ========================
 
@@ -42,3 +44,5 @@ int square(int x)
 &quot;Hello, World! // not a comment&quot;;
 // ^ string.quoted.double
 //                  ^ string.quoted.double - comment
+
+printViewSource

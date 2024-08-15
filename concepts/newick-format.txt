@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Newick format
 =============
 
@@ -19,3 +21,5 @@ In mathematics, Newick tree format (or Newick notation or New Hampshire tree for
 Tree → RootLeaf &quot;;&quot; | RootInternal &quot;;&quot; | Branch &quot;;&quot;
    RootLeaf → Name | &quot;(&quot; Branch &quot;)&quot; Name
    RootInternal → &quot;(&quot; Branch &quot;,&quot; BranchSet &quot;)&quot; Name
+
+printViewSource

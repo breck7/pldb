@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 ten
 ===
 
@@ -25,3 +27,5 @@ each( irange( 1, 101 )
       show( num, &quot; &quot; )
 )
 show( N )
+
+printViewSource

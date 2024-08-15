@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 s-lang
 ======
 
@@ -26,3 +28,5 @@ define init_array (a)
 
 variable A = Int_Type [10];
 init_array (A);
+
+printViewSource

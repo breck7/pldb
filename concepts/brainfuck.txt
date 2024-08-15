@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Brainfuck
 =========
 
@@ -95,3 +97,5 @@ Hello World in Brainfuck
     &lt;.[-]                    Output ROT13ed character from copy and clear it
     &lt;-,+                     Read next character
 ]                            End character reading loop
+
+printViewSource

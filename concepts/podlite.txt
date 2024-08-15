@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Podlite
 =======
 
@@ -26,3 +28,5 @@ Podlite, a lightweight block-oriented markup language that's all about flexibili
      $this = pod(&#39;also&#39;);  # Specifically, a code block
  
  =end pod
+
+printViewSource

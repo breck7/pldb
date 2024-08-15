@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Newspeak
 ========
 
@@ -20,3 +22,5 @@ Newspeak is a programming language and platform in the tradition of Smalltalk an
 HelloBraveNewWorld usingPlatform: platform = (
  platform Transcript open show: &#39;Hello, Oh Brave new world&#39;.
 )
+
+printViewSource

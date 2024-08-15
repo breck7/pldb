@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Wing
 ====
 
@@ -27,3 +29,5 @@ queue.on_message(inflight (body: str): str =&gt; {
   let key = &quot;myfile-${next}.txt&quot;;
   bucket.put(key, body);
 });
+
+printViewSource

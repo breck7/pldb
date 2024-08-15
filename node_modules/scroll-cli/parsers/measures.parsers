@@ -12,7 +12,7 @@ buildMeasuresParser
   cells commandWordCell anyCell
 
 printMeasuresParser
- description Print measure stats to HTML table.
+ description Print measure stats.
  cruxFromId
  extends abstractScrollParser
  javascript

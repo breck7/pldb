@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 goose
 =====
 
@@ -19,3 +21,5 @@ uint(32) lomarf( uint(32) a, uint(32) b )
 {
     return a - b
 }
+
+printViewSource

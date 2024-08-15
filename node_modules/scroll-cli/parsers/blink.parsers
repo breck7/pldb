@@ -1,6 +1,8 @@
 blinkParser
  description Just for fun.
  extends paragraphParser
+ example
+  blink Carpe diem!
  crux blink
  javascript
   compile() {

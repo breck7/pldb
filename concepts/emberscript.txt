@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 EmberScript
 ===========
 
@@ -45,3 +47,5 @@ class App.FromNowView extends Ember.View
         Ember.run.cancel nextTick
 
 Ember.Handlebars.helper &#39;fromNow&#39;, App.FromNowView
+
+printViewSource

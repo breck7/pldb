@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 FLEX
 ====
 
@@ -86,3 +88,5 @@ letter        [a-zA-Z]
 %%
 
 int yywrap(void){return 1;}
+
+printViewSource

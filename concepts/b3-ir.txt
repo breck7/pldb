@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 B3 IR
 =====
 
@@ -12,3 +14,5 @@ B3 IR is a C-like SSA representation of a procedure. A procedure has a root bloc
 - Tags: intermediate representation language
 - Early development of B3 IR happened in Apple
 - B3 IR compiles to x86-64 or ARM
+
+printViewSource

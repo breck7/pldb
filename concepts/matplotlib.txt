@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Matplotlib
 ==========
 
@@ -32,3 +34,5 @@ matplotlib is a plotting library for the Python programming language and its num
 &gt;&gt;&gt; Z = np.sin(R)
 &gt;&gt;&gt; surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm)
 &gt;&gt;&gt; plt.show()
+
+printViewSource

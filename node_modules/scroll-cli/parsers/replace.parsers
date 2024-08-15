@@ -28,7 +28,7 @@ replaceJsParser
   * 1+1 = SUM
 
 replaceNodejsParser
- description Replace this with evaled Node.JS.
+ description Replace with evaled Node.JS.
  extends abstractVariableParser
  catchAllCellType javascriptCell
  baseParser blobParser

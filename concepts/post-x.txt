@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Post-X
 ======
 
@@ -25,3 +27,5 @@ REPLACE GRAM := &quot;&lt;&quot;^BREAK&quot;&gt;&quot;^&quot;&gt; &#39;&#39;
                    (LHS--FIND $2 &lt;GRAM)))
                 %&gt;}
                 INULL{$};
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 GNU Assembler
 =============
 
@@ -34,3 +36,5 @@ _start:
 msg:
 	.ascii  &quot;Hello, world!\n&quot;
 	len =   . - msg
+
+printViewSource

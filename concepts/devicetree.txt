@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Devicetree
 ==========
 
@@ -22,3 +24,5 @@ soc {
        interrupts = &lt;0xA 0x8&gt;;
        interrupt-parent = &lt;&amp;ipic&gt;;
    };
+
+printViewSource

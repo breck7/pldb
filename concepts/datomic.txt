@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Datomic
 =======
 
@@ -16,3 +18,5 @@ Datomic's query and rules system is an extended form of Datalog. Datalog is a de
 
 [:find ?e
  :where [?e :age 42]]
+
+printViewSource

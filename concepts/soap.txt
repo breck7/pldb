@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 SOAP
 ====
 
@@ -35,3 +37,5 @@ SOAPAction: &quot;http://www.w3.org/2003/05/soap-envelope&quot;
     &lt;/m:GetStockPrice&gt;
   &lt;/soap:Body&gt;
 &lt;/soap:Envelope&gt;
+
+printViewSource

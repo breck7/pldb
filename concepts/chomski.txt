@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Chomski
 =======
 
@@ -14,3 +16,5 @@ chomski virtual machine  (named after the noted linguist Noam Chomsky) and pp (t
 - See also: (5 related languages) sed, Unix, grep, Unicode, C
 
 cat inputFileName | chomski -s &#39;[-n]{plus;} &lt;&gt;{count;print;}&#39;
+
+printViewSource

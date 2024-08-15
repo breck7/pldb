@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 .QL
 ===
 
@@ -19,3 +21,5 @@
 3                       and m.hasModifier(&quot;public&quot;))
 4        and numOfMethods &gt; 10
 5  select c.getPackage(), c, numOfMethods
+
+printViewSource

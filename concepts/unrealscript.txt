@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 UnrealScript
 ============
 
@@ -27,3 +29,5 @@ event InitGame( string Options, out string Error )
 defaultproperties
 {
 }
+
+printViewSource

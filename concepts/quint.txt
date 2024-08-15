@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Quint
 =====
 
@@ -32,3 +34,5 @@ action withdraw(account, amount) = {
 val no_negatives = ADDRESSES.forall(addr =&gt;
   balances.get(addr) &gt;= 0
 )
+
+printViewSource

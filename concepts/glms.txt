@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 GLMS
 ====
 
@@ -31,3 +33,5 @@ img.shade((vec3 uv, vec3 fragCoord, vec3 resolution) =&gt; {
 });
 
 img.save(&quot;test.png&quot;);
+
+printViewSource

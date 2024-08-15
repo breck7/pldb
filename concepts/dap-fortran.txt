@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 DAP FORTRAN
 ===========
 
@@ -27,3 +29,5 @@ C     Converge to a Laplace potential in an area
       P(INSIDE) = 0.25*(P(,+)+P(,-)+P(+,)+P(-,))
       IF (MAX(ABS(P-OLD_P)) .LT. EPS) RETURN
     1 CONTINUE
+
+printViewSource

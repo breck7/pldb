@@ -20,7 +20,7 @@ loadConceptsParser
   }
 
 printConceptsParser
- description Print concepts to HTML table.
+ description Print concepts.
  cruxFromId
  extends abstractScrollParser
  javascript

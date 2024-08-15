@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 hakaru
 ======
 
@@ -33,3 +35,5 @@ carol &lt;~ normal(0,1)
 match1 &lt;~ winner(alice, bob)
 match2 &lt;~ winner(bob, carol)
 match3 &lt;~ winner(alice, carol)
+
+printViewSource

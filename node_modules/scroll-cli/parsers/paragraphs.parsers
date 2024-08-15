@@ -28,18 +28,6 @@ quickParagraphParser
  example
   * I had a _new_ idea.
 
-scrollCenteredParagraphParser
- // todo: does not work with gazette.
- crux center
- extends paragraphParser
- description A centered paragraph.
- example
-  center Hello world
- javascript
-  compile(compileSettings) {
-   return `<div style="text-align:center;">${super.compile(compileSettings)}</div>`
-  }
-
 abstractIndentableParagraphParser
  extends paragraphParser
  inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser abstractIndentableParagraphParser

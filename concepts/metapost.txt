@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 METAPOST
 ========
 
@@ -26,3 +28,5 @@ for i=0 upto 2:
  for j=0 upto 2: drawdot (i*u,j*u); endfor
 endfor
 endfig
+
+printViewSource

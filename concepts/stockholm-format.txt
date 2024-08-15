@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Stockholm format
 ================
 
@@ -25,3 +27,5 @@ Feature   Description            Description
       MM        Model Mask             Indicates which columns in an alignment should be masked, such
                                        that the emission probabilities for match states corresponding to
                                        those columns will be the background distribution.
+
+printViewSource

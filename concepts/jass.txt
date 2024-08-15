@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Just Another Scripting Syntax
 =============================
 
@@ -17,3 +19,5 @@ JASS and JASS2 (sometimes said to stand for Just Another Scripting Syntax) is a 
 function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
  call PreloadGenEnd(&quot;.\\redist\\miles\\Mp3enc.asi&quot;)
 endfunction
+
+printViewSource

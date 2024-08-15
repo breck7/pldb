@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 MINI OBJECT-ORIENTED LANGUAGE
 =============================
 
@@ -19,3 +21,5 @@ class File {
    Read = lin{eof; &lt;lin{close; end} + lin{read; Read}&gt;};
  ...
 }
+
+printViewSource

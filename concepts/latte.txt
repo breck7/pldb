@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Latte
 =====
 
@@ -80,3 +82,5 @@ git clone https://github.com/nette/latte
 	{block #scripts}{/block}
 &lt;/body&gt;
 &lt;/html&gt;
+
+printViewSource

@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 OK
 ==
 
@@ -31,3 +33,5 @@ switch result[1] {
   case &quot;&quot;: puts(result[0])
   default: puts(result[1]) // prints &quot;cannot divide by zero&quot;
 }
+
+printViewSource

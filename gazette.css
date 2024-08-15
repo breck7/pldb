@@ -305,30 +305,15 @@ h4.scrollQuestion {
   margin: .25rem 0;
   text-align: center;
 }
-.scrollViewSourceBadge {
-  text-align: right;
-  position: absolute;
-  display: block;
-  right: 20px;
-  top: 8px;
-}
-.scrollViewSourceBadge svg {
-  width: 24px;
-  height: 24px;
-  fill: rgba(204,204,204,0.8);
-}
-.scrollViewSourceBadge svg:hover {
-  fill: #333;
-}
-.scrollViewSource {
+a.abstractTextLinkParser {
   text-align: center;
+  display: block;
+  margin: .5em auto;
   font-family: Verdana;
   font-weight: 100;
-}
-.scrollViewSource a {
   color: rgba(204,204,204,.5);
 }
-.scrollViewSource a:hover {
+a.abstractTextLinkParser:hover {
   color: #333;
 }
 .scrollContinueReadingLink {

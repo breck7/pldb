@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 versioned-text-markup-language
 ==============================
 
@@ -16,3 +18,5 @@ VTML (Versioned Text Markup Language), a markup language for storing document ve
 &lt;!--{INS ATT=1}--&gt; This is &lt;!--{DEL ATT=2}--&gt;
 your&lt;!--{/DEL}--&gt; &lt;!--{INS ATT=2}--&gt; my &lt;!--{/DEL}--&gt;
 document.
+
+printViewSource

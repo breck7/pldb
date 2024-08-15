@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 BML
 ===
 
@@ -23,3 +25,5 @@ BML, aka Behavior Markup Language, is a xml format created in 2007.
   &lt;body id=”p1” posture=”RELAXED” start=”after(s1:end)”/&gt;
   &lt;cadia:operate target=”SWITCH1” stroke=”p1:ready”/&gt;
 &lt;/bml&gt;
+
+printViewSource

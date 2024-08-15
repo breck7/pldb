@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Parlog
 ======
 
@@ -24,3 +26,5 @@ qsort(LessN,SortedLess),
 qsort(MoreN,SortedMore),
 append(SortedLess,[N|SortedMore],Sorted).
 qsort([],[]).
+
+printViewSource

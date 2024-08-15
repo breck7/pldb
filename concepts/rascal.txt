@@ -1,3 +1,5 @@
+printViewSourceBadge
+
 Rascal
 ======
 
@@ -31,3 +33,5 @@ extend lang::std::Id;
 start syntax Machine = machine: State+ states;
 syntax State = @Foldable state: &quot;state&quot; Id name Trans* out;
 syntax Trans = trans: Id event &quot;:&quot; Id to;
+
+printViewSource
