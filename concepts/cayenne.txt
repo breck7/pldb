@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Cayenne
 =======
 
@@ -35,4 +33,4 @@ aux  (c:cs)         out =                  aux  cs (out ++ c : Nil)
 printf :: (fmt::String) -&gt; PrintfType fmt
 printf fmt = aux fmt Nil
 
-printViewSource
+View source

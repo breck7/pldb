@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Mech
 ====
 
@@ -78,4 +76,4 @@ reset the ball if it makes it past the paddle
   #ball.x{ix} := 20
   #ball.y{ix} := 20
 
-printViewSource
+View source

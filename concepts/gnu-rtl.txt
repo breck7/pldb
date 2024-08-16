@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 gnu-rtl
 =======
 
@@ -20,4 +18,4 @@ In GCC, RTL is generated from the GIMPLE representation, transformed by various 
     (plus:SI (reg:SI 138)
              (reg:SI 139)))
 
-printViewSource
+View source

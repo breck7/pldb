@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Linker Script
 =============
 
@@ -29,4 +27,4 @@ SECTIONS
    .bss  : { *(.bss)  }
  }
 
-printViewSource
+View source

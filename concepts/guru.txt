@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 guru
 ====
 
@@ -23,4 +21,4 @@ trie_none : Fun(A:type).&lt;trie A&gt;
 (unique l:&lt;charvec &lt;trie A&gt;&gt;).
 &lt;trie A&gt;.
 
-printViewSource
+View source

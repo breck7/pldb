@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Quint
 =====
 
@@ -35,4 +33,4 @@ val no_negatives = ADDRESSES.forall(addr =&gt;
   balances.get(addr) &gt;= 0
 )
 
-printViewSource
+View source

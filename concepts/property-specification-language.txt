@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Property Specification Language
 ===============================
 
@@ -18,4 +16,4 @@ Property Specification Language (PSL) is a temporal logic extending Linear tempo
 
 ((true[*]; req; ack)  |=&gt; (start; data[*3]; end) @ clk
 
-printViewSource
+View source

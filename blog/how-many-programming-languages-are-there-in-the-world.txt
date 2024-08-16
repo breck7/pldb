@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 How Many Programming Languages are there in the World?
 ======================================================
 by Breck Yunits
@@ -82,4 +80,4 @@ web.get https://pldb.io/pldb.csv
  filter.where type = pl
   show.rowCount
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 grep
 ====
 
@@ -29,4 +27,4 @@ $ grep -n root /etc/passwd
 $ grep -c false /etc/passwd
 7
 
-printViewSource
+View source

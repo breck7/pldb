@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Quake
 =====
 
@@ -28,4 +26,4 @@ include(ROOT &amp; &quot;/m3overrides&quot;)
 M3_FRONT_FLAGS += &quot;-vsdebug&quot;
 _M3BUNDLE_OVERRIDE = &quot;T&quot;
 
-printViewSource
+View source

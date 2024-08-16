@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Metal
 =====
 
@@ -121,4 +119,4 @@ kernel void forwardProject_device(DEVICEPTR(Vector4f) *forwardProjection        
     if (locId_new &gt;= 0) forwardProjection[locId_new] = pixel;
 }
 
-printViewSource
+View source

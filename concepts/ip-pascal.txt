@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 IP Pascal
 =========
 
@@ -49,4 +47,4 @@ program hello(input, output);
     repeat event(input, er) until er.etype = etterm
   end.
 
-printViewSource
+View source

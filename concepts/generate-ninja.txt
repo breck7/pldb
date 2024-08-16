@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 GN
 ==
 
@@ -33,4 +31,4 @@ declare_args() {
   clang_base_path = &quot;//third_party/llvm-build/Release+Asserts&quot;
 }
 
-printViewSource
+View source

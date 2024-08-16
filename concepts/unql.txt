@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 UnQL
 ====
 
@@ -22,4 +20,4 @@ query Q1 :=
  select {result: E}
  where {country: {name: &quot;France&quot;, people: {ethnicGroup: E}}} in db
 
-printViewSource
+View source

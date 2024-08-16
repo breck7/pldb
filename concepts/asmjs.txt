@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Asm.js
 ======
 
@@ -27,4 +25,4 @@ function strlen(ptr) {
   return (curr - ptr)|0;
 }
 
-printViewSource
+View source

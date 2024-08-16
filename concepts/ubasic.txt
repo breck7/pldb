@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 UBASIC
 ======
 
@@ -44,4 +42,4 @@ UBASIC is a freeware (public domain software without source code) BASIC interpre
  250   Tt=TIME1000:PRINT=PRINT:PRINT Tt/1000
  260   &#39;~1.7% faster if N,K,L changed to N%,K%,L%
 
-printViewSource
+View source

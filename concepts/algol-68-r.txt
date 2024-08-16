@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 ALGOL 68-R
 ==========
 
@@ -27,4 +25,4 @@ STRUCT (BITS typemode, reply, INT count, REF CHAR address)
 ...;
 CODE 0,6/unitnumber; 157,6/typemode OF control area EDOC
 
-printViewSource
+View source

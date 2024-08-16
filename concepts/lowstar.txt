@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Low*
 ====
 
@@ -31,4 +29,4 @@ let chacha20
   chacha20_update output state len;
   pop_frame ()
 
-printViewSource
+View source

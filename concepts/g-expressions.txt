@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 g-expressions
 =============
 
@@ -23,4 +21,4 @@ The GNU Guix project invented G-Expressions to make it easier to "stage" data or
       (symlink (string-append #$coreutils &quot;/bin/ls&quot;)
                &quot;list-files&quot;)))
 
-printViewSource
+View source

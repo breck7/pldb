@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 DNS Zone
 ========
 
@@ -34,4 +32,4 @@ c.a.7.e.d.7.e.f.f.f.0.2.8.0.a.0 PTR  sip01.example.com.
 
 zone &quot;0.0.127.in-addr.arpa&quot;  IN { type master; file &quot;r.local&quot;; };
 
-printViewSource
+View source

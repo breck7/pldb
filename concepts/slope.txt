@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Slope
 =====
 
@@ -114,6 +112,4 @@ row
   (regex-match? `[0-9]+` "Hello 12345")
   (regex-replace `Hello, (\w+)!importOnly
 
-printViewSourceBadge
-
-printViewSource
+View source

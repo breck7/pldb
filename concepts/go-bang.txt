@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Go!
 ===
 
@@ -38,4 +36,4 @@ person(Nm, Born, Sx, Hm)..{
 newPerson:[string, day, Sex, string] =&gt; person.
 newPerson(Nm, Born, Sx, Hm) =&gt; $person(Nm, Born, Sx, Hm).
 
-printViewSource
+View source

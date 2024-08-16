@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 hacspec
 =======
 
@@ -41,4 +39,4 @@ pub fn test_tuple_destructuring() {
     let MyTupleType(_a, _b) = tuple;
 }
 
-printViewSource
+View source

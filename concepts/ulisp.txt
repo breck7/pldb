@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 ulisp
 =====
 
@@ -20,4 +18,4 @@ uLisp® is a version of the Lisp programming language specifically designed to r
 
 (defun b (x) (pinmode 13 t) (digitalwrite 13 x) (delay 500) (b (not x)))
 
-printViewSource
+View source

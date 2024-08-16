@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Slim Framework
 ==============
 
@@ -35,4 +33,4 @@ $app-&gt;get(&#39;/hello/{name}&#39;, function (Request $request, Response $resp
 
 $app-&gt;run();
 
-printViewSource
+View source

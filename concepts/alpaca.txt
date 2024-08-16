@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Alpaca
 ======
 
@@ -49,4 +47,4 @@ let will_be_a_process x = receive with
 
 let start_a_process init = spawn will_be_a_process init
 
-printViewSource
+View source

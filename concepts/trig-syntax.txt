@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 TriG syntax
 ===========
 
@@ -40,4 +38,4 @@ TriG is a serialization format for RDF (Resource Description Framework) graphs. 
        :Chris rdf:type ex:Person .
        :Chris ex:email &lt;mailto:chris@bizer.de&gt; }
 
-printViewSource
+View source

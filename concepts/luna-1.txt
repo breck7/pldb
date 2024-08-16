@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Luna
 ====
 
@@ -23,4 +21,4 @@ def greet(name:string)
   return &quot;Hello &quot; + name
 end
 
-printViewSource
+View source

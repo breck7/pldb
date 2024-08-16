@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 MiniZinc
 ========
 
@@ -26,4 +24,4 @@ solve satisfy;
 
 output [&quot;Hello, world!\n&quot;];
 
-printViewSource
+View source

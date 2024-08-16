@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Alma
 ====
 
@@ -40,4 +38,4 @@ if bigger &lt; smaller {
 say();
 say(&quot;Greatest common denominator: &quot;, gcd(bigger, smaller));
 
-printViewSource
+View source

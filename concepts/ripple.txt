@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Ripple
 ======
 
@@ -36,4 +34,4 @@ operation {
     n&lt;next&gt; = n&lt;now&gt; * c; // &quot;now&quot; and &quot;next&quot; are keywords in Ripple. next == now + 1.
 }
 
-printViewSource
+View source

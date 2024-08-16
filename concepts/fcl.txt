@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 FCL
 ===
 
@@ -30,4 +28,4 @@ fib:  x1 = x1 + x2
       if &gt;(n 2) then fib else exit
 exit: return x2
 
-printViewSource
+View source

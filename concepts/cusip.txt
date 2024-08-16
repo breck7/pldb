@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Committee on Uniform Security Identification Procedures
 =======================================================
 
@@ -43,4 +41,4 @@ algorithm Cusip-Check-Digit(cusip) is
    return (10 - (sum mod 10)) mod 10
 end function
 
-printViewSource
+View source

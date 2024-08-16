@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Markus
 ======
 
@@ -62,4 +60,4 @@ action edit($task: Task, $new_title: string) {
   };
 }
 
-printViewSource
+View source

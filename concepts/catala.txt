@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Catala
 ======
 
@@ -29,4 +27,4 @@ scope QualifiedEmployeeDiscount :
    then customer_price ×$ gross_profit_percentage
    else employee_discount
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 rise
 ====
 
@@ -21,4 +19,4 @@ fun(A : N.K.float =&gt; fun(B : K.M.float =&gt;
   B |&gt; map(fun(bcol =&gt;
    zip(arow, bcol) |&gt; map(*) |&gt; reduce(+, 0) )) ))))
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 PLDB Readme
 ===========
 
@@ -85,4 +83,4 @@ PLDB content is published to the public domain and you can use it freely. If nee
 
 All sources for PLDB can be found here: https://pldb.io/pages/acknowledgements.html
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Fun
 ===
 
@@ -44,4 +42,4 @@ let createNewTask = handler() {
     Global.create({ owner: user.id, type: &quot;task&quot;, title: title })
 }
 
-printViewSource
+View source

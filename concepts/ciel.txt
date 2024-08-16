@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Ciel
 ====
 
@@ -24,4 +22,4 @@ Ciel is a lisp-like language implemented in C++.  What Clojure is to Java, Ciel 
 (def vector (lambda x x))
 (vector 1 2 3)
 
-printViewSource
+View source

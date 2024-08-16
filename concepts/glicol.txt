@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Glicol
 ======
 
@@ -37,4 +35,4 @@ out: ~lead &gt;&gt; add ~drum &gt;&gt; plate 0.1 // optinal semicolon
 ~drum: speed 4.0 &gt;&gt; seq 60 &gt;&gt; sp \808bd;
 // live drag and drop your sample  ^^^
 
-printViewSource
+View source

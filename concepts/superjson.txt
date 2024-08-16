@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Superjson
 =========
 
@@ -27,4 +25,4 @@ const object = {
 
 const { json, meta } = serialize(object);
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Calc4
 =====
 
@@ -21,4 +19,4 @@ Calc4 is a programming language where everything in its code is an operator.
 
 [fib2|x, a, b|x ? ((x-1) ? ((x-1) {fib2} (a+b) {fib2}a) ? a) ? b] 38{fib2}1{fib2}0
 
-printViewSource
+View source

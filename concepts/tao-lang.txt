@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Tao
 ===
 
@@ -22,4 +20,4 @@ fn factorial =
    | 0 =&gt; 1
    \ y ~ x + 1 =&gt; y * factorial(x)
 
-printViewSource
+View source

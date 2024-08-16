@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Lithe
 =====
 
@@ -21,4 +19,4 @@ Lithe is an experimental programming language created in 1982 by David Sandberg 
 rule &quot;|&quot; &lt;i:int&gt; &quot;|&quot; return int;
   {if i&lt;0 then return -i else return i end}
 
-printViewSource
+View source

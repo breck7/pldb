@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 BNF
 ===
 
@@ -42,4 +40,4 @@ In computer science, Backus–Naur form or Backus normal form (BNF) is a notatio
  &lt;rule-name&gt;      ::= &lt;letter&gt; | &lt;rule-name&gt; &lt;rule-char&gt;
  &lt;rule-char&gt;      ::= &lt;letter&gt; | &lt;digit&gt; | &quot;-&quot;
 
-printViewSource
+View source

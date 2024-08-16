@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 ObjDump
 =======
 
@@ -38,4 +36,4 @@ objdump is a program for displaying various information about object files on Un
   40053c:	c3                   	ret
   40053d:	0f 1f 00             	nop    DWORD PTR [rax]
 
-printViewSource
+View source

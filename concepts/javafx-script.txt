@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 JavaFX Script
 =============
 
@@ -29,4 +27,4 @@ import javafx.ext.swing.*;
  myFrame.visible = true;
  myFrame.content = myLabel;
 
-printViewSource
+View source

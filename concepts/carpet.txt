@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Carpet
 ======
 
@@ -74,4 +72,4 @@ if((cell_which == 0 &amp;&amp; step %2 == 1)||(cell_which == 3 &amp;&amp; step %
  temp = (cell_rand + East_rand + North_rand + West_rand + South_rand ) % 2
  up
 
-printViewSource
+View source

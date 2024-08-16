@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Gren
 ====
 
@@ -27,4 +25,4 @@ main : Html a
 main =
   Html.text &quot;Hello, world!&quot;
 
-printViewSource
+View source

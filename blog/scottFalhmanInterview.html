@@ -405,8 +405,8 @@ a.abstractTextLinkParser:hover {
  <a href="../csv.html">CSV</a>
 </div>
 
-<p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollKeyboardNav" style="display:none;"><a href="brianKernighan.html">brianKernighan.html</a> · scottFalhmanInterview.html · <a href="douglasCrockford.html">douglasCrockford.html</a><script>document.addEventListener('keydown', function(event) {
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/blog/scottFalhmanInterview.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg xmlns="http://www.w3.org/2000/svg" width="92pt" height="92pt" viewBox="0 0 92 92"><path d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371"/></svg></a>
+<div class="scrollKeyboardNav" style="display:none;"><a href="brianKernighan.html">brianKernighan.html</a> · scottFalhmanInterview.html · <a href="stevenDrucker.html">stevenDrucker.html</a><script>document.addEventListener('keydown', function(event) {
   if (document.activeElement !== document.body) return
   if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
   const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
@@ -415,10 +415,10 @@ a.abstractTextLinkParser:hover {
   else if (event.key === "ArrowRight")
     getLinks()[1].click()
  });</script></div>
+<div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <div class="scrollSection"><h1 class="scrollTitle"><a href="scottFalhmanInterview.html">A brief interview with Common Lisp creator Dr. Scott Fahlman</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
-<div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p class="scrollParagraph"><span class="scrollDateline">November 11, 2022 — </span><a href="https://www.cs.cmu.edu/~sef/">Dr. Scott Fahlman</a> is a Professor Emeritus in the Carnegie Mellon’s School of Computer Science. He is a computer programming language connoisseur and the original neural network jedi master. He was one of the core developers of the <a href="../concepts/common-lisp.html">Common Lisp Language</a> and his current work includes Artificial Intelligence. Dr Fahlman is as notably kind as he is a humble scientist. Befittingly, he is the originator of the internet's first emoticon, sideway smile :-)</p>
 <div class="dinkus"><span>*</span></div>
 <div class="scrollSection"><h4 class="scrollQuestion">Are there any neat ideas from Lisp that have yet to go mainstream?</h4>
@@ -443,7 +443,7 @@ a.abstractTextLinkParser:hover {
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:1440px; margin: auto;"><a href="images/scottFahlman.webp" target="_blank"  ><img src="images/scottFahlman.webp" width="1440" height="807" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://theculturetrip.com/north-america/usa/pennsylvania/articles/meet-scott-fahlman-the-guy-who-created-the-first-emoticon/">Image source</a>. Thank you for your time Dr. Fahlman! :-)</p></figcaption></figure>
 </div>
-<p class="scrollParagraph">printViewSource</p>
+<a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/scottFalhmanInterview.scroll">View source</a>
 <script>
 document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
  {

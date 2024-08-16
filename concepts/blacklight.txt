@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Blacklight
 ==========
 
@@ -36,4 +34,4 @@ until drop               ;; give the main thread busywork
 swap q-to-v              ;; get contents of receive Q as V
 print                    ;; display contents of V
 
-printViewSource
+View source

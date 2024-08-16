@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Forml
 =====
 
@@ -25,4 +23,4 @@ A contemporary programming language for the discriminating programmer, intended 
         return (z + 1)                  -- type of `hello_world` is inferred to be `JS Num`
     8 == do! hello_world &gt;&gt;= λx = `x + 3`
 
-printViewSource
+View source

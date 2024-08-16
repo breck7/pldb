@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 cosh
 ====
 
@@ -21,4 +19,4 @@ Concatenative command-line shell
 
 lsr; [test m] grep; [f&lt;; [data m] grep] map
 
-printViewSource
+View source

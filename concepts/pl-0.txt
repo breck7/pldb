@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 PL/0
 ====
 
@@ -86,4 +84,4 @@ BEGIN
   ?n; f := 1; CALL fact; !f
 END.
 
-printViewSource
+View source

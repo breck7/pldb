@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 HTL
 ===
 
@@ -20,4 +18,4 @@ Inspired by lit-html and HTM, and referencing the fantastically precise HTML5 sp
 
 html`&lt;span style=&quot;background: ${&quot;yellow; font-style: italic&quot;};&quot;&gt;It’s yellow (and italic).&lt;/span&gt;`
 
-printViewSource
+View source

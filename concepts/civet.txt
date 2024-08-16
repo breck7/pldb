@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Civet
 =====
 
@@ -28,4 +26,4 @@ switch x
   [{type: &quot;text&quot;, content}, ...rest]
     console.log(&quot;leading text&quot;, content)
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Topaz
 =====
 
@@ -38,4 +36,4 @@ let zip {n a b} (left: Vec n a) (right: Vec n b): Vec n (a, b) =
     x :: xs, y :: ys =&gt; (x, y) :: zip xs ys
     ;; No other cases are needed, because the lists are the same length!
 
-printViewSource
+View source

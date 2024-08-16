@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Edge Side Includes
 ==================
 
@@ -18,4 +16,4 @@ Edge Side Includes or ESI is a small markup language for edge level dynamic web 
 
 &lt;esi:include src=&quot;http://example.com/1.html&quot; alt=&quot;http://bak.example.com/2.html&quot; onerror=&quot;continue&quot;/&gt;
 
-printViewSource
+View source

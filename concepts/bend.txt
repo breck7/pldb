@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Bend
 ====
 
@@ -33,4 +31,4 @@ def main():
   # Note that this will overflow the maximum value of a number in Bend
   return Sum(1, 1_000_000)
 
-printViewSource
+View source

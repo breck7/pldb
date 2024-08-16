@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Vim
 ===
 
@@ -29,4 +27,4 @@ while i &lt; 5
   let i += 1
 endwhile
 
-printViewSource
+View source

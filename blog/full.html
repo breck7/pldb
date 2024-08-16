@@ -405,8 +405,8 @@ a.abstractTextLinkParser:hover {
  <a href="../csv.html">CSV</a>
 </div>
 
-<p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollKeyboardNav" style="display:none;"><a href="hello-world.html">hello-world.html</a> · full.html · <a href="douglasCrockford.html">douglasCrockford.html</a><script>document.addEventListener('keydown', function(event) {
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/blog/full.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg xmlns="http://www.w3.org/2000/svg" width="92pt" height="92pt" viewBox="0 0 92 92"><path d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371"/></svg></a>
+<div class="scrollKeyboardNav" style="display:none;"><a href="hello-world.html">hello-world.html</a> · full.html · <a href="stevenDrucker.html">stevenDrucker.html</a><script>document.addEventListener('keydown', function(event) {
   if (document.activeElement !== document.body) return
   if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
   const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
@@ -417,8 +417,77 @@ a.abstractTextLinkParser:hover {
  });</script></div>
 <div class="scrollSection"><h1 class="scrollTitle"><a href="full.html">PLDB.io - a Programming Language DataBase</a></h1>
 </div>
-<div class="scrollColumns" style="column-width:35ch;"><div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="douglasCrockford.html">A brief interview with JSON creator Douglas Crockford</a></h1>
+<div class="scrollColumns" style="column-width:35ch;"><div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="stevenDrucker.html">A brief interview with Microsoft SandDance creator Steven Drucker</a></h1>
+<p class="scrollByLine">by <a href="https://x.com/breckyunits">Breck Yunits</a></p>
+</div>
+<p class="scrollParagraph"><span class="scrollDateline">August 15, 2024 — </span><a href="https://stevenmdrucker.github.io/#/">Steven Drucker's</a> <a href="../concepts/sanddance.html">SandDance</a> (<a href="https://microsoft.github.io/SandDance/app/">⌨️</a>) is both twenty years in the future and timeless. SandDance allows humans to see and interact with data the way you interact with particles in the real world. Steven sat down with us to talk about the origins of SandDance and his 29 years at Microsoft Research. Thank you for your time Steven!</p>
+<figure class="scrollCaptionedFigure" style="width:400px; margin: auto;"><a href="images/sanddance.gif" target="_blank"  ><img src="images/sanddance.gif" width="400" height="314" loading="lazy"></a><figcaption><p class="scrollParagraph">Visualizing PLDB using SandDance.</p></figcaption></figure>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What led you to create SandDance?</h4>
+</div>
+<p class="scrollParagraph">SandDance really comes from a convergence of a lot of different ideas. My background originally was neuroscience, then robotics, then computer graphics.</p>
+<p class="scrollParagraph">I had built particle systems. <a href="https://en.wikipedia.org/wiki/Karl_Sims">Karl Sims</a> is a good friend of mine doing brilliant <a href="https://www.karlsims.com/particle-dreams.html">animated evolutionary creatures</a>. I've always been fascinated by lots of individual collective things, creating some structure out of that.</p>
+<p class="scrollParagraph">I was doing a bunch visualization stuff and finding people often were misunderstanding aggregations. Simpson's paradox. Bayes rule.</p>
+<p class="scrollParagraph">One of the misunderstandings I was having when I was telling stories with data, people would kind of get confused when you show percentages and absolutes. It would be better if you showed them something that was physically realizable. If you could actually say, let's stack these individual particles so that you actually show sums.</p>
+<p class="scrollParagraph">When you see these quantities in absolute numbers of things, it's like "oh my god, that's so clear, why didn't anybody ever show that to me before?"</p>
+<p class="scrollParagraph">I have a colleague who's built something very similar: <a href="https://morphcharts.com/">MorphCharts</a>.</p>
+<p class="scrollParagraph">The impetus was always the same: let's help people understand the information better. It's great to take those raw rows of a dataset and say each point represents a row.</p>
+<p class="scrollParagraph">It really matched well for people's understanding of "what happens when I filter...rearrange...group in different ways...highlight."</p>
+<p class="scrollParagraph">A grammar of interactions.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">You've shown a million points, what would happen if you showed a billion points?</h4>
+</div>
+<p class="scrollParagraph">You're limited by the number of pixels. When you get to that many particles, you need a metaphor.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">How can SandDance help people trust AI generated data visualizations?</h4>
+</div>
+<p class="scrollParagraph">By giving people alternate ways of looking at the data to validate the results.</p>
+<p class="scrollParagraph">If you're doing a pivot, let's see that. If you're doing a filter, let's see that. And that way you can actually see that the operations are happening the way you want. So it's a visual explanation of the thing.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">You've been at Microsoft Research for 29 years. What's kept you there?</h4>
+</div>
+<p class="scrollParagraph">Part of it is a chance to meet with new and different people with different perspectives and constantly be re-energized by interns and projects.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What's the biggest difference between a developer and a researcher?</h4>
+</div>
+<p class="scrollParagraph">A developer, when they hear a problem the first thing they think is "how do I solve this architecturally?"</p>
+<p class="scrollParagraph">The first thing a researcher tends to look at is "what was done before?"</p>
+<p class="scrollParagraph">Both things need to be done to a certain extent.</p>
+<p class="scrollParagraph">You have to start building things to see what's going to happen.</p>
+<p class="scrollParagraph">But it's helpful to see what was done before and what was the context.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">How do you choose what to focus on?</h4>
+</div>
+<p class="scrollParagraph">I am driven by "oh my god that's going to fundamentally change the way I do things."</p>
+<div class="dinkus"><span>⁂</span></div>
+<figure class="scrollCaptionedFigure" style="width:256px; margin: auto;"><a href="images/stevenDrucker.jpg" target="_blank"  ><img src="images/stevenDrucker.jpg" width="256" height="249" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://stevenmdrucker.github.io">Image source</a>. Thank you for your time Steven!</p></figcaption></figure>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h1 class="scrollParagraph">Longer interviews with Steven:</h1>
+</div>
+<ul ><li ><a href="https://www.youtube.com/watch?v=xu8RcuX-bl8">Visualizing Data and Other Big Ideas with Dr. Steven Drucker (2017)</a></li></ul>
+<div class="dinkus"><span>*</span></div>
+<p class="scrollParagraph"><i>This interview lightly edited for clarity and length.</i></p>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<script src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/stevenDrucker.scroll">View source</a>
+</div>
+
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="douglasCrockford.html">A brief interview with JSON creator Douglas Crockford</a></h1>
 <p class="scrollByLine">by <a href="https://x.com/breckyunits">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">August 7, 2024 — </span><a href="https://en.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a> is well known for creating <a href="../concepts/json.html">JSON</a>, which serves billions everyday, but less known is his deep understanding of language design and how much insight he <a href="https://www.crockford.com/">shares with the world</a>. Douglas was generous enough to take a small break from his own projects to chat with us about language design. Thank you for your time Douglas!</p>
@@ -454,29 +523,11 @@ a.abstractTextLinkParser:hover {
 <ul ><li ><a href="https://corecursive.com/json-vs-xml-douglas-crockford/">Corecursive (2023)</a></li></ul>
 <div class="dinkus"><span>*</span></div>
 <p class="scrollParagraph"><i>This interview was edited for length.</i></p>
-<p class="scrollParagraph">printViewSource</p>
-<script>
-document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
- {
-  if (!navigator.clipboard) return
-  const button = document.createElement("span")
-  button.classList.add("scrollCopyButton")
-  block.appendChild(button)
-  button.addEventListener("click", async () => {
-    await navigator.clipboard.writeText(block.innerText)
-    button.classList.add("scrollCopiedButton")
-  })
- }
-))
-</script>
-
-
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/douglasCrockford.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="danielKallin.html">A brief interview with nomnoml creator Daniel Kallin</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="danielKallin.html">A brief interview with nomnoml creator Daniel Kallin</a></h1>
 <p class="scrollByLine">by <a href="https://x.com/breckyunits">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">July 25, 2024 — </span>Daniel Kallin's <a href="https://skanaar.github.io/">brilliant homepage</a> shows technical chops and design passion. Therefore it's not surprising that Daniel created <a href="https://www.nomnoml.com/"><a href="../concepts/nomnoml.html">nomnoml</a></a>: a fast language and tool for generating beautiful diagrams. Daniel sat down with us to talk about nomnoml, which he designed for users to "feel like you're drawing with Ascii". Thank you for your time Daniel!</p>
@@ -497,13 +548,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph">And please do consider other human languages than just English that your parser should support. There is plenty of Nomnoml diagrams with labels in Chinese or Korean, and those characters have to be supported in a good way.</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:600px; margin: auto;"><a href="images/danielKallin.jpg" target="_blank"  ><img src="images/danielKallin.jpg" width="600" height="600" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://skanaar.github.io/daniel/cv.html">Image source</a>. Thank you for your time Daniel!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/danielKallin.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="leetSheets.html">Introducing a new term: Leet Sheets</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="leetSheets.html">Introducing a new term: Leet Sheets</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">July 15, 2024 — </span>Today PLDB introduces a new term to the English Language: "Leet Sheet".</p>
@@ -538,13 +587,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph">Yes. <a href="../concepts/scroll.html">Scroll</a> is the language PLDB is written in and the Leet Sheet for Scroll currently is below and is <a href="https://github.com/breck7/scroll/blob/main/leetsheet.scroll">autogenerated from the Scroll source code</a>:</p>
 <embed src="scrollLeetSheet.pdf" width="500" height="375" type="application/pdf">
 </div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/leetSheets.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="addLanguageDemo.html">Video: Adding a language to PLDB</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="addLanguageDemo.html">Video: Adding a language to PLDB</a></h1>
 <p class="scrollByLine">by <a href="https://twitter.com/breckyunits">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">June 22, 2024 — </span>How often do you pair program?</p>
@@ -560,70 +607,58 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <div class="dinkus"><span>*</span></div>
 <figure class="scrollCaptionedFigure" style=""><div class="scrollYouTubeHolder"><iframe class="scrollYouTubeEmbed" src="https://www.youtube.com/embed/az7T-GgxiKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></figure>
 <div class="dinkus"><span>⁂</span></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/addLanguageDemo.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="aSingleCreator.html">Every top 10 programming language has a single creator</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="aSingleCreator.html">Every top 10 programming language has a single creator</a></h1>
 <p class="scrollByLine">by <a href="https://breckyunits.com/">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">May 29, 2024 — </span><a href="https://www.i-programmer.info/news/98-languages/17222-at-what-age-do-programmers-write-languages.html">Janet's Swift post</a> sparked me to add a computed measure to PLDB calculating the number of creators a language has. The results are below. You can also <a href="../lists/explorer.html#columns=rank~name~id~appeared~tags~creators~numberOfCreators~repoStats_committers">explore the data yourself</a>.</p>
 <figure class="scrollCaptionedFigure" style="width:1240px; margin: auto;"><a href="https://www.datawrapper.de/_/ejd5e/" target=""  ><img src="aSingleCreator.png" width="1240" height="944" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://www.datawrapper.de/_/ejd5e/">Interactive Version</a></p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/aSingleCreator.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="ages.html">At What Age Do Programmers Write Languages?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="ages.html">At What Age Do Programmers Write Languages?</a></h1>
 <div style="text-align: center;" class="scrollDateline">May 29, 2024</div>
 </div>
 <p class="scrollParagraph"><a href="https://www.i-programmer.info/news/98-languages/17222-at-what-age-do-programmers-write-languages.html">A new post from Janet Swift.</a></p>
 <figure class="scrollCaptionedFigure" style="width:339px; margin: auto;"><a href="https://www.i-programmer.info/news/98-languages/17222-at-what-age-do-programmers-write-languages.html" target=""  ><img src="janetSwift.jpeg" width="339" height="264" loading="lazy"></a></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/ages.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="foundationScore.html">What languages do the people who build languages use?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="foundationScore.html">What languages do the people who build languages use?</a></h1>
 <p class="scrollByLine">by <a href="https://breckyunits.com/">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">May 28, 2024 — </span>PLDB now has <em>foundationScore</em>, which measures how often a language is used in the main implementations of other languages.</p>
 <p class="scrollParagraph">To calculate foundationScore, we download the git repos for all open source languages in PLDB (which is >98% of them), run <a href="../concepts/cloc.html">cloc</a> on each, and sum the output.</p>
 <p class="scrollParagraph">The results are below. Click the image for the interactive version. You can also <a href="../lists/explorer.html#columns=rank~name~id~appeared~tags~creators~writtenIn~foundationScore&order=7.desc">see all the foundationScore data in the PLDB Explorer</a>.</p>
 <figure class="scrollCaptionedFigure" style="width:1240px; margin: auto;"><a href="https://www.datawrapper.de/_/d5QKD/" target=""  ><img src="foundationScore.png" width="1240" height="956" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://www.datawrapper.de/_/d5QKD/">Interactive Version</a></p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/foundationScore.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="versions.html">What can we learn from programming language version numbers?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="versions.html">What can we learn from programming language version numbers?</a></h1>
 <div style="text-align: center;" class="scrollDateline">May 27, 2024</div>
 </div>
 <figure class="scrollCaptionedFigure" style="width:1344px; margin: auto;"><a href="https://breckyunits.com/versionNumbers.html" target=""  ><img src="versionNumbers.png" width="1344" height="1168" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://breckyunits.com/versionNumbers.html">What can we learn from programming language version numbers?</a></p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/versions.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="ageExploration.html">Exploration of the ages of programming language creators</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="ageExploration.html">Exploration of the ages of programming language creators</a></h1>
 <div style="text-align: center;" class="scrollDateline">May 25, 2024</div>
 </div>
 <p class="scrollParagraph"><a href="https://github.com/antononcube">Anton Antonov</a> posted an analysis of PLDB's age data.</p>
 <p class="scrollParagraph">Click the image below to view <a href="https://community.wolfram.com/groups/-/m/t/3180327">his <strong><em>interactive</em></strong> notebook</a>.</p>
 <figure class="scrollCaptionedFigure" style="width:934px; margin: auto;"><a href="https://community.wolfram.com/groups/-/m/t/3180327" target=""  ><img src="antonov.png" width="934" height="1174" loading="lazy"></a><figcaption><p class="scrollParagraph">From Anton Antonov's <a href="https://community.wolfram.com/groups/-/m/t/3180327">Computational exploration for the ages of programming language creators dataset</a>.</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/ageExploration.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="ageAtCreation.html">The Ages of Programming Language Creators</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="ageAtCreation.html">The Ages of Programming Language Creators</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">May 19, 2024 — </span>Dennis Ritchie created <a href="../concepts/c.html">C</a> when he was 31. Douglas Crockford created <a href="../concepts/json.html">JSON</a> when he was 46. <a href="../concepts/j.html">Ken Iverson created J</a> at age 70. Here is a new dataset with "ageAtCreation" for 185 programming languages.</p>
@@ -651,13 +686,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <ul ><li ><a href="age.tsv">Download the data</a></li>
 <li >A reddit user <a href="https://www.reddit.com/r/programming/comments/1cw2ri4/comment/l4tt60k/">shared</a> some related work ;) from 2012: <a href="https://archive.fo/uB8x4">The Secret of a Successful Programming Language? A Really Great Beard</a>.</li></ul>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=ageAtCreation.html.ohayo&data=html.h1%20The%20Ages%20of%20Programming%20Language%20Creators%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fblog%2Fage.tsv%0A%20vega.histogram%0A%20%20xColumn%20ageAtCreation%0A%20columns.describe%0A%20%20tables.basic%0A%20filter.where%20ageAtCreation%20%3E%2050%0A%20%20columns.describe%0A%20%20%20tables.basic%0A%20filter.where%20ageAtCreation%20%3E%2040%0A%20%20columns.describe%0A%20%20%20tables.basic%0A%20tables.basic%0A%20vega.scatter%0A%20%20xColumn%20ageAtCreation%0A%20%20yColumn%20pldbScore">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/ageAtCreation.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="mikecowlishaw-interview.html">A brief interview with Rexx creator Mike Cowlishaw</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="mikecowlishaw-interview.html">A brief interview with Rexx creator Mike Cowlishaw</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">February 27, 2023 — </span><a href="http://www.manmrk.net/tutorials/rexx/MFC/mfc.html">Mike Cowlishaw</a> is a distinguished computer scientist and creator of <a href="../concepts/rexx.html">Rexx</a> and <a href="../concepts/netrexx.html">NetRexx</a>. He has worked on many other programming languages, including <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/c.html">C,</a> and <a href="../concepts/java.html">Java</a>. Dr. Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick. He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow. His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)</p>
@@ -676,13 +709,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </div>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:364px; margin: auto;"><a href="images/cowlishaw.jpg" target="_blank"  ><img src="images/cowlishaw.jpg" width="364" height="500" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://en.wikipedia.org/wiki/Mike_Cowlishaw#/media/File:Mike_Cowlishaw_2005.jpg">Image source</a>. Mahalo for your time, Dr Cowlishaw!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/mikecowlishaw-interview.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="JohnOusterhout.html">A brief interview with Tcl creator John Ousterhout</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="JohnOusterhout.html">A brief interview with Tcl creator John Ousterhout</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">February 8, 2023 — </span><a href="https://web.stanford.edu/~ouster/cgi-bin/home.php">Dr. John Ousterhout</a> is a computer science luminary who has made significant contributions to the field of computer science, particularly in the areas of operating systems and file systems. He is the creator of the <a href="../concepts/tcl.html">Tcl</a> scripting language, and has also worked on several major software projects, including the <a href="https://en.wikipedia.org/wiki/Log-structured_file_system">Log-Structured file system</a> and the <a href="../concepts/sprite-os.html">Sprite operating system</a>. John Ousterhout's creation of Tcl has had a lasting impact on the technology industry, transforming the way developers think about scripting and automation.</p>
@@ -704,13 +735,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph">One interesting note on this. Historically, I think the most widely used programming linkages have come not from the programming language research committee, but rather from people who build systems and wanted a language to help themselves. PL researchers tend to create languages that are useful for PL researchers: they have interesting theoretical and conceptual properties (e.g., <a href="../concepts/ml.html">ML</a>) but aren't usually useful for real systems. Systems people create languages that are useful for systems builders, so they get widely adopted. Examples are <a href="../concepts/c.html">C</a>, <a href="../concepts/cpp.html">C++</a> (I think?), <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/java.html">Java</a>, and <a href="../concepts/go.html">Go</a>. I would put <a href="../concepts/tcl.html">Tcl</a> in this category as well, and perhaps <a href="../concepts/python.html">Python</a> also?</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:1638px; margin: auto;"><a href="images/JohnO.jpg" target="_blank"  ><img src="images/JohnO.jpg" width="1638" height="1068" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://www.facesofopensource.com/">Image source</a>. Thank you for your time Dr. Ousterhout!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/JohnOusterhout.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="josefPospisilInterview.html">A brief interview with Janet contributor Josef Pospíšil</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="josefPospisilInterview.html">A brief interview with Janet contributor Josef Pospíšil</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">January 24, 2023 — </span><a href="https://github.com/pepe">Josef Pospíšil</a> (Pepe) is a programming enthusiast, first with <a href="../concepts/basic.html">Basic</a> in 1986, then the first <a href="../concepts/ruby.html">Rubyist</a> in the Czech Republic, and now a contributor to the language <a href="../concepts/janet.html">Janet</a>.</p>
@@ -731,13 +760,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </div>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:460px; margin: auto;"><a href="images/pospisil.jpeg" target="_blank"  ><img src="images/pospisil.jpeg" width="460" height="460" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fpepe&psig=AOvVaw0skSHUmj_9LygxekcXJiuQ&ust=1674669821093000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCODGqbDl4PwCFQAAAAAdAAAAABAE">Image source</a>. Thank you for your time Pepe and best of luck on the upcoming release!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/josefPospisilInterview.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="kartik.html">A brief interview with Mu creator Dr. Kartik Agaram</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="kartik.html">A brief interview with Mu creator Dr. Kartik Agaram</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 22, 2022 — </span><a href="http://akkartik.name/">Dr. Kartik Agaram</a> is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.</p>
@@ -774,13 +801,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph"><strong>Dr. Agaram:</strong> When I started Mu I'd been working in tech companies for a while, and I was disillusioned. Large companies are slow, bureaucratic and permit all kinds of shoddy work and weighty-seeming over-engineering. It seemed to me that they should be getting at least technically out-competed by smaller companies, even if they still often win from a business perspective. (I was very influenced early on by <a href="https://en.wikipedia.org/wiki/Tracy_Kidder">Tracy Kidder's</a> book, <em>"The soul of a new machine"</em> about how Data General went out of business in spite of building a technically superior computer.) But when I looked around, the smaller companies didn't seem that much better. They were all trying furiously to grow, not just in adoption but also in the population of their programmers. They didn't seem more capital-efficient. Software is supposed to be scalable. Why are we having such trouble keeping our programs running without constant attention? I think there's a rot in the foundations that we keep trying to paper over and forget about. We should instead keep exposing it, reminding ourselves of it, trying new ways to rid ourselves of it.</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:1114px; margin: auto;"><a href="images/kartikAgaram.jpg" target="_blank"  ><img src="images/kartikAgaram.jpg" width="1114" height="1115" loading="lazy"></a><figcaption><p class="scrollParagraph">You have my heartfelt gratitude Dr. Agaram!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/kartik.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="niklausWirth.html">A brief interview with Pascal and Oberon creator Dr. Niklaus Wirth</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="niklausWirth.html">A brief interview with Pascal and Oberon creator Dr. Niklaus Wirth</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 18, 2022 — </span><a href="https://people.inf.ethz.ch/wirth/">Niklaus Wirth</a>(<a href="https://computerhistory.org/blog/in-memoriam-niklaus-wirth-1934-2024/">🙏🏽</a>) has designed programming languages all over the world that have had immense impact. And yet, he still maintains great humility and somehow finds time for mentoring the next crop of programming language designers. Thank you for your time Dr. Wirth!</p>
@@ -798,13 +823,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph"><strong>Dr. Wirth:</strong> I would not recommend the design of a new language, except perhaps for special applications. The common languages, as poor and complex as they are, are too much entrenched all over the world. I would tell them to look at my "<a href="../concepts/oberon.html">Oberon</a>".</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:570px; margin: auto;"><a href="images/wirth.jpeg" target="_blank"  ><img src="images/wirth.jpeg" width="570" height="350" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://elmidiaspora.az/demo.ict.az/en/news/2139">Image source</a>. Thank you for your time Dr. Wirth!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/niklausWirth.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="brianKernighan.html">A brief interview with AWK creator Dr. Brian Kernighan</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="brianKernighan.html">A brief interview with AWK creator Dr. Brian Kernighan</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 15, 2022 — </span><a href="https://www.cs.princeton.edu/~bwk/">Dr. Brian Kernighan</a> is a Canadian computer scientist who contributed to the development of <a href="../concepts/unix.html">UNIX</a> at Bell Labs. Along with Dennis Richie, he co-authored a fundamental book on C, <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">The C Programming Language</a>. He has been training the next generation of programmers at Princeton University since 2000 and has been monumental in his contribution to the computer science community at large. He wrote the first documented “Hello World!” program and to that we say, “Hello, Brian!”.</p>
@@ -823,13 +846,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph"><strong>Dr. Kernighan:</strong> Try designing and implementing small and special purpose languages. They are lots of fun, often very useful, and a great deal easier than trying to create a replacement for <a href="../concepts/rust.html">Rust</a> or <a href="../concepts/cpp.html">C++</a>. Look for things that could be automated if you had the right kind of language to spell out the steps, then create a simple compiler and runtime. Jon Bentley wrote a couple of <a href="https://staff.um.edu.mt/afra1/seminar/little-languages.pdf">articles</a> on this long ago that are still relevant.</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:241px; margin: auto;"><a href="images/brianKernighan.gif" target="_blank"  ><img src="images/brianKernighan.gif" width="241" height="247" loading="lazy"></a><figcaption><p class="scrollParagraph">Image from <a href="https://commons.wikimedia.org/wiki/File:Brian_kernighan2.gif">Wikimedia Commons</a>. Thank you for your time Dr. Kernighan!</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/brianKernighan.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="scottFalhmanInterview.html">A brief interview with Common Lisp creator Dr. Scott Fahlman</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="scottFalhmanInterview.html">A brief interview with Common Lisp creator Dr. Scott Fahlman</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 11, 2022 — </span><a href="https://www.cs.cmu.edu/~sef/">Dr. Scott Fahlman</a> is a Professor Emeritus in the Carnegie Mellon’s School of Computer Science. He is a computer programming language connoisseur and the original neural network jedi master. He was one of the core developers of the <a href="../concepts/common-lisp.html">Common Lisp Language</a> and his current work includes Artificial Intelligence. Dr Fahlman is as notably kind as he is a humble scientist. Befittingly, he is the originator of the internet's first emoticon, sideway smile :-)</p>
@@ -855,13 +876,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph">So, in the mid-1990s, I decided that I was not longer going to put effort into building programming languages and tools, when the choice of which languages became popular was essentially a lottery.  Since then, my focus has been on AI research, and part of that involves the design of planning systems that (maybe) can eliminate the need for most programming.  You tell them what you want, as you might describe it to a smart grad student, they maybe ask some clarification questions, and then they go do it.  That only works if they know enough about the world and have enough "common sense" to avoid blunders.  I still use Common Lisp for developing my AI implementations, but if there is commercial interest I can translate the code into <a href="../concepts/python.html">Python</a> or whatever, or hire someone to do this.</p>
 <div class="dinkus"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:1440px; margin: auto;"><a href="images/scottFahlman.webp" target="_blank"  ><img src="images/scottFahlman.webp" width="1440" height="807" loading="lazy"></a><figcaption><p class="scrollParagraph"><a href="https://theculturetrip.com/north-america/usa/pennsylvania/articles/meet-scott-fahlman-the-guy-who-created-the-first-emoticon/">Image source</a>. Thank you for your time Dr. Fahlman! :-)</p></figcaption></figure>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/scottFalhmanInterview.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="originCountries11-3-2022.html">Where are the most programming languages created?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="originCountries11-3-2022.html">Where are the most programming languages created?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 <div style="text-align: center;" class="scrollDateline">November 3, 2022</div>
 </div>
@@ -872,25 +891,21 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <div class="scrollSection"><h2 class="scrollParagraph">Previous posts in this series</h2>
 </div>
 <p class="scrollParagraph">readingList</p>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/originCountries11-3-2022.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="number-of-programming-languages.html">What is the growth in programming languages over time?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="number-of-programming-languages.html">What is the growth in programming languages over time?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 <div style="text-align: center;" class="scrollDateline">September 2, 2022</div>
 </div>
 <figure class="scrollCaptionedFigure" style="width:850px; margin: auto;"><a href="images/languageTrends.svg" target="_blank"  ><img src="images/languageTrends.svg" width="850" height="600" loading="lazy"></a><figcaption><p class="scrollParagraph">The above SVG is also available as a <a href="images/languageTrends.png">png</a>.</p></figcaption></figure>
 <p class="scrollParagraph">The <a href="explorers/number-of-programming-languages.explorer">code</a> for the visualization above was written in the <a href="../concepts/explorer.html">Explorer language</a>.</p>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/number-of-programming-languages.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="languages-of-the-year-1972-2022.html">Languages of the year: 1972 - 2022</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="languages-of-the-year-1972-2022.html">Languages of the year: 1972 - 2022</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:925px; margin: auto;"><a href="langOfYearPast50.png" target="_blank"  ><img src="langOfYearPast50.png" width="925" height="526" loading="lazy"></a></figure>
@@ -1215,13 +1230,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
   e.currentTarget.classList.toggle('expandedTable');
  });
  </script>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/languages-of-the-year-1972-2022.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="the-one-letter-programming-languages.html">The One Letter Programming Languages</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="the-one-letter-programming-languages.html">The One Letter Programming Languages</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:1642px; margin: auto;"><a href="oneLetterLangs.png" target="_blank"  ><img src="oneLetterLangs.png" width="1642" height="732" loading="lazy"></a></figure>
@@ -1376,13 +1389,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
  </script>
 <p class="scrollParagraph">I made the viz in Keynote and by hacking on <a href="https://breckyunits.com/keyboard/">this repo</a>.</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=the-one-letter-programming-languages.html.ohayo&data=html.h1%20The%20Single%20Letter%20Programming%20Languages%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20tables.basic%0A%20%20columns.keep%20title%20id%20aka%20appeared%20type%20rank%0A%20%20%20filter.where%20aka%20!%3D%0A%20%20%20%20text.length%20aka%0A%20%20%20%20%20columns.setType%20akaLength%20number%0A%20%20%20%20%20%20filter.where%20akaLength%20%3C%202%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20text.length%20title%0A%20%20%20%20columns.setType%20titleLength%20number%0A%20%20%20%20%20filter.where%20titleLength%20%3C%202%0A%20%20%20%20%20%20tables.basic">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/the-one-letter-programming-languages.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="print-debugging-in-over-300-languages.html">"print() debugging" in over 300 languages</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="print-debugging-in-over-300-languages.html">"print() debugging" in over 300 languages</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:591px; margin: auto;"><a href="print-debugging.png" target="_blank"  ><img src="print-debugging.png" width="591" height="236" loading="lazy"></a></figure>
@@ -1876,13 +1887,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
  });
  </script>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=print-debugging-in-over-300-languages.html.ohayo&data=html.h1%20Does%20every%20programming%20language%20have%20a%20central%20package%20repository%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20tables.basic%0A%20filter.where%20printToken%20!%3D%0A%20%20tables.basic%0A%20%20group.by%20printToken%0A%20%20%20rows.sortByReverse%20count%0A%20%20%20%20tables.basic">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/print-debugging-in-over-300-languages.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="a-language-without-comments.html">A Language Without Comments</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="a-language-without-comments.html">A Language Without Comments</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:1201px; margin: auto;"><a href="a-language-without-comments.png" target="_blank"  ><img src="a-language-without-comments.png" width="1201" height="675" loading="lazy"></a></figure>
@@ -1898,13 +1907,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <div class="scrollSection"><h2 class="scrollParagraph">Some Supersets of JSON have comments</h2>
 <p class="scrollParagraph">A number of JSON derivatives added comments back, such as <a href="../concepts/json5.html">JSON5</a>, <a href="../concepts/hjson.html">Hjson</a> and <a href="../concepts/json-with-comments.html">JSON with Comments</a>.</p>
 </div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/a-language-without-comments.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="does-every-programming-language-support-line-comments.html">Does every programming language have line comments?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="does-every-programming-language-support-line-comments.html">Does every programming language have line comments?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:1122px; margin: auto;"><a href="line-comments.png" target="_blank"  ><img src="line-comments.png" width="1122" height="900" loading="lazy"></a></figure>
@@ -1929,13 +1936,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <p class="scrollParagraph">A few languages also support multiple line comment tokens. The <a href="../concepts/ini.html">Ini config format</a> supports both <code>;</code> and <code>#</code>.</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://observablehq.com/@breck7/line-comments-in-programming-languages">Observable</a></div>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=does-every-programming-language-support-line-comments.html.ohayo&data=html.h1%20Line%20comments%0Aweb.get%20https%3A%2F%2Fpldb.io%2Flanguages.csv%0A%20filter.where%20rank%20%3C%20300%0A%20%20columns.keep%20appeared%20title%20rank%20features.hasLineComments%20lineCommentToken%0A%20%20%20columns.rename%20features.hasLineComments%20hasLineComments%0A%20%20%20%20filter.where%20hasLineComments%20!%3D%0A%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20group.by%20hasLineComments%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20filter.where%20hasLineComments%20%3D%20false%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20filter.where%20lineCommentToken%20!%3D%0A%20%20%20%20%20%20%20group.by%20lineCommentToken%0A%20%20%20%20%20%20%20%20reduce%20appeared%20min%20firstAppeared%0A%20%20%20%20%20%20%20%20roughjs.pie%20Line%20comment%20token%20usage%0A%20%20%20%20%20%20%20%20%20label%20lineCommentToken%0A%20%20%20%20%20%20%20%20%20value%20count%0A%20%20%20%20%20%20%20%20rows.sortByReverse%20count%0A%20%20%20%20%20%20%20%20%20tables.basic">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/does-every-programming-language-support-line-comments.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-5.html">The New PLDB</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-5.html">The New PLDB</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">June 23, 2022 — </span>I <a href="hello-world.html">started</a> PLDB 1,681 days ago(~4.5 years). After a big lull, I am excited to announce the new release!</p>
@@ -1945,13 +1950,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <li >each language page now lists all fields.</li>
 <li >the site now runs on Scroll instead of Jekyll.</li></ul>
 <p class="scrollParagraph">I am excited to have this release behind me and hope to get more data, more crawling scripts, and more analysis up over the next few months. Thanks for reading!</p>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/hello-world-year-5.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-3.html">Hello, world...year 3!</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-3.html">Hello, world...year 3!</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 18, 2019 — </span>I started PLDB 2 year ago today! Since that time:</p>
@@ -1960,13 +1963,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <li >I also added the <a href="../lists/extensions.html">file extensions page</a> which lists over 1,300 file extensions!</li>
 <li >The programming language design <a href="../lists/resources.html">conference page</a> has 6 conferences listed for 2020.</li></ul>
 <p class="scrollParagraph">Unfortunately the number of articles on PLDB is 14  (counting this one). Just like last year, limited time and resources has meant building up the dataset took priority. Hopefully the next year will see a lot of growth in number of posts!</p>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/hello-world-year-3.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-major-global-programming-competitions-are-there.html">How many major global programming competitions are there?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-major-global-programming-competitions-are-there.html">How many major global programming competitions are there?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">September 7, 2019 — </span>I have done many problems on <a href="https://projecteuler.net">Project Euler</a> but I've never participated in <a href="https://en.wikipedia.org/wiki/Competitive_programming">competitive programming</a>. The other day I got curious, what does the competitive programming landscape look like?</p>
@@ -2111,13 +2112,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <p class="scrollParagraph">It would be interesting to see trends in the number of participants and prize amounts in these competitions over time. I'm curious if <a href="https://en.wikipedia.org/wiki/Esports">eSports</a> with prizes in the millions, will sap people away from programming competitions.</p>
 </div>
 <div class="dinkus"><span>⁂</span></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/how-many-major-global-programming-competitions-are-there.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-programmers-are-there-in-the-world.html">How many programmers are there in the world?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-programmers-are-there-in-the-world.html">How many programmers are there in the world?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">May 29, 2019 — </span>There are around <a href="https://www.census.gov/popclock/">7.574</a> billion people in the world. How many of them are programmers?</p>
@@ -2140,13 +2139,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <p class="scrollParagraph">I will define a programmer as someone who edits a text document in a <a href="../lists/languages.html">programming language</a> at least once a week, on average, in an IDE or text editor.</p>
 <p class="scrollParagraph">My early guess: <strong>there were between 10 and 30 million programmers in 2018</strong>.</p>
 <div class="dinkus"><span>⁂</span></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/how-many-programmers-are-there-in-the-world.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="does-every-programming-language-have-a-central-package-repository.html">Does every programming language have a central package repository?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="does-every-programming-language-have-a-central-package-repository.html">Does every programming language have a central package repository?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">February 7, 2019 — </span>Like millions of other programmers, every day I depend on central package repositories (CR) like <a href="https://npmjs.org">npm</a>, <a href="https://pypi.python.org">PyPI</a> and <a href="https://cran.r-project.org">CRAN</a>.</p>
@@ -2373,13 +2370,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <p class="scrollParagraph">Thanks to <a href="https://github.com/PallHaraldsson">PallHaraldsson</a> for reviewing this post and encouraging it to get updated.</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://observablehq.com/@breck7/languages-with-central-package-repositories">Observable</a></div>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=does-every-programming-language-have-a-central-package-repository.html.ohayo&data=html.h1%20Does%20every%20programming%20language%20have%20a%20central%20package%20repository%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20filter.where%20appeared%20%3E%201950%0A%20%20columns.keep%20appeared%20packageRepository%20title%0A%20%20%20columns.setType%20appeared%20year%0A%20%20%20%20columns.rename%20packageRepository%20cpr%0A%20%20%20%20%20group.by%20cpr%0A%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20filter.where%20cpr%20!%3D%0A%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20group.by%20appeared%0A%20%20%20%20%20%20%20vega.bar%0A%20%20%20%20%20%20%20%20yColumn%20count">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/does-every-programming-language-have-a-central-package-repository.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="which-programming-languages-use-indentation.html">Which programming languages use indentation?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="which-programming-languages-use-indentation.html">Which programming languages use indentation?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">January 24, 2019 — </span><a href="../concepts/python.html">Python</a>, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these <a href="https://en.wikipedia.org/wiki/Off-side_rule">offside</a> languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.</p>
@@ -2411,13 +2406,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <div class="dinkus"><span>*</span></div>
 <p class="scrollParagraph">UPDATE: masonic on HackerNews pointed out that <a href="../concepts/cobol.html">COBOL</a> should be included on this list. The column position of tokens is indeed significant in COBOL (and <a href="../concepts/fortran.html">FORTRAN</a> too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=which-programming-languages-use-indentation.html.ohayo&data=html.h1%20Which%20programming%20languages%20use%20indentation%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20filter.where%20appeared%20%3E%201950%0A%20%20columns.keep%20appeared%20title%20features.hasSemanticIndentation%0A%20%20%20columns.setType%20appeared%20year%0A%20%20%20%20columns.rename%20features.hasSemanticIndentation%20indents%0A%20%20%20%20%20fill.missing%20indents%20false%0A%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20group.by%20indents%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20%20vega.bar%20Languages%20and%20Semantic%20Indentation%0A%20%20%20%20%20%20group.by%20indents%20appeared%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20%20vega.bar%20Proportion%20of%20Languages%20Created%20With%20Semantic%20Indentation%20by%20Year%0A%20%20%20%20%20%20%20%20xColumn%20appeared%0A%20%20%20%20%20%20%20%20yColumn%20count%0A%20%20%20%20%20%20%20%20colorColumn%20indents%0A%20%20%20%20%20%20filter.where%20indents%20%3D%20true%0A%20%20%20%20%20%20%20group.by%20appeared%0A%20%20%20%20%20%20%20%20vega.bar%20How%20many%20Languages%20with%20Semantic%20Indentation%20Created%20By%20Year%0A%20%20%20%20%20%20%20%20%20yColumn%20count">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/which-programming-languages-use-indentation.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-2.html">Hello, world...year 2!</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world-year-2.html">Hello, world...year 2!</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 18, 2018 — </span>I started PLDB 1 year ago today! Since that time:</p>
@@ -2425,13 +2418,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <li >PLDB has gone from less than 1GB to over 140GB of raw data! A 100x+ increase!</li>
 <li >PLDB has gone from tracking a few dozen dimensions to over 1,350! A 30x+ increase!</li></ul>
 <p class="scrollParagraph">Unfortunately the number of articles on PLDB is 9  (counting this one). Limited time and resources has meant building up the dataset took priority. Hopefully the next year will see a lot of growth in number of posts!</p>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/hello-world-year-2.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="when-did-github-become-the-place-to-create-new-programming-languages.html">When did GitHub become the place to host new programming language projects?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="when-did-github-become-the-place-to-create-new-programming-languages.html">When did GitHub become the place to host new programming language projects?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 9, 2018 — </span>Before GitHub started in 2008, the source code for nascent programming languages was stored in a variety of places. In the early days it was physical media; later on it was publicly accessible servers; and even later it started moving to online source control systems like self-hosted SVN servers or Sourceforce.</p>
@@ -2797,13 +2788,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
  });
  </script>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=when-did-github-become-the-place-to-create-new-programming-languages.html.ohayo&data=html.h1%20When%20did%20GitHub%20become%20the%20place%20to%20host%20new%20programming%20language%20projects%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20filter.where%20appeared%20%3E%201950%0A%20%20columns.setType%20githubRepo%20boolean%0A%20%20%20columns.setType%20appeared%20year%0A%20%20%20%20rows.sortBy%20appeared%0A%20%20%20%20%20group.by%20appeared%20githubRepo%0A%20%20%20%20%20%20vega.bar%0A%20%20%20%20%20%20%20colorColumn%20githubRepo%0A%20%20%20%20%20%20%20yColumn%20count">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/when-did-github-become-the-place-to-create-new-programming-languages.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="what-letter-should-your-language-start-with.html">What letters do programming languages start with?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="what-letter-should-your-language-start-with.html">What letters do programming languages start with?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">October 28, 2018 — </span>As the chart below shows, the number of programming languages beginning with a certain letter varies as much as 10x by letter.</p>
@@ -2903,13 +2892,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
  });
  </script>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=what-letter-should-your-language-start-with.html.ohayo&data=html.h1%20What%20letters%20do%20programming%20languages%20start%20with%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20hidden%0A%20columns.keep%20title%20type%0A%20%20hidden%0A%20%20text.firstLetter%20title%0A%20%20%20hidden%0A%20%20%20text.toLowerCase%20firstLetter%0A%20%20%20%20hidden%0A%20%20%20%20group.by%20firstLetter%0A%20%20%20%20%20hidden%0A%20%20%20%20%20vega.bar%20How%20many%20programming%20language%20names%20begin%20with%20each%20letter%3F%0A%20%20%20%20%20rows.sortByReverse%20count%0A%20%20%20%20%20%20hidden%0A%20%20%20%20%20%20tables.basic">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/what-letter-should-your-language-start-with.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="what-is-the-growth-in-programming-languages-over-time.html">What is the growth in programming languages over time?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="what-is-the-growth-in-programming-languages-over-time.html">What is the growth in programming languages over time?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">December 12, 2017 — </span>As I build up my database of programming languages I hope to be able to answer questions like:</p>
@@ -3752,13 +3739,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 </div>
 <p class="scrollParagraph">The data in this post comes from the PLDB database. It is possible to build a continually updating version of this article that updates as more data comes in.</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=what-is-the-growth-in-programming-languages-over-time.html.ohayo&data=html.h1%20What%20is%20the%20growth%20in%20programming%20languages%20over%20time%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20filter.where%20appeared%20%3E%201940%0A%20%20group.by%20appeared%0A%20%20%20rows.sortBy%20appeared%0A%20%20%20%20rows.runningTotal%20count%0A%20%20%20%20%20columns.setType%20appeared%20year%0A%20%20%20%20%20%20vega.bar%20Number%20of%20Languages%20Created%20Each%20Year%0A%20%20%20%20%20%20%20xColumn%20appeared%0A%20%20%20%20%20%20%20yColumn%20count%0A%20%20%20%20%20%20vega.line%20Cumulative%20Number%20of%20Languages%0A%20%20%20%20%20%20%20xColumn%20appeared%0A%20%20%20%20%20%20%20yColumn%20total">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/what-is-the-growth-in-programming-languages-over-time.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="what-are-the-best-programming-language-visualizations.html">What are the best programming language visualizations?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="what-are-the-best-programming-language-visualizations.html">What are the best programming language visualizations?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">December 11, 2017 — </span>I was looking to spruce up the walls with some interesting posters and found a few well designed visuals.</p>
@@ -3832,13 +3817,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
   e.currentTarget.classList.toggle('expandedTable');
  });
  </script>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/what-are-the-best-programming-language-visualizations.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-web-apis-are-there-in-the-world.html">How Many Web APIs are there in the World?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-web-apis-are-there-in-the-world.html">How Many Web APIs are there in the World?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 25, 2017 — </span>Last week I explored the <a href="how-many-programming-languages-are-there-in-the-world.html">question</a> "how many programming languages are there in the world?"</p>
@@ -3866,13 +3849,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <div class="scrollSection"><h1 class="scrollParagraph">Reproducibility Notes:</h1>
 <p class="scrollParagraph">My ad hoc estimates are based on checking the PLDB database, the datasets listed above, and additional web sources.</p>
 </div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/how-many-web-apis-are-there-in-the-world.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-programming-languages-are-there-in-the-world.html">How Many Programming Languages are there in the World?</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="how-many-programming-languages-are-there-in-the-world.html">How Many Programming Languages are there in the World?</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 20, 2017 — </span><a href="https://www.ethnologue.com/guides/how-many-languages">~7,099</a> spoken languages exist. But how many programming languages exist?</p>
@@ -3912,13 +3893,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <p class="scrollParagraph">A hard count of programming languages was made by querying the PLDB database, which consists of thousands of human-checked facts about programming languages. Confidence intervals were added ad hoc through spot checking with the reference lists above.</p>
 </div>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=how-many-programming-languages-are-there-in-the-world.html.ohayo&data=html.h1%20How%20Many%20Programming%20Languages%20are%20there%20in%20the%20World%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20filter.where%20type%20%3D%20pl%0A%20%20show.rowCount">Ohayo</a></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/how-many-programming-languages-are-there-in-the-world.scroll">View source</a>
 </div>
 
-<div class="scrollSnippetContainer"><p class="scrollParagraph">printViewSourceBadge</p>
-<div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world.html">Hello, world!</a></h1>
+<div class="scrollSnippetContainer"><div class="scrollSection"><h1 class="scrollTitle"><a href="hello-world.html">Hello, world!</a></h1>
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <p class="scrollParagraph"><span class="scrollDateline">November 18, 2017 — </span>Welcome to PLDB: a Programming Language Database!</p>
@@ -3927,12 +3906,11 @@ Suppose you are using JSON to keep configuration files, which you would like to 
 <ol  start="1."><li ><strong>Programming language creators.</strong> PLDB is organized big data to help you create great new languages, and improve existing ones. When making design decisions, quickly look up what features other languages have tried. Benefit from the experiences of thousands that have built languages before you. If you are researching something and can't find what you need here, you can add it and send a pull request, or <a href="https://x.com/breckyunits">share your request on Twitter</a>.</li>
 <li ><strong>Programming language users.</strong> PLDB provides a data-driven view of the programming language universe, to demystify the world of programming languages for you, and provide sound strategic and tactical advice to help you in your projects and your career. If you have a question not answered by the data here, you can add it and send a pull request, or <a href="https://x.com/breckyunits">share your request on Twitter</a>.</li></ol>
 <div class="dinkus"><span>⁂</span></div>
-<p class="scrollParagraph">printViewSource</p>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/hello-world.scroll">View source</a>
 </div></div>
 </div>
-<p class="scrollParagraph">printViewSource</p>
+<a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/full.scroll">View source</a>
 <div class="trueBaseThemeFooter">
  <a href="../index.html" class="trueBaseThemeLogo">PLDB</a>
  <span>- Build the next great programming language</span>

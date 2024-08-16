@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Sublime Syntax
 ==============
 
@@ -26,4 +24,4 @@ contexts:
     - match: \b(if|else|for|while)\b
       scope: keyword.control.c
 
-printViewSource
+View source

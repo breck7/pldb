@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 IPTSCRAE
 ========
 
@@ -19,4 +17,4 @@ Iptscrae is a stack-oriented scripting language used to give additional function
 
 /&quot;&quot;s={n++{{&quot; &quot;n itoa&amp;}{&quot; buzz&quot;}n 5%ifelse}{&quot; fizz&quot;}n 3%ifelse s+=}{101n&gt;}while s logmsg
 
-printViewSource
+View source

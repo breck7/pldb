@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 GAMS
 ====
 
@@ -125,4 +123,4 @@ Sets
  Solve transport using lp minimizing z ;
  Display x.l, x.m ;
 
-printViewSource
+View source

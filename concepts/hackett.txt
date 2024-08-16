@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Hackett
 =======
 
@@ -37,4 +35,4 @@ Hackett is an attempt to implement a Haskell-like language with support for Rack
   [show (λ* [[(Just x)] {&quot;(Just &quot; ++ (show x) ++ &quot;)&quot;}]
             [[Nothing ] &quot;Nothing&quot;])])
 
-printViewSource
+View source

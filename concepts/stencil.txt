@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Stencil
 =======
 
@@ -27,4 +25,4 @@ There are {{ articles.count }} articles.
   {% endfor %}
 &lt;/ul&gt;
 
-printViewSource
+View source

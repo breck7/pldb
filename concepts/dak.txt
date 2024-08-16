@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Dak
 ===
 
@@ -74,4 +72,4 @@ Dak is a Lisp like language that transpiles to JavaScript.
 (for-of [v (it 39)]
   (prn &quot;it:&quot; v))
 
-printViewSource
+View source

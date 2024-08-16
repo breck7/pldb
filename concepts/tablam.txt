@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 tablam
 ======
 
@@ -22,4 +20,4 @@ The practical relational programing language for data-oriented applications
 city ?where .population &gt; 100_000 ?select .name, .country
 points ?sort .x
 
-printViewSource
+View source

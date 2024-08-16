@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Rust HIR
 ========
 
@@ -20,4 +18,4 @@ use ::std::prelude::rust_2015::*;
 extern crate std;
 fn main() { let mut vec = Vec::new(); vec.push(1); vec.push(2); }
 
-printViewSource
+View source

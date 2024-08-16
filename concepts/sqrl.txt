@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 SQRL
 ====
 
@@ -31,4 +29,4 @@ LET Username := input();
 LET Message := concat(&quot;Hello, &quot;, Username, &quot;!&quot;);
 EOF
 
-printViewSource
+View source

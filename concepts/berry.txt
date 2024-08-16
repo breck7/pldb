@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Berry
 =====
 
@@ -26,4 +24,4 @@ def fib(x)
     return fib(x - 1) + fib(x - 2)
 end
 
-printViewSource
+View source

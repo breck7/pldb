@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 xs
 ==
 
@@ -18,4 +16,4 @@ xs is a dynamically typed, dynamically scoped, concatenative array language insp
 
 gcd:{([`x`y]):..;if y==0(x)(y gcd x mod y)};
 
-printViewSource
+View source

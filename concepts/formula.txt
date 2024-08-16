@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Formula language
 ================
 
@@ -21,4 +19,4 @@ The Formula language is a scripting language used by Lotus Notes. It is often re
 FIELD NewDate:=@Today
 FIELD OldDate:=@DeleteField;
 
-printViewSource
+View source

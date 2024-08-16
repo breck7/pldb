@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 wizml
 =====
 
@@ -17,4 +15,4 @@ WIZML is a sublanguage of VTML. It is a tag-based programming language which is 
 
 &lt;WIZSET VertSpacingGap = Chr(13) &amp; Chr(10) &amp; RepeatString(Chr(9),numIndent)&gt;
 
-printViewSource
+View source

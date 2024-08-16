@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Asterisk
 ========
 
@@ -21,4 +19,4 @@ Asterisk is a software implementation of a telephone private branch exchange (PB
 
 exten =&gt; s,1,NoOp(Hello World)
 
-printViewSource
+View source

@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Varnish Configuration Language
 ==============================
 
@@ -174,4 +172,4 @@ sub vcl_fini {
 	return (ok);
 }
 
-printViewSource
+View source

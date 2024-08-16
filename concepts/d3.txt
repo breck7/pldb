@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 D3.js
 =====
 
@@ -44,4 +42,4 @@ D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for produci
         .attr(&quot;r&quot;,  function(d) { return d.pop / 1000 *2 })   // set the circle&#39;s radius according to country&#39;s population
         .attr(&quot;fill&quot;, function(d) { return d.color });        // set the circle&#39;s color according to country&#39;s color
 
-printViewSource
+View source

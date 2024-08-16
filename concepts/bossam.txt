@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 Bossam Rule Language
 ====================
 
@@ -26,4 +24,4 @@ rule r1 is
 fact f1 is
  family:isFatherOf(John,Bob);
 
-printViewSource
+View source

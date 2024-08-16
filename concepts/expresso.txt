@@ -1,5 +1,3 @@
-printViewSourceBadge
-
 expresso
 ========
 
@@ -21,4 +19,4 @@ A simple expressions language with polymorphic extensible row types.
 
 let sqmag = {x, y} -&gt; x*x + y*y
 
-printViewSource
+View source
