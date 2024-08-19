@@ -337,6 +337,16 @@ tiktoksParser
  description What is a URL to an official (or popular unofficial) TikTok(s) for this language?
  float sortIndex 3
 
+instagramParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Instagram for this language?
+ float sortIndex 3
+
+facebookParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Facebook group for this language?
+ float sortIndex 3
+
 youtubesParser
  extends abstractUrlMeasureParser
  description What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?

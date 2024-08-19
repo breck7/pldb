@@ -4,7 +4,7 @@ Logres
 Logres is a query language created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#3442 on PLDB
+#3443 on PLDB
 34 Years Old
 
 LOGRES is a new project for the development of extended database systems which is based on the integration of the object-oriented data modelling paradigm and of the rule-based approach for the specification of queries and updates. The data model supports generalization hierarchies and object sharing, the rule-based language extends Datalog to support generalized type constructors (sets, multisets, and sequences), rule-based integrity constraints are automatically produced by analyzing schema definitions. Modularization is a fundamental feature, as modules encapsulate queries and updates, when modules are applied to a LOGRES database, their side effects can be controlled. The LOGRES project is a follow-up of the ALGRES project, and takes advantage of the ALGRES programming environment for the development of a fast prototype.
