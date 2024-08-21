@@ -80,5 +80,5 @@ printRelatedParser
     const items = this.parent.concat(list)
     const html = items.map(item => item.compile()).join("\n")
     items.forEach(item => item.destroy())
-   return `<div class="scrollColumns" style="column-width:35ch;">${html}</div>`
+   return html
   }
