@@ -1710,6 +1710,7 @@ class Tables {
         name: nameCol,
         links: `<span class="creatorQuickLinks">${linksCol}</span>`,
         born: person.born,
+        country: person.country,
         creations: group.map(file => `<a href='../concepts/${file.id}.html'>${file.name}</a>`).join(" - "),
         count: group.length,
         topRank: group[0].rank
@@ -1730,7 +1731,15 @@ class Tables {
 
     return {
       SPARKDATA: histogram.join(" "),
-      TABLE: quickTree(lodash.sortBy(rows, "topRank"), ["name", "links", "born", "creations", "count", "topRank"]),
+      TABLE: quickTree(lodash.sortBy(rows, "topRank"), [
+        "name",
+        "links",
+        "born",
+        "country",
+        "creations",
+        "count",
+        "topRank"
+      ]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
     }
   }
