@@ -3,7 +3,7 @@ import ../code/conceptPage.scroll
 id pdf
 name PDF
 appeared 1993
-tags binaryDataFormat
+tags documentFormat
 standsFor Portable Document Format
 
 fileType binary
@@ -71,11 +71,11 @@ helloWorldCollection Portable Document Format
  
 
 wikipedia https://en.wikipedia.org/wiki/Portable_Document_Format
- related postscript html javascript ascii gzip csv xml linux ghostscript latex
- summary The Portable Document Format (PDF) is a file format used to present documents in a manner independent of application software, hardware, and operating systems. Each PDF file encapsulates a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.
- pageId 24077
- dailyPageViews 2092
- created 2018
- backlinksCount 13085
- revisionCount 3
- appeared 1993
+related postscript html javascript ascii gzip csv xml linux ghostscript latex makerjs
+summary PDF (Portable Document Format) is a file format developed by Adobe in 1993 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems.
+pageId 24077
+dailyPageViews 2092
+created 2018
+backlinksCount 13085
+revisionCount 3
+appeared 1993

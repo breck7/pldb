@@ -1,11 +1,11 @@
 import ../code/conceptPage.scroll
 
 id stl
-name Statement List
-appeared 1993
-tags assembly
-standsFor Statement List
-description STL corresponds to the "Instruction List" language defined in the International Electrotechnical Commission's standard IEC 1131-3, although there are substantial differences with regard to the operations.  STL corresponds to the Instruction List language defined in the IEC 61131-3 specification.
+name STL
+appeared 1987
+tags 3dModelFormat
+standsFor Stereolithography
+description STL (Stereolithography) is a file format native to the stereolithography CAD software created by 3D Systems.
 
 country Germany
 originCommunity Siemens AG
@@ -18,3 +18,5 @@ githubLanguage STL
  tmScope source.stl
  aliases ascii stl or stla
  repos 0
+
+related makerjs
