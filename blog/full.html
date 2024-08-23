@@ -1397,13 +1397,23 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollByLine">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div>
 <figure class="scrollCaptionedFigure" style="width:591px; margin: auto;"><a href="print-debugging.png" target="_blank"  ><img src="print-debugging.png" width="591" height="236" loading="lazy"></a></figure>
-<p class="scrollParagraph"><span class="scrollDateline">July 15, 2022 — </span>Paul Graham—creator of <a href="../concepts/arc.html">Arc</a> and <a href="../concepts/bel.html">Bel</a>—started an <a href="https://twitter.com/paulg/status/1532448988766650385">interesting thread</a> last month about "print() debugging".</p>
-<p class="scrollParagraph">Both experts and beginners frequently use "print() debugging".</p>
-<p class="scrollParagraph">Support for "print() debugging" is near-universal in high level programming languages. Implementations vary.</p>
-<p class="scrollParagraph">Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like <code>print</code> or <code>echo</code> or <code>puts</code>. Many others don't use the global namespace and you "print() debug" via a call like <code>console.log</code>. Many provide multiple keywords, such as <code>print</code> and <code>println</code>—the latter a shortcut for printing a string followed by a <code>\n</code>.</p>
-<p class="scrollParagraph">There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang <a href="../concepts/05AB1E.html">05AB1E</a> (<code>"hello world</code>).</p>
-<p class="scrollParagraph">Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.</p>
-<p class="scrollParagraph">You may notice there is a lack of representation of assembly languages in this list. It is often <em>much</em> harder to "print() debug" in low level languages than simply writing <code>print</code>.</p>
+<p class="scrollParagraph"><span class="scrollDateline">July 15, 2022 — </span>Paul Graham—creator of <a href="../concepts/arc.html">Arc</a> and <a href="../concepts/bel.html">Bel</a>—started an <a href="https://twitter.com/paulg/status/1532448988766650385">interesting thread</a> last month about <b>print("debugging")</b>.</p>
+<div class="dinkus"><span>*</span></div>
+<p class="scrollParagraph">Both experts and beginners frequently use <b>print("debugging")</b>.</p>
+<p class="scrollParagraph">Support for <b>print("debugging")</b> is near-universal in high level programming languages.</p>
+<p class="scrollParagraph">But implementations vary. Different languages use different commands.</p>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h4 class="scrollQuestion">What are the common patterns?</h4>
+</div>
+<ul ><li >Many languages have a simple global keyword like <code>print</code> or <code>echo</code> or <code>puts</code>.</li>
+<li >Many don't use the global namespace and you <b>print("debugging")</b> via a call like <code>console.log</code>.</li>
+<li >Many provide multiple keywords, such as <code>print</code> and <code>println</code>—the latter a shortcut for printing a string followed by a <code>\n</code>.</li>
+<li >Then there's the long tail. Some have special syntactic sugar, such as the code golf esolang <a href="../concepts/05AB1E.html">05AB1E</a> which does <code>"debugging</code>.</li></ul>
+<div class="dinkus"><span>*</span></div>
+<div class="scrollSection"><h1 class="scrollParagraph">The Data</h1>
+</div>
+<p class="scrollParagraph">Below is a table of over 100 keyword(s) used for <b>print("debugging")</b> in over 300 languages.</p>
+<p class="scrollParagraph">You may notice there is a lack of representation of assembly languages in this list. It is often <em>much</em> harder for <b>print("debugging")</b> in low level languages than simply writing <code>print</code>.</p>
 <table id="table4" class="scrollTable">
  <thead><tr><th>Keyword</th>
 

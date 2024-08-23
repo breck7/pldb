@@ -7,23 +7,38 @@ by Breck Yunits
 
 July 15, 2022
 
-Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
+Paul Graham—creator of Arc and Bel—started an interesting thread last month about print("debugging").
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
  https://pldb.io/blog/../concepts/arc.html Arc
  https://pldb.io/blog/../concepts/bel.html Bel
 
-Both experts and beginners frequently use "print() debugging".
+*
 
-Support for "print() debugging" is near-universal in high level programming languages. Implementations vary.
+Both experts and beginners frequently use print("debugging").
 
-Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
+Support for print("debugging") is near-universal in high level programming languages.
 
-There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
+But implementations vary. Different languages use different commands.
+
+*
+
+What are the common patterns?
+=============================
+
+- Many languages have a simple global keyword like `print` or `echo` or `puts`.
+- Many don't use the global namespace and you print("debugging") via a call like `console.log`.
+- Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
+- Then there's the long tail. Some have special syntactic sugar, such as the code golf esolang 05AB1E which does `"debugging`.
  https://pldb.io/blog/../concepts/05AB1E.html 05AB1E
 
-Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
+*
 
-You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder to "print() debug" in low level languages than simply writing `print`.
+The Data
+========
+
+Below is a table of over 100 keyword(s) used for print("debugging") in over 300 languages.
+
+You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder for print("debugging") in low level languages than simply writing `print`.
 
 Keyword,Languages,Count
 print,Python R Perl Swift Fortran Lua Dart awk PostScript SPSS Emacs Lisp Standard ML REBOL Logo Boo Io IDL Hy NewLisp Squirrel Ceylon Factor MoonScript Maxima SETL Dafny Coconut Terra Genie ALGOL 68 RATFOR Gosu Ante Jython SIL Cobra Yorick BeanShell Nit starlark Fennel Angelscript F MAXScript pyret GDScript ArkScript dyvil ProvideX Project MAC’s SYmbolic MAnipulator Locomotive BASIC Bython zenscript owen-lang A++ toy-lang Pawn SdlBasic Action Code Script QCL Battlestar Claro verve,63
