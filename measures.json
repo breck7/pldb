@@ -169,7 +169,7 @@
     "Values": 5009,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1206",
+    "Example": "1207",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@
     "Values": 5009,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21684",
+    "Example": "21683",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -262,7 +262,7 @@
   },
   {
     "Name": "githubRepo_created",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -272,7 +272,7 @@
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "What year was the last commit made?",
     "Example": "2024",
@@ -292,7 +292,7 @@
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "How many subscribers to the repo?",
     "Example": "24",
@@ -302,7 +302,7 @@
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 1154,
+    "Values": 1155,
     "Coverage": "23%",
     "Question": "How many forks of the repo?",
     "Example": "48",
@@ -312,7 +312,7 @@
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "How many stars of the repo?",
     "Example": "755",
@@ -322,7 +322,7 @@
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 1153,
+    "Values": 1154,
     "Coverage": "23%",
     "Question": "How many isses on the repo?",
     "Example": "40",
@@ -775,7 +775,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 1204,
+    "Values": 1205,
     "Coverage": "24%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -905,7 +905,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -915,7 +915,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1118,
+    "Values": 1119,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -925,7 +925,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -935,7 +935,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1156,
+    "Values": 1157,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -945,7 +945,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1153,
+    "Values": 1154,
     "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1118,7 +1118,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 1538,
+    "Values": 1539,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1955,7 +1955,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 1160,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",

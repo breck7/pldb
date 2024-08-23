@@ -15,23 +15,23 @@ releaseNotes	68	1%	What is the URL to the release notes or changelog for this la
 download	42	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	640	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
 exampleCount	5009	100%	How many examples do we have written in this language?	2	number		1.5	true			
-rank	5009	100%	How does this concept rank amongst all other concepts?	1206	number		1.5	true			
+rank	5009	100%	How does this concept rank amongst all other concepts?	1207	number		1.5	true			
 lastActivity	5009	100%	In our data on this entity, what year is the most recent activity?	2024	number		1.55	true			
 writtenInCount	1164	23%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	5009	100%	What is the combined score of this language across all the categories of rankings?	21684	number		1.6	true			
+pldbScore	5009	100%	What is the combined score of this language across all the categories of rankings?	21683	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
 subreddit_memberCount	0	0%	How many members in this subreddit?				1.9	false			
 twitter_followers	0	0%	How many followers does the linked account have?				1.9	false			
 conferences	6	0%	What is a URL(s) to a recurring conference(s) focused on this language?	https://conf.11ty.dev/	string		1.9	false			
 zulip	2	0%	What is a URL to an official (or popular unofficial) Zulip for language development?	https://coq.zulipchat.com/	string		1.9	false			
-githubRepo_created	1156	23%	When was the *Github repo* for this entity created?	2015	number		1.9	false			
-githubRepo_updated	1156	23%	What year was the last commit made?	2024	number		1.9	false			
+githubRepo_created	1157	23%	When was the *Github repo* for this entity created?	2015	number		1.9	false			
+githubRepo_updated	1157	23%	What year was the last commit made?	2024	number		1.9	false			
 githubRepo_firstCommit	844	16%	What year the first commit made in this git repo?	2015	number		1.9	false			
-githubRepo_subscribers	1156	23%	How many subscribers to the repo?	24	number		1.9	false			
-githubRepo_forks	1154	23%	How many forks of the repo?	48	number		1.9	false			
-githubRepo_stars	1156	23%	How many stars of the repo?	755	number		1.9	false			
-githubRepo_issues	1153	23%	How many isses on the repo?	40	number		1.9	false			
+githubRepo_subscribers	1157	23%	How many subscribers to the repo?	24	number		1.9	false			
+githubRepo_forks	1155	23%	How many forks of the repo?	48	number		1.9	false			
+githubRepo_stars	1157	23%	How many stars of the repo?	755	number		1.9	false			
+githubRepo_issues	1154	23%	How many isses on the repo?	40	number		1.9	false			
 screenshot	23	0%	What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?	activity-pub.png	string		1.9	false			
 photo	2	0%	What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?	binary-notation.jpg	string		1.9	false			
 linguistGrammarRepo_commitCount	398	7%	How many commits in this repo?	261	number		1.9	false			
@@ -77,7 +77,7 @@ forLanguages	48	0%	Which languages is this repository for?	ballerina	string		1.9
 dblp	0	0%	What are publications about this language from https://dblp.org/?			dblp.org	1.9	false			
 dblp_hits	0	0%	How many matching publications?				1.9	false			
 dblp_publications	0	0%	An inline PSV table of hits.				1.9	false			
-mainRepo	1204	24%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
+mainRepo	1205	24%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
 standsFor	363	7%	If the language name is an acronym what does/did it stand for?	3D Manufacturing Format	string		1.9	false			
 aka	179	3%	What is this also known as?	4D	string		1.9	false			
 oldName	15	0%	What is the old name of this language?	ML-flavoured Erlang	string		1.9	false			
@@ -90,11 +90,11 @@ inboundLinksCount	5009	100%	How many other concepts link to this one?	0	number		
 inboundLinks	432	8%	Which other concepts link to this one?	explorer	string		1.9	true			
 isFinished	5009	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	17	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
-repoStats_firstCommit	1156	23%	What year the first commit made in this git repo?	2015	number		1.9	false			
-repoStats_newestCommit	1118	22%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
-repoStats_commits	1156	23%	How many commits to the repo?	871	number		1.9	false			
-repoStats_committers	1156	23%	How many committers to the repo?	28	number		1.9	false			
-repoStats_files	1153	23%	How many files in the repo?	49	number		1.9	false			
+repoStats_firstCommit	1157	23%	What year the first commit made in this git repo?	2015	number		1.9	false			
+repoStats_newestCommit	1119	22%	What year was the newest commit made in this git repo?	2022	number		1.9	false			
+repoStats_commits	1157	23%	How many commits to the repo?	871	number		1.9	false			
+repoStats_committers	1157	23%	How many committers to the repo?	28	number		1.9	false			
+repoStats_files	1154	23%	How many files in the repo?	49	number		1.9	false			
 equation	15	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false			
 description	1073	21%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
 githubRepo_description	1073	21%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
@@ -111,7 +111,7 @@ languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main imple
 writtenIn	1164	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
 compilesTo	83	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
 isPublicDomain	23	0%	Is this public domain?	true	boolean		2	false			
-isOpenSource	1538	30%	Is this an open source project?	true	boolean		2.01	true			
+isOpenSource	1539	30%	Is this an open source project?	true	boolean		2.01	true			
 numberOfUsersEstimate	5009	100%	What is our estimate of number of users of this language?	928	number		2.1	true			
 numberOfJobsEstimate	5009	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
 expandedMeasurements	5009	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
@@ -193,7 +193,7 @@ githubCopilotOptimized	7	0%	Is this language optimized for GitHub copilot, as fo
 meetup	57	1%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false			
 gitRepo	28	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false			
 specRepo	2	0%	What is the URL of the official spec for the language project?	https://github.com/whatwg/html	string		4	false			
-githubRepo	1160	23%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false			
+githubRepo	1161	23%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false			
 gitlabRepo	14	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false			
 sourcehutRepo	5	0%	What is the URL of the official sourcehut repo for this project?	https://sourceforge.net/projects/avisynth2/	string	sr.ht	4	false			
 rijuRepl_gitRepo	38	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://gcc.gnu.org/git.html	string		4	false			
