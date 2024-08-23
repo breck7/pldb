@@ -7,7 +7,7 @@ StoneCutter is a grammar language created in 2020 by John D. Leidel and David Do
  https://pldb.io/concepts/../lists/creators.html#q=David%20Donofrio David Donofrio
  https://pldb.io/concepts/../lists/creators.html#q=Frank%20Conlon Frank Conlon
 
-#3582 on PLDB
+#3583 on PLDB
 4 Years Old
 
 In this work we introduce the StoneCutter instruction set design language and tool infrastructure. StoneCutter provides a familiar, C-like language construct by which to develop the implementation for individual, programmable instructions. The LLVM-based StoneCutter compiler performs individual instruction and whole-ISA optimizations in order to generate a high performance, Chisel HDL representation of the target design. Utilizing the existing Chisel tools, users can also generate C++ cycle accurate simulation models as well as Verilog representations of the target design. As a result, StoneCutter provides a very rapid design environment for development and experimentation.

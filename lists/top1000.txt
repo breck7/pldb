@@ -8,7 +8,7 @@ Here are the top 1,000 computer languages in PLDB. You can also explore all the 
 name,rank,appeared,tags,creators,foundationScore,numberOfUsersEstimate,numberOfJobsEstimate,inboundLinksCount,measurements,nameLink
 JavaScript,1,1995,pl,Brendan Eich,504,5962666,63993,553,143,../concepts/javascript.html
 C,2,1972,pl,Dennis Ritchie,393,3793768,59919,428,98,../concepts/c.html
-Python,3,1991,pl,Guido van Rossum,386,2971145,46976,403,119,../concepts/python.html
+Python,3,1991,pl,Guido van Rossum,387,2971145,46976,404,119,../concepts/python.html
 Java,4,1995,pl,James Gosling,137,5587090,85206,146,108,../concepts/java.html
 C++,5,1985,pl,Bjarne Stroustrup,281,4128238,61098,294,78,../concepts/cpp.html
 HTML,6,1991,textMarkup,Tim Berners-Lee,483,5570873,69531,489,53,../concepts/html.html
@@ -16,9 +16,9 @@ CSS,7,1996,stylesheetLanguage,Håkon Wium Lie,396,2881847,45617,398,50,../concep
 Perl,8,1987,pl,Larry Wall,109,496724,13482,112,85,../concepts/perl.html
 Ruby,9,1995,pl,Yukihiro Matsumoto,90,396397,11438,94,107,../concepts/ruby.html
 PHP,10,1995,pl,Rasmus Lerdorf,56,2362804,30349,59,100,../concepts/php.html
-XML,11,1996,dataNotation,Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John W. Cowan,381,1917452,42277,390,42,../concepts/xml.html
+XML,11,1996,dataNotation,Tim Bray and Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and John W. Cowan,382,1917452,42277,391,42,../concepts/xml.html
 Go,12,2009,pl,Rob Pike and Ken Thompson and Robert Griesemer,80,701726,6403,82,96,../concepts/go.html
-JSON,13,2001,dataNotation,Douglas Crockford,571,355741,9228,592,47,../concepts/json.html
+JSON,13,2001,dataNotation,Douglas Crockford,572,355741,9228,593,47,../concepts/json.html
 TypeScript,14,2012,pl,Anders Hejlsberg,153,231896,1542,165,85,../concepts/typescript.html
 SQL,15,1974,queryLanguage,Donald D. Chamberlin and Raymond F. Boyce,45,7179119,219617,55,50,../concepts/sql.html
 C#,16,2000,pl,Anders Hejlsberg,64,217261,19747,67,82,../concepts/csharp.html
@@ -45,13 +45,13 @@ Mathematica,36,1988,pl mathematics physics chemistry biology,Stephen Wolfram,6,1
 COBOL,37,1959,pl,Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper,4,187188,2616,5,53,../concepts/cobol.html
 CUDA,38,2007,pl,,16,38623,769,16,36,../concepts/cuda.html
 Dart,39,2011,pl,Lars Bak,9,38325,208,9,71,../concepts/dart.html
-Markdown,40,2004,textMarkup,John Gruber and Aaron Swartz,1043,12504,0,1056,36,../concepts/markdown.html
+Markdown,40,2004,textMarkup,John Gruber and Aaron Swartz,1044,12504,0,1057,36,../concepts/markdown.html
 Racket,41,1994,pl lisp,Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi,23,14537,48,26,59,../concepts/racket.html
 Solidity,42,2014,contractLanguage,Christian Reitwiessner and Alex Beregszaszi,5,42793,937,8,51,../concepts/solidity.html
 WebAssembly,43,2015,bytecode,Alon Zakai,25,22980,5,33,39,../concepts/wasm.html
 Visual Basic,44,1991,pl,,12,15898,3294,13,46,../concepts/visual-basic.html
 Zig,45,2015,pl,Andrew Kelley,12,46757,0,12,42,../concepts/zig.html
-YAML,46,2001,dataNotation,Clark Evans and Oren Ben-Kiki and Ingy döt Net,734,13981,61,743,31,../concepts/yaml.html
+YAML,46,2001,dataNotation,Clark Evans and Oren Ben-Kiki and Ingy döt Net,735,13981,61,744,31,../concepts/yaml.html
 Nim,47,2008,pl,Andreas Rumpf,12,23837,0,13,64,../concepts/nim.html
 Pascal,48,1970,pl,Niklaus Wirth,52,7708,102,58,62,../concepts/pascal.html
 Ada,49,1980,pl,Jean Ichbiah,10,12116,2184,13,65,../concepts/ada.html
@@ -243,7 +243,7 @@ FLEX,234,1987,grammarLanguage,Vern Paxson,0,5606,0,0,23,../concepts/flex.html
 PyTorch,235,2016,library,Ronan Collobert,0,153977,0,0,17,../concepts/pytorch.html
 Thrift,236,2007,idl,,7,1626,0,8,20,../concepts/thrift.html
 CSON,237,2011,dataNotation,Benjamin Lupton,10,1722,0,10,19,../concepts/cson.html
-Bourne shell,238,1977,pl,Stephen Bourne,578,1370,0,578,17,../concepts/bourne-shell.html
+Bourne shell,238,1977,pl,Stephen Bourne,579,1370,0,579,17,../concepts/bourne-shell.html
 Processing,239,2001,pl,,0,2366,0,0,32,../concepts/processing.html
 Magit,240,2013,application,Marius Vollmer,0,9279,0,1,17,../concepts/magit.html
 Ace Editor,241,2010,editor,Fabian Jakobs,0,43023,0,2,15,../concepts/ace.html
@@ -545,7 +545,7 @@ Icon,536,1977,pl,Ralph Griswold,0,271,0,1,35,../concepts/icon.html
 Streem,537,2014,pl,Yukihiro Matsumoto,0,5355,0,0,14,../concepts/streem.html
 cloc,538,2006,commandLineApp,Al Danial,0,22181,0,0,13,../concepts/cloc.html
 LilyPond,539,1996,pl,,0,731,0,0,22,../concepts/lilypond.html
-Dockerfile,540,2013,pl,,204,201,0,205,20,../concepts/dockerfile.html
+Dockerfile,540,2013,pl,,205,201,0,206,20,../concepts/dockerfile.html
 Slim Framework,541,2013,framework,,0,18026,0,0,13,../concepts/slim-framework.html
 Melody,542,2022,pl,Yoav Lavi,0,4797,0,0,14,../concepts/melody.html
 comby,543,2019,grammarLanguage,Rijnard van Tonder,0,2537,0,0,15,../concepts/comby.html

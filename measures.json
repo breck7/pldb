@@ -35,7 +35,7 @@
   },
   {
     "Name": "creators",
-    "Values": 1478,
+    "Values": 1479,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -905,7 +905,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1155,
+    "Values": 1156,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -915,7 +915,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1117,
+    "Values": 1118,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -925,7 +925,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1155,
+    "Values": 1156,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -935,7 +935,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1155,
+    "Values": 1156,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -945,7 +945,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1152,
+    "Values": 1153,
     "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1298,7 +1298,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1478,
+    "Values": 1479,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
