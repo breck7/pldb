@@ -6,31 +6,44 @@ title "print() debugging" in over 300 languages
 
 import postHeader.scroll
 printTitle
-wideColumns 1
+mediumColumns 1
 printAuthors
 
 image print-debugging.png
 
-* Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
+replace PD <b>print("debugging")</b>
+
+Paul Graham—creator of Arc and Bel—started an interesting thread last month about PD.
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
  link BASE_URL/concepts/arc.html Arc
  link BASE_URL/concepts/bel.html Bel
  dateline
 
-endSnippet
+***
 
-* Both experts and beginners frequently use "print() debugging".
+Both experts and beginners frequently use PD.
 
-* Support for "print() debugging" is near-universal in high level programming languages. Implementations vary.
+Support for PD is near-universal in high level programming languages.
 
-* Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
+But implementations vary. Different languages use different commands.
 
-* There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
+***
+
+? What are the common patterns?
+
+- Many languages have a simple global keyword like `print` or `echo` or `puts`.
+- Many don't use the global namespace and you PD via a call like `console.log`.
+- Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
+- Then there's the long tail. Some have special syntactic sugar, such as the code golf esolang 05AB1E which does `"debugging`.
  link BASE_URL/concepts/05AB1E.html 05AB1E
 
-* Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
+***
 
-* You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder to "print() debug" in low level languages than simply writing `print`.
+# The Data
+
+Below is a table of over 100 keyword(s) used for PD in over 300 languages.
+
+You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder for PD in low level languages than simply writing `print`.
 
 table
  delimiter ,
@@ -155,10 +168,10 @@ table
   fmt::println,<a href='../concepts/hare.html'>Hare</a>,1
   output,<a href='../concepts/quorum.html'>quorum</a>,1
 
-comment
+//
  xsv select title,appeared,type,rank,printToken pldb.local/languages.csv > ignore/printTokens.csv
 
-comment
+//
   printDebug() {
     pldbFolder.loadFolder()
     const code = new TreeNode(
