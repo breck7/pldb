@@ -4,15 +4,22 @@ id dasel
 name Dasel
 appeared 2020
 creators Tom Wright
-tags queryLanguage
+tags queryLanguage library
+website https://daseldocs.tomwright.me
+standsFor DAta SELector
 description A tool to query and modify data structures using selectors.
 writtenIn go yaml json markdown xml bourne-shell python dockerfile
 
+related jq
 repoStats
  firstCommit 2020
  newestCommit 2024
  commits 730
  committers 28
  files 171
+
+example
+ echo '{"name": "Tom"}' | dasel -r json 'name'
+ "Tom"
 
 githubRepo https://github.com/TomWright/dasel
