@@ -5,7 +5,7 @@ OpenSpice is a programming language created in 2005 by Stephen Leach.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
  https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Leach Stephen Leach
 
-#2467 on PLDB
+#2468 on PLDB
 19 Years Old
 
 OpenSpice is an openly available specification of the Spice language - a modern programming language with some nice XML processing features. It is designed with the needs of part-time or occasional programmers in mind. The language features are properly separated and their corner cases have been eliminated. This design means that if you only use Spice occasionally, you're likely to find it easy to come back to despite the breaks. The most similar well-known language is probably Common LISP together with CLOS. But Spice has a rich Algol-like external syntax, an XML transport form, and makes multiple values a key feature. The way Spice deals with multiple values is, we think, the feature that will strike most programmers as special.

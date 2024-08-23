@@ -24,8 +24,8 @@
   },
   {
     "Name": "appeared",
-    "Values": 5006,
-    "Coverage": "99%",
+    "Values": 5007,
+    "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
     "Type": "number",
@@ -176,8 +176,8 @@
   },
   {
     "Name": "lastActivity",
-    "Values": 5006,
-    "Coverage": "99%",
+    "Values": 5007,
+    "Coverage": "100%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2024",
     "Type": "number",
@@ -775,7 +775,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 1202,
+    "Values": 1203,
     "Coverage": "24%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -905,7 +905,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1154,
+    "Values": 1155,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -915,7 +915,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1116,
+    "Values": 1117,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -925,7 +925,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1154,
+    "Values": 1155,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -935,7 +935,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1154,
+    "Values": 1155,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -945,8 +945,8 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1151,
-    "Coverage": "22%",
+    "Values": 1152,
+    "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
     "Type": "number",
@@ -1118,7 +1118,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 1536,
+    "Values": 1537,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1955,7 +1955,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 1158,
+    "Values": 1159,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
