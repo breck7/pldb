@@ -5,13 +5,17 @@ name Lil
 appeared 2022
 creators John Earnest
 tags pl
-website https://beyondloom.com/decker/lil.html
+website http://beyondloom.com/tools/trylil.html
+standsFor Learning In Layers
+webRepl http://beyondloom.com/tools/trylil.html
 description Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
 
-influencedBy k q sql
+writtenIn javascript c awk
+isOpenSource true
+influencedBy k q sql lua
 docs https://beyondloom.com/decker/lil.html
 country USA
-originCommunity https://beyondloom.com/decker/lil.html
+originCommunity https://beyondloom.com/decker/
 
 example
  on mode a do   # line comment
@@ -21,3 +25,85 @@ example
   end
   first extract key orderby value desc from r
  end
+
+keywords floor cos sin tan exp ln sqrt count first last sum min max raze prod range keys list rows cols table typeof flip mag unit heading split fuse dict take drop in join cross parse format unless limit like window each in while on do end if elseif else where by orderby asc desc select extract update from insert with into send local
+
+assignmentToken :
+stringToken "
+lineCommentToken #
+
+hasComments true
+hasZeroBasedNumbering true
+hasDynamicTyping true
+hasGarbageCollection true
+hasImplicitTypeConversions true
+isCaseSensitive true
+
+hasLineComments true
+ # A comment
+hasStrings true
+ "Hello World"
+hasWhileLoops true
+ while 1
+  print["hello"]
+ end
+hasFunctions true
+ on myFunction do
+  print["hello"]
+ end
+hasConditionals true
+ if 1
+  print["true"]
+ end
+hasIntegers true
+ 80766866
+hasLists true
+ myList:(1,2,3)
+end
+hasExpressions true
+ 1 + 1
+hasBinaryOperators true
+ 1 + 1
+hasMethodChaining true
+ image[3,4].map[0 dict 1].encoded
+hasFirstClassFunctions true
+ (on f x do x,x end)@11,22,33
+hasAssignment true
+ local name: "John"
+hasInfixNotation true
+ six: 2 + 2 + 2
+hasMultilineStrings true
+ lines:"one
+ two"
+hasPrintDebugging true
+ show["Hi"]
+hasFunctionComposition true
+ on o f g do
+  on _ x do f[g[x]] end
+ end
+hasStandardLibrary true
+ print["Hello, World!"]
+
+hasScientificNotation false
+hasHexadecimals false
+hasOctals false
+hasSets false
+hasDestructuring false
+hasDefaultParameters false
+hasMethods false
+hasIncrementAndDecrementOperators false
+hasTernaryOperators false
+hasSwitch false
+hasInheritance false
+hasMultipleInheritance false
+hasCaseInsensitiveIdentifiers false
+hasAnonymousFunctions false
+hasMacros false
+hasFunctionOverloading false
+hasOperatorOverloading false
+hasDirectives false
+hasBooleans false
+hasSemanticIndentation false
+hasClasses false
+hasLabels false
+hasConstants false
