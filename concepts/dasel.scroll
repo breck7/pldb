@@ -1,15 +1,18 @@
+import ../code/conceptPage.scroll
+
 id dasel
 name Dasel
-appeared 2021
-tags tool
-description Dasel is a tool that allows you to query and modify data structures using selectors.
-writtenIn go
-githubRepo https://github.com/TomWright/dasel
-firstCommit 2021
-stars 2000
-forks 100
-subscribers 50
-created 2021
-updated 2024
+appeared 2020
+creators Tom Wright
+tags queryLanguage
 description A tool to query and modify data structures using selectors.
-issues 10
+writtenIn go yaml json markdown xml bourne-shell python dockerfile
+
+repoStats
+ firstCommit 2020
+ newestCommit 2024
+ commits 730
+ committers 28
+ files 171
+
+githubRepo https://github.com/TomWright/dasel
