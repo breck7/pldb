@@ -27,6 +27,7 @@ TABLICA(4): B
 [1 2]
 
 myList:(1,2,3)
+end
 
 ; here is a list of a, b, and c:
 (a . (b . (c . nil)))
