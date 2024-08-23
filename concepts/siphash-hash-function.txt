@@ -4,7 +4,7 @@ SipHash
 SipHash is a hash function created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#2305 on PLDB
+#2306 on PLDB
 13 Years Old
 
 SipHash is an add–rotate–xor (ARX) based family of pseudorandom functions created by Jean-Philippe Aumasson and Daniel J. Bernstein in 2012, in response to a spate of "hash flooding" denial-of-service attacks in late 2011.Although designed for use as a hash function in the computer science sense, SipHash is fundamentally different from cryptographic hash functions like SHA in that it is only suitable as a message authentication code: a keyed hash function like HMAC.  That is, SHA is designed so that it is difficult for an attacker to find two messages X and Y such that SHA(X) = SHA(Y), even though anyone may compute SHA(X). Read more on Wikipedia...

@@ -86,7 +86,7 @@
   },
   {
     "Name": "website",
-    "Values": 1757,
+    "Values": 1758,
     "Coverage": "35%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -199,7 +199,7 @@
     "Values": 5008,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21684",
+    "Example": "21682",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -785,7 +785,7 @@
   },
   {
     "Name": "standsFor",
-    "Values": 361,
+    "Values": 362,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -875,7 +875,7 @@
   },
   {
     "Name": "inboundLinks",
-    "Values": 431,
+    "Values": 432,
     "Coverage": "8%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -1158,7 +1158,7 @@
   },
   {
     "Name": "related",
-    "Values": 202,
+    "Values": 203,
     "Coverage": "4%",
     "Question": "What languages are related?",
     "Example": "logo",
@@ -1829,7 +1829,7 @@
   },
   {
     "Name": "example",
-    "Values": 894,
+    "Values": 895,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
