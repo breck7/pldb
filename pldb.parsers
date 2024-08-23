@@ -1015,7 +1015,6 @@ specRepoParser
  description What is the URL of the official spec for the language project?
  extends abstractGitRepoUrlMeasureParser
 
-// mainRepo
 mainRepoParser
  boolean isComputed true
  extends abstractStringMeasureParser
@@ -1024,6 +1023,15 @@ mainRepoParser
   computeValue(concept) {
     const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
     return repo || ""
+  }
+
+primaryTagParser
+ boolean isComputed true
+ extends abstractStringMeasureParser
+ description Where is the primary tag for this language?
+ javascript
+  computeValue(concept) {
+    return concept.get("tags")?.split(" ")[0] || ""
   }
 
 // githubBigQuery

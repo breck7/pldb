@@ -78,6 +78,7 @@ dblp,0,0%,What are publications about this language from https://dblp.org/?,,,db
 dblp_hits,0,0%,How many matching publications?,,,,1.9,false,,,
 dblp_publications,0,0%,An inline PSV table of hits.,,,,1.9,false,,,
 mainRepo,1205,24%,Where is the main source code for this language?,https://github.com/Adriandmen/05AB1E,string,,1.9,true,,,
+primaryTag,5009,100%,Where is the primary tag for this language?,esolang,string,,1.9,true,,,
 standsFor,364,7%,If the language name is an acronym what does/did it stand for?,3D Manufacturing Format,string,,1.9,false,,,
 aka,179,3%,What is this also known as?,4D,string,,1.9,false,,,
 oldName,15,0%,What is the old name of this language?,ML-flavoured Erlang,string,,1.9,false,,,

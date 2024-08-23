@@ -784,6 +784,16 @@
     "IsComputed": true
   },
   {
+    "Name": "primaryTag",
+    "Values": 5009,
+    "Coverage": "100%",
+    "Question": "Where is the primary tag for this language?",
+    "Example": "esolang",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": true
+  },
+  {
     "Name": "standsFor",
     "Values": 364,
     "Coverage": "7%",
