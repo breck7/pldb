@@ -15262,14 +15262,14 @@ var autocompleteJs = [
     "url": "/concepts/x-bitmap-format.html"
   },
   {
-    "label": "WHOIS",
-    "id": "whois-protocol",
-    "url": "/concepts/whois-protocol.html"
-  },
-  {
     "label": "Tap code",
     "id": "tap-code",
     "url": "/concepts/tap-code.html"
+  },
+  {
+    "label": "WHOIS",
+    "id": "whois-protocol",
+    "url": "/concepts/whois-protocol.html"
   },
   {
     "label": "Babylonian numerals",
@@ -23617,6 +23617,11 @@ var autocompleteJs = [
     "url": "/concepts/jpp.html"
   },
   {
+    "label": "Maya numeral system",
+    "id": "maya-numerals",
+    "url": "/concepts/maya-numerals.html"
+  },
+  {
     "label": "MonoDevelop",
     "id": "monodevelop-editor",
     "url": "/concepts/monodevelop-editor.html"
@@ -23770,11 +23775,6 @@ var autocompleteJs = [
     "label": "Greek numerals",
     "id": "greek-numerals",
     "url": "/concepts/greek-numerals.html"
-  },
-  {
-    "label": "Maya numeral system",
-    "id": "maya-numerals",
-    "url": "/concepts/maya-numerals.html"
   },
   {
     "label": "Navier-Stokes Equation",

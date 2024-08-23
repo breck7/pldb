@@ -965,7 +965,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 1070,
+    "Values": 1071,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -976,7 +976,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1070,
+    "Values": 1071,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -997,7 +997,7 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1070,
+    "Values": 1071,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
