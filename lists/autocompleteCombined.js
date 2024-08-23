@@ -9552,11 +9552,6 @@ var autocompleteJs = [
     "url": "/concepts/truth.html"
   },
   {
-    "label": "JSL",
-    "id": "jsl",
-    "url": "/concepts/jsl.html"
-  },
-  {
     "label": "l2",
     "id": "l2",
     "url": "/concepts/l2.html"
@@ -9565,6 +9560,11 @@ var autocompleteJs = [
     "label": "kerf",
     "id": "kerf",
     "url": "/concepts/kerf.html"
+  },
+  {
+    "label": "JSL",
+    "id": "jsl",
+    "url": "/concepts/jsl.html"
   },
   {
     "label": "Shapefile",
@@ -10222,14 +10222,14 @@ var autocompleteJs = [
     "url": "/concepts/worst.html"
   },
   {
-    "label": "holyc",
-    "id": "holyc",
-    "url": "/concepts/holyc.html"
-  },
-  {
     "label": "TI MSP430",
     "id": "msp430",
     "url": "/concepts/msp430.html"
+  },
+  {
+    "label": "holyc",
+    "id": "holyc",
+    "url": "/concepts/holyc.html"
   },
   {
     "label": "CGOL",
@@ -12407,6 +12407,11 @@ var autocompleteJs = [
     "url": "/concepts/sqhtml.html"
   },
   {
+    "label": "ESC/P",
+    "id": "esc-p",
+    "url": "/concepts/esc-p.html"
+  },
+  {
     "label": "bioscript",
     "id": "bioscript",
     "url": "/concepts/bioscript.html"
@@ -12462,11 +12467,6 @@ var autocompleteJs = [
     "url": "/concepts/ruri.html"
   },
   {
-    "label": "ESC/P",
-    "id": "esc-p",
-    "url": "/concepts/esc-p.html"
-  },
-  {
     "label": "Coda web development software",
     "id": "coda-editor",
     "url": "/concepts/coda-editor.html"
@@ -12517,11 +12517,6 @@ var autocompleteJs = [
     "url": "/concepts/laravel-framework.html"
   },
   {
-    "label": "praxis-lang",
-    "id": "praxis-lang",
-    "url": "/concepts/praxis-lang.html"
-  },
-  {
     "label": "GamerLanguage",
     "id": "gamerlanguage",
     "url": "/concepts/gamerlanguage.html"
@@ -12530,6 +12525,11 @@ var autocompleteJs = [
     "label": "Recursive teXt",
     "id": "recursivetext",
     "url": "/concepts/recursivetext.html"
+  },
+  {
+    "label": "praxis-lang",
+    "id": "praxis-lang",
+    "url": "/concepts/praxis-lang.html"
   },
   {
     "label": "Crystallographic Information File",
@@ -13707,11 +13707,6 @@ var autocompleteJs = [
     "url": "/concepts/hytime.html"
   },
   {
-    "label": "Mentat",
-    "id": "mentat",
-    "url": "/concepts/mentat.html"
-  },
-  {
     "label": "Tagged Image File Format",
     "id": "tiff-format",
     "url": "/concepts/tiff-format.html"
@@ -13725,6 +13720,11 @@ var autocompleteJs = [
     "label": "passambler",
     "id": "passambler",
     "url": "/concepts/passambler.html"
+  },
+  {
+    "label": "Mentat",
+    "id": "mentat",
+    "url": "/concepts/mentat.html"
   },
   {
     "label": "eskew",
@@ -16847,14 +16847,14 @@ var autocompleteJs = [
     "url": "/concepts/analytical-engine-machine.html"
   },
   {
-    "label": "Zope",
-    "id": "zope",
-    "url": "/concepts/zope.html"
-  },
-  {
     "label": "Thue",
     "id": "thue-programming-language",
     "url": "/concepts/thue-programming-language.html"
+  },
+  {
+    "label": "Zope",
+    "id": "zope",
+    "url": "/concepts/zope.html"
   },
   {
     "label": "WML",
@@ -23815,6 +23815,11 @@ var autocompleteJs = [
     "label": "Floral",
     "id": "floral",
     "url": "/concepts/floral.html"
+  },
+  {
+    "label": "Pragtical",
+    "id": "pragtical",
+    "url": "/concepts/pragtical.html"
   },
   {
     "label": "REC Studio",
