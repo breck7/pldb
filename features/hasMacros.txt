@@ -58,13 +58,6 @@ end
 -define(Const, Replacement).
 -define(Func(Var1,...,VarN), Replacement).
 
-term_expansion(parent_child(Parent, Child),
-             child_parent(Child, Parent)).
-parent_child(trevor, simon).
-% With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
-?- child_parent(Child, Parent).
- Child = simon, Parent = trevor.
-
 # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
 macro show_value(variable)
     quote
@@ -74,6 +67,13 @@ end
 
 @show_value(orange)
 @show_value(apple)
+
+term_expansion(parent_child(Parent, Child),
+             child_parent(Child, Parent)).
+parent_child(trevor, simon).
+% With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
+?- child_parent(Child, Parent).
+ Child = simon, Parent = trevor.
 
 ; https://docs.racket-lang.org/guide/macros.html
 (define-syntax-rule (swap x y)
@@ -225,11 +225,11 @@ endmacro;
 
 *
 
-Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Erlang, Prolog, Julia, Racket, Nim, Scheme, Factor, C3, Slope, Nemerle, Dylan, Wax, Pike, groff, Arc, High Level Assembly, Gerbil Scheme, Bio, Speedie, Bel, YAMP, honu
+Languages *with* Macros include C, Rust, Scala, Clojure, Elixir, Erlang, Julia, Prolog, Racket, Nim, Scheme, Factor, C3, Slope, Nemerle, Dylan, Wax, Pike, groff, Arc, High Level Assembly, Gerbil Scheme, Bio, Speedie, Bel, YAMP, honu
 
 *
 
-Languages *without* Macros include JavaScript, Python, Java, HTML, XML, JSON, Kotlin, Smalltalk, progsbase
+Languages *without* Macros include JavaScript, Python, Java, HTML, XML, JSON, Kotlin, Smalltalk, progsbase, Lil
 
 *
 

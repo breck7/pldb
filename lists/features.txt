@@ -9,54 +9,54 @@ We also have a page of all keywords and all file extensions.
  https://pldb.io/lists/extensions.html file extensions
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶627¶4¶99%
-Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶531¶21¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶366¶0¶100%
-Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶319¶1¶100%
+Comments¶../features/hasComments.html¶# Hello PLDB¶628¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶532¶21¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶367¶0¶100%
+Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶320¶1¶100%
 MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶225¶20¶92%
-Integers¶../features/hasIntegers.html¶80766866¶161¶1¶99%
+Integers¶../features/hasIntegers.html¶80766866¶162¶1¶99%
 Floats¶../features/hasFloats.html¶80766866.0¶139¶0¶100%
-Booleans¶../features/hasBooleans.html¶pldb = true¶116¶4¶97%
-Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶108¶1¶99%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶75¶3¶96%
-Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶70¶517¶12%
-Assignment¶../features/hasAssignment.html¶name = "PLDB"¶54¶1¶98%
-Octals¶../features/hasOctals.html¶0o464063622¶52¶3¶95%
+Booleans¶../features/hasBooleans.html¶pldb = true¶116¶5¶96%
+Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶108¶2¶98%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶76¶3¶96%
+Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶70¶518¶12%
+Assignment¶../features/hasAssignment.html¶name = "PLDB"¶55¶1¶98%
+Octals¶../features/hasOctals.html¶0o464063622¶52¶4¶93%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶49¶4¶92%
 File Imports¶../features/hasImports.html¶import pldb¶49¶2¶96%
 Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶49¶1¶98%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶48¶4¶92%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶44¶1¶98%
-Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶38¶1¶97%
-Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶33¶13¶72%
-Classes¶../features/hasClasses.html¶class PLDBFile {}¶31¶5¶86%
-Constants¶../features/hasConstants.html¶const name = "PLDB"¶28¶1¶97%
-Macros¶../features/hasMacros.html¶#define pldbItems 4000¶27¶9¶75%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶45¶1¶98%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶39¶1¶98%
+Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶33¶14¶70%
+Classes¶../features/hasClasses.html¶class PLDBFile {}¶31¶6¶84%
+Constants¶../features/hasConstants.html¶const name = "PLDB"¶28¶2¶93%
+Macros¶../features/hasMacros.html¶#define pldbItems 4000¶27¶10¶73%
 Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶26¶1¶96%
-Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶24¶1¶96%
-Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶54¶31%
-Lists¶../features/hasLists.html¶[2, 3, 10]¶22¶1¶96%
+Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶24¶2¶92%
+Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶55¶30%
+Lists¶../features/hasLists.html¶[2, 3, 10]¶23¶1¶96%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶22¶3¶88%
-Directives¶../features/hasDirectives.html¶use strict;¶21¶2¶91%
+Directives¶../features/hasDirectives.html¶use strict;¶21¶3¶88%
 Pointers¶../features/hasPointers.html¶int *pldb¶20¶5¶80%
-Inheritance¶../features/hasInheritance.html¶class PLDBFile extends File¶20¶1¶95%
-Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶19¶8¶70%
-Case Sensitivity¶../features/isCaseSensitive.html¶pldb != PLDB¶18¶9¶67%
+Inheritance¶../features/hasInheritance.html¶class PLDBFile extends File¶20¶2¶91%
+Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶20¶8¶71%
+Case Sensitivity¶../features/isCaseSensitive.html¶pldb != PLDB¶19¶9¶68%
 Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶18¶3¶86%
-Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶15¶0¶-
+Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶15¶1¶-
 Constructors¶../features/hasConstructors.html¶PLDBFile { constructor() {} }¶15¶4¶-
-Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶5¶-
-Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶13¶1¶-
+Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶6¶70%
+Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶14¶1¶-
 Message Passing¶../features/hasMessagePassing.html¶"get pldb"¶12¶1¶-
 Bitwise Operators¶../features/hasBitWiseOperators.html¶3 == (2 &#124; 1)¶12¶1¶-
 Module Pattern¶../features/hasModules.html¶module PLDB {}¶11¶0¶-
+Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶10¶3¶-
 Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶10¶0¶-
-Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶9¶3¶-
 Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
 Regular Expression Syntax Sugar¶../features/hasRegularExpressionsSyntaxSugar.html¶/pldb/¶9¶6¶-
 Pattern Matching¶../features/hasPatternMatching.html¶fib 0 = 1; fib 1 = 1¶9¶2¶-
-Increment and decrement operators¶../features/hasIncrementAndDecrementOperators.html¶i++¶9¶3¶-
+Increment and decrement operators¶../features/hasIncrementAndDecrementOperators.html¶i++¶9¶4¶-
 Here Document¶../features/hasHereDocs.html¶`A big multliline text block`¶9¶1¶-
-Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶8¶7¶-
+Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶8¶8¶-
 Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶8¶5¶-
 Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶8¶4¶-
 Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶4¶-

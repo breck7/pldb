@@ -18,9 +18,9 @@ Octals
 
 # 0o[0-7]+
 
-% 0o[0-7]+
-
 # 0o[0-7]+((_[0-7]+)+)?
+
+% 0o[0-7]+
 
 // 0[oO][0-7][0-7_]*
 
@@ -58,11 +58,11 @@ Octals
 
 *
 
-Languages *with* Octals include JavaScript, Python, Java, Perl, Go, Swift, Haskell, Elixir, Prolog, Julia, Zig, Reason, D, Chapel, F#, Coq, OCaml, VHDL, Protocol Buffers, F*, IDL, Verilog, Hy, Puppet, C3, AutoHotkey, PostScript, Cython, Eiffel, Opa, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, Golo, Felix, Boo, AspectJ, ooc, Meson, SourcePawn, Isabelle, Logtalk, Earl Grey, Jule, FloScript, Aardvark, Pawn, nimrod, CBOR data definition language
+Languages *with* Octals include JavaScript, Python, Java, Perl, Go, Swift, Haskell, Elixir, Julia, Prolog, Zig, Reason, D, Chapel, F#, Coq, OCaml, VHDL, Protocol Buffers, F*, IDL, Verilog, Hy, Puppet, C3, AutoHotkey, PostScript, Cython, Eiffel, Opa, SystemVerilog, NumPy, Cryptol, HLSL, GLSL, AutoIt, Golo, Felix, Boo, AspectJ, ooc, Meson, SourcePawn, Isabelle, Logtalk, Earl Grey, Jule, FloScript, Aardvark, Pawn, nimrod, CBOR data definition language
 
 *
 
-Languages *without* Octals include Lua, progsbase, Speedie
+Languages *without* Octals include Lua, progsbase, Speedie, Lil
 
 *
 

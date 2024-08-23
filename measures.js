@@ -186,7 +186,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -423,7 +423,7 @@ const measures = [
   },
   {
     "Name": "webRepl",
-    "Values": 127,
+    "Values": 128,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -785,7 +785,7 @@ const measures = [
   },
   {
     "Name": "standsFor",
-    "Values": 363,
+    "Values": 364,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -1088,7 +1088,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1118,7 +1118,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 1539,
+    "Values": 1540,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1308,7 +1308,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1998,7 +1998,7 @@ const measures = [
   },
   {
     "Name": "keywords",
-    "Values": 115,
+    "Values": 116,
     "Coverage": "2%",
     "Question": "What are all the keywords in this language?",
     "Example": "abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit ",
@@ -2008,7 +2008,7 @@ const measures = [
   },
   {
     "Name": "lineCommentToken",
-    "Values": 482,
+    "Values": 483,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2038,7 +2038,7 @@ const measures = [
   },
   {
     "Name": "stringToken",
-    "Values": 334,
+    "Values": 335,
     "Coverage": "6%",
     "Question": "What token(s) is used to delimit a string?",
     "Example": "\"",
@@ -2048,7 +2048,7 @@ const measures = [
   },
   {
     "Name": "assignmentToken",
-    "Values": 35,
+    "Values": 36,
     "Coverage": "0%",
     "Question": "What token(s) is used for assignment to an identifier?",
     "Example": ":=",
@@ -2148,7 +2148,7 @@ const measures = [
   },
   {
     "Name": "hasAnonymousFunctions",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language support anonymous functions, aka Lambdas?",
     "Example": "true",
@@ -2178,7 +2178,7 @@ const measures = [
   },
   {
     "Name": "hasAssignment",
-    "Values": 55,
+    "Values": 56,
     "Coverage": "1%",
     "Question": "Does the language allow assigning values to variables?",
     "Example": "true",
@@ -2208,7 +2208,7 @@ const measures = [
   },
   {
     "Name": "hasBinaryOperators",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have operators for operating on binary types?",
     "Example": "true",
@@ -2238,7 +2238,7 @@ const measures = [
   },
   {
     "Name": "hasBooleans",
-    "Values": 120,
+    "Values": 121,
     "Coverage": "2%",
     "Question": "Does the language have a type and syntax for booleans?",
     "Example": "true",
@@ -2278,7 +2278,7 @@ const measures = [
   },
   {
     "Name": "hasCaseInsensitiveIdentifiers",
-    "Values": 78,
+    "Values": 79,
     "Coverage": "1%",
     "Question": "Are identifiers in this language case insensitive?",
     "Example": "false",
@@ -2298,7 +2298,7 @@ const measures = [
   },
   {
     "Name": "hasClasses",
-    "Values": 36,
+    "Values": 37,
     "Coverage": "0%",
     "Question": "Does the language have a concept of classes?",
     "Example": "true",
@@ -2318,7 +2318,7 @@ const measures = [
   },
   {
     "Name": "hasComments",
-    "Values": 631,
+    "Values": 632,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2328,7 +2328,7 @@ const measures = [
   },
   {
     "Name": "hasConditionals",
-    "Values": 78,
+    "Values": 79,
     "Coverage": "1%",
     "Question": "Does the language have conditional statements and/or conditional expressions?",
     "Example": "true",
@@ -2338,7 +2338,7 @@ const measures = [
   },
   {
     "Name": "hasConstants",
-    "Values": 29,
+    "Values": 30,
     "Coverage": "0%",
     "Question": "Does the language have a way to declare constant compile time variables?",
     "Example": "true",
@@ -2378,7 +2378,7 @@ const measures = [
   },
   {
     "Name": "hasDefaultParameters",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have a way to define default parameters for functions?",
     "Example": "true",
@@ -2398,7 +2398,7 @@ const measures = [
   },
   {
     "Name": "hasDestructuring",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for conveniently extracting multiple values from a structure?",
     "Example": "true",
@@ -2408,7 +2408,7 @@ const measures = [
   },
   {
     "Name": "hasDirectives",
-    "Values": 23,
+    "Values": 24,
     "Coverage": "0%",
     "Question": "Is the language embedded in a tiny compile-time directive language?",
     "Example": "true",
@@ -2468,7 +2468,7 @@ const measures = [
   },
   {
     "Name": "hasDynamicTyping",
-    "Values": 1,
+    "Values": 2,
     "Coverage": "0%",
     "Question": "Are types of variables fixed or can they change during runtime?",
     "Example": "true",
@@ -2528,7 +2528,7 @@ const measures = [
   },
   {
     "Name": "hasExpressions",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a concept of expressions?",
     "Example": "true",
@@ -2538,7 +2538,7 @@ const measures = [
   },
   {
     "Name": "hasFirstClassFunctions",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?",
     "Example": "true",
@@ -2598,7 +2598,7 @@ const measures = [
   },
   {
     "Name": "hasFunctionComposition",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Can you pass functions into other functions and get new combined functions?",
     "Example": "true",
@@ -2608,7 +2608,7 @@ const measures = [
   },
   {
     "Name": "hasFunctionOverloading",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Can you have multiple functions with the same name but different parameters?",
     "Example": "false",
@@ -2618,7 +2618,7 @@ const measures = [
   },
   {
     "Name": "hasFunctions",
-    "Values": 45,
+    "Values": 46,
     "Coverage": "0%",
     "Question": "Does the language have a concept of and syntax for functions?",
     "Example": "true",
@@ -2628,7 +2628,7 @@ const measures = [
   },
   {
     "Name": "hasGarbageCollection",
-    "Values": 27,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "Does the language have a garbage collector or must memory of constructs be managed manually?",
     "Example": "true",
@@ -2698,7 +2698,7 @@ const measures = [
   },
   {
     "Name": "hasHexadecimals",
-    "Values": 109,
+    "Values": 110,
     "Coverage": "2%",
     "Question": "Does the language have a syntax for hexadecimals?",
     "Example": "true",
@@ -2758,7 +2758,7 @@ const measures = [
   },
   {
     "Name": "hasImplicitTypeConversions",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language automatically convert types as needed?",
     "Example": "true",
@@ -2778,7 +2778,7 @@ const measures = [
   },
   {
     "Name": "hasIncrementAndDecrementOperators",
-    "Values": 12,
+    "Values": 13,
     "Coverage": "0%",
     "Question": "Does this language have increment and decrement operators?",
     "Example": "true",
@@ -2788,7 +2788,7 @@ const measures = [
   },
   {
     "Name": "hasInfixNotation",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does this language use operators between operands?",
     "Example": "true",
@@ -2798,7 +2798,7 @@ const measures = [
   },
   {
     "Name": "hasInheritance",
-    "Values": 21,
+    "Values": 22,
     "Coverage": "0%",
     "Question": "Does this language have class inheritance?",
     "Example": "true",
@@ -2808,7 +2808,7 @@ const measures = [
   },
   {
     "Name": "hasIntegers",
-    "Values": 162,
+    "Values": 163,
     "Coverage": "3%",
     "Question": "Does this language have a syntax and type for integers?",
     "Example": "true",
@@ -2838,7 +2838,7 @@ const measures = [
   },
   {
     "Name": "hasLabels",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does the language have a way to label locations within the source code?",
     "Example": "false",
@@ -2858,7 +2858,7 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 552,
+    "Values": 553,
     "Coverage": "11%",
     "Question": "Does the language have line comments?",
     "Example": "true",
@@ -2868,7 +2868,7 @@ const measures = [
   },
   {
     "Name": "hasLists",
-    "Values": 23,
+    "Values": 24,
     "Coverage": "0%",
     "Question": "Does the language have lists?",
     "Example": "true",
@@ -2878,7 +2878,7 @@ const measures = [
   },
   {
     "Name": "hasStandardLibrary",
-    "Values": 39,
+    "Values": 40,
     "Coverage": "0%",
     "Question": "Does the language have a standard library?",
     "Example": "true",
@@ -2898,7 +2898,7 @@ const measures = [
   },
   {
     "Name": "hasMacros",
-    "Values": 36,
+    "Values": 37,
     "Coverage": "0%",
     "Question": "Does the language have a compile-time macro pass?",
     "Example": "true",
@@ -2968,7 +2968,7 @@ const measures = [
   },
   {
     "Name": "hasMethodChaining",
-    "Values": 1,
+    "Values": 2,
     "Coverage": "0%",
     "Question": "Does the language support method chaining?",
     "Example": "true",
@@ -2988,7 +2988,7 @@ const measures = [
   },
   {
     "Name": "hasMethods",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have methods on classes?",
     "Example": "true",
@@ -3038,7 +3038,7 @@ const measures = [
   },
   {
     "Name": "hasMultilineStrings",
-    "Values": 14,
+    "Values": 15,
     "Coverage": "0%",
     "Question": "Does the language support multiline strings?",
     "Example": "true",
@@ -3058,7 +3058,7 @@ const measures = [
   },
   {
     "Name": "hasMultipleInheritance",
-    "Values": 19,
+    "Values": 20,
     "Coverage": "0%",
     "Question": "Does the language allow multiple inheritance?",
     "Example": "true",
@@ -3088,7 +3088,7 @@ const measures = [
   },
   {
     "Name": "hasOctals",
-    "Values": 55,
+    "Values": 56,
     "Coverage": "1%",
     "Question": "Does the language have a syntax for octal numbers?",
     "Example": "true",
@@ -3098,7 +3098,7 @@ const measures = [
   },
   {
     "Name": "hasOperatorOverloading",
-    "Values": 46,
+    "Values": 47,
     "Coverage": "0%",
     "Question": "Does the language allow operator overloading?",
     "Example": "true",
@@ -3198,7 +3198,7 @@ const measures = [
   },
   {
     "Name": "hasPrintDebugging",
-    "Values": 320,
+    "Values": 321,
     "Coverage": "6%",
     "Question": "Does the language have a built in function that allows one to print debug?",
     "Example": "true",
@@ -3298,7 +3298,7 @@ const measures = [
   },
   {
     "Name": "hasScientificNotation",
-    "Values": 15,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for Scientific Notation?",
     "Example": "true",
@@ -3318,7 +3318,7 @@ const measures = [
   },
   {
     "Name": "hasSemanticIndentation",
-    "Values": 587,
+    "Values": 588,
     "Coverage": "11%",
     "Question": "Does the language use semantic indentation?",
     "Example": "false",
@@ -3328,7 +3328,7 @@ const measures = [
   },
   {
     "Name": "hasSets",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language come with a Set data structure?",
     "Example": "true",
@@ -3428,7 +3428,7 @@ const measures = [
   },
   {
     "Name": "hasStrings",
-    "Values": 366,
+    "Values": 367,
     "Coverage": "7%",
     "Question": "Does the language have a strings data structure?",
     "Example": "true",
@@ -3448,7 +3448,7 @@ const measures = [
   },
   {
     "Name": "hasSwitch",
-    "Values": 25,
+    "Values": 26,
     "Coverage": "0%",
     "Question": "Does the language have switch statements or expressions?",
     "Example": "true",
@@ -3488,7 +3488,7 @@ const measures = [
   },
   {
     "Name": "hasTernaryOperators",
-    "Values": 15,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "Does the language have ternary operators?",
     "Example": "true",
@@ -3688,7 +3688,7 @@ const measures = [
   },
   {
     "Name": "hasWhileLoops",
-    "Values": 52,
+    "Values": 53,
     "Coverage": "1%",
     "Question": "Does the language have while loops?",
     "Example": "true",
@@ -3698,7 +3698,7 @@ const measures = [
   },
   {
     "Name": "hasZeroBasedNumbering",
-    "Values": 12,
+    "Values": 13,
     "Coverage": "0%",
     "Question": "Does the language start counting from 0, rather than 1?",
     "Example": "true",
@@ -3718,7 +3718,7 @@ const measures = [
   },
   {
     "Name": "isCaseSensitive",
-    "Values": 27,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "Is this language case sensitive?",
     "Example": "false",
