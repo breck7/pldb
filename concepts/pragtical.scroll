@@ -2,21 +2,17 @@ import ../code/conceptPage.scroll
 
 id pragtical
 name Pragtical
+appeared 2019
+tags editor
 website https://pragtical.dev/
 description Pragtical is a lightweight, powerful, and hyperextensible text editor.
-tags textEditor
 writtenIn lua c
 
-features
- - syntax highlighting
- - multiple cursors
- - command palette
- - LSP support
- - plugin support
+repoStats
+ firstCommit 2019
+ newestCommit 2024
+ commits 2594
+ committers 112
+ files 223
 
-crossPlatformSupport
- - Windows
- - Linux
- - macOS
-
-license MIT
+githubRepo https://github.com/pragtical/pragtical
