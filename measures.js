@@ -169,7 +169,7 @@ const measures = [
     "Values": 5008,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1204",
+    "Example": "1206",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 5008,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21682",
+    "Example": "21679",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -262,8 +262,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_created",
-    "Values": 1150,
-    "Coverage": "22%",
+    "Values": 1156,
+    "Coverage": "23%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
     "Type": "number",
@@ -272,8 +272,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 1150,
-    "Coverage": "22%",
+    "Values": 1156,
+    "Coverage": "23%",
     "Question": "What year was the last commit made?",
     "Example": "2024",
     "Type": "number",
@@ -292,8 +292,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 1150,
-    "Coverage": "22%",
+    "Values": 1156,
+    "Coverage": "23%",
     "Question": "How many subscribers to the repo?",
     "Example": "24",
     "Type": "number",
@@ -302,8 +302,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 1148,
-    "Coverage": "22%",
+    "Values": 1154,
+    "Coverage": "23%",
     "Question": "How many forks of the repo?",
     "Example": "48",
     "Type": "number",
@@ -312,8 +312,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1150,
-    "Coverage": "22%",
+    "Values": 1156,
+    "Coverage": "23%",
     "Question": "How many stars of the repo?",
     "Example": "755",
     "Type": "number",
@@ -322,8 +322,8 @@ const measures = [
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 1147,
-    "Coverage": "22%",
+    "Values": 1153,
+    "Coverage": "23%",
     "Question": "How many isses on the repo?",
     "Example": "40",
     "Type": "number",
