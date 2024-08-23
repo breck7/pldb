@@ -3,9 +3,25 @@ import ../code/conceptPage.scroll
 id vlc
 name VLC
 appeared 1996
-country France
 creators Jean-Baptiste Kempf
-standsFor VideoLAN Client
 tags application video
+standsFor VideoLAN Client
+
+repoStats
+ firstCommit 1999
+ newestCommit 2024
+ commits 110460
+ committers 1080
+ files 5182
+country France
+
+githubRepo https://github.com/videolan/vlc
+ stars 13674
+ forks 5000
+ subscribers 579
+ created 2012
+ updated 2024
+ description VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc
+ issues 2
 
 wikipedia https://en.wikipedia.org/wiki/VLC_media_player
