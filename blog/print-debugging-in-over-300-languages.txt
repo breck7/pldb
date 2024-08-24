@@ -18,12 +18,12 @@ Both experts and beginners frequently use print("debugging").
 
 Support for print("debugging") is near-universal in high level programming languages.
 
-But implementations vary. Different languages use different commands.
+But implementations vary. Different languages use different function names.
 
 *
 
-What are the common patterns?
-=============================
+What are the common names?
+==========================
 
 - Many languages have a simple global keyword like `print` or `echo` or `puts`.
 - Many don't use the global namespace and you print("debugging") via a call like `console.log`.
@@ -36,7 +36,7 @@ What are the common patterns?
 The Data
 ========
 
-Below is a table of over 100 keyword(s) used for print("debugging") in over 300 languages. You can see the latest data in the PLDB Explorer.
+Below is a table of over 100 token(s) used for print("debugging") in over 300 languages. You can see the latest data in the PLDB Explorer.
  https://pldb.io/blog/../lists/explorer.html#columns=rank~name~id~appeared~tags~printToken&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22printToken%22%2C%22origData%22%3A%22printToken%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D latest data in the PLDB Explorer
 
 You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder for print("debugging") in low level languages than simply writing `print`.
