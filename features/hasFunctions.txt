@@ -22,6 +22,10 @@ mixin article(title)
   p This is my
   p Amazing article
 
+on myFunction do
+ print[&quot;hello&quot;]
+end
+
 func fib(n int) int:
    coyield
    if n &lt; 2:
@@ -42,10 +46,6 @@ fun main(argc s32, argv ^^u8) s32:
 function Example (|string| data)
  file &lt;~ data
 
-on myFunction do
- print[&quot;hello&quot;]
-end
-
 (fn (x) (+ x 1))
 
 - call !FooBar %name%
@@ -54,7 +54,7 @@ FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
 
 *
 
-Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, PowerShell, Bash, Scala, Lua, Kotlin, Erlang, Julia, Solidity, Ada, Crystal, Reason, Pug, Groovy, F#, OCaml, VHDL, F*, ABAP, Verilog, C3, Koka, Janet, Opa, SystemVerilog, progsbase, ATS, Cyber, X10, IGOR Pro, Ligo, Jule, Cwerg, Eclipse Command Language, Sophia, Speedie, Lil, Bel, Q#, plang, BALGOL
+Languages *with* Functions include JavaScript, Python, Ruby, PHP, R, PowerShell, Bash, Scala, Lua, Kotlin, Erlang, Julia, Solidity, Ada, Crystal, Reason, Pug, Groovy, F#, OCaml, VHDL, F*, ABAP, Verilog, C3, Koka, Janet, Opa, Lil, SystemVerilog, progsbase, ATS, Cyber, X10, IGOR Pro, Ligo, Jule, Cwerg, Eclipse Command Language, Sophia, Speedie, Bel, Q#, plang, BALGOL
 
 *
 

@@ -1,20 +1,338 @@
-Little Implementation Language
-==============================
+Lil
+===
 
-Little Implementation Language, aka Little Implementation Language, is a programming language created in 1974 by P. J. Plauger.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1974
- https://pldb.io/concepts/../lists/creators.html#q=P.%20J.%20Plauger P. J. Plauger
+Lil, aka Learning In Layers, is an open source programming language created in 2022 by John Earnest.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=John%20Earnest John Earnest
 
-#1738 on PLDB
-50 Years Old
+#279 on PLDB
+2 Years Old
 
-LIL, the Little Implementation Language, was a system programming language during the early days of Unix history on PDP-11 machines. It was written by P. J. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/Little_Implementation_Language Read more on Wikipedia...
+git clone https://github.com/JohnEarnest/Decker
+
+Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
 
 - Tags: programming language
-- Early development of Little Implementation Language happened in Bell Labs
-- Little Implementation Language on HOPL
- https://hopl.info/showlanguage.prx?exp=2386 Little Implementation Language on HOPL
-- See also: (2 related languages) Unix, PL360
+- Lil is developed on GitHub and has 949 stars
+- Early development of Lil happened in https://beyondloom.com/decker/
+- Lil is written in Markdown, Bourne shell, JavaScript, C, XML, HTML, Vim script, awk, Make, YAML, Lisp, Nix
+- See also: (2 related languages) SQL, Lua
+
+on mode a do   # line comment
+ r:()
+ each x in a
+  r[x]:1+r[x]
+ end
+ first extract key orderby value desc from r
+end
+
+floor cos sin tan exp ln sqrt count first last sum min max raze prod range keys list rows cols table typeof flip mag unit heading split fuse dict take drop in join cross parse format unless limit like window each in while on do end if elseif else where by orderby asc desc select extract update from insert with into send local
+
+Language features
+======================================================
+
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported ✓
+ Example
+  print["Hello, World!"]
+ Token 
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported ✓
+ Example
+  on o f g do
+   on _ x do f[g[x]] end
+  end
+ Token 
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported ✓
+ Example
+  show["Hi"]
+ Token 
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported ✓
+ Example
+  lines:"one
+  two"
+ Token 
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported ✓
+ Example
+  six: 2 + 2 + 2
+ Token 
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported ✓
+ Example
+  local name: "John"
+ Token :
+row
+ Feature First-Class Functions
+ FeatureLink ../features/hasFirstClassFunctions.html
+ Supported ✓
+ Example
+  (on f x do x,x end)@11,22,33
+ Token 
+row
+ Feature Method Chaining
+ FeatureLink ../features/hasMethodChaining.html
+ Supported ✓
+ Example
+  image[3,4].map[0 dict 1].encoded
+ Token 
+row
+ Feature Binary Operators
+ FeatureLink ../features/hasBinaryOperators.html
+ Supported ✓
+ Example
+  1 + 1
+ Token 
+row
+ Feature Expressions
+ FeatureLink ../features/hasExpressions.html
+ Supported ✓
+ Example
+  1 + 1
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported ✓
+ Example
+  myList:(1,2,3)
+  end
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported ✓
+ Example
+  80766866
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported ✓
+ Example
+  if 1
+   print["true"]
+  end
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported ✓
+ Example
+  on myFunction do
+   print["hello"]
+  end
+ Token 
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported ✓
+ Example
+  while 1
+   print["hello"]
+  end
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported ✓
+ Example
+  "Hello World"
+ Token "
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported ✓
+ Example
+  # A comment
+ Token #
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Implicit Type Casting
+ FeatureLink ../features/hasImplicitTypeConversions.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature hasDynamicTyping
+ FeatureLink ../features/hasDynamicTyping.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Example
+ Token 
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Labels
+ FeatureLink ../features/hasLabels.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Directives
+ FeatureLink ../features/hasDirectives.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Methods
+ FeatureLink ../features/hasMethods.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Default Parameters Pattern
+ FeatureLink ../features/hasDefaultParameters.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Destructuring
+ FeatureLink ../features/hasDestructuring.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Sets
+ FeatureLink ../features/hasSets.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported X
+ Example
+ Token 
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported X
+ Example
+ Token
 
 View source

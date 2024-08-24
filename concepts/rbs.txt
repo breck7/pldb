@@ -4,7 +4,7 @@ rbs
 rbs is a header lang created in 2020.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
 
-#2176 on PLDB
+#2174 on PLDB
 4 Years Old
 
 We defined a new language called RBS for type signatures for Ruby 3. The signatures are written in .rbs files which is different from Ruby code. You can consider the .rbs files are similar to .d.ts files in TypeScript or .h files in C/C++/ObjC. The benefit of having different files is it doesn't require changing Ruby code to start type checking. You can opt-in type checking safely without changing any part of your workflow.

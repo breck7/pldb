@@ -1,26 +1,122 @@
 import ../code/conceptPage.scroll
 
 id lil
-name Little Implementation Language
-appeared 1974
-creators P. J. Plauger
+name Lil
+appeared 2022
+creators John Earnest
 tags pl
-website http://www.ultimate.com/phil/lil/lil.html
-standsFor Little Implementation Language
+website http://beyondloom.com/tools/trylil.html
+standsFor Learning In Layers
+webRepl http://beyondloom.com/tools/trylil.html
+description Lil is part of the technology that powers Decker, a multimedia creative tool inspired by HyperCard. Decker uses Lil for adding custom behavior to decks and the widgets within. Lil is designed to be learned in layers, but it is a richly multi-paradigm language which incorporates ideas from imperative, functional, declarative, and vector-oriented languages.
+writtenIn markdown bourne-shell javascript c xml html vim-script awk make yaml lisp nix
 
-fileType text
-wordRank 6582
-country United States
-originCommunity Bell Labs
+isOpenSource true
+related sql lua
+influencedBy k q sql lua hypercard
+docs https://beyondloom.com/decker/lil.html
+repoStats
+ firstCommit 2022
+ commits 581
+ committers 17
+ files 191
+ newestCommit 2024
+country USA
+originCommunity https://beyondloom.com/decker/
 
-wikipedia https://en.wikipedia.org/wiki/Little_Implementation_Language
- related unix pl360
- summary LIL, the Little Implementation Language, was a system programming language during the early days of Unix history on PDP-11 machines. It was written by P. J. Plauger of Bell Labs. LIL attempted to fill the gap between assemblers and machine-independent system implementation languages (such as the C programming language), by basically adding structured programming to the PDP-11 assembly language. LIL resembled PL360 with C-like flow control syntax. The LIL compiler "lc" was part of Fifth Edition Unix (1974), but was dropped by Sixth Edition Unix (1975). Plauger left Bell Labs in the same year. Plauger explains why LIL was abandoned in Bell Labs in favor of C: [1] ... LIL is, however, a failure. Its stiffest competition at Bell Labs is the language C, which is higher level, and machine independent. Every time it looked like C was too expensive to use for a particular project, LIL was considered. But almost every time, it proved easier (and more rewarding) to improve C, or its runtime support, or the hardware, than to invest time in yet another language. ... A machine independent language is always superior -- even for writing machine dependent code (it's easier to find trained programmers) -- so long as the overhead can be endured. It is clear now that writing straightforward code and then measuring it is the formula for the best end product. At worst there will be 5-15 per cent overhead, which is seldom critical. Once system writers become mature enough to recognize this basic truth, they gravitate naturally toward machine independent SILs. ... it looks like the little implementation language is an idea whose time as come -- and gone.
- pageId 35320077
- dailyPageViews 4
- created 2012
- backlinksCount 4
- revisionCount 20
- appeared 1974
+example
+ on mode a do   # line comment
+  r:()
+  each x in a
+   r[x]:1+r[x]
+  end
+  first extract key orderby value desc from r
+ end
 
-hopl https://hopl.info/showlanguage.prx?exp=2386
+keywords floor cos sin tan exp ln sqrt count first last sum min max raze prod range keys list rows cols table typeof flip mag unit heading split fuse dict take drop in join cross parse format unless limit like window each in while on do end if elseif else where by orderby asc desc select extract update from insert with into send local
+githubRepo https://github.com/JohnEarnest/Decker
+ stars 949
+ forks 51
+ subscribers 33
+ created 2022
+ updated 2024
+ description A multimedia sketchpad
+ issues 2
+
+assignmentToken :
+stringToken "
+lineCommentToken #
+
+hasComments true
+hasZeroBasedNumbering true
+hasDynamicTyping true
+hasGarbageCollection true
+hasImplicitTypeConversions true
+isCaseSensitive true
+hasLineComments true
+ # A comment
+hasStrings true
+ "Hello World"
+hasWhileLoops true
+ while 1
+  print["hello"]
+ end
+hasFunctions true
+ on myFunction do
+  print["hello"]
+ end
+hasConditionals true
+ if 1
+  print["true"]
+ end
+hasIntegers true
+ 80766866
+hasLists true
+ myList:(1,2,3)
+ end
+hasExpressions true
+ 1 + 1
+hasBinaryOperators true
+ 1 + 1
+hasMethodChaining true
+ image[3,4].map[0 dict 1].encoded
+hasFirstClassFunctions true
+ (on f x do x,x end)@11,22,33
+hasAssignment true
+ local name: "John"
+hasInfixNotation true
+ six: 2 + 2 + 2
+hasMultilineStrings true
+ lines:"one
+ two"
+hasPrintDebugging true
+ show["Hi"]
+hasFunctionComposition true
+ on o f g do
+  on _ x do f[g[x]] end
+ end
+hasStandardLibrary true
+ print["Hello, World!"]
+hasScientificNotation false
+hasHexadecimals false
+hasOctals false
+hasSets false
+hasDestructuring false
+hasDefaultParameters false
+hasMethods false
+hasIncrementAndDecrementOperators false
+hasTernaryOperators false
+hasSwitch false
+hasInheritance false
+hasMultipleInheritance false
+hasCaseInsensitiveIdentifiers false
+hasAnonymousFunctions false
+hasMacros false
+hasFunctionOverloading false
+hasOperatorOverloading false
+hasDirectives false
+hasBooleans false
+hasSemanticIndentation false
+hasClasses false
+hasLabels false
+hasConstants false

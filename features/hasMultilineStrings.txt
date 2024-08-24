@@ -22,6 +22,9 @@ This is the third line.
 String s = `this
  string is multiline`;
 
+lines:&quot;one
+two&quot;
+
 plainText
  This is a
  multiline string
@@ -33,9 +36,6 @@ with raw strings`
 &quot;hello
 you
 beauty&quot;
-
-lines:&quot;one
-two&quot;
 
 {{
   Line 1
@@ -57,7 +57,7 @@ and this is the third line.
 
 *
 
-Languages *with* Multiline Strings include JavaScript, Python, Ruby, PHP, Elixir, C3, progsbase, Scroll, Jule, Speedie, Aardvark, Lil, Boron, Ion
+Languages *with* Multiline Strings include JavaScript, Python, Ruby, PHP, Elixir, C3, Lil, progsbase, Scroll, Jule, Speedie, Aardvark, Boron, Ion
 
 *
 

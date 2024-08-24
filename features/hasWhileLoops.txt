@@ -14,6 +14,10 @@ while (int x = foo(); x &gt; 0)
   sum += x;
 }
 
+while 1
+ print[&quot;hello&quot;]
+end
+
 while fiber.status() != #done:
   res = coresume fiber
   count += 1
@@ -25,13 +29,9 @@ for my_condition {
 while true
   &quot;hello&quot;
 
-while 1
- print[&quot;hello&quot;]
-end
-
 *
 
-Languages *with* While Loops include JavaScript, C, Python, Java, Perl, Ruby, PHP, C#, R, PowerShell, Bash, Rust, Swift, Scala, Lua, Kotlin, CoffeeScript, Objective-C, Julia, Dart, Solidity, Pascal, Ada, Crystal, Reason, Groovy, Chapel, F#, OCaml, VHDL, ABAP, Verilog, C3, SystemVerilog, AutoIt, Dylan, Maxima, Cyber, X10, Angelscript, Apex, Jule, fp, JS++, Speedie, Lil, Q#, hecl, nimrod
+Languages *with* While Loops include JavaScript, C, Python, Java, Perl, Ruby, PHP, C#, R, PowerShell, Bash, Rust, Swift, Scala, Lua, Kotlin, CoffeeScript, Objective-C, Julia, Dart, Solidity, Pascal, Ada, Crystal, Reason, Groovy, Chapel, F#, OCaml, VHDL, ABAP, Verilog, C3, Lil, SystemVerilog, AutoIt, Dylan, Maxima, Cyber, X10, Angelscript, Apex, Jule, fp, JS++, Speedie, Q#, hecl, nimrod
 
 *
 

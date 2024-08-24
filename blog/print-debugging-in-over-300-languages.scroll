@@ -1,6 +1,7 @@
 authors Breck Yunits
  https://github.com/breck7 Breck Yunits
 date 2022.07.15
+replace PD <b>print("debugging")</b>
 tags All
 title "print() debugging" in over 300 languages
 
@@ -10,8 +11,6 @@ mediumColumns 1
 printAuthors
 
 image print-debugging.png
-
-replace PD <b>print("debugging")</b>
 
 Paul Graham—creator of Arc and Bel—started an interesting thread last month about PD.
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
@@ -215,7 +214,5 @@ table
       new TreeNode(sorted).toDelimited(",", ["Keyword", "Languages", "Count"])
     )
   }
-
-
 
 import footer.scroll

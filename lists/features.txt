@@ -11,7 +11,7 @@ We also have a page of all keywords and all file extensions.
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
 Comments¶../features/hasComments.html¶# Hello PLDB¶628¶4¶99%
 Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶532¶21¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶367¶0¶100%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶366¶0¶100%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶320¶1¶100%
 MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶225¶20¶92%
 Integers¶../features/hasIntegers.html¶80766866¶162¶1¶99%
@@ -34,7 +34,7 @@ Macros¶../features/hasMacros.html¶#define pldbItems 4000¶27¶10¶73%
 Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶26¶1¶96%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶24¶2¶92%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶55¶30%
-Lists¶../features/hasLists.html¶[2, 3, 10]¶23¶1¶96%
+Lists¶../features/hasLists.html¶[2, 3, 10]¶22¶1¶96%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶22¶3¶88%
 Directives¶../features/hasDirectives.html¶use strict;¶21¶3¶88%
 Pointers¶../features/hasPointers.html¶int *pldb¶20¶5¶80%

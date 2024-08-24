@@ -13,11 +13,12 @@ myList = {1, 2, 3}
 
 my_list = [1, 2, 3, 4, 5]
 
+myList:(1,2,3)
+end
+
 my-list: [1 two 3.0 &quot;four&quot;]
 
 (let x (arr (vec 3 float)))
-
-emptyList = ()
 
 TABLICA(4): B
 1 2.0 3.4
@@ -25,9 +26,6 @@ TABLICA(4): B
 *
 
 [1 2]
-
-myList:(1,2,3)
-end
 
 ; here is a list of a, b, and c:
 (a . (b . (c . nil)))
@@ -46,7 +44,7 @@ ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
 
 *
 
-Languages *with* Lists include JavaScript, Python, Go, JSON, Lua, Elixir, GraphQL, EDN, Janet, REBOL, Wax, Lil, fp, SAKO, Uniform eXchange Format, Speedie, Aardvark, Lil, Bel, Boron, Ion, hecl, BALGOL
+Languages *with* Lists include JavaScript, Python, Go, JSON, Lua, Elixir, GraphQL, EDN, Janet, Lil, REBOL, Wax, fp, SAKO, Uniform eXchange Format, Speedie, Aardvark, Bel, Boron, Ion, hecl, BALGOL
 
 *
 
