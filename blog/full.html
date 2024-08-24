@@ -1412,8 +1412,9 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <div class="dinkus"><span>*</span></div>
 <div class="scrollSection"><h1 class="scrollParagraph">The Data</h1>
 </div>
-<p class="scrollParagraph">Below is a table of over 100 keyword(s) used for <b>print("debugging")</b> in over 300 languages.</p>
+<p class="scrollParagraph">Below is a table of over 100 keyword(s) used for <b>print("debugging")</b> in over 300 languages. You can see the <a href="../lists/explorer.html#columns=rank~name~id~appeared~tags~printToken&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22printToken%22%2C%22origData%22%3A%22printToken%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">latest data in the PLDB Explorer</a>.</p>
 <p class="scrollParagraph">You may notice there is a lack of representation of assembly languages in this list. It is often <em>much</em> harder for <b>print("debugging")</b> in low level languages than simply writing <code>print</code>.</p>
+<figure class="scrollCaptionedFigure" style="width:1240px; margin: auto;"><a href="images/printDebugging.png" target="_blank"  ><img src="images/printDebugging.png" width="1240" height="1504" loading="lazy"></a></figure>
 <table id="table4" class="scrollTable">
  <thead><tr><th>Keyword</th>
 
@@ -1896,7 +1897,6 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
   e.currentTarget.classList.toggle('expandedTable');
  });
  </script>
-<div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=print-debugging-in-over-300-languages.html.ohayo&data=html.h1%20Does%20every%20programming%20language%20have%20a%20central%20package%20repository%3F%0Aweb.get%20https%3A%2F%2Fpldb.io%2Fpldb.csv%0A%20tables.basic%0A%20filter.where%20printToken%20!%3D%0A%20%20tables.basic%0A%20%20group.by%20printToken%0A%20%20%20rows.sortByReverse%20count%0A%20%20%20%20tables.basic">Ohayo</a></div>
 <script src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script><a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/blog/print-debugging-in-over-300-languages.scroll">View source</a>
 </div>

@@ -41,9 +41,13 @@ But implementations vary. Different languages use different commands.
 
 # The Data
 
-Below is a table of over 100 keyword(s) used for PD in over 300 languages.
+Below is a table of over 100 keyword(s) used for PD in over 300 languages. You can see the latest data in the PLDB Explorer.
+ link ../lists/explorer.html#columns=rank~name~id~appeared~tags~printToken&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22printToken%22%2C%22origData%22%3A%22printToken%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D latest data in the PLDB Explorer
 
 You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder for PD in low level languages than simply writing `print`.
+
+image images/printDebugging.png
+ openGraph
 
 table
  delimiter ,
@@ -212,14 +216,6 @@ table
     )
   }
 
-ohayoCode
- html.h1 Does every programming language have a central package repository?
- web.get https://pldb.io/pldb.csv
-  tables.basic
-  filter.where printToken !=
-   tables.basic
-   group.by printToken
-    rows.sortByReverse count
-     tables.basic
+
 
 import footer.scroll

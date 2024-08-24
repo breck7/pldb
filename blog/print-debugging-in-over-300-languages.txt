@@ -36,9 +36,12 @@ What are the common patterns?
 The Data
 ========
 
-Below is a table of over 100 keyword(s) used for print("debugging") in over 300 languages.
+Below is a table of over 100 keyword(s) used for print("debugging") in over 300 languages. You can see the latest data in the PLDB Explorer.
+ https://pldb.io/blog/../lists/explorer.html#columns=rank~name~id~appeared~tags~printToken&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22printToken%22%2C%22origData%22%3A%22printToken%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D latest data in the PLDB Explorer
 
 You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder for print("debugging") in low level languages than simply writing `print`.
+
+[Image Omitted]
 
 Keyword,Languages,Count
 print,Python R Perl Swift Fortran Lua Dart awk PostScript SPSS Emacs Lisp Standard ML REBOL Logo Boo Io IDL Hy NewLisp Squirrel Ceylon Factor MoonScript Maxima SETL Dafny Coconut Terra Genie ALGOL 68 RATFOR Gosu Ante Jython SIL Cobra Yorick BeanShell Nit starlark Fennel Angelscript F MAXScript pyret GDScript ArkScript dyvil ProvideX Project MAC’s SYmbolic MAnipulator Locomotive BASIC Bython zenscript owen-lang A++ toy-lang Pawn SdlBasic Action Code Script QCL Battlestar Claro verve,63
@@ -158,14 +161,5 @@ IO.Println,parasail,1
 Js.log,Rescript,1
 fmt::println,Hare,1
 output,quorum,1
-
-html.h1 Does every programming language have a central package repository?
-web.get https://pldb.io/pldb.csv
- tables.basic
- filter.where printToken !=
-  tables.basic
-  group.by printToken
-   rows.sortByReverse count
-    tables.basic
 
 View source
