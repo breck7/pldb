@@ -4,17 +4,17 @@ anyCell
 
 // Enum cell types
 enumCell
- highlightScope constant.language
+ paint constant.language
 booleanCell
  enum true false
  extends enumCell
 
 // String cell types
 stringCell
- highlightScope string
+ paint string
 
 wordCell
- highlightScope string
+ paint string
  description A non-empty single word string.
  regex .+
 
@@ -22,24 +22,24 @@ columnNameCell
  extends stringCell
 
 semanticVersionCell
- highlightScope string
+ paint string
  description A 3 part sem version string like 1.2.1
 
 // Date cell types
 dateCell
- highlightScope string
+ paint string
 
 // Numeric cell types
 numberCell
- highlightScope constant.numeric
+ paint constant.numeric
 integerCell
  extends numberCell
- highlightScope constant.numeric.integer
+ paint constant.numeric.integer
 floatCell
  extends numberCell
- highlightScope constant.numeric.float
+ paint constant.numeric.float
 percentCell
- highlightScope constant.numeric.float
+ paint constant.numeric.float
  extends stringCell
  // todo: this currently extends from stringCell b/c scrollsdk needs to be fixed. seems like if extending from number then the hard coded number typescript regex takes precedence over a custom regex
 countCell
@@ -50,39 +50,39 @@ yearCell
 // Scroll cell types
 commandWordCell
  description A word that indicates a certain parser to use.
- highlightScope keyword
+ paint keyword
 
 preBuildCommandWordCell
  extends commandWordCell
  description Give build command words their own color.
- highlightScope constant.character.escape
+ paint constant.character.escape
 
 commentCell
- highlightScope comment
+ paint comment
 
 delimiterCell
  description String to use as a delimiter.
- highlightScope string
+ paint string
 
 codeCell
- highlightScope comment
+ paint comment
 
 bulletPointCell
  description Any token used as a bullet point such as "-" or "1." or ">"
- highlightScope keyword
+ paint keyword
 
 comparisonCell
  enum < > <= >= = != includes doesNotInclude empty notEmpty
- highlightScope constant
+ paint constant
 
 personNameCell
  extends stringCell
 
 // Link cell types
 urlCell
- highlightScope constant.language
+ paint constant.language
 absoluteUrlCell
- highlightScope constant.language
+ paint constant.language
  regex (ftp|https?)://.+
 
 emailAddressCell
@@ -90,7 +90,7 @@ emailAddressCell
 
 // File system cell types
 permalinkCell
- highlightScope string
+ paint string
  description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
 
 filePathCell
@@ -99,17 +99,17 @@ filePathCell
 // HTML cell types
 tagOrUrlCell
  description An HTML tag or a url.
- highlightScope constant.language
+ paint constant.language
 
 htmlAttributesCell
- highlightScope comment
+ paint comment
 
 htmlTagCell
- highlightScope constant.language
+ paint constant.language
  enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
 
 classNameCell
- highlightScope constant
+ paint constant
 
 htmlIdCell
  extends anyCell
@@ -147,9 +147,9 @@ abstractScrollWithRequirementsParser
 metaCommandWordCell
  extends commandWordCell
  description Give meta command words their own color.
- highlightScope constant.numeric
+ paint constant.numeric
  // Obviously this is not numeric. But I like the green color for now.
-   We need a better design to replace this "highlightScope" concept
+   We need a better design to replace this "paint" concept
    https://github.com/breck7/scrollsdk/issues/186
 
 abstractTopLevelSingleMetaParser
@@ -229,7 +229,7 @@ abstractUrlSettingParser
 buildCommandWordCell
  extends commandWordCell
  description Give build command words their own color.
- highlightScope constant
+ paint constant
 
 abstractBuildCommandParser
  extends abstractScrollParser
@@ -978,7 +978,7 @@ filenamesParser
 // fileType
 // fileTypeWordCell
  enum paper text binary na
- highlightScope constant.language
+ paint constant.language
 fileTypeParser
  description What is the file encoding for programs in this language?
  cells measureNameCell stringCell
@@ -2973,7 +2973,7 @@ twitterParser
 // type
 tagCell
  enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad
- highlightScope constant.language
+ paint constant.language
 tagsParser
  float sortIndex 1.2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?

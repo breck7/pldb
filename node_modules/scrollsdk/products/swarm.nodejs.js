@@ -37,41 +37,41 @@
 
 // Cell parsers
 anyCell
- highlightScope string
+ paint string
  examples lorem ipsum
 assertionKeywordCell
- highlightScope keyword.operator
+ paint keyword.operator
  extends keywordCell
 commandCell
  extends keywordCell
- highlightScope variable.function
+ paint variable.function
  examples someCommand
 extraCell
- highlightScope invalid
+ paint invalid
 filepathCell
  examples foobar.foo someFile.foo
- highlightScope string
+ paint string
 keywordCell
 hashBangKeywordCell
  extends keywordCell
- highlightScope comment
+ paint comment
  enum #!
 hashBangCell
- highlightScope comment
+ paint comment
 intCell
  regex \\-?[0-9]+
- highlightScope constant.numeric.integer
+ paint constant.numeric.integer
 parameterKeywordCell
  extends keywordCell
- highlightScope variable.parameter
+ paint variable.parameter
 todoCell
- highlightScope comment
+ paint comment
 todoKeywordCell
  extends keywordCell
- highlightScope comment
+ paint comment
 typeOfOptionCell
  description The 6 possible results for Javascript's typeof.
- highlightScope constant.language
+ paint constant.language
  enum object boolean function number string undefined
 
 // Line parsers

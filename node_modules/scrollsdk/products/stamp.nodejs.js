@@ -85,20 +85,20 @@
 // Cell parsers
 anyCell
 extraCell
- highlightScope invalid
+ paint invalid
 anyCell
- highlightScope string
+ paint string
 promptWordsCell
- highlightScope string
+ paint string
 filepathCell
 varNameCell
- highlightScope string
+ paint string
 commentCell
- highlightScope comment
+ paint comment
 inputTypeCell
  enum string int any lowercase
 keywordCell
- highlightScope keyword.control
+ paint keyword.control
 
 // Line parsers
 stampParser

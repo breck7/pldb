@@ -34,7 +34,7 @@ printTitleParser
    return compiled
   }
   get originalText() {
-   return this.content ?? this.parent.file.title ?? ""
+   return this.content ?? this.root.title ?? ""
   }
   defaultClassName = "scrollTitle"
   tag = "h1"

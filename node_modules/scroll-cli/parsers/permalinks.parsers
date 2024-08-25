@@ -2,10 +2,6 @@ baseUrlParser
  description Required for RSS and OpenGraph.
  extends abstractUrlSettingParser
 
-downloadUrlParser
- description Set link to Download Page.
- extends abstractUrlSettingParser
-
 permalinkParser
  description Override output filename.
  extends abstractTopLevelSingleMetaParser

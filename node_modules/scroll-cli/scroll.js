@@ -24,7 +24,6 @@ const scrollKeywords = {
   title: "title",
   description: "description",
   viewSourceUrl: "viewSourceUrl",
-  downloadUrl: "downloadUrl",
   permalink: "permalink",
   canonicalUrl: "canonicalUrl",
   image: "image",
@@ -484,14 +483,6 @@ class ScrollFile {
   }
 
   log(message) {}
-
-  get email() {
-    return this.get(scrollKeywords.email)
-  }
-
-  get downloadUrl() {
-    return this.get(scrollKeywords.downloadUrl)
-  }
 
   get date() {
     const date = this.get(scrollKeywords.date) || this.timestamp * 1000 || 0
