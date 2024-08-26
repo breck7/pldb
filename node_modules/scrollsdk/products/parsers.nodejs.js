@@ -286,11 +286,16 @@ compilerParser
  extends abstractParserRuleParser
  cruxFromId
 
-descriptionParser
+parserDescriptionParser
+ description Parser description.
  catchAllCellType stringCell
- // todo Should we make this multiline?
  extends abstractParserRuleParser
- cruxFromId
+ crux description
+
+cellTypeDescriptionParser
+ description Cell Type description.
+ catchAllCellType stringCell
+ crux description
 
 exampleParser
  // todo Should this just be a "string" constant on nodes?
@@ -436,38 +441,41 @@ cellTypeDefinitionParser
  // todo Allow abstract cell types?
  // todo Change pattern to postfix.
  pattern ^[a-zA-Z0-9_]+Cell$
- inScope paintParser regexParser reservedWordsParser enumFromCellTypesParser descriptionParser enumParser slashCommentParser extendsCellTypeParser examplesParser cellMinParser cellMaxParser
+ inScope paintParser regexParser reservedWordsParser enumFromCellTypesParser cellTypeDescriptionParser enumParser slashCommentParser extendsCellTypeParser examplesParser cellMinParser cellMaxParser
  cells cellTypeIdCell
 
 // Enums
 enumFromCellTypesParser
+ description Generate enum options at runtime.
  catchAllCellType cellTypeIdCell
  cells cellPropertyNameCell
  cruxFromId
 
 enumParser
+ description Set enum options.
  cruxFromId
  catchAllCellType enumOptionCell
  cells cellPropertyNameCell
 
 examplesParser
- description If the domain of possible cell values is large, such as a string type, it can help certain methods—such as program synthesis—to provide a few examples.
+ description Examples for documentation and tests.
+ // If the domain of possible cell values is large, such as a string type, it can help certain methods—such as program synthesis—to provide a few examples.
  cruxFromId
  catchAllCellType cellExampleCell
  cells cellPropertyNameCell
 
 cellMinParser
- description For numeric cell types you can specify a min
+ description Specify a min if numeric.
  crux min
  cells cellPropertyNameCell numericCell
 cellMaxParser
- description For numeric cell types you can specify a max
+ description Specify a max if numeric.
  crux max
  cells cellPropertyNameCell numericCell
 
 paintParser
  cells propertyKeywordCell paintTypeCell
- description Color this word like a [category].
+ description Instructor editor how to color these.
  single
  cruxFromId
 
@@ -484,30 +492,16 @@ parserDefinitionParser
  inScope rootFlagParser abstractParserRuleParser abstractConstantParser slashCommentParser parserDefinitionParser
  cells parserIdCell
 
-_extendsJsClassParser
- extends abstractParserRuleParser
- // todo remove
- description Deprecated
- cells propertyKeywordCell anyCell
- cruxFromId
-
-_rootParserJsHeaderParser
- extends abstractParserRuleParser
- // todo remove
- description Deprecated
- catchAllParser catchAllJavascriptCodeLineParser
- cruxFromId
-
 regexParser
  catchAllCellType regexCell
- description The word must match this pattern or it shall be marked as an error.
+ description Words must match this.
  single
  cells cellPropertyNameCell
  cruxFromId
 
 reservedWordsParser
  single
- description A list of words that a cell cannot contain.
+ description Words can't be any of these.
  catchAllCellType reservedWordCell
  cells cellPropertyNameCell
  cruxFromId
@@ -523,8 +517,8 @@ slashCommentParser
 
 extendsCellTypeParser
  crux extends
- description cellType definitions can extend others.
- // todo Add mixin support in addition to/in place of extends?
+ description Extend another cellType.
+ // todo Add mixin support in addition to extends?
  cells propertyKeywordCell cellTypeIdCell
  single`)
     get handParsersProgram() {
@@ -708,7 +702,13 @@ extendsCellTypeParser
     }
   }
 
-  class descriptionParser extends abstractParserRuleParser {
+  class parserDescriptionParser extends abstractParserRuleParser {
+    get stringCell() {
+      return this.getWordsFrom(0)
+    }
+  }
+
+  class cellTypeDescriptionParser extends ParserBackedNode {
     get stringCell() {
       return this.getWordsFrom(0)
     }
@@ -872,7 +872,7 @@ extendsCellTypeParser
       return new TreeNode.ParserCombinator(
         undefined,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
-          description: descriptionParser,
+          description: cellTypeDescriptionParser,
           enumFromCellTypes: enumFromCellTypesParser,
           enum: enumParser,
           examples: examplesParser,
@@ -970,7 +970,7 @@ extendsCellTypeParser
           catchAllParser: catchAllParserParser,
           cells: cellsParser,
           compiler: compilerParser,
-          description: descriptionParser,
+          description: parserDescriptionParser,
           example: exampleParser,
           extends: extendsParserParser,
           frequency: frequencyParser,
@@ -988,8 +988,6 @@ extendsCellTypeParser
           childrenKey: childrenKeyParser,
           tags: tagsParser,
           root: rootFlagParser,
-          _extendsJsClass: _extendsJsClassParser,
-          _rootParserJsHeader: _rootParserJsHeaderParser,
           "//": slashCommentParser
         }),
         [{ regex: /^[a-zA-Z0-9_]+Parser$/, parser: parserDefinitionParser }]
@@ -997,21 +995,6 @@ extendsCellTypeParser
     }
     get parserIdCell() {
       return this.getWord(0)
-    }
-  }
-
-  class _extendsJsClassParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
-    }
-    get anyCell() {
-      return this.getWord(1)
-    }
-  }
-
-  class _rootParserJsHeaderParser extends abstractParserRuleParser {
-    createParserCombinator() {
-      return new TreeNode.ParserCombinator(catchAllJavascriptCodeLineParser, undefined, undefined)
     }
   }
 
