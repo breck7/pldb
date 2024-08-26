@@ -37,6 +37,7 @@ printConceptsParser
    }
 
 buildConceptsParser
+ popularity 0.000024
  cruxFromId
  description Write concepts to csv+ files.
  extends abstractBuildCommandParser

@@ -1,4 +1,5 @@
 thinColumnsParser
+ popularity 0.003690
  extends abstractAftertextParser
  cruxFromId
  catchAllCellType integerCell
@@ -18,18 +19,21 @@ thinColumnsParser
   }
 
 wideColumnsParser
+ popularity 0.000386
  extends thinColumnsParser
  description Wide columns.
  javascript
   columnWidth = 90
 
 mediumColumnsParser
+ popularity 0.003376
  extends thinColumnsParser
  description Medium width columns.
  javascript
   columnWidth = 65
 
 endColumnsParser
+ popularity 0.007789
  extends abstractAftertextParser
  cruxFromId
  description End columns.

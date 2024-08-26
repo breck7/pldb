@@ -1,4 +1,5 @@
 captionAftertextParser
+ popularity 0.003207
  description An image caption.
  crux caption
  extends paragraphParser
@@ -23,6 +24,7 @@ abstractCaptionedParser
   }
 
 imageParser
+ popularity 0.005908
  description An img tag.
  boolean isPopular true
  extends abstractCaptionedParser

@@ -1,10 +1,12 @@
 siteOwnerEmailParser
+ popularity 0.001302
  description Set email address for site contact.
  extends abstractTopLevelSingleMetaParser
  crux email
  cells metaCommandWordCell emailAddressCell
 
 emailButtonParser
+ popularity 0.006294
  description Email button.
  extends abstractIconButtonParser
  catchAllCellType emailAddressCell

@@ -1,4 +1,5 @@
 belowAsCodeParser
+ popularity 0.000651
  description Print code below.
  extends abstractScrollParser
  catchAllCellType integerCell
@@ -52,6 +53,7 @@ belowAsCodeUntilParser
   }
 
 aboveAsCodeParser
+ popularity 0.000482
  description Print code above.
  example
   counter 1 second

@@ -1,5 +1,6 @@
 // todo: copy the external library to folder so it works offline?
 katexParser
+ popularity 0.001592
  extends abstractScrollWithRequirementsParser
  catchAllCellType codeCell
  catchAllParser lineOfCodeParser

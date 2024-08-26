@@ -4,6 +4,7 @@ measureNameCell
  regex [a-zA-Z][a-zA-Z0-9]*
 
 buildMeasuresParser
+ popularity 0.000024
  cruxFromId
  description Write measures to csv+ files.
  extends abstractBuildCommandParser

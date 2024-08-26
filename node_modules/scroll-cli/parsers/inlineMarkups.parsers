@@ -3,6 +3,7 @@ inlineMarkupNameCell
  enum bold italics code katex none
 
 inlineMarkupsParser
+ popularity 0.000024
  description Set global inline markups.
  extends abstractTopLevelSingleMetaParser
  cruxFromId
@@ -14,6 +15,7 @@ inlineMarkupsParser
     // Make _ underline
 
 inlineMarkupsOnParser
+ popularity 0.000024
  cruxFromId
  description Enable these inline markups only.
  example
@@ -76,6 +78,7 @@ inlineMarkupsOnParser
   }
 
 inlineMarkupParser
+ popularity 0.000169
  cruxFromId
  cells commandWordCell delimiterCell tagOrUrlCell
  catchAllCellType htmlAttributesCell

@@ -1,4 +1,5 @@
 heatrixCatchAllParser
+ popularity 0.000193
  // todo Fill this out
  catchAllCellType stringCell
 
@@ -27,6 +28,7 @@ heatrixParser
   }
 
 heatrixAdvancedParser
+ popularity 0.000048
  cruxFromId
  catchAllParser heatrixCatchAllParser
  extends abstractTableVisualizationParser

@@ -1,8 +1,10 @@
 buildCsvParser
+ popularity 0.000096
  description Compile to CSV file.
  extends abstractBuildCommandParser
 
 printCsvParser
+ popularity 0.000024
  description Print group metadata to CSV.
  extends printFeedParser
  example

@@ -259,16 +259,19 @@ abstractCommentParser
  catchAllParser commentLineParser
 
 commentParser
+ popularity 0.000193
  extends abstractCommentParser
  cruxFromId
 
 slashCommentParser
+ popularity 0.005643
  extends commentParser
  crux //
  boolean isPopular true
  description A comment. Prints nothing.
 
 blankLineParser
+ popularity 0.308149
  description Print nothing. Break section.
  cells blankCell
  boolean isPopular true
@@ -285,6 +288,7 @@ measureNameCell
  regex [a-zA-Z][a-zA-Z0-9]*
 
 buildMeasuresParser
+ popularity 0.000024
  cruxFromId
  description Write measures to csv+ files.
  extends abstractBuildCommandParser
@@ -435,6 +439,7 @@ importParser
   import header.scroll
 
 importOnlyParser
+ popularity 0.033569
  // This line will be not be imported into the importing file.
  description Don't build this file.
  cruxFromId

@@ -45,6 +45,7 @@ abstractTableVisualizationParser
   }
 
 printTableParser
+ popularity 0.001085
  cruxFromId
  description Print table.
  extends abstractTableVisualizationParser
@@ -108,12 +109,14 @@ printTableParser
   }
 
 scrollTableDataParser
+ popularity 0.001061
  crux data
  description Table from inline delimited data.
  catchAllCellType anyCell
  baseParser blobParser
 
 scrollTableDelimiterParser
+ popularity 0.001037
  description Set the delimiter.
  crux delimiter
  cells commandWordCell stringCell
@@ -123,6 +126,7 @@ scrollTableDelimiterParser
   }
 
 scrollTableParser
+ popularity 0.001133
  description A table.
  crux table
  example
@@ -395,6 +399,7 @@ scrollRenameParser
   }
 
 tableSearchParser
+ popularity 0.000072
  extends abstractScrollWithRequirementsParser
  string copyFromExternal jquery-3.7.1.min.js datatables.css datatables.min.js tableSearch.js
  string requireOnce

@@ -1,4 +1,5 @@
 pageTitleParser
+ popularity 0.007524
  catchAllCellType personNameCell
  crux title
  description Set title.
@@ -9,6 +10,7 @@ pageTitleParser
  boolean isPopular true
 
 printTitleParser
+ popularity 0.007572
  description Print title.
  extends abstractHeaderParser
  boolean isPopular true

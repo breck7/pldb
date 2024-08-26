@@ -1,4 +1,5 @@
 buildTxtParser
+ popularity 0.007596
  description Compile to TXT file.
  extends abstractBuildCommandParser
  boolean isPopular true
@@ -18,6 +19,7 @@ plainTextParser
   }
 
 plainTextOnlyParser
+ popularity 0.000072
  extends plainTextParser
  description Only print for buildTxt.
  javascript
@@ -26,6 +28,7 @@ plainTextOnlyParser
   }
 
 plainTextLineParser
+ popularity 0.000121
  catchAllCellType stringCell
  catchAllParser plainTextLineParser
 

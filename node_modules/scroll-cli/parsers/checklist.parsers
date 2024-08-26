@@ -1,4 +1,5 @@
 checklistTodoParser
+ popularity 0.000193
  extends abstractIndentableParagraphParser
  example
   [] Get milk
@@ -13,6 +14,7 @@ checklistTodoParser
    return this.get("id") || "item" + this._getUid()
   }
 checklistDoneParser
+ popularity 0.000072
  extends checklistTodoParser
  description A completed task.
  string checked checked

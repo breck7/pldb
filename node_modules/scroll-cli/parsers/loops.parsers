@@ -10,6 +10,7 @@ abstractPostLoopParser
   }
 
 loopParser
+ popularity 0.000024
  extends abstractAftertextParser
  cells commandWordCell
  description Iterate over files+ to make HTML.
@@ -69,6 +70,7 @@ loopLinesParser
   }
 
 loopWordsParser
+ popularity 0.000024
  crux words
  extends abstractItemsProviderParser
  catchAllCellType stringCell

@@ -172,10 +172,12 @@ abstractMarkupParameterParser
  cruxFromId
 
 matchAllParser
+ popularity 0.000024
  description Use this to match all occurrences of the text.
  extends abstractMarkupParameterParser
 
 matchParser
+ popularity 0.000048
  catchAllCellType integerCell
  description Use this to specify which index(es) to match.
  javascript
@@ -190,6 +192,7 @@ matchParser
  extends abstractMarkupParameterParser
 
 boldParser
+ popularity 0.000096
  cruxFromId
  description Bold matching text.
  extends abstractMarkupParser
@@ -197,6 +200,7 @@ boldParser
   tag = "b"
 
 italicsParser
+ popularity 0.000241
  cruxFromId
  description Italicize matching text.
  extends abstractMarkupParser
@@ -204,6 +208,7 @@ italicsParser
   tag = "i"
 
 underlineParser
+ popularity 0.000024
  description Underline matching text.
  cruxFromId
  extends abstractMarkupParser
@@ -211,6 +216,7 @@ underlineParser
   tag = "u"
 
 afterTextCenterParser
+ popularity 0.000193
  description Center paragraph.
  crux center
  extends abstractMarkupParser
@@ -218,6 +224,7 @@ afterTextCenterParser
   tag = "center"
 
 aftertextCodeParser
+ popularity 0.000145
  description Wrap matching text in code span.
  crux code
  extends abstractMarkupParser
@@ -225,6 +232,7 @@ aftertextCodeParser
   tag = "code"
 
 aftertextStrikeParser
+ popularity 0.000048
  description Wrap matching text in s span.
  crux strike
  extends abstractMarkupParser
@@ -238,6 +246,7 @@ abstractHtmlAttributeParser
   }
 
 classMarkupParser
+ popularity 0.000772
  description Add a custom class to the parent element instead. If matching text provided, a span with the class will be added around the matching text.
  extends abstractMarkupParser
  cells commandWordCell classNameCell
@@ -275,6 +284,7 @@ classesMarkupParser
   }
 
 aftertextIdParser
+ popularity 0.000145
  crux id
  description Provide an ID to be output in the generated HTML tag.
  extends abstractAftertextAttributeParser
@@ -282,6 +292,7 @@ aftertextIdParser
  single
 
 aftertextStyleParser
+ popularity 0.000217
  crux style
  description Provide code for the generated HTML tag's "style" attribute.
  extends abstractAftertextAttributeParser

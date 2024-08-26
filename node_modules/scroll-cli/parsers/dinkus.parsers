@@ -13,6 +13,7 @@ abstractDinkusParser
   }
 
 horizontalRuleParser
+ popularity 0.000362
  crux ---
  description A horizontal rule.
  extends abstractDinkusParser
@@ -22,6 +23,7 @@ horizontalRuleParser
   }
 
 scrollDinkusParser
+ popularity 0.010828
  crux ***
  description A dinkus. Breaks section.
  boolean isPopular true
@@ -35,6 +37,7 @@ customDinkusParser
  extends abstractDinkusParser
 
 endOfPostDinkusParser
+ popularity 0.005740
  extends abstractDinkusParser
  description End of post dinkus.
  boolean isPopular true

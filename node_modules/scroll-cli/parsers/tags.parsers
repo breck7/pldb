@@ -4,6 +4,7 @@ tagWithOptionalFolderCell
  description A group name optionally combined with a folder path. Only used when referencing tags, not in posts.
  extends stringCell
 scrollTagsParser
+ popularity 0.006801
  crux tags
  description Set tags.
  example

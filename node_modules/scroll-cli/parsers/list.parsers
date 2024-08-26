@@ -1,4 +1,5 @@
 listAftertextParser
+ popularity 0.014325
  extends abstractIndentableParagraphParser
  example
   - I had a _new_ thought.
@@ -32,6 +33,7 @@ abstractCustomListItemParser
   }
 
 orderedListAftertextParser
+ popularity 0.004485
  extends listAftertextParser
  description A list item.
  example

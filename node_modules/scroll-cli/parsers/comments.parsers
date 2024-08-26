@@ -14,10 +14,12 @@ abstractCommentParser
  catchAllParser commentLineParser
 
 commentParser
+ popularity 0.000193
  extends abstractCommentParser
  cruxFromId
 
 slashCommentParser
+ popularity 0.005643
  extends commentParser
  crux //
  boolean isPopular true

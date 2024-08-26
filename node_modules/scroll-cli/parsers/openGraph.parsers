@@ -1,10 +1,12 @@
 openGraphDescriptionParser
+ popularity 0.001688
  catchAllCellType stringCell
  crux description
  description Meta tag description.
  extends abstractTopLevelSingleMetaParser
 
 openGraphImageParser
+ popularity 0.000796
  // https://ogp.me/
  // If not defined, Scroll will try to generate it's own using the first image tag on your page.
  description Override Open Graph Image.

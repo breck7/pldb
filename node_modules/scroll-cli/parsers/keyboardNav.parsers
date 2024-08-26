@@ -1,4 +1,5 @@
 scrollLeftRightButtonsParser
+ popularity 0.006342
  crux leftRightButtons
  description Previous and next nav buttons.
  extends abstractScrollParser
@@ -15,6 +16,7 @@ scrollLeftRightButtonsParser
   }
 
 keyboardNavParser
+ popularity 0.007476
  description Make left and right navigate files.
  extends abstractScrollParser
  cruxFromId

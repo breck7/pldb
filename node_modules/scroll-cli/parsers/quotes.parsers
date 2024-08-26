@@ -1,8 +1,10 @@
 quoteLineParser
+ popularity 0.004172
  catchAllCellType anyCell
  catchAllParser quoteLineParser
 
 quoteParser
+ popularity 0.001471
  cruxFromId
  description A quote.
  catchAllParser quoteLineParser
@@ -16,6 +18,7 @@ quoteParser
   }
 
 quickQuoteParser
+ popularity 0.000482
  crux >
  example
   > The only thing we have to fear is fear itself. - FDR

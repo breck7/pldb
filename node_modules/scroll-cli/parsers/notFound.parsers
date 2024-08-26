@@ -1,4 +1,5 @@
 helpfulNotFoundParser
+ popularity 0.000048
  extends abstractScrollWithRequirementsParser
  catchAllCellType filePathCell
  string copyFromExternal helpfulNotFound.js

@@ -1,4 +1,5 @@
 scrollParserDefinitionParser
+ popularity 0.000096
  extends abstractScrollParser
  // todo Figure out best pattern for merging Scroll and Parsers?
  pattern ^[a-zA-Z0-9_]+Parser$

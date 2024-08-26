@@ -16,6 +16,7 @@ abstractHeaderParser
   isHeader = true
 
 h1Parser
+ popularity 0.017918
  description An html h1 tag.
  extends abstractHeaderParser
  crux #
@@ -24,6 +25,7 @@ h1Parser
   tag = "h1"
 
 h2Parser
+ popularity 0.005257
  description An html h2 tag.
  extends abstractHeaderParser
  crux ##
@@ -32,6 +34,7 @@ h2Parser
   tag = "h2"
 
 h3Parser
+ popularity 0.001085
  description An html h3 tag.
  extends abstractHeaderParser
  crux ###
@@ -39,6 +42,7 @@ h3Parser
   tag = "h3"
 
 h4Parser
+ popularity 0.000289
  description An html h4 tag.
  extends abstractHeaderParser
  crux ####

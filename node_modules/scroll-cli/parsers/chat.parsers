@@ -1,7 +1,9 @@
 chatLineParser
+ popularity 0.009887
  catchAllCellType anyCell
  catchAllParser chatLineParser
 chatParser
+ popularity 0.000362
  description A faux text chat conversation.
  catchAllParser chatLineParser
  cruxFromId

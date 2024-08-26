@@ -1,4 +1,5 @@
 buildHtmlParser
+ popularity 0.007645
  description Compile to HTML file.
  extends abstractBuildCommandParser
  boolean isPopular true
@@ -19,6 +20,7 @@ abstractHtmlParser
   }
 
 scrollBrParser
+ popularity 0.000096
  crux br
  description A break.
  extends abstractScrollParser
@@ -29,15 +31,18 @@ scrollBrParser
   }
 
 htmlParser
+ popularity 0.000048
  extends abstractHtmlParser
  description HTML one liners or blocks.
  cruxFromId
 
 htmlLineParser
+ popularity 0.005209
  catchAllCellType htmlAnyCell
  catchAllParser htmlLineParser
 
 htmlInlineParser
+ popularity 0.005788
  extends abstractHtmlParser
  cells htmlAnyCell
  pattern ^<
@@ -49,6 +54,7 @@ htmlInlineParser
   }
 
 stumpContentParser
+ popularity 0.102322
  catchAllCellType anyCell
 
 stumpParser
@@ -63,6 +69,7 @@ stumpParser
   }
 
 stumpNoSnippetParser
+ popularity 0.010177
  // todo: make noSnippets an aftertext directive?
  extends stumpParser
  description Compile Stump unless snippet.

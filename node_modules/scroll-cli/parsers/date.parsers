@@ -1,4 +1,5 @@
 dateParser
+ popularity 0.006680
  catchAllCellType dateCell
  description Set published date.
  extends abstractTopLevelSingleMetaParser
@@ -10,6 +11,7 @@ dateParser
    dateline
 
 datelineParser
+ popularity 0.006005
  cruxFromId
  description Gives your paragraph a dateline like "December 15, 2021 — The..."
  extends abstractAftertextDirectiveParser
@@ -33,6 +35,7 @@ datelineParser
   }
 
 printDateParser
+ popularity 0.000434
  extends abstractPrintMetaParser
  // If not present computes the date from the file's ctime.
  description Print published date.

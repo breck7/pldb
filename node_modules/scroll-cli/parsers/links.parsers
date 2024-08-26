@@ -5,12 +5,14 @@ linkifyParser
  cells commandWordCell booleanCell
 
 linkTargetParser
+ popularity 0.000024
  extends abstractHtmlAttributeParser
  description If you want to set the target of the link. To "_blank", for example.
  crux target
  cells commandWordCell anyCell
 
 linkTitleParser
+ popularity 0.000048
  description If you want to set the title of the link.
  crux title
  cells commandWordCell
@@ -21,9 +23,11 @@ linkTitleParser
     title The average growth in the treatment group was 14.2x higher than the control group.
 
 programLinkParser
+ popularity 0.000531
  catchAllCellType codeCell
 
 linkParser
+ popularity 0.008706
  extends abstractMarkupParser
  description Put the matching text in an <a> tag.
  cells commandWordCell urlCell
@@ -68,6 +72,7 @@ linkParser
   patternStartsAtWord = 2
 
 emailLinkParser
+ popularity 0.000048
  description A mailto link
  crux email
  extends linkParser
@@ -77,6 +82,7 @@ emailLinkParser
   }
 
 quickLinkParser
+ popularity 0.029228
  pattern ^https?\:
  extends linkParser
  cells urlCell
