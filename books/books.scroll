@@ -1,18 +1,16 @@
+baseUrl https://pldb.io/books/
 buildConcepts books.json books.tsv books.csv
 permalink index.html
-
+replace BASE_URL ..
 title Books about Programming Languages
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 // A ScrollSet with information on books about programming languages
 
 import ../header.scroll
-baseUrl https://pldb.io/books/
-replace BASE_URL ..
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 wideColumns 1
 printTitle
-
 
 thinColumns 1
 Download as JSON | TSV | CSV
@@ -63,7 +61,6 @@ languagesUsedParser
 pagesParser
  extends abstractIntegerMeasureParser
  description How many pages does the book have?
-
 
 // data
 
@@ -287,6 +284,35 @@ publisher IT Revolution Press
 pages 480
 webUrl https://itrevolution.com/book/the-devops-handbook/
 
+bookTitle Patterns on the Stone
+authors Daniel Hillis
+year 1998
+publisher Basic Books
+pages 176
+webUrl https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/
+
+bookTitle The Definitive ANTLR 4 Reference
+authors Terence Parr
+year 2012
+publisher Pragmatic Bookshelf
+pages 328
+webUrl https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/
+languagesUsed antlr4
+
+bookTitle Mastering Regular Expressions
+authors Jeffrey E. F. Friedl
+year 2006
+publisher O'Reilly Media
+pages 542
+webUrl https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/
+
+bookTitle The Art of Doing Science and Engineering: Learning to Learn
+authors Richard W. Hamming
+year 1997
+publisher CRC Press
+pages 376
+webUrl https://press.stripe.com/the-art-of-doing-science-and-engineering
+
 bookTitle Pharo by Example 9
 authors Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse
 webUrl https://books.pharo.org/pharo-by-example9/
@@ -298,7 +324,6 @@ pdfUrl http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
 sourceUrl https://github.com/SquareBracketAssociates/PharoByExample9/
 
 ****
-
 
 tableSearch
 
