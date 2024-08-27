@@ -21,7 +21,9 @@ Download as JSON | TSV | CSV
  link books.csv CSV
 endColumns
 
-printConcepts
+table books.csv
+ orderBy year
+  printTable
 
 bookTitleParser
  // todo: think through scroll name conflict better
@@ -33,6 +35,18 @@ bookAuthorsParser
  crux authors
  extends abstractStringMeasureParser
  description Who are the author(s) of the book?
+
+pdfParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a PDF for the book?
+
+sourceCodeParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the source code of the book?
+
+websiteParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the website of the book?
 
 yearParser
  extends abstractIntegerMeasureParser
@@ -244,6 +258,16 @@ authors Gene Kim and Jez Humble and Patrick Debois and John Willis
 year 2016
 publisher IT Revolution Press
 pages 480
+
+bookTitle Pharo by Example 9
+authors Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse
+website https://books.pharo.org/pharo-by-example9/
+year 2021
+pages 318
+publisher Keepers of the lighthouse
+languagesUsed pharo
+pdf http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
+sourceCode https://github.com/SquareBracketAssociates/PharoByExample9/
 
 ****
 
