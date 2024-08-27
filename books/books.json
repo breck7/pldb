@@ -28,6 +28,7 @@
   {
     "bookTitle": "Clean Code: A Handbook of Agile Software Craftsmanship",
     "authors": "Robert C. Martin",
+    "webUrl": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
     "publisher": "Prentice Hall",
     "languagesUsed": "java",
     "year": 2008,
@@ -44,6 +45,7 @@
   {
     "bookTitle": "Introduction to the Theory of Computation",
     "authors": "Michael Sipser",
+    "webUrl": "https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X",
     "publisher": "Cengage Learning",
     "year": 1996,
     "pages": 504
@@ -237,6 +239,7 @@
   {
     "bookTitle": "Soft Skills: The Software Developer's Life Manual",
     "authors": "John Sonmez",
+    "webUrl": "https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397",
     "publisher": "Manning Publications",
     "year": 2014,
     "pages": 504
@@ -294,6 +297,23 @@
     "pages": 318
   },
   {
+    "bookTitle": "Beautiful Code",
+    "authors": "Andy Oram and Greg Wilson",
+    "webUrl": "https://www.oreilly.com/library/view/beautiful-code/9780596510046/",
+    "publisher": "O'Reilly Media",
+    "year": 2007,
+    "pages": 592
+  },
+  {
+    "bookTitle": "Beautiful Racket",
+    "authors": "Matthias Felleisen and Robby Findler and Matthew Flatt",
+    "sourceUrl": "https://github.com/mbutterick/beautiful-racket",
+    "webUrl": "https://beautifulracket.com/",
+    "publisher": "MIT Press",
+    "year": 2015,
+    "pages": 288
+  },
+  {
     "bookTitle": "The Go Programming Language",
     "authors": "Alan A. A. Donovan and Brian W. Kernighan",
     "webUrl": "https://www.gopl.io/",
@@ -305,6 +325,7 @@
   {
     "bookTitle": "The Rust Programming Language",
     "authors": "Steve Klabnik and Carol Nichols",
+    "sourceUrl": "https://github.com/rust-lang/book",
     "webUrl": "https://nostarch.com/rust-programming-language-2nd-edition",
     "publisher": "No Starch Press",
     "languagesUsed": "rust",
@@ -314,11 +335,54 @@
   {
     "bookTitle": "Learn You a Haskell for Great Good!",
     "authors": "Miran Lipovača",
+    "sourceUrl": "https://github.com/learnyouahaskell/learnyouahaskell.github.io",
     "webUrl": "http://learnyouahaskell.com/",
     "publisher": "No Starch Press",
     "languagesUsed": "haskell",
     "year": 2011,
     "pages": 400
+  },
+  {
+    "bookTitle": "Paradigms of Artificial Intelligence Programming",
+    "authors": "Peter Norvig",
+    "sourceUrl": "https://github.com/norvig/paip-lisp",
+    "publisher": "Morgan Kaufmann",
+    "languagesUsed": "lisp",
+    "year": 1992,
+    "pages": 368
+  },
+  {
+    "bookTitle": "Modern Operating Systems",
+    "authors": "Andrew S. Tanenbaum and Herbert Bos",
+    "webUrl": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880",
+    "publisher": "Pearson",
+    "year": 2014,
+    "pages": 960
+  },
+  {
+    "bookTitle": "Let Over Lambda",
+    "authors": "Doug Hoyte",
+    "sourceUrl": "https://github.com/thephoeron/let-over-lambda/blob/master/let-over-lambda.lisp",
+    "webUrl": "https://mitpress.mit.edu/9780262082638/let-over-lambda/",
+    "publisher": "MIT Press",
+    "languagesUsed": "lisp",
+    "year": 2008,
+    "pages": 376
+  },
+  {
+    "bookTitle": "The TeXbook",
+    "authors": "Donald E. Knuth",
+    "pdfUrl": "https://visualmatheditor.equatheque.net/doc/texbook.pdf",
+    "publisher": "Addison-Wesley",
+    "year": 1986,
+    "pages": 640
+  },
+  {
+    "bookTitle": "Essentials of Compilation",
+    "authors": "Jeremy G. Siek",
+    "sourceUrl": "https://github.com/IUCompilerCourse/Essentials-of-Compilation",
+    "languagesUsed": "racket python x86-assembly",
+    "year": 2015
   },
   {
     "bookTitle": "Clojure for the Brave and True",
@@ -413,6 +477,7 @@
   {
     "bookTitle": "Prolog Programming for Artificial Intelligence",
     "authors": "Ivan Bratko",
+    "webUrl": "https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461",
     "publisher": "Addison-Wesley",
     "languagesUsed": "prolog",
     "year": 2000,
@@ -448,11 +513,75 @@
   {
     "bookTitle": "Crafting Interpreters",
     "authors": "Robert Nystrom",
+    "sourceUrl": "https://github.com/munificent/craftinginterpreters",
     "webUrl": "https://craftinginterpreters.com/",
-    "publisher": "self-published",
     "languagesUsed": "java",
     "year": 2021,
     "pages": 600
+  },
+  {
+    "bookTitle": "Janet for Mortals",
+    "authors": "Ian Henry",
+    "webUrl": "https://janet.guide/",
+    "languagesUsed": "janet",
+    "year": 2023
+  },
+  {
+    "bookTitle": "Homotopy Type Theory",
+    "authors": "Mike Shulman and Andrej Bauer",
+    "pdfUrl": "https://hott.github.io/book/hott-online-15-ge428abf.pdf",
+    "sourceUrl": "https://github.com/HoTT/book",
+    "webUrl": "https://homotopytypetheory.org/book/",
+    "publisher": "Princeton University Press",
+    "year": 2012,
+    "pages": 400
+  },
+  {
+    "bookTitle": "Thinking Forth",
+    "authors": "Leo Brodie",
+    "pdfUrl": "https://www.forth.com/wp-content/uploads/2018/11/thinking-forth-color.pdf",
+    "sourceUrl": "https://github.com/forthy42/thinking-forth",
+    "webUrl": "https://thinkingforth.sourceforge.io/",
+    "publisher": "MIT Press",
+    "languagesUsed": "forth",
+    "year": 2001,
+    "pages": 160
+  },
+  {
+    "bookTitle": "The Art of Unix Programming",
+    "authors": "Eric S. Raymond",
+    "webUrl": "http://www.catb.org/esr/writings/taoup/",
+    "publisher": "Addison-Wesley",
+    "languagesUsed": "unix",
+    "year": 2003,
+    "pages": 352
+  },
+  {
+    "bookTitle": "Writing A Compiler In Go",
+    "authors": "Thorsten Ball",
+    "webUrl": "https://compilerbook.com/",
+    "publisher": "No Starch Press",
+    "languagesUsed": "go",
+    "year": 2018,
+    "pages": 288
+  },
+  {
+    "bookTitle": "The Cathedral and the Bazaar",
+    "authors": "Eric S. Raymond",
+    "webUrl": "https://www.oreilly.com/library/view/the-cathedral/0596001088/",
+    "publisher": "O'Reilly Media",
+    "year": 2001,
+    "pages": 352
+  },
+  {
+    "bookTitle": "Why's (Poignant) Guide to Ruby",
+    "authors": "Why the Lucky Stiff",
+    "sourceUrl": "https://github.com/mislav/poignant-guide",
+    "webUrl": "https://poignant.guide/",
+    "publisher": "Penguin Books",
+    "languagesUsed": "ruby",
+    "year": 2000,
+    "pages": 128
   },
   {
     "bookTitle": "Programming TypeScript",

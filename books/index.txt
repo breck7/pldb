@@ -7,31 +7,47 @@ Download as JSON | TSV | CSV
  https://pldb.io/books.csv CSV
 
 bookTitle,authors,pdfUrl,sourceUrl,webUrl,publisher,languagesUsed,year,pages
+Homotopy Type Theory,Mike Shulman and Andrej Bauer,https://hott.github.io/book/hott-online-15-ge428abf.pdf,https://github.com/HoTT/book,https://homotopytypetheory.org/book/,Princeton University Press,null,2012,400
+Essentials of Compilation,Jeremy G. Siek,null,https://github.com/IUCompilerCourse/Essentials-of-Compilation,null,null,racket python x86-assembly,2015,null
+Pharo by Example 9,Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse,http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf,https://github.com/SquareBracketAssociates/PharoByExample9/,https://books.pharo.org/pharo-by-example9/,Keepers of the lighthouse,pharo,2021,318
+Thinking Forth,Leo Brodie,https://www.forth.com/wp-content/uploads/2018/11/thinking-forth-color.pdf,https://github.com/forthy42/thinking-forth,https://thinkingforth.sourceforge.io/,MIT Press,forth,2001,160
+You Don't Know JS,Kyle Simpson,null,https://github.com/getify/You-Dont-Know-JS,null,O'Reilly Media,javascript,2015,1128
+Learn You a Haskell for Great Good!,Miran Lipovača,null,https://github.com/learnyouahaskell/learnyouahaskell.github.io,http://learnyouahaskell.com/,No Starch Press,haskell,2011,400
+Beautiful Racket,Matthias Felleisen and Robby Findler and Matthew Flatt,null,https://github.com/mbutterick/beautiful-racket,https://beautifulracket.com/,MIT Press,null,2015,288
+Why's (Poignant) Guide to Ruby,Why the Lucky Stiff,null,https://github.com/mislav/poignant-guide,https://poignant.guide/,Penguin Books,ruby,2000,128
+Crafting Interpreters,Robert Nystrom,null,https://github.com/munificent/craftinginterpreters,https://craftinginterpreters.com/,null,java,2021,600
+Paradigms of Artificial Intelligence Programming,Peter Norvig,null,https://github.com/norvig/paip-lisp,null,Morgan Kaufmann,lisp,1992,368
+The Rust Programming Language,Steve Klabnik and Carol Nichols,null,https://github.com/rust-lang/book,https://nostarch.com/rust-programming-language-2nd-edition,No Starch Press,rust,2018,552
+Let Over Lambda,Doug Hoyte,null,https://github.com/thephoeron/let-over-lambda/blob/master/let-over-lambda.lisp,https://mitpress.mit.edu/9780262082638/let-over-lambda/,MIT Press,lisp,2008,376
 The Art of Computer Programming,Donald E. Knuth,null,null,https://www-cs-faculty.stanford.edu/~knuth/taocp.html,Addison-Wesley,null,1968,3168
 The Mythical Man-Month,Frederick P. Brooks Jr.,null,null,https://en.wikipedia.org/wiki/The_Mythical_Man-Month,Addison-Wesley,null,1975,336
 The C Programming Language,Brian W. Kernighan and Dennis M. Ritchie,null,null,https://en.wikipedia.org/wiki/The_C_Programming_Language,Prentice Hall,c,1978,288
 Structure and Interpretation of Computer Programs,Harold Abelson and Gerald Jay Sussman and Julie Sussman,https://web.mit.edu/6.001/6.037/sicp.pdf,null,null,MIT Press,scheme lisp,1985,657
 Programming Pearls,Jon Bentley,null,null,https://en.wikipedia.org/wiki/Programming_Pearls,Addison-Wesley,null,1986,256
+The TeXbook,Donald E. Knuth,https://visualmatheditor.equatheque.net/doc/texbook.pdf,null,null,Addison-Wesley,null,1986,640
 Introduction to Algorithms,Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein,null,null,https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/,MIT Press,null,1990,1312
 Code Complete,Steve McConnell,null,null,https://www.stevemcconnell.com/cc.htm,Microsoft Press,null,1993,960
 Design Patterns: Elements of Reusable Object-Oriented Software,Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides,null,null,https://en.wikipedia.org/wiki/Design_Patterns,Addison-Wesley,cpp smalltalk,1994,395
 The Little Schemer,Daniel P. Friedman and Matthias Felleisen,null,null,https://mitpress.mit.edu/9780262560993/the-little-schemer/,MIT Press,scheme,1995,216
-Introduction to the Theory of Computation,Michael Sipser,null,null,null,Cengage Learning,null,1996,504
+Introduction to the Theory of Computation,Michael Sipser,null,null,https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X,Cengage Learning,null,1996,504
 The Art of Doing Science and Engineering: Learning to Learn,Richard W. Hamming,null,null,https://press.stripe.com/the-art-of-doing-science-and-engineering,CRC Press,null,1997,376
 Patterns on the Stone,Daniel Hillis,null,null,https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/,Basic Books,null,1998,176
 The Pragmatic Programmer: Your Journey to Mastery,Andrew Hunt and David Thomas,null,null,https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/,Addison-Wesley,null,1999,352
 Refactoring: Improving the Design of Existing Code,Martin Fowler,null,null,https://martinfowler.com/books/refactoring.html,Addison-Wesley,java,1999,448
 Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,null,null,https://www.charlespetzold.com/code/,Microsoft Press,null,1999,400
-Prolog Programming for Artificial Intelligence,Ivan Bratko,null,null,null,Addison-Wesley,prolog,2000,704
+Prolog Programming for Artificial Intelligence,Ivan Bratko,null,null,https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461,Addison-Wesley,prolog,2000,704
 Effective Java,Joshua Bloch,null,null,https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/,Addison-Wesley,java,2001,416
+The Cathedral and the Bazaar,Eric S. Raymond,null,null,https://www.oreilly.com/library/view/the-cathedral/0596001088/,O'Reilly Media,null,2001,352
 Patterns of Enterprise Application Architecture,Martin Fowler,null,null,https://martinfowler.com/books/eaa.html,Addison-Wesley,null,2002,560
 Domain-Driven Design: Tackling Complexity in the Heart of Software,Eric Evans,null,null,https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/,Addison-Wesley,null,2003,560
+The Art of Unix Programming,Eric S. Raymond,null,null,http://www.catb.org/esr/writings/taoup/,Addison-Wesley,unix,2003,352
 Head First Design Patterns,Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra,null,null,https://www.oreilly.com/library/view/head-first-design/0596007124/,O'Reilly Media,java,2004,694
 Working Effectively with Legacy Code,Michael Feathers,null,null,https://www.oreilly.com/library/view/working-effectively-with/0131177052/,Prentice Hall,null,2004,456
 Practical Common Lisp,Peter Seibel,null,null,https://www.gigamonkeys.com/book/,Apress,lisp,2005,504
 Mastering Regular Expressions,Jeffrey E. F. Friedl,null,null,https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/,O'Reilly Media,null,2006,542
+Beautiful Code,Andy Oram and Greg Wilson,null,null,https://www.oreilly.com/library/view/beautiful-code/9780596510046/,O'Reilly Media,null,2007,592
 Programming Collective Intelligence,Toby Segaran,null,null,https://www.oreilly.com/library/view/programming-collective/9780596529321/,O'Reilly Media,python,2007,256
-Clean Code: A Handbook of Agile Software Craftsmanship,Robert C. Martin,null,null,null,Prentice Hall,java,2008,464
+Clean Code: A Handbook of Agile Software Craftsmanship,Robert C. Martin,null,null,https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882,Prentice Hall,java,2008,464
 Cracking the Coding Interview,Gayle Laakmann McDowell,null,null,https://www.crackingthecodinginterview.com/,CareerCup,java cpp,2008,708
 Real World Haskell,Bryan O'Sullivan and Don Stewart and John Goerzen,null,null,http://book.realworldhaskell.org/,O'Reilly Media,haskell,2008,714
 JavaScript: The Good Parts,Douglas Crockford,null,null,https://www.oreilly.com/library/view/javascript-the-good/9780596517748/,O'Reilly Media,javascript,2008,176
@@ -40,13 +56,12 @@ The Passionate Programmer,Chad Fowler,null,null,https://pragprog.com/titles/cfca
 Erlang Programming,Francesco Cesarini and Simon Thompson,null,null,https://www.oreilly.com/library/view/erlang-programming/9780596803940/,O'Reilly Media,erlang,2009,498
 The Clean Coder: A Code of Conduct for Professional Programmers,Robert C. Martin,null,null,https://www.oreilly.com/library/view/clean-coder-the/9780132542913/,Pearson,null,2011,256
 Eloquent JavaScript,Marijn Haverbeke,https://eloquentjavascript.net/Eloquent_JavaScript.pdf,null,https://eloquentjavascript.net/,No Starch Press,javascript,2011,472
-Learn You a Haskell for Great Good!,Miran Lipovača,null,null,http://learnyouahaskell.com/,No Starch Press,haskell,2011,400
 Eloquent Ruby,Russ Olsen,null,null,http://eloquentruby.com/,Addison-Wesley,ruby,2011,448
 The Definitive ANTLR 4 Reference,Terence Parr,null,null,https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/,Pragmatic Bookshelf,antlr4,2012,328
 Practical Vim,Drew Neil,null,null,https://pragprog.com/titles/dnvim2/practical-vim-second-edition/,Pragmatic Bookshelf,vim,2012,320
 The Phoenix Project,Gene Kim and Kevin Behr and George Spafford,null,null,https://itrevolution.com/book/the-phoenix-project/,IT Revolution Press,null,2013,382
-Soft Skills: The Software Developer's Life Manual,John Sonmez,null,null,null,Manning Publications,null,2014,504
-You Don't Know JS,Kyle Simpson,null,https://github.com/getify/You-Dont-Know-JS,null,O'Reilly Media,javascript,2015,1128
+Soft Skills: The Software Developer's Life Manual,John Sonmez,null,null,https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397,Manning Publications,null,2014,504
+Modern Operating Systems,Andrew S. Tanenbaum and Herbert Bos,null,null,https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880,Pearson,null,2014,960
 Python Crash Course,Eric Matthes,null,null,https://nostarch.com/python-crash-course-3rd-edition,No Starch Press,python,2015,560
 The Go Programming Language,Alan A. A. Donovan and Brian W. Kernighan,null,null,https://www.gopl.io/,Addison-Wesley,go,2015,400
 Clojure for the Brave and True,Daniel Higginbotham,null,null,https://www.braveclojure.com/,No Starch Press,clojure,2015,328
@@ -58,11 +73,10 @@ The DevOps Handbook,Gene Kim and Jez Humble and Patrick Debois and John Willis,n
 Programming in Scala,Martin Odersky and Lex Spoon and Bill Venners and Frank Sommers,null,null,https://www.artima.com/shop/programming_in_scala,Artima Press,scala,2016,667
 Haskell Programming from First Principles,Christopher Allen and Julie Moronuki,null,null,https://haskellbook.com/,Gumroad,haskell,2016,889
 Designing Data-Intensive Applications,Martin Kleppmann,null,null,https://dataintensive.net/,O'Reilly Media,null,2017,616
-The Rust Programming Language,Steve Klabnik and Carol Nichols,null,null,https://nostarch.com/rust-programming-language-2nd-edition,No Starch Press,rust,2018,552
 Programming Elixir ≥ 1.6,Dave Thomas,null,null,https://pragprog.com/titles/elixir16/programming-elixir-1-6/,Pragmatic Bookshelf,elixir,2018,398
+Writing A Compiler In Go,Thorsten Ball,null,null,https://compilerbook.com/,No Starch Press,go,2018,288
 Programming TypeScript,Boris Cherny,null,null,https://www.oreilly.com/library/view/programming-typescript/9781492037644/,O'Reilly Media,typescript,2019,324
-Pharo by Example 9,Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse,http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf,https://github.com/SquareBracketAssociates/PharoByExample9/,https://books.pharo.org/pharo-by-example9/,Keepers of the lighthouse,pharo,2021,318
-Crafting Interpreters,Robert Nystrom,null,null,https://craftinginterpreters.com/,self-published,java,2021,600
+Janet for Mortals,Ian Henry,null,null,https://janet.guide/,null,janet,2023,null
 
 ⁂
 

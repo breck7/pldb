@@ -20,7 +20,7 @@ Download as JSON | TSV | CSV
 endColumns
 
 table books.csv
- orderBy year
+ orderBy sourceUrl year
   printTable
 
 bookTitleParser
@@ -93,6 +93,7 @@ year 2008
 publisher Prentice Hall
 languagesUsed java
 pages 464
+webUrl https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
 
 bookTitle The Art of Computer Programming
 authors Donald E. Knuth
@@ -106,6 +107,7 @@ authors Michael Sipser
 year 1996
 publisher Cengage Learning
 pages 504
+webUrl https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X
 
 bookTitle The Pragmatic Programmer: Your Journey to Mastery
 authors Andrew Hunt and David Thomas
@@ -276,6 +278,7 @@ authors John Sonmez
 year 2014
 publisher Manning Publications
 pages 504
+webUrl https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397
 
 bookTitle The DevOps Handbook
 authors Gene Kim and Jez Humble and Patrick Debois and John Willis
@@ -323,6 +326,21 @@ languagesUsed pharo
 pdfUrl http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
 sourceUrl https://github.com/SquareBracketAssociates/PharoByExample9/
 
+bookTitle Beautiful Code
+authors Andy Oram and Greg Wilson
+year 2007
+publisher O'Reilly Media
+pages 592
+webUrl https://www.oreilly.com/library/view/beautiful-code/9780596510046/
+
+bookTitle Beautiful Racket
+authors Matthias Felleisen and Robby Findler and Matthew Flatt
+year 2015
+publisher MIT Press
+pages 288
+webUrl https://beautifulracket.com/
+sourceUrl https://github.com/mbutterick/beautiful-racket
+
 bookTitle The Go Programming Language
 authors Alan A. A. Donovan and Brian W. Kernighan
 year 2015
@@ -338,6 +356,7 @@ publisher No Starch Press
 languagesUsed rust
 pages 552
 webUrl https://nostarch.com/rust-programming-language-2nd-edition
+sourceUrl https://github.com/rust-lang/book
 
 bookTitle Learn You a Haskell for Great Good!
 authors Miran Lipovača
@@ -346,6 +365,44 @@ publisher No Starch Press
 languagesUsed haskell
 pages 400
 webUrl http://learnyouahaskell.com/
+sourceUrl https://github.com/learnyouahaskell/learnyouahaskell.github.io
+
+bookTitle Paradigms of Artificial Intelligence Programming
+authors Peter Norvig
+year 1992
+publisher Morgan Kaufmann
+languagesUsed lisp
+pages 368
+sourceUrl https://github.com/norvig/paip-lisp
+
+bookTitle Modern Operating Systems
+authors Andrew S. Tanenbaum and Herbert Bos
+year 2014
+publisher Pearson
+pages 960
+webUrl https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880
+
+bookTitle Let Over Lambda
+authors Doug Hoyte
+year 2008
+publisher MIT Press
+languagesUsed lisp
+pages 376
+webUrl https://mitpress.mit.edu/9780262082638/let-over-lambda/
+sourceUrl https://github.com/thephoeron/let-over-lambda/blob/master/let-over-lambda.lisp
+
+bookTitle The TeXbook
+authors Donald E. Knuth
+year 1986
+publisher Addison-Wesley
+pages 640
+pdfUrl https://visualmatheditor.equatheque.net/doc/texbook.pdf
+
+bookTitle Essentials of Compilation
+year 2015
+authors Jeremy G. Siek
+languagesUsed racket python x86-assembly
+sourceUrl https://github.com/IUCompilerCourse/Essentials-of-Compilation
 
 bookTitle Clojure for the Brave and True
 authors Daniel Higginbotham
@@ -433,6 +490,7 @@ year 2000
 publisher Addison-Wesley
 languagesUsed prolog
 pages 704
+webUrl https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461
 
 bookTitle Programming Elixir ≥ 1.6
 authors Dave Thomas
@@ -461,10 +519,68 @@ webUrl https://haskellbook.com/
 bookTitle Crafting Interpreters
 authors Robert Nystrom
 year 2021
-publisher self-published
 languagesUsed java
 pages 600
 webUrl https://craftinginterpreters.com/
+sourceUrl https://github.com/munificent/craftinginterpreters
+
+bookTitle Janet for Mortals
+authors Ian Henry
+languagesUsed janet
+webUrl https://janet.guide/
+ // https://ianthehenry.com/posts/janet-for-mortals/
+year 2023
+
+bookTitle Homotopy Type Theory
+authors Mike Shulman and Andrej Bauer
+year 2012
+publisher Princeton University Press
+pages 400
+webUrl https://homotopytypetheory.org/book/
+pdfUrl https://hott.github.io/book/hott-online-15-ge428abf.pdf
+sourceUrl https://github.com/HoTT/book
+
+bookTitle Thinking Forth
+authors Leo Brodie
+year 2001
+publisher MIT Press
+languagesUsed forth
+pages 160
+webUrl https://thinkingforth.sourceforge.io/
+pdfUrl https://www.forth.com/wp-content/uploads/2018/11/thinking-forth-color.pdf
+sourceUrl https://github.com/forthy42/thinking-forth
+
+bookTitle The Art of Unix Programming
+authors Eric S. Raymond
+year 2003
+publisher Addison-Wesley
+languagesUsed unix
+pages 352
+webUrl http://www.catb.org/esr/writings/taoup/
+
+bookTitle Writing A Compiler In Go
+authors Thorsten Ball
+year 2018
+publisher No Starch Press
+languagesUsed go
+pages 288
+webUrl https://compilerbook.com/
+
+bookTitle The Cathedral and the Bazaar
+authors Eric S. Raymond
+year 2001
+publisher O'Reilly Media
+pages 352
+webUrl https://www.oreilly.com/library/view/the-cathedral/0596001088/
+
+bookTitle Why's (Poignant) Guide to Ruby
+authors Why the Lucky Stiff
+year 2000
+publisher Penguin Books
+languagesUsed ruby
+pages 128
+webUrl https://poignant.guide/
+sourceUrl https://github.com/mislav/poignant-guide
 
 bookTitle Programming TypeScript
 authors Boris Cherny
