@@ -1,32 +1,36 @@
 bookTitle,authors,pdfUrl,sourceUrl,webUrl,publisher,languagesUsed,year,pages
-The C Programming Language,Brian W. Kernighan and Dennis M. Ritchie,,,,Prentice Hall,c,1978,288
-Code Complete,Steve McConnell,,,,Microsoft Press,,1993,960
-Design Patterns: Elements of Reusable Object-Oriented Software,Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides,,,,Addison-Wesley,cpp smalltalk,1994,395
+The C Programming Language,Brian W. Kernighan and Dennis M. Ritchie,,,https://en.wikipedia.org/wiki/The_C_Programming_Language,Prentice Hall,c,1978,288
+Code Complete,Steve McConnell,,,https://www.stevemcconnell.com/cc.htm,Microsoft Press,,1993,960
+Design Patterns: Elements of Reusable Object-Oriented Software,Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides,,,https://en.wikipedia.org/wiki/Design_Patterns,Addison-Wesley,cpp smalltalk,1994,395
 Clean Code: A Handbook of Agile Software Craftsmanship,Robert C. Martin,,,,Prentice Hall,java,2008,464
-The Art of Computer Programming,Donald E. Knuth,,,,Addison-Wesley,,1968,3168
+The Art of Computer Programming,Donald E. Knuth,,,https://www-cs-faculty.stanford.edu/~knuth/taocp.html,Addison-Wesley,,1968,3168
 Introduction to the Theory of Computation,Michael Sipser,,,,Cengage Learning,,1996,504
-The Pragmatic Programmer: Your Journey to Mastery,Andrew Hunt and David Thomas,,,,Addison-Wesley,,1999,352
-Structure and Interpretation of Computer Programs,Harold Abelson and Gerald Jay Sussman and Julie Sussman,,,,MIT Press,scheme lisp,1985,657
-Refactoring: Improving the Design of Existing Code,Martin Fowler,,,,Addison-Wesley,java,1999,448
-Effective Java,Joshua Bloch,,,,Addison-Wesley,java,2001,416
-Programming Pearls,Jon Bentley,,,,Addison-Wesley,,1986,256
-Cracking the Coding Interview,Gayle Laakmann McDowell,,,,CareerCup,java cpp,2008,708
-Introduction to Algorithms,Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein,,,,MIT Press,,1990,1312
-Head First Design Patterns,Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra,,,,O'Reilly Media,java,2004,694
-You Don't Know JS,Kyle Simpson,,,,O'Reilly Media,javascript,2015,1128
-The Clean Coder: A Code of Conduct for Professional Programmers,Robert C. Martin,,,,Prentice Hall,,2011,256
-Designing Data-Intensive Applications,Martin Kleppmann,,,,O'Reilly Media,,2017,616
-Python Crash Course,Eric Matthes,,,,No Starch Press,python,2015,560
-Eloquent JavaScript,Marijn Haverbeke,,,,No Starch Press,javascript,2011,472
-The Mythical Man-Month,Frederick P. Brooks Jr.,,,,Addison-Wesley,,1975,336
-Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,,,,Microsoft Press,,1999,400
-Grokking Algorithms,Aditya Bhargava,,,,Manning Publications,python,2016,256
-Domain-Driven Design: Tackling Complexity in the Heart of Software,Eric Evans,,,,Addison-Wesley,,2003,560
-The Phoenix Project,Gene Kim and Kevin Behr and George Spafford,,,,IT Revolution Press,,2013,382
-Coders at Work,Peter Seibel,,,,Apress,,2009,632
-Patterns of Enterprise Application Architecture,Martin Fowler,,,,Addison-Wesley,,2002,560
-Working Effectively with Legacy Code,Michael Feathers,,,,Prentice Hall,,2004,456
-The Passionate Programmer,Chad Fowler,,,,Pragmatic Bookshelf,,2009,232
+The Pragmatic Programmer: Your Journey to Mastery,Andrew Hunt and David Thomas,,,https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/,Addison-Wesley,,1999,352
+Structure and Interpretation of Computer Programs,Harold Abelson and Gerald Jay Sussman and Julie Sussman,https://web.mit.edu/6.001/6.037/sicp.pdf,,,MIT Press,scheme lisp,1985,657
+Refactoring: Improving the Design of Existing Code,Martin Fowler,,,https://martinfowler.com/books/refactoring.html,Addison-Wesley,java,1999,448
+Effective Java,Joshua Bloch,,,https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/,Addison-Wesley,java,2001,416
+Programming Pearls,Jon Bentley,,,https://en.wikipedia.org/wiki/Programming_Pearls,Addison-Wesley,,1986,256
+Cracking the Coding Interview,Gayle Laakmann McDowell,,,https://www.crackingthecodinginterview.com/,CareerCup,java cpp,2008,708
+Introduction to Algorithms,Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein,,,https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/,MIT Press,,1990,1312
+Head First Design Patterns,Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra,,,https://www.oreilly.com/library/view/head-first-design/0596007124/,O'Reilly Media,java,2004,694
+You Don't Know JS,Kyle Simpson,,https://github.com/getify/You-Dont-Know-JS,,O'Reilly Media,javascript,2015,1128
+The Clean Coder: A Code of Conduct for Professional Programmers,Robert C. Martin,,,https://www.oreilly.com/library/view/clean-coder-the/9780132542913/,Pearson,,2011,256
+Designing Data-Intensive Applications,Martin Kleppmann,,,https://dataintensive.net/,O'Reilly Media,,2017,616
+Python Crash Course,Eric Matthes,,,https://nostarch.com/python-crash-course-3rd-edition,No Starch Press,python,2015,560
+Eloquent JavaScript,Marijn Haverbeke,https://eloquentjavascript.net/Eloquent_JavaScript.pdf,,https://eloquentjavascript.net/,No Starch Press,javascript,2011,472
+The Mythical Man-Month,Frederick P. Brooks Jr.,,,https://en.wikipedia.org/wiki/The_Mythical_Man-Month,Addison-Wesley,,1975,336
+Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,,,https://www.charlespetzold.com/code/,Microsoft Press,,1999,400
+Grokking Algorithms,Aditya Bhargava,,,https://www.manning.com/books/grokking-algorithms,Manning Publications,python,2016,256
+Domain-Driven Design: Tackling Complexity in the Heart of Software,Eric Evans,,,https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/,Addison-Wesley,,2003,560
+The Phoenix Project,Gene Kim and Kevin Behr and George Spafford,,,https://itrevolution.com/book/the-phoenix-project/,IT Revolution Press,,2013,382
+Coders at Work,Peter Seibel,,,https://codersatwork.com/,Apress,,2009,632
+Patterns of Enterprise Application Architecture,Martin Fowler,,,https://martinfowler.com/books/eaa.html,Addison-Wesley,,2002,560
+Working Effectively with Legacy Code,Michael Feathers,,,https://www.oreilly.com/library/view/working-effectively-with/0131177052/,Prentice Hall,,2004,456
+The Passionate Programmer,Chad Fowler,,,https://pragprog.com/titles/cfcar2/the-passionate-programmer-2nd-edition/,Pragmatic Bookshelf,,2009,232
 Soft Skills: The Software Developer's Life Manual,John Sonmez,,,,Manning Publications,,2014,504
-The DevOps Handbook,Gene Kim and Jez Humble and Patrick Debois and John Willis,,,,IT Revolution Press,,2016,480
+The DevOps Handbook,Gene Kim and Jez Humble and Patrick Debois and John Willis,,,https://itrevolution.com/book/the-devops-handbook/,IT Revolution Press,,2016,480
+Patterns on the Stone,Daniel Hillis,,,https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/,Basic Books,,1998,176
+The Definitive ANTLR 4 Reference,Terence Parr,,,https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/,Pragmatic Bookshelf,antlr4,2012,328
+Mastering Regular Expressions,Jeffrey E. F. Friedl,,,https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/,O'Reilly Media,,2006,542
+The Art of Doing Science and Engineering: Learning to Learn,Richard W. Hamming,,,https://press.stripe.com/the-art-of-doing-science-and-engineering,CRC Press,,1997,376
 Pharo by Example 9,Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse,http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf,https://github.com/SquareBracketAssociates/PharoByExample9/,https://books.pharo.org/pharo-by-example9/,Keepers of the lighthouse,pharo,2021,318

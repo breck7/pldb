@@ -1,18 +1,16 @@
+baseUrl https://pldb.io/books/
 buildConcepts books.json books.tsv books.csv
 permalink index.html
-
+replace BASE_URL ..
 title Books about Programming Languages
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 // A ScrollSet with information on books about programming languages
 
 import ../header.scroll
-baseUrl https://pldb.io/books/
-replace BASE_URL ..
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 wideColumns 1
 printTitle
-
 
 thinColumns 1
 Download as JSON | TSV | CSV
@@ -64,7 +62,6 @@ pagesParser
  extends abstractIntegerMeasureParser
  description How many pages does the book have?
 
-
 // data
 
 bookTitle The C Programming Language
@@ -73,12 +70,14 @@ year 1978
 publisher Prentice Hall
 languagesUsed c
 pages 288
+webUrl https://en.wikipedia.org/wiki/The_C_Programming_Language
 
 bookTitle Code Complete
 authors Steve McConnell
 year 1993
 publisher Microsoft Press
 pages 960
+webUrl https://www.stevemcconnell.com/cc.htm
 
 bookTitle Design Patterns: Elements of Reusable Object-Oriented Software
 authors Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides
@@ -86,6 +85,7 @@ year 1994
 publisher Addison-Wesley
 languagesUsed cpp smalltalk
 pages 395
+webUrl https://en.wikipedia.org/wiki/Design_Patterns
 
 bookTitle Clean Code: A Handbook of Agile Software Craftsmanship
 authors Robert C. Martin
@@ -99,6 +99,7 @@ authors Donald E. Knuth
 year 1968
 publisher Addison-Wesley
 pages 3168
+webUrl https://www-cs-faculty.stanford.edu/~knuth/taocp.html
 
 bookTitle Introduction to the Theory of Computation
 authors Michael Sipser
@@ -111,6 +112,7 @@ authors Andrew Hunt and David Thomas
 year 1999
 publisher Addison-Wesley
 pages 352
+webUrl https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
 
 bookTitle Structure and Interpretation of Computer Programs
 authors Harold Abelson and Gerald Jay Sussman and Julie Sussman
@@ -118,6 +120,7 @@ year 1985
 publisher MIT Press
 languagesUsed scheme lisp
 pages 657
+pdfUrl https://web.mit.edu/6.001/6.037/sicp.pdf
 
 bookTitle Refactoring: Improving the Design of Existing Code
 authors Martin Fowler
@@ -125,6 +128,7 @@ year 1999
 publisher Addison-Wesley
 languagesUsed java
 pages 448
+webUrl https://martinfowler.com/books/refactoring.html
 
 bookTitle Effective Java
 authors Joshua Bloch
@@ -132,12 +136,14 @@ year 2001
 publisher Addison-Wesley
 languagesUsed java
 pages 416
+webUrl https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/
 
 bookTitle Programming Pearls
 authors Jon Bentley
 year 1986
 publisher Addison-Wesley
 pages 256
+webUrl https://en.wikipedia.org/wiki/Programming_Pearls
 
 bookTitle Cracking the Coding Interview
 authors Gayle Laakmann McDowell
@@ -145,12 +151,14 @@ year 2008
 publisher CareerCup
 languagesUsed java cpp
 pages 708
+webUrl https://www.crackingthecodinginterview.com/
 
 bookTitle Introduction to Algorithms
 authors Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein
 year 1990
 publisher MIT Press
 pages 1312
+webUrl https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/
 
 bookTitle Head First Design Patterns
 authors Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra
@@ -158,6 +166,7 @@ year 2004
 publisher O'Reilly Media
 languagesUsed java
 pages 694
+webUrl https://www.oreilly.com/library/view/head-first-design/0596007124/
 
 bookTitle You Don't Know JS
 authors Kyle Simpson
@@ -165,18 +174,21 @@ year 2015
 publisher O'Reilly Media
 languagesUsed javascript
 pages 1128
+sourceUrl https://github.com/getify/You-Dont-Know-JS
 
 bookTitle The Clean Coder: A Code of Conduct for Professional Programmers
 authors Robert C. Martin
 year 2011
-publisher Prentice Hall
+publisher Pearson
 pages 256
+webUrl https://www.oreilly.com/library/view/clean-coder-the/9780132542913/
 
 bookTitle Designing Data-Intensive Applications
 authors Martin Kleppmann
 year 2017
 publisher O'Reilly Media
 pages 616
+webUrl https://dataintensive.net/
 
 bookTitle Python Crash Course
 authors Eric Matthes
@@ -184,6 +196,7 @@ year 2015
 publisher No Starch Press
 languagesUsed python
 pages 560
+webUrl https://nostarch.com/python-crash-course-3rd-edition
 
 bookTitle Eloquent JavaScript
 authors Marijn Haverbeke
@@ -191,18 +204,22 @@ year 2011
 publisher No Starch Press
 languagesUsed javascript
 pages 472
+webUrl https://eloquentjavascript.net/
+pdfUrl https://eloquentjavascript.net/Eloquent_JavaScript.pdf
 
 bookTitle The Mythical Man-Month
 authors Frederick P. Brooks Jr.
 year 1975
 publisher Addison-Wesley
 pages 336
+webUrl https://en.wikipedia.org/wiki/The_Mythical_Man-Month
 
 bookTitle Code: The Hidden Language of Computer Hardware and Software
 authors Charles Petzold
 year 1999
 publisher Microsoft Press
 pages 400
+webUrl https://www.charlespetzold.com/code/
 
 bookTitle Grokking Algorithms
 authors Aditya Bhargava
@@ -210,42 +227,49 @@ year 2016
 publisher Manning Publications
 languagesUsed python
 pages 256
+webUrl https://www.manning.com/books/grokking-algorithms
 
 bookTitle Domain-Driven Design: Tackling Complexity in the Heart of Software
 authors Eric Evans
 year 2003
 publisher Addison-Wesley
 pages 560
+webUrl https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/
 
 bookTitle The Phoenix Project
 authors Gene Kim and Kevin Behr and George Spafford
 year 2013
 publisher IT Revolution Press
 pages 382
+webUrl https://itrevolution.com/book/the-phoenix-project/
 
 bookTitle Coders at Work
 authors Peter Seibel
 year 2009
 publisher Apress
 pages 632
+webUrl https://codersatwork.com/
 
 bookTitle Patterns of Enterprise Application Architecture
 authors Martin Fowler
 year 2002
 publisher Addison-Wesley
 pages 560
+webUrl https://martinfowler.com/books/eaa.html
 
 bookTitle Working Effectively with Legacy Code
 authors Michael Feathers
 year 2004
 publisher Prentice Hall
 pages 456
+webUrl https://www.oreilly.com/library/view/working-effectively-with/0131177052/
 
 bookTitle The Passionate Programmer
 authors Chad Fowler
 year 2009
 publisher Pragmatic Bookshelf
 pages 232
+webUrl https://pragprog.com/titles/cfcar2/the-passionate-programmer-2nd-edition/
 
 bookTitle Soft Skills: The Software Developer's Life Manual
 authors John Sonmez
@@ -258,6 +282,36 @@ authors Gene Kim and Jez Humble and Patrick Debois and John Willis
 year 2016
 publisher IT Revolution Press
 pages 480
+webUrl https://itrevolution.com/book/the-devops-handbook/
+
+bookTitle Patterns on the Stone
+authors Daniel Hillis
+year 1998
+publisher Basic Books
+pages 176
+webUrl https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/
+
+bookTitle The Definitive ANTLR 4 Reference
+authors Terence Parr
+year 2012
+publisher Pragmatic Bookshelf
+pages 328
+webUrl https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/
+languagesUsed antlr4
+
+bookTitle Mastering Regular Expressions
+authors Jeffrey E. F. Friedl
+year 2006
+publisher O'Reilly Media
+pages 542
+webUrl https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/
+
+bookTitle The Art of Doing Science and Engineering: Learning to Learn
+authors Richard W. Hamming
+year 1997
+publisher CRC Press
+pages 376
+webUrl https://press.stripe.com/the-art-of-doing-science-and-engineering
 
 bookTitle Pharo by Example 9
 authors Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse
@@ -270,7 +324,6 @@ pdfUrl http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
 sourceUrl https://github.com/SquareBracketAssociates/PharoByExample9/
 
 ****
-
 
 tableSearch
 
