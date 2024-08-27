@@ -36,15 +36,15 @@ bookAuthorsParser
  extends abstractStringMeasureParser
  description Who are the author(s) of the book?
 
-pdfParser
+pdfUrlParser
  extends abstractUrlMeasureParser
  description What is the URL to a PDF for the book?
 
-sourceCodeParser
+sourceUrlParser
  extends abstractUrlMeasureParser
  description What is the URL to the source code of the book?
 
-websiteParser
+webUrlParser
  extends abstractUrlMeasureParser
  description What is the URL to the website of the book?
 
@@ -261,13 +261,13 @@ pages 480
 
 bookTitle Pharo by Example 9
 authors Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse
-website https://books.pharo.org/pharo-by-example9/
+webUrl https://books.pharo.org/pharo-by-example9/
 year 2021
 pages 318
 publisher Keepers of the lighthouse
 languagesUsed pharo
-pdf http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
-sourceCode https://github.com/SquareBracketAssociates/PharoByExample9/
+pdfUrl http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf
+sourceUrl https://github.com/SquareBracketAssociates/PharoByExample9/
 
 ****
 
