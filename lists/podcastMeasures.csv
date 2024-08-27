@@ -1,0 +1,11 @@
+Name,Values,Coverage,Question,Example,Type,Source,SortIndex,IsComputed,IsRequired,IsConceptDelimiter,Crux
+id,27,100%,What is the ID of this concept?,CoRecursive,string,,1,false,true,true,
+website,26,96%,A measure that contains a single word.,https://corecursive.com,string,,1.1,false,,,
+description,27,100%,A brief description of the podcast.,The stories and people behind the code. Hear stories of software development from interesting people.,string,,1.2,false,,,
+creators,27,100%,The creators of the podcast.,Adam Gordon Bell,string,,1.3,false,,,
+started,27,100%,Year podcast began.,2018,number,,1.4,false,,,
+episodes,27,100%,The number of episodes so far.,93,number,,1.5,false,,,
+appleLink,26,96%,Apple link and number of ratings.,https://podcasts.apple.com/us/podcast/corecursive-coding-stories/id1330329512,string,,1.7,true,,,appleLink
+apple,26,96%,Number of ratings.,182,number,,1.71,true,,,
+youtubeLink,21,77%,YouTube link and number of subscribers.,https://www.youtube.com/@code_report,string,,1.8,true,,,youtubeLink
+youtube,21,77%,Number of subscribers.,60500,number,,1.81,true,,,

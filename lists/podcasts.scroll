@@ -1,5 +1,6 @@
 buildConcepts podcasts.json podcasts.tsv podcasts.csv
  sortBy -episodes
+buildMeasures podcastMeasures.csv
 tags All
 title Podcasts about Programming
 
@@ -17,11 +18,13 @@ endColumns
 
 // A ScrollSet with information on programming podcasts
 
-printConcepts
- sortBy -episodes
+table podcasts.tsv
+ orderBy -episodes
+  printTable
 
 expander Measures
-printMeasures
+table podcastMeasures.csv
+ printTable
 
 idParser
  extends abstractIdParser

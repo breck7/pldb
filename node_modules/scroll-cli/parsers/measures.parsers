@@ -12,23 +12,6 @@ buildMeasuresParser
   cruxFromId
   cells commandWordCell anyCell
 
-printMeasuresParser
- description Print measure stats.
- cruxFromId
- extends abstractScrollParser
- javascript
-   compile() {
-   // A hacky but simple way to do this for now.
-      const node = this.appendSibling("table")
-    node.appendLine("delimiter 	")
-    node.appendLine("printTable")
-    const dataNode = node.appendLine("data")
-    dataNode.setChildren(this.parent.file.compileMeasures("tsv"))
-   const html = node.compile()
-   node.destroy()
-   return html
-   }
-
 // The main measure parser. All measures should extend from this.
 abstractMeasureParser
  cells measureNameCell

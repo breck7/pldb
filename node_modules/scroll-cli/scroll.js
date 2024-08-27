@@ -952,7 +952,7 @@ import footer.scroll`
     const { permalink } = file
     file.scrollProgram.findNodes(scrollKeywords.buildConcepts).forEach(node => {
       const files = node.getWordsFrom(1)
-      if (!files.length) files.push(permalink.replace(".html", ".tsv"))
+      if (!files.length) files.push(permalink.replace(".html", ".csv"))
       const sortBy = node.get("sortBy")
       files.forEach(link => {
         fileSystem.writeProduct(path.join(folder, link), file.compileConcepts(link, sortBy))
@@ -963,7 +963,7 @@ import footer.scroll`
     if (!file.has(scrollKeywords.buildMeasures)) return
     file.scrollProgram.findNodes(scrollKeywords.buildMeasures).forEach(node => {
       const files = node.getWordsFrom(1)
-      if (!files.length) files.push(permalink.replace(".html", ".tsv"))
+      if (!files.length) files.push(permalink.replace(".html", ".csv"))
       const sortBy = node.get("sortBy")
       files.forEach(link => {
         fileSystem.writeProduct(path.join(folder, link), file.compileMeasures(link, sortBy))

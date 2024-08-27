@@ -197,8 +197,19 @@ scrollTableParser
     // json csv tsv
     if (this.filename)
       return this.fileContent
-    
-    return this.getNode("data")?.childrenToString() || ""
+    const dataNode = this.getNode("data")
+    if (dataNode)
+      return dataNode.childrenToString()
+    // if not datanode and no filename, check [permalink].csv
+    if (this.isNodeJs()) {
+      const path = require("path")
+      const fs = require("fs")
+      const filename = this.root.permalink.replace(".html", "") + ".csv"
+      const fullPath = path.join(this.parent.file.folderPath, filename)
+      if (fs.existsSync(fullPath))
+        return fs.readFileSync(fullPath, "utf8")
+    }
+    return  ""
   }
   _coreTable
   get coreTable() {
