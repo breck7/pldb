@@ -12,6 +12,15 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 wideColumns 1
 printTitle
+
+
+thinColumns 1
+Download as JSON | TSV | CSV
+ link books.json JSON
+ link books.tsv TSV
+ link books.csv CSV
+endColumns
+
 printConcepts
 
 bookTitleParser
