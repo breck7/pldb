@@ -3,8 +3,9 @@ abstractDinkusParser
  boolean isDinkus true
  javascript
   compile() {
-   return `<div class="dinkus"><span>${this.dinkus}</span></div>`
+   return `<div class="${this.defaultClass}"><span>${this.dinkus}</span></div>`
   }
+  defaultClass = "dinkus"
   compileTxt() {
     return this.dinkus
   }

@@ -112,7 +112,7 @@ printparsersLeetSheetParser
  description Parsers leetsheet.
  javascript
   compile() {
-    return "<p><b>Line Parsers</b> match lines and parse them.</p>" + this.docToHtml(this.sortDocs(this.parsersToDocument)) + "<p><b>Cell Parsers</b> parse words in a line.</p>" + this.docToHtml(this.sortDocs(this.cellParsersToDocument))
+    return "<p><b>Parser Definition Parsers</b> define parsers that acquire, analyze and act on code.</p>" + this.docToHtml(this.sortDocs(this.parsersToDocument)) + "<p><b>Cell Definition Parsers</b> analyze the words in a line.</p>" + this.docToHtml(this.sortDocs(this.cellParsersToDocument))
   }
   makeLink() {
     return ""
@@ -140,6 +140,8 @@ printparsersLeetSheetParser
     const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
     words.sort()
     parserNode.setChildren(words.join("\n"))
+    clone.appendLine("myParser")
+    clone.appendLine("myCell")
     return parserNode
   }
 

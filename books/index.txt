@@ -6,7 +6,7 @@ Download as JSON | TSV | CSV
  https://pldb.io/books/books.tsv TSV
  https://pldb.io/books/books.csv CSV
 
-bookTitle,authors,pdf,sourceCode,website,publisher,languagesUsed,year,pages
+bookTitle,authors,pdfUrl,sourceUrl,webUrl,publisher,languagesUsed,year,pages
 The Art of Computer Programming,Donald E. Knuth,null,null,null,Addison-Wesley,null,1968,3168
 The Mythical Man-Month,Frederick P. Brooks Jr.,null,null,null,Addison-Wesley,null,1975,336
 The C Programming Language,Brian W. Kernighan and Dennis M. Ritchie,null,null,null,Prentice Hall,c,1978,288
