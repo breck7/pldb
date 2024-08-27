@@ -9,7 +9,12 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 import ../header.scroll
 
-wideColumns 1
+extraWideColumnsParser
+ extends wideColumnsParser
+ javascript
+  columnWidth = 120
+
+extraWideColumns 1
 printTitle
 
 thinColumns 1
@@ -19,9 +24,15 @@ Download as JSON | TSV | CSV
  link books.csv CSV
 endColumns
 
+css
+ table td:first-child, table th:first-child { width: 300px;}
+ table td:nth-child(2), table th:nth-child(2) { width: 200px;}
+
 table books.csv
- orderBy sourceUrl year
-  printTable
+ rename bookTitle title
+  select title authors year pages webUrl sourceUrl pdfUrl languagesUsed publisher
+   orderBy year
+    printTable
 
 bookTitleParser
  // todo: think through scroll name conflict better
@@ -300,7 +311,7 @@ year 2012
 publisher Pragmatic Bookshelf
 pages 328
 webUrl https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/
-languagesUsed antlr4
+languagesUsed antlr
 
 bookTitle Mastering Regular Expressions
 authors Jeffrey E. F. Friedl
