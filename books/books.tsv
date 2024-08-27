@@ -1,31 +1,32 @@
-bookTitle	authors	publisher	languagesUsed	year	pages
-The C Programming Language	Brian W. Kernighan and Dennis M. Ritchie	Prentice Hall	c	1978	288
-Code Complete	Steve McConnell	Microsoft Press		1993	960
-Design Patterns: Elements of Reusable Object-Oriented Software	Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides	Addison-Wesley	cpp smalltalk	1994	395
-Clean Code: A Handbook of Agile Software Craftsmanship	Robert C. Martin	Prentice Hall	java	2008	464
-The Art of Computer Programming	Donald E. Knuth	Addison-Wesley		1968	3168
-Introduction to the Theory of Computation	Michael Sipser	Cengage Learning		1996	504
-The Pragmatic Programmer: Your Journey to Mastery	Andrew Hunt and David Thomas	Addison-Wesley		1999	352
-Structure and Interpretation of Computer Programs	Harold Abelson and Gerald Jay Sussman and Julie Sussman	MIT Press	scheme lisp	1985	657
-Refactoring: Improving the Design of Existing Code	Martin Fowler	Addison-Wesley	java	1999	448
-Effective Java	Joshua Bloch	Addison-Wesley	java	2001	416
-Programming Pearls	Jon Bentley	Addison-Wesley		1986	256
-Cracking the Coding Interview	Gayle Laakmann McDowell	CareerCup	java cpp	2008	708
-Introduction to Algorithms	Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein	MIT Press		1990	1312
-Head First Design Patterns	Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra	O'Reilly Media	java	2004	694
-You Don't Know JS	Kyle Simpson	O'Reilly Media	javascript	2015	1128
-The Clean Coder: A Code of Conduct for Professional Programmers	Robert C. Martin	Prentice Hall		2011	256
-Designing Data-Intensive Applications	Martin Kleppmann	O'Reilly Media		2017	616
-Python Crash Course	Eric Matthes	No Starch Press	python	2015	560
-Eloquent JavaScript	Marijn Haverbeke	No Starch Press	javascript	2011	472
-The Mythical Man-Month	Frederick P. Brooks Jr.	Addison-Wesley		1975	336
-Code: The Hidden Language of Computer Hardware and Software	Charles Petzold	Microsoft Press		1999	400
-Grokking Algorithms	Aditya Bhargava	Manning Publications	python	2016	256
-Domain-Driven Design: Tackling Complexity in the Heart of Software	Eric Evans	Addison-Wesley		2003	560
-The Phoenix Project	Gene Kim and Kevin Behr and George Spafford	IT Revolution Press		2013	382
-Coders at Work	Peter Seibel	Apress		2009	632
-Patterns of Enterprise Application Architecture	Martin Fowler	Addison-Wesley		2002	560
-Working Effectively with Legacy Code	Michael Feathers	Prentice Hall		2004	456
-The Passionate Programmer	Chad Fowler	Pragmatic Bookshelf		2009	232
-Soft Skills: The Software Developer's Life Manual	John Sonmez	Manning Publications		2014	504
-The DevOps Handbook	Gene Kim and Jez Humble and Patrick Debois and John Willis	IT Revolution Press		2016	480
+bookTitle	authors	pdf	sourceCode	website	publisher	languagesUsed	year	pages
+The C Programming Language	Brian W. Kernighan and Dennis M. Ritchie				Prentice Hall	c	1978	288
+Code Complete	Steve McConnell				Microsoft Press		1993	960
+Design Patterns: Elements of Reusable Object-Oriented Software	Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides				Addison-Wesley	cpp smalltalk	1994	395
+Clean Code: A Handbook of Agile Software Craftsmanship	Robert C. Martin				Prentice Hall	java	2008	464
+The Art of Computer Programming	Donald E. Knuth				Addison-Wesley		1968	3168
+Introduction to the Theory of Computation	Michael Sipser				Cengage Learning		1996	504
+The Pragmatic Programmer: Your Journey to Mastery	Andrew Hunt and David Thomas				Addison-Wesley		1999	352
+Structure and Interpretation of Computer Programs	Harold Abelson and Gerald Jay Sussman and Julie Sussman				MIT Press	scheme lisp	1985	657
+Refactoring: Improving the Design of Existing Code	Martin Fowler				Addison-Wesley	java	1999	448
+Effective Java	Joshua Bloch				Addison-Wesley	java	2001	416
+Programming Pearls	Jon Bentley				Addison-Wesley		1986	256
+Cracking the Coding Interview	Gayle Laakmann McDowell				CareerCup	java cpp	2008	708
+Introduction to Algorithms	Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein				MIT Press		1990	1312
+Head First Design Patterns	Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra				O'Reilly Media	java	2004	694
+You Don't Know JS	Kyle Simpson				O'Reilly Media	javascript	2015	1128
+The Clean Coder: A Code of Conduct for Professional Programmers	Robert C. Martin				Prentice Hall		2011	256
+Designing Data-Intensive Applications	Martin Kleppmann				O'Reilly Media		2017	616
+Python Crash Course	Eric Matthes				No Starch Press	python	2015	560
+Eloquent JavaScript	Marijn Haverbeke				No Starch Press	javascript	2011	472
+The Mythical Man-Month	Frederick P. Brooks Jr.				Addison-Wesley		1975	336
+Code: The Hidden Language of Computer Hardware and Software	Charles Petzold				Microsoft Press		1999	400
+Grokking Algorithms	Aditya Bhargava				Manning Publications	python	2016	256
+Domain-Driven Design: Tackling Complexity in the Heart of Software	Eric Evans				Addison-Wesley		2003	560
+The Phoenix Project	Gene Kim and Kevin Behr and George Spafford				IT Revolution Press		2013	382
+Coders at Work	Peter Seibel				Apress		2009	632
+Patterns of Enterprise Application Architecture	Martin Fowler				Addison-Wesley		2002	560
+Working Effectively with Legacy Code	Michael Feathers				Prentice Hall		2004	456
+The Passionate Programmer	Chad Fowler				Pragmatic Bookshelf		2009	232
+Soft Skills: The Software Developer's Life Manual	John Sonmez				Manning Publications		2014	504
+The DevOps Handbook	Gene Kim and Jez Humble and Patrick Debois and John Willis				IT Revolution Press		2016	480
+Pharo by Example 9	Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse	http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf	https://github.com/SquareBracketAssociates/PharoByExample9/	https://books.pharo.org/pharo-by-example9/	Keepers of the lighthouse	pharo	2021	318
