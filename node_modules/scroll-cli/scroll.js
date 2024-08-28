@@ -38,6 +38,7 @@ const scrollKeywords = {
   buildMeasures: "buildMeasures",
   buildTxt: "buildTxt",
   buildHtml: "buildHtml",
+  buildPdf: "buildPdf",
   buildRss: "buildRss",
   import: "import",
   importOnly: "importOnly",
@@ -238,6 +239,7 @@ class ScrollFile {
 
     this.filePath = absoluteFilePath
     this.filename = path.basename(this.filePath)
+    this.filenameNoExtension = this.filename.replace(SCROLL_FILE_EXTENSION, "")
     this.folderPath = path.dirname(absoluteFilePath) + "/"
 
     // PASS 1: READ FULL FILE
@@ -264,7 +266,7 @@ class ScrollFile {
 
     this.scrollProgram.setFile(this)
     this.timestamp = dayjs(this.scrollProgram.get(scrollKeywords.date) ?? fileSystem.getCTime(absoluteFilePath) ?? 0).unix()
-    this.permalink = this.scrollProgram.get(scrollKeywords.permalink) || (this.filename ? this.filename.replace(SCROLL_FILE_EXTENSION, "") + ".html" : "")
+    this.permalink = this.scrollProgram.get(scrollKeywords.permalink) || (this.filename ? this.filenameNoExtension + ".html" : "")
   }
 
   // todo: speed this up and do a proper release. also could add more metrics like this.
@@ -593,7 +595,7 @@ class ScrollFile {
   get title() {
     const title = this.scrollProgram.get(scrollKeywords.title)
     if (title) return title
-    else if (this.filename) return unCamelCase(this.filename.replace(SCROLL_FILE_EXTENSION, ""))
+    else if (this.filename) return unCamelCase(this.filenameNoExtension)
     return ""
   }
 
@@ -1006,6 +1008,7 @@ import footer.scroll`
         this._buildFileType(file, folder, fileSystem, "html")
         this._buildFileType(file, folder, fileSystem, "rss")
         this._buildFileType(file, folder, fileSystem, "css")
+        if (file.has(scrollKeywords.buildPdf)) this.buildPdf(file)
       })
     const seconds = (Date.now() - start) / 1000
     this.logIndent--
@@ -1019,6 +1022,19 @@ import footer.scroll`
     )
 
     return fileSystem.productCache
+  }
+
+  buildPdf(file) {
+    const outputFile = file.filenameNoExtension + ".pdf"
+    // relevant source code for chrome: https://github.com/chromium/chromium/blob/a56ef4a02086c6c09770446733700312c86f7623/components/headless/command_handler/headless_command_switches.cc#L22
+    const command = `/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --no-pdf-header-footer --default-background-color=00000000 --no-pdf-background --print-to-pdf="${outputFile}" "${file.permalink}"`
+    // console.log(`Node.js is running on architecture: ${process.arch}`)
+    try {
+      const output = require("child_process").execSync(command, { stdio: "ignore" })
+      this.log(`💾 Built ${outputFile} from ${file.filename}`)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   buildFilesInFolder(fileSystem, folder = "/") {
