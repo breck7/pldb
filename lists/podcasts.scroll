@@ -70,7 +70,7 @@ appleLinkParser
  javascript
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
-    const hit = concept.find(node => node.getLine().startsWith("https://podcasts.apple.com/"))
+    const hit = concept.find(particle => particle.getLine().startsWith("https://podcasts.apple.com/"))
     return hit ? hit.firstWord : ""
   }
 
@@ -96,7 +96,7 @@ youtubeLinkParser
  javascript
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
-    const hit = concept.find(node => node.getLine().startsWith("https://www.youtube.com/"))
+    const hit = concept.find(particle => particle.getLine().startsWith("https://www.youtube.com/"))
     return hit ? hit.firstWord : ""
   }
 

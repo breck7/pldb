@@ -2,7 +2,7 @@ var _a
 const fs = require("fs")
 const path = require("path")
 const { Utils } = require("../products/Utils.js")
-const { TreeNode } = require("../products/TreeNode.js")
+const { Particle } = require("../products/Particle.js")
 const { HandParsersProgram } = require("./Parsers.js")
 var CompileTarget
 ;(function (CompileTarget) {
@@ -15,7 +15,7 @@ class ParsersCompiler {
   }
   static _compileParsers(pathToParsers, outputFolder, target, usePrettier, scrollsdkProductsPath) {
     const isNodeJs = CompileTarget.nodejs === target
-    const parsersCode = TreeNode.fromDisk(pathToParsers)
+    const parsersCode = Particle.fromDisk(pathToParsers)
     const program = new HandParsersProgram(parsersCode.toString())
     const outputFilePath = path.join(outputFolder, `${program.parsersName}.${target}.js`)
     let result = isNodeJs ? program.toNodeJsJavascript(scrollsdkProductsPath) : program.toBrowserJavascript()
@@ -25,7 +25,7 @@ class ParsersCompiler {
         result.replace(
           /}\s*$/,
           `
-if (!module.parent) new ${program.rootParserId}(TreeNode.fromDisk(process.argv[2]).toString()).execute()
+if (!module.parent) new ${program.rootParserId}(Particle.fromDisk(process.argv[2]).toString()).execute()
 }
 `
         )
@@ -52,10 +52,10 @@ ParsersCompiler.formatCode = (programCode, parsersPath) => {
 }
 ParsersCompiler.formatFileInPlace = (programPath, parsersPath) => {
   // tod: remove?
-  const original = TreeNode.fromDisk(programPath)
+  const original = Particle.fromDisk(programPath)
   const formatted = _a.formatCode(original.toString(), parsersPath)
   if (original === formatted) return false
-  new TreeNode(formatted).toDisk(programPath)
+  new Particle(formatted).toDisk(programPath)
   return true
 }
 ParsersCompiler.compileParsersFileAtPathAndReturnRootParser = parsersPath => {
@@ -69,7 +69,7 @@ ParsersCompiler.combineFiles = globPatterns => {
   const glob = require("glob")
   const files = Utils.flatten(globPatterns.map(pattern => glob.sync(pattern)))
   const content = files.map(path => fs.readFileSync(path, "utf8")).join("\n")
-  return new TreeNode(content)
+  return new Particle(content)
 }
 
 module.exports = { ParsersCompiler }

@@ -48,7 +48,7 @@ mapParser
     const lat = ${this.get("lat") ?? 37.8}
     const long = ${this.get("long") ?? 4}
     const zoomLevel = ${this.get("zoom") ?? 4}
-    const points = ${JSON.stringify(this.findNodes("point").map(node => node.toObject()))}
+    const points = ${JSON.stringify(this.findParticles("point").map(particle => particle.toObject()))}
     const map = L.map("map${id}").setView([lat, long], zoomLevel)
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
      attribution: '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>',

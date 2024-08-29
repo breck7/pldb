@@ -8,8 +8,8 @@ abstractAftertextParser
  javascript
   get markupInserts() {
    const { originalTextPostLinkify } = this
-   return this.filter(node => node.isMarkup)
-    .map(node => node.getInserts(originalTextPostLinkify))
+   return this.filter(particle => particle.isMarkup)
+    .map(particle => particle.getInserts(originalTextPostLinkify))
     .filter(i => i)
     .flat()
   }
@@ -50,7 +50,7 @@ abstractAftertextParser
   get className() {
    if (this.get("classes"))
      return this.get("classes")
-   const classLine = this.getNode("class")
+   const classLine = this.getParticle("class")
    if (classLine && classLine.applyToParentElement) return classLine.content
    return this.defaultClassName
   }
@@ -69,8 +69,8 @@ abstractAftertextParser
    return this.getHtmlRequirements(compileSettings) + `<${tag} ${this.divAttributes}${classAttr}>${this.text}</${tag}>`
   }
   get divAttributes() {
-   const attrs = this.filter(node => node.isAttribute)
-   return attrs.length ? attrs.map(node => node.divAttributes).join(" ") + " " : ""
+   const attrs = this.filter(particle => particle.isAttribute)
+   return attrs.length ? attrs.map(particle => particle.divAttributes).join(" ") + " " : ""
   }
 
 abstractAftertextAttributeParser
@@ -86,7 +86,7 @@ abstractAftertextAttributeParser
 
 aftertextTagParser
  cells commandWordCell htmlTagCell
- description Override the HTML tag that the compiled node will use.
+ description Override the HTML tag that the compiled particle will use.
  crux tag
  javascript
   compile() {
@@ -105,7 +105,7 @@ abstractAftertextDirectiveParser
     const errors = super.getErrors()
     if (!this.isMarkup || this.matchWholeLine) return errors
     const inserts = this.getInserts(this.parent.originalTextPostLinkify)
-    // todo: make AbstractTreeError class exported by sdk to allow Parsers to define their own error types.
+    // todo: make AbstractParticleError class exported by sdk to allow Parsers to define their own error types.
     // todo: also need to be able to map lines back to their line in source (pre-imports)
     if (!inserts.length)
      errors.push(this.makeError(`No match found for "${this.getLine()}".`))
@@ -133,7 +133,7 @@ abstractAftertextDirectiveParser
    const matches = this.getMatches(text)
    if (!matches.length) return false
    if (this.shouldMatchAll) return matches.flat()
-   const match = this.getNode("match")
+   const match = this.getParticle("match")
    if (match)
     return match.indexes
      .map(index => matches[index])
@@ -302,6 +302,6 @@ aftertextStyleParser
 aftertextHiddenParser
  crux hidden
  cells commandWordCell
- description Do not compile this node to HTML.
+ description Do not compile this particle to HTML.
  extends abstractAftertextAttributeParser
  single

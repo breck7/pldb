@@ -1,13 +1,13 @@
 #! /usr/bin/env node
 {
   const { Utils } = require("./Utils.js")
-  const { TreeNode } = require("./TreeNode.js")
+  const { Particle } = require("./Particle.js")
   const { HandParsersProgram } = require("./Parsers.js")
-  const { ParserBackedNode } = require("./Parsers.js")
+  const { ParserBackedParticle } = require("./Parsers.js")
 
-  class swarmParser extends ParserBackedNode {
+  class swarmParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         errorParser,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { test: testParser, testOnly: testOnlyParser, skipTest: skipTestParser, "#!": hashbangParser, arrange: arrangeParser }),
         undefined
@@ -17,9 +17,9 @@
       return this.getChildInstancesOfParserId("arrangeParser")[0]
     }
     async execute(filepath) {
-      const tree = new TestRacer(this.compileToRacer(filepath))
-      await tree.execute()
-      return tree.finish()
+      const particle = new TestRacer(this.compileToRacer(filepath))
+      await particle.execute()
+      return particle.finish()
     }
     compileToRacer(filepath) {
       const testBlocks = {}
@@ -85,9 +85,9 @@ swarmParser
    return this.getChildInstancesOfParserId("arrangeParser")[0]
   }
   async execute(filepath) {
-   const tree = new TestRacer(this.compileToRacer(filepath))
-   await tree.execute()
-   return tree.finish()
+   const particle = new TestRacer(this.compileToRacer(filepath))
+   await particle.execute()
+   return particle.finish()
   }
   compileToRacer(filepath) {
    const testBlocks = {}
@@ -202,7 +202,7 @@ assertTypeIsParser
 abstractArrangeFlagParser
  cells keywordCell
 arrangeAsyncParser
- description Add this flag in the arrange node to test async methods.
+ description Add this flag in the arrange particle to test async methods.
  extends abstractArrangeFlagParser
  crux async
 arrangeRequireParser
@@ -212,13 +212,13 @@ arrangeRequireParser
  catchAllCellType anyCell
 arrangeStaticParser
  crux static
- description Add this to the arrange node to import class directly without initiating it for static method testing.
+ description Add this to the arrange particle to import class directly without initiating it for static method testing.
  extends abstractArrangeFlagParser
 abstractTestBlockParser
  catchAllCellType anyCell
  javascript
   getArrangeParser() {
-   return this.getNode("arrange") || this.parent.getArrangeParser()
+   return this.getParticle("arrange") || this.parent.getArrangeParser()
   }
   setEqualMethod(equal) {
    this._equal = equal
@@ -282,7 +282,7 @@ arrangeParser
    let requiredClass =
     this.get("require") ||
     this.root
-     .getNode("arrange")
+     .getParticle("arrange")
      .get("require")
    const requiredClassParts = requiredClass.split(" ") // Allows for ./ExportsClasses.js ChildClass
    const requiredFileNameOrClass = requiredClassParts[0]
@@ -366,7 +366,7 @@ todoParser
     static rootParser = swarmParser
   }
 
-  class abstractAssertionParser extends ParserBackedNode {
+  class abstractAssertionParser extends ParserBackedParticle {
     get assertionKeywordCell() {
       return this.getWord(0)
     }
@@ -409,7 +409,7 @@ todoParser
 
   class assertParagraphIsParser extends abstractAssertionParser {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(paragraphLineParser, undefined, undefined)
+      return new Particle.ParserCombinator(paragraphLineParser, undefined, undefined)
     }
     getExpected() {
       return this.childrenToString()
@@ -476,7 +476,7 @@ todoParser
     }
   }
 
-  class abstractArrangeFlagParser extends ParserBackedNode {
+  class abstractArrangeFlagParser extends ParserBackedParticle {
     get keywordCell() {
       return this.getWord(0)
     }
@@ -484,7 +484,7 @@ todoParser
 
   class arrangeAsyncParser extends abstractArrangeFlagParser {}
 
-  class arrangeRequireParser extends ParserBackedNode {
+  class arrangeRequireParser extends ParserBackedParticle {
     get keywordCell() {
       return this.getWord(0)
     }
@@ -498,9 +498,9 @@ todoParser
 
   class arrangeStaticParser extends abstractArrangeFlagParser {}
 
-  class abstractTestBlockParser extends ParserBackedNode {
+  class abstractTestBlockParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(actParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { arrange: arrangeParser }), undefined)
+      return new Particle.ParserCombinator(actParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { arrange: arrangeParser }), undefined)
     }
     get keywordCell() {
       return this.getWord(0)
@@ -509,7 +509,7 @@ todoParser
       return this.getWordsFrom(1)
     }
     getArrangeParser() {
-      return this.getNode("arrange") || this.parent.getArrangeParser()
+      return this.getParticle("arrange") || this.parent.getArrangeParser()
     }
     setEqualMethod(equal) {
       this._equal = equal
@@ -550,7 +550,7 @@ todoParser
     }
   }
 
-  class hashbangParser extends ParserBackedNode {
+  class hashbangParser extends ParserBackedParticle {
     get hashBangKeywordCell() {
       return this.getWord(0)
     }
@@ -562,9 +562,9 @@ todoParser
     }
   }
 
-  class arrangeParser extends ParserBackedNode {
+  class arrangeParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         undefined,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
           async: arrangeAsyncParser,
@@ -590,7 +590,7 @@ todoParser
     }
     _getRequiredClass(programFilepath) {
       // todo: cleanup
-      let requiredClass = this.get("require") || this.root.getNode("arrange").get("require")
+      let requiredClass = this.get("require") || this.root.getParticle("arrange").get("require")
       const requiredClassParts = requiredClass.split(" ") // Allows for ./ExportsClasses.js ChildClass
       const requiredFileNameOrClass = requiredClassParts[0]
       let theClass
@@ -605,9 +605,9 @@ todoParser
     executeSync() {}
   }
 
-  class withParagraphParser extends ParserBackedNode {
+  class withParagraphParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(paragraphLineParser, undefined, undefined)
+      return new Particle.ParserCombinator(paragraphLineParser, undefined, undefined)
     }
     get parameterKeywordCell() {
       return this.getWord(0)
@@ -615,9 +615,9 @@ todoParser
     executeSync() {}
   }
 
-  class actParser extends ParserBackedNode {
+  class actParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         actParser,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
           assertParagraphIs: assertParagraphIsParser,
@@ -665,9 +665,9 @@ todoParser
     }
   }
 
-  class constructWithParagraphParser extends ParserBackedNode {
+  class constructWithParagraphParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(paragraphLineParser, undefined, undefined)
+      return new Particle.ParserCombinator(paragraphLineParser, undefined, undefined)
     }
     get keywordCell() {
       return this.getWord(0)
@@ -675,15 +675,15 @@ todoParser
     executeSync() {}
   }
 
-  class errorParser extends ParserBackedNode {
+  class errorParser extends ParserBackedParticle {
     getErrors() {
       return this._getErrorParserErrors()
     }
   }
 
-  class paragraphLineParser extends ParserBackedNode {
+  class paragraphLineParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(paragraphLineParser, undefined, undefined)
+      return new Particle.ParserCombinator(paragraphLineParser, undefined, undefined)
     }
     get anyCell() {
       return this.getWord(0)
@@ -693,9 +693,9 @@ todoParser
     }
   }
 
-  class todoParser extends ParserBackedNode {
+  class todoParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(todoParser, undefined, undefined)
+      return new Particle.ParserCombinator(todoParser, undefined, undefined)
     }
     get todoKeywordCell() {
       return this.getWord(0)
@@ -708,5 +708,5 @@ todoParser
   module.exports = swarmParser
   swarmParser
 
-  if (!module.parent) new swarmParser(TreeNode.fromDisk(process.argv[2]).toString()).execute()
+  if (!module.parent) new swarmParser(Particle.fromDisk(process.argv[2]).toString()).execute()
 }

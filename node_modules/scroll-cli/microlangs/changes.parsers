@@ -36,7 +36,7 @@ releaseDateParser
  float sortIndex 1.1
  javascript
   computeValue(concept) {
-    return concept.nodeAt(0).getWord(2)
+    return concept.particleAt(0).getWord(2)
   }
 
 abstractSummaryParser
@@ -49,7 +49,7 @@ bugFixesParser
  description How many bug fixes in this release?
  javascript
   computeValue(concept) {
-    return concept.findNodes("🏥").length
+    return concept.findParticles("🏥").length
   }
 
 newFeaturesParser
@@ -57,7 +57,7 @@ newFeaturesParser
  description How many new features in this release?
  javascript
   computeValue(concept) {
-    return concept.findNodes("🎉").length
+    return concept.findParticles("🎉").length
   }
 
 breakingChangesParser
@@ -65,5 +65,5 @@ breakingChangesParser
  description How many breaking changes in this release?
  javascript
   computeValue(concept) {
-    return concept.findNodes("⚠️").length
+    return concept.findParticles("⚠️").length
   }

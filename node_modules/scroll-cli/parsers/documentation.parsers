@@ -10,16 +10,16 @@ belowAsCodeParser
    const { method } = this
    let code = ""
    
-   let nodes = []
+   let particles = []
    let next = this[method]
    let {howMany} = this
    while (howMany) {
-    nodes.push(next)
+    particles.push(next)
     next = next[method]
     howMany--
    }
-   if (this.reverse) nodes.reverse()
-   return nodes.map(node => node.asString).join("\n")
+   if (this.reverse) particles.reverse()
+   return particles.map(particle => particle.asString).join("\n")
   }
   reverse = false
   compile() {
@@ -42,11 +42,11 @@ belowAsCodeUntilParser
   get howMany() {
     let howMany = 1
     const query = this.content
-    let node = this.next
-    while (node !== this) {
-      if (node.getLine().startsWith(query))
+    let particle = this.next
+    while (particle !== this) {
+      if (particle.getLine().startsWith(query))
         return howMany
-      node = node.next
+      particle = particle.next
       howMany++
     }
     return howMany

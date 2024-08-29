@@ -1,13 +1,13 @@
 #! /usr/bin/env node
 {
   const { Utils } = require("./Utils.js")
-  const { TreeNode } = require("./TreeNode.js")
+  const { Particle } = require("./Particle.js")
   const { HandParsersProgram } = require("./Parsers.js")
-  const { ParserBackedNode } = require("./Parsers.js")
+  const { ParserBackedParticle } = require("./Parsers.js")
 
-  class stumpParser extends ParserBackedNode {
+  class stumpParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         errorParser,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
           blockquote: htmlTagParser,
@@ -218,17 +218,17 @@ htmlTagParser
   get domElement() {
     var elem = document.createElement(this.getTag())
     elem.setAttribute("stumpUid", this._getUid())
-    this.filter(node => node.isAttributeParser)
+    this.filter(particle => particle.isAttributeParser)
       .forEach(child => elem.setAttribute(child.firstWord, child.content))
-    elem.innerHTML = this.has("bern") ? this.getNode("bern").childrenToString() : this._getOneLiner()
-    this.filter(node => node.isHtmlTagParser)
+    elem.innerHTML = this.has("bern") ? this.getParticle("bern").childrenToString() : this._getOneLiner()
+    this.filter(particle => particle.isHtmlTagParser)
       .forEach(child => elem.appendChild(child.domElement))
     return elem
   }
   _toHtml(indentCount, withSuid) {
    const tag = this.getTag()
    const children = this.map(child => child._toHtml(indentCount + 1, withSuid)).join("")
-   const attributesStr = this.filter(node => node.isAttributeParser)
+   const attributesStr = this.filter(particle => particle.isAttributeParser)
     .map(child => child.getAttribute())
     .join("")
    const indent = " ".repeat(indentCount)
@@ -238,18 +238,18 @@ htmlTagParser
    const oneLiner = this._getOneLiner()
    return \`\${!collapse ? indent : ""}<\${tag}\${attributesStr}\${suid}>\${oneLiner}\${indentForChildParsers ? "\\n" : ""}\${children}</\${tag}>\${collapse ? "" : "\\n"}\`
   }
-  removeCssStumpNode() {
-   return this.removeStumpNode()
+  removeCssStumpParticle() {
+   return this.removeStumpParticle()
   }
-  removeStumpNode() {
+  removeStumpParticle() {
    this.getShadow().removeShadow()
    return this.destroy()
   }
-  getNodeByGuid(guid) {
-   return this.topDownArray.find(node => node._getUid() === guid)
+  getParticleByGuid(guid) {
+   return this.topDownArray.find(particle => particle._getUid() === guid)
   }
-  addClassToStumpNode(className) {
-   const classParser = this.touchNode("class")
+  addClassToStumpParticle(className) {
+   const classParser = this.touchParticle("class")
    const words = classParser.getWordsFrom(1)
    // note: we call add on shadow regardless, because at the moment stump may have gotten out of
    // sync with shadow, if things modified the dom. todo: cleanup.
@@ -259,8 +259,8 @@ htmlTagParser
    classParser.setContent(words.join(this.wordBreakSymbol))
    return this
   }
-  removeClassFromStumpNode(className) {
-   const classParser = this.getNode("class")
+  removeClassFromStumpParticle(className) {
+   const classParser = this.getParticle("class")
    if (!classParser) return this
    const newClasses = classParser.words.filter(word => word !== className)
    if (!newClasses.length) classParser.destroy()
@@ -268,11 +268,11 @@ htmlTagParser
    this.getShadow().removeClassFromShadow(className)
    return this
   }
-  stumpNodeHasClass(className) {
-   const classParser = this.getNode("class")
+  stumpParticleHasClass(className) {
+   const classParser = this.getParticle("class")
    return classParser && classParser.words.includes(className) ? true : false
   }
-  isStumpNodeCheckbox() {
+  isStumpParticleCheckbox() {
    return this.get("type") === "checkbox"
   }
   getShadow() {
@@ -282,49 +282,49 @@ htmlTagParser
    }
    return this._shadow
   }
-  insertCssChildNode(text, index) {
-   return this.insertChildNode(text, index)
+  insertCssChildParticle(text, index) {
+   return this.insertChildParticle(text, index)
   }
-  insertChildNode(text, index) {
-   const singleNode = new TreeNode(text).getChildren()[0]
-   const newNode = this.insertLineAndChildren(singleNode.getLine(), singleNode.childrenToString(), index)
-   const stumpParserIndex = this.filter(node => node.isHtmlTagParser).indexOf(newNode)
-   this.getShadow().insertHtmlNode(newNode, stumpParserIndex)
-   return newNode
+  insertChildParticle(text, index) {
+   const singleParticle = new Particle(text).getChildren()[0]
+   const newParticle = this.insertLineAndChildren(singleParticle.getLine(), singleParticle.childrenToString(), index)
+   const stumpParserIndex = this.filter(particle => particle.isHtmlTagParser).indexOf(newParticle)
+   this.getShadow().insertHtmlParticle(newParticle, stumpParserIndex)
+   return newParticle
   }
   isInputType() {
    return ["input", "textarea"].includes(this.getTag()) || this.get("contenteditable") === "true"
   }
-  findStumpNodeByChild(line) {
-   return this.findStumpNodesByChild(line)[0]
+  findStumpParticleByChild(line) {
+   return this.findStumpParticlesByChild(line)[0]
   }
-  findStumpNodeByChildString(line) {
-   return this.topDownArray.find(node =>
-    node
+  findStumpParticleByChildString(line) {
+   return this.topDownArray.find(particle =>
+    particle
      .map(child => child.getLine())
      .join("\\n")
      .includes(line)
    )
   }
-  findStumpNodeByFirstWord(firstWord) {
-   return this._findStumpNodesByBase(firstWord)[0]
+  findStumpParticleByFirstWord(firstWord) {
+   return this._findStumpParticlesByBase(firstWord)[0]
   }
-  _findStumpNodesByBase(firstWord) {
-   return this.topDownArray.filter(node => node.doesExtend("htmlTagParser") && node.firstWord === firstWord)
+  _findStumpParticlesByBase(firstWord) {
+   return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
   }
   hasLine(line) {
-   return this.getChildren().some(node => node.getLine() === line)
+   return this.getChildren().some(particle => particle.getLine() === line)
   }
-  findStumpNodesByChild(line) {
-   return this.topDownArray.filter(node => node.doesExtend("htmlTagParser") && node.hasLine(line))
+  findStumpParticlesByChild(line) {
+   return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.hasLine(line))
   }
-  findStumpNodesWithClass(className) {
+  findStumpParticlesWithClass(className) {
    return this.topDownArray.filter(
-    node =>
-     node.doesExtend("htmlTagParser") &&
-     node.has("class") &&
-     node
-      .getNode("class")
+    particle =>
+     particle.doesExtend("htmlTagParser") &&
+     particle.has("class") &&
+     particle
+      .getParticle("class")
       .words
       .includes(className)
    )
@@ -333,21 +333,21 @@ htmlTagParser
    return this.parent.getShadowClass()
   }
   // todo: should not be here
-  getStumpNodeTreeComponent() {
-   return this._treeComponent || this.parent.getStumpNodeTreeComponent()
+  getStumpParticleParticleComponent() {
+   return this._particleComponent || this.parent.getStumpParticleParticleComponent()
   }
   // todo: should not be here
-  setStumpNodeTreeComponent(treeComponent) {
-   this._treeComponent = treeComponent
+  setStumpParticleParticleComponent(particleComponent) {
+   this._particleComponent = particleComponent
    return this
   }
-  getStumpNodeCss(prop) {
+  getStumpParticleCss(prop) {
    return this.getShadow().getShadowCss(prop)
   }
-  getStumpNodeAttr(key) {
+  getStumpParticleAttr(key) {
    return this.get(key)
   }
-  setStumpNodeAttr(key, value) {
+  setStumpParticleAttr(key, value) {
    // todo
    return this
   }
@@ -393,8 +393,8 @@ lineOfHtmlContentParser
   getTextContent() {return this.getLine()}
 bernParser
  boolean isTileAttribute true
- // todo Rename this node type
- description This is a node where you can put any HTML content. It is called "bern" until someone comes up with a better name.
+ // todo Rename this particle type
+ description This is a particle where you can put any HTML content. It is called "bern" until someone comes up with a better name.
  catchAllParser lineOfHtmlContentParser
  javascript
   _toHtml() {
@@ -408,7 +408,7 @@ bernParser
     static rootParser = stumpParser
   }
 
-  class blankLineParser extends ParserBackedNode {
+  class blankLineParser extends ParserBackedParticle {
     get emptyCell() {
       return this.getWord(0)
     }
@@ -420,9 +420,9 @@ bernParser
     }
   }
 
-  class htmlTagParser extends ParserBackedNode {
+  class htmlTagParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         undefined,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
           blockquote: htmlTagParser,
@@ -751,15 +751,15 @@ bernParser
     get domElement() {
       var elem = document.createElement(this.getTag())
       elem.setAttribute("stumpUid", this._getUid())
-      this.filter(node => node.isAttributeParser).forEach(child => elem.setAttribute(child.firstWord, child.content))
-      elem.innerHTML = this.has("bern") ? this.getNode("bern").childrenToString() : this._getOneLiner()
-      this.filter(node => node.isHtmlTagParser).forEach(child => elem.appendChild(child.domElement))
+      this.filter(particle => particle.isAttributeParser).forEach(child => elem.setAttribute(child.firstWord, child.content))
+      elem.innerHTML = this.has("bern") ? this.getParticle("bern").childrenToString() : this._getOneLiner()
+      this.filter(particle => particle.isHtmlTagParser).forEach(child => elem.appendChild(child.domElement))
       return elem
     }
     _toHtml(indentCount, withSuid) {
       const tag = this.getTag()
       const children = this.map(child => child._toHtml(indentCount + 1, withSuid)).join("")
-      const attributesStr = this.filter(node => node.isAttributeParser)
+      const attributesStr = this.filter(particle => particle.isAttributeParser)
         .map(child => child.getAttribute())
         .join("")
       const indent = " ".repeat(indentCount)
@@ -769,18 +769,18 @@ bernParser
       const oneLiner = this._getOneLiner()
       return `${!collapse ? indent : ""}<${tag}${attributesStr}${suid}>${oneLiner}${indentForChildParsers ? "\n" : ""}${children}</${tag}>${collapse ? "" : "\n"}`
     }
-    removeCssStumpNode() {
-      return this.removeStumpNode()
+    removeCssStumpParticle() {
+      return this.removeStumpParticle()
     }
-    removeStumpNode() {
+    removeStumpParticle() {
       this.getShadow().removeShadow()
       return this.destroy()
     }
-    getNodeByGuid(guid) {
-      return this.topDownArray.find(node => node._getUid() === guid)
+    getParticleByGuid(guid) {
+      return this.topDownArray.find(particle => particle._getUid() === guid)
     }
-    addClassToStumpNode(className) {
-      const classParser = this.touchNode("class")
+    addClassToStumpParticle(className) {
+      const classParser = this.touchParticle("class")
       const words = classParser.getWordsFrom(1)
       // note: we call add on shadow regardless, because at the moment stump may have gotten out of
       // sync with shadow, if things modified the dom. todo: cleanup.
@@ -790,8 +790,8 @@ bernParser
       classParser.setContent(words.join(this.wordBreakSymbol))
       return this
     }
-    removeClassFromStumpNode(className) {
-      const classParser = this.getNode("class")
+    removeClassFromStumpParticle(className) {
+      const classParser = this.getParticle("class")
       if (!classParser) return this
       const newClasses = classParser.words.filter(word => word !== className)
       if (!newClasses.length) classParser.destroy()
@@ -799,11 +799,11 @@ bernParser
       this.getShadow().removeClassFromShadow(className)
       return this
     }
-    stumpNodeHasClass(className) {
-      const classParser = this.getNode("class")
+    stumpParticleHasClass(className) {
+      const classParser = this.getParticle("class")
       return classParser && classParser.words.includes(className) ? true : false
     }
-    isStumpNodeCheckbox() {
+    isStumpParticleCheckbox() {
       return this.get("type") === "checkbox"
     }
     getShadow() {
@@ -813,64 +813,64 @@ bernParser
       }
       return this._shadow
     }
-    insertCssChildNode(text, index) {
-      return this.insertChildNode(text, index)
+    insertCssChildParticle(text, index) {
+      return this.insertChildParticle(text, index)
     }
-    insertChildNode(text, index) {
-      const singleNode = new TreeNode(text).getChildren()[0]
-      const newNode = this.insertLineAndChildren(singleNode.getLine(), singleNode.childrenToString(), index)
-      const stumpParserIndex = this.filter(node => node.isHtmlTagParser).indexOf(newNode)
-      this.getShadow().insertHtmlNode(newNode, stumpParserIndex)
-      return newNode
+    insertChildParticle(text, index) {
+      const singleParticle = new Particle(text).getChildren()[0]
+      const newParticle = this.insertLineAndChildren(singleParticle.getLine(), singleParticle.childrenToString(), index)
+      const stumpParserIndex = this.filter(particle => particle.isHtmlTagParser).indexOf(newParticle)
+      this.getShadow().insertHtmlParticle(newParticle, stumpParserIndex)
+      return newParticle
     }
     isInputType() {
       return ["input", "textarea"].includes(this.getTag()) || this.get("contenteditable") === "true"
     }
-    findStumpNodeByChild(line) {
-      return this.findStumpNodesByChild(line)[0]
+    findStumpParticleByChild(line) {
+      return this.findStumpParticlesByChild(line)[0]
     }
-    findStumpNodeByChildString(line) {
-      return this.topDownArray.find(node =>
-        node
+    findStumpParticleByChildString(line) {
+      return this.topDownArray.find(particle =>
+        particle
           .map(child => child.getLine())
           .join("\n")
           .includes(line)
       )
     }
-    findStumpNodeByFirstWord(firstWord) {
-      return this._findStumpNodesByBase(firstWord)[0]
+    findStumpParticleByFirstWord(firstWord) {
+      return this._findStumpParticlesByBase(firstWord)[0]
     }
-    _findStumpNodesByBase(firstWord) {
-      return this.topDownArray.filter(node => node.doesExtend("htmlTagParser") && node.firstWord === firstWord)
+    _findStumpParticlesByBase(firstWord) {
+      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
     }
     hasLine(line) {
-      return this.getChildren().some(node => node.getLine() === line)
+      return this.getChildren().some(particle => particle.getLine() === line)
     }
-    findStumpNodesByChild(line) {
-      return this.topDownArray.filter(node => node.doesExtend("htmlTagParser") && node.hasLine(line))
+    findStumpParticlesByChild(line) {
+      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.hasLine(line))
     }
-    findStumpNodesWithClass(className) {
-      return this.topDownArray.filter(node => node.doesExtend("htmlTagParser") && node.has("class") && node.getNode("class").words.includes(className))
+    findStumpParticlesWithClass(className) {
+      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.has("class") && particle.getParticle("class").words.includes(className))
     }
     getShadowClass() {
       return this.parent.getShadowClass()
     }
     // todo: should not be here
-    getStumpNodeTreeComponent() {
-      return this._treeComponent || this.parent.getStumpNodeTreeComponent()
+    getStumpParticleParticleComponent() {
+      return this._particleComponent || this.parent.getStumpParticleParticleComponent()
     }
     // todo: should not be here
-    setStumpNodeTreeComponent(treeComponent) {
-      this._treeComponent = treeComponent
+    setStumpParticleParticleComponent(particleComponent) {
+      this._particleComponent = particleComponent
       return this
     }
-    getStumpNodeCss(prop) {
+    getStumpParticleCss(prop) {
       return this.getShadow().getShadowCss(prop)
     }
-    getStumpNodeAttr(key) {
+    getStumpParticleAttr(key) {
       return this.get(key)
     }
-    setStumpNodeAttr(key, value) {
+    setStumpParticleAttr(key, value) {
       // todo
       return this
     }
@@ -879,7 +879,7 @@ bernParser
     }
   }
 
-  class errorParser extends ParserBackedNode {
+  class errorParser extends ParserBackedParticle {
     getErrors() {
       return this._getErrorParserErrors()
     }
@@ -894,9 +894,9 @@ bernParser
     }
   }
 
-  class htmlAttributeParser extends ParserBackedNode {
+  class htmlAttributeParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(errorParser, undefined, undefined)
+      return new Particle.ParserCombinator(errorParser, undefined, undefined)
     }
     get htmlAttributeNameCell() {
       return this.getWord(0)
@@ -927,9 +927,9 @@ bernParser
     }
   }
 
-  class lineOfHtmlContentParser extends ParserBackedNode {
+  class lineOfHtmlContentParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
+      return new Particle.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
     }
     get anyHtmlContentCell() {
       return this.getWordsFrom(0)
@@ -942,9 +942,9 @@ bernParser
     }
   }
 
-  class bernParser extends ParserBackedNode {
+  class bernParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
+      return new Particle.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
     }
     get bernKeywordCell() {
       return this.getWord(0)
@@ -963,5 +963,5 @@ bernParser
   module.exports = stumpParser
   stumpParser
 
-  if (!module.parent) new stumpParser(TreeNode.fromDisk(process.argv[2]).toString()).execute()
+  if (!module.parent) new stumpParser(Particle.fromDisk(process.argv[2]).toString()).execute()
 }

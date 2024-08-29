@@ -13,11 +13,11 @@ scrollGroupByParser
    const groupByColNames = this.getWordsFrom(1)
    const {coreTable} = this.parent
    if (!groupByColNames.length) return coreTable
-   const newCols = [].map(reduceNode => {
+   const newCols = [].map(reduceParticle => {
     return {
-     source: reduceNode.getWord(1),
-     reduction: reduceNode.getWord(2),
-     name: reduceNode.getWord(3) || reduceNode.getWordsFrom(1).join("_")
+     source: reduceParticle.getWord(1),
+     reduction: reduceParticle.getWord(2),
+     name: reduceParticle.getWord(3) || reduceParticle.getWordsFrom(1).join("_")
     }
    })
    // Pivot is shorthand for group and reduce?
@@ -44,7 +44,7 @@ scrollGroupByParser
        return rowsInGroups
      }
      getNewRows(groupByCols) {
-       // make new trees
+       // make new particles
        const rowsInGroups = this._getGroups(this._rows, groupByCols)
        // Any column in the group should be reused by the children
        const columns = [

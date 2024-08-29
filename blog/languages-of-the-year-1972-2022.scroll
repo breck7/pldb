@@ -79,10 +79,10 @@ table
   nimskull,Nimskull,2021,2034,
 
 comment
- const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+ const { Particle } = require("scrollsdk/products/Particle.js")
  const { Disk } = require("scrollsdk/products/Disk.node.js")
  
- const data = TreeNode.fromCsv(
+ const data = Particle.fromCsv(
    Disk.read(__dirname + "/../pldb.local/languages.csv")
  )
  
@@ -124,7 +124,7 @@ comment
  
  Disk.write(
    __dirname + "/last50years.csv",
-   new TreeNode(map).toDelimited(",", [
+   new Particle(map).toDelimited(",", [
      "id",
      "title",
      "appeared",
@@ -134,7 +134,7 @@ comment
  )
  Disk.write(
    __dirname + "/last50yearsRunnersUp.csv",
-   new TreeNode(runnersUp).toDelimited(",", ["id", "title", "appeared", "rank"])
+   new Particle(runnersUp).toDelimited(",", ["id", "title", "appeared", "rank"])
  )
  
  runnersUp.forEach(row => (row.runnerUp = 1))
@@ -144,7 +144,7 @@ comment
  
  Disk.write(
    __dirname + "/last50yearsCombined.csv",
-   new TreeNode(combined).toDelimited(",", [
+   new Particle(combined).toDelimited(",", [
      "id",
      "title",
      "appeared",

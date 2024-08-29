@@ -201,7 +201,7 @@ scrollParser
      .trim() + this.clearSectionStack()
   }
   get footnotes() {
-   if (this._footnotes === undefined) this._footnotes = this.filter(node => node.isFootnote)
+   if (this._footnotes === undefined) this._footnotes = this.filter(particle => particle.isFootnote)
    return this._footnotes
   }
   file = {}

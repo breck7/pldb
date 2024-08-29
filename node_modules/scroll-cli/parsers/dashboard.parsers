@@ -19,7 +19,7 @@ scrollDashboardParser
    return str
   }
   makeRow(items) {
-   return `<tr>` + items.map(node => `<td>${node.firstWord}<span>${node.content}</span></td>`).join("\n") + `</tr>\n`
+   return `<tr>` + items.map(particle => `<td>${particle.firstWord}<span>${particle.content}</span></td>`).join("\n") + `</tr>\n`
   }
   compile() {
    return `<table class="scrollDashboard">${this.tableBody}</table>`

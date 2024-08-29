@@ -3,7 +3,7 @@ const fs = require("fs")
 const path = require("path")
 class Disk {}
 _a = Disk
-Disk.getTreeNode = () => require("../products/TreeNode.js").TreeNode // todo: cleanup
+Disk.getParticle = () => require("../products/Particle.js").Particle // todo: cleanup
 Disk.rm = path => fs.unlinkSync(path)
 Disk.getCleanedString = str => str.replace(/[\,\t\n]/g, " ")
 Disk.makeExecutable = path => fs.chmodSync(path, 0o755)
@@ -40,15 +40,15 @@ Disk.isDir = path => fs.statSync(path).isDirectory()
 Disk.getFileName = fileName => path.parse(fileName).base
 Disk.append = (path, content) => fs.appendFileSync(path, content, "utf8")
 Disk.appendAsync = (path, content, callback) => fs.appendFile(path, content, "utf8", callback)
-Disk.readCsvAsTree = path => Disk.getTreeNode().fromCsv(Disk.read(path))
-Disk.readSsvAsTree = path => Disk.getTreeNode().fromSsv(Disk.read(path))
-Disk.readTsvAsTree = path => Disk.getTreeNode().fromTsv(Disk.read(path))
+Disk.readCsvAsParticles = path => Disk.getParticle().fromCsv(Disk.read(path))
+Disk.readSsvAsParticles = path => Disk.getParticle().fromSsv(Disk.read(path))
+Disk.readTsvAsParticles = path => Disk.getParticle().fromTsv(Disk.read(path))
 Disk.insertIntoFile = (path, content, delimiter) => Disk.write(path, Disk.stickBetween(content, Disk.read(path), delimiter))
-Disk.detectAndReadAsTree = path => Disk.detectDelimiterAndReadAsTree(Disk.read(path))
-Disk.getAllOf = (node, prop) => node.filter(node => node.getWord(0) === prop)
-Disk.getDelimitedChildrenAsTree = (node, delimiter = undefined) => Disk.detectDelimiterAndReadAsTree(node.childrenToString())
+Disk.detectAndReadAsParticles = path => Disk.detectDelimiterAndReadAsParticles(Disk.read(path))
+Disk.getAllOf = (particle, prop) => particle.filter(particle => particle.getWord(0) === prop)
+Disk.getDelimitedChildrenAsParticles = (particle, delimiter = undefined) => Disk.detectDelimiterAndReadAsParticles(particle.childrenToString())
 Disk.sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
-Disk.readTree = path => new (Disk.getTreeNode())(Disk.read(path))
+Disk.readParticles = path => new (Disk.getParticle())(Disk.read(path))
 Disk.sizeOf = path => fs.statSync(path).size
 Disk.stripHtml = text => (text && text.replace ? text.replace(/<(?:.|\n)*?>/gm, "") : text)
 Disk.stripParentheticals = text => (text && text.replace ? text.replace(/\((?:.|\n)*?\)/gm, "") : text)
@@ -66,28 +66,28 @@ Disk.stickBetween = (content, dest, delimiter) => {
   const parts = dest.split(delimiter)
   return [parts[0], content, parts[2]].join(delimiter)
 }
-// todo: move to tree base class
-Disk.detectDelimiterAndReadAsTree = str => {
+// todo: move to particle base class
+Disk.detectDelimiterAndReadAsParticles = str => {
   const line1 = str.split("\n")[0]
-  const TreeNode = Disk.getTreeNode()
-  if (line1.includes("\t")) return TreeNode.fromTsv(str)
-  else if (line1.includes(",")) return TreeNode.fromCsv(str)
-  else if (line1.includes("|")) return TreeNode.fromDelimited(str, "|")
-  else if (line1.includes(";")) return TreeNode.fromDelimited(str, ";")
+  const Particle = Disk.getParticle()
+  if (line1.includes("\t")) return Particle.fromTsv(str)
+  else if (line1.includes(",")) return Particle.fromCsv(str)
+  else if (line1.includes("|")) return Particle.fromDelimited(str, "|")
+  else if (line1.includes(";")) return Particle.fromDelimited(str, ";")
   // todo: add more robust. align with choose delimiter
-  return TreeNode.fromSsv(str)
+  return Particle.fromSsv(str)
 }
-Disk.deleteDuplicates = (node, prop1, prop2, reverse = false) => {
+Disk.deleteDuplicates = (particle, prop1, prop2, reverse = false) => {
   const map = {}
-  Disk.getAllOf(node, prop1).forEach(node => {
-    const val = node.get(prop2)
+  Disk.getAllOf(particle, prop1).forEach(particle => {
+    const val = particle.get(prop2)
     console.log(val)
     if (map[val] && reverse) {
       map[val].destroy()
-      map[val] = node
+      map[val] = particle
     } else if (map[val]) {
-      node.destroy()
-    } else map[val] = node
+      particle.destroy()
+    } else map[val] = particle
   })
 }
 // todo: remove.
@@ -102,9 +102,9 @@ Disk.appendUniqueLine = (path, line) => {
   const prefix = !file || file.endsWith("\n") ? "" : "\n"
   return Disk.append(path, prefix + line + "\n")
 }
-Disk.move = (node, newPosition) => {
-  node.parent.insertLineAndChildren(node.getLine(), node.childrenToString(), newPosition)
-  node.destroy()
+Disk.move = (particle, newPosition) => {
+  particle.parent.insertLineAndChildren(particle.getLine(), particle.childrenToString(), newPosition)
+  particle.destroy()
 }
 Disk._getTextUrl = async url => {
   // todo: https://visionmedia.github.io/superagent/
@@ -133,17 +133,17 @@ Disk.downloadJson = async (url, destination) => {
   if (destination) Disk.writeJson(destination, result)
   return result
 }
-Disk.buildMapFrom = (tree, key, value) => {
+Disk.buildMapFrom = (particle, key, value) => {
   const map = {}
-  tree.forEach(child => {
+  particle.forEach(child => {
     map[child.get(key)] = child.get(value)
   })
   return map
 }
 Disk.csvToMap = (path, columnName) => {
-  const tree = Disk.readCsvAsTree(path)
+  const particle = Disk.readCsvAsParticles(path)
   const map = {}
-  tree.forEach(child => {
+  particle.forEach(child => {
     const key = child.get(columnName)
     map[key] = child.toObject()
   })

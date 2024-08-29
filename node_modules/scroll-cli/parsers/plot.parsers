@@ -44,7 +44,7 @@ abstractPlotParser
   }
   get dataCode() {
     const {coreTable} = this.parent
-    return `d3.csvParse(\`${new TreeNode(coreTable).asCsv}\`, d3.autoType)`
+    return `d3.csvParse(\`${new Particle(coreTable).asCsv}\`, d3.autoType)`
   }
   get plotOptions() {
     return `{

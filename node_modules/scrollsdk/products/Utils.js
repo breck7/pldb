@@ -462,7 +462,7 @@ class Utils {
     return str
   }
   // todo: add seed!
-  static makeRandomTree(lines = 1000, seed = Date.now()) {
+  static makeRandomParticles(lines = 1000, seed = Date.now()) {
     let str = ""
     let letters = " 123abc".split("")
     const randFn = Utils._getPseudoRandom0to1FloatGenerator(seed)
@@ -544,33 +544,33 @@ class Utils {
   static makeSortByFn(accessorOrAccessors) {
     const arrayOfFns = Array.isArray(accessorOrAccessors) ? accessorOrAccessors : [accessorOrAccessors]
     return (objectA, objectB) => {
-      const nodeAFirst = -1
-      const nodeBFirst = 1
+      const particleAFirst = -1
+      const particleBFirst = 1
       const accessor = arrayOfFns[0] // todo: handle accessors
       const av = accessor(objectA)
       const bv = accessor(objectB)
-      let result = av < bv ? nodeAFirst : av > bv ? nodeBFirst : 0
-      if (av === undefined && bv !== undefined) result = nodeAFirst
-      else if (bv === undefined && av !== undefined) result = nodeBFirst
+      let result = av < bv ? particleAFirst : av > bv ? particleBFirst : 0
+      if (av === undefined && bv !== undefined) result = particleAFirst
+      else if (bv === undefined && av !== undefined) result = particleBFirst
       return result
     }
   }
   static _makeGraphSortFunctionFromGraph(idAccessor, graph) {
-    return (nodeA, nodeB) => {
-      const nodeAFirst = -1
-      const nodeBFirst = 1
-      const nodeAUniqueId = idAccessor(nodeA)
-      const nodeBUniqueId = idAccessor(nodeB)
-      const nodeAExtendsNodeB = graph[nodeAUniqueId].has(nodeBUniqueId)
-      const nodeBExtendsNodeA = graph[nodeBUniqueId].has(nodeAUniqueId)
-      if (nodeAExtendsNodeB) return nodeBFirst
-      else if (nodeBExtendsNodeA) return nodeAFirst
-      const nodeAExtendsSomething = graph[nodeAUniqueId].size > 1
-      const nodeBExtendsSomething = graph[nodeBUniqueId].size > 1
-      if (!nodeAExtendsSomething && nodeBExtendsSomething) return nodeAFirst
-      else if (!nodeBExtendsSomething && nodeAExtendsSomething) return nodeBFirst
-      if (nodeAUniqueId > nodeBUniqueId) return nodeBFirst
-      else if (nodeAUniqueId < nodeBUniqueId) return nodeAFirst
+    return (particleA, particleB) => {
+      const particleAFirst = -1
+      const particleBFirst = 1
+      const particleAUniqueId = idAccessor(particleA)
+      const particleBUniqueId = idAccessor(particleB)
+      const particleAExtendsParticleB = graph[particleAUniqueId].has(particleBUniqueId)
+      const particleBExtendsParticleA = graph[particleBUniqueId].has(particleAUniqueId)
+      if (particleAExtendsParticleB) return particleBFirst
+      else if (particleBExtendsParticleA) return particleAFirst
+      const particleAExtendsSomething = graph[particleAUniqueId].size > 1
+      const particleBExtendsSomething = graph[particleBUniqueId].size > 1
+      if (!particleAExtendsSomething && particleBExtendsSomething) return particleAFirst
+      else if (!particleBExtendsSomething && particleAExtendsSomething) return particleBFirst
+      if (particleAUniqueId > particleBUniqueId) return particleBFirst
+      else if (particleAUniqueId < particleBUniqueId) return particleAFirst
       return 0
     }
   }
@@ -578,34 +578,34 @@ class Utils {
     return str.split(needle).join("")
   }
   static _makeGraphSortFunction(idAccessor, extendsIdAccessor) {
-    return (nodeA, nodeB) => {
+    return (particleA, particleB) => {
       // -1 === a before b
-      const nodeAUniqueId = idAccessor(nodeA)
-      const nodeAExtends = extendsIdAccessor(nodeA)
-      const nodeBUniqueId = idAccessor(nodeB)
-      const nodeBExtends = extendsIdAccessor(nodeB)
-      const nodeAExtendsNodeB = nodeAExtends === nodeBUniqueId
-      const nodeBExtendsNodeA = nodeBExtends === nodeAUniqueId
-      const nodeAFirst = -1
-      const nodeBFirst = 1
-      if (!nodeAExtends && !nodeBExtends) {
+      const particleAUniqueId = idAccessor(particleA)
+      const particleAExtends = extendsIdAccessor(particleA)
+      const particleBUniqueId = idAccessor(particleB)
+      const particleBExtends = extendsIdAccessor(particleB)
+      const particleAExtendsParticleB = particleAExtends === particleBUniqueId
+      const particleBExtendsParticleA = particleBExtends === particleAUniqueId
+      const particleAFirst = -1
+      const particleBFirst = 1
+      if (!particleAExtends && !particleBExtends) {
         // If neither extends, sort by firstWord
-        if (nodeAUniqueId > nodeBUniqueId) return nodeBFirst
-        else if (nodeAUniqueId < nodeBUniqueId) return nodeAFirst
+        if (particleAUniqueId > particleBUniqueId) return particleBFirst
+        else if (particleAUniqueId < particleBUniqueId) return particleAFirst
         return 0
       }
       // If only one extends, the other comes first
-      else if (!nodeAExtends) return nodeAFirst
-      else if (!nodeBExtends) return nodeBFirst
+      else if (!particleAExtends) return particleAFirst
+      else if (!particleBExtends) return particleBFirst
       // If A extends B, B should come first
-      if (nodeAExtendsNodeB) return nodeBFirst
-      else if (nodeBExtendsNodeA) return nodeAFirst
+      if (particleAExtendsParticleB) return particleBFirst
+      else if (particleBExtendsParticleA) return particleAFirst
       // Sort by what they extend
-      if (nodeAExtends > nodeBExtends) return nodeBFirst
-      else if (nodeAExtends < nodeBExtends) return nodeAFirst
+      if (particleAExtends > particleBExtends) return particleBFirst
+      else if (particleAExtends < particleBExtends) return particleAFirst
       // Finally sort by firstWord
-      if (nodeAUniqueId > nodeBUniqueId) return nodeBFirst
-      else if (nodeAUniqueId < nodeBUniqueId) return nodeAFirst
+      if (particleAUniqueId > particleBUniqueId) return particleBFirst
+      else if (particleAUniqueId < particleBUniqueId) return particleAFirst
       // Should never hit this, unless we have a duplicate line.
       return 0
     }

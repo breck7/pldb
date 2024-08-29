@@ -28,5 +28,5 @@ viewSourceButtonParser
     return this.parent.file?.viewSourceUrl || ""
   }
   get style() {
-    return this.parent.findNodes("viewSourceButton")[0] === this ? "right:2rem;": "position:relative;"
+    return this.parent.findParticles("viewSourceButton")[0] === this ? "right:2rem;": "position:relative;"
   }

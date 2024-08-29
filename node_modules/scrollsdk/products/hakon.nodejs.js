@@ -1,20 +1,20 @@
 #! /usr/bin/env node
 {
   const { Utils } = require("./Utils.js")
-  const { TreeNode } = require("./TreeNode.js")
+  const { Particle } = require("./Particle.js")
   const { HandParsersProgram } = require("./Parsers.js")
-  const { ParserBackedNode } = require("./Parsers.js")
+  const { ParserBackedParticle } = require("./Parsers.js")
 
-  class hakonParser extends ParserBackedNode {
+  class hakonParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(selectorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { comment: commentParser }), undefined)
+      return new Particle.ParserCombinator(selectorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { comment: commentParser }), undefined)
     }
     getSelector() {
       return ""
     }
     compile() {
       return this.topDownArray
-        .filter(node => node.isSelectorParser)
+        .filter(particle => particle.isSelectorParser)
         .map(child => child.compile())
         .join("")
     }
@@ -61,7 +61,7 @@ hakonParser
   }
   compile() {
    return this.topDownArray
-    .filter(node => node.isSelectorParser)
+    .filter(particle => particle.isSelectorParser)
     .map(child => child.compile())
     .join("")
   }
@@ -113,7 +113,7 @@ selectorParser
     .join(",")
   }
   compile() {
-   const propertyParsers = this.getChildren().filter(node => node.doesExtend("propertyParser"))
+   const propertyParsers = this.getChildren().filter(particle => particle.doesExtend("propertyParser"))
    if (!propertyParsers.length) return ""
    const spaces = "  "
    return \`\${this.getSelector()} {
@@ -127,9 +127,9 @@ selectorParser
     static rootParser = hakonParser
   }
 
-  class propertyParser extends ParserBackedNode {
+  class propertyParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(errorParser, undefined, undefined)
+      return new Particle.ParserCombinator(errorParser, undefined, undefined)
     }
     get propertyKeywordCell() {
       return this.getWord(0)
@@ -150,9 +150,9 @@ selectorParser
     }
   }
 
-  class errorParser extends ParserBackedNode {
+  class errorParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(errorParser, undefined, undefined)
+      return new Particle.ParserCombinator(errorParser, undefined, undefined)
     }
     getErrors() {
       return this._getErrorParserErrors()
@@ -162,9 +162,9 @@ selectorParser
     }
   }
 
-  class commentParser extends ParserBackedNode {
+  class commentParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(commentParser, undefined, undefined)
+      return new Particle.ParserCombinator(commentParser, undefined, undefined)
     }
     get commentKeywordCell() {
       return this.getWord(0)
@@ -174,9 +174,9 @@ selectorParser
     }
   }
 
-  class selectorParser extends ParserBackedNode {
+  class selectorParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new TreeNode.ParserCombinator(
+      return new Particle.ParserCombinator(
         selectorParser,
         Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
           "border-bottom-right-radius": propertyParser,
@@ -412,7 +412,7 @@ selectorParser
         .join(",")
     }
     compile() {
-      const propertyParsers = this.getChildren().filter(node => node.doesExtend("propertyParser"))
+      const propertyParsers = this.getChildren().filter(particle => particle.doesExtend("propertyParser"))
       if (!propertyParsers.length) return ""
       const spaces = "  "
       return `${this.getSelector()} {
@@ -424,5 +424,5 @@ ${propertyParsers.map(child => child.compile(spaces)).join("\n")}
   module.exports = hakonParser
   hakonParser
 
-  if (!module.parent) new hakonParser(TreeNode.fromDisk(process.argv[2]).toString()).execute()
+  if (!module.parent) new hakonParser(Particle.fromDisk(process.argv[2]).toString()).execute()
 }

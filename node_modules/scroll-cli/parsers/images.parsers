@@ -12,7 +12,7 @@ abstractCaptionedParser
  cruxFromId
  javascript
   compile(compileSettings) {
-   const caption = this.getNode("caption")
+   const caption = this.getParticle("caption")
    const captionFig = caption ? `<figcaption>${caption.compile()}</figcaption>` : ""
    const {figureWidth} = this
    const widthStyle = figureWidth ? `width:${figureWidth}px; margin: auto;` : ""
@@ -81,6 +81,6 @@ imageParser
    return `<a href="${clickLink}" target="${target}" ${className} ${id}><img src="${linkRelativeToCompileTarget}" ${dimensionAttributes}loading="lazy"></a>`
   }
   compileTxt() {
-    const children = this.filter(node => node.compileTxt).map(node => node.compileTxt()).filter(i => i).join("\n")
+    const children = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
     return  "[Image Omitted]" + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
   }

@@ -1,5 +1,5 @@
 const { Utils } = require("../products/Utils.js")
-const { TreeNode } = require("../products/TreeNode.js")
+const { Particle } = require("../products/Particle.js")
 class TestRacerTestBlock {
   constructor(testFile, testName, fn) {
     this._parentFile = testFile
@@ -28,9 +28,9 @@ class TestRacerTestBlock {
         "0",
         `Should not have uncaught errors but in ${this._testName} got error:
  toString:
-  ${new TreeNode(err.toString()).toString(2)}
+  ${new Particle(err.toString()).toString(2)}
  stack:
-  ${new TreeNode(err.stack).toString(2)}`
+  ${new Particle(err.stack).toString(2)}`
       ])
     }
     failures.length ? this._emitBlockFailedMessage(failures) : this._emitBlockPassedMessage(passes)
@@ -52,22 +52,22 @@ class TestRacerTestBlock {
         .map(failure => {
           const actualVal = failure[0] === undefined ? "undefined" : failure[0].toString()
           const expectedVal = failure[1] === undefined ? "undefined" : failure[1].toString()
-          const actual = new TreeNode(`actual\n${new TreeNode(actualVal).toString(1)}`)
-          const expected = new TreeNode(`expected\n${new TreeNode(expectedVal.toString()).toString(1)}`)
+          const actual = new Particle(`actual\n${new Particle(actualVal).toString(1)}`)
+          const expected = new Particle(`expected\n${new Particle(expectedVal.toString()).toString(1)}`)
           const comparison = actual.toComparison(expected)
-          return new TreeNode(` assertion ${failure[2]}\n${comparison.toSideBySide([actual, expected]).toString(2)}`)
+          return new Particle(` assertion ${failure[2]}\n${comparison.toSideBySide([actual, expected]).toString(2)}`)
         })
         .join("\n")
     )
   }
 }
 class TestRacerFile {
-  constructor(runner, testTree, fileName) {
+  constructor(runner, testParticles, fileName) {
     this._runner = runner
-    this._testTree = {}
+    this._testParticles = {}
     this._fileName = fileName
-    Object.keys(testTree).forEach(key => {
-      this._testTree[key] = new TestRacerTestBlock(this, key, testTree[key])
+    Object.keys(testParticles).forEach(key => {
+      this._testParticles[key] = new TestRacerTestBlock(this, key, testParticles[key])
     })
   }
   getRunner() {
@@ -77,11 +77,11 @@ class TestRacerFile {
     return this._fileName
   }
   get length() {
-    return Object.values(this._testTree).length
+    return Object.values(this._testParticles).length
   }
   get skippedTestBlockNames() {
     const testsToRun = this._filterSkippedTestBlocks()
-    return Object.keys(this._testTree).filter(blockName => !testsToRun.includes(blockName))
+    return Object.keys(this._testParticles).filter(blockName => !testsToRun.includes(blockName))
   }
   _emitMessage(message) {
     this.getRunner()._emitMessage(message)
@@ -89,9 +89,9 @@ class TestRacerFile {
   _filterSkippedTestBlocks() {
     // _ prefix = run on these tests block
     // $ prefix = skip this test
-    const runOnlyTheseTestBlocks = Object.keys(this._testTree).filter(key => key.startsWith("_"))
+    const runOnlyTheseTestBlocks = Object.keys(this._testParticles).filter(key => key.startsWith("_"))
     if (runOnlyTheseTestBlocks.length) return runOnlyTheseTestBlocks
-    return Object.keys(this._testTree).filter(key => !key.startsWith("$"))
+    return Object.keys(this._testParticles).filter(key => !key.startsWith("$"))
   }
   async execute() {
     const testBlockNames = this._filterSkippedTestBlocks()
@@ -99,7 +99,7 @@ class TestRacerFile {
     const fileTimer = new Utils.Timer()
     const blockResults = {}
     const blockPromises = testBlockNames.map(async testName => {
-      const results = await this._testTree[testName].execute()
+      const results = await this._testParticles[testName].execute()
       blockResults[testName] = results
     })
     await Promise.all(blockPromises)
@@ -142,7 +142,7 @@ class TestRacerFile {
   }
 }
 class TestRacer {
-  constructor(fileTestTree) {
+  constructor(fileTestParticles) {
     this._logFunction = console.log
     this._timer = new Utils.Timer()
     this._sessionFilesPassed = 0
@@ -151,9 +151,9 @@ class TestRacer {
     this._sessionBlocksPassed = 0
     this._sessionAssertionsFailed = 0
     this._sessionAssertionsPassed = 0
-    this._fileTestTree = {}
-    Object.keys(fileTestTree).forEach(fileName => {
-      this._fileTestTree[fileName] = new TestRacerFile(this, fileTestTree[fileName], fileName)
+    this._fileTestParticles = {}
+    Object.keys(fileTestParticles).forEach(fileName => {
+      this._fileTestParticles[fileName] = new TestRacerFile(this, fileTestParticles[fileName], fileName)
     })
   }
   setLogFunction(logFunction) {
@@ -180,7 +180,7 @@ class TestRacer {
   }
   async execute() {
     this._emitSessionPlanMessage()
-    const proms = Object.values(this._fileTestTree).map(async testFile => {
+    const proms = Object.values(this._fileTestParticles).map(async testFile => {
       const results = await testFile.execute()
       this._addFileResultsToSessionResults(results, testFile.getFileName())
     })
@@ -195,16 +195,16 @@ class TestRacer {
     return message
   }
   get length() {
-    return Object.values(this._fileTestTree).length
+    return Object.values(this._fileTestParticles).length
   }
   _emitSessionPlanMessage() {
     let blocks = 0
-    Object.values(this._fileTestTree).forEach(value => (blocks += value.length))
+    Object.values(this._fileTestParticles).forEach(value => (blocks += value.length))
     this._emitMessage(`${this.length} files and ${blocks} blocks to run. ${this._getSkippedBlockNames().length} skipped blocks.`)
   }
   _getSkippedBlockNames() {
     const skippedBlocks = []
-    Object.values(this._fileTestTree).forEach(file => {
+    Object.values(this._fileTestParticles).forEach(file => {
       file.skippedTestBlockNames.forEach(blockName => {
         skippedBlocks.push(blockName)
       })
@@ -215,7 +215,7 @@ class TestRacer {
     if (!Object.keys(this._sessionFilesFailed).length) return ""
     return `
  failures
-${new TreeNode(this._sessionFilesFailed).forEach(row => row.forEach(line => line.deleteWordAt(0))).toString(2)}`
+${new Particle(this._sessionFilesFailed).forEach(row => row.forEach(line => line.deleteWordAt(0))).toString(2)}`
   }
   _emitSessionFinishMessage() {
     const skipped = this._getSkippedBlockNames()
@@ -235,9 +235,9 @@ ${new TreeNode(this._sessionFilesFailed).forEach(row => row.forEach(line => line
   ${this._sessionAssertionsFailed} assertions${this._getFailures()}`)
     )
   }
-  static async testSingleFile(fileName, testTree) {
+  static async testSingleFile(fileName, testParticles) {
     const obj = {}
-    obj[fileName] = testTree
+    obj[fileName] = testParticles
     const session = new TestRacer(obj)
     await session.execute()
     session.finish()

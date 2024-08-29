@@ -50,7 +50,7 @@ linkParser
   get link() {
    const {baseLink} = this
    if (this.has("program"))
-     return baseLink + this.getNode("program").encoded
+     return baseLink + this.getParticle("program").encoded
    return baseLink
   }
   get baseLink() {
@@ -64,8 +64,8 @@ linkParser
    const attrs = [`href="${this.link}"`]
    const options = ["title", "target"]
    options.forEach(option => {
-    const node = this.getNode(option)
-    if (node) attrs.push(`${option}="${node.content}"`)
+    const particle = this.getParticle(option)
+    if (particle) attrs.push(`${option}="${particle.content}"`)
    })
    return attrs
   }

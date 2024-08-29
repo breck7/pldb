@@ -36,7 +36,7 @@ inlineMarkupsOnParser
     if (this.content)
       return markups.filter(markup => this.content.includes(markup.name))
     if (root.has("inlineMarkups")) {
-      root.getNode("inlineMarkups").forEach(markup => {
+      root.getParticle("inlineMarkups").forEach(markup => {
         const delimiter = markup.getWord(0)
         const tag = markup.getWord(1)
         // todo: add support for providing custom functions for inline markups?

@@ -11,10 +11,10 @@ printAuthorsParser
   printAuthors
  javascript
   compile() {
-   return this.parent.getNode("authors")?.compileHtmlForPrint()
+   return this.parent.getParticle("authors")?.compileHtmlForPrint()
   }
   compileTxt() {
-    return this.parent.getNode("authors")?.compileTxtForPrint()
+    return this.parent.getParticle("authors")?.compileTxtForPrint()
   }
 
 authorsParser

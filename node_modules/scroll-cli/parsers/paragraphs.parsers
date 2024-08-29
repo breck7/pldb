@@ -16,8 +16,8 @@ paragraphParser
    return compiled
   }
   compileTxt() {
-    const children = this.filter(node => node.compileTxt).map(node => node.compileTxt()).filter(i => i).join("\n")
-    const dateline = this.getNode("dateline")
+    const children = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
+    const dateline = this.getParticle("dateline")
     return (dateline ? dateline.day + "\n\n" : "") + (this.originalText || "") + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
   }
 
@@ -34,7 +34,7 @@ abstractIndentableParagraphParser
  inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser abstractIndentableParagraphParser
  javascript
   compileChildren() {
-    return this.map(node => node.compile())
+    return this.map(particle => particle.compile())
      .join("\n")
      .trim()
   }

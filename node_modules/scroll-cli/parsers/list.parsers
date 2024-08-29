@@ -10,9 +10,9 @@ listAftertextParser
   compile() {
    const index = this.getIndex()
    const parent = this.parent
-   const nodeClass = this.constructor
-   const isStartOfList = index === 0 || !(parent.nodeAt(index - 1) instanceof nodeClass)
-   const isEndOfList = parent.length === index + 1 || !(parent.nodeAt(index + 1) instanceof nodeClass)
+   const particleClass = this.constructor
+   const isStartOfList = index === 0 || !(parent.particleAt(index - 1) instanceof particleClass)
+   const isEndOfList = parent.length === index + 1 || !(parent.particleAt(index + 1) instanceof particleClass)
    const { listType } = this
    return (isStartOfList ? `<${listType} ${this.attributes}>` : "") + `${super.compile()}` + (isEndOfList ? `</${listType}>` : "")
   }

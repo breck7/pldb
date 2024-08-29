@@ -11,12 +11,12 @@ printSearchTableParser
    const files = this.files
    const data = files.map(file => file.file.toSearchTsvRow(file.relativePath)).join("\n")
    // A hacky but simple way to do this for now.
-     const node = this.appendSibling("table")
-    node.appendLine("delimiter 	")
-    node.appendLine("printTable")
-    const dataNode = node.appendLine("data")
-    dataNode.setChildren("title titleLink text date wordCount minutes".replace(/ /g, "\t") + "\n" + data)
-   const html = node.compile()
-   node.destroy()
+     const particle = this.appendSibling("table")
+    particle.appendLine("delimiter 	")
+    particle.appendLine("printTable")
+    const dataParticle = particle.appendLine("data")
+    dataParticle.setChildren("title titleLink text date wordCount minutes".replace(/ /g, "\t") + "\n" + data)
+   const html = particle.compile()
+   particle.destroy()
    return html
   }

@@ -15,16 +15,16 @@ heatrixParser
  javascript
   compile() {
    // A hacky but simple way to do this for now.
-   const advanced = new TreeNode("heatrixAdvanced")
+   const advanced = new Particle("heatrixAdvanced")
    advanced.appendLineAndChildren("table", "\n " + this.tableData.replace(/\n/g, "\n "))
-   const node = this.appendSibling("heatrixAdvanced", advanced.childrenToString())
-   const html = node.compile()
-   node.destroy()
+   const particle = this.appendSibling("heatrixAdvanced", advanced.childrenToString())
+   const html = particle.compile()
+   particle.destroy()
    return html
   }
   get tableData() {
     const {coreTable} = this.parent
-    return coreTable ? new TreeNode(coreTable).asSsv : this.childrenToString()
+    return coreTable ? new Particle(coreTable).asSsv : this.childrenToString()
   }
 
 heatrixAdvancedParser
@@ -51,8 +51,8 @@ heatrixAdvancedParser
     uid = Heatrix.HeatrixId++
     constructor(program) {
       const isDirective = word => /^(f|l|w|h)\d+$/.test(word) || word === "right" || word === "left" || word.startsWith("http://") || word.startsWith("https://") || word.endsWith(".html")
-      const tree = new TreeNode(program)
-      this.program = tree
+      const particle = new Particle(program)
+      this.program = particle
       const generateColorBinningString = (data, colors) => {
        const sortedData = [...data].sort((a, b) => a - b);
        const n = sortedData.length;
@@ -78,8 +78,8 @@ heatrixAdvancedParser
         numbers.unshift(0)
         return generateColorBinningString(numbers, colors);
       }
-      const table = tree.getNode("table").childrenToString()
-      const scale = tree.getNode("scale")?.childrenToString() || buildScale(table)
+      const table = particle.getParticle("table").childrenToString()
+      const scale = particle.getParticle("scale")?.childrenToString() || buildScale(table)
       const thresholds = []
       const colors = []
       scale.split("\n").map((line) => {

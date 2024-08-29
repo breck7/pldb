@@ -2072,14 +2072,14 @@ var autocompleteJs = [
     "url": "/concepts/slope.html"
   },
   {
-    "label": "TLA+",
-    "id": "tla",
-    "url": "/concepts/tla.html"
-  },
-  {
     "label": "GLSL",
     "id": "glsl",
     "url": "/concepts/glsl.html"
+  },
+  {
+    "label": "TLA+",
+    "id": "tla",
+    "url": "/concepts/tla.html"
   },
   {
     "label": "JAI",
@@ -2202,14 +2202,14 @@ var autocompleteJs = [
     "url": "/concepts/common-workflow-language.html"
   },
   {
-    "label": "LOLCODE",
-    "id": "lolcode",
-    "url": "/concepts/lolcode.html"
-  },
-  {
     "label": "Drupal",
     "id": "drupal",
     "url": "/concepts/drupal.html"
+  },
+  {
+    "label": "LOLCODE",
+    "id": "lolcode",
+    "url": "/concepts/lolcode.html"
   },
   {
     "label": "datascript",
@@ -2387,6 +2387,11 @@ var autocompleteJs = [
     "url": "/concepts/codeql.html"
   },
   {
+    "label": "Particle Notation",
+    "id": "particlenotation",
+    "url": "/concepts/particlenotation.html"
+  },
+  {
     "label": "CIL",
     "id": "cil",
     "url": "/concepts/cil.html"
@@ -2440,11 +2445,6 @@ var autocompleteJs = [
     "label": "docopt",
     "id": "docopt",
     "url": "/concepts/docopt.html"
-  },
-  {
-    "label": "Scroll Notation",
-    "id": "scrollnotation",
-    "url": "/concepts/scrollnotation.html"
   },
   {
     "label": "Dylan",
@@ -2667,11 +2667,6 @@ var autocompleteJs = [
     "url": "/concepts/skulpt.html"
   },
   {
-    "label": "Gnuplot",
-    "id": "gnuplot",
-    "url": "/concepts/gnuplot.html"
-  },
-  {
     "label": "xBase",
     "id": "xbase",
     "url": "/concepts/xbase.html"
@@ -2680,6 +2675,11 @@ var autocompleteJs = [
     "label": "packagist-pm",
     "id": "packagist-pm",
     "url": "/concepts/packagist-pm.html"
+  },
+  {
+    "label": "Gnuplot",
+    "id": "gnuplot",
+    "url": "/concepts/gnuplot.html"
   },
   {
     "label": "ActivityPub",
@@ -3302,14 +3302,14 @@ var autocompleteJs = [
     "url": "/concepts/lamdu-editor.html"
   },
   {
-    "label": "LiveCode",
-    "id": "livecode",
-    "url": "/concepts/livecode.html"
-  },
-  {
     "label": "S",
     "id": "s",
     "url": "/concepts/s.html"
+  },
+  {
+    "label": "LiveCode",
+    "id": "livecode",
+    "url": "/concepts/livecode.html"
   },
   {
     "label": "Euphoria",
@@ -3677,14 +3677,14 @@ var autocompleteJs = [
     "url": "/concepts/bend.html"
   },
   {
-    "label": "Classroom Object Oriented Language",
-    "id": "cool",
-    "url": "/concepts/cool.html"
-  },
-  {
     "label": "Secure Scuttlebutt",
     "id": "ssb",
     "url": "/concepts/ssb.html"
+  },
+  {
+    "label": "Classroom Object Oriented Language",
+    "id": "cool",
+    "url": "/concepts/cool.html"
   },
   {
     "label": "Croc",
@@ -4272,14 +4272,14 @@ var autocompleteJs = [
     "url": "/concepts/homa.html"
   },
   {
-    "label": "UNLAMBDA",
-    "id": "unlambda",
-    "url": "/concepts/unlambda.html"
-  },
-  {
     "label": "AXIOM",
     "id": "axiom",
     "url": "/concepts/axiom.html"
+  },
+  {
+    "label": "UNLAMBDA",
+    "id": "unlambda",
+    "url": "/concepts/unlambda.html"
   },
   {
     "label": "DIAGRAM",
@@ -4557,11 +4557,6 @@ var autocompleteJs = [
     "url": "/concepts/cwerg.html"
   },
   {
-    "label": "Rockstar",
-    "id": "rockstar",
-    "url": "/concepts/rockstar.html"
-  },
-  {
     "label": "Cranelift",
     "id": "cranelift-ir",
     "url": "/concepts/cranelift-ir.html"
@@ -4570,6 +4565,11 @@ var autocompleteJs = [
     "label": "Karel",
     "id": "karel",
     "url": "/concepts/karel.html"
+  },
+  {
+    "label": "Rockstar",
+    "id": "rockstar",
+    "url": "/concepts/rockstar.html"
   },
   {
     "label": "VLC",
@@ -7907,14 +7907,14 @@ var autocompleteJs = [
     "url": "/concepts/draco-programming-language.html"
   },
   {
-    "label": "Crap",
-    "id": "crap",
-    "url": "/concepts/crap.html"
-  },
-  {
     "label": "jsparagus",
     "id": "jsparagus",
     "url": "/concepts/jsparagus.html"
+  },
+  {
+    "label": "Crap",
+    "id": "crap",
+    "url": "/concepts/crap.html"
   },
   {
     "label": "BBCode",

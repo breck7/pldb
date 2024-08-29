@@ -17,13 +17,13 @@ printUsageStatsParser
   }
   compile() {
     // A hacky but simple way to do this for now.
-   const node = this.appendSibling("table")
-   node.appendLine("delimiter  ")
-   node.appendLine("printTable")
-   const dataNode = node.appendLine("data")
-    dataNode.setChildren(this.stats)
-   const html = node.compile()
-   node.destroy()
+   const particle = this.appendSibling("table")
+   particle.appendLine("delimiter  ")
+   particle.appendLine("printTable")
+   const dataParticle = particle.appendLine("data")
+    dataParticle.setChildren(this.stats)
+   const html = particle.compile()
+   particle.destroy()
    return html
   }
   compileTxt() {
@@ -53,8 +53,8 @@ printScrollLeetSheetParser
     return clone
   }
   sortDocs(docs) {
-    return docs.map(node => {
-      const {definition} = node
+    return docs.map(particle => {
+      const {definition} = particle
       const {id, description, isPopular, examples, popularity} = definition
       const tags = definition.get("tags") || ""
       if (tags.includes("deprecate") || tags.includes("experimental"))
@@ -65,12 +65,12 @@ printScrollLeetSheetParser
      }).filter(i => i).sort((a, b) => a.id.localeCompare(b.id))
   }
   makeLink(examples, crux) {
-    // if (!examples.length) console.log(crux) // find nodes that need docs
+    // if (!examples.length) console.log(crux) // find particles that need docs
     const example = examples.length ? examples[0].childrenToString() : crux
     const base = `https://try.scroll.pub/`
-    const tree = new TreeNode()
-    tree.appendLineAndChildren("scroll", "gazetteCss\n" + example)
-    return base + "#" + encodeURIComponent(tree.asString)
+    const particle = new Particle()
+    particle.appendLineAndChildren("scroll", "gazetteCss\n" + example)
+    return base + "#" + encodeURIComponent(particle.asString)
   }
   docToHtml(doc) {
    const css = `#scrollLeetSheet {color: grey;} #scrollLeetSheet a {color: #3498db; }`
@@ -102,7 +102,7 @@ printScrollLeetSheetParser
         category
       }
     })
-    return new TreeNode(this.lodash.sortBy(rows, "isPopular")).asCsv
+    return new Particle(this.lodash.sortBy(rows, "isPopular")).asCsv
   }
 
 printparsersLeetSheetParser
@@ -127,21 +127,21 @@ printparsersLeetSheetParser
   get cellParsersToDocument() {
     const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
     const clone = new parsersParser("anyCell\n ").clone()
-    const parserNode = clone.getNode("anyCell")
+    const parserParticle = clone.getParticle("anyCell")
     const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
     words.sort()
-    parserNode.setChildren(words.join("\n"))
-    return parserNode
+    parserParticle.setChildren(words.join("\n"))
+    return parserParticle
   }
   get parsersToDocument() {
     const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
     const clone = new parsersParser("latinParser\n ").clone()
-    const parserNode = clone.getNode("latinParser")
+    const parserParticle = clone.getParticle("latinParser")
     const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
     words.sort()
-    parserNode.setChildren(words.join("\n"))
+    parserParticle.setChildren(words.join("\n"))
     clone.appendLine("myParser")
     clone.appendLine("myCell")
-    return parserNode
+    return parserParticle
   }
 

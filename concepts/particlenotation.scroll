@@ -1,13 +1,14 @@
 import ../code/conceptPage.scroll
 
-id scrollnotation
-name Scroll Notation
+id particlenotation
+name Particle Notation
 appeared 2017
 creators Breck Yunits
 tags dataNotation
 website https://notation.scroll.pub
 latestVersion 78.0.0
 oldName Tree Notation
+oldName Scroll Notation
 webRepl https://sdk.scroll.pub/sandbox/
 description A minimalist notation consisting of just the word break rule, line break rule, and the off-side rule.
 writtenIn javascript typescript html json svg css yaml xml markdown

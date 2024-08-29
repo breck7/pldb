@@ -12,12 +12,12 @@ oldName Grammar
 webRepl https://sdk.scroll.pub/designer/
 roadmap https://sdk.scroll.pub/langs/parsers/
 description Parsers is a language for building on top of Scroll Notation. A compiler compiler. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Parsers uses both postfix and prefix language features.
-writtenIn scrollnotation javascript typescript html json svg css yaml markdown
+writtenIn particlenotation javascript typescript html json svg css yaml markdown
 
 isPublicDomain true
 isOpenSource true
-subsetOf scrollnotation
-related scrollnotation antlr
+subsetOf particlenotation
+related particlenotation antlr
 influencedBy antlr yacc ebnf bnf
 repoStats
  firstCommit 2017

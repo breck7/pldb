@@ -32,7 +32,7 @@ stampFolderParser
    const newPath = path.join(parentDir, this.getLine())
    this.root.file.log(`Creating folder ${newPath}`)
    fs.mkdirSync(newPath, {recursive: true})
-   this.forEach(node => node.build(newPath))
+   this.forEach(particle => particle.build(newPath))
   }
 
 stampParser
@@ -56,5 +56,5 @@ stampParser
  javascript
   build() {
     const dir = this.root.file.folderPath
-    this.forEach(node => node.build(dir))
+    this.forEach(particle => particle.build(dir))
   }

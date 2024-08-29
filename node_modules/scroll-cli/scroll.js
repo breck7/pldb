@@ -8,10 +8,10 @@ const lodash = require("lodash")
 const dayjs = require("dayjs")
 
 // Scroll Notation Includes
-const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Particle } = require("scrollsdk/products/Particle.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
-const { TreeFileSystem } = require("scrollsdk/products/TreeFileSystem.js")
+const { ParticleFileSystem } = require("scrollsdk/products/ParticleFileSystem.js")
 const stumpParser = require("scrollsdk/products/stump.nodejs.js")
 const packageJson = require("./package.json")
 
@@ -61,7 +61,7 @@ const makeLodashOrderByParams = str => {
   return [part1.map(col => col.replace(/^\-/, "")), part2]
 }
 
-class ScrollFileSystem extends TreeFileSystem {
+class ScrollFileSystem extends ParticleFileSystem {
   getScrollFile(filePath) {
     return this._getParsedFile(filePath, ScrollFile)
   }
@@ -72,7 +72,7 @@ class ScrollFileSystem extends TreeFileSystem {
     return this.write(absolutePath, content)
   }
 
-  parsedFiles = {} // Files parsed by a Tree Language Root Parser
+  parsedFiles = {}
   _getParsedFile(absolutePath, parser) {
     if (this.parsedFiles[absolutePath]) return this.parsedFiles[absolutePath]
     this.parsedFiles[absolutePath] = new parser(undefined, absolutePath, this)
@@ -96,7 +96,7 @@ class ScrollFileSystem extends TreeFileSystem {
 
 const removeBlanks = data => data.map(obj => Object.fromEntries(Object.entries(obj).filter(([_, value]) => value !== "")))
 const escapeCommas = str => (typeof str === "string" && str.includes(",") ? `"${str}"` : str)
-const defaultScrollParser = new TreeFileSystem().getParser(Disk.getFiles(path.join(__dirname, "parsers")).filter(file => file.endsWith(PARSERS_FILE_EXTENSION)))
+const defaultScrollParser = new ParticleFileSystem().getParser(Disk.getFiles(path.join(__dirname, "parsers")).filter(file => file.endsWith(PARSERS_FILE_EXTENSION)))
 const DefaultScrollParser = defaultScrollParser.parser // todo: remove?
 
 // todo: tags is currently matching partial substrings
@@ -110,35 +110,35 @@ const parseMeasures = parser => {
     Array.from(
       new Set(
         parser.cachedHandParsersProgramRoot // is there a better method name than this?
-          .filter(node => node.getLine().endsWith("Parser") && !node.getLine().startsWith("abstract"))
-          .map(node => node.get("crux") || node.getLine())
+          .filter(particle => particle.getLine().endsWith("Parser") && !particle.getLine().startsWith("abstract"))
+          .map(particle => particle.get("crux") || particle.getLine())
           .map(line => line.replace("Parser", ""))
       )
     ).join("\n")
   )
-  // Delete any nodes that are not measures
-  dummyProgram.filter(node => !node.isMeasure).forEach(node => node.destroy())
-  dummyProgram.forEach(node => {
+  // Delete any particles that are not measures
+  dummyProgram.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  dummyProgram.forEach(particle => {
     // add nested measures
-    Object.keys(node.definition.firstWordMapWithDefinitions).forEach(key => node.appendLine(key))
+    Object.keys(particle.definition.firstWordMapWithDefinitions).forEach(key => particle.appendLine(key))
   })
-  // Delete any nested nodes that are not measures
-  dummyProgram.topDownArray.filter(node => !node.isMeasure).forEach(node => node.destroy())
-  const measures = dummyProgram.topDownArray.map(node => {
+  // Delete any nested particles that are not measures
+  dummyProgram.topDownArray.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  const measures = dummyProgram.topDownArray.map(particle => {
     return {
-      Name: node.measureName,
+      Name: particle.measureName,
       Values: 0,
       Coverage: 0,
-      Question: node.definition.description,
+      Question: particle.definition.description,
       Example: "",
       Type: "",
-      Source: node.sourceDomain,
-      //Definition: parsedProgram.root.file.filename + ":" + node.lineNumber
-      SortIndex: node.sortIndex,
-      IsComputed: node.isComputed,
-      IsRequired: node.isMeasureRequired,
-      IsConceptDelimiter: node.isConceptDelimiter,
-      Crux: node.definition.get("crux")
+      Source: particle.sourceDomain,
+      //Definition: parsedProgram.root.file.filename + ":" + particle.lineNumber
+      SortIndex: particle.sortIndex,
+      IsComputed: particle.isComputed,
+      IsRequired: particle.isMeasureRequired,
+      IsConceptDelimiter: particle.isConceptDelimiter,
+      Crux: particle.definition.get("crux")
     }
   })
   measureCache.set(parser, lodash.sortBy(measures, "SortIndex"))
@@ -148,12 +148,12 @@ const parseMeasures = parser => {
 const getConcepts = parsed => {
   const concepts = []
   let currentConcept
-  parsed.forEach(node => {
-    if (node.isConceptDelimiter) {
+  parsed.forEach(particle => {
+    if (particle.isConceptDelimiter) {
       if (currentConcept) concepts.push(currentConcept)
       currentConcept = []
     }
-    if (currentConcept && node.isMeasure) currentConcept.push(node)
+    if (currentConcept && particle.isMeasure) currentConcept.push(particle)
   })
   if (currentConcept) concepts.push(currentConcept)
   return concepts
@@ -183,16 +183,16 @@ const measureFnCache = {}
 const computeMeasure = (parsedProgram, measureName, concept, concepts) => {
   if (!measureFnCache[measureName]) {
     // a bit hacky but works??
-    const node = parsedProgram.appendLine(measureName)
-    measureFnCache[measureName] = node.computeValue
-    node.destroy()
+    const particle = parsedProgram.appendLine(measureName)
+    measureFnCache[measureName] = particle.computeValue
+    particle.destroy()
   }
   return measureFnCache[measureName](concept, measureName, parsedProgram, concepts)
 }
 
 const parseConcepts = (parsedProgram, measures) => {
   // Todo: might be a perf/memory/simplicity win to have a "segment" method in ScrollSDK, where you could
-  // virtually split a ScrollNode into multiple segments, and then query on those segments.
+  // virtually split a Particle into multiple segments, and then query on those segments.
   // So we would "segment" on "id ", and then not need to create a bunch of new objects, and the original
   // already parsed lines could then learn about/access to their respective segments.
   const conceptDelimiter = measures.filter(measure => measure.IsConceptDelimiter)[0]
@@ -204,7 +204,7 @@ const parseConcepts = (parsedProgram, measures) => {
     measures.forEach(measure => {
       const measureName = measure.Name
       const measureKey = measure.Crux || measureName.replace(/_/g, " ")
-      if (!measure.IsComputed) row[measureName] = concept.getNode(measureKey)?.measureValue ?? ""
+      if (!measure.IsComputed) row[measureName] = concept.getParticle(measureKey)?.measureValue ?? ""
       else row[measureName] = computeMeasure(parsedProgram, measureName, concept, concepts)
     })
     return row
@@ -317,7 +317,7 @@ class ScrollFile {
   }
 
   get parserIds() {
-    return this.scrollProgram.topDownArray.map(node => node.definition.id)
+    return this.scrollProgram.topDownArray.map(particle => particle.definition.id)
   }
 
   _concepts
@@ -335,7 +335,7 @@ class ScrollFile {
   }
 
   get tables() {
-    return this.scrollProgram.filter(node => node.isTabularData && node.isFirst)
+    return this.scrollProgram.filter(particle => particle.isTabularData && particle.isFirst)
   }
 
   _formatConcepts(parsed) {
@@ -347,19 +347,19 @@ class ScrollFile {
       let currentSection
       const newCode = lodash
         .sortBy(concept, ["sortIndex"])
-        .map(node => {
+        .map(particle => {
           let newLines = ""
-          const section = node.sortIndex.toString().split(".")[0]
+          const section = particle.sortIndex.toString().split(".")[0]
           if (section !== currentSection) {
             currentSection = section
             newLines = "\n"
           }
-          return newLines + node.toString()
+          return newLines + particle.toString()
         })
         .join("\n")
 
-      concept.forEach((node, index) => (index ? node.destroy() : ""))
-      concept[0].replaceNode(() => newCode)
+      concept.forEach((particle, index) => (index ? particle.destroy() : ""))
+      concept[0].replaceParticle(() => newCode)
     })
   }
 
@@ -377,14 +377,14 @@ class ScrollFile {
     let topMatter = []
     let importOnly = ""
     parsed
-      .filter(node => node.isTopMatter)
-      .forEach(node => {
-        if (node.getLine() === scrollKeywords.importOnly) {
-          importOnly = node.toString() + "\n" // Put importOnly first, if present
-          return node.destroy()
+      .filter(particle => particle.isTopMatter)
+      .forEach(particle => {
+        if (particle.getLine() === scrollKeywords.importOnly) {
+          importOnly = particle.toString() + "\n" // Put importOnly first, if present
+          return particle.destroy()
         }
-        topMatter.push(node.toString())
-        node.destroy()
+        topMatter.push(particle.toString())
+        particle.destroy()
       })
 
     this._formatConcepts(parsed)
@@ -406,8 +406,8 @@ class ScrollFile {
     if (format === "js") return `const ${parts[0]} = ` + JSON.stringify(removeBlanks(arr), null, 2)
     if (format === "csv") return arrayToCSV(arr)
     if (format === "tsv") return arrayToCSV(arr, "\t")
-    if (format === "tree") return tree.toString()
-    return tree.toString()
+    if (format === "particles") return particles.toString()
+    return particles.toString()
   }
 
   compileConcepts(filename = "csv", sortBy = "") {
@@ -433,17 +433,17 @@ class ScrollFile {
     // note: the 2 params above are not used in this method, but may be used in user eval code. (todo: cleanup)
     const regex = /^replace/gm
     if (!regex.test(code)) return code
-    const tree = new TreeNode(code) // todo: this can be faster. a more lightweight tree class?
+    const particle = new Particle(code) // todo: this can be faster. a more lightweight particle class?
     // Process macros
     const macroMap = {}
-    tree
-      .filter(node => {
-        const parserWord = node.firstWord
+    particle
+      .filter(particle => {
+        const parserWord = particle.firstWord
         return parserWord === scrollKeywords.replace || parserWord === scrollKeywords.replaceJs || parserWord === scrollKeywords.replaceNodejs
       })
-      .forEach(node => {
-        let value = node.length ? node.childrenToString() : node.getWordsFrom(2).join(" ")
-        const kind = node.firstWord
+      .forEach(particle => {
+        let value = particle.length ? particle.childrenToString() : particle.getWordsFrom(2).join(" ")
+        const kind = particle.firstWord
         if (kind === scrollKeywords.replaceJs) value = eval(value)
         if (kind === scrollKeywords.replaceNodejs) {
           const tempPath = this.filePath + ".js"
@@ -457,14 +457,14 @@ class ScrollFile {
           } finally {
             Disk.rm(tempPath)
           }
-        } else macroMap[node.getWord(1)] = value
-        node.destroy() // Destroy definitions after eval
+        } else macroMap[particle.getWord(1)] = value
+        particle.destroy() // Destroy definitions after eval
       })
 
     const keys = Object.keys(macroMap)
     if (!keys.length) return code
 
-    let codeAfterMacroSubstitution = tree.asString
+    let codeAfterMacroSubstitution = particle.asString
     // Todo: speed up. build a template?
     Object.keys(macroMap).forEach(key => (codeAfterMacroSubstitution = codeAfterMacroSubstitution.replace(new RegExp(key, "g"), macroMap[key])))
 
@@ -510,9 +510,9 @@ class ScrollFile {
   // Get the line number that the snippet should stop at.
   get endSnippetIndex() {
     // First if its hard coded, use that
-    if (this.scrollProgram.has(scrollKeywords.endSnippet)) return this.scrollProgram.getNode(scrollKeywords.endSnippet).getIndex()
+    if (this.scrollProgram.has(scrollKeywords.endSnippet)) return this.scrollProgram.getParticle(scrollKeywords.endSnippet).getIndex()
     // Next look for a dinkus
-    const snippetBreak = this.scrollProgram.find(node => node.isDinkus)
+    const snippetBreak = this.scrollProgram.find(particle => particle.isDinkus)
     if (snippetBreak) return snippetBreak.getIndex()
     return -1
   }
@@ -568,26 +568,25 @@ class ScrollFile {
     const openGraphImage = this.get(scrollKeywords.openGraphImage)
     if (openGraphImage !== undefined) return this.ensureAbsoluteLink(openGraphImage)
 
-    const images = this.scrollProgram.findNodes(scrollKeywords.image)
+    const images = this.scrollProgram.findParticles(scrollKeywords.image)
 
-    const hit = images.find(node => node.has(scrollKeywords.openGraph)) || this.scrollProgram.getNode(scrollKeywords.image)
+    const hit = images.find(particle => particle.has(scrollKeywords.openGraph)) || this.scrollProgram.getParticle(scrollKeywords.image)
 
     if (!hit) return ""
 
     return this.ensureAbsoluteLink(hit.content)
   }
 
-  // todo: add an openGraph node type to define this stuff manually
   // Use the first paragraph for the description
-  // todo: add a tree method version of get that gets you the first node. (actulaly make get return array?)
+  // todo: add a particle method version of get that gets you the first particle. (actulaly make get return array?)
   // would speed up a lot.
   get description() {
     const program = this.scrollProgram
     const description = program.get(scrollKeywords.description)
     if (description) return description
 
-    for (let node of program.getTopDownArrayIterator()) {
-      if (node.constructor.name !== "printTitleParser" && node.doesExtend("paragraphParser")) return Utils.stripHtml(node.compile()).replace(/\n/g, " ").replace(/\"/g, "'").substr(0, 300)
+    for (let particle of program.getTopDownArrayIterator()) {
+      if (particle.constructor.name !== "printTitleParser" && particle.doesExtend("paragraphParser")) return Utils.stripHtml(particle.compile()).replace(/\n/g, " ").replace(/\"/g, "'").substr(0, 300)
     }
     return ""
   }
@@ -679,10 +678,10 @@ class ScrollFile {
   get asTxt() {
     return (
       this.scrollProgram
-        .map(node => {
-          const text = node.compileTxt ? node.compileTxt() : ""
+        .map(particle => {
+          const text = particle.compileTxt ? particle.compileTxt() : ""
           if (text) return text + "\n"
-          if (!node.getLine().length) return "\n"
+          if (!particle.getLine().length) return "\n"
           return ""
         })
         .join("")
@@ -694,8 +693,8 @@ class ScrollFile {
 
   get asJs() {
     return this.scrollProgram.topDownArray
-      .filter(node => node.compileJs)
-      .map(node => node.compileJs())
+      .filter(particle => particle.compileJs)
+      .map(particle => particle.compileJs())
       .join("\n")
       .trim()
   }
@@ -710,22 +709,22 @@ class ScrollFile {
 
   get asCss() {
     return this.scrollProgram.topDownArray
-      .filter(node => node.compileCss)
-      .map(node => node.compileCss())
+      .filter(particle => particle.compileCss)
+      .map(particle => particle.compileCss())
       .join("\n")
       .trim()
   }
 
   get asCsv() {
     return this.scrollProgram.topDownArray
-      .filter(node => node.compileCsv)
-      .map(node => node.compileCsv())
+      .filter(particle => particle.compileCsv)
+      .map(particle => particle.compileCsv())
       .join("\n")
       .trim()
   }
 
   async build() {
-    await Promise.all(this.scrollProgram.filter(node => node.build).map(async node => node.build()))
+    await Promise.all(this.scrollProgram.filter(particle => particle.build).map(async particle => particle.build()))
   }
 
   // Without specifying the language hyphenation will not work.
@@ -896,13 +895,13 @@ import footer.scroll`
     if (parserErrors.length) {
       this.log(``)
       this.log(`❌ ${parserErrors.length} parser errors in "${cwd}"`)
-      this.log(new TreeNode(parserErrors).toFormattedTable(200))
+      this.log(new Particle(parserErrors).toFormattedTable(200))
       this.log(``)
     }
     if (scrollErrors.length) {
       this.log(``)
       this.log(`❌ ${scrollErrors.length} errors in "${cwd}"`)
-      this.log(new TreeNode(scrollErrors).toFormattedTable(100))
+      this.log(new Particle(scrollErrors).toFormattedTable(100))
       this.log(``)
     }
     if (!parserErrors.length && !scrollErrors.length) return this.log(`✅ 0 errors in "${cwd}". Tests took ${seconds} seconds.`)
@@ -922,7 +921,7 @@ import footer.scroll`
 
   _parserWordsRequiringExternals(parser) {
     // todo: could be cleaned up a bit
-    if (!parser.parserWordsRequiringExternals) parser.parserWordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(node => node.copyFromExternal).map(node => node.getLine().replace("Parser", ""))
+    if (!parser.parserWordsRequiringExternals) parser.parserWordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(particle => particle.copyFromExternal).map(particle => particle.getLine().replace("Parser", ""))
     return parser.parserWordsRequiringExternals
   }
 
@@ -936,8 +935,8 @@ import footer.scroll`
     parserWordsRequiringExternals.forEach(word => {
       if (externalFilesCopied[folder][word]) return
       if (file.has(word)) {
-        const node = file.scrollProgram.getNode(word)
-        const externalFiles = node.copyFromExternal.split(" ")
+        const particle = file.scrollProgram.getParticle(word)
+        const externalFiles = particle.copyFromExternal.split(" ")
         externalFiles.forEach(name => {
           const newPath = path.join(folder, name)
           fileSystem.writeProduct(newPath, Disk.read(path.join(__dirname, "external", name)))
@@ -952,10 +951,10 @@ import footer.scroll`
     // If this proves useful maybe make slight adjustments to Scroll lang to be more imperative.
     if (!file.has(scrollKeywords.buildConcepts)) return
     const { permalink } = file
-    file.scrollProgram.findNodes(scrollKeywords.buildConcepts).forEach(node => {
-      const files = node.getWordsFrom(1)
+    file.scrollProgram.findParticles(scrollKeywords.buildConcepts).forEach(particle => {
+      const files = particle.getWordsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".csv"))
-      const sortBy = node.get("sortBy")
+      const sortBy = particle.get("sortBy")
       files.forEach(link => {
         fileSystem.writeProduct(path.join(folder, link), file.compileConcepts(link, sortBy))
         this.log(`💾 Built concepts in ${file.filename} to ${link}`)
@@ -963,10 +962,10 @@ import footer.scroll`
     })
 
     if (!file.has(scrollKeywords.buildMeasures)) return
-    file.scrollProgram.findNodes(scrollKeywords.buildMeasures).forEach(node => {
-      const files = node.getWordsFrom(1)
+    file.scrollProgram.findParticles(scrollKeywords.buildMeasures).forEach(particle => {
+      const files = particle.getWordsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".csv"))
-      const sortBy = node.get("sortBy")
+      const sortBy = particle.get("sortBy")
       files.forEach(link => {
         fileSystem.writeProduct(path.join(folder, link), file.compileMeasures(link, sortBy))
         this.log(`💾 Built measures in ${file.filename} to ${link}`)
