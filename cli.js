@@ -2,7 +2,7 @@
 
 const path = require("path")
 
-const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Particle } = require("scrollsdk/products/Particle.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { ScrollSetCLI } = require("./ScrollSet.js")
@@ -20,7 +20,7 @@ class PLDBCli extends ScrollSetCLI {
   compiledConcepts = "./pldb.json"
 
   get keywordsOneHotCsv() {
-    if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
+    if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new Particle(this.keywordsOneHot).asCsv
     return this.quickCache.keywordsOneHotCsv
   }
 
@@ -90,10 +90,10 @@ class PLDBCli extends ScrollSetCLI {
         const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
 
-        const tree = this.getTree(file)
-        tree.touchNode("repoStats").setProperties(gitStats.summary)
-        if (!tree.has("appeared")) tree.set("appeared", gitStats.firstCommit.toString())
-        this.formatAndSave(file, tree)
+        const particle = this.getParticle(file)
+        particle.touchParticle("repoStats").setProperties(gitStats.summary)
+        if (!particle.has("appeared")) particle.set("appeared", gitStats.firstCommit.toString())
+        this.formatAndSave(file, particle)
       } catch (err) {
         console.error(err, file.id)
       }

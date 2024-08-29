@@ -69,7 +69,7 @@ comment
           rank: file.rank
         }
       })
-    console.log(new TreeNode(results).asCsv)
+    console.log(new Particle(results).asCsv)
   }
 
 ohayoCode

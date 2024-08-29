@@ -1,10 +1,10 @@
 const lodash = require("lodash")
 const path = require("path")
-const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Particle } = require("scrollsdk/products/Particle.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
-const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "code", "measures.parsers")))
+const ParserFile = new Particle(Disk.read(path.join(__dirname, "code", "measures.parsers")))
 const listsFolder = path.join(__dirname, "lists")
 const pagesDir = path.join(__dirname, "pages")
 const numeral = require("numeral")
@@ -36,8 +36,8 @@ const SVGS = {
 }
 
 const delimiter = `¶`
-const quickTree = (rows, header) =>
-  `table\n delimiter ${delimiter}\n printTable\n data\n  ${new TreeNode(rows)
+const quickTable = (rows, header) =>
+  `table\n delimiter ${delimiter}\n printTable\n data\n  ${new Particle(rows)
     .toDelimited(delimiter, header, false)
     .replace(/\n/g, "\n  ")}`
 
@@ -91,7 +91,7 @@ yamlFormat`.split("\n")
 const isLanguage = tag => languageTags.has(tag)
 
 // Todo: move to Parsers with an enum concept?
-const tagNames = new TreeNode(`application
+const tagNames = new Particle(`application
 assembly assembly language
 binaryDataFormat
 binaryExecutable binary executable format
@@ -144,7 +144,7 @@ class ConceptPage {
     this.absolutePath = path.join(__dirname, "concepts", parsed.id + ".scroll")
     this.tables = tables
     this.parsed = parsed
-    this.node = new TreeNode(Disk.read(this.absolutePath))
+    this.particle = new Particle(Disk.read(this.absolutePath))
     this.quickCache = {}
   }
 
@@ -153,11 +153,11 @@ class ConceptPage {
   }
 
   get(word) {
-    return this.node.get(word)
+    return this.particle.get(word)
   }
 
-  getNode(word) {
-    return this.node.getNode(word)
+  getParticle(word) {
+    return this.particle.getParticle(word)
   }
 
   get filePath() {
@@ -178,8 +178,8 @@ class ConceptPage {
 
   get bookCount() {
     if (this.quickCache.bookCount !== undefined) return this.quickCache.bookCount
-    const gr = this.getNode(`goodreads`)?.length
-    const isbndb = this.getNode(`isbndb`)?.length
+    const gr = this.getParticle(`goodreads`)?.length
+    const isbndb = this.getParticle(`isbndb`)?.length
     let count = 0
     if (gr) count += gr - 1
     if (isbndb) count += isbndb - 1
@@ -189,7 +189,7 @@ class ConceptPage {
 
   get paperCount() {
     if (this.quickCache.paperCount !== undefined) return this.quickCache.paperCount
-    const ss = this.getNode(`semanticScholar`)?.length
+    const ss = this.getParticle(`semanticScholar`)?.length
 
     let count = 0
     if (ss) count += ss - 1
@@ -204,9 +204,9 @@ class ConceptPage {
   get helpfulResearchLinks() {
     const id = this.id
     const title = this.get("name")
-    const references = this.node
-      .findNodes("reference")
-      .map(node => "Reference: " + node.content)
+    const references = this.particle
+      .findParticles("reference")
+      .map(particle => "Reference: " + particle.content)
       .join("\n")
     const links = ["website", "githubRepo", "wikipedia"]
       .filter(key => this.has(key))
@@ -253,7 +253,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get repl() {
-    return this.node.getOneOf("webRepl tryItOnline replit rijuRepl".split(" "))
+    return this.particle.getOneOf("webRepl tryItOnline replit rijuRepl".split(" "))
   }
 
   get lineCommentToken() {
@@ -276,7 +276,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   // Support inheritance in the dataset. Entities can extend from other entities and override
   // only the column values where they are different.
   get extended() {
-    return this.node // todo
+    return this.particle // todo
     if (this.quickCache.extended) return this.quickCache.extended
     const extendedFile = this.getRelationshipFile("supersetOf") || this.getRelationshipFile("implementationOf")
     this.quickCache.extended = extendedFile ? extendedFile.patch(this) : this
@@ -285,11 +285,11 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   get features() {
     const featuresMap = this.tables.featuresMap
-    return this.extended.filter(node => featuresMap.has(node.getWord(0)))
+    return this.extended.filter(particle => featuresMap.has(particle.getWord(0)))
   }
 
   get featuresWithExamples() {
-    return this.features.filter(node => node.length)
+    return this.features.filter(particle => particle.length)
   }
 
   get originCommunity() {
@@ -418,58 +418,58 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   get allExamples() {
     const examples = []
 
-    this.node.findNodes("example").forEach(node => {
+    this.particle.findParticles("example").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "the web",
         link: ""
       })
     })
 
-    this.node.findNodes("compilerExplorer example").forEach(node => {
+    this.particle.findParticles("compilerExplorer example").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "Compiler Explorer",
         link: `https://godbolt.org/`
       })
     })
 
-    this.node.findNodes("rijuRepl example").forEach(node => {
+    this.particle.findParticles("rijuRepl example").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "Riju",
         link: this.get("rijuRepl")
       })
     })
 
-    this.node.findNodes("leachim6").forEach(node => {
+    this.particle.findParticles("leachim6").forEach(particle => {
       examples.push({
-        code: node.getNode("example").childrenToString(),
+        code: particle.getParticle("example").childrenToString(),
         source: "hello-world",
-        link: `https://github.com/leachim6/hello-world/blob/main/` + node.get("filepath")
+        link: `https://github.com/leachim6/hello-world/blob/main/` + particle.get("filepath")
       })
     })
 
-    this.node.findNodes("helloWorldCollection").forEach(node => {
+    this.particle.findParticles("helloWorldCollection").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "the Hello World Collection",
-        link: `http://helloworldcollection.de/#` + node.getWord(1)
+        link: `http://helloworldcollection.de/#` + particle.getWord(1)
       })
     })
 
     const linguist_url = this.get("linguistGrammarRepo")
-    this.node.findNodes("linguistGrammarRepo example").forEach(node => {
+    this.particle.findParticles("linguistGrammarRepo example").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "Linguist",
         link: linguist_url
       })
     })
 
-    this.node.findNodes("wikipedia example").forEach(node => {
+    this.particle.findParticles("wikipedia example").forEach(particle => {
       examples.push({
-        code: node.childrenToString(),
+        code: particle.childrenToString(),
         source: "Wikipedia",
         link: this.get("wikipedia")
       })
@@ -479,7 +479,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   getMostRecentInt(pathToSet) {
-    let set = this.getNode(pathToSet)
+    let set = this.getParticle(pathToSet)
     if (!set) return 0
     set = set.toObject()
     const key = Math.max(...Object.keys(set).map(year => parseInt(year)))
@@ -505,7 +505,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get otherReferences() {
-    return this.node.findNodes("reference").map(line => line.content)
+    return this.particle.findParticles("reference").map(line => line.content)
   }
 
   get wikipediaTitle() {
@@ -568,7 +568,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     const { title } = this
     const count = this.get(`$githubLanguage trendingProjectsCount`)
     if (parseInt(count) > 0) {
-      const table = this.getNode("githubLanguage trendingProjects")
+      const table = this.getParticle("githubLanguage trendingProjects")
       const githubId = this.get("githubLanguage")
 
       if (!table) {
@@ -576,8 +576,8 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
         return ""
       }
 
-      const tree = TreeNode.fromSsv(table.childrenToString())
-      tree.forEach(child => {
+      const particle = Particle.fromSsv(table.childrenToString())
+      particle.forEach(child => {
         child.set("repo", child.get("name"))
         child.set("repoLink", child.get("url"))
       })
@@ -586,7 +586,7 @@ table
  delimiter ,
  printTable
  data
-  ${cleanAndRightShift(tree.toDelimited(",", ["repo", "repoLink", "stars", "description"]), 2)}
+  ${cleanAndRightShift(particle.toDelimited(",", ["repo", "repoLink", "stars", "description"]), 2)}
 `
     }
     return ""
@@ -594,13 +594,13 @@ table
 
   get semanticScholar() {
     const { title } = this
-    const items = this.getNode(`semanticScholar`)
+    const items = this.getParticle(`semanticScholar`)
     if (!items) return ""
 
     if (items.content === "0") return ""
 
-    const tree = TreeNode.fromDelimited(items.childrenToString(), "|")
-    tree.forEach(child => {
+    const particle = Particle.fromDelimited(items.childrenToString(), "|")
+    particle.forEach(child => {
       child.set("titleLink", `https://www.semanticscholar.org/paper/${child.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
@@ -610,7 +610,7 @@ table
  data
   ${
     (cleanAndRightShift(
-      tree.toDelimited("|", ["title", "titleLink", "authors", "year", "citations", "influentialCitations"])
+      particle.toDelimited("|", ["title", "titleLink", "authors", "year", "citations", "influentialCitations"])
     ),
     2)
   }
@@ -619,13 +619,13 @@ table
 
   get isbndb() {
     const { title } = this
-    const isbndb = this.getNode(`isbndb`)
+    const isbndb = this.getParticle(`isbndb`)
     if (!isbndb) return ""
 
     if (isbndb.content === "0") return ""
 
-    const tree = TreeNode.fromDelimited(isbndb.childrenToString(), "|")
-    tree.forEach(child => {
+    const particle = Particle.fromDelimited(isbndb.childrenToString(), "|")
+    particle.forEach(child => {
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
     })
     return `## Books about ${title} from ISBNdb
@@ -633,17 +633,17 @@ table
  delimiter |
  printTable
  data
-  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"]), 2)}
+  ${cleanAndRightShift(particle.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"]), 2)}
 `
   }
 
   get goodreads() {
     const { title } = this
-    const goodreads = this.getNode(`goodreads`) // todo: the goodreadsIds we have are wrong.
+    const goodreads = this.getParticle(`goodreads`) // todo: the goodreadsIds we have are wrong.
     if (!goodreads) return ""
 
-    const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
-    tree.forEach(child => {
+    const particle = Particle.fromDelimited(goodreads.childrenToString(), "|")
+    particle.forEach(child => {
       child.set("titleLink", `https://www.goodreads.com/search?q=${child.get("title") + " " + child.get("author")}`)
     })
     return `## Books about ${title} on goodreads
@@ -652,7 +652,7 @@ table
  printTable
  data
   ${cleanAndRightShift(
-    tree.toDelimited("|", ["title", "titleLink", "author", "year", "reviews", "ratings", "rating"]),
+    particle.toDelimited("|", ["title", "titleLink", "author", "year", "reviews", "ratings", "rating"]),
     2
   )}
 `
@@ -660,10 +660,10 @@ table
 
   get publications() {
     const { title } = this
-    const dblp = this.getNode(`dblp`)
+    const dblp = this.getParticle(`dblp`)
     if (dblp && dblp.get("hits") !== "0") {
-      const tree = TreeNode.fromDelimited(dblp.getNode("publications").childrenToString(), "|")
-      tree.forEach(child => {
+      const particle = Particle.fromDelimited(dblp.getParticle("publications").childrenToString(), "|")
+      particle.forEach(child => {
         child.set("titleLink", child.get("doi") ? `https://doi.org/` + child.get("doi") : child.get("url"))
       })
       return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
@@ -671,7 +671,7 @@ table
  delimiter |
  printTable
  data
-  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]), 2)}
+  ${cleanAndRightShift(particle.toDelimited("|", ["title", "titleLink", "year"]), 2)}
 `
     }
     return ""
@@ -682,16 +682,16 @@ table
     if (!features.length) return ""
 
     const { featuresMap } = this.tables
-    const table = new TreeNode()
-    features.forEach(node => {
-      const feature = featuresMap.get(node.getWord(0))
+    const table = new Particle()
+    features.forEach(particle => {
+      const feature = featuresMap.get(particle.getWord(0))
       if (!feature) {
-        console.log(`warning: we need a features page for feature '${node.getWord(0)}' found in '${id}'`)
+        console.log(`warning: we need a features page for feature '${particle.getWord(0)}' found in '${id}'`)
         return
       }
 
       const tokenPath = feature.token
-      const supported = node.content === "true"
+      const supported = particle.content === "true"
 
       table
         .appendLineAndChildren(
@@ -702,24 +702,24 @@ Supported ${supported ? `<span class="hasFeature">✓</span>` : `<span class="do
 Example
 Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
         )
-        .touchNode("Example")
-        .setChildren(node.childrenToString())
+        .touchParticle("Example")
+        .setChildren(particle.childrenToString())
     })
 
     return `## Language <a href="../lists/features.html">features</a>
 
 table
- delimiter tree
+ delimiter particles
  printTable
  data
   ${table.sortBy(["Supported", "Example"]).reverse().toString().replace(/\n/g, "\n  ")}`
   }
 
   get hackerNewsTable() {
-    const hnTable = this.getNode(`hackerNewsDiscussions`)?.childrenToString()
+    const hnTable = this.getParticle(`hackerNewsDiscussions`)?.childrenToString()
     if (!hnTable) return ""
 
-    const table = TreeNode.fromDelimited(hnTable, "|")
+    const table = Particle.fromDelimited(hnTable, "|")
     table.forEach(row => {
       row.set("titleLink", `https://news.ycombinator.com/item?id=${row.get("id")}`)
       row.set("date", dayjs(row.get("time")).format("MM/DD/YYYY"))
@@ -818,7 +818,7 @@ import ../footer.scroll
   }
 
   getAll(keyword) {
-    return this.node.findNodes(keyword).map(node => node.content)
+    return this.particle.findParticles(keyword).map(particle => particle.content)
   }
 
   get image() {
@@ -897,7 +897,7 @@ image ${image}
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
       edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
-        new TreeNode(
+        new Particle(
           `url https://pldb.io/pldb.parsers\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
         ).toString()
       )}`
@@ -1002,7 +1002,7 @@ ${maintainersLinks}
       )
     }
 
-    const githubRepo = this.node.getNode("githubRepo")
+    const githubRepo = this.particle.getParticle("githubRepo")
     if (githubRepo) {
       const stars = githubRepo.get("stars")
       const starMessage = stars ? ` and has ${numeral(stars).format("0,0")} stars` : ""
@@ -1065,16 +1065,16 @@ ${maintainersLinks}
           .join(", ")}`
       )
 
-    const conferences = this.node.getNodesByGlobPath("conference")
+    const conferences = this.particle.getParticlesByGlobPath("conference")
     if (conferences.length) {
       facts.push(
         `Recurring conference about ${title}: ${conferences.map(
-          tree => `<a href="${tree.getWord(1)}">${tree.getWordsFrom(2)}</a>`
+          particle => `<a href="${particle.getWord(1)}">${particle.getWordsFrom(2)}</a>`
         )}`
       )
     }
 
-    const githubBigQuery = this.node.getNode("githubBigQuery")
+    const githubBigQuery = this.particle.getParticle("githubBigQuery")
     if (githubBigQuery) {
       const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.content}`
       const userCount = numeral(githubBigQuery.get("users")).format("0a")
@@ -1107,7 +1107,7 @@ ${maintainersLinks}
       )
     }
 
-    const soSurvey = this.node.getNode("stackOverflowSurvey 2021")
+    const soSurvey = this.particle.getParticle("stackOverflowSurvey 2021")
     if (soSurvey) {
       let fact = `In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> ${title} programmers reported a median salary of $${numeral(
         soSurvey.get("medianSalary")
@@ -1214,7 +1214,7 @@ ${maintainersLinks}
 
     if (eventsPage.length >= 1) facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
-    const indeedJobs = this.node.getNode("indeedJobs")
+    const indeedJobs = this.particle.getParticle("indeedJobs")
     if (indeedJobs) {
       const query = this.get("indeedJobs")
       if (query) {
@@ -1272,8 +1272,8 @@ codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywor
   }
 
   get funFactSection() {
-    return this.node
-      .findNodes("funFact")
+    return this.particle
+      .findParticles("funFact")
       .map(
         fact =>
           `codeWithHeader ${`<a href='${fact.content}'>Fun fact</a>`}:
@@ -1356,11 +1356,11 @@ class Feature {
   get(word) {
     // todo; fix this
     // return this.measure[word]
-    return this.node.getFrom(`string ${word}`)
+    return this.particle.getFrom(`string ${word}`)
   }
 
-  get node() {
-    return ParserFile.getNode(this.id + "Parser")
+  get particle() {
+    return ParserFile.getParticle(this.id + "Parser")
   }
 
   get title() {
@@ -1426,12 +1426,12 @@ class Feature {
       : ""
 
     const examples = positives
-      .filter(file => this.tables.getConceptFile(file.id).getNode(id).length)
+      .filter(file => this.tables.getConceptFile(file.id).getParticle(id).length)
       .map(file => {
         return {
           id: file.id,
           name: file.name,
-          example: this.tables.getConceptFile(file.id).getNode(id).childrenToString()
+          example: this.tables.getConceptFile(file.id).getParticle(id).childrenToString()
         }
       })
     const grouped = lodash.groupBy(examples, "example")
@@ -1488,7 +1488,7 @@ import ../footer.scroll
 }
 
 const getMostRecentInt = (concept, pathToSet) => {
-  let set = concept.getNode(pathToSet)
+  let set = concept.getParticle(pathToSet)
   if (!set) return 0
   set = set.toObject()
   const key = Math.max(...Object.keys(set).map(year => parseInt(year)))
@@ -1532,7 +1532,7 @@ class Tables {
 
   _cache = {}
   getConceptFile(id) {
-    if (!this._cache[id]) this._cache[id] = new TreeNode(Disk.read(path.join(__dirname, "concepts", id + ".scroll")))
+    if (!this._cache[id]) this._cache[id] = new Particle(Disk.read(path.join(__dirname, "concepts", id + ".scroll")))
     return this._cache[id]
   }
 
@@ -1652,7 +1652,7 @@ class Tables {
     const summaries = topFeatures.map(feature => feature.summary).filter(feature => feature.measurements >= limit)
     return {
       COUNT: numeral(summaries.length).format("0,0"),
-      TABLE: quickTree(summaries, ["title", "titleLink", "pseudoExample", "yes", "no", "percentage"])
+      TABLE: quickTable(summaries, ["title", "titleLink", "pseudoExample", "yes", "no", "percentage"])
     }
   }
 
@@ -1731,7 +1731,7 @@ class Tables {
 
     return {
       SPARKDATA: histogram.join(" "),
-      TABLE: quickTree(lodash.sortBy(rows, "topRank"), [
+      TABLE: quickTable(lodash.sortBy(rows, "topRank"), [
         "name",
         "links",
         "born",
@@ -1773,7 +1773,7 @@ class Tables {
 
     return {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
-      TABLE: quickTree(lodash.sortBy(files, "rank"), ["name", "nameLink", "extensions", "numberOfExtensions"]),
+      TABLE: quickTable(lodash.sortBy(files, "rank"), ["name", "nameLink", "extensions", "numberOfExtensions"]),
       LANG_WITH_DATA_COUNT: files.length
     }
   }
@@ -1799,7 +1799,7 @@ class Tables {
     sorted.reverse()
 
     return {
-      TABLE: quickTree(sorted, ["count", "name", "languages"]),
+      TABLE: quickTable(sorted, ["count", "name", "languages"]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
     }
   }
@@ -1833,14 +1833,14 @@ class Tables {
     return {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
-      KEYWORDS_TABLE: quickTree(rows, ["keyword", "count", "frequency", "langs"])
+      KEYWORDS_TABLE: quickTable(rows, ["keyword", "count", "frequency", "langs"])
     }
   }
 
   get keywordsTable() {
     if (this.quickCache.keywordsTable) return this.quickCache.keywordsTable
     this.initConceptPages()
-    const langsWithKeywords = this._conceptPages.filter(file => file.node.has("keywords"))
+    const langsWithKeywords = this._conceptPages.filter(file => file.particle.has("keywords"))
     const langsWithKeywordsCount = langsWithKeywords.length
 
     const keywordsMap = {}
@@ -1955,7 +1955,7 @@ const computeds = {
   },
 
   exampleCount(concept) {
-    return concept.topDownArray.filter(node => node.isExampleCode).length
+    return concept.topDownArray.filter(particle => particle.isExampleCode).length
   },
 
   score(concept) {},
@@ -1967,25 +1967,25 @@ const computeds = {
 
   measurements(concept) {
     let count = 0
-    concept.forEach(node => {
-      if (node.isMeasure) count++
+    concept.forEach(particle => {
+      if (particle.isMeasure) count++
     })
     return count
   },
 
   expandedMeasurements(concept) {
     let count = 0
-    concept.forEach(node => {
-      if (!node.isMeasure) return
-      if (node.listDelimiter !== undefined) count += node.getLine().split(node.listDelimiter).length
+    concept.forEach(particle => {
+      if (!particle.isMeasure) return
+      if (particle.listDelimiter !== undefined) count += particle.getLine().split(particle.listDelimiter).length
       else count++
     })
     return count
   },
 
   bookCount(concept) {
-    const gr = concept.getNode(`goodreads`)?.length
-    const isbndb = concept.getNode(`isbndb`)?.length
+    const gr = concept.getParticle(`goodreads`)?.length
+    const isbndb = concept.getParticle(`isbndb`)?.length
     let count = 0
     if (gr) count += gr - 1
     if (isbndb) count += isbndb - 1
@@ -1993,7 +1993,7 @@ const computeds = {
   },
 
   paperCount(concept) {
-    const ss = concept.getNode(`semanticScholar`)?.length
+    const ss = concept.getParticle(`semanticScholar`)?.length
     let count = 0
     if (ss) count += ss - 1
     return count
@@ -2103,9 +2103,9 @@ class MeasureComputer {
     this.concepts.forEach(concept => {
       const id = concept.get("id")
       concept
-        .filter(node => node.isLinks)
-        .forEach(node => {
-          const links = node.content.split(" ")
+        .filter(particle => particle.isLinks)
+        .forEach(particle => {
+          const links = particle.content.split(" ")
           links.forEach(link => {
             if (!inboundLinks[link]) throw new Error(`No file "${link}" found in "${id}"`)
 
