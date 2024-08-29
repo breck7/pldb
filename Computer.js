@@ -1887,7 +1887,7 @@ class Tables {
       "nodejs",
       "html",
       "css",
-      "scrollnotation",
+      "particlenotation",
       "scroll",
       "parsers",
       "git",

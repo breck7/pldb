@@ -13,14 +13,14 @@ roadmap https://scroll.pub/roadmap.html
 webRepl https://try.scroll.pub/
 description Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
 fileExtensions scroll
-writtenIn parsers scrollnotation javascript yaml css json
+writtenIn parsers particlenotation javascript yaml css json
 compilesTo html csv tsv json rss txt
 
 isPublicDomain true
 isOpenSource true
 influencedBy markdown lisp javascript haml html python tsv csv yaml jekyll wordpress tex mathematica dplyr antlr reactjs
-subsetOf scrollnotation
-related markdown scrollnotation parsers
+subsetOf particlenotation
+related markdown particlenotation parsers
 faq https://scroll.pub/faq.html
 repoStats
  firstCommit 2019
