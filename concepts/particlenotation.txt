@@ -20,10 +20,10 @@ A minimalist notation consisting of just the word break rule, line break rule, a
 - See also: (8 related languages) I-expressions, JSON, YAML, TOML, XML, HAML, Ini, Parsers
 - 4 PLDB concepts link to Particle Notation: Parsers, Scroll, Speedie, TQL
 
-title Scroll Notation
+title Particle Notation
 type dataNotation
 example
- title Scroll Notation
+ title Particle Notation
  type dataNotation
 
 Language features
@@ -35,7 +35,7 @@ row
  Supported ✓
  Example
   example
-   title Scroll Notation
+   title Particle Notation
  Token 
 row
  Feature Comments
