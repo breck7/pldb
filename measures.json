@@ -45,10 +45,10 @@
   },
   {
     "Name": "maintainers",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "What are the name(s) of the maintainer(s) of the language delimited by \" and \"?",
-    "Example": "Junio Hamano",
+    "Example": "Daniel Stenberg",
     "Type": "string",
     "SortIndex": 1.1021,
     "IsComputed": false
