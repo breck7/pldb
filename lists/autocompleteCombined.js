@@ -2107,14 +2107,14 @@ var autocompleteJs = [
     "url": "/concepts/jakt.html"
   },
   {
-    "label": "Twig",
-    "id": "twig",
-    "url": "/concepts/twig.html"
-  },
-  {
     "label": "Djot",
     "id": "djot",
     "url": "/concepts/djot.html"
+  },
+  {
+    "label": "Twig",
+    "id": "twig",
+    "url": "/concepts/twig.html"
   },
   {
     "label": "K",
@@ -2232,14 +2232,14 @@ var autocompleteJs = [
     "url": "/concepts/bison.html"
   },
   {
+    "label": "Particles",
+    "id": "particles",
+    "url": "/concepts/particles.html"
+  },
+  {
     "label": "Sage",
     "id": "sagemath",
     "url": "/concepts/sagemath.html"
-  },
-  {
-    "label": "Ring",
-    "id": "ring",
-    "url": "/concepts/ring.html"
   },
   {
     "label": "DOI",
@@ -2250,6 +2250,11 @@ var autocompleteJs = [
     "label": "Simple Binary Encoding",
     "id": "simple-binary-encoding",
     "url": "/concepts/simple-binary-encoding.html"
+  },
+  {
+    "label": "Ring",
+    "id": "ring",
+    "url": "/concepts/ring.html"
   },
   {
     "label": "Boo",
@@ -2330,11 +2335,6 @@ var autocompleteJs = [
     "label": "Parsers",
     "id": "parsers",
     "url": "/concepts/parsers.html"
-  },
-  {
-    "label": "Particles",
-    "id": "particles",
-    "url": "/concepts/particles.html"
   },
   {
     "label": "REST",
@@ -2497,14 +2497,14 @@ var autocompleteJs = [
     "url": "/concepts/sugarss.html"
   },
   {
-    "label": "Flow9",
-    "id": "flow9",
-    "url": "/concepts/flow9.html"
-  },
-  {
     "label": "SCSS",
     "id": "scss",
     "url": "/concepts/scss.html"
+  },
+  {
+    "label": "Flow9",
+    "id": "flow9",
+    "url": "/concepts/flow9.html"
   },
   {
     "label": "roy",
@@ -2627,14 +2627,14 @@ var autocompleteJs = [
     "url": "/concepts/jcl.html"
   },
   {
-    "label": "Modelica",
-    "id": "modelica",
-    "url": "/concepts/modelica.html"
-  },
-  {
     "label": "Latte",
     "id": "latte",
     "url": "/concepts/latte.html"
+  },
+  {
+    "label": "Modelica",
+    "id": "modelica",
+    "url": "/concepts/modelica.html"
   },
   {
     "label": "Maxima",
@@ -2847,14 +2847,14 @@ var autocompleteJs = [
     "url": "/concepts/curl.html"
   },
   {
-    "label": "Isabelle",
-    "id": "isabelle",
-    "url": "/concepts/isabelle.html"
-  },
-  {
     "label": "Qalb",
     "id": "qalb",
     "url": "/concepts/qalb.html"
+  },
+  {
+    "label": "Isabelle",
+    "id": "isabelle",
+    "url": "/concepts/isabelle.html"
   },
   {
     "label": "jsil-compiler",
@@ -3227,11 +3227,6 @@ var autocompleteJs = [
     "url": "/concepts/e.html"
   },
   {
-    "label": "PureBasic",
-    "id": "purebasic",
-    "url": "/concepts/purebasic.html"
-  },
-  {
     "label": "Glicol",
     "id": "glicol",
     "url": "/concepts/glicol.html"
@@ -3240,6 +3235,11 @@ var autocompleteJs = [
     "label": "Java Properties",
     "id": "java-properties",
     "url": "/concepts/java-properties.html"
+  },
+  {
+    "label": "PureBasic",
+    "id": "purebasic",
+    "url": "/concepts/purebasic.html"
   },
   {
     "label": "FoxPRO",
@@ -3452,14 +3452,14 @@ var autocompleteJs = [
     "url": "/concepts/chuck.html"
   },
   {
-    "label": "GDScript",
-    "id": "gdscript",
-    "url": "/concepts/gdscript.html"
-  },
-  {
     "label": "score",
     "id": "score",
     "url": "/concepts/score.html"
+  },
+  {
+    "label": "GDScript",
+    "id": "gdscript",
+    "url": "/concepts/gdscript.html"
   },
   {
     "label": "tldr",
@@ -3582,11 +3582,6 @@ var autocompleteJs = [
     "url": "/concepts/circle-lang.html"
   },
   {
-    "label": "SNOBOL",
-    "id": "snobol",
-    "url": "/concepts/snobol.html"
-  },
-  {
     "label": "Roslyn compiler",
     "id": "roslyn-compiler",
     "url": "/concepts/roslyn-compiler.html"
@@ -3595,6 +3590,11 @@ var autocompleteJs = [
     "label": "Guile",
     "id": "guile",
     "url": "/concepts/guile.html"
+  },
+  {
+    "label": "SNOBOL",
+    "id": "snobol",
+    "url": "/concepts/snobol.html"
   },
   {
     "label": "ohm",
@@ -4132,11 +4132,6 @@ var autocompleteJs = [
     "url": "/concepts/xaml.html"
   },
   {
-    "label": "Seed7",
-    "id": "seed7",
-    "url": "/concepts/seed7.html"
-  },
-  {
     "label": "ASCII",
     "id": "ascii",
     "url": "/concepts/ascii.html"
@@ -4150,6 +4145,11 @@ var autocompleteJs = [
     "label": "PL/M",
     "id": "pl-m",
     "url": "/concepts/pl-m.html"
+  },
+  {
+    "label": "Seed7",
+    "id": "seed7",
+    "url": "/concepts/seed7.html"
   },
   {
     "label": "HuJSON",
@@ -5047,14 +5047,14 @@ var autocompleteJs = [
     "url": "/concepts/smt.html"
   },
   {
-    "label": "Unicon",
-    "id": "unicon",
-    "url": "/concepts/unicon.html"
-  },
-  {
     "label": "CIR",
     "id": "cir",
     "url": "/concepts/cir.html"
+  },
+  {
+    "label": "Unicon",
+    "id": "unicon",
+    "url": "/concepts/unicon.html"
   },
   {
     "label": "Redcode",
