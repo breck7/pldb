@@ -1883,7 +1883,7 @@ class Tables {
       "nodejs",
       "html",
       "css",
-      "particlenotation",
+      "particles",
       "scroll",
       "parsers",
       "git",
