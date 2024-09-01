@@ -1685,7 +1685,6 @@ class Tables {
       const person = creatorsMap[name] || {}
       const anchorTag = lodash.camelCase(name)
 
-      let nameCol = `<a name='${anchorTag}' />${name}`
       const links = {
         git: person.gits,
         home: person.homepage,
@@ -1703,7 +1702,7 @@ class Tables {
         .join(" ")
 
       return {
-        name: nameCol,
+        name: `<a href="${person.primaryLink || ""}" name='${anchorTag}' />${name}`,
         links: `<span class="creatorQuickLinks">${linksCol}</span>`,
         born: person.born,
         country: person.country,
