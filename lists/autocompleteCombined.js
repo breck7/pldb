@@ -1202,14 +1202,14 @@ var autocompleteJs = [
     "url": "/concepts/vuejs.html"
   },
   {
-    "label": "LabVIEW G",
-    "id": "labview",
-    "url": "/concepts/labview.html"
-  },
-  {
     "label": "AutoHotkey",
     "id": "autohotkey",
     "url": "/concepts/autohotkey.html"
+  },
+  {
+    "label": "LabVIEW G",
+    "id": "labview",
+    "url": "/concepts/labview.html"
   },
   {
     "label": "Wren",
@@ -1257,14 +1257,14 @@ var autocompleteJs = [
     "url": "/concepts/common-lisp.html"
   },
   {
-    "label": "Smali",
-    "id": "smali",
-    "url": "/concepts/smali.html"
-  },
-  {
     "label": "MDX",
     "id": "mdx",
     "url": "/concepts/mdx.html"
+  },
+  {
+    "label": "Smali",
+    "id": "smali",
+    "url": "/concepts/smali.html"
   },
   {
     "label": "mustache",
@@ -1317,14 +1317,14 @@ var autocompleteJs = [
     "url": "/concepts/moonscript.html"
   },
   {
-    "label": "EDN",
-    "id": "edn",
-    "url": "/concepts/edn.html"
-  },
-  {
     "label": "Jekyll",
     "id": "jekyll",
     "url": "/concepts/jekyll.html"
+  },
+  {
+    "label": "EDN",
+    "id": "edn",
+    "url": "/concepts/edn.html"
   },
   {
     "label": "MUMPS",
@@ -1902,14 +1902,14 @@ var autocompleteJs = [
     "url": "/concepts/modula-2.html"
   },
   {
-    "label": "DTrace",
-    "id": "dtrace",
-    "url": "/concepts/dtrace.html"
-  },
-  {
     "label": "onnx",
     "id": "onnx",
     "url": "/concepts/onnx.html"
+  },
+  {
+    "label": "DTrace",
+    "id": "dtrace",
+    "url": "/concepts/dtrace.html"
   },
   {
     "label": "chatterbot",
@@ -2332,6 +2332,11 @@ var autocompleteJs = [
     "url": "/concepts/parsers.html"
   },
   {
+    "label": "Particles",
+    "id": "particles",
+    "url": "/concepts/particles.html"
+  },
+  {
     "label": "REST",
     "id": "rest",
     "url": "/concepts/rest.html"
@@ -2385,11 +2390,6 @@ var autocompleteJs = [
     "label": "CodeQL",
     "id": "codeql",
     "url": "/concepts/codeql.html"
-  },
-  {
-    "label": "Particle Notation",
-    "id": "particlenotation",
-    "url": "/concepts/particlenotation.html"
   },
   {
     "label": "CIL",
@@ -2467,14 +2467,14 @@ var autocompleteJs = [
     "url": "/concepts/smarty.html"
   },
   {
-    "label": "Xojo",
-    "id": "xojo",
-    "url": "/concepts/xojo.html"
-  },
-  {
     "label": "Stencil",
     "id": "stencil",
     "url": "/concepts/stencil.html"
+  },
+  {
+    "label": "Xojo",
+    "id": "xojo",
+    "url": "/concepts/xojo.html"
   },
   {
     "label": "JSON Schema",
@@ -2667,11 +2667,6 @@ var autocompleteJs = [
     "url": "/concepts/skulpt.html"
   },
   {
-    "label": "xBase",
-    "id": "xbase",
-    "url": "/concepts/xbase.html"
-  },
-  {
     "label": "packagist-pm",
     "id": "packagist-pm",
     "url": "/concepts/packagist-pm.html"
@@ -2680,6 +2675,11 @@ var autocompleteJs = [
     "label": "Gnuplot",
     "id": "gnuplot",
     "url": "/concepts/gnuplot.html"
+  },
+  {
+    "label": "xBase",
+    "id": "xbase",
+    "url": "/concepts/xbase.html"
   },
   {
     "label": "ActivityPub",
@@ -2897,11 +2897,6 @@ var autocompleteJs = [
     "url": "/concepts/nsis.html"
   },
   {
-    "label": "LFE",
-    "id": "lfe",
-    "url": "/concepts/lfe.html"
-  },
-  {
     "label": "Pike",
     "id": "pike",
     "url": "/concepts/pike.html"
@@ -2915,6 +2910,11 @@ var autocompleteJs = [
     "label": "pyret",
     "id": "pyret",
     "url": "/concepts/pyret.html"
+  },
+  {
+    "label": "LFE",
+    "id": "lfe",
+    "url": "/concepts/lfe.html"
   },
   {
     "label": "Civet",
@@ -3092,14 +3092,14 @@ var autocompleteJs = [
     "url": "/concepts/blitzmax.html"
   },
   {
-    "label": "Turing",
-    "id": "turing",
-    "url": "/concepts/turing.html"
-  },
-  {
     "label": "Uiua",
     "id": "uiua",
     "url": "/concepts/uiua.html"
+  },
+  {
+    "label": "Turing",
+    "id": "turing",
+    "url": "/concepts/turing.html"
   },
   {
     "label": "Whiley",
@@ -3252,14 +3252,14 @@ var autocompleteJs = [
     "url": "/concepts/objective-cpp.html"
   },
   {
-    "label": "JSON with Comments",
-    "id": "json-with-comments",
-    "url": "/concepts/json-with-comments.html"
-  },
-  {
     "label": "dub-pm",
     "id": "dub-pm",
     "url": "/concepts/dub-pm.html"
+  },
+  {
+    "label": "JSON with Comments",
+    "id": "json-with-comments",
+    "url": "/concepts/json-with-comments.html"
   },
   {
     "label": "lispyscript",
@@ -3462,14 +3462,14 @@ var autocompleteJs = [
     "url": "/concepts/score.html"
   },
   {
-    "label": "Limbo",
-    "id": "limbo",
-    "url": "/concepts/limbo.html"
-  },
-  {
     "label": "tldr",
     "id": "tldr",
     "url": "/concepts/tldr.html"
+  },
+  {
+    "label": "Limbo",
+    "id": "limbo",
+    "url": "/concepts/limbo.html"
   },
   {
     "label": "Logos",
@@ -3687,14 +3687,14 @@ var autocompleteJs = [
     "url": "/concepts/cool.html"
   },
   {
-    "label": "Croc",
-    "id": "croc",
-    "url": "/concepts/croc.html"
-  },
-  {
     "label": "JSLT",
     "id": "jslt",
     "url": "/concepts/jslt.html"
+  },
+  {
+    "label": "Croc",
+    "id": "croc",
+    "url": "/concepts/croc.html"
   },
   {
     "label": "Django",
@@ -5057,14 +5057,14 @@ var autocompleteJs = [
     "url": "/concepts/cir.html"
   },
   {
-    "label": "monte",
-    "id": "monte",
-    "url": "/concepts/monte.html"
-  },
-  {
     "label": "Redcode",
     "id": "redcode",
     "url": "/concepts/redcode.html"
+  },
+  {
+    "label": "monte",
+    "id": "monte",
+    "url": "/concepts/monte.html"
   },
   {
     "label": "EML",
@@ -7602,14 +7602,14 @@ var autocompleteJs = [
     "url": "/concepts/kamilalisp.html"
   },
   {
-    "label": "Bel",
-    "id": "bel",
-    "url": "/concepts/bel.html"
-  },
-  {
     "label": "JSON Canvas",
     "id": "jsoncanvas",
     "url": "/concepts/jsoncanvas.html"
+  },
+  {
+    "label": "Bel",
+    "id": "bel",
+    "url": "/concepts/bel.html"
   },
   {
     "label": "Kalyn",
