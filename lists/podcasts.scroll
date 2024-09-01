@@ -100,7 +100,8 @@ youtubeLinkParser
     return hit ? hit.firstWord : ""
   }
 
-youtubeParser
+pldbYoutubeParser
+ crux youtube
  extends abstractCountParser
  float sortIndex 1.81
  description Number of subscribers.
