@@ -7,7 +7,7 @@ const fs = require("fs")
 const lodash = require("lodash")
 const dayjs = require("dayjs")
 
-// Scroll Notation Includes
+// Particles Includes
 const { Particle } = require("scrollsdk/products/Particle.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
@@ -393,7 +393,7 @@ class ScrollFile {
     return (
       topMatterThenContent
         .trim() // Remove leading whitespace
-        .replace(/(\S.*?)[  \t]*$/gm, "$1") // Trim trailing whitespace, except for lines that are *all* whitespace (in which case the whitespace may be semantic scroll notation)
+        .replace(/(\S.*?)[  \t]*$/gm, "$1") // Trim trailing whitespace, except for lines that are *all* whitespace (in which case the whitespace may be semantic particles)
         .replace(/\n\n\n+/g, "\n\n") // Maximum 2 newlines in a row
         .replace(/\n+$/, "") + "\n"
     ) // End Scroll files in a newline character POSIX style for better working with tools like git
