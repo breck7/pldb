@@ -33,6 +33,15 @@ wikipediaParser
 countryParser
  extends abstractStringMeasureParser
  float sortIndex 1.6
+primaryLinkParser
+ boolean isComputed true
+ extends abstractUrlMeasureParser
+ description What is a good primary link?
+ float sortIndex 1.7
+ javascript
+  computeValue(concept) {
+    return concept.getOneOf("homepage gits twitter wikipedia pldbInterview".split(" ")) || ""
+  }
 
 id Aaron Swartz
 born 1986
