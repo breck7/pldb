@@ -1675,11 +1675,7 @@ class Tables {
   }
 
   get creatorsTable() {
-    const entities = groupByListValues(
-      "creators",
-      this.pldb.filter(row => row.isLanguage),
-      " and "
-    )
+    const entities = groupByListValues("creators", this.pldb, " and ")
     const { creators } = this
     const creatorsMap = {}
     creators.forEach(creator => (creatorsMap[creator.id] = creator))
