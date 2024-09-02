@@ -1,0 +1,34 @@
+import ../code/conceptPage.scroll
+
+id lp-format
+name LP Format
+appeared 1987
+creators Robert Bixby
+tags textDataFormat
+description A format for storing linear programming problems. The LP format captures an optimization model in a way that is easier for humans to read than MPS format, and can often be more natural to produce.
+fileExtensions lp
+
+related mps-format cplex gurobi
+reference https://www.gurobi.com/documentation/current/refman/lp_format.html
+reference https://lpsolve.sourceforge.net/5.5/lp-format.htm
+
+example
+ \ LP format example
+
+lineCommentToken \
+
+hasLineComments true
+ \ A comment
+
+ Maximize
+   x + y + z
+ Subject To
+   c0: x + y = 1
+   c1: x + 5 y + 2 z <= 10
+   qc0: x + y + [ x ^ 2 - 2 x * y + 3 y ^ 2 ] <= 5
+ Bounds
+   0 <= x <= 5
+   z >= 2
+ Generals
+   x y z
+ End
