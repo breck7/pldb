@@ -1,0 +1,41 @@
+MPS Format
+==========
+
+MPS Format, aka Mathematical Programming System, is a text data format created in 1974.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1974
+
+#1725 on PLDB
+50 Years Old
+
+A format for storing linear programming problems. Column oriented.
+
+- Tags: textDataFormat
+- Early development of MPS Format happened in IBM
+- See also: (2 related languages) AMPL, GAMS
+- 2 PLDB concepts link to MPS Format: LP Format, OPB Format
+
+NAME          EXAMPLE
+ROWS
+ N  COST
+ L  LIM1
+ G  LIM2
+ E  MYEQN
+COLUMNS
+   XONE      COST       1
+   XONE      LIM1       1
+   YTWO      COST       4
+   YTWO      LIM2       1
+   ZTHREE    COST       9
+   ZTHREE    MYEQN      1
+RHS
+   RHS1      LIM1       5
+   RHS1      LIM2       10
+   RHS1      MYEQN      7
+BOUNDS
+UP BND1      XONE       4
+LO BND1      YTWO       -1
+UP BND1      YTWO       1
+
+View source
+
+ENDATA

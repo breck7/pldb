@@ -77,9 +77,9 @@ NB. _?\d+\.(?=\d+)
 
 # [+\-]?(\d+\.\d*[eE][+-]?\d+|\.?\d+[eE][+-]?\d+)
 
-// [0-9]*\.[0-9]+
-
 # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+
+// [0-9]*\.[0-9]+
 
 -- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
 
@@ -101,9 +101,9 @@ NB. _?\d+\.(?=\d+)
 
 // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
 
-// [0-9]+\.[0-9]+
-
 # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
+
+// [0-9]+\.[0-9]+
 
 &#39; [0-9]+\.[0-9]*(?!\.)
 
@@ -137,7 +137,7 @@ A = 2.3
 
 *
 
-Languages *with* Floats include JavaScript, Python, Java, Perl, Go, JSON, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Prolog, Mathematica, WebAssembly, Zig, Ada, TOML, MySQL, Reason, D, Elm, GraphQL, awk, Chapel, F#, Coq, OCaml, ClojureScript, VHDL, Idris, Protocol Buffers, J, F*, IDL, Fennel, Pandas, Verilog, Pony, ActionScript, Hy, Puppet, AutoHotkey, PostScript, Cython, XQuery, Eiffel, EDN, Koka, Zephir, VBScript, Janet, Pig Latin, GNU Octave, QML, Opa, Futhark, Thrift, SPARQL, Agda, POV-Ray SDL, AMPL, Applescript, Ceylon, SystemVerilog, QBasic, NumPy, progsbase, Cryptol, Scilab, HLSL, YANG, GLSL, AutoIt, Turtle, K, Golo, Transact-SQL, Felix, Boo, chaiscript, SuperCollider, AspectJ, ooc, Wax, Nit, Gosu, Ioke, Modelica, Maxima, Shen, Fancy, LiveScript, Xtend, SourcePawn, Io, PL/pgSQL, BlitzMax, Whiley, Icon, LilyPond, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, JSLT, Croc, Jule, Kal, Linden Scripting Language, FloScript, Unicon, monte, MiniD, SAKO, JS++, Speedie, Flatline, Aardvark, parasail, Easytrieve, Crap, Pawn, Urbiscript, Ion, nimrod, AmbientTalk, PromQL, SARL, BALGOL, bag-format, CBOR data definition language, RAISE Specification Language, SquidConf, juttle
+Languages *with* Floats include JavaScript, Python, Java, Perl, Go, JSON, Swift, Lua, Haskell, Clojure, CoffeeScript, Elixir, Erlang, Julia, Prolog, Mathematica, WebAssembly, Zig, Ada, TOML, MySQL, Reason, D, Elm, GraphQL, awk, Chapel, F#, Coq, OCaml, ClojureScript, VHDL, Idris, Protocol Buffers, J, F*, IDL, Fennel, Pandas, Verilog, ActionScript, Pony, Hy, Puppet, AutoHotkey, PostScript, Cython, XQuery, Eiffel, EDN, Koka, Zephir, VBScript, Janet, Pig Latin, QML, GNU Octave, Opa, Futhark, Thrift, Agda, SPARQL, AMPL, POV-Ray SDL, Applescript, Ceylon, SystemVerilog, QBasic, NumPy, progsbase, Cryptol, Scilab, HLSL, YANG, GLSL, Turtle, AutoIt, K, Golo, Transact-SQL, Felix, Boo, chaiscript, SuperCollider, AspectJ, ooc, Wax, Nit, Gosu, Ioke, Modelica, Maxima, Shen, Fancy, LiveScript, Xtend, SourcePawn, Io, PL/pgSQL, BlitzMax, Icon, Whiley, LilyPond, Stan, GDScript, Monkey, OpenEdge ABL, Earl Grey, BlitzBasic, Croc, JSLT, Jule, Kal, Linden Scripting Language, FloScript, Unicon, monte, MiniD, SAKO, JS++, Speedie, Flatline, Aardvark, parasail, Easytrieve, Crap, Pawn, Urbiscript, Ion, nimrod, AmbientTalk, PromQL, SARL, BALGOL, bag-format, CBOR data definition language, RAISE Specification Language, SquidConf, juttle
 
 *
 

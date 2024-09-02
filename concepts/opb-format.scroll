@@ -1,0 +1,19 @@
+import ../code/conceptPage.scroll
+
+id opb-format
+name OPB Format
+appeared 2009
+creators Olivier Roussel and Vasco Manquinho
+tags textDataFormat
+description A format for encoding pseudo-Boolean optimization problems. It is used to represent linear pseudo-Boolean constraints and objective functions.
+fileExtensions opb
+
+related mps-format
+reference http://www.cril.univ-artois.fr/PB12/format.pdf
+reference https://www.gurobi.com/documentation/current/refman/opb_format.html
+
+example
+ * #variable= 3 #constraint= 2
+ min: 3 x1 + 2 x2 + x3;
+ 2 x1 - 3 x2 + x3 >= 5;
+ x1 + x2 + x3 = 1;
