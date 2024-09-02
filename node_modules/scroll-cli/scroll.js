@@ -614,6 +614,12 @@ class ScrollFile {
     return (viewSourceBaseUrl ? viewSourceBaseUrl.replace(/\/$/, "") + "/" : "") + this.filename
   }
 
+  get gitRepo() {
+    // given https://github.com/breck7/breckyunits.com/blob/main/four-tips-to-improve-communication.scroll
+    // return https://github.com/breck7/breckyunits.com
+    return this.viewSourceUrl.split("/").slice(0, 5).join("/")
+  }
+
   get tags() {
     return this.scrollProgram.get(scrollKeywords.tags) || ""
   }

@@ -24,7 +24,23 @@ heatrixParser
   }
   get tableData() {
     const {coreTable} = this.parent
-    return coreTable ? new Particle(coreTable).asSsv : this.childrenToString()
+    if (!coreTable)
+      return this.childrenToString()
+    let table = new Particle(coreTable).asSsv
+    if (this.parent.firstWord === "transpose") {
+      // drop first line after transpose
+      const lines = table.split("\n")
+      lines.shift()
+      table = lines.join("\n")
+    }
+    // detect years and make strings
+    const lines = table.split("\n")
+    const yearLine = / \d{4}(\s+\d{4})+$/
+    if (yearLine.test(lines[0])) {
+      lines[0] = lines[0].replace(/ /g, " '")
+      table = lines.join("\n")
+    }
+    return table
   }
 
 heatrixAdvancedParser

@@ -17,13 +17,10 @@ metaTagsParser
    return ""
   }
   compile() {
-   const { file } = this.parent
-   const { title, description, openGraphImage, SCROLL_VERSION, canonicalUrl } = file
+   const { title, description, openGraphImage, SCROLL_VERSION, canonicalUrl, gitRepo } = this.parent.file
    const rssFeedUrl = this.parent.get("rssFeedUrl")
-   let rssTag = ""
-   if (rssFeedUrl)
-    rssTag = `<link rel="alternate" type="application/rss+xml" title="${title}" href="${rssFeedUrl}">`
-   // todo: cleanup the head/body stuff.
+   const rssTag = rssFeedUrl ? `<link rel="alternate" type="application/rss+xml" title="${title}" href="${rssFeedUrl}">` : ""
+   const gitTag = gitRepo ? `<link rel="source" type="application/git" title="Source Code Repository" href="${gitRepo}">` : ""
    return `<head>
    <meta charset="utf-8">
    <title>${title}</title>
@@ -36,6 +33,7 @@ metaTagsParser
    <meta property="og:title" content="${title}">
    <meta property="og:description" content="${description}">
    <meta property="og:image" content="${openGraphImage}">
+   ${gitTag}
    ${rssTag}
    <meta name="twitter:card" content="summary_large_image">
   </head>

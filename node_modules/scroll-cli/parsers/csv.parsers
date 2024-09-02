@@ -17,3 +17,6 @@ printCsvParser
    const header = file.csvFields
    return `${header.join(",")}\n${files.map(file => file.toCsv()).join("\n")}`
   }
+  compileCsv() {
+    return this.compile()
+  }
