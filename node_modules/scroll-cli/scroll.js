@@ -131,7 +131,7 @@ const parseMeasures = parser => {
       Coverage: 0,
       Question: particle.definition.description,
       Example: "",
-      Type: "",
+      Type: particle.typeForWebForms,
       Source: particle.sourceDomain,
       //Definition: parsedProgram.root.file.filename + ":" + particle.lineNumber
       SortIndex: particle.sortIndex,

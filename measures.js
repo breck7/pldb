@@ -229,6 +229,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many members in this subreddit?",
+    "Type": "text",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -237,6 +238,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many followers does the linked account have?",
+    "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -526,6 +528,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "What is the Alexa Web Information Service (AWIS) domain ranking?",
+    "Type": "text",
     "Source": "aws.amazon.com",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -695,6 +698,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many project euler members use this language?",
+    "Type": "text",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -753,6 +757,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "What are publications about this language from https://dblp.org/?",
+    "Type": "text",
     "Source": "dblp.org",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -762,6 +767,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many matching publications?",
+    "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -770,6 +776,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "An inline PSV table of hits.",
+    "Type": "text",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -1601,6 +1608,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many central package repositories does this language have?",
+    "Type": "number",
     "SortIndex": 2.9,
     "IsComputed": false
   },
@@ -1609,6 +1617,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "What are basic stats on this repo?",
+    "Type": "text",
     "SortIndex": 2.9,
     "IsComputed": false
   },
@@ -3933,6 +3942,7 @@ const measures = [
     "Values": 0,
     "Coverage": "0%",
     "Question": "What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?",
+    "Type": "text",
     "Source": "insights.stackoverflow.com",
     "SortIndex": 36,
     "IsComputed": false

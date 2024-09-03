@@ -1,0 +1,33 @@
+scrollFormParser
+ crux form
+ popularity 0.006391
+ description Generate input form for ScrollSet.
+ extends abstractAftertextParser
+ javascript
+  compile() {
+    const {measures} = this.parent.file
+    const inputs = measures.filter(measure => !measure.IsComputed).map((measure, index) => {
+      const {Name, Question, IsRequired, Type} = measure
+      const type = Type || "text"
+      const placeholder = Question
+      const ucFirst = Name.substr(0, 1).toUpperCase() + Name.substr(1)
+      // ${index ? "" : "autofocus"} 
+      return `<div><label for="${Name}">${ucFirst}:</label><input placeholder="${placeholder}" type="${type}" id="${Name}" name="${Name}" ${IsRequired ? "required" : ""}></div>`
+    }).join("\n")
+    return `<style> .scrollFormParser {
+      font-family: "Gill Sans", "Bitstream Vera Sans", sans-serif;
+    }
+    .scrollFormParser input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    } .scrollFormParser label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    </style><form class="scrollFormParser" method="get" action="${this.action}">${inputs}<button class="scrollButton" type="submit">Submit</button></form>`
+  }
+  get action() {
+    return this.getWord(1) || ""
+  }

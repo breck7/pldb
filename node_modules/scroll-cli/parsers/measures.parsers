@@ -19,7 +19,7 @@ abstractMeasureParser
  boolean isMeasure true
  float sortIndex 1.9
  boolean isComputed false
- string typeForCsvDocs unspecified
+ string typeForWebForms text
  extends abstractScrollParser
  javascript
   compileEmbeddedVersion() {
@@ -39,17 +39,20 @@ abstractMeasureParser
 abstractWordMeasureParser
  description A measure that contains a single word.
  cells measureNameCell wordCell
- string typeForCsvDocs word
  extends abstractMeasureParser
 
 abstractStringMeasureParser
- string typeForCsvDocs string
  catchAllCellType stringCell
  extends abstractMeasureParser
 
+abstractEmailMeasureParser
+ string typeForWebForms email
+ cells measureNameCell emailAddressCell
+ extends abstractWordMeasureParser
+
 // URL Parsers
 abstractUrlMeasureParser
- string typeForCsvDocs url
+ string typeForWebForms url
  cells measureNameCell urlCell
  extends abstractWordMeasureParser
 
@@ -79,7 +82,7 @@ abstractIdParser
 
 // Numeric Measures
 abstractNumericMeasureParser
- string typeForCsvDocs number
+ string typeForWebForms number
  extends abstractMeasureParser
  javascript
   get measureValue() {
@@ -88,7 +91,6 @@ abstractNumericMeasureParser
   }
 
 abstractIntegerMeasureParser
- string typeForCsvDocs integer
  cells measureNameCell integerCell
  extends abstractNumericMeasureParser
 
@@ -107,13 +109,11 @@ abstractPercentageMeasureParser
 
 // Enum Measures
 abstractEnumMeasureParser
- string typeForCsvDocs enum
  cells measureNameCell enumCell
  extends abstractMeasureParser
 
 // Boolean Measures
 abstractBooleanMeasureParser
- string typeForCsvDocs boolean
  cells measureNameCell booleanCell
  extends abstractMeasureParser
  javascript
