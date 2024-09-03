@@ -12,7 +12,7 @@ scrollFormParser
       const placeholder = Question
       const ucFirst = Name.substr(0, 1).toUpperCase() + Name.substr(1)
       // ${index ? "" : "autofocus"} 
-      return `<div><label for="${Name}">${ucFirst}:</label><input placeholder="${placeholder}" type="${type}" id="${Name}" name="${Name}" ${IsRequired ? "required" : ""}></div>`
+      return `<div><label for="${Name}" title="${IsRequired ? "Required" : ""}">${ucFirst}${IsRequired ? "*" : ""}:</label><input placeholder="${placeholder}" type="${type}" id="${Name}" name="${Name}" ${IsRequired ? "required" : ""}></div>`
     }).join("\n")
     return `<style> .scrollFormParser {
       font-family: "Gill Sans", "Bitstream Vera Sans", sans-serif;
