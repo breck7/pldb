@@ -802,6 +802,566 @@ box-sizing: border-box;
 <div><label for="semanticScholar" title="">SemanticScholar:</label><input placeholder="What are papers about this language from Semantic Scholar?" type="string" id="semanticScholar" name="semanticScholar" ></div>
 <div><label for="goodreads" title="">Goodreads:</label><input placeholder="What are books about this language from Goodreads?" type="string" id="goodreads" name="goodreads" ></div><button class="scrollButton" type="submit">Submit</button></form>
 </div>
+<link rel="stylesheet" href="codeMirror.css">
+<script src="scrollLibs.js"></script>
+
+<style> .scrollFormParser {
+    font-family: "Gill Sans", "Bitstream Vera Sans", sans-serif;
+  }
+.scrollFormParser input , .scrollFormParser textarea{
+padding: 10px;
+margin-bottom: 10px;
+width: 100%;
+box-sizing: border-box;
+} .scrollFormParser label {
+  display: block;
+  margin-bottom: 5px;
+}
+</style><form class="scrollFormParser" method="get" action=""><textarea rows="786" placeholder="" id="scroll" name="scroll"></textarea>
+  <script id="scrollParsers" type="text/plain">// Basic cell types
+blankCell
+anyCell
+
+// Enum cell types
+enumCell
+ paint constant.language
+booleanCell
+ enum true false
+ extends enumCell
+
+// String cell types
+stringCell
+ paint string
+
+wordCell
+ paint string
+ description A non-empty single word string.
+ regex .+
+
+columnNameCell
+ extends stringCell
+
+semanticVersionCell
+ paint string
+ description A 3 part sem version string like 1.2.1
+
+// Date cell types
+dateCell
+ paint string
+
+// Numeric cell types
+numberCell
+ paint constant.numeric
+integerCell
+ extends numberCell
+ paint constant.numeric.integer
+floatCell
+ extends numberCell
+ paint constant.numeric.float
+percentCell
+ paint constant.numeric.float
+ extends stringCell
+ // todo: this currently extends from stringCell b/c scrollsdk needs to be fixed. seems like if extending from number then the hard coded number typescript regex takes precedence over a custom regex
+countCell
+ extends integerCell
+yearCell
+ extends integerCell
+
+// Scroll cell types
+commandWordCell
+ description A word that indicates a certain parser to use.
+ paint keyword
+
+preBuildCommandWordCell
+ extends commandWordCell
+ description Give build command words their own color.
+ paint constant.character.escape
+
+commentCell
+ paint comment
+
+delimiterCell
+ description String to use as a delimiter.
+ paint string
+
+codeCell
+ paint comment
+
+bulletPointCell
+ description Any token used as a bullet point such as "-" or "1." or ">"
+ paint keyword
+
+comparisonCell
+ enum < > <= >= = != includes doesNotInclude empty notEmpty
+ paint constant
+
+personNameCell
+ extends stringCell
+
+// Link cell types
+urlCell
+ paint constant.language
+absoluteUrlCell
+ paint constant.language
+ regex (ftp|https?)://.+
+
+emailAddressCell
+ extends stringCell
+
+// File system cell types
+permalinkCell
+ paint string
+ description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
+
+filePathCell
+ extends stringCell
+
+// HTML cell types
+tagOrUrlCell
+ description An HTML tag or a url.
+ paint constant.language
+
+htmlAttributesCell
+ paint comment
+
+htmlTagCell
+ paint constant.language
+ enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
+
+classNameCell
+ paint constant
+
+htmlIdCell
+ extends anyCell
+
+
+abstractScrollParser
+ cells commandWordCell
+ javascript
+  compileEmbeddedVersion(compileSettings) {
+   return this.compile(compileSettings)
+  }
+  compileTxt() {
+    return ""
+  }
+  getHtmlRequirements(compileSettings) {
+    const {requireOnce} = this
+    if (!requireOnce)
+      return ""
+    const set = compileSettings?.alreadyRequired || this.root.alreadyRequired
+    if (set.has(requireOnce))
+      return ""
+    
+    set.add(requireOnce)
+    return requireOnce + "\n\n"
+  }
+
+abstractScrollWithRequirementsParser
+ extends abstractScrollParser
+ cruxFromId
+ javascript
+  compile(compileSettings) {
+    return this.getHtmlRequirements(compileSettings) + this.compileInstance()
+  }
+
+metaCommandWordCell
+ extends commandWordCell
+ description Give meta command words their own color.
+ paint constant.numeric
+ // Obviously this is not numeric. But I like the green color for now.
+   We need a better design to replace this "paint" concept
+   https://github.com/breck7/scrollsdk/issues/186
+
+abstractTopLevelSingleMetaParser
+ description Use these keywords once per file.
+ extends abstractScrollParser
+ inScope slashCommentParser
+ cruxFromId
+ cells metaCommandWordCell
+ javascript
+  isTopMatter = true
+  isSetterParser = true
+  compile() {
+   return ""
+  }
+
+scrollParser
+ extensions scroll
+ description Scroll is a language for scientists of all ages. Refine, share and collaborate on ideas.
+ root
+ inScope abstractScrollParser blankLineParser
+ catchAllParser errorParser
+ compilesTo html
+ javascript
+  setFile(file) {
+   this.file = file
+   return this
+  }
+  compile(compileSettings) {
+    this.sectionStack = []
+    return this.map(child => child.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
+  }
+  sectionStack = []
+  clearSectionStack() {
+   const result = this.sectionStack.join("")
+   this.sectionStack = []
+   return result
+  }
+  get hakonParser() {
+    if (this.isNodeJs())
+      return require("scrollsdk/products/hakon.nodejs.js")
+    return hakonParser
+  }
+  alreadyRequired = new Set()
+  compileEmbeddedVersion(compileSettings) {
+   this.sectionStack = []
+   return this.map(child => (child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+     .filter(i => i)
+     .join("\n")
+     .trim() + this.clearSectionStack()
+  }
+  get footnotes() {
+   if (this._footnotes === undefined) this._footnotes = this.filter(particle => particle.isFootnote)
+   return this._footnotes
+  }
+  file = {}
+  get title() {
+    return this.file.title || this.get("title")
+  }
+  get permalink() {
+   return this.get("permalink") || this.file.permalink || ""
+  }
+ example
+  # Hello world
+  ## This is Scroll
+  * It compiles to HTML.
+  
+  code
+   // You can add code as well.
+   print("Hello world")
+
+abstractUrlSettingParser
+ extends abstractTopLevelSingleMetaParser
+ cells metaCommandWordCell urlCell
+ cruxFromId
+
+
+buildCommandWordCell
+ extends commandWordCell
+ description Give build command words their own color.
+ paint constant
+
+abstractBuildCommandParser
+ extends abstractScrollParser
+ cruxFromId
+ cells buildCommandWordCell
+ catchAllCellType filePathCell
+ inScope slashCommentParser
+ javascript
+  isTopMatter = true
+  compile() {
+   return ""
+  }
+
+commentLineParser
+ catchAllCellType commentCell
+
+abstractCommentParser
+ description Prints nothing.
+ catchAllCellType commentCell
+ cells commentCell
+ extends abstractScrollParser
+ baseParser blobParser
+ javascript
+  compile() {
+   return ``
+  }
+ catchAllParser commentLineParser
+
+commentParser
+ popularity 0.000193
+ extends abstractCommentParser
+ cruxFromId
+ boolean suggestInAutocomplete false
+
+slashCommentParser
+ popularity 0.005643
+ extends commentParser
+ crux //
+ boolean isPopular true
+ description A comment. Prints nothing.
+ boolean suggestInAutocomplete false
+
+blankLineParser
+ popularity 0.308149
+ description Print nothing. Break section.
+ cells blankCell
+ boolean isPopular true
+ javascript
+  compile() {
+   return this.parent.clearSectionStack()
+  }
+ pattern ^$
+ tags doNotSynthesize
+
+measureNameCell
+ extends commandWordCell
+ // A regex for column names for max compatibility with a broad range of data science tools:
+ regex [a-zA-Z][a-zA-Z0-9]*
+
+buildMeasuresParser
+ popularity 0.000024
+ cruxFromId
+ description Write measures to csv+ files.
+ extends abstractBuildCommandParser
+ sortByParser
+  cruxFromId
+  cells commandWordCell anyCell
+ boolean suggestInAutocomplete false
+
+// The main measure parser. All measures should extend from this.
+abstractMeasureParser
+ cells measureNameCell
+ cruxFromId
+ boolean isMeasure true
+ float sortIndex 1.9
+ boolean isComputed false
+ string typeForWebForms text
+ extends abstractScrollParser
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }
+  compile() {
+   return ""
+  }
+  get measureValue() {
+    return this.content ?? ""
+  }
+  get measureName() {
+    return this.getFirstWordPath().replace(/ /g, "_")
+  }
+
+// String Measures
+abstractWordMeasureParser
+ description A measure that contains a single word.
+ cells measureNameCell wordCell
+ extends abstractMeasureParser
+
+abstractStringMeasureParser
+ catchAllCellType stringCell
+ extends abstractMeasureParser
+
+abstractTextareaMeasureParser
+ string typeForWebForms textarea
+ extends abstractMeasureParser
+ baseParser blobParser
+ javascript
+  get measureValue() {
+    return this.childrenToString().replace(/\n/g, "\\n")
+  }
+
+abstractEmailMeasureParser
+ string typeForWebForms email
+ cells measureNameCell emailAddressCell
+ extends abstractWordMeasureParser
+
+// URL Parsers
+abstractUrlMeasureParser
+ string typeForWebForms url
+ cells measureNameCell urlCell
+ extends abstractWordMeasureParser
+
+// Required ID measure which denotes a concept
+abstractIdParser
+ crux id
+ description What is the ID of this concept?
+ extends abstractStringMeasureParser
+ float sortIndex 1
+ boolean isMeasureRequired true
+ boolean isConceptDelimiter true
+ javascript
+  getErrors() {
+    const errors = super.getErrors()
+    let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
+    if (!requiredMeasureNames.length) return errors
+    let next = this.next
+    while (requiredMeasureNames.length && next.firstWord !== "id" && next.getIndex() !== 0) {
+      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstWord)
+      next = next.next
+    }
+    requiredMeasureNames.forEach(name =>
+      errors.push(this.makeError(`Concept "${this.content}" is missing required measure "${name}".`))
+    )
+    return errors
+  }
+
+// Numeric Measures
+abstractNumericMeasureParser
+ string typeForWebForms number
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+
+abstractIntegerMeasureParser
+ cells measureNameCell integerCell
+ extends abstractNumericMeasureParser
+
+abstractFloatMeasureParser
+ cells measureNameCell floatCell
+ extends abstractNumericMeasureParser
+
+abstractPercentageMeasureParser
+ cells measureNameCell percentCell
+ extends abstractNumericMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+
+// Enum Measures
+abstractEnumMeasureParser
+ cells measureNameCell enumCell
+ extends abstractMeasureParser
+
+// Boolean Measures
+abstractBooleanMeasureParser
+ cells measureNameCell booleanCell
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : content == "true"
+  }
+
+
+errorParser
+ baseParser errorParsertitle PLDB - Add Concept
+
+tags All
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
+
+// Set the base url. Without this trick, browsing the site locally would require serving it via localhost to get relative url paths to work since we reuse the header and footer in nested folders. (There could be a better way to do this.)
+keyboardNav
+
+rssFeedUrl ./blog/feed.xml
+
+baseUrl https://pldb.io/
+description PLDB: a Programming Language Database. Build the next great programming language.
+email feedback@pldb.io
+
+
+
+metaTags
+gazetteCss
+
+stumpNoSnippet
+ link
+  rel stylesheet
+  type text/css
+  href ./gazette.css
+ link
+  rel stylesheet
+  type text/css
+  href ./TrueBaseTheme.css
+
+stumpNoSnippet
+ div
+  class trueBaseThemeHeader
+  a PLDB
+   href ./index.html
+   class trueBaseThemeLogo
+  form
+   style display:inline-block;
+   method get
+   action ./lists/explorer.html
+   input
+    type search
+    id trueBaseThemeHeaderSearch
+    name q
+    placeholder Search
+    autocomplete off
+  a Top 1K
+   href ./lists/top1000.html
+  a Features
+   href ./lists/features.html
+  a Creators
+   href ./lists/creators.html
+  a Events
+   href ./lists/events.html
+  a Podcasts
+   href ./lists/podcasts.html
+  a Books
+   href ./books/index.html
+  a Extensions
+   href ./lists/extensions.html
+  a Interviews
+   href ./blog/interviews.html
+  a Blog
+   href ./blog/index.html
+  a Explorer
+   href ./lists/explorer.html
+  a CSV
+   href ./csv.html
+
+viewSourceButton
+
+
+printTitle
+
+
+
+mediumColumn
+classicForm
+
+scrollForm
+
+buildHtml
+buildTxt
+
+viewSourceLink
+
+copyButtons
+
+stumpNoSnippet
+ div
+  class trueBaseThemeFooter
+  a PLDB
+   href ./index.html
+   class trueBaseThemeLogo
+  span - Build the next great programming language
+  span ·
+  a About
+   href ./pages/about.html
+  span ·
+  a Keywords
+   href ./lists/keywords.html
+  span ·
+  a Resources
+   href ./lists/resources.html
+  span ·
+  a Acknowledgements
+   href ./pages/acknowledgements.html
+  span ·
+  a Part of the World Wide Scroll
+   href https://wws.scroll.pub
+
+<script src="./lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+
+</script>
+  <script>{
+  let {width, height} = document.getElementById('scroll').getBoundingClientRect();
+  const scrollParser = new HandParsersProgram(document.getElementById("scrollParsers").textContent).compileAndReturnRootParser()
+  const codeMirrorInstance = new ParsersCodeMirrorMode("custom", () => scrollParser, undefined, CodeMirror).register().fromTextAreaWithAutocomplete(document.getElementById("scroll"), {
+    lineWrapping: false,
+    lineNumbers: false
+  })
+  codeMirrorInstance.setSize(width, height) }</script><button class="scrollButton" type="submit">Submit</button></form>
 <a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/add.scroll">View source</a>
 <script>
 document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
