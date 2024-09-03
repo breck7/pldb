@@ -45,9 +45,25 @@ scrollFormParser
  extends classicFormParser
  crux scrollForm
  description Generate a Scroll Form.
+ string copyFromExternal codeMirror.css scrollLibs.js
+ string requireOnce
+  <link rel="stylesheet" href="codeMirror.css">
+  <script src="scrollLibs.js"></script>
  javascript
   get inputs() {
     const placeholder = ""
     const Name = "scroll"
-    return `<textarea placeholder="${placeholder}" id="${Name}" name="${Name}"></textarea>`
+    return `<textarea rows="${this.parent.file.measures.length * 2}" placeholder="${placeholder}" id="${Name}" name="${Name}"></textarea>
+    <script id="${Name}Parsers" type="text/plain">${this.parent.file.parsersBundle}</script>
+    <script>{
+    let {width, height} = document.getElementById('${Name}').getBoundingClientRect();
+    const scrollParser = new HandParsersProgram(document.getElementById("${Name}Parsers").textContent).compileAndReturnRootParser()
+    const codeMirrorInstance = new ParsersCodeMirrorMode("custom", () => scrollParser, undefined, CodeMirror).register().fromTextAreaWithAutocomplete(document.getElementById("${Name}"), {
+      lineWrapping: false,
+      lineNumbers: false
+    })
+    codeMirrorInstance.setSize(width, height) }</script>`
+  }
+  compile(compileSettings) {
+    return this.getHtmlRequirements(compileSettings) + super.compile()
   }

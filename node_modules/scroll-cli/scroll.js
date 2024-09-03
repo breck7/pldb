@@ -334,6 +334,31 @@ class ScrollFile {
     return this._measures
   }
 
+  get parsersBundle() {
+    let code =
+      `parsers/cellTypes.parsers
+parsers/root.parsers
+parsers/build.parsers
+parsers/comments.parsers
+parsers/blankLine.parsers
+parsers/measures.parsers
+parsers/errors.parsers`
+        .trim()
+        .split("\n")
+        .map(filepath => Disk.read(path.join(__dirname, filepath)))
+        .join("\n\n")
+        .replace("catchAllParser catchAllParagraphParser", "catchAllParser errorParser") + this.scrollProgram.toString()
+
+    code = code.replace(/^importOnly\n/gm, "").replace(/^import .+/gm, "")
+
+    code = new Particle(code)
+    code.getParticle("commentParser").appendLine("boolean suggestInAutocomplete false")
+    code.getParticle("slashCommentParser").appendLine("boolean suggestInAutocomplete false")
+    code.getParticle("buildMeasuresParser").appendLine("boolean suggestInAutocomplete false")
+
+    return code.toString()
+  }
+
   get tables() {
     return this.scrollProgram.filter(particle => particle.isTabularData && particle.isFirst)
   }
