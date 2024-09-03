@@ -802,6 +802,7 @@ box-sizing: border-box;
 <div><label for="semanticScholar" title="">SemanticScholar:</label><input placeholder="What are papers about this language from Semantic Scholar?" type="string" id="semanticScholar" name="semanticScholar" ></div>
 <div><label for="goodreads" title="">Goodreads:</label><input placeholder="What are books about this language from Goodreads?" type="string" id="goodreads" name="goodreads" ></div><button class="scrollButton" type="submit">Submit</button></form>
 </div>
+<div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <link rel="stylesheet" href="codeMirror.css">
 <script src="scrollLibs.js"></script>
 
@@ -1318,6 +1319,7 @@ printTitle
 mediumColumn
 classicForm
 
+mediumColumn
 scrollForm
 
 buildHtml
@@ -1362,6 +1364,7 @@ stumpNoSnippet
     lineNumbers: false
   })
   codeMirrorInstance.setSize(width, height) }</script><button class="scrollButton" type="submit">Submit</button></form>
+</div>
 <a class="abstractTextLinkParser" href="https://github.com/breck7/pldb/blob/main/add.scroll">View source</a>
 <script>
 document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
