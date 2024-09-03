@@ -45,6 +45,15 @@ abstractStringMeasureParser
  catchAllCellType stringCell
  extends abstractMeasureParser
 
+abstractTextareaMeasureParser
+ string typeForWebForms textarea
+ extends abstractMeasureParser
+ baseParser blobParser
+ javascript
+  get measureValue() {
+    return this.childrenToString().replace(/\n/g, "\\n")
+  }
+
 abstractEmailMeasureParser
  string typeForWebForms email
  cells measureNameCell emailAddressCell

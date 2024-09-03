@@ -329,6 +329,15 @@ abstractStringMeasureParser
  catchAllCellType stringCell
  extends abstractMeasureParser
 
+abstractTextareaMeasureParser
+ string typeForWebForms textarea
+ extends abstractMeasureParser
+ baseParser blobParser
+ javascript
+  get measureValue() {
+    return this.childrenToString().replace(/\n/g, "\\n")
+  }
+
 abstractEmailMeasureParser
  string typeForWebForms email
  cells measureNameCell emailAddressCell
@@ -440,7 +449,7 @@ errorParser
 
 // Hashmap parsers
 abstractHashMapMeasureParser
- string typeForCsvDocs multilineStringMap
+ string typeForWebForms textarea
  extends abstractMeasureParser
  javascript
   get measureValue() {
@@ -490,7 +499,6 @@ abstractPopulationCountMeasureParser
 abstractConceptEdgesMeasureParser
  description Link one concept to other concepts.
  catchAllCellType stringCell
- string typeForCsvDocs conceptFilename[]
  extends abstractStringMeasureParser
  javascript
   get ids() {
@@ -499,20 +507,12 @@ abstractConceptEdgesMeasureParser
   // todo: re-add the method to update these foreign keys if an ID changes.
 
 // Common blob parsers
-abstractStringBlobMeasureParser
- string typeForCsvDocs multilineString
- extends abstractMeasureParser
- baseParser blobParser
- javascript
-  get measureValue() {
-    return this.childrenToString().replace(/\n/g, "\\n")
-  }
 abstractDelimitedValuesBlobMeasureParser
  description A CSV, TSV, or other delimited blob of text.
  // todo: figure out how we want to dump these in CSV export.
- extends abstractStringBlobMeasureParser
+ extends abstractTextareaMeasureParser
 abstractCodeMeasureParser
- extends abstractStringBlobMeasureParser
+ extends abstractTextareaMeasureParser
  javascript
   get measureValue() {
     return this.childrenToString().replace(/[\n\t]/g, " ")
@@ -704,7 +704,6 @@ inboundLinksParser
  float sortIndex 1.9
  extends abstractComputedIntMeasureParser
  description Which other concepts link to this one?
- string typeForCsvDocs string[]
  cells measureNameCell
  catchAllCellType stringCell
 
@@ -2391,7 +2390,6 @@ appearedParser
 isFinishedParser
  description Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.
  extends abstractComputedIntMeasureParser
- string typeForCsvDocs boolean
  cells measureNameCell booleanCell
 
 nativeLanguageParser
@@ -2414,7 +2412,6 @@ interviewsParser
 isOpenSourceParser
  description Is this an open source project?
  extends abstractComputedIntMeasureParser
- string typeForCsvDocs boolean
  cells measureNameCell booleanCell
  float sortIndex 2.01
 

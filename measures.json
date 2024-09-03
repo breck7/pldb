@@ -229,7 +229,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many members in this subreddit?",
-    "Type": "text",
+    "Type": "textarea",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -528,7 +528,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "What is the Alexa Web Information Service (AWIS) domain ranking?",
-    "Type": "text",
+    "Type": "textarea",
     "Source": "aws.amazon.com",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -698,7 +698,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "How many project euler members use this language?",
-    "Type": "text",
+    "Type": "textarea",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -776,7 +776,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "An inline PSV table of hits.",
-    "Type": "text",
+    "Type": "textarea",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -826,6 +826,16 @@
     "Coverage": "0%",
     "Question": "What is the old name of this language?",
     "Example": "ML-flavoured Erlang",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "equation",
+    "Values": 15,
+    "Coverage": "0%",
+    "Question": "What is a LaTeX encoding of this equation?",
+    "Example": "∇xB=µ0*J",
     "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -967,16 +977,6 @@
     "Question": "How many files in the repo?",
     "Example": "49",
     "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "equation",
-    "Values": 15,
-    "Coverage": "0%",
-    "Question": "What is a LaTeX encoding of this equation?",
-    "Example": "∇xB=µ0*J",
-    "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
   },
@@ -1617,7 +1617,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "What are basic stats on this repo?",
-    "Type": "text",
+    "Type": "textarea",
     "SortIndex": 2.9,
     "IsComputed": false
   },
@@ -3942,7 +3942,7 @@
     "Values": 0,
     "Coverage": "0%",
     "Question": "What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?",
-    "Type": "text",
+    "Type": "textarea",
     "Source": "insights.stackoverflow.com",
     "SortIndex": 36,
     "IsComputed": false
