@@ -813,7 +813,7 @@ keyboardNav ${this.prevPage} ${this.nextPage}
 
 endColumns
 
-import ../footer.scroll
+../footer.scroll
 `.replace(/\n\n\n+/g, "\n\n")
   }
 
@@ -1482,7 +1482,7 @@ endColumns
 
 keyboardNav ${previous.permalink} ${next.permalink}
 
-import ../footer.scroll
+../footer.scroll
 `.replace(/\n\n\n+/g, "\n\n")
   }
 }

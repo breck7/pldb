@@ -13,7 +13,7 @@ printCsvParser
  javascript
   compile() {
    const file = this.root.file
-   const files = file.getFilesWithTagsForEmbedding(this.getWordsFrom(1)).map(file => file.file)
+   const files = file.getFilesWithTagsForEmbedding(this.content).map(file => file.file)
    const header = file.csvFields
    return `${header.join(",")}\n${files.map(file => file.toCsv()).join("\n")}`
   }

@@ -1,6 +1,6 @@
 title PLDB Readme
 
-import rootHeader.scroll
+rootHeader.scroll
 
 printTitle
 
@@ -11,7 +11,7 @@ wideColumns 1
 #### View this readme as HTML
  https://pldb.io/readme.html
 
-import code/ciBadges.scroll
+code/ciBadges.scroll
 
 PLDB is a public domain ScrollSet and website containing over 135,000 facts about over 4,000 programming languages.
 
@@ -63,10 +63,10 @@ code
 The most important folder is `concepts`, which contains the ScrollSet (a file for each concept). The file `code/measures.parsers` contains the Parsers (schema) for the ScrollSet.
 You can see the `cloc` language stats on this repo at https://pldb.io/pages/about.html.
 
-import citation.scroll
+citation.scroll
 
 All sources for PLDB can be found here: https://pldb.io/pages/acknowledgements.html
 
 endColumns
 
-import footer.scroll
+footer.scroll

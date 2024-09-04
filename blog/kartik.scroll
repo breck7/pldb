@@ -3,7 +3,7 @@ authors Hassam Alhajaji
 date 11/22/2022
 title A brief interview with Mu creator Dr. Kartik Agaram
 
-import interviewHeader.scroll
+interviewHeader.scroll
 
 Dr. Kartik Agaram is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.
  dateline
@@ -60,4 +60,4 @@ So yes, breakage will be a little more visible where it's normally happening in 
 image images/kartikAgaram.jpg
  caption You have my heartfelt gratitude Dr. Agaram!
 
-import footer.scroll
+footer.scroll

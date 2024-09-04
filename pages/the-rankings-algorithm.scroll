@@ -1,7 +1,7 @@
 tags All
 title The PLDB Rankings Algorithm
 
-import header.scroll
+header.scroll
 printTitle
 
 wideColumns 1
@@ -29,4 +29,4 @@ In the beginning, PLDB did not have any rankings system. But I learned over the 
 Along those lines, improvements to the rankings system make the site better, and therefore I am rather frequently trying to add more signals and improve the algorithm. 100% of the data and code produced by PLDB is open source, public domain, and published to git, so it can be a team effort to continuously build better rankings.
  https://github.com/breck7/pldb published to git
 
-import footer.scroll
+footer.scroll

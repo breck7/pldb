@@ -1,7 +1,7 @@
 permalink index.html
 title 📜 Scroll is a language for scientists of all ages
 
-import header.scroll
+header.scroll
 css html {font-size: var(--base-font-size, 18px);}
 
 printTitle
@@ -40,4 +40,4 @@ npm package · Release Notes · Parser Designer
 
 endColumns
 
-import footer.scroll
+footer.scroll

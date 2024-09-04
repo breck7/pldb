@@ -5,7 +5,7 @@ openGraphImage https://pldb.io/blog/images/originCountries11-3-2022.png
 tags All
 title Where are the most programming languages created?
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 wideColumns 1
 printAuthors
@@ -39,4 +39,4 @@ readingList
 
 endSnippet
 
-import ../footer.scroll
+../footer.scroll

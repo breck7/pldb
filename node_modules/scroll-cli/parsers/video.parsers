@@ -13,3 +13,10 @@ scrollVideoParser
   cells commandWordCell
  javascript
   tag = "video"
+
+quickVideoParser
+ popularity 0.000024
+ extends scrollVideoParser
+ cells urlCell
+ pattern ^[^\s]+\.(mp4|webm|avi|mov)
+ int wordIndex 0

@@ -1,4 +1,4 @@
-scrollSoundParser
+scrollMusicParser
  popularity 0.000024
  extends abstractMediaParser
  crux music
@@ -9,3 +9,10 @@ scrollSoundParser
   compile() {
     return `<audio controls ${this.getAsHtmlAttributes("loop autoplay".split(" "))}><source src="${this.filename}" type="audio/mpeg"></audio>`
   }
+
+quickSoundParser
+ popularity 0.000024
+ extends scrollMusicParser
+ cells urlCell
+ pattern ^[^\s]+\.(mp3|wav|ogg|aac|m4a|flac)
+ int wordIndex 0

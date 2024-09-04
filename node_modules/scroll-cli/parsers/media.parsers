@@ -8,12 +8,13 @@ scrollAutoplayParser
 abstractMediaParser
  extends paragraphParser
  inScope scrollMediaLoopParser scrollAutoplayParser
+ int wordIndex 1
  javascript
   compileTxt() {
     return ""
   }
   get filename() {
-    return this.getWord(1)
+    return this.getWord(this.wordIndex)
   }
   getAsHtmlAttribute(attr) {
     if (!this.has(attr)) return ""

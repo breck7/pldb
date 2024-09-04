@@ -3,7 +3,7 @@ authors Hassam Alhajaji
 date 02/08/2023
 title A brief interview with Tcl creator John Ousterhout
 
-import interviewHeader.scroll
+interviewHeader.scroll
 
 Dr. John Ousterhout is a computer science luminary who has made significant contributions to the field of computer science, particularly in the areas of operating systems and file systems. He is the creator of the Tcl scripting language, and has also worked on several major software projects, including the Log-Structured file system and the Sprite operating system. John Ousterhout's creation of Tcl has had a lasting impact on the technology industry, transforming the way developers think about scripting and automation.
  dateline
@@ -56,4 +56,4 @@ image images/JohnO.jpg
  caption Image source. Thank you for your time Dr. Ousterhout!
   https://www.facesofopensource.com/ Image source
 
-import footer.scroll
+footer.scroll

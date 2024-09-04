@@ -4,7 +4,7 @@ replaceJs DAYS_SINCE_LAUNCH Math.floor(dayjs().diff(dayjs("2022-08-28"), "day", 
 tags All
 title About
 
-import header.scroll
+header.scroll
 printTitle
 
 thinColumns 4
@@ -78,6 +78,6 @@ bashCode
 The site owes its existence to a kind (_but firm_) Internet commenter who told Breck Yunits to "learn to research properly" if he wanted to make his languages any good.
  https://breckyunits.com Breck Yunits
 
-import ../citation.scroll
+../citation.scroll
 
-import footer.scroll
+footer.scroll

@@ -5,7 +5,7 @@ openGraphImage https://pldb.io/blog/images/originCountries.png
 tags archive
 title Where are the most programming languages created?
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 wideColumns 1
 printAuthors
@@ -21,4 +21,4 @@ The code for the visualization above was written in the Explorer language.
 
 endSnippet
 
-import footer.scroll
+footer.scroll

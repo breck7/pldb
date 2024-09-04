@@ -7,7 +7,7 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 // A ScrollSet with information on books about programming languages
 
-import ../header.scroll
+../header.scroll
 
 extraWideColumnsParser
  extends wideColumnsParser
@@ -623,4 +623,4 @@ tableSearch
 
 endColumns
 
-import ../footer.scroll
+../footer.scroll

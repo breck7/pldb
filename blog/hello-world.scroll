@@ -4,7 +4,7 @@ date 2017.11.15 12:00:00 -8000
 tags All
 title Hello, world!
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 thinColumns 1
 printAuthors
@@ -25,4 +25,4 @@ This site is for two types of people:
 
 endSnippet
 
-import footer.scroll
+footer.scroll

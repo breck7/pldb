@@ -5,7 +5,7 @@ replace PD <b>print("debugging")</b>
 tags All
 title "print() debugging" in over 300 languages
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 mediumColumns 1
 printAuthors
@@ -215,4 +215,4 @@ table
     )
   }
 
-import footer.scroll
+footer.scroll

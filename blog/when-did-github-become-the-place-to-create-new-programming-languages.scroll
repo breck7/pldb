@@ -4,7 +4,7 @@ date 2018.11.06 12:00:00 -8000
 tags All
 title When did GitHub become the place to host new programming language projects?
 
-import postHeader.scroll
+postHeader.scroll
 mediumColumns 1
 printTitle
 printAuthors
@@ -110,4 +110,4 @@ ohayoCode
         colorColumn githubRepo
         yColumn count
 
-import footer.scroll
+footer.scroll

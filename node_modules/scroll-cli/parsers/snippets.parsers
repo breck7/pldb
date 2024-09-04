@@ -34,7 +34,7 @@ printSnippetsParser
   }
   get files() {
    const thisFile = this.parent.file
-   const files = this.parent.file.getFilesWithTagsForEmbedding(this.getWordsFrom(1), this.has("limit") ? parseInt(this.get("limit")) : undefined).filter(file => file.file !== thisFile)
+   const files = this.parent.file.getFilesWithTagsForEmbedding(this.content, this.has("limit") ? parseInt(this.get("limit")) : undefined).filter(file => file.file !== thisFile)
    // allow sortBy lastCommit Time
    if (this.get("sortBy") === "commitTime") {
      return require("lodash").sortBy(files, file => file.file.lastCommitTime).reverse()

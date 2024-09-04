@@ -418,8 +418,8 @@ abstractBooleanMeasureParser
 
 importParser
  description Import a file.
+ popularity 0.007524
  cruxFromId
- boolean isPopular true
  cells preBuildCommandWordCell
  extends abstractScrollParser
  catchAllCellType filePathCell
@@ -429,6 +429,20 @@ importParser
   }
  example
   import header.scroll
+
+quickImportParser
+ popularity 0.007524
+ description Import a Scroll or Parsers file.
+ extends abstractScrollParser
+ boolean isPopular true
+ cells urlCell
+ pattern ^[^\s]+\.(scroll|parsers)$
+ javascript
+  compile() {
+   return ""
+  }
+ example
+  header.scroll
 
 importOnlyParser
  popularity 0.033569

@@ -148,7 +148,7 @@ commentCell
 parsersParser
  root
  description A programming language for making languages.
- // Parsers is a language for creating new languages on top of ParticleS. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and virtual machine for executing your new language. Parsers uses both postfix and prefix language features.
+ // Parsers is a language for creating new languages on top of Particles. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and virtual machine for executing your new language. Parsers uses both postfix and prefix language features.
  catchAllParser catchAllErrorParser
  extensions parsers gram
  example A parsers that parses anything:
