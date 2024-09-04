@@ -1,9 +1,9 @@
 title PLDB - Add Concept
 
-import rootHeader.scroll
+rootHeader.scroll
 printTitle
 
-import code/measures.parsers
+code/measures.parsers
 
 mediumColumn
 classicForm
@@ -11,4 +11,4 @@ classicForm
 mediumColumn
 scrollForm
 
-import footer.scroll
+footer.scroll

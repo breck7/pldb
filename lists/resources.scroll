@@ -1,7 +1,7 @@
 tags All
 title Resources for Programming Language Designers
 
-import header.scroll
+header.scroll
 printTitle
 
 <div class="singleColumn">
@@ -153,5 +153,5 @@ table
 
 </div>
 
-import ../footer.scroll
+../footer.scroll
 tableSearch

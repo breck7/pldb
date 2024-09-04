@@ -2,7 +2,7 @@ buildConcepts events.json events.tsv events.csv
 tags All
 title Conferences of Interest to Programming Language Designers
 
-import header.scroll
+header.scroll
 printTitle
 
 thinColumns 1
@@ -837,4 +837,4 @@ location San Diego, CA, USA
 country USA
 nameLink http://research.ihost.com/hopl/HOPL-III.html
 
-import ../footer.scroll
+../footer.scroll

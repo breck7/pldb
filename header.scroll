@@ -1,7 +1,7 @@
 importOnly
 rssFeedUrl BASE_URL/blog/feed.xml
 
-import settings.scroll
+settings.scroll
 metaTags
 gazetteCss
 

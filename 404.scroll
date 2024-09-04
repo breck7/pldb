@@ -3,7 +3,7 @@ replace BASE_URL
 title Page not found
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
 
-import header.scroll
+header.scroll
 
 printTitle
 thinColumns 1

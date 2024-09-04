@@ -5,7 +5,7 @@ openGraphImage pairProgramming.jpg
 tags All frontpage pldbBehindTheScenes
 title Video: Adding a language to PLDB
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 printAuthors
 mediumColumns 1
@@ -42,4 +42,4 @@ youTube https://www.youtube.com/embed/az7T-GgxiKU
 
 endColumns
 
-import ../footer.scroll
+../footer.scroll

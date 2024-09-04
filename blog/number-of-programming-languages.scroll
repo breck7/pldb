@@ -5,7 +5,7 @@ openGraphImage https://pldb.io/blog/images/languageTrends.png
 tags All
 title What is the growth in programming languages over time?
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 wideColumns 1
 printAuthors
@@ -23,4 +23,4 @@ endSnippet
 
 endColumns
 
-import ../footer.scroll
+../footer.scroll

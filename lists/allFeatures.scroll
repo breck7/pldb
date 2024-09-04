@@ -4,7 +4,7 @@ replaceNodejs
 tags All
 title All Features
 
-import header.scroll
+header.scroll
 printTitle
 
 mediumColumns 1
@@ -15,5 +15,5 @@ endSnippet
 
 TABLE
 
-import footer.scroll
+footer.scroll
 tableSearch

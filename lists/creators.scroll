@@ -4,7 +4,7 @@ replaceNodejs
 tags All
 title List of people who created a programming language
 
-import header.scroll
+header.scroll
 printTitle
 
 wideColumns 1
@@ -36,5 +36,5 @@ TABLE
  Todo:
  Name | Wikipedia | Website | GitHub
 
-import footer.scroll
+footer.scroll
 tableSearch

@@ -12,10 +12,10 @@ replaceJs TEMPLATE
 
 tags All
 
-import measures.parsers
+measures.parsers
 
-import ../header.scroll
+../header.scroll
 
 TEMPLATE
 
-import ../footer.scroll
+../footer.scroll

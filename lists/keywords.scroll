@@ -4,7 +4,7 @@ replaceNodejs
 tags All
 title List of all keywords used in all programming languages
 
-import header.scroll
+header.scroll
 printTitle
 
 Here is the list of NUM_KEYWORDS keywords for the LANGS_WITH_KEYWORD_DATA languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.
@@ -17,5 +17,5 @@ endSnippet
 
 KEYWORDS_TABLE
 
-import footer.scroll
+footer.scroll
 tableSearch

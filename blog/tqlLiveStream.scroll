@@ -4,7 +4,7 @@ date 02/4/2023
 tags pldbBehindTheScenes
 title TQL livestream
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 printAuthors
 
@@ -28,4 +28,4 @@ Sometimes I learn something high level, like how to better name my functions. Ot
 
 endColumns
 
-import ../footer.scroll
+../footer.scroll

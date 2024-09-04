@@ -4,7 +4,7 @@ buildMeasures measures.tsv measures.csv measures.json measures.js
 loadConcepts concepts
 title PLDB.CSV
 
-import rootHeader.scroll
+rootHeader.scroll
 printTitle
 
 Download the PLDB ScrollSet as: CSV | TSV | JSON
@@ -12,7 +12,7 @@ Download the PLDB ScrollSet as: CSV | TSV | JSON
  link pldb.tsv TSV
  link pldb.json JSON
 
-import code/measures.parsers
+code/measures.parsers
 
 Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
  link measures.csv CSV
@@ -22,4 +22,4 @@ table measures.csv
  printTable
 tableSearch
 
-import footer.scroll
+footer.scroll

@@ -4,7 +4,7 @@ replaceNodejs
 tags All
 title List of communities where programming languages have originated
 
-import header.scroll
+header.scroll
 printTitle
 
 <div class="singleColumn">
@@ -17,5 +17,5 @@ TABLE
 
 </div>
 
-import footer.scroll
+footer.scroll
 tableSearch

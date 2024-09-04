@@ -4,7 +4,7 @@ date 2017.11.17 12:00:00 -8000
 tags All
 title How Many Programming Languages are there in the World?
 
-import postHeader.scroll
+postHeader.scroll
 mediumColumns 1
 printTitle
 printAuthors
@@ -80,4 +80,4 @@ ohayoCode
   filter.where type = pl
    show.rowCount
 
-import footer.scroll
+footer.scroll

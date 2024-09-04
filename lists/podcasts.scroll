@@ -6,7 +6,7 @@ title Podcasts about Programming
 
 // todo: add youtube links and subscriber counts?
 
-import header.scroll
+header.scroll
 printTitle
 
 thinColumns 1
@@ -355,5 +355,5 @@ This ScrollSet was inspired by this post on HackerNews.
  https://scroll.pub/blog/scrollsets.html ScrollSet
  https://news.ycombinator.com/item?id=40889280 this post
 
-import ../footer.scroll
+../footer.scroll
 tableSearch

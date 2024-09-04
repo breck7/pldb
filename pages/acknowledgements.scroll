@@ -7,7 +7,7 @@ title Acknowledgements
 // Currently fetched manually because of pagination.
 // https://api.github.com/repos/breck7/pldb/contributors
 
-import header.scroll
+header.scroll
 printTitle
 
 thinColumns
@@ -35,4 +35,4 @@ WRITTEN_IN_TABLE
 And of course, thank you to all of the language creators who created the languages that are the subject of this site.
  link BASE_URL/lists/creators.html language creators
 
-import footer.scroll
+footer.scroll

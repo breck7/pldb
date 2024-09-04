@@ -4,7 +4,7 @@ date 2022.07.14
 tags All
 title A Language Without Comments
 
-import postHeader.scroll
+postHeader.scroll
 printTitle
 printAuthors
 mediumColumns 1
@@ -34,4 +34,4 @@ A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON 
  link BASE_URL/concepts/hjson.html Hjson
  link BASE_URL/concepts/json-with-comments.html JSON with Comments
 
-import footer.scroll
+footer.scroll
