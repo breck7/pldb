@@ -2545,7 +2545,7 @@ Particle.iris = `sepal_length,sepal_width,petal_length,petal_width,species
 4.9,2.5,4.5,1.7,virginica
 5.1,3.5,1.4,0.2,setosa
 5,3.4,1.5,0.2,setosa`
-Particle.getVersion = () => "85.1.0"
+Particle.getVersion = () => "85.2.0"
 class AbstractExtendibleParticle extends Particle {
   _getFromExtended(firstWordPath) {
     const hit = this._getParticleFromExtended(firstWordPath)

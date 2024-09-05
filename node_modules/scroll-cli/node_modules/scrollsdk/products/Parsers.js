@@ -2018,54 +2018,13 @@ class HandParsersProgram extends AbstractParserDefinitionParser {
     const cellTypes = this.cellTypeDefinitions
     const parserLineage = this.parserLineage
     const exampleParticle = rootParticleDef.examples[0]
-    return `title ${languageName} Readme
-
-paragraph ${rootParticleDef.description}
-
-subtitle Quick Example
-
-code
-${exampleParticle ? exampleParticle.childrenToString(1) : ""}
-
-subtitle Quick facts about ${languageName}
+    return `title2 ${languageName} stats
 
 list
- - ${languageName} has ${parserLineage.topDownArray.length} particle types.
- - ${languageName} has ${Object.keys(cellTypes).length} cell types
+ - ${languageName} has ${parserLineage.topDownArray.length} parsers.
+ - ${languageName} has ${Object.keys(cellTypes).length} cell types.
  - The source code for ${languageName} is ${this.topDownArray.length} lines long.
-
-subtitle Installing
-
-code
- npm install .
-
-subtitle Testing
-
-code
- node test.js
-
-subtitle Parsers
-
-code
-${parserLineage.toString(1)}
-
-subtitle Cell Types
-
-code
-${new Particle(Object.keys(cellTypes).join("\n")).toString(1)}
-
-subtitle Road Map
-
-paragraph Here are the "todos" present in the source code for ${languageName}:
-
-list
-${this.topDownArray
-  .filter(particle => particle.getWord(0) === "todo")
-  .map(particle => ` - ${particle.getLine()}`)
-  .join("\n")}
-
-paragraph This readme was auto-generated using the
- link https://github.com/breck7/scrollsdk ScrollSDK.`
+`
   }
   toBundle() {
     const files = {}

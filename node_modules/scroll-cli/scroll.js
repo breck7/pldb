@@ -131,7 +131,7 @@ const parseMeasures = parser => {
       Values: 0,
       Coverage: 0,
       Question: particle.definition.description,
-      Example: "",
+      Example: particle.definition.getParticle("example")?.childrenToString() || "",
       Type: particle.typeForWebForms,
       Source: particle.sourceDomain,
       //Definition: parsedProgram.root.file.filename + ":" + particle.lineNumber
