@@ -587,14 +587,14 @@ var autocompleteJs = [
     "url": "/concepts/objective-c.html"
   },
   {
-    "label": "Prolog",
-    "id": "prolog",
-    "url": "/concepts/prolog.html"
-  },
-  {
     "label": "Julia",
     "id": "julia",
     "url": "/concepts/julia.html"
+  },
+  {
+    "label": "Prolog",
+    "id": "prolog",
+    "url": "/concepts/prolog.html"
   },
   {
     "label": "Lisp",
@@ -637,14 +637,14 @@ var autocompleteJs = [
     "url": "/concepts/visual-basic.html"
   },
   {
-    "label": "Solidity",
-    "id": "solidity",
-    "url": "/concepts/solidity.html"
-  },
-  {
     "label": "WebAssembly",
     "id": "wasm",
     "url": "/concepts/wasm.html"
+  },
+  {
+    "label": "Solidity",
+    "id": "solidity",
+    "url": "/concepts/solidity.html"
   },
   {
     "label": "Zig",
@@ -892,14 +892,14 @@ var autocompleteJs = [
     "url": "/concepts/yacc.html"
   },
   {
-    "label": "APL",
-    "id": "apl",
-    "url": "/concepts/apl.html"
-  },
-  {
     "label": "Make",
     "id": "make",
     "url": "/concepts/make.html"
+  },
+  {
+    "label": "APL",
+    "id": "apl",
+    "url": "/concepts/apl.html"
   },
   {
     "label": "Assembly language",
@@ -1057,14 +1057,14 @@ var autocompleteJs = [
     "url": "/concepts/saltstack.html"
   },
   {
-    "label": "IDL",
-    "id": "idl",
-    "url": "/concepts/idl.html"
-  },
-  {
     "label": "Flow",
     "id": "flow",
     "url": "/concepts/flow.html"
+  },
+  {
+    "label": "IDL",
+    "id": "idl",
+    "url": "/concepts/idl.html"
   },
   {
     "label": "Fennel",
@@ -1087,14 +1087,14 @@ var autocompleteJs = [
     "url": "/concepts/delphi.html"
   },
   {
-    "label": "Stata",
-    "id": "stata",
-    "url": "/concepts/stata.html"
-  },
-  {
     "label": "Standard ML",
     "id": "standard-ml",
     "url": "/concepts/standard-ml.html"
+  },
+  {
+    "label": "Stata",
+    "id": "stata",
+    "url": "/concepts/stata.html"
   },
   {
     "label": "ABAP",
@@ -1637,14 +1637,14 @@ var autocompleteJs = [
     "url": "/concepts/magit.html"
   },
   {
-    "label": "Processing",
-    "id": "processing",
-    "url": "/concepts/processing.html"
-  },
-  {
     "label": "Agda",
     "id": "agda",
     "url": "/concepts/agda.html"
+  },
+  {
+    "label": "Processing",
+    "id": "processing",
+    "url": "/concepts/processing.html"
   },
   {
     "label": "SPARQL",
@@ -2132,14 +2132,14 @@ var autocompleteJs = [
     "url": "/concepts/simula.html"
   },
   {
-    "label": "eC",
-    "id": "ec",
-    "url": "/concepts/ec.html"
-  },
-  {
     "label": "wisp",
     "id": "wisp",
     "url": "/concepts/wisp.html"
+  },
+  {
+    "label": "eC",
+    "id": "ec",
+    "url": "/concepts/ec.html"
   },
   {
     "label": "Clean",
@@ -2577,14 +2577,14 @@ var autocompleteJs = [
     "url": "/concepts/apache-hbase.html"
   },
   {
-    "label": "Nit",
-    "id": "nit",
-    "url": "/concepts/nit.html"
-  },
-  {
     "label": "jasmine",
     "id": "jasmine",
     "url": "/concepts/jasmine.html"
+  },
+  {
+    "label": "Nit",
+    "id": "nit",
+    "url": "/concepts/nit.html"
   },
   {
     "label": "Gosu",
@@ -2877,14 +2877,14 @@ var autocompleteJs = [
     "url": "/concepts/opam-pm.html"
   },
   {
-    "label": "Fantom",
-    "id": "fantom",
-    "url": "/concepts/fantom.html"
-  },
-  {
     "label": "NCAR Command Language",
     "id": "ncl",
     "url": "/concepts/ncl.html"
+  },
+  {
+    "label": "Fantom",
+    "id": "fantom",
+    "url": "/concepts/fantom.html"
   },
   {
     "label": "Amber",
@@ -3847,14 +3847,14 @@ var autocompleteJs = [
     "url": "/concepts/pan.html"
   },
   {
-    "label": "Apex",
-    "id": "apex",
-    "url": "/concepts/apex.html"
-  },
-  {
     "label": "CIL",
     "id": "cilk",
     "url": "/concepts/cilk.html"
+  },
+  {
+    "label": "Apex",
+    "id": "apex",
+    "url": "/concepts/apex.html"
   },
   {
     "label": "haste",

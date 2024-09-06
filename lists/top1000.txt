@@ -38,8 +38,8 @@ Elixir,29,2011,pl,José Valim,14,62402,214,14,96,../concepts/elixir.html
 Erlang,30,1986,pl,Joe Armstrong and Robert Virding and Mike Williams,14,48215,308,14,75,../concepts/erlang.html
 SAS,31,1976,pl,Anthony James Barr,8,361103,4682,10,43,../concepts/sas.html
 Objective-C,32,1984,pl,Brad Cox,53,12380,4276,56,68,../concepts/objective-c.html
-Prolog,33,1972,pl,Alain Colmerauer,11,51482,446,17,58,../concepts/prolog.html
-Julia,34,2012,pl,Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah,10,88390,85,10,87,../concepts/julia.html
+Julia,33,2012,pl,Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah,10,88390,85,10,87,../concepts/julia.html
+Prolog,34,1972,pl,Alain Colmerauer,11,51482,446,17,58,../concepts/prolog.html
 Lisp,35,1958,pl lisp,John McCarthy,129,61481,303,136,31,../concepts/lisp.html
 Mathematica,36,1988,pl mathematics physics chemistry biology,Stephen Wolfram,6,148741,1553,8,47,../concepts/mathematica.html
 COBOL,37,1959,pl,Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper,4,187188,2616,5,54,../concepts/cobol.html
@@ -48,8 +48,8 @@ CUDA,39,2007,pl,,16,38623,769,16,36,../concepts/cuda.html
 Markdown,40,2004,textMarkup,John Gruber and Aaron Swartz,1045,12504,0,1058,36,../concepts/markdown.html
 Racket,41,1994,pl lisp,Matthias Felleisen and Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi,23,14537,48,26,60,../concepts/racket.html
 Visual Basic,42,1991,pl,,13,15898,3294,14,47,../concepts/visual-basic.html
-Solidity,43,2014,contractLanguage,Christian Reitwiessner and Alex Beregszaszi,5,42793,937,8,51,../concepts/solidity.html
-WebAssembly,44,2015,bytecode,Alon Zakai,25,22980,5,33,39,../concepts/wasm.html
+WebAssembly,43,2015,bytecode,Alon Zakai,25,22980,5,33,40,../concepts/wasm.html
+Solidity,44,2014,contractLanguage,Christian Reitwiessner and Alex Beregszaszi,5,42793,937,8,51,../concepts/solidity.html
 Zig,45,2015,pl,Andrew Kelley,12,46757,0,12,43,../concepts/zig.html
 YAML,46,2001,dataNotation,Clark Evans and Oren Ben-Kiki and Ingy döt Net,736,13981,61,745,31,../concepts/yaml.html
 Nim,47,2008,pl,Andreas Rumpf,12,23837,0,13,65,../concepts/nim.html
@@ -60,7 +60,7 @@ Fortran,51,1957,pl physics chemistry biology,John Backus,0,165151,1931,5,61,../c
 PostgreSQL,52,1986,queryLanguage,Marc G. Fournier,0,348936,13084,3,48,../concepts/postgresql.html
 Crystal,53,2014,pl,Ary Borenszweig and Juan Wajnerman and Brian Cardiff,7,29786,0,9,62,../concepts/crystal.html
 MySQL,54,1995,queryLanguage,David Axmark and Michael Widenius,0,2608362,47466,1,49,../concepts/mysql.html
-Reason,55,2016,pl,,11,11721,0,12,58,../concepts/reason.html
+Reason,55,2016,pl,,11,11721,0,12,59,../concepts/reason.html
 D,56,2001,pl,Walter Bright and Andrei Alexandrescu,26,6311,0,27,66,../concepts/d.html
 Elm,57,2012,pl,Evan Czaplicki,6,12193,127,9,55,../concepts/elm.html
 Haxe,58,2005,pl,Nicolas Cannasse,11,10282,1,12,50,../concepts/haxe.html
@@ -72,7 +72,7 @@ Tex,63,1978,pl,Donald Knuth,112,4276,3,118,38,../concepts/tex.html
 Groovy,64,2003,pl,James Strachan,13,6056,0,13,66,../concepts/groovy.html
 SPSS,65,1968,pl,Norman H. Nie and C. Hadlai Hull and Dale H. Bent,0,965674,9587,2,29,../concepts/spss.html
 Chapel,66,2004,pl,David Callahan and Hans Zima and Brad Chamberlain and John Plevyak,3,16897,1,3,59,../concepts/chapel.html
-F#,67,2005,pl,Don Syme,19,4316,0,19,73,../concepts/f-sharp.html
+F#,67,2005,pl,Don Syme,19,4316,0,19,74,../concepts/f-sharp.html
 Coq,68,1989,pl,Thierry Coquand,8,10566,0,8,39,../concepts/coq.html
 OCaml,69,1996,pl,Xavier Leroy,48,3341,0,51,66,../concepts/ocaml.html
 LLVM IR,70,2003,ir,,21,5812,23,24,33,../concepts/llvmir.html
@@ -99,8 +99,8 @@ Ini,90,1987,dataNotation,,105,2950,0,107,29,../concepts/ini.html
 Brainfuck,91,1993,esolang,Urban Müller,8,6460,0,10,28,../concepts/brainfuck.html
 ARM,92,1985,assembly,Sophie Wilson and Steve Furber,0,123423,7695,1,24,../concepts/arm.html
 Yacc,93,1975,grammarLanguage compiler,Stephen C. Johnson,65,3087,17,67,27,../concepts/yacc.html
-APL,94,1964,pl,Kenneth E. Iverson,4,3670,0,10,39,../concepts/apl.html
-Make,95,1976,pl application,Stuart Feldman,457,1860,0,459,35,../concepts/make.html
+Make,94,1976,pl application,Stuart Feldman,457,1860,0,459,35,../concepts/make.html
+APL,95,1964,pl,Kenneth E. Iverson,4,3670,0,10,39,../concepts/apl.html
 Assembly language,96,1960,assembly,,93,26543,1329,93,17,../concepts/assembly-language.html
 odin,97,2016,pl,,4,8271,0,4,29,../concepts/odin.html
 Gleam,98,2016,pl,Louis Pilfold,3,19183,0,3,25,../concepts/gleam.html
@@ -132,14 +132,14 @@ sed,123,1974,pl,Lee E. McMahon,25,1865,0,25,29,../concepts/sed.html
 V,124,2019,pl,Alexander Medvednikov,0,44462,0,0,30,../concepts/v.html
 F*,125,2014,pl,,0,4057,0,2,35,../concepts/fstar.html
 SaltStack,126,2011,pl,Thomas S Hatch,3,34669,0,3,19,../concepts/saltstack.html
-IDL,127,1977,pl,David Stern,21,1281,0,21,39,../concepts/idl.html
-Flow,128,2014,pl,,0,28666,0,1,23,../concepts/flow.html
+Flow,127,2014,pl,,0,28666,0,1,23,../concepts/flow.html
+IDL,128,1977,pl,David Stern,21,1281,0,21,39,../concepts/idl.html
 Fennel,129,2016,pl,Calvin Rose,5,2824,0,5,29,../concepts/fennel.html
 KaTeX,130,2013,textMarkup,Emily Eisenberg,0,21717,0,2,22,../concepts/katex.html
 Dhall,131,2017,dataNotation,,6,4803,0,6,23,../concepts/dhall.html
 Delphi,132,1995,pl,Anders Hejlsberg,0,7084,181,0,45,../concepts/delphi.html
-Stata,133,1985,pl,William Gould,2,2816,0,3,34,../concepts/stata.html
-Standard ML,134,1990,pl,,11,1726,0,11,32,../concepts/standard-ml.html
+Standard ML,133,1990,pl,,11,1726,0,11,33,../concepts/standard-ml.html
+Stata,134,1985,pl,William Gould,2,2816,0,3,34,../concepts/stata.html
 ABAP,135,1983,pl,,1,2416,283,1,47,../concepts/abap.html
 PostCSS,136,2013,textMarkup,Andrey Sitnik,0,33679,0,0,27,../concepts/postcss.html
 Z shell,137,1990,pl,Paul Falstad,20,1326,0,20,34,../concepts/z-shell.html
@@ -248,8 +248,8 @@ CSON,239,2011,dataNotation,Benjamin Lupton,10,1722,0,10,19,../concepts/cson.html
 Ace Editor,240,2010,editor,Fabian Jakobs,0,43023,0,2,15,../concepts/ace.html
 Bourne shell,241,1977,pl,Stephen Bourne,580,1370,0,580,17,../concepts/bourne-shell.html
 Magit,242,2013,application,Marius Vollmer,0,9279,0,1,17,../concepts/magit.html
-Processing,243,2001,pl,,0,2366,0,0,32,../concepts/processing.html
-Agda,244,2007,pl,Ulf Norell and Catarina Coquand,4,731,0,4,37,../concepts/agda.html
+Agda,243,2007,pl,Ulf Norell and Catarina Coquand,4,731,0,4,37,../concepts/agda.html
+Processing,244,2001,pl,,0,2366,0,0,32,../concepts/processing.html
 SPARQL,245,2008,queryLanguage,,0,2165,0,0,33,../concepts/sparql.html
 RDF,246,1997,dataNotation,,0,4096,0,8,17,../concepts/rdf.html
 Scala.js,247,2013,pl,Martin Odersky,0,6033,0,0,22,../concepts/scala-js.html
@@ -347,8 +347,8 @@ Twig,338,2009,template,,2,616,0,2,29,../concepts/twig.html
 Djot,339,2022,textMarkup,John MacFarlane,0,1787,0,0,24,../concepts/djot.html
 Observable,340,2017,pl,Mike Bostock,0,1214,0,1,23,../concepts/observable-lang.html
 Simula,341,1965,pl,Ole-Johan Dahl and Kristen Nygaard,0,1110,0,0,34,../concepts/simula.html
-eC,342,2004,pl,Jérôme Jacovella-St-Louis,0,981,0,0,39,../concepts/ec.html
-wisp,343,2012,pl,Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick,0,1413,0,0,27,../concepts/wisp.html
+wisp,342,2012,pl,Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick,0,1413,0,0,27,../concepts/wisp.html
+eC,343,2004,pl,Jérôme Jacovella-St-Louis,0,981,0,0,39,../concepts/ec.html
 Clean,344,1987,pl,,2,481,0,2,37,../concepts/clean.html
 mathics,345,2012,pl,,0,2760,0,0,20,../concepts/mathics.html
 Golo,346,2012,pl,Webmaster,0,1056,0,0,35,../concepts/golo.html
@@ -436,8 +436,8 @@ Meson,427,2013,pl,,17,535,0,17,18,../concepts/meson.html
 Raku,428,2015,pl,Larry Wall,8,216,0,9,41,../concepts/raku.html
 codecept,429,2015,library,,0,6671,0,0,15,../concepts/codecept.html
 Apache Hbase,430,2008,application,,0,16476,65,0,14,../concepts/apache-hbase.html
-Nit,431,2008,pl,Jean Privat,0,679,0,0,32,../concepts/nit.html
-jasmine,432,2008,library,,0,22812,0,0,14,../concepts/jasmine.html
+jasmine,431,2008,library,,0,22812,0,0,14,../concepts/jasmine.html
+Nit,432,2008,pl,Jean Privat,0,679,0,0,32,../concepts/nit.html
 Gosu,433,2002,pl,,0,726,0,0,30,../concepts/gosu.html
 EBNF,434,1977,grammarLanguage,Niklaus Wirth,0,1490,0,1,17,../concepts/ebnf.html
 Lily,435,2011,pl,,0,1226,0,0,22,../concepts/lily.html
@@ -496,8 +496,8 @@ LFE,487,2008,pl,Robert Virding,1,405,0,1,27,../concepts/lfe.html
 Isabelle,488,1986,pl,,0,576,0,0,29,../concepts/isabelle.html
 jsil-compiler,489,2010,compiler,Kevin Gadd,0,2492,0,0,16,../concepts/jsil-compiler.html
 opam-pm,490,2012,packageManager,Fabrice Le Fessant,0,2475,0,0,16,../concepts/opam-pm.html
-Fantom,491,2005,pl,,0,521,0,0,32,../concepts/fantom.html
-NCAR Command Language,492,1994,pl weather,,0,706,0,0,25,../concepts/ncl.html
+NCAR Command Language,491,1994,pl weather,,0,706,0,0,25,../concepts/ncl.html
+Fantom,492,2005,pl,,0,521,0,0,32,../concepts/fantom.html
 Amber,493,2022,pl,PhoenixHimself,0,3939,0,0,15,../concepts/amber.html
 vdscript,494,2000,pl,Avery Lee,0,1021,0,0,21,../concepts/vdscript.html
 Markwhen,495,2022,textMarkup,Rob Koch,0,3816,0,0,15,../concepts/markwhen.html
@@ -690,8 +690,8 @@ ferret,681,2017,pl,Nurullah Akkaya,0,1224,0,0,15,../concepts/ferret.html
 Pure Data,682,1996,pl,,0,706,0,0,17,../concepts/puredata.html
 Tiny C Compiler,683,2001,compiler,,0,3673,0,0,13,../concepts/tinyc-compiler.html
 Pan,684,2011,pl,Charles Loomis,0,337,0,0,24,../concepts/pan.html
-Apex,685,2007,pl,,0,201,0,0,39,../concepts/apex.html
-CIL,686,1994,pl,,0,446,0,0,20,../concepts/cilk.html
+CIL,685,1994,pl,,0,446,0,0,20,../concepts/cilk.html
+Apex,686,2007,pl,,0,201,0,0,39,../concepts/apex.html
 haste,687,2014,pl,Anton Ekblad,0,1841,0,0,14,../concepts/haste.html
 DRAKON,688,1996,pl,Stepan Mitkin,0,1193,0,0,15,../concepts/drakon.html
 Ren'Py,689,2004,pl,,0,870,0,0,16,../concepts/renpy.html
