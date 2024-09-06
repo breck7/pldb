@@ -1186,6 +1186,9 @@ ${maintainersLinks}
     if (quineRelay)
       facts.push(`${title} appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project`)
 
+    const exercism = this.get("exercism")
+    if (exercism) facts.push(`Learn <a href="${exercism}">${title} on exercism.</a>`)
+
     const jupyters = this.getAll("jupyterKernel")
     if (jupyters.length === 1)
       facts.push(

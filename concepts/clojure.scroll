@@ -14,6 +14,7 @@ fileExtensions clj cljs cljc edn
 writtenIn java clojure markdown yaml html xml bourne-shell
 
 isOpenSource true
+exercism https://exercism.org/tracks/clojure
 runsOnVm jvm
 tryItOnline https://tio.run/#clojure
 clocExtensions boot cl2 clj cljs.hl cljscm cljx hic riemann.config
