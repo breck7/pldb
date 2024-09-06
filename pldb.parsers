@@ -3024,6 +3024,14 @@ webReplParser
  extends abstractUrlMeasureParser
  description What is a URL for an online repl of this language?
  single false
+
+exercismParser
+ extends abstractUrlMeasureParser
+ float sortIndex 2.1
+ description What is a URL to learn this language on Exercism?
+ example
+  exercism https://exercism.org/tracks/bash
+
 // domainNameCell
  extends stringCell
  float sortIndex 1.8

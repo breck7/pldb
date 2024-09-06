@@ -169,7 +169,7 @@ const measures = [
     "Values": 5013,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1207",
+    "Example": "1206",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -199,7 +199,7 @@ const measures = [
     "Values": 5013,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21697",
+    "Example": "21696",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -1142,6 +1142,16 @@ const measures = [
     "Type": "boolean",
     "SortIndex": 2.01,
     "IsComputed": true
+  },
+  {
+    "Name": "exercism",
+    "Values": 67,
+    "Coverage": "1%",
+    "Question": "What is a URL to learn this language on Exercism?",
+    "Example": "https://exercism.org/tracks/8th",
+    "Type": "string",
+    "SortIndex": 2.1,
+    "IsComputed": false
   },
   {
     "Name": "numberOfUsersEstimate",
