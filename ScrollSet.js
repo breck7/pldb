@@ -40,7 +40,7 @@ class ScrollSetCLI {
     patch.delete("id")
     const target = this.makeFilePath(id)
     if (!Disk.exists(target)) {
-      console.log(`Now match for ${id}`)
+      console.log(`No match for ${id}`)
       return
     }
     console.log(`Patching ${id}`)
