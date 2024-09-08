@@ -32,7 +32,6 @@ startedParser
  float sortIndex 1.4
 abstractStreamLinkParser
  extends abstractUrlMeasureParser
- cells integerCell urlCell
  cruxFromId
  inScope subscribersParser
 subscribersParser
@@ -45,11 +44,11 @@ youtubeUrlParser
  extends abstractStreamLinkParser
 
 name ThePrimeagen
+started 2019
 twitchUrl https://www.twitch.tv/theprimeagen
  subscribers 208000
 youtubeUrl https://www.youtube.com/c/theprimeagen
  subscribers 404000
-started 2019
 
 ../footer.scroll
 tableSearch

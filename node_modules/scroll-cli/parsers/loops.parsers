@@ -13,6 +13,7 @@ loopParser
  popularity 0.000024
  extends abstractAftertextParser
  cells commandWordCell
+ boolean isTableVisualization true
  description Iterate over files+ to make HTML.
  cruxFromId
  inScope abstractItemsProviderParser
@@ -43,7 +44,11 @@ loopParser
   }
   get items() {
    const provider = this.getChildInstancesOfParserId("abstractItemsProviderParser")[0]
-   return provider ? provider.items : []
+   if (provider)
+     return provider.items
+   if (this.parent.coreTable)
+     return this.parent.coreTable
+   return []
   }
   teardown() {}
 

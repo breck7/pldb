@@ -1,6 +1,6 @@
 abstractTableTransformParser
  cells commandWordCell
- inScope abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser
+ inScope abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser loopParser
  javascript
   get coreTable() {
     return this.parent.coreTable
@@ -315,6 +315,18 @@ scrollReverseParser
  javascript
   get coreTable() {
    return this.parent.coreTable.slice().reverse()
+  }
+
+scrollLimitParser
+ extends abstractTableTransformParser
+ description Select a subset.
+ crux limit
+ cells commandWordCell integerCell integerCell
+ javascript
+  get coreTable() {
+   const start = this.getWord(1)
+   const end = this.getWord(2)
+   return this.parent.coreTable.slice(parseInt(start), parseInt(end))
   }
 
 scrollTransposeParser
