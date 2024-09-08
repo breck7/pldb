@@ -1,0 +1,55 @@
+buildConcepts live.json live.tsv live.csv
+ sortBy -subscribers
+buildMeasures liveMeasures.csv
+tags All
+title Programmer Livestreams
+
+header.scroll
+printTitle
+
+thinColumns 1
+Download as JSON | TSV | CSV
+ link live.json JSON
+ link live.tsv TSV
+ link live.csv CSV
+endColumns
+
+// A ScrollSet with information on top programmer livestreams
+
+wideColumn
+table live.tsv
+ select name started youtubeUrl youtubeUrl_subscribers twitchUrl twitchUrl_subscribers
+  rename youtubeUrl_subscribers YouTubeSubs twitchUrl_subscribers TwitchSubs
+   printTable
+
+nameParser
+ description What is the name of the livestream?
+ extends abstractIdParser
+startedParser
+ cells measureNameCell yearCell
+ description Year livestream began.
+ extends abstractIntegerMeasureParser
+ float sortIndex 1.4
+abstractStreamLinkParser
+ extends abstractUrlMeasureParser
+ cells integerCell urlCell
+ cruxFromId
+ inScope subscribersParser
+subscribersParser
+ extends abstractIntegerMeasureParser
+
+twitchUrlParser
+ extends abstractStreamLinkParser
+
+youtubeUrlParser
+ extends abstractStreamLinkParser
+
+name ThePrimeagen
+twitchUrl https://www.twitch.tv/theprimeagen
+ subscribers 208000
+youtubeUrl https://www.youtube.com/c/theprimeagen
+ subscribers 404000
+started 2019
+
+../footer.scroll
+tableSearch
