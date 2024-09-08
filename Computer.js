@@ -1561,8 +1561,6 @@ class Tables {
           "tags",
           "creators",
           "foundationScore",
-          "numberOfUsersEstimate",
-          "numberOfJobsEstimate",
           "inboundLinksCount",
           "measurements"
         ])
