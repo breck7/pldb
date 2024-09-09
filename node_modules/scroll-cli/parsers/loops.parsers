@@ -9,13 +9,13 @@ abstractPostLoopParser
    return this.root.file.getFilesWithTagsForEmbedding(this.content)
   }
 
-loopParser
+scrollLoopParser
  popularity 0.000024
  extends abstractAftertextParser
  cells commandWordCell
  boolean isTableVisualization true
  description Iterate over files+ to make HTML.
- cruxFromId
+ crux loop
  inScope abstractItemsProviderParser
  joinParser
   extends abstractLoopConfigParser

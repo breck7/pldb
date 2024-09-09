@@ -1,6 +1,6 @@
 abstractTableTransformParser
  cells commandWordCell
- inScope abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser loopParser
+ inScope abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser scrollLoopParser
  javascript
   get coreTable() {
     return this.parent.coreTable
@@ -142,7 +142,7 @@ scrollTableParser
     2020,23
  extends abstractScrollParser
  catchAllCellType filePathCell
- inScope scrollTableDataParser scrollTableDelimiterParser abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser
+ inScope scrollTableDataParser scrollTableDelimiterParser abstractTableVisualizationParser abstractTableTransformParser h1Parser h2Parser scrollQuestionParser scrollLoopParser
  int wordIndex 1
  javascript
   get visualizations() {
@@ -172,7 +172,7 @@ scrollTableParser
     }
     if (this.get("delimiter"))
       delimiter = this.get("delimiter")
-    else {
+    else if (!delimiter) {
       const header = this.delimitedData.split("\n")[0]
       if (header.includes("\t"))
         delimiter = "\t"
@@ -224,8 +224,12 @@ scrollTableParser
   get coreTable() {
     if (this._coreTable) return this._coreTable
     const {delimiter, delimitedData} = this
-    if (delimiter === "json")
-       this._coreTable = JSON.parse(delimitedData)
+    if (delimiter === "json") {
+       const rows = JSON.parse(delimitedData)
+       this._columnNames = rows.length ? Object.keys(rows[0]) : []
+       this._coreTable = rows
+       return rows
+    }
     else if (delimiter === "particles") {
        const d3lib = typeof d3 === "undefined" ? require('d3') : d3
        this._coreTable = d3lib.dsvFormat(",").parse(new Particle(delimitedData).asCsv, d3lib.autoType)
