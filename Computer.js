@@ -1909,11 +1909,7 @@ class Tables {
         .map(file => `- ${file.id}\n link ../concepts/${file.id}.html`)
         .join("\n"),
       PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
-      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
-      CONTRIBUTORS_TABLE: JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
-        .filter(item => item.login !== "codelani" && item.login !== "breck7" && item.login !== "pldbbot")
-        .map(item => `- ${item.login}\n ${item.html_url}`)
-        .join("\n")
+      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n")
     }
   }
 }
