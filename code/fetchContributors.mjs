@@ -13,11 +13,11 @@ fetchContributors.js
 
 */
 
-ky from "ky"
-fs from "fs"
-path from "path"
-{ fileURLToPath } from "url"
-{ dirname } from "path"
+import ky from "ky"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
 
 // Polyfill for __dirname and __filename in ES modules
 const __filename = fileURLToPath(import.meta.url)
