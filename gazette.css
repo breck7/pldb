@@ -305,15 +305,16 @@ h4.scrollQuestion {
   margin: .25rem 0;
   text-align: center;
 }
-a.abstractTextLinkParser {
+.abstractTextLinkParser {
   text-align: center;
-  display: block;
   margin: .5em auto;
   font-family: Verdana;
   font-weight: 100;
+}
+.abstractTextLinkParser a {
   color: rgba(204,204,204,.5);
 }
-a.abstractTextLinkParser:hover {
+.abstractTextLinkParser a:hover {
   color: #333;
 }
 .scrollContinueReadingLink {

@@ -9,5 +9,5 @@ abstractTextLinkParser
     return this.text
   }
   compile() {
-   return `<a class="abstractTextLinkParser" href="${this.link}">${this.text}</a>`
+   return `<div class="abstractTextLinkParser"><a href="${this.link}">${this.text}</a></div>`
   }
