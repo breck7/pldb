@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1485,
+    "Values": 1486,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -55,7 +55,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -106,7 +106,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -156,7 +156,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -166,17 +166,17 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1206",
+    "Example": "1207",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
   },
   {
     "Name": "lastActivity",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2024",
@@ -196,10 +196,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21697",
+    "Example": "21702",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -792,7 +792,7 @@ const measures = [
   },
   {
     "Name": "primaryTag",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "Where is the primary tag for this language?",
     "Example": "esolang",
@@ -802,7 +802,7 @@ const measures = [
   },
   {
     "Name": "standsFor",
-    "Values": 365,
+    "Values": 366,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -882,7 +882,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -892,7 +892,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -912,7 +912,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -982,7 +982,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 1077,
+    "Values": 1078,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -993,7 +993,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1077,
+    "Values": 1078,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1014,7 +1014,7 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1077,
+    "Values": 1078,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1165,7 +1165,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "928",
@@ -1175,7 +1175,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1185,7 +1185,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1335,7 +1335,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1485,
+    "Values": 1486,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1858,7 +1858,7 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 898,
+    "Values": 899,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -3809,7 +3809,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3819,7 +3819,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 5013,
+    "Values": 5014,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

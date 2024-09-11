@@ -9,7 +9,8 @@ printTitle
 
 css
  table td:first-child, table th:first-child { width: 60px;}
- table td:nth-child(2), table th:nth-child(2) { width: 280px;}
+ table td:nth-child(2), table th:nth-child(2) { width: 60px;}
+ table td:nth-child(3), table th:nth-child(3) { width: 280px;}
 
 <div class="singleColumn">
 
