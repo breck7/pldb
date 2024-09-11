@@ -9,7 +9,7 @@ website http://www.modula3.org
 releaseNotes http://www.opencm3.net/releng/relnotes-5.8.6.html
 download http://www.opencm3.net/download.html
 aka m3
-lab Digital Equipment Corporation && elego Software Solutions GmbH
+lab DEC && elego Software Solutions GmbH
 
 isOpenSource true
 fileType text
@@ -80,7 +80,7 @@ wikipedia https://en.wikipedia.org/wiki/Modula-3
   BEGIN
   END Person.
  related modula-2 pascal algol oberon java python caml csharp nim arm mesa object-pascal euclid c delphi scala obliq
- summary Modula-3 is a programming language conceived as a successor to an upgraded version of Modula-2 known as Modula-2+. While it has been influential in research circles (influencing the designs of languages such as Java, C#, and Python) it has not been adopted widely in industry. It was designed by Luca Cardelli, James Donahue, Lucille Glassman, Mick Jordan (before at the Olivetti Software Technology Laboratory), Bill Kalsow and Greg Nelson at the Digital Equipment Corporation (DEC) Systems Research Center (SRC) and the Olivetti Research Center (ORC) in the late 1980s. Modula-3's main features are simplicity and safety while preserving the power of a systems-programming language. Modula-3 aimed to continue the Pascal tradition of type safety, while introducing new constructs for practical real-world programming. In particular Modula-3 added support for generic programming (similar to templates), multithreading, exception handling, garbage collection, object-oriented programming, partial revelation and explicit mark of unsafe code. The design goal of Modula-3 was a language that implements the most important features of modern imperative languages in quite basic forms. Thus allegedly dangerous and complicating features such as multiple inheritance and operator overloading were omitted.
+ summary Modula-3 is a programming language conceived as a successor to an upgraded version of Modula-2 known as Modula-2+. While it has been influential in research circles (influencing the designs of languages such as Java, C#, and Python) it has not been adopted widely in industry. It was designed by Luca Cardelli, James Donahue, Lucille Glassman, Mick Jordan (before at the Olivetti Software Technology Laboratory), Bill Kalsow and Greg Nelson at the DEC (DEC) Systems Research Center (SRC) and the Olivetti Research Center (ORC) in the late 1980s. Modula-3's main features are simplicity and safety while preserving the power of a systems-programming language. Modula-3 aimed to continue the Pascal tradition of type safety, while introducing new constructs for practical real-world programming. In particular Modula-3 added support for generic programming (similar to templates), multithreading, exception handling, garbage collection, object-oriented programming, partial revelation and explicit mark of unsafe code. The design goal of Modula-3 was a language that implements the most important features of modern imperative languages in quite basic forms. Thus allegedly dangerous and complicating features such as multiple inheritance and operator overloading were omitted.
  pageId 241545
  dailyPageViews 84
  created 2003
@@ -105,7 +105,7 @@ linguistGrammarRepo https://github.com/newgrammars/m3
  commitCount 11
  sampleCount 5
  example
-  (* Copyright (C) 1989, Digital Equipment Corporation           *)
+  (* Copyright (C) 1989, DEC           *)
   (* All rights reserved.                                        *)
   (* See the file COPYRIGHT for a full description.              *)
   
