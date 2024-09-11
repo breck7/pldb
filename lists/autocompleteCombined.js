@@ -4342,7 +4342,7 @@ var autocompleteJs = [
     "url": "/concepts/mako.html"
   },
   {
-    "label": "elena",
+    "label": "ELENA",
     "id": "elena",
     "url": "/concepts/elena.html"
   },
