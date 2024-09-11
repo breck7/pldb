@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id quickjs
+name QuickJS
+appeared 2019
+creators Fabrice Bellard
+tags vm
+website https://bellard.org/quickjs/
+webRepl http://numcalc.com/
+description QuickJS is a small and embeddable Javascript engine. It supports the ES2023 specification including modules, asynchronous generators, proxies and BigInt. It optionally supports mathematical extensions such as big decimal floating point numbers (BigDecimal), big binary floating point numbers (BigFloat) and operator overloading.
+
+inputLanguages javascript
+docs https://bellard.org/quickjs/quickjs.html
+emailList https://www.freelists.org/list/quickjs-devel
+
+githubRepo https://github.com/bellard/quickjs

@@ -1677,7 +1677,7 @@ class Tables {
     const entities = groupByListValues("creators", this.pldb, " and ")
     const { creators } = this
     const creatorsMap = {}
-    creators.forEach(creator => (creatorsMap[creator.id] = creator))
+    creators.forEach(creator => (creatorsMap[creator.name] = creator))
 
     const rows = Object.keys(entities).map(name => {
       const group = lodash.sortBy(entities[name], "rank")
