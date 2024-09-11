@@ -1025,7 +1025,7 @@ const measures = [
   },
   {
     "Name": "lab",
-    "Values": 3973,
+    "Values": 3974,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",

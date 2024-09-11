@@ -10,16 +10,16 @@ Modula-3 is an open source programming language created in 1986 by Luca Cardelli
  https://pldb.io/concepts/../lists/creators.html#q=Bill%20Kalsow Bill Kalsow
  https://pldb.io/concepts/../lists/creators.html#q=Greg%20Nelson Greg Nelson
 
-#418 on PLDB
+#417 on PLDB
 38 Years Old
 137 Repos
 
-Modula-3 is a programming language conceived as a successor to an upgraded version of Modula-2 known as Modula-2+. While it has been influential in research circles (influencing the designs of languages such as Java, C#, and Python) it has not been adopted widely in industry. It was designed by Luca Cardelli, James Donahue, Lucille Glassman, Mick Jordan (before at the Olivetti Software Technology Laboratory), Bill Kalsow and Greg Nelson at the Digital Equipment Corporation (DEC) Systems Research Center (SRC) and the Olivetti Research Center (ORC) in the late 1980s. Read more on Wikipedia...
+Modula-3 is a programming language conceived as a successor to an upgraded version of Modula-2 known as Modula-2+. While it has been influential in research circles (influencing the designs of languages such as Java, C#, and Python) it has not been adopted widely in industry. It was designed by Luca Cardelli, James Donahue, Lucille Glassman, Mick Jordan (before at the Olivetti Software Technology Laboratory), Bill Kalsow and Greg Nelson at the DEC (DEC) Systems Research Center (SRC) and the Olivetti Research Center (ORC) in the late 1980s. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Modula-3 Read more on Wikipedia...
 
 - Tags: programming language
 - There are at least 137 Modula-3 repos on GitHub
-- Early development of Modula-3 happened in Digital Equipment Corporation and elego Software Solutions GmbH
+- Early development of Modula-3 happened in DEC and elego Software Solutions GmbH
 - The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using Modula-3 in 19 repos on GitHub
 - Explore Modula-3 snippets on Rosetta Code
 - Modula-3 on HOPL
@@ -48,7 +48,7 @@ BEGIN
  IO.Put(&quot;Hello World!\n&quot;);
 END Hello.
 
-(* Copyright (C) 1989, Digital Equipment Corporation           *)
+(* Copyright (C) 1989, DEC           *)
 (* All rights reserved.                                        *)
 (* See the file COPYRIGHT for a full description.              *)
 
