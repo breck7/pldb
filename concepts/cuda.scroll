@@ -10,12 +10,12 @@ releaseNotes https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 download https://developer.nvidia.com/cuda-downloads
 latestVersion 12.5
 standsFor Compute Unified Device Architecture
+lab Nvidia
 
 clocExtensions cu cuh
 fileType text
 docs https://docs.nvidia.com/cuda/
 faq https://developer.nvidia.com/cuda-faq
-lab Nvidia
 
 helloWorldCollection Compute Unified Device Architecture
  // Hello world in CUDA

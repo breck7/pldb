@@ -8,6 +8,7 @@ tags pl
 website https://austral-lang.org/
 latestVersion v0.2.0
 description Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
+lab https://github.com/austral/
 writtenIn markdown ocaml make json typescript python vim-script nix yaml bourne-shell c lisp
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 978
  newestCommit 2024
 country Unknown
-lab https://github.com/austral/
 reference https://borretti.me/article/introducing-austral
 
 example

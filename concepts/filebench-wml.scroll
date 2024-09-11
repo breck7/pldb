@@ -8,6 +8,7 @@ tags pl
 website https://github.com/filebench/filebench/wiki
 latestVersion 1.4.9
 description Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
+lab https://github.com/filebench
 writtenIn fortran-77 c make cpp yacc m4 lex
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 136
  newestCommit 2020
 country United States
-lab https://github.com/filebench
 reference https://github.com/filebench/filebench/wiki/Workload-model-language
 
 example

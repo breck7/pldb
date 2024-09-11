@@ -7,6 +7,7 @@ tags pl
 website http://halide-lang.org/
 latestVersion v17.0.1
 description a language for fast, portable computation on images and tensors
+lab https://github.com/halide
 writtenIn cpp cmake python make bourne-shell markdown java llvmir xml yaml c json objective-cpp javascript gradle bash html css jupyter-notebook pascal idl toml assembly-language
 
 isOpenSource true
@@ -17,7 +18,6 @@ repoStats
  files 2198
  newestCommit 2024
 country United States
-lab https://github.com/halide
 reference https://news.ycombinator.com/item?id=7544855
 
 example

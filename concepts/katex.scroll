@@ -8,6 +8,7 @@ tags textMarkup
 website https://katex.org
 latestVersion 0.16.10
 description The fastest math typesetting library for the web.
+lab https://github.com/KaTeX
 writtenIn javascript markdown yaml json svg html python css bourne-shell perl less dockerfile xml make tex
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 696
  newestCommit 2024
 country United States
-lab https://github.com/KaTeX
 
 example
  % \f is defined as #1f(#2) using the macro

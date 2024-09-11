@@ -7,6 +7,7 @@ creators Alexis King
 tags pl
 website https://lexi-lambda.github.io/hackett/
 description Hackett is an attempt to implement a Haskell-like language with support for Racket’s macro system, built using the techniques described in the paper Type Systems as Macros.
+lab https://github.com/lexi-lambda/hackett/issues
 writtenIn racket markdown yaml css bourne-shell
 
 isOpenSource true
@@ -18,7 +19,6 @@ repoStats
  files 86
  newestCommit 2020
 country United States
-lab https://github.com/lexi-lambda/hackett/issues
 
 example
  #lang hackett

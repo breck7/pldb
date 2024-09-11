@@ -7,6 +7,7 @@ creators Rijnard van Tonder
 tags grammarLanguage
 website https://comby.dev/
 latestVersion 1.8.1
+lab https://github.com/comby-tools
 writtenIn ocaml markdown bourne-shell json c toml dockerfile diff go make yaml
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 345
  newestCommit 2024
 country United States
-lab https://github.com/comby-tools
 
 example
  if (:[_] && :[height] :[_])

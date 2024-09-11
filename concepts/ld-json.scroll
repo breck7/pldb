@@ -8,6 +8,7 @@ tags dataNotation
 website http://jsonlines.org/
 aka newline-delimited JSON
 description JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
+lab https://github.com/wardi/jsonlines/issues
 fileExtensions ldj jsonl
 writtenIn css html javascript markdown json
 
@@ -19,7 +20,6 @@ repoStats
  files 22
  newestCommit 2024
 country Canada
-lab https://github.com/wardi/jsonlines/issues
 reference https://en.wikipedia.org/wiki/JSON_streaming
 
 example

@@ -5,9 +5,9 @@ name rise
 appeared 2020
 tags pl
 description Rise is a functional pattern-based language in the style of Lift. Rise provides a set of data-parallel high-level patterns that are used to describe computations over higher dimensional arrays (aka tensors) in an abstract way. For example, the map pattern applies a given function to every element of the input array. The zip pattern combines two input arrays pairwise to produce an output array of pairs. The reduce pattern is customized with a binary reduction operator (such as addition), a matching neutral element (such as zero), and an input array that is reduced to a single value (such as the sum of all elements).
+lab University of Glasgow
 
 country United Kingdom
-lab University of Glasgow
 reference https://michel.steuwer.info/files/publications/2020/accML.pdf
 
 example

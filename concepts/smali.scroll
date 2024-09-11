@@ -5,6 +5,7 @@ name Smali
 appeared 2010
 tags assembly
 latestVersion v2.5.2
+lab https://github.com/JesusFreke/smali/issues
 writtenIn java gradle xml bash markdown bourne-shell c make
 
 isOpenSource true
@@ -17,7 +18,6 @@ repoStats
  files 930
  newestCommit 2022
 country United States
-lab https://github.com/JesusFreke/smali/issues
 
 pygmentsHighlighter Smali
  filename dalvik.py

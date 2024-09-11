@@ -6,6 +6,7 @@ appeared 2012
 tags dataNotation
 standsFor Extensible Data Notation
 aka edn
+lab https://github.com/edn-format
 writtenIn markdown
 
 isOpenSource true
@@ -18,7 +19,6 @@ repoStats
  files 1
  newestCommit 2014
 country Unknown
-lab https://github.com/edn-format
 
 example
  {:a 1, "foo" :bar, [1 2 3] four}

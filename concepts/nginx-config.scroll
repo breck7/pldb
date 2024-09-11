@@ -4,13 +4,13 @@ id nginx-config
 name Nginx
 appeared 2004
 tags configFormat
+lab F5, Inc
 
 isOpenSource true
 fileType text
 docs https://nginx.org/en/docs/ https://devdocs.io/nginx/
 codeMirror nginx
 country Russia
-lab F5, Inc
 
 pygmentsHighlighter Nginx configuration file
  filename configs.py

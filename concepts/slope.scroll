@@ -8,6 +8,7 @@ tags pl lisp
 website https://slope.colorfield.space
 standsFor SLOum's Programming Environment
 description A small s-expression based programming language
+lab https://git.rawtext.club/slope-lang
 fileExtensions slo
 writtenIn go
 
@@ -15,7 +16,6 @@ influencedBy scheme
 visualParadigm false
 packageRepository https://git.rawtext.club/slope-lang/packages
 country United States
-lab https://git.rawtext.club/slope-lang
 
 example
  ; hello world

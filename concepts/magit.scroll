@@ -8,6 +8,7 @@ tags application
 website https://magit.vc/
 latestVersion v3.3.0
 description Magit is a complete text-based user interface to Git. It fills the glaring gap between the Git command-line interface and various GUIs, letting you perform trivial as well as elaborate version control tasks with just a couple of mnemonic key presses
+lab https://emacs.stackexchange.com/questions/tagged/magit
 writtenIn lisp yaml markdown make
 
 docs https://magit.vc/manual/
@@ -18,7 +19,6 @@ repoStats
  committers 389
  files 127
 country Unknown
-lab https://emacs.stackexchange.com/questions/tagged/magit
 reference https://github.com/magit/magit#readme
 
 githubRepo https://github.com/magit/magit

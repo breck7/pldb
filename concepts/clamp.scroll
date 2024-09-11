@@ -5,6 +5,7 @@ name Common Lisp with Arc Macros and Procedures
 appeared 2014
 tags pl
 standsFor Common Lisp with Arc Macros and Procedures
+lab https://github.com/malisper
 writtenIn lisp bash
 
 repoStats
@@ -14,7 +15,6 @@ repoStats
  files 65
  newestCommit 2016
 country United States
-lab https://github.com/malisper
 
 example
  (map [+ _ 1] '(1 2 3))

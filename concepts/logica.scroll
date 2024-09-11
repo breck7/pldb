@@ -7,6 +7,7 @@ creators Evgeny Skvortsov
 tags queryLanguage
 website https://logica.dev/
 description Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
+lab https://github.com/EvgSkv/logica/issues
 writtenIn lex python jupyter-notebook markdown json html yaml javascript vim-script protobuf css csv
 compilesTo sql
 
@@ -17,7 +18,6 @@ repoStats
  files 384
  newestCommit 2024
 country United States
-lab https://github.com/EvgSkv/logica/issues
 
 example
  # Define natural numbers from 1 to 29.

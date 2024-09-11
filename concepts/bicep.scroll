@@ -7,6 +7,7 @@ creators Anthony Martin
 tags jsonFormat
 latestVersion v0.27.1
 description Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
+lab Microsoft
 writtenIn csharp json typescript svg xml html markdown yaml javascript powershell bourne-shell css
 compilesTo arm-templates
 
@@ -17,7 +18,6 @@ repoStats
  committers 171
  files 4156
  newestCommit 2024
-lab Microsoft
 reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/
 
 example

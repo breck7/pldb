@@ -7,6 +7,7 @@ tags pl
 website http://moonscript.org/
 latestVersion v0.5.0
 webRepl http://moonscript.org/compiler/
+lab https://github.com/leafo/moonscript/issues
 writtenIn lua markdown yaml make bourne-shell c
 compilesTo lua
 
@@ -22,7 +23,6 @@ repoStats
  files 160
  newestCommit 2023
 country United States
-lab https://github.com/leafo/moonscript/issues
 
 pygmentsHighlighter MoonScript
  filename scripting.py

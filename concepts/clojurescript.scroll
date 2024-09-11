@@ -9,6 +9,7 @@ website https://clojurescript.org/
 latestVersion 1.11.132
 webRepl https://clojurescript.io/
 paper http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
+lab https://github.com/clojure
 writtenIn clojurescript clojure javascript bourne-shell html markdown bash yaml xml css powershell json svg
 compilesTo javascript
 
@@ -22,7 +23,6 @@ repoStats
  files 391
  newestCommit 2024
 country Various
-lab https://github.com/clojure
 
 pygmentsHighlighter ClojureScript
  filename jvm.py

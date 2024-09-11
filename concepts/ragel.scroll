@@ -5,6 +5,7 @@ name Ragel
 appeared 2007
 tags pl
 website http://complang.org/ragel/
+lab https://github.com/bnoordhuis/ragel/issues
 writtenIn cpp make bourne-shell vim-script awk m4 ocaml tex ruby lex
 
 isOpenSource true
@@ -16,7 +17,6 @@ repoStats
  files 475
  newestCommit 2013
 country The Netherlands
-lab https://github.com/bnoordhuis/ragel/issues
 
 pygmentsHighlighter Ragel
  filename parsers.py

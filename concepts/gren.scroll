@@ -8,6 +8,7 @@ tags pl
 website https://gren-lang.org/
 latestVersion 0.3.0
 description A programming language for simple and correct applications
+lab https://github.com/gren-lang
 fileExtensions gren
 writtenIn haskell markdown yaml
 
@@ -18,7 +19,6 @@ repoStats
  files 174
  newestCommit 2024
 country Unknown
-lab https://github.com/gren-lang
 
 example
  module Main exposing (main)

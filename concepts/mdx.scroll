@@ -9,6 +9,7 @@ website https://mdxjs.com/
 latestVersion 3.0.1
 webRepl https://mdxjs.com/playground/
 description MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
+lab https://github.com/mdx-js
 writtenIn javascript markdown jsx json yaml typescript css svg json5
 
 repoStats
@@ -18,7 +19,6 @@ repoStats
  files 183
  newestCommit 2024
 country Various
-lab https://github.com/mdx-js
 
 example
  import { Chart } from '../components/chart'

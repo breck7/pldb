@@ -8,6 +8,7 @@ website https://popr.dev
 webRepl http://hackerfoo.com/eval.html
 paper http://hackerfoo.com/presentations/ttpl_slides.html
 description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+lab https://github.com/HackerFoo/poprc/issues
 writtenIn c svg bourne-shell make python nix lisp markdown yaml tex html css bash json
 compilesTo c
 
@@ -20,7 +21,6 @@ repoStats
  files 164
  newestCommit 2021
 country United States
-lab https://github.com/HackerFoo/poprc/issues
 
 example
  1 2 | 3 +

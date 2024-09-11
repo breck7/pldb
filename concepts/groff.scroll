@@ -6,6 +6,7 @@ appeared 1990
 tags textMarkup
 website https://www.gnu.org/software/groff/groff.html
 description Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
+lab GNU Project
 writtenIn bourne-shell cpp make c html m4 perl protobuf sed objective-cpp csharp css awk tex ruby forth vim-script diff
 
 related troff
@@ -17,7 +18,6 @@ repoStats
  committers 69
  files 1364
 country United States
-lab GNU Project
 
 pygmentsHighlighter Groff
  filename markup.py

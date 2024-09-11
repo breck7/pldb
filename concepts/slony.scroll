@@ -7,6 +7,7 @@ creators Steve Singer
 tags application
 website https://www.slony.info/
 description Slony-I is a "master to multiple slaves" replication system for PostgreSQL supporting cascading (e.g. - a node can feed another node which feeds another node...) and failover.
+lab https://github.com/ssinger/slony1-engine
 writtenIn bourne-shell sql javascript perl c diff make m4 lex html yacc xslt bash svg css awk lisp markdown
 
 isOpenSource true
@@ -18,7 +19,6 @@ repoStats
  newestCommit 2022
  files 735
 country United States
-lab https://github.com/ssinger/slony1-engine
 
 githubRepo https://github.com/ssinger/slony1-engine
  stars 38

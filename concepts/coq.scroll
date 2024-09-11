@@ -9,6 +9,7 @@ website https://coq.inria.fr/
 latestVersion 8.19.1
 webRepl https://coq.vercel.app/
 zulip https://coq.zulipchat.com/
+lab Inria
 writtenIn coq ocaml bourne-shell restructuredtext markdown nix python tex css yaml make html c xml javascript bash dockerfile csv lisp diff
 
 isOpenSource true
@@ -24,7 +25,6 @@ repoStats
  files 5835
  newestCommit 2024
 country France
-lab Inria
 
 discourse https://coq.discourse.group/
 pygmentsHighlighter Coq

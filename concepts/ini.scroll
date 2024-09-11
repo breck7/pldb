@@ -4,6 +4,7 @@ id ini
 name Ini
 appeared 1987
 tags dataNotation
+lab Microsoft
 
 isOpenSource true
 clocExtensions buildozer.spec editorconfig ini lektorproject prefs
@@ -11,7 +12,6 @@ fileType text
 antlr https://github.com/afucher/yaip
 monaco ini
 country United States
-lab Microsoft
 
 pygmentsHighlighter INI
  filename configs.py

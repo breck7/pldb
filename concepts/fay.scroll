@@ -7,6 +7,7 @@ creators Chris Done
 tags pl
 website https://github.com/faylang/fay/wiki
 latestVersion 0.1.0
+lab https://github.com/faylang/
 writtenIn haskell rescript html markdown yaml bourne-shell bash json xml
 compilesTo javascript
 
@@ -19,7 +20,6 @@ repoStats
  files 524
  newestCommit 2021
 country Australia and Sweden and United States
-lab https://github.com/faylang/
 
 example
  {-# LANGUAGE EmptyDataDecls #-}

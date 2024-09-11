@@ -6,6 +6,7 @@ appeared 2020
 creators Axel Liljencrantz
 tags pl
 description Crush is an attempt to make a traditional command line shell that is also a modern programming language. It has the features one would expect from a modern programming language like a type system, closures and lexical scoping, but with a syntax geared toward both batch and interactive shell usage.
+lab https://github.com/liljencrantz/
 writtenIn rust markdown toml json csv protobuf
 
 related powershell
@@ -16,7 +17,6 @@ repoStats
  files 225
  newestCommit 2023
 country Sweden
-lab https://github.com/liljencrantz/
 reference https://news.ycombinator.com/item?id=24079001
 
 githubRepo https://github.com/liljencrantz/crush

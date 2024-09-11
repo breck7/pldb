@@ -5,6 +5,7 @@ name Protocol Buffers
 appeared 2008
 tags idl
 website https://developers.google.com/protocol-buffers/
+lab Google
 
 isOpenSource true
 clocExtensions proto
@@ -12,7 +13,6 @@ fileType text
 docs https://developers.google.com/protocol-buffers/docs/overview
 antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
 monaco protobuf
-lab Google
 
 pygmentsHighlighter Protocol Buffer
  filename dsls.py

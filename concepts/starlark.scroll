@@ -6,6 +6,7 @@ appeared 2018
 creators Laurent Le Brun
 tags pl
 description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
+lab https://github.com/bazelbuild
 writtenIn markdown python bazel yaml bourne-shell
 
 clocExtensions bazel bzl
@@ -16,7 +17,6 @@ repoStats
  files 62
  newestCommit 2024
 country United States
-lab https://github.com/bazelbuild
 reference https://bazel.build/contribute/policy
 
 example

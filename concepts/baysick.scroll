@@ -6,6 +6,7 @@ appeared 2009
 creators Michael Fogus
 tags esolang
 website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+lab Cognitect
 writtenIn scala markdown
 
 repoStats
@@ -15,7 +16,6 @@ repoStats
  files 8
  newestCommit 2019
 country United States
-lab Cognitect
 
 example
  object SquareRoot extends Baysick {

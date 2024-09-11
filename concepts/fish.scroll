@@ -10,6 +10,7 @@ blog https://fishshell.com/blog/index.html
 releaseNotes https://fishshell.com/docs/current/relnotes.html
 latestVersion 3.7.1
 standsFor friendly interactive shell
+lab https://github.com/fish-shell
 writtenIn rust restructuredtext python bourne-shell dockerfile cmake yaml html markdown css javascript xml make cpp c objective-c toml
 
 isOpenSource true
@@ -27,7 +28,6 @@ repoStats
  files 1895
  newestCommit 2024
 country Various
-lab https://github.com/fish-shell
 
 pygmentsHighlighter Fish
  filename shell.py

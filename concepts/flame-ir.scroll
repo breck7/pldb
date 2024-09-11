@@ -7,6 +7,7 @@ tags ir
 website https://github.com/jonathanvdc/flame
 latestVersion v0.10.2
 description An intermediate representation (IR) in static single assignment (SSA) form. This type of IR is favored by state-of-the-art optimizing compilers such as LLVM and GCC. Flame IR is designed from the ground up with the express intent of making it as suitable as possible for a wide range of optimizations and analyses. Flame is a collection of C# libraries for building tools that read, analyze, optimize and write managed languages.
+lab McGill University
 writtenIn csharp xml markdown yaml make json python bourne-shell
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 463
  newestCommit 2019
 country Canada
-lab McGill University
 
 githubRepo https://github.com/jonathanvdc/flame
  firstCommit 2017

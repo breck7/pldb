@@ -9,6 +9,7 @@ website https://ace.c9.io
 latestVersion 1.33.2
 webRepl https://ace.c9.io/build/kitchen-sink.html
 description Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project.
+lab Mozilla && Cloud9
 writtenIn javascript json xml html yaml markdown typescript css svg pug assembly-language bourne-shell tex make sql asciidoc restructuredtext robotframework kotlin liquid java-server-pages objective-c hcl scala blade powershell graphql haml vtl-lang stylus forth diff rust cpp nix raku tcl sass cobol pascal groovy ejs slim ruby actionscript java autohotkey vhdl twig crystal go gherkin fortran-77 elixir erb eex abap toml lua lisp less scheme qml logtalk odin json5 clojure vala r dockerfile coffeescript scss perl haxe erlang protobuf php swift python julia glsl nim ocaml haskell elm dart jsx smarty pig razor handlebars zig xquery ada ini f-sharp csharp coldfusion
 
 related codemirror monaco highlightjs pygments
@@ -18,7 +19,6 @@ repoStats
  commits 8989
  committers 633
  files 1489
-lab Mozilla && Cloud9
 
 githubRepo https://github.com/ajaxorg/ace
  firstCommit 2010

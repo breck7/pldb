@@ -7,6 +7,7 @@ tags template
 website https://manas.tech
 latestVersion 1.12.1
 description Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
+lab Manas Technology Solutions
 writtenIn crystal ecr yaml markdown html javascript powershell bourne-shell css c svg make xml python json z-shell bash cpp nix ini
 
 clocExtensions ecr
@@ -18,7 +19,6 @@ repoStats
  files 2304
  newestCommit 2024
 country Argentina
-lab Manas Technology Solutions
 reference https://crystal-lang.org/api/0.22.0/ECR.html
 
 example

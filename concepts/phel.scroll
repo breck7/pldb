@@ -7,6 +7,7 @@ creators Jens Haase
 tags pl
 website https://phel-lang.org/
 latestVersion v0.14.1
+lab https://github.com/phel-lang
 writtenIn php markdown json yaml svg xml bourne-shell dockerfile
 compilesTo php
 
@@ -17,7 +18,6 @@ repoStats
  files 813
  newestCommit 2024
 country United States
-lab https://github.com/phel-lang
 
 example
   (ns hello-world\boot)

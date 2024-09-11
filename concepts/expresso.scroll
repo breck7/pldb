@@ -5,6 +5,7 @@ name expresso
 appeared 2012
 creators Tim Williams
 tags pl
+lab https://github.com/willtim/Expresso
 writtenIn haskell logos markdown nix yaml
 
 repoStats
@@ -14,7 +15,6 @@ repoStats
  files 22
  newestCommit 2023
 country United Kingdom
-lab https://github.com/willtim/Expresso
 
 example
  let sqmag = {x, y} -> x*x + y*y

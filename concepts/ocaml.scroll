@@ -8,6 +8,7 @@ tags pl
 website http://ocaml.org
 blog https://ocaml.org/blog
 releaseNotes https://ocaml.org/releases
+lab Inria
 fileExtensions ml mli
 
 isOpenSource true
@@ -23,7 +24,6 @@ quineRelay OCaml
 packageRepository https://opam.ocaml.org/
 ubuntuPackage ocaml
 country France
-lab Inria
 projectEuler OCaml
  memberCount
   2019 142

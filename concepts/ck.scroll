@@ -7,11 +7,11 @@ creators Stevan Apter
 tags pl
 website https://nsl.com/papers/ck.htm
 description cK is a Joy-style concatenative syntactic overlay for the K programming language.
+lab https://nsl.com/
 
 influencedBy joy k
 docs https://nsl.com/papers/ck.htm
 country USA
-lab https://nsl.com/
 
 example
  10 20 30 [[`x`y`z] x y + z -] let

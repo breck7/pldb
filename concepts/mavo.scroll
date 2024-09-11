@@ -7,6 +7,7 @@ creators Lea Verou
 tags template
 website https://mavo.io/
 latestVersion 0.3.0
+lab https://github.com/mavoweb
 writtenIn javascript css json scss markdown html toml
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 105
  newestCommit 2024
 country United States
-lab https://github.com/mavoweb
 
 example
  <main mv-app="todo" mv-storage="local" mv-mode="edit">

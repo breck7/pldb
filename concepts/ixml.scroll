@@ -8,6 +8,7 @@ tags grammarLanguage
 website https://invisiblexml.org/
 aka ixml
 description Invisible XML is a language for describing the implicit structure of data, and a set of technologies for making that structure explicit as XML markup. It allows you to write a declarative description of the format of some text and then leverage that format to represent the text as structured information.
+lab https://github.com/invisibleXML
 writtenIn xml markdown xslt xquery html css javascript yaml bourne-shell gradle svg make lisp
 
 related xml
@@ -18,7 +19,6 @@ repoStats
  files 3989
  newestCommit 2024
 country The Netherlands
-lab https://github.com/invisibleXML
 reference https://news.ycombinator.com/item?id=32120230
 
 example

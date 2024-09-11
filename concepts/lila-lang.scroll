@@ -4,6 +4,7 @@ id lila-lang
 name lila-lang
 appeared 2019
 tags pl
+lab https://github.com/codr7/lila/issues
 writtenIn lisp python markdown svg yaml
 
 repoStats
@@ -13,7 +14,6 @@ repoStats
  files 48
  newestCommit 2019
 country Unknown
-lab https://github.com/codr7/lila/issues
 
 example
  fun fib(n:Int) (Int) {

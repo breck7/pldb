@@ -6,6 +6,7 @@ appeared 2017
 tags pl
 blog https://blog.blockstream.com/en-simplicity-github/
 description Simplicity is a work-in-progress low-level programming language with greater flexibility and expressiveness than Bitcoin Script. Simplicity is a typed, combinator-based, functional language without loops and recursion, designed to be used for crypto-currencies and blockchain applications.
+lab https://lists.ozlabs.org/pipermail/simplicity/
 writtenIn haskell c coq nix markdown diff tex make html
 
 repoStats
@@ -15,7 +16,6 @@ repoStats
  files 244
  newestCommit 2024
 country United States
-lab https://lists.ozlabs.org/pipermail/simplicity/
 
 githubRepo https://github.com/ElementsProject/simplicity
  stars 301

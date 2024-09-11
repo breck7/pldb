@@ -7,6 +7,7 @@ tags pl
 website https://idyll-lang.org/
 latestVersion v2.6.0
 description Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
+lab https://github.com/idyll-lang
 writtenIn javascript idl json markdown css yaml html svg csv xml
 
 docs https://idyll-lang.org/docs
@@ -17,7 +18,6 @@ repoStats
  files 1557
  newestCommit 2022
 country Various
-lab https://github.com/idyll-lang
 
 example
  [meta

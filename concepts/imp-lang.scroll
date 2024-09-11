@@ -7,9 +7,9 @@ tags pl
 website https://scattered-thoughts.net/writing/imp-intro/
 webRepl https://scattered-thoughts.net/imp
 description The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.
+lab https://github.com/jamii/imp/issues
 
 country United States
-lab https://github.com/jamii/imp/issues
 
 example
  let colors = "apples" x "red" | "apples" x "green" | "oranges" x "orange" in

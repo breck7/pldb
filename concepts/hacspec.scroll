@@ -8,6 +8,7 @@ tags pl
 website https://hacspec.org
 paper https://www.franziskuskiefer.de/publications/hacspec18/
 description A specification language for crypto primitives and more in Rust.
+lab https://github.com/hacspec/hacspec/discussions
 writtenIn rust coq toml markdown json yaml c make tex bourne-shell dockerfile python svg logos
 
 related rust
@@ -18,7 +19,6 @@ repoStats
  files 515
  newestCommit 2024
 country Germany
-lab https://github.com/hacspec/hacspec/discussions
 
 example
  pub type Res = (usize, usize);

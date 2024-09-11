@@ -5,6 +5,7 @@ name Cython
 appeared 2007
 tags pl
 website http://cython.org
+lab https://github.com/sagemath
 
 isOpenSource true
 supersetOf python
@@ -12,7 +13,6 @@ clocExtensions pxd pxi pyx
 fileType text
 docs https://cython.readthedocs.io/en/latest/
 country Various
-lab https://github.com/sagemath
 
 pygmentsHighlighter Cython
  filename python.py

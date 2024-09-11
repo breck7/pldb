@@ -5,6 +5,7 @@ name mythryl
 appeared 2006
 tags pl
 website https://mythryl.org
+lab https://github.com/mythryl/mythryl/issues
 writtenIn tex c bourne-shell perl standard-ml lex pascal html make css vim-script dtd
 
 repoStats
@@ -14,7 +15,6 @@ repoStats
  files 5641
  newestCommit 2015
 country Unknown
-lab https://github.com/mythryl/mythryl/issues
 
 example
  fun qsort [] => [];  qsort (x!xs) => qsort (filter {. #a < x; } xs) @ [x] @ qsort (filter {. #a >= x; } xs);  end;

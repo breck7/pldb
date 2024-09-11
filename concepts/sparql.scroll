@@ -6,13 +6,13 @@ appeared 2008
 tags queryLanguage
 webRepl https://dbpedia.org/sparql
 standsFor SPARQL Protocol and RDF Query Language
+lab W3C
 
 fileType text
 docs https://www.w3.org/TR/rdf-sparql-query/ https://docs.stardog.com/tutorials/learn-sparql
 antlr https://github.com/antlr/grammars-v4/tree/master/sparql
 monaco sparql
 codeMirror sparql
-lab W3C
 reference https://www.w3.org/TR/rdf-sparql-query/
 
 pygmentsHighlighter SPARQL

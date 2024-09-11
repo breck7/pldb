@@ -4,6 +4,7 @@ id dex
 name dex
 appeared 2018
 tags pl
+lab Google
 writtenIn haskell python julia yaml markdown bash cpp nix c lisp typescript make css html toml xml
 
 repoStats
@@ -13,7 +14,6 @@ repoStats
  files 260
  newestCommit 2024
 country United States
-lab Google
 
 example
  :p x = 1.                -- let binding

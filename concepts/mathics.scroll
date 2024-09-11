@@ -7,6 +7,7 @@ tags pl
 website https://mathics.github.io/
 latestVersion 5.0.0
 description Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
+lab https://github.com/Mathics3
 writtenIn python mathematica yaml restructuredtext svg bourne-shell xml make tex markdown csv matlab html perl json ini
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 299
  newestCommit 2021
 country United States
-lab https://github.com/Mathics3
 reference https://news.ycombinator.com/item?id=11459186
 
 example

@@ -8,6 +8,7 @@ tags pl
 website https://arkscript-lang.dev
 latestVersion v4.0.0-rc5
 description ArkScript is a small, fast, functional and scripting language for C++ projects
+lab Alexandre Plateau
 writtenIn cpp markdown yaml json csv cmake bash python bourne-shell svg xml dockerfile
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 405
  newestCommit 2024
 country France
-lab Alexandre Plateau
 
 example
  (import std.random)

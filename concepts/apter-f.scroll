@@ -7,11 +7,11 @@ creators Stevan Apter
 tags pl
 website https://nsl.com/k/f/f.htm
 description F is a pure functional concatenative language originally designed as an extension of False. F contains the list-operations of K3 and the dip combinator of Joy. Floating-point and symbolic datatypes are supported. One-time assignment is enforced in syntax. A theory of function-valence and -charge is outlined. F also contains a general continuation primitive $, and the pattern sublanguage of XY. G is a variant of F in which the K3 adverbs are implemented as primitives.
+lab https://nsl.com/
 
 influencedBy false joy k
 docs https://nsl.com/k/f/f.htm
 country USA
-lab https://nsl.com/
 
 example
  [1 2 3][[4 5 6] 7 8]+

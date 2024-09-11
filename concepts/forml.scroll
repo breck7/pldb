@@ -7,6 +7,7 @@ creators Andrew Stein
 tags pl
 website http://texodus.github.io/forml/
 description A contemporary programming language for the discriminating programmer, intended to approximate the safety of Haskell and the expressiveness of Ruby. Should such an approximation turn out to exist.
+lab https://github.com/texodus
 
 repoStats
  firstCommit 2011
@@ -14,7 +15,6 @@ repoStats
  committers 14
  files 57
 country United States
-lab https://github.com/texodus
 
 example
      hello_world = do

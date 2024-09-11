@@ -8,6 +8,7 @@ tags pl
 website http://crmsh.github.io/
 latestVersion 5.0.0-pre
 description crmsh is a cluster management shell for the Pacemaker High Availability stack.
+lab https://github.com/ClusterLabs/
 writtenIn python yaml asciidoc gherkin xml expect bourne-shell markdown css bash make awk vim-script ini svg m4 dockerfile json
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 462
  newestCommit 2024
 country Various
-lab https://github.com/ClusterLabs/
 
 pygmentsHighlighter Crmsh
  filename dsls.py

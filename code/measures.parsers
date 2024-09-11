@@ -2182,7 +2182,7 @@ labParser
  boolean alwaysRecommended true
  // todo Make origin community name the url for the community? instead of the name? Not sure.
  listDelimiter  &&
- float sortIndex 2.99
+ float sortIndex 1.99
  example
   lab Microsoft && /r/programminglanguages && news.ycombinator.com
  extends abstractStringListMeasureParser
