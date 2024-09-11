@@ -1,7 +1,7 @@
 List of communities where programming languages have originated
 ===============================================================
 
-Here is the list of 2,601 origin communities who fostered the development of a new language(s) or other thing(s) in PLDB.
+Here is the list of 2,595 origin communities who fostered the development of a new language(s) or other thing(s) in PLDB.
 
 count¶name¶languages
 118¶IBM¶SQL - Fortran - PL/I - Rexx - JCL - RPG - X10 - BNF - PowerPC - OCL - AXIOM - SGML - GML - EGL - CLIST - FP - NetRexx - Object Rexx - SQLPL - COMTRAN - FL - General Purpose Simulation System - Formula language - Query by Example - Speedcoding - IBM Informix-4GL - MPS Format - GRAAL - Arden syntax - Operational Control Language - IBM 1620 - EXEC - Information Presentation Facility - EXEC 2 - Scratchpad - DYNAMO - SQL-92 - CMS Pipelines - USB - AUTOCODER - FORMAC - IBM POWER Instruction Set Architecture - Information Algebra - Red - Blue - Algebraic modeling language - blue - CSL - INQUIRE - IBM 1401 Symbolic Programming System - IBM HAScript - FORTRAN assembly program - Magic Paper - Rapid Development and Maintenance Language - PACT I - SYMBOLIC ASSEMBLY - IBM BASIC - D data language specification - AUTOmatic PROgramming of Machine Tools - DEL - FORTRANSIT - INC - MAP - META/PLUS - MPSX - NIL - OOLP - PACTOLUS - PL/I-FORMAC - SESPATH - SLANG - Symbolic Programming System - ISBL - IBM BASICA - IBM i Control Language - APLGOL - APROL - AQL - AUTODRAFT - BEDSOCS - Concert/C - CORC - DSL/90 - FAD - FORAL LP - FORAL - FORTRAN III - FORTRAN IV - GraphLog - Graqula - IBM Logo - InterCONS - IQF - LOCS - LOTIS - Mercury Programming System - META/LISP - MODLISP - Nassi-Shneiderman charts - NPL - PDL/Ada - PL/S-II - PL/S - PL-X - PROTOS-L - QUIKTRAN - Scratchpad II - SEQUEL 2 - SMoLCS - STREMA - HLASM - PL/I - ABC++ - AUTOCODER II - AUTOCODER III - COGO - ibm-system-38-language - IBM Programming Language/Advanced Systems
@@ -41,6 +41,7 @@ count¶name¶languages
 9¶Columbia University¶GARP - bawk - Keep It Short and Simple - Netscript - Symbolic Optimal Assembly Program - Klerer-May System - Real-time Cmix - MELD - Noodle
 9¶University of Pennsylvania¶Short Code computer language - KB - SPRINT - BIOSSIM - EASY ENGLISH - Machiavelli - Micro-flowcharts - NeuronC - ACSI-Matic
 8¶Centrum Wiskunde & Informatica¶Python - ABC - RascalMPL - Binary Lambda Calculus - Alma-0 - Alma - ASF+SDF - LARIS
+8¶CERN¶HTML - CSS - ROOT - PL-11 - World Wide Web - GRIN - NODAL - SIGMA 76
 8¶GNU Project¶Emacs Lisp - Bison - groff - Guile - GNU Assembler - Guix Workflow Language - Kawa - GCC GIMPLE
 8¶International Organization for Standardization¶DOI - DTD - EXPRESS - ISLISP - ISO 8601 - HyTime - SQL/PSM - PHIGS
 8¶University of Maryland¶Datalog - Programming Language for the University of Maryland - Qunity - SHOE - lambda-obliv - MINION - Polylith - PRISM
@@ -60,6 +61,7 @@ count¶name¶languages
 7¶Utrecht University¶helium - Schoonschip - Dribble - Generic Haskell - henk - ASF+SDF - LARIS
 6¶University of California¶PostgreSQL - AIL - JR - B4Tran - Active Language I - AEPL
 6¶University of St Andrews¶Idris - S-algol - Small-C - SASL - PS-algol - Napier88
+6¶Adobe¶PostScript - ColdFusion - CFML - MXML - ColdFusion Components - ICML
 6¶NASA¶CLIPS - HAL/S - PLEXIL - Copilot - AMTRAN - BLAZE 2
 6¶Bell Laboratories¶S - Refer - EFL - Concurrent C++ - EXPLOR - PFORT
 6¶University of Tokyo¶Egison - QUTE - Actor-Based Concurrent Language - FLENG++ - Prolog-ELF - ABCL/f
@@ -89,10 +91,8 @@ count¶name¶languages
 5¶University of Texas at Austin¶LC-3 - enso - Generic Expression Language - IFPS - PICASSO
 5¶University of California, Riverside¶bioscript - Lagoona - Coral - Candy Codes - FORTRAN II
 5¶University of Regina¶LOL - olog - Relationlog - ROL - ROL2
-4¶Conseil Européen pour la Recherche Nucléaire¶HTML - CSS - PL-11 - NODAL
 4¶Mozilla¶Rust - heap.coffee - Asm.js - HTTP/2
 4¶Oracle¶MySQL - PL/SQL - PeopleCode - JavaFX Script
-4¶Adobe¶PostScript - ColdFusion - ColdFusion Components - ICML
 4¶American National Standards Institute¶Common Lisp - ASCII - PHIGS - Gello Expression Language
 4¶Northwestern University¶NetLogo - Slideshow - Patient-Oriented Prescription Programming Language - DESCRIPTRAN
 4¶University of Wisconsin-Madison¶GNU Octave - Regular Expressions - SAC-2 - SIMPAS
@@ -132,6 +132,7 @@ count¶name¶languages
 3¶JetBrains¶Kotlin - Nemerle - arend
 3¶Cognitect, Inc¶Clojure - baysick - Datomic
 3¶North Carolina State University¶SAS - HyPhy - Extended Pascal
+3¶Acorn Computers¶ARM - Acorn Atom - AArch64
 3¶Khronos Group¶OpenCL - OpenGL - WebGL
 3¶Apache¶Pig Latin - Thrift - Velocity
 3¶International Federation for Information Processing¶ALGOL 60 - ALGOL 68 - ALGOL X
@@ -203,7 +204,6 @@ count¶name¶languages
 2¶Haxe Foundation¶Haxe - Neko
 2¶https://github.com/grails¶Groovy - Groovy Server Pages
 2¶https://github.com/llvm¶LLVM IR - FLANG
-2¶Acorn Computers or Arm Ltd¶ARM - AArch64
 2¶SAP¶ABAP - chevrotain
 2¶https://github.com/sass¶Sass - SCSS
 2¶Eiffel Software¶Eiffel - Business Object Notation
@@ -241,7 +241,6 @@ count¶name¶languages
 2¶Inria Sophia Antipolis¶FaCT - hop
 2¶Lehigh University¶Mech - SALEM
 2¶The University of Iowa¶SMT - guru
-2¶Conseil européen pour la recherche nucléaire or CERN¶ROOT - SIGMA 76
 2¶McMaster University¶hakaru - ECT
 2¶University of Birmingham¶datafun - ATOL
 2¶Mapbox¶CartoCSS - GeoJSON
@@ -309,7 +308,6 @@ count¶name¶languages
 2¶Delft University of Technology¶PAMELA - Booster
 2¶MetaComCo¶MetaComCo - Atari ST BASIC
 2¶European Bioinformatics Institute¶Gene transfer format - hsaml-format
-2¶CERN¶World Wide Web - GRIN
 2¶Manchester Metropolitan University¶Concurrent METATEM - METATEM
 2¶King's College London¶converge - Hyperlog
 2¶Corel Corporation¶CorelScript - ObjectPAL
@@ -693,7 +691,6 @@ count¶name¶languages
 1¶openBD¶CFML
 1¶New Atlanta¶CFML
 1¶Lucee Association¶CFML
-1¶Adobe Systems¶CFML
 1¶https://github.com/harc¶ohm
 1¶https://github.com/breuleux/earl-grey/issues¶Earl Grey
 1¶https://sprylang.se/about.html¶spry
@@ -900,8 +897,8 @@ count¶name¶languages
 1¶https://github.com/anoma/¶juvix
 1¶https://github.com/ckknight/gorillascript/issues¶GorillaScript
 1¶https://github.com/pointless-lang¶pointless
-1¶Runtime Verification Inc.¶k-framework
 1¶Terra Informatica Software¶TIScript
+1¶Runtime Verification Inc.¶k-framework
 1¶https://github.com/jesseduffield/OK/issues¶OK
 1¶https://lang.video/community.html¶video
 1¶Elixir Team¶EEX
@@ -1021,7 +1018,6 @@ count¶name¶languages
 1¶Onux¶JS++
 1¶https://github.com/jank-lang¶Jank
 1¶OASIS¶BPEL
-1¶Adobe Inc¶MXML
 1¶https://github.com/henriquegogo/kamby/issues¶Kamby
 1¶https://github.com/jameshaydon/lawvere/issues¶Lawvere
 1¶https://github.com/daaku/dak/issues¶Dak
@@ -1060,8 +1056,8 @@ count¶name¶languages
 1¶https://github.com/breuleux/quaint/issues¶Quaint
 1¶University of Manchester and Lawrence Livermore National Laboratory and Colorado State University and Digital Equipment Corporation¶SISAL
 1¶https://github.com/jonsterling/JonPRL/issues¶jonprl
-1¶https://github.com/neeilan/neeilang/issues¶neeilang
 1¶https://github.com/calebwin/pipelines/issues¶pipelines
+1¶https://github.com/neeilan/neeilang/issues¶neeilang
 1¶https://github.com/tomhrr/cosh/issues¶cosh
 1¶https://github.com/mulesoft-labs/¶DataWeave
 1¶https://www.haskell.org/community/¶Literate Haskell
@@ -1118,11 +1114,10 @@ count¶name¶languages
 1¶http://anthonymcook.com/¶Blacklight
 1¶https://www.reddit.com/r/jeebox/¶jeebox
 1¶https://github.com/somebody1234¶Charcoal
-1¶https://github.com/DJMcMayhem¶Brain-Flak
 1¶Cycorp, Inc¶CYCL
+1¶https://github.com/DJMcMayhem¶Brain-Flak
 1¶https://github.com/texodus¶Forml
 1¶https://web.archive.org/web/20090221030835/http://www.graysage.com/¶Draco
-1¶A school in Denmark¶COMAL
 1¶Studio Amplify¶Kaffeine
 1¶https://github.com/themanyone/¶Crap
 1¶Coalson LLC¶BBCode
@@ -1187,8 +1182,8 @@ count¶name¶languages
 1¶https://github.com/breck7/note/issues¶Note
 1¶https://github.com/alehander92/hivemind/issues¶hivemind
 1¶https://mindsdb.com/community¶AIML
-1¶https://github.com/squiggle-lang¶squiggle
 1¶Esterel Technologies¶Lustre
+1¶https://github.com/squiggle-lang¶squiggle
 1¶https://github.com/uli/¶DragonBASIC
 1¶https://github.com/mattbierner/khepri/issues¶Khepri
 1¶https://github.com/fable-compiler¶Fable
@@ -1216,9 +1211,9 @@ count¶name¶languages
 1¶Performance Systems International¶Lightweight Directory Access Protocol
 1¶Isode Limited¶Lightweight Directory Access Protocol
 1¶https://github.com/sebbekarlsson/glms/issues¶GLMS
+1¶ITU Telecommunication Standardization Sector¶CHILL
 1¶http://strlen.com¶False
 1¶https://github.com/lepinekong/readablehumanformat/issues¶Readable
-1¶ITU Telecommunication Standardization Sector¶CHILL
 1¶quuxLogic Solutions GmbH¶elymas
 1¶https://github.com/jcouyang/ru/issues¶ru
 1¶https://github.com/nuua-io¶Nuua
@@ -1258,9 +1253,9 @@ count¶name¶languages
 1¶id Software¶Action Code Script
 1¶Hopson Community¶Cane
 1¶https://github.com/mcilloni¶fork-lang
+1¶http://www.lord-enki.net¶mycroft
 1¶Pontifical Catholic University of Rio de Janeiro¶Céu
 1¶https://github.com/themimixcompany¶mimix-stream-language
-1¶http://www.lord-enki.net¶mycroft
 1¶Keysight Technologies¶Agilent VEE
 1¶https://github.com/hugoif¶HUGO
 1¶https://github.com/clark800/lambda-zero/issues¶lambda-zero
@@ -1355,8 +1350,8 @@ count¶name¶languages
 1¶Multimedia and Hypermedia Experts Group¶MHEG-5
 1¶https://github.com/tamamu/macchiato/issues¶Macchiato
 1¶https://github.com/cgyarvin/urbit/issues¶hoon
-1¶https://github.com/mybb¶MyBB
 1¶Harvard Medical School¶Little b
+1¶https://github.com/mybb¶MyBB
 1¶https://github.com/cia-foundation/TempleOS/issues¶holyc
 1¶https://tromp.github.io/¶Lazy K
 1¶https://github.com/mint-lang¶mint
@@ -1438,18 +1433,18 @@ count¶name¶languages
 1¶Open Geospatial Consortium¶Geography Markup Language
 1¶OGNL Technology, Inc¶OGNL
 1¶Martin Capodici¶badlanguage
+1¶https://github.com/bauripalash/mewl/issues¶Mewl
 1¶https://github.com/Emblem21-OpenSource¶flownote
 1¶Servertec Inc¶iScript
 1¶https://github.com/nlpl-lang¶nlpl
-1¶https://github.com/bauripalash/mewl/issues¶Mewl
 1¶https://javaee.github.io¶Facelets
 1¶Artificial Intelligence Ltd¶Strand
 1¶Gesellschaft für Angewandte Mathematik und Mechanik¶ALGOL 58
 1¶Association for Computing Machinery¶ALGOL 58
 1¶The University of Waterloo¶Octune
+1¶https://sourceforge.net/p/duro/mailman/duro-devel/¶duro
 1¶https://github.com/markpwns1/jammy/issues¶Jammy
 1¶https://github.com/bbu/quaint-lang/issues¶quaint-lang
-1¶https://sourceforge.net/p/duro/mailman/duro-devel/¶duro
 1¶https://github.com/valkarias/Pa/issues¶PCrap
 1¶Corman Technologies¶Corman Common Lisp
 1¶QinetiQ Ltd¶Document Structure Description
@@ -1769,8 +1764,6 @@ count¶name¶languages
 1¶Logic Programming Associates¶Prolog++
 1¶Centre for Mathematics and Computer Science and University of Amsterdam¶SDF
 1¶Norwegian Institute of Technology¶Atmel AVR
-1¶https://github.com/oleg-shilo¶CS-Script
-1¶McDonnell Information Systems¶PROIV
 1¶Penn State University¶axt-format
 1¶University of California Santa Cruz¶Browser Extensible Data Format
 1¶Defense Technical Information Center¶BridgeTalk
@@ -1793,6 +1786,8 @@ count¶name¶languages
 1¶https://github.com/xojo¶REALBasic (now Xojo)
 1¶Techno Teacher, Inc¶SMDL
 1¶Technion-Israel Institute of Technology¶SoQL
+1¶https://github.com/oleg-shilo¶CS-Script
+1¶McDonnell Information Systems¶PROIV
 1¶Microchip Technology, Inc¶PIC microcontroller
 1¶Stockholm University¶Stockholm format
 1¶Great Plains Software¶Dexterity
@@ -2152,7 +2147,6 @@ count¶name¶languages
 1¶Cullinane Corporation¶Cullinet
 1¶GarageGames LLC¶Robot Battle
 1¶MAI Systems Corporation¶MAI Basic Four
-1¶Acorn Computers¶Acorn Atom
 1¶Manx Software Systems¶Aztec C
 1¶Forté Inc¶Forte 4GL
 1¶Viewpoints Research Institute¶OMeta

@@ -199,7 +199,7 @@ const measures = [
     "Values": 5013,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21696",
+    "Example": "21697",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -1643,7 +1643,7 @@ const measures = [
   },
   {
     "Name": "originCommunity",
-    "Values": 3973,
+    "Values": 3972,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
