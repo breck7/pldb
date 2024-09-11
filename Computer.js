@@ -1785,7 +1785,9 @@ class Tables {
       const count = group.length
       const top = -Math.min(...group.map(lang => lang.rank))
 
-      const wrappedName = `<a name='${lodash.camelCase(name)}' />${name}`
+      const wrappedName = `<a href="explorer.html#columns=rank~name~id~appeared~tags~creators~lab&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22lab%22%2C%22origData%22%3A%22lab%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22${name}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D" name='${lodash.camelCase(
+        name
+      )}' />${name}`
 
       return { name: wrappedName, languages, count, top }
     })
