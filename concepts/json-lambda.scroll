@@ -17,7 +17,7 @@ repoStats
  files 22
  newestCommit 2022
 country England and Canada
-originCommunity https://chrisdone.com/
+lab https://chrisdone.com/
 
 example
  map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)

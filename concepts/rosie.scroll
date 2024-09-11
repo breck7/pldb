@@ -18,7 +18,7 @@ repoStats
  files 401
  newestCommit 2023
 country United States
-originCommunity https://gitlab.com/rosie-pattern-language
+lab https://gitlab.com/rosie-pattern-language
 
 example
  rosie --rpl 'd = [:digit:]' -o json match d

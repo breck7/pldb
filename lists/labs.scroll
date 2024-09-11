@@ -1,0 +1,21 @@
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.labs
+tags All
+title Labs where programming languages were invented
+
+header.scroll
+printTitle
+
+<div class="singleColumn">
+
+Here is the list of COUNT labs/communities which birthed a new language(s) or other thing(s) in PLDB.
+
+endSnippet
+
+TABLE
+
+</div>
+
+footer.scroll
+tableSearch

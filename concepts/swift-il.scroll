@@ -11,7 +11,7 @@ fileExtensions sil
 
 related cir llvmir
 fileType text
-originCommunity Apple
+lab Apple
 
 example
  // SIL is reliant on Swift's type system and declarations, so SIL syntax is an extension of Swift's. A .sil file is a Swift source file with added SIL definitions. The Swift source is parsed only for its declarations; Swift func bodies (except for nested declarations) and top-level code are ignored by the SIL parser. In a .sil file, there are no implicit imports; the swift and/or Builtin standard modules must be imported explicitly if used.

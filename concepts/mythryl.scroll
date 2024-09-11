@@ -14,7 +14,7 @@ repoStats
  files 5641
  newestCommit 2015
 country Unknown
-originCommunity https://github.com/mythryl/mythryl/issues
+lab https://github.com/mythryl/mythryl/issues
 
 example
  fun qsort [] => [];  qsort (x!xs) => qsort (filter {. #a < x; } xs) @ [x] @ qsort (filter {. #a >= x; } xs);  end;

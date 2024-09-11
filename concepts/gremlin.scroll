@@ -9,7 +9,7 @@ tags queryLanguage
 isOpenSource true
 fileType text
 country Various
-originCommunity https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
+lab https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
 
 example
  g.V().hasLabel('movie').values('year').min()

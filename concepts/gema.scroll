@@ -7,7 +7,7 @@ tags grammarLanguage
 website http://gema.sourceforge.net/new/index.shtml
 
 country Various
-originCommunity https://sourceforge.net/p/gema/mailman/
+lab https://sourceforge.net/p/gema/mailman/
 
 example
  gema -match -p 'Title\:*\n=$0@end' foo

@@ -11,7 +11,7 @@ description cK is a Joy-style concatenative syntactic overlay for the K programm
 influencedBy joy k
 docs https://nsl.com/papers/ck.htm
 country USA
-originCommunity https://nsl.com/
+lab https://nsl.com/
 
 example
  10 20 30 [[`x`y`z] x y + z -] let
