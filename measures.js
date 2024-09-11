@@ -1643,7 +1643,7 @@ const measures = [
   },
   {
     "Name": "originCommunity",
-    "Values": 3971,
+    "Values": 3970,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
