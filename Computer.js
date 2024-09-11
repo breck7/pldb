@@ -1774,7 +1774,7 @@ class Tables {
 
   get labs() {
     const files = lodash.sortBy(
-      this.pldb.filter(file => file.isLanguage && file.lab?.length),
+      this.pldb.filter(file => file.lab?.length),
       "rank"
     )
 
