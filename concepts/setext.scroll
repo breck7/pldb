@@ -1,0 +1,20 @@
+../code/conceptPage.scroll
+
+id setext
+name Setext
+appeared 1991
+creators Ian Feldman
+tags textMarkup
+description Setext allows viewing of marked-up documents without special viewing software. When appropriate software is used, however, a rich text-style experience is available to the user.
+
+example
+ This is a long title
+ ====================
+ This is **very important**...
+ This is an ~italic~ word.
+ This is _underlined_text_.
+ > This is quoted text...
+ > ...more...
+ ^.. _Wikipedia_home_page https://wikipedia.org
+
+extensions etx

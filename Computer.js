@@ -1783,7 +1783,7 @@ class Tables {
       const group = entities[name]
       const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.name}</a>`).join(" - ")
       const count = group.length
-      const top = -Math.min(...group.map(lang => lang.rank))
+      const top = Math.min(...group.map(lang => lang.rank))
 
       const wrappedName = `<a href="explorer.html#columns=rank~name~id~appeared~tags~creators~lab&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22lab%22%2C%22origData%22%3A%22lab%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22${name}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D" name='${lodash.camelCase(
         name
@@ -1791,11 +1791,9 @@ class Tables {
 
       return { name: wrappedName, languages, count, top }
     })
-    const sorted = lodash.sortBy(rows, ["count", "top"])
-    sorted.reverse()
-
+    const sorted = lodash.orderBy(rows, ["count", "top"], ["desc", "asc"])
     return {
-      TABLE: quickTable(sorted, ["count", "name", "languages"]),
+      TABLE: quickTable(sorted, ["count", "top", "name", "languages"]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
     }
   }
