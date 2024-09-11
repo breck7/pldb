@@ -5,11 +5,11 @@ name Gremlin
 appeared 2009
 creators Marko A. Rodriguez
 tags queryLanguage
+lab https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
 
 isOpenSource true
 fileType text
 country Various
-originCommunity https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
 
 example
  g.V().hasLabel('movie').values('year').min()

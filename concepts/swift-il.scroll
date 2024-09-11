@@ -7,11 +7,11 @@ tags ir
 website https://github.com/apple/swift/blob/master/docs/SIL.rst
 standsFor Swift Intermediate Language
 description SIL is an SSA-form IR with high-level semantic information designed to implement the Swift programming language. In contrast to LLVM IR, SIL is a generally target-independent format representation that can be used for code distribution, but it can also express target-specific concepts as well as LLVM can.
+lab Apple
 fileExtensions sil
 
 related cir llvmir
 fileType text
-originCommunity Apple
 
 example
  // SIL is reliant on Swift's type system and declarations, so SIL syntax is an extension of Swift's. A .sil file is a Swift source file with added SIL definitions. The Swift source is parsed only for its declarations; Swift func bodies (except for nested declarations) and top-level code are ignored by the SIL parser. In a .sil file, there are no implicit imports; the swift and/or Builtin standard modules must be imported explicitly if used.

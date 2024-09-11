@@ -1,7 +1,7 @@
-List of communities where programming languages have originated
-===============================================================
+Labs where programming languages were invented
+==============================================
 
-Here is the list of 2,465 origin communities who fostered the development of a new language(s) or other thing(s) in PLDB.
+Here is the list of 2,462 labs/communities which birthed a new language(s) or other thing(s) in PLDB.
 
 count¶name¶languages
 125¶IBM¶SQL - Fortran - PL/I - Rexx - JCL - RPG - X10 - BNF - PowerPC - OCL - AXIOM - SGML - GML - EGL - CLIST - FP - NetRexx - Object Rexx - SQLPL - COMTRAN - FL - General Purpose Simulation System - Formula language - Query by Example - Speedcoding - IBM Informix-4GL - MPS Format - GRAAL - Arden syntax - Operational Control Language - IBM 1620 - EXEC - Information Presentation Facility - EXEC 2 - Scratchpad - DYNAMO - SQL-92 - CMS Pipelines - USB - AUTOCODER - FORMAC - IBM POWER Instruction Set Architecture - Information Algebra - RPG II - RPG III - Red - SBA - Blue - Algebraic modeling language - blue - CSL - INQUIRE - IBM 1401 Symbolic Programming System - IBM HAScript - FORTRAN assembly program - Magic Paper - Rapid Development and Maintenance Language - PACT I - SYMBOLIC ASSEMBLY - IBM BASIC - D data language specification - AUTOmatic PROgramming of Machine Tools - DEL - FORTRANSIT - INC - MAP - META/PLUS - MPSX - NIL - OOLP - PACTOLUS - PL/I-FORMAC - SESPATH - SLANG - Symbolic Programming System - SQUARE - ISBL - IBM BASICA - IBM i Control Language - And/Or - APLGOL-2 - APLGOL - APROL - AQL - AUTODRAFT - BEDSOCS - Concert/C - CORC - DSL/90 - FAD - FORAL LP - FORAL - FORTRAN III - FORTRAN IV - GraphLog - Graqula - IBM Logo - InterCONS - IQF - LOCS - LOTIS - Mercury Programming System - META/LISP - MODLISP - Nassi-Shneiderman charts - NPL - PDL/Ada - PL/S-II - PL/S - PL-X - PROTOS-L - QUIKTRAN - RT-CDL - Scratchpad II - SEQUEL 2 - SMoLCS - STREMA - HLASM - PL/I - ABC++ - AUTOCODER II - AUTOCODER III - COGO - ibm-system-38-language - IBM Programming Language/Advanced Systems
@@ -71,6 +71,7 @@ count¶name¶languages
 6¶Adobe¶PostScript - ColdFusion - CFML - MXML - ColdFusion Components - ICML
 6¶AT&T¶DOT - Cyclone - Document Structure Description - Real-Time Concurrent C - Hancock - KeyKit
 6¶Apache Software Foundation¶Pig Latin - Thrift - Impala - Velocity - Apache Lucene - avro
+6¶Breck's Lab¶Particles - Scroll - Parsers - Ohayo - TQL - Simoji
 6¶NASA¶CLIPS - HAL/S - PLEXIL - Copilot - AMTRAN - BLAZE 2
 6¶Free Software Foundation¶Gettext Catalog - SRecode Template - Recfiles - M4Sugar - GCC - gnu-rtl
 6¶Queen's University¶Nial - AUI - IDL specification language - SL - BSP - Pascal Plus
@@ -260,6 +261,7 @@ count¶name¶languages
 2¶Wellcome Trust Sanger Institute¶FASTQ - SAM file format
 2¶http://www.odbms.org/odmg-standard¶OQL - Object Definition Language
 2¶Carnegie Institute of Technology¶Information Processing Language - Sketchpad
+2¶Nudgepad¶Note - Space
 2¶Université Pierre-et-Marie-Curie¶GRAAL - Freefem
 2¶Arizona State University¶AIL - SLAM II
 2¶Honeywell¶Fully Automated Compiling Technique - Business application language
@@ -536,12 +538,10 @@ count¶name¶languages
 1¶https://github.com/FIXTradingCommunity/fix-simple-binary-encoding¶Simple Binary Encoding
 1¶The Boo Programming Language¶Boo
 1¶The AssemblyScript Project¶AssemblyScript
-1¶https://github.com/breck7/scroll/issues¶Scroll
-1¶https://github.com/numba¶Numba
 1¶OpenAI¶Triton
+1¶https://github.com/numba¶Numba
 1¶https://github.com/mirah¶Mirah
 1¶https://github.com/PrismJS¶Prism
-1¶https://github.com/breck7/scrollsdk/issues¶Parsers
 1¶https://github.com/ChaiScript¶chaiscript
 1¶https://github.com/EvgSkv/logica/issues¶Logica
 1¶https://github.com/oilshell¶oil
@@ -565,10 +565,10 @@ count¶name¶languages
 1¶https://github.com/mesonbuild¶Meson
 1¶https://www.raku.org/community¶Raku
 1¶https://github.com/codeceptjs/¶codecept
-1¶https://github.com/jasmine/jasmine¶jasmine
 1¶https://github.com/nitlang¶Nit
-1¶Guidewire Software, Inc¶Gosu
+1¶https://github.com/jasmine/jasmine¶jasmine
 1¶https://gitlab.com/FascinatedBox/lily/-/issues¶Lily
+1¶Guidewire Software, Inc¶Gosu
 1¶https://github.com/olabini/ioke/issues/¶Ioke
 1¶https://github.com/mun-lang¶mun-lang
 1¶https://github.com/evincarofautumn/kitten/issues¶kitten
@@ -586,8 +586,8 @@ count¶name¶languages
 1¶https://github.com/bakkdoor/fancy/issues¶Fancy
 1¶https://github.com/gkz/LiveScript/issues¶LiveScript
 1¶MariaDB Foundation¶MariaDB
-1¶https://github.com/dat-ecosystem¶dat-protocol
 1¶AlliedModders LLC¶SourcePawn
+1¶https://github.com/dat-ecosystem¶dat-protocol
 1¶https://github.com/IoLanguage¶Io
 1¶SCSK Corporation¶Curl
 1¶Sumisho Computer Systems Corp¶Curl
@@ -642,9 +642,9 @@ count¶name¶languages
 1¶https://github.com/PCRE2Project¶PCRE
 1¶Kadena LLC¶Pact
 1¶WaveMetrics, Inc¶IGOR Pro
-1¶https://github.com/TheBerkin/rant3/issues¶manhood
 1¶https://github.com/stan-dev¶Stan
 1¶ReScript Association¶Bucklescript
+1¶https://github.com/TheBerkin/rant3/issues¶manhood
 1¶https://github.com/jython¶Jython
 1¶Cobra Language LLC¶Cobra
 1¶Jade Software Corporation¶JADE
@@ -662,8 +662,8 @@ count¶name¶languages
 1¶https://github.com/css-doodle¶CSS Doodle
 1¶https://github.com/aardappel/lobster/issues¶lobster
 1¶https://dagans.dev¶fetlang
-1¶https://github.com/seanbaxter¶circle-lang
 1¶https://consortium.pharo.org¶Pharo
+1¶https://github.com/seanbaxter¶circle-lang
 1¶https://github.com/dotnet¶Roslyn compiler
 1¶The Railo Company¶CFML
 1¶openBD¶CFML
@@ -687,25 +687,25 @@ count¶name¶languages
 1¶https://github.com/kstenerud/concise-encoding¶Concise Encoding
 1¶https://github.com/handlebars-lang¶Handlebars
 1¶https://www.marigold.dev/projects¶Ligo
-1¶https://github.com/liljencrantz/¶crush
 1¶https://github.com/austral/¶Austral
+1¶https://github.com/liljencrantz/¶crush
 1¶Cycling '74¶Max
 1¶http://fusik.info/piotr/¶Ć
 1¶Near East University¶ferret
 1¶https://github.com/quattor¶Pan
-1¶https://github.com/valderman/haste-compiler/issues¶haste
 1¶Soviet space program¶DRAKON
+1¶https://github.com/valderman/haste-compiler/issues¶haste
 1¶https://github.com/renpy¶Ren'Py
-1¶https://github.com/LuxLang¶Lux
 1¶https://github.com/rui314¶chibicc
+1¶https://github.com/LuxLang¶Lux
 1¶https://github.com/vekatze/neut/issues¶neut
 1¶https://github.com/slash-lang/slash¶Slash
 1¶https://github.com/nickmqb/muon/issues¶muon
 1¶https://github.com/GraphIt-DSL¶GraphIt
-1¶MetaQuotes Software¶MQL5
 1¶SoftVelocity¶Clarion
 1¶Clarion International¶Clarion
 1¶Jensen & Partners International¶Clarion
+1¶MetaQuotes Software¶MQL5
 1¶https://github.com/atmajs¶Mask
 1¶https://github.com/hummingbirdtech¶Hodor
 1¶https://github.com/kitlang¶kitlang
@@ -743,16 +743,16 @@ count¶name¶languages
 1¶https://github.com/netwide-assembler¶Netwide Assembler
 1¶Basis Software¶AutoLISP
 1¶https://github.com/Co-dfns/¶co-dfns
+1¶https://github.com/jondgoodwin/cone¶Cone
 1¶https://github.com/PetroProtsyk/SSharp/issues¶Script.NET
 1¶https://github.com/betaveros/noulith/issues¶noulith
-1¶https://github.com/jondgoodwin/cone¶Cone
 1¶The FreeBASIC Development Team¶FreeBASIC
 1¶International Telecommunication Union¶ASN.1
 1¶https://www.makotemplates.org/community.html¶Mako
 1¶ELENA Language Project¶ELENA
 1¶https://web.archive.org/web/20040404144205/http://www.mines.edu/students/b/bolmstea/randlang/index.html¶Malbolge
-1¶https://github.com/marp-team¶Marp
 1¶https://github.com/TU-Berlin¶Opal
+1¶https://github.com/marp-team¶Marp
 1¶Haskell Foundation¶clash
 1¶https://github.com/berry-lang/¶Berry
 1¶Business Process Management Initiative¶BPMN
@@ -771,9 +771,9 @@ count¶name¶languages
 1¶https://github.com/RockstarLang¶Rockstar
 1¶https://github.com/TheBerkin/rant3/pulls¶rant
 1¶https://github.com/CraneStation/¶Cranelift
-1¶Research Software Ltd¶Miranda
 1¶https://github.com/vyzo/gerbil/issues¶Gerbil Scheme
 1¶https://github.com/Mathpix¶Mathpix Markdown
+1¶Research Software Ltd¶Miranda
 1¶Java Community Process¶BeanShell
 1¶MathWorks¶Simulink
 1¶https://github.com/wardi/jsonlines/issues¶JSON Lines
@@ -781,9 +781,9 @@ count¶name¶languages
 1¶AMX, LLC¶NetLinx
 1¶https://github.com/programming-nu¶Nu
 1¶https://github.com/thesephist/ink/issues¶ink-lang
-1¶https://github.com/Hirrolot/metalang99/issues¶Metalang99
 1¶La Trobe University¶Joy
 1¶https://github.com/morganstanley¶hobbes
+1¶https://github.com/Hirrolot/metalang99/issues¶Metalang99
 1¶https://github.com/the-little-typer¶pie-lang
 1¶ProSapien LLC¶FloScript
 1¶https://github.com/flix¶Flix
@@ -795,8 +795,8 @@ count¶name¶languages
 1¶https://github.com/gren-lang¶Gren
 1¶https://github.com/hacspec/hacspec/discussions¶hacspec
 1¶Bluespec, Inc¶Bluespec
-1¶https://relaxng.org¶RELAX NG
 1¶https://github.com/JohnSundell/Plot/pulls¶Plot
+1¶https://relaxng.org¶RELAX NG
 1¶https://github.com/links-lang¶Links
 1¶YoYo Games Ltd¶Game Maker Language
 1¶https://github.com/maximecb/noisecraft/issues¶noisecraft
@@ -827,8 +827,8 @@ count¶name¶languages
 1¶https://github.com/splitbrain¶DokuWiki
 1¶Bell labs¶PIC
 1¶ZeroC, Inc¶Slice
-1¶https://chrisdone.com/¶JSON lambda
 1¶https://github.com/ThomasJaeger/VisualMASM/issues¶MASM
+1¶https://chrisdone.com/¶JSON lambda
 1¶https://github.com/jbr/sibilant/issues¶Sibilant
 1¶https://groups.google.com/g/zorba-io-user¶JSONiq
 1¶PTC Inc¶Mathcad
@@ -855,8 +855,8 @@ count¶name¶languages
 1¶https://github.com/qorelanguage¶Qore
 1¶Lotus Development Corporation¶LotusScript
 1¶GAMS Development Corporation¶GAMS
-1¶https://github.com/gentee¶gentee
 1¶Sage-Code¶bee
+1¶https://github.com/gentee¶gentee
 1¶https://github.com/never-lang¶never
 1¶https://github.com/nim-works¶Nimskull
 1¶https://www.mirc.com¶MIRC scripting language
@@ -875,24 +875,23 @@ count¶name¶languages
 1¶Runtime Verification Inc.¶k-framework
 1¶https://github.com/jesseduffield/OK/issues¶OK
 1¶https://lang.video/community.html¶video
-1¶Elixir Team¶EEX
 1¶https://github.com/savi-lang¶Savi
-1¶https://github.com/breck7/ohayo/issues¶Ohayo
+1¶Elixir Team¶EEX
 1¶Looker¶LookML
 1¶Xerox Research Centre Europe¶Grammatical Framework
 1¶Fluid Analogies Research Group¶BlooP
 1¶https://github.com/cube2222/jql/issues¶JSON Query Language
 1¶CSV on the Web Community Group¶CSVw
 1¶CSV on the Web Working Group¶CSVw
-1¶Dynamic Ledger Solutions Inc¶michelson
 1¶https://github.com/kanaka/mal/issues¶mal
+1¶Dynamic Ledger Solutions Inc¶michelson
 1¶http://pespmc1.vub.ac.be/TURCHIN.html¶Refal
 1¶https://harelang.org/community/¶Hare
 1¶https://github.com/candy-lang/¶Candy
 1¶https://github.com/JamesBoer/Jinx/issues¶jinx
+1¶https://lists.gambas-basic.org/listinfo¶Gambas
 1¶Paiq BV¶BlackCoffee
 1¶https://www.disnetdev.com/¶contracts.coffee
-1¶https://lists.gambas-basic.org/listinfo¶Gambas
 1¶United States Environmental Protection Agency¶Smiles
 1¶https://github.com/pksunkara/semicolon/pulls¶semicolon
 1¶https://github.com/refaktor/rye/¶Rye
@@ -994,8 +993,8 @@ count¶name¶languages
 1¶https://github.com/daaku/dak/issues¶Dak
 1¶https://rxi.github.io/¶fe
 1¶https://github.com/doctorn/micro-mitten/issues¶micro-mitten
-1¶Horizon Technologies of New York, Inc.¶Strongtalk
 1¶https://github.com/eholk/harlan/issues¶harlan
+1¶Horizon Technologies of New York, Inc.¶Strongtalk
 1¶Keyhole, Inc¶KML
 1¶https://github.com/gamblevore/speedie/issues¶Speedie
 1¶https://clarity-lang.org/¶clarity
@@ -1104,8 +1103,8 @@ count¶name¶languages
 1¶Librascope company¶ACT-III
 1¶https://sourceforge.net/p/reduce-algebra/_members¶REDUCE
 1¶TrigenSoftware¶ColaScript
-1¶https://handmade.network/p/114/jiyu/forums¶jiyu
 1¶https://github.com/fabiosvm/hook-lang/issues¶Hook
+1¶https://handmade.network/p/114/jiyu/forums¶jiyu
 1¶Fujitsu Labs of America¶Go!
 1¶Brilor Software¶FutureBASIC
 1¶Systems Management Associates¶PROMAL
@@ -1142,7 +1141,6 @@ count¶name¶languages
 1¶https://github.com/guideguide/grid-notation¶grid-notation
 1¶https://github.com/phreda4/r4/issues¶r4
 1¶Van Ooijen Technische Informatica¶JAL compiler
-1¶https://github.com/breck7/note/issues¶Note
 1¶https://github.com/alehander92/hivemind/issues¶hivemind
 1¶https://mindsdb.com/community¶AIML
 1¶Esterel Technologies¶Lustre
@@ -1154,8 +1152,8 @@ count¶name¶languages
 1¶Chinese Academy of Science¶SAM file format
 1¶Boston College¶SAM file format
 1¶https://github.com/elucent/scheme2d/issues¶Scheme 2-D
-1¶ActiveBuddy¶BuddyScript
 1¶https://github.com/conanite/rainbow/issues¶rainbow
+1¶ActiveBuddy¶BuddyScript
 1¶BioWare¶NWScript
 1¶https://github.com/ich¶Caffeine
 1¶https://github.com/manuel¶edgelisp
@@ -1165,8 +1163,8 @@ count¶name¶languages
 1¶https://bardinflor.perso.aquilenet.fr/index-en¶Goal
 1¶https://groups.google.com/g/hecl¶hecl
 1¶Pointillistic Software¶Ren
-1¶https://github.com/lynix94/orca-lang/issues¶orca
 1¶https://github.com/inem/hamdown/issues¶hamdown
+1¶https://github.com/lynix94/orca-lang/issues¶orca
 1¶https://github.com/RigCLang¶RigC
 1¶https://github.com/hantuzun/hr-code/issues¶hr-code
 1¶University of Delaware¶Network Time Protocol
@@ -1200,7 +1198,6 @@ count¶name¶languages
 1¶https://github.com/bizubee/¶Bizubee
 1¶https://github.com/the-neutron-foundation¶neutron
 1¶https://sourceforge.net/projects/gpt.berlios¶G-Portugol
-1¶https://github.com/breck7/space/issues¶Space
 1¶NeXT¶Property list
 1¶https://github.com/holgerl/hilvl/issues¶hilvl
 1¶Columbia Presbyterian Medical Center¶Arden syntax
@@ -1256,8 +1253,8 @@ count¶name¶languages
 1¶https://github.com/dllu¶dllup
 1¶zSnout¶Storymatic
 1¶https://github.com/yoshikiohshima/Shadama/issues¶shadama
-1¶https://6gu.nz/¶6gunz
 1¶https://github.com/chrisosaurus/icarus/issues¶icarus
+1¶https://6gu.nz/¶6gunz
 1¶Casio Computer Co., Ltd¶Casio BASIC
 1¶http://groups.google.com/group/daot¶daonode
 1¶https://github.com/lezer-parser¶lezer
@@ -1300,8 +1297,8 @@ count¶name¶languages
 1¶https://github.com/ColonelJ/Starpial/issues¶starpial
 1¶https://github.com/violent-es/violent-es¶Violent ES
 1¶https://github.com/strise¶gintonic
-1¶https://exkited.com¶exkited
 1¶https://www.spip.net/en_article2122.html¶SPIP
+1¶https://exkited.com¶exkited
 1¶National Institutes of Health¶MLAB
 1¶École supérieure d'électricité and Télémécanique¶Langage Sans Espoir
 1¶https://scottmoore.consulting¶IP Pascal

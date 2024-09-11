@@ -4,6 +4,7 @@ id nydp
 name nydp
 appeared 2014
 tags pl
+lab https://github.com/conanite/nydp/issues
 writtenIn ruby markdown yaml
 
 repoStats
@@ -13,7 +14,6 @@ repoStats
  files 215
  newestCommit 2024
 country United States
-originCommunity https://github.com/conanite/nydp/issues
 
 example
  (def pre-compile (expr)

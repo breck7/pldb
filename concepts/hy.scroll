@@ -8,6 +8,7 @@ tags pl
 website http://hylang.org/
 latestVersion 0.29.0
 description A dialect of Lisp that's embedded in Python
+lab https://github.com/hylang
 writtenIn python restructuredtext svg yaml markdown css dockerfile
 
 isOpenSource true
@@ -22,7 +23,6 @@ repoStats
  files 165
  newestCommit 2024
 country Various
-originCommunity https://github.com/hylang
 
 pygmentsHighlighter Hy
  filename lisp.py

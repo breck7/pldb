@@ -8,6 +8,7 @@ tags pl
 website https://spatial-lang.org/
 standsFor Specify Parameterized Accelerators Through Inordinately Abstract Language
 description Spatial: A High Level Programming Language for FPGAs
+lab Stanford University
 writtenIn scala xml tcl vhdl html make bourne-shell cpp scheme python ini c csv bash markdown tex diff yaml
 
 isOpenSource true
@@ -20,7 +21,6 @@ repoStats
  files 2376
  newestCommit 2020
 country United States
-originCommunity Stanford University
 
 example
  import spatial.dsl._

@@ -11,6 +11,7 @@ releaseNotes https://www.postgresql.org/docs/release/
 download https://www.postgresql.org/download/
 latestVersion 16
 aka pgsql
+lab University of California
 writtenIn c sql make perl meson bourne-shell lex m4 yacc xslt python idl csv xml cpp svg yaml assembly-language json css d bash lisp markdown sed
 
 isOpenSource true
@@ -28,7 +29,6 @@ repoStats
  files 6942
  newestCommit 2024
 country United States
-originCommunity University of California
 
 helloWorldCollection PostgreSQL
  -- Hello World in PL/pgSQL (PostgreSQL Procedural Language)

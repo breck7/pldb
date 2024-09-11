@@ -5,6 +5,7 @@ name bog
 appeared 2020
 tags pl
 description Small, strongly typed, embeddable language.
+lab https://github.com/Vexu/bog/issues
 writtenIn zig markdown c yaml
 
 repoStats
@@ -14,7 +15,6 @@ repoStats
  files 52
  newestCommit 2023
 country Finland
-originCommunity https://github.com/Vexu/bog/issues
 
 example
  let {print} = import "std.io"

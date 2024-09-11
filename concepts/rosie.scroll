@@ -7,6 +7,7 @@ tags queryLanguage
 website https://rosie-lang.org
 latestVersion v1.4.0
 description RPL is a variant of modern Regular Expressions (regex) that is designed to scale to big data, many developers, and large collections of patterns.  If you use regex, you already know a lot of RPL.
+lab https://gitlab.com/rosie-pattern-language
 writtenIn lua c markdown bourne-shell make html bash csv vim-script python lisp css yaml
 
 isOpenSource true
@@ -18,7 +19,6 @@ repoStats
  files 401
  newestCommit 2023
 country United States
-originCommunity https://gitlab.com/rosie-pattern-language
 
 example
  rosie --rpl 'd = [:digit:]' -o json match d

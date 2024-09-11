@@ -8,6 +8,7 @@ tags pl
 website https://triton-lang.org/
 latestVersion v2.1.0
 description Triton is a language and compiler for parallel programming. It aims to provide a Python-based programming environment for productively writing custom DNN compute kernels capable of running at maximal throughput on modern GPU hardware.
+lab OpenAI
 writtenIn cpp python cmake markdown yaml restructuredtext bourne-shell c dockerfile svg toml json html llvmir make
 
 related numba
@@ -17,7 +18,6 @@ repoStats
  committers 312
  files 675
  newestCommit 2024
-originCommunity OpenAI
 reference https://openai.com/blog/triton/
 
 example

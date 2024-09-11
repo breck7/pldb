@@ -9,6 +9,7 @@ website https://ngs-lang.org/
 latestVersion v0.2.16
 standsFor Next Generation Shell
 description <a href='https://github.com/ilyash/ngs'>NGS</a> - Next Generation Shell, a language (and a shell in the future) for ops tasks. NGS aims to be an alternative for both bash/Python/Ruby/Perl/Go and configuration management tools. It has syntax for the common operations and libraries (currently only AWS) for idempotent resources manipulation. NGS unique features include built in exit code handling and syntax for run-a-command-and-parse-output.
+lab https://github.com/ngs-lang
 writtenIn c markdown css scss less bourne-shell yaml javascript make html json dockerfile sed svg cmake vim-script awk
 
 isOpenSource true
@@ -21,7 +22,6 @@ repoStats
  files 244
  newestCommit 2024
 country Israel and Portugal
-originCommunity https://github.com/ngs-lang
 
 githubRepo https://github.com/ilyash/ngs
  stars 1417

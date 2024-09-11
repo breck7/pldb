@@ -7,6 +7,7 @@ creators Jacob Torrey and Jared Wright
 tags pl
 website https://github.com/ainfosec/crema/wiki
 description Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
+lab Assured Information Security, Inc.
 writtenIn cpp bourne-shell c yacc lex make markdown
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 84
  newestCommit 2015
 country United States
-originCommunity Assured Information Security, Inc.
 
 example
  def int binarySearch(int values[], int searchTarget){

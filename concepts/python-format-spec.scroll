@@ -6,9 +6,9 @@ appeared 2008
 tags template
 website https://docs.python.org/3/library/string.html#format-specification-mini-language
 description Python minilang introduced in Python 2.6 in 2008.
+lab Python Software Foundation
 
 country United States
-originCommunity Python Software Foundation
 
 example
  '{0}, {1}, {2}'.format('a', 'b', 'c')

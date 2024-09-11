@@ -8,6 +8,7 @@ tags pl
 website https://pomsky-lang.org/
 latestVersion v0.4.3
 oldName Rulex
+lab https://github.com/rulex-rs
 writtenIn rust markdown toml javascript yaml java csharp python z-shell bash svg json
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 546
  newestCommit 2024
 country Germany
-originCommunity https://github.com/rulex-rs
 
 example
  'Hello' ' '+ ('world' | 'pomsky')

@@ -9,6 +9,7 @@ website https://web.stanford.edu/~ouster/cgi-bin/home.php
 spec https://github.com/PlatformLab/HomaModule/blob/master/protocol.md
 latestVersion v2.0
 description TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
+lab Stanford University
 writtenIn python c cpp markdown bash make bourne-shell perl cmake
 
 isOpenSource true
@@ -22,7 +23,6 @@ repoStats
  files 140
  newestCommit 2024
 country United States
-originCommunity Stanford University
 reference https://web.stanford.edu/~ouster/cgi-bin/papers/replaceTcp.pdf
 
 githubRepo https://github.com/PlatformLab/HomaModule

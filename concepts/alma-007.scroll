@@ -8,6 +8,7 @@ tags pl
 website http://masak.github.io/alma/
 aka 007
 description Alma is a small language created as a testbed for Raku macros.
+lab http://strangelyconsistent.org/
 writtenIn raku markdown bourne-shell json html d yaml
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 141
  newestCommit 2024
 country Sweden
-originCommunity http://strangelyconsistent.org/
 
 example
  macro swap(a, b) {

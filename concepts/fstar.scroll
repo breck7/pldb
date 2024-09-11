@@ -7,6 +7,7 @@ tags pl
 website https://www.fstar-lang.org/
 latestVersion 0.9.7
 description F* is a dependently typed programming language and proof assistant. In practice, rather than a single language, the F* ecosystem is also a collection of domain-specific languages (DSLs). A common use of F* is to embed within it programming languages at different levels of abstraction or for specific programming tasks, and for the embedded language to be engineered with domain-specific reasoning, proof automation, and compilation backends.
+lab Microsoft
 writtenIn ocaml make bourne-shell markdown f-sharp python c dockerfile json xml assembly-language nix yaml bash clojure coq svg haskell csv lisp
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 5754
  newestCommit 2024
 country Unknown
-originCommunity Microsoft
 
 pygmentsHighlighter FStar
  filename ml.py

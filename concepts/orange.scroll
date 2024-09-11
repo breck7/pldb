@@ -7,6 +7,7 @@ creators Robert Fratto
 tags pl
 website https://web.archive.org/web/20191002000130/http://orange-lang.org/
 description Orange is a systems programming language made to be as powerful as C++ with none of the headache. It aims to be very productive by baking the most important low- and high-level features directly into the language, instead of dealing with them through obtuse function calls.
+lab https://github.com/orange-lang
 writtenIn go yaml markdown dockerfile
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 81
  newestCommit 2018
 country United States
-originCommunity https://github.com/orange-lang
 
 example
  extern printf(char* s, ...) -> int32

@@ -7,11 +7,11 @@ tags ir
 webRepl https://play.rust-lang.org/
 standsFor Rust High-level Intermediate Representation
 paper https://github.com/rust-lang/rfcs/blob/master/text/1191-hir.md
+lab https://github.com/rust-lang/rfcs/issues
 
 related rust-mir swift-il
 fileType text
 country Various
-originCommunity https://github.com/rust-lang/rfcs/issues
 
 example
  #[prelude_import]

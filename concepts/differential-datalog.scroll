@@ -8,6 +8,7 @@ tags pl
 latestVersion 1.2.3
 aka DDlog
 description DDlog is a programming language for incremental computation. It is well suited for writing programs that continuously update their output in response to input changes. A DDlog programmer does not write incremental algorithms; instead they specify the desired input-output mapping in a declarative manner.
+lab VMware, Inc
 writtenIn java rust haskell bourne-shell markdown toml json5 tex go json python yaml make c sql javascript html nix typescript restructuredtext css dockerfile vim-script
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  files 1073
  newestCommit 2022
 country United States
-originCommunity VMware, Inc
 reference https://github.com/vmware/differential-datalog/blob/master/doc/language_reference/language_reference.md
 reference https://twitter.com/vmwopensource
 

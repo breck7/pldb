@@ -9,6 +9,7 @@ website http://hazel.org/
 screenshot hazel.png
 webRepl https://hazel.org/build/dev/
 description Hazel is a live functional programming environment organized around typed holes. Hazel is a live functional programming environment that is able to typecheck, manipulate, and even run incomplete programs, i.e. programs with holes. There are no meaningless editor states.
+lab University of Michigan
 writtenIn reason markdown ocaml css tex yaml make html svg
 compilesTo javascript
 
@@ -21,7 +22,6 @@ repoStats
  files 357
  newestCommit 2024
 country United States
-originCommunity University of Michigan
 
 example
  let v = {} in

@@ -7,6 +7,7 @@ tags pl
 website https://harelang.org/
 latestVersion 0.24.0
 description Hare is a systems programming language designed to be simple, stable, and robust. Hare uses a static type system, manual memory management, and a minimal runtime. It is well-suited to writing operating systems, system tools, compilers, networking software, and other low-level, high performance tasks.
+lab https://harelang.org/community/
 writtenIn assembly-language make bourne-shell scheme markdown yaml
 
 clocExtensions ha
@@ -17,7 +18,6 @@ repoStats
  files 872
  newestCommit 2024
 country Various
-originCommunity https://harelang.org/community/
 
 example
  use fmt;

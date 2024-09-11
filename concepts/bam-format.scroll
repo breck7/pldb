@@ -6,10 +6,10 @@ appeared 2009
 tags binaryDataFormat
 aka BAM
 description BAM is the compressed binary representation of SAM (Sequence Alignment Map). BAM is in compressed BGZF format.
+lab Samtools
 
 fileType binary
 country Various
-originCommunity Samtools
 
 wikipedia https://en.wikipedia.org/wiki/Binary_Alignment_Map
  related fastq-format sam-format cram-format

@@ -7,9 +7,9 @@ tags assembly
 website https://llvm.org/docs/NVPTXUsage.html
 aka nvptx
 description PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.
+lab Nvidia
 
 fileType text
-originCommunity Nvidia
 reference https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf
 
 wikipedia https://en.wikipedia.org/wiki/Parallel_Thread_Execution

@@ -8,6 +8,7 @@ tags template
 website https://stencil.fuller.li/en/latest/
 latestVersion 0.15.1
 description Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
+lab https://github.com/stencilproject
 writtenIn swift html ruby yaml restructuredtext markdown make python json bourne-shell
 
 isOpenSource true
@@ -20,7 +21,6 @@ repoStats
  files 98
  newestCommit 2023
 country United Kingdom
-originCommunity https://github.com/stencilproject
 
 example
  There are {{ articles.count }} articles.

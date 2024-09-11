@@ -8,6 +8,7 @@ tags pl
 website https://janet-lang.org
 latestVersion v1.34.0
 webRepl https://janet-lang.org/
+lab https://github.com/janet-lang
 writtenIn c yaml bourne-shell markdown make meson svg assembly-language
 
 clocExtensions janet
@@ -19,7 +20,6 @@ repoStats
  files 180
  newestCommit 2024
 country Czech Republic and New Zealand and United States
-originCommunity https://github.com/janet-lang
 
 example
  import joy)

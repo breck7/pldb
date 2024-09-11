@@ -113,6 +113,7 @@ description,1077,21%,How is this language described here?,A simpler site generat
 githubRepo_description,1077,21%,How is this language described here?,A simpler site generator. Transforms a directory of templates (of varying types) into HTML.,string,,1.99,false,,,description
 paper,31,0%,What is a URL to a paper(s) by the creator(s) introducing this language?,https://functional-art.org/2017/ait,string,,1.99,false,,,
 rijuRepl_description,1077,21%,How is this language described here?,A simpler site generator. Transforms a directory of templates (of varying types) into HTML.,string,,1.99,false,,,description
+lab,3973,79%,In what community(ies) did the language first originate?,"Department of Computer Science, University of Toronto",string,,1.99,false,,,
 rijuRepl_fileExtensions,38,0%,What are the file extensions for this language?,adb ads,string,,1.991,false,,,
 wikipedia_fileExtensions,106,2%,What are the file extensions for this language?,adb ads,string,,1.991,false,,,
 githubLanguage_fileExtensions,519,10%,What are the file extensions for this language?,bsl os,string,,1.991,false,,,
@@ -174,7 +175,6 @@ ubuntuPackage,65,1%,"What is the name of an Ubuntu package for this language fro
 centralPackageRepositoryCount,0,0%,How many central package repositories does this language have?,,number,,2.9,false,,,
 repoStats,0,0%,What are basic stats on this repo?,,textarea,,2.9,false,,,
 proposals,11,0%,"What is the URL to a the place where language proposals are made, if one exists?",https://github.com/golang/proposal,string,,2.99,false,,,
-originCommunity,3970,79%,In what community(ies) did the language first originate?,"Department of Computer Science, University of Toronto",string,,2.99,false,,,
 country,3746,74%,What country was this language first developed in?,Russia,string,,2.99,false,,,
 funFact,3,0%,What is a code block or some text containing a fun or unusual fact about the language?," C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++",string,,2.99,false,,,
 projectEuler,104,2%,Is this language one of the ones listed on https://projecteuler.net/?,ABAP,string,projecteuler.net,2.999,false,,,

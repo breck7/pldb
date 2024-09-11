@@ -7,6 +7,7 @@ creators Stuart Popejoy
 tags contractLanguage
 website http://kadena.io/try-pact/
 latestVersion v4.12.0
+lab Kadena LLC
 writtenIn haskell yaml markdown c restructuredtext bourne-shell nix json csv python css html xml
 
 isPublicDomain false
@@ -19,7 +20,6 @@ repoStats
  files 448
  newestCommit 2024
 country United States
-originCommunity Kadena LLC
 
 example
  (map (+ 1) [1 2 3])

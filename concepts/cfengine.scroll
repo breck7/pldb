@@ -5,11 +5,11 @@ name CFEngine
 appeared 1993
 tags application
 website https://cfengine.com
+lab Oslo University
 
 isOpenSource true
 fileType text
 country Norway
-originCommunity Oslo University
 
 example
  #!/var/cfengine/bin/cf-agent --no-lock

@@ -421,7 +421,7 @@ h4.scrollQuestion {
 </table>
 <p class="scrollParagraph">A filestore is a structured collection of data files housed in a conventional hierarchical file system. Many applications use filestores as a poor-man’s database, and the correct execution of these applications requires that the collection of files, directories, and symbolic links stored on disk satisfy a variety of precise invariants. Moreover, all of these structures must have acceptable ownership, permission, and timestamp attributes. Unfortunately, current programming languages do not provide support for documenting assumptions about filestores, detecting errors, or safely loading from and storing to them. This paper describes the design, implementation, and semantics of Forest, a novel domain-specific language for describing filestores. The language uses a type-based metaphor to specify the expected structure, attributes, and invariants of filestores. Forest generates loading and storing functions that make it easy to connect data on disk to an isomorphic representation in memory that can be manipulated as if it were any other data structure. Forest also generates metadata that describes the degree to which the structures on the disk conform to the specification, making error detection easy. Hence, in a nutshell, Forest extends the rigorous discipline of typed programming languages and many of their benefits to the untyped world of file systems. We have implemented Forest as an embedded domain-specific language in Haskell. In addition to generating infrastructure for reading, writing and checking file systems, our implementation generates a type class instances that make it easy to build generic tools that operate over arbitrary filestores. We illustrate the utility of this infrastructure by building a file system visualizer, a file access checker, a generic query interface, description-directed variants of several standard UNIX shell tools and (circularly) a simple Forest description inference engine. Finally, we formalize a core fragment of Forest in a semantics inspired by classical tree logics and prove round-tripping laws showing that the loading and storing functions behave sensibly.</p>
 <ul ><li >Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a></li>
-<li >Early development of forest-database happened in <a href="../lists/originCommunities.html#q=Princeton University">Princeton University</a></li>
+<li >Early development of forest-database happened in <a href="../lists/labs.html#q=Princeton University">Princeton University</a></li>
 <li >Read more about forest-database on the web: <a href="https://www.cs.princeton.edu/research/techreps/TR-904-11">1.</a></li></ul>
 <br>
 <div class="scrollKeyboardNav" style="display:none;"><a href="forall.html">forall.html</a> · forest-database.html · <a href="fork95.html">fork95.html</a><script>document.addEventListener('keydown', function(event) {
@@ -460,6 +460,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
  <a href="../lists/keywords.html">Keywords</a>
  <span>·</span>
  <a href="../lists/live.html">Livestreams</a>
+ <span>·</span>
+ <a href="../lists/labs.html">Labs</a>
  <span>·</span>
  <a href="../lists/resources.html">Resources</a>
  <span>·</span>

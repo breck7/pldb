@@ -2176,15 +2176,15 @@ blogParser
  single false
  float sortIndex 1.33
 
-// originCommunity
-originCommunityParser
+// lab
+labParser
  description In what community(ies) did the language first originate?
  boolean alwaysRecommended true
  // todo Make origin community name the url for the community? instead of the name? Not sure.
  listDelimiter  &&
- float sortIndex 2.99
+ float sortIndex 1.99
  example
-  originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
+  lab Microsoft && /r/programminglanguages && news.ycombinator.com
  extends abstractStringListMeasureParser
 
 maintainerOrganizationParser

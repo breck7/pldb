@@ -6,6 +6,7 @@ appeared 2022
 creators Andreas Kling
 tags pl
 description Jakt is a memory-safe systems programming language. It currently transpiles to C++.
+lab https://github.com/SerenityOS/
 writtenIn cpp json markdown yaml typescript cmake python bourne-shell vim-script javascript xml nix lisp lua dockerfile
 compilesTo cpp
 
@@ -16,7 +17,6 @@ repoStats
  files 1327
  newestCommit 2024
 country Various
-originCommunity https://github.com/SerenityOS/
 
 example
  function main() {

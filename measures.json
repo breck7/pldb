@@ -1024,6 +1024,16 @@
     "Crux": "description"
   },
   {
+    "Name": "lab",
+    "Values": 3973,
+    "Coverage": "79%",
+    "Question": "In what community(ies) did the language first originate?",
+    "Example": "Department of Computer Science, University of Toronto",
+    "Type": "string",
+    "SortIndex": 1.99,
+    "IsComputed": false
+  },
+  {
     "Name": "rijuRepl_fileExtensions",
     "Values": 38,
     "Coverage": "0%",
@@ -1637,16 +1647,6 @@
     "Coverage": "0%",
     "Question": "What is the URL to a the place where language proposals are made, if one exists?",
     "Example": "https://github.com/golang/proposal",
-    "Type": "string",
-    "SortIndex": 2.99,
-    "IsComputed": false
-  },
-  {
-    "Name": "originCommunity",
-    "Values": 3970,
-    "Coverage": "79%",
-    "Question": "In what community(ies) did the language first originate?",
-    "Example": "Department of Computer Science, University of Toronto",
     "Type": "string",
     "SortIndex": 2.99,
     "IsComputed": false

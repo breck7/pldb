@@ -8,6 +8,7 @@ tags pl
 website https://www.oxyllang.org/
 latestVersion 1.1.2-alpha-opam3
 description Oxyl is a functional programming language focused on being explicit and safe but not clunky or verbose
+lab https://gitlab.com/selfReferentialName/oxylc/-/issues
 writtenIn bourne-shell assembly-language c vim-script asciidoc yaml make python dockerfile bash
 
 packageRepository https://opam.ocaml.org/packages/oxylc
@@ -18,7 +19,6 @@ repoStats
  files 69
  newestCommit 2020
 country South Africa
-originCommunity https://gitlab.com/selfReferentialName/oxylc/-/issues
 
 gitlabRepo https://gitlab.com/selfReferentialName/oxylc
 

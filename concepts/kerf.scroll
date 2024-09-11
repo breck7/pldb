@@ -6,6 +6,7 @@ appeared 2015
 creators Kevin Lawler
 tags pl
 description Kerf is a columnar tick database and time-series language for Linux/OSX/BSD/iOS/Android. It is written in C and natively speaks JSON and SQL. Kerf can be used for trading platforms, feedhandlers, low-latency networking, high-volume analysis of realtime and historical data, logfile processing, and more.
+lab https://github.com/kevinlawler/kerf/issues
 writtenIn cpp markdown bourne-shell
 
 repoStats
@@ -15,7 +16,6 @@ repoStats
  files 57
  newestCommit 2022
 country United States
-originCommunity https://github.com/kevinlawler/kerf/issues
 reference http://kerfsoftware.com/
 
 example

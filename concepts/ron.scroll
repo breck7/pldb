@@ -8,6 +8,7 @@ tags dataNotation
 latestVersion v0.8.1
 standsFor Rusty Object Notation
 description RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+lab https://github.com/ron-rs
 writtenIn rust markdown yaml toml
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 116
  newestCommit 2024
 country Finland
-originCommunity https://github.com/ron-rs
 
 example
  GameConfig( // optional struct name

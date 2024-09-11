@@ -7,6 +7,7 @@ creators Roy Marples
 tags application
 latestVersion 0.53.1
 description OpenRC is basically an interpreter for shell scripts which provides an easy interface to the often complex system commands and daemons. When a service runs a command it first loads its multiplexed configuration file, then its master configuration file, then /etc/rc.conf and finally the script itself. At this point then runs the command given.
+lab https://roy.marples.name/projects
 writtenIn meson c bourne-shell markdown yaml perl
 
 fileType text
@@ -17,7 +18,6 @@ repoStats
  files 321
  newestCommit 2024
 country England
-originCommunity https://roy.marples.name/projects
 reference http://www.linuxhowtos.org/manpages/8/openrc-run.htm
 
 example

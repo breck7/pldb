@@ -8,6 +8,7 @@ tags pl
 website http://sprylang.se/
 aka ni
 description Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
+lab https://sprylang.se/about.html
 writtenIn bourne-shell nim javascript markdown python html r yaml json
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 106
  newestCommit 2023
 country Sweden
-originCommunity https://sprylang.se/about.html
 
 example
  # Let's add a method to:do: that works as in Smalltalk.

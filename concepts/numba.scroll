@@ -8,6 +8,7 @@ tags compiler
 website http://numba.pydata.org/
 latestVersion 0.59.1
 description Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
+lab https://github.com/numba
 writtenIn python restructuredtext c yaml cpp bourne-shell markdown cuda svg javascript html make toml ini css
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 983
  newestCommit 2024
 country United States and United Kingdom and Germany
-originCommunity https://github.com/numba
 
 example
  from numba import njit

@@ -10,6 +10,7 @@ blog https://nim-lang.org/blog.html
 latestVersion 2.0.4
 aka nimrod
 description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+lab https://github.com/nim-lang
 fileExtensions nim
 writtenIn nim markdown html yaml c bourne-shell json restructuredtext python css assembly-language csv sql tex ini xml bash
 compilesTo c cpp objective-c javascript
@@ -32,7 +33,6 @@ repoStats
  files 3588
  newestCommit 2024
 country Various
-originCommunity https://github.com/nim-lang
 projectEuler Nim
  memberCount
   2019 10

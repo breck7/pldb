@@ -8,6 +8,7 @@ tags pl
 website http://blog.anthonymcook.com/blacklight/
 latestVersion v0.2.0
 description blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
+lab http://anthonymcook.com/
 writtenIn go bash markdown yaml json powershell
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 99
  newestCommit 2024
 country Unknown
-originCommunity http://anthonymcook.com/
 
 example
  newq newq                ;; create send and receive queues

@@ -9,6 +9,7 @@ blog https://blog.llvm.org/tags/llvm-ir/
 releaseNotes https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
 download https://releases.llvm.org/download.html
 aka llvm
+lab https://github.com/llvm
 
 isOpenSource true
 tryItOnline https://tio.run/#llvm
@@ -20,7 +21,6 @@ faq https://llvm.org/docs/FAQ.html
 quineRelay LLVM asm
 ubuntuPackage llvm
 country Various
-originCommunity https://github.com/llvm
 
 pygmentsHighlighter LLVM
  filename asm.py

@@ -6,6 +6,7 @@ appeared 2017
 tags pl
 website http://cell-lang.net/
 description Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
+lab https://github.com/cell-lang
 writtenIn markdown
 
 isOpenSource true
@@ -18,7 +19,6 @@ repoStats
  files 130
  newestCommit 2021
 country Various
-originCommunity https://github.com/cell-lang
 
 example
  type AddUser = add_user(

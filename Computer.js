@@ -292,9 +292,9 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.features.filter(particle => particle.length)
   }
 
-  get originCommunity() {
-    const originCommunity = this.get("originCommunity")
-    return originCommunity ? originCommunity.split(" && ") : []
+  get lab() {
+    const lab = this.get("lab")
+    return lab ? lab.split(" && ") : []
   }
 
   get creators() {
@@ -1031,13 +1031,11 @@ ${maintainersLinks}
     const implementationOf = this.getRelationshipFile("implementationOf")
     if (implementationOf) facts.push(`${title} is an implementation of ${implementationOf.link()}`)
 
-    const { originCommunity } = this
-    let originCommunityStr = ""
-    if (originCommunity.length) {
-      originCommunityStr = originCommunity
-        .map(name => `<a href="../lists/originCommunities.html#q=${name}">${name}</a>`)
-        .join(" and ")
-      facts.push(`Early development of ${title} happened in ${originCommunityStr}`)
+    const { lab } = this
+    let labStr = ""
+    if (lab.length) {
+      labStr = lab.map(name => `<a href="../lists/labs.html#q=${name}">${name}</a>`).join(" and ")
+      facts.push(`Early development of ${title} happened in ${labStr}`)
     }
 
     const { numberOfJobsEstimate } = this
@@ -1774,13 +1772,13 @@ class Tables {
     }
   }
 
-  get originCommunities() {
+  get labs() {
     const files = lodash.sortBy(
-      this.pldb.filter(file => file.isLanguage && file.originCommunity?.length),
+      this.pldb.filter(file => file.isLanguage && file.lab?.length),
       "rank"
     )
 
-    const entities = groupByListValues("originCommunity", files)
+    const entities = groupByListValues("lab", files)
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
       const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.name}</a>`).join(" - ")

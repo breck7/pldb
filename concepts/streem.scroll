@@ -7,6 +7,7 @@ creators Yukihiro Matsumoto
 tags pl
 website https://github.com/matz/streem
 description Streem is a stream based concurrent scripting language. It is based on a programming model similar to the shell, with influences from Ruby, Erlang, and other functional programming languages.
+lab Ruby Association,NaCl
 writtenIn c markdown yaml make bourne-shell yacc lex dockerfile
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 63
  newestCommit 2022
 country Japan
-originCommunity Ruby Association,NaCl
 
 example
  # channel to broadcast to all clients

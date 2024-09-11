@@ -8,6 +8,7 @@ tags queryLanguage
 latestVersion v0.0.5
 aka jl
 description jl ("JSON lambda") is a tiny functional language for querying and manipulating JSON.
+lab https://chrisdone.com/
 writtenIn haskell yaml markdown
 
 repoStats
@@ -17,7 +18,6 @@ repoStats
  files 22
  newestCommit 2022
 country England and Canada
-originCommunity https://chrisdone.com/
 
 example
  map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)

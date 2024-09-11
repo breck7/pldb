@@ -7,6 +7,7 @@ creators Yuya Watari
 tags pl
 website https://github.com/proprowataya/calc4
 description Calc4 is a programming language where everything in its code is an operator.
+lab https://github.com/proprowataya
 writtenIn cpp cmake markdown yaml bourne-shell
 
 repoStats
@@ -16,7 +17,6 @@ repoStats
  files 37
  newestCommit 2022
 country Japan
-originCommunity https://github.com/proprowataya
 
 example
  [fib2|x, a, b|x ? ((x-1) ? ((x-1) {fib2} (a+b) {fib2}a) ? a) ? b] 38{fib2}1{fib2}0

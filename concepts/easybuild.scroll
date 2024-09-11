@@ -8,6 +8,7 @@ tags application
 website http://easybuilders.github.io/easybuild/
 latestVersion v1.8.2
 description EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
+lab https://github.com/easybuilders/
 writtenIn yaml bourne-shell python restructuredtext markdown
 
 isOpenSource true
@@ -19,7 +20,6 @@ repoStats
  committers 77
  files 47
 country Various
-originCommunity https://github.com/easybuilders/
 
 githubRepo https://github.com/easybuilders/easybuild
  stars 457

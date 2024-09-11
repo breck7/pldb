@@ -534,6 +534,7 @@ box-sizing: border-box;
 <div><label for="githubRepo_description" title="">GithubRepo_description:</label><input placeholder="How is this language described here?" type="string" id="githubRepo_description" name="githubRepo_description" ></div>
 <div><label for="paper" title="">Paper:</label><input placeholder="What is a URL to a paper(s) by the creator(s) introducing this language?" type="string" id="paper" name="paper" ></div>
 <div><label for="rijuRepl_description" title="">RijuRepl_description:</label><input placeholder="How is this language described here?" type="string" id="rijuRepl_description" name="rijuRepl_description" ></div>
+<div><label for="lab" title="">Lab:</label><input placeholder="In what community(ies) did the language first originate?" type="string" id="lab" name="lab" ></div>
 <div><label for="rijuRepl_fileExtensions" title="">RijuRepl_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="rijuRepl_fileExtensions" name="rijuRepl_fileExtensions" ></div>
 <div><label for="wikipedia_fileExtensions" title="">Wikipedia_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="wikipedia_fileExtensions" name="wikipedia_fileExtensions" ></div>
 <div><label for="githubLanguage_fileExtensions" title="">GithubLanguage_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="githubLanguage_fileExtensions" name="githubLanguage_fileExtensions" ></div>
@@ -587,7 +588,6 @@ box-sizing: border-box;
 <div><label for="centralPackageRepositoryCount" title="">CentralPackageRepositoryCount:</label><input placeholder="How many central package repositories does this language have?" type="number" id="centralPackageRepositoryCount" name="centralPackageRepositoryCount" ></div>
 <div><label for="repoStats" title="">RepoStats:</label><textarea placeholder="What are basic stats on this repo?" id="repoStats" name="repoStats" ></textarea></div>
 <div><label for="proposals" title="">Proposals:</label><input placeholder="What is the URL to a the place where language proposals are made, if one exists?" type="string" id="proposals" name="proposals" ></div>
-<div><label for="originCommunity" title="">OriginCommunity:</label><input placeholder="In what community(ies) did the language first originate?" type="string" id="originCommunity" name="originCommunity" ></div>
 <div><label for="country" title="">Country:</label><input placeholder="What country was this language first developed in?" type="string" id="country" name="country" ></div>
 <div><label for="funFact" title="">FunFact:</label><input placeholder="What is a code block or some text containing a fun or unusual fact about the language?" type="string" id="funFact" name="funFact" ></div>
 <div><label for="projectEuler" title="">ProjectEuler:</label><input placeholder="Is this language one of the ones listed on https://projecteuler.net/?" type="string" id="projectEuler" name="projectEuler" ></div>
@@ -1374,6 +1374,9 @@ stumpNoSnippet
   a Livestreams
    href ./lists/live.html
   span ·
+  a Labs
+   href ./lists/labs.html
+  span ·
   a Resources
    href ./lists/resources.html
   span ·
@@ -1483,6 +1486,7 @@ description simpler site generator. Transforms a directory of templates (of vary
 githubRepo_description simpler site generator. Transforms a directory of templates (of varying types) into HTML.
 paper 
 rijuRepl_description simpler site generator. Transforms a directory of templates (of varying types) into HTML.
+lab of Computer Science, University of Toronto
 rijuRepl_fileExtensions ads
 wikipedia_fileExtensions ads
 githubLanguage_fileExtensions os
@@ -1536,7 +1540,6 @@ ubuntuPackage
 centralPackageRepositoryCount 
 repoStats 
 proposals 
-originCommunity of Computer Science, University of Toronto
 country 
 funFact C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++
 projectEuler 
@@ -1792,6 +1795,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
  <a href="./lists/keywords.html">Keywords</a>
  <span>·</span>
  <a href="./lists/live.html">Livestreams</a>
+ <span>·</span>
+ <a href="./lists/labs.html">Labs</a>
  <span>·</span>
  <a href="./lists/resources.html">Resources</a>
  <span>·</span>

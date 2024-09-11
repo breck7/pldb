@@ -5,6 +5,7 @@ name datascript
 appeared 2014
 tags queryLanguage
 latestVersion 1.6.5
+lab https://www.patreon.com/tonsky
 writtenIn bourne-shell clojure javascript markdown clojurescript html yaml svg json
 
 repoStats
@@ -14,7 +15,6 @@ repoStats
  files 108
  newestCommit 2024
 country Germany
-originCommunity https://www.patreon.com/tonsky
 
 example
  (require '[datascript.core :as d])
