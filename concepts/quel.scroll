@@ -8,7 +8,7 @@ tags queryLanguage
 
 fileType text
 country United States
-originCommunity University of California, Berkeley
+originCommunity University of California Berkeley
 
 example
  range of E is EMPLOYEE
@@ -20,7 +20,7 @@ wikipedia https://en.wikipedia.org/wiki/QUEL_query_languages
  example
   retrieve (a=count(y.i by y.d where y.str = "ii*" or y.str = "foo"),b=max(count(y.i by y.d)))
  related sql
- summary QUEL is a relational database query language, based on tuple relational calculus, with some similarities to SQL.  It was created as a part of the Ingres DBMS effort at University of California, Berkeley, based on Codd's earlier suggested but not implemented Data Sub-Language ALPHA.  QUEL was used for a short time in most products based on the freely available Ingres source code, most notably in an implementation called POSTQUEL supported by POSTGRES. As Oracle and DB2 gained market share in the early 1980s, most companies then supporting QUEL moved to SQL instead. QUEL continues to be available as a part of the Ingres DBMS, although no QUEL-specific language enhancements have been added for many years.
+ summary QUEL is a relational database query language, based on tuple relational calculus, with some similarities to SQL.  It was created as a part of the Ingres DBMS effort at University of California Berkeley, based on Codd's earlier suggested but not implemented Data Sub-Language ALPHA.  QUEL was used for a short time in most products based on the freely available Ingres source code, most notably in an implementation called POSTQUEL supported by POSTGRES. As Oracle and DB2 gained market share in the early 1980s, most companies then supporting QUEL moved to SQL instead. QUEL continues to be available as a part of the Ingres DBMS, although no QUEL-specific language enhancements have been added for many years.
  created 2003
  pageId 33661295
  backlinksCount 60
