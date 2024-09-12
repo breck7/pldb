@@ -111,7 +111,6 @@ parsers/blankLine.parsers
 parsers/measures.parsers
 parsers/import.parsers
 parsers/errors.parsers`
-      .trim()
       .split("\n")
       .map(filepath => path.join(__dirname, filepath))
     parserFilenames.push(this.parsersFile)
@@ -122,7 +121,7 @@ parsers/errors.parsers`
       .replace("catchAllParser catchAllParagraphParser", "catchAllParser errorParser")
       .replace(/^importOnly\n/gm, "")
       .replace(/^import .+/gm, "")
-    Disk.write(path.join(__dirname, `${this.scrollSetName}.parsers`), code)
+    Disk.write(path.join(this.baseFolder, `${this.scrollSetName}.parsers`), code)
   }
 }
 
