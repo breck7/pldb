@@ -123,6 +123,7 @@ a:hover {
 }
 .scrollButton a {
   color: white;
+  text-decoration: none;
 }
 .scrollButton:hover {
   background-color: rgb(10,92,202,0.9);

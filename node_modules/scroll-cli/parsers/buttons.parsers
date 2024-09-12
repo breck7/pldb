@@ -7,3 +7,10 @@ scrollButtonParser
  javascript
   defaultClassName = "scrollButton"
   tag = "button"
+  get divAttributes() {
+    const link = this.getFromParser("linkParser")
+    return super.divAttributes + link ? `onclick="window.location='${link.link}'"` : "" // better ideas?
+  }
+  getFromParser(parserId) {
+    return this.find(particle => particle.doesExtend(parserId))
+  }

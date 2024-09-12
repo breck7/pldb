@@ -39,6 +39,7 @@ gazetteCssParser
    cursor pointer
    a
     color white
+    text-decoration none
    &:hover
     background-color rgb(10,92,202,0.9)
    &:active
