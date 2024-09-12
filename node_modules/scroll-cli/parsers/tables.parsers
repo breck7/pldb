@@ -80,12 +80,14 @@ printTableParser
     column++
     const content = ((columnCount === column ? words.slice(columnCount - 1).join(" ") : words[column - 1]) ?? "").toString()
     if (col.isLink) continue
-    let tagged = content
+    const isTimestamp = col.name.toLowerCase().includes("time") && /^\d{10}(\d{3})?$/.test(content)
+    const text =  isTimestamp ? new Date(parseInt(content)).toLocaleString() : content
+    let tagged = text
     const link = words[col.linkIndex]
     const isUrl = content.match(/^https?\:[^ ]+$/)
-    if (col.linkIndex > -1 && link) tagged = `<a href="${link}">${content}</a>`
+    if (col.linkIndex > -1 && link) tagged = `<a href="${link}">${text}</a>`
     else if (col.name.endsWith("Url") && isUrl) tagged = `<a href="${content}">${col.name.replace("Url", "")}</a>`
-    else if (isUrl) tagged = `<a href="${content}">${content}</a>`
+    else if (isUrl) tagged = `<a href="${content}">${text}</a>`
     str += `<td>${tagged}</td>\n`
    }
    return str
