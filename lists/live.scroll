@@ -18,9 +18,10 @@ endColumns
 
 wideColumn
 table live.tsv
- select name started youtubeUrl youtubeUrl_subscribers twitchUrl twitchUrl_subscribers
+ select name started twitchUrl twitchUrl_subscribers youtubeUrl youtubeUrl_subscribers
   rename youtubeUrl_subscribers YouTubeSubs twitchUrl_subscribers TwitchSubs
-   printTable
+   orderBy -TwitchSubs
+    printTable
 
 nameParser
  description What is the name of the livestream?
@@ -49,6 +50,21 @@ twitchUrl https://www.twitch.tv/theprimeagen
  subscribers 208000
 youtubeUrl https://www.youtube.com/c/theprimeagen
  subscribers 404000
+
+name Notch
+started 2011
+twitchUrl https://www.twitch.tv/notch
+ subscribers 52000
+
+name j_blow
+started 2014
+twitchUrl https://www.twitch.tv/j_blow
+ subscribers 50000
+
+name geohot
+started 2018
+twitchUrl https://www.twitch.tv/georgehotz
+ subscribers 81600
 
 ../footer.scroll
 tableSearch
