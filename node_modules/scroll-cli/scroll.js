@@ -869,15 +869,16 @@ printTitle`,
       "feed.scroll": `buildRss feed.xml
 printFeed All`,
       "footer.scroll": `importOnly
+center
 viewSourceButton
 scrollVersionLink`,
       "helloWorld.scroll": `tags All
 header.scroll
-
-thinColumns
+thinColumn
 This is my first blog post using Scroll.
-endColumns
+
 ****
+
 footer.scroll`,
       "index.scroll": `title My Blog
 header.scroll

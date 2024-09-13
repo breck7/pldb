@@ -86,7 +86,7 @@ printTableParser
     const link = words[col.linkIndex]
     const isUrl = content.match(/^https?\:[^ ]+$/)
     if (col.linkIndex > -1 && link) tagged = `<a href="${link}">${text}</a>`
-    else if (col.name.endsWith("Url") && isUrl) tagged = `<a href="${content}">${col.name.replace("Url", "")}</a>`
+    else if (col.name.endsWith("Url")) tagged = `<a href="${content}">${col.name.replace("Url", "")}</a>`
     else if (isUrl) tagged = `<a href="${content}">${text}</a>`
     str += `<td>${tagged}</td>\n`
    }
