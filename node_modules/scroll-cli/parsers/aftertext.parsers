@@ -35,8 +35,14 @@ abstractAftertextParser
    const { originalTextPostLinkify, markupInserts } = this
    let adjustment = 0
    let newText = originalTextPostLinkify
-   // If multiple tags start at same index, the tag that closes first should start last. Otherwise HTML breaks.
-   markupInserts.sort((a, b) => (a.index === b.index ? b.endIndex - a.endIndex : a.index - b.index))
+   markupInserts.sort((a, b) => {
+     if (a.index !== b.index)
+       return a.index - b.index
+     // If multiple tags start at same index, the tag that closes first should start last. Otherwise HTML breaks.
+     if (b.index === b.endIndex) // unless the endIndex is the same as index
+       return a.endIndex - b.endIndex
+     return b.endIndex - a.endIndex
+   })
    markupInserts.forEach(insertion => {
     insertion.index += adjustment
     const consumeStartCharacters = insertion.consumeStartCharacters ?? 0

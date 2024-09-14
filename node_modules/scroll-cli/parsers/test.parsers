@@ -1,3 +1,21 @@
 testStrictParser
  description Make catchAllParagraphParser = error.
  extends abstractTopLevelSingleMetaParser
+
+assertHtmlEqualsParser
+ description Test above particle's output.
+ extends abstractScrollParser
+ cruxFromId
+ baseParser blobParser
+ javascript
+  compile() {
+   return ``
+  }
+  getErrors() {
+    const actual = this._getClosestOlderSibling().compile()
+    const expected = this.childrenToString()
+    if (actual === expected)
+    	return []
+    return [this.makeError(`'${actual}' did not match '${expected}'`)]
+  }
+ catchAllParser htmlLineParser
