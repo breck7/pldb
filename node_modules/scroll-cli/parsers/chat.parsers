@@ -17,5 +17,5 @@ chatParser
    return this.map((line, index) => line.asString ? `<div style="text-align: ${index % 2 ? "right" : "left"};" class="scrollChat ${index % 2 ? "scrollChatRight" : "scrollChatLeft"}"><span>${line.asString}</span></div>` : "").join("")
   }
   compileTxt() {
-    return this.childrenToString()
+    return this.subparticlesToString()
   }

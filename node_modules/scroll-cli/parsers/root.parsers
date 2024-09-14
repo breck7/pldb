@@ -62,7 +62,7 @@ scrollParser
   }
   compile(compileSettings) {
     this.sectionStack = []
-    return this.map(child => child.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
+    return this.map(subparticle => subparticle.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
   }
   sectionStack = []
   clearSectionStack() {
@@ -87,7 +87,7 @@ scrollParser
   alreadyRequired = new Set()
   compileEmbeddedVersion(compileSettings) {
    this.sectionStack = []
-   return this.map(child => (child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+   return this.map(subparticle => (subparticle.compileEmbeddedVersion ? subparticle.compileEmbeddedVersion(compileSettings) : subparticle.compile(compileSettings)))
      .filter(i => i)
      .join("\n")
      .trim() + this.clearSectionStack()

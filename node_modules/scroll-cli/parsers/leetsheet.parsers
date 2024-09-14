@@ -21,7 +21,7 @@ printUsageStatsParser
    particle.appendLine("delimiter  ")
    particle.appendLine("printTable")
    const dataParticle = particle.appendLine("data")
-    dataParticle.setChildren(this.stats)
+    dataParticle.setSubparticles(this.stats)
    const html = particle.compile()
    particle.destroy()
    return html
@@ -43,13 +43,13 @@ printScrollLeetSheetParser
  javascript
   get parsersToDocument() {
     const clone = this.root.clone()
-    clone.setChildren("")
+    clone.setSubparticles("")
     const words = clone.getAutocompleteResultsAt(0,0).matches.map(a => a.text)
     words.push("blankline") // manually add blank line
     words.push("Catch All Paragraph.") // manually add catch all paragraph
     words.push("<h></h>") // manually add html
     words.sort()
-    clone.setChildren(words.join("\n").replace(/blankline/, "")) // insert blank line in right spot
+    clone.setSubparticles(words.join("\n").replace(/blankline/, "")) // insert blank line in right spot
     return clone
   }
   sortDocs(docs) {
@@ -66,10 +66,10 @@ printScrollLeetSheetParser
   }
   makeLink(examples, crux) {
     // if (!examples.length) console.log(crux) // find particles that need docs
-    const example = examples.length ? examples[0].childrenToString() : crux
+    const example = examples.length ? examples[0].subparticlesToString() : crux
     const base = `https://try.scroll.pub/`
     const particle = new Particle()
-    particle.appendLineAndChildren("scroll", "gazetteCss\n" + example)
+    particle.appendLineAndSubparticles("scroll", "gazetteCss\n" + example)
     return base + "#" + encodeURIComponent(particle.asString)
   }
   docToHtml(doc) {
@@ -130,7 +130,7 @@ printparsersLeetSheetParser
     const parserParticle = clone.getParticle("anyCell")
     const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
     words.sort()
-    parserParticle.setChildren(words.join("\n"))
+    parserParticle.setSubparticles(words.join("\n"))
     return parserParticle
   }
   get parsersToDocument() {
@@ -139,7 +139,7 @@ printparsersLeetSheetParser
     const parserParticle = clone.getParticle("latinParser")
     const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
     words.sort()
-    parserParticle.setChildren(words.join("\n"))
+    parserParticle.setSubparticles(words.join("\n"))
     clone.appendLine("myParser")
     clone.appendLine("myCell")
     return parserParticle

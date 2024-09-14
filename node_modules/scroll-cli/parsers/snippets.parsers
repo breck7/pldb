@@ -25,7 +25,7 @@ printSnippetsParser
     const linkRelativeToCompileTarget = compileSettings.relativePath + file.permalink
     const joinChar = "\n"
     const html = scrollProgram
-        .map((child, index) => (index >= endSnippetIndex ? "" : child.compileEmbeddedVersion ? child.compileEmbeddedVersion(compileSettings) : child.compile(compileSettings)))
+        .map((subparticle, index) => (index >= endSnippetIndex ? "" : subparticle.compileEmbeddedVersion ? subparticle.compileEmbeddedVersion(compileSettings) : subparticle.compile(compileSettings)))
         .filter(i => i)
         .join(joinChar)
         .trim() +

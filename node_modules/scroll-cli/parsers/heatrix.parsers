@@ -16,8 +16,8 @@ heatrixParser
   compile() {
    // A hacky but simple way to do this for now.
    const advanced = new Particle("heatrixAdvanced")
-   advanced.appendLineAndChildren("table", "\n " + this.tableData.replace(/\n/g, "\n "))
-   const particle = this.appendSibling("heatrixAdvanced", advanced.childrenToString())
+   advanced.appendLineAndSubparticles("table", "\n " + this.tableData.replace(/\n/g, "\n "))
+   const particle = this.appendSibling("heatrixAdvanced", advanced.subparticlesToString())
    const html = particle.compile()
    particle.destroy()
    return html
@@ -25,7 +25,7 @@ heatrixParser
   get tableData() {
     const {coreTable} = this.parent
     if (!coreTable)
-      return this.childrenToString()
+      return this.subparticlesToString()
     let table = new Particle(coreTable).asSsv
     if (this.parent.firstWord === "transpose") {
       // drop first line after transpose
@@ -94,8 +94,8 @@ heatrixAdvancedParser
         numbers.unshift(0)
         return generateColorBinningString(numbers, colors);
       }
-      const table = particle.getParticle("table").childrenToString()
-      const scale = particle.getParticle("scale")?.childrenToString() || buildScale(table)
+      const table = particle.getParticle("table").subparticlesToString()
+      const scale = particle.getParticle("scale")?.subparticlesToString() || buildScale(table)
       const thresholds = []
       const colors = []
       scale.split("\n").map((line) => {
@@ -221,5 +221,5 @@ heatrixAdvancedParser
       ).replace(/\n/g, "")
     }
   }
-    return new Heatrix(this.childrenToString().trim()).html
+    return new Heatrix(this.subparticlesToString().trim()).html
   }

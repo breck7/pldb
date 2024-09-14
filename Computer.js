@@ -420,7 +420,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("example").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "the web",
         link: ""
       })
@@ -428,7 +428,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("compilerExplorer example").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "Compiler Explorer",
         link: `https://godbolt.org/`
       })
@@ -436,7 +436,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("rijuRepl example").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "Riju",
         link: this.get("rijuRepl")
       })
@@ -444,7 +444,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("leachim6").forEach(particle => {
       examples.push({
-        code: particle.getParticle("example").childrenToString(),
+        code: particle.getParticle("example").subparticlesToString(),
         source: "hello-world",
         link: `https://github.com/leachim6/hello-world/blob/main/` + particle.get("filepath")
       })
@@ -452,7 +452,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("helloWorldCollection").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "the Hello World Collection",
         link: `http://helloworldcollection.de/#` + particle.getWord(1)
       })
@@ -461,7 +461,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     const linguist_url = this.get("linguistGrammarRepo")
     this.particle.findParticles("linguistGrammarRepo example").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "Linguist",
         link: linguist_url
       })
@@ -469,7 +469,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("wikipedia example").forEach(particle => {
       examples.push({
-        code: particle.childrenToString(),
+        code: particle.subparticlesToString(),
         source: "Wikipedia",
         link: this.get("wikipedia")
       })
@@ -576,10 +576,10 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
         return ""
       }
 
-      const particle = Particle.fromSsv(table.childrenToString())
-      particle.forEach(child => {
-        child.set("repo", child.get("name"))
-        child.set("repoLink", child.get("url"))
+      const particle = Particle.fromSsv(table.subparticlesToString())
+      particle.forEach(subparticle => {
+        subparticle.set("repo", subparticle.get("name"))
+        subparticle.set("repoLink", subparticle.get("url"))
       })
       return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 table
@@ -599,9 +599,9 @@ table
 
     if (items.content === "0") return ""
 
-    const particle = Particle.fromDelimited(items.childrenToString(), "|")
-    particle.forEach(child => {
-      child.set("titleLink", `https://www.semanticscholar.org/paper/${child.get("paperId")}`)
+    const particle = Particle.fromDelimited(items.subparticlesToString(), "|")
+    particle.forEach(subparticle => {
+      subparticle.set("titleLink", `https://www.semanticscholar.org/paper/${subparticle.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
 table
@@ -624,9 +624,9 @@ table
 
     if (isbndb.content === "0") return ""
 
-    const particle = Particle.fromDelimited(isbndb.childrenToString(), "|")
-    particle.forEach(child => {
-      child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
+    const particle = Particle.fromDelimited(isbndb.subparticlesToString(), "|")
+    particle.forEach(subparticle => {
+      subparticle.set("titleLink", `https://isbndb.com/book/${subparticle.get("isbn13")}`)
     })
     return `## Books about ${title} from ISBNdb
 table
@@ -642,9 +642,12 @@ table
     const goodreads = this.getParticle(`goodreads`) // todo: the goodreadsIds we have are wrong.
     if (!goodreads) return ""
 
-    const particle = Particle.fromDelimited(goodreads.childrenToString(), "|")
-    particle.forEach(child => {
-      child.set("titleLink", `https://www.goodreads.com/search?q=${child.get("title") + " " + child.get("author")}`)
+    const particle = Particle.fromDelimited(goodreads.subparticlesToString(), "|")
+    particle.forEach(subparticle => {
+      subparticle.set(
+        "titleLink",
+        `https://www.goodreads.com/search?q=${subparticle.get("title") + " " + subparticle.get("author")}`
+      )
     })
     return `## Books about ${title} on goodreads
 table
@@ -662,9 +665,12 @@ table
     const { title } = this
     const dblp = this.getParticle(`dblp`)
     if (dblp && dblp.get("hits") !== "0") {
-      const particle = Particle.fromDelimited(dblp.getParticle("publications").childrenToString(), "|")
-      particle.forEach(child => {
-        child.set("titleLink", child.get("doi") ? `https://doi.org/` + child.get("doi") : child.get("url"))
+      const particle = Particle.fromDelimited(dblp.getParticle("publications").subparticlesToString(), "|")
+      particle.forEach(subparticle => {
+        subparticle.set(
+          "titleLink",
+          subparticle.get("doi") ? `https://doi.org/` + subparticle.get("doi") : subparticle.get("url")
+        )
       })
       return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
 table
@@ -694,7 +700,7 @@ table
       const supported = particle.content === "true"
 
       table
-        .appendLineAndChildren(
+        .appendLineAndSubparticles(
           `row`,
           `Feature ${feature.title}
 FeatureLink ${feature.titleLink}
@@ -703,7 +709,7 @@ Example
 Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
         )
         .touchParticle("Example")
-        .setChildren(particle.childrenToString())
+        .setSubparticles(particle.subparticlesToString())
     })
 
     return `## Language <a href="../lists/features.html">features</a>
@@ -716,7 +722,7 @@ table
   }
 
   get hackerNewsTable() {
-    const hnTable = this.getParticle(`hackerNewsDiscussions`)?.childrenToString()
+    const hnTable = this.getParticle(`hackerNewsDiscussions`)?.subparticlesToString()
     if (!hnTable) return ""
 
     const table = Particle.fromDelimited(hnTable, "|")
@@ -1278,7 +1284,7 @@ codeWithHeader ${this.name} <a href="../lists/keywords.html#q=${this.id}">Keywor
       .map(
         fact =>
           `codeWithHeader ${`<a href='${fact.content}'>Fun fact</a>`}:
- ${cleanAndRightShift(lodash.escape(fact.childrenToString()))}`
+ ${cleanAndRightShift(lodash.escape(fact.subparticlesToString()))}`
       )
       .join("\n\n")
   }
@@ -1432,7 +1438,7 @@ class Feature {
         return {
           id: file.id,
           name: file.name,
-          example: this.tables.getConceptFile(file.id).getParticle(id).childrenToString()
+          example: this.tables.getConceptFile(file.id).getParticle(id).subparticlesToString()
         }
       })
     const grouped = lodash.groupBy(examples, "example")

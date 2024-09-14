@@ -14,10 +14,10 @@ codeParser
    two = 1 + 1
  javascript
   compile() {
-   return `<code class="scrollCodeBlock">${this.childrenToString().replace(/\</g, "&lt;")}</code>`
+   return `<code class="scrollCodeBlock">${this.subparticlesToString().replace(/\</g, "&lt;")}</code>`
   }
   compileTxt() {
-    return this.childrenToString()
+    return this.subparticlesToString()
   }
  cruxFromId
 

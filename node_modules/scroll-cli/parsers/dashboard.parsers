@@ -25,5 +25,5 @@ scrollDashboardParser
    return `<table class="scrollDashboard">${this.tableBody}</table>`
   }
   compileTxt() {
-    return this.childrenToString()
+    return this.subparticlesToString()
   }

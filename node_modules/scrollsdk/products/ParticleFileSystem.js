@@ -8,8 +8,8 @@ const parsersParser = require("../products/parsers.nodejs.js")
 const { posix } = require("../products/Path.js")
 const PARSERS_EXTENSION = ".parsers"
 const parserRegex = /^[a-zA-Z0-9_]+Parser/gm
-// A regex to check if a multiline string has a line that starts with "import ".
-const importRegex = /^import /gm
+// A regex to check if a multiline string has an import line.
+const importRegex = /^(import |[a-zA-Z\_\-\.0-9\/]+\.(scroll|parsers)$)/gm
 const importOnlyRegex = /^importOnly/
 class DiskWriter {
   constructor() {
@@ -119,7 +119,7 @@ class ParticleFileSystem {
     if (stripParsers)
       code = code
         .split("\n")
-        .filter(line => line.startsWith("import "))
+        .filter(line => importRegex.test(line))
         .join("\n")
     const filepathsWithParserDefinitions = []
     if (this._doesFileHaveParsersDefinitions(absoluteFilePath)) filepathsWithParserDefinitions.push(absoluteFilePath)

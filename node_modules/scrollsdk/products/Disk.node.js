@@ -46,7 +46,7 @@ Disk.readTsvAsParticles = path => Disk.getParticle().fromTsv(Disk.read(path))
 Disk.insertIntoFile = (path, content, delimiter) => Disk.write(path, Disk.stickBetween(content, Disk.read(path), delimiter))
 Disk.detectAndReadAsParticles = path => Disk.detectDelimiterAndReadAsParticles(Disk.read(path))
 Disk.getAllOf = (particle, prop) => particle.filter(particle => particle.getWord(0) === prop)
-Disk.getDelimitedChildrenAsParticles = (particle, delimiter = undefined) => Disk.detectDelimiterAndReadAsParticles(particle.childrenToString())
+Disk.getDelimitedParticlesAsParticles = (particle, delimiter = undefined) => Disk.detectDelimiterAndReadAsParticles(particle.subparticlesToString())
 Disk.sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 Disk.readParticles = path => new (Disk.getParticle())(Disk.read(path))
 Disk.sizeOf = path => fs.statSync(path).size
@@ -103,7 +103,7 @@ Disk.appendUniqueLine = (path, line) => {
   return Disk.append(path, prefix + line + "\n")
 }
 Disk.move = (particle, newPosition) => {
-  particle.parent.insertLineAndChildren(particle.getLine(), particle.childrenToString(), newPosition)
+  particle.parent.insertLineAndSubparticles(particle.getLine(), particle.subparticlesToString(), newPosition)
   particle.destroy()
 }
 Disk._getTextUrl = async url => {
@@ -135,17 +135,17 @@ Disk.downloadJson = async (url, destination) => {
 }
 Disk.buildMapFrom = (particle, key, value) => {
   const map = {}
-  particle.forEach(child => {
-    map[child.get(key)] = child.get(value)
+  particle.forEach(subparticle => {
+    map[subparticle.get(key)] = subparticle.get(value)
   })
   return map
 }
 Disk.csvToMap = (path, columnName) => {
   const particle = Disk.readCsvAsParticles(path)
   const map = {}
-  particle.forEach(child => {
-    const key = child.get(columnName)
-    map[key] = child.toObject()
+  particle.forEach(subparticle => {
+    const key = subparticle.get(columnName)
+    map[key] = subparticle.toObject()
   })
   return map
 }

@@ -39,7 +39,7 @@ linkParser
   catchAllParser programLinkParser
   javascript
    get encoded() {
-    return encodeURIComponent(this.childrenToString())
+    return encodeURIComponent(this.subparticlesToString())
    }
  cruxFromId
  javascript

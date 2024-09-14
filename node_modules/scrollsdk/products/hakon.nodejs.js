@@ -15,7 +15,7 @@
     compile() {
       return this.topDownArray
         .filter(particle => particle.isSelectorParser)
-        .map(child => child.compile())
+        .map(subparticle => subparticle.compile())
         .join("")
     }
     static cachedHandParsersProgramRoot = new HandParsersProgram(`// Cell Parsers
@@ -62,7 +62,7 @@ hakonParser
   compile() {
    return this.topDownArray
     .filter(particle => particle.isSelectorParser)
-    .map(child => child.compile())
+    .map(subparticle => subparticle.compile())
     .join("")
   }
  example A basic example
@@ -113,11 +113,11 @@ selectorParser
     .join(",")
   }
   compile() {
-   const propertyParsers = this.getChildren().filter(particle => particle.doesExtend("propertyParser"))
+   const propertyParsers = this.getSubparticles().filter(particle => particle.doesExtend("propertyParser"))
    if (!propertyParsers.length) return ""
    const spaces = "  "
    return \`\${this.getSelector()} {
-  \${propertyParsers.map(child => child.compile(spaces)).join("\\n")}
+  \${propertyParsers.map(subparticle => subparticle.compile(spaces)).join("\\n")}
   }\\n\`
   }
  cells selectorCell`)
@@ -412,11 +412,11 @@ selectorParser
         .join(",")
     }
     compile() {
-      const propertyParsers = this.getChildren().filter(particle => particle.doesExtend("propertyParser"))
+      const propertyParsers = this.getSubparticles().filter(particle => particle.doesExtend("propertyParser"))
       if (!propertyParsers.length) return ""
       const spaces = "  "
       return `${this.getSelector()} {
-${propertyParsers.map(child => child.compile(spaces)).join("\n")}
+${propertyParsers.map(subparticle => subparticle.compile(spaces)).join("\n")}
 }\n`
     }
   }

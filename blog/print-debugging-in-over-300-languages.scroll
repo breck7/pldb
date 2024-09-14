@@ -182,7 +182,7 @@ table
         __dirname + "/blog/does-every-programming-language-support-print-debugging.scroll"
       )
     )
-    const particle = Particle.fromCsv(code.getParticle("rawData").childrenToString())
+    const particle = Particle.fromCsv(code.getParticle("rawData").subparticlesToString())
     const grouped = {}
     particle.forEach(row => {
       const obj = row.toObject()

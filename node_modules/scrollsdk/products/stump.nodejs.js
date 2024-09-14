@@ -219,10 +219,10 @@ htmlTagParser
     var elem = document.createElement(this.getTag())
     elem.setAttribute("stumpUid", this._getUid())
     this.filter(particle => particle.isAttributeParser)
-      .forEach(child => elem.setAttribute(child.firstWord, child.content))
-    elem.innerHTML = this.has("bern") ? this.getParticle("bern").childrenToString() : this._getOneLiner()
+      .forEach(subparticle => elem.setAttribute(subparticle.firstWord, subparticle.content))
+    elem.innerHTML = this.has("bern") ? this.getParticle("bern").subparticlesToString() : this._getOneLiner()
     this.filter(particle => particle.isHtmlTagParser)
-      .forEach(child => elem.appendChild(child.domElement))
+      .forEach(subparticle => elem.appendChild(subparticle.domElement))
     return elem
   }
   _toHtml(indentCount, withSuid) {
@@ -233,7 +233,7 @@ htmlTagParser
     .join("")
    const indent = " ".repeat(indentCount)
    const collapse = this.shouldCollapse()
-   const indentForChildParsers = !collapse && this.getChildInstancesOfParserId("htmlTagParser").length > 0
+   const indentForChildParsers = !collapse && this.getSubparticleInstancesOfParserId("htmlTagParser").length > 0
    const suid = withSuid ? \` stumpUid="\${this._getUid()}"\` : ""
    const oneLiner = this._getOneLiner()
    return \`\${!collapse ? indent : ""}<\${tag}\${attributesStr}\${suid}>\${oneLiner}\${indentForChildParsers ? "\\n" : ""}\${children}</\${tag}>\${collapse ? "" : "\\n"}\`
@@ -286,8 +286,8 @@ htmlTagParser
    return this.insertChildParticle(text, index)
   }
   insertChildParticle(text, index) {
-   const singleParticle = new Particle(text).getChildren()[0]
-   const newParticle = this.insertLineAndChildren(singleParticle.getLine(), singleParticle.childrenToString(), index)
+   const singleParticle = new Particle(text).getSubparticles()[0]
+   const newParticle = this.insertLineAndSubparticles(singleParticle.getLine(), singleParticle.subparticlesToString(), index)
    const stumpParserIndex = this.filter(particle => particle.isHtmlTagParser).indexOf(newParticle)
    this.getShadow().insertHtmlParticle(newParticle, stumpParserIndex)
    return newParticle
@@ -301,7 +301,7 @@ htmlTagParser
   findStumpParticleByChildString(line) {
    return this.topDownArray.find(particle =>
     particle
-     .map(child => child.getLine())
+     .map(subparticle => subparticle.getLine())
      .join("\\n")
      .includes(line)
    )
@@ -313,7 +313,7 @@ htmlTagParser
    return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
   }
   hasLine(line) {
-   return this.getChildren().some(particle => particle.getLine() === line)
+   return this.getSubparticles().some(particle => particle.getLine() === line)
   }
   findStumpParticlesByChild(line) {
    return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.hasLine(line))
@@ -398,7 +398,7 @@ bernParser
  catchAllParser lineOfHtmlContentParser
  javascript
   _toHtml() {
-   return this.childrenToString()
+   return this.subparticlesToString()
   }
   getTextContent() {return ""}
  cells bernKeywordCell`)
@@ -751,9 +751,9 @@ bernParser
     get domElement() {
       var elem = document.createElement(this.getTag())
       elem.setAttribute("stumpUid", this._getUid())
-      this.filter(particle => particle.isAttributeParser).forEach(child => elem.setAttribute(child.firstWord, child.content))
-      elem.innerHTML = this.has("bern") ? this.getParticle("bern").childrenToString() : this._getOneLiner()
-      this.filter(particle => particle.isHtmlTagParser).forEach(child => elem.appendChild(child.domElement))
+      this.filter(particle => particle.isAttributeParser).forEach(subparticle => elem.setAttribute(subparticle.firstWord, subparticle.content))
+      elem.innerHTML = this.has("bern") ? this.getParticle("bern").subparticlesToString() : this._getOneLiner()
+      this.filter(particle => particle.isHtmlTagParser).forEach(subparticle => elem.appendChild(subparticle.domElement))
       return elem
     }
     _toHtml(indentCount, withSuid) {
@@ -764,7 +764,7 @@ bernParser
         .join("")
       const indent = " ".repeat(indentCount)
       const collapse = this.shouldCollapse()
-      const indentForChildParsers = !collapse && this.getChildInstancesOfParserId("htmlTagParser").length > 0
+      const indentForChildParsers = !collapse && this.getSubparticleInstancesOfParserId("htmlTagParser").length > 0
       const suid = withSuid ? ` stumpUid="${this._getUid()}"` : ""
       const oneLiner = this._getOneLiner()
       return `${!collapse ? indent : ""}<${tag}${attributesStr}${suid}>${oneLiner}${indentForChildParsers ? "\n" : ""}${children}</${tag}>${collapse ? "" : "\n"}`
@@ -817,8 +817,8 @@ bernParser
       return this.insertChildParticle(text, index)
     }
     insertChildParticle(text, index) {
-      const singleParticle = new Particle(text).getChildren()[0]
-      const newParticle = this.insertLineAndChildren(singleParticle.getLine(), singleParticle.childrenToString(), index)
+      const singleParticle = new Particle(text).getSubparticles()[0]
+      const newParticle = this.insertLineAndSubparticles(singleParticle.getLine(), singleParticle.subparticlesToString(), index)
       const stumpParserIndex = this.filter(particle => particle.isHtmlTagParser).indexOf(newParticle)
       this.getShadow().insertHtmlParticle(newParticle, stumpParserIndex)
       return newParticle
@@ -832,7 +832,7 @@ bernParser
     findStumpParticleByChildString(line) {
       return this.topDownArray.find(particle =>
         particle
-          .map(child => child.getLine())
+          .map(subparticle => subparticle.getLine())
           .join("\n")
           .includes(line)
       )
@@ -844,7 +844,7 @@ bernParser
       return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
     }
     hasLine(line) {
-      return this.getChildren().some(particle => particle.getLine() === line)
+      return this.getSubparticles().some(particle => particle.getLine() === line)
     }
     findStumpParticlesByChild(line) {
       return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.hasLine(line))
@@ -953,7 +953,7 @@ bernParser
       return true
     }
     _toHtml() {
-      return this.childrenToString()
+      return this.subparticlesToString()
     }
     getTextContent() {
       return ""

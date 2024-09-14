@@ -17,5 +17,5 @@ hoverNoteParser
    return [`class="scrollHoverNote"`, `title="${this.hoverNoteText}"`]
   }
   get hoverNoteText() {
-   return this.childrenToString().replace(/\n/g, " ")
+   return this.subparticlesToString().replace(/\n/g, " ")
   }

@@ -25,8 +25,8 @@ katexParser
   compileInstance() {
    const id = this._getUid()
    const content = this.content === undefined ? "" : this.content
-   return `<div class="scrollKatex" id="${id}">${content + this.childrenToString()}</div>`
+   return `<div class="scrollKatex" id="${id}">${content + this.subparticlesToString()}</div>`
   }
   compileTxt() {
-    return ( this.content ? this.content : "" )+ this.childrenToString()
+    return ( this.content ? this.content : "" )+ this.subparticlesToString()
   }

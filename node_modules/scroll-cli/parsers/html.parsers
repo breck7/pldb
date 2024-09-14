@@ -24,7 +24,7 @@ abstractHtmlParser
  catchAllCellType htmlAnyCell
  javascript
   compile() {
-   return `${this.content ?? ""}${this.childrenToString()}`
+   return `${this.content ?? ""}${this.subparticlesToString()}`
   }
   compileTxt() {
     return ""
@@ -61,7 +61,7 @@ htmlInlineParser
  boolean isPopular true
  javascript
   compile() {
-   return `${this.getLine() ?? ""}${this.childrenToString()}`
+   return `${this.getLine() ?? ""}${this.subparticlesToString()}`
   }
 
 stumpContentParser
@@ -76,7 +76,7 @@ stumpParser
  javascript
   compile() {
    const file = this.parent.file
-   return file.compileStumpCode(this.childrenToString())
+   return file.compileStumpCode(this.subparticlesToString())
   }
 
 stumpNoSnippetParser

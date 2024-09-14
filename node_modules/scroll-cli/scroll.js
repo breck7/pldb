@@ -131,7 +131,7 @@ const parseMeasures = parser => {
       Values: 0,
       Coverage: 0,
       Question: particle.definition.description,
-      Example: particle.definition.getParticle("example")?.childrenToString() || "",
+      Example: particle.definition.getParticle("example")?.subparticlesToString() || "",
       Type: particle.typeForWebForms,
       Source: particle.sourceDomain,
       //Definition: parsedProgram.root.file.filename + ":" + particle.lineNumber
@@ -468,7 +468,7 @@ parsers/errors.parsers`
         return parserWord === scrollKeywords.replace || parserWord === scrollKeywords.replaceJs || parserWord === scrollKeywords.replaceNodejs
       })
       .forEach(particle => {
-        let value = particle.length ? particle.childrenToString() : particle.getWordsFrom(2).join(" ")
+        let value = particle.length ? particle.subparticlesToString() : particle.getWordsFrom(2).join(" ")
         const kind = particle.firstWord
         if (kind === scrollKeywords.replaceJs) value = eval(value)
         if (kind === scrollKeywords.replaceNodejs) {

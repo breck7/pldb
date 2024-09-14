@@ -18,7 +18,7 @@ scriptParser
    return `<script>${this.scriptContent}</script>`
   }
   get scriptContent() {
-    return this.content ?? this.childrenToString()
+    return this.content ?? this.subparticlesToString()
   }
   compileJs() {
     return this.scriptContent

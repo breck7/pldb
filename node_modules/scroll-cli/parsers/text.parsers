@@ -15,7 +15,7 @@ plainTextParser
    return this.compileTxt()
   }
   compileTxt() {
-    return `${this.content ?? ""}${this.childrenToString()}`
+    return `${this.content ?? ""}${this.subparticlesToString()}`
   }
 
 plainTextOnlyParser

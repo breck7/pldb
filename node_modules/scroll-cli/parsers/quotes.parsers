@@ -11,10 +11,10 @@ quoteParser
  extends abstractScrollParser
  javascript
   compile() {
-   return `<blockquote class="scrollQuote">${this.childrenToString()}</blockquote>`
+   return `<blockquote class="scrollQuote">${this.subparticlesToString()}</blockquote>`
   }
   compileTxt() {
-    return this.childrenToString()
+    return this.subparticlesToString()
   }
 
 quickQuoteParser

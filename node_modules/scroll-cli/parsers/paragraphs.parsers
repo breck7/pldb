@@ -16,9 +16,9 @@ paragraphParser
    return compiled
   }
   compileTxt() {
-    const children = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
+    const subparticles = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
     const dateline = this.getParticle("dateline")
-    return (dateline ? dateline.day + "\n\n" : "") + (this.originalText || "") + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
+    return (dateline ? dateline.day + "\n\n" : "") + (this.originalText || "") + (subparticles ? "\n " + subparticles.replace(/\n/g, "\n ") : "")
   }
 
 quickParagraphParser
@@ -33,13 +33,13 @@ abstractIndentableParagraphParser
  extends paragraphParser
  inScope abstractAftertextDirectiveParser abstractAftertextAttributeParser abstractIndentableParagraphParser
  javascript
-  compileChildren() {
+  compileSubparticles() {
     return this.map(particle => particle.compile())
      .join("\n")
      .trim()
   }
   compile() {
-   return super.compile() + this.compileChildren()
+   return super.compile() + this.compileSubparticles()
   }
   compileTxt() {
     return this.getWord(0) + " " + super.compileTxt()

@@ -13,7 +13,7 @@ assertHtmlEqualsParser
   }
   getErrors() {
     const actual = this._getClosestOlderSibling().compile()
-    const expected = this.childrenToString()
+    const expected = this.subparticlesToString()
     if (actual === expected)
     	return []
     return [this.makeError(`'${actual}' did not match '${expected}'`)]

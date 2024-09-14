@@ -43,7 +43,7 @@ scrollLoopParser
    }
   }
   get items() {
-   const provider = this.getChildInstancesOfParserId("abstractItemsProviderParser")[0]
+   const provider = this.getSubparticleInstancesOfParserId("abstractItemsProviderParser")[0]
    if (provider)
      return provider.items
    if (this.parent.coreTable)

@@ -21,7 +21,7 @@ cssParser
    return `<style>${this.css}</style>`
   }
   get css() {
-    return this.content ?? this.childrenToString()
+    return this.content ?? this.subparticlesToString()
   }
   compileCss() {
     return this.css

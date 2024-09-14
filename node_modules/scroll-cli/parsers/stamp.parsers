@@ -13,7 +13,7 @@ stampFileParser
    const fullPath = path.join(parentDir, this.getLine())
    this.root.file.log(`Creating file ${fullPath}`)
    fs.mkdirSync(path.dirname(fullPath), {recursive: true})
-   const content = this.childrenToString()
+   const content = this.subparticlesToString()
    fs.writeFileSync(fullPath, content, "utf8")
    const isExecutable = content.startsWith("#!")
    if (isExecutable) fs.chmodSync(fullPath, "755")

@@ -51,7 +51,7 @@ abstractTextareaMeasureParser
  baseParser blobParser
  javascript
   get measureValue() {
-    return this.childrenToString().replace(/\n/g, "\\n")
+    return this.subparticlesToString().replace(/\n/g, "\\n")
   }
 
 abstractEmailMeasureParser

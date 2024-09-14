@@ -85,8 +85,8 @@ scrollImageParser
    return `<a href="${clickLink}" target="${target}" ${className} ${id}><img src="${linkRelativeToCompileTarget}" ${dimensionAttributes}loading="lazy"></a>`
   }
   compileTxt() {
-    const children = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
-    return  "[Image Omitted]" + (children ? "\n " + children.replace(/\n/g, "\n ") : "")
+    const subparticles = this.filter(particle => particle.compileTxt).map(particle => particle.compileTxt()).filter(i => i).join("\n")
+    return  "[Image Omitted]" + (subparticles ? "\n " + subparticles.replace(/\n/g, "\n ") : "")
   }
 
 quickImageParser

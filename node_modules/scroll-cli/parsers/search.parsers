@@ -15,7 +15,7 @@ printSearchTableParser
     particle.appendLine("delimiter 	")
     particle.appendLine("printTable")
     const dataParticle = particle.appendLine("data")
-    dataParticle.setChildren("title titleLink text date wordCount minutes".replace(/ /g, "\t") + "\n" + data)
+    dataParticle.setSubparticles("title titleLink text date wordCount minutes".replace(/ /g, "\t") + "\n" + data)
    const html = particle.compile()
    particle.destroy()
    return html

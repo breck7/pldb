@@ -200,7 +200,7 @@ scrollTableParser
       return this.fileContent
     const dataParticle = this.getParticle("data")
     if (dataParticle)
-      return dataParticle.childrenToString()
+      return dataParticle.subparticlesToString()
     // if not dataparticle and no filename, check [permalink].csv
     if (this.isNodeJs())
       return this.root.readFile(this.root.permalink.replace(".html", "") + ".csv")
