@@ -26,3 +26,14 @@ cssParser
   compileCss() {
     return this.css
   }
+
+quickCssParser
+ popularity 0.007524
+ description Make a CSS tag.
+ extends abstractQuickIncludeParser
+ cells urlCell
+ pattern ^[^\s]+\.(css)$
+ javascript
+  compile() {
+   return `<link rel="stylesheet" type="text/css" href="${this.filename}">`
+  }

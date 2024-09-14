@@ -1,0 +1,10 @@
+quickScriptParser
+ popularity 0.007524
+ description Make a Javascript tag.
+ extends abstractQuickIncludeParser
+ cells urlCell
+ pattern ^[^\s]+\.(js)$
+ javascript
+  compile() {
+   return `<script src="${this.filename}"></script>`
+  }

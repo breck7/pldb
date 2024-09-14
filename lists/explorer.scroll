@@ -22,14 +22,10 @@ endSnippet
 
 footer.scroll
 
-<script defer src="../jquery-3.7.1.min.js"></script>
-<style>.dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}</style>
-<link rel="stylesheet" href="../code/browser/explorer/datatables.min.css" />
-<script defer src="../code/browser/explorer/datatables.min.js"></script>
-<script defer src="../pldb.js"></script>
-<script defer src="../measures.js"></script>
-<script defer src="../code/browser/explorer/explorer.js"></script>
-
-<script defer>
-
-</script>
+css .dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}
+../jquery-3.7.1.min.js
+../code/browser/explorer/datatables.min.css
+../code/browser/explorer/datatables.min.js
+../pldb.js
+../measures.js
+../code/browser/explorer/explorer.js

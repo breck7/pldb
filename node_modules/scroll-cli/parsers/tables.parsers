@@ -188,21 +188,11 @@ scrollTableParser
   get filename() {
     return this.getWord(this.wordIndex)
   }
-  get fileFromDisk() {
-    const path = require("path")
-    const fs = require("fs")
-    const fullPath = path.join(this.parent.file.folderPath, this.filename)
-    if (!fs.existsSync(fullPath)) {
-      console.error(`❌ Error in tables. File "${fullPath}" not found. Using empty string`)
-      return ""
-    }
-    return fs.readFileSync(fullPath, "utf8")
-  }
   get fileFromLocalStorage() {
     return localStorage.getItem(this.filename) || ""
   }
   get fileContent() {
-    return this.isNodeJs() ? this.fileFromDisk : this.fileFromLocalStorage
+    return this.isNodeJs() ? this.root.readFile(this.filename) : this.fileFromLocalStorage
   }
   get delimitedData() {
     // json csv tsv
@@ -212,14 +202,8 @@ scrollTableParser
     if (dataParticle)
       return dataParticle.childrenToString()
     // if not dataparticle and no filename, check [permalink].csv
-    if (this.isNodeJs()) {
-      const path = require("path")
-      const fs = require("fs")
-      const filename = this.root.permalink.replace(".html", "") + ".csv"
-      const fullPath = path.join(this.parent.file.folderPath, filename)
-      if (fs.existsSync(fullPath))
-        return fs.readFileSync(fullPath, "utf8")
-    }
+    if (this.isNodeJs())
+      return this.root.readFile(this.root.permalink.replace(".html", "") + ".csv")
     return  ""
   }
   _coreTable

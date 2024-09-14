@@ -37,3 +37,12 @@ importOnlyParser
   compile() {
    return ""
   }
+
+abstractQuickIncludeParser
+ popularity 0.007524
+ extends abstractScrollParser
+ cells urlCell
+ javascript
+  get filename() {
+    return this.getWord(0)
+  }

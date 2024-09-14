@@ -75,6 +75,15 @@ scrollParser
       return require("scrollsdk/products/hakon.nodejs.js")
     return hakonParser
   }
+  readFile(filename) {
+    const path = require("path")
+    const fs = require("fs")
+    const fullPath = path.join(this.file.folderPath, filename)
+    if (fs.existsSync(fullPath))
+      return fs.readFileSync(fullPath, "utf8")
+    console.error(`File '${filename}' not found`)
+    return ""
+  }
   alreadyRequired = new Set()
   compileEmbeddedVersion(compileSettings) {
    this.sectionStack = []

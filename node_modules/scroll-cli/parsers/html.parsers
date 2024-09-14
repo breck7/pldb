@@ -4,6 +4,17 @@ buildHtmlParser
  extends abstractBuildCommandParser
  boolean isPopular true
 
+quickIncludeHtmlParser
+ popularity 0.007524
+ description Include an HTML file.
+ extends abstractQuickIncludeParser
+ cells urlCell
+ pattern ^[^\s]+\.(html|htm)$
+ javascript
+  compile() {
+   return this.root.readFile(this.filename)
+  }
+
 htmlAnyCell
  extends stringCell
 

@@ -35,5 +35,5 @@ stumpNoSnippet
   a Part of the World Wide Scroll
    href https://wws.scroll.pub
 
-<script src="BASE_URL/lists/autocompleteCombined.js"></script>
-<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+BASE_URL/lists/autocompleteCombined.js
+script document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))

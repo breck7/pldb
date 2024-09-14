@@ -10,7 +10,6 @@ stumpNoSnippetParser,159
 quickLinkParser,154
 baseUrlParser,111
 rssFeedUrlParser,110
-htmlInlineParser,104
 scrollDinkusParser,64
 viewSourceBaseUrlParser,56
 siteOwnerEmailParser,55
@@ -22,6 +21,8 @@ h1Parser,53
 buildTxtParser,52
 printTitleParser,52
 keyboardNavParser,52
+scriptParser,51
+quickScriptParser,51
 copyButtonsParser,51
 viewSourceLinkParser,51
 buildHtmlParser,51
@@ -59,6 +60,7 @@ youTubeParser,3
 observableParser,2
 commentParser,2
 italicsParser,2
+htmlInlineParser,2
 printSnippetsParser,2
 codeParser,1
 quoteParser,1
