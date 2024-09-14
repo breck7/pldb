@@ -68,7 +68,7 @@ abstractCodeMeasureParser
  extends abstractTextareaMeasureParser
  javascript
   get measureValue() {
-    return this.childrenToString().replace(/[\n\t]/g, " ")
+    return this.subparticlesToString().replace(/[\n\t]/g, " ")
   }
 
 abstractRelationshipParser
@@ -96,7 +96,7 @@ nameParser
 abstractFeatureParser
  extends abstractBooleanMeasureParser
  contentKey value
- childrenKey example
+ subparticlesKey example
  catchAllParser featureExampleCodeParser
  float sortIndex 7
  string sortKey abstractFeatureParser

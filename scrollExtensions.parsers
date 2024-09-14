@@ -4,7 +4,7 @@ ohayoCodeParser
  description Provide a direct link to analyze this data in Ohayo.
  javascript
   compile() {
-   const link = `https://ohayo.breckyunits.com?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
+   const link = `https://ohayo.breckyunits.com?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.subparticlesToString())}`
    return `<div class="scrollQuote">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
 observableParser
@@ -47,7 +47,7 @@ monacoEditorParser
     require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
     require(["vs/editor/editor.main"], function() {
       monaco.editor.create(document.getElementById('monacoContainer'), {
-          value: \`${this.childrenToString().replace(/\n/g, "\\n")}\`,
+          value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
           language: '${this.getWord(1)}',
           minimap: {
             enabled: false
