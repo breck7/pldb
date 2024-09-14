@@ -1,7 +1,7 @@
 [
   {
     "Name": "id",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@
   },
   {
     "Name": "name",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@
   },
   {
     "Name": "appeared",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -35,7 +35,7 @@
   },
   {
     "Name": "creators",
-    "Values": 1488,
+    "Values": 1489,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -55,7 +55,7 @@
   },
   {
     "Name": "measurements",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@
   },
   {
     "Name": "tags",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -86,7 +86,7 @@
   },
   {
     "Name": "website",
-    "Values": 1760,
+    "Values": 1761,
     "Coverage": "35%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -106,7 +106,7 @@
   },
   {
     "Name": "foundationScore",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -156,7 +156,7 @@
   },
   {
     "Name": "exampleCount",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -166,7 +166,7 @@
   },
   {
     "Name": "rank",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1208",
@@ -176,7 +176,7 @@
   },
   {
     "Name": "lastActivity",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "In our data on this entity, what year is the most recent activity?",
     "Example": "2024",
@@ -186,7 +186,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -196,10 +196,10 @@
   },
   {
     "Name": "pldbScore",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21706",
+    "Example": "21709",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -425,7 +425,7 @@
   },
   {
     "Name": "webRepl",
-    "Values": 128,
+    "Values": 129,
     "Coverage": "2%",
     "Question": "What is a URL for an online repl of this language?",
     "Example": "https://ace.c9.io/build/kitchen-sink.html",
@@ -792,7 +792,7 @@
   },
   {
     "Name": "primaryTag",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "Where is the primary tag for this language?",
     "Example": "esolang",
@@ -882,7 +882,7 @@
   },
   {
     "Name": "isLanguage",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -892,7 +892,7 @@
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -902,7 +902,7 @@
   },
   {
     "Name": "inboundLinks",
-    "Values": 436,
+    "Values": 437,
     "Coverage": "8%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -912,7 +912,7 @@
   },
   {
     "Name": "isFinished",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -982,7 +982,7 @@
   },
   {
     "Name": "description",
-    "Values": 1079,
+    "Values": 1080,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -993,7 +993,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1079,
+    "Values": 1080,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1014,7 +1014,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1079,
+    "Values": 1080,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1025,7 +1025,7 @@
   },
   {
     "Name": "lab",
-    "Values": 3976,
+    "Values": 3977,
     "Coverage": "79%",
     "Question": "In what community(ies) did the language first originate?",
     "Example": "Department of Computer Science, University of Toronto",
@@ -1115,7 +1115,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1145,7 +1145,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 1542,
+    "Values": 1543,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1165,7 +1165,7 @@
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "928",
@@ -1175,7 +1175,7 @@
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1185,7 +1185,7 @@
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1195,7 +1195,7 @@
   },
   {
     "Name": "related",
-    "Values": 206,
+    "Values": 207,
     "Coverage": "4%",
     "Question": "What languages are related?",
     "Example": "logo",
@@ -1335,7 +1335,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1488,
+    "Values": 1489,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1345,7 +1345,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1165,
+    "Values": 1166,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1653,7 +1653,7 @@
   },
   {
     "Name": "country",
-    "Values": 3746,
+    "Values": 3747,
     "Coverage": "74%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1858,7 +1858,7 @@
   },
   {
     "Name": "example",
-    "Values": 899,
+    "Values": 900,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -2037,7 +2037,7 @@
   },
   {
     "Name": "lineCommentToken",
-    "Values": 484,
+    "Values": 485,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2047,7 +2047,7 @@
   },
   {
     "Name": "multiLineCommentTokens",
-    "Values": 178,
+    "Values": 179,
     "Coverage": "3%",
     "Question": "What is the start delimiter and end token (which can be the same) for comments that can span multiple lines?",
     "Example": "/* */",
@@ -2067,7 +2067,7 @@
   },
   {
     "Name": "stringToken",
-    "Values": 335,
+    "Values": 336,
     "Coverage": "6%",
     "Question": "What token(s) is used to delimit a string?",
     "Example": "\"",
@@ -2347,7 +2347,7 @@
   },
   {
     "Name": "hasComments",
-    "Values": 632,
+    "Values": 633,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -3057,7 +3057,7 @@
   },
   {
     "Name": "hasMultiLineComments",
-    "Values": 245,
+    "Values": 246,
     "Coverage": "4%",
     "Question": "Does the language have multi-line comments?",
     "Example": "true",
@@ -3809,7 +3809,7 @@
   },
   {
     "Name": "bookCount",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3819,7 +3819,7 @@
   },
   {
     "Name": "paperCount",
-    "Values": 5015,
+    "Values": 5016,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

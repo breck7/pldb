@@ -1,0 +1,44 @@
+Pikchr
+======
+
+Pikchr is an open source diagram lang created in 2020 by Dwayne Richard Hipp.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Dwayne%20Richard%20Hipp Dwayne Richard Hipp
+
+#1682 on PLDB
+4 Years Old
+
+Pikchr (pronounced "picture") is a PIC-like markup language for diagrams in technical documentation. Pikchr is designed to be embedded in fenced code blocks of Markdown or similar mechanisms of other documentation markup languages.
+
+- Tags: diagramLang, text markup language
+- Early development of Pikchr happened in http://www.hwaci.com
+- Pikchr is written in C
+- See also: (1 related languages) PIC
+
+``` pikchr
+arrow right 200% &quot;Markdown&quot; &quot;Source&quot;
+box rad 10px &quot;Markdown&quot; &quot;Formatter&quot; &quot;(markdown.c)&quot; fit
+arrow right 200% &quot;HTML+SVG&quot; &quot;Output&quot;
+arrow &lt;-&gt; down 70% from last box.s
+box same &quot;Pikchr&quot; &quot;Formatter&quot; &quot;(pikchr.c)&quot; fit
+```
+
+Language features
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported ✓
+ Example
+ Token /* */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported ✓
+ Example
+ Token
+
+View source
+
+tokens ; : [ ] \ above aligned arc arrow below big bold box center circle color cylinder diameter diamond dot down ellipse file fill fit from height ht invisible italic left line ljust mono monospace move oval rad radius right rjust small spline text then thick thickness thin to up wid width
