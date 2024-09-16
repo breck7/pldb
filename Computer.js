@@ -1533,6 +1533,10 @@ class Tables {
     return this.toTable(this.top.slice(0, 1000))
   }
 
+  get TOTAL() {
+    return numeral(this.top.length).format("0,0")
+  }
+
   get all() {
     return this.toTable(this.top)
   }
