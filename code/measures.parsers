@@ -11,21 +11,21 @@ abstractHashMapMeasureParser
 
 abstractEnumsMeasureParser
  description A measure that can have unlimited enums.
- catchAllCellType enumCell
+ catchAllAtomType enumAtom
  extends abstractEnumMeasureParser
 
 abstractCountMeasureParser
  description A positive count of something. People, for example. Min is 0.
- cells measureNameCell countCell
+ atoms measureNameAtom countAtom
  extends abstractIntegerMeasureParser
 
 abstractYearMeasureParser
- cells measureNameCell yearCell
+ atoms measureNameAtom yearAtom
  extends abstractIntegerMeasureParser
 
 abstractAnnualPopulationCountParser
- cells yearCell countCell
- uniqueFirstWord
+ atoms yearAtom countAtom
+ uniqueFirstAtom
 abstractAnnualPopulationCountMapParser
  catchAllParser abstractAnnualPopulationCountParser
  description A map of counts, one per year.
@@ -34,8 +34,8 @@ abstractAnnualPopulationCountMapParser
 abstractUniqueUrlMeasureParser
  extends abstractUrlMeasureParser
 
-abstractUniqueWordMeasureParser
- extends abstractWordMeasureParser
+abstractUniqueAtomMeasureParser
+ extends abstractAtomMeasureParser
 
 abstractUniqueStringMeasureParser
  extends abstractStringMeasureParser
@@ -47,15 +47,15 @@ abstractStringListMeasureParser
 abstractPopulationCountMeasureParser
  extends abstractIntegerMeasureParser
 
-// todo: idCell
+// todo: idAtom
 // Links between concepts
 abstractConceptEdgesMeasureParser
  description Link one concept to other concepts.
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractStringMeasureParser
  javascript
   get ids() {
-    return this.getWordsFrom(1)
+    return this.getAtomsFrom(1)
   }
   // todo: re-add the method to update these foreign keys if an ID changes.
 
@@ -126,8 +126,8 @@ annualReportsUrlParser
 
 abstractUrlsMeasureParser
  extends abstractUrlMeasureParser
- cells measureNameCell
- catchAllCellType urlCell
+ atoms measureNameAtom
+ catchAllAtomType urlAtom
 
 // antlr
 antlrParser
@@ -174,11 +174,11 @@ leetSheetsParser
  extends abstractUrlMeasureParser
  description What is a URL(s) to a leet sheet(s) for this language?
  float sortIndex 3.3
- catchAllCellType urlCell
+ catchAllAtomType urlAtom
 
 // codemirror
 codeMirrorParser
- extends abstractUniqueWordMeasureParser
+ extends abstractUniqueAtomMeasureParser
  description What is a URL to a CodeMirror syntax highlighting package for this language?
  // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
  string sourceDomain codemirror.net
@@ -257,8 +257,8 @@ inboundLinksParser
  float sortIndex 1.9
  extends abstractComputedIntMeasureParser
  description Which other concepts link to this one?
- cells measureNameCell
- catchAllCellType stringCell
+ atoms measureNameAtom
+ catchAllAtomType stringAtom
 
 pldbScoreParser
  float sortIndex 1.6
@@ -284,7 +284,7 @@ countryParser
  uniqueLine
  description What country was this language first developed in?
  boolean alwaysRecommended true
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractStringMeasureParser
  single false
  float sortIndex 2.99
@@ -438,11 +438,11 @@ faqParser
 keywordsParser
  description What are all the keywords in this language?
  extends abstractStringListMeasureParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  float sortIndex 4
 abstractCommonTokenParser
  description Most general purpose programming languages implement a set of common tokens for common features like these.
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractStringListMeasureParser
  float sortIndex 5
  single false
@@ -495,39 +495,39 @@ featureExampleCodeParser
  // Ideally includes any necessary boilerplate to be runnable.
  baseParser blobParser
 
-// fileExtensionCell
- extends stringCell
+// fileExtensionAtom
+ extends stringAtom
 
 fileExtensionsParser
  extends abstractStringListMeasureParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description What are the file extensions for this language?
  float sortIndex 1.991
 
 clocExtensionsParser
  extends abstractStringListMeasureParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description What are the file extensions for this language recognized by Al Danial's cloc?
  float sortIndex 2.4
 
 filenamesParser
  extends abstractStringListMeasureParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description What are the filenames commonly associated with this language?
 
 // fileType
-// fileTypeWordCell
+// fileTypeAtomAtom
  enum paper text binary na
  paint constant.language
 fileTypeParser
  description What is the file encoding for programs in this language?
- cells measureNameCell stringCell
+ atoms measureNameAtom stringAtom
  extends abstractEnumMeasureParser
  float sortIndex 2.5
 
 // funFact
 funFactParser
- cells measureNameCell urlCell
+ atoms measureNameAtom urlAtom
  description What is a code block or some text containing a fun or unusual fact about the language?
  extends abstractCodeMeasureParser
  float sortIndex 2.99
@@ -632,13 +632,13 @@ githubLanguageParser
   extends abstractStringListMeasureParser
   description What are the associated interpreters?
  aceModeParser
-  extends abstractWordMeasureParser
+  extends abstractAtomMeasureParser
   description What is the name of the Ace Mode used for highlighting whenever a file is edited, matching one of the filenames in http://git.io/3XO_Cg, or "text" for everything else?
  codemirrorModeParser
-  extends abstractWordMeasureParser
+  extends abstractAtomMeasureParser
   description What is the name name of the CodeMirror Mode used for highlighting whenever a file is edited, from the list here https://git.io/vi9Fx?
  codemirrorMimeTypeParser
-  extends abstractWordMeasureParser
+  extends abstractAtomMeasureParser
   description What is the name of the file mime type used for highlighting whenever a file is edited, from the list here https://git.io/f4SoQ?
  tmScopeParser
   extends abstractUniqueStringMeasureParser
@@ -648,15 +648,15 @@ githubLanguageParser
   description Which of the types best describes this: data, programming, markup, prose, or nil?
 
 // githubRepo
-// githubRepoUrlCell
- extends urlCell
+// githubRepoUrlAtom
+ extends urlAtom
  regex ^https://github.com/.+/.+$
 
 // Basics
 githubRepoParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
- cells measureNameCell urlCell
+ atoms measureNameAtom urlAtom
  inScope subDescriptionParser
  contentKey url
  string sourceDomain github.com
@@ -1594,8 +1594,8 @@ hasRequiredMainFunctionParser
  description Does the language require a function named main (or similar)?
  extends abstractFeatureParser
 
-// hasReservedWords
-hasReservedWordsParser
+// hasReservedAtoms
+hasReservedAtomsParser
  description Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?
  extends abstractFeatureParser
 
@@ -1624,8 +1624,8 @@ hasScientificNotationParser
  string pseudoExample 8076686.6e1
  string reference https://en.wikipedia.org/wiki/Scientific_notation
 
-// hasSelfOrThisWord
-hasSelfOrThisWordParser
+// hasSelfOrThisAtom
+hasSelfOrThisAtomParser
  description Does a language have a keyword or syntax to refer to the current instance?
  extends abstractFeatureParser
 
@@ -1929,8 +1929,8 @@ helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
  extends abstractExampleParser
  cruxFromId
- cells measureNameCell
- catchAllCellType stringCell
+ atoms measureNameAtom
+ catchAllAtomType stringAtom
  string sourceDomain helloworldcollection.de
  float sortIndex 3
 
@@ -1943,10 +1943,10 @@ appearedParser
 isFinishedParser
  description Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.
  extends abstractComputedIntMeasureParser
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
 
 nativeLanguageParser
- cells measureNameCell stringCell
+ atoms measureNameAtom stringAtom
  description What is the native human language for this language, if not English?
  extends abstractEnumMeasureParser
 
@@ -1965,7 +1965,7 @@ interviewsParser
 isOpenSourceParser
  description Is this an open source project?
  extends abstractComputedIntMeasureParser
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
  float sortIndex 2.01
 
 isPublicDomainParser
@@ -1993,7 +1993,7 @@ photoParser
 indeedJobsParser
  float sortIndex 36
  description How many job descriptions match this query for this language on indeed.com?
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractAnnualPopulationCountMapParser
  contentKey query
  string sourceDomain indeed.com
@@ -2051,14 +2051,14 @@ leachim6Parser
 
 // leaders
 //
- creatorNameCell
-  extends stringCell
+ creatorNameAtom
+  extends stringAtom
 creatorsParser
  float sortIndex 1.102
  extends abstractStringListMeasureParser
  boolean alwaysRecommended true
  description What are the name(s) of the original creators of the language delimited by " and "?
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  listDelimiter  and
 
 maintainersParser
@@ -2066,7 +2066,7 @@ maintainersParser
  extends abstractStringListMeasureParser
  boolean alwaysRecommended true
  description What are the name(s) of the maintainer(s) of the language delimited by " and "?
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  listDelimiter  and
 
 numberOfCreatorsParser
@@ -2086,7 +2086,7 @@ linguistGrammarRepoParser
  description What is the URL to the Linguist Grammar repo used by GitHub for this language?
  // Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractUrlMeasureParser
- cells measureNameCell urlCell
+ atoms measureNameAtom urlAtom
  float sortIndex 16
  contentKey url
  string sourceDomain github.com
@@ -2112,7 +2112,7 @@ linkedInSkillParser
  description How many people list this skill on LinkedIn?
  float sortIndex 36
  extends abstractAnnualPopulationCountMapParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  contentKey id
  string sourceDomain linkedin.com
 
@@ -2140,7 +2140,7 @@ mergesWhitespaceParser
 
 // monaco
 monacoParser
- extends abstractUniqueWordMeasureParser
+ extends abstractUniqueAtomMeasureParser
  description What is a URL to a Monaco syntax highlighting package for this language?
  example
   javascript
@@ -2220,7 +2220,7 @@ forLanguagesParser
 
 // paradigms
 abstractParadigmParser
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
  extends abstractBooleanMeasureParser
 visualParadigmParser
  extends abstractParadigmParser
@@ -2255,7 +2255,7 @@ pygmentsHighlighterParser
  filenameParser
   description What is the Python filename implementing the highlighting for this language?
   extends abstractStringMeasureParser
-  cells measureNameCell stringCell
+  atoms measureNameAtom stringAtom
 
 // pypl
 pyplParser
@@ -2272,15 +2272,15 @@ quineRelayParser
  string sourceDomain github.com/mame/quine-relay
 
 // rankings
-// rankCell
-  extends intCell
+// rankAtom
+  extends intAtom
 abstractAnnualRankMapParser
  catchAllParser annualRankParser
  description A map of ranks, one per year.
  extends abstractHashMapMeasureParser
 annualRankParser
- cells yearCell integerCell
- uniqueFirstWord
+ atoms yearAtom integerAtom
+ uniqueFirstAtom
 
 // reddit
 // todo trim the trailing slash
@@ -2369,7 +2369,7 @@ isSelfHostedParser
  description Is the main implementation of this language written in this language?
  extends abstractComputedIntMeasureParser
  float sortIndex 2.33
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
 
 // releaseNotes
 releaseNotesParser
@@ -2455,9 +2455,9 @@ stackOverflowSurveyParser
  string sourceDomain insights.stackoverflow.com
  stackOverflowSurveyYearParser
   description What are the survey results for a particular year?
-  cells yearCell
+  atoms yearAtom
   pattern \d+
-  uniqueFirstWord
+  uniqueFirstAtom
   usersParser
    extends abstractPopulationCountMeasureParser
    description How many developers reported using this language?
@@ -2509,7 +2509,7 @@ twitterParser
   extends abstractPopulationCountMeasureParser
 
 // type
-tagCell
+tagAtom
  enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad
  paint constant.language
 tagsParser
@@ -2517,18 +2517,18 @@ tagsParser
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
- catchAllCellType tagCell
+ catchAllAtomType tagAtom
 
 // ubuntu
 ubuntuPackageParser
- extends abstractUniqueWordMeasureParser
+ extends abstractUniqueAtomMeasureParser
  float sortIndex 2.9
  description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
  string sourceDomain ubuntu.com
 
 // versions
-// versionCell
- extends stringCell
+// versionAtom
+ extends stringAtom
  description Version numbers.
 
 // download
@@ -2552,7 +2552,7 @@ usesSemanticVersioningParser
  description Does the official release of the language use semantic versioning?
  extends abstractComputedIntMeasureParser
  float sortIndex 2.34
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
 
 // website
 websiteParser
@@ -2571,13 +2571,13 @@ exercismParser
  example
   exercism https://exercism.org/tracks/bash
 
-// domainNameCell
- extends stringCell
+// domainNameAtom
+ extends stringAtom
  float sortIndex 1.8
 domainNameParser
  description What is the domain for this language's website if it has its own?
- cells measureNameCell stringCell
- extends abstractWordMeasureParser
+ atoms measureNameAtom stringAtom
+ extends abstractAtomMeasureParser
  contentKey name
  float sortIndex 12
  registeredParser
@@ -2595,7 +2595,7 @@ wikipediaParser
  inScope fileExtensionsParser exampleParser
  extends abstractUrlMeasureParser
  description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
- cells measureNameCell urlCell
+ atoms measureNameAtom urlAtom
  string sourceDomain wikipedia.org
  contentKey url
  relatedParser

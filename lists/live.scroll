@@ -27,7 +27,7 @@ nameParser
  description What is the name of the livestream?
  extends abstractIdParser
 startedParser
- cells measureNameCell yearCell
+ atoms measureNameAtom yearAtom
  description Year livestream began.
  extends abstractIntegerMeasureParser
  float sortIndex 1.4

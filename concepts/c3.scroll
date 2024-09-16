@@ -230,7 +230,6 @@ hasOperatorOverloading true
 hasModules true
  module my_module::submodule;
  ...
-hasReservedWords true
 hasVariadicFunctions true
  fn void foo_typed(int x, int... arg) { ... }
  fn void foo_untyped(int x, ...arg)
@@ -282,3 +281,5 @@ domainName c3-lang.org
   2022 6109240
 
 semanticScholar 0
+
+hasReservedWords true
