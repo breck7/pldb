@@ -537,14 +537,14 @@ var autocompleteJs = [
     "url": "/concepts/scala.html"
   },
   {
-    "label": "Lua",
-    "id": "lua",
-    "url": "/concepts/lua.html"
-  },
-  {
     "label": "MATLAB",
     "id": "matlab",
     "url": "/concepts/matlab.html"
+  },
+  {
+    "label": "Lua",
+    "id": "lua",
+    "url": "/concepts/lua.html"
   },
   {
     "label": "Kotlin",
@@ -1192,14 +1192,14 @@ var autocompleteJs = [
     "url": "/concepts/puppet.html"
   },
   {
-    "label": "C3",
-    "id": "c3",
-    "url": "/concepts/c3.html"
-  },
-  {
     "label": "Wren",
     "id": "wren",
     "url": "/concepts/wren.html"
+  },
+  {
+    "label": "C3",
+    "id": "c3",
+    "url": "/concepts/c3.html"
   },
   {
     "label": "AutoHotkey",
@@ -7082,11 +7082,6 @@ var autocompleteJs = [
     "url": "/concepts/gopher.html"
   },
   {
-    "label": "Aardvark",
-    "id": "aardvark",
-    "url": "/concepts/aardvark.html"
-  },
-  {
     "label": "Open Data Protcol",
     "id": "odata",
     "url": "/concepts/odata.html"
@@ -7095,6 +7090,11 @@ var autocompleteJs = [
     "label": "Cortex",
     "id": "cortex",
     "url": "/concepts/cortex.html"
+  },
+  {
+    "label": "Aardvark",
+    "id": "aardvark",
+    "url": "/concepts/aardvark.html"
   },
   {
     "label": "Confluence",

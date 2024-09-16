@@ -25,7 +25,7 @@ abstractAftertextParser
    // Skip the replacements if there are no footnotes or the text has none.
    if (!this.root.footnotes.length || !originalText.includes("^")) return originalText
    this.root.footnotes.forEach((note, index) => {
-    const needle = note.firstWord
+    const needle = note.firstAtom
     const {linkBack} = note
     if (originalText.includes(needle)) originalText = originalText.replace(new RegExp("\\" + needle + "\\b"), `<a href="#${note.anchorId}" class="scrollNoteLink" id="${linkBack}"><sup>${note.label}</sup></a>`)
    })
@@ -80,18 +80,18 @@ abstractAftertextParser
   }
 
 abstractAftertextAttributeParser
- cells commandWordCell
+ atoms cueAtom
  boolean isAttribute true
  javascript
   get divAttributes() {
-   return `${this.firstWord}="${this.content}"`
+   return `${this.firstAtom}="${this.content}"`
   }
   compile() {
    return ""
   }
 
 aftertextTagParser
- cells commandWordCell htmlTagCell
+ atoms cueAtom htmlTagAtom
  description Override the HTML tag that the compiled particle will use.
  crux tag
  javascript
@@ -100,8 +100,8 @@ aftertextTagParser
   }
 
 abstractAftertextDirectiveParser
- cells commandWordCell
- catchAllCellType stringCell
+ atoms cueAtom
+ catchAllAtomType stringAtom
  javascript
   isMarkup = true
   compile() {
@@ -118,7 +118,7 @@ abstractAftertextDirectiveParser
     return errors
   }
   get pattern() {
-   return this.getWordsFrom(1).join(" ")
+   return this.getAtomsFrom(1).join(" ")
   }
   get shouldMatchAll() {
    return this.has("matchAll")
@@ -166,15 +166,15 @@ abstractMarkupParser
  inScope abstractMarkupParameterParser
  javascript
   get matchWholeLine() {
-    return this.getWordsFrom(this.patternStartsAtWord).length === 0
+    return this.getAtomsFrom(this.patternStartsAtAtom).length === 0
   }
   get pattern() {
-   return this.matchWholeLine ? this.parent.originalText : this.getWordsFrom(this.patternStartsAtWord).join(" ")
+   return this.matchWholeLine ? this.parent.originalText : this.getAtomsFrom(this.patternStartsAtAtom).join(" ")
   }
-  patternStartsAtWord = 1
+  patternStartsAtAtom = 1
 
 abstractMarkupParameterParser
- cells commandWordCell
+ atoms cueAtom
  cruxFromId
 
 matchAllParser
@@ -184,11 +184,11 @@ matchAllParser
 
 matchParser
  popularity 0.000048
- catchAllCellType integerCell
+ catchAllAtomType integerAtom
  description Use this to specify which index(es) to match.
  javascript
   get indexes() {
-   return this.getWordsFrom(1).map(num => parseInt(num))
+   return this.getAtomsFrom(1).map(num => parseInt(num))
   }
  example
   aftertext
@@ -255,12 +255,12 @@ classMarkupParser
  popularity 0.000772
  description Add a custom class to the parent element instead. If matching text provided, a span with the class will be added around the matching text.
  extends abstractMarkupParser
- cells commandWordCell classNameCell
+ atoms cueAtom classNameAtom
  crux class
  javascript
   tag = "span"
   get applyToParentElement() {
-   return this.words.length === 2
+   return this.atoms.length === 2
   }
   getInserts(text) {
    // If no select text is added, set the class on the parent element.
@@ -268,7 +268,7 @@ classMarkupParser
    return super.getInserts(text)
   }
   get className() {
-   return this.getWord(1)
+   return this.getAtom(1)
   }
   get attributes() {
    return [`class="${this.className}"`]
@@ -277,7 +277,7 @@ classMarkupParser
     return this.applyToParentElement
   }
   get pattern() {
-   return this.matchWholeLine ? this.parent.content : this.getWordsFrom(2).join(" ")
+   return this.matchWholeLine ? this.parent.content : this.getAtomsFrom(2).join(" ")
   }
 
 classesMarkupParser
@@ -294,7 +294,7 @@ aftertextIdParser
  crux id
  description Provide an ID to be output in the generated HTML tag.
  extends abstractAftertextAttributeParser
- cells commandWordCell htmlIdCell
+ atoms cueAtom htmlIdAtom
  single
 
 aftertextStyleParser
@@ -302,12 +302,12 @@ aftertextStyleParser
  crux style
  description Provide code for the generated HTML tag's "style" attribute.
  extends abstractAftertextAttributeParser
- cells commandWordCell
- catchAllCellType cssAnyCell
+ atoms cueAtom
+ catchAllAtomType cssAnyAtom
 
 aftertextHiddenParser
  crux hidden
- cells commandWordCell
+ atoms cueAtom
  description Do not compile this particle to HTML.
  extends abstractAftertextAttributeParser
  single

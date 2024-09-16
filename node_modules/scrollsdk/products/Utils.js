@@ -29,7 +29,7 @@ class Utils {
     if (instance[command + "Command"]) return run(command + "Command")
     // Get commands from both the child and parent classes
     const classes = [Object.getPrototypeOf(instance), Object.getPrototypeOf(Object.getPrototypeOf(instance))]
-    const allCommands = classes.map(classInstance => Object.getOwnPropertyNames(classInstance).filter(word => word.endsWith("Command"))).flat()
+    const allCommands = classes.map(classInstance => Object.getOwnPropertyNames(classInstance).filter(atom => atom.endsWith("Command"))).flat()
     allCommands.sort()
     const commandAsNumber = parseInt(command) - 1
     if (command.match(/^\d+$/) && allCommands[commandAsNumber]) return run(allCommands[commandAsNumber])
@@ -64,47 +64,47 @@ class Utils {
     return `${color}${message}${reset}`
   }
   static ensureDelimiterNotFound(strings, delimiter) {
-    const hit = strings.find(word => word.includes(delimiter))
+    const hit = strings.find(atom => atom.includes(delimiter))
     if (hit) throw `Delimiter "${delimiter}" found in hit`
   }
   // https://github.com/rigoneri/indefinite-article.js/blob/master/indefinite-article.js
   static getIndefiniteArticle(phrase) {
-    // Getting the first word
+    // Getting the first atom
     const match = /\w+/.exec(phrase)
-    let word
-    if (match) word = match[0]
+    let atom
+    if (match) atom = match[0]
     else return "an"
-    var l_word = word.toLowerCase()
-    // Specific start of words that should be preceded by 'an'
+    var l_atom = atom.toLowerCase()
+    // Specific start of atoms that should be preceded by 'an'
     var alt_cases = ["honest", "hour", "hono"]
     for (var i in alt_cases) {
-      if (l_word.indexOf(alt_cases[i]) == 0) return "an"
+      if (l_atom.indexOf(alt_cases[i]) == 0) return "an"
     }
-    // Single letter word which should be preceded by 'an'
-    if (l_word.length == 1) {
-      if ("aedhilmnorsx".indexOf(l_word) >= 0) return "an"
+    // Single letter atom which should be preceded by 'an'
+    if (l_atom.length == 1) {
+      if ("aedhilmnorsx".indexOf(l_atom) >= 0) return "an"
       else return "a"
     }
-    // Capital words which should likely be preceded by 'an'
-    if (word.match(/(?!FJO|[HLMNS]Y.|RY[EO]|SQU|(F[LR]?|[HL]|MN?|N|RH?|S[CHKLMNPTVW]?|X(YL)?)[AEIOU])[FHLMNRSX][A-Z]/)) {
+    // Capital atoms which should likely be preceded by 'an'
+    if (atom.match(/(?!FJO|[HLMNS]Y.|RY[EO]|SQU|(F[LR]?|[HL]|MN?|N|RH?|S[CHKLMNPTVW]?|X(YL)?)[AEIOU])[FHLMNRSX][A-Z]/)) {
       return "an"
     }
-    // Special cases where a word that begins with a vowel should be preceded by 'a'
+    // Special cases where a atom that begins with a vowel should be preceded by 'a'
     const regexes = [/^e[uw]/, /^onc?e\b/, /^uni([^nmd]|mo)/, /^u[bcfhjkqrst][aeiou]/]
     for (var i in regexes) {
-      if (l_word.match(regexes[i])) return "a"
+      if (l_atom.match(regexes[i])) return "a"
     }
-    // Special capital words (UK, UN)
-    if (word.match(/^U[NK][AIEO]/)) {
+    // Special capital atoms (UK, UN)
+    if (atom.match(/^U[NK][AIEO]/)) {
       return "a"
-    } else if (word == word.toUpperCase()) {
-      if ("aedhilmnorsx".indexOf(l_word[0]) >= 0) return "an"
+    } else if (atom == atom.toUpperCase()) {
+      if ("aedhilmnorsx".indexOf(l_atom[0]) >= 0) return "an"
       else return "a"
     }
-    // Basic method of words that begin with a vowel being preceded by 'an'
-    if ("aeiou".indexOf(l_word[0]) >= 0) return "an"
+    // Basic method of atoms that begin with a vowel being preceded by 'an'
+    if ("aeiou".indexOf(l_atom[0]) >= 0) return "an"
     // Instances where y follwed by specific letters is preceded by 'an'
-    if (l_word.match(/^y(b[lor]|cl[ea]|fere|gg|p[ios]|rou|tt)/)) return "an"
+    if (l_atom.match(/^y(b[lor]|cl[ea]|fere|gg|p[ios]|rou|tt)/)) return "an"
     return "a"
   }
   static htmlEscaped(content = "") {
@@ -304,7 +304,7 @@ class Utils {
     if (len <= limit) return clone.join(", ") + ` and ${last}`
     return clone.join(", ") + ` and ${len - limit} more`
   }
-  // todo: refactor so instead of str input takes an array of cells(strings) and scans each indepndently.
+  // todo: refactor so instead of str input takes an array of atoms(strings) and scans each indepndently.
   static _chooseDelimiter(str) {
     const del = " ,|\t;^%$!#@~*&+-=_:?.{}[]()<>/".split("").find(idea => !str.includes(idea))
     if (!del) throw new Error("Could not find a delimiter")
@@ -428,26 +428,26 @@ class Utils {
     document.head.appendChild(script)
     return window[name]
   }
-  static formatStr(str, catchAllCellDelimiter = " ", parameterMap) {
+  static formatStr(str, catchAllAtomDelimiter = " ", parameterMap) {
     return str.replace(/{([^\}]+)}/g, (match, path) => {
       const val = parameterMap[path]
       if (!val) return ""
-      return Array.isArray(val) ? val.join(catchAllCellDelimiter) : val
+      return Array.isArray(val) ? val.join(catchAllAtomDelimiter) : val
     })
   }
   static stripHtml(text) {
     return text && text.replace ? text.replace(/<(?:.|\n)*?>/gm, "") : text
   }
-  static getUniqueWordsArray(allWords) {
-    const words = allWords.replace(/\n/g, " ").split(" ")
+  static getUniqueAtomsArray(allAtoms) {
+    const atoms = allAtoms.replace(/\n/g, " ").split(" ")
     const index = {}
-    words.forEach(word => {
-      if (!index[word]) index[word] = 0
-      index[word]++
+    atoms.forEach(atom => {
+      if (!index[atom]) index[atom] = 0
+      index[atom]++
     })
     return Object.keys(index).map(key => {
       return {
-        word: key,
+        atom: key,
         count: index[key]
       }
     })
@@ -589,7 +589,7 @@ class Utils {
       const particleAFirst = -1
       const particleBFirst = 1
       if (!particleAExtends && !particleBExtends) {
-        // If neither extends, sort by firstWord
+        // If neither extends, sort by firstAtom
         if (particleAUniqueId > particleBUniqueId) return particleBFirst
         else if (particleAUniqueId < particleBUniqueId) return particleAFirst
         return 0
@@ -603,7 +603,7 @@ class Utils {
       // Sort by what they extend
       if (particleAExtends > particleBExtends) return particleBFirst
       else if (particleAExtends < particleBExtends) return particleAFirst
-      // Finally sort by firstWord
+      // Finally sort by firstAtom
       if (particleAUniqueId > particleBUniqueId) return particleBFirst
       else if (particleAUniqueId < particleBUniqueId) return particleAFirst
       // Should never hit this, unless we have a duplicate line.

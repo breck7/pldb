@@ -7,7 +7,7 @@
 
   class hakonParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new Particle.ParserCombinator(selectorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { comment: commentParser }), undefined)
+      return new Particle.ParserCombinator(selectorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), { comment: commentParser }), undefined)
     }
     getSelector() {
       return ""
@@ -18,33 +18,33 @@
         .map(subparticle => subparticle.compile())
         .join("")
     }
-    static cachedHandParsersProgramRoot = new HandParsersProgram(`// Cell Parsers
-anyCell
-keywordCell
-commentKeywordCell
- extends keywordCell
+    static cachedHandParsersProgramRoot = new HandParsersProgram(`// Atom Parsers
+anyAtom
+keywordAtom
+commentKeywordAtom
+ extends keywordAtom
  paint comment
  enum comment
-extraCell
+extraAtom
  paint invalid
-cssValueCell
+cssValueAtom
  paint constant.numeric
-selectorCell
+selectorAtom
  paint keyword.control
  examples body h1
  // todo add html tags, css and ids selector regexes, etc
-vendorPrefixPropertyKeywordCell
+vendorPrefixPropertyKeywordAtom
  description Properties like -moz-column-fill
  paint variable.function
- extends keywordCell
-propertyKeywordCell
+ extends keywordAtom
+propertyKeywordAtom
  paint variable.function
- extends keywordCell
+ extends keywordAtom
  // todo Where are these coming from? Can we add a url link
- enum align-content align-items align-self all animation animation-delay animation-direction animation-duration animation-fill-mode animation-iteration-count animation-name animation-play-state animation-timing-function backface-visibility background background-attachment background-blend-mode background-clip background-color background-image background-origin background-position background-repeat background-size border border-bottom border-bottom-color border-bottom-left-radius border-bottom-right-radius border-bottom-style border-bottom-width border-collapse border-color border-image border-image-outset border-image-repeat border-image-slice border-image-source border-image-width border-left border-left-color border-left-style border-left-width border-radius border-right border-right-color border-right-style border-right-width border-spacing border-style border-top border-top-color border-top-left-radius border-top-right-radius border-top-style border-top-width border-width bottom box-shadow box-sizing break-inside caption-side clear clip color column-count column-fill column-gap column-rule column-rule-color column-rule-style column-rule-width column-span column-width columns content counter-increment counter-reset cursor direction display empty-cells fill filter flex flex-basis flex-direction flex-flow flex-grow flex-shrink flex-wrap float font @font-face font-family font-size font-size-adjust font-stretch font-style font-variant font-weight  hanging-punctuation height hyphens justify-content @keyframes left letter-spacing line-height list-style list-style-image list-style-position list-style-type margin margin-bottom margin-left margin-right margin-top max-height max-width @media min-height min-width nav-down nav-index nav-left nav-right nav-up opacity order outline outline-color outline-offset outline-style outline-width overflow overflow-x overflow-y padding padding-bottom padding-left padding-right padding-top page-break-after page-break-before page-break-inside perspective perspective-origin position quotes resize right tab-size table-layout text-align text-align-last text-decoration text-decoration-color text-decoration-line text-decoration-style text-indent text-justify text-overflow text-shadow text-transform top transform transform-origin transform-style transition transition-delay transition-duration transition-property transition-timing-function unicode-bidi vertical-align visibility white-space width word-break word-spacing word-wrap z-index overscroll-behavior-x user-select -ms-touch-action -webkit-user-select -webkit-touch-callout -moz-user-select touch-action -ms-user-select -khtml-user-select gap grid-auto-flow grid-column grid-column-end grid-column-gap grid-column-start grid-gap grid-row grid-row-end grid-row-gap grid-row-start grid-template-columns grid-template-rows justify-items justify-self
-errorCell
+ enum align-content align-items align-self all animation animation-delay animation-direction animation-duration animation-fill-mode animation-iteration-count animation-name animation-play-state animation-timing-function backface-visibility background background-attachment background-blend-mode background-clip background-color background-image background-origin background-position background-repeat background-size border border-bottom border-bottom-color border-bottom-left-radius border-bottom-right-radius border-bottom-style border-bottom-width border-collapse border-color border-image border-image-outset border-image-repeat border-image-slice border-image-source border-image-width border-left border-left-color border-left-style border-left-width border-radius border-right border-right-color border-right-style border-right-width border-spacing border-style border-top border-top-color border-top-left-radius border-top-right-radius border-top-style border-top-width border-width bottom box-shadow box-sizing break-inside caption-side clear clip color column-count column-fill column-gap column-rule column-rule-color column-rule-style column-rule-width column-span column-width columns content counter-increment counter-reset cursor direction display empty-atoms fill filter flex flex-basis flex-direction flex-flow flex-grow flex-shrink flex-wrap float font @font-face font-family font-size font-size-adjust font-stretch font-style font-variant font-weight  hanging-punctuation height hyphens justify-content @keyframes left letter-spacing line-height list-style list-style-image list-style-position list-style-type margin margin-bottom margin-left margin-right margin-top max-height max-width @media min-height min-width nav-down nav-index nav-left nav-right nav-up opacity order outline outline-color outline-offset outline-style outline-width overflow overflow-x overflow-y padding padding-bottom padding-left padding-right padding-top page-break-after page-break-before page-break-inside perspective perspective-origin position quotes resize right tab-size table-layout text-align text-align-last text-decoration text-decoration-color text-decoration-line text-decoration-style text-indent text-justify text-overflow text-shadow text-transform top transform transform-origin transform-style transition transition-delay transition-duration transition-property transition-timing-function unicode-bidi vertical-align visibility white-space width atom-break atom-spacing atom-wrap z-index overscroll-behavior-x user-select -ms-touch-action -webkit-user-select -webkit-touch-callout -moz-user-select touch-action -ms-user-select -khtml-user-select gap grid-auto-flow grid-column grid-column-end grid-column-gap grid-column-start grid-gap grid-row grid-row-end grid-row-gap grid-row-start grid-template-columns grid-template-rows justify-items justify-self
+errorAtom
  paint invalid
-commentCell
+commentAtom
  paint comment
 
 // Line Parsers
@@ -75,27 +75,27 @@ hakonParser
     color blue
     font-size 17px
 propertyParser
- catchAllCellType cssValueCell
+ catchAllAtomType cssValueAtom
  catchAllParser errorParser
  javascript
   compile(spaces) {
-   return \`\${spaces}\${this.firstWord}: \${this.content};\`
+   return \`\${spaces}\${this.firstAtom}: \${this.content};\`
   }
- cells propertyKeywordCell
+ atoms propertyKeywordAtom
 variableParser
  extends propertyParser
  pattern --
 browserPrefixPropertyParser
  extends propertyParser
  pattern ^\\-\\w.+
- cells vendorPrefixPropertyKeywordCell
+ atoms vendorPrefixPropertyKeywordAtom
 errorParser
  catchAllParser errorParser
- catchAllCellType errorCell
+ catchAllAtomType errorAtom
  baseParser errorParser
 commentParser
- cells commentKeywordCell
- catchAllCellType commentCell
+ atoms commentKeywordAtom
+ catchAllAtomType commentAtom
  catchAllParser commentParser
 selectorParser
  inScope propertyParser variableParser commentParser
@@ -104,7 +104,7 @@ selectorParser
  javascript
   getSelector() {
    const parentSelector = this.parent.getSelector()
-   return this.firstWord
+   return this.firstAtom
     .split(",")
     .map(part => {
      if (part.startsWith("&")) return parentSelector + part.substr(1)
@@ -120,7 +120,7 @@ selectorParser
   \${propertyParsers.map(subparticle => subparticle.compile(spaces)).join("\\n")}
   }\\n\`
   }
- cells selectorCell`)
+ atoms selectorAtom`)
     get handParsersProgram() {
       return this.constructor.cachedHandParsersProgramRoot
     }
@@ -131,22 +131,22 @@ selectorParser
     createParserCombinator() {
       return new Particle.ParserCombinator(errorParser, undefined, undefined)
     }
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get cssValueCell() {
-      return this.getWordsFrom(1)
+    get cssValueAtom() {
+      return this.getAtomsFrom(1)
     }
     compile(spaces) {
-      return `${spaces}${this.firstWord}: ${this.content};`
+      return `${spaces}${this.firstAtom}: ${this.content};`
     }
   }
 
   class variableParser extends propertyParser {}
 
   class browserPrefixPropertyParser extends propertyParser {
-    get vendorPrefixPropertyKeywordCell() {
-      return this.getWord(0)
+    get vendorPrefixPropertyKeywordAtom() {
+      return this.getAtom(0)
     }
   }
 
@@ -157,8 +157,8 @@ selectorParser
     getErrors() {
       return this._getErrorParserErrors()
     }
-    get errorCell() {
-      return this.getWordsFrom(0)
+    get errorAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -166,11 +166,11 @@ selectorParser
     createParserCombinator() {
       return new Particle.ParserCombinator(commentParser, undefined, undefined)
     }
-    get commentKeywordCell() {
-      return this.getWord(0)
+    get commentKeywordAtom() {
+      return this.getAtom(0)
     }
-    get commentCell() {
-      return this.getWordsFrom(1)
+    get commentAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
@@ -178,7 +178,7 @@ selectorParser
     createParserCombinator() {
       return new Particle.ParserCombinator(
         selectorParser,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
           "border-bottom-right-radius": propertyParser,
           "transition-timing-function": propertyParser,
           "animation-iteration-count": propertyParser,
@@ -292,7 +292,7 @@ selectorParser
           "table-layout": propertyParser,
           "text-justify": propertyParser,
           "unicode-bidi": propertyParser,
-          "word-spacing": propertyParser,
+          "atom-spacing": propertyParser,
           "touch-action": propertyParser,
           "grid-row-end": propertyParser,
           "grid-row-gap": propertyParser,
@@ -302,7 +302,7 @@ selectorParser
           "column-fill": propertyParser,
           "column-rule": propertyParser,
           "column-span": propertyParser,
-          "empty-cells": propertyParser,
+          "empty-atoms": propertyParser,
           "flex-shrink": propertyParser,
           "font-family": propertyParser,
           "font-weight": propertyParser,
@@ -334,7 +334,7 @@ selectorParser
           "text-align": propertyParser,
           transition: propertyParser,
           visibility: propertyParser,
-          "word-break": propertyParser,
+          "atom-break": propertyParser,
           animation: propertyParser,
           direction: propertyParser,
           "flex-flow": propertyParser,
@@ -346,7 +346,7 @@ selectorParser
           "nav-index": propertyParser,
           "nav-right": propertyParser,
           transform: propertyParser,
-          "word-wrap": propertyParser,
+          "atom-wrap": propertyParser,
           "nav-down": propertyParser,
           "nav-left": propertyParser,
           overflow: propertyParser,
@@ -395,15 +395,15 @@ selectorParser
         ]
       )
     }
-    get selectorCell() {
-      return this.getWord(0)
+    get selectorAtom() {
+      return this.getAtom(0)
     }
     get isSelectorParser() {
       return true
     }
     getSelector() {
       const parentSelector = this.parent.getSelector()
-      return this.firstWord
+      return this.firstAtom
         .split(",")
         .map(part => {
           if (part.startsWith("&")) return parentSelector + part.substr(1)

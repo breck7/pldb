@@ -7,7 +7,7 @@
 
   class stampParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new Particle.ParserCombinator(errorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { "#!": hashbangParser, file: fileParser, folder: folderParser }), undefined)
+      return new Particle.ParserCombinator(errorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), { "#!": hashbangParser, file: fileParser, folder: folderParser }), undefined)
     }
     async executeSeries(parentDir) {
       const length = this.length
@@ -82,22 +82,22 @@
     }
     static cachedHandParsersProgramRoot = new HandParsersProgram(`// todo File permissions
 
-// Cell parsers
-anyCell
-extraCell
+// Atom parsers
+anyAtom
+extraAtom
  paint invalid
-anyCell
+anyAtom
  paint string
-promptWordsCell
+promptAtomsAtom
  paint string
-filepathCell
-varNameCell
+filepathAtom
+varNameAtom
  paint string
-commentCell
+commentAtom
  paint comment
-inputTypeCell
+inputTypeAtom
  enum string int any lowercase
-keywordCell
+keywordAtom
  paint keyword.control
 
 // Line parsers
@@ -181,30 +181,30 @@ stampParser
  inScope hashbangParser folderParser fileParser
 hashbangParser
  crux #!
- catchAllCellType commentCell
- cells commentCell
+ catchAllAtomType commentAtom
+ atoms commentAtom
 catchAllAnyLineParser
- catchAllCellType anyCell
+ catchAllAtomType anyAtom
  catchAllParser catchAllAnyLineParser
- cells anyCell
+ atoms anyAtom
 dataParser
  catchAllParser catchAllAnyLineParser
- cells keywordCell
+ atoms keywordAtom
  crux data
 errorParser
  baseParser errorParser
 executableParser
- cells keywordCell
+ atoms keywordAtom
  crux executable
 fileParser
- cells keywordCell filepathCell
+ atoms keywordAtom filepathAtom
  javascript
   compileToBash(parentDir) {
    const filePath = this._getAbsolutePath(parentDir)
    return \`touch \${filePath}\\necho -e "\${this.subparticlesToString()}" >> \${filePath}\`
   }
   _getAbsolutePath(parentDir = process.cwd()) {
-   return parentDir + "/" + this.cells.filepathCell
+   return parentDir + "/" + this.atomsMap.filepathAtom
   }
   execute(parentDir) {
    const fs = require("fs")
@@ -220,13 +220,13 @@ fileParser
  inScope dataParser executableParser
  crux file
 folderParser
- cells keywordCell filepathCell
+ atoms keywordAtom filepathAtom
  javascript
   compileToBash(parentDir) {
    return \`mkdir \${this._getAbsolutePath(parentDir)}\`
   }
   _getAbsolutePath(parentDir = process.cwd()) {
-   return parentDir + "/" + this.cells.filepathCell
+   return parentDir + "/" + this.atomsMap.filepathAtom
   }
   execute(parentDir) {
    const path = this._getAbsolutePath(parentDir)
@@ -242,11 +242,11 @@ folderParser
   }
 
   class hashbangParser extends ParserBackedParticle {
-    get commentCell() {
-      return this.getWord(0)
+    get commentAtom() {
+      return this.getAtom(0)
     }
-    get commentCell() {
-      return this.getWordsFrom(1)
+    get commentAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
@@ -254,11 +254,11 @@ folderParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllAnyLineParser, undefined, undefined)
     }
-    get anyCell() {
-      return this.getWord(0)
+    get anyAtom() {
+      return this.getAtom(0)
     }
-    get anyCell() {
-      return this.getWordsFrom(1)
+    get anyAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
@@ -266,8 +266,8 @@ folderParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllAnyLineParser, undefined, undefined)
     }
-    get keywordCell() {
-      return this.getWord(0)
+    get keywordAtom() {
+      return this.getAtom(0)
     }
   }
 
@@ -278,27 +278,27 @@ folderParser
   }
 
   class executableParser extends ParserBackedParticle {
-    get keywordCell() {
-      return this.getWord(0)
+    get keywordAtom() {
+      return this.getAtom(0)
     }
   }
 
   class fileParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new Particle.ParserCombinator(undefined, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { data: dataParser, executable: executableParser }), undefined)
+      return new Particle.ParserCombinator(undefined, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), { data: dataParser, executable: executableParser }), undefined)
     }
-    get keywordCell() {
-      return this.getWord(0)
+    get keywordAtom() {
+      return this.getAtom(0)
     }
-    get filepathCell() {
-      return this.getWord(1)
+    get filepathAtom() {
+      return this.getAtom(1)
     }
     compileToBash(parentDir) {
       const filePath = this._getAbsolutePath(parentDir)
       return `touch ${filePath}\necho -e "${this.subparticlesToString()}" >> ${filePath}`
     }
     _getAbsolutePath(parentDir = process.cwd()) {
-      return parentDir + "/" + this.cells.filepathCell
+      return parentDir + "/" + this.atomsMap.filepathAtom
     }
     execute(parentDir) {
       const fs = require("fs")
@@ -314,17 +314,17 @@ folderParser
   }
 
   class folderParser extends ParserBackedParticle {
-    get keywordCell() {
-      return this.getWord(0)
+    get keywordAtom() {
+      return this.getAtom(0)
     }
-    get filepathCell() {
-      return this.getWord(1)
+    get filepathAtom() {
+      return this.getAtom(1)
     }
     compileToBash(parentDir) {
       return `mkdir ${this._getAbsolutePath(parentDir)}`
     }
     _getAbsolutePath(parentDir = process.cwd()) {
-      return parentDir + "/" + this.cells.filepathCell
+      return parentDir + "/" + this.atomsMap.filepathAtom
     }
     execute(parentDir) {
       const path = this._getAbsolutePath(parentDir)

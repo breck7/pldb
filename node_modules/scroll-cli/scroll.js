@@ -121,7 +121,7 @@ const parseMeasures = parser => {
   dummyProgram.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
   dummyProgram.forEach(particle => {
     // add nested measures
-    Object.keys(particle.definition.firstWordMapWithDefinitions).forEach(key => particle.appendLine(key))
+    Object.keys(particle.definition.firstAtomMapWithDefinitions).forEach(key => particle.appendLine(key))
   })
   // Delete any nested particles that are not measures
   dummyProgram.topDownArray.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
@@ -337,7 +337,7 @@ class ScrollFile {
 
   get parsersBundle() {
     let code =
-      `parsers/cellTypes.parsers
+      `parsers/atomTypes.parsers
 parsers/root.parsers
 parsers/build.parsers
 parsers/comments.parsers
@@ -464,12 +464,12 @@ parsers/errors.parsers`
     const macroMap = {}
     particle
       .filter(particle => {
-        const parserWord = particle.firstWord
-        return parserWord === scrollKeywords.replace || parserWord === scrollKeywords.replaceJs || parserWord === scrollKeywords.replaceNodejs
+        const parserAtom = particle.firstAtom
+        return parserAtom === scrollKeywords.replace || parserAtom === scrollKeywords.replaceJs || parserAtom === scrollKeywords.replaceNodejs
       })
       .forEach(particle => {
-        let value = particle.length ? particle.subparticlesToString() : particle.getWordsFrom(2).join(" ")
-        const kind = particle.firstWord
+        let value = particle.length ? particle.subparticlesToString() : particle.getAtomsFrom(2).join(" ")
+        const kind = particle.firstAtom
         if (kind === scrollKeywords.replaceJs) value = eval(value)
         if (kind === scrollKeywords.replaceNodejs) {
           const tempPath = this.filePath + ".js"
@@ -483,7 +483,7 @@ parsers/errors.parsers`
           } finally {
             Disk.rm(tempPath)
           }
-        } else macroMap[particle.getWord(1)] = value
+        } else macroMap[particle.getAtom(1)] = value
         particle.destroy() // Destroy definitions after eval
       })
 
@@ -624,12 +624,12 @@ parsers/errors.parsers`
     return ""
   }
 
-  get(parserWord) {
-    return this.scrollProgram.get(parserWord)
+  get(parserAtom) {
+    return this.scrollProgram.get(parserAtom)
   }
 
-  has(parserWord) {
-    return this.scrollProgram.has(parserWord)
+  has(parserAtom) {
+    return this.scrollProgram.has(parserAtom)
   }
 
   get viewSourceUrl() {
@@ -847,7 +847,7 @@ class ScrollCli {
 
   get _allCommands() {
     return Object.getOwnPropertyNames(Object.getPrototypeOf(this))
-      .filter(word => word.endsWith(this.CommandFnDecoratorSuffix))
+      .filter(atom => atom.endsWith(this.CommandFnDecoratorSuffix))
       .sort()
   }
 
@@ -953,30 +953,30 @@ footer.scroll`
     return this
   }
 
-  _parserWordsRequiringExternals(parser) {
+  _parserAtomsRequiringExternals(parser) {
     // todo: could be cleaned up a bit
-    if (!parser.parserWordsRequiringExternals) parser.parserWordsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(particle => particle.copyFromExternal).map(particle => particle.getLine().replace("Parser", ""))
-    return parser.parserWordsRequiringExternals
+    if (!parser.parserAtomsRequiringExternals) parser.parserAtomsRequiringExternals = parser.cachedHandParsersProgramRoot.filter(particle => particle.copyFromExternal).map(particle => particle.getLine().replace("Parser", ""))
+    return parser.parserAtomsRequiringExternals
   }
 
   externalFilesCopied = {}
   _copyExternalFiles(file, folder, fileSystem) {
     // If this file uses a parser that has external requirements,
     // copy those from external folder into the destination folder.
-    const parserWordsRequiringExternals = this._parserWordsRequiringExternals(file.parser)
+    const parserAtomsRequiringExternals = this._parserAtomsRequiringExternals(file.parser)
     const { externalFilesCopied } = this
     if (!externalFilesCopied[folder]) externalFilesCopied[folder] = {}
-    parserWordsRequiringExternals.forEach(word => {
-      if (externalFilesCopied[folder][word]) return
-      if (file.has(word)) {
-        const particle = file.scrollProgram.getParticle(word)
+    parserAtomsRequiringExternals.forEach(atom => {
+      if (externalFilesCopied[folder][atom]) return
+      if (file.has(atom)) {
+        const particle = file.scrollProgram.getParticle(atom)
         const externalFiles = particle.copyFromExternal.split(" ")
         externalFiles.forEach(name => {
           const newPath = path.join(folder, name)
           fileSystem.writeProduct(newPath, Disk.read(path.join(__dirname, "external", name)))
           this.log(`💾 Copied external file needed by ${file.filename} to ${name}`)
         })
-        externalFilesCopied[folder][word] = true
+        externalFilesCopied[folder][atom] = true
       }
     })
   }
@@ -986,7 +986,7 @@ footer.scroll`
     if (!file.has(scrollKeywords.buildConcepts)) return
     const { permalink } = file
     file.scrollProgram.findParticles(scrollKeywords.buildConcepts).forEach(particle => {
-      const files = particle.getWordsFrom(1)
+      const files = particle.getAtomsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".csv"))
       const sortBy = particle.get("sortBy")
       files.forEach(link => {
@@ -997,7 +997,7 @@ footer.scroll`
 
     if (!file.has(scrollKeywords.buildMeasures)) return
     file.scrollProgram.findParticles(scrollKeywords.buildMeasures).forEach(particle => {
-      const files = particle.getWordsFrom(1)
+      const files = particle.getAtomsFrom(1)
       if (!files.length) files.push(permalink.replace(".html", ".csv"))
       const sortBy = particle.get("sortBy")
       files.forEach(link => {

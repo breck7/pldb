@@ -1,6 +1,6 @@
 dateParser
  popularity 0.006680
- catchAllCellType dateCell
+ catchAllAtomType dateAtom
  description Set published date.
  extends abstractTopLevelSingleMetaParser
  boolean isPopular true

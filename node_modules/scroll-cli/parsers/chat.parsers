@@ -1,6 +1,6 @@
 chatLineParser
  popularity 0.009887
- catchAllCellType anyCell
+ catchAllAtomType anyAtom
  catchAllParser chatLineParser
 chatParser
  popularity 0.000362

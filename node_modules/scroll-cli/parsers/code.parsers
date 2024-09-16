@@ -1,6 +1,6 @@
 lineOfCodeParser
  popularity 0.018665
- catchAllCellType codeCell
+ catchAllAtomType codeAtom
  catchAllParser lineOfCodeParser
 
 codeParser
@@ -24,7 +24,7 @@ codeParser
 codeWithHeaderParser
  popularity 0.000169
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends codeParser
  example
   codeWithHeader math.py

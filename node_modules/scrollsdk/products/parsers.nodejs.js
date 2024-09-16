@@ -7,141 +7,141 @@
 
   class parsersParser extends ParserBackedParticle {
     createParserCombinator() {
-      return new Particle.ParserCombinator(catchAllErrorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), { "//": slashCommentParser }), [
+      return new Particle.ParserCombinator(catchAllErrorParser, Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), { "//": slashCommentParser }), [
         { regex: /^$/, parser: blankLineParser },
-        { regex: /^[a-zA-Z0-9_]+Cell$/, parser: cellTypeDefinitionParser },
+        { regex: /^[a-zA-Z0-9_]+Atom$/, parser: atomTypeDefinitionParser },
         { regex: /^[a-zA-Z0-9_]+Parser$/, parser: parserDefinitionParser }
       ])
     }
     static cachedHandParsersProgramRoot =
       new HandParsersProgram(`// todo Add imports parsers, along with source maps, so we can correctly support parsers split across multiple files, and better enable parsers from compositions of reusable bits?
-// todo Do error checking for if you have a firstwordCellType, cells, and/or catchAllCellType with same name.
+// todo Do error checking for if you have a firstatomAtomType, atoms, and/or catchAllAtomType with same name.
 // todo Add enumOption root level type?
-// todo compile cells. add javascript property. move getRunTimeEnumOptions to cells.
+// todo compile atoms. add javascript property. move getRunTimeEnumOptions to atoms.
 
-// Cell Parsers
-abstractConstantCell
+// Atom Parsers
+abstractConstantAtom
  paint entity.name.tag
 
-javascriptSafeAlphaNumericIdentifierCell
+javascriptSafeAlphaNumericIdentifierAtom
  regex [a-zA-Z0-9_]+
- reservedWords enum extends function static if while export return class for default require var let const new
+ reservedAtoms enum extends function static if while export return class for default require var let const new
 
-anyCell
+anyAtom
 
-baseParsersCell
+baseParsersAtom
  description There are a few classes of special parsers. BlobParsers don't have their subparticles parsed. Error particles always report an error.
  // todo Remove?
  enum blobParser errorParser
  paint variable.parameter
 
-boolCell
+boolAtom
  enum true false
  paint constant.numeric
 
-cellParserCell
+atomParserAtom
  enum prefix postfix omnifix
  paint constant.numeric
 
-cellPropertyNameCell
+atomPropertyNameAtom
  paint variable.parameter
 
-cellTypeIdCell
- examples intCell keywordCell someCustomCell
- extends javascriptSafeAlphaNumericIdentifierCell
- enumFromCellTypes cellTypeIdCell
+atomTypeIdAtom
+ examples intAtom keywordAtom someCustomAtom
+ extends javascriptSafeAlphaNumericIdentifierAtom
+ enumFromAtomTypes atomTypeIdAtom
  paint storage
 
-constantIdentifierCell
+constantIdentifierAtom
  examples someId myVar
  // todo Extend javascriptSafeAlphaNumericIdentifier
  regex [a-zA-Z]\\w+
  paint constant.other
- description A word that can be assigned to the parser in the target language.
+ description A atom that can be assigned to the parser in the target language.
 
-constructorFilePathCell
+constructorFilePathAtom
 
-enumOptionCell
+enumOptionAtom
  // todo Add an enumOption top level type, so we can add data to an enum option such as a description.
  paint string
 
-cellExampleCell
- description Holds an example for a cell with a wide range of options.
+atomExampleAtom
+ description Holds an example for a atom with a wide range of options.
  paint string
 
-extraCell
+extraAtom
  paint invalid
 
-fileExtensionCell
+fileExtensionAtom
  examples js txt doc exe
  regex [a-zA-Z0-9]+
  paint string
 
-numericCell
+numericAtom
  description A float or an int.
  paint constant.numeric
 
-floatCell
+floatAtom
  regex \\-?[0-9]*\\.?[0-9]*
  paint constant.numeric
 
-intCell
+intAtom
  regex \\-?[0-9]+
  paint constant.numeric
 
-javascriptCodeCell
+javascriptCodeAtom
 
-lowercaseCell
+lowercaseAtom
  regex [a-z]+
 
-parserIdCell
+parserIdAtom
  examples commentParser addParser
  description This doubles as the class name in Javascript. If this begins with \`abstract\`, then the parser will be considered an abstract parser, which cannot be used by itself but provides common functionality to parsers that extend it.
  paint variable.parameter
- extends javascriptSafeAlphaNumericIdentifierCell
- enumFromCellTypes parserIdCell
+ extends javascriptSafeAlphaNumericIdentifierAtom
+ enumFromAtomTypes parserIdAtom
 
-propertyKeywordCell
+propertyKeywordAtom
  paint constant.language
 
-regexCell
+regexAtom
  paint string.regexp
 
-reservedWordCell
- description A word that a cell cannot contain.
+reservedAtomAtom
+ description A atom that a atom cannot contain.
  paint string
 
-paintTypeCell
- enum comment comment.block comment.block.documentation comment.line constant constant.character.escape constant.language constant.numeric constant.numeric.complex constant.numeric.complex.imaginary constant.numeric.complex.real constant.numeric.float constant.numeric.float.binary constant.numeric.float.decimal constant.numeric.float.hexadecimal constant.numeric.float.octal constant.numeric.float.other constant.numeric.integer constant.numeric.integer.binary constant.numeric.integer.decimal constant.numeric.integer.hexadecimal constant.numeric.integer.octal constant.numeric.integer.other constant.other constant.other.placeholder entity entity.name entity.name.class entity.name.class.forward-decl entity.name.constant entity.name.enum entity.name.function entity.name.function.constructor entity.name.function.destructor entity.name.impl entity.name.interface entity.name.label entity.name.namespace entity.name.section entity.name.struct entity.name.tag entity.name.trait entity.name.type entity.name.union entity.other.attribute-name entity.other.inherited-class invalid invalid.deprecated invalid.illegal keyword keyword.control keyword.control.conditional keyword.control.import keyword.declaration keyword.operator keyword.operator.arithmetic keyword.operator.assignment keyword.operator.bitwise keyword.operator.logical keyword.operator.word keyword.other markup markup.bold markup.deleted markup.heading markup.inserted markup.italic markup.list.numbered markup.list.unnumbered markup.other markup.quote markup.raw.block markup.raw.inline markup.underline markup.underline.link meta meta.annotation meta.annotation.identifier meta.annotation.parameters meta.block meta.braces meta.brackets meta.class meta.enum meta.function meta.function-call meta.function.parameters meta.function.return-type meta.generic meta.group meta.impl meta.interface meta.interpolation meta.namespace meta.paragraph meta.parens meta.path meta.preprocessor meta.string meta.struct meta.tag meta.toc-list meta.trait meta.type meta.union punctuation punctuation.accessor punctuation.definition.annotation punctuation.definition.comment punctuation.definition.generic.begin punctuation.definition.generic.end punctuation.definition.keyword punctuation.definition.string.begin punctuation.definition.string.end punctuation.definition.variable punctuation.section.block.begin punctuation.section.block.end punctuation.section.braces.begin punctuation.section.braces.end punctuation.section.brackets.begin punctuation.section.brackets.end punctuation.section.group.begin punctuation.section.group.end punctuation.section.interpolation.begin punctuation.section.interpolation.end punctuation.section.parens.begin punctuation.section.parens.end punctuation.separator punctuation.separator.continuation punctuation.terminator source source.language-suffix.embedded storage storage.modifier storage.type storage.type keyword.declaration.type storage.type.class keyword.declaration.class storage.type.enum keyword.declaration.enum storage.type.function keyword.declaration.function storage.type.impl keyword.declaration.impl storage.type.interface keyword.declaration.interface storage.type.struct keyword.declaration.struct storage.type.trait keyword.declaration.trait storage.type.union keyword.declaration.union string string.quoted.double string.quoted.other string.quoted.single string.quoted.triple string.regexp string.unquoted support support.class support.constant support.function support.module support.type text text.html text.xml variable variable.annotation variable.function variable.language variable.other variable.other.constant variable.other.member variable.other.readwrite variable.parameter
+paintTypeAtom
+ enum comment comment.block comment.block.documentation comment.line constant constant.character.escape constant.language constant.numeric constant.numeric.complex constant.numeric.complex.imaginary constant.numeric.complex.real constant.numeric.float constant.numeric.float.binary constant.numeric.float.decimal constant.numeric.float.hexadecimal constant.numeric.float.octal constant.numeric.float.other constant.numeric.integer constant.numeric.integer.binary constant.numeric.integer.decimal constant.numeric.integer.hexadecimal constant.numeric.integer.octal constant.numeric.integer.other constant.other constant.other.placeholder entity entity.name entity.name.class entity.name.class.forward-decl entity.name.constant entity.name.enum entity.name.function entity.name.function.constructor entity.name.function.destructor entity.name.impl entity.name.interface entity.name.label entity.name.namespace entity.name.section entity.name.struct entity.name.tag entity.name.trait entity.name.type entity.name.union entity.other.attribute-name entity.other.inherited-class invalid invalid.deprecated invalid.illegal keyword keyword.control keyword.control.conditional keyword.control.import keyword.declaration keyword.operator keyword.operator.arithmetic keyword.operator.assignment keyword.operator.bitwise keyword.operator.logical keyword.operator.atom keyword.other markup markup.bold markup.deleted markup.heading markup.inserted markup.italic markup.list.numbered markup.list.unnumbered markup.other markup.quote markup.raw.block markup.raw.inline markup.underline markup.underline.link meta meta.annotation meta.annotation.identifier meta.annotation.parameters meta.block meta.braces meta.brackets meta.class meta.enum meta.function meta.function-call meta.function.parameters meta.function.return-type meta.generic meta.group meta.impl meta.interface meta.interpolation meta.namespace meta.paragraph meta.parens meta.path meta.preprocessor meta.string meta.struct meta.tag meta.toc-list meta.trait meta.type meta.union punctuation punctuation.accessor punctuation.definition.annotation punctuation.definition.comment punctuation.definition.generic.begin punctuation.definition.generic.end punctuation.definition.keyword punctuation.definition.string.begin punctuation.definition.string.end punctuation.definition.variable punctuation.section.block.begin punctuation.section.block.end punctuation.section.braces.begin punctuation.section.braces.end punctuation.section.brackets.begin punctuation.section.brackets.end punctuation.section.group.begin punctuation.section.group.end punctuation.section.interpolation.begin punctuation.section.interpolation.end punctuation.section.parens.begin punctuation.section.parens.end punctuation.separator punctuation.separator.continuation punctuation.terminator source source.language-suffix.embedded storage storage.modifier storage.type storage.type keyword.declaration.type storage.type.class keyword.declaration.class storage.type.enum keyword.declaration.enum storage.type.function keyword.declaration.function storage.type.impl keyword.declaration.impl storage.type.interface keyword.declaration.interface storage.type.struct keyword.declaration.struct storage.type.trait keyword.declaration.trait storage.type.union keyword.declaration.union string string.quoted.double string.quoted.other string.quoted.single string.quoted.triple string.regexp string.unquoted support support.class support.constant support.function support.module support.type text text.html text.xml variable variable.annotation variable.function variable.language variable.other variable.other.constant variable.other.member variable.other.readwrite variable.parameter
  paint string
 
-scriptUrlCell
+scriptUrlAtom
 
-semanticVersionCell
+semanticVersionAtom
  examples 1.0.0 2.2.1
  regex [0-9]+\\.[0-9]+\\.[0-9]+
  paint constant.numeric
 
-stringCell
+stringAtom
  paint string
  examples lorem ipsum
 
-tagCell
+tagAtom
  paint string
 
-wordCell
+atomAtom
  regex [a-zA-Z]+
  paint variable.parameter
 
-exampleAnyCell
+exampleAnyAtom
  examples lorem ipsem
  // todo Eventually we want to be able to parse correctly the examples.
  paint comment
- extends stringCell
+ extends stringAtom
 
-blankCell
+blankAtom
 
-commentCell
+commentAtom
  paint comment
 
 // Line Parsers
@@ -157,17 +157,17 @@ parsersParser
    catchAllParser anyParser
   anyParser
    baseParser blobParser
- inScope slashCommentParser blankLineParser cellTypeDefinitionParser parserDefinitionParser
+ inScope slashCommentParser blankLineParser atomTypeDefinitionParser parserDefinitionParser
 
 blankLineParser
  description Blank lines are OK in Parsers.
- cells blankCell
+ atoms blankAtom
  pattern ^$
  tags doNotSynthesize
 
 abstractCompilerRuleParser
- catchAllCellType anyCell
- cells propertyKeywordCell
+ catchAllAtomType anyAtom
+ atoms propertyKeywordAtom
 
 closeSubparticlesParser
  extends abstractCompilerRuleParser
@@ -179,8 +179,8 @@ indentCharacterParser
  description You can change the indent character for compiled subparticles. Default is a space.
  cruxFromId
 
-catchAllCellDelimiterParser
- description If a particle has a catchAllCell, this is the string delimiter that will be used to join those cells. Default is comma.
+catchAllAtomDelimiterParser
+ description If a particle has a catchAllAtom, this is the string delimiter that will be used to join those atoms. Default is comma.
  extends abstractCompilerRuleParser
  cruxFromId
 
@@ -191,7 +191,7 @@ openSubparticlesParser
 
 stringTemplateParser
  extends abstractCompilerRuleParser
- description This template string is used to compile this line, and accepts strings of the format: const var = {someCellId}
+ description This template string is used to compile this line, and accepts strings of the format: const var = {someAtomId}
  cruxFromId
 
 joinSubparticlesWithParser
@@ -201,42 +201,42 @@ joinSubparticlesWithParser
 
 abstractConstantParser
  description A constant.
- cells propertyKeywordCell
+ atoms propertyKeywordAtom
  cruxFromId
  // todo: make tags inherit
  tags actPhase
 
 booleanParser
- cells propertyKeywordCell constantIdentifierCell
- catchAllCellType boolCell
+ atoms propertyKeywordAtom constantIdentifierAtom
+ catchAllAtomType boolAtom
  extends abstractConstantParser
  tags actPhase
 
 floatParser
- cells propertyKeywordCell constantIdentifierCell
- catchAllCellType floatCell
+ atoms propertyKeywordAtom constantIdentifierAtom
+ catchAllAtomType floatAtom
  extends abstractConstantParser
  tags actPhase
 
 intParser
- cells propertyKeywordCell constantIdentifierCell
- catchAllCellType intCell
+ atoms propertyKeywordAtom constantIdentifierAtom
+ catchAllAtomType intAtom
  tags actPhase
  extends abstractConstantParser
 
 stringParser
- cells propertyKeywordCell constantIdentifierCell
- catchAllCellType stringCell
+ atoms propertyKeywordAtom constantIdentifierAtom
+ catchAllAtomType stringAtom
  catchAllParser catchAllMultilineStringConstantParser
  extends abstractConstantParser
  tags actPhase
 
 abstractParserRuleParser
  single
- cells propertyKeywordCell
+ atoms propertyKeywordAtom
 
 compilesToParser
- cells propertyKeywordCell fileExtensionCell
+ atoms propertyKeywordAtom fileExtensionAtom
  extends abstractParserRuleParser
  description File extension for simple compilers.
  // todo: deprecate?
@@ -246,7 +246,7 @@ compilesToParser
 
 extensionsParser
  extends abstractParserRuleParser
- catchAllCellType fileExtensionCell
+ catchAllAtomType fileExtensionAtom
  description File extension for your dialect.
  // File extensions of your language. Generally used for parsers marked "root". Sometimes your language might have multiple extensions. If you don't add this, the root particle's parserId will be used as the default file extension.
  cruxFromId
@@ -256,23 +256,23 @@ abstractNonTerminalParserRuleParser
  extends abstractParserRuleParser
 
 baseParserParser
- cells propertyKeywordCell baseParsersCell
+ atoms propertyKeywordAtom baseParsersAtom
  description Set for blobs or errors. 
  // In rare cases with untyped content you can use a blobParser, for now, to skip parsing for performance gains. The base errorParser will report errors when parsed. Use that if you don't want to implement your own error parser.
  extends abstractParserRuleParser
  cruxFromId
  tags analyzePhase
 
-catchAllCellTypeParser
- cells propertyKeywordCell cellTypeIdCell
+catchAllAtomTypeParser
+ atoms propertyKeywordAtom atomTypeIdAtom
  description Use for lists.
- // Aka 'listCellType'. Use this when the value in a key/value pair is a list. If there are extra words in the particle's line, parse these words as this type. Often used with \`listDelimiterParser\`.
+ // Aka 'listAtomType'. Use this when the value in a key/value pair is a list. If there are extra atoms in the particle's line, parse these atoms as this type. Often used with \`listDelimiterParser\`.
  extends abstractParserRuleParser
  cruxFromId
  tags analyzePhase
 
-cellParserParser
- cells propertyKeywordCell cellParserCell
+atomParserParser
+ atoms propertyKeywordAtom atomParserAtom
  description Set parsing strategy.
  // prefix/postfix/omnifix parsing strategy. If missing, defaults to prefix.
  extends abstractParserRuleParser
@@ -282,14 +282,14 @@ cellParserParser
 catchAllParserParser
  description Attach this to unmatched lines.
  // If a parser is not found in the inScope list, instantiate this type of particle instead.
- cells propertyKeywordCell parserIdCell
+ atoms propertyKeywordAtom parserIdAtom
  extends abstractParserRuleParser
  cruxFromId
  tags acquirePhase
 
-cellsParser
- catchAllCellType cellTypeIdCell
- description Set required cellTypes.
+atomsParser
+ catchAllAtomType atomTypeIdAtom
+ description Set required atomTypes.
  extends abstractParserRuleParser
  cruxFromId
  tags analyzePhase
@@ -297,28 +297,28 @@ cellsParser
 compilerParser
  // todo Remove this and its subparticles?
  description For simple compilers.
- inScope stringTemplateParser catchAllCellDelimiterParser openSubparticlesParser closeSubparticlesParser indentCharacterParser joinSubparticlesWithParser
+ inScope stringTemplateParser catchAllAtomDelimiterParser openSubparticlesParser closeSubparticlesParser indentCharacterParser joinSubparticlesWithParser
  extends abstractParserRuleParser
  cruxFromId
  tags experimental
 
 parserDescriptionParser
  description Parser description.
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractParserRuleParser
  crux description
  tags assemblePhase
 
-cellTypeDescriptionParser
- description Cell Type description.
- catchAllCellType stringCell
+atomTypeDescriptionParser
+ description Atom Type description.
+ catchAllAtomType stringAtom
  crux description
  tags assemblePhase
 
 exampleParser
  // todo Should this just be a "string" constant on particles?
  description Set example for docs and tests.
- catchAllCellType exampleAnyCell
+ catchAllAtomType exampleAnyAtom
  catchAllParser catchAllExampleLineParser
  extends abstractParserRuleParser
  cruxFromId
@@ -329,20 +329,20 @@ extendsParserParser
  tags assemblePhase
  description Extend another parser.
  // todo: add a catchall that is used for mixins
- cells propertyKeywordCell parserIdCell
+ atoms propertyKeywordAtom parserIdAtom
  extends abstractParserRuleParser
 
 popularityParser
  // todo Remove this parser. Switch to conditional frequencies.
  description Parser popularity.
- cells propertyKeywordCell floatCell
+ atoms propertyKeywordAtom floatAtom
  extends abstractParserRuleParser
  cruxFromId
  tags assemblePhase
 
 inScopeParser
  description Parsers in scope.
- catchAllCellType parserIdCell
+ catchAllAtomType parserIdAtom
  extends abstractParserRuleParser
  cruxFromId
  tags acquirePhase
@@ -376,20 +376,20 @@ abstractParseRuleParser
  cruxFromId
 
 cruxParser
- cells propertyKeywordCell stringCell
- description Attach by matching first word.
+ atoms propertyKeywordAtom stringAtom
+ description Attach by matching first atom.
  extends abstractParseRuleParser
  tags acquirePhase
 
 cruxFromIdParser
- cells propertyKeywordCell
+ atoms propertyKeywordAtom
  description Derive crux from parserId.
  // for example 'fooParser' would have crux of 'foo'.
  extends abstractParseRuleParser
  tags acquirePhase
 
 patternParser
- catchAllCellType regexCell
+ catchAllAtomType regexAtom
  description Attach via regex.
  extends abstractParseRuleParser
  tags acquirePhase
@@ -403,7 +403,7 @@ requiredParser
 abstractValidationRuleParser
  extends abstractParserRuleParser
  cruxFromId
- catchAllCellType boolCell
+ catchAllAtomType boolAtom
 
 singleParser
  description Assert used once.
@@ -417,8 +417,8 @@ uniqueLineParser
  extends abstractValidationRuleParser
  tags analyzePhase
 
-uniqueFirstWordParser
- description Assert unique first words. For pattern parsers.
+uniqueFirstAtomParser
+ description Assert unique first atoms. For pattern parsers.
  // For catch all parsers or pattern particles, use this to indicate the 
  extends abstractValidationRuleParser
  tags analyzePhase
@@ -427,7 +427,7 @@ listDelimiterParser
  description Split content by this delimiter.
  extends abstractParserRuleParser
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  tags analyzePhase
 
 
@@ -436,7 +436,7 @@ contentKeyParser
  // Advanced keyword to help with isomorphic JSON serialization/deserialization. If present will serialize the particle to an object and set a property with this key and the value set to the particle's content.
  extends abstractParserRuleParser
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  tags deprecate
 subparticlesKeyParser
  // todo: deprecate?
@@ -444,11 +444,11 @@ subparticlesKeyParser
  // Advanced keyword to help with serialization/deserialization of blobs. If present will serialize the particle to an object and set a property with this key and the value set to the particle's subparticles.
  extends abstractParserRuleParser
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  tags deprecate
 
 tagsParser
- catchAllCellType tagCell
+ catchAllAtomType tagAtom
  extends abstractParserRuleParser
  description Custom metadata.
  cruxFromId
@@ -458,67 +458,67 @@ catchAllErrorParser
  baseParser errorParser
 
 catchAllExampleLineParser
- catchAllCellType exampleAnyCell
+ catchAllAtomType exampleAnyAtom
  catchAllParser catchAllExampleLineParser
- cells exampleAnyCell
+ atoms exampleAnyAtom
 
 catchAllJavascriptCodeLineParser
- catchAllCellType javascriptCodeCell
+ catchAllAtomType javascriptCodeAtom
  catchAllParser catchAllJavascriptCodeLineParser
 
 catchAllMultilineStringConstantParser
  description String constants can span multiple lines.
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  catchAllParser catchAllMultilineStringConstantParser
- cells stringCell
+ atoms stringAtom
 
 
-cellTypeDefinitionParser
- // todo Generate a class for each cell type?
- // todo Allow abstract cell types?
+atomTypeDefinitionParser
+ // todo Generate a class for each atom type?
+ // todo Allow abstract atom types?
  // todo Change pattern to postfix.
- pattern ^[a-zA-Z0-9_]+Cell$
- inScope paintParser regexParser reservedWordsParser enumFromCellTypesParser cellTypeDescriptionParser enumParser slashCommentParser extendsCellTypeParser examplesParser cellMinParser cellMaxParser
- cells cellTypeIdCell
+ pattern ^[a-zA-Z0-9_]+Atom$
+ inScope paintParser regexParser reservedAtomsParser enumFromAtomTypesParser atomTypeDescriptionParser enumParser slashCommentParser extendsAtomTypeParser examplesParser atomMinParser atomMaxParser
+ atoms atomTypeIdAtom
  tags assemblePhase
 
 // Enums
-enumFromCellTypesParser
+enumFromAtomTypesParser
  description Runtime enum options.
- catchAllCellType cellTypeIdCell
- cells cellPropertyNameCell
+ catchAllAtomType atomTypeIdAtom
+ atoms atomPropertyNameAtom
  cruxFromId
  tags analyzePhase
 
 enumParser
  description Set enum options.
  cruxFromId
- catchAllCellType enumOptionCell
- cells cellPropertyNameCell
+ catchAllAtomType enumOptionAtom
+ atoms atomPropertyNameAtom
  tags analyzePhase
 
 examplesParser
  description Examples for documentation and tests.
- // If the domain of possible cell values is large, such as a string type, it can help certain methods—such as program synthesis—to provide a few examples.
+ // If the domain of possible atom values is large, such as a string type, it can help certain methods—such as program synthesis—to provide a few examples.
  cruxFromId
- catchAllCellType cellExampleCell
- cells cellPropertyNameCell
+ catchAllAtomType atomExampleAtom
+ atoms atomPropertyNameAtom
  tags assemblePhase
 
-cellMinParser
+atomMinParser
  description Specify a min if numeric.
  crux min
- cells cellPropertyNameCell numericCell
+ atoms atomPropertyNameAtom numericAtom
  tags analyzePhase
 
-cellMaxParser
+atomMaxParser
  description Specify a max if numeric.
  crux max
- cells cellPropertyNameCell numericCell
+ atoms atomPropertyNameAtom numericAtom
  tags analyzePhase
 
 paintParser
- cells propertyKeywordCell paintTypeCell
+ atoms propertyKeywordAtom paintTypeAtom
  description Instructor editor how to color these.
  single
  cruxFromId
@@ -528,7 +528,7 @@ rootFlagParser
  crux root
  description Set root parser.
  // Mark a parser as root if it is the root of your language. The parserId will be the name of your language. The parserId will also serve as the default file extension, if you don't specify another. If more than 1 parser is marked as "root", the last one wins.
- cells propertyKeywordCell
+ atoms propertyKeywordAtom
  tags assemblePhase
 
 parserDefinitionParser
@@ -537,40 +537,40 @@ parserDefinitionParser
  description Parser types are a core unit of your language. They translate to 1 class per parser. Examples of parser would be "header", "person", "if", "+", "define", etc.
  catchAllParser catchAllErrorParser
  inScope rootFlagParser abstractParserRuleParser abstractConstantParser slashCommentParser parserDefinitionParser
- cells parserIdCell
+ atoms parserIdAtom
  tags assemblePhase
 
 regexParser
- catchAllCellType regexCell
- description Words must match this.
+ catchAllAtomType regexAtom
+ description Atoms must match this.
  single
- cells cellPropertyNameCell
+ atoms atomPropertyNameAtom
  cruxFromId
  tags analyzePhase
 
-reservedWordsParser
+reservedAtomsParser
  single
- description Words can't be any of these.
- catchAllCellType reservedWordCell
- cells cellPropertyNameCell
+ description Atoms can't be any of these.
+ catchAllAtomType reservedAtomAtom
+ atoms atomPropertyNameAtom
  cruxFromId
  tags analyzePhase
 
 commentLineParser
- catchAllCellType commentCell
+ catchAllAtomType commentAtom
 
 slashCommentParser
  description A comment.
- catchAllCellType commentCell
+ catchAllAtomType commentAtom
  crux //
  catchAllParser commentLineParser
  tags assemblePhase
 
-extendsCellTypeParser
+extendsAtomTypeParser
  crux extends
- description Extend another cellType.
+ description Extend another atomType.
  // todo Add mixin support in addition to extends?
- cells propertyKeywordCell cellTypeIdCell
+ atoms propertyKeywordAtom atomTypeIdAtom
  tags assemblePhase
  single`)
     get handParsersProgram() {
@@ -580,17 +580,17 @@ extendsCellTypeParser
   }
 
   class blankLineParser extends ParserBackedParticle {
-    get blankCell() {
-      return this.getWord(0)
+    get blankAtom() {
+      return this.getAtom(0)
     }
   }
 
   class abstractCompilerRuleParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get anyCell() {
-      return this.getWordsFrom(1)
+    get anyAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
@@ -598,7 +598,7 @@ extendsCellTypeParser
 
   class indentCharacterParser extends abstractCompilerRuleParser {}
 
-  class catchAllCellDelimiterParser extends abstractCompilerRuleParser {}
+  class catchAllAtomDelimiterParser extends abstractCompilerRuleParser {}
 
   class openSubparticlesParser extends abstractCompilerRuleParser {}
 
@@ -607,44 +607,44 @@ extendsCellTypeParser
   class joinSubparticlesWithParser extends abstractCompilerRuleParser {}
 
   class abstractConstantParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
   }
 
   class booleanParser extends abstractConstantParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get constantIdentifierCell() {
-      return this.getWord(1)
+    get constantIdentifierAtom() {
+      return this.getAtom(1)
     }
-    get boolCell() {
-      return this.getWordsFrom(2)
+    get boolAtom() {
+      return this.getAtomsFrom(2)
     }
   }
 
   class floatParser extends abstractConstantParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get constantIdentifierCell() {
-      return this.getWord(1)
+    get constantIdentifierAtom() {
+      return this.getAtom(1)
     }
-    get floatCell() {
-      return this.getWordsFrom(2).map(val => parseFloat(val))
+    get floatAtom() {
+      return this.getAtomsFrom(2).map(val => parseFloat(val))
     }
   }
 
   class intParser extends abstractConstantParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get constantIdentifierCell() {
-      return this.getWord(1)
+    get constantIdentifierAtom() {
+      return this.getAtom(1)
     }
-    get intCell() {
-      return this.getWordsFrom(2).map(val => parseInt(val))
+    get intAtom() {
+      return this.getAtomsFrom(2).map(val => parseInt(val))
     }
   }
 
@@ -652,79 +652,79 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllMultilineStringConstantParser, undefined, undefined)
     }
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get constantIdentifierCell() {
-      return this.getWord(1)
+    get constantIdentifierAtom() {
+      return this.getAtom(1)
     }
-    get stringCell() {
-      return this.getWordsFrom(2)
+    get stringAtom() {
+      return this.getAtomsFrom(2)
     }
   }
 
   class abstractParserRuleParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
   }
 
   class compilesToParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get fileExtensionCell() {
-      return this.getWord(1)
+    get fileExtensionAtom() {
+      return this.getAtom(1)
     }
   }
 
   class extensionsParser extends abstractParserRuleParser {
-    get fileExtensionCell() {
-      return this.getWordsFrom(0)
+    get fileExtensionAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class abstractNonTerminalParserRuleParser extends abstractParserRuleParser {}
 
   class baseParserParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get baseParsersCell() {
-      return this.getWord(1)
-    }
-  }
-
-  class catchAllCellTypeParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
-    }
-    get cellTypeIdCell() {
-      return this.getWord(1)
+    get baseParsersAtom() {
+      return this.getAtom(1)
     }
   }
 
-  class cellParserParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+  class catchAllAtomTypeParser extends abstractParserRuleParser {
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get cellParserCell() {
-      return this.getWord(1)
+    get atomTypeIdAtom() {
+      return this.getAtom(1)
+    }
+  }
+
+  class atomParserParser extends abstractParserRuleParser {
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
+    }
+    get atomParserAtom() {
+      return this.getAtom(1)
     }
   }
 
   class catchAllParserParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get parserIdCell() {
-      return this.getWord(1)
+    get parserIdAtom() {
+      return this.getAtom(1)
     }
   }
 
-  class cellsParser extends abstractParserRuleParser {
-    get cellTypeIdCell() {
-      return this.getWordsFrom(0)
+  class atomsParser extends abstractParserRuleParser {
+    get atomTypeIdAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -732,10 +732,10 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(
         undefined,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
           closeSubparticles: closeSubparticlesParser,
           indentCharacter: indentCharacterParser,
-          catchAllCellDelimiter: catchAllCellDelimiterParser,
+          catchAllAtomDelimiter: catchAllAtomDelimiterParser,
           openSubparticles: openSubparticlesParser,
           stringTemplate: stringTemplateParser,
           joinSubparticlesWith: joinSubparticlesWithParser
@@ -746,14 +746,14 @@ extendsCellTypeParser
   }
 
   class parserDescriptionParser extends abstractParserRuleParser {
-    get stringCell() {
-      return this.getWordsFrom(0)
+    get stringAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
-  class cellTypeDescriptionParser extends ParserBackedParticle {
-    get stringCell() {
-      return this.getWordsFrom(0)
+  class atomTypeDescriptionParser extends ParserBackedParticle {
+    get stringAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -761,32 +761,32 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllExampleLineParser, undefined, undefined)
     }
-    get exampleAnyCell() {
-      return this.getWordsFrom(0)
+    get exampleAnyAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class extendsParserParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get parserIdCell() {
-      return this.getWord(1)
+    get parserIdAtom() {
+      return this.getAtom(1)
     }
   }
 
   class popularityParser extends abstractParserRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get floatCell() {
-      return parseFloat(this.getWord(1))
+    get floatAtom() {
+      return parseFloat(this.getAtom(1))
     }
   }
 
   class inScopeParser extends abstractParserRuleParser {
-    get parserIdCell() {
-      return this.getWordsFrom(0)
+    get parserIdAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -813,31 +813,31 @@ extendsCellTypeParser
   class abstractParseRuleParser extends abstractParserRuleParser {}
 
   class cruxParser extends abstractParseRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get stringCell() {
-      return this.getWord(1)
+    get stringAtom() {
+      return this.getAtom(1)
     }
   }
 
   class cruxFromIdParser extends abstractParseRuleParser {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
   }
 
   class patternParser extends abstractParseRuleParser {
-    get regexCell() {
-      return this.getWordsFrom(0)
+    get regexAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class requiredParser extends abstractParserRuleParser {}
 
   class abstractValidationRuleParser extends abstractParserRuleParser {
-    get boolCell() {
-      return this.getWordsFrom(0)
+    get boolAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -845,29 +845,29 @@ extendsCellTypeParser
 
   class uniqueLineParser extends abstractValidationRuleParser {}
 
-  class uniqueFirstWordParser extends abstractValidationRuleParser {}
+  class uniqueFirstAtomParser extends abstractValidationRuleParser {}
 
   class listDelimiterParser extends abstractParserRuleParser {
-    get stringCell() {
-      return this.getWordsFrom(0)
+    get stringAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class contentKeyParser extends abstractParserRuleParser {
-    get stringCell() {
-      return this.getWordsFrom(0)
+    get stringAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class subparticlesKeyParser extends abstractParserRuleParser {
-    get stringCell() {
-      return this.getWordsFrom(0)
+    get stringAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
   class tagsParser extends abstractParserRuleParser {
-    get tagCell() {
-      return this.getWordsFrom(0)
+    get tagAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -881,11 +881,11 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllExampleLineParser, undefined, undefined)
     }
-    get exampleAnyCell() {
-      return this.getWord(0)
+    get exampleAnyAtom() {
+      return this.getAtom(0)
     }
-    get exampleAnyCell() {
-      return this.getWordsFrom(1)
+    get exampleAnyAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
@@ -893,8 +893,8 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllJavascriptCodeLineParser, undefined, undefined)
     }
-    get javascriptCodeCell() {
-      return this.getWordsFrom(0)
+    get javascriptCodeAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -902,96 +902,96 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(catchAllMultilineStringConstantParser, undefined, undefined)
     }
-    get stringCell() {
-      return this.getWord(0)
+    get stringAtom() {
+      return this.getAtom(0)
     }
-    get stringCell() {
-      return this.getWordsFrom(1)
+    get stringAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
-  class cellTypeDefinitionParser extends ParserBackedParticle {
+  class atomTypeDefinitionParser extends ParserBackedParticle {
     createParserCombinator() {
       return new Particle.ParserCombinator(
         undefined,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
-          description: cellTypeDescriptionParser,
-          enumFromCellTypes: enumFromCellTypesParser,
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
+          description: atomTypeDescriptionParser,
+          enumFromAtomTypes: enumFromAtomTypesParser,
           enum: enumParser,
           examples: examplesParser,
-          min: cellMinParser,
-          max: cellMaxParser,
+          min: atomMinParser,
+          max: atomMaxParser,
           paint: paintParser,
           regex: regexParser,
-          reservedWords: reservedWordsParser,
+          reservedAtoms: reservedAtomsParser,
           "//": slashCommentParser,
-          extends: extendsCellTypeParser
+          extends: extendsAtomTypeParser
         }),
         undefined
       )
     }
-    get cellTypeIdCell() {
-      return this.getWord(0)
+    get atomTypeIdAtom() {
+      return this.getAtom(0)
     }
   }
 
-  class enumFromCellTypesParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+  class enumFromAtomTypesParser extends ParserBackedParticle {
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get cellTypeIdCell() {
-      return this.getWordsFrom(1)
+    get atomTypeIdAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
   class enumParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get enumOptionCell() {
-      return this.getWordsFrom(1)
+    get enumOptionAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
   class examplesParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get cellExampleCell() {
-      return this.getWordsFrom(1)
-    }
-  }
-
-  class cellMinParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
-    }
-    get numericCell() {
-      return this.getWord(1)
+    get atomExampleAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
-  class cellMaxParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+  class atomMinParser extends ParserBackedParticle {
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get numericCell() {
-      return this.getWord(1)
+    get numericAtom() {
+      return this.getAtom(1)
+    }
+  }
+
+  class atomMaxParser extends ParserBackedParticle {
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
+    }
+    get numericAtom() {
+      return this.getAtom(1)
     }
   }
 
   class paintParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get paintTypeCell() {
-      return this.getWord(1)
+    get paintTypeAtom() {
+      return this.getAtom(1)
     }
   }
 
   class rootFlagParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
   }
 
@@ -999,7 +999,7 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(
         catchAllErrorParser,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
           boolean: booleanParser,
           float: floatParser,
           int: intParser,
@@ -1007,10 +1007,10 @@ extendsCellTypeParser
           compilesTo: compilesToParser,
           extensions: extensionsParser,
           baseParser: baseParserParser,
-          catchAllCellType: catchAllCellTypeParser,
-          cellParser: cellParserParser,
+          catchAllAtomType: catchAllAtomTypeParser,
+          atomParser: atomParserParser,
           catchAllParser: catchAllParserParser,
-          cells: cellsParser,
+          atoms: atomsParser,
           compiler: compilerParser,
           description: parserDescriptionParser,
           example: exampleParser,
@@ -1024,7 +1024,7 @@ extendsCellTypeParser
           required: requiredParser,
           single: singleParser,
           uniqueLine: uniqueLineParser,
-          uniqueFirstWord: uniqueFirstWordParser,
+          uniqueFirstAtom: uniqueFirstAtomParser,
           listDelimiter: listDelimiterParser,
           contentKey: contentKeyParser,
           subparticlesKey: subparticlesKeyParser,
@@ -1035,32 +1035,32 @@ extendsCellTypeParser
         [{ regex: /^[a-zA-Z0-9_]+Parser$/, parser: parserDefinitionParser }]
       )
     }
-    get parserIdCell() {
-      return this.getWord(0)
+    get parserIdAtom() {
+      return this.getAtom(0)
     }
   }
 
   class regexParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get regexCell() {
-      return this.getWordsFrom(1)
+    get regexAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
-  class reservedWordsParser extends ParserBackedParticle {
-    get cellPropertyNameCell() {
-      return this.getWord(0)
+  class reservedAtomsParser extends ParserBackedParticle {
+    get atomPropertyNameAtom() {
+      return this.getAtom(0)
     }
-    get reservedWordCell() {
-      return this.getWordsFrom(1)
+    get reservedAtomAtom() {
+      return this.getAtomsFrom(1)
     }
   }
 
   class commentLineParser extends ParserBackedParticle {
-    get commentCell() {
-      return this.getWordsFrom(0)
+    get commentAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
@@ -1068,17 +1068,17 @@ extendsCellTypeParser
     createParserCombinator() {
       return new Particle.ParserCombinator(commentLineParser, undefined, undefined)
     }
-    get commentCell() {
-      return this.getWordsFrom(0)
+    get commentAtom() {
+      return this.getAtomsFrom(0)
     }
   }
 
-  class extendsCellTypeParser extends ParserBackedParticle {
-    get propertyKeywordCell() {
-      return this.getWord(0)
+  class extendsAtomTypeParser extends ParserBackedParticle {
+    get propertyKeywordAtom() {
+      return this.getAtom(0)
     }
-    get cellTypeIdCell() {
-      return this.getWord(1)
+    get atomTypeIdAtom() {
+      return this.getAtom(1)
     }
   }
 

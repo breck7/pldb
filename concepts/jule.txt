@@ -199,12 +199,6 @@ row
   }
  Token 
 row
- Feature hasReservedWords
- FeatureLink ../features/hasReservedWords.html
- Supported ✓
- Example
- Token 
-row
  Feature hasMemberVariables
  FeatureLink ../features/hasMemberVariables.html
  Supported ✓
@@ -264,13 +258,6 @@ row
  Supported ✓
  Example
   let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
- Token 
-row
- Feature hasSelfOrThisWord
- FeatureLink ../features/hasSelfOrThisWord.html
- Supported ✓
- Example
-  self
  Token 
 row
  Feature hasRequiredMainFunction
@@ -742,3 +729,7 @@ row
  Token
 
 View source
+
+hasSelfOrThisWord true
+ self
+hasReservedWords true

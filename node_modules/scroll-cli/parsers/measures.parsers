@@ -1,5 +1,5 @@
-measureNameCell
- extends commandWordCell
+measureNameAtom
+ extends cueAtom
  // A regex for column names for max compatibility with a broad range of data science tools:
  regex [a-zA-Z][a-zA-Z0-9]*
 
@@ -10,11 +10,11 @@ buildMeasuresParser
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
-  cells commandWordCell anyCell
+  atoms cueAtom anyAtom
 
 // The main measure parser. All measures should extend from this.
 abstractMeasureParser
- cells measureNameCell
+ atoms measureNameAtom
  cruxFromId
  boolean isMeasure true
  float sortIndex 1.9
@@ -32,17 +32,17 @@ abstractMeasureParser
     return this.content ?? ""
   }
   get measureName() {
-    return this.getFirstWordPath().replace(/ /g, "_")
+    return this.getFirstAtomPath().replace(/ /g, "_")
   }
 
 // String Measures
-abstractWordMeasureParser
- description A measure that contains a single word.
- cells measureNameCell wordCell
+abstractAtomMeasureParser
+ description A measure that contains a single atom.
+ atoms measureNameAtom atomAtom
  extends abstractMeasureParser
 
 abstractStringMeasureParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractMeasureParser
 
 abstractTextareaMeasureParser
@@ -56,14 +56,14 @@ abstractTextareaMeasureParser
 
 abstractEmailMeasureParser
  string typeForWebForms email
- cells measureNameCell emailAddressCell
- extends abstractWordMeasureParser
+ atoms measureNameAtom emailAddressAtom
+ extends abstractAtomMeasureParser
 
 // URL Parsers
 abstractUrlMeasureParser
  string typeForWebForms url
- cells measureNameCell urlCell
- extends abstractWordMeasureParser
+ atoms measureNameAtom urlAtom
+ extends abstractAtomMeasureParser
 
 // Required ID measure which denotes a concept
 abstractIdParser
@@ -79,8 +79,8 @@ abstractIdParser
     let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
     if (!requiredMeasureNames.length) return errors
     let next = this.next
-    while (requiredMeasureNames.length && next.firstWord !== "id" && next.getIndex() !== 0) {
-      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstWord)
+    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.getIndex() !== 0) {
+      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstAtom)
       next = next.next
     }
     requiredMeasureNames.forEach(name =>
@@ -100,15 +100,15 @@ abstractNumericMeasureParser
   }
 
 abstractIntegerMeasureParser
- cells measureNameCell integerCell
+ atoms measureNameAtom integerAtom
  extends abstractNumericMeasureParser
 
 abstractFloatMeasureParser
- cells measureNameCell floatCell
+ atoms measureNameAtom floatAtom
  extends abstractNumericMeasureParser
 
 abstractPercentageMeasureParser
- cells measureNameCell percentCell
+ atoms measureNameAtom percentAtom
  extends abstractNumericMeasureParser
  javascript
   get measureValue() {
@@ -118,12 +118,12 @@ abstractPercentageMeasureParser
 
 // Enum Measures
 abstractEnumMeasureParser
- cells measureNameCell enumCell
+ atoms measureNameAtom enumAtom
  extends abstractMeasureParser
 
 // Boolean Measures
 abstractBooleanMeasureParser
- cells measureNameCell booleanCell
+ atoms measureNameAtom booleanAtom
  extends abstractMeasureParser
  javascript
   get measureValue() {

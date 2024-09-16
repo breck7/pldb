@@ -2,8 +2,8 @@ abstractPostLoopParser
  description Do something with all posts. Takes an optional list of folder/group names.
  extends abstractScrollParser
  cruxFromId
- cells commandWordCell
- catchAllCellType tagWithOptionalFolderCell
+ atoms cueAtom
+ catchAllAtomType tagWithOptionalFolderAtom
  javascript
   get files() {
    return this.root.file.getFilesWithTagsForEmbedding(this.content)
@@ -12,7 +12,7 @@ abstractPostLoopParser
 scrollLoopParser
  popularity 0.000024
  extends abstractAftertextParser
- cells commandWordCell
+ atoms cueAtom
  boolean isTableVisualization true
  description Iterate over files+ to make HTML.
  crux loop
@@ -53,13 +53,13 @@ scrollLoopParser
   teardown() {}
 
 abstractLoopConfigParser
- cells commandWordCell
+ atoms cueAtom
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
 
 // Extend this if you want to create a new provider
 abstractItemsProviderParser
- cells commandWordCell
+ atoms cueAtom
 
 // Some basic providers:
 loopLinesParser
@@ -68,27 +68,27 @@ loopLinesParser
  description Iterate over the provided lines.
  catchAllParser loopLineParser
  loopLineParser
-  catchAllCellType stringCell
+  catchAllAtomType stringAtom
  javascript
   get items() {
    return this.map(particle => particle.asString)
   }
 
-loopWordsParser
+loopAtomsParser
  popularity 0.000024
- crux words
+ crux atoms
  extends abstractItemsProviderParser
- catchAllCellType stringCell
- description Iterate over the provided words.
+ catchAllAtomType stringAtom
+ description Iterate over the provided atoms.
  javascript
   get items() {
-   return this.getWordsFrom(1)
+   return this.getAtomsFrom(1)
   }
 
 loopTagsParser
  crux tags
  extends abstractItemsProviderParser
- catchAllCellType tagWithOptionalFolderCell
+ catchAllAtomType tagWithOptionalFolderAtom
  description Set this to iterate over scroll files in a folder. Provide both the folder and group name like this: [folder]/[tag]
  javascript
   get items() {

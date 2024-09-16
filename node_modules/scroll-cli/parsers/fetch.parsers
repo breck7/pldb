@@ -2,16 +2,16 @@ fetchParser
  description Download URL to disk.
  extends abstractBuildCommandParser
  cruxFromId
- cells preBuildCommandWordCell urlCell
+ atoms preBuildCommandAtom urlAtom
  example
   fetch https://breckyunits.com/posts.csv
   fetch https://breckyunits.com/posts.csv renamed.csv
  javascript
   get url() {
-    return this.getWord(1)
+    return this.getAtom(1)
   }
   get filename() {
-    return this.getWord(2) || new URL(this.url).pathname.split('/').pop()
+    return this.getAtom(2) || new URL(this.url).pathname.split('/').pop()
   }
   get fullDiskPath() {
     return require("path").join(this.parent.file.folderPath, this.filename)

@@ -7,7 +7,7 @@ captionAftertextParser
 
 abstractCaptionedParser
  extends abstractScrollParser
- cells commandWordCell urlCell
+ atoms cueAtom urlAtom
  inScope captionAftertextParser slashCommentParser
  cruxFromId
  javascript
@@ -27,7 +27,7 @@ openGraphParser
  // todo: fix Parsers scope issue so we can move this parser def under scrollImageParser
  description Add this line to make this the open graph image.
  cruxFromId
- cells commandWordCell
+ atoms cueAtom
 
 scrollImageParser
  crux image
@@ -35,7 +35,7 @@ scrollImageParser
  description An img tag.
  boolean isPopular true
  extends abstractCaptionedParser
- int wordIndex 1
+ int atomIndex 1
  example
   image screenshot.png
    caption A caption.
@@ -70,7 +70,7 @@ scrollImageParser
     return this.dimensions.width
   }
   get filename() {
-    return this.getWord(this.wordIndex)
+    return this.getAtom(this.atomIndex)
   }
   getFigureContent(compileSettings) {
    const file = this.root.file
@@ -92,6 +92,6 @@ scrollImageParser
 quickImageParser
  popularity 0.005788
  extends scrollImageParser
- cells urlCell
+ atoms urlAtom
  pattern ^[^\s]+\.(jpg|jpeg|png|gif|webp|svg|bmp)
- int wordIndex 0
+ int atomIndex 0

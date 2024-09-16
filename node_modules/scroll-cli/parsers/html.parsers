@@ -8,20 +8,20 @@ quickIncludeHtmlParser
  popularity 0.007524
  description Include an HTML file.
  extends abstractQuickIncludeParser
- cells urlCell
+ atoms urlAtom
  pattern ^[^\s]+\.(html|htm)$
  javascript
   compile() {
    return this.root.readFile(this.filename)
   }
 
-htmlAnyCell
- extends stringCell
+htmlAnyAtom
+ extends stringAtom
 
 abstractHtmlParser
  extends abstractScrollParser
  catchAllParser htmlLineParser
- catchAllCellType htmlAnyCell
+ catchAllAtomType htmlAnyAtom
  javascript
   compile() {
    return `${this.content ?? ""}${this.subparticlesToString()}`
@@ -35,10 +35,10 @@ scrollBrParser
  crux br
  description A break.
  extends abstractScrollParser
- catchAllCellType integerCell
+ catchAllAtomType integerAtom
  javascript
   compile() {
-   return `<br>`.repeat(parseInt(this.getWord(1) || 1))
+   return `<br>`.repeat(parseInt(this.getAtom(1) || 1))
   }
 
 htmlParser
@@ -49,13 +49,13 @@ htmlParser
 
 htmlLineParser
  popularity 0.005209
- catchAllCellType htmlAnyCell
+ catchAllAtomType htmlAnyAtom
  catchAllParser htmlLineParser
 
 htmlInlineParser
  popularity 0.005788
  extends abstractHtmlParser
- cells htmlAnyCell
+ atoms htmlAnyAtom
  pattern ^<
  description Inline HTML.
  boolean isPopular true
@@ -66,7 +66,7 @@ htmlInlineParser
 
 stumpContentParser
  popularity 0.102322
- catchAllCellType anyCell
+ catchAllAtomType anyAtom
 
 stumpParser
  cruxFromId

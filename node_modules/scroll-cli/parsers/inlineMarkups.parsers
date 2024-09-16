@@ -1,4 +1,4 @@
-inlineMarkupNameCell
+inlineMarkupNameAtom
  description Options to turn on some inline markups.
  enum bold italics code katex none
 
@@ -22,7 +22,7 @@ inlineMarkupsOnParser
   Hello *world*!
    inlineMarkupsOn bold
  extends abstractAftertextDirectiveParser
- catchAllCellType inlineMarkupNameCell
+ catchAllAtomType inlineMarkupNameAtom
  javascript
   get shouldMatchAll() {
    return true
@@ -37,11 +37,11 @@ inlineMarkupsOnParser
       return markups.filter(markup => this.content.includes(markup.name))
     if (root.has("inlineMarkups")) {
       root.getParticle("inlineMarkups").forEach(markup => {
-        const delimiter = markup.getWord(0)
-        const tag = markup.getWord(1)
+        const delimiter = markup.getAtom(0)
+        const tag = markup.getAtom(1)
         // todo: add support for providing custom functions for inline markups?
         // for example, !2+2! could run eval, or :about: could search a link map.
-        const attributes = markup.getWordsFrom(2).join(" ")
+        const attributes = markup.getAtomsFrom(2).join(" ")
         markups = markups.filter(mu => mu.delimiter !== delimiter) // Remove any overridden markups
         if (tag)
           markups.push({delimiter, tag, attributes})
@@ -80,8 +80,8 @@ inlineMarkupsOnParser
 inlineMarkupParser
  popularity 0.000169
  cruxFromId
- cells commandWordCell delimiterCell tagOrUrlCell
- catchAllCellType htmlAttributesCell
+ atoms cueAtom delimiterAtom tagOrUrlAtom
+ catchAllAtomType htmlAttributesAtom
  extends inlineMarkupsOnParser
  description Custom inline markup. for
  example
@@ -90,9 +90,9 @@ inlineMarkupParser
  javascript
   getMatches(text) {
    try {
-    const delimiter = this.getWord(1)
-    const tag = this.getWord(2)
-    const attributes = this.getWordsFrom(3).join(" ")
+    const delimiter = this.getAtom(1)
+    const tag = this.getAtom(2)
+    const attributes = this.getAtomsFrom(3).join(" ")
     return this.applyMarkup(text, {delimiter, tag, attributes})
    } catch (err) {
     console.error(err)

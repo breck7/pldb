@@ -130,8 +130,8 @@
     "foundationScoreRank": 28,
     "numberOfJobsEstimateRank": 22,
     "inboundLinksCountRank": 27,
-    "measurementsRank": 6,
-    "pldbScore": 24972,
+    "measurementsRank": 5,
+    "pldbScore": 24973,
     "index": 9
   },
   "php": {
@@ -265,8 +265,8 @@
     "foundationScoreRank": 34,
     "numberOfJobsEstimateRank": 17,
     "inboundLinksCountRank": 35,
-    "measurementsRank": 41,
-    "pldbScore": 24919,
+    "measurementsRank": 40,
+    "pldbScore": 24920,
     "index": 18
   },
   "bash": {
@@ -280,8 +280,8 @@
     "foundationScoreRank": 13,
     "numberOfJobsEstimateRank": 35,
     "inboundLinksCountRank": 13,
-    "measurementsRank": 37,
-    "pldbScore": 24908,
+    "measurementsRank": 36,
+    "pldbScore": 24909,
     "index": 19
   },
   "rust": {
@@ -329,6 +329,21 @@
     "pldbScore": 24872,
     "index": 22
   },
+  "matlab": {
+    "id": "matlab",
+    "numberOfUsersEstimate": 2661579,
+    "foundationScore": 14,
+    "numberOfJobsEstimate": 32228,
+    "inboundLinksCount": 16,
+    "measurements": 60,
+    "numberOfUsersEstimateRank": 9,
+    "foundationScoreRank": 78,
+    "numberOfJobsEstimateRank": 11,
+    "inboundLinksCountRank": 77,
+    "measurementsRank": 40,
+    "pldbScore": 24865,
+    "index": 23
+  },
   "lua": {
     "id": "lua",
     "numberOfUsersEstimate": 64497,
@@ -342,21 +357,6 @@
     "inboundLinksCountRank": 34,
     "measurementsRank": 17,
     "pldbScore": 24865,
-    "index": 23
-  },
-  "matlab": {
-    "id": "matlab",
-    "numberOfUsersEstimate": 2661579,
-    "foundationScore": 14,
-    "numberOfJobsEstimate": 32228,
-    "inboundLinksCount": 16,
-    "measurements": 60,
-    "numberOfUsersEstimateRank": 9,
-    "foundationScoreRank": 78,
-    "numberOfJobsEstimateRank": 11,
-    "inboundLinksCountRank": 77,
-    "measurementsRank": 41,
-    "pldbScore": 24864,
     "index": 24
   },
   "kotlin": {
@@ -610,8 +610,8 @@
     "foundationScoreRank": 59,
     "numberOfJobsEstimateRank": 95,
     "inboundLinksCountRank": 58,
-    "measurementsRank": 41,
-    "pldbScore": 24634,
+    "measurementsRank": 40,
+    "pldbScore": 24635,
     "index": 41
   },
   "visual-basic": {
@@ -755,7 +755,7 @@
     "foundationScore": 0,
     "numberOfJobsEstimate": 1931,
     "inboundLinksCount": 5,
-    "measurements": 61,
+    "measurements": 60,
     "numberOfUsersEstimateRank": 47,
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 49,
@@ -2294,21 +2294,6 @@
     "pldbScore": 23898,
     "index": 153
   },
-  "c3": {
-    "id": "c3",
-    "numberOfUsersEstimate": 1976,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 1,
-    "measurements": 109,
-    "numberOfUsersEstimateRank": 592,
-    "foundationScoreRank": 217,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 258,
-    "measurementsRank": 4,
-    "pldbScore": 23890,
-    "index": 154
-  },
   "wren": {
     "id": "wren",
     "numberOfUsersEstimate": 8601,
@@ -2321,6 +2306,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 437,
     "measurementsRank": 166,
+    "pldbScore": 23889,
+    "index": 154
+  },
+  "c3": {
+    "id": "c3",
+    "numberOfUsersEstimate": 1976,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 1,
+    "measurements": 108,
+    "numberOfUsersEstimateRank": 592,
+    "foundationScoreRank": 217,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 258,
+    "measurementsRank": 5,
     "pldbScore": 23889,
     "index": 155
   },
@@ -10655,7 +10655,7 @@
     "foundationScore": 0,
     "numberOfJobsEstimate": 0,
     "inboundLinksCount": 0,
-    "measurements": 112,
+    "measurements": 110,
     "numberOfUsersEstimateRank": 1635,
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
@@ -19535,7 +19535,7 @@
     "foundationScore": 1,
     "numberOfJobsEstimate": 0,
     "inboundLinksCount": 1,
-    "measurements": 129,
+    "measurements": 127,
     "numberOfUsersEstimateRank": 2994,
     "foundationScoreRank": 193,
     "numberOfJobsEstimateRank": 119,
@@ -19964,21 +19964,6 @@
     "pldbScore": 21467,
     "index": 1331
   },
-  "aardvark": {
-    "id": "aardvark",
-    "numberOfUsersEstimate": 19,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 65,
-    "numberOfUsersEstimateRank": 2807,
-    "foundationScoreRank": 217,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 437,
-    "measurementsRank": 34,
-    "pldbScore": 21466,
-    "index": 1332
-  },
   "odata": {
     "id": "odata",
     "numberOfUsersEstimate": 1241,
@@ -19992,7 +19977,7 @@
     "inboundLinksCountRank": 437,
     "measurementsRank": 2092,
     "pldbScore": 21465,
-    "index": 1333
+    "index": 1332
   },
   "cortex": {
     "id": "cortex",
@@ -20006,6 +19991,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 437,
     "measurementsRank": 1725,
+    "pldbScore": 21463,
+    "index": 1333
+  },
+  "aardvark": {
+    "id": "aardvark",
+    "numberOfUsersEstimate": 19,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 63,
+    "numberOfUsersEstimateRank": 2807,
+    "foundationScoreRank": 217,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 437,
+    "measurementsRank": 37,
     "pldbScore": 21463,
     "index": 1334
   },

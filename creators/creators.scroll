@@ -19,11 +19,11 @@ twitterParser
  extends abstractUrlMeasureParser
  float sortIndex 1.3
 bornParser
- cells measureNameCell yearCell
+ atoms measureNameAtom yearAtom
  extends abstractIntegerMeasureParser
  float sortIndex 1.4
 diedParser
- cells measureNameCell yearCell
+ atoms measureNameAtom yearAtom
  description Thank you for your gifts.
  extends abstractIntegerMeasureParser
  float sortIndex 1.41

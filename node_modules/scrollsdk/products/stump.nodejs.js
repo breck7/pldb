@@ -9,7 +9,7 @@
     createParserCombinator() {
       return new Particle.ParserCombinator(
         errorParser,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
           blockquote: htmlTagParser,
           colgroup: htmlTagParser,
           datalist: htmlTagParser,
@@ -133,30 +133,30 @@
     _getHtmlJoinByCharacter() {
       return ""
     }
-    static cachedHandParsersProgramRoot = new HandParsersProgram(`// Cell parsers
-anyCell
-keywordCell
-emptyCell
-extraCell
+    static cachedHandParsersProgramRoot = new HandParsersProgram(`// Atom parsers
+anyAtom
+keywordAtom
+emptyAtom
+extraAtom
  paint invalid
-anyHtmlContentCell
+anyHtmlContentAtom
  paint string
-attributeValueCell
+attributeValueAtom
  paint constant.language
-componentTagNameCell
+componentTagNameAtom
  paint variable.function
- extends keywordCell
-htmlTagNameCell
+ extends keywordAtom
+htmlTagNameAtom
  paint variable.function
- extends keywordCell
+ extends keywordAtom
  enum a abbr address area article aside b base bdi bdo blockquote body br button canvas caption code col colgroup datalist dd del details dfn dialog div dl dt em embed fieldset figure footer form h1 h2 h3 h4 h5 h6 head header hgroup hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param pre progress q rb rp rt rtc ruby s samp script section select small source span strong styleTag sub summary sup table tbody td template textarea tfoot th thead time titleTag tr track u ul var video wbr
-htmlAttributeNameCell
+htmlAttributeNameAtom
  paint entity.name.type
- extends keywordCell
+ extends keywordAtom
  enum accept accept-charset accesskey action align alt async autocomplete autofocus autoplay bgcolor border charset checked class color cols colspan content contenteditable controls coords datetime default defer dir dirname disabled download draggable dropzone enctype for formaction headers height hidden high href hreflang http-equiv id ismap kind lang list loop low max maxlength media method min multiple muted name novalidate onabort onafterprint onbeforeprint onbeforeunload onblur oncanplay oncanplaythrough onchange onclick oncontextmenu oncopy oncuechange oncut ondblclick ondrag ondragend ondragenter ondragleave ondragover ondragstart ondrop ondurationchange onemptied onended onerror onfocus onhashchange oninput oninvalid onkeydown onkeypress onkeyup onload onloadeddata onloadedmetadata onloadstart onmousedown onmousemove onmouseout onmouseover onmouseup onmousewheel onoffline ononline onpagehide onpageshow onpaste onpause onplay onplaying onpopstate onprogress onratechange onreset onresize onscroll onsearch onseeked onseeking onselect onstalled onstorage onsubmit onsuspend ontimeupdate ontoggle onunload onvolumechange onwaiting onwheel open optimum pattern placeholder poster preload property readonly rel required reversed rows rowspan sandbox scope selected shape size sizes spellcheck src srcdoc srclang srcset start step style tabindex target title translate type usemap value width wrap
-bernKeywordCell
+bernKeywordAtom
  enum bern
- extends keywordCell
+ extends keywordAtom
 
 // Line parsers
 stumpParser
@@ -178,7 +178,7 @@ stumpParser
 blankLineParser
  pattern ^$
  tags doNotSynthesize
- cells emptyCell
+ atoms emptyAtom
  javascript
   _toHtml() {
    return ""
@@ -186,18 +186,18 @@ blankLineParser
   getTextContent() {return ""}
 htmlTagParser
  inScope bernParser htmlTagParser htmlAttributeParser blankLineParser
- catchAllCellType anyHtmlContentCell
- cells htmlTagNameCell
+ catchAllAtomType anyHtmlContentAtom
+ atoms htmlTagNameAtom
  javascript
   isHtmlTagParser = true
   getTag() {
    // we need to remove the "Tag" bit to handle the style and title attribute/tag conflict.
-   const firstWord = this.firstWord
+   const firstAtom = this.firstAtom
    const map = {
     titleTag: "title",
     styleTag: "style"
    }
-   return map[firstWord] || firstWord
+   return map[firstAtom] || firstAtom
   }
   _getHtmlJoinByCharacter() {
    return ""
@@ -206,8 +206,8 @@ htmlTagParser
    return this._toHtml(undefined, true)
   }
   _getOneLiner() {
-   const oneLinerWords = this.getWordsFrom(1)
-   return oneLinerWords.length ? oneLinerWords.join(" ") : ""
+   const oneLinerAtoms = this.getAtomsFrom(1)
+   return oneLinerAtoms.length ? oneLinerAtoms.join(" ") : ""
   }
   getTextContent() {
     return this._getOneLiner()
@@ -219,7 +219,7 @@ htmlTagParser
     var elem = document.createElement(this.getTag())
     elem.setAttribute("stumpUid", this._getUid())
     this.filter(particle => particle.isAttributeParser)
-      .forEach(subparticle => elem.setAttribute(subparticle.firstWord, subparticle.content))
+      .forEach(subparticle => elem.setAttribute(subparticle.firstAtom, subparticle.content))
     elem.innerHTML = this.has("bern") ? this.getParticle("bern").subparticlesToString() : this._getOneLiner()
     this.filter(particle => particle.isHtmlTagParser)
       .forEach(subparticle => elem.appendChild(subparticle.domElement))
@@ -250,19 +250,19 @@ htmlTagParser
   }
   addClassToStumpParticle(className) {
    const classParser = this.touchParticle("class")
-   const words = classParser.getWordsFrom(1)
+   const atoms = classParser.getAtomsFrom(1)
    // note: we call add on shadow regardless, because at the moment stump may have gotten out of
    // sync with shadow, if things modified the dom. todo: cleanup.
    this.getShadow().addClassToShadow(className)
-   if (words.includes(className)) return this
-   words.push(className)
-   classParser.setContent(words.join(this.wordBreakSymbol))
+   if (atoms.includes(className)) return this
+   atoms.push(className)
+   classParser.setContent(atoms.join(this.atomBreakSymbol))
    return this
   }
   removeClassFromStumpParticle(className) {
    const classParser = this.getParticle("class")
    if (!classParser) return this
-   const newClasses = classParser.words.filter(word => word !== className)
+   const newClasses = classParser.atoms.filter(atom => atom !== className)
    if (!newClasses.length) classParser.destroy()
    else classParser.setContent(newClasses.join(" "))
    this.getShadow().removeClassFromShadow(className)
@@ -270,7 +270,7 @@ htmlTagParser
   }
   stumpParticleHasClass(className) {
    const classParser = this.getParticle("class")
-   return classParser && classParser.words.includes(className) ? true : false
+   return classParser && classParser.atoms.includes(className) ? true : false
   }
   isStumpParticleCheckbox() {
    return this.get("type") === "checkbox"
@@ -306,11 +306,11 @@ htmlTagParser
      .includes(line)
    )
   }
-  findStumpParticleByFirstWord(firstWord) {
-   return this._findStumpParticlesByBase(firstWord)[0]
+  findStumpParticleByFirstAtom(firstAtom) {
+   return this._findStumpParticlesByBase(firstAtom)[0]
   }
-  _findStumpParticlesByBase(firstWord) {
-   return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
+  _findStumpParticlesByBase(firstAtom) {
+   return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstAtom === firstAtom)
   }
   hasLine(line) {
    return this.getSubparticles().some(particle => particle.getLine() === line)
@@ -325,7 +325,7 @@ htmlTagParser
      particle.has("class") &&
      particle
       .getParticle("class")
-      .words
+      .atoms
       .includes(className)
    )
   }
@@ -359,7 +359,7 @@ errorParser
 componentDefinitionParser
  extends htmlTagParser
  pattern ^[a-zA-Z0-9_]+Component
- cells componentTagNameCell
+ atoms componentTagNameAtom
  javascript
   getTag() {
    return "div"
@@ -371,24 +371,24 @@ htmlAttributeParser
   }
   getTextContent() {return ""}
   getAttribute() {
-   return \` \${this.firstWord}="\${this.content}"\`
+   return \` \${this.firstAtom}="\${this.content}"\`
   }
  boolean isAttributeParser true
  boolean isTileAttribute true
  catchAllParser errorParser
- catchAllCellType attributeValueCell
- cells htmlAttributeNameCell
-stumpExtendedAttributeNameCell
- extends htmlAttributeNameCell
+ catchAllAtomType attributeValueAtom
+ atoms htmlAttributeNameAtom
+stumpExtendedAttributeNameAtom
+ extends htmlAttributeNameAtom
  enum collapse blurCommand changeCommand clickCommand contextMenuCommand doubleClickCommand keyUpCommand lineClickCommand lineShiftClickCommand shiftClickCommand
 stumpExtendedAttributeParser
  description Parser types not present in HTML but included in stump.
  extends htmlAttributeParser
- cells stumpExtendedAttributeNameCell
+ atoms stumpExtendedAttributeNameAtom
 lineOfHtmlContentParser
  boolean isTileAttribute true
  catchAllParser lineOfHtmlContentParser
- catchAllCellType anyHtmlContentCell
+ catchAllAtomType anyHtmlContentAtom
  javascript
   getTextContent() {return this.getLine()}
 bernParser
@@ -401,7 +401,7 @@ bernParser
    return this.subparticlesToString()
   }
   getTextContent() {return ""}
- cells bernKeywordCell`)
+ atoms bernKeywordAtom`)
     get handParsersProgram() {
       return this.constructor.cachedHandParsersProgramRoot
     }
@@ -409,8 +409,8 @@ bernParser
   }
 
   class blankLineParser extends ParserBackedParticle {
-    get emptyCell() {
-      return this.getWord(0)
+    get emptyAtom() {
+      return this.getAtom(0)
     }
     _toHtml() {
       return ""
@@ -424,7 +424,7 @@ bernParser
     createParserCombinator() {
       return new Particle.ParserCombinator(
         undefined,
-        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstWordMapAsObject()), {
+        Object.assign(Object.assign({}, super.createParserCombinator()._getFirstAtomMapAsObject()), {
           blockquote: htmlTagParser,
           colgroup: htmlTagParser,
           datalist: htmlTagParser,
@@ -716,21 +716,21 @@ bernParser
         ]
       )
     }
-    get htmlTagNameCell() {
-      return this.getWord(0)
+    get htmlTagNameAtom() {
+      return this.getAtom(0)
     }
-    get anyHtmlContentCell() {
-      return this.getWordsFrom(1)
+    get anyHtmlContentAtom() {
+      return this.getAtomsFrom(1)
     }
     isHtmlTagParser = true
     getTag() {
       // we need to remove the "Tag" bit to handle the style and title attribute/tag conflict.
-      const firstWord = this.firstWord
+      const firstAtom = this.firstAtom
       const map = {
         titleTag: "title",
         styleTag: "style"
       }
-      return map[firstWord] || firstWord
+      return map[firstAtom] || firstAtom
     }
     _getHtmlJoinByCharacter() {
       return ""
@@ -739,8 +739,8 @@ bernParser
       return this._toHtml(undefined, true)
     }
     _getOneLiner() {
-      const oneLinerWords = this.getWordsFrom(1)
-      return oneLinerWords.length ? oneLinerWords.join(" ") : ""
+      const oneLinerAtoms = this.getAtomsFrom(1)
+      return oneLinerAtoms.length ? oneLinerAtoms.join(" ") : ""
     }
     getTextContent() {
       return this._getOneLiner()
@@ -751,7 +751,7 @@ bernParser
     get domElement() {
       var elem = document.createElement(this.getTag())
       elem.setAttribute("stumpUid", this._getUid())
-      this.filter(particle => particle.isAttributeParser).forEach(subparticle => elem.setAttribute(subparticle.firstWord, subparticle.content))
+      this.filter(particle => particle.isAttributeParser).forEach(subparticle => elem.setAttribute(subparticle.firstAtom, subparticle.content))
       elem.innerHTML = this.has("bern") ? this.getParticle("bern").subparticlesToString() : this._getOneLiner()
       this.filter(particle => particle.isHtmlTagParser).forEach(subparticle => elem.appendChild(subparticle.domElement))
       return elem
@@ -781,19 +781,19 @@ bernParser
     }
     addClassToStumpParticle(className) {
       const classParser = this.touchParticle("class")
-      const words = classParser.getWordsFrom(1)
+      const atoms = classParser.getAtomsFrom(1)
       // note: we call add on shadow regardless, because at the moment stump may have gotten out of
       // sync with shadow, if things modified the dom. todo: cleanup.
       this.getShadow().addClassToShadow(className)
-      if (words.includes(className)) return this
-      words.push(className)
-      classParser.setContent(words.join(this.wordBreakSymbol))
+      if (atoms.includes(className)) return this
+      atoms.push(className)
+      classParser.setContent(atoms.join(this.atomBreakSymbol))
       return this
     }
     removeClassFromStumpParticle(className) {
       const classParser = this.getParticle("class")
       if (!classParser) return this
-      const newClasses = classParser.words.filter(word => word !== className)
+      const newClasses = classParser.atoms.filter(atom => atom !== className)
       if (!newClasses.length) classParser.destroy()
       else classParser.setContent(newClasses.join(" "))
       this.getShadow().removeClassFromShadow(className)
@@ -801,7 +801,7 @@ bernParser
     }
     stumpParticleHasClass(className) {
       const classParser = this.getParticle("class")
-      return classParser && classParser.words.includes(className) ? true : false
+      return classParser && classParser.atoms.includes(className) ? true : false
     }
     isStumpParticleCheckbox() {
       return this.get("type") === "checkbox"
@@ -837,11 +837,11 @@ bernParser
           .includes(line)
       )
     }
-    findStumpParticleByFirstWord(firstWord) {
-      return this._findStumpParticlesByBase(firstWord)[0]
+    findStumpParticleByFirstAtom(firstAtom) {
+      return this._findStumpParticlesByBase(firstAtom)[0]
     }
-    _findStumpParticlesByBase(firstWord) {
-      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstWord === firstWord)
+    _findStumpParticlesByBase(firstAtom) {
+      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.firstAtom === firstAtom)
     }
     hasLine(line) {
       return this.getSubparticles().some(particle => particle.getLine() === line)
@@ -850,7 +850,7 @@ bernParser
       return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.hasLine(line))
     }
     findStumpParticlesWithClass(className) {
-      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.has("class") && particle.getParticle("class").words.includes(className))
+      return this.topDownArray.filter(particle => particle.doesExtend("htmlTagParser") && particle.has("class") && particle.getParticle("class").atoms.includes(className))
     }
     getShadowClass() {
       return this.parent.getShadowClass()
@@ -886,8 +886,8 @@ bernParser
   }
 
   class componentDefinitionParser extends htmlTagParser {
-    get componentTagNameCell() {
-      return this.getWord(0)
+    get componentTagNameAtom() {
+      return this.getAtom(0)
     }
     getTag() {
       return "div"
@@ -898,11 +898,11 @@ bernParser
     createParserCombinator() {
       return new Particle.ParserCombinator(errorParser, undefined, undefined)
     }
-    get htmlAttributeNameCell() {
-      return this.getWord(0)
+    get htmlAttributeNameAtom() {
+      return this.getAtom(0)
     }
-    get attributeValueCell() {
-      return this.getWordsFrom(1)
+    get attributeValueAtom() {
+      return this.getAtomsFrom(1)
     }
     get isTileAttribute() {
       return true
@@ -917,13 +917,13 @@ bernParser
       return ""
     }
     getAttribute() {
-      return ` ${this.firstWord}="${this.content}"`
+      return ` ${this.firstAtom}="${this.content}"`
     }
   }
 
   class stumpExtendedAttributeParser extends htmlAttributeParser {
-    get stumpExtendedAttributeNameCell() {
-      return this.getWord(0)
+    get stumpExtendedAttributeNameAtom() {
+      return this.getAtom(0)
     }
   }
 
@@ -931,8 +931,8 @@ bernParser
     createParserCombinator() {
       return new Particle.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
     }
-    get anyHtmlContentCell() {
-      return this.getWordsFrom(0)
+    get anyHtmlContentAtom() {
+      return this.getAtomsFrom(0)
     }
     get isTileAttribute() {
       return true
@@ -946,8 +946,8 @@ bernParser
     createParserCombinator() {
       return new Particle.ParserCombinator(lineOfHtmlContentParser, undefined, undefined)
     }
-    get bernKeywordCell() {
-      return this.getWord(0)
+    get bernKeywordAtom() {
+      return this.getAtom(0)
     }
     get isTileAttribute() {
       return true

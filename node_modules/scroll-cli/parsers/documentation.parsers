@@ -2,7 +2,7 @@ belowAsCodeParser
  popularity 0.000651
  description Print code below.
  extends abstractScrollParser
- catchAllCellType integerCell
+ catchAllAtomType integerAtom
  cruxFromId
  javascript
   method = "next"
@@ -26,7 +26,7 @@ belowAsCodeParser
    return `<code class="scrollCodeBlock">${this.code.replace(/\</g, "&lt;")}</code>`
   }
   get howMany() {
-    let howMany = parseInt(this.getWord(1))
+    let howMany = parseInt(this.getAtom(1))
    if (!howMany || isNaN(howMany)) howMany = 1
    return howMany
   }
@@ -34,7 +34,7 @@ belowAsCodeParser
 belowAsCodeUntilParser
  description Print code above until match.
  extends belowAsCodeParser
- catchAllCellType anyCell
+ catchAllAtomType anyAtom
  example
   belowAsCode
   counter 1 second

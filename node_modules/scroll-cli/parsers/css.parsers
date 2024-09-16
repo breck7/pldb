@@ -3,11 +3,11 @@ buildCssParser
  description Compile to CSS file.
  extends abstractBuildCommandParser
 
-cssAnyCell
- extends anyCell
+cssAnyAtom
+ extends anyAtom
 cssLineParser
  popularity 0.002870
- catchAllCellType cssAnyCell
+ catchAllAtomType cssAnyAtom
  catchAllParser cssLineParser
 cssParser
  popularity 0.007211
@@ -15,7 +15,7 @@ cssParser
  description A style tag.
  cruxFromId
  catchAllParser cssLineParser
- catchAllCellType cssAnyCell
+ catchAllAtomType cssAnyAtom
  javascript
   compile() {
    return `<style>${this.css}</style>`
@@ -31,7 +31,7 @@ quickCssParser
  popularity 0.007524
  description Make a CSS tag.
  extends abstractQuickIncludeParser
- cells urlCell
+ atoms urlAtom
  pattern ^[^\s]+\.(css)$
  javascript
   compile() {

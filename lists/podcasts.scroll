@@ -41,7 +41,7 @@ creatorsParser
  float sortIndex 1.3
  listDelimiter  and
 startedParser
- cells measureNameCell yearCell
+ atoms measureNameAtom yearAtom
  description Year podcast began.
  extends abstractIntegerMeasureParser
  float sortIndex 1.4
@@ -57,8 +57,8 @@ abstractCountParser
 abstractQuickLinkParser
  boolean isComputed true
  extends abstractUrlMeasureParser
- cells urlCell
- catchAllCellType integerCell
+ atoms urlAtom
+ catchAllAtomType integerAtom
 
 appleLinkParser
  pattern ^(https\:\/\/podcasts\.apple\.com|appleLink)
@@ -71,7 +71,7 @@ appleLinkParser
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
     const hit = concept.find(particle => particle.getLine().startsWith("https://podcasts.apple.com/"))
-    return hit ? hit.firstWord : ""
+    return hit ? hit.firstAtom : ""
   }
 
 appleParser
@@ -97,7 +97,7 @@ youtubeLinkParser
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
     const hit = concept.find(particle => particle.getLine().startsWith("https://www.youtube.com/"))
-    return hit ? hit.firstWord : ""
+    return hit ? hit.firstAtom : ""
   }
 
 pldbYoutubeParser

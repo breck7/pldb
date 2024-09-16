@@ -10,16 +10,16 @@ ohayoCodeParser
 observableParser
  extends abstractScrollParser
  cruxFromId
- cells commandWordCell urlCell
+ atoms cueAtom urlAtom
  description Provide a direct link to analyze this data in Observable.
  javascript
   compile() {
-   return `<div class="scrollQuote">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
+   return `<div class="scrollQuote">Analyze this data yourself in <a href="${this.getAtom(1)}">Observable</a></div>`
   }
 bashParser
  cruxFromId
  description Run a bash oneliner via nodejs and dumps stdout to pre tag.
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  extends abstractScrollParser
  javascript
   compile() {
@@ -48,7 +48,7 @@ monacoEditorParser
     require(["vs/editor/editor.main"], function() {
       monaco.editor.create(document.getElementById('monacoContainer'), {
           value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
-          language: '${this.getWord(1)}',
+          language: '${this.getAtom(1)}',
           minimap: {
             enabled: false
         },

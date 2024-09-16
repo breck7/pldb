@@ -26,7 +26,7 @@ abstractCustomListItemParser
  extends listAftertextParser
  javascript
   get requireOnce() {
-    return `<style>\n.${this.constructor.name} li::marker {content: "${this.firstWord} ";}\n</style>`
+    return `<style>\n.${this.constructor.name} li::marker {content: "${this.firstAtom} ";}\n</style>`
   }
   get attributes() {
     return `class="${this.constructor.name}"`
@@ -41,4 +41,4 @@ orderedListAftertextParser
  pattern ^\d+\. 
  javascript
   listType = "ol"
-  get attributes() { return ` start="${this.getWord(0)}"`}
+  get attributes() { return ` start="${this.getAtom(0)}"`}

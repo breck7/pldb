@@ -103,7 +103,7 @@ name `
 
   // todo: can we use parsersBundle from scroll.js?
   buildParsersFileCommand() {
-    const parserFilenames = `parsers/cellTypes.parsers
+    const parserFilenames = `parsers/atomTypes.parsers
 parsers/root.parsers
 parsers/build.parsers
 parsers/comments.parsers

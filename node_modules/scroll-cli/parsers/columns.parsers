@@ -2,7 +2,7 @@ thinColumnsParser
  popularity 0.003690
  extends abstractAftertextParser
  cruxFromId
- catchAllCellType integerCell
+ catchAllAtomType integerAtom
  description Thin columns.
  javascript
   compileEmbeddedVersion() {
@@ -18,7 +18,7 @@ thinColumnsParser
    return stackContents + `<div class="scrollColumns" style="column-width:${columnWidth}ch;column-count:${maxColumns};max-width:${maxTotalWidth}ch;">`
   }
   get maxColumns() {
-    return this.singleColumn ? 1 : parseInt(this.getWord(1) ?? 10)
+    return this.singleColumn ? 1 : parseInt(this.getAtom(1) ?? 10)
   }
 
 wideColumnsParser

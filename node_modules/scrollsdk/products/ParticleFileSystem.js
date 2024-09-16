@@ -165,14 +165,14 @@ class ParticleFileSystem {
   }
   _getOneParsersParserFromFiles(filePaths, baseParsersCode) {
     const parserDefinitionRegex = /^[a-zA-Z0-9_]+Parser/
-    const cellDefinitionRegex = /^[a-zA-Z0-9_]+Cell/
+    const atomDefinitionRegex = /^[a-zA-Z0-9_]+Atom/
     const asOneFile = filePaths
       .map(filePath => {
         const content = this._storage.read(filePath)
         if (filePath.endsWith(PARSERS_EXTENSION)) return content
         // Strip scroll content
         return new Particle(content)
-          .filter(particle => particle.getLine().match(parserDefinitionRegex) || particle.getLine().match(cellDefinitionRegex))
+          .filter(particle => particle.getLine().match(parserDefinitionRegex) || particle.getLine().match(atomDefinitionRegex))
           .map(particle => particle.asString)
           .join("\n")
       })

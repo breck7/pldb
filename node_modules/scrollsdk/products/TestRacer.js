@@ -215,7 +215,7 @@ class TestRacer {
     if (!Object.keys(this._sessionFilesFailed).length) return ""
     return `
  failures
-${new Particle(this._sessionFilesFailed).forEach(row => row.forEach(line => line.deleteWordAt(0))).toString(2)}`
+${new Particle(this._sessionFilesFailed).forEach(row => row.forEach(line => line.deleteAtomAt(0))).toString(2)}`
   }
   _emitSessionFinishMessage() {
     const skipped = this._getSkippedBlockNames()

@@ -4,16 +4,16 @@ scrollCounterParser
  crux counter
  example
   counter 4.5 Babies Born
- cells commandWordCell numberCell
+ atoms cueAtom numberAtom
  javascript
   compile() {
    const line = this.getLine()
-   const words = line.split(" ")
-   words.shift() // drop the counter word
-   const perSecond = parseFloat(words.shift()) // get number
+   const atoms = line.split(" ")
+   atoms.shift() // drop the counter atom
+   const perSecond = parseFloat(atoms.shift()) // get number
    const increment = perSecond/10
    const id = this._getUid()
-   this.setLine(`* <span id="counter${id}" title="0">0</span><script>setInterval(()=>{ const el = document.getElementById('counter${id}'); el.title = parseFloat(el.title) + ${increment}; el.textContent = Math.floor(parseFloat(el.title)).toLocaleString()}, 100)</script> ` + words.join(" "))
+   this.setLine(`* <span id="counter${id}" title="0">0</span><script>setInterval(()=>{ const el = document.getElementById('counter${id}'); el.title = parseFloat(el.title) + ${increment}; el.textContent = Math.floor(parseFloat(el.title)).toLocaleString()}, 100)</script> ` + atoms.join(" "))
    const html = super.compile()
    this.setLine(line)
    return html

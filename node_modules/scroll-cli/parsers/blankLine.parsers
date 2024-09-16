@@ -1,7 +1,7 @@
 blankLineParser
  popularity 0.308149
  description Print nothing. Break section.
- cells blankCell
+ atoms blankAtom
  boolean isPopular true
  javascript
   compile() {

@@ -7,4 +7,4 @@ permalinkParser
  popularity 0.000265
  description Override output filename.
  extends abstractTopLevelSingleMetaParser
- cells metaCommandWordCell permalinkCell
+ atoms metaCommandAtom permalinkAtom

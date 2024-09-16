@@ -1,6 +1,6 @@
 Name,Values,Coverage,Question,Example,Type,Source,SortIndex,IsComputed,IsRequired,IsConceptDelimiter,Crux
 id,27,100%,What is the ID of this concept?,CoRecursive,string,,1,false,true,true,
-website,26,96%,A measure that contains a single word.,https://corecursive.com,string,,1.1,false,,,
+website,26,96%,A measure that contains a single atom.,https://corecursive.com,string,,1.1,false,,,
 description,27,100%,A brief description of the podcast.,The stories and people behind the code. Hear stories of software development from interesting people.,string,,1.2,false,,,
 creators,27,100%,The creators of the podcast.,Adam Gordon Bell,string,,1.3,false,,,
 started,27,100%,Year podcast began.,2018,number,,1.4,false,,,

@@ -1,13 +1,13 @@
-buildCommandWordCell
- extends commandWordCell
- description Give build command words their own color.
+buildCommandAtom
+ extends cueAtom
+ description Give build command atoms their own color.
  paint constant
 
 abstractBuildCommandParser
  extends abstractScrollParser
  cruxFromId
- cells buildCommandWordCell
- catchAllCellType filePathCell
+ atoms buildCommandAtom
+ catchAllAtomType filePathAtom
  inScope slashCommentParser
  javascript
   isTopMatter = true

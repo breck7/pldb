@@ -2,11 +2,11 @@ redirectToParser
  popularity 0.000072
  description HTML redirect tag.
  extends abstractScrollParser
- cells commandWordCell urlCell
+ atoms cueAtom urlAtom
  cruxFromId
  example
   redirectTo https://scroll.pub/releaseNotes.html
  javascript
   compile() {
-   return `<meta http-equiv="Refresh" content="0; url='${this.getWord(1)}'" />`
+   return `<meta http-equiv="Refresh" content="0; url='${this.getAtom(1)}'" />`
   }

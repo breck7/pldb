@@ -9,7 +9,7 @@ plainTextParser
  cruxFromId
  extends abstractScrollParser
  catchAllParser plainTextLineParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  javascript
   compile() {
    return this.compileTxt()
@@ -29,7 +29,7 @@ plainTextOnlyParser
 
 plainTextLineParser
  popularity 0.000121
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  catchAllParser plainTextLineParser
 
 printFormatLinksParser

@@ -1,8 +1,8 @@
-tagCell
- extends permalinkCell
-tagWithOptionalFolderCell
+tagAtom
+ extends permalinkAtom
+tagWithOptionalFolderAtom
  description A group name optionally combined with a folder path. Only used when referencing tags, not in posts.
- extends stringCell
+ extends stringAtom
 scrollTagsParser
  popularity 0.006801
  crux tags
@@ -10,4 +10,4 @@ scrollTagsParser
  example
   tags All
  extends abstractTopLevelSingleMetaParser
- catchAllCellType tagCell
+ catchAllAtomType tagAtom

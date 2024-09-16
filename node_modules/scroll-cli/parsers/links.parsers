@@ -2,21 +2,21 @@ linkifyParser
  description Use this to disable linkify on the text.
  extends abstractAftertextDirectiveParser
  cruxFromId
- cells commandWordCell booleanCell
+ atoms cueAtom booleanAtom
 
 linkTargetParser
  popularity 0.000024
  extends abstractHtmlAttributeParser
  description If you want to set the target of the link. To "_blank", for example.
  crux target
- cells commandWordCell anyCell
+ atoms cueAtom anyAtom
 
 linkTitleParser
  popularity 0.000048
  description If you want to set the title of the link.
  crux title
- cells commandWordCell
- catchAllCellType anyCell
+ atoms cueAtom
+ catchAllAtomType anyAtom
  example
   * This report showed the treatment had a big impact.
    https://example.com/report This report.
@@ -24,18 +24,18 @@ linkTitleParser
 
 programLinkParser
  popularity 0.000531
- catchAllCellType codeCell
+ catchAllAtomType codeAtom
 
 linkParser
  popularity 0.008706
  extends abstractMarkupParser
  description Put the matching text in an <a> tag.
- cells commandWordCell urlCell
+ atoms cueAtom urlAtom
  inScope linkTitleParser linkTargetParser commentParser
  programParser
   description Anything here will be URI encoded and then appended to the link.
   cruxFromId
-  cells commandWordCell
+  atoms cueAtom
   catchAllParser programLinkParser
   javascript
    get encoded() {
@@ -54,7 +54,7 @@ linkParser
    return baseLink
   }
   get baseLink() {
-   const link = this.getWord(1)
+   const link = this.getAtom(1)
    const isAbsoluteLink = link.includes("://")
    if (isAbsoluteLink) return link
    const relativePath = this.parent.compileSettings?.relativePath || ""
@@ -69,7 +69,7 @@ linkParser
    })
    return attrs
   }
-  patternStartsAtWord = 2
+  patternStartsAtAtom = 2
 
 emailLinkParser
  popularity 0.000048
@@ -85,9 +85,9 @@ quickLinkParser
  popularity 0.029228
  pattern ^https?\:
  extends linkParser
- cells urlCell
+ atoms urlAtom
  javascript
   get link() {
-   return this.firstWord
+   return this.firstAtom
   }
-  patternStartsAtWord = 1
+  patternStartsAtAtom = 1

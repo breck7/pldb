@@ -1,0 +1,115 @@
+// Basic atom types
+blankAtom
+anyAtom
+
+// Enum atom types
+enumAtom
+ paint constant.language
+booleanAtom
+ enum true false
+ extends enumAtom
+
+// String atom types
+stringAtom
+ paint string
+
+atomAtom
+ paint string
+ description A non-empty single atom string.
+ regex .+
+
+columnNameAtom
+ extends stringAtom
+
+semanticVersionAtom
+ paint string
+ description A 3 part sem version string like 1.2.1
+
+// Date atom types
+dateAtom
+ paint string
+
+// Numeric atom types
+numberAtom
+ paint constant.numeric
+integerAtom
+ extends numberAtom
+ paint constant.numeric.integer
+floatAtom
+ extends numberAtom
+ paint constant.numeric.float
+percentAtom
+ paint constant.numeric.float
+ extends stringAtom
+ // todo: this currently extends from stringAtom b/c scrollsdk needs to be fixed. seems like if extending from number then the hard coded number typescript regex takes precedence over a custom regex
+countAtom
+ extends integerAtom
+yearAtom
+ extends integerAtom
+
+// Scroll atom types
+cueAtom
+ description A atom that indicates a certain parser to use.
+ paint keyword
+
+preBuildCommandAtom
+ extends cueAtom
+ description Give build command atoms their own color.
+ paint constant.character.escape
+
+commentAtom
+ paint comment
+
+delimiterAtom
+ description String to use as a delimiter.
+ paint string
+
+codeAtom
+ paint comment
+
+bulletPointAtom
+ description Any token used as a bullet point such as "-" or "1." or ">"
+ paint keyword
+
+comparisonAtom
+ enum < > <= >= = != includes doesNotInclude empty notEmpty
+ paint constant
+
+personNameAtom
+ extends stringAtom
+
+// Link atom types
+urlAtom
+ paint constant.language
+absoluteUrlAtom
+ paint constant.language
+ regex (ftp|https?)://.+
+
+emailAddressAtom
+ extends stringAtom
+
+// File system atom types
+permalinkAtom
+ paint string
+ description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
+
+filePathAtom
+ extends stringAtom
+
+// HTML atom types
+tagOrUrlAtom
+ description An HTML tag or a url.
+ paint constant.language
+
+htmlAttributesAtom
+ paint comment
+
+htmlTagAtom
+ paint constant.language
+ enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
+
+classNameAtom
+ paint constant
+
+htmlIdAtom
+ extends anyAtom

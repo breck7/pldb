@@ -2,7 +2,7 @@ quickScriptParser
  popularity 0.007524
  description Make a Javascript tag.
  extends abstractQuickIncludeParser
- cells urlCell
+ atoms urlAtom
  pattern ^[^\s]+\.(js)$
  javascript
   compile() {

@@ -2,7 +2,7 @@
 
 versionParser
  crux 📦
- cells commandWordCell semanticVersionCell dateCell
+ atoms cueAtom semanticVersionAtom dateAtom
  description What is the semantic version number?
  extends h1Parser
  // Todo: mixins in Parsers would make this easier.
@@ -12,7 +12,7 @@ versionParser
  float sortIndex 1
  javascript
   get measureValue() {
-    return this.getWord(1)
+    return this.getAtom(1)
   }
   measureName = "version"
 
@@ -36,7 +36,7 @@ releaseDateParser
  float sortIndex 1.1
  javascript
   computeValue(concept) {
-    return concept.particleAt(0).getWord(2)
+    return concept.particleAt(0).getAtom(2)
   }
 
 abstractSummaryParser

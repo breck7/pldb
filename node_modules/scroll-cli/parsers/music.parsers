@@ -13,6 +13,6 @@ scrollMusicParser
 quickSoundParser
  popularity 0.000024
  extends scrollMusicParser
- cells urlCell
+ atoms urlAtom
  pattern ^[^\s]+\.(mp3|wav|ogg|aac|m4a|flac)
- int wordIndex 0
+ int atomIndex 0

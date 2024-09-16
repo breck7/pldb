@@ -20,15 +20,15 @@ keyboardNavParser
  description Make left and right navigate files.
  extends abstractScrollParser
  cruxFromId
- catchAllCellType urlCell
+ catchAllAtomType urlAtom
  javascript
   compileEmbeddedVersion() {
    return ""
   }
   compile() {
    const file = this.root.file
-   const linkToPrevious = this.getWord(1) ?? file.linkToPrevious
-   const linkToNext = this.getWord(2) ?? file.linkToNext
+   const linkToPrevious = this.getAtom(1) ?? file.linkToPrevious
+   const linkToNext = this.getAtom(2) ?? file.linkToNext
    const script = `<script>document.addEventListener('keydown', function(event) {
     if (document.activeElement !== document.body) return
     if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut

@@ -4,7 +4,7 @@ viewSourceBaseUrlParser
  extends abstractUrlSettingParser
 
 viewSourceUrlParser
- catchAllCellType urlCell
+ catchAllAtomType urlAtom
  description Override source link.
  extends abstractTopLevelSingleMetaParser
 

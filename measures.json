@@ -176,10 +176,9 @@
   },
   {
     "Name": "lastActivity",
-    "Values": 5016,
-    "Coverage": "100%",
+    "Values": 0,
+    "Coverage": "0%",
     "Question": "In our data on this entity, what year is the most recent activity?",
-    "Example": "2024",
     "Type": "number",
     "SortIndex": 1.55,
     "IsComputed": true
@@ -3296,12 +3295,11 @@
     "IsComputed": false
   },
   {
-    "Name": "hasReservedWords",
-    "Values": 5,
+    "Name": "hasReservedAtoms",
+    "Values": 0,
     "Coverage": "0%",
     "Question": "Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?",
-    "Example": "true",
-    "Type": "boolean",
+    "Type": "text",
     "SortIndex": 7,
     "IsComputed": false
   },
@@ -3336,12 +3334,11 @@
     "IsComputed": false
   },
   {
-    "Name": "hasSelfOrThisWord",
-    "Values": 3,
+    "Name": "hasSelfOrThisAtom",
+    "Values": 0,
     "Coverage": "0%",
     "Question": "Does a language have a keyword or syntax to refer to the current instance?",
-    "Example": "true",
-    "Type": "boolean",
+    "Type": "text",
     "SortIndex": 7,
     "IsComputed": false
   },

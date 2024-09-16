@@ -189,9 +189,6 @@ hasTryCatch false
 hasStatementTerminatorCharacter true
  if x: x++, x*=2, return
  
-hasSelfOrThisWord true
- self.Remove
- .remove
 hasRequiredMainFunction true
  main
   "hello world"
@@ -288,11 +285,6 @@ hasSingleTypeArrays true
  |array of string| s
  s <~ "abc" // ok
  s <~ 1 // fail
-hasReservedWords false
- || return = 123
- || if = 456
- if if == 456
-  return return
 hasFunctionOverloading true
  function volume (|float| a, |float|)
   return a*a*a
@@ -370,3 +362,12 @@ githubLanguage Speedie
  fileExtensions spd scproj
  type programming
  tmScope source.spd
+
+hasSelfOrThisWord true
+ self.Remove
+ .remove
+hasReservedWords false
+ || return = 123
+ || if = 456
+ if if == 456
+  return return

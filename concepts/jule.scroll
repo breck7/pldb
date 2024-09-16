@@ -285,8 +285,6 @@ hasGotos true
  goto a_label
 hasRequiredMainFunction true
  fn main() {}
-hasSelfOrThisWord true
- self
 hasBoundedCheckedArrays true
  let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
 hasTernaryOperators false
@@ -313,7 +311,6 @@ hasAsyncAwait false
 hasTryCatch false
 hasMemberVariables true
 hasRegularExpressionsSyntaxSugar false
-hasReservedWords true
 hasSwitch true
  match X {
  | Y:         outln("X is Y")
@@ -367,3 +364,7 @@ hasImports true
 
 domainName jule.dev
  registered 2022
+
+hasSelfOrThisWord true
+ self
+hasReservedWords true

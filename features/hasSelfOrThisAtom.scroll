@@ -1,0 +1,28 @@
+import header.scroll
+
+title hasSelfOrThisAtom - language feature
+printTitle hasSelfOrThisAtom
+
+html
+ <a class="trueBaseThemePreviousItem" href="hasScientificNotation.html">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="hasSemanticIndentation.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+
+mediumColumns 1
+
+***
+
+* Languages *with* hasSelfOrThisAtom include 
+
+***
+
+View all concepts with or missing a *hasSelfOrThisAtom* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSelfOrThisAtom&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSelfOrThisAtom%22%2C%22origData%22%3A%22hasSelfOrThisAtom%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSelfOrThisAtom&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSelfOrThisAtom%22%2C%22origData%22%3A%22hasSelfOrThisAtom%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+endColumns
+
+keyboardNav hasScientificNotation.html hasSemanticIndentation.html
+
+../footer.scroll

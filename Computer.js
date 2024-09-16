@@ -152,12 +152,12 @@ class ConceptPage {
     return this.parsed.id
   }
 
-  get(word) {
-    return this.particle.get(word)
+  get(Atom) {
+    return this.particle.get(Atom)
   }
 
-  getParticle(word) {
-    return this.particle.getParticle(word)
+  getParticle(Atom) {
+    return this.particle.getParticle(Atom)
   }
 
   get filePath() {
@@ -285,7 +285,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   get features() {
     const featuresMap = this.tables.featuresMap
-    return this.extended.filter(particle => featuresMap.has(particle.getWord(0)))
+    return this.extended.filter(particle => featuresMap.has(particle.getAtom(0)))
   }
 
   get featuresWithExamples() {
@@ -342,17 +342,17 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   get hasImportsPrediction() {
     const { keywords } = this
 
-    const words = ["import", "include", "require"]
+    const Atoms = ["import", "include", "require"]
 
-    for (let word of words) {
-      if (keywords.includes(word)) {
-        const example = this.allExamples.find(code => code.code.includes(word))
+    for (let Atom of Atoms) {
+      if (keywords.includes(Atom)) {
+        const example = this.allExamples.find(code => code.code.includes(Atom))
 
         if (example) {
-          const exampleLine = example.code.split("\n").filter(line => line.includes(word))[0]
+          const exampleLine = example.code.split("\n").filter(line => line.includes(Atom))[0]
           return {
             value: true,
-            token: word,
+            token: Atom,
             example: exampleLine
           }
         } else {
@@ -362,10 +362,10 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     }
   }
 
-  makeSimpleKeywordPrediction(theWord) {
+  makeSimpleKeywordPrediction(theAtom) {
     const { keywords } = this
 
-    if (keywords.includes(theWord))
+    if (keywords.includes(theAtom))
       return {
         value: true
       }
@@ -454,7 +454,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
       examples.push({
         code: particle.subparticlesToString(),
         source: "the Hello World Collection",
-        link: `http://helloworldcollection.de/#` + particle.getWord(1)
+        link: `http://helloworldcollection.de/#` + particle.getAtom(1)
       })
     })
 
@@ -555,7 +555,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get lastActivity() {
-    return lodash.max(this.parsed.findAllWordsWithCellType("yearCell").map(word => parseInt(word.word)))
+    return lodash.max(this.parsed.findAllAtomsWithAtomType("yearAtom").map(Atom => parseInt(Atom.Atom)))
   }
 
   makeATag(id) {
@@ -690,9 +690,9 @@ table
     const { featuresMap } = this.tables
     const table = new Particle()
     features.forEach(particle => {
-      const feature = featuresMap.get(particle.getWord(0))
+      const feature = featuresMap.get(particle.getAtom(0))
       if (!feature) {
-        console.log(`warning: we need a features page for feature '${particle.getWord(0)}' found in '${id}'`)
+        console.log(`warning: we need a features page for feature '${particle.getAtom(0)}' found in '${id}'`)
         return
       }
 
@@ -1012,7 +1012,7 @@ ${maintainersLinks}
     if (githubRepo) {
       const stars = githubRepo.get("stars")
       const starMessage = stars ? ` and has ${numeral(stars).format("0,0")} stars` : ""
-      facts.push(`${title} is developed on <a href="${githubRepo.getWord(1)}">GitHub</a>${starMessage}`)
+      facts.push(`${title} is developed on <a href="${githubRepo.getAtom(1)}">GitHub</a>${starMessage}`)
     }
 
     const gource = this.get("gource")
@@ -1073,7 +1073,7 @@ ${maintainersLinks}
     if (conferences.length) {
       facts.push(
         `Recurring conference about ${title}: ${conferences.map(
-          particle => `<a href="${particle.getWord(1)}">${particle.getWordsFrom(2)}</a>`
+          particle => `<a href="${particle.getAtom(1)}">${particle.getAtomsFrom(2)}</a>`
         )}`
       )
     }
@@ -1360,10 +1360,10 @@ class Feature {
     return `../features/${this.permalink}`
   }
 
-  get(word) {
+  get(Atom) {
     // todo; fix this
-    // return this.measure[word]
-    return this.particle.getFrom(`string ${word}`)
+    // return this.measure[Atom]
+    return this.particle.getFrom(`string ${Atom}`)
   }
 
   get particle() {
@@ -1503,12 +1503,12 @@ const getMostRecentInt = (concept, pathToSet) => {
 }
 
 const getJoined = (row, keywords) => {
-  const words = keywords
-    .map(word => row[word] || "")
+  const Atoms = keywords
+    .map(Atom => row[Atom] || "")
     .filter(i => i)
     .join(" ")
     .split(" ")
-  return lodash.uniq(words).join(" ")
+  return lodash.uniq(Atoms).join(" ")
 }
 
 const groupByListValues = (listColumnName, rows, delimiter = " && ") => {
@@ -2038,7 +2038,7 @@ const computeds = {
   },
 
   lastActivity(concept) {
-    return lodash.max(concept.findAllWordsWithCellType("yearCell").map(word => parseInt(word.word)))
+    return lodash.max(concept.findAllAtomsWithAtomType("yearAtom").map(Atom => parseInt(Atom.Atom)))
   },
 
   isLanguage(concept) {

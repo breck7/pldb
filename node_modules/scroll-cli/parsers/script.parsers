@@ -2,17 +2,17 @@ buildJsParser
  description Compile to JS file.
  extends abstractBuildCommandParser
 
-scriptAnyCell
- extends anyCell
+scriptAnyAtom
+ extends anyAtom
 scriptLineParser
- catchAllCellType scriptAnyCell
+ catchAllAtomType scriptAnyAtom
  catchAllParser scriptLineParser
 scriptParser
  extends abstractScrollParser
  description Print script tag.
  cruxFromId
  catchAllParser scriptLineParser
- catchAllCellType scriptAnyCell
+ catchAllAtomType scriptAnyAtom
  javascript
   compile() {
    return `<script>${this.scriptContent}</script>`

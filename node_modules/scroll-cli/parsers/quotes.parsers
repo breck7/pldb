@@ -1,6 +1,6 @@
 quoteLineParser
  popularity 0.004172
- catchAllCellType anyCell
+ catchAllAtomType anyAtom
  catchAllParser quoteLineParser
 
 quoteParser

@@ -1,10 +1,10 @@
-javascriptCell
- extends stringCell
+javascriptAtom
+ extends stringAtom
 
 abstractVariableParser
  extends abstractScrollParser
- catchAllCellType stringCell
- cells preBuildCommandWordCell
+ catchAllAtomType stringAtom
+ atoms preBuildCommandAtom
  cruxFromId
  javascript
   isTopMatter = true
@@ -22,7 +22,7 @@ replaceParser
 replaceJsParser
  description Replace this with evaled JS.
  extends replaceParser
- catchAllCellType javascriptCell
+ catchAllAtomType javascriptAtom
  example
   replaceJs SUM 1+1
   * 1+1 = SUM
@@ -30,7 +30,7 @@ replaceJsParser
 replaceNodejsParser
  description Replace with evaled Node.JS.
  extends abstractVariableParser
- catchAllCellType javascriptCell
+ catchAllAtomType javascriptAtom
  baseParser blobParser
  example
   replaceNodejs

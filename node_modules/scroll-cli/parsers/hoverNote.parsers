@@ -1,6 +1,6 @@
 lineOfTextParser
  popularity 0.000289
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  boolean isTextParser true
 hoverNoteParser
  popularity 0.000265
@@ -8,10 +8,10 @@ hoverNoteParser
  cruxFromId
  extends classMarkupParser
  catchAllParser lineOfTextParser
- cells commandWordCell
+ atoms cueAtom
  javascript
   get pattern() {
-   return this.getWordsFrom(1).join(" ")
+   return this.getAtomsFrom(1).join(" ")
   }
   get attributes() {
    return [`class="scrollHoverNote"`, `title="${this.hoverNoteText}"`]

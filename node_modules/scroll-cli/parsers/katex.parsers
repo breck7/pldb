@@ -2,7 +2,7 @@
 katexParser
  popularity 0.001592
  extends abstractScrollWithRequirementsParser
- catchAllCellType codeCell
+ catchAllAtomType codeAtom
  catchAllParser lineOfCodeParser
  example
   katex

@@ -3,8 +3,8 @@ printAuthorsParser
  description Prints author(s) byline.
  boolean isPopular true
  extends abstractPrintMetaParser
- // todo: we need pattern matching added to sdk to support having no params or a url and personNameCell
- catchAllCellType anyCell
+ // todo: we need pattern matching added to sdk to support having no params or a url and personNameAtom
+ catchAllAtomType anyAtom
  example
   authors Breck Yunits
    https://breckyunits.com
@@ -27,7 +27,7 @@ authorsParser
   authors Breck Yunits
    https://breckyunits.com Breck Yunits
  // note: once we have mixins in Parsers, lets mixin the below from abstractTopLevelSingleMetaParser
- cells metaCommandWordCell
+ atoms metaCommandAtom
  javascript
   isTopMatter = true
   isSetterParser = true

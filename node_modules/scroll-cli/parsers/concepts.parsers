@@ -4,13 +4,13 @@ loadConceptsParser
  description Import all concepts in a folder.
  extends abstractBuildCommandParser
  cruxFromId
- cells preBuildCommandWordCell filePathCell
+ atoms preBuildCommandAtom filePathAtom
  javascript
   build() {
    const { Disk } = require("scrollsdk/products/Disk.node.js")
    const path = require("path")
    const {file} = this.parent
-   const folder = path.join(file.folderPath, this.getWord(1))
+   const folder = path.join(file.folderPath, this.getAtom(1))
    const importParticleRegex = /^(import .+|[a-zA-Z\_\-\.0-9\/]+\.(scroll|parsers)$)/gm
    const ONE_BIG_FILE = Disk.getFiles(folder).filter(file => file.endsWith(".scroll")).map(Disk.read).filter(str => /^id /mg.test(str)).join("\n\n").replace(/import .+/g, "")
     this.parent.concat(ONE_BIG_FILE)
@@ -27,4 +27,4 @@ buildConceptsParser
  extends abstractBuildCommandParser
  sortByParser
   cruxFromId
-  cells commandWordCell anyCell
+  atoms cueAtom anyAtom

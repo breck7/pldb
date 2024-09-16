@@ -41,7 +41,7 @@ metaTagsParser
   }
 
 htmlLangParser
- cells metaCommandWordCell stringCell
+ atoms metaCommandAtom stringAtom
  // for the <html lang=""> tag. If not specified will be "en". See https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
  description Override HTML lang attribute.
  extends abstractTopLevelSingleMetaParser

@@ -1,20 +1,20 @@
 scrollMediaLoopParser
  popularity 0.000048
  crux loop
- cells commandWordCell
+ atoms cueAtom
 scrollAutoplayParser
  crux autoplay
- cells commandWordCell
+ atoms cueAtom
 abstractMediaParser
  extends paragraphParser
  inScope scrollMediaLoopParser scrollAutoplayParser
- int wordIndex 1
+ int atomIndex 1
  javascript
   compileTxt() {
     return ""
   }
   get filename() {
-    return this.getWord(this.wordIndex)
+    return this.getAtom(this.atomIndex)
   }
   getAsHtmlAttribute(attr) {
     if (!this.has(attr)) return ""
@@ -22,7 +22,7 @@ abstractMediaParser
     return value ? `${attr}="${value}"` : attr
   }
   getAsHtmlAttributes(list) {
-    return list.map(word => this.getAsHtmlAttribute(word)).filter(i => i).join(" ")
+    return list.map(atom => this.getAsHtmlAttribute(atom)).filter(i => i).join(" ")
   }
   compile() {
     return `<${this.tag} src="${this.filename}" controls ${this.getAsHtmlAttributes("width height loop autoplay".split(" "))}></${this.tag}>`

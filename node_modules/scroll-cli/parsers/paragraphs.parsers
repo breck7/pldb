@@ -1,7 +1,7 @@
 paragraphParser
  // todo Perhaps rewrite this from scratch and move out of aftertext.
  extends abstractAftertextParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description A paragraph.
  boolean suggestInAutocomplete false
  cruxFromId
@@ -42,5 +42,5 @@ abstractIndentableParagraphParser
    return super.compile() + this.compileSubparticles()
   }
   compileTxt() {
-    return this.getWord(0) + " " + super.compileTxt()
+    return this.getAtom(0) + " " + super.compileTxt()
   }

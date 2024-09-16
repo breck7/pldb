@@ -1,16 +1,16 @@
 printUsageStatsParser
  popularity 0.000096
- // todo: if we include the word "Parser" in a crux, bad things seem to happen.
+ // todo: if we include the atom "Parser" in a crux, bad things seem to happen.
  description Parser usage stats for folder.
  extends abstractScrollParser
  cruxFromId
  javascript
   get stats() {
    const input = this.root.file.allScrollFiles.map(file => file.parserIds.join("\n")).join("\n")
-   const result = input.split('\n').reduce((acc, word) => (acc[word] = (acc[word] || 0) + 1, acc), {})
-   const rows = Object.entries(result).map(([word, count]) => { return {word, count}})
+   const result = input.split('\n').reduce((acc, atom) => (acc[atom] = (acc[atom] || 0) + 1, acc), {})
+   const rows = Object.entries(result).map(([atom, count]) => { return {atom, count}})
    const sorted = this.lodash.sortBy(rows, "count").reverse()
-   return "parserId uses\n" + sorted.map(row => `${row.word} ${row.count}`).join('\n')
+   return "parserId uses\n" + sorted.map(row => `${row.atom} ${row.count}`).join('\n')
   }
   get lodash() {
     return this.isNodeJs() ? require("lodash") : lodash
@@ -33,7 +33,7 @@ printUsageStatsParser
     return this.stats.replace(/ /g, ",")
   }
 
-// todo: these should not be keywords in stdlib, but should be made through componsition of more reusable parsers in a dataflow style.
+// todo: these should not be parsers in stdlib, but should be made through componsition of more reusable parsers in a dataflow style.
 
 printScrollLeetSheetParser
  popularity 0.000024
@@ -44,12 +44,12 @@ printScrollLeetSheetParser
   get parsersToDocument() {
     const clone = this.root.clone()
     clone.setSubparticles("")
-    const words = clone.getAutocompleteResultsAt(0,0).matches.map(a => a.text)
-    words.push("blankline") // manually add blank line
-    words.push("Catch All Paragraph.") // manually add catch all paragraph
-    words.push("<h></h>") // manually add html
-    words.sort()
-    clone.setSubparticles(words.join("\n").replace(/blankline/, "")) // insert blank line in right spot
+    const atoms = clone.getAutocompleteResultsAt(0,0).matches.map(a => a.text)
+    atoms.push("blankline") // manually add blank line
+    atoms.push("Catch All Paragraph.") // manually add catch all paragraph
+    atoms.push("<h></h>") // manually add html
+    atoms.sort()
+    clone.setSubparticles(atoms.join("\n").replace(/blankline/, "")) // insert blank line in right spot
     return clone
   }
   sortDocs(docs) {
@@ -107,12 +107,12 @@ printScrollLeetSheetParser
 
 printparsersLeetSheetParser
  popularity 0.000024
- // todo: fix parse bug when word Parser appears in parserId
+ // todo: fix parse bug when atom Parser appears in parserId
  extends printScrollLeetSheetParser
  description Parsers leetsheet.
  javascript
   compile() {
-    return "<p><b>Parser Definition Parsers</b> define parsers that acquire, analyze and act on code.</p>" + this.docToHtml(this.sortDocs(this.parsersToDocument)) + "<p><b>Cell Definition Parsers</b> analyze the words in a line.</p>" + this.docToHtml(this.sortDocs(this.cellParsersToDocument))
+    return "<p><b>Parser Definition Parsers</b> define parsers that acquire, analyze and act on code.</p>" + this.docToHtml(this.sortDocs(this.parsersToDocument)) + "<p><b>Atom Definition Parsers</b> analyze the atoms in a line.</p>" + this.docToHtml(this.sortDocs(this.atomParsersToDocument))
   }
   makeLink() {
     return ""
@@ -124,24 +124,24 @@ printparsersLeetSheetParser
   getNote(category) {
     return ` <span class="note">A${category.replace("Phase", "").substr(1)}Time.</span>`
   }
-  get cellParsersToDocument() {
+  get atomParsersToDocument() {
     const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
-    const clone = new parsersParser("anyCell\n ").clone()
-    const parserParticle = clone.getParticle("anyCell")
-    const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
-    words.sort()
-    parserParticle.setSubparticles(words.join("\n"))
+    const clone = new parsersParser("anyAtom\n ").clone()
+    const parserParticle = clone.getParticle("anyAtom")
+    const atoms = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
+    atoms.sort()
+    parserParticle.setSubparticles(atoms.join("\n"))
     return parserParticle
   }
   get parsersToDocument() {
     const parsersParser = require("scrollsdk/products/parsers.nodejs.js")
     const clone = new parsersParser("latinParser\n ").clone()
     const parserParticle = clone.getParticle("latinParser")
-    const words = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
-    words.sort()
-    parserParticle.setSubparticles(words.join("\n"))
+    const atoms = clone.getAutocompleteResultsAt(1,1).matches.map(a => a.text)
+    atoms.sort()
+    parserParticle.setSubparticles(atoms.join("\n"))
     clone.appendLine("myParser")
-    clone.appendLine("myCell")
+    clone.appendLine("myAtom")
     return parserParticle
   }
 

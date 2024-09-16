@@ -4,7 +4,7 @@
 // Origin: https://github.com/breck7/scrollsdk/issues/120
 
 stampFileParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description Create a file.
  javascript
   build(parentDir) {
@@ -20,7 +20,7 @@ stampFileParser
   }
 
 stampFolderParser
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  description Create a folder.
  inScope stampFolderParser
  catchAllParser stampFileParser
@@ -52,7 +52,7 @@ stampParser
      hello.js
       console.log("Hello world")
  cruxFromId
- cells preBuildCommandWordCell
+ atoms preBuildCommandAtom
  javascript
   build() {
     const dir = this.root.file.folderPath

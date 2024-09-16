@@ -1,5 +1,5 @@
 scrollGroupByParser
- catchAllCellType columnNameCell
+ catchAllAtomType columnNameAtom
  extends abstractTableTransformParser
  description Combine rows with matching values into groups.
  example
@@ -10,14 +10,14 @@ scrollGroupByParser
  javascript
   get coreTable() {
     if (this._coreTable) return this._coreTable
-   const groupByColNames = this.getWordsFrom(1)
+   const groupByColNames = this.getAtomsFrom(1)
    const {coreTable} = this.parent
    if (!groupByColNames.length) return coreTable
    const newCols = [].map(reduceParticle => {
     return {
-     source: reduceParticle.getWord(1),
-     reduction: reduceParticle.getWord(2),
-     name: reduceParticle.getWord(3) || reduceParticle.getWordsFrom(1).join("_")
+     source: reduceParticle.getAtom(1),
+     reduction: reduceParticle.getAtom(2),
+     name: reduceParticle.getAtom(3) || reduceParticle.getAtomsFrom(1).join("_")
     }
    })
    // Pivot is shorthand for group and reduce?

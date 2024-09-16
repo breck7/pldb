@@ -4,7 +4,7 @@ catchAllParagraphParser
  extends paragraphParser
  boolean suggestInAutocomplete false
  boolean isPopular true
- cells stringCell
+ atoms stringAtom
  javascript
   getErrors() {
     const errors = super.getErrors() || []

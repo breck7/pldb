@@ -1,10 +1,10 @@
 commentLineParser
- catchAllCellType commentCell
+ catchAllAtomType commentAtom
 
 abstractCommentParser
  description Prints nothing.
- catchAllCellType commentCell
- cells commentCell
+ catchAllAtomType commentAtom
+ atoms commentAtom
  extends abstractScrollParser
  baseParser blobParser
  javascript

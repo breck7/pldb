@@ -6,7 +6,7 @@ personParser
  extends abstractIdParser
  description What is their name?
  string measureName name
- cells anyCell
+ atoms anyAtom
  example
   👤 John Doe
   phone +1 (555) 123-4567

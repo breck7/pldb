@@ -3,8 +3,8 @@ classicFormParser
  popularity 0.006391
  description Generate input form for ScrollSet.
  extends abstractAftertextParser
- cells commandWordCell emailAddressCell
- catchAllCellType stringCell
+ atoms cueAtom emailAddressAtom
+ catchAllAtomType stringAtom
  string script
   <script>
   sendFormViaEmail = form => {
@@ -55,10 +55,10 @@ classicFormParser
     return `${this.script}${this.style}<form onsubmit="sendFormViaEmail(this); return false;" class="scrollFormParser">${this.inputs}<button value="${this.subject}" title="${this.emailDestination}" class="scrollButton" type="submit">Submit via email</button>${this.footer}</form>`
   }
   get emailDestination() {
-    return this.getWord(1)
+    return this.getAtom(1)
   }
   get subject() {
-    return this.getWordsFrom(2)?.join(" ") || ""
+    return this.getAtomsFrom(2)?.join(" ") || ""
   }
   get footer() {
     return ""

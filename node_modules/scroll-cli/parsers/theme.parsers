@@ -3,7 +3,7 @@ abstractThemeCssParser
  extends abstractScrollParser
  inScope themeTagsParser
  cruxFromId
- catchAllCellType stringCell
+ catchAllAtomType stringAtom
  string scrollStyles
   figure
    margin 0
