@@ -2046,6 +2046,7 @@ const computeds = {
   },
 
   isLanguage(concept) {
+    if (!concept.get(PLDBKeywords.tags)) throw new Error(`${concept.get("id")} needs tags`) // todo: why isnt this throwing on check?
     return isLanguage(concept.get(PLDBKeywords.tags).split(" ")[0])
   },
 

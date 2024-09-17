@@ -4,7 +4,7 @@ ILBM
 ILBM is a binary data format created in 1985.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
 
-#3234 on PLDB
+#3233 on PLDB
 39 Years Old
 
 Interleaved Bitmap (ILBM) is an image file format conforming to the Interchange File Format (IFF) standard. The format originated on the Amiga platform, and on IBM-compatible systems, files in this format or the related PBM (Planar Bitmap) format are typically encountered in games from late 1980s and early 1990s that were either Amiga ports or had their graphical assets designed on Amiga machines.A characteristic feature of the format is that it stores bitmaps in the form of interleaved bit planes, which gives the format its name; this reflects the way the Amiga graphics hardware natively reads graphics data from memory. A simple form of compression is supported to make ILBM files more compact.On the Amiga, these files are not associated with a particular file extension, though as they started being used on PC systems where extensions are systematically used, they employed a .lbm or occasionally a .bbm extension.. Read more on Wikipedia...
