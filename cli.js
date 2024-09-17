@@ -18,7 +18,7 @@ class PLDBCli extends ScrollSetCLI {
   conceptsFolder = path.join(baseFolder, "concepts")
   parsersFile = path.join(__dirname, "code", "measures.parsers")
   scrollSetName = "pldb"
-  compiledConcepts = "./pldb.json"
+  compiledConcepts = path.join(__dirname, "./pldb.json")
 
   get keywordsOneHotCsv() {
     if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new Particle(this.keywordsOneHot).asCsv

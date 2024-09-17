@@ -1,0 +1,25 @@
+../code/conceptPage.scroll
+
+id jaqt
+name jaqt
+appeared 2023
+creators Auke van Slooten
+tags queryLanguage library
+
+example
+ from(data.people)
+ .select({
+     metrics: {
+         hair_color: _
+     },
+     lastName:_
+ })
+
+githubRepo https://github.com/muze-nl/jaqt
+ stars 108
+ forks 5
+ subscribers 2
+ created 2023
+ updated 2024
+ description GraphQL-style Array.select() and Array.where() for javascript
+ issues 2

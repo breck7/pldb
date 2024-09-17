@@ -4,7 +4,7 @@ Browser Extensible Data Format
 Browser Extensible Data Format, aka Browser Extensible Data, is a text data format created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#2836 on PLDB
+#2835 on PLDB
 20 Years Old
 
 BED (Browser Extensible Data) format provides a flexible way to define the data lines that are displayed in an annotation track. BED lines have three required fields and nine additional optional fields. The number of fields per line must be consistent throughout any single set of data in an annotation track. The order of the optional fields is binding: lower-numbered fields must always be populated if higher-numbered fields are used.
