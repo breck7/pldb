@@ -78,6 +78,13 @@ row
   console.log("Hello, World!");
  Token 
 row
+ Feature Type Aliases
+ FeatureLink ../features/hasTypeAliases.html
+ Supported ✓
+ Example
+  type Second = number;
+ Token 
+row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
  Supported ✓

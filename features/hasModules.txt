@@ -81,6 +81,13 @@ let hello () = print_endline &quot;Hello&quot;
 (* bmodule.ml *)
 Amodule.hello ()
 
+// Gleam’s file is a module and named by the file name (and its directory path). Since there is no special syntax to create a module, there can be only one module in a file.
+// in file main.gleam
+import wibble // if wibble was in a folder called `lib` the import would be `lib/wibble`
+pub fn main() {
+  wibble.identity(1)
+}
+
 module my_module::submodule;
 ...
 
@@ -90,7 +97,7 @@ module App
 
 *
 
-Languages *with* Module Pattern include Java, C#, Julia, Racket, Fortran, OCaml, C3, progsbase, Bio, Speedie, Aardvark
+Languages *with* Module Pattern include Java, C#, Julia, Racket, Fortran, OCaml, Gleam, C3, progsbase, Bio, Speedie, Aardvark
 
 *
 

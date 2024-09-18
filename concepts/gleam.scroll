@@ -12,9 +12,10 @@ description Gleam is a statically typed functional programming language for buil
 lab https://github.com/gleam-lang
 fileExtensions gleam
 writtenIn rust gleam toml markdown javascript dockerfile erlang make yaml bourne-shell css html elixir powershell json typescript
-compilesTo erlang
+compilesTo erlang javascript
 
 exercism https://exercism.org/tracks/gleam
+influencedBy alpaca
 clocExtensions gleam
 docs https://gleam.run/documentation/
 repoStats
@@ -26,8 +27,11 @@ repoStats
 country United States and United Kingdom
 reference https://news.ycombinator.com/item?id=22902462
 
+twitter https://twitter.com/gleamlang
 discord https://discord.gg/Fm8Pwmy
 subreddit https://www.reddit.com/r/gleamlang/
+ memberCount
+  2022 2600
 example
  import gleam/io
  pub fn main() {
@@ -46,6 +50,8 @@ githubRepo https://github.com/lpil/gleam
 
 hasImports true
  import gleam/io
+ import unix/cat as kitty
+ import animal/cat.{Cat, stroke}
 hasPrintDebugging true
  io.println("Hello world")
 hasStrings true
@@ -62,6 +68,28 @@ hasSemanticIndentation false
  // Gleam uses curly braces for blocks, not indentation
 hasIntegers true
  let age = 30
+hasTypeAliases true
+ pub type Headers =
+  List(#(String, String))
+ let headers: Headers = [#("Content-Type", "application/json")]
+hasModules true
+ // Gleam’s file is a module and named by the file name (and its directory path). Since there is no special syntax to create a module, there can be only one module in a file.
+ // in file main.gleam
+ import wibble // if wibble was in a folder called `lib` the import would be `lib/wibble`
+ pub fn main() {
+   wibble.identity(1)
+ }
+hasUnionTypes true
+ type IntOrFloat {
+   AnInt(Int)
+   AFloat(Float)
+ }
+ fn int_or_float(x: IntOrFloat) {
+   case x {
+     AnInt(1) -> "It's an integer: 1"
+     AFloat(1.0) -> "It's a float: 1.0"
+   }
+ }
 hasFloats true
  let pi = 3.14159
 hasBooleans true

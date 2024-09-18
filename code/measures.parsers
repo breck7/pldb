@@ -1628,6 +1628,12 @@ hasTryCatchParser
  description Does the language have a try/catch construct?
  extends abstractFeatureParser
 
+hasTypeAliasesParser
+ extends abstractFeatureParser
+ description Does the language have type aliases?
+ string title Type Aliases
+ string pseudoExample type Year = number
+
 hasTypeAnnotationsParser
  extends abstractFeatureParser
  description Does the language have a syntax for annotating the types of variables?
@@ -2338,6 +2344,7 @@ exercismParser
  example
   exercism https://exercism.org/tracks/bash
 
+//
  extends stringAtom
  float sortIndex 1.8
 domainNameParser

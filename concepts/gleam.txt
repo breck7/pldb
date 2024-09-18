@@ -5,7 +5,7 @@ Gleam is a programming language created in 2016 by Louis Pilfold.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Louis%20Pilfold Louis Pilfold
 
-#72 on PLDB
+#70 on PLDB
 8 Years Old
 104 Repos
 
@@ -17,10 +17,10 @@ Gleam is a statically typed functional programming language for building scalabl
 - Gleam is developed on GitHub and has 16,825 stars
 - There are at least 104 Gleam repos on GitHub
 - Early development of Gleam happened in https://github.com/gleam-lang
-- Gleam compiles to Erlang
+- Gleam compiles to Erlang or JavaScript
 - Gleam is written in Rust, Gleam, TOML, Markdown, JavaScript, Dockerfile, Erlang, Make, YAML, Bourne shell, CSS, HTML, Elixir, PowerShell, JSON, TypeScript
 - The  Google BigQuery Public Dataset GitHub snapshot shows 2 users using Gleam in 2 repos on GitHub
-- There are 0 members in the Gleam subreddit
+- There are 2,600 members in the Gleam subreddit
 - Learn Gleam on exercism.
 - gleam.run was registered in 2019
 - Read more about Gleam on the web: 1.
@@ -67,6 +67,43 @@ row
   let pi = 3.14159
  Token 
 row
+ Feature Union Types
+ FeatureLink ../features/hasUnionTypes.html
+ Supported ✓
+ Example
+  type IntOrFloat {
+    AnInt(Int)
+    AFloat(Float)
+  }
+  fn int_or_float(x: IntOrFloat) {
+    case x {
+      AnInt(1) -> "It's an integer: 1"
+      AFloat(1.0) -> "It's a float: 1.0"
+    }
+  }
+ Token 
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported ✓
+ Example
+  // Gleam’s file is a module and named by the file name (and its directory path). Since there is no special syntax to create a module, there can be only one module in a file.
+  // in file main.gleam
+  import wibble // if wibble was in a folder called `lib` the import would be `lib/wibble`
+  pub fn main() {
+    wibble.identity(1)
+  }
+ Token 
+row
+ Feature Type Aliases
+ FeatureLink ../features/hasTypeAliases.html
+ Supported ✓
+ Example
+  pub type Headers =
+   List(#(String, String))
+  let headers: Headers = [#("Content-Type", "application/json")]
+ Token 
+row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
  Supported ✓
@@ -111,6 +148,8 @@ row
  Supported ✓
  Example
   import gleam/io
+  import unix/cat as kitty
+  import animal/cat.{Cat, stroke}
  Token 
 row
  Feature Semantic Indentation

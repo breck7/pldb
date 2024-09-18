@@ -17,6 +17,18 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/graphql.html">GraphQL</a>
  union SearchResult = Human | Droid | Starship
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html">Gleam</a>
+ type IntOrFloat {
+   AnInt(Int)
+   AFloat(Float)
+ }
+ fn int_or_float(x: IntOrFloat) {
+   case x {
+     AnInt(1) -&gt; &quot;It&#39;s an integer: 1&quot;
+     AFloat(1.0) -&gt; &quot;It&#39;s a float: 1.0&quot;
+   }
+ }
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  union Foo
  {
@@ -30,7 +42,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3
 
 ***
 
-* Languages *with* Union Types include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/c2.html">C2</a>
+* Languages *with* Union Types include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/c2.html">C2</a>
 
 ***
 

@@ -1,7 +1,7 @@
 All Features
 ============
 
-A list of 169 features found in programming languages.
+A list of 170 features found in programming languages.
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
 Comments¶../features/hasComments.html¶# Hello PLDB¶630¶4¶99%
@@ -41,9 +41,9 @@ Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶15¶1�
 Constructors¶../features/hasConstructors.html¶PLDBFile { constructor() {} }¶15¶4¶-
 Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶6¶70%
 Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶14¶1¶-
+Module Pattern¶../features/hasModules.html¶module PLDB {}¶12¶0¶-
 Message Passing¶../features/hasMessagePassing.html¶"get pldb"¶12¶1¶-
 Bitwise Operators¶../features/hasBitWiseOperators.html¶3 == (2 &#124; 1)¶12¶1¶-
-Module Pattern¶../features/hasModules.html¶module PLDB {}¶11¶0¶-
 Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶10¶3¶-
 Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶10¶0¶-
 Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
@@ -75,6 +75,7 @@ Generics¶../features/hasGenerics.html¶function identity&lt;T>(arg: T): T¶6¶1
 hasForEachLoops¶../features/hasForEachLoops.html¶¶6¶0¶-
 Anonymous Functions¶../features/hasAnonymousFunctions.html¶() => printPldb()¶6¶1¶-
 Shebang¶../features/canDoShebang.html¶#! /run¶6¶0¶-
+Union Types¶../features/hasUnionTypes.html¶any = string &#124; number¶5¶0¶-
 Prefix Notation¶../features/hasPrefixNotation.html¶+ 1 2¶5¶0¶-
 Polymorphism¶../features/hasPolymorphism.html¶a + "b"; 1 + 2¶5¶1¶-
 Pipes¶../features/hasPipes.html¶ls pldb &#124; wc¶5¶1¶-
@@ -90,7 +91,6 @@ hasContinue¶../features/hasContinue.html¶¶5¶0¶-
 hasBreak¶../features/hasBreak.html¶¶5¶0¶-
 Async Await¶../features/hasAsyncAwait.html¶async downloadPldb => await getFiles()¶5¶3¶-
 Assert Statements¶../features/hasAssertStatements.html¶assert(isTrue)¶5¶1¶-
-Union Types¶../features/hasUnionTypes.html¶any = string &#124; number¶4¶0¶-
 Unicode Identifers¶../features/hasUnicodeIdentifiers.html¶δ = 0.00001¶4¶1¶-
 Unary Operators¶../features/hasUnaryOperators.html¶count++¶4¶0¶-
 Typed Holes¶../features/hasTypedHoles.html¶2 + _ => 2 + [int&#124;float]¶4¶0¶-
@@ -132,6 +132,7 @@ Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶na
 hasUserDefinedOperators¶../features/hasUserDefinedOperators.html¶¶2¶2¶-
 Type Parameters¶../features/hasTypeParameters.html¶function identity&lt;T>(arg: T): T {return arg}¶2¶0¶-
 Type Annotations¶../features/hasTypeAnnotations.html¶score: number¶2¶0¶-
+Type Aliases¶../features/hasTypeAliases.html¶type Year = number¶2¶0¶-
 Traits¶../features/hasTraits.html¶use redBorder¶2¶0¶-
 hasTimestamps¶../features/hasTimestamps.html¶¶2¶0¶-
 hasStringConcatOperator¶../features/hasStringConcatOperator.html¶¶2¶0¶-

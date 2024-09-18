@@ -5,6 +5,17 @@ declare type numOrString = string | number
 
 union SearchResult = Human | Droid | Starship
 
+type IntOrFloat {
+  AnInt(Int)
+  AFloat(Float)
+}
+fn int_or_float(x: IntOrFloat) {
+  case x {
+    AnInt(1) -&gt; &quot;It&#39;s an integer: 1&quot;
+    AFloat(1.0) -&gt; &quot;It&#39;s a float: 1.0&quot;
+  }
+}
+
 union Foo
 {
   int x;
@@ -17,7 +28,7 @@ union Foo
 
 *
 
-Languages *with* Union Types include TypeScript, GraphQL, C3, C2
+Languages *with* Union Types include TypeScript, GraphQL, Gleam, C3, C2
 
 *
 

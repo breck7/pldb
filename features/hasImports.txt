@@ -156,6 +156,8 @@ open List
 open Seq
 
 import gleam/io
+import unix/cat as kitty
+import animal/cat.{Cat, stroke}
 
 const fs = require(&quot;fs&quot;)
 

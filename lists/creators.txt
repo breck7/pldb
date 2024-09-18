@@ -76,9 +76,9 @@ Matthias Felleisen¶¶1958¶United States¶Racket¶1¶41
 Matthew Flatt¶home ¶1967¶United States¶Racket - scribble - Slideshow - Zuo¶4¶41
 Robert Bruce Findler¶¶1971¶United States¶Racket - Slideshow¶2¶41
 Shriram Krishnamurthi¶¶1973¶United States¶Racket - xt3d¶2¶41
-Alon Zakai¶ home ¶¶Israel¶WebAssembly - Emscripten - binaryen¶3¶42
-Christian Reitwiessner¶ ¶¶Germany¶Solidity¶1¶44
-Alex Beregszaszi¶ home ¶¶Hungary¶Solidity¶1¶44
+Christian Reitwiessner¶ ¶¶Germany¶Solidity¶1¶43
+Alex Beregszaszi¶ home ¶¶Hungary¶Solidity¶1¶43
+Alon Zakai¶ home ¶¶Israel¶WebAssembly - Emscripten - binaryen¶3¶44
 Andrew Kelley¶ home¶¶United States¶Zig¶1¶45
 Clark Evans¶home¶¶United States¶YAML¶1¶46
 Oren Ben-Kiki¶ home ¶1964¶Israel¶YAML¶1¶46
@@ -117,7 +117,7 @@ John Plevyak¶¶¶¶Chapel¶1¶66
 Don Syme¶ ¶1965¶United Kingdom¶F#¶1¶67
 Thierry Coquand¶home ¶1961¶France¶Coq¶1¶68
 Xavier Leroy¶¶1968¶France¶OCaml¶1¶69
-Louis Pilfold¶ home ¶¶United Kingdom¶Gleam¶1¶72
+Louis Pilfold¶ home ¶¶United Kingdom¶Gleam¶1¶70
 Alan Kay¶¶1940¶United States¶Smalltalk - Etoys - Flex language¶3¶73
 Dan Ingalls¶¶1944¶United States¶Smalltalk¶1¶73
 Adele Goldberg¶¶1945¶United States¶Smalltalk¶1¶73
@@ -126,8 +126,8 @@ Linus Torvalds¶  ¶1969¶Finland¶Git - Linux - gitignore¶3¶76
 Hampton Lintorn-Catlin¶ home ¶1982¶United States¶HAML - Sass - SCSS¶3¶77
 Tobias Lütke¶¶1980¶Canada¶Liquid¶1¶79
 John Ousterhout¶ home  ¶1954¶United States¶Tcl - Homa - Tk¶3¶81
-Ryan Dahl¶¶1980¶United States¶Node.js - Deno¶2¶82
-Aseem Kishore¶ home ¶¶United States¶JSON5¶1¶83
+Aseem Kishore¶ home ¶¶United States¶JSON5¶1¶82
+Ryan Dahl¶¶1980¶United States¶Node.js - Deno¶2¶83
 Edwin Brady¶ home ¶¶United Kingdom¶Idris¶1¶84
 Charles H. Moore¶¶1938¶United States¶Forth - ColorForth¶2¶85
 Hans Dockter¶¶¶¶Gradle¶1¶87
@@ -158,7 +158,7 @@ David Cuartielles¶¶¶¶Arduino Programming Language¶1¶109
 Tom Igoe¶¶¶¶Arduino Programming Language¶1¶109
 Gianluca Martino¶¶¶¶Arduino Programming Language¶1¶109
 David Mellis¶¶¶¶Arduino Programming Language¶1¶109
-Han-Wen Nienhuys¶¶¶¶Bazel¶1¶112
+Han-Wen Nienhuys¶¶¶¶Bazel¶1¶111
 Dwayne Richard Hipp¶home ¶1961¶United States¶SQLite - Fossil - Pikchr - Lemon¶4¶113
 John Resig¶home  ¶1984¶United States¶JQuery¶1¶114
 Laurent Le Brun¶¶¶¶starlark¶1¶117
@@ -169,8 +169,8 @@ Lee E. McMahon¶¶1931¶United States¶sed¶1¶123
 Alexander Medvednikov¶¶1993¶Russia¶V¶1¶124
 Thomas S Hatch¶ ¶¶United States¶SaltStack¶1¶126
 David Stern¶¶¶¶IDL¶1¶128
-Emily Eisenberg¶¶¶¶KaTeX¶1¶129
-Calvin Rose¶¶¶¶Fennel - Janet¶2¶130
+Calvin Rose¶¶¶¶Fennel - Janet¶2¶129
+Emily Eisenberg¶¶¶¶KaTeX¶1¶130
 William Gould¶¶¶¶Stata¶1¶133
 Paul Falstad¶¶¶¶Z shell¶1¶136
 Andrey Sitnik¶¶¶¶PostCSS - SugarSS¶2¶137
@@ -178,8 +178,8 @@ Stephen Dolan¶¶¶¶jq¶1¶138
 Wes McKinney¶ home  ¶1985¶United States¶Pandas - Apache Arrow - Ibis¶3¶140
 Phil Moorby¶¶1953¶United Kingdom¶Verilog¶1¶141
 Prabhu Goel¶¶¶¶Verilog¶1¶141
-Sylvan Clebsch¶¶¶Germany¶Pony¶1¶142
-Gary Grossman¶¶1962¶United States¶ActionScript¶1¶144
+Gary Grossman¶¶1962¶United States¶ActionScript¶1¶143
+Sylvan Clebsch¶¶¶Germany¶Pony¶1¶144
 Sanjiva Weerawarana¶ home ¶¶Sri Lanka¶Ballerina¶1¶145
 James Clark¶¶¶¶Ballerina - Trex¶2¶145
 Sameera Jayasoma¶¶¶¶Ballerina¶1¶145
@@ -196,7 +196,7 @@ Thomas E. Kurtz¶¶1928¶United States¶BASIC - Dartmouth BASIC¶2¶151
 Alberto Demichelis¶ ¶¶Italy¶Squirrel¶1¶152
 Christoffer Lernö¶¶¶¶C3¶1¶154
 Bob Nystrom¶¶¶¶Wren - Vigil¶2¶155
-Evan You¶¶¶¶Vue¶1¶156
+Evan You¶¶¶¶Vue¶1¶157
 Andy Rubin¶¶¶¶Android¶1¶159
 Rich Miner¶¶¶¶Android¶1¶159
 Nick Sears¶¶¶¶Android¶1¶159
@@ -219,7 +219,7 @@ Chris Wanstrath¶¶¶¶mustache¶1¶168
 Carson Gross¶ home¶1976¶United States¶htmx¶1¶170
 Kenton Varda¶¶¶¶Cap'n Proto¶1¶171
 Bertrand Meyer¶home  ¶1950¶France¶Eiffel¶1¶173
-Damien P. George¶¶¶¶MicroPython¶1¶174
+Damien P. George¶¶¶¶MicroPython¶1¶175
 Orange S.A¶¶¶¶hurl¶1¶176
 David Majda¶¶¶¶PEG.js¶1¶177
 Neil Pappalardo¶¶¶¶MUMPS¶1¶181
@@ -230,19 +230,19 @@ Daan Leijen¶¶¶¶Koka - Parsec¶2¶188
 Emden R. Gansner¶¶¶¶DOT¶1¶189
 Eleftherios Koutsofios¶¶¶¶DOT¶1¶189
 Stephen North¶¶¶¶DOT¶1¶189
-Andres Gutierrez¶¶¶¶Zephir¶1¶190
-Dave Longley¶¶¶¶JSON-LD¶1¶191
+Dave Longley¶¶¶¶JSON-LD¶1¶190
+Andres Gutierrez¶¶¶¶Zephir¶1¶191
 Marijn Haverbeke¶¶¶¶CodeMirror - lezer¶2¶194
-Armin Ronacher¶¶¶¶Jinja¶1¶196
-Dave Cunningham¶¶¶¶Jsonnet¶1¶197
-Alexandre Go¶¶¶¶highlight.js¶1¶198
-Mike Lesk¶¶1945¶United States¶Lex¶1¶199
-Eric Schmidt¶¶1955¶United States¶Lex¶1¶199
+Alexandre Go¶¶¶¶highlight.js¶1¶196
+Armin Ronacher¶¶¶¶Jinja¶1¶197
+Mike Lesk¶¶1945¶United States¶Lex¶1¶198
+Eric Schmidt¶¶1955¶United States¶Lex¶1¶198
+Dave Cunningham¶¶¶¶Jsonnet¶1¶199
 Jarred Sumner¶ home ¶¶United States¶Bun¶1¶200
 Isaac Z. Schlueter¶¶¶¶npm¶1¶201
 Robin Milner¶¶1934¶United Kingdom¶ML¶1¶206
-K. Rustan M. Leino¶¶¶¶Dafny¶1¶210
-David Goodger¶ home¶¶Canada¶reStructuredText¶1¶211
+David Goodger¶ home¶¶Canada¶reStructuredText¶1¶210
+K. Rustan M. Leino¶¶¶¶Dafny¶1¶211
 Erik Svedäng¶¶¶¶carp¶1¶212
 Jordan Walke¶ ¶¶United States¶React Native - ReactJS¶2¶214
 Christopher Chedeau¶ home ¶¶France¶React Native¶1¶214
@@ -253,9 +253,9 @@ Kartik Chandra¶ home ¶¶United States¶Nearley¶1¶221
 John W. Eaton¶¶¶¶GNU Octave¶1¶225
 Victor M. Alvarez¶¶¶¶YARA¶1¶228
 John D. Hunter¶¶1968¶United States¶Matplotlib¶1¶231
-Troels Henriksen¶¶¶¶Futhark¶1¶234
-Cosmin Oancea¶¶¶¶Futhark¶1¶234
-Martin Elsman¶¶¶¶Futhark¶1¶234
+Troels Henriksen¶¶¶¶Futhark¶1¶235
+Cosmin Oancea¶¶¶¶Futhark¶1¶235
+Martin Elsman¶¶¶¶Futhark¶1¶235
 Ronan Collobert¶¶¶¶PyTorch¶1¶236
 Vern Paxson¶¶1969¶United States¶FLEX¶1¶238
 Benjamin Lupton¶¶¶¶CSON¶1¶239
@@ -269,8 +269,8 @@ Brett Taylor¶¶¶¶tornado¶1¶250
 Rob Gordon¶ ¶¶Canada¶FlowchartFun¶1¶251
 Zachary Carter¶ home ¶¶United States¶Jison - Jison Lex¶2¶253
 Yuanming Hu¶¶¶¶Taichi¶1¶256
-Juan Benet¶ home ¶¶United States¶InterPlanetary File System - multibase¶2¶263
-Rich Harris¶¶¶¶Svelte¶1¶264
+Rich Harris¶¶¶¶Svelte¶1¶263
+Juan Benet¶ home ¶¶United States¶InterPlanetary File System - multibase¶2¶264
 Richard Stallman¶home ¶1953¶United States¶Emacs Lisp - GCC - Lisp Machine Lisp - GNU Emacs¶4¶265
 Robert Fourer¶¶1949¶United States¶AMPL¶1¶266
 David Gay¶¶¶¶AMPL¶1¶266
@@ -294,8 +294,8 @@ Mikhail Yakshin¶¶¶¶kaitai¶1¶284
 Chandler Carruth¶ home ¶¶United States¶Carbon¶1¶285
 Jon Ross-Perkins¶¶¶United States¶Carbon¶1¶285
 James Shubin¶¶¶¶mgmt¶1¶286
-Gavin King¶¶¶¶Ceylon¶1¶289
-Georg Brandl¶¶¶¶Pygments¶1¶290
+Georg Brandl¶¶¶¶Pygments¶1¶288
+Gavin King¶¶¶¶Ceylon¶1¶290
 Max Howell¶¶¶¶tea - Homebrew¶2¶294
 Travis Oliphant¶ home  ¶1971¶United States¶SciPy - NumPy¶2¶296
 Pearu Peterson¶¶¶¶SciPy¶1¶296
@@ -305,11 +305,11 @@ Gunther Cox¶¶¶¶chatterbot¶1¶301
 Mike Cowlishaw¶¶1948¶United Kingdom¶Rexx - NetRexx¶2¶302
 Martin F. Johansen¶¶¶¶progsbase¶1¶304
 Marcel van Lohuizen¶¶¶¶Cue¶1¶305
-Juniper Tyree¶¶¶¶Ron¶1¶307
-Bas van den Berg¶¶¶¶C2¶1¶308
+Bas van den Berg¶¶¶¶C2¶1¶307
+Juniper Tyree¶¶¶¶Ron¶1¶308
 Adam C. Foltzer¶¶¶¶Cryptol¶1¶309
 Qi Xiao¶¶¶¶Elvish¶1¶310
-Zach Leatherman¶ home ¶¶United States¶11ty¶1¶314
+Zach Leatherman¶ home ¶¶United States¶11ty¶1¶315
 Friedrich L. Bauer¶¶1924¶Germany¶ALGOL 60¶1¶316
 Julien Green¶¶¶¶ALGOL 60¶1¶316
 Charles Katz¶¶1938¶United States¶ALGOL 60¶1¶316
@@ -326,20 +326,20 @@ François Chollet¶¶¶¶Keras¶1¶320
 Zach Bruggeman¶¶¶¶Dogescript¶1¶322
 Matt T. Proud¶¶¶¶PROMETHEUS¶1¶325
 Tom Nadeau¶¶¶¶YANG¶1¶327
-Michael Bayer¶¶¶¶Sqlalchemy¶1¶329
+Michael Bayer¶¶¶¶Sqlalchemy¶1¶330
 Sloum¶¶¶¶Slope¶1¶331
 Jonathan Blow¶¶¶¶JAI¶1¶333
 Jonathan Bennett¶¶¶¶AutoIt¶1¶334
-Arthur Whitney¶¶1957¶Canada¶K - Q - A+¶3¶336
+Arthur Whitney¶¶1957¶Canada¶K - Q - A+¶3¶335
 Andreas Kling¶ home ¶¶Germany¶Jakt - Ladybird¶2¶338
 John MacFarlane¶¶¶¶Djot - commonmark¶2¶340
 Ole-Johan Dahl¶¶1931¶Norway¶Simula - Simula 67¶2¶341
 Kristen Nygaard¶¶1926¶Norway¶Simula - BETA - Simula 67¶3¶341
-Jérôme Jacovella-St-Louis¶¶¶¶eC¶1¶342
-Santosh Rajan¶¶¶¶wisp - lispyscript - cleanlang¶3¶343
-Irakli Gozalishvili¶¶¶¶wisp¶1¶343
-LeXofLeviafan¶¶¶¶wisp¶1¶343
-Chris McCormick¶¶¶¶wisp - fleck¶2¶343
+Santosh Rajan¶¶¶¶wisp - lispyscript - cleanlang¶3¶342
+Irakli Gozalishvili¶¶¶¶wisp¶1¶342
+LeXofLeviafan¶¶¶¶wisp¶1¶342
+Chris McCormick¶¶¶¶wisp - fleck¶2¶342
+Jérôme Jacovella-St-Louis¶¶¶¶eC¶1¶344
 Webmaster¶¶¶¶Golo¶1¶346
 Ben Rudiak-Gould¶¶¶¶AviSynth¶1¶347
 Edwin van Eggelen¶¶¶¶AviSynth¶1¶347
@@ -352,26 +352,26 @@ TJ Holowaychuk¶ ¶1988¶Canada¶mochajs - Stylus - Luna¶3¶351
 Guillermo Rauch¶¶¶¶mochajs¶1¶351
 John Skaller¶¶¶¶Felix¶1¶352
 Luka Stojanovic¶¶¶¶CWL¶1¶355
-Dries Buytaert¶¶¶¶Drupal¶1¶356
+Dries Buytaert¶¶¶¶Drupal¶1¶357
 Adam Lindsay¶¶¶¶LOLCODE¶1¶358
-Breck Yunits¶ home ¶1984¶United States¶Particles - Scroll - Parsers - Ohayo - TQL - Note - Space - Simoji - Explorer¶9¶360
+Breck Yunits¶ home ¶1984¶United States¶Particles - Scroll - Parsers - Ohayo - TQL - Note - Space - Simoji - Explorer¶9¶359
 Robert Corbett¶¶¶¶Bison¶1¶361
 Dave Winer¶¶1955¶United States¶SOAP¶1¶362
 Don Box¶¶1964¶United States¶SOAP¶1¶362
 Bob Atkinson¶¶¶¶SOAP¶1¶362
 Mohsen Al-Ghosein¶¶¶¶SOAP¶1¶362
 Mahmoud Fayed¶¶¶¶Ring¶1¶363
-Krzysztof Czarnecki¶¶¶¶Nemerle¶1¶365
-Rodrigo B. De Oliveira¶¶¶¶Boo¶1¶366
-Scott Logic¶¶¶¶Simple Binary Encoding¶1¶368
+Krzysztof Czarnecki¶¶¶¶Nemerle¶1¶364
+Scott Logic¶¶¶¶Simple Binary Encoding¶1¶366
+Rodrigo B. De Oliveira¶¶¶¶Boo¶1¶367
 Nathaniel Borenstein¶¶1957¶United States¶MIME¶1¶371
 Ned Freed¶¶1959¶United States¶MIME¶1¶371
 Shida Li¶¶¶¶Obsidian¶1¶372
 Erica Xu¶ home¶¶United States¶Obsidian¶1¶372
 Daniel Kallin¶ home¶¶Sweden¶nomnoml¶1¶373
 Travis E. Oliphant¶¶¶¶Numba¶1¶374
-Zoltan Somogyi¶¶¶¶Mercury¶1¶375
-Philippe Tillet¶¶¶France¶Triton¶1¶376
+Zoltan Somogyi¶¶¶¶Mercury¶1¶376
+Philippe Tillet¶¶¶France¶Triton¶1¶377
 Jake Fecher¶¶¶¶Ante¶1¶378
 Charles Oliver Nutter¶¶¶¶Mirah¶1¶379
 Lea Verou¶¶¶¶Prism - mavo¶2¶381
@@ -391,40 +391,40 @@ Monte Ohrt¶¶¶¶Smarty¶1¶408
 Messju Mohr¶¶¶¶Smarty¶1¶408
 Uwe Tews¶¶¶¶Smarty¶1¶408
 Kyle Fuller¶¶¶¶Stencil¶1¶410
-Kris Zyp¶¶¶¶JSON Schema¶1¶411
+Kris Zyp¶¶¶¶JSON Schema¶1¶412
 Aaron Janse¶¶¶¶AsciiDots¶1¶413
-Amos Wenger¶¶¶¶ooc¶1¶414
+Amos Wenger¶¶¶¶ooc¶1¶415
 Dmitry Solomennikov¶¶¶¶Flow9¶1¶416
-Brian McKenna¶¶¶¶roy¶1¶417
-Luca Cardelli¶¶¶¶Modula-3 - Amber¶2¶418
-James Donahue¶¶¶¶Modula-3¶1¶418
-Lucille Glassman¶¶¶¶Modula-3¶1¶418
-Mick Jordan¶¶¶¶Modula-3¶1¶418
-Bill Kalsow¶¶¶¶Modula-3¶1¶418
-Greg Nelson¶¶¶¶Modula-3¶1¶418
-Marshall Lochbaum¶ home¶¶United States¶BQN - I¶2¶419
+Marshall Lochbaum¶ home¶¶United States¶BQN - I¶2¶417
+Brian McKenna¶¶¶¶roy¶1¶418
+Luca Cardelli¶¶¶¶Modula-3 - Amber¶2¶419
+James Donahue¶¶¶¶Modula-3¶1¶419
+Lucille Glassman¶¶¶¶Modula-3¶1¶419
+Mick Jordan¶¶¶¶Modula-3¶1¶419
+Bill Kalsow¶¶¶¶Modula-3¶1¶419
+Greg Nelson¶¶¶¶Modula-3¶1¶419
 Carl Sassenrath¶¶1957¶United States¶REBOL¶1¶420
 Alexandre Plateau¶¶¶¶ArkScript¶1¶421
 Pierre Pharel¶¶¶¶ArkScript¶1¶421
 Natendrtfm¶¶¶¶ArkScript¶1¶421
 Luke Sampson¶¶¶¶Scoop¶1¶422
-Gert Smolka¶¶¶¶Oz¶1¶425
-Jean Privat¶¶¶¶Nit¶1¶432
+Gert Smolka¶¶¶¶Oz¶1¶426
+Jean Privat¶¶¶¶Nit¶1¶433
 Roy Marples¶¶¶¶OpenRC runscript¶1¶437
 Jon Purdy¶¶¶¶kitten¶1¶438
 Ola Bini¶¶¶¶Ioke¶1¶439
-David Grudl¶¶¶¶Latte¶1¶441
+David Grudl¶¶¶¶Latte¶1¶442
 Scott Graham¶¶¶¶skulpt¶1¶450
-Christine Lemmer-Webber¶¶¶¶ActivityPub¶1¶452
-Jessica Tallon¶¶¶¶ActivityPub¶1¶452
-Erin Shepherd¶¶¶¶ActivityPub¶1¶452
-Amy Guy¶¶¶¶ActivityPub¶1¶452
-Evan Prodromou¶¶¶¶ActivityPub¶1¶452
+Christine Lemmer-Webber¶¶¶¶ActivityPub¶1¶451
+Jessica Tallon¶¶¶¶ActivityPub¶1¶451
+Erin Shepherd¶¶¶¶ActivityPub¶1¶451
+Amy Guy¶¶¶¶ActivityPub¶1¶451
+Evan Prodromou¶¶¶¶ActivityPub¶1¶451
 Jordi Boggiano¶¶¶¶packagist-pm¶1¶453
 David Ungar¶¶1955¶United States¶Self¶1¶454
 Mark Tarver¶¶¶¶Shen¶1¶455
 Hadley Wickham¶ home  ¶1979¶New Zealand¶dplyr - tidyverse - ggplot2¶3¶456
-Naoya Hatta¶¶¶¶Veryl¶1¶459
+Naoya Hatta¶¶¶¶Veryl¶1¶460
 Vint Cerf¶home  ¶1943¶United States¶TCP¶1¶461
 Bob Kahn¶¶1938¶United States¶TCP¶1¶461
 Hongwei Xi¶¶¶¶ATS¶1¶462
@@ -434,61 +434,61 @@ Jonas Nicklas¶¶¶¶capybara¶1¶465
 Kevin Fitzpatrick¶¶¶¶capybara¶1¶465
 tomhrr¶¶¶¶Dale¶1¶468
 Timothy Canham¶¶¶¶F Prime¶1¶469
-Joe Gibbs Politz¶¶¶¶pyret - Pyret¶2¶470
-Ian Keough¶¶¶¶Dynamo¶1¶471
-Christophe de Dinechin¶¶¶¶XL - tao3d - ELFE¶3¶473
-Satoshi Murakami¶¶¶¶LiveScript - Coco¶2¶476
-George Zahariev¶¶¶¶LiveScript¶1¶476
+Jeremy Pierre¶¶¶¶Alpaca¶1¶470
+Joe Gibbs Politz¶¶¶¶pyret - Pyret¶2¶471
+Ian Keough¶¶¶¶Dynamo¶1¶473
+Christophe de Dinechin¶¶¶¶XL - tao3d - ELFE¶3¶474
+Satoshi Murakami¶¶¶¶LiveScript - Coco¶2¶477
+George Zahariev¶¶¶¶LiveScript¶1¶477
 Sven Efftinge¶¶¶¶Xtend¶1¶479
 Sebastian Zarnekow¶¶¶¶Xtend¶1¶479
-Max Ogden¶¶¶¶dat-protocol¶1¶482
-Steve Ward¶¶¶¶Curl¶1¶483
-Steve Dekorte¶¶¶¶Io¶1¶484
-Ilya Sher¶¶¶¶NGS¶1¶485
-Ramsey Nasser¶¶¶¶Qalb¶1¶486
-Kevin Gadd¶¶¶¶jsil-compiler¶1¶489
-Fabrice Le Fessant¶¶¶¶opam-pm¶1¶490
-Avery Lee¶¶¶¶vdscript¶1¶493
-PhoenixHimself¶ ¶¶United Kingdom¶Amber¶1¶494
-Rob Koch¶¶¶¶Markwhen¶1¶495
-Fredrik Hübinette¶¶¶¶Pike¶1¶497
-Steven M. Drucker¶ home  ¶¶United States¶SandDance¶1¶498
-Leonid Ryzhyk¶¶¶¶Differential Datalog¶1¶501
-Yann Orlarey¶¶¶¶invokator¶1¶502
-Daniel X Moore¶home ¶¶United States¶Civet - Hera¶2¶503
-Paul Graham¶¶1964¶United Kingdom¶Arc - Bel¶2¶507
-Robert Morris¶¶¶¶Arc¶1¶507
-Chris Pressey¶¶¶¶Befunge¶1¶512
-Karim Geiger¶¶¶¶SRL¶1¶515
-Chris Done¶ home ¶¶United Kingdom¶fay - Z - JSON lambda - Lucid¶4¶517
-Cyrus Omar¶ home ¶¶United States¶Hazel¶1¶519
-Carsten Dominik¶¶¶¶Org¶1¶520
-Benoit Giannangeli¶¶¶¶buzz¶1¶521
-Xi Chen¶¶¶¶m3db¶1¶522
-Graham Nelson¶¶1968¶United Kingdom¶Inform - prompter¶2¶523
-Vasily Tarasov¶¶¶¶Filebench WML¶1¶524
-Kemal Ebcioğlu¶¶¶¶X10¶1¶526
-Saravanan Arumugam¶¶¶¶X10¶1¶526
-Vijay Saraswat¶¶¶¶X10¶1¶526
-Vivek Sarkar¶¶¶¶X10¶1¶526
-Jan Wieck¶¶¶¶PL/pgSQL¶1¶529
-Paulo Moura¶¶¶¶Logtalk¶1¶530
-Ric Holt¶¶¶¶Turing - SP/k¶2¶534
-Kai Schmidt¶¶¶¶Uiua¶1¶535
-Ralph Griswold¶¶1934¶United States¶Icon¶1¶536
-David J. Pearce¶¶¶¶Whiley¶1¶537
-Al Danial¶¶¶¶cloc¶1¶539
-Kyle Jessup¶¶¶¶Lasso¶1¶541
-Yoav Lavi¶¶¶¶Melody¶1¶544
-Rijnard van Tonder¶¶¶¶comby¶1¶545
-Gottfried Leibniz¶¶¶¶Binary notation - Binary Equation¶2¶546
-netcarver¶¶¶¶Textile¶1¶548
-Martin Šošić¶¶¶¶Wasp¶1¶549
-KS Sreeram¶¶¶¶clay¶1¶553
-Joe Groff¶¶¶¶clay - FML - newclay¶3¶553
-Howard Chu¶¶¶¶lmdb¶1¶556
-Mark S. Miller¶¶1958¶United States¶E - Yedalog¶2¶557
-Jeremy Pierre¶¶¶¶Alpaca¶1¶558
+Steve Ward¶¶¶¶Curl¶1¶482
+Max Ogden¶¶¶¶dat-protocol¶1¶484
+Steve Dekorte¶¶¶¶Io¶1¶485
+Ilya Sher¶¶¶¶NGS¶1¶487
+Ramsey Nasser¶¶¶¶Qalb¶1¶488
+Kevin Gadd¶¶¶¶jsil-compiler¶1¶490
+Fabrice Le Fessant¶¶¶¶opam-pm¶1¶491
+Avery Lee¶¶¶¶vdscript¶1¶494
+PhoenixHimself¶ ¶¶United Kingdom¶Amber¶1¶495
+Rob Koch¶¶¶¶Markwhen¶1¶496
+Fredrik Hübinette¶¶¶¶Pike¶1¶498
+Steven M. Drucker¶ home  ¶¶United States¶SandDance¶1¶499
+Leonid Ryzhyk¶¶¶¶Differential Datalog¶1¶502
+Yann Orlarey¶¶¶¶invokator¶1¶503
+Daniel X Moore¶home ¶¶United States¶Civet - Hera¶2¶504
+Paul Graham¶¶1964¶United Kingdom¶Arc - Bel¶2¶508
+Robert Morris¶¶¶¶Arc¶1¶508
+Chris Pressey¶¶¶¶Befunge¶1¶513
+Karim Geiger¶¶¶¶SRL¶1¶516
+Chris Done¶ home ¶¶United Kingdom¶fay - Z - JSON lambda - Lucid¶4¶519
+Cyrus Omar¶ home ¶¶United States¶Hazel¶1¶520
+Carsten Dominik¶¶¶¶Org¶1¶521
+Benoit Giannangeli¶¶¶¶buzz¶1¶522
+Xi Chen¶¶¶¶m3db¶1¶523
+Graham Nelson¶¶1968¶United Kingdom¶Inform - prompter¶2¶524
+Vasily Tarasov¶¶¶¶Filebench WML¶1¶525
+Kemal Ebcioğlu¶¶¶¶X10¶1¶527
+Saravanan Arumugam¶¶¶¶X10¶1¶527
+Vijay Saraswat¶¶¶¶X10¶1¶527
+Vivek Sarkar¶¶¶¶X10¶1¶527
+Jan Wieck¶¶¶¶PL/pgSQL¶1¶530
+Paulo Moura¶¶¶¶Logtalk¶1¶531
+Ric Holt¶¶¶¶Turing - SP/k¶2¶535
+Kai Schmidt¶¶¶¶Uiua¶1¶536
+Ralph Griswold¶¶1934¶United States¶Icon¶1¶537
+David J. Pearce¶¶¶¶Whiley¶1¶539
+Al Danial¶¶¶¶cloc¶1¶540
+Kyle Jessup¶¶¶¶Lasso¶1¶542
+Yoav Lavi¶¶¶¶Melody¶1¶545
+Rijnard van Tonder¶¶¶¶comby¶1¶546
+Gottfried Leibniz¶¶¶¶Binary notation - Binary Equation¶2¶547
+netcarver¶¶¶¶Textile¶1¶549
+Martin Šošić¶¶¶¶Wasp¶1¶550
+KS Sreeram¶¶¶¶clay¶1¶554
+Joe Groff¶¶¶¶clay - FML - newclay¶3¶554
+Howard Chu¶¶¶¶lmdb¶1¶557
+Mark S. Miller¶¶1958¶United States¶E - Yedalog¶2¶558
 Kevin Hammond¶ ¶¶United Kingdom¶GHC¶1¶559
 Jon Jensen¶¶¶¶Bucardo¶1¶560
 Qichao Lan¶¶¶¶Glicol¶1¶563
@@ -517,7 +517,7 @@ Stuart Popejoy¶¶¶¶Pact¶1¶594
 Stuart Rackham¶¶¶¶AsciiDoc¶1¶600
 Charles Esterbrook¶¶¶¶Cobra¶1¶603
 Satoshi Egi¶¶¶¶Egison¶1¶606
-Ge Wang¶¶¶¶Ch¶1¶607
+Ge Wang¶¶¶¶Ch¶1¶609
 Jean-Michaël Celerier¶¶¶¶score¶1¶610
 Barry J. Mailloux¶¶¶¶ALGOL 68¶1¶611
 John E. L. Peck¶¶¶¶ALGOL 68¶1¶611
@@ -544,23 +544,23 @@ David J. Farber¶¶¶¶SNOBOL - SNOBOL4 - SNOBOL3¶3¶636
 Ralph E. Griswold¶¶¶¶SNOBOL - SNOBOL4 - SNOBOL3¶3¶636
 Olivier Breuleux¶¶¶¶Earl Grey - Quaint - Liso¶3¶639
 Göran Krampe¶¶¶¶spry¶1¶640
-Alon Gubkin¶¶¶¶spider¶1¶642
+Alon Gubkin¶¶¶¶spider¶1¶643
 Patrick Martin¶¶¶¶dexvis¶1¶646
 Denis Merigoux¶¶¶¶Catala¶1¶647
 Michael Ficarra¶¶¶¶EmberScript¶1¶649
 Gordon L. Hempton¶¶¶¶EmberScript¶1¶649
 Syrus Akbary¶¶¶¶wasmer¶1¶650
-Martin Porter¶¶¶¶Snowball¶1¶651
-Victor Taelin¶ ¶¶Brazil¶Bend - HVM2 - hvm¶3¶653
-Alexander Aiken¶¶¶¶Classroom Object Oriented Language¶1¶654
-Jarrett Billingsley¶¶¶¶Croc - MiniD¶2¶655
-Lars Marius Garshol¶¶¶¶JSLT¶1¶657
-Dan Winkler¶¶¶¶HyperTalk¶1¶658
+Martin Porter¶¶¶¶Snowball¶1¶652
+Jarrett Billingsley¶¶¶¶Croc - MiniD¶2¶653
+Victor Taelin¶ ¶¶Brazil¶Bend - HVM2 - hvm¶3¶654
+Alexander Aiken¶¶¶¶Classroom Object Oriented Language¶1¶655
+Dan Winkler¶¶¶¶HyperTalk¶1¶656
+Lars Marius Garshol¶¶¶¶JSLT¶1¶658
 David Koeplinger¶¶¶¶Spatial¶1¶660
 Antonio Linares¶¶¶¶Harbour¶1¶661
 Richard Feldman¶¶¶¶Roc¶1¶662
 Alexis King¶¶¶¶Hackett¶1¶664
-Jeffrey Heer¶ home  ¶1979¶United States¶Vega - Arquero¶2¶668
+Jeffrey Heer¶ home  ¶1979¶United States¶Vega - Arquero¶2¶669
 Karl Stenerud¶¶¶¶Concise Encoding¶1¶670
 Fernando Borretti¶¶¶¶Austral¶1¶674
 Rick Lamers¶¶¶¶gridstudio-editor¶1¶680
@@ -568,7 +568,7 @@ Piotr Fusik¶¶¶¶Ć¶1¶681
 Nurullah Akkaya¶¶¶¶ferret¶1¶683
 Charles Loomis¶¶¶¶Pan¶1¶684
 Anton Ekblad¶¶¶¶haste¶1¶687
-Stepan Mitkin¶¶¶¶DRAKON¶1¶688
+Stepan Mitkin¶¶¶¶DRAKON¶1¶689
 Eduardo Julián¶¶¶¶Lux¶1¶691
 Rui Ueyama¶¶¶¶chibicc¶1¶692
 Oliver Medhurst¶ home ¶2005¶United Kingdom¶Porffor¶1¶694
@@ -623,8 +623,8 @@ Matthew Mueller¶¶¶¶Superjson¶1¶794
 John-David Dalton¶ ¶¶United States¶Lodash¶1¶796
 Jovansonlee Cesar¶¶¶¶svgbob¶1¶797
 官文亮¶¶¶¶Berry¶1¶800
-Will Daly¶¶¶¶aretext¶1¶801
-Viktor Turskyi¶¶¶¶Livr¶1¶802
+Viktor Turskyi¶¶¶¶Livr¶1¶801
+Will Daly¶¶¶¶aretext¶1¶802
 Max Krohn¶¶¶¶IcedCoffeeScript¶1¶805
 Michael Hanus¶¶¶¶Curry¶1¶806
 Sergio Antoy¶¶¶¶Curry¶1¶806
@@ -642,8 +642,8 @@ Jakob Olesen¶¶¶¶Cranelift¶1¶831
 Jean-Baptiste Kempf¶¶¶¶VLC¶1¶832
 Samuel Morse¶¶¶¶Morse code¶1¶833
 David Turner¶¶¶¶Miranda - KRC - SASL¶3¶834
-Ian Ward¶¶¶¶JSON Lines¶1¶839
-Lars Pensjö¶¶1963¶Sweden¶LPC¶1¶840
+Ian Ward¶¶¶¶JSON Lines¶1¶840
+Lars Pensjö¶¶1963¶Sweden¶LPC¶1¶841
 Peter Krautzberger¶¶¶¶AsciiMath¶1¶843
 Tim Burks¶¶¶¶Nu¶1¶846
 Dominic Tarr¶¶¶¶Hyperscript¶1¶848
@@ -651,7 +651,7 @@ Linus Lee¶¶¶¶ink-lang - Tabloid¶2¶849
 Manfred von Thun¶¶¶¶Joy¶1¶850
 Tima Kinsart¶¶¶¶Metalang99¶1¶851
 Kalani Thielen¶¶¶¶hobbes¶1¶852
-David Christiansen¶¶¶¶pie-lang¶1¶853
+David Christiansen¶¶¶¶pie-lang¶1¶854
 Samuel Smith¶¶¶¶FloScript¶1¶856
 Magnus Madsen¶¶¶¶Flix¶1¶857
 Martín del Río¶¶¶¶ldpl¶1¶859
@@ -662,11 +662,11 @@ evancz¶¶¶¶Gren¶1¶867
 Franziskus Kiefer¶¶¶¶hacspec¶1¶868
 John Sundell¶¶¶¶Plot¶1¶872
 Victor Nakoryakov¶¶¶¶xodio¶1¶873
-Chris Klimas¶ home¶¶United States¶Twine - Snowman¶2¶876
+Chris Klimas¶ home¶¶United States¶Twine - Snowman¶2¶874
 Maxime Chevalier-Boisvert¶ home ¶¶Canada¶noisecraft - KavaScript - weebasic - Plush¶4¶879
 James Siri¶¶¶¶partiql¶1¶880
 Dejan Muhamedagic¶¶¶¶crmsh¶1¶881
-Hanspeter Mössenböck¶¶¶¶Oberon-2¶1¶883
+Hanspeter Mössenböck¶¶¶¶Oberon-2¶1¶882
 Mark Thom¶¶¶United Kingdom¶Scryer Prolog¶1¶884
 Baku Hashiomoto¶ home ¶¶Japan¶Glisp¶1¶889
 Adam Le Doux¶ home¶¶United States¶Bitsy¶1¶891
@@ -735,7 +735,7 @@ Andrew Fedoniouk¶¶¶¶TIScript - c-smile¶2¶1022
 Maurice Machado¶ ¶¶Brazil¶CoffeeKup¶1¶1024
 Jesse Duffield¶¶¶¶OK¶1¶1025
 Jonathan Immanuel Brachthäuser¶ home ¶¶Germany¶Effekt¶1¶1026
-Leif Andersen¶¶¶¶video¶1¶1028
+Leif Andersen¶¶¶¶video¶1¶1029
 Joe Eli McIlvain¶¶¶¶Savi¶1¶1031
 David H. Munro¶¶¶¶Yorick¶1¶1036
 Jakub Martin¶¶¶¶JSON Query Language¶1¶1041
@@ -754,7 +754,7 @@ Frank van Viegen¶¶¶¶BlackCoffee¶1¶1061
 David Weininger¶¶¶¶Smiles - SMILES arbitrary target specification¶2¶1063
 Benoît Minisini¶¶¶¶Gambas¶1¶1064
 Winston Chang¶¶¶¶ggplot2¶1¶1065
-Pavan Kumar Sunkara¶¶¶¶semicolon¶1¶1066
+Pavan Kumar Sunkara¶¶¶¶semicolon¶1¶1067
 Mathias Sirthias¶¶¶Germany¶pegdown - parboiled - parboiled2¶3¶1069
 Janko Metelko¶¶¶¶Rye¶1¶1072
 Robert S. Boyer¶¶¶¶ACL2¶1¶1074
@@ -783,7 +783,7 @@ Paul Mou¶¶¶¶SQRL¶1¶1118
 Yunjing Xu¶¶¶¶SQRL¶1¶1118
 David Newman¶¶¶¶SQRL¶1¶1118
 Jayadev Misra¶¶¶¶Orc¶1¶1119
-Takashi Suwa¶¶¶¶SATySFi¶1¶1120
+Takashi Suwa¶¶¶¶SATySFi¶1¶1121
 Steve Singer¶¶¶¶Slony¶1¶1129
 William Wulf¶¶¶¶BLISS¶1¶1130
 Alex Browne¶¶¶¶fo¶1¶1134
@@ -833,7 +833,7 @@ John Conway¶¶¶¶FRACTRAN - Conway chained arrow notation¶2¶1222
 Tom MacWright¶¶¶¶wah¶1¶1223
 Olle Fredriksson¶¶¶¶sixten¶1¶1228
 Petar Maymounkov¶¶¶¶ko¶1¶1230
-Robert Fratto¶¶¶¶orange¶1¶1232
+Robert Fratto¶¶¶¶orange¶1¶1233
 John Carmack¶¶¶¶QuakeC¶1¶1238
 Steve Ruiz¶ home ¶1987¶United States¶tldraw¶1¶1239
 Mark Summerfield¶¶¶¶Uniform eXchange Format¶1¶1240
@@ -903,8 +903,8 @@ Ken Kahn¶¶¶¶ToonTalk - Janus¶2¶1374
 Neeilan Selvalingam¶¶¶¶neeilang¶1¶1376
 Brian Harvey¶¶¶¶Snap!¶1¶1377
 Tatu Saloranta¶¶¶¶Smile data interchange format¶1¶1379
-J. E. Saltzer¶¶¶¶RUNOFF¶1¶1386
-Cliff Shaw¶¶¶¶JOSS¶1¶1388
+Cliff Shaw¶¶¶¶JOSS¶1¶1382
+J. E. Saltzer¶¶¶¶RUNOFF¶1¶1387
 Stephen Cross¶¶¶¶loci¶1¶1394
 Mark van Gulik¶¶¶¶Avail¶1¶1398
 Todd L. Smith¶¶¶¶Avail¶1¶1398
@@ -992,7 +992,7 @@ Liza Daly¶ home¶¶United States¶Openverse¶1¶1579
 Ramkumar Ramachandra¶¶¶¶rhine¶1¶1580
 Yves Caseau¶¶¶¶CLAIRE¶1¶1584
 Sébastien Pierre¶¶¶¶Sugar¶1¶1585
-Cameron McKinnon¶¶¶¶parenthetic¶1¶1588
+Cameron McKinnon¶¶¶¶parenthetic¶1¶1589
 Denso Wave¶¶¶¶QR code¶1¶1591
 Bastian Müller¶¶¶¶ralph¶1¶1592
 Compl Yue¶¶¶¶Đ¶1¶1594
@@ -1010,13 +1010,13 @@ Christian Pietsch¶¶¶¶OpenComal¶1¶1619
 David Roberts¶¶¶¶Subleq¶1¶1620
 Christine Dodrill¶¶¶¶h¶1¶1623
 Dennis Griffith¶¶¶¶sill¶1¶1625
-Ellie Kanning-Dawn¶home¶¶United States¶Horse64 - Moose64¶2¶1627
+Ellie Kanning-Dawn¶home¶¶United States¶Horse64 - Moose64¶2¶1626
 Cameron McEfee¶¶¶¶grid-notation¶1¶1632
 Dylan Madisetti¶¶¶¶toki sona¶1¶1636
 Alexander Ivanov¶¶¶¶hivemind¶1¶1639
-Ulrich Hecht¶¶¶¶DragonBASIC¶1¶1648
-Matt Bierner¶¶¶¶Khepri¶1¶1649
-Nevil Brownlee¶¶¶¶Small¶1¶1650
+Ulrich Hecht¶¶¶¶DragonBASIC¶1¶1649
+Matt Bierner¶¶¶¶Khepri¶1¶1650
+Nevil Brownlee¶¶¶¶Small¶1¶1651
 James Keane¶¶¶¶Ham - lamderp¶2¶1653
 Seth Vidal¶¶¶¶Yum¶1¶1655
 Michael Stenner¶¶¶¶Yum¶1¶1655
@@ -1090,7 +1090,7 @@ Jay McCarthy¶¶¶¶remix¶1¶1827
 Anssi Halmeaho¶¶¶¶funl¶1¶1828
 Darryl Abbate¶¶¶¶Riff¶1¶1829
 ThePuzzlemaker¶¶¶¶Calypso¶1¶1831
-Eduard Urbach¶¶¶¶flua¶1¶1832
+Eduard Urbach¶¶¶¶flua¶1¶1833
 Kevin Lawler¶¶¶¶kerf¶1¶1835
 Paul Gordon¶¶¶¶Truth - YESS¶2¶1836
 Sean Micklethwaite¶¶¶¶latte-js¶1¶1844
@@ -1107,7 +1107,7 @@ Zachary Sakowitz¶¶¶¶Storymatic¶1¶1859
 Yoshiki Ohshima¶¶¶¶shadama¶1¶1860
 Dan Amelang¶¶¶¶shadama¶1¶1860
 Bert Freudenberg¶¶¶¶shadama¶1¶1860
-Matthew Steel¶¶¶¶6gunz¶1¶1863
+Matthew Steel¶¶¶¶6gunz¶1¶1861
 Robert Bixby¶¶1945¶United States¶Gurobi - CPLEX - LP Format¶3¶1865
 Raja Mukherji¶¶¶¶Minilang¶1¶1868
 Daniel Fedorin¶ home¶1998¶Canada¶Pegasus¶1¶1870
@@ -1133,14 +1133,14 @@ Mark Hahn¶¶¶¶fjs¶1¶1907
 Joe Jevnik¶¶¶¶phorth¶1¶1911
 ALANVF¶¶¶¶Star¶1¶1915
 Aliaksandr Zahatski¶¶¶¶Pod6¶1¶1917
-Arjun Nair¶¶¶¶ircis¶1¶1921
-Cedric Cellier¶¶¶¶ramen¶1¶1922
+Arjun Nair¶¶¶¶ircis¶1¶1922
+Cedric Cellier¶¶¶¶ramen¶1¶1923
 James Edwards¶¶¶¶jedlang¶1¶1926
 Jeff Walker¶¶¶¶adamant¶1¶1928
 Zach Perkitny¶¶¶¶emerald-lang¶1¶1930
 Matheus Dias de Souza¶¶¶¶Violent ES¶1¶1933
 Christian Budde Christensen¶¶¶¶gintonic¶1¶1937
-Yuya Watari¶¶¶¶Ripple - Calc4¶2¶1939
+Yuya Watari¶¶¶¶Ripple - Calc4¶2¶1940
 Scott Moore¶¶¶¶IP Pascal¶1¶1948
 Alin Ali Hassan¶¶¶¶Lesma¶1¶1953
 Eddie aka. tamamu¶¶¶¶Macchiato¶1¶1955
@@ -1158,7 +1158,7 @@ Doug Cutting¶¶¶¶parquet¶1¶1989
 Julien Le Dem¶¶¶¶parquet¶1¶1989
 Thomas S. Ray¶home ¶1954¶United States¶Tierra¶1¶1990
 Magnus Holm¶¶¶¶glush¶1¶1993
-Steve Vickers¶¶¶¶Sinclair BASIC¶1¶1996
+Steve Vickers¶¶¶¶Sinclair BASIC¶1¶1997
 Mehmet Hakan Satman¶¶¶¶Fuzuli¶1¶1998
 Jan Max Meyer¶¶¶¶RapidBatch¶1¶1999
 monsterkodi¶¶¶¶noon - kode¶2¶2000
@@ -1286,16 +1286,16 @@ Chris Olston¶¶¶¶Yedalog¶1¶2309
 Fernando Pereira¶¶¶¶Yedalog¶1¶2309
 E. Dean Tribble¶¶¶¶Joule¶1¶2318
 Mikail Khan¶¶¶¶RustScript¶1¶2320
-Sander Mertens¶¶¶¶y-lang¶1¶2321
+Sander Mertens¶¶¶¶y-lang¶1¶2322
 Harold Boley¶¶¶¶RuleML¶1¶2333
 Benjamin Grosof¶¶¶¶RuleML¶1¶2333
 Said Tabet¶¶¶¶RuleML¶1¶2333
 Jeffrey Mark Siskind¶¶¶¶Stalin¶1¶2334
 David C. Keenan¶¶¶¶mockingbird-notation¶1¶2339
 Darren Duncan¶¶¶¶Muldis¶1¶2341
-John Judnich¶¶¶¶tuplemarkup¶1¶2344
-Tom Truscott¶¶¶United States¶Usenet¶1¶2346
-Jim Ellis¶¶1956¶United States¶Usenet¶1¶2346
+Tom Truscott¶¶¶United States¶Usenet¶1¶2345
+Jim Ellis¶¶1956¶United States¶Usenet¶1¶2345
+John Judnich¶¶¶¶tuplemarkup¶1¶2346
 Danilo Lekovic¶¶¶¶Iode¶1¶2347
 Josh Weinstein¶¶¶¶RoyalScript¶1¶2349
 Huw Pritchard¶¶¶¶HuwCode¶1¶2362
@@ -1312,7 +1312,7 @@ Giandomenico Spezzano¶¶¶¶Carpet¶1¶2406
 Domenico Talia¶¶¶¶Carpet¶1¶2406
 Tom Rothamel¶¶¶¶Ruri¶1¶2416
 Katrina Grace¶¶¶¶SQHTML¶1¶2418
-Bill McKeeman¶¶¶¶McKeeman Form - C flat¶2¶2420
+Bill McKeeman¶¶¶¶McKeeman Form - C flat¶2¶2419
 Yuriy Zamyatin¶¶¶¶ForthScript¶1¶2421
 CoconutMacaroon¶¶¶¶Broccoli¶1¶2422
 Claude Roux¶¶¶¶tamgu¶1¶2425
@@ -1398,7 +1398,7 @@ Owez¶¶¶¶Jingo¶1¶2643
 Spencer Comin¶¶¶¶Fern¶1¶2647
 Harold L. Marzan¶¶¶¶H++¶1¶2648
 jussehoo¶¶¶¶MeanscriptCLI¶1¶2649
-Robert Swierczek¶¶¶¶swizzle¶1¶2651
+Robert Swierczek¶¶¶¶swizzle¶1¶2654
 Andrew S. Grimshaw¶¶¶¶Mentat¶1¶2665
 Jane W.S. Liu¶¶¶¶Mentat¶1¶2665
 William Rutherford¶¶¶¶lambcalc¶1¶2675

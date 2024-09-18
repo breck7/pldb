@@ -198,7 +198,7 @@ const measures = [
     "Values": 5020,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21728",
+    "Example": "21727",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -901,7 +901,7 @@ const measures = [
   },
   {
     "Name": "inboundLinks",
-    "Values": 437,
+    "Values": 438,
     "Coverage": "8%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -1214,7 +1214,7 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 79,
+    "Values": 80,
     "Coverage": "1%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
@@ -1704,7 +1704,7 @@ const measures = [
   },
   {
     "Name": "twitter",
-    "Values": 263,
+    "Values": 264,
     "Coverage": "5%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -3046,7 +3046,7 @@ const measures = [
   },
   {
     "Name": "hasModules",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "Does the language have a concept of modules for organizing and packaging code?",
     "Example": "true",
@@ -3583,6 +3583,16 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "hasTypeAliases",
+    "Values": 2,
+    "Coverage": "0%",
+    "Question": "Does the language have type aliases?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
     "Name": "hasTypeAnnotations",
     "Values": 2,
     "Coverage": "0%",
@@ -3644,7 +3654,7 @@ const measures = [
   },
   {
     "Name": "hasUnionTypes",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does the language support union types?",
     "Example": "true",

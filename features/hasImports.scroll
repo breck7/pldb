@@ -195,6 +195,8 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/f-sharp.htm
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html">Gleam</a>
  import gleam/io
+ import unix/cat as kitty
+ import animal/cat.{Cat, stroke}
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nodejs.html">Node.js</a>
  const fs = require(&quot;fs&quot;)
