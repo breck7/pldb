@@ -10,7 +10,9 @@ latestVersion v1.2.0-rc1
 webRepl https://tour.gleam.run/
 description Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
 lab https://github.com/gleam-lang
+fileExtensions gleam
 writtenIn rust gleam toml markdown javascript dockerfile erlang make yaml bourne-shell css html elixir powershell json typescript
+compilesTo erlang
 
 exercism https://exercism.org/tracks/gleam
 clocExtensions gleam
