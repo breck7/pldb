@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1491,
+    "Values": 1492,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -1334,7 +1334,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1491,
+    "Values": 1492,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
