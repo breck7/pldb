@@ -46,6 +46,33 @@ githubRepo https://github.com/lpil/gleam
 
 hasImports true
  import gleam/io
+hasPrintDebugging true
+ io.println("Hello world")
+hasStrings true
+ "Hello world"
+hasComments true
+ // This is a single-line comment
+ // Gleam doesn't have multi-line comments
+ // Gleam has /// and //// comments which are used for attaching documentation to code.
+ /// is used for documenting types and functions, and should be placed immediately before the type or function it is documenting.
+ //// is used for documenting modules, and should be placed at the top of the module.
+hasLineComments true
+ // This is a line comment in Gleam
+hasSemanticIndentation false
+ // Gleam uses curly braces for blocks, not indentation
+hasIntegers true
+ let age = 30
+hasFloats true
+ let pi = 3.14159
+hasBooleans true
+ let is_awesome = True
+hasLists true
+ let numbers = [1, 2, 3, 4, 5]
+hasDecorators true
+ @deprecated("Use new_function instead")
+ fn old_function() {
+  Nil
+ }
 
 domainName gleam.run
  registered 2019

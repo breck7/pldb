@@ -2266,7 +2266,7 @@
   },
   {
     "Name": "hasBooleans",
-    "Values": 121,
+    "Values": 122,
     "Coverage": "2%",
     "Question": "Does the language have a type and syntax for booleans?",
     "Example": "true",
@@ -2346,7 +2346,7 @@
   },
   {
     "Name": "hasComments",
-    "Values": 633,
+    "Values": 634,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2399,6 +2399,16 @@
     "Values": 2,
     "Coverage": "0%",
     "Question": "Does the language have a decimal data type?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
+    "Name": "hasDecorators",
+    "Values": 1,
+    "Coverage": "0%",
+    "Question": "Does the language have decorators?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 7,
@@ -2586,7 +2596,7 @@
   },
   {
     "Name": "hasFloats",
-    "Values": 139,
+    "Values": 140,
     "Coverage": "2%",
     "Question": "Does the language have a syntax and type for floating points?",
     "Example": "true",
@@ -2836,7 +2846,7 @@
   },
   {
     "Name": "hasIntegers",
-    "Values": 163,
+    "Values": 164,
     "Coverage": "3%",
     "Question": "Does this language have a syntax and type for integers?",
     "Example": "true",
@@ -2886,7 +2896,7 @@
   },
   {
     "Name": "hasLineComments",
-    "Values": 554,
+    "Values": 555,
     "Coverage": "11%",
     "Question": "Does the language have line comments?",
     "Example": "true",
@@ -2896,7 +2906,7 @@
   },
   {
     "Name": "hasLists",
-    "Values": 23,
+    "Values": 24,
     "Coverage": "0%",
     "Question": "Does the language have lists?",
     "Example": "true",
@@ -3226,7 +3236,7 @@
   },
   {
     "Name": "hasPrintDebugging",
-    "Values": 321,
+    "Values": 322,
     "Coverage": "6%",
     "Question": "Does the language have a built in function that allows one to print debug?",
     "Example": "true",
@@ -3344,7 +3354,7 @@
   },
   {
     "Name": "hasSemanticIndentation",
-    "Values": 588,
+    "Values": 589,
     "Coverage": "11%",
     "Question": "Does the language use semantic indentation?",
     "Example": "false",
@@ -3454,7 +3464,7 @@
   },
   {
     "Name": "hasStrings",
-    "Values": 366,
+    "Values": 367,
     "Coverage": "7%",
     "Question": "Does the language have a strings data structure?",
     "Example": "true",
