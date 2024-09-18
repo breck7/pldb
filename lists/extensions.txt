@@ -45,8 +45,8 @@ Dart¶../concepts/dart.html¶dart¶1
 CUDA¶../concepts/cuda.html¶cu cuh¶2
 Markdown¶../concepts/markdown.html¶contents.lr markdown md mdown mdwn mdx mkd mkdn mkdown ronn workbook livemd scd¶13
 Racket¶../concepts/racket.html¶rkt rktl rktd scrbl plt ss scm¶7
-Visual Basic¶../concepts/visual-basic.html¶BAS bas ctl dsr frm FRX frx VBHTML vbhtml vbp vbw cls¶12
 WebAssembly¶../concepts/wasm.html¶wasm wast wat¶3
+Visual Basic¶../concepts/visual-basic.html¶BAS bas ctl dsr frm FRX frx VBHTML vbhtml vbp vbw cls¶12
 Solidity¶../concepts/solidity.html¶sol¶1
 Zig¶../concepts/zig.html¶zig¶1
 YAML¶../concepts/yaml.html¶clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql yamlsed ymlmysql¶15
@@ -88,13 +88,13 @@ Visual Basic .NET¶../concepts/visual-basic.net.html¶vb VB vbproj vbhtml¶4
 Protocol Buffers¶../concepts/protobuf.html¶proto¶1
 CMake¶../concepts/cmake.html¶cmake cmake.in CMakeLists.txt cmakein¶4
 Ini¶../concepts/ini.html¶buildozer.spec editorconfig ini lektorproject prefs cfg dof pro properties url inf .editorconfig service socket device mount automount swap target path timer slice scope¶23
+Gleam¶../concepts/gleam.html¶gleam¶1
 Brainfuck¶../concepts/brainfuck.html¶b bf¶2
 Yacc¶../concepts/yacc.html¶y yacc yy¶3
 APL¶../concepts/apl.html¶apl apla aplc aplf apli apln aplo dyalog dyapp mipage¶10
 Make¶../concepts/make.html¶am Gnumakefile gnumakefile Makefile makefile mk mak d make mkfile Makefile.* GNUmakefile¶12
 Assembly language¶../concepts/assembly-language.html¶a51 asm nasm S s i inc nas¶8
 odin¶../concepts/odin.html¶odin¶1
-Gleam¶../concepts/gleam.html¶gleam¶1
 Embedded Crystal¶../concepts/ecr.html¶ecr¶1
 OpenCL¶../concepts/opencl.html¶cl opencl¶2
 Scratch¶../concepts/scratch.html¶scratch sb sprite sb2 sprite2¶5
@@ -150,8 +150,8 @@ Less¶../concepts/less.html¶less¶1
 ColdFusion¶../concepts/coldfusion.html¶cfm cfml¶2
 XQuery¶../concepts/xquery.html¶xq xql xqm xqy xquery¶5
 Common Lisp¶../concepts/common-lisp.html¶lisp lsp l cl fasl asd ny podsl sexp¶9
-Smali¶../concepts/smali.html¶smali¶1
 mustache¶../concepts/mustache.html¶mustache¶1
+Smali¶../concepts/smali.html¶smali¶1
 Cap'n Proto¶../concepts/capn-proto.html¶capnp¶1
 Eiffel¶../concepts/eiffel.html¶e¶1
 PEG.js¶../concepts/pegjs.html¶pegjs¶1
@@ -235,8 +235,8 @@ ECL¶../concepts/ecl.html¶ecl eclxml¶2
 PowerBuilder¶../concepts/powerbuilder.html¶pbt sra srf srm srs sru srw¶7
 Click¶../concepts/click.html¶click¶1
 Scilab¶../concepts/scilab.html¶sci sce tst¶3
-Dogescript¶../concepts/dogescript.html¶djs¶1
 HLSL¶../concepts/hlsl.html¶cg cginc fxh hlsl hlsli shader fx¶7
+Dogescript¶../concepts/dogescript.html¶djs¶1
 JSP¶../concepts/java-server-pages.html¶jsp jspf¶2
 WDL¶../concepts/wdl.html¶wdl¶1
 YANG¶../concepts/yang.html¶yang¶1
@@ -295,8 +295,8 @@ Latte¶../concepts/latte.html¶latte¶1
 Vim script¶../concepts/vim-script.html¶vim vba vimrc vmb .vimrc .exrc .gvimrc _vimrc _exrc _gvimrc gvimrc¶11
 Modelica¶../concepts/modelica.html¶mo¶1
 Maxima¶../concepts/maxima.html¶mac max¶2
-xBase¶../concepts/xbase.html¶prg prw ch¶3
 B¶../concepts/b.html¶b¶1
+xBase¶../concepts/xbase.html¶prg prw ch¶3
 Gnuplot¶../concepts/gnuplot.html¶gp gnu gnuplot p plot plt¶6
 Self¶../concepts/self.html¶self¶1
 Shen¶../concepts/shen.html¶shen¶1
@@ -314,8 +314,8 @@ SourcePawn¶../concepts/sourcepawn.html¶sp inc¶2
 Io¶../concepts/io.html¶io¶1
 LFE¶../concepts/lfe.html¶lfe hrl¶2
 Isabelle¶../concepts/isabelle.html¶ROOT thy¶2
-NCAR Command Language¶../concepts/ncl.html¶ncl¶1
 Fantom¶../concepts/fantom.html¶fan¶1
+NCAR Command Language¶../concepts/ncl.html¶ncl¶1
 vdscript¶../concepts/vdscript.html¶VirtualDub.jobs¶1
 NSIS¶../concepts/nsis.html¶nsi nsh¶2
 Pike¶../concepts/pike.html¶pike pmod¶2
@@ -390,9 +390,9 @@ nesC¶../concepts/nesc.html¶nc¶1
 Objective-J¶../concepts/objective-j.html¶j sj¶2
 EmberScript¶../concepts/emberscript.html¶em emberscript¶2
 Snowball¶../concepts/snowball-programming-language.html¶sbl¶1
+Bend¶../concepts/bend.html¶bend¶1
 Classroom Object Oriented Language¶../concepts/cool.html¶cl¶1
 Croc¶../concepts/croc.html¶croc¶1
-Bend¶../concepts/bend.html¶bend¶1
 BibTeX¶../concepts/bibtex.html¶bib bibtex¶2
 JSLT¶../concepts/jslt.html¶jslt¶1
 Harbour¶../concepts/harbour.html¶hb prg ch hbp¶4
@@ -476,8 +476,8 @@ GN¶../concepts/generate-ninja.html¶gn gni¶2
 Cycript¶../concepts/cycript.html¶cy¶1
 SMT¶../concepts/smt.html¶smt2 smt¶2
 Unicon¶../concepts/unicon.html¶icn¶1
-monte¶../concepts/monte.html¶mt¶1
 Redcode¶../concepts/redcode.html¶cw¶1
+monte¶../concepts/monte.html¶mt¶1
 EML¶../concepts/mbox.html¶eml mbox¶2
 Slice¶../concepts/slice.html¶ice¶1
 Jolie¶../concepts/jolie.html¶ol iol¶2
@@ -657,10 +657,10 @@ MPS Format¶../concepts/mps-format.html¶mps¶1
 Bizubee¶../concepts/bizubee.html¶jsl¶1
 Property list¶../concepts/plist.html¶plist¶1
 Velocity Template Language¶../concepts/vtl-lang.html¶vm vtl¶2
-AmbientTalk¶../concepts/ambienttalk.html¶at¶1
 CoNLL-U¶../concepts/conll-u.html¶conllu conll¶2
 FIGlet Font¶../concepts/figlet-font.html¶flf¶1
 RPM Spec¶../concepts/rpm-spec.html¶spec¶1
+AmbientTalk¶../concepts/ambienttalk.html¶at¶1
 Bruijn¶../concepts/bruijn.html¶bruijn¶1
 beads-lang¶../concepts/beads-lang.html¶beads¶1
 Shapefile¶../concepts/shapefile.html¶shp shx dbf¶3

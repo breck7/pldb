@@ -86,7 +86,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 1762,
+    "Values": 1761,
     "Coverage": "35%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -1084,7 +1084,7 @@ const measures = [
   },
   {
     "Name": "fileExtensions",
-    "Values": 239,
+    "Values": 240,
     "Coverage": "4%",
     "Question": "What are the file extensions for this language?",
     "Example": "a51",
@@ -1124,7 +1124,7 @@ const measures = [
   },
   {
     "Name": "compilesTo",
-    "Values": 83,
+    "Values": 84,
     "Coverage": "1%",
     "Question": "Which language(s) does this language primarily compile to?",
     "Example": "beam-bytecode",
@@ -3795,7 +3795,7 @@ const measures = [
   },
   {
     "Name": "wikipedia",
-    "Values": 1914,
+    "Values": 1915,
     "Coverage": "38%",
     "Question": "What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?",
     "Example": "https://en.wikipedia.org/wiki/IBM_1620",

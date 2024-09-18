@@ -7,7 +7,7 @@ maintainers	3	0%	What are the name(s) of the maintainer(s) of the language delim
 measurements	5020	100%	How many measurements do we have about this thing?	11	number		1.11	true			
 tags	5020	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
 rijuRepl_website	28	0%	What is the URL of the official homepage for this language project?	https://www.adaic.org/	string		1.21	false			
-website	1762	35%	What is the URL of the official homepage for this language project?	https://www.11ty.dev/	string		1.21	false			
+website	1761	35%	What is the URL of the official homepage for this language project?	https://www.11ty.dev/	string		1.21	false			
 spec	39	0%	What is a URL to the official spec for this language?	https://atproto.com/specs/atp	string		1.22	false			
 foundationScore	5020	100%	How many languages are built using this language?	0	number		1.3	true			
 blog	69	1%	What is the URL to the official blog for this language?	https://www.11ty.dev/blog/	string		1.33	false			
@@ -107,11 +107,11 @@ wikipedia_fileExtensions	106	2%	What are the file extensions for this language?	
 githubLanguage_fileExtensions	519	10%	What are the file extensions for this language?	bsl os	string		1.991	false			
 leachim6_fileExtensions	368	7%	What are the file extensions for this language?	abap	string		1.991	false			
 pygmentsHighlighter_fileExtensions	326	6%	What are the file extensions for this language?	abap ABAP	string		1.991	false			
-fileExtensions	239	4%	What are the file extensions for this language?	a51	string		1.991	false			
+fileExtensions	240	4%	What are the file extensions for this language?	a51	string		1.991	false			
 interviews	11	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		1.999	false			
 writtenIn	1166	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
-compilesTo	83	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
+compilesTo	84	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
 isPublicDomain	23	0%	Is this public domain?	true	boolean		2	false			
 isOpenSource	1544	30%	Is this an open source project?	true	boolean		2.01	true			
 exercism	71	1%	What is a URL to learn this language on Exercism?	https://exercism.org/tracks/8th	string		2.1	false			
@@ -376,7 +376,7 @@ letterFirstIdentifiers	2	0%	Must identifiers start with a letter?	true	boolean		
 mergesWhitespace	2	0%	Does this language merge whitespace, so N spaces is treated the same as a single space?	true	boolean		7	false			
 supportsBreakpoints	2	0%	Does this language support breakpoints?	true	boolean		7	false			
 jupyterKernel	73	1%	What is a link to a Jupyter Kernel for this language?	https://github.com/mattpap/IAldor	string	jupyter.org	9	false			
-wikipedia	1914	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
+wikipedia	1915	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
 bookCount	5020	100%	What is the count of booked we have published about this thing?	0	number		10	true			
 paperCount	5020	100%	What is the count of papers we have published about this thing?	0	number		10	true			
 hopl	1807	35%	What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?	https://hopl.info/showlanguage.prx?exp=4365	string	hopl.info	11	false			
