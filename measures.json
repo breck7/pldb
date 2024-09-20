@@ -198,7 +198,7 @@
     "Values": 5021,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21731",
+    "Example": "21730",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -931,7 +931,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1158,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -941,7 +941,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1120,
+    "Values": 1123,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -951,7 +951,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1158,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -961,7 +961,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1158,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -971,7 +971,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1155,
+    "Values": 1158,
     "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
