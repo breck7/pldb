@@ -604,16 +604,6 @@ access¶3¶3%¶Ada VHDL ABAP
 abs¶3¶3%¶Ada VHDL Ligo
 word¶3¶3%¶Pascal ABAP Aith
 single¶3¶3%¶Pascal Chapel ABAP
-returns¶3¶3%¶Solidity Protocol Buffers ABAP
-constant¶3¶3%¶Solidity Ada VHDL
-uint64¶3¶3%¶Solidity Angelscript orange
-uint16¶3¶3%¶Solidity Angelscript orange
-uint8¶3¶3%¶Solidity Angelscript orange
-int64¶3¶3%¶Solidity Angelscript orange
-int32¶3¶3%¶Solidity Angelscript orange
-int16¶3¶3%¶Solidity Angelscript orange
-int8¶3¶3%¶Solidity Angelscript orange
-pragma¶3¶3%¶Solidity Ada Apex
 With¶3¶3%¶Visual Basic Visual Basic .NET SpiderBasic
 When¶3¶3%¶Visual Basic Visual Basic .NET Apex
 Wend¶3¶3%¶Visual Basic Visual Basic .NET SpiderBasic
@@ -655,9 +645,19 @@ Const¶3¶3%¶Visual Basic Visual Basic .NET Apex
 Char¶3¶3%¶Visual Basic Visual Basic .NET Apex
 Catch¶3¶3%¶Visual Basic Visual Basic .NET Apex
 Call¶3¶3%¶Visual Basic Visual Basic .NET Sophia
-Byte¶3¶3%¶Visual Basic Solidity Visual Basic .NET
 Boolean¶3¶3%¶Visual Basic Visual Basic .NET Apex
 As¶3¶3%¶Visual Basic Visual Basic .NET Apex
+returns¶3¶3%¶Solidity Protocol Buffers ABAP
+constant¶3¶3%¶Solidity Ada VHDL
+uint64¶3¶3%¶Solidity Angelscript orange
+uint16¶3¶3%¶Solidity Angelscript orange
+uint8¶3¶3%¶Solidity Angelscript orange
+int64¶3¶3%¶Solidity Angelscript orange
+int32¶3¶3%¶Solidity Angelscript orange
+int16¶3¶3%¶Solidity Angelscript orange
+int8¶3¶3%¶Solidity Angelscript orange
+Byte¶3¶3%¶Solidity Visual Basic Visual Basic .NET
+pragma¶3¶3%¶Solidity Ada Apex
 TOP¶3¶3%¶COBOL Transact-SQL Amazon Redshift
 THAN¶3¶3%¶COBOL PostgreSQL Transact-SQL
 TERMINATE¶3¶3%¶COBOL PostgreSQL Transact-SQL
@@ -1464,13 +1464,6 @@ shortint¶2¶2%¶Pascal SystemVerilog
 shl¶2¶2%¶Pascal nimrod
 longint¶2¶2%¶Pascal SystemVerilog
 ¶2¶2%¶Pascal HOPE
-mapping¶2¶2%¶Solidity ABAP
-bytes¶2¶2%¶Solidity Sophia
-uint32¶2¶2%¶Solidity Angelscript
-Int¶2¶2%¶Solidity Apex
-address¶2¶2%¶Solidity Sophia
-modifier¶2¶2%¶Solidity ABAP
-contract¶2¶2%¶Solidity Sophia
 Xor¶2¶2%¶Visual Basic Visual Basic .NET
 WriteOnly¶2¶2%¶Visual Basic Visual Basic .NET
 WithEvents¶2¶2%¶Visual Basic Visual Basic .NET
@@ -1555,6 +1548,13 @@ AndAlso¶2¶2%¶Visual Basic Visual Basic .NET
 Alias¶2¶2%¶Visual Basic Visual Basic .NET
 AddressOf¶2¶2%¶Visual Basic Visual Basic .NET
 AddHandler¶2¶2%¶Visual Basic Visual Basic .NET
+mapping¶2¶2%¶Solidity ABAP
+bytes¶2¶2%¶Solidity Sophia
+uint32¶2¶2%¶Solidity Angelscript
+Int¶2¶2%¶Solidity Apex
+address¶2¶2%¶Solidity Sophia
+modifier¶2¶2%¶Solidity ABAP
+contract¶2¶2%¶Solidity Sophia
 sync¶2¶2%¶Dart Chapel
 part¶2¶2%¶Dart ABAP
 deferred¶2¶2%¶Dart ABAP
@@ -4152,6 +4152,8 @@ aliased¶1¶1%¶Ada
 reverse¶1¶1%¶Ada
 abort¶1¶1%¶Ada
 :=¶1¶1%¶Pascal
+NameOf¶1¶1%¶Visual Basic
+Async¶1¶1%¶Visual Basic
 suicide¶1¶1%¶Solidity
 payable¶1¶1%¶Solidity
 inherited¶1¶1%¶Solidity
@@ -5304,8 +5306,6 @@ Ufixed¶1¶1%¶Solidity
 Fixed¶1¶1%¶Solidity
 Uint¶1¶1%¶Solidity
 solidity¶1¶1%¶Solidity
-NameOf¶1¶1%¶Visual Basic
-Async¶1¶1%¶Visual Basic
 rethrow¶1¶1%¶Dart
 factory¶1¶1%¶Dart
 covariant¶1¶1%¶Dart
