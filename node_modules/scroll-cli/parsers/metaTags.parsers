@@ -19,6 +19,8 @@ metaTagsParser
   compile() {
    const { title, description, openGraphImage, SCROLL_VERSION, canonicalUrl, gitRepo } = this.parent.file
    const rssFeedUrl = this.parent.get("rssFeedUrl")
+   const favicon = this.parent.get("favicon")
+   const faviconTag = favicon ? `<link rel="icon" href="${favicon}">` : ""
    const rssTag = rssFeedUrl ? `<link rel="alternate" type="application/rss+xml" title="${title}" href="${rssFeedUrl}">` : ""
    const gitTag = gitRepo ? `<link rel="source" type="application/git" title="Source Code Repository" href="${gitRepo}">` : ""
    return `<head>
@@ -33,6 +35,7 @@ metaTagsParser
    <meta property="og:title" content="${title}">
    <meta property="og:description" content="${description}">
    <meta property="og:image" content="${openGraphImage}">
+   ${faviconTag}
    ${gitTag}
    ${rssTag}
    <meta name="twitter:card" content="summary_large_image">

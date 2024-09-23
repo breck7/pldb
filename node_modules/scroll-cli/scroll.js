@@ -479,6 +479,7 @@ parsers/errors.parsers`
             const results = require(tempPath)
             Object.keys(results).forEach(key => (macroMap[key] = results[key]))
           } catch (err) {
+            console.error(`Error in evalMacros in file '${this.filePath}'`)
             console.error(err)
           } finally {
             Disk.rm(tempPath)

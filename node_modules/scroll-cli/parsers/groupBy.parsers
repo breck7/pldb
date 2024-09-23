@@ -13,7 +13,7 @@ scrollGroupByParser
    const groupByColNames = this.getAtomsFrom(1)
    const {coreTable} = this.parent
    if (!groupByColNames.length) return coreTable
-   const newCols = [].map(reduceParticle => {
+   const newCols = this.findParticles("reduce").map(reduceParticle => {
     return {
      source: reduceParticle.getAtom(1),
      reduction: reduceParticle.getAtom(2),
@@ -70,8 +70,16 @@ scrollGroupByParser
          // todo: add more reductions? count, stddev, median, variance.
          colsToReduce.forEach((col) => {
            const sourceColName = col.source
-           const values = group.map((row) => row[sourceColName]).filter((val) => typeof val === "number" && !isNaN(val))
            const reduction = col.reduction
+           if (reduction === "concat") {
+              newRow[col.name] = group.map((row) => row[sourceColName]).join(" ")
+              return 
+           }
+           if (reduction === "first") {
+              newRow[col.name] = group[0][sourceColName]
+              return 
+           }
+           const values = group.map((row) => row[sourceColName]).filter((val) => typeof val === "number" && !isNaN(val))
            let reducedValue = firstRow[sourceColName]
            if (reduction === "sum") reducedValue = values.reduce((prev, current) => prev + current, 0)
            if (reduction === "max") reducedValue = Math.max(...values)
