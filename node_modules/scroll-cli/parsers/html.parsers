@@ -36,6 +36,7 @@ scrollBrParser
  description A break.
  extends abstractScrollParser
  catchAllAtomType integerAtom
+ boolean isHtml true
  javascript
   compile() {
    return `<br>`.repeat(parseInt(this.getAtom(1) || 1))
@@ -56,6 +57,7 @@ htmlInlineParser
  popularity 0.005788
  extends abstractHtmlParser
  atoms htmlAnyAtom
+ boolean isHtml true
  pattern ^<
  description Inline HTML.
  boolean isPopular true

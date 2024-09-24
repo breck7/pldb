@@ -1,0 +1,16 @@
+clocParser
+ extends scrollTableParser
+ description Output results of cloc as table.
+ crux cloc
+ string copyFromExternal clocLangs.txt
+ javascript
+  delimiter = ","
+  get delimitedData() {
+   const { execSync } = require("child_process")
+   const results = execSync(this.command).toString().trim()
+   const csv = results.split("\n\n").pop().replace(/,\"github\.com\/AlDanial.+/, "") // cleanup output
+   return csv
+  }
+  get command(){
+   return `cloc --vcs git . --csv --read-lang-def=clocLangs.txt ${this.content || ""}`
+  }

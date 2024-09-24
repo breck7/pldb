@@ -1,6 +1,6 @@
 {
   "name": "scroll-cli",
-  "version": "133.2.0",
+  "version": "133.3.0",
   "description": "A language for scientists of all ages. A curated collection of tools for refining and sharing thoughts.",
   "main": "scroll.js",
   "engines": {
@@ -13,8 +13,7 @@
     "format": "scroll list | scroll format",
     "open": "open index.html",
     "debug": "node --inspect tests/scroll.test.js;",
-    "test": "node tests/scroll.test.js",
-    "cloc": "cloc --vcs git . --read-lang-def=tests/clocLangs.txt"
+    "test": "node tests/scroll.test.js"
   },
   "bin": {
     "scroll": "./scroll.js"
