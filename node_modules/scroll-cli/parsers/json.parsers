@@ -1,0 +1,11 @@
+quickIncludeJsonParser
+ popularity 0.007524
+ description Include JSON and assign to window.
+ extends abstractQuickIncludeParser
+ atoms urlAtom
+ pattern ^[^\s]+\.json$
+ javascript
+  compile() {
+   const varName = this.filename.split("/").pop().replace(".json", "")
+   return `<script>window.${varName} = ${this.root.readFile(this.filename)}</script>`
+  }
