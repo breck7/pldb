@@ -11,6 +11,7 @@ description Avisynth is a scripting language and a collection of filters for sim
 lab https://forum.doom9.org/showthread.php?t=181351
 fileExtensions .avs
 writtenIn restructuredtext cpp html cmake svg make yaml c markdown python powershell
+leetSheets http://avisynth.nl/index.php/First_script
 
 isOpenSource true
 docs http://avisynth.nl/index.php/Main_Page
@@ -29,7 +30,6 @@ example
  path="P:\ath\To\Files\"
  lumathresh=80
  imageprefix="prefix_"
-leetSheets http://avisynth.nl/index.php/First_script
 
 sourcehutRepo https://sourceforge.net/projects/avisynth2/
 githubRepo https://github.com/AviSynth/AviSynthPlus

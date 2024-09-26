@@ -163,7 +163,7 @@ abstractChatUrlMeasureParser
 leetSheetsParser
  extends abstractUrlMeasureParser
  description What is a URL(s) to a leet sheet(s) for this language?
- float sortIndex 3.3
+ float sortIndex 1.9999
  catchAllAtomType urlAtom
 
 codeMirrorParser

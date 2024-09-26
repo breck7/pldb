@@ -5,6 +5,7 @@ name Django
 appeared 2005
 tags library
 lab Django Software Foundation
+leetSheets https://cheatsheets.zip/django
 
 isOpenSource true
 fileType text
@@ -19,7 +20,6 @@ leachim6 Django
   
   def index(request):
       return HttpResponse("Hello World")
-leetSheets https://cheatsheets.zip/django
 
 wikipedia https://en.wikipedia.org/wiki/Django_(web_framework)
  related python regex html xml json nginx-config postgresql mysql sqlite mongodb jython ruby perl php erlang isbn

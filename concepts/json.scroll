@@ -9,6 +9,7 @@ website https://www.json.org/
 spec https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf
 latestVersion 1
 lab Crockford.com
+leetSheets https://cheatsheets.zip/json
 
 isOpenSource true
 influencedBy javascript
@@ -29,7 +30,6 @@ leachim6 JSON
  example
   { "hello": "world" }
   
-leetSheets https://cheatsheets.zip/json
 languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
  writtenIn typescript
 

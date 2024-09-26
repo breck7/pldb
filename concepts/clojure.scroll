@@ -13,6 +13,7 @@ latestVersion 1.12.0
 lab Cognitect
 fileExtensions clj cljs cljc edn
 writtenIn java clojure markdown yaml html xml bourne-shell
+leetSheets http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
 
 isOpenSource true
 exercism https://exercism.org/tracks/clojure
@@ -72,7 +73,6 @@ leachim6 Clojure
  example
   (println "Hello World")
   
-leetSheets http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
 gource https://www.youtube.com/watch?v=wM5sxT0BEdU
 languageServerProtocolProject https://github.com/snoe/clojure-lsp
  writtenIn clojure

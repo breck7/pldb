@@ -9,6 +9,7 @@ website http://www.yaml.org/spec/1.2/spec.html#Introduction
 spec https://yaml.org/spec/1.2.2/
 latestVersion 1.2.2
 standsFor YAML Ain't Markup Language
+leetSheets https://cheatsheets.zip/yaml
 
 isOpenSource true
 clocExtensions clang-format clang-tidy gemrc glide.lock mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage yml yml.mysql
@@ -29,7 +30,6 @@ leachim6 YAML
  fileExtensions yaml
  example
   hello: world
-leetSheets https://cheatsheets.zip/yaml
 languageServerProtocolProject https://github.com/redhat-developer/yaml-language-server
  writtenIn typescript
 

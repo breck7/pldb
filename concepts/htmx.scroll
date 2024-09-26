@@ -11,6 +11,7 @@ latestVersion 1.9.12
 description htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
 lab https://github.com/bigskysoftware/
 writtenIn markdown javascript html svg json css toml typescript bourne-shell yaml xml ruby csv
+leetSheets https://htmx.org/reference/
 
 docs https://htmx.org/docs/
 repoStats
@@ -32,7 +33,6 @@ example
  <button hx-post="/clicked" hx-swap="outerHTML">
    Click Me
  </button>
-leetSheets https://htmx.org/reference/
 
 githubRepo https://github.com/bigskysoftware/htmx
  firstCommit 2020

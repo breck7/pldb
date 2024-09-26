@@ -10,6 +10,7 @@ blog https://blog.arduino.cc/
 releaseNotes https://www.arduino.cc/en/software/ReleaseNotes
 description The Arduino Programming Language is mostly C++ with
 lab Arduino
+leetSheets https://github.com/liffiton/Arduino-Cheat-Sheet
 
 extensionOf cpp
 docs https://docs.arduino.cc/
@@ -33,7 +34,6 @@ leachim6 Arduino
   void loop() {
   
   }
-leetSheets https://github.com/liffiton/Arduino-Cheat-Sheet
 
 printToken Serial.println
 stringToken "

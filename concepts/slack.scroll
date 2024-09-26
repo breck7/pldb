@@ -8,6 +8,7 @@ tags pl
 website https://nsl.com/k/slack/slack.htm
 description SLACK is a compiler for a lazy functional K, modelled on David Turner's SASL language, the precursor of Haskell and Miranda.
 lab https://nsl.com/
+leetSheets https://cheatsheets.zip/slack
 
 influencedBy k sasl
 docs https://nsl.com/k/slack/slack.htm
@@ -15,4 +16,3 @@ country USA
 
 example
  gcd a b is if b=0 then a else gcd b(a!b)
-leetSheets https://cheatsheets.zip/slack

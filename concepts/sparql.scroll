@@ -7,6 +7,7 @@ tags queryLanguage
 webRepl https://dbpedia.org/sparql
 standsFor SPARQL Protocol and RDF Query Language
 lab W3C
+leetSheets http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
 
 fileType text
 docs https://www.w3.org/TR/rdf-sparql-query/ https://docs.stardog.com/tutorials/learn-sparql
@@ -26,7 +27,6 @@ leachim6 SparQL
     VALUES ?h { "Hello World" }
   }
   
-leetSheets http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
 languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/sparql-language-server
  writtenIn typescript
 
