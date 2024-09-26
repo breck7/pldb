@@ -8,6 +8,7 @@ tags template
 latestVersion 1.0.0
 lab https://apex.sh
 writtenIn ejs javascript html markdown make json yaml css
+leetSheets https://cheatsheets.zip/ejs
 
 isOpenSource true
 clocExtensions ejs
@@ -24,7 +25,6 @@ example
  <% if (user) { %>
     <h2><%= user.name %></h2>
  <% } %>
-leetSheets https://cheatsheets.zip/ejs
 
 githubRepo https://github.com/tj/ejs
  firstCommit 2010

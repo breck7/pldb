@@ -11,12 +11,11 @@ standsFor Microarchitecture Description Language
 description We’ve created a DSL and compiler for modeling micro-architecture that handles a very broad class of architectures - CPU, GPUs, VLIWs, DSPs, ML accelerators, and embedded devices. This effort grew out of a need to quickly develop and experiment with high-quality compilers and tools to facilitate rapid architecture exploration. We named the DSL “MDL” for “Microarchitecture Description Language”
 lab https://github.com/MPACT-ORG
 writtenIn cpp
+leetSheets https://github.com/MPACT-ORG/llvm-project/tree/work#the-llvm-compiler-infrastructure
 
 docs https://llvm.org/docs/GettingStarted.html
 country United States
 reference https://discourse.llvm.org/t/rfc-mdl-a-micro-architecture-description-language-for-llvm/66409/4
-
-leetSheets https://github.com/MPACT-ORG/llvm-project/tree/work#the-llvm-compiler-infrastructure
 
 githubRepo https://github.com/MPACT-ORG/llvm-project/
  stars 31

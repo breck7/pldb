@@ -7,6 +7,7 @@ tags pl
 website https://pharo.org/
 description Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
 lab https://consortium.pharo.org
+leetSheets http://files.pharo.org/media/pharoCheatSheet.pdf
 
 isOpenSource true
 exercism https://exercism.org/tracks/pharo
@@ -25,7 +26,6 @@ leachim6 Pharo
  fileExtensions st
  example
   'Hello World' crLog
-leetSheets http://files.pharo.org/media/pharoCheatSheet.pdf
 
 printToken crLog
 stringToken '

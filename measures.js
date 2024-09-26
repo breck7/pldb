@@ -1133,6 +1133,16 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "leetSheets",
+    "Values": 82,
+    "Coverage": "1%",
+    "Question": "What is a URL(s) to a leet sheet(s) for this language?",
+    "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",
+    "Type": "string",
+    "SortIndex": 1.9999,
+    "IsComputed": false
+  },
+  {
     "Name": "isPublicDomain",
     "Values": 23,
     "Coverage": "0%",
@@ -1895,16 +1905,6 @@ const measures = [
     "Type": "string",
     "Source": "github.com/leachim6/hello-world",
     "SortIndex": 3.2,
-    "IsComputed": false
-  },
-  {
-    "Name": "leetSheets",
-    "Values": 82,
-    "Coverage": "1%",
-    "Question": "What is a URL(s) to a leet sheet(s) for this language?",
-    "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",
-    "Type": "string",
-    "SortIndex": 3.3,
     "IsComputed": false
   },
   {

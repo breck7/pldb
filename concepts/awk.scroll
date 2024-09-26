@@ -9,6 +9,7 @@ website http://www.cs.princeton.edu/~bwk/btl.mirror/
 standsFor Aho, Weinberger, Kernighan
 lab Bell Labs
 interviews https://pldb.io/blog/brianKernighan.html
+leetSheets https://cheatsheets.zip/awk
 
 exercism https://exercism.org/tracks/awk
 tryItOnline https://tio.run/#awk
@@ -51,7 +52,6 @@ leachim6 AWK
   # awk -f awk.awk
   BEGIN { print "Hello World" }
   
-leetSheets https://cheatsheets.zip/awk
 
 lineCommentToken #
 printToken print

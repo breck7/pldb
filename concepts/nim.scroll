@@ -14,6 +14,7 @@ lab https://github.com/nim-lang
 fileExtensions nim
 writtenIn nim markdown html yaml c bourne-shell json restructuredtext python css assembly-language csv sql tex ini xml bash
 compilesTo c cpp objective-c javascript
+leetSheets https://cheatsheets.zip/nim
 
 isOpenSource true
 exercism https://exercism.org/tracks/nim
@@ -53,7 +54,6 @@ leachim6 Nim
  example
   echo("Hello World")
   
-leetSheets https://cheatsheets.zip/nim
 languageServerProtocolProject https://github.com/PMunch/nimlsp
  writtenIn nim
 compilerExplorer Nim
