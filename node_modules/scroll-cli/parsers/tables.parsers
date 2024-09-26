@@ -322,6 +322,7 @@ scrollReverseParser
 scrollComposeParser
  extends abstractTableTransformParser
  description Add column using format string.
+ catchAllAtomType stringAtom
  crux compose
  javascript
   get coreTable() {

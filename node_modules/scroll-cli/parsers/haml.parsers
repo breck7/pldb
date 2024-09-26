@@ -1,0 +1,26 @@
+hamlParser
+ popularity 0.007524
+ description HTML tag via HAML syntax.
+ extends abstractScrollParser
+ atoms urlAtom
+ catchAllAtomType stringAtom
+ pattern ^[\w-]+(#|\.)[\w-\.\#]+ *
+ javascript
+  get tag() {
+    return this.atoms[0].split(/[#\.]/).shift()
+  }
+  get htmlId() {
+    const idMatch = this.atoms[0].match(/#([\w-]+)/)
+    return idMatch ? idMatch[1] : ""
+  }
+  get htmlClasses() {
+    return this.atoms[0].match(/\.([\w-]+)/g)?.map(cls => cls.slice(1)) || [];
+  }
+  compile() {
+   const {htmlId, htmlClasses, content, tag} = this
+   this.parent.sectionStack.push(`</${tag}>`)
+   return `<${tag} ${htmlId ? ' id="' + htmlId + '"' : ""} ${htmlClasses ? ' class="' + htmlClasses.join(" ") + '"' : ""}>${content || ""}`
+  }
+  compileTxt() {
+    return this.content
+  }

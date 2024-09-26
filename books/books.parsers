@@ -1,0 +1,39 @@
+
+bookTitleParser
+ // todo: think through scroll name conflict better
+ extends abstractIdParser
+ description What is the title of the book?
+
+bookAuthorsParser
+ // todo: think through scroll name conflict better
+ crux authors
+ extends abstractStringMeasureParser
+ description Who are the author(s) of the book?
+
+pdfParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a PDF for the book?
+
+sourceParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the source code of the book?
+
+homepageParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the website of the book?
+
+yearParser
+ extends abstractIntegerMeasureParser
+ description What year was the book published?
+
+publisherParser
+ extends abstractStringMeasureParser
+ description Which company published the book?
+
+languagesUsedParser
+ extends abstractStringMeasureParser
+ description Which programming languages are used in this book?
+
+pagesParser
+ extends abstractIntegerMeasureParser
+ description How many pages does the book have?

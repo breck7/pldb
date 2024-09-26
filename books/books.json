@@ -2,7 +2,7 @@
   {
     "bookTitle": "The C Programming Language",
     "authors": "Brian W. Kernighan and Dennis M. Ritchie",
-    "webUrl": "https://en.wikipedia.org/wiki/The_C_Programming_Language",
+    "homepage": "https://en.wikipedia.org/wiki/The_C_Programming_Language",
     "publisher": "Prentice Hall",
     "languagesUsed": "c",
     "year": 1978,
@@ -11,7 +11,7 @@
   {
     "bookTitle": "Code Complete",
     "authors": "Steve McConnell",
-    "webUrl": "https://www.stevemcconnell.com/cc.htm",
+    "homepage": "https://www.stevemcconnell.com/cc.htm",
     "publisher": "Microsoft Press",
     "year": 1993,
     "pages": 960
@@ -19,7 +19,7 @@
   {
     "bookTitle": "Design Patterns: Elements of Reusable Object-Oriented Software",
     "authors": "Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides",
-    "webUrl": "https://en.wikipedia.org/wiki/Design_Patterns",
+    "homepage": "https://en.wikipedia.org/wiki/Design_Patterns",
     "publisher": "Addison-Wesley",
     "languagesUsed": "cpp smalltalk",
     "year": 1994,
@@ -28,7 +28,7 @@
   {
     "bookTitle": "Clean Code: A Handbook of Agile Software Craftsmanship",
     "authors": "Robert C. Martin",
-    "webUrl": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+    "homepage": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
     "publisher": "Prentice Hall",
     "languagesUsed": "java",
     "year": 2008,
@@ -37,7 +37,7 @@
   {
     "bookTitle": "The Art of Computer Programming",
     "authors": "Donald E. Knuth",
-    "webUrl": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
+    "homepage": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
     "publisher": "Addison-Wesley",
     "year": 1968,
     "pages": 3168
@@ -45,7 +45,7 @@
   {
     "bookTitle": "Introduction to the Theory of Computation",
     "authors": "Michael Sipser",
-    "webUrl": "https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X",
+    "homepage": "https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X",
     "publisher": "Cengage Learning",
     "year": 1996,
     "pages": 504
@@ -53,7 +53,7 @@
   {
     "bookTitle": "The Pragmatic Programmer: Your Journey to Mastery",
     "authors": "Andrew Hunt and David Thomas",
-    "webUrl": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
+    "homepage": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
     "publisher": "Addison-Wesley",
     "year": 1999,
     "pages": 352
@@ -61,7 +61,7 @@
   {
     "bookTitle": "Structure and Interpretation of Computer Programs",
     "authors": "Harold Abelson and Gerald Jay Sussman and Julie Sussman",
-    "pdfUrl": "https://web.mit.edu/6.001/6.037/sicp.pdf",
+    "pdf": "https://web.mit.edu/6.001/6.037/sicp.pdf",
     "publisher": "MIT Press",
     "languagesUsed": "scheme lisp",
     "year": 1985,
@@ -70,7 +70,7 @@
   {
     "bookTitle": "Refactoring: Improving the Design of Existing Code",
     "authors": "Martin Fowler",
-    "webUrl": "https://martinfowler.com/books/refactoring.html",
+    "homepage": "https://martinfowler.com/books/refactoring.html",
     "publisher": "Addison-Wesley",
     "languagesUsed": "java",
     "year": 1999,
@@ -79,7 +79,7 @@
   {
     "bookTitle": "Effective Java",
     "authors": "Joshua Bloch",
-    "webUrl": "https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/",
+    "homepage": "https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/",
     "publisher": "Addison-Wesley",
     "languagesUsed": "java",
     "year": 2001,
@@ -88,7 +88,7 @@
   {
     "bookTitle": "Programming Pearls",
     "authors": "Jon Bentley",
-    "webUrl": "https://en.wikipedia.org/wiki/Programming_Pearls",
+    "homepage": "https://en.wikipedia.org/wiki/Programming_Pearls",
     "publisher": "Addison-Wesley",
     "year": 1986,
     "pages": 256
@@ -96,7 +96,7 @@
   {
     "bookTitle": "Cracking the Coding Interview",
     "authors": "Gayle Laakmann McDowell",
-    "webUrl": "https://www.crackingthecodinginterview.com/",
+    "homepage": "https://www.crackingthecodinginterview.com/",
     "publisher": "CareerCup",
     "languagesUsed": "java cpp",
     "year": 2008,
@@ -105,7 +105,7 @@
   {
     "bookTitle": "Introduction to Algorithms",
     "authors": "Thomas H. Cormen and Charles E. Leiserson and Ronald L. Rivest and Clifford Stein",
-    "webUrl": "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+    "homepage": "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
     "publisher": "MIT Press",
     "year": 1990,
     "pages": 1312
@@ -113,7 +113,7 @@
   {
     "bookTitle": "Head First Design Patterns",
     "authors": "Eric Freeman and Elisabeth Robson and Bert Bates and Kathy Sierra",
-    "webUrl": "https://www.oreilly.com/library/view/head-first-design/0596007124/",
+    "homepage": "https://www.oreilly.com/library/view/head-first-design/0596007124/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "java",
     "year": 2004,
@@ -122,7 +122,7 @@
   {
     "bookTitle": "You Don't Know JS",
     "authors": "Kyle Simpson",
-    "sourceUrl": "https://github.com/getify/You-Dont-Know-JS",
+    "source": "https://github.com/getify/You-Dont-Know-JS",
     "publisher": "O'Reilly Media",
     "languagesUsed": "javascript",
     "year": 2015,
@@ -131,7 +131,7 @@
   {
     "bookTitle": "The Clean Coder: A Code of Conduct for Professional Programmers",
     "authors": "Robert C. Martin",
-    "webUrl": "https://www.oreilly.com/library/view/clean-coder-the/9780132542913/",
+    "homepage": "https://www.oreilly.com/library/view/clean-coder-the/9780132542913/",
     "publisher": "Pearson",
     "year": 2011,
     "pages": 256
@@ -139,7 +139,7 @@
   {
     "bookTitle": "Designing Data-Intensive Applications",
     "authors": "Martin Kleppmann",
-    "webUrl": "https://dataintensive.net/",
+    "homepage": "https://dataintensive.net/",
     "publisher": "O'Reilly Media",
     "year": 2017,
     "pages": 616
@@ -147,7 +147,7 @@
   {
     "bookTitle": "Python Crash Course",
     "authors": "Eric Matthes",
-    "webUrl": "https://nostarch.com/python-crash-course-3rd-edition",
+    "homepage": "https://nostarch.com/python-crash-course-3rd-edition",
     "publisher": "No Starch Press",
     "languagesUsed": "python",
     "year": 2015,
@@ -156,8 +156,8 @@
   {
     "bookTitle": "Eloquent JavaScript",
     "authors": "Marijn Haverbeke",
-    "pdfUrl": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
-    "webUrl": "https://eloquentjavascript.net/",
+    "pdf": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
+    "homepage": "https://eloquentjavascript.net/",
     "publisher": "No Starch Press",
     "languagesUsed": "javascript",
     "year": 2011,
@@ -166,7 +166,7 @@
   {
     "bookTitle": "The Mythical Man-Month",
     "authors": "Frederick P. Brooks Jr.",
-    "webUrl": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month",
+    "homepage": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month",
     "publisher": "Addison-Wesley",
     "year": 1975,
     "pages": 336
@@ -174,7 +174,7 @@
   {
     "bookTitle": "Code: The Hidden Language of Computer Hardware and Software",
     "authors": "Charles Petzold",
-    "webUrl": "https://www.charlespetzold.com/code/",
+    "homepage": "https://www.charlespetzold.com/code/",
     "publisher": "Microsoft Press",
     "year": 1999,
     "pages": 400
@@ -182,7 +182,7 @@
   {
     "bookTitle": "Grokking Algorithms",
     "authors": "Aditya Bhargava",
-    "webUrl": "https://www.manning.com/books/grokking-algorithms",
+    "homepage": "https://www.manning.com/books/grokking-algorithms",
     "publisher": "Manning Publications",
     "languagesUsed": "python",
     "year": 2016,
@@ -191,7 +191,7 @@
   {
     "bookTitle": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
     "authors": "Eric Evans",
-    "webUrl": "https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/",
+    "homepage": "https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/",
     "publisher": "Addison-Wesley",
     "year": 2003,
     "pages": 560
@@ -199,7 +199,7 @@
   {
     "bookTitle": "The Phoenix Project",
     "authors": "Gene Kim and Kevin Behr and George Spafford",
-    "webUrl": "https://itrevolution.com/book/the-phoenix-project/",
+    "homepage": "https://itrevolution.com/book/the-phoenix-project/",
     "publisher": "IT Revolution Press",
     "year": 2013,
     "pages": 382
@@ -207,7 +207,7 @@
   {
     "bookTitle": "Coders at Work",
     "authors": "Peter Seibel",
-    "webUrl": "https://codersatwork.com/",
+    "homepage": "https://codersatwork.com/",
     "publisher": "Apress",
     "year": 2009,
     "pages": 632
@@ -215,7 +215,7 @@
   {
     "bookTitle": "Patterns of Enterprise Application Architecture",
     "authors": "Martin Fowler",
-    "webUrl": "https://martinfowler.com/books/eaa.html",
+    "homepage": "https://martinfowler.com/books/eaa.html",
     "publisher": "Addison-Wesley",
     "year": 2002,
     "pages": 560
@@ -223,7 +223,7 @@
   {
     "bookTitle": "Working Effectively with Legacy Code",
     "authors": "Michael Feathers",
-    "webUrl": "https://www.oreilly.com/library/view/working-effectively-with/0131177052/",
+    "homepage": "https://www.oreilly.com/library/view/working-effectively-with/0131177052/",
     "publisher": "Prentice Hall",
     "year": 2004,
     "pages": 456
@@ -231,7 +231,7 @@
   {
     "bookTitle": "The Passionate Programmer",
     "authors": "Chad Fowler",
-    "webUrl": "https://pragprog.com/titles/cfcar2/the-passionate-programmer-2nd-edition/",
+    "homepage": "https://pragprog.com/titles/cfcar2/the-passionate-programmer-2nd-edition/",
     "publisher": "Pragmatic Bookshelf",
     "year": 2009,
     "pages": 232
@@ -239,7 +239,7 @@
   {
     "bookTitle": "Soft Skills: The Software Developer's Life Manual",
     "authors": "John Sonmez",
-    "webUrl": "https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397",
+    "homepage": "https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397",
     "publisher": "Manning Publications",
     "year": 2014,
     "pages": 504
@@ -247,7 +247,7 @@
   {
     "bookTitle": "The DevOps Handbook",
     "authors": "Gene Kim and Jez Humble and Patrick Debois and John Willis",
-    "webUrl": "https://itrevolution.com/book/the-devops-handbook/",
+    "homepage": "https://itrevolution.com/book/the-devops-handbook/",
     "publisher": "IT Revolution Press",
     "year": 2016,
     "pages": 480
@@ -255,7 +255,7 @@
   {
     "bookTitle": "The Pattern On The Stone",
     "authors": "Daniel Hillis",
-    "webUrl": "https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/",
+    "homepage": "https://www.basicbooks.com/titles/w-daniel-hillis/the-pattern-on-the-stone/9780465066933/",
     "publisher": "Basic Books",
     "year": 2015,
     "pages": 191
@@ -263,7 +263,7 @@
   {
     "bookTitle": "The Definitive ANTLR 4 Reference",
     "authors": "Terence Parr",
-    "webUrl": "https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/",
+    "homepage": "https://pragprog.com/titles/tpantlr2/the-definitive-antlr-4-reference/",
     "publisher": "Pragmatic Bookshelf",
     "languagesUsed": "antlr",
     "year": 2012,
@@ -272,7 +272,7 @@
   {
     "bookTitle": "Mastering Regular Expressions",
     "authors": "Jeffrey E. F. Friedl",
-    "webUrl": "https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/",
+    "homepage": "https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/",
     "publisher": "O'Reilly Media",
     "year": 2006,
     "pages": 542
@@ -280,7 +280,7 @@
   {
     "bookTitle": "The Art of Doing Science and Engineering: Learning to Learn",
     "authors": "Richard W. Hamming",
-    "webUrl": "https://press.stripe.com/the-art-of-doing-science-and-engineering",
+    "homepage": "https://press.stripe.com/the-art-of-doing-science-and-engineering",
     "publisher": "CRC Press",
     "year": 1997,
     "pages": 376
@@ -288,9 +288,9 @@
   {
     "bookTitle": "Pharo by Example 9",
     "authors": "Stéphane Ducasse and Gordana Rakic and Sebastian Kaplar and Quentin Ducasse",
-    "pdfUrl": "http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf",
-    "sourceUrl": "https://github.com/SquareBracketAssociates/PharoByExample9/",
-    "webUrl": "https://books.pharo.org/pharo-by-example9/",
+    "pdf": "http://books.pharo.org/pharo-by-example9/pdf/2022-03-26-index.pdf",
+    "source": "https://github.com/SquareBracketAssociates/PharoByExample9/",
+    "homepage": "https://books.pharo.org/pharo-by-example9/",
     "publisher": "Keepers of the lighthouse",
     "languagesUsed": "pharo",
     "year": 2021,
@@ -299,7 +299,7 @@
   {
     "bookTitle": "Beautiful Code",
     "authors": "Andy Oram and Greg Wilson",
-    "webUrl": "https://www.oreilly.com/library/view/beautiful-code/9780596510046/",
+    "homepage": "https://www.oreilly.com/library/view/beautiful-code/9780596510046/",
     "publisher": "O'Reilly Media",
     "year": 2007,
     "pages": 592
@@ -307,8 +307,8 @@
   {
     "bookTitle": "Beautiful Racket",
     "authors": "Matthias Felleisen and Robby Findler and Matthew Flatt",
-    "sourceUrl": "https://github.com/mbutterick/beautiful-racket",
-    "webUrl": "https://beautifulracket.com/",
+    "source": "https://github.com/mbutterick/beautiful-racket",
+    "homepage": "https://beautifulracket.com/",
     "publisher": "MIT Press",
     "year": 2015,
     "pages": 288
@@ -316,7 +316,7 @@
   {
     "bookTitle": "The Go Programming Language",
     "authors": "Alan A. A. Donovan and Brian W. Kernighan",
-    "webUrl": "https://www.gopl.io/",
+    "homepage": "https://www.gopl.io/",
     "publisher": "Addison-Wesley",
     "languagesUsed": "go",
     "year": 2015,
@@ -325,8 +325,8 @@
   {
     "bookTitle": "The Rust Programming Language",
     "authors": "Steve Klabnik and Carol Nichols",
-    "sourceUrl": "https://github.com/rust-lang/book",
-    "webUrl": "https://nostarch.com/rust-programming-language-2nd-edition",
+    "source": "https://github.com/rust-lang/book",
+    "homepage": "https://nostarch.com/rust-programming-language-2nd-edition",
     "publisher": "No Starch Press",
     "languagesUsed": "rust",
     "year": 2018,
@@ -335,8 +335,8 @@
   {
     "bookTitle": "Learn You a Haskell for Great Good!",
     "authors": "Miran Lipovača",
-    "sourceUrl": "https://github.com/learnyouahaskell/learnyouahaskell.github.io",
-    "webUrl": "http://learnyouahaskell.com/",
+    "source": "https://github.com/learnyouahaskell/learnyouahaskell.github.io",
+    "homepage": "http://learnyouahaskell.com/",
     "publisher": "No Starch Press",
     "languagesUsed": "haskell",
     "year": 2011,
@@ -345,7 +345,7 @@
   {
     "bookTitle": "Paradigms of Artificial Intelligence Programming",
     "authors": "Peter Norvig",
-    "sourceUrl": "https://github.com/norvig/paip-lisp",
+    "source": "https://github.com/norvig/paip-lisp",
     "publisher": "Morgan Kaufmann",
     "languagesUsed": "lisp",
     "year": 1992,
@@ -354,7 +354,7 @@
   {
     "bookTitle": "Modern Operating Systems",
     "authors": "Andrew S. Tanenbaum and Herbert Bos",
-    "webUrl": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880",
+    "homepage": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880",
     "publisher": "Pearson",
     "year": 2014,
     "pages": 960
@@ -362,8 +362,8 @@
   {
     "bookTitle": "Let Over Lambda",
     "authors": "Doug Hoyte",
-    "sourceUrl": "https://github.com/thephoeron/let-over-lambda/blob/master/let-over-lambda.lisp",
-    "webUrl": "https://mitpress.mit.edu/9780262082638/let-over-lambda/",
+    "source": "https://github.com/thephoeron/let-over-lambda/blob/master/let-over-lambda.lisp",
+    "homepage": "https://mitpress.mit.edu/9780262082638/let-over-lambda/",
     "publisher": "MIT Press",
     "languagesUsed": "lisp",
     "year": 2008,
@@ -372,7 +372,7 @@
   {
     "bookTitle": "The TeXbook",
     "authors": "Donald E. Knuth",
-    "pdfUrl": "https://visualmatheditor.equatheque.net/doc/texbook.pdf",
+    "pdf": "https://visualmatheditor.equatheque.net/doc/texbook.pdf",
     "publisher": "Addison-Wesley",
     "year": 1986,
     "pages": 640
@@ -380,14 +380,14 @@
   {
     "bookTitle": "Essentials of Compilation",
     "authors": "Jeremy G. Siek",
-    "sourceUrl": "https://github.com/IUCompilerCourse/Essentials-of-Compilation",
+    "source": "https://github.com/IUCompilerCourse/Essentials-of-Compilation",
     "languagesUsed": "racket python x86-assembly",
     "year": 2015
   },
   {
     "bookTitle": "Clojure for the Brave and True",
     "authors": "Daniel Higginbotham",
-    "webUrl": "https://www.braveclojure.com/",
+    "homepage": "https://www.braveclojure.com/",
     "publisher": "No Starch Press",
     "languagesUsed": "clojure",
     "year": 2015,
@@ -396,7 +396,7 @@
   {
     "bookTitle": "Programming in Scala",
     "authors": "Martin Odersky and Lex Spoon and Bill Venners and Frank Sommers",
-    "webUrl": "https://www.artima.com/shop/programming_in_scala",
+    "homepage": "https://www.artima.com/shop/programming_in_scala",
     "publisher": "Artima Press",
     "languagesUsed": "scala",
     "year": 2016,
@@ -405,7 +405,7 @@
   {
     "bookTitle": "Elixir in Action",
     "authors": "Saša Jurić",
-    "webUrl": "https://www.manning.com/books/elixir-in-action-second-edition",
+    "homepage": "https://www.manning.com/books/elixir-in-action-second-edition",
     "publisher": "Manning Publications",
     "languagesUsed": "elixir",
     "year": 2015,
@@ -414,7 +414,7 @@
   {
     "bookTitle": "The Little Schemer",
     "authors": "Daniel P. Friedman and Matthias Felleisen",
-    "webUrl": "https://mitpress.mit.edu/9780262560993/the-little-schemer/",
+    "homepage": "https://mitpress.mit.edu/9780262560993/the-little-schemer/",
     "publisher": "MIT Press",
     "languagesUsed": "scheme",
     "year": 1995,
@@ -423,7 +423,7 @@
   {
     "bookTitle": "Practical Common Lisp",
     "authors": "Peter Seibel",
-    "webUrl": "https://www.gigamonkeys.com/book/",
+    "homepage": "https://www.gigamonkeys.com/book/",
     "publisher": "Apress",
     "languagesUsed": "lisp",
     "year": 2005,
@@ -432,7 +432,7 @@
   {
     "bookTitle": "Real World Haskell",
     "authors": "Bryan O'Sullivan and Don Stewart and John Goerzen",
-    "webUrl": "http://book.realworldhaskell.org/",
+    "homepage": "http://book.realworldhaskell.org/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "haskell",
     "year": 2008,
@@ -441,7 +441,7 @@
   {
     "bookTitle": "Effective Python",
     "authors": "Brett Slatkin",
-    "webUrl": "https://effectivepython.com/",
+    "homepage": "https://effectivepython.com/",
     "publisher": "Addison-Wesley",
     "languagesUsed": "python",
     "year": 2015,
@@ -450,7 +450,7 @@
   {
     "bookTitle": "JavaScript: The Good Parts",
     "authors": "Douglas Crockford",
-    "webUrl": "https://www.oreilly.com/library/view/javascript-the-good/9780596517748/",
+    "homepage": "https://www.oreilly.com/library/view/javascript-the-good/9780596517748/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "javascript",
     "year": 2008,
@@ -459,7 +459,7 @@
   {
     "bookTitle": "Eloquent Ruby",
     "authors": "Russ Olsen",
-    "webUrl": "http://eloquentruby.com/",
+    "homepage": "http://eloquentruby.com/",
     "publisher": "Addison-Wesley",
     "languagesUsed": "ruby",
     "year": 2011,
@@ -468,7 +468,7 @@
   {
     "bookTitle": "Groovy in Action",
     "authors": "Dierk König and Paul King and Guillaume Laforge and Cédric Champeau and Hamlet D'Arcy",
-    "webUrl": "https://www.manning.com/books/groovy-in-action-second-edition",
+    "homepage": "https://www.manning.com/books/groovy-in-action-second-edition",
     "publisher": "Manning Publications",
     "languagesUsed": "groovy",
     "year": 2015,
@@ -477,7 +477,7 @@
   {
     "bookTitle": "Prolog Programming for Artificial Intelligence",
     "authors": "Ivan Bratko",
-    "webUrl": "https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461",
+    "homepage": "https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461",
     "publisher": "Addison-Wesley",
     "languagesUsed": "prolog",
     "year": 2000,
@@ -486,7 +486,7 @@
   {
     "bookTitle": "Programming Elixir ≥ 1.6",
     "authors": "Dave Thomas",
-    "webUrl": "https://pragprog.com/titles/elixir16/programming-elixir-1-6/",
+    "homepage": "https://pragprog.com/titles/elixir16/programming-elixir-1-6/",
     "publisher": "Pragmatic Bookshelf",
     "languagesUsed": "elixir",
     "year": 2018,
@@ -495,7 +495,7 @@
   {
     "bookTitle": "Erlang Programming",
     "authors": "Francesco Cesarini and Simon Thompson",
-    "webUrl": "https://www.oreilly.com/library/view/erlang-programming/9780596803940/",
+    "homepage": "https://www.oreilly.com/library/view/erlang-programming/9780596803940/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "erlang",
     "year": 2009,
@@ -504,7 +504,7 @@
   {
     "bookTitle": "Haskell Programming from First Principles",
     "authors": "Christopher Allen and Julie Moronuki",
-    "webUrl": "https://haskellbook.com/",
+    "homepage": "https://haskellbook.com/",
     "publisher": "Gumroad",
     "languagesUsed": "haskell",
     "year": 2016,
@@ -513,8 +513,8 @@
   {
     "bookTitle": "Crafting Interpreters",
     "authors": "Robert Nystrom",
-    "sourceUrl": "https://github.com/munificent/craftinginterpreters",
-    "webUrl": "https://craftinginterpreters.com/",
+    "source": "https://github.com/munificent/craftinginterpreters",
+    "homepage": "https://craftinginterpreters.com/",
     "languagesUsed": "java",
     "year": 2021,
     "pages": 600
@@ -522,16 +522,16 @@
   {
     "bookTitle": "Janet for Mortals",
     "authors": "Ian Henry",
-    "webUrl": "https://janet.guide/",
+    "homepage": "https://janet.guide/",
     "languagesUsed": "janet",
     "year": 2023
   },
   {
     "bookTitle": "Homotopy Type Theory",
     "authors": "Mike Shulman and Andrej Bauer",
-    "pdfUrl": "https://hott.github.io/book/hott-online-15-ge428abf.pdf",
-    "sourceUrl": "https://github.com/HoTT/book",
-    "webUrl": "https://homotopytypetheory.org/book/",
+    "pdf": "https://hott.github.io/book/hott-online-15-ge428abf.pdf",
+    "source": "https://github.com/HoTT/book",
+    "homepage": "https://homotopytypetheory.org/book/",
     "publisher": "Princeton University Press",
     "year": 2012,
     "pages": 400
@@ -539,9 +539,9 @@
   {
     "bookTitle": "Thinking Forth",
     "authors": "Leo Brodie",
-    "pdfUrl": "https://www.forth.com/wp-content/uploads/2018/11/thinking-forth-color.pdf",
-    "sourceUrl": "https://github.com/forthy42/thinking-forth",
-    "webUrl": "https://thinkingforth.sourceforge.io/",
+    "pdf": "https://www.forth.com/wp-content/uploads/2018/11/thinking-forth-color.pdf",
+    "source": "https://github.com/forthy42/thinking-forth",
+    "homepage": "https://thinkingforth.sourceforge.io/",
     "publisher": "MIT Press",
     "languagesUsed": "forth",
     "year": 2001,
@@ -550,7 +550,7 @@
   {
     "bookTitle": "The Art of Unix Programming",
     "authors": "Eric S. Raymond",
-    "webUrl": "http://www.catb.org/esr/writings/taoup/",
+    "homepage": "http://www.catb.org/esr/writings/taoup/",
     "publisher": "Addison-Wesley",
     "languagesUsed": "unix",
     "year": 2003,
@@ -559,7 +559,7 @@
   {
     "bookTitle": "Writing A Compiler In Go",
     "authors": "Thorsten Ball",
-    "webUrl": "https://compilerbook.com/",
+    "homepage": "https://compilerbook.com/",
     "publisher": "No Starch Press",
     "languagesUsed": "go",
     "year": 2018,
@@ -568,7 +568,7 @@
   {
     "bookTitle": "The Cathedral and the Bazaar",
     "authors": "Eric S. Raymond",
-    "webUrl": "https://www.oreilly.com/library/view/the-cathedral/0596001088/",
+    "homepage": "https://www.oreilly.com/library/view/the-cathedral/0596001088/",
     "publisher": "O'Reilly Media",
     "year": 2001,
     "pages": 352
@@ -576,8 +576,8 @@
   {
     "bookTitle": "Why's (Poignant) Guide to Ruby",
     "authors": "Why the Lucky Stiff",
-    "sourceUrl": "https://github.com/mislav/poignant-guide",
-    "webUrl": "https://poignant.guide/",
+    "source": "https://github.com/mislav/poignant-guide",
+    "homepage": "https://poignant.guide/",
     "publisher": "Penguin Books",
     "languagesUsed": "ruby",
     "year": 2000,
@@ -586,7 +586,7 @@
   {
     "bookTitle": "Programming TypeScript",
     "authors": "Boris Cherny",
-    "webUrl": "https://www.oreilly.com/library/view/programming-typescript/9781492037644/",
+    "homepage": "https://www.oreilly.com/library/view/programming-typescript/9781492037644/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "typescript",
     "year": 2019,
@@ -595,7 +595,7 @@
   {
     "bookTitle": "Practical Vim",
     "authors": "Drew Neil",
-    "webUrl": "https://pragprog.com/titles/dnvim2/practical-vim-second-edition/",
+    "homepage": "https://pragprog.com/titles/dnvim2/practical-vim-second-edition/",
     "publisher": "Pragmatic Bookshelf",
     "languagesUsed": "vim",
     "year": 2012,
@@ -604,7 +604,7 @@
   {
     "bookTitle": "Programming Collective Intelligence",
     "authors": "Toby Segaran",
-    "webUrl": "https://www.oreilly.com/library/view/programming-collective/9780596529321/",
+    "homepage": "https://www.oreilly.com/library/view/programming-collective/9780596529321/",
     "publisher": "O'Reilly Media",
     "languagesUsed": "python",
     "year": 2007,
