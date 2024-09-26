@@ -580,8 +580,8 @@
     "foundationScoreRank": 75,
     "numberOfJobsEstimateRank": 58,
     "inboundLinksCountRank": 77,
-    "measurementsRank": 117,
-    "pldbScore": 24685,
+    "measurementsRank": 118,
+    "pldbScore": 24684,
     "index": 39
   },
   "markdown": {
@@ -595,8 +595,8 @@
     "foundationScoreRank": 0,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 0,
-    "measurementsRank": 117,
-    "pldbScore": 24665,
+    "measurementsRank": 118,
+    "pldbScore": 24664,
     "index": 40
   },
   "racket": {
@@ -1124,6 +1124,21 @@
     "pldbScore": 24369,
     "index": 75
   },
+  "haml": {
+    "id": "haml",
+    "numberOfUsersEstimate": 6650,
+    "foundationScore": 6,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 10,
+    "measurements": 37,
+    "numberOfUsersEstimateRank": 301,
+    "foundationScoreRank": 123,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 101,
+    "measurementsRank": 111,
+    "pldbScore": 24355,
+    "index": 76
+  },
   "git": {
     "id": "git",
     "numberOfUsersEstimate": 843781,
@@ -1137,21 +1152,6 @@
     "inboundLinksCountRank": 258,
     "measurementsRank": 237,
     "pldbScore": 24351,
-    "index": 76
-  },
-  "haml": {
-    "id": "haml",
-    "numberOfUsersEstimate": 6650,
-    "foundationScore": 6,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 10,
-    "measurements": 36,
-    "numberOfUsersEstimateRank": 301,
-    "foundationScoreRank": 123,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 101,
-    "measurementsRank": 117,
-    "pldbScore": 24349,
     "index": 77
   },
   "svg": {
@@ -1690,8 +1690,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 63,
     "inboundLinksCountRank": 258,
-    "measurementsRank": 117,
-    "pldbScore": 24120,
+    "measurementsRank": 118,
+    "pldbScore": 24119,
     "index": 113
   },
   "jquery": {
@@ -2669,21 +2669,6 @@
     "pldbScore": 23817,
     "index": 178
   },
-  "moonscript": {
-    "id": "moonscript",
-    "numberOfUsersEstimate": 3976,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 36,
-    "numberOfUsersEstimateRank": 404,
-    "foundationScoreRank": 217,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23815,
-    "index": 179
-  },
   "edn": {
     "id": "edn",
     "numberOfUsersEstimate": 3083,
@@ -2696,6 +2681,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 258,
     "measurementsRank": 237,
+    "pldbScore": 23814,
+    "index": 179
+  },
+  "moonscript": {
+    "id": "moonscript",
+    "numberOfUsersEstimate": 3976,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 36,
+    "numberOfUsersEstimateRank": 404,
+    "foundationScoreRank": 217,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 438,
+    "measurementsRank": 118,
     "pldbScore": 23814,
     "index": 180
   },
@@ -4120,8 +4120,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 101,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23534,
+    "measurementsRank": 118,
+    "pldbScore": 23533,
     "index": 275
   },
   "wolfram": {
@@ -4375,8 +4375,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23497,
+    "measurementsRank": 118,
+    "pldbScore": 23496,
     "index": 292
   },
   "expect": {
@@ -5290,8 +5290,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23371,
+    "measurementsRank": 118,
+    "pldbScore": 23370,
     "index": 353
   },
   "hhvm": {
@@ -5459,21 +5459,6 @@
     "pldbScore": 23339,
     "index": 364
   },
-  "nemerle": {
-    "id": "nemerle",
-    "numberOfUsersEstimate": 406,
-    "foundationScore": 3,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 3,
-    "measurements": 36,
-    "numberOfUsersEstimateRank": 1204,
-    "foundationScoreRank": 156,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 178,
-    "measurementsRank": 117,
-    "pldbScore": 23336,
-    "index": 365
-  },
   "simple-binary-encoding": {
     "id": "simple-binary-encoding",
     "numberOfUsersEstimate": 4741,
@@ -5487,7 +5472,7 @@
     "inboundLinksCountRank": 438,
     "measurementsRank": 637,
     "pldbScore": 23335,
-    "index": 366
+    "index": 365
   },
   "sagemath": {
     "id": "sagemath",
@@ -5501,6 +5486,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
     "measurementsRank": 204,
+    "pldbScore": 23335,
+    "index": 366
+  },
+  "nemerle": {
+    "id": "nemerle",
+    "numberOfUsersEstimate": 406,
+    "foundationScore": 3,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 3,
+    "measurements": 36,
+    "numberOfUsersEstimateRank": 1204,
+    "foundationScoreRank": 156,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 178,
+    "measurementsRank": 118,
     "pldbScore": 23335,
     "index": 367
   },
@@ -6295,8 +6295,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23218,
+    "measurementsRank": 118,
+    "pldbScore": 23217,
     "index": 420
   },
   "rebol": {
@@ -6599,21 +6599,6 @@
     "pldbScore": 23183,
     "index": 440
   },
-  "ioke": {
-    "id": "ioke",
-    "numberOfUsersEstimate": 581,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 36,
-    "numberOfUsersEstimateRank": 1036,
-    "foundationScoreRank": 217,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 23183,
-    "index": 441
-  },
   "vim-script": {
     "id": "vim-script",
     "numberOfUsersEstimate": 240,
@@ -6626,6 +6611,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 25,
     "measurementsRank": 313,
+    "pldbScore": 23182,
+    "index": 441
+  },
+  "ioke": {
+    "id": "ioke",
+    "numberOfUsersEstimate": 581,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 36,
+    "numberOfUsersEstimateRank": 1036,
+    "foundationScoreRank": 217,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 438,
+    "measurementsRank": 118,
     "pldbScore": 23182,
     "index": 442
   },
@@ -8594,21 +8594,6 @@
     "pldbScore": 22922,
     "index": 573
   },
-  "euphoria": {
-    "id": "euphoria",
-    "numberOfUsersEstimate": 336,
-    "foundationScore": 0,
-    "numberOfJobsEstimate": 0,
-    "inboundLinksCount": 0,
-    "measurements": 36,
-    "numberOfUsersEstimateRank": 1297,
-    "foundationScoreRank": 217,
-    "numberOfJobsEstimateRank": 119,
-    "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 22922,
-    "index": 574
-  },
   "hamler": {
     "id": "hamler",
     "numberOfUsersEstimate": 1173,
@@ -8621,6 +8606,21 @@
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
     "measurementsRank": 637,
+    "pldbScore": 22921,
+    "index": 574
+  },
+  "euphoria": {
+    "id": "euphoria",
+    "numberOfUsersEstimate": 336,
+    "foundationScore": 0,
+    "numberOfJobsEstimate": 0,
+    "inboundLinksCount": 0,
+    "measurements": 36,
+    "numberOfUsersEstimateRank": 1297,
+    "foundationScoreRank": 217,
+    "numberOfJobsEstimateRank": 119,
+    "inboundLinksCountRank": 438,
+    "measurementsRank": 118,
     "pldbScore": 22921,
     "index": 575
   },
@@ -9265,8 +9265,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 22864,
+    "measurementsRank": 118,
+    "pldbScore": 22863,
     "index": 618
   },
   "bc": {
@@ -17740,8 +17740,8 @@
     "foundationScoreRank": 217,
     "numberOfJobsEstimateRank": 119,
     "inboundLinksCountRank": 438,
-    "measurementsRank": 117,
-    "pldbScore": 21795,
+    "measurementsRank": 118,
+    "pldbScore": 21794,
     "index": 1183
   },
   "parboiled": {

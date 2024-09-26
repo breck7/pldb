@@ -802,14 +802,14 @@ var autocompleteJs = [
     "url": "/concepts/purescript.html"
   },
   {
-    "label": "Git",
-    "id": "git",
-    "url": "/concepts/git.html"
-  },
-  {
     "label": "HAML",
     "id": "haml",
     "url": "/concepts/haml.html"
+  },
+  {
+    "label": "Git",
+    "id": "git",
+    "url": "/concepts/git.html"
   },
   {
     "label": "SVG",
@@ -1317,14 +1317,14 @@ var autocompleteJs = [
     "url": "/concepts/jekyll.html"
   },
   {
-    "label": "MoonScript",
-    "id": "moonscript",
-    "url": "/concepts/moonscript.html"
-  },
-  {
     "label": "EDN",
     "id": "edn",
     "url": "/concepts/edn.html"
+  },
+  {
+    "label": "MoonScript",
+    "id": "moonscript",
+    "url": "/concepts/moonscript.html"
   },
   {
     "label": "MUMPS",
@@ -2247,11 +2247,6 @@ var autocompleteJs = [
     "url": "/concepts/ring.html"
   },
   {
-    "label": "Nemerle",
-    "id": "nemerle",
-    "url": "/concepts/nemerle.html"
-  },
-  {
     "label": "Simple Binary Encoding",
     "id": "simple-binary-encoding",
     "url": "/concepts/simple-binary-encoding.html"
@@ -2260,6 +2255,11 @@ var autocompleteJs = [
     "label": "Sage",
     "id": "sagemath",
     "url": "/concepts/sagemath.html"
+  },
+  {
+    "label": "Nemerle",
+    "id": "nemerle",
+    "url": "/concepts/nemerle.html"
   },
   {
     "label": "DOI",
@@ -2627,14 +2627,14 @@ var autocompleteJs = [
     "url": "/concepts/kitten.html"
   },
   {
-    "label": "Ioke",
-    "id": "ioke",
-    "url": "/concepts/ioke.html"
-  },
-  {
     "label": "Vim script",
     "id": "vim-script",
     "url": "/concepts/vim-script.html"
+  },
+  {
+    "label": "Ioke",
+    "id": "ioke",
+    "url": "/concepts/ioke.html"
   },
   {
     "label": "mun-lang",
@@ -3292,14 +3292,14 @@ var autocompleteJs = [
     "url": "/concepts/praat-script.html"
   },
   {
-    "label": "Euphoria",
-    "id": "euphoria",
-    "url": "/concepts/euphoria.html"
-  },
-  {
     "label": "hamler",
     "id": "hamler",
     "url": "/concepts/hamler.html"
+  },
+  {
+    "label": "Euphoria",
+    "id": "euphoria",
+    "url": "/concepts/euphoria.html"
   },
   {
     "label": "Tiny C Compiler",
