@@ -135,6 +135,8 @@ hasStrings true
 isCaseSensitive false
 hasFixedPoint false
 hasScientificNotation true
+hasReservedWords false
+ C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
 
 jupyterKernel https://github.com/sourceryinstitute/jupyter-CAF-kernel
 wikipedia https://en.wikipedia.org/wiki/Fortran
@@ -598,6 +600,3 @@ goodreads
  FORTRAN 77 for engineers and scientists|1985|Larry R. Nyhoff|2864205|4.33|3|1
  Schaum's Outline of Programming with FORTRAN Including Structured FORTRAN|1978|Seymour Lipschutz|1475892|0.0|0|0
  Fortran 77 Programming: With An Introduction To Fortran 90 Standard|1990|T.M.R. Ellis|1315546|4.50|2|0
-
-hasReservedWords false
- C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
