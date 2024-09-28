@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1494,
+    "Values": 1495,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -198,7 +198,7 @@ const measures = [
     "Values": 5022,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21735",
+    "Example": "21734",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -801,7 +801,7 @@ const measures = [
   },
   {
     "Name": "standsFor",
-    "Values": 367,
+    "Values": 368,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -821,7 +821,7 @@ const measures = [
   },
   {
     "Name": "oldName",
-    "Values": 15,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "What is the old name of this language?",
     "Example": "ML-flavoured Erlang",
@@ -901,7 +901,7 @@ const measures = [
   },
   {
     "Name": "inboundLinks",
-    "Values": 438,
+    "Values": 439,
     "Coverage": "8%",
     "Question": "Which other concepts link to this one?",
     "Example": "explorer",
@@ -1224,7 +1224,7 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 80,
+    "Values": 81,
     "Coverage": "1%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
@@ -1344,7 +1344,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1494,
+    "Values": 1495,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",

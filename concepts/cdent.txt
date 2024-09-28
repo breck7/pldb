@@ -5,7 +5,7 @@ C'Dent is an intermediate representation language created in 2010 by Ingy döt N
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Ingy%20d%C3%B6t%20Net Ingy döt Net
 
-#3666 on PLDB
+#3668 on PLDB
 14 Years Old
 
 When you write a module in C'Dent, you can use it in a dozen different programming languages. For instance, you could write a module in Python and use it in JavaScript, or you could write a module in JavaScript and use it in Perl 6, Ruby or Java. C'Dent has multiple input syntaxes. These syntaxes are strict subsets of common and popular object-oriented programming languages. The current implementation of C'Dent supports Python, JavaScript and Perl 6 inputs. Perl and Ruby will be added soon. C'Dent parses and analyzes the input into a well defined tree structure that is is known as C'Dent. The C'Dent format can be trivially serialized to disk as YAML or XML.

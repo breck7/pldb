@@ -1,0 +1,31 @@
+scrollDiskParser
+ extends scrollTableParser
+ description Output file into as table.
+ crux disk
+ javascript
+  delimiter = "json"
+  get delimitedData() {
+   return this.isNodeJs() ? this.delimitedDataNodeJs : ""
+  }
+  get delimitedDataNodeJs() {
+   const fs = require('fs');
+   const path = require('path');
+   const {folderPath} = this.parent.file
+   const folder = this.content ? path.join(folderPath, this.content) : folderPath
+   function getDirectoryContents(dirPath) {
+     const directoryContents = [];
+     const items = fs.readdirSync(dirPath);
+     items.forEach((item) => {
+       const itemPath = path.join(dirPath, item);
+       const stats = fs.statSync(itemPath);
+       directoryContents.push({
+         name: item,
+         type: stats.isDirectory() ? 'directory' : 'file',
+         size: stats.size,
+         lastModified: stats.mtime
+       });
+     });
+     return directoryContents;
+   }
+   return JSON.stringify(getDirectoryContents(folder))
+  }

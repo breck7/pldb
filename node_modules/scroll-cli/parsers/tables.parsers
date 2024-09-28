@@ -45,6 +45,28 @@ abstractTableVisualizationParser
     return this.parent.columnNames
   }
 
+printColumnParser
+ popularity 0.000024
+ description Print one column
+ extends abstractTableVisualizationParser
+ example
+  printColumn tags
+ catchAllAtomType columnNameAtom
+ javascript
+  compile() {
+   return this.columnValues.join("\n")
+  }
+  compileTxt() {
+    return this.columnValues.join("\n")
+  }
+  get columnName() {
+    return this.atoms[1]
+  }
+  get columnValues() {
+    return this.parent.coreTable.map(row => row[this.columnName])
+  }
+
+
 printTableParser
  popularity 0.001085
  cruxFromId
