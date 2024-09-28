@@ -206,6 +206,13 @@ row
   C
  Token 
 row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported X
+ Example
+  C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
+ Token 
+row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
  Supported X
@@ -237,6 +244,3 @@ row
  Token
 
 View source
-
-hasReservedWords false
- C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html

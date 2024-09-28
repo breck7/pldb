@@ -361,10 +361,9 @@ hasImports true
  use std::fs
  use std::sys::{self, open, O_RDWR}
  use std::math::*
-
-domainName jule.dev
- registered 2022
-
 hasSelfOrThisWord true
  self
 hasReservedWords true
+
+domainName jule.dev
+ registered 2022

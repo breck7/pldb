@@ -1936,7 +1936,7 @@ hasRequiredMainFunctionParser
  description Does the language require a function named main (or similar)?
  extends abstractFeatureParser
 
-hasReservedAtomsParser
+hasReservedWordsParser
  description Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?
  extends abstractFeatureParser
 
@@ -1962,7 +1962,7 @@ hasScientificNotationParser
  string pseudoExample 8076686.6e1
  string reference https://en.wikipedia.org/wiki/Scientific_notation
 
-hasSelfOrThisAtomParser
+hasSelfOrThisWordParser
  description Does a language have a keyword or syntax to refer to the current instance?
  extends abstractFeatureParser
 

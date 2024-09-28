@@ -106,6 +106,8 @@ Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, 
 First-Class Functions¶../features/hasFirstClassFunctions.html¶[2.1].map(Math.round)¶4¶0¶-
 hasSymbols¶../features/hasSymbols.html¶¶3¶0¶-
 Streams¶../features/hasStreams.html¶echo 123 &#124; 123.txt¶3¶0¶-
+hasSelfOrThisWord¶../features/hasSelfOrThisWord.html¶¶3¶0¶-
+hasReservedWords¶../features/hasReservedWords.html¶¶3¶2¶-
 Methods¶../features/hasMethods.html¶pldbFile.downloadWebsite()¶3¶1¶-
 Magic Getters and Setters¶../features/hasMagicGettersAndSetters.html¶get(name) => obj[name]¶3¶2¶-
 Explicit Standard Library¶../features/hasExplicitStandardLibrary.html¶#include &lt;stdio.h>¶3¶0¶-
@@ -172,7 +174,5 @@ Clobs¶../features/hasClobs.html¶class PLDBFile {}¶1¶0¶-
 hasBlobs¶../features/hasBlobs.html¶¶1¶1¶-
 Abstract Types¶../features/hasAbstractTypes.html¶abstract class PLDBFile {}¶1¶2¶-
 canUseQuestionMarksAsPartOfIdentifier¶../features/canUseQuestionMarksAsPartOfIdentifier.html¶¶1¶1¶-
-hasSelfOrThisAtom¶../features/hasSelfOrThisAtom.html¶¶0¶0¶-
-hasReservedAtoms¶../features/hasReservedAtoms.html¶¶0¶0¶-
 
 View source

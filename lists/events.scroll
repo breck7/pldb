@@ -5,15 +5,14 @@ title Conferences of Interest to Programming Language Designers
 header.scroll
 printTitle
 
-thinColumns 1
+center
 Download as JSON | TSV | CSV
  link events.json JSON
  link events.tsv TSV
  link events.csv CSV
-endColumns
 
 // A ScrollSet with information on programming language events
-
+container
 table
  printTable
 

@@ -103,7 +103,7 @@ class TableSearchApp {
   }
 
   createDatatable() {
-    this.dataTables = jQuery("table").DataTable({
+    this.dataTables = jQuery("table.scrollTable").DataTable({
       paging: false,
       stateSave: true,
       stateSaveCallback: (settings, data) => {

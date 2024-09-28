@@ -13,9 +13,9 @@ image a-language-without-comments.png
 
 JSON is the _only_ popular language in PLDB without comments. JSON supports neither line comments nor multiline comments.
  dateline
- link BASE_URL/concepts/json.html JSON
- link ../features/hasLineComments.html line comments
- link ../features/hasMultiLineComments.html multiline comments
+ BASE_URL/concepts/json.html JSON
+ ../features/hasLineComments.html line comments
+ ../features/hasMultiLineComments.html multiline comments
 
 endSnippet
 
@@ -30,8 +30,8 @@ quote
 
 ## Some Supersets of JSON have comments
 A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
- link BASE_URL/concepts/json5.html JSON5
- link BASE_URL/concepts/hjson.html Hjson
- link BASE_URL/concepts/json-with-comments.html JSON with Comments
+ BASE_URL/concepts/json5.html JSON5
+ BASE_URL/concepts/hjson.html Hjson
+ BASE_URL/concepts/json-with-comments.html JSON with Comments
 
 footer.scroll

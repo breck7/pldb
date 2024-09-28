@@ -9,12 +9,6 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
 
 ../header.scroll
 
-extraWideColumnsParser
- extends wideColumnsParser
- javascript
-  columnWidth = 120
-
-extraWideColumns 1
 printTitle
 
 thinColumns 1
@@ -27,6 +21,8 @@ endColumns
 css
  table td:first-child, table th:first-child { width: 300px;}
  table td:nth-child(2), table th:nth-child(2) { width: 200px;}
+
+container
 
 table books.csv
  rename bookTitle title

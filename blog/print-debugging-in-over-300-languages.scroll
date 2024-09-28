@@ -14,8 +14,8 @@ image print-debugging.png
 
 Paul Graham—creator of Arc and Bel—started an interesting thread last month about PD.
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
- link BASE_URL/concepts/arc.html Arc
- link BASE_URL/concepts/bel.html Bel
+ BASE_URL/concepts/arc.html Arc
+ BASE_URL/concepts/bel.html Bel
  dateline
 
 ***
@@ -34,7 +34,7 @@ But implementations vary. Different languages use different function names.
 - Many don't use the global namespace and you PD via a call like `console.log`.
 - Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
 - Then there's the long tail. Some have special syntactic sugar, such as the code golf esolang 05AB1E which does `"debugging`.
- link BASE_URL/concepts/05AB1E.html 05AB1E
+ BASE_URL/concepts/05AB1E.html 05AB1E
 
 ***
 

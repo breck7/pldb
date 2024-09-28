@@ -9,7 +9,7 @@ standardPostHeader.scroll
 image line-comments.png
 
 About 85% of the languages in PLDB have line comments.
- link BASE_URL/features/hasLineComments.html line comments
+ BASE_URL/features/hasLineComments.html line comments
  dateline
 
 endSnippet
@@ -20,19 +20,19 @@ code
  print "Hello world" # this is a comment
 
 These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
- link BASE_URL/features/hasMultilineComments.html multiline comments
+ BASE_URL/features/hasMultilineComments.html multiline comments
 
 ## The majority of languages use // or # to start a line comment
 
 *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
- link BASE_URL/concepts/c.html C
- link BASE_URL/concepts/b.html B
- link BASE_URL/concepts/bcpl.html BCPL
+ BASE_URL/concepts/c.html C
+ BASE_URL/concepts/b.html B
+ BASE_URL/concepts/bcpl.html BCPL
 
 *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
- link BASE_URL/concepts/python.html Python
- link BASE_URL/concepts/perl.html Perl
- link BASE_URL/concepts/ruby.html Ruby
+ BASE_URL/concepts/python.html Python
+ BASE_URL/concepts/perl.html Perl
+ BASE_URL/concepts/ruby.html Ruby
 
 The SQL languages all generally use `--`.
 
@@ -41,25 +41,25 @@ The era of experimentation with line comment tokens appears to be over: the last
 ## 15% of languages don't have line comments
 
 About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
- link BASE_URL/concepts/html.html HTML
- link BASE_URL/concepts/css.html CSS
- link BASE_URL/concepts/svg.html SVG
+ BASE_URL/concepts/html.html HTML
+ BASE_URL/concepts/css.html CSS
+ BASE_URL/concepts/svg.html SVG
 
 JSON famously does not support comments. But a number of its derivatives do, such as JSON with Comments.
- link BASE_URL/concepts/json.html JSON
- link BASE_URL/concepts/json-with-comments.html JSON with Comments
+ BASE_URL/concepts/json.html JSON
+ BASE_URL/concepts/json-with-comments.html JSON with Comments
 
 A few general purpose languages don't support line comments including Mathematica and OCaml.
- link BASE_URL/concepts/mathematica.html Mathematica
- link BASE_URL/concepts/ocaml.html OCaml
+ BASE_URL/concepts/mathematica.html Mathematica
+ BASE_URL/concepts/ocaml.html OCaml
 
 ## A few exceptions
 
 Like everything, there are exceptions to the common cases. A few languages, such as SPSS, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
- link BASE_URL/concepts/spss.html SPSS
+ BASE_URL/concepts/spss.html SPSS
 
 A few languages also support multiple line comment tokens. The Ini config format supports both `;` and `#`.
- link BASE_URL/concepts/ini.html Ini config format
+ BASE_URL/concepts/ini.html Ini config format
 
 observable https://observablehq.com/@breck7/line-comments-in-programming-languages
 

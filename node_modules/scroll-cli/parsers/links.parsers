@@ -91,3 +91,16 @@ quickLinkParser
    return this.firstAtom
   }
   patternStartsAtAtom = 1
+
+quickRelativeLinkParser
+ popularity 0.029228
+ description Relative links.
+ // note: only works if relative link ends in .html
+ pattern ^[^\s]+\.(html|htm)
+ extends linkParser
+ atoms urlAtom
+ javascript
+  get link() {
+   return this.firstAtom
+  }
+  patternStartsAtAtom = 1

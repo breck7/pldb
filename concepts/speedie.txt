@@ -28,6 +28,14 @@ Language features
 ======================================================
 
 row
+ Feature hasSelfOrThisWord
+ FeatureLink ../features/hasSelfOrThisWord.html
+ Supported ✓
+ Example
+  self.Remove
+  .remove
+ Token 
+row
  Feature Classes
  FeatureLink ../features/hasClasses.html
  Supported ✓
@@ -696,6 +704,16 @@ row
   
  Token 
 row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported X
+ Example
+  || return = 123
+  || if = 456
+  if if == 456
+   return return
+ Token 
+row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
  Supported X
@@ -772,12 +790,3 @@ row
  Token
 
 View source
-
-hasSelfOrThisWord true
- self.Remove
- .remove
-hasReservedWords false
- || return = 123
- || if = 456
- if if == 456
-  return return

@@ -21,7 +21,7 @@ PLDB is for two groups of people:
 
 ## Join!
 Want to get involved? Read more here.
- link join.html here
+ join.html here
 
 ## Open source
 All data and source code used to generate this site are on GitHub.
@@ -32,26 +32,26 @@ PLDB is an entirely static site. PLDB.io is served via GitHub Pages. You can clo
 
 ## Acknowledgements
 This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
- link acknowledgements.html acknowledgements
+ acknowledgements.html acknowledgements
 
 ## Cloc Stats
 Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
- link BASE_URL/concepts/cloc.html cloc
+ BASE_URL/concepts/cloc.html cloc
  https://github.com/breck7/pldb pldb repo
 
 bash cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
 # Mirrors
 The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a GitHub Pages server. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
- link ../concepts/url.html URL
- link ../concepts/dns.html DNS
- link ../concepts/ipv4.html IPv4
- link ../concepts/html.html HTML
- link ../concepts/css.html CSS
- link ../concepts/javascript.html Javascript
- link ../concepts/png.html PNG
- link ../concepts/svg.html SVG
- link ../concepts/json.html JSON
+ ../concepts/url.html URL
+ ../concepts/dns.html DNS
+ ../concepts/ipv4.html IPv4
+ ../concepts/html.html HTML
+ ../concepts/css.html CSS
+ ../concepts/javascript.html Javascript
+ ../concepts/png.html PNG
+ ../concepts/svg.html SVG
+ ../concepts/json.html JSON
 
 In case there's a problem with GitHub pages, you should be able to access the exact same site locally by downloading the source from GitHub.
 
@@ -66,10 +66,10 @@ bashCode
 ## History
 - Breck Yunits started PLDB as an anonymous Jekyll blog named "CodeLani" from his apartment in Honolulu, Hawai'i, on November 18, 2017.
  link ../lists/explorer.html#q=Breck%20Yunits Breck Yunits
- link ../concepts/jekyll.html Jekyll
- link ../blog/hello-world.html November 18, 2017
+ ../concepts/jekyll.html Jekyll
+ ../blog/hello-world.html November 18, 2017
 - Breck renamed CodeLani to PLDB and migrated it to Scroll and TrueBase on June 27, 2022.
- link ../concepts/scroll.html Scroll
+ ../concepts/scroll.html Scroll
  https://github.com/breck7/pldb/commit/273f34a8620111e326a49332761e2c01823b58ef CodeLani to PLDB
 - The new PLDB launched on HackerNews DAYS_SINCE_LAUNCH days ago, on August 28, 2022.
  https://news.ycombinator.com/item?id=32619671 launched

@@ -339,6 +339,7 @@ scrollLinksParser
  extends abstractTableTransformParser
  description Add column with links.
  crux links
+ catchAllAtomType columnNameAtom
  javascript
   get coreTable() {
    const {newColumnName, linkColumns} = this

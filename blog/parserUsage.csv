@@ -3,8 +3,8 @@ stumpContentParser,3807
 blankLineParser,1788
 BlobParser,755
 importOnlyParser,330
-catchAllParagraphParser,217
-linkParser,191
+catchAllParagraphParser,216
+quickRelativeLinkParser,173
 lineOfCodeParser,164
 stumpNoSnippetParser,159
 quickLinkParser,154
@@ -39,6 +39,7 @@ scrollQuestionParser,38
 mediumColumnsParser,35
 endSnippetParser,27
 captionAftertextParser,27
+linkParser,20
 endOfPostDinkusParser,20
 h2Parser,13
 ohayoCodeParser,12

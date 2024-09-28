@@ -1,0 +1,38 @@
+import header.scroll
+
+title hasSelfOrThisWord - language feature
+printTitle hasSelfOrThisWord
+
+html
+ <a class="trueBaseThemePreviousItem" href="hasScientificNotation.html">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="hasSemanticIndentation.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+
+mediumColumns 1
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ self
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ self.Remove
+ .remove
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
+ You can name it whatever you like.
+
+***
+
+* Languages *with* hasSelfOrThisWord include <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>
+
+***
+
+View all concepts with or missing a *hasSelfOrThisWord* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSelfOrThisWord&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSelfOrThisWord%22%2C%22origData%22%3A%22hasSelfOrThisWord%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSelfOrThisWord&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSelfOrThisWord%22%2C%22origData%22%3A%22hasSelfOrThisWord%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+endColumns
+
+keyboardNav hasScientificNotation.html hasSemanticIndentation.html
+
+../footer.scroll

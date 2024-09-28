@@ -7,7 +7,7 @@ title List of people who created a programming language
 header.scroll
 printTitle
 
-wideColumns 1
+container
 
 Here is the list of COUNT people who created a language(s) (or other significant programming project) in PLDB.
 
@@ -21,14 +21,13 @@ Download as JSON | TSV | CSV
 
 endSnippet
 
-<center>
+center
 sparkline SPARKDATA
  start 1906
   // Grace Hopper is first in our set
  width 480
  height 30
  color green
-</center>
 
 TABLE
 

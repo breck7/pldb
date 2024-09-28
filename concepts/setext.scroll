@@ -6,6 +6,7 @@ appeared 1991
 creators Ian Feldman
 tags textMarkup
 description Setext allows viewing of marked-up documents without special viewing software. When appropriate software is used, however, a rich text-style experience is available to the user.
+fileExtensions etx
 
 example
  This is a long title
@@ -16,5 +17,3 @@ example
  > This is quoted text...
  > ...more...
  ^.. _Wikipedia_home_page https://wikipedia.org
-
-extensions etx
