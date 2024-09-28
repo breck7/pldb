@@ -187,6 +187,12 @@ scrollParser
    this.sectionStack = []
    return result
   }
+  bodyStack = []
+  clearBodyStack() {
+   const result = this.bodyStack.join("")
+   this.bodyStack = []
+   return result
+  }
   get hakonParser() {
     if (this.isNodeJs())
       return require("scrollsdk/products/hakon.nodejs.js")

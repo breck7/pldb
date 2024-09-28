@@ -5,6 +5,8 @@ buildCssParser
 
 cssAnyAtom
  extends anyAtom
+cssLengthAtom
+ extends anyAtom
 cssLineParser
  popularity 0.002870
  catchAllAtomType cssAnyAtom

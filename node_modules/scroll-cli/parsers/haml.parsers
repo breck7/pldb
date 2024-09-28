@@ -4,7 +4,7 @@ hamlParser
  extends abstractScrollParser
  atoms urlAtom
  catchAllAtomType stringAtom
- pattern ^[\w-]+(#|\.)[\w-\.\#]+ *
+ pattern ^[\w\.]+#[\w\.]+ *
  javascript
   get tag() {
     return this.atoms[0].split(/[#\.]/).shift()

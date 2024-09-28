@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+h1,
+h2,
+h3 {
+  margin-top: 1.5em;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+a:hover,
+a:focus {
+  background-size: 100% 2px;
+}
+iframe {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: inline-block;
+}
+code {
+  background: rgba(224, 224, 224);
+  padding: 3px;
+}

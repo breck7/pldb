@@ -69,7 +69,7 @@ printScrollLeetSheetParser
     const example = examples.length ? examples[0].subparticlesToString() : crux
     const base = `https://try.scroll.pub/`
     const particle = new Particle()
-    particle.appendLineAndSubparticles("scroll", "gazetteCss\n" + example)
+    particle.appendLineAndSubparticles("scroll", "theme gazette\n" + example)
     return base + "#" + encodeURIComponent(particle.asString)
   }
   docToHtml(doc) {

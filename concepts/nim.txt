@@ -1,3 +1,5 @@
+gazetteCss
+
 Nim
 ===
 
@@ -161,6 +163,8 @@ row
  Example
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
   template debug*(args: varargs[string, `importOnly
+
+gazetteCss
 
 ]) =
     if logLevel ✓

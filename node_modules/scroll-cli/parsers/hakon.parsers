@@ -1,0 +1,21 @@
+// Hakon is a SCSS like lang that compiles to CSS
+hakonContentParser
+ popularity 0.102322
+ catchAllAtomType anyAtom
+
+hakonParser
+ cruxFromId
+ extends abstractScrollParser
+ description Compile Hakon to CSS.
+ catchAllParser hakonContentParser
+ javascript
+  compile() {
+   return `<style>${this.css}</style>`
+  }
+  get css() {
+    const {hakonParser} = this.root
+    return new hakonParser(this.subparticlesToString()).compile()
+  }
+  compileCss() {
+    return this.css
+  }

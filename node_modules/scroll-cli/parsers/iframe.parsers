@@ -1,0 +1,12 @@
+iframesParser
+ popularity 0.000121
+ cruxFromId
+ catchAllAtomType urlAtom
+ extends abstractScrollParser
+ description An iframe(s).
+ example
+  iframes frame.html
+ javascript
+  compile() {
+   return this.atoms.slice(1).map(url => `<iframe src="${url}" frameborder="0"></iframe>`).join("\n")
+  }

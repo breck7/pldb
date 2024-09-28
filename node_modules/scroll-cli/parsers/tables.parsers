@@ -101,13 +101,7 @@ printTableParser
    return `<table id="table${this._getUid()}" class="scrollTable">
    <thead><tr>${this.tableHeader.join("\n")}</tr></thead>
    <tbody>${this.tableBody}</tbody>
-   </table>
-   <script>
-   document.querySelector('#table${this._getUid()}').addEventListener('click', e => {
-    if (window.getSelection().toString() || e.target.closest('a') || !e.target.closest('tbody')) return;
-    e.currentTarget.classList.toggle('expandedTable');
-   });
-   </script>`
+   </table>`
   }
   compileTxt() {
     return this.parent.delimitedData || new Particle(this.parent.coreTable).asCsv
@@ -496,12 +490,12 @@ scrollRenameParser
 tableSearchParser
  popularity 0.000072
  extends abstractScrollWithRequirementsParser
- string copyFromExternal jquery-3.7.1.min.js datatables.css datatables.min.js tableSearch.js
+ string copyFromExternal jquery-3.7.1.min.js datatables.css datatables.js tableSearch.js
  string requireOnce
   <script defer src="jquery-3.7.1.min.js"></script>
   <style>.dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}</style>
   <link rel="stylesheet" href="datatables.css">
-  <script defer src="datatables.min.js"></script>
+  <script defer src="datatables.js"></script>
   <script defer src="tableSearch.js"></script>
  // adds to all tables on page
  description Table search and sort widget.

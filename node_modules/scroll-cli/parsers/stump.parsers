@@ -1,0 +1,26 @@
+// Stump is a HAML like lang that compiles to HTML
+stumpContentParser
+ popularity 0.102322
+ catchAllAtomType anyAtom
+
+stumpParser
+ cruxFromId
+ extends abstractScrollParser
+ description Compile Stump to HTML.
+ catchAllParser stumpContentParser
+ javascript
+  compile() {
+   const file = this.parent.file
+   return file.compileStumpCode(this.subparticlesToString())
+  }
+
+stumpNoSnippetParser
+ popularity 0.010177
+ // todo: make noSnippets an aftertext directive?
+ extends stumpParser
+ description Compile Stump unless snippet.
+ cruxFromId
+ javascript
+  compileEmbeddedVersion() {
+   return ""
+  }

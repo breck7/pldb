@@ -117,7 +117,7 @@ class TableSearchApp {
       },
       layout: {
         topStart: {
-          buttons: ["copy", "csv"]
+          buttons: ["copy"]
         },
         topEnd: {
           search: {
@@ -135,6 +135,27 @@ class TableSearchApp {
             search: this.searchFromHash
           }
         }
+      }
+    })
+    this.addExpandButtons()
+  }
+
+  addExpandButtons() {
+    let buttons = document.querySelectorAll(".buttons-copy")
+
+    buttons.forEach(button => {
+      let ariaControls = button.getAttribute("aria-controls")
+      let newHTML = `<button id="expandToggle${ariaControls}" aria-controls="${ariaControls}" class="dt-button buttons-html5 expandCollapseButton" tabindex="1" type="button"><span>Expand</span></button>`
+
+      button.insertAdjacentHTML("afterend", newHTML)
+
+      // Get the newly added element by ID
+      let newButton = document.getElementById(`expandToggle${ariaControls}`)
+
+      // Add an onclick handler (in case you want to do more complex actions)
+      newButton.onclick = function () {
+        this.innerHTML = this.innerHTML.includes("Expand") ? "Collapse" : "Expand"
+        document.querySelector("#" + ariaControls).classList.toggle("expandedTable")
       }
     })
   }
