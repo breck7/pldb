@@ -23,48 +23,8 @@ table live.tsv
    orderBy -TwitchSubs
     printTable
 
-nameParser
- description What is the name of the livestream?
- extends abstractIdParser
-startedParser
- atoms measureNameAtom yearAtom
- description Year livestream began.
- extends abstractIntegerMeasureParser
- float sortIndex 1.4
-abstractStreamLinkParser
- extends abstractUrlMeasureParser
- cruxFromId
- inScope subscribersParser
-subscribersParser
- extends abstractIntegerMeasureParser
-
-twitchUrlParser
- extends abstractStreamLinkParser
-
-youtubeUrlParser
- extends abstractStreamLinkParser
-
-name ThePrimeagen
-started 2019
-twitchUrl https://www.twitch.tv/theprimeagen
- subscribers 208000
-youtubeUrl https://www.youtube.com/c/theprimeagen
- subscribers 404000
-
-name Notch
-started 2011
-twitchUrl https://www.twitch.tv/notch
- subscribers 52000
-
-name j_blow
-started 2014
-twitchUrl https://www.twitch.tv/j_blow
- subscribers 50000
-
-name geohot
-started 2018
-twitchUrl https://www.twitch.tv/georgehotz
- subscribers 81600
+live.parsers
+livestreamers.scroll
 
 ../footer.scroll
 tableSearch
