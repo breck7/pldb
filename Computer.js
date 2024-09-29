@@ -1044,6 +1044,17 @@ ${maintainersLinks}
       facts.push(`Early development of ${title} happened in ${labStr}`)
     }
 
+    const influencedBy = this.get("influencedBy")
+    if (influencedBy)
+      facts.push(
+        influencedBy
+          .split(" ")
+          .map(link => this.makeATag(link))
+          .join(" and ") +
+          " influenced the design of " +
+          title
+      )
+
     const { numberOfJobsEstimate } = this
     const jobs = numberOfJobsEstimate > 10 ? numeral(numberOfJobsEstimate).format("0a") : ""
     if (jobs) facts.push(`PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`)

@@ -12,6 +12,7 @@ SLACK is a compiler for a lazy functional K, modelled on David Turner's SASL lan
 
 - Tags: programming language
 - Early development of SLACK happened in https://nsl.com/
+- K and SASL influenced the design of SLACK
 
 gcd a b is if b=0 then a else gcd b(a!b)
 
