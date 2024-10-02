@@ -22,7 +22,8 @@ endSnippet
 
 table
  delimiter ,
- printTable
+ compose titleLink BASE_URL/concepts/{id}.html
+  printTable
  data
   title,id,appeared,rank
   A+,aplus,1988,876

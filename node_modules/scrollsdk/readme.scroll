@@ -1,9 +1,10 @@
-import header.scroll
+header.scroll
 permalink index.html
 title ScrollSDK
 printTitle
-# Libraries for building on Scroll
-mediumColumns 1
+# Particles, Parsers, and other code for building Scroll
+
+container 600px
 
 - Scroll Homepage
  https://scroll.pub
@@ -27,33 +28,45 @@ mediumColumns 1
  https://www.reddit.com/r/WorldWideScroll
 
 # Tests
+https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml/badge.svg
+ width 153px
+ link https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml
+- ScrollSDK Node Tests
+ https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml
 - ScrollSDK Browser Unit Tests
  link sandbox/test.html
 - ScrollSDK Browser Perf Tests
  link sandbox/perfTests.html
-- <a href="https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml">ScrollSDK Node Tests <img src="https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml/badge.svg" style="width: 153px;"/></a>
 
-? Who is this package built for?
-The ScrollSDK is for people who want to build on top of Scroll.
+***
 
-? How do I build Scroll Parsers?
+? What is this repo?
+This repo contains the code for Particle Syntax and the Parsers Programming Language. These are the core layers upon which Scroll is built.
+
+? Who is this for?
+This repo is for advanced Scroll developers.
+
+? How do I build Parsers?
 You can try the Parsers tutorial.
  link parsersTutorial.html Parsers tutorial
 
-# Writing Scroll Parsers
-The ScrollSDK contains a language for building Scroll Parsers. You can write new Parsers to extend your version of Scroll. By creating Parsers with the SDK you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and virtual machine for executing your version of Scroll. The ScrollSDK also includes a simple web IDE for writing Scroll Parsers called Parser Designer.
+***
+
+# Writing Parsers
+This ScrollSDK contains two implementations of Parsers: one in TypeScript and one in Parsers.
+
+You write Parsers to extend Scroll. By creating Parsers with the SDK you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and virtual machine for executing your version of Scroll. The ScrollSDK also includes a simple web IDE for writing Parsers called Parser Designer.
  link designer/index.html Parser Designer
 
-At this point in time, to make your Scroll Parsers do very useful things, you also need to use another language that you know. The ScrollSDK lets you create new languages using just Scroll or Scroll + Javascript. Scroll Parsers can include code from any programming language, not just Javascript. Though at the moment only Scroll + Javascript is supported by Breck's Lab.
- https://breckyunits.com/lab.html Breck's Lab
+At this point in time, to make your Parsers do very useful things, you also need to use another language that you know. The ScrollSDK lets you create new languages using just Scroll or Scroll + Javascript. Parsers can include code from any programming language, not just Javascript. Though at the moment only Scroll + Javascript is supported.
+
+***
 
 # Using the ScrollSDK
-
 The ScrollSDK currently includes a number of libraries and apps to use (scripts in the "products" folder).
 
 # Basic Particles library for npm projects:
 code
- // Currently still called Particle, but will be renamed ScrollNode in a future update.
  const {Particle} = require("scrollsdk/products/Particle.js")
  const particle = new Particle("hello world")
  console.log(particle.asString)
@@ -70,7 +83,7 @@ code
  npm run local
  open http://localhost:3333/
 
-## Parser Designer web app for building new Scroll Parsers
+## Parser Designer web app for building new Parsers
 code
  npm install .
  npm run local
@@ -84,17 +97,25 @@ code
  npm run build
  npm test
 
+***
+
 # Monorepo
 The ScrollSDK is a monorepo. With on average over 1 major version released each month for the past 2.5 years, it would take a lot of overhead to constantly be updating 10+ different repositories and modules every month. Once we're more confident in the theory and best practices, it might make sense to break this repo into independent modules.
 That being said, we despise unnecessary dependencies as much as anyone. If anyone wants to create some automated submodules built from the projects in this monorepo, to allow for consuming of a smaller subset of the code and dependencies in this module, feel free to do so.
+
+***
 
 ## Visualization of the code base
  https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=breck7%2Fscrollsdk Visualization
 image images/diagram.jpg
 
+***
+
 # Development Status
 All breaking changes are mentioned in the releaseNotes. We follow semantic versioning, so breaking changes should not happen if you stay on the same major version.
  link releaseNotes.html releaseNotes
+
+***
 
 # Particles Libraries in Other Languages
 If you build a Particles library/SDK in another language, let us know and we'll add a link.
@@ -102,15 +123,21 @@ If you build a Particles library/SDK in another language, let us know and we'll 
 If you are working on a Particles library in a new host language, feel free to post an issue or ask for help in the WWS subreddit.
  https://www.reddit.com/r/WorldWideScroll WWS subreddit
 
+***
+
 ## How to bump versions
 code
  npm run updateVersion NEW_NUMBER
 
+***
+
 # Former Name
-Particles was originally called Tree Notation. Scroll Parsers was originally called Grammar.
+Particles was originally called Tree Notation. Parsers was originally called Grammar.
+
+***
 
 # Alternatives Considered
-This is the first Scroll library in existence, so there were no alternative implementations. Note and Space were predecessors to Particles. If a better alternative low level syntax to Particles is possible, it has yet to be discovered.
+This is the first Particles and Parsers libraries in existence, so there were no alternative implementations. Note and Space were predecessors to Particles. If a better alternative low level syntax to Particles is possible, it has yet to be discovered.
 
 All that said, the important part of this repo is not the code but the design patterns. Particles is very simple, and you can implement the patterns contained here in your own code without using this library. In fact, that is often the best way to use Particles!
 
@@ -120,4 +147,4 @@ It is helpful to set `"goto_anything_exclude_gitignore": true` to ignore files i
 
 # ❤️ Public Domain ❤️
 
-import footer.scroll
+footer.scroll

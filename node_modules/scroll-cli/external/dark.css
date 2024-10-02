@@ -1,3 +1,17 @@
+html,
+body,
+div,
+span,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  border-spacing: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -6,11 +20,6 @@ body {
   padding: 20px;
   background-color: #1a1a1a;
   color: #e0e0e0;
-}
-h1,
-h2,
-h3 {
-  margin-top: 1.5em;
 }
 a {
   color: #66b3ff;
@@ -24,6 +33,9 @@ a {
 a:hover,
 a:focus {
   background-size: 100% 2px;
+}
+a.abstractIconButtonParser {
+  background-image: none;
 }
 ::selection {
   background-color: #66b3ff;

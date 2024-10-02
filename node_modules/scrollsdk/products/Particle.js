@@ -217,6 +217,9 @@ class Particle extends AbstractParticle {
   isBlankLine() {
     return !this.length && !this.getLine()
   }
+  get isBlank() {
+    return this.isBlankLine()
+  }
   hasDuplicateFirstAtoms() {
     return this.length ? new Set(this.getFirstAtoms()).size !== this.length : false
   }
@@ -982,6 +985,27 @@ class Particle extends AbstractParticle {
   }
   getParticle(firstAtomPath) {
     return this._getParticleByPath(firstAtomPath)
+  }
+  getParticles(firstAtomPath) {
+    return this.findParticles(firstAtomPath)
+  }
+  get section() {
+    // return all particles after this one to the next blank line or end of file
+    const particles = []
+    if (this.isLast) return particles
+    let next = this.next
+    while (!next.isBlank) {
+      particles.push(next)
+      next = next.next
+      if (next.isFirst) break
+    }
+    return particles
+  }
+  get isLast() {
+    return this.getIndex() === this.parent.length - 1
+  }
+  get isFirst() {
+    return this.getIndex() === 0
   }
   getFrom(prefix) {
     const hit = this.filter(particle => particle.getLine().startsWith(prefix))[0]
@@ -2545,7 +2569,7 @@ Particle.iris = `sepal_length,sepal_width,petal_length,petal_width,species
 4.9,2.5,4.5,1.7,virginica
 5.1,3.5,1.4,0.2,setosa
 5,3.4,1.5,0.2,setosa`
-Particle.getVersion = () => "87.0.0"
+Particle.getVersion = () => "87.1.0"
 class AbstractExtendibleParticle extends Particle {
   _getFromExtended(firstAtomPath) {
     const hit = this._getParticleFromExtended(firstAtomPath)

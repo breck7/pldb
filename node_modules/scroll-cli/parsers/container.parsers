@@ -14,5 +14,5 @@ scrollContainerParser
   }
   compile() {
     this.parent.bodyStack.push("</div>")
-   return `<div style="width: 100%; box-sizing: border-box; max-width: ${this.maxWidth}; margin: 0 auto; padding: 20px;" class="scrollContainerParser">`
+   return `<div style="width: 100%; box-sizing: border-box; max-width: ${this.maxWidth}; margin: 0 auto;" class="scrollContainerParser">`
   }

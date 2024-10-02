@@ -14,33 +14,33 @@ C and R are two famous programming languages whose name is a single letter. In a
 Data used in this post:
 =======================
 
-title,id,appeared,rank
-A+,aplus,1988,876
-B,b,1969,242
-C,c,1972,2
-D,d,2001,48
-E,e,1997,229
-F#,f-sharp,2005,53
-G,labview,1986,92
-H,h-lang,2019,3232
-I,i,2012,2097
-J,j,1990,131
-K,k,1993,214
-L,l,2013,3404
-M,mumps,1966,96
-N,n,1990,3636
-O,o,1986,1952
-P,p,2013,786
-Q,q,2003,268
-R,r,1993,10
-S,s,1976,344
-T,t,1980,567
-U,u,2013,3307
-V,v,2019,161
-W,w,2019,3233
-X,x,2021,3124
-Y,y,1981,1344
-Z,z,2019,3105
+title,id,appeared,rank,titleLink
+A+,aplus,1988,876,../concepts/aplus.html
+B,b,1969,242,../concepts/b.html
+C,c,1972,2,../concepts/c.html
+D,d,2001,48,../concepts/d.html
+E,e,1997,229,../concepts/e.html
+F#,f-sharp,2005,53,../concepts/f-sharp.html
+G,labview,1986,92,../concepts/labview.html
+H,h-lang,2019,3232,../concepts/h-lang.html
+I,i,2012,2097,../concepts/i.html
+J,j,1990,131,../concepts/j.html
+K,k,1993,214,../concepts/k.html
+L,l,2013,3404,../concepts/l.html
+M,mumps,1966,96,../concepts/mumps.html
+N,n,1990,3636,../concepts/n.html
+O,o,1986,1952,../concepts/o.html
+P,p,2013,786,../concepts/p.html
+Q,q,2003,268,../concepts/q.html
+R,r,1993,10,../concepts/r.html
+S,s,1976,344,../concepts/s.html
+T,t,1980,567,../concepts/t.html
+U,u,2013,3307,../concepts/u.html
+V,v,2019,161,../concepts/v.html
+W,w,2019,3233,../concepts/w.html
+X,x,2021,3124,../concepts/x.html
+Y,y,1981,1344,../concepts/y.html
+Z,z,2019,3105,../concepts/z.html
 
 I made the viz in Keynote and by hacking on this repo.
  https://breckyunits.com/keyboard/ this repo
