@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Explicit Standard Library - language feature
+tags Feature
 printTitle Explicit Standard Library
 
-html
- <a class="trueBaseThemePreviousItem" href="hasStandardLibrary.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMacros.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasStandardLibrary.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMacros.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  #include &lt;stdio.h&gt;
@@ -50,8 +50,6 @@ View all concepts with or missing a *hasExplicitStandardLibrary* measurement
 
 * Read more about Explicit Standard Library on the web: 1.
  https://en.wikipedia.org/wiki/Standard_library 1.
-
-endColumns
 
 keyboardNav hasStandardLibrary.html hasMacros.html
 

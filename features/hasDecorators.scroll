@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Decorators - language feature
+tags Feature
 printTitle Decorators
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDecimals.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDefaultParameters.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDecimals.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDefaultParameters.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html">Gleam</a>
  @deprecated(&quot;Use new_function instead&quot;)
@@ -31,8 +31,6 @@ View all concepts with or missing a *hasDecorators* measurement
 
 * Read more about Decorators on the web: 1.
  https://en.wikipedia.org/wiki/Decorator_pattern 1.
-
-endColumns
 
 keyboardNav hasDecimals.html hasDefaultParameters.html
 

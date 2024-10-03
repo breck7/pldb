@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Constructors - language feature
+tags Feature
 printTitle Constructors
 
-html
- <a class="trueBaseThemePreviousItem" href="hasConstants.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasContinue.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasConstants.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasContinue.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  class Person {
@@ -101,8 +101,6 @@ View all concepts with or missing a *hasConstructors* measurement
 
 * Read more about Constructors on the web: 1.
  https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming) 1.
-
-endColumns
 
 keyboardNav hasConstants.html hasContinue.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Macros - language feature
+tags Feature
 printTitle Macros
 
-html
- <a class="trueBaseThemePreviousItem" href="hasExplicitStandardLibrary.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMagicGettersAndSetters.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasExplicitStandardLibrary.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMagicGettersAndSetters.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  // https://learn.microsoft.com/en-us/cpp/preprocessor/macros-c-cpp?redirectedfrom=MSDN&amp;view=msvc-170
@@ -273,8 +273,6 @@ View all concepts with or missing a *hasMacros* measurement
 
 * Read more about Macros on the web: 1.
  https://en.wikipedia.org/wiki/Macro_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasExplicitStandardLibrary.html hasMagicGettersAndSetters.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Ternary operators - language feature
+tags Feature
 printTitle Ternary operators
 
-html
- <a class="trueBaseThemePreviousItem" href="hasTemplates.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasThreads.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasTemplates.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasThreads.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  let i = true ? 1 : 0
@@ -56,8 +56,6 @@ View all concepts with or missing a *hasTernaryOperators* measurement
 
 * Read more about Ternary operators on the web: 1.
  https://en.wikipedia.org/wiki/Ternary_operation 1.
-
-endColumns
 
 keyboardNav hasTemplates.html hasThreads.html
 

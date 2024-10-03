@@ -27,7 +27,7 @@ const initAutocomplete = elementId => {
       const htmlEncodedQuery = query.replace(/</g, "&lt;")
 
       suggestions.push({
-        label: `Full text search for "${htmlEncodedQuery}"`,
+        label: `Search for "${htmlEncodedQuery}"`,
         id: "",
         url: normalizeUrl(`/lists/explorer.html#q=${htmlEncodedQuery}`)
       })
@@ -36,7 +36,7 @@ const initAutocomplete = elementId => {
     onSelect: item => {
       const { url, id } = item
       if (id) window.location = url
-      else window.location = normalizeUrl("/lists/explorer.html#q=" + encodeURIComponent(input.value))
+      else window.location = normalizeUrl("/search.html#q=" + encodeURIComponent(input.value))
     }
   })
 }

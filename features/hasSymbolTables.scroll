@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Symbol Tables - language feature
+tags Feature
 printTitle Symbol Tables
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSwitch.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSymbols.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSwitch.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSymbols.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  // Declare an external function
@@ -35,8 +35,6 @@ View all concepts with or missing a *hasSymbolTables* measurement
 
 * Read more about Symbol Tables on the web: 1.
  https://en.wikipedia.org/wiki/Symbol_table 1.
-
-endColumns
 
 keyboardNav hasSwitch.html hasSymbols.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Functions - language feature
+tags Feature
 printTitle Functions
 
-html
- <a class="trueBaseThemePreviousItem" href="hasFunctionOverloading.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasGarbageCollection.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasFunctionOverloading.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasGarbageCollection.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  function helloWorld() {console.log(&quot;hi&quot;)}
@@ -91,8 +91,6 @@ View all concepts with or missing a *hasFunctions* measurement
 
 * Read more about Functions on the web: 1.
  https://en.wikipedia.org/wiki/Subroutine 1.
-
-endColumns
 
 keyboardNav hasFunctionOverloading.html hasGarbageCollection.html
 

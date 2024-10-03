@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Infix Notation - language feature
+tags Feature
 printTitle Infix Notation
 
-html
- <a class="trueBaseThemePreviousItem" href="hasIncrementAndDecrementOperators.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasInheritance.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasIncrementAndDecrementOperators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasInheritance.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  const six = 2 + 2 + 2
@@ -43,8 +43,6 @@ View all concepts with or missing a *hasInfixNotation* measurement
 
 * Read more about Infix Notation on the web: 1.
  https://en.wikipedia.org/wiki/Infix_notation 1.
-
-endColumns
 
 keyboardNav hasIncrementAndDecrementOperators.html hasInheritance.html
 

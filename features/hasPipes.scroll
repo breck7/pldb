@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Pipes - language feature
+tags Feature
 printTitle Pipes
 
-html
- <a class="trueBaseThemePreviousItem" href="hasPatternMatching.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasPointers.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasPatternMatching.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPointers.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/r.html">R</a>
  # R has pipes via a library like dplyr
@@ -42,8 +42,6 @@ View all concepts with or missing a *hasPipes* measurement
 
 * Read more about Pipes on the web: 1.
  https://en.wikipedia.org/wiki/Pipeline_(software) 1.
-
-endColumns
 
 keyboardNav hasPatternMatching.html hasPointers.html
 

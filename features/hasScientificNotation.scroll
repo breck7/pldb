@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Scientific Notation - language feature
+tags Feature
 printTitle Scientific Notation
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSExpressions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSelfOrThisWord.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSExpressions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSelfOrThisWord.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/jule.html">Jule</a>
  1E2
@@ -43,8 +43,6 @@ View all concepts with or missing a *hasScientificNotation* measurement
 
 * Read more about Scientific Notation on the web: 1.
  https://en.wikipedia.org/wiki/Scientific_notation 1.
-
-endColumns
 
 keyboardNav hasSExpressions.html hasSelfOrThisWord.html
 

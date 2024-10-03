@@ -26,6 +26,7 @@ quickParagraphParser
  crux *
  extends paragraphParser
  description A paragraph.
+ boolean isArticleContent true
  example
   * I had a _new_ idea.
 

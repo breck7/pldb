@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Operator Overloading - language feature
+tags Feature
 printTitle Operator Overloading
 
-html
- <a class="trueBaseThemePreviousItem" href="hasOctals.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasOperators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasOctals.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasOperators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
  # Python Program illustrate how
@@ -67,8 +67,6 @@ View all concepts with or missing a *hasOperatorOverloading* measurement
 * Read more about Operator Overloading on the web: 1. 2.
  https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading 1.
  https://en.wikipedia.org/wiki/Operator_overloading 2.
-
-endColumns
 
 keyboardNav hasOctals.html hasOperators.html
 

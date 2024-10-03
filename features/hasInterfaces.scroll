@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Interfaces - language feature
+tags Feature
 printTitle Interfaces
 
-html
- <a class="trueBaseThemePreviousItem" href="hasIntegers.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasIterators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasIntegers.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasIterators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/java.html">Java</a>
  interface MyInterface{
@@ -120,8 +120,6 @@ View all concepts with or missing a *hasInterfaces* measurement
 
 * Read more about Interfaces on the web: 1.
  https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming) 1.
-
-endColumns
 
 keyboardNav hasIntegers.html hasIterators.html
 

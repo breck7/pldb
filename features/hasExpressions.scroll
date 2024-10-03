@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Expressions - language feature
+tags Feature
 printTitle Expressions
 
-html
- <a class="trueBaseThemePreviousItem" href="hasExports.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasFirstClassFunctions.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasExports.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasFirstClassFunctions.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/lil.html">Lil</a>
  1 + 1
@@ -38,8 +38,6 @@ View all concepts with or missing a *hasExpressions* measurement
 
 * Read more about Expressions on the web: 1.
  https://en.wikipedia.org/wiki/Expression_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasExports.html hasFirstClassFunctions.html
 

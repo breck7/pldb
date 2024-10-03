@@ -183,6 +183,9 @@ code {
 center .scrollParagraph {
   text-align: center;
 }
+.subdued {
+  color: rgb(150, 150, 150);
+}
 .scrollColumns {
   column-count: auto;
   column-fill: balance;

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Garbage Collection - language feature
+tags Feature
 printTitle Garbage Collection
 
-html
- <a class="trueBaseThemePreviousItem" href="hasFunctions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasGradualTypes.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasFunctions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasGradualTypes.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || msg = message()
@@ -35,8 +35,6 @@ View all concepts with or missing a *hasGarbageCollection* measurement
 
 * Read more about Garbage Collection on the web: 1.
  https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasFunctions.html hasGradualTypes.html
 

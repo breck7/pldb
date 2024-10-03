@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Binary Operators - language feature
+tags Feature
 printTitle Binary Operators
 
-html
- <a class="trueBaseThemePreviousItem" href="hasBinaryNumbers.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasBitWiseOperators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasBinaryNumbers.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBitWiseOperators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/lil.html">Lil</a>
  1 + 1
@@ -28,8 +28,6 @@ View all concepts with or missing a *hasBinaryOperators* measurement
 
 * Read more about Binary Operators on the web: 1.
  https://en.wikipedia.org/wiki/Binary_operation 1.
-
-endColumns
 
 keyboardNav hasBinaryNumbers.html hasBitWiseOperators.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Strings - language feature
+tags Feature
 printTitle Strings
 
-html
- <a class="trueBaseThemePreviousItem" href="hasStringConcatOperator.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasStructs.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasStringConcatOperator.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasStructs.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>27 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/v.html">V</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/z-expressions.html">Z</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/ion.html">Ion</a>
  &quot;hello world&quot;
@@ -71,8 +71,6 @@ View all concepts with or missing a *hasStrings* measurement
 
 * Read more about Strings on the web: 1.
  https://en.wikipedia.org/wiki/String_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasStringConcatOperator.html hasStructs.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Hexadecimals - language feature
+tags Feature
 printTitle Hexadecimals
 
-html
- <a class="trueBaseThemePreviousItem" href="hasHereDocs.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasHomoiconicity.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasHereDocs.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasHomoiconicity.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  // 0[xX][0-9a-fA-F]+n?
@@ -164,8 +164,6 @@ View all concepts with or missing a *hasHexadecimals* measurement
 
 * Read more about Hexadecimals on the web: 1.
  https://en.wikipedia.org/wiki/Hexadecimal 1.
-
-endColumns
 
 keyboardNav hasHereDocs.html hasHomoiconicity.html
 

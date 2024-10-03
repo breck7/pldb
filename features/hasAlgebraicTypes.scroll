@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Algebraic Data Type - language feature
+tags Feature
 printTitle Algebraic Data Type
 
-html
- <a class="trueBaseThemePreviousItem" href="hasAccessModifiers.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasAnonymousFunctions.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasAccessModifiers.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasAnonymousFunctions.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
  declare type numOrString = string | number
@@ -39,8 +39,6 @@ View all concepts with or missing a *hasAlgebraicTypes* measurement
 
 * Read more about Algebraic Data Type on the web: 1.
  https://en.wikipedia.org/wiki/Algebraic_data_type 1.
-
-endColumns
 
 keyboardNav hasAccessModifiers.html hasAnonymousFunctions.html
 

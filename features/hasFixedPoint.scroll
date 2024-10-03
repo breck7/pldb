@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Fixed Point Numbers - language feature
+tags Feature
 printTitle Fixed Point Numbers
 
-html
- <a class="trueBaseThemePreviousItem" href="hasFirstClassFunctions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasFloats.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasFirstClassFunctions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasFloats.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 ***
 
@@ -29,8 +29,6 @@ View all concepts with or missing a *hasFixedPoint* measurement
 
 * Read more about Fixed Point Numbers on the web: 1.
  https://en.wikipedia.org/wiki/Fixed-point_arithmetic 1.
-
-endColumns
 
 keyboardNav hasFirstClassFunctions.html hasFloats.html
 

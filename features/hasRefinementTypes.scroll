@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Refinement Types - language feature
+tags Feature
 printTitle Refinement Types
 
-html
- <a class="trueBaseThemePreviousItem" href="hasReferences.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasRegularExpressionsSyntaxSugar.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasReferences.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasRegularExpressionsSyntaxSugar.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/raku.html">Raku</a>
  subset Color of Any where Color | CMYK_Color;
@@ -28,8 +28,6 @@ View all concepts with or missing a *hasRefinementTypes* measurement
 
 * Read more about Refinement Types on the web: 1.
  https://en.wikipedia.org/wiki/Refinement_type 1.
-
-endColumns
 
 keyboardNav hasReferences.html hasRegularExpressionsSyntaxSugar.html
 

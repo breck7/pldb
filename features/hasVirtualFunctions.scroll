@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Virtual function - language feature
+tags Feature
 printTitle Virtual function
 
-html
- <a class="trueBaseThemePreviousItem" href="hasVariadicFunctions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasVoidFunctions.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasVariadicFunctions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasVoidFunctions.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C++</a>
  class Animal {
@@ -50,8 +50,6 @@ View all concepts with or missing a *hasVirtualFunctions* measurement
 
 * Read more about Virtual function on the web: 1.
  https://en.wikipedia.org/wiki/Virtual_function 1.
-
-endColumns
 
 keyboardNav hasVariadicFunctions.html hasVoidFunctions.html
 

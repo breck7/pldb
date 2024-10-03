@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Destructuring - language feature
+tags Feature
 printTitle Destructuring
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDependentTypes.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDirectives.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDependentTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDirectives.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  const o = {p: 42, q: true};
@@ -46,8 +46,6 @@ View all concepts with or missing a *hasDestructuring* measurement
 
 * Read more about Destructuring on the web: 1.
  https://reasonml.github.io/docs/en/destructuring 1.
-
-endColumns
 
 keyboardNav hasDependentTypes.html hasDirectives.html
 

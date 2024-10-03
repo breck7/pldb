@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Dependent types - language feature
+tags Feature
 printTitle Dependent types
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDefaultParameters.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDestructuring.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDefaultParameters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDestructuring.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coq.html">Coq</a>
  (* http://www-sop.inria.fr/members/Yves.Bertot/tsinghua/tsinghua-1.pdf *)
@@ -35,8 +35,6 @@ View all concepts with or missing a *hasDependentTypes* measurement
 
 * Read more about Dependent types on the web: 1.
  https://en.wikipedia.org/wiki/Dependent_type 1.
-
-endColumns
 
 keyboardNav hasDefaultParameters.html hasDestructuring.html
 

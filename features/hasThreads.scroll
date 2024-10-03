@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Threads - language feature
+tags Feature
 printTitle Threads
 
-html
- <a class="trueBaseThemePreviousItem" href="hasTernaryOperators.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasTimestamps.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasTernaryOperators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTimestamps.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  fn my_thread() {
@@ -38,8 +38,6 @@ View all concepts with or missing a *hasThreads* measurement
 
 * Read more about Threads on the web: 1.
  https://en.wikipedia.org/wiki/Thread_(computing) 1.
-
-endColumns
 
 keyboardNav hasTernaryOperators.html hasTimestamps.html
 

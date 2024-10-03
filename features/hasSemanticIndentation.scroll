@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Semantic Indentation - language feature
+tags Feature
 printTitle Semantic Indentation
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSelfOrThisWord.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSets.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSelfOrThisWord.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSets.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
  class Person (object):
@@ -79,8 +79,6 @@ View all concepts with or missing a *hasSemanticIndentation* measurement
 
 * Read more about Semantic Indentation on the web: 1.
  https://pldb.io/blog/which-programming-languages-use-indentation.html 1.
-
-endColumns
 
 keyboardNav hasSelfOrThisWord.html hasSets.html
 

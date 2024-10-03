@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Characters - language feature
+tags Feature
 printTitle Characters
 
-html
- <a class="trueBaseThemePreviousItem" href="hasCaseInsensitiveIdentifiers.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasClasses.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasCaseInsensitiveIdentifiers.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasClasses.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  char character = &#39;P&#39;;
@@ -38,8 +38,6 @@ View all concepts with or missing a *hasCharacters* measurement
 
 * Read more about Characters on the web: 1.
  https://en.wikipedia.org/wiki/Character_(computing) 1.
-
-endColumns
 
 keyboardNav hasCaseInsensitiveIdentifiers.html hasClasses.html
 

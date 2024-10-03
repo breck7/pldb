@@ -68,6 +68,20 @@ printFullSnippetsParser
    return file.scrollProgram.compileEmbeddedVersion(compileSettings) + file.viewSourceHtml
   }
 
+printShortSnippetsParser
+ popularity 0.000048
+ extends printSnippetsParser
+ cruxFromId
+ description Titles and descriptions in group(s).
+ javascript
+  makeSnippet(file, compileSettings) {
+   const { title, permalink, description, timestamp } = file
+   return `<div><a href="${permalink}">${title}</a><div>${description}...</div><div class="subdued" style="text-align:right;">${this.dayjs(timestamp * 1000).format(`MMMM D, YYYY`)}</div></div>`
+  }
+  get dayjs() {
+    return this.isNodeJs() ? require("dayjs") : dayjs
+  }
+
 printRelatedParser
  popularity 0.001182
  description Print links to related posts.

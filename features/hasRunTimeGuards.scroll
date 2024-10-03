@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Runtime Guards - language feature
+tags Feature
 printTitle Runtime Guards
 
-html
- <a class="trueBaseThemePreviousItem" href="hasReservedWords.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSExpressions.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasReservedWords.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSExpressions.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
  f x
@@ -34,8 +34,6 @@ View all concepts with or missing a *hasRunTimeGuards* measurement
 
 * Read more about Runtime Guards on the web: 1.
  https://en.wikipedia.org/wiki/Guard_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasReservedWords.html hasSExpressions.html
 

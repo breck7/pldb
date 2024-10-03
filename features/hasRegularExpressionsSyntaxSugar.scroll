@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Regular Expression Syntax Sugar - language feature
+tags Feature
 printTitle Regular Expression Syntax Sugar
 
-html
- <a class="trueBaseThemePreviousItem" href="hasRefinementTypes.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasRequiredMainFunction.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasRefinementTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasRequiredMainFunction.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  console.log(&quot;Hello World&quot;.match(/\w/))
@@ -41,8 +41,6 @@ View all concepts with or missing a *hasRegularExpressionsSyntaxSugar* measureme
 
 * Read more about Regular Expression Syntax Sugar on the web: 1.
  https://pldb.io/concepts/regex.html 1.
-
-endColumns
 
 keyboardNav hasRefinementTypes.html hasRequiredMainFunction.html
 

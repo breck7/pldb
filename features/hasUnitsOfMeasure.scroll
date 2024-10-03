@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Units of Measure - language feature
+tags Feature
 printTitle Units of Measure
 
-html
- <a class="trueBaseThemePreviousItem" href="hasUnionTypes.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasUserDefinedOperators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasUnionTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasUserDefinedOperators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/f-sharp.html">F#</a>
  // https://fsharpforfunandprofit.com/posts/units-of-measure/
@@ -64,8 +64,6 @@ View all concepts with or missing a *hasUnitsOfMeasure* measurement
 
 * Read more about Units of Measure on the web: 1.
  https://en.wikipedia.org/wiki/Unit_of_measurement 1.
-
-endColumns
 
 keyboardNav hasUnionTypes.html hasUserDefinedOperators.html
 

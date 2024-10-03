@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Null - language feature
+tags Feature
 printTitle Null
 
-html
- <a class="trueBaseThemePreviousItem" href="hasNamespaces.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasOctals.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasNamespaces.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasOctals.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  nil
@@ -44,8 +44,6 @@ View all concepts with or missing a *hasNull* measurement
 
 * Read more about Null on the web: 1.
  https://en.wikipedia.org/wiki/Null_pointer 1.
-
-endColumns
 
 keyboardNav hasNamespaces.html hasOctals.html
 

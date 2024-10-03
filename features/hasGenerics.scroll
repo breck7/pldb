@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Generics - language feature
+tags Feature
 printTitle Generics
 
-html
- <a class="trueBaseThemePreviousItem" href="hasGenerators.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasGlobalScope.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasGenerators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasGlobalScope.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/java.html">Java</a>
  List&lt;String&gt; v = new ArrayList&lt;String&gt;();
@@ -97,8 +97,6 @@ View all concepts with or missing a *hasGenerics* measurement
 
 * Read more about Generics on the web: 1.
  https://en.wikipedia.org/wiki/Generic_programming 1.
-
-endColumns
 
 keyboardNav hasGenerators.html hasGlobalScope.html
 

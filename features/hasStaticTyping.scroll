@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Static Typing - language feature
+tags Feature
 printTitle Static Typing
 
-html
- <a class="trueBaseThemePreviousItem" href="hasStaticMethods.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasStreams.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasStaticMethods.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasStreams.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || x = &quot;Hello&quot;
@@ -29,8 +29,6 @@ View all concepts with or missing a *hasStaticTyping* measurement
 
 * Read more about Static Typing on the web: 1.
  https://en.wikipedia.org/wiki/Type_system#Static_type_checking 1.
-
-endColumns
 
 keyboardNav hasStaticMethods.html hasStreams.html
 

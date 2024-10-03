@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Typed Holes - language feature
+tags Feature
 printTitle Typed Holes
 
-html
- <a class="trueBaseThemePreviousItem" href="hasTypeParameters.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasUnaryOperators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasTypeParameters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasUnaryOperators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
  -- Found hole `_&#39; with type f (Free f b)
@@ -28,8 +28,6 @@ View all concepts with or missing a *hasTypedHoles* measurement
 
 * Read more about Typed Holes on the web: 1.
  https://wiki.haskell.org/GHC/Typed_holes 1.
-
-endColumns
 
 keyboardNav hasTypeParameters.html hasUnaryOperators.html
 

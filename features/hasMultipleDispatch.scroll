@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Multiple Dispatch - language feature
+tags Feature
 printTitle Multiple Dispatch
 
-html
- <a class="trueBaseThemePreviousItem" href="hasMultilineStrings.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMultipleInheritance.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasMultilineStrings.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMultipleInheritance.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/julia.html">Julia</a>
  collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
@@ -49,8 +49,6 @@ View all concepts with or missing a *hasMultipleDispatch* measurement
 
 * Read more about Multiple Dispatch on the web: 1.
  https://en.wikipedia.org/wiki/Multiple_dispatch 1.
-
-endColumns
 
 keyboardNav hasMultilineStrings.html hasMultipleInheritance.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Floats - language feature
+tags Feature
 printTitle Floats
 
-html
- <a class="trueBaseThemePreviousItem" href="hasFixedPoint.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasFnArguments.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasFixedPoint.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasFnArguments.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
@@ -222,8 +222,6 @@ View all concepts with or missing a *hasFloats* measurement
 * Read more about Floats on the web: 1. 2.
  https://evanw.github.io/float-toy/ 1.
  https://en.wikipedia.org/wiki/Floating-point_arithmetic 2.
-
-endColumns
 
 keyboardNav hasFixedPoint.html hasFnArguments.html
 

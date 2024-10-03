@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Postfix Notation - language feature
+tags Feature
 printTitle Postfix Notation
 
-html
- <a class="trueBaseThemePreviousItem" href="hasPolymorphism.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasPrefixNotation.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasPolymorphism.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPrefixNotation.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/forth.html">Forth</a>
  \ Multiplies 25 and 10 and then adds 50 to result
@@ -29,8 +29,6 @@ View all concepts with or missing a *hasPostfixNotation* measurement
 
 * Read more about Postfix Notation on the web: 1.
  https://en.wikipedia.org/wiki/Reverse_Polish_notation 1.
-
-endColumns
 
 keyboardNav hasPolymorphism.html hasPrefixNotation.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Exceptions - language feature
+tags Feature
 printTitle Exceptions
 
-html
- <a class="trueBaseThemePreviousItem" href="hasEscapeCharacters.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasExplicitTypeCasting.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasEscapeCharacters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasExplicitTypeCasting.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  try {
@@ -64,8 +64,6 @@ View all concepts with or missing a *hasExceptions* measurement
 
 * Read more about Exceptions on the web: 1.
  https://en.wikipedia.org/wiki/Exception_handling 1.
-
-endColumns
 
 keyboardNav hasEscapeCharacters.html hasExplicitTypeCasting.html
 

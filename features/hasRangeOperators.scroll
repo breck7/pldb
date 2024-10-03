@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Range Operator - language feature
+tags Feature
 printTitle Range Operator
 
-html
- <a class="trueBaseThemePreviousItem" href="hasProcessorRegisters.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasReferences.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasProcessorRegisters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasReferences.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/perl.html">Perl</a>
  # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
@@ -35,8 +35,6 @@ View all concepts with or missing a *hasRangeOperators* measurement
 
 * Read more about Range Operator on the web: 1.
  https://docstore.mik.ua/orelly/perl4/prog/ch03_15.htm 1.
-
-endColumns
 
 keyboardNav hasProcessorRegisters.html hasReferences.html
 

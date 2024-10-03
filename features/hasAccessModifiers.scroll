@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Access Modifiers - language feature
+tags Feature
 printTitle Access Modifiers
 
-html
- <a class="trueBaseThemePreviousItem" href="hasAbstractTypes.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasAlgebraicTypes.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasAbstractTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasAlgebraicTypes.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
  class Person {
@@ -52,8 +52,6 @@ View all concepts with or missing a *hasAccessModifiers* measurement
 
 * Read more about Access Modifiers on the web: 1.
  https://en.wikipedia.org/wiki/Access_modifiers 1.
-
-endColumns
 
 keyboardNav hasAbstractTypes.html hasAlgebraicTypes.html
 

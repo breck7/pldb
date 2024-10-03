@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Booleans - language feature
+tags Feature
 printTitle Booleans
 
-html
- <a class="trueBaseThemePreviousItem" href="hasBlobs.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasBoundedCheckedArrays.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasBlobs.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBoundedCheckedArrays.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/go.html">Go</a>
  c := true
@@ -69,8 +69,6 @@ View all concepts with or missing a *hasBooleans* measurement
 
 * Read more about Booleans on the web: 1.
  https://en.wikipedia.org/wiki/Boolean_data_type 1.
-
-endColumns
 
 keyboardNav hasBlobs.html hasBoundedCheckedArrays.html
 

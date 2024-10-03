@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title hasIds - language feature
+tags Feature
 printTitle hasIds
 
-html
- <a class="trueBaseThemePreviousItem" href="hasHomoiconicity.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasIfElses.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasHomoiconicity.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasIfElses.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/graphql.html">GraphQL</a>
  # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
@@ -31,8 +31,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/graphql.htm
 View all concepts with or missing a *hasIds* measurement
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIds&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasIds%22%2C%22origData%22%3A%22hasIds%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIds&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasIds%22%2C%22origData%22%3A%22hasIds%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
-
-endColumns
 
 keyboardNav hasHomoiconicity.html hasIfElses.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Lists - language feature
+tags Feature
 printTitle Lists
 
-html
- <a class="trueBaseThemePreviousItem" href="hasLineComments.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasStandardLibrary.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasLineComments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasStandardLibrary.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  const list = [1,2,3]
@@ -87,8 +87,6 @@ View all concepts with or missing a *hasLists* measurement
 
 * Read more about Lists on the web: 1.
  https://en.wikipedia.org/wiki/List_(abstract_data_type) 1.
-
-endColumns
 
 keyboardNav hasLineComments.html hasStandardLibrary.html
 

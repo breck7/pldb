@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Pattern Matching - language feature
+tags Feature
 printTitle Pattern Matching
 
-html
- <a class="trueBaseThemePreviousItem" href="hasPartialApplication.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasPipes.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasPartialApplication.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPipes.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
  fib 0 = 1
@@ -53,8 +53,6 @@ View all concepts with or missing a *hasPatternMatching* measurement
 
 * Read more about Pattern Matching on the web: 1.
  https://en.wikipedia.org/wiki/Pattern_matching 1.
-
-endColumns
 
 keyboardNav hasPartialApplication.html hasPipes.html
 

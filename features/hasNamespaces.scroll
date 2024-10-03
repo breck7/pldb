@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Namespaces - language feature
+tags Feature
 printTitle Namespaces
 
-html
- <a class="trueBaseThemePreviousItem" href="hasMultipleInheritance.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasNull.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasMultipleInheritance.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasNull.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C++</a>
  #include &lt;iostream&gt;
@@ -96,8 +96,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html"
 View all concepts with or missing a *hasNamespaces* measurement
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamespaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasNamespaces%22%2C%22origData%22%3A%22hasNamespaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamespaces&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasNamespaces%22%2C%22origData%22%3A%22hasNamespaces%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
-
-endColumns
 
 keyboardNav hasMultipleInheritance.html hasNull.html
 

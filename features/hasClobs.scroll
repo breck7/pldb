@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Clobs - language feature
+tags Feature
 printTitle Clobs
 
-html
- <a class="trueBaseThemePreviousItem" href="hasClasses.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasComments.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasClasses.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasComments.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
  // The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
@@ -30,8 +30,6 @@ View all concepts with or missing a *hasClobs* measurement
 
 * Read more about Clobs on the web: 1.
  https://en.wikipedia.org/wiki/Character_large_object 1.
-
-endColumns
 
 keyboardNav hasClasses.html hasComments.html
 

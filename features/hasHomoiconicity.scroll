@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Homoiconicity - language feature
+tags Feature
 printTitle Homoiconicity
 
-html
- <a class="trueBaseThemePreviousItem" href="hasHexadecimals.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasIds.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasHexadecimals.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasIds.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  The~entire~Language is (%written in:@Jeebox)
@@ -32,8 +32,6 @@ View all concepts with or missing a *hasHomoiconicity* measurement
 
 * Read more about Homoiconicity on the web: 1.
  https://en.wikipedia.org/wiki/Homoiconicity 1.
-
-endColumns
 
 keyboardNav hasHexadecimals.html hasIds.html
 

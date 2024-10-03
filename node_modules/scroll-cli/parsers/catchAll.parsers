@@ -4,6 +4,7 @@ catchAllParagraphParser
  extends paragraphParser
  boolean suggestInAutocomplete false
  boolean isPopular true
+ boolean isArticleContent true
  atoms stringAtom
  javascript
   getErrors() {

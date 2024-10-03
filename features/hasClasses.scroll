@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Classes - language feature
+tags Feature
 printTitle Classes
 
-html
- <a class="trueBaseThemePreviousItem" href="hasCharacters.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasClobs.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasCharacters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasClobs.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/typescript.html">TypeScript</a>
  class Person {}
@@ -56,8 +56,6 @@ View all concepts with or missing a *hasClasses* measurement
 
 * Read more about Classes on the web: 1.
  https://en.wikipedia.org/wiki/Class_(computer_programming) 1.
-
-endColumns
 
 keyboardNav hasCharacters.html hasClobs.html
 

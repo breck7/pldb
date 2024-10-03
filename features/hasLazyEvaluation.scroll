@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Lazy Evaluation - language feature
+tags Feature
 printTitle Lazy Evaluation
 
-html
- <a class="trueBaseThemePreviousItem" href="hasLabels.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasLineComments.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasLabels.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasLineComments.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  fn void print(String s)
@@ -38,8 +38,6 @@ View all concepts with or missing a *hasLazyEvaluation* measurement
 
 * Read more about Lazy Evaluation on the web: 1.
  https://en.wikipedia.org/wiki/Lazy_evaluation 1.
-
-endColumns
 
 keyboardNav hasLabels.html hasLineComments.html
 

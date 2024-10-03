@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Module Pattern - language feature
+tags Feature
 printTitle Module Pattern
 
-html
- <a class="trueBaseThemePreviousItem" href="hasMixins.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMonads.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasMixins.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMonads.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/java.html">Java</a>
  // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
@@ -129,8 +129,6 @@ View all concepts with or missing a *hasModules* measurement
 
 * Read more about Module Pattern on the web: 1.
  https://en.wikipedia.org/wiki/Module_pattern 1.
-
-endColumns
 
 keyboardNav hasMixins.html hasMonads.html
 

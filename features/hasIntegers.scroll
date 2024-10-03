@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Integers - language feature
+tags Feature
 printTitle Integers
 
-html
- <a class="trueBaseThemePreviousItem" href="hasInheritance.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasInterfaces.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasInheritance.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasInterfaces.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>6 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/uxf.html">Uniform eXchange Format</a>
  80766866
@@ -217,8 +217,6 @@ View all concepts with or missing a *hasIntegers* measurement
 
 * Read more about Integers on the web: 1.
  https://en.wikipedia.org/wiki/Integer_(computer_science) 1.
-
-endColumns
 
 keyboardNav hasInheritance.html hasInterfaces.html
 

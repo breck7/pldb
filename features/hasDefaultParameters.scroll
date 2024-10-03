@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Default Parameters Pattern - language feature
+tags Feature
 printTitle Default Parameters Pattern
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDecorators.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDependentTypes.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDecorators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDependentTypes.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  function multiply(a, b = 1) {
@@ -48,8 +48,6 @@ View all concepts with or missing a *hasDefaultParameters* measurement
 
 * Read more about Default Parameters Pattern on the web: 1.
  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters 1.
-
-endColumns
 
 keyboardNav hasDecorators.html hasDependentTypes.html
 

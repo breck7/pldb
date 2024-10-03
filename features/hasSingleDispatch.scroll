@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Single Dispatch - language feature
+tags Feature
 printTitle Single Dispatch
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSets.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSingleTypeArrays.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSets.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSingleTypeArrays.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/common-lisp.html">Common Lisp</a>
  ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
@@ -46,8 +46,6 @@ View all concepts with or missing a *hasSingleDispatch* measurement
 
 * Read more about Single Dispatch on the web: 1.
  https://en.wikipedia.org/wiki/Dynamic_dispatch#Single_and_multiple_dispatch 1.
-
-endColumns
 
 keyboardNav hasSets.html hasSingleTypeArrays.html
 

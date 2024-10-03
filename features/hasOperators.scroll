@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Operators - language feature
+tags Feature
 printTitle Operators
 
-html
- <a class="trueBaseThemePreviousItem" href="hasOperatorOverloading.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasPairs.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasOperatorOverloading.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPairs.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  1 + 1
@@ -42,8 +42,6 @@ View all concepts with or missing a *hasOperators* measurement
 
 * Read more about Operators on the web: 1.
  https://en.wikipedia.org/wiki/Operator_(computer_programming) 1.
-
-endColumns
 
 keyboardNav hasOperatorOverloading.html hasPairs.html
 

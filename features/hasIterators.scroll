@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Iterators - language feature
+tags Feature
 printTitle Iterators
 
-html
- <a class="trueBaseThemePreviousItem" href="hasInterfaces.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasLabels.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasInterfaces.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasLabels.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
  https://www.w3schools.com/python/python_iterators.asp
@@ -75,8 +75,6 @@ View all concepts with or missing a *hasIterators* measurement
 
 * Read more about Iterators on the web: 1.
  https://en.wikipedia.org/wiki/Iterator 1.
-
-endColumns
 
 keyboardNav hasInterfaces.html hasLabels.html
 

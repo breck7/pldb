@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Variadic Functions - language feature
+tags Feature
 printTitle Variadic Functions
 
-html
- <a class="trueBaseThemePreviousItem" href="hasVariableSubstitutionSyntax.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasVirtualFunctions.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasVariableSubstitutionSyntax.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasVirtualFunctions.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  double average(int count, ...)
@@ -64,8 +64,6 @@ View all concepts with or missing a *hasVariadicFunctions* measurement
 
 * Read more about Variadic Functions on the web: 1.
  https://en.wikipedia.org/wiki/Variadic_function 1.
-
-endColumns
 
 keyboardNav hasVariableSubstitutionSyntax.html hasVirtualFunctions.html
 

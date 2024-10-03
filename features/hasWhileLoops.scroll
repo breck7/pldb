@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title While Loops - language feature
+tags Feature
 printTitle While Loops
 
-html
- <a class="trueBaseThemePreviousItem" href="hasVoidFunctions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasZeroBasedNumbering.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasVoidFunctions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasZeroBasedNumbering.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  let times = 10
@@ -64,8 +64,6 @@ View all concepts with or missing a *hasWhileLoops* measurement
 
 * Read more about While Loops on the web: 1.
  https://en.wikipedia.org/wiki/While_loop 1.
-
-endColumns
 
 keyboardNav hasVoidFunctions.html hasZeroBasedNumbering.html
 

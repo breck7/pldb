@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title hasDynamicTyping - language feature
+tags Feature
 printTitle hasDynamicTyping
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDynamicSizedArrays.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasEnums.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDynamicSizedArrays.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasEnums.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 ***
 
@@ -20,8 +20,6 @@ mediumColumns 1
 View all concepts with or missing a *hasDynamicTyping* measurement
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDynamicTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDynamicTyping%22%2C%22origData%22%3A%22hasDynamicTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDynamicTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDynamicTyping%22%2C%22origData%22%3A%22hasDynamicTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
-
-endColumns
 
 keyboardNav hasDynamicSizedArrays.html hasEnums.html
 

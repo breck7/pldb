@@ -19,6 +19,7 @@ h1Parser
  popularity 0.017918
  description An html h1 tag.
  extends abstractHeaderParser
+ boolean isArticleContent true
  crux #
  boolean isPopular true
  javascript
@@ -28,6 +29,7 @@ h2Parser
  popularity 0.005257
  description An html h2 tag.
  extends abstractHeaderParser
+ boolean isArticleContent true
  crux ##
  boolean isPopular true
  javascript
@@ -37,6 +39,7 @@ h3Parser
  popularity 0.001085
  description An html h3 tag.
  extends abstractHeaderParser
+ boolean isArticleContent true
  crux ###
  javascript
   tag = "h3"

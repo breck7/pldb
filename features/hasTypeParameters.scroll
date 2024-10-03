@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Type Parameters - language feature
+tags Feature
 printTitle Type Parameters
 
-html
- <a class="trueBaseThemePreviousItem" href="hasTypeInference.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasTypedHoles.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasTypeInference.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypedHoles.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
  function identity&lt;T&gt;(arg: T): T {
@@ -33,8 +33,6 @@ View all concepts with or missing a *hasTypeParameters* measurement
 
 * Read more about Type Parameters on the web: 1.
  https://en.wikipedia.org/wiki/TypeParameter 1.
-
-endColumns
 
 keyboardNav hasTypeInference.html hasTypedHoles.html
 

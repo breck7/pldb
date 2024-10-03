@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Monad - language feature
+tags Feature
 printTitle Monad
 
-html
- <a class="trueBaseThemePreviousItem" href="hasModules.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMultiLineComments.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasModules.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMultiLineComments.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
  -- https://stackoverflow.com/questions/44965/what-is-a-monad
@@ -39,8 +39,6 @@ View all concepts with or missing a *hasMonads* measurement
 
 * Read more about Monad on the web: 1.
  https://en.wikipedia.org/wiki/Monad_(functional_programming) 1.
-
-endColumns
 
 keyboardNav hasModules.html hasMultiLineComments.html
 

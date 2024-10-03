@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Type Casting - language feature
+tags Feature
 printTitle Type Casting
 
-html
- <a class="trueBaseThemePreviousItem" href="hasExceptions.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasExports.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasExceptions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasExports.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  double da = 3.3;
@@ -58,8 +58,6 @@ View all concepts with or missing a *hasExplicitTypeCasting* measurement
 
 * Read more about Type Casting on the web: 1.
  https://en.wikipedia.org/wiki/Type_conversion 1.
-
-endColumns
 
 keyboardNav hasExceptions.html hasExports.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Directives - language feature
+tags Feature
 printTitle Directives
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDestructuring.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDisposeBlocks.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDestructuring.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDisposeBlocks.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  &quot;use strict&quot;;
@@ -155,8 +155,6 @@ View all concepts with or missing a *hasDirectives* measurement
 
 * Read more about Directives on the web: 1.
  https://en.wikipedia.org/wiki/Directive_(programming) 1.
-
-endColumns
 
 keyboardNav hasDestructuring.html hasDisposeBlocks.html
 

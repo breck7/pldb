@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Duck Typing - language feature
+tags Feature
 printTitle Duck Typing
 
-html
- <a class="trueBaseThemePreviousItem" href="hasDocComments.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasDynamicProperties.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasDocComments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDynamicProperties.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  fn lock_object[T](obj: T) {
@@ -34,8 +34,6 @@ View all concepts with or missing a *hasDuckTyping* measurement
 
 * Read more about Duck Typing on the web: 1.
  https://en.wikipedia.org/wiki/Duck_typing 1.
-
-endColumns
 
 keyboardNav hasDocComments.html hasDynamicProperties.html
 

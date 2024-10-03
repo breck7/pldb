@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Single-Type Arrays - language feature
+tags Feature
 printTitle Single-Type Arrays
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSingleDispatch.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSourceMaps.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSingleDispatch.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSourceMaps.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
  const scores: int[]
@@ -36,8 +36,6 @@ View all concepts with or missing a *hasSingleTypeArrays* measurement
 
 * Read more about Single-Type Arrays on the web: 1.
  https://en.wikipedia.org/wiki/Array_data_structure 1.
-
-endColumns
 
 keyboardNav hasSingleDispatch.html hasSourceMaps.html
 

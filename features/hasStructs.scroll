@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Structs - language feature
+tags Feature
 printTitle Structs
 
-html
- <a class="trueBaseThemePreviousItem" href="hasStrings.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSwitch.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasStrings.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSwitch.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
  struct account {
@@ -64,8 +64,6 @@ View all concepts with or missing a *hasStructs* measurement
 
 * Read more about Structs on the web: 1.
  https://en.wikipedia.org/wiki/Struct_(C_programming_language) 1.
-
-endColumns
 
 keyboardNav hasStrings.html hasSwitch.html
 

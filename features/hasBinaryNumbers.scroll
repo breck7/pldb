@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Binary Literals - language feature
+tags Feature
 printTitle Binary Literals
 
-html
- <a class="trueBaseThemePreviousItem" href="hasAsyncAwait.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasBinaryOperators.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasAsyncAwait.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBinaryOperators.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  // 0[bB][01]+n?
@@ -114,8 +114,6 @@ View all concepts with or missing a *hasBinaryNumbers* measurement
 
 * Read more about Binary Literals on the web: 1.
  https://en.wikipedia.org/wiki/Binary_number 1.
-
-endColumns
 
 keyboardNav hasAsyncAwait.html hasBinaryOperators.html
 

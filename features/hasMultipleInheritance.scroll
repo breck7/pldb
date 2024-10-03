@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Multiple Inheritance - language feature
+tags Feature
 printTitle Multiple Inheritance
 
-html
- <a class="trueBaseThemePreviousItem" href="hasMultipleDispatch.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasNamespaces.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasMultipleDispatch.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasNamespaces.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
  class Base1:
@@ -44,8 +44,6 @@ View all concepts with or missing a *hasMultipleInheritance* measurement
 
 * Read more about Multiple Inheritance on the web: 1.
  https://en.wikipedia.org/wiki/Multiple_inheritance 1.
-
-endColumns
 
 keyboardNav hasMultipleDispatch.html hasNamespaces.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Message Passing - language feature
+tags Feature
 printTitle Message Passing
 
-html
- <a class="trueBaseThemePreviousItem" href="hasMemberVariables.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasMethodChaining.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasMemberVariables.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMethodChaining.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
  send(pid, :ping)
@@ -37,8 +37,6 @@ View all concepts with or missing a *hasMessagePassing* measurement
 
 * Read more about Message Passing on the web: 1.
  https://en.wikipedia.org/wiki/Message_passing 1.
-
-endColumns
 
 keyboardNav hasMemberVariables.html hasMethodChaining.html
 

@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Case Sensitivity - language feature
+tags Feature
 printTitle Case Sensitivity
 
-html
- <a class="trueBaseThemePreviousItem" href="hasZippers.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="letterFirstIdentifiers.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasZippers.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="letterFirstIdentifiers.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ini.html">Ini</a>
  [subsections &quot;areCaseSensitive&quot;]
@@ -35,8 +35,6 @@ View all concepts with or missing a *isCaseSensitive* measurement
 
 * Read more about Case Sensitivity on the web: 1.
  https://en.wikipedia.org/wiki/Case_sensitivity 1.
-
-endColumns
 
 keyboardNav hasZippers.html letterFirstIdentifiers.html
 

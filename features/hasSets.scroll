@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Sets - language feature
+tags Feature
 printTitle Sets
 
-html
- <a class="trueBaseThemePreviousItem" href="hasSemanticIndentation.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasSingleDispatch.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasSemanticIndentation.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSingleDispatch.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  set = new Set()
@@ -42,8 +42,6 @@ View all concepts with or missing a *hasSets* measurement
 
 * Read more about Sets on the web: 1.
  https://en.wikipedia.org/wiki/Set_(abstract_data_type) 1.
-
-endColumns
 
 keyboardNav hasSemanticIndentation.html hasSingleDispatch.html
 

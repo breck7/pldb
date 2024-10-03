@@ -1,15 +1,15 @@
-import header.scroll
+header.scroll
 
 title Type Inference - language feature
+tags Feature
 printTitle Type Inference
 
-html
- <a class="trueBaseThemePreviousItem" href="hasTypeAnnotations.html">&lt;</a>
- <a class="trueBaseThemeNextItem" href="hasTypeParameters.html">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="hasTypeAnnotations.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypeParameters.html">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || x = &quot;Hello&quot;
@@ -35,8 +35,6 @@ View all concepts with or missing a *hasTypeInference* measurement
 
 * Read more about Type Inference on the web: 1.
  https://en.wikipedia.org/wiki/Type_inference 1.
-
-endColumns
 
 keyboardNav hasTypeAnnotations.html hasTypeParameters.html
 
