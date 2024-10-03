@@ -23,7 +23,7 @@ stumpNoSnippet
   form
    style display:inline-block;
    method get
-   action BASE_URL/lists/explorer.html
+   action BASE_URL/search.html
    input
     type search
     id trueBaseThemeHeaderSearch

@@ -1,0 +1,15 @@
+title Search PLDB
+
+rootHeader.scroll
+
+printTitle
+
+// Todo: this is pretty amazing that we can just dump plain text versions of over 5,000 files in one HTML table and use DataTables to search...BUT...let's improve (make build speed faster, for example)
+
+container
+printSearchTable blog/All features/All concepts/
+tableSearch
+
+endColumns
+
+footer.scroll

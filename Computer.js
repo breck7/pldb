@@ -768,7 +768,7 @@ table
  git clone ${mainRepo}`
       : ""
 
-    return `import ../header.scroll
+    return `../header.scroll
 baseUrl https://pldb.io/concepts/
 title ${title} - ${lodash.upperFirst(primaryTagName)}
 
@@ -779,7 +779,7 @@ printTitle ${title}
 
 viewSourceUrl ${this.sourceUrl}
 
-wideColumns 1
+container 800px
 
 <div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
 
@@ -799,7 +799,7 @@ ${this.descriptionSection}
 
 ${this.factsArray.map(fact => `- ${fact}\n inlineMarkupsOn none`).join("\n")}
 
-<br>
+br
 
 ${this.exampleSection}
 
@@ -1477,26 +1477,24 @@ class Feature {
     const description = this.measure.Description
     if (description) descriptionText = `* This question asks: ${description}`
 
-    return `import header.scroll
+    return `header.scroll
 
 title ${title} - language feature
+tags Feature
 printTitle ${title}
 
-html
- <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
- <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
+<a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
+<a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
-mediumColumns 1
+container 600px
 
 ${examplesText}
 
 ***
 
 ${[positiveText, negativeText, descriptionText, explorerLinks, referencesText].filter(i => i).join("\n\n***\n\n")}
-
-endColumns
 
 keyboardNav ${previous.permalink} ${next.permalink}
 
