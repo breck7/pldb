@@ -126,7 +126,7 @@
   },
   {
     "Name": "releaseNotes",
-    "Values": 68,
+    "Values": 69,
     "Coverage": "1%",
     "Question": "What is the URL to the release notes or changelog for this language?",
     "Example": "https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html",
@@ -169,7 +169,7 @@
     "Values": 5023,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1209",
+    "Example": "1210",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -185,7 +185,7 @@
   },
   {
     "Name": "writtenInCount",
-    "Values": 1166,
+    "Values": 1167,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -198,7 +198,7 @@
     "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21738",
+    "Example": "21737",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -931,7 +931,7 @@
   },
   {
     "Name": "repoStats_firstCommit",
-    "Values": 1161,
+    "Values": 1162,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -941,7 +941,7 @@
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1123,
+    "Values": 1124,
     "Coverage": "22%",
     "Question": "What year was the newest commit made in this git repo?",
     "Example": "2022",
@@ -951,7 +951,7 @@
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1161,
+    "Values": 1162,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
     "Example": "871",
@@ -961,7 +961,7 @@
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1161,
+    "Values": 1162,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -971,7 +971,7 @@
   },
   {
     "Name": "repoStats_files",
-    "Values": 1158,
+    "Values": 1159,
     "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -1114,7 +1114,7 @@
   },
   {
     "Name": "writtenIn",
-    "Values": 1166,
+    "Values": 1167,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1354,7 +1354,7 @@
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1166,
+    "Values": 1167,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
