@@ -1,8 +1,8 @@
 Top 1,000 Computer Languages
 ============================
 
-Rankings explained · Explore all 5,022
- https://pldb.io/lists/explorer.html Explore all 5,022
+Rankings explained · Explore all 5,023
+ https://pldb.io/lists/explorer.html Explore all 5,023
  https://pldb.io/lists/../pages/the-rankings-algorithm.html Rankings explained
 
 name,rank,appeared,tags,creators,foundationScore,inboundLinksCount,measurements,nameLink
@@ -37,8 +37,8 @@ CoffeeScript,28,2009,pl,Jeremy Ashkenas,32,34,69,../concepts/coffeescript.html
 Elixir,29,2011,pl,José Valim,14,14,96,../concepts/elixir.html
 Erlang,30,1986,pl,Joe Armstrong and Robert Virding and Mike Williams,14,15,75,../concepts/erlang.html
 SAS,31,1976,pl,Anthony James Barr,8,10,43,../concepts/sas.html
-Objective-C,32,1984,pl,Brad Cox,53,56,68,../concepts/objective-c.html
-Julia,33,2012,pl,Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah,10,10,87,../concepts/julia.html
+Julia,32,2012,pl,Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah,10,10,87,../concepts/julia.html
+Objective-C,33,1984,pl,Brad Cox,53,56,68,../concepts/objective-c.html
 Prolog,34,1972,pl,Alain Colmerauer,11,17,58,../concepts/prolog.html
 Lisp,35,1958,pl lisp,John McCarthy,129,136,31,../concepts/lisp.html
 Mathematica,36,1988,pl mathematics physics chemistry biology,Stephen Wolfram,6,8,47,../concepts/mathematica.html
@@ -55,8 +55,8 @@ YAML,46,2001,dataNotation,Clark Evans and Oren Ben-Kiki and Ingy döt Net,735,74
 Nim,47,2008,pl,Andreas Rumpf,12,13,65,../concepts/nim.html
 Pascal,48,1970,pl,Niklaus Wirth,52,58,62,../concepts/pascal.html
 Ada,49,1980,pl,Jean Ichbiah,10,13,65,../concepts/ada.html
-TOML,50,2013,dataNotation,Tom Preston-Werner,187,191,30,../concepts/toml.html
-Fortran,51,1957,pl physics chemistry biology,John Backus,0,5,61,../concepts/fortran.html
+Fortran,50,1957,pl physics chemistry biology,John Backus,0,5,61,../concepts/fortran.html
+TOML,51,2013,dataNotation,Tom Preston-Werner,187,191,30,../concepts/toml.html
 PostgreSQL,52,1986,queryLanguage,Marc G. Fournier,0,3,48,../concepts/postgresql.html
 Crystal,53,2014,pl,Ary Borenszweig and Juan Wajnerman and Brian Cardiff,7,9,62,../concepts/crystal.html
 MySQL,54,1995,queryLanguage,David Axmark and Michael Widenius,0,1,49,../concepts/mysql.html
@@ -238,8 +238,8 @@ Eve,229,2016,pl,,0,0,22,../concepts/eve.html
 Literate CoffeeScript,230,2013,pl,Jeremy Ashkenas,0,0,19,../concepts/literate-coffeescript.html
 Matplotlib,231,2003,dataVis library,John D. Hunter,0,0,18,../concepts/matplotlib.html
 Halide,232,2010,pl,,0,0,21,../concepts/halide.html
-Nextflow,233,2013,pl,,0,0,24,../concepts/nextflow.html
-Kubernetes,234,2014,application,Craig McLuckie and Joe Beda and and Brendan Burns,0,0,17,../concepts/kubernetes.html
+Kubernetes,233,2014,application,Craig McLuckie and Joe Beda and and Brendan Burns,0,0,17,../concepts/kubernetes.html
+Nextflow,234,2013,pl,,0,0,24,../concepts/nextflow.html
 Apache Arrow,235,2016,binaryDataFormat,Wes McKinney,0,1,16,../concepts/arrow-format.html
 Futhark,236,2013,pl,Troels Henriksen and Cosmin Oancea and Martin Elsman,0,0,29,../concepts/futhark.html
 PyTorch,237,2016,library,Ronan Collobert,0,0,17,../concepts/pytorch.html
@@ -289,9 +289,9 @@ unison,280,2015,pl,,0,0,19,../concepts/unison.html
 GAP,281,1986,pl,gap,0,0,33,../concepts/gap.html
 Lil,282,2022,pl,John Earnest,0,0,69,../concepts/lil.html
 YASnippet,283,2008,textMarkup,Zhang Chiyuan,0,0,21,../concepts/yasnippet.html
-Yes It Is,284,2006,framework,Qiang Xue,0,0,16,../concepts/yii.html
-kaitai,285,2016,idl,Mikhail Yakshin,0,0,20,../concepts/kaitai.html
-Microsoft Azure,286,2010,cloud,,0,0,15,../concepts/azure.html
+Microsoft Azure,284,2010,cloud,,0,0,15,../concepts/azure.html
+Yes It Is,285,2006,framework,Qiang Xue,0,0,16,../concepts/yii.html
+kaitai,286,2016,idl,Mikhail Yakshin,0,0,20,../concepts/kaitai.html
 Carbon,287,2020,pl,Chandler Carruth and Jon Ross-Perkins,0,0,16,../concepts/carbon.html
 mgmt,288,2015,pl,James Shubin,0,0,20,../concepts/mgmt.html
 Pygments,289,2006,library,Georg Brandl,0,3,16,../concepts/pygments.html
@@ -341,8 +341,8 @@ Slope,332,2021,pl lisp,Sloum,0,0,42,../concepts/slope.html
 Turtle,333,2011,dataNotation,,0,4,16,../concepts/turtle.html
 JAI,334,2014,pl,Jonathan Blow,0,0,26,../concepts/jai.html
 AutoIt,335,1999,pl,Jonathan Bennett,0,0,39,../concepts/autoit.html
-K,336,1993,pl,Arthur Whitney,0,11,27,../concepts/k.html
-iOS,337,2007,os,,0,0,14,../concepts/ios.html
+iOS,336,2007,os,,0,0,14,../concepts/ios.html
+K,337,1993,pl,Arthur Whitney,0,11,27,../concepts/k.html
 Twig,338,2009,template,,2,2,29,../concepts/twig.html
 Jakt,339,2022,pl,Andreas Kling,0,0,19,../concepts/jakt.html
 Observable,340,2017,pl,Mike Bostock,0,1,23,../concepts/observable-lang.html
@@ -799,8 +799,8 @@ Linden Scripting Language,790,2003,pl,,0,0,27,../concepts/lsl.html
 Opal,791,1994,pl,,0,0,20,../concepts/opal.html
 Marp,792,2018,textMarkup,,0,0,14,../concepts/marp.html
 FFmpeg,793,2000,application,Fabrice Bellard and Bobby Bingham,0,0,11,../concepts/ffmpeg.html
-SGML,794,1986,textMarkup,,0,0,13,../concepts/sgml.html
-Lodash,795,2009,library,John-David Dalton,0,0,11,../concepts/lodash.html
+Lodash,794,2009,library,John-David Dalton,0,0,11,../concepts/lodash.html
+SGML,795,1986,textMarkup,,0,0,13,../concepts/sgml.html
 Superjson,796,2014,dataNotation,Matthew Mueller,0,0,12,../concepts/superjson.html
 Uno,797,2002,pl,,0,0,18,../concepts/uno.html
 svgbob,798,2016,textMarkup,Jovansonlee Cesar,0,0,12,../concepts/svgbob.html
@@ -998,8 +998,8 @@ ROFF,989,1971,textMarkup,Joe Ossanna and Ken Thompson,0,1,15,../concepts/roff.ht
 Claro,990,2021,pl,Jason Steving,0,0,19,../concepts/claro.html
 Grace,991,2010,pl,,0,0,17,../concepts/grace.html
 STON,992,2012,application,Sven Van Caekenberghe,0,0,14,../concepts/ston.html
-WebIDL,993,2012,idl,,0,0,14,../concepts/web-idl.html
-Mastodon,994,2016,protocol microblogging,Eugen Rochko,0,0,10,../concepts/mastodon.html
+Mastodon,993,2016,protocol microblogging,Eugen Rochko,0,0,10,../concepts/mastodon.html
+WebIDL,994,2012,idl,,0,0,14,../concepts/web-idl.html
 hakaru,995,2014,pl,,0,0,14,../concepts/hakaru.html
 Pep8,996,2009,assembly,,0,0,16,../concepts/pep8.html
 datafun,997,2015,pl,Michael Arntzenius,0,0,14,../concepts/datafun.html

@@ -1,7 +1,7 @@
 [
   {
     "Name": "id",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@
   },
   {
     "Name": "name",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@
   },
   {
     "Name": "appeared",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -35,7 +35,7 @@
   },
   {
     "Name": "creators",
-    "Values": 1496,
+    "Values": 1497,
     "Coverage": "29%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -55,7 +55,7 @@
   },
   {
     "Name": "measurements",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@
   },
   {
     "Name": "tags",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -86,7 +86,7 @@
   },
   {
     "Name": "website",
-    "Values": 1762,
+    "Values": 1763,
     "Coverage": "35%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -106,7 +106,7 @@
   },
   {
     "Name": "foundationScore",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -156,7 +156,7 @@
   },
   {
     "Name": "exampleCount",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -166,7 +166,7 @@
   },
   {
     "Name": "rank",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1209",
@@ -195,10 +195,10 @@
   },
   {
     "Name": "pldbScore",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21734",
+    "Example": "21738",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -263,7 +263,7 @@
   },
   {
     "Name": "githubRepo_created",
-    "Values": 1160,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -273,7 +273,7 @@
   },
   {
     "Name": "githubRepo_updated",
-    "Values": 1160,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "What year was the last commit made?",
     "Example": "2024",
@@ -293,7 +293,7 @@
   },
   {
     "Name": "githubRepo_subscribers",
-    "Values": 1160,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "How many subscribers to the repo?",
     "Example": "24",
@@ -303,7 +303,7 @@
   },
   {
     "Name": "githubRepo_forks",
-    "Values": 1158,
+    "Values": 1159,
     "Coverage": "23%",
     "Question": "How many forks of the repo?",
     "Example": "48",
@@ -313,7 +313,7 @@
   },
   {
     "Name": "githubRepo_stars",
-    "Values": 1160,
+    "Values": 1161,
     "Coverage": "23%",
     "Question": "How many stars of the repo?",
     "Example": "755",
@@ -323,7 +323,7 @@
   },
   {
     "Name": "githubRepo_issues",
-    "Values": 1157,
+    "Values": 1158,
     "Coverage": "23%",
     "Question": "How many isses on the repo?",
     "Example": "40",
@@ -781,7 +781,7 @@
   },
   {
     "Name": "mainRepo",
-    "Values": 1208,
+    "Values": 1209,
     "Coverage": "24%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -791,7 +791,7 @@
   },
   {
     "Name": "primaryTag",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "Where is the primary tag for this language?",
     "Example": "esolang",
@@ -881,7 +881,7 @@
   },
   {
     "Name": "isLanguage",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -891,7 +891,7 @@
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -911,7 +911,7 @@
   },
   {
     "Name": "isFinished",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -981,7 +981,7 @@
   },
   {
     "Name": "description",
-    "Values": 1080,
+    "Values": 1081,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -992,7 +992,7 @@
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1080,
+    "Values": 1081,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1013,7 +1013,7 @@
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1080,
+    "Values": 1081,
     "Coverage": "21%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1154,7 +1154,7 @@
   },
   {
     "Name": "isOpenSource",
-    "Values": 1545,
+    "Values": 1546,
     "Coverage": "30%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1174,7 +1174,7 @@
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "928",
@@ -1184,7 +1184,7 @@
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1194,7 +1194,7 @@
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1344,7 +1344,7 @@
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1496,
+    "Values": 1497,
     "Coverage": "29%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1436,7 +1436,7 @@
   },
   {
     "Name": "docs",
-    "Values": 389,
+    "Values": 390,
     "Coverage": "7%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
@@ -1983,7 +1983,7 @@
   },
   {
     "Name": "githubRepo",
-    "Values": 1164,
+    "Values": 1165,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -3828,7 +3828,7 @@
   },
   {
     "Name": "bookCount",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3838,7 +3838,7 @@
   },
   {
     "Name": "paperCount",
-    "Values": 5022,
+    "Values": 5023,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

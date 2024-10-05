@@ -11,28 +11,10 @@ fetchParser
     return this.getAtom(1)
   }
   get filename() {
-    return this.getAtom(2) || new URL(this.url).pathname.split('/').pop()
-  }
-  get fullDiskPath() {
-    return require("path").join(this.parent.file.folderPath, this.filename)
-  }
-  get exists() {
-    return this.isNodeJs() ? require("fs").existsSync(this.fullDiskPath) : localStorage.getItem(this.filename)
-  }
-  async downloadToDisk() {
-    const { writeFile } = require('fs').promises
-    const response = await fetch(this.url)
-    const fileBuffer = await response.arrayBuffer()
-    await writeFile(this.fullDiskPath, Buffer.from(fileBuffer))
-  }
-  async downloadToLocalStorage() {
-    const response = await fetch(this.url)
-    const blob = await response.blob()
-    localStorage.setItem(this.filename, await blob.text())
+    return this.getAtom(2)
   }
   async build() {
-   if (this.exists) return "" // do not fetch if already have a copy
-    await this.isNodeJs() ? this.downloadToDisk() : this.downloadToLocalStorage()
+   await this.root.fetch(this.url, this.filename)
   }
   compile() {
     return ""

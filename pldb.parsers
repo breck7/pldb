@@ -198,6 +198,44 @@ scrollParser
       return require("scrollsdk/products/hakon.nodejs.js")
     return hakonParser
   }
+  readSyncFromFileOrUrl(fileOrUrl) {
+    if (!this.isNodeJs()) return localStorage.getItem(fileOrUrl) || ""
+    const isUrl = fileOrUrl.match(/^https?\:[^ ]+$/)
+    if (!isUrl) return this.root.readFile(fileOrUrl)
+    return this.readFile(this.makeFullPath(new URL(fileOrUrl).pathname.split('/').pop()))
+  }
+  async fetch(url, filename) {
+    const isUrl = url.match(/^https?\:[^ ]+$/)
+    if (!isUrl) return
+    return this.isNodeJs() ? this.fetchNode(url, filename) : this.fetchBrowser(url)
+  }
+  makeFullPath(filename) {
+    return require("path").join(this.file.folderPath, filename)
+  }
+  async fetchNode(url, filename) {
+    filename = filename || new URL(url).pathname.split('/').pop()
+    const fullpath = this.makeFullPath(filename)
+    if (require("fs").existsSync(fullpath)) return this.readFile(fullpath)
+    return this.downloadToDisk(url, fullpath)
+  }
+  async fetchBrowser(url) {
+    const content = localStorage.getItem(url)
+    if (content) return content
+    return this.downloadToLocalStorage(url)
+  }
+  async downloadToDisk(url, destination) {
+    const { writeFile } = require('fs').promises
+    const response = await fetch(url)
+    const fileBuffer = await response.arrayBuffer()
+    await writeFile(destination, Buffer.from(fileBuffer))
+    return this.readFile(destination)
+  }
+  async downloadToLocalStorage(url) {
+    const response = await fetch(url)
+    const blob = await response.blob()
+    localStorage.setItem(url, await blob.text())
+    return localStorage.getItem(url)
+  }
   readFile(filename) {
     const path = require("path")
     const fs = require("fs")
@@ -218,6 +256,9 @@ scrollParser
   get footnotes() {
    if (this._footnotes === undefined) this._footnotes = this.filter(particle => particle.isFootnote)
    return this._footnotes
+  }
+  async build() {
+    await Promise.all(this.filter(particle => particle.build).map(async particle => particle.build()))
   }
   file = {}
   get title() {

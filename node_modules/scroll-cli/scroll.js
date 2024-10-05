@@ -783,7 +783,7 @@ parsers/errors.parsers`
   }
 
   async build() {
-    await Promise.all(this.scrollProgram.filter(particle => particle.build).map(async particle => particle.build()))
+    return this.scrollProgram.build()
   }
 
   // Without specifying the language hyphenation will not work.
