@@ -1224,7 +1224,7 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 82,
+    "Values": 83,
     "Coverage": "1%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
@@ -1867,7 +1867,7 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 901,
+    "Values": 902,
     "Coverage": "17%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",

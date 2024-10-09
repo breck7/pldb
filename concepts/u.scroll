@@ -4,7 +4,7 @@ id u
 name U
 appeared 2013
 creators Yassen Bantchev
-tags pl
+tags pl arrayLang
 website http://www.math.bas.bg/bantchev/place/u.html
 latestVersion 0.0.1
 webRepl http://yassenb.github.io/u/dist/web/index.html
@@ -18,6 +18,9 @@ repoStats
  committers 2
  files 39
  newestCommit 2013
+
+example
+ ?{x<0::-1;x>0::1;0}
 
 githubRepo https://github.com/yassenb/u
  firstCommit 2013
