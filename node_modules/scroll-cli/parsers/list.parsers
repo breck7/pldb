@@ -8,8 +8,7 @@ listAftertextParser
  javascript
   defaultClassName = ""
   compile() {
-   const index = this.getIndex()
-   const parent = this.parent
+   const {index, parent} = this
    const particleClass = this.constructor
    const isStartOfList = index === 0 || !(parent.particleAt(index - 1) instanceof particleClass)
    const isEndOfList = parent.length === index + 1 || !(parent.particleAt(index + 1) instanceof particleClass)

@@ -185,7 +185,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1167,
+    "Values": 1168,
     "Coverage": "23%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -1114,7 +1114,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1167,
+    "Values": 1168,
     "Coverage": "23%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1224,7 +1224,7 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 81,
+    "Values": 82,
     "Coverage": "1%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
@@ -1354,7 +1354,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1167,
+    "Values": 1168,
     "Coverage": "23%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",

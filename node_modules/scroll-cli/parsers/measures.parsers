@@ -79,7 +79,7 @@ abstractIdParser
     let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
     if (!requiredMeasureNames.length) return errors
     let next = this.next
-    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.getIndex() !== 0) {
+    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.index !== 0) {
       requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstAtom)
       next = next.next
     }

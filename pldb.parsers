@@ -419,7 +419,7 @@ abstractIdParser
     let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
     if (!requiredMeasureNames.length) return errors
     let next = this.next
-    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.getIndex() !== 0) {
+    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.index !== 0) {
       requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstAtom)
       next = next.next
     }
@@ -2812,7 +2812,7 @@ twitterParser
   extends abstractPopulationCountMeasureParser
 
 tagAtom
- enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet
+ enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet
  paint constant.language
 tagsParser
  float sortIndex 1.2

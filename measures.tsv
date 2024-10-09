@@ -17,7 +17,7 @@ latestVersion	640	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1
 exampleCount	5023	100%	How many examples do we have written in this language?	2	number		1.5	true			
 rank	5023	100%	How does this concept rank amongst all other concepts?	1210	number		1.5	true			
 lastActivity	0	0%	In our data on this entity, what year is the most recent activity?		number		1.55	true			
-writtenInCount	1167	23%	How many languages is this implementation written in?	3	number		1.6	true			
+writtenInCount	1168	23%	How many languages is this implementation written in?	3	number		1.6	true			
 pldbScore	5023	100%	What is the combined score of this language across all the categories of rankings?	21737	number		1.6	true			
 meetup_memberCount	57	1%	How many people in this meetup group?	1514159	number		1.9	false			
 meetup_groupCount	57	1%	How many groups?	2707	number		1.9	false			
@@ -110,7 +110,7 @@ pygmentsHighlighter_fileExtensions	326	6%	What are the file extensions for this 
 fileExtensions	241	4%	What are the file extensions for this language?	a51	string		1.991	false			
 interviews	11	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		1.999	false			
-writtenIn	1167	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
+writtenIn	1168	23%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
 compilesTo	84	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
 leetSheets	82	1%	What is a URL(s) to a leet sheet(s) for this language?	https://github.com/liffiton/Arduino-Cheat-Sheet	string		1.9999	false			
 isPublicDomain	23	0%	Is this public domain?	true	boolean		2	false			
@@ -121,7 +121,7 @@ numberOfJobsEstimate	5023	100%	What is our estimate of the number of jobs in thi
 expandedMeasurements	5023	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
 related	207	4%	What languages are related?	logo	string		2.2	false			
 runsOnVm	9	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false			
-influencedBy	81	1%	What languages influenced this one?	algol-60	string		2.2	false			
+influencedBy	82	1%	What languages influenced this one?	algol-60	string		2.2	false			
 successorOf	5	0%	Was this language launched as the successor of another?	asp	string		2.2	false			
 dialectOf	2	0%	Is this language a dialect of a broader one?	lisp	string		2.2	false			
 subsetOf	11	0%	Is this language a subset of another?	c	string		2.2	false			
@@ -134,7 +134,7 @@ inputLanguages	12	0%	Which language(s) does this take as input? For compilers, w
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 irc	4	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
 numberOfCreators	1497	29%	How many creators?	1	number		2.33	true			
-isSelfHosted	1167	23%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
+isSelfHosted	1168	23%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	640	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	640	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
 tryItOnline	134	2%	What is a link to try this language on https://tio.run?	https://tio.run/#abc	string	tio.run	2.4	false			

@@ -27,7 +27,7 @@ abstractAftertextParser
    this.root.footnotes.forEach((note, index) => {
     const needle = note.firstAtom
     const {linkBack} = note
-    if (originalText.includes(needle)) originalText = originalText.replace(new RegExp("\\" + needle + "\\b"), `<a href="#${note.anchorId}" class="scrollNoteLink" id="${linkBack}"><sup>${note.label}</sup></a>`)
+    if (originalText.includes(needle)) originalText = originalText.replace(new RegExp("\\" + needle + "\\b"), `<a href="#${note.htmlId}" class="scrollNoteLink" id="${linkBack}"><sup>${note.label}</sup></a>`)
    })
    return originalText
   }
@@ -72,18 +72,22 @@ abstractAftertextParser
    const tag = this.get("tag") || this.tag
    if (tag === "none") // Allow no tag for aftertext in tables
      return this.text
-   return this.getHtmlRequirements(compileSettings) + `<${tag} ${this.divAttributes}${classAttr}>${this.text}</${tag}>`
+   const id = this.has("id") ? "" : `id="${this.htmlId}" ` // always add an html id
+   return this.getHtmlRequirements(compileSettings) + `<${tag} ${id}${this.htmlAttributes}${classAttr}>${this.text}</${tag}>`
   }
-  get divAttributes() {
+  get htmlAttributes() {
    const attrs = this.filter(particle => particle.isAttribute)
-   return attrs.length ? attrs.map(particle => particle.divAttributes).join(" ") + " " : ""
+   return attrs.length ? attrs.map(particle => particle.htmlAttributes).join(" ") + " " : ""
+  }
+  get htmlId() {
+   return this.get("id") || "particle" + this.index
   }
 
 abstractAftertextAttributeParser
  atoms cueAtom
  boolean isAttribute true
  javascript
-  get divAttributes() {
+  get htmlAttributes() {
    return `${this.firstAtom}="${this.content}"`
   }
   compile() {

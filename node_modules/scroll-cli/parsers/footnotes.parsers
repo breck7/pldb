@@ -12,10 +12,7 @@ footnoteDefinitionParser
   atoms cueAtom
   catchAllAtomType stringAtom
  javascript
-  get divAttributes() {
-   return super.divAttributes + ` id="${this.anchorId}"`
-  }
-  get anchorId() {
+  get htmlId() {
    return `note${this.noteDefinitionIndex}`
   }
   get label() {
