@@ -52,405 +52,6 @@
 <div class="scrollSection"><h1 id="particle27" class="scrollTitle"><a href="add.html">PLDB - Add Concept</a></h1>
 </div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<script>
-sendFormViaEmail = form => {
-  const mailto = new URL("mailto:")
-  const params = []
-  const { value, title } = form.querySelector('button[type="submit"]')
-  params.push(`subject=${encodeURIComponent(value)}`)
-  params.push(`to=${encodeURIComponent(title)}`)
-  const oneTextarea = form.querySelector('textarea[title="oneTextarea"]')
-  const body = oneTextarea ? codeMirrorInstance.getValue() : Array.from(new FormData(form)).map(([name, value]) => `${name} ${value}`).join("\n")
-  params.push(`body=${encodeURIComponent(body)}`)
-  mailto.search = params.join("&")
-  window.open(mailto.href, '_blank')
-}
-</script><style> .scrollFormParser {
-    font-family: "Gill Sans", "Bitstream Vera Sans", sans-serif;
-  }
-.scrollFormParser input , .scrollFormParser textarea{
-padding: 10px;
-margin-bottom: 10px;
-width: 100%;
-box-sizing: border-box;
-} .scrollFormParser label {
-  display: block;
-  margin-bottom: 5px;
-}
-</style><form onsubmit='sendFormViaEmail(this); return false;' class="scrollFormParser"><div><label for="id" title="Required">Id*:</label><input placeholder="What is the ID of this concept?" type="string" id="id" name="id" required></div>
-<div><label for="name" title="Required">Name*:</label><input placeholder="What is the name of this concept?" type="string" id="name" name="name" required></div>
-<div><label for="appeared" title="Required">Appeared*:</label><input placeholder="What year was the language publicly released and/or announced?" type="number" id="appeared" name="appeared" required></div>
-<div><label for="creators" title="">Creators:</label><input placeholder="What are the name(s) of the original creators of the language delimited by " and "?" type="string" id="creators" name="creators" ></div>
-<div><label for="maintainers" title="">Maintainers:</label><input placeholder="What are the name(s) of the maintainer(s) of the language delimited by " and "?" type="string" id="maintainers" name="maintainers" ></div>
-<div><label for="tags" title="Required">Tags*:</label><input placeholder="Which category(ies) in PLDB's subjective ontology does this entity fit into?" type="string" id="tags" name="tags" required></div>
-<div><label for="rijuRepl_website" title="">RijuRepl_website:</label><input placeholder="What is the URL of the official homepage for this language project?" type="string" id="rijuRepl_website" name="rijuRepl_website" ></div>
-<div><label for="website" title="">Website:</label><input placeholder="What is the URL of the official homepage for this language project?" type="string" id="website" name="website" ></div>
-<div><label for="spec" title="">Spec:</label><input placeholder="What is a URL to the official spec for this language?" type="string" id="spec" name="spec" ></div>
-<div><label for="blog" title="">Blog:</label><input placeholder="What is the URL to the official blog for this language?" type="string" id="blog" name="blog" ></div>
-<div><label for="releaseNotes" title="">ReleaseNotes:</label><input placeholder="What is the URL to the release notes or changelog for this language?" type="string" id="releaseNotes" name="releaseNotes" ></div>
-<div><label for="download" title="">Download:</label><input placeholder="What is a URL to the download page for this language?" type="string" id="download" name="download" ></div>
-<div><label for="latestVersion" title="">LatestVersion:</label><input placeholder="What is the latest version?" type="string" id="latestVersion" name="latestVersion" ></div>
-<div><label for="meetup_memberCount" title="">Meetup_memberCount:</label><input placeholder="How many people in this meetup group?" type="number" id="meetup_memberCount" name="meetup_memberCount" ></div>
-<div><label for="meetup_groupCount" title="">Meetup_groupCount:</label><input placeholder="How many groups?" type="number" id="meetup_groupCount" name="meetup_groupCount" ></div>
-<div><label for="subreddit_memberCount" title="">Subreddit_memberCount:</label><textarea placeholder="How many members in this subreddit?" id="subreddit_memberCount" name="subreddit_memberCount" ></textarea></div>
-<div><label for="twitter_followers" title="">Twitter_followers:</label><input placeholder="How many followers does the linked account have?" type="number" id="twitter_followers" name="twitter_followers" ></div>
-<div><label for="conferences" title="">Conferences:</label><input placeholder="What is a URL(s) to a recurring conference(s) focused on this language?" type="string" id="conferences" name="conferences" ></div>
-<div><label for="zulip" title="">Zulip:</label><input placeholder="What is a URL to an official (or popular unofficial) Zulip for language development?" type="string" id="zulip" name="zulip" ></div>
-<div><label for="githubRepo_created" title="">GithubRepo_created:</label><input placeholder="When was the *Github repo* for this entity created?" type="number" id="githubRepo_created" name="githubRepo_created" ></div>
-<div><label for="githubRepo_updated" title="">GithubRepo_updated:</label><input placeholder="What year was the last commit made?" type="number" id="githubRepo_updated" name="githubRepo_updated" ></div>
-<div><label for="githubRepo_firstCommit" title="">GithubRepo_firstCommit:</label><input placeholder="What year the first commit made in this git repo?" type="number" id="githubRepo_firstCommit" name="githubRepo_firstCommit" ></div>
-<div><label for="githubRepo_subscribers" title="">GithubRepo_subscribers:</label><input placeholder="How many subscribers to the repo?" type="number" id="githubRepo_subscribers" name="githubRepo_subscribers" ></div>
-<div><label for="githubRepo_forks" title="">GithubRepo_forks:</label><input placeholder="How many forks of the repo?" type="number" id="githubRepo_forks" name="githubRepo_forks" ></div>
-<div><label for="githubRepo_stars" title="">GithubRepo_stars:</label><input placeholder="How many stars of the repo?" type="number" id="githubRepo_stars" name="githubRepo_stars" ></div>
-<div><label for="githubRepo_issues" title="">GithubRepo_issues:</label><input placeholder="How many isses on the repo?" type="number" id="githubRepo_issues" name="githubRepo_issues" ></div>
-<div><label for="screenshot" title="">Screenshot:</label><input placeholder="What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?" type="string" id="screenshot" name="screenshot" ></div>
-<div><label for="photo" title="">Photo:</label><input placeholder="What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?" type="string" id="photo" name="photo" ></div>
-<div><label for="linguistGrammarRepo_commitCount" title="">LinguistGrammarRepo_commitCount:</label><input placeholder="How many commits in this repo?" type="number" id="linguistGrammarRepo_commitCount" name="linguistGrammarRepo_commitCount" ></div>
-<div><label for="linguistGrammarRepo_firstCommit" title="">LinguistGrammarRepo_firstCommit:</label><input placeholder="What year was the first commit made?" type="number" id="linguistGrammarRepo_firstCommit" name="linguistGrammarRepo_firstCommit" ></div>
-<div><label for="linguistGrammarRepo_lastCommit" title="">LinguistGrammarRepo_lastCommit:</label><input placeholder="What year was the last commit made?" type="number" id="linguistGrammarRepo_lastCommit" name="linguistGrammarRepo_lastCommit" ></div>
-<div><label for="linguistGrammarRepo_sampleCount" title="">LinguistGrammarRepo_sampleCount:</label><input placeholder="How many language samples in this repo?" type="number" id="linguistGrammarRepo_sampleCount" name="linguistGrammarRepo_sampleCount" ></div>
-<div><label for="linguistGrammarRepo_committerCount" title="">LinguistGrammarRepo_committerCount:</label><input placeholder="How many people have made commits in this repo?" type="number" id="linguistGrammarRepo_committerCount" name="linguistGrammarRepo_committerCount" ></div>
-<div><label for="redditDiscussion" title="">RedditDiscussion:</label><input placeholder="What is a link to a related discussion on reddit?" type="string" id="redditDiscussion" name="redditDiscussion" ></div>
-<div><label for="roadmap" title="">Roadmap:</label><input placeholder="What is the URL to a public roadmap page for this language, if one exists?" type="string" id="roadmap" name="roadmap" ></div>
-<div><label for="webRepl" title="">WebRepl:</label><input placeholder="What is a URL for an online repl of this language?" type="string" id="webRepl" name="webRepl" ></div>
-<div><label for="wikipedia_related" title="">Wikipedia_related:</label><input placeholder="What languages does Wikipedia have as related?" type="string" id="wikipedia_related" name="wikipedia_related" ></div>
-<div><label for="wikipedia_appeared" title="">Wikipedia_appeared:</label><input placeholder="When does Wikipedia claim this entity first appeared?" type="number" id="wikipedia_appeared" name="wikipedia_appeared" ></div>
-<div><label for="wikipedia_summary" title="">Wikipedia_summary:</label><input placeholder="What is the text summary of the language from the Wikipedia page?" type="string" id="wikipedia_summary" name="wikipedia_summary" ></div>
-<div><label for="wikipedia_created" title="">Wikipedia_created:</label><input placeholder="When was the *Wikipedia page* for this entity created?" type="number" id="wikipedia_created" name="wikipedia_created" ></div>
-<div><label for="wikipedia_dailyPageViews" title="">Wikipedia_dailyPageViews:</label><input placeholder="How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api." type="number" id="wikipedia_dailyPageViews" name="wikipedia_dailyPageViews" ></div>
-<div><label for="wikipedia_backlinksCount" title="">Wikipedia_backlinksCount:</label><input placeholder="How many pages on WP link to this page?" type="number" id="wikipedia_backlinksCount" name="wikipedia_backlinksCount" ></div>
-<div><label for="wikipedia_revisionCount" title="">Wikipedia_revisionCount:</label><input placeholder="How many revisions does this page have?" type="number" id="wikipedia_revisionCount" name="wikipedia_revisionCount" ></div>
-<div><label for="wikipedia_pageId" title="">Wikipedia_pageId:</label><input placeholder="What is the internal ID for this entity on WP?" type="number" id="wikipedia_pageId" name="wikipedia_pageId" ></div>
-<div><label for="domainName_registered" title="">DomainName_registered:</label><input placeholder="When was this domain first registered?" type="number" id="domainName_registered" name="domainName_registered" ></div>
-<div><label for="domainName_awisRank" title="">DomainName_awisRank:</label><textarea placeholder="What is the Alexa Web Information Service (AWIS) domain ranking?" id="domainName_awisRank" name="domainName_awisRank" ></textarea></div>
-<div><label for="githubBigQuery_users" title="">GithubBigQuery_users:</label><input placeholder="How many unique users have a repo using this language according to Google BigQuery?" type="number" id="githubBigQuery_users" name="githubBigQuery_users" ></div>
-<div><label for="githubBigQuery_repos" title="">GithubBigQuery_repos:</label><input placeholder="How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot?" type="number" id="githubBigQuery_repos" name="githubBigQuery_repos" ></div>
-<div><label for="githubLanguage_filenames" title="">GithubLanguage_filenames:</label><input placeholder="What are the filenames commonly associated with this language?" type="string" id="githubLanguage_filenames" name="githubLanguage_filenames" ></div>
-<div><label for="githubLanguage_repos" title="">GithubLanguage_repos:</label><input placeholder="How many repos for this language does GitHub report?" type="number" id="githubLanguage_repos" name="githubLanguage_repos" ></div>
-<div><label for="githubLanguage_wrap" title="">GithubLanguage_wrap:</label><input placeholder="Does GitHub override it's default of not wrapping lines when displaying this language?" type="boolean" id="githubLanguage_wrap" name="githubLanguage_wrap" ></div>
-<div><label for="githubLanguage_trendingProjectsCount" title="">GithubLanguage_trendingProjectsCount:</label><input placeholder="How many trending repos for this language does GitHub report?" type="number" id="githubLanguage_trendingProjectsCount" name="githubLanguage_trendingProjectsCount" ></div>
-<div><label for="githubLanguage_trendingProjects" title="">GithubLanguage_trendingProjects:</label><input placeholder="What are trending projects in this language GitHub?" type="string" id="githubLanguage_trendingProjects" name="githubLanguage_trendingProjects" ></div>
-<div><label for="githubLanguage_group" title="">GithubLanguage_group:</label><input placeholder="What is the name of the parent language group according to GitHub?" type="string" id="githubLanguage_group" name="githubLanguage_group" ></div>
-<div><label for="githubLanguage_aliases" title="">GithubLanguage_aliases:</label><input placeholder="What are additional aliases, excluding name.downcase which are implicitly included?" type="string" id="githubLanguage_aliases" name="githubLanguage_aliases" ></div>
-<div><label for="githubLanguage_interpreters" title="">GithubLanguage_interpreters:</label><input placeholder="What are the associated interpreters?" type="string" id="githubLanguage_interpreters" name="githubLanguage_interpreters" ></div>
-<div><label for="githubLanguage_aceMode" title="">GithubLanguage_aceMode:</label><input placeholder="What is the name of the Ace Mode used for highlighting whenever a file is edited, matching one of the filenames in http://git.io/3XO_Cg, or "text" for everything else?" type="string" id="githubLanguage_aceMode" name="githubLanguage_aceMode" ></div>
-<div><label for="githubLanguage_codemirrorMode" title="">GithubLanguage_codemirrorMode:</label><input placeholder="What is the name name of the CodeMirror Mode used for highlighting whenever a file is edited, from the list here https://git.io/vi9Fx?" type="string" id="githubLanguage_codemirrorMode" name="githubLanguage_codemirrorMode" ></div>
-<div><label for="githubLanguage_codemirrorMimeType" title="">GithubLanguage_codemirrorMimeType:</label><input placeholder="What is the name of the file mime type used for highlighting whenever a file is edited, from the list here https://git.io/f4SoQ?" type="string" id="githubLanguage_codemirrorMimeType" name="githubLanguage_codemirrorMimeType" ></div>
-<div><label for="githubLanguage_tmScope" title="">GithubLanguage_tmScope:</label><input placeholder="What is the TextMate scope that represents this programming language, matching one of the scopes listed in the grammars.yml file, or "none" if there is no grammar for this language?" type="string" id="githubLanguage_tmScope" name="githubLanguage_tmScope" ></div>
-<div><label for="githubLanguage_type" title="">GithubLanguage_type:</label><input placeholder="Which of the types best describes this: data, programming, markup, prose, or nil?" type="string" id="githubLanguage_type" name="githubLanguage_type" ></div>
-<div><label for="leachim6_filepath" title="">Leachim6_filepath:</label><input placeholder="What is the filepath to this language in leachim6's hello-world project?" type="string" id="leachim6_filepath" name="leachim6_filepath" ></div>
-<div><label for="projectEuler_memberCount" title="">ProjectEuler_memberCount:</label><textarea placeholder="How many project euler members use this language?" id="projectEuler_memberCount" name="projectEuler_memberCount" ></textarea></div>
-<div><label for="pygmentsHighlighter_filename" title="">PygmentsHighlighter_filename:</label><input placeholder="What is the Python filename implementing the highlighting for this language?" type="string" id="pygmentsHighlighter_filename" name="pygmentsHighlighter_filename" ></div>
-<div><label for="tiobe_currentRank" title="">Tiobe_currentRank:</label><input placeholder="What is the current Tiobe rank of this language?" type="number" id="tiobe_currentRank" name="tiobe_currentRank" ></div>
-<div><label for="filenames" title="">Filenames:</label><input placeholder="What are the filenames commonly associated with this language?" type="string" id="filenames" name="filenames" ></div>
-<div><label for="maintainerOrganization" title="">MaintainerOrganization:</label><input placeholder="What organization maintains this language?" type="string" id="maintainerOrganization" name="maintainerOrganization" ></div>
-<div><label for="forLanguages" title="">ForLanguages:</label><input placeholder="Which languages is this repository for?" type="string" id="forLanguages" name="forLanguages" ></div>
-<div><label for="dblp" title="">Dblp:</label><input placeholder="What are publications about this language from https://dblp.org/?" type="text" id="dblp" name="dblp" ></div>
-<div><label for="dblp_hits" title="">Dblp_hits:</label><input placeholder="How many matching publications?" type="number" id="dblp_hits" name="dblp_hits" ></div>
-<div><label for="dblp_publications" title="">Dblp_publications:</label><textarea placeholder="An inline PSV table of hits." id="dblp_publications" name="dblp_publications" ></textarea></div>
-<div><label for="standsFor" title="">StandsFor:</label><input placeholder="If the language name is an acronym what does/did it stand for?" type="string" id="standsFor" name="standsFor" ></div>
-<div><label for="aka" title="">Aka:</label><input placeholder="What is this also known as?" type="string" id="aka" name="aka" ></div>
-<div><label for="oldName" title="">OldName:</label><input placeholder="What is the old name of this language?" type="string" id="oldName" name="oldName" ></div>
-<div><label for="equation" title="">Equation:</label><input placeholder="What is a LaTeX encoding of this equation?" type="string" id="equation" name="equation" ></div>
-<div><label for="packageInstallCount" title="">PackageInstallCount:</label><input placeholder="How many packages have been downloaded?" type="number" id="packageInstallCount" name="packageInstallCount" ></div>
-<div><label for="packageCount" title="">PackageCount:</label><input placeholder="How many packages are in the repository?" type="number" id="packageCount" name="packageCount" ></div>
-<div><label for="packageAuthors" title="">PackageAuthors:</label><input placeholder="How many people contribute packages to this cpm?" type="number" id="packageAuthors" name="packageAuthors" ></div>
-<div><label for="nativeLanguage" title="">NativeLanguage:</label><input placeholder="What is the native human language for this language, if not English?" type="string" id="nativeLanguage" name="nativeLanguage" ></div>
-<div><label for="repoStats_firstCommit" title="">RepoStats_firstCommit:</label><input placeholder="What year the first commit made in this git repo?" type="number" id="repoStats_firstCommit" name="repoStats_firstCommit" ></div>
-<div><label for="repoStats_newestCommit" title="">RepoStats_newestCommit:</label><input placeholder="What year was the newest commit made in this git repo?" type="number" id="repoStats_newestCommit" name="repoStats_newestCommit" ></div>
-<div><label for="repoStats_commits" title="">RepoStats_commits:</label><input placeholder="How many commits to the repo?" type="number" id="repoStats_commits" name="repoStats_commits" ></div>
-<div><label for="repoStats_committers" title="">RepoStats_committers:</label><input placeholder="How many committers to the repo?" type="number" id="repoStats_committers" name="repoStats_committers" ></div>
-<div><label for="repoStats_files" title="">RepoStats_files:</label><input placeholder="How many files in the repo?" type="number" id="repoStats_files" name="repoStats_files" ></div>
-<div><label for="description" title="">Description:</label><input placeholder="How is this language described here?" type="string" id="description" name="description" ></div>
-<div><label for="githubRepo_description" title="">GithubRepo_description:</label><input placeholder="How is this language described here?" type="string" id="githubRepo_description" name="githubRepo_description" ></div>
-<div><label for="paper" title="">Paper:</label><input placeholder="What is a URL to a paper(s) by the creator(s) introducing this language?" type="string" id="paper" name="paper" ></div>
-<div><label for="rijuRepl_description" title="">RijuRepl_description:</label><input placeholder="How is this language described here?" type="string" id="rijuRepl_description" name="rijuRepl_description" ></div>
-<div><label for="lab" title="">Lab:</label><input placeholder="In what community(ies) did the language first originate?" type="string" id="lab" name="lab" ></div>
-<div><label for="rijuRepl_fileExtensions" title="">RijuRepl_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="rijuRepl_fileExtensions" name="rijuRepl_fileExtensions" ></div>
-<div><label for="wikipedia_fileExtensions" title="">Wikipedia_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="wikipedia_fileExtensions" name="wikipedia_fileExtensions" ></div>
-<div><label for="githubLanguage_fileExtensions" title="">GithubLanguage_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="githubLanguage_fileExtensions" name="githubLanguage_fileExtensions" ></div>
-<div><label for="leachim6_fileExtensions" title="">Leachim6_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="leachim6_fileExtensions" name="leachim6_fileExtensions" ></div>
-<div><label for="pygmentsHighlighter_fileExtensions" title="">PygmentsHighlighter_fileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="pygmentsHighlighter_fileExtensions" name="pygmentsHighlighter_fileExtensions" ></div>
-<div><label for="fileExtensions" title="">FileExtensions:</label><input placeholder="What are the file extensions for this language?" type="string" id="fileExtensions" name="fileExtensions" ></div>
-<div><label for="interviews" title="">Interviews:</label><input placeholder="What is a URL(s) to an interview with the creator(s) about this language?" type="string" id="interviews" name="interviews" ></div>
-<div><label for="languageServerProtocolProject_writtenIn" title="">LanguageServerProtocolProject_writtenIn:</label><input placeholder="What language(s) is the main implementation written in?" type="string" id="languageServerProtocolProject_writtenIn" name="languageServerProtocolProject_writtenIn" ></div>
-<div><label for="writtenIn" title="">WrittenIn:</label><input placeholder="What language(s) is the main implementation written in?" type="string" id="writtenIn" name="writtenIn" ></div>
-<div><label for="compilesTo" title="">CompilesTo:</label><input placeholder="Which language(s) does this language primarily compile to?" type="string" id="compilesTo" name="compilesTo" ></div>
-<div><label for="leetSheets" title="">LeetSheets:</label><input placeholder="What is a URL(s) to a leet sheet(s) for this language?" type="string" id="leetSheets" name="leetSheets" ></div>
-<div><label for="isPublicDomain" title="">IsPublicDomain:</label><input placeholder="Is this public domain?" type="boolean" id="isPublicDomain" name="isPublicDomain" ></div>
-<div><label for="exercism" title="">Exercism:</label><input placeholder="What is a URL to learn this language on Exercism?" type="string" id="exercism" name="exercism" ></div>
-<div><label for="related" title="">Related:</label><input placeholder="What languages are related?" type="string" id="related" name="related" ></div>
-<div><label for="runsOnVm" title="">RunsOnVm:</label><input placeholder="What virtual machine(s) does this language run on?" type="string" id="runsOnVm" name="runsOnVm" ></div>
-<div><label for="influencedBy" title="">InfluencedBy:</label><input placeholder="What languages influenced this one?" type="string" id="influencedBy" name="influencedBy" ></div>
-<div><label for="successorOf" title="">SuccessorOf:</label><input placeholder="Was this language launched as the successor of another?" type="string" id="successorOf" name="successorOf" ></div>
-<div><label for="dialectOf" title="">DialectOf:</label><input placeholder="Is this language a dialect of a broader one?" type="string" id="dialectOf" name="dialectOf" ></div>
-<div><label for="subsetOf" title="">SubsetOf:</label><input placeholder="Is this language a subset of another?" type="string" id="subsetOf" name="subsetOf" ></div>
-<div><label for="implementationOf" title="">ImplementationOf:</label><input placeholder="Is this language an implementation of another?" type="string" id="implementationOf" name="implementationOf" ></div>
-<div><label for="renamedTo" title="">RenamedTo:</label><input placeholder="What is the new name of this language?" type="string" id="renamedTo" name="renamedTo" ></div>
-<div><label for="supersetOf" title="">SupersetOf:</label><input placeholder="Is this language a superset of another?" type="string" id="supersetOf" name="supersetOf" ></div>
-<div><label for="extensionOf" title="">ExtensionOf:</label><input placeholder="What language is this language an extension of?" type="string" id="extensionOf" name="extensionOf" ></div>
-<div><label for="forkOf" title="">ForkOf:</label><input placeholder="What language is this language a fork of?" type="string" id="forkOf" name="forkOf" ></div>
-<div><label for="inputLanguages" title="">InputLanguages:</label><input placeholder="Which language(s) does this take as input? For compilers, what languages does this compile compile?" type="string" id="inputLanguages" name="inputLanguages" ></div>
-<div><label for="protocols" title="">Protocols:</label><input placeholder="Which protocols does this speak?" type="string" id="protocols" name="protocols" ></div>
-<div><label for="irc" title="">Irc:</label><input placeholder="What is a link to an official (or popular unofficial) IRC channel(s) for language development?" type="string" id="irc" name="irc" ></div>
-<div><label for="tryItOnline" title="">TryItOnline:</label><input placeholder="What is a link to try this language on https://tio.run?" type="string" id="tryItOnline" name="tryItOnline" ></div>
-<div><label for="demoVideo" title="">DemoVideo:</label><input placeholder="What is a URL of a demo video of this language?" type="string" id="demoVideo" name="demoVideo" ></div>
-<div><label for="clocExtensions" title="">ClocExtensions:</label><input placeholder="What are the file extensions for this language recognized by Al Danial's cloc?" type="string" id="clocExtensions" name="clocExtensions" ></div>
-<div><label for="gdbSupport" title="">GdbSupport:</label><input placeholder="Is the language supported by the GNU Debugger?" type="boolean" id="gdbSupport" name="gdbSupport" ></div>
-<div><label for="visualParadigm" title="">VisualParadigm:</label><input placeholder="Is this a visual programming thing? Sometimes called "no code" or "low code"?" type="boolean" id="visualParadigm" name="visualParadigm" ></div>
-<div><label for="docs" title="">Docs:</label><input placeholder="What is a URL(s) to the official documentation for this language?" type="string" id="docs" name="docs" ></div>
-<div><label for="forums" title="">Forums:</label><input placeholder="What is a link to a web forum(s) for this language?" type="string" id="forums" name="forums" ></div>
-<div><label for="devDocs" title="">DevDocs:</label><input placeholder="What is a URL to the official documentation for developers who want to contribute to the language project?" type="string" id="devDocs" name="devDocs" ></div>
-<div><label for="ebook" title="">Ebook:</label><input placeholder="What is a link to a free public domain high quality eBook about this language?" type="string" id="ebook" name="ebook" ></div>
-<div><label for="emailList" title="">EmailList:</label><input placeholder="What is a link to the mailing list for this language?" type="string" id="emailList" name="emailList" ></div>
-<div><label for="esolang" title="">Esolang:</label><input placeholder="What is a URL to this language on https://esolangs.org/?" type="string" id="esolang" name="esolang" ></div>
-<div><label for="eventsPageUrl" title="">EventsPageUrl:</label><input placeholder="What is a URL to an events pages for this language?" type="string" id="eventsPageUrl" name="eventsPageUrl" ></div>
-<div><label for="faq" title="">Faq:</label><input placeholder="What is a URL to a frequently asked questions page for this language?" type="string" id="faq" name="faq" ></div>
-<div><label for="wordRank" title="">WordRank:</label><input placeholder="Where does this word rank in terms of common English words?" type="number" id="wordRank" name="wordRank" ></div>
-<div><label for="fileType" title="">FileType:</label><input placeholder="What is the file encoding for programs in this language?" type="string" id="fileType" name="fileType" ></div>
-<div><label for="annualReportsUrl" title="">AnnualReportsUrl:</label><input placeholder="What is a URL to annual reports for this language?" type="string" id="annualReportsUrl" name="annualReportsUrl" ></div>
-<div><label for="antlr" title="">Antlr:</label><input placeholder="What is a URL to an ANTLR grammar for this language?" type="string" id="antlr" name="antlr" ></div>
-<div><label for="replit" title="">Replit:</label><input placeholder="What is a URL to try this language on replit.com?" type="string" id="replit" name="replit" ></div>
-<div><label for="rosettaCode" title="">RosettaCode:</label><input placeholder="What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?" type="string" id="rosettaCode" name="rosettaCode" ></div>
-<div><label for="codeMirror" title="">CodeMirror:</label><input placeholder="What is a URL to a CodeMirror syntax highlighting package for this language?" type="string" id="codeMirror" name="codeMirror" ></div>
-<div><label for="monaco" title="">Monaco:</label><input placeholder="What is a URL to a Monaco syntax highlighting package for this language?" type="string" id="monaco" name="monaco" ></div>
-<div><label for="quineRelay" title="">QuineRelay:</label><input placeholder="What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?" type="string" id="quineRelay" name="quineRelay" ></div>
-<div><label for="packageRepository" title="">PackageRepository:</label><input placeholder="What is a URL to the package repository for this language?" type="string" id="packageRepository" name="packageRepository" ></div>
-<div><label for="ubuntuPackage" title="">UbuntuPackage:</label><input placeholder="What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?" type="string" id="ubuntuPackage" name="ubuntuPackage" ></div>
-<div><label for="centralPackageRepositoryCount" title="">CentralPackageRepositoryCount:</label><input placeholder="How many central package repositories does this language have?" type="number" id="centralPackageRepositoryCount" name="centralPackageRepositoryCount" ></div>
-<div><label for="repoStats" title="">RepoStats:</label><textarea placeholder="What are basic stats on this repo?" id="repoStats" name="repoStats" ></textarea></div>
-<div><label for="proposals" title="">Proposals:</label><input placeholder="What is the URL to a the place where language proposals are made, if one exists?" type="string" id="proposals" name="proposals" ></div>
-<div><label for="country" title="">Country:</label><input placeholder="What country was this language first developed in?" type="string" id="country" name="country" ></div>
-<div><label for="funFact" title="">FunFact:</label><input placeholder="What is a code block or some text containing a fun or unusual fact about the language?" type="string" id="funFact" name="funFact" ></div>
-<div><label for="projectEuler" title="">ProjectEuler:</label><input placeholder="Is this language one of the ones listed on https://projecteuler.net/?" type="string" id="projectEuler" name="projectEuler" ></div>
-<div><label for="reference" title="">Reference:</label><input placeholder="What is a URL to more info about this thing?" type="string" id="reference" name="reference" ></div>
-<div><label for="subreddit" title="">Subreddit:</label><input placeholder="What is a URL of a subreddit(s) for this language?" type="string" id="subreddit" name="subreddit" ></div>
-<div><label for="twitter" title="">Twitter:</label><input placeholder="What is a URL to the official Twitter account of this thing, if any?" type="string" id="twitter" name="twitter" ></div>
-<div><label for="tiktoks" title="">Tiktoks:</label><input placeholder="What is a URL to an official (or popular unofficial) TikTok(s) for this language?" type="string" id="tiktoks" name="tiktoks" ></div>
-<div><label for="discord" title="">Discord:</label><input placeholder="What is a URL to an official (or popular unofficial) Discord for this language?" type="string" id="discord" name="discord" ></div>
-<div><label for="mastodon" title="">Mastodon:</label><input placeholder="What is a URL to an official (or popular unofficial) Mastodon for this language?" type="string" id="mastodon" name="mastodon" ></div>
-<div><label for="discourse" title="">Discourse:</label><input placeholder="What is a URL to an official (or popular unofficial) Discourse for this language?" type="string" id="discourse" name="discourse" ></div>
-<div><label for="instagram" title="">Instagram:</label><input placeholder="What is a URL to an official (or popular unofficial) Instagram for this language?" type="string" id="instagram" name="instagram" ></div>
-<div><label for="facebook" title="">Facebook:</label><input placeholder="What is a URL to an official (or popular unofficial) Facebook group for this language?" type="string" id="facebook" name="facebook" ></div>
-<div><label for="youtubes" title="">Youtubes:</label><input placeholder="What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?" type="string" id="youtubes" name="youtubes" ></div>
-<div><label for="linguistGrammarRepo_example" title="">LinguistGrammarRepo_example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="linguistGrammarRepo_example" name="linguistGrammarRepo_example" ></div>
-<div><label for="rijuRepl" title="">RijuRepl:</label><input placeholder="What is a URL to try this language on riju.codes?" type="string" id="rijuRepl" name="rijuRepl" ></div>
-<div><label for="rijuRepl_example" title="">RijuRepl_example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="rijuRepl_example" name="rijuRepl_example" ></div>
-<div><label for="wikipedia_example" title="">Wikipedia_example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="wikipedia_example" name="wikipedia_example" ></div>
-<div><label for="compilerExplorer_example" title="">CompilerExplorer_example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="compilerExplorer_example" name="compilerExplorer_example" ></div>
-<div><label for="leachim6_example" title="">Leachim6_example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="leachim6_example" name="leachim6_example" ></div>
-<div><label for="pygmentsHighlighter" title="">PygmentsHighlighter:</label><input placeholder="What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?" type="string" id="pygmentsHighlighter" name="pygmentsHighlighter" ></div>
-<div><label for="example" title="">Example:</label><input placeholder="What is a representative snippet for this language?" type="string" id="example" name="example" ></div>
-<div><label for="helloWorldCollection" title="">HelloWorldCollection:</label><input placeholder="What is the name of this project in the Hello World Collection?" type="string" id="helloWorldCollection" name="helloWorldCollection" ></div>
-<div><label for="theLanguage" title="">TheLanguage:</label><input placeholder="What is the entire definition of the language, if it's a small one?" type="string" id="theLanguage" name="theLanguage" ></div>
-<div><label for="leachim6" title="">Leachim6:</label><input placeholder="What is a URL to this language in leachim6's hello-world project?" type="string" id="leachim6" name="leachim6" ></div>
-<div><label for="gource" title="">Gource:</label><input placeholder="What is a URL to a Gource visualization of this project's git history?" type="string" id="gource" name="gource" ></div>
-<div><label for="languageServerProtocolProject" title="">LanguageServerProtocolProject:</label><input placeholder="What is the URL to a project implementing LSP for this language?" type="string" id="languageServerProtocolProject" name="languageServerProtocolProject" ></div>
-<div><label for="compilerExplorer" title="">CompilerExplorer:</label><input placeholder="What is this language's name on https://godbolt.org?" type="string" id="compilerExplorer" name="compilerExplorer" ></div>
-<div><label for="githubCopilotOptimized" title="">GithubCopilotOptimized:</label><input placeholder="Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?" type="boolean" id="githubCopilotOptimized" name="githubCopilotOptimized" ></div>
-<div><label for="meetup" title="">Meetup:</label><input placeholder="What is a URL for active meetup groups for this language on Meetup.com?" type="string" id="meetup" name="meetup" ></div>
-<div><label for="gitRepo" title="">GitRepo:</label><input placeholder="What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?" type="string" id="gitRepo" name="gitRepo" ></div>
-<div><label for="specRepo" title="">SpecRepo:</label><input placeholder="What is the URL of the official spec for the language project?" type="string" id="specRepo" name="specRepo" ></div>
-<div><label for="githubRepo" title="">GithubRepo:</label><input placeholder="What is the URL of the official GitHub repo for the project if it is hosted there?" type="string" id="githubRepo" name="githubRepo" ></div>
-<div><label for="gitlabRepo" title="">GitlabRepo:</label><input placeholder="What is the URL of the official GitLab repo for the language project?" type="string" id="gitlabRepo" name="gitlabRepo" ></div>
-<div><label for="sourcehutRepo" title="">SourcehutRepo:</label><input placeholder="What is the URL of the official sourcehut repo for this project?" type="string" id="sourcehutRepo" name="sourcehutRepo" ></div>
-<div><label for="rijuRepl_gitRepo" title="">RijuRepl_gitRepo:</label><input placeholder="What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?" type="string" id="rijuRepl_gitRepo" name="rijuRepl_gitRepo" ></div>
-<div><label for="keywords" title="">Keywords:</label><input placeholder="What are all the keywords in this language?" type="string" id="keywords" name="keywords" ></div>
-<div><label for="lineCommentToken" title="">LineCommentToken:</label><input placeholder="What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?" type="string" id="lineCommentToken" name="lineCommentToken" ></div>
-<div><label for="multiLineCommentTokens" title="">MultiLineCommentTokens:</label><input placeholder="What is the start delimiter and end token (which can be the same) for comments that can span multiple lines?" type="string" id="multiLineCommentTokens" name="multiLineCommentTokens" ></div>
-<div><label for="printToken" title="">PrintToken:</label><input placeholder="What token(s) is used to print a message?" type="string" id="printToken" name="printToken" ></div>
-<div><label for="stringToken" title="">StringToken:</label><input placeholder="What token(s) is used to delimit a string?" type="string" id="stringToken" name="stringToken" ></div>
-<div><label for="assignmentToken" title="">AssignmentToken:</label><input placeholder="What token(s) is used for assignment to an identifier?" type="string" id="assignmentToken" name="assignmentToken" ></div>
-<div><label for="booleanTokens" title="">BooleanTokens:</label><input placeholder="What token(s) is used for true and false?" type="string" id="booleanTokens" name="booleanTokens" ></div>
-<div><label for="includeToken" title="">IncludeToken:</label><input placeholder="What token(s) is used for including another file?" type="string" id="includeToken" name="includeToken" ></div>
-<div><label for="canDoShebang" title="">CanDoShebang:</label><input placeholder="Does this language support shebang executable scripts?" type="boolean" id="canDoShebang" name="canDoShebang" ></div>
-<div><label for="canReadCommandLineArgs" title="">CanReadCommandLineArgs:</label><input placeholder="Does this language support command line arguments?" type="boolean" id="canReadCommandLineArgs" name="canReadCommandLineArgs" ></div>
-<div><label for="canUseQuestionMarksAsPartOfIdentifier" title="">CanUseQuestionMarksAsPartOfIdentifier:</label><input placeholder="Is the question mark (?) allowed as part of an identifier?" type="boolean" id="canUseQuestionMarksAsPartOfIdentifier" name="canUseQuestionMarksAsPartOfIdentifier" ></div>
-<div><label for="canWriteToDisk" title="">CanWriteToDisk:</label><input placeholder="Does this language have methods or standard libraries for writing to disk?" type="boolean" id="canWriteToDisk" name="canWriteToDisk" ></div>
-<div><label for="hasAbstractTypes" title="">HasAbstractTypes:</label><input placeholder="Does this language have a keyword for abstract classes or types?" type="boolean" id="hasAbstractTypes" name="hasAbstractTypes" ></div>
-<div><label for="hasAccessModifiers" title="">HasAccessModifiers:</label><input placeholder="Does this language have access modifiers?" type="boolean" id="hasAccessModifiers" name="hasAccessModifiers" ></div>
-<div><label for="hasAlgebraicTypes" title="">HasAlgebraicTypes:</label><input placeholder="Does this language support algebraic types?" type="boolean" id="hasAlgebraicTypes" name="hasAlgebraicTypes" ></div>
-<div><label for="hasAnonymousFunctions" title="">HasAnonymousFunctions:</label><input placeholder="Does the language support anonymous functions, aka Lambdas?" type="boolean" id="hasAnonymousFunctions" name="hasAnonymousFunctions" ></div>
-<div><label for="hasArraySlicingSyntax" title="">HasArraySlicingSyntax:</label><input placeholder="Does the language have array slicing syntax, such as [0:2]?" type="boolean" id="hasArraySlicingSyntax" name="hasArraySlicingSyntax" ></div>
-<div><label for="hasAssertStatements" title="">HasAssertStatements:</label><input placeholder="Does the language have built in assert statements?" type="boolean" id="hasAssertStatements" name="hasAssertStatements" ></div>
-<div><label for="hasAssignment" title="">HasAssignment:</label><input placeholder="Does the language allow assigning values to variables?" type="boolean" id="hasAssignment" name="hasAssignment" ></div>
-<div><label for="hasAsyncAwait" title="">HasAsyncAwait:</label><input placeholder="Does the language have an async/await construct?" type="boolean" id="hasAsyncAwait" name="hasAsyncAwait" ></div>
-<div><label for="hasBinaryNumbers" title="">HasBinaryNumbers:</label><input placeholder="Does the language have a type and syntax for binary numbers?" type="boolean" id="hasBinaryNumbers" name="hasBinaryNumbers" ></div>
-<div><label for="hasBinaryOperators" title="">HasBinaryOperators:</label><input placeholder="Does the language have operators for operating on binary types?" type="boolean" id="hasBinaryOperators" name="hasBinaryOperators" ></div>
-<div><label for="hasBitWiseOperators" title="">HasBitWiseOperators:</label><input placeholder="Does the language have operators for bitwise manipulations?" type="boolean" id="hasBitWiseOperators" name="hasBitWiseOperators" ></div>
-<div><label for="hasBlobs" title="">HasBlobs:</label><input placeholder="Does the language have a blobs concept?" type="boolean" id="hasBlobs" name="hasBlobs" ></div>
-<div><label for="hasBooleans" title="">HasBooleans:</label><input placeholder="Does the language have a type and syntax for booleans?" type="boolean" id="hasBooleans" name="hasBooleans" ></div>
-<div><label for="hasBoundedCheckedArrays" title="">HasBoundedCheckedArrays:</label><input placeholder="Are array boundaries checked by the language?" type="boolean" id="hasBoundedCheckedArrays" name="hasBoundedCheckedArrays" ></div>
-<div><label for="hasBreak" title="">HasBreak:</label><input placeholder="Does the language have a keyword for breaking out of a loop?" type="boolean" id="hasBreak" name="hasBreak" ></div>
-<div><label for="hasBuiltInRegex" title="">HasBuiltInRegex:</label><input placeholder="Does the language include/import a regular expression language?" type="boolean" id="hasBuiltInRegex" name="hasBuiltInRegex" ></div>
-<div><label for="hasCaseInsensitiveIdentifiers" title="">HasCaseInsensitiveIdentifiers:</label><input placeholder="Are identifiers in this language case insensitive?" type="boolean" id="hasCaseInsensitiveIdentifiers" name="hasCaseInsensitiveIdentifiers" ></div>
-<div><label for="hasCharacters" title="">HasCharacters:</label><input placeholder="Does this language have a syntax and type for a "character"?" type="boolean" id="hasCharacters" name="hasCharacters" ></div>
-<div><label for="hasClasses" title="">HasClasses:</label><input placeholder="Does the language have a concept of classes?" type="boolean" id="hasClasses" name="hasClasses" ></div>
-<div><label for="hasClobs" title="">HasClobs:</label><input placeholder="Does the language have a specific type for character large object?" type="boolean" id="hasClobs" name="hasClobs" ></div>
-<div><label for="hasComments" title="">HasComments:</label><input placeholder="Does the language have a syntax and support for comments?" type="boolean" id="hasComments" name="hasComments" ></div>
-<div><label for="hasConditionals" title="">HasConditionals:</label><input placeholder="Does the language have conditional statements and/or conditional expressions?" type="boolean" id="hasConditionals" name="hasConditionals" ></div>
-<div><label for="hasConstants" title="">HasConstants:</label><input placeholder="Does the language have a way to declare constant compile time variables?" type="boolean" id="hasConstants" name="hasConstants" ></div>
-<div><label for="hasConstructors" title="">HasConstructors:</label><input placeholder="Does the language have a syntax and/or notion of constructors?" type="boolean" id="hasConstructors" name="hasConstructors" ></div>
-<div><label for="hasContinue" title="">HasContinue:</label><input placeholder="Does the language have a syntax/keyword for continuing a loop?" type="boolean" id="hasContinue" name="hasContinue" ></div>
-<div><label for="hasDecimals" title="">HasDecimals:</label><input placeholder="Does the language have a decimal data type?" type="boolean" id="hasDecimals" name="hasDecimals" ></div>
-<div><label for="hasDecorators" title="">HasDecorators:</label><input placeholder="Does the language have decorators?" type="boolean" id="hasDecorators" name="hasDecorators" ></div>
-<div><label for="hasDefaultParameters" title="">HasDefaultParameters:</label><input placeholder="Does the language have a way to define default parameters for functions?" type="boolean" id="hasDefaultParameters" name="hasDefaultParameters" ></div>
-<div><label for="hasDependentTypes" title="">HasDependentTypes:</label><input placeholder="Does a language have types who's definition depends on its value or the value of other types?" type="boolean" id="hasDependentTypes" name="hasDependentTypes" ></div>
-<div><label for="hasDestructuring" title="">HasDestructuring:</label><input placeholder="Does the language have a syntax for conveniently extracting multiple values from a structure?" type="boolean" id="hasDestructuring" name="hasDestructuring" ></div>
-<div><label for="hasDirectives" title="">HasDirectives:</label><input placeholder="Is the language embedded in a tiny compile-time directive language?" type="boolean" id="hasDirectives" name="hasDirectives" ></div>
-<div><label for="hasDisposeBlocks" title="">HasDisposeBlocks:</label><input placeholder="Does the language have a syntax for dispose blocks to free up resources allocated during execution?" type="boolean" id="hasDisposeBlocks" name="hasDisposeBlocks" ></div>
-<div><label for="hasDocComments" title="">HasDocComments:</label><input placeholder="Is there a standard mini language written in comments for documenting code?" type="boolean" id="hasDocComments" name="hasDocComments" ></div>
-<div><label for="hasDuckTyping" title="">HasDuckTyping:</label><input placeholder="Are types defined not by their name, but by the presence of certain methods and properties?" type="boolean" id="hasDuckTyping" name="hasDuckTyping" ></div>
-<div><label for="hasDynamicProperties" title="">HasDynamicProperties:</label><input placeholder="Does all properties have to be declared or does the language support dynamic properties?" type="boolean" id="hasDynamicProperties" name="hasDynamicProperties" ></div>
-<div><label for="hasDynamicSizedArrays" title="">HasDynamicSizedArrays:</label><input placeholder="Do arrays have to have their size specified at compile time or can they be dynamically sized?" type="boolean" id="hasDynamicSizedArrays" name="hasDynamicSizedArrays" ></div>
-<div><label for="hasDynamicTyping" title="">HasDynamicTyping:</label><input placeholder="Are types of variables fixed or can they change during runtime?" type="boolean" id="hasDynamicTyping" name="hasDynamicTyping" ></div>
-<div><label for="hasEnums" title="">HasEnums:</label><input placeholder="Does the language have a syntax and type for enums?" type="boolean" id="hasEnums" name="hasEnums" ></div>
-<div><label for="hasEscapeCharacters" title="">HasEscapeCharacters:</label><input placeholder="Does the language have any notion of escape characters?" type="boolean" id="hasEscapeCharacters" name="hasEscapeCharacters" ></div>
-<div><label for="hasExceptions" title="">HasExceptions:</label><input placeholder="Does the language have a concept and syntax for exceptions?" type="boolean" id="hasExceptions" name="hasExceptions" ></div>
-<div><label for="hasExplicitTypeCasting" title="">HasExplicitTypeCasting:</label><input placeholder="Does the language have a syntax for type casting?" type="boolean" id="hasExplicitTypeCasting" name="hasExplicitTypeCasting" ></div>
-<div><label for="hasExports" title="">HasExports:</label><input placeholder="Does the language have a syntax for explicitly exporting items from a module or file?" type="boolean" id="hasExports" name="hasExports" ></div>
-<div><label for="hasExpressions" title="">HasExpressions:</label><input placeholder="Does the language have a concept of expressions?" type="boolean" id="hasExpressions" name="hasExpressions" ></div>
-<div><label for="hasFirstClassFunctions" title="">HasFirstClassFunctions:</label><input placeholder="Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?" type="boolean" id="hasFirstClassFunctions" name="hasFirstClassFunctions" ></div>
-<div><label for="hasFixedPoint" title="">HasFixedPoint:</label><input placeholder="Does the language have a type and syntax for fixed point numbers, such as currencies with 2 decimal points?" type="boolean" id="hasFixedPoint" name="hasFixedPoint" ></div>
-<div><label for="hasFloats" title="">HasFloats:</label><input placeholder="Does the language have a syntax and type for floating points?" type="boolean" id="hasFloats" name="hasFloats" ></div>
-<div><label for="hasFnArguments" title="">HasFnArguments:</label><input placeholder="Do functions accept arguments?" type="boolean" id="hasFnArguments" name="hasFnArguments" ></div>
-<div><label for="hasForEachLoops" title="">HasForEachLoops:</label><input placeholder="Does the language have a concept and syntax for for-each loops?" type="boolean" id="hasForEachLoops" name="hasForEachLoops" ></div>
-<div><label for="hasForLoops" title="">HasForLoops:</label><input placeholder="Does the language have a concept of and syntax for for-loops?" type="boolean" id="hasForLoops" name="hasForLoops" ></div>
-<div><label for="hasFunctionComposition" title="">HasFunctionComposition:</label><input placeholder="Can you pass functions into other functions and get new combined functions?" type="boolean" id="hasFunctionComposition" name="hasFunctionComposition" ></div>
-<div><label for="hasFunctionOverloading" title="">HasFunctionOverloading:</label><input placeholder="Can you have multiple functions with the same name but different parameters?" type="boolean" id="hasFunctionOverloading" name="hasFunctionOverloading" ></div>
-<div><label for="hasFunctions" title="">HasFunctions:</label><input placeholder="Does the language have a concept of and syntax for functions?" type="boolean" id="hasFunctions" name="hasFunctions" ></div>
-<div><label for="hasGarbageCollection" title="">HasGarbageCollection:</label><input placeholder="Does the language have a garbage collector or must memory of constructs be managed manually?" type="boolean" id="hasGarbageCollection" name="hasGarbageCollection" ></div>
-<div><label for="hasGradualTypes" title="">HasGradualTypes:</label><input placeholder="Does the language support gradual types?" type="boolean" id="hasGradualTypes" name="hasGradualTypes" ></div>
-<div><label for="hasGenerators" title="">HasGenerators:</label><input placeholder="Does the language have a concept of loops that yield?" type="boolean" id="hasGenerators" name="hasGenerators" ></div>
-<div><label for="hasGenerics" title="">HasGenerics:</label><input placeholder="Does the language have generics?" type="boolean" id="hasGenerics" name="hasGenerics" ></div>
-<div><label for="hasGlobalScope" title="">HasGlobalScope:</label><input placeholder="Is there at least one top level scope?" type="boolean" id="hasGlobalScope" name="hasGlobalScope" ></div>
-<div><label for="hasGotos" title="">HasGotos:</label><input placeholder="Does the language have a concept of and syntax for gotos?" type="boolean" id="hasGotos" name="hasGotos" ></div>
-<div><label for="hasHereDocs" title="">HasHereDocs:</label><input placeholder="Does the language have a syntax for multiline text blocks?" type="boolean" id="hasHereDocs" name="hasHereDocs" ></div>
-<div><label for="hasHexadecimals" title="">HasHexadecimals:</label><input placeholder="Does the language have a syntax for hexadecimals?" type="boolean" id="hasHexadecimals" name="hasHexadecimals" ></div>
-<div><label for="hasHomoiconicity" title="">HasHomoiconicity:</label><input placeholder="Is the language also a valid data structure in that language?" type="boolean" id="hasHomoiconicity" name="hasHomoiconicity" ></div>
-<div><label for="hasIds" title="">HasIds:</label><input placeholder="Does the language have a concept of unique identifiers?" type="boolean" id="hasIds" name="hasIds" ></div>
-<div><label for="hasIfElses" title="">HasIfElses:</label><input placeholder="Does the language have if-else statements or expressions?" type="boolean" id="hasIfElses" name="hasIfElses" ></div>
-<div><label for="hasIfs" title="">HasIfs:</label><input placeholder="Does the language have "if" statements or expressoins?" type="boolean" id="hasIfs" name="hasIfs" ></div>
-<div><label for="hasImplicitArguments" title="">HasImplicitArguments:</label><input placeholder="Does the language have a concept of contextual or implicit parameters?" type="boolean" id="hasImplicitArguments" name="hasImplicitArguments" ></div>
-<div><label for="hasImplicitTypeConversions" title="">HasImplicitTypeConversions:</label><input placeholder="Does the language automatically convert types as needed?" type="boolean" id="hasImplicitTypeConversions" name="hasImplicitTypeConversions" ></div>
-<div><label for="hasImports" title="">HasImports:</label><input placeholder="Does this language have a syntax for importing other files?" type="boolean" id="hasImports" name="hasImports" ></div>
-<div><label for="hasIncrementAndDecrementOperators" title="">HasIncrementAndDecrementOperators:</label><input placeholder="Does this language have increment and decrement operators?" type="boolean" id="hasIncrementAndDecrementOperators" name="hasIncrementAndDecrementOperators" ></div>
-<div><label for="hasInfixNotation" title="">HasInfixNotation:</label><input placeholder="Does this language use operators between operands?" type="boolean" id="hasInfixNotation" name="hasInfixNotation" ></div>
-<div><label for="hasInheritance" title="">HasInheritance:</label><input placeholder="Does this language have class inheritance?" type="boolean" id="hasInheritance" name="hasInheritance" ></div>
-<div><label for="hasIntegers" title="">HasIntegers:</label><input placeholder="Does this language have a syntax and type for integers?" type="boolean" id="hasIntegers" name="hasIntegers" ></div>
-<div><label for="hasInterfaces" title="">HasInterfaces:</label><input placeholder="Does this language have a concept of interfaces?" type="boolean" id="hasInterfaces" name="hasInterfaces" ></div>
-<div><label for="hasIterators" title="">HasIterators:</label><input placeholder="Does this language have iterators?" type="boolean" id="hasIterators" name="hasIterators" ></div>
-<div><label for="hasLabels" title="">HasLabels:</label><input placeholder="Does the language have a way to label locations within the source code?" type="boolean" id="hasLabels" name="hasLabels" ></div>
-<div><label for="hasLazyEvaluation" title="">HasLazyEvaluation:</label><input placeholder="Does the language wait to evaluate expressions until needed?" type="boolean" id="hasLazyEvaluation" name="hasLazyEvaluation" ></div>
-<div><label for="hasLineComments" title="">HasLineComments:</label><input placeholder="Does the language have line comments?" type="boolean" id="hasLineComments" name="hasLineComments" ></div>
-<div><label for="hasLists" title="">HasLists:</label><input placeholder="Does the language have lists?" type="boolean" id="hasLists" name="hasLists" ></div>
-<div><label for="hasStandardLibrary" title="">HasStandardLibrary:</label><input placeholder="Does the language have a standard library?" type="boolean" id="hasStandardLibrary" name="hasStandardLibrary" ></div>
-<div><label for="hasExplicitStandardLibrary" title="">HasExplicitStandardLibrary:</label><input placeholder="Do you have to explicitly include the standard library?" type="boolean" id="hasExplicitStandardLibrary" name="hasExplicitStandardLibrary" ></div>
-<div><label for="hasMacros" title="">HasMacros:</label><input placeholder="Does the language have a compile-time macro pass?" type="boolean" id="hasMacros" name="hasMacros" ></div>
-<div><label for="hasMagicGettersAndSetters" title="">HasMagicGettersAndSetters:</label><input placeholder="Does the language have a way to handle undefined getters and setters?" type="boolean" id="hasMagicGettersAndSetters" name="hasMagicGettersAndSetters" ></div>
-<div><label for="hasManualMemoryManagement" title="">HasManualMemoryManagement:</label><input placeholder="Does the language have manual memory management?" type="boolean" id="hasManualMemoryManagement" name="hasManualMemoryManagement" ></div>
-<div><label for="hasMapFunctions" title="">HasMapFunctions:</label><input placeholder="Does the language support running map over a list?" type="boolean" id="hasMapFunctions" name="hasMapFunctions" ></div>
-<div><label for="hasMaps" title="">HasMaps:</label><input placeholder="Does the language have a map (aka hashtable) data structure?" type="boolean" id="hasMaps" name="hasMaps" ></div>
-<div><label for="hasMemberVariables" title="">HasMemberVariables:</label><input placeholder="Does the language have member variables?" type="boolean" id="hasMemberVariables" name="hasMemberVariables" ></div>
-<div><label for="hasMessagePassing" title="">HasMessagePassing:</label><input placeholder="Does the language support message passing?" type="boolean" id="hasMessagePassing" name="hasMessagePassing" ></div>
-<div><label for="hasMethodChaining" title="">HasMethodChaining:</label><input placeholder="Does the language support method chaining?" type="boolean" id="hasMethodChaining" name="hasMethodChaining" ></div>
-<div><label for="hasMethodOverloading" title="">HasMethodOverloading:</label><input placeholder="Does the language support method overloading?" type="boolean" id="hasMethodOverloading" name="hasMethodOverloading" ></div>
-<div><label for="hasMethods" title="">HasMethods:</label><input placeholder="Does the language have methods on classes?" type="boolean" id="hasMethods" name="hasMethods" ></div>
-<div><label for="hasMixins" title="">HasMixins:</label><input placeholder="Does the language allow including methods from a class without inheriting from that class?" type="boolean" id="hasMixins" name="hasMixins" ></div>
-<div><label for="hasModules" title="">HasModules:</label><input placeholder="Does the language have a concept of modules for organizing and packaging code?" type="boolean" id="hasModules" name="hasModules" ></div>
-<div><label for="hasMonads" title="">HasMonads:</label><input placeholder="Does the language have monads?" type="boolean" id="hasMonads" name="hasMonads" ></div>
-<div><label for="hasMultiLineComments" title="">HasMultiLineComments:</label><input placeholder="Does the language have multi-line comments?" type="boolean" id="hasMultiLineComments" name="hasMultiLineComments" ></div>
-<div><label for="hasMultilineStrings" title="">HasMultilineStrings:</label><input placeholder="Does the language support multiline strings?" type="boolean" id="hasMultilineStrings" name="hasMultilineStrings" ></div>
-<div><label for="hasMultipleDispatch" title="">HasMultipleDispatch:</label><input placeholder="Does the language support multiple dispatch?" type="boolean" id="hasMultipleDispatch" name="hasMultipleDispatch" ></div>
-<div><label for="hasMultipleInheritance" title="">HasMultipleInheritance:</label><input placeholder="Does the language allow multiple inheritance?" type="boolean" id="hasMultipleInheritance" name="hasMultipleInheritance" ></div>
-<div><label for="hasNamespaces" title="">HasNamespaces:</label><input placeholder="Does the language have a namespace construct?" type="boolean" id="hasNamespaces" name="hasNamespaces" ></div>
-<div><label for="hasNull" title="">HasNull:</label><input placeholder="Does the language have a null value?" type="boolean" id="hasNull" name="hasNull" ></div>
-<div><label for="hasOctals" title="">HasOctals:</label><input placeholder="Does the language have a syntax for octal numbers?" type="boolean" id="hasOctals" name="hasOctals" ></div>
-<div><label for="hasOperatorOverloading" title="">HasOperatorOverloading:</label><input placeholder="Does the language allow operator overloading?" type="boolean" id="hasOperatorOverloading" name="hasOperatorOverloading" ></div>
-<div><label for="hasOperators" title="">HasOperators:</label><input placeholder="Does the language have operators?" type="boolean" id="hasOperators" name="hasOperators" ></div>
-<div><label for="hasPairs" title="">HasPairs:</label><input placeholder="Does the language have a pair structure?" type="boolean" id="hasPairs" name="hasPairs" ></div>
-<div><label for="hasPartialApplication" title="">HasPartialApplication:</label><input placeholder="Does the language support partial application?" type="boolean" id="hasPartialApplication" name="hasPartialApplication" ></div>
-<div><label for="hasPatternMatching" title="">HasPatternMatching:</label><input placeholder="Does the language support pattern matching?" type="boolean" id="hasPatternMatching" name="hasPatternMatching" ></div>
-<div><label for="hasPipes" title="">HasPipes:</label><input placeholder="Does the language have a pipe operator?" type="boolean" id="hasPipes" name="hasPipes" ></div>
-<div><label for="hasPointers" title="">HasPointers:</label><input placeholder="Does the language have a structure that is a location in memory?" type="boolean" id="hasPointers" name="hasPointers" ></div>
-<div><label for="hasPolymorphism" title="">HasPolymorphism:</label><input placeholder="Does the language have polymorphism?" type="boolean" id="hasPolymorphism" name="hasPolymorphism" ></div>
-<div><label for="hasPostfixNotation" title="">HasPostfixNotation:</label><input placeholder="Does the language allow operators to be placed at the end of the expression?" type="boolean" id="hasPostfixNotation" name="hasPostfixNotation" ></div>
-<div><label for="hasPrefixNotation" title="">HasPrefixNotation:</label><input placeholder="Does the language allow operators to be placed at the beginning of the expression?" type="boolean" id="hasPrefixNotation" name="hasPrefixNotation" ></div>
-<div><label for="hasPrintDebugging" title="">HasPrintDebugging:</label><input placeholder="Does the language have a built in function that allows one to print debug?" type="boolean" id="hasPrintDebugging" name="hasPrintDebugging" ></div>
-<div><label for="hasProcessorRegisters" title="">HasProcessorRegisters:</label><input placeholder="Does the language have named symbols for a processor's registers?" type="boolean" id="hasProcessorRegisters" name="hasProcessorRegisters" ></div>
-<div><label for="hasRangeOperators" title="">HasRangeOperators:</label><input placeholder="Does the language have a syntax for creating ranges?" type="boolean" id="hasRangeOperators" name="hasRangeOperators" ></div>
-<div><label for="hasReferences" title="">HasReferences:</label><input placeholder="Does the language have a structure for holding a reference to an existing object?" type="boolean" id="hasReferences" name="hasReferences" ></div>
-<div><label for="hasRefinementTypes" title="">HasRefinementTypes:</label><input placeholder="Does the language have a way to attach a predicate to a type?" type="boolean" id="hasRefinementTypes" name="hasRefinementTypes" ></div>
-<div><label for="hasRegularExpressionsSyntaxSugar" title="">HasRegularExpressionsSyntaxSugar:</label><input placeholder="Does the language have special syntax for regular expressions?" type="boolean" id="hasRegularExpressionsSyntaxSugar" name="hasRegularExpressionsSyntaxSugar" ></div>
-<div><label for="hasRequiredMainFunction" title="">HasRequiredMainFunction:</label><input placeholder="Does the language require a function named main (or similar)?" type="boolean" id="hasRequiredMainFunction" name="hasRequiredMainFunction" ></div>
-<div><label for="hasReservedWords" title="">HasReservedWords:</label><input placeholder="Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?" type="boolean" id="hasReservedWords" name="hasReservedWords" ></div>
-<div><label for="hasRunTimeGuards" title="">HasRunTimeGuards:</label><input placeholder="Does the language support run-time guards?" type="boolean" id="hasRunTimeGuards" name="hasRunTimeGuards" ></div>
-<div><label for="hasSExpressions" title="">HasSExpressions:</label><input placeholder="Does the language have S Expressions?" type="boolean" id="hasSExpressions" name="hasSExpressions" ></div>
-<div><label for="hasScientificNotation" title="">HasScientificNotation:</label><input placeholder="Does the language have a syntax for Scientific Notation?" type="boolean" id="hasScientificNotation" name="hasScientificNotation" ></div>
-<div><label for="hasSelfOrThisWord" title="">HasSelfOrThisWord:</label><input placeholder="Does a language have a keyword or syntax to refer to the current instance?" type="boolean" id="hasSelfOrThisWord" name="hasSelfOrThisWord" ></div>
-<div><label for="hasSemanticIndentation" title="">HasSemanticIndentation:</label><input placeholder="Does the language use semantic indentation?" type="boolean" id="hasSemanticIndentation" name="hasSemanticIndentation" ></div>
-<div><label for="hasSets" title="">HasSets:</label><input placeholder="Does the language come with a Set data structure?" type="boolean" id="hasSets" name="hasSets" ></div>
-<div><label for="hasSingleDispatch" title="">HasSingleDispatch:</label><input placeholder="Does the method called depended on a single operand?" type="boolean" id="hasSingleDispatch" name="hasSingleDispatch" ></div>
-<div><label for="hasSingleTypeArrays" title="">HasSingleTypeArrays:</label><input placeholder="Does the language have a list data structure that only can hold items of the same type?" type="boolean" id="hasSingleTypeArrays" name="hasSingleTypeArrays" ></div>
-<div><label for="hasSourceMaps" title="">HasSourceMaps:</label><input placeholder="Does the language support the generation of source maps?" type="boolean" id="hasSourceMaps" name="hasSourceMaps" ></div>
-<div><label for="hasStatementTerminatorCharacter" title="">HasStatementTerminatorCharacter:</label><input placeholder="Does the language have a statement terminator character such as ";"?" type="boolean" id="hasStatementTerminatorCharacter" name="hasStatementTerminatorCharacter" ></div>
-<div><label for="hasStatements" title="">HasStatements:</label><input placeholder="Does the language have a concept of statements?" type="boolean" id="hasStatements" name="hasStatements" ></div>
-<div><label for="hasStaticMethods" title="">HasStaticMethods:</label><input placeholder="Can a class have static methods?" type="boolean" id="hasStaticMethods" name="hasStaticMethods" ></div>
-<div><label for="hasStaticTyping" title="">HasStaticTyping:</label><input placeholder="Does the language have static typing at compile time?" type="boolean" id="hasStaticTyping" name="hasStaticTyping" ></div>
-<div><label for="hasStreams" title="">HasStreams:</label><input placeholder="Does the language have a concept of streams?" type="boolean" id="hasStreams" name="hasStreams" ></div>
-<div><label for="hasStringConcatOperator" title="">HasStringConcatOperator:</label><input placeholder="Is there an operator for concatenating strings?" type="boolean" id="hasStringConcatOperator" name="hasStringConcatOperator" ></div>
-<div><label for="hasStrings" title="">HasStrings:</label><input placeholder="Does the language have a strings data structure?" type="boolean" id="hasStrings" name="hasStrings" ></div>
-<div><label for="hasStructs" title="">HasStructs:</label><input placeholder="Does the language have a structs structure?" type="boolean" id="hasStructs" name="hasStructs" ></div>
-<div><label for="hasSwitch" title="">HasSwitch:</label><input placeholder="Does the language have switch statements or expressions?" type="boolean" id="hasSwitch" name="hasSwitch" ></div>
-<div><label for="hasSymbolTables" title="">HasSymbolTables:</label><input placeholder="Does the compiler use symbol tables internally?" type="boolean" id="hasSymbolTables" name="hasSymbolTables" ></div>
-<div><label for="hasSymbols" title="">HasSymbols:</label><input placeholder="Does the language have a concept of symbols?" type="boolean" id="hasSymbols" name="hasSymbols" ></div>
-<div><label for="hasTemplates" title="">HasTemplates:</label><input placeholder="Does the language support templates?" type="boolean" id="hasTemplates" name="hasTemplates" ></div>
-<div><label for="hasTernaryOperators" title="">HasTernaryOperators:</label><input placeholder="Does the language have ternary operators?" type="boolean" id="hasTernaryOperators" name="hasTernaryOperators" ></div>
-<div><label for="hasThreads" title="">HasThreads:</label><input placeholder="Does the language support a concept of threads?" type="boolean" id="hasThreads" name="hasThreads" ></div>
-<div><label for="hasTimestamps" title="">HasTimestamps:</label><input placeholder="Does the language have a builtin timestamps data structure?" type="boolean" id="hasTimestamps" name="hasTimestamps" ></div>
-<div><label for="hasTraits" title="">HasTraits:</label><input placeholder="Does the language support traits?" type="boolean" id="hasTraits" name="hasTraits" ></div>
-<div><label for="hasTriples" title="">HasTriples:</label><input placeholder="Does the language have a structure for subject–predicate–object expressions?" type="boolean" id="hasTriples" name="hasTriples" ></div>
-<div><label for="hasTryCatch" title="">HasTryCatch:</label><input placeholder="Does the language have a try/catch construct?" type="boolean" id="hasTryCatch" name="hasTryCatch" ></div>
-<div><label for="hasTypeAliases" title="">HasTypeAliases:</label><input placeholder="Does the language have type aliases?" type="boolean" id="hasTypeAliases" name="hasTypeAliases" ></div>
-<div><label for="hasTypeAnnotations" title="">HasTypeAnnotations:</label><input placeholder="Does the language have a syntax for annotating the types of variables?" type="boolean" id="hasTypeAnnotations" name="hasTypeAnnotations" ></div>
-<div><label for="hasTypeInference" title="">HasTypeInference:</label><input placeholder="Can the parser infer the type of a variable at compile time without an annotation?" type="boolean" id="hasTypeInference" name="hasTypeInference" ></div>
-<div><label for="hasTypeParameters" title="">HasTypeParameters:</label><input placeholder="Does the language support a concept of type parameters?" type="boolean" id="hasTypeParameters" name="hasTypeParameters" ></div>
-<div><label for="hasTypedHoles" title="">HasTypedHoles:</label><input placeholder="Does the language have a syntax for typed holes?" type="boolean" id="hasTypedHoles" name="hasTypedHoles" ></div>
-<div><label for="hasUnaryOperators" title="">HasUnaryOperators:</label><input placeholder="Does the language have any unary operators like ++ or --?" type="boolean" id="hasUnaryOperators" name="hasUnaryOperators" ></div>
-<div><label for="hasUnicodeIdentifiers" title="">HasUnicodeIdentifiers:</label><input placeholder="Does the language support Unicode identifiers?" type="boolean" id="hasUnicodeIdentifiers" name="hasUnicodeIdentifiers" ></div>
-<div><label for="hasUnionTypes" title="">HasUnionTypes:</label><input placeholder="Does the language support union types?" type="boolean" id="hasUnionTypes" name="hasUnionTypes" ></div>
-<div><label for="hasUnitsOfMeasure" title="">HasUnitsOfMeasure:</label><input placeholder="Does the language support units of measure?" type="boolean" id="hasUnitsOfMeasure" name="hasUnitsOfMeasure" ></div>
-<div><label for="hasUserDefinedOperators" title="">HasUserDefinedOperators:</label><input placeholder="Does the language allow for defining your own operators?" type="boolean" id="hasUserDefinedOperators" name="hasUserDefinedOperators" ></div>
-<div><label for="hasValueReturnedFunctions" title="">HasValueReturnedFunctions:</label><input placeholder="Can functions return a value?" type="boolean" id="hasValueReturnedFunctions" name="hasValueReturnedFunctions" ></div>
-<div><label for="hasVariableSubstitutionSyntax" title="">HasVariableSubstitutionSyntax:</label><input placeholder="Do you use different syntax when assigning versus referencing a variable?" type="boolean" id="hasVariableSubstitutionSyntax" name="hasVariableSubstitutionSyntax" ></div>
-<div><label for="hasVariadicFunctions" title="">HasVariadicFunctions:</label><input placeholder="Does the language support functions that accept a variable number of parameters?" type="boolean" id="hasVariadicFunctions" name="hasVariadicFunctions" ></div>
-<div><label for="hasVirtualFunctions" title="">HasVirtualFunctions:</label><input placeholder="Does the language have virtual functions?" type="boolean" id="hasVirtualFunctions" name="hasVirtualFunctions" ></div>
-<div><label for="hasVoidFunctions" title="">HasVoidFunctions:</label><input placeholder="Does the language have void functions that return nothing?" type="boolean" id="hasVoidFunctions" name="hasVoidFunctions" ></div>
-<div><label for="hasWhileLoops" title="">HasWhileLoops:</label><input placeholder="Does the language have while loops?" type="boolean" id="hasWhileLoops" name="hasWhileLoops" ></div>
-<div><label for="hasZeroBasedNumbering" title="">HasZeroBasedNumbering:</label><input placeholder="Does the language start counting from 0, rather than 1?" type="boolean" id="hasZeroBasedNumbering" name="hasZeroBasedNumbering" ></div>
-<div><label for="hasZippers" title="">HasZippers:</label><input placeholder="Does the language have zippers built in or as a library, which are roughly a pointer with context on a tree?" type="boolean" id="hasZippers" name="hasZippers" ></div>
-<div><label for="isCaseSensitive" title="">IsCaseSensitive:</label><input placeholder="Is this language case sensitive?" type="boolean" id="isCaseSensitive" name="isCaseSensitive" ></div>
-<div><label for="letterFirstIdentifiers" title="">LetterFirstIdentifiers:</label><input placeholder="Must identifiers start with a letter?" type="boolean" id="letterFirstIdentifiers" name="letterFirstIdentifiers" ></div>
-<div><label for="mergesWhitespace" title="">MergesWhitespace:</label><input placeholder="Does this language merge whitespace, so N spaces is treated the same as a single space?" type="boolean" id="mergesWhitespace" name="mergesWhitespace" ></div>
-<div><label for="supportsBreakpoints" title="">SupportsBreakpoints:</label><input placeholder="Does this language support breakpoints?" type="boolean" id="supportsBreakpoints" name="supportsBreakpoints" ></div>
-<div><label for="jupyterKernel" title="">JupyterKernel:</label><input placeholder="What is a link to a Jupyter Kernel for this language?" type="string" id="jupyterKernel" name="jupyterKernel" ></div>
-<div><label for="wikipedia" title="">Wikipedia:</label><input placeholder="What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?" type="string" id="wikipedia" name="wikipedia" ></div>
-<div><label for="hopl" title="">Hopl:</label><input placeholder="What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?" type="string" id="hopl" name="hopl" ></div>
-<div><label for="pypl" title="">Pypl:</label><input placeholder="What is this language's id on https://pypl.github.io?" type="string" id="pypl" name="pypl" ></div>
-<div><label for="tiobe" title="">Tiobe:</label><input placeholder="What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?" type="string" id="tiobe" name="tiobe" ></div>
-<div><label for="domainName" title="">DomainName:</label><input placeholder="What is the domain for this language's website if it has its own?" type="string" id="domainName" name="domainName" ></div>
-<div><label for="githubBigQuery" title="">GithubBigQuery:</label><input placeholder="What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?" type="string" id="githubBigQuery" name="githubBigQuery" ></div>
-<div><label for="linguistGrammarRepo" title="">LinguistGrammarRepo:</label><input placeholder="What is the URL to the Linguist Grammar repo used by GitHub for this language?" type="string" id="linguistGrammarRepo" name="linguistGrammarRepo" ></div>
-<div><label for="hackerNewsDiscussions" title="">HackerNewsDiscussions:</label><input placeholder="What are URLS to Hacker News posts discussing this language?" type="string" id="hackerNewsDiscussions" name="hackerNewsDiscussions" ></div>
-<div><label for="isbndb" title="">Isbndb:</label><input placeholder="What are books about this language from ISBNdb?" type="string" id="isbndb" name="isbndb" ></div>
-<div><label for="githubLanguage" title="">GithubLanguage:</label><input placeholder="What is the name of this language on GitHub's list of supported languages defined here https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml?" type="string" id="githubLanguage" name="githubLanguage" ></div>
-<div><label for="indeedJobs" title="">IndeedJobs:</label><input placeholder="How many job descriptions match this query for this language on indeed.com?" type="string" id="indeedJobs" name="indeedJobs" ></div>
-<div><label for="linkedInSkill" title="">LinkedInSkill:</label><input placeholder="How many people list this skill on LinkedIn?" type="string" id="linkedInSkill" name="linkedInSkill" ></div>
-<div><label for="stackOverflowSurvey" title="">StackOverflowSurvey:</label><textarea placeholder="What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?" id="stackOverflowSurvey" name="stackOverflowSurvey" ></textarea></div>
-<div><label for="semanticScholar" title="">SemanticScholar:</label><input placeholder="What are papers about this language from Semantic Scholar?" type="string" id="semanticScholar" name="semanticScholar" ></div>
-<div><label for="goodreads" title="">Goodreads:</label><input placeholder="What are books about this language from Goodreads?" type="string" id="goodreads" name="goodreads" ></div><button value="PLDB classic form submission" title="breck7+pldbclassic@gmail.com" class="scrollButton" type="submit">Submit via email</button></form>
-</div>
-<div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <link rel="stylesheet" href="codeMirror.css">
 <script src="scrollLibs.js"></script>
 
@@ -1033,10 +634,22 @@ printTitle
 
 
 mediumColumn
-classicForm breck7+pldbclassic@gmail.com PLDB classic form submission
-
-mediumColumn
 scrollForm breck7+pldb@gmail.com PLDB form submission
+ value
+  ../code/conceptPage.scroll
+   
+  id 
+  name 
+  appeared 
+  creators 
+  tags pl
+  website 
+  description 
+  
+  gitRepo 
+  
+  example
+   
 
 buildHtml
 buildTxt
@@ -1052,6 +665,9 @@ stumpNoSnippet
    href ./index.html
    class trueBaseThemeLogo
   span - Build the next great programming language
+  span ·
+  a Add
+   href ./add.html
   span ·
   a About
    href ./pages/about.html
@@ -1080,7 +696,7 @@ stumpNoSnippet
 ./lists/autocompleteCombined.js
 script document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))
 
-</script>
+ </script>
   <script>{
   let {width, height} = document.getElementById('particles').getBoundingClientRect();
   const scrollParser = new HandParsersProgram(document.getElementById("particlesParsers").textContent).compileAndReturnRootParser()
@@ -1089,7 +705,20 @@ script document.addEventListener("DOMContentLoaded", evt => initAutocomplete("tr
     lineNumbers: false
   })
   codeMirrorInstance.setSize(width, height);
-  codeMirrorInstance.setValue(``); }</script><button value="PLDB form submission" title="breck7+pldb@gmail.com" class="scrollButton" type="submit">Submit via email</button></form>
+  codeMirrorInstance.setValue(`../code/conceptPage.scroll
+ 
+id 
+name 
+appeared 
+creators 
+tags pl
+website 
+description 
+
+gitRepo 
+
+example
+ `); }</script><button value="PLDB form submission" title="breck7+pldb@gmail.com" class="scrollButton" type="submit">Submit via email</button></form>
 </div>
 <div class="abstractTextLinkParser"><a href="https://github.com/breck7/pldb/blob/main/add.scroll">View source</a></div>
 <script>
@@ -1111,6 +740,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <div class="trueBaseThemeFooter">
  <a href="./index.html" class="trueBaseThemeLogo">PLDB</a>
  <span>- Build the next great programming language</span>
+ <span>·</span>
+ <a href="./add.html">Add</a>
  <span>·</span>
  <a href="./pages/about.html">About</a>
  <span>·</span>
