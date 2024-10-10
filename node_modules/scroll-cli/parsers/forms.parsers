@@ -74,6 +74,16 @@ classicFormParser
 scrollFormParser
  extends classicFormParser
  crux scrollForm
+ placeholderParser
+  atoms cueAtom
+  baseParser blobParser
+  cruxFromId
+  single
+ valueParser
+  atoms cueAtom
+  baseParser blobParser
+  cruxFromId
+  single
  description Generate a Scroll Form.
  string copyFromExternal codeMirror.css scrollLibs.js
  string requireOnce
@@ -81,17 +91,13 @@ scrollFormParser
   <script src="scrollLibs.js"></script>
  javascript
   get placeholder() {
-    return "See example below..."
+    return this.getParticle("placeholder")?.subparticlesToString() || ""
+  }
+  get value() {
+    return this.getParticle("value")?.subparticlesToString() || ""
   }
   get footer() {
-      const example = this.parent.file.measures.filter(measure => !measure.IsComputed).map((measure, index) => {
-      const {Name, Example} = measure
-      let examp = Example.split(" ")
-      examp.shift()
-      return Name + " " + examp.join(" ")
-      }).join("\n")
-    return `<h3>Example form:</h3>
-    <pre>${example}</pre>`
+    return ""
   }
   get inputs() {
     const Name = "particles"
@@ -104,7 +110,8 @@ scrollFormParser
       lineWrapping: false,
       lineNumbers: false
     })
-    codeMirrorInstance.setSize(width, height) }</script>`
+    codeMirrorInstance.setSize(width, height);
+    codeMirrorInstance.setValue(\`${this.value}\`); }</script>`
   }
   compile(compileSettings) {
     return this.getHtmlRequirements(compileSettings) + super.compile()

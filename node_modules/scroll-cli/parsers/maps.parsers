@@ -18,6 +18,11 @@ mapParser
   atoms cueAtom integerAtom
   cruxFromId
   single
+ geolocateParser
+  description Geolocate user.
+  atoms cueAtom
+  cruxFromId
+  single
  radiusParser
   atoms cueAtom floatAtom
   cruxFromId
@@ -75,7 +80,7 @@ mapParser
       }
     const lat = ${this.get("lat") ?? 37.8}
     const long = ${this.get("long") ?? 4}
-    if (!${this.has("lat")})
+    if (${this.has("geolocate")})
         moveToMyLocation()
     const zoomLevel = ${this.get("zoom") ?? 4}
     const hover = '${this.get("hover") || "<b>{title}</b><br>{description}"}'
