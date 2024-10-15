@@ -1,7 +1,7 @@
 importOnly
 replace BASE_URL .
 tags All
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
+viewSourceBaseUrl https://pldb.io/edit.html?folderName=pldb.io&fileName=
 
 // Set the base url. Without this trick, browsing the site locally would require serving it via localhost to get relative url paths to work since we reuse the header and footer in nested folders. (There could be a better way to do this.)
 keyboardNav
