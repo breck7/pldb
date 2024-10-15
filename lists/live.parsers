@@ -8,7 +8,7 @@ startedParser
  float sortIndex 1.4
 abstractStreamLinkParser
  extends abstractUrlMeasureParser
- cruxFromId
+ cueFromId
  inScope subscribersParser
 subscribersParser
  extends abstractIntegerMeasureParser

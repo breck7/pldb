@@ -24,7 +24,7 @@ abstractYearMeasureParser
 
 abstractAnnualPopulationCountParser
  atoms yearAtom countAtom
- uniqueFirstAtom
+ uniqueCue
 abstractAnnualPopulationCountMapParser
  catchAllParser abstractAnnualPopulationCountParser
  description A map of counts, one per year.
@@ -300,10 +300,10 @@ descriptionParser
  description What is a short description of this language?
 
 subDescriptionParser
- // todo fix columnName crux path issue.
+ // todo fix columnName cue path issue.
  extends descriptionParser
  description How is this language described here?
- crux description
+ cue description
 
 tiktoksParser
  extends abstractUrlsMeasureParser
@@ -1745,7 +1745,7 @@ hasZippersParser
 helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
  extends abstractExampleParser
- cruxFromId
+ cueFromId
  atoms measureNameAtom
  catchAllAtomType stringAtom
  string sourceDomain helloworldcollection.de
@@ -2072,7 +2072,7 @@ abstractAnnualRankMapParser
  extends abstractHashMapMeasureParser
 annualRankParser
  atoms yearAtom integerAtom
- uniqueFirstAtom
+ uniqueCue
 
 // reddit
 // todo trim the trailing slash
@@ -2238,7 +2238,7 @@ stackOverflowSurveyParser
   description What are the survey results for a particular year?
   atoms yearAtom
   pattern \d+
-  uniqueFirstAtom
+  uniqueCue
   usersParser
    extends abstractPopulationCountMeasureParser
    description How many developers reported using this language?

@@ -1,6 +1,6 @@
 ohayoCodeParser
  extends codeParser
- cruxFromId
+ cueFromId
  description Provide a direct link to analyze this data in Ohayo.
  javascript
   compile() {
@@ -9,7 +9,7 @@ ohayoCodeParser
   }
 observableParser
  extends abstractScrollParser
- cruxFromId
+ cueFromId
  atoms cueAtom urlAtom
  description Provide a direct link to analyze this data in Observable.
  javascript
@@ -17,7 +17,7 @@ observableParser
    return `<div class="scrollQuote">Analyze this data yourself in <a href="${this.getAtom(1)}">Observable</a></div>`
   }
 bashParser
- cruxFromId
+ cueFromId
  description Run a bash oneliner via nodejs and dumps stdout to pre tag.
  catchAllAtomType stringAtom
  extends abstractScrollParser
@@ -31,7 +31,7 @@ bashParser
   }
 
 monacoEditorParser
- cruxFromId
+ cueFromId
  extends abstractScrollParser
  description A Monaco code editor.
  baseParser blobParser
