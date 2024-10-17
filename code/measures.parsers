@@ -911,6 +911,8 @@ hasDynamicSizedArraysParser
 hasDynamicTypingParser
  description Are types of variables fixed or can they change during runtime?
  extends abstractFeatureParser
+ string title Dynamic Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information
 
 hasEnumsParser
  extends abstractFeatureParser
