@@ -706,7 +706,7 @@ table
 FeatureLink ${feature.titleLink}
 Supported ${supported ? `<span class="hasFeature">✓</span>` : `<span class="doesNotHaveFeature">X</span>`}
 Example
-Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
+Token ${supported && tokenPath ? (this.get(tokenPath) ?? "") : ""}`
         )
         .touchParticle("Example")
         .setSubparticles(particle.subparticlesToString())
