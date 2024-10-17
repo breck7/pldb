@@ -133,6 +133,8 @@ hasOperatorOverloading true
 hasLineComments true
  ; A comment
 hasHomoiconicity true
+hasDynamicTyping true
+hasGarbageCollection true
 hasPrintDebugging true
 hasMultiLineComments true
  (comment A comment
