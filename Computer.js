@@ -744,10 +744,6 @@ table
   ${delimited}`
   }
 
-  get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/concepts/${this.id}.scroll`
-  }
-
   get title() {
     return this.get("name")
   }
@@ -777,7 +773,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
-viewSourceUrl ${this.sourceUrl}
+editBaseUrl /edit.html?folderName=pldb.io&fileName=concepts/
 
 container 800px
 
@@ -1486,7 +1482,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 

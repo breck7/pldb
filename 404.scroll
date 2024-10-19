@@ -1,7 +1,7 @@
 buildHtml
 replace BASE_URL
 title Page not found
-viewSourceBaseUrl /edit.html?folderName=pldb.io&fileName=
+editBaseUrl /edit.html?folderName=pldb.io&fileName=
 
 header.scroll
 
@@ -18,5 +18,5 @@ If you think there's a bug on our site, please let us know via Twitter. Thank yo
  https://x.com/breckyunits please let us know via Twitter
 
 center
-viewSourceButton
+editButton
 scrollVersionLink
