@@ -3,7 +3,7 @@ buildConcepts books.json books.tsv books.csv
 permalink index.html
 replace BASE_URL ..
 title Books for Programmers
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
+viewSourceBaseUrl /edit.html?folderName=pldb.io&fileName=books/
 
 // A ScrollSet with information on books about programming languages
 
