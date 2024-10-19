@@ -63,7 +63,7 @@ body {
 }
 
 .trueBaseThemeHeader {
-  margin-top: 46px; /* so that header does not overlap with source icon */
+  padding-right: 80px; /* if the width of browser is narrow, save room for view source button */
   margin-bottom: 10px;
 }
 .trueBaseThemeHeader a {
