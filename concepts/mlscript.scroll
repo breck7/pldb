@@ -1,0 +1,50 @@
+../code/conceptPage.scroll
+
+id mlscript
+name MLscript
+appeared 2020
+creators Luyu Cheng and Lionel Parreaux
+tags pl
+webRepl https://hkust-taco.github.io/mlscript/
+lab HKUST
+paper https://dl.acm.org/doi/pdf/10.1145/3689746
+description A step towards rethinking pattern matching to make it more powerful and natural to use.
+writtenIn scala standard-ml typescript markdown json html javascript css nix yaml make
+
+influencedBy ml ocaml haskell standard-ml scala rust
+repoStats
+ firstCommit 2020
+ newestCommit 2024
+ commits 2130
+ committers 26
+ files 826
+country China
+
+example
+ type List[A] = Cons[A] | Nil
+ 
+ class Cons[out A](head: A, tail: List[A]) {
+   fun map: (A -> 'B) -> List['B]
+   map(f) = Cons of f(head), tail.map(f)
+ }
+ module Nil {
+   fun map(f) = Nil
+ }
+ 
+ fun (::) cons(x, xs) = Cons(x, xs)
+ 
+ fun show(xs) =
+   let rec go(xs) = if xs is
+     Cons(h, Nil) then String(h)
+     Cons(h, t)   then join(String(h), ", ", go(t))
+     Nil          then ""
+   join("[", go(xs), "]")
+ 
+ let xs = 1 :: 2 :: 3 :: Nil
+ 
+ show(xs)
+ 
+ show(xs.map of x => succ(x))
+ 
+
+githubRepo https://github.com/hkust-taco/mlscript/
