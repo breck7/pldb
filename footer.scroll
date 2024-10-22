@@ -4,6 +4,7 @@ buildTxt
 
 copyButtons
 
+center
 stumpNoSnippet
  div
   class trueBaseThemeFooter
@@ -35,9 +36,10 @@ stumpNoSnippet
   span ·
   a Acknowledgements
    href BASE_URL/pages/acknowledgements.html
-  span ·
-  a Part of the World Wide Scroll
-   href https://wws.scroll.pub
 
 BASE_URL/lists/autocompleteCombined.js
 script document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))
+
+center
+theScrollButton
+scrollVersionLink
