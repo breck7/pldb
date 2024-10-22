@@ -24,8 +24,7 @@ bashParser
  javascript
   compile() {
    const command = this.content
-   const file = this.root.file
-   const cwd = file.folderPath
+   const cwd = this.root.folderPath
    const output = require("child_process").execSync(command, {cwd})
    return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlock">${output.toString().trim()}</code></div>`
   }
