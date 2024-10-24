@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id moonbit
+name MoonBit
+appeared 2024
+tags pl
+website https://www.moonbitlang.cn
+webRepl https://try.moonbitlang.com
+description Intelligent developer platform for Cloud and Edge using WASM.
+lab International Digital Economy Academy
+fileExtensions mbt
+writtenIn mbt json markdown yaml toml bourne-shell
+
+docs https://docs.moonbitlang.com/
+repoStats
+ firstCommit 2024
+ newestCommit 2024
+ commits 1764
+ committers 68
+ files 378
+country China
+
+discord https://discord.gg/CVFRavvRav
+twitter https://x.com/moonbitlang
+youtubes http://www.youtube.com/@MoonBit_lang
+example
+ fn main {
+  println(@lib.hello())
+ }
+
+githubRepo https://github.com/moonbitlang/core
