@@ -30,3 +30,75 @@ example
  }
 
 githubRepo https://github.com/moonbitlang/core
+
+hasBooleans true
+ let a = true
+hasIntegers true
+ 42
+hasFloats true
+ 3.14
+hasOctals true
+ 0o1234
+hasHexadecimals true
+ 0XA
+hasMaps true
+ let map : Map[String, Int] = { "x": 1, "y": 2, "z": 3 }
+hasStructs true
+ struct User {
+  id: Int
+  name: String
+  mut email: String
+ }
+hasEnums true
+ enum Relation {
+  Smaller
+  Greater
+  Equal
+ }
+hasFunctions true
+ fn main {
+ }
+hasTypeAliases true
+ pub typealias Index = Int
+ typealias MapString[X] = Map[String, X]
+hasPatternMatching true
+hasOperatorOverloading true
+ struct T {
+   x:Int
+ } derive(Show)
+ 
+ fn op_add(self: T, other: T) -> T {
+   { x: self.x + other.x }
+ }
+ 
+ fn main {
+   let a = { x:0, }
+   let b = { x:2, }
+   println(a + b)
+ }
+hasPipes true
+ fn init {
+  x |> f     // 等价于 f(x)
+  x |> f(y)  // 等价于 f(x, y)
+  }
+hasBitWiseOperators true
+ 1 & 0
+hasExceptions true
+ type! DivError String
+ fn div(x: Int, y: Int) -> Int!DivError  {
+  if y == 0 {
+    raise DivError("division by zero")
+  }
+  x / y
+ }
+hasAccessModifiers true
+ pub struct R2 {       // 显式的公共结构
+  x: Int              // 隐式的公共字段
+  pub y: Int          // WARNING: `pub` 是多余的！
+  priv z: Int         // 显式的私有字段
+ }
+hasInterfaces true
+ trait Number {
+  op_add(Self, Self) -> Self
+  op_mul(Self, Self) -> Self
+ }
