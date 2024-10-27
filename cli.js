@@ -59,7 +59,7 @@ class PLDBCli extends ScrollSetCLI {
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
-    const { GitHubImporter } = require("../crawlers/github.com/GitHub.js")
+    const { GitHubImporter } = require("../../crawlers/github.com/GitHub.js")
     const importer = new GitHubImporter(this)
     await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
@@ -68,7 +68,7 @@ class PLDBCli extends ScrollSetCLI {
   async crawlRedditPLCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
-    const { RedditImporter } = require("../crawlers/reddit.com/Reddit.js")
+    const { RedditImporter } = require("../../crawlers/reddit.com/Reddit.js")
 
     const importer = new RedditImporter(this.concepts, this.conceptsFolder)
     await importer.createFromAnnouncementsCommand()
