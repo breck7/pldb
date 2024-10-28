@@ -9,6 +9,7 @@ const { ScrollFile, ScrollFileSystem, ScrollCli } = require("scroll-cli")
 const { ScrollSetCLI } = require("scroll-cli/ScrollSetCLI.js")
 const { execSync } = require("child_process")
 const semver = require("semver")
+const lodash = require("lodash")
 
 const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
@@ -78,7 +79,8 @@ class PLDBCli extends ScrollSetCLI {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
-    this.concepts.forEach(async file => {
+    const shuffled = lodash.shuffle(this.concepts)
+    shuffled.forEach(async file => {
       if (lang && lang !== file.id) return
       if (lang) console.log(`processing ${lang}`)
       const { mainRepo } = file
