@@ -6,6 +6,13 @@ appeared 2023
 creators Auke van Slooten
 tags queryLanguage library
 
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 122
+ committers 4
+ files 16
+
 example
  from(data.people)
  .select({
