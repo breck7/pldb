@@ -6,15 +6,29 @@ appeared 2004
 creators David Callahan and Hans Zima and Brad Chamberlain and John Plevyak
 tags pl arrayLang
 website https://chapel-lang.org/
-blog https://chapel-lang.org/whatsnew.html
+spec https://chapel-lang.org/docs/language/spec/index.html
+blog https://chapel-lang.org/blog/index.html
 releaseNotes https://chapel-lang.org/releaseNotes.html
-latestVersion 2.0.0
-lab Cray
+download https://chapel-lang.org/download.html
+latestVersion 2.2.0
+conferences https://chapel-lang.org/ChapelCon.html
+lab Cray Inc.
 fileExtensions chpl
-writtenIn chapel cpp c restructuredtext assembly-language python bash cmake bourne-shell make html m4 xml toml markdown perl json tex c-shell ocaml yaml pascal javascript css svg vim-script csharp dockerfile diff lisp llvmir protobuf ini fortran-90 objective-c fortran-77 dtd lex bazel ruby jupyter-notebook cuda php typescript rust csv yacc d haskell nix cython go java awk xslt julia sed
+interviews https://www.hpcwire.com/2024/09/04/whats-new-with-chapel-nine-questions-for-the-development-team/
+
+webRepl https://ato.pxeger.com/run?1=m70sOSOxIDVnwYKlpSVpuhY7y4syS1Jz8jSUPFJzcvJ1FMrzi3JSFJU0rSHyUGUw5QA
+maintainerOrganization HPE
+mainRepo https://github.com/chapel-lang/chapel
+standsFor Cascade High Productivity Language
+description Productive parallel computing at every scale
+writtenIn chapel cpp c bash make python
+compilesTo c
+related x10 fortress zpl unified-parallel-c
+influencedBy python zpl ada csharp java fortran cpp unified-parallel-c
 
 isOpenSource true
 tryItOnline https://tio.run/#chapel
+demoVideo https://youtu.be/Zdjgy0BlZxs?si=cR3B4oAJcHanOI00
 clocExtensions chpl
 fileType text
 wordRank 6683
@@ -41,6 +55,10 @@ subreddit https://reddit.com/r/chapel
  memberCount
   2022 12989
 twitter https://twitter.com/ChapelLanguage
+mastodon https://mastodon.social/@chapelprogramminglanguage
+discourse https://chapel.discourse.group/
+facebook https://www.facebook.com/ChapelLanguage/
+youtubes https://www.youtube.com/@chapellanguage
 leachim6 Chapel
  filepath c/Chapel.chpl
  fileExtensions chpl
@@ -62,23 +80,90 @@ githubRepo https://github.com/chapel-lang/chapel
 lineCommentToken //
 multiLineCommentTokens /* */
 printToken writeln
+assignmentToken =
+booleanTokens true false
+canReadCommandLineArgs true
+canWriteTotDisk true
 stringToken "
 
+hasArraySlicingSyntax true
+hasAssignment true
+ =
+hasAsyncAwait true
+ begin sync
+hasBinaryNumbers true
+hasBitWiseOperators true
+hasBooleans true
+ bool true false
+hasBoundedCheckedArrays true
+hasCaseInsensitiveIdentifiers false
+hasClasses true
+ class
 hasComments true
+hasConditionals true
+ if then else
+hasConstants true
+ param
+hasConstructors true
+ proc init
+hasDefaultParameters true
+hasDynamicSizedArrays true
+hasDynamicTyping false
+hasEnums true
+ enum color { red, green, blue=3 };
+hasEscapeCharacters true
+hasExceptions true
+ throw throws
+hasExplicitTypeCasting true
+ :
+hasFloats true
+ real
+hasForEachLoops true
+ foreach
+hasForLoops true
+ for
+hasFunctionOverloading true
+hasFunctions true
+ proc
+hasGenerics true
+hasGlobalScope false
+hasHexadecimals true
+hasImports
+ import use
+hasIncrementAndDecrementOperators false
+hasInheritance true
+hasIterators true
+ iter
 hasLineComments true
  // A comment
+hasModules true
+ module
 hasPrintDebugging true
 hasMultiLineComments true
  /* A comment
  */
+hasOperatorOverloading true
+hasRangeOperators true
+ ..
+hasReferences true
+ ref
+hasRequiredMainFunction false
 hasSemanticIndentation false
-hasCaseInsensitiveIdentifiers false
+hasStandardLibrary true
+hasStaticTyping true
 hasStrings true
  "Hello world"
+hasStructs true
+ record
+hasSwitch true
+ select
+hasTryCatch true
+ try catch
+hasTypeInference true
+hasTypeParameters true
+hasUnitsOfMeasure false
 hasWhileLoops true
-hasClasses true
-hasConstants true
-hasConditionals true
+ while do
 hasOctals true
  // 0[oO][0-7]+
 hasHexadecimals true
@@ -89,6 +174,7 @@ hasIntegers true
  // [0-9]+
 hasBinaryNumbers true
  // 0[bB][01]+
+isCaseSensitive true
 
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  related ada csharp c fortran java fortress unified-parallel-c x10 isbn
