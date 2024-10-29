@@ -12,21 +12,20 @@ releaseNotes https://chapel-lang.org/releaseNotes.html
 download https://chapel-lang.org/download.html
 latestVersion 2.2.0
 conferences https://chapel-lang.org/ChapelCon.html
-lab Cray Inc.
-fileExtensions chpl
-interviews https://www.hpcwire.com/2024/09/04/whats-new-with-chapel-nine-questions-for-the-development-team/
-
 webRepl https://ato.pxeger.com/run?1=m70sOSOxIDVnwYKlpSVpuhY7y4syS1Jz8jSUPFJzcvJ1FMrzi3JSFJU0rSHyUGUw5QA
 maintainerOrganization HPE
 mainRepo https://github.com/chapel-lang/chapel
 standsFor Cascade High Productivity Language
+lab Cray Inc.
 description Productive parallel computing at every scale
+fileExtensions chpl
+interviews https://www.hpcwire.com/2024/09/04/whats-new-with-chapel-nine-questions-for-the-development-team/
 writtenIn chapel cpp c bash make python
 compilesTo c
-related x10 fortress zpl unified-parallel-c
-influencedBy python zpl ada csharp java fortran cpp unified-parallel-c
 
 isOpenSource true
+related x10 fortress zpl unified-parallel-c
+influencedBy python zpl ada csharp java fortran cpp unified-parallel-c
 tryItOnline https://tio.run/#chapel
 demoVideo https://youtu.be/Zdjgy0BlZxs?si=cR3B4oAJcHanOI00
 clocExtensions chpl
@@ -82,10 +81,9 @@ multiLineCommentTokens /* */
 printToken writeln
 assignmentToken =
 booleanTokens true false
-canReadCommandLineArgs true
-canWriteTotDisk true
 stringToken "
 
+canReadCommandLineArgs true
 hasArraySlicingSyntax true
 hasAssignment true
  =
@@ -247,3 +245,5 @@ semanticScholar 19
  2019|Graph Algorithms in PGAS: Chapel and UPC++|10.1109/HPEC.2019.8916309|2|0|Louis Jenkins and J. Firoz and Marcin Zalewski and C. Joslyn and Mark Raugas|cf83d871185279c6b4108126b5710fc1cfd70376
  2021|Towards High Productivity and Performance for Irregular Applications in Chapel|10.1109/SCWS55283.2021.00012|2|0|Thomas B. Rolinger and Joseph Craft and Christopher D. Krieger and A. Sussman|8b1fb263b1e8b7ae3edf81ac2b2d3a13d18be553
  2018|ChplBlamer: A Data-centric and Code-centric Combined Profiler for Multi-locale Chapel Programs|10.1145/3205289.3205314|1|0|Hui Zhang and J. Hollingsworth|4fe4bc6f6332e63b653b1f4ffe73efedec7bdc6c
+
+canWriteTotDisk true
