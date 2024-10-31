@@ -7,6 +7,8 @@
     "build": "./cli.js buildParsersFile; scroll list | scroll build",
     "test": "scroll list | scroll test",
     "format": "scroll list | scroll format",
+    "pretty": "prettier --write .",
+    "pretty-check": "prettier --check .",
     "open": "open index.html",
     "up": "npm install scroll-cli@latest",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
@@ -42,6 +44,7 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
+    "prettier": "^3.3.3",
     "scroll-cli": "^144.0.0",
     "scrollsdk": "^87.0.0",
     "semver": "^7.6.2"
