@@ -3,6 +3,7 @@
 id rescript
 name Rescript
 appeared 2020
+creators Hongbo Zhang
 tags pl
 website https://rescript-lang.org/
 webRepl https://rescript-lang.org/try
@@ -31,6 +32,8 @@ leachim6 ReScript
  fileExtensions res
  example
   Js.log("Hello World")
+
+githubRepo https://github.com/rescript-lang/rescript-compiler
 
 lineCommentToken //
 printToken Js.log

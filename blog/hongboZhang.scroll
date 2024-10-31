@@ -1,0 +1,85 @@
+authors Breck Yunits
+ https://x.com/breckyunits Breck Yunits
+date 10/31/2024
+title A brief interview with Moonbit creator Hongbo Zhang
+
+interviewHeader.scroll
+
+css li a,.scrollParagraph a {color: black;} .links a {text-decoration: underline; color:black;}
+
+Moonbit builds fast Wasm. It is one of the fastest growing languages in PLDB, cracking the top 300 in less than 2 years. We got the chance to talk to Moonbit's creator, Hongbo Zhang, who explained to us why Moonbit exists and the effort that has gone into creating the language, compiler, and tooling behind it. Thank you for your time Hongbo!
+ dateline
+ https://www.moonbitlang.com/ Moonbit
+ ../concepts/wasm.html Wasm
+ https://x.com/bobzhang1988 Hongbo Zhang
+ ../lists/top1000.html top 300
+ class links
+
+***
+
+? What is new about Moonbit?
+
+## WASM
+The original target of MoonBit is Wasm. WebAssembly’s original promise was that many languages could be compiled to it and then run in the browser or other environments. The problem, however, is that existing languages such as Java and Go generate a huge amount of WebAssembly code when compiled, even when they’re just printing “Hello World”. Rust generates small amount of code but it has steep learning curve for average programmer
+ ../concepts/moonbit.html MoonBit
+ ../concepts/java.html Java
+ ../concepts/go.html Go
+ ../concepts/rust.html Rust
+
+MoonBit was built to fully deliver the advantage of WebAssembly. We say WebAssembly is safe and fast, but when Go is compiled to WebAssembly, it generates a very large amount of WebAssembly code, and it’s not fast anymore because the language semantics don’t match very well with the Golang, So we think there’s a opportunity, a big opportunity, to have a language that is designed for the WebAssembly semantics. MoonBit generates a code which is performance-wise comparable to Rust, and it also generates even smaller Wasm code than Rust.
+
+## AI
+MoonBit is also exploring the possibility of an AI-native language toolchain.
+
+MoonBit was created the same year that ChatGPT was released, in 2022. Since then, we have seen the potential of AI-assisted coding. Traditional programming languages (such as Python) are mostly designed to interact better with humans, while MoonBit is designed to communicate better with AI. The most common issues with AI-assisted code are security concerns (trained on potentially untrusted source code) and the illusion problem (the inability to understand context). MoonBit's AI-friendly language design aims to reduce these issues through advanced static analysis.
+ ../concepts/python.html Python
+
+As a developer platform, MoonBit deeply integrates its toolchain with AI. Our IDE has a built-in AI assistant for generating code, documentation, and tests, fixing errors, and suggesting code improvements. MoonBit's AI-native language + toolchain design is framing AI coding in a bottom-up way.
+
+***
+
+? What languages have most influenced Moonbit?
+
+In many ways, MoonBit takes inspiration from Rust and Go.
+
+It has pattern matching, static types and type inference, for example. MoonBit is a strongly typed language, like Rust, Kotlin and Java, which means it enforces strict rules about data types. MoonBit took the good parts of Rust, and we try to make it easy to learn.
+ ../features/hasPatternMatching.html pattern matching
+ ../features/hasStaticTyping.html static types
+ ../features/hasTypeInference.html type inference
+ ../concepts/kotlin.html Kotlin
+
+Where MoonBit diverges from Rust is that it ships with a garbage collector, which uses reference counting (RC) similar to Swift’s approach to garbage collecting. MoonBit uses state-of-the-art optimization techniques to eliminate the overhead of reference counting at compile time. So in memory heavy benchmarks, MoonBit performs similarly and sometimes even faster than high performance tracing garbage collector, significantly faster than Swift. This allows it to do automatic memory management.
+ ../features/hasGarbageCollection.html garbage collector
+ ../concepts/swift.html Swift
+
+Another advantage is that MoonBit has very fast compilation. One pain point of Rust is it takes a very long time to compile. MoonBit can compile the whole code in a very fast time like one or two orders of magnitude faster than the Rust compilation.
+
+The way MoonBit influenced by Golang is from the philosophy level: Keep the language simple and invest more in the tooling side. Go has a philosophy of less is more, and we think this is quite important. You have to make the language itself cohesive. We don’t want to continue adding to the syntax.
+
+***
+
+? What would be your advice to people just getting started in creating programming languages?
+
+Before MoonBit, I was the core contributor to the OCaml, created ReScript, and worked on Flow at Meta. For creating production-ready programming languages:
+ ../concepts/ocaml.html OCaml
+ ../concepts/rescript.html ReScript
+ ../concepts/flow.html Flow
+
+1. In my work overseeing the entire supply chain for ReScript, I learned the importance of the synergy between the compilation build system and IDE responsiveness. By considering these factors from the outset, it is possible to better avoid potential issues and enhance development efficiency.
+
+2. ReScript made me realize the importance of fast compilation. The compilation speed far exceeds that of similar tools. A 10% or 20% improvement may not create a strong user experience, but a tenfold increase becomes a significant advantage in speed and can be a major selling point to attract users. This is similar to how the popularity of Go is partly due to its fast compilation compared to C++.
+ ../concepts/cpp.html C++
+
+3. While working on Flow at Meta, I encountered extremely large codebases. Maintaining real-time responsiveness of the IDE in such vast codebases is a tremendous challenge, so a new language should enable the IDE to respond quickly and allow static analysis tools to rapidly understand the code.
+
+4. OCaml was initially designed for an academic audience, resulting in a steep learning curve, which poses certain bottlenecks for industrial applications. A new programming language must gain support from the industry.
+
+5. After leading the construction of the compiler, system language interoperability, standard library design, and IDE setup from 0 to 1, I found myself with a whole new perspective. Initially, I only understood knowledge in the field of programming languages but lacked a global view, not knowing how to layout or coordinate effectively.
+
+****
+
+hongbo.jpeg
+ caption Image source. Thank you for your time Hongbo!
+  https://www.linkedin.com/in/hongbo-zhang-a8574157/ Image source
+
+footer.scroll
