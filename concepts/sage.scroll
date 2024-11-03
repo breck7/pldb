@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+ 
+id sage
+name Sage
+creators Adam McDaniel
+tags pl
+webRepl https://adam-mcdaniel.github.io/sage-website/playgrounds/playground/
+docs https://adam-mcdaniel.github.io/sage-website/docs/getting-started/
+discord https://discord.gg/rSGkM4bcdP
+website https://adam-mcdaniel.github.io/sage-website/
+description Sage is a compiled language for anything from OS-dev to the web!
+
+githubRepo https://github.com/adam-mcdaniel/sage
+
+example
+ println("Hello, world!");
