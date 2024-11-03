@@ -28,7 +28,8 @@ All data and source code used to generate this site are on GitHub.
  https://github.com/breck7/pldb GitHub
 
 ## Web server
-PLDB is an entirely static site. PLDB.io is served via GitHub Pages. You can clone the source to PLDB and build it locally and use PLDB entirely offline on your own machine.
+PLDB is an entirely static site. PLDB.io is served via ScrollHub. You can clone the source to PLDB and build it locally and use PLDB entirely offline on your own machine.
+ https://hub.scroll.pub/ ScrollHub
 
 ## Acknowledgements
 This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
@@ -42,7 +43,7 @@ Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
 bash cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
 # Mirrors
-The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a GitHub Pages server. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a DigitalOcean server running ScrollHub. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
  ../concepts/url.html URL
  ../concepts/dns.html DNS
  ../concepts/ipv4.html IPv4
@@ -53,9 +54,9 @@ The URL for the official PLDB site is https://pldb.io. DNS will take that domain
  ../concepts/svg.html SVG
  ../concepts/json.html JSON
 
-In case there's a problem with GitHub pages, you should be able to access the exact same site locally by downloading the source from GitHub.
+In case there's a problem with ScrollHub, you should be able to access the exact same site locally by downloading the source.
 
-If GitHub Pages AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+If ScrollHub AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
 
 bashCode
  git clone https://github.com/breck7/pldb.git
