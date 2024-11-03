@@ -1,6 +1,6 @@
 {
   "name": "pldb",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "PLDB: a Programming Language Database",
   "main": "./pldb.json",
   "scripts": {
@@ -24,6 +24,10 @@
   },
   "bin": {
     "pldb": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://issues.pldb.io",
+    "email": "bugs@pldb.io"
   },
   "repository": {
     "type": "git",
