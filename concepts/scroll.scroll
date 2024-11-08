@@ -37,8 +37,9 @@ youtubes https://www.youtube.com/@breckyunits
 example
  title This is Scroll. The keyword for title is title.
  
- paragraph
-  Scroll is an extensible alternative to Markdown.
+ * Scroll is an extensible alternative to Markdown.
+ 
+ You extend it by writing parsers.
 subreddit https://www.reddit.com/r/WorldWideScroll/
 
 githubRepo https://github.com/breck7/scroll
