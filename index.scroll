@@ -16,10 +16,11 @@ br 2
 New Posts
  link ./blog/index.html
  class pldbHomepageLink
-loop
- tags blog/frontpage
- limit 5
- javascript `<a class="newPostLink" href="${item.relativePath}${item.file.scrollProgram.permalink}">${item.file.scrollProgram.title}</a><br>`
+posts blog/frontpage
+ limit 0 5
+  compose link <a class="newPostLink" href="{titleLink}">{title}</a>
+   printColumn link
+    join <br>
 
 </center>
 
