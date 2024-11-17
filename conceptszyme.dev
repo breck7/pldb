@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+ 
+id zyme
+name Zyme
+appeared 2024
+tags pl
+website https://zyme.dev/
+description an evolvable language for genetic programming
+webRepl https://zyme.dev/
+
+example
+ -- define macros using 'let' statements.
+ -- base instructions are all-capital four letter acronyms e.g. 'SCRA'.
+ let to_CONSOLE => SCRA ;
+ let insert_empty => SWAP INS1> SWAP INS1> ROTL ANDD SWAP DEL1 SWAP ;
+ let trim_motif => insert_empty |> |> ;
+ 
+ -- macros can take arguments.
+ let open_binding motif => WAIT motif | ;
+ let bind_target motif => LOAD motif | ;
+ 
+ -- each statement compiles to a strand: the primitive data structure.
+ -- we generate two strands each with a binding motif and a string.
+ -- %"..." produces a motif, and #"..." produces a string.
+ open_binding %"ABDDABCD" #"Secret!\n" ;
+ open_binding %"ABCDABCD" #"Hello Creatures.\n" ;
+ 
+ -- next, we generate a strand that binds another waiting open strand.
+ -- after binding, the target strand is trimmed and sent to the console.
+ bind_target %"ABCDABCD" trim_motif to_CONSOLE ;
