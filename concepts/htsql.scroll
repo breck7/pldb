@@ -1,17 +1,32 @@
 ../code/conceptPage.scroll
  
+
 id htsql
 name HTSQL
 appeared 2006
 creators Clark Evans and Kirill Simonov
 tags queryLanguage
 website https://www.htsql.org/
-description HTSQL is a comprehensive navigational query language for relational databases.
-docs https://www.htsql.org/doc/
 webRepl https://demo.htsql.org/
+description HTSQL is a comprehensive navigational query language for relational databases.
+
+docs https://www.htsql.org/doc/
+repoStats
+ firstCommit 2010
+ newestCommit 2020
+ commits 1242
+ committers 9
+ files 396
+
 twitter http://twitter.com/htsql
-
-githubRepo https://github.com/prometheusresearch/htsql
-
 example
  /school{name, count(department) :as '# of Dept.'}
+
+githubRepo https://github.com/prometheusresearch/htsql
+ stars 25
+ forks 5
+ subscribers 6
+ created 2020
+ updated 2024
+ description HTSQL is a comprehensive navigational query language for relational databases. HTSQL is designed for data analysts and other accidental programmers who have complex business inquiries to solve and need a productive tool to write and share database queries. HTSQL is free and open source software.
+ issues 2
