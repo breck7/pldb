@@ -1,0 +1,25 @@
+../code/conceptPage.scroll
+ 
+
+id surrealdb
+name SurrealDB
+appeared 2016
+tags queryLanguage
+website https://surrealdb.com/
+description SurrealDB is an end-to-end cloud-native database designed for modern applications, including web, mobile, serverless, Jamstack, backend, and traditional applications. With SurrealDB, you can simplify your database and API infrastructure, reduce development time, and build secure, performant apps quickly and cost-effectively.
+
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 3989
+ committers 146
+ files 1043
+
+example
+ UPDATE person SET
+    waist = <int> "34",
+    height = <float> 201,
+    score = <decimal> 0.3 + 0.3 + 0.3 + 0.1
+ ;
+
+githubRepo https://github.com/surrealdb/surrealdb

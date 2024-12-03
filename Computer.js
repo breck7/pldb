@@ -1622,7 +1622,12 @@ class Tables {
   getLanguageTemplate(absolutePath) {
     if (absolutePath.endsWith("conceptPage.scroll")) return ""
     const name = path.basename(absolutePath).replace(".scroll", "")
-    return this.getConceptPage(name).toScroll()
+    try {
+      return this.getConceptPage(name).toScroll()
+    } catch (err) {
+      console.error(`Error loading '${name}' in '${absolutePath}'`)
+      return ""
+    }
   }
 
   get measures() {
