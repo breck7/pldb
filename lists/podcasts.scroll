@@ -82,9 +82,9 @@ appleParser
  float sortIndex 1.71
  javascript
   computeValue(concept) {
-    // todo: fix binding bug so we can move this to abstract class
-    const count = concept.getFrom("https://podcasts.apple.com/")
-    return count ? parseInt(count.split(" ")[1]) : ""
+   // todo: fix binding bug so we can move this to abstract class
+   const count = concept.getFrom("https://podcasts.apple.com/")
+   return count ? parseInt(count.split(" ")[1]) : ""
   }
 
 youtubeLinkParser
@@ -109,9 +109,9 @@ pldbYoutubeParser
  string measureName youtube
  javascript
   computeValue(concept) {
-    // todo: fix binding bug so we can move this to abstract class
-    const count = concept.getFrom("https://www.youtube.com/")
-    return count ? parseInt(count.split(" ")[1]) : ""
+   // todo: fix binding bug so we can move this to abstract class
+   const count = concept.getFrom("https://www.youtube.com/")
+   return count ? parseInt(count.split(" ")[1]) : ""
   }
 
 id CoRecursive

@@ -40,7 +40,7 @@ primaryLinkParser
  float sortIndex 1.7
  javascript
   computeValue(concept) {
-    return concept.getOneOf("homepage gits twitter wikipedia pldbInterview".split(" ")) || ""
+   return concept.getOneOf("homepage gits twitter wikipedia pldbInterview".split(" ")) || ""
   }
 
 name Aaron Swartz
@@ -1855,16 +1855,20 @@ wikipedia https://en.wikipedia.org/wiki/%C3%89mile_Baudot
 country France
 
 name Adam McDaniel
-gits https://github.com/adam-mcdaniel
-country United States
 homepage https://adam-mcdaniel.net/
+gits https://github.com/adam-mcdaniel
 born 2002
+country United States
 
 name Ricardo Cabello
-gits https://github.com/mrdoob
 homepage https://ricardocabello.com
+gits https://github.com/mrdoob
 twitter https://x.com/mrdoob
 
 name Jarkko Oikarinen
 born 1967
 country Finland
+
+name Tobie Morgan Hitchcock
+twitter https://x.com/tobiemh
+country United Kingdom
