@@ -1,0 +1,146 @@
+../code/conceptPage.scroll
+
+id wa
+name Wa-lang
+appeared 2022
+creators Shushan Chai and Ernan Ding
+tags pl
+website https://wa-lang.org/
+blog https://wa-lang.org/smalltalk/
+download https://github.com/wa-lang/wa/releases/
+webRepl https://wa-lang.org/playground/
+aka 凹语言
+aka wa
+fileExtensions wa
+description Wa-lang is a general-purpose programming language designed for for WebAssembly. The goal is to provide a simple, reliable, easy-to-use, statically typed language for high-performance web applications. The code generator and runtime are fully independently developed (not dependent on external projects such as LLVM). Currently, Wa-lang is in the engineering trial stage.
+lab 武汉市江夏区凹语言开发工作室
+
+isOpenSource true
+writtenIn wa go assembly-language c javascript
+influencedBy c cpp go wasm
+
+docs https://wa-lang.org/man/
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 1604
+ committers 13
+ files 1451
+country China
+
+twitter https://x.com/wayuyan
+example
+  import "fmt"
+  
+  global year: i32 = 2023
+  
+  func main {
+      println("hello, Wa!")
+      println(add(40, 2), year)
+  
+      fmt.Println(1+1)
+  }
+  
+  func add(a: i32, b: i32) => i32 {
+      return a+b
+  }
+
+keywords break case const continue default defer else for func if import interface map range return struct switch type global
+
+githubRepo https://github.com/wa-lang/wa
+ stars 1313
+ forks 55
+ subscribers 24
+ created 2022
+ updated 2024
+ description The Wa programming language
+ issues 38
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+assignmentToken =
+stringToken "
+
+hasStrings true
+ "hello world"
+hasPointers true 
+ func main {
+   i, j := 42, 2701
+ 
+   p := &i         // point to i
+   println(*p) // read i through the pointer
+   *p = 21         // set i through the pointer
+   println(i)  // see the new value of i
+ 
+   p = &j         // point to j
+   *p = *p / 37   // divide j through the pointer
+   println(j) // see the new value of j
+ }
+ 
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+ c := true
+hasIntegers true
+ i, j := 42, 2701
+hasIncrementAndDecrementOperators true
+ i := 0
+ i++
+ i--
+hasImports true
+ import (
+    "math"
+    "strings"
+ )
+ import "strings" => .
+ import "io" => _
+ import "math" => m
+hasOperatorOverloading true
+  #wa:operator + MyInt_add
+  type MyInt :struct {
+      V: int
+  }
+  
+  func MyInt_add(x, y: MyInt) => int {
+      return x.V + y.V
+  }
+  func main {
+      x1 := MyInt{V: 100}
+      x2 := MyInt{V: 42}
+      println(x1 + x2)
+  }
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasVariadicFunctions true
+ // This variadic function takes an arbitrary number of ints as arguments.
+ func sum(nums: ...int) {
+   print("The sum of ", nums) // Also a variadic function.
+   total := 0
+   for _, num := range nums {
+     total += num
+   }
+   println(" is", total) // Also a variadic function.
+ }
+hasLineComments true
+ // A comment
+
+hasMessagePassing true
+hasPrintDebugging true
+hasAssignment true
+isCaseSensitive true
+hasConstants true
+hasSwitch true
+hasConditionals true
+hasOctals true
+ // 0[0-7]+
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F]+
+hasFloats true
+ // \d+(\.\d+[eE][+\-]?\d+|\.\d*|[eE][+\-]?\d+)
+hasStandardLibrary true
+ fmt.Println("Hello, World!")
