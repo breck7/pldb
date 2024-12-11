@@ -1,0 +1,23 @@
+<div id="emailBanner" class="banner">
+  <form onsubmit="handleSubmit(event)">
+    Join the PLDB email list: <input type="email" required>
+    <button type="submit">Join</button>
+  </form>
+ </div>
+css
+ .banner {
+   background: #f0f0f0;
+   padding: 10px;
+   text-align: center;
+ }
+ .hide { display: none; }
+script
+ if (localStorage.getItem('subscribed') !== 'true')
+  document.getElementById('emailBanner').classList.remove('hide');
+ function handleSubmit(e) {
+  e.preventDefault();
+  const email = e.target.querySelector('input').value;
+  window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=${email}`;
+  localStorage.setItem('subscribed', 'true');
+  document.getElementById('emailBanner').classList.add('hide');
+ }
