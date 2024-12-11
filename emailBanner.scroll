@@ -1,6 +1,6 @@
 <div id="emailBanner" class="banner">
   <form onsubmit="handleSubmit(event)">
-    Join the PLDB email list: <input type="email" required>
+    Join the PLDB email list:
     <button type="submit">Join</button>
   </form>
  </div>
@@ -16,7 +16,6 @@ script
   document.getElementById('emailBanner').classList.remove('hide');
  function handleSubmit(e) {
   e.preventDefault();
-  const email = e.target.querySelector('input').value;
   window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
   localStorage.setItem('subscribed', 'true');
   document.getElementById('emailBanner').classList.add('hide');
