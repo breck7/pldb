@@ -1,7 +1,7 @@
-<div id="emailBanner" class="banner">
+<div id="emailBanner" class="banner hide">
   <form onsubmit="handleSubmit(event)">
     Join the PLDB email list:
-    <button type="submit">Join</button>
+    <button type="submit">Join</button> <a onclick="hideEmailList()">❌</a>
   </form>
  </div>
 css
@@ -14,9 +14,12 @@ css
 script
  if (localStorage.getItem('subscribed') !== 'true')
   document.getElementById('emailBanner').classList.remove('hide');
+ function hideEmailList() {
+   localStorage.setItem('subscribed', 'true');
+  document.getElementById('emailBanner').classList.add('hide');
+ }
  function handleSubmit(e) {
   e.preventDefault();
   window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  localStorage.setItem('subscribed', 'true');
-  document.getElementById('emailBanner').classList.add('hide');
+   hideEmailList()
  }
