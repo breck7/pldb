@@ -13,7 +13,7 @@ wideColumns 1
 
 code/ciBadges.scroll
 
-PLDB is a public domain ScrollSet and website containing over 135,000 facts about over 4,000 programming languages.
+PLDB is a public domain ScrollSet and website containing over 135,000 facts about over 5,000 programming languages.
 
 This repo contains the entire ScrollSet, code, and website for https://pldb.io.
 
@@ -22,28 +22,6 @@ The entire ScrollSet is ready to analyze in popular formats. Full documentation 
 - As CSV: https://pldb.io/pldb.csv
 - As TSV: https://pldb.io/pldb.tsv
 - As JSON: https://pldb.io/pldb.json
-
-## To add a new language
-
-### Local Method:
-- Clone the repo locally.
-- Create a new Scroll file `concepts/[newId].scroll`.
-- Use the Designer if you need autocomplete help (recommended):
- https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io%2Fconcepts%2Ftxt.scroll Designer
-- Send a Pull Request
-
-### Web Method:
-- Fork this repo
-- Visit https://github.com/[yourGithubUserName]/pldb/new/main/concepts
-- Use the Designer if you need autocomplete help (recommended):
- https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io
-- Send a Pull Request
-
-## To update a language
-Edit the corresponding `concepts/*.scroll` file and send a pull request.
-
-## To add a new measure
-Update the file `code/measures.parsers` and add at least 1 measurement to a concept in `concepts` and send a pull request.
 
 ## To build the site locally
 code
