@@ -898,7 +898,7 @@ image ${image}
       tiktok: this.getPrimary("tiktoks"),
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
-      edit: `/edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`}
+      edit: `/edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`
     }
     return Object.keys(links)
       .filter(key => links[key])
