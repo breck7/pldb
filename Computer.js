@@ -898,11 +898,7 @@ image ${image}
       tiktok: this.getPrimary("tiktoks"),
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
-      edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
-        new Particle(
-          `url /edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`
-        ).toString()
-      )}`
+      edit: `/edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`}
     }
     return Object.keys(links)
       .filter(key => links[key])
