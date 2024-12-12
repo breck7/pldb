@@ -1,104 +1,101 @@
-# PLDB: A Programming Language Database
+# PLDB - A Programming Language Database
 
-[View this README as HTML](https://pldb.io/readme.html)
+[![Build Status](https://github.com/breck7/pldb/workflows/Tests/badge.svg)](https://github.com/breck7/pldb/actions)
 
-PLDB is a public domain ScrollSet and website, compiling over 135,000 facts about 4,000+ programming languages. This repository hosts the entire ScrollSet, codebase, and website for [https://pldb.io](https://pldb.io).
+PLDB is a comprehensive public domain database containing over 135,000 facts about more than 5,000 programming languages. The project includes both the complete dataset and the website code for [pldb.io](https://pldb.io).
 
----
+## 🌟 Key Features
 
-## 📂 Downloading the Data
+- **Rich Dataset**: Extensive information about programming languages, from high-level formats to binary specifications
+- **Multiple Export Formats**: Access the complete dataset in CSV, TSV, or JSON format
+- **Public Domain**: All data and code is freely available for any use
+- **Regular Updates**: Actively maintained with version control and release notes
+- **Web Interface**: Browse the data through an intuitive web interface at [pldb.io](https://pldb.io)
 
-The PLDB data is available in popular formats, with [full documentation](https://pldb.io/csv.html):
+## 📊 Data Downloads
 
-- **CSV**: [pldb.csv](https://pldb.io/pldb.csv)
-- **TSV**: [pldb.tsv](https://pldb.io/pldb.tsv)
-- **JSON**: [pldb.json](https://pldb.io/pldb.json)
+Access the complete dataset in your preferred format:
 
----
+- **CSV**: [pldb.io/pldb.csv](https://pldb.io/pldb.csv)
+- **TSV**: [pldb.io/pldb.tsv](https://pldb.io/pldb.tsv)
+- **JSON**: [pldb.io/pldb.json](https://pldb.io/pldb.json)
 
-## 📜 Contributing
+Full documentation for the data formats is available at [pldb.io/csv.html](https://pldb.io/csv.html)
 
-### Adding a New Language
+## 🚀 Local Development
 
-#### Local Method
-
-1. Clone the repository.
-2. Create a new `.scroll` file in `concepts/` (e.g., `concepts/[newId].scroll`).
-3. [Use the Designer](https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io%2Fconcepts%2Ftxt.scroll) for autocomplete support.
-4. Submit a pull request.
-
-#### Web Method
-
-1. Fork this repository.
-2. Visit: `https://github.com/[yourGithubUserName]/pldb/new/main/concepts`
-3. [Use the Designer](https://sdk.scroll.pub/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.parsers%0AprogramUrl%20https%3A%2F%2Fpldb.io).
-4. Submit a pull request.
-
-### Updating a Language
-
-Click the edit button on the top right of a page and edit the language.
-
-### Adding a New Measure
-
-Modify `code/measures.parsers` and add at least one measurement in a `concepts` file, then submit a pull request.
-
----
-
-## 🚀 Building the Site Locally
+Get started with local development:
 
 ```bash
+# Clone the repository
 git clone https://github.com/breck7/pldb
 cd pldb
-# Install dependencies (initial setup)
+
+# First-time setup
 npm i -g cloc
 npm install .
-# Run tests (optional)
+
+# (Optional) Run tests
 npm run test
+
 # Build the site
 npm run build
-# Format changes before committing
+
+# Before committing changes
 npm run format
 ```
 
-## 🔍 Repository Structure
+## 📁 Repository Structure
 
-- **`concepts`**: Contains the ScrollSet with one file per language/concept.
-- **`code/measures.parsers`**: Defines the schema for measurements in the ScrollSet.
-- **Language Stats**: See detailed language statistics at [PLDB Stats](https://pldb.io/pages/about.html).
+The most important components of the repository:
 
----
+- `concepts/`: Contains the ScrollSet (individual files for each concept)
+- `code/measures.parsers`: Contains the Parsers (schema) for the ScrollSet
+- View detailed language statistics at [pldb.io/pages/about.html](https://pldb.io/pages/about.html)
 
-## 📄 Citation
+## 🏆 Rankings
 
-All sources for PLDB are listed on the [Acknowledgements](https://pldb.io/pages/acknowledgements.html) page.
+PLDB includes a sophisticated ranking system for programming languages based on five key metrics:
 
----
+- Number of estimated users
+- Foundation score (languages built using this language)
+- Estimated job opportunities
+- Language influence
+- Available measurements
 
-## 💬 About PLDB
+Learn more about the ranking algorithm at [pldb.io/pages/the-rankings-algorithm.html](https://pldb.io/pages/the-rankings-algorithm.html)
 
-PLDB is a comprehensive database on programming languages for:
+## 📜 Version History
 
-1. **Programming Language Creators**: Discover data-driven insights to enhance language design by referencing historical data from thousands of languages.
-2. **Programming Language Users**: Gain a strategic perspective on the programming language landscape to advance projects and career goals.
+Latest major releases:
 
-[Get Involved](https://pldb.io/join.html) | [GitHub Repository](https://github.com/breck7/pldb)
+- **9.0.0** (May 2024): Migrated to Scroll 84
+- **8.0.0** (March 2023): Upgraded to TrueBase 9
+- See [Release Notes](https://pldb.io/releaseNotes.html) for complete history
 
-### Acknowledgements
+## 🤝 Contributing
 
-PLDB is powered by many contributors and various open-source projects. Thank you to all! Full list on the [Acknowledgements](https://pldb.io/pages/acknowledgements.html) page.
+Contributions are welcome! PLDB is designed for two main audiences:
 
-### Rankings Algorithm
+1. **Programming Language Creators**: Use our organized data to make informed design decisions
+2. **Programming Language Users**: Get data-driven insights about the programming language ecosystem
 
-PLDB ranks languages based on a composite score from five broad categories. The ranking algorithm details can be explored in [The Rankings Algorithm](https://pldb.io/pages/the-rankings-algorithm.html).
+## 📚 Resources
 
----
+- **Main Website**: [pldb.io](https://pldb.io)
+- **About Page**: [pldb.io/pages/about.html](https://pldb.io/pages/about.html)
+- **Acknowledgements**: [pldb.io/pages/acknowledgements.html](https://pldb.io/pages/acknowledgements.html)
 
-## 📝 Release Notes
+## 📖 Citation
 
-See major updates and breaking changes in the [Release Notes](https://pldb.io/releaseNotes.html).
+This project is dedicated to the public domain. When using PLDB, we appreciate attribution but it's not required. All sources are listed at [pldb.io/pages/acknowledgements.html](https://pldb.io/pages/acknowledgements.html).
 
----
+## 🌐 Mirrors
 
-## History
+The primary site is hosted at [pldb.io](https://pldb.io) via ScrollHub. For offline access or redundancy, you can clone the repository and build locally:
 
-Originally launched by Breck Yunits in 2017.
+```bash
+git clone https://github.com/breck7/pldb.git
+cd pldb
+git pull  # To keep updated
+```
