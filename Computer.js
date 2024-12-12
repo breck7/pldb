@@ -900,7 +900,7 @@ image ${image}
       twitter: this.get("twitter"),
       edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
         new Particle(
-          `url https://pldb.io/pldb.parsers\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
+          `url /edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`
         ).toString()
       )}`
     }
