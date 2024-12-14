@@ -1,13 +1,15 @@
 ../code/conceptPage.scroll
 
 id org
-name Org
+name Org Mode
 appeared 2003
 creators Carsten Dominik
 tags textMarkup
 website https://orgmode.org/
 description Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
 lab https://list.orgmode.org/
+leetSheets https://orgmode.org/orgcard.pdf
+fileExtensions org
 
 isOpenSource true
 fileType text
