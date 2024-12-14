@@ -6,18 +6,31 @@ appeared 2003
 creators Carsten Dominik
 tags textMarkup
 website https://orgmode.org/
+releaseNotes https://orgmode.org/Changes.html
 description Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
 lab https://list.orgmode.org/
-leetSheets https://orgmode.org/orgcard.pdf
 fileExtensions org
+leetSheets https://orgmode.org/orgcard.pdf
 
 isOpenSource true
+irc https://web.libera.chat/#org-mode
+faq https://orgmode.org/worg/org-faq.html
+emailList https://lists.gnu.org/mailman/listinfo/emacs-orgmode
 fileType text
 wordRank 4476
 docs https://orgmode.org/manual/
+repoStats
+ firstCommit 2008
+ newestCommit 2024
+ commits 28240
+ committers 895
+ files 299
 country The Netherlands and France
 reference https://orgmode.org/org.html#Document-structure
 
+subreddit https://www.reddit.com/r/orgmode/
+ memberCount
+  2024 23000
 rijuRepl https://riju.codes/org
  example
   Hello, world!
@@ -203,6 +216,8 @@ leachim6 Org-mode
  example
   Hello World
   
+
+gitRepo https://git.savannah.gnu.org/git/emacs/org-mode.git
 
 hasSemanticIndentation true
 
