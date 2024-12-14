@@ -1,0 +1,20 @@
+../code/conceptPage.scroll
+
+id opml
+name OPML
+appeared 2000
+creators Dave Winer
+tags xmlFormat
+website https://opml.org/
+standsFor Outline Processor Markup Language
+
+example
+ <outline text="Great Plains">
+  <outline text="Kansas"/>
+  <outline text="Nebraska"/>
+  <outline text="North Dakota"/>
+  <outline text="Oklahoma"/>
+  <outline text="South Dakota"/>
+ </outline>
+
+wikipedia https://en.wikipedia.org/wiki/OPML
