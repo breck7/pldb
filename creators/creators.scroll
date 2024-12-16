@@ -2,46 +2,7 @@ buildConcepts creators.json creators.tsv creators.csv
 
 // A ScrollSet with information on programming language creators
 
-nameParser
- extends abstractIdParser
-homepageParser
- extends abstractUrlMeasureParser
- float sortIndex 1.1
-gitsParser
- description A link to their GitHub or GitLab or other Git portfolio.
- extends abstractUrlMeasureParser
- float sortIndex 1.2
-pldbInterviewParser
- description A link to their PLDB interview.
- extends abstractUrlMeasureParser
- float sortIndex 1.21
-twitterParser
- extends abstractUrlMeasureParser
- float sortIndex 1.3
-bornParser
- atoms measureNameAtom yearAtom
- extends abstractIntegerMeasureParser
- float sortIndex 1.4
-diedParser
- atoms measureNameAtom yearAtom
- description Thank you for your gifts.
- extends abstractIntegerMeasureParser
- float sortIndex 1.41
-wikipediaParser
- extends abstractUrlMeasureParser
- float sortIndex 1.6
-countryParser
- extends abstractStringMeasureParser
- float sortIndex 1.6
-primaryLinkParser
- boolean isComputed true
- extends abstractUrlMeasureParser
- description What is a good primary link?
- float sortIndex 1.7
- javascript
-  computeValue(concept) {
-   return concept.getOneOf("homepage gits twitter wikipedia pldbInterview".split(" ")) || ""
-  }
+creators.parsers
 
 name Aaron Swartz
 homepage http://aaronsw.com
