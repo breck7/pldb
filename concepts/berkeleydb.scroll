@@ -3,10 +3,17 @@
 id berkeleydb
 name Berkeley DB
 appeared 1991
+creators Keith Bostic and Margo Seltzer
 tags library
 description The Berkeley Database (Berkeley DB) is an embedded database system that can be used in applications requiring high-performance concurrent storage and retrieval of key/value pairs. The software is distributed as a library that can be linked directly into an application. It provides a variety of programmatic interfaces, including callable APIs for C, C++, Perl, Tcl and Java. Users may download Berkeley DB from Sleepycat Software’s Web site, at www.sleepycat.com.
 lab Sleepycat Software
 
-fileType text
 country United States
 reference http://static.usenix.org/event/usenix99/full_papers/olson/olson.pdf
+
+wikipedia https://en.wikipedia.org/wiki/Berkeley_DB
+ summary Berkeley DB (BDB) is a software library intended to provide a high-performance embedded database for key/value data. Berkeley DB is written in C with API bindings for C++, C#, Java, Perl, PHP, Python, Ruby, Smalltalk, Tcl, and many other programming languages. BDB stores arbitrary key/data pairs as byte arrays, and supports multiple data items for a single key. Berkeley DB is not a relational database.BDB can support thousands of simultaneous threads of control or concurrent processes manipulating databases as large as 256 terabytes, on a wide variety of operating systems including most Unix-like and Windows systems, and real-time operating systems.  BDB was commercially supported and developed by Sleepycat Software from 1996 to 2006.  This company was acquired by Oracle Corporation in February 2006, which continues to develop and sell Berkeley DB.  Under Oracle's stewardship, "Berkeley DB" has become a common brand name for three distinct products: Oracle Berkeley DB, Berkeley DB Java Edition, and Berkeley DB XML.  These three products all share a common ancestry and are currently under active development.
+ backlinksCount 190
+ pageId 4706
+ dailyPageViews 150
+ appeared 1994
