@@ -1,0 +1,20 @@
+../code/conceptPage.scroll
+ 
+id pkl
+name Pkl
+tags pl
+website https://pkl-lang.org
+description A configuration as code language with rich validation and tooling.
+compilesTo yaml json plist java-properties
+lab Apple
+
+githubRepo https://github.com/apple/pkl
+
+example
+ name = "Swallow"
+ 
+ job {
+   title = "Sr. Nest Maker"
+   company = "Nests R Us"
+   yearsOfExperience = 2
+ }
