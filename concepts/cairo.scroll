@@ -1,0 +1,22 @@
+../code/conceptPage.scroll
+
+id cairo
+name Cairo
+appeared 2020
+webRepl https://www.cairo-lang.org/cairovm/
+tags pl contractLanguage
+website https://www.cairo-lang.org
+description The Rust-inspired language that makes it easy to build scalable dApps with the power of validity proofs. Cairo lets you write provable programs without requiring a deep understanding of the underlying ZK concepts. From onchain gaming to provable ML, Cairo makes building trustless applications possible. Cairo is also the smart-contract language of Starknet, an L2 blockchain that is verified over Ethereum.
+influencedBy rust
+twitter https://twitter.com/CairoLang
+
+
+githubRepo https://github.com/starkware-libs/cairo
+
+example
+ use core::felt252;
+ 
+ fn main() -> felt252 {
+     let n = 2 + 3;
+     n
+ }
