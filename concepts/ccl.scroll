@@ -2,12 +2,19 @@
 
 id ccl
 name CCL
-appeared 2025
+appeared 2024
 creators Dmitrii Kovanikov
 tags pl
 standsFor Categorical Configuration Language
 description A configuration language.
+writtenIn ocaml markdown
 
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 32
+ committers 1
+ files 37
 country United Kingdom
 reference https://chshersh.com/blog/2025-01-06-the-most-elegant-configuration-language.html
 
@@ -33,3 +40,10 @@ example
    createdAt = 2024-12-31
 
 githubRepo https://github.com/chshersh/ccl
+ stars 87
+ forks 0
+ subscribers 3
+ created 2024
+ updated 2025
+ description 📜 CCL: Categorical Configuration Language, The most elegant configuration language
+ issues 0
