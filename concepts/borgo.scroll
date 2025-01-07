@@ -2,15 +2,20 @@
 
 id borgo
 name Borgo
-appeared 2024
+appeared 2023
 creators Marco Sampellegrini
 tags pl
 website https://borgo-lang.github.io/
+webRepl https://borgo-lang.github.io/
 description A language for writing applications that is more expressive than Go but less complex than Rust.
 compilesTo go
-webRepl https://borgo-lang.github.io/
 
-githubRepo https://github.com/borgo-lang/borgo
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 170
+ committers 2
+ files 386
 
 example
  use fmt
@@ -42,3 +47,12 @@ example
  
      fmt.Println(msg)
  }
+
+githubRepo https://github.com/borgo-lang/borgo
+ stars 4261
+ forks 58
+ subscribers 31
+ created 2023
+ updated 2025
+ description Borgo is a statically typed language that compiles to Go.
+ issues 29

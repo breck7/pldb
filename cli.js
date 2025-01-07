@@ -75,6 +75,12 @@ class PLDBCli extends ScrollSetCLI {
     await importer.createFromAnnouncementsCommand()
   }
 
+  async allCommand(lang) {
+    await this.crawlGitsCommand(lang)
+    await this.crawlGitHubCommand(lang)
+    await this.addWrittenIn(lang)
+  }
+
   async crawlGitsCommand(lang) {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
