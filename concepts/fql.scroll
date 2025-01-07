@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id fql
+name Foundation Query Language
+appeared 2024
+creators Jon Anderson
+tags queryLanguage
+description Foundation DB Query Language
+
+githubRepo https://github.com/janderland/fql
+
+example
+ /some/where("home", "town", 88.3)=clear
