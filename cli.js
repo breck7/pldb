@@ -78,7 +78,7 @@ class PLDBCli extends ScrollSetCLI {
   async allCommand(lang) {
     await this.crawlGitsCommand(lang)
     await this.crawlGitHubCommand(lang)
-    await this.addWrittenIn(lang)
+    await this.addWrittenInCommand(lang)
   }
 
   async crawlGitsCommand(lang) {
