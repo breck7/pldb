@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id borgo
+name Borgo
+appeared 2024
+creators Marco Sampellegrini
+tags pl
+website https://borgo-lang.github.io/
+description A language for writing applications that is more expressive than Go but less complex than Rust.
+compilesTo go
+webRepl https://borgo-lang.github.io/
+
+githubRepo https://github.com/borgo-lang/borgo
+
+example
+ use fmt
+ 
+ enum NetworkState<T> {
+     Loading,
+     Failed(int),
+     Success(T),
+ }
+ 
+ struct Response {
+     title: string,
+     duration: int,
+ }
+ 
+ fn main() {
+     let res = Response {
+         title: "Hello world",
+         duration: 0,
+     }
+ 
+     let state = NetworkState.Success(res)
+ 
+     let msg = match state {
+         NetworkState.Loading => "still loading",
+         NetworkState.Failed(code) => fmt.Sprintf("Got error code: %d", code),
+         NetworkState.Success(res) => res.title,
+     }
+ 
+     fmt.Println(msg)
+ }
