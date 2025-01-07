@@ -2,17 +2,22 @@
 
 id cairo
 name Cairo
-appeared 2020
-webRepl https://www.cairo-lang.org/cairovm/
+appeared 2022
 tags pl contractLanguage
 website https://www.cairo-lang.org
+webRepl https://www.cairo-lang.org/cairovm/
 description The Rust-inspired language that makes it easy to build scalable dApps with the power of validity proofs. Cairo lets you write provable programs without requiring a deep understanding of the underlying ZK concepts. From onchain gaming to provable ML, Cairo makes building trustless applications possible. Cairo is also the smart-contract language of Starknet, an L2 blockchain that is verified over Ethereum.
+writtenIn rust asciidoc toml json markdown bourne-shell yaml html
+
 influencedBy rust
+repoStats
+ firstCommit 2022
+ newestCommit 2025
+ commits 6535
+ committers 183
+ files 1492
+
 twitter https://twitter.com/CairoLang
-
-
-githubRepo https://github.com/starkware-libs/cairo
-
 example
  use core::felt252;
  
@@ -20,3 +25,12 @@ example
      let n = 2 + 3;
      n
  }
+
+githubRepo https://github.com/starkware-libs/cairo
+ stars 1658
+ forks 541
+ subscribers 19
+ created 2022
+ updated 2025
+ description Cairo is the first Turing-complete language for creating provable programs for general computation.
+ issues 105
