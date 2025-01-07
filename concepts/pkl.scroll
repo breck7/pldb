@@ -1,14 +1,21 @@
 ../code/conceptPage.scroll
- 
+
 id pkl
 name Pkl
+appeared 2024
 tags pl
 website https://pkl-lang.org
 description A configuration as code language with rich validation and tooling.
-compilesTo yaml json plist java-properties
 lab Apple
+writtenIn java kotlin html asciidoc gradle javascript json yaml xml bourne-shell markdown css toml svg dtd
+compilesTo yaml json plist java-properties
 
-githubRepo https://github.com/apple/pkl
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 456
+ committers 65
+ files 3182
 
 example
  name = "Swallow"
@@ -18,3 +25,12 @@ example
    company = "Nests R Us"
    yearsOfExperience = 2
  }
+
+githubRepo https://github.com/apple/pkl
+ stars 10459
+ forks 284
+ subscribers 56
+ created 2024
+ updated 2025
+ description A configuration as code language with rich validation and tooling.
+ issues 145
