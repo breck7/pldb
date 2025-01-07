@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id acsv
+name Annotated CSV
+appeared 2020
+tags dataNotation
+website https://docs.influxdata.com/influxdb/cloud/reference/syntax/annotated-csv/
+description CSV with additional headers up top for metadata about the columns.
+related csv
+
+example
+ #group,false,false,false,false,false,false,false,false,false
+ #datatype,measurement,tag,string,double,boolean,long,unsignedLong,duration,dateTime
+ #default,test,annotatedDatatypes,,,,,,
+ ,m,name,s,d,b,l,ul,dur,time
+ ,,,str1,1.0,true,1,1,1ms,1
+ ,,,str2,2.0,false,2,2,2us,2020-01-11T10:10:10Z
