@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id ccl
+name CCL
+appeared 2025
+creators Dmitrii Kovanikov
+tags pl
+standsFor Categorical Configuration Language
+description A configuration language.
+
+country United Kingdom
+reference https://chshersh.com/blog/2025-01-06-the-most-elegant-configuration-language.html
+
+example
+ /= This is a CCL document
+ title = CCL Example
+ 
+ database =
+   enabled = true
+   ports =
+     = 8000
+     = 8001
+     = 8002
+   limits =
+     cpu = 1500mi
+     memory = 10Gb
+ 
+ user =
+   guestId = 42
+ 
+ user =
+   login = chshersh
+   createdAt = 2024-12-31
+
+githubRepo https://github.com/chshersh/ccl
