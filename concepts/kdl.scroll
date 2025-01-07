@@ -2,13 +2,20 @@
 
 id kdl
 name KDL
+appeared 2020
 tags pl
 website https://kdl.dev
-description KDL is a small, pleasant document language with XML-like node semantics that looks like you're invoking a bunch of CLI commands! It's meant to be used both as a serialization format and a configuration language, much like JSON, YAML, or XML.
-webRepl https://kdl.dev/play/
 spec https://github.com/kdl-org/kdl/blob/main/SPEC.md
+webRepl https://kdl.dev/play/
+description KDL is a small, pleasant document language with XML-like node semantics that looks like you're invoking a bunch of CLI commands! It's meant to be used both as a serialization format and a configuration language, much like JSON, YAML, or XML.
+writtenIn markdown svg yaml python json xml
 
-githubRepo https://github.com/kdl-org/kdl
+repoStats
+ firstCommit 2020
+ newestCommit 2025
+ commits 359
+ committers 55
+ files 596
 
 example
  package {
@@ -43,3 +50,12 @@ example
      }
    }
  }
+
+githubRepo https://github.com/kdl-org/kdl
+ stars 1231
+ forks 65
+ subscribers 27
+ created 2020
+ updated 2025
+ description the kdl document language specifications
+ issues 24
