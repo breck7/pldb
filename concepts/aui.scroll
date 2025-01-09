@@ -1,28 +1,10 @@
 ../code/conceptPage.scroll
 
 id aui
-name AUI
-appeared 2002
-creators Kevin A. Schneider and James R. Cordy
-standsFor Abstract User Interface
-tags pl
-lab University of Saskatchewan && Queen's University
-description a programming language for developing plastic interactive software
+name aUI
+appeared 1952
+creators W. John Weilgart
+tags constructedLanguage
+description "The Language of Space", connoting universal communication. aUI is built upon a set of proposed universal semantic primes or elements of meaning that are combined – analogous to the atomic elements of the periodic table – to create ‘molecules of meaning.’ Each ‘element of meaning’ is represented by both a morpheme and a phoneme, all of which are motivated by their intuitive relationship to reality. Weilgart found these fundamental concepts to be at such a basic level that they likely could not be defined by any simpler concepts. aUI has 31 morpheme-phonemes each with an associated meaning, i.e. each morpheme = a phoneme = a sememe.
 
-country Canada
-reference https://semanticscholar.org/paper/4ca9970ceade9580757916d20bc4a1bf19688860
-
-hopl https://hopl.info/showlanguage.prx?exp=5777
-
-example
- draw (canvas <w,h> pins) =
- choose {
- canvas <w,h> pins,
- draw (canvas <w,h> (pin:pins))
- }
- where
- pin = <g,<30,24>>
- g = choose {box <30,20> (Fill Shaded),
- oval (Radius 15) (Fill Clear),
- line (Length 10)}
- end where
+wikipedia https://en.wikipedia.org/wiki/AUI_(constructed_language)
