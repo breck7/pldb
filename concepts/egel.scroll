@@ -1,37 +1,13 @@
 ../code/conceptPage.scroll
 
-id egel
-name egel
+id Egel
+name Egel
 appeared 2016
-tags interpreter
+creators Marco Devillers
+tags pl functional
 website https://egel-lang.github.io/
-latestVersion v0.1.10
-description <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
-lab https://github.com/egel-lang
-writtenIn c bourne-shell m4 markdown cpp make cmake svg python yaml vim-script tex pascal html protobuf
+description untyped eager functional language
+fileExtensions eg
+writtenIn C++
 
-isOpenSource true
-tryItOnline https://tio.run/#egel
-fileType text
-rosettaCode http://www.rosettacode.org/wiki/Category:Egel
-repoStats
- firstCommit 2016
- commits 986
- committers 5
- files 506
- newestCommit 2024
-country Unknown
-
-twitter https://twitter.com/egel_language
-
-githubRepo https://github.com/egel-lang/egel
- firstCommit 2016
- stars 80
- forks 4
- subscribers 2
- created 2016
- updated 2024
- description The Egel Programming Language
- issues 0
-
-domainName egel-lang.github.io
+gitRepo https://github.com/egel-lang/
