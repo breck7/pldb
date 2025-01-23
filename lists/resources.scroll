@@ -7,7 +7,7 @@ printTitle
 container
 # Communities
 A list of active communities of interest to Programming Language Designers
-table
+datatable
  delimiter |
  printTable
  data
@@ -31,7 +31,7 @@ table
 
 # Journals
 A list of academic journals about programming language theory and design.
-table
+datatable
  delimiter |
  printTable
  data
@@ -47,7 +47,7 @@ table
 PLDB is not the only site that publishes rankings of programming languages. Below is a list of the other ones. Wikipedia has a page on the concept.
  https://en.wikipedia.org/wiki/Measuring_programming_language_popularity concept
  https://pldb.io/lists/top1000.html rankings of programming languages
-table
+datatable
  delimiter |
  printTable
  data
@@ -58,7 +58,7 @@ table
 
 # Classes
 Classes on designing programming languages.
-table
+datatable
  delimiter |
  printTable
  data
@@ -71,12 +71,12 @@ table
 
 # Competitions
 A list of active programming competition sites.
-table competitions.tsv
+datatable competitions.tsv
  printTable
 
 # Programming Language Book Publishers
 A list of publishers who publish books about programming languages.
-table
+datatable
  delimiter |
  printTable
  data
@@ -102,7 +102,7 @@ table
 
 # Jobs
 Looking for a programming job? Here are some sites for finding one.
-table
+datatable
  delimiter |
  printTable
  data
@@ -139,7 +139,7 @@ table
   ZipRecruiter|https://www.ziprecruiter.com/
 
 # Free programming eBooks
-table
+datatable
  delimiter ,
  printTable
  data

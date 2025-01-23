@@ -24,7 +24,7 @@ css
 
 container
 
-table books.csv
+datatable books.csv
  rename bookTitle title
   links homepage source pdf
    select title authors links year pages languagesUsed publisher

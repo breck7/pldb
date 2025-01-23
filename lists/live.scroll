@@ -17,7 +17,7 @@ endColumns
 // A ScrollSet with information on top programmer livestreams
 
 wideColumn
-table live.tsv
+datatable live.tsv
  select name started twitchUrl twitchUrl_subscribers youtubeUrl youtubeUrl_subscribers
   rename youtubeUrl_subscribers YouTubeSubs twitchUrl_subscribers TwitchSubs
    orderBy -TwitchSubs

@@ -582,7 +582,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
         subparticle.set("repoLink", subparticle.get("url"))
       })
       return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
-table
+datatable
  delimiter ,
  printTable
  data
@@ -604,7 +604,7 @@ table
       subparticle.set("titleLink", `https://www.semanticscholar.org/paper/${subparticle.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
-table
+datatable
  delimiter |
  printTable
  data
@@ -629,7 +629,7 @@ table
       subparticle.set("titleLink", `https://isbndb.com/book/${subparticle.get("isbn13")}`)
     })
     return `## Books about ${title} from ISBNdb
-table
+datatable
  delimiter |
  printTable
  data
@@ -650,7 +650,7 @@ table
       )
     })
     return `## Books about ${title} on goodreads
-table
+datatable
  delimiter |
  printTable
  data
@@ -673,7 +673,7 @@ table
         )
       })
       return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
-table
+datatable
  delimiter |
  printTable
  data
@@ -714,7 +714,7 @@ Token ${supported && tokenPath ? (this.get(tokenPath) ?? "") : ""}`
 
     return `## Language <a href="../lists/features.html">features</a>
 
-table
+datatable
  delimiter particles
  printTable
  data
@@ -737,7 +737,7 @@ table
       .trim()
     return `## HackerNews discussions of ${this.name}
 
-table
+datatable
  delimiter |
  printTable
  data

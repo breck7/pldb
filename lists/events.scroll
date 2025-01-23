@@ -13,11 +13,11 @@ Download as JSON | TSV | CSV
 
 // A ScrollSet with information on programming language events
 container
-table
+datatable
  printTable
 
 # Other Event Pages
-table
+datatable
  delimiter |
  printTable
  data

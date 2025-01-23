@@ -19,12 +19,12 @@ endColumns
 // A ScrollSet with information on programming podcasts
 
 container
-table podcasts.tsv
+datatable podcasts.tsv
  orderBy -episodes
   printTable
 
 expander Measures
-table podcastMeasures.csv
+datatable podcastMeasures.csv
  printTable
 
 idParser
