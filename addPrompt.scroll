@@ -6,10 +6,11 @@ It contains a single file about every language, and other important inventions i
 
 The data is written in the PPS stack (Particle Syntax, Parsers, and Scroll).
 
-The code for the Parsers is listed below. And then I gave 4 example files.
+The code for the Parsers is listed below. And then I gave some example entries.
 
 codeFromFile code/measures.parsers
 codeFromFile concepts/elixir.scroll
 codeFromFile concepts/c.scroll
 codeFromFile concepts/markdown.scroll
+codeFromFile concepts/http.scroll
 codeFromFile concepts/parsers.scroll
