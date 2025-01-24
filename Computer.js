@@ -37,7 +37,7 @@ const SVGS = {
 
 const delimiter = `¶`
 const quickTable = (rows, header) =>
-  `table\n delimiter ${delimiter}\n printTable\n data\n  ${new Particle(rows)
+  `datatable\n delimiter ${delimiter}\n printTable\n data\n  ${new Particle(rows)
     .toDelimited(delimiter, header, false)
     .replace(/\n/g, "\n  ")}`
 
