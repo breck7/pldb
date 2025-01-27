@@ -2,11 +2,12 @@
 
 id rtmp
 name RTMP
-standsFor Real-Time Messaging Protocol
 appeared 2009
 tags protocol
+standsFor Real-Time Messaging Protocol
 lab Macromedia
 description Real-Time Messaging Protocol (RTMP) is a communication protocol for streaming audio, video, and data over the Internet. Originally developed as a proprietary protocol by Macromedia for streaming between Flash Player and the Flash Communication Server, Adobe (which acquired Macromedia) has released an incomplete version of the specification of the protocol for public use.
+
 related dash webrtc srt hls
 
 wikipedia https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol

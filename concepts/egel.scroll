@@ -9,7 +9,6 @@ website https://egel-lang.github.io/
 description A simple untyped eager functional language.
 fileExtensions eg
 writtenIn cpp
-githubRepo https://github.com/egel-lang/egel
 
 example
  # Rosetta Code example 99 Bottles.
@@ -30,3 +29,5 @@ example
              print_rhyme (N - 1) ]
  
  def main = print_rhyme 99
+
+githubRepo https://github.com/egel-lang/egel

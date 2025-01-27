@@ -1,0 +1,206 @@
+authors Breck Yunits
+ https://x.com/breckyunits Breck Yunits
+date 1/26/2025
+title An interview with Mojo, MLIR, Swift, Clang and LLVM creator Chris Lattner
+
+interviewHeader.scroll
+
+Chris Lattner is one of the most prolific programming language pioneers of our times. He created many of the core platforms today's programmers build on including LLVM, Clang, Swift and MLIR. Now he is focused on a new language, Mojo, which allows Python programmers to write code that runs orders of magnitude faster. Chris took the time to talk to us about some of the new stuff in Mojo; his path toward mastering the entire stack; and his daily habits that help him produce hit after hit. Thank you for your time Chris!
+ dateline
+ https://x.com/clattner_llvm Chris Lattner
+ https://llvm.org LLVM
+ https://clang.llvm.org Clang
+ https://www.swift.org/ Swift
+ https://mlir.llvm.org/ MLIR
+ https://www.modular.com/mojo Mojo
+ ..concepts/python.html Python
+
+***
+
+? Can you explain the life cycle of a Mojo program?
+
+This is super confusing to people because they often think that Mojo is Python or is a Python implementation or something like this, but the best way to think about Mojo is it's a completely from scratch programming language, you can say it's like Swift or Rust or something like this, with a completely new compiler.
+ ../concepts/swift.html Swift
+ ../concepts/rust.html Rust
+
+It has a traditional lexer and parser. The most interesting bits of what the front end does is it does type checking and semantic analysis and this kind of stuff.
+
+There's some defining features. It generates MLIR. It generates that directly instead of a syntax tree. The way it does that is quite different and unusual.
+
+From that it goes through a whole bunch of different MLIR passes for lowering, optimization, things like this.
+
+Eventually it does bottom out to LLVM. Mojo uses LLVM in a very different way than most other compilers. I've given various technical talks at like the LLVM developer meeting talking about this.
+ https://www.youtube.com/watch?v=SEwTjZvy8vw technical talks
+
+Then it goes through the LLVM code generator up to a target. If you're compiling to a GPU, it's the same thing, but slightly different. There's a code slicing thing that goes on, there's a bunch of different fancy things built into it, but that's the basic gist of it.
+
+? You said there's no syntax tree?
+
+Normally you build a parse tree and then annotate with types. Instead of doing that, we generate declaration nodes in MLIR. You can serialize it, you can inspect it. All the MLIR tooling works.
+ https://mlir.llvm.org/docs/LangRef/#high-level-structure declaration nodes
+
+***
+
+? What languages changed the way you think?
+
+I would put in some of the classics like Prolog and APL. APL and Prolog are like a completely different way of looking at problems and thinking about them.
+ ../concepts/prolog.html Prolog
+ ../concepts/apl.html APL
+
+I love that, even though it's less practical in certain ways. Though all the ML compilers today are basically reinventing APL.
+
+The fairly canonical ones like Lisp and Scheme also really changed how I thought about things.
+ ../concepts/lisp.html Lisp
+ ../concepts/scheme.html Scheme
+
+A much more recent example is Zig with the comptime features.
+ ../concepts/zig.html Zig
+ https://kristoff.it/blog/what-is-zig-comptime/ comptime
+
+If you zoom into that, that's one of Mojo's main features as well for parametric metaprogramming.
+
+One of the things that I really appreciate about comptime is that it allows you to tie a bunch of other complexity that creeps into a language into one feature. I love it when you can have one thing that replaces a bunch of other related things.
+
+Swift, for example, has a ton of complexity and a ton of language features that got accreted over time because it doesn't have the right meta programming features. Because it didn't have the one thing it got a whole bunch of other things.
+
+***
+
+? Are there families of languages you'd like to explore more?
+
+I'm not really a programming language tourist. I'm more interested in what problems can be solved.
+
+I build a programming language when I have a novel problem to solve that can't be solved by somebody else. Like, "I need a good way to build iOS applications that is familiar and not as scary as Objective-C."
+ ../concepts/objective-c.html Objective-C
+
+***
+
+? In building your languages have you had "aha" moments on problems that were bugging you?
+
+All the time.
+
+As a designer/engineer/whatever you wanna call me, I find beauty when things click together and it enables things to happen that you didn't plan for.
+
+One example of that is, through a combination of very small orthogonal features in Mojo, we got conditional conformance to traits for free. I did not think we had that, and people in the community started using this new design pattern they invented, and I thought that was not even possible. And so, that is like, that is amazing.
+ https://docs.modular.com/mojo/manual/traits/#implicit-trait-conformance conformance to traits
+
+Also in the case of Mojo, the lifetime ownership system we spent a long time on—months and months and months—iterating, changing, adapting, learning, building to get to the point where it actually works. And then you realize, oh, we can make it way more simple.
+ https://www.youtube.com/watch?v=9ag0fPMmYPQ ownership system
+
+The first step is: it works.
+
+Second step is: make it way simpler and way more explainable and way more beautiful by going from a working thing that you refactor—now that you understand it—into something that is much cleaner and simpler.
+
+***
+
+? What's been your experience developing in public versus private?
+
+It's changed over the years.
+
+### LLVM
+
+When I was very young and I wasn't known, I just wanted people to use my stuff. I was desperate to have anybody to talk to. Anybody who could be involved I wanted to be involved. You can go back and read posts on mailing lists from me in 2005 or 2003. I think that's one of the things that led LLVM to be such a vibrant and strong community.
+
+### Clang
+
+Over time, things like Clang, working on C and C++, it was secret for 6 or 9 months. Nobody, except for my wife, knew that I was working on this project. It was a side project, a hobby project. I had no idea if it would go anywhere. Everybody knew that building a C++ parser was impossible. And so I didn't have the confidence to say, I'm going to embark on a project and go do it. Because, you know, all odds are that it would fail. And, honestly, I didn't even know what I was doing. I didn't really have any goals. I just had curiosity and I was chasing it to see where it would go.
+
+Only as it got further did I tell people at Apple and that caused some heads to explode. My manager said, "I thought you only cared about code generation". I said "I care about solving interesting problems and doing things."
+
+We eventually open sourced it and added it to LLVM and through that process what I figured out is that in the early phases of a project—when you are just kind of figuring stuff out, like you don't even know how to define the problem; you don't know how to explain it; or justify it; or provide rationale;—actually keeping things small and secret is a good thing.
+
+And later in Clang's life we had 3 or 4 people within Apple working on it, you can make decisions and move really fast and get a lot of stuff done with a few people because you can have a very shared mindset.
+
+### Swift
+
+Later with Swift, same thing. I worked on Swift secretly for like a year and a half without telling anybody about it. Nobody at Apple even knew. Just figuring out what were the parameters? How can I make this thing better? What were the design points? How do I think about it? So it went from being secret for a year and a half to then secret within Apple for four years. By the time it launched publicly, only about 250 people at Apple even knew about it. Caused virtually every software engineer at Apple's heads to explode.
+
+The secrecy within Apple, for that project at least, was extremely useful. Because every Objective-C programmer had lots of opinions, and they were not opinions about the compiler implementation, or the low level type system details, or whatever. They had very, they had strong opinions about superficial things.
+
+### MLIR
+
+Later I worked on the MLIR compiler. That was public within Google from the very beginning. But it was a "within Google" project. We got five people together and spent a ton of time on the whiteboard. And again, it was more about deciding what is the problem we want to solve? What are the core things? MLIR is a generally useful domain agnostic compiler, meta compiler construction toolkit...was a point that we didn't start with, but that became an emergent requirement which is now what it's really known for.
+
+As you get it nailed down you can explain it, as you can explain it and you can scale it and you get more confident, and then you can launch it, and then you can open source it, and then you can try to convince other people that it's actually good, and that maybe they should look at it, which is also hard.
+
+### Mojo
+
+At this point in my career, I know that Mojo will be successful. I will just state this, like, very directly. Because it's a Python family member that's  1000x faster. Or even more in some cases. Because it runs on GPUs and nothing else does. And because it's a very important problem today, and it's designed intentionally to be very familiar to people, and so the adoption and stuff like that, I think it'll go very rapidly.
+
+The problem that Mojo has is that it's not done yet. Everybody always tells me, oh open source it, oh do this, do that, do whatever. And honestly, I don't think that's going to make it get done faster or be better. What's really important is we iterate on it. We continue to, refactor, learn, change, make the core type system correct, make simple things that compose, which is another huge problem with Swift. Swift added all these features too quickly and they never sat together great. We need to get it right in the early phase because it's so difficult to fix core design and engineering problems later.
+
+As we do this, what we're doing is we're progressively opening it. As we progressively open it, we can get more and more and more people involved.
+
+Earlier in my career I'd be desperate to get somebody to pay attention to something, but now I have more confidence that, okay, if it's good, then people will adopt it because it's useful.
+
+And so steering towards utility and solving important problems for the world is really the thing, and making sure we can do that well is the thing that I'm optimizing for now.
+
+So Mojo is a combination of learning from all these different projects and learning from what's worked and what didn't.
+
+The Apple secrecy thing was super annoying for a variety of reasons, but it was the right thing for something as polarizing as changing language syntax. In the case of Mojo, it's anchored to Python syntax so that's been very, very helpful for me for helping like reduce bike shedding and stuff like that.
+
+***
+
+? How did you master the whole stack?
+
+I grew up as a kid, back in the 90s, writing assembly language on DOS computers. And learning Turbo Pascal 5 and 6.
+ ..concepts/turbo-pascal.html Turbo Pascal
+
+It was a much simpler world than it is today, because you can actually really understand almost everything that's happening within a computer.
+
+In those days I didn't understand how the computer was built. I didn't understand why it was that way, but I understood the framebuffer for VGA is at 0xA0000 and these weird things.
+
+From there I just kind of climbed the stack. Had a good idea of what an x86 computer does and suddenly you say, well how do I get that code? And so this is where my interest in compilers comes from. My initial work on compilers was really not in the programming language space. It was really more building optimizers and code generators because that's what I understood.
+
+For me, I didn't really become a programming languages person, really, until working on Swift.
+
+The path was working on code generation and building high performance x86 and PowerPC and this kind of code generation stuff that Apple needed to then building Clang, which forced me to learn how parsers work; how front ends work; how GCC and other technologies work; how type checking worked. It was a training ground for learning. I could measure against GCC. I cared about things like compile time, and so, making sure the parser was faster than GCC and things like this gave me a metric of where I could measure what success looked like when getting to Swift.
+
+Swift benefited from the experience of building front ends before, like Clang, but also having a really good understanding of how LLVM works. And so Swift was, among other things, like a zero cost abstraction on top of LLVM.
+
+In the case of Mojo, there's a number of different things. I developed mastery of CPUs and CPU architecture and things like that but then also switched gears to work on AI accelerators. Building and scaling out the TPU platform at Google, working with GPUs and things like this, are things that I'd done and so I knew the pain points and problems and many of the other existing solutions. It didn't just magically pop into my brain, I had spent years working with the existing systems and a combination of these things that led to MLIR. And MLIR again, not a language, it's an engineering artifact that allows you to build stuff.
+
+This is what leads to Mojo.
+
+***
+
+? What are things in your daily life that have helped you produce at such a high level for decades?
+
+I sleep eight hours a day. Which is maybe controversial but I think is very core.
+
+Every morning I walk. I have two cute dogs, and they have very big brown eyes, and they look at me every morning saying, are we going to go for a walk? And the answer is yes. So depending on the day I'll walk from half hour to 45 or 60 minutes up and down hills, and so it's actually strenuous, which is good for health.
+
+I drink way too much Diet Coke. My kids tell me Diet Coke is killing me but so far I still seem to be alive.
+
+I put in way too many hours. I'm not a nine to five kind of guy.
+
+I am always thinking about things and working on things and working way into the evening and, and working on weekends and whatever.
+
+If you look at my GitHub commit thingy you'll see most of my actual coding happens on weekends, because I have a day job being a CEO.
+
+The actual coding, because I can help things go faster. I can push things forward in the early phase in a project. I have a lot of value to contribute because I understand things to the depth that a lot of other people don't.
+
+Many things are obvious and intuitive to me that would otherwise take a lot of iteration. You know, two steps forward one step back.
+
+***
+
+? With the rise of AI, are humans still going to be creating languages in 30 years?
+
+I get asked, "Chris, why are you building Mojo when AI replaces all programmers?"
+
+There's two different worldviews.
+
+One worldview is that AGI or ASI, or whatever they want to call it these days, magically replaces all humans. I don't know if that's going to be true at some point. If it is true, it seems like it would happen in the next 30 years. The way I look at it is that if it does happen, well, just like  computers are better than humans at chess, some people still play chess. It's not that the skill and the art and the reason for doing it disappears.
+
+I'm fairly skeptical that AGI will magically eliminate the need for programming and programmers and the whole art of what we do. The way I look at it, much more pragmatically, is AI is a superpower and today AI is kind of akin to hiring a junior programmer onto your team.
+
+The thing about programming is that programming is not about telling the computer what to do.  That's what the vast majority of people think of when they think of code: instructions for the computer. The way I see code, and programming language therefore, is code is about allowing the humans on a team to understand what the product is and what it does. Building a product is the intersection of understanding what the world wants,  understanding what you currently have to work with, and then understanding the path from here to there. You can understand the requirements without code, fine. But practically speaking, there's trade offs. And if you have trade offs, you have to understand how things work. Or at least you really benefit from knowing how things work. I think for the foreseeable future programming is a team sport and code is the interchange format between the players. So I think it's still pretty important.
+
+****
+
+chrisLattner.jpg
+ width 200px
+ https://www.youtube.com/watch?v=pdJQ8iVTwj8
+ caption For a long form interview with Chris, check out his interviews on Lex Fridman. Thank you for your time Chris!
+  https://www.youtube.com/watch?v=pdJQ8iVTwj8 his interviews on Lex Fridman
+
+footer.scroll

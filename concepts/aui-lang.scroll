@@ -4,15 +4,13 @@ id aui-lang
 name AUI
 appeared 2002
 creators Kevin A. Schneider and James R. Cordy
-standsFor Abstract User Interface
 tags pl
+standsFor Abstract User Interface
 lab University of Saskatchewan && Queen's University
 description a programming language for developing plastic interactive software
 
 country Canada
 reference https://semanticscholar.org/paper/4ca9970ceade9580757916d20bc4a1bf19688860
-
-hopl https://hopl.info/showlanguage.prx?exp=5777
 
 example
  draw (canvas <w,h> pins) =
@@ -26,3 +24,5 @@ example
  oval (Radius 15) (Fill Clear),
  line (Length 10)}
  end where
+
+hopl https://hopl.info/showlanguage.prx?exp=5777

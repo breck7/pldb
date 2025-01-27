@@ -6,16 +6,9 @@ appeared 2009
 creators Roger Pantos
 tags protocol
 website https://developer.apple.com/streaming/
-reference https://datatracker.ietf.org/doc/html/rfc8216
 lab Apple
+fileExtensions m3u8 m3u
+
+reference https://datatracker.ietf.org/doc/html/rfc8216
 
 wikipedia https://en.wikipedia.org/wiki/HTTP_Live_Streaming
- related http m3u mpeg-2 aac h.264 microsoft-smooth-streaming mpeg-dash
- summary HTTP Live Streaming (HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. HLS is designed for reliability and dynamically adapts to network conditions by optimizing playback for the available speed of wired and wireless connections.
-
-githubLanguage HLS
- fileExtensions m3u8
- tmScope source.m3u
- aceMode text
-
-fileExtensions m3u8 m3u

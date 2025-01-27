@@ -5,10 +5,11 @@ name SDLang
 appeared 2011
 creators Sönke Ludwig
 tags dataNotation
-fileExtensions sdl
 website https://sdlang.org
-description SDLang is a simple and concise way to textually represent data. It has an XML-like structure – tags, values and attributes – which makes it a versatile choice for data serialization, configuration files, or declarative languages.
 standsFor Simple Declarative Language
+description SDLang is a simple and concise way to textually represent data. It has an XML-like structure – tags, values and attributes – which makes it a versatile choice for data serialization, configuration files, or declarative languages.
+fileExtensions sdl
+
 influencedBy xml yaml rdf json c cpp csharp d java
 
 example
