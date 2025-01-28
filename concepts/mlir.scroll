@@ -10,6 +10,7 @@ website https://mlir.llvm.org/
 paper https://ieeexplore.ieee.org/document/9370308
 lab Google
 description The MLIR project is a novel approach to building reusable and extensible compiler infrastructure. MLIR aims to address software fragmentation, improve compilation for heterogeneous hardware, significantly reduce the cost of building domain specific compilers, and aid in connecting existing compilers together.
+influencedBy llvmir swift-il xla
 
 repoStats
  firstCommit 2019
