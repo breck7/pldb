@@ -1552,7 +1552,7 @@ class Tables {
     const cols = lodash.keys(data[0])
     const rows = lodash.map(data, row => cols.map(col => row[col]).join(","))
     const tsv = [cols.join(","), ...rows].join("\n  ")
-    return "table\n delimiter ,\n printTable\n data\n  " + tsv
+    return "datatable\n delimiter ,\n printTable\n data\n  " + tsv
   }
 
   _top
