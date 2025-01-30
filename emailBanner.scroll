@@ -1,14 +1,10 @@
-div
+div New: join the /r/PLDB subreddit
+ https://www.reddit.com/r/pldb /r/PLDB subreddit
  id emailBanner
  class banner hide
- form
-  onsubmit handleSubmit(event)
-  span Like PLDB? Join our email list:
-  button Join
-   type submit
-  a X
-   onclick hideEmailList()
-   class closeBannerButton
+ a X
+  onclick hideEmailList()
+  class closeBannerButton
 
 css
  .banner {
