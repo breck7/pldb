@@ -18,6 +18,11 @@ repoStats
  newestCommit 2024
 country United States
 
+example
+ credits = List.map(songs, |song|
+     "Performed by ${song.artist}"
+ )
+
 githubRepo https://github.com/roc-lang/roc
  stars 3930
  forks 290
@@ -26,8 +31,3 @@ githubRepo https://github.com/roc-lang/roc
  updated 2024
  description A fast, friendly, functional language.
  issues 1132
-
-example
- credits = List.map(songs, |song|
-     "Performed by ${song.artist}"
- )
