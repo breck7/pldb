@@ -11,6 +11,7 @@ download https://developer.nvidia.com/cuda-downloads
 latestVersion 12.5
 standsFor Compute Unified Device Architecture
 lab Nvidia
+compilesTo ptx
 
 clocExtensions cu cuh
 fileType text
