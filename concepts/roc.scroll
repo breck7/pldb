@@ -26,3 +26,8 @@ githubRepo https://github.com/roc-lang/roc
  updated 2024
  description A fast, friendly, functional language.
  issues 1132
+
+example
+ credits = List.map(songs, |song|
+     "Performed by ${song.artist}"
+ )
