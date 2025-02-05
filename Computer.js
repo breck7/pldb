@@ -1889,43 +1889,6 @@ class Tables {
 
     return this.quickCache.keywordsTable
   }
-
-  get acknowledgements() {
-    const sources = this.measures.map(col => col.Source).filter(i => i)
-    let writtenIn = [
-      "javascript",
-      "nodejs",
-      "html",
-      "css",
-      "particles",
-      "scroll",
-      "parsers",
-      "git",
-      "python",
-      "bash",
-      "markdown",
-      "json",
-      "typescript",
-      "png",
-      "svg",
-      "explorer",
-      "gitignore"
-    ].map(id => this.getConceptPage(id).parsed)
-
-    const npmPackages = Object.keys({
-      ...require("./package.json").devDependencies
-    })
-    npmPackages.sort()
-
-    return {
-      WRITTEN_IN_TABLE: lodash
-        .sortBy(writtenIn, "rank")
-        .map(file => `- ${file.id}\n link ../concepts/${file.id}.html`)
-        .join("\n"),
-      PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
-      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n")
-    }
-  }
 }
 
 const computeds = {

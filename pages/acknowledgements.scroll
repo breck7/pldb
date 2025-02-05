@@ -1,6 +1,3 @@
-replaceNodejs
- const {Tables} = require("../Computer.js")
- module.exports = Tables.acknowledgements
 tags All
 title Acknowledgements
 
@@ -27,15 +24,24 @@ datatable contributors.json
 ## Sources
 The vast majority of the information on this site comes from other websites and projects and should always include a link back to the #source#. Thank you to all of those sites, including:
  inlineMarkup # u title="And if there's a link missing somewhere, please report a bug!"
-SOURCES_TABLE
+../measures.json
+ where Source notEmpty
+  compose links <li><a href="https://{Source}">{Source}</a></li>
+   printColumn links
 
 ## NPM Packages
 Thank you to the developers building these packages used by PLDB:
-PACKAGES_TABLE
+../package.json
+ path devDependencies
+ compose links <li><a href="https://www.npmjs.com/package/{key}">{key}</a></li>
+  printColumn links
 
 ## Written In
 PLDB itself is written in a number of languages including:
-WRITTEN_IN_TABLE
+../pldb.json
+ where id oneOf javascript nodejs html css particles scroll parsers git python bash markdown json typescript png svg explorer gitignore
+  compose links <li><a href="../concepts/{id}.html">{id}</a></li>
+   printColumn links
 
 ## Language Creators
 And of course, thank you to all of the language creators who created the languages that are the subject of this site.
