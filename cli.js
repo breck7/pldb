@@ -5,7 +5,6 @@ const path = require("path")
 const { Particle } = require("scrollsdk/products/Particle.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
-const { ScrollFile, ScrollFileSystem, ScrollCli } = require("scroll-cli")
 const { ScrollSetCLI } = require("scroll-cli/ScrollSetCLI.js")
 const { execSync } = require("child_process")
 const semver = require("semver")
@@ -115,29 +114,6 @@ class PLDBCli extends ScrollSetCLI {
     files.forEach(file => {
       if (file.mainRepo && !file.writtenIn) addWrittenIn(file.id, this)
     })
-  }
-
-  async formatCommand(lang) {
-    // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have crawlers project installed separateely.
-    if (!lang) return
-    const file = this.concepts.filter(file => lang === file.id)[0]
-    if (file) this.formatAndSave(file)
-  }
-
-  async testCommand(lang) {
-    if (!lang) return ""
-    const file = new ScrollFile(undefined, path.join(this.conceptsFolder, lang + ".scroll"), new ScrollFileSystem())
-    const errors = file.scrollProgram.getAllErrors().map(obj => obj.toObject())
-    console.log(errors.length + " errors")
-    if (errors.length) console.log(errors)
-  }
-
-  async buildCommand(lang) {
-    if (!lang) return ""
-    const sfs = new ScrollFileSystem()
-    const file = new ScrollFile(undefined, path.join(this.conceptsFolder, lang + ".scroll"), sfs)
-    new ScrollCli().buildFiles(sfs, [file], this.conceptsFolder)
   }
 
   gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
