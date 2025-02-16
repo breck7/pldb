@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id jill
+name Jill
+appeared 2023
+tags pl
+description Jill is a functional programming language built for the Nand2Tetris platform, as an alternative to the original Jack high-level language.
+
+githubRepo https://github.com/mpatajac/jillc
+
+example
+ fn main = Output::printString("Hello, world!").
