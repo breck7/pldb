@@ -1,12 +1,12 @@
 ../code/conceptPage.scroll
 
-id star-prolog
-name *Prolog
-appeared 1989
+id lamda-prolog
+name λProlog
+appeared 1988
+creators Gopalan Nadathur and Dale Miller
+lab Duke University && University of Pennsylvania
 tags pl
-lab Centrum Wiskunde & Informatica && University of Amsterdam
+description λProlog is a logic programming language that extends Prolog by incorporating notions of higher-order functions, λ-terms, higher-order unification, polymorphic types, and mechanisms for building modules and secure abstract data types.
 
-country The Netherlands
-reference https://semanticscholar.org/paper/eb5328ea0faa0364b6892d192d506edb3b9d3d11
-
+reference https://www-users.cse.umn.edu/~ngopalan/papers/oldholp.pdf
 hopl https://hopl.info/showlanguage.prx?exp=4206
