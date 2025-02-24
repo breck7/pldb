@@ -5,17 +5,23 @@ name Vine
 appeared 2024
 tags pl
 website https://vine.dev
-docs https://vine.dev/docs
-fileExtensions vi
 description Vine is an experimental new programming language based on interaction nets. Vine is a multi-paradigm language, featuring seamless interop between functional and imperative patterns.
+fileExtensions vi
 
-githubRepo https://github.com/VineLang/vine
+docs https://vine.dev/docs
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 143
+ committers 5
+ files 517
 
 discord https://discord.gg/bgUPV8KjDv
-
 example
  // vine/examples/hello_world.vi
  pub fn main(&io: &IO) {
    io.println("Hello, world!");
  }
  
+
+githubRepo https://github.com/VineLang/vine
