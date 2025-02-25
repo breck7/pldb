@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id mdq
+name mdq
+appeared 2024
+creators Yuval Shavit
+standsFor Markdown Query
+tags queryLanguage
+description Provide an easy way to zero in on specific parts of a Markdown document.
+related markdown
+influencedBy jq
+
+githubRepo https://github.com/yshavit/mdq
+
+example
+ cat example.md | mdq '# usage | -'
