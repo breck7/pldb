@@ -8,43 +8,43 @@ emailBanner.scroll
 
 BASE_URL/allStyles.css
 
-stumpNoSnippet
- div
-  class trueBaseThemeHeader
-  a PLDB
-   href BASE_URL/index.html
-   class trueBaseThemeLogo
-  form
-   style display:inline-block;
-   method get
-   action BASE_URL/search.html
-   input
-    type search
-    id trueBaseThemeHeaderSearch
-    name q
-    placeholder Search
-    autocomplete off
-  a Top 1K
-   href BASE_URL/lists/top1000.html
-  a Features
-   href BASE_URL/lists/features.html
-  a Creators
-   href BASE_URL/lists/creators.html
-  a Events
-   href BASE_URL/lists/events.html
-  a Podcasts
-   href BASE_URL/lists/podcasts.html
-  a Books
-   href BASE_URL/books/index.html
-  a Extensions
-   href BASE_URL/lists/extensions.html
-  a Interviews
-   href BASE_URL/blog/interviews.html
-  a Blog
-   href BASE_URL/blog/index.html
-  a Explorer
-   href BASE_URL/lists/explorer.html
-  a CSV
-   href BASE_URL/csv.html
+div
+ noSnippet
+ class trueBaseThemeHeader
+ a PLDB
+  href BASE_URL/index.html
+  class trueBaseThemeLogo
+ form
+  style display:inline-block;
+  method get
+  action BASE_URL/search.html
+  input
+   type search
+   id trueBaseThemeHeaderSearch
+   name q
+   placeholder Search
+   autocomplete off
+ a Top 1K
+  href BASE_URL/lists/top1000.html
+ a Features
+  href BASE_URL/lists/features.html
+ a Creators
+  href BASE_URL/lists/creators.html
+ a Events
+  href BASE_URL/lists/events.html
+ a Podcasts
+  href BASE_URL/lists/podcasts.html
+ a Books
+  href BASE_URL/books/index.html
+ a Extensions
+  href BASE_URL/lists/extensions.html
+ a Interviews
+  href BASE_URL/blog/interviews.html
+ a Blog
+  href BASE_URL/blog/index.html
+ a Explorer
+  href BASE_URL/lists/explorer.html
+ a CSV
+  href BASE_URL/csv.html
 
 editButton
