@@ -6,6 +6,13 @@ appeared 2023
 tags pl
 description Jill is a functional programming language built for the Nand2Tetris platform, as an alternative to the original Jack high-level language.
 
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 255
+ committers 2
+ files 113
+
 example
  fn main = Output::printString("Hello, world!").
 
