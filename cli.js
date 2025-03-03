@@ -65,6 +65,15 @@ class PLDBCli extends ScrollSetCLI {
     await importer.writeAllRepoDataCommand()
   }
 
+  async crawlWikipediaCommand() {
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have crawlers project installed separateely.
+    const { WikipediaImporter } = require("../crawlers/wikipedia.org/Wikipedia.js")
+    const importer = new WikipediaImporter(this)
+    // await importer.fetchAllCommand()
+    await importer.writeToDatabaseCommand()
+  }
+
   async crawlRedditPLCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.

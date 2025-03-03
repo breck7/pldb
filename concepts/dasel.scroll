@@ -14,9 +14,10 @@ related jq
 repoStats
  firstCommit 2020
  newestCommit 2024
- commits 730
- committers 28
+ commits 801
+ committers 29
  files 171
+ mb 9
 
 example
  echo '{"name": "Tom"}' | dasel -r json 'name'
