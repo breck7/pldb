@@ -15,6 +15,7 @@ repoStats
  committers 5
  files 82
  newestCommit 2022
+ mb 1
 
 example
  city ?where .population > 100_000 ?select .name, .country
