@@ -15,10 +15,11 @@ compilesTo blc
 docs https://bruijn.marvinborner.de/wiki/
 repoStats
  firstCommit 2022
- newestCommit 2024
- commits 277
+ newestCommit 2025
+ commits 316
  committers 2
- files 228
+ files 241
+ mb 2
 
 example
  pow [index (iterate (mul 0) (+1))]
