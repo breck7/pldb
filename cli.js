@@ -85,15 +85,16 @@ class PLDBCli extends ScrollSetCLI {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
     const shuffled = lodash.shuffle(this.concepts)
-    shuffled.forEach(async file => {
-      if (lang && lang !== file.id) return
+
+    for (let file of shuffled) {
+      if (lang && lang !== file.id) continue
       if (lang) console.log(`processing ${lang}`)
       const { mainRepo } = file
-      if (!mainRepo) return
+      if (!mainRepo) continue
       const targetFolder = path.join(this.gitsFolder, file.id)
-      //if (Disk.exists(targetFolder)) return
-      if (file.repoStats_files) return
-      //if (file.isFinished) return
+      //if (Disk.exists(targetFolder)) continue
+      //if (file.repoStats_files) continue
+      //if (file.isFinished) continue
       try {
         const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
@@ -101,11 +102,11 @@ class PLDBCli extends ScrollSetCLI {
         const particle = this.getParticle(file)
         particle.touchParticle("repoStats").setProperties(gitStats.summary)
         if (!particle.has("appeared")) particle.set("appeared", gitStats.firstCommit.toString())
-        this.formatAndSave(file, particle)
+        await this.formatAndSave(file, particle)
       } catch (err) {
         console.error(err, file.id)
       }
-    })
+    }
   }
 
   async addWrittenInCommand(lang) {
