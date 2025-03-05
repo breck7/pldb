@@ -81,6 +81,7 @@ booleanTokens TRUE FALSE
 hasPointers true
 hasComments true
 hasZeroBasedNumbering false
+hasSinglePassParser true
 hasMultiLineComments false
 hasLineComments true
  MOVE ABC to XYZ  *> This is a comment.

@@ -143,6 +143,7 @@ hasGenerators true
 hasDirectives true
  from __future__ import feature
  # coding=<encoding name>
+hasSinglePassParser false
 hasAssignment true
  name = "John"
 hasImports true

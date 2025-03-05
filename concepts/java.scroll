@@ -116,6 +116,7 @@ booleanTokens true false
 
 hasSExpressions false
 hasVariableSubstitutionSyntax false
+hasSinglePassParser false
 hasAssertStatements true
  // By default, assertions are disabled
  // java –enableassertions Test

@@ -138,6 +138,7 @@ hasPrintDebugging true
 isCaseSensitive true
 hasClasses true
 hasConditionals true
+hasSinglePassParser false
 hasOctals true
  -- 0[oO]_*[0-7](_*[0-7])*
 hasHexadecimals true

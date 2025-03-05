@@ -142,6 +142,9 @@ hasMultiLineComments true
  )
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasSinglePassParser false
+ ; FWIW, Clojure's compiler is two-pass, but the units are tiny (top-level forms).
+ https://news.ycombinator.com/item?id=2467359
 hasHexadecimals true
  ; 0x-?[abcdef\d]+
 hasFloats true

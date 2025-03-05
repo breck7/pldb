@@ -88,6 +88,7 @@ hasEnums true
 hasRegularExpressionsSyntaxSugar false
 hasBooleans true
 hasConstructors false
+hasSinglePassParser true
 hasCharacters true
  char character = 'P';
 hasTernaryOperators true

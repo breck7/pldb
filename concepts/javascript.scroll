@@ -110,6 +110,12 @@ supportsBreakpoints true
  if (false)
    debugger
 hasPointers false
+hasSinglePassParser false
+hasTopologicalSorting false
+ console.log(message())
+ function message() {
+  return "The function Has been hoisted"
+ }
 hasIntegers true
  80766866
 hasLists true

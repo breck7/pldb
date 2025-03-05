@@ -674,6 +674,13 @@ hackerNewsDiscussionsParser
  string sourceDomain news.ycombinator.com
  float sortIndex 18
 
+hasSinglePassParserParser
+ extends abstractFeatureParser
+ description Is the language designed for a single pass parser requiring define before use (topological sorting)?
+ string title Single Pass Compiler
+ string pseudoExample x = 2; print x
+ string reference https://en.wikipedia.org/wiki/One-pass_compiler
+
 hasAbstractTypesParser
  extends abstractFeatureParser
  description Does this language have a keyword for abstract classes or types?

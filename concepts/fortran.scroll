@@ -94,6 +94,7 @@ hasPrintDebugging true
    100 FORMAT (' Hello World! ' /)
        END
 hasZeroBasedNumbering false
+hasSinglePassParser true
 hasModules true
  module constants
  implicit none

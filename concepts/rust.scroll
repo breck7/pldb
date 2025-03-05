@@ -177,6 +177,7 @@ hasLineComments true
 hasBooleans true
 hasWhileLoops true
 hasConstants true
+hasSinglePassParser false
 hasConditionals true
 hasStandardLibrary true
  println!("Hello, World!");
