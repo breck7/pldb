@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id metamath
+name Metamath
+appeared 2005
+creators Norman Megill
+tags pl
+website https://us.metamath.org
+description Metamath is a simple and flexible computer-processable language that supports rigorously verifying, archiving, and presenting mathematical proofs.
+faq https://us.metamath.org/#faq
+emailList http://groups.google.com/group/metamath
+ebook https://us.metamath.org/downloads/metamath.pdf
+
+example
+ |- ph & |- ( ph -> ps ) => |- ps
+
+wikipedia https://en.wikipedia.org/wiki/Metamath
