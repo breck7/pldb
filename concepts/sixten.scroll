@@ -1,12 +1,17 @@
 ../code/conceptPage.scroll
 
 id sixten
-name sixten
+name Sixten
 appeared 2014
 creators Olle Fredriksson
 tags pl
 lab https://github.com/ollef/sixten/issues
 writtenIn haskell markdown vim-script yaml llvmir
+description Sixten is an experimental functional programming language where all data is unboxed by default. Functional programming with fewer indirections!
+
+example
+ type Equals a b where
+  Refl : Equals a a
 
 repoStats
  firstCommit 2014
