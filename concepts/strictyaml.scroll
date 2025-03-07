@@ -2,11 +2,19 @@
 
 id strictyaml
 name StrictYAML
-appeared 2023
+appeared 2016
 creators Colm O'Connor
 tags dataNotation
 website https://hitchdev.com/strictyaml/
 description StrictYAML is a type-safe YAML parser that parses and validates a restricted subset of the YAML specification.
+
 subsetOf yaml
+repoStats
+ firstCommit 2016
+ newestCommit 2023
+ commits 802
+ mb 2
+ committers 21
+ files 226
 
 githubRepo https://github.com/crdoconnor/strictyaml

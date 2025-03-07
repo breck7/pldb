@@ -7,8 +7,16 @@ tags protocol
 website https://modelcontextprotocol.io
 description The Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools. Whether you're building an AI-powered IDE, enhancing a chat interface, or creating custom AI workflows, MCP provides a standardized way to connect LLMs with the context they need.
 lab Anthropic
-reference https://www.anthropic.com/news/model-context-protocol
-specRepo https://github.com/modelcontextprotocol/specification
 writtenIn typescript
 
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 284
+ mb 1
+ committers 24
+ files 92
+reference https://www.anthropic.com/news/model-context-protocol
+
+specRepo https://github.com/modelcontextprotocol/specification
 githubRepo https://github.com/modelcontextprotocol/specification

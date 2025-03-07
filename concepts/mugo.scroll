@@ -4,10 +4,17 @@ id mugo
 name Mugo
 appeared 2021
 creators Ben Hoyt
-subsetOf go
 tags pl
 website https://benhoyt.com/writings/mugo/
 description Mugo, a toy compiler for a subset of Go that can compile itself.
 
+subsetOf go
+repoStats
+ firstCommit 2021
+ newestCommit 2021
+ commits 34
+ mb 1
+ committers 1
+ files 12
+
 githubRepo https://github.com/benhoyt/mugo
- 
