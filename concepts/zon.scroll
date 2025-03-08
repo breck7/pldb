@@ -1,0 +1,19 @@
+../code/conceptPage.scroll
+
+id zon
+name Zon
+appeared 2023
+creators Andrew Kelley
+fileExtensions zon
+standsFor Zig Object Notation
+related json
+tags dataNotation
+website https://zon.dev
+description ZON (Zig Object Notation) is a simple data format, which uses Zig's anonymous struct and array initialization syntax to declare objects.
+reference https://github.com/ziglang/zig/pull/14523
+
+example
+  .{
+    .name = "zig-test-setup",
+    .dependencies = .{},
+  },
