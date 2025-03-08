@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id pest
+name pest
+appeared 2018
+docs https://docs.rs/pest/latest/pest/
+fileExtensions pest
+ebook https://pest.rs/book/
+creators Dragoș Tiselice
+tags grammarLanguage
+website https://pest.rs/
+description pest is a general purpose parser written in Rust with a focus on accessibility, correctness, and performance.
+webRepl https://pest.rs/#editor
+
+githubRepo https://github.com/pest-parser/pest
+
+hasComments true
+ // A comment
+
+lineCommentToken //
+
+example
+ alpha = { 'a'..'z' | 'A'..'Z' }
+ digit = { '0'..'9' }
+ 
+ ident = { (alpha | digit)+ }
+ 
+ ident_list = _{ !digit ~ ident ~ (" " ~ ident)+ }
+          // ^
+          // ident_list rule is silent (produces no tokens or error reports)
