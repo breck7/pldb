@@ -1,0 +1,49 @@
+../code/conceptPage.scroll
+
+id aluasm
+name AluAsm
+appeared 2021
+creators Maxim Orlovsky
+tags pl
+description AluVM assembly toolchain includes AluAsm – assembler – and ALink – linker, which may be used for producing AluVM and AluRE libraries and executable files.
+
+githubRepo https://github.com/AluVM/aluasm
+
+example
+ .ISAE
+                     ALU
+                     BPDIGEST
+ 
+ ;; Proof-of-work mining
+ ;;
+ ;; # Arguments
+ ;; - s16[1]: input
+ ;; - a256[1]: difficulty target
+ ;; - a16[2]: limit to the number of mining cycles
+ ;;
+ ;; # Returns
+ ;; - st0: success code (0 for success, 1 for a failure)
+ ;; - r256[2]: resulting hash value
+ ;; - a16[1]: actual number of cycles used
+ ;;
+ ;; # Uses
+ ;; - a8[1]: temporary result code
+ ;; - a16[3]: zero
+ .ROUTINE mine
+                     put  0, a16[1]              ; putting a value into register
+                     put  0, a16[3]              ; we will use this later
+ loop:                                           ; label for cycle
+                     sha2 s16[1], r256[2]        ; taking hash of the data
+                     inj  s16[1], r256[2], a16[3] ; changing the string with the hash itself
+                     inc  a16[1]                 ; counting steps
+                     gt.u a16[1], a16[2]         ; making sure we do not exceed $cycle_limit
+                     jif  exceeded
+                     lt.u r256[2], r256[1]       ; checking against difficulty
+                     jif  done                   ; target difficulty reached!
+                     jmp  loop
+ done:               put  1, a8[1]               ; failing since we exceeded $cycle_limit
+                     ifz  a8[1]
+                     ret
+ exceeded:           put  0, a8[1]
+                     st.s a8[1]
+                     ret
