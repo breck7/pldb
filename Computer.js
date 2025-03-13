@@ -1730,12 +1730,14 @@ class Tables {
     const birthYears = rows.map(row => row.born).filter(i => i)
     birthYears.sort()
 
-    const minYear = Math.min(...birthYears)
+    const minYear = 1906 // Math.min(...birthYears)
     const maxYear = 2024
     const histogram = Array.from(
       { length: maxYear - minYear + 1 },
       (_, i) => birthYears.filter(year => year === minYear + i).length
     )
+
+    console.log(minYear)
 
     // SPARKDATA
 
