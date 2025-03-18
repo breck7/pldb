@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id rhombus
+name Rhombus
+appeared 2023
+creators Matthew Flatt
+tags pl
+website https://rhombus-lang.org/
+description Rhombus is a general-purpose programming language that is easy to use and uniquely customizable.
+docs https://docs.racket-lang.org/rhombus/index.html
+paper https://dl.acm.org/doi/10.1145/3622818
+lab University of Utah
+
+hasPatternMatching true
+ // pattern matching on objects, lists, and maps
+  
+ class Rect(left, top, right, bottom)
+                      
+ fun rect_like_to_rect(v):
+   match v
+   | Rect(_, _, _, _): v
+   | {"LT": [l, t], "RB": [r, b]}: Rect(l, t, r, b)
+   | {"TL": [t, l], "RB": [b, r]}: Rect(l, t, r, b)
+                                 
+ rect_like_to_rect({"TL": [0, 2], "RB": [10, 5]})
+ // ⇒ Rect(0, 2, 10, 5)
+ rect_like_to_rect({"LT": [0, 2], "RB": [10, 5]})
+ // ⇒ Rect(2, 0, 5, 10)
+ // pattern matching in all binding positions
+  
+ class Posn(x, y)
+  
+ fun flip_all([Posn(x, y), ...]):
+   [Posn(y, x), ...]
+  
+ flip_all([Posn(1, 2), Posn(3, 4)])
+ // ⇒ [Posn(2, 1), Posn(4, 3)]
+ flip_all([Posn(5, 6)])
+ // ⇒ [Posn(6, 5)]
+
+example
+ // simple syntax for everyday tasks
+  
+ class Rect(left, top, right, bottom)
+                      
+ fun area(r):
+   let w = r.right - r.left
+   let h = r.bottom - r.top
+   w*h
+                                 
+ area(Rect(0, 0, 10, 5))
+ // ⇒ 50
