@@ -7,10 +7,32 @@ creators Matthew Flatt
 tags pl
 website https://rhombus-lang.org/
 description Rhombus is a general-purpose programming language that is easy to use and uniquely customizable.
-docs https://docs.racket-lang.org/rhombus/index.html
 paper https://dl.acm.org/doi/10.1145/3622818
 lab University of Utah
+writtenIn racket
 
+docs https://docs.racket-lang.org/rhombus/index.html
+
+example
+ // simple syntax for everyday tasks
+  
+ class Rect(left, top, right, bottom)
+                      
+ fun area(r):
+   let w = r.right - r.left
+   let h = r.bottom - r.top
+   w*h
+                                 
+ area(Rect(0, 0, 10, 5))
+ // ⇒ 50
+
+hasSemanticIndentation true
+hasMacros true
+ macro 'thunk: $body':
+ 'fun (): $body'
+ // > def delayed_three = thunk: 1 + 2
+ // > delayed_three()
+ // 3
 hasPatternMatching true
  // pattern matching on objects, lists, and maps
   
@@ -37,16 +59,3 @@ hasPatternMatching true
  // ⇒ [Posn(2, 1), Posn(4, 3)]
  flip_all([Posn(5, 6)])
  // ⇒ [Posn(6, 5)]
-
-example
- // simple syntax for everyday tasks
-  
- class Rect(left, top, right, bottom)
-                      
- fun area(r):
-   let w = r.right - r.left
-   let h = r.bottom - r.top
-   w*h
-                                 
- area(Rect(0, 0, 10, 5))
- // ⇒ 50
