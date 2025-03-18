@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id shubbery
+name Shrubbery Notation
+appeared 2023
+creators Matthew Flatt 
+tags dataNotation
+influencedBy s-expressions python i-expressions clojure
+website https://docs.racket-lang.org/shrubbery
+description Shrubbery notation is a set of text-level conventions that build toward a full programming language, such as Rhombus. The notation is line- and indentation-sensitive, and it is intended to partially group input, but leave further parsing to another layer, especially enforestation. The parsed form of a shrubbery imposes grouping to ensure that further parsing is consistent with the shrubbery’s lines and indentation.
+
+example
+ block:
+   println("group within block")
+   println("another group within block")
+ 
+ if is_rotten(apple)
+ | get_another()
+ | take_bite()
+   be_happy()
+ 
+ match x
+ | 0:
+     let zero = x
+     x + zero
+ | n:
+     n + 1
+ 
+ cond
+ | // check the weather
+   is_raining():
+     take_umbrella()
+ | // check the destination
+   going_to_beach():
+     wear_sunscreen()
+     take_umbrella()
+ | // assume a hat is enough
+   ~else:
+     wear_hat()
