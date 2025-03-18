@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id l-expressions
+name Line-expressions
+aka Lexprs
+aka L-expressions
+appeared 2019
+creators Jay McCarthy
+tags dataNotation
+influencedBy s-expressions
+description Line-expressions (L-expressions or Lexprs) are like S-expressions, but with more syntactic categories and without as much required notation. Like S-expressions, they mostly lack a semantic interpretation. 
+
+reference https://github.com/jeapostrophe/racket2-rfcs/blob/lexpr/lexpr/0004-lexpr.md
+
+example
+ fun ksum(k, l) :
+   match l \
+     | empty :
+         ; This is my favorite number!
+         0
+     | cons(a, d) :
+         (a + k * ksum(k, d))
+ 
+ fun timed_thunk(thunk) :
+   let before = now()
+   let answer = thunk()
+   let after = now()
+   println {It took @(after - before) seconds}
+   answer
+ 
+ mac timed \
+   | [_ e] :
+       'timed_thunk([λ() : e])
