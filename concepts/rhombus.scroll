@@ -12,8 +12,13 @@ lab University of Utah
 writtenIn racket
 
 docs https://docs.racket-lang.org/rhombus/index.html
-
-githubRepo https://github.com/racket/rhombus
+repoStats
+ firstCommit 2019
+ newestCommit 2025
+ commits 1967
+ mb 10
+ committers 46
+ files 1270
 
 example
  // simple syntax for everyday tasks
@@ -27,6 +32,8 @@ example
                                  
  area(Rect(0, 0, 10, 5))
  // ⇒ 50
+
+githubRepo https://github.com/racket/rhombus
 
 hasSemanticIndentation true
 hasMacros true

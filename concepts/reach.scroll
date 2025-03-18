@@ -8,7 +8,13 @@ tags contractLanguage
 website https://www.reach.sh/
 description Reach: The Safest and Smartest DApp Programming Language
 
-githubRepo https://github.com/reach-sh/reach-lang
+repoStats
+ firstCommit 2019
+ newestCommit 2023
+ commits 10373
+ mb 212
+ committers 63
+ files 3209
 
 example
  f();
@@ -18,3 +24,5 @@ example
   h();
  }
  m();
+
+githubRepo https://github.com/reach-sh/reach-lang
