@@ -1,0 +1,20 @@
+../code/conceptPage.scroll
+
+id reach
+name Reach
+appeared 2019
+creators Jay McCarthy
+tags contractLanguage
+website https://www.reach.sh/
+description Reach: The Safest and Smartest DApp Programming Language
+
+githubRepo https://github.com/reach-sh/reach-lang
+
+example
+ f();
+ if ( p() ) {
+  g();
+ } else {
+  h();
+ }
+ m();
