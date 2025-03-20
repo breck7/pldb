@@ -8,6 +8,7 @@ tags grammarLanguage
 website https://gallium.inria.fr/~fpottier/menhir/
 description Menhir is a LR(1) parser generator for the OCaml programming language.
 docs https://gallium.inria.fr/~fpottier/menhir/manual.html
+influencedBy yacc
 
 gitRepo https://gitlab.inria.fr/fpottier/menhir
 
