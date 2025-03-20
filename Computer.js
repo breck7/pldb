@@ -1608,6 +1608,7 @@ class Tables {
       this._conceptPageCache[file.id] = page
       this._conceptPages.push(page)
     })
+    console.log(`Loaded ${this.pldb.length} langs`)
   }
 
   getConceptPage(id) {
@@ -1621,6 +1622,7 @@ class Tables {
     try {
       return this.getConceptPage(name).toScroll()
     } catch (err) {
+      console.error(err)
       console.error(`Error loading '${name}' in '${absolutePath}'`)
       return ""
     }
