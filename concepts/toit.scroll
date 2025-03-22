@@ -1,0 +1,59 @@
+../code/conceptPage.scroll
+
+id toit
+name Toit
+appeared 2021
+creators Florian Loitsch and Kasper Lund
+tags pl
+blog https://blog.toit.io/
+website https://toitlang.org
+fileExtensions toit
+description Toit is a modern high-level language designed specifically for microcontrollers.
+docs https://docs.toit.io/language
+discord https://chat.toit.io
+
+githubRepo https://github.com/toitlang/toit
+
+example
+ hi:
+   print "Hello World!"
+ 
+ greet name:
+   print "Hello $name!"
+ 
+ main:
+   hi
+   greet "Kasper"
+
+lineCommentToken //
+hasIntegers true
+ x := 0
+hasSemanticIndentation true
+hasClasses true
+ // Creating a custom class.
+ class Point:
+   x /int := 42
+   y /int := 103
+hasInheritance true
+ class Foo extends Bar:
+hasConstructors true
+ constructor x:
+hasConstants true
+ X ::= 0
+hasStaticMethods true
+ static foo x y
+hasIfs true
+ if condition:
+hasForLoops true
+ for i := 0; i < end; i++:
+hasIncrementAndDecrementOperators true
+ i++
+hasWhileLoops true
+ while condition:
+hasImports true
+ import .library
+ import library
+ import library show *
+hasStrings true
+ "Hello"
+hasConditionals true
