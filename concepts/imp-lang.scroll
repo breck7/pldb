@@ -2,13 +2,20 @@
 
 id imp-lang
 name imp
-creators Jamie Brandon
 appeared 2019
+creators Jamie Brandon
 tags pl
 website https://scattered-thoughts.net/writing/imp-intro/
 webRepl https://scattered-thoughts.net/imp
 description The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.
 
+repoStats
+ firstCommit 2022
+ newestCommit 2022
+ commits 1343
+ mb 6
+ committers 1
+ files 17
 country United States
 
 example

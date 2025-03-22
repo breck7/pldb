@@ -7,7 +7,13 @@ creators Maxim Orlovsky
 tags pl
 description AluVM assembly toolchain includes AluAsm – assembler – and ALink – linker, which may be used for producing AluVM and AluRE libraries and executable files.
 
-githubRepo https://github.com/AluVM/aluasm
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 107
+ mb 1
+ committers 9
+ files 35
 
 example
  .ISAE
@@ -47,3 +53,5 @@ example
  exceeded:           put  0, a8[1]
                      st.s a8[1]
                      ret
+
+githubRepo https://github.com/AluVM/aluasm
