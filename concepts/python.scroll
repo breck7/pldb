@@ -165,11 +165,17 @@ hasSinglePassParser false
 hasAssignment true
  name = "John"
 hasDestructuring true
- # destructuring is implemented for simple sequence types, including nested:
+ # destructuring assignment works for sequences, including nested ones:
  (a, (b, c), *d) = (1, (2, 3), 4, 5, 6)  # result: a=1, b=2, c=3, d=(4,5,6)
-
- # but it is NOT implemented for more complicated types like dictionaries:
+ 
+ # it is NOT implemented for more complicated types like dictionaries:
  {"a": a} = {"a": 1}  # ERROR
+ 
+ # more complex destructuring is possible using the match statement:
+ d = {"a": {"b": [1, 2]}}
+ match d:
+   case {"a": {"b": [1, x]}}: pass  # result: x=2
+   case _: raise RuntimeError("destructuring failed!")
 hasImports true
  import datetime
  oTime = datetime.datetime.now()
