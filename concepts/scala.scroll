@@ -133,14 +133,14 @@ hasTypeClasses true
  // https://docs.scala-lang.org/scala3/book/ca-type-classes.html
  trait TypedJsonConvertible[A]:
    extension (a: A) def toTypedJson: String
-
+ 
  given TypedJsonConvertible[Int] with
    extension (x: Int) def toTypedJson: String =
      s"{\"type\": \"int\", \"value\": ${x}}"
-
+ 
  def printAsTypedJson[T: TypedJsonConvertible](x: T): Unit =
    println(x.toTypedJson);
-
+ 
  printAsTypedJson(123);
 hasTypeInference true
 hasLineComments true

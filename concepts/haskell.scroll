@@ -86,15 +86,15 @@ hasRunTimeGuards true
 hasTypeClasses true
  class ToTypedJson a where
    toTypedJson :: a -> String
-
+ 
  instance ToTypedJson Integer where
    toTypedJson x =
      "{\"type\": \"int\", \"value\": " ++ (show x) ++ "}"
-
+ 
  printAsTypedJson :: ToTypedJson a => a -> IO ()
  printAsTypedJson x = do
    putStrLn (toTypedJson x)
-
+ 
  main :: IO ()
  main = do
    printAsTypedJson (123 :: Integer)
