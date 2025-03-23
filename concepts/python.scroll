@@ -163,6 +163,12 @@ hasDirectives true
 hasSinglePassParser false
 hasAssignment true
  name = "John"
+hasDestructuring true
+ # destructuring is implemented for simple sequence types, including nested:
+ (a, (b, c), *d) = (1, (2, 3), 4, 5, 6)  # result: a=1, b=2, c=3, d=(4,5,6)
+
+ # but it is NOT implemented for more complicated types like dictionaries:
+ {"a": a} = {"a": 1}  # ERROR
 hasImports true
  import datetime
  oTime = datetime.datetime.now()
