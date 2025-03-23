@@ -230,9 +230,9 @@ hasVirtualFunctions true
 hasTypeClasses true
  #include <iostream>
  #include <string>
-
+ 
  using namespace std;
-
+ 
  // NOTE that in contrast to other typeclass-supporting languages,
  // concept (= typeclass) implementations
  // a) MUST be defined BEFORE the concept is introduced and
@@ -241,17 +241,17 @@ hasTypeClasses true
  string toTypedJson(int x) {
    return "{\"type\": \"int\", \"value\": " + to_string(x) + "}";
  }
-
+ 
  template <typename T>
  concept ToTypedJson = requires (T a) {
    {toTypedJson(a)} -> convertible_to<string>;
  };
-
+ 
  template <ToTypedJson T>
  void printAsTypedJson(T x) {
    cout << toTypedJson(x) << endl;
  }
-
+ 
  int main() {
    printAsTypedJson(123);
  }
