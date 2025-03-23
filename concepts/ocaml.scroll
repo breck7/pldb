@@ -68,6 +68,8 @@ hasComments true
   * comment.
   *)
 hasMultipleInheritance true
+hasTypeClasses false
+ supposedly modules offer similar functionality: https://accu.org/journals/overload/25/142/fletcher_2445/
 hasTypeInference true
 hasModules true
  (* In OCaml, every piece of code is wrapped into a module. *)

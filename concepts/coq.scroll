@@ -52,6 +52,7 @@ hasMultiLineComments true
  (* a comment *)
 hasDependentTypes true
  (* http://www-sop.inria.fr/members/Yves.Bertot/tsinghua/tsinghua-1.pdf *)
+hasTypeClasses true
 hasOctals true
 hasHexadecimals true
 hasFloats true

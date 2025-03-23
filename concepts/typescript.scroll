@@ -152,6 +152,8 @@ hasInheritance true
  class B {}
  class A extends B {}
 hasStaticTyping true
+hasTypeClasses false
+  https://github.com/microsoft/TypeScript/issues/10844#issuecomment-256182331
 hasTypeParameters true
  function identity<T>(arg: T): T {
     return arg;

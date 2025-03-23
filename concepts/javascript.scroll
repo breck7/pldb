@@ -262,6 +262,7 @@ hasSwitch true
   case "dog": console.log("yay"); break;
   case "cat": console.log("oh"); break;
  }
+hasTypeClasses false
 hasTernaryOperators true
  let i = true ? 1 : 0
 hasWhileLoops true

@@ -128,6 +128,7 @@ hasGenerics true
  v.add("test");
  Integer i = v.get(0); // (type error)  compilation-time error
 hasSingleDispatch true
+hasTypeClasses false
 hasPointers false
 hasStrings true
  "hello world"
