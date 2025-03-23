@@ -171,6 +171,25 @@ hasPrintDebugging true
  println!("Hi");
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasTypeClasses true
+ // https://doc.rust-lang.org/book/ch10-02-traits.html
+ trait ToTypedJson {
+   fn to_typed_json(&self) -> String;
+ }
+
+ impl ToTypedJson for i64 {
+   fn to_typed_json(&self) -> String {
+     return format!("{{\"type\": \"int\", \"value\": {}}}", self)
+   }
+ }
+
+ fn print_as_typed_json(x: impl ToTypedJson) {
+   println!("{}", x.to_typed_json());
+ }
+
+ fn main() {
+   print_as_typed_json(123);
+ }
 hasTypeInference true
 hasLineComments true
  // A comment

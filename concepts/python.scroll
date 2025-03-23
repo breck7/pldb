@@ -107,6 +107,7 @@ canWriteToDisk true
   filehandle.write('Hello, world!\n')
 hasDuckTyping true
 hasSingleDispatch true
+hasTypeClasses false
 hasRegularExpressionsSyntaxSugar false
 hasSwitch true
  match x:
