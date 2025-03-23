@@ -108,6 +108,23 @@ canWriteToDisk true
 hasDuckTyping true
 hasSingleDispatch true
 hasRegularExpressionsSyntaxSugar false
+hasSwitch true
+ match x:
+   case 0:
+     print("zero")
+   case 1:
+     print("one")
+   case _:
+     print(f"other: {x}")
+hasPatternMatching true
+ def get_two_ends(l):
+   match l:
+     case [first, *_, last]:
+       return (first, last)
+     case [_] | []:
+       raise ValueError("list is too short to have two ends")
+     case _:
+       raise ValueError("not a list")
 hasCaseInsensitiveIdentifiers false
 hasTernaryOperators true
  print(1 if 1 else 0)
