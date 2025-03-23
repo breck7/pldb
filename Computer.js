@@ -1739,8 +1739,6 @@ class Tables {
       (_, i) => birthYears.filter(year => year === minYear + i).length
     )
 
-    console.log(minYear)
-
     // SPARKDATA
 
     return {
