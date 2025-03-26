@@ -1,27 +1,9 @@
-../code/conceptPage.scroll
-
-id larp
-name LARP
-appeared 2003
-creators Marco Lavoie
-tags pl
-website http://www.marcolavoie.ca/larp/en/default.htm
-description LARP is an educational software for teaching algorithmic in structured programming using pseudo code and flowcharts. LARP's main advantage over traditional programming languages is its flexible and semi natural syntax, allowing one to formulate algorithms without the impediments of cryptic languages such as C++, Pascal or Java.
-lab https://web.archive.org/web/20200220111251/http://larp.marcolavoie.ca/en/techsupport/bugs_suggestions.htm
-
-related flowgorithm
-visualParadigm true
-country Canada
-
-example
- \\ Simple pseudo code
- START
-    WRITE "Enter a number"
-    READ N
- 
-    IF N < 0 THEN
-        WRITE "Negative number"
+START
+				WRITE"Enter a number"
+    READ number
+    IF number % 2==0THEN
+        WRITE"The number is even"
     ELSE
-        WRITE "Positive number"
+        WRITE"The number is odd"
     ENDIF
- END
+END
