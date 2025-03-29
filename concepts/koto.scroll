@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id koto
+name Koto
+appeared 2020
+creators Ian Hobson
+tags pl
+website https://koto.dev
+webRepl https://koto.dev/play-0.15
+description A lightweight scripting language for Rust applications.
+
+docs https://koto.dev/docs/next
+
+discord https://discord.gg/JeV8RuK4CT
+example
+ # Fizz buzz in Koto
+ # https://en.wikipedia.org/wiki/Fizz_buzz
+ 
+ fizz_buzz = |n|
+   match n % 3, n % 5
+     0, 0 then 'Fizz Buzz'
+     0, _ then 'Fizz'
+     _, 0 then 'Buzz'
+     else '{n}'
+ 
+ for i in 1..=25
+   print fizz_buzz i
+
+githubRepo https://github.com/koto-lang/koto
