@@ -2211,6 +2211,9 @@ repoStatsParser
  mbParser
   extends abstractCountMeasureParser
   description How many MBs in .git/objects?
+ linesOfCodeParser
+  extends abstractCountMeasureParser
+  description How many lines of code?
 
 rijuReplParser
  extends abstractUrlMeasureParser

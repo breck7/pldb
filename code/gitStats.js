@@ -66,6 +66,13 @@ class GitStats {
     return Number(output.trim())
   }
 
+  get linesOfCode() {
+    // Exclude common non-code file extensions and binary files
+    const command = `ls-files | grep -vE '\.(png|jpg|jpeg|gif|bmp|ico|pdf|doc|docx|xls|xlsx|ppt|pptx|zip|tar|gz|rar|7z|exe|dll|so|bin|o|obj|a)$' | xargs cat 2>/dev/null | wc -l`
+    const output = this.execGitCommand(command)
+    return Number(output.trim())
+  }
+
   get summary() {
     return {
       firstCommit: this.firstCommit,
@@ -73,7 +80,8 @@ class GitStats {
       commits: this.commits,
       mb: this.mb,
       committers: this.committers,
-      files: this.files
+      files: this.files,
+      linesOfCode: this.linesOfCode
     }
   }
 }

@@ -101,7 +101,7 @@ class PLDBCli extends ScrollSetCLI {
       const { mainRepo } = file
       if (!mainRepo) continue
       const targetFolder = path.join(this.gitsFolder, file.id)
-      if (Disk.exists(targetFolder)) continue
+      // if (Disk.exists(targetFolder)) continue
       //if (file.repoStats_files) continue
       //if (file.isFinished) continue
       try {
