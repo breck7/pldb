@@ -1,9 +1,0 @@
-START
-				WRITE"Enter a number"
-    READ number
-    IF number % 2==0THEN
-        WRITE"The number is even"
-    ELSE
-        WRITE"The number is odd"
-    ENDIF
-END
