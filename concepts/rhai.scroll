@@ -1,0 +1,22 @@
+../code/conceptPage.scroll
+
+id rhai
+name Rhai
+appeared 2016
+creators Sophia J. Turner
+tags pl
+website https://rhai.rs/
+webRepl https://rhai.rs/playground
+paper https://www.sophiajt.com/embedded-scripting-in-rust/
+description A small, fast, easy-to-use scripting language and evaluation engine that integrates tightly with Rust. Builds for most common targets including no-std and WASM.
+
+discord https://discord.gg/HquqbYFcZ9
+example
+ fn run(a) {
+     let b = a + 1;
+     print("Hello world! a = " + a);
+ }
+ run(10);
+ 
+
+githubRepo https://github.com/rhaiscript/rhai
