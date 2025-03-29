@@ -16,12 +16,12 @@ repoStats
  files 103
  newestCommit 2021
  mb 1
+ linesOfCode 4505
 country Unknown
 
 example
  @ var foo = 42
  @ var bar = (2 + 40)
-  
  @ . foo == (@ . bar) then
   @ set foo = 0
   
@@ -41,7 +41,6 @@ example
  @ var MyService :=
   @ var myAction :
     @ . argument + 10
-    
  MyService myAction (@ . foo) // foo is now 6, and this returns 16
 
 githubRepo https://github.com/holgerl/hilvl

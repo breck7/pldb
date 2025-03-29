@@ -18,6 +18,7 @@ repoStats
  files 81
  newestCommit 2020
  mb 15
+ linesOfCode 53323
 country United States
 reference https://news.ycombinator.com/item?id=22838255
 
@@ -26,7 +27,6 @@ pygmentsHighlighter Pointless
  fileExtensions ptls
 example
  import "chart.ptls" as chart
-  
  output =
    iterate(collatzStep, 175)
    |> takeWhile(greaterThan(1))

@@ -8,7 +8,14 @@ tags pl
 website https://slashlang.org/
 description Slash is a shell scripting language intended to substitute (b)ash scripting to accomplish these goals.
 
-githubRepo https://github.com/mikkeldamsgaard/slash
+repoStats
+ firstCommit 2021
+ newestCommit 2022
+ commits 53
+ mb 1
+ committers 2
+ files 47
+ linesOfCode 4858
 
 example
  #!/bin/slash
@@ -20,3 +27,5 @@ example
      println("Slash is truly awesome")
    }
  }
+
+githubRepo https://github.com/mikkeldamsgaard/slash

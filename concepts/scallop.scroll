@@ -7,13 +7,22 @@ creators Ziyang Li
 tags pl
 website https://www.scallop-lang.org
 description Neurosymbolic Programming with Scallop. Based on Datalog.
-related datalog
 lab University of Pennsylvania
-docs https://www.scallop-lang.org/doc/index.html
 
-githubRepo https://github.com/scallop-lang/scallop
+related datalog
+docs https://www.scallop-lang.org/doc/index.html
+repoStats
+ firstCommit 2022
+ newestCommit 2024
+ commits 53
+ mb 8
+ committers 4
+ files 1209
+ linesOfCode 106310
 
 example
  rel path(x, y) = dash(x, y)
  rel path(x, y) = path(x, z), dash(z, y)
  rel is_connected() = dot(x), dot(y), path(x, y), x != y
+
+githubRepo https://github.com/scallop-lang/scallop

@@ -20,6 +20,7 @@ repoStats
  files 409
  newestCommit 2025
  mb 103
+ linesOfCode 90690
 country Switzerland and Germany and United States
 projectEuler Frege
  memberCount
@@ -127,7 +128,6 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
       - result         void   ()
       - does IO               IO ()
       - throws ...            throws ....
-       
   -}
   -- .... defined in frege.java.Lang
   -- native sleep java.lang.Thread.sleep :: Long -> IO () throws InterruptedException

@@ -25,6 +25,7 @@ repoStats
  files 148
  newestCommit 2024
  mb 2
+ linesOfCode 26166
 country Italy
 projectEuler Squirrel
  memberCount
@@ -140,16 +141,12 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   	},
   	[10 + 123] = "expression index"
   }
-   
   local array=[ 1, 2, 3, { a = 10, b = "string" } ];
-   
   foreach (i,val in array)
   {
   	::print("the type of val is"+typeof val);
   }
-   
   /////////////////////////////////////////////
-   
   class Entity
   {
   	constructor(etype,entityname)
@@ -164,14 +161,12 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   	name = null;
   	type = null;
   }
-   
   function Entity::MoveTo(newx,newy,newz)
   {
   	x = newx;
   	y = newy;
   	z = newz;
   }
-   
   class Player extends Entity {
   	constructor(entityname)
   	{
@@ -183,9 +178,7 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   	}
   	
   }
-   
   local newplayer = Player("da playar");
-   
   newplayer.MoveTo(100,200,300);
   
 

@@ -27,6 +27,7 @@ repoStats
  files 672
  newestCommit 2025
  mb 43
+ linesOfCode 302457
 
 pygmentsHighlighter Red
  filename rebol.py
@@ -213,7 +214,6 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-Red
   
   ;get-word
   :foo
-   
   ;lit-word:
   'foo 'foo
   

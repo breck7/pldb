@@ -16,6 +16,7 @@ repoStats
  files 6
  newestCommit 2024
  mb 1
+ linesOfCode 30
 
 example
  (defun b (x) (pinmode 13 t) (digitalwrite 13 x) (delay 500) (b (not x)))

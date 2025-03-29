@@ -19,6 +19,7 @@ repoStats
  committers 39
  files 1057
  mb 22
+ linesOfCode 33143
 
 example
  def eager[R] { p: R / { Flip, Fail, Error } } = try {
