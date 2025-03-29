@@ -16,6 +16,7 @@ repoStats
  files 19789
  newestCommit 2025
  mb 174
+ linesOfCode 1100113
 reference https://dl.acm.org/citation.cfm?id=1869625
 
 example
@@ -23,7 +24,6 @@ example
      hidden(WS, ML_COMMENT, SL_COMMENT)
   
  import "http://www.eclipse.org/emf/2002/Ecore" as ecore
-  
  terminal ID:
      '^'?('a'..'z'|'A'..'Z'|'_')('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
   
