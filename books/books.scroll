@@ -2,8 +2,8 @@ baseUrl https://pldb.io/books/
 buildConcepts books.json books.tsv books.csv
 editBaseUrl /edit.html?folderName=pldb.io&fileName=books/
 permalink index.html
-replace BASE_URL ..
 title Books for Programmers
+replace BASE_URL ..
 
 // A ScrollSet with information on books about programming languages
 
@@ -597,6 +597,13 @@ publisher Red Globe Press
 languagesUsed haskell
 pages 277
 pdf http://conal.net/papers/functional-images/fop-conal.pdf
+
+bookTitle Compilers: Principles, Techniques, and Tools
+authors Alfred V. Aho and Monica S. Lam and Ravi Sethi and Jeffrey D. Ullman
+year 1986
+publisher Pearson Education
+pages 1040
+pdf https://github.com/qshadun/books/blob/master/Compilers%20Principles%20Techniques%20and%20Tools%20(2nd%20Edition)%20.pdf
 
 ****
 
