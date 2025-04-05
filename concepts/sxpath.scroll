@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id sxpath
+name SXPath
+appeared 2002
+creators Oleg Kiselyov
+tags queryLanguage
+description SXPath is a query language for SXML.
+
+related sxml
+docs https://www.gnu.org/software/guile/manual/html_node/SXPath.html
+
+example
+ ;; select all <bookstore> elements that are inside top-level <book>
+ ;; element
+ (sxpath '(book bookstore))
