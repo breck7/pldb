@@ -2,17 +2,19 @@
 
 id sxml
 name SXML
-appeared 2002
+appeared 2001
 creators Oleg Kiselyov
 tags dataNotation
 website https://okmij.org/ftp/Scheme/SXML.html
 spec https://okmij.org/ftp/Scheme/SXML.html
 description SXML is an abstract syntax tree of an XML document. SXML is also a concrete representation of the XML Infoset in the form of S-expressions. The generic tree structure of SXML lends itself to a compact library of combinators for querying and transforming SXML.
+fileExtensions scm sxml
 compilesTo xml
 
 subsetOf s-expressions
 influencedBy s-expressions xml
 docs https://www.gnu.org/software/guile/manual/html_node/SXML.html
+reference https://okmij.org/ftp/Scheme/LaXmL.txt
 
 example
  (a (@
