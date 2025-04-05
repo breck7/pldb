@@ -5,7 +5,10 @@ name LAML
 appeared 1999
 creators Kurt Normack
 tags textMarkup
+website https://homes.cs.aau.dk/~normark/laml/
 standsFor Lisp Abstracted Markup Language
+isFinished true
+ https://homes.cs.aau.dk/~normark/laml/
 description S-Expressions that compile to XML/XHTML.
 writtenIn scheme
 compilesTo html xml
