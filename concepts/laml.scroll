@@ -1,0 +1,15 @@
+../code/conceptPage.scroll
+
+id laml
+name LAML
+appeared 1999
+creators Kurt Normack
+tags textMarkup
+standsFor Lisp Abstracted Markup Language
+description S-Expressions that compile to XML/XHTML.
+writtenIn scheme
+compilesTo html xml
+
+reference https://web.archive.org/web/20040915083904/http://www.cs.auc.dk/~normark/laml/
+
+example (p) (hr) (p)
