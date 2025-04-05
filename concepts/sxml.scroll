@@ -11,6 +11,7 @@ description SXML is an abstract syntax tree of an XML document. SXML is also a c
 fileExtensions scm sxml
 compilesTo xml
 
+related laml
 subsetOf s-expressions
 influencedBy s-expressions xml
 docs https://www.gnu.org/software/guile/manual/html_node/SXML.html
