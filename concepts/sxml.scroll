@@ -23,5 +23,38 @@ example
         )
       (@ (*parent* a-parent-node))) ; <annotations> of the element 'a'
     "link")
+example
+ (define Content '(
+  (html:begin
+   (Header
+    (title "SXML")
+    (description "Definition of SXML: ...")
+    (keywords "XML, XML parsing, XML Infoset, XPath, SXML, Scheme")
+    (long-title "SXML")
+    (Links
+     (start "index.html" (title "Scheme Hash"))
+     (contents "../README.html")
+     (prev "xml.html")
+     (home "http://pobox.com/~oleg/ftp/")))
+ 
+   (body
+    (navbar)
+    (page-title)
+    (p "SXML is an instance of XML Infoset as S-expressions. SXML is an
+ Abstract Syntax Tree of an XML document.")
+    (p (b "Revision: 2.0"))
+ 
+    (TOC)
+ 
+    (Section 2 "Introduction")
+    (p
+     "An XML information set (Infoset) ... XML Infoset is described in "
+     (cite "XML Infoset") ". Although technically Infoset is specified for
+ XML, it largely applies to HTML as well.")
+    (p
+     "SXML is...")
+ 
+    (Section 2 "Notation")
+    ))))
 
 wikipedia https://en.wikipedia.org/wiki/SXML
