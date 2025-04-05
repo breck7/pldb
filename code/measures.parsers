@@ -521,10 +521,6 @@ gitRepoParser
  description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
  extends abstractGitRepoUrlMeasureParser
 
-specRepoParser
- description What is the URL of the official spec for the language project?
- extends abstractGitRepoUrlMeasureParser
-
 mainRepoParser
  boolean isComputed true
  extends abstractStringMeasureParser
@@ -2249,6 +2245,15 @@ specParser
  extends abstractUrlMeasureParser
  description What is a URL to the official spec for this language?
  float sortIndex 1.22
+
+isoParser
+ extends specParser
+ description What is the link to ISO standard for this language or standard?
+ float sortIndex 2.2
+
+specRepoParser
+ description What is the URL of the official spec for the language project?
+ extends abstractGitRepoUrlMeasureParser
 
 stackOverflowSurveyParser
  float sortIndex 36
