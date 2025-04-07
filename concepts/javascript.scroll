@@ -111,7 +111,6 @@ supportsBreakpoints true
    debugger
 hasPointers false
 hasSinglePassParser false
-hasTopologicalSorting false
  console.log(message())
  function message() {
   return "The function Has been hoisted"
