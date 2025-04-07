@@ -9,7 +9,7 @@ website https://jule.dev
 description Jule is the simple, efficient, statically typed and compiled system programming language.
 lab https://github.com/julelang
 fileExtensions .jule
-writtenIn yaml markdown bourne-shell dockerfile
+writtenIn jule cpp
 
 isOpenSource true
 influencedBy c cpp rust go
@@ -18,7 +18,7 @@ fileType text
 docs https://jule.dev/pages/manual.html?page=jule-lang
 repoStats
  firstCommit 2021
- commits 5722
+ commits 5791
  committers 16
  files 547
  newestCommit 2025
@@ -92,20 +92,20 @@ example
      outln(circ.area())
  }
 
-keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
+keywords fn struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co defer select chan map
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 127
- forks 12
- subscribers 9
+ stars 169
+ forks 14
+ subscribers 10
  created 2021
- updated 2024
+ updated 2025
  description Effective programming language to build efficient, fast, reliable and safe software while maintaining simplicity
- issues 4
+ issues 5
 
 lineCommentToken //
 multiLineCommentTokens /* */
-printToken outln
+printToken println
 assignmentToken =
 stringToken "
 booleanTokens true false
