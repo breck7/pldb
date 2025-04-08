@@ -1,3 +1,47 @@
+// todo: move out of here
+monacoEditorParser
+ cueFromId
+ extends abstractScrollParser
+ description A Monaco code editor.
+ baseParser blobParser
+ example
+  monacoEditor javascript
+   // Hello world
+ javascript
+  buildHtml() {
+   return `<div id="monacoContainer"></div>
+    <script defer src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getAtom(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+      })
+    </script>`
+  }
+
 // Common Measures
 
 abstractHashMapMeasureParser

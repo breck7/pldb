@@ -38,7 +38,6 @@ wikipedia https://en.wikipedia.org/wiki/True_BASIC
   BOX AREA 4,5,8,9
   
   BOX KEEP 0,8,5,10 IN car$ !Save the car in 'car$'
-   
   FOR x=1 TO 20 STEP 1 !Create a 'for' loop
       BOX SHOW road$ AT 0,0
       BOX SHOW car$ AT x,5

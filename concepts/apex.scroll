@@ -118,7 +118,6 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
            billingpostalcode='9',billingcountry='us');
           insert a;
           system.assertEquals( 'main,springfield,il,9,us',accountAddressString( a) );
-         
   	}
   }
 

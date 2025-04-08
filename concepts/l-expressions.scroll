@@ -2,14 +2,14 @@
 
 id l-expressions
 name Line-expressions
-aka Lexprs
-aka L-expressions
 appeared 2019
 creators Jay McCarthy
 tags dataNotation
-influencedBy s-expressions
-description Line-expressions (L-expressions or Lexprs) are like S-expressions, but with more syntactic categories and without as much required notation. Like S-expressions, they mostly lack a semantic interpretation. 
+aka Lexprs
+aka L-expressions
+description Line-expressions (L-expressions or Lexprs) are like S-expressions, but with more syntactic categories and without as much required notation. Like S-expressions, they mostly lack a semantic interpretation.
 
+influencedBy s-expressions
 reference https://github.com/jeapostrophe/racket2-rfcs/blob/lexpr/lexpr/0004-lexpr.md
 
 example

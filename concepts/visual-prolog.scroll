@@ -13,7 +13,6 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Prolog
      predicates
          hanoi : (unsigned N).
   end class hanoi
-   
   implement hanoi
      domains
          pole = string.
@@ -30,7 +29,6 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Prolog
              stdio::writef("move a disc from % pole to the % pole\n", A, C),
              move(N-1, B, A, C).
   end implement hanoi
-   
   goal
      console::init(),
      hanoi::hanoi(4).

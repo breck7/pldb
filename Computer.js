@@ -1583,9 +1583,7 @@ class Tables {
     return this._top
   }
 
-  get pldb() {
-    return require("./pldb.json")
-  }
+  pldb = require("./pldb.json")
 
   _getFileAtRank(rank, ranks) {
     rank = rank - 1
@@ -1608,7 +1606,7 @@ class Tables {
       this._conceptPageCache[file.id] = page
       this._conceptPages.push(page)
     })
-    console.log(`Loaded ${this.pldb.length} langs`)
+    console.log(`Computer.js loaded ${this.pldb.length} langs from pldb.json`)
   }
 
   getConceptPage(id) {

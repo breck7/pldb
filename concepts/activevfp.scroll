@@ -69,7 +69,6 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
    ENDPROC
    
    PROCEDURE getemployees      && custom method   (&& GET www.hostname.com/app/customers/getemployee/<id>
-    
   	oJSON=NEWOBJECT('json','json.prg')
       
       SET PATH TO oProp.AppStartPath+'data\AVFPdemo41\'

@@ -3,12 +3,12 @@
 id th1
 name TH1
 appeared 2015
-related tcl fossil
 tags pl
 website https://fossil-scm.org/home/doc/trunk/www/th1.md
 standsFor Test Harness 1
 description TH1 is a very small scripting language used to help generate web-page content in Fossil. TH1 began as a minimalist re-implementation of the Tcl scripting language. There was a need to test the SQLite library on Symbian phones, but at that time all of the test cases for SQLite were written in Tcl and Tcl could not be easily compiled on the SymbianOS. So TH1 was developed as a cut-down version of Tcl that would facilitate running the SQLite test scripts on SymbianOS.
 
+related tcl fossil
 reference https://fossil-scm.org/home/finfo/www/th1.md
 
 example
