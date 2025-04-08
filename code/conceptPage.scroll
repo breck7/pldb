@@ -1,22 +1,15 @@
 importOnly
 replace BASE_URL ..
 
-// testStrict
+testStrict
  temporarily disable until we can figure out problem with examples
 
 tags All
 
 measures.parsers
 
-../header.scroll
-
-replaceJs TEMPLATE_PAGE
- {
-  const path = require("path")
-  const filePath = particle.root.filePath
-  const {Tables} = require(path.join(path.dirname(filePath), "..", "Computer.js"))
-  Tables.getLanguageTemplate(filePath);
- }
-TEMPLATE_PAGE
-
-../footer.scroll
+evalJs
+ const path = require("path")
+ const filePath = particle.root.filePath
+ const {Tables} = require(path.join(path.dirname(filePath), "..", "Computer.js"))
+ Tables.getLanguageTemplate(filePath);
