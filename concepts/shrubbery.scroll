@@ -3,11 +3,12 @@
 id shrubbery
 name Shrubbery Notation
 appeared 2023
-creators Matthew Flatt 
+creators Matthew Flatt
 tags dataNotation
-influencedBy s-expressions python i-expressions clojure
 website https://docs.racket-lang.org/shrubbery
 description Shrubbery notation is a set of text-level conventions that build toward a full programming language, such as Rhombus. The notation is line- and indentation-sensitive, and it is intended to partially group input, but leave further parsing to another layer, especially enforestation. The parsed form of a shrubbery imposes grouping to ensure that further parsing is consistent with the shrubbery’s lines and indentation.
+
+influencedBy s-expressions python i-expressions clojure
 
 example
  block:

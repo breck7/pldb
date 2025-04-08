@@ -124,20 +124,21 @@ hasWhileLoops true
 hasConditionals true
 hasSinglePassParser true
  (* Via "forward" keyword)
- Program testforward;  
- Procedure First (n : longint); forward;  
- Procedure Second;  
- begin  
-   WriteLn ('In second. Calling first...');  
-   First (1);  
- end;  
- Procedure First (n : longint);  
- begin  
-   WriteLn ('First received : ',n);  
- end;  
- begin  
-   Second;  
+ Program testforward;
+ Procedure First (n : longint); forward;
+ Procedure Second;
+ begin
+   WriteLn ('In second. Calling first...');
+   First (1);
+ end;
+ Procedure First (n : longint);
+ begin
+   WriteLn ('First received : ',n);
+ end;
+ begin
+   Second;
  end.
+
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example
   program Printing;

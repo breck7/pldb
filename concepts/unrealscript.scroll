@@ -29,7 +29,6 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
  sampleCount 2
  example
   class US3HelloWorld extends GameInfo;
-   
   event InitGame( string Options, out string Error )
   {
       `log( "Hello, world!" );

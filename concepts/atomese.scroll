@@ -26,7 +26,6 @@ example
      (VariableNode "$var")
    )
  )
-  
  ;; Run the above pattern
  (cog-bind find-animals)
 

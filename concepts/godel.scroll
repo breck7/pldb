@@ -16,7 +16,6 @@ wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
  example
   MODULE      GCD.
   IMPORT      Integers.
-   
   PREDICATE   Gcd : Integer * Integer * Integer.
   Gcd(i,j,d) <-
              CommonDivisor(i,j,d) &

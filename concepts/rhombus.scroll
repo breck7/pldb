@@ -22,7 +22,6 @@ repoStats
 
 example
  // simple syntax for everyday tasks
-  
  class Rect(left, top, right, bottom)
                       
  fun area(r):
@@ -44,7 +43,6 @@ hasMacros true
  // 3
 hasPatternMatching true
  // pattern matching on objects, lists, and maps
-  
  class Rect(left, top, right, bottom)
                       
  fun rect_like_to_rect(v):
@@ -58,9 +56,7 @@ hasPatternMatching true
  rect_like_to_rect({"LT": [0, 2], "RB": [10, 5]})
  // ⇒ Rect(2, 0, 5, 10)
  // pattern matching in all binding positions
-  
  class Posn(x, y)
-  
  fun flip_all([Posn(x, y), ...]):
    [Posn(y, x), ...]
   
