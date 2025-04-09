@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id black
+name Black
+appeared 2014
+creators Kenichi Asai
+tags pl
+website http://pllab.is.ocha.ac.jp/~asai/Black/
+description Black is an extension of Scheme with a reflective construct exec-at-metalevel. It executes its argument at the metalevel where the interpreter that executes user programs is running. There, one can observe, access, and even modify the metalevel interpreter in any way. Because the metalevel interpreter determines the operational semantics of the language, Black effectively allows us to observe, access, and modify the language semantics from within the same language framework.
+writtenIn scheme
+
+country Japan
+
+example
+ (define eval-instr
+  (lambda (exp env cont)
+    (let ((original-eval-application eval-application)
+          (instr-counter 0))
+      (set! eval-application
+            (lambda (exp env cont)
+              (set! instr-counter (+ instr-counter 1))
+              (original-eval-application exp env cont)))
+      (base-eval exp env (lambda (ans)
+                           (set! eval-application original-eval-application)
+                           (display "#app: ") (write instr-counter) (newline)
+                           (cont ans))))))
+ (let ((original-eval-application eval-application))
+  (set! eval-application
+
+	(lambda (exp env cont)
+	   (cond ((eq? (car exp) 'instr)
+		  (eval-instr (car (cdr exp)) env cont))
+		 (else
+		  (original-eval-application exp env cont))))))
