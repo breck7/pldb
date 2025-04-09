@@ -2,7 +2,8 @@
 
 id kernel
 name kernel
-appeared 2009
+appeared 2005
+creators John Shutt
 tags pl
 website https://web.cs.wpi.edu/~jshutt/kernel.html
 aka klisp
@@ -12,3 +13,10 @@ lab Worcester Polytechnic Institute
 country United States
 reference https://bitbucket.org/AndresNavarro/klisp
 reference https://web.cs.wpi.edu/~jshutt/sink-01m10.tar.gz
+
+example
+ ($define! copy-es-immutable
+  ($lambda (object)
+   (((wrap $vau) ()
+    #ignore
+     (cons (unwrap list) object)))))
