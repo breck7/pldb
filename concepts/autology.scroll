@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id autology
+name Autology
+appeared 2025
+creators Dave Kimber
+tags pl lisp
+description Autology is a Lisp with access to its own interpreter.
+
+example
+ (bind (;; grab a copy of the `:atl/eval-list` section of the
+       ;; interpreter which is responsible for evaluating lists.
+       original (get-marker *i* :atl/eval-list)
+       ;; define a case test+body for use when the list expression
+       ;; starts with our function special form, in this case `λ`.
+       λ-form (qu (λ (let [[_λ params body] e]
+                       (fn [& values]
+                         (autology.core/evaluate
+                          body
+                          (reduce (fn [acc-env [s v]]
+                                    (assoc acc-env s v))
+                                  env
+                                  (zipmap params values)))))))
+       ;; rebind `*i*` to be a new interpreter with the
+       ;; `:atl/eval-list` section replaced with a version that
+       ;; includes our lambda handling special form.
+       *i* (replace-marker *i* :atl/eval-list
+                           (list :atl/eval-list
+                                 (concat (butlast original)
+                                         λ-form
+                                         (list (last original)))))
+       ;; We can now immediately define functions since the
+       ;; interpreter will have already been updated to evaluate the
+       ;; remaining bindings like this one.
+       double (λ (n)
+                 (+ n n)))
+      ;; Finally we can invoke our new function!
+      (double (double (double (double (double 1.3125))))))
+
+githubRepo https://github.com/Kimbsy/autology
