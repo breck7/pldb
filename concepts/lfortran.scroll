@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id lfortran
+name LFortran
+appeared 2018
+creators Ondrej Certik
+tags pl compiler
+website https://lfortran.org/
+blog https://lfortran.org/blog/
+webRepl https://dev.lfortran.org/
+description LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user's code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user's code on modern architectures such as multi-core CPUs and GPUs.
+
+implementationOf fortran
+docs https://docs.lfortran.org/
+emailList https://groups.io/g/lfortran
+
+twitter https://twitter.com/lfortranorg
+discourse https://fortran-lang.discourse.group/
+example
+ program expr2
+     implicit none
+ 
+     integer :: x
+ 
+     x = (2+3)*5
+     print *, x
+ end program
+
+githubRepo https://github.com/lfortran/lfortran
