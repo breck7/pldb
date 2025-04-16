@@ -3,10 +3,12 @@
 id sympy
 name SymPy
 appeared 2007
-tags library
+creators Ondrej Certik
+tags library mathematics
 website https://www.sympy.org/
 writtenIn python restructuredtext svg markdown jupyter-notebook perl yaml bourne-shell xslt json tex xml make toml css javascript html dockerfile scheme
 
+related mathematica sagemath
 repoStats
  firstCommit 2007
  commits 60155
@@ -27,6 +29,8 @@ githubRepo https://github.com/sympy/sympy
  updated 2024
  description A computer algebra system written in pure Python
  issues 5104
+
+wikipedia https://en.wikipedia.org/wiki/SymPy
 
 domainName sympy.org
  registered 2007
