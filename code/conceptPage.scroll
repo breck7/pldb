@@ -1,8 +1,6 @@
 importOnly
-replace BASE_URL ..
-
 testStrict
- temporarily disable until we can figure out problem with examples
+replace BASE_URL ..
 
 tags All
 
