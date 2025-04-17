@@ -1,11 +1,11 @@
 importOnly
 testStrict
-replace BASE_URL ..
 
 tags All
 
 measures.parsers
 
+replace BASE_URL ..
 evalNodeJs
  const path = require("path")
  const filePath = particle.root.filePath
