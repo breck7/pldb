@@ -1,0 +1,19 @@
+../code/conceptPage.scroll
+
+id de-bruijn-notation
+name De Bruijn Notation
+appeared 1972
+creators Nicolaas Govert de Bruijn
+tags notation
+description De Bruijn Notation is a representation system for lambda calculus that eliminates variable names by using numerical indices to refer to binders, avoiding issues with alpha-equivalence and variable capture. It is widely used in theoretical computer science and functional programming implementations.
+lab Eindhoven University of Technology
+
+influencedBy lambda-calculus
+country Netherlands
+reference https://www.sciencedirect.com/science/article/pii/1385725872900340
+
+example
+ λ λ 2 1
+ # Represents the lambda term λx.λy.x y in traditional lambda calculus, where 2 refers to the outer binder (x) and 1 to the inner binder (y).
+
+wikipedia https://en.wikipedia.org/wiki/De_Bruijn_notation
