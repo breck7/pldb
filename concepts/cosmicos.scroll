@@ -3,10 +3,19 @@
 id cosmicos
 name CosmicOS
 appeared 2000
+creators Paul Fitzpatrick
 tags pl
+website https://cosmicos.github.io/
+webRepl https://cosmicos.github.io/evaluate.html
 lab MIT
 
+influencedBy lisp lambda-calculus
 country United States
 reference https://people.csail.mit.edu/paulfitz/cosmicos.shtml
+
+example
+ (> 20 10)
+
+githubRepo https://github.com/paulfitz/cosmicos
 
 hopl https://hopl.info/showlanguage.prx?exp=6959
