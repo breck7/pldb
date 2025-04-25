@@ -1,0 +1,21 @@
+../code/conceptPage.scroll
+
+id attempto
+name Attempto Controlled English
+appeared 1995
+creators Norbert E. Fuchs and Rolf Schwitter
+tags pl knowledgeBase queryLanguage
+website http://attempto.ifi.uzh.ch/site/
+aka ACE
+description Attempto Controlled English (ACE) allows domain specialists to interactively formulate requirements specifications in domain concepts. ACE can be accurately and efficiently processed by a computer, but is expressive enough to allow natural usage. The Attempto system translates specification texts in ACE into discourse representation structures and optionally into Prolog. Translated specification texts are incrementally added to a knowledge base. This knowledge base can be queried in ACE for verification, and it can be executed for simulation, prototyping and validation of the specification.
+lab University of Zurich
+paper https://arxiv.org/abs/cmp-lg/9603003
+compilesTo prolog
+
+country Switzerland
+
+example
+ The customer enters a card and a numeric personal code.
+ If it is not valid then SM rejects the card.
+
+wikipedia https://en.wikipedia.org/wiki/Attempto_Controlled_English
