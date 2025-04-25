@@ -7,6 +7,7 @@ creators Hans Kamp
 tags knowledgeBase notation
 standsFor Discourse Representation Structures
 description Discourse Representation Structures (DRS) is a formal notation within Discourse Representation Theory (DRT), designed to represent the semantics of natural language discourse. It uses box-like structures to capture referents, conditions, and their relationships, enabling dynamic semantic analysis for anaphora and context-sensitive expressions.
+paper https://brill.com/edcollchap-oa/book/9789004252882/BP000014.xml
 
 example
  [x,y] { man(x), dog(y), owns(x,y) }
