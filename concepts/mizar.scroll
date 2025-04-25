@@ -3,10 +3,28 @@
 id mizar
 name Mizar
 appeared 1973
-tags pl
+creators Andrzej Trybulec
+tags pl mathematics
+website https://mizar.uwb.edu.pl/project/
 lab University of Alberta
+description The Mizar Language is a formal language derived from the mathematical vernacular. The principle idea of its author was to design a language readable for mathematicians and, simultaneously, sufficiently rigorous to enable processing and verifying by computer software. A script written according to the Mizar Syntax is called a Mizar Article.
 
 country Canada
 reference https://semanticscholar.org/paper/4393b874f1ca7cfc3280629e58de965911e2defd
+
+example
+ environ
+ 
+   vocabularies ARYTM, XCMPLX_0;
+   constructors ARYTM_0, XCMPLX_0;
+   notations ORDINAL1, NUMBERS, ARYTM_0, XCMPLX_0;
+   requirements ARITHM, BOOLE;
+   registrations ORDINAL1, XCMPLX_0;
+ 
+ begin
+ 
+   for k being complex number holds k + 0 = k;
+
+wikipedia https://en.wikipedia.org/wiki/Mizar_system
 
 hopl https://hopl.info/showlanguage.prx?exp=5810
