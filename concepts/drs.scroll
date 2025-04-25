@@ -1,0 +1,15 @@
+../code/conceptPage.scroll
+
+id drs
+name DRS
+appeared 1981
+creators Hans Kamp
+tags knowledgeBase notation
+standsFor Discourse Representation Structures
+description Discourse Representation Structures (DRS) is a formal notation within Discourse Representation Theory (DRT), designed to represent the semantics of natural language discourse. It uses box-like structures to capture referents, conditions, and their relationships, enabling dynamic semantic analysis for anaphora and context-sensitive expressions.
+
+example
+ [x,y] { man(x), dog(y), owns(x,y) }
+ # Represents "A man owns a dog," capturing referents x (man) and y (dog).
+
+wikipedia https://en.wikipedia.org/wiki/Discourse_representation_theory
