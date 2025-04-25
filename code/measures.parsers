@@ -2363,6 +2363,7 @@ tagsParser
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
+ atoms measureNameAtom tagAtom
  catchAllAtomType tagAtom
 
 ubuntuPackageParser
