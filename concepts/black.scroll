@@ -26,9 +26,8 @@ example
                            (cont ans))))))
  (let ((original-eval-application eval-application))
   (set! eval-application
-
-	(lambda (exp env cont)
-	   (cond ((eq? (car exp) 'instr)
-		  (eval-instr (car (cdr exp)) env cont))
-		 (else
-		  (original-eval-application exp env cont))))))
+ (lambda (exp env cont)
+    (cond ((eq? (car exp) 'instr)
+    (eval-instr (car (cdr exp)) env cont))
+   (else
+  (original-eval-application exp env cont))))))
