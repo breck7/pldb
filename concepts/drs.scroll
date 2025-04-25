@@ -10,7 +10,9 @@ description Discourse Representation Structures (DRS) is a formal notation withi
 paper https://brill.com/edcollchap-oa/book/9789004252882/BP000014.xml
 
 example
- [x,y] { man(x), dog(y), owns(x,y) }
+ man(x)
+ dog(y)
+ owns(x,y)
  # Represents "A man owns a dog," capturing referents x (man) and y (dog).
 
 wikipedia https://en.wikipedia.org/wiki/Discourse_representation_theory
