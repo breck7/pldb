@@ -13,3 +13,12 @@ related drs
 country Australia
 reference https://apps.dtic.mil/sti/tr/pdf/ADA515408.pdf
 reference https://aclanthology.org/U09-1011.pdf
+
+example
+ [drs([A, B, C],
+ [theta(A, theme, C)#[1],
+ event(A, working)#[1],
+ theta(A, location, B)#[1],
+ named(B, macquarie university)#[1, [third, sg, neut],
+ [’Macquarie’,’University’]],
+ named(C, david miller)#[1, [third, sg, masc],[’David’,’Miller’]]])]
