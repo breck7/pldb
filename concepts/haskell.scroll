@@ -146,7 +146,7 @@ hasTypeInference true
 hasLineComments true
  -- A comment
 hasFunctions true
-hasFunctionOverloading TODO
+hasFunctionOverloading false
 hasNamedArguments false
 hasFunctionComposition true
  foo = f . g
