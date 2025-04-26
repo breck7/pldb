@@ -136,6 +136,9 @@ hasClasses true
 hasConstants true
 hasExceptions true
 hasFunctions true
+hasFunctionOverloading true
+hasNamedArguments true
+ "abcdef".subSequence(startIndex=2, endIndex=4)
 hasAccessModifiers true
 hasConditionals true
 hasStandardLibrary true

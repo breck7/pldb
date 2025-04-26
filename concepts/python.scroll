@@ -264,6 +264,13 @@ hasPrintDebugging true
 isCaseSensitive true
 hasWhileLoops true
 hasFunctions true
+hasFunctionOverloading false
+ may be simulated using `**kwargs` or `functools.singledispatch`
+hasNamedArguments true
+ print("Hello", end="!\n")
+ 
+ # details: any parameter that hasn't been explicitly marked as positional-only
+ # can be provided as a named argument
 hasOctals true
  # 0[oO](?:_?[0-7])+
 hasHexadecimals true

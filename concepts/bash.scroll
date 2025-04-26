@@ -92,6 +92,8 @@ hasImports true
  source ./bash.sh
 hasWhileLoops true
 hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasConditionals true
 hasStandardLibrary true
  echo "Hello, World!"

@@ -176,6 +176,7 @@ hasFunctionOverloading true
  double volume(const double r, const int h) {
    return 3.1415926*r*r*static_cast<double>(h);
  }
+hasNamedArguments false
 hasNamespaces true
  #include <iostream>
  using namespace std;

@@ -127,6 +127,8 @@ hasMixins true
  class SmartObject implements Disposable, Activatable {
  }
  // Note: still need to do some runtime ops to make that work.
+hasNamedArguments false
+ // idiomatically emulated using parameters that expect objects
 hasNamespaces true
  // Typescript even supports splitting namespaces across multiple files:
  // Validation.ts
