@@ -135,6 +135,15 @@ hasExceptions true
     end
   end
  hello
+hasNamedArguments true
+ String.new("abc", encoding: "utf-8", capacity: 16)
+
+ # details: when defining a method, parameters are positional-only by default,
+ # but can be made keyword parameters (i.e. named) by appending a colon (:),
+ # optionally followed by a default value:
+ def greet(name, time_of_day:, location: "our great city")
+   puts "Hello this fine #{time_of_day} in #{location}, #{name}!"
+ end
 hasFunctionOverloading false
 hasAsyncAwait false
 hasConstants true

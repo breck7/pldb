@@ -238,6 +238,8 @@ hasAnonymousFunctions true
  (() => console.log("hello world"))()
 hasMacros false
 hasFunctionOverloading false
+hasNamedArguments false
+ // idiomatically emulated using parameters that expect objects
 hasMultilineStrings true
  const lines = `one
  two`

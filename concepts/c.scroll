@@ -253,6 +253,9 @@ hasConstants true
 hasConditionals true
 hasFixedPoint false
 hasScientificNotation true
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasStandardLibrary true
  #include <stdio.h>
 

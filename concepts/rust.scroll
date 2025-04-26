@@ -199,6 +199,9 @@ hasWhileLoops true
 hasConstants true
 hasSinglePassParser false
 hasConditionals true
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasStandardLibrary true
  println!("Hello, World!");
 

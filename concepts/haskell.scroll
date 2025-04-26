@@ -145,6 +145,9 @@ hasCaseInsensitiveIdentifiers false
 hasTypeInference true
 hasLineComments true
  -- A comment
+hasFunctions true
+hasFunctionOverloading TODO
+hasNamedArguments false
 hasFunctionComposition true
  foo = f . g
 hasRangeOperators true

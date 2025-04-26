@@ -157,6 +157,9 @@ hasWhileLoops true
 hasClasses true
 hasExceptions true
 hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments true
+ "abcdef".slice(from=2, until=4)
 hasInheritance true
 hasConditionals true
 hasStandardLibrary true

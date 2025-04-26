@@ -134,6 +134,10 @@ hasPointers false
 hasStrings true
  "hello world"
 hasComments true
+hasFunctions true
+ TODO
+hasFunctionOverloading true
+hasNamedArguments false
 hasConstructors true
 hasGarbageCollection true
 hasImports true

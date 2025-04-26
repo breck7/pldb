@@ -1361,6 +1361,12 @@ hasMultipleInheritanceParser
  string pseudoExample extends parentWhichExtendsSomethingElse
  string reference https://en.wikipedia.org/wiki/Multiple_inheritance
 
+hasNamedArgumentsParser
+ extends abstractFeatureParser
+ description Does the language have named arguments / named parameters?
+ string title Named Arguments
+ string reference https://en.wikipedia.org/wiki/Named_parameter
+
 hasNamespacesParser
  extends abstractFeatureParser
  description Does the language have a namespace construct?
