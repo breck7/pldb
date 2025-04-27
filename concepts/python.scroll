@@ -107,6 +107,42 @@ canWriteToDisk true
  with open('helloworld.txt', 'w') as filehandle:
   filehandle.write('Hello, world!\n')
 hasDuckTyping true
+hasStructuralTyping true
+ # Python's optional static type system features 2 kinds of structural types:
+ from typing import Protocol
+ 
+ class Clearable(Protocol):
+   def clear(self): ...
+ 
+ def print_and_clear(x: Clearable):
+   print(x)
+   x.clear()
+ 
+ print_and_clear([1, 2, 3])  # OK because lists have a clear() method
+ print_and_clear({1, 2, 3})  # OK because sets have a clear() method
+ print_and_clear(1)          # not OK because ints don't have a clear() method
+ 
+ from typing import TypedDict
+ 
+ class NameDict(TypedDict):
+   first_name: str
+   last_name: str
+ 
+ class EmployeeDict(TypedDict):
+   employee_id: int
+   first_name: str
+   last_name: str
+ 
+ def greet(name: NameDict):
+   print(f"Hello {name['first_name']} {name['last_name']}!")
+ 
+ john: EmployeeDict = {
+   "first_name": "John", "last_name": "Smith", "employee_id": 123
+ }
+ 
+ # EmployeeDict is a (structural) subtype of NameDict even though there is no
+ # explicit relation between them, so this passes type checking:
+ greet(john)
 hasSingleDispatch true
 hasTypeClasses false
 hasRegularExpressionsSyntaxSugar false

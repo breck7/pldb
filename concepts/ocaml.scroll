@@ -68,6 +68,7 @@ hasComments true
   * comment.
   *)
 hasMultipleInheritance true
+hasStructuralTyping true
 hasTypeClasses false
  supposedly modules offer similar functionality: https://accu.org/journals/overload/25/142/fletcher_2445/
 hasTypeInference true

@@ -172,6 +172,11 @@ hasPrintDebugging true
  println!("Hi");
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasStructuralTyping false
+ tuples can be seen as structural, [1] but other fundamental types like structs
+ and traits are not structural and don't have structural analogues
+
+ [1]: https://doc.rust-lang.org/reference/types/tuple.html
 hasTypeClasses true
  // https://doc.rust-lang.org/book/ch10-02-traits.html
  trait ToTypedJson {
