@@ -107,6 +107,15 @@ canWriteToDisk true
  with open('helloworld.txt', 'w') as filehandle:
   filehandle.write('Hello, world!\n')
 hasDuckTyping true
+hasTypeAnnotations true
+ name: str
+hasStaticTyping true
+ # Optional, checkable using external type checkers like Mypy or Pyright
+ def print_repeated(text: str, repetitions: int) -> None:
+   print("\n".join([text]*repetitions))
+ 
+ print_repeated("Hello!", 10)
+ print_repeated("This won't typecheck...", "not an integer")
 hasStructuralTyping true
  # Python's optional static type system features 2 kinds of structural types:
  from typing import Protocol

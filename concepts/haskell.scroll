@@ -82,6 +82,7 @@ hasRunTimeGuards true
  f x
   | x > 0 = 1
   | otherwise = 0
+hasStaticTyping true
 hasTypeClasses true
  class ToTypedJson a where
    toTypedJson :: a -> String

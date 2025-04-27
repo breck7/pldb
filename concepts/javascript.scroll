@@ -263,6 +263,7 @@ hasSwitch true
   case "dog": console.log("yay"); break;
   case "cat": console.log("oh"); break;
  }
+hasStaticTyping false
 hasStructuralTyping false
 hasTypeClasses false
 hasTernaryOperators true

@@ -129,6 +129,7 @@ hasImplicitArguments true
    }
  }
 hasOperatorOverloading true
+hasStaticTyping true
 hasStructuralTyping true
  // https://docs.scala-lang.org/scala3/reference/changed-features/structural-types.html#using-java-reflection-1
  import scala.reflect.Selectable.reflectiveSelectable
