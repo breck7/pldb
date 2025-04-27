@@ -154,6 +154,23 @@ hasPrintDebugging true
 hasInheritance true
  class B {}
  class A extends B {}
+hasStructuralTyping true
+ // https://www.typescriptlang.org/docs/handbook/type-compatibility.html
+ // Subtype relations are structural for both interfaces and classes.
+ // Interface example:
+ interface CanCheckIncludes<T> {
+     includes(x: T): boolean;
+ }
+ 
+ function logIfIncludes<T>(includer: CanCheckIncludes<T>, includee: T) {
+     if (includer.includes(includee)) {
+         console.log(includer);
+     }
+ }
+ 
+ logIfIncludes("abc", "b");
+ logIfIncludes([1, 2, 3], 4);
+ logIfIncludes(1, 1);  // Fails typechecking, as numbers don't have includes()
 hasStaticTyping true
 hasTypeClasses false
   https://github.com/microsoft/TypeScript/issues/10844#issuecomment-256182331

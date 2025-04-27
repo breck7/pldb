@@ -98,6 +98,7 @@ hasNamedArguments false
 hasConditionals true
 hasStandardLibrary true
  echo "Hello, World!"
+hasStructuralTyping false
 
 jupyterKernel https://github.com/takluyver/bash_kernel
 wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)

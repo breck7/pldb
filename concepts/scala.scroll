@@ -129,6 +129,19 @@ hasImplicitArguments true
    }
  }
 hasOperatorOverloading true
+hasStructuralTyping true
+ // https://docs.scala-lang.org/scala3/reference/changed-features/structural-types.html#using-java-reflection-1
+ import scala.reflect.Selectable.reflectiveSelectable
+ 
+ type Reversable[T] = { def reverse: T }
+ 
+ def printReversed[T](x: Reversable[T]): Unit = {
+   println(x.reverse)
+ }
+ 
+ printReversed("abc")
+ printReversed(Array(1, 2, 3))
+ printReversed(1)  // Doesn't compile because integers don't have a reverse method
 hasTypeClasses true
  // https://docs.scala-lang.org/scala3/book/ca-type-classes.html
  trait TypedJsonConvertible[A]:

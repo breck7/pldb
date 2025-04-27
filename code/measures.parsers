@@ -1622,6 +1622,12 @@ hasStructsParser
  string pseudoExample struct pldbFile { int rank; char *title; };
  string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)
 
+hasStructuralTypingParser
+ extends abstractFeatureParser
+ description Does the language feature (significant) structural typing?
+ string title Structural Typing
+ string reference https://en.wikipedia.org/wiki/Structural_type_system
+
 hasSwitchParser
  extends abstractFeatureParser
  description Does the language have switch statements or expressions?

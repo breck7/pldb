@@ -227,17 +227,14 @@ hasVirtualFunctions true
      std::cout << "Llamas eat grass!" << std::endl;
    }
  };
-hasTypeClasses true
+hasStructuralTyping true
+ // concepts use structural typing:
  #include <iostream>
  #include <string>
  
  using namespace std;
  
- // NOTE that in contrast to other typeclass-supporting languages,
- // concept (= typeclass) implementations
- // a) MUST be defined BEFORE the concept is introduced and
- // b) do not reference the concept directly, because the association
- //    is structural, not nominal.
+ // NOTE that concept implementations MUST be defined BEFORE the concept itself
  string toTypedJson(int x) {
    return "{\"type\": \"int\", \"value\": " + to_string(x) + "}";
  }
@@ -255,6 +252,7 @@ hasTypeClasses true
  int main() {
    printAsTypedJson(123);
  }
+hasTypeClasses false
 hasThreads true
 hasClasses true
 hasExceptions true
