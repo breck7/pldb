@@ -227,6 +227,7 @@ hasVirtualFunctions true
      std::cout << "Llamas eat grass!" << std::endl;
    }
  };
+hasStaticTyping true
 hasStructuralTyping true
  // concepts use structural typing:
  #include <iostream>

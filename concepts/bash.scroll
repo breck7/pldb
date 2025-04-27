@@ -98,6 +98,7 @@ hasNamedArguments false
 hasConditionals true
 hasStandardLibrary true
  echo "Hello, World!"
+hasStaticTyping false
 hasStructuralTyping false
 
 jupyterKernel https://github.com/takluyver/bash_kernel

@@ -129,6 +129,7 @@ hasGenerics true
  v.add("test");
  Integer i = v.get(0); // (type error)  compilation-time error
 hasSingleDispatch true
+hasStaticTyping true
 hasStructuralTyping false
  https://stackoverflow.com/q/44484287
 hasTypeClasses false

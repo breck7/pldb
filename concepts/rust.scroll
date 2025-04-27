@@ -172,6 +172,7 @@ hasPrintDebugging true
  println!("Hi");
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasStaticTyping true
 hasStructuralTyping false
  tuples can be seen as structural, [1] but other fundamental types like structs
  and traits are not structural and don't have structural analogues
