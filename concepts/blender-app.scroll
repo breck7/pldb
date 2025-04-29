@@ -3,7 +3,9 @@
 id blender-app
 name Blender
 appeared 1998
+creators Ton Roosendaal
 tags application
+website https://www.blender.org/
 lab Blender Foundation
 fileExtensions blend
 
@@ -20,6 +22,8 @@ leachim6 Blender
   text.setText("Hello World")
   Scene.GetCurrent().objects.new(text)
   Blender.Redraw()
+
+gitRepo https://projects.blender.org/blender/blender.git
 
 wikipedia https://en.wikipedia.org/wiki/Blender_(software)
  summary Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, rendering, motion graphics, video editing and compositing. While current versions also feature an integrated game engine, the upcoming 2.8 release will remove it.
