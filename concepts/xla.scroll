@@ -7,6 +7,7 @@ tags compiler
 website https://openxla.org
 description XLA (Accelerated Linear Algebra) is an open source compiler for machine learning. The XLA compiler takes models from popular frameworks such as PyTorch, TensorFlow, and JAX, and optimizes the models for high-performance execution across different hardware platforms including GPUs, CPUs, and ML accelerators.
 lab Google
+writtenIn cpp bazel starlark python protobuf markdown diff cmake bourne-shell yaml svg pascal jupyter-notebook json c llvmir
 
 repoStats
  firstCommit 2017
