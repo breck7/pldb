@@ -1,0 +1,50 @@
+../code/conceptPage.scroll
+
+id off
+name Object File Format
+appeared 1991
+creators Stuart Levy and Tamara Munzner and Mark Phillips
+tags textDataFormat 3d
+aka OFF
+fileExtensions off
+
+isPublicDomain true
+isOpenSource true
+fileType text
+reference http://www.holmes3d.net/graphics/offfiles/offdesc.txt
+reference https://dl.acm.org/doi/pdf/10.1145/220279.220327
+
+example
+ OFF
+ # A simple cube
+ 8 6 12
+ 0.0 0.0 0.0
+ 1.0 0.0 0.0
+ 1.0 1.0 0.0
+ 0.0 1.0 0.0
+ 0.0 0.0 1.0
+ 1.0 0.0 1.0
+ 1.0 1.0 1.0
+ 0.0 1.0 1.0
+ 4 0 1 2 3
+ 4 5 4 7 6
+ 4 1 5 6 2
+ 4 4 0 3 7
+ 4 3 2 6 7
+ 4 0 4 5 1
+
+hasSemanticIndentation false
+hasComments true
+ # This is a comment in an OFF file
+hasLineComments true
+ # Single-line comment
+hasMultiLineComments false
+hasStrings false
+hasIntegers true
+ 3 3 1 # Example: number of vertices, faces, edges
+hasFloats true
+ 0.5 0.5 0.5 # Example: vertex coordinates
+hasLists true
+ 3 0 1 2 # Example: face definition with vertex indices
+
+wikipedia https://en.wikipedia.org/wiki/OFF_(file_format)
