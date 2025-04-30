@@ -1,0 +1,15 @@
+../code/conceptPage.scroll
+
+id sif
+name SIF
+appeared 1997
+creators Carlo H. Séquin
+tags textDataFormat 3d
+website https://people.eecs.berkeley.edu/~sequin/SIF/sif.html
+standsFor Solids Interchange Format
+description SIF is a simple language -- or actually a small collection of dialects of the same language -- to describe and exchange solid parts and small assemblies across the interface between designer and a manufacturer or a fabrication service.
+
+related stl-format
+
+example
+ (surface 1 (v 10 1 - 1))
