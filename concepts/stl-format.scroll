@@ -1,0 +1,26 @@
+../code/conceptPage.scroll
+
+id stl-format
+name STL Format
+appeared 1987
+creators Chuck Hull
+tags dataNotation 3d
+standsFor Stereolithography Format
+lab 3D Systems
+description STL (Stereolithography) is a file format native to the stereolithography CAD software created by 3D Systems. It describes the surface geometry of a 3D object using triangular meshes, widely used in 3D printing, rapid prototyping, and computer-aided manufacturing. STL files can be stored in ASCII or binary formats.
+fileExtensions stl
+
+country United States
+
+example
+ solid HelloWorld
+   facet normal 0.0 0.0 1.0
+     outer loop
+       vertex 0.0 0.0 0.0
+       vertex 1.0 0.0 0.0
+       vertex 0.0 1.0 0.0
+     endloop
+   endfacet
+ endsolid HelloWorld
+
+wikipedia https://en.wikipedia.org/wiki/STL_(file_format)
