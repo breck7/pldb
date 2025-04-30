@@ -7,6 +7,7 @@ tags pl 3d
 website https://graphics.pixar.com/usd/release/index.html
 standsFor Universal Scene Description
 lab Pixar
+fileExtensions usd usda usdz
 
 pygmentsHighlighter USD
  filename usd.py
@@ -20,6 +21,8 @@ example
      {
      }
  }
+
+githubRepo https://github.com/PixarAnimationStudios/OpenUSD
 
 hasLineComments true
 hasComments true
