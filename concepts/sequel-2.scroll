@@ -3,9 +3,13 @@
 id sequel-2
 name SEQUEL 2
 appeared 1976
-tags pl
+creators creators Donald D. Chamberlin and M. M. Astrahan and K. P. Eswaran and P. P. Griffiths and Raymond Lorie and J. W. Mehl and P. Reisner and B. W. Wade
+tags queryLanguage database
 lab IBM
+paper https://doi.org/10.1147/rd.206.0560
+description Sequel 2 is a relational data language that provides a consistent, English keyword-oriented set of facilities for query, data definition, data manipulation, and data control. Sequel 2 may be used either as a stand-alone interface for nonspecialists in data processing or as a data sublanguage embedded in a host programming language for use by application programmers and data base administrators.
 
+influencedBy relational-model sql
 country United States
 reference https://semanticscholar.org/paper/b5cab20a32862302d24fc4dbfc454090d132124e
 
