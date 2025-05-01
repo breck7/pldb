@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id linkml
+name LinkML
+appeared 2021
+creators Chris Mungall and Harold Solbrig
+tags schema dataValidationLanguage yamlFormat
+website https://linkml.io
+description LinkML is a general purpose modeling language that can be used with linked data, JSON, and other formalisms.
+paper https://zenodo.org/badge/latestdoi/13996/linkml/linkml
+
+example
+ classes:
+  Person:
+    is_a: NamedThing  ## parent class, defines id, name, ...
+    description: >-
+      A person (alive, dead, undead, or fictional).
+    class_uri: schema:Person
+    mixins:
+      - HasAliases
+    slots:
+      - primary_email
+      - birth_date
+      - age_in_years
+      - gender
+      - current_address
+      - has_employment_history
+      - has_familial_relationships
+      - has_medical_history
+
+githubRepo https://github.com/linkml/linkml
