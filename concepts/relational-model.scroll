@@ -2,11 +2,13 @@
 
 id relational-model
 name Relational Model
-appeared 1970
+appeared 1969
 creators Edgar F. Codd
 tags queryLanguage database
 description The Relational Model is a mathematical framework for organizing and managing data in databases using tables (relations), where data is stored in rows (tuples) and columns (attributes). It introduced the concept of relational algebra and provided a formal basis for querying and manipulating data, forming the foundation for modern relational database management systems (RDBMS).
 lab IBM
 paper https://dl.acm.org/doi/10.1145/362384.362685
+
+influencedBy relational-data-file
 
 wikipedia https://en.wikipedia.org/wiki/Relational_model
