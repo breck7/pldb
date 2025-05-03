@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id csg
+name CSG
+appeared 2008
+creators Marius Kintel and Clifford Wolf
+tags 3d textDataFormat
+spec https://github.com/openscad/openscad/wiki/CSG-File-Format
+description The CSG file format is a text-based format used by OpenSCAD to represent constructive solid geometry (CSG) operations for 3D modeling. It defines a tree of geometric primitives and operations (union, difference, intersection) to create complex 3D models. CSG files are typically used as an intermediate representation in OpenSCAD for rendering and exporting 3D designs.
+fileExtensions csg
+
+isOpenSource true
+related openscad
+docs https://github.com/openscad/openscad/wiki/CSG-File-Format
+country Norway
+
+example
+ cylinder(h=3.0, r=0.5, center=true);
