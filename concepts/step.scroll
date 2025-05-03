@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id step
+name STEP
+appeared 1994
+tags standard dataNotation 3d
+website https://www.iso.org/standard/63141.html
+description ISO 10303-21, also known as STEP-File or STEP Physical File, is a file format standard for the exchange of product model data as part of the ISO 10303 (STEP) standard. It defines a clear text encoding for the EXPRESS data modeling language, enabling the representation and exchange of product data across different CAD, CAM, and CAE systems.
+fileExtensions stp step p21
+
+iso https://www.iso.org/standard/63141.html
+fileType text
+
+example
+ ISO-10303-21;
+ HEADER;
+ FILE_DESCRIPTION(
+ /* description */ ('A minimal AP214 example with a single part'),
+ /* implementation_level */ '2;1');
+ FILE_NAME(
+ /* name */ 'demo',
+ /* time_stamp */ '2003-12-27T11:57:53',
+ /* author */ ('Lothar Klein'),
+ /* organization */ ('LKSoft'),
+ /* preprocessor_version */ ' ',
+ /* originating_system */ 'IDA-STEP',
+ /* authorization */ ' ');
+ FILE_SCHEMA (('AUTOMOTIVE_DESIGN { 1 0 10303 214 2 1 1}'));
+ ENDSEC;
+ DATA;
+ #10=ORGANIZATION('O0001','LKSoft','company');
+ #11=PRODUCT_DEFINITION_CONTEXT('part definition',#12,'manufacturing');
+ #12=APPLICATION_CONTEXT('mechanical design');
+ #13=APPLICATION_PROTOCOL_DEFINITION('','automotive_design',2003,#12);
+ #14=PRODUCT_DEFINITION('0',$,#15,#11);
+ #15=PRODUCT_DEFINITION_FORMATION('1',$,#16);
+ #16=PRODUCT('A0001','Test Part 1','',(#18));
+ #17=PRODUCT_RELATED_PRODUCT_CATEGORY('part',$,(#16));
+ #18=PRODUCT_CONTEXT('',#12,'');
+ #19=APPLIED_ORGANIZATION_ASSIGNMENT(#10,#20,(#16));
+ #20=ORGANIZATION_ROLE('id owner');
+ ENDSEC;
+ END-ISO-10303-21;
+
+hasStrings true
+ "Part1"
+hasComments true
+ /* This is a comment in a STEP file */
+hasStandardLibrary false
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/ISO_10303-21
