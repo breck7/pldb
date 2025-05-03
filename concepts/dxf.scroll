@@ -1,12 +1,14 @@
 ../code/conceptPage.scroll
 
 id dxf
-name AutoCAD DXF
+name DXF
 appeared 1982
-tags application cad
+tags 3d cad
+standsFor Drawing Exchange Format
 lab Autodesk
+description DXF (Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs. It is used to represent 2D and 3D drawings, including geometric and non-geometric data, in a structured text or binary format.
+fileExtensions dxf
 
-fileType text
 country United States
 
 wikipedia https://en.wikipedia.org/wiki/AutoCAD_DXF
