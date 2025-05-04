@@ -1,11 +1,14 @@
 ../code/conceptPage.scroll
 
 id wavefront-object
-name Wavefront Object
+name Wavefront OBJ format
 appeared 1988
-tags application 3d
+tags textDataFormat 3d
+aka OBJ
+description The Wavefront OBJ format is a format for defining the 3D geometry for the surface of one or more objects. The format was first used by Wavefront Technologies around 1990 and a specification was published to encourage interoperability. The introduction to the specification stated, "Object files define the geometry and other properties for objects in Wavefront’s Advanced Visualizer. Object files can also be used to transfer geometric data back and forth between the Advanced Visualizer and other applications." Since the mid 1990s, the ASCII-based format has been treated as a vendor-neutral format, referred to as 'Wavefront OBJ," "Alias/Wavefront OBJ," or simply "OBJ." In 2020, the format remains widely used, particularly for 3D printing of objects in multiple colors.
 
 fileType text
+reference https://www.loc.gov/preservation/digital/formats/fdd/fdd000507.shtml
 reference https://scholar.google.com/scholar?q=Wavefront+file+formats&hl=en&as_sdt=0%2C5&as_ylo=1980&as_yhi=1992
 
 wikipedia https://en.wikipedia.org/wiki/Wavefront_.obj_file
