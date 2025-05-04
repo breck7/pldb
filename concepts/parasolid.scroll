@@ -1,12 +1,13 @@
 ../code/conceptPage.scroll
 
 id parasolid
-name Parasolid
-appeared 2000
-tags application
-lab Siemens
-fileExtensions x_t x_b
+name Parasolid XT Format
+appeared 1988
+tags 3d textDataFormat
+description The Parasolid XT Format is a file format used by the Parasolid geometric modeling kernel to represent wireframe, surface, solid, cellular, and non-manifold models in external files. It stores topological and geometric information defining model shapes, with a published format for accessibility by applications without requiring the Parasolid kernel. The format is primarily used for translating geometric data between systems.
+fileExtensions x_t x_b xt
 
+docs https://www.13thmonkey.org/documentation/CAD/Parasolid-XT-format-reference.pdf
 country United States
 
 wikipedia https://en.wikipedia.org/wiki/Parasolid
