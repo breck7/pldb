@@ -1,0 +1,69 @@
+../code/conceptPage.scroll
+
+id mmcif
+name mmCIF
+appeared 1996
+tags textDataFormat chemistry biology
+website http://mmcif.wwpdb.org
+description mmCIF (Macromolecular Crystallographic Information File) is a text-based data format developed by the International Union of Crystallography (IUCr) for representing crystallographic information, particularly for macromolecular structures like proteins and nucleic acids. It extends the CIF (Crystallographic Information File) format with a richer dictionary for structural biology data. mmCIF is widely used in the Protein Data Bank (PDB) for storing and exchanging 3D structural data.
+fileExtensions cif mmcif
+
+isOpenSource true
+fileType text
+
+example
+ data_1BNA
+ _entry.id   1BNA
+ _struct.title
+ ;NMR Structure of a DNA Dodecamer
+ ;
+ _entity_poly.type  polydeoxyribonucleotide
+ _entity_poly.seq
+ ;CGCGAATTCGCG
+ ;
+ _atom_site.group_PDB
+ ATOM
+ _atom_site.id
+ 1
+ _atom_site.type_symbol
+ C
+ _atom_site.label_atom_id
+ C1'
+ _atom_site.label_comp_id
+ DG
+ _atom_site.label_seq_id
+ 1
+ _atom_site.Cartn_x
+ -2.123
+ _atom_site.Cartn_y
+ 3.456
+ _atom_site.Cartn_z
+ 7.890
+ #
+
+hasSemanticIndentation false
+hasLineComments true
+ # This is a comment in mmCIF
+hasMultiLineComments false
+hasBooleans false
+hasStrings true
+ "NMR Structure of a DNA Dodecamer"
+hasStandardLibrary false
+hasStructs true
+ _struct.title
+hasMaps true
+ _entry.id   1BNA
+hasLists false
+hasIntegers true
+ _atom_site.id 1
+hasFloats true
+ _atom_site.Cartn_x -2.123
+hasConditionals false
+hasFunctions false
+hasImports false
+hasExpressions false
+hasStatements false
+hasOperators false
+hasUnicodeIdentifiers false
+
+wikipedia https://en.wikipedia.org/wiki/Macromolecular_Crystallographic_Information_File
