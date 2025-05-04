@@ -1,0 +1,25 @@
+../code/conceptPage.scroll
+
+id iges
+name IGES
+appeared 1980
+creators Roger N. Nagel and Walt W. Braithwaite and Philip R. Kennicott
+tags 3d textDataFormat cad
+paper https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir80-1978.pdf
+description IGES (Initial Graphics Exchange Specification) is a vendor-neutral file format for exchanging 3D CAD models and associated data between different CAD systems. It supports geometry, topology, and annotations for engineering designs.
+
+fileType text
+country United States
+
+example
+     ,,,1H,,1H;,11Hpart.igs,16HIGES Generator X,32,38,6,308,15,9Hpart.igs,1.,2,2HMM,1,0.001,23/10/2024,0.001,1000.,8HNobody,9HUnknown,0,0;        G0000001
+     1H,,1H;,11Hpart.igs,16HIGES Generator X,32,38,6,308,15,9Hpart.igs,1.,2,2HMM,1,0.001,23/10/2024,0.001,1000.,8HNobody,9HUnknown,0,0;        G0000002
+     110       1       0       1       0       0       0       0       0       0       D0000001
+     110       0       0       1       0       0       0       0       0       0       D0000002
+     110,0.,0.,0.,100.,0.,0.;                                                                 P0000001
+
+hasStrings true
+hasIntegers true
+hasFloats true
+
+wikipedia https://en.wikipedia.org/wiki/IGES
