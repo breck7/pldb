@@ -1,0 +1,65 @@
+../code/conceptPage.scroll
+
+id sat
+name SAT
+appeared 1985
+creators Spatial Technology
+tags 3d cad textDataFormat
+aka Standard ACIS Text
+description SAT is a text-based file format for representing 3D geometric models using boundary representation (B-Rep). It is part of the ACIS modeling kernel, widely used in CAD software for precise solid and surface modeling.
+lab Spatial Technology
+fileExtensions sat
+
+isOpenSource false
+fileType text
+docs https://paulbourke.net/dataformats/sat/sat.pdf
+country United States
+reference https://www.spatial.com/products/3d-acis-modeling
+reference https://en.wikipedia.org/wiki/ACIS
+
+example
+ 400 0 1 0
+ 11 Scheme AIDE 11 ACIS 4.0 NT 24 Mon Apr 12 13:59:03 1998
+ 25.4 1e-06 1e-10
+ -0 body $1 $2 $-1 $3 #
+ -1 display_attribute-st-attrib $-1 $4 $-1 $0 1 #
+ -2 lump $-1 $-1 $5 $0 #
+ -3 transform $-1 1 0 0 0 0 -1 0 1 0 0 10 0 1 rotate no_reflect
+ no_shear #
+ -4 rgb_color-st-attrib $-1 $6 $1 $0010#
+ -5 shell $-1 $-1 $-1 $7 $-1 $2 #
+ -6 id_attribute-st-attrib $-1 $-1 $4 $0 1 #
+ -7 face $-1 $8 $9 $5 $-1 $10 forward single #
+ -8 face $-1 $11 $12 $5 $-1 $13 forward single #
+ -9 loop $-1 $14 $15 $7 #
+ -10 cone-surface $-1 0 0 0 0 0 1 10 0 0 1 I I 0 1 forwardIIII#
+ -11 face $-1 $-1 $16 $5 $-1 $17 forward single #
+ -12 loop $-1 $-1 $18 $8 #
+ -13 plane-surface $-1 0 0 -10 0 0 -1 -1 0 0 forward_vIIII#
+ -14 loop $-1 $-1 $19 $7 #
+ -15 coedge $-1 $15 $15 $18 $20 1 $9 $-1 #
+ -16 loop $-1 $-1 $21 $11 #
+ -17 plane-surface $-1 0 0 10 0 0 1 1 0 0 forward_vIIII#
+ -18 coedge $-1 $18 $18 $15 $20 0 $12 $-1 #
+ -19 coedge $-1 $19 $19 $21 $22 1 $14 $-1 #
+ -20 edge $-1 $23 $23 $18 $24 forward #
+ -21 coedge $-1 $21 $21 $19 $22 0 $16 $-1 #
+ -22 edge $-1 $25 $25 $21 $26 forward #
+ -23 vertex $-1 $20 $27 #
+ -24 ellipse-curve $-1 0 0 -10 0 0 -1 10001II#
+ -25 vertex $-1 $22 $28 #
+ -26 ellipse-curve $-1 0 0 10 0 0 1 10 0 0 1 I I #
+ -27 point $-1 10 0 -10 #
+ -28 point $-1 10 0 10 #
+ End-of-ACIS-data
+
+hasSemanticIndentation false
+hasLineComments false
+hasMultiLineComments false
+hasBooleans false
+hasStrings false
+hasIntegers true
+hasFloats true
+hasStandardLibrary false
+isCaseSensitive true
+hasCaseInsensitiveIdentifiers false
