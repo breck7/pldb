@@ -1,18 +1,31 @@
 ../code/conceptPage.scroll
 
 id plasma
-name plasma
+name Plasma
 appeared 2015
-tags pl
-website http://plasmalang.org/
-description <a href='http://plasmalang.org/'>Plasma</a>, which aims to strike a balance between functional and imperative programming, include state-of-the-art concurrent programming features and feature <a href='http://plasmalang.org/about.html#goal-conc-and-par'> automatic parallelisation</a>. Boney previously worked on <a href='http://mercurylang.org/'>Mercury</a> a logic language.</dd>
-lab https://github.com/PlasmaLang
+creators Paul Bone
+tags pl functional
+website http://plasmalang.org
+roadmap https://plasmalang.org/roadmap.html
+description Plasma, which aims to strike a balance between functional and imperative programming, include state-of-the-art concurrent programming features and feature automatic parallelisation. Boney previously worked on Mercury a logic language.
 
+docs https://plasmalang.org/docs/
+faq https://plasmalang.org/faq.html
 fileType text
 wordRank 3774
 country Australia
 
+example
+ func fib(n : Int) -> Int {
+    if (n < 2) {
+       return 1
+    } else {
+       return fib(n-1) + fib(n-2)
+    }
+ }
 twitter https://twitter.com/plasmalang
+
+githubRepo https://github.com/PlasmaLang/plasma
 
 domainName plasmalang.org
  registered 2015
