@@ -1,0 +1,65 @@
+../code/conceptPage.scroll
+
+id ply
+name PLY
+appeared 1994
+creators Greg Turk
+tags textDataFormat 3d
+website http://paulbourke.net/dataformats/ply/
+standsFor Polygon File Format
+description PLY is a computer file format known as the Polygon File Format or the Stanford Triangle Format. It was principally designed to store three-dimensional data from 3D scanners. The data storage format supports a relatively simple description of a single object as a list of nominally flat polygons, with attributes such as color, texture coordinates, and normals.
+lab Stanford University
+fileExtensions ply
+
+isOpenSource true
+fileType text
+country United States
+
+example
+ ply
+ format ascii 1.0
+ comment Mars model by Paul Bourke
+ element vertex 259200
+ property float x
+ property float y
+ property float z
+ element face 516960
+ property list uchar int vertex_indices
+ end_header
+ 15081.5 -3.45644e+06 65.8061
+ 15081 -3.45659e+06 197.422
+ 15078.2 -3.45648e+06 329.009
+ 15075.4 -3.45663e+06 460.597
+ 15071.2 -3.4567e+06 592.148
+ 15065.6 -3.45674e+06 723.653
+ 15059.9 -3.457e+06 855.16
+ 15050.7 -3.45674e+06 986.473
+ 
+      lots of vertices follow
+ 
+ 14541.2 3.33642e+06 -698.464
+ 14547.7 3.33663e+06 -571.58
+ 14551.5 3.33649e+06 -444.589
+ 14552.7 3.336e+06 -317.541
+ 14556.9 3.33645e+06 -190.56
+ 14558.7 3.33661e+06 -63.5247
+ 3 0 721 1
+ 3 721 0 720
+ 3 1 722 2
+ 3 722 1 721
+ 3 2 723 3
+ 3 723 2 722
+ 
+      lots of triangular facets follow
+ 
+
+hasSemanticIndentation false
+hasMultiLineComments false
+hasBooleans false
+hasIntegers true
+hasFloats true
+hasStrings true
+hasLists true
+hasStandardLibrary false
+
+wikipedia https://en.wikipedia.org/wiki/PLY_(file_format)
