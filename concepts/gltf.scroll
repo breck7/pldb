@@ -11,6 +11,7 @@ standsFor Graphics Library Transmission Format
 lab Khronos Group
 description The core of glTF is a JSON file that describes the structure and composition of a scene containing 3D models, which can be stored in a single binary glTF file (.glb). The top-level elements of the file include: Scenes and nodes, cameras, meshes, buffers, materials, textures, skins and animations.
 fileExtensions gltf glb
+leetSheets https://raw.githubusercontent.com/KhronosGroup/glTF/refs/heads/main/specification/2.0/figures/gltfOverview-2.0.0d.png
 
 githubRepo https://github.com/KhronosGroup/glTF
 
