@@ -1,13 +1,14 @@
 ../code/conceptPage.scroll
 
 id odin
-name odin
+name Odin
 appeared 2016
 creators Bill Hall
 tags pl
 website https://odin-lang.org
 latestVersion v0.13.0
 lab https://github.com/odin-lang
+description Odin is a general-purpose programming language with distinct typing built for high performance, modern systems and data-oriented programming.
 writtenIn odin c cpp markdown make python yaml bourne-shell xml assembly-language glsl html javascript nix
 
 clocExtensions odin
@@ -26,6 +27,7 @@ discord https://discord.com/invite/sVBPHEv
 subreddit https://reddit.com/r/odinlang
  memberCount
   2024 913
+  2025 1700
 pygmentsHighlighter ODIN
  filename archetype.py
  fileExtensions odin
