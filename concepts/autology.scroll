@@ -7,6 +7,15 @@ creators Dave Kimber
 tags pl lisp
 description Autology is a Lisp with access to its own interpreter.
 
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 24
+ mb 1
+ committers 3
+ files 24
+ linesOfCode 1049
+
 example
  (bind (;; grab a copy of the `:atl/eval-list` section of the
        ;; interpreter which is responsible for evaluating lists.

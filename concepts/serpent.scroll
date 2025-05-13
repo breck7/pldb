@@ -8,6 +8,15 @@ tags contractLanguage assembly
 description Serpent is an assembly language that compiles to EVM code that is extended with various high-level features.
 fileExtensions se
 
+repoStats
+ firstCommit 2014
+ newestCommit 2017
+ commits 428
+ mb 4
+ committers 21
+ files 76
+ linesOfCode 8240
+
 example
  data campaigns[2^80](recipient, goal, deadline, contrib_total, contrib_count, contribs[2^50](sender, value))
  

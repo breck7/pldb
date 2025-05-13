@@ -137,13 +137,6 @@ hasExceptions true
  hello
 hasNamedArguments true
  String.new("abc", encoding: "utf-8", capacity: 16)
-
- # details: when defining a method, parameters are positional-only by default,
- # but can be made keyword parameters (i.e. named) by appending a colon (:),
- # optionally followed by a default value:
- def greet(name, time_of_day:, location: "our great city")
-   puts "Hello this fine #{time_of_day} in #{location}, #{name}!"
- end
 hasFunctionOverloading false
 hasAsyncAwait false
 hasConstants true
@@ -409,3 +402,10 @@ semanticScholar 13
  2018|Specializing ropes for ruby|10.1145/3237009.3237026|2|0|Kevin Menard and Chris Seaton and Benoit Daloze|6fcf92f1bf8a95512a01c0fef1236ac2610299db
  2020|Let’s Get It Started: Installing Ruby|10.1007/978-1-4842-1278-3_1|1|0|Pete Cooper|56bfb401cd9a9183005b3aae84ec7ed4c8c6b49f
  2013|A machine vision extension to the Ruby programming language using OpenCV and FFI|10.1109/IVCNZ.2013.6727013|1|0|A. Marburg and M. Hayes and A. Bainbridge-Smith|07e2461bccbd4a17609d022518a82bdba691c21d
+
+ # details: when defining a method, parameters are positional-only by default,
+ # but can be made keyword parameters (i.e. named) by appending a colon (:),
+ # optionally followed by a default value:
+ def greet(name, time_of_day:, location: "our great city")
+   puts "Hello this fine #{time_of_day} in #{location}, #{name}!"
+ end
