@@ -28,9 +28,8 @@ reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february
 reference https://news.ycombinator.com/item?id=32005678
 
 example
- module stack <Type>;
+ module stack {Type};
  // Above: the parameterized type is applied to the entire module.
- import std::mem;
  
  struct Stack
  {
@@ -48,7 +47,7 @@ example
      if (this.capacity == this.size)
      {
          this.capacity *= 2;
-         this.elems = mem::realloc(this.elems, $sizeof(Type) * this.capacity);
+         this.elems = realloc(this.elems, $sizeof(Type) * this.capacity);
      }
      this.elems[this.size++] = element;
  }
@@ -67,12 +66,12 @@ twitter https://twitter.com/C3Lang
 
 githubRepo https://github.com/c3lang/c3c
  firstCommit 2019
- stars 1665
- subscribers 32
+ stars 4062
+ subscribers 44
  created 2019
- updated 2024
- issues 57
- forks 84
+ updated 2025
+ issues 123
+ forks 271
  description Compiler for the C3 language
 
 lineCommentToken //
@@ -170,10 +169,10 @@ hasConstants true
  const void* BAR = null;
 hasAbstractTypes false
 hasDocComments true
- /**
-  * @param [in] foo "The foo value"
-  * @return "the toal foo count"
-  **/
+ <*
+  @param [in] foo "The foo value"
+  @return "the toal foo count"
+ *>
 hasEnums true
  enum TestEnum : int
  {
