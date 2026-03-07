@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+
+id naab
+name NAAb
+appeared 2024
+creators Brandon Mackert
+tags pl
+website https://b-macker.github.io/NAAb/
+description NAAb is a polyglot programming language that embeds 12 languages (Python, JavaScript, Rust, C++, Go, Nim, Zig, Julia, Ruby, PHP, C#, Shell) in a single file with a built-in LLM governance engine. It includes 50+ governance checks that detect hallucinated APIs, oversimplified stubs, incomplete logic, and security issues in AI-generated code. Features include variable binding across language boundaries, parallel polyglot execution, empirical benchmarking via naab-lang calibrate, and three-tier enforcement (hard/soft/advisory).
+lab https://github.com/b-macker
+fileExtensions naab
+writtenIn cpp cmake
+
+isOpenSource true
+license mit
+fileType text
+docs https://github.com/b-macker/NAAb/blob/master/docs/book/QUICK_START.md
+
+githubRepo https://github.com/b-macker/NAAb
+ stars 2
+ forks 0
+ subscribers 1
+ created 2024
+ updated 2026
+ firstCommit 2024
+ issues 0
+
+repoStats
+ firstCommit 2024
+ commits 100
+ committers 1
+
+hasLineComments true
+ // A comment
+hasMultiLineComments false
+hasSemanticIndentation false
+hasBooleans true
+hasIntegers true
+hasFloats true
+hasStrings true
+hasLambdas true
+hasPipeOperator true
+hasExceptions true
+hasModules true
+
+example
+ main {
+     let data = <<python
+ import statistics
+ statistics.mean([10, 20, 30])
+ >>
+     io.write("Mean: " + data)
+ }
