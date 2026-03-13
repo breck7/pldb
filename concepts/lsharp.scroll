@@ -1,0 +1,44 @@
+title L#
+appeared 2025
+type pl
+creators Moude AI LLC
+website https://github.com/Arthurc1Moude/lsharp-language
+country United States
+originCommunity Moude AI LLC
+
+description L# (L-Sharp) is a native UI programming language with zero web dependencies. Like Flutter, but for native desktop development with React-like syntax.
+
+features
+ hasLineComments true
+ hasComments true
+ hasStrings true
+ hasFloats true
+ hasIntegers true
+ hasBooleans true
+ hasWhileLoops true
+ hasComponents true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+
+keywords import export deport report component render useState useEffect
+
+fileExtensions ls lsharp
+
+githubRepo https://github.com/Arthurc1Moude/lsharp-language
+
+example
+ component HelloWorld {
+   render {
+     <Container>
+       <Text>Hello, L#!</Text>
+     </Container>
+   }
+ }
+
+compilesTo C
+writtenIn C
+
+isOpenSource false
+license Proprietary
