@@ -40,6 +40,78 @@ function runQuiet(cmd, cwd = ROOT) {
   }
 }
 
+function fetchTiobeTop10() {
+  return new Promise((resolve, reject) => {
+    const https = require('https')
+    const options = {
+      hostname: 'www.tiobe.com',
+      path: '/tiobe-index/',
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      }
+    }
+    let data = ''
+    const req = https.request(options, res => {
+      res.on('data', chunk => { data += chunk })
+      res.on('end', () => {
+        // The td-top20 cell contains the language logo image; the language name
+        // is in the immediately following plain <td>.
+        const matches = [...data.matchAll(/<td class="td-top20">.*?<\/td><td>([^<]+)<\/td>/g)]
+        const top10 = matches.slice(0, 10).map(m => ({ name: m[1].trim() }))
+        if (top10.length === 0) {
+          reject(new Error('No TIOBE languages found in page — HTML structure may have changed'))
+        } else {
+          resolve(top10)
+        }
+      })
+    })
+    req.on('error', reject)
+    req.setTimeout(10000, () => { req.destroy(new Error('TIOBE fetch timed out')) })
+    req.end()
+  })
+}
+
+// Maps TIOBE display names to PLDB concept IDs
+const TIOBE_TO_PLDB = {
+  'Python': 'python',
+  'C': 'c',
+  'C++': 'cpp',
+  'Java': 'java',
+  'C#': 'csharp',
+  'JavaScript': 'javascript',
+  'Visual Basic': 'visual-basic',
+  'SQL': 'sql',
+  'R': 'r',
+  'Delphi/Object Pascal': 'delphi',
+  'Go': 'go',
+  'Fortran': 'fortran',
+  'Rust': 'rust',
+  'Kotlin': 'kotlin',
+  'Swift': 'swift',
+  'PHP': 'php',
+  'MATLAB': 'matlab',
+  'TypeScript': 'typescript',
+  'Scratch': 'scratch',
+  'Assembly language': 'assembly'
+}
+
+function writeTiobeLangsScroll(languages, fetchDate) {
+  const heading = `<p class="pldbHomepageLink"><a href="https://www.tiobe.com/tiobe-index/">Top TIOBE Languages</a> <span style="color:#828282;font-size:0.85em;">(Fetched ${fetchDate})</span></p>`
+  const items = languages.map(l => {
+    const id = TIOBE_TO_PLDB[l.name]
+    return id ? `<a href="concepts/${id}.html">${l.name}</a>` : l.name
+  })
+  const list = items.join('&nbsp;·&nbsp;')
+  const content = `importOnly
+
+${heading}
+
+${list}
+`
+  fs.writeFileSync(path.join(ROOT, 'topTiobeLangs.scroll'), content)
+}
+
 async function build() {
   const startTime = Date.now()
 
@@ -53,6 +125,17 @@ async function build() {
   // Step 2: Patch scroll-cli for Windows compatibility (if needed)
   console.log('\n🔧 Step 2: Checking scroll-cli Windows compatibility...')
   patchScrollCliIfNeeded()
+
+  // Step 2.5: Fetch TIOBE top 10 and write topTiobeLangs.scroll
+  console.log('\n📋 Step 2.5: Fetching TIOBE top 10 languages...')
+  try {
+    const tiobeLanguages = await fetchTiobeTop10()
+    const fetchDate = new Date().toISOString().split('T')[0]
+    writeTiobeLangsScroll(tiobeLanguages, fetchDate)
+    console.log(`✅ TIOBE top 10: ${tiobeLanguages.map(l => l.name).join(', ')}`)
+  } catch (err) {
+    console.warn(`⚠️  Could not fetch TIOBE data (${err.message}), keeping existing topTiobeLangs.scroll`)
+  }
 
   // Step 3: Build root folder (generates pldb.json, measures.json)
   console.log('\n📋 Step 3: Building root folder...')
