@@ -53,7 +53,13 @@ function fetchTiobeTop10() {
     }
     let data = ''
     const req = https.request(options, res => {
+      if (res.statusCode < 200 || res.statusCode >= 300) {
+        res.resume() // drain the response so the socket is freed
+        reject(new Error(`TIOBE fetch returned HTTP ${res.statusCode}`))
+        return
+      }
       res.on('data', chunk => { data += chunk })
+      res.on('error', reject)
       res.on('end', () => {
         // The td-top20 cell contains the language logo image; the language name
         // is in the immediately following plain <td>.
