@@ -64,10 +64,10 @@ function fetchTiobeTop10() {
         // The td-top20 cell contains the language logo image; the language name
         // is in the immediately following plain <td>.
         const matches = [...data.matchAll(/<td class="td-top20">.*?<\/td><td>([^<]+)<\/td>/g)]
-        const top10 = matches.slice(0, 10).map(m => ({ name: m[1].trim() }))
-        if (top10.length === 0) {
-          reject(new Error('No TIOBE languages found in page — HTML structure may have changed'))
+        if (matches.length < 10) {
+          reject(new Error(`Expected at least 10 TIOBE languages, but found ${matches.length} — HTML structure may have changed`))
         } else {
+          const top10 = matches.slice(0, 10).map(m => ({ name: m[1].trim() }))
           resolve(top10)
         }
       })
