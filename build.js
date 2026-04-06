@@ -142,6 +142,10 @@ async function build() {
   console.log('\n🔧 Step 2: Checking scroll-cli Windows compatibility...')
   patchScrollCliIfNeeded()
 
+  // Step 2b: Patch scroll-cli copy button for non-HTTPS contexts
+  console.log('\n🔧 Step 2b: Patching scroll-cli copy button for non-HTTPS contexts...')
+  patchScrollCliCopyButton()
+
   // Step 2.5: Fetch TIOBE top 10 and write topTiobeLangs.scroll
   console.log('\n📋 Step 2.5: Fetching TIOBE top 10 languages...')
   try {
@@ -229,6 +233,55 @@ function patchScrollCliIfNeeded() {
     }
   } else {
     console.log('  scroll-cli already patched or uses compatible paths')
+  }
+}
+
+function patchScrollCliCopyButton() {
+  const targets = [
+    path.join(ROOT, 'node_modules', 'scroll-cli', 'external', '.constants.js'),
+    path.join(ROOT, 'node_modules', 'scroll-cli', 'node_modules', 'scroll-cli', 'external', '.constants.js')
+  ]
+
+  const old = (
+    'if (!navigator.clipboard) return\\n' +
+    '    const button = document.createElement(\\"span\\")\\n' +
+    '    button.classList.add(\\"scrollCopyButton\\")\\n' +
+    '    block.appendChild(button)\\n' +
+    '    button.addEventListener(\\"click\\", async () => {\\n' +
+    '      await navigator.clipboard.writeText(block.innerText)\\n' +
+    '      button.classList.add(\\"scrollCopiedButton\\")\\n'
+  )
+
+  const patched = (
+    'const button = document.createElement(\\"span\\")\\n' +
+    '    button.classList.add(\\"scrollCopyButton\\")\\n' +
+    '    block.appendChild(button)\\n' +
+    '    button.addEventListener(\\"click\\", async () => {\\n' +
+    '      if (navigator.clipboard) {\\n' +
+    '        await navigator.clipboard.writeText(block.innerText)\\n' +
+    '      } else {\\n' +
+    '        const sel = window.getSelection()\\n' +
+    '        const range = document.createRange()\\n' +
+    '        range.selectNodeContents(block)\\n' +
+    '        sel.removeAllRanges()\\n' +
+    '        sel.addRange(range)\\n' +
+    '        document.execCommand(\\"copy\\")\\n' +
+    '        sel.removeAllRanges()\\n' +
+    '      }\\n' +
+    '      button.classList.add(\\"scrollCopiedButton\\")\\n'
+  )
+
+  for (const filePath of targets) {
+    if (!fs.existsSync(filePath)) continue
+    const content = fs.readFileSync(filePath, 'utf8')
+    if (content.includes(old)) {
+      fs.writeFileSync(filePath, content.replace(old, patched))
+      console.log(`  ✅ Patched copy button in ${path.relative(ROOT, filePath)}`)
+    } else if (content.includes(patched)) {
+      console.log(`  Already patched: ${path.relative(ROOT, filePath)}`)
+    } else {
+      console.log(`  ⚠️  Copy button pattern not found in ${path.relative(ROOT, filePath)} — scroll-cli may have changed`)
+    }
   }
 }
 
