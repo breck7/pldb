@@ -96,11 +96,21 @@ const TIOBE_TO_PLDB = {
   'Assembly language': 'assembly'
 }
 
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+}
+
 function writeTiobeLangsScroll(languages, fetchDate) {
   const heading = `<p class="pldbHomepageLink"><a href="https://www.tiobe.com/tiobe-index/">Top TIOBE Languages</a> <span style="color:#828282;font-size:0.85em;">(Fetched ${fetchDate})</span></p>`
   const items = languages.map(l => {
     const id = TIOBE_TO_PLDB[l.name]
-    return id ? `<a href="concepts/${id}.html">${l.name}</a>` : l.name
+    const safeName = escapeHtml(l.name)
+    return id ? `<a href="concepts/${id}.html">${safeName}</a>` : safeName
   })
   const list = items.join('&nbsp;·&nbsp;')
   const content = `importOnly
