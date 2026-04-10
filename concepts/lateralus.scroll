@@ -1,0 +1,39 @@
+id lateralus
+name Lateralus
+appeared 2025
+creators bad-antics
+tags pl
+website https://lateralus.dev
+lab grug-group420
+fileExtensions lat
+
+isOpenSource true
+github https://github.com/bad-antics/lateralus-lang
+documentation https://grug-group420.github.io/docs
+
+description A pipeline-native programming language with compiler, VM, OS, LSP, and VS Code extension. Features algebraic data types, pattern matching, type inference, and borrow checking.
+
+writtenIn rust c assembly-language python shell
+compilesTo c llvm wasm
+
+hasComments true
+hasLineComments true
+hasSemanticIndentation false
+hasTyping true
+hasStaticTyping true
+hasTypeInference true
+hasPatternMatching true
+hasAlgebraicTypes true
+hasBorrowChecking true
+hasCompilerParts true
+
+lineCommentToken //
+printToken print
+
+helloWorldCollection
+ print "Hello, World!"
+
+example
+ fn factorial(n: i32) -> i32 =
+   | 0 => 1
+   | n => n * factorial(n - 1)
