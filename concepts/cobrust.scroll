@@ -1,0 +1,62 @@
+../code/conceptPage.scroll
+
+id cobrust
+name Cobrust
+appeared 2026
+creators Cobrust contributors
+tags pl
+website https://github.com/cobrust-lang/cobrust
+description Cobrust is a statically typed Python successor implemented in Rust with an AI-native compiler that closed-loop translates the Python ecosystem. It keeps Python ergonomics (indentation blocks, comprehensions, pattern matching, f-strings) while adopting Rust's ownership model and Result/Option error handling. No GIL, no implicit truthiness, no mutable default arguments. Targets Cranelift and LLVM backends. File extension: .cb
+fileExtensions cb
+license Apache-2.0 OR MIT
+isOpenSource true
+writtenIn rust toml markdown
+
+githubRepo https://github.com/cobrust-lang/cobrust
+ stars 0
+ forks 0
+ created 2026
+
+compilesTo llvm-ir
+
+influencedBy python rust
+
+country International
+
+lineCommentToken #
+printToken print
+assignmentToken =
+stringToken "
+booleanTokens true false
+
+hasComments true
+hasSemanticIndentation true
+hasStaticTyping true
+hasPrintDebugging true
+hasPatternMatching true
+hasGenerics true
+hasEnums true
+hasFirstClassFunctions true
+hasLambda true
+hasStrings true
+ "Hello, world!"
+hasBooleans true
+hasBooleans true
+hasIntegers true
+hasFloats true
+hasLineComments true
+ # This is a comment
+
+leachim6 Cobrust
+ filepath c/Cobrust.cb
+ fileExtensions cb
+ example
+  print("Hello World")
+
+example
+ fn greet(name: str) -> str:
+     f"Hello, {name}!"
+
+ fn main():
+     result = greet("World")
+     print(result)
