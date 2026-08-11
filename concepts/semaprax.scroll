@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id semaprax
+name Semaprax
+appeared 2026
+creators Wavect
+tags pl
+website https://wavect.io/semaprax/
+description Semaprax is an experimental agent-native systems programming language built around a stable semantic program graph. Its v0.2 prototype lets coding agents query typed meaning, submit revision-bound semantic patches, and lower a verified subset to native executables and browser/Wasm packages.
+fileExtensions spx
+writtenIn rust
+
+isOpenSource true
+docs https://wavect.io/semaprax/architecture/ https://wavect.io/semaprax/evidence/
+
+githubRepo https://github.com/wavect/semaprax
