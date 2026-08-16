@@ -11,6 +11,12 @@ fileType text
 writtenIn c
 isOpenSource true
 githubRepo https://github.com/lone-lang/lone
+reference https://www.matheusmoreira.com/articles/lone-lisp-heap
+reference https://www.matheusmoreira.com/articles/babys-second-garbage-collector
+reference https://www.matheusmoreira.com/articles/generators-in-lone-lisp
+reference https://www.matheusmoreira.com/articles/delimited-continuations-in-lone-lisp
+reference https://www.matheusmoreira.com/articles/self-contained-lone-lisp-applications
+reference https://alexalejandre.com/interviews/interview-with-matheus-moreira/
 
 example
  (import (lone) (linux system-call))
