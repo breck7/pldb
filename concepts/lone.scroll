@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id lone
+name Lone
+appeared 2023
+creators Matheus Afonso Martins Moreira
+tags pl lisp
+description Freestanding no libc Lisp interpreter that runs directly on the Linux kernel
+fileExtensions ln
+fileType text
+writtenIn c
+isOpenSource true
+githubRepo https://github.com/lone-lang/lone
+
+example
+ (import (lone) (linux system-call))
+ (system-call 'write 1 "Hello, world!" 13)
+
+hasFunctions true
+hasAnonymousFunctions true
+hasFirstClassFunctions true
+hasVariadicFunctions true
+hasGarbageCollection true
+
+hasImports true
+hasStandardLibrary true
+
+hasLists true
+hasMaps true
+hasStrings true
+hasIntegers true
+hasBooleans true
+
+canReadCommandLineArgs true
+canWriteToDisk true
