@@ -773,7 +773,8 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
-editBaseUrl /edit.html?folderName=pldb.io&fileName=concepts/
+editBaseUrl https://github.com/breck7/pldb/blob/main/concepts/
+// editBaseUrl /edit.html?folderName=pldb.io&fileName=concepts/
 
 container 800px
 

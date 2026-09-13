@@ -1,5 +1,6 @@
 buildHtml
-editBaseUrl /edit.html?folderName=pldb.io&fileName=
+// editBaseUrl /edit.html?folderName=pldb.io&fileName=
+editBaseUrl https://github.com/breck7/pldb/blob/main/
 replace BASE_URL
 title Page not found
 

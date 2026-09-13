@@ -1,5 +1,6 @@
 importOnly
 baseUrl https://pldb.io/blog/
-editBaseUrl /edit.html?folderName=pldb.io&fileName=blog/
+editBaseUrl https://github.com/breck7/pldb/blob/main/blog/
+// editBaseUrl /edit.html?folderName=pldb.io&fileName=blog/
 replace BASE_URL ..
 rssFeedUrl feed.xml
