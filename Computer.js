@@ -1583,7 +1583,9 @@ class Tables {
     return this._top
   }
 
-  pldb = require("./pldb.json")
+  get pldb() {
+    return require("./pldb.json")
+  }
 
   _getFileAtRank(rank, ranks) {
     rank = rank - 1

@@ -1,3 +1,5 @@
+../code/conceptPage.scroll
+
 id lateralus
 name Lateralus
 appeared 2025
@@ -13,8 +15,8 @@ documentation https://grug-group420.github.io/docs
 
 description A pipeline-native programming language with compiler, VM, OS, LSP, and VS Code extension. Features algebraic data types, pattern matching, type inference, and borrow checking.
 
-writtenIn rust c assembly-language python shell
-compilesTo c llvm wasm
+writtenIn rust c assembly-language python bourne-shell
+compilesTo c llvmir wasm
 
 hasComments true
 hasLineComments true

@@ -4,7 +4,7 @@
   "description": "PLDB: a Programming Language Database",
   "main": "./pldb.json",
   "scripts": {
-    "build": "./cli.js buildParsersFile; scroll list | scroll build",
+    "build": "./cli.js buildParsersFile && scroll build concepts.scroll && scroll build code/generateFeaturePages.scroll && scroll list | scroll build",
     "test": "scroll list | scroll test",
     "format": "scroll list | scroll format",
     "open": "open index.html",

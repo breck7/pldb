@@ -1,0 +1,29 @@
+# Same deployment pattern as breck.lol.
+# GitHub Pages source: Deploy from a branch, wws, / (root).
+name: Build and Deploy Scroll
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: github-pages
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install and Build
+        run: |
+          npm install
+          npm install -g cloc
+          npm run build
+          # Publish generated files, including the Monaco browser assets.
+          printf 'node_modules/*\n!node_modules/monaco-editor/\n.github/\n' > .gitignore
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: wws
+          folder: .
