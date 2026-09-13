@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle34" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle27" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -62,29 +43,29 @@ function handleSubmit(e) {
   else if (event.key === "ArrowRight")
     getLinks()[1].click()
  });</script></div>
-<div class="scrollSection"><h1 id="particle42" class="printTitleParser"><a href="2023-roadmap.html">A Programming Language DataBase - 2022 recap and roadmap for 2023</a></h1>
+<div class="scrollSection"><h1 id="particle35" class="printTitleParser"><a href="2023-roadmap.html">A Programming Language DataBase - 2022 recap and roadmap for 2023</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 </div><div class="scrollColumns" style="column-width:35ch;column-count:2;max-width:90ch;">
-<div class="scrollSection"><h2 id="particle46" class="scrollParagraph">2022 Recap</h2>
+<div class="scrollSection"><h2 id="particle39" class="scrollParagraph">2022 Recap</h2>
 </div>
-<p id="particle48" class="scrollParagraph"><span class="scrollDateline">January 3, 2023 — </span>2022 was a breakout year for a Programming Language DataBase (PLDB). We are now used by over ten thousand people in a slow week and probably were used by over a million people on the year (I can't be too exact since our stuff is public domain and we don't do much tracking). Some of the world's top software people got in touch with us and we now provide analysis on how to make their companies' languages better. Not bad for a research effort started by a kid from Brockton without a PhD! I am 100% convinced that someone can (and will) revolutionize research in any and every domain simply by copying our tech and creating a high-quality public domain <a href="../csv.html">CSV file</a> for their domain.</p>
+<p id="particle41" class="scrollParagraph"><span class="scrollDateline">January 3, 2023 — </span>2022 was a breakout year for a Programming Language DataBase (PLDB). We are now used by over ten thousand people in a slow week and probably were used by over a million people on the year (I can't be too exact since our stuff is public domain and we don't do much tracking). Some of the world's top software people got in touch with us and we now provide analysis on how to make their companies' languages better. Not bad for a research effort started by a kid from Brockton without a PhD! I am 100% convinced that someone can (and will) revolutionize research in any and every domain simply by copying our tech and creating a high-quality public domain <a href="../csv.html">CSV file</a> for their domain.</p>
 <figure class="scrollCaptionedFigure" style="width:633px; margin: auto;"><a href="images/traffic.png" target="_blank"  ><img src="images/traffic.png" width="633" height="402" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph">2022 was the year PLDB got the mythical product market fit.</p></figcaption></figure>
-<div class="scrollSection"><h2 id="particle54" class="scrollParagraph">Thank you</h2>
+<div class="scrollSection"><h2 id="particle47" class="scrollParagraph">Thank you</h2>
 </div>
-<p id="particle56" class="scrollParagraph">I started PLDB, but in 2022 the community took it to a new level. Over 50 people <a href="https://github.com/breck7/pldb/graphs/contributors">contributed code directly</a> to the git repo and many more contributed via the web. From the bottom of my heart, thank you to everyone who helped in 2022. Your work will directly help programming language designers build better languages and help demystify the world of programming languages for everyone else. And if you believe, as I do, that better languages make a better world, than your work is helping build a better world.</p>
-<div class="scrollSection"><h2 id="particle58" class="scrollParagraph">2023 Roadmap</h2>
+<p id="particle49" class="scrollParagraph">I started PLDB, but in 2022 the community took it to a new level. Over 50 people <a href="https://github.com/breck7/pldb/graphs/contributors">contributed code directly</a> to the git repo and many more contributed via the web. From the bottom of my heart, thank you to everyone who helped in 2022. Your work will directly help programming language designers build better languages and help demystify the world of programming languages for everyone else. And if you believe, as I do, that better languages make a better world, than your work is helping build a better world.</p>
+<div class="scrollSection"><h2 id="particle51" class="scrollParagraph">2023 Roadmap</h2>
 </div>
-<ul ><li id="particle60" >In 2023 we should continue to prioritize the most important thing: <strong>more data</strong>.</li>
-<li id="particle61" >We need more data on <strong>language features</strong>.</li>
-<li id="particle62" >We need faster and easier tooling for <strong>community leaders</strong> to keep their languages' pages up to date.</li>
-<li id="particle63" ><strong>Build speed</strong> will always be a top priority.</li>
-<li id="particle64" >We should keep <strong>generalizing the code base</strong> so that CancerDB and other projects can benefit from our work.</li>
-<li id="particle65" ><strong>Improve Parsers</strong> to fix the most annoying common problems and improve documentation.</li>
-<li id="particle66" >We should also do more on the <strong>influence graph</strong> of languages.</li>
-<li id="particle67" ><strong>Better search</strong>.</li>
-<li id="particle68" >We should improve language page <strong>design</strong> to be more reader friendly and useful.</li>
-<li id="particle69" >Finally, we should do <strong>more outreach</strong> to programming language designers and communities in the real world and make sure we do more <strong>listening to our users</strong> and attending to their needs.</li></ul>
-<p id="particle71" class="scrollParagraph">That's it! Thank you everyone and I look forwarding to building together in public with you in 2023!</p>
+<ul ><li id="particle53" >In 2023 we should continue to prioritize the most important thing: <strong>more data</strong>.</li>
+<li id="particle54" >We need more data on <strong>language features</strong>.</li>
+<li id="particle55" >We need faster and easier tooling for <strong>community leaders</strong> to keep their languages' pages up to date.</li>
+<li id="particle56" ><strong>Build speed</strong> will always be a top priority.</li>
+<li id="particle57" >We should keep <strong>generalizing the code base</strong> so that CancerDB and other projects can benefit from our work.</li>
+<li id="particle58" ><strong>Improve Parsers</strong> to fix the most annoying common problems and improve documentation.</li>
+<li id="particle59" >We should also do more on the <strong>influence graph</strong> of languages.</li>
+<li id="particle60" ><strong>Better search</strong>.</li>
+<li id="particle61" >We should improve language page <strong>design</strong> to be more reader friendly and useful.</li>
+<li id="particle62" >Finally, we should do <strong>more outreach</strong> to programming language designers and communities in the real world and make sure we do more <strong>listening to our users</strong> and attending to their needs.</li></ul>
+<p id="particle64" class="scrollParagraph">That's it! Thank you everyone and I look forwarding to building together in public with you in 2023!</p>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
@@ -102,8 +83,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle82" class="scrollParagraph"></p>
-<div id="particle83" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle75" class="scrollParagraph"></p>
+<div id="particle76" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -128,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle88" class="scrollParagraph"></p>
+<center><p id="particle81" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

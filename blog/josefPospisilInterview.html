@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -63,24 +44,24 @@ function handleSubmit(e) {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<div class="scrollSection"><h1 id="particle46" class="printTitleParser"><a href="josefPospisilInterview.html">A brief interview with Janet contributor Josef Pospíšil</a></h1>
+<div class="scrollSection"><h1 id="particle39" class="printTitleParser"><a href="josefPospisilInterview.html">A brief interview with Janet contributor Josef Pospíšil</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
-<p id="particle50" class="scrollParagraph"><span class="scrollDateline">January 24, 2023 — </span><a href="https://github.com/pepe">Josef Pospíšil</a> (Pepe) is a programming enthusiast, first with <a href="../concepts/basic.html">Basic</a> in 1986, then the first <a href="../concepts/ruby.html">Rubyist</a> in the Czech Republic, and now a contributor to the language <a href="../concepts/janet.html">Janet</a>.</p>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">January 24, 2023 — </span><a href="https://github.com/pepe">Josef Pospíšil</a> (Pepe) is a programming enthusiast, first with <a href="../concepts/basic.html">Basic</a> in 1986, then the first <a href="../concepts/ruby.html">Rubyist</a> in the Czech Republic, and now a contributor to the language <a href="../concepts/janet.html">Janet</a>.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle54" class="scrollQuestion">What language features do you think are underrated and why?</h4>
-<p id="particle55" class="scrollParagraph"><strong>Pepe:</strong> For me, as a former Rubyist and current Janet, it is the joy and comfort of the programmer. And not only for the seasoned professional but mainly for those new to the language or programming.</p>
+<div class="scrollSection"><h4 id="particle47" class="scrollQuestion">What language features do you think are underrated and why?</h4>
+<p id="particle48" class="scrollParagraph"><strong>Pepe:</strong> For me, as a former Rubyist and current Janet, it is the joy and comfort of the programmer. And not only for the seasoned professional but mainly for those new to the language or programming.</p>
 </div>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle59" class="scrollQuestion">What can you tell us about the inception and evolution of Janet so far?</h4>
-<p id="particle60" class="scrollParagraph"><strong>Pepe:</strong> I was not at the inception, but I know the story well enough to convey it. <a href="https://github.com/bakpakin">Bakpakin</a> (Calvin Rose) created the <a href="../concepts/fennel.html">Fennel</a> language as the test bed for the ideas of the new LISP-like language on top of <a href="../concepts/lua.html">Lua</a>. It was brilliant as it enabled a fast feedback cycle on top of the proven language and its virtual machine. As proof, it is still alive in excellent hands and evolving in its regard. When this prototype cleared the picture enough, Janet was started as a fresh take on the language design, wholly written in the <a href="../concepts/c.html">C</a> with custom code for every aspect of it. From parsing thru the bytecode and virtual machine to the mutable and immutable data types. This meant that the first couple of cycles of life, it was mostly making sure it did not segfault. Yet the approach brought sweet fruits:</p>
-<ul ><li id="particle61" >1. the code is compact and consistent. One can read and understand it broadly in one day if one knows the C programming language.</li>
-<li id="particle62" >2. the code is optimized yet hackable.</li>
-<li id="particle63" >3. all the products compiled or interpreted are performant in boot time and processing the data. I came to the language in the endless search for my last language. I was in the <a href="../concepts/clojurescript.html">ClojureScript</a> world at the time, but not happy. And here was the language which combined all the best I always valued in programming language design. From that point, the core stays mostly static, but the inner and outer circles spread outside. We added an event loop and ffi inside the language and a spork utility library outside it. And so much more. We are at the point of releasing the mythical 2.0 version in the coming time.</li></ul>
+<div class="scrollSection"><h4 id="particle52" class="scrollQuestion">What can you tell us about the inception and evolution of Janet so far?</h4>
+<p id="particle53" class="scrollParagraph"><strong>Pepe:</strong> I was not at the inception, but I know the story well enough to convey it. <a href="https://github.com/bakpakin">Bakpakin</a> (Calvin Rose) created the <a href="../concepts/fennel.html">Fennel</a> language as the test bed for the ideas of the new LISP-like language on top of <a href="../concepts/lua.html">Lua</a>. It was brilliant as it enabled a fast feedback cycle on top of the proven language and its virtual machine. As proof, it is still alive in excellent hands and evolving in its regard. When this prototype cleared the picture enough, Janet was started as a fresh take on the language design, wholly written in the <a href="../concepts/c.html">C</a> with custom code for every aspect of it. From parsing thru the bytecode and virtual machine to the mutable and immutable data types. This meant that the first couple of cycles of life, it was mostly making sure it did not segfault. Yet the approach brought sweet fruits:</p>
+<ul ><li id="particle54" >1. the code is compact and consistent. One can read and understand it broadly in one day if one knows the C programming language.</li>
+<li id="particle55" >2. the code is optimized yet hackable.</li>
+<li id="particle56" >3. all the products compiled or interpreted are performant in boot time and processing the data. I came to the language in the endless search for my last language. I was in the <a href="../concepts/clojurescript.html">ClojureScript</a> world at the time, but not happy. And here was the language which combined all the best I always valued in programming language design. From that point, the core stays mostly static, but the inner and outer circles spread outside. We added an event loop and ffi inside the language and a spork utility library outside it. And so much more. We are at the point of releasing the mythical 2.0 version in the coming time.</li></ul>
 </div>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle67" class="scrollQuestion">What are the underlying mechanisms in the future of programming language creation? What does that future look like?</h4>
-<p id="particle68" class="scrollParagraph"><strong>Pepe:</strong> This is very similar to the mystery of the evolution of the human race. This is one of the reasons I am so into programming language design. Mechanisms are mixed and hidden even for the creators at the inception. The future of the programming language landscape will stay the same: evolving all the time.</p>
+<div class="scrollSection"><h4 id="particle60" class="scrollQuestion">What are the underlying mechanisms in the future of programming language creation? What does that future look like?</h4>
+<p id="particle61" class="scrollParagraph"><strong>Pepe:</strong> This is very similar to the mystery of the evolution of the human race. This is one of the reasons I am so into programming language design. Mechanisms are mixed and hidden even for the creators at the inception. The future of the programming language landscape will stay the same: evolving all the time.</p>
 </div>
 <div class="abstractDinkusParser"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:460px; margin: auto;"><a href="images/pospisil.jpeg" target="_blank"  ><img src="images/pospisil.jpeg" width="460" height="460" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fpepe&psig=AOvVaw0skSHUmj_9LygxekcXJiuQ&ust=1674669821093000&source=images&cd=vfe&ved=0CBAQjhxqFwoTCODGqbDl4PwCFQAAAAAdAAAAABAE">Image source</a>. Thank you for your time Pepe and best of luck on the upcoming release!</p></figcaption></figure>
@@ -101,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle83" class="scrollParagraph"></p>
-<div id="particle84" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle76" class="scrollParagraph"></p>
+<div id="particle77" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -127,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle89" class="scrollParagraph"></p>
+<center><p id="particle82" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

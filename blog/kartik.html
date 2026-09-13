@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -63,41 +44,41 @@ function handleSubmit(e) {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<div class="scrollSection"><h1 id="particle46" class="printTitleParser"><a href="kartik.html">A brief interview with Mu creator Dr. Kartik Agaram</a></h1>
+<div class="scrollSection"><h1 id="particle39" class="printTitleParser"><a href="kartik.html">A brief interview with Mu creator Dr. Kartik Agaram</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
-<p id="particle50" class="scrollParagraph"><span class="scrollDateline">November 22, 2022 — </span><a href="http://akkartik.name/">Dr. Kartik Agaram</a> is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.</p>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">November 22, 2022 — </span><a href="http://akkartik.name/">Dr. Kartik Agaram</a> is a professional programmer by day and the author of several open source projects that try to demystify computers. His projects all show a great love for programming and empathy for readers grappling with a strange codebase.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle54" class="scrollQuestion">What problem is <a href="../concepts/mu.html">Mu</a> attempting to solve?</h4>
+<div class="scrollSection"><h4 id="particle47" class="scrollQuestion">What problem is <a href="../concepts/mu.html">Mu</a> attempting to solve?</h4>
 </div>
-<p id="particle56" class="scrollParagraph"><strong>Dr. Agaram:</strong> Can we encourage people to modify the programs on their computers without impeding their ability to work with others?</p>
-<p id="particle58" class="scrollParagraph">The world currently creates software with certain unquestioned assumptions:</p>
-<ul ><li id="particle59" >A few people build the program, a lot of people use it.</li>
-<li id="particle60" >Everybody who uses a program tries to stick together and use the same version.</li>
-<li id="particle61" >Don't move anybody's cheese! We can add things to programs. However, once a thing in a program works one way, we don't change it or remove it.</li></ul>
-<p id="particle63" class="scrollParagraph">These assumptions lead to many problems:</p>
-<ul ><li id="particle64" >Since everyone uses the same version, any mistakes that creep into it affect everyone.</li>
-<li id="particle65" >Since a small number of people build the program, they can sneak in things most people don't want, maybe even malicious things.</li>
-<li id="particle66" >Since we can't ever take things out, programs grow ever larger and more complex, never simpler. Mistakes become more inevitable over time, and it becomes easier and easier for a single person to sneak in malicious things even past other builders.</li></ul>
-<p id="particle68" class="scrollParagraph">This way of working has been transplanted from the way humans have built artifacts before the time of computers. However, software is different:</p>
-<ul ><li id="particle69" >It's very easy to copy. Things made of atoms have to be shared in our world, but each of our computers can live in its own solipsistic universe. If I want a road to move a little to the left or right I'm out of luck, but most software doesn't fundamentally forbid such changes.</li>
-<li id="particle70" >Small changes can have huge effects. In the real world I can't destroy my house by bringing a pen into it. But on my computer these sorts of things happen all the time. You can press <em>your</em> mouse somewhere on <em>your</em> screen.. and catastrophically lose all your money.</li></ul>
-<p id="particle72" class="scrollParagraph">The way to fix this, I think, is to start with what makes computers different from anything else in human experience.</p>
-<ul ><li id="particle74" >Keep programs really small to minimize vectors for catastrophe.</li>
-<li id="particle75" >Use this knowledge to allow anyone to modify their own programs. The more people change programs on their own computers, the more natural barriers we will have to keep mistakes and malicious changes from infecting everyone all at once.</li>
-<li id="particle76" >Spread the knowledge and understanding of what's inside a computer to lots of people so that we can police each other on the programs that enter our computers.</li></ul>
+<p id="particle49" class="scrollParagraph"><strong>Dr. Agaram:</strong> Can we encourage people to modify the programs on their computers without impeding their ability to work with others?</p>
+<p id="particle51" class="scrollParagraph">The world currently creates software with certain unquestioned assumptions:</p>
+<ul ><li id="particle52" >A few people build the program, a lot of people use it.</li>
+<li id="particle53" >Everybody who uses a program tries to stick together and use the same version.</li>
+<li id="particle54" >Don't move anybody's cheese! We can add things to programs. However, once a thing in a program works one way, we don't change it or remove it.</li></ul>
+<p id="particle56" class="scrollParagraph">These assumptions lead to many problems:</p>
+<ul ><li id="particle57" >Since everyone uses the same version, any mistakes that creep into it affect everyone.</li>
+<li id="particle58" >Since a small number of people build the program, they can sneak in things most people don't want, maybe even malicious things.</li>
+<li id="particle59" >Since we can't ever take things out, programs grow ever larger and more complex, never simpler. Mistakes become more inevitable over time, and it becomes easier and easier for a single person to sneak in malicious things even past other builders.</li></ul>
+<p id="particle61" class="scrollParagraph">This way of working has been transplanted from the way humans have built artifacts before the time of computers. However, software is different:</p>
+<ul ><li id="particle62" >It's very easy to copy. Things made of atoms have to be shared in our world, but each of our computers can live in its own solipsistic universe. If I want a road to move a little to the left or right I'm out of luck, but most software doesn't fundamentally forbid such changes.</li>
+<li id="particle63" >Small changes can have huge effects. In the real world I can't destroy my house by bringing a pen into it. But on my computer these sorts of things happen all the time. You can press <em>your</em> mouse somewhere on <em>your</em> screen.. and catastrophically lose all your money.</li></ul>
+<p id="particle65" class="scrollParagraph">The way to fix this, I think, is to start with what makes computers different from anything else in human experience.</p>
+<ul ><li id="particle67" >Keep programs really small to minimize vectors for catastrophe.</li>
+<li id="particle68" >Use this knowledge to allow anyone to modify their own programs. The more people change programs on their own computers, the more natural barriers we will have to keep mistakes and malicious changes from infecting everyone all at once.</li>
+<li id="particle69" >Spread the knowledge and understanding of what's inside a computer to lots of people so that we can police each other on the programs that enter our computers.</li></ul>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle80" class="scrollQuestion">Doesn't this approach risk destabilizing people's computers?</h4>
+<div class="scrollSection"><h4 id="particle73" class="scrollQuestion">Doesn't this approach risk destabilizing people's computers?</h4>
 </div>
-<p id="particle82" class="scrollParagraph"><strong>Dr. Agaram:</strong> You're absolutely right. I'm asking people to make changes to programs they're not very familiar with, and that increases the odds of breaking something. I have 3 defenses.</p>
-<ol  start="1."><li id="particle84" >Mistakes can be protected against. We can detect them quickly, and we can support undoing them quickly. Guardrails like formal analysis (types and so on) and tests help with the former. Version control helps with the latter. Both are fairly mature and reliable. We should all lean on them more to avoid bigger problems elsewhere.</li>
-<li id="particle85" >Philosophically I think mistakes can often be very desirable. If you make lots of small mistakes, that can help you avoid big mistakes. This is the idea of hormesis that Nassim Taleb popularized. Avoiding large forest fires by having annual controlled burns, for example. In software I think mistakes can be very desirable because they allow the design rationale for programs to spread through a wider audience of programmers, and to not be forgotten over time.</li>
-<li id="particle86" >I'd argue software today is already fairly unstable. We find vulnerabilities constantly. We find apps exfiltrating behavioral data on a regular basis. And even our cheese gets moved fairly often when we upgrade. So it's not clear to me how much we're giving up.</li></ol>
-<p id="particle88" class="scrollParagraph">So yes, breakage will be a little more visible where it's normally happening in areas that are easy to ignore. Perhaps this is a good thing? Software is in the stone ages. I think we all would benefit from reminders of this fact. We might be annoyed more but suffer fewer catastrophes.</p>
+<p id="particle75" class="scrollParagraph"><strong>Dr. Agaram:</strong> You're absolutely right. I'm asking people to make changes to programs they're not very familiar with, and that increases the odds of breaking something. I have 3 defenses.</p>
+<ol  start="1."><li id="particle77" >Mistakes can be protected against. We can detect them quickly, and we can support undoing them quickly. Guardrails like formal analysis (types and so on) and tests help with the former. Version control helps with the latter. Both are fairly mature and reliable. We should all lean on them more to avoid bigger problems elsewhere.</li>
+<li id="particle78" >Philosophically I think mistakes can often be very desirable. If you make lots of small mistakes, that can help you avoid big mistakes. This is the idea of hormesis that Nassim Taleb popularized. Avoiding large forest fires by having annual controlled burns, for example. In software I think mistakes can be very desirable because they allow the design rationale for programs to spread through a wider audience of programmers, and to not be forgotten over time.</li>
+<li id="particle79" >I'd argue software today is already fairly unstable. We find vulnerabilities constantly. We find apps exfiltrating behavioral data on a regular basis. And even our cheese gets moved fairly often when we upgrade. So it's not clear to me how much we're giving up.</li></ol>
+<p id="particle81" class="scrollParagraph">So yes, breakage will be a little more visible where it's normally happening in areas that are easy to ignore. Perhaps this is a good thing? Software is in the stone ages. I think we all would benefit from reminders of this fact. We might be annoyed more but suffer fewer catastrophes.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle92" class="scrollQuestion">This is a big, ambitious project. How did you get motivated to start working on it?</h4>
+<div class="scrollSection"><h4 id="particle85" class="scrollQuestion">This is a big, ambitious project. How did you get motivated to start working on it?</h4>
 </div>
-<p id="particle94" class="scrollParagraph"><strong>Dr. Agaram:</strong> When I started Mu I'd been working in tech companies for a while, and I was disillusioned. Large companies are slow, bureaucratic and permit all kinds of shoddy work and weighty-seeming over-engineering. It seemed to me that they should be getting at least technically out-competed by smaller companies, even if they still often win from a business perspective. (I was very influenced early on by <a href="https://en.wikipedia.org/wiki/Tracy_Kidder">Tracy Kidder's</a> book, <em>"The soul of a new machine"</em> about how Data General went out of business in spite of building a technically superior computer.) But when I looked around, the smaller companies didn't seem that much better. They were all trying furiously to grow, not just in adoption but also in the population of their programmers. They didn't seem more capital-efficient. Software is supposed to be scalable. Why are we having such trouble keeping our programs running without constant attention? I think there's a rot in the foundations that we keep trying to paper over and forget about. We should instead keep exposing it, reminding ourselves of it, trying new ways to rid ourselves of it.</p>
+<p id="particle87" class="scrollParagraph"><strong>Dr. Agaram:</strong> When I started Mu I'd been working in tech companies for a while, and I was disillusioned. Large companies are slow, bureaucratic and permit all kinds of shoddy work and weighty-seeming over-engineering. It seemed to me that they should be getting at least technically out-competed by smaller companies, even if they still often win from a business perspective. (I was very influenced early on by <a href="https://en.wikipedia.org/wiki/Tracy_Kidder">Tracy Kidder's</a> book, <em>"The soul of a new machine"</em> about how Data General went out of business in spite of building a technically superior computer.) But when I looked around, the smaller companies didn't seem that much better. They were all trying furiously to grow, not just in adoption but also in the population of their programmers. They didn't seem more capital-efficient. Software is supposed to be scalable. Why are we having such trouble keeping our programs running without constant attention? I think there's a rot in the foundations that we keep trying to paper over and forget about. We should instead keep exposing it, reminding ourselves of it, trying new ways to rid ourselves of it.</p>
 <div class="abstractDinkusParser"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:1114px; margin: auto;"><a href="images/kartikAgaram.jpg" target="_blank"  ><img src="images/kartikAgaram.jpg" width="1114" height="1115" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph">You have my heartfelt gratitude Dr. Agaram!</p></figcaption></figure>
 </div>
@@ -117,8 +98,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle109" class="scrollParagraph"></p>
-<div id="particle110" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle102" class="scrollParagraph"></p>
+<div id="particle103" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -143,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle115" class="scrollParagraph"></p>
+<center><p id="particle108" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

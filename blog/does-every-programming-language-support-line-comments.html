@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -62,29 +43,29 @@ function handleSubmit(e) {
   else if (event.key === "ArrowRight")
     getLinks()[1].click()
  });</script></div>
-<div class="scrollSection"><h1 id="particle44" class="printTitleParser"><a href="does-every-programming-language-support-line-comments.html">Does every programming language have line comments?</a></h1>
+<div class="scrollSection"><h1 id="particle37" class="printTitleParser"><a href="does-every-programming-language-support-line-comments.html">Does every programming language have line comments?</a></h1>
 </div><div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/breck7">Breck Yunits</a></p>
 <figure class="scrollCaptionedFigure" style="width:1122px; margin: auto;"><a href="line-comments.png" target="_blank"  ><img src="line-comments.png" width="1122" height="900" loading="lazy"></a></figure>
-<p id="particle51" class="scrollParagraph"><span class="scrollDateline">July 13, 2022 — </span>About 85% of the languages in PLDB have <a href="../features/hasLineComments.html">line comments</a>.</p>
-<p id="particle55" class="scrollParagraph">A language supports line comments if it defines a special token (nowadays usually <code class="scrollInlineCode">//</code> or <code class="scrollInlineCode">#</code>) where everything after that token until the end of the line becomes a comment. Example:</p>
+<p id="particle44" class="scrollParagraph"><span class="scrollDateline">July 13, 2022 — </span>About 85% of the languages in PLDB have <a href="../features/hasLineComments.html">line comments</a>.</p>
+<p id="particle48" class="scrollParagraph">A language supports line comments if it defines a special token (nowadays usually <code class="scrollInlineCode">//</code> or <code class="scrollInlineCode">#</code>) where everything after that token until the end of the line becomes a comment. Example:</p>
 <code class="scrollCodeBlock">print "Hello world" # this is a comment</code>
-<p id="particle59" class="scrollParagraph">These are different from <a href="../features/hasMultilineComments.html">multiline comments</a> which are delimited by a pair of tokens (such as <code class="scrollInlineCode">%{</code> and <code class="scrollInlineCode">}%</code>).</p>
-<div class="scrollSection"><h2 id="particle61" class="scrollParagraph">The majority of languages use // or # to start a line comment</h2>
+<p id="particle52" class="scrollParagraph">These are different from <a href="../features/hasMultilineComments.html">multiline comments</a> which are delimited by a pair of tokens (such as <code class="scrollInlineCode">%{</code> and <code class="scrollInlineCode">}%</code>).</p>
+<div class="scrollSection"><h2 id="particle54" class="scrollParagraph">The majority of languages use // or # to start a line comment</h2>
 </div>
-<p id="particle63" class="scrollParagraph"><strong>38%</strong> of programming languages follow <a href="../concepts/c.html">C</a> and use <code class="scrollInlineCode">//</code>. C (1972) follows <a href="../concepts/b.html">B</a> (1969) which follows <a href="../concepts/bcpl.html">BCPL</a> (1966).</p>
-<p id="particle65" class="scrollParagraph"><strong>22%</strong> use <code class="scrollInlineCode">#</code>, which has become very popular thanks to languages like <a href="../concepts/python.html">Python</a>, <a href="../concepts/perl.html">Perl</a>, and <a href="../concepts/ruby.html">Ruby</a>.</p>
-<p id="particle67" class="scrollParagraph">The SQL languages all generally use <code class="scrollInlineCode">--</code>.</p>
-<p id="particle69" class="scrollParagraph">The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.</p>
-<div class="scrollSection"><h2 id="particle71" class="scrollParagraph">15% of languages don't have line comments</h2>
+<p id="particle56" class="scrollParagraph"><strong>38%</strong> of programming languages follow <a href="../concepts/c.html">C</a> and use <code class="scrollInlineCode">//</code>. C (1972) follows <a href="../concepts/b.html">B</a> (1969) which follows <a href="../concepts/bcpl.html">BCPL</a> (1966).</p>
+<p id="particle58" class="scrollParagraph"><strong>22%</strong> use <code class="scrollInlineCode">#</code>, which has become very popular thanks to languages like <a href="../concepts/python.html">Python</a>, <a href="../concepts/perl.html">Perl</a>, and <a href="../concepts/ruby.html">Ruby</a>.</p>
+<p id="particle60" class="scrollParagraph">The SQL languages all generally use <code class="scrollInlineCode">--</code>.</p>
+<p id="particle62" class="scrollParagraph">The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.</p>
+<div class="scrollSection"><h2 id="particle64" class="scrollParagraph">15% of languages don't have line comments</h2>
 </div>
-<p id="particle73" class="scrollParagraph">About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a> and <a href="../concepts/svg.html">SVG</a>.</p>
-<p id="particle75" class="scrollParagraph"><a href="../concepts/json.html">JSON</a> famously does not support comments. But a number of its derivatives do, such as <a href="../concepts/json-with-comments.html">JSON with Comments</a>.</p>
-<p id="particle77" class="scrollParagraph">A few general purpose languages don't support line comments including <a href="../concepts/mathematica.html">Mathematica</a> and <a href="../concepts/ocaml.html">OCaml</a>.</p>
-<div class="scrollSection"><h2 id="particle79" class="scrollParagraph">A few exceptions</h2>
+<p id="particle66" class="scrollParagraph">About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like <a href="../concepts/html.html">HTML</a>, <a href="../concepts/css.html">CSS</a> and <a href="../concepts/svg.html">SVG</a>.</p>
+<p id="particle68" class="scrollParagraph"><a href="../concepts/json.html">JSON</a> famously does not support comments. But a number of its derivatives do, such as <a href="../concepts/json-with-comments.html">JSON with Comments</a>.</p>
+<p id="particle70" class="scrollParagraph">A few general purpose languages don't support line comments including <a href="../concepts/mathematica.html">Mathematica</a> and <a href="../concepts/ocaml.html">OCaml</a>.</p>
+<div class="scrollSection"><h2 id="particle72" class="scrollParagraph">A few exceptions</h2>
 </div>
-<p id="particle81" class="scrollParagraph">Like everything, there are exceptions to the common cases. A few languages, such as <a href="../concepts/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.</p>
-<p id="particle83" class="scrollParagraph">A few languages also support multiple line comment tokens. The <a href="../concepts/ini.html">Ini config format</a> supports both <code class="scrollInlineCode">;</code> and <code class="scrollInlineCode">#</code>.</p>
+<p id="particle74" class="scrollParagraph">Like everything, there are exceptions to the common cases. A few languages, such as <a href="../concepts/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.</p>
+<p id="particle76" class="scrollParagraph">A few languages also support multiple line comment tokens. The <a href="../concepts/ini.html">Ini config format</a> supports both <code class="scrollInlineCode">;</code> and <code class="scrollInlineCode">#</code>.</p>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://observablehq.com/@breck7/line-comments-in-programming-languages">Observable</a></div>
 <div class="scrollQuote">Analyze this data yourself in <a href="https://ohayo.breckyunits.com?filename=does-every-programming-language-support-line-comments.html.ohayo&data=html.h1%20Line%20comments%0Aweb.get%20https%3A%2F%2Fpldb.io%2Flanguages.csv%0A%20filter.where%20rank%20%3C%20300%0A%20%20columns.keep%20appeared%20title%20rank%20features.hasLineComments%20lineCommentToken%0A%20%20%20columns.rename%20features.hasLineComments%20hasLineComments%0A%20%20%20%20filter.where%20hasLineComments%20!%3D%0A%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20group.by%20hasLineComments%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20filter.where%20hasLineComments%20%3D%20false%0A%20%20%20%20%20%20%20tables.basic%0A%20%20%20%20%20%20filter.where%20lineCommentToken%20!%3D%0A%20%20%20%20%20%20%20group.by%20lineCommentToken%0A%20%20%20%20%20%20%20%20reduce%20appeared%20min%20firstAppeared%0A%20%20%20%20%20%20%20%20roughjs.pie%20Line%20comment%20token%20usage%0A%20%20%20%20%20%20%20%20%20label%20lineCommentToken%0A%20%20%20%20%20%20%20%20%20value%20count%0A%20%20%20%20%20%20%20%20rows.sortByReverse%20count%0A%20%20%20%20%20%20%20%20%20tables.basic">Ohayo</a></div>
 </div>
@@ -104,8 +85,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle98" class="scrollParagraph"></p>
-<div id="particle99" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle91" class="scrollParagraph"></p>
+<div id="particle92" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -130,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle104" class="scrollParagraph"></p>
+<center><p id="particle97" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

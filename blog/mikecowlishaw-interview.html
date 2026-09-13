@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -63,22 +44,22 @@ function handleSubmit(e) {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<div class="scrollSection"><h1 id="particle46" class="printTitleParser"><a href="mikecowlishaw-interview.html">A brief interview with Rexx creator Mike Cowlishaw</a></h1>
+<div class="scrollSection"><h1 id="particle39" class="printTitleParser"><a href="mikecowlishaw-interview.html">A brief interview with Rexx creator Mike Cowlishaw</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
-<p id="particle50" class="scrollParagraph"><span class="scrollDateline">February 27, 2023 — </span><a href="http://www.manmrk.net/tutorials/rexx/MFC/mfc.html">Mike Cowlishaw</a> is a distinguished computer scientist and creator of <a href="../concepts/rexx.html">Rexx</a> and <a href="../concepts/netrexx.html">NetRexx</a>. He has worked on many other programming languages, including <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/c.html">C,</a> and <a href="../concepts/java.html">Java</a>. Dr. Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick. He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow. His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)</p>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">February 27, 2023 — </span><a href="http://www.manmrk.net/tutorials/rexx/MFC/mfc.html">Mike Cowlishaw</a> is a distinguished computer scientist and creator of <a href="../concepts/rexx.html">Rexx</a> and <a href="../concepts/netrexx.html">NetRexx</a>. He has worked on many other programming languages, including <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/c.html">C,</a> and <a href="../concepts/java.html">Java</a>. Dr. Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick. He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow. His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle54" class="scrollQuestion">I've read some of your early papers on Rexx. If you were to edit them now knowing what you know, what would you change? I want to know what worked for Rexx, as well as what didn't.</h4>
-<p id="particle55" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> I don't think I'd change anything in them except to emphasise more that a programming language is a Human-Computer-Interface and the language designer should design for the users of the language, not just for himself or herself.</p>
+<div class="scrollSection"><h4 id="particle47" class="scrollQuestion">I've read some of your early papers on Rexx. If you were to edit them now knowing what you know, what would you change? I want to know what worked for Rexx, as well as what didn't.</h4>
+<p id="particle48" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> I don't think I'd change anything in them except to emphasise more that a programming language is a Human-Computer-Interface and the language designer should design for the users of the language, not just for himself or herself.</p>
 </div>
-<p id="particle57" class="scrollParagraph">As for what I'd change in Rexx: there are some limitations because of the slowness of computers at that time (e.g., I wanted all comparisons to be, by default, caseless). Many of these sorts of things I fixed in NetRexx (<a href="https://speleotrove.com/misc/NetRexx2.pdf">see</a>).</p>
+<p id="particle50" class="scrollParagraph">As for what I'd change in Rexx: there are some limitations because of the slowness of computers at that time (e.g., I wanted all comparisons to be, by default, caseless). Many of these sorts of things I fixed in NetRexx (<a href="https://speleotrove.com/misc/NetRexx2.pdf">see</a>).</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle61" class="scrollQuestion">Rexx has been battle tested at IBM and has given birth to many implementations. To what do you attribute the early success of Rexx?</h4>
-<p id="particle62" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> It was (and still is) very easy for people who were not programmers to learn and to get results with Rexx, due it it having few specials codes and so on (the one that caused most trouble was '*' meaning 'multiply'. That was (and is) completely non-intuitive to someone seeing a Rexx program for the first time.</p>
+<div class="scrollSection"><h4 id="particle54" class="scrollQuestion">Rexx has been battle tested at IBM and has given birth to many implementations. To what do you attribute the early success of Rexx?</h4>
+<p id="particle55" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> It was (and still is) very easy for people who were not programmers to learn and to get results with Rexx, due it it having few specials codes and so on (the one that caused most trouble was '*' meaning 'multiply'. That was (and is) completely non-intuitive to someone seeing a Rexx program for the first time.</p>
 </div>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle66" class="scrollQuestion">Do you predict the next paradigm shift in programming languages will be?</h4>
-<p id="particle67" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> Hopefully a much higher-level interface, where the programmer describes what's wanted and then refines it with the help of (perhaps) some real AI.</p>
+<div class="scrollSection"><h4 id="particle59" class="scrollQuestion">Do you predict the next paradigm shift in programming languages will be?</h4>
+<p id="particle60" class="scrollParagraph"><strong>Dr. Cowlishaw:</strong> Hopefully a much higher-level interface, where the programmer describes what's wanted and then refines it with the help of (perhaps) some real AI.</p>
 </div>
 <div class="abstractDinkusParser"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:364px; margin: auto;"><a href="images/cowlishaw.jpg" target="_blank"  ><img src="images/cowlishaw.jpg" width="364" height="500" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph"><a href="https://en.wikipedia.org/wiki/Mike_Cowlishaw#/media/File:Mike_Cowlishaw_2005.jpg">Image source</a>. Mahalo for your time, Dr Cowlishaw!</p></figcaption></figure>
@@ -99,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle82" class="scrollParagraph"></p>
-<div id="particle83" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle75" class="scrollParagraph"></p>
+<div id="particle76" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -125,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle88" class="scrollParagraph"></p>
+<center><p id="particle81" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -63,23 +44,23 @@ function handleSubmit(e) {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<div class="scrollSection"><h1 id="particle46" class="printTitleParser"><a href="brianKernighan.html">A brief interview with AWK creator Dr. Brian Kernighan</a></h1>
+<div class="scrollSection"><h1 id="particle39" class="printTitleParser"><a href="brianKernighan.html">A brief interview with AWK creator Dr. Brian Kernighan</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://github.com/hassamalhajaji">Hassam Alhajaji</a></p>
 </div>
-<p id="particle50" class="scrollParagraph"><span class="scrollDateline">November 15, 2022 — </span><a href="https://www.cs.princeton.edu/~bwk/">Dr. Brian Kernighan</a> is a Canadian computer scientist who contributed to the development of <a href="../concepts/unix.html">UNIX</a> at Bell Labs. Along with Dennis Richie, he co-authored a fundamental book on C, <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">The C Programming Language</a>. He has been training the next generation of programmers at Princeton University since 2000 and has been monumental in his contribution to the computer science community at large. He wrote the first documented “Hello World!” program and to that we say, “Hello, Brian!”.</p>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">November 15, 2022 — </span><a href="https://www.cs.princeton.edu/~bwk/">Dr. Brian Kernighan</a> is a Canadian computer scientist who contributed to the development of <a href="../concepts/unix.html">UNIX</a> at Bell Labs. Along with Dennis Richie, he co-authored a fundamental book on C, <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">The C Programming Language</a>. He has been training the next generation of programmers at Princeton University since 2000 and has been monumental in his contribution to the computer science community at large. He wrote the first documented “Hello World!” program and to that we say, “Hello, Brian!”.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle54" class="scrollQuestion">Are there any novel ideas from <a href="../concepts/awk.html">Awk</a> that have yet to be adopted by others?</h4>
+<div class="scrollSection"><h4 id="particle47" class="scrollQuestion">Are there any novel ideas from <a href="../concepts/awk.html">Awk</a> that have yet to be adopted by others?</h4>
 </div>
-<p id="particle56" class="scrollParagraph"><strong>Dr. Kernighan:</strong> The main idea in Awk was <a href="../features/hasMaps.html">associative arrays</a>, which were newish at the time, but which now show up in most languages either as library functions (hashmaps in <a href="../concepts/java.html">Java</a> or <a href="../concepts/cpp.html">C++</a>) or directly in the language (dictionaries in <a href="../concepts/perl.html">Perl</a> and <a href="../concepts/python.html">Python</a>).  Associative arrays are a very powerful construct, and can be used to simulate lots of other data structures.</p>
-<p id="particle58" class="scrollParagraph">I guess the <a href="../features/hasPatternMatching.html">pattern-action</a> paradigm was also not novel but not widely used at the time. It's an effective way to organize some kinds of computations.</p>
+<p id="particle49" class="scrollParagraph"><strong>Dr. Kernighan:</strong> The main idea in Awk was <a href="../features/hasMaps.html">associative arrays</a>, which were newish at the time, but which now show up in most languages either as library functions (hashmaps in <a href="../concepts/java.html">Java</a> or <a href="../concepts/cpp.html">C++</a>) or directly in the language (dictionaries in <a href="../concepts/perl.html">Perl</a> and <a href="../concepts/python.html">Python</a>).  Associative arrays are a very powerful construct, and can be used to simulate lots of other data structures.</p>
+<p id="particle51" class="scrollParagraph">I guess the <a href="../features/hasPatternMatching.html">pattern-action</a> paradigm was also not novel but not widely used at the time. It's an effective way to organize some kinds of computations.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle62" class="scrollQuestion">When you were making programming languages what references did you use?</h4>
+<div class="scrollSection"><h4 id="particle55" class="scrollQuestion">When you were making programming languages what references did you use?</h4>
 </div>
-<p id="particle64" class="scrollParagraph"><strong>Dr. Kernighan:</strong> None?  This was a long time ago (think 1970s), and the languages that I have been involved with have all been new and special-purpose so there wasn't much available prior art.  Of course one vital tool was <a href="../concepts/yacc.html">Yacc</a>, which made it really easy to create and experiment with grammars and have them converted into highly efficient parsers.  <a href="../concepts/lex.html">Lex</a> did the same thing for the lexical level, again replacing a lot of tedious code with a set of rules.  Lex is certainly an example of a pattern-action language; arguably Yacc is as well, so it's kind of a virtuous cycle.</p>
+<p id="particle57" class="scrollParagraph"><strong>Dr. Kernighan:</strong> None?  This was a long time ago (think 1970s), and the languages that I have been involved with have all been new and special-purpose so there wasn't much available prior art.  Of course one vital tool was <a href="../concepts/yacc.html">Yacc</a>, which made it really easy to create and experiment with grammars and have them converted into highly efficient parsers.  <a href="../concepts/lex.html">Lex</a> did the same thing for the lexical level, again replacing a lot of tedious code with a set of rules.  Lex is certainly an example of a pattern-action language; arguably Yacc is as well, so it's kind of a virtuous cycle.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle68" class="scrollQuestion">What would be your advice to young people today who want to get into the field of designing programming languages?</h4>
+<div class="scrollSection"><h4 id="particle61" class="scrollQuestion">What would be your advice to young people today who want to get into the field of designing programming languages?</h4>
 </div>
-<p id="particle70" class="scrollParagraph"><strong>Dr. Kernighan:</strong> Try designing and implementing small and special purpose languages. They are lots of fun, often very useful, and a great deal easier than trying to create a replacement for <a href="../concepts/rust.html">Rust</a> or <a href="../concepts/cpp.html">C++</a>. Look for things that could be automated if you had the right kind of language to spell out the steps, then create a simple compiler and runtime. Jon Bentley wrote a couple of <a href="https://staff.um.edu.mt/afra1/seminar/little-languages.pdf">articles</a> on this long ago that are still relevant.</p>
+<p id="particle63" class="scrollParagraph"><strong>Dr. Kernighan:</strong> Try designing and implementing small and special purpose languages. They are lots of fun, often very useful, and a great deal easier than trying to create a replacement for <a href="../concepts/rust.html">Rust</a> or <a href="../concepts/cpp.html">C++</a>. Look for things that could be automated if you had the right kind of language to spell out the steps, then create a simple compiler and runtime. Jon Bentley wrote a couple of <a href="https://staff.um.edu.mt/afra1/seminar/little-languages.pdf">articles</a> on this long ago that are still relevant.</p>
 <div class="abstractDinkusParser"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:241px; margin: auto;"><a href="images/brianKernighan.gif" target="_blank"  ><img src="images/brianKernighan.gif" width="241" height="247" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph">Image from <a href="https://commons.wikimedia.org/wiki/File:Brian_kernighan2.gif">Wikimedia Commons</a>. Thank you for your time Dr. Kernighan!</p></figcaption></figure>
 </div>
@@ -99,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle85" class="scrollParagraph"></p>
-<div id="particle86" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle78" class="scrollParagraph"></p>
+<div id="particle79" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -125,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle91" class="scrollParagraph"></p>
+<center><p id="particle84" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>

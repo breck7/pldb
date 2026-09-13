@@ -19,27 +19,8 @@
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div id="emailBanner" class="banner hide" class="banner hide">Join our <a href="https://www.reddit.com/r/pldb">new subreddit</a> &nbsp; &nbsp;<a id="particle3" onclick="hideEmailList()" class="closeBannerButton" class="closeBannerButton">X</a></div>
-<style>.banner {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-}
-.closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
-.hide { display: none; }</style>
-<script>if (localStorage.getItem('subscribed') !== 'true')
- document.getElementById('emailBanner').classList.remove('hide');
-function hideEmailList() {
-  localStorage.setItem('subscribed', 'true');
- document.getElementById('emailBanner').classList.add('hide');
-}
-function handleSubmit(e) {
- e.preventDefault();
- window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
-  hideEmailList()
-}</script>
 <link rel="stylesheet" type="text/css" href="../allStyles.css">
-<div id="particle36" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
 <a id="particle4" href="../lists/top1000.html" >Top 1K</a>
 <a id="particle5" href="../lists/features.html" >Features</a>
@@ -63,56 +44,56 @@ function handleSubmit(e) {
     getLinks()[1].click()
  });</script></div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
-<div class="scrollSection"><h1 id="particle46" class="printTitleParser"><a href="stevenDrucker.html">A brief interview with Microsoft SandDance creator Steven Drucker</a></h1>
+<div class="scrollSection"><h1 id="particle39" class="printTitleParser"><a href="stevenDrucker.html">A brief interview with Microsoft SandDance creator Steven Drucker</a></h1>
 <p id="particle0" class="printAuthorsParser">by <a href="https://x.com/breckyunits">Breck Yunits</a></p>
 </div>
-<p id="particle50" class="scrollParagraph"><span class="scrollDateline">August 15, 2024 — </span><a href="https://stevenmdrucker.github.io/#/">Steven Drucker's</a> <a href="../concepts/sanddance.html">SandDance</a> (<a href="https://microsoft.github.io/SandDance/app/">⌨️</a>) is both twenty years in the future and timeless. SandDance allows humans to see and interact with data the way you interact with particles in the real world. Steven sat down with us to talk about the origins of SandDance and his 29 years at Microsoft Research. Thank you for your time Steven!</p>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">August 15, 2024 — </span><a href="https://stevenmdrucker.github.io/#/">Steven Drucker's</a> <a href="../concepts/sanddance.html">SandDance</a> (<a href="https://microsoft.github.io/SandDance/app/">⌨️</a>) is both twenty years in the future and timeless. SandDance allows humans to see and interact with data the way you interact with particles in the real world. Steven sat down with us to talk about the origins of SandDance and his 29 years at Microsoft Research. Thank you for your time Steven!</p>
 <figure class="scrollCaptionedFigure" style="width:400px; margin: auto;"><a href="images/sanddance.gif" target="_blank"  ><img src="images/sanddance.gif" width="400" height="314" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph">Visualizing PLDB using SandDance.</p></figcaption></figure>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle56" class="scrollQuestion">What led you to create SandDance?</h4>
+<div class="scrollSection"><h4 id="particle49" class="scrollQuestion">What led you to create SandDance?</h4>
 </div>
-<p id="particle58" class="scrollParagraph">SandDance really comes from a convergence of a lot of different ideas. My background originally was neuroscience, then robotics, then computer graphics.</p>
-<p id="particle60" class="scrollParagraph">I had built particle systems. <a href="https://en.wikipedia.org/wiki/Karl_Sims">Karl Sims</a> is a good friend of mine doing brilliant <a href="https://www.karlsims.com/particle-dreams.html">animated evolutionary creatures</a>. I've always been fascinated by lots of individual collective things, creating some structure out of that.</p>
-<p id="particle62" class="scrollParagraph">I was doing a bunch visualization stuff and finding people often were misunderstanding aggregations. Simpson's paradox. Bayes rule.</p>
-<p id="particle64" class="scrollParagraph">One of the misunderstandings I was having when I was telling stories with data, people would kind of get confused when you show percentages and absolutes. It would be better if you showed them something that was physically realizable. If you could actually say, let's stack these individual particles so that you actually show sums.</p>
-<p id="particle66" class="scrollParagraph">When you see these quantities in absolute numbers of things, it's like "oh my god, that's so clear, why didn't anybody ever show that to me before?"</p>
-<p id="particle68" class="scrollParagraph">I have a colleague who's built something very similar: <a href="https://morphcharts.com/">MorphCharts</a>.</p>
-<p id="particle70" class="scrollParagraph">The impetus was always the same: let's help people understand the information better. It's great to take those raw rows of a dataset and say each point represents a row.</p>
-<p id="particle72" class="scrollParagraph">It really matched well for people's understanding of "what happens when I filter...rearrange...group in different ways...highlight."</p>
-<p id="particle74" class="scrollParagraph">A grammar of interactions.</p>
+<p id="particle51" class="scrollParagraph">SandDance really comes from a convergence of a lot of different ideas. My background originally was neuroscience, then robotics, then computer graphics.</p>
+<p id="particle53" class="scrollParagraph">I had built particle systems. <a href="https://en.wikipedia.org/wiki/Karl_Sims">Karl Sims</a> is a good friend of mine doing brilliant <a href="https://www.karlsims.com/particle-dreams.html">animated evolutionary creatures</a>. I've always been fascinated by lots of individual collective things, creating some structure out of that.</p>
+<p id="particle55" class="scrollParagraph">I was doing a bunch visualization stuff and finding people often were misunderstanding aggregations. Simpson's paradox. Bayes rule.</p>
+<p id="particle57" class="scrollParagraph">One of the misunderstandings I was having when I was telling stories with data, people would kind of get confused when you show percentages and absolutes. It would be better if you showed them something that was physically realizable. If you could actually say, let's stack these individual particles so that you actually show sums.</p>
+<p id="particle59" class="scrollParagraph">When you see these quantities in absolute numbers of things, it's like "oh my god, that's so clear, why didn't anybody ever show that to me before?"</p>
+<p id="particle61" class="scrollParagraph">I have a colleague who's built something very similar: <a href="https://morphcharts.com/">MorphCharts</a>.</p>
+<p id="particle63" class="scrollParagraph">The impetus was always the same: let's help people understand the information better. It's great to take those raw rows of a dataset and say each point represents a row.</p>
+<p id="particle65" class="scrollParagraph">It really matched well for people's understanding of "what happens when I filter...rearrange...group in different ways...highlight."</p>
+<p id="particle67" class="scrollParagraph">A grammar of interactions.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle78" class="scrollQuestion">You've shown a million points, what would happen if you showed a billion points?</h4>
+<div class="scrollSection"><h4 id="particle71" class="scrollQuestion">You've shown a million points, what would happen if you showed a billion points?</h4>
 </div>
-<p id="particle80" class="scrollParagraph">You're limited by the number of pixels. When you get to that many particles, you need a metaphor.</p>
+<p id="particle73" class="scrollParagraph">You're limited by the number of pixels. When you get to that many particles, you need a metaphor.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle84" class="scrollQuestion">How can SandDance help people trust AI generated data visualizations?</h4>
+<div class="scrollSection"><h4 id="particle77" class="scrollQuestion">How can SandDance help people trust AI generated data visualizations?</h4>
 </div>
-<p id="particle86" class="scrollParagraph">By giving people alternate ways of looking at the data to validate the results.</p>
-<p id="particle88" class="scrollParagraph">If you're doing a pivot, let's see that. If you're doing a filter, let's see that. And that way you can actually see that the operations are happening the way you want. So it's a visual explanation of the thing.</p>
+<p id="particle79" class="scrollParagraph">By giving people alternate ways of looking at the data to validate the results.</p>
+<p id="particle81" class="scrollParagraph">If you're doing a pivot, let's see that. If you're doing a filter, let's see that. And that way you can actually see that the operations are happening the way you want. So it's a visual explanation of the thing.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle92" class="scrollQuestion">You've been at Microsoft Research for 29 years. What's kept you there?</h4>
+<div class="scrollSection"><h4 id="particle85" class="scrollQuestion">You've been at Microsoft Research for 29 years. What's kept you there?</h4>
 </div>
-<p id="particle94" class="scrollParagraph">Part of it is a chance to meet with new and different people with different perspectives and constantly be re-energized by interns and projects.</p>
+<p id="particle87" class="scrollParagraph">Part of it is a chance to meet with new and different people with different perspectives and constantly be re-energized by interns and projects.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle98" class="scrollQuestion">What's the biggest difference between a developer and a researcher?</h4>
+<div class="scrollSection"><h4 id="particle91" class="scrollQuestion">What's the biggest difference between a developer and a researcher?</h4>
 </div>
-<p id="particle100" class="scrollParagraph">A developer, when they hear a problem the first thing they think is "how do I solve this architecturally?"</p>
-<p id="particle102" class="scrollParagraph">The first thing a researcher tends to look at is "what was done before?"</p>
-<p id="particle104" class="scrollParagraph">Both things need to be done to a certain extent.</p>
-<p id="particle106" class="scrollParagraph">You have to start building things to see what's going to happen.</p>
-<p id="particle108" class="scrollParagraph">But it's helpful to see what was done before and what was the context.</p>
+<p id="particle93" class="scrollParagraph">A developer, when they hear a problem the first thing they think is "how do I solve this architecturally?"</p>
+<p id="particle95" class="scrollParagraph">The first thing a researcher tends to look at is "what was done before?"</p>
+<p id="particle97" class="scrollParagraph">Both things need to be done to a certain extent.</p>
+<p id="particle99" class="scrollParagraph">You have to start building things to see what's going to happen.</p>
+<p id="particle101" class="scrollParagraph">But it's helpful to see what was done before and what was the context.</p>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h4 id="particle112" class="scrollQuestion">How do you choose what to focus on?</h4>
+<div class="scrollSection"><h4 id="particle105" class="scrollQuestion">How do you choose what to focus on?</h4>
 </div>
-<p id="particle114" class="scrollParagraph">I am driven by "oh my god that's going to fundamentally change the way I do things."</p>
+<p id="particle107" class="scrollParagraph">I am driven by "oh my god that's going to fundamentally change the way I do things."</p>
 <div class="abstractDinkusParser"><span>⁂</span></div>
 <figure class="scrollCaptionedFigure" style="width:256px; margin: auto;"><a href="images/stevenDrucker.jpg" target="_blank"  ><img src="images/stevenDrucker.jpg" width="256" height="249" loading="lazy"></a><figcaption><p id="particle0" class="scrollParagraph"><a href="https://stevenmdrucker.github.io">Image source</a>. Thank you for your time Steven!</p></figcaption></figure>
 <div class="abstractDinkusParser"><span>*</span></div>
-<div class="scrollSection"><h1 id="particle122" class="scrollParagraph">Longer interviews with Steven:</h1>
+<div class="scrollSection"><h1 id="particle115" class="scrollParagraph">Longer interviews with Steven:</h1>
 </div>
-<ul ><li id="particle124" ><a href="https://www.youtube.com/watch?v=xu8RcuX-bl8">Visualizing Data and Other Big Ideas with Dr. Steven Drucker (2017)</a></li></ul>
+<ul ><li id="particle117" ><a href="https://www.youtube.com/watch?v=xu8RcuX-bl8">Visualizing Data and Other Big Ideas with Dr. Steven Drucker (2017)</a></li></ul>
 <div class="abstractDinkusParser"><span>*</span></div>
-<p id="particle128" class="scrollParagraph"><i>This interview lightly edited for clarity and length.</i></p>
+<p id="particle121" class="scrollParagraph"><i>This interview lightly edited for clarity and length.</i></p>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
@@ -130,8 +111,8 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </script>
 
 
-<center><p id="particle139" class="scrollParagraph"></p>
-<div id="particle140" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<center><p id="particle132" class="scrollParagraph"></p>
+<div id="particle133" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
 <span id="particle3" >- Build the next great programming language</span>
 <span id="particle4" >·</span>
 <a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
@@ -156,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 </center>
 <script  src="../lists/autocompleteCombined.js"></script>
 <script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
-<center><p id="particle145" class="scrollParagraph"></p>
+<center><p id="particle138" class="scrollParagraph"></p>
 <div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v178.2.3</a></div>
 </center>
 </body>
